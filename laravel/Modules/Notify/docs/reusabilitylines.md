@@ -1,3 +1,15 @@
+---
+title: "reusabilitylines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "reusabilitylines"
+issues: []
+discussions: []
+status: draft
+---
+
 # Linee Guida per la Riusabilità del Modulo Notify
 
 ## Principio Fondamentale
@@ -166,3 +178,4 @@ grep -r "database.*Quaeris\|app.*Quaeris" Modules/Notify/
 - [../../../../docs/module_reusability_guidelines.md](../../../../docs/module_reusability_guidelines.md)
 - [../../Xot/docs/xotdata_usage.md](../../xot/docs/xotdata_usage.md)
 - [testing_best_practices.md](testing_best_practices.md)
+

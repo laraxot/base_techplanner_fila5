@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-=======
-    // Europa
->>>>>>> 6ed19256f (.)
     'it' => 'Italien',
     'fr' => 'Frankreich',
     'de' => 'Deutschland',
@@ -51,10 +47,6 @@ return [
     'ge' => 'Georgien',
     'am' => 'Armenien',
     'az' => 'Aserbaidschan',
-<<<<<<< HEAD
-=======
-    // Amerika
->>>>>>> 6ed19256f (.)
     'us' => 'Vereinigte Staaten von Amerika',
     'ca' => 'Kanada',
     'mx' => 'Mexiko',
@@ -97,10 +89,6 @@ return [
     'kn' => 'St. Kitts und Nevis',
     'dm' => 'Dominica',
     'bs' => 'Bahamas',
-<<<<<<< HEAD
-=======
-    // Asien
->>>>>>> 6ed19256f (.)
     'cn' => 'China',
     'jp' => 'Japan',
     'kr' => 'Südkorea',
@@ -145,10 +133,6 @@ return [
     'kg' => 'Kirgisistan',
     'tj' => 'Tadschikistan',
     'tm' => 'Turkmenistan',
-<<<<<<< HEAD
-=======
-    // Afrika
->>>>>>> 6ed19256f (.)
     'eg' => 'Ägypten',
     'ly' => 'Libyen',
     'tn' => 'Tunesien',
@@ -203,10 +187,6 @@ return [
     'ao' => 'Angola',
     'aq' => 'Antarktis',
     'zr' => 'Zaire',
-<<<<<<< HEAD
-=======
-    // Ozeanien
->>>>>>> 6ed19256f (.)
     'au' => 'Australien',
     'ax' => 'Alandinseln',
     'nz' => 'Neuseeland',
@@ -224,10 +204,6 @@ return [
     'pw' => 'Palau',
     'fm' => 'Mikronesien',
     'mh' => 'Marshallinseln',
-<<<<<<< HEAD
-=======
-    // Andere
->>>>>>> 6ed19256f (.)
     'xk' => 'Kosovo',
     'va' => 'Vatikanstadt',
     'sm' => 'San Marino',
@@ -280,13 +256,12 @@ return [
     'mp' => 'Nördliche Marianen',
     'um' => 'Amerikanische Außengebiete',
     'eh' => 'Westsahara',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
@@ -294,6 +269,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

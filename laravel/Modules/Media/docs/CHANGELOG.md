@@ -1,7 +1,19 @@
 ---
-module: theme
-topic: CHANGELOG
-canonical: ../../../Themes/docs/shared-components/CHANGELOG.md
+issues: []
+discussions: []
+title: "Changelog"
+module: "Media"
+type: concept
+tags: [changelog]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "changelog"
+related:
+  - "./webm.md"
+status: draft
 ---
+# Changelog
 
-See canonical documentation: ../../../Themes/docs/shared-components/CHANGELOG.md
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]

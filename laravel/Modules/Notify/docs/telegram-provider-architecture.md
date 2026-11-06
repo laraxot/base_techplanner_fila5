@@ -1,15 +1,21 @@
+---
+title: "telegram provider architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "telegram provider architecture"
+issues: []
+discussions: []
+status: draft
+---
+
 # Architettura Telegram Provider per
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider Telegram nel modulo Notify di , mantenendo coerenza con le architetture esistenti per SMS, email e WhatsApp.
-<<<<<<< HEAD
 # Architettura Telegram Provider per <nome progetto>
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider Telegram nel modulo Notify di <nome progetto>, mantenendo coerenza con le architetture esistenti per SMS, email e WhatsApp.
-=======
-# Architettura Telegram Provider per SaluteOra
-
-Questo documento definisce l'architettura e gli standard per l'implementazione dei provider Telegram nel modulo Notify di SaluteOra, mantenendo coerenza con le architetture esistenti per SMS, email e WhatsApp.
->>>>>>> 6ed19256f (.)
 
 ## Principi Architetturali Fondamentali
 
@@ -23,15 +29,9 @@ L'architettura dei provider Telegram segue gli stessi principi dei provider SMS,
 ## Struttura Directory e Namespace
 
 ```
-<<<<<<< HEAD
 Modules/Notify/
 Modules/Notify/
 Modules/Notify/
-=======
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/
-/var/www/html/saluteora/laravel/Modules/Notify/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/
->>>>>>> 6ed19256f (.)
 ├── app/
 │   ├── Actions/
 │   │   └── Telegram/
@@ -737,11 +737,7 @@ L'architettura dei provider Telegram segue gli stessi principi dei provider SMS,
 ## Struttura Directory e Namespace
 
 ```
-<<<<<<< HEAD
 Modules/Notify/
-=======
-/var/www/html/<directory progetto>/laravel/Modules/Notify/
->>>>>>> 6ed19256f (.)
 ├── app/
 │   ├── Actions/
 │   │   └── Telegram/

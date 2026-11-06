@@ -6,62 +6,36 @@ return [
     'fields' => [
         'mailable' => [
             'label' => 'mailable',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'subject' => [
             'label' => 'subject',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'html_template' => [
             'label' => 'html_template',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'text_template' => [
             'label' => 'text_template',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
-        ],
-        'subject' => [
-            'label' => 'subject',
-        ],
-        'html_template' => [
-            'label' => 'html_template',
-        ],
-        'text_template' => [
-            'label' => 'text_template',
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'description' => '']],
     'actions' => [
         'create' => [
-            'label' => 'create',
-        ],
+            'label' => 'create'],
         'createAnother' => [
-            'label' => 'createAnother',
-        ],
+            'label' => 'createAnother'],
         'cancel' => [
-            'label' => 'cancel',
-        ],
-    ],
-<<<<<<< HEAD
+            'label' => 'cancel']],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
+        'sort' => 100],
     'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
+    'plural_label' => 'Missing Plural label'];

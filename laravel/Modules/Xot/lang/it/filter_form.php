@@ -15,17 +15,13 @@ return [
             'placeholder' => 'created_from',
             'helper_text' => 'created_from',
             'description' => 'created_from',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_until' => [
             'label' => 'created_until',
             'placeholder' => 'created_until',
             'helper_text' => 'created_until',
             'description' => 'created_until',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -51,8 +47,7 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Filter Form',
-=======
->>>>>>> 6ed19256f (.)
         ],
+        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
     ],
 ];

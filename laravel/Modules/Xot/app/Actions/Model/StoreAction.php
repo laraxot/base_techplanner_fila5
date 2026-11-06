@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model;
 
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
 use Spatie\QueueableAction\QueueableAction;
@@ -18,13 +14,8 @@ class StoreAction
     use QueueableAction;
 
     /**
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-     * @param array<string, mixed> $rules
-=======
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $rules
->>>>>>> 6ed19256f (.)
      */
     public function execute(Model $model, array $data, array $rules): Model
     {
@@ -59,11 +50,7 @@ class StoreAction
             $action = app($action_class);
             Assert::object($action);
             if (! method_exists($action, 'execute')) {
-<<<<<<< HEAD
                 throw new \Exception('method [execute] not found in ['.$action_class.']');
-=======
-                throw new Exception('method [execute] not found in ['.$action_class.']');
->>>>>>> 6ed19256f (.)
             }
             $action->execute($model, $relation);
         }

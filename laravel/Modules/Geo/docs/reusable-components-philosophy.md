@@ -1,6 +1,17 @@
+---
+title: "reusable components philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "reusable components philosophy"
+issues: []
+discussions: []
+status: draft
+---
+
 # Filosofia dei Componenti Riutilizzabili
 
-**Data**: 2025-12-12
 **Modulo**: Geo
 **Status**: 📚 **DOCUMENTAZIONE**
 
@@ -105,8 +116,4 @@ L'AddressColumn risiede in Geo perché la sua anima è la logica degli indirizzi
 
 ## Conclusione
 
-<<<<<<< HEAD
 Seguendo questa filosofia, manteniamo un'architettura pulita, manutenibile e scalabile dove ogni modulo ha le sue responsabilità chiare e i componenti riutilizzabili sono centralizzati dove la loro logica appartiene.
-=======
-Seguendo questa filosofia, manteniamo un'architettura pulita, manutenibile e scalabile dove ogni modulo ha le sue responsabilità chiare e i componenti riutilizzabili sono centralizzati dove la loro logica appartiene.
->>>>>>> 6ed19256f (.)

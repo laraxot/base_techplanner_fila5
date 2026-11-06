@@ -12,11 +12,7 @@ return [
     'field.guard_name' => 'Guard Name',
     'field.permissions' => 'Permissions',
     'field.select_all.name' => 'Select All',
-<<<<<<< HEAD
     'field.select_all.message' => 'Enable all Permissions currently <span class=\\"text-primary font-medium\\">Enabled</span> for this role',
-=======
-    'field.select_all.message' => 'Enable all Permissions currently <span class=\"text-primary font-medium\">Enabled</span> for this role',
->>>>>>> 6ed19256f (.)
     'nav.group' => 'Filament Shield',
     'nav.role.label' => 'Roles',
     'nav.role.icon' => 'heroicon-o-shield-check',
@@ -42,20 +38,4 @@ return [
         'restore_any' => 'Restore Any',
         'replicate' => 'Replicate',
     ],
-<<<<<<< HEAD
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

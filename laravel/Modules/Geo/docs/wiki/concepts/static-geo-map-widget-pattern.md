@@ -1,4 +1,10 @@
 ---
+title: "static geo map widget pattern"
+tags: [documentation]
+created: 2026-09-26
+qmd: "static geo map widget pattern"
+issues: []
+discussions: []
 type: concept
 module: Geo
 sources:
@@ -6,6 +12,7 @@ sources:
   - ../../../../../../docs/quality-tools-setup.md
 confidence: high
 updated: 2026-04-16
+status: draft
 ---
 
 # Static Geo Map Widget Pattern
@@ -50,7 +57,7 @@ Questo pattern replica l'idea chiave di `farmshops.eu`: performance stabili con 
 - `phpinsights` via `.phar` workflow del progetto
 - `pest` per dataset support object e widget config
 
-## Pattern `geo-map-lit` (segnalazioni-elenco pubblico)
+## Pattern `geo-map-lit` (ticket-list pubblico)
 
 Variante del pattern per pagine pubbliche (non Filament admin):
 

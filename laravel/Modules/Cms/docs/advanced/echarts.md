@@ -1,9 +1,17 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "echarts"
+issues: []
+discussions: []
 title: Echarts
 description: Echarts
 extends: _layouts.documentation
 section: content
 path: it/docs/advanced/
+status: draft
 ---
 
 # Echarts {#echarts}
@@ -69,10 +77,5 @@ myChart.showLoading();
 In questo modo, puoi utilizzare Echarts con Laravel e Apache per creare un grafico e visualizzare i dati. Tuttavia, questo è solo un semplice esempio e puoi personalizzare il codice per soddisfare le tue esigenze specifiche.
 
 ## Collegamenti tra versioni di echarts.md
-* [echarts.md](laravel/Modules/Chart/docs/advanced/echarts.md)
-* [echarts.md](laravel/Modules/Cms/docs/advanced/echarts.md)
-<<<<<<< HEAD
 * [echarts.md](laravel/modules/chart/docs/advanced/echarts.md)
 * [echarts.md](laravel/modules/cms/docs/advanced/echarts.md)
-=======
->>>>>>> 6ed19256f (.)

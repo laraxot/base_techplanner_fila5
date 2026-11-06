@@ -1,3 +1,11 @@
+---
+title: "Regole Namespace PSR-4 per Tutti i Moduli (Regola Globale)"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "regole namespace psr-4 per tutti i moduli (regola globale) xot"
+---
 # Regole Namespace PSR-4 per Tutti i Moduli (Regola Globale)
 
 ## Regola Fondamentale
@@ -27,18 +35,5 @@
 ---
 
 **Ultimo aggiornamento:** 2025-05-13
-<<<<<<< HEAD
-  - [Patient: Regole Modelli](../../patient/project_docs/models.md)
-  - [Notify Namespace Rules](../../notify/project_docs/namespace_rules.md)
-
-## Collegamenti
-- [Regole Namespace Moduli - Root Docs](../../../../docs/project/namespace-moduli.md)
-
----
-
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
-=======
-
-**Link bidirezionale:** Aggiornare anche la root docs e la docs dei moduli coinvolti.
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,17 @@
+---
+title: "Team"
+type: concept
+tags: [team]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "team team"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+status: superseded
+superseded_by: ../models.tmp_rename/team.md
+---
+
 # Team
 
 Il modello `Team` rappresenta un team nel sistema, implementando l'interfaccia `TeamContract`.
@@ -52,8 +66,4 @@ Quando si sviluppano trait, metodi condivisi o interfacce che devono funzionare 
 - [[TeamContract]]
 - [[User]]
 - [[TeamPermission]]
-<<<<<<< HEAD
 - [[HasTeamsContract]] 
-=======
-- [[HasTeamsContract]]
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,11 @@
+---
+title: "PHPStan Level 10 Fix Implementation Plan"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "phpstan level 10 fix implementation plan xot"
+---
 # PHPStan Level 10 Fix Implementation Plan
 
 ## Overview
@@ -16,21 +24,12 @@ This document outlines the systematic approach to fixing PHPStan level 10 issues
 - For `BelongsTo` relations, use: `@return \Illuminate\Database\Eloquent\Relations\BelongsTo<\Model\Type, static>`
 
 **Files to fix:**
-<<<<<<< HEAD
 - ✅ `base_orisbroker_fila5/laravel/Modules/User/app/Models/Traits/IsProfileTrait.php`
 - ✅ `base_orisbroker_fila5/laravel/Modules/User/app/Models/Traits/HasTeams.php`
 - ✅ `base_orisbroker_fila5/laravel/Modules/User/app/Models/Traits/HasTenants.php`
 - ✅ `base_orisbroker_fila5/laravel/Modules/User/app/Models/Traits/IsTenant.php`
 - `base_orisbroker_fila5/laravel/Modules/Broker/app/Models/**/*.php`
 - `base_orisbroker_fila5/laravel/Modules/User/app/Models/**/*.php`
-=======
-- ✅ `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/Traits/IsProfileTrait.php`
-- ✅ `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/Traits/HasTeams.php`
-- ✅ `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/Traits/HasTenants.php`
-- ✅ `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/Traits/IsTenant.php`
-- `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Broker/app/Models/**/*.php`
-- `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/User/app/Models/**/*.php`
->>>>>>> 6ed19256f (.)
 
 ### 2. Mixed Type Parameters in Methods
 
@@ -42,19 +41,11 @@ This document outlines the systematic approach to fixing PHPStan level 10 issues
 - Add type assertions for array access: `if (!isset($array[$key]) || !is_array($array[$key])) { ... }`
 
 **Files to fix:**
-<<<<<<< HEAD
 - ✅ `base_orisbroker_fila5/laravel/Modules/Xot/app/Console/Commands/DatabaseSchemaExportCommand.php`
 - ✅ `base_orisbroker_fila5/laravel/Modules/Xot/app/Console/Commands/GenerateModelsFromSchemaCommand.php`
 - `base_orisbroker_fila5/laravel/Modules/Broker/app/Actions/GenerateAderentiReportAction.php`
 - `base_orisbroker_fila5/laravel/Modules/Brain/app/Filament/Resources/SocioResource.php`
 - `base_orisbroker_fila5/laravel/Modules/Brain/app/Filament/Resources/SocioResource/Pages/ListSoci.php`
-=======
-- ✅ `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/app/Console/Commands/DatabaseSchemaExportCommand.php`
-- ✅ `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/app/Console/Commands/GenerateModelsFromSchemaCommand.php`
-- `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Broker/app/Actions/GenerateAderentiReportAction.php`
-- `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Brain/app/Filament/Resources/SocioResource.php`
-- `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Brain/app/Filament/Resources/SocioResource/Pages/ListSoci.php`
->>>>>>> 6ed19256f (.)
 
 ### 3. Non-Iterable Objects in Foreach Loops
 
@@ -66,11 +57,7 @@ This document outlines the systematic approach to fixing PHPStan level 10 issues
 - Add default empty arrays when appropriate
 
 **Files to fix:**
-<<<<<<< HEAD
 - `base_orisbroker_fila5/laravel/Modules/Xot/app/Console/Commands/GenerateModelsFromSchemaCommand.php`
-=======
-- `/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/app/Console/Commands/GenerateModelsFromSchemaCommand.php`
->>>>>>> 6ed19256f (.)
 
 ### 4. Missing or Incorrect Parameter/Return Types
 
@@ -107,8 +94,4 @@ For maximum efficiency, we'll implement fixes in the following order:
 - [ ] Fix GenerateAderentiReportAction.php parameter type issues
 - [ ] Fix SocioResource.php method call on mixed issues
 - [ ] Fix ListSoci.php method call on mixed issues
-<<<<<<< HEAD
 - [ ] Run PHPStan after each batch of fixes to verify improvements
-=======
-- [ ] Run PHPStan after each batch of fixes to verify improvements
->>>>>>> 6ed19256f (.)

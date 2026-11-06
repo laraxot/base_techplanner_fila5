@@ -11,18 +11,12 @@ use Illuminate\Database\Eloquent\Model;
  *
  * @property string|null $title
  * @property string|null $subtitle
-<<<<<<< HEAD
- * @property int|null    $status
-=======
  * @property int|null $status
->>>>>>> 6ed19256f (.)
  *
- * @method mixed update($params)
+ * @method bool update($params)
  *
  * @phpstan-require-extends Model
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
-interface PivotContract
-{
-}
+interface PivotContract {}

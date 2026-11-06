@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 https://github.com/maize-tech/laravel-legal-consent
 https://github.com/foothing/laravel-gdpr-consent
 https://github.com/maize-tech/laravel-legal-consent
 https://github.com/foothing/laravel-gdpr-consent
-=======
-
->>>>>>> 6ed19256f (.)

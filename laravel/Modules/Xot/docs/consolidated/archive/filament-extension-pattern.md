@@ -1,3 +1,11 @@
+---
+title: "pattern di estensione filament"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "pattern di estensione filament xot"
+---
 # pattern di estensione filament
 
 ## regola fondamentale
@@ -41,11 +49,7 @@ mantenere sempre lo stesso pattern di namespace rispetto a filament, ma usando i
 namespace Filament\Resources\Pages;
 
 // namespace corretto nel modulo
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Resources\Pages;
-=======
-namespace Modules\SaluteOra\Filament\Resources\Pages;
->>>>>>> 6ed19256f (.)
 ```
 
 ## metodi delle classi base
@@ -79,10 +83,5 @@ protected function getInfolistSchema(): array
 
 ## linkback
 
-<<<<<<< HEAD
 - [errore override metodo final](project_docs/errors/filament_final_method_override.md)
 - [linee guida filament](Modules/<nome progetto>/project_docs/filament-resources.md)
-=======
-- [errore override metodo final](/var/www/html/base_saluteora/laravel/project_docs/errors/filament_final_method_override.md)
-- [linee guida filament](/var/www/html/base_saluteora/laravel/Modules/SaluteOra/project_docs/filament-resources.md)
->>>>>>> 6ed19256f (.)

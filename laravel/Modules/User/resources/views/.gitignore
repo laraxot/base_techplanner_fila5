@@ -6,10 +6,9 @@
 
 # Backup files
 *.bak
--e 
+-e
 # PHPStan documentation
 docs/phpstan/
-<<<<<<< HEAD
 _docs/
 
 # Backup files
@@ -17,5 +16,13 @@ _docs/
 *.backup.*
 *.backup-*
 *.backup_*
-=======
->>>>>>> 6ed19256f (.)
+agentdb.rvf
+
+
+
+
+
+
+
+
+

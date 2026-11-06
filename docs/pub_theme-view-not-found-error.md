@@ -153,9 +153,4 @@ Il `ThemeServiceProvider` del tema Sixteen registra:
 **IMPATTO: CRITICO**  
 **EFFORT: BASSO**
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: Settembre 2025*
-=======
-*Ultimo aggiornamento: Settembre 2025*
-
->>>>>>> 6ed19256f (.)

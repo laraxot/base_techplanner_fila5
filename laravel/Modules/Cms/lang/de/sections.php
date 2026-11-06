@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -41,14 +40,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Nome',
-        'slug' => 'Slug',
-        'class' => 'Classi CSS',
-        'id' => 'ID HTML',
-        'background_color' => 'Colore Sfondo',
-        'text_color' => 'Colore Testo',
->>>>>>> 6ed19256f (.)
     ],
     'blocks' => [
         'logo' => [
@@ -90,7 +81,6 @@ return [
         'style' => 'Stile',
         'content' => 'Contenuti',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -102,6 +92,9 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
+    'preview' => [
+        'empty' => 'Für diesen Abschnitt ist kein Inhalt verfügbar',
+        'no_blocks' => 'Für diesen Abschnitt sind keine Blöcke konfiguriert',
+        'no_translation' => 'Für die aktuelle Sprache ist keine Übersetzung verfügbar',
+    ],
 ];

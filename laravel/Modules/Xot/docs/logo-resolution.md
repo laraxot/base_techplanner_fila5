@@ -1,3 +1,13 @@
+---
+title: "Risoluzione dei Loghi"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Risoluzione dei Loghi"
+---
 # Risoluzione dei Loghi
 
 Questo documento descrive il meccanismo di risoluzione dei loghi in un'applicazione Laravel 12.x modulare (PHP 8.2+).
@@ -60,7 +70,7 @@ Il sistema utilizza il metodo `module_path()` per risolvere questi percorsi:
 function resolveModulePath($path) {
     // Esempio: 'module::images/logo.svg'
     list($module, $resourcePath) = explode('::', $path);
-
+    
     // Converte in: '/path/to/project/laravel/Modules/Module/resources/images/logo.svg'
     return module_path(ucfirst($module)) . '/resources/' . $resourcePath;
 }
@@ -77,8 +87,8 @@ Nei template Blade, i loghi vengono referenziati utilizzando gli helper appropri
 Per la versione dark:
 
 ```blade
-<img src="{{ Theme::asset($metatag['logo_header_dark']) }}"
-     alt="{{ $metatag['logo_alt'] ?? 'Logo' }}"
+<img src="{{ Theme::asset($metatag['logo_header_dark']) }}" 
+     alt="{{ $metatag['logo_alt'] ?? 'Logo' }}" 
      class="hidden dark:block">
 ```
 
@@ -102,21 +112,12 @@ Per la versione dark:
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
-<<<<<<< HEAD
-- [Gestione Domini e Configurazioni](domain_configuration.md)
-- [Configurazione Generale](configuration.md)
-- [Struttura dei Moduli](module_structure.md)
-- [Architettura Folio + Volt](folio_volt_architecture.md)
-- [Regole per la Case Sensitivity](directory-case-sensitivity.md)
-- [Regole per i Namespace](namespace-rules.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Gestione Domini e Configurazioni](DOMAIN_CONFIGURATION.md)
 - [Configurazione Generale](CONFIGURATION.md)
 - [Struttura dei Moduli](MODULE_STRUCTURE.md)
 - [Architettura Folio + Volt](FOLIO_VOLT_ARCHITECTURE.md)
-- [Regole per la Case Sensitivity](DIRECTORY-CASE-SENSITIVITY.md)
-- [Regole per i Namespace](NAMESPACE-RULES.md)
+- [Regole per la Case Sensitivity](directory-case-sensitivity.md)
+- [Regole per i Namespace](namespace-rules.md)
 - [Convenzioni di Naming](naming-conventions.md)
 
 ### Collegamenti alla Root del Progetto
@@ -124,22 +125,8 @@ Per la versione dark:
 - [Configurazione e Risoluzione dei Loghi](../../../docs/configurazione-logo.md)
 - [Struttura dei Moduli in il progetto](../../../docs/struttura-moduli.md)
 - [Architettura Folio + Volt in il progetto](../../../docs/architettura-folio-volt.md)
-<<<<<<< HEAD
-- [Convenzioni di Naming](naming-conventions.md)
-
-### Collegamenti alla Root del Progetto
-- [Linee Guida per i Loghi](../../../../docs/standards/logo_guidelines.md)
-- [Configurazione e Risoluzione dei Loghi](../../../../docs/configurazione-logo.md)
-- [Struttura dei Moduli in il progetto](../../../../docs/struttura-moduli.md)
-- [Architettura Folio + Volt in il progetto](../../../../docs/architettura-folio-volt.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ---
 
 ### Nota Importante
-<<<<<<< HEAD
 Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
-=======
-Questo documento è parte della documentazione generale del modulo Xot e descrive un meccanismo riutilizzabile in diversi progetti. La documentazione nei moduli è generica e riutilizzabile, mentre le informazioni specifiche del progetto si trovano nella documentazione nella root del progetto.
->>>>>>> 6ed19256f (.)

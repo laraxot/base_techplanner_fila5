@@ -1,5 +1,21 @@
+---
+issues: []
+discussions: []
+title: "Regola Critica: fields.php è OBBLIGATORIO"
+module: "Lang"
+type: rule
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+  - "../italian-text-refined-audit-report.md"
+status: draft
+---
 # Regola Critica: fields.php è OBBLIGATORIO
 
+**Data**: 2026-01-09
 **Data**: 2026-01-09
 **Severità**: 🔴 **CRITICAL**
 **Status**: ✅ **REGOLA ASSOLUTA**
@@ -318,9 +334,6 @@ Prima di considerare un modulo "completo":
 
 **Versione**: 1.0
 **Data**: 2026-01-09
+**Data**: 2026-01-09
 **Autore**: System Architect (dopo litigata interna)
-<<<<<<< HEAD
 **Status**: ✅ **REGOLA DEFINITIVA**
-=======
-**Status**: ✅ **REGOLA DEFINITIVA**
->>>>>>> 6ed19256f (.)

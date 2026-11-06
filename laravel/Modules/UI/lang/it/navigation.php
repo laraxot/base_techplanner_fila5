@@ -3,12 +3,11 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Navigazione',
         'plural_label' => 'Navigazioni',
         'group' => 'Gestione Contenuti',
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
         'sort' => 1,
     ],
     'label' => 'Navigazione',
@@ -35,6 +34,12 @@ return [
             'description' => 'Destinazione del link',
             'tooltip' => 'URL completo o nome route',
         ],
+        'text' => [
+            'label' => 'text',
+            'placeholder' => 'text',
+            'helper_text' => 'text',
+            'description' => 'text',
+        ],
     ],
     'actions' => [
         'create' => [
@@ -52,26 +57,12 @@ return [
             'success' => 'Navigazione eliminata con successo',
             'failure' => 'Errore nell\'eliminazione della navigazione',
             'confirm' => 'Sei sicuro di voler eliminare questa navigazione?',
-=======
-    'fields' => [
-        'items' => [
-            'label' => 'items',
-            'placeholder' => 'items',
-            'helper_text' => 'items',
-            'description' => 'items',
-        ],
-        'label' => [
-            'label' => 'label',
-            'placeholder' => 'label',
-            'helper_text' => 'label',
-            'description' => 'label',
-        ],
-        'url' => [
-            'label' => 'url',
-            'placeholder' => 'url',
-            'helper_text' => 'url',
-            'description' => 'url',
->>>>>>> 6ed19256f (.)
         ],
     ],
+    'login' => 'Accedi',
+    'logout' => 'Esci',
+    'profile' => 'Profilo',
+    'password' => 'Password',
+    'two_factor' => 'Autenticazione a due fattori',
+    'register' => 'Registrati',
 ];

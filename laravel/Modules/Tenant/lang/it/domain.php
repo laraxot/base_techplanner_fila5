@@ -8,14 +8,13 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'domain',
+        'label' => 'Dominio',
         'sort' => 6,
         'icon' => 'tenant-domain-animated',
     ],
     'fields' => [
         'domain' => [
             'label' => 'Dominio',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -61,6 +60,7 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'rating',
         ],
         'toggleColumns' => [
             'label' => 'toggleColumns',
@@ -73,35 +73,36 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
         ],
-        'domains' => [
-            'label' => 'Domini',
+        'title' => [
+            'label' => 'title',
+            'placeholder' => 'title',
+            'helper_text' => 'title',
+            'description' => 'title',
         ],
-        'list' => [
-            'label' => 'Lista Domini',
+        'brand' => [
+            'label' => 'brand',
+            'placeholder' => 'brand',
+            'helper_text' => 'brand',
+            'description' => 'brand',
         ],
-        'create' => [
-            'label' => 'Crea Dominio',
+        'category' => [
+            'label' => 'category',
+            'placeholder' => 'category',
+            'helper_text' => 'category',
+            'description' => 'category',
         ],
-        'edit' => [
-            'label' => 'Modifica Dominio',
+        'description' => [
+            'label' => 'description',
+            'placeholder' => 'description',
+            'helper_text' => 'description',
+            'description' => 'description',
         ],
-        'destroy' => [
-            'label' => 'Elimina Dominio',
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'rating' => [
-            'label' => 'rating',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
+        'price' => [
+            'label' => 'price',
+            'placeholder' => 'price',
+            'helper_text' => 'price',
+            'description' => 'price',
         ],
     ],
     'actions' => [
@@ -128,9 +129,6 @@ return [
             'label' => 'domain.plural.model',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Domain',
     'plural_label' => 'Domain (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

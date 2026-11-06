@@ -1,7 +1,25 @@
+---
+title: "Trait HasAuthenticationLogTrait"
+type: concept
+tags: [has, authentication, log]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "has-authentication-log trait hasauthenticationlogtrait"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./has-teams.md"
+  - "./has-tenants.md"
+status: draft
+---
+
 # Trait HasAuthenticationLogTrait
 
 ## Descrizione
 Il trait `HasAuthenticationLogTrait` fornisce funzionalità per il logging degli eventi di autenticazione. Permette di tracciare i tentativi di login, gli IP, i timestamp e altre informazioni relative all'autenticazione.
+
+**Ownership DB:** tabella `authentication_logs` sulla connessione `user`
+(`fixcity_user`). Vedi [authentication-logs-connection-ownership](../bmad/authentication-logs-connection-ownership.md).
 
 ## Proprietà
 - `$authentications`: Collection di log di autenticazione
@@ -36,11 +54,7 @@ use Modules\User\Models\Traits\HasAuthenticationLogTrait;
 class User extends Authenticatable
 {
     use HasAuthenticationLogTrait;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // ... resto del codice
 }
 ```
@@ -55,25 +69,15 @@ class User extends Authenticatable
   - `login_at`
 ### Versione HEAD
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 ## Documentazione Correlata
 
 - [Integrazione Laravel Passport](../passport.md) - Configurazione e utilizzo di OAuth2 con Laravel Passport
-- [Modello BaseUser](../BaseUser.md) - Modello utente che utilizza questo trait
-<<<<<<< HEAD
 - [Modello BaseUser](../baseuser.md) - Modello utente che utilizza questo trait
 
 ### Versione Incoming
 
 
-=======
-
-### Versione Incoming
-
->>>>>>> 6ed19256f (.)
 ---
 
   - `login_successful`
@@ -81,8 +85,4 @@ class User extends Authenticatable
   - `updated_at`
 - I log vengono automaticamente creati quando un utente tenta di autenticarsi
 - Le notifiche vengono inviate tramite email per default
-<<<<<<< HEAD
 - Il trait supporta il tracciamento di tentativi di login falliti e riusciti 
-=======
-- Il trait supporta il tracciamento di tentativi di login falliti e riusciti
->>>>>>> 6ed19256f (.)

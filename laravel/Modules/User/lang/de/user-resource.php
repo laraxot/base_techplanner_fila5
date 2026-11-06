@@ -12,12 +12,9 @@ return [
                 'required' => 'Der Name ist erforderlich',
                 'max' => 'Il nome non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -27,12 +24,9 @@ return [
                 'required' => 'Il cognome è obbligatorio',
                 'max' => 'Il cognome non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
@@ -44,12 +38,9 @@ return [
                 'max' => 'L\'email non può superare i 255 caratteri',
                 'unique' => 'Questa email è già registrata',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
@@ -60,12 +51,9 @@ return [
                 'min' => 'La password deve essere di almeno 8 caratteri',
                 'max' => 'La password non può superare i 255 caratteri',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -77,22 +65,16 @@ return [
                 'max' => 'La password non può superare i 255 caratteri',
                 'same' => 'Le password non coincidono',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'remember_me' => [
             'label' => 'Ricordami',
             'help' => 'Mantieni la sessione attiva',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -177,16 +159,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

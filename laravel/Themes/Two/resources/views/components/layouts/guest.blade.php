@@ -26,7 +26,7 @@
             
             <div class="text-center mt-6">
                 <a href="{{ route('home') }}" class="text-sm text-white/80 hover:text-white transition-colors">
-                    ← Torna alla home
+                    ← {{ __('pub_theme::ui.actions.back_to_home.label') }}
                 </a>
             </div>
         </div>

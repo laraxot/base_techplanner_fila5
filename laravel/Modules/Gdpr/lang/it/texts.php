@@ -23,7 +23,6 @@ return [
     'settings_save' => 'Salva la mia selezione',
     'settings_title' => 'Impostazioni cookie',
     'settings_text' => 'Il nostro sito web memorizza quattro tipi di cookie. In qualsiasi momento puoi scegliere quali cookie accettare e quali rifiutare. Puoi leggere di più su cosa sono i cookie e quali tipi di cookie memorizziamo nella nostra <a href=":policyUrl" target="_blank" class="underline hover:no-underline">Cookie Policy</a>.',
-<<<<<<< HEAD
     'label' => 'Texts',
     'plural_label' => 'Texts (Plurale)',
     'navigation' => [
@@ -68,6 +67,4 @@ return [
             'label' => 'Elimina Texts',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

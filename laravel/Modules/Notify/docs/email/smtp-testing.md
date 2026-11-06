@@ -1,3 +1,15 @@
+---
+title: "smtp testing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "smtp testing"
+issues: []
+discussions: []
+status: draft
+---
+
 # SMTP Testing Guide
 
 ## Test Laravel SMTP Mail via Tinker
@@ -40,10 +52,6 @@ Mail::raw('Test SMTP', function($m){ $m->to('tuo@email.com')->subject('Test SMTP
 
 ## Approfondimenti
 - [TestSmtpPage vs SendEmail: differenze architetturali](./test-smtp.md)
-- [Best practice per la configurazione SMTP](./EMAIL_BEST_PRACTICES.md)
-<<<<<<< HEAD
 - [Best practice per la configurazione SMTP](./email_best_practices.md)
+- [Best practice per la configurazione SMTP](./email-best-practices.md)
 - [Documentazione Laravel Mail](https://laravel.com/docs/mail)
-=======
-- [Documentazione Laravel Mail](https://laravel.com/docs/mail)
->>>>>>> 6ed19256f (.)

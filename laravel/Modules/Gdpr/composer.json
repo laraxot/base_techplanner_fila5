@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "name": "laraxot/module_gdpr_fila5",
     "description": "GDPR compliance module for the Laraxot ecosystem: cookie consent, privacy, and data protection.",
     "keywords": [
@@ -15,11 +14,6 @@
     "description": "",
     "homepage": "https://github.com/laraxot/module_gdpr_fila3.git",
     "homepage": "https://github.com/laraxot/module_gdpr_fila5.git",
-=======
-    "name": "laraxot/module_gdpr_fila3",
-    "description": "",
-    "homepage": "https://github.com/laraxot/module_gdpr_fila3.git",
->>>>>>> 6ed19256f (.)
     "license": "MIT",
     "authors": [
         {
@@ -51,10 +45,7 @@
     },
     "require": {
         "statikbe/laravel-cookie-consent": "*"
-<<<<<<< HEAD
         "statikbe/laravel-cookie-consent": "^1.0"
-=======
->>>>>>> 6ed19256f (.)
     },
     "require-dev": {},
     "repositories": [

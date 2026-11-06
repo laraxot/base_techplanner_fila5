@@ -438,7 +438,7 @@ This document presents user research findings for Theme Two, the Vue.js frontend
 - [Product Requirements Document](prd.md)
 - [Product Roadmap](product_roadmap.md)
 - [Product Strategy](product_strategy.md)
-- [Sprint Planning](sprint_planning.md)
+- [Sprint Planning](sprint-planning.md)
 
 ---
 

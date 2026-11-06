@@ -1,3 +1,15 @@
+---
+title: "addresses field"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "addresses field"
+issues: []
+discussions: []
+status: draft
+---
+
 # AddressesField Component
 
 ## Panoramica
@@ -473,10 +485,13 @@ public function address(): BelongsTo
 
 ---
 
-*Ultimo aggiornamento: Dicembre 2024*
 
-<<<<<<< HEAD
+title: "addresses field"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "addresses field"
+issues: []
+discussions: []
 **Il componente AddressesField rappresenta un esempio eccellente di applicazione del principio DRY e di progettazione orientata al riutilizzo nel contesto Filament.**
-=======
-**Il componente AddressesField rappresenta un esempio eccellente di applicazione del principio DRY e di progettazione orientata al riutilizzo nel contesto Filament.**
->>>>>>> 6ed19256f (.)

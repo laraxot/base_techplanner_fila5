@@ -1,3 +1,27 @@
+---
+title: "Analisi Errore LoginWidget: Problema Logico e Soluzione"
+type: concept
+tags: [loginwidget, error, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "loginwidget-error-analysis analisi errore loginwidget: problema logico e soluzione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Analisi Errore LoginWidget: Problema Logico e Soluzione
 
 ## Problema Identificato
@@ -175,12 +199,8 @@ class LoginWidget extends XotBaseWidget
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
-- [Documentazione Widget Structure](modules/user/widgets_structure.md)
+- [Documentazione Widget Structure](modules/user/widgets-structure.md)
 - [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md) 
-=======
-- [XotBaseWidget](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
-- [Documentazione Widget Structure](modules/user/widgets_structure.md)
-- [Best Practices Widget Filament](modules/user/best-practices/filament-widgets.md)
->>>>>>> 6ed19256f (.)
+- [Documentazione Widget Structure](widgets-structure-user.md)
+- [Best Practices Widget Filament](best-practices/filament-widgets.md) 

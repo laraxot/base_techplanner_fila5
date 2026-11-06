@@ -26,10 +26,11 @@ class NotificationData extends Data
 
     public string $body;
 
+    /** @var list<string> */
     public array $channels = [];
 
     /**
-     * @var DataCollection<AttachmentData>
+     * @var DataCollection<int, AttachmentData>
      */
     public ?DataCollection $attachments = null;
 
@@ -54,7 +55,6 @@ class NotificationData extends Data
         return SmsData::from([
             'from' => $this->from,
             'recipient' => $this->recipient,
-            'body' => $this->body,
-        ]);
+            'body' => $this->body]);
     }
 }

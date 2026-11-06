@@ -1,3 +1,15 @@
+---
+title: "no label rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no label rule"
+issues: []
+discussions: []
+status: draft
+---
+
 # REGOLA CRITICA: MAI ->label() nei Componenti Filament UI
 
 ## Principio Fondamentale per il Modulo UI
@@ -70,7 +82,6 @@ return [
 ## Audit Immediato Richiesto
 ```bash
 # Cerca tutti i ->label() nel modulo UI
-<<<<<<< HEAD
 grep -r "->label(" Modules/UI/
 
 # Cerca in tutti i file Filament
@@ -87,24 +98,6 @@ grep -r "->label(" Modules/UI/
 
 # Cerca in tutti i file Filament
 find Modules/UI/ -name "*.php" -exec grep -l "->label(" {} \;
-=======
-grep -r "->label(" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-
-# Cerca in tutti i file Filament
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/ -name "*.php" -exec grep -l "->label(" {} \;
-grep -r "->label(" /var/www/html/_bases/base_<nome progetto>/laravel/Modules/UI/
-
-# Cerca in tutti i file Filament
-find /var/www/html/_bases/base_<nome progetto>/laravel/Modules/UI/ -name "*.php" -exec grep -l "->label(" {} \;
-grep -r "->label(" /var/www/html/_bases/base_<nome progetto>/laravel/Modules/UI/
-
-# Cerca in tutti i file Filament
-find /var/www/html/_bases/base_<nome progetto>/laravel/Modules/UI/ -name "*.php" -exec grep -l "->label(" {} \;
-grep -r "->label(" /var/www/html/_bases/base_saluteora/laravel/Modules/UI/
-
-# Cerca in tutti i file Filament
-find /var/www/html/_bases/base_saluteora/laravel/Modules/UI/ -name "*.php" -exec grep -l "->label(" {} \;
->>>>>>> 6ed19256f (.)
 ```
 
 ## Processo di Correzione per il Modulo UI
@@ -117,17 +110,8 @@ find /var/www/html/_bases/base_saluteora/laravel/Modules/UI/ -name "*.php" -exec
 **"Se vedi ->label() in qualsiasi componente del modulo UI, ELIMINALO IMMEDIATAMENTE."**
 
 ## Collegamenti
-<<<<<<< HEAD
 - [../../../../docs/filament-no-label-rule.md](../../../../../docs/filament-no-label-rule.md)
-=======
-- [../../../docs/filament-no-label-rule.md](../../../../docs/filament-no-label-rule.md)
->>>>>>> 6ed19256f (.)
 - [automatic-translations.md](automatic-translations.md)
 - [label-translation-system.md](label-translation-system.md)
 - [best-practices.md](best-practices.md)
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-08-04*
-=======
-*Ultimo aggiornamento: 2025-08-04*
->>>>>>> 6ed19256f (.)

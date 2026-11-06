@@ -1,21 +1,26 @@
+---
+qmd: "structure"
+issues: []
+discussions: []
+title: "Modulo Notify"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+---
+
 # Modulo Notify
 
 Data: 2025-04-23 19:09:56
-<<<<<<< HEAD
-Data: 2025-04-23 19:09:56
-=======
->>>>>>> 6ed19256f (.)
 
 ## Informazioni generali
 
 - **Namespace principale**: Modules\\Notify
 Modules\\Notify\\Database\\Factories
 Modules\\Notify\\Database\\Seeders
-<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_notify_fila5
-=======
-- **Pacchetto Composer**: laraxot/module_notify_fila3
->>>>>>> 6ed19256f (.)
 Marco Sottana
 - **Dipendenze**: aws/aws-sdk-php * filament/filament * illuminate/contracts * illuminate/support * irazasyed/telegram-bot-sdk * kreait/laravel-firebase * laravel-notification-channels/fcm * laravel-notification-channels/telegram * phpdocumentor/type-resolver * symfony/http-client * symfony/postmark-mailer * repositories type path url ../Xot type path
 - **Totale file PHP**: 165
@@ -443,6 +448,7 @@ tests/Unit
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
 * [structure.md](../../../Gdpr/docs/structure.md)
+* [structure.md](../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
 * [structure.md](../../../Xot/docs/base/structure.md)
@@ -457,9 +463,15 @@ tests/Unit
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
+* [structure.md](../../User/docs/structure.md)
+* [structure.md](../../../UI/docs/structure.md)
+* [structure.md](../../Lang/docs/structure.md)
+* [structure.md](../../Job/docs/structure.md)
+* [structure.md](../../Media/docs/structure.md)
+* [structure.md](../../Tenant/docs/structure.md)
+* [structure.md](../../Activity/docs/structure.md)
+* [structure.md](../../../Cms/docs/structure.md)
+* [structure.md](../../Cms/docs/themes/structure.md)
+* [structure.md](../../Cms/docs/components/structure.md)
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

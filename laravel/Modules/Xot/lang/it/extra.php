@@ -4,38 +4,30 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'extra',
+        'name' => 'Extra',
         'plural' => 'estras',
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'Extra',
+        'icon' => 'heroicon-o-plus',
+        'sort' => 38,
     ],
     'pages' => [
         'health_check_results' => [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
-<<<<<<< HEAD
             'heading' => 'Application Health',
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Extra',
     'plural_label' => 'Extra (Plurale)',
     'fields' => [
@@ -44,6 +36,7 @@ return [
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'id',
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -57,18 +50,59 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'model_type' => [
+            'label' => 'model_type',
+        ],
+        'model_id' => [
+            'label' => 'model_id',
+        ],
+        'extra_attributes' => [
+            'label' => 'extra_attributes',
+        ],
+        'post_type' => [
+            'label' => 'post_type',
+            'placeholder' => 'post_type',
+            'helper_text' => 'post_type',
+            'description' => 'post_type',
+        ],
+        'post_id' => [
+            'label' => 'post_id',
+            'placeholder' => 'post_id',
+            'helper_text' => 'post_id',
+            'description' => 'post_id',
+        ],
+        'value' => [
+            'label' => 'value',
+            'placeholder' => 'value',
+            'helper_text' => '',
+            'description' => 'value',
+        ],
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Extra',
+            'icon' => 'create',
+            'tooltip' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Extra',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Extra',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

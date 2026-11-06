@@ -5,11 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Geo;
 
 use Illuminate\Contracts\Database\Query\Expression;
-<<<<<<< HEAD
 use Modules\Xot\Database\Query\GeoDistanceExpression;
-=======
-use Illuminate\Support\Facades\DB;
->>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -25,16 +21,9 @@ class GetDistanceExpressionAction
     /**
      * Genera l'espressione SQL per calcolare la distanza tra due punti.
      *
-<<<<<<< HEAD
-     * @param float       $latitude  Latitudine del punto di riferimento
-     * @param float       $longitude Longitudine del punto di riferimento
-     * @param string|null $alias     Alias per l'espressione (opzionale)
-=======
      * @param  float  $latitude  Latitudine del punto di riferimento
      * @param  float  $longitude  Longitudine del punto di riferimento
      * @param  string|null  $alias  Alias per l'espressione (opzionale)
->>>>>>> 6ed19256f (.)
-     *
      * @return Expression Espressione SQL per il calcolo della distanza
      */
     public function execute(
@@ -42,24 +31,6 @@ class GetDistanceExpressionAction
         float $longitude,
         ?string $alias = null,
     ): Expression {
-<<<<<<< HEAD
         return new GeoDistanceExpression($latitude, $longitude, $alias);
-=======
-        $sql = "
-            (6371 * acos(
-                cos(radians({$latitude})) *
-                cos(radians(latitude)) *
-                cos(radians(longitude) - radians({$longitude})) +
-                sin(radians({$latitude})) *
-                sin(radians(latitude))
-            ))
-        ";
-
-        if ($alias !== null) {
-            $sql .= " AS {$alias}";
-        }
-
-        return DB::raw($sql);
->>>>>>> 6ed19256f (.)
     }
 }

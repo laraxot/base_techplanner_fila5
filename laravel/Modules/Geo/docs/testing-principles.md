@@ -1,3 +1,15 @@
+---
+title: "testing principles"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing principles"
+issues: []
+discussions: []
+status: draft
+---
+
 # Principi di Testing
 
 ## Regola Fondamentale
@@ -40,11 +52,7 @@ test('doctor can create appointment for patient', function () {
     $this->actingAs($doctor)
         ->post('/appointments', [
             'patient_id' => $patient->id,
-            'date' => '2024-01-15',
-<<<<<<< HEAD
             'date' => '[DATE]',
-=======
->>>>>>> 6ed19256f (.)
             'time' => '10:00',
             'type' => 'consultation',
         ]);
@@ -163,12 +171,6 @@ test('patient inherits user functionality', function () {
 - [Testing Guidelines](../laravel/.ai/guidelines/testing-guidelines.md)
 
 ---
-**Ultima modifica**: 2025-01-06
-<<<<<<< HEAD
 **Ultima modifica**: [DATE]
 **Priorità**: CRITICA
 **Applicazione**: SEMPRE, TUTTI I TEST
-=======
-**Priorità**: CRITICA
-**Applicazione**: SEMPRE, TUTTI I TEST
->>>>>>> 6ed19256f (.)

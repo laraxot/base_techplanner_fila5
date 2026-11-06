@@ -7,7 +7,6 @@ namespace Modules\Cms\Datas;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Illuminate\View\Factory;
 use Illuminate\View\FileViewFinder;
@@ -18,9 +17,6 @@ use function Safe\fclose;
 use function Safe\fopen;
 use function Safe\fread;
 
-=======
-use Livewire\Wireable;
->>>>>>> 6ed19256f (.)
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
@@ -32,22 +28,22 @@ class BlockData extends Data implements Wireable
 
     public string $type;
 
-<<<<<<< HEAD
     public ?string $slug = null;
 
-=======
->>>>>>> 6ed19256f (.)
+    /** @var array<string, mixed> */
     public array $data;
 
     public string $view;
 
-<<<<<<< HEAD
     public bool $livewire = false;
 
     public string $livewireComponentName = '';
 
     public bool $active = true;
 
+    /**
+     * @param array<string, mixed> $data
+     */
     public function __construct(string $type, array $data, ?string $slug = null, bool $active = true)
     {
         $this->type = $type;
@@ -76,9 +72,17 @@ class BlockData extends Data implements Wireable
         $this->livewireComponentName = $this->normalizeComponentName($view);
     }
 
+    /**
+     * @param EloquentCollection<int, mixed>|Collection<int, mixed>|array<int, mixed> $data
+     *
+     * @return DataCollection<int, BlockData>|array<int, BlockData>
+     */
     public static function collection(EloquentCollection|Collection|array $data): DataCollection|array
     {
-        return self::collect($data, DataCollection::class);
+        /** @var DataCollection<int, BlockData> $collection */
+        $collection = self::collect($data, DataCollection::class);
+
+        return $collection;
     }
 
     private function detectLivewire(string $view): bool
@@ -121,47 +125,12 @@ class BlockData extends Data implements Wireable
             $name = (string) Str::after($name, '::');
         }
 
-        return $name;
-    }
-=======
-    public function __construct(string $type, array $data)
-    {
-        $this->type = $type;
-        $this->data = $data;
-        Assert::string($view = Arr::get($data, 'view', 'ui::empty'), '['.__LINE__.']['.__FILE__.']');
-
-        // Verifica che la view esista, con gestione più robusta per i namespace
-        // Se la view usa un namespace (es. pub_theme::), verifica anche il file fisico
-        if (! view()->exists($view)) {
-            // Se la view usa un namespace, prova a verificare il file fisico direttamente
-            if (str_contains($view, '::')) {
-                [$namespace, $path] = explode('::', $view, 2);
-
-                // Per PHPStan Level 10: usiamo un approccio più sicuro
-                // invece di accedere direttamente a metodi non documentati
-                try {
-                    // Tentativo di risolvere il namespace della view in modo più sicuro
-                    $viewFactory = view();
-                    if (method_exists($viewFactory, 'addNamespace')) {
-                        // Se il metodo esiste, possiamo procedere con logica alternativa
-                        $this->view = $view; // Accetta la view temporaneamente
-
-                        return;
-                    }
-                } catch (\Exception $e) {
-                    // In caso di errore, continua con la view originale
-                }
-            }
-            // Se arriviamo qui, la view non esiste
-            throw new \Exception('view not found: '.$view);
+        // Se il nome contiene un punto (variante come design-comuni), estrai il nome base
+        // Esempio: 'ticket-list.design-comuni' -> 'ticket_list'
+        if (str_contains($name, '.')) {
+            $name = Str::beforeLast($name, '.');
         }
 
-        $this->view = $view;
+        return $name;
     }
-
-    public static function collection(EloquentCollection|Collection|array $data): DataCollection
-    {
-        return self::collect($data, DataCollection::class);
-    }
->>>>>>> 6ed19256f (.)
 }

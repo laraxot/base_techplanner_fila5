@@ -1,3 +1,15 @@
+---
+title: "never use label rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "never use label rule"
+issues: []
+discussions: []
+status: draft
+---
+
 # REGOLA CRITICA: MAI usare ->label()
 
 ## ❌ ERRORE CRITICO - NON FARE MAI QUESTO
@@ -154,15 +166,9 @@ rules:
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Translation Standards](../../../../docs/translation-standards.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../../docs/lang-service-provider.md)
-=======
-- [Translation Standards](../../../docs/translation-standards.md)
-- [Filament Best Practices](../../../docs/filament-best-practices.md)
-- [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
->>>>>>> 6ed19256f (.)
 
 ## Memoria Permanente
 
@@ -174,11 +180,7 @@ rules:
 - SEMPRE testare le traduzioni prima del commit
 # REGOLA CRITICA: MAI usare ->label()
 
-## Data: 2025-01-06
-<<<<<<< HEAD
 ## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## ❌ ERRORE CRITICO - NON FARE MAI QUESTO
 
@@ -343,15 +345,9 @@ rules:
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Translation Standards](../../../../docs/translation-standards.md)
 - [Filament Best Practices](../../../../docs/filament-best-practices.md)
 - [LangServiceProvider Documentation](../../../../docs/lang-service-provider.md)
-=======
-- [Translation Standards](../../../docs/translation-standards.md)
-- [Filament Best Practices](../../../docs/filament-best-practices.md)
-- [LangServiceProvider Documentation](../../../docs/lang-service-provider.md)
->>>>>>> 6ed19256f (.)
 
 ## Memoria Permanente
 
@@ -367,8 +363,3 @@ rules:
 
 - SEMPRE testare le traduzioni prima del commit
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

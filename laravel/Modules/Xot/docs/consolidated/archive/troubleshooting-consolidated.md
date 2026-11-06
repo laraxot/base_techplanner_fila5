@@ -1,3 +1,11 @@
+---
+title: "Troubleshooting - Documentazione Consolidata DRY + KISS"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "troubleshooting - documentazione consolidata dry + kiss xot"
+---
 # Troubleshooting - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTI i problemi comuni e le soluzioni del progetto
@@ -206,11 +214,7 @@ Codice non conforme agli standard di tipizzazione.
 **Soluzione**
 ```bash
 # Eseguire da directory Laravel
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/_bases/base_saluteora/laravel
->>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 

@@ -34,7 +34,6 @@ return [
         'type' => 'Tipo',
         'btn' => 'Salva',
     ],
-<<<<<<< HEAD
     'label' => 'Filament Navigation',
     'plural_label' => 'Filament Navigation (Plurale)',
     'navigation' => [
@@ -46,7 +45,7 @@ return [
         ],
         'label' => 'Filament Navigation',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -79,6 +78,4 @@ return [
             'label' => 'Elimina Filament Navigation',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

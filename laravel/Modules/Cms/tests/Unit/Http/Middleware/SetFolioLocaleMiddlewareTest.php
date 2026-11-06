@@ -2,11 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Modules\Cms\Tests\Unit\Http\Middleware;
-
 use Illuminate\Http\Request;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Cms\Http\Middleware\SetFolioLocale;
+use PHPUnit\Framework\Assert;
 
 test('it uses user language with highest priority', function (): void {
     LaravelLocalization::shouldReceive('setLocale')->once()->with('fr');
@@ -14,11 +13,12 @@ test('it uses user language with highest priority', function (): void {
     $request = Request::create('/en/some-page', 'GET');
     $request->setUserResolver(fn (): object => (object) ['lang' => 'fr']);
 
-    $middleware = new SetFolioLocale();
+    $middleware = new SetFolioLocale;
     $response = $middleware->handle($request, fn (Request $req) => response('ok'));
 
-    expect($response->getStatusCode())->toBe(200)
-        ->and(app()->getLocale())->toBe('fr');
+    Assert::assertSame(200, $response->getStatusCode());
+
+    Assert::assertSame('fr', app()->getLocale());
 });
 
 test('it uses first url segment when locale is supported', function (): void {
@@ -32,11 +32,12 @@ test('it uses first url segment when locale is supported', function (): void {
     $request = Request::create('/de/some-page', 'GET');
     $request->setUserResolver(fn () => null);
 
-    $middleware = new SetFolioLocale();
+    $middleware = new SetFolioLocale;
     $response = $middleware->handle($request, fn (Request $req) => response('ok'));
 
-    expect($response->getStatusCode())->toBe(200)
-        ->and(app()->getLocale())->toBe('de');
+    Assert::assertSame(200, $response->getStatusCode());
+
+    Assert::assertSame('de', app()->getLocale());
 });
 
 test('it falls back to default app locale when url segment is not supported', function (): void {
@@ -52,9 +53,10 @@ test('it falls back to default app locale when url segment is not supported', fu
     $request = Request::create('/blog/post-1', 'GET');
     $request->setUserResolver(fn () => null);
 
-    $middleware = new SetFolioLocale();
+    $middleware = new SetFolioLocale;
     $response = $middleware->handle($request, fn (Request $req) => response('ok'));
 
-    expect($response->getStatusCode())->toBe(200)
-        ->and(app()->getLocale())->toBe('it');
+    Assert::assertSame(200, $response->getStatusCode());
+
+    Assert::assertSame('it', app()->getLocale());
 });

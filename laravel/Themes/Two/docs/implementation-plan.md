@@ -1,5 +1,7 @@
 # Piano di Implementazione: Adattamento Sito Target
 
+> Nota di verifica 2026-10-28 (docs-temi): e' un piano, non lo stato del codice. I 13 file proposti (`radioprotection-header|footer`, `home-radioprotezione`, `layouts/radioprotection`, `lang/it/radioprotection.php`, `components/sections/{controls,hero,newsletter,resources,sectors,services,testimonials,why-radioprotection}.blade.php`) non esistono nel tema; le sezioni reali sono `components/sections/{header,footer}*` e i blocchi in `components/blocks/`. Stato attuale: [index.md](./index.md).
+
 ## Data: 6 Febbraio 2026
 
 ## Obiettivo

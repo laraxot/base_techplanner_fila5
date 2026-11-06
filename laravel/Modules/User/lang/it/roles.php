@@ -4,62 +4,9 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-        'id' => [
-            'label' => 'id',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'name',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'team_id' => [
-            'label' => 'team_id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
+        'edit' => ['label' => 'Modifica Roles', 'icon' => 'edit', 'tooltip' => 'edit'],
+        'delete' => ['label' => 'Elimina Roles', 'icon' => 'delete', 'tooltip' => 'delete'],
+        'layout' => ['label' => 'layout', 'icon' => 'layout', 'tooltip' => 'layout'],
+        'view' => ['label' => 'view', 'icon' => 'view', 'tooltip' => 'view'],
     ],
-    'navigation' => [
-        'name' => 'Roles',
-        'plural' => 'Roles',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Roles',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Roles',
-    'plural_label' => 'Roles (Plurale)',
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Roles',
-        ],
-        'edit' => [
-            'label' => 'Modifica Roles',
-        ],
-        'delete' => [
-            'label' => 'Elimina Roles',
-        ],
-    ],
-=======
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'team_id' => [
-            'label' => 'team_id',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,15 @@
+---
+title: "homepage"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "homepage"
+issues: []
+discussions: []
+status: draft
+---
+
 # Homepage Replication
 
 > **Replicare la homepage di Design Comuni Italia**
@@ -5,11 +17,11 @@
 ## 📋 Panoramica
 
 - **Originale:** https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html
-- **Produzione locale (canon):** http://127.0.0.1:8000/it — layout «Elenco segnalazioni» (parity target: [segnalazioni-elenco.html](https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html)) — story [STORY-058](../../../../docs/stories/STORY-058-it-segnalazioni-elenco-html-visual-parity.md)
+- **Produzione locale (canon):** http://127.0.0.1:8000/it — layout «Elenco segnalazioni» (parity target: [ticket-list.html](https://italia.github.io/design-comuni-pagine-statiche/sito/ticket-list.html)) — story [STORY-058](../../../../docs/stories/STORY-058-it-ticket-list-html-visual-parity.md)
 - **Sandbox parity:** http://127.0.0.1:8000/it/tests/homepage — `tests.homepage.json`
 - **Route produzione:** `Themes/Sixteen/resources/views/pages/index.blade.php`
 - **Route sandbox:** `Themes/Sixteen/resources/views/pages/tests/[slug].blade.php`
-- **Stato:** 🔄 In Progress — blocchi CMS: [STORY-062](../../../../docs/stories/STORY-062-segnalazioni-elenco-cms-blocks-decomposition.md); gap: [visual-comparison/it-vs-segnalazioni-elenco.md](../visual-comparison/it-vs-segnalazioni-elenco.md)
+- **Stato:** 🔄 In Progress — blocchi CMS: [STORY-062](../../../../docs/stories/STORY-062-ticket-list-cms-blocks-decomposition.md); gap: [visual-comparison/it-vs-ticket-list.md](../visual-comparison/it-vs-ticket-list.md)
 
 ## 🎯 Obiettivi
 
@@ -32,10 +44,9 @@
 <x-section slug="header" />
 ```
 
-**Documentazione:** [Header Component](../../components/header.md)
+**Documentazione:** [Header Component](../../prompts/header.md)
 
 ---
-
 ### Main Content
 
 #### 1. Hero Newscard
@@ -274,7 +285,7 @@
 <x-section slug="footer" />
 ```
 
-**Documentazione:** [Footer Component](../../components/footer.md)
+**Documentazione:** [Footer Component](../../components/ui/marketing/footer.md)
 
 ---
 
@@ -517,8 +528,8 @@ npx playwright test Modules/Geo/tests/Playwright/homepage-it-mobile-qa.spec.js
 - [Block System](../blocks/00-index.md)
 - [Replication Guide](../replication-guide.md)
 - [Screenshot Analysis](../screenshots/homepage/homepage.md)
-- [Header Component](../../components/header.md)
-- [Footer Component](../../components/footer.md)
+- [Header Component](../../prompts/header.md)
+- [Footer Component](../../components/ui/marketing/footer.md)
 
 ---
 

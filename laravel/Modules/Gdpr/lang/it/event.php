@@ -15,7 +15,6 @@ return [
         'icon' => 'gdpr-event',
     ],
     'fields' => [
-<<<<<<< HEAD
         'event_type' => [
             'label' => 'Tipo Evento',
             'tooltip' => '',
@@ -75,25 +74,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'event_type' => 'Tipo Evento',
-        'description' => 'Descrizione',
-        'user' => 'Utente',
-        'timestamp' => 'Data e Ora',
-        'data' => 'Dati',
-        'source' => 'Sorgente',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'event_types' => [
@@ -103,7 +83,6 @@ return [
         'data_modified' => 'Dati Modificati',
         'data_deleted' => 'Dati Eliminati',
     ],
-<<<<<<< HEAD
     'label' => 'Event',
     'plural_label' => 'Event (Plurale)',
     'actions' => [
@@ -117,6 +96,4 @@ return [
             'label' => 'Elimina Event',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

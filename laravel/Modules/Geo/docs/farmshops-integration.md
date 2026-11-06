@@ -1,11 +1,21 @@
+---
+title: "farmshops integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "farmshops integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🗺️ FARMSHOPS.EU - INTEGRATION GUIDE
 
-**Data**: 2025-10-02
 **Source**: https://github.com/CodeforKarlsruhe/farmshops.eu
 **Purpose**: Integrare tecnologie e pattern da farmshops.eu in FixCity
 
 ---
-
 ## 📊 ANALISI PROGETTO FARMSHOPS.EU
 
 ### Scopo
@@ -437,8 +447,4 @@ class TicketMap extends Component
 **Estimated Time**: 3 weeks
 **Impact**: MAJOR UX improvement
 
-<<<<<<< HEAD
 *"Integrando le migliori pratiche da farmshops.eu, FixCity avrà una mappa interattiva di livello mondiale!"*
-=======
-*"Integrando le migliori pratiche da farmshops.eu, FixCity avrà una mappa interattiva di livello mondiale!"*
->>>>>>> 6ed19256f (.)

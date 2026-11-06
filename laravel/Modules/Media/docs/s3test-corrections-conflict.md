@@ -1,5 +1,17 @@
-<<<<<<< HEAD
-=======
+---
+issues: []
+discussions: []
+title: "Correzioni S3Test.php - Modulo Media"
+module: "Media"
+type: concept
+tags: [s3test, corrections, conflict]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "s3test corrections conflict"
+related:
+  - "./webm.md"
+status: draft
+---
 # Correzioni S3Test.php - Modulo Media
 
 ## Problemi Identificati e Risolti
@@ -246,24 +258,13 @@ private function getSolutionForError(?string $errorCode): string
 
 ## Collegamenti
 
->>>>>>> 6ed19256f (.)
-- [Documentazione Generale Media](../README.md)
-- [Best Practice Traduzioni](../../../docs/translation-standards.md)
-- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
-- [PHPStan Level 10 Fixes](./phpstan_level10_fixes.md)
+- [Documentazione Generale Media](../readme.md)
+- [Best Practice Traduzioni](../../../../docs/translation-standards.md)
+- [Convenzioni Laraxot](../../../../docs/laraxot_conventions.md)
+- [PHPStan Level 10 Fixes](./phpstan-level10-fixes.md)
 
 ---
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato e verificato
-<<<<<<< HEAD
----
-module: theme
-topic: s3test-corrections-conflict
-canonical: ../../../Themes/docs/shared-components/s3test-corrections-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/s3test-corrections-1.md
-=======
->>>>>>> 6ed19256f (.)

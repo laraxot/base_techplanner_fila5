@@ -1,3 +1,15 @@
+---
+title: "02 theme content to page component"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "02 theme content to page component"
+issues: []
+discussions: []
+status: draft
+---
+
 # Migrazione da $_theme->showPageContent() a <x-page> Component
 
 ## Panoramica
@@ -28,17 +40,10 @@ Cerca tutte le occorrenze del vecchio pattern nei file Blade:
 
 ```bash
 # Cerca showPageContent
-<<<<<<< HEAD
 grep -r "showPageContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila5_mono/laravel
 
 # Cerca showPageSidebarContent
 grep -r "showPageSidebarContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila5_mono/laravel
-=======
-grep -r "showPageContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila3_mono/laravel
-
-# Cerca showPageSidebarContent
-grep -r "showPageSidebarContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila3_mono/laravel
->>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Pattern di Migrazione
@@ -213,8 +218,4 @@ Si raccomanda di completare questa migrazione in tutti i file del progetto per g
 
 - [Documentazione Componenti Blade Laravel](https://laravel.com/docs/blade#components)
 - [Componente Page](../components/page.md)
-<<<<<<< HEAD
 - [Best Practices per il Rendering delle Pagine](../best-practices/page-rendering.md)
-=======
-- [Best Practices per il Rendering delle Pagine](../best-practices/page-rendering.md)
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "integrations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "integrations"
+issues: []
+discussions: []
+status: draft
+---
+
 # Integrazioni
 
 ## Pacchetti Utilizzati
@@ -89,20 +101,11 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 ## Collegamenti tra versioni di integrations.md
 * [integrations.md](docs/tecnico/filament/integrations.md)
-* [integrations.md](../../../Job/docs/packages/integrations.md)
-<<<<<<< HEAD
 * [integrations.md](../../../job/docs/packages/integrations.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ---
-
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

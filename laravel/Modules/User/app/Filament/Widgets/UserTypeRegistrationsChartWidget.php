@@ -9,32 +9,21 @@ use Flowframe\Trend\TrendValue;
 use Illuminate\Support\Carbon;
 use Modules\Xot\Filament\Widgets\XotBaseChartWidget;
 
-<<<<<<< HEAD
 final class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 {
     /** @var class-string */
-=======
-class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
-{
->>>>>>> 6ed19256f (.)
     public string $model;
 
     protected ?string $heading = null;
 
     protected static ?int $sort = 1;
 
-    protected static bool $isLazy = true;
+    protected static ?bool $isLazyLoaded = true;
 
     #[\Override]
-<<<<<<< HEAD
     public function getHeading(): string
     {
         return self::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
-=======
-    public function getHeading(): ?string
-    {
-        return static::transClass($this->model, 'widgets.user_type_registrations_chart.heading');
->>>>>>> 6ed19256f (.)
     }
 
     #[\Override]
@@ -49,22 +38,15 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
 
         // Verifica se i filtri sono disponibili e validi
         if (is_array($filters) && ! empty($filters)) {
-<<<<<<< HEAD
-            $startDate = self::parseFilterDate($filters['startDate'] ?? null);
-            $endDate = self::parseFilterDate($filters['endDate'] ?? null);
-=======
-            /** @phpstan-ignore-next-line */
-            $startDate = ! empty($filters['startDate']) ? Carbon::parse($filters['startDate']) : null;
-            /** @phpstan-ignore-next-line */
-            $endDate = ! empty($filters['endDate']) ? Carbon::parse($filters['endDate']) : null;
->>>>>>> 6ed19256f (.)
+            $startDate = self::parseFilterDateFromFilters($filters, 'startDate');
+            $endDate = self::parseFilterDateFromFilters($filters, 'endDate');
         }
 
         // Fallback ai valori di default se i filtri non sono disponibili
-        if (null === $startDate) {
+        if ($startDate === null) {
             $startDate = now()->subDays(30);
         }
-        if (null === $endDate) {
+        if ($endDate === null) {
             $endDate = now();
         }
 
@@ -80,11 +62,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
             return [
                 'datasets' => [
                     [
-<<<<<<< HEAD
                         'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
-=======
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
->>>>>>> 6ed19256f (.)
                         'data' => $data->map(fn (mixed $value) => $value instanceof TrendValue
                             ? $value->aggregate
                             : 0),
@@ -103,11 +81,7 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
             return [
                 'datasets' => [
                     [
-<<<<<<< HEAD
                         'label' => self::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
-=======
-                        'label' => static::transClass($this->model, 'widgets.user_type_registrations_chart.label'),
->>>>>>> 6ed19256f (.)
                         'data' => [],
                         'backgroundColor' => 'rgba(59, 130, 246, 0.5)',
                         'borderColor' => 'rgb(59, 130, 246)',
@@ -125,16 +99,30 @@ class UserTypeRegistrationsChartWidget extends XotBaseChartWidget
     {
         return 'line';
     }
-<<<<<<< HEAD
 
-    private static function parseFilterDate(mixed $value): ?Carbon
+    /**
+     * @param  array<scalar, scalar>  $filters
+     */
+    private static function parseFilterDateFromFilters(array $filters, string $key): ?Carbon
     {
-        if (! is_string($value) && ! is_int($value) && ! is_float($value)) {
+        if (! array_key_exists($key, $filters)) {
+            return null;
+        }
+
+        $raw = $filters[$key];
+        if (! is_string($raw) && ! is_int($raw)) {
+            return null;
+        }
+
+        return self::parseFilterDate($raw);
+    }
+
+    private static function parseFilterDate(string|int|null $value): ?Carbon
+    {
+        if ($value === null) {
             return null;
         }
 
         return Carbon::parse($value);
     }
-=======
->>>>>>> 6ed19256f (.)
 }

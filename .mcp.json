@@ -1,5 +1,15 @@
 {
     "mcpServers": {
+        "qmd": {
+            "type": "stdio",
+            "command": "qmd",
+            "args": ["mcp"],
+            "env": {
+                "XDG_CACHE_HOME": "${HOME}/.cache/qmd-cache",
+                "XDG_CONFIG_HOME": "${HOME}/.cache/qmd-config",
+                "QMD_LLAMA_GPU": "off"
+            }
+        },
         "flowbite": {
             "type": "stdio",
             "command": "npx",

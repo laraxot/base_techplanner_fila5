@@ -13,11 +13,7 @@
                     @endif
                     @if(isset($item['value']))
                         <dd class="text-gray-900 font-mono text-xs">
-                            @if(str_contains($item['value'], '{{') && str_contains($item['value'], '}}'))
-                                {!! \Illuminate\Support\Facades\Blade::render($item['value']) !!}
-                            @else
-                                {{ $item['value'] }}
-                            @endif
+                            {{ $item['value'] }}
                         </dd>
                     @endif
                 </div>
@@ -28,7 +24,7 @@
     <div class="mt-3 pt-3 border-t border-gray-300">
         <div class="flex items-center text-xs text-gray-500">
             <div class="w-2 h-2 bg-green-400 rounded-full mr-2"></div>
-            Sistema Attivo
+            {{ __('pub_theme::blocks.sidebar.system_active.label') }}
         </div>
     </div>
 </div>

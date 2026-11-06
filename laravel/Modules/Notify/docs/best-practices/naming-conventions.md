@@ -1,3 +1,24 @@
+---
+title: "Convenzioni di Naming"
+type: concept
+tags: [notify, docs, best-practices, naming, conventions]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione best practices naming conventions convenzioni di naming frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../architecture/README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - ../README.md
+status: superseded
+superseded_by: ../naming-conventions.md
+---
 # Convenzioni di Naming
 
 ## Regole Generali
@@ -57,11 +78,7 @@ public function handleHTTPRequest(): void
 # Convenzioni di Naming per le Azioni di Notifica
 
 Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema , supportando la risoluzione dinamica delle classi implementata nei factory.
-<<<<<<< HEAD
 Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema <nome progetto>, supportando la risoluzione dinamica delle classi implementata nei factory.
-=======
-Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema SaluteOra, supportando la risoluzione dinamica delle classi implementata nei factory.
->>>>>>> 6ed19256f (.)
 
 ## Pattern di Naming
 
@@ -137,11 +154,7 @@ final class SendNewProviderSMSAction implements SmsActionInterface
     public function execute(SmsData $smsData): array
     {
         // Implementazione...
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return [
             'success' => true,
             // Altri dati...

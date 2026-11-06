@@ -1,24 +1,15 @@
 <?php
 
 declare(strict_types=1);
-
 // app/Filament/Components/TranslationEditor.php
 
 namespace Modules\Lang\Filament\Forms\Components;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Section;
 use Modules\Xot\Filament\Forms\Components\XotBaseField;
 
 class TranslationEditor extends XotBaseField
-=======
-use Filament\Forms\Components\Field;
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Section;
-
-class TranslationEditor extends Field
->>>>>>> 6ed19256f (.)
 {
     protected string $view = 'lang::filament.forms.components.translation-editor';
 
@@ -35,7 +26,7 @@ class TranslationEditor extends Field
     {
         $components = [];
         $state = $this->getState() ?? [];
-        if (! is_iterable($state)) {
+        if (! is_array($state)) {
             return $components;
         }
 
@@ -46,7 +37,9 @@ class TranslationEditor extends Field
                     TranslationEditor::make($keyStr)->label('')->state($value),
                 ]);
             } else {
-                $valueStr = is_string($value) ? $value : (string) $value;
+                /** @var string|int|float|bool|null $valueNarrowed */
+                $valueNarrowed = $value;
+                $valueStr = is_string($valueNarrowed) ? $valueNarrowed : (string) $valueNarrowed;
                 $label = str_replace('_', ' ', $keyStr);
                 $components[] = TextInput::make($keyStr)->label($label)->default($valueStr);
             }

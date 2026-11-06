@@ -1,3 +1,15 @@
+---
+title: "filament personalizzazioni avanzate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament personalizzazioni avanzate"
+issues: []
+discussions: []
+status: draft
+---
+
 # Personalizzazioni Avanzate di Filament in il progetto
 
 Questa guida illustra le tecniche avanzate per personalizzare Filament all'interno del framework il progetto, con particolare attenzione alle funzionalità che migliorano l'esperienza utente e la manutenibilità del codice.
@@ -121,19 +133,11 @@ public static function table(Table $table): Table
             if ($record->status === 'critical') {
                 return 'bg-danger-500/10';
             }
-<<<<<<< HEAD
             
             if ($record->status === 'warning') {
                 return 'bg-warning-500/10';
             }
             
-=======
->>>>>>> 6ed19256f (.)
-
-            if ($record->status === 'warning') {
-                return 'bg-warning-500/10';
-            }
-
             return '';
         });
 }
@@ -147,19 +151,11 @@ TextColumn::make('stock')
         if ($state <= 0) {
             return 'danger';
         }
-<<<<<<< HEAD
         
         if ($state < 10) {
             return 'warning';
         }
         
-=======
->>>>>>> 6ed19256f (.)
-
-        if ($state < 10) {
-            return 'warning';
-        }
-
         return 'success';
     })
 ```
@@ -368,22 +364,12 @@ class MiaRisorsa extends XotBaseResource
 class MiaRisorsa extends XotBaseResource
 {
     protected static ?string $navigationIcon = 'heroicon-o-document';
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     public static function getRelations(): array
     {
         return [];
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [
@@ -402,8 +388,4 @@ Queste personalizzazioni avanzate di Filament consentono di creare interfacce am
 
 - [Documentazione ufficiale di Filament](https://filamentphp.com/docs)
 - [FilamentExamples.com](https://filamentexamples.com)
-<<<<<<< HEAD
 - [Repository GitHub di Filament](https://github.com/filamentphp/filament)
-=======
-- [Repository GitHub di Filament](https://github.com/filamentphp/filament)
->>>>>>> 6ed19256f (.)

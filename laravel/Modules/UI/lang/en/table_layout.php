@@ -3,6 +3,20 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
+        'list' => [
+            'label' => 'List',
+            'icon' => 'heroicon-o-list-bullet',
+            'color' => 'primary',
+            'description' => 'List',
+        ],
+        'grid' => [
+            'label' => 'Grid',
+            'icon' => 'heroicon-o-squares-2x2',
+            'color' => 'secondary',
+            'description' => 'Grid',
+        ],
+    ],
     'actions' => [
         'toggle' => [
             'label' => 'Toggle Layout',
@@ -10,7 +24,6 @@ return [
             'helper_text' => 'Change the display type',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +35,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,12 +1,32 @@
+---
+title: "BaseUser - Analisi Violazione Principio DRY"
+type: concept
+tags: [baseuser, dry, violation, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "baseuser-dry-violation-analysis baseuser - analisi violazione principio dry"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # BaseUser - Analisi Violazione Principio DRY
 
-<<<<<<< HEAD
 **Data**: 15 Ottobre 2025  
 **File**: `Modules/User/app/Models/BaseUser.php`  
-=======
-**Data**: 15 Ottobre 2025
-**File**: `Modules/User/app/Models/BaseUser.php`
->>>>>>> 6ed19256f (.)
 **Problema**: Metodi duplicati già presenti in `Spatie\Permission\Traits\HasRoles`
 
 ## Problema Identificato
@@ -43,16 +63,11 @@ public function hasRole(\Spatie\Permission\Contracts\Role|...$roles, ?string $gu
 public function hasRole($roles, ?string $guard = null): bool
 {
     $this->loadMissing('roles');
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Supporta pipe syntax: 'admin|user'
     if (is_string($roles) && strpos($roles, '|') !== false) {
         $roles = $this->convertPipeToArray($roles);
     }
-<<<<<<< HEAD
     
     // Supporta BackedEnum
     if ($roles instanceof \BackedEnum) { ... }
@@ -60,15 +75,6 @@ public function hasRole($roles, ?string $guard = null): bool
     // Gestione UUID
     if (is_int($roles) || PermissionRegistrar::isUid($roles)) { ... }
     
-=======
-
-    // Supporta BackedEnum
-    if ($roles instanceof \BackedEnum) { ... }
-
-    // Gestione UUID
-    if (is_int($roles) || PermissionRegistrar::isUid($roles)) { ... }
-
->>>>>>> 6ed19256f (.)
     // ... 58 linee totali con gestione completa
 }
 ```
@@ -105,7 +111,6 @@ public function assignRoleOLD(...$roles = []): static
 public function assignRole(...$roles)
 {
     $roles = $this->collectRoles($roles);
-<<<<<<< HEAD
     
     // Gestione teams/tenancy
     $teamPivot = app(PermissionRegistrar::class)->teams && ...
@@ -113,24 +118,11 @@ public function assignRole(...$roles)
     // Attach con gestione eventi
     $this->roles()->attach(array_diff($roles, $currentRoles), $teamPivot);
     
-=======
-
-    // Gestione teams/tenancy
-    $teamPivot = app(PermissionRegistrar::class)->teams && ...
-
-    // Attach con gestione eventi
-    $this->roles()->attach(array_diff($roles, $currentRoles), $teamPivot);
-
->>>>>>> 6ed19256f (.)
     // Event dispatching
     if (config('permission.events_enabled')) {
         event(new RoleAttached($this->getModel(), $roles));
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     return $this;
 }
 ```
@@ -261,11 +253,7 @@ public function hasRole(...): bool
 #### Step 2: Rimuovere `assignRoleOLD()` (linee 211-236)
 
 ```php
-<<<<<<< HEAD
 // ❌ RIMUOVERE COMPLETAMENTE  
-=======
-// ❌ RIMUOVERE COMPLETAMENTE
->>>>>>> 6ed19256f (.)
 public function assignRoleOLD(...): static
 {
     // 26 linee di codice obsoleto da cancellare
@@ -362,31 +350,19 @@ abstract class BaseUser extends Authenticatable implements ...
 {
     use HasRoles; // ✅ Il trait fornisce tutto ciò che serve
     // ... altri traits
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // ❌ RIMOSSI:
     // - hasRole() - duplicato
     // - assignRoleOLD() - obsoleto
     // - hasPermission() - ridondante (usare hasPermissionTo)
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // ✅ MANTENUTI:
     // - getName() - specifico per Filament
     // - profile() - relazione custom
     // - canAccessPanel() - logica business
     // - get*Attribute() - accessor specifici
     // - 2FA methods - specifici dell'app
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // ... resto del codice pulito
 }
 ```
@@ -438,11 +414,7 @@ Prima del refactoring, creare questi test:
 test('hasRole works with string', function () {
     $user = User::factory()->create();
     $user->assignRole('admin');
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     expect($user->hasRole('admin'))->toBeTrue();
     expect($user->hasRole('user'))->toBeFalse();
 });
@@ -450,22 +422,14 @@ test('hasRole works with string', function () {
 test('hasRole works with array', function () {
     $user = User::factory()->create();
     $user->assignRole(['admin', 'editor']);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     expect($user->hasRole(['admin', 'editor']))->toBeTrue();
 });
 
 test('hasRole works with guard parameter', function () {
     $user = User::factory()->create();
     $user->assignRole('admin', 'web');
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     expect($user->hasRole('admin', 'web'))->toBeTrue();
 });
 ```
@@ -493,13 +457,9 @@ test('hasRole works with guard parameter', function () {
 - [API Reference](https://github.com/spatie/laravel-permission/blob/main/src/Traits/HasRoles.php)
 
 ### Root Progetto
-<<<<<<< HEAD
 - [DRY Violations](../../../../docs/dry-violations-analysis.md)
-- [Code Quality](../../../../docs/code-quality-analysis.md)
-=======
-- [DRY Violations](../../../docs/dry-violations-analysis.md)
-- [Code Quality](../../../docs/code-quality-analysis.md)
->>>>>>> 6ed19256f (.)
+- [Code Quality](code-quality-analysis.md)
+- [Code Quality](code-quality-analysis.md)
 
 ## Conclusioni
 
@@ -514,7 +474,6 @@ La rimozione dei metodi duplicati in `BaseUser`:
 
 ## Principi Zen Applicati
 
-<<<<<<< HEAD
 > **"Non ripetere te stesso, fidati di chi sa"**  
 > Il trait HasRoles è mantenuto da esperti, usalo!
 
@@ -523,13 +482,4 @@ La rimozione dei metodi duplicati in `BaseUser`:
 
 > **"Se esiste già, non reinventare la ruota"**  
 > Spatie ha fatto il lavoro per noi, usalo!
-=======
-> **"Non ripetere te stesso, fidati di chi sa"**
-> Il trait HasRoles è mantenuto da esperti, usalo!
 
-> **"Meno codice = Meno bug"**
-> Ogni riga di codice è un potenziale bug
-
-> **"Se esiste già, non reinventare la ruota"**
-> Spatie ha fatto il lavoro per noi, usalo!
->>>>>>> 6ed19256f (.)

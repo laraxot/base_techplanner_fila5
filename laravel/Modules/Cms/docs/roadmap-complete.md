@@ -1,3 +1,15 @@
+---
+title: "roadmap complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap complete"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🗺️ ROADMAP COMPLETA - Modulo CMS
 
 ## 📊 Business Logic
@@ -12,7 +24,6 @@ Il modulo **CMS** (Content Management System) gestisce tutti i contenuti dinamic
 - **Storage**: JSON-based per flessibilità e performance
 
 ---
-
 ## 🎯 Funzionalità Implementate
 
 ### ✅ Core Content Management
@@ -376,16 +387,10 @@ La cartella `docs/` è ben organizzata con:
 ## 🔗 Collegamenti Utili
 
 ### Documentazione Correlata
-- [Roadmap Progetto](../../../docs/roadmap_project.md)
-- [Modulo User](../../User/docs/roadmap_complete.md)
+- [Roadmap Progetto](../../../../docs/roadmap_project.md)
+- [Modulo User](../../user/docs/roadmap_complete.md)
 - [Modulo Media](../../Media/docs/README.md)
 - [Theme Sixteen](../../../Themes/Sixteen/docs/README.md)
-<<<<<<< HEAD
-- [Modulo User](../../user/docs/roadmap_complete.md)
-- [Modulo Media](../../media/docs/readme.md)
-- [Theme Sixteen](../../../themes/sixteen/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Resources
 - [Filament Documentation](https://filamentphp.com/docs)
@@ -396,13 +401,6 @@ La cartella `docs/` è ben organizzata con:
 ---
 
 **Versione**: 1.0.0
-**Ultimo Aggiornamento**: 2025-01-01
-**Maintainer**: CMS Team
-**Status**: 🚧 In Development (65% completo)
-**Prossima Revisione**: 2025-02-01
-<<<<<<< HEAD
 **Maintainer**: CMS Team
 **Status**: 🚧 In Development (65% completo)
 **Prossima Revisione**: [DATE]
-=======
->>>>>>> 6ed19256f (.)

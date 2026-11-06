@@ -1,3 +1,11 @@
+---
+title: "Esempi Pratici di Utilizzo di SafeFloatCastAction"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, examples]
+qmd: "esempi pratici di utilizzo di safefloatcastaction xot"
+---
 # Esempi Pratici di Utilizzo di SafeFloatCastAction
 
 ## Panoramica
@@ -440,19 +448,7 @@ class Product extends BaseModel
 - [SafeFloatCastAction](../safe-float-cast-action.md)
 - [DRY Principle](../../project_docs/dry-principle.md)
 - [KISS Principle](../../project_docs/kiss-principle.md)
-<<<<<<< HEAD
 - [Xot Actions Documentation](../actions/readme.md)
 
 ---
 
-=======
->>>>>>> 6ed19256f (.)
-- [Xot Actions Documentation](../actions/README.md)
-
----
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

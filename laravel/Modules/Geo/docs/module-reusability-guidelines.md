@@ -1,3 +1,15 @@
+---
+title: "module reusability guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module reusability guidelines"
+issues: []
+discussions: []
+status: draft
+---
+
 # Linee Guida per la Riusabilità dei Moduli Laraxot
 
 ## Principio Fondamentale
@@ -234,21 +246,8 @@ class <nome progetto>SpecificService
 
 ## Collegamenti e Riferimenti
 
-<<<<<<< HEAD
-- [Modules/Notify/docs/reusability_guidelines.md](../laravel/modules/notify/docs/reusability_guidelines.md)
+- [Modules/Notify/docs/reusability_guidelines.md](../../Notify/docs/reusability_guidelines.md)
 - [Modules/Xot/docs/xotdata_usage.md](../laravel/modules/xot/docs/xotdata_usage.md)
 - [docs/laraxot_conventions.md](laraxot_conventions.md)
 - [docs/module_architecture.md](module_architecture.md)
 
-=======
->>>>>>> 6ed19256f (.)
-- [Modules/Notify/docs/reusability_guidelines.md](../laravel/Modules/Notify/docs/reusability_guidelines.md)
-- [Modules/Xot/docs/xotdata_usage.md](../laravel/Modules/Xot/docs/xotdata_usage.md)
-- [docs/laraxot_conventions.md](laraxot_conventions.md)
-- [docs/module_architecture.md](module_architecture.md)
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)

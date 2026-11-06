@@ -1,11 +1,13 @@
 <?php
 
 declare(strict_types=1);
+use function Safe\filesize;
+use function Safe\simplexml_load_file;
 
 /**
  * Generate coverage report from merged Clover XML files.
  */
-$coverageFiles = array_map(fn ($i) => __DIR__."/coverage-part{$i}.xml", range(1, 6));
+$coverageFiles = array_map(static fn (int $i): string => __DIR__."/coverage-part{$i}.xml", range(1, 6));
 
 $allFiles = [];
 $totalStats = [
@@ -23,8 +25,9 @@ foreach ($coverageFiles as $file) {
         continue;
     }
 
-    $xml = simplexml_load_file($file);
-    if (! $xml) {
+    try {
+        $xml = simplexml_load_file($file);
+    } catch (Throwable) {
         echo "Warning: Could not parse {$file}\n";
 
         continue;
@@ -119,7 +122,7 @@ echo "Top 30 Covered Files (by element coverage, min 5 elements):\n";
 echo "─────────────────────────────────────────────────────────────────\n";
 
 $sortedFiles = $allFiles;
-uksort($sortedFiles, function ($a, $b) use ($allFiles) {
+uksort($sortedFiles, function (string $a, string $b) use ($allFiles): int {
     $aStats = $allFiles[$a];
     $bStats = $allFiles[$b];
     $aPercent = $aStats['elements']['total'] > 0
@@ -141,9 +144,7 @@ foreach ($sortedFiles as $fileName => $stats) {
         continue;
     }
 
-    $percent = $stats['elements']['total'] > 0
-        ? round(($stats['elements']['covered'] / $stats['elements']['total']) * 100, 1)
-        : 0;
+    $percent = round(($stats['elements']['covered'] / $stats['elements']['total']) * 100, 1);
     $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
 
     printf("%3d. %6.1f%% (%3d elems) - %s\n", ++$counter, $percent, $stats['elements']['total'], $shortName);
@@ -159,9 +160,10 @@ foreach ($sortedFiles as $fileName => $stats) {
     if ($stats['elements']['total'] < 1) {
         continue;
     }
-    $percent = $stats['elements']['total'] > 0
-        ? ($stats['elements']['covered'] / $stats['elements']['total']) * 100
-        : 0;
+
+    $covered = $stats['elements']['covered'];
+    $total = $stats['elements']['total'];
+    $percent = ($covered / $total) * 100;
     if ($percent >= 50) {
         continue;
     }
@@ -173,13 +175,13 @@ foreach ($sortedFiles as $fileName => $stats) {
 
     $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
     printf("  %6.1f%% - %s\n", $percent, $shortName);
-    ++$counter;
+    $counter++;
 }
 
 echo "\n";
 
 // Files with no coverage
-$uncoveredFiles = array_filter($allFiles, fn ($stats) => 0 === $stats['elements']['covered'] && $stats['elements']['total'] > 0);
+$uncoveredFiles = array_filter($allFiles, fn (array $stats) => $stats['elements']['covered'] === 0 && $stats['elements']['total'] > 0);
 
 if (count($uncoveredFiles) > 0) {
     echo 'Files with NO coverage ('.count($uncoveredFiles)." files):\n";
@@ -192,7 +194,7 @@ if (count($uncoveredFiles) > 0) {
         }
         $shortName = str_replace('/var/www/html/base_ptv_fila5_mono/laravel/', '', $fileName);
         echo '  - '.$shortName."\n";
-        ++$counter;
+        $counter++;
     }
     echo "\n";
 }

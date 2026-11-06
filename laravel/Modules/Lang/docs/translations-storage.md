@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Storage delle Traduzioni: PHP vs JSON"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Storage delle Traduzioni: PHP vs JSON
 
 ## Introduzione
@@ -71,11 +85,7 @@ Uso:
 ## Processo Dev → Traduttore: Checklist e Istruzioni
 
 1. **Preparazione**
-<<<<<<< HEAD
    - Esporta i file PHP/JSON di riferimento da `lang/en/` o `/lang/en.json`.
-=======
-   - Esporta i file PHP/JSON di riferimento da `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/lang/en/` o `/lang/en.json`.
->>>>>>> 6ed19256f (.)
    - Elimina tutte le stringhe non usate prima di inviare ai traduttori.
 2. **Istruzioni per i Traduttori**
    - Nei file PHP: traduci solo il testo a destra di `=>`, non cambiare chiavi o struttura.
@@ -149,11 +159,7 @@ In Laravel puoi salvare le traduzioni in file PHP strutturati o in file JSON fla
 | **Consistenza**       | Più facile con chiavi            | Rischio duplicati/frasi simili  |
 | **Uso consigliato**   | UI, errori, messaggi brevi       | Frasi lunghe, onboarding, email |
 
-<<<<<<< HEAD
 ## Best Practice per <nome progetto>
-=======
-## Best Practice per SaluteOra
->>>>>>> 6ed19256f (.)
 - **Usa file PHP** per UI, errori, messaggi brevi, validazione, notifiche.
 - **Usa JSON** solo per frasi lunghe o onboarding, se serve collaborazione con traduttori non-dev.
 - **Non mischiare** chiavi tra PHP e JSON con lo stesso nome.
@@ -195,11 +201,7 @@ Uso:
 ```
 
 ## Raccomandazioni
-<<<<<<< HEAD
 - Per <nome progetto>, **PHP è la scelta principale**. JSON solo per casi particolari.
-=======
-- Per SaluteOra, **PHP è la scelta principale**. JSON solo per casi particolari.
->>>>>>> 6ed19256f (.)
 - Documenta sempre la scelta e spiega ai traduttori/dev come aggiungere nuove stringhe.
 - Per fallback, imposta sempre `fallback_locale` in `config/app.php`.
 - Per traduzioni lunghe, valuta se usare chiavi dedicate in PHP o, solo se necessario, JSON.
@@ -212,11 +214,7 @@ Uso:
 ## Processo Dev → Traduttore: Checklist e Istruzioni
 
 1. **Preparazione**
-<<<<<<< HEAD
    - Esporta i file PHP/JSON di riferimento da `lang/en/` o `/lang/en.json`.
-=======
-   - Esporta i file PHP/JSON di riferimento da `/var/www/html/saluteora/laravel/lang/en/` o `/lang/en.json`.
->>>>>>> 6ed19256f (.)
    - Elimina tutte le stringhe non usate prima di inviare ai traduttori.
 2. **Istruzioni per i Traduttori**
    - Nei file PHP: traduci solo il testo a destra di `=>`, non cambiare chiavi o struttura.

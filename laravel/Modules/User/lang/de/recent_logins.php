@@ -3,12 +3,18 @@
 declare(strict_types=1);
 
 return [
+    'heading' => 'Letzte Anmeldungen',
+    'columns' => [
+        'user' => 'Benutzer',
+        'login_at' => 'Anmeldezeit',
+        'ip_address' => 'IP-Adresse',
+        'user_agent' => 'User Agent',
+    ],
     'fields' => [
         'authenticatable' => [
             'name' => [
                 'label' => 'authenticatable.name',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -78,37 +84,5 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
-        ],
-        'login_at' => [
-            'label' => 'login_at',
-        ],
-        'ip_address' => [
-            'label' => 'ip_address',
-        ],
-        'user_agent' => [
-            'label' => 'user_agent',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'user' => [
-            'label' => 'user',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
+    'actions' => [],
 ];

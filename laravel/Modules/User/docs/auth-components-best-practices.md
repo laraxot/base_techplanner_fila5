@@ -1,15 +1,34 @@
+---
+title: "Best Practices per i Componenti di Autenticazione"
+type: concept
+tags: [auth, components, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-components-best-practices best practices per i componenti di autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Best Practices per i Componenti di Autenticazione
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -189,11 +208,7 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
-<<<<<<< HEAD
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
-=======
-3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione
->>>>>>> 6ed19256f (.)
 
 ## Riferimenti
 
@@ -205,14 +220,8 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/docs/translation_keys_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -392,19 +401,11 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
-<<<<<<< HEAD
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
-=======
-3. Che i componenti rispettino le best practices di SaluteOra per le chiavi di traduzione
->>>>>>> 6ed19256f (.)
 
 ## Riferimenti
 
 - [Documentazione Laravel Authentication](https://laravel.com/docs/10.x/authentication)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Documentazione Livewire](https://livewire.laravel.com/)
-<<<<<<< HEAD
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
-=======
-- [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
->>>>>>> 6ed19256f (.)

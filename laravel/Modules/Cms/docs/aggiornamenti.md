@@ -1,8 +1,16 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "aggiornamenti"
+issues: []
+discussions: []
 title: Aggiornamenti
 description: Aggiornamenti
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 # Aggiornamenti {#aggiornamenti}
@@ -32,10 +40,5 @@ php artisan splade:show-versions
 da   @components('theme::includes.components.(nome)
 a <x-(nome controllato)
 ## Collegamenti tra versioni di aggiornamenti.md
-* [aggiornamenti.md](laravel/Modules/Chart/docs/aggiornamenti.md)
-* [aggiornamenti.md](laravel/Modules/Cms/docs/aggiornamenti.md)
-<<<<<<< HEAD
 * [aggiornamenti.md](laravel/modules/chart/docs/aggiornamenti.md)
 * [aggiornamenti.md](laravel/modules/cms/docs/aggiornamenti.md)
-=======
->>>>>>> 6ed19256f (.)

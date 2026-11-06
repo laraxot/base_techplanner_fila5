@@ -1,11 +1,12 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\Xot\Tests\Unit\Actions\Dummy;
-
 use Illuminate\Support\Facades\Http;
 use Modules\Xot\Actions\Dummy\GetProductsArrayDummyAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 it('maps only expected keys for each product', function (): void {
     Http::fake([
@@ -28,7 +29,7 @@ it('maps only expected keys for each product', function (): void {
 
     $result = app(GetProductsArrayDummyAction::class)->execute();
 
-    expect($result)->toBe([
+    Assert::assertSame([
         [
             'id' => 1,
             'title' => 'Phone',
@@ -39,7 +40,7 @@ it('maps only expected keys for each product', function (): void {
             'category' => 'tech',
             'thumbnail' => 'thumb.jpg',
         ],
-    ]);
+    ], $result);
 });
 
 it('returns empty item when product entry is not an array', function (): void {
@@ -53,5 +54,5 @@ it('returns empty item when product entry is not an array', function (): void {
 
     $result = app(GetProductsArrayDummyAction::class)->execute();
 
-    expect($result)->toBe([[]]);
+    Assert::assertSame([[]], $result);
 });

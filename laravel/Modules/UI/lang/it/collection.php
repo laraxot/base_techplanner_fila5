@@ -11,7 +11,6 @@ return [
     'fields' => [
         'openFilters' => [
             'label' => 'openFilters',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -64,28 +63,6 @@ return [
         ],
         'label' => 'Collection',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'values-list' => [
-            'label' => 'values-list',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

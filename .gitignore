@@ -33,11 +33,8 @@ auth.json
 *.log
 *.old
 *.phar
-<<<<<<< HEAD
 # Merge conflict backup symlinks (Git LFS GH008 se committati)
 *~cc6378f*
-=======
->>>>>>> 6ed19256f (.)
 laravel/database/migrations/
 laravel/stubs/
 laravel/lang/vendor/
@@ -52,26 +49,19 @@ public_html/vendor/
 laravel/resources/views/vendor/
 laravel/config/localhost/database/content/information_schema_tables.json
 .gemini/tmp/
-<<<<<<< HEAD
 # bashscripts/ = repo separato (laraxot/bashscripts_fila5), clone annidato — non tracciato qui
-=======
->>>>>>> 6ed19256f (.)
 bashscripts/
 laravel/docker/
 
 .ai/
 .claude/
-<<<<<<< HEAD
 .ai-context/
 .claude/
 .clauderules/
-=======
->>>>>>> 6ed19256f (.)
 .cursor/
 .gemini/
 .windsurf/
 .flow/
-<<<<<<< HEAD
 .iflow/
 .junie/
 .phive/
@@ -85,8 +75,6 @@ laravel/config/net/sottana/database/content/information_schema_tables.json
 *.*Zone.Identifier
 lighthouse.*
 laravel/config/local/techplanner/database/content/information_schema_tables.json
-=======
->>>>>>> 6ed19256f (.)
 .junie/
 .phive/
 .vscode/
@@ -94,7 +82,6 @@ laravel/config/local/techplanner/database/content/information_schema_tables.json
 .clauderules/
 bashscripts/
 laravel/config/net/sottana/database/content/information_schema_tables.json
-<<<<<<< HEAD
 /reports/
 /reports/
 *.*Zone.Identifier
@@ -104,6 +91,49 @@ laravel/coverage_report/
 laravel/coverage_xml/
 tests/coverage/
 coverage/
-coverage.xml/ruvector.db
-=======
->>>>>>> 6ed19256f (.)
+coverage.xml/ruvector.db.vscode/
+.vscode.backup-20260120_154353/
+.agent/
+.vscode/
+.vscode*/
+.vscode
+.agent
+.agents
+.ai
+.ai-context
+.ai-context.backup-20260120_154353
+.claude
+.clauderules
+.codex
+.cursor
+.devin
+.gemini
+.iflow
+.junie
+.kilo
+.phive
+.windsurf
+.zai
+.vscode.backup-20260120_154353
+reports
+laravel/Modules/Lang/packages/lara-zeus/
+public_html/assets/geo
+bashscripts/ai/.agents/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-312.pyc
+${HOME}/.cache/qmd-cache/qmd/index.sqlite-wal
+${HOME}/.cache/qmd-cache/qmd/index.sqlite-shm
+.serena/logs/indexing.txt
+.token-optimizer/
+graphify-out/
+graphify-out/
+.token-optimizer/
+build/
+bmad/upstream/claude-code-bmad-skills/
+bmad/upstream/claude-code-bmad-skills
+.token-optimizer
+.serena
+laravel/config/local/techplanner/database/content/information_schema_tables.json
+archive
+.playwright-mcp/
+artifacts/
+bashscripts/ai/.agents/projects/
+___FILE___tests/

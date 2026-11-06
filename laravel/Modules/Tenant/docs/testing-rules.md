@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: testing-rules
-canonical: ../../../Themes/docs/shared-components/testing-rules-Modules.md
+issues: []
+discussions: []
+title: "Testing Rules Summary"
+module: "Tenant"
+type: rule
+tags: [testing, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing rules"
+related:
+  - "./phpstan-corrections-january.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/testing-rules-Modules.md
-=======
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -110,4 +115,3 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
->>>>>>> 6ed19256f (.)

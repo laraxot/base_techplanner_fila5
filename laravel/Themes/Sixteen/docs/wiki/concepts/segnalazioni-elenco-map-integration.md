@@ -1,3 +1,15 @@
+---
+title: "segnalazioni elenco map integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "segnalazioni elenco map integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Segnalazioni elenco — integrazione mappa in Sixteen
 
 ## Ownership
@@ -18,6 +30,8 @@ Homepage `/it`: `grid/2col.blade.php` → `ticket/column-main.blade.php` → CTA
 | CTA mappa/lista | `components/blocks/cta/ticket.blade.php` | **vietato** `cta/segnalazione` — vedi [no-italian-component-names](../rules/no-italian-component-names.md) |
 | Include | `@include('pub_theme::components.blocks.cta.ticket', ['cta' => $cta])` | `$cta` da `TicketLayoutViewModel::cta()` |
 
+**URL CTA:** solo `LaravelLocalization::localizeURL($path)` nel blade — **vietato** `FrontofficeUrl` (scope header/CMS nav, non blocchi CTA).
+
 Testo UI «Fai una segnalazione» resta in `lang/it/` — non nel nome file.
 
 File legacy (altre pagine): `ticket-layout/layout.blade.php` (e varianti elenco).
@@ -35,7 +49,7 @@ Pattern attivo:
 Asset: `@vite` manifest tema → `public_html/themes/Sixteen/assets/map-lit-*.js`  
 **Non** usare CDN Leaflet nel tema se il bundle Geo è attivo.
 
-`body[data-page="segnalazioni-elenco"]` — regole CSS listing in `listing-parity.css`, `07-map-clusters-and-leaflet.css`.
+`body[data-page="ticket-list"]` — regole CSS listing in `listing-parity.css`, `07-map-clusters-and-leaflet.css`.
 
 ## Filtri
 
@@ -57,11 +71,12 @@ Properties minime per marker/popup:
 ## UX attesa (2026-06)
 
 - Cluster farmshops-style; `removeOutsideVisibleBounds: false`
-- Marker: `__inner` stato + `__glyph-pad` bianco + `__point` (triangolo CSS); vedi [geo-map-lit-reconstruction-guide.md](../../../../Modules/Geo/docs/wiki/concepts/geo-map-lit-reconstruction-guide.md)
+- Marker: `__inner` stato + `__glyph-pad` bianco + `__point` (triangolo CSS); vedi [geo-map-lit-reconstruction-guide.md](../../../../../Modules/Geo/docs/wiki/concepts/geo-map-lit-reconstruction-guide.md)
 - Popup **block `popup`**: apertura immediata, dettaglio lazy `/api/ticket-details/{id}`
 - Popup **senza** vuoto header (vedi runbook sotto)
 - Hover cluster/marker: ombra only, no transform
 - Ricerca indirizzo collassabile (controllo lente)
+- Producer GeoJSON: `Modules/Fixcity/app/Actions/GenerateTicketsJsonAction.php`
 
 ## Build obbligatoria dopo modifica JS/CSS
 
@@ -74,7 +89,7 @@ Doc build: [map-lit-vite-build-troubleshooting.md](./map-lit-vite-build-troubles
 
 ## Documentazione ricostruzione
 
-- [geo-map-lit-reconstruction-guide.md](../../../../Modules/Geo/docs/wiki/concepts/geo-map-lit-reconstruction-guide.md)
+- [geo-map-lit-reconstruction-guide.md](../../../../../Modules/Geo/docs/wiki/concepts/geo-map-lit-reconstruction-guide.md)
 - [map-lit-it-incidents-2026-06.md](../../../../Modules/Geo/docs/wiki/troubleshooting/map-lit-it-incidents-2026-06.md)
 
 ## Riferimenti codice

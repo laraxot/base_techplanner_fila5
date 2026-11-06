@@ -1,18 +1,13 @@
 # Two Theme - Documentation Index
 
-**Last Update**: 13 Dicembre 2025  
-**Status**: ✅ Available  
-**Theme Version**: 1.0
-<<<<<<< HEAD
+> Indice storico, superato: l'indice canonico e' [index.md](./index.md) (ingresso: [README.md](./README.md)). `00-INDEX.md` e' il gemello con la sola maiuscola diversa.
+
 **Theme Version**: 2.0
-=======
->>>>>>> 6ed19256f (.)
 
 ## 📚 Quick Navigation
 
 ### 🎯 Essential Reading
 1. [README.md](./README.md) - Theme overview
-<<<<<<< HEAD
 2. [Deployment e validazione](./deployment-and-validation.md) - Produzione sottana.net, auto-deploy su master
 3. [Comprehensive Site Analysis](./comprehensive-site-analysis.md) - ⭐ Complete analysis of target vs local site
 4. [Map Integration](./map-integration.md) - Map implementation
@@ -47,30 +42,12 @@
 - **Status**: Available
 - **Compliance**: Laraxot standards
 - **Replication Status**: 95%+ achieved
-=======
->>>>>>> 6ed19256f (.)
-
-### 🎨 Theme Characteristics
-- **Style**: Minimalist, clean design
-- **Target**: Simple business sites
-- **Framework**: Bootstrap
-- **Components**: Basic Blade components
-
-### 📊 Module Statistics
-
-- **Total Docs**: 5 files
-- **Status**: Available
-- **Compliance**: Laraxot standards
 
 ### 🔗 Related Resources
 
-- [Cms Module](../../Modules/Cms/docs/README.md)
-- [UI Module](../../Modules/UI/docs/README.md)
-<<<<<<< HEAD
-- [Xot Module](../../Modules/Xot/docs/README.md)
-- [Xot Module](../../Modules/Xot/docs/README.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Cms Module](../../../Modules/Cms/docs/README.md)
+- [UI Module](../../../Modules/UI/docs/README.md)
+- [Xot Module](../../../Modules/Xot/docs/README.md)
 
 ---
 

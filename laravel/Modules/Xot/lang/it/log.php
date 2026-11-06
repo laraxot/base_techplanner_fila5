@@ -7,19 +7,22 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-        'name' => 'log',
+        'name' => 'Registro',
         'plural' => 'logs',
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'Log',
+        'icon' => 'heroicon-o-clipboard-document-list',
+        'sort' => 61,
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'placeholder' => 'name',
         ],
         'guard_name' => [
             'label' => 'Guard',
@@ -58,17 +61,39 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
->>>>>>> 6ed19256f (.)
+        ],
+        'id' => [
+            'label' => 'id',
+        ],
+        'message' => [
+            'label' => 'message',
+        ],
+        'level' => [
+            'label' => 'level',
+        ],
+        'level_name' => [
+            'label' => 'level_name',
+        ],
+        'context' => [
+            'label' => 'context',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'path' => [
+            'label' => 'path',
+            'placeholder' => 'path',
+            'helper_text' => 'path',
+            'description' => 'path',
+        ],
+        'content' => [
+            'label' => 'content',
+            'placeholder' => 'content',
+            'helper_text' => 'content',
+            'description' => 'content',
+        ],
+        'file-content' => [
+            'label' => 'file-content',
         ],
     ],
     'actions' => [
@@ -84,10 +109,38 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
+        'create' => [
+            'label' => 'create',
+            'icon' => 'create',
+            'tooltip' => 'create',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
+        ],
+        'logout' => [
+            'tooltip' => 'logout',
+            'icon' => 'logout',
+            'label' => 'logout',
+        ],
     ],
-<<<<<<< HEAD
     'label' => 'Log',
     'plural_label' => 'Log (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
+    'title' => 'Registro',
 ];

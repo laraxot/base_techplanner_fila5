@@ -4,54 +4,46 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-<<<<<<< HEAD
-use Filament\Tables\Table;
+use Filament\Tables\Columns\Column;
+use Filament\Tables\Columns\ColumnGroup;
+use Filament\Tables\Columns\Layout\Component as LayoutComponent;
 use Filament\Widgets\Concerns\InteractsWithPageFilters;
 use Filament\Widgets\TableWidget as FilamentTableWidget;
-use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Livewire\Attributes\On;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Traits\HasXotTable;
-=======
-use Filament\Widgets\TableWidget as FilamentTableWidget;
->>>>>>> 6ed19256f (.)
 use Modules\Xot\Filament\Traits\TransTrait;
 
 abstract class XotBaseTableWidget extends FilamentTableWidget
 {
-<<<<<<< HEAD
-    // use TransTrait;
     use HasXotTable;
     use InteractsWithPageFilters;
+    use TransTrait;
+
+    /**
+     * Colonne della tabella: le sottoclassi le dichiarano qui e `HasXotTable::table()` le legge.
+     *
+     * @return array<int|string, Column|ColumnGroup|LayoutComponent>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
+     */
+    #[\Override]
+    protected function getTableColumns(): array
+    {
+        return [];
+    }
 
     /**
      * Ascolta evento di aggiornamento filtri.
+     *
+     * @param  array<string, mixed>  $filters
      */
     #[On('filterUpdate')]
     public function updateFilters(array $filters): void
     {
         // Forza refresh della tabella quando i filtri cambiano
         $this->resetTable();
-    }
-
-    /**
-     * Configura la tabella con le risposte.
-     */
-    public function tableOLD(Table $table): Table
-    {
-        $query = $this->getTableQuery();
-        if ($query instanceof Relation) {
-            $query = $query->getQuery();
-        }
-
-        /* @var Builder|null $query */
-        return $table
-            ->query($query)
-            ->columns($this->getTableColumns())
-            ->defaultSort('submitdate', 'desc')
-            ->paginated([10, 25, 50, 100])
-            ->poll('30s');
     }
 
     /**
@@ -64,25 +56,9 @@ abstract class XotBaseTableWidget extends FilamentTableWidget
     public function getTableRecordKey(Model|array $record): string
     {
         if (\is_array($record)) {
-            return (string) ($record['_id'] ?? $record['id'] ?? '');
+            return SafeStringCastAction::cast($record['_id'] ?? $record['id'] ?? '');
         }
 
-        return (string) ($record->_id ?? $record->id ?? '');
+        return SafeStringCastAction::cast($record->_id ?? $record->id ?? '');
     }
-
-    public function getTableSearch(): ?string
-    {
-        $search = $this->tableSearch ?? null;
-
-        if (! \is_string($search)) {
-            return null;
-        }
-
-        $search = trim($search);
-
-        return '' !== $search ? $search : null;
-    }
-=======
-    use TransTrait;
->>>>>>> 6ed19256f (.)
 }

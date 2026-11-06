@@ -7,7 +7,7 @@ namespace Modules\Cms\Datas;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Support\Arr;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
@@ -29,27 +29,15 @@ class HeadernavData extends Data implements Wireable
 
     /**
      * The view path.
-<<<<<<< HEAD
      */
     public string $view = 'cms::components.headernav';
-=======
-     *
-     * @var string
-     */
-    public $view = 'cms::components.headernav';
->>>>>>> 6ed19256f (.)
 
     private static ?self $instance = null;
 
     public static function make(): self
     {
-<<<<<<< HEAD
         if (! self::$instance instanceof self) {
-=======
-        if (! (self::$instance instanceof HeadernavData)) {
-            // if (! self::$instance) {
->>>>>>> 6ed19256f (.)
-            $data = TenantService::getConfig('appearance');
+            $data = app(GetTenantConfigArrayAction::class)->execute('appearance');
             $data = Arr::get($data, 'headernav', []);
             self::$instance = self::from($data);
         }
@@ -57,7 +45,6 @@ class HeadernavData extends Data implements Wireable
         return self::$instance;
     }
 
-<<<<<<< HEAD
     public function render(): Renderable
     {
         $view = $this->view;
@@ -75,20 +62,14 @@ class HeadernavData extends Data implements Wireable
     public function view(): Renderable
     {
         return $this->render();
-=======
-    public function view(): Renderable
-    {
-        if (! view()->exists($this->view)) {
-            $message = 'The view ['.$this->view.'] does not exist';
-            throw new \Exception($message);
-        }
-        /** @var array<string, mixed> $view_params */
-        $view_params = $this->toArray();
-
-        return view($this->view, $view_params);
->>>>>>> 6ed19256f (.)
     }
 
+    /**
+     * @return array<string, mixed>
+     */
+    /**
+     * @return array<string, mixed>
+     */
     public static function rules(): array
     {
         return [

@@ -1,3 +1,15 @@
+---
+title: "class not found errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "class not found errors"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Class Not Found Errors - Legacy Module References
 
 ## Problema
@@ -191,11 +203,7 @@ Mantenere un log delle classi rimosse/rinominate:
 
 ## Changelog Classi
 
-### 2025-07-31
-<<<<<<< HEAD
 ### [DATE]
-=======
->>>>>>> 6ed19256f (.)
 - `Modules\Fixcity\Models\Profile` → `Modules\User\Models\User`
 - Motivo: Consolidamento moduli utente
 ```
@@ -257,18 +265,7 @@ Includere controlli PHPStan nella pipeline:
 
 ## Backlink
 
-- [Root PHPStan Rules](../../../project_docs/phpstan_rules.md)
-- [Geo Module Structure](./structure.md)
-- [Employee PHPStan Covariance](../../Employee/project_docs/phpstan_covariance_issues.md)
-
-*Ultimo aggiornamento: 2025-07-31*
-<<<<<<< HEAD
-- [Modules/Geo/project_docs/README.md](./readme.md)
-
-## Backlink
-
 - [Root PHPStan Rules](../../../../docs/project/phpstan_rules.md)
 - [Geo Module Structure](./structure.md)
 - [Employee PHPStan Covariance](../../employee/project_docs/phpstan_covariance_issues.md)
-=======
->>>>>>> 6ed19256f (.)
+

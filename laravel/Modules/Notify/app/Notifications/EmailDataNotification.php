@@ -35,10 +35,6 @@ class EmailDataNotification extends Notification
      * Get the notification's delivery channels.
      *
      * @param  object  $_notifiable  The entity to be notified (not used in this method)
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string>
      */
     public function via(object $_notifiable): array
@@ -53,18 +49,13 @@ class EmailDataNotification extends Notification
      */
     public function toMail(object $notifiable): MailMessage
     {
-<<<<<<< HEAD
         $mailMessage = (new MailMessage)
-=======
-        $mailMessage = (new MailMessage())
->>>>>>> 6ed19256f (.)
             ->subject($this->emailData->subject)
             ->line($this->emailData->body);
 
         if (! empty($this->emailData->body_html)) {
             $mailMessage->view('notify::emails.template', [
-                'content' => $this->emailData->body_html,
-            ]);
+                'content' => $this->emailData->body_html]);
         }
 
         if (! empty($this->emailData->from_email) && ! empty($this->emailData->from)) {
@@ -78,10 +69,6 @@ class EmailDataNotification extends Notification
      * Get the array representation of the notification.
      *
      * @param  object  $notifiable  The entity to be notified
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string, string|null>
      */
     public function toArray(object $notifiable): array
@@ -91,7 +78,6 @@ class EmailDataNotification extends Notification
             'from' => $this->emailData->from,
             'from_email' => $this->emailData->from_email,
             'subject' => $this->emailData->subject,
-            'body' => $this->emailData->body,
-        ];
+            'body' => $this->emailData->body];
     }
 }

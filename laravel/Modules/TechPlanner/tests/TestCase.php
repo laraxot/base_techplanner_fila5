@@ -4,13 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Tests;
 
-<<<<<<< HEAD
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-=======
-use Illuminate\Foundation\Application;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Modules\TechPlanner\Providers\TechPlannerServiceProvider;
->>>>>>> 6ed19256f (.)
 use Modules\Xot\Tests\CreatesApplication;
 
 /**
@@ -19,15 +13,4 @@ use Modules\Xot\Tests\CreatesApplication;
 abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
-
-    /**
-     * Setup the test environment.
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        // Load TechPlanner module specific configurations
-        $this->loadLaravelMigrations();
-    }
 }

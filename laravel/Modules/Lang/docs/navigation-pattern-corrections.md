@@ -1,11 +1,24 @@
+---
+issues: []
+discussions: []
+title: "Correzioni Pattern '.navigation' - Gennaio 2025"
+module: "Lang"
+type: pattern
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: correzioni-navigation-pattern.md
+---
 # Correzioni Pattern ".navigation" - Gennaio 2025
 
 ## Data Intervento
 **2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
-<<<<<<< HEAD
+**2025-01-22** - Sistemazione traduzioni secondo regole DRY + KISS
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Identificato
 
@@ -242,11 +255,10 @@ Ogni sezione `navigation` deve includere:
 - [Traduzioni Navigation Audit](traduzioni-navigation-2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../Xot/docs/filament/navigation-label-trait-explained.md)
-<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
 - [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Best Practices Traduzioni](../../xot/docs/translation-standards.md)
+- [NavigationLabelTrait Explained](../../xot/docs/filament/navigation-label-trait-explained.md)
 
 ## Note Tecniche
 
@@ -257,9 +269,14 @@ Ogni sezione `navigation` deve includere:
 - Gruppi organizzati per dominio logico
 
 *Intervento completato il: 2025-01-22*
-<<<<<<< HEAD
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
-=======
+*Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
->>>>>>> 6ed19256f (.)
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*
+*Intervento completato il: 2025-01-22*
+*Intervento completato il: [DATE]*
+*Conforme alle regole DRY + KISS*

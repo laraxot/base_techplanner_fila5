@@ -45,10 +45,6 @@ class WhatsAppNotification extends Notification implements ShouldQueue
             $recipient = $config['recipient'] ?? ($config['to'] ?? '');
             $from = $config['from'] ?? null;
 
-<<<<<<< HEAD
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 6ed19256f (.)
             $this->whatsappData = new WhatsAppData(
                 recipient: SafeStringCastAction::cast($recipient),
                 body: $content,
@@ -62,14 +58,10 @@ class WhatsAppNotification extends Notification implements ShouldQueue
     /**
      * Get the notification's delivery channels.
      *
-     * @param  mixed  $_notifiable  L'entità da notificare
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
+     * @param  object  $_notifiable  L'entità da notificare
      * @return array<int, string>
      */
-    public function via(mixed $_notifiable): array
+    public function via(object $_notifiable): array
     {
         // TODO: Implementare WhatsAppChannel quando disponibile
         return ['whatsapp'];
@@ -78,11 +70,11 @@ class WhatsAppNotification extends Notification implements ShouldQueue
     /**
      * Get the WhatsApp representation of the notification.
      */
-    public function toWhatsApp(mixed $notifiable): WhatsAppData
+    public function toWhatsApp(object $notifiable): WhatsAppData
     {
         // If the notifiable entity has a routeNotificationForWhatsApp method,
         // we'll use that to get the destination phone number
-        if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForWhatsApp')) {
+        if (method_exists($notifiable, 'routeNotificationForWhatsApp')) {
             $routeResult = $notifiable->routeNotificationForWhatsApp($this);
             $this->whatsappData->recipient = app(SafeStringCastAction::class)->execute($routeResult);
         }

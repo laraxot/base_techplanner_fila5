@@ -3,20 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Authentication Language Lines
-     * |--------------------------------------------------------------------------
-     * |
-     * | The following language lines are used during authentication for various
-     * | messages that we need to display to the user. You are free to modify
-     * | these language lines according to your application's requirements.
-     * |
-     */
-
->>>>>>> 6ed19256f (.)
     'failed' => 'Diese Anmeldedaten stimmen nicht mit unseren Aufzeichnungen überein.',
     'password' => 'Das angegebene Passwort ist falsch.',
     'throttle' => 'Zu viele Anmeldeversuche. Bitte versuchen Sie es in :seconds Sekunden erneut.',
@@ -84,13 +70,12 @@ return [
         'settings' => 'Einstellungen',
         'logout' => 'Abmelden',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
@@ -98,6 +83,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

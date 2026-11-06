@@ -1,13 +1,21 @@
+---
+title: "naming conventions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming conventions"
+issues: []
+discussions: []
+status: draft
+---
+
 # Convenzioni di Naming per i Test - Modulo Cms
 
 ## Riferimento Principale
 
 Per la documentazione completa delle convenzioni di naming dei test, consultare:
-<<<<<<< HEAD
 - [../../../../../docs/testing/naming-conventions.md](../../../../../docs/testing/naming-conventions.md)
-=======
-- [../../../../docs/testing/naming-conventions.md](../../../../docs/testing/naming-conventions.md)
->>>>>>> 6ed19256f (.)
 
 ## Applicazione al Modulo Cms
 
@@ -123,12 +131,6 @@ find tests -type f -name "*.php" | grep -E "(test\.php|test\.pest\.php)" | grep 
 
 ### Collegamenti Correlati
 
-<<<<<<< HEAD
 - [../../../../../docs/testing/naming-conventions.md](../../../../../docs/testing/naming-conventions.md) - Documentazione completa
 - [../auth/testing-patterns.md](../auth/testing-patterns.md) - Pattern test autenticazione
 - [../phpstan_fixes_cms.md](../phpstan_fixes_cms.md) - Correzioni PHPStan modulo Cms
-=======
-- [../../../../docs/testing/naming-conventions.md](../../../../docs/testing/naming-conventions.md) - Documentazione completa
-- [../auth/testing-patterns.md](../auth/testing-patterns.md) - Pattern test autenticazione
-- [../phpstan_fixes_cms.md](../phpstan_fixes_cms.md) - Correzioni PHPStan modulo Cms
->>>>>>> 6ed19256f (.)

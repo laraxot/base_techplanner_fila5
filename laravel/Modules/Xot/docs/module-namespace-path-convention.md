@@ -1,14 +1,13 @@
-<<<<<<< HEAD
-- [convenzioni di codice](docs/conventions.md)
-- [struttura progetto](docs/project-structure.md)
 ---
-module: theme
-topic: module-namespace-path-convention
-canonical: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
+title: "convenzioni per namespace e percorsi dei moduli"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "convenzioni per namespace e percorsi dei moduli"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/module-namespace-path-convention.md
-=======
 # convenzioni per namespace e percorsi dei moduli
 
 ## struttura corretta del percorso
@@ -73,4 +72,3 @@ questo è **errato** perché omette la directory `app/` nel percorso fisico.
 
 - [convenzioni di codice](/var/www/html/base_saluteora/laravel/docs/conventions.md)
 - [struttura progetto](/var/www/html/base_saluteora/laravel/docs/project-structure.md)
->>>>>>> 6ed19256f (.)

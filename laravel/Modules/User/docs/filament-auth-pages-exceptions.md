@@ -1,3 +1,28 @@
+---
+title: "Eccezioni Regola XotBase - Pagine Autenticazione"
+type: concept
+tags: [filament, auth, pages, exceptions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-auth-pages-exceptions eccezioni regola xotbase - pagine autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Eccezioni Regola XotBase - Pagine Autenticazione
 
 ## Scopo
@@ -57,11 +82,7 @@ namespace Modules\User\Filament\Pages\Auth;
 class EditProfile extends \Filament\Auth\Pages\EditProfile
 {
     public static ?string $title = 'Profilo Utente';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function getFormSchema(): array
     {
         return [
@@ -88,11 +109,7 @@ class PasswordExpired extends \Filament\Pages\Page implements HasForms
     use InteractsWithFormActions;
     use InteractsWithForms;
     use NavigationPageLabelTrait; // Solo trait per traduzioni
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected static bool $shouldRegisterNavigation = false;
     protected string $view = 'user::filament.auth.pages.password-expired';
 }
@@ -133,17 +150,9 @@ Estendere `Filament\Pages\Page` direttamente solo per:
 ## Documentazione Correlata
 
 - [Regole XotBase](../../../bashscripts/docs/xotbase_critical_rules.md)
-- [XotBasePage Implementation](../../../Xot/docs/xotbasepage_implementation.md)
-<<<<<<< HEAD
 - [XotBasePage Implementation](../../../xot/docs/xotbasepage_implementation.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Filament Namespace Rules](./filament-namespace-rules.md)
 
 ---
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-12-17
-=======
-**Ultimo aggiornamento**: 2025-12-17
->>>>>>> 6ed19256f (.)

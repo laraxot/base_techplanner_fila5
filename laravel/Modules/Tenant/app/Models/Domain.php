@@ -6,30 +6,19 @@ namespace Modules\Tenant\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
-use Modules\Tenant\Database\Factories\DomainFactory;
-use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
 
 /**
- * @property int|null $id
+ * @property string|null $id
  * @property string|null $name
  *
- * @method static Builder|Domain newModelQuery()
- * @method static Builder|Domain newQuery()
- * @method static Builder|Domain query()
- * @method static Builder|Domain whereId($value)
- * @method static Builder|Domain whereName($value)
+ * @method static \Modules\Tenant\Database\Factories\DomainFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Domain newModelQuery()
+ * @method static Builder<static>|Domain newQuery()
+ * @method static Builder<static>|Domain query()
+ * @method static Builder<static>|Domain whereId($value)
+ * @method static Builder<static>|Domain whereName($value)
  *
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
- * @method static DomainFactory factory($count = null, $state = [])
- *
- * @mixin IdeHelperDomain
- *
- * @property ProfileContract|null $deleter
- *
- * @mixin \Eloquent
  */
 class Domain extends BaseModel
 {
@@ -37,6 +26,8 @@ class Domain extends BaseModel
 
     /**
      * Model Rows.
+     *
+     * @return array<int, array<string, string>>
      */
     public function getRows(): array
     {

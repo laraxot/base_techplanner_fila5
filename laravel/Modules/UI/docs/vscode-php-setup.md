@@ -1,3 +1,15 @@
+---
+title: "vscode php setup"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "vscode php setup"
+issues: []
+discussions: []
+status: draft
+---
+
 # Configurazione VSCode per PHP e Filament
 
 ## Estensioni Essenziali
@@ -132,21 +144,7 @@
             "request": "launch",
             "port": 9003,
             "pathMappings": {
-<<<<<<< HEAD
                 "/ tasks.json
-=======
-                "/var/www/html/base_<nome progetto>": "${workspaceFolder}"
-            }
-        }
-    ]
-}
-```
-
-## Tasks Personalizzati
-
-```json
-// tasks.json
->>>>>>> 6ed19256f (.)
 {
     "version": "2.0.0",
     "tasks": [
@@ -374,21 +372,7 @@
             "request": "launch",
             "port": 9003,
             "pathMappings": {
-<<<<<<< HEAD
                 "/ tasks.json
-=======
-                "/var/www/html/base_<nome progetto>": "${workspaceFolder}"
-            }
-        }
-    ]
-}
-```
-
-## Tasks Personalizzati
-
-```json
-// tasks.json
->>>>>>> 6ed19256f (.)
 {
     "version": "2.0.0",
     "tasks": [

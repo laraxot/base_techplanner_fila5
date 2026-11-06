@@ -1,10 +1,18 @@
+---
+title: "model factory seeder audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model factory seeder audit"
+issues: []
+discussions: []
+status: draft
+---
+
 # Model/Factory/Seeder Audit
 
-Generated: 2025-08-22 16:28
-<<<<<<< HEAD
 Generated: [DATE] 16:28
-=======
->>>>>>> 6ed19256f (.)
 
 ## Coverage
 | Model | Factory | Seeded |
@@ -24,8 +32,6 @@ Generated: [DATE] 16:28
 | GeoTrait | n/a | n/a |
 | HasAddress | n/a | n/a |
 | HasPlaceTrait | n/a | n/a |
-| GeographicalScopes | n/a | n/a |
-| SushiToJsons | n/a | n/a |
 
 Seeder: `database/seeders/GeoDatabaseSeeder.php`
 
@@ -34,8 +40,4 @@ Seeder: `database/seeders/GeoDatabaseSeeder.php`
 - Mark trait/utility/JSON helper classes as non-seed targets (n/a).
 
 ## Likely non-business-critical
-<<<<<<< HEAD
 - Trait/utility classes listed above; not direct domain entities.
-=======
-- Trait/utility classes listed above; not direct domain entities.
->>>>>>> 6ed19256f (.)

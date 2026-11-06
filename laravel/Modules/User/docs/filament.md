@@ -1,4 +1,28 @@
-<<<<<<< HEAD
+---
+title: "Filament nel Modulo User"
+type: concept
+tags: [filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament filament nel modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Filament nel Modulo User
 
 ## Documentazione
@@ -68,11 +92,3 @@
 - RegisterWidget: Migrato al sistema Schema
 - ResetPasswordWidget: Migrato al sistema Schema
 - PasswordExpiredWidget: Migrato al sistema Schema 
-=======
-https://github.com/Althinect/filament-spatie-roles-permissions
-https://github.com/ryangjchandler/filament-profile
-
-https://github.com/andrewdwallo/filament-companies
-
-
->>>>>>> 6ed19256f (.)

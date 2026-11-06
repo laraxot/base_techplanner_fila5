@@ -9,27 +9,20 @@ return [
             'placeholder' => 'items',
             'helper_text' => 'items',
             'description' => 'items',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'label' => [
             'label' => 'label',
             'placeholder' => 'label',
             'helper_text' => 'label',
             'description' => 'label',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'url' => [
             'label' => 'url',
             'placeholder' => 'url',
             'helper_text' => 'url',
             'description' => 'url',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -44,8 +37,10 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
+    'login' => 'Anmelden',
+    'logout' => 'Abmelden',
+    'profile' => 'Profil',
+    'password' => 'Passwort',
+    'two_factor' => 'Zwei-Faktor-Authentifizierung',
+    'register' => 'Registrieren',
 ];

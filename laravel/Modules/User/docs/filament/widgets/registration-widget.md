@@ -1,3 +1,20 @@
+---
+title: "RegistrationWidget: Widget generico per la registrazione utente"
+type: concept
+tags: [registration, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget registrationwidget: widget generico per la registrazione utente"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./dashboard-filters-integration.md"
+  - "./edit-user-widget.md"
+  - "./registration-widget-fileupload-fix.md"
+  - "./registration-widget-fileupload.md"
+status: draft
+---
+
 # RegistrationWidget: Widget generico per la registrazione utente
 
 ## Scopo e filosofia
@@ -26,22 +43,17 @@ Queste Action devono occuparsi di:
 4. **Documentare i punti di estensione**: ogni progetto può aggiungere nuove Action per nuovi tipi di utente.
 5. **Non citare mai tipi di utente o logiche di dominio nel modulo User**: mantenere la massima riusabilità.
 ## Collegamenti
-- [RegistrationWidget.php](../../app/Filament/Widgets/RegistrationWidget.php)
-- [EditUserWidget.php](../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [RegistrationWidget.php](../../../app/Filament/Widgets/RegistrationWidget.php)
+- [EditUserWidget.php](../../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
+- [RegistrationWidget.php](../../../app/Filament/Widgets/RegistrationWidget.php)
+- [EditUserWidget.php](../../../app/Filament/Widgets/EditUserWidget.php) - Widget per modifica dati utente
 - [Documentazione EditUserWidget](./edit-user-widget.md) - Documentazione completa dell'EditUserWidget
-- [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
-- [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
-- [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)
-- [Documentazione generale: Registrazione Odontoiatra](../../../../../docs/doctor-registration.md)
-- [Documentazione Xot sulla proprietà $data](../../../Xot/project_docs/filament/widgets/data-property.md)
-<<<<<<< HEAD
 - [Documentazione Xot sulla proprietà $data](../../../xot/docs/filament/widgets/data-property.md)
 - [Esempio di Action di registrazione Doctor](../../../../Patient/app/Actions/Doctor/RegisterAction.php)
 - [Esempio di Action di registrazione Patient](../../../../Patient/app/Actions/Patient/RegisterAction.php)
-- [Documentazione generale: Registrazione Odontoiatra](../../../../../../docs/doctor-registration.md)
+- [Documentazione generale: Registrazione Odontoiatra](../../doctor-registration.md)
+- [Documentazione generale: Registrazione Odontoiatra](../../doctor-registration.md)
 - [Documentazione Xot sulla proprietà $data](../../../xot/project_docs/filament/widgets/data-property.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Documentazione generale: Registrazione Odontoiatra](../../../../../project_docs/doctor-registration.md)
 ---
 **Nota:**
@@ -99,17 +111,10 @@ public function register()
 3. **Validare i dati prima dell'uso** - Utilizzare i metodi di validazione di Livewire
 4. **Utilizzare `$this->form->fill()`** nel metodo `mount()` per inizializzare il form
 5. **Evitare binding diretti** come `wire:model="first_name"` che non usano la struttura `data.*`
-<<<<<<< HEAD
 - [Documentazione sulla proprietà `$data` in XotBaseWidget](../../../xot/docs/filament/widgets/data-property.md)
 - [Filament Forms Documentation](https://filamentphp.com/docs/3.x/forms/installation)
 - [Livewire Data Binding](https://livewire.laravel.com/docs/properties)
 - [Documentazione sulla proprietà `$data` in XotBaseWidget](../../../xot/project_docs/filament/widgets/data-property.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Documentazione sulla proprietà `$data` in XotBaseWidget](../../../Xot/docs/filament/widgets/data-property.md)
-- [Filament Forms Documentation](https://filamentphp.com/docs/3.x/forms/installation)
-- [Livewire Data Binding](https://livewire.laravel.com/docs/properties)
-- [Documentazione sulla proprietà `$data` in XotBaseWidget](../../../Xot/project_docs/filament/widgets/data-property.md)
 - [Filament Forms Documentation](https://filamentphp.com/project_docs/3.x/forms/installation)
 - [Livewire Data Binding](https://livewire.laravel.com/project_docs/properties)
 ## Gestione dinamica del salvataggio e delle azioni
@@ -211,8 +216,4 @@ public function resetPassword()
 - **RegistrationWidget**: Generico, delega azioni esterne
 - **Widget Auth**: Specifici, logica autenticazione interna sicura
 - **Entrambi**: Stesso pattern XotBaseWidget + form schema + view convention
-<<<<<<< HEAD
 ## Collegamenti aggiornati
-=======
-## Collegamenti aggiornati
->>>>>>> 6ed19256f (.)

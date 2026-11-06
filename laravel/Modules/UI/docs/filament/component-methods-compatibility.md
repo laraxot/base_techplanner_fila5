@@ -1,3 +1,15 @@
+---
+title: "component methods compatibility"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "component methods compatibility"
+issues: []
+discussions: []
+status: draft
+---
+
 # Compatibilità dei Metodi nei Componenti Filament
 
 ## Panoramica
@@ -106,8 +118,4 @@ Forms\Components\FileUpload::make('certification')
 - [Documentazione Filament](./resources.md)
 - [Form Components](../form-components.md)
 - [Filament Resources Structure](../filament-resources-structure.md)
-- [Documentazione specifica nel modulo Patient](../../Patient/docs/filament-component-methods.md)
-<<<<<<< HEAD
 - [Documentazione specifica nel modulo Patient](../../patient/docs/filament-component-methods.md)
-=======
->>>>>>> 6ed19256f (.)

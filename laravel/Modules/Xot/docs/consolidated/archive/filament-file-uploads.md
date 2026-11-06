@@ -1,12 +1,16 @@
+---
+title: "Gestione dei File Upload in Filament"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "gestione dei file upload in filament xot"
+---
 # Gestione dei File Upload in Filament
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questo documento descrive le best practice per la gestione dei file upload nei form Filament di <nome progetto>, con particolare attenzione alla configurazione corretta dei componenti e alla mappatura dei campi del database.
-=======
-Questo documento descrive le best practice per la gestione dei file upload nei form Filament di SaluteOra, con particolare attenzione alla configurazione corretta dei componenti e alla mappatura dei campi del database.
->>>>>>> 6ed19256f (.)
 
 ## Configurazione del Componente FileUpload
 

@@ -1,3 +1,15 @@
+---
+title: "path conventions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "path conventions"
+issues: []
+discussions: []
+status: draft
+---
+
 # Convenzioni sui Percorsi
 
 ## Regole Fondamentali
@@ -7,7 +19,6 @@
    - I namespace possono essere in PascalCase ma devono mappare correttamente alle directory lowercase
 
 2. **Struttura Directory Principale**
-<<<<<<< HEAD
    - `Modules/Notify/app/` (CORRETTO)
    - `Modules/Notify/App/` (ERRATO)
 
@@ -32,32 +43,6 @@
    - `Modules/Notify/App/Datas/` (ERRATO)
    - `Modules/Notify/app/Datas/` (CORRETTO)
    - `Modules/Notify/App/Datas/` (ERRATO)
-=======
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/` (CORRETTO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/` (ERRATO)
-
-3. **Struttura Directory Actions**
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/` (CORRETTO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Actions/` (ERRATO)
-
-4. **Struttura Directory Datas**
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Datas/` (CORRETTO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Datas/` (ERRATO)
-   - `/var/www/html/saluteora/laravel/Modules/Notify/app/` (CORRETTO)
-   - `/var/www/html/saluteora/laravel/Modules/Notify/App/` (ERRATO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/` (CORRETTO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/` (ERRATO)
-
-3. **Struttura Directory Actions**
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/` (CORRETTO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Actions/` (ERRATO)
-
-4. **Struttura Directory Datas**
-   - `/var/www/html/saluteora/laravel/Modules/Notify/app/Datas/` (CORRETTO)
-   - `/var/www/html/saluteora/laravel/Modules/Notify/App/Datas/` (ERRATO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Datas/` (CORRETTO)
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Datas/` (ERRATO)
->>>>>>> 6ed19256f (.)
 
 ## Namespace vs Directory
 
@@ -71,21 +56,12 @@
 ## Errori Comuni da Evitare
 
 1. **Mai utilizzare la "A" maiuscola nel percorso fisico della directory app**
-<<<<<<< HEAD
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
-=======
-   - ✅ CORRETTO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/`
-   - ❌ ERRATO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Actions/`
-   - ✅ CORRETTO: `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/`
-   - ❌ ERRATO: `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/`
-   - ✅ CORRETTO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/`
-   - ❌ ERRATO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Actions/`
->>>>>>> 6ed19256f (.)
 
 2. **Mai aggiungere "App" nel namespace se non definito nel composer.json del modulo**
    - ✅ CORRETTO: `namespace Modules\Notify\Actions;`
@@ -117,7 +93,6 @@ Questo significa che il namespace `Modules\Notify` mappa alla directory `app/` d
    - I namespace possono essere in PascalCase ma devono mappare correttamente alle directory lowercase
 
 2. **Struttura Directory Principale**
-<<<<<<< HEAD
    - `Modules/Notify/app/` (CORRETTO)
    - `Modules/Notify/App/` (ERRATO)
 
@@ -128,18 +103,6 @@ Questo significa che il namespace `Modules\Notify` mappa alla directory `app/` d
 4. **Struttura Directory Datas**
    - `Modules/Notify/app/Datas/` (CORRETTO)
    - `Modules/Notify/App/Datas/` (ERRATO)
-=======
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/app/` (CORRETTO)
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/App/` (ERRATO)
-
-3. **Struttura Directory Actions**
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Actions/` (CORRETTO)
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/App/Actions/` (ERRATO)
-
-4. **Struttura Directory Datas**
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Datas/` (CORRETTO)
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/App/Datas/` (ERRATO)
->>>>>>> 6ed19256f (.)
 
 ## Namespace vs Directory
 
@@ -153,13 +116,8 @@ Questo significa che il namespace `Modules\Notify` mappa alla directory `app/` d
 ## Errori Comuni da Evitare
 
 1. **Mai utilizzare la "A" maiuscola nel percorso fisico della directory app**
-<<<<<<< HEAD
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
-=======
-   - ✅ CORRETTO: `/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Actions/`
-   - ❌ ERRATO: `/var/www/html/<directory progetto>/laravel/Modules/Notify/App/Actions/`
->>>>>>> 6ed19256f (.)
 
 2. **Mai aggiungere "App" nel namespace se non definito nel composer.json del modulo**
    - ✅ CORRETTO: `namespace Modules\Notify\Actions;`

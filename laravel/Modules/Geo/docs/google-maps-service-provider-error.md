@@ -1,10 +1,21 @@
+---
+title: "google maps service provider error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "google maps service provider error"
+issues: []
+discussions: []
+status: draft
+---
+
 # Errore FilamentGoogleMapsServiceProvider - Risoluzione
 
 ## Problema
 Errore: `Class "Cheesegrits\FilamentGoogleMaps\FilamentGoogleMapsServiceProvider" not found`
 
 ## Contesto
-- **Data**: 2025-01-06
 - **Ambiente**: Produzione (sottana.com)
 - **PHP**: 8.4.8
 - **Laravel**: 12.30.1
@@ -72,11 +83,7 @@ Il ServiceProvider deve essere registrato nel `composer.json` del modulo:
 ```
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Documentazione Root: Google Maps Integration](../../../../docs/google-maps-integration.md)
-=======
-- [Documentazione Root: Google Maps Integration](../../../docs/google-maps-integration.md)
->>>>>>> 6ed19256f (.)
 - [Modulo Geo: Filament Integration](./filament-integration.md)
 - [Modulo Geo: Address Implementation](./address-implementation.md)
 
@@ -85,8 +92,3 @@ Il ServiceProvider deve essere registrato nel `composer.json` del modulo:
 - Testare funzionalità di mappe dopo installazione
 - Aggiornare documentazione se si cambia pacchetto
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

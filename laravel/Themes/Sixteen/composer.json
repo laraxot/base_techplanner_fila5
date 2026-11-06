@@ -1,9 +1,5 @@
 {
-<<<<<<< HEAD
     "name": "laraxot/theme_sixteen_fila5",
-=======
-    "name": "laraxot/theme_sixteen_fila3",
->>>>>>> 6ed19256f (.)
     "description": "Sixteen theme for Laraxot projects (AGID-compliant, Tailwind-based)",
     "keywords": [
         "laraxot",
@@ -13,7 +9,6 @@
         "Laravel",
         "Ticket module"
     ],
-<<<<<<< HEAD
     "homepage": "https://github.com/laraxot/theme_sixteen_fila5",
     "license": "MIT",
     "require": {
@@ -25,19 +20,6 @@
         "filament/widgets": "^5.0",
         "filament/notifications": "^5.0",
         "filament/infolists": "^5.0"
-=======
-    "homepage": "https://github.com/laraxot/theme_sixteen_fila3",
-    "license": "MIT",
-    "require": {
-        "filament/filament": "^4.0",
-        "filament/support": "^4.0",
-        "filament/forms": "^4.0",
-        "filament/tables": "^4.0",
-        "filament/actions": "^4.0",
-        "filament/widgets": "^4.0",
-        "filament/notifications": "^4.0",
-        "filament/infolists": "^4.0"
->>>>>>> 6ed19256f (.)
     },
     "authors": [
         {
@@ -46,20 +28,11 @@
             "role": "Developer"
         }
     ],
-<<<<<<< HEAD
-=======
-    "autoload": {
-        "psr-4": {
-            "Themes\\Sixteen\\": "src/"
-        }
-    },
->>>>>>> 6ed19256f (.)
     "extra": {
         "laravel": {
             "providers": [
                 "Themes\\Sixteen\\Providers\\ThemeServiceProvider"
             ],
-<<<<<<< HEAD
             "aliases": {}
         }
     },
@@ -69,7 +42,9 @@
         }
     },
     "autoload-dev": {
-        "psr-4": {}
+        "psr-4": {
+            "Themes\\Sixteen\\Tests\\": "tests/"
+        }
     },
     "config": {
         "sort-packages": true,
@@ -85,11 +60,4 @@
     "require-dev": {
         "orchestra/testbench": "*"
     }
-=======
-"aliases": {}
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
->>>>>>> 6ed19256f (.)
 }

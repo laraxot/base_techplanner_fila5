@@ -5,13 +5,12 @@ declare(strict_types=1);
 return [
     'location' => [
         'title' => 'Selezione Località',
-        'submit' => 'Seleziona',
+        'submit' => 'Auswählen',
         'messages' => [
             'success' => 'Località selezionata con successo',
             'error' => 'Errore durante la selezione della località',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -25,6 +24,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

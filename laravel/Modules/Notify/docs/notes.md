@@ -1,3 +1,15 @@
+---
+title: "notes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "notes"
+issues: []
+discussions: []
+status: draft
+---
+
 # Note Finali sul Modulo Notify
 
 ## Architettura
@@ -140,8 +152,4 @@ L'utilizzo di Queueable Actions e componenti Blade di Filament garantisce:
 - Operazioni asincrone efficienti
 - UI/UX moderna e responsive
 - Integrazione nativa con Filament
-<<<<<<< HEAD
 - Facilità di manutenzione 
-=======
-- Facilità di manutenzione
->>>>>>> 6ed19256f (.)

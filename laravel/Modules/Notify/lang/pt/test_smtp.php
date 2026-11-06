@@ -7,149 +7,88 @@ return [
         'label' => 'Teste SMTP',
         'group' => 'Notificações',
         'icon' => 'heroicon-o-envelope-open',
-        'sort' => 47,
-    ],
+        'sort' => 47],
     'label' => 'Teste SMTP',
     'plural_label' => 'Testes SMTP',
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'host' => [
             'label' => 'Host',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'port' => [
             'label' => 'Porta',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'username' => [
             'label' => 'Nome de Usuário',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'password' => [
             'label' => 'Senha',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'encryption' => [
             'label' => 'Criptografia',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'from_address' => [
             'label' => 'Endereço Remetente',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'from_name' => [
             'label' => 'Nome Remetente',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'status' => [
             'label' => 'Status',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'last_tested_at' => [
             'label' => 'Último Teste Em',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'created_at' => [
             'label' => 'Criado Em',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'host' => [
-            'label' => 'Host',
-        ],
-        'port' => [
-            'label' => 'Porta',
-        ],
-        'username' => [
-            'label' => 'Nome de Usuário',
-        ],
-        'password' => [
-            'label' => 'Senha',
-        ],
-        'encryption' => [
-            'label' => 'Criptografia',
-        ],
-        'from_address' => [
-            'label' => 'Endereço Remetente',
-        ],
-        'from_name' => [
-            'label' => 'Nome Remetente',
-        ],
-        'status' => [
-            'label' => 'Status',
-        ],
-        'last_tested_at' => [
-            'label' => 'Último Teste Em',
-        ],
-        'created_at' => [
-            'label' => 'Criado Em',
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'body_html' => [
             'description' => 'Corpo HTML',
             'helper_text' => 'Conteúdo HTML do email',
-<<<<<<< HEAD
             'label' => '',
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'tooltip' => '']],
     'actions' => [
         'logout' => [
             'tooltip' => 'Sair',
             'icon' => 'logout',
-            'label' => 'Sair',
-        ],
+            'label' => 'Sair'],
         'emailFormActions' => [
             'tooltip' => 'Ações do Formulário de Email',
             'icon' => 'emailFormActions',
-            'label' => 'Ações do Formulário de Email',
-        ],
+            'label' => 'Ações do Formulário de Email'],
         'profile' => [
             'tooltip' => 'Perfil',
-            'icon' => 'profile',
-        ],
+            'icon' => 'profile'],
         'send_test_email' => [
-            'label' => 'Enviar Email de Teste',
-        ],
+            'label' => 'Enviar Email de Teste'],
         'test_connection' => [
-            'label' => 'Testar Conexão',
-        ],
-    ],
-];
+            'label' => 'Testar Conexão']]];

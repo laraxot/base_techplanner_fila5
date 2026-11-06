@@ -1,7 +1,15 @@
 ---
-module: theme
-topic: morph-map
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Morph Map"
+module: "Tenant"
+type: concept
+tags: [morph, map]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "morph map"
+related:
+  - "./phpstan-corrections-january.md"
+status: draft
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

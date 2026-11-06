@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -41,14 +40,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Nome',
-        'slug' => 'Slug',
-        'class' => 'Classi CSS',
-        'id' => 'ID HTML',
-        'background_color' => 'Colore Sfondo',
-        'text_color' => 'Colore Testo',
->>>>>>> 6ed19256f (.)
     ],
     'blocks' => [
         'logo' => [
@@ -90,7 +81,6 @@ return [
         'style' => 'Stile',
         'content' => 'Contenuti',
     ],
-<<<<<<< HEAD
     'label' => 'Sections',
     'plural_label' => 'Sections (Plurale)',
     'navigation' => [
@@ -102,7 +92,7 @@ return [
         ],
         'label' => 'Sections',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -115,6 +105,9 @@ return [
             'label' => 'Elimina Sections',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
+    'preview' => [
+        'empty' => 'Nessun contenuto disponibile per questa sezione',
+        'no_blocks' => 'Nessun blocco configurato per questa sezione',
+        'no_translation' => 'Nessuna traduzione disponibile per la lingua corrente',
+    ],
 ];

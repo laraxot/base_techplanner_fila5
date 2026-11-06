@@ -1,22 +1,24 @@
+---
+title: "filament 4x compatibility"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 4x compatibility"
+issues: []
+discussions: []
+status: draft
+---
+
 # Compatibilità Filament 4.x - Modulo Cms
 
-<<<<<<< HEAD
 **Status**: ✅ COMPLETATO  
 **Versione Filament**: 4.0.17  
-=======
-**Data**: 2025-01-27
-**Status**: ✅ COMPLETATO
-**Versione Filament**: 4.0.17
->>>>>>> 6ed19256f (.)
 
 ## 🔧 Correzioni Implementate
 
 ### 1. SectionPreview Component
-<<<<<<< HEAD
 **Problema**: Parametro `$name` non contravariante con classe padre  
-=======
-**Problema**: Parametro `$name` non contravariante con classe padre
->>>>>>> 6ed19256f (.)
 **Soluzione**: Utilizzato `parent::make($name)` per delegare alla classe padre
 
 ```php
@@ -43,19 +45,11 @@ public static function getNavigationIcon(): null|string
     $icon = static::$navigationIcon ??
         FilamentIcon::resolve('panels::pages.dashboard.navigation-item') ??
             (Filament::hasTopNavigation() ? 'heroicon-m-home' : 'heroicon-o-home');
-<<<<<<< HEAD
     
     if ($icon instanceof \BackedEnum) {
         return (string) $icon->value;
     }
     
-=======
-
-    if ($icon instanceof \BackedEnum) {
-        return (string) $icon->value;
-    }
-
->>>>>>> 6ed19256f (.)
     return is_string($icon) ? $icon : null;
 }
 ```
@@ -74,14 +68,7 @@ public static function getNavigationIcon(): null|string
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 
 *Ultimo aggiornamento: [DATE]*
-=======
-- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
-- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
-
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)

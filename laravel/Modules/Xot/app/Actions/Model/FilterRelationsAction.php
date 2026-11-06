@@ -11,19 +11,14 @@ use Webmozart\Assert\Assert;
 class FilterRelationsAction
 {
     /**
-<<<<<<< HEAD
-     * @param array<string, mixed> $relations
-=======
      * @param  array<string, mixed>  $relations
->>>>>>> 6ed19256f (.)
-     *
-     * @return array<string, Relation>
+     * @return array<string, Relation<Model, Model, mixed>>
      */
     public function execute(Model $_model, array $relations): array
     {
         $filtered = [];
 
-        foreach ($relations as $name => $relation) {
+        foreach ($relations as $relation) {
             Assert::isInstanceOf($relation, Relation::class);
             $related = $relation->getRelated();
             Assert::isInstanceOf($related, Model::class);

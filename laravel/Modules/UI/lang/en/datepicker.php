@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'months' => [
-<<<<<<< HEAD
         0 => 'January',
         1 => 'February',
         2 => 'March',
@@ -17,20 +16,6 @@ return [
         9 => 'October',
         10 => 'November',
         11 => 'December',
-=======
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December',
->>>>>>> 6ed19256f (.)
     ],
     'days_short' => [
         'mon' => 'Mon',
@@ -60,13 +45,18 @@ return [
     ],
     'no_dates_available' => 'No dates available',
     'selected_date' => 'Selected date',
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
+    'messages' => [
+        'loading_calendar' => [
+            'message' => 'Loading calendar...',
+        ],
     ],
-    'actions' => [
+    'test_page' => [
+        'form_state' => [
+            'label' => 'Form state:',
+        ],
     ],
-=======
->>>>>>> 6ed19256f (.)
+    'next_month' => 'Next month',
+    'previous_month' => 'Previous month',
 ];

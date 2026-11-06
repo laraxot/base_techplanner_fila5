@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://iftikhar-ahmed.medium.com/send-push-notifications-in-laravel-using-firebase-on-your-android-device-f585621db900
  */
@@ -18,7 +17,6 @@ use Kreait\Firebase\Messaging\Notification as FirebaseNotification;
 use Modules\Notify\Contracts\MobilePushNotification;
 use Modules\Notify\Datas\FirebaseNotificationData;
 use NotificationChannels\Fcm\FcmChannel;
-use Override;
 
 /**
  * Class for sending notifications via Firebase Cloud Messaging to Android devices.
@@ -32,31 +30,22 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
      * Create a new notification instance.
      *
      * @param  FirebaseNotificationData  $data  The Firebase notification data (I dati della notifica Firebase)
+     * @return void
      */
     public function __construct(
         public FirebaseNotificationData $data,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     /**
      * Get the notification's delivery channels.
      *
      * @param  object  $_notifiable  The entity to be notified (l'entità da notificare)
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<int, class-string>
      */
     public function via(object $_notifiable): array
     {
         return [
-            FcmChannel::class,
-        ];
+            FcmChannel::class];
     }
 
     /**
@@ -70,8 +59,7 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
         // Create a valid Android configuration (Creiamo una configurazione Android valida)
         $androidConfig = [
             'ttl' => '3600s',
-            'priority' => 'high',
-        ];
+            'priority' => 'high'];
 
         // Add notification only if data is in a valid format (Aggiungiamo la notifica solo se i dati sono in un formato valido)
         // Verify that $this->data->data is accessible (Verifichiamo che $this->data->data sia accessibile)
@@ -104,13 +92,8 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
      * Get the array representation of the notification.
      *
      * @param  object|null  $notifiable  The entity to be notified
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
-    #[Override]
     public function toArray(?object $notifiable): array
     {
         // return $this->data->toArray();
@@ -120,28 +103,19 @@ class FirebaseAndroidNotification extends Notification implements MobilePushNoti
     /**
      * Convert to a Firebase Cloud message (Converti in un messaggio Cloud Firebase).
      */
-    #[Override]
     public function toCloudMessage(): Message
     {
         $notificationData = $this->data->data;
 
         /**
-<<<<<<< HEAD
          * @var array<non-empty-string, string> $data
-=======
-         * @var array<non-empty-string, string|Stringable>
->>>>>>> 6ed19256f (.)
          */
         $data = [];
 
         // Ensure each key is a non-empty string and each value is string or Stringable (Assicuriamoci che ogni chiave sia una stringa non vuota e ogni valore sia string o Stringable)
         foreach ($notificationData as $key => $value) {
             if (is_string($key) && $key !== '' && (is_string($value) || $value instanceof Stringable)) {
-<<<<<<< HEAD
                 $data[$key] = $value instanceof Stringable ? $value->toString() : $value;
-=======
-                $data[$key] = $value;
->>>>>>> 6ed19256f (.)
             }
         }
 

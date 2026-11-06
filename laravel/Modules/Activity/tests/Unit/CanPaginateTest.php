@@ -5,20 +5,19 @@ declare(strict_types=1);
 namespace Modules\Activity\Tests\Unit;
 
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
+use Modules\Activity\Tests\Fixtures\CanPaginateHarness;
 use Modules\Activity\Tests\TestCase;
-use PHPUnit\Framework\Attributes\Test;
+use PHPUnit\Framework\Assert;
 
-class CanPaginateTest extends TestCase
-{
-    #[Test]
-    public function trait_exists(): void
-    {
-        $this->assertTrue(trait_exists(CanPaginate::class));
-    }
+uses(TestCase::class);
 
-    #[Test]
-    public function trait_has_pagination_methods(): void
-    {
+describe('Can Paginate', function (): void {
+    test('trait exists', function (): void {
+        /** @var \Modules\Activity\Tests\TestCase $this */
+        Assert::assertTrue(trait_exists(CanPaginate::class));
+    });
+
+    test('trait has pagination methods', function (): void {
         // Check that trait has required methods
         $methods = [
             'updatedRecordsPerPage',
@@ -32,28 +31,15 @@ class CanPaginateTest extends TestCase
         ];
 
         foreach ($methods as $method) {
-            $this->assertTrue(
+            Assert::assertTrue(
                 method_exists(CanPaginate::class, $method),
                 "Method {$method} should exist in CanPaginate trait"
             );
         }
-    }
+    });
 
-    #[Test]
-    public function default_pagination_options_return_array(): void
-    {
-        // Test the default pagination options via reflection
-        $trait = new class
-        {
-            use CanPaginate;
-
-            public function test_get_records_per_page_select_options(): array
-            {
-                return $this->getRecordsPerPageSelectOptions();
-            }
-        };
-
-        $options = $trait->testGetRecordsPerPageSelectOptions();
-        $this->assertEquals([10, 25, 50], $options);
-    }
-}
+    test('default pagination options return array', function (): void {
+        $options = (new CanPaginateHarness)->exposeOptions();
+        Assert::assertEquals([10, 25, 50], $options);
+    });
+});

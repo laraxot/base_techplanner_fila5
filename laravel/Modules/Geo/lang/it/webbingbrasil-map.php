@@ -27,7 +27,6 @@ return [
         'marker_removed' => 'Marker rimosso con successo',
         'marker_updated' => 'Marker aggiornato con successo',
     ],
-<<<<<<< HEAD
     'label' => 'Webbingbrasil Map',
     'plural_label' => 'Webbingbrasil Map (Plurale)',
     'fields' => [
@@ -61,6 +60,17 @@ return [
             'label' => 'Elimina Webbingbrasil Map',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
+    'sections' => [
+        'unavailable' => [
+            'title' => 'Mappa temporaneamente non disponibile',
+        ],
+    ],
+    'unavailable' => [
+        'disabled_notice' => [
+            'description' => 'Il widget mappa è stato temporaneamente disabilitato durante la migrazione a Filament v4.',
+        ],
+        'restore_notice' => [
+            'description' => 'Sarà ripristinato non appena saranno disponibili pacchetti compatibili.',
+        ],
+    ],
 ];

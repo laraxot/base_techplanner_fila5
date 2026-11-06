@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Traduzioni"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+  - "../italian-text-refined-audit-report.md"
+status: draft
+---
 # Traduzioni
 
 ## Pacchetti Utilizzati
@@ -93,7 +108,6 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 ### Versione HEAD
 
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
 * [translations.md](../../../gdpr/docs/translations.md)
@@ -109,10 +123,21 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 * [translations.md](../../../media/docs/translations.md)
 * [translations.md](../../../tenant/docs/translations.md)
 * [translations.md](../../../activity/docs/translations.md)
+* [translations.md](../../../Gdpr/docs/translations.md)
+* [translations.md](../../../Notify/docs/translations.md)
+* [translations.md](../../../xot/docs/roadmap/lang/translations.md)
+* [translations.md](../../../xot/docs/translations.md)
+* [translations.md](../../../dental/docs/translations.md)
+* [translations.md](../../../User/docs/translations.md)
+* [translations.md](../../../ui/docs/translations.md)
+* [translations.md](../../../lang/docs/packages/translations.md)
+* [translations.md](../translations.md)
+* [translations.md](../../../Job/docs/translations.md)
+* [translations.md](../../../Media/docs/translations.md)
+* [translations.md](../../../Tenant/docs/translations.md)
+* [translations.md](../../../Activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
-=======
->>>>>>> 6ed19256f (.)
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -133,8 +158,4 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,13 @@
+---
+title: "Eloquent Models - Regole Critiche per Laraxot PTVX"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Eloquent Models - Regole Critiche per Laraxot PTVX"
+---
 # Eloquent Models - Regole Critiche per Laraxot PTVX
 
 ## DIVIETO ASSOLUTO: property_exists() con Modelli Eloquent
@@ -14,39 +24,26 @@ I modelli Eloquent utilizzano il pattern delle proprietà magiche:
 
 ### Alternative Corrette per Laraxot PTVX
 
-**REGOLA CRITICA**: Per i modelli Eloquent, utilizzare SEMPRE `isset()` invece di `property_exists()` perché gli attributi sono magici (gestiti tramite `__get()`, `__set()`, `__isset()`).
-
 #### 1. Verificare Attributi del Modello
 ```php
-// ❌ SBAGLIATO - property_exists() non funziona con attributi magici
-if (property_exists($model, 'field_name')) {
-    // Questa condizione è SEMPRE false per campi database
-}
-
-// ✅ CORRETTO - isset() rispetta __isset() per attributi magici
-if (isset($model->field_name)) {
-    // verifica se l'attributo ha un valore
-}
-
-// ✅ CORRETTO - Verificare se un attributo esiste nel modello
+// ✅ Verificare se un attributo esiste nel modello
 if ($model->hasAttribute('field_name')) {
     // logica corretta
 }
 
-// ✅ CORRETTO - Verificare se un campo è fillable
+// ✅ Verificare se un campo è fillable
 if ($model->isFillable('field_name')) {
     // logica corretta per campi modificabili
 }
 
-// ✅ CORRETTO - Verificare se un attributo non è null
-if (!is_null($model->field_name)) {
-    // verifica valore non null
+// ✅ Verificare se un attributo è stato impostato
+if (isset($model->field_name)) {
+    // verifica se l'attributo ha un valore
 }
 
-// ✅ CORRETTO - Usare getAttribute() per accesso diretto
-$value = $model->getAttribute('field_name');
-if ($value !== null) {
-    // Usa $value
+// ✅ Verificare se un attributo non è null
+if (!is_null($model->field_name)) {
+    // verifica valore non null
 }
 ```
 
@@ -168,11 +165,7 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 ```
 
 ### Documentazione Correlata
-<<<<<<< HEAD
-- [Root Docs: Eloquent Models Property Verification](../../../../docs/eloquent-models-property-verification.md)
-=======
 - [Root Docs: Eloquent Models Property Verification](../../../docs/eloquent-models-property-verification.md)
->>>>>>> 6ed19256f (.)
 - [.cursor/rules/property_exists_eloquent_models.mdc](../../../.cursor/rules/property_exists_eloquent_models.mdc)
 - [.windsurf/rules/property_exists_eloquent_models.mdc](../../../.windsurf/rules/property_exists_eloquent_models.mdc)
 - [Laravel AI Guidelines](../../.ai/guidelines/eloquent_models_property_verification.md)
@@ -184,8 +177,4 @@ $this->assertTrue(property_exists($model, 'field_name')); // Sempre false
 4. Verifica di logiche correlate nei trait e BaseModel
 5. Aggiornamento documentazione moduli specifici
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
-=======
-*Ultimo aggiornamento: agosto 2025 - Regola critica per architettura Laraxot PTVX*
->>>>>>> 6ed19256f (.)

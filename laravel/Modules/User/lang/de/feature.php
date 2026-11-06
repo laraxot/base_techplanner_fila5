@@ -13,12 +13,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione delle feature e delle funzionalità',
         ],
-        'label' => 'feature',
+        'label' => 'Funktion',
         'sort' => '75',
         'icon' => 'user-user-feature',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -98,35 +97,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
-        ],
-        'value' => [
-            'label' => 'value',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -146,9 +116,6 @@ return [
     'model' => [
         'label' => 'feature.model',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,10 +1,16 @@
+---
+title: "Fix PHPStan Modelli - Generics e Tipizzazione Completa"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Fix PHPStan Modelli - Generics e Tipizzazione Completa"
+---
 # Fix PHPStan Modelli - Generics e Tipizzazione Completa
 
 ## Data: 2025-01-27
-<<<<<<< HEAD
-## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Identificato
 
@@ -12,7 +18,7 @@ Errori PHPStan livello 9 nei modelli base del modulo Xot:
 
 1. **BaseModel**: PHPDoc `@extends` con errore di parsing
 2. **BaseExtra**: Mancanza di template generics per Factory
-3. **BaseTreeModel**: Mancanza di template generics per Factory
+3. **BaseTreeModel**: Mancanza di template generics per Factory  
 4. **Cache**: PHPDoc `@extends` con errore di parsing e mancanza generics
 5. **Proprietà $fillable**: Mancanza di tipizzazione `list<string>`
 
@@ -33,7 +39,7 @@ Property $fillable type has no value type specified in iterable type array
 ```php
 /**
  * Class BaseModel.
- *
+ * 
  * @extends Model
  * @template TFactory of \Illuminate\Database\Eloquent\Factories\Factory
  */
@@ -102,7 +108,7 @@ class Cache extends BaseModel
 ```php
 protected $fillable = [
     'key',
-    'value',
+    'value', 
     'expiration',
 ];
 ```
@@ -113,7 +119,7 @@ protected $fillable = [
 protected $fillable = [
     'key',
     'value',
-    'expiration',
+    'expiration', 
 ];
 ```
 
@@ -148,11 +154,11 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 
 ## Collegamenti
 
-- [BaseModel.php](../../app/Models/BaseModel.php)
-- [BaseExtra.php](../../app/Models/BaseExtra.php)
-- [BaseTreeModel.php](../../app/Models/BaseTreeModel.php)
-- [Cache.php](../../app/Models/Cache.php)
-- [BaseModelTest.php](../../tests/Unit/Models/BaseModelTest.php)
+- [BaseModel.php](../app/Models/BaseModel.php)
+- [BaseExtra.php](../app/Models/BaseExtra.php)
+- [BaseTreeModel.php](../app/Models/BaseTreeModel.php)
+- [Cache.php](../app/Models/Cache.php)
+- [BaseModelTest.php](../tests/Unit/Models/BaseModelTest.php)
 - [PHPStan Fixes](./phpstan-fixes.md)
 
 ## Note per il Futuro
@@ -161,8 +167,4 @@ php artisan test Modules/Xot/tests/Unit/Models/BaseModelTest.php
 - Utilizzare sempre template generics per modelli che estendono BaseModel
 - Tipizzare sempre proprietà array come `list<string>` o `array<string, mixed>`
 - Testare sempre con PHPStan dopo modifiche ai modelli base
-<<<<<<< HEAD
 - Implementare test di regressione per validare le correzioni
-=======
-- Implementare test di regressione per validare le correzioni
->>>>>>> 6ed19256f (.)

@@ -1,41 +1,24 @@
 ---
-title: "Media Module Wiki Index"
+title: "Media Wiki Index"
+module: "Media"
 type: index
-module: Media
-tags: [media, wiki, index, upload]
-created: 2026-04-15
-updated: 2026-06-05
-qmd: "media module wiki index upload second brain"
-issues:
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/272"
-discussions:
-  - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
-related:
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
-  - ../../../../docs/wiki/bmad/architecture.md
-  - ../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md
-  - ../../docs/wiki/concepts/ai-harness-module-discipline.md
+status: superseded
+superseded_by: INDEX.md
+updated: 2026-10-14
+tags: [docs, media, wiki]
+qmd: "media module wiki media"
 ---
 
+> Superseded il 2026-10-14: copia per sola differenza di maiuscole di [INDEX.md](./INDEX.md), che e' l'indice canonico della wiki. Contenuto conservato per storia.
+
 # Media Module Wiki
-## AI / second brain
-
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
-- [frontmatter + GitHub](../../../../docs/wiki/rules/wiki-markdown-frontmatter-mandatory.md)
-- [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
-- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
-
 
 ## Indices
-- [Rules](rules/INDEX.md)
-- [Skills](skills/INDEX.md)
-- [Commands](commands/INDEX.md)
-- [Memories](memories/INDEX.md)
-- [Concepts](concepts/INDEX.md)
-
-## Troubleshooting
-- [Multibase PHP: Cannot redeclare class (runtime)](troubleshooting/multibase-class-redeclare-runtime.md)
+- [Rules](rules/index.md)
+- [Skills](skills/index.md)
+- [Commands](commands/index.md)
+- [Memories](memories/index.md)
+- [Concepts](concepts/index.md)
 
 ## On-Demand Workflow
 
@@ -44,4 +27,34 @@ qmd search "Media <topic>" --limit 5
 ```
 
 ---
-*Updated: 2026-05-21*
+*Updated: 2026-05-11*
+
+## Composer / nwidart
+
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello ptv)
+
+---
+
+<!-- Merged from INDEX.md, which collided with this file on case-insensitive filesystems. -->
+
+# Media Module Wiki
+
+## Indices
+- [Rules](rules/index.md)
+- [Skills](skills/index.md)
+- [Commands](commands/index.md)
+- [Memories](memories/index.md)
+- [Concepts](concepts/index.md)
+
+## On-Demand Workflow
+
+```bash
+qmd search "Media <topic>" --limit 5
+```
+
+---
+*Updated: 2026-05-11*
+
+## Composer / nwidart
+
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello fixcity)

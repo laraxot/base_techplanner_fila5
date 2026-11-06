@@ -1,12 +1,18 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: security
-canonical: ../../../../Themes/docs/shared-components/security.md
+issues: []
+discussions: []
+title: "Configurazione della Sicurezza"
+module: "Tenant"
+type: concept
+tags: [security]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "security"
+related:
+  - "./phpstan-corrections-january.md"
+  - "../phpstan-corrections-january.md"
+status: draft
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/security.md
-=======
 # Configurazione della Sicurezza
 
 A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per controllare l'accesso a risorse esterne (immagini, fogli di stile, etc.) e prevenire vulnerabilità.
@@ -162,4 +168,3 @@ public function isUriValid(string $uri): bool
     return true;
 }
 ```
->>>>>>> 6ed19256f (.)

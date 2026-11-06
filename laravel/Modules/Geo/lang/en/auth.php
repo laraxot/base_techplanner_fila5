@@ -5,7 +5,6 @@ declare(strict_types=1);
 return [
     'failed' => 'These credentials do not match our records.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -19,6 +18,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

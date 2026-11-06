@@ -20,12 +20,9 @@ return [
     'fields' => [
         'device_token' => [
             'label' => 'Token Dispositivo',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -34,7 +31,6 @@ return [
                 'data' => 'Dati',
                 'both' => 'Entrambi',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -50,23 +46,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'title' => [
-            'label' => 'Titolo',
-        ],
-        'body' => [
-            'label' => 'Contenuto',
->>>>>>> 6ed19256f (.)
         ],
         'data' => [
             'label' => 'Dati Aggiuntivi',
             'description' => 'Dati in formato JSON da inviare con la notifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -79,9 +64,12 @@ return [
             'label' => 'Anteprima',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'sections' => [
+        'page' => [
+            'title' => 'Versand von Push-Benachrichtigungen testen',
+            'description' => 'Verwenden Sie dieses Formular, um den Versand von Push-Benachrichtigungen an Mobilgeräte über verschiedene Dienste zu testen.',
+        ],
+    ],
 ];

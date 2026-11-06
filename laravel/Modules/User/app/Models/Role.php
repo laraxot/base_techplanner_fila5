@@ -1,29 +1,21 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Models;
 
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\RoleRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-=======
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
-use Modules\User\Database\Factories\RoleFactory;
->>>>>>> 6ed19256f (.)
-use Modules\Xot\Datas\XotData;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Modules\Xot\Models\Traits\RelationX;
 use Modules\Xot\Traits\Updater;
@@ -33,42 +25,23 @@ use Webmozart\Assert\Assert;
 /**
  * Modules\User\Models\Role.
  *
-<<<<<<< HEAD
- * @property int                                 $id
- * @property string                              $uuid
- * @property string|null                         $team_id
- * @property string                              $name
- * @property string                              $guard_name
- * @property string|null                         $display_name
- * @property string|null                         $description
- * @property Carbon|null                         $created_at
- * @property Carbon|null                         $updated_at
- * @property string|null                         $updated_by
- * @property string|null                         $created_by
- * @property Collection<int, Permission>         $permissions
- * @property int|null                            $permissions_count
- * @property Team|null                           $team
+ * @property int $id
+ * @property string $uuid
+ * @property string|null $team_id
+ * @property string $name
+ * @property string $guard_name
+ * @property string|null $display_name
+ * @property string|null $description
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Team|null $team
  * @property Collection<int, Model&UserContract> $users
- * @property int|null                            $users_count
- * @property PermissionRole|null                 $pivot
-=======
- * <<<<<<< HEAD
- *
- * @property int                                         $id
- *                                                                          =======
- * @property string                                      $id
- * @property string                                      $uuid
- * @property string|null                                 $team_id
- * @property string                                      $name
- * @property string                                      $guard_name
- * @property Carbon|null                                 $created_at
- * @property Carbon|null                                 $updated_at
- * @property Collection<int, Permission>                 $permissions
- * @property int|null                                    $permissions_count
- * @property Team|null                                   $team
- * @property EloquentCollection<int, Model&UserContract> $users
- * @property int|null                                    $users_count
->>>>>>> 6ed19256f (.)
+ * @property int|null $users_count
+ * @property PermissionRole|null $pivot
  *
  * @method static Builder|Role newModelQuery()
  * @method static Builder|Role newQuery()
@@ -79,80 +52,35 @@ use Webmozart\Assert\Assert;
  * @method static Builder|Role whereName($value)
  * @method static Builder|Role whereTeamId($value)
  * @method static Builder|Role whereUpdatedAt($value)
-<<<<<<< HEAD
  * @method static Builder|Role whereId($value)
  * @method static Builder|Role whereCreatedBy($value)
  * @method static Builder|Role whereUpdatedBy($value)
  * @method static Builder|Role withoutPermission($permissions)
  * @method static Builder|Role whereDescription($value)
  * @method static Builder|Role whereDisplayName($value)
- * @method static static       firstOrCreate(array $attributes, array $values = [])
- * @method static static       updateOrCreate(array $attributes, array $values = [])
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
  * @method static \Modules\User\Database\Factories\RoleFactory factory($count = null, $state = [])
- * @method static Builder<static>|Role                         whereUuid($value)
-=======
- * @method static Builder|Role whereUuid($value)
- *
- * >>>>>>> 32e772a8 (.)
- *
- * @property int $id
- *
- * @method static Builder|Role whereId($value)
- *
- * @property string|null $updated_by
- * @property string|null $created_by
- *
- * @method static Builder|Role whereCreatedBy($value)
- * @method static Builder|Role whereUpdatedBy($value)
- *
- * @mixin Eloquent
- *
- * @method static Builder|Role withoutPermission($permissions)
- *
- * @property PermissionRole|null $pivot
- *
- * @mixin IdeHelperRole
- *
- * @property string|null $display_name
- * @property string|null $description
- *
- * @method static RoleFactory          factory($count = null, $state = [])
- * @method static Builder<static>|Role whereDescription($value)
- * @method static Builder<static>|Role whereDisplayName($value)
- * @method static static               firstOrCreate(array $attributes, array $values = [])
- * @method static static               updateOrCreate(array $attributes, array $values = [])
->>>>>>> 6ed19256f (.)
+ * @method static Builder<static>|Role whereUuid($value)
  *
  * @mixin \Eloquent
  */
 class Role extends SpatieRole
 {
+    use RoleRelationsTrait;
     use HasXotFactory;
     use RelationX;
     use Updater;
 
     // use HasUuids;
 
-    final public const ROLE_ADMINISTRATOR = 1;
-
-    final public const ROLE_OWNER = 2;
-
-    final public const ROLE_USER = 3;
-
-<<<<<<< HEAD
     protected $connection = 'user';
 
-=======
-    /** @var string */
-    protected $connection = 'user';
-
-    /** @var string */
->>>>>>> 6ed19256f (.)
     protected $keyType = 'int';
 
     /** @var list<string> */
@@ -166,6 +94,11 @@ class Role extends SpatieRole
         'updated_by',
     ];
 
+    /**
+     * Ruolo che apre ogni porta: assegnarlo equivale a creare un super-admin.
+     */
+    public const string SUPER_ADMIN = 'super-admin';
+
     public function getTable(): string
     {
         Assert::string($table = config('permission.table_names.roles'));
@@ -174,23 +107,30 @@ class Role extends SpatieRole
     }
 
     /**
-     * Get all of the teams the user belongs to.
+     * Solo un super-admin ne crea un altro: `admin` e `user::admin` modificano gli utenti ma non si fanno super-admin.
+     * Il resto della gerarchia (chi assegna quale ruolo) e' una decisione aperta: oggi e' l'unica regola.
      */
-    public function team(): BelongsTo
+    public static function mayAssignSuperAdmin(?Authenticatable $actor): bool
     {
-        $xotData = XotData::make();
-        /** @var class-string<Model> */
-        $teamClass = $xotData->getTeamClass();
-
-        return $this->belongsTo($teamClass);
+        return $actor instanceof UserContract && $actor->hasRole(self::SUPER_ADMIN);
     }
 
     /**
-     * A role may be given various permissions.
+     * Toglie dalla query i ruoli che `$actor` non puo' assegnare. Si applica alle opzioni e alla lettura del valore
+     * ricevuto: il form e' controllato dal client, l'elenco filtrato da solo non basta.
+     *
+     * @template TModel of Model
+     *
+     * @param  Builder<TModel>  $query
+     * @return Builder<TModel>
      */
-    public function permissions(): BelongsToMany
+    public static function restrictAssignableBy(Builder $query, ?Authenticatable $actor): Builder
     {
-        return $this->belongsToManyX(Permission::class);
+        if (self::mayAssignSuperAdmin($actor)) {
+            return $query;
+        }
+
+        return $query->where($query->qualifyColumn('name'), '!=', self::SUPER_ADMIN);
     }
 
     /** @return array<string, string> */

@@ -1,12 +1,14 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: attach
-canonical: ../../../../../Themes/docs/shared-components/attach.md
+title: "attach"
+type: note
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "attach"
+status: superseded
+superseded_by: ../../consolidated/archive/attach.md
 ---
-
-See canonical documentation: ../../../../../Themes/docs/shared-components/attach.md
-=======
 ```php
 AttachAction::make()->modifyRecordSelectUsing(
 fn ($select) => $select->getOptionLabelFromRecordUsing(fn ($record) => $record->name . ' ' . $record->organization)
@@ -17,4 +19,3 @@ fn ($select) => $select->getOptionLabelFromRecordUsing(fn ($record) => $record->
 AttachAction::make()
     ->recordTitle(fn (Model $record) => "{$record->name} ({$record->organisation->name})")
 ```
->>>>>>> 6ed19256f (.)

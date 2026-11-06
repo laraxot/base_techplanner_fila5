@@ -6,44 +6,53 @@ namespace Modules\Xot\Tests\Unit\Actions\File;
 
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\CreateDirectoryForFilenameAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-beforeEach(function (): void {
-    $this->action = app(CreateDirectoryForFilenameAction::class);
-    $this->tempDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'test_create_dir_'.uniqid();
-    if (! File::isDirectory($this->tempDir)) {
-        File::makeDirectory($this->tempDir, 0755, true);
+uses(TestCase::class);
+
+// $this dentro le closure Pest e' tipizzato da Pest come TestCall (vedi
+// @param-closure-this in vendor/pestphp/pest/src/Functions.php), non come
+// Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var,
+// quindi la working dir del test vive in una variabile locale condivisa per riferimento.
+$workDir = '';
+
+beforeEach(function () use (&$workDir): void {
+    $workDir = sys_get_temp_dir().DIRECTORY_SEPARATOR.'test_create_dir_'.uniqid();
+    if (! File::isDirectory($workDir)) {
+        File::makeDirectory($workDir, 0755, true);
     }
 });
 
-afterEach(function (): void {
-    if (File::isDirectory($this->tempDir)) {
-        File::deleteDirectory($this->tempDir);
+afterEach(function () use (&$workDir): void {
+    if (File::isDirectory($workDir)) {
+        File::deleteDirectory($workDir);
     }
 });
 
-it('creates directory for filename', function (): void {
-    $filename = $this->tempDir.'/nested/deep/file.txt';
+describe('Create Directory For Filename Action', function () use (&$workDir): void {
+    test('creates directory for filename', function () use (&$workDir): void {
+        $filename = $workDir.'/nested/deep/file.txt';
 
-    $this->action->execute($filename);
+        app(CreateDirectoryForFilenameAction::class)->execute($filename);
 
-    expect(File::isDirectory($this->tempDir.'/nested/deep'))->toBeTrue();
-});
+        Assert::assertTrue(File::isDirectory($workDir.'/nested/deep'));
+    });
 
-it('does nothing when directory already exists', function (): void {
-    $filename = $this->tempDir.'/existing/file.txt';
-    File::makeDirectory($this->tempDir.'/existing', 0755, true);
+    test('does nothing when directory already exists', function () use (&$workDir): void {
+        $filename = $workDir.'/existing/file.txt';
+        File::makeDirectory($workDir.'/existing', 0755, true);
 
-    // Should not throw
-    $this->action->execute($filename);
+        app(CreateDirectoryForFilenameAction::class)->execute($filename);
 
-    expect(File::isDirectory($this->tempDir.'/existing'))->toBeTrue();
-});
+        Assert::assertTrue(File::isDirectory($workDir.'/existing'));
+    });
 
-it('handles root level file', function (): void {
-    $filename = $this->tempDir.'/rootfile.txt';
-    File::makeDirectory($this->tempDir, 0755, true);
+    test('handles root level file', function () use (&$workDir): void {
+        $filename = $workDir.'/rootfile.txt';
 
-    $this->action->execute($filename);
+        app(CreateDirectoryForFilenameAction::class)->execute($filename);
 
-    expect(File::isDirectory($this->tempDir))->toBeTrue();
+        Assert::assertTrue(File::isDirectory($workDir));
+    });
 });

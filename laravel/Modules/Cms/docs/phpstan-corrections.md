@@ -1,13 +1,21 @@
+---
+title: "phpstan corrections"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan corrections"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Corrections - CMS Module
 
 ## Fixed Issues
 
 ### 1. HTTP Client PromiseInterface|Response Union Type (Multiple Action files)
-**Date**: 2025-12-10
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Files affected**:
 - app/Actions/Bing/GetAddressFromBingMapsAction.php
 - app/Actions/GetCoordinatesAction.php
@@ -52,8 +60,4 @@ private const BASE_URL = 'https://maps.googleapis.com/maps/api/directions/json';
 
 ## Test Corrections (Pest)
 - Nei test, la connessione `user` usa SQLite in-memory: la tabella `users` deve esistere (altrimenti le factory falliscono con `no such table: users`).
-<<<<<<< HEAD
 - Evitare assert fragili su stringhe hardcoded di localizzazione (il sito funziona): preferire stringhe realmente presenti nel markup o key/valori di traduzione attuali.
-=======
-- Evitare assert fragili su stringhe hardcoded di localizzazione (il sito funziona): preferire stringhe realmente presenti nel markup o key/valori di traduzione attuali.
->>>>>>> 6ed19256f (.)

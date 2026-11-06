@@ -1,22 +1,24 @@
+---
+title: "Utilizzo dei componenti Blade di Filament"
+type: concept
+tags: [using, filament, components]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "using-filament-components utilizzo dei componenti blade di filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+status: draft
+---
+
 # Utilizzo dei componenti Blade di Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
-<<<<<<< HEAD
-> La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../ui/docs/blade/component-registration.md).
-## Regola fondamentale: utilizzare i componenti Filament
-Nel progetto , **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati che duplicano funzionalità già esistenti.
-> La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../ui/project_docs/blade/component-registration.md).
-=======
->>>>>>> 6ed19256f (.)
 > La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../UI/docs/blade/component-registration.md).
 ## Regola fondamentale: utilizzare i componenti Filament
 Nel progetto , **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati che duplicano funzionalità già esistenti.
-> La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../UI/project_docs/blade/component-registration.md).
-<<<<<<< HEAD
+> La documentazione completa sui componenti Blade si trova nel [modulo UI](../../../ui/project_docs/blade/component-registration.md).
 Nel progetto <nome progetto>, **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati che duplicano funzionalità già esistenti.
-=======
-Nel progetto SaluteOra, **abbiamo l'obbligo di utilizzare i componenti Blade forniti da Filament quando disponibili**, invece di creare componenti personalizzati che duplicano funzionalità già esistenti.
->>>>>>> 6ed19256f (.)
 ## Migrazione da componenti personalizzati a componenti Filament
 ### Dropdown personalizzato vs Filament Dropdown
 Il componente `<x-profile.dropdown>` è un esempio di componente personalizzato che dovrebbe essere sostituito dal componente Filament equivalente.
@@ -57,8 +59,4 @@ Il componente `<x-profile.dropdown>` è un esempio di componente personalizzato 
 1. ❌ Creare componenti personalizzati che duplicano componenti Filament esistenti
 2. ❌ Modificare profondamente i componenti Filament invece di estenderli
 3. ❌ Mescolare stili personalizzati con componenti Filament
-<<<<<<< HEAD
 4. ❌ Non tenere aggiornati i componenti alla versione corrente di Filament
-=======
-4. ❌ Non tenere aggiornati i componenti alla versione corrente di Filament
->>>>>>> 6ed19256f (.)

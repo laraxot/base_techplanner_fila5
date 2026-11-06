@@ -1,3 +1,15 @@
+---
+title: "translation structure expanded"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation structure expanded"
+issues: []
+discussions: []
+status: draft
+---
+
 # Struttura Traduzioni Espansa - Modulo Geo
 
 ## Scopo
@@ -153,13 +165,8 @@ I file di traduzione non italiani (en, de) contengono testo italiano invece dell
 - [Principi DRY/KISS](/docs/dry-kiss-principles.md)
 
 ### Documentazione Moduli Correlati
-- [User Module Translations](/Modules/User/docs/translation-guidelines.md)
-- [<main module> Module Translations](/Modules/<main module>/docs/multilingual-support.md)
-<<<<<<< HEAD
 - [User Module Translations](/modules/user/docs/translation-guidelines.md)
 - [<main module> Module Translations](/modules/<main module>/docs/multilingual-support.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### File di Implementazione
 - `lang/it/location.php` - Template italiano (riferimento)
@@ -184,12 +191,6 @@ I file di traduzione non italiani (en, de) contengono testo italiano invece dell
 - [ ] Validazione accessibilità
 
 ---
-
 **Stato**: Implementazione in corso
 **Priorità**: Alta
 **Responsabile**: Sistema automatico DRY/KISS
-<<<<<<< HEAD
-**Data**: 2025-08-08
-=======
-**Data**: 2025-08-08
->>>>>>> 6ed19256f (.)

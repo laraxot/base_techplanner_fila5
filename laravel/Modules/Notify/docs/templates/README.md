@@ -1,3 +1,23 @@
+---
+title: "Template Email"
+type: index
+tags: [notify, docs, templates]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione templates readme template email index readme frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../wiki/index.md
+  - ../notifications/README.md
+  - ../integrations/README.md
+  - readme.md
+status: draft
+---
 # Template Email
 
 ## Panoramica
@@ -48,56 +68,7 @@ Grazie,<br>
 // app/Filament/Resources/EmailTemplateResource.php
 use Filament\Forms\Components\Builder;
 
-public static function form(Form $form): Form
 public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-<<<<<<< HEAD
-=======
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-public static function form(Form $form): Form
->>>>>>> 6ed19256f (.)
 {
     return $form->schema([
         Builder::make('content')
@@ -186,15 +157,24 @@ public function toMail($notifiable)
 - Ogni sezione ha il suo README.md specifico
 
 ## Contribuire
-<<<<<<< HEAD
-Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/README_links.md). 
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../../docs/readme_links.md). 
-=======
-Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
+---
 
-## Collegamenti Completi
-Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/README_links.md).
->>>>>>> 6ed19256f (.)
+<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+
+---
+title: "Readme"
+type: concept
+tags: [readme]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme readme"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./module-readme-template.md"
+---
+

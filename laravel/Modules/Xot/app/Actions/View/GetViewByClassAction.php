@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\View;
 
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> 6ed19256f (.)
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -23,63 +20,42 @@ class GetViewByClassAction
      * Converte un nome di classe in un nome di vista.
      * Esempio: "Modules\UI\Filament\Widgets\GroupWidget" => "ui::filament.widgets.group".
      *
-<<<<<<< HEAD
-     * @param string $class  Il nome della classe da convertire
-     * @param string $suffix Suffisso opzionale da aggiungere al nome della vista
-     *
-     * @throws \Exception Se la vista non esiste
-     *
-     * @return view-string
-=======
      * @param  string  $class  Il nome della classe da convertire
      * @param  string  $suffix  Suffisso opzionale da aggiungere al nome della vista
+     * @return view-string
      *
-     * @return string Il nome della vista
-     *
-     * @throws Exception Se la vista non esiste
->>>>>>> 6ed19256f (.)
+     * @throws \Exception Se la vista non esiste
      */
     public function execute(string $class, string $suffix = ''): string
     {
         $module = Str::of($class)->betweenFirst('Modules\\', '\\')->toString();
         $module_low = Str::of($module)->lower()->toString();
-        $after = Str::of($class)
-            ->after('Modules\\'.$module.'\\')
-            ->explode('\\')
-            ->toArray();
+        $after = explode('\\', Str::of($class)->after('Modules\\'.$module.'\\')->toString());
 
         $mapped = Arr::map($after, function (string $value, int $key) use ($after) {
             if ($key > 0 && isset($after[$key - 1])) {
                 $prevValue = $after[$key - 1];
-                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
+                $prevValueStr = SafeStringCastAction::cast($prevValue);
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }
             if ($key > 0 && isset($after[$key - 2])) {
                 $prevValue = $after[$key - 2];
-                $prevValueStr = is_string($prevValue) ? $prevValue : (string) $prevValue;
+                $prevValueStr = SafeStringCastAction::cast($prevValue);
 
                 $value = $this->checkPrev($value, $prevValueStr);
             }
 
-<<<<<<< HEAD
             return Str::of($value)->kebab()->slug()->toString();
         });
 
         $implode = Arr::join(array_values($mapped), '.');
-=======
-            return Str::of($value)->slug()->toString();
-        });
-
-        $implode = implode('.', $mapped);
->>>>>>> 6ed19256f (.)
         $views = [
             'pub_theme::'.$implode.$suffix,
             $module_low.'::'.$implode.$suffix,
         ];
         $view = Arr::first($views, view()->exists(...));
-<<<<<<< HEAD
-        if (null === $view) {
+        if ($view === null) {
             throw new \Exception('View not found: '.implode(', ', $views));
         }
 
@@ -88,16 +64,6 @@ class GetViewByClassAction
             return $view;
         }
         throw new \Exception('View not found: '.$view);
-=======
-        if ($view === null) {
-            throw new Exception('View not found: '.implode(', ', $views));
-        }
-
-        if (view()->exists($view)) {
-            return $view;
-        }
-        throw new Exception('View not found: '.$view);
->>>>>>> 6ed19256f (.)
     }
 
     public function checkPrev(string $value, string $prevValue): string

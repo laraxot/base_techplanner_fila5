@@ -1,3 +1,15 @@
+---
+title: "phpstan notify session"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan notify session"
+issues: []
+discussions: []
+status: draft
+---
+
 # phpstan notify session
 
 ## modifiche eseguite
@@ -11,11 +23,8 @@
 ## attività successive
 - introdurre DTO condivisi per la reportistica generata dal comando di analisi traduzioni
 - completare la migrazione dei mailer a `EmailData` + `SmtpData` con tipizzazione di ritorno/errore documentata
-<<<<<<< HEAD
 
 
 
 
 
-=======
->>>>>>> 6ed19256f (.)

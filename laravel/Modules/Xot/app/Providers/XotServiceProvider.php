@@ -4,36 +4,40 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Providers;
 
+use Composer\Autoload\ClassLoader;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\Exports\Jobs\CreateXlsxFile;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\TimePicker;
 use Filament\Infolists\Components\Entry;
 use Filament\Support\Components\Component;
-<<<<<<< HEAD
 use Filament\Support\Facades\FilamentColor;
-=======
->>>>>>> 6ed19256f (.)
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Filters\BaseFilter;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Events\MigrationsEnded;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Event;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\View;
+use Illuminate\Support\Str;
+use Modules\Xot\Actions\Composer\RegisterRuntimePsr4NamespacesAction;
+use Modules\Xot\Actions\Factory\GetFactoryAction;
+use Modules\Xot\Actions\PaDesignColorsAction;
+use Modules\Xot\Console\Commands\BuildTestSqliteCommand;
+use Modules\Xot\Console\Commands\CheckAccessorTwinsCommand;
 use Modules\Xot\Console\Commands\GenerateFilamentResources;
 use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-use Modules\Xot\Support\PaDesignColors;
+use Modules\Xot\Exports\Jobs\XotCreateXlsxFile;
+use Modules\Xot\Filament\Traits\HasXotTable;
 use Modules\Xot\View\Composers\XotComposer;
-=======
-use Modules\Xot\View\Composers\XotComposer;
-use Override;
->>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
+
+use function Safe\realpath;
 
 /**
  * Class XotServiceProvider.
@@ -46,11 +50,7 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public function boot(): void
     {
         parent::boot();
@@ -60,32 +60,83 @@ class XotServiceProvider extends XotBaseServiceProvider
         // $this->registerExceptionHandler(); // guardare come fa sentry
         $this->registerTimezone();
         $this->registerFilamentMacros();
-<<<<<<< HEAD
         $this->registerPaFilamentColors();
-=======
->>>>>>> 6ed19256f (.)
+        $this->registerBulkDeleteAuthorization();
         $this->registerXotLivewireComponents();
         $this->registerProviders();
     }
 
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public function register(): void
     {
+        $this->registerRuntimePsr4Autoload();
         parent::register();
         $this->registerConfig();
 
         // $this->registerExceptionHandlersRepository();
         // $this->extendExceptionHandler();
         $this->registerCommands();
+        $this->registerExportJobs();
+        $this->registerFactoryNameResolver();
+    }
+
+    /**
+     * `CanExportRecords` risolve il job xlsx con `app(CreateXlsxFile::class, [...])`:
+     * il binding lo sostituisce con `XotCreateXlsxFile`, che per gli exporter
+     * `XotBaseExporter` legge il CSV intermedio con lo stesso escape con cui
+     * `XotExportCsv` lo scrive (story Ptv/5.165); per gli altri delega al vendor.
+     */
+    private function registerExportJobs(): void
+    {
+        $this->app->bind(CreateXlsxFile::class, XotCreateXlsxFile::class);
+    }
+
+    /**
+     * `Model::factory()` risolve la factory con `GetFactoryAction` (`Modules\<M>\Models\X` ->
+     * `Modules\<M>\Database\Factories\XFactory`), ma `Factory::factoryForModel()` (relazioni magiche
+     * `has*`/`for*`) e Larastan usano il resolver di Laravel, che per i modelli dei moduli punta a
+     * `Database\Factories\XFactory`, classe inesistente. Un solo resolver allinea runtime e analisi statica:
+     * `Team::factory()->create()` e' `Team`, non `mixed`. Fuori da `Modules\` vale la convenzione Laravel.
+     */
+    private function registerFactoryNameResolver(): void
+    {
+        Factory::guessFactoryNamesUsing(static function (string $modelName): string {
+            if (str_starts_with($modelName, 'Modules\\')) {
+                $factoryClass = (new GetFactoryAction)->getFactoryClass($modelName);
+            } else {
+                $modelsNamespace = app()->getNamespace().'Models\\';
+                $relativeName = Str::startsWith($modelName, $modelsNamespace)
+                    ? Str::after($modelName, $modelsNamespace)
+                    : Str::after($modelName, app()->getNamespace());
+                $factoryClass = Factory::$namespace.$relativeName.'Factory';
+            }
+
+            // Factory inesistente: `Factory::class` (astratta) al posto di una classe fantasma, cosi' il
+            // tipo resta `class-string<Factory>`; chi la usa fallisce comunque ("Cannot instantiate abstract").
+            return is_a($factoryClass, Factory::class, true) ? $factoryClass : Factory::class;
+        });
     }
 
     public function registerProviders(): void
     {
         // $this->app->register(Filament\ModulesServiceProvider::class);
+    }
+
+    private function registerRuntimePsr4Autoload(): void
+    {
+        $autoloadPath = base_path('vendor/autoload.php');
+
+        if (! is_file($autoloadPath)) {
+            return;
+        }
+
+        $loader = require $autoloadPath;
+
+        if (! $loader instanceof ClassLoader) {
+            return;
+        }
+
+        (new RegisterRuntimePsr4NamespacesAction)->execute($loader);
     }
 
     public function registerTimezone(): void
@@ -112,17 +163,25 @@ class XotServiceProvider extends XotBaseServiceProvider
         TextColumn::configureUsing(fn (TextColumn $column) => $column->timezone($timezone));
     }
 
-<<<<<<< HEAD
+    /**
+     * Eliminazione di gruppo: Filament autorizza una volta sola con `deleteAny()`, che 35 policy del progetto non definiscono (audit DCP-181, A-1).
+     * Un solo punto per tutti i siti, presenti e futuri: ogni record passa da `delete()` se il modello ha una policy.
+     */
+    public function registerBulkDeleteAuthorization(): void
+    {
+        DeleteBulkAction::configureUsing(
+            fn (DeleteBulkAction $action): DeleteBulkAction => $action->authorizeIndividualRecords(HasXotTable::bulkDeleteRecordAuthorization()),
+        );
+    }
+
     /**
      * Palette PA su widget FO (login, wizard) senza panel attivo — allineata ai panel admin.
      */
     public function registerPaFilamentColors(): void
     {
-        FilamentColor::register(PaDesignColors::filamentPalette());
+        FilamentColor::register(app(PaDesignColorsAction::class)->filamentPalette());
     }
 
-=======
->>>>>>> 6ed19256f (.)
     public function registerFilamentMacros(): void
     {
         // Macro temporarily disabled due to compatibility issues with Filament version
@@ -165,11 +224,7 @@ class XotServiceProvider extends XotBaseServiceProvider
      * }
      */
 
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public function registerConfig(): void
     {
         // $config_file = realpath(__DIR__.'/../config/metatag.php');
@@ -180,20 +235,12 @@ class XotServiceProvider extends XotBaseServiceProvider
     {
         $files = File::files($path);
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ('php' !== $file->getExtension()) {
-=======
             if ($file->getExtension() !== 'php') {
->>>>>>> 6ed19256f (.)
                 continue;
             }
 
             $realPath = $file->getRealPath();
-<<<<<<< HEAD
-            if (false === $realPath) {
-=======
             if ($realPath === false) {
->>>>>>> 6ed19256f (.)
                 continue;
             }
 
@@ -209,6 +256,8 @@ class XotServiceProvider extends XotBaseServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 GenerateFilamentResources::class,
+                CheckAccessorTwinsCommand::class,
+                BuildTestSqliteCommand::class,
                 // \Modules\Xot\Console\Commands\OptimizeFilamentMemoryCommand::class,
             ]);
         }
@@ -216,17 +265,14 @@ class XotServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
+        // Placeholder è deprecato in favore di TextEntry (state()): Entry::class copre già
+        // TextEntry e le altre entry infolist, quindi non serve registrarlo separatamente.
+        $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
-<<<<<<< HEAD
                 if (method_exists($translatable, 'translateLabel')) {
                     $translatable->translateLabel();
                 }
-=======
-                /* @phpstan-ignore method.notFound */
-                $translatable->translateLabel();
->>>>>>> 6ed19256f (.)
             });
         }
     }
@@ -307,11 +353,7 @@ class XotServiceProvider extends XotBaseServiceProvider
         //             'modules.xot.filament.widgets.modules-overview-widget',
         //             \Modules\Xot\Filament\Widgets\ModulesOverviewWidget::class
         //         );
-<<<<<<< HEAD
         //         \Log::debug('ModulesOverviewWidget registrato correttamente');
-=======
-        //         \Log::info('ModulesOverviewWidget registrato correttamente');
->>>>>>> 6ed19256f (.)
         //     } catch (\Exception $e) {
         //         \Log::error('Errore nella registrazione ModulesOverviewWidget: ' . $e->getMessage());
         //     }

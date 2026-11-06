@@ -1,3 +1,15 @@
+---
+title: "frontoffice flow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "frontoffice flow"
+issues: []
+discussions: []
+status: draft
+---
+
 # Flusso Frontoffice <main module>
 
 ## Indice
@@ -139,8 +151,4 @@ Questo documento descrive il flusso completo del frontoffice di <main module>, d
 ## Collegamenti
 - [Struttura Route e Viste](./struttura-route-e-viste.md)
 - [Layout e Componenti](./struttura-layout-componenti-blade-<nome progetto>.md)
-- [Best Practices Filament](./best-practices/filament.md)
-<<<<<<< HEAD
 - [Best Practices Filament](./best-practices/filament.md) 
-=======
->>>>>>> 6ed19256f (.)

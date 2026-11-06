@@ -1,3 +1,15 @@
+---
+title: "components guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "components guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # Guida ai Componenti UI
 
 ## Layout
@@ -171,11 +183,8 @@ Il componente loading indicator di Filament mostra lo stato di caricamento:
 
 ## Volt e Folio
 
-<<<<<<< HEAD
 Nel progetto la sintassi di default per i componenti Volt interattivi è **class-based** (`new class extends Livewire\Volt\Component`). Gli esempi qui sotto che usano `use function Livewire\Volt\{state, mount\}` sono **legacy/mantenimento**.
 
-=======
->>>>>>> 6ed19256f (.)
 ### Componenti Volt
 - Utilizzare la direttiva `@volt` per i componenti Volt
 - Struttura standard:
@@ -221,13 +230,8 @@ Nel progetto la sintassi di default per i componenti Volt interattivi è **class
   ```
 
 ### Gestione dello Stato
-<<<<<<< HEAD
 - In class-based, usa proprietà `public` e inizializza in `mount(): void`
 - Gli helper functional `state()` / `computed()` sono legacy/mantenimento (non per nuovi componenti)
-=======
-- Utilizzare `state()` per definire le proprietà
-- Utilizzare `mount()` per l'inizializzazione
->>>>>>> 6ed19256f (.)
 - Gestire gli errori con try/catch
 - Implementare stati di loading
 
@@ -637,11 +641,8 @@ Il componente loading indicator di Filament mostra lo stato di caricamento:
 
 ## Volt e Folio
 
-<<<<<<< HEAD
 Nel progetto la sintassi di default per i componenti Volt interattivi è **class-based** (`new class extends Livewire\Volt\Component`). Gli esempi qui sotto che usano `use function Livewire\Volt\{state, mount\}` sono **legacy/mantenimento**.
 
-=======
->>>>>>> 6ed19256f (.)
 ### Componenti Volt
 - Utilizzare la direttiva `@volt` per i componenti Volt
 - Struttura standard:
@@ -687,13 +688,8 @@ Nel progetto la sintassi di default per i componenti Volt interattivi è **class
   ```
 
 ### Gestione dello Stato
-<<<<<<< HEAD
 - In class-based, usa proprietà `public` e inizializza in `mount(): void`
 - Gli helper functional `state()` / `computed()` sono legacy/mantenimento (non per nuovi componenti)
-=======
-- Utilizzare `state()` per definire le proprietà
-- Utilizzare `mount()` per l'inizializzazione
->>>>>>> 6ed19256f (.)
 - Gestire gli errori con try/catch
 - Implementare stati di loading
 
@@ -929,8 +925,4 @@ $logout = function () {
 - ✅ Utilizzare i componenti appropriati
 - ✅ Seguire la struttura standard
 - ✅ Gestire correttamente le traduzioni
-<<<<<<< HEAD
 - ✅ Testare in entrambi gli stati
-=======
-- ✅ Testare in entrambi gli stati
->>>>>>> 6ed19256f (.)

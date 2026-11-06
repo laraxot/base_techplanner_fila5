@@ -58,44 +58,32 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene i canali di consegna della notifica.
      *
-     * @param  mixed  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
+     * @param  object  $_notifiable  L'entità da notificare (oggetto che riceverà la notifica)
      * @return array<int, string>
      */
-    public function via(mixed $_notifiable): array
+    public function via(object $_notifiable): array
     {
         return $this->channels;
     }
 
     /**
      * Ottiene la rappresentazione mail della notifica.
-<<<<<<< HEAD
      */
-    public function toMail(mixed $notifiable): MailMessage
+    public function toMail(object $notifiable): MailMessage
     {
         $mail = (new MailMessage)
-=======
-     *
-     * @param  mixed  $notifiable
-     */
-    public function toMail($notifiable): MailMessage
-    {
-        $mail = (new MailMessage())
->>>>>>> 6ed19256f (.)
             ->subject($this->title)
             ->greeting('Gentile '.$this->getRecipientName($notifiable))
             ->line($this->message);
 
         // Aggiungi eventuali azioni se specificate nei dati
         if (isset($this->data['action_text'], $this->data['action_url'])) {
-<<<<<<< HEAD
-=======
-            /** @phpstan-ignore-next-line */
->>>>>>> 6ed19256f (.)
-            $mail->action((string) $this->data['action_text'], (string) $this->data['action_url']);
+            $actionText = $this->data['action_text'];
+            $actionUrl = $this->data['action_url'];
+            $mail->action(
+                is_scalar($actionText) ? (string) $actionText : '',
+                is_scalar($actionUrl) ? (string) $actionUrl : ''
+            );
         }
 
         // Aggiungi eventuali linee aggiuntive
@@ -111,17 +99,9 @@ class GenericNotification extends Notification implements ShouldQueue
     /**
      * Ottiene la rappresentazione SMS della notifica.
      *
-<<<<<<< HEAD
-     * @return array<string, mixed>
+     * @return array{content: string, to: string}
      */
-    public function toTwilio(mixed $notifiable): array
-=======
-     * @param  mixed  $notifiable
-     *
-     * @return array<string, mixed>
-     */
-    public function toTwilio($notifiable): array
->>>>>>> 6ed19256f (.)
+    public function toTwilio(object $notifiable): array
     {
         $content = "il progetto: {$this->title}\n{$this->message}";
 
@@ -132,66 +112,46 @@ class GenericNotification extends Notification implements ShouldQueue
 
         // TODO: Implementare TwilioSmsMessage quando disponibile
         $to = '';
-        if (is_object($notifiable) && method_exists($notifiable, 'routeNotificationForTwilio')) {
+        if (method_exists($notifiable, 'routeNotificationForTwilio')) {
             $routeResult = $notifiable->routeNotificationForTwilio($this);
-            $to = (string) ($routeResult ?? '');
+            $to = is_scalar($routeResult) ? (string) $routeResult : '';
         }
 
         return [
             'content' => $content,
-            'to' => $to,
-        ];
+            'to' => $to];
     }
 
     /**
      * Ottiene la rappresentazione database della notifica.
      *
-<<<<<<< HEAD
-     * @return array<string, mixed>
+     * @return array{title: string, message: string, data: array<string, mixed>, created_at: string}
      */
-    public function toDatabase(mixed $notifiable): array
-=======
-     * @param  mixed  $notifiable
-     *
-     * @return array<string, mixed>
-     */
-    public function toDatabase($notifiable): array
->>>>>>> 6ed19256f (.)
+    public function toDatabase(object $notifiable): array
     {
         return [
             'title' => $this->title,
             'message' => $this->message,
             'data' => $this->data,
-            'created_at' => now()->toIso8601String(),
-        ];
+            'created_at' => now()->toIso8601String()];
     }
 
     /**
      * Ottiene il nome del destinatario per il saluto personalizzato.
-<<<<<<< HEAD
      */
-    protected function getRecipientName(mixed $notifiable): string
-=======
-     *
-     * @param  mixed  $notifiable
-     */
-    protected function getRecipientName($notifiable): string
->>>>>>> 6ed19256f (.)
+    protected function getRecipientName(object $notifiable): string
     {
         // Tenta di ottenere il nome dal destinatario in vari modi
-        if (is_object($notifiable) && method_exists($notifiable, 'getFullName')) {
+        if (method_exists($notifiable, 'getFullName')) {
             $fullName = $notifiable->getFullName();
             if (is_string($fullName)) {
                 return $fullName;
             }
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
             return 'Utente';
         }
 
-        if (is_object($notifiable) && $notifiable instanceof Model) {
+        if ($notifiable instanceof Model) {
             if (app(SafeEloquentCastAction::class)->hasNonEmptyAttribute($notifiable, 'full_name')) {
                 return app(SafeEloquentCastAction::class)->getStringAttribute($notifiable, 'full_name', 'Utente');
             }

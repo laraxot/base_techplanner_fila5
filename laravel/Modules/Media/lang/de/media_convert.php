@@ -4,15 +4,14 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'label' => 'media convert',
-        'group' => 'media convert',
-        'icon' => 'media convert',
+        'label' => 'Medienkonvertierung',
+        'group' => 'Medienkonvertierung',
+        'icon' => 'Medienkonvertierung',
         'sort' => '20',
     ],
     'fields' => [
         'applyFilters' => [
             'label' => 'applyFilters',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -28,11 +27,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

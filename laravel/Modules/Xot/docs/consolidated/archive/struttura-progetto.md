@@ -1,23 +1,23 @@
+---
+title: "Struttura del Progetto il progetto"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "struttura del progetto il progetto xot"
+---
 # Struttura del Progetto il progetto
 
 ## Panoramica
 
 Il progetto il progetto segue una struttura ben definita che separa chiaramente i componenti funzionali (moduli) dai componenti di presentazione (temi). Questa documentazione descrive la struttura corretta del progetto e le convenzioni da seguire.
 
-<<<<<<< HEAD
 > ⚠️ **IMPORTANTE**: Tutti i percorsi all'interno dell'applicazione Laravel DEVONO includere il segmento `laravel/`. Ad esempio, il percorso corretto per un file nel tema One è `Themes/One/...` e NON `Themes/One/...`
-=======
-> ⚠️ **IMPORTANTE**: Tutti i percorsi all'interno dell'applicazione Laravel DEVONO includere il segmento `laravel/`. Ad esempio, il percorso corretto per un file nel tema One è `/var/www/html/base_<nome progetto>/laravel/Themes/One/...` e NON `/var/www/html/base_<nome progetto>/Themes/One/...`
->>>>>>> 6ed19256f (.)
 
 ## Struttura Directory Principale
 
 ```
-<<<<<<< HEAD
 
-=======
-/var/www/html/<nome progetto>/
->>>>>>> 6ed19256f (.)
 ├── laravel/                 # Installazione Laravel (posizione corretta)
 │   ├── app/                 # Codice applicativo base
 │   ├── config/              # Configurazioni
@@ -33,11 +33,7 @@ Il progetto il progetto segue una struttura ben definita che separa chiaramente 
 
 ## Struttura Moduli
 
-<<<<<<< HEAD
 I moduli sono componenti funzionali che implementano la logica di business e vanno posizionati in `Modules/`:
-=======
-I moduli sono componenti funzionali che implementano la logica di business e vanno posizionati in `/var/www/html/<nome progetto>/laravel/Modules/`:
->>>>>>> 6ed19256f (.)
 
 ```
 laravel/Modules/
@@ -51,11 +47,7 @@ laravel/Modules/
 
 ## Struttura Temi
 
-<<<<<<< HEAD
 I temi sono componenti di presentazione che implementano l'interfaccia utente e vanno posizionati in `Themes/`:
-=======
-I temi sono componenti di presentazione che implementano l'interfaccia utente e vanno posizionati in `/var/www/html/<nome progetto>/laravel/Themes/`:
->>>>>>> 6ed19256f (.)
 
 ```
 laravel/Themes/

@@ -1,3 +1,15 @@
+---
+title: "troubleshooting"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "troubleshooting"
+issues: []
+discussions: []
+status: draft
+---
+
 # Troubleshooting
 
 ## Introduzione
@@ -139,10 +151,5 @@ export default defineConfig({
 - [ ] Verificare la sicurezza
 
 ## Collegamenti tra versioni di troubleshooting.md
-* [troubleshooting.md](laravel/Modules/Xot/docs/troubleshooting.md)
-* [troubleshooting.md](laravel/Modules/Cms/docs/frontoffice/troubleshooting.md)
-<<<<<<< HEAD
-* [troubleshooting.md](laravel/modules/xot/docs/troubleshooting.md)
+* [troubleshooting.md](../../../Xot/docs/troubleshooting.md)
 * [troubleshooting.md](laravel/modules/cms/docs/frontoffice/troubleshooting.md)
-=======
->>>>>>> 6ed19256f (.)

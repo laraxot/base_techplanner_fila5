@@ -1,3 +1,15 @@
+---
+title: "translation standards progress"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation standards progress"
+issues: []
+discussions: []
+status: draft
+---
+
 # Progresso Standardizzazione Traduzioni
 
 ## Stato Attuale - 12/05/2025
@@ -14,7 +26,6 @@
    - Le strutture gerarchiche sono spesso incomplete (mancano elementi come icon, sort, plural in navigation)
 
 3. **File Problematici Identificati**
-<<<<<<< HEAD
    - `Modules/Notify/lang/it/send_aws_email.php`
    - `Modules/Notify/lang/it/setting.php`
    - `Modules/Notify/lang/it/edit_mail_template.php`
@@ -25,24 +36,11 @@
    - `Modules/Notify/lang/it/edit_mail_template.php`
    - `Modules/Notify/lang/it/send_netfun_sms.php`
    - `Modules/Notify/lang/it/notification_template.php`
-=======
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_aws_email.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/setting.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/edit_mail_template.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_netfun_sms.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/notification_template.php`
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_aws_email.php`
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/setting.php`
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/edit_mail_template.php`
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_netfun_sms.php`
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/notification_template.php`
->>>>>>> 6ed19256f (.)
    - E altri 15 file (elenco completo in appendice)
 
 ### Correzioni Implementate
 
 1. **Documentazione Standard**
-<<<<<<< HEAD
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
 
@@ -61,32 +59,11 @@
 2. **File Corretti**
    - Creato `Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
    - Aggiornato `Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
-=======
-   - Creato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
-   - Creato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
-
-2. **File Corretti**
-   - Creato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
-   - Aggiornato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
-   - Creato `/var/www/html/saluteora/laravel/Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
-   - Creato `/var/www/html/saluteora/laravel/Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
-
-2. **File Corretti**
-   - Creato `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
-   - Aggiornato `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
-   - Creato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
-   - Creato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
-
-2. **File Corretti**
-   - Creato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
-   - Aggiornato `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
->>>>>>> 6ed19256f (.)
    - Rimosso il file con naming errato `send_whats_app.php`
 
 ### Prossime Correzioni da Implementare
 
 1. **File da Correggere Prioritariamente**
-<<<<<<< HEAD
    - `Modules/Notify/lang/it/send_email.php`
    - `Modules/Notify/lang/it/send_sms.php`
    - `Modules/Notify/lang/it/send_telegram.php`
@@ -105,26 +82,6 @@
 
 2. **Verifiche da Eseguire**
    - Analisi della cartella `Modules/Notify/lang/en/` per identificare problemi simili
-=======
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_email.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_sms.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_telegram.php`
-
-2. **Verifiche da Eseguire**
-   - Analisi della cartella `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/en/` per identificare problemi simili
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_email.php`
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_sms.php`
-   - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_telegram.php`
-
-2. **Verifiche da Eseguire**
-   - Analisi della cartella `/var/www/html/saluteora/laravel/Modules/Notify/lang/en/` per identificare problemi simili
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_email.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_sms.php`
-   - `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_telegram.php`
-
-2. **Verifiche da Eseguire**
-   - Analisi della cartella `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/en/` per identificare problemi simili
->>>>>>> 6ed19256f (.)
    - Controllo dei riferimenti nel codice che potrebbero puntare ai vecchi file
 
 ## Documentazione di Riferimento
@@ -137,11 +94,17 @@
    - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
    - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
    - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+   - [Regole Generali per le Traduzioni](../../Lang/docs/translation_keys_rules.md)
+   - [Best Practices per le Traduzioni](../../Lang/docs/translation_keys_best_practices.md)
+
+2. **Guide Specifiche per Notify**
+   - [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)
+   - [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
+   - [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
 
 ## Appendice: Elenco Completo dei File Non Conformi
 
 ```
-<<<<<<< HEAD
 Modules/Notify/lang/it/send_aws_email.php
 Modules/Notify/lang/it/setting.php
 Modules/Notify/lang/it/edit_mail_template.php
@@ -182,48 +145,6 @@ Modules/Notify/lang/it/send_firebase_push_notification.php
 Modules/Notify/lang/it/send_email.php
 Modules/Notify/lang/it/send_spatie_email.php
 Modules/Notify/lang/it/create_mail_template.php
-=======
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_aws_email.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/setting.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/edit_mail_template.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_netfun_sms.php (corretto)
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/notification_template.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/notify.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/contacts.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/test_smtp.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/log.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_sms.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/contact.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/slack_notification.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/template.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_push_notification.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/dashboard.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_whats_app.php (rimosso e sostituito)
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_firebase_push_notification.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_email.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_spatie_email.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/create_mail_template.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_aws_email.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/setting.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/edit_mail_template.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_netfun_sms.php (corretto)
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/notification_template.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/notify.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/contacts.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/test_smtp.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/log.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_sms.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/contact.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/slack_notification.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/template.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_push_notification.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/dashboard.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_whats_app.php (rimosso e sostituito)
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_firebase_push_notification.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_email.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_spatie_email.php
-/var/www/html/saluteora/laravel/Modules/Notify/lang/it/create_mail_template.php
->>>>>>> 6ed19256f (.)
 ```
 # Progresso Standardizzazione Traduzioni
 
@@ -241,59 +162,33 @@ Modules/Notify/lang/it/create_mail_template.php
    - Le strutture gerarchiche sono spesso incomplete (mancano elementi come icon, sort, plural in navigation)
 
 3. **File Problematici Identificati**
-<<<<<<< HEAD
    - `Modules/Notify/lang/it/send_aws_email.php`
    - `Modules/Notify/lang/it/setting.php`
    - `Modules/Notify/lang/it/edit_mail_template.php`
    - `Modules/Notify/lang/it/send_netfun_sms.php`
    - `Modules/Notify/lang/it/notification_template.php`
-=======
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_aws_email.php`
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/setting.php`
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/edit_mail_template.php`
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_netfun_sms.php`
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/notification_template.php`
->>>>>>> 6ed19256f (.)
    - E altri 15 file (elenco completo in appendice)
 
 ### Correzioni Implementate
 
 1. **Documentazione Standard**
-<<<<<<< HEAD
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
 
 2. **File Corretti**
    - Creato `Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
    - Aggiornato `Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
-=======
-   - Creato `/var/www/html/<directory progetto>/laravel/Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
-   - Creato `/var/www/html/<directory progetto>/laravel/Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
-
-2. **File Corretti**
-   - Creato `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
-   - Aggiornato `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
->>>>>>> 6ed19256f (.)
    - Rimosso il file con naming errato `send_whats_app.php`
 
 ### Prossime Correzioni da Implementare
 
 1. **File da Correggere Prioritariamente**
-<<<<<<< HEAD
    - `Modules/Notify/lang/it/send_email.php`
    - `Modules/Notify/lang/it/send_sms.php`
    - `Modules/Notify/lang/it/send_telegram.php`
 
 2. **Verifiche da Eseguire**
    - Analisi della cartella `Modules/Notify/lang/en/` per identificare problemi simili
-=======
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_email.php`
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_sms.php`
-   - `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_telegram.php`
-
-2. **Verifiche da Eseguire**
-   - Analisi della cartella `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/en/` per identificare problemi simili
->>>>>>> 6ed19256f (.)
    - Controllo dei riferimenti nel codice che potrebbero puntare ai vecchi file
 
 ## Documentazione di Riferimento
@@ -306,11 +201,17 @@ Modules/Notify/lang/it/create_mail_template.php
    - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
    - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
    - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+   - [Regole Generali per le Traduzioni](../../Lang/docs/translation_keys_rules.md)
+   - [Best Practices per le Traduzioni](../../Lang/docs/translation_keys_best_practices.md)
+
+2. **Guide Specifiche per Notify**
+   - [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)
+   - [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
+   - [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
 
 ## Appendice: Elenco Completo dei File Non Conformi
 
 ```
-<<<<<<< HEAD
 Modules/Notify/lang/it/send_aws_email.php
 Modules/Notify/lang/it/setting.php
 Modules/Notify/lang/it/edit_mail_template.php
@@ -332,26 +233,3 @@ Modules/Notify/lang/it/send_email.php
 Modules/Notify/lang/it/send_spatie_email.php
 Modules/Notify/lang/it/create_mail_template.php
 ```
-=======
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_aws_email.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/setting.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/edit_mail_template.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_netfun_sms.php (corretto)
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/notification_template.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/notify.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/contacts.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/test_smtp.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/log.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_sms.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/contact.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/slack_notification.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/template.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_push_notification.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/dashboard.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_whats_app.php (rimosso e sostituito)
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_firebase_push_notification.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_email.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/send_spatie_email.php
-/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it/create_mail_template.php
-```
->>>>>>> 6ed19256f (.)

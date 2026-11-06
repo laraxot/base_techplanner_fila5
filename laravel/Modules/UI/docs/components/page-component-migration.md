@@ -1,3 +1,15 @@
+---
+title: "page component migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "page component migration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Migrazione Componenti di Pagina - Modulo UI
 
 ## Panoramica
@@ -223,8 +235,4 @@ Log::error('Error loading page content', [
 
 - [Documentazione Componenti Blade](https://laravel.com/docs/blade#components)
 - [Sistema di Blocchi UI](../blocks/blocks-system.md)
-- [Migrazione CMS](../../Cms/docs/migrations/02_theme_content_to_page_component.md)
-<<<<<<< HEAD
 - [Migrazione CMS](../../cms/docs/migrations/02_theme_content_to_page_component.md)
-=======
->>>>>>> 6ed19256f (.)

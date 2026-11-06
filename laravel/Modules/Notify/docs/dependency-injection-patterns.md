@@ -1,12 +1,19 @@
+---
+title: "dependency injection patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dependency injection patterns"
+issues: []
+discussions: []
+status: draft
+---
+
 # Dependency Injection Pattern in QueueableActions
 
-<<<<<<< HEAD
 **Date**: 18 Dicembre 2025  
 **Status**: ✅ Pattern Documented  
-=======
-**Date**: 18 Dicembre 2025
-**Status**: ✅ Pattern Documented
->>>>>>> 6ed19256f (.)
 **Module**: Notify
 
 ## Overview
@@ -95,9 +102,4 @@ This approach aligns with:
 - **Project Preferences**: Following established patterns in the codebase
 
 ---
-
-<<<<<<< HEAD
 *Documento conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
-*Documento conforme agli standard Laraxot - DRY + KISS + SOLID*
->>>>>>> 6ed19256f (.)

@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: conversione-media
-canonical: ../../../Themes/docs/shared-components/conversione-media-1.md
+issues: []
+discussions: []
+title: "Conversione Media"
+module: "Media"
+type: concept
+tags: [conversione, media]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conversione media"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/conversione-media-1.md
-=======
 # Conversione Media
 
 ## Risorse Utili
@@ -49,4 +54,3 @@ Per il rilevamento del volume audio:
 ```php
 ->addFilter(['-filter:a', 'volumedetect', '-f', 'null'])
 ```
->>>>>>> 6ed19256f (.)

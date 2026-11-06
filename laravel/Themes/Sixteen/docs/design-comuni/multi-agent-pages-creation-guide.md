@@ -1,3 +1,15 @@
+---
+title: "multi agent pages creation guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "multi agent pages creation guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🚀 Multi-Agent Pages Creation Guide
 
 **Data**: 2026-03-30  
@@ -61,7 +73,7 @@ Creare le 37 pagine Design Comuni mancanti utilizzando:
 - [ ] segnalazione-03-riepilogo
 - [ ] segnalazione-04-conferma
 - [ ] segnalazione-area-personale
-- [ ] segnalazioni-elenco
+- [ ] ticket-list
 
 ## 🤖 Multi-Agent Workflow
 
@@ -379,7 +391,6 @@ For each page:
 - [THEME_ARCHITECTURE.md](THEME_ARCHITECTURE.md)
 
 ---
-
 **Stato**: ✅ **GUIDA MULTI-AGENT COMPLETATA**  
 **Pagine**: **37 da creare**  
 **Agenti**: **5 (OpenViking, BMAD, GSD, NotebookLM, Ralph Loop)**  

@@ -4,60 +4,36 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
-<<<<<<< HEAD
 use Filament\Models\Contracts\HasName;
 use Filament\Models\Contracts\HasTenants;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
-=======
-use BackedEnum;
-use Illuminate\Contracts\Auth\Authenticatable;
->>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
-<<<<<<< HEAD
+use Illuminate\Database\Eloquent\Relations\Pivot;
+use Illuminate\Support\Carbon;
 use Laravel\Passport\Contracts\OAuthenticatable;
-=======
->>>>>>> 6ed19256f (.)
 use Laravel\Passport\PersonalAccessTokenResult;
+use Laravel\Passport\Contracts\ScopeAuthorizable;
 use Laravel\Passport\Token;
-use Laravel\Passport\TransientToken;
 use Modules\User\Contracts\TeamContract;
 use Modules\User\Models\Role as UserRole;
 use Modules\User\Models\Team;
 use Modules\User\Models\Tenant;
 use Nwidart\Modules\Laravel\Module;
-<<<<<<< HEAD
 use Spatie\MediaLibrary\HasMedia;
-=======
->>>>>>> 6ed19256f (.)
 use Spatie\Permission\Contracts\Permission;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
+use Spatie\Permission\Traits\HasRoles;
 
 /**
  * Modules\Xot\Contracts\UserContract.
  *
-<<<<<<< HEAD
- * @property string|null               $id
- * @property string|null               $email
- * @property \Illuminate\Support\Carbon|null $email_verified_at
- * @property string|null               $first_name
- * @property string|null               $last_name
- * @property string|null               $full_name
- * @property string|null               $name
- * @property string|null               $phone
- * @property string|null               $type
- * @property string|null               $current_team_id
- * @property TeamContract              $currentTeam
- * @property ProfileContract|null      $profile
- * @property Collection<int, UserRole> $roles
- * @property Collection<int, Team>     $teams
- * @property Collection<int, Tenant>   $tenants
-=======
  * @property string|null $id
  * @property string|null $email
+ * @property Carbon|null $email_verified_at
  * @property string|null $first_name
  * @property string|null $last_name
  * @property string|null $full_name
@@ -68,19 +44,15 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  * @property TeamContract $currentTeam
  * @property ProfileContract|null $profile
  * @property Collection<int, UserRole> $roles
+ * @property Collection<int, Team> $membershipTeams
  * @property Collection<int, Team> $teams
  * @property Collection<int, Tenant> $tenants
->>>>>>> 6ed19256f (.)
  *
  * @phpstan-require-extends Model
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
-<<<<<<< HEAD
 interface UserContract extends Authenticatable, HasMedia, HasName, HasTenants, MustVerifyEmail, OAuthenticatable
-=======
-interface UserContract extends Authenticatable
->>>>>>> 6ed19256f (.)
 {
     /*
      * public function isSuperAdmin();
@@ -88,32 +60,34 @@ interface UserContract extends Authenticatable
      * public function areas();
      * public function avatar();
      */
+    /**
+     * @return HasOne<Model&ProfileContract, Model&static>
+     */
     public function profile(): HasOne;
 
     /**
      * Get the access token currently associated with the user.
      *
-     * @return Token|TransientToken|null
+     * @return ScopeAuthorizable|null
      */
-    public function token();
+    public function token(): ?ScopeAuthorizable;
 
     /**
      * Create a new personal access token for the user.
      *
-     * @param array<int, string> $scopes
+     * @param  array<int, string>  $scopes
+     * @return PersonalAccessTokenResult<Token>
      */
     public function createToken(string $name, array $scopes = []): PersonalAccessTokenResult;
 
     /**
      * Passport API tokens support.
      */
-<<<<<<< HEAD
-=======
-    // @phpstan-ignore-next-line interface should extend this contract
-
->>>>>>> 6ed19256f (.)
     /**
      * Determine if the model has (one of) the given role(s).
+     */
+    /**
+     * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>  $roles
      */
     public function hasRole(
         string|int|array|UserRole|Collection $roles,
@@ -123,16 +97,18 @@ interface UserContract extends Authenticatable
     /**
      * Assign the given role to the model.
      *
+     * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
      * @return $this
      */
-    public function assignRole(array|string|int|UserRole|Collection $roles = []);
+    public function assignRole(array|string|int|UserRole|Collection $roles = []): static;
 
     /**
      * Remove all current roles and set the given ones.
      *
+     * @param  array<int|string>|string|int|UserRole|Collection<int, UserRole>  $roles
      * @return $this
      */
-    public function syncRoles(array|string|int|UserRole|Collection $roles = []);
+    public function syncRoles(array|string|int|UserRole|Collection $roles = []): static;
 
     /**
      * Determine if the model has (one of) the given permission(s).
@@ -142,6 +118,12 @@ interface UserContract extends Authenticatable
     public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool;
 
     /**
+     * Come hasPermissionTo(), ma se il permesso non esiste ancora in DB lo
+     * crea al volo invece di lasciare esplodere PermissionDoesNotExist.
+     */
+    public function hasPermissionToOrCreate(string $permission, ?string $guardName = null): bool;
+
+    /**
      * Check if the user can access Socialite.
      */
     public function canAccessSocialite(): bool;
@@ -149,30 +131,37 @@ interface UserContract extends Authenticatable
     /**
      * Get the user's roles.
      */
+    /** @return BelongsToMany<Model, Model> */
     public function roles(): BelongsToMany;
 
     /**
-     * Get the user's teams.
+     * Spatie Permission — team pivot for role scoping ({@see HasRoles::teams()}).
+     *
+     * @return BelongsToMany<Model, Model&static>
      */
     public function teams(): BelongsToMany;
 
     /**
+     * Laraxot team membership (Jetstream-style pivot).
+     *
+     * @return BelongsToMany<Model&TeamContract, Model&static, Pivot, 'pivot'>
+     */
+    public function membershipTeams(): BelongsToMany;
+
+    /**
      * Get the user's tenants.
+     *
+     * @return BelongsToMany<Model, Model&static>
      */
     public function tenants(): BelongsToMany;
 
     /**
      * Revoke the given role from the model.
      *
-<<<<<<< HEAD
-     * @param string|int|array|UserRole|Collection|\BackedEnum ...$role
-=======
-     * @param  string|int|array|UserRole|Collection|BackedEnum  ...$role
->>>>>>> 6ed19256f (.)
-     *
+     * @param  string|int|array<int|string>|UserRole|Collection<int, UserRole>|\BackedEnum  ...$role
      * @return $this
      */
-    public function removeRole(...$role);
+    public function removeRole(...$role): static;
 
     /**
      * Determine if the user owns the given team.
@@ -195,11 +184,7 @@ interface UserContract extends Authenticatable
     public function switchTeam(TeamContract $team): bool;
 
     /**
-<<<<<<< HEAD
      * @return array<string, Module>
-=======
-     * @return array<string, \Nwidart\Modules\Laravel\Module>
->>>>>>> 6ed19256f (.)
      */
     public function getModules(): array;
 

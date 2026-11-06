@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /**
  * Sixteen Theme - App JavaScript
  *
@@ -17,29 +16,30 @@ import '@modules/Geo/resources/js/components/coordinate-picker-lit.js';
 
 import '@splidejs/splide/dist/css/splide.min.css';
 import '@theme-leaflet-css';
+import 'flowbite';
 import { initDarkModeToggle, toggleDarkMode } from './theme/dark-mode.js';
 import focus from '@alpinejs/focus';
 import { dropdownToggle } from './components/dropdown';
 import { modal } from './components/modal';
 import { mobileMenu } from './components/mobile-menu';
 import { governanceCarousel } from './components/carousel';
-import './components/bootstrap-italia.js';
-import { initHeaderMobileNav } from './theme/header-mobile-nav.js';
-// DISABLED: domande-frequenti-parity.js was overriding blade template HTML with JS-generated structure
-// Now using blade template directly with Alpine.js for accordion
-// import { domandeFrequentiParity } from './domande-frequenti-parity';
+import { initHeaderMobileNav, isDesignComuniPage } from './theme/header-mobile-nav.js';
+import { dcCarousel, dcFormValidate, dcNavscroll, dcRating, mountDesignComuniComponents } from './theme/design-comuni-home.js';
+import motionReveal from './components/motion-reveal.js';
+// window.MediaCameraImage: riduzione foto da fotocamera prima di $wire.upload (heic2any resta un chunk a parte)
+import '@modules/Media/resources/js/camera-image.js';
 
 /**
  * Register theme Alpine components onto Livewire/Filament’s Alpine bundle.
  *
  * IMPORTANT: questo file e' un ES module (defer). Il markup iniziale non deve
  * dipendere da Alpine.data registrati qui; l'header usa il controller
- * data-sixteen-mobile-nav importato in questo bundle Vite.
+ * il controller della navigazione mobile importato in questo bundle Vite.
  *
  * @param {object} AlpineInstance
  */
 function registerAlpineComponents(AlpineInstance) {
-    if (!AlpineInstance || document.documentElement.hasAttribute('data-sixteen-alpine-components')) {
+    if (!AlpineInstance || document.documentElement.hasAttribute('data-alpine-components')) {
         return;
     }
 
@@ -49,6 +49,11 @@ function registerAlpineComponents(AlpineInstance) {
     AlpineInstance.data('modal', modal);
     AlpineInstance.data('mobileMenu', mobileMenu);
     AlpineInstance.data('governanceCarousel', governanceCarousel);
+    AlpineInstance.data('dcCarousel', dcCarousel);
+    AlpineInstance.data('dcRating', dcRating);
+    AlpineInstance.data('dcNavscroll', dcNavscroll);
+    AlpineInstance.data('dcFormValidate', dcFormValidate);
+    mountDesignComuniComponents();
 
     AlpineInstance.data('dropdown', () => ({
         open: false,
@@ -61,6 +66,41 @@ function registerAlpineComponents(AlpineInstance) {
     AlpineInstance.data('accordionItem', () => ({ open: false }));
     AlpineInstance.data('ratingInline', () => ({ rating: 0, hover: 0 }));
 
+    AlpineInstance.data('howItWorks', () => ({
+        ...motionReveal(),
+        init() {
+            this.setupReveal('[data-section="how-it-works"] [data-reveal]');
+            this.setupCardHover('.fc-how-card');
+        }
+    }));
+
+    AlpineInstance.data('quickActions', () => ({
+        ...motionReveal(),
+        init() {
+            this.setupReveal('[data-section="quick-actions"] [data-reveal]');
+        }
+    }));
+
+    AlpineInstance.data('ticketLayout', () => ({
+        activeTab: 'map',
+        showModal: false,
+        showFilterModal: false,
+        init() {
+            this.$watch('activeTab', (tab) => {
+                if (tab !== 'map') { return; }
+                setTimeout(() => {
+                    const mapEl = document.getElementById('block-map');
+                    if (mapEl && typeof mapEl.invalidateSize === 'function') {
+                        mapEl.invalidateSize();
+                    }
+                }, 50);
+            });
+            this.$watch('$store.ticketTabs.active', (tab) => {
+                this.activeTab = tab;
+            });
+        },
+    }));
+
     // Dark mode — state + toggle (persistito in localStorage)
     AlpineInstance.data('darkMode', () => ({
         isDark: document.documentElement.classList.contains('dark'),
@@ -70,7 +110,7 @@ function registerAlpineComponents(AlpineInstance) {
         },
     }));
 
-    document.documentElement.setAttribute('data-sixteen-alpine-components', 'true');
+    document.documentElement.setAttribute('data-alpine-components', 'true');
 }
 
 if (window.Alpine) {
@@ -81,41 +121,96 @@ if (window.Alpine) {
      }, { once: true });
  }
 
- // Bootstrap tabs shim (no Bootstrap JS): invalidate map when map tab is shown
- document.addEventListener('shown.bs.tab', function (e) {
-     const target = e.target;
-     let targetId = target && typeof target.getAttribute === 'function'
-         ? (target.getAttribute('href') || target.getAttribute('data-bs-target'))
-         : null;
-     if (!targetId && e.detail?.relatedTarget?.id) {
-         targetId = '#' + e.detail.relatedTarget.id;
-     }
-     if (targetId && targetId.includes('disservizio1')) {
-         setTimeout(() => {
-             const mapEl = document.getElementById('block-map');
-             if (mapEl && typeof mapEl.invalidateSize === 'function') {
-                 mapEl.invalidateSize();
-             }
-         }, 100);
-     }
- });
+// Bootstrap tabs shim (no Bootstrap JS): invalidate map when map tab is shown
+document.addEventListener('shown.bs.tab', function (e) {
+    const target = e.target;
+    let targetId = target && typeof target.getAttribute === 'function'
+        ? (target.getAttribute('href') || target.getAttribute('data-bs-target'))
+        : null;
+    if (!targetId && e.detail?.relatedTarget?.id) {
+        targetId = '#' + e.detail.relatedTarget.id;
+    }
+    if (targetId && targetId.includes('disservizio1')) {
+        setTimeout(() => {
+            const mapEl = document.getElementById('block-map');
+            if (mapEl && typeof mapEl.invalidateSize === 'function') {
+                mapEl.invalidateSize();
+            }
+        }, 100);
+    }
+});
+
+document.addEventListener('alpine:init', () => {
+    const A = window.Alpine;
+    if (!A) { return; }
+    if (!A.store('ticketTabs')) {
+        A.store('ticketTabs', {
+            active: 'map',
+            setTab(tab) {
+                this.active = tab;
+                if (tab === 'map') {
+                    setTimeout(() => {
+                        const mapEl = document.getElementById('block-map');
+                        if (mapEl && typeof mapEl.invalidateSize === 'function') {
+                            mapEl.invalidateSize();
+                        }
+                    }, 50);
+                }
+            },
+        });
+    }
+});
 
 initHeaderMobileNav();
 
 // Scope modulo — disponibili a initHeaderDropdowns e ai listener globali (ESC, click esterno)
 function closeDropdownMenu(menu) {
     if (!menu) { return; }
+    // WCAG 2.4.3: se il focus sta dentro il menu che si chiude (Esc), riportarlo al pulsante; nascondere la voce col focus lo manderebbe sul body
+    const opener = menu.closest('.dropdown')?.querySelector('[data-bs-toggle="dropdown"]');
+    if (opener && menu.contains(document.activeElement)) { opener.focus(); }
     menu.classList.remove('show');
-    menu.style.display = 'none';
+    if (isDesignComuniPage()) {
+        menu.removeAttribute('data-popper-placement');
+        menu.removeAttribute('style');
+        menu.closest('.dropdown')?.querySelector('[data-bs-toggle="dropdown"]')?.classList.remove('show');
+    } else {
+        menu.style.display = 'none';
+    }
     const openDropdown = menu.closest('.dropdown');
     openDropdown?.classList.remove('is-open');
     openDropdown?.querySelector('[data-bs-toggle="dropdown"]')?.setAttribute('aria-expanded', 'false');
 }
 
+/**
+ * Posizione del menu come fa Popper nel riferimento (pagine /tests): `data-popper-placement` e `transform` sotto il pulsante,
+ * relativi al contenitore `.dropdown` (position: relative).
+ */
+const DROPDOWN_OFFSET_Y = 2; // scarto misurato nel riferimento tra il bordo del pulsante e il `translate` del menu
+
+const DROPDOWN_VIEWPORT_MARGIN = 8; // spazio minimo tra il menu e il bordo del viewport
+
+function placeDropdownMenu(menu, toggle) {
+    const anchor = toggle.getBoundingClientRect();
+    const parent = (menu.offsetParent || toggle.parentElement).getBoundingClientRect();
+    menu.setAttribute('data-popper-placement', 'bottom-start');
+    // La larghezza si misura dopo `position: absolute` (prima il menu e' un blocco a tutta larghezza).
+    menu.setAttribute('style', 'position: absolute; inset: 0px auto auto 0px; margin: 0px;');
+    // A 375 e 768 px il menu partiva dal pulsante e usciva a destra dal viewport, tagliato (DCP-55): lo si ferma al bordo.
+    const maxLeft = document.documentElement.clientWidth - menu.offsetWidth - DROPDOWN_VIEWPORT_MARGIN;
+    const left = Math.max(DROPDOWN_VIEWPORT_MARGIN, Math.min(anchor.left, maxLeft));
+    menu.setAttribute('style', `position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(${Math.round(left - parent.left)}px, ${Math.round(anchor.bottom - parent.top) + DROPDOWN_OFFSET_Y}px);`);
+    toggle.classList.add('show');
+}
+
 function openDropdownMenu(menu, dropdown, toggle) {
     if (!menu || !toggle) { return; }
     menu.classList.add('show');
-    menu.style.display = 'block';
+    if (isDesignComuniPage()) {
+        placeDropdownMenu(menu, toggle);
+    } else {
+        menu.style.display = 'block';
+    }
     dropdown?.classList.add('is-open');
     toggle.setAttribute('aria-expanded', 'true');
 }
@@ -170,13 +265,135 @@ document.addEventListener('DOMContentLoaded', initHeaderMobileNav);
 document.addEventListener('livewire:navigated', initHeaderMobileNav);
 document.addEventListener('livewire:update', initHeaderMobileNav);
 
+// STORY-365: modal filtri mobile — Bootstrap Italia ha display:none !important su .modal,
+// che batte il style.display JS senza !important. Bypass completo: teleport a body +
+// setProperty con 'important' + backdrop manuale.
+function initFilterModal() {
+    var modal = document.getElementById('modal-categories');
+    if (!modal) { return; }
+
+    document.body.appendChild(modal);
+
+    var filterTrigger = null;
+
+    function focusableIn(root) {
+        return Array.prototype.filter.call(
+            root.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'),
+            function (el) {
+                return !el.disabled && el.getAttribute('aria-hidden') !== 'true' && el.offsetParent !== null;
+            },
+        );
+    }
+
+    function onFilterModalKeydown(event) {
+        if (event.key === 'Escape') {
+            event.preventDefault();
+            closeFilterModal();
+            return;
+        }
+
+        if (event.key !== 'Tab') {
+            return;
+        }
+
+        var items = focusableIn(modal);
+        if (items.length === 0) {
+            return;
+        }
+
+        var first = items[0];
+        var last = items[items.length - 1];
+        if (event.shiftKey && document.activeElement === first) {
+            event.preventDefault();
+            last.focus();
+        } else if (!event.shiftKey && document.activeElement === last) {
+            event.preventDefault();
+            first.focus();
+        }
+    }
+
+    function openFilterModal() {
+        var mapEl = document.getElementById('ticket-map');
+        if (mapEl && mapEl._map) { mapEl._map.closePopup(); }
+        modal.style.setProperty('display', 'block', 'important');
+        modal.style.setProperty('visibility', 'visible', 'important');
+        modal.classList.add('show');
+        modal.removeAttribute('aria-hidden');
+        modal.setAttribute('aria-modal', 'true');
+        document.body.classList.add('modal-open');
+        var bd = document.createElement('div');
+        bd.className = 'modal-backdrop show';
+        bd.id = '_mfix_bd';
+        document.body.appendChild(bd);
+        bd.addEventListener('click', closeFilterModal);
+        modal.addEventListener('keydown', onFilterModalKeydown);
+        var items = focusableIn(modal);
+        if (items.length > 0) {
+            items[0].focus();
+        } else {
+            modal.focus();
+        }
+    }
+
+    function closeFilterModal() {
+        modal.removeEventListener('keydown', onFilterModalKeydown);
+        // Sposta focus prima di aria-hidden per evitare warning accessibilità
+        var trigger = filterTrigger || document.querySelector('[data-bs-target="#modal-categories"]');
+        if (trigger) { trigger.focus(); }
+        modal.style.removeProperty('display');
+        modal.style.removeProperty('visibility');
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        modal.removeAttribute('aria-modal');
+        document.body.classList.remove('modal-open');
+        var bd = document.getElementById('_mfix_bd');
+        if (bd) { bd.remove(); }
+    }
+
+    document.querySelectorAll('[data-bs-target="#modal-categories"]').forEach(function (btn) {
+        btn.removeAttribute('data-bs-toggle'); // disabilita Bootstrap delegation
+        btn.addEventListener('click', function (e) {
+            e.preventDefault();
+            filterTrigger = btn;
+            openFilterModal();
+        });
+    });
+
+    modal.querySelectorAll('[data-bs-dismiss="modal"]').forEach(function (btn) {
+        btn.addEventListener('click', closeFilterModal);
+    });
+}
+
+// Esegue prima di DOMContentLoaded per prevenire Bootstrap delegation su #modal-categories
+if (document.readyState !== 'loading') {
+    initFilterModal();
+} else {
+    document.addEventListener('DOMContentLoaded', initFilterModal, { once: true });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
+
+    // Modali con markup Design Comuni (`.modal.fade`, solo pagine /tests): display block, aria-modal, backdrop e `modal-open` sul body, come nel
+    // riferimento. Le altre modali del tema (senza `fade`) restano flex senza backdrop.
     const closeModal = function(modal) {
         if (!modal) {
             return;
         }
 
         modal.classList.remove('show');
+        if (isDesignComuniPage() && modal.classList.contains('fade')) {
+            modal.style.display = '';
+            modal.removeAttribute('aria-modal');
+            modal.setAttribute('aria-hidden', 'true');
+            modal.classList.remove('focus--mouse');
+            modal.removeAttribute('data-focus-mouse');
+            document.querySelectorAll('.modal-backdrop').forEach(function(backdrop) { backdrop.remove(); });
+            document.body.classList.remove('modal-open');
+            document.body.style.overflow = '';
+            document.body.style.paddingRight = '';
+            return;
+        }
+
         modal.style.display = 'none';
         document.body.style.overflow = '';
     };
@@ -187,6 +404,21 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         modal.classList.add('show');
+        if (isDesignComuniPage() && modal.classList.contains('fade')) {
+            modal.style.display = 'block';
+            modal.removeAttribute('aria-hidden');
+            modal.setAttribute('aria-modal', 'true');
+            modal.classList.add('focus--mouse');
+            modal.setAttribute('data-focus-mouse', 'true');
+            const backdrop = document.createElement('div');
+            backdrop.className = 'modal-backdrop fade show';
+            document.body.appendChild(backdrop);
+            document.body.classList.add('modal-open');
+            document.body.style.overflow = 'hidden';
+            document.body.style.paddingRight = '0px';
+            return;
+        }
+
         modal.style.display = 'flex';
         document.body.style.overflow = 'hidden';
     };
@@ -195,7 +427,8 @@ document.addEventListener('DOMContentLoaded', function() {
         btn.addEventListener('click', function(e) {
             e.preventDefault();
             const targetId = this.getAttribute('data-bs-target');
-            const modal = document.querySelector(targetId);
+            // `data-bs-target="#"` e' un segnaposto del riferimento (es. pulsante "Avanti"): `querySelector('#')` lancerebbe un errore
+            const modal = targetId && targetId !== '#' ? document.querySelector(targetId) : null;
 
             if (!modal) {
                 return;
@@ -204,6 +437,10 @@ document.addEventListener('DOMContentLoaded', function() {
             if (modal.classList.contains('show')) {
                 closeModal(modal);
             } else {
+                // Bootstrap: aprire una modale da un'altra chiude la prima (es. "Salva" -> conferma nel flusso multa); solo pagine /tests
+                if (isDesignComuniPage()) {
+                    document.querySelectorAll('.modal.show').forEach(function(opened) { closeModal(opened); });
+                }
                 openModal(modal);
             }
         });
@@ -256,8 +493,9 @@ document.addEventListener('DOMContentLoaded', function() {
         toggle.addEventListener('click', function(e) {
             e.preventDefault();
 
-            const targetId = this.getAttribute('data-bs-target');
-            const panel = targetId ? document.querySelector(targetId) : null;
+            // Bootstrap accetta anche `href="#id"` quando manca `data-bs-target` (es. "Vedi altri" nel riferimento)
+            const targetId = this.getAttribute('data-bs-target') || (this.getAttribute('href')?.startsWith('#') ? this.getAttribute('href') : null);
+            const panel = targetId && targetId !== '#' ? document.querySelector(targetId) : null;
 
             if (!panel) {
                 return;
@@ -398,7 +636,7 @@ function initTicketFilters() {
     }
 
     const desktopRoot = root.querySelector('aside.col-lg-3, div.col-lg-3.d-none.d-lg-block');
-    const modalRoot = root.querySelector('#modal-categories');
+    const modalRoot = root.querySelector('#modal-categories') || document.getElementById('modal-categories');
     const typeSelector = 'input[type="checkbox"][name="category"][data-filter-type]';
     const statusSelector = 'input[type="checkbox"][name="status"][data-filter-status]';
     const primaryTypeCheckboxes = desktopRoot
@@ -525,6 +763,12 @@ function initTicketFilters() {
             .map((input) => input.value);
         const mapEl = document.getElementById('block-map');
 
+        root.querySelectorAll('[data-public-ticket-card]').forEach((card) => {
+            const matchesType = checkedTypes.length === 0 || checkedTypes.includes(card.dataset.filterType || '');
+            const matchesStatus = checkedStatuses.length === 0 || checkedStatuses.includes(card.dataset.filterStatus || '');
+            card.hidden = !matchesType || !matchesStatus;
+        });
+
         if (
             mapEl
             && Array.isArray(mapEl._allFeatures)
@@ -544,8 +788,7 @@ function initTicketFilters() {
 
         const featureCount = countMatchingFeatures(mapEl, checkedTypes, checkedStatuses);
         if (featureCount !== null) {
-            const total = featureCount > 0 ? featureCount : (referenceTotal > 0 ? referenceTotal : 0);
-            countEl.textContent = template.replace(':count', String(total));
+            countEl.textContent = template.replace(':count', String(featureCount));
 
             return;
         }
@@ -623,17 +866,3 @@ function initTicketFilters() {
         });
     }
 }
-=======
-import "./flowbite.js";
-import "./swiper.js";
-//import "./cookie-consent.js";
-import "./custom.js";
-import "./filament-4x.js";
-// Bootstrap Italia JS bundle (for header/nav components, dropdowns, etc.)
-import "bootstrap-italia/dist/js/bootstrap-italia.bundle.min.js";
-import "./agid-enforcer.js";
-// PWA Manager
-import "./pwa.js";
-// Performance Manager
-import "./performance.js";
->>>>>>> 6ed19256f (.)

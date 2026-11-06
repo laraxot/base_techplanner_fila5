@@ -31,21 +31,21 @@
                 @endphp
                 <div class="text-center p-8 rounded-xl border border-gray-100 hover:shadow-lg transition-shadow">
                     <div class="w-16 h-16 mx-auto mb-4 rounded-full {{ $color }} flex items-center justify-center">
-                        <svg class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">{!! $icon !!}</svg>
+                        <svg aria-hidden="true" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">{!! $icon !!}</svg>
                     </div>
                     <h3 class="text-lg font-bold text-gray-900 mb-2">{{ $method['title'] ?? '' }}</h3>
                     @if(!empty($method['description']))
-                        <p class="text-gray-500 text-sm mb-3">{{ $method['description'] }}</p>
+                        <p class="text-gray-600 text-sm mb-3">{{ $method['description'] }}</p>
                     @endif
                     @if(!empty($method['value']))
                         @if(!empty($method['url']))
-                            <a href="{{ $method['url'] }}" class="text-[#1E5A96] font-semibold hover:underline">{{ $method['value'] }}</a>
+                            <a href="{{ $method['url'] }}" class="inline-block py-2.5 text-brand-blue font-semibold hover:underline">{{ $method['value'] }}</a>
                         @else
                             <p class="text-gray-900 font-medium">{{ $method['value'] }}</p>
                         @endif
                     @endif
                     @if(!empty($method['hours']))
-                        <p class="text-xs text-gray-400 mt-2">{{ $method['hours'] }}</p>
+                        <p class="text-xs text-gray-600 mt-2">{{ $method['hours'] }}</p>
                     @endif
                 </div>
             @endforeach

@@ -1,7 +1,15 @@
 ---
-module: theme
-topic: exchanges
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Exchanges"
+module: "Tenant"
+type: concept
+tags: [exchanges]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "exchanges"
+related:
+  - "./phpstan-corrections-january.md"
+status: draft
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

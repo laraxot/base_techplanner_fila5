@@ -7,14 +7,13 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-        'name' => 'dashboard',
-        'plural' => 'dashboard',
+        'name' => 'Dashboard',
+        'plural' => 'Dashboard',
         'group' => [
             'name' => '',
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -58,17 +57,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -85,9 +73,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

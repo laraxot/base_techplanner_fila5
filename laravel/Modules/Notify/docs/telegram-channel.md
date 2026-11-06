@@ -1,3 +1,15 @@
+---
+title: "telegram channel"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "telegram channel"
+issues: []
+discussions: []
+status: draft
+---
+
 # Implementazione Canale Telegram
 
 ## 1. Struttura Base
@@ -431,19 +443,10 @@ class TelegramTest extends TestCase
 - [Laravel Queues](https://laravel.com/project_docs/queues)
 - [Laravel Testing](https://laravel.com/project_docs/testing)
 - [Laravel Logging](https://laravel.com/project_docs/logging)
-<<<<<<< HEAD
 - [Laravel Cache](https://laravel.com/project_docs/cache) 
-=======
-- [Laravel Cache](https://laravel.com/project_docs/cache)
->>>>>>> 6ed19256f (.)
 - [Laravel Notifications](https://laravel.com/docs/notifications)
 - [Laravel Queues](https://laravel.com/docs/queues)
 - [Laravel Testing](https://laravel.com/docs/testing)
 - [Laravel Logging](https://laravel.com/docs/logging)
-<<<<<<< HEAD
 - [Laravel Cache](https://laravel.com/docs/cache) 
 - [Laravel Cache](https://laravel.com/docs/cache) 
-=======
-- [Laravel Cache](https://laravel.com/docs/cache)
-- [Laravel Cache](https://laravel.com/docs/cache)
->>>>>>> 6ed19256f (.)

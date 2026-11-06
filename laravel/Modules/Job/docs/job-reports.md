@@ -1,3 +1,15 @@
+---
+title: "job reports"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "job reports"
+issues: []
+discussions: []
+status: draft
+---
+
 # Job Module PDF Reports
 
 ## 📋 Overview
@@ -5,7 +17,6 @@
 Guida completa per generare report PDF del sistema di code e job utilizzando HTML2PDF con integrazione nativa nel modulo Job.
 
 ---
-
 ## 🎯 Tipi di Report Disponibili
 
 ### 1. Queue System Report
@@ -836,26 +847,14 @@ public function generateWithErrorHandling(array $options = []): string
 
 ## 📚 References
 
-- [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
-- [Job Module README](./README.md)
-<<<<<<< HEAD
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
 - [Job Module README](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 
 ---
 
-**Last Updated:** 2025-12-09
-<<<<<<< HEAD
 **
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
-=======
-**Version:** 1.0.0
-**HTML2PDF Version:** 5.2.x
-**PHPStan Level:** 10 ✅
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "accessibility"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "accessibility"
+issues: []
+discussions: []
+status: draft
+---
+
 # Standard di Accessibilità
 
 ## 🎯 WCAG 2.1
@@ -112,7 +124,6 @@
 >
 ```
 
-<<<<<<< HEAD
 ## Tecniche W3C di riferimento
 
 Per implementazioni dettagliate (label, focus, link, contrasto, autocomplete, aria-label, reflow):
@@ -132,9 +143,3 @@ Piano di risoluzione per il tema Two: `laravel/Themes/Two/docs/wcag-techniques-r
 - [Performance](./performance.md)
 - [UI Standards](./ui-standards.md)
 - [Componenti Base](../base-components.md)
-=======
-## 🔗 Collegamenti
-- [Performance](./performance.md)
-- [UI Standards](./ui-standards.md)
-- [Componenti Base](../base-components.md)
->>>>>>> 6ed19256f (.)

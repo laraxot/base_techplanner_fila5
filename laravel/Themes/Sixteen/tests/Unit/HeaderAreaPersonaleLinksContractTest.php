@@ -2,30 +2,37 @@
 
 declare(strict_types=1);
 
-use Themes\Sixteen\Support\FrontofficeUrl;
+use function Safe\file_get_contents;
 
 /**
- * Contratto header area personale: named route Folio verificate (folio:list), no wrapper path custom.
+ * Contratto header area personale: Folio + FrontofficeRoutes, no wrapper path custom.
+ * Source-level (no TestCase): il bootstrap Laravel non e' richiesto per queste guardie.
  */
-test('FrontofficeUrl e autoloadabile per nav CMS', function (): void {
-    expect(class_exists(FrontofficeUrl::class))->toBeTrue();
-    expect(method_exists(FrontofficeUrl::class, 'fromStoredUrl'))->toBeTrue();
+test('Frontoffice URL helpers esistono per nav CMS', function (): void {
+    $themeRoot = dirname(__DIR__, 2);
+
+    expect(file_exists($themeRoot.'/app/Actions/Url/BuildLocalizedFrontofficePathAction.php'))->toBeTrue();
+    expect(file_exists($themeRoot.'/app/Actions/Url/NormalizeStoredFrontofficeUrlAction.php'))->toBeTrue();
+    expect(file_exists($themeRoot.'/app/Infrastructure/Url/FrontofficeRoutes.php'))->toBeTrue();
 });
 
-test('user-dropdown usa named route Folio verificate', function (): void {
+test('user-dropdown usa FrontofficeRoutes area personale e route Folio', function (): void {
     $themeRoot = dirname(__DIR__, 2);
-    $html = (string) file_get_contents($themeRoot.'/resources/views/components/sections/header/partials/user-dropdown.blade.php');
+    $html = file_get_contents($themeRoot.'/resources/views/components/sections/header/partials/user-dropdown.blade.php');
 
     expect($html)->toContain("route('services.categories')");
-    expect($html)->toContain("route('dashboard')");
-    expect($html)->toContain("route('area-personale.notifiche')");
-    expect($html)->toContain("route('profile.edit')");
+    expect($html)->toContain('FrontofficeRoutes::personalAreaPratiche');
+    expect($html)->toContain('FrontofficeRoutes::personalAreaNotifiche');
+    expect($html)->toContain('FrontofficeRoutes::personalAreaImpostazioni');
     expect($html)->toContain("route('logout')");
     expect($html)->not->toContain('FrontofficeUrl::personalArea');
     expect($html)->not->toContain("route('tests.view'");
     expect($html)->not->toContain("route('user.services'");
+    expect($html)->not->toContain("route('area-personale");
+    expect($html)->not->toContain('area-personale.notifiche');
+    expect($html)->not->toContain("route('profile.edit')");
     expect($html)->not->toContain('ui::ui.profile');
-    expect($html)->toContain("pub_theme::header.user.dropdown.notifications.label");
+    expect($html)->toContain('pub_theme::header.user.dropdown.notifications.label');
 });
 
 test('guest CTA header usa route login Folio', function (): void {
@@ -39,7 +46,7 @@ test('guest CTA header usa route login Folio', function (): void {
         if (! file_exists($path)) {
             continue;
         }
-        $html = (string) file_get_contents($path);
+        $html = file_get_contents($path);
         expect($html)->toContain("route('login')");
         expect($html)->not->toContain('FrontofficeUrl::login()');
     }
@@ -59,7 +66,7 @@ test('header area-personale partials non contengono locale hardcoded ne Frontoff
         if (! file_exists($path)) {
             continue;
         }
-        $html = (string) file_get_contents($path);
+        $html = file_get_contents($path);
         expect($html)->not->toContain('href="/it/');
         expect($html)->not->toContain("href='/it/");
         expect($html)->not->toContain('href="/{{ app()->getLocale()');
@@ -69,25 +76,30 @@ test('header area-personale partials non contengono locale hardcoded ne Frontoff
     }
 });
 
-test('bootstrap-italia header riusa partial canonici area personale', function (): void {
+test('header riusa partial canonici area personale', function (): void {
     $themeRoot = dirname(__DIR__, 2);
-    $html = (string) file_get_contents($themeRoot.'/resources/views/components/bootstrap-italia/header.blade.php');
+    $partial = $themeRoot.'/resources/views/components/sections/header/partials/user-dropdown.blade.php';
+    $guest = $themeRoot.'/resources/views/components/sections/header/partials/personal-area-guest-parity.blade.php';
+    $consumer = $themeRoot.'/resources/views/components/header-comune.blade.php';
 
-    expect($html)->toContain('partials.personal-area-guest-cta');
-    expect($html)->toContain('partials.user-dropdown');
+    expect(file_exists($partial))->toBeTrue();
+    expect(file_exists($guest))->toBeTrue();
+    expect(file_exists($consumer))->toBeTrue();
+    expect(file_get_contents($consumer))->toContain('partials.user-dropdown');
+    expect(file_get_contents($partial))->toContain('FrontofficeRoutes::personalAreaPratiche');
 });
 
 test('nav partials localizzano url da header.json via fromStoredUrl', function (): void {
     $themeRoot = dirname(__DIR__, 2);
     foreach (['nav-primary.blade.php', 'nav-secondary.blade.php'] as $file) {
-        $html = (string) file_get_contents($themeRoot.'/resources/views/components/sections/header/partials/'.$file);
-        expect($html)->toContain('FrontofficeUrl::fromStoredUrl');
+        $html = file_get_contents($themeRoot.'/resources/views/components/sections/header/partials/'.$file);
+        expect($html)->toContain('$headerFolioUrl');
         expect($html)->not->toContain('href="/it/');
     }
 });
 
 test('FrontofficeUrl non espone wrapper personalArea', function (): void {
-    $php = (string) file_get_contents(dirname(__DIR__, 2).'/app/Support/FrontofficeUrl.php');
+    $php = file_get_contents(dirname(__DIR__, 2).'/app/Infrastructure/Url/FrontofficeUrl.php');
 
     expect($php)->not->toContain('personalAreaServices');
     expect($php)->not->toContain('personalAreaNotifications');
@@ -96,10 +108,10 @@ test('FrontofficeUrl non espone wrapper personalArea', function (): void {
 
 test('legacy header user-dropdown usa named route Folio', function (): void {
     $themeRoot = dirname(__DIR__, 2);
-    $html = (string) file_get_contents($themeRoot.'/resources/views/components/header/user-dropdown.blade.php');
+    $html = file_get_contents($themeRoot.'/resources/views/components/header/user-dropdown.blade.php');
 
     expect($html)->toContain("route('services.categories')");
-    expect($html)->toContain("route('area-personale.notifiche')");
+    expect($html)->toContain("route('notifications')");
     expect($html)->not->toContain('FrontofficeUrl::personalArea');
 });
 
@@ -110,13 +122,16 @@ test('nessun blade Sixteen usa FrontofficeUrl personalArea wrapper', function ()
     );
 
     foreach ($iterator as $file) {
+        if (! $file instanceof SplFileInfo) {
+            continue;
+        }
         if (! $file->isFile() || $file->getExtension() !== 'php') {
             continue;
         }
         if (! str_ends_with($file->getFilename(), '.blade.php')) {
             continue;
         }
-        $html = (string) file_get_contents($file->getPathname());
+        $html = file_get_contents($file->getPathname());
         expect($html)->not->toContain('FrontofficeUrl::personalArea', $file->getPathname());
     }
 });
@@ -130,9 +145,9 @@ test('legacy header variants usano route Folio e chiavi header.user.dropdown', f
     ];
 
     foreach ($legacyHeaders as $relative) {
-        $html = (string) file_get_contents($themeRoot.'/resources/views/'.$relative);
+        $html = file_get_contents($themeRoot.'/resources/views/'.$relative);
         expect($html)->toContain("route('services.categories')");
-        expect($html)->toContain("route('area-personale.notifiche')");
+        expect($html)->toContain("route('notifications')");
         expect($html)->toContain('pub_theme::header.user.dropdown.notifications.label');
         expect($html)->not->toContain('FrontofficeUrl::personalArea');
         expect($html)->not->toContain('pub_theme::ui.header_area_personale');

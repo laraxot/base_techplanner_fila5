@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/buyersclub/laravel-eloquent-model-interface/blob/master/src/EloquentModelInterface.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Xot\Contracts;
 
@@ -18,20 +17,14 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  *
  * @property SchemalessAttributes $extra_attributes
  *
- * @method static Builder|ExtraContract newModelQuery()
- * @method static Builder|ExtraContract newQuery()
- * @method static Builder|ExtraContract query()
- * @method static Builder|ExtraContract withExtraAttributes()
+ * @method static Builder<Model> newModelQuery()
+ * @method static Builder<Model> newQuery()
+ * @method static Builder<Model> query()
+ * @method static Builder<Model> withExtraAttributes()
  *
-<<<<<<< HEAD
- * @property int         $id
- * @property string      $model_type
- * @property string      $model_id
-=======
  * @property int $id
  * @property string $model_type
  * @property string $model_id
->>>>>>> 6ed19256f (.)
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -39,21 +32,19 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  *
- * @method static Builder|ExtraContract whereCreatedAt($value)
- * @method static Builder|ExtraContract whereCreatedBy($value)
- * @method static Builder|ExtraContract whereDeletedAt($value)
- * @method static Builder|ExtraContract whereDeletedBy($value)
- * @method static Builder|ExtraContract whereExtraAttributes($value)
- * @method static Builder|ExtraContract whereId($value)
- * @method static Builder|ExtraContract whereModelId($value)
- * @method static Builder|ExtraContract whereModelType($value)
- * @method static Builder|ExtraContract whereUpdatedAt($value)
- * @method static Builder|ExtraContract whereUpdatedBy($value)
+ * @method static Builder<Model> whereCreatedAt($value)
+ * @method static Builder<Model> whereCreatedBy($value)
+ * @method static Builder<Model> whereDeletedAt($value)
+ * @method static Builder<Model> whereDeletedBy($value)
+ * @method static Builder<Model> whereExtraAttributes($value)
+ * @method static Builder<Model> whereId($value)
+ * @method static Builder<Model> whereModelId($value)
+ * @method static Builder<Model> whereModelType($value)
+ * @method static Builder<Model> whereUpdatedAt($value)
+ * @method static Builder<Model> whereUpdatedBy($value)
  *
  * @phpstan-require-extends Model
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
-interface ExtraContract
-{
-}
+interface ExtraContract {}

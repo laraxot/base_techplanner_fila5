@@ -19,38 +19,38 @@ Struttura menu identica per tutte le lingue:
 
 **Italiano (IT)**:
 - Home (`/it`)
-- Chi Siamo (`/it/chi-siamo`)
-- Servizi (`/it/servizi`)
+- Chi Siamo (`/it/about`)
+- Servizi (`/it/services`)
 - Blog (`/it/blog`)
-- FAQ (`/it/faq`)
-- Contatti (`/it/contatti`)
+- FAQ (`/it/faqs`)
+- Contatti (`/it/contacts`)
 
 **Inglese (EN)**:
 - Home (`/en`)
 - About Us (`/en/about`)
 - Services (`/en/services`)
 - Blog (`/en/blog`)
-- FAQ (`/en/faq`)
-- Contact (`/en/contact`)
+- FAQ (`/en/faqs`)
+- Contact (`/en/contacts`)
 
 **Tedesco (DE)**:
 - Startseite (`/de`)
-- Über Uns (`/de/ueber-uns`)
-- Dienstleistungen (`/de/dienstleistungen`)
+- Über Uns (`/de/about`)
+- Dienstleistungen (`/de/services`)
 - Blog (`/de/blog`)
-- FAQ (`/de/faq`)
-- Kontakt (`/de/kontakt`)
+- FAQ (`/de/faqs`)
+- Kontakt (`/de/contacts`)
+
+Le voci di menu sono quelle di `config/local/techplanner/database/content/sections/header.json` (copia in `Modules/TechPlanner/config/database/content/`); il blocco `es` non esiste, quindi su `/es` ricade sull'italiano.
 
 ### 3. Branding
-- **Nome**: Marco Sottana
-- **Sottotitolo IT**: Consulenza Sicurezza
-- **Sottotitolo EN**: Safety Consulting
-- **Sottotitolo DE**: Sicherheitsberatung
+- **Nome**: Sottana Service (uguale in `it`, `en`, `de`)
+- **Sottotitolo**: nessuno (`brand_subtitle` e' `null` in tutte le lingue)
 
 ### 4. CTA Button
 - **IT**: Richiedi Consulenza → `/it/contatti`
-- **EN**: Request Consultation → `/en/contact`
-- **DE**: Konsultation Anfordern → `/de/kontakt`
+- **EN**: Request Consultation → `/en/contacts`
+- **DE**: Konsultation Anfordern → `/de/contacts`
 
 ### 5. Autenticazione e Dropdown Utente
 

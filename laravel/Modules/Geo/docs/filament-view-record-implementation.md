@@ -1,3 +1,15 @@
+---
+title: "filament view record implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament view record implementation"
+issues: []
+discussions: []
+status: draft
+---
+
 # Filament ViewRecord Implementation - Geo Module
 
 ## Panoramica
@@ -141,7 +153,6 @@ class ViewLocation extends XotBaseViewRecord
                             TextEntry::make('created_by')
                                 ->label('Creato da'),
                             TextEntry::make('updated_by')
-                                ->label('Aggiornato da'),
                         ]),
                 ])
                 ->collapsible(),
@@ -177,7 +188,6 @@ class ViewLocation extends XotBaseViewRecord
 - **Data Creazione**: Timestamp di creazione
 - **Data Aggiornamento**: Timestamp di ultimo aggiornamento
 - **Creato da**: Utente che ha creato il record
-- **Aggiornato da**: Utente che ha aggiornato il record
 
 ## Componenti Utilizzati
 
@@ -275,37 +285,19 @@ protected function getInfolistSchema()
 
 ## Collegamenti e Riferimenti
 
-<<<<<<< HEAD
 - [Filament ViewRecord Errors (Root Docs)](../../../docs/filament-view-record-errors.md)
 - [Testing Analysis Documentation](../../../docs/testing-analysis.md)
-=======
-- [Filament ViewRecord Errors (Root Docs)](../../docs/filament-view-record-errors.md)
-- [Testing Analysis Documentation](../../docs/testing-analysis.md)
->>>>>>> 6ed19256f (.)
-- [XotBaseViewRecord Source Code](../../../Xot/app/Filament/Resources/Pages/XotBaseViewRecord.php)
-- [Location Model](../../app/Models/Location.php)
-- [LocationResource](../../app/Filament/Resources/LocationResource.php)
+- [XotBaseViewRecord Source Code](../../Xot/app/Filament/Resources/Pages/XotBaseViewRecord.php)
+- [Location Model](../app/Models/Location.php)
+- [LocationResource](../app/Filament/Resources/LocationResource.php)
 
 ## Note di Manutenzione
 
-<<<<<<< HEAD
 - **Data Creazione**: [DATE]
 - **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
 - **Autore**: AI Assistant
 - **Stato**: Completato e verificato
 - **Ultimo Aggiornamento**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
-- **Data Creazione**: 2025-01-06
-- **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
-- **Autore**: AI Assistant
-- **Stato**: Completato e verificato
-- **Ultimo Aggiornamento**: 2025-01-06
 
 ---
-
-<<<<<<< HEAD
 **IMPORTANTE**: Ricorda sempre di implementare il metodo `getInfolistSchema()` quando si estende `XotBaseViewRecord`. Questo errore è comune e può essere facilmente evitato seguendo i pattern documentati sopra.
-=======
-**IMPORTANTE**: Ricorda sempre di implementare il metodo `getInfolistSchema()` quando si estende `XotBaseViewRecord`. Questo errore è comune e può essere facilmente evitato seguendo i pattern documentati sopra.
->>>>>>> 6ed19256f (.)

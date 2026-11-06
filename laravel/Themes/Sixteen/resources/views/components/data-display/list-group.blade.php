@@ -103,11 +103,7 @@
             @if(!empty($item['href']))
                 <a {{ $attributes->merge($itemAttributes)->merge(['class' => $itemClasses]) }}>
                     @if(!empty($item['icon']))
-<<<<<<< HEAD
-                        <x-filament::icon icon="heroicon-o-{{" $item['icon'] }} class="me-2" />
-=======
-                        <x-heroicon-o-{{ $item['icon'] }} class="me-2" />
->>>>>>> 6ed19256f (.)
+                        <x-filament::icon icon="heroicon-o-{{ $item['icon'] }}" class="me-2" />
                     @endif
                     
                     <span class="list-group-item-text">{{ $item['text'] ?? '' }}</span>
@@ -123,11 +119,7 @@
             @else
                 <li {{ $attributes->merge($itemAttributes)->merge(['class' => $itemClasses]) }}>
                     @if(!empty($item['icon']))
-<<<<<<< HEAD
-                        <x-filament::icon icon="heroicon-o-{{" $item['icon'] }} class="me-2" />
-=======
-                        <x-heroicon-o-{{ $item['icon'] }} class="me-2" />
->>>>>>> 6ed19256f (.)
+                        <x-filament::icon icon="heroicon-o-{{ $item['icon'] }}" class="me-2" />
                     @endif
                     
                     <span class="list-group-item-text">{{ $item['text'] ?? '' }}</span>
@@ -146,7 +138,7 @@
                             class="btn btn-sm btn-outline-primary ms-auto"
                             wire:click="{{ $item['action'] }}"
                         >
-                            Azione
+                            {{ __('pub_theme::components_common.fields.action.label') }}
                         </button>
                     @endif
                 </li>

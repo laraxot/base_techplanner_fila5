@@ -1,13 +1,24 @@
+---
+issues: []
+discussions: []
+title: "Audit Traduzioni Completato - 2025"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: translation-audit-completion.md
+---
 # Audit Traduzioni Completato - 2025
 
 ## Riepilogo Lavoro Effettuato
 
 ### Problema Identificato
-<<<<<<< HEAD
 Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
-=======
-Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
->>>>>>> 6ed19256f (.)
 
 ### Pattern di Errore
 - **Errore**: `'required' => 'Campo obbligatorio'` in file `lang/de/` e `lang/en/`
@@ -27,11 +38,7 @@ Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate
 - **File inglesi**: 5 file corretti
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'Required field'` (EN)
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Dieses Feld ist erforderlich'` (DE) / `'required' => 'This field is required'` (EN)
@@ -46,11 +53,7 @@ Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'This field is required'` (EN)
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteMo
->>>>>>> 6ed19256f (.)
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Das Feld :attribute ist erforderlich'` (DE) / `'required' => 'The :attribute field is required'` (EN)
@@ -142,20 +145,12 @@ Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-<<<<<<< HEAD
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
-=======
-2. **SaluteOra Module**: `laravel/Modules/SaluteOra/docs/translation_refactor_summary_2025.md`
->>>>>>> 6ed19256f (.)
 
 ### Collegamenti Bidirezionali Creati
 - [Root Docs: Translation Standards](translation_standards.md)
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
-<<<<<<< HEAD
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
-=======
-- [SaluteOra Module: Translation Guidelines](../laravel/Modules/SaluteOra/docs/translation_guidelines.md)
->>>>>>> 6ed19256f (.)
 
 ## Prevenzione Errori Futuri
 
@@ -207,11 +202,7 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 ## Riepilogo Lavoro Effettuato
 
 ### Problema Identificato
-<<<<<<< HEAD
 Durante l'audit delle traduzioni del progetto <nome progetto>, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
-=======
-Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate numerose traduzioni italiane presenti in file di lingua tedesca e inglese, causando incoerenza nell'interfaccia utente.
->>>>>>> 6ed19256f (.)
 
 ### Pattern di Errore
 - **Errore**: `'required' => 'Campo obbligatorio'` in file `lang/de/` e `lang/en/`
@@ -231,11 +222,7 @@ Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate
 - **File inglesi**: 5 file corretti
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'Required field'` (EN)
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Dieses Feld ist erforderlich'` (DE) / `'required' => 'This field is required'` (EN)
@@ -250,11 +237,7 @@ Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Pflichtfeld'` (DE) / `'required' => 'This field is required'` (EN)
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteMo
->>>>>>> 6ed19256f (.)
 - **File tedeschi**: 4 file corretti
 - **File inglesi**: 4 file corretti
 - **Pattern**: `'required' => 'Das Feld :attribute ist erforderlich'` (DE) / `'required' => 'The :attribute field is required'` (EN)
@@ -346,20 +329,12 @@ Durante l'audit delle traduzioni del progetto SaluteOra, sono state identificate
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-<<<<<<< HEAD
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
-=======
-2. **SaluteOra Module**: `laravel/Modules/SaluteOra/docs/translation_refactor_summary_2025.md`
->>>>>>> 6ed19256f (.)
 
 ### Collegamenti Bidirezionali Creati
 - [Root Docs: Translation Standards](translation_standards.md)
 - [Lang Module: Translation Best Practices](../laravel/Modules/Lang/docs/translation_best_practices.md)
-<<<<<<< HEAD
 - [<nome progetto> Module: Translation Guidelines](../laravel/Modules/<nome progetto>/docs/translation_guidelines.md)
-=======
-- [SaluteOra Module: Translation Guidelines](../laravel/Modules/SaluteOra/docs/translation_guidelines.md)
->>>>>>> 6ed19256f (.)
 
 ## Prevenzione Errori Futuri
 

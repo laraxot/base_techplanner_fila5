@@ -1,5 +1,14 @@
-<<<<<<< HEAD
-=======
+---
+title: "Standard di Traduzione - Documentazione Root"
+type: note
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, translations]
+qmd: "Standard di Traduzione - Documentazione Root"
+status: superseded
+superseded_by: ../translation-standards.md
+---
 # Standard di Traduzione - Documentazione Root
 
 ## Panoramica
@@ -109,7 +118,7 @@ declare(strict_types=1);
 
 /**
  * Traduzioni per [descrizione]
- *
+ * 
  * @package Modules\{ModuleName}\Resources
  */
 
@@ -141,7 +150,6 @@ return array(
 - **File standardizzati**: 15 file principali
 - **Problemi risolti**: Riferimenti circolari, sintassi obsoleta
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
->>>>>>> 6ed19256f (.)
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 
 #### File Completati
@@ -275,14 +283,4 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
-*Ultimo aggiornamento: Giugno 2025*
-<<<<<<< HEAD
----
-module: theme
-topic: translation-standards
-canonical: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/translation-standards-Modules.md
-=======
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: Giugno 2025* 

@@ -1,3 +1,23 @@
+---
+title: "Convenzioni per i Collegamenti nei File Markdown"
+type: concept
+tags: [notify, docs, best-practices, markdown, linking, conventions]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione best practices markdown linking conventions convenzioni per i collegamenti nei file markdown frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../architecture/README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - naming-conventions.md
+status: draft
+---
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -9,7 +29,6 @@
 ### ❌ ERRATO: Percorsi Assoluti
 
 ```markdown
-<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
@@ -19,17 +38,6 @@
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
-=======
-[Convenzioni di Naming per le Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
-[Chiarimento sulla Struttura delle Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
-[Architettura dei Contratti](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
-[Convenzioni di Naming per le Interfacce](/var/www/html/saluteora/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
-[Chiarimento sulla Struttura delle Interfacce](/var/www/html/saluteora/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
-[Architettura dei Contratti](/var/www/html/saluteora/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
-[Convenzioni di Naming per le Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
-[Chiarimento sulla Struttura delle Interfacce](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
-[Architettura dei Contratti](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
->>>>>>> 6ed19256f (.)
 ```
 
 ### ✅ CORRETTO: Percorsi Relativi
@@ -38,12 +46,6 @@
 [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-<<<<<<< HEAD
-[Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
-[Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
-[Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-=======
->>>>>>> 6ed19256f (.)
 ```
 
 Per collegamenti a documenti in altre directory:
@@ -51,11 +53,6 @@ Per collegamenti a documenti in altre directory:
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-<<<<<<< HEAD
-[Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
-[Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-=======
->>>>>>> 6ed19256f (.)
 ```
 
 ## Motivazione
@@ -64,11 +61,7 @@ Per collegamenti a documenti in altre directory:
 2. **Compatibilità tra ambienti**: I percorsi assoluti potrebbero non funzionare in ambienti diversi
 3. **Manutenibilità**: I percorsi relativi sono più facili da mantenere quando la struttura del progetto cambia
 4. **Standard del progetto**:  segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
-<<<<<<< HEAD
 4. **Standard del progetto**: <nome progetto> segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
-=======
-4. **Standard del progetto**: SaluteOra segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
->>>>>>> 6ed19256f (.)
 
 ## Regole per i Collegamenti Relativi
 
@@ -88,8 +81,4 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 ## Collegamenti Correlati
 
 - [Convenzioni di Documentazione](../../../docs/documentation-conventions.md)
-<<<<<<< HEAD
 - [Markdown Best Practices](../../../docs/markdown-best-practices.md)
-=======
-- [Markdown Best Practices](../../../docs/markdown-best-practices.md)
->>>>>>> 6ed19256f (.)

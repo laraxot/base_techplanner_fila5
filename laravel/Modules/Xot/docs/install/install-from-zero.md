@@ -1,3 +1,11 @@
+---
+title: "install from zero"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, install]
+qmd: "install from zero xot"
+---
 #Install from zero
 
 ~~~ bash
@@ -111,7 +119,7 @@ edit file composer.json
             "Database\\Seeders\\": "database/seeders/"
         },
         "files": [
-            "Modules/Xot/Helpers/Helper.php"
+            "Modules/Xot/helpers/Helper.php"
         ]
     },
     "autoload-dev": {
@@ -176,19 +184,11 @@ create Folders :
  inside folder laravel/modules
 
 ~~~ bash
-<<<<<<< HEAD
- git submodule add https://github.com/laraxot/module_xot_fila5.git Xot
- git submodule add https://github.com/laraxot/module_tenant_fila5.git Tenant
- git submodule add https://github.com/laraxot/module_user_fila5.git User
- git submodule add https://github.com/laraxot/module_notify_fila5.git Notify
- git submodule add https://github.com/laraxot/module_ui_fila5.git UI
-=======
  git submodule add https://github.com/laraxot/module_xot_fila3.git Xot
  git submodule add https://github.com/laraxot/module_tenant_fila3.git Tenant
  git submodule add https://github.com/laraxot/module_user_fila3.git User
  git submodule add https://github.com/laraxot/module_notify_fila3.git Notify
  git submodule add https://github.com/laraxot/module_ui_fila3.git UI
->>>>>>> 6ed19256f (.)
 ~~~
 
 from folder laravel
@@ -196,8 +196,4 @@ from folder laravel
 git submodule add  https://github.com/laraxot/filament-modules.git  packages/savannabits/filament-modules
 
 composer update -W (--with-all-dependencies)
-<<<<<<< HEAD
 ~~~
-=======
-~~~
->>>>>>> 6ed19256f (.)

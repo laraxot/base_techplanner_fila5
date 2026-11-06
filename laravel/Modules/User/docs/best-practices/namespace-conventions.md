@@ -1,3 +1,24 @@
+---
+title: "Convenzioni di Namespace nel Modulo User"
+type: concept
+tags: [namespace, conventions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "namespace-conventions convenzioni di namespace nel modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity-rules.md"
+  - "./case-sensitivity.md"
+  - "./component-verification-rules.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+status: draft
+---
+
 # Convenzioni di Namespace nel Modulo User
 
 ## Principi Fondamentali
@@ -62,11 +83,7 @@ class LoginWidget extends XotBaseWidget
     protected static string $view = 'user::filament.widgets.auth.login';
 }
 
-<<<<<<< HEAD
 class PasswordResetWidget extends XotBaseWidget  
-=======
-class PasswordResetWidget extends XotBaseWidget
->>>>>>> 6ed19256f (.)
 {
     protected static string $view = 'user::filament.widgets.auth.password.reset';
 }
@@ -138,11 +155,7 @@ Themes/One/
 class UserWidget extends XotBaseWidget
 {
     protected static string $view = 'pub_theme::filament.widgets.user.profile';
-<<<<<<< HEAD
     //                               ^^^^^^^^^^ 
-=======
-    //                               ^^^^^^^^^^
->>>>>>> 6ed19256f (.)
     //                               Dovrebbe essere user::
 }
 ```
@@ -197,17 +210,9 @@ Se l'override del tema non funziona:
 
 - [Documentazione Laravel View](https://laravel.com/project_docs/views)
 - [Regole Struttura Directory Auth](../../../.windsurf/rules/translations.md#regola-critica-struttura-directory-auth-laravel)
-- [Documentazione Tema One](../../../Themes/One/project_docs/README.md)
-<<<<<<< HEAD
 - [Documentazione Tema One](../../../themes/one/project_docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ---
 
 *Documento creato: Dicembre 2024*
-<<<<<<< HEAD
-*Ultimo aggiornamento: Dicembre 2024*
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 6ed19256f (.)
+

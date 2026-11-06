@@ -167,7 +167,7 @@ SendNotificationBulkAction (Filament UI)
 
 ### Project Docs
 - `CLAUDE.md` - Updated with decision-making autonomy rule
-- `docs/refactoring-session-summary-2025-01-18.md` - This document
+- `docs/refactoring-session-summary.md` - This document
 
 ---
 

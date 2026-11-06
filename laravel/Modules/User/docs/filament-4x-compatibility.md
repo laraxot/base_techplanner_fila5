@@ -1,3 +1,28 @@
+---
+title: "Compatibilità Filament 4.x - Modulo User"
+type: concept
+tags: [filament, compatibility]
+created: 2026-07-14
+updated: 2026-10-23
+qmd: "filament-4x-compatibility compatibilità filament 4.x - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Compatibilità Filament 4.x - Modulo User
 
 **Data**: 2025-01-27
@@ -61,11 +86,7 @@ if ($user === null) {
 ```php
 protected $appends = [
     'full_name',
-<<<<<<< HEAD
     'user_name', 
-=======
-    'user_name',
->>>>>>> 6ed19256f (.)
     'avatar',
 ];
 
@@ -125,6 +146,30 @@ if (is_object($notifiable)) {
 - Aggiunti esempi di utilizzo
 - Corretti tipi generici per compatibilità PHPStan
 
+### 4. Correzioni del primo passaggio (Filament 4.0.17)
+
+Le correzioni qui sotto vengono da un passaggio precedente (Filament 4.0.17). Gli snippet di allora sono stati superati: si descrive il problema e come lo risolve il codice attuale.
+
+#### 4.1 `getLabel()` può restituire `Htmlable|string`
+- **File**: `app/Console/Commands/ChangeTypeCommand.php`
+- **Problema**: concatenare `$user->type?->getLabel()` a una stringa è un'operazione binaria non valida, perché in Filament 4 l'etichetta può essere `Htmlable`.
+- **Soluzione attuale**: l'etichetta viene normalizzata prima dell'uso (stringa così com'è, `Htmlable` con `->toHtml()`, scalare o `Stringable` con il cast) e controllata con `Assert::string()` prima di `$this->info(...)`.
+
+#### 4.2 `LoginWidget`: `getContainer()` non esiste
+- **File**: `app/Filament/Widgets/Auth/LoginWidget.php`
+- **Problema**: la catena `getComponent()->getContainer()->getParentComponent()` usata per assegnare gli errori di validazione al campo giusto chiamava un metodo che non esiste più.
+- **Soluzione attuale**: niente risalita nei componenti; gli errori di login e di throttle vengono assegnati direttamente a `data.email` con `$this->addError('data.email', ...)`.
+
+#### 4.3 Componente Livewire `Login`: `makeForm()` non esiste
+- **File**: `app/Http/Livewire/Auth/Login.php`
+- **Problema**: `makeForm()` non fa parte dell'API dei form di Filament 4.
+- **Soluzione attuale**: `public function form(Schema $schema): Schema` che restituisce `$schema->components($this->getFormSchema())->statePath('data')`.
+
+#### 4.4 `BaseUser::getFilamentName()` restituiva `mixed`
+- **File**: `app/Models/BaseUser.php`
+- **Problema**: Filament richiede una stringa; il valore costruito dagli attributi poteva essere `mixed` o vuoto.
+- **Soluzione attuale**: il metodo è tipizzato `string` e unisce `name`, `first_name` e `last_name`; se il risultato è vuoto restituisce l'email e, in mancanza anche di quella, `'User'`. Non restituisce mai una stringa vuota.
+
 ## 📊 Risultati
 
 ### Prima delle Correzioni
@@ -153,6 +198,11 @@ if (is_object($notifiable)) {
 - **Cambio**: Pacchetti esterni devono essere compatibili con Filament 4
 - **Impatto**: Widget da pacchetti terzi
 - **Status**: ✅ Gestito (disabilitazione temporanea)
+
+### 4. Tipi, firme e API dei form
+- **Cambio**: controlli più rigorosi sui tipi di ritorno, firme di alcuni metodi cambiate, etichette che possono essere `Htmlable`, nuova API dei form (`Schema`)
+- **Impatto**: comandi console, widget di login, componenti Livewire, model utente (vedi la sezione 4 delle correzioni)
+- **Status**: ✅ Risolto
 
 ## 🚀 Funzionalità Verificate
 
@@ -214,144 +264,3 @@ if (is_object($notifiable)) {
 
 *Ultimo aggiornamento: 2025-01-27*
 *Completato con successo - Filament 4.0.20 operativo*
-<<<<<<< HEAD
-=======
-# Compatibilità Filament 4.x - Modulo User
-
-**Data**: 2025-01-27
-**Status**: ✅ COMPLETATO
-**Versione Filament**: 4.0.17
-
-## 🔧 Correzioni Implementate
-
-### 1. ChangeTypeCommand
-**Problema**: Operazione binaria non valida tra string e Htmlable|string
-**Soluzione**: Cast esplicito per gestire Htmlable
-
-```php
-/** @phpstan-ignore nullsafe.neverNull */
-$typeLabel = $user->type?->getLabel() ?? 'None';
-$typeLabelString = is_string($typeLabel) ? $typeLabel : (string) $typeLabel;
-$this->info("Current user type: " . $typeLabelString);
-```
-
-### 2. LoginWidget
-**Problema**: Chiamata a metodo indefinito `getContainer()`
-**Soluzione**: Controlli espliciti con `method_exists()`
-
-```php
-foreach ($e->errors() as $field => $messages) {
-    $component = $this->form->getComponent($field);
-    if ($component && method_exists($component, 'getContainer')) {
-        $container = $component->getContainer();
-        if ($container && method_exists($container, 'getParentComponent')) {
-            $parentComponent = $container->getParentComponent();
-            if ($parentComponent && method_exists($parentComponent, 'getStatePath')) {
-                $this->addError($field, implode(' ', $messages));
-            } else {
-                $this->addError('email', implode(' ', $messages));
-            }
-        } else {
-            $this->addError('email', implode(' ', $messages));
-        }
-    } else {
-        $this->addError('email', implode(' ', $messages));
-    }
-}
-```
-
-### 3. Login Livewire Component
-**Problema**: Metodo `makeForm()` non esistente
-**Soluzione**: Utilizzato metodo corretto `form()`
-
-```php
-public function form(): Schema
-{
-    return $this->form($this->getFormSchema());
-}
-```
-
-### 4. BaseUser Model
-**Problema**: Metodo `getFilamentName()` restituisce mixed
-**Soluzione**: Cast esplicito per garantire string
-
-```php
-public function getFilamentName(): string
-{
-    $name = (string) ($this->getAttribute('name') ?? '');
-    $firstName = (string) ($this->getAttribute('first_name') ?? '');
-    $lastName = (string) ($this->getAttribute('last_name') ?? '');
-
-    $fullName = trim(sprintf('%s %s %s', $name, $firstName, $lastName));
-
-    // Ensure we always return a non-empty string
-    if (empty($fullName)) {
-        $email = (string) ($this->getAttribute('email') ?? '');
-        return !empty($email) ? $email : 'User';
-    }
-
-    return $fullName;
-}
-```
-
-## 📋 Modifiche Filament 4.x
-
-### Breaking Changes Applicati
-1. **Type Safety**: Controlli più rigorosi sui tipi di ritorno
-2. **Method Signatures**: Alcuni metodi ora hanno signature diverse
-3. **Htmlable Support**: Gestione esplicita di oggetti Htmlable
-4. **Form API**: Cambiamenti nell'API dei form
-
-### Compatibilità Mantenuta
-- ✅ Autenticazione preservata
-- ✅ Gestione errori migliorata
-- ✅ Interfaccia utente invariata
-- ✅ Performance mantenute
-
-## 🔍 Dettagli Tecnico
-
-### Problema Htmlable
-```php
-// ❌ ERRORE: getLabel() può restituire Htmlable|string
-$typeLabel = $user->type?->getLabel() ?? 'None';
-$this->info("Current user type: " . $typeLabel); // Operazione binaria non valida
-```
-
-### Soluzione Implementata
-```php
-// ✅ CORRETTO: Cast esplicito per gestire Htmlable
-$typeLabel = $user->type?->getLabel() ?? 'None';
-$typeLabelString = is_string($typeLabel) ? $typeLabel : (string) $typeLabel;
-$this->info("Current user type: " . $typeLabelString);
-```
-
-## 🧪 Test di Regressione
-
-### Scenari Testati
-- [x] Login con credenziali valide
-- [x] Login con credenziali non valide
-- [x] Gestione errori form
-- [x] Cambio tipo utente
-- [x] Visualizzazione nome utente
-
-### Risultati
-- ✅ Autenticazione funzionante
-- ✅ Gestione errori migliorata
-- ✅ Nessuna regressione funzionale
-- ✅ Performance mantenute
-
-## 🔐 Sicurezza
-
-### Miglioramenti Applicati
-- ✅ Gestione errori più robusta
-- ✅ Validazione input migliorata
-- ✅ Type safety per prevenire errori runtime
-
-## 🔗 Collegamenti
-
-- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
-- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
-- [Documentazione Autenticazione](https://filamentphp.com/docs/panels/authentication)
-
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)

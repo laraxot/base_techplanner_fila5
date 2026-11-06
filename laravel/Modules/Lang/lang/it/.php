@@ -1,8 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
-<<<<<<< HEAD
 return array (
   'sections' => 
   array (
@@ -33,7 +31,7 @@ return array (
     'plural_label' => 'Missing Navigation Plural Label',
     'group' => 'Missing Group',
     'icon' => 'heroicon-o-puzzle-piece',
-    'sort' => 100,
+    'sort' => '100',
   ),
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
@@ -41,25 +39,3 @@ return array (
   array (
   ),
 );
-=======
-return [
-    'sections' => [
-        'empty' => [
-            'label' => 'empty',
-            'heading' => 'empty',
-        ],
-    ],
-    'actions' => [
-        'profile' => [
-            'label' => 'profile',
-            'icon' => 'profile',
-            'tooltip' => 'profile',
-        ],
-        'logout' => [
-            'label' => 'logout',
-            'icon' => 'logout',
-            'tooltip' => 'logout',
-        ],
-    ],
-];
->>>>>>> 6ed19256f (.)

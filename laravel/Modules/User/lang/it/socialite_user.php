@@ -4,138 +4,31 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-        'provider' => [
-            'label' => 'provider',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'provider_id' => [
-            'label' => 'provider_id',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'name',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email' => [
-            'label' => 'email',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'avatar' => [
-            'label' => 'avatar',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'create' => [
-            'label' => 'create',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
         'attach' => [
-            'label' => 'attach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'layout' => [
-            'label' => 'layout',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'view' => [
-            'label' => 'view',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'edit' => [
-            'label' => 'edit',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
+            'label' => 'Collega account social',
+            'icon' => 'heroicon-o-link',
+            'tooltip' => 'Collega questo account social al profilo',
         ],
         'detach' => [
-            'label' => 'detach',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
+            'label' => 'Scollega account social',
+            'icon' => 'heroicon-o-link-slash',
+            'tooltip' => 'Scollega questo account social dal profilo',
         ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
+        'save' => [
+            'label' => 'Salva',
+            'icon' => 'heroicon-o-check',
+            'tooltip' => 'Salva il collegamento social',
         ],
-        'provider_id' => [
-            'label' => 'provider_id',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'avatar' => [
-            'label' => 'avatar',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'layout' => [
-            'label' => 'layout',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 6ed19256f (.)
-        ],
+
     ],
     'navigation' => [
-        'sort' => 89,
-        'icon' => 'heroicon-o-user',
-        'group' => 'Authentication',
-        'label' => 'Social Authentications',
+        'name' => 'Utente social',
+        'plural' => 'Utenti social',
+        'label' => 'Utenti social',
+        'group' => 'Autenticazione social',
+        'icon' => 'heroicon-o-link',
+        'sort' => 73,
     ],
-<<<<<<< HEAD
-    'label' => 'Socialite User',
-    'plural_label' => 'Socialite User (Plurale)',
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Socialite User',
-        ],
-        'edit' => [
-            'label' => 'Modifica Socialite User',
-        ],
-        'delete' => [
-            'label' => 'Elimina Socialite User',
-        ],
-    ],
-=======
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 6ed19256f (.)
+    'label' => 'Utente social',
+    'plural_label' => 'Utenti social',
 ];

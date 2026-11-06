@@ -8,30 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Str;
 use Modules\Xot\Contracts\ExtraContract;
-<<<<<<< HEAD
-
-use function Safe\json_encode;
-
-=======
-use function Safe\json_encode;
->>>>>>> 6ed19256f (.)
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 use Webmozart\Assert\Assert;
+
+use function Safe\json_encode;
 
 /**
  * Modules\Xot\Models\HasExtraTrait.
  *
-<<<<<<< HEAD
- * @property string             $currency
- * @property float              $price
- * @property string             $price_complete
- * @property int                $qty
-=======
  * @property string $currency
  * @property float $price
  * @property string $price_complete
  * @property int $qty
->>>>>>> 6ed19256f (.)
  * @property ExtraContract|null $extra
  */
 trait HasExtraTrait
@@ -39,7 +27,7 @@ trait HasExtraTrait
     /**
      * Retrieves the morphed one-to-one relationship between the current model and the Extra model.
      *
-     * return MorphOne<ExtraContract>
+     * @return MorphOne<Model, $this>
      */
     public function extra(): MorphOne
     {
@@ -53,20 +41,14 @@ trait HasExtraTrait
             Model::class,
             '['.__LINE__.']['.class_basename($this).']['.$extra_class.']',
         );
-<<<<<<< HEAD
 
         /** @var class-string<Model> $extraClass */
         $extraClass = $extra_class;
 
         return $this->morphOne($extraClass, 'model');
-=======
-        // Assert::isInstanceOf($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
-        // Assert::implementsInterface($extra_class, ExtraContract::class, '['.__LINE__.']['.class_basename($this).']['.$extra_class.']');
-
-        return $this->morphOne($extra_class, 'model');
->>>>>>> 6ed19256f (.)
     }
 
+    /** @return array<array-key, mixed>|bool|float|int|string|null */
     public function getExtra(string $name): array|bool|float|int|string|null
     {
         $extra = $this->extra;
@@ -82,6 +64,7 @@ trait HasExtraTrait
         $value = $attributes->get($name);
 
         if (\is_array($value)) {
+            // Liste e mappe restano com'erano: il round-trip di setExtra non deve perdere elementi.
             return $value;
         }
 
@@ -93,13 +76,11 @@ trait HasExtraTrait
     }
 
     /**
-<<<<<<< HEAD
-     * @param int|float|string|array<string, mixed>|bool|null $value
-=======
-     * @param  int|float|string|array<string, mixed>|bool|null  $value
->>>>>>> 6ed19256f (.)
+     * Persist a schemaless attribute on the related Extra model.
+     *
+     * @param  array<string, mixed>|bool|float|int|string|null  $value
      */
-    public function setExtra(string $name, int|float|string|array|bool|null $value): void
+    public function setExtra(string $name, array|bool|float|int|string|null $value): void
     {
         $extra = $this->extra;
         if (! $extra instanceof ExtraContract || ! $extra instanceof Model) {

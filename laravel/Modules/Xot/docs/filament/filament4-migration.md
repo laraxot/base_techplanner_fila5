@@ -1,4 +1,11 @@
-<<<<<<< HEAD
+---
+title: "Filament 5.x Migration Guide"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, filament]
+qmd: "filament 5.x migration guide xot"
+---
 # Filament 5.x Migration Guide
 
 **Data**: 2026-01-30
@@ -156,6 +163,3 @@ Chart.register(ChartDataLabels);
 
 - [Filament 5.x Upgrade Guide](https://filamentphp.com/docs/5.x/upgrade-guide)
 - [Livewire 4.x Upgrade Guide](https://livewire.laravel.com/docs/4.x/upgrading)
-=======
-
->>>>>>> 6ed19256f (.)

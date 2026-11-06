@@ -1,3 +1,11 @@
+---
+title: "Linee Guida per la Documentazione in Laraxot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "linee guida per la documentazione in laraxot xot"
+---
 # Linee Guida per la Documentazione in Laraxot
 
 Questo documento definisce le best practices per la creazione e la manutenzione della documentazione all'interno del framework Laraxot.
@@ -214,10 +222,6 @@ Quando si fa riferimento a concetti o classi in altri moduli, utilizzare collega
 
 ```markdown
 Per ulteriori informazioni, consultare la [documentazione del modulo UI](../UI/project_docs/README.md).
-<<<<<<< HEAD
-Per ulteriori informazioni, consultare la [documentazione del modulo UI](../ui/project_docs/readme.md).
-=======
->>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Documentazione Centralizzata
@@ -226,10 +230,6 @@ Alcuni argomenti comuni a più moduli dovrebbero essere documentati nel modulo X
 
 ```markdown
 Per le best practices generali sul framework, consultare la [guida principale](../Xot/project_docs/best-practices.md).
-<<<<<<< HEAD
-Per le best practices generali sul framework, consultare la [guida principale](../xot/project_docs/best-practices.md).
-=======
->>>>>>> 6ed19256f (.)
 ```
 
 ## Esempi di Eccellenza
@@ -286,8 +286,4 @@ Per implementare queste linee guida:
 
 - [Markdown Guide](https://www.markdownguide.org/)
 - [Documentazione Laravel](https://laravel.com/docs)
-<<<<<<< HEAD
 - [Documentazione PHPDoc](https://docs.phpdoc.org/)
-=======
-- [Documentazione PHPDoc](https://docs.phpdoc.org/)
->>>>>>> 6ed19256f (.)

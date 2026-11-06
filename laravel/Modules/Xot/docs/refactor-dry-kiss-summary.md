@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: refactor-dry-kiss-summary
-canonical: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
+title: "Refactor Radicale DRY + KISS - Riepilogo Completo"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "refactor radicale dry + kiss - riepilogo completo xot"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry-kiss-summary.md
-=======
 # Refactor Radicale DRY + KISS - Riepilogo Completo
 
 > **🎯 Obiettivo Raggiunto**: Eliminazione massiva duplicazioni documentali
@@ -107,8 +106,8 @@ See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry
 | Lang | 22+ | Localizzazione standardizzata |
 | Media | 9+ | Asset management unificato |
 | Notify | 19+ | Notifiche standardizzate |
-| SaluteMo | 13+ | Business logic semplificata |
-| SaluteOra | 45+ | Core business centralizzato |
+| <nome progetto> | 13+ | Business logic semplificata |
+| <nome progetto> | 45+ | Core business centralizzato |
 | Tenant | 7+ | Multi-tenancy unificata |
 | UI | 14+ | Componenti standardizzati |
 | User | 21+ | Autenticazione centralizzata |
@@ -223,4 +222,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/refactor-dry
 **Completato**: 2025-08-07
 **Durata refactor**: 15 minuti
 **Impatto**: TRASFORMATIVO
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Traduzioni con '.navigation' - Audit Completo 2025"
+module: "Lang"
+type: concept
+tags: [readme.es, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme.es 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema
@@ -101,9 +115,9 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
->>>>>>> 6ed19256f (.)
+- [Best Practices Traduzioni](../../xot/docs/translation_rules.md)
+
+*Ultimo aggiornamento: 6 Gennaio 2025*

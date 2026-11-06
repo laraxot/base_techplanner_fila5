@@ -1,3 +1,15 @@
+---
+title: "frontoffice"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "frontoffice"
+issues: []
+discussions: []
+status: draft
+---
+
 # Documentazione Frontoffice
 
 ## Introduzione
@@ -274,11 +286,7 @@ Per estendere il frontoffice con nuove funzionalità:
 
 ## Collegamenti Bidirezionali
 - [README](README.md) - Documentazione principale del modulo
-<<<<<<< HEAD
-- [README](readme.md) - Documentazione principale del modulo
-=======
->>>>>>> 6ed19256f (.)
-- [Architettura](architecture.md) - Architettura generale del frontoffice
+- [Architettura](frontoffice/architecture.md) - Architettura generale del frontoffice
 - [Gestione Route](gestione-route-folio.md) - Gestione delle route con Folio
 - [Volt](volt-web-application.md) - Sviluppo con Laravel Volt
 - [Layout](struttura-layout-componenti-blade-<nome progetto>.md) - Struttura dei layout
@@ -287,20 +295,9 @@ Per estendere il frontoffice con nuove funzionalità:
 - [Wizard](ux-wizard-registrazione-paziente.md) - Wizard di registrazione
 
 ## Vedi Anche
-<<<<<<< HEAD
-- [Modulo UI](../ui/docs/readme.md) - Componenti UI per il frontoffice
-- [Modulo Lang](../lang/docs/readme.md) - Gestione traduzioni
-- [Modulo User](../user/docs/readme.md) - Gestione utenti
-- [Modulo Xot](../xot/docs/readme.md) - Classi base e utilities
-=======
->>>>>>> 6ed19256f (.)
-- [Modulo UI](../UI/docs/README.md) - Componenti UI per il frontoffice
-- [Modulo Lang](../Lang/docs/README.md) - Gestione traduzioni
-- [Modulo User](../User/docs/README.md) - Gestione utenti
-- [Modulo Xot](../Xot/docs/README.md) - Classi base e utilities
+- [Modulo UI](../../UI/docs/README.md) - Componenti UI per il frontoffice
+- [Modulo Lang](../../Lang/docs/README.md) - Gestione traduzioni
+- [Modulo User](../../User/docs/README.md) - Gestione utenti
+- [Modulo Xot](../../Xot/docs/README.md) - Classi base e utilities
 - [Documentazione Volt](volt-introduction.md) - Introduzione a Laravel Volt
-<<<<<<< HEAD
 - [Documentazione Folio](folio-pages.md) - Gestione delle pagine con Laravel Folio
-=======
-- [Documentazione Folio](folio-pages.md) - Gestione delle pagine con Laravel Folio
->>>>>>> 6ed19256f (.)

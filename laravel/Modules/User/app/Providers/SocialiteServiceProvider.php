@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers;
 
-<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Event;
 use SocialiteProviders\Manager\ServiceProvider as BaseSocialiteServiceProvider;
@@ -19,9 +18,50 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
     public function register(): void
     {
         parent::register();
+        $this->mergeSocialProviderCredentialsFromEnv();
 
         // Load admin-configured OAuth settings from secure file
         $this->loadAdminSocialiteConfig();
+    }
+
+    /**
+     * Merge OAuth client credentials from Laravel services config into user.social-providers.
+     * Credentials live in config/services.php (env allowed there); module config stays env-free.
+     */
+    private function mergeSocialProviderCredentialsFromEnv(): void
+    {
+        /** @var list<string> $providers */
+        $providers = [
+            'facebook',
+            'twitter',
+            'linkedin',
+            'google',
+            'github',
+            'gitlab',
+            'bitbucket',
+            'slack',
+            'apple',
+            'microsoft',
+            'pinterest',
+            'reddit',
+            'tiktok',
+            'twitch',
+        ];
+
+        foreach ($providers as $provider) {
+            /** @var array<string, mixed> $serviceConfig */
+            $serviceConfig = config("services.{$provider}", []);
+
+            $clientId = $serviceConfig['client_id'] ?? null;
+            if (is_string($clientId) && $clientId !== '') {
+                Config::set("user.social-providers.{$provider}.client_id", $clientId);
+            }
+
+            $clientSecret = $serviceConfig['client_secret'] ?? null;
+            if (is_string($clientSecret) && $clientSecret !== '') {
+                Config::set("user.social-providers.{$provider}.client_secret", $clientSecret);
+            }
+        }
     }
 
     /**
@@ -63,10 +103,4 @@ class SocialiteServiceProvider extends BaseSocialiteServiceProvider
             Config::set("services.{$provider}", array_merge($existingConfig, $settings));
         }
     }
-=======
-use SocialiteProviders\Manager\ServiceProvider as BaseSocialiteServiceProvider;
-
-class SocialiteServiceProvider extends BaseSocialiteServiceProvider
-{
->>>>>>> 6ed19256f (.)
 }

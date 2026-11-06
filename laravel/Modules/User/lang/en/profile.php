@@ -18,105 +18,54 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'help' => 'Indirizzo email dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Data di nascita dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'gender' => [
             'label' => 'Genere',
             'male' => 'Maschio',
             'female' => 'Femmina',
             'other' => 'Altro',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'id' => [
-            'label' => 'ID',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'ente' => [
-            'label' => 'Ente',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'matr' => [
-            'label' => 'Matricola',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'ente' => [
-            'label' => 'Ente',
-        ],
-        'matr' => [
-            'label' => 'Matricola',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -135,9 +84,17 @@ return [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
-<<<<<<< HEAD
+    'privacy_policy' => [
+        'title' => 'Privacy policy',
+        'description' => 'How we handle your personal data.',
+    ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'delete_account' => [
+        'title' => 'Delete Account',
+        'description' => 'Once your account is deleted, all of its resources and data will be permanently deleted. Before proceeding, please download any data you wish to retain.',
+        'password_confirmation' => 'Confirm your password',
+        'button' => 'Delete Account',
+        'delete' => 'Delete Account',
+    ],
 ];

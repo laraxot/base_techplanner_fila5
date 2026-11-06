@@ -64,12 +64,9 @@ return [
             'label' => 'migrate',
         ],
     ],
-    'title' => 'artisan commands manager',
-<<<<<<< HEAD
+    'title' => 'Artisan-Befehlsverwaltung',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

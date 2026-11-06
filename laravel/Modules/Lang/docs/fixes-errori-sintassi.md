@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
+module: "Lang"
+type: concept
+tags: [links01]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links01"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: fixes-syntax-errors.md
+---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti
@@ -167,7 +182,5 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Best practices traduzioni](./translation_rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-<<<<<<< HEAD
 *Ultimo aggiornamento: 6 Gennaio 2025*
-=======
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: 6 Gennaio 2025*

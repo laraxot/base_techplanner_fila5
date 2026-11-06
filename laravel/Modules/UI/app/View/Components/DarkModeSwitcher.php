@@ -25,11 +25,7 @@ final class DarkModeSwitcher extends Component
      */
     public function __construct()
     {
-        $this->widget = new DarkModeSwitcherWidget();
-<<<<<<< HEAD
-        $this->widget = new DarkModeSwitcherWidget();
-=======
->>>>>>> 6ed19256f (.)
+        $this->widget = new DarkModeSwitcherWidget;
     }
 
     /**

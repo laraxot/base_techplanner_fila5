@@ -1,3 +1,11 @@
+---
+title: "Regole Generali sulle State Machine"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "regole generali sulle state machine xot"
+---
 # Regole Generali sulle State Machine
 
 ## Transizioni
@@ -9,10 +17,6 @@
 - Ogni errore e soluzione va documentato sia nella docs del modulo sia qui, con link bidirezionali.
 
 ## Collegamenti
-<<<<<<< HEAD
 - [../../<nome progetto>/project_docs/state-machine.md](../../<nome progetto>/project_docs/state-machine.md)
-=======
-- [../../saluteora/project_docs/state-machine.md](../../saluteora/project_docs/state-machine.md)
->>>>>>> 6ed19256f (.)
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)

@@ -9,10 +9,6 @@ use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\Gdpr\Database\Factories\ProfileFactory;
->>>>>>> 6ed19256f (.)
 use Modules\User\Models\BaseProfile;
 use Modules\User\Models\Device;
 use Modules\User\Models\DeviceProfile;
@@ -28,93 +24,6 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 /**
  * Modules\Gdpr\Models\Profile.
  *
-<<<<<<< HEAD
- * @property string                                                    $id
- * @property string|null                                               $post_type
- * @property string|null                                               $bio
- * @property Carbon|null                                               $created_at
- * @property Carbon|null                                               $updated_at
- * @property string|null                                               $created_by
- * @property string|null                                               $updated_by
- * @property string|null                                               $deleted_by
- * @property string|null                                               $first_name
- * @property string|null                                               $surname
- * @property string|null                                               $email
- * @property string|null                                               $phone
- * @property string|null                                               $address
- * @property string|null                                               $user_id
- * @property string|null                                               $last_name
- * @property string|null                                               $tax_code
- * @property string|null                                               $vat_number
- * @property Carbon|null                                               $deleted_at
- * @property SchemalessAttributes                                      $extra
- * @property string                                                    $avatar
- * @property ProfileContract|null                                      $creator
- * @property Collection<int, DeviceUser>                               $deviceUsers
- * @property int|null                                                  $device_users_count
- * @property DeviceProfile|null                                        $pivot
- * @property Collection<int, Device>                                   $devices
- * @property int|null                                                  $devices_count
- * @property string|null                                               $full_name
- * @property MediaCollection<int, Media>                               $media
- * @property int|null                                                  $media_count
- * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
- * @property int|null                                                  $mobile_device_users_count
- * @property Collection<int, Device>                                   $mobileDevices
- * @property int|null                                                  $mobile_devices_count
- * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property string                                                    $id
- * @property string|null                                               $post_type
- * @property string|null                                               $bio
- * @property Carbon|null                                               $created_at
- * @property Carbon|null                                               $updated_at
- * @property string|null                                               $created_by
- * @property string|null                                               $updated_by
- * @property string|null                                               $deleted_by
- * @property string|null                                               $first_name
- * @property string|null                                               $surname
- * @property string|null                                               $email
- * @property string|null                                               $phone
- * @property string|null                                               $address
- * @property string|null                                               $user_id
- * @property string|null                                               $last_name
- * @property string|null                                               $tax_code
- * @property string|null                                               $vat_number
- * @property Carbon|null                                               $deleted_at
- * @property SchemalessAttributes                                      $extra
- * @property string                                                    $avatar
- * @property ProfileContract|null                                      $creator
- * @property Collection<int, DeviceUser>                               $deviceUsers
- * @property int|null                                                  $device_users_count
- * @property DeviceProfile|null                                        $pivot
- * @property Collection<int, Device>                                   $devices
- * @property int|null                                                  $devices_count
- * @property string|null                                               $full_name
- * @property MediaCollection<int, Media>                               $media
- * @property int|null                                                  $media_count
- * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
- * @property int|null                                                  $mobile_device_users_count
- * @property Collection<int, Device>                                   $mobileDevices
- * @property int|null                                                  $mobile_devices_count
- * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null                                                  $notifications_count
- * @property Collection<int, Permission>                               $permissions
- * @property int|null                                                  $permissions_count
- * @property Collection<int, Role>                                     $roles
- * @property int|null                                                  $roles_count
- * @property ProfileContract|null                                      $updater
- * @property User|null                                                 $user
- * @property string|null                                               $user_name
- * @property int|null                                                  $notifications_count
- * @property Collection<int, Permission>                               $permissions
- * @property int|null                                                  $permissions_count
- * @property Collection<int, Role>                                     $roles
- * @property int|null                                                  $roles_count
- * @property ProfileContract|null                                      $updater
- * @property User|null                                                 $user
- * @property string|null                                               $user_name
- *
-=======
  * @property string $id
  * @property string|null $post_type
  * @property string|null $bio
@@ -134,33 +43,72 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property string|null $vat_number
  * @property Carbon|null $deleted_at
  * @property SchemalessAttributes $extra
+ * @property string $avatar
+ * @property ProfileContract|null $creator
+ * @property Collection<int, DeviceUser> $deviceUsers
+ * @property int|null $device_users_count
+ * @property DeviceProfile|null $pivot
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $full_name
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property Collection<int, DeviceUser> $mobileDeviceUsers
+ * @property int|null $mobile_device_users_count
+ * @property Collection<int, Device> $mobileDevices
+ * @property int|null $mobile_devices_count
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property string $id
+ * @property string|null $post_type
+ * @property string|null $bio
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $deleted_by
+ * @property string|null $first_name
+ * @property string|null $surname
+ * @property string|null $email
+ * @property string|null $phone
+ * @property string|null $address
+ * @property string|null $user_id
+ * @property string|null $last_name
+ * @property string|null $tax_code
+ * @property string|null $vat_number
+ * @property Carbon|null $deleted_at
+ * @property SchemalessAttributes $extra
+ * @property string $avatar
+ * @property ProfileContract|null $creator
+ * @property Collection<int, DeviceUser> $deviceUsers
+ * @property int|null $device_users_count
+ * @property DeviceProfile|null $pivot
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $full_name
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property Collection<int, DeviceUser> $mobileDeviceUsers
+ * @property int|null $mobile_device_users_count
+ * @property Collection<int, Device> $mobileDevices
+ * @property int|null $mobile_devices_count
+ * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
+ * @property int|null $notifications_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property ProfileContract|null $updater
+ * @property User|null $user
+ * @property string|null $user_name
+ * @property int|null $notifications_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property ProfileContract|null $updater
+ * @property User|null $user
+ * @property string|null $user_name
  *
- * @property-read string $avatar
- * @property-read ProfileContract|null $creator
- * @property-read Collection<int, DeviceUser> $deviceUsers
- * @property-read int|null $device_users_count
- * @property-read DeviceProfile|null $pivot
- * @property-read Collection<int, Device> $devices
- * @property-read int|null $devices_count
- * @property-read string|null $full_name
- * @property-read MediaCollection<int, Media> $media
- * @property-read int|null $media_count
- * @property-read Collection<int, DeviceUser> $mobileDeviceUsers
- * @property-read int|null $mobile_device_users_count
- * @property-read Collection<int, Device> $mobileDevices
- * @property-read int|null $mobile_devices_count
- * @property-read DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property-read int|null $notifications_count
- * @property-read Collection<int, Permission> $permissions
- * @property-read int|null $permissions_count
- * @property-read Collection<int, Role> $roles
- * @property-read int|null $roles_count
- * @property-read ProfileContract|null $updater
- * @property-read User|null $user
- * @property-read string|null $user_name
- *
- * @method static ProfileFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, $without = false)
@@ -188,30 +136,22 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile withoutPermission($permissions)
  * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
  *
-<<<<<<< HEAD
  * @property ProfileContract|null $deleter
- * @property string|null          $fiscal_code
- * @property string|null          $notes
- * @property string|null          $fiscal_code
- * @property string|null          $notes
+ * @property string|null $fiscal_code
+ * @property string|null $notes
+ * @property string|null $fiscal_code
+ * @property string|null $notes
  *
- * @method static Builder<static>|Profile                         childrenWith(array $relations)
- * @method static Builder<static>|Profile                         childrenWithCount(array $relations)
+ * @method static Builder<static>|Profile childrenWith(array<int|string, mixed> $relations)
+ * @method static Builder<static>|Profile childrenWithCount(array<int|string, mixed> $relations)
  * @method static \Modules\Gdpr\Database\Factories\ProfileFactory factory($count = null, $state = [])
- * @method static Builder<static>|Profile                         whereFiscalCode($value)
- * @method static Builder<static>|Profile                         whereNotes($value)
- * @method static Builder<static>|Profile                         byUuid(string $uuid)
-=======
- * @property-read ProfileContract|null $deleter
->>>>>>> 6ed19256f (.)
+ * @method static Builder<static>|Profile whereFiscalCode($value)
+ * @method static Builder<static>|Profile whereNotes($value)
+ * @method static Builder<static>|Profile byUuid(string $uuid)
  *
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile
 {
-<<<<<<< HEAD
-=======
-    /** @var string */
->>>>>>> 6ed19256f (.)
     protected $connection = 'gdpr';
 }

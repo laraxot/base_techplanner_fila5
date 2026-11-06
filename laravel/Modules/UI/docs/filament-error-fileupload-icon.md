@@ -1,3 +1,15 @@
+---
+title: "filament error fileupload icon"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament error fileupload icon"
+issues: []
+discussions: []
+status: draft
+---
+
 # Errore: Metodo `icon()` su FileUpload di Filament
 
 ## Descrizione
@@ -17,19 +29,11 @@ Il metodo `icon()` **NON esiste** sul componente `Filament\Forms\Components\File
 - Seguire la tabella di compatibilità dei metodi nei componenti Filament (vedi doc di modulo Patient e Xot).
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Errore e best practice modulo Patient](../../patient/docs/filament-error-fileupload-icon.md)
 - [Tabella metodi supportati](filament-component-methods.md)
 
 ## Collegamenti tra versioni di filament-error-fileupload-icon.md
 * [filament-error-fileupload-icon.md](../../patient/docs/filament-error-fileupload-icon.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Errore e best practice modulo Patient](../../Patient/docs/filament-error-fileupload-icon.md)
-- [Tabella metodi supportati](filament-component-methods.md)
-
-## Collegamenti tra versioni di filament-error-fileupload-icon.md
-* [filament-error-fileupload-icon.md](../../Patient/docs/filament-error-fileupload-icon.md)
 # Errore: Metodo `icon()` su FileUpload di Filament
 
 ## Descrizione
@@ -49,20 +53,8 @@ Il metodo `icon()` **NON esiste** sul componente `Filament\Forms\Components\File
 - Seguire la tabella di compatibilità dei metodi nei componenti Filament (vedi doc di modulo Patient e Xot).
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Errore e best practice modulo Patient](../../patient/project_docs/filament-error-fileupload-icon.md)
 - [Tabella metodi supportati](filament-component-methods.md)
 
 ## Collegamenti tra versioni di filament-error-fileupload-icon.md
 * [filament-error-fileupload-icon.md](../../patient/project_docs/filament-error-fileupload-icon.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Errore e best practice modulo Patient](../../Patient/project_docs/filament-error-fileupload-icon.md)
-- [Tabella metodi supportati](filament-component-methods.md)
-
-## Collegamenti tra versioni di filament-error-fileupload-icon.md
-<<<<<<< HEAD
-* [filament-error-fileupload-icon.md](../../Patient/project_docs/filament-error-fileupload-icon.md)
-=======
-* [filament-error-fileupload-icon.md](../../Patient/project_docs/filament-error-fileupload-icon.md)
->>>>>>> 6ed19256f (.)

@@ -12,17 +12,27 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
   - ./concepts/ai-harness-geo-discipline.md
-  - ../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+  - ../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md
+status: draft
 ---
 
 # Geo Module Wiki
 
+## Picker
+
+- [picker-marker-and-controls-on-host-pages](./concepts/picker-marker-and-controls-on-host-pages.md) - marker con tipo/stato e pulsanti opachi nelle pagine ospiti (DCP-152)
+- [coordinate-picker-field](./concepts/coordinate-picker-field.md) - il campo Filament del picker e il suo componente Lit
+- [coordinate-picker-design-comuni-runtime-rule](./concepts/coordinate-picker-design-comuni-runtime-rule.md) - regola runtime del picker nelle pagine Design Comuni
+- [geo-map-lit](./concepts/geo-map-lit.md) - il componente mappa `geo-map-lit`
+- [mobile-viewport-zoom-contract](./concepts/mobile-viewport-zoom-contract.md) - zoom pagina accessibile sulle mappe statiche
+- [Elenco completo dei concept](./concepts/index.md) - tutti i 148 concept della cartella, uno per riga
+
 ## AI / second brain
 
 - [ai-harness-geo-discipline](./concepts/ai-harness-geo-discipline.md)
-- [hackernoon-ai-coding-tips-fixcity-map](../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
-- [bmad/architecture](../../../../docs/wiki/bmad/architecture.md)
-- [ai-harness-module-discipline](../../docs/wiki/concepts/ai-harness-module-discipline.md)
+- [hackernoon-ai-coding-tips-fixcity-map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md)
+- [bmad/architecture](../../../../../docs/wiki/bmad/architecture.md)
+- [ai-harness-module-discipline](../../../Fixcity/docs/wiki/concepts/ai-harness-module-discipline.md) (unico file con questo nome nel repo, vive nel wiki di Fixcity)
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) → canon Xot
 
 
@@ -31,7 +41,7 @@ related:
 - [Skills](skills/INDEX.md)
 - [Commands](commands/INDEX.md)
 - [Memories](memories/INDEX.md)
-- [Concepts](concepts/INDEX.md)
+- [Concepts](concepts/index.md)
 
 ## Nota frontoffice (tema Sixteen)
 
@@ -39,11 +49,12 @@ related:
 
 **Ricostruzione:** [geo-map-lit-reconstruction-guide.md](concepts/geo-map-lit-reconstruction-guide.md) · [geo-map-fixes-registry.md](concepts/geo-map-fixes-registry.md) · hub root [map-lit-reconstruction-hub.md](../../../../../docs/wiki/memories/map-lit-reconstruction-hub.md)
 
-- [map-lit-it-incidents-2026-06.md](troubleshooting/map-lit-it-incidents-2026-06.md) — STORY-121…129 runbook
+- [map-lit-it-incidents-2026.md](troubleshooting/map-lit-it-incidents-2026.md) — STORY-121…129 runbook
 - [map-popup-header-whitespace-fix.md](troubleshooting/map-popup-header-whitespace-fix.md) — vuoto popup header→Tipologia
 - [farmshops-eu-applicability-fixcity.md](concepts/farmshops-eu-applicability-fixcity.md) — pattern cluster
+- [farmshops-cluster-type-icons-study.md](concepts/farmshops-cluster-type-icons-study.md) — STORY-284 gap stato→icone tipo
 - [map-lit-legend-types.md](concepts/map-lit-legend-types.md) — STORY-094 legenda tipologie
-- [map-lit-cluster-type-icons.md](concepts/map-lit-cluster-type-icons.md) — pallini 14px cluster
+- [map-lit-cluster-type-icons.md](concepts/map-lit-cluster-type-icons.md) — icone tipo cluster 14px (non stato)
 - [map-legend-status-semantics.md](concepts/map-legend-status-semantics.md) — STORY-125 stato vs tipologia
 - [geo-map-popup-bem.md](concepts/geo-map-popup-bem.md) — block `popup`, `<div class="popup__header">`
 - [geo-map-marker-status-background.md](concepts/geo-map-marker-status-background.md) — marker stato + pad bianco + punta
@@ -60,3 +71,10 @@ qmd search "Geo <topic>" --limit 5
 
 ---
 *Updated: 2026-06-03 — ricostruzione map-lit, marker pin, popup header fix*
+
+## Composer / nwidart
+
+- [composer-root-minimal-nwidart](concepts/composer-root-minimal-nwidart.md) — root skeleton nwidart (modello fixcity)
+## Canonical boundary
+
+- [geo-data-and-map-boundary](./concepts/geo-data-and-map-boundary.md) — GeoJSON, geocoding e confine con Fixcity/Sixteen.

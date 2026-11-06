@@ -11,7 +11,6 @@ return [
         'missing_opening_time' => 'Wenn Sie :session Schließzeit für :day angeben, müssen Sie auch die Öffnungszeit angeben.',
         'opening_before_closing' => 'Die :session Öffnungszeit für :day muss vor der Schließzeit liegen.',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -25,6 +24,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

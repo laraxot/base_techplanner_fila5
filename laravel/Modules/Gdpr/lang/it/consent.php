@@ -15,7 +15,6 @@ return [
         'icon' => 'gdpr-consent',
     ],
     'fields' => [
-<<<<<<< HEAD
         'user' => [
             'label' => 'Utente',
             'tooltip' => '',
@@ -69,22 +68,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'user' => 'Utente',
-        'type' => 'Tipo Consenso',
-        'status' => 'Stato',
-        'date' => 'Data',
-        'ip_address' => 'Indirizzo IP',
-        'notes' => 'Note',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'statuses' => [
@@ -99,9 +82,6 @@ return [
         'withdraw' => 'Revoca',
         'renew' => 'Rinnova',
     ],
-<<<<<<< HEAD
     'label' => 'Consent',
     'plural_label' => 'Consent (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,17 +1,22 @@
+---
+title: "header language selector with flags"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "header language selector with flags"
+issues: []
+discussions: []
+status: draft
+---
+
 # Implementazione del Selettore di Lingua con Bandiere SVG
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo Cms](../readme.md)
+- [README modulo Cms](../README.md)
 - [Documentazione User](/laravel/modules/user/project_docs/header_language_selector_with_flags.md)
 - [Documentazione Sezioni](./sections_structure.md)
 - [Best Practices Chiavi di Traduzione](/laravel/modules/lang/project_docs/translation_keys_best_practices.md)
-=======
->>>>>>> 6ed19256f (.)
-- [README modulo Cms](../README.md)
-- [Documentazione User](/laravel/Modules/User/project_docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
-- [Documentazione Sezioni](./SECTIONS_STRUCTURE.md)
-- [Best Practices Chiavi di Traduzione](/laravel/Modules/Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Collegamenti Documentazione](/project_docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -56,13 +61,8 @@ Ecco un'implementazione migliorata del selettore di lingua che utilizza le bandi
     >
         {{-- Mostra la bandiera della lingua corrente --}}
         <span class="flex items-center">
-            <x-dynamic-component
-                :component="'ui-flags.' . $currentLocale"
-<<<<<<< HEAD
             <x-dynamic-component 
                 :component="'ui-flags.' . $currentLocale" 
-=======
->>>>>>> 6ed19256f (.)
                 class="w-6 h-6 rounded-full shadow-sm border border-gray-200"
                 aria-hidden="true"
             />
@@ -72,12 +72,7 @@ Ecco un'implementazione migliorata del selettore di lingua che utilizza le bandi
             </svg>
         </span>
     </button>
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     <div
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
@@ -94,13 +89,8 @@ Ecco un'implementazione migliorata del selettore di lingua che utilizza le bandi
                     href="{{ '/' . $locale . request()->getPathInfo() }}"
                     class="flex items-center px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 {{ $currentLocale === $locale ? 'bg-gray-100' : '' }}"
                 >
-                    <x-dynamic-component
-                        :component="'ui-flags.' . $locale"
-<<<<<<< HEAD
                     <x-dynamic-component 
                         :component="'ui-flags.' . $locale" 
-=======
->>>>>>> 6ed19256f (.)
                         class="w-5 h-5 rounded-full mr-3"
                         aria-hidden="true"
                     />
@@ -204,8 +194,4 @@ return [
 
 - [Documentazione Blade Icons](https://github.com/blade-ui-kit/blade-icons)
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
-<<<<<<< HEAD
 - [Documentazione Accessibilità WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/)
-=======
-- [Documentazione Accessibilità WAI-ARIA](https://www.w3.org/WAI/ARIA/apg/patterns/menubutton/)
->>>>>>> 6ed19256f (.)

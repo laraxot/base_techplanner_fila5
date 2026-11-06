@@ -1,4 +1,18 @@
+---
+title: "json database"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "json database"
+issues: []
+discussions: []
+status: draft
+---
+
 # JSON come Database per Dati Geografici
+
+> **Stato del codice.** `GeoService`, `GeoDataService`, `GeoDataValidator`, `GoogleMapsService` e `BaseGeoService` sono stati ritirati e la cartella `app/Services` non esiste piu'. Gli esempi che le citano descrivono codice storico. Sostituti vivi e prove di equivalenza: [services-to-actions-geo.story.md](./stories/services-to-actions-geo.story.md).
 
 ## Contesto
 Il file `resources/json/comuni.json` contiene i dati geografici italiani in formato JSON. Data la sua dimensione ridotta e la natura statica dei dati, è più efficiente utilizzarlo direttamente come fonte dati invece di creare tabelle nel database.
@@ -127,12 +141,7 @@ class GeoDataService
     public function getCap(string $provinceCode, string $cityCode): ?string
     {
         $cities = $this->getCities($provinceCode);
-<<<<<<< HEAD
         
-        
-=======
-
->>>>>>> 6ed19256f (.)
         $city = collect($cities)
             ->firstWhere('id', $cityCode);
 
@@ -171,11 +180,7 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'province' => Select::make('province')
-                        ->options(fn (Get $get) =>
-<<<<<<< HEAD
                         ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
                             $geoService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -186,11 +191,7 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'city' => Select::make('city')
-                        ->options(fn (Get $get) =>
-<<<<<<< HEAD
                         ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
                             $geoService->getCities($get('province'))
                         )
                         ->searchable()
@@ -201,11 +202,7 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'cap' => Select::make('cap')
-                        ->options(fn (Get $get) =>
-<<<<<<< HEAD
                         ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
                             collect($geoService->getCities($get('province')))
                                 ->firstWhere('id', $get('city'))['cap']
                         )
@@ -283,12 +280,6 @@ class GeoDataValidator
    - API esterna
 
 ## Collegamenti
-- [Documentazione Squire](../../Geo/project_docs/squire-integration.md)
-- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
-- [Clean Code](../../../project_docs/clean-code.md)
-<<<<<<< HEAD
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md) 
-=======
->>>>>>> 6ed19256f (.)

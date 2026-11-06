@@ -5,16 +5,17 @@ declare(strict_types=1);
 namespace Modules\Activity\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Collection as EloquentCollection;
+use Illuminate\Database\Query\Builder as QueryBuilder;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Activity\Database\Factories\ActivityFactory;
+use Modules\Activity\Traits\ActivityScopes;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
-<<<<<<< HEAD
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
-=======
->>>>>>> 6ed19256f (.)
 
 /**
  * Class Activity.
@@ -25,14 +26,11 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $log_name
  * @property string $description
  * @property string|null $subject_type
-<<<<<<< HEAD
  * @property string|null $subject_id
-=======
- * @property int|null $subject_id
->>>>>>> 6ed19256f (.)
  * @property string|null $causer_type
  * @property string|null $causer_id
  * @property array<string, mixed>|Collection<array-key, mixed>|null $properties
+ * @property Collection<int, mixed>|null $attribute_changes
  * @property string|null $batch_uuid
  * @property string|null $event
  * @property Carbon|null $created_at
@@ -41,106 +39,57 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
-<<<<<<< HEAD
-=======
- *
->>>>>>> 6ed19256f (.)
  * @property-read Model|null $causer
- * @property-read Collection $changes
+ * @property-read Collection<int, mixed> $changes
  * @property-read Model|null $subject
  *
  * @method static ActivityFactory factory($count = null, $state = [])
- * @method static Builder<static>|Activity forBatch(string $batchUuid)
- * @method static Builder<static>|Activity forEvent(string $event)
- * @method static Builder<static>|Activity forSubject(Model $subject)
- * @method static Builder<static>|Activity hasBatch()
- * @method static Builder<static>|Activity inLog(...$logNames)
- * @method static Builder<static>|Activity newModelQuery()
- * @method static Builder<static>|Activity newQuery()
- * @method static Builder<static>|Activity query()
- * @method static Builder<static>|Activity whereBatchUuid($value)
- * @method static Builder<static>|Activity whereCauserId($value)
- * @method static Builder<static>|Activity whereCauserType($value)
- * @method static Builder<static>|Activity whereCreatedAt($value)
- * @method static Builder<static>|Activity whereCreatedBy($value)
- * @method static Builder<static>|Activity whereDeletedAt($value)
- * @method static Builder<static>|Activity whereDeletedBy($value)
- * @method static Builder<static>|Activity whereDescription($value)
- * @method static Builder<static>|Activity whereEvent($value)
- * @method static Builder<static>|Activity whereId($value)
- * @method static Builder<static>|Activity whereLogName($value)
- * @method static Builder<static>|Activity whereProperties($value)
- * @method static Builder<static>|Activity whereSubjectId($value)
- * @method static Builder<static>|Activity whereSubjectType($value)
- * @method static Builder<static>|Activity whereUpdatedAt($value)
- * @method static Builder<static>|Activity whereUpdatedBy($value)
- * @method static Builder<static>|Activity where($column, $operator = null, $value = null, $boolean = 'and')
- * @method static Activity create(array $attributes = [])
- * @method static Builder<static>|Activity clone()
- * @method static Builder<static>|Activity selectRaw(string $expression)
- * @method static Builder<static>|Activity whereDate(string $column, string $operator, mixed $value = null)
- * @method static Builder<static>|Activity whereBetween(string $column, array $values)
- * @method static Builder<static>|Activity whereMonth(string $column, string $operator, mixed $value = null)
- * @method static Builder<static>|Activity whereYear(string $column, string $operator, mixed $value = null)
- * @method static Builder<static>|Activity latest(string $column = 'created_at')
- * @method static Builder<static>|Activity limit(int $value)
- * @method static Builder<static>|Activity with(array|string $relations)
- * @method static int sum(string $column)
- * @method static Collection<int, static>|Builder<static>|Activity get(array|string $columns = ['*'])
- * @method static static|null first(array|string $columns = ['*'])
- * @method static static find(mixed $id, array|string $columns = ['*'])
- * @method static static|null firstWhere(string $column, mixed $operator = null, mixed $value = null)
- * @method static Builder<static>|Activity orderBy(string $column, string $direction = 'asc')
- * @method static Builder<static>|Activity groupBy(array|string $groups)
- * @method static Builder<static>|Activity having(string $column, string $operator, mixed $value)
- * @method static Builder<static>|Activity orWhere(string $column, mixed $operator = null, mixed $value = null)
- * @method static Builder<static>|Activity whereIn(string $column, array $values)
- * @method static Builder<static>|Activity whereNotIn(string $column, array $values)
- * @method static Builder<static>|Activity whereNull(string $column)
- * @method static Builder<static>|Activity whereNotNull(string $column)
- * @method static int count(string $columns = '*')
- * @method static Collection<int, mixed> pluck(string $column, string|null $key = null)
- * @method static mixed max(string $column)
- * @method static mixed min(string $column)
- * @method static mixed avg(string $column)
- * @method static int sum(string $column)
- * @method static bool exists()
- * @method static bool doesntExist()
- * @method static Builder<static>|Activity distinct()
- * @method static Builder<static>|Activity join(string $table, string $first, string $operator = null, string $second = null)
- * @method static Builder<static>|Activity leftJoin(string $table, string $first, string $operator = null, string $second = null)
- * @method static Builder<static>|Activity rightJoin(string $table, string $first, string $operator = null, string $second = null)
- * @method static Builder<static>|Activity crossJoin(string $table)
- * @method static Builder<static>|Activity causedBy(Model $causer)
- *
- * @mixin \Eloquent
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static static create(array<string, mixed> $attributes = [])
  */
 class Activity extends SpatieActivity
 {
+    use ActivityScopes;
+
+    /** > */
     use HasXotFactory;
 
-<<<<<<< HEAD
-    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
+    /** @var string */
     protected $connection = 'activity';
 
     protected $table = 'activity_log';
 
     /**
-     * @param  array<string, mixed>  $attributes
+     * Typed query entry point for actions that operate on this concrete model.
+     *
+     * The upstream activity model exposes a broad builder type; this keeps the
+     * module's action contracts tied to Activity without weakening them.
+     *
+     * @return Builder<Activity>
      */
-    public function __construct(array $attributes = [])
+    public static function typedQuery(): Builder
     {
-        parent::__construct($attributes);
-        if (app()->environment('testing')) {
-            $default = config('database.default');
-            $this->connection = is_string($default) ? $default : 'mysql';
-        }
+        return (new self)->newQuery();
     }
 
-=======
-    protected $connection = 'activity';
+    /**
+     * @param Builder<Activity>|QueryBuilder $query
+     * @return EloquentCollection<int, Activity>
+     */
+    public static function typedGet(Builder|QueryBuilder $query): EloquentCollection
+    {
+        $activities = [];
+        foreach ($query->get() as $activity) {
+            if ($activity instanceof self) {
+                $activities[] = $activity;
+            }
+        }
 
->>>>>>> 6ed19256f (.)
+        return new EloquentCollection($activities);
+    }
+
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -149,10 +98,11 @@ class Activity extends SpatieActivity
         'subject_type',
         'event',
         'subject_id',
-<<<<<<< HEAD
         'causer_type',
         'causer_id',
         'properties',
+        'attribute_changes',
+        'batch_uuid',
     ];
 
     /**
@@ -164,16 +114,10 @@ class Activity extends SpatieActivity
     {
         return [
             'properties' => SchemalessAttributes::class,
+            'attribute_changes' => 'collection',
         ];
     }
 
-=======
-        'causer_type', // Added
-        'causer_id',   // Added
-        'properties', // Added
-    ];
-
->>>>>>> 6ed19256f (.)
     // NOTE
     // ----
     // We intentionally do not override static query helper methods here

@@ -1,17 +1,23 @@
+---
+title: "Fix PHPStan TransTrait - Tipizzazione Array Completa"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Fix PHPStan TransTrait - Tipizzazione Array Completa"
+---
 # Fix PHPStan TransTrait - Tipizzazione Array Completa
 
 ## Data: 2025-01-27
-<<<<<<< HEAD
-## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Identificato
 
 Errori PHPStan livello 9 nel trait `TransTrait`:
 
 1. **Parametri array non tipizzati**: `array $params` senza specificazione del tipo di valore
-2. **Variabili array non tipizzate**: `$res` senza specificazione del tipo di valore
+2. **Variabili array non tipizzate**: `$res` senza specificazione del tipo di valore  
 3. **Tipo di ritorno inconsistente**: `transClass()` poteva restituire `array|string` invece di `string`
 
 ## Errori Specifici
@@ -111,7 +117,7 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 
 ## Collegamenti
 
-- [TransTrait.php](../../app/Filament/Traits/TransTrait.php)
+- [TransTrait.php](../app/Filament/Traits/TransTrait.php)
 - [PHPStan Fixes](./phpstan-fixes.md)
 - [Translation System](./translation-system.md)
 
@@ -119,8 +125,4 @@ protected function transChoice(string $key, int $number, array $replace = []): s
 
 - Utilizzare sempre tipizzazione completa per array nei PHPDoc
 - Verificare che i metodi di traduzione restituiscano sempre string
-<<<<<<< HEAD
 - Testare sempre con PHPStan dopo modifiche ai trait di traduzione
-=======
-- Testare sempre con PHPStan dopo modifiche ai trait di traduzione
->>>>>>> 6ed19256f (.)

@@ -1,13 +1,33 @@
+---
+title: "Implementazione degli Avatar"
+type: concept
+tags: [avatar, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "avatar-implementation implementazione degli avatar"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -16,22 +36,14 @@ Questo documento descrive l'implementazione degli avatar utente , con particolar
 
 ## Struttura degli Avatar SVG
 
-<<<<<<< HEAD
 Gli avatar SVG sono posizionati nella directory `/laravel/Modules/UI/resources/svg/avatars/` seguendo le convenzioni di <nome progetto> per i componenti SVG. Sono stati creati quattro avatar predefiniti con design simpatici e colorati:
-=======
-Gli avatar SVG sono posizionati nella directory `/laravel/Modules/UI/resources/svg/avatars/` seguendo le convenzioni di SaluteOra per i componenti SVG. Sono stati creati quattro avatar predefiniti con design simpatici e colorati:
->>>>>>> 6ed19256f (.)
 
 1. **default-1.svg**: Avatar con sfondo viola e silhouette semplice
 2. **default-2.svg**: Avatar con sfondo verde e volto sorridente
 3. **default-3.svg**: Avatar con sfondo rosa e espressione vivace
 4. **default-4.svg**: Avatar con sfondo arancione e espressione sorpresa
 
-<<<<<<< HEAD
 Questi avatar vengono registrati automaticamente come componenti Blade con il prefisso `ui-avatars` grazie al sistema di registrazione delle icone di <nome progetto>.
-=======
-Questi avatar vengono registrati automaticamente come componenti Blade con il prefisso `ui-avatars` grazie al sistema di registrazione delle icone di SaluteOra.
->>>>>>> 6ed19256f (.)
 
 ## Componente Avatar
 
@@ -130,21 +142,12 @@ Il sistema di avatar può essere esteso in futuro per includere:
 
 - [Documentazione SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 - [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
-<<<<<<< HEAD
 - [Architettura Modulare <nome progetto>](/docs/architettura-modulare.md)
-=======
-- [Architettura Modulare SaluteOra](/docs/architettura-modulare.md)
->>>>>>> 6ed19256f (.)
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Implementazione Header con Selettore Lingua](/laravel/Modules/User/docs/HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md)
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header_language_selector_with_flags.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
 ## Panoramica
@@ -153,22 +156,14 @@ Questo documento descrive l'implementazione degli avatar utente , con particolar
 
 ## Struttura degli Avatar SVG
 
-<<<<<<< HEAD
 Gli avatar SVG sono posizionati nella directory `/laravel/Modules/UI/resources/svg/avatars/` seguendo le convenzioni di <nome progetto> per i componenti SVG. Sono stati creati quattro avatar predefiniti con design simpatici e colorati:
-=======
-Gli avatar SVG sono posizionati nella directory `/laravel/Modules/UI/resources/svg/avatars/` seguendo le convenzioni di SaluteOra per i componenti SVG. Sono stati creati quattro avatar predefiniti con design simpatici e colorati:
->>>>>>> 6ed19256f (.)
 
 1. **default-1.svg**: Avatar con sfondo viola e silhouette semplice
 2. **default-2.svg**: Avatar con sfondo verde e volto sorridente
 3. **default-3.svg**: Avatar con sfondo rosa e espressione vivace
 4. **default-4.svg**: Avatar con sfondo arancione e espressione sorpresa
 
-<<<<<<< HEAD
 Questi avatar vengono registrati automaticamente come componenti Blade con il prefisso `ui-avatars` grazie al sistema di registrazione delle icone di <nome progetto>.
-=======
-Questi avatar vengono registrati automaticamente come componenti Blade con il prefisso `ui-avatars` grazie al sistema di registrazione delle icone di SaluteOra.
->>>>>>> 6ed19256f (.)
 
 ## Componente Avatar
 
@@ -267,8 +262,4 @@ Il sistema di avatar può essere esteso in futuro per includere:
 
 - [Documentazione SVG](https://developer.mozilla.org/en-US/docs/Web/SVG)
 - [Blade Components Documentation](https://laravel.com/docs/10.x/blade#components)
-<<<<<<< HEAD
 - [Architettura Modulare <nome progetto>](/docs/architettura-modulare.md)
-=======
-- [Architettura Modulare SaluteOra](/docs/architettura-modulare.md)
->>>>>>> 6ed19256f (.)

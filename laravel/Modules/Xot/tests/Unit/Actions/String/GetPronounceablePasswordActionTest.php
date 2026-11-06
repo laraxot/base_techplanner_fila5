@@ -1,24 +1,23 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\Xot\Tests\Unit\Actions\String;
-
 use Modules\Xot\Actions\String\GetPronounceablePasswordAction;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-it('generates pronounceable password correctly', function (): void {
-    $action = app(GetPronounceablePasswordAction::class);
+uses(TestCase::class);
 
-    $password = $action->execute(12);
+it('rispetta la lunghezza richiesta e le categorie di caratteri', function (int $length): void {
+    $password = (new GetPronounceablePasswordAction)->execute($length);
 
-    expect(strlen($password))->toBeGreaterThanOrEqual(8); // min length logic inside
-    expect($password)->toMatch('/[0-9]/'); // contains digit
-    expect($password)->toMatch('/[!#*-_=+:?]/'); // contains special
-    expect($password)->toMatch('/[A-Z]/'); // contains uppercase
-});
+    Assert::assertSame(max(5, $length), strlen($password));
+    Assert::assertMatchesRegularExpression('/[a-z]/', $password);
+    Assert::assertMatchesRegularExpression('/[A-Z]/', $password);
+    Assert::assertMatchesRegularExpression('/[0-9]/', $password);
+    Assert::assertMatchesRegularExpression('/[!#*_=+:?\-]/', $password);
+    Assert::assertMatchesRegularExpression('/\A[a-zA-Z0-9!#*_=+:?\-]+\z/', $password);
+})->with([-1, 0, 2, 4, 5, 6, 8, 12, 16, 64]);
 
-it('handles small length correctly', function (): void {
-    $action = app(GetPronounceablePasswordAction::class);
-    $password = $action->execute(2);
-    expect(strlen($password))->toBeGreaterThanOrEqual(4);
+it('genera dodici caratteri per impostazione predefinita', function (): void {
+    Assert::assertSame(12, strlen((new GetPronounceablePasswordAction)->execute()));
 });

@@ -10,12 +10,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei dispositivi degli utenti',
         ],
-        'label' => 'device',
+        'label' => 'Gerät',
         'sort' => '20',
         'icon' => 'user-device',
     ],
     'fields' => [
-<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -41,7 +40,7 @@ return [
             'description' => '',
         ],
         'device' => [
-            'label' => 'device',
+            'label' => 'Gerät',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -141,66 +140,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'id' => [
-            'label' => 'id',
-        ],
-        'mobile_id' => [
-            'label' => 'mobile_id',
-        ],
-        'device' => [
-            'label' => 'device',
-        ],
-        'platform' => [
-            'label' => 'platform',
-        ],
-        'browser' => [
-            'label' => 'browser',
-        ],
-        'version' => [
-            'label' => 'version',
-        ],
-        'is_robot' => [
-            'label' => 'is_robot',
-        ],
-        'robot' => [
-            'label' => 'robot',
-        ],
-        'is_desktop' => [
-            'label' => 'is_desktop',
-        ],
-        'is_mobile' => [
-            'label' => 'is_mobile',
-        ],
-        'is_tablet' => [
-            'label' => 'is_tablet',
-        ],
-        'is_phone' => [
-            'label' => 'is_phone',
-        ],
-        'logout_at' => [
-            'label' => 'logout_at',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'login_at' => [
-            'label' => 'login_at',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -220,9 +159,6 @@ return [
             'label' => 'create',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

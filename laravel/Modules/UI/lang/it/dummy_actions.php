@@ -6,7 +6,6 @@ return [
     'fields' => [
         'azioni' => [
             'label' => 'azioni',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -52,29 +51,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'prova' => [
-            'label' => 'prova',
-        ],
-        'prova2' => [
-            'label' => 'prova2',
-        ],
-        'status' => [
-            'label' => 'status',
-        ],
-        'due' => [
-            'label' => 'due',
-        ],
-        'uno' => [
-            'label' => 'uno',
-        ],
-        'uno-action' => [
-            'label' => 'uno-action',
-        ],
-        'due-action' => [
-            'label' => 'due-action',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -82,7 +58,6 @@ return [
             'label' => 'delete',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Dummy Actions',
     'plural_label' => 'Dummy Actions (Plurale)',
     'navigation' => [
@@ -94,8 +69,6 @@ return [
         ],
         'label' => 'Dummy Actions',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

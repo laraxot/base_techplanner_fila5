@@ -1,8 +1,13 @@
-<<<<<<< HEAD
+---
+title: "Architettura di un <nome progetto>ion Market"
+type: note
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "architettura di un <nome progetto>ion market activity"
+status: superseded
+superseded_by: architettura.md
+---
 # Architettura di un <nome progetto>ion Market
-=======
-# Architettura di un Prediction Market
->>>>>>> 6ed19256f (.)
 
 ## Pattern Principali
 - **Event Sourcing**: ogni cambiamento di stato è registrato come evento immutabile.
@@ -45,8 +50,4 @@ class CreateMarket extends Command {
 
 ## Zen
 - "Sii pragmatico: la semplicità vince nelle demo e nei PoC."
-<<<<<<< HEAD
 - "Ogni cambiamento è una storia, ogni comando è un'intenzione esplicita."
-=======
-- "Ogni cambiamento è una storia, ogni comando è un'intenzione esplicita."
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "todo application"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "todo application"
+issues: []
+discussions: []
+status: draft
+---
+
 # Applicazione Todo con Laravel Folio e Volt
 
 Questa guida spiega come implementare un'applicazione Todo utilizzando Laravel Folio per il routing basato su file e Volt per la gestione dello stato e della reattività.
@@ -144,7 +156,6 @@ $clearCompleted = function () {
         <!-- Form Aggiunta Todo -->
         <form wire:submit="addTodo" class="mb-6">
             <div class="flex gap-2">
-<<<<<<< HEAD
                 <input 
                     type="text" 
                     wire:model="description" 
@@ -152,57 +163,32 @@ $clearCompleted = function () {
                     class="flex-1 px-4 py-2 border rounded"
                 >
                 <button 
-=======
->>>>>>> 6ed19256f (.)
-                <input
-                    type="text"
-                    wire:model="description"
-                    placeholder="Cosa devi fare?"
-                    class="flex-1 px-4 py-2 border rounded"
-                >
-                <button
                     type="submit"
                     class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
                 >
                     Aggiungi
                 </button>
             </div>
-            @error('description')
-<<<<<<< HEAD
             @error('description') 
-=======
->>>>>>> 6ed19256f (.)
                 <span class="text-red-500 text-sm">{{ $message }}</span>
             @enderror
         </form>
 
         <!-- Filtri -->
         <div class="flex gap-4 mb-4">
-            <button
-<<<<<<< HEAD
             <button 
-=======
->>>>>>> 6ed19256f (.)
                 wire:click="$set('filter', 'all')"
                 class="@if($filter === 'all') font-bold @endif"
             >
                 Tutti
             </button>
-            <button
-<<<<<<< HEAD
             <button 
-=======
->>>>>>> 6ed19256f (.)
                 wire:click="$set('filter', 'active')"
                 class="@if($filter === 'active') font-bold @endif"
             >
                 Attivi
             </button>
-            <button
-<<<<<<< HEAD
             <button 
-=======
->>>>>>> 6ed19256f (.)
                 wire:click="$set('filter', 'completed')"
                 class="@if($filter === 'completed') font-bold @endif"
             >
@@ -214,24 +200,15 @@ $clearCompleted = function () {
         <ul class="space-y-2">
             @foreach ($this->todos as $todo)
                 <li class="flex items-center gap-2 p-2 border rounded">
-                    <input
-                        type="checkbox"
-<<<<<<< HEAD
                     <input 
                         type="checkbox" 
-=======
->>>>>>> 6ed19256f (.)
                         wire:click="toggleTodo({{ $todo->id }})"
                         @checked($todo->completed)
                     >
                     <span class="flex-1 @if($todo->completed) line-through text-gray-500 @endif">
                         {{ $todo->description }}
                     </span>
-                    <button
-<<<<<<< HEAD
                     <button 
-=======
->>>>>>> 6ed19256f (.)
                         wire:click="deleteTodo({{ $todo->id }})"
                         class="text-red-500 hover:text-red-700"
                     >
@@ -243,11 +220,7 @@ $clearCompleted = function () {
 
         @if($this->todos->where('completed', true)->count() > 0)
             <div class="mt-4">
-                <button
-<<<<<<< HEAD
                 <button 
-=======
->>>>>>> 6ed19256f (.)
                     wire:click="clearCompleted"
                     class="text-gray-500 hover:text-gray-700"
                 >
@@ -377,8 +350,4 @@ class TodoTest extends TestCase
 - [Laravel Folio Documentation](https://github.com/laravel/folio)
 - [Laravel Volt Documentation](https://livewire.laravel.com/project_docs/volt)
 - [Livewire Documentation](https://livewire.laravel.com)
-- [Articolo Originale di Nuno Maduro](https://nunomaduro.com/todo_application_with_laravel_folio_and_volt)
-<<<<<<< HEAD
 - [Articolo Originale di Nuno Maduro](https://nunomaduro.com/todo_application_with_laravel_folio_and_volt) 
-=======
->>>>>>> 6ed19256f (.)

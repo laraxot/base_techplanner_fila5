@@ -4,10 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Providers;
 
-<<<<<<< HEAD
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;
 use Filament\Support\Facades\FilamentAsset;
+use Illuminate\Support\Facades\Blade;
+use Modules\Geo\Actions\CalculateDistanceAction;
+use Modules\Geo\Contracts\CalculateDistanceActionContract;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
 use function Safe\file_get_contents;
@@ -16,12 +18,25 @@ use function Safe\json_decode;
 class GeoServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Geo';
+
     protected string $moduleName = 'Geo';
+
     protected string $namespace = 'geo';
+
+    public function register(): void
+    {
+        parent::register();
+
+        $this->app->bind(CalculateDistanceActionContract::class, CalculateDistanceAction::class);
+    }
 
     public function boot(): void
     {
         parent::boot();
+
+        // GeoServiceProvider non ridefinisce $module_ns: la base lo deriva da Xot e registrerebbe `geo` su
+        // Modules\Xot\View\Components. Senza questa riga `<x-geo::point-map>` non trova la classe.
+        Blade::componentNamespace('Modules\\Geo\\View\\Components', 'geo');
 
         // $this->registerMapAssets();
     }
@@ -36,13 +51,13 @@ class GeoServiceProvider extends XotBaseServiceProvider
 
         $sixteenBundleUrl = $this->getSixteenThemeAppBundleUrl();
 
-        if (null !== $sixteenBundleUrl) {
+        if ($sixteenBundleUrl !== null) {
             // Admin Filament non carica automaticamente il bundle frontoffice del tema,
             // ma il CoordinatePicker Lit e i suoi controlli sono definiti li'.
             $assets[] = Js::make('sixteen-coordinate-picker-bundle', $sixteenBundleUrl)->module();
         }
 
-        if ([] !== $assets) {
+        if ($assets !== []) {
             FilamentAsset::register($assets, 'geo');
         }
     }
@@ -62,7 +77,7 @@ class GeoServiceProvider extends XotBaseServiceProvider
 
         $entry = $manifest['resources/js/app.js']['file'] ?? null;
 
-        if (! is_string($entry) || '' === $entry) {
+        if (! is_string($entry) || $entry === '') {
             return null;
         }
 
@@ -72,19 +87,4 @@ class GeoServiceProvider extends XotBaseServiceProvider
     // REMOVED: public function register(): void
     // XotBaseServiceProvider gia' gestisce register() con registerBladeIcons().
     // Non sovrascrivere: causa doppia registrazione del prefix "geo" nei BladeIcons.
-=======
-// ---- bases ----
-use Modules\Xot\Providers\XotBaseServiceProvider;
-
-/**
- * Class GeoServiceProvider.
- */
-class GeoServiceProvider extends XotBaseServiceProvider
-{
-    public string $name = 'Geo';
-
-    protected string $module_dir = __DIR__;
-
-    protected string $module_ns = __NAMESPACE__;
->>>>>>> 6ed19256f (.)
 }

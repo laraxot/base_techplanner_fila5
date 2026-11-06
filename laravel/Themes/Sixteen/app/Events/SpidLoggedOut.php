@@ -6,19 +6,11 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 /**
  * Evento lanciato quando un utente effettua il logout da SPID
  *
-=======
-use Themes\Sixteen\Models\User;
-
-/**
- * Evento lanciato quando un utente effettua il logout da SPID
- * 
->>>>>>> 6ed19256f (.)
  * Questo evento permette di reagire al logout SPID per cleanup,
  * logging, sincronizzazione con sistemi esterni, etc.
  */
@@ -26,22 +18,19 @@ class SpidLoggedOut
 {
     use Dispatchable, SerializesModels;
 
+    /**
+     * @param  array<array-key, mixed>  $spidAttributes
+     */
     public function __construct(
-        public User $user,
+        public UserContract $user,
         public array $spidAttributes
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     /**
      * Ottiene il provider SPID utilizzato
      */
     public function getProvider(): ?string
     {
-<<<<<<< HEAD
         $value = $this->spidAttributes['provider'] ?? null;
 
         return is_string($value) ? $value : null;
@@ -55,21 +44,13 @@ class SpidLoggedOut
         $value = $this->spidAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
-=======
-        return $this->spidAttributes['provider'] ?? null;
-    }
-
-    /**
-     * Ottiene il codice fiscale dell'utente
-     */
-    public function getFiscalCode(): ?string
-    {
-        return $this->spidAttributes['fiscal_code'] ?? null;
->>>>>>> 6ed19256f (.)
     }
 
     /**
      * Ottiene attributi specifici per logging sicuro
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function getLoggingData(): array
     {
@@ -80,8 +61,4 @@ class SpidLoggedOut
             'logout_timestamp' => now()->toISOString(),
         ];
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6ed19256f (.)

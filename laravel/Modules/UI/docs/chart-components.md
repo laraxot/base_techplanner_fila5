@@ -1,3 +1,15 @@
+---
+title: "chart components"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chart components"
+issues: []
+discussions: []
+status: draft
+---
+
 # Componenti Chart
 
 ## Introduzione
@@ -137,11 +149,7 @@ class UserStats extends Component
 - [Componenti Form](./form-components.md)
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
-- [Documentazione Frontend](../Cms/docs/frontend-architecture.md)
-<<<<<<< HEAD
 - [Documentazione Frontend](../cms/docs/frontend-architecture.md)
-=======
->>>>>>> 6ed19256f (.)
 # Componenti Chart
 
 ## Introduzione
@@ -281,12 +289,6 @@ class UserStats extends Component
 - [Componenti Form](./form-components.md)
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
-- [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
-- [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
-- [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
-<<<<<<< HEAD
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
-=======
->>>>>>> 6ed19256f (.)

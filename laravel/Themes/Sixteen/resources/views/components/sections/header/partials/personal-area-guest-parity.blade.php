@@ -32,12 +32,12 @@
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item list-item" href="{{ route('dashboard') }}">
+                            <a class="dropdown-item list-item" href="{{ \Themes\Sixteen\Infrastructure\Url\FrontofficeRoutes::personalAreaPratiche() }}">
                                 <span>{{ __('pub_theme::header.user.dropdown.my_practices.label') }}</span>
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item list-item" href="{{ route('area-personale.notifiche') }}">
+                            <a class="dropdown-item list-item" href="{{ \Themes\Sixteen\Infrastructure\Url\FrontofficeRoutes::personalAreaNotifiche() }}">
                                 <span>{{ __('pub_theme::header.user.dropdown.notifications.label') }}</span>
                             </a>
                         </li>
@@ -45,17 +45,20 @@
                             <span class="divider"></span>
                         </li>
                         <li>
-                            <a class="dropdown-item list-item" href="{{ route('profile.edit') }}">
+                            <a class="dropdown-item list-item" href="{{ \Themes\Sixteen\Infrastructure\Url\FrontofficeRoutes::personalAreaImpostazioni() }}">
                                 <span>{{ __('pub_theme::header.user.dropdown.settings.label') }}</span>
                             </a>
                         </li>
                         <li>
-                            <a class="list-item left-icon" href="{{ route('logout') }}">
-                                <svg class="icon icon-primary icon-sm left" aria-hidden="true">
-                                    <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/dist/svg/sprites.svg#it-external-link"></use>
-                                </svg>
-                                <span class="fw-bold">{{ __('pub_theme::header.user.dropdown.logout.label') }}</span>
-                            </a>
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <button type="submit" class="list-item left-icon">
+                                    <svg class="icon icon-primary icon-sm left" aria-hidden="true">
+                                        <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/dist/svg/sprites.svg#it-external-link"></use>
+                                    </svg>
+                                    <span class="fw-bold">{{ __('pub_theme::header.user.dropdown.logout.label') }}</span>
+                                </button>
+                            </form>
                         </li>
                     </ul>
                 </div>

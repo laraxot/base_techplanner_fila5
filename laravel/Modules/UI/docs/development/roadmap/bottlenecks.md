@@ -1,3 +1,15 @@
+---
+title: "bottlenecks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bottlenecks"
+issues: []
+discussions: []
+status: draft
+---
+
 # Colli di Bottiglia - Modulo UI
 
 ## 1. Performance Componenti [85%]
@@ -214,7 +226,6 @@
 - Automazione test visivi
 - Documentazione aggiornata
 ## Collegamenti tra versioni di bottlenecks.md
-<<<<<<< HEAD
 * [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
@@ -225,19 +236,3 @@
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
-=======
->>>>>>> 6ed19256f (.)
-* [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
-* [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Xot/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../User/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../UI/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
-<<<<<<< HEAD
-* [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
-=======
-* [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
->>>>>>> 6ed19256f (.)

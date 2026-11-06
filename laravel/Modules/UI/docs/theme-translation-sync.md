@@ -1,21 +1,25 @@
+---
+title: "theme translation sync"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "theme translation sync"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sincronizzazione Traduzioni Temi
 
 ## Panoramica
 
 Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto .
-<<<<<<< HEAD
 Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto <nome progetto>.
 Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto .
 Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto <nome progetto>.
 Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto .
 Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto <nome progetto>.
-=======
-Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto SaluteOra.
-Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto .
-Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto SaluteOra.
-Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto .
-Questo documento descrive il processo di sincronizzazione delle traduzioni per i temi One e Two del progetto SaluteOra.
->>>>>>> 6ed19256f (.)
 
 ## Struttura dei Temi
 
@@ -46,11 +50,7 @@ Entrambi i temi contengono i seguenti file di traduzione:
 11. `patient.php` - Gestione pazienti
 12. `studio.php` - Gestione studi
 
-## Correzioni Applicate (2025-01-06)
-<<<<<<< HEAD
 ## Correzioni Applicate ([DATE])
-=======
->>>>>>> 6ed19256f (.)
 
 ### 1. Problema: Traduzione mancante `pub_theme::appointment.fields.state.label`
 
@@ -85,11 +85,7 @@ Entrambi i temi contengono i seguenti file di traduzione:
 - `duration` - Durata
 - `emergency` - Emergenza
 
-### 4. Problema: Testo hardcoded in italiano per i referti (2025-01-06)
-<<<<<<< HEAD
 ### 4. Problema: Testo hardcoded in italiano per i referti ([DATE])
-=======
->>>>>>> 6ed19256f (.)
 
 **Causa**: Il file `appointment/item.blade.php` conteneva testo hardcoded in italiano per la sezione referti:
 - "Il tuo referto è pronto!"
@@ -239,7 +235,6 @@ return [
 
 - [Theme Widget Translations](theme-widget-translations.md)
 - [Translation Helper Text Standards](translation-helper-text-standards.md)
-<<<<<<< HEAD
 - [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/modules/<nome modulo>/docs/translation_quality_standards.md)
 - [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
 - [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/modules/<nome modulo>/docs/translation_quality_standards.md)
@@ -248,29 +243,6 @@ return [
 - [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/modules/<nome progetto>/docs/translation_quality_standards.md)
 
 ---
-
 **Ultimo aggiornamento**: [DATE]
-- [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
-- [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
-- [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
-- [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
-- [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
-- [Modules/<nome progetto>/docs/translation_quality_standards.md](../laravel/Modules/<nome progetto>/docs/translation_quality_standards.md)
-=======
-- [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
-- [Modules/SaluteOra/docs/translation_quality_standards.md](../laravel/Modules/SaluteOra/docs/translation_quality_standards.md)
-- [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
-- [Modules/SaluteOra/docs/translation_quality_standards.md](../laravel/Modules/SaluteOra/docs/translation_quality_standards.md)
-- [Modules/<nome modulo>/docs/translation_quality_standards.md](../laravel/Modules/<nome modulo>/docs/translation_quality_standards.md)
-- [Modules/SaluteOra/docs/translation_quality_standards.md](../laravel/Modules/SaluteOra/docs/translation_quality_standards.md)
->>>>>>> 6ed19256f (.)
-
----
-
-**Ultimo aggiornamento**: 2025-01-06
 **Versione**: 2.2
-<<<<<<< HEAD
 **Autore**: AI Assistant
-=======
-**Autore**: AI Assistant
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,9 @@
+---
+title: "Employee - TIME_ENTRIES_PAGE_ANALYSIS"
+module: Employee
+bmad: true
+status: active
+---
 ## time entries page – analysis and design notes
 
 This document analyses the provided screenshot and derives a faithful, optimized implementation plan for the Employee module. All names in code will be English; UI strings will be provided through translations.
@@ -55,10 +61,4 @@ This document analyses the provided screenshot and derives a faithful, optimized
 
 ### open questions / future work
 - Contract hours source per weekday: configuration table vs. HR integration.
-<<<<<<< HEAD
 - Added/Reduced logic: confirm semantics (overtime vs. manual adjustments).
-=======
-- Added/Reduced logic: confirm semantics (overtime vs. manual adjustments).
-
-
->>>>>>> 6ed19256f (.)

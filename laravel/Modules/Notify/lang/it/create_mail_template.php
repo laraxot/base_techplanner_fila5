@@ -6,53 +6,31 @@ return [
     'fields' => [
         'mailable' => [
             'label' => 'mailable',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'subject' => [
             'label' => 'subject',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'html_template' => [
             'label' => 'html_template',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'text_template' => [
             'label' => 'text_template',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
-        ],
-        'subject' => [
-            'label' => 'subject',
-        ],
-        'html_template' => [
-            'label' => 'html_template',
-        ],
-        'text_template' => [
-            'label' => 'text_template',
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'description' => '']],
     'actions' => [
         'create' => [
-            'label' => 'create',
-        ],
+            'label' => 'create'],
         'createAnother' => [
-            'label' => 'createAnother',
-        ],
+            'label' => 'createAnother'],
         'cancel' => [
-            'label' => 'cancel',
-        ],
-    ],
-<<<<<<< HEAD
+            'label' => 'cancel']],
     'label' => 'Create Mail Template',
     'plural_label' => 'Create Mail Template (Plurale)',
     'navigation' => [
@@ -60,12 +38,7 @@ return [
         'plural' => 'Create Mail Template',
         'group' => [
             'name' => 'General',
-            'description' => 'General Settings',
-        ],
+            'description' => 'General Settings'],
         'label' => 'Create Mail Template',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
+        'icon' => 'heroicon-o-collection']];

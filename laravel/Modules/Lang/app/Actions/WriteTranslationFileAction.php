@@ -6,6 +6,7 @@ namespace Modules\Lang\Actions;
 
 use Illuminate\Support\Facades\File;
 
+use function Safe\date;
 use function Safe\exec;
 use function Safe\file_put_contents;
 use function Safe\tempnam;
@@ -23,11 +24,6 @@ class WriteTranslationFileAction
      * @param string               $filePath     Percorso del file di traduzione
      * @param array<string, mixed> $translations Traduzioni da scrivere
      *
-<<<<<<< HEAD
-=======
-     * @throws \Exception Se il file non può essere scritto
-     *
->>>>>>> 6ed19256f (.)
      * @return bool True se il file è stato scritto con successo
      */
     public function execute(string $filePath, array $translations): bool
@@ -88,7 +84,6 @@ class WriteTranslationFileAction
     private function validatePhpSyntax(string $phpContent): void
     {
         // Crea un file temporaneo per la validazione
-<<<<<<< HEAD
         $tempFile = tempnam(storage_path('framework/cache'), 'translation_');
         file_put_contents($tempFile, $phpContent);
 
@@ -108,21 +103,6 @@ class WriteTranslationFileAction
                 }
             }
             $error = implode("\n", $lines);
-=======
-        $tempFile = tempnam(sys_get_temp_dir(), 'translation_');
-        file_put_contents($tempFile, $phpContent);
-
-        // Esegue php -l per validare la sintassi
-        $output = [];
-        $returnCode = 0;
-        exec("php -l {$tempFile} 2>&1", $output, $returnCode);
-
-        // Rimuove il file temporaneo
-        unlink($tempFile);
-
-        if (0 !== $returnCode) {
-            $error = implode("\n", $output ?? []);
->>>>>>> 6ed19256f (.)
             throw new \Exception("Sintassi PHP non valida: {$error}");
         }
     }
@@ -134,20 +114,20 @@ class WriteTranslationFileAction
     {
         // Pulisce la cache di Laravel
         if (app()->bound('cache')) {
-            app('cache')->flush();
+            /** @var object $cache */
+            $cache = app('cache');
+            if (method_exists($cache, 'flush')) {
+                $cache->flush();
+            }
         }
 
         // Pulisce la cache delle traduzioni
         if (app()->bound('translation.loader')) {
-<<<<<<< HEAD
+            /** @var object $loader */
             $loader = app('translation.loader');
             if (method_exists($loader, 'flush')) {
                 $loader->flush();
             }
-=======
-            /* @phpstan-ignore method.notFound */
-            app('translation.loader')->flush();
->>>>>>> 6ed19256f (.)
         }
     }
 }

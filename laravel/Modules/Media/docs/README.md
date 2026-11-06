@@ -1,409 +1,103 @@
-<<<<<<< HEAD
 ---
-title: "Media Module Documentation"
+title: "Media Module - Documentation Index"
 type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
+bmad_id: MEDIA-DOCS-INDEX
+domain: media-module
+module: Media
+version: 1.1.0
+status: active
+audience: [developer, maintainer]
+tags: [media, docs, index, bmad, documentation]
+created: 2026-09-26
+updated: 2026-10-23
+qmd: "README"
+issues: []
+discussions: []
+related: [bmad/00-INDEX.md, bmad/readme.md, INDEX.md]
 ---
 
-# Modulo Media
+# Media Module - Documentation Index
 
-## Overview
+Path: `laravel/Modules/Media/docs/`
+Module: @Modules/Media
+Scope: punto di ingresso della documentazione del modulo Media (gestione multimediale in Laraxot). `docs-archive-2026/` non esiste ne' nel modulo ne' nella radice del repo (verificato 2026-10-14): lo storico vive nelle sottocartelle di `docs/`. La mappa delle directory era in `00-INDEX.md`, rimosso il 2026-10-22 (commit e2282c1b) e non riportato altrove.
 
-Il modulo **Media** fa parte dell'ecosistema [PROJECT_NAME] platform.
+## File canonici
 
-## Scopo
+1. **[README.md](README.md)** - questo file, punto di ingresso
+2. **[architecture.md](ARCHITECTURE.md)** - architettura, namespace, dipendenze, struttura, funzionalita'
+3. **[INDEX.md](index.md)** - indice completo per categoria, con le story BMAD
+4. **[index.md](index.md)** - bridge per discovery (legacy)
 
-Gestisce le funzionalità specifiche del dominio Media.
+Nota: `readme.md` (minuscolo) e' un bridge legacy con la stessa sezione "Scopo" e "Linkage"; la coppia case-variant e' un duplicato da consolidare (vedi [16-4](./stories/16-4-media-case-variant-consolidation.md) per lo stesso problema nei test).
 
-## Cosa copre (business)
-||||||| parent of 53258b2 (.)
-- 🖼️ **Smart Transformations**: Generazione automatica di preview, thumbnail e formati next-gen (WebP/AVIF).
-- 🎥 **Video Transcoding**: Engine FFmpeg integrato per convertire video in formati streaming-efficient (H.264/VP9).
-- ☁️ **Cloud Native**: Supporto multi-disk trasparente (Local, S3, Azure) gestito dall'astrazione CloudStorage.
-- 🛡️ **Safe Uploads**: Validazione rigorosa di MIME types, dimensioni e scan anti-malware integrato.
-- 🎨 **Visual Library**: Interfaccia Filament per gestire migliaia di file con drag-and-drop e visualizzazione a griglia.
+## Scopo del modulo
 
-- **Upload & gestione file**: associazione media a record di dominio (es. avatar, documenti, allegati).
-- **Integrazione UI**: componenti/risorse Filament per caricare e gestire media.
-- **Policy**: regole condivise su naming, storage e sicurezza (validazioni, mime types).
+Verificato sul codice il 2026-10-14 (`app/`, `config/`, `database/migrations`, `routes/`):
+- Modelli sopra Spatie MediaLibrary: `Media` estende `Spatie\MediaLibrary\MediaCollections\Models\Media`, `TemporaryUpload` implementa `HasMedia`, `MediaConvert` traccia le conversioni video. Connessione database `media` (`Models/BaseModel`).
+- Conversione video con `pbmedia/laravel-ffmpeg`: `Actions/Video/*`, comando `media:convert-video {disk} {file}`, generatori `Conversions/VideoGenerators/Webm` e `Conversions/ImageGenerators/PowerPoint`.
+- Allegati ai record: `AttachMediaAction`, `SaveAttachmentsAction`, `GetAttachmentsSchemaAction`, azione Filament `AddAttachmentAction`.
+- Sottotitoli e streaming: `Actions/Subtitle/*` (SRT in VTT, lettura XML) e `Actions/Stream/StreamVideoAction`.
+- Storage AWS S3 e CloudFront: `Actions/S3/*`, `Actions/CloudFront/GetCloudFrontSignedUrlAction`, diagnostica in `Actions/Diagnostic/Aws/*` e `Actions/Diagnostic/S3/*`, pagine Filament di prova nel cluster `Test` (`AwsTest`, `S3Test`).
+- Pannello Filament `media::admin` con tre Resource (`MediaResource`, `MediaConvertResource`, `TemporaryUploadResource`) piu' `HasMediaResource`, che porta relation manager e schemi riusabili dagli altri moduli.
 
-## Struttura
+Citato in vecchi documenti ma non trovato nel codice: HLS/DASH, watermark automatico, isolamento per tenant (nessun riferimento a `Tenant` in `app/`), CDN generico (esiste solo CloudFront).
 
-||||||| parent of 53258b2 (.)
-## ⚡ **Funzionalità Core**
+- Modelli sopra Spatie MediaLibrary: `Media` estende `Spatie\MediaLibrary\MediaCollections\Models\Media`, `TemporaryUpload` implementa `HasMedia`, `MediaConvert` traccia le conversioni video. Connessione database `media` (`Models/BaseModel`).
+- Conversione video con `pbmedia/laravel-ffmpeg`: `Actions/Video/*`, comando `media:convert-video {disk} {file}`, generatori `Conversions/VideoGenerators/Webm` e `Conversions/ImageGenerators/PowerPoint`.
+- Allegati ai record: `AttachMediaAction`, `SaveAttachmentsAction`, `GetAttachmentsSchemaAction`, azione Filament `AddAttachmentAction`.
+- Sottotitoli e streaming: `Actions/Subtitle/*` (SRT in VTT, lettura XML) e `Actions/Stream/StreamVideoAction`.
+- Storage AWS S3 e CloudFront: `Actions/S3/*`, `Actions/CloudFront/GetCloudFrontSignedUrlAction`, diagnostica in `Actions/Diagnostic/Aws/*` e `Actions/Diagnostic/S3/*`, pagine Filament di prova nel cluster `Test` (`AwsTest`, `S3Test`).
+- Pannello Filament `media::admin` con tre Resource (`MediaResource`, `MediaConvertResource`, `TemporaryUploadResource`) piu' `HasMediaResource`, che porta relation manager e schemi riusabili dagli altri moduli.
 
-### 🧩 **Lazy Conversions**
-Le conversioni non bloccano la UI. Vengono processate in background tramite il modulo **Job**, garantendo un'esperienza utente fluida.
+## Dove iniziare
 
-### 🧘 **Philosophical Design**
-"Il file originale è sacro". Ogni trasformazione è una derivata che non altera mai la sorgente originale.
+- [Wiki locale](./wiki/index.md)
+- [Audit ridondanza](./code-redundancy-audit.md)
+- [Regole architettura](./architecture-rules.md)
+- [Disciplina agenti](./agent-edit-discipline.md)
 
-## 🚀 **Quick Start**
+## Dipendenze e collegamenti
 
-### 📦 **Associazione Media**
-```php
-$model->addMedia($file)->toMediaCollection('gallery');
-```
-Media/
-├── app/
-│   ├── Models/
-│   ├── Filament/
-│   └── ...
-├── docs/
-├── lang/
-└── resources/
-```
+- [README root (vetrina)](../README.md) · [Xot (framework base)](../../Xot/docs/)
+- Standard [README doppio](../../../../docs/wiki/standards/module-theme-readme-dual.md) e [disciplina issue GitHub](../../../../docs/wiki/how-to/github-issue-agent-discipline.md) da seguire prima di modifiche sostanziali.
+- Dipende, nel codice, da: Xot (85 righe `use Modules\Xot` in `app/` e `tests/`), User (3), UI (2, `SvgExistsAction`), Job (1, `ClockWidget` in `ListMediaConverts`). `Tenant` compare solo tra i `repositories` di tipo path in `composer.json`.
+- Usato da (file in `Modules/*/app` e `Themes/*/app` che citano `Modules\Media` o `media::`): Blog 9, Notify 8, User 4, Rating 2, Fixcity 2, Cms 2, Xot 1.
+- Standard di documentazione: [contratto docs di moduli e temi](../../../../bmad-output/docs-architecture/module-theme-docs-contract.md).
 
-## Dipendenze
+## Quick start
 
-- [Xot Base](../Xot/docs/)
-- [User Module](../User/docs/)
+Dalla cartella `laravel/`, verificato il 2026-10-14:
 
-## Collegamenti
-
-- [Documentazione Root](../../../docs/MEDIA_MODULE.md)
-
-## Backlinks
-
-- [Moduli correlati](../README.md)
-
-## AI Workflows
-- [AI Methodologies](./ai-methodologies.md)
-||||||| parent of 53258b2 (.)
-## 🚀 Release su GitHub
-Le release sono basate su tag Git e possono includere release notes generate automaticamente.
-Workflow locale: `.github/workflows/release.yml`.
-
-
-## 📄 License & Authors
-
-**Authors:**
-- Marco Sottana <marco.sottana@gmail.com>
-
-**License:** MIT
-=======
->>>>>>> 6ed19256f (.)
-# 📁 **Media Module** - Sistema Avanzato Gestione File Multimediali
-
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 3.x](https://img.shields.io/badge/Filament-3.x-blue.svg)](https://filamentphp.com/)
-[![PHPStan level 10](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
-[![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN%20%7C%20DE-green.svg)](https://laravel.com/docs/localization)
-[![File Upload](https://img.shields.io/badge/File-Upload%20Ready-orange.svg)](https://laravel.com/docs/filesystem)
-[![Video Processing](https://img.shields.io/badge/Video-Processing%20Ready-purple.svg)](https://ffmpeg.org/)
-[![Image Optimization](https://img.shields.io/badge/Image-Optimization%20Ready-yellow.svg)](https://imagemagick.org/)
-[![Quality Score](https://img.shields.io/badge/Quality%20Score-95%25-brightgreen.svg)](https://github.com/laraxot/media-module)
-> **🚀 Modulo Media**: Sistema completo per gestione file multimediali con upload avanzato, conversioni automatiche, ottimizzazione immagini e processing video.
-## 📋 **Panoramica**
-Il modulo **Media** è il centro di gestione file multimediali dell'applicazione, fornendo:
-- 📁 **File Upload Avanzato** - Upload sicuro e ottimizzato di tutti i tipi di file
-- 🖼️ **Image Optimization** - Ottimizzazione automatica immagini con conversioni
-- 🎥 **Video Processing** - Processing video con FFmpeg e conversioni
-- 📄 **Document Management** - Gestione documenti con preview e OCR
-- 🔄 **Auto Conversions** - Conversioni automatiche per diversi formati
-- 📊 **Media Analytics** - Analytics dettagliati per utilizzo file
-## ⚡ **Funzionalità Core**
-### 📁 **File Upload System**
-```php
-// Upload sicuro con validazione
-use Modules\Media\Traits\HasMedia;
-class User extends XotBaseModel
-{
-    use HasMedia;
-
-    protected $fillable = ['name', 'email'];
-}
-// Upload con conversioni automatiche
-$user->addMedia($request->file('avatar'))
-    ->withCustomProperties(['type' => 'profile'])
-    ->withManipulations([
-        'thumb' => ['width' => 100, 'height' => 100],
-        'medium' => ['width' => 300, 'height' => 300],
-    ])
-    ->toMediaCollection('avatars');
-```
-### 🖼️ **Image Processing**
-// Ottimizzazione immagini automatica
-class ImageOptimizationService
-    public function optimize(Media $media): void
-    {
-        $media->manipulate('thumb', function ($image) {
-            $image->resize(100, 100)
-                  ->greyscale()
-                  ->quality(85);
-        });
-
-        $media->manipulate('webp', function ($image) {
-            $image->format('webp')
-                  ->quality(90);
-    }
-### 🎥 **Video Processing**
-// Processing video con FFmpeg
-class VideoProcessingService
-    public function processVideo(Media $media): void
-        $media->manipulate('mp4', function ($video) {
-            $video->format('mp4')
-                  ->codec('h264')
-                  ->bitrate('1000k')
-                  ->resolution('1280x720');
-        $media->manipulate('webm', function ($video) {
-            $video->format('webm')
-                  ->codec('vp9')
-                  ->bitrate('800k');
-## 🎯 **Stato Qualità - Gennaio 2025**
-### ✅ **PHPStan level 10 Compliance**
-- **File Core Certificati**: 10/10 file core raggiungono level 10
-- **Type Safety**: 100% sui servizi principali
-- **Runtime Safety**: 100% con error handling robusto
-- **Template Types**: Risolti tutti i problemi Collection generics
-### ✅ **Correzioni Recenti - S3Test.php**
-- **Violazioni Architetturali**: Risolte dipendenze dirette tra moduli
-- **Tipizzazione PHPStan**: Aggiunta tipizzazione rigorosa per tutti i metodi
-- **Traduzioni Complete**: Creati file di traduzione in IT/EN/DE
-- **Sicurezza**: Migliorato logging e gestione errori
-- **Documentazione**: Aggiornata documentazione completa
-**📋 Dettagli**: [Correzioni S3Test.php](s3test_corrections.md)
-## 🏗️ **Architettura**
-### 📦 **Struttura Moduli**
-Modules/Media/
-├── app/
-│   ├── Actions/           # Azioni per operazioni media
-│   ├── Contracts/         # Contratti e interfacce
-│   ├── Datas/            # Data Transfer Objects
-│   ├── Filament/         # Componenti Filament
-│   ├── Models/           # Modelli Eloquent
-│   ├── Services/         # Servizi di business logic
-│   └── Traits/           # Traits riutilizzabili
-├── config/               # Configurazioni
-├── database/             # Migrazioni e seeders
-├── docs/                 # Documentazione
-├── lang/                 # Traduzioni (IT/EN/DE)
-├── resources/            # Views e assets
-└── routes/               # Definizioni route
-### 🔧 **Componenti Principali**
-#### **Media Model**
-class Media extends XotBaseModel
-    protected $fillable = [
-        'name', 'file_name', 'mime_type', 'size',
-        'disk', 'path', 'collection_name'
-    ];
-    protected function casts(): array
-        return [
-            'size' => 'integer',
-            'custom_properties' => 'array',
-            'manipulations' => 'array',
-            'responsive_images' => 'array',
-        ];
-#### **Media Service**
-class MediaService
-    public function uploadFile(UploadedFile $file, string $collection = 'default'): Media
-        // Validazione e upload sicuro
-        $this->validateFile($file);
-        // Conversione automatica se necessario
-        $media = $this->processFile($file);
-        // Ottimizzazione automatica
-        $this->optimizeMedia($media);
-        return $media;
-## 🚀 **Quick Start**
-### 📦 **Installazione**
 ```bash
-# Installazione modulo
-composer require laraxot/media-module
-# Pubblicazione configurazioni
-php artisan vendor:publish --tag=media-config
-# Esecuzione migrazioni
-php artisan migrate
-# Generazione storage link
-php artisan storage:link
-### 🔧 **Configurazione**
-// config/media.php
-return [
-    'disk' => env('MEDIA_DISK', 'public'),
-    'max_file_size' => env('MEDIA_MAX_FILE_SIZE', 10240), // 10MB
-    'allowed_mime_types' => [
-        'image/jpeg', 'image/png', 'image/webp',
-        'video/mp4', 'video/webm',
-        'application/pdf', 'application/msword'
-    ],
-    'image_optimization' => [
-        'enabled' => true,
-        'quality' => 85,
-        'formats' => ['webp', 'avif']
-    'video_processing' => [
-        'ffmpeg_path' => env('FFMPEG_PATH', '/usr/bin/ffmpeg'),
-        'formats' => ['mp4', 'webm']
-    ]
-];
-### 📝 **Utilizzo Base**
-// Upload semplice
-$media = Media::upload($request->file('document'));
-// Upload con proprietà custom
-$media = Media::upload($request->file('avatar'))
-    ->withCustomProperties(['user_id' => $user->id])
-        'medium' => ['width' => 300, 'height' => 300]
-// Accesso ai file
-$url = $media->getUrl();
-$thumbUrl = $media->getUrl('thumb');
-$downloadUrl = $media->getDownloadUrl();
-## 🎨 **Filament Integration**
-### 📋 **Media Resource**
-class MediaResource extends XotBaseResource
-    protected static ?string $model = Media::class;
-    public static function getFormSchema(): array
-            Forms\Components\FileUpload::make('file')
-                ->disk('media')
-                ->directory('uploads')
-                ->visibility('public')
-                ->acceptedFileTypes(['image/*', 'video/*', 'application/pdf'])
-                ->maxSize(10240), // 10MB
+php artisan list media                    # espone media:convert-video {disk} {file}
+php artisan route:list --name=media       # 19 rotte, tutte del pannello Filament media/admin
+vendor/bin/phpstan analyse Modules/Media  # exit 0, nessun errore
+vendor/bin/pest Modules/Media/tests       # 40 file di test; non eseguito in questa verifica
+```
 
-            Forms\Components\TextInput::make('name')
-                ->required()
-                ->maxLength(255),
-            Forms\Components\Select::make('collection_name')
-                ->options([
-                    'avatars' => 'Avatar',
-                    'documents' => 'Documenti',
-                    'gallery' => 'Galleria'
-                ])
-                ->required(),
-### 🎯 **Widget Media**
-class MediaStatsWidget extends XotBaseWidget
-    protected static ?string $heading = 'Statistiche Media';
-    protected function getStats(): array
-            Stat::make('File Totali', Media::count())
-                ->description('Tutti i file caricati')
-                ->descriptionIcon('heroicon-m-document'),
-            Stat::make('Immagini', Media::where('mime_type', 'like', 'image/%')->count())
-                ->description('File immagine')
-                ->descriptionIcon('heroicon-m-photo'),
-            Stat::make('Video', Media::where('mime_type', 'like', 'video/%')->count())
-                ->description('File video')
-                ->descriptionIcon('heroicon-m-video-camera'),
-            Stat::make('Documenti', Media::where('mime_type', 'like', 'application/%')->count())
-                ->description('File documento')
-                ->descriptionIcon('heroicon-m-document-text'),
-## 🔧 **Testing**
-### 🧪 **Unit Tests**
-class MediaTest extends TestCase
-    use RefreshDatabase;
-    public function test_can_upload_file(): void
-        $file = UploadedFile::fake()->image('test.jpg');
-        $media = Media::upload($file);
-        $this->assertDatabaseHas('media', [
-            'id' => $media->id,
-            'file_name' => 'test.jpg',
-            'mime_type' => 'image/jpeg'
-        ]);
-        $this->assertFileExists($media->getPath());
-    public function test_can_generate_thumbnails(): void
-        $file = UploadedFile::fake()->image('test.jpg', 800, 600);
-        $media = Media::upload($file)
-            ->withManipulations([
-                'thumb' => ['width' => 100, 'height' => 100]
-            ]);
-        $this->assertFileExists($media->getPath('thumb'));
-### 🔍 **Feature Tests**
-class MediaUploadTest extends TestCase
-    public function test_user_can_upload_file(): void
-        $user = User::factory()->create();
-        $response = $this->actingAs($user)
-            ->post('/api/media/upload', [
-                'file' => UploadedFile::fake()->image('avatar.jpg'),
-                'collection' => 'avatars'
-        $response->assertStatus(201);
-        $response->assertJsonStructure([
-            'id', 'name', 'file_name', 'url'
-## 🚨 **Troubleshooting**
-### 🔧 **Problemi Comuni**
-#### 📁 **Upload Issues**
-# Verificare configurazione storage
-php artisan media:check-storage
-# Verificare permessi directory
-chmod -R 755 storage/app/public
-**Soluzione**: Consulta [File Management](file-management.md)
-#### 🖼️ **Image Processing Issues**
-// Verificare estensione GD/Imagick
-php artisan media:check-extensions
-// Verificare memoria disponibile
-ini_set('memory_limit', '512M');
-**Soluzione**: Consulta [FFmpeg Integration](ffmpeg_integration.md)
-#### 🎥 **Video Processing Issues**
-# Verificare FFmpeg installazione
-ffmpeg -version
-# Verificare codec disponibili
-ffmpeg -codecs
-**Soluzione**: Consulta [Video Processing](ffmpeg_usage.md)
-## 🤝 **Contributing**
-### 📋 **Checklist Contribuzione**
-- [ ] Codice passa PHPStan level 10
-- [ ] Test unitari aggiunti
-- [ ] Documentazione aggiornata
-- [ ] Traduzioni complete (IT/EN/DE)
-- [ ] File upload testati
-- [ ] Performance verificata
-### 🎯 **Convenzioni**
-- **File Naming**: Sempre nomi unici e sicuri
-- **Validation**: Sempre validare tipo e dimensione file
-- **Optimization**: Sempre ottimizzare immagini e video
-- **Security**: Mai permettere upload di file eseguibili
-## 📊 **Roadmap**
-### 🎯 **Q1 2025**
-- [ ] **Advanced Compression** - Compressione avanzata per tutti i formati
-- [ ] **AI Image Processing** - Processing immagini con AI
-- [ ] **Cloud Storage** - Integrazione cloud storage (AWS S3, Google Cloud)
-### 🎯 **Q2 2025**
-- [ ] **Batch Processing** - Elaborazione massiva file
-- [ ] **Advanced Analytics** - Analytics dettagliati per utilizzo media
-- [ ] **CDN Integration** - Integrazione CDN per distribuzione
-### 🎯 **Q3 2025**
-- [ ] **Real-time Processing** - Processing in tempo reale
-- [ ] **Advanced Formats** - Supporto formati avanzati (AV1, WebP 2)
-- [ ] **Machine Learning** - ML per ottimizzazione automatica
-## 📞 **Support & Maintainers**
-- **🏢 Team**: Laraxot Development Team
-- **📧 Email**: media@laraxot.com
-- **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/media-module/issues)
-- **📚 Docs**: [Documentazione Completa](https://docs.laraxot.com/media)
-- **💬 Discord**: [Laraxot Community](https://discord.gg/laraxot)
----
-### 🏆 **Achievements**
-- **🏅 PHPStan level 10**: File core certificati ✅
-- **🏅 Translation Standards**: File traduzione certificati ✅
-- **🏅 File Upload**: Sistema upload sicuro e ottimizzato ✅
-- **🏅 Image Processing**: Ottimizzazione automatica immagini ✅
-- **🏅 Video Processing**: Processing video con FFmpeg ✅
-- **🏅 Storage Management**: Gestione storage efficiente ✅
-- **🏅 S3Test Corrections**: Violazioni architetturali risolte ✅
-### 📈 **Statistics**
-- **📁 Files Supported**: 50+ formati file supportati
-- **🖼️ Image Formats**: 10+ formati immagine (JPEG, PNG, WebP, AVIF)
-- **🎥 Video Formats**: 15+ formati video (MP4, WebM, AV1, H.264)
-- **📄 Document Formats**: 20+ formati documento (PDF, DOC, XLS)
-- **🧪 Test Coverage**: 95%
-- **⚡ Performance Score**: 95/100
-**🔄 Ultimo aggiornamento**: 27 Gennaio 2025
-**📦 Versione**: 3.1.0
-**🐛 PHPStan level 10**: File core certificati ✅
-**🌐 Translation Standards**: File traduzione certificati ✅
-**🚀 Performance**: 95/100 score
-**🔧 S3Test Corrections**: Completate ✅
-<<<<<<< HEAD
+Il pannello e' raggiungibile su `media/admin` (Resource `media`, `media-converts`, `temporary-uploads`, cluster `test`). Configurazione propria del modulo: `config/config.php` (nome, icona, navigazione); le chiavi operative sono in `laravel/config/media-library.php` (`media_model`, `temporary_upload_model`, `max_file_size` 10 MB) e in `filesystems.cloudfront.*` / `services.cloudfront.*`.
 
+## Limiti e debiti noti
 
-## Standard Rules & Workflow
+- `routes/web.php` e `routes/api.php` sono vuoti. `Http/Controllers/ConvertController` (vista `media::convert`) non ha rotta ed e' citato solo da un test di istanziazione.
+- Non esiste `app/Services/`: `SubtitleService` e `VideoStream` sono stati rimossi (story 2026-10-08 services-to-actions).
+- Directory con varianti di maiuscole nel codice: `app/Conversions` e `app/conversions`, `tests/Filament` e `tests/filament` (story 16-4).
+- `app/Filament/Clusters/` contiene una directory dal nome corrotto (`极est/Pages/AwsTest.php`, file tracciato da 0 byte) accanto a `Test/`.
+- Due migrazioni di create per `medias` (`2022_01_01_000011` e `2026_07_23_150000`) e per `temporary_uploads` (`2023_01_01_000000` e `2026_01_18_152545`).
+- `docs/lambda_function.py` e `docs/lambda-function.py` sono identici (esempio AWS Lambda con ffmpeg) e non sono usati dal codice: nessun riferimento a "lambda" in `app/`, `config/`, `tests/`.
 
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
+## Struttura della documentazione
 
-## Documentation
+- **architecture.md**: architettura del modulo e pattern di design
+- **README.md**: questo file
+- **stories/**: story BMAD del modulo (elenco in [INDEX.md](index.md#story-bmad))
+- **bmad/**: artefatti BMAD (indice in [bmad/00-INDEX.md](./bmad/00-index.md))
 
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
-=======
->>>>>>> 6ed19256f (.)
+Linee guida: documenti chiari e concisi, ricchi di esempi, aggiornati insieme al codice, in formato Markdown (`.md`).
+
+## Story recenti
+
+- [2026-10-06 PHPStan cleanup - Media](./stories/phpstan-zero-errors-media.story.md) · [dev](./stories/phpstan-zero-errors-media.dev.md)
+- [02 Risoluzione dei marker di merge del commit e7e667b11](./stories/02.Media-merge-conflict-resolution.story.md)
+- [2026-10-30 Niente testi fissi nelle Blade (it, en, de, es)](./stories/blade-i18n-no-hardcoded-text.story.md)

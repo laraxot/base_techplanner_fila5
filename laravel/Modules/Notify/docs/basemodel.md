@@ -1,3 +1,15 @@
+---
+title: "basemodel"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "basemodel"
+issues: []
+discussions: []
+status: draft
+---
+
 # BaseModel: Regola obbligatoria e motivazione
 
 ## Regola
@@ -23,16 +35,8 @@ class NotificationTemplate extends BaseModel {}
 
 ## Collegamenti
 - [../module_notify.md](../module_notify.md)
-- [../../Patient/docs/basemodel.md](../../Patient/docs/basemodel.md)
-<<<<<<< HEAD
 - [../../Patient/docs/basemodel.md](../../patient/docs/basemodel.md)
 - Regola "evita override inutili" nei prompt e docs root.
 
 ---
 **Nota:** Se trovi un model che estende Model invece di BaseModel, correggi subito e segnala l’errore nella PR.
-=======
-- Regola "evita override inutili" nei prompt e docs root.
-
----
-**Nota:** Se trovi un model che estende Model invece di BaseModel, correggi subito e segnala l’errore nella PR.
->>>>>>> 6ed19256f (.)

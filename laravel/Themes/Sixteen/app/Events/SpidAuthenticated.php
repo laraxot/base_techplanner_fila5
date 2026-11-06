@@ -6,19 +6,11 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-<<<<<<< HEAD
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 /**
  * Evento lanciato quando un utente si autentica con successo tramite SPID
  *
-=======
-use Themes\Sixteen\Models\User;
-
-/**
- * Evento lanciato quando un utente si autentica con successo tramite SPID
- * 
->>>>>>> 6ed19256f (.)
  * Questo evento permette di reagire all'autenticazione SPID
  * per logging, analytics, integrazione con sistemi esterni, etc.
  */
@@ -26,28 +18,22 @@ class SpidAuthenticated
 {
     use Dispatchable, SerializesModels;
 
+    /**
+     * @param  array<string, mixed>  $spidAttributes
+     */
     public function __construct(
-        public User $user,
+        public UserContract $user,
         public array $spidAttributes
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     /**
      * Ottiene il provider SPID utilizzato
      */
     public function getProvider(): ?string
     {
-<<<<<<< HEAD
         $value = $this->spidAttributes['provider'] ?? null;
 
         return is_string($value) ? $value : null;
-=======
-        return $this->spidAttributes['provider'] ?? null;
->>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -55,13 +41,9 @@ class SpidAuthenticated
      */
     public function getAuthLevel(): ?int
     {
-<<<<<<< HEAD
         $value = $this->spidAttributes['auth_level'] ?? null;
 
         return is_int($value) ? $value : null;
-=======
-        return $this->spidAttributes['auth_level'] ?? null;
->>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -69,13 +51,9 @@ class SpidAuthenticated
      */
     public function getFiscalCode(): ?string
     {
-<<<<<<< HEAD
         $value = $this->spidAttributes['fiscal_code'] ?? null;
 
         return is_string($value) ? $value : null;
-=======
-        return $this->spidAttributes['fiscal_code'] ?? null;
->>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -89,6 +67,9 @@ class SpidAuthenticated
     /**
      * Ottiene tutti gli attributi SPID ricevuti
      */
+    /**
+     * @return array<string, mixed>
+     */
     public function getSpidAttributes(): array
     {
         return $this->spidAttributes;
@@ -96,6 +77,9 @@ class SpidAuthenticated
 
     /**
      * Ottiene attributi specifici per logging sicuro
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function getLoggingData(): array
     {
@@ -108,8 +92,4 @@ class SpidAuthenticated
             'timestamp' => now()->toISOString(),
         ];
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6ed19256f (.)

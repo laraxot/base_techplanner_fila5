@@ -1,11 +1,15 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: rector-conflict-resolution
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Rector Conflict Resolution"
+module: "Tenant"
+type: concept
+tags: [rector, conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "rector conflict resolution"
+related:
+  - "./phpstan-corrections-january.md"
+status: draft
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)

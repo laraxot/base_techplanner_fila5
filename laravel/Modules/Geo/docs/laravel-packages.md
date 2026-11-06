@@ -1,12 +1,20 @@
+---
+title: "laravel packages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel packages"
+issues: []
+discussions: []
+status: draft
+---
+
 -----------------------------------------------
 https://gasparesganga.com/labs/php-shapefile/
 -----------------------------------------------
 
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 6ed19256f (.)
 fathernelson/laravel-mysql-spatial
 -----------------------------------------------
 
@@ -86,8 +94,4 @@ https://ourcodeworld.com/articles/read/1019/how-to-find-nearest-locations-from-a
 -----------------------------------------------
 -----------------------------------------------
 -----------------------------------------------
-<<<<<<< HEAD
 -----------------------------------------------
-=======
------------------------------------------------
->>>>>>> 6ed19256f (.)

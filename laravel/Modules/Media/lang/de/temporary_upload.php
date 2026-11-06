@@ -4,18 +4,15 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'label' => 'temporary upload',
-        'group' => 'temporary upload',
-        'icon' => 'temporary upload',
+        'label' => 'Temporärer Upload',
+        'group' => 'Temporärer Upload',
+        'icon' => 'Temporärer Upload',
         'sort' => '96',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

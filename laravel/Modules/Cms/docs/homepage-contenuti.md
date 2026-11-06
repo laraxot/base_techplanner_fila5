@@ -1,3 +1,15 @@
+---
+title: "homepage contenuti"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "homepage contenuti"
+issues: []
+discussions: []
+status: draft
+---
+
 # Contenuti Homepage il progetto
 
 ## Testo principale della homepage
@@ -5,11 +17,7 @@
 Il testo seguente deve essere mostrato nella homepage del portale il progetto:
 
 ```
-Benvenuta su <slogan>,
-<<<<<<< HEAD
 Benvenuta su Salute Orale,
-=======
->>>>>>> 6ed19256f (.)
 
 il portale che vuole garantire alle pazienti vulnerabili in
 stato di gravidanza la possibilità di accedere a servizi
@@ -50,8 +58,4 @@ Se il contenuto della homepage deve essere modificato, è necessario:
 
 1. Aggiornare questo documento
 2. Aggiornare il file JSON corrispondente in `/var/www/html/<directory progetto>/laravel/config/local/<directory progetto>/database/content/pages/1.json`
-<<<<<<< HEAD
 3. Verificare che le modifiche siano correttamente visualizzate in tutte le versioni (mobile, tablet, desktop)
-=======
-3. Verificare che le modifiche siano correttamente visualizzate in tutte le versioni (mobile, tablet, desktop)
->>>>>>> 6ed19256f (.)

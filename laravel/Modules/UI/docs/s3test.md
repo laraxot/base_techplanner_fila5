@@ -1,24 +1,27 @@
+---
+title: "s3test"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "s3test"
+issues: []
+discussions: []
+status: draft
+---
+
 # S3Test Component Documentation
 
 ## Overview
 The S3Test component is a Filament page that provides diagnostic tools for AWS S3 and CloudFront integration. It allows administrators to test various aspects of the AWS configuration, including S3 connection, permissions, bucket policies, CloudFront signed URLs, and file operations.
 
 ## File Location
-<<<<<<< HEAD
 - **Class**: `Modules/UI/app/Filament/Clusters/Test/Pages/S3Test.php`
 - **View**: `Modules/UI/resources/views/filament/components/test-results.blade.php`
 - **Translations**: `Modules/UI/lang/it/s3test.php`
 - **Class**: `Modules/UI/app/Filament/Clusters/Test/Pages/S3Test.php`
 - **View**: `Modules/UI/resources/views/filament/components/test-results.blade.php`
 - **Translations**: `Modules/UI/lang/it/s3test.php`
-=======
-- **Class**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/app/Filament/Clusters/Test/Pages/S3Test.php`
-- **View**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/resources/views/filament/components/test-results.blade.php`
-- **Translations**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/lang/it/s3test.php`
-- **Class**: `/var/www/html/_bases/base_saluteora/laravel/Modules/UI/app/Filament/Clusters/Test/Pages/S3Test.php`
-- **View**: `/var/www/html/_bases/base_saluteora/laravel/Modules/UI/resources/views/filament/components/test-results.blade.php`
-- **Translations**: `/var/www/html/_bases/base_saluteora/laravel/Modules/UI/lang/it/s3test.php`
->>>>>>> 6ed19256f (.)
 
 ## Features
 - S3 connection testing
@@ -115,11 +118,7 @@ All AWS operations are wrapped in try-catch blocks to handle exceptions graceful
 ## Related Documentation
 - [AWS Test Bugfix Documentation](./awstest-bugfix-undefined-variable.md)
 - [Bugfix: Undefined Variable in AWS Test](./bugfix-awstest-undefined-variable.md)
-<<<<<<< HEAD
 - [Root Documentation: AWS Testing](../../../docs/aws-testing.md)
-=======
-- [Root Documentation: AWS Testing](../../docs/aws-testing.md)
->>>>>>> 6ed19256f (.)
 
 ## PHPStan Compliance
 The component has been updated to comply with PHPStan level 9 requirements:
@@ -130,8 +129,4 @@ The component has been updated to comply with PHPStan level 9 requirements:
 - Correct parameter typing
 - Safe function usage
 
-*Last Updated: August 2025*
-<<<<<<< HEAD
 *
-=======
->>>>>>> 6ed19256f (.)

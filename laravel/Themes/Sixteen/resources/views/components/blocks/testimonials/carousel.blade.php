@@ -27,23 +27,14 @@
                     <div class="bg-gray-50 rounded-xl p-8 relative">
                         {{-- Quote Icon --}}
                         <div class="absolute top-6 right-6 text-blue-200">
-<<<<<<< HEAD
                             <x-filament::icon icon="heroicon-o-chat-bubble-left-ellipsis" class="w-8 h-8" />
-f7ac8eda (.)
-=======
-                            <x-heroicon-o-chat-bubble-left-ellipsis class="w-8 h-8" />
->>>>>>> 6ed19256f (.)
                         </div>
 
                         {{-- Rating --}}
                         @if(isset($testimonial['rating']))
                             <div class="flex mb-4">
                                 @for($i = 1; $i <= 5; $i++)
-<<<<<<< HEAD
                                     <x-filament::icon icon="heroicon-s-star" class="w-5 h-5 {{ $i <= $testimonial['rating'] ? 'text-yellow-400' : 'text-gray-300' }}" />
-=======
-                                    <x-heroicon-s-star class="w-5 h-5 {{ $i <= $testimonial['rating'] ? 'text-yellow-400' : 'text-gray-300' }}" />
->>>>>>> 6ed19256f (.)
                                 @endfor
                             </div>
                         @endif
@@ -60,7 +51,7 @@ f7ac8eda (.)
                             @if(isset($testimonial['avatar']))
                                 <img 
                                     src="{{ $testimonial['avatar'] }}" 
-                                    alt="{{ $testimonial['author'] ?? 'Cliente' }}"
+                                    alt="{{ $testimonial['author'] ?? __('pub_theme::components_common.fallback.customer.label') }}"
                                     class="w-12 h-12 rounded-full mr-4 object-cover"
                                 >
                             @else

@@ -1,3 +1,11 @@
+---
+title: "Ottimizzazioni DRY + KISS - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "ottimizzazioni dry + kiss - modulo activity activity"
+---
 # Ottimizzazioni DRY + KISS - Modulo Activity
 
 ## Panoramica del Modulo
@@ -37,10 +45,7 @@ Root modulo:
 ├── test03.txt                           # ❌ File temporaneo
 ├── test04.txt                           # ❌ File temporaneo
 ├── test2024-12-04.txt                   # ❌ File temporaneo
-<<<<<<< HEAD
 ├── test[DATE].txt                   # ❌ File temporaneo
-=======
->>>>>>> 6ed19256f (.)
 ├── test2222.txt                         # ❌ File temporaneo
 ├── test444.txt                          # ❌ File temporaneo
 ├── test_14_02_2024.txt                  # ❌ File temporaneo
@@ -366,19 +371,11 @@ protected function registerConfig(): void
 - **Maintainability**: +60% codice più semplice
 
 ## Collegamenti
-<<<<<<< HEAD
-=======
-- [Template Standardizzato](../../docs/template-modulo-standardizzato.md)
-- [Ottimizzazioni Master](../../docs/ottimizzazioni-modulari-master.md)
->>>>>>> 6ed19256f (.)
 - [Modulo UI](../UI/docs/ottimizzazioni-dry-kiss.md)
 
 ---
 
 *Ultimo aggiornamento: Gennaio 2025 - Ottimizzazione DRY + KISS Activity Module*
-<<<<<<< HEAD
 - [Template Standardizzato](../../../docs/template-modulo-standardizzato.md)
 - [Ottimizzazioni Master](../../../docs/ottimizzazioni-modulari-master.md)
 - [Modulo UI](../ui/docs/ottimizzazioni-dry-kiss.md)
-=======
->>>>>>> 6ed19256f (.)

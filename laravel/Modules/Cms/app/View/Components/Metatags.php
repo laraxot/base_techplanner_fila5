@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Cms\View\Components;
 
+use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\View\Component;
-<<<<<<< HEAD
-use Modules\Cms\Support\PageSchemaBuilder;
-=======
->>>>>>> 6ed19256f (.)
+use Modules\Cms\Actions\BuildPageSchemaAction;
 use Modules\Xot\Actions\GetViewAction;
 use Modules\Xot\Datas\MetatagData;
 
@@ -22,9 +20,8 @@ class Metatags extends Component
     {
         $metatag = MetatagData::make();
         $view = app(GetViewAction::class)->execute();
-<<<<<<< HEAD
         $route = request()->route();
-        $routeName = $route?->getName();
+        $routeName = $route ? $route->getName() : null;
         /** @var array<string, mixed> $routeParameters */
         $routeParameters = [];
         if (is_object($route)) {
@@ -34,23 +31,18 @@ class Metatags extends Component
         }
         $path = request()->path();
 
+        $authUser = auth()->user();
+        $user = $authUser instanceof Authenticatable ? $authUser : null;
         $view_params = [
             'meta' => $metatag,
-            'pageSchema' => app(PageSchemaBuilder::class)->build(
+            'pageSchema' => app(BuildPageSchemaAction::class)->execute(
                 meta: $metatag,
                 routeName: $routeName,
                 path: $path,
                 routeParameters: $routeParameters,
-                user: auth()->user(),
+                user: $user,
             ),
         ];
-=======
-
-        $view_params = [
-            'meta' => $metatag,
-        ];
-        // @phpstan-ignore-next-line
->>>>>>> 6ed19256f (.)
         if (! view()->exists($view)) {
             throw new \Exception('view not found: '.$view);
         }

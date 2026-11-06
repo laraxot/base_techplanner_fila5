@@ -1,3 +1,15 @@
+---
+title: "filament form sopra tabella"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament form sopra tabella"
+issues: []
+discussions: []
+status: draft
+---
+
 # Aggiungere un Form Sopra una Tabella in Filament
 
 Questa guida illustra come implementare un form di creazione direttamente sopra una tabella di risorse in Filament, migliorando l'esperienza utente eliminando la necessità di navigare a una pagina separata per creare nuovi record.
@@ -74,7 +86,6 @@ class CreateRecordWidget extends Widget implements HasForms
     {
         // Ottieni i dati validati dal form
         $data = $this->form->getState();
-<<<<<<< HEAD
         
         // Crea il nuovo record
         MioModello::create($data);
@@ -82,15 +93,6 @@ class CreateRecordWidget extends Widget implements HasForms
         // Resetta il form
         $this->form->fill();
         
-=======
->>>>>>> 6ed19256f (.)
-
-        // Crea il nuovo record
-        MioModello::create($data);
-
-        // Resetta il form
-        $this->form->fill();
-
         // Invia un evento Livewire per aggiornare la tabella
         $this->dispatch('record-created');
     }
@@ -231,12 +233,7 @@ public function create(): void
     MioModello::create($data);
     $this->form->fill();
     $this->dispatch('record-created');
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // Mostra una notifica di successo
     Notification::make()
         ->title('Record creato con successo')
@@ -311,12 +308,7 @@ public function create(): void
         MioModello::create($data);
         $this->form->fill();
         $this->dispatch('record-created');
-<<<<<<< HEAD
         
-        
-=======
-
->>>>>>> 6ed19256f (.)
         Notification::make()
             ->title('Record creato con successo')
             ->success()
@@ -354,8 +346,4 @@ Seguendo questa guida e rispettando le convenzioni di il progetto, potrai implem
 - [Documentazione ufficiale di Filament](https://filamentphp.com/docs)
 - [Documentazione di Livewire](https://livewire.laravel.com/docs)
 - [Repository di esempio su GitHub](https://github.com/LaravelDaily/Filament-Form-On-Top-Of-Resource)
-<<<<<<< HEAD
 - [FilamentExamples.com](https://filamentexamples.com)
-=======
-- [FilamentExamples.com](https://filamentexamples.com)
->>>>>>> 6ed19256f (.)

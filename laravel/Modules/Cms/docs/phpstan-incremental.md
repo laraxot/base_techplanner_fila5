@@ -1,3 +1,15 @@
+---
+title: "phpstan incremental"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan incremental"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Incrementale con PHPStan
 
 ## Introduzione
@@ -68,12 +80,7 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    $result = $object->nonExistentMethod();
-<<<<<<< HEAD
    
-   
-=======
-
->>>>>>> 6ed19256f (.)
    // Dopo
    $result = $object->existingMethod();
    ```
@@ -82,12 +89,7 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    $value = $object->nonExistentProperty;
-<<<<<<< HEAD
    
-   
-=======
-
->>>>>>> 6ed19256f (.)
    // Dopo
    $value = $object->existingProperty;
    ```
@@ -96,12 +98,7 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    public function process($data) {
-<<<<<<< HEAD
    
-   
-=======
-
->>>>>>> 6ed19256f (.)
    // Dopo
    public function process(array $data): void {
    ```
@@ -110,20 +107,11 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    public function getData() {
-<<<<<<< HEAD
    
-   
-=======
-
->>>>>>> 6ed19256f (.)
    // Dopo
    public function getData(): array {
    ```
 
 ## Conclusione
 
-L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza.
-<<<<<<< HEAD
 L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza. 
-=======
->>>>>>> 6ed19256f (.)

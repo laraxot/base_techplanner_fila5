@@ -1,13 +1,33 @@
+---
+title: "Risoluzione dei Conflitti Git nel Modulo User"
+type: concept
+tags: [conflict, resolution, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict-resolution-report risoluzione dei conflitti git nel modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
 
-<<<<<<< HEAD
-Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md).
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
-=======
-Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/CONFLICT_RESOLUTION.md).
->>>>>>> 6ed19256f (.)
 
 ## Conflitti Risolti
 
@@ -44,12 +64,7 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 - Mantenimento dei componenti Filament per coerenza con le best practices del progetto
 
 #### Motivazione
-<<<<<<< HEAD
-Questa soluzione allinea il widget alle [best practices di Filament](Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](docs/TRANSLATIONS_RULES.md) del progetto.
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
-=======
-Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/TRANSLATIONS_RULES.md) del progetto.
->>>>>>> 6ed19256f (.)
 
 ### 3. Dichiarazione strict_types
 
@@ -60,12 +75,7 @@ Alcuni file PHP non avevano la dichiarazione `declare(strict_types=1);` o l'avev
 Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti i file PHP, posizionandola immediatamente dopo il tag di apertura PHP e prima di qualsiasi altro codice, inclusi i docblock.
 
 #### Motivazione
-<<<<<<< HEAD
-Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
-=======
-Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
->>>>>>> 6ed19256f (.)
 
 ## Impatto delle Modifiche
 
@@ -77,40 +87,18 @@ Le modifiche apportate garantiscono:
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< HEAD
 - [Filosofia della Documentazione](docs/documentation_philosophy.md)
 - [Risoluzione dei Conflitti](docs/conflict_resolution.md)
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
 - [Regole di Traduzione](docs/translations_rules.md)
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
-- [Implementazione Login](modules/user/docs/auth_login_implementation.md)
-- [Implementazione Logout](modules/user/docs/auth_logout_implementation.md)
-- [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md)
-- [Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md)
-- [Best Practices Filament](Modules/User/docs/FILAMENT_BEST_PRACTICES.md)
-- [Regole di Traduzione](docs/TRANSLATIONS_RULES.md)
-- [PHPStan Livello 9](docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md)
-- [Implementazione Login](Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
-- [Implementazione Logout](Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
-=======
-- [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md)
-- [Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/CONFLICT_RESOLUTION.md)
-- [Best Practices Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md)
-- [Regole di Traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/TRANSLATIONS_RULES.md)
-- [PHPStan Livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md)
-- [Implementazione Login](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
-- [Implementazione Logout](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
->>>>>>> 6ed19256f (.)
+- [Implementazione Login](modules/user/docs/auth-login-implementation.md)
+- [Implementazione Logout](modules/user/docs/auth-logout-implementation.md)
 # Risoluzione dei Conflitti Git nel Modulo User
 
 ## Panoramica
 
-<<<<<<< HEAD
-Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md).
 Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](docs/documentation_philosophy.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](docs/conflict_resolution.md).
-=======
-Questo documento descrive i conflitti Git risolti nel modulo User e le decisioni architetturali prese durante il processo di risoluzione. Il documento segue i principi descritti nella [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md) e nelle [Linee Guida per la Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/CONFLICT_RESOLUTION.md).
->>>>>>> 6ed19256f (.)
 
 ## Conflitti Risolti
 
@@ -147,12 +135,7 @@ Abbiamo adottato la struttura migliorata della versione aurmich/dev, ma con le s
 - Mantenimento dei componenti Filament per coerenza con le best practices del progetto
 
 #### Motivazione
-<<<<<<< HEAD
-Questa soluzione allinea il widget alle [best practices di Filament](Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](docs/TRANSLATIONS_RULES.md) del progetto.
 Questa soluzione allinea il widget alle [best practices di Filament](modules/user/docs/filament_best_practices.md) e alle [regole di traduzione](docs/translations_rules.md) del progetto.
-=======
-Questa soluzione allinea il widget alle [best practices di Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md) e alle [regole di traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/TRANSLATIONS_RULES.md) del progetto.
->>>>>>> 6ed19256f (.)
 
 ### 3. Dichiarazione strict_types
 
@@ -163,12 +146,7 @@ Alcuni file PHP non avevano la dichiarazione `declare(strict_types=1);` o l'avev
 Abbiamo aggiunto o corretto la dichiarazione `declare(strict_types=1);` in tutti i file PHP, posizionandola immediatamente dopo il tag di apertura PHP e prima di qualsiasi altro codice, inclusi i docblock.
 
 #### Motivazione
-<<<<<<< HEAD
-Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
 Questa soluzione è conforme alle [regole di PHPStan livello 9](docs/phpstan/phpstan_livello9_linee_guida.md) e alle convenzioni del progetto.
-=======
-Questa soluzione è conforme alle [regole di PHPStan livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md) e alle convenzioni del progetto.
->>>>>>> 6ed19256f (.)
 
 ## Impatto delle Modifiche
 
@@ -180,27 +158,10 @@ Le modifiche apportate garantiscono:
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< HEAD
 - [Filosofia della Documentazione](docs/documentation_philosophy.md)
 - [Risoluzione dei Conflitti](docs/conflict_resolution.md)
 - [Best Practices Filament](modules/user/docs/filament_best_practices.md)
 - [Regole di Traduzione](docs/translations_rules.md)
 - [PHPStan Livello 9](docs/phpstan/phpstan_livello9_linee_guida.md)
-- [Implementazione Login](modules/user/docs/auth_login_implementation.md)
-- [Implementazione Logout](modules/user/docs/auth_logout_implementation.md)
-- [Filosofia della Documentazione](docs/DOCUMENTATION_PHILOSOPHY.md)
-- [Risoluzione dei Conflitti](docs/CONFLICT_RESOLUTION.md)
-- [Best Practices Filament](Modules/User/docs/FILAMENT_BEST_PRACTICES.md)
-- [Regole di Traduzione](docs/TRANSLATIONS_RULES.md)
-- [PHPStan Livello 9](docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md)
-- [Implementazione Login](Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
-- [Implementazione Logout](Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
-=======
-- [Filosofia della Documentazione](/var/www/html/_bases/base_predict_fila3_mono/docs/DOCUMENTATION_PHILOSOPHY.md)
-- [Risoluzione dei Conflitti](/var/www/html/_bases/base_predict_fila3_mono/docs/CONFLICT_RESOLUTION.md)
-- [Best Practices Filament](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/FILAMENT_BEST_PRACTICES.md)
-- [Regole di Traduzione](/var/www/html/_bases/base_predict_fila3_mono/docs/TRANSLATIONS_RULES.md)
-- [PHPStan Livello 9](/var/www/html/_bases/base_predict_fila3_mono/docs/phpstan/PHPSTAN_LIVELLO9_LINEE_GUIDA.md)
-- [Implementazione Login](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/AUTH_LOGIN_IMPLEMENTATION.md)
-- [Implementazione Logout](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/User/docs/AUTH_LOGOUT_IMPLEMENTATION.md)
->>>>>>> 6ed19256f (.)
+- [Implementazione Login](modules/user/docs/auth-login-implementation.md)
+- [Implementazione Logout](modules/user/docs/auth-logout-implementation.md)

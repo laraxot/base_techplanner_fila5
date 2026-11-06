@@ -1,8 +1,18 @@
-<<<<<<< HEAD
+---
+issues: []
+discussions: []
+title: "Standard per Modal Heading e Description nelle Traduzioni <nome progetto>"
+module: "Lang"
+type: rule
+tags: [filament4, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament4 migration"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Standard per Modal Heading e Description nelle Traduzioni <nome progetto>
-=======
-# Standard per Modal Heading e Description nelle Traduzioni SaluteOra
->>>>>>> 6ed19256f (.)
 
 ## Regola: Stringhe Dirette per Modal Properties
 
@@ -112,16 +122,15 @@ Questa regola si applica a:
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Regole Traduzioni <nome progetto>](translation-helper-text-standards.md)
-=======
-- [Regole Traduzioni SaluteOra](translation-helper-text-standards.md)
->>>>>>> 6ed19256f (.)
 - [Standard Helper Text](translation-helper-text-standards.md)
 - [Convenzioni Filament](filament-best-practices.md)
 
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
-=======
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: 2025-01-06*
+*Ultimo aggiornamento: 2025-01-06*

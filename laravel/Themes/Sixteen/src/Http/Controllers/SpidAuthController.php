@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Http\Controllers;
 
-<<<<<<< HEAD
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -15,38 +14,22 @@ use Illuminate\Support\Facades\Session;
 use Themes\Sixteen\Events\SpidAuthenticated;
 use Themes\Sixteen\Events\SpidLoggedOut;
 use Themes\Sixteen\Models\User;
-use Themes\Sixteen\Services\SpidAuthService;
+use Themes\Sixteen\Actions\SpidAuthAction;
 
 /**
- * Controller per l'autenticazione SPID
+ * Controller per l'autenticazione SPID.
  *
-=======
->>>>>>> 6ed19256f (.)
-use Illuminate\Http\{Request, RedirectResponse, Response};
-use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\{Auth, Log, Session};
-use Themes\Sixteen\Services\SpidAuthService;
-use Themes\Sixteen\Models\User;
-use Themes\Sixteen\Events\{SpidAuthenticated, SpidLoggedOut};
-
-/**
- * Controller per l'autenticazione SPID
- * 
  * Gestisce il flusso completo di autenticazione SPID secondo le specifiche AGID
  */
 class SpidAuthController extends Controller
 {
     public function __construct(
-        protected SpidAuthService $spidService
-<<<<<<< HEAD
-    ) {}
-=======
+        protected SpidAuthAction $spidService
     ) {
     }
->>>>>>> 6ed19256f (.)
 
     /**
-     * Reindirizza al provider SPID per l'autenticazione
+     * Reindirizza al provider SPID per l'autenticazione.
      */
     public function login(Request $request, string $provider): RedirectResponse
     {
@@ -56,20 +39,12 @@ class SpidAuthController extends Controller
 
             // Valida il provider
             $providers = $this->spidService->getProviders();
-<<<<<<< HEAD
             if (! isset($providers[$provider])) {
-=======
-            if (!isset($providers[$provider])) {
->>>>>>> 6ed19256f (.)
                 throw new \InvalidArgumentException("Provider SPID '{$provider}' non supportato");
             }
 
             // Valida il livello SPID
-<<<<<<< HEAD
             if (! in_array($level, [1, 2, 3])) {
-=======
-            if (!in_array($level, [1, 2, 3])) {
->>>>>>> 6ed19256f (.)
                 throw new \InvalidArgumentException("Livello SPID non valido: {$level}");
             }
 
@@ -80,14 +55,9 @@ class SpidAuthController extends Controller
                 'user_agent' => $request->userAgent(),
             ]);
 
-            $loginUrl = $this->spidService->getLoginUrl($provider, $level, $returnUrl);
-<<<<<<< HEAD
+            $loginUrl = $this->spidService->getLoginUrl($provider, $level, (string) $returnUrl);
 
-=======
-            
->>>>>>> 6ed19256f (.)
             return redirect()->to($loginUrl);
-
         } catch (\Exception $e) {
             Log::error('SPID login error', [
                 'provider' => $provider,
@@ -101,14 +71,13 @@ class SpidAuthController extends Controller
     }
 
     /**
-     * Gestisce il callback dal provider SPID
+     * Gestisce il callback dal provider SPID.
      */
     public function callback(Request $request): RedirectResponse
     {
         try {
             // Processa la response SAML
             $userAttributes = $this->spidService->processCallback($request);
-<<<<<<< HEAD
 
             // Trova o crea l'utente
             $user = $this->findOrCreateUser($userAttributes);
@@ -123,22 +92,6 @@ class SpidAuthController extends Controller
             // Trigger evento
             event(new SpidAuthenticated($user, $userAttributes));
 
-=======
->>>>>>> 6ed19256f (.)
-            
-            // Trova o crea l'utente
-            $user = $this->findOrCreateUser($userAttributes);
-            
-            // Effettua il login
-            Auth::login($user, true);
-            
-            // Salva i dati SPID in sessione
-            Session::put('spid.authenticated', true);
-            Session::put('spid.user_data', $userAttributes);
-            
-            // Trigger evento
-            event(new SpidAuthenticated($user, $userAttributes));
-            
             Log::info('SPID authentication completed', [
                 'user_id' => $user->id,
                 'provider' => $userAttributes['provider'],
@@ -147,14 +100,9 @@ class SpidAuthController extends Controller
 
             // Redirect all'URL di ritorno
             $returnUrl = Session::pull('spid.return_url', route('dashboard'));
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6ed19256f (.)
-            return redirect()->to($returnUrl)
+            return redirect()->to((string) $returnUrl)
                 ->with('success', 'Autenticazione SPID completata con successo.');
-
         } catch (\Exception $e) {
             Log::error('SPID callback error', [
                 'error' => $e->getMessage(),
@@ -166,16 +114,12 @@ class SpidAuthController extends Controller
             $this->spidService->logout();
 
             return redirect()->route('login')
-<<<<<<< HEAD
                 ->with('error', 'Errore durante l\'autenticazione SPID: '.$e->getMessage());
-=======
-                ->with('error', 'Errore durante l\'autenticazione SPID: ' . $e->getMessage());
->>>>>>> 6ed19256f (.)
         }
     }
 
     /**
-     * Gestisce il logout SPID
+     * Gestisce il logout SPID.
      */
     public function logout(Request $request): RedirectResponse
     {
@@ -186,16 +130,16 @@ class SpidAuthController extends Controller
 
             if ($user && $userData && $provider) {
                 // Se abbiamo i dati per il Single Logout, usiamoli
-                if (isset($userData['name_id']) && isset($userData['session_index'])) {
+                if (isset($userData['name_id'], $userData['session_index'])) {
                     Log::info('SPID logout initiated', [
                         'user_id' => $user->id,
                         'provider' => $provider,
                     ]);
 
                     $logoutUrl = $this->spidService->getLogoutUrl(
-                        $provider,
-                        $userData['name_id'],
-                        $userData['session_index']
+                        (string) $provider,
+                        (string) $userData['name_id'],
+                        (string) $userData['session_index']
                     );
 
                     // Effettua logout locale
@@ -224,7 +168,6 @@ class SpidAuthController extends Controller
 
             return redirect()->route('home')
                 ->with('success', 'Logout effettuato con successo.');
-
         } catch (\Exception $e) {
             Log::error('SPID logout error', [
                 'error' => $e->getMessage(),
@@ -244,13 +187,12 @@ class SpidAuthController extends Controller
     }
 
     /**
-     * Gestisce il Single Logout (SLO) dal provider SPID
+     * Gestisce il Single Logout (SLO) dal provider SPID.
      */
     public function singleLogout(Request $request): Response
     {
         try {
             // Processa la richiesta SLO
-            $logoutRequest = $request->input('SAMLRequest');
             $relayState = $request->input('RelayState');
 
             Log::info('SPID SLO received', [
@@ -262,259 +204,73 @@ class SpidAuthController extends Controller
             if (Auth::check()) {
                 $user = Auth::user();
                 $userData = Session::get('spid.user_data', []);
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 6ed19256f (.)
                 Auth::logout();
                 $this->spidService->logout();
                 Session::invalidate();
 
-                event(new SpidLoggedOut($user, $userData));
+                if ($user && is_array($userData)) {
+                    event(new SpidLoggedOut($user, $userData));
+                }
             }
 
-            // Genera response SLO
-            $sloResponse = $this->generateSloResponse($relayState);
-
-            return response($sloResponse)
-                ->header('Content-Type', 'text/xml');
-
+            // Genera response SLO per il provider
+            return $this->spidService->generateSloResponse($request);
         } catch (\Exception $e) {
             Log::error('SPID SLO error', [
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
             ]);
 
-            // Response di errore
-            $errorResponse = $this->generateSloErrorResponse();
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> 6ed19256f (.)
-            return response($errorResponse, 500)
-                ->header('Content-Type', 'text/xml');
+            return response('Errore durante il Single Logout', 500);
         }
     }
 
     /**
-     * Fornisce i metadata SAML del Service Provider
-     */
-    public function metadata(): Response
-    {
-        try {
-            $metadata = $this->spidService->getMetadata();
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> 6ed19256f (.)
-            return response($metadata)
-                ->header('Content-Type', 'application/samlmetadata+xml')
-                ->header('Content-Disposition', 'inline; filename="metadata.xml"');
-
-        } catch (\Exception $e) {
-            Log::error('SPID metadata generation error', [
-                'error' => $e->getMessage(),
-                'trace' => $e->getTraceAsString(),
-            ]);
-
-            abort(500, 'Errore nella generazione del metadata');
-        }
-    }
-
-    /**
-     * Trova o crea un utente basato sui dati SPID
+     * Trova o crea un utente basato sugli attributi SPID.
+     *
+     * @param  array<string, mixed>  $attributes
      */
     protected function findOrCreateUser(array $attributes): User
     {
-        $fiscalCode = $attributes['fiscal_code'];
-<<<<<<< HEAD
+        $user = User::where('fiscal_code', $attributes['fiscal_code'])->first();
 
-=======
-        
->>>>>>> 6ed19256f (.)
-        if (empty($fiscalCode)) {
-            throw new \Exception('Codice fiscale mancante nei dati SPID');
+        if (! $user) {
+            $user = User::create([
+                'name' => $attributes['given_name'].' '.$attributes['family_name'],
+                'email' => $attributes['email'] ?? $attributes['fiscal_code'].'@spid.internal',
+                'password' => bcrypt(str_random(16)),
+                'fiscal_code' => $attributes['fiscal_code'],
+                'given_name' => $attributes['given_name'],
+                'family_name' => $attributes['family_name'],
+                'birth_date' => $attributes['date_of_birth'],
+            ]);
         }
 
-        // Cerca utente per codice fiscale
-        $user = User::where('fiscal_code', $fiscalCode)->first();
+        $this->updateUserFromSpid($user, $attributes);
 
-        if ($user) {
-            // Aggiorna i dati se necessario
-            $this->updateUserFromSpid($user, $attributes);
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ed19256f (.)
-            return $user;
-        }
-
-        // Crea nuovo utente
-        return $this->createUserFromSpid($attributes);
+        return $user;
     }
 
     /**
-     * Crea un nuovo utente dai dati SPID
-     */
-    protected function createUserFromSpid(array $attributes): User
-    {
-        $userData = [
-            'name' => $attributes['name'],
-            'surname' => $attributes['surname'],
-            'email' => $attributes['email'],
-            'fiscal_code' => $attributes['fiscal_code'],
-            'birth_date' => $attributes['birth_date'],
-            'birth_place' => $attributes['birth_place'],
-            'gender' => $attributes['gender'],
-            'mobile_phone' => $attributes['mobile'],
-            'address' => $attributes['address'],
-            'spid_provider' => $attributes['provider'],
-            'auth_method' => 'spid',
-            'email_verified_at' => $attributes['email'] ? now() : null,
-        ];
-
-        // Genera email temporanea se mancante
-        if (empty($userData['email'])) {
-<<<<<<< HEAD
-            $userData['email'] = 'spid.'.$attributes['fiscal_code'].'@noemail.local';
-=======
-            $userData['email'] = 'spid.' . $attributes['fiscal_code'] . '@noemail.local';
->>>>>>> 6ed19256f (.)
-        }
-
-        return User::create($userData);
-    }
-
-    /**
-     * Aggiorna un utente esistente con i dati SPID
+     * Aggiorna i dati dell'utente con le informazioni SPID più recenti.
+     *
+     * @param  array<string, mixed>  $attributes
      */
     protected function updateUserFromSpid(User $user, array $attributes): void
     {
         $updateData = [];
 
-        // Aggiorna campi se diversi
-        if ($user->name !== $attributes['name']) {
-            $updateData['name'] = $attributes['name'];
-        }
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 6ed19256f (.)
-        if ($user->surname !== $attributes['surname']) {
-            $updateData['surname'] = $attributes['surname'];
-        }
-
-        if ($attributes['email'] && $user->email !== $attributes['email']) {
-            $updateData['email'] = $attributes['email'];
-            $updateData['email_verified_at'] = now();
-        }
-
-        if ($attributes['mobile'] && $user->mobile_phone !== $attributes['mobile']) {
-            $updateData['mobile_phone'] = $attributes['mobile'];
-        }
-
-        // Aggiorna provider se diverso
-        if ($user->spid_provider !== $attributes['provider']) {
+        if (isset($attributes['provider'])) {
+            $updateData['auth_method'] = 'spid';
             $updateData['spid_provider'] = $attributes['provider'];
         }
 
         // Aggiorna ultimo accesso
         $updateData['last_login_at'] = now();
 
-<<<<<<< HEAD
         if (! empty($updateData)) {
-=======
-        if (!empty($updateData)) {
->>>>>>> 6ed19256f (.)
             $user->update($updateData);
         }
     }
-
-    /**
-     * Genera risposta SLO di successo
-     */
-    protected function generateSloResponse(string $relayState): string
-    {
-<<<<<<< HEAD
-        $responseId = 'res_'.bin2hex(random_bytes(16));
-        $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
-
-        return '<?xml version="1.0" encoding="UTF-8"?>'.PHP_EOL.
-               '<samlp:LogoutResponse xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"'.PHP_EOL.
-               '                      xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"'.PHP_EOL.
-               '                      ID="'.$responseId.'"'.PHP_EOL.
-               '                      Version="2.0"'.PHP_EOL.
-               '                      IssueInstant="'.$issueInstant.'">'.PHP_EOL.
-               '  <saml:Issuer>'.config('spid.entity_id').'</saml:Issuer>'.PHP_EOL.
-               '  <samlp:Status>'.PHP_EOL.
-               '    <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>'.PHP_EOL.
-               '  </samlp:Status>'.PHP_EOL.
-=======
->>>>>>> 6ed19256f (.)
-        $responseId = 'res_' . bin2hex(random_bytes(16));
-        $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
-
-        return '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL .
-               '<samlp:LogoutResponse xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"' . PHP_EOL .
-               '                      xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"' . PHP_EOL .
-               '                      ID="' . $responseId . '"' . PHP_EOL .
-               '                      Version="2.0"' . PHP_EOL .
-               '                      IssueInstant="' . $issueInstant . '">' . PHP_EOL .
-               '  <saml:Issuer>' . config('spid.entity_id') . '</saml:Issuer>' . PHP_EOL .
-               '  <samlp:Status>' . PHP_EOL .
-               '    <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Success"/>' . PHP_EOL .
-               '  </samlp:Status>' . PHP_EOL .
-               '</samlp:LogoutResponse>';
-    }
-
-    /**
-     * Genera risposta SLO di errore
-     */
-    protected function generateSloErrorResponse(): string
-    {
-<<<<<<< HEAD
-        $responseId = 'res_'.bin2hex(random_bytes(16));
-        $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
-
-        return '<?xml version="1.0" encoding="UTF-8"?>'.PHP_EOL.
-               '<samlp:LogoutResponse xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"'.PHP_EOL.
-               '                      xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"'.PHP_EOL.
-               '                      ID="'.$responseId.'"'.PHP_EOL.
-               '                      Version="2.0"'.PHP_EOL.
-               '                      IssueInstant="'.$issueInstant.'">'.PHP_EOL.
-               '  <saml:Issuer>'.config('spid.entity_id').'</saml:Issuer>'.PHP_EOL.
-               '  <samlp:Status>'.PHP_EOL.
-               '    <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Responder"/>'.PHP_EOL.
-               '  </samlp:Status>'.PHP_EOL.
-               '</samlp:LogoutResponse>';
-    }
 }
-=======
->>>>>>> 6ed19256f (.)
-        $responseId = 'res_' . bin2hex(random_bytes(16));
-        $issueInstant = gmdate('Y-m-d\TH:i:s\Z');
-
-        return '<?xml version="1.0" encoding="UTF-8"?>' . PHP_EOL .
-               '<samlp:LogoutResponse xmlns:samlp="urn:oasis:names:tc:SAML:2.0:protocol"' . PHP_EOL .
-               '                      xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion"' . PHP_EOL .
-               '                      ID="' . $responseId . '"' . PHP_EOL .
-               '                      Version="2.0"' . PHP_EOL .
-               '                      IssueInstant="' . $issueInstant . '">' . PHP_EOL .
-               '  <saml:Issuer>' . config('spid.entity_id') . '</saml:Issuer>' . PHP_EOL .
-               '  <samlp:Status>' . PHP_EOL .
-               '    <samlp:StatusCode Value="urn:oasis:names:tc:SAML:2.0:status:Responder"/>' . PHP_EOL .
-               '  </samlp:Status>' . PHP_EOL .
-               '</samlp:LogoutResponse>';
-    }
-<<<<<<< HEAD
-}
-
-
-
-=======
-}
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "contacttypeenum migration best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contacttypeenum migration best practices"
+issues: []
+discussions: []
+status: draft
+---
+
 # ContactTypeEnum Migration Best Practices
 
 ## Overview
@@ -456,15 +468,9 @@ class ContactRequest extends FormRequest
 
 ## Riferimenti
 
-- [AddressItemEnum Pattern](../Geo/docs/addressitemenum-migration-pattern.md)
-- [XotBaseMigration Documentation](../../Xot/docs/migration-patterns.md)
-- [Filament Integration](../../docs/filament-integration.md)
-<<<<<<< HEAD
 - [AddressItemEnum Pattern](../geo/docs/addressitemenum-migration-pattern.md)
 - [XotBaseMigration Documentation](../../xot/docs/migration-patterns.md)
 - [Filament Integration](../../../docs/filament-integration.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Laravel Migration Best Practices](https://laravel.com/docs/migrations)
 
 ## Note Tecniche
@@ -472,8 +478,4 @@ class ContactRequest extends FormRequest
 - ContactTypeEnum è compatibile con PHPStan livello 10
 - Segue il pattern XotBaseMigration per sicurezza
 - Integrato con il sistema di traduzioni del progetto
-<<<<<<< HEAD
 - Supporta validazioni automatiche tramite enum
-=======
-- Supporta validazioni automatiche tramite enum
->>>>>>> 6ed19256f (.)

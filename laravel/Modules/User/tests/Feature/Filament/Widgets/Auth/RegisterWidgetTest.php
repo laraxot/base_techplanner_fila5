@@ -15,6 +15,7 @@ use Modules\User\Tests\TestCase;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+    /* @var TestCase $this */
     config(['activitylog.enabled' => false]);
 
     if (! Schema::connection('user')->hasTable('users')) {
@@ -24,9 +25,9 @@ beforeEach(function (): void {
 
 describe('RegisterWidget FO', function (): void {
     test('register page loads with livewire widget', function (): void {
-        $this->get('/it/auth/register')
-            ->assertSuccessful()
-            ->assertSeeLivewire(RegisterWidget::class);
+        $this->get('/it/auth/register')->assertSuccessful();
+
+        Livewire::test(RegisterWidget::class)->assertSuccessful();
     });
 
     test('delegates form schema to UserForm via formClass', function (): void {
@@ -42,6 +43,7 @@ describe('RegisterWidget FO', function (): void {
     });
 
     test('can register user via submit', function (): void {
+        /** @var TestCase $this */
         $email = 'pest-register-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)
@@ -57,7 +59,7 @@ describe('RegisterWidget FO', function (): void {
 
         $this->assertAuthenticated();
 
-        $this->assertDatabaseHas(User::class, ['email' => $email]);
+        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
     });
 
     test('rejects invalid email without creating user', function (): void {
@@ -76,6 +78,7 @@ describe('RegisterWidget FO', function (): void {
     });
 
     test('save delegates to submit', function (): void {
+        /** @var TestCase $this */
         $email = 'pest-save-'.uniqid('', true).'@example.test';
 
         Livewire::test(RegisterWidget::class)
@@ -89,6 +92,6 @@ describe('RegisterWidget FO', function (): void {
             ->call('save')
             ->assertHasNoErrors();
 
-        $this->assertDatabaseHas(User::class, ['email' => $email]);
+        $this->assertDatabaseHasRow(User::class, ['email' => $email]);
     });
 });

@@ -1,4 +1,8 @@
 ---
+updated: 2026-09-26
+qmd: "filament first frontoffice"
+issues: []
+discussions: []
 title: "Filament-first sul frontoffice Sixteen"
 type: concept
 status: active
@@ -7,8 +11,8 @@ tags: [filament, frontoffice, tabs, design-comuni]
 related:
   - ../../../../../../docs/wiki/rules/filament-first-rule.md
   - ./no-standalone-livewire-frontoffice.md
-  - ../../design-comuni/visual-comparison/it-vs-segnalazioni-elenco.md
-  - ../../../../../Modules/Fixcity/docs/wiki/concepts/segnalazioni-elenco-map-architecture.md
+  - ../../design-comuni/visual-comparison/it-vs-ticket-list.md
+  - ../../../../../Modules/Fixcity/docs/wiki/concepts/ticket-list-map-architecture.md
 ---
 
 # Filament-first sul frontoffice Sixteen
@@ -21,13 +25,15 @@ Il tema Sixteen pubblica pagine Design Comuni con **Tailwind + BI semantics**, m
 
 `resources/views/layouts/main.blade.php` carica `@filamentStyles` e `@filamentScripts` — senza pannello admin i tag `<x-filament::*>` restano validi.
 
-## Tab `/it` (segnalazioni-elenco)
+## Tab `/it` (ticket-list)
 
-- **Implementazione:** [segnalazioni-elenco-filament-tabs.md](./segnalazioni-elenco-filament-tabs.md) · story [STORY-065](../../../../../../docs/stories/STORY-065-it-segnalazioni-filament-tabs.md)
+- **Implementazione:** [ticket-list-filament-tabs.md](./ticket-list-filament-tabs.md) · story [STORY-065](../../../../../../docs/stories/STORY-065-it-segnalazioni-filament-tabs.md)
 - **Docs Filament:** [Tabs](https://filamentphp.com/docs/5.x/components/tabs) — `alpine-active` + `x-on:click` sullo stesso `x-data` dei pannelli (`segnalazioniLayout`)
-- **Skin:** classi su `.segnalazioni-elenco .fi-tabs` in `style-apply.css` (non sostituire con `ul.nav-tabs` nuovi)
+- **Skin:** classi su `.ticket-list .fi-tabs` in `style-apply.css` (non sostituire con `ul.nav-tabs` nuovi)
 
 ## Dettaglio ticket `/it/tickets/{id}`
+
+> Aggiornamento 2026-10-14 (verificato sul codice): un `/{lang}/tickets/{id}` con id numerico e' servito dal ramo `ticket-detail` di `Themes/Sixteen/resources/views/pages/[container0]/[slug0]/index.blade.php` (condizione `ctype_digit($slug0)`): chiama `BuildPublicTicketDetailAction`, risponde 404 se la segnalazione non e' pubblica, aggiunge `data-dc` a `.page-content` e include `components/pages/ticket-detail.blade.php`, che include il blocco `components/blocks/ticket-detail/design-comuni.blade.php` (DCP-148). Il blocco usa `coordinate-picker-lit` in sola lettura con icona del tipo e colore dello stato (DCP-152, vedi [coordinate-picker](../coordinate-picker.md)). Nel repo non esiste `tickets.view.json` in `Modules/Fixcity/config/database/content/pages/` (solo `tickets.confirmation`, `tickets.create`, `tickets.index`, `tickets.track`), quindi il punto elenco CMS qui sotto non descrive piu' il percorso attivo; `Modules/Fixcity/app/Filament/Widgets/Ticket/ViewWidget.php` esiste ancora, ma non e' il percorso del dettaglio pubblico. Il divieto di `pub_theme::components.blocks.ticket.detail` resta vero: quel file non c'e' in `components/blocks/ticket/`. `TicketInfolist` non e' stato cercato altrove (non verificato). Le righe seguenti descrivono il disegno precedente, mantenute come storico.
 
 - **CMS:** `tickets.view.json` → blocco `type: widget` (non `type: ticket` + Blade custom).
 - **Widget:** `Modules\Fixcity\Filament\Widgets\Ticket\ViewWidget` (`XotBaseInfolistWidget`). Naming: [filament-widgets-domain-folder-naming](../../../../Modules/Xot/docs/wiki/concepts/filament-widgets-domain-folder-naming.md).

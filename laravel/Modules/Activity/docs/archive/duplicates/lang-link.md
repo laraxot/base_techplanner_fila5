@@ -1,5 +1,12 @@
-# Collegamento alle Traduzioni del Modulo Activity
+---
+module: theme
+topic: lang-link
+canonical: ../../../../../Themes/docs/shared-components/lang-link-duplicate.md
+---
 
+<<<<<<< .merge_file_Xp12CI
+See canonical documentation: ../../../../../Themes/docs/shared-components/lang-link-duplicate.md
+=======
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
@@ -60,8 +67,13 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Tenant/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Activity/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
+<<<<<<< .merge_file_hQvNkK
+* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
+>>>>>>> .merge_file_YHYeSl
+=======
 <<<<<<< HEAD
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 =======
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
 >>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_STwhvm

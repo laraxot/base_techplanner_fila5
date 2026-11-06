@@ -4,16 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\OauthPersonalAccessClientRelationsTrait;
 
 /**
- * @property string           $id
- * @property string           $client_id
+ * @property string $id
+ * @property string $client_id
  * @property OauthClient|null $client
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
+ * @method static \Modules\User\Database\Factories\OauthPersonalAccessClientFactory factory($count = null, $state = [])
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient query()
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereClientId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereCreatedBy($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereUpdatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder<static>|OauthPersonalAccessClient whereUpdatedBy($value)
+ *
+ * @mixin \Eloquent
  */
 class OauthPersonalAccessClient extends BaseModel
 {
+    use OauthPersonalAccessClientRelationsTrait;
     protected $table = 'oauth_personal_access_clients';
 
     protected $connection = 'user';
@@ -25,58 +44,6 @@ class OauthPersonalAccessClient extends BaseModel
     ];
 
     /**
-=======
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Illuminate\Support\Carbon;
-use Modules\Xot\Models\Traits\HasXotFactory;
-
-/**
- * OAuth Personal Access Client model.
- *
- * <<<<<<< HEAD
- *
- * @property string           $uuid
- * @property string           $client_id
- * @property Carbon|null      $created_at
- * @property Carbon|null      $updated_at
- * @property string|null      $updated_by
- * @property string|null      $created_by
- * @property OauthClient|null $client
- * @property int              $id
- *                                        =======
- * @property string           $uuid
- * @property string           $client_id
- * @property Carbon|null      $updated_at
- * @property string|null      $updated_by
- * @property string|null      $created_by
- * @property int              $id
- * @property OauthClient|null $client
- *                                        >>>>>>> 32e772a8 (.)
- *
- * @method static Builder|OauthPersonalAccessClient newModelQuery()
- * @method static Builder|OauthPersonalAccessClient newQuery()
- * @method static Builder|OauthPersonalAccessClient query()
- * @method static Builder|OauthPersonalAccessClient whereClientId($value)
- * @method static Builder|OauthPersonalAccessClient whereUpdatedAt($value)
- * @method static Builder|OauthPersonalAccessClient whereUuid($value)
- * @method static Builder|OauthPersonalAccessClient whereId($value)
- * @method static Builder|OauthPersonalAccessClient whereCreatedBy($value)
- * @method static Builder|OauthPersonalAccessClient whereUpdatedBy($value)
- *
- * @mixin \Eloquent
- */
-class OauthPersonalAccessClient extends BaseModel
-{
-    use HasXotFactory;
-
-    /** @var string */
-    protected $table = 'oauth_personal_access_clients';
-
-    /**
-     * Get the OAuth client that this personal access client belongs to.
-     *
->>>>>>> 6ed19256f (.)
      * @return BelongsTo<OauthClient, $this>
      */
     public function client(): BelongsTo

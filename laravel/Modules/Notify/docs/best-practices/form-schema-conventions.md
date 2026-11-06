@@ -1,8 +1,24 @@
-<<<<<<< HEAD
+---
+title: "Convenzioni per i Form Schema"
+type: concept
+tags: [notify, docs, best-practices, form, schema, conventions]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione best practices form schema conventions convenzioni per i form schema frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../architecture/README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - naming-conventions.md
+status: draft
+---
 # Convenzioni per i Form Schema 
-=======
-# Convenzioni per i Form Schema
->>>>>>> 6ed19256f (.)
 
 ## Regola Fondamentale per Array di Schema
 
@@ -99,15 +115,9 @@ La classe `XotBasePage` è progettata per lavorare con array associativi nei met
 Per verificare che tutti i metodi schema rispettino questa convenzione:
 
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
-=======
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
-find /var/www/html/saluteora/laravel/Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti

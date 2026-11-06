@@ -1,3 +1,24 @@
+---
+title: "Coverage Full"
+type: concept
+tags: [coverage, full]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "coverage-full coverage full"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 
    FAIL  Modules\User\tests\Feature\AuthComponentsTest
   ⨯ Auth Components Tests → auth components exist and work correctly     0.41s  
@@ -7808,3 +7829,4 @@ Database connection [ptvx] not configured.
 
   Tests:    321 failed, 2 risky, 4 skipped, 413 passed (1126 assertions)
   Duration: 170.56s
+

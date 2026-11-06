@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: filament-resource-conflict-resolution
-canonical: ../../../Themes/docs/shared-components/filament-resource-conflict-resolution-1-Modules.md
+issues: []
+discussions: []
+title: "Risoluzione conflitto git su Filament MediaConvertResource"
+module: "Media"
+type: concept
+tags: [filament, resource, conflict, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament resource conflict resolution"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-resource-conflict-resolution-1-Modules.md
-=======
 # Risoluzione conflitto git su Filament MediaConvertResource
 
 ## Problema
@@ -23,5 +28,4 @@ Sono stati rilevati marker di conflitto git  nel file `app/Filament/Resources/Me
 - Garantire tipizzazione e commenti PHPDoc corretti.
 
 ## Collegamenti
-- [Documentazione root risoluzione conflitti](../../../docs/risoluzione_conflitti_git.md#media-filament-resources-mediaconvertresourcephp)
->>>>>>> 6ed19256f (.)
+- [Documentazione root risoluzione conflitti](../../../../docs/risoluzione_conflitti_git.md#media-filament-resources-mediaconvertresourcephp)

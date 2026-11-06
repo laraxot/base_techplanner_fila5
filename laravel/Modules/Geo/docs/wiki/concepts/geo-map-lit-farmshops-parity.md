@@ -1,3 +1,15 @@
+---
+title: "geo map lit farmshops parity"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geo map lit farmshops parity"
+issues: []
+discussions: []
+status: draft
+---
+
 # GeoMapLit — Farmshops.eu Parity Implementation
 
 **Last updated**: 2026-06-03  
@@ -180,7 +192,6 @@ Popup on click → AJAX fetch /api/ticket-details/{id}
 4. Document any remaining issues in Known Issues section
 
 ---
-
 ## Aggiornamento 2026-06 — implementazione corrente
 
 > **Nota:** la sezione `L.geoJson` con `pointToLayer` sopra è il pattern farmshops originale.
@@ -213,3 +224,30 @@ CSS tema: `07-map-clusters-and-leaflet.css` — glifo marker 22px; no transform 
 Ricostruzione completa: [geo-map-lit-reconstruction-guide.md](./geo-map-lit-reconstruction-guide.md).
 
 Build tema: `laravel/Themes/Sixteen` → `npm run build` → `map-lit-*.js` in `public_html/themes/Sixteen/assets/`.
+
+---
+
+## Aggiornamento 2026-06-10 (sessione Cursor / STORY-293)
+
+### Marker singolo — ExtraMarkers `shape: square` (ibrido STORY-130)
+
+- `marker-config.js`: corpo **quadrato arrotondato** 40×40px, ancoraggio al **centro** (come farmshops), **senza punta** a goccia.
+- Colore corpo = **stato** workflow (`ticketStatus.color`); glifo bianco = **tipologia** (invariato STORY-130).
+
+### Cluster LOD
+
+- `map-lit.js`: `zoomend` → `refreshClusters()` per aggiornare icone tipologia a zoom ≥ 8 (pattern `direktvermarkter.js`).
+
+### Popup ticket (farmshops `#wrapper`)
+
+- `popup-ticket.js`: griglia indirizzo + link mappe (OSM, OpenRouteService, Google); hero image; headline `h1`; loading con icona tipologia.
+- Build obbligatoria: `cd laravel/Themes/Sixteen && npm run build && npm run copy`.
+
+### Story
+
+- [STORY-293](../../../../../../docs/stories/STORY-293-map-farmshops-popup-parity.md) — A1–A5 ancora da chiudere; marker/popup base sopra.
+
+### Collegamenti
+
+- [farmshops-cluster-type-icons-study.md](./farmshops-cluster-type-icons-study.md)
+- [architecture-map-farmshops-parity](../../../../../../docs/wiki/architecture/map-farmshops-parity.md)

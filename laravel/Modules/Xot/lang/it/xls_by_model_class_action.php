@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return [
     'id' => 'id',
     'level' => 'level',
@@ -25,7 +24,7 @@ return [
         ],
         'label' => 'Xls By Model Class Action',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'xot-files.xls',
     ],
     'fields' => [
         'id' => [
@@ -59,6 +58,3 @@ return [
         ],
     ],
 ];
-=======
-return ['id' => 'id', 'level' => 'level', 'name' => 'name', 'color' => 'color', 'created_by' => 'created_by', 'updated_by' => 'updated_by', 'deleted_by' => 'deleted_by', 'created_at' => 'created_at', 'updated_at' => 'updated_at', 'deleted_at' => 'deleted_at'];
->>>>>>> 6ed19256f (.)

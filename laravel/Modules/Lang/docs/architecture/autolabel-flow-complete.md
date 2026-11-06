@@ -1,5 +1,20 @@
+---
+issues: []
+discussions: []
+title: "AutoLabel Flow - Analisi Completa del Flusso"
+module: "Lang"
+type: concept
+tags: [test, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "test 1"
+related:
+  - "../italian-text-refined-audit-report.md"
+status: draft
+---
 # AutoLabel Flow - Analisi Completa del Flusso
 
+**Data**: 2026-01-09
 **Data**: 2026-01-09
 **Tipo**: Documentazione Tecnica Approfondita
 **Audience**: Sviluppatori che devono comprendere il meccanismo interno
@@ -467,7 +482,7 @@ class PageResource extends XotBaseResource
 {
     protected static ?string $model = Page::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('title')->required(),
@@ -854,9 +869,6 @@ Il sistema AutoLabel è un **meccanismo sofisticato ma elegante** che:
 
 **Versione**: 1.0
 **Data**: 2026-01-09
+**Data**: 2026-01-09
 **Autore**: System Architect
-<<<<<<< HEAD
 **Ultima Revisione**: 2026-01-09
-=======
-**Ultima Revisione**: 2026-01-09
->>>>>>> 6ed19256f (.)

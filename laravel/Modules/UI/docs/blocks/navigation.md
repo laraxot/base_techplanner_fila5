@@ -1,3 +1,15 @@
+---
+title: "navigation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "navigation"
+issues: []
+discussions: []
+status: draft
+---
+
 # Navigation Component
 
 This document describes the Navigation component used in section headers and its proper implementation.
@@ -108,12 +120,6 @@ The navigation component supports different item types:
 
 ## Related Documentation
 
-- [Block Components Overview](./README.md)
-- [Data Handling in Blade Components](../blade-data-handling.md)
-- [Section Architecture](../sections/README.md)
-<<<<<<< HEAD
 - [Block Components Overview](./readme.md)
 - [Data Handling in Blade Components](../blade-data-handling.md)
 - [Section Architecture](../sections/readme.md)
-=======
->>>>>>> 6ed19256f (.)

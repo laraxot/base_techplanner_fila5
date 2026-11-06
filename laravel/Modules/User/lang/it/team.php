@@ -10,12 +10,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei team e delle loro autorizzazioni',
         ],
-        'label' => 'team',
+        'label' => 'Team',
         'sort' => 18,
         'icon' => 'ui-user-team',
     ],
     'fields' => [
-<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -111,58 +110,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'users_count' => [
-            'label' => 'users_count',
-        ],
-        'name' => [
-            'label' => 'name',
->>>>>>> 6ed19256f (.)
         ],
         'recordId' => [
             'label' => 'recordId',
             'description' => 'recordId',
             'helper_text' => 'recordId',
             'placeholder' => 'recordId',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         'personal_team' => [
@@ -170,27 +123,18 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'personal_team' => [
-            'label' => 'personal_team',
->>>>>>> 6ed19256f (.)
         ],
         'role' => [
             'label' => 'role',
             'description' => 'role',
             'helper_text' => 'role',
             'placeholder' => 'role',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'description' => 'description',
             'helper_text' => 'description',
             'placeholder' => 'description',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
         ],
@@ -205,14 +149,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -230,6 +166,8 @@ return [
         ],
         'create' => [
             'label' => 'create',
+            'icon' => 'create',
+            'tooltip' => 'create',
         ],
         'logout' => [
             'icon' => 'logout',
@@ -301,6 +239,26 @@ return [
             'icon' => 'delete',
             'label' => 'delete',
         ],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'resetColumnManager' => [
+            'label' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'tooltip' => 'resetColumnManager',
+        ],
     ],
     'plural' => [
         'model' => [
@@ -310,10 +268,6 @@ return [
     'model' => [
         'label' => 'team.model',
     ],
-    'label' => 'team',
-<<<<<<< HEAD
+    'label' => 'Team',
     'plural_label' => 'Team (Plurale)',
-=======
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

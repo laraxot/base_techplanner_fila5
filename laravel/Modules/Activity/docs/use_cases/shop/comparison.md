@@ -1,3 +1,11 @@
+---
+title: "Confronto tra Implementazioni del Carrello della Spesa"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "confronto tra implementazioni del carrello della spesa activity"
+---
 # Confronto tra Implementazioni del Carrello della Spesa
 
 ## Introduzione
@@ -6,11 +14,7 @@ Spatie ha sviluppato due progetti principali per dimostrare l'uso dell'Event Sou
 
 ## Varianti del Carrello della Spesa
 
-<<<<<<< HEAD
 ### 1. Laravel Shop Main (``)
-=======
-### 1. Laravel Shop Main (`/var/www/html/laravel-shop-main/`)
->>>>>>> 6ed19256f (.)
 
 - **Approccio**: Applicazione di riferimento completa.
 - **Caratteristiche**:
@@ -25,11 +29,7 @@ Spatie ha sviluppato due progetti principali per dimostrare l'uso dell'Event Sou
   - Richiede adattamenti significativi per progetti complessi.
 - **Rilevanza per Activity**: Utile per apprendere i concetti di base dell'Event Sourcing e prototipare rapidamente.
 
-<<<<<<< HEAD
 ### 2. Laravel Shop Command Bus (``)
-=======
-### 2. Laravel Shop Command Bus (`/var/www/html/laravel-shop-command-bus/`)
->>>>>>> 6ed19256f (.)
 
 - **Approccio**: Pacchetto strutturato con command bus.
 - **Caratteristiche**:

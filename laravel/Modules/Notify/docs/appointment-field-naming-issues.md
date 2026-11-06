@@ -1,29 +1,29 @@
+---
+title: "appointment field naming issues"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "appointment field naming issues"
+issues: []
+discussions: []
+status: draft
+---
+
 # Appointment Field Naming Issues
 
 ## Overview
 
 The Appointment model in  module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
-<<<<<<< HEAD
 The Appointment model in <nome progetto> module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
-The Appointment model in  module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
-The Appointment model in <nome progetto> module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
-=======
-The Appointment model in SaluteOra module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
->>>>>>> 6ed19256f (.)
 
 ## Issues Detected
 
 ### SendAppointmentNotificationAction.php.old
 
-<<<<<<< HEAD
 **File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 **File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 **File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
-=======
-**File Path**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
-**File Path**: `/var/www/html/_bases/base_saluteora/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
-**File Path**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
->>>>>>> 6ed19256f (.)
 
 **Line 120**:
 ```php
@@ -51,25 +51,15 @@ While both are present in the $fillable array, the canonical fields (`starts_at`
 ## Overview
 
 The Appointment model in <nome progetto> module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
-<<<<<<< HEAD
 The Appointment model in <nome progetto> module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
-=======
-The Appointment model in SaluteOra module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
->>>>>>> 6ed19256f (.)
 
 ## Issues Detected
 
 ### SendAppointmentNotificationAction.php.old
 
-<<<<<<< HEAD
 **File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 **File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 **File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
-=======
-**File Path**: `/var/www/html/_bases/base_<nome progetto>/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
-**File Path**: `/var/www/html/_bases/base_saluteora/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
-**File Path**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
->>>>>>> 6ed19256f (.)
 
 **Line 120**:
 ```php
@@ -91,8 +81,4 @@ The Appointment model currently exposes both field naming conventions:
 1. Legacy fields: `start_time`, `end_time`
 2. Canonical fields: `starts_at`, `ends_at`
 
-<<<<<<< HEAD
 While both are present in the $fillable array, the canonical fields (`starts_at`, `ends_at`) should be preferred for all new code and when refactoring existing code.
-=======
-While both are present in the $fillable array, the canonical fields (`starts_at`, `ends_at`) should be preferred for all new code and when refactoring existing code.
->>>>>>> 6ed19256f (.)

@@ -1,14 +1,24 @@
+---
+issues: []
+discussions: []
+title: "Case Sensitivity Rules - Media Module"
+module: "Media"
+type: rule
+tags: [case, sensitivity, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "case sensitivity rules"
+related:
+  - "./webm.md"
+status: draft
+---
 # Case Sensitivity Rules - Media Module
 
 ## Problema / Problem
 
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
-Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
-<<<<<<< HEAD
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## File Rimossi da Media Module
 
@@ -26,10 +36,15 @@ I seguenti file sono stati eliminati perché violavano le regole:
 - **Esempio**: `MediaConvertResourceTest.php`
 - ❌ **Errato**: `mediaconvertresourcetest.php`
 
+## Stato verificato 2026-10-20
+
+L'elenco "File Rimossi" sopra non corrisponde piu' al repository: `git ls-files` in `Modules/Media` traccia di nuovo
+`tests/Filament/Resources/mediaconvertresourcetest.php` accanto a `MediaConvertResourceTest.php`, e la cartella
+`tests/filament/resources/` (minuscola) contiene la stessa coppia di nomi, per un totale di quattro file. Nessuno e' stato
+cancellato dalla lane PHPStan ([phpstan-test-wave-media](./stories/phpstan-test-wave-media.story.md)): le due varianti del
+bucket sono state allineate, la rimozione resta una decisione aperta.
+
 ## Update Log
 
-- **2025-11-04**: Removed `mediaconvertresourcetest.php` duplicate
-<<<<<<< HEAD
 - **[DATE]**: Removed `mediaconvertresourcetest.php` duplicate
-=======
->>>>>>> 6ed19256f (.)
+- **2026-10-20**: duplicati ricomparsi nel repository (vedi sopra), non rimossi

@@ -1,10 +1,16 @@
 ---
+tags: [documentation]
+created: 2026-09-26
+qmd: "theme page shell"
+issues: []
+discussions: []
 title: folio page-shell — data-page presentation only
 type: concept
 theme: sixteen
 updated: 2026-05-29
 related:
   - ../../../../../../docs/wiki/concepts/theme-as-vestito-philosophy.md
+status: draft
 ---
 
 # Sixteen — `data-page="page-shell"`
@@ -26,7 +32,7 @@ Il contenuto dominio (elenco ticket, mappa, filtri) arriva dai **blocchi CMS** (
 | Valore | Perché |
 |--------|--------|
 | `ticket-list` | nome dominio |
-| `segnalazioni-elenco` | dominio + italiano |
+| `ticket-list` | dominio + italiano |
 | `home-content` | ancora legato a una route specifica |
 
 ## Hook JS/CSS (generici)
@@ -37,4 +43,4 @@ Il contenuto dominio (elenco ticket, mappa, filtri) arriva dai **blocchi CMS** (
 
 ## Riferimento esterno
 
-Parity visiva: URL Design Comuni `segnalazioni-elenco` — solo commento/link, **non** come `data-page`.
+Parity visiva: URL Design Comuni `ticket-list` — solo commento/link, **non** come `data-page`.

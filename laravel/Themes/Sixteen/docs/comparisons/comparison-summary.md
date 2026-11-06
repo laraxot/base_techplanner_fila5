@@ -1,3 +1,15 @@
+---
+title: "comparison summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comparison summary"
+issues: []
+discussions: []
+status: draft
+---
+
 # Page Comparison Summary
 
 **Generated:** 2026-04-07T07:39:03.203Z
@@ -10,7 +22,7 @@
 | segnalazione-03-riepilogo | ERR | ERR | N/A |
 | segnalazione-04-conferma | ERR | ERR | N/A |
 | segnalazione-area-personale | ERR | ERR | N/A |
-| segnalazioni-elenco | ERR | ERR | N/A |
+| ticket-list | ERR | ERR | N/A |
 
 ## Screenshots
 
@@ -56,12 +68,12 @@
 - Local Desktop: [screenshots/local/segnalazione-area-personale-desktop.png](screenshots/local/segnalazione-area-personale-desktop.png)
 - Local Mobile: [screenshots/local/segnalazione-area-personale-mobile.png](screenshots/local/segnalazione-area-personale-mobile.png)
 
-### segnalazioni-elenco
+### ticket-list
 
-- Reference Desktop: [screenshots/reference/segnalazioni-elenco-desktop.png](screenshots/reference/segnalazioni-elenco-desktop.png)
-- Reference Mobile: [screenshots/reference/segnalazioni-elenco-mobile.png](screenshots/reference/segnalazioni-elenco-mobile.png)
-- Local Desktop: [screenshots/local/segnalazioni-elenco-desktop.png](screenshots/local/segnalazioni-elenco-desktop.png)
-- Local Mobile: [screenshots/local/segnalazioni-elenco-mobile.png](screenshots/local/segnalazioni-elenco-mobile.png)
+- Reference Desktop: [screenshots/reference/ticket-list-desktop.png](screenshots/reference/ticket-list-desktop.png)
+- Reference Mobile: [screenshots/reference/ticket-list-mobile.png](screenshots/reference/ticket-list-mobile.png)
+- Local Desktop: [screenshots/local/ticket-list-desktop.png](screenshots/local/ticket-list-desktop.png)
+- Local Mobile: [screenshots/local/ticket-list-mobile.png](screenshots/local/ticket-list-mobile.png)
 
 ## HTML Structure Files
 
@@ -73,5 +85,5 @@ diff html-structure/segnalazione-02-dati-reference.txt html-structure/segnalazio
 diff html-structure/segnalazione-03-riepilogo-reference.txt html-structure/segnalazione-03-riepilogo-local.txt
 diff html-structure/segnalazione-04-conferma-reference.txt html-structure/segnalazione-04-conferma-local.txt
 diff html-structure/segnalazione-area-personale-reference.txt html-structure/segnalazione-area-personale-local.txt
-diff html-structure/segnalazioni-elenco-reference.txt html-structure/segnalazioni-elenco-local.txt
+diff html-structure/ticket-list-reference.txt html-structure/ticket-list-local.txt
 ```

@@ -1,3 +1,15 @@
+---
+title: "design comuni page census"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "design comuni page census"
+issues: []
+discussions: []
+status: draft
+---
+
 # Design Comuni Page Census For CMS Blocks
 
 ## Purpose
@@ -82,7 +94,7 @@ These block families should be preferred over page-specific templates.
 - `segnalazione-03-riepilogo`
 - `segnalazione-04-conferma`
 - `segnalazione-area-personale`
-- `segnalazioni-elenco`
+- `ticket-list`
 
 ## BMAD-Oriented Next Step
 Use each converted page as evidence for refining the reusable taxonomy instead of treating conversion as a one-off page port.

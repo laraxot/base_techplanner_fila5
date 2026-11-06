@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 return [
     'main' => 'Navigazione principale',
-<<<<<<< HEAD
-    'site_title' => 'Il mio Comune',
-=======
-    'site_title' => '<nome progetto>',
->>>>>>> 6ed19256f (.)
+    'site_title' => 'FixCity',
     'home' => 'Home',
     'about' => 'Chi siamo',
     'contact' => 'Contatti',
@@ -16,7 +12,6 @@ return [
     'portfolio' => 'Portfolio',
     'news' => 'Notizie',
     'blog' => 'Blog',
-<<<<<<< HEAD
 
     // Homepage sections
     'homepage' => [
@@ -29,6 +24,11 @@ return [
         'all_news' => 'Tutte le novità',
         'events' => 'Vivere il Comune',
         'all_events' => 'Tutti gli eventi',
+        'featured_events' => 'Eventi in evidenza',
+        'empty_events' => 'Non ci sono ancora eventi pubblicati.',
+        'related_events' => 'Eventi correlati',
+        'featured_locations' => 'Luoghi in evidenza',
+        'all_locations' => 'Tutti i luoghi',
         'featured_topics' => 'Argomenti in evidenza',
         'other_topics' => 'Altri argomenti',
         'show_all' => 'Mostra tutti',
@@ -41,7 +41,7 @@ return [
         'rate_4' => 'Valuta 4 stelle su 5',
         'rate_3' => 'Valuta 3 stelle su 5',
         'rate_2' => 'Valuta 2 stelle su 5',
-        'rate_1' => 'Valuta 1 stelle su 5',
+        'rate_1' => 'Valuta 1 stella su 5',
         'positive_feedback' => 'Cosa ti è piaciuto di questa pagina?',
         'negative_feedback' => 'Cosa non hai trovato chiaro?',
         'add_details' => 'Vuoi aggiungere altri dettagli?',
@@ -56,6 +56,4 @@ return [
         'report_issue' => 'Segnala disservizio',
         'maybe_searching' => 'Forse stavi cercando',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

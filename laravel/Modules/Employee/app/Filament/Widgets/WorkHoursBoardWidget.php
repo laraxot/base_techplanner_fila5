@@ -11,12 +11,9 @@ use Modules\Employee\Actions\BuildTimelineVisualizationAction;
 use Modules\Employee\Actions\BuildWorkHoursForRangeAction;
 use Modules\Employee\Actions\ExportTimeDataAction;
 use Modules\Employee\Actions\GetCurrentEmployeeDataAction;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 6ed19256f (.)
 use Override;
+use Spatie\QueueableAction\ActionJob;
 
 /**
  * Weekly Time Table Widget - Replica esatta di dipendentincloud.it
@@ -28,11 +25,7 @@ use Override;
  * - Indicatori di stato (arancione "Problemi", verde completato, etc.)
  * - Navigazione settimana e export functionality
  */
-<<<<<<< HEAD
 class WorkHoursBoardWidget extends XotBaseSchemaWidget
-=======
-class WorkHoursBoardWidget extends XotBaseWidget
->>>>>>> 6ed19256f (.)
 {
     protected string $view = 'employee::filament.widgets.work-hours-board';
 
@@ -40,25 +33,26 @@ class WorkHoursBoardWidget extends XotBaseWidget
 
     protected static ?string $maxHeight = '800px';
 
-    // State management per navigazione settimana
     public Carbon $weekStart;
 
     public Carbon $weekEnd;
 
     public bool $showToleranceThreshold = false;
 
-    // Dati computati dal widget
+    /** @var array<string, mixed> */
     public array $weekData = [];
 
+    /** @var array<string, mixed> */
     public array $timelineData = [];
 
+    /** @var array<string, mixed> */
     public array $employeeInfo = [];
 
+    /** @var array<string, mixed> */
     public array $summaryData = [];
 
     public function mount(): void
     {
-        // Inizializza alla settimana corrente (come dipendentincloud.it)
         $this->weekStart = Carbon::now()->startOfWeek();
         $this->weekEnd = Carbon::now()->endOfWeek();
 
@@ -90,55 +84,34 @@ class WorkHoursBoardWidget extends XotBaseWidget
         ];
     }
 
-    /**
-     * Carica tutti i dati del widget tramite Actions.
-     */
     public function loadWidgetData(): void
     {
-        /** @var int $userId */
-        $userId = (int) (Auth::id() ?? 0);
+        $userId = (string) (Auth::id() ?? '');
 
-        // 1. Dati base timbrature (WorkHour-based Action)
         $baseData = app(BuildWorkHoursForRangeAction::class)->execute($userId, $this->weekStart, $this->weekEnd);
 
-        // 2. Dati timeline visualization (Action nuova)
         $this->timelineData = app(BuildTimelineVisualizationAction::class)
             ->execute($userId, $this->weekStart, $this->weekEnd);
 
-        // 3. Info dipendente corrente
         $this->employeeInfo = app(GetCurrentEmployeeDataAction::class)->execute($userId);
 
-        // 4. Costruisci dati settimana per tabella
-        $this->weekData = $this->buildWeekTableData($baseData, $this->timelineData);
+        $this->weekData = $this->buildWeekTableData($this->timelineData);
 
-        // 5. Summary data per header tabella
         $this->summaryData = $this->buildSummaryData($baseData);
     }
 
     /**
-     * Costruisce dati per tabella settimanale.
-     *
-     * @param  array<string, mixed>  $baseData
      * @param  array<string, mixed>  $timelineData
      * @return array<string, mixed>
      */
-    private function buildWeekTableData(array $baseData, array $timelineData): array
+    private function buildWeekTableData(array $timelineData): array
     {
         $days = [];
 
-<<<<<<< HEAD
         $currentDate = $this->weekStart->copy();
         while ($currentDate->lte($this->weekEnd)) {
             $dateKey = $currentDate->toDateString();
-=======
-        /** @var Carbon $current */
-        $current = $this->weekStart->copy();
-        while ($current->lte($this->weekEnd)) {
-            assert($current instanceof Carbon);
-            $dateKey = $current->toDateString();
->>>>>>> 6ed19256f (.)
 
-            // Safe access to timeline data
             $sessionBlocks = is_array($timelineData['sessionBlocks'] ?? null) ? $timelineData['sessionBlocks'] : [];
             $dayStatuses = is_array($timelineData['dayStatus'] ?? null) ? $timelineData['dayStatus'] : [];
 
@@ -150,10 +123,8 @@ class WorkHoursBoardWidget extends XotBaseWidget
                 ? $dayStatuses[$dateKey]
                 : ['status' => 'no_work', 'indicator' => '', 'color' => 'gray'];
 
-            // Calcola ore totali giorno
             $totalHours = 0;
             if (! empty($dayBlocks)) {
-<<<<<<< HEAD
                 /** @var array<int, float|int> $durations */
                 $durations = array_values(array_map(
                     static fn (mixed $duration): float => is_numeric($duration) ? (float) $duration : 0.0,
@@ -166,48 +137,22 @@ class WorkHoursBoardWidget extends XotBaseWidget
                 'date' => $currentDate->format('d'),
                 'dayName' => $currentDate->translatedFormat('D'),
                 'fullDate' => $currentDate->translatedFormat('dddd D MMMM'),
-=======
-                $durations = array_column($dayBlocks, 'duration');
-                $totalHours = array_sum($durations);
-            }
-
-            /** @var \Carbon\Carbon $currentCarbon */
-            $currentCarbon = $current;
-            $days[$dateKey] = [
-                // @phpstan-ignore-next-line
-                'date' => Carbon::parse($currentCarbon)->format('d'),
-                // @phpstan-ignore-next-line
-                'dayName' => Carbon::parse($currentCarbon)->locale('it')->translatedFormat('D'),
-                // @phpstan-ignore-next-line
-                'fullDate' => Carbon::parse($currentCarbon)->locale('it')->translatedFormat('dddd D MMMM'),
->>>>>>> 6ed19256f (.)
                 'totalHours' => $totalHours,
                 'status' => $dayStatus['status'] ?? 'no_work',
                 'indicator' => $dayStatus['indicator'] ?? '',
                 'color' => $dayStatus['color'] ?? 'gray',
-<<<<<<< HEAD
                 'isToday' => $currentDate->isToday(),
                 'isWeekend' => $currentDate->isWeekend(),
                 'sessions' => $dayBlocks,
             ];
 
             $currentDate = $currentDate->copy()->addDay();
-=======
-                'isToday' => $current->isToday(),
-                'isWeekend' => $current->isWeekend(),
-                'sessions' => $dayBlocks,
-            ];
-
-            $current->addDay();
->>>>>>> 6ed19256f (.)
         }
 
         return $days;
     }
 
     /**
-     * Costruisce summary data per header tabella.
-     *
      * @param  array<string, mixed>  $baseData
      * @return array<string, mixed>
      */
@@ -221,10 +166,21 @@ class WorkHoursBoardWidget extends XotBaseWidget
         $contractMinutes = 0;
 
         if (is_array($summary)) {
-            $workedMinutes = (int) ($summary['workedMinutes'] ?? 0);
-            $addedMinutes = (int) ($summary['addedMinutes'] ?? 0);
-            $reducedMinutes = (int) ($summary['reducedMinutes'] ?? 0);
-            $contractMinutes = (int) ($summary['contractMinutes'] ?? 0);
+            /** @var int $workedVal */
+            $workedVal = $summary['workedMinutes'] ?? 0;
+            $workedMinutes = $workedVal;
+
+            /** @var int $addedVal */
+            $addedVal = $summary['addedMinutes'] ?? 0;
+            $addedMinutes = $addedVal;
+
+            /** @var int $reducedVal */
+            $reducedVal = $summary['reducedMinutes'] ?? 0;
+            $reducedMinutes = $reducedVal;
+
+            /** @var int $contractVal */
+            $contractVal = $summary['contractMinutes'] ?? 0;
+            $contractMinutes = $contractVal;
         }
 
         return [
@@ -237,9 +193,6 @@ class WorkHoursBoardWidget extends XotBaseWidget
         ];
     }
 
-    /**
-     * Navigazione settimana precedente.
-     */
     public function previousWeek(): void
     {
         $this->weekStart = $this->weekStart->copy()->subWeek();
@@ -247,9 +200,6 @@ class WorkHoursBoardWidget extends XotBaseWidget
         $this->loadWidgetData();
     }
 
-    /**
-     * Navigazione settimana successiva.
-     */
     public function nextWeek(): void
     {
         $this->weekStart = $this->weekStart->copy()->addWeek();
@@ -257,9 +207,6 @@ class WorkHoursBoardWidget extends XotBaseWidget
         $this->loadWidgetData();
     }
 
-    /**
-     * Torna alla settimana corrente.
-     */
     public function currentWeek(): void
     {
         $this->weekStart = Carbon::now()->startOfWeek();
@@ -267,26 +214,20 @@ class WorkHoursBoardWidget extends XotBaseWidget
         $this->loadWidgetData();
     }
 
-    /**
-     * Toggle soglie di tolleranza.
-     */
     public function toggleToleranceThreshold(): void
     {
         $this->showToleranceThreshold = ! $this->showToleranceThreshold;
-        $this->loadWidgetData(); // Ricarica con/senza soglie
+        $this->loadWidgetData();
     }
 
-    /**
-     * Esporta dati settimana corrente.
-     */
     public function exportData(): void
     {
-        /** @var int $userId */
-        $userId = (int) (Auth::id() ?? 0);
+        $userId = (string) (Auth::id() ?? '');
 
-        app(ExportTimeDataAction::class)
-            ->onQueue('exports')
-            ->execute($userId, $this->weekStart, $this->weekEnd, 'xlsx');
+        // `QueueableAction::onQueue()` restituisce un proxy anonimo non tipizzato (per PHPStan `mixed`):
+        // si accoda direttamente l'ActionJob che quel proxy costruirebbe, come in Media/MediaConvertsTable.
+        dispatch(new ActionJob(app(ExportTimeDataAction::class), [$userId, $this->weekStart, $this->weekEnd, 'xlsx']))
+            ->onQueue('exports');
 
         Notification::make()
             ->title('Export avviato')
@@ -295,13 +236,10 @@ class WorkHoursBoardWidget extends XotBaseWidget
             ->send();
     }
 
-    /**
-     * Formatta minuti in formato ore:minuti.
-     */
     public function formatMinutesToHours(int $minutes): string
     {
         if ($minutes === 0) {
-            return 'Nessuna'; // Come nell'immagine per "Aggiunte" e "Ridotte"
+            return 'Nessuna';
         }
 
         $hours = intdiv($minutes, 60);
@@ -314,22 +252,16 @@ class WorkHoursBoardWidget extends XotBaseWidget
         return "{$hours}h {$mins}m";
     }
 
-    /**
-     * Calcola posizione temporale per timeline (06:00-20:00).
-     */
     public function getTimePosition(string $time): float
     {
         [$hours, $minutes] = explode(':', $time);
         $totalMinutes = (((int) $hours) * 60) + ((int) $minutes);
-        $baseMinutes = 6 * 60; // 06:00
-        $maxMinutes = 20 * 60; // 20:00
+        $baseMinutes = 6 * 60;
+        $maxMinutes = 20 * 60;
 
         return (($totalMinutes - $baseMinutes) / ($maxMinutes - $baseMinutes)) * 100;
     }
 
-    /**
-     * Ottieni classe CSS per colore sessione.
-     */
     public function getSessionColorClass(string $color): string
     {
         return match ($color) {

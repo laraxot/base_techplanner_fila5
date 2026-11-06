@@ -1,11 +1,32 @@
+---
+title: "Risoluzione Conflitti PasswordResetWidget.php"
+type: concept
+tags: [conflict, resolution, passwordresetwidget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict-resolution-passwordresetwidget risoluzione conflitti passwordresetwidget.php"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Risoluzione Conflitti PasswordResetWidget.php
 
 ## Contesto del Conflitto
-<<<<<<< HEAD
 **File**: `Modules/User/app/Filament/Widgets/Auth/PasswordResetWidget.php`
-=======
-**File**: `/var/www/html/_bases/base_fixcity_fila4_mono/laravel/Modules/User/app/Filament/Widgets/Auth/PasswordResetWidget.php`
->>>>>>> 6ed19256f (.)
 **Linee**: 47-63
 **Tipo**: Conflitto di funzionalità (aggiunta componente error display)
 ## Descrizione del Conflitto
@@ -62,13 +83,6 @@ Verificare che:
 - Altri widget di autenticazione abbiano componenti simili per coerenza
 ## Collegamenti
 - [User Module Documentation](README.md)
-- [Authentication Widgets Guide](auth_widgets.md)
-- [Filament Form Components](filament_form_components.md)
-- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
-- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
-*Ultimo aggiornamento: giugno 2025*
-<<<<<<< HEAD
-- [User Module Documentation](readme.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
@@ -77,12 +91,6 @@ Verificare che:
 
 ## Contesto del Conflitto
 **File**: `Modules/User/app/Filament/Widgets/Auth/PasswordResetWidget.php`
-=======
-# Risoluzione Conflitti PasswordResetWidget.php
-
-## Contesto del Conflitto
-**File**: `/var/www/html/ptvx/laravel/Modules/User/app/Filament/Widgets/Auth/PasswordResetWidget.php`
->>>>>>> 6ed19256f (.)
 **Linee**: 47-63
 **Tipo**: Conflitto di funzionalità (aggiunta componente error display)
 
@@ -173,13 +181,4 @@ Verificare che:
 - [User Module Documentation](README.md)
 - [Authentication Widgets Guide](auth_widgets.md)
 - [Filament Form Components](filament_form_components.md)
-- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
-<<<<<<< HEAD
-- [User Module Documentation](readme.md)
-- [Authentication Widgets Guide](auth_widgets.md)
-- [Filament Form Components](filament_form_components.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
-=======
->>>>>>> 6ed19256f (.)

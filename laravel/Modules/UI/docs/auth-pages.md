@@ -1,14 +1,22 @@
+---
+title: "auth pages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "auth pages"
+issues: []
+discussions: []
+status: draft
+---
+
 # Pagine di Autenticazione
 
 ## Pagina di Logout con Folio e Volt
 
 ### Struttura
 ```php
-<<<<<<< HEAD
 // Themes/One/resources/views/pages/auth/logout.blade.php
-=======
-// /var/www/html/base_<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
->>>>>>> 6ed19256f (.)
 
 <?php
 
@@ -118,11 +126,7 @@ $logout = function() {
 
 ### Struttura
 ```php
-<<<<<<< HEAD
 // Themes/One/resources/views/pages/auth/logout.blade.php
-=======
-// /var/www/html/base_<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
->>>>>>> 6ed19256f (.)
 
 <?php
 

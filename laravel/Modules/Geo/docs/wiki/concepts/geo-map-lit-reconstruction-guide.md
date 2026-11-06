@@ -1,3 +1,15 @@
+---
+title: "geo map lit reconstruction guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geo map lit reconstruction guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # geo-map-lit — guida ricostruzione da documentazione
 
 ## scopo
@@ -6,15 +18,14 @@ Se il codice JS/CSS della mappa su `/it` andasse perso, questa pagina è il **co
 
 **Perché esiste:** la mappa è cross-modulo (Geo + Fixcity JSON + tema Sixteen Vite). La bussiness logic è «cittadino vede segnalazioni, filtra per tipo/stato, clicca per dettaglio» — non «un plugin Leaflet generico».
 
-**Registro correzioni (tabella):** [geo-map-fixes-registry.md](./geo-map-fixes-registry.md) · **Hub root:** [map-lit-reconstruction-hub.md](../../../../../docs/wiki/memories/map-lit-reconstruction-hub.md)
+**Registro correzioni (tabella):** [geo-map-fixes-registry.md](./geo-map-fixes-registry.md) · **Hub root:** [map-lit-reconstruction-hub.md](../../../../../../docs/wiki/memories/map-lit-reconstruction-hub.md)
 
 ---
-
 ## contratto runtime (non negoziabile)
 
 | Pezzo | Valore |
 |-------|--------|
-| Pagina | `/it`, `body[data-page="segnalazioni-elenco"]` |
+| Pagina | `/it`, `body[data-page="ticket-list"]` |
 | Componente | `<map-lit id="block-map" data-url="/data/tickets.json">` |
 | SSoT dati | `public_html/data/tickets.json` ← `GenerateTicketsJsonAction` (Fixcity) |
 | Filtri sidebar | `SegnalazioniFilterViewModel` + evento `filters-changed` |
@@ -172,7 +183,7 @@ Marker aggiunti **uno a uno** al cluster (no `L.geoJson` wrapper che perde rifer
 
 | Story | Argomento |
 |-------|-----------|
-| [STORY-129](../../../../../docs/stories/STORY-129-map-marker-icon-first-popup-ux.md) | Marker + popup UX |
+| [STORY-129](../../../../../../docs/stories/STORY-129-map-marker-icon-first-popup-ux.md) | Marker + popup UX |
 | STORY-121–124 | Visibilità, GPS, cluster hover |
 | STORY-128 | Filtri stato sidebar |
 | STORY-130 | Sfondo stato marker (se file story esiste) |
@@ -185,6 +196,6 @@ Issue modulo: [module_geo_fila5#4](https://github.com/laraxot/module_geo_fila5/i
 
 - [geo-map-lit-farmshops-parity.md](./geo-map-lit-farmshops-parity.md)
 - [geo-map-popup-leaflet-boundary.md](../../../../../Themes/Sixteen/docs/wiki/concepts/geo-map-popup-leaflet-boundary.md)
-- [segnalazioni-elenco-map-integration.md](../../../../../Themes/Sixteen/docs/wiki/concepts/segnalazioni-elenco-map-integration.md)
+- [ticket-list-map-integration.md](../../../../../Themes/Sixteen/docs/wiki/concepts/ticket-list-map-integration.md)
 - [map-lit-vite-build-troubleshooting.md](../../../../../Themes/Sixteen/docs/wiki/concepts/map-lit-vite-build-troubleshooting.md)
 - Wiki root memoria: [map-lit-marker-cluster-farmshops-pattern.md](../../../../../../docs/wiki/memories/map-lit-marker-cluster-farmshops-pattern.md)

@@ -69,8 +69,6 @@
 @endphp
 
 <div class="container" id="main-container">
-<link rel="stylesheet" href="{{ asset('themes/Sixteen/css/MarkerCluster.css') }}">
-<link rel="stylesheet" href="{{ asset('themes/Sixteen/css/MarkerCluster.Default.css') }}">
 <div
     x-data="{
         dispatchMapFilters() {
@@ -127,15 +125,13 @@
             ])
         </div>
 
-        @include('pub_theme::components.blocks.ticket.modal-disservizio', ['sprite' => $vm->sprite()])
-
         @if ($vm->hasSidebarFilters())
-            <div class="modal fade d-lg-none" id="modal-categories" tabindex="-1" aria-labelledby="modal-categories-title" aria-hidden="true">
+            <div class="modal d-lg-none" id="modal-categories" tabindex="-1" aria-labelledby="modal-categories-title" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
                     <div class="modal-content">
                         <div class="modal-header border-bottom-0">
                             <h2 class="title-medium-semi-bold" id="modal-categories-title">{{ $vm->filtersTitle() }}</h2>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('Chiudi') }}"></button>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="{{ __('pub_theme::components_common.actions.close.label') }}"></button>
                         </div>
                         <div class="modal-body text-black">
                             @include('pub_theme::components.blocks.ticket.filters-sidebar', [
@@ -150,7 +146,5 @@
                 </div>
             </div>
         @endif
-
-        <style>.leaflet-container { z-index: 1; }</style>
     </div>
 </div>

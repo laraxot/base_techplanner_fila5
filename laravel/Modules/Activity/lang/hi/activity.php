@@ -37,12 +37,9 @@ return [
                 'help' => 'सिस्टम में उपयोगकर्ता की भूमिका',
                 'validation' => 'required|string',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'action' => [
             'label' => 'क्रिया',
@@ -91,12 +88,9 @@ return [
                     'color' => 'gray',
                 ],
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'विषय',
@@ -120,48 +114,36 @@ return [
                 'help' => 'ऑब्जेक्ट का वर्णनात्मक नाम',
                 'validation' => 'nullable|string|max:255',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'विवरण',
             'placeholder' => 'एक विवरण दर्ज करें',
             'help' => 'गतिविधि का विस्तृत विवरण',
             'validation' => 'nullable|string|max:1000',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'ip_address' => [
             'label' => 'IP पता',
             'placeholder' => 'उदा. 192.168.1.1',
             'help' => 'IP पता जहां से क्रिया की गई थी',
             'validation' => 'nullable|ip',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'user_agent' => [
             'label' => 'उपयोगकर्ता एजेंट',
             'placeholder' => 'ब्राउज़र और ऑपरेटिंग सिस्टम',
             'help' => 'उपयोगकर्ता के ब्राउज़र और सिस्टम के बारे में जानकारी',
             'validation' => 'nullable|string|max:500',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'तिथि',
@@ -169,12 +151,9 @@ return [
             'help' => 'तिथि और समय जब गतिविधि बनाई गई थी',
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'properties' => [
             'label' => 'गुण',
@@ -190,27 +169,20 @@ return [
                 'placeholder' => 'वर्तमान मान',
                 'help' => 'परिवर्तन के बाद का मान',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'toggleColumns' => [
             'label' => 'कॉलम दिखाएं/छिपाएं',
             'help' => 'कॉलम दृश्यता कॉन्फ़िगर करें',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'reorderRecords' => [
             'label' => 'रिकॉर्ड पुन: क्रमित करें',
             'help' => 'तालिका में रिकॉर्ड पुन: क्रमित करें',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -226,14 +198,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'resetFilters' => [
-            'label' => 'फ़िल्टर रीसेट करें',
-        ],
-        'applyFilters' => [
-            'label' => 'फ़िल्टर लागू करें',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -337,13 +301,13 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-                'icon' => 'heroicon-o-table-cells',
+                'icon' => 'xot-files.xlsx',
             ],
             'pdf' => [
                 'label' => 'PDF',
                 'mime_type' => 'application/pdf',
                 'extension' => 'pdf',
-                'icon' => 'heroicon-o-document',
+                'icon' => 'xot-files.pdf',
             ],
         ],
         'columns' => [
@@ -387,33 +351,19 @@ return [
     'pagination' => [
         'per_page' => '25',
         'options' => [
-<<<<<<< HEAD
             0 => '10',
             1 => '25',
             2 => '50',
             3 => '100',
-=======
-            '0' => '10',
-            '1' => '25',
-            '2' => '50',
-            '3' => '100',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
-<<<<<<< HEAD
             0 => 'activities',
             1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-            '0' => 'activities',
-            '1' => 'monitoring',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

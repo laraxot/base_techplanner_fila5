@@ -49,13 +49,10 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Monday afternoon activities',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'tuesday' => [
             'morning' => [
@@ -102,13 +99,10 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Tuesday afternoon activities',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'wednesday' => [
             'morning' => [
@@ -155,13 +149,10 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Wednesday afternoon activities',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'thursday' => [
             'morning' => [
@@ -208,13 +199,10 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Thursday afternoon activities',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'friday' => [
             'morning' => [
@@ -261,13 +249,10 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Friday afternoon activities',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'saturday' => [
             'morning' => [
@@ -314,13 +299,10 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Saturday afternoon activities',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'sunday' => [
             'morning' => [
@@ -363,33 +345,24 @@ return [
                 'placeholder' => 'e.g. Consultations',
                 'helper_text' => 'Description of Sunday afternoon activities',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'schedule' => [
             'label' => 'Schedule',
             'placeholder' => 'Configure opening hours',
             'helper_text' => 'Complete availability schedule management',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'availability' => [
             'label' => 'Availability',
             'placeholder' => 'Set your availability',
             'helper_text' => 'Configure when you are available for appointments',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'sections' => [
@@ -419,7 +392,6 @@ return [
         'schedule_saved' => 'Schedule saved successfully',
         'invalid_time_range' => 'Invalid time: end time must be after start time',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -429,6 +401,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

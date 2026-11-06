@@ -195,7 +195,7 @@ All Filament resources follow the XotBaseResource pattern:
 - [Filament Resources](./filament-resources.md) - UI component documentation
 - [Business Logic](./business-logic.md) - Core business processes
 - [API Documentation](./api-documentation.md) - Integration endpoints
-- [Config Icon Key Analysis](./config-icon-key-analysis.md) - Configurazione chiave `icon` nel config.php
+- [Config Icon Key Analysis](./filament/config-icon-key-analysis.md) - Configurazione chiave `icon` nel config.php
 ### Quality Assurance
 - [PHPStan Complete Fixes 2025](./phpstan-complete-fixes-2025.md) - ✅ **COMPLETE SUCCESS**: All PHPStan errors resolved (0 errors)
 - [Testing Documentation](./testing/) - Test coverage and strategies
@@ -252,7 +252,4 @@ Il modulo TechPlanner è stato aggiornato con successo a Filament 4.x. Il codice
 - Widget FullCalendar (in attesa di Saade\FilamentFullCalendar)
 
 *Ultima modifica: 2025-12-16 - ✅ SUCCESSO COMPLETO: Filament 4.x aggiornato, refactoring Super Cow completato*
-<<<<<<< HEAD
 # TechPlanner Module Documentation\n\nMain module for Sottana Service project.\n\n## Contents\n- [Brand Update 2026](../../../docs/brand-update-2026.md)\n- [Project Roadmap](../../../migration_plan.md)
-=======
->>>>>>> 6ed19256f (.)

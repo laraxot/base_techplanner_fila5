@@ -1,3 +1,13 @@
+---
+title: "Standard di Traduzione - Documentazione Root"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Standard di Traduzione - Documentazione Root"
+---
 # Standard di Traduzione - Documentazione Root
 
 ## Panoramica
@@ -107,7 +117,7 @@ declare(strict_types=1);
 
 /**
  * Traduzioni per [descrizione]
- *
+ * 
  * @package Modules\{ModuleName}\Resources
  */
 
@@ -140,10 +150,6 @@ return array(
 - **Problemi risolti**: Riferimenti circolari, sintassi obsoleta
 - **Miglioramenti**: Struttura espansa completa, traduzioni specifiche
 - **Documentazione**: [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
-<<<<<<< HEAD
-- **Documentazione**: [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
-=======
->>>>>>> 6ed19256f (.)
 
 #### File Completati
 1. `progressioni.php` - Traduzioni principali
@@ -260,11 +266,6 @@ return [
 
 - [Progressioni Translation System](../../laravel/Modules/Progressioni/docs/translation-system.md)
 - [Xot Best Practices](../../laravel/Modules/Xot/docs/translations-best-practices.md)
-<<<<<<< HEAD
-- [Progressioni Translation System](../../laravel/modules/progressioni/docs/translation-system.md)
-- [Xot Best Practices](../../laravel/modules/xot/docs/translations-best-practices.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Laraxot Conventions](laraxot-conventions.md)
 
 ## Note Tecniche
@@ -281,8 +282,4 @@ return [
 3. **Organizzazione**: Struttura gerarchica coerente
 4. **Naming**: Convenzioni standardizzate
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: Giugno 2025*
-=======
-*Ultimo aggiornamento: Giugno 2025*
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: Giugno 2025* 

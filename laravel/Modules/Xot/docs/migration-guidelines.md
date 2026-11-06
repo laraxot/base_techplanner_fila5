@@ -1,3 +1,11 @@
+---
+title: "Migration Guidelines for Project Modules"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "migration guidelines for project modules xot"
+---
 # Migration Guidelines for Project Modules
 
 ## Overview
@@ -35,16 +43,8 @@ return new class extends XotBaseMigration
 ```
 
 ## Related Documentation
-- [User Module Database Errors](../../User/docs/DATABASE_ERRORS.md)
+- [User Module Database Errors](database_errors.md)
 - [Xot Base Classes](../XOT_BASE_CLASSES.md)
 - [Code Quality](../CODE_QUALITY.md)
 - [Root Documentation](../../../../docs/collegamenti-documentazione.md)
 - [Database Guidelines](../DATABASE_GUIDELINES.md)
-<<<<<<< HEAD
-- [User Module Database Errors](../../user/docs/database_errors.md)
-- [Xot Base Classes](../xot_base_classes.md)
-- [Code Quality](../code_quality.md)
-- [Root Documentation](../../../../../docs/collegamenti-documentazione.md)
-- [Database Guidelines](../database_guidelines.md)
-=======
->>>>>>> 6ed19256f (.)

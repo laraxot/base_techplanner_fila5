@@ -5,47 +5,49 @@ declare(strict_types=1);
 namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-use Illuminate\Support\Carbon;
-=======
->>>>>>> 6ed19256f (.)
+use Modules\Notify\Database\Factories\NotificationTypeFactory;
 
 /**
+ * @property int $id
+ * @property string|null $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $category
+ * @property bool $is_active
+ * @property array<string, mixed>|null $channels
+ * @property array<string, mixed>|null $settings
+ * @property string|null $template
+ *
  * @method static Builder<static>|NotificationType newModelQuery()
  * @method static Builder<static>|NotificationType newQuery()
  * @method static Builder<static>|NotificationType query()
  *
- * @mixin IdeHelperNotificationType
-<<<<<<< HEAD
- *
- * @property int $id
- * @property string $name
- * @property string|null $description
- * @property string|null $template
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- *
- * @method static Builder<static>|NotificationType whereCreatedAt($value)
- * @method static Builder<static>|NotificationType whereCreatedBy($value)
- * @method static Builder<static>|NotificationType whereDescription($value)
- * @method static Builder<static>|NotificationType whereId($value)
- * @method static Builder<static>|NotificationType whereName($value)
- * @method static Builder<static>|NotificationType whereTemplate($value)
- * @method static Builder<static>|NotificationType whereUpdatedAt($value)
- * @method static Builder<static>|NotificationType whereUpdatedBy($value)
- *
-=======
->>>>>>> 6ed19256f (.)
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class NotificationType extends Model
 {
+    /** @use HasFactory<NotificationTypeFactory> */
+    use HasFactory;
+
+    /** @var list<string> */
     protected $fillable = [
         'name',
+        'slug',
         'description',
-        'template',
-    ];
+        'category',
+        'is_active',
+        'channels',
+        'settings',
+        'template'];
+
+    /** @return array<string, string> */
+    protected function casts(): array
+    {
+        return [
+            'is_active' => 'boolean',
+            'channels' => 'array',
+            'settings' => 'array'];
+    }
 }

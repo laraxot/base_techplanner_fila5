@@ -34,7 +34,6 @@ return [
             'icon' => 'heroicon-o-arrows-up-down',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Filament',
     'plural_label' => 'Filament (Plurale)',
     'navigation' => [
@@ -45,8 +44,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Filament',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -79,6 +78,4 @@ return [
             'label' => 'Elimina Filament',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

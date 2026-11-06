@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-
 use Modules\Cms\Models\Policies\CmsBasePolicy;
 use Modules\Cms\Models\Policies\ConfPolicy;
 use Modules\Cms\Models\Policies\MenuPolicy;
@@ -10,57 +9,63 @@ use Modules\Cms\Models\Policies\ModulePolicy;
 use Modules\Cms\Models\Policies\PageContentPolicy;
 use Modules\Cms\Models\Policies\PagePolicy;
 use Modules\Cms\Models\Policies\SectionPolicy;
+use Modules\Xot\Contracts\UserContract;
+use PHPUnit\Framework\Assert;
 
 test('CmsBasePolicy is an abstract class', function () {
     $reflection = new ReflectionClass(CmsBasePolicy::class);
 
-    expect($reflection->isAbstract())->toBeTrue();
+    Assert::assertTrue($reflection->isAbstract());
 });
 
 test('PagePolicy can be instantiated', function () {
-    $policy = new PagePolicy();
+    Assert::assertSame(PagePolicy::class, (new PagePolicy)::class);
 
-    expect($policy)->toBeInstanceOf(PagePolicy::class);
 });
 
 test('SectionPolicy can be instantiated', function () {
-    $policy = new SectionPolicy();
+    Assert::assertSame(SectionPolicy::class, (new SectionPolicy)::class);
 
-    expect($policy)->toBeInstanceOf(SectionPolicy::class);
 });
 
 test('PageContentPolicy can be instantiated', function () {
-    $policy = new PageContentPolicy();
+    Assert::assertSame(PageContentPolicy::class, (new PageContentPolicy)::class);
 
-    expect($policy)->toBeInstanceOf(PageContentPolicy::class);
 });
 
 test('ConfPolicy can be instantiated', function () {
-    $policy = new ConfPolicy();
+    Assert::assertSame(ConfPolicy::class, (new ConfPolicy)::class);
 
-    expect($policy)->toBeInstanceOf(ConfPolicy::class);
 });
 
 test('MenuPolicy can be instantiated', function () {
-    $policy = new MenuPolicy();
+    Assert::assertSame(MenuPolicy::class, (new MenuPolicy)::class);
 
-    expect($policy)->toBeInstanceOf(MenuPolicy::class);
 });
 
 test('ModulePolicy can be instantiated', function () {
-    $policy = new ModulePolicy();
+    Assert::assertSame(ModulePolicy::class, (new ModulePolicy)::class);
 
-    expect($policy)->toBeInstanceOf(ModulePolicy::class);
 });
 
-test('PagePolicy has expected methods', function () {
-    $policy = new PagePolicy();
+test('PagePolicy grants abilities from the page.* permissions', function () {
+    $policy = new PagePolicy;
+    $user = cmsCreateMock(UserContract::class);
+    $user->method('hasPermissionTo')->willReturnCallback(
+        static fn (mixed $permission): bool => $permission === 'page.viewAny',
+    );
 
-    expect(method_exists($policy, 'viewAny'))->toBeTrue();
-    expect(method_exists($policy, 'view'))->toBeTrue();
-    expect(method_exists($policy, 'create'))->toBeTrue();
-    expect(method_exists($policy, 'update'))->toBeTrue();
-    expect(method_exists($policy, 'delete'))->toBeTrue();
-    expect(method_exists($policy, 'restore'))->toBeTrue();
-    expect(method_exists($policy, 'forceDelete'))->toBeTrue();
+    Assert::assertTrue($policy->viewAny($user));
+    Assert::assertFalse($policy->create($user));
+});
+
+test('CmsBasePolicy before() short-circuits only for super-admin', function () {
+    $policy = new PagePolicy;
+    $admin = cmsCreateMock(UserContract::class);
+    $admin->method('hasRole')->willReturn(true);
+    $user = cmsCreateMock(UserContract::class);
+    $user->method('hasRole')->willReturn(false);
+
+    Assert::assertTrue($policy->before($admin, 'viewAny'));
+    Assert::assertNull($policy->before($user, 'viewAny'));
 });

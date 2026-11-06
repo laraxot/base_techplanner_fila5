@@ -1,3 +1,15 @@
+---
+title: "inline date picker"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "inline date picker"
+issues: []
+discussions: []
+status: draft
+---
+
 # InlineDatePicker Component
 
 A customizable inline date picker component for Filament forms with month navigation and enabled/disabled date support.
@@ -39,11 +51,7 @@ InlineDatePicker::make('appointment_date')
 Specify which dates should be selectable. Other dates will be disabled.
 
 ```php
-->enabledDates(['2023-06-15', '2023-06-20', '2023-06-25'])
-<<<<<<< HEAD
 ->enabledDates(['[DATE]', '[DATE]', '[DATE]'])
-=======
->>>>>>> 6ed19256f (.)
 
 // Or using a closure
 ->enabledDates(fn () => \App\Models\Appointment::pluck('date')->toArray())
@@ -186,13 +194,8 @@ When writing tests for forms that use the InlineDatePicker, you can interact wit
 ```php
 // Select a date
 Livewire::test(YourForm::class)
-    ->set('appointment_date', '2023-06-15')
-    ->assertSet('appointment_date', '2023-06-15');
-<<<<<<< HEAD
     ->set('appointment_date', '[DATE]')
     ->assertSet('appointment_date', '[DATE]');
-=======
->>>>>>> 6ed19256f (.)
 
 // Test validation
 Livewire::test(YourForm::class)
@@ -265,11 +268,7 @@ InlineDatePicker::make('appointment_date')
 Specify which dates should be selectable. Other dates will be disabled.
 
 ```php
-->enabledDates(['2023-06-15', '2023-06-20', '2023-06-25'])
-<<<<<<< HEAD
 ->enabledDates(['[DATE]', '[DATE]', '[DATE]'])
-=======
->>>>>>> 6ed19256f (.)
 
 // Or using a closure
 ->enabledDates(fn () => \App\Models\Appointment::pluck('date')->toArray())
@@ -412,13 +411,8 @@ When writing tests for forms that use the InlineDatePicker, you can interact wit
 ```php
 // Select a date
 Livewire::test(YourForm::class)
-    ->set('appointment_date', '2023-06-15')
-    ->assertSet('appointment_date', '2023-06-15');
-<<<<<<< HEAD
     ->set('appointment_date', '[DATE]')
     ->assertSet('appointment_date', '[DATE]');
-=======
->>>>>>> 6ed19256f (.)
 
 // Test validation
 Livewire::test(YourForm::class)
@@ -442,8 +436,4 @@ If the component doesn't look right, make sure you have the required Tailwind CS
 
 ## Contributing
 
-<<<<<<< HEAD
 Contributions are welcome! Please feel free to submit a Pull Request.
-=======
-Contributions are welcome! Please feel free to submit a Pull Request.
->>>>>>> 6ed19256f (.)

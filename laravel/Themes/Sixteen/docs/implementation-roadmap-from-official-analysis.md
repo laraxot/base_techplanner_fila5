@@ -1,3 +1,15 @@
+---
+title: "implementation roadmap from official analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementation roadmap from official analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Roadmap Implementazione - Miglioramenti da Tema Ufficiale Italia
 
 ## 🎯 Piano Esecutivo
@@ -544,11 +556,6 @@ class SixteenMakePageCommand extends Command
             @if($required) required @endif
             x-data="datePickerComponent({
                 format: '{{ $format }}',
-<<<<<<< HEAD
-=======
-                minDate: '{{ $minDate }}',
-                maxDate: '{{ $maxDate }}'
->>>>>>> 6ed19256f (.)
             })"
             x-ref="input"
         >
@@ -580,11 +587,6 @@ function datePickerComponent(config) {
                     format: config.format
                 },
                 restrictions: {
-<<<<<<< HEAD
-=======
-                    minDate: config.minDate,
-                    maxDate: config.maxDate
->>>>>>> 6ed19256f (.)
                 }
             });
         }

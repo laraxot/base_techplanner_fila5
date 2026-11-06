@@ -1,17 +1,14 @@
 <?php
 
 use function Laravel\Folio\{middleware, name};
-use Livewire\Volt\Component;
 
-/** @var array $base_middleware */
-$base_middleware = [];
+use Livewire\Volt\Component;
+use Modules\Cms\Http\Middleware\PageSlugMiddleware;
 
 name('home');
-middleware($base_middleware);
+middleware(PageSlugMiddleware::class);
 
-new class extends Component
-{
-};
+new class extends Component {};
 
 ?>
 

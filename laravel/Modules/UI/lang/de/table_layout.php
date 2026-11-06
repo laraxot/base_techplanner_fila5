@@ -3,6 +3,20 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
+        'list' => [
+            'label' => 'Liste',
+            'icon' => 'heroicon-o-list-bullet',
+            'color' => 'primary',
+            'description' => 'Liste',
+        ],
+        'grid' => [
+            'label' => 'Raster',
+            'icon' => 'heroicon-o-squares-2x2',
+            'color' => 'secondary',
+            'description' => 'Raster',
+        ],
+    ],
     'actions' => [
         'toggle' => [
             'label' => 'Layout wechseln',
@@ -10,7 +24,6 @@ return [
             'helper_text' => 'Anzeigetyp ändern',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +35,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

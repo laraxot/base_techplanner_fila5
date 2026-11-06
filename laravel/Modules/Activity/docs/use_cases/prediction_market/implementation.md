@@ -1,12 +1,14 @@
-<<<<<<< HEAD
+---
+title: "Implementazione del <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, use_cases]
+qmd: "implementazione del <nome progetto>ion market activity"
+---
 # Implementazione del <nome progetto>ion Market
 
 Questa guida fornisce i passaggi per implementare un <nome progetto>ion market nel modulo `Activity` utilizzando l'Event Sourcing.
-=======
-# Implementazione del Prediction Market
-
-Questa guida fornisce i passaggi per implementare un prediction market nel modulo `Activity` utilizzando l'Event Sourcing.
->>>>>>> 6ed19256f (.)
 
 ## Passaggi Principali
 
@@ -19,11 +21,7 @@ Questa guida fornisce i passaggi per implementare un prediction market nel modul
    - Assicurarsi che ogni evento contenga i dati necessari per aggiornare lo stato.
 
 3. **Implementazione della Radice Aggregate**
-<<<<<<< HEAD
    - Creare `<nome progetto>ionMarketAggregateRoot` per gestire la logica di business.
-=======
-   - Creare `PredictionMarketAggregateRoot` per gestire la logica di business.
->>>>>>> 6ed19256f (.)
    - Garantire che la radice aggregate impedisca operazioni non valide (es. scommesse su mercati chiusi).
 
 4. **Sviluppo dei Proiettori**
@@ -68,26 +66,15 @@ Analizzando piattaforme di successo, possiamo integrare diverse best practices n
 ```php
 namespace Modules\Activity\Http\Controllers;
 
-<<<<<<< HEAD
 use Modules\Activity\Aggregates\<nome progetto>ionMarketAggregateRoot;
 use Illuminate\Http\Request;
 
 class <nome progetto>ionMarketController
-=======
-use Modules\Activity\Aggregates\PredictionMarketAggregateRoot;
-use Illuminate\Http\Request;
-
-class PredictionMarketController
->>>>>>> 6ed19256f (.)
 {
     public function createMarket(Request $request)
     {
         $marketId = uniqid();
-<<<<<<< HEAD
         $aggregate = <nome progetto>ionMarketAggregateRoot::createMarket(
-=======
-        $aggregate = PredictionMarketAggregateRoot::createMarket(
->>>>>>> 6ed19256f (.)
             $marketId,
             $request->input('title'),
             $request->input('description'),
@@ -99,11 +86,7 @@ class PredictionMarketController
 
     public function placeBet(Request $request, $marketId)
     {
-<<<<<<< HEAD
         $aggregate = <nome progetto>ionMarketAggregateRoot::retrieve($marketId);
-=======
-        $aggregate = PredictionMarketAggregateRoot::retrieve($marketId);
->>>>>>> 6ed19256f (.)
         $aggregate->placeBet(
             auth()->user()->uuid,
             $request->input('option_id'),
@@ -117,8 +100,4 @@ class PredictionMarketController
 ## Considerazioni sulle Performance
 
 - Implementare snapshot per la radice aggregate se i mercati hanno molti eventi.
-<<<<<<< HEAD
 - Utilizzare code per elaborare eventi in background, specialmente per l'aggiornamento delle probabilità.
-=======
-- Utilizzare code per elaborare eventi in background, specialmente per l'aggiornamento delle probabilità.
->>>>>>> 6ed19256f (.)

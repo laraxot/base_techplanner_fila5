@@ -1,3 +1,15 @@
+---
+title: "filament component integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament component integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Integrazione dei Componenti Filament nei Blocchi
 
 ## Introduzione
@@ -182,16 +194,8 @@ I form Filament che utilizzano campi complessi, wizard multi-step o molti campi 
 ## Riferimenti alla Documentazione
 
 - [Documentazione ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
-- [Integrazione Filament nel modulo CMS](../../Cms/docs/filament-integration.md)
-<<<<<<< HEAD
 - [Integrazione Filament nel modulo CMS](../../cms/docs/filament-integration.md)
 - [Best practices per i componenti UI](../components/best-practices.md)
 
 ---
 *Aggiornato: 2025-05-08*
-=======
-- [Best practices per i componenti UI](../components/best-practices.md)
-
----
-*Aggiornato: 2025-05-08*
->>>>>>> 6ed19256f (.)

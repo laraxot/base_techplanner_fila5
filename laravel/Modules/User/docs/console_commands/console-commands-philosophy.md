@@ -1,3 +1,24 @@
+---
+title: "Filosofia dei Comandi Console - Modulo User"
+type: concept
+tags: [console, commands, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "console-commands-philosophy filosofia dei comandi console - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./assign-module-command.md"
+  - "./change-password-command.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./README.md"
+status: superseded
+superseded_by: ../commands/console-commands-philosophy.md
+---
+
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -440,10 +461,6 @@ private function getPasswordLegacy(): string
 
 ## Collegamenti
 - [README Comandi Console](README.md)
-<<<<<<< HEAD
-- [README Comandi Console](readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)
@@ -459,7 +476,6 @@ private function getPasswordLegacy(): string
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
 
-*Ultimo aggiornamento: 2025-01-27*
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -902,10 +918,6 @@ private function getPasswordLegacy(): string
 
 ## Collegamenti
 - [README Comandi Console](README.md)
-<<<<<<< HEAD
-- [README Comandi Console](readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)
@@ -920,9 +932,3 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27*
-=======
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)

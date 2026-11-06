@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Testing ServiceProvider Fix - Lang Module"
+module: "Lang"
+type: concept
+tags: [links01]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links01"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Testing ServiceProvider Fix - Lang Module
 
 ## Problem
@@ -124,11 +138,7 @@ test('module-specific feature works', function () {
 
 ## Related Documentation
 
-<<<<<<< HEAD
 - `CLAUDE.md` - ServiceProvider rules
-=======
-- `/var/www/_bases/base_laravelpizza/CLAUDE.md` - ServiceProvider rules
->>>>>>> 6ed19256f (.)
 - `Modules/Xot/docs/serviceprovider-minimal-structure.md` - Pattern reference
 - `Modules/Meetup/docs/provider-errors-lessons-learned.md` - Common mistakes
 
@@ -147,11 +157,17 @@ The module's functionality is already covered by:
 
 **Date:** 2026-01-09
 **Status:** Documented - Ready for deletion
-<<<<<<< HEAD
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
 **Date:** 2026-01-09
 **Status:** Documented - Ready for deletion
 **Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
-=======
-**Relates to:** Test failures analysis in `/var/www/_bases/base_laravelpizza/laravel/docs/test-failures-analysis-2026-01-09.md`
->>>>>>> 6ed19256f (.)
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-[DATE].md`
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`
+**Date:** 2026-01-09
+**Status:** Documented - Ready for deletion
+**Relates to:** Test failures analysis in `docs/test-failures-analysis-2026-01-09.md`

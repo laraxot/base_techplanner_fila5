@@ -10,7 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione delle variabili d\'ambiente e configurazione del sistema',
         ],
-        'label' => 'env',
+        'label' => 'Umgebung',
         'sort' => '12',
         'icon' => 'xot-env',
     ],
@@ -19,23 +19,17 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave (es. APP_NAME)',
             'help' => 'Nome della variabile d\'ambiente in maiuscolo',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'value' => [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore',
             'help' => 'Valore della variabile d\'ambiente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -49,12 +43,9 @@ return [
                 'array' => 'Array',
                 'null' => 'Nullo',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'environment' => [
             'label' => 'Ambiente',
@@ -67,33 +58,24 @@ return [
                 'production' => 'Produzione',
                 'all' => 'Tutti gli ambienti',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_sensitive' => [
             'label' => 'Dato Sensibile',
             'help' => 'Indica se il valore contiene dati sensibili da mascherare',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione dettagliata dello scopo della variabile',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'group' => [
             'label' => 'Gruppo',
@@ -108,7 +90,6 @@ return [
                 'services' => 'Servizi',
                 'other' => 'Altro',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -118,11 +99,6 @@ return [
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-=======
-        ],
-        'telegram_bot_token' => [
-            'description' => 'telegram_bot_token',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -186,10 +162,7 @@ return [
             'changes_saved' => 'Modifiche salvate nel file .env',
         ],
     ],
-    'title' => 'env',
-<<<<<<< HEAD
+    'title' => 'Umgebung',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

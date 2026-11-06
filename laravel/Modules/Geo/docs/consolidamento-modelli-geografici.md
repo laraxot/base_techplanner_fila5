@@ -1,3 +1,16 @@
+---
+title: "consolidamento modelli geografici"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "consolidamento modelli geografici"
+issues: []
+discussions: []
+status: superseded
+superseded_by: geographic-models-consolidation.md
+---
+
 # Analisi del Consolidamento dei Modelli Geografici
 
 ## Panoramica
@@ -39,12 +52,7 @@ class Comune extends GeoJsonModel
     {
         return static::loadData()->pluck('regione')->unique()->values();
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // Recupera le province di una regione
     public static function getProvince(string $codiceRegione): Collection
     {
@@ -54,12 +62,7 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // Recupera le città di una provincia
     public static function getCitta(string $codiceProvincia): Collection
     {
@@ -69,12 +72,7 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // Recupera i CAP di una città
     public static function getCap(string $codiceCitta): Collection
     {
@@ -84,22 +82,13 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // Cerca comuni per nome (funzionalità aggiuntiva)
     public static function cercaPerNome(string $nome): Collection
     {
         return static::loadData()
             ->filter(fn($item) => str_contains(
-                strtolower($item['comune']['nome']),
-<<<<<<< HEAD
                 strtolower($item['comune']['nome']), 
-=======
->>>>>>> 6ed19256f (.)
                 strtolower($nome)
             ));
     }
@@ -164,11 +153,7 @@ Select::make('region')
     ->afterStateUpdated(fn (Set $set) => $set('province', null)),
 
 Select::make('province')
-    ->options(fn (Get $get) =>
-<<<<<<< HEAD
     ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
         Province::byRegion($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```
@@ -180,11 +165,7 @@ Select::make('region')
     ->afterStateUpdated(fn (Set $set) => $set('province', null)),
 
 Select::make('province')
-    ->options(fn (Get $get) =>
-<<<<<<< HEAD
     ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
         Comune::getProvince($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```
@@ -296,9 +277,4 @@ L'implementazione esistente:
 In sintesi, il modello `Comune` implementato rappresenta un caso di studio positivo di come il consolidamento di modelli strettamente correlati possa, in determinati contesti, portare a un codice più pulito, performante e facile da utilizzare.
 
 ---
-
-<<<<<<< HEAD
 *Documento creato il: 27/05/2025*
-=======
-*Documento creato il: 27/05/2025*
->>>>>>> 6ed19256f (.)

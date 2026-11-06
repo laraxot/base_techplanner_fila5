@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: ffmpeg-integration
-canonical: ../../../Themes/docs/shared-components/ffmpeg-integration-1.md
+issues: []
+discussions: []
+title: "Integrazione di FFmpeg nel Modulo Media"
+module: "Media"
+type: concept
+tags: [ffmpeg, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ffmpeg integration"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/ffmpeg-integration-1.md
-=======
 # Integrazione di FFmpeg nel Modulo Media
 
 Questa guida documenta l'integrazione del pacchetto [protonemedia/laravel-ffmpeg](https://github.com/protonemedia/laravel-ffmpeg) all'interno del modulo Media, basandosi sulle seguenti risorse:
@@ -81,5 +86,4 @@ class ConvertVideoAction extends QueueableAction
 ## Collegamenti Utili
 - [Guida GitHub](https://github.com/protonemedia/laravel-ffmpeg)
 - [Report PHPStan livello 1](phpstan/level_1.md)
-- [Documentazione Modulo Media](module_media.md)
->>>>>>> 6ed19256f (.)
+- [Documentazione Modulo Media](module-media.md)

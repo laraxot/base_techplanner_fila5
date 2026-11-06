@@ -2,107 +2,20 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-use Modules\Gdpr\Tests\TestCase;
-
 /*
-|--------------------------------------------------------------------------
-| Pest Configuration
-|--------------------------------------------------------------------------
-|
-| This file configures Pest for the Gdpr module tests.
-|
-*/
-
-uses(TestCase::class)->in(__DIR__);
-
-/*
-|--------------------------------------------------------------------------
-| Expectations
-|--------------------------------------------------------------------------
-|
-*/
-
-expect()->extend('toBeRedirectedTo', function ($expected) {
-        return $response->assertRedirect($expected);
-    };
-});
-
-/*
-|--------------------------------------------------------------------------
-| Hooks
-|--------------------------------------------------------------------------
-|
-*/
-
-beforeEach(function () {
-    // DatabaseTransactions trait handles rollback automatically
-});
-
-afterEach(function () {
-    // DatabaseTransactions trait handles rollback automatically
-});
-=======
-use Modules\Gdpr\Models\GdprConsent;
-use Modules\Gdpr\Models\GdprRequest;
-use Modules\Gdpr\Tests\TestCase;
-
-/*
- * |--------------------------------------------------------------------------
- * | Test Case
- * |--------------------------------------------------------------------------
- * |
- * | The closure you provide to your test functions is always bound to a specific PHPUnit test
- * | case class. By default, that class is "PHPUnit\Framework\TestCase". Of course, you may
- * | need to change it using the "pest()" function to bind a different classes or traits.
- * |
+ * Bootstrap Pest — modulo Gdpr.
+ * Il binding a \Modules\Gdpr\Tests\TestCase e' fatto solo qui sotto: i file test NON devono
+ * dichiarare uses(TestCase::class) (altrimenti Pest\Exceptions\TestCaseAlreadyInUse).
+ * Per estendere si usa l'API idiomatica di Pest — `pest()->extend(...)`, in fondo
+ * a questo file — senza nessuna annotazione di soppressione: con
+ * `pestphp/pest-plugin-phpstan 5.2.0` installato, `method.internalClass` non
+ * viene piu' segnalato. Misurato il 2026-08-25 su tutti i bootstrap dei moduli:
+ * `phpstan analyse Modules/<Modulo>/tests/Pest.php` = 0 errori.
+ * Se ricomparisse, verificare che il plugin sia ancora caricato da
+ * `phpstan/extension-installer`, non reintrodurre il divieto.
+ * Vedi story XOT-5.41 e ROOT-17.6.
  */
+require_once __DIR__.'/PestHelpers.php';
+require_once __DIR__.'/PestStubs.php';
 
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
-
-/*
- * |--------------------------------------------------------------------------
- * | Expectations
- * |--------------------------------------------------------------------------
- * |
- * | When you're writing tests, you often need to check that values meet certain conditions. The
- * | "expect()" function gives you access to a set of "expectations" methods that you can use
- * | to assert different things. Of course, you may extend the Expectation API at any time.
- * |
- */
-
-expect()->extend('toBeGdprConsent', fn () => $this->toBeInstanceOf(GdprConsent::class));
-
-expect()->extend('toBeGdprRequest', fn () => $this->toBeInstanceOf(GdprRequest::class));
-
-/*
- * |--------------------------------------------------------------------------
- * | Functions
- * |--------------------------------------------------------------------------
- * |
- * | While Pest is very powerful out-of-the-box, you may have some testing code specific to your
- * | project that you don't want to repeat in every file. Here you can also expose helpers as
- * | global functions to help you to reduce the number of lines of code in your test files.
- * |
- */
-
-function createGdprConsent(array $attributes = []): GdprConsent
-{
-    return GdprConsent::factory()->create($attributes);
-}
-
-function makeGdprConsent(array $attributes = []): GdprConsent
-{
-    return GdprConsent::factory()->make($attributes);
-}
-
-function createGdprRequest(array $attributes = []): GdprRequest
-{
-    return GdprRequest::factory()->create($attributes);
-}
-
-function makeGdprRequest(array $attributes = []): GdprRequest
-{
-    return GdprRequest::factory()->make($attributes);
-}
->>>>>>> 6ed19256f (.)
+pest()->extend(Modules\Gdpr\Tests\TestCase::class)->in(__DIR__.'/Unit', __DIR__.'/Feature');

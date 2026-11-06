@@ -1,3 +1,11 @@
+---
+title: "Rapporto PHPStan Livello 6 per il modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "rapporto phpstan livello 6 per il modulo xot xot"
+---
 # Rapporto PHPStan Livello 6 per il modulo Xot
 
 Data analisi: 2025-04-15 21:54:44
@@ -8,11 +16,7 @@ Trovati 4 errori al livello 6.
 
 ## Errori e suggerimenti
 
-<<<<<<< HEAD
 ### File: `Modules/Xot/app/Actions/Export/ExportXlsByView.php`
-=======
-### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/Export/ExportXlsByView.php`
->>>>>>> 6ed19256f (.)
 
 #### Linea 40: Syntax error, unexpected T_SR on line 40
 
@@ -30,11 +34,7 @@ Trovati 4 errori al livello 6.
 - Le variabili siano inizializzate prima dell'uso
 - I nomi di metodi e proprietà siano corretti
 
-<<<<<<< HEAD
 ### File: `Modules/Xot/app/Actions/View/GetViewByClassAction.php`
-=======
-### File: `/var/www/html/saluteora/laravel/Modules/Xot/app/Actions/View/GetViewByClassAction.php`
->>>>>>> 6ed19256f (.)
 
 #### Linea 47: Syntax error, unexpected T_SR on line 47
 

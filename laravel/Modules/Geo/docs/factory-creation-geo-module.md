@@ -1,3 +1,15 @@
+---
+title: "factory creation geo module"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "factory creation geo module"
+issues: []
+discussions: []
+status: draft
+---
+
 # Factory Creation - Geo Module
 
 ## ERRORE GRAVISSIMO RISOLTO NEL MODULO GEO
@@ -101,13 +113,8 @@ public function milano(): static
 
 ## 🔗 COLLEGAMENTI
 
-- [Factory Lessons Learned CRITICAL](../../../docs/factory-lessons-learned-CRITICAL.md)
-- [Geo Module README](./README.md)
-<<<<<<< HEAD
 - [Factory Lessons Learned CRITICAL](../../../../docs/factory-lessons-learned-critical.md)
-- [Geo Module README](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Geo Module README](./README.md)
 - [Geographic Data Documentation](./geographic-data.md)
 
 ## ⚠️ REGOLE GEO SPECIFICHE
@@ -120,12 +127,6 @@ public function milano(): static
 
 **MODULO GEO COMPLETAMENTE RIPRISTINATO!**
 
-*Creato: 2025-01-06*
-<<<<<<< HEAD
 *Creato: [DATE]*
 *Modulo: Geo - 8/8 factory necessarie completate*
 *Status: ✅ ERRORE GRAVISSIMO RISOLTO*
-=======
-*Modulo: Geo - 8/8 factory necessarie completate*
-*Status: ✅ ERRORE GRAVISSIMO RISOLTO*
->>>>>>> 6ed19256f (.)

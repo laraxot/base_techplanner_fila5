@@ -1,12 +1,18 @@
+---
+title: "record notification constructor slug"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "record notification constructor slug"
+issues: []
+discussions: []
+status: draft
+---
+
 # Refactoring RecordNotification Constructor - Slug Pattern
 
-<<<<<<< HEAD
-**Data**: 19 Dicembre 2025  
 **Stato**: ✅ Implementato  
-=======
-**Data**: 19 Dicembre 2025
-**Stato**: ✅ Implementato
->>>>>>> 6ed19256f (.)
 **Motivazione**: Lazy Resolution, Consistency, DRY + KISS
 
 ## 🎯 Problema Identificato
@@ -243,14 +249,11 @@ $notification = new RecordNotification($record, 'welcome');
 
 ## 🔗 Riferimenti
 
-- [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md) - Filosofia Zen per costruttore
-<<<<<<< HEAD
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen per costruttore
-=======
->>>>>>> 6ed19256f (.)
 - [RecordNotification Zen Delegation](./record-notification-zen-delegation.md) - **✅ Pattern attuale**: Delega completa a SpatieEmail
 - [record-notification.md](../notifications/record-notification.md) - Documentazione completa RecordNotification
 - [send-record-notification-action.md](../actions/send-record-notification-action.md) - Documentazione SendRecordNotificationAction
+- [send-record-notification-action.md](send-record-notification-action.md) - Documentazione SendRecordNotificationAction
 
 ## ⚠️ Nota Importante
 
@@ -259,11 +262,5 @@ $notification = new RecordNotification($record, 'welcome');
 Il pattern attuale di `RecordNotification` è **Zen Delegation**: invece di risolvere `MailTemplate` internamente (lazy resolution), `RecordNotification` delega completamente a `SpatieEmail` che gestisce tutta la logica di template resolution, placeholder replacement e layout application. Questo elimina qualsiasi duplicazione e segue il principio DRY in modo assoluto.
 
 ---
-
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Intent over implementation, lazy over eager, simple over complex"*
-=======
-**Ultimo aggiornamento**: 19 Dicembre 2025
-**Filosofia**: *"Intent over implementation, lazy over eager, simple over complex"*
->>>>>>> 6ed19256f (.)

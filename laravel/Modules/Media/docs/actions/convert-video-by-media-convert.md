@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: convert-video-by-media-convert
-canonical: ../../../../Themes/docs/shared-components/convert-video-by-media-convert-1.md
+issues: []
+discussions: []
+title: "ConvertVideoByMediaConvertAction"
+module: "Media"
+type: concept
+tags: [convert, video, by, media]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "convert video by media convert"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/convert-video-by-media-convert-1.md
-=======
 # ConvertVideoByMediaConvertAction
 
 ## Panoramica
@@ -82,4 +87,3 @@ $convertedPath = $action->execute($data, $record);
 ```
 
 [Torna alla documentazione Media](/docs/modules/module_media.md#actions)
->>>>>>> 6ed19256f (.)

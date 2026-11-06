@@ -1,3 +1,20 @@
+---
+title: "Git Conflicts Resolution - 16 Dicembre 2025"
+type: concept
+tags: [git, conflicts, resolution]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git-conflicts-resolution git conflicts resolution - 16 dicembre 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./deviceuser-hasxotfactory-fix.md"
+  - "./deviceuser-hasxotfactory.md"
+  - "./gits-resolution.md"
+  - "./multiple-bugs-resolution.md"
+status: draft
+---
+
 # Git Conflicts Resolution - 16 Dicembre 2025
 
 **Data Fix**: 16 Dicembre 2025
@@ -104,15 +121,9 @@ git status --porcelain | grep "^UU\|^AA\|^DD"
 
 ## 🔗 Collegamenti
 
-- [Priority Decision Rules](../../Xot/docs/priority-decision-rules.md)
-- [Super Mucca Workflow](../../Xot/docs/super-mucca-workflow.md)
-- [Git Conflict Resolution Guide](../../Xot/docs/git-conflict-resolution.md)
-<<<<<<< HEAD
 - [Priority Decision Rules](../../xot/docs/priority-decision-rules.md)
 - [Super Mucca Workflow](../../xot/docs/super-mucca-workflow.md)
 - [Git Conflict Resolution Guide](../../xot/docs/git-conflict-resolution.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ---
 
@@ -133,8 +144,4 @@ git status --porcelain | grep "^UU\|^AA\|^DD"
 
 ---
 
-<<<<<<< HEAD
 *"Un conflitto risolto è come una ferita guarita - il codice può finalmente respirare."* - Super Mucca Zen
-=======
-*"Un conflitto risolto è come una ferita guarita - il codice può finalmente respirare."* - Super Mucca Zen
->>>>>>> 6ed19256f (.)

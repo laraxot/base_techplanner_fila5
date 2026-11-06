@@ -1,5 +1,13 @@
-<<<<<<< HEAD
-=======
+---
+title: "Convenzioni per Form Schema in Filament"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Convenzioni per Form Schema in Filament"
+---
 # Convenzioni per Form Schema in Filament
 
 ## Regola Fondamentale
@@ -133,18 +141,7 @@ class MyResource extends XotBaseResource
 
 ## Documentazione Correlata
 
->>>>>>> 6ed19256f (.)
 - [XotBaseResource](./XOT_BASE_RESOURCE.md)
 - [Form Components](./FORM_COMPONENTS.md)
 - [Form Validation](./FORM_VALIDATION.md)
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)
-<<<<<<< HEAD
----
-module: theme
-topic: filament-form-schema-conventions
-canonical: ../../../Themes/docs/shared-components/filament-form-schema-conventions-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-form-schema-conventions-1.md
-=======
->>>>>>> 6ed19256f (.)

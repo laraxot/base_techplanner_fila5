@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Risoluzione Conflitto in VideoEntry"
+module: "Media"
+type: concept
+tags: [conflict, resolution, video, entry]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflict resolution video entry"
+related:
+  - "./webm.md"
+status: draft
+---
 # Risoluzione Conflitto in VideoEntry
 
 ## Panoramica
@@ -74,10 +88,5 @@ La soluzione è stata verificata con:
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
 - [Documentazione principale risoluzione conflitti git](../../../../../docs/risoluzione_conflitti_git.md)
 - [Documentazione dettagliata VideoEntry](../../../../../docs/video_entry_conflict.md)
-=======
-- [Documentazione principale risoluzione conflitti git](../../../../docs/risoluzione_conflitti_git.md)
-- [Documentazione dettagliata VideoEntry](../../../../docs/video_entry_conflict.md)
->>>>>>> 6ed19256f (.)

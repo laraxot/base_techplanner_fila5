@@ -1,3 +1,15 @@
+---
+title: "component registration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "component registration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Registrazione dei Componenti nei Moduli
 
 ## Regola Fondamentale
@@ -72,10 +84,5 @@ Se hai bisogno di personalizzazioni nella registrazione dei componenti:
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [XotBaseServiceProvider](Modules/Xot/app/Providers/XotBaseServiceProvider.php)
 - [RegisterBladeComponentsAction](Modules/Xot/Actions/Blade/RegisterBladeComponentsAction.php)
-=======
-- [XotBaseServiceProvider](/var/www/html/base_saluteora/laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php)
-- [RegisterBladeComponentsAction](/var/www/html/base_saluteora/laravel/Modules/Xot/Actions/Blade/RegisterBladeComponentsAction.php)
->>>>>>> 6ed19256f (.)

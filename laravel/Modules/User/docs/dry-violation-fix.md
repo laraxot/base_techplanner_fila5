@@ -1,3 +1,28 @@
+---
+title: "Correzione Violazione DRY: safeStringCast"
+type: concept
+tags: [dry, violation, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dry-violation-fix correzione violazione dry: safestringcast"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Correzione Violazione DRY: safeStringCast
 
 ## Problema Identificato
@@ -60,20 +85,9 @@ Tutte le funzioni `safeStringCast()` private sono state rimosse dai file, elimin
 3. **Tooling**: Implementare controlli automatici per violazioni DRY
 4. **Training**: Formare il team sulle nuove regole DRY
 ## Collegamenti
-<<<<<<< HEAD
 - [Regola DRY Aggiornata](../.cursor/rules/dry-actions-rules.md)
 - [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
 - [Documentazione Actions](../../xot/docs/actions.md)
 - [Documentazione Actions](../../xot/project_docs/actions.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Regola DRY Aggiornata](../.cursor/rules/DRY-actions-rules.md)
-- [SafeStringCastAction](../../Xot/app/Actions/String/SafeStringCastAction.php)
-- [Documentazione Actions](../../Xot/docs/actions.md)
-- [Documentazione Actions](../../Xot/project_docs/actions.md)
 *Data correzione: 2025-01-06*
-<<<<<<< HEAD
 *Stato: ✅ Completato*
-=======
-*Stato: ✅ Completato*
->>>>>>> 6ed19256f (.)

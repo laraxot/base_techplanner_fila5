@@ -1,3 +1,11 @@
+---
+title: "Best Practices - Documentazione Consolidata DRY + KISS"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "best practices - documentazione consolidata dry + kiss xot"
+---
 # Best Practices - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le best practices del progetto
@@ -446,11 +454,7 @@ Modules/UI/resources/views/components/ui/
 
 ### Livello 9+ Obbligatorio
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/_bases/base_saluteora/laravel
->>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 
@@ -653,11 +657,7 @@ return new class extends XotBaseMigration {
 **Soluzione**:
 ```bash
 # Eseguire da directory Laravel
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/_bases/base_saluteora/laravel
->>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 

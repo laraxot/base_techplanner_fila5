@@ -1,3 +1,15 @@
+---
+title: "layout"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "layout"
+issues: []
+discussions: []
+status: draft
+---
+
 # Anatomia di un Sito Web
 
 ## Layout Base
@@ -122,14 +134,8 @@ Riorganizzazione degli elementi:
    - CTA evidenti
 
 ## Collegamenti
-- [Glossario Tecnico](../glossary.md)
-- [Struttura Componenti](../components/structure.md)
-- [Documentazione Blocchi](../blocks/README.md)
-<<<<<<< HEAD
-- [Documentazione Blocchi](../blocks/readme.md)
+- [Glossario Tecnico](../../glossary.md)
+- [Struttura Componenti](../../components/structure.md)
+- [Documentazione Blocchi](../../blocks/README.md)
 
 [Fonte: deborasilvestri.it](https://www.deborasilvestri.it/creare-un-sito-web/struttura-di-un-sito-web/)
-=======
-
-[Fonte: deborasilvestri.it](https://www.deborasilvestri.it/creare-un-sito-web/struttura-di-un-sito-web/)
->>>>>>> 6ed19256f (.)

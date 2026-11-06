@@ -1,3 +1,11 @@
+---
+title: "Regole Struttura Directory"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "regole struttura directory xot"
+---
 # Regole Struttura Directory
 
 ## Struttura Base del Progetto
@@ -5,11 +13,7 @@
 La struttura corretta del progetto il progetto segue questo schema:
 
 ```
-<<<<<<< HEAD
 
-=======
-/var/www/html/base_<nome progetto>/
->>>>>>> 6ed19256f (.)
 ├── laravel/               # Directory principale per il codice Laravel
 │   ├── Modules/          # Moduli dell'applicazione
 │   │   ├── Xot/
@@ -46,20 +50,12 @@ La struttura corretta del progetto il progetto segue questo schema:
 ### 1. Percorso Errato dei Temi
 ❌ Errore riscontrato:
 ```
-<<<<<<< HEAD
 Themes/One/resources/views/pages/auth/register.blade.php
-=======
-/var/www/html/base_<nome progetto>/Themes/One/resources/views/pages/auth/register.blade.php
->>>>>>> 6ed19256f (.)
 ```
 
 ✅ Percorso corretto:
 ```
-<<<<<<< HEAD
 Themes/One/resources/views/pages/auth/register.blade.php
-=======
-/var/www/html/base_<nome progetto>/laravel/Themes/One/resources/views/pages/auth/register.blade.php
->>>>>>> 6ed19256f (.)
 ```
 
 **Causa dell'errore**: Omissione della directory `laravel/` nel percorso.

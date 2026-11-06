@@ -12,14 +12,10 @@ use Override;
 
 class FailedImportRowResource extends XotBaseResource
 {
-<<<<<<< HEAD
     protected static ?string $model = FailedImportRow::class;
-=======
-    protected static null|string $model = FailedImportRow::class;
->>>>>>> 6ed19256f (.)
 
     #[Override]
-    public static function getFormSchema(): array
+    public function getFormSchemaOld(): array
     {
         return [
             'import_class' => TextInput::make('import_class')->required()->maxLength(255),

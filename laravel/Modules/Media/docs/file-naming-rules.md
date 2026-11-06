@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: file-naming-rules
-canonical: ../../../Themes/docs/shared-components/file-naming-rules.md
+issues: []
+discussions: []
+title: "Regole di Naming per File"
+module: "Media"
+type: rule
+tags: [file, naming, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "file naming rules"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/file-naming-rules.md
-=======
 # Regole di Naming per File
 
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive
@@ -127,4 +132,3 @@ Se entrambi i file contengono contenuto diverso:
 - Laravel Naming Conventions
 - Filament Best Practices
 - Git Case Sensitivity Issues
->>>>>>> 6ed19256f (.)

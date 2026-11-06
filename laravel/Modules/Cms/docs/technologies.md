@@ -1,3 +1,15 @@
+---
+title: "technologies"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "technologies"
+issues: []
+discussions: []
+status: draft
+---
+
 # Tecnologie
 
 Questo documento descrive le tecnologie principali utilizzate nel modulo CMS.
@@ -109,19 +121,8 @@ Questo documento descrive le tecnologie principali utilizzate nel modulo CMS.
 
 ## Collegamenti
 
-- [Architettura](architecture.md)
-<<<<<<< HEAD
+- [Architettura](frontoffice/architecture.md)
 - [API](api/readme.md)
-- [Frontend](frontoffice/readme.md)
+- [Frontend](frontoffice/README.md)
 - [Sviluppo](developer/readme.md)
 - [Utente](user/readme.md)
-- [API](api/README.md)
-- [Frontend](frontoffice/README.md)
-- [Sviluppo](developer/README.md)
-- [Utente](user/README.md)
-=======
-- [API](api/README.md)
-- [Frontend](frontoffice/README.md)
-- [Sviluppo](developer/README.md)
-- [Utente](user/README.md)
->>>>>>> 6ed19256f (.)

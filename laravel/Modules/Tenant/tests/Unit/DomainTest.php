@@ -2,39 +2,39 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Tenant\Tests\Unit;
 
-=======
->>>>>>> 6ed19256f (.)
+use Mockery;
+use Mockery\Expectation;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Models\Domain;
-use Tests\TestCase;
+use Modules\Tenant\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-test('domain model can be instantiated', function (): void {
-    $domain = new Domain;
+afterEach(function (): void {
+    Mockery::close();
+});
 
-    expect($domain)->toBeInstanceOf(Domain::class);
+test('domain model can be instantiated', function (): void {
+    Assert::assertSame(Domain::class, (new Domain)::class);
 });
 
 test('get rows method works correctly', function (): void {
-    // Mock della Action GetDomainsArrayAction
-    $this->mock(GetDomainsArrayAction::class, function ($mock) {
-        $mock
-            ->shouldReceive('execute')
-            ->once()
-            ->andReturn([
-                ['id' => 1, 'name' => 'test-domain.com'],
-                ['id' => 2, 'name' => 'example.org'],
-            ]);
-    });
+    $mock = Mockery::mock(GetDomainsArrayAction::class);
+    $expectation = $mock->shouldReceive('execute');
+    assert($expectation instanceof Expectation);
+    $expectation->andReturn([
+        ['id' => 1, 'name' => 'test-domain.com'],
+        ['id' => 2, 'name' => 'example.org'],
+    ]);
+
+    app()->instance(GetDomainsArrayAction::class, $mock);
 
     $domain = new Domain;
     $rows = $domain->getRows();
 
-    expect($rows)->toBeArray();
     expect($rows)->toHaveCount(2);
     expect($rows[0]['name'])->toBe('test-domain.com');
     expect($rows[1]['name'])->toBe('example.org');

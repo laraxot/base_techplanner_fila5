@@ -1,3 +1,13 @@
+---
+title: "Architettura Folio + Volt + Filament in il progetto"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Architettura Folio + Volt + Filament in il progetto"
+---
 # Architettura Folio + Volt + Filament in il progetto
 
 ## Panoramica
@@ -12,19 +22,6 @@ Questo documento descrive l'architettura frontend basata su Folio, Volt e Filame
 - [Flusso di Registrazione](../../../docs/flusso-registrazione.md) - Implementazione del wizard multi-step
 
 ### Moduli Collegati
-<<<<<<< HEAD
-- [README](../readme.md) - Panoramica del modulo Xot
-- [Struttura dei Moduli](./module_structure.md) - Convenzioni di struttura dei moduli
-- [Convenzioni di Naming](../../../../docs/convenzioni-naming-campi.md) - Convenzioni per i nomi dei campi
-- [Flusso di Registrazione](../../../../docs/flusso-registrazione.md) - Implementazione del wizard multi-step
-
-### Moduli Collegati
-- [UI](../../ui/docs/readme.md) - Componenti di interfaccia
-- [Cms](../../cms/docs/readme.md) - Gestione contenuti
-- [Lang](../../lang/docs/readme.md) - Traduzioni
-- [Patient](../../patient/docs/readme.md) - Gestione pazienti
-=======
->>>>>>> 6ed19256f (.)
 - [UI](../../UI/docs/README.md) - Componenti di interfaccia
 - [Cms](../../Cms/docs/README.md) - Gestione contenuti
 - [Lang](../../Lang/docs/README.md) - Traduzioni
@@ -131,12 +128,12 @@ $update = function() {
         'name' => 'required|min:3',
         'email' => 'required|email',
     ]);
-
+    
     auth()->user()->update([
         'name' => $this->name,
         'email' => $this->email,
     ]);
-
+    
     $this->dispatch('profile-updated');
 };
 
@@ -231,94 +228,26 @@ new class extends Component {
 ## Collegamenti Moduli
 
 ### Modulo UI
-<<<<<<< HEAD
-- [Componenti Volt](../ui/docs/components/volt.md)
-- [Layout](../ui/docs/layouts.md)
-- [Temi](../ui/docs/themes.md)
-- [Best Practices](../ui/docs/best-practices.md)
-
-### Modulo Cms
-- [Frontend](../cms/docs/frontend.md)
-- [Temi](../cms/docs/themes.md)
-- [Contenuti](../cms/docs/content.md)
-- [Convenzioni Filament](../cms/docs/convenzioni-namespace-filament.md)
-
-### Modulo Lang
-- [Traduzioni](../lang/docs/translations.md)
-- [Localizzazione](../lang/docs/localization.md)
-- [API Traduzioni](../lang/docs/api.md)
-
-### Modulo User
-- [Autenticazione](../user/docs/auth.md)
-- [Permessi](../user/docs/permissions.md)
-- [Profilo](../user/docs/profile.md)
-
-### Modulo Patient
-- [Gestione Pazienti](../patient/docs/patients.md)
-- [Cartelle Cliniche](../patient/docs/records.md)
-- [Appuntamenti](../patient/docs/appointments.md)
-
-### Modulo Dental
-- [Trattamenti](../dental/docs/treatments.md)
-- [Pianificazione](../dental/docs/planning.md)
-- [Documenti](../dental/docs/documents.md)
-
-### Modulo Tenant
-- [Multi-tenant](../tenant/docs/multi-tenant.md)
-- [Configurazione](../tenant/docs/configuration.md)
-- [Migrazione](../tenant/docs/migration.md)
-
-### Modulo Media
-- [Gestione File](../media/docs/files.md)
-- [Upload](../media/docs/upload.md)
-- [Storage](../media/docs/storage.md)
-
-### Modulo Notify
-- [Notifiche](../notify/docs/notifications.md)
-- [Email](../notify/docs/email.md)
-- [SMS](../notify/docs/sms.md)
-
-### Modulo Reporting
-- [Report](../reporting/docs/reports.md)
-- [Esportazione](../reporting/docs/export.md)
-- [Analytics](../reporting/docs/analytics.md)
-
-### Modulo Gdpr
-- [Privacy](../gdpr/docs/privacy.md)
-- [Consensi](../gdpr/docs/consents.md)
-- [Sicurezza](../gdpr/docs/security.md)
-
-### Modulo Job
-- [Jobs](../job/docs/jobs.md)
-- [Queue](../job/docs/queue.md)
-- [Scheduling](../job/docs/scheduling.md)
-
-### Modulo Chart
-- [Grafici](../chart/docs/charts.md)
-- [Dashboard](../chart/docs/dashboard.md)
-- [Visualizzazione](../chart/docs/visualization.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Componenti Volt](../UI/docs/components/volt.md)
+- [Componenti Volt](../../UI/docs/components/volt.md)
 - [Layout](../UI/docs/layouts.md)
 - [Temi](../UI/docs/themes.md)
-- [Best Practices](../UI/docs/best-practices.md)
+- [Best Practices](../../UI/docs/best-practices.md)
 
 ### Modulo Cms
 - [Frontend](../Cms/docs/frontend.md)
 - [Temi](../Cms/docs/themes.md)
-- [Contenuti](../Cms/docs/content.md)
-- [Convenzioni Filament](../Cms/docs/convenzioni-namespace-filament.md)
+- [Contenuti](../../Cms/docs/content.md)
+- [Convenzioni Filament](../../Cms/docs/convenzioni-namespace-filament.md)
 
 ### Modulo Lang
-- [Traduzioni](../Lang/docs/translations.md)
+- [Traduzioni](../../Lang/docs/translations.md)
 - [Localizzazione](../Lang/docs/localization.md)
 - [API Traduzioni](../Lang/docs/api.md)
 
 ### Modulo User
 - [Autenticazione](../User/docs/auth.md)
-- [Permessi](../User/docs/permissions.md)
-- [Profilo](../User/docs/profile.md)
+- [Permessi](../../User/docs/permissions.md)
+- [Profilo](../../User/docs/profile.md)
 
 ### Modulo Patient
 - [Gestione Pazienti](../Patient/docs/patients.md)
@@ -332,7 +261,7 @@ new class extends Component {
 
 ### Modulo Tenant
 - [Multi-tenant](../Tenant/docs/multi-tenant.md)
-- [Configurazione](../Tenant/docs/configuration.md)
+- [Configurazione](../../Tenant/docs/configuration.md)
 - [Migrazione](../Tenant/docs/migration.md)
 
 ### Modulo Media
@@ -341,9 +270,9 @@ new class extends Component {
 - [Storage](../Media/docs/storage.md)
 
 ### Modulo Notify
-- [Notifiche](../Notify/docs/notifications.md)
+- [Notifiche](../../Notify/docs/notifications.md)
 - [Email](../Notify/docs/email.md)
-- [SMS](../Notify/docs/sms.md)
+- [SMS](../../Notify/docs/sms.md)
 
 ### Modulo Reporting
 - [Report](../Reporting/docs/reports.md)
@@ -352,8 +281,8 @@ new class extends Component {
 
 ### Modulo Gdpr
 - [Privacy](../Gdpr/docs/privacy.md)
-- [Consensi](../Gdpr/docs/consents.md)
-- [Sicurezza](../Gdpr/docs/security.md)
+- [Consensi](../../Gdpr/docs/consents.md)
+- [Sicurezza](../../Gdpr/docs/security.md)
 
 ### Modulo Job
 - [Jobs](../Job/docs/jobs.md)
@@ -363,8 +292,4 @@ new class extends Component {
 ### Modulo Chart
 - [Grafici](../Chart/docs/charts.md)
 - [Dashboard](../Chart/docs/dashboard.md)
-<<<<<<< HEAD
 - [Visualizzazione](../Chart/docs/visualization.md)
-=======
-- [Visualizzazione](../Chart/docs/visualization.md)
->>>>>>> 6ed19256f (.)

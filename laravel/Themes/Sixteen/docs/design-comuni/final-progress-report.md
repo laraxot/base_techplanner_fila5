@@ -1,3 +1,15 @@
+---
+title: "final progress report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "final progress report"
+issues: []
+discussions: []
+status: draft
+---
+
 # 📊 Final Progress Report - Design Comuni
 
 **Data**: 2026-03-30  
@@ -80,7 +92,7 @@
 - [ ] segnalazione-03-riepilogo
 - [ ] segnalazione-04-conferma
 - [ ] segnalazione-area-personale
-- [ ] segnalazioni-elenco
+- [ ] ticket-list
 
 ### Altre Pagine (4)
 - [ ] accesso-servizio
@@ -169,7 +181,6 @@
 - [Filament 5 Docs](https://filamentphp.com/docs/5.x/)
 
 ---
-
 **Stato**: ✅ **28% COMPLETATO (11/39)**  
 **Categorie Complete**: **2/8 (Generali, Amministrazione)**  
 **Prossima Sessione**: **Categoria Novità + Servizi**  

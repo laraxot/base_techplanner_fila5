@@ -1,3 +1,15 @@
+---
+title: "phpstan corrections january"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan corrections january"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Corrections - Tenant Module - Gennaio 2025
 
 **Data**: 2025-01-10
@@ -5,7 +17,6 @@
 **Errori Risolti**: 1
 
 ---
-
 ## 🔧 Correzioni Implementate
 
 ### TenantService - Missing getConfigNames() Method
@@ -41,19 +52,8 @@ public static function getConfigNames(): array
 ## 📚 Riferimenti
 
 - [Tenant Configuration Documentation](./configuration.md)
-<<<<<<< HEAD
 - [Service Locator Pattern](../../xot/docs/service-locator-pattern.md)
 
 ---
 
-=======
->>>>>>> 6ed19256f (.)
-- [Service Locator Pattern](../../Xot/docs/service-locator-pattern.md)
-
----
-
 *Ultimo aggiornamento: 2025-01-10*
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-10*
-=======
->>>>>>> 6ed19256f (.)

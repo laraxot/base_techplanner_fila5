@@ -1,6 +1,17 @@
+---
+title: "phpstan complete fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan complete fixes"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Complete Fixes 2025 - Gdpr Module
 
-**Data**: 2025-01-27
 **Status**: ✅ **COMPLETATO CON SUCCESSO**
 **Livello PHPStan**: 10
 **Errori**: 0
@@ -35,11 +46,7 @@ Questo documento descrive la correzione completa di tutti gli errori PHPStan nel
 
 ## ✅ Risultato Finale
 ```
-<<<<<<< HEAD
 Note: Using configuration file phpstan.neon.
-=======
-Note: Using configuration file /var/www/_bases/base_techplanner_fila4_mono/laravel/phpstan.neon.
->>>>>>> 6ed19256f (.)
 
 [OK] No errors
 ```
@@ -61,12 +68,6 @@ Note: Using configuration file /var/www/_bases/base_techplanner_fila4_mono/larav
 - Nessun warning o errore di tipo rimanente
 
 ---
-**Documento creato**: 2025-01-27
-<<<<<<< HEAD
 **Documento creato**: [DATE]
 **Stato**: ✅ COMPLETATO
 **Prossima revisione**: Con necessità
-=======
-**Stato**: ✅ COMPLETATO
-**Prossima revisione**: Con necessità
->>>>>>> 6ed19256f (.)

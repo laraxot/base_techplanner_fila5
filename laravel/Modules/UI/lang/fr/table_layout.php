@@ -3,11 +3,24 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
+        'list' => [
+            'label' => 'Liste',
+            'icon' => 'heroicon-o-list-bullet',
+            'color' => 'primary',
+            'description' => 'Liste',
+        ],
+        'grid' => [
+            'label' => 'Grille',
+            'icon' => 'heroicon-o-squares-2x2',
+            'color' => 'secondary',
+            'description' => 'Grille',
+        ],
+    ],
     'actions' => [
         'toggle' => [
             'label' => 'Basculer la disposition',
             'tooltip' => 'Basculer entre la vue liste et la vue grille',
-<<<<<<< HEAD
             'helper_text' => 'Changer le type d\'affichage',
         ],
     ],
@@ -22,9 +35,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
-            'helper_text' => "Changer le type d'affichage",
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

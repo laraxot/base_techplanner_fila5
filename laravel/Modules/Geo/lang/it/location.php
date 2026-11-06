@@ -15,7 +15,6 @@ return [
         'icon' => 'ui-geo-location',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -76,18 +75,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Nome',
-        'address' => 'Indirizzo',
-        'city' => 'Città',
-        'province' => 'Provincia',
-        'postal_code' => 'CAP',
-        'country' => 'Paese',
-        'latitude' => 'Latitudine',
-        'longitude' => 'Longitudine',
-        'type' => 'Tipo',
-        'status' => 'Stato',
->>>>>>> 6ed19256f (.)
     ],
     'types' => [
         'business' => 'Attività',
@@ -100,9 +87,6 @@ return [
         'get_directions' => 'Ottieni Indicazioni',
         'copy_coordinates' => 'Copia Coordinate',
     ],
-<<<<<<< HEAD
     'label' => 'Location',
     'plural_label' => 'Location (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -24,10 +24,7 @@ return [
             'label' => 'ID',
             'tooltip' => 'Identificativo univoco del ruolo',
             'helper_text' => 'Identificativo numerico univoco del ruolo nel sistema',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'Nome Ruolo',
@@ -41,30 +38,20 @@ return [
                 'min' => 'Il nome deve essere di almeno :min caratteri',
                 'max' => 'Il nome non può superare i :max caratteri',
             ],
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'placeholder' => 'Seleziona la guardia',
             'tooltip' => 'Nome della guardia per questo ruolo, es. "web"',
             'helper_text' => 'Sistema di autenticazione utilizzato per questo ruolo',
-<<<<<<< HEAD
             'help' => 'Specifica il sistema di autenticazione (web, api, ecc.]',
-=======
-            'help' => 'Specifica il sistema di autenticazione (web, api, ecc.)',
->>>>>>> 6ed19256f (.)
             'options' => [
                 'web' => 'Web',
                 'api' => 'API',
                 'sanctum' => 'Sanctum',
             ],
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -72,19 +59,13 @@ return [
             'tooltip' => 'Permessi associati a questo ruolo',
             'helper_text' => 'Elenco dei permessi specifici assegnati a questo ruolo',
             'help' => 'Seleziona i permessi che questo ruolo può esercitare',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'users_count' => [
             'label' => 'Numero Utenti',
             'tooltip' => 'Numero di utenti assegnati a questo ruolo',
             'helper_text' => 'Conteggio degli utenti che attualmente hanno questo ruolo assegnato',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
@@ -92,28 +73,19 @@ return [
             'tooltip' => 'Descrizione dettagliata del ruolo e delle sue funzioni',
             'helper_text' => 'Testo descrittivo che spiega lo scopo e le responsabilità del ruolo',
             'help' => 'Fornisci una descrizione chiara delle funzioni del ruolo',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => 'Data di creazione del ruolo',
             'helper_text' => 'Data e ora in cui il ruolo è stato creato nel sistema',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => 'Data dell\'ultima modifica del ruolo',
             'helper_text' => 'Data e ora dell\'ultimo aggiornamento del ruolo',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'team_id' => [
             'label' => 'ID Team',
@@ -121,10 +93,7 @@ return [
             'tooltip' => 'Team associato al ruolo',
             'helper_text' => 'Team specifico al quale questo ruolo appartiene',
             'help' => 'Seleziona il team per cui questo ruolo è valido',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'values' => [
             'label' => 'Valori',
@@ -141,22 +110,16 @@ return [
                 'true' => 'Sì',
                 'false' => 'No',
             ],
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'team' => [
             'name' => [
                 'label' => 'team.name',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -332,11 +295,23 @@ return [
         ],
         'createAnother' => [
             'tooltip' => 'createAnother',
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
         ],
         'submit' => [
             'tooltip' => 'submit',
             'icon' => 'submit',
             'label' => 'submit',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'resetColumnManager' => [
+            'label' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'tooltip' => 'resetColumnManager',
         ],
     ],
     'sections' => [
@@ -434,10 +409,6 @@ return [
         'editor' => 'Editor',
         'user' => 'Utente',
     ],
-    'label' => 'role',
-<<<<<<< HEAD
+    'label' => 'Ruolo',
     'plural_label' => 'Role (Plurale)',
-=======
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

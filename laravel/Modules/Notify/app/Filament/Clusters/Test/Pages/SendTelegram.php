@@ -1,11 +1,10 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://medium.com/modulr/send-telegram-notifications-with-laravel-9-342cc87b406
  * @see https://laravel-notification-channels.com/telegram/#usage
  */
-
-declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Clusters\Test\Pages;
 
@@ -14,11 +13,6 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
-<<<<<<< HEAD
-=======
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
->>>>>>> 6ed19256f (.)
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -29,33 +23,24 @@ use Modules\Notify\Filament\Clusters\Test;
 use Modules\Notify\Notifications\TelegramNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use NotificationChannels\Telegram\TelegramMessage;
 use Telegram\Bot\Laravel\Facades\Telegram;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
  * @property Schema $emailForm
  */
 class SendTelegram extends XotBasePage
 {
-=======
- * @property \Filament\Schemas\Schema $emailForm
- */
-class SendTelegram extends XotBasePage implements HasForms
-{
-    use InteractsWithForms;
+    use SuperAdminOnlyTrait;
 
->>>>>>> 6ed19256f (.)
     // use NavigationLabelTrait;
 
+    /** @var array<string, mixed>|null */
     public ?array $emailData = [];
 
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
->>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 
@@ -81,15 +66,15 @@ class SendTelegram extends XotBasePage implements HasForms
                     // ->description('Update your account\'s profile information and email address.')
                     ->schema([
                         TextInput::make('recipient')->required(),
-                        RichEditor::make('body')->required(),
-                    ]),
-            ])
+                        RichEditor::make('body')->required()])])
             ->model($this->getUser())
             ->statePath('emailData');
     }
 
     public function sendEmail(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->emailForm->getState();
         Assert::string($token = config('services.telegram-bot-api.token'));
         $url = 'https://api.telegram.org/bot'.$token.'/getMe';
@@ -124,17 +109,16 @@ class SendTelegram extends XotBasePage implements HasForms
     protected function getForms(): array
     {
         return [
-            'emailForm',
-        ];
+            'emailForm'];
     }
 
+    /** @return array<string, Action> */
     protected function getEmailFormActions(): array
     {
         return [
-            Action::make('emailFormActions')
+            'submit' => Action::make('emailFormActions')
 
-                ->submit('emailFormActions'),
-        ];
+                ->submit('emailFormActions')];
     }
 
     protected function getUser(): Authenticatable&Model

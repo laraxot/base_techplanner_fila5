@@ -1,3 +1,15 @@
+---
+title: "business logic analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "business logic analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🏥 Business Logic Analysis - Progetto <nome progetto>
 
 ## 📋 Panoramica del Sistema
@@ -486,13 +498,7 @@ La documentazione deve essere mantenuta aggiornata in:
 4. **GraphQL**: API più flessibili per frontend moderni
 
 ---
-
-**Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 1.0.0
 **Status**: Production Ready
 **Business Logic**: Completa e documentata
-<<<<<<< HEAD
 **Architettura**: Modulare e scalabile
-=======
-**Architettura**: Modulare e scalabile
->>>>>>> 6ed19256f (.)

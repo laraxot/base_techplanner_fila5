@@ -1,12 +1,18 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: resolution-conflitti-subtitleservice
-canonical: ../../../Themes/docs/shared-components/conflict-resolution-subtitleservice.md
+issues: []
+discussions: []
+title: "Risoluzione Conflitti Git - SubtitleService.php"
+module: "Media"
+type: concept
+tags: [resolution, conflitti, subtitleservice]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "resolution conflitti subtitleservice"
+related:
+  - "./webm.md"
+status: superseded
+superseded_by: conflict-resolution-subtitleservice.md
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-subtitleservice.md
-=======
 # Risoluzione Conflitti Git - SubtitleService.php
 
 ## Intento
@@ -20,6 +26,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflict-res
 - Mantenimento dell'utilizzo di `tap($this->model)->update($up)` per garantire coerenza e robustezza.
 
 ## Collegamenti
-- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
-- [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
->>>>>>> 6ed19256f (.)
+- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
+- [Documentazione Conflitti Git nei Moduli](../../../../../docs/conflitti_git_moduli.md)

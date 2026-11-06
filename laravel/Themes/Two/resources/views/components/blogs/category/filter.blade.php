@@ -20,7 +20,7 @@ declare(strict_types=1);
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex flex-wrap gap-3 justify-center">
             @foreach($categories as $category)
-                <a href="{{ $category['id'] === 'all' ? '/it/blog' : '/it/blog?category=' . $category['slug'] }}" 
+                <a href="{{ $category['id'] === 'all' ? route('blog') : route('blog', ['category' => $category['slug']]) }}" 
                    class="inline-flex items-center px-5 py-3 rounded-full font-medium transition-all duration-300 transform hover:scale-105 hover:-translate-y-1
                           {{ $active_category === $category['id'] 
                               ? 'bg-gradient-to-r from-blue-600 to-blue-700 text-white shadow-lg shadow-blue-500/30' 
@@ -55,7 +55,7 @@ declare(strict_types=1);
         {{-- Category Description --}}
         <div class="mt-6 text-center text-gray-600 text-sm max-w-3xl mx-auto">
             <p id="category-description">
-                Esplora tutti gli articoli del nostro blog per rimanere aggiornato sulle novità del settore.
+                {{ __('pub_theme::blog.category_filter.intro.message') }}
             </p>
         </div>
     </div>
@@ -64,13 +64,13 @@ declare(strict_types=1);
 <script>
     // Update category description based on active category
     const categoryDescriptions = {
-        'all': 'Esplora tutti gli articoli del nostro blog per rimanere aggiornato sulle novità del settore.',
-        'radioprotezione': 'Guide e approfondimenti sulla radioprotezione, sicurezza delle radiazioni e normative vigenti.',
-        'normativa': 'Aggiornamenti normativi, decreti e linee guida per i servizi di radioprotezione.',
-        'elettromedicali': 'Informazioni sugli elettromedicali, controllo qualità e certificazioni.',
-        'guide': 'Guide pratiche e tutorial per migliorare la gestione dei servizi radiologici.',
-        'veterinaria': 'Specificità della radioprotezione veterinaria e best practice.',
-        'novita': 'Ultime notizie, eventi e innovazioni nel campo della radioprotezione.'
+        'all': @js(__('pub_theme::blog.category_filter.intro.message')),
+        'radioprotezione': @js(__('pub_theme::blog.category_filter.radioprotection.message')),
+        'normativa': @js(__('pub_theme::blog.category_filter.regulations.message')),
+        'elettromedicali': @js(__('pub_theme::blog.category_filter.electromedical.message')),
+        'guide': @js(__('pub_theme::blog.category_filter.guides.message')),
+        'veterinaria': @js(__('pub_theme::blog.category_filter.veterinary.message')),
+        'novita': @js(__('pub_theme::blog.category_filter.news.message'))
     };
     
     // Simple interactivity for category selection

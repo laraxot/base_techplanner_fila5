@@ -14,7 +14,6 @@ return [
     'next' => 'Avanti',
     'confirm' => 'Conferma',
     'completed' => 'Completato',
-<<<<<<< HEAD
     'label' => 'Stepper',
     'plural_label' => 'Stepper (Plurale)',
     'fields' => [
@@ -48,6 +47,4 @@ return [
             'label' => 'Elimina Stepper',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -8,8 +8,14 @@ use Filament\Actions\Action;
 use Filament\Actions\BulkAction;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 
-trait HasTableFunctionsTrait
+/**
+ * @phpstan-ignore trait.unused
+ */
+trait HasTableFunctionsTrait // @phpstan-ignore trait.unused
 {
     /**
      * Get the table columns for the list view.
@@ -19,7 +25,7 @@ trait HasTableFunctionsTrait
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id'),
+            'id' => IDColumn::make('id'),
             'name' => TextColumn::make('name'),
             'created_at' => TextColumn::make('created_at')->dateTime(),
             'updated_at' => TextColumn::make('updated_at')->dateTime(),
@@ -36,12 +42,12 @@ trait HasTableFunctionsTrait
         return [
             'edit' => Action::make('edit')
                 ->label('Modifica')
-                ->url(fn ($record): string => route('filament.resources.'.$this->getResourceSlug().'.edit', [
+                ->url(fn (Model $record): string => route('filament.resources.'.$this->getResourceSlug().'.edit', [
                     'record' => $record,
                 ])),
             'delete' => Action::make('delete')
                 ->label('Elimina')
-                ->action(fn ($record) => $record->delete())
+                ->action(fn (Model $record) => $record->delete())
                 ->requiresConfirmation(),
         ];
     }
@@ -56,7 +62,7 @@ trait HasTableFunctionsTrait
         return [
             'delete' => BulkAction::make('delete')
                 ->label('Elimina selezionati')
-                ->action(fn ($records) => $records->each->delete())
+                ->action(fn (Collection $records) => $records->each->delete())
                 ->requiresConfirmation(),
         ];
     }

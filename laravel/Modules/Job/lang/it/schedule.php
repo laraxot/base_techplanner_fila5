@@ -25,158 +25,112 @@ return [
             'label' => 'Nome',
             'tooltip' => 'Inserisci il nome del job programmato',
             'placeholder' => 'Nome del job',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Seleziona il guardiano per il job',
             'placeholder' => 'Nome del guardiano',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
             'tooltip' => 'Assegna i permessi necessari al job',
             'placeholder' => 'Permessi',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome del responsabile',
             'placeholder' => 'Nome responsabile',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'tooltip' => 'Cognome del responsabile',
             'placeholder' => 'Cognome responsabile',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'command' => [
             'label' => 'Command',
             'tooltip' => 'Inserisci il comando da eseguire',
             'placeholder' => 'Comando',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'arguments' => [
             'label' => 'Arguments',
             'tooltip' => 'Specificare eventuali argomenti per il comando',
             'placeholder' => 'Argomenti',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'options' => [
             'label' => 'Options',
             'tooltip' => 'Inserisci eventuali opzioni per il comando',
             'placeholder' => 'Opzioni',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'expression' => [
             'label' => 'Cron Expression',
             'tooltip' => 'Imposta l\'espressione cron per la pianificazione',
             'placeholder' => 'Espressione Cron',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'log_filename' => [
             'label' => 'Log Filename',
             'tooltip' => 'Nome del file di log',
             'placeholder' => 'Log filename',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Stato corrente del job',
             'placeholder' => 'Stato',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'actions' => [
             'label' => 'Actions',
             'tooltip' => 'Azioni disponibili per il job',
             'icon' => 'action-icon',
             'color' => 'blue',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'run_in_background' => [
             'label' => 'Run in Background',
             'tooltip' => 'Esegui il job in background',
             'placeholder' => 'Run in background',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Data di creazione del job',
             'placeholder' => 'Data creazione',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Updated At',
             'tooltip' => 'Ultima data di aggiornamento',
             'placeholder' => 'Data aggiornamento',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'timezone' => [
             'label' => 'Fuso Orario',
             'tooltip' => 'Imposta il fuso orario per il job',
             'placeholder' => 'Fuso orario',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -197,17 +151,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [
@@ -217,11 +160,7 @@ return [
         'timezone' => 'All schedules will be executed in the timezone: ',
         'select' => 'Select a command',
         'custom' => 'Custom Command',
-<<<<<<< HEAD
         'custom-command-here' => 'Custom Command here (e.g. `cat /proc/cpuinfo` or `artisan db:migrate`]',
-=======
-        'custom-command-here' => 'Custom Command here (e.g. `cat /proc/cpuinfo` or `artisan db:migrate`)',
->>>>>>> 6ed19256f (.)
     ],
     'status' => [
         'active' => 'Active',
@@ -312,19 +251,11 @@ return [
     'cron' => [
         'help' => [
             'title' => 'Aiuto Espressioni Cron',
-<<<<<<< HEAD
             'minute' => 'Minuto (0-59]',
             'hour' => 'Ora (0-23]',
             'day_of_month' => 'Giorno del Mese (1-31]',
             'month' => 'Mese (1-12]',
             'day_of_week' => 'Giorno della Settimana (0-6]',
-=======
-            'minute' => 'Minuto (0-59)',
-            'hour' => 'Ora (0-23)',
-            'day_of_month' => 'Giorno del Mese (1-31)',
-            'month' => 'Mese (1-12)',
-            'day_of_week' => 'Giorno della Settimana (0-6)',
->>>>>>> 6ed19256f (.)
             'examples' => [
                 'every_minute' => '* * * * * - Ogni minuto',
                 'every_hour' => '0 * * * * - Ogni ora',
@@ -336,7 +267,6 @@ return [
     'model' => [
         'label' => 'schedule.model',
     ],
-<<<<<<< HEAD
     'label' => 'Schedule',
     'plural_label' => 'Schedule (Plurale)',
     'actions' => [
@@ -350,6 +280,20 @@ return [
             'label' => 'Elimina Schedule',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
+    'crud_widget' => [
+        'heading' => 'Attività pianificate',
+        'new_task' => 'Nuova attività',
+        'columns' => [
+            'description' => 'Descrizione',
+            'average_runtime' => 'Durata media',
+            'last_run' => 'Ultima esecuzione',
+            'next_run' => 'Prossima esecuzione',
+        ],
+        'average_runtime_value' => ':seconds secondi',
+        'run_now' => 'Esegui ora',
+        'empty' => 'Nessuna attività trovata.',
+    ],
+    'status_widget' => [
+        'heading' => 'Stato della schedulazione',
+    ],
 ];

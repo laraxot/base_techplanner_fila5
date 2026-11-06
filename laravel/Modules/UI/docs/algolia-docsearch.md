@@ -1,8 +1,16 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "algolia docsearch"
+issues: []
+discussions: []
 title: Algolia DocSearch
 description: Configure Algolia DocSearch with the Jigsaw docs starter template
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 # Algolia DocSearch {#algolia-docsearch}
@@ -72,25 +80,16 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione HEAD
 
 ## Collegamenti tra versioni di algolia-docsearch.md
-<<<<<<< HEAD
 * [algolia-docsearch.md](../../../chart/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../gdpr/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../xot/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../ui/docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/docs/algolia-docsearch.md)
-=======
->>>>>>> 6ed19256f (.)
-* [algolia-docsearch.md](../../../Chart/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../Gdpr/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../Xot/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../UI/docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../Cms/docs/algolia-docsearch.md)
 
 ### Versione Incoming
 
 ---
 ---
-title: Algolia DocSearch
 description: Configure Algolia DocSearch with the Jigsaw docs starter template
 extends: _layouts.documentation
 section: content
@@ -163,24 +162,12 @@ For more details, visit the [official Algolia DocSearch documentation.](https://
 ### Versione HEAD
 
 ## Collegamenti tra versioni di algolia-docsearch.md
-<<<<<<< HEAD
 * [algolia-docsearch.md](../../../chart/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../gdpr/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../xot/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../ui/project_docs/algolia-docsearch.md)
 * [algolia-docsearch.md](../../../cms/project_docs/algolia-docsearch.md)
-=======
->>>>>>> 6ed19256f (.)
-* [algolia-docsearch.md](../../../Chart/project_docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../Gdpr/project_docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../Xot/project_docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../UI/project_docs/algolia-docsearch.md)
-* [algolia-docsearch.md](../../../Cms/project_docs/algolia-docsearch.md)
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

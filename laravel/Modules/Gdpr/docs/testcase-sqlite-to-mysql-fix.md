@@ -1,3 +1,15 @@
+---
+title: "testcase sqlite to mysql fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testcase sqlite to mysql fix"
+issues: []
+discussions: []
+status: draft
+---
+
 # TestCase SQLite to MySQL Fix - Gdpr Module
 
 ## Problema Identificato
@@ -47,7 +59,6 @@ protected function setUp(): void
 5. **Viola indicazioni utente** - Opposto di ciò che richiesto
 
 ---
-
 ## Soluzione
 
 ### Pattern Corretto
@@ -133,14 +144,7 @@ Tutte queste devono essere migrate prima dei test nel setUp() come fatto sopra.
 
 ---
 
-**Data:** 2026-01-09
-<<<<<<< HEAD
 **Data:** [DATE]
 **Stato:** Pronto per implementazione
 **Righe:** 100 → ~40 (-60%)
 **Filosofia:** MySQL Production = MySQL Tests ✅
-=======
-**Stato:** Pronto per implementazione
-**Righe:** 100 → ~40 (-60%)
-**Filosofia:** MySQL Production = MySQL Tests ✅
->>>>>>> 6ed19256f (.)

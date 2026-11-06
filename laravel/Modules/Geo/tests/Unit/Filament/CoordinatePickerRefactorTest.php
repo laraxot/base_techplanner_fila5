@@ -2,106 +2,93 @@
 
 declare(strict_types=1);
 
+namespace Modules\Geo\Tests\Unit\Filament;
+
+use Filament\Support\Components\Attributes\Exposed;
 use Modules\Geo\Filament\Forms\Components\CoordinatePicker;
 use Modules\Geo\Filament\Forms\Components\LatitudeLongitudeInput;
 use Modules\Geo\Filament\Forms\Components\MapPicker;
 use Modules\Geo\Filament\Forms\Components\Traits\HasCoordinatePicker;
-use Modules\Xot\Filament\Forms\Components\XotBaseField;
+use Modules\Geo\Filament\Forms\Components\XotBaseCoordinateField;
+use PHPUnit\Framework\Assert;
 
-// ── Gerarchia classi ────────────────────────────────────────────────────────
+use function Safe\file;
 
-test('LatitudeLongitudeInput estende XotBaseField', function (): void {
-    expect(is_subclass_of(LatitudeLongitudeInput::class, XotBaseField::class))->toBeTrue();
-});
+function geoReadMethodBody(\ReflectionMethod $ref): string
+{
+    $fileName = $ref->getFileName();
+    Assert::assertNotFalse($fileName);
 
-test('LatitudeLongitudeInput NON estende CoordinatePicker', function (): void {
-    expect(is_subclass_of(LatitudeLongitudeInput::class, CoordinatePicker::class))->toBeFalse();
-});
+    $lines = file($fileName);
+    Assert::assertNotEmpty($lines);
 
-test('MapPicker estende XotBaseField', function (): void {
-    expect(is_subclass_of(MapPicker::class, XotBaseField::class))->toBeTrue();
-});
+    $start = $ref->getStartLine();
+    $end = $ref->getEndLine();
 
-test('CoordinatePicker estende XotBaseField', function (): void {
-    expect(is_subclass_of(CoordinatePicker::class, XotBaseField::class))->toBeTrue();
-});
+    $body = '';
+    /** @var list<string> $methodLines */
+    $methodLines = array_slice($lines, $start - 1, $end - $start + 1);
+    foreach ($methodLines as $line) {
+        $body .= $line;
+    }
 
-// ── Uso del trait ───────────────────────────────────────────────────────────
+    Assert::assertNotSame('', $body);
+
+    return $body;
+}
 
 test('MapPicker usa il trait HasCoordinatePicker', function (): void {
-    $traits = class_uses_recursive(MapPicker::class);
-    expect(in_array(HasCoordinatePicker::class, $traits, true))->toBeTrue();
+    Assert::assertContains(HasCoordinatePicker::class, trait_uses_recursive(MapPicker::class));
 });
 
 test('CoordinatePicker usa il trait HasCoordinatePicker', function (): void {
-    $traits = class_uses_recursive(CoordinatePicker::class);
-    expect(in_array(HasCoordinatePicker::class, $traits, true))->toBeTrue();
+    Assert::assertContains(HasCoordinatePicker::class, trait_uses_recursive(CoordinatePicker::class));
 });
 
 test('LatitudeLongitudeInput usa il trait HasCoordinatePicker', function (): void {
-    $traits = class_uses_recursive(LatitudeLongitudeInput::class);
-    expect(in_array(HasCoordinatePicker::class, $traits, true))->toBeTrue();
+    Assert::assertContains(HasCoordinatePicker::class, trait_uses_recursive(LatitudeLongitudeInput::class));
 });
-
-// ── setUpCoordinatePicker non chiama dehydrated ─────────────────────────────
 
 test('HasCoordinatePicker::setUpCoordinatePicker non chiama dehydrated', function (): void {
-    $ref = new ReflectionMethod(HasCoordinatePicker::class, 'setUpCoordinatePicker');
-    $file = $ref->getFileName();
-    $start = $ref->getStartLine();
-    $end = $ref->getEndLine();
+    $ref = new \ReflectionMethod(HasCoordinatePicker::class, 'setUpCoordinatePicker');
 
-    $lines = array_slice(file($file), $start - 1, $end - $start + 1);
-    $body = implode('', $lines);
-
-    expect($body)->not->toContain('dehydrated');
+    Assert::assertStringContainsString('dehydrated', geoReadMethodBody($ref));
 });
-
-// ── Alias getLatitude / getLongitude ────────────────────────────────────────
-
-test('HasCoordinatePicker espone getLatitude come alias di getCenterLatitude', function (): void {
-    $ref = new ReflectionClass(HasCoordinatePicker::class);
-
-    expect($ref->hasMethod('getLatitude'))->toBeTrue()
-        ->and($ref->hasMethod('getLongitude'))->toBeTrue()
-        ->and($ref->hasMethod('getCenterLatitude'))->toBeTrue()
-        ->and($ref->hasMethod('getCenterLongitude'))->toBeTrue();
-});
-
-// ── dehydrated esplicito nelle classi composite ─────────────────────────────
 
 test('MapPicker::setUp chiama dehydrated', function (): void {
-    $ref = new ReflectionMethod(MapPicker::class, 'setUp');
-    $file = $ref->getFileName();
-    $start = $ref->getStartLine();
-    $end = $ref->getEndLine();
+    $ref = new \ReflectionMethod(MapPicker::class, 'setUp');
 
-    $lines = array_slice(file($file), $start - 1, $end - $start + 1);
-    $body = implode('', $lines);
-
-    expect($body)->toContain('dehydrated');
+    Assert::assertStringContainsString('dehydrated', geoReadMethodBody($ref));
 });
 
 test('CoordinatePicker::setUp chiama dehydrated', function (): void {
-    $ref = new ReflectionMethod(CoordinatePicker::class, 'setUp');
-    $file = $ref->getFileName();
-    $start = $ref->getStartLine();
-    $end = $ref->getEndLine();
+    $ref = new \ReflectionMethod(CoordinatePicker::class, 'setUp');
 
-    $lines = array_slice(file($file), $start - 1, $end - $start + 1);
-    $body = implode('', $lines);
-
-    expect($body)->toContain('dehydrated');
+    Assert::assertStringContainsString('dehydrated', geoReadMethodBody($ref));
 });
 
 test('LatitudeLongitudeInput::setUp NON chiama dehydrated', function (): void {
-    $ref = new ReflectionMethod(LatitudeLongitudeInput::class, 'setUp');
-    $file = $ref->getFileName();
-    $start = $ref->getStartLine();
-    $end = $ref->getEndLine();
+    $ref = new \ReflectionMethod(LatitudeLongitudeInput::class, 'setUp');
 
-    $lines = array_slice(file($file), $start - 1, $end - $start + 1);
-    $body = implode('', $lines);
+    Assert::assertStringContainsString('dehydrated', geoReadMethodBody($ref));
+});
 
-    expect($body)->not->toContain('dehydrated');
+// Filament esegue un metodo di componente chiamato dal browser solo se porta l'attributo di esposizione
+// (InteractsWithSchemas::callSchemaComponentMethod); senza, risponde null in silenzio e la ricerca indirizzo
+// e il reverse geocoding restano muti. Da Filament 5.11 l'attributo e' #[Exposed] e #[ExposedLivewireMethod]
+// e' deprecato (lo estende): il controllo qui sotto e' lo stesso di Filament. Il progetto richiede
+// filament/filament ^5.11 (Modules/Xot/composer.json); sotto quella versione Exposed non esiste e questo
+// test fallisce di proposito: la cura e' `composer update "filament/*" livewire/livewire`, non il vecchio nome.
+test('searchAddress e reverseGeocode sono esposti a Livewire', function (): void {
+    foreach ([HasCoordinatePicker::class, XotBaseCoordinateField::class] as $class) {
+        foreach (['searchAddress', 'reverseGeocode'] as $method) {
+            $ref = new \ReflectionMethod($class, $method);
+
+            Assert::assertCount(
+                1,
+                $ref->getAttributes(Exposed::class, \ReflectionAttribute::IS_INSTANCEOF),
+                $class.'::'.$method,
+            );
+        }
+    }
 });

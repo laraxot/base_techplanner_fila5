@@ -1,15 +1,21 @@
+---
+title: "Employee - MODULES_OVERVIEW"
+module: Employee
+bmad: true
+status: active
+---
 # Moduli Laraxot - Panoramica Completa
 
 ## Moduli Identificati nel Progetto
 
-Il progetto base_techplanner_fila3_mono contiene i seguenti 14 moduli Laraxot:
+Il progetto base_workorder_fila3_mono contiene i seguenti 14 moduli Laraxot:
 
 ### 1. **Activity** (303 items)
 - **Scopo**: Gestione delle attività e tracking delle azioni utente
 - **Funzionalità**: Log delle attività, audit trail, monitoraggio comportamenti
 - **Integrazione**: Si integra con tutti gli altri moduli per tracciare le attività
 
-### 2. **Cms** (897 items) 
+### 2. **Cms** (897 items)
 - **Scopo**: Content Management System
 - **Funzionalità**: Gestione contenuti, pagine, articoli, media
 - **Integrazione**: Fornisce contenuti per il frontend e gestione editoriale

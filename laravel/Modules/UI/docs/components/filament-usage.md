@@ -1,3 +1,15 @@
+---
+title: "filament usage"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament usage"
+issues: []
+discussions: []
+status: draft
+---
+
 # Utilizzo dei Componenti Filament nel Progetto
 
 Questo documento serve come punto di riferimento centrale per l'utilizzo dei componenti Filament in tutto il progetto.
@@ -8,7 +20,6 @@ il progetto utilizza Filament come starterkit sia per il backend che per il fron
 ## Collegamenti alla Documentazione
 
 ### Documentazione Principale
-<<<<<<< HEAD
 - [Best Practices Components](../../../cms/docs/best-practices/components.md)
 - [Documentazione Ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
 - [Guida all'Implementazione dei Componenti](../../../cms/docs/components/readme.md)
@@ -17,16 +28,6 @@ il progetto utilizza Filament come starterkit sia per il backend che per il fron
 - [Documentazione Dettagliata del Footer](../../../../themes/one/docs/components/layouts/footer.md)
 - [Navigation Component](../../../../themes/one/docs/components/layouts/navigation.md)
 - [Form Components](../../../cms/docs/components/forms/readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Best Practices Components](../../../Cms/docs/best-practices/components.md)
-- [Documentazione Ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
-- [Guida all'Implementazione dei Componenti](../../../Cms/docs/components/README.md)
-
-### Implementazioni di Riferimento
-- [Documentazione Dettagliata del Footer](../../../../Themes/One/docs/components/layouts/footer.md)
-- [Navigation Component](../../../../Themes/One/docs/components/layouts/navigation.md)
-- [Form Components](../../../Cms/docs/components/forms/README.md)
 
 ## Componenti Disponibili
 
@@ -127,12 +128,6 @@ it('uses filament button component as link correctly', function () {
 - Mantenere la coerenza nell'utilizzo dei componenti in tutto il progetto
 
 ## Vedi Anche
-- [Tema One Documentation](../../../../Themes/One/docs/README.md)
-- [Filament Admin Panel](../../../Cms/docs/admin/filament.md)
-- [Linee Guida per il Web Design](../../../Cms/docs/webdesign/README.md)
-<<<<<<< HEAD
 - [Tema One Documentation](../../../../themes/one/docs/readme.md)
 - [Filament Admin Panel](../../../cms/docs/admin/filament.md)
 - [Linee Guida per il Web Design](../../../cms/docs/webdesign/readme.md)
-=======
->>>>>>> 6ed19256f (.)

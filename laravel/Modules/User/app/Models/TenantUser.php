@@ -6,21 +6,16 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\TenantUserFactory;
->>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\TenantUser.
  *
- * @method static Builder|TeamUser newModelQuery()
- * @method static Builder|TeamUser newQuery()
- * @method static Builder|TeamUser query()
+ * @method static Builder<static>|TenantUser newModelQuery()
+ * @method static Builder<static>|TenantUser newQuery()
+ * @method static Builder<static>|TenantUser query()
  *
- * @property int         $id
+ * @property int $id
  * @property string|null $tenant_id
  * @property string|null $user_id
  * @property Carbon|null $created_at
@@ -28,40 +23,33 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property string|null $created_by
  * @property string|null $updated_by
  *
- * @method static Builder|TeamUser whereCreatedAt($value)
- * @method static Builder|TeamUser whereCreatedBy($value)
- * @method static Builder|TeamUser whereCustomerId($value)
- * @method static Builder|TeamUser whereId($value)
- * @method static Builder|TeamUser whereRole($value)
- * @method static Builder|TeamUser whereTeamId($value)
- * @method static Builder|TeamUser whereUpdatedAt($value)
- * @method static Builder|TeamUser whereUpdatedBy($value)
- * @method static Builder|TeamUser whereUserId($value)
- * @method static Builder|TeamUser whereUuid($value)
+ * @method static Builder<static>|TenantUser whereCreatedAt($value)
+ * @method static Builder<static>|TenantUser whereCreatedBy($value)
+ * @method static Builder<static>|TenantUser whereCustomerId($value)
+ * @method static Builder<static>|TenantUser whereId($value)
+ * @method static Builder<static>|TenantUser whereRole($value)
+ * @method static Builder<static>|TenantUser whereTeamId($value)
+ * @method static Builder<static>|TenantUser whereUpdatedAt($value)
+ * @method static Builder<static>|TenantUser whereUpdatedBy($value)
+ * @method static Builder<static>|TenantUser whereUserId($value)
+ * @method static Builder<static>|TenantUser whereUuid($value)
  *
  * @property string|null $deleted_at
  * @property string|null $deleted_by
  *
- * @method static Builder|TenantUser whereDeletedAt($value)
- * @method static Builder|TenantUser whereDeletedBy($value)
- * @method static Builder|TenantUser whereTenantId($value)
+ * @method static Builder<static>|TenantUser whereDeletedAt($value)
+ * @method static Builder<static>|TenantUser whereDeletedBy($value)
+ * @method static Builder<static>|TenantUser whereTenantId($value)
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
-<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\TenantUserFactory factory($count = null, $state = [])
-=======
- * @method static TenantUserFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  *
- * @mixin \Eloquent
  */
 class TenantUser extends BasePivot
 {
-    use HasXotFactory;
-
     protected $connection = 'user';
 
     // public $incrementing = false;

@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.
@@ -12,17 +11,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Factory;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Str;
-=======
-use Exception;
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Facades\Artisan;
-use Illuminate\Support\Str;
-use InvalidArgumentException;
->>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -34,17 +26,19 @@ class GetFactoryAction
     use QueueableAction;
 
     /**
-     * Execute the function with the given model class.
+     * Resolve (or generate) the Eloquent factory for a model class.
      *
-<<<<<<< HEAD
-     * @param string $model_class the class name of the model
+     * Scopo: unico punto di risoluzione per HasXotFactory (runtime). Per PHPStan
+     * `Model::factory()` e' tipizzato dal resolver che `XotServiceProvider` registra con
+     * `Factory::guessFactoryNamesUsing()` e che usa `getFactoryClass()`: nei test non serve
+     * ripiegare su `ModelFactory::new()` ne' su `assert($x instanceof Model)`.
      *
-     * @throws \Exception Generating Factory [factory_class] press [F5] to refresh page [__LINE__][__FILE__]
-=======
-     * @param  string  $model_class  the class name of the model
+     * @template TModel of Model
      *
-     * @throws Exception Generating Factory [factory_class] press [F5] to refresh page [__LINE__][__FILE__]
->>>>>>> 6ed19256f (.)
+     * @param  class-string<TModel>  $model_class  the class name of the model
+     * @return Factory<TModel>
+     *
+     * @throws \Exception when the factory file cannot be loaded or generated
      */
     public function execute(string $model_class): Factory
     {
@@ -53,44 +47,34 @@ class GetFactoryAction
 
         $factory_class = $this->getFactoryClass($model_class);
 
+        if (! class_exists($factory_class)) {
+            $this->loadFactoryFromDisk($model_class);
+        }
+
         if (class_exists($factory_class)) {
-            /** @var Factory $factory */
-            $factory = $factory_class::new();
-
-            // Verifichiamo che il risultato sia effettivamente un'istanza di Factory
-            Assert::isInstanceOf(
-                $factory,
-                Factory::class,
-                "La classe {$factory_class}::new() non ha restituito un'istanza di Factory",
-            );
-
-            return $factory;
+            return $this->instantiateFactory($factory_class, $model_class);
         }
 
         $this->createFactory($model_class);
+        $this->loadFactoryFromDisk($model_class);
 
-        // Lancia un'eccezione con informazioni specifiche
-<<<<<<< HEAD
-        throw new \Exception(sprintf('Generating Factory [%s] press [F5] to refresh page [%d][%s]', $factory_class, __LINE__, class_basename($this)));
-=======
-        throw new Exception(sprintf(
-            'Generating Factory [%s] press [F5] to refresh page [%d][%s]',
+        Assert::classExists(
             $factory_class,
-            __LINE__,
-            class_basename($this),
-        ));
->>>>>>> 6ed19256f (.)
+            sprintf(
+                'Factory [%s] could not be loaded. If the file exists on disk, run composer dump-autoload. [%d][%s]',
+                $factory_class,
+                __LINE__,
+                class_basename($this),
+            ),
+        );
+
+        return $this->instantiateFactory($factory_class, $model_class);
     }
 
     /**
      * Get the factory class name for a model class.
      *
-<<<<<<< HEAD
-     * @param string $model_class The model class name
-=======
      * @param  string  $model_class  The model class name
->>>>>>> 6ed19256f (.)
-     *
      * @return string The fully qualified factory class name
      */
     public function getFactoryClass(string $model_class): string
@@ -115,31 +99,32 @@ class GetFactoryAction
     /**
      * Create a factory for the given model class.
      *
-<<<<<<< HEAD
-     * @param string $model_class The class name of the model to create the factory for
-=======
      * @param  string  $model_class  The class name of the model to create the factory for
->>>>>>> 6ed19256f (.)
      */
     public function createFactory(string $model_class): void
     {
         Assert::stringNotEmpty($model_class, 'Model class non può essere vuota');
         Assert::classExists($model_class, "La classe del modello {$model_class} non esiste");
 
+        $factory_class = $this->getFactoryClass($model_class);
+
+        if (class_exists($factory_class)) {
+            return;
+        }
+
+        $this->loadFactoryFromDisk($model_class);
+
+        if (is_file($this->getFactoryPath($model_class))) {
+            return;
+        }
+
         $model_name = class_basename($model_class);
 
         // Estraiamo il nome del modulo dal namespace della classe
         $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
 
-<<<<<<< HEAD
-        if ('' === $module_parts) {
-            throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
-=======
         if ($module_parts === '') {
-            throw new InvalidArgumentException(
-                "Impossibile determinare il nome del modulo dal namespace {$model_class}",
-            );
->>>>>>> 6ed19256f (.)
+            throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
         }
 
         $module_name = is_string($module_parts) ? $module_parts : ((string) $module_parts);
@@ -149,5 +134,66 @@ class GetFactoryAction
         $artisan_params = ['name' => $model_name, 'module' => $module_name];
 
         Artisan::call($artisan_cmd, $artisan_params);
+
+        $this->loadFactoryFromDisk($model_class);
+    }
+
+    /**
+     * Percorso fisico della factory per il modello.
+     */
+    public function getFactoryPath(string $model_class): string
+    {
+        $module_parts = Str::of($model_class)->between('Modules\\', '\Models\\');
+
+        if ($module_parts === '') {
+            throw new \InvalidArgumentException("Impossibile determinare il nome del modulo dal namespace {$model_class}");
+        }
+
+        $module_name = is_string($module_parts) ? $module_parts : ((string) $module_parts);
+        $model_name = class_basename($model_class);
+
+        return module_path($module_name, 'database/factories/'.$model_name.'Factory.php');
+    }
+
+    /**
+     * Carica la factory da disco quando il file esiste ma non è ancora autoloadata.
+     */
+    public function loadFactoryFromDisk(string $model_class): void
+    {
+        $factory_class = $this->getFactoryClass($model_class);
+
+        if (class_exists($factory_class)) {
+            return;
+        }
+
+        $factory_path = $this->getFactoryPath($model_class);
+
+        if (! is_file($factory_path)) {
+            return;
+        }
+
+        require_once $factory_path;
+    }
+
+    /**
+     * @template TModel of Model
+     *
+     * @param  class-string  $factory_class
+     * @param  class-string<TModel>  $model_class
+     * @return Factory<TModel>
+     */
+    private function instantiateFactory(string $factory_class, string $model_class): Factory
+    {
+        Assert::classExists($model_class, "La classe del modello {$model_class} non esiste");
+
+        $factory = $factory_class::new();
+
+        Assert::isInstanceOf(
+            $factory,
+            Factory::class,
+            "La classe {$factory_class}::new() non ha restituito un'istanza di Factory",
+        );
+
+        return $factory;
     }
 }

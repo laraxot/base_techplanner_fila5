@@ -1,3 +1,28 @@
+---
+title: "🔄 Migrazione da Filament 3 a Filament 4"
+type: concept
+tags: [filament4, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament4-migration 🔄 migrazione da filament 3 a filament 4"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # 🔄 Migrazione da Filament 3 a Filament 4
 
 ## Panoramica
@@ -10,11 +35,7 @@ Questo documento descrive le modifiche apportate durante la migrazione da Filame
 
 **Problema**: Dopo la migrazione, il logo appariva due volte nella pagina di login (`/admin/login`).
 
-<<<<<<< HEAD
 **Causa**: 
-=======
-**Causa**:
->>>>>>> 6ed19256f (.)
 - Filament 4 ha cambiato la struttura delle pagine di autenticazione
 - Il sistema aveva sia il logo nativo di Filament che un logo personalizzato
 - La configurazione del pannello non era aggiornata per Filament 4
@@ -28,11 +49,7 @@ Questo documento descrive le modifiche apportate durante la migrazione da Filame
 
 **Problema**: Gli input del form di login non erano visibili correttamente.
 
-<<<<<<< HEAD
 **Causa**: 
-=======
-**Causa**:
->>>>>>> 6ed19256f (.)
 - Stili CSS non compatibili tra Filament 3 e 4
 - Struttura HTML cambiata in Filament 4
 
@@ -97,11 +114,7 @@ class Login extends \Filament\Auth\Pages\Login
     use HasRoutes;
 
     protected static string $routePath = 'newlogin';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * View personalizzata per la pagina di login.
      * Rimuove il logo duplicato e migliora il layout.
@@ -222,8 +235,4 @@ Dopo la migrazione:
 - Mantenere aggiornata la documentazione per future migrazioni
 - Testare sempre le pagine di autenticazione dopo aggiornamenti
 - Utilizzare i componenti nativi di Filament quando possibile
-<<<<<<< HEAD
 - Seguire le best practices per la personalizzazione
-=======
-- Seguire le best practices per la personalizzazione
->>>>>>> 6ed19256f (.)

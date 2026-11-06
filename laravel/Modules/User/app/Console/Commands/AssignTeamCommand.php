@@ -5,38 +5,22 @@ declare(strict_types=1);
 namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
-use Illuminate\Support\Collection;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Datas\XotData;
+use Webmozart\Assert\Assert;
 
 use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\text;
-
-use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
-<<<<<<< HEAD
-=======
-use Symfony\Component\Console\Input\InputOption;
->>>>>>> 6ed19256f (.)
-use Webmozart\Assert\Assert;
 
 class AssignTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $name = 'user:assign-team';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $description = 'Assign a team to user';
 
@@ -51,13 +35,12 @@ class AssignTeamCommand extends Command
     {
         $xot = XotData::make();
         $email = text('email ?');
-        $user_class = $xot->getUserClass();
-        /** @var UserContract */
         $user = XotData::make()->getUserByEmail($email);
+        Assert::isInstanceOf($user, UserContract::class);
 
         $teamClass = $xot->getTeamClass();
 
-        /** @var array<int|string, string>|Collection<int|string, string> */
+        /** @var array<int|string, string> $opts */
         $opts = $teamClass::pluck('name', 'id')->toArray();
 
         $rows = multiselect(
@@ -72,7 +55,7 @@ class AssignTeamCommand extends Command
             // }
         );
 
-        $user->teams()->sync($rows);
+        $user->membershipTeams()->sync($rows);
         /*
          * foreach ($rows as $row) {
          * $role = Role::firstOrCreate(['name' => $row]);
@@ -81,7 +64,7 @@ class AssignTeamCommand extends Command
          */
         $this->info('Teams :'.implode(', ', $rows).' assigned to '.$email);
 
-        $rows = $user->teams()->get()->toArray();
+        $rows = $user->membershipTeams()->get()->toArray();
 
         if (\count($rows) > 0) {
             Assert::isArray($rows[0]);
@@ -97,7 +80,6 @@ class AssignTeamCommand extends Command
         }
     }
 
-<<<<<<< HEAD
     /*
      * Get the console command options.
      */
@@ -107,15 +89,4 @@ class AssignTeamCommand extends Command
     //        ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
     //    ];
     // }
-=======
-    /**
-     * Get the console command options.
-     */
-    protected function getOptions(): array
-    {
-        return [
-            ['example', null, InputOption::VALUE_OPTIONAL, 'An example option.', null],
-        ];
-    }
->>>>>>> 6ed19256f (.)
 }

@@ -2,11 +2,17 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
+namespace Modules\Media\Tests\Unit\Actions;
+
+uses(\Modules\Media\Tests\TestCase::class);
+
+use Filament\Forms\Components\FileUpload;
+use Modules\Media\Actions\GetAttachmentsSchemaAction;
 
 /**
  * Test that the action returns attachment schema correctly.
  */
+it('returns attachment schema', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice', 'contract', 'receipt'];
@@ -15,17 +21,18 @@ declare(strict_types=1);
     $form = $action->execute($attachments);
 
     // Assert
-    expect($form)->toBeArray()->toHaveCount(3);
+    expect($form)->toHaveCount(3);
 
     // Verifica che ogni attachment abbia un FileUpload component
-    foreach ($form as $component) {
-        expect($component)->toBeInstanceOf(FileUpload::class);
+    foreach ($form as $index => $component) {
+        expect($component->getName())->toBe($attachments[$index]);
     }
 });
 
 /**
  * Test that the schema has correct names.
  */
+it('has correct names', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice', 'contract'];
@@ -45,6 +52,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct validation.
  */
+it('has correct validation', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -69,12 +77,13 @@ declare(strict_types=1);
         'docx',
     ];
 
-    expect(collect($acceptedTypes)->contains(fn ($t) => in_array($t, $allowed, true)))->toBeTrue();
+    expect(collect($acceptedTypes)->contains(static fn (mixed $type): bool => is_string($type) && in_array($type, $allowed, true)))->toBeTrue();
 });
 
 /**
  * Test that the schema has correct storage.
  */
+it('has correct storage', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -90,6 +99,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct directory.
  */
+it('has correct directory', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -105,6 +115,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct visibility.
  */
+it('has correct visibility', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -120,6 +131,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct max size.
  */
+it('has correct max size', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -135,6 +147,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct multiple setting.
  */
+it('has correct multiple setting', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -150,6 +163,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct preview setting.
  */
+it('has correct preview setting', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -165,6 +179,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct download setting.
  */
+it('has correct download setting', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -180,6 +195,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct remove setting.
  */
+it('has correct remove setting', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -192,11 +208,13 @@ declare(strict_types=1);
     // FileUpload has deleteUploadedFileUsing method to control removal, but no direct isRemovable method
     // By default, Filament file uploads are removable unless specifically configured otherwise
     // We can verify that the component is a FileUpload
+    expect($component->isDeletable())->toBeTrue();
 });
 
 /**
  * Test that the schema has correct reorder setting.
  */
+it('has correct reorder setting', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -212,6 +230,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct labels.
  */
+it('has correct labels', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -228,6 +247,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct append setting.
  */
+it('has correct append setting', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -244,6 +264,7 @@ declare(strict_types=1);
 /**
  * Test that the schema has correct panel.
  */
+it('has correct panel', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -253,12 +274,13 @@ declare(strict_types=1);
 
     // Assert
     $component = $form[0];
-    // There's no getPanel method in FileUpload, so just check it's a FileUpload instance
+    expect($component->getPanelLayout())->toBe('compact');
 });
 
 /**
  * Test that the schema has correct help text.
  */
+it('has correct help text', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -268,13 +290,13 @@ declare(strict_types=1);
 
     // Assert
     $component = $form[0];
-    // FileUpload has helperText property but no getHelper method
-    // We can verify that the component is a FileUpload instance
+    expect($component->shouldPreserveFilenames())->toBeTrue();
 });
 
 /**
  * Test that the schema has correct placeholder.
  */
+it('has correct placeholder', function (): void {
     // Arrange
     $action = new GetAttachmentsSchemaAction;
     $attachments = ['invoice'];
@@ -288,258 +310,3 @@ declare(strict_types=1);
     $placeholder = $component->getPlaceholder();
     expect($placeholder)->toBeNull();
 });
-=======
-namespace Modules\Media\Tests\Unit\Actions;
-
-use Filament\Forms\Components\FileUpload;
-use Modules\Media\Actions\GetAttachmentsSchemaAction;
-use Tests\TestCase;
-
-class GetAttachmentsSchemaActionTest extends TestCase
-{
-    public function test_returns_attachment_schema(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice', 'contract', 'receipt'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        static::assertIsArray($form);
-        static::assertCount(3, $form);
-
-        // Verifica che ogni attachment abbia un FileUpload component
-        foreach ($form as $component) {
-            static::assertInstanceOf(FileUpload::class, $component);
-        }
-    }
-
-    public function test_schema_has_correct_names(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice', 'contract'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        static::assertSame('invoice', $form[0]->getName());
-        static::assertSame('contract', $form[1]->getName());
-    }
-
-    public function test_schema_has_correct_labels(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        static::assertSame('Invoice', $form[0]->getLabel());
-    }
-
-    public function test_schema_has_correct_validation(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertTrue($component->isRequired());
-        static::assertContains('pdf', $component->getAcceptedFileTypes());
-        static::assertContains('doc', $component->getAcceptedFileTypes());
-        static::assertContains('docx', $component->getAcceptedFileTypes());
-    }
-
-    public function test_schema_has_correct_storage(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertSame('attachments', $component->getDiskName());
-    }
-
-    public function test_schema_has_correct_directory(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertSame('temp', $component->getDirectory());
-    }
-
-    public function test_schema_has_correct_visibility(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertSame('public', $component->getVisibility());
-    }
-
-    public function test_schema_has_correct_max_size(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertSame(10 * 1024 * 1024, $component->getMaxSize()); // 10MB
-    }
-
-    public function test_schema_has_correct_multiple(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertFalse($component->isMultiple());
-    }
-
-    public function test_schema_has_correct_preview(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertTrue($component->isPreviewable());
-    }
-
-    public function test_schema_has_correct_download(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertTrue($component->isDownloadable());
-    }
-
-    public function test_schema_has_correct_remove(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertTrue($component->isRemovable());
-    }
-
-    public function test_schema_has_correct_reorder(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertFalse($component->isReorderable());
-    }
-
-    public function test_schema_has_correct_append(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertFalse($component->isAppendable());
-    }
-
-    public function test_schema_has_correct_panel(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertSame('Attachments', $component->getPanel());
-    }
-
-    public function test_schema_has_correct_help_text(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertStringContainsString('Upload invoice file', $component->getHelperText());
-    }
-
-    public function test_schema_has_correct_placeholder(): void
-    {
-        // Arrange
-        $action = new GetAttachmentsSchemaAction;
-        $attachments = ['invoice'];
-
-        // Act
-        $form = $action->execute($attachments);
-
-        // Assert
-        $component = $form[0];
-        static::assertStringContainsString('Select invoice file', $component->getPlaceholder());
-    }
-}
->>>>>>> 6ed19256f (.)

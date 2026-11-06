@@ -1,5 +1,24 @@
-<<<<<<< HEAD
-=======
+---
+title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
+type: concept
+tags: [phpstan, fixes, gennaio]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-gennaio- 🔧 phpstan fixes - modulo user - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -115,8 +134,7 @@ PHPStan aveva difficoltà nel riconoscere la sintassi method chaining e object i
 - **Object instantiation**: Separazione creazione da utilizzo
 
 ### **Benefici**
-- ✅ **PHPStan level 10**: Compatibilità completa
-
+- ✅ **PHPStan Level 9**: Compatibilità completa
 - ✅ **Leggibilità**: Codice più esplicito e chiaro
 - ✅ **Type Safety**: Mantenuta con type hints espliciti
 - ✅ **Debugging**: Più facile identificare problemi
@@ -214,31 +232,49 @@ $subject = Lang::get('user::email.password_reset_subject');
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
->>>>>>> 6ed19256f (.)
+- [README.md Modulo User](./README.md)
 - [README.md Modulo User](./README.md)
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
 
 ### **Risorse Esterne**
 - [Laravel Authentication](https://laravel.com/docs/authentication)
-- [PHPStan Method Chaining](https://phpstan.org/rules/phpstan/phpstan/rule/phpstan.method-chaining)
+- [PHPStan Method Chaining](https://phpstan.org/rules/phpstan/phpstan/rule/phpstan.rules.phpstan.method-chaining)
 - [Laravel Notifications](https://laravel.com/docs/notifications)
 
 ---
 
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 1.0
-**🐛 PHPStan Level**: 10 ✅
+**🐛 PHPStan Level**: 9 ✅
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
-<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-fixes-gennaio
 canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
+related:
+  - "./00-index.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio.md
-=======
->>>>>>> 6ed19256f (.)
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "phpstan fixes gennaio 2025"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "phpstan fixes gennaio 2025 user"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025.md

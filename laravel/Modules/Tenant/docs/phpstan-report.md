@@ -1,7 +1,15 @@
 ---
-module: theme
-topic: phpstan-report
-canonical: ../../../Themes/docs/shared-components/phpstan_report.txt
+title: "phpstan report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan report"
+issues: []
+discussions: []
+status: draft
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt
+
+ [OK] No errors        
+

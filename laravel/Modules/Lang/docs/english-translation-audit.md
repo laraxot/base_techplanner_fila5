@@ -1,16 +1,22 @@
-<<<<<<< HEAD
+---
+issues: []
+discussions: []
+title: "Audit Traduzioni Inglesi - <nome progetto>"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Audit Traduzioni Inglesi - <nome progetto>
 
 ## Panoramica
 
 Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei file di lingua del progetto <nome progetto>. Molti file nelle cartelle `lang/en/` contengono ancora testo in italiano che deve essere tradotto.
-=======
-# Audit Traduzioni Inglesi - SaluteOra
-
-## Panoramica
-
-Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei file di lingua del progetto SaluteOra. Molti file nelle cartelle `lang/en/` contengono ancora testo in italiano che deve essere tradotto.
->>>>>>> 6ed19256f (.)
 
 ## Problemi Identificati
 
@@ -20,25 +26,36 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
-<<<<<<< HEAD
    - Risolto: 2025-01-06
-=======
->>>>>>> 6ed19256f (.)
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
-<<<<<<< HEAD
    - Risolto: 2025-01-06
-=======
->>>>>>> 6ed19256f (.)
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
-<<<<<<< HEAD
+   - Risolto: 2025-01-06
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 
 ### File con Mix Italiano/Inglese
@@ -48,21 +65,23 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Conteneva: Placeholder in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-
-### File con Mix Italiano/Inglese
-
-1. **Modules/SaluteOra/lang/en/find_doctor_widget.php** ✅ CORRETTO
-   - Status: Tradotto completamente
-   - Conteneva: Placeholder in italiano
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
+   - Risolto: 2025-01-06
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
    - Risolto: 2025-01-06
-<<<<<<< HEAD
+   - Risolto: 2025-01-06
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
    - Convertito: Sintassi short array []
@@ -72,39 +91,40 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-   - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
-   - Convertito: Sintassi short array []
-
-3. **Modules/SaluteOra/lang/en/doctor.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
+   - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
    - Convertito: Sintassi short array []
    - Struttura: Allineata completamente con la versione italiana
 
-<<<<<<< HEAD
 4. **Modules/<nome progetto>/lang/de/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-4. **Modules/SaluteOra/lang/de/doctor.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
+   - Risolto: 2025-01-06
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
    - Convertito: Sintassi short array []
 
-<<<<<<< HEAD
 5. **Modules/<nome progetto>/lang/en/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
@@ -115,34 +135,22 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-5. **Modules/SaluteOra/lang/en/user_type_enum.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
-   - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
-   - Convertito: Sintassi short array [] + declare(strict_types=1)
-
-6. **Modules/SaluteOra/lang/de/user_type_enum.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
 ## File da Verificare
 
-<<<<<<< HEAD
 ### Modulo <nome progetto> - File con Testo Italiano in Cartelle EN/DE
-=======
-### Modulo SaluteOra - File con Testo Italiano in Cartelle EN/DE
->>>>>>> 6ed19256f (.)
 
 I seguenti file contengono ancora testo in italiano nelle cartelle `en/` e `de/` e necessitano di correzione:
 
 #### Cartella EN (21 file)
-<<<<<<< HEAD
 - `Modules/<nome progetto>/lang/en/admin.php`
 - `Modules/<nome progetto>/lang/en/doctor-resource.php`
 - `Modules/<nome progetto>/lang/en/find_doctor_and_appointment_widget.php`
@@ -192,57 +200,6 @@ I seguenti file contengono ancora testo in italiano nelle cartelle `en/` e `de/`
 - `Modules/<nome progetto>/lang/de/fields.php`
 - `Modules/<nome progetto>/lang/de/patient-resource.php`
 - `Modules/<nome progetto>/lang/de/user.php`
-=======
-- `Modules/SaluteOra/lang/en/admin.php`
-- `Modules/SaluteOra/lang/en/doctor-resource.php`
-- `Modules/SaluteOra/lang/en/find_doctor_and_appointment_widget.php`
-- `Modules/SaluteOra/lang/en/studio.php`
-- `Modules/SaluteOra/lang/en/doctor_availability.php`
-- `Modules/SaluteOra/lang/en/patient.php`
-- `Modules/SaluteOra/lang/en/medical_history.php`
-- `Modules/SaluteOra/lang/en/doctor_calendar.php`
-- `Modules/SaluteOra/lang/en/user-resource.php`
-- `Modules/SaluteOra/lang/en/filament.php`
-- `Modules/SaluteOra/lang/en/relation-managers.php`
-- `Modules/SaluteOra/lang/en/saluteora.php`
-- `Modules/SaluteOra/lang/en/doctor_availability_calendar.php`
-- `Modules/SaluteOra/lang/en/widgets.php`
-- `Modules/SaluteOra/lang/en/appointment_workflow.php`
-- `Modules/SaluteOra/lang/en/studio-resource.php`
-- `Modules/SaluteOra/lang/en/fields.php`
-- `Modules/SaluteOra/lang/en/patient-resource.php`
-- `Modules/SaluteOra/lang/en/user.php`
-
-#### Cartella DE (25 file)
-- `Modules/SaluteOra/lang/de/clinical_stats.php`
-- `Modules/SaluteOra/lang/de/admin.php`
-- `Modules/SaluteOra/lang/de/doctor_availabilities.php`
-- `Modules/SaluteOra/lang/de/actions.php`
-- `Modules/SaluteOra/lang/de/find_doctor_widget.php`
-- `Modules/SaluteOra/lang/de/doctor-resource.php`
-- `Modules/SaluteOra/lang/de/find-doctor-widget.php`
-- `Modules/SaluteOra/lang/de/find_doctor_and_appointment_widget.php`
-- `Modules/SaluteOra/lang/de/notifications.php`
-- `Modules/SaluteOra/lang/de/studio.php`
-- `Modules/SaluteOra/lang/de/doctor_availability.php`
-- `Modules/SaluteOra/lang/de/patient.php`
-- `Modules/SaluteOra/lang/de/doctor_calendar.php`
-- `Modules/SaluteOra/lang/de/user-resource.php`
-- `Modules/SaluteOra/lang/de/filament.php`
-- `Modules/SaluteOra/lang/de/success.php`
-- `Modules/SaluteOra/lang/de/appointment.php`
-- `Modules/SaluteOra/lang/de/relation-managers.php`
-- `Modules/SaluteOra/lang/de/saluteora.php`
-- `Modules/SaluteOra/lang/de/doctor_availability_manager.php`
-- `Modules/SaluteOra/lang/de/doctor_availability_calendar.php`
-- `Modules/SaluteOra/lang/de/opening_hours.php`
-- `Modules/SaluteOra/lang/de/widgets.php`
-- `Modules/SaluteOra/lang/de/appointment_workflow.php`
-- `Modules/SaluteOra/lang/de/studio-resource.php`
-- `Modules/SaluteOra/lang/de/fields.php`
-- `Modules/SaluteOra/lang/de/patient-resource.php`
-- `Modules/SaluteOra/lang/de/user.php`
->>>>>>> 6ed19256f (.)
 
 ### Altri Moduli - File da Verificare
 
@@ -256,31 +213,18 @@ I seguenti file sono stati identificati come contenenti testo in italiano e nece
 - `Modules/Notify/lang/en/dashboard.php`
 - `Modules/Notify/lang/en/telegram.php`
 
-<<<<<<< HEAD
 ### Modulo <nome progetto>
 - `Modules/<nome progetto>/lang/en/find_doctor_and_appointment_widget.php`
 - `Modules/<nome progetto>/lang/en/doctor_availability.php`
 - `Modules/<nome progetto>/lang/en/doctor_calendar.php`
 - `Modules/<nome progetto>/lang/en/doctor_availability_calendar.php`
-=======
-### Modulo SaluteOra
-- `Modules/SaluteOra/lang/en/find_doctor_and_appointment_widget.php`
-- `Modules/SaluteOra/lang/en/doctor_availability.php`
-- `Modules/SaluteOra/lang/en/doctor_calendar.php`
-- `Modules/SaluteOra/lang/en/doctor_availability_calendar.php`
->>>>>>> 6ed19256f (.)
 
 ### Altri Moduli
 - `Modules/Geo/lang/en/setting.php`
 - `Modules/Cms/lang/en/calendar.php`
 - `Modules/Cms/lang/en/txt.php`
-<<<<<<< HEAD
 - `Modules/<nome progetto>/lang/en/patient.php`
 - `Modules/<nome progetto>/lang/en/doctor.php`
-=======
-- `Modules/SaluteMo/lang/en/patient.php`
-- `Modules/SaluteMo/lang/en/doctor.php`
->>>>>>> 6ed19256f (.)
 - `Modules/Xot/lang/en/panel.php`
 - `Modules/Xot/lang/en/artisan-commands-manager.php`
 - `Modules/Xot/lang/en/extra.php`
@@ -425,38 +369,45 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< HEAD
-=======
 - [Regole Traduzioni](../../docs/translation-standards.md)
->>>>>>> 6ed19256f (.)
+- [Regole Traduzioni](../../docs/translation-standards.md)
+- [Regole Traduzioni](../../docs/translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< HEAD
 - [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
+- [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
+- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+**Ultimo aggiornamento**: [DATE]
+**Ultimo aggiornamento**: [DATE]
+**Ultimo aggiornamento**: [DATE]
 **Status**: In corso
 # Audit Traduzioni Inglesi - <nome progetto>
 
 ## Panoramica
 
 Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei file di lingua del progetto <nome progetto>. Molti file nelle cartelle `lang/en/` contengono ancora testo in italiano che deve essere tradotto.
-=======
-**Status**: In corso
-# Audit Traduzioni Inglesi - SaluteOra
-
-## Panoramica
-
-Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei file di lingua del progetto SaluteOra. Molti file nelle cartelle `lang/en/` contengono ancora testo in italiano che deve essere tradotto.
->>>>>>> 6ed19256f (.)
 
 ## Problemi Identificati
 
@@ -466,25 +417,36 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
-<<<<<<< HEAD
    - Risolto: 2025-01-06
-=======
->>>>>>> 6ed19256f (.)
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
 
 2. **Modules/Notify/lang/en/test_smtp.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
-<<<<<<< HEAD
    - Risolto: 2025-01-06
-=======
->>>>>>> 6ed19256f (.)
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
 
 3. **Modules/Notify/lang/en/send_email.php** ✅ CORRETTO
    - Status: Tradotto completamente
    - Conteneva: Tutto il testo in italiano
    - Risolto: 2025-01-06
-<<<<<<< HEAD
+   - Risolto: 2025-01-06
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
    - Risolto: 2025-01-06
 
 ### File con Mix Italiano/Inglese
@@ -494,21 +456,23 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Conteneva: Placeholder in italiano
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-
-### File con Mix Italiano/Inglese
-
-1. **Modules/SaluteOra/lang/en/find_doctor_widget.php** ✅ CORRETTO
-   - Status: Tradotto completamente
-   - Conteneva: Placeholder in italiano
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
+   - Risolto: 2025-01-06
 
 2. **Modules/UI/lang/en/opening_hours_field.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Mancavano molte voci presenti in italiano + sintassi array() invece di []
    - Risolto: 2025-01-06
-<<<<<<< HEAD
+   - Risolto: 2025-01-06
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
    - Convertito: Sintassi short array []
@@ -518,39 +482,40 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-   - Aggiunte: Tutte le voci mancanti (morning, afternoon, morning_label, afternoon_label, etc.)
-   - Convertito: Sintassi short array []
-
-3. **Modules/SaluteOra/lang/en/doctor.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Sintassi array() invece di [] + molte voci mancanti dalla versione italiana
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
+   - Risolto: 2025-01-06
    - Aggiunte: Tutte le voci mancanti (steps, fields, filters, actions, messages, sections, validation, empty_state, specialties)
    - Convertito: Sintassi short array []
    - Struttura: Allineata completamente con la versione italiana
 
-<<<<<<< HEAD
 4. **Modules/<nome progetto>/lang/de/doctor.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-4. **Modules/SaluteOra/lang/de/doctor.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Era completamente in italiano invece che in tedesco + sintassi array() invece di []
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
+   - Risolto: 2025-01-06
    - Tradotto: Tutto il contenuto in tedesco appropriato
    - Aggiunte: Tutte le voci mancanti dalla versione italiana
    - Convertito: Sintassi short array []
 
-<<<<<<< HEAD
 5. **Modules/<nome progetto>/lang/en/user_type_enum.php** ✅ CORRETTO
    - Status: Aggiornato completamente
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+   - Risolto: 2025-01-06
+   - Risolto: 2025-01-06
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
    - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
@@ -561,34 +526,22 @@ Questo documento traccia l'audit e la correzione delle traduzioni inglesi nei fi
    - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
    - Risolto: 2025-01-06
-=======
-5. **Modules/SaluteOra/lang/en/user_type_enum.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
+   - Risolto: [DATE]
    - Risolto: 2025-01-06
-   - Traduzioni: Complete in inglese (Doctor, Patient, Administrator)
-   - Convertito: Sintassi short array [] + declare(strict_types=1)
-
-6. **Modules/SaluteOra/lang/de/user_type_enum.php** ✅ CORRETTO
-   - Status: Aggiornato completamente
-   - Problemi: Testo in italiano + sintassi array() invece di [] + mancava declare(strict_types=1)
    - Risolto: 2025-01-06
->>>>>>> 6ed19256f (.)
    - Traduzioni: Complete in tedesco (Arzt, Patient, Administrator)
    - Convertito: Sintassi short array [] + declare(strict_types=1)
 
 ## File da Verificare
 
-<<<<<<< HEAD
 ### Modulo <nome progetto> - File con Testo Italiano in Cartelle EN/DE
-=======
-### Modulo SaluteOra - File con Testo Italiano in Cartelle EN/DE
->>>>>>> 6ed19256f (.)
 
 I seguenti file contengono ancora testo in italiano nelle cartelle `en/` e `de/` e necessitano di correzione:
 
 #### Cartella EN (21 file)
-<<<<<<< HEAD
 - `Modules/<nome progetto>/lang/en/admin.php`
 - `Modules/<nome progetto>/lang/en/doctor-resource.php`
 - `Modules/<nome progetto>/lang/en/find_doctor_and_appointment_widget.php`
@@ -638,57 +591,6 @@ I seguenti file contengono ancora testo in italiano nelle cartelle `en/` e `de/`
 - `Modules/<nome progetto>/lang/de/fields.php`
 - `Modules/<nome progetto>/lang/de/patient-resource.php`
 - `Modules/<nome progetto>/lang/de/user.php`
-=======
-- `Modules/SaluteOra/lang/en/admin.php`
-- `Modules/SaluteOra/lang/en/doctor-resource.php`
-- `Modules/SaluteOra/lang/en/find_doctor_and_appointment_widget.php`
-- `Modules/SaluteOra/lang/en/studio.php`
-- `Modules/SaluteOra/lang/en/doctor_availability.php`
-- `Modules/SaluteOra/lang/en/patient.php`
-- `Modules/SaluteOra/lang/en/medical_history.php`
-- `Modules/SaluteOra/lang/en/doctor_calendar.php`
-- `Modules/SaluteOra/lang/en/user-resource.php`
-- `Modules/SaluteOra/lang/en/filament.php`
-- `Modules/SaluteOra/lang/en/relation-managers.php`
-- `Modules/SaluteOra/lang/en/saluteora.php`
-- `Modules/SaluteOra/lang/en/doctor_availability_calendar.php`
-- `Modules/SaluteOra/lang/en/widgets.php`
-- `Modules/SaluteOra/lang/en/appointment_workflow.php`
-- `Modules/SaluteOra/lang/en/studio-resource.php`
-- `Modules/SaluteOra/lang/en/fields.php`
-- `Modules/SaluteOra/lang/en/patient-resource.php`
-- `Modules/SaluteOra/lang/en/user.php`
-
-#### Cartella DE (25 file)
-- `Modules/SaluteOra/lang/de/clinical_stats.php`
-- `Modules/SaluteOra/lang/de/admin.php`
-- `Modules/SaluteOra/lang/de/doctor_availabilities.php`
-- `Modules/SaluteOra/lang/de/actions.php`
-- `Modules/SaluteOra/lang/de/find_doctor_widget.php`
-- `Modules/SaluteOra/lang/de/doctor-resource.php`
-- `Modules/SaluteOra/lang/de/find-doctor-widget.php`
-- `Modules/SaluteOra/lang/de/find_doctor_and_appointment_widget.php`
-- `Modules/SaluteOra/lang/de/notifications.php`
-- `Modules/SaluteOra/lang/de/studio.php`
-- `Modules/SaluteOra/lang/de/doctor_availability.php`
-- `Modules/SaluteOra/lang/de/patient.php`
-- `Modules/SaluteOra/lang/de/doctor_calendar.php`
-- `Modules/SaluteOra/lang/de/user-resource.php`
-- `Modules/SaluteOra/lang/de/filament.php`
-- `Modules/SaluteOra/lang/de/success.php`
-- `Modules/SaluteOra/lang/de/appointment.php`
-- `Modules/SaluteOra/lang/de/relation-managers.php`
-- `Modules/SaluteOra/lang/de/saluteora.php`
-- `Modules/SaluteOra/lang/de/doctor_availability_manager.php`
-- `Modules/SaluteOra/lang/de/doctor_availability_calendar.php`
-- `Modules/SaluteOra/lang/de/opening_hours.php`
-- `Modules/SaluteOra/lang/de/widgets.php`
-- `Modules/SaluteOra/lang/de/appointment_workflow.php`
-- `Modules/SaluteOra/lang/de/studio-resource.php`
-- `Modules/SaluteOra/lang/de/fields.php`
-- `Modules/SaluteOra/lang/de/patient-resource.php`
-- `Modules/SaluteOra/lang/de/user.php`
->>>>>>> 6ed19256f (.)
 
 ### Altri Moduli - File da Verificare
 
@@ -702,31 +604,18 @@ I seguenti file sono stati identificati come contenenti testo in italiano e nece
 - `Modules/Notify/lang/en/dashboard.php`
 - `Modules/Notify/lang/en/telegram.php`
 
-<<<<<<< HEAD
 ### Modulo <nome progetto>
 - `Modules/<nome progetto>/lang/en/find_doctor_and_appointment_widget.php`
 - `Modules/<nome progetto>/lang/en/doctor_availability.php`
 - `Modules/<nome progetto>/lang/en/doctor_calendar.php`
 - `Modules/<nome progetto>/lang/en/doctor_availability_calendar.php`
-=======
-### Modulo SaluteOra
-- `Modules/SaluteOra/lang/en/find_doctor_and_appointment_widget.php`
-- `Modules/SaluteOra/lang/en/doctor_availability.php`
-- `Modules/SaluteOra/lang/en/doctor_calendar.php`
-- `Modules/SaluteOra/lang/en/doctor_availability_calendar.php`
->>>>>>> 6ed19256f (.)
 
 ### Altri Moduli
 - `Modules/Geo/lang/en/setting.php`
 - `Modules/Cms/lang/en/calendar.php`
 - `Modules/Cms/lang/en/txt.php`
-<<<<<<< HEAD
 - `Modules/<nome progetto>/lang/en/patient.php`
 - `Modules/<nome progetto>/lang/en/doctor.php`
-=======
-- `Modules/SaluteMo/lang/en/patient.php`
-- `Modules/SaluteMo/lang/en/doctor.php`
->>>>>>> 6ed19256f (.)
 - `Modules/Xot/lang/en/panel.php`
 - `Modules/Xot/lang/en/artisan-commands-manager.php`
 - `Modules/Xot/lang/en/extra.php`
@@ -871,18 +760,20 @@ return array(
 
 ## Collegamenti
 
-<<<<<<< HEAD
-=======
 - [Regole Traduzioni](../../docs/translation-standards.md)
->>>>>>> 6ed19256f (.)
+- [Regole Traduzioni](../../docs/translation-standards.md)
+- [Regole Traduzioni](../../docs/translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
+- [Regole Traduzioni](translation-standards.md)
 - [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-06
-<<<<<<< HEAD
 - [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
 - [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
 
@@ -890,6 +781,24 @@ return array(
 
 **Ultimo aggiornamento**: 2025-01-06
 **Status**: In corso
-=======
+**Ultimo aggiornamento**: [DATE]
 **Status**: In corso
->>>>>>> 6ed19256f (.)
+**Ultimo aggiornamento**: [DATE]
+**Status**: In corso
+**Ultimo aggiornamento**: [DATE]
+**Status**: In corso
+- [Best Practices Filament](../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+- [Regole Traduzioni](../../../docs/translation-standards.md)
+- [Regole Traduzioni](../../../../docs/translation-standards.md)
+- [Best Practices Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
+- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
+
+---
+
+**Ultimo aggiornamento**: 2025-01-06
+**Status**: In corso

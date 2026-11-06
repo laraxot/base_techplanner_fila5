@@ -4,28 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Filament\Resources\WorkHourResource\Pages;
 
-<<<<<<< HEAD
-=======
-use DateTimeInterface;
->>>>>>> 6ed19256f (.)
 use Filament\Actions\Action;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Forms\Components\DatePicker;
-<<<<<<< HEAD
 use Filament\Notifications\Notification;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Concerns\InteractsWithTable;
 use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
-=======
-use Filament\Forms\Components\Select;
-use Filament\Notifications\Notification;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Schema;
-use Filament\Tables\Columns\TextColumn;
->>>>>>> 6ed19256f (.)
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Facades\Auth;
@@ -42,62 +30,14 @@ use Override;
  * Main page for employee time tracking and work hours management.
  * Displays the time clock widget and work hours list with filtering options.
  */
-<<<<<<< HEAD
 class TimeClockPage extends XotBasePage implements HasTable
 {
     use InteractsWithTable;
 
-=======
-class TimeClockPage extends XotBasePage
-{
->>>>>>> 6ed19256f (.)
     protected static string $resource = WorkHourResource::class;
 
     protected string $view = 'employee::filament.pages.work-hours';
 
-<<<<<<< HEAD
-=======
-    public ?array $filters = [
-        'date_from' => null,
-        'date_to' => null,
-        'type' => null,
-        'status' => null,
-    ];
-
-    public function mount(): void
-    {
-        $this->form->fill([
-            'date_from' => now()->startOfMonth()->format('Y-m-d'),
-            'date_to' => now()->endOfMonth()->format('Y-m-d'),
-        ]);
-    }
-
-    #[Override]
-    public function form(Schema $schema): Schema
-    {
-        return $schema->components([
-            Grid::make(4)->schema([
-                DatePicker::make('date_from')
-                    ->label('From Date')
-                    ->default(now()->startOfMonth())
-                    ->maxDate(fn (callable $get) => $get('date_to') ?: now()),
-                DatePicker::make('date_to')
-                    ->label('To Date')
-                    ->default(now()->endOfMonth())
-                    ->minDate(fn (callable $get) => $get('date_from')),
-                Select::make('type')
-                    ->label('Type')
-                    ->options(WorkHourTypeEnum::class)
-                    ->placeholder('All Types'),
-                Select::make('status')
-                    ->label('Status')
-                    ->options(WorkHourStatusEnum::class)
-                    ->placeholder('All Statuses'),
-            ]),
-        ])->statePath('filters');
-    }
-
->>>>>>> 6ed19256f (.)
     public function table(Table $table): Table
     {
         return $table
@@ -110,11 +50,7 @@ class TimeClockPage extends XotBasePage
                     ->searchable(),
                 TextColumn::make('type')
                     ->badge()
-<<<<<<< HEAD
                     ->formatStateUsing(fn (string $state): string => __("employee::work_hour.fields.type.options.{$state}"))
-=======
-                    ->formatStateUsing(fn (string $state): string => __("employee::enums.work_hour_type.{$state}"))
->>>>>>> 6ed19256f (.)
                     ->color(fn (string $state): string => match ($state) {
                         WorkHourTypeEnum::CLOCK_IN->value => 'success',
                         WorkHourTypeEnum::CLOCK_OUT->value => 'danger',
@@ -124,18 +60,14 @@ class TimeClockPage extends XotBasePage
                     }),
                 TextColumn::make('status')
                     ->badge()
-<<<<<<< HEAD
                     ->formatStateUsing(fn (string $state): string => __("employee::work_hour.fields.status.options.{$state}"))
-=======
-                    ->formatStateUsing(fn (string $state): string => __("employee::enums.work_hour_status.{$state}"))
->>>>>>> 6ed19256f (.)
                     ->color(fn (string $state): string => match ($state) {
                         WorkHourStatusEnum::PENDING->value => 'warning',
                         WorkHourStatusEnum::APPROVED->value => 'success',
                         WorkHourStatusEnum::REJECTED->value => 'danger',
                         default => 'gray',
                     }),
-                TextColumn::make('location_name')->label('Location')->searchable(),
+                TextColumn::make('location_name')->label('Location')->searchable()->visibleFrom('md'),
                 TextColumn::make('notes')->label('Notes')->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('created_at')
                     ->label('Created')
@@ -144,27 +76,34 @@ class TimeClockPage extends XotBasePage
                     ->toggleable(isToggledHiddenByDefault: true),
             ])
             ->filters([
-<<<<<<< HEAD
                 Filter::make('date_range')
                     ->label('Date Range')
-                    ->form([
+                    ->schema([
                         DatePicker::make('date_from')
                             ->label('From'),
                         DatePicker::make('date_to')
                             ->label('To'),
                     ])
-                    ->query(fn (Builder $query, array $data): Builder => $query
-                        ->when(isset($data['date_from']) && $data['date_from'], fn (Builder $query): Builder => $query->whereDate('timestamp', '>=', (string) $data['date_from']))
-                        ->when(isset($data['date_to']) && $data['date_to'], fn (Builder $query): Builder => $query->whereDate('timestamp', '<=', (string) $data['date_to']))),
+                    ->query(function (Builder $query, array $data): Builder {
+                        $dateFrom = null;
+                        if (isset($data['date_from']) && is_string($data['date_from'])) {
+                            $dateFrom = $data['date_from'];
+                        }
+                        $dateTo = null;
+                        if (isset($data['date_to']) && is_string($data['date_to'])) {
+                            $dateTo = $data['date_to'];
+                        }
+
+                        return $query
+                            ->when($dateFrom, fn (Builder $query): Builder => $query->whereDate('timestamp', '>=', $dateFrom))
+                            ->when($dateTo, fn (Builder $query): Builder => $query->whereDate('timestamp', '<=', $dateTo));
+                    }),
                 SelectFilter::make('type')
                     ->label('Type')
                     ->options(WorkHourTypeEnum::class),
                 SelectFilter::make('status')
                     ->label('Status')
                     ->options(WorkHourStatusEnum::class),
-=======
-                // Additional filters can be added here
->>>>>>> 6ed19256f (.)
             ])
             ->recordActions([
                 Action::make('edit')
@@ -191,32 +130,13 @@ class TimeClockPage extends XotBasePage
             ]);
     }
 
+    /**
+     * @return Builder<WorkHour>
+     */
     protected function getTableQuery(): Builder
     {
         return WorkHour::query()
             ->where('employee_id', Auth::id())
-<<<<<<< HEAD
-=======
-            ->when($this->filters['date_from'] ?? null, function (Builder $query, mixed $date): Builder {
-                if (! ($date instanceof DateTimeInterface || is_string($date))) {
-                    return $query;
-                }
-
-                return $query->whereDate('timestamp', '>=', $date);
-            })
-            ->when($this->filters['date_to'] ?? null, function (Builder $query, mixed $date): Builder {
-                if (! ($date instanceof DateTimeInterface || is_string($date))) {
-                    return $query;
-                }
-
-                return $query->whereDate('timestamp', '<=', $date);
-            })
-            ->when($this->filters['type'] ?? null, fn (Builder $query, $type): Builder => $query->where('type', $type))
-            ->when($this->filters['status'] ?? null, fn (Builder $query, $status): Builder => $query->where(
-                'status',
-                $status,
-            ))
->>>>>>> 6ed19256f (.)
             ->latest('timestamp');
     }
 

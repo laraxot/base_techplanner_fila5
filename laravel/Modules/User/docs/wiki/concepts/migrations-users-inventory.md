@@ -1,6 +1,27 @@
+---
+title: "Inventario migration User"
+type: concept
+tags: [migrations, users, inventory]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrations-users-inventory inventario migration user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
+status: draft
+---
+
 # Inventario migration User
 
-Percorso attivo: `database/migrations/`. Copia parziale legacy: `Database/Migrations/` (8 file, non rimuovere senza audit).
+Percorso attivo: `database/migrations/`. ~~Copia legacy `Database/Migrations/`~~ rimossa 2026-06-18.
 
 Pattern dominante: `XotBaseMigration` con blocco **create** (`tableCreate`) + **update** (`tableUpdate`) nello stesso file.
 
@@ -12,7 +33,7 @@ Pattern dominante: `XotBaseMigration` con blocco **create** (`tableCreate`) + **
 | create | Solo creazione tabella |
 | update | Solo alter (es. colonna `lang` su `users`) |
 | altro | Schema builder diretto o file non standard |
-| non attivo | Suffisso `.fortify`, `.wip`, `.old` — Laravel non li carica |
+| non attivo | Suffisso `.fortify`, `.wip`, `.old`: Laravel non li carica |
 
 ## Duplicati noti (non archiviati)
 
@@ -107,7 +128,7 @@ Più file per la stessa tabella; da consolidare in futuro nella migration con ti
 
 ## `Database/Migrations/` (legacy)
 
-Duplicati di subset: `users`, `password_resets`, `socialite_user`, `device_user`, `permission`, `model_has_roles`. Allineare al percorso `database/migrations/` prima di qualsiasi rimozione.
+~~Rimossa 2026-06-18.~~ Canon: solo `database/migrations/` (minuscolo). Vedi [architecture-module-directory-structure.md](../../../../../../docs/wiki/bmad/architecture-module-directory-structure.md).
 
 ## Collegamenti
 

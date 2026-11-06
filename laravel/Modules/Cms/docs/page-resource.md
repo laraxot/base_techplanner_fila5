@@ -1,16 +1,20 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "page resource"
+issues: []
+discussions: []
 title: PageResource
 description: PageResource
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 ## 🔗 Collegamenti
-<<<<<<< HEAD
 - [Root – Gestione Contenuti](../../../../docs/project/page-content-management.md)
-=======
-- [Root – Gestione Contenuti](../../../project_docs/page-content-management.md)
->>>>>>> 6ed19256f (.)
 - [Blocchi di Contenuto](blocks.md)
 
 # PageResource {#page-resource}
@@ -29,8 +33,4 @@ La rotta index richiama tramite il themeComposer il metodo showPageContent con l
 ShowPageContent renderizza i content_blocks tramite il componente \Modules\UI\View\Components\Render\Blocks,
 che a sua volta renderizza la lista dei blocchi tramite il ciclo che è dentro /Modules/UI/resources/views/components/render/blocks/v1.blade.php
 
-<<<<<<< HEAD
 La pagina Themes/Sixteen/resources/views/pages/pages/[slug].blade.php serve a renderizzare le altre pagine. Bisogna visitare l'url /it/pages/slug
-=======
-La pagina Themes/Sixteen/resources/views/pages/pages/[slug].blade.php serve a renderizzare le altre pagine. Bisogna visitare l'url /it/pages/slug
->>>>>>> 6ed19256f (.)

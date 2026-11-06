@@ -1,9 +1,25 @@
+---
+title: "Conclusioni e Raccomandazioni per logout.blade.php"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "conclusioni e raccomandazioni per logout.blade.php user"
+---
+# Conclusioni e Raccomandazioni per logout.blade.php
+
+## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Auth Pages Implementation](./AUTH_PAGES_IMPLEMENTATION.md)
-- [Logout Blade Implementation](./LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Logout Blade Analysis](./LOGOUT_BLADE_ANALYSIS.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Logout Blade Implementation](./logout_blade_implementation.md)
+- [Logout Blade Analysis](./logout_blade_analysis.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Volt Folio Logout](./volt_folio_logout.md)
+- [Auth Pages Implementation](./auth_pages_implementation.md)
+- [Logout Blade Implementation](./logout_blade_implementation.md)
+- [Logout Blade Analysis](./logout_blade_analysis.md)
+- [Convenzioni Path](./path_conventions.md)
 
 ## Sintesi dell'Analisi
 
@@ -85,10 +101,3 @@ Se si desidera mantenere un'interazione utente durante il processo di logout, si
 ## Conclusione
 
 L'implementazione raccomandata rappresenta la soluzione più semplice, efficiente e coerente con le convenzioni del progetto SaluteOra per il logout degli utenti. Questa implementazione garantisce una buona esperienza utente e mantiene tutte le necessarie misure di sicurezza.
----
-module: theme
-topic: logout_blade_conclusions
-canonical: ../../../Themes/docs/shared-components/logout_blade_conclusions.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/logout_blade_conclusions.md

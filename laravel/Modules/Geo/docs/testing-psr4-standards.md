@@ -1,3 +1,15 @@
+---
+title: "testing psr4 standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing psr4 standards"
+issues: []
+discussions: []
+status: draft
+---
+
 # Standard PSR-4 per i Test in Laraxot <nome progetto>
 
 ## Panoramica
@@ -258,22 +270,8 @@ Prima di committare file di test:
 
 ## Collegamenti ai Moduli
 
-<<<<<<< HEAD
-- [Testing PSR-4 Compliance - Modulo Xot](../modules/xot/docs/testing-psr4-compliance.md)
+- [Testing PSR-4 Compliance - Modulo Xot](../../Xot/docs/testing-psr4-compliance.md)
 - [Testing Guide - Modulo <nome modulo>](../modules/<nome modulo>/docs/testing.md)
 
 ---
-
-=======
->>>>>>> 6ed19256f (.)
-- [Testing PSR-4 Compliance - Modulo Xot](../Modules/Xot/docs/testing-psr4-compliance.md)
-- [Testing Guide - Modulo <nome modulo>](../Modules/<nome modulo>/docs/testing.md)
-
----
-
-*Ultimo aggiornamento: 2025-01-06*
-<<<<<<< HEAD
 *Standard: PSR-4, PHPStan livello 9+, Laraxot conventions*
-=======
-*Standard: PSR-4, PHPStan livello 9+, Laraxot conventions*
->>>>>>> 6ed19256f (.)

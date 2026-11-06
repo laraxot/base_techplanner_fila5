@@ -1,3 +1,15 @@
+---
+title: "schedule test wrong schema"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule test wrong schema"
+issues: []
+discussions: []
+status: draft
+---
+
 # ScheduleBusinessLogicTest - Wrong Database Schema
 
 ## Problem Discovery
@@ -103,13 +115,6 @@ File `tests/Feature/ScheduleBusinessLogicTest.php` will be DELETED because:
 4. When/if these features are needed, write NEW tests against REAL schema
 
 ---
-
-**Date**: 2026-01-09
-<<<<<<< HEAD
 **Date**: [DATE]
 **Status**: Test File Deleted
 **Reason**: Complete schema mismatch - test was fiction, not reality
-=======
-**Status**: Test File Deleted
-**Reason**: Complete schema mismatch - test was fiction, not reality
->>>>>>> 6ed19256f (.)

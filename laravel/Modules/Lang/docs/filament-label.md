@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Gestione automatica delle label in Filament tramite LangServiceProvider"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Gestione automatica delle label in Filament tramite LangServiceProvider
 
 ## Funzionamento
@@ -44,8 +58,5 @@
 ## Collegamenti
 - [docs root](../../../../docs/actions.md)
 - [docs Xot](../../../Xot/docs/MODULE_NAMESPACE_RULES.md)
-<<<<<<< HEAD
 - [docs root](../../../../../docs/actions.md)
 - [docs Xot](../../../xot/docs/module_namespace_rules.md)
-=======
->>>>>>> 6ed19256f (.)

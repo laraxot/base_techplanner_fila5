@@ -1,3 +1,15 @@
+---
+title: "filament 4 migration fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 4 migration fixes"
+issues: []
+discussions: []
+status: draft
+---
+
 # Filament 3 to 4 Migration - Component Fixes
 
 **Date**: 2025-12-04
@@ -44,17 +56,10 @@ The application was using deprecated Filament 3 components that don't exist in F
 
 ## Files Modified
 
-<<<<<<< HEAD
 1. `Modules/Notify/resources/views/filament/pages/send-email.blade.php`
 2. `Modules/Notify/resources/views/filament/pages/send-sms.blade.php`
 3. `Modules/Notify/resources/views/filament/pages/send-push-notification.blade.php`
 4. `Modules/Notify/resources/views/filament/pages/send-email-parameters.blade.php`
-=======
-1. `/var/www/html/ptvx/laravel/Modules/Notify/resources/views/filament/pages/send-email.blade.php`
-2. `/var/www/html/ptvx/laravel/Modules/Notify/resources/views/filament/pages/send-sms.blade.php`
-3. `/var/www/html/ptvx/laravel/Modules/Notify/resources/views/filament/pages/send-push-notification.blade.php`
-4. `/var/www/html/ptvx/laravel/Modules/Notify/resources/views/filament/pages/send-email-parameters.blade.php`
->>>>>>> 6ed19256f (.)
 
 ## Verification
 

@@ -2,66 +2,73 @@
 
 declare(strict_types=1);
 
-namespace Modules\Cms\Tests\Unit\Models;
-
 use Modules\Cms\Models\Section;
+use Modules\Cms\Models\Traits\HasBlocks;
+use Modules\Tenant\Models\Traits\SushiToJsons;
+use PHPUnit\Framework\Assert;
 
 describe('Section Model', function (): void {
     test('section model can be instantiated', function (): void {
-        $model = new Section();
+        $model = new Section;
+        Assert::assertSame(Section::class, $model::class);
 
-        expect($model)->toBeInstanceOf(Section::class);
     });
 
     test('section model has expected fillable fields', function (): void {
-        $model = new Section();
+        $model = new Section;
 
         $fillable = $model->getFillable();
 
-        expect($fillable)->toContain('name')
-            ->and($fillable)->toContain('slug')
-            ->and($fillable)->toContain('blocks');
+        Assert::assertContains('name', $fillable);
+
+        Assert::assertContains('slug', $fillable);
+
+        Assert::assertContains('blocks', $fillable);
     });
 
     test('section model has expected casts', function (): void {
-        $model = new Section();
+        $model = new Section;
 
         $casts = $model->getCasts();
 
-        expect($casts)->toHaveKey('id')
-            ->and($casts)->toHaveKey('slug')
-            ->and($casts)->toHaveKey('blocks')
-            ->and($casts)->toHaveKey('name');
+        Assert::assertArrayHasKey('id', $casts);
+
+        Assert::assertArrayHasKey('slug', $casts);
+
+        Assert::assertArrayHasKey('blocks', $casts);
+
+        Assert::assertArrayHasKey('name', $casts);
     });
 
     test('section model has translatable fields', function (): void {
-        $model = new Section();
+        $model = new Section;
 
-        expect($model->translatable)->toContain('name')
-            ->and($model->translatable)->toContain('blocks');
+        Assert::assertContains('name', $model->translatable);
+
+        Assert::assertContains('blocks', $model->translatable);
     });
 
     test('section model uses HasBlocks trait', function (): void {
-        $model = new Section();
+        $model = new Section;
 
-        expect(in_array(Modules\Cms\Models\Traits\HasBlocks::class, class_uses_recursive($model)))->toBeTrue();
+        Assert::assertTrue(in_array(HasBlocks::class, class_uses_recursive($model)));
     });
 
     test('section model uses SushiToJsons trait', function (): void {
-        $model = new Section();
+        $model = new Section;
 
-        expect(in_array(Modules\Tenant\Models\Traits\SushiToJsons::class, class_uses_recursive($model)))->toBeTrue();
+        Assert::assertTrue(in_array(SushiToJsons::class, class_uses_recursive($model)));
     });
 
     test('section model has getRows method', function (): void {
-        $model = new Section();
+        $model = new Section;
 
-        expect(method_exists($model, 'getRows'))->toBeTrue();
+        Assert::assertContainsOnlyArray($model->getRows());
     });
 
     test('section model extends BaseModelLang', function (): void {
-        $model = new Section();
+        $model = new Section;
+        Assert::assertSame(Section::class, $model::class);
 
-        expect($model)->toBeInstanceOf(Modules\Cms\Models\BaseModelLang::class);
     });
 });

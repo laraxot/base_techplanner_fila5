@@ -1,3 +1,11 @@
+---
+title: "Activity Module Test Coverage"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity module test coverage activity"
+---
 # Activity Module Test Coverage
 
 ## Coverage Results
@@ -78,16 +86,14 @@ To run Activity module tests:
 ```
 
 To run with coverage:
-```bash
 ./vendor/bin/pest --coverage Modules/Activity/tests/
-```
 
 ---
 *Last updated: January 17, 2026*
----
 module: theme
 topic: coverage
 canonical: ../../../Themes/docs/shared-components/coverage.txt
----
 
 See canonical documentation: ../../../Themes/docs/shared-components/coverage.txt
+
+

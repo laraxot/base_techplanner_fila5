@@ -1,3 +1,15 @@
+---
+title: "resources"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resources"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risorse Filament
 
 ## Documentazione Dettagliata
@@ -59,8 +71,4 @@
 
 ## Collegamenti tra versioni di resources.md
 * [resources.md](docs/tecnico/filament/resources.md)
-* [resources.md](../../../UI/docs/filament/resources.md)
-<<<<<<< HEAD
 * [resources.md](../../../ui/docs/filament/resources.md)
-=======
->>>>>>> 6ed19256f (.)

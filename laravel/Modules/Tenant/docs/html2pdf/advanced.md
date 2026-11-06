@@ -1,12 +1,18 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: advanced
-canonical: ../../../../Themes/docs/shared-components/advanced-Modules.md
+issues: []
+discussions: []
+title: "Funzionalità Avanzate"
+module: "Tenant"
+type: concept
+tags: [advanced]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "advanced"
+related:
+  - "./phpstan-corrections-january.md"
+  - "../phpstan-corrections-january.md"
+status: draft
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/advanced-Modules.md
-=======
 # Funzionalità Avanzate
 
 Questa sezione copre funzionalità avanzate come la generazione di codici a barre, QR code, la creazione di segnalibri (bookmark), indici e altri metodi utili della libreria.
@@ -123,4 +129,3 @@ Imposta il titolo visibile nelle proprietà del file PDF.
 ```php
 $html2pdf->pdf->SetTitle('Il Mio Bel Documento');
 ```
->>>>>>> 6ed19256f (.)

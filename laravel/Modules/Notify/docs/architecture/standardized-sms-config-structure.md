@@ -1,3 +1,23 @@
+---
+title: "Struttura Standardizzata della Configurazione SMS"
+type: concept
+tags: [notify, docs, architecture, standardized, sms, config]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione architecture standardized sms config structure struttura standardizzata della configurazione sms frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - ../best-practices/naming-conventions.md
+status: draft
+---
 # Struttura Standardizzata della Configurazione SMS
 
 ## Introduzione
@@ -10,11 +30,7 @@ Questo documento definisce la struttura standardizzata del file di configurazion
 return [
     // Driver predefinito
     'default' => env('SMS_DRIVER', 'default_provider'),
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Parametri a livello di root
     'from' => env('SMS_FROM'),
     'debug' => env('SMS_DEBUG', false),
@@ -36,11 +52,7 @@ return [
         'enabled' => env('SMS_VALIDATION_ENABLED', true),
         'pattern' => env('SMS_VALIDATION_PATTERN', '/^\+[1-9]\d{1,14}$/'),
     ],
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Configurazione dei driver/provider
     'drivers' => [
         'provider1' => [
@@ -164,21 +176,8 @@ $debug = $config['drivers'][$driver]['debug'] ?? $config['debug'];
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Configurazione Netfun](./netfun_config_requirements.md)
+- [Configurazione Netfun](../netfun_config_requirements.md)
 - [Provider SMS Supportati](./notifications/sms_provider_configuration.md)
 
 ---
 
-=======
->>>>>>> 6ed19256f (.)
-- [Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
-- [Provider SMS Supportati](./notifications/SMS_PROVIDER_CONFIGURATION.md)
-
----
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-05-12*
-=======
-*Ultimo aggiornamento: 2025-05-12*
->>>>>>> 6ed19256f (.)

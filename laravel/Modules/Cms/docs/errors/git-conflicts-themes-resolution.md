@@ -1,3 +1,15 @@
+---
+title: "git conflicts themes resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git conflicts themes resolution"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitti Git nei Temi
 
 ## Descrizione del Problema
@@ -171,14 +183,10 @@ php artisan view:clear
 
 ## Collegamenti Correlati
 
-- [Documentazione Temi](../../temi.md)
-<<<<<<< HEAD
+- [Documentazione Temi](../temi.md)
 - [Gestione Conflitti Git](../../../../docs/git-conflicts-management.md)
-=======
-- [Gestione Conflitti Git](../../../docs/git-conflicts-management.md)
->>>>>>> 6ed19256f (.)
 - [Architettura CMS](../../architecture.md)
-- [Best Practices Sviluppo](../../best-practices.md)
+- [Best Practices Sviluppo](../best-practices.md)
 
 ## Changelog
 
@@ -187,10 +195,4 @@ php artisan view:clear
 - **2025-01-06**: Standardizzazione sui componenti Bootstrap Italia
 
 ---
-
-*Ultimo aggiornamento: 6 gennaio 2025*
 *Autore: Sistema di Risoluzione Conflitti Git*
-<<<<<<< HEAD
-*Autore: Sistema di Risoluzione Conflitti Git*
-=======
->>>>>>> 6ed19256f (.)

@@ -1,13 +1,11 @@
-<<<<<<< HEAD
-  - [README.md centrale](../../../docs/README.md)
 ---
-module: theme
-topic: model-states-best-practices
-canonical: ../../../Themes/docs/shared-components/model-states-best-practices-1.md
+title: "Best Practices per Model States e Transizioni Custom"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "best practices per model states e transizioni custom xot"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/model-states-best-practices-1.md
-=======
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom
@@ -19,6 +17,5 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-states
   - [ ] Tutte le chiamate a `transitionTo` forniscono i parametri richiesti
   - [ ] La documentazione delle transizioni specifica i parametri richiesti
 - **Collegamenti**:
-  - [Errori comuni nelle transizioni custom (SaluteOra)](../../SaluteOra/docs/model-states-errors.md)
+  - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
   - [README.md centrale](../../../docs/README.md)
->>>>>>> 6ed19256f (.)

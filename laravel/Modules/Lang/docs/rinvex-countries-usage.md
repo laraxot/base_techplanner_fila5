@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Rinvex Countries Usage in Lang Module"
+module: "Lang"
+type: concept
+tags: [filament4, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament4 migration"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Rinvex Countries Usage in Lang Module
 
 ## Overview
@@ -47,11 +61,7 @@ $oceaniaCountries = \Rinvex\Country\CountryLoader::where('geo.continent', ['OC' 
 
 ## Usage in NationalFlagSelect Component
 
-<<<<<<< HEAD
 The `NationalFlagSelect` component in `Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php` demonstrates practical usage:
-=======
-The `NationalFlagSelect` component in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php` demonstrates practical usage:
->>>>>>> 6ed19256f (.)
 
 ```php
 protected function getCountryOptions(): array
@@ -281,11 +291,7 @@ $oceaniaCountries = \Rinvex\Country\CountryLoader::where('geo.continent', ['OC' 
 
 ## Usage in NationalFlagSelect Component
 
-<<<<<<< HEAD
 The `NationalFlagSelect` component in `Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php` demonstrates practical usage:
-=======
-The `NationalFlagSelect` component in `/var/www/html/_bases/base_saluteora/laravel/Modules/Lang/app/Filament/Forms/Components/NationalFlagSelect.php` demonstrates practical usage:
->>>>>>> 6ed19256f (.)
 
 ```php
 protected function getCountryOptions(): array

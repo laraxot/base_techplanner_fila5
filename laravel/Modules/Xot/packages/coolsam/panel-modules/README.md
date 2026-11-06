@@ -1,3 +1,14 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+---
+
 <p align="center">
     <a href="https://github.com/savannabits/filament-modules/actions?query=workflow%3Arun-tests+branch%3A3.x"><img alt="Tests" src="https://img.shields.io/github/actions/workflow/status/savannabits/filament-modules/run-tests.yml?branch=3.x&label=tests&style=for-the-badge&logo=github"></a>
     <a href="https://github.com/savannabits/filament-modules/actions?query=workflow%fix-php-code-style-issues+branch%3A3.x"><img alt="Styling" src="https://img.shields.io/github/actions/workflow/status/savannabits/filament-modules/fix-php-code-style-issues.yml?branch=3.x&label=code%20style&style=for-the-badge&logo=github"></a>
@@ -11,11 +22,6 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
-<<<<<<< HEAD
-=======
-**NB: These docs are for v3, which only supports Filament 4. If you are using Filament
-
->>>>>>> 6ed19256f (.)
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
@@ -383,10 +389,7 @@ Modules is a FilamentPHP Plugin to enable easy integration with `nwidart/laravel
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 **NB: These docs are for v3, which only supports Filament 4. If you are using Filament
 
-<<<<<<< HEAD
 **NB: These docs are for v3, which only supports Filament 3. If you are using Filament
-=======
->>>>>>> 6ed19256f (.)
 v2, [see the documentation here](https://github.com/savannabits/filament-modules/tree/main#readme) to get started.**
 
 For example, if you have two modules (**Blog** and **Pos**), you should be able to have filament installed in each module with separate resources as below:
@@ -502,7 +505,4 @@ Please review [our security policy](../../security/policy) on how to report secu
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-<<<<<<< HEAD
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
-=======
->>>>>>> 6ed19256f (.)

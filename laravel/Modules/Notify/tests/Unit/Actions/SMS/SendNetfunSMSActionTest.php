@@ -5,92 +5,74 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Actions\SMS;
 
 use Modules\Notify\Actions\SMS\SendNetfunSMSAction;
-use Modules\Notify\Contracts\SMS\SmsActionContract;
 use Modules\Notify\Datas\SmsData;
+use Modules\Notify\Models\Contracts\SmsActionContract;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
+use ReflectionNamedType;
 use Spatie\QueueableAction\QueueableAction;
 
-describe('SendNetfunSMSAction', function () {
-    // Test strutturali - la classe richiede config() nel costruttore
-    it('has correct class definition', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
+use function Safe\json_encode;
 
-        expect($reflection->isInstantiable())->toBeTrue();
-    });
+uses(\Modules\Notify\Tests\TestCase::class);
+test('netfun sms action has the expected public contract', function (): void {
+    $reflection = new ReflectionClass(SendNetfunSMSAction::class);
+    $method = $reflection->getMethod('execute');
+    $parameters = $method->getParameters();
+    $parameterType = $parameters[0]->getType();
+    $returnType = $method->getReturnType();
 
-    it('implements SmsActionContract', function () {
-        $interfaces = class_implements(SendNetfunSMSAction::class);
+    Assert::assertTrue($reflection->implementsInterface(SmsActionContract::class));
+    Assert::assertContains(QueueableAction::class, $reflection->getTraitNames());
+    Assert::assertTrue($method->isPublic());
+    Assert::assertCount(1, $parameters);
+    Assert::assertInstanceOf(ReflectionNamedType::class, $parameterType);
+    Assert::assertSame(SmsData::class, $parameterType->getName());
+    Assert::assertInstanceOf(ReflectionNamedType::class, $returnType);
+    Assert::assertSame('array', $returnType->getName());
+});
 
-        expect($interfaces)->toContain(SmsActionContract::class);
-    });
+function invokeIsSuccessfulResponse(int $statusCode, string $statusTxt): bool
+{
+    $reflection = new ReflectionClass(SendNetfunSMSAction::class);
+    $method = $reflection->getMethod('isSuccessfulResponse');
+    $method->setAccessible(true);
 
-    it('uses QueueableAction trait', function () {
-        $traits = class_uses(SendNetfunSMSAction::class);
-        expect($traits)->toContain(QueueableAction::class);
-    });
+    /** @var SendNetfunSMSAction $instance */
+    $instance = $reflection->newInstanceWithoutConstructor();
 
-    it('has execute method with correct signature', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
-        $method = $reflection->getMethod('execute');
+    /** @var bool $result */
+    $result = $method->invoke($instance, $statusCode, $statusTxt);
 
-        expect($method->isPublic())->toBeTrue();
-        expect($method->getNumberOfParameters())->toBe(1);
-    });
+    return $result;
+}
 
-    it('execute accepts SmsData parameter', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
-        $method = $reflection->getMethod('execute');
-        $params = $method->getParameters();
+test('netfun sms response with http 200 and error 0 is treated as success, not logged as error', function (): void {
+    $statusTxt = json_encode([
+        'async' => true,
+        'error' => 0,
+        'credit' => 315848,
+        'sending_contacts_count' => 1,
+        'sending_batch_id' => '26263325060281687',
+    ]);
 
-        expect($params[0]->getType()?->getName())->toBe(SmsData::class);
-    });
+    Assert::assertTrue(invokeIsSuccessfulResponse(200, $statusTxt));
+});
 
-    it('execute returns array', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
-        $method = $reflection->getMethod('execute');
-        $returnType = $method->getReturnType();
+test('netfun sms response with error field set is treated as a real failure', function (): void {
+    $statusTxt = json_encode([
+        'async' => true,
+        'error' => 1,
+        'error_message' => 'Credito insufficiente',
+    ]);
 
-        expect($returnType?->getName())->toBe('array');
-    });
+    Assert::assertFalse(invokeIsSuccessfulResponse(200, $statusTxt));
+});
 
-    it('has required properties', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
+test('netfun sms response with non-2xx http status is treated as a real failure', function (): void {
+    Assert::assertFalse(invokeIsSuccessfulResponse(500, '{"error":0}'));
+});
 
-        expect($reflection->hasProperty('debug'))->toBeTrue();
-        expect($reflection->hasProperty('timeout'))->toBeTrue();
-        expect($reflection->hasProperty('defaultSender'))->toBeTrue();
-        expect($reflection->hasProperty('token'))->toBeTrue();
-        expect($reflection->hasProperty('endpoint'))->toBeTrue();
-        expect($reflection->hasProperty('vars'))->toBeTrue();
-    });
-
-    it('uses strict types', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
-        $filename = $reflection->getFileName();
-
-        expect($filename)->not->toBeNull();
-        $content = file_get_contents($filename);
-        expect($content)->toContain('');
-    });
-
-    it('has correct namespace', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
-
-        expect($reflection->getNamespaceName())->toBe('Modules\Notify\Actions\SMS');
-    });
-
-    it('has required imports', function () {
-        $filename = (new \ReflectionClass(SendNetfunSMSAction::class))->getFileName();
-        $content = file_get_contents($filename);
-
-        expect($content)->toContain('use GuzzleHttp\Client;');
-        expect($content)->toContain('use GuzzleHttp\Exception\ClientException;');
-        expect($content)->toContain('use Modules\Notify\Datas\SmsData;');
-        expect($content)->toContain('use Override;');
-    });
-
-    it('is final class', function () {
-        $reflection = new \ReflectionClass(SendNetfunSMSAction::class);
-
-        expect($reflection->isFinal())->toBeTrue();
-    });
+test('netfun sms response with malformed body is treated as a real failure', function (): void {
+    Assert::assertFalse(invokeIsSuccessfulResponse(200, 'not json'));
 });

@@ -2,6 +2,7 @@
     'title' => '',
     'content' => '',
     'image' => '',
+    'image_alt' => '',
     'reverse' => false
 ])
 
@@ -27,7 +28,7 @@
                 <div class="{{ $reverse ? 'lg:col-start-1' : '' }}">
                     <div class="relative overflow-hidden rounded-2xl shadow-lg">
                         <img src="{{ $imageSrc }}" 
-                             alt="{{ $title }}" 
+                             alt="{{ $image_alt }}"
                              class="w-full h-80 lg:h-96 object-cover hover:scale-105 transition-transform duration-500"
                              loading="lazy">
                     </div>

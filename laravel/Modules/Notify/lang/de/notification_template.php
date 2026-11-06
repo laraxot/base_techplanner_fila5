@@ -7,90 +7,56 @@ return [
         'icon' => 'heroicon-o-document-text',
         'label' => 'Template Notifiche',
         'group' => 'Sistema',
-        'sort' => '52',
-    ],
+        'sort' => '52'],
     'fields' => [
         'name' => [
             'label' => 'Nome',
             'helper' => 'Nome univoco del template',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'subject' => [
             'label' => 'Oggetto',
             'helper' => 'Oggetto della notifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'type' => [
             'label' => 'Tipo',
             'helper' => 'Tipo di notifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'body_text' => [
             'label' => 'Testo Semplice',
             'helper' => 'Versione testo semplice della notifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'body_html' => [
             'label' => 'HTML',
             'helper' => 'Versione HTML della notifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'preview_data' => [
             'label' => 'Dati di Anteprima',
             'helper' => 'Dati JSON per l\'anteprima',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'description' => '']],
     'columns' => [
         'name' => 'Nome',
         'subject' => 'Oggetto',
         'type' => 'Tipo',
         'created_at' => 'Creato il',
-        'updated_at' => 'Aggiornato il',
-    ],
+        'updated_at' => 'Aggiornato il'],
     'actions' => [
-        'preview' => 'Anteprima',
-    ],
+        'preview' => 'Anteprima'],
     'enums' => [
         'notification_type' => [
             'email' => 'Email',
             'sms' => 'SMS',
-            'push' => 'Notifica Push',
-        ],
-    ],
-<<<<<<< HEAD
+            'push' => 'Notifica Push']],
     'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
+    'plural_label' => 'Missing Plural label'];

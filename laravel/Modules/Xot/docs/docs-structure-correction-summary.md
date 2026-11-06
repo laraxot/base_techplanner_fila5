@@ -1,17 +1,16 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: docs-structure-correction-summary
-canonical: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
+title: "Correzione Struttura Cartelle Docs - Riepilogo Completo"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "correzione struttura cartelle docs - riepilogo completo xot"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/docs-structure-correction-summary.md
-=======
 # Correzione Struttura Cartelle Docs - Riepilogo Completo
 
 ## Contesto e Problema Identificato
 
-Durante l'audit del sistema SaluteOra, è stata identificata una **violazione critica dell'architettura modulare**: l'esistenza di cartelle `docs/` in posizioni inappropriate che violano i principi di modularità e creano confusione nella struttura del progetto.
+Durante l'audit del sistema <nome progetto>, è stata identificata una **violazione critica dell'architettura modulare**: l'esistenza di cartelle `docs/` in posizioni inappropriate che violano i principi di modularità e creano confusione nella struttura del progetto.
 
 ## Violazioni Identificate e Corrette
 
@@ -31,7 +30,7 @@ Durante l'audit del sistema SaluteOra, è stata identificata una **violazione cr
 **Stato**: ✅ CORRETTA - Cartella eliminata, documentazione spostata nei moduli
 
 **File migrati**:
-- `eloquent-unit-tests.md` → `laravel/Modules/SaluteMo/project_docs/testing/`
+- `eloquent-unit-tests.md` → `laravel/Modules/<nome progetto>/project_docs/testing/`
 - Altri documenti analizzati e spostati nei moduli appropriati
 
 ## Regola Critica Implementata
@@ -39,8 +38,8 @@ Durante l'audit del sistema SaluteOra, è stata identificata una **violazione cr
 ### **Struttura Cartelle Docs - Mai Cartelle Docs nella Root**
 
 **REGOLA ASSOLUTAMENTE VIETATA**:
-- ❌ `/var/www/html/_bases/base_{nome_progetto}/project_docs/` (root progetto)
-- ❌ `/var/www/html/_bases/base_{nome_progetto}/laravel/project_docs/` (root Laravel)
+- ❌ `project_docs/` (root progetto)
+- ❌ `project_docs/` (root Laravel)
 
 **STRUTTURA CORRETTA OBBLIGATORIA**:
 - ✅ `laravel/Modules/{ModuleName}/project_docs/` - Documentazione del modulo
@@ -105,8 +104,8 @@ laravel/
 │   ├── Lang/project_docs/             # ✅ Documentazione modulo Lang
 │   ├── Activity/project_docs/         # ✅ Documentazione modulo Activity
 │   ├── Job/project_docs/              # ✅ Documentazione modulo Job
-│   ├── SaluteMo/project_docs/         # ✅ Documentazione modulo SaluteMo
-│   └── SaluteOra/project_docs/        # ✅ Documentazione modulo SaluteOra
+│   ├── <nome progetto>/project_docs/         # ✅ Documentazione modulo <nome progetto>
+│   └── <nome progetto>/project_docs/        # ✅ Documentazione modulo <nome progetto>
 ├── Themes/
 │   ├── One/project_docs/              # ✅ Documentazione tema One
 │   └── Two/project_docs/              # ✅ Documentazione tema Two
@@ -204,12 +203,12 @@ find laravel/Themes -name "docs" -type d
 - [Modulo Notify](../Notify/project_docs/)
 - [Modulo User](../User/project_docs/)
 - [Modulo UI](../UI/project_docs/)
-- [Modulo SaluteMo](../SaluteMo/project_docs/)
-- [Modulo SaluteOra](../SaluteOra/project_docs/)
+- [Modulo <nome progetto>](../<nome progetto>/project_docs/)
+- [Modulo <nome progetto>](../<nome progetto>/project_docs/)
 
 ### **Documentazione Correlata**:
 - [Regole Modularità](modularity-hardcoded-names.md)
-- [Struttura Progetto](project-structure.md)
+- [Struttura Progetto](PROJECT-STRUCTURE.md)
 - [Best Practices Documentazione](documentation-standards.md)
 
 ---
@@ -220,4 +219,3 @@ find laravel/Themes -name "docs" -type d
 **Stato**: Violazione corretta, regole implementate, struttura conforme
 **Responsabile**: Team di sviluppo Laraxot
 **Verificato**: ✅ Conformità completa raggiunta
->>>>>>> 6ed19256f (.)

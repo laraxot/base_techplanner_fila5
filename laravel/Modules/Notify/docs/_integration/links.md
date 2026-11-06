@@ -1,11 +1,21 @@
+---
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
+status: superseded
+superseded_by: ../-integration/links.md
+---
+
 # links
 
 <!-- Contenuto migrato da _docs/links.txt -->
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 ----------------------------------------------------------------------------------
 Laravel Mailator for Configuring Email Scheduler & Templates
 --- molto simile a quello che facciamo noi con themenotification
@@ -20,7 +30,4 @@ Catch All Sent Email & Show them on Laravel Application View
 https://codebrisk.com/blog/catch-all-sent-email-show-them-on-laravel-application-view
 composer require creagia/laravel-web-mailer
 --------------------------------------------------------------------------------------
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)

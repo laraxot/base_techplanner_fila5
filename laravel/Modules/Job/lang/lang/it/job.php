@@ -1,297 +1,298 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    // ==============================================
-    // NAVIGATION & STRUCTURE
-    // ==============================================
-    'navigation' => [
-        'label' => 'Job',
-        'plural_label' => 'Job',
-        'group' => 'Sistema',
-        'icon' => 'heroicon-o-cpu-chip',
-        'sort' => 50,
-        'badge' => 'Gestione processi in background',
-    ],
-    // ==============================================
-    // MODEL INFORMATION
-    // ==============================================
-    'model' => [
-        'label' => 'Job',
-        'plural' => 'Job',
-        'description' => 'Processi in background e code di elaborazione',
-    ],
-    // ==============================================
-    // FIELDS - STRUTTURA ESPANSA OBBLIGATORIA
-    // ==============================================
-    'fields' => [
-        'id' => [
-            'label' => 'ID',
-            'tooltip' => 'Identificativo univoco del job',
-            'helper_text' => 'Identificativo numerico univoco del job nel sistema',
-        ],
-        'queue' => [
-            'label' => 'Coda',
-            'placeholder' => 'Inserisci il nome della coda',
-            'tooltip' => 'Nome della coda di elaborazione',
-            'helper_text' => 'Coda specifica in cui il job Ã¨ stato accodato per l\'elaborazione',
-            'help' => 'Specifica la coda di prioritÃ  per l\'elaborazione',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-            'placeholder' => 'Dati del job',
-            'tooltip' => 'Dati e parametri del job',
-            'helper_text' => 'Informazioni e dati specifici necessari per l\'esecuzione del job',
-            'help' => 'Contiene i dati serializzati necessari per l\'esecuzione',
-        ],
-        'attempts' => [
-            'label' => 'Tentativi',
-            'placeholder' => 'Numero di tentativi',
-            'tooltip' => 'Numero di tentativi di esecuzione',
-            'helper_text' => 'Numero di volte che il job Ã¨ stato tentato di eseguire',
-            'help' => 'Indica quante volte il job ha tentato l\'esecuzione',
-        ],
-        'reserved_at' => [
-            'label' => 'Riservato alle',
-            'tooltip' => 'Data di riserva del job',
-            'helper_text' => 'Data e ora in cui il job Ã¨ stato riservato per l\'esecuzione',
-        ],
-        'available_at' => [
-            'label' => 'Disponibile alle',
-            'placeholder' => 'Data di disponibilitÃ ',
-            'tooltip' => 'Data di disponibilitÃ  per l\'esecuzione',
-            'helper_text' => 'Data e ora in cui il job diventa disponibile per l\'esecuzione',
-            'help' => 'Specifica quando il job puÃ² essere elaborato',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => 'Data di creazione del job',
-            'helper_text' => 'Data e ora in cui il job Ã¨ stato creato nel sistema',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => 'Data dell\'ultima modifica',
-            'helper_text' => 'Data e ora dell\'ultimo aggiornamento del job',
-        ],
-    ],
-    // ==============================================
-    // ACTIONS - STRUTTURA ESPANSA OBBLIGATORIA
-    // ==============================================
-    'actions' => [
-        'create' => [
-            'label' => 'Nuovo Job',
-            'icon' => 'heroicon-o-plus',
-            'color' => 'primary',
-            'tooltip' => 'Crea un nuovo job',
-            'modal' => [
-                'heading' => 'Crea Nuovo Job',
-                'description' => 'Inserisci i dettagli per il nuovo job',
-                'confirm' => 'Crea Job',
-                'cancel' => 'Annulla',
-            ],
-            'messages' => [
-                'success' => 'Job creato con successo',
-                'error' => 'Si Ã¨ verificato un errore durante la creazione del job',
-            ],
-        ],
-        'edit' => [
-            'label' => 'Modifica Job',
-            'icon' => 'heroicon-o-pencil',
-            'color' => 'warning',
-            'tooltip' => 'Modifica il job selezionato',
-            'modal' => [
-                'heading' => 'Modifica Job',
-                'description' => 'Aggiorna le informazioni del job',
-                'confirm' => 'Salva modifiche',
-                'cancel' => 'Annulla',
-            ],
-            'messages' => [
-                'success' => 'Job modificato con successo',
-                'error' => 'Si Ã¨ verificato un errore durante la modifica del job',
-            ],
-        ],
-        'delete' => [
-            'label' => 'Elimina Job',
-            'icon' => 'heroicon-o-trash',
-            'color' => 'danger',
-            'tooltip' => 'Elimina il job selezionato',
-            'modal' => [
-                'heading' => 'Elimina Job',
-                'description' => 'Sei sicuro di voler eliminare questo job? Questa azione Ã¨ irreversibile.',
-                'confirm' => 'Elimina',
-                'cancel' => 'Annulla',
-            ],
-            'messages' => [
-                'success' => 'Job eliminato con successo',
-                'error' => 'Si Ã¨ verificato un errore durante l\'eliminazione del job',
-            ],
-            'confirmation' => 'Sei sicuro di voler eliminare questo job?',
-        ],
-        'retry' => [
-            'label' => 'Riprova Job',
-            'icon' => 'heroicon-o-arrow-path',
-            'color' => 'info',
-            'tooltip' => 'Riprova l\'esecuzione del job',
-            'modal' => [
-                'heading' => 'Riprova Job',
-                'description' => 'Sei sicuro di voler riprovare l\'esecuzione di questo job?',
-                'confirm' => 'Riprova',
-                'cancel' => 'Annulla',
-            ],
-            'messages' => [
-                'success' => 'Job rimesso in coda per la ri-esecuzione',
-                'error' => 'Si Ã¨ verificato un errore durante il rinvio del job',
-            ],
-        ],
-        'view' => [
-            'label' => 'Visualizza Job',
-            'icon' => 'heroicon-o-eye',
-            'color' => 'secondary',
-            'tooltip' => 'Visualizza i dettagli del job',
-        ],
-        'bulk_actions' => [
-            'delete' => [
-                'label' => 'Elimina Selezionati',
-                'icon' => 'heroicon-o-trash',
-                'color' => 'danger',
-                'tooltip' => 'Elimina tutti i job selezionati',
-                'modal' => [
-                    'heading' => 'Elimina Job Selezionati',
-                    'description' => 'Sei sicuro di voler eliminare i job selezionati? Questa azione Ã¨ irreversibile.',
-                    'confirm' => 'Elimina tutti',
-                    'cancel' => 'Annulla',
-                ],
-                'messages' => [
-                    'success' => 'Job eliminati con successo',
-                    'error' => 'Si Ã¨ verificato un errore durante l\'eliminazione dei job',
-                ],
-            ],
-            'retry' => [
-                'label' => 'Riprova Selezionati',
-                'icon' => 'heroicon-o-arrow-path',
-                'color' => 'info',
-                'tooltip' => 'Riprova l\'esecuzione dei job selezionati',
-                'modal' => [
-                    'heading' => 'Riprova Job Selezionati',
-                    'description' => 'Sei sicuro di voler riprovare l\'esecuzione dei job selezionati?',
-                    'confirm' => 'Riprova tutti',
-                    'cancel' => 'Annulla',
-                ],
-                'messages' => [
-                    'success' => 'Job rimessi in coda per la ri-esecuzione',
-                    'error' => 'Si Ã¨ verificato un errore durante il rinvio dei job',
-                ],
-            ],
-        ],
-    ],
-    // ==============================================
-    // SECTIONS - ORGANIZZAZIONE FORM
-    // ==============================================
-    'sections' => [
-        'basic_info' => [
-            'label' => 'Informazioni Base',
-            'description' => 'Informazioni fondamentali del job',
-            'icon' => 'heroicon-o-information-circle',
-        ],
-        'execution' => [
-            'label' => 'Esecuzione',
-            'description' => 'Dettagli di esecuzione e scheduling',
-            'icon' => 'heroicon-o-clock',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-            'description' => 'Dati e parametri del job',
-            'icon' => 'heroicon-o-document-text',
-        ],
-    ],
-    // ==============================================
-    // FILTERS - RICERCA E FILTRI
-    // ==============================================
-    'filters' => [
-        'queue' => [
-            'label' => 'Coda',
-            'placeholder' => 'Seleziona coda',
-        ],
-        'status' => [
-            'label' => 'Stato',
-            'options' => [
-                'pending' => 'In attesa',
-                'running' => 'In esecuzione',
-                'failed' => 'Fallito',
-                'completed' => 'Completato',
-            ],
-        ],
-        'attempts' => [
-            'label' => 'Tentativi',
-            'placeholder' => 'Filtra per tentativi',
-        ],
-        'date_range' => [
-            'label' => 'Periodo',
-            'placeholder' => 'Seleziona il periodo',
-        ],
-    ],
-    // ==============================================
-    // MESSAGES - FEEDBACK UTENTE
-    // ==============================================
-    'messages' => [
-        'empty_state' => 'Nessun job trovato',
-        'search_placeholder' => 'Cerca job...',
-        'loading' => 'Caricamento job in corso...',
-        'total_count' => 'Totale job: :count',
-        'created' => 'Job creato con successo',
-        'updated' => 'Job aggiornato con successo',
-        'deleted' => 'Job eliminato con successo',
-        'retried' => 'Job rimesso in coda per la ri-esecuzione',
-        'bulk_deleted' => 'Job eliminati con successo',
-        'bulk_retried' => 'Job rimessi in coda per la ri-esecuzione',
-        'error_general' => 'Si Ã¨ verificato un errore. Riprova piÃ¹ tardi.',
-        'error_validation' => 'Si sono verificati errori di validazione.',
-        'error_permission' => 'Non hai i permessi per eseguire questa azione.',
-        'success_operation' => 'Operazione completata con successo',
-    ],
-    // ==============================================
-    // VALIDATION - MESSAGGI DI VALIDAZIONE
-    // ==============================================
-    'validation' => [
-        'queue_required' => 'La coda Ã¨ obbligatoria',
-        'payload_required' => 'Il payload Ã¨ obbligatorio',
-        'attempts_numeric' => 'I tentativi devono essere numerici',
-        'attempts_min' => 'I tentativi devono essere almeno :min',
-        'available_at_required' => 'La data di disponibilitÃ  Ã¨ obbligatoria',
-        'available_at_after' => 'La data di disponibilitÃ  deve essere futura',
-    ],
-    // ==============================================
-    // DESCRIPTIONS - DESCRIZIONI CONTESTUALI
-    // ==============================================
-    'descriptions' => [
-        'job_purpose' => 'Gestione dei processi in background e code di elaborazione',
-        'queue_system' => 'Sistema di code per l\'elaborazione asincrona dei task',
-        'retry_mechanism' => 'Meccanismo di ri-tentativo per job falliti',
-        'monitoring' => 'Monitoraggio dello stato e delle performance dei job',
-    ],
-    // ==============================================
-    // OPTIONS - OPZIONI E VALORI PREDEFINITI
-    // ==============================================
-    'options' => [
-        'queues' => [
-            'default' => 'Default',
-            'high' => 'Alta PrioritÃ ',
-            'low' => 'Bassa PrioritÃ ',
-            'emails' => 'Email',
-            'notifications' => 'Notifiche',
-            'reports' => 'Report',
-        ],
-        'statuses' => [
-            'pending' => 'In attesa',
-            'running' => 'In esecuzione',
-            'failed' => 'Fallito',
-            'completed' => 'Completato',
-        ],
-        'priorities' => [
-            'high' => 'Alta',
-            'normal' => 'Normale',
-            'low' => 'Bassa',
-        ],
-    ],
-];
+|<|?|p|h|p|
+|
+|d|e|c|l|a|r|e|(|s|t|r|i|c|t|_|t|y|p|e|s|=|1|)|;|
+|
+|r|e|t|u|r|n| |[|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |N|A|V|I|G|A|T|I|O|N| |&| |S|T|R|U|C|T|U|R|E|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|n|a|v|i|g|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|J|o|b|'|,|
+| | | | | | | | |'|p|l|u|r|a|l|_|l|a|b|e|l|'| |=|>| |'|J|o|b|'|,|
+| | | | | | | | |'|g|r|o|u|p|'| |=|>| |'|S|i|s|t|e|m|a|'|,|
+| | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|c|p|u|-|c|h|i|p|'|,|
+| | | | | | | | |'|s|o|r|t|'| |=|>| |5|0|,|
+| | | | | | | | |'|b|a|d|g|e|'| |=|>| |'|G|e|s|t|i|o|n|e| |p|r|o|c|e|s|s|i| |i|n| |b|a|c|k|g|r|o|u|n|d|'|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |M|O|D|E|L| |I|N|F|O|R|M|A|T|I|O|N|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|m|o|d|e|l|'| |=|>| |[|
+| | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|J|o|b|'|,|
+| | | | | | | | |'|p|l|u|r|a|l|'| |=|>| |'|J|o|b|'|,|
+| | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|P|r|o|c|e|s|s|i| |i|n| |b|a|c|k|g|r|o|u|n|d| |e| |c|o|d|e| |d|i| |e|l|a|b|o|r|a|z|i|o|n|e|'|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |F|I|E|L|D|S| |-| |S|T|R|U|T|T|U|R|A| |E|S|P|A|N|S|A| |O|B|B|L|I|G|A|T|O|R|I|A|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|f|i|e|l|d|s|'| |=|>| |[|
+| | | | | | | | |'|i|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|D|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|I|d|e|n|t|i|f|i|c|a|t|i|v|o| |u|n|i|v|o|c|o| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|I|d|e|n|t|i|f|i|c|a|t|i|v|o| |n|u|m|e|r|i|c|o| |u|n|i|v|o|c|o| |d|e|l| |j|o|b| |n|e|l| |s|i|s|t|e|m|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|q|u|e|u|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|d|a|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |i|l| |n|o|m|e| |d|e|l|l|a| |c|o|d|a|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|N|o|m|e| |d|e|l|l|a| |c|o|d|a| |d|i| |e|l|a|b|o|r|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|C|o|d|a| |s|p|e|c|i|f|i|c|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |a|c|c|o|d|a|t|o| |p|e|r| |l||'|e|l|a|b|o|r|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|p|e|c|i|f|i|c|a| |l|a| |c|o|d|a| |d|i| |p|r|i|o|r|i|t|Ã| | |p|e|r| |l||'|e|l|a|b|o|r|a|z|i|o|n|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|a|y|l|o|a|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|a|y|l|o|a|d|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|D|a|t|i| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|i| |e| |p|a|r|a|m|e|t|r|i| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |e| |d|a|t|i| |s|p|e|c|i|f|i|c|i| |n|e|c|e|s|s|a|r|i| |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|C|o|n|t|i|e|n|e| |i| |d|a|t|i| |s|e|r|i|a|l|i|z|z|a|t|i| |n|e|c|e|s|s|a|r|i| |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|a|t|t|e|m|p|t|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|T|e|n|t|a|t|i|v|i|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|N|u|m|e|r|o| |d|i| |t|e|n|t|a|t|i|v|i|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|N|u|m|e|r|o| |d|i| |t|e|n|t|a|t|i|v|i| |d|i| |e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|N|u|m|e|r|o| |d|i| |v|o|l|t|e| |c|h|e| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |t|e|n|t|a|t|o| |d|i| |e|s|e|g|u|i|r|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|I|n|d|i|c|a| |q|u|a|n|t|e| |v|o|l|t|e| |i|l| |j|o|b| |h|a| |t|e|n|t|a|t|o| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|r|e|s|e|r|v|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|R|i|s|e|r|v|a|t|o| |a|l|l|e|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|i| |r|i|s|e|r|v|a| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |r|i|s|e|r|v|a|t|o| |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|i|s|p|o|n|i|b|i|l|e| |a|l|l|e|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|D|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| |'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| | |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |d|i|v|e|n|t|a| |d|i|s|p|o|n|i|b|i|l|e| |p|e|r| |l||'|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|'| |=|>| |'|S|p|e|c|i|f|i|c|a| |q|u|a|n|d|o| |i|l| |j|o|b| |p|u|Ã|²| |e|s|s|e|r|e| |e|l|a|b|o|r|a|t|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|c|r|e|a|t|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|D|a|t|a| |C|r|e|a|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|i| |c|r|e|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |i|n| |c|u|i| |i|l| |j|o|b| |Ã|¨| |s|t|a|t|o| |c|r|e|a|t|o| |n|e|l| |s|i|s|t|e|m|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|u|p|d|a|t|e|d|_|a|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|U|l|t|i|m|a| |M|o|d|i|f|i|c|a|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|D|a|t|a| |d|e|l|l||'|u|l|t|i|m|a| |m|o|d|i|f|i|c|a|'|,|
+| | | | | | | | | | | | |'|h|e|l|p|e|r|_|t|e|x|t|'| |=|>| |'|D|a|t|a| |e| |o|r|a| |d|e|l|l||'|u|l|t|i|m|o| |a|g|g|i|o|r|n|a|m|e|n|t|o| |d|e|l| |j|o|b|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |A|C|T|I|O|N|S| |-| |S|T|R|U|T|T|U|R|A| |E|S|P|A|N|S|A| |O|B|B|L|I|G|A|T|O|R|I|A|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|c|r|e|a|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|N|u|o|v|o| |J|o|b|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|p|l|u|s|'|,|
+| | | | | | | | | | | | |'|c|o|l|o|r|'| |=|>| |'|p|r|i|m|a|r|y|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|C|r|e|a| |u|n| |n|u|o|v|o| |j|o|b|'|,|
+| | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|C|r|e|a| |N|u|o|v|o| |J|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|I|n|s|e|r|i|s|c|i| |i| |d|e|t|t|a|g|l|i| |p|e|r| |i|l| |n|u|o|v|o| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|C|r|e|a| |J|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |c|r|e|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l|a| |c|r|e|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|d|i|t|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|M|o|d|i|f|i|c|a| |J|o|b|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|p|e|n|c|i|l|'|,|
+| | | | | | | | | | | | |'|c|o|l|o|r|'| |=|>| |'|w|a|r|n|i|n|g|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|M|o|d|i|f|i|c|a| |i|l| |j|o|b| |s|e|l|e|z|i|o|n|a|t|o|'|,|
+| | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|M|o|d|i|f|i|c|a| |J|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|A|g|g|i|o|r|n|a| |l|e| |i|n|f|o|r|m|a|z|i|o|n|i| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|S|a|l|v|a| |m|o|d|i|f|i|c|h|e|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |m|o|d|i|f|i|c|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l|a| |m|o|d|i|f|i|c|a| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|d|e|l|e|t|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|l|i|m|i|n|a| |J|o|b|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|t|r|a|s|h|'|,|
+| | | | | | | | | | | | |'|c|o|l|o|r|'| |=|>| |'|d|a|n|g|e|r|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|E|l|i|m|i|n|a| |i|l| |j|o|b| |s|e|l|e|z|i|o|n|a|t|o|'|,|
+| | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|E|l|i|m|i|n|a| |J|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |q|u|e|s|t|o| |j|o|b|?| |Q|u|e|s|t|a| |a|z|i|o|n|e| |Ã|¨| |i|r|r|e|v|e|r|s|i|b|i|l|e|.|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|E|l|i|m|i|n|a|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |e|l|i|m|i|n|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|e|l|i|m|i|n|a|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|c|o|n|f|i|r|m|a|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |q|u|e|s|t|o| |j|o|b|?|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|r|e|t|r|y|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|R|i|p|r|o|v|a| |J|o|b|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|a|r|r|o|w|-|p|a|t|h|'|,|
+| | | | | | | | | | | | |'|c|o|l|o|r|'| |=|>| |'|i|n|f|o|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|R|i|p|r|o|v|a| |l||'|e|s|e|c|u|z|i|o|n|e| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|R|i|p|r|o|v|a| |J|o|b|'|,|
+| | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |r|i|p|r|o|v|a|r|e| |l||'|e|s|e|c|u|z|i|o|n|e| |d|i| |q|u|e|s|t|o| |j|o|b|?|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|R|i|p|r|o|v|a|'|,|
+| | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|o| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |i|l| |r|i|n|v|i|o| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|v|i|e|w|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|V|i|s|u|a|l|i|z|z|a| |J|o|b|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|e|y|e|'|,|
+| | | | | | | | | | | | |'|c|o|l|o|r|'| |=|>| |'|s|e|c|o|n|d|a|r|y|'|,|
+| | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|V|i|s|u|a|l|i|z|z|a| |i| |d|e|t|t|a|g|l|i| |d|e|l| |j|o|b|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|b|u|l|k|_|a|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|d|e|l|e|t|e|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|l|i|m|i|n|a| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|t|r|a|s|h|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|l|o|r|'| |=|>| |'|d|a|n|g|e|r|'|,|
+| | | | | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|E|l|i|m|i|n|a| |t|u|t|t|i| |i| |j|o|b| |s|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|E|l|i|m|i|n|a| |J|o|b| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |e|l|i|m|i|n|a|r|e| |i| |j|o|b| |s|e|l|e|z|i|o|n|a|t|i|?| |Q|u|e|s|t|a| |a|z|i|o|n|e| |Ã|¨| |i|r|r|e|v|e|r|s|i|b|i|l|e|.|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|E|l|i|m|i|n|a| |t|u|t|t|i|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |e|l|i|m|i|n|a|t|i| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |l||'|e|l|i|m|i|n|a|z|i|o|n|e| |d|e|i| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |'|r|e|t|r|y|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|R|i|p|r|o|v|a| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|a|r|r|o|w|-|p|a|t|h|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|l|o|r|'| |=|>| |'|i|n|f|o|'|,|
+| | | | | | | | | | | | | | | | |'|t|o|o|l|t|i|p|'| |=|>| |'|R|i|p|r|o|v|a| |l||'|e|s|e|c|u|z|i|o|n|e| |d|e|i| |j|o|b| |s|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | | | | | |'|m|o|d|a|l|'| |=|>| |[|
+| | | | | | | | | | | | | | | | | | | | |'|h|e|a|d|i|n|g|'| |=|>| |'|R|i|p|r|o|v|a| |J|o|b| |S|e|l|e|z|i|o|n|a|t|i|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|S|e|i| |s|i|c|u|r|o| |d|i| |v|o|l|e|r| |r|i|p|r|o|v|a|r|e| |l||'|e|s|e|c|u|z|i|o|n|e| |d|e|i| |j|o|b| |s|e|l|e|z|i|o|n|a|t|i|?|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|c|o|n|f|i|r|m|'| |=|>| |'|R|i|p|r|o|v|a| |t|u|t|t|i|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|c|a|n|c|e|l|'| |=|>| |'|A|n|n|u|l|l|a|'|,|
+| | | | | | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | | | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | | | | | |'|s|u|c|c|e|s|s|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|i| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | | | | | | | | | |'|e|r|r|o|r|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e| |d|u|r|a|n|t|e| |i|l| |r|i|n|v|i|o| |d|e|i| |j|o|b|'|,|
+| | | | | | | | | | | | | | | | |]|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |S|E|C|T|I|O|N|S| |-| |O|R|G|A|N|I|Z|Z|A|Z|I|O|N|E| |F|O|R|M|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|s|e|c|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|b|a|s|i|c|_|i|n|f|o|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |B|a|s|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|I|n|f|o|r|m|a|z|i|o|n|i| |f|o|n|d|a|m|e|n|t|a|l|i| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|i|n|f|o|r|m|a|t|i|o|n|-|c|i|r|c|l|e|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|e|x|e|c|u|t|i|o|n|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|E|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|D|e|t|t|a|g|l|i| |d|i| |e|s|e|c|u|z|i|o|n|e| |e| |s|c|h|e|d|u|l|i|n|g|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|c|l|o|c|k|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|a|y|l|o|a|d|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|a|y|l|o|a|d|'|,|
+| | | | | | | | | | | | |'|d|e|s|c|r|i|p|t|i|o|n|'| |=|>| |'|D|a|t|i| |e| |p|a|r|a|m|e|t|r|i| |d|e|l| |j|o|b|'|,|
+| | | | | | | | | | | | |'|i|c|o|n|'| |=|>| |'|h|e|r|o|i|c|o|n|-|o|-|d|o|c|u|m|e|n|t|-|t|e|x|t|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |F|I|L|T|E|R|S| |-| |R|I|C|E|R|C|A| |E| |F|I|L|T|R|I|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|f|i|l|t|e|r|s|'| |=|>| |[|
+| | | | | | | | |'|q|u|e|u|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|C|o|d|a|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |c|o|d|a|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|s|t|a|t|u|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|S|t|a|t|o|'|,|
+| | | | | | | | | | | | |'|o|p|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | | | | | | | | | |'|p|e|n|d|i|n|g|'| |=|>| |'|I|n| |a|t|t|e|s|a|'|,|
+| | | | | | | | | | | | | | | | |'|r|u|n|n|i|n|g|'| |=|>| |'|I|n| |e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | | | | | |'|f|a|i|l|e|d|'| |=|>| |'|F|a|l|l|i|t|o|'|,|
+| | | | | | | | | | | | | | | | |'|c|o|m|p|l|e|t|e|d|'| |=|>| |'|C|o|m|p|l|e|t|a|t|o|'|,|
+| | | | | | | | | | | | |]|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|a|t|t|e|m|p|t|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|T|e|n|t|a|t|i|v|i|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|F|i|l|t|r|a| |p|e|r| |t|e|n|t|a|t|i|v|i|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|d|a|t|e|_|r|a|n|g|e|'| |=|>| |[|
+| | | | | | | | | | | | |'|l|a|b|e|l|'| |=|>| |'|P|e|r|i|o|d|o|'|,|
+| | | | | | | | | | | | |'|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|S|e|l|e|z|i|o|n|a| |i|l| |p|e|r|i|o|d|o|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |M|E|S|S|A|G|E|S| |-| |F|E|E|D|B|A|C|K| |U|T|E|N|T|E|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|m|e|s|s|a|g|e|s|'| |=|>| |[|
+| | | | | | | | |'|e|m|p|t|y|_|s|t|a|t|e|'| |=|>| |'|N|e|s|s|u|n| |j|o|b| |t|r|o|v|a|t|o|'|,|
+| | | | | | | | |'|s|e|a|r|c|h|_|p|l|a|c|e|h|o|l|d|e|r|'| |=|>| |'|C|e|r|c|a| |j|o|b|.|.|.|'|,|
+| | | | | | | | |'|l|o|a|d|i|n|g|'| |=|>| |'|C|a|r|i|c|a|m|e|n|t|o| |j|o|b| |i|n| |c|o|r|s|o|.|.|.|'|,|
+| | | | | | | | |'|t|o|t|a|l|_|c|o|u|n|t|'| |=|>| |'|T|o|t|a|l|e| |j|o|b|:| |:|c|o|u|n|t|'|,|
+| | | | | | | | |'|c|r|e|a|t|e|d|'| |=|>| |'|J|o|b| |c|r|e|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|u|p|d|a|t|e|d|'| |=|>| |'|J|o|b| |a|g|g|i|o|r|n|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|d|e|l|e|t|e|d|'| |=|>| |'|J|o|b| |e|l|i|m|i|n|a|t|o| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|r|e|t|r|i|e|d|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|o| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | |'|b|u|l|k|_|d|e|l|e|t|e|d|'| |=|>| |'|J|o|b| |e|l|i|m|i|n|a|t|i| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | | | | | |'|b|u|l|k|_|r|e|t|r|i|e|d|'| |=|>| |'|J|o|b| |r|i|m|e|s|s|i| |i|n| |c|o|d|a| |p|e|r| |l|a| |r|i|-|e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | |'|e|r|r|o|r|_|g|e|n|e|r|a|l|'| |=|>| |'|S|i| |Ã|¨| |v|e|r|i|f|i|c|a|t|o| |u|n| |e|r|r|o|r|e|.| |R|i|p|r|o|v|a| |p|i|Ã|¹| |t|a|r|d|i|.|'|,|
+| | | | | | | | |'|e|r|r|o|r|_|v|a|l|i|d|a|t|i|o|n|'| |=|>| |'|S|i| |s|o|n|o| |v|e|r|i|f|i|c|a|t|i| |e|r|r|o|r|i| |d|i| |v|a|l|i|d|a|z|i|o|n|e|.|'|,|
+| | | | | | | | |'|e|r|r|o|r|_|p|e|r|m|i|s|s|i|o|n|'| |=|>| |'|N|o|n| |h|a|i| |i| |p|e|r|m|e|s|s|i| |p|e|r| |e|s|e|g|u|i|r|e| |q|u|e|s|t|a| |a|z|i|o|n|e|.|'|,|
+| | | | | | | | |'|s|u|c|c|e|s|s|_|o|p|e|r|a|t|i|o|n|'| |=|>| |'|O|p|e|r|a|z|i|o|n|e| |c|o|m|p|l|e|t|a|t|a| |c|o|n| |s|u|c|c|e|s|s|o|'|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |V|A|L|I|D|A|T|I|O|N| |-| |M|E|S|S|A|G|G|I| |D|I| |V|A|L|I|D|A|Z|I|O|N|E|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|v|a|l|i|d|a|t|i|o|n|'| |=|>| |[|
+| | | | | | | | |'|q|u|e|u|e|_|r|e|q|u|i|r|e|d|'| |=|>| |'|L|a| |c|o|d|a| |Ã|¨| |o|b|b|l|i|g|a|t|o|r|i|a|'|,|
+| | | | | | | | |'|p|a|y|l|o|a|d|_|r|e|q|u|i|r|e|d|'| |=|>| |'|I|l| |p|a|y|l|o|a|d| |Ã|¨| |o|b|b|l|i|g|a|t|o|r|i|o|'|,|
+| | | | | | | | |'|a|t|t|e|m|p|t|s|_|n|u|m|e|r|i|c|'| |=|>| |'|I| |t|e|n|t|a|t|i|v|i| |d|e|v|o|n|o| |e|s|s|e|r|e| |n|u|m|e|r|i|c|i|'|,|
+| | | | | | | | |'|a|t|t|e|m|p|t|s|_|m|i|n|'| |=|>| |'|I| |t|e|n|t|a|t|i|v|i| |d|e|v|o|n|o| |e|s|s|e|r|e| |a|l|m|e|n|o| |:|m|i|n|'|,|
+| | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|_|r|e|q|u|i|r|e|d|'| |=|>| |'|L|a| |d|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| | |Ã|¨| |o|b|b|l|i|g|a|t|o|r|i|a|'|,|
+| | | | | | | | |'|a|v|a|i|l|a|b|l|e|_|a|t|_|a|f|t|e|r|'| |=|>| |'|L|a| |d|a|t|a| |d|i| |d|i|s|p|o|n|i|b|i|l|i|t|Ã| | |d|e|v|e| |e|s|s|e|r|e| |f|u|t|u|r|a|'|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |D|E|S|C|R|I|P|T|I|O|N|S| |-| |D|E|S|C|R|I|Z|I|O|N|I| |C|O|N|T|E|S|T|U|A|L|I|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|d|e|s|c|r|i|p|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|j|o|b|_|p|u|r|p|o|s|e|'| |=|>| |'|G|e|s|t|i|o|n|e| |d|e|i| |p|r|o|c|e|s|s|i| |i|n| |b|a|c|k|g|r|o|u|n|d| |e| |c|o|d|e| |d|i| |e|l|a|b|o|r|a|z|i|o|n|e|'|,|
+| | | | | | | | |'|q|u|e|u|e|_|s|y|s|t|e|m|'| |=|>| |'|S|i|s|t|e|m|a| |d|i| |c|o|d|e| |p|e|r| |l||'|e|l|a|b|o|r|a|z|i|o|n|e| |a|s|i|n|c|r|o|n|a| |d|e|i| |t|a|s|k|'|,|
+| | | | | | | | |'|r|e|t|r|y|_|m|e|c|h|a|n|i|s|m|'| |=|>| |'|M|e|c|c|a|n|i|s|m|o| |d|i| |r|i|-|t|e|n|t|a|t|i|v|o| |p|e|r| |j|o|b| |f|a|l|l|i|t|i|'|,|
+| | | | | | | | |'|m|o|n|i|t|o|r|i|n|g|'| |=|>| |'|M|o|n|i|t|o|r|a|g|g|i|o| |d|e|l|l|o| |s|t|a|t|o| |e| |d|e|l|l|e| |p|e|r|f|o|r|m|a|n|c|e| |d|e|i| |j|o|b|'|,|
+| | | | |]|,|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |/|/| |O|P|T|I|O|N|S| |-| |O|P|Z|I|O|N|I| |E| |V|A|L|O|R|I| |P|R|E|D|E|F|I|N|I|T|I|
+| | | | |/|/| |=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|=|
+| | | | |'|o|p|t|i|o|n|s|'| |=|>| |[|
+| | | | | | | | |'|q|u|e|u|e|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|d|e|f|a|u|l|t|'| |=|>| |'|D|e|f|a|u|l|t|'|,|
+| | | | | | | | | | | | |'|h|i|g|h|'| |=|>| |'|A|l|t|a| |P|r|i|o|r|i|t|Ã| |'|,|
+| | | | | | | | | | | | |'|l|o|w|'| |=|>| |'|B|a|s|s|a| |P|r|i|o|r|i|t|Ã| |'|,|
+| | | | | | | | | | | | |'|e|m|a|i|l|s|'| |=|>| |'|E|m|a|i|l|'|,|
+| | | | | | | | | | | | |'|n|o|t|i|f|i|c|a|t|i|o|n|s|'| |=|>| |'|N|o|t|i|f|i|c|h|e|'|,|
+| | | | | | | | | | | | |'|r|e|p|o|r|t|s|'| |=|>| |'|R|e|p|o|r|t|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|s|t|a|t|u|s|e|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|p|e|n|d|i|n|g|'| |=|>| |'|I|n| |a|t|t|e|s|a|'|,|
+| | | | | | | | | | | | |'|r|u|n|n|i|n|g|'| |=|>| |'|I|n| |e|s|e|c|u|z|i|o|n|e|'|,|
+| | | | | | | | | | | | |'|f|a|i|l|e|d|'| |=|>| |'|F|a|l|l|i|t|o|'|,|
+| | | | | | | | | | | | |'|c|o|m|p|l|e|t|e|d|'| |=|>| |'|C|o|m|p|l|e|t|a|t|o|'|,|
+| | | | | | | | |]|,|
+| | | | | | | | |'|p|r|i|o|r|i|t|i|e|s|'| |=|>| |[|
+| | | | | | | | | | | | |'|h|i|g|h|'| |=|>| |'|A|l|t|a|'|,|
+| | | | | | | | | | | | |'|n|o|r|m|a|l|'| |=|>| |'|N|o|r|m|a|l|e|'|,|
+| | | | | | | | | | | | |'|l|o|w|'| |=|>| |'|B|a|s|s|a|'|,|
+| | | | | | | | |]|,|
+| | | | |]|,|
+|]|;|
+|

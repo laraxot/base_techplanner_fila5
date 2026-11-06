@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Media Module - Testing Guidelines"
+module: "Media"
+type: how-to
+tags: [testing, guidelines]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing guidelines"
+related:
+  - "./webm.md"
+status: draft
+---
 # Media Module - Testing Guidelines
 
 ## Testing Framework Requirements
@@ -7,11 +21,7 @@ All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
 DB_CONNECTION=sqlite
-<<<<<<< HEAD
 DB_DATABASE=<nome progetto>_data_test
-=======
-DB_DATABASE=saluteora_data_test
->>>>>>> 6ed19256f (.)
 FILESYSTEM_DISK=local
 MEDIA_DISK=local
 ```
@@ -467,12 +477,6 @@ describe('Media Performance Tests', function () {
 
 ---
 
-**Last Updated**: 2025-08-28
-<<<<<<< HEAD
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
-=======
-**Testing Framework**: Pest
-**Environment**: .env.testing
->>>>>>> 6ed19256f (.)

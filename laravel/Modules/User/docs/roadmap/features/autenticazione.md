@@ -1,3 +1,23 @@
+---
+title: "Autenticazione"
+type: concept
+tags: [autenticazione]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "autenticazione autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./audit-logging.md"
+  - "./autorizzazione.md"
+  - "./gestione-teams.md"
+  - "./gestione-utenti.md"
+  - "./legacy-code-cleanup.md"
+  - "./user-analytics.md"
+  - "./user-traits.md"
+status: draft
+---
+
 # Autenticazione
 
 ## Overview
@@ -64,14 +84,7 @@ Sistema di autenticazione completo con supporto per multiple strategie di login,
 ## Collegamenti tra versioni di autenticazione.md
 * [autenticazione.md](docs/regole/autenticazione.md)
 * [autenticazione.md](docs/roadmap/core/autenticazione.md)
-* [autenticazione.md](../../../User/docs/roadmap/features/autenticazione.md)
-* [autenticazione.md](../../../User/project_docs/roadmap/features/autenticazione.md)
-<<<<<<< HEAD
 * [autenticazione.md](../../../user/docs/roadmap/features/autenticazione.md)
 * [autenticazione.md](../../../user/project_docs/roadmap/features/autenticazione.md)
 ### Versione Incoming
 ---
-=======
-### Versione Incoming
----
->>>>>>> 6ed19256f (.)

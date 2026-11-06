@@ -1,3 +1,15 @@
+---
+title: "product brief"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "product brief"
+issues: []
+discussions: []
+status: draft
+---
+
 # Design Comuni Replication - Product Brief
 
 > **BMAD Product Brief: Replica completa delle pagine Design Comuni Italia**
@@ -22,7 +34,6 @@ Creare un sistema di **componenti riutilizzabili** che permetta di:
 4. Garantire conformità accessibilità PA
 
 ---
-
 ## 🎯 Obiettivi Strategici
 
 ### Obiettivo 1: Censimento Completo
@@ -141,7 +152,7 @@ Creare un sistema di **componenti riutilizzabili** che permetta di:
 | 32 | Step 3 - Riepilogo | [/sito/segnalazione-03-riepilogo.html](https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazione-03-riepilogo.html) | `/it/tests/segnalazione/3/riepilogo` | 🟢 Bassa |
 | 33 | Step 4 - Conferma | [/sito/segnalazione-04-conferma.html](https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazione-04-conferma.html) | `/it/tests/segnalazione/4/conferma` | 🟢 Bassa |
 | 34 | Area Personale | [/sito/segnalazione-area-personale.html](https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazione-area-personale.html) | `/it/tests/segnalazione/area-personale` | 🟢 Bassa |
-| 35 | Elenco Segnalazioni | [/sito/segnalazioni-elenco.html](https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html) | `/it/tests/segnalazioni/elenco` | 🟢 Bassa |
+| 35 | Elenco Segnalazioni | [/sito/ticket-list.html](https://italia.github.io/design-comuni-pagine-statiche/sito/ticket-list.html) | `/it/tests/segnalazioni/elenco` | 🟢 Bassa |
 
 ---
 
@@ -720,7 +731,7 @@ Per ogni blocco universale:
 
 ### Indici
 
-- [Main Index](../00-index.md)
+- [Main Index](../00-INDEX.md)
 - [Design Comuni Index](./00-index.md)
 - [Pages Index](./pages/00-index.md)
 - [Blocks Index](./blocks/00-index.md)

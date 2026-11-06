@@ -1,3 +1,15 @@
+---
+title: "spatie media library migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie media library migration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Migrazione da FileUpload a Spatie Media Library
 
 ## 🌍 Analisi Multidimensionale della Migrazione
@@ -89,11 +101,7 @@ FileUpload::make('background') // Background, Footer, HeaderNav
 FileUpload::make('logo_header') // Metatag
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-<<<<<<< HEAD
 // BaseModel <nome progetto> - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-=======
-// BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
->>>>>>> 6ed19256f (.)
 ```
 
 ### 🏗️ **Architettura HasMedia Esistente**
@@ -101,17 +109,10 @@ FileUpload::make('logo_header') // Metatag
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-<<<<<<< HEAD
 // BaseModel <nome progetto> - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel <nome progetto> - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-=======
-// BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-// BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-// BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-// BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
->>>>>>> 6ed19256f (.)
 ```
 
 ### 🏗️ **Architettura HasMedia Esistente**
@@ -119,19 +120,11 @@ FileUpload::make('logo_header') // Metatag
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-<<<<<<< HEAD
 // BaseModel <nome progetto> - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 ### 🏗️ **Architettura HasMedia Esistente**
 **SCOPERTA CRUCIALE**: I modelli principali implementano già `HasMedia`!
 // BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
 // BaseModel <nome progetto> - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-=======
-// BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-### 🏗️ **Architettura HasMedia Esistente**
-**SCOPERTA CRUCIALE**: I modelli principali implementano già `HasMedia`!
-// BaseModel  - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
-// BaseModel SaluteOra - IMPLEMENTA GIÀ HasMedia + InteractsWithMedia
->>>>>>> 6ed19256f (.)
 abstract class BaseModel extends Model implements HasMedia
 {
     use InteractsWithMedia;
@@ -271,21 +264,13 @@ class SpatieImageUpload
 #### 3.1 PatientResource - Priorità MASSIMA (Documenti Sensibili)
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Filament/Resources/PatientResource.php - getFormSchema()
-=======
-// Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
->>>>>>> 6ed19256f (.)
 
     }
 
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Filament/Resources/PatientResource.php - getFormSchema()
-=======
-// Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
->>>>>>> 6ed19256f (.)
 
     }
 
@@ -296,29 +281,17 @@ class SpatieImageUpload
 ### **Fase 3: Implementazione Progressiva**
 #### 3.1 PatientResource - Priorità MASSIMA (Documenti Sensibili)
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Filament/Resources/PatientResource.php - getFormSchema()
-=======
-// Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
->>>>>>> 6ed19256f (.)
 
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
 
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Filament/Resources/PatientResource.php - getFormSchema()
-=======
-// Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
->>>>>>> 6ed19256f (.)
 
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
 
 // Modules/<nome modulo>/app/Filament/Resources/PatientResource.php - getFormSchema()
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Filament/Resources/PatientResource.php - getFormSchema()
-=======
-// Modules/SaluteOra/app/Filament/Resources/PatientResource.php - getFormSchema()
->>>>>>> 6ed19256f (.)
 // PRIMA (FileUpload standard)
 'health_card' => Forms\Components\FileUpload::make('health_card')
     ->disk('private')
@@ -330,13 +303,8 @@ class SpatieImageUpload
 'health_card' => \Modules\UI\Filament\Components\SpatieDocumentUpload::forHealthCard()
     ->label(trans('<nome progetto>::patients.fields.health_card.label'))
     ->helperText(trans('<nome progetto>::patients.fields.health_card.help')),
-<<<<<<< HEAD
     ->label(trans('<nome progetto>::patients.fields.health_card.label'))
     ->helperText(trans('<nome progetto>::patients.fields.health_card.help')),
-=======
-    ->label(trans('saluteora::patients.fields.health_card.label'))
-    ->helperText(trans('saluteora::patients.fields.health_card.help')),
->>>>>>> 6ed19256f (.)
 #### 3.2 UI Blocks - Standardizzazione Architettura
 // Modules/UI/app/Filament/Blocks/Image.php - Refactoring Completo
 // PRIMA
@@ -344,7 +312,6 @@ FileUpload::make('image'),
 
 // DOPO (SpatieMediaLibraryFileUpload)
 'health_card' => \Modules\UI\Filament\Components\SpatieDocumentUpload::forHealthCard()
-<<<<<<< HEAD
     ->label(trans('<nome progetto>::patients.fields.health_card.label'))
     ->helperText(trans('<nome progetto>::patients.fields.health_card.help')),
     ->label(trans('<nome progetto>::patients.fields.health_card.label'))
@@ -359,22 +326,6 @@ FileUpload::make('image'),
 
     ->label(trans('<nome progetto>::patients.fields.health_card.label'))
     ->helperText(trans('<nome progetto>::patients.fields.health_card.help')),
-=======
-    ->label(trans('saluteora::patients.fields.health_card.label'))
-    ->helperText(trans('saluteora::patients.fields.health_card.help')),
-    ->label(trans('saluteora::patients.fields.health_card.label'))
-    ->helperText(trans('saluteora::patients.fields.health_card.help')),
-```
-
-    ->label(trans('saluteora::patients.fields.health_card.label'))
-    ->helperText(trans('saluteora::patients.fields.health_card.help')),
-    ->label(trans('saluteora::patients.fields.health_card.label'))
-    ->helperText(trans('saluteora::patients.fields.health_card.help')),
-```
-
-    ->label(trans('saluteora::patients.fields.health_card.label'))
-    ->helperText(trans('saluteora::patients.fields.health_card.help')),
->>>>>>> 6ed19256f (.)
 #### 3.2 UI Blocks - Standardizzazione Architettura
 // Modules/UI/app/Filament/Blocks/Image.php - Refactoring Completo
 // PRIMA
@@ -426,32 +377,20 @@ Schema::table('users', function (Blueprint $table) {
 });
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Aggiunta registerMediaCollections
-=======
-// Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
->>>>>>> 6ed19256f (.)
 
 public function registerMediaCollections(): void
 {
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Aggiunta registerMediaCollections
-=======
-// Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
->>>>>>> 6ed19256f (.)
 
 public function registerMediaCollections(): void
 {
 ## 🔧 Implementazione Tecnica Dettagliata
 ### **Media Collections Configuration**
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Aggiunta registerMediaCollections
-=======
-// Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
->>>>>>> 6ed19256f (.)
     // Documenti paziente
         ->singleFile()
         ->useDisk('private');
@@ -467,11 +406,7 @@ public function registerMediaConversions(Media $media = null): void
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Aggiunta registerMediaCollections
-=======
-// Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
->>>>>>> 6ed19256f (.)
 
 public function registerMediaCollections(): void
 {
@@ -480,11 +415,7 @@ public function registerMediaCollections(): void
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
 // Modules/<nome modulo>/app/Models/User.php - Aggiunta registerMediaCollections
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Aggiunta registerMediaCollections
-=======
-// Modules/SaluteOra/app/Models/User.php - Aggiunta registerMediaCollections
->>>>>>> 6ed19256f (.)
 
 public function registerMediaCollections(): void
 {
@@ -505,48 +436,28 @@ public function registerMediaConversions(Media $media = null): void
 ### **Accessors per Backward Compatibility**
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Accessors di transizione
 
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
 // Modules/<nome progetto>/app/Models/User.php - Accessors di transizione
-=======
-// Modules/SaluteOra/app/Models/User.php - Accessors di transizione
-
-// Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
-// Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
-// Modules/SaluteOra/app/Models/User.php - Accessors di transizione
->>>>>>> 6ed19256f (.)
 
     $this->addMediaConversion('preview')
         ->width(600)
         ->height(400)
 ### **Accessors per Backward Compatibility**
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Accessors di transizione
-=======
-// Modules/SaluteOra/app/Models/User.php - Accessors di transizione
->>>>>>> 6ed19256f (.)
 
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
 
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Accessors di transizione
-=======
-// Modules/SaluteOra/app/Models/User.php - Accessors di transizione
->>>>>>> 6ed19256f (.)
 
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
 
 // Modules/<nome modulo>/app/Models/User.php - Accessors di transizione
-<<<<<<< HEAD
 // Modules/<nome progetto>/app/Models/User.php - Accessors di transizione
-=======
-// Modules/SaluteOra/app/Models/User.php - Accessors di transizione
->>>>>>> 6ed19256f (.)
 /**
  * Accessor per compatibilità con codice esistente.
  * Restituisce URL del primo media nella collection health_card.
@@ -573,7 +484,6 @@ public function getCertificationsAttribute(): array
 <div class="grid grid-cols-2 gap-4">
     @if($patient->hasMedia('tessere_sanitarie'))
         <div class="document-preview">
-<<<<<<< HEAD
             <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
             <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
             <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
@@ -586,38 +496,19 @@ public function getCertificationsAttribute(): array
             <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
             <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
             <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-=======
-            <h4>{{ __('saluteora::patients.health_card') }}</h4>
-            <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-            <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-            <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-            <h4>{{ __('saluteora::patients.health_card') }}</h4>
-            <h4>{{ __('saluteora::patients.health_card') }}</h4>
-            <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-            <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-            <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-            <h4>{{ __('saluteora::patients.health_card') }}</h4>
-            <h4>{{ __('<nome progetto>::patients.health_card') }}</h4>
-            <h4>{{ __('saluteora::patients.health_card') }}</h4>
->>>>>>> 6ed19256f (.)
             <img src="{{ $patient->getFirstMediaUrl('tessere_sanitarie', 'thumbnail') }}"
                  alt="Tessera Sanitaria"
                  class="w-full h-32 object-cover rounded">
             <a href="{{ $patient->getFirstMediaUrl('tessere_sanitarie') }}"
                target="_blank"
                class="text-blue-600 text-sm">
-<<<<<<< HEAD
                 {{ __('<nome progetto>::common.view_document') }}
-=======
-                {{ __('saluteora::common.view_document') }}
->>>>>>> 6ed19256f (.)
             </a>
         </div>
     @endif
 
     @if($patient->hasMedia('certificazioni_isee'))
         <div class="document-preview">
-<<<<<<< HEAD
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
 
     @if($patient->hasMedia('certificazioni_isee'))
@@ -625,40 +516,22 @@ public function getCertificationsAttribute(): array
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
                 {{ __('<nome progetto>::common.view_document') }}
                 {{ __('<nome progetto>::common.view_document') }}
-=======
-            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
-
-    @if($patient->hasMedia('certificazioni_isee'))
-        <div class="document-preview">
-            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
-                {{ __('<nome progetto>::common.view_document') }}
-                {{ __('saluteora::common.view_document') }}
->>>>>>> 6ed19256f (.)
             </a>
         </div>
     @endif
     @if($patient->hasMedia('certificazioni_isee'))
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
-<<<<<<< HEAD
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
             <h4>{{ __('<nome progetto>::patients.isee_certificate') }}</h4>
-=======
-            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
-            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
-            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
-            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
-            <h4>{{ __('saluteora::patients.isee_certificate') }}</h4>
->>>>>>> 6ed19256f (.)
             <div class="bg-red-100 h-32 flex items-center justify-center rounded">
                 <i class="fas fa-file-pdf text-red-600 text-3xl"></i>
             </div>
             <a href="{{ $patient->getFirstMediaUrl('certificazioni_isee') }}"
                target="_blank"
                 {{ __('<nome progetto>::common.download_pdf') }}
-<<<<<<< HEAD
                 {{ __('<nome progetto>::common.download_pdf') }}
 </div>
 ## 🚀 Vantaggi della Migrazione
@@ -668,22 +541,10 @@ public function getCertificationsAttribute(): array
                class="text-blue-600 text-sm">
                 {{ __('<nome progetto>::common.download_pdf') }}
                 {{ __('<nome progetto>::common.download_pdf') }}
-=======
-                {{ __('saluteora::common.download_pdf') }}
-</div>
-## 🚀 Vantaggi della Migrazione
-               class="text-blue-600 text-sm">
-                {{ __('saluteora::common.download_pdf') }}
-               class="text-blue-600 text-sm">
-               class="text-blue-600 text-sm">
-                {{ __('<nome progetto>::common.download_pdf') }}
-                {{ __('saluteora::common.download_pdf') }}
->>>>>>> 6ed19256f (.)
             </a>
         </div>
     @endif
                 {{ __('<nome progetto>::common.download_pdf') }}
-<<<<<<< HEAD
                 {{ __('<nome progetto>::common.download_pdf') }}
 </div>
 ## 🚀 Vantaggi della Migrazione
@@ -693,26 +554,11 @@ public function getCertificationsAttribute(): array
                class="text-blue-600 text-sm">
                 {{ __('<nome progetto>::common.download_pdf') }}
                 {{ __('<nome progetto>::common.download_pdf') }}
-=======
-                {{ __('saluteora::common.download_pdf') }}
-</div>
-## 🚀 Vantaggi della Migrazione
-               class="text-blue-600 text-sm">
-                {{ __('saluteora::common.download_pdf') }}
-               class="text-blue-600 text-sm">
-               class="text-blue-600 text-sm">
-                {{ __('<nome progetto>::common.download_pdf') }}
-                {{ __('saluteora::common.download_pdf') }}
->>>>>>> 6ed19256f (.)
             </a>
         </div>
     @endif
                 {{ __('<nome progetto>::common.download_pdf') }}
-<<<<<<< HEAD
                 {{ __('<nome progetto>::common.download_pdf') }}
-=======
-                {{ __('saluteora::common.download_pdf') }}
->>>>>>> 6ed19256f (.)
 </div>
 ## 🚀 Vantaggi della Migrazione
 ### **Tecnici**
@@ -824,7 +670,6 @@ public function downloadDocument(Media $media): Response
 - [UI Components Docs](./filament-components-rules.md)
 - [Modulo Generico Models Architecture](../<nome modulo>/docs/models-architecture.md)
 - [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
-<<<<<<< HEAD
 - [<nome progetto> Models Architecture](../<nome progetto>/docs/models-architecture.md)
 
 - [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
@@ -832,15 +677,6 @@ public function downloadDocument(Media $media): Response
 
 - [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
 - [<nome progetto> Models Architecture](../<nome progetto>/docs/models-architecture.md)
-=======
-- [SaluteOra Models Architecture](../SaluteOra/docs/models-architecture.md)
-
-- [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
-- [SaluteOra Models Architecture](../SaluteOra/docs/models-architecture.md)
-
-- [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
-- [SaluteOra Models Architecture](../SaluteOra/docs/models-architecture.md)
->>>>>>> 6ed19256f (.)
 ### **Repository e Risorse**
 - [GitHub Filament Plugin](https://github.com/filamentphp/spatie-laravel-media-library-plugin)
 - [Spatie Media Library](https://github.com/spatie/laravel-medialibrary)
@@ -852,17 +688,10 @@ public function downloadDocument(Media $media): Response
 
 ### **Documentazione Correlata**
 - [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
-<<<<<<< HEAD
 - [<nome progetto> Models Architecture](../<nome progetto>/docs/models-architecture.md)
 
 - [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
 - [<nome progetto> Models Architecture](../<nome progetto>/docs/models-architecture.md)
-=======
-- [SaluteOra Models Architecture](../SaluteOra/docs/models-architecture.md)
-
-- [Spatie Media Library Official Docs](https://spatie.be/docs/laravel-medialibrary)
-- [SaluteOra Models Architecture](../SaluteOra/docs/models-architecture.md)
->>>>>>> 6ed19256f (.)
 
 ### **Repository e Risorse**
 - [GitHub Filament Plugin](https://github.com/filamentphp/spatie-laravel-media-library-plugin)
@@ -887,60 +716,29 @@ public function downloadDocument(Media $media): Response
 - Cleanup automatico temporary uploads
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-<<<<<<< HEAD
 *Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
-=======
-*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x*
-*Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-*Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x*
->>>>>>> 6ed19256f (.)
 
 ---
 
-*Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
-<<<<<<< HEAD
 *Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
-=======
-*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x*
->>>>>>> 6ed19256f (.)
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-*Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-<<<<<<< HEAD
 *Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
-=======
-*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x*
-*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x*
->>>>>>> 6ed19256f (.)
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-*Ultimo aggiornamento: Dicembre 2024*
-*Versione: 1.0*
-*Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-<<<<<<< HEAD
-*Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
-*Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
 *Versione: 1.0*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot <nome progetto>, Spatie Media Library 11.x, Filament 3.x*
-=======
-*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x*
-*Ultimo aggiornamento: Dicembre 2024*
-*Versione: 1.0*
-*Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-*Compatibilità: Laraxot SaluteOra, Spatie Media Library 11.x, Filament 3.x*
->>>>>>> 6ed19256f (.)
 # Migrazione da FileUpload a Spatie Media Library
 
 ## 🌍 Analisi Multidimensionale della Migrazione
@@ -1475,12 +1273,7 @@ public function downloadDocument(Media $media): Response
 
 ---
 
-*Ultimo aggiornamento: Dicembre 2024*
 *Versione: 1.0*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-<<<<<<< HEAD
 *Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
-=======
-*Compatibilità: Laraxot , Spatie Media Library 11.x, Filament 3.x*
->>>>>>> 6ed19256f (.)

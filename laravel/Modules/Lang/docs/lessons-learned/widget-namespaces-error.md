@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Lesson Learned: Errore Namespace Widget di Autenticazione"
+module: "Lang"
+type: concept
+tags: [filament4, migration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament4 migration"
+related:
+  - "./italian-text-refined-audit-report.md"
+  - "../italian-text-refined-audit-report.md"
+status: draft
+---
 # Lesson Learned: Errore Namespace Widget di Autenticazione
 
 ## ❌ **Errore Commesso**
@@ -41,13 +56,8 @@ Tutti i widget che gestiscono **autenticazione/UI tema**:
 
 ### Widget Funzionali → Namespace Modulo
 Tutti i widget con **logica di business specifica**:
-<<<<<<< HEAD
 - `DoctorAppointmentsWidget` → `<nome progetto>::`
 - `PatientStatsWidget` → `<nome progetto>::`
-=======
-- `DoctorAppointmentsWidget` → `saluteora::`
-- `PatientStatsWidget` → `saluteora::`
->>>>>>> 6ed19256f (.)
 - `RecentLoginsWidget` → `user::`
 
 **Motivo**: Logica specifica del modulo.
@@ -100,10 +110,9 @@ Quando creo un nuovo widget, chiedermi:
 ### Documentazione di Riferimento
 - [Widget View Namespaces](../frontend/widget-view-namespaces.md)
 - [Auth Widgets Namespaces](../../laravel/Modules/User/docs/auth-widgets-view-namespaces.md)
-<<<<<<< HEAD
 - [Auth Widgets Namespaces](../../laravel/modules/user/docs/auth-widgets-view-namespaces.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Auth Widgets Namespaces](../../../User/docs/auth-widgets-view-namespaces.md)
+- [Auth Widgets Namespaces](../../../User/docs/auth-widgets-view-namespaces.md)
 - [Struttura Temi](../tecnico/themes/theme-structure.md)
 
 ### Pattern di Controllo
@@ -137,8 +146,4 @@ Questo errore ha evidenziato l'importanza di:
 
 La separazione tema/modulo è una decisione architetturale fondamentale che richiede comprensione, non automatismo.
 
-<<<<<<< HEAD
 *Errore commesso e documentato: Dicembre 2024*
-=======
-*Errore commesso e documentato: Dicembre 2024*
->>>>>>> 6ed19256f (.)

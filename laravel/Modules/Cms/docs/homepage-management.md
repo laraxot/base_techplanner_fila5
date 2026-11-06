@@ -1,3 +1,15 @@
+---
+title: "homepage management"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "homepage management"
+issues: []
+discussions: []
+status: draft
+---
+
 # Gestione Homepage
 
 ## Introduzione
@@ -80,8 +92,4 @@ La homepage è la pagina principale del sito e richiede una gestione speciale pe
 - [Content Management](./content-management.md)
 - [Page Management](./page-management.md)
 - [Frontend Architecture](./frontend-architecture.md)
-- [Documentazione Core](../Xot/docs/documentation.md)
-<<<<<<< HEAD
 - [Documentazione Core](../xot/docs/documentation.md)
-=======
->>>>>>> 6ed19256f (.)

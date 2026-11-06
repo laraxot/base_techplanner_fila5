@@ -1,8 +1,15 @@
+---
+title: "Organizzazione Cartella BashScripts"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "organizzazione cartella bashscripts xot"
+---
 # Organizzazione Cartella BashScripts
 
 ## Regola Fondamentale
 
-<<<<<<< HEAD
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
@@ -52,9 +59,6 @@ La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
-=======
-La cartella `/var/www/html/_bases/base_saluteora/bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
->>>>>>> 6ed19256f (.)
 
 ## Struttura Organizzata
 
@@ -107,7 +111,6 @@ bashscripts/
 
 #### 8. **translations/** - Gestione Traduzioni
 - `fix_all_english_translations.sh` - Fix traduzioni inglesi
-<<<<<<< HEAD
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
@@ -152,9 +155,6 @@ bashscripts/
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
-=======
-- `fix_saluteora_translations.sh` - Fix traduzioni SaluteOra
->>>>>>> 6ed19256f (.)
 - `verify_translations_syntax.sh` - Verifica sintassi traduzioni
 
 #### 9. **utilities/** - Utilità Generali
@@ -210,10 +210,7 @@ Le seguenti sottocartelle esistevano già e contengono script specifici:
 ## Implementazione
 
 La riorganizzazione è stata completata il **2025-01-29** seguendo questi passaggi:
-<<<<<<< HEAD
 La riorganizzazione è stata completata il **[DATE]** seguendo questi passaggi:
-=======
->>>>>>> 6ed19256f (.)
 
 1. **Creazione sottocartelle tematiche**
 2. **Categorizzazione e spostamento file**
@@ -244,11 +241,7 @@ Per mantenere questa organizzazione:
 
 ## Regola Fondamentale
 
-<<<<<<< HEAD
 La cartella `bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
-=======
-La cartella `/var/www/html/_bases/base_saluteora/bashscripts` deve contenere **SOLO** il file `README.md` nella root. Tutti gli altri file devono essere categorizzati e organizzati in sottocartelle tematiche.
->>>>>>> 6ed19256f (.)
 
 ## Struttura Organizzata
 
@@ -301,11 +294,7 @@ bashscripts/
 
 #### 8. **translations/** - Gestione Traduzioni
 - `fix_all_english_translations.sh` - Fix traduzioni inglesi
-<<<<<<< HEAD
 - `fix_<nome progetto>_translations.sh` - Fix traduzioni <nome progetto>
-=======
-- `fix_saluteora_translations.sh` - Fix traduzioni SaluteOra
->>>>>>> 6ed19256f (.)
 - `verify_translations_syntax.sh` - Verifica sintassi traduzioni
 
 #### 9. **utilities/** - Utilità Generali
@@ -386,8 +375,4 @@ Per mantenere questa organizzazione:
 ---
 
 *Ultimo aggiornamento: 2025-01-29*
-<<<<<<< HEAD
 *Responsabile: Sistema di Automazione Laraxot*
-=======
-*Responsabile: Sistema di Automazione Laraxot*
->>>>>>> 6ed19256f (.)

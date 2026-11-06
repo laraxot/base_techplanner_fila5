@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: conflicts-analysis
-canonical: ../../../Themes/docs/shared-components/conflicts-analysis.md
+issues: []
+discussions: []
+title: "Analisi Conflitti - README.md"
+module: "Media"
+type: concept
+tags: [conflicts, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "conflicts analysis"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/conflicts-analysis.md
-=======
 # Analisi Conflitti - README.md
 
 ## Obiettivi Funzionali
@@ -17,4 +22,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/conflicts-an
 
 ## Collegamenti correlati
 - [[conflicts_overview]]
->>>>>>> 6ed19256f (.)

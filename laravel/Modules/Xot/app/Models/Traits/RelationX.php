@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\MorphPivot;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
@@ -18,23 +19,16 @@ use Webmozart\Assert\Assert;
 trait RelationX
 {
     /**
-<<<<<<< HEAD
-     * @param class-string<Model>             $related         Related model class
-     * @param class-string<Model>|string|null $_table          Pivot table name
-     * @param string|null                     $foreignPivotKey Foreign pivot key
-     * @param string|null                     $relatedPivotKey Related pivot key
-     * @param string|null                     $parentKey       Parent key
-     * @param string|null                     $relatedKey      Related key
-     * @param string|null                     $relation        Relation name
-=======
-     * @param  class-string<Model>  $related  Related model class
+     * @template TRelatedModel of Model
+     *
+     * @param  class-string<TRelatedModel>  $related  Related model class
      * @param  class-string<Model>|string|null  $_table  Pivot table name
      * @param  string|null  $foreignPivotKey  Foreign pivot key
      * @param  string|null  $relatedPivotKey  Related pivot key
      * @param  string|null  $parentKey  Parent key
      * @param  string|null  $relatedKey  Related key
      * @param  string|null  $relation  Relation name
->>>>>>> 6ed19256f (.)
+     * @return BelongsToMany<TRelatedModel, $this, Pivot, 'pivot'>
      */
     public function belongsToManyX(
         string $related,
@@ -45,6 +39,7 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
     ): BelongsToMany {
+        Assert::subclassOf($related, Model::class);
         Assert::isInstanceOf(
             $related_model = app($related),
             Model::class,
@@ -54,23 +49,7 @@ trait RelationX
         $table = $pivot->getTable();
         $pivotFields = $pivot->getFillable();
 
-        $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
-        $relatedDbName = $related_model->getConnection()->getDatabaseName();
-        // if ($pivotDbName !== $dbName) {
-        if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
-            $pivotDriver = $pivot->getConnection()->getDriverName();
-            // Only add database prefix for non-SQLite drivers
-            // SQLite doesn't support database.table syntax
-<<<<<<< HEAD
-            if ('sqlite' !== $pivotDriver) {
-=======
-            if ($pivotDriver !== 'sqlite') {
->>>>>>> 6ed19256f (.)
-                $table = $pivotDbName.'.'.$table;
-            }
-        }
-        // }
+        $table = $this->qualifyPivotTable($pivot, $related_model, $table);
 
         return $this->belongsToMany(
             related: $related,
@@ -87,16 +66,33 @@ trait RelationX
     }
 
     /**
+     * Relazione polimorfica per tabella: il padre sta in una tabella condivisa (es. log) e le righe
+     * si riconoscono da due colonne, il nome della tabella del padre e la sua chiave.
+     *
+     * Non e' un morph di Laravel: non usa il morph map, quindi non dipende dal morph class del tenant.
+     *
+     * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
+     *
+     * @param  class-string<TRelatedModel>  $related
+     * @return HasMany<TRelatedModel, $this>
+     */
+    public function tableMorphMany(
+        string $related,
+        string $typeColumn = 'tbl',
+        string $idColumn = 'id_tbl',
+    ): HasMany {
+        Assert::subclassOf($related, Model::class);
+
+        return $this->hasMany($related, $idColumn, 'id')
+            ->where($typeColumn, $this->getTable());
+    }
+
+    /**
      * Define a polymorphic many-to-many relationship.
      *
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
      *
-<<<<<<< HEAD
-     * @param class-string<TRelatedModel> $related
-=======
      * @param  class-string<TRelatedModel>  $related
->>>>>>> 6ed19256f (.)
-     *
      * @return MorphToMany<TRelatedModel, $this>
      */
     public function morphToManyX(
@@ -110,20 +106,12 @@ trait RelationX
         ?string $relation = null,
         bool $inverse = false,
     ): MorphToMany {
-        $pivot = $this->guessMorphPivot($related);
-        $table = $pivot->getTable();
-        $pivotFields = $pivot->getFillable();
+        Assert::subclassOf($related, Model::class);
+        Assert::isInstanceOf($related_model = app($related), Model::class);
 
-        $pivotDbName = $pivot->getConnection()->getDatabaseName();
-        $dbName = $this->getConnection()->getDatabaseName();
-        // $relatedDbName = $related_model->getConnection()->getDatabaseName();
-<<<<<<< HEAD
-        if (null === $table) {
-=======
-        if ($table === null) {
->>>>>>> 6ed19256f (.)
-            $table = $pivot->getTable();
-        }
+        $pivot = $this->guessMorphPivot($related);
+        $table = $this->qualifyPivotTable($pivot, $related_model, $pivot->getTable());
+        $pivotFields = $pivot->getFillable();
 
         return $this->morphToMany(
             related: $related,
@@ -141,6 +129,29 @@ trait RelationX
             ->withTimestamps();
     }
 
+    /**
+     * Prefissa la tabella pivot col nome del database quando pivot, model e related
+     * stanno su database diversi (relazioni cross-database tra moduli).
+     *
+     * SQLite non supporta la sintassi `database.table`: li' la tabella resta invariata.
+     */
+    private function qualifyPivotTable(Model $pivot, Model $related, string $table): string
+    {
+        $pivotDbName = $pivot->getConnection()->getDatabaseName();
+        $dbName = $this->getConnection()->getDatabaseName();
+        $relatedDbName = $related->getConnection()->getDatabaseName();
+
+        if ($pivotDbName === $dbName && $relatedDbName === $dbName) {
+            return $table;
+        }
+
+        if ($pivot->getConnection()->getDriverName() === 'sqlite') {
+            return $table;
+        }
+
+        return $pivotDbName.'.'.$table;
+    }
+
     public function guessMorphPivot(string $related, ?string $_class = null): MorphPivot
     {
         $class = $this::class;
@@ -156,13 +167,8 @@ trait RelationX
     /**
      * Guess the pivot class for a many-to-many relationship.
      *
-<<<<<<< HEAD
-     * @param string                   $related The related model class name
-     * @param string|class-string|null $class   The class to use for parent class lookup (used internally)
-=======
      * @param  string  $related  The related model class name
      * @param  string|class-string|null  $class  The class to use for parent class lookup (used internally)
->>>>>>> 6ed19256f (.)
      */
     public function guessPivot(string $related, ?string $class = null): Pivot
     {
@@ -213,11 +219,7 @@ trait RelationX
     private function tryParentClassPivot(string $pivot_name, string $related, string $class): string
     {
         $parent_class = get_parent_class($class);
-<<<<<<< HEAD
-        if (false === $parent_class) {
-=======
         if ($parent_class === false) {
->>>>>>> 6ed19256f (.)
             return $this->buildPivotClassName($class, $pivot_name);
         }
 

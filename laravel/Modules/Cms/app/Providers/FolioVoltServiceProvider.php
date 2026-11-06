@@ -7,30 +7,24 @@ namespace Modules\Cms\Providers;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\File;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Folio\Folio;
+use Laravel\Folio\FolioRoutes;
 use Livewire\Volt\Volt;
-<<<<<<< HEAD
 use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter;
 use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes;
 use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
 use Modules\Cms\Http\Middleware\SetFolioLocale;
-=======
-use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
-use Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter;
-use Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect;
->>>>>>> 6ed19256f (.)
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
 
-<<<<<<< HEAD
+use function Safe\preg_replace;
 use function Safe\realpath;
 
 use Webmozart\Assert\Assert;
 
-=======
->>>>>>> 6ed19256f (.)
 class FolioVoltServiceProvider extends ServiceProvider
 {
     /**
@@ -45,6 +39,46 @@ class FolioVoltServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        // Folio registra una rotta catch-all marcata `fallback`. Laravel, fra piu'
+        // fallback, sceglie la PRIMA registrata. Filament marca come fallback la
+        // home di un pannello con multi-tenancy (`/{panelPath}/{tenant}`, vedi
+        // Filament\Pages\Concerns\HasRoutes): se Folio si registra prima, la home
+        // di ogni pannello multi-tenant risponde 404 perche' la catch-all di Folio
+        // la precede. Rimandando la registrazione a container gia' avviato, la
+        // fallback di Folio finisce in coda e resta l'ultima risorsa, che e' il
+        // suo ruolo.
+        $this->app->booted(function (): void {
+            $this->registerFolioPaths();
+        });
+    }
+
+    /**
+     * Le pagine Folio sono montate una volta per lingua con lo stesso nome di rotta e FolioRoutes tiene
+     * l'ultima (`it`): `route('container0.view')` rimandava a `/it/...` anche da `/de` (DCP-123).
+     * Il resolver di Folio viene sostituito da uno che sposta il prefisso sulla lingua corrente.
+     *
+     * @param  list<string>  $supportedLocales
+     */
+    protected function localizeFolioNamedRoutes(array $supportedLocales): void
+    {
+        $localePrefix = '#^((?:https?://[^/]+)?)/(?:'.implode('|', array_map(preg_quote(...), $supportedLocales)).')(?=[/?\#]|$)#';
+
+        URL::resolveMissingNamedRoutesUsing(
+            static function (string $name, array $parameters, bool $absolute) use ($localePrefix): ?string {
+                $routes = app(FolioRoutes::class);
+
+                return $routes->has($name)
+                    ? preg_replace($localePrefix, '${1}/'.app()->getLocale(), $routes->get($name, $parameters, $absolute), 1)
+                    : null;
+            }
+        );
+    }
+
+    /**
+     * Registra i path Folio del tema e dei moduli, e monta i componenti Volt.
+     */
+    protected function registerFolioPaths(): void
+    {
         /*
          * Folio::path(resource_path('views/pages'))->middleware([
          * '*' => [
@@ -57,16 +91,12 @@ class FolioVoltServiceProvider extends ServiceProvider
         try {
             // Verifica se siamo in ambiente console e se il problema "env" è presente
             // In questo caso, usa array vuoto per permettere al server di partire
-<<<<<<< HEAD
             if (app()->runningInConsole() && ! app()->environment('testing')) {
-=======
-            if (app()->runningInConsole()) {
->>>>>>> 6ed19256f (.)
                 // Durante il bootstrap dei comandi artisan, potrebbe esserci un problema
                 // con la risoluzione di "env" come classe. Usiamo array vuoto come fallback.
                 $base_middleware = [];
             } else {
-                $middleware = TenantService::config('middleware');
+                $middleware = app(ResolveTenantConfigValueAction::class)->execute('middleware');
                 if (is_array($middleware)) {
                     $base_middleware = Arr::get($middleware, 'base', []);
                     if (! is_array($base_middleware)) {
@@ -74,25 +104,18 @@ class FolioVoltServiceProvider extends ServiceProvider
                     }
                 }
             }
-<<<<<<< HEAD
 
             // Assicuriamoci che 'web' sia presente se non siamo in console (o siamo in testing)
             if (! \in_array('web', $base_middleware, true)) {
                 array_unshift($base_middleware, 'web');
             }
-=======
->>>>>>> 6ed19256f (.)
         } catch (\Exception $e) {
             // Se c'è un errore nel caricamento della configurazione middleware, usa array vuoto
             // Questo evita errori durante il bootstrap quando la configurazione non è disponibile
             $base_middleware = [];
         }
 
-<<<<<<< HEAD
         $base_middleware[] = LaravelLocalizationRoutes::class;
-=======
-        // $base_middleware[]=\Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class;
->>>>>>> 6ed19256f (.)
         $base_middleware[] = LocaleSessionRedirect::class;
         $base_middleware[] = LaravelLocalizationRedirectFilter::class;
         // $base_middleware[]=\Mcamara\LaravelLocalization\Middleware\LocaleCookieRedirect::class;
@@ -101,15 +124,10 @@ class FolioVoltServiceProvider extends ServiceProvider
         $theme_path = XotData::make()->getPubThemeViewPath('pages');
 
         // Ottieni tutte le lingue supportate
-<<<<<<< HEAD
         $supportedLocalesConfig = config('laravellocalization.supportedLocales', ['it' => []]);
         Assert::isArray($supportedLocalesConfig);
         /** @var array<string, mixed> $supportedLocalesConfig */
         $supportedLocales = array_map('strval', array_keys($supportedLocalesConfig));
-=======
-        $supportedLocales = array_keys(config('laravellocalization.supportedLocales', ['it' => []]));
->>>>>>> 6ed19256f (.)
-        $defaultLocale = config('app.locale', 'it');
 
         /**
          * @var Collection<int, \Nwidart\Modules\Module> $modules
@@ -119,33 +137,19 @@ class FolioVoltServiceProvider extends ServiceProvider
 
         // Verifica che il percorso tema esista e sia una directory prima di passarlo a Folio
         if (File::exists($theme_path) && File::isDirectory($theme_path)) {
-<<<<<<< HEAD
-=======
-            // Registra Folio per ogni lingua supportata
->>>>>>> 6ed19256f (.)
             foreach ($supportedLocales as $locale) {
                 Folio::path($theme_path)
                     ->uri($locale)
                     ->middleware([
-<<<<<<< HEAD
                         '*' => [
                             SetFolioLocale::class,
                             ...$base_middleware,
                         ],
-=======
-                        '*' => array_merge($base_middleware, [
-                            function ($request, $next) use ($locale) {
-                                app()->setLocale($locale);
-                                return $next($request);
-                            },
-                        ]),
->>>>>>> 6ed19256f (.)
                     ]);
             }
             $paths[] = $theme_path;
         }
 
-<<<<<<< HEAD
         // Theme Livewire block components: livewire/ → blocks.events.detail, components/blocks → events.detail
         $theme_views = \dirname($theme_path);
         $theme_livewire = $theme_views.\DIRECTORY_SEPARATOR.'livewire';
@@ -157,38 +161,35 @@ class FolioVoltServiceProvider extends ServiceProvider
             $paths[] = realpath($theme_components_blocks);
         }
 
-=======
->>>>>>> 6ed19256f (.)
         foreach ($modules as $module) {
             $path = $module->getPath().'/resources/views/pages';
             if (! File::exists($path) || ! File::isDirectory($path)) {
                 continue;
             }
+
+            $apiPath = $path.'/api';
+            if (File::exists($apiPath) && File::isDirectory($apiPath)) {
+                Folio::path($apiPath)
+                    ->uri('/api')
+                    ->middleware([
+                        '*' => ['web'],
+                    ]);
+            }
+
             $paths[] = $path;
-<<<<<<< HEAD
-=======
-            // Registra Folio per ogni lingua supportata
->>>>>>> 6ed19256f (.)
             foreach ($supportedLocales as $locale) {
                 Folio::path($path)
                     ->uri($locale)
                     ->middleware([
-<<<<<<< HEAD
                         '*' => [
                             SetFolioLocale::class,
                             ...$base_middleware,
                         ],
-=======
-                        '*' => array_merge($base_middleware, [
-                            function ($request, $next) use ($locale) {
-                                app()->setLocale($locale);
-                                return $next($request);
-                            },
-                        ]),
->>>>>>> 6ed19256f (.)
                     ]);
             }
         }
+
+        $this->localizeFolioNamedRoutes($supportedLocales);
 
         if (! empty($paths)) {
             Volt::mount($paths);

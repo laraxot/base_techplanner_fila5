@@ -9,14 +9,16 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\GetClassNameByPathAction;
 use Modules\Xot\Datas\ComponentFileData;
+use Spatie\LaravelData\DataCollection;
+use Spatie\QueueableAction\QueueableAction;
+use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
 
-use Spatie\LaravelData\DataCollection;
-use Webmozart\Assert\Assert;
-
 final class GetAllBlocksAction
 {
+    use QueueableAction;
+
     /**
      * @return DataCollection<int, ComponentFileData>
      */
@@ -26,7 +28,11 @@ final class GetAllBlocksAction
 
         $files = File::glob(base_path('Modules').'/*/'.$relativePath.'/../Filament/Blocks/*.php');
 
-        $blocks = Arr::map($files, function (string $path) {
+        /** @var list<string> $files */
+        $files = is_array($files) ? array_values($files) : [];
+
+        /** @var array<int, array{name: string, class: class-string, module: string, path: string|false}> $blocks */
+        $blocks = Arr::map($files, function (string $path): array {
             $path = realpath($path);
             $class = app(GetClassNameByPathAction::class)->execute($path);
 
@@ -45,6 +51,6 @@ final class GetAllBlocksAction
             ];
         });
 
-        return ComponentFileData::collection($blocks);
+        return ComponentFileData::collection(array_values($blocks));
     }
 }

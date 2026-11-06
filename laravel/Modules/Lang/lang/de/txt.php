@@ -8,7 +8,7 @@ return [
             'label' => 'E-Mail',
             'placeholder' => 'Geben Sie Ihre E-Mail ein',
             'tooltip' => 'Verwenden Sie eine gültige E-Mail-Adresse',
-            'icon' => 'heroicon-o-mail',
+            'icon' => 'heroicon-o-envelope',
             'description' => 'email',
             'helper_text' => '',
         ],
@@ -45,16 +45,13 @@ return [
             'label' => 'request',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

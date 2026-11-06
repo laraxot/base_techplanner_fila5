@@ -1,9 +1,20 @@
+---
+title: "integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Integrazione Documentazione
 
 ## Documentazione Collegata
 
 ### Filament
-<<<<<<< HEAD
 - [Risorse Filament](../../docs/filament-risorse.md)
 - [Personalizzazioni Avanzate](../../docs/filament-personalizzazioni-avanzate.md)
 - [Gestione Contenuti](../../docs/gestione-contenuti-json.md)
@@ -11,27 +22,12 @@
 ### Struttura e Convenzioni
 - [Namespace Convention](../../docs/namespace-convention.md)
 - [Namespace Structure](../../docs/namespace-structure.md)
-- [Namespace Rules](../../docs/namespace-rules.md)
+- [Namespace Rules](../../../../docs/namespace-rules.md)
 
 ### Implementazione
 - [Standard Codice](../../docs/standard-codice.md)
 - [Traduzioni](../../docs/traduzioni.md)
 - [Componenti e Blocchi](../../docs/componenti-blocchi-contenuto.md)
-=======
-- [Risorse Filament](../docs/filament-risorse.md)
-- [Personalizzazioni Avanzate](../docs/filament-personalizzazioni-avanzate.md)
-- [Gestione Contenuti](../docs/gestione-contenuti-json.md)
-
-### Struttura e Convenzioni
-- [Namespace Convention](../docs/namespace-convention.md)
-- [Namespace Structure](../docs/namespace-structure.md)
-- [Namespace Rules](../docs/namespace-rules.md)
-
-### Implementazione
-- [Standard Codice](../docs/standard-codice.md)
-- [Traduzioni](../docs/traduzioni.md)
-- [Componenti e Blocchi](../docs/componenti-blocchi-contenuto.md)
->>>>>>> 6ed19256f (.)
 
 ## Best Practices
 
@@ -85,24 +81,13 @@
 ### Versione HEAD
 
 ## Collegamenti tra versioni di integration.md
-* [integration.md](../../../Gdpr/docs/integration.md)
-* [integration.md](../../../Xot/docs/integration.md)
-* [integration.md](../../../Job/docs/integration.md)
-<<<<<<< HEAD
-* [integration.md](../../../gdpr/docs/integration.md)
+* [integration.md](../../Gdpr/docs/integration.md)
 * [integration.md](../../../xot/docs/integration.md)
 * [integration.md](../../../job/docs/integration.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ---
-
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

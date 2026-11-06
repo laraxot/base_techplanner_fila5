@@ -3,6 +3,20 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
+        'list' => [
+            'label' => 'Lista',
+            'icon' => 'heroicon-o-list-bullet',
+            'color' => 'primary',
+            'description' => 'Lista',
+        ],
+        'grid' => [
+            'label' => 'Grelha',
+            'icon' => 'heroicon-o-squares-2x2',
+            'color' => 'secondary',
+            'description' => 'Grelha',
+        ],
+    ],
     'actions' => [
         'toggle' => [
             'label' => 'Alternar layout',
@@ -10,7 +24,6 @@ return [
             'helper_text' => 'Alterar o tipo de visualização',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +35,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

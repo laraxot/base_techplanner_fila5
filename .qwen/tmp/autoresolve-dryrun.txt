@@ -1,0 +1,2209 @@
+laravel/Modules/Xot/.gitattributes: CLEAN
+laravel/Modules/Xot/.github/CONTRIBUTING.md: SEMANTIC 0/1
+laravel/Modules/Xot/.gitignore: SEMANTIC 0/4
+laravel/Modules/Xot/README.md: MANUAL end without mid @145
+laravel/Modules/Xot/_module_xot.code-workspace: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Arr/ArrayToRawJsAction.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Actions/Arr/DiffAssocRecursiveAction.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Actions/Arr/RangeIntersectAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Arr/SavePhpArrayAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Array/DiffAssocRecursiveAction.php: MANUAL nested start @42
+laravel/Modules/Xot/app/Actions/ArrayAction.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Actions/ArtisanAction.php: SEMANTIC 0/10
+laravel/Modules/Xot/app/Actions/Blade/RegisterBladeComponentsAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Cast/SafeArrayByModelCastAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Cast/SafeArrayCastAction.php: MANUAL nested start @112
+laravel/Modules/Xot/app/Actions/Cast/SafeAttributeCastAction.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Actions/Cast/SafeBooleanCastAction.php: SEMANTIC 0/9
+laravel/Modules/Xot/app/Actions/Cast/SafeEloquentCastAction.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Actions/Cast/SafeFloatCastAction.php: MANUAL nested start @91
+laravel/Modules/Xot/app/Actions/Cast/SafeIntCastAction.php: MANUAL nested start @79
+laravel/Modules/Xot/app/Actions/Cast/SafeNullableStringCastAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Cast/SafeObjectCastAction.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Actions/Cast/SafeStringCastAction.php: MANUAL nested start @55
+laravel/Modules/Xot/app/Actions/Collection/TransCollectionAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Composer/RegisterRuntimePsr4NamespacesAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/ExecuteArtisanCommandAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Export/ExportXlsByCollection.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Actions/Export/ExportXlsByLazyCollection.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Export/ExportXlsStreamByLazyCollection.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Actions/Export/PdfByHtmlAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Factory/GetFactoryAction.php: SEMANTIC 0/8
+laravel/Modules/Xot/app/Actions/Filament/Actions/ExportButton.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Filament/Actions/ImportButton.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Filament/GenerateFormByFileAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Filament/GenerateTableColumnsByFileAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Filament/PlainTextFromFilamentValueAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/File/AssetAction.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Actions/File/DownloadZipByPathsDiskAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/File/FileAction.php: SEMANTIC 0/24
+laravel/Modules/Xot/app/Actions/File/GetComponentsAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Generate/GenerateModelByModelClass.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/GetTransKeyAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/GetViewAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Html/HtmlToPdfAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/HtmlAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Import/ImportCsvAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/CreateMorphToOneRelatedModelAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/DeleteTableIndexByModelClassIndexNameAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/FilterRelationsAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/GenerateModelByTableAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/GetAllModelsByModuleNameAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Model/GetSicureArrayByModelAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/GetTableIndexesByModelClassAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Store/BelongsToAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Store/HasManyDeepAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Store/HasManyThroughAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Store/MorphManyAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Store/MorphToManyAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Store/MorphedByManyAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Store/PivotAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Update/CustomRelationAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Update/HasManyAction.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Actions/Model/Update/HasManyDeepAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Update/HasManyThroughAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Update/MorphManyAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Update/MorphToOneAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Update/MorphedByManyAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Model/Update/PivotAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/ModelClass/UpdateCountAction.php: MANUAL end without mid @24
+laravel/Modules/Xot/app/Actions/ModuleAction.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Actions/Route/BuildActionUrlAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Route/BuildNestedRouteNameAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Route/GetCurrentRouteViewAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Actions/Route/IsAdminRouteAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Actions/Trend/BuildTrendCollectionAction.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Casts/PhoneCast.php: MANUAL nested start @37
+laravel/Modules/Xot/app/Console/Commands/ListFilamentPanels.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Console/Commands/OptimizeFilamentMemoryCommand.php: SEMANTIC 0/16
+laravel/Modules/Xot/app/Console/Commands/ParsePrintPageStringCommand.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Console/Commands/SearchTextInDbCommand.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Console/Commands/ViewDatabaseConfigCommand.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Contracts/HasRecursiveRelationshipsContract.php: RESOLVED 1/1
+laravel/Modules/Xot/app/Database/Migrations/XotBaseMigration.php: SEMANTIC 0/9
+laravel/Modules/Xot/app/Datas/HasManyRelationData.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Datas/HasManyUpdateData.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Datas/RouteParamsData.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Datas/Transformers/AssetTransformer.php: CLEAN
+laravel/Modules/Xot/app/Datas/TrendData.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Datas/XotData.php: SEMANTIC 0/22
+laravel/Modules/Xot/app/Enums/DayOfWeek.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Enums/GenderEnum.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Enums/PdfEngineEnum.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Enums/YesNoEnum.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Exceptions/ApplicationError.php: SEMANTIC 0/5
+laravel/Modules/Xot/app/Exceptions/ExceptionHandler.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Exceptions/Formatters/WebhookErrorFormatter.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Exceptions/Handlers/HandlerDecorator.php: SEMANTIC 0/7
+laravel/Modules/Xot/app/Exceptions/Handlers/HandlersRepository.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Exports/LazyCollectionExport.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Exports/QueryExport.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Exports/ViewExport.php: MANUAL end without mid @32
+laravel/Modules/Xot/app/Filament/Actions/Form/FieldRefreshAction.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Filament/Actions/Header/ExportXlsAction.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Actions/Header/ExportXlsLazyAction.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Filament/Builders/FilterBuilder.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Filament/Clusters/XotBaseCluster.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Filament/Pages/XotBasePage.php: SEMANTIC 0/5
+laravel/Modules/Xot/app/Filament/Resources/CacheLockResource.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/CacheResource/Pages/ListCaches.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Filament/Resources/CacheResource.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/ExtraResource.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/LogResource/Pages/ViewLog.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/LogResource.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/ModuleResource/Pages/ListModules.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Filament/Resources/ModuleResource.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/Pages/XotBasePage.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/Schemas/XotBaseResourceForm.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Filament/Resources/SessionResource/Pages/ListSessions.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/SessionResource.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Resources/XotBaseResource.php: SEMANTIC 0/13
+laravel/Modules/Xot/app/Filament/Support/ColumnBuilder.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php: SEMANTIC 0/31
+laravel/Modules/Xot/app/Filament/Traits/NavigationPageLabelTrait.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Traits/TransFuncTrait.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Traits/TransTrait.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Filament/Widgets/ModulesOverviewWidget.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Widgets/StatesChartWidget.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Filament/Widgets/TestWidget.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Widgets/XotBaseInfolistWidget.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Widgets/XotBaseSchemaWidget.php: SEMANTIC 0/7
+laravel/Modules/Xot/app/Filament/Widgets/XotBaseTableWidget.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Helpers/PathHelper.php: MANUAL nested start @43
+laravel/Modules/Xot/app/Helpers/ResourceFormSchemaGenerator.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Http/Middleware/FilamentMemoryMonitorMiddleware.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Http/Middleware/SecurityMiddleware.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Mixins/PanelMixin.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Models/BaseModel.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Models/BaseRating.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/BaseRatingMorph.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Cache.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Models/CacheLock.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Models/Extra.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Models/Feed.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/HealthCheckResultHistoryItem.php: MANUAL end without mid @20
+laravel/Modules/Xot/app/Models/InformationSchemaTable.php: SEMANTIC 0/12
+laravel/Modules/Xot/app/Models/Log.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Models/Module.php: SEMANTIC 0/7
+laravel/Modules/Xot/app/Models/Policies/CacheLockPolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/CachePolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/ExtraPolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/FeedPolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/HealthCheckResultHistoryItemPolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/InformationSchemaTablePolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/LogPolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/ModulePolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/PulseAggregatePolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/PulseEntryPolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/PulseValuePolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/SessionPolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Policies/XotBasePolicy.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/PulseAggregate.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Models/PulseEntry.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Models/PulseValue.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Models/Session.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Models/Traits/HasCommonScopes.php: SEMANTIC 0/7
+laravel/Modules/Xot/app/Models/Traits/HasDynamicFillable.php: SEMANTIC 0/5
+laravel/Modules/Xot/app/Models/Traits/HasExtraTrait.php: SEMANTIC 0/5
+laravel/Modules/Xot/app/Models/Traits/HasXotFactory.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Models/Traits/RelationX.php: SEMANTIC 0/14
+laravel/Modules/Xot/app/Models/XotBaseModel.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Models/XotBaseMorphPivot.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Models/XotBasePivot.php: SEMANTIC 0/4
+laravel/Modules/Xot/app/Models/XotBaseUuidModel.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Providers/Filament/XotBasePanelProvider.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Providers/FilamentOptimizationServiceProvider.php: SEMANTIC 0/10
+laravel/Modules/Xot/app/Providers/RouteServiceProvider.php: SEMANTIC 0/7
+laravel/Modules/Xot/app/Providers/XotBaseRouteServiceProvider.php: SEMANTIC 0/5
+laravel/Modules/Xot/app/Providers/XotBaseServiceProvider.php: SEMANTIC 0/11
+laravel/Modules/Xot/app/QueryBuilders/BaseQueryBuilder.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/Relations/CustomRelation.php: SEMANTIC 0/10
+laravel/Modules/Xot/app/Resources/views/filament/pages/metatag.blade.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Rules/DateTimeRule.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Services/Artisan/Handlers/MigrationCommandHandler.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Services/ArtisanService.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Services/ConfigService.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Services/ModuleService.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/Services/RouteService.php: SEMANTIC 0/12
+laravel/Modules/Xot/app/Services/UrlService.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/States/Transitions/XotBaseTransition.php: SEMANTIC 0/7
+laravel/Modules/Xot/app/States/XotBaseState.php: SEMANTIC 0/14
+laravel/Modules/Xot/app/Traits/EnumTrait.php: SEMANTIC 0/8
+laravel/Modules/Xot/app/Traits/Filament/HasCustomModelLabel.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Traits/HasCsrfToken.php: SEMANTIC 0/1
+laravel/Modules/Xot/app/Traits/HasCustomRelations.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Traits/HasSchemalessAttributes.php: SEMANTIC 0/11
+laravel/Modules/Xot/app/Traits/HasTableFunctionsTrait.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/Traits/Updater.php: SEMANTIC 0/7
+laravel/Modules/Xot/app/ValueObjects/EmailValueObject.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/ValueObjects/PhoneValueObject.php: SEMANTIC 0/2
+laravel/Modules/Xot/app/View/Components/Dashboard/Item.php: SEMANTIC 0/3
+laravel/Modules/Xot/app/View/Components/XDebug.php: SEMANTIC 0/5
+laravel/Modules/Xot/app/View/Components/XotBaseComponent.php: SEMANTIC 0/6
+laravel/Modules/Xot/app/View/Components/_components.json: SEMANTIC 0/1
+laravel/Modules/Xot/app/View/Composers/XotComposer.php: SEMANTIC 0/6
+laravel/Modules/Xot/composer.json: SEMANTIC 0/4
+laravel/Modules/Xot/config/config.php: SEMANTIC 0/1
+laravel/Modules/Xot/config/xot.php: SEMANTIC 0/2
+laravel/Modules/Xot/database/factories/CacheFactory.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/factories/CacheLockFactory.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/factories/FeedFactory.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/factories/HealthCheckResultHistoryItemFactory.php: SEMANTIC 0/2
+laravel/Modules/Xot/database/factories/InformationSchemaTableFactory.php: SEMANTIC 0/3
+laravel/Modules/Xot/database/factories/LogFactory.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/factories/ModuleFactory.php: SEMANTIC 0/2
+laravel/Modules/Xot/database/factories/SessionFactory.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/migrations/2023_09_04_000000_create_cache_table.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/migrations/2023_09_04_125039_create_cache_locks_table.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/migrations/2023_09_04_125039_create_cache_table.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/migrations/2024_01_01_000001_create_health_check_result_history_items_table.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/migrations/2024_01_01_000001_create_sessions_table.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/migrations/2024_01_01_000015_create_extra_table.php: SEMANTIC 0/2
+laravel/Modules/Xot/database/migrations/2024_09_24_111828_create_pulse_aggregates_table.php: SEMANTIC 0/2
+laravel/Modules/Xot/database/migrations/2024_09_24_111828_create_pulse_entries_table.php: SEMANTIC 0/3
+laravel/Modules/Xot/database/migrations/2024_09_24_111828_create_pulse_values_table.php: SEMANTIC 0/2
+laravel/Modules/Xot/database/migrations/_archive_redundant/2023_09_04_000000_create_cache_table.php: SEMANTIC 0/1
+laravel/Modules/Xot/database/seeders/XotDatabaseSeeder.php: SEMANTIC 0/1
+laravel/Modules/Xot/docs/-integration/datatables.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/-integration/ffmpeg.md: MANUAL end without mid @59
+laravel/Modules/Xot/docs/-integration/search-search.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/-integration/todo-todo.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/-integration/uuid-uuid.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/-integration/uuid.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/-performance.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/-todo.md: MANUAL end without mid @2
+laravel/Modules/Xot/docs/.gitignore: SEMANTIC 0/1
+laravel/Modules/Xot/docs/00-index-v2.md: MANUAL end without mid @32
+laravel/Modules/Xot/docs/00-index.md: MANUAL orphan end @44
+laravel/Modules/Xot/docs/00-master-index.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/01-index-details.md: MANUAL end without mid @37
+laravel/Modules/Xot/docs/01-indexetails.md: MANUAL end without mid @52
+laravel/Modules/Xot/docs/CHANGELOG.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/CODE_QUALITY_STANDARDS.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/PERFORMANCE_GUIDELINES.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/README.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/WIDGET_IMPLEMENTATION_RULES.md: MANUAL orphan end @9
+laravel/Modules/Xot/docs/_integration/php-code-analysis-tools.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/_integration/soketi.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/_integration/to-integrate.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/_integration/to-study.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/about.md: MANUAL end without mid @24
+laravel/Modules/Xot/docs/access-level-parameter.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/accessor-audit-cross-modules.md: MANUAL end without mid @196
+laravel/Modules/Xot/docs/accessor-cross-modules.md: MANUAL end without mid @194
+laravel/Modules/Xot/docs/accessor-refactoring-complete-guide.md: MANUAL end without mid @321
+laravel/Modules/Xot/docs/accessor-refactoring.md: MANUAL end without mid @337
+laravel/Modules/Xot/docs/accessor-save-guard-global-rule.md: MANUAL end without mid @309
+laravel/Modules/Xot/docs/action-return-type-rule.md: MANUAL end without mid @63
+laravel/Modules/Xot/docs/action-service-provider-architecture.md: MANUAL end without mid @390
+laravel/Modules/Xot/docs/actions/01-standard-patterns.md: MANUAL end without mid @42
+laravel/Modules/Xot/docs/actions/array/save-json-array-action.md: MANUAL orphan end @69
+laravel/Modules/Xot/docs/actions/export/export-xls-by-collection.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/actions/export/export-xls-by-lazy-collection.md: MANUAL orphan end @87
+laravel/Modules/Xot/docs/actions/model/getallmodelsbymodulenameaction.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/actions/panel/applymetatagtopanelaction.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/actions/query/get-fieldnames-by-tablename.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/actions-over-services.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/actions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/activity/aggregati.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/activity/configurazione.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/activity/event-sourcing.md: MANUAL end without mid @41
+laravel/Modules/Xot/docs/activity/proiettori.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/activity/reattori.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/advanced.md: MANUAL end without mid @126
+laravel/Modules/Xot/docs/ai-init-resolution.md: MANUAL end without mid @43
+laravel/Modules/Xot/docs/ai-init-script-analysis.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/ai-init-script.md: MANUAL end without mid @45
+laravel/Modules/Xot/docs/ai-init.md: MANUAL orphan end @62
+laravel/Modules/Xot/docs/ai-prompt-fundamental-rules.md: MANUAL end without mid @153
+laravel/Modules/Xot/docs/ai-prompt-fundamental.md: MANUAL end without mid @5
+laravel/Modules/Xot/docs/ai-skills.md: MANUAL end without mid @112
+laravel/Modules/Xot/docs/ai_init_issue_analysis.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/ai_init_issue_resolution.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/ai_init_script_fix.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/algolia-docsearch.md: MANUAL end without mid @88
+laravel/Modules/Xot/docs/algoliaocsearch.md: MANUAL end without mid @92
+laravel/Modules/Xot/docs/analisi-metodi-duplicati.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/analisi-metodiuplicati.md: MANUAL end without mid @344
+laravel/Modules/Xot/docs/analysis.md: MANUAL end without mid @93
+laravel/Modules/Xot/docs/api-urls.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architectural_rules/no-property-exists-on-models.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/architecture/actions-over-services.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architecture/analisi-architettura-sistema.md: MANUAL end without mid @97
+laravel/Modules/Xot/docs/architecture/architecture-best-practices.md: MANUAL end without mid @13
+laravel/Modules/Xot/docs/architecture/architecture-complete.md: MANUAL end without mid @341
+laravel/Modules/Xot/docs/architecture/architecture-violations-and-fixes.md: MANUAL end without mid @344
+laravel/Modules/Xot/docs/architecture/architecture.md: MANUAL end without mid @393
+laravel/Modules/Xot/docs/architecture/architettura-sistema.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architecture/development-rules.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/architecture/laraxot-architecture.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/architecture/models.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architecture/module-structure.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architecture/modules-path-structure.mdc: MANUAL end without mid @40
+laravel/Modules/Xot/docs/architecture/patterns.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architecture/structure.md: MANUAL end without mid @1070
+laravel/Modules/Xot/docs/architecture/struttura-percorsi.md: MANUAL end without mid @192
+laravel/Modules/Xot/docs/architecture/struttura-progetto.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architecture/translation-structure-expanded.md: MANUAL end without mid @171
+laravel/Modules/Xot/docs/architecture/xotbase.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/architecture-best-practices-1.md: MANUAL end without mid @13
+laravel/Modules/Xot/docs/architecture-best-practices.md: MANUAL end without mid @13
+laravel/Modules/Xot/docs/architecture-debate-trans-method.md: MANUAL end without mid @16
+laravel/Modules/Xot/docs/architecture-violations-and-fixes-1.md: MANUAL end without mid @343
+laravel/Modules/Xot/docs/architecture-violations-andes.md: MANUAL end without mid @759
+laravel/Modules/Xot/docs/architecture.md: MANUAL end without mid @417
+laravel/Modules/Xot/docs/architectureebate-trans-method.md: MANUAL end without mid @68
+laravel/Modules/Xot/docs/archive/base/installation.md: MANUAL orphan end @35
+laravel/Modules/Xot/docs/archive/module-xot.md: MANUAL orphan end @15
+laravel/Modules/Xot/docs/archive/module_xot.md: MANUAL orphan end @14
+laravel/Modules/Xot/docs/archive/structure.md: MANUAL orphan end @297
+laravel/Modules/Xot/docs/audit-ereditariet-modelli-tutti-i-modu.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/auto-routes.md: PARTIAL 1/2
+laravel/Modules/Xot/docs/autoload.md: MANUAL end without mid @63
+laravel/Modules/Xot/docs/autonomous-priority-rule.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/bad-practices.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/base/installation.md: MANUAL end without mid @47
+laravel/Modules/Xot/docs/base/issues.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/base/structure.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/base/url-not-found.md: MANUAL end without mid @109
+laravel/Modules/Xot/docs/base-classes-additional-fix-.md: MANUAL end without mid @144
+laravel/Modules/Xot/docs/base-classes-additional-fix.md: MANUAL end without mid @132
+laravel/Modules/Xot/docs/base-classes-additional.md: MANUAL end without mid @142
+laravel/Modules/Xot/docs/base-classes.md: MANUAL end without mid @107
+laravel/Modules/Xot/docs/base-model.md: MANUAL end without mid @216
+laravel/Modules/Xot/docs/bashscripts/docs/confidence_guidelines.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/bashscripts/docs/filament-version.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/bashscripts/docs/source/docs/confidence_guidelines.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/bashscripts/docs/source/docs/filament-version.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/bashscripts-location-policy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/bashscripts-organization.md: MANUAL end without mid @374
+laravel/Modules/Xot/docs/best-practices/README.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/best-practices/best-practices-consolidated.md: MANUAL end without mid @915
+laravel/Modules/Xot/docs/best-practices/best-practices.md: MANUAL end without mid @719
+laravel/Modules/Xot/docs/best-practices/model-states-best-practices.md: MANUAL end without mid @18
+laravel/Modules/Xot/docs/best-practices/module-configuration-best-practices.md: MANUAL orphan end @250
+laravel/Modules/Xot/docs/best-practices/service-provider-best-practices.md: MANUAL end without mid @469
+laravel/Modules/Xot/docs/best-practices/testing-best-practices.md: MANUAL orphan end @35
+laravel/Modules/Xot/docs/best-practices/translations-best-practices.md: MANUAL end without mid @497
+laravel/Modules/Xot/docs/best-practices/volt-folio-best-practices.md: PARTIAL 1/2
+laravel/Modules/Xot/docs/best-practices-consolidated.md: MANUAL end without mid @903
+laravel/Modules/Xot/docs/best-practices.md: MANUAL end without mid @763
+laravel/Modules/Xot/docs/big-projects.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/blade/component-registration.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/blade-errors.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/blocks.md: MANUAL end without mid @119
+laravel/Modules/Xot/docs/bottlenecks-detailed.md: MANUAL orphan end @299
+laravel/Modules/Xot/docs/bottlenecksetailed.md: MANUAL end without mid @304
+laravel/Modules/Xot/docs/bugfix/git-conflicts-resolution-massive.md: MANUAL end without mid @10
+laravel/Modules/Xot/docs/bugfix/hasfactory-signature-compatibility.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/bugfix-carbon-timezone.md: MANUAL end without mid @168
+laravel/Modules/Xot/docs/bugfix-hasxottable-duplicate-if.md: MANUAL orphan end @10
+laravel/Modules/Xot/docs/bugfix-hasxottableuplicate-if.md: MANUAL end without mid @176
+laravel/Modules/Xot/docs/bugfix-session.md: MANUAL end without mid @281
+laravel/Modules/Xot/docs/cache-troubleshooting.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/cache.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/case-sensitivity-rules.md: MANUAL end without mid @199
+laravel/Modules/Xot/docs/case-sensitivity.md: MANUAL end without mid @208
+laravel/Modules/Xot/docs/cases.md: MANUAL end without mid @34
+laravel/Modules/Xot/docs/cast-actions.md: MANUAL orphan end @102
+laravel/Modules/Xot/docs/chart-export.md: MANUAL end without mid @1051
+laravel/Modules/Xot/docs/chartjsatalabels-xot-integration.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/ci/github-actions-modules.md: MANUAL end without mid @56
+laravel/Modules/Xot/docs/ci/php-codesniffer.md: MANUAL end without mid @11
+laravel/Modules/Xot/docs/ci/semantic-release-template.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/ci-quality-pipeline.md: MANUAL end without mid @66
+laravel/Modules/Xot/docs/clean-architecture.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/clean-code-wizard-steps.md: MANUAL end without mid @32
+laravel/Modules/Xot/docs/cleanup-action-plan.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/clickbait-conversion-guidelines.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/cms-link.md: MANUAL end without mid @42
+laravel/Modules/Xot/docs/cms.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/code-improvements-analysis.md: MANUAL end without mid @234
+laravel/Modules/Xot/docs/code-improvements.md: MANUAL end without mid @240
+laravel/Modules/Xot/docs/code-optimization.md: MANUAL end without mid @180
+laravel/Modules/Xot/docs/code-quality-01.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/code-quality-analysis.md: MANUAL end without mid @22
+laravel/Modules/Xot/docs/code-quality-audit.md: MANUAL end without mid @30
+laravel/Modules/Xot/docs/code-quality-improvement-report.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/code-quality-improvement.md: MANUAL end without mid @282
+laravel/Modules/Xot/docs/code-quality-improvements-01.md: MANUAL end without mid @92
+laravel/Modules/Xot/docs/code-quality-improvements-consolidated.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/code-quality-improvements-summary-.md: MANUAL end without mid @45
+laravel/Modules/Xot/docs/code-quality-improvements-sumy.md: MANUAL end without mid @44
+laravel/Modules/Xot/docs/code-quality-standards-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/code-quality-standards-2.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/code-quality-standards-code-quality-standards-xot-module.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/code-quality-standards-legacy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/code-quality-standards.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/code-quality-tools-guide.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/code-quality-tools.md: MANUAL end without mid @824
+laravel/Modules/Xot/docs/code-quality.md: MANUAL end without mid @363
+laravel/Modules/Xot/docs/codebase-findings.md: MANUAL end without mid @80
+laravel/Modules/Xot/docs/coding-standard/module-structure.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/coding-standards.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/collections.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/command-bus.md: PARTIAL 1/3
+laravel/Modules/Xot/docs/commands/generate-db-documentation.md: MANUAL end without mid @46
+laravel/Modules/Xot/docs/commands/generate-resource-form-schema.md: MANUAL end without mid @62
+laravel/Modules/Xot/docs/commands/search-string-database.md: MANUAL end without mid @38
+laravel/Modules/Xot/docs/common-antis.md: MANUAL end without mid @537
+laravel/Modules/Xot/docs/common-filament-trait-conflicts-2.md: MANUAL end without mid @13
+laravel/Modules/Xot/docs/common-filament-trait-conflicts.md: MANUAL end without mid @13
+laravel/Modules/Xot/docs/common-filament-traits.md: MANUAL end without mid @1046
+laravel/Modules/Xot/docs/commons-and-corrections.md: MANUAL end without mid @306
+laravel/Modules/Xot/docs/complete-architecture-sumy.md: MANUAL end without mid @21
+laravel/Modules/Xot/docs/complete-architecture.md: MANUAL end without mid @21
+laravel/Modules/Xot/docs/composer-conflict-resolution.md: MANUAL end without mid @37
+laravel/Modules/Xot/docs/composer-module-dependency-management.md: MANUAL orphan end @11
+laravel/Modules/Xot/docs/composer-packages.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/composer-resolution.md: MANUAL end without mid @22
+laravel/Modules/Xot/docs/comprehensive-chart-pdf.md: MANUAL end without mid @21
+laravel/Modules/Xot/docs/comprehensive-code-analysis-1.md: MANUAL end without mid @405
+laravel/Modules/Xot/docs/comprehensive-code-analysis-conflict.md: MANUAL end without mid @428
+laravel/Modules/Xot/docs/comprehensive-code-analysis-tools.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/comprehensive-code-analysis.md: MANUAL end without mid @428
+laravel/Modules/Xot/docs/comprehensive-code-tools.md: MANUAL end without mid @475
+laravel/Modules/Xot/docs/comprehensive-code.md: MANUAL end without mid @456
+laravel/Modules/Xot/docs/comprehensive_code_analysis.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/comprehensive_improvement_recommendations.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/comprehensiveocumentation-structure.md: MANUAL end without mid @361
+laravel/Modules/Xot/docs/config/modules.md: MANUAL end without mid @28
+laravel/Modules/Xot/docs/config/structure.md: MANUAL end without mid @223
+laravel/Modules/Xot/docs/config.md: MANUAL end without mid @292
+laravel/Modules/Xot/docs/configuration.md: MANUAL end without mid @83
+laravel/Modules/Xot/docs/conflict-resolution-report-1.md: MANUAL orphan end @7
+laravel/Modules/Xot/docs/conflict-resolution-report-report-risoluzione-conflitti-git-fixci.md: MANUAL orphan end @243
+laravel/Modules/Xot/docs/conflict-resolution-report.md: MANUAL end without mid @99
+laravel/Modules/Xot/docs/conflict-resolution-serviceprovider.md: MANUAL end without mid @32
+laravel/Modules/Xot/docs/conflict-resolution.md: MANUAL end without mid @345
+laravel/Modules/Xot/docs/conflict-resolutiones.md: MANUAL end without mid @154
+laravel/Modules/Xot/docs/conflict_resolution_fixes.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/conflicts/best-practices.md: MANUAL end without mid @81
+laravel/Modules/Xot/docs/conflicts/model-with-pos-contract-resolution.md: MANUAL end without mid @125
+laravel/Modules/Xot/docs/conflicts/modelwithposcontract-conflict-resolution.md: MANUAL end without mid @94
+laravel/Modules/Xot/docs/console/commands/database-schema-export.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/console/commands/database-schema-exporter.md: MANUAL end without mid @60
+laravel/Modules/Xot/docs/console/commands/generate-models-from-schema.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/console/commands/import-mdb.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/console/commands/tutorial.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/architecture-violations-and-fixes.md: PARTIAL 2/3
+laravel/Modules/Xot/docs/consolidated/archive/bottlenecks-detailed.md: MANUAL orphan end @299
+laravel/Modules/Xot/docs/consolidated/archive/documentation-prompts.md: MANUAL orphan end @66
+laravel/Modules/Xot/docs/consolidated/archive/filament-composite-contacts-column-analysis.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/consolidated/archive/filter-relations.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/final-method-override-fix.md: MANUAL orphan end @134
+laravel/Modules/Xot/docs/consolidated/archive/git-conflicts-resolution.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/installazione-iniziale.md: MANUAL orphan end @36
+laravel/Modules/Xot/docs/consolidated/archive/laraxot.md: MANUAL orphan end @3802
+laravel/Modules/Xot/docs/consolidated/archive/logo-determination.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/mcp-integration.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/consolidated/archive/model-with-author-contract.md: MANUAL orphan end @68
+laravel/Modules/Xot/docs/consolidated/archive/model.md: MANUAL orphan end @300
+laravel/Modules/Xot/docs/consolidated/archive/module-xot.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/moduli-laraxot.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/consolidated/archive/provider.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/readme-template.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/real-data-vs-mock-testing-strategy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/resolution-conflitti-xotbaseserviceprovider.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/resolution-conflitti-xotserviceprovider.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/archive/starter-kit.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/consolidated/code_quality.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/consolidated/module-development/modules-path-structure.mdc: SEMANTIC 0/5
+laravel/Modules/Xot/docs/consolidated/phpstan/phpstan_analysis_summary.md: MANUAL end without mid @25
+laravel/Modules/Xot/docs/consolidated/phpstan/phpstan_error_patterns.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/content-selection-and-highlighting.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/continuous-integration-tools-continuousintegrationtools.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/continuous-integration-tools.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/contracts/error-formatter-contract.md: MANUAL end without mid @45
+laravel/Modules/Xot/docs/contracts/index.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/contracts/model-contact-contract.md: MANUAL end without mid @59
+laravel/Modules/Xot/docs/contracts/model-contract.md: MANUAL end without mid @57
+laravel/Modules/Xot/docs/contracts/model-input-contract.md: MANUAL end without mid @62
+laravel/Modules/Xot/docs/contracts/model-with-author-contract.md: MANUAL end without mid @29
+laravel/Modules/Xot/docs/contracts/model-with-pos-contract.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/contracts/model-with-status-contract.md: MANUAL end without mid @93
+laravel/Modules/Xot/docs/contracts/model-with-user-contract.md: MANUAL end without mid @78
+laravel/Modules/Xot/docs/contracts/modelwithstatuscontract.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/contracts.md: MANUAL end without mid @17
+laravel/Modules/Xot/docs/conventions/README.md: MANUAL end without mid @20
+laravel/Modules/Xot/docs/conventions/coding-standards.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/conventions/field-naming.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/conventions/full-name-field.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/conventions/namespaces.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/conventions/personal-name-fields.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/conventions.md: MANUAL end without mid @155
+laravel/Modules/Xot/docs/core/architecture.md: MANUAL end without mid @270
+laravel/Modules/Xot/docs/core/naming-conventions.md: MANUAL end without mid @338
+laravel/Modules/Xot/docs/coverage.md: MANUAL end without mid @237
+laravel/Modules/Xot/docs/critical-architecture.md: MANUAL end without mid @254
+laravel/Modules/Xot/docs/critical-guidelines-update.md: MANUAL end without mid @9
+laravel/Modules/Xot/docs/critical-no-services-rule.md: MANUAL end without mid @378
+laravel/Modules/Xot/docs/critical-resource-model-alignment.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/critical-rules-consolidated.md: MANUAL end without mid @225
+laravel/Modules/Xot/docs/criticallines-update.md: MANUAL end without mid @179
+laravel/Modules/Xot/docs/cursor-mcp-config.json: PARTIAL 1/2
+laravel/Modules/Xot/docs/custom-404-page.md: MANUAL end without mid @47
+laravel/Modules/Xot/docs/custom-casts.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/custom-errors.md: PARTIAL 2/5
+laravel/Modules/Xot/docs/customizing-your-site-1.md: MANUAL end without mid @92
+laravel/Modules/Xot/docs/customizing-your-site.md: MANUAL end without mid @112
+laravel/Modules/Xot/docs/cyclomatic-complexity.md: MANUAL end without mid @110
+laravel/Modules/Xot/docs/daisyui.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/dashboard-pages.md: MANUAL end without mid @201
+laravel/Modules/Xot/docs/data/xotdata.md: MANUAL end without mid @2
+laravel/Modules/Xot/docs/data-objects.md: MANUAL end without mid @157
+laravel/Modules/Xot/docs/database/migration-base-rules.md: MANUAL end without mid @10
+laravel/Modules/Xot/docs/database/migration-complete-guide.md: MANUAL end without mid @32
+laravel/Modules/Xot/docs/database/migration-standards.md: MANUAL end without mid @33
+laravel/Modules/Xot/docs/database-configuration-rule.md: MANUAL end without mid @64
+laravel/Modules/Xot/docs/databaselines.md: MANUAL end without mid @495
+laravel/Modules/Xot/docs/datas/metatag-data.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/datas/metatagdata-philosophy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/datas/pdf-data.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/datatables.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/delete-related-models.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/development/README.md: MANUAL end without mid @21
+laravel/Modules/Xot/docs/development/data-objects.md: MANUAL orphan end @246
+laravel/Modules/Xot/docs/development/enums.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/development/filosofia.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/development/phpstan-guide.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/development/standard-codice.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/development/tools.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/development/vite-configuration.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/development-guidelines.md: MANUAL end without mid @31
+laravel/Modules/Xot/docs/development-workflowetailed.md: MANUAL end without mid @531
+laravel/Modules/Xot/docs/development.md: MANUAL end without mid @437
+laravel/Modules/Xot/docs/developmentlines.md: MANUAL end without mid @67
+laravel/Modules/Xot/docs/directory-case-sensitivity.md: MANUAL end without mid @128
+laravel/Modules/Xot/docs/directory-structure.md: MANUAL end without mid @115
+laravel/Modules/Xot/docs/docker/sail.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/docs-consolidation.md: MANUAL end without mid @247
+laravel/Modules/Xot/docs/docs-improvements-nov2025.md: MANUAL end without mid @283
+laravel/Modules/Xot/docs/docs-normalization-process.md: MANUAL end without mid @152
+laravel/Modules/Xot/docs/docs-organization-guide.md: MANUAL end without mid @581
+laravel/Modules/Xot/docs/docs-organization.md: MANUAL end without mid @581
+laravel/Modules/Xot/docs/docs-structure-correction-summary.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/docs-structure-correction-sumy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/docs-structure-correction.md: MANUAL end without mid @223
+laravel/Modules/Xot/docs/docs-update.md: MANUAL end without mid @240
+laravel/Modules/Xot/docs/documentation-consolidation-strategy.md: MANUAL end without mid @10
+laravel/Modules/Xot/docs/documentation-guidelines.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/documentation-prompt-system.md: MANUAL end without mid @14
+laravel/Modules/Xot/docs/documentation-rules-1.md: MANUAL end without mid @20
+laravel/Modules/Xot/docs/documentation-rules-regole-di-documentazione.md: MANUAL orphan end @30
+laravel/Modules/Xot/docs/documentation-rules.md: MANUAL end without mid @20
+laravel/Modules/Xot/docs/documentation.md: MANUAL orphan end @279
+laravel/Modules/Xot/docs/domain-configuration.md: MANUAL end without mid @82
+laravel/Modules/Xot/docs/dry-kiss-analysis.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/dry-kiss-model-refactoring-.md: MANUAL end without mid @15
+laravel/Modules/Xot/docs/dry-kiss-model-refactoring.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/dry-kiss-refactoring.md: MANUAL end without mid @120
+laravel/Modules/Xot/docs/dry-kiss.md: MANUAL end without mid @615
+laravel/Modules/Xot/docs/duplicate-methods.md: MANUAL end without mid @597
+laravel/Modules/Xot/docs/elastic-search.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/eloquent-magic-properties-rule.md: MANUAL end without mid @326
+laravel/Modules/Xot/docs/eloquent-models-critical-rules.md: MANUAL orphan end @36
+laravel/Modules/Xot/docs/eloquent-models-critical.md: MANUAL end without mid @193
+laravel/Modules/Xot/docs/en/patterns.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/enum-trait-pattern.md: MANUAL orphan end @42
+laravel/Modules/Xot/docs/enums/enum-driven-fillable-pattern.md: MANUAL end without mid @143
+laravel/Modules/Xot/docs/envevelopment-configuration.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/environment-configuration-issues.md: MANUAL end without mid @145
+laravel/Modules/Xot/docs/environment-configurations.md: MANUAL end without mid @294
+laravel/Modules/Xot/docs/environment-development-vs-testing-rules.md: MANUAL end without mid @135
+laravel/Modules/Xot/docs/environmentevelopment-vs-testing.md: MANUAL end without mid @29
+laravel/Modules/Xot/docs/error-analysis-helpers-capitalization.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/error-handling.md: MANUAL end without mid @39
+laravel/Modules/Xot/docs/errori-gravi-xotbaanelprovider.md: MANUAL end without mid @154
+laravel/Modules/Xot/docs/errors/cache-configuration-fix.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/errors/cache-path-error.md: MANUAL end without mid @52
+laravel/Modules/Xot/docs/errors/common-errors.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/errors/method-signature-compatibility-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/errors/method-signature-compatibility.md: MANUAL end without mid @140
+laravel/Modules/Xot/docs/errors/page-expired.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/errors/phpstan-xot-errors.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/errors/url-not-found.md: MANUAL end without mid @109
+laravel/Modules/Xot/docs/essential-reading.md: MANUAL end without mid @10
+laravel/Modules/Xot/docs/examples/safe-float-cast-usage.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/examples.md: MANUAL end without mid @1116
+laravel/Modules/Xot/docs/exceptions/README.md: MANUAL end without mid @43
+laravel/Modules/Xot/docs/exceptions/exception-handler-types.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/exceptions/formatters/webhook-error-formatter.md: MANUAL end without mid @58
+laravel/Modules/Xot/docs/exceptions/handler-decorator.md: MANUAL end without mid @51
+laravel/Modules/Xot/docs/exceptions/handlers/handlers-repository.md: MANUAL end without mid @97
+laravel/Modules/Xot/docs/exercises.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/export-xls-by-lazy-collection.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/factory.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/features/forms.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/features/livewire.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/features/media.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/features/performance.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/features/search.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/README.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/actions/attach.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/actions/pdf.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/best-practices.md: MANUAL end without mid @300
+laravel/Modules/Xot/docs/filament/chartjs-datalabels-multiple-labels-guide.md: MANUAL end without mid @116
+laravel/Modules/Xot/docs/filament/critical-resource-model-alignment.md: MANUAL end without mid @153
+laravel/Modules/Xot/docs/filament/critical-violations-analysis.md: MANUAL end without mid @157
+laravel/Modules/Xot/docs/filament/extension-rules.md: MANUAL end without mid @24
+laravel/Modules/Xot/docs/filament/filament-5-chart-widgets-complete-guide.md: MANUAL end without mid @420
+laravel/Modules/Xot/docs/filament/filament-5-nested-resources-complete-guide.md: MANUAL end without mid @552
+laravel/Modules/Xot/docs/filament/filament-5-nested-resources.md: MANUAL orphan end @328
+laravel/Modules/Xot/docs/filament/filament-5-nesting-migration.md: MANUAL end without mid @268
+laravel/Modules/Xot/docs/filament/filament-5-tenancy-complete-guide.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/filament-actions.md: MANUAL end without mid @117
+laravel/Modules/Xot/docs/filament/filament-best-practices-1.md: MANUAL end without mid @202
+laravel/Modules/Xot/docs/filament/filament-best-practices.md: MANUAL end without mid @598
+laravel/Modules/Xot/docs/filament/filament-guide.md: MANUAL end without mid @29
+laravel/Modules/Xot/docs/filament/filament-inheritance-guidelines.md: MANUAL end without mid @108
+laravel/Modules/Xot/docs/filament/filament-nesting-opportunities-sumy.md: MANUAL end without mid @48
+laravel/Modules/Xot/docs/filament/filament-resource-rules.md: MANUAL end without mid @306
+laravel/Modules/Xot/docs/filament/filament-xotbase-resource-corrections.md: MANUAL orphan end @216
+laravel/Modules/Xot/docs/filament/filament.md: MANUAL end without mid @12
+laravel/Modules/Xot/docs/filament/filament4-migration.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/filament/forms/components/xot-base-placeholder.md: MANUAL end without mid @10
+laravel/Modules/Xot/docs/filament/hasxtable-visibility-fix.md: MANUAL end without mid @70
+laravel/Modules/Xot/docs/filament/infinite-loop-get-step-by-name-fix.md: MANUAL end without mid @139
+laravel/Modules/Xot/docs/filament/infinite-loop-getstepbyname-fix-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/infinite-loop-getstepbyname-fix-2.md: MANUAL end without mid @168
+laravel/Modules/Xot/docs/filament/infinite_loop_getstepbyname_fix.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/jpgraph.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/filament/namespace-organization.md: MANUAL end without mid @81
+laravel/Modules/Xot/docs/filament/pages/main-dashboard.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/pages/metatag-page.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/pages/xot-base-page.md: MANUAL end without mid @106
+laravel/Modules/Xot/docs/filament/pages/xotbasepage.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/filament/pulse.md: MANUAL end without mid @11
+laravel/Modules/Xot/docs/filament/resources/architecture/method-evolution.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/resources/pages/xot-base-resource-page.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/resources/xot-base-resource.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/traits/has-xot-table.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/vendor.md: MANUAL end without mid @12
+laravel/Modules/Xot/docs/filament/widget-method-visibility-rules.md: MANUAL orphan end @116
+laravel/Modules/Xot/docs/filament/widget-table-configuration.md: MANUAL end without mid @238
+laravel/Modules/Xot/docs/filament/widgets/filament-widgets-polling-1.md: MANUAL end without mid @138
+laravel/Modules/Xot/docs/filament/widgets/filament-widgets-polling-polling-nei-widget-filament.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/widgets/filament-widgets-polling.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/widgets/index.md: MANUAL end without mid @20
+laravel/Modules/Xot/docs/filament/widgets/wizard-widget-rules.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/widgets/xot-base-widget.md: MANUAL end without mid @75
+laravel/Modules/Xot/docs/filament/widgets/xot-base-wizard-widget-philosophy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament/widgets/xotbasewidget.md: MANUAL end without mid @46
+laravel/Modules/Xot/docs/filament/xot-filament-architecture.md: MANUAL end without mid @20
+laravel/Modules/Xot/docs/filament/xot-table.md: MANUAL end without mid @162
+laravel/Modules/Xot/docs/filament/xotbase-stats-overview-widget-examples.md: MANUAL end without mid @630
+laravel/Modules/Xot/docs/filament/xotbase-stats-overview-widget-improvements.md: MANUAL end without mid @322
+laravel/Modules/Xot/docs/filament/xotbasepanelprovider.md: MANUAL end without mid @79
+laravel/Modules/Xot/docs/filament/xotbaseresource-violations-fixes-january-2026.md: MANUAL end without mid @170
+laravel/Modules/Xot/docs/filament/xotbaseresource.md: MANUAL end without mid @179
+laravel/Modules/Xot/docs/filament-4-laraxot-rules-legacy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament-4-laraxot.md: MANUAL end without mid @565
+laravel/Modules/Xot/docs/filament-4-migration.md: MANUAL end without mid @167
+laravel/Modules/Xot/docs/filament-4x-compatibility-conflict.md: MANUAL end without mid @63
+laravel/Modules/Xot/docs/filament-4x-compatibility.md: MANUAL end without mid @220
+laravel/Modules/Xot/docs/filament-5-bases-study.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/filament-5-laraxot-rules.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/filament-5-livewire-4-complete-guide.md: MANUAL orphan end @924
+laravel/Modules/Xot/docs/filament-5-method-visibility.md: MANUAL end without mid @424
+laravel/Modules/Xot/docs/filament-5-requirements.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/filament-5-upgrade-guide.md: MANUAL end without mid @23
+laravel/Modules/Xot/docs/filament-array-keys-rule.md: MANUAL end without mid @235
+laravel/Modules/Xot/docs/filament-array-typing.md: MANUAL end without mid @98
+laravel/Modules/Xot/docs/filament-best-practices-uppercase-1.md: MANUAL end without mid @585
+laravel/Modules/Xot/docs/filament-best-practices-uppercase.md: MANUAL end without mid @642
+laravel/Modules/Xot/docs/filament-charts-complete-guide.md: MANUAL end without mid @927
+laravel/Modules/Xot/docs/filament-charts.md: MANUAL end without mid @927
+laravel/Modules/Xot/docs/filament-class-extension-rules-conflict-resolution.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/filament-class-extension-rules-violations-sumy.md: MANUAL end without mid @50
+laravel/Modules/Xot/docs/filament-class-extension-rules.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/filament-class-extension-violations.md: MANUAL end without mid @49
+laravel/Modules/Xot/docs/filament-composite-contacts-column-analysis.md: MANUAL end without mid @235
+laravel/Modules/Xot/docs/filament-composite-contacts-column.md: MANUAL end without mid @250
+laravel/Modules/Xot/docs/filament-corrections-log.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/filament-custom-pages.md: MANUAL end without mid @188
+laravel/Modules/Xot/docs/filament-extension-pattern.md: MANUAL end without mid @88
+laravel/Modules/Xot/docs/filament-extension-rules-complete.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/filament-extension-rules.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/filament-extension-violations-plan.md: MANUAL end without mid @86
+laravel/Modules/Xot/docs/filament-extension-violations.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/filament-form-schema-conventions.md: MANUAL orphan end @11
+laravel/Modules/Xot/docs/filament-forms-components-base-creation.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/filament-infolist-pages.md: MANUAL orphan end @41
+laravel/Modules/Xot/docs/filament-installation-and-charts.md: MANUAL end without mid @351
+laravel/Modules/Xot/docs/filament-no-label-rule.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament-resource-creation-fix.md: MANUAL end without mid @148
+laravel/Modules/Xot/docs/filament-resource-creation.md: MANUAL end without mid @173
+laravel/Modules/Xot/docs/filament-resource.md: MANUAL end without mid @209
+laravel/Modules/Xot/docs/filament-resourcelines.md: MANUAL end without mid @58
+laravel/Modules/Xot/docs/filament-resources.md: MANUAL end without mid @103
+laravel/Modules/Xot/docs/filament-v4-migration.md: MANUAL end without mid @276
+laravel/Modules/Xot/docs/filament-v4-upgrade-notes.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filament-widget-regole.md: MANUAL end without mid @34
+laravel/Modules/Xot/docs/filament-xotbase-resource-corrections.md: MANUAL end without mid @199
+laravel/Modules/Xot/docs/filament.md: MANUAL end without mid @476
+laravel/Modules/Xot/docs/filament_4_laraxot_rules.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/file-locking-pattern.md: MANUAL end without mid @199
+laravel/Modules/Xot/docs/file-locking.md: MANUAL end without mid @215
+laravel/Modules/Xot/docs/file-naming-case-sensitivity.md: MANUAL end without mid @56
+laravel/Modules/Xot/docs/file-naming-conventions-compliance.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/file-structure.md: MANUAL end without mid @122
+laravel/Modules/Xot/docs/fill-field-with-lorem.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/filosofia-modulo-xot.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/filters.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/final-code-quality-sumy.md: MANUAL end without mid @70
+laravel/Modules/Xot/docs/final-code-quality.md: MANUAL end without mid @172
+laravel/Modules/Xot/docs/firstorcreate-race-condition-fix.md: MANUAL end without mid @9
+laravel/Modules/Xot/docs/firstorcreate-race-condition.md: MANUAL end without mid @181
+laravel/Modules/Xot/docs/fix-helper-functions-undefined.md: MANUAL end without mid @363
+laravel/Modules/Xot/docs/fixes/export-xls-collection-fix.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/fixes/relationx-sqlite-cross-database-fix-1.md: MANUAL end without mid @80
+laravel/Modules/Xot/docs/fixes/relationx-sqlite-cross-database-fix.md: MANUAL end without mid @80
+laravel/Modules/Xot/docs/forbidden-properties-removal-complete.md: MANUAL end without mid @235
+laravel/Modules/Xot/docs/forbidden-properties-removal.md: MANUAL end without mid @241
+laravel/Modules/Xot/docs/forbidden-resource-attributes-removal.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/forbidden-resource-attributes-verification.md: MANUAL end without mid @87
+laravel/Modules/Xot/docs/forbidden-resource-attributes.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/form.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/gap-analysis-missing-patterns.md: MANUAL end without mid @374
+laravel/Modules/Xot/docs/gap-missings.md: MANUAL end without mid @12
+laravel/Modules/Xot/docs/general-rules.md: MANUAL end without mid @28
+laravel/Modules/Xot/docs/getting-started-1.md: MANUAL end without mid @94
+laravel/Modules/Xot/docs/git/completato.md: MANUAL end without mid @30
+laravel/Modules/Xot/docs/git-conflicts-inventory.md: MANUAL end without mid @61
+laravel/Modules/Xot/docs/git-conflicts-resolution-.md: MANUAL orphan end @121
+laravel/Modules/Xot/docs/git-conflicts-resolution-1-1.md: MANUAL orphan end @101
+laravel/Modules/Xot/docs/git-conflicts-resolution-1.md: MANUAL orphan end @101
+laravel/Modules/Xot/docs/git-conflicts-resolution-2-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/git-conflicts-resolution-2-risoluzione-conflitti-git-6-gennaio.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/git-conflicts-resolution-2.md: MANUAL end without mid @223
+laravel/Modules/Xot/docs/git-conflicts-resolution-3.md: MANUAL orphan end @101
+laravel/Modules/Xot/docs/git-conflicts-resolution-4.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/git-conflicts-resolution-conflict-5ba246.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/git-conflicts-resolution-jan-2.md: MANUAL end without mid @206
+laravel/Modules/Xot/docs/git-conflicts-resolution-jan-risoluzione-conflitti-git-6-gennaio.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/git-conflicts-resolution-pattern.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/git-conflicts-resolution-risoluzione-conflitti-git-6-gennaio.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/git-conflicts-resolution-strategy.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/git-conflicts-resolution.md: MANUAL orphan end @121
+laravel/Modules/Xot/docs/git-forward-only-rule.md: MANUAL orphan end @176
+laravel/Modules/Xot/docs/git-multi-org-sync-handoff.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/github-workflows-standard.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/gits-inventory.md: MANUAL end without mid @69
+laravel/Modules/Xot/docs/gits-mal-risolti.md: MANUAL end without mid @326
+laravel/Modules/Xot/docs/gits-resolution-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/gits-resolution-2.md: MANUAL end without mid @200
+laravel/Modules/Xot/docs/gits-resolution-5ba246.md: MANUAL end without mid @308
+laravel/Modules/Xot/docs/gits-resolution-risoluzione-conflitti-git-6-gennaio.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/gits-resolution-strategy.md: MANUAL end without mid @269
+laravel/Modules/Xot/docs/gits-resolution.md: MANUAL end without mid @200
+laravel/Modules/Xot/docs/google-drive.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/guidelines/documentation.md: MANUAL end without mid @11
+laravel/Modules/Xot/docs/guidelines/inheritance.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/guides/implementing-actions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/hasxtable-visibility.md: MANUAL end without mid @72
+laravel/Modules/Xot/docs/helper-functions-list.md: MANUAL end without mid @382
+laravel/Modules/Xot/docs/helpers-architecture.md: MANUAL end without mid @284
+laravel/Modules/Xot/docs/historical/architecture-violations-and-fixes.md: MANUAL orphan end @23
+laravel/Modules/Xot/docs/historical/bottlenecks-detailed.md: MANUAL orphan end @299
+laravel/Modules/Xot/docs/historical/bugfix-hasxottable-duplicate-if.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/historical/configuration.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/conflict-resolution-report-1.md: MANUAL orphan end @271
+laravel/Modules/Xot/docs/historical/conflict-resolution-report-report-risoluzione-conflitti-git-fixci.md: MANUAL orphan end @243
+laravel/Modules/Xot/docs/historical/cross-module-integration.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/documentation-rules-1.md: MANUAL orphan end @30
+laravel/Modules/Xot/docs/historical/documentation-rules-regole-di-documentazione.md: MANUAL orphan end @30
+laravel/Modules/Xot/docs/historical/documentation-rules.md: MANUAL orphan end @30
+laravel/Modules/Xot/docs/historical/events.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/filament-best-practices.md: MANUAL orphan end @188
+laravel/Modules/Xot/docs/historical/filament-infolist-pages.md: MANUAL orphan end @41
+laravel/Modules/Xot/docs/historical/filament-resource-creation-fix.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/getting-started.md: MANUAL orphan end @401
+laravel/Modules/Xot/docs/historical/git-conflicts-resolution-conflict-5ba246.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/git-conflicts-resolution-strategy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/integration.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/laraxot.md: MANUAL orphan end @3751
+laravel/Modules/Xot/docs/historical/legacy-roadmap-1.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/historical/module-path-generation-philosophy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/module-structure.md: MANUAL orphan end @63
+laravel/Modules/Xot/docs/historical/module-xot.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/namespace-conventions-convenzioni-per-i-namespace-nei-moduli.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/nested-resources.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/normalization-report-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/optimization-recommendations.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/packages.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/phpinsights-analysis.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/phpmd-analysis-summary.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/phpmd-critical-fixes.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/phpstan-livello10-linee-guida.md: MANUAL orphan end @648
+laravel/Modules/Xot/docs/historical/prompt-docs-improvements.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/prompts-improvements.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/prompts.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/provider-common-mistakes.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/quality-tools-zen.md: MANUAL orphan end @281
+laravel/Modules/Xot/docs/historical/queue-management.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/queueable-actions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/queues-jobs.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/readme-consolidation-plan.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/readme-new.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/readme-template.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/refactoring-xotbasepanelprovider-completato-conflict.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/refactoring.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/registerbladeicons.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/relative-paths-rules.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/repositories.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/risoluzione-conflitti-merge.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/risoluzione-conflitti-xotbaseserviceprovider.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/roadmap-1.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/historical/roles-permissions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/routes.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/routing.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/rules.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/safe-float-cast-action.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/script-risoluzione-conflitti-conflict.md: MANUAL orphan end @1174
+laravel/Modules/Xot/docs/historical/security.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/service-provider-best-practices-service-provider-best-practices-in-larax.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/service-provider-best-practices.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/service-providers.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/serviceprovider-common-errors.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/services.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/simplechartwidget-problems-analysis.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/solutions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/state-machine.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/structure.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/historical/syntax-errors-mass-fix.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/historical/themes.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/third-party-model-inheritance-philosophy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/third-party-model-quick-reference.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/validation.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/volt-folio-best-practices.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/historical/zen-argument-resolution.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/html2pdf/advanced.md: MANUAL end without mid @126
+laravel/Modules/Xot/docs/html2pdf/index.md: MANUAL end without mid @110
+laravel/Modules/Xot/docs/html2pdf/laravel.md: MANUAL end without mid @159
+laravel/Modules/Xot/docs/html2pdf/security.md: MANUAL end without mid @165
+laravel/Modules/Xot/docs/html2pdf/styling.md: MANUAL end without mid @149
+laravel/Modules/Xot/docs/html2pdf/usage.md: MANUAL end without mid @131
+laravel/Modules/Xot/docs/ide-helper-best-practices.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/ide-helper-models-governance.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/image.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/implementation/installazione-iniziale.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/implementation-summary-filament-phpstan-fixes.md: MANUAL end without mid @160
+laravel/Modules/Xot/docs/implementation-sumy-filament-phpstan-fixes.md: MANUAL end without mid @149
+laravel/Modules/Xot/docs/improvements-sumy.md: MANUAL end without mid @30
+laravel/Modules/Xot/docs/improvements.md: MANUAL end without mid @151
+laravel/Modules/Xot/docs/index-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/index-v2.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/index.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/install/app.md: MANUAL end without mid @36
+laravel/Modules/Xot/docs/install/auth.md: MANUAL end without mid @144
+laravel/Modules/Xot/docs/install/database.md: MANUAL end without mid @110
+laravel/Modules/Xot/docs/install/env.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/install/metatag.md: MANUAL end without mid @59
+laravel/Modules/Xot/docs/install/permission.md: MANUAL end without mid @191
+laravel/Modules/Xot/docs/install/xra.md: MANUAL end without mid @46
+laravel/Modules/Xot/docs/install/zsh.md: MANUAL end without mid @41
+laravel/Modules/Xot/docs/install-module.md: PARTIAL 1/2
+laravel/Modules/Xot/docs/installation.md: MANUAL end without mid @148
+laravel/Modules/Xot/docs/integrations/payment.md: MANUAL end without mid @30
+laravel/Modules/Xot/docs/intelligent-solution-rule.md: MANUAL end without mid @279
+laravel/Modules/Xot/docs/it/patterns.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/job.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/jpgraph-installation.md: MANUAL end without mid @14
+laravel/Modules/Xot/docs/lang/labels.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/lang-link.md: MANUAL end without mid @13
+laravel/Modules/Xot/docs/langserviceprovider-labels.md: MANUAL end without mid @38
+laravel/Modules/Xot/docs/laravel-11-casts.md: MANUAL end without mid @175
+laravel/Modules/Xot/docs/laravel-ide-helper-property-exists-summary.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/laravel-ide-helper-property-exists-sumy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/laravel-ide-helper-property-exists.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/laravel-localization-architecture-analysis.md: MANUAL end without mid @138
+laravel/Modules/Xot/docs/laravel-mix.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/laravel-modules-namespace-critical-rule.md: MANUAL end without mid @151
+laravel/Modules/Xot/docs/laravel.md: MANUAL end without mid @159
+laravel/Modules/Xot/docs/laravel12/property-promotion.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/laraxot/best-practices.md: MANUAL end without mid @140
+laravel/Modules/Xot/docs/laraxot/development-workflow.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/laraxot/filament-integration.md: MANUAL end without mid @98
+laravel/Modules/Xot/docs/laraxot/module-structure.md: MANUAL end without mid @126
+laravel/Modules/Xot/docs/laraxot-architecture.md: MANUAL end without mid @512
+laravel/Modules/Xot/docs/laraxot-complete-philosophy-sumy.md: MANUAL end without mid @216
+laravel/Modules/Xot/docs/laraxot-consistency.md: MANUAL end without mid @203
+laravel/Modules/Xot/docs/laraxot-meetup-service-provider-refactor.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/laraxot-migration-philosophy-sumy.md: MANUAL end without mid @19
+laravel/Modules/Xot/docs/laraxot-migration.md: MANUAL end without mid @144
+laravel/Modules/Xot/docs/laraxot-philosophy-sumy.md: MANUAL end without mid @171
+laravel/Modules/Xot/docs/laraxot-quick-reference.md: MANUAL end without mid @122
+laravel/Modules/Xot/docs/laraxot.md: MANUAL orphan end @698
+laravel/Modules/Xot/docs/laraxot_architecture_rules.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/lazy.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/lessons-learned-merge-conflicts.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/lessons-learned-merges.md: MANUAL end without mid @665
+laravel/Modules/Xot/docs/lessons-learned.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/lessons-learnedmerge-conflicts.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/lessons-learnedmerges.md: MANUAL end without mid @337
+laravel/Modules/Xot/docs/level_10.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/limesurveyatabase-commands.md: MANUAL end without mid @5
+laravel/Modules/Xot/docs/limesurveyatabase.md: MANUAL orphan end @18
+laravel/Modules/Xot/docs/limesurveyatabaseeepive.md: MANUAL end without mid @12
+laravel/Modules/Xot/docs/links/dto.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/links/filter.md: MANUAL end without mid @39
+laravel/Modules/Xot/docs/links/tests.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/links.md: MANUAL end without mid @27
+laravel/Modules/Xot/docs/listrecords.md: MANUAL end without mid @24
+laravel/Modules/Xot/docs/livewire-components.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/llm-wiki/AGENTS.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/logo-determination.md: MANUAL end without mid @25
+laravel/Modules/Xot/docs/logo-resolution.md: MANUAL end without mid @129
+laravel/Modules/Xot/docs/logoetermination.md: MANUAL end without mid @36
+laravel/Modules/Xot/docs/magic-properties-summary-.md: MANUAL end without mid @23
+laravel/Modules/Xot/docs/magic-properties.md: MANUAL end without mid @74
+laravel/Modules/Xot/docs/maindashboard-redirect.md: MANUAL end without mid @163
+laravel/Modules/Xot/docs/mcp-asana-integration.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/mcp-commandseprecation.md: MANUAL end without mid @152
+laravel/Modules/Xot/docs/mcp-configuration-optimized.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/mcp-configuration-ptvx.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/mcp-configuration-updated.md: MANUAL end without mid @148
+laravel/Modules/Xot/docs/mcp-configuration.md: MANUAL end without mid @162
+laravel/Modules/Xot/docs/mcp-for-architecture.md: MANUAL orphan end @523
+laravel/Modules/Xot/docs/mcp-quickstart.md: MANUAL end without mid @261
+laravel/Modules/Xot/docs/mcp-servers.md: MANUAL end without mid @523
+laravel/Modules/Xot/docs/mcp-setup.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/mcpatabase-tools.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/memories/model-fields-validation.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/merge-conflict-resolution-.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/merge-conflict-resolution-1.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/merge-conflict-resolution.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/merge-conflicts-inventory.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/merge-conflicts-resolution-roadmap.md: MANUAL end without mid @200
+laravel/Modules/Xot/docs/merge-resolution.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/merges-census.md: MANUAL end without mid @91
+laravel/Modules/Xot/docs/merges-inventory.md: MANUAL end without mid @206
+laravel/Modules/Xot/docs/merges-progress.md: MANUAL end without mid @73
+laravel/Modules/Xot/docs/merges-resolution.md: MANUAL end without mid @208
+laravel/Modules/Xot/docs/metodiuplicati-analisi.md: MANUAL end without mid @1084
+laravel/Modules/Xot/docs/migration-base-rules.md: MANUAL end without mid @29
+laravel/Modules/Xot/docs/migration-base.md: MANUAL end without mid @87
+laravel/Modules/Xot/docs/migration-consolidated.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/migration-guidelines.md: MANUAL end without mid @51
+laravel/Modules/Xot/docs/migration-standards-1.md: MANUAL end without mid @146
+laravel/Modules/Xot/docs/migration-standards.md: MANUAL end without mid @303
+laravel/Modules/Xot/docs/migration-update.md: MANUAL end without mid @34
+laravel/Modules/Xot/docs/migration.md: MANUAL end without mid @14
+laravel/Modules/Xot/docs/migrationlines.md: MANUAL end without mid @46
+laravel/Modules/Xot/docs/migrations/migrations.md: MANUAL end without mid @311
+laravel/Modules/Xot/docs/migrations-consolidated.md: MANUAL end without mid @504
+laravel/Modules/Xot/docs/missing-traits-and-improvements-2-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/missing-traits-and-improvements-2.md: MANUAL end without mid @617
+laravel/Modules/Xot/docs/missing-traits-and-improvements-trait-mancanti-e-miglioramenti-architett.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/missing-traits-and-improvements.md: MANUAL end without mid @617
+laravel/Modules/Xot/docs/model/action/destroy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/model/action/detach.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/model/action/filter-relations.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/model/action/store.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/model/action/update.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/model-base.md: MANUAL end without mid @104
+laravel/Modules/Xot/docs/model-casting-rules.md: MANUAL end without mid @124
+laravel/Modules/Xot/docs/model-casting.md: MANUAL end without mid @256
+laravel/Modules/Xot/docs/model-inheritance-2.md: MANUAL end without mid @315
+laravel/Modules/Xot/docs/model-inheritance-audit-2-1.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/model-inheritance-audit-2.md: MANUAL end without mid @327
+laravel/Modules/Xot/docs/model-inheritance-audit-audit-ereditariet-modelli-tutti-i-modu.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/model-inheritance-audit.md: MANUAL end without mid @327
+laravel/Modules/Xot/docs/model-inheritance-rules.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/model-inheritance.md: MANUAL end without mid @206
+laravel/Modules/Xot/docs/model-states-best-practices.md: MANUAL end without mid @16
+laravel/Modules/Xot/docs/model-with-author-contract.md: MANUAL end without mid @29
+laravel/Modules/Xot/docs/model-with-pos-contract-resolution.md: MANUAL end without mid @123
+laravel/Modules/Xot/docs/models/base-tree-model.md: MANUAL end without mid @66
+laravel/Modules/Xot/docs/models/dry-kiss-analysis.md: MANUAL orphan end @1424
+laravel/Modules/Xot/docs/models/information-schema-table.md: MANUAL end without mid @55
+laravel/Modules/Xot/docs/models/model-architecture.md: MANUAL end without mid @204
+laravel/Modules/Xot/docs/models.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/modelwithposcontract-resolution.md: MANUAL end without mid @48
+laravel/Modules/Xot/docs/modularity-optimizations.md: MANUAL end without mid @295
+laravel/Modules/Xot/docs/module-analysis.md: MANUAL end without mid @463
+laravel/Modules/Xot/docs/module-architecture-analysis.md: MANUAL end without mid @433
+laravel/Modules/Xot/docs/module-architecture.md: MANUAL end without mid @42
+laravel/Modules/Xot/docs/module-creation.md: MANUAL end without mid @194
+laravel/Modules/Xot/docs/module-namespace-path-convention.md: MANUAL end without mid @29
+laravel/Modules/Xot/docs/module-namespace-rules.md: MANUAL end without mid @26
+laravel/Modules/Xot/docs/module-namespace.md: MANUAL end without mid @35
+laravel/Modules/Xot/docs/module-overview.md: MANUAL end without mid @88
+laravel/Modules/Xot/docs/module-path-error-resolution.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/module-path-generation-philosophy.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/module-path-generation.md: MANUAL end without mid @102
+laravel/Modules/Xot/docs/module-path-resolution.md: MANUAL end without mid @147
+laravel/Modules/Xot/docs/module-quality.md: MANUAL end without mid @107
+laravel/Modules/Xot/docs/module-structure-1.md: MANUAL end without mid @60
+laravel/Modules/Xot/docs/module-xot.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/module.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/modulees.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/moduleocumentation-standard.md: MANUAL end without mid @123
+laravel/Modules/Xot/docs/modules/performance.md: MANUAL end without mid @41
+laravel/Modules/Xot/docs/modules/structure.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/modules/test.md: MANUAL end without mid @37
+laravel/Modules/Xot/docs/modules-path-structure.mdc: MANUAL end without mid @192
+laravel/Modules/Xot/docs/multi-org-sync-laraxot-provtv.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/namespace-autoload-pattern.md: MANUAL end without mid @90
+laravel/Modules/Xot/docs/namespace-rules.md: MANUAL end without mid @26
+laravel/Modules/Xot/docs/namespace.md: MANUAL end without mid @41
+laravel/Modules/Xot/docs/naming-conventions-uppercase.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/naming-conventions.md: MANUAL end without mid @66
+laravel/Modules/Xot/docs/naming-conventionsocs.md: MANUAL end without mid @232
+laravel/Modules/Xot/docs/naming-user-fields.md: MANUAL end without mid @22
+laravel/Modules/Xot/docs/navigation.md: MANUAL end without mid @53
+laravel/Modules/Xot/docs/nested-resource.md: MANUAL end without mid @189
+laravel/Modules/Xot/docs/no-console/on-module.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/no-domain-logic-in-xot.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/no-labels.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/no-root-docs-rule.md: MANUAL end without mid @45
+laravel/Modules/Xot/docs/no-rootocs-rule.md: MANUAL end without mid @55
+laravel/Modules/Xot/docs/no-table-override.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/no_console/on-module.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/normalization-report-1.md: MANUAL end without mid @60
+laravel/Modules/Xot/docs/normalization-report-2.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/normalization-report-3.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/normalization-report-conflict.md: MANUAL end without mid @20
+laravel/Modules/Xot/docs/normalization-report.md: MANUAL end without mid @22
+laravel/Modules/Xot/docs/normalization.md: MANUAL end without mid @122
+laravel/Modules/Xot/docs/nwidart-to-study.md: MANUAL end without mid @18
+laravel/Modules/Xot/docs/nwidart_to_study.md: MANUAL orphan end @37
+laravel/Modules/Xot/docs/old_tasks/phpstan-code-quality-guide.md: MANUAL orphan end @444
+laravel/Modules/Xot/docs/old_tasks/phpstan-livello10-linee-guida.md: MANUAL orphan end @648
+laravel/Modules/Xot/docs/on-demand-pattern.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/open-sources/links.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/open_sources/links.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/optimization-analysis-dry-kiss.md: MANUAL end without mid @325
+laravel/Modules/Xot/docs/optimization.md: MANUAL end without mid @841
+laravel/Modules/Xot/docs/optimization_opportunities.md: MANUAL end without mid @381
+laravel/Modules/Xot/docs/optimizationry-kiss.md: MANUAL end without mid @283
+laravel/Modules/Xot/docs/ottimizzazioni-superry-kiss.md: MANUAL end without mid @314
+laravel/Modules/Xot/docs/ottimizzazioniry-kiss.md: MANUAL end without mid @216
+laravel/Modules/Xot/docs/packageiscovery.md: MANUAL end without mid @345
+laravel/Modules/Xot/docs/packages/nwidart-laravel-modules-complete-guide.md: MANUAL end without mid @561
+laravel/Modules/Xot/docs/paginate.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/panel-provider.md: MANUAL end without mid @102
+laravel/Modules/Xot/docs/panel-providers.md: MANUAL end without mid @125
+laravel/Modules/Xot/docs/patterns.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/payment-gateway.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/pdf-components.md: MANUAL end without mid @159
+laravel/Modules/Xot/docs/pdf-to-txt.md: PARTIAL 1/12
+laravel/Modules/Xot/docs/performance/bottlenecks.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/performance/large-dataset-import-guidelines.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/performance-guidelines-conflict.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/performance-guidelines.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/performance-optimization.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/performance.md: MANUAL end without mid @47
+laravel/Modules/Xot/docs/performancelines.md: MANUAL end without mid @892
+laravel/Modules/Xot/docs/pest-execution.md: MANUAL end without mid @395
+laravel/Modules/Xot/docs/pest-testing.md: MANUAL end without mid @213
+laravel/Modules/Xot/docs/pest.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/philosophy-complete.md: MANUAL end without mid @18
+laravel/Modules/Xot/docs/philosophy-master-index.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/php-quality-guide.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/php-quality.md: MANUAL end without mid @1120
+laravel/Modules/Xot/docs/php-strict-types.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/phpinsights-standalone.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpinsights.md: MANUAL end without mid @136
+laravel/Modules/Xot/docs/phpmd-analysis-sumy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpmd-conventions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpmd-criticales.md: MANUAL end without mid @47
+laravel/Modules/Xot/docs/phpmd.md: MANUAL end without mid @44
+laravel/Modules/Xot/docs/phpmdes-plan.md: MANUAL end without mid @83
+laravel/Modules/Xot/docs/phpstan-action-plan-.md: MANUAL end without mid @9
+laravel/Modules/Xot/docs/phpstan-action-plan.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/phpstan-analysis-.md: MANUAL end without mid @27
+laravel/Modules/Xot/docs/phpstan-analysis.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/phpstan-array-typeses.md: MANUAL end without mid @137
+laravel/Modules/Xot/docs/phpstan-audit.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/phpstan-call-dynamic-panel-metatagdata.md: MANUAL end without mid @46
+laravel/Modules/Xot/docs/phpstan-callynamic-panel-metatagdata.md: MANUAL end without mid @74
+laravel/Modules/Xot/docs/phpstan-code-quality-guide.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/phpstan-code-quality.md: MANUAL orphan end @444
+laravel/Modules/Xot/docs/phpstan-compliance-status.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-config-immutability.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-consolidated.md: MANUAL end without mid @274
+laravel/Modules/Xot/docs/phpstan-contract-conflicts-resolution.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/phpstan-corrections-january-2026.md: MANUAL end without mid @156
+laravel/Modules/Xot/docs/phpstan-corrections-january.md: MANUAL end without mid @148
+laravel/Modules/Xot/docs/phpstan-error-resolution-strategy.md: MANUAL end without mid @186
+laravel/Modules/Xot/docs/phpstan-error.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-errors-resolution-roadmap.md: MANUAL end without mid @80
+laravel/Modules/Xot/docs/phpstan-execution.md: MANUAL end without mid @59
+laravel/Modules/Xot/docs/phpstan-factory-best-practices.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/phpstan-filament-actions-rule.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-final-sumy.md: MANUAL end without mid @17
+laravel/Modules/Xot/docs/phpstan-final.md: MANUAL end without mid @18
+laravel/Modules/Xot/docs/phpstan-fix-meetup-service-provider.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/phpstan-fix-roadmap.md: MANUAL end without mid @9
+laravel/Modules/Xot/docs/phpstan-fixes-gennaio-.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-fixes-gennaio.md: MANUAL end without mid @192
+laravel/Modules/Xot/docs/phpstan-fixes-january.md: MANUAL end without mid @197
+laravel/Modules/Xot/docs/phpstan-fixes-summary-1.md: MANUAL end without mid @202
+laravel/Modules/Xot/docs/phpstan-implementation-guide-1.md: MANUAL end without mid @295
+laravel/Modules/Xot/docs/phpstan-implementation-guide.md: MANUAL end without mid @297
+laravel/Modules/Xot/docs/phpstan-implementation.md: MANUAL end without mid @307
+laravel/Modules/Xot/docs/phpstan-january-final-summary.md: MANUAL end without mid @168
+laravel/Modules/Xot/docs/phpstan-january-summary.md: MANUAL end without mid @177
+laravel/Modules/Xot/docs/phpstan-journey.md: MANUAL end without mid @39
+laravel/Modules/Xot/docs/phpstan-level-10-complete.md: MANUAL end without mid @169
+laravel/Modules/Xot/docs/phpstan-level-10-dry-kiss-analysis-.md: MANUAL end without mid @75
+laravel/Modules/Xot/docs/phpstan-level-10-dry-kiss-analysis.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/phpstan-level-10-report.md: MANUAL end without mid @258
+laravel/Modules/Xot/docs/phpstan-level-10ry-kiss.md: MANUAL end without mid @960
+laravel/Modules/Xot/docs/phpstan-level10-complete-audit.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/phpstan-level10-complete.md: MANUAL end without mid @13
+laravel/Modules/Xot/docs/phpstan-level10-xot-fixes.md: PARTIAL 1/2
+laravel/Modules/Xot/docs/phpstan-level10-xotes.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-level10.md: MANUAL end without mid @120
+laravel/Modules/Xot/docs/phpstan-level10es.md: MANUAL end without mid @267
+laravel/Modules/Xot/docs/phpstan-level7.md: MANUAL end without mid @251
+laravel/Modules/Xot/docs/phpstan-level9.md: MANUAL end without mid @183
+laravel/Modules/Xot/docs/phpstan-livello10-linee-guida.md: MANUAL end without mid @101
+laravel/Modules/Xot/docs/phpstan-meetup-service-provider.md: MANUAL end without mid @172
+laravel/Modules/Xot/docs/phpstan-patterns-dec.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-pest-assert-strategy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-plan-xotbaserelationmanager.md: MANUAL end without mid @164
+laravel/Modules/Xot/docs/phpstan-progress-.md: MANUAL end without mid @35
+laravel/Modules/Xot/docs/phpstan-progress-2.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/phpstan-progress-conflict.md: MANUAL end without mid @4
+laravel/Modules/Xot/docs/phpstan-progress-report.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/phpstan-progress-session.md: MANUAL end without mid @130
+laravel/Modules/Xot/docs/phpstan-remaining-errors-analysis.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/phpstan-remainings.md: MANUAL end without mid @188
+laravel/Modules/Xot/docs/phpstan-resolution-strategy.md: MANUAL end without mid @188
+laravel/Modules/Xot/docs/phpstan-roadmap.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/phpstan-session-complete.md: MANUAL end without mid @167
+laravel/Modules/Xot/docs/phpstan-session-january-2026-summary.md: MANUAL end without mid @304
+laravel/Modules/Xot/docs/phpstan-session-sumy.md: MANUAL end without mid @249
+laravel/Modules/Xot/docs/phpstan-soluzioni.md: MANUAL end without mid @291
+laravel/Modules/Xot/docs/phpstan-specifics.md: MANUAL end without mid @169
+laravel/Modules/Xot/docs/phpstan-status.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstan-sumy.md: MANUAL end without mid @25
+laravel/Modules/Xot/docs/phpstan-syntax-errors-fix.md: MANUAL end without mid @94
+laravel/Modules/Xot/docs/phpstan-syntaxs.md: MANUAL end without mid @100
+laravel/Modules/Xot/docs/phpstan-transtraits.md: MANUAL end without mid @409
+laravel/Modules/Xot/docs/phpstan-usage.md: RESOLVED 3/3
+laravel/Modules/Xot/docs/phpstan-victory-.md: MANUAL end without mid @108
+laravel/Modules/Xot/docs/phpstan-xotbaserelationmanager-completato.md: MANUAL end without mid @162
+laravel/Modules/Xot/docs/phpstan-xotbaserelationmanager-finale.md: MANUAL end without mid @185
+laravel/Modules/Xot/docs/phpstan-xotbaserelationmanager.md: MANUAL end without mid @128
+laravel/Modules/Xot/docs/phpstan-xotbasewidget-view-string-fix-roadmap.md: MANUAL end without mid @84
+laravel/Modules/Xot/docs/phpstan-xotbasewidget-view-string.md: MANUAL end without mid @109
+laravel/Modules/Xot/docs/phpstan.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/phpstanes-progress.md: MANUAL end without mid @217
+laravel/Modules/Xot/docs/phpstanocumentation.md: MANUAL end without mid @238
+laravel/Modules/Xot/docs/phpstans-strategy.md: MANUAL end without mid @280
+laravel/Modules/Xot/docs/phpstans-xotbaserelationmanager.md: MANUAL end without mid @156
+laravel/Modules/Xot/docs/phpstans.md: MANUAL end without mid @113
+laravel/Modules/Xot/docs/phpstanuplicate-imports.md: MANUAL end without mid @156
+laravel/Modules/Xot/docs/phpunit.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/pipeline.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/pivot.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/post-edit-quality-verification.md: MANUAL end without mid @286
+laravel/Modules/Xot/docs/prd.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/problemi-di-configurazione-variabili-dam.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/process.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/product-docs-governance.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/product-requirements.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/product-strategy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/project-best-practices.md: MANUAL end without mid @411
+laravel/Modules/Xot/docs/project-conventions.md: MANUAL end without mid @18
+laravel/Modules/Xot/docs/project-philosophy-religion-politics-zen.md: MANUAL end without mid @36
+laravel/Modules/Xot/docs/project-religion-politics-zen.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/project-structure.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/prompt-rules.md: MANUAL end without mid @37
+laravel/Modules/Xot/docs/prompt.md: MANUAL end without mid @58
+laravel/Modules/Xot/docs/promptocs-improvements.md: MANUAL end without mid @78
+laravel/Modules/Xot/docs/promptocs.md: MANUAL end without mid @25
+laravel/Modules/Xot/docs/prompts/documentation-prompts-prompt-di-documentazione.md: MANUAL orphan end @66
+laravel/Modules/Xot/docs/prompts/documentation-prompts.md: MANUAL orphan end @67
+laravel/Modules/Xot/docs/prompts.md: MANUAL end without mid @74
+laravel/Modules/Xot/docs/property-exists-elimination-report.md: MANUAL end without mid @598
+laravel/Modules/Xot/docs/property-exists-elimination.md: MANUAL end without mid @59
+laravel/Modules/Xot/docs/property-exists-final-report.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/property-exists-final.md: MANUAL end without mid @411
+laravel/Modules/Xot/docs/property-exists-removal-report.md: MANUAL end without mid @284
+laravel/Modules/Xot/docs/property-exists-removal.md: MANUAL end without mid @285
+laravel/Modules/Xot/docs/property-exists-replacement.md: MANUAL end without mid @174
+laravel/Modules/Xot/docs/property-removal.md: MANUAL end without mid @47
+laravel/Modules/Xot/docs/provider-common-mistakes.md: MANUAL end without mid @333
+laravel/Modules/Xot/docs/provider-documentation-index.md: MANUAL end without mid @49
+laravel/Modules/Xot/docs/providerocumentation-index.md: MANUAL end without mid @269
+laravel/Modules/Xot/docs/providers/service-provider-best-practices.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/providers/xotbaseserviceprovider.md: MANUAL orphan end @196
+laravel/Modules/Xot/docs/psalm.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/psr4-autoload-remediation.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/pwa.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/qmd-setup.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/quality/phpstan-level-10-enforcement.md: MANUAL end without mid @14
+laravel/Modules/Xot/docs/quality/phpstan-progress-report.md: MANUAL end without mid @86
+laravel/Modules/Xot/docs/quality/phpstan-rules.md: MANUAL end without mid @31
+laravel/Modules/Xot/docs/quality/phpstan-session-2-final-report.md: MANUAL end without mid @36
+laravel/Modules/Xot/docs/quality-analysis/analysis-sumy.md: MANUAL end without mid @137
+laravel/Modules/Xot/docs/quality-analysis/final-status.md: MANUAL end without mid @104
+laravel/Modules/Xot/docs/quality-analysis/phpinsights-report-.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/quality-analysis/phpinsights-report.md: MANUAL orphan end @219
+laravel/Modules/Xot/docs/quality-analysis/progress-summary.md: MANUAL end without mid @16
+laravel/Modules/Xot/docs/quality-analysis/progress-sumy.md: MANUAL end without mid @177
+laravel/Modules/Xot/docs/quality-tools-status.md: MANUAL end without mid @210
+laravel/Modules/Xot/docs/quality-tools-zen.md: MANUAL orphan end @281
+laravel/Modules/Xot/docs/quality-tools.md: MANUAL end without mid @943
+laravel/Modules/Xot/docs/quality.md: MANUAL end without mid @90
+laravel/Modules/Xot/docs/readme/badges.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/readme-consolidation-plan.md: MANUAL end without mid @69
+laravel/Modules/Xot/docs/readme-new.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/realata-vs-mock-testing-strategy.md: MANUAL end without mid @94
+laravel/Modules/Xot/docs/recursive-relationships-contract.md: MANUAL end without mid @381
+laravel/Modules/Xot/docs/redundancy-audit.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/refactoring-xotbaanelprovider-completato.md: MANUAL end without mid @150
+laravel/Modules/Xot/docs/refactoring-xotbasepanelprovider-completato.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/refactorry-kiss.md: MANUAL end without mid @226
+laravel/Modules/Xot/docs/registerbladeicons.md: MANUAL end without mid @135
+laravel/Modules/Xot/docs/relation-manager-typed-property.md: MANUAL end without mid @75
+laravel/Modules/Xot/docs/relation-managerlines.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/relation-managers.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/relationships.mdc: MANUAL end without mid @46
+laravel/Modules/Xot/docs/relative-paths.md: MANUAL end without mid @31
+laravel/Modules/Xot/docs/relazioni.md: MANUAL end without mid @46
+laravel/Modules/Xot/docs/relazioni.mdc: MANUAL end without mid @46
+laravel/Modules/Xot/docs/repositories.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/resolution-conflitti-merge.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/resolution-conflitti.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/resource.md: MANUAL end without mid @613
+laravel/Modules/Xot/docs/risoluzione-conflitti-git-6-gennaio.md: MANUAL orphan end @127
+laravel/Modules/Xot/docs/risoluzione-conflitti.md: MANUAL end without mid @30
+laravel/Modules/Xot/docs/roadmap/architecture/performance.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/bottlenecks/dental.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/bottlenecks/lang.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/bottlenecks/media.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/bottlenecks/notify.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/bottlenecks/patient.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/bottlenecks/tenant.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/bottlenecks/ui.md: MANUAL end without mid @187
+laravel/Modules/Xot/docs/roadmap/current-state.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/docs/status.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/goals.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/index.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/integration/filament.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/integration/folio-volt.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/lang/translations.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/performance/optimization.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/roadmap.md: MANUAL end without mid @42
+laravel/Modules/Xot/docs/roadmap/security/status.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/testing/status.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap/workstreams.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/roadmap-.md: MANUAL end without mid @210
+laravel/Modules/Xot/docs/roadmap-1.md: MANUAL orphan end @19
+laravel/Modules/Xot/docs/roadmap-and-issues.md: MANUAL end without mid @328
+laravel/Modules/Xot/docs/roadmap-ands.md: MANUAL end without mid @346
+laravel/Modules/Xot/docs/roadmap.md: MANUAL end without mid @384
+laravel/Modules/Xot/docs/root-uppercase-folders/filament/forms/-components/-xot-base-placeholder.php: SEMANTIC 0/1
+laravel/Modules/Xot/docs/root-uppercase-folders/helpers/xot.seed.helper.php: MANUAL end without mid @22
+laravel/Modules/Xot/docs/root-uppercase-folders/services/array-service.php: SEMANTIC 0/2
+laravel/Modules/Xot/docs/routing.md: MANUAL end without mid @296
+laravel/Modules/Xot/docs/rules/branding-getters.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/rules/collegamenti-relativi.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/rules/csrf-token-management.md: MANUAL end without mid @49
+laravel/Modules/Xot/docs/rules/filament-resource-guidelines.md: MANUAL end without mid @58
+laravel/Modules/Xot/docs/rules/laraxot-rules.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/rules/prompt-rules.md: MANUAL end without mid @98
+laravel/Modules/Xot/docs/rules/search.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/rules/url-e-route.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/rules-index.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/rules.md: MANUAL end without mid @16
+laravel/Modules/Xot/docs/safe-casting-actions.md: MANUAL orphan end @15
+laravel/Modules/Xot/docs/safe-float-cast-action.md: MANUAL end without mid @186
+laravel/Modules/Xot/docs/safe-float-cast-usage.md: MANUAL end without mid @457
+laravel/Modules/Xot/docs/sail.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/save-json-array-action.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/schemaless-attributes-complete.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/scrape.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/scraping.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/script-risoluzione-conflitti-conflict.md: MANUAL orphan end @1174
+laravel/Modules/Xot/docs/script-risoluzione-conflitti.md: MANUAL end without mid @202
+laravel/Modules/Xot/docs/scrutinizer.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/security/csrf-handling.md: MANUAL end without mid @102
+laravel/Modules/Xot/docs/send-sms.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/sentiment-analyzer.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/seo-guidelines.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/service/model.md: MANUAL orphan end @340
+laravel/Modules/Xot/docs/service/panel.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/service/profile.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/service-provider.md: MANUAL end without mid @64
+laravel/Modules/Xot/docs/serviceprovider-commons.md: MANUAL end without mid @214
+laravel/Modules/Xot/docs/serviceprovider-minimal-structure.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/services/module-service.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/services/route-dyn-service.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/services.md: MANUAL end without mid @242
+laravel/Modules/Xot/docs/simplechartwidget-problems.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/simplechartwidget-quality.md: MANUAL orphan end @814
+laravel/Modules/Xot/docs/single-table-inheritance.md: MANUAL end without mid @82
+laravel/Modules/Xot/docs/slug.md: MANUAL orphan end @25
+laravel/Modules/Xot/docs/sortable-livewire.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/spatie-permission-team-boundary.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/spatie-permission-team-model-laravel.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/spatie-schemaless-attributes.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/speed-up.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/sprint-planning.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/standards/README.md: MANUAL end without mid @139
+laravel/Modules/Xot/docs/standards/coding-standards.md: MANUAL end without mid @6
+laravel/Modules/Xot/docs/standards/namespace-rules.md: MANUAL end without mid @147
+laravel/Modules/Xot/docs/standards/naming-conventions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/star-rating.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/state-machine.md: MANUAL end without mid @15
+laravel/Modules/Xot/docs/stats.md: MANUAL orphan end @51
+laravel/Modules/Xot/docs/staudenmeir/laravel-adjacency-list.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/strategy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/structure.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/struttura-path-moduli.md: MANUAL end without mid @190
+laravel/Modules/Xot/docs/struttura-path-moduli.mdc: MANUAL end without mid @190
+laravel/Modules/Xot/docs/stubs.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/styling.md: MANUAL end without mid @149
+laravel/Modules/Xot/docs/super-mucca-methodology.md: MANUAL end without mid @361
+laravel/Modules/Xot/docs/super-mucca-optimization-.md: MANUAL end without mid @28
+laravel/Modules/Xot/docs/super-mucca-optimization.md: MANUAL end without mid @29
+laravel/Modules/Xot/docs/super-mucca-session.md: MANUAL end without mid @31
+laravel/Modules/Xot/docs/svg-icon-standards-variant.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/syntax-errors-mass-fix.md: MANUAL orphan end @10
+laravel/Modules/Xot/docs/syntaxs-mass.md: MANUAL end without mid @281
+laravel/Modules/Xot/docs/tasks/001-core-framework-improvements.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/tasks/consolidamento-documentazione.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/tasks/core-framework-improvements.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/tasks/tasks-index.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/tasks/test-actions.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/tdd-laravel-pestd-complete-guide.md: PARTIAL 1/2
+laravel/Modules/Xot/docs/tdd-pest-study.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/technical/filament.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/technical/moduli-laraxot.md: MANUAL end without mid @45
+laravel/Modules/Xot/docs/technical/relations.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/technologies/stack.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/test-placementlines.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/test-structure.md: MANUAL end without mid @275
+laravel/Modules/Xot/docs/testcase-sqlite-to-mysql-fix.md: MANUAL end without mid @206
+laravel/Modules/Xot/docs/testcase-sqlite-to-mysql.md: MANUAL end without mid @217
+laravel/Modules/Xot/docs/testing/laraxot-test-db-architecture.md: MANUAL end without mid @242
+laravel/Modules/Xot/docs/testing/mysql-only-testing-rule.md: MANUAL end without mid @311
+laravel/Modules/Xot/docs/testing/naming-conventions.md: MANUAL end without mid @9
+laravel/Modules/Xot/docs/testing/pest-globally-blocked-sqlite-connection-collision.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/testing/pest-setup-guide.md: MANUAL end without mid @60
+laravel/Modules/Xot/docs/testing/real-data-vs-mock-testing-strategy.md: MANUAL end without mid @399
+laravel/Modules/Xot/docs/testing/strategy.md: MANUAL end without mid @358
+laravel/Modules/Xot/docs/testing/test-execution-results.md: MANUAL end without mid @26
+laravel/Modules/Xot/docs/testing/test-naming-convention.md: MANUAL end without mid @81
+laravel/Modules/Xot/docs/testing/testing-setup.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/testing/testing-strategy.md: MANUAL end without mid @172
+laravel/Modules/Xot/docs/testing-best-practices-1.md: MANUAL end without mid @214
+laravel/Modules/Xot/docs/testing-best-practices-conflict.md: MANUAL end without mid @237
+laravel/Modules/Xot/docs/testing-best-practices-uppercase-1.md: MANUAL end without mid @214
+laravel/Modules/Xot/docs/testing-best-practices-uppercase.md: MANUAL end without mid @214
+laravel/Modules/Xot/docs/testing-best-practices.md: MANUAL end without mid @33
+laravel/Modules/Xot/docs/testing-consolidated.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/testing-fixes-roadmap.md: MANUAL end without mid @126
+laravel/Modules/Xot/docs/testing-philosophy-unified.md: MANUAL end without mid @61
+laravel/Modules/Xot/docs/testing-progress-session-2025-01-22.md: MANUAL end without mid @146
+laravel/Modules/Xot/docs/testing-progress-session.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/testing-psr4-compliance.md: MANUAL end without mid @117
+laravel/Modules/Xot/docs/testing-refreshatabase-rule.md: MANUAL end without mid @240
+laravel/Modules/Xot/docs/testing.md: MANUAL orphan end @826
+laravel/Modules/Xot/docs/testinges.md: MANUAL end without mid @145
+laravel/Modules/Xot/docs/theme-livewire.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/theme-two-implementation-notes.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/theme-vestito.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/theme.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/themes-structure.md: MANUAL end without mid @234
+laravel/Modules/Xot/docs/themes.md: MANUAL end without mid @100
+laravel/Modules/Xot/docs/thinking-about.blade.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/third-party-model-inheritance.md: MANUAL end without mid @287
+laravel/Modules/Xot/docs/third-party-model-quick-reference.md: MANUAL end without mid @106
+laravel/Modules/Xot/docs/tips.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/todo.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/traduzioni-navigation.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/traduzioni-navigation.mdc: MANUAL end without mid @17
+laravel/Modules/Xot/docs/trait-collision-resolution.md: MANUAL end without mid @48
+laravel/Modules/Xot/docs/trait-conflict-resolution.md: MANUAL end without mid @94
+laravel/Modules/Xot/docs/trait-mancanti-e-miglioramenti-architett.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/trait-method-signature.md: MANUAL end without mid @149
+laravel/Modules/Xot/docs/trait-resolution.md: MANUAL end without mid @102
+laravel/Modules/Xot/docs/traits/hasxotfactory.md: MANUAL orphan end @299
+laravel/Modules/Xot/docs/traits/relationx.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/translation-philosophy.md: MANUAL end without mid @123
+laravel/Modules/Xot/docs/translation-rules-1.md: MANUAL end without mid @148
+laravel/Modules/Xot/docs/translation-rules.md: MANUAL end without mid @148
+laravel/Modules/Xot/docs/translation-structure-expanded.md: MANUAL end without mid @171
+laravel/Modules/Xot/docs/translation-system.md: RESOLVED 2/2
+laravel/Modules/Xot/docs/translation.md: MANUAL end without mid @167
+laravel/Modules/Xot/docs/translations/translation-complete-guide.md: MANUAL end without mid @32
+laravel/Modules/Xot/docs/translations/translation-rules.md: MANUAL end without mid @67
+laravel/Modules/Xot/docs/translations/translation-standards.md: MANUAL end without mid @291
+laravel/Modules/Xot/docs/translations/translation-structure-expanded.md: MANUAL end without mid @173
+laravel/Modules/Xot/docs/translations/translation-system.md: MANUAL end without mid @463
+laravel/Modules/Xot/docs/translations/translations-best-practices.md: MANUAL end without mid @497
+laravel/Modules/Xot/docs/translations/translations.md: MANUAL end without mid @213
+laravel/Modules/Xot/docs/translations-best-practices.md: MANUAL end without mid @495
+laravel/Modules/Xot/docs/translations-navigation.md: MANUAL end without mid @17
+laravel/Modules/Xot/docs/translations-navigation.mdc: MANUAL end without mid @17
+laravel/Modules/Xot/docs/troubleshooting/README.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/troubleshooting/widget-fileupload-errors.md: MANUAL end without mid @311
+laravel/Modules/Xot/docs/troubleshooting-consolidated.md: MANUAL orphan end @16
+laravel/Modules/Xot/docs/troubleshooting.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/type-hinting.md: SEMANTIC 0/10
+laravel/Modules/Xot/docs/ubuntu/lamp.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/ubuntu/zsh.md: MANUAL end without mid @34
+laravel/Modules/Xot/docs/ui-ux-guidelines.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/update-mysql.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/upload.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/usage.md: MANUAL end without mid @131
+laravel/Modules/Xot/docs/useful-links.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/user-reference-corrections-sumy.md: MANUAL end without mid @85
+laravel/Modules/Xot/docs/user-reference-corrections.md: MANUAL end without mid @159
+laravel/Modules/Xot/docs/user-reference-pattern.md: MANUAL end without mid @229
+laravel/Modules/Xot/docs/user-reference.md: MANUAL end without mid @235
+laravel/Modules/Xot/docs/uuid.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/vendor.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/video-editor.md: PARTIAL 1/2
+laravel/Modules/Xot/docs/view/components/xot-base-component.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/view/composers/xot-composer.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/view-cache-execution-decision.md: MANUAL end without mid @189
+laravel/Modules/Xot/docs/view-composer-loop-infinite.md: MANUAL end without mid @614
+laravel/Modules/Xot/docs/view-models.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/vite-configuration.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/volt-folio-best-practices.md: MANUAL end without mid @267
+laravel/Modules/Xot/docs/wcag-accessibility-guidelines.md: MANUAL end without mid @8
+laravel/Modules/Xot/docs/web-scraping.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/widget-implementation-rules-2-1.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/widget-implementation-rules-2-widget-implementation-rules-xot-module.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/widget-implementation-rules-2.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/widget-implementation-rules-conflict.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/widget-implementation-rules-widget-implementation-rules-xot-module.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/widget-implementation-rules-xot-module.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/widget-implementation-rules.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/widget-implementation.md: RESOLVED 1/1
+laravel/Modules/Xot/docs/widget-view-resolution.md: MANUAL end without mid @185
+laravel/Modules/Xot/docs/widgetsization.md: MANUAL end without mid @167
+laravel/Modules/Xot/docs/wiki/AGENTS.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/README.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/array-keys-rule.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/bmad-method.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/ai-harness-xot-discipline.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/basemodel-connection-doctrine.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/claude-audit-all-modules-static.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/claude-audit-static-all-modules.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/claude-code-laraxot-rules-path-scoping.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/composer-root-skeleton-modular.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/env-testing-parity-copy-env.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/field-refresh-action.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/wiki/concepts/filament-haswizard-study.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/filament-haswizard-vs-xotbasewizard.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/filament-pa-design-colors.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/wiki/concepts/filament-v5-hybrid-pattern.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/filament-widgets-domain-folder-naming.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/gsd-canonical-source.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/laravel13-modular-package-compatibility-matrix.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/laraxot-religion-phpstan-fixes.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/method-name-homonyms.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/migration-update-timestamps-only.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/module-testcase-xotbase-hierarchy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/no-app-support-queueable-actions.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/wiki/concepts/no-services-no-support-queueable-actions.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/wiki/concepts/php-syntax-errors-block-phpstan.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/php84-upgrade-extension-checklist.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/phpstan-cluster-map-and-false-friends.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/phpstan-fixes-log.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/phpstan-pest-bridge-discipline.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/wiki/concepts/policy-base-strategy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/policy-inheritance-rule.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/policy-inheritance-strategy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/policy-module-matrix.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/ponytail-audit.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/ponytail-docs-lifecycle.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/redundancy-catalog.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/wiki/concepts/ridondanze-cross-cutting-codebase.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/second-brain-local-discipline.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/testing.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/trend-action-delegation.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/why-xotbaseresourceform-superior.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/wiki/concepts/xot-base-field-philosophy.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/xot-base-wizard-widget-architecture.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/xot-services-support-to-actions.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/xot-tests-autoload-phpstan.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/wiki/concepts/xotbase-resource-form-pattern.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/xotbase-wizard-architecture.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/xotbasefield-calculated-view-rule.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/xotbasemodel-get-class-name.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/concepts/xotbasewizard-view-calculation.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/concepts/xotbasewizardwidget-vs-filament-haswizard.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/filament-wizard-refactoring.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/how-to/gitmodules-sync-session.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/index.md: SEMANTIC 0/5
+laravel/Modules/Xot/docs/wiki/log.md: PARTIAL 1/9
+laravel/Modules/Xot/docs/wiki/memories/composer-root-minimal-nwidart.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/memories/phpstan-remediation-swarm.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/overviews/platform-completion-roadmap.md: SEMANTIC 0/6
+laravel/Modules/Xot/docs/wiki/phpstan-best-practices.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/redundancy/audit-profondo-ridondanze-holistic.md: SEMANTIC 0/4
+laravel/Modules/Xot/docs/wiki/redundancy/byte-identical-files-static-scan.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/redundancy/duplicated-data-objects-cross-module.md: SEMANTIC 0/2
+laravel/Modules/Xot/docs/wiki/regex-replace-patterns.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/rules/module-root-cleanup-rules.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/wiki/rules/opencode-gsd-config.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/rules/pest-global-class-imports.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/rules/phpunit-central-config-only.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/templates/module-admin-panel-provider.stub.php: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/traits/hasxotfactory.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/troubleshooting/browsershot-missing-dependency.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/troubleshooting/git-merge-conflict-inventory.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/troubleshooting/phpstan-fatal-errors-eloquent-properties.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/troubleshooting/phpstan-perfection-guide.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/wiki/troubleshooting/tableupdate-modifier-syntax-error.md: SEMANTIC 0/1
+laravel/Modules/Xot/docs/windsurf-mcp-config.json: PARTIAL 1/2
+laravel/Modules/Xot/docs/xot-base-classes-1.md: MANUAL end without mid @71
+laravel/Modules/Xot/docs/xot-base-page.md: MANUAL end without mid @111
+laravel/Modules/Xot/docs/xot-base-translation-update.md: MANUAL end without mid @7
+laravel/Modules/Xot/docs/xot-engine-complete-guide.md: MANUAL end without mid @508
+laravel/Modules/Xot/docs/xot-engine.md: MANUAL end without mid @516
+laravel/Modules/Xot/docs/xot-table.md: SEMANTIC 0/3
+laravel/Modules/Xot/docs/xotbaage-getmodel-fix.md: MANUAL end without mid @108
+laravel/Modules/Xot/docs/xotbaage-getmodel.md: MANUAL end without mid @108
+laravel/Modules/Xot/docs/xotbase-extension.md: MANUAL end without mid @209
+laravel/Modules/Xot/docs/xotbasepage-implementation.md: MANUAL end without mid @200
+laravel/Modules/Xot/docs/xotbaseresource.md: MANUAL end without mid @28
+laravel/Modules/Xot/docs/xotbaserouteserviceprovider-resolution.md: MANUAL end without mid @36
+laravel/Modules/Xot/docs/xotbaseserviceprovider.md: MANUAL end without mid @238
+laravel/Modules/Xot/docs/xotbaseserviceprovider.mdc: MANUAL end without mid @14
+laravel/Modules/Xot/helpers/merge_translation_files.stub.php: MANUAL unterminated block @14
+laravel/Modules/Xot/lang/ar/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/da/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/da/labels.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/da/strings.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/de/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/de/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/de/dashboard.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/de/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/de/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/de/labels.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/de/log.php: SEMANTIC 0/13
+laravel/Modules/Xot/lang/de/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/de/session.php: SEMANTIC 0/6
+laravel/Modules/Xot/lang/de/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/de/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/el/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/el/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/el/strings.php: SEMANTIC 0/5
+laravel/Modules/Xot/lang/en/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/en/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/en/dashboard.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/en/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/en/health.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/en/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/en/labels.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/en/log.php: SEMANTIC 0/13
+laravel/Modules/Xot/lang/en/main_dashboard.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/en/navs.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/en/session.php: SEMANTIC 0/6
+laravel/Modules/Xot/lang/en/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/en/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/es/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/es/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/fr/auth.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/fr/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/fr/labels.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/fr/navs.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/fr/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/fr/validation.php: SEMANTIC 0/5
+laravel/Modules/Xot/lang/it/actions.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/artisan_commands_manager.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/it/artisan_header.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/buttons.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/it/cache.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/it/cache_lock.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/cache_locks.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/caches.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/dashboard.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/it/day_of_week.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/it/env.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/exceptions.php: SEMANTIC 0/5
+laravel/Modules/Xot/lang/it/export_xls.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/it/extra.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/extras.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/fake_seeder_header.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/it/filter_form.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/it/health.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/it/labels.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/it/log.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/logs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/main_dashboard.php: SEMANTIC 0/4
+laravel/Modules/Xot/lang/it/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/metatag.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/module.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/modules.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/pdf_engine_enum.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/it/session.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/sessions.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/it/test.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/validation.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/it/xot_base.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/xot_base_list_records.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/xot_base_manage_related_records.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/it/xot_base_panel.php: SEMANTIC 0/4
+laravel/Modules/Xot/lang/it/xot_base_resource_form.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/it/year.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/health.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/ar/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ar/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/ar/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/labels.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/da/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/da/strings.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/da/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/de/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/de/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/el/strings.php: SEMANTIC 0/5
+laravel/Modules/Xot/lang/lang/el/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/health.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/en/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/en/strings.php: SEMANTIC 0/5
+laravel/Modules/Xot/lang/lang/en/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/health.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/es/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/es/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/es/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/et/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fa/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/auth.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/fr/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/labels.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/fr/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/navs.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/fr/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/fr/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/fr/validation.php: SEMANTIC 0/5
+laravel/Modules/Xot/lang/lang/gr/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/actions.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/array_service.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/cache.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/cache_lock.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/dashboard.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/it/env.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/extra.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/fake_seeder_header.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/health.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/log.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/it/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/metatag.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/it/module.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/session.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/try_array_to_xls_action.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/update_job.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/validation.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/it/xls_action.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/xls_by_model_class_action.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/xls_import_action.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/xot_base.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/xot_base_job.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/xot_base_list_records.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/it/xot_base_manage_related_records.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/it/xot_base_panel.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/it/xot_service.php: SEMANTIC 0/8
+laravel/Modules/Xot/lang/lang/ka/health.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/nl/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/button.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/nl/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/nl/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pl/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt-br/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/health.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/pt_br/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/strings.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/pt_br/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ro/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/ru/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/strings.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/sv/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/alerts.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/auth.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/buttons.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/history.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/http.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/labels.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/menus.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/navs.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/pagination.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/passwords.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/roles.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/strings.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/th/validation.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/tr/health.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/tr/messages.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/lang/vi/health.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/lang/zh_cn/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/lang/zh_tw/messages.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/nl/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/nl/strings.php: SEMANTIC 0/3
+laravel/Modules/Xot/lang/pt_BR/health.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/pt_br/health.php: SEMANTIC 0/1
+laravel/Modules/Xot/lang/sv/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/th/exceptions.php: SEMANTIC 0/2
+laravel/Modules/Xot/lang/tr/messages.php: SEMANTIC 0/2
+laravel/Modules/Xot/packages/coolsam/panel-modules/.github/CONTRIBUTING.md: SEMANTIC 0/1
+laravel/Modules/Xot/packages/coolsam/panel-modules/README.md: SEMANTIC 0/1
+laravel/Modules/Xot/packages/coolsam/panel-modules/package.json: SEMANTIC 0/1
+laravel/Modules/Xot/packages/coolsam/panel-modules/src/CoolModulesServiceProvider.php: SEMANTIC 0/1
+laravel/Modules/Xot/packages/coolsam/panel-modules/src/Extensions/LaravelModulesServiceProvider.php: SEMANTIC 0/1
+laravel/Modules/Xot/phpmd.ruleset.xml: SEMANTIC 0/5
+laravel/Modules/Xot/resources/views/filament/pages/metatag.blade.php: SEMANTIC 0/2
+laravel/Modules/Xot/resources/views/filament/widgets/state-overview.blade.php: SEMANTIC 0/1
+laravel/Modules/Xot/routes/api.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/CreatesApplication.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Feature/Actions/Pdf/GetPdfContentByRecordActionTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Feature/BaseMorphPivotBusinessLogicAttributesTest.php: SEMANTIC 0/25
+laravel/Modules/Xot/tests/Feature/BaseMorphPivotBusinessLogicTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Feature/Filament/MockResourceWithRelations/RelationManagers/TestRelationManager.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Feature/Filament/XotBaseResourceCoverageTest.php: SEMANTIC 0/13
+laravel/Modules/Xot/tests/Feature/Filament/XotBaseResourceTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Feature/FixStructureTest.php: SEMANTIC 0/5
+laravel/Modules/Xot/tests/Feature/ModuleBusinessLogicTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Feature/ModuleServiceIntegrationTest.php: SEMANTIC 0/6
+laravel/Modules/Xot/tests/Feature/XotBaseModelBusinessLogicTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/FilamentSchemaCoverage.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Fixtures/Models/HasExtraMockExtra.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/SafeEloquentCastFixture.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Stubs/XotCovRelationHost.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Fixtures/Stubs/XotFilamentResourceContract.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Fixtures/Traits/BreadcrumbProbe.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Traits/HasCustomModelLabelProbes.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Traits/ModelLabelFromModelNameProbe.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Traits/ModelLabelFromPropertyProbe.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Traits/NavigationLabelFromPluralProbe.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Traits/NavigationLabelFromPropertyProbe.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Traits/PluralModelLabelFromPropertyProbe.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/Traits/PluralModelLabelFromSingularProbe.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Fixtures/XotBaseTransitionFixture.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/ModuleBusinessCoverage.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/ModuleDeepCoverage.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/ModuleExecuteCoverage.php: SEMANTIC 0/8
+laravel/Modules/Xot/tests/ModuleRemainingCoverage.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Pest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/PestStubs.php: MANUAL nested start @50
+laravel/Modules/Xot/tests/TestCase.php: SEMANTIC 0/6
+laravel/Modules/Xot/tests/Unit/Actions/Arr/ArrayToRawJsActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Arr/DiffAssocRecursiveActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Arr/RangeIntersectActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Arr/SaveArrayActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Arr/SaveArrayActionsTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Arr/SaveJsonArrayActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Arr/SavePhpArrayActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/ArrayArrActionsTest.php: SEMANTIC 0/7
+laravel/Modules/Xot/tests/Unit/Actions/ArtisanActionTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Actions/Blade/RegisterBladeComponentsActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Cast/EloquentCastActionsTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeArrayByModelCastActionTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeArrayCastActionTest.php: SEMANTIC 0/5
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeAttributeCastActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeBooleanCastActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeCastActionsTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeEloquentCastActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeFloatCastActionTest.php: SEMANTIC 0/14
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeIntCastActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeNullableStringCastActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeObjectCastActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeObjectEloquentCastActionsTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Cast/SafeStringCastActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Class/GetFilenameByClassnameActionTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Actions/Collection/TransCollectionActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Config/GetTenantConfigActionsTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Actions/Config/GetTenantConfigArrayActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Config/GetTenantConfigPathActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Debug/MeasureActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Dummy/GetProductsArrayDummyActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/ExecuteArtisanCommandActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/File/AddStrictTypesDeclarationActionTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Actions/File/AssetActionsTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/File/CreateDirectoryForFilenameActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/File/FileActionStaticsTest.php: SEMANTIC 0/7
+laravel/Modules/Xot/tests/Unit/Actions/File/FileActionsTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/File/FixPathActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/File/GetClassNameByPathActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/File/GetComponentsActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/File/GetModulePathActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/File/GetViewNameSpacePathActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/File/SvgExistsActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/File/ViewPathActionTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Actions/GetModelActionsTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Actions/GetTransKeyActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Model/DestroyActionTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Actions/Model/HasColumnActionTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Actions/ModelClass/CountActionsTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/ModelTypeActionsTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Module/GetModuleConfigActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Module/GetModuleNameActionsTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/Module/GetModulePathByGeneratorActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Module/ModuleActionsTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Parse/ParsePrintPageStringActionTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Actions/Pdf/MakePdfSpatieTestActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Pdf/PdfActionsTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/Query/CreateTableIndexByModelClassColumnsActionTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Actions/Route/RouteActionsTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/String/GetPronounceablePasswordActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/String/GetStrBetweenStartsWithActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/String/NormalizeDriverNameActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/String/SanitizeActionTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/String/StringActionsTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Actions/View/GetViewByClassActionTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Actions/ViewActionsTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/BasicTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Datas/ArticleDataTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Filament/OptionLabelFromRecordTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/HasExtraTraitTest.php: SEMANTIC 0/6
+laravel/Modules/Xot/tests/Unit/HasTableWithXotTestClass.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/HasTableWithoutOptionalMethodsTestClass.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/HasXotTableTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Helpers/PathHelperTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/MetatagDataTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Models/BaseModelTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Models/XotBaseModelBusinessLogicTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Models/XotBaseModelTest.php: SEMANTIC 0/7
+laravel/Modules/Xot/tests/Unit/ModelsTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/ModuleServiceTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/SendMailByRecordActionTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Services/ArtisanServiceTest.php: SEMANTIC 0/6
+laravel/Modules/Xot/tests/Unit/Services/ThemeServiceTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Services/UrlServiceTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/SimpleModelsTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Support/DummyTestModel.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Support/HasTableWithXotTestClass.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Support/HasTableWithoutOptionalMethodsTestClass.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/TestCaseTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Traits/EnumTraitTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Traits/Filament/HasCustomModelLabelTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/Traits/HasCommonScopesTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/Traits/HasCsrfTokenTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/Traits/HasCustomRelationsTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/Traits/HasSchemalessAttributesTest.php: SEMANTIC 0/6
+laravel/Modules/Xot/tests/Unit/Traits/HasTableFunctionsTraitTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/ValueObjects/EmailValueObjectTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/ValueObjects/PhoneValueObjectTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/XotArtisanCommandsHelpersCoverageTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/XotBaseTransitionTest.php: SEMANTIC 0/6
+laravel/Modules/Xot/tests/Unit/XotChartWidgetsResourcePageCoverageTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/XotCommandsActionsHundredCoverageTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/XotDateTimeRuleBehaviorTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/XotExecuteCoverage50Test.php: SEMANTIC 0/35
+laravel/Modules/Xot/tests/Unit/XotExplicitZeroKillersTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/XotFieldRefreshQueryExportCoverageTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/XotFloor50ExtrasCoverageTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/XotHasManyWidgetCoverageTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/XotHundredPercentCoverageTest.php: SEMANTIC 0/5
+laravel/Modules/Xot/tests/Unit/XotMigrationDeepBranchesTest.php: SEMANTIC 0/4
+laravel/Modules/Xot/tests/Unit/XotMigrationUuidModelClassCoverageTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/XotRelationManageStatesCoverageTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/Unit/XotRemainingZerosSafeInvokeTest.php: SEMANTIC 0/2
+laravel/Modules/Xot/tests/Unit/XotSecurityHandlersCoverageTest.php: SEMANTIC 0/3
+laravel/Modules/Xot/tests/Unit/XotZeroFilesExplicitCoverageTest.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/XotBaseTestCase.php: SEMANTIC 0/10
+laravel/Modules/Xot/tests/XotForkedInvoke.php: SEMANTIC 0/1
+laravel/Modules/Xot/tests/pest.php: SEMANTIC 0/1
+laravel/Modules/Notify/README.md: MANUAL nested start @21
+laravel/Modules/Notify/app/Actions/Mail/SendMailAction.php: CLEAN
+laravel/Modules/Notify/app/Actions/Mail/TryMailAction.php: CLEAN
+laravel/Modules/Notify/app/Channels/NetfunChannel.php: CLEAN
+laravel/Modules/Notify/app/Channels/SmsChannel.php: CLEAN
+laravel/Modules/Notify/app/Channels/TelegramChannel.php: CLEAN
+laravel/Modules/Notify/app/Channels/WhatsAppChannel.php: CLEAN
+laravel/Modules/Notify/app/Factories/WhatsAppActionFactory.php: CLEAN
+laravel/Modules/Notify/app/Filament/Resources/ContactResource.php: CLEAN
+laravel/Modules/Notify/app/Filament/Resources/MailTemplateResource/Schemas/MailTemplateForm.php: CLEAN
+laravel/Modules/Notify/app/Filament/Resources/MailTemplateResource.php: CLEAN
+laravel/Modules/Notify/app/Filament/Resources/NotificationResource.php: CLEAN
+laravel/Modules/Notify/app/Filament/Resources/NotificationTemplateResource.php: CLEAN
+laravel/Modules/Notify/app/Filament/Resources/NotifyThemeResource.php: CLEAN
+laravel/Modules/Notify/app/Models/Contact.php: CLEAN
+laravel/Modules/Notify/app/Models/MailTemplateLog.php: CLEAN
+laravel/Modules/Notify/app/Models/MailTemplateVersion.php: CLEAN
+laravel/Modules/Notify/app/Models/Notification.php: CLEAN
+laravel/Modules/Notify/app/Models/NotificationChannel.php: CLEAN
+laravel/Modules/Notify/app/Models/NotificationLog.php: CLEAN
+laravel/Modules/Notify/app/Models/NotificationTemplate.php: CLEAN
+laravel/Modules/Notify/app/Models/NotificationTemplateVersion.php: CLEAN
+laravel/Modules/Notify/app/Models/NotifyTheme.php: CLEAN
+laravel/Modules/Notify/app/Models/NotifyThemeable.php: CLEAN
+laravel/Modules/Notify/app/Notifications/Channels/TelegramChannel.php: CLEAN
+laravel/Modules/Notify/app/Notifications/SmsNotification.php: CLEAN
+laravel/Modules/Notify/app/Notifications/TelegramNotification.php: CLEAN
+laravel/Modules/Notify/app/Notifications/TicketAssignedNotification.php: CLEAN
+laravel/Modules/Notify/app/Notifications/WhatsAppNotification.php: CLEAN
+laravel/Modules/Notify/database/migrations/2026_06_10_134000_create_notifications_table.php: CLEAN
+laravel/Modules/Notify/docs/00-INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ABSOLUTE_COMPLETION_100.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/AGENTS.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/AGNOSTIC_DOCUMENTATION_RULE.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/AI_AGENT_TEAMS.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/BOOST_SKILL_INSTALLATION_ERROR.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/BOOST_SKILL_INSTALLATION_SUCCESS.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/CHANGELOG.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/CLAUDE.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/DOCUMENTATION_ANALYSIS_AND_IMPROVEMENT_PLAN.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/DOCUMENTATION_AUDIT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/DOCUMENTATION_ECOSYSTEM.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/DOCUMENTATION_GOVERNANCE.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/DOCUMENTATION_IMPROVEMENT_PLAN_MULTI_AGENT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/DOCUMENTATION_INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/EXCELLENCE_2025.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/FILES-CREATED-SESSION-007.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/FINAL_MASTER_REPORT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/FINAL_SUMMARY.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/FIX_COLORI_HEADER_FOOTER.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/GITHUB_ACTIONS_STATUS.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/HTML_PARITY_RULES.md: MANUAL orphan end @109
+laravel/Modules/Notify/docs/LARAVEL_SKILLS_INSTALLATION_REPORT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/LEGGI-QUI-DOMANI.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/MASTER_DOCUMENTATION_INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/MASTER_PLAN.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/MCP_SERVERS.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/MIGRATION_PLAN.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/MODULE_DOCS_INDEX.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/MODULE_ROADMAPS_INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/NOTEBOOKLM_INSTALLATION_SUMMARY.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/NOTEBOOKLM_INTEGRATION.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/OPENVIKING_BMAD_GSD_RALPH_COMPLETE.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/PROGETTO-COMPLETATO-100-PERCENTO.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/PROJECT_COMPLETION_STATUS.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/PROJECT_OVERVIEW.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/PROJECT_ROADMAP.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/PROJECT_STATUS.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/QWEN.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/REPORT_FINALE.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/SESSIONE_100_PERCENT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/SESSIONE_ANALISI_HOMEPAGE.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/SESSIONE_COMPLETA.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/SUPERMEMORY_QUICKSTART.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/SYNC_REMOTE_REPO_TEST_PLAN.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/THEMES_DOCUMENTATION_INDEX.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/THEME_SYSTEM_DYNAMIC.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/ULTIMATE_FINAL_REPORT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/VERIFICA_HOMEPAGE.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/agents.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/ai-agents/00-index.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/ai-agents/01-gsd-workflow.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/02-bmad-workflow.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/03-architecture-zen.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/04-filament-philosophy.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/05-front-office-audit.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/ai-agents/06-cinematic-effects.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/ai-agents/07-mcp-tailwind-ui.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/ai-agents/08-verified-commit-governance.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/09-notebooklm-skill.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/ai-agents/GITHUB_ISSUES_WORKFLOW.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/01-project-overview/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/02-tooling/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/03-code-style/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/04-architecture/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/05-database/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/06-filament-admin/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/07-assets/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/08-testing/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/09-cursor-rules/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/10-file-patterns/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/11-mcp/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/12-checklist/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/13-references/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/14-theme/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/agents-guide/15-chaos-monkey/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/architecture/00-index.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/ai-agents/guidelines/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/overview/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/quick-reference/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/rules/00-index.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/ai-agents/split/INDEX.md: SEMANTIC 0/6
+laravel/Modules/Notify/docs/ai-agents/split/agents/INDEX.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/ai-agents/split/claude/INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/ai-agents/split/tasks/INDEX.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/ai-agents/workflow/00-index.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/analisi-metodi-duplicati-index.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/analisi-metodi-duplicati-master.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/architecture/DOCUMENT_ROOT_ARCHITECTURE.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/architecture-diagrams.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/archive/historical/changelog.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/archive/roadmaps/ANALYSIS.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/archive/roadmaps/MANIFEST.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/archive/roadmaps/MIGRATION_GUIDE.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/bugs/summary.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/changelog.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/claude.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/contributing.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/design-conversion-roadmap.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/dry-kiss-analysis-master.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/drytraitmethods.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/files-created-session-replikate.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/fixes/DATABASE_DIRECTORY_NAMING_FIX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/fixes/SQLITE_PERMISSION_FIX.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/gemini.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/github/DISCUSSION_AI_WORK_SUMMARY.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/github/GITHUB_ACTIONS_FIX_REPORT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/github/GITHUB_ACTION_SETUP_REQUIRED.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/github/ISSUE_MULTI_AGENT_COLLABORATION.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/github/SYNC_REMOTE_REPO_DOCS_SUMMARY.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/graphify/README.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/index.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/leggi-qui-domani.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/llm-wiki/agents.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/metodi_duplicati_analisi.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/on-demand-pattern.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/performance-optimization.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/phase-1-execution-dashboard.md: SEMANTIC 0/6
+laravel/Modules/Notify/docs/phase-1-research-complete.md: SEMANTIC 0/6
+laravel/Modules/Notify/docs/phpstan_fixes.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/progetto-completato-100-percento.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/project-roadmap.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/project-structure.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/project.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/project_docs/2025_EXCELLENCE_ACHIEVEMENT.md: SEMANTIC 0/7
+laravel/Modules/Notify/docs/project_docs/AGID_IMPLEMENTATION_GUIDE.md: SEMANTIC 0/10
+laravel/Modules/Notify/docs/project_docs/DOCUMENTATION_STATUS.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/project_docs/FINAL_REFACTORING_REPORT.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/project_docs/FINAL_STATISTICS.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/project_docs/INDEX.md: SEMANTIC 0/11
+laravel/Modules/Notify/docs/project_docs/MISSION_ACCOMPLISHED.md: SEMANTIC 0/8
+laravel/Modules/Notify/docs/project_docs/PROJECT_COMPLETION_CERTIFICATE.md: SEMANTIC 0/7
+laravel/Modules/Notify/docs/project_docs/QUALITY_DASHBOARD.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/project_docs/SECURITY_CHECKLIST.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/project_docs/architecture.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/project_docs/roadmap.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/qmd-setup.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/qwen.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/readme-phase-1-execution.md: SEMANTIC 0/8
+laravel/Modules/Notify/docs/replikate-phase-1-complete.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/reports/DESIGN_COMUNI_PROGRESS_1.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/reports/DOCUMENTATION_UPDATE_COMPLETE.md: SEMANTIC 0/7
+laravel/Modules/Notify/docs/reports/DOCUMENT_ROOT_UPDATE_SUMMARY.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/reports/FINAL_DOCUMENTATION_REPORT.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/reports/FINAL_SUCCESS_REPORT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/reports/MULTI_AGENT_FINAL_REPORT.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/reports/THEME_DOCUMENTATION_UPDATE_COMPLETE.md: SEMANTIC 0/5
+laravel/Modules/Notify/docs/reports/THEME_UPDATE_FINAL_REPORT.md: SEMANTIC 0/7
+laravel/Modules/Notify/docs/reports/TRANSLATION_AUDIT_SUMMARY.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/roadmap.md: SEMANTIC 0/6
+laravel/Modules/Notify/docs/session-007-summary.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/start-here-replikate-phase2.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/superpowers/INSTALLATION_SUMMARY.md: SEMANTIC 0/4
+laravel/Modules/Notify/docs/templates/MODULE_README_TEMPLATE.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/token-optimization-strategy.md.old: SEMANTIC 0/2
+laravel/Modules/Notify/docs/wiki/agents.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/wiki/commands/INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/wiki/integrations/_da-riconciliare/ABSOLUTE_COMPLETION_100.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/wiki/integrations/_da-riconciliare/FINAL_SUMMARY.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/wiki/integrations/_da-riconciliare/PROJECT_COMPLETION_STATUS.md: SEMANTIC 0/2
+laravel/Modules/Notify/docs/wiki/memories/INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/wiki/quick-reference.md: SEMANTIC 0/3
+laravel/Modules/Notify/docs/wiki/rules/INDEX.md: SEMANTIC 0/1
+laravel/Modules/Notify/docs/wiki/session-summary.md: MANUAL nested start @3
+laravel/Modules/Notify/docs/xotbasepivot-executive-summary.md: SEMANTIC 0/2
+laravel/Modules/Notify/tests/Feature/NotificationTemplateVersionBusinessLogicTest.php: CLEAN
+laravel/Modules/Notify/tests/Feature/TemplateManagementBusinessLogicTest.php: CLEAN
+laravel/Modules/Notify/tests/Pest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Actions/SendNotificationFlowTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Filament/Resources/NotifyFilamentResourcesCoverageTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Filament/Resources/NotifyThemeAndColumnsCoverageTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/ContactTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/ContactTestPartOneTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/ContactTestPartTwoTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/MailTemplateLogTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/MailTemplateLogTestPartOneTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/MailTemplateLogTestPartTwoTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/MailTemplateTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotificationTemplateVersionTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotificationTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotificationTestPartOneTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotificationTestPartTwoTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotificationTypeTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotifyThemeTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotifyThemeTestPartOneTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotifyThemeTestPartTwoTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/Models/NotifyThemeableTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/ModuleCoverageBoostTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/NotifyCoverage100ExtendedTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/NotifyGapAttackCoverageTest.php: CLEAN
+laravel/Modules/Notify/tests/Unit/NotifyHighestMissCoverageTest.php: CLEAN

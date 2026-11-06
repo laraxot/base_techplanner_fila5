@@ -22,25 +22,20 @@ use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\Notify\Notifications\SmsNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Override;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
  * @property Schema $smsForm
-=======
- * @property \Filament\Schemas\Schema $smsForm
->>>>>>> 6ed19256f (.)
  */
 class SendSmsPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
+    /** @var array<string, mixed>|null */
     public ?array $smsData = [];
 
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-device-phone-mobile';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-device-phone-mobile';
->>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-sms';
 
@@ -64,8 +59,7 @@ class SendSmsPage extends XotBasePage
     protected function getForms(): array
     {
         return [
-            'smsForm',
-        ];
+            'smsForm'];
     }
 
     protected function fillForms(): void
@@ -79,11 +73,7 @@ class SendSmsPage extends XotBasePage
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, TextInput|Select>
-=======
-     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Select>
->>>>>>> 6ed19256f (.)
      */
     public function getSmsFormSchema(): array
     {
@@ -103,12 +93,13 @@ class SendSmsPage extends XotBasePage
                 ->helperText(__('notify::sms.fields.driver.helper_text')),
             'template_slug' => Select::make('template_slug')
                 ->options(MailTemplate::all()->pluck('slug', 'slug'))
-                ->required(),
-        ];
+                ->required()];
     }
 
     public function sendSMS(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         try {
             $data = $this->smsForm->getState();
             $user = $this->getUser();
@@ -152,15 +143,13 @@ class SendSmsPage extends XotBasePage
     protected function getSmsFormActions(): array
     {
         return [
-            Action::make('send')
+            'submit' => Action::make('send')
                 ->label(__('notify::sms.actions.send'))
                 ->icon('heroicon-o-paper-airplane')
                 ->color('primary')
-                ->action('sendSMS'),
-        ];
+                ->action('sendSMS')];
     }
 
-    #[Override]
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();

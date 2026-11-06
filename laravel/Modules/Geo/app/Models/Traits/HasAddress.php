@@ -6,11 +6,14 @@ namespace Modules\Geo\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
-use Illuminate\Support\Arr;
 use Modules\Geo\Enums\AddressItemEnum;
 use Modules\Geo\Models\Address;
+
+use function Safe\preg_replace;
+
 use Webmozart\Assert\Assert;
 
 /**
@@ -20,24 +23,36 @@ use Webmozart\Assert\Assert;
  * Questo trait implementa la relazione polimorfica con il modello Address
  * e offre metodi di utilità per la gestione degli indirizzi.
  *
+ * @template TModel of \Illuminate\Database\Eloquent\Model
+ *
  * @property Collection<int, Address> $addresses
+ * @property string|null              $route
+ * @property string|null              $street_number
+ * @property string|null              $postal_code
+ * @property string|null              $city
+ * @property string|null              $province
+ * @property string|int               $id
+ *
+ * @phpstan-require-extends Model
  */
 trait HasAddress
 {
     /**
      * Ottiene gli indirizzi associati al modello.
+     *
+     * @return MorphMany<Address, $this>
      */
     public function addresses(): MorphMany
-    {
-        return $this->morphMany(Address::class, 'model');
+    {return $this->morphMany(Address::class, 'model');
     }
 
     /**
      * Ottiene indirizzo associato al modello.
+     *
+     * @return MorphOne<Address, $this>
      */
     public function address(): MorphOne
-    {
-        return $this->morphOne(Address::class, 'model');
+    {return $this->morphOne(Address::class, 'model');
     }
 
     /**
@@ -71,11 +86,11 @@ trait HasAddress
         }
         $address = sprintf(
             '%s, %s - %s, %s (%s)',
-            $this->route,
-            $this->street_number,
-            $this->postal_code,
-            $this->city,
-            $this->province,
+            $this->route ?? '',
+            $this->street_number ?? '',
+            $this->postal_code ?? '',
+            $this->city ?? '',
+            $this->province ?? '',
         );
 
         return trim(preg_replace('/[,\s]+/', ' ', $address));
@@ -168,30 +183,33 @@ trait HasAddress
 
     /**
      * Imposta un indirizzo come principale e rimuove il flag da tutti gli altri.
+     *
+     * Non è un setter fluent: side-effect su più record Address. Nome storico `set*`;
+     * ritorno void (symplify.noReturnSetterMethod) e fallimento esplicito via exception.
+     *
+     * @throws \InvalidArgumentException se l'indirizzo non appartiene a questo modello
      */
-    public function setAsPrimaryAddress(Address $address): bool
+    public function setAsPrimaryAddress(Address $address): void
     {
-        // Verifica che l'indirizzo appartenga a questo modello
         if ($address->model_id !== $this->id || $address->model_type !== static::class) {
-            return false;
+            throw new \InvalidArgumentException('L\'indirizzo non appartiene a questo modello');
         }
 
-        // Rimuovi il flag is_primary da tutti gli altri indirizzi
         $this->addresses()
             ->where('id', '!=', $address->id)
             ->where('is_primary', true)
             ->update(['is_primary' => false]);
 
-        // Imposta questo indirizzo come principale
-        return $address->update(['is_primary' => true]);
+        $address->update(['is_primary' => true]);
     }
 
     /**
      * Ottiene gli indirizzi di un determinato tipo.
+     *
+     * @return Collection<int, Address>
      */
     public function getAddressesByType(string $type): Collection
-    {
-        return $this->addresses()->where('type', $type)->get();
+    {return $this->addresses()->where('type', $type)->get();
     }
 
     /**
@@ -201,26 +219,20 @@ trait HasAddress
      * @param bool                 $setPrimary Se impostare questo indirizzo come principale
      */
     public function addAddress(array $data, bool $setPrimary = false): Address
-    {
-        // Se è il primo indirizzo o è richiesto esplicitamente, impostalo come principale
-        if ($setPrimary || 0 === $this->addresses()->count()) {
-            $data['is_primary'] = true;
+    {// Se è il primo indirizzo o è richiesto esplicitamente, impostalo come principale
+                if ($setPrimary || 0 === $this->addresses()->count()) {
+                    $data['is_primary'] = true;
 
-            // Rimuovi il flag is_primary da tutti gli altri indirizzi
-            if ($this->addresses()->count() > 0) {
-                $this->addresses()->update(['is_primary' => false]);
-            }
-        }
+                    // Rimuovi il flag is_primary da tutti gli altri indirizzi
+                    if ($this->addresses()->count() > 0) {
+                        $this->addresses()->update(['is_primary' => false]);
+                    }
+                }
 
-<<<<<<< HEAD
         $address = $this->addresses()->create($data);
         Assert::isInstanceOf($address, Address::class);
 
         return $address;
-=======
-        /* @phpstan-ignore return.type */
-        return $this->addresses()->create($data);
->>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -229,9 +241,7 @@ trait HasAddress
      * @param array<string, mixed> $data
      */
     public function updatePrimaryAddress(array $data): ?Address
-    {
-        $primaryAddress = $this->primaryAddress();
-
+    {$primaryAddress = $this->primaryAddress();
         if (! $primaryAddress) {
             return $this->addAddress($data, true);
         }
@@ -242,55 +252,95 @@ trait HasAddress
     }
 
     /**
-     * Scope per filtrare i modelli in base alla città dell'indirizzo.
+     * Scope: modelli con almeno un indirizzo nella città indicata (`locality`).
+     *
+     * @param Builder<TModel> $query
+     *
+     * @return Builder<TModel>
      */
     public function scopeInCity(Builder $query, string $city): Builder
     {
-        return $query->whereHas('addresses', function ($q) use ($city): void {
-            $q->where('locality', $city);
-        });
+        return $query->whereHas(
+            'addresses',
+            /**
+             * @param Builder<Address> $q
+             */
+            function (Builder $q) use ($city): void {
+                $q->where('locality', $city);
+            },
+        );
     }
 
     /**
-     * Scope per filtrare i modelli in base alla provincia dell'indirizzo.
+     * Scope: modelli con almeno un indirizzo nella provincia (`administrative_area_level_3`).
+     *
+     * @param Builder<TModel> $query
+     *
+     * @return Builder<TModel>
      */
     public function scopeInProvince(Builder $query, string $province): Builder
     {
-        return $query->whereHas('addresses', function ($q) use ($province): void {
-            $q->where('administrative_area_level_3', $province);
-        });
+        return $query->whereHas(
+            'addresses',
+            /**
+             * @param Builder<Address> $q
+             */
+            function (Builder $q) use ($province): void {
+                $q->where('administrative_area_level_3', $province);
+            },
+        );
     }
 
     /**
-     * Scope per filtrare i modelli in base alla regione dell'indirizzo.
+     * Scope: modelli con almeno un indirizzo nella regione (`administrative_area_level_2`).
+     *
+     * @param Builder<TModel> $query
+     *
+     * @return Builder<TModel>
      */
     public function scopeInRegion(Builder $query, string $region): Builder
     {
-        return $query->whereHas('addresses', function ($q) use ($region): void {
-            $q->where('administrative_area_level_2', $region);
-        });
+        return $query->whereHas(
+            'addresses',
+            /**
+             * @param Builder<Address> $q
+             */
+            function (Builder $q) use ($region): void {
+                $q->where('administrative_area_level_2', $region);
+            },
+        );
     }
 
     /**
-     * Scope per filtrare i modelli in base al CAP dell'indirizzo.
+     * Scope: modelli con almeno un indirizzo con il CAP indicato.
+     *
+     * @param Builder<TModel> $query
+     *
+     * @return Builder<TModel>
      */
     public function scopeInPostalCode(Builder $query, string $postalCode): Builder
     {
-        return $query->whereHas('addresses', function ($q) use ($postalCode): void {
-            $q->where('postal_code', $postalCode);
-        });
+        return $query->whereHas(
+            'addresses',
+            /**
+             * @param Builder<Address> $q
+             */
+            function (Builder $q) use ($postalCode): void {
+                $q->where('postal_code', $postalCode);
+            },
+        );
     }
 
     /**
      * Initialize the trait.
-     *
-     * @return void
      */
-    protected function initializeHasAddress()
+    protected function initializeHasAddress(): void
     {
-        // Automatically create a random token
-        /** @var array<int, string> $fields */
-        $fields = Arr::map(AddressItemEnum::cases(), fn (AddressItemEnum $item): string => $item->value);
+        /** @var array<string> $fields */
+        $fields = array_values(array_map(
+            fn (AddressItemEnum $item): string => $item->value,
+            AddressItemEnum::cases(),
+        ));
         $this->mergeFillable($fields);
     }
 }

@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Lang Module - Testing Guidelines"
+module: "Lang"
+type: how-to
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Lang Module - Testing Guidelines
 
 ## Testing Framework Requirements
@@ -7,11 +21,8 @@ All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
 DB_CONNECTION=sqlite
-<<<<<<< HEAD
+DB_CONNECTION=mysql
 DB_DATABASE=<nome progetto>_data_test
-=======
-DB_DATABASE=saluteora_data_test
->>>>>>> 6ed19256f (.)
 APP_LOCALE=en
 APP_FALLBACK_LOCALE=en
 ```
@@ -377,11 +388,19 @@ describe('Lang Performance Tests', function () {
 ---
 
 **Last Updated**: 2025-08-28
-<<<<<<< HEAD
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
-=======
+
 **Testing Framework**: Pest
 **Environment**: .env.testing
->>>>>>> 6ed19256f (.)
+
+**Testing Framework**: Pest
+**Environment**: .env.testing
+
+**Testing Framework**: Pest
+**Environment**: .env.testing
+**Last Updated**: 2025-08-28
+
+**Testing Framework**: Pest
+**Environment**: .env.testing

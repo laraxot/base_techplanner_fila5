@@ -1,3 +1,11 @@
+---
+title: "Comandi Console - Modulo User"
+type: index
+status: draft
+updated: 2026-10-07
+tags: [docs, user, console_commands]
+qmd: "comandi console - modulo user user"
+---
 # Comandi Console - Modulo User
 
 ## Panoramica
@@ -206,13 +214,6 @@ Modules/User/
 
 ## Collegamenti
 - [Console Commands Philosophy](console_commands_philosophy.md)
-<<<<<<< HEAD
-- [User Models](../models/readme.md)
-- [Role Management](../models/role-management.md)
-- [Password Management](../password.md)
-- [README.md](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [User Models](../models/README.md)
 - [Role Management](../models/role-management.md)
 - [Password Management](../password.md)
@@ -251,7 +252,3 @@ Modules/User/
 - [ ] Metriche di utilizzo
 
 *Ultimo aggiornamento: 2025-01-27*
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27*
-=======
->>>>>>> 6ed19256f (.)

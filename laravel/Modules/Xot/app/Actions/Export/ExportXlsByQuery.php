@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Export;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Exports\QueryExport;
 use Spatie\QueueableAction\QueueableAction;
@@ -18,17 +19,10 @@ class ExportXlsByQuery
     /**
      * Esporta i risultati di una query in Excel.
      *
-<<<<<<< HEAD
-     * @param Builder            $query    Query da esportare
-     * @param string             $filename Nome del file Excel
-     * @param array<int, string> $fields   Campi da includere nell'export
-     * @param int|null           $limit    Limite di righe da esportare
-=======
-     * @param  Builder  $query  Query da esportare
+     * @param  Builder<Model>  $query  Query da esportare
      * @param  string  $filename  Nome del file Excel
      * @param  array<int, string>  $fields  Campi da includere nell'export
      * @param  int|null  $limit  Limite di righe da esportare
->>>>>>> 6ed19256f (.)
      */
     public function execute(
         Builder $query,
@@ -46,11 +40,7 @@ class ExportXlsByQuery
         );
         // Note: QueryExport doesn't accept a limit parameter directly
         // If limit is needed, apply it to the query before passing to the exporter
-<<<<<<< HEAD
-        if (null !== $limit) {
-=======
         if ($limit !== null) {
->>>>>>> 6ed19256f (.)
             $query->limit($limit);
         }
 

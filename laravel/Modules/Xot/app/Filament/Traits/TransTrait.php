@@ -4,40 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Traits;
 
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> 6ed19256f (.)
 use Illuminate\Contracts\Translation\Translator;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
-use Modules\Lang\Actions\SaveTransAction;
-use Modules\Xot\Actions\GetTransKeyAction;
-=======
-use LogicException;
-use Modules\Lang\Actions\SaveTransAction;
-use Modules\Xot\Actions\GetTransKeyAction;
-use TypeError;
->>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 trait TransTrait
 {
+    use TransFuncTrait;
+    use TransKeyTrait;
+
     /**
      * Get translation for a given key.
      *
-<<<<<<< HEAD
-     * @param array<string, bool|float|int|string|null> $params
-     *
-     * @throws \Exception Se exceptionIfNotExist è true e la traduzione non esiste
-=======
      * @param  array<string, bool|float|int|string|null>  $params
      *
-     * @throws Exception Se exceptionIfNotExist è true e la traduzione non esiste
->>>>>>> 6ed19256f (.)
+     * @throws \Exception Se exceptionIfNotExist è true e la traduzione non esiste
      */
     public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
     {
@@ -47,11 +31,7 @@ trait TransTrait
 
         if (is_string($res)) {
             if ($exceptionIfNotExist && $res === $tmp) {
-<<<<<<< HEAD
                 throw new \Exception('['.__LINE__.']['.class_basename(self::class).']');
-=======
-                throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
->>>>>>> 6ed19256f (.)
             }
 
             return $res;
@@ -65,46 +45,6 @@ trait TransTrait
         }
 
         return 'fix:'.$tmp;
-    }
-
-    /**
-     * Get translation key for a given key.
-     */
-    public static function getKeyTrans(string $key): string
-    {
-        /** @var string */
-        $transKey = app(GetTransKeyAction::class)->execute(static::class);
-
-        $key = $transKey.'.'.$key;
-        $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
-        if (Str::startsWith($key, 'edit_')) {
-            $key = Str::after($key, 'edit_');
-        }
-        if (Str::endsWith($key, '_widget')) {
-            $key = Str::beforeLast($key, '_widget');
-        }
-
-        return $key;
-    }
-
-    /**
-     * Get translation key for a given function name.
-     */
-    public static function getKeyTransFunc(string $func): string
-    {
-        $key = Str::of($func)
-            ->after('get')
-            ->snake()
-            ->replace('_', '.')
-            ->toString();
-        /** @var string */
-        $transKey = app(GetTransKeyAction::class)->execute(static::class);
-
-        $key = $transKey.'.'.$key;
-        $key = Str::of($key)->replace('.cluster.pages.', '.')->toString();
-        $key = Str::of($key)->replace('::edit_', '::')->toString();
-
-        return $key;
     }
 
     /**
@@ -138,106 +78,32 @@ trait TransTrait
         /** @var array<string, mixed>|Translator|string $result */
         $result = trans($key_full);
 
-        return is_string($result) ? $result : $key_full;
-    }
-
-    /**
-     * Get translation for a given function name.
-     */
-    public static function transFunc(string $func, bool $_exceptionIfNotExist = false): string
-    {
-        $key = static::getKeyTransFunc($func);
-        /** @var string|array<int|string, mixed>|Translator|null $trans */
-        $trans = null;
-
-        try {
-            /** @var array<string, mixed>|Translator|string $trans */
-            $trans = trans($key);
-<<<<<<< HEAD
-        } catch (\TypeError $e) {
-=======
-        } catch (TypeError $e) {
->>>>>>> 6ed19256f (.)
-            dddx([
-                'e' => $e,
-                'key' => $key,
-            ]);
-        }
-
-        if ($key === $trans) {
-            $group = Str::of($key)->before('.')->toString();
-            $item = Str::of($key)->after($group.'.')->toString();
+        if ($key_full === $result) {
+            $group = Str::of($key_full)->before('.')->toString();
+            $item = Str::of($key_full)->after($group.'.')->toString();
             /** @var array<string, mixed>|Translator|string $group_arr */
             $group_arr = trans($group);
             if (is_array($group_arr)) {
-<<<<<<< HEAD
-=======
-                /** @var mixed $transValue */
->>>>>>> 6ed19256f (.)
                 $transValue = Arr::get($group_arr, $item);
-                if (is_string($transValue) || is_numeric($transValue) || is_array($transValue)) {
-                    $trans = $transValue;
+                if (is_string($transValue) || is_numeric($transValue)) {
+                    return is_string($transValue) ? $transValue : (string) $transValue;
                 }
             }
-        }
-        if (is_numeric($trans)) {
-            return strval($trans);
-        }
 
-        if (is_array($trans)) {
-            $first = current($trans);
-            if (is_string($first) || is_numeric($first)) {
-                return is_string($first) ? $first : ((string) $first);
-            }
+            return 'fix:'.$key_full;
         }
 
-        if (is_string($trans)) {
-            if ($trans === $key) {
-                $newTrans = Str::of($key)
-                    ->between('::', '.')
-                    ->replace('_', ' ')
-                    ->toString();
-                app(SaveTransAction::class)->execute($key, $newTrans);
-
-                return $newTrans;
-            }
-
-            return $trans;
-        }
-
-<<<<<<< HEAD
-        if (null === $trans) {
-=======
-        if ($trans === null) {
->>>>>>> 6ed19256f (.)
-            $newTrans = Str::of($key)
-                ->between('::', '.')
-                ->replace('_', ' ')
-                ->toString();
-            app(SaveTransAction::class)->execute($key, $newTrans);
-
-            return $newTrans;
-        }
-
-        return 'fix:'.$key;
+        return is_string($result) ? $result : 'fix:'.$key_full;
     }
 
     /**
      * Ottiene la chiave di traduzione per un dato key.
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
-<<<<<<< HEAD
-     * @param string                               $key         La chiave di traduzione specifica
-     * @param array<string, bool|float|int|string> $replace     Parametri di sostituzione per la traduzione
-     * @param string|null                          $locale      Locale da utilizzare (null = locale corrente)
-     * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
-=======
      * @param  string  $key  La chiave di traduzione specifica
-     * @param  array<string, bool|float|int|string>  $replace  Parametri di sostituzione per la traduzione
+     * @param  array<string, bool|float|int|string|null>  $replace  Parametri di sostituzione per la traduzione
      * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
      * @param  bool  $useFallback  Se true, utilizza la chiave come fallback se la traduzione non esiste
->>>>>>> 6ed19256f (.)
-     *
      * @return string La stringa tradotta o la chiave originale se non trovata
      */
     public static function getTranslatedString(
@@ -272,18 +138,10 @@ trait TransTrait
      * Ottiene la chiave di traduzione per un dato key (alias per getTranslatedString).
      * Genera un percorso di traduzione standardizzato basato sul modulo e sul nome della classe.
      *
-<<<<<<< HEAD
-     * @param string                               $key         La chiave di traduzione specifica
-     * @param array<string, bool|float|int|string> $replace     Parametri di sostituzione per la traduzione
-     * @param string|null                          $locale      Locale da utilizzare (null = locale corrente)
-     * @param bool                                 $useFallback Se true, utilizza la chiave come fallback se la traduzione non esiste
-=======
      * @param  string  $key  La chiave di traduzione specifica
-     * @param  array<string, bool|float|int|string>  $replace  Parametri di sostituzione per la traduzione
+     * @param  array<string, bool|float|int|string|null>  $replace  Parametri di sostituzione per la traduzione
      * @param  string|null  $locale  Locale da utilizzare (null = locale corrente)
      * @param  bool  $useFallback  Se true, utilizza la chiave come fallback se la traduzione non esiste
->>>>>>> 6ed19256f (.)
-     *
      * @return string La stringa tradotta o la chiave originale se non trovata
      */
     public static function transOLD(
@@ -306,13 +164,8 @@ trait TransTrait
         $namespace = static::class;
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
-<<<<<<< HEAD
-        if ('' === $moduleName) {
-            throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
-=======
         if ($moduleName === '') {
-            throw new LogicException(sprintf('Cannot extract module name from class %s', static::class));
->>>>>>> 6ed19256f (.)
+            throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 
         return $moduleName;
@@ -321,11 +174,7 @@ trait TransTrait
     /**
      * Get a translation according to an integer value.
      *
-<<<<<<< HEAD
-     * @param array<string, bool|float|int|string|null> $replace
-=======
      * @param  array<string, bool|float|int|string|null>  $replace
->>>>>>> 6ed19256f (.)
      */
     protected function transChoice(string $key, int $number, array $replace = []): string
     {

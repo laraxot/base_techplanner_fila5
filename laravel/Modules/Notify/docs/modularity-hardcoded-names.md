@@ -1,14 +1,21 @@
+---
+title: "modularity hardcoded names"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modularity hardcoded names"
+issues: []
+discussions: []
+status: draft
+---
+
 # Regola Critica: Mai Hardcodare Nomi di Progetto nei Moduli Riutilizzabili
 
 ## Problema Identificato
 
-<<<<<<< HEAD
 Durante l'audit del modulo `Notify`, è stato identificato un **errore critico di architettura**: l'utilizzo di stringhe hardcoded con nomi di progetto specifici (es. "<nome progetto>", "<nome progetto>") in un modulo che deve essere riutilizzabile in progetti diversi.
 Durante l'audit del modulo `Notify`, è stato identificato un **errore critico di architettura**: l'utilizzo di stringhe hardcoded con nomi di progetto specifici (es. "<nome progetto>", "<nome progetto>") in un modulo che deve essere riutilizzabile in progetti diversi.
-=======
-Durante l'audit del modulo `Notify`, è stato identificato un **errore critico di architettura**: l'utilizzo di stringhe hardcoded con nomi di progetto specifici (es. "<nome progetto>", "salutemo") in un modulo che deve essere riutilizzabile in progetti diversi.
-Durante l'audit del modulo `Notify`, è stato identificato un **errore critico di architettura**: l'utilizzo di stringhe hardcoded con nomi di progetto specifici (es. "saluteora", "salutemo") in un modulo che deve essere riutilizzabile in progetti diversi.
->>>>>>> 6ed19256f (.)
 
 ## Impatto del Problema
 
@@ -26,7 +33,6 @@ Durante l'audit del modulo `Notify`, è stato identificato un **errore critico d
 'clinic_name' => 'Studio Dentistico ',
 'webhook' => 'https://api.<nome progetto>.com/webhooks',
 'author' => 'Team PTVX',
-<<<<<<< HEAD
 'path' => 'public_html/images/',
 'subject' => 'Benvenuto su <nome progetto>',
 'content' => 'Grazie per esserti registrato su <nome progetto>',
@@ -35,16 +41,6 @@ Durante l'audit del modulo `Notify`, è stato identificato un **errore critico d
 'author' => 'Team <nome progetto>',
 'path' => 'public_html/images/',
 'path' => 'public_html/images/',
-=======
-'path' => '/var/www/html/_bases/base_ptvx_fila3_mono/public_html/images/',
-'subject' => 'Benvenuto su SaluteOra',
-'content' => 'Grazie per esserti registrato su SaluteOra',
-'clinic_name' => 'Studio Dentistico SaluteOra',
-'webhook' => 'https://api.saluteora.com/webhooks',
-'author' => 'Team SaluteOra',
-'path' => '/var/www/html/saluteora/public_html/images/',
-'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/',
->>>>>>> 6ed19256f (.)
 ```
 
 ## Soluzioni Implementate
@@ -100,13 +96,8 @@ $notificationData = [
 
 ### Moduli Specifici del Progetto
 - ****: Solo per progetto
-<<<<<<< HEAD
 - **<nome progetto>**: Solo per progetto <nome progetto>
 - **<nome progetto>**: Solo per progetto <nome progetto>
-=======
-- **SaluteOra**: Solo per progetto SaluteOra
-- **SaluteMo**: Solo per progetto SaluteMo
->>>>>>> 6ed19256f (.)
 - **Patient**: Solo per progetti sanitari specifici
 
 ## Checklist Pre-Commit
@@ -125,7 +116,6 @@ Prima di ogni commit, verificare:
 Eseguire regolarmente:
 ```bash
 # Cerca stringhe hardcoded nei moduli generici
-<<<<<<< HEAD
 grep -r "<nome progetto>\|<nome progetto>" laravel/Modules/Notify/ --include="*.php"
 grep -r "<nome progetto>\|<nome progetto>" laravel/Modules/User/ --include="*.php"
 grep -r "<nome progetto>\|<nome progetto>" laravel/Modules/UI/ --include="*.php"
@@ -134,16 +124,6 @@ grep -r "<nome progetto>\|<nome progetto>" laravel/Modules/Notify/ --include="*.
 grep -r "<nome progetto>\|<nome progetto>" laravel/Modules/User/ --include="*.php"
 grep -r "<nome progetto>\|<nome progetto>" laravel/Modules/UI/ --include="*.php"
 grep -r "<nome progetto>\|<nome progetto>" laravel/Modules/Xot/ --include="*.php"
-=======
-grep -r "<nome progetto>\|salutemo" laravel/Modules/Notify/ --include="*.php"
-grep -r "<nome progetto>\|salutemo" laravel/Modules/User/ --include="*.php"
-grep -r "<nome progetto>\|salutemo" laravel/Modules/UI/ --include="*.php"
-grep -r "<nome progetto>\|salutemo" laravel/Modules/Xot/ --include="*.php"
-grep -r "saluteora\|salutemo" laravel/Modules/Notify/ --include="*.php"
-grep -r "saluteora\|salutemo" laravel/Modules/User/ --include="*.php"
-grep -r "saluteora\|salutemo" laravel/Modules/UI/ --include="*.php"
-grep -r "saluteora\|salutemo" laravel/Modules/Xot/ --include="*.php"
->>>>>>> 6ed19256f (.)
 ```
 
 ## Configurazione per Progetti
@@ -155,19 +135,11 @@ COMPANY_TEAM=Team
 WEBHOOK_BASE_URL=https://api.<nome progetto>.com
 CLINIC_NAME=Studio Dentistico
 REPOSITORY_URL=https://github.com/<nome progetto>/notify
-<<<<<<< HEAD
 COMPANY_NAME=<nome progetto>
 COMPANY_TEAM=Team <nome progetto>
 WEBHOOK_BASE_URL=https://api.<nome progetto>.com
 CLINIC_NAME=Studio Dentistico <nome progetto>
 REPOSITORY_URL=https://github.com/<nome progetto>/notify
-=======
-COMPANY_NAME=SaluteOra
-COMPANY_TEAM=Team SaluteOra
-WEBHOOK_BASE_URL=https://api.saluteora.com
-CLINIC_NAME=Studio Dentistico SaluteOra
-REPOSITORY_URL=https://github.com/saluteora/notify
->>>>>>> 6ed19256f (.)
 ```
 
 ### Override per Progetti Specifici
@@ -196,5 +168,4 @@ Ogni progetto può personalizzare i valori tramite variabili d'ambiente senza mo
 - [Configuration Guide](configuration-guide.md)
 
 ---
-
 **Questa correzione è CRITICA per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**

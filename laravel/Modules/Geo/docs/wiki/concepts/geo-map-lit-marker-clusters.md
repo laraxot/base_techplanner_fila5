@@ -1,3 +1,15 @@
+---
+title: "geo map lit marker clusters"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geo map lit marker clusters"
+issues: []
+discussions: []
+status: draft
+---
+
 # Marker Clusters in geo-map-lit
 
 ## REGOLA PERMANENTE: Marker clusters ispirati a farmshops.eu (direktvermarkter.js)
@@ -84,7 +96,7 @@ _createClusterIcon(cluster) {
 ### Story di riferimento
 
 - Story 8-81: geo-map-lit: farmshops.eu parity — implementazione marker cluster ispirati a direktvermarkter.js
-- Story 8-78: geo-map-lit segnalazioni-elenco + controlli unificati
+- Story 8-78: geo-map-lit ticket-list + controlli unificati
 - Story 8-79: Fix controlli mappa e ricerca indirizzo
 
 ### Validazione

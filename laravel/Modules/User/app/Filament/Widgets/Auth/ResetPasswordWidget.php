@@ -4,20 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Widgets\Auth;
 
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\TextInput;
-use Filament\Schemas\Components\Component;
->>>>>>> 6ed19256f (.)
 use Filament\Schemas\Schema;
+use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Http\RedirectResponse;
-use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\User\Filament\Widgets\Auth\Schemas\UserForm;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
@@ -30,14 +24,12 @@ use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
  */
 class ResetPasswordWidget extends XotBaseSchemaWidget
 {
-    protected string $view = 'user::widgets.auth.reset-password-widget';
-
     /**
-     * @return class-string<Schemas\UserForm>
+     * @return class-string<UserForm>
      */
     protected static function formClass(): string
     {
-        return Schemas\UserForm::class;
+        return UserForm::class;
     }
 
     protected static function schemaMethod(): string
@@ -45,107 +37,61 @@ class ResetPasswordWidget extends XotBaseSchemaWidget
         return 'getResetPasswordFormSchema';
     }
 
-=======
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
-
-/**
- * Reset password widget for user password reset functionality.
- *
- * Handles password reset functionality with token validation,
- * proper security measures, and user feedback. Follows Laraxot
- * architectural patterns and security best practices.
- *
- * @property Schema $form Form container from XotBaseWidget
- */
-class ResetPasswordWidget extends XotBaseWidget
-{
     /**
-     * The view for this widget.
+     * Il token arriva dal percorso `/auth/password/{token}`, l'email (se c'e') dal `?email=` del link.
      */
-    protected string $view = 'user::widgets.auth.reset-password-widget';
-
-    /**
-     * Get the form schema for password reset.
-     *
-     * Uses string keys for Filament form compatibility and follows
-     * the pattern established in widget documentation.
-     *
-     * @return array<string, Component>
-     */
-    public function getFormSchema(): array
+    public function mount(?string $token = null, ?string $email = null): void
     {
-        return [
-            'email' => TextInput::make('email')
-                ->email()
-                ->required()
-                ->autocomplete('email'),
-            'password' => TextInput::make('password')
-                ->password()
-                ->required()
-                ->minLength(8)
-                ->same('password_confirmation')
-                ->autocomplete('new-password'),
-            'password_confirmation' => TextInput::make('password_confirmation')
-                ->password()
-                ->required()
-                ->autocomplete('new-password'),
-        ];
+        $this->form->fill([
+            'token' => $token ?? (string) request()->route('token'),
+            'email' => $email ?? (string) request()->query('email', ''),
+        ]);
     }
 
     /**
-     * Mount the widget and initialize the form.
+     * La password in chiaro arriva dallo schema (nessun hash li'): si cifra una volta sola qui. `setPasswordAttribute` di
+     * BaseUser lascia com'e' i valori da 32 caratteri in su, quindi un secondo `Hash::make` salvava l'hash dell'hash (login impossibile).
+     * Token scaduto, email sconosciuta e richiesta frenata danno lo stesso messaggio: nessuna enumerazione degli account.
      */
->>>>>>> 6ed19256f (.)
-    public function mount(): void
+    public function resetPassword(): void
     {
-        $this->form->fill();
-    }
-
-    /**
-<<<<<<< HEAD
-=======
-     * Configure the form for this widget.
-     */
-
-    /**
-     * Handle password reset with proper security and error handling.
-     *
-     * Implements Laravel's password reset functionality with explicit
-     * type casting for security and proper error feedback.
-     *
->>>>>>> 6ed19256f (.)
-     * @return RedirectResponse|void
-     */
-    public function resetPassword()
-    {
+        /** @var array<string, mixed> $data */
         $data = $this->form->getState();
+        $credentials = [
+            'token' => is_string($data['token'] ?? null) ? $data['token'] : '',
+            'email' => is_string($data['email'] ?? null) ? $data['email'] : '',
+            'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
+        ];
 
-        $reset_data = Arr::only($data, ['email', 'password', 'password_confirmation', 'token']);
-        $status = Password::reset($reset_data, function (Authenticatable $user, string $password): void {
-<<<<<<< HEAD
+        $status = Password::reset($credentials, function (Authenticatable $user, string $password): void {
             if (! $user instanceof Model) {
                 return;
             }
 
-=======
-            /* @var Model&Authenticatable $user */
->>>>>>> 6ed19256f (.)
+            // Lo schema non hasha (niente `dehydrateStateUsing`): qui si hasha una sola volta.
             $user->forceFill([
                 'password' => Hash::make($password),
                 'remember_token' => Str::random(60),
             ])->save();
+
+            event(new PasswordReset($user));
         });
 
-        if (Password::PASSWORD_RESET === $status) {
-            session()->flash('status', __($status));
+        if ($status !== Password::PASSWORD_RESET) {
+            $this->addError('data.email', __('user::password_recovery.invalid_link'));
 
-            return redirect()->route('login');
+            return;
         }
-<<<<<<< HEAD
-        $this->addError('email', __(is_string($status) ? $status : 'passwords.generic_error'));
-=======
-        /* @phpstan-ignore-next-line */
-        $this->addError('email', __($status));
->>>>>>> 6ed19256f (.)
+
+        session()->flash('status', __('user::password_recovery.reset_done'));
+        $this->redirect(LaravelLocalization::localizeURL(route('login'), $this->resolveLocale()));
+    }
+
+    /** Lingua della pagina, tra quelle supportate: dopo il reset si torna al login nella stessa lingua. */
+    private function resolveLocale(): string
+    {
+        $locale = trim(app()->getLocale(), '/');
+
+        return in_array($locale, LaravelLocalization::getSupportedLanguagesKeys(), true) ? $locale : 'it';
     }
 }

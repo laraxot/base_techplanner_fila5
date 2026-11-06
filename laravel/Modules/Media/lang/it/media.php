@@ -8,16 +8,12 @@ return [
     'navigation' => [
         'name' => 'Media',
         'plural' => 'Media',
-        'group' => [
-            'name' => 'Sistema',
-            'description' => 'Gestione dei file multimediali',
-        ],
-        'label' => 'media',
+        'group' => ['name' => 'Sistema', 'description' => 'Gestione dei file multimediali'],
+        'label' => 'Media',
         'sort' => 20,
         'icon' => 'media-main-animated',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -99,26 +95,30 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'collection_name' => 'Collezione',
-        'filename' => 'Nome File',
-        'mime_type' => 'Tipo',
-        'human_readable_size' => 'Dimensione',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
+        'id' => [
+            'label' => 'id',
         ],
-        'creator' => [
-            'name' => 'Creatore',
+        'file_name' => [
+            'label' => 'file_name',
         ],
-        'uploaded_at' => 'Caricato il',
->>>>>>> 6ed19256f (.)
+        'disk' => [
+            'label' => 'disk',
+        ],
+        'size' => [
+            'label' => 'size',
+        ],
+        'order_column' => [
+            'label' => 'order_column',
+        ],
+        'model_type' => [
+            'label' => 'model_type',
+        ],
+        'model_id' => [
+            'label' => 'model_id',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
     ],
     'actions' => [
         'import' => [
@@ -137,9 +137,6 @@ return [
     'model' => [
         'label' => 'media.model',
     ],
-<<<<<<< HEAD
     'label' => 'Media',
     'plural_label' => 'Media (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

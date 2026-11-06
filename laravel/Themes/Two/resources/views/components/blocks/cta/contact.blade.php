@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Non hai trovato la risposta che cercavi?',
+    'title' => __('pub_theme::block_defaults.cta_contact.title.title'),
     'subtitle' => '',
     'primary_cta' => [],
     'secondary_cta' => [],

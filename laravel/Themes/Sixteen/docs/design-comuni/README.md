@@ -1,3 +1,15 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # Design Comuni Documentation Index
 
 This directory contains all documentation for the Design Comuni Italiani static pages replication project.
@@ -72,11 +84,11 @@ All comparison screenshots are in the `screenshots/` subdirectory:
 
 ### HTML Structure Comparison Tools
 - [bashscripts/html/README.md](../../../bashscripts/html/README.md) — Tool documentation for compare-html-body.py and html-structure-compare.sh
-- [bashscripts/body/](../../../bashscripts/body/) — Bash orchestrator scripts (html-structure-compare.sh, compare-segnalazioni-elenco.sh)
+- [bashscripts/body/](../../../bashscripts/body/) — Bash orchestrator scripts (html-structure-compare.sh, compare-ticket-list.sh)
 - [Body Structure Comparison Output](../body-structure-comparison/) — Generated reports and parity scores
-- [Segnalazioni Elenco Report](../body-structure-comparison/segnalazioni-elenco/report.md) — Structured diff output with BLOCK/FLAG/WARN severity
-- [Segnalazioni Elenco Parity Score](../body-structure-comparison/segnalazioni-elenco/parity-score.md) — Score card tracking parity over runs
-- [Segnalazioni Elenco Analysis](../prompts/segnalazione_disservizio/segnalazioni-elenco-html-parity-analysis.md) — Phase 1 parity summary (90%+ structural)
+- [Segnalazioni Elenco Report](../body-structure-comparison/ticket-list/report.md) — Structured diff output with BLOCK/FLAG/WARN severity
+- [Segnalazioni Elenco Parity Score](../body-structure-comparison/ticket-list/parity-score.md) — Score card tracking parity over runs
+- [Segnalazioni Elenco Analysis](../prompts/segnalazione_disservizio/ticket-list-html-parity-analysis.md) — Phase 1 parity summary (90%+ structural)
 
 ## Progress Status
 
@@ -136,3 +148,11 @@ Documenti canonici:
 - [Fixcity / Filament Wizard Rules](../../../../Modules/Fixcity/docs/rules/filament-wizard-rules.md)
 - [Fixcity / Ticket Wizard Frontoffice](../../../../Modules/Fixcity/docs/ticket-wizard-frontoffice.md)
 - [Story 7-48 - step 2 visual parity via sections and infolist](../../../../../_bmad-output/implementation-artifacts/7-48-segnalazione-crea-step2-visual-parity-via-sections-and-infolist.md)
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

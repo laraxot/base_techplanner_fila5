@@ -1,8 +1,16 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "getting started"
+issues: []
+discussions: []
 title: Getting Started
 description: Getting started with Jigsaw's docs starter template is as easy as 1, 2, 3.
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 # Getting Started {#getting-started}
@@ -81,7 +89,6 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
-<<<<<<< HEAD
 * [getting-started.md](../../../gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../xot/project_docs/getting-started.md)
 * [getting-started.md](../../../ui/project_docs/getting-started.md)
@@ -92,24 +99,11 @@ npm run dev
 * [getting-started.md](../../../ui/docs/getting-started.md)
 * [getting-started.md](../../../tenant/docs/it/getting-started.md)
 * [getting-started.md](../../../cms/docs/getting-started.md)
-=======
->>>>>>> 6ed19256f (.)
-* [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
-* [getting-started.md](../../../Xot/project_docs/getting-started.md)
-* [getting-started.md](../../../UI/project_docs/getting-started.md)
-* [getting-started.md](../../../Tenant/project_docs/it/getting-started.md)
-* [getting-started.md](../../../Cms/project_docs/getting-started.md)
-* [getting-started.md](../../../Gdpr/docs/getting-started.md)
-* [getting-started.md](../../../Xot/docs/getting-started.md)
-* [getting-started.md](../../../UI/docs/getting-started.md)
-* [getting-started.md](../../../Tenant/docs/it/getting-started.md)
-* [getting-started.md](../../../Cms/docs/getting-started.md)
 
 ### Versione Incoming
 
 ---
 ---
-title: Getting Started
 description: Getting started with Jigsaw's docs starter template is as easy as 1, 2, 3.
 extends: _layouts.documentation
 section: content
@@ -192,24 +186,12 @@ npm run dev
 ### Versione HEAD
 
 ## Collegamenti tra versioni di getting-started.md
-<<<<<<< HEAD
 * [getting-started.md](../../../gdpr/project_docs/getting-started.md)
 * [getting-started.md](../../../xot/project_docs/getting-started.md)
 * [getting-started.md](../../../ui/project_docs/getting-started.md)
 * [getting-started.md](../../../tenant/project_docs/it/getting-started.md)
 * [getting-started.md](../../../cms/project_docs/getting-started.md)
-=======
->>>>>>> 6ed19256f (.)
-* [getting-started.md](../../../Gdpr/project_docs/getting-started.md)
-* [getting-started.md](../../../Xot/project_docs/getting-started.md)
-* [getting-started.md](../../../UI/project_docs/getting-started.md)
-* [getting-started.md](../../../Tenant/project_docs/it/getting-started.md)
-* [getting-started.md](../../../Cms/project_docs/getting-started.md)
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

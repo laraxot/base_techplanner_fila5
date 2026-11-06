@@ -1,3 +1,11 @@
+---
+title: "Eccezioni alla Regola della Directory app in Laraxot <nome progetto>"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "eccezioni alla regola della directory app in laraxot <nome progetto> xot"
+---
 # Eccezioni alla Regola della Directory app in Laraxot <nome progetto>
 
 ## Panoramica
@@ -52,20 +60,12 @@ I file di localizzazione **devono rimanere nella directory principale**:
 
 ✅ CORRETTO:
 ```
-<<<<<<< HEAD
 Modules/Rating/lang/it/rating.php
-=======
-/var/www/html/_bases/base_<nome progetto>_fila3/laravel/Modules/Rating/lang/it/rating.php
->>>>>>> 6ed19256f (.)
 ```
 
 ❌ ERRATO:
 ```
-<<<<<<< HEAD
 Modules/Rating/app/lang/it/rating.php
-=======
-/var/www/html/_bases/base_<nome progetto>_fila3/laravel/Modules/Rating/app/lang/it/rating.php
->>>>>>> 6ed19256f (.)
 ```
 
 ## Eccezioni Tecniche (NON spostare in app/)

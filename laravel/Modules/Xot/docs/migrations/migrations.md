@@ -1,12 +1,14 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: migrations
-canonical: ../../../../Themes/docs/shared-components/migrations.md
+title: "Migrazioni"
+type: note
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, migrations]
+qmd: "Migrazioni"
+status: superseded
+superseded_by: ../migrations.md
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/migrations.md
-=======
 # Migrazioni
 
 ## Configurazione Base
@@ -229,7 +231,7 @@ try {
         'migration' => 'create_users_table',
         'error' => $e->getMessage(),
     ]);
-
+    
     throw $e;
 }
 ```
@@ -307,5 +309,4 @@ return new class extends Migration
         Schema::dropIfExists('comments');
     }
 };
-```
->>>>>>> 6ed19256f (.)
+``` 

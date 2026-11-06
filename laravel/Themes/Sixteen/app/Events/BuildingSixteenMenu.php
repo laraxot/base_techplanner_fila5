@@ -5,15 +5,11 @@ declare(strict_types=1);
 namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
-use Themes\Sixteen\Services\MenuBuilder;
+use Themes\Sixteen\Actions\MenuBuilderAction;
 
 /**
  * Event che viene lanciato durante la costruzione del menu del tema Sixteen
-<<<<<<< HEAD
  *
-=======
- * 
->>>>>>> 6ed19256f (.)
  * Questo event permette di modificare il menu prima che venga renderizzato,
  * seguendo il pattern dell'official Italia Design Theme
  */
@@ -22,14 +18,9 @@ class BuildingSixteenMenu
     use Dispatchable;
 
     public function __construct(
-        public MenuBuilder $menuBuilder,
+        public MenuBuilderAction $menuBuilder,
         public string $location
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     /**
      * Aggiunge elementi al menu corrente in base alla location
@@ -48,7 +39,7 @@ class BuildingSixteenMenu
     /**
      * Ottiene il menu builder per modifiche avanzate
      */
-    public function getMenuBuilder(): MenuBuilder
+    public function getMenuBuilder(): MenuBuilderAction
     {
         return $this->menuBuilder;
     }

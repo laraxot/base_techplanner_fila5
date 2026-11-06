@@ -5,29 +5,20 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Invia SMS',
-        'group' => 'Test',
-    ],
+        'group' => 'Test'],
     'fields' => [
         'to' => [
             'label' => 'Destinatario',
             'placeholder' => 'Inserisci numero di telefono',
             'helper_text' => 'Inserisci il numero con prefisso internazionale (es. +39)',
-<<<<<<< HEAD
             'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci testo del messaggio',
             'helper_text' => 'Il messaggio non può superare i 160 caratteri',
-<<<<<<< HEAD
             'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'driver' => [
             'label' => 'Provider',
             'placeholder' => 'Seleziona provider SMS',
@@ -38,28 +29,15 @@ return [
                 'nexmo' => 'Nexmo',
                 'plivo' => 'Plivo',
                 'gammu' => 'Gammu',
-                'netfun' => 'Netfun',
-            ],
-<<<<<<< HEAD
+                'netfun' => 'Netfun'],
             'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'description' => '']],
     'actions' => [
         'send' => [
             'label' => 'Invia SMS',
-            'tooltip' => 'Invia un messaggio SMS al destinatario',
-        ],
-    ],
+            'tooltip' => 'Invia un messaggio SMS al destinatario']],
     'messages' => [
         'success' => 'SMS inviato con successo',
-        'error' => 'Errore nell\'invio dell\'SMS: :error',
-    ],
-<<<<<<< HEAD
+        'error' => 'Errore nell\'invio dell\'SMS: :error'],
     'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
+    'plural_label' => 'Missing Plural label'];

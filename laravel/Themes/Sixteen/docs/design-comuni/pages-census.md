@@ -1,3 +1,15 @@
+---
+title: "pages census"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pages census"
+issues: []
+discussions: []
+status: draft
+---
+
 # Design Comuni - Pages Census
 
 > **Censimento completo di tutte le 38 pagine del progetto Design Comuni Italia**
@@ -10,7 +22,6 @@
 **Data:** 2026-04-01
 
 ---
-
 ## 🗂️ Sezione 1: Pagine Generali (9 pagine)
 
 ### 1.1 Homepage
@@ -85,7 +96,7 @@
 - `topics-grid.featured` - Argomenti in evidenza (Cultura, Sport, Famiglia)
 - `form.feedback` - Feedback pagina
 
-**Documentazione:** [Argomenti](./pages/argomenti.md) (Da creare)  
+**Documentazione:** [Argomenti](../design-system/argomenti.md) (Da creare)  
 **Screenshot:** [screenshots/argomenti/](./screenshots/argomenti/) (Da creare)
 
 ---
@@ -663,9 +674,9 @@
 
 ### 8.7 Elenco Segnalazioni (Pubblico)
 
-**URL Originale:** https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html  
+**URL Originale:** https://italia.github.io/design-comuni-pagine-statiche/sito/ticket-list.html  
 **URL Locale:** `/it/tests/segnalazioni/elenco`  
-**Slug JSON:** `tests.segnalazioni-elenco`  
+**Slug JSON:** `tests.ticket-list`  
 **Priorità:** 🟢 Bassa  
 **Stato:** ⏳ Pending
 

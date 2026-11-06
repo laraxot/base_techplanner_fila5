@@ -1,3 +1,15 @@
+---
+title: "filament integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Integrazione con Filament V3
 
 ## Componenti Filament nel CMS
@@ -126,21 +138,13 @@ public function test_filament_components_rendering()
 ## Collegamenti
 
 - [Documentazione CMS](../README.md)
-<<<<<<< HEAD
-- [Documentazione CMS](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Best Practices](../best_practices/theme-reusability.md)
 - [Configurazione](../config.md)
 - [Testing](../testing.md)
 
 ## Collegamenti Bidirezionali
 - [README](README.md) - Documentazione principale del modulo
-<<<<<<< HEAD
-- [README](readme.md) - Documentazione principale del modulo
-=======
->>>>>>> 6ed19256f (.)
-- [Architettura](architecture.md) - Architettura del sistema CMS
+- [Architettura](frontoffice/architecture.md) - Architettura del sistema CMS
 - [Componenti](filament-components.md) - Componenti Filament
 - [Form](filament-forms.md) - Sistema di form
 - [Resources](filament-resources.md) - Gestione risorse
@@ -148,7 +152,6 @@ public function test_filament_components_rendering()
 - [Personalizzazioni](filament-personalizzazioni-avanzate.md) - Personalizzazioni avanzate
 
 ## Vedi Anche
-<<<<<<< HEAD
 - [Modulo UI](../ui/project_docs/readme.md) - Componenti di interfaccia
 - [Modulo Xot](../xot/project_docs/readme.md) - Classi base e utilities
 - [Modulo Theme](../theme/project_docs/readme.md) - Gestione temi
@@ -158,25 +161,7 @@ public function test_filament_components_rendering()
 - [Testing](../testing.md) 
 
 ## Collegamenti tra versioni di filament-integration.md
-* [filament-integration.md](laravel/modules/xot/project_docs/laraxot/filament-integration.md)
+* [filament-integration.md](../../Xot/docs/laraxot/filament-integration.md)
 * [filament-integration.md](laravel/modules/cms/project_docs/roadmap/features/filament-integration.md)
 * [filament-integration.md](laravel/modules/cms/project_docs/filament-integration.md)
 
-=======
->>>>>>> 6ed19256f (.)
-- [Modulo UI](../UI/project_docs/README.md) - Componenti di interfaccia
-- [Modulo Xot](../Xot/project_docs/README.md) - Classi base e utilities
-- [Modulo Theme](../Theme/project_docs/README.md) - Gestione temi
-- [Documentazione Filament](https://filamentphp.com/docs) - Documentazione ufficiale
-- [Best Practices](https://filamentphp.com/project_docs/3.x/best-practices) - Best practices Filament
-- [Componenti Blade](https://filamentphp.com/project_docs/3.x/support/blade-components) - Componenti Blade
-- [Testing](../testing.md)
-
-## Collegamenti tra versioni di filament-integration.md
-* [filament-integration.md](laravel/Modules/Xot/project_docs/laraxot/filament-integration.md)
-* [filament-integration.md](laravel/Modules/Cms/project_docs/roadmap/features/filament-integration.md)
-<<<<<<< HEAD
-* [filament-integration.md](laravel/Modules/Cms/project_docs/filament-integration.md)
-=======
-* [filament-integration.md](laravel/Modules/Cms/project_docs/filament-integration.md)
->>>>>>> 6ed19256f (.)

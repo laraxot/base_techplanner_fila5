@@ -4,9 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\AI\Actions;
 
+use Exception;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use InvalidArgumentException;
+use Modules\AI\Datas\AIConfigData;
 use Modules\AI\Datas\PredictionData;
+use RuntimeException;
 use Safe\DateTime;
 use Spatie\QueueableAction\QueueableAction;
 use Throwable;
@@ -30,6 +34,8 @@ class GeneratePredictionsAction
      * @param  array<string, mixed>  $options
      *
      * @throws Throwable
+     *
+     * @SuppressWarnings("PHPMD.StaticAccess")
      */
     public function execute(string $topic, array $options = []): PredictionData
     {
@@ -114,37 +120,29 @@ PROMPT;
 
     /**
      * Call OpenAI API.
+     *
+     * @SuppressWarnings("PHPMD.StaticAccess")
      */
     private function callOpenAI(string $prompt): string
     {
-        $rawApiKey = config('services.openai.api_key');
-        $apiKey = is_string($rawApiKey) ? $rawApiKey : '';
-
-        $rawModel = config('ai.model', 'gpt-3.5-turbo-instruct');
-        $model = is_string($rawModel) ? $rawModel : 'gpt-3.5-turbo-instruct';
-
-        $rawTemperature = config('ai.temperature', 0.7);
-        $temperature = is_numeric($rawTemperature) ? (float) $rawTemperature : 0.7;
-
-        $rawMaxTokens = config('ai.max_tokens', 1500);
-        $maxTokens = is_numeric($rawMaxTokens) ? (int) $rawMaxTokens : 1500;
+        $config = $this->resolveOpenAiConfig();
 
         Log::debug('Calling OpenAI API', [
-            'model' => $model,
-            'temperature' => $temperature,
-            'max_tokens' => $maxTokens,
+            'model' => $config['model'],
+            'temperature' => $config['temperature'],
+            'max_tokens' => $config['maxTokens'],
         ]);
 
         $response = Http::withHeaders([
-            'Authorization' => "Bearer {$apiKey}",
+            'Authorization' => "Bearer {$config['apiKey']}",
             'Content-Type' => 'application/json',
         ])
             ->timeout(30)
             ->post('https://api.openai.com/v1/completions', [
-                'model' => $model,
+                'model' => $config['model'],
                 'prompt' => $prompt,
-                'temperature' => $temperature,
-                'max_tokens' => $maxTokens,
+                'temperature' => $config['temperature'],
+                'max_tokens' => $config['maxTokens'],
                 'top_p' => 1.0,
                 'frequency_penalty' => 0.0,
                 'presence_penalty' => 0.0,
@@ -156,17 +154,42 @@ PROMPT;
                 'body' => $response->body(),
             ]);
 
-            throw new \RuntimeException('OpenAI API request failed: '.$response->body());
+            throw new RuntimeException('OpenAI API request failed: '.$response->body());
         }
 
-        /** @var array<string, mixed>|null $data */
-        $data = $response->json();
-        $choices = is_array($data) ? ($data['choices'] ?? null) : null;
+        return $this->extractCompletionText($response->json());
+    }
+
+    /**
+     * @return array{apiKey: string, model: string, temperature: float, maxTokens: int}
+     */
+    private function resolveOpenAiConfig(): array
+    {
+        $rawApiKey = config('services.openai.api_key');
+        $apiKey = is_string($rawApiKey) ? $rawApiKey : '';
+
+        $settings = AIConfigData::make();
+        $model = $settings->model;
+        $temperature = $settings->temperature;
+        $maxTokens = $settings->max_tokens;
+
+        return [
+            'apiKey' => $apiKey,
+            'model' => $model,
+            'temperature' => $temperature,
+            'maxTokens' => $maxTokens,
+        ];
+    }
+
+    private function extractCompletionText(mixed $payload): string
+    {
+        $data = is_array($payload) ? $payload : [];
+        $choices = $data['choices'] ?? null;
         $firstChoice = is_array($choices) ? ($choices[0] ?? null) : null;
         $text = is_array($firstChoice) ? ($firstChoice['text'] ?? '') : '';
         $result = is_string($text) ? $text : '';
 
-        $usage = is_array($data) ? ($data['usage'] ?? null) : null;
+        $usage = $data['usage'] ?? null;
         $totalTokens = is_array($usage) ? ($usage['total_tokens'] ?? 0) : 0;
 
         Log::debug('OpenAI API response received', [
@@ -182,6 +205,8 @@ PROMPT;
      * @return array<string, mixed>
      *
      * @throws \JsonException
+     *
+     * @SuppressWarnings("PHPMD.StaticAccess")
      */
     private function parseResponse(string $response): array
     {
@@ -195,10 +220,10 @@ PROMPT;
             'response_length' => strlen($response),
         ]);
 
-        /** @var array<string, mixed> */
-        $data = json_decode($response, true, 512, JSON_THROW_ON_ERROR);
+        /** @var array<string, mixed> $parsed */
+        $parsed = json_decode($response, true, 512, JSON_THROW_ON_ERROR);
 
-        return $data;
+        return $parsed;
     }
 
     /**
@@ -206,57 +231,83 @@ PROMPT;
      *
      * @param  array<string, mixed>  $data
      *
-     * @throws \InvalidArgumentException
+     * @throws InvalidArgumentException
+     *
+     * @SuppressWarnings("PHPMD.StaticAccess")
      */
     private function validate(array $data): void
     {
         Log::debug('Validating prediction data', ['data' => $data]);
 
-        $required = ['title', 'description', 'content', 'category', 'tags', 'closed_at'];
+        $this->validateRequiredFields($data);
+        $this->validateClosedAt($data);
+        $this->validateTags($data);
+        $this->validateLiquidityParameter($data);
 
-        foreach ($required as $field) {
+        Log::debug('Validation passed');
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    private function validateRequiredFields(array $data): void
+    {
+        foreach (['title', 'description', 'content', 'category', 'tags', 'closed_at'] as $field) {
             if (! isset($data[$field]) || $data[$field] === '') {
                 Log::error('Missing required field', ['field' => $field]);
-                throw new \InvalidArgumentException("Missing required field: {$field}");
+                throw new InvalidArgumentException("Missing required field: {$field}");
             }
         }
+    }
 
-        // Validate dates
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    private function validateClosedAt(array $data): void
+    {
         try {
             $rawClosedAt = $data['closed_at'];
             if (! is_scalar($rawClosedAt)) {
-                throw new \InvalidArgumentException('Invalid closed_at date format');
+                throw new InvalidArgumentException('Invalid closed_at date format');
             }
 
             $closedAt = new DateTime(trim((string) $rawClosedAt));
-            $today = new DateTime;
-
-            if ($closedAt <= $today) {
-                throw new \InvalidArgumentException('closed_at must be in the future');
+            if ($closedAt <= new DateTime) {
+                throw new InvalidArgumentException('closed_at must be in the future');
             }
-        } catch (\Exception $e) {
-            throw new \InvalidArgumentException('Invalid closed_at date format');
+        } catch (Exception) {
+            throw new InvalidArgumentException('Invalid closed_at date format');
         }
+    }
 
-        // Validate tags is array
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    private function validateTags(array $data): void
+    {
         if (! is_array($data['tags'])) {
-            throw new \InvalidArgumentException('tags must be an array');
+            throw new InvalidArgumentException('tags must be an array');
+        }
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    private function validateLiquidityParameter(array $data): void
+    {
+        if (! isset($data['liquidity_parameter'])) {
+            return;
         }
 
-        // Validate liquidity_parameter is between 0 and 1
-        if (isset($data['liquidity_parameter'])) {
-            $rawLiquidity = $data['liquidity_parameter'];
-            if (! is_numeric($rawLiquidity)) {
-                throw new \InvalidArgumentException('liquidity_parameter must be numeric');
-            }
-
-            $liquidity = (float) $rawLiquidity;
-            if ($liquidity < 0 || $liquidity > 1) {
-                throw new \InvalidArgumentException('liquidity_parameter must be between 0 and 1');
-            }
+        $rawLiquidity = $data['liquidity_parameter'];
+        if (! is_numeric($rawLiquidity)) {
+            throw new InvalidArgumentException('liquidity_parameter must be numeric');
         }
 
-        Log::debug('Validation passed');
+        $liquidity = (float) $rawLiquidity;
+        if ($liquidity < 0 || $liquidity > 1) {
+            throw new InvalidArgumentException('liquidity_parameter must be between 0 and 1');
+        }
     }
 
     private function stripMarkdownFence(string $value, string $pattern): string

@@ -1,3 +1,20 @@
+---
+title: "Dashboard Filters Integration per Widget Filament"
+type: concept
+tags: [dashboard, filters, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dashboard-filters-integration dashboard filters integration per widget filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./edit-user-widget.md"
+  - "./registration-widget-fileupload-fix.md"
+  - "./registration-widget-fileupload.md"
+  - "./registration-widget.md"
+status: draft
+---
+
 # Dashboard Filters Integration per Widget Filament
 
 ## Problema Risolto
@@ -127,24 +144,16 @@ protected function getFooterWidgets(): array
 - [ ] Fallback appropriati attivati
 ## Riferimenti e Collegamenti
 ### Documentazione Correlata
-- [Modules/User/docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
-<<<<<<< HEAD
+- [Modules/User/docs/best-practices/filament-widgets.md](../../best-practices/filament-widgets.md)
 - [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../xot/docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/docs/dashboard-implementation.md](../../../<nome progetto>/docs/dashboard-implementation.md)
-- [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
-- [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../xot/project_docs/filament/widgets/base-chart-widget.md)
-- [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../Xot/docs/filament/widgets/base-chart-widget.md)
+- [Modules/User/project_docs/best-practices/filament-widgets.md](../../best-practices/filament-widgets.md)
+- [Modules/User/docs/best-practices/filament-widgets.md](../../best-practices/filament-widgets.md)
+- [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../xot/docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/docs/dashboard-implementation.md](../../../<nome progetto>/docs/dashboard-implementation.md)
-- [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
-- [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../Xot/project_docs/filament/widgets/base-chart-widget.md)
+- [Modules/User/project_docs/best-practices/filament-widgets.md](../../best-practices/filament-widgets.md)
+- [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../xot/project_docs/filament/widgets/base-chart-widget.md)
 - [Modules/<nome progetto>/project_docs/dashboard-implementation.md](../../../<nome progetto>/project_docs/dashboard-implementation.md)
-=======
-- [Modules/Xot/docs/filament/widgets/base-chart-widget.md](../../../Xot/docs/filament/widgets/base-chart-widget.md)
-- [Modules/SaluteMo/docs/dashboard-implementation.md](../../../SaluteMo/docs/dashboard-implementation.md)
-- [Modules/User/project_docs/best-practices/filament-widgets.md](../best-practices/filament-widgets.md)
-- [Modules/Xot/project_docs/filament/widgets/base-chart-widget.md](../../../Xot/project_docs/filament/widgets/base-chart-widget.md)
-- [Modules/SaluteMo/project_docs/dashboard-implementation.md](../../../SaluteMo/project_docs/dashboard-implementation.md)
->>>>>>> 6ed19256f (.)
 ### Widget Correlati
 - `UsersChartWidget`: Esempio di implementazione corretta dei filtri
 - Altri widget che estendono `XotBaseChartWidget`
@@ -158,8 +167,3 @@ protected function getFooterWidgets(): array
 - **Problema**: Widget non riceveva filtri Dashboard
 - **Soluzione**: Accesso sicuro con fallback appropriati
 - **Impatto**: Risolto per tutti i widget che usano lo stesso pattern
-<<<<<<< HEAD
-*Ultimo aggiornamento: Gennaio 2025*
-=======
-*Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 6ed19256f (.)

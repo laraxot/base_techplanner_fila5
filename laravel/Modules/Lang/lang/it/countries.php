@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-=======
-    // Europa
->>>>>>> 6ed19256f (.)
     'it' => 'Italia',
     'fr' => 'Francia',
     'de' => 'Germania',
@@ -51,10 +47,6 @@ return [
     'ge' => 'Georgia',
     'am' => 'Armenia',
     'az' => 'Azerbaigian',
-<<<<<<< HEAD
-=======
-    // Americhe
->>>>>>> 6ed19256f (.)
     'us' => 'Stati Uniti d\'America',
     'ca' => 'Canada',
     'mx' => 'Messico',
@@ -97,10 +89,6 @@ return [
     'kn' => 'Saint Kitts e Nevis',
     'dm' => 'Dominica',
     'bs' => 'Bahamas',
-<<<<<<< HEAD
-=======
-    // Asia
->>>>>>> 6ed19256f (.)
     'cn' => 'Cina',
     'jp' => 'Giappone',
     'kr' => 'Corea del Sud',
@@ -145,10 +133,6 @@ return [
     'kg' => 'Kirghizistan',
     'tj' => 'Tagikistan',
     'tm' => 'Turkmenistan',
-<<<<<<< HEAD
-=======
-    // Africa
->>>>>>> 6ed19256f (.)
     'eg' => 'Egitto',
     'ly' => 'Libia',
     'tn' => 'Tunisia',
@@ -203,10 +187,6 @@ return [
     'ao' => 'Angola',
     'aq' => 'Antartide',
     'zr' => 'Zaire',
-<<<<<<< HEAD
-=======
-    // Oceania
->>>>>>> 6ed19256f (.)
     'au' => 'Australia',
     'ax' => 'Isole Aland',
     'nz' => 'Nuova Zelanda',
@@ -224,10 +204,6 @@ return [
     'pw' => 'Palau',
     'fm' => 'Micronesia',
     'mh' => 'Isole Marshall',
-<<<<<<< HEAD
-=======
-    // Altri
->>>>>>> 6ed19256f (.)
     'xk' => 'Kosovo',
     'va' => 'Città del Vaticano',
     'sm' => 'San Marino',
@@ -280,7 +256,6 @@ return [
     'mp' => 'Isole Marianne Settentrionali',
     'um' => 'Isole Minori Esterne degli Stati Uniti',
     'eh' => 'Sahara Occidentale',
-<<<<<<< HEAD
     'label' => 'Countries',
     'plural_label' => 'Countries (Plurale)',
     'navigation' => [
@@ -291,8 +266,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Countries',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -325,6 +300,4 @@ return [
             'label' => 'Elimina Countries',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

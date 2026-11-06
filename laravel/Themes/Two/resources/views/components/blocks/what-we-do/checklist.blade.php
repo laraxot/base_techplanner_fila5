@@ -3,8 +3,8 @@
     'subtitle' => '',
     'checklist' => [],
     'id' => 'controlli',
-    'callout_title' => 'Perché è fondamentale?',
-    'callout_text' => 'Un controllo accurato previene guasti, sovraesposizioni e sanzioni, proteggendo il tuo investimento e la tua reputazione professionale.',
+    'callout_title' => __('pub_theme::block_defaults.checklist.callout_title.title'),
+    'callout_text' => __('pub_theme::block_defaults.checklist.callout_text.message'),
 ])
 
 <section id="{{ $id }}" class="py-20 bg-gray-50 scroll-mt-20">

@@ -1,3 +1,15 @@
+---
+title: "temi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "temi"
+issues: []
+discussions: []
+status: draft
+---
+
 # Struttura dei Temi in il progetto
 
 ## Panoramica
@@ -6,21 +18,11 @@ Nel progetto il progetto, i temi sono componenti di presentazione separati dai m
 
 ## Posizionamento Corretto
 
-I temi devono essere posizionati nella directory `/var/www/html/<directory progetto>/laravel/Themes/` e **NON** nella directory Modules.
-
-### Struttura Corretta
-```
-/var/www/html/<directory progetto>/laravel/
 I temi devono essere posizionati nella directory `laravel/Themes/` e **NON** nella directory Modules.
 
 ### Struttura Corretta
 ```
 laravel/
-I temi devono essere posizionati nella directory `/var/www/html/_bases/<directory progetto>/laravel/Themes/` e **NON** nella directory Modules.
-
-### Struttura Corretta
-```
-/var/www/html/_bases/<directory progetto>/laravel/
 ├── Modules/           # Componenti funzionali
 │   ├── Xot/
 │   ├── User/
@@ -33,32 +35,18 @@ I temi devono essere posizionati nella directory `/var/www/html/_bases/<director
 
 Il tema principale utilizzato in il progetto è ThemeOne, basato su Filament 3, che deve essere installato in:
 ```
-/var/www/html/<directory progetto>/laravel/Themes/One/
 laravel/Themes/One/
-/var/www/html/_bases/<directory progetto>/laravel/Themes/One/
-<<<<<<< HEAD
-laravel/Themes/One/
-=======
->>>>>>> 6ed19256f (.)
 ```
 
 ### Installazione Corretta
 ```bash
-<<<<<<< HEAD
 git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila5.git dev --squash
-=======
-git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
->>>>>>> 6ed19256f (.)
 ```
 
 ### Errore da Evitare
 ❌ **NON** utilizzare:
 ```bash
-<<<<<<< HEAD
 git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila5.git dev --squash
-=======
-git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila3.git dev --squash
->>>>>>> 6ed19256f (.)
 ```
 
 ## Struttura del Tema
@@ -125,8 +113,4 @@ class AdminPanelProvider extends PanelProvider
 
 ## Collegamenti tra versioni di temi.md
 * [temi.md](docs/regole/temi.md)
-* [temi.md](laravel/Modules/Cms/docs/temi.md)
-<<<<<<< HEAD
 * [temi.md](laravel/modules/cms/docs/temi.md)
-=======
->>>>>>> 6ed19256f (.)

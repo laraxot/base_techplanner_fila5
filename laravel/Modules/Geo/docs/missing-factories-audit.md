@@ -1,12 +1,20 @@
+---
+title: "missing factories audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "missing factories audit"
+issues: []
+discussions: []
+status: draft
+---
+
 # Factory Mancanti - Modulo Geo
 
 ## Situazione Critica Identificata
 
-**Data audit**: 2025-01-06
-<<<<<<< HEAD
 **Data audit**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Gravità**: CRITICA - 8 factory mancanti su 11 models
 
 ## Models senza Factory
@@ -151,19 +159,9 @@
 ## Collegamenti
 
 - [README Modulo Geo](./README.md)
-- [Factory Audit Root](../../../docs/factory-audit-2025.md)
-<<<<<<< HEAD
-- [README Modulo Geo](./readme.md)
 - [Factory Audit Root](../../../../docs/factory-audit-2025.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Address Implementation](./address-implementation.md)
 - [Sushi Implementation](./sushi-implementation.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

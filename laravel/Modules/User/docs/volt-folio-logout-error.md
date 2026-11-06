@@ -1,130 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: volt-folio-logout-error
-canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
+title: "Errore nel Logout con Volt e Folio"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "errore nel logout con volt e folio user"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
-=======
-# Errore nel Logout con Volt e Folio
-
-## Il Problema
-Il file `logout.blade.php` può presentare problemi di funzionamento o errori di direttive mancanti.
-
-### 1. Errori Comuni
-1. **Layout Errato**:
-   - Si usa `<x-layouts.app>` invece di `<x-layout>`
-   - Il layout corretto è solitamente definito nel tema (es. TwentyOne)
-
-2. **VoltDirectiveMissingException**:
-   - Quando si usano azioni Volt in una pagina Folio, può comparire: `Livewire\Volt\Exceptions\VoltDirectiveMissingException`
-   - Il messaggio di errore è: `The [@volt] directive is required when using Volt anonymous components in Folio pages.`
-
-## Soluzioni
-
-### 1. Pagina di Logout Standard (Folio)
-Se non hai bisogno di logica Livewire complessa nella pagina stessa, usa un form standard:
-
-```blade
-<x-layout>
-    <x-slot:title>
-        {{ __('Logout') }}
-    </x-slot>
-
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
-        <div class="max-w-md w-full space-y-8 p-8 bg-white rounded-lg shadow-lg">
-            <div class="text-center">
-                <h2 class="mt-6 text-3xl font-extrabold text-gray-900">
-                    {{ __('Sei sicuro di voler uscire?') }}
-                </h2>
-                <p class="mt-2 text-sm text-gray-600">
-                    {{ __('Potrai sempre accedere nuovamente con le tue credenziali.') }}
-                </p>
-            </div>
-
-            <div class="mt-8 space-y-6">
-                <div class="flex items-center justify-between space-x-4">
-                    <a href="{{ route('home') }}"
-                       class="flex-1 inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        {{ __('Annulla') }}
-                    </a>
-
-                    <form action="{{ route('logout') }}" method="post" class="flex-1">
-                        @csrf
-                        <button type="submit"
-                                class="w-full inline-flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
-                            {{ __('Logout') }}
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</x-layout>
-```
-
-### 2. Gestione Azione Logout (Volt class-based)
-Definisci l'azione in un file separato o nella pagina stessa. Se usi Volt in Folio:
-
-```php
-<?php
-
-declare(strict_types=1);
-
-namespace Modules\User\Http\Volt;
-
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Http\RedirectResponse;
-use Volt\Routing\Attribute\Post;
-
-#[Post('/logout', name: 'logout', middleware: ['web', 'auth'])]
-final class LogoutAction
-{
-    public function __invoke(): RedirectResponse
-    {
-        Auth::logout();
-        session()->invalidate();
-        session()->regenerateToken();
-
-        return redirect()->route('home');
-    }
-}
-```
-
-### 3. Risoluzione `VoltDirectiveMissingException`
-Se la tua pagina Folio utilizza componenti anonimi Volt o logica Livewire direttamente nel file `.blade.php`:
-
-1. **Aggiungi la direttiva `@volt` come prima riga** del file:
-
-   ```blade
-   @volt
-   <?php
-   use function Livewire\Volt\{state, mount};
-   // ...
-   ?>
-   <div>
-       <!-- UI -->
-   </div>
-   @endvolt
-   ```
-
-## Best Practices
-- **Layout**: Usare sempre il layout corretto del tema.
-- **Routing**: Lasciare che Folio gestisca il routing delle pagine, usare Volt per le azioni e l'interattività.
-- **Sicurezza**: Includi sempre il CSRF token nei form di logout.
-- **Sessione**: Gestire il reindirizzamento lato server ed evitare JavaScript per operazioni critiche.
-
-## Collegamenti
-- [Best Practices Folio](./ROUTING_BEST_PRACTICES.md)
-- [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
 # Errore nel Logout con Volt e Folio
 
 ## Il Problema
 Il file `logout.blade.php` non funziona correttamente perché:
 
-1. **Layout Errato**:
+1. **Layout Errato**: 
    - Si usa `<x-layouts.app>` invece di `<x-layout>`
    - Il layout corretto è definito nel tema TwentyOne
 
@@ -158,7 +45,7 @@ Il file `logout.blade.php` non funziona correttamente perché:
 
             <div class="mt-8 space-y-6">
                 <div class="flex items-center justify-between space-x-4">
-                    <a href="{{ route('home') }}"
+                    <a href="{{ route('home') }}" 
                        class="flex-1 inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 bg-white hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                         {{ __('Annulla') }}
                     </a>
@@ -235,7 +122,74 @@ final class LogoutAction
    - Evitare JavaScript per operazioni critiche
 
 ## Collegamenti
-- [Best Practices Folio](./ROUTING_BEST_PRACTICES.md)
+- [Best Practices Folio](./routing_best_practices.md)
 - [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
->>>>>>> 6ed19256f (.)
+- [Gestione Sessione](./session_management.md) 
+- [Best Practices Folio](./routing_best_practices.md)
+- [Best Practices Volt](./VOLT_BEST_PRACTICES.md)
+- [Gestione Sessione](./session_management.md) 
+# Errore Volt/Folio: `VoltDirectiveMissingException` su logout
+
+## Descrizione dell'errore
+Quando si crea una pagina con azioni Volt/Livewire (es. logout) all'interno di una pagina Folio (file-based routing), può comparire il seguente errore:
+
+```
+Livewire\Volt\Exceptions\VoltDirectiveMissingException
+The [@volt] directive is required when using Volt anonymous components in Folio pages. The directive is missing in [.../logout.blade.php].
+```
+
+## Causa
+Folio richiede che tutte le pagine che usano Volt (azioni, state, ecc.) includano la direttiva `@volt` all'inizio del file Blade. Senza questa direttiva, Volt non può "montare" correttamente la logica Livewire associata alla pagina.
+
+## Come risolvere
+1. **Aggiungi la direttiva `@volt` come prima riga del file Blade** che utilizza Volt/Livewire:
+   
+   ```blade
+   @volt
+   ...
+   ```
+2. **Verifica che tutte le pagine Folio che usano state, mount, azioni Livewire, ecc. abbiano `@volt` come prima riga.**
+3. **Non serve altro:** la direttiva `@volt` è sufficiente per abilitare Volt nella pagina.
+
+## Esempio di fix
+Prima (sbagliato):
+```blade
+<?php
+use function Livewire\Volt\{state, mount};
+// ...
+```
+
+Dopo (corretto):
+```blade
+@volt
+<?php
+use function Livewire\Volt\{state, mount};
+// ...
+```
+
+## Best practice
+- Ricordati sempre di aggiungere `@volt` in tutte le Folio pages che usano logica Volt/Livewire.
+- Documenta questa regola nelle guide interne del team.
+
+---
+
+**Errore risolto: aggiungi `@volt` come prima riga!**
+---
+module: theme
+topic: volt-folio-logout-error
+canonical: ../../../Themes/docs/shared-components/volt-folio-logout-error.md
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/volt-folio-logout-error.md

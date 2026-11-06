@@ -10,7 +10,6 @@ return [
             'helper_text' => 'Azioni disponibili per la transizione di stato',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Table',
     'plural_label' => 'Table (Plurale)',
     'navigation' => [
@@ -22,7 +21,7 @@ return [
         ],
         'label' => 'Table',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -55,6 +54,4 @@ return [
             'label' => 'Elimina Table',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

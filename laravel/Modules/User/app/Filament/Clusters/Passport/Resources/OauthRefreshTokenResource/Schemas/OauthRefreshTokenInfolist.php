@@ -8,7 +8,10 @@ use Filament\Infolists\Components\TextEntry;
 
 class OauthRefreshTokenInfolist
 {
-    public static function getInfolistSchema(): array
+    /**
+     * @return array<string, TextEntry>
+     */
+    public function getInfolistSchema(): array
     {
         return [
             'id' => TextEntry::make('id'),

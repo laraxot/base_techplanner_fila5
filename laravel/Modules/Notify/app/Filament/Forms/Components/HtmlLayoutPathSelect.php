@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Forms\Components;
 
-use Filament\Forms\Components\Select;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Datas\XotData;
+use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
-class HtmlLayoutPathSelect extends Select
+class HtmlLayoutPathSelect extends XotBaseSelect
 {
     protected function setUp(): void
     {
@@ -34,21 +34,12 @@ class HtmlLayoutPathSelect extends Select
     /**
      * Create a new MailTemplateSelect instance.
      *
-<<<<<<< HEAD
      * @param  string|null  $name  Field name (default: 'mail_template_slug')
-=======
-     * @param string|null $name Field name (default: 'mail_template_slug')
-     *
-     * @return static
->>>>>>> 6ed19256f (.)
      */
     public static function make(?string $name = null): static
     {
         $name = $name ?? 'html_layout_path';
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
         return parent::make($name);
     }
 }

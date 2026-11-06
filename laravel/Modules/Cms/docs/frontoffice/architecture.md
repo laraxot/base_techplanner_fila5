@@ -1,3 +1,15 @@
+---
+title: "architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture"
+issues: []
+discussions: []
+status: draft
+---
+
 # Architettura Frontend
 
 ## Panoramica
@@ -106,33 +118,15 @@ I blocchi sono l'unità base di contenuto. Ogni blocco:
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
-- [Gestione dei Temi](../themes/readme.md)
-- [Componenti UI](../components/readme.md)
-- [Configurazione Blocchi](../blocks/readme.md)
-- [Ottimizzazione Performance](../performance/readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Gestione dei Temi](../themes/README.md)
+- [Gestione dei Temi](../../../../Themes/README.md)
 - [Componenti UI](../components/README.md)
 - [Configurazione Blocchi](../blocks/README.md)
-- [Ottimizzazione Performance](../performance/README.md)
+- [Ottimizzazione Performance](../performance/readme.md)
 
 ## Collegamenti tra versioni di architecture.md
 * [architecture.md](docs/tecnico/filament/architecture.md)
 * [architecture.md](docs/rules/architecture.md)
-<<<<<<< HEAD
-* [architecture.md](laravel/modules/gdpr/docs/architecture.md)
+* [architecture.md](../../../Gdpr/docs/architecture.md)
 * [architecture.md](laravel/modules/cms/docs/frontoffice/architecture.md)
 * [architecture.md](laravel/modules/cms/docs/architecture.md)
 * [architecture.md](laravel/themes/one/docs/roadmap/inspiration/architecture.md)
-* [architecture.md](laravel/Modules/Gdpr/docs/architecture.md)
-* [architecture.md](laravel/Modules/Cms/docs/frontoffice/architecture.md)
-* [architecture.md](laravel/Modules/Cms/docs/architecture.md)
-* [architecture.md](laravel/Themes/One/docs/roadmap/inspiration/architecture.md)
-=======
-* [architecture.md](laravel/Modules/Gdpr/docs/architecture.md)
-* [architecture.md](laravel/Modules/Cms/docs/frontoffice/architecture.md)
-* [architecture.md](laravel/Modules/Cms/docs/architecture.md)
-* [architecture.md](laravel/Themes/One/docs/roadmap/inspiration/architecture.md)
->>>>>>> 6ed19256f (.)

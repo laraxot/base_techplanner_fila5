@@ -1,3 +1,15 @@
+---
+title: "code quality analysis "
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality analysis "
+issues: []
+discussions: []
+status: draft
+---
+
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -79,11 +91,6 @@ If statement assignments (variable assignment in condition)
 The current analysis is incomplete and only shows partial results from PHPMD before it encountered parsing errors.
 
 ---
-
 **Report Generated**: 2025-11-11
 **Next Review**: After fixing syntax errors
-<<<<<<< HEAD
 **Target Completion**: 2025-11-15
-=======
-**Target Completion**: 2025-11-15
->>>>>>> 6ed19256f (.)

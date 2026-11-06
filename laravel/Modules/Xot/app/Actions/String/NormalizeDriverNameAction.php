@@ -4,12 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
-use function Safe\preg_replace;
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
+
+use function Safe\preg_replace;
 
 /**
  * Action per normalizzare i nomi dei driver.

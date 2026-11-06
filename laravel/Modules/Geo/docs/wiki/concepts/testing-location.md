@@ -1,7 +1,15 @@
 ---
+title: "testing location"
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing location"
+issues: []
+discussions: []
 name: Testing Location Policy
 description: Where to place Playwright and other tests — modules and themes
 type: concept
+status: draft
 ---
 
 # Testing Location Policy
@@ -23,10 +31,10 @@ All tests (Playwright, Pest, PHPUnit) must live inside their respective owner's 
 - Evita duplicazioni e conflitti tra moduli.
 - Allineato con architettura Laraxot modulare.
 
-## Esempio: segnalazioni-elenco
+## Esempio: ticket-list
 
-- **Prima**: `tests/Playwright/segnalazioni-elenco.spec.js` (sbagliato)
-- **Dopo**: `laravel/Modules/Geo/tests/Playwright/segnalazioni-elenco.spec.js` (corretto)
+- **Prima**: `tests/Playwright/ticket-list.spec.js` (sbagliato)
+- **Dopo**: `laravel/Modules/Geo/tests/Playwright/ticket-list.spec.js` (corretto)
 
 ## Migrazione
 

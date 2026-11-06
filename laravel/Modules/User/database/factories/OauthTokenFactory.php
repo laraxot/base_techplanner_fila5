@@ -30,6 +30,9 @@ class OauthTokenFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
@@ -110,7 +113,7 @@ class OauthTokenFactory extends Factory
     /**
      * Create a token with specific scopes.
      *
-     * @param array<string> $scopes
+     * @param  array<string>  $scopes
      */
     public function withScopes(array $scopes): static
     {

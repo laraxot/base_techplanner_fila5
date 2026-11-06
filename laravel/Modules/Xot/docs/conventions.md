@@ -1,3 +1,11 @@
+---
+title: "Convenzioni di Naming"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "convenzioni di naming xot"
+---
 # Convenzioni di Naming
 
 ## Struttura delle Cartelle nei Moduli
@@ -154,15 +162,3 @@ Modules/User/resources/views/pages/Auth/Logout.blade.php  # NO: maiuscole
 * [conventions.md](../../../../docs/conventions.md)
 * [conventions.md](../../Dental/docs/conventions.md)
 * [conventions.md](../../Patient/docs/conventions.md)
-<<<<<<< HEAD
-* [CONVENTIONS.md](../../../xot/docs/conventions.md)
-* [CONVENTIONS.md](../../../dental/docs/conventions.md)
-* [CONVENTIONS.md](../../../patient/docs/conventions.md)
-
-## Collegamenti tra versioni di conventions.md
-* [conventions.md](../../../../../docs/tecnico/filament/conventions.md)
-* [conventions.md](../../../../../docs/conventions.md)
-* [conventions.md](../../dental/docs/conventions.md)
-* [conventions.md](../../patient/docs/conventions.md)
-=======
->>>>>>> 6ed19256f (.)

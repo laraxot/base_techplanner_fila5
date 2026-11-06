@@ -1,3 +1,15 @@
+---
+title: "filament widgets in blade"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament widgets in blade"
+issues: []
+discussions: []
+status: draft
+---
+
 # Utilizzo dei Widget Filament nelle Viste Blade in il progetto
 
 ## Introduzione
@@ -67,12 +79,7 @@ use Modules\NomeModulo\App\Filament\Widgets\MioWidget;
 public function boot(): void
 {
     // Altre operazioni...
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     $this->registerFilamentWidgets();
 }
 
@@ -112,8 +119,4 @@ public function registerFilamentWidgets(): void
 
 ## Conclusione
 
-<<<<<<< HEAD
 L'utilizzo corretto dei widget Filament nelle viste Blade può migliorare significativamente l'esperienza utente e la manutenibilità del codice. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e sfruttare appieno le potenzialità di Filament in il progetto.
-=======
-L'utilizzo corretto dei widget Filament nelle viste Blade può migliorare significativamente l'esperienza utente e la manutenibilità del codice. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e sfruttare appieno le potenzialità di Filament in il progetto.
->>>>>>> 6ed19256f (.)

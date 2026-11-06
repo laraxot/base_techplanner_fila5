@@ -1,30 +1,31 @@
-<<<<<<< HEAD
+---
+issues: []
+discussions: []
+title: "English Translations Added for <nome progetto> Widgets"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # English Translations Added for <nome progetto> Widgets
-=======
-# English Translations Added for SaluteOra Widgets
->>>>>>> 6ed19256f (.)
 
 ## ✅ Problema Risolto
 
 ### Errore Segnalato
 ```
 mancano queste traduzioni in inglese:
-<<<<<<< HEAD
 <nome progetto>::widgets.doctor_appointments.empty.title
 <nome progetto>::widgets.doctor_appointments.empty.description
-=======
-saluteora::widgets.doctor_appointments.empty.title
-saluteora::widgets.doctor_appointments.empty.description
->>>>>>> 6ed19256f (.)
 ```
 
 ### Causa del Problema
 
-<<<<<<< HEAD
 Il file `laravel/Modules/<nome progetto>/lang/en/widgets.php` era **incompleto** rispetto alla versione italiana:
-=======
-Il file `laravel/Modules/SaluteOra/lang/en/widgets.php` era **incompleto** rispetto alla versione italiana:
->>>>>>> 6ed19256f (.)
 
 - **File italiano**: 239 righe con traduzioni complete per tutti i widgets
 - **File inglese**: 29 righe con solo traduzioni parziali per `find_doctor_widget`
@@ -107,11 +108,7 @@ Traduzioni per widget filtro studio con:
 
 ### Prima
 ```php
-<<<<<<< HEAD
 // File: laravel/Modules/<nome progetto>/lang/en/widgets.php
-=======
-// File: laravel/Modules/SaluteOra/lang/en/widgets.php
->>>>>>> 6ed19256f (.)
 return [
     'find_doctor_widget' => [
         // Solo traduzioni parziali...
@@ -122,11 +119,7 @@ return [
 
 ### Dopo
 ```php
-<<<<<<< HEAD
 // File: laravel/Modules/<nome progetto>/lang/en/widgets.php
-=======
-// File: laravel/Modules/SaluteOra/lang/en/widgets.php
->>>>>>> 6ed19256f (.)
 return [
     'studio_overview' => [/* Traduzioni complete */],
     'find_doctor_and_appointment' => [/* Traduzioni complete */],
@@ -140,11 +133,7 @@ return [
 ## 🚀 Benefici
 
 1. **Internazionalizzazione Completa**: Il sistema ora supporta completamente l'inglese
-<<<<<<< HEAD
 2. **Widget Bilingui**: Tutti i widget <nome progetto> funzionano in entrambe le lingue
-=======
-2. **Widget Bilingui**: Tutti i widget SaluteOra funzionano in entrambe le lingue
->>>>>>> 6ed19256f (.)
 3. **Coerenza**: Pattern uniforme tra file italiano e inglese
 4. **Manutenibilità**: Struttura espansa standard per tutti i campi
 
@@ -154,17 +143,10 @@ Per testare le traduzioni aggiunte:
 
 ```php
 // Nel browser o in tinker
-<<<<<<< HEAD
 __('<nome progetto>::widgets.doctor_appointments.empty.title')
 // Output: "No pending appointments"
 
 __('<nome progetto>::widgets.doctor_appointments.empty.description')
-=======
-__('saluteora::widgets.doctor_appointments.empty.title')
-// Output: "No pending appointments"
-
-__('saluteora::widgets.doctor_appointments.empty.description')
->>>>>>> 6ed19256f (.)
 // Output: "You have no appointments to confirm at this time."
 ```
 
@@ -177,17 +159,15 @@ __('saluteora::widgets.doctor_appointments.empty.description')
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [File italiano completo](../laravel/Modules/<nome progetto>/lang/it/widgets.php)
 - [File inglese aggiornato](../laravel/Modules/<nome progetto>/lang/en/widgets.php)
 - [Widget DoctorAppointments](../laravel/Modules/<nome progetto>/app/Filament/Widgets/DoctorAppointmentsWidget.php)
 
 *Risoluzione completata: 2025-01-21*
 *Risoluzione completata: 2025-01-21*
-=======
-- [File italiano completo](../laravel/Modules/SaluteOra/lang/it/widgets.php)
-- [File inglese aggiornato](../laravel/Modules/SaluteOra/lang/en/widgets.php)
-- [Widget DoctorAppointments](../laravel/Modules/SaluteOra/app/Filament/Widgets/DoctorAppointmentsWidget.php)
-
+*Risoluzione completata: [DATE]*
+*Risoluzione completata: [DATE]*
+*Risoluzione completata: [DATE]*
+*Risoluzione completata: [DATE]*
 *Risoluzione completata: 2025-01-21*
->>>>>>> 6ed19256f (.)
+*Risoluzione completata: 2025-01-21*

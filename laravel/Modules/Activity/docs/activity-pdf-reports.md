@@ -1,3 +1,11 @@
+---
+title: "Activity Log PDF Reports"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity log pdf reports activity"
+---
 # Activity Log PDF Reports
 
 ## 📋 Overview
@@ -635,24 +643,15 @@ private function generateFallbackPdf($user, Exception $e): string
 
 - [HTML2PDF Best Practices](../../Xot/docs/html2pdf-best-practices.md)
 - [Activity Module README](./README.md)
-<<<<<<< HEAD
 - [HTML2PDF Best Practices](../../xot/docs/html2pdf-best-practices.md)
-- [Activity Module README](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Activity Module README](./README.md)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 - [Spatie Activity Log](https://spatie.be/docs/laravel-activitylog)
 
 ---
 
 **Last Updated:** 2025-12-09
-<<<<<<< HEAD
 **
 **Version:** 1.0.0
  **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
-=======
-**Version:** 1.0.0
- **HTML2PDF Version:** 5.2.x
-**PHPStan Level:** 10 ✅
->>>>>>> 6ed19256f (.)

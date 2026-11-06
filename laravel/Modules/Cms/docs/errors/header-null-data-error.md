@@ -1,3 +1,15 @@
+---
+title: "header null data error"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "header null data error"
+issues: []
+discussions: []
+status: draft
+---
+
 # Errore: Attempt to read property "data" on null nel Header
 
 ## Descrizione del Problema
@@ -88,15 +100,9 @@ Per prevenire regressioni future:
 
 ## Collegamenti Correlati
 
-- [Componente Section](../../laravel/Modules/Cms/docs/components/section.md)
-- [Trait HasBlocks](../../laravel/Modules/Cms/docs/traits/has-blocks.md)
-- [Gestione Errori Blade](../../laravel/Modules/Cms/docs/errors/blade-errors.md)
-<<<<<<< HEAD
-- [Componente Section](../../laravel/modules/cms/docs/components/section.md)
+- [Componente Section](../components/section.md)
 - [Trait HasBlocks](../../laravel/modules/cms/docs/traits/has-blocks.md)
 - [Gestione Errori Blade](../../laravel/modules/cms/docs/errors/blade-errors.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Note di Manutenzione
 
@@ -105,8 +111,3 @@ Per prevenire regressioni future:
 - I controlli di sicurezza prevengono errori simili in futuro
 - La soluzione è compatibile con il sistema di blocchi CMS esistente
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

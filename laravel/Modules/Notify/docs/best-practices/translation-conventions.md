@@ -1,3 +1,24 @@
+---
+title: "Convenzioni per le Traduzioni del Modulo Notify"
+type: concept
+tags: [notify, docs, best-practices, translation, conventions]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione best practices translation conventions convenzioni per le traduzioni del modulo notify frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../architecture/README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - naming-conventions.md
+status: superseded
+superseded_by: ../translation-conventions.md
+---
 # Convenzioni per le Traduzioni del Modulo Notify
 
 ## Regole Fondamentali
@@ -212,11 +233,7 @@ Per verificare se le traduzioni sono applicate correttamente:
 ## Riferimenti
 
 - [ Translation System](../../../../.cursor/rules/translations.rule)
-<<<<<<< HEAD
 - [<nome progetto> Translation System](../../../../.cursor/rules/translations.rule)
-=======
-- [SaluteOra Translation System](../../../../.cursor/rules/translations.rule)
->>>>>>> 6ed19256f (.)
 - [Filament Translations](../../../../.cursor/rules/filament-translations.rule)
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
 

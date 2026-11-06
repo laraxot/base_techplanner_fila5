@@ -1,3 +1,11 @@
+---
+title: "Gestione dei Conflitti Git"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, git]
+qmd: "gestione dei conflitti git xot"
+---
 # Gestione dei Conflitti Git
 
 ## Principi Fondamentali
@@ -194,9 +202,6 @@ php artisan test --filter=TestClass
 - [Workflow Git](../../../Xot/docs/git/workflow.md)
 - [Best Practices](../../../Xot/docs/best-practices/git.md)
 - [CI/CD Pipeline](../../../Xot/docs/ci-cd/README.md)
-<<<<<<< HEAD
 - [Workflow Git](../../../xot/docs/git/workflow.md)
 - [Best Practices](../../../xot/docs/best-practices/git.md)
 - [CI/CD Pipeline](../../../xot/docs/ci-cd/readme.md)
-=======
->>>>>>> 6ed19256f (.)

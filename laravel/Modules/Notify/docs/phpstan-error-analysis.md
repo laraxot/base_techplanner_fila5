@@ -1,10 +1,18 @@
+---
+title: "phpstan error analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan error analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Errori PHPStan - Modulo Notify
 
 **Data**: 2025-12-23
-<<<<<<< HEAD
-**Data**: 2025-12-23
-=======
->>>>>>> 6ed19256f (.)
 **Modulo**: Notify
 **Livello PHPStan**: max
 **Status**: ✅ Corretto (0 errori)
@@ -57,8 +65,4 @@ use Filament\Schemas\Components\Component;
 
 ## 📝 Note
 
-<<<<<<< HEAD
 Tutti gli errori derivavano da un namespace errato nell'import. La correzione è stata semplice e immediata. Il codice è ora PHPStan-compliant.
-=======
-Tutti gli errori derivavano da un namespace errato nell'import. La correzione è stata semplice e immediata. Il codice è ora PHPStan-compliant.
->>>>>>> 6ed19256f (.)

@@ -2,62 +2,63 @@
 
 declare(strict_types=1);
 
-namespace Modules\Xot\Tests\Feature\Filament;
-
 use Filament\Resources\Resource;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Tests\Fixtures\Filament\Resources\NavigationProbeResource;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-uses(RefreshDatabase::class);
+use function Safe\file_get_contents;
+use function Safe\preg_match;
 
-beforeEach(function () {
-    $this->resource = new class extends XotBaseResource {
-        protected static ?string $model = null;
+uses(TestCase::class);
 
-        protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
+test('xot base resource extends filament resource', function (): void {
+    Assert::assertTrue((new ReflectionClass(NavigationProbeResource::class))->isSubclassOf(Resource::class));
+});
 
-        protected static string|\UnitEnum|null $navigationGroup = 'Test Group';
+test('application filament resources do not extend filament resource directly', function (): void {
+    $resources = new RecursiveIteratorIterator(
+        new RecursiveDirectoryIterator(base_path('Modules'), FilesystemIterator::SKIP_DOTS),
+    );
 
-        protected static ?int $navigationSort = 1;
-
-        public static function getNavigationIcon(): string
-        {
-            return 'heroicon-o-rectangle-stack';
+    $directExtensions = [];
+    foreach ($resources as $file) {
+        if (! $file instanceof SplFileInfo || $file->getExtension() !== 'php') {
+            continue;
         }
 
-        public static function getNavigationGroup(): string
-        {
-            return 'Test Group';
+        $path = $file->getPathname();
+        if (! str_contains($path, DIRECTORY_SEPARATOR.'app'.DIRECTORY_SEPARATOR.'Filament'.DIRECTORY_SEPARATOR.'Resources'.DIRECTORY_SEPARATOR)) {
+            continue;
         }
 
-        public static function getNavigationSort(): int
-        {
-            return 1;
+        $contents = file_get_contents($path);
+        if (preg_match('/\bextends\s+(?:Resource|FilamentResource|\\?Filament\\Resources\\Resource)\b/', $contents) !== 1) {
+            continue;
         }
 
-        public static function getFormSchema(): array
-        {
-            return [];
+        if (str_ends_with($path, DIRECTORY_SEPARATOR.'XotBaseResource.php')) {
+            continue;
         }
-    };
+
+        $directExtensions[] = $path;
+    }
+
+    Assert::assertSame([], $directExtensions);
 });
 
-test('xot base resource extends filament resource', function () {
-    expect($this->resource)->toBeInstanceOf(Resource::class);
+test('xot base resource reads navigation icon from translations', function (): void {
+    Assert::assertSame('heroicon-o-beaker', NavigationProbeResource::getNavigationIcon());
 });
 
-test('xot base resource has navigation icon', function () {
-    expect($this->resource::getNavigationIcon())->toBe('heroicon-o-rectangle-stack');
+test('xot base resource reads navigation group from translations', function (): void {
+    Assert::assertSame('Sistema', NavigationProbeResource::getNavigationGroup());
 });
 
-test('xot base resource has navigation group', function () {
-    expect($this->resource::getNavigationGroup())->toBe('Test Group');
+test('xot base resource reads navigation sort from translations', function (): void {
+    Assert::assertSame(59, NavigationProbeResource::getNavigationSort());
 });
 
-test('xot base resource has navigation sort', function () {
-    expect($this->resource::getNavigationSort())->toBe(1);
-});
-
-test('xot base resource can be instantiated', function () {
-    expect($this->resource)->toBeInstanceOf(XotBaseResource::class);
+test('xot base resource can be instantiated', function (): void {
+    Assert::assertSame('Xot', NavigationProbeResource::getModuleName());
 });

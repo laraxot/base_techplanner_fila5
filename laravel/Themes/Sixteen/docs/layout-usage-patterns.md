@@ -1,3 +1,15 @@
+---
+title: "layout usage patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "layout usage patterns"
+issues: []
+discussions: []
+status: draft
+---
+
 # Pattern di Utilizzo Layout - Tema Sixteen
 
 ## Problema Identificato
@@ -194,7 +206,3 @@ php artisan cache:clear
 - [Layout App](resources/views/layouts/app.blade.php)
 - [Layout Base](resources/views/layouts/base.blade.php)
 
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: 2025-01-06* 
->>>>>>> 6ed19256f (.)

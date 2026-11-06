@@ -1,25 +1,16 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://dev.to/jackmiras/laravels-exceptions-part-2-custom-exceptions-1367
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Exceptions;
 
-<<<<<<< HEAD
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 
 abstract class ApplicationException extends \Exception
-=======
-use Exception;
-use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-
-abstract class ApplicationException extends Exception
->>>>>>> 6ed19256f (.)
 {
     abstract public function status(): int;
 

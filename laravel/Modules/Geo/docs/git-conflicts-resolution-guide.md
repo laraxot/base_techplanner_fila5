@@ -1,3 +1,15 @@
+---
+title: "git conflicts resolution guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git conflicts resolution guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # Guida alla Risoluzione Conflitti Git - <nome progetto>
 
 ## Panoramica
@@ -347,29 +359,12 @@ git log --oneline --grep="conflict" | head -20
 ## Collegamenti
 
 - [Architettura Testing Principale](testing-architecture-overview.md)
-<<<<<<< HEAD
-- [Modulo Geo Testing](../../laravel/modules/geo/docs/testing.md)
+- [Modulo Geo Testing](testing.md)
 - [Modulo <nome modulo> Testing](../../laravel/modules/<nome modulo>/docs/testing-architecture.md)
 - [Best Practices Testing](../../laravel/modules/<nome modulo>/docs/testing-best-practices.md)
 - [Modulo <nome progetto> Testing](../../laravel/modules/<nome progetto>/docs/testing-architecture.md)
 - [Best Practices Testing](../../laravel/modules/<nome progetto>/docs/testing-best-practices.md)
 
 ---
-
-=======
->>>>>>> 6ed19256f (.)
-- [Modulo Geo Testing](../../laravel/Modules/Geo/docs/testing.md)
-- [Modulo <nome modulo> Testing](../../laravel/Modules/<nome modulo>/docs/testing-architecture.md)
-- [Best Practices Testing](../../laravel/Modules/<nome modulo>/docs/testing-best-practices.md)
-- [Modulo <nome progetto> Testing](../../laravel/Modules/<nome progetto>/docs/testing-architecture.md)
-- [Best Practices Testing](../../laravel/Modules/<nome progetto>/docs/testing-best-practices.md)
-
----
-
-**Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
-<<<<<<< HEAD
 **Compatibilità**: Git 2.x+, Laravel 12.x, PHP 8.3+
-=======
-**Compatibilità**: Git 2.x+, Laravel 12.x, PHP 8.3+
->>>>>>> 6ed19256f (.)

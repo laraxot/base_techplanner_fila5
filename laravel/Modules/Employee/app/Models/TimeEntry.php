@@ -4,19 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeEntryFactory;
-use Modules\TechPlanner\Models\Profile;
-=======
-use Modules\TechPlanner\Models\Profile;
-use Modules\Employee\Database\Factories\TimeEntryFactory;
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
->>>>>>> 6ed19256f (.)
+use Modules\Employee\Enums\TimeEntryStatusEnum;
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Class TimeEntry.
@@ -52,13 +45,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property numeric|null $location_lng GPS longitude coordinate
  * @property string|null $location_name Human readable location name
  * @property string|null $photo_path Path to verification photo
- * @property-read Profile|null $creator
- * @property-read Profile|null $deleter
- * @property-read Profile|null $updater
-<<<<<<< HEAD
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
  *
-=======
->>>>>>> 6ed19256f (.)
  * @method static TimeEntryFactory factory($count = null, $state = [])
  * @method static Builder<static>|TimeEntry forEmployee(int $employeeId)
  * @method static Builder<static>|TimeEntry newModelQuery()
@@ -95,27 +85,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static Builder<static>|TimeEntry whereTimestamp($value)
  * @method static Builder<static>|TimeEntry whereType($value)
  * @method static Builder<static>|TimeEntry withAnomalies()
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 final class TimeEntry extends BaseModel
 {
-    public const STATUS_PENDING = 'pending';
-<<<<<<< HEAD
-
-    public const STATUS_APPROVED = 'approved';
-
-    public const STATUS_AUTO_APPROVED = 'auto_approved';
-
-=======
-    public const STATUS_APPROVED = 'approved';
-    public const STATUS_AUTO_APPROVED = 'auto_approved';
->>>>>>> 6ed19256f (.)
-    public const STATUS_REJECTED = 'rejected';
-
     /** @var list<string> */
     protected $fillable = [
         'employee_id',
@@ -142,6 +116,8 @@ final class TimeEntry extends BaseModel
 
     /**
      * Get the employee that owns this time entry.
+     *
+     * @return BelongsTo<Employee, $this>
      */
     public function employee(): BelongsTo
     {
@@ -150,6 +126,8 @@ final class TimeEntry extends BaseModel
 
     /**
      * Get the employee who approved this time entry.
+     *
+     * @return BelongsTo<Employee, $this>
      */
     public function approvedBy(): BelongsTo
     {
@@ -158,14 +136,20 @@ final class TimeEntry extends BaseModel
 
     /**
      * Scope to get pending entries.
+     *
+     * @param  Builder<self>  $query
+     * @return Builder<self>
      */
     public function scopePending(Builder $query): Builder
     {
-        return $query->where('status', self::STATUS_PENDING);
+        return $query->where('status', TimeEntryStatusEnum::PENDING->value);
     }
 
     /**
      * Scope to get entries for a specific employee.
+     *
+     * @param  Builder<self>  $query
+     * @return Builder<self>
      */
     public function scopeForEmployee(Builder $query, int $employeeId): Builder
     {
@@ -174,6 +158,9 @@ final class TimeEntry extends BaseModel
 
     /**
      * Scope to get entries with anomalies.
+     *
+     * @param  Builder<self>  $query
+     * @return Builder<self>
      */
     public function scopeWithAnomalies(Builder $query): Builder
     {
@@ -208,7 +195,10 @@ final class TimeEntry extends BaseModel
      */
     public function isApproved(): bool
     {
-        return in_array($this->status, [self::STATUS_APPROVED, self::STATUS_AUTO_APPROVED], strict: true);
+        return in_array($this->status, [
+            TimeEntryStatusEnum::APPROVED->value,
+            TimeEntryStatusEnum::AUTO_APPROVED->value,
+        ], strict: true);
     }
 
     /**
@@ -216,7 +206,7 @@ final class TimeEntry extends BaseModel
      */
     public function isPending(): bool
     {
-        return $this->status === self::STATUS_PENDING;
+        return $this->status === TimeEntryStatusEnum::PENDING->value;
     }
 
     /**
@@ -224,10 +214,6 @@ final class TimeEntry extends BaseModel
      */
     public function isRejected(): bool
     {
-        return $this->status === self::STATUS_REJECTED;
+        return $this->status === TimeEntryStatusEnum::REJECTED->value;
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)

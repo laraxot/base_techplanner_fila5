@@ -1,3 +1,15 @@
+---
+title: "component icon support"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "component icon support"
+issues: []
+discussions: []
+status: draft
+---
+
 # Supporto per Icone nei Componenti Filament
 
 ## Riepilogo della Compatibilità
@@ -108,13 +120,6 @@ Forms\Components\TextInput::make('name')
 ## Riferimenti
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/fields/overview)
-<<<<<<< HEAD
-- [API Components Filament](../UI/docs/filament/components-api.md)
 - [API Components Filament](../ui/docs/filament/components-api.md)
 
 > **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.
-=======
-- [API Components Filament](/var/www/html/base_saluteora/laravel/Modules/UI/docs/filament/components-api.md)
-
-> **NOTA**: Questa documentazione segue la regola di centralizzare tutte le documentazioni UI nel modulo UI con collegamenti bidirezionali dagli altri moduli.
->>>>>>> 6ed19256f (.)

@@ -23,7 +23,6 @@ return [
             'placeholder' => 'Select layout type',
             'tooltip' => 'Choose between list and grid view',
             'help' => 'Choose the most suitable layout type to display the data',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +36,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

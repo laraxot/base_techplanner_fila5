@@ -1,3 +1,15 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # Block Components
 
 This document provides guidelines and documentation for theme block components used in the frontend architecture.
@@ -23,12 +35,6 @@ Block components are modular UI elements used to build sections in the frontend.
 
 ## Related Documentation
 
-- [Section Architecture](../sections/README.md)
-- [Theme Components](../components/README.md)
-<<<<<<< HEAD
 - [Section Architecture](../sections/readme.md)
 - [Theme Components](../components/readme.md)
 - [Data Handling in Blade](../blade-data-handling.md)
-=======
-- [Data Handling in Blade](../blade-data-handling.md)
->>>>>>> 6ed19256f (.)

@@ -6,41 +6,33 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\SsoProviderFactory;
->>>>>>> 6ed19256f (.)
+use Modules\User\Models\Traits\SsoProviderRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Models\Traits\HasXotFactory;
 
 /**
  * Modules\User\Models\SsoProvider.
  *
- * @property int         $id
- * @property string      $name
- * @property string      $display_name
- * @property string      $type
+ * @property int $id
+ * @property string $name
+ * @property string $display_name
+ * @property string $type
  * @property string|null $entity_id
  * @property string|null $client_id
  * @property string|null $client_secret
  * @property string|null $redirect_url
  * @property string|null $metadata_url
  * @property string|null $scopes
- * @property array|null  $settings
- * @property array|null  $domain_whitelist
- * @property array|null  $role_mapping
- * @property bool        $is_active
+ * @property array<string, mixed>|null $settings
+ * @property array<int, string>|null $domain_whitelist
+ * @property array<string, string>|null $role_mapping
+ * @property bool $is_active
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $created_by
  * @property string|null $updated_by
- *
- * @mixin IdeHelperSsoProvider
- *
  * @property Collection<int, User> $users
- * @property int|null              $users_count
+ * @property int|null $users_count
  *
  * @method static Builder<static>|SsoProvider newModelQuery()
  * @method static Builder<static>|SsoProvider newQuery()
@@ -68,17 +60,20 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
  *
-<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\SsoProviderFactory factory($count = null, $state = [])
-=======
- * @method static SsoProviderFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
 class SsoProvider extends BaseModel
 {
-    use HasXotFactory;
+    use SsoProviderRelationsTrait;
+
+    /**
+     * Fuori da `toArray()` e quindi dallo stato Livewire delle pagine Edit/View di Filament, che lo manderebbe al browser (audit DCP-181, D-3).
+     *
+     * @var list<string>
+     */
+    protected $hidden = ['client_secret'];
 
     /**
      * The attributes that are mass assignable.
@@ -102,14 +97,6 @@ class SsoProvider extends BaseModel
     ];
 
     /**
-     * Get all users associated with this SSO provider.
-     */
-    public function users(): HasMany
-    {
-        return $this->hasMany(User::class, 'sso_provider_id');
-    }
-
-    /**
      * Check if a given email domain is allowed for this provider.
      */
     public function isAllowedDomain(string $email): bool
@@ -119,7 +106,7 @@ class SsoProvider extends BaseModel
         }
 
         $atPos = strrchr($email, '@');
-        if (false === $atPos) {
+        if ($atPos === false) {
             return false;
         }
 
@@ -131,8 +118,7 @@ class SsoProvider extends BaseModel
     /**
      * Map SAML/OIDC roles to application roles.
      *
-     * @param array<string> $samlRoles
-     *
+     * @param  array<string>  $samlRoles
      * @return list<string>
      */
     public function mapRoles(array $samlRoles): array

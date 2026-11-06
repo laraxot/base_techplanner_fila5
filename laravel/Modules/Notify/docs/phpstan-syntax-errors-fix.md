@@ -1,16 +1,23 @@
+---
+title: "phpstan syntax errors fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan syntax errors fix"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Syntax Errors Fix - Notify Module
 
 **Data**: 2026-01-09  
-<<<<<<< HEAD
-**Data**: 2026-01-09  
-=======
->>>>>>> 6ed19256f (.)
 **Modulo**: Notify  
 **Livello PHPStan**: 10  
 **Status**: ✅ **COMPLETATO**
 
 ---
-
 ## 📊 Errori Risolti
 
 ### 1. `Models/EmailTemplate.php`
@@ -93,7 +100,3 @@ protected $fillable = [...];
 **Status**: ✅ **COMPLETATO**
 
 **Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
-**Ultimo aggiornamento**: 2026-01-09
-=======
->>>>>>> 6ed19256f (.)

@@ -3,6 +3,11 @@ title: links ci
 description: links ci
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, ci]
+qmd: "alcuni links xot"
 ---
 
 # alcuni links
@@ -52,7 +57,6 @@ Deptrac
 ### Versione HEAD
 
 ## Collegamenti tra versioni di links.md
-<<<<<<< HEAD
 * [links.md](../../../gdpr/docs/links.md)
 * [links.md](../../../notify/docs/links.md)
 * [links.md](../../../xot/docs/ci/links.md)
@@ -63,8 +67,6 @@ Deptrac
 * [links.md](../../../tenant/docs/it/links/links.md)
 * [links.md](../../../cms/docs/links.md)
 * [links.md](../../../../themes/one/docs/links.md)
-=======
->>>>>>> 6ed19256f (.)
 * [links.md](../../../Gdpr/docs/links.md)
 * [links.md](../../../Notify/docs/links.md)
 * [links.md](../../../Xot/docs/ci/links.md)
@@ -108,7 +110,6 @@ Deptrac
 ## Collegamenti ai Moduli Correlati
 
 ### Moduli Core
-<<<<<<< HEAD
 - [Modulo Lang](../../../lang/docs/links.md)
   > Gestione delle traduzioni per il core system. Fondamentale per l'internazionalizzazione.
 
@@ -120,8 +121,6 @@ Deptrac
   > Sistema di code per operazioni asincrone. Gestione dei processi in background.
 
 - [Modulo Cache](../../../cache/docs/links.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Modulo Lang](../../../Lang/docs/links.md)
   > Gestione delle traduzioni per il core system. Fondamentale per l'internazionalizzazione.
 
@@ -315,8 +314,4 @@ return [
     Modules\Xot\Providers\RouteServiceProvider::class,
     Modules\Xot\Providers\EventServiceProvider::class,
 ],
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> 6ed19256f (.)

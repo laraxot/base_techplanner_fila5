@@ -1,3 +1,15 @@
+---
+title: "comune unification analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comune unification analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi: Unificazione dei modelli geografici in Comune.php
 
 ## 1. Contesto attuale
@@ -10,7 +22,6 @@
 - Tutte le query (regioni, province, città, cap) diventano metodi statici di `Comune`.
 
 ---
-
 ## 3. Vantaggi dell'unificazione
 - ✅ **DRY**: nessuna duplicazione di logica tra modelli.
 - ✅ **KISS**: un solo punto di accesso, più semplice da mantenere.
@@ -57,20 +68,8 @@
 - [geo-json-model.md](geo-json-model.md)
 - [geo-sushi-comparison.md](geo-sushi-comparison.md)
 - [module_geo.md](module_geo.md)
-<<<<<<< HEAD
-- [Xot/module-structure.md](../../xot/docs/module-structure.md)
-
----
-
-=======
->>>>>>> 6ed19256f (.)
 - [Xot/module-structure.md](../../Xot/docs/module-structure.md)
 
 ---
 
-**Ultimo aggiornamento:** {{date('Y-m-d')}}
-<<<<<<< HEAD
 Responsabile: Cascade AI
-=======
-Responsabile: Cascade AI
->>>>>>> 6ed19256f (.)

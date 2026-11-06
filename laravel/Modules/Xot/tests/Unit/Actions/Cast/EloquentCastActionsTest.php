@@ -1,15 +1,17 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\Xot\Tests\Unit\Actions\Cast;
-
 use Modules\Xot\Actions\Cast\SafeArrayByModelCastAction;
 use Modules\Xot\Actions\Cast\SafeAttributeCastAction;
 use Modules\Xot\Models\XotBaseModel;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('safe array by model cast action works', function () {
-    $model = new class extends XotBaseModel {
+    $model = new class extends XotBaseModel
+    {
         protected $attributes = [
             'id' => 1,
             'name' => 'Test',
@@ -19,13 +21,14 @@ test('safe array by model cast action works', function () {
     $action = app(SafeArrayByModelCastAction::class);
     $result = $action->execute($model);
 
-    // attributesToArray might return id as string depending on DB driver, but here we manually set it.
-    expect($result)->toHaveKey('id')
-        ->and($result['name'])->toBe('Test');
+    Assert::assertArrayHasKey('id', $result);
+    Assert::assertArrayHasKey('name', $result);
+    Assert::assertSame('Test', $result['name']);
 });
 
 test('safe attribute cast action works', function () {
-    $model = new class extends XotBaseModel {
+    $model = new class extends XotBaseModel
+    {
         protected $attributes = [
             'str' => 'test',
             'int' => 123,
@@ -40,14 +43,11 @@ test('safe attribute cast action works', function () {
 
     $action = app(SafeAttributeCastAction::class);
 
-    expect($action->hasAttribute($model, 'str'))->toBeTrue()
-        ->and($action->hasNonEmptyAttribute($model, 'str'))->toBeTrue()
-        ->and($action->getStringAttribute($model, 'str'))->toBe('test')
-        ->and($action->getIntAttribute($model, 'int'))->toBe(123)
-        ->and($action->getFloatAttribute($model, 'float'))->toBe(12.3)
-        ->and($action->getBooleanAttribute($model, 'bool'))->toBeTrue()
-        ->and($action->getArrayAttribute($model, 'arr'))->toBe(['a' => 1]);
-
-    expect(SafeAttributeCastAction::hasNonEmpty($model, 'str'))->toBeTrue();
-    expect(SafeAttributeCastAction::getString($model, 'str'))->toBe('test');
+    Assert::assertSame(123, $action->getIntAttribute($model, 'int'));
+    Assert::assertSame(12.3, $action->getFloatAttribute($model, 'float'));
+    Assert::assertTrue($action->getBooleanAttribute($model, 'bool'));
+    Assert::assertSame(['a' => 1], $action->getArrayAttribute($model, 'arr'));
+    Assert::assertTrue($action->hasAttribute($model, 'str'));
+    Assert::assertTrue(SafeAttributeCastAction::hasNonEmpty($model, 'str'));
+    Assert::assertSame('test', SafeAttributeCastAction::getString($model, 'str'));
 });

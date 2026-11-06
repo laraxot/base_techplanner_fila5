@@ -3,12 +3,18 @@
 declare(strict_types=1);
 
 return [
+    'heading' => 'Accessi Recenti',
+    'columns' => [
+        'user' => 'Utente',
+        'login_at' => 'Ora Accesso',
+        'ip_address' => 'Indirizzo IP',
+        'user_agent' => 'User Agent',
+    ],
     'fields' => [
         'authenticatable' => [
             'name' => [
                 'label' => 'authenticatable.name',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -67,35 +73,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'login_at' => [
-            'label' => 'login_at',
-        ],
-        'ip_address' => [
-            'label' => 'ip_address',
-        ],
-        'user_agent' => [
-            'label' => 'user_agent',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'user' => [
-            'label' => 'user',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -129,30 +106,38 @@ return [
             'icon' => 'openFilters',
             'label' => 'openFilters',
         ],
-<<<<<<< HEAD
         'resetColumnManager' => [
             'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
             'label' => 'resetColumnManager',
         ],
+        'delete' => [
+            'tooltip' => 'delete',
+            'icon' => 'delete',
+            'label' => 'delete',
+        ],
+        'layout' => [
+            'tooltip' => 'layout',
+            'icon' => 'layout',
+            'label' => 'layout',
+        ],
+        'create' => [
+            'tooltip' => 'create',
+            'icon' => 'create',
+            'label' => 'create',
+        ],
     ],
     'navigation' => [
-        'name' => 'Recent Logins',
-        'plural' => 'Recent Logins',
+        'name' => 'Accessi Recenti',
+        'plural' => 'Accessi Recenti',
         'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
+            'name' => 'Generale',
+            'description' => 'Impostazioni Generali',
         ],
-        'label' => 'Recent Logins',
+        'label' => 'Accessi Recenti',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-    'label' => 'Recent Logins',
-    'plural_label' => 'Recent Logins (Plurale)',
-=======
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
+    'label' => 'Accessi Recenti',
+    'plural_label' => 'Accessi Recenti (Plurale)',
 ];

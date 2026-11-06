@@ -28,12 +28,16 @@ return [
     'actions' => [
         'refresh' => [
             'label' => 'refresh',
-<<<<<<< HEAD
             'tooltip' => 'refresh',
             'icon' => 'refresh',
         ],
         'logout' => [
             'tooltip' => 'logout',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
         ],
     ],
     'label' => 'Health',
@@ -56,8 +60,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
+        ],
+    ],
+    'page' => [
+        'last_check' => [
+            'label' => 'Ultimo controllo',
         ],
     ],
 ];

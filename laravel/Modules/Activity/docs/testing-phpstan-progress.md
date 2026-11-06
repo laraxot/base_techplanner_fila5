@@ -1,10 +1,15 @@
+---
+title: "Activity Module - PHPStan Testing Progress"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - phpstan testing progress activity"
+---
 # Activity Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Objective**: Fix PHPStan errors in test files
 
 ---
@@ -97,8 +102,9 @@ parameters:
 **Philosophy Reminder**:
 > "The site works. If tests fail, the tests are wrong, not the code."
 
-<<<<<<< HEAD
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
-=======
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
->>>>>>> 6ed19256f (.)
+
+## event sourcing business logic (2026-10)
+
+`EventSourcingBusinessLogicTest` usa asserzioni PHPUnit e `Safe\json_encode`/`json_decode` al posto delle catene Pest higher-order.
+

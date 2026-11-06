@@ -62,12 +62,7 @@ class GeocodingData extends Data
      *             short_name: string,
      *             types: array<string>
      *         }>
-<<<<<<< HEAD
-     *     }>,
-     *     error_message?: string
-=======
      *     }>
->>>>>>> 6ed19256f (.)
      * } $response
      */
     public static function fromGoogleResponse(array $response): self

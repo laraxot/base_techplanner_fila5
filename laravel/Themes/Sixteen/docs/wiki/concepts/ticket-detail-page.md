@@ -1,3 +1,15 @@
+---
+title: "ticket detail page"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ticket detail page"
+issues: []
+discussions: []
+status: draft
+---
+
 # Ticket Detail Page - Static Map + Comments
 
 ## Requirements
@@ -5,7 +17,7 @@
 Per design Design Comuni:
 - **Nessuna tab** sulla pagina di dettaglio ticket
 - **Mappa statica** con **solo il marker** del ticket corrente
-- **Commenti sotto** la mappa (funzionanti con Spatie Comments)
+- **Commenti sotto** la mappa (funzionanti con `Modules\\Comment`)
 
 ## Current Implementation
 
@@ -119,7 +131,7 @@ Il componente `ticket-location-map` usa `<map-lit>` web component:
 
 ## Comments Integration
 
-Il componente `ticket-comments` usa Spatie Comments Livewire:
+Il componente `ticket-comments` usa il Livewire nativo del modulo Comment:
 
 ```blade
 @props([
@@ -133,29 +145,13 @@ Il componente `ticket-comments` usa Spatie Comments Livewire:
 @endphp
 
 <div class="ticket-comments-section mt-5 pt-4 border-top">
-    {{-- Comments list using Spatie Livewire --}}
-    @livewire('comments::list-comments', [
+    @livewire(\Modules\Comment\Http\Livewire\CommentsComponent::class, [
         'model' => $ticket,
-        'subject' => 'Ticket #' . $ticket->id,
-        'withReactions' => false,
+        'readOnly' => false,
+        'hideNotificationOptions' => true,
+        'noReplies' => true,
+        'noReactions' => true,
     ])
-
-    {{-- Comment form for authenticated users --}}
-    @auth
-        <div class="comment-form-section mt-4">
-            <h5 class="mb-3">{{ __('cruds.ticket.fields.comments') }}</h5>
-            @livewire('comments::create-comment', [
-                'model' => $ticket
-            ])
-        </div>
-    @else
-        <div class="alert alert-info mt-4">
-            {{ __('cruds.ticket.login_to_comment') }}
-            <a href="{{ route('login') }}" class="alert-link">
-                {{ __('global.login') }}
-            </a>
-        </div>
-    @endauth
 </div>
 ```
 
@@ -163,12 +159,12 @@ Il componente `ticket-comments` usa Spatie Comments Livewire:
 
 Il model `Ticket` deve avere:
 - `latitude` / `longitude` (o `location` array con lat/lng)
-- Relazione `comments()` configurata per Spatie Comments
+- Relazione `comments()` configurata per `Modules\\Comment`
 
 ```php
 // In Ticket model
 public function comments()
 {
-    return $this->morphMany(\Spatie\Comments\Models\Comment::class, 'commentable');
+    return $this->morphMany(\Modules\Comment\Models\Comment::class, 'commentable');
 }
 ```

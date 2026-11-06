@@ -1,4 +1,17 @@
-<<<<<<< HEAD
+---
+issues: []
+discussions: []
+title: "Gestione dei File in <nome progetto>"
+module: "Media"
+type: concept
+tags: [file, management]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "file management"
+related:
+  - "./webm.md"
+status: draft
+---
 # Gestione dei File in <nome progetto>
 
 ## Panoramica
@@ -8,17 +21,6 @@ Questo documento descrive le best practice per la gestione dei file in <nome pro
 ## Struttura delle Directory
 
 <nome progetto> utilizza una struttura organizzata per l'archiviazione dei file:
-=======
-# Gestione dei File in SaluteOra
-
-## Panoramica
-
-Questo documento descrive le best practice per la gestione dei file in SaluteOra, inclusi il caricamento, l'archiviazione e l'accesso ai file in diverse parti dell'applicazione.
-
-## Struttura delle Directory
-
-SaluteOra utilizza una struttura organizzata per l'archiviazione dei file:
->>>>>>> 6ed19256f (.)
 
 ```
 /storage
@@ -35,11 +37,7 @@ SaluteOra utilizza una struttura organizzata per l'archiviazione dei file:
 
 ### Utilizzo di Filament
 
-<<<<<<< HEAD
 Per i form amministrativi, <nome progetto> utilizza il componente `FileUpload` di Filament:
-=======
-Per i form amministrativi, SaluteOra utilizza il componente `FileUpload` di Filament:
->>>>>>> 6ed19256f (.)
 
 ```php
 use Filament\Forms\Components\FileUpload;
@@ -55,11 +53,7 @@ Per una documentazione dettagliata sull'utilizzo di `FileUpload`, consulta la [G
 
 ### Utilizzo di Livewire
 
-<<<<<<< HEAD
 Per i form frontend, <nome progetto> utilizza Livewire:
-=======
-Per i form frontend, SaluteOra utilizza Livewire:
->>>>>>> 6ed19256f (.)
 
 ```php
 public function save()
@@ -97,11 +91,7 @@ Schema::table('users', function (Blueprint $table) {
 });
 ```
 
-Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md).
-<<<<<<< HEAD
 Per una documentazione dettagliata sulla mappatura dei campi, consulta la [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md).
-=======
->>>>>>> 6ed19256f (.)
 
 ## Accesso ai File
 
@@ -115,11 +105,7 @@ $url = Storage::url($path);
 
 ### Controllo degli Accessi
 
-<<<<<<< HEAD
 <nome progetto> implementa un sistema di controllo degli accessi per i file sensibili:
-=======
-SaluteOra implementa un sistema di controllo degli accessi per i file sensibili:
->>>>>>> 6ed19256f (.)
 
 ```php
 // In un controller
@@ -181,14 +167,7 @@ protected static function booted()
 ## Documentazione Correlata
 
 - [Gestione dei File Upload in Filament](/docs/filament-file-uploads.md)
-- [Mappatura dei Campi Database nel Modulo Patient](/laravel/Modules/Patient/docs/DATABASE_FIELD_MAPPING.md)
-<<<<<<< HEAD
 - [Mappatura dei Campi Database nel Modulo Patient](/laravel/modules/patient/docs/database_field_mapping.md)
 - [Migrazioni del Database](/docs/database-migrations.md)
 - [Gestione degli Utenti](/docs/user-management.md)
 - [Pattern di Ereditarietà dei Modelli](/docs/model-inheritance-patterns.md)
-=======
-- [Migrazioni del Database](/docs/database-migrations.md)
-- [Gestione degli Utenti](/docs/user-management.md)
-- [Pattern di Ereditarietà dei Modelli](/docs/model-inheritance-patterns.md)
->>>>>>> 6ed19256f (.)

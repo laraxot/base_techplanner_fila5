@@ -7,10 +7,19 @@ namespace Modules\Notify\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Notify\Models\MailTemplate;
 
+/**
+ * @extends Factory<MailTemplate>
+ */
 class MailTemplateFactory extends Factory
 {
     protected $model = MailTemplate::class;
+    /**
+     * @return array<string, mixed>
+     */
 
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
@@ -19,10 +28,7 @@ class MailTemplateFactory extends Factory
             'subject' => $this->faker->sentence(),
             'html_template' => $this->faker->randomHtml(),
             'text_template' => $this->faker->text(),
-            'type' => $this->faker->randomElement(['email', 'notification', 'sms']),
-            'is_active' => $this->faker->boolean(80),
             'created_at' => $this->faker->dateTimeBetween('-1 year'),
-            'updated_at' => $this->faker->dateTimeBetween('-1 year'),
-        ];
+            'updated_at' => $this->faker->dateTimeBetween('-1 year')];
     }
 }

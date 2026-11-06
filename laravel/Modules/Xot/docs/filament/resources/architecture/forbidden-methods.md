@@ -1,3 +1,15 @@
+---
+title: "forbidden methods"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "forbidden methods"
+issues: []
+discussions: []
+status: draft
+---
+
 # Metodi da NON implementare in classi che estendono XotBaseResource
 
 ## Regola fondamentale
@@ -34,7 +46,17 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICI metodi che dovrebbero essere implementati
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+title: "forbidden methods"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "forbidden methods"
+issues: []
+discussions: []
+    public function getFormSchema(): array
     {
         return [
             'name' => Forms\Components\TextInput::make('name')
@@ -67,24 +89,11 @@ Prima di ogni commit, verificare che le risorse Filament non contengano metodi p
 ```bash
 
 # Cerca implementazioni non necessarie
-<<<<<<< HEAD
 grep -r "public static function getTableColumns" --include="*Resource.php" Modules/
 grep -r "public static function getTableFilters" --include="*Resource.php" Modules/
 grep -r "public static function getTableActions" --include="*Resource.php" Modules/
 grep -r "public static function getTableBulkActions" --include="*Resource.php" Modules/
 grep -r "public static function getNavigationGroup" --include="*Resource.php" Modules/
-=======
-grep -r "public static function getTableColumns" --include="*Resource.php" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/
-grep -r "public static function getTableFilters" --include="*Resource.php" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/
-grep -r "public static function getTableActions" --include="*Resource.php" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/
-grep -r "public static function getTableBulkActions" --include="*Resource.php" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/
-grep -r "public static function getNavigationGroup" --include="*Resource.php" /var/www/html/base_techplanner_fila3_mono/laravel/Modules/
-grep -r "public static function getTableColumns" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
-grep -r "public static function getTableFilters" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
-grep -r "public static function getTableActions" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
-grep -r "public static function getTableBulkActions" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
-grep -r "public static function getNavigationGroup" --include="*Resource.php" /var/www/html/base_saluteora/laravel/Modules/
->>>>>>> 6ed19256f (.)
 ```
 
 ## Processo di refactoring

@@ -1,10 +1,18 @@
+---
+title: "phpmd report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd report"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPMD Report (CMS)
 
-## esecuzione 2025-11-12
-<<<<<<< HEAD
 ## esecuzione [DATE]
-=======
->>>>>>> 6ed19256f (.)
 - Comando: `./vendor/bin/phpmd Modules/Cms text Modules/Cms/phpmd.ruleset.xml`
 - Risultato: **non concluso** per numero elevato di violazioni + file non parsabili.
 
@@ -25,8 +33,4 @@
 ## follow-up suggeriti
 - Creare task dedicati in `todo_application.md` per ciascuna macro-area (naming, test, coupling).
 - Integrare PHPMD nel CI (read-only) per evitare regressioni.
-<<<<<<< HEAD
 - Collegare i fix ai relativi documenti (es. `./architecture-xotdata-pattern.md`, `./filament-integration.md`).
-=======
-- Collegare i fix ai relativi documenti (es. `./architecture-xotdata-pattern.md`, `./filament-integration.md`).
->>>>>>> 6ed19256f (.)

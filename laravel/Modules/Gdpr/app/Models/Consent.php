@@ -8,49 +8,12 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\Gdpr\Database\Factories\ConsentFactory;
->>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
+use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\Gdpr\Models\Consent.
  *
-<<<<<<< HEAD
- * @property string               $id
- * @property string|null          $treatment_id
- * @property string|null          $subject_id
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property Carbon|null          $deleted_at
- * @property string|null          $deleted_by
- * @property string               $user_type
- * @property string|null          $user_id
- * @property string|null          $type
- * @property string|null          $accepted_at
- * @property ProfileContract|null $creator
- * @property Treatment|null       $treatment
- * @property string               $id
- * @property string|null          $treatment_id
- * @property string|null          $subject_id
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property Carbon|null          $deleted_at
- * @property string|null          $deleted_by
- * @property string               $user_type
- * @property string|null          $user_id
- * @property string|null          $type
- * @property string|null          $accepted_at
- * @property ProfileContract|null $creator
- * @property Treatment|null       $treatment
- * @property ProfileContract|null $updater
- *
-=======
  * @property string $id
  * @property string|null $treatment_id
  * @property string|null $subject_id
@@ -64,13 +27,25 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $user_id
  * @property string|null $type
  * @property string|null $accepted_at
+ * @property ProfileContract|null $creator
+ * @property Treatment|null $treatment
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $subject_id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $user_type
+ * @property string|null $user_id
+ * @property string|null $type
+ * @property string|null $accepted_at
+ * @property ProfileContract|null $creator
+ * @property Treatment|null $treatment
+ * @property ProfileContract|null $updater
  *
- * @property-read ProfileContract|null $creator
- * @property-read Treatment|null $treatment
- * @property-read ProfileContract|null $updater
- *
- * @method static ConsentFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Consent newModelQuery()
  * @method static Builder<static>|Consent newQuery()
  * @method static Builder<static>|Consent query()
@@ -88,24 +63,20 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Consent whereUserId($value)
  * @method static Builder<static>|Consent whereUserType($value)
  *
-<<<<<<< HEAD
  * @property ProfileContract|null $deleter
- * @property string|null          $ip_address
- * @property string|null          $user_agent
+ * @property string|null $ip_address
+ * @property string|null $user_agent
  *
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
- * @method static Builder<static>|Consent                         whereIpAddress($value)
- * @method static Builder<static>|Consent                         whereUserAgent($value)
+ * @method static Builder<static>|Consent whereIpAddress($value)
+ * @method static Builder<static>|Consent whereUserAgent($value)
  *
  * @property string|null $ip_address
  * @property string|null $user_agent
  *
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
- * @method static Builder<static>|Consent                         whereIpAddress($value)
- * @method static Builder<static>|Consent                         whereUserAgent($value)
-=======
- * @property-read ProfileContract|null $deleter
->>>>>>> 6ed19256f (.)
+ * @method static Builder<static>|Consent whereIpAddress($value)
+ * @method static Builder<static>|Consent whereUserAgent($value)
  *
  * @mixin \Eloquent
  */
@@ -113,11 +84,17 @@ class Consent extends BaseModel
 {
     use HasUuids;
 
-    // protected $table = 'consent';
-
     public $incrementing = false;
 
-<<<<<<< HEAD
+    protected static function booted(): void
+    {
+        static::creating(function (Consent $consent): void {
+            if (blank($consent->user_type)) {
+                $consent->user_type = XotData::make()->getUserClass();
+            }
+        });
+    }
+
     public $fillable = [
         'id',
         'subject_id',
@@ -131,10 +108,10 @@ class Consent extends BaseModel
         'ip_address',
         'user_agent',
     ];
-=======
-    public $fillable = ['subject_id', 'treatment_id'];
->>>>>>> 6ed19256f (.)
 
+    /**
+     * @return BelongsTo<Treatment, $this>
+     */
     public function treatment(): BelongsTo
     {
         return $this->belongsTo(Treatment::class);

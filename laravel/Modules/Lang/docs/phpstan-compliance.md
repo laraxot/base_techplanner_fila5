@@ -1,12 +1,21 @@
+---
+title: "phpstan compliance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan compliance"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Compliance - Lang Module
 
 ## Status: ✅ FULLY COMPLIANT
 
 **Analysis Date:** September 22, 2025
-<<<<<<< HEAD
 **Analysis Date:** September 22, 2025
-=======
->>>>>>> 6ed19256f (.)
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 123
 **Errors Found:** 0
@@ -47,8 +56,4 @@ The module maintains:
 - Strict type declarations
 - Comprehensive type hints
 - Internationalization best practices
-<<<<<<< HEAD
 - Modern PHP 8.2+ feature utilization
-=======
-- Modern PHP 8.2+ feature utilization
->>>>>>> 6ed19256f (.)

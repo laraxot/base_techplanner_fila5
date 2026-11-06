@@ -1,3 +1,11 @@
+---
+title: "Correzioni nel Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "correzioni nel modulo xot xot"
+---
 # Correzioni nel Modulo Xot
 
 ## Nuovi Errori PHPStan (Livello 2)
@@ -148,11 +156,7 @@ public static function getFormSchema(): array
 ### Composer.json
 ```json
 {
-<<<<<<< HEAD
     "name": "laraxot/module_xot_fila5",
-=======
-    "name": "laraxot/module_xot_fila3",
->>>>>>> 6ed19256f (.)
     "autoload": {
         "psr-4": {
             "Modules\\Xot\\": "app/",
@@ -797,8 +801,4 @@ $count = CountAction::execute(User::class);
 - [ ] Implementare cache opzionale
 - [ ] Aggiungere supporto per filtri
 - [ ] Ottimizzare per grandi dataset
-<<<<<<< HEAD
 - [ ] Aggiungere test di performance
-=======
-- [ ] Aggiungere test di performance
->>>>>>> 6ed19256f (.)

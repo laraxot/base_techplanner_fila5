@@ -1,9 +1,17 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "base"
+issues: []
+discussions: []
 title: Base
 description: Base
 extends: _layouts.documentation
 section: content
 path: it/docs/components/chartjs
+status: draft
 ---
 
 # Base {#base}
@@ -41,10 +49,5 @@ title="Valori Giornalieri"
 
 Per altre informazioni leggere documentazione [ChartJs](https://www.chartjs.org/docs/latest/).
 ## Collegamenti tra versioni di base.md
-* [base.md](laravel/Modules/Chart/docs/components/chartjs/base.md)
-* [base.md](laravel/Modules/Cms/docs/components/chartjs/base.md)
-<<<<<<< HEAD
 * [base.md](laravel/modules/chart/docs/components/chartjs/base.md)
 * [base.md](laravel/modules/cms/docs/components/chartjs/base.md)
-=======
->>>>>>> 6ed19256f (.)

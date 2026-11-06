@@ -14,7 +14,7 @@ I nomi dei file di documentazione devono descrivere **COSA contengono**, non **Q
 
 2. **Evita Duplicati**
    - Un solo file `complete-analysis-summary.md` che viene aggiornato
-   - Non creo `complete-analysis-summary-2025-01-06.md` e poi `complete-analysis-summary-2026-02-19.md`
+   - Non creo `complete-analysis-summary-riepilogo-completo-analisi-qualita.md` e poi `complete-analysis-summary-2026-02-19.md`
 
 3. **Manutenibilità**
    - Il nome descrive il contenuto, non la cronologia
@@ -48,7 +48,7 @@ Le date vanno nel **contenuto** del file o in **CHANGELOG.md**, non nel nome:
 - `business-logic-guide.md` - Contenuto descritto
 
 ### ❌ VIETATO
-- `complete-analysis-summary-2025-01-06.md` - Data nel nome
+- `complete-analysis-summary-riepilogo-completo-analisi-qualita.md` - Data nel nome
 - `analysis-2025.md` - Anno nel nome
 - `fix-jan-2026.md` - Mese/anno nel nome
 - `report-2025-12-19.md` - Data completa nel nome

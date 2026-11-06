@@ -1,11 +1,32 @@
+---
+title: "Analisi Metodi Duplicati - Modulo User"
+type: concept
+tags: [duplicate, methods, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "duplicate-methods-analysis analisi metodi duplicati - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Analisi Metodi Duplicati - Modulo User
 
 **Data Generazione**: 2025-10-15 06:41:17
-<<<<<<< HEAD
 **Totale Gruppi di Duplicati**: 
-=======
-**Totale Gruppi di Duplicati**:
->>>>>>> 6ed19256f (.)
 
 ## Sommario Esecutivo
 
@@ -880,10 +901,7 @@ public function execute(string $prompt): CompletionData
 
 ---
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 ---
 
 ## Legenda
@@ -908,7 +926,4 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
 - **< 50%**: Richiede analisi dettagliata
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)

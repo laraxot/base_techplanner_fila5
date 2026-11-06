@@ -1,3 +1,15 @@
+---
+title: "cast actions centralized"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cast actions centralized"
+issues: []
+discussions: []
+status: draft
+---
+
 # Azioni Cast Centralizzate - Regola di Progetto
 
 ## Principio Fondamentale
@@ -76,21 +88,8 @@ Ogni volta che si utilizzano queste azioni:
 4. Documentare l'uso specifico nel contesto
 
 ## Collegamenti
-<<<<<<< HEAD
 - [<nome progetto> Cast Usage](../laravel/modules/<nome progetto>/docs/cast-actions-usage.md)
 - [<nome progetto> Cast Usage](../laravel/modules/<nome progetto>/docs/cast-actions-usage.md)
 - [Xot Cast Actions](../laravel/modules/xot/docs/actions/cast-actions.md)
 - [PHPStan Best Practices](./phpstan-best-practices.md)
 
-=======
->>>>>>> 6ed19256f (.)
-- [<nome progetto> Cast Usage](../laravel/Modules/<nome progetto>/docs/cast-actions-usage.md)
-- [<nome progetto> Cast Usage](../laravel/Modules/<nome progetto>/docs/cast-actions-usage.md)
-- [Xot Cast Actions](../laravel/Modules/Xot/docs/actions/cast-actions.md)
-- [PHPStan Best Practices](./phpstan-best-practices.md)
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)

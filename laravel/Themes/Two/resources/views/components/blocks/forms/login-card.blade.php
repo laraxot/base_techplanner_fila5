@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Login',
+    'title' => __('pub_theme::block_defaults.login_card.title.title'),
     'subtitle' => '',
     'livewireComponent' => null,
 ])

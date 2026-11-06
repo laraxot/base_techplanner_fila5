@@ -26,11 +26,7 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
     }
 
     #[Url]
-<<<<<<< HEAD
     public ?string $activeTab = null;
-=======
-    public null|string $activeTab = null;
->>>>>>> 6ed19256f (.)
 
     protected static string $resource = ScheduleResource::class;
 
@@ -46,10 +42,12 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
         return [];
     }
 
+    /**
+     * @return array<int, Split>
+     */
     protected function getTableColumns(): array
     {
         $date_format = config('app.date_format');
-<<<<<<< HEAD
         Assert::string($date_format, '['.__LINE__.']['.class_basename($this).']');
 
         return [
@@ -57,15 +55,6 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
                 'command' => TextColumn::make('command'),
                 'created_at' => TextColumn::make('created_at')->dateTime($date_format),
                 'updated_at' => TextColumn::make('updated_at')->formatStateUsing(static function (
-=======
-        Assert::string($date_format, '[' . __LINE__ . '][' . class_basename($this) . ']');
-
-        return [
-            Split::make([
-                TextColumn::make('command'),
-                TextColumn::make('created_at')->dateTime($date_format),
-                TextColumn::make('updated_at')->formatStateUsing(static function (
->>>>>>> 6ed19256f (.)
                     ?Carbon $state,
                     ScheduleHistory $record,
                 ): string {
@@ -77,30 +66,21 @@ class ViewSchedule extends XotBaseResourcePage implements HasTable
                         return 'Processing...';
                     }
 
-<<<<<<< HEAD
                     return (string) $state->diffInSeconds($record->created_at).' seconds';
                 }),
                 'output' => TextColumn::make('output')->formatStateUsing(
                     static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1).' rows of output',
                 ),
             ]),
-            Panel::make([
-                'output' => TextColumn::make('output')
-=======
-                    return (string) $state->diffInSeconds($record->created_at) . ' seconds';
-                }),
-                TextColumn::make('output')->formatStateUsing(
-                    static fn (string $state): string => (count(explode('<br />', nl2br($state))) - 1) . ' rows of output',
-                ),
+            Split::make([
+                Panel::make([
+                    'output' => TextColumn::make('output')
+                        ->extraAttributes(['class' => '!max-w-max'], true)
+                        ->formatStateUsing(static fn (string $state): HtmlString => new HtmlString(nl2br(
+                            $state,
+                        ))),
+                ])->collapsible(),
             ]),
-            Panel::make([
-                TextColumn::make('output')
->>>>>>> 6ed19256f (.)
-                    ->extraAttributes(['class' => '!max-w-max'], true)
-                    ->formatStateUsing(static fn (string $state): HtmlString => new HtmlString(nl2br(
-                        $state,
-                    ))),
-            ])->collapsible(),
             // ->collapsed(config('job::history_collapsed'))
         ];
     }

@@ -3,6 +3,20 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
+        'list' => [
+            'label' => 'Lista',
+            'icon' => 'heroicon-o-list-bullet',
+            'color' => 'primary',
+            'description' => 'Lista',
+        ],
+        'grid' => [
+            'label' => 'Cuadrícula',
+            'icon' => 'heroicon-o-squares-2x2',
+            'color' => 'secondary',
+            'description' => 'Cuadrícula',
+        ],
+    ],
     'actions' => [
         'toggle' => [
             'label' => 'Cambiar diseño',
@@ -10,7 +24,6 @@ return [
             'helper_text' => 'Cambiar el tipo de visualización',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +35,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

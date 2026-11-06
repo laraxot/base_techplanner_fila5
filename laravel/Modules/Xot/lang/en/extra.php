@@ -10,7 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione delle funzionalità aggiuntive del sistema',
         ],
-        'label' => 'extra',
+        'label' => 'Extra',
         'sort' => '13',
         'icon' => 'xot-extra',
     ],
@@ -19,23 +19,17 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome dell\'extra',
             'help' => 'Nome identificativo dell\'extra',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione dettagliata',
             'help' => 'Descrizione completa delle funzionalità dell\'extra',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -51,12 +45,9 @@ return [
                 'integration' => 'Integrazione',
                 'utility' => 'Utilità',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -68,34 +59,25 @@ return [
                 'error' => 'Errore',
                 'updating' => 'In aggiornamento',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Versione',
             'placeholder' => 'Inserisci la versione (es. 1.0.0)',
             'help' => 'Versione semantica dell\'extra',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'dependencies' => [
             'label' => 'Dipendenze',
             'placeholder' => 'Seleziona le dipendenze richieste',
             'help' => 'Altri extra o componenti necessari',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -106,38 +88,28 @@ return [
                 'medium' => 'Media',
                 'low' => 'Bassa',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'settings' => [
             'label' => 'Impostazioni',
             'placeholder' => 'Configura le impostazioni',
             'help' => 'Configurazioni specifiche dell\'extra',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data e ora di creazione dell\'extra',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultimo Aggiornamento',
             'help' => 'Data e ora dell\'ultima modifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -207,41 +179,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'id' => [
-            'label' => 'id',
-        ],
-        'model_type' => [
-            'label' => 'model_type',
-        ],
-        'model_id' => [
-            'label' => 'model_id',
-        ],
-        'extra_attributes' => [
-            'label' => 'extra_attributes',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -317,9 +254,6 @@ return [
     'model' => [
         'label' => 'extra.model',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,45 +1,48 @@
 <?php
 
 declare(strict_types=1);
-
-uses(\Modules\Activity\Tests\TestCase::class);
-
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 test('Snapshot model can be instantiated', function () {
-    $snapshot = new Snapshot;
-
-    expect($snapshot)->toBeInstanceOf(Snapshot::class);
+    Assert::assertTrue((new ReflectionClass(Snapshot::class))->isInstantiable());
 });
 
 test('StoredEvent model can be instantiated', function () {
-    $storedEvent = new StoredEvent;
-
-    expect($storedEvent)->toBeInstanceOf(StoredEvent::class);
+    Assert::assertTrue((new ReflectionClass(StoredEvent::class))->isInstantiable());
 });
 
 test('BaseModel model can be instantiated', function () {
-    $baseModel = new BaseModel;
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'activity_base_models';
+    };
 
-    expect($baseModel)->toBeInstanceOf(BaseModel::class);
+    Assert::assertSame('activity_base_models', $baseModel->getTable());
 });
 
 test('Snapshot model has correct connection', function () {
     $snapshot = new Snapshot;
 
-    expect($snapshot->getConnectionName())->toBeString();
+    Assert::assertIsString($snapshot->getConnectionName());
 });
 
 test('StoredEvent model has correct connection', function () {
     $storedEvent = new StoredEvent;
 
-    expect($storedEvent->getConnectionName())->toBeString();
+    Assert::assertIsString($storedEvent->getConnectionName());
 });
 
 test('BaseModel model has correct connection', function () {
-    $baseModel = new BaseModel;
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'activity_base_models';
+    };
 
-    expect($baseModel->getConnectionName())->toBeString();
+    Assert::assertIsString($baseModel->getConnectionName());
 });

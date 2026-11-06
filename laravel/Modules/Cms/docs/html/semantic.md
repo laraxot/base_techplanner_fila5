@@ -1,3 +1,15 @@
+---
+title: "semantic"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "semantic"
+issues: []
+discussions: []
+status: draft
+---
+
 # Elementi Semantici HTML5
 
 ## Introduzione
@@ -147,14 +159,8 @@ Contenuto autonomo con didascalia:
 | `<time>` | Data/ora |
 
 ## Collegamenti
-- [Struttura Layout](../structure/layout.md)
+- [Struttura Layout](../architecture/structure/layout.md)
 - [Componenti HTML](../components/html.md)
-- [Accessibilità](../accessibility/README.md)
-<<<<<<< HEAD
 - [Accessibilità](../accessibility/readme.md)
 
 [Fonte: W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
-=======
-
-[Fonte: W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
->>>>>>> 6ed19256f (.)

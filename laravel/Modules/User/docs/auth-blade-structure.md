@@ -1,3 +1,28 @@
+---
+title: "Struttura delle Blade di Autenticazione con Volt"
+type: concept
+tags: [auth, blade, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-blade-structure struttura delle blade di autenticazione con volt"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Struttura delle Blade di Autenticazione con Volt
 
 ## Introduzione
@@ -30,21 +55,13 @@ class [NomePagina]Page
 {
     // Proprietà pubbliche per il binding
     public $property = '';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Metodi pubblici per le azioni
     public function action()
     {
         // Logica dell'azione
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Hook del ciclo di vita
     public function mount()
     {
@@ -57,11 +74,7 @@ class [NomePagina]Page
     <x-slot:title>
         {{ __('Titolo Pagina') }}
     </x-slot>
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     <!-- Contenuto -->
 </x-layout>
 ```
@@ -100,30 +113,18 @@ class LoginPage
     public $email = '';
     public $password = '';
     public $remember = false;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function login()
     {
         $this->validate([
             'email' => 'required|email',
             'password' => 'required'
         ]);
-<<<<<<< HEAD
         
         if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
             return redirect()->intended(route('dashboard'));
         }
         
-=======
-
-        if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
-            return redirect()->intended(route('dashboard'));
-        }
-
->>>>>>> 6ed19256f (.)
         $this->addError('email', __('Credenziali non valide'));
     }
 }
@@ -139,11 +140,7 @@ class RegisterPage
     public $email = '';
     public $password = '';
     public $password_confirmation = '';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function register()
     {
         $this->validate([
@@ -151,21 +148,13 @@ class RegisterPage
             'email' => 'required|email|unique:users',
             'password' => 'required|min:8|confirmed'
         ]);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         $user = User::create([
             'name' => $this->name,
             'email' => $this->email,
             'password' => Hash::make($this->password)
         ]);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         Auth::login($user);
         return redirect()->route('dashboard');
     }
@@ -182,7 +171,6 @@ class LogoutPage
     {
         try {
             Event::dispatch('auth.logout.attempting', [auth()->user()]);
-<<<<<<< HEAD
             
             auth()->logout();
             session()->invalidate();
@@ -190,24 +178,11 @@ class LogoutPage
             
             Event::dispatch('auth.logout.successful');
             
-=======
-
-            auth()->logout();
-            session()->invalidate();
-            session()->regenerateToken();
-
-            Event::dispatch('auth.logout.successful');
-
->>>>>>> 6ed19256f (.)
             Log::info('Utente disconnesso', [
                 'user_id' => auth()->id(),
                 'timestamp' => now()
             ]);
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 6ed19256f (.)
             return redirect()->route('home');
         } catch (\Exception $e) {
             Log::error('Errore durante il logout: ' . $e->getMessage());
@@ -228,202 +203,17 @@ Ogni azione di autenticazione deve:
 
 ## Collegamenti
 
-<<<<<<< HEAD
+- [Documentazione Volt](./volt-logout.md)
+- [Best Practices Routing](./routing-best-practices.md)
+- [Documentazione Volt](./volt-logout.md)
+- [Best Practices Routing](./routing-best-practices-architettura-volt-folio-filament.md)
+- [Struttura Directory](./directory-structure-checklist.md)
+- [Gestione Errori](./error-handling.md) 
+- [Documentazione Volt](./volt-logout.md)
+- [Best Practices Routing](./routing-best-practices.md)
+- [Struttura Directory](./directory-structure-checklist.md)
+- [Gestione Errori](./error-handling.md) 
 - [Documentazione Volt](./volt_logout.md)
 - [Best Practices Routing](./routing_best_practices.md)
 - [Struttura Directory](./directory_structure_checklist.md)
 - [Gestione Errori](./error_handling.md) 
-- [Documentazione Volt](./VOLT_LOGOUT.md)
-- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
-- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Gestione Errori](./ERROR_HANDLING.md) 
-=======
-- [Documentazione Volt](./VOLT_LOGOUT.md)
-- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
-- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Gestione Errori](./ERROR_HANDLING.md)
-# Struttura delle Blade di Autenticazione con Volt
-
-## Introduzione
-
-Le blade di autenticazione nel tema One devono seguire un pattern specifico che combina Volt, Folio e Livewire per garantire una gestione efficiente e sicura dell'autenticazione.
-
-## Struttura Directory
-
-```
-laravel/Themes/One/resources/views/pages/auth/
-├── login.blade.php
-├── register.blade.php
-├── logout.blade.php
-├── verify.blade.php
-├── password/
-│   ├── reset.blade.php
-│   ├── confirm.blade.php
-│   └── email.blade.php
-└── [type]/
-    └── index.blade.php
-```
-
-## Pattern Comune
-
-Ogni blade di autenticazione deve seguire questo pattern:
-
-```blade
-@volt
-class [NomePagina]Page
-{
-    // Proprietà pubbliche per il binding
-    public $property = '';
-
-    // Metodi pubblici per le azioni
-    public function action()
-    {
-        // Logica dell'azione
-    }
-
-    // Hook del ciclo di vita
-    public function mount()
-    {
-        // Inizializzazione
-    }
-}
-@endvolt
-
-<x-layout>
-    <x-slot:title>
-        {{ __('Titolo Pagina') }}
-    </x-slot>
-
-    <!-- Contenuto -->
-</x-layout>
-```
-
-## Best Practices
-
-### 1. Gestione dello Stato
-- Utilizzare proprietà pubbliche per il binding bidirezionale
-- Implementare validazione lato client e server
-- Gestire correttamente il ciclo di vita del componente
-
-### 2. Sicurezza
-- Implementare CSRF protection
-- Validare tutti gli input
-- Gestire correttamente le sessioni
-- Utilizzare middleware di autenticazione
-
-### 3. UX/UI
-- Fornire feedback immediato
-- Implementare gestione errori
-- Mantenere coerenza visiva
-- Supportare responsive design
-
-### 4. Performance
-- Minimizzare le chiamate al server
-- Ottimizzare il rendering
-- Implementare caching quando appropriato
-
-## Esempi Specifici
-
-### Login
-```blade
-@volt
-class LoginPage
-{
-    public $email = '';
-    public $password = '';
-    public $remember = false;
-
-    public function login()
-    {
-        $this->validate([
-            'email' => 'required|email',
-            'password' => 'required'
-        ]);
-
-        if (Auth::attempt(['email' => $this->email, 'password' => $this->password], $this->remember)) {
-            return redirect()->intended(route('dashboard'));
-        }
-
-        $this->addError('email', __('Credenziali non valide'));
-    }
-}
-@endvolt
-```
-
-### Register
-```blade
-@volt
-class RegisterPage
-{
-    public $name = '';
-    public $email = '';
-    public $password = '';
-    public $password_confirmation = '';
-
-    public function register()
-    {
-        $this->validate([
-            'name' => 'required|min:3',
-            'email' => 'required|email|unique:users',
-            'password' => 'required|min:8|confirmed'
-        ]);
-
-        $user = User::create([
-            'name' => $this->name,
-            'email' => $this->email,
-            'password' => Hash::make($this->password)
-        ]);
-
-        Auth::login($user);
-        return redirect()->route('dashboard');
-    }
-}
-@endvolt
-```
-
-### Logout
-```blade
-@volt
-class LogoutPage
-{
-    public function mount()
-    {
-        try {
-            Event::dispatch('auth.logout.attempting', [auth()->user()]);
-
-            auth()->logout();
-            session()->invalidate();
-            session()->regenerateToken();
-
-            Event::dispatch('auth.logout.successful');
-
-            Log::info('Utente disconnesso', [
-                'user_id' => auth()->id(),
-                'timestamp' => now()
-            ]);
-
-            return redirect()->route('home');
-        } catch (\Exception $e) {
-            Log::error('Errore durante il logout: ' . $e->getMessage());
-            session()->flash('error', __('Si è verificato un errore durante il logout'));
-            return redirect()->back();
-        }
-    }
-}
-@endvolt
-```
-
-## Eventi e Logging
-
-Ogni azione di autenticazione deve:
-1. Emettere eventi appropriati
-2. Registrare log per audit
-3. Gestire errori in modo appropriato
-
-## Collegamenti
-
-- [Documentazione Volt](./VOLT_LOGOUT.md)
-- [Best Practices Routing](./ROUTING_BEST_PRACTICES.md)
-- [Struttura Directory](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Gestione Errori](./ERROR_HANDLING.md)
->>>>>>> 6ed19256f (.)

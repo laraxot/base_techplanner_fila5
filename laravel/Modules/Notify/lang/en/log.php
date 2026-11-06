@@ -6,97 +6,56 @@ return [
     'fields' => [
         'recipient' => [
             'label' => 'recipient',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'subject' => [
             'label' => 'subject',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'status' => [
             'label' => 'status',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'sent_at' => [
             'label' => 'sent_at',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'created_at' => [
             'label' => 'created_at',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'view' => [
             'label' => 'view',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'openFilters' => [
             'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'applyFilters' => [
             'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'resetFilters' => [
             'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
-    ],
+            'description' => '']],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
+        'sort' => 100],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
-    ],
-=======
-        ],
-        'subject' => [
-            'label' => 'subject',
-        ],
-        'status' => [
-            'label' => 'status',
-        ],
-        'sent_at' => [
-            'label' => 'sent_at',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
-];
+    ]];

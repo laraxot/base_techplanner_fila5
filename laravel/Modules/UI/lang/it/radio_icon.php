@@ -6,7 +6,6 @@ return [
     'fields' => [
         'newstate' => [
             'label' => 'newstate',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -23,7 +22,7 @@ return [
         ],
         'label' => 'Radio Icon',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -34,8 +33,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Radio Icon',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

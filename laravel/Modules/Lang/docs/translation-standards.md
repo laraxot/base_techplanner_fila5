@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Standard per le Traduzioni nel Progetto"
+module: "Lang"
+type: rule
+tags: [google, translate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "google translate"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Standard per le Traduzioni nel Progetto
 
 ## Struttura delle Cartelle
@@ -165,7 +179,7 @@ return [
 
 ### Collegamenti
 - [<nome modulo>/docs/appointment-management.md](../../<nome modulo>/docs/appointment-management.md)
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica
@@ -173,11 +187,7 @@ return [
 - Aggiornare la documentazione ogni volta che si modifica una risorsa clinica
 - Non duplicare chiavi tra moduli
 - Seguire sempre la filosofia DRY, KISS, centralizzazione
-<<<<<<< HEAD
 # Standard per le Traduzioni nel Progetto <nome progetto>
-=======
-# Standard per le Traduzioni nel Progetto SaluteOra
->>>>>>> 6ed19256f (.)
 
 ## Struttura delle Cartelle
 
@@ -343,12 +353,8 @@ return [
 - Serenità zen: codice e traduzioni sempre coerenti
 
 ### Collegamenti
-<<<<<<< HEAD
 - [<nome progetto>/docs/appointment-management.md](../../<nome progetto>/docs/appointment-management.md)
-=======
-- [SaluteOra/docs/appointment-management.md](../../SaluteOra/docs/appointment-management.md)
->>>>>>> 6ed19256f (.)
-- [Lang/translation_keys_best_practices.md](./translation_keys_best_practices.md)
+- [Lang/translation-keys-best-practices.md](./translation-keys-best-practices.md)
 
 ### Checklist aggiornata
 - Usare solo chiavi inglesi e struttura gerarchica

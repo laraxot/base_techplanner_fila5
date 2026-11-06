@@ -1,3 +1,24 @@
+---
+title: "docs naming convention fix duplicate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "docs naming convention fix duplicate"
+issues: []
+discussions: []
+status: draft
+---
+title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
 ## Data Aggiornamento
@@ -31,11 +52,7 @@ Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, vio
 ### Modulo User
 - ✅ `phpstan/analisi_phpstan.md` → `phpstan/analisi-phpstan.md`
 
-<<<<<<< HEAD
 ### Modulo <nome progetto>
-=======
-### Modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - ✅ `factories/Factory-Ecosystem-Implementation.md` → `factories/factory-ecosystem-implementation.md`
 - ✅ `factories/UserFactory-improvements-analysis.md` → `factories/userfactory-improvements-analysis.md`
 - ✅ `factories/UserFactory-advanced-improvements-analysis.md` → `factories/userfactory-advanced-improvements-analysis.md`

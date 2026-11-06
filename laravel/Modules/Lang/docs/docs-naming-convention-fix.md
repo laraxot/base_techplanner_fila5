@@ -1,11 +1,22 @@
+---
+issues: []
+discussions: []
+title: "Correzione Convenzione Naming Cartelle Docs - Gennaio 2025"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Correzione Convenzione Naming Cartelle Docs - Gennaio 2025
 
 ## Data Aggiornamento
 2025-01-27
-<<<<<<< HEAD
 [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Identificato
 Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, violando la convenzione di utilizzare solo caratteri minuscoli (eccetto `README.md`).
@@ -85,10 +96,7 @@ Tutti i file e le sottocartelle nelle cartelle `docs` ora rispettano la convenzi
 
 ## Data Aggiornamento
 2025-01-27
-<<<<<<< HEAD
 [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Identificato
 Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, violando la convenzione di utilizzare solo caratteri minuscoli (eccetto `README.md`).
@@ -118,11 +126,7 @@ Le cartelle `docs` contenevano file e sottocartelle con caratteri maiuscoli, vio
 ### Modulo User
 - ✅ `phpstan/analisi_phpstan.md` → `phpstan/analisi-phpstan.md`
 
-<<<<<<< HEAD
 ### Modulo <nome progetto>
-=======
-### Modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - ✅ `factories/Factory-Ecosystem-Implementation.md` → `factories/factory-ecosystem-implementation.md`
 - ✅ `factories/UserFactory-improvements-analysis.md` → `factories/userfactory-improvements-analysis.md`
 - ✅ `factories/UserFactory-advanced-improvements-analysis.md` → `factories/userfactory-advanced-improvements-analysis.md`
@@ -167,8 +171,4 @@ Tutti i file e le sottocartelle nelle cartelle `docs` ora rispettano la convenzi
 
 ## Stato Finale
 ✅ **COMPLETATO** - Tutte le cartelle docs ora rispettano la convenzione di naming
-<<<<<<< HEAD
 ✅ **VERIFICATO** - Nessuna violazione trovata in nessun modulo
-=======
-✅ **VERIFICATO** - Nessuna violazione trovata in nessun modulo
->>>>>>> 6ed19256f (.)

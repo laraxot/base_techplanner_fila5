@@ -1,30 +1,27 @@
+---
+title: "phpstan errors roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Level 10 Errors Roadmap - Tenant Module
 
-<<<<<<< HEAD
-**Data**: 2026-01-14  
 **Modulo**: Tenant  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **AGGIORNATO CON ERRORI ATTUALI**
-=======
-**Data**: 2026-01-12  
-**Modulo**: Tenant  
-**Livello PHPStan**: 10  
-**Status**: 🧘 **IN ANALISI**
->>>>>>> 6ed19256f (.)
 
 ---
-
 ## 📊 Errori Identificati
 
-<<<<<<< HEAD
 ### Totale Errori: 500+ (stimato)
 
 **Nota critica**: La maggior parte degli errori (90%+) provengono dai test in `Modules/Tenant/Tests/*`. Il codice principale ha pochi errori.
-=======
-### Totale Errori: 504
-
-**Nota critica**: nell'ultimo run (`./vendor/bin/phpstan analyse Modules`) quasi tutti gli errori del modulo Tenant provengono da `Modules/Tenant/Tests/*`.
->>>>>>> 6ed19256f (.)
 
 #### File più impattati (top)
 
@@ -129,8 +126,4 @@ return $dataArray;
 
 **Status**: 🧘 **IN ANALISI**
 
-**Ultimo aggiornamento**: 2026-01-12
-<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
-=======
->>>>>>> 6ed19256f (.)

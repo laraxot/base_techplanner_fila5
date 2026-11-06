@@ -1,3 +1,15 @@
+---
+title: "inline date picker usage"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "inline date picker usage"
+issues: []
+discussions: []
+status: draft
+---
+
 # Esempi di Utilizzo di InlineDatePicker
 
 ## Esempio 1: Prenotazione Appuntamenti Medici
@@ -7,17 +19,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Filament\Forms;
 
 use Modules\UI\Filament\Forms\Components\InlineDatePicker;
 use Modules\<nome progetto>\Models\Appointment;
-=======
-namespace Modules\SaluteOra\Filament\Forms;
-
-use Modules\UI\Filament\Forms\Components\InlineDatePicker;
-use Modules\SaluteOra\Models\Appointment;
->>>>>>> 6ed19256f (.)
 use Carbon\Carbon;
 
 class AppointmentBookingForm
@@ -139,8 +144,6 @@ class AdvancedBookingForm
                     return $this->availabilityService->getAvailableDates(
                         serviceId: $serviceId,
                         locationId: $locationId,
-                        startDate: Carbon::today(),
-                        endDate: Carbon::today()->addMonths(3)
                     );
                 })
                 ->calendarConfig([
@@ -296,7 +299,6 @@ class CustomCalendarForm
             InlineDatePicker::make('special_date')
                 ->enabledDates(function () {
                     // Date con stati speciali
-                    return SpecialDate::query()
                         ->where('is_active', true)
                         ->where('date', '>=', now())
                         ->get()
@@ -322,7 +324,6 @@ class CustomCalendarForm
                 ])
                 ->afterStateUpdated(function ($state) {
                     // Carica metadati per la data selezionata
-                    $specialDate = SpecialDate::whereDate('date', $state)->first();
 
                     if ($specialDate) {
                         $this->selectedDateMetadata = $specialDate->metadata;
@@ -335,21 +336,18 @@ class CustomCalendarForm
 
     private function isHoliday(string $date): bool
     {
-        return SpecialDate::whereDate('date', $date)
             ->where('type', 'holiday')
             ->exists();
     }
 
     private function isHighDemand(string $date): bool
     {
-        return SpecialDate::whereDate('date', $date)
             ->where('priority', 'high')
             ->exists();
     }
 
     private function isPremiumOnly(string $date): bool
     {
-        return SpecialDate::whereDate('date', $date)
             ->where('type', 'premium_only')
             ->exists();
     }
@@ -438,10 +436,5 @@ class InlineDatePickerTest extends TestCase
 - Implementare test di regressione per fix di bug
 
 ---
-
 *Ultima modifica: Gennaio 2025*
-<<<<<<< HEAD
 *Versione: 1.0.0*
-=======
-*Versione: 1.0.0*
->>>>>>> 6ed19256f (.)

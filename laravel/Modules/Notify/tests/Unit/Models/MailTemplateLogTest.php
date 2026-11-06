@@ -6,20 +6,19 @@ namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\MailTemplateLog;
 use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Tests\XotBasePest;
+use PHPUnit\Framework\Assert;
 
-class MailTemplateLogTest extends TestCase
-{
-    // DatabaseTransactions is already used in the module TestCase
+use function Pest\Laravel\withoutExceptionHandling;
+use function Safe\json_encode;
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->withoutExceptionHandling();
-    }
+uses(TestCase::class);
+beforeEach(function (): void {
+    withoutExceptionHandling();
+});
 
-    /** @test */
-    public function it_can_create_mail_template_log(): void
-    {
+describe('Mail Template Log', function (): void {
+    test('_can_create_mail_template_log', function (): void {
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
@@ -29,32 +28,25 @@ class MailTemplateLogTest extends TestCase
             'data' => [
                 'to' => 'user@example.com',
                 'subject' => 'Welcome to our platform',
-                'template' => 'welcome_email',
-            ],
+                'template' => 'welcome_email'],
             'metadata' => [
                 'provider' => 'smtp',
                 'queue_id' => 'queue_789',
-                'attempts' => 1,
-            ],
+                'attempts' => 1],
             'sent_at' => now(),
-            'delivered_at' => now()->addMinutes(1),
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'delivered_at' => now()->addMinutes(1)]);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
             'mailable_id' => 456,
             'status' => 'sent',
-            'status_message' => 'Email sent successfully',
-        ]);
+            'status_message' => 'Email sent successfully']);
 
-        $this->assertInstanceOf(MailTemplateLog::class, $log);
-    }
+        Assert::assertInstanceOf(MailTemplateLog::class, $log);
+    });
 
-    /** @test */
-    public function it_has_correct_fillable_fields(): void
-    {
+    test('_has_correct_fillable_fields', function (): void {
         $log = new MailTemplateLog;
 
         $expectedFillable = [
@@ -69,15 +61,12 @@ class MailTemplateLogTest extends TestCase
             'delivered_at',
             'failed_at',
             'opened_at',
-            'clicked_at',
-        ];
+            'clicked_at'];
 
-        $this->assertEquals($expectedFillable, $log->getFillable());
-    }
+        Assert::assertEquals($expectedFillable, $log->getFillable());
+    });
 
-    /** @test */
-    public function it_has_correct_casts(): void
-    {
+    test('_has_correct_casts', function (): void {
         $log = new MailTemplateLog;
 
         $expectedCasts = [
@@ -95,15 +84,12 @@ class MailTemplateLogTest extends TestCase
             'delivered_at' => 'datetime',
             'failed_at' => 'datetime',
             'opened_at' => 'datetime',
-            'clicked_at' => 'datetime',
-        ];
+            'clicked_at' => 'datetime'];
 
-        $this->assertEquals($expectedCasts, $log->casts());
-    }
+        Assert::assertEquals($expectedCasts, $log->getCasts());
+    });
 
-    /** @test */
-    public function it_can_store_json_data(): void
-    {
+    test('_can_store_json_data', function (): void {
         $data = [
             'to' => 'user@example.com',
             'cc' => ['cc1@example.com', 'cc2@example.com'],
@@ -114,33 +100,24 @@ class MailTemplateLogTest extends TestCase
             'variables' => [
                 'name' => 'John Doe',
                 'company' => 'Example Corp',
-                'activation_link' => 'https://example.com/activate',
-            ],
-        ];
+                'activation_link' => 'https://example.com/activate']];
 
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'sent',
-            'data' => $data,
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'data' => $data]);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'data' => json_encode($data),
-        ]);
+            'data' => json_encode($data)]);
+        Assert::assertEquals('user@example.com', TestCase::notifyArrayGet($log->data, 'to'));
+        Assert::assertEquals(['cc1@example.com', 'cc2@example.com'], TestCase::notifyArrayGet($log->data, 'cc'));
+        Assert::assertEquals('John Doe', TestCase::notifyArrayGet($log->data, 'variables', 'name'));
+        Assert::assertEquals('Example Corp', TestCase::notifyArrayGet($log->data, 'variables', 'company'));
+    });
 
-        $this->assertIsArray($log->data);
-        $this->assertEquals('user@example.com', $log->data['to']);
-        $this->assertEquals(['cc1@example.com', 'cc2@example.com'], $log->data['cc']);
-        $this->assertEquals('John Doe', $log->data['variables']['name']);
-        $this->assertEquals('Example Corp', $log->data['variables']['company']);
-    }
-
-    /** @test */
-    public function it_can_store_json_metadata(): void
-    {
+    test('_can_store_json_metadata', function (): void {
         $metadata = [
             'provider' => 'smtp',
             'queue_id' => 'queue_123',
@@ -150,269 +127,214 @@ class MailTemplateLogTest extends TestCase
             'error_details' => [
                 'code' => 'SMTP_ERROR',
                 'message' => 'Connection timeout',
-                'retry_count' => 2,
-            ],
+                'retry_count' => 2],
             'performance' => [
                 'queue_time' => 1500,
                 'processing_time' => 2500,
-                'total_time' => 4000,
-            ],
-        ];
+                'total_time' => 4000]];
 
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'failed',
-            'metadata' => $metadata,
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'metadata' => $metadata]);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'metadata' => json_encode($metadata),
-        ]);
+            'metadata' => json_encode($metadata)]);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet($log->metadata, 'provider'));
+        Assert::assertEquals('queue_123', TestCase::notifyArrayGet($log->metadata, 'queue_id'));
+        Assert::assertEquals(3, TestCase::notifyArrayGet($log->metadata, 'attempts'));
+        Assert::assertEquals('SMTP_ERROR', TestCase::notifyArrayGet($log->metadata, 'error_details', 'code'));
+        Assert::assertEquals(4000, TestCase::notifyArrayGet($log->metadata, 'performance', 'total_time'));
+    });
 
-        $this->assertIsArray($log->metadata);
-        $this->assertEquals('smtp', $log->metadata['provider']);
-        $this->assertEquals('queue_123', $log->metadata['queue_id']);
-        $this->assertEquals(3, $log->metadata['attempts']);
-        $this->assertEquals('SMTP_ERROR', $log->metadata['error_details']['code']);
-        $this->assertEquals(4000, $log->metadata['performance']['total_time']);
-    }
-
-    /** @test */
-    public function it_can_update_status_and_timestamps(): void
-    {
+    test('_can_update_status_and_timestamps', function (): void {
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         $log->update([
             'status' => 'sent',
             'sent_at' => now(),
-            'status_message' => 'Email sent successfully',
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'status_message' => 'Email sent successfully']);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'status' => 'sent',
-            'status_message' => 'Email sent successfully',
-        ]);
+            'status_message' => 'Email sent successfully']);
 
-        $this->assertEquals('sent', $log->fresh()->status);
-        $this->assertNotNull($log->fresh()->sent_at);
-        $this->assertEquals('Email sent successfully', $log->fresh()->status_message);
-    }
+        Assert::assertEquals('sent', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->sent_at);
+        Assert::assertEquals('Email sent successfully', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
+    });
 
-    /** @test */
-    public function it_can_mark_as_delivered(): void
-    {
+    test('_can_mark_as_delivered', function (): void {
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'sent',
-            'sent_at' => now(),
-        ]);
+            'sent_at' => now()]);
 
         $log->update([
             'status' => 'delivered',
-            'delivered_at' => now()->addMinutes(1),
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'delivered_at' => now()->addMinutes(1)]);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'status' => 'delivered',
-        ]);
+            'status' => 'delivered']);
 
-        $this->assertEquals('delivered', $log->fresh()->status);
-        $this->assertNotNull($log->fresh()->delivered_at);
-    }
+        Assert::assertEquals('delivered', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->delivered_at);
+    });
 
-    /** @test */
-    public function it_can_mark_as_failed(): void
-    {
+    test('_can_mark_as_failed', function (): void {
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
-            'status' => 'pending',
-        ]);
+            'status' => 'pending']);
 
         $log->update([
             'status' => 'failed',
             'failed_at' => now(),
-            'status_message' => 'SMTP connection failed',
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'status_message' => 'SMTP connection failed']);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'status' => 'failed',
-            'status_message' => 'SMTP connection failed',
-        ]);
+            'status_message' => 'SMTP connection failed']);
 
-        $this->assertEquals('failed', $log->fresh()->status);
-        $this->assertNotNull($log->fresh()->failed_at);
-        $this->assertEquals('SMTP connection failed', $log->fresh()->status_message);
-    }
+        Assert::assertEquals('failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status);
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->failed_at);
+        Assert::assertEquals('SMTP connection failed', XotBasePest::assertFreshModel($log, MailTemplateLog::class)->status_message);
+    });
 
-    /** @test */
-    public function it_can_mark_as_opened(): void
-    {
+    test('_can_mark_as_opened', function (): void {
+        $log = MailTemplateLog::create([
+            'template_id' => 123,
+            'mailable_type' => 'App\Mail\TestMail',
+            'mailable_id' => 456,
+            'status' => 'delivered',
+            'delivered_at' => now()]);
+
+        $log->update([
+            'opened_at' => now()->addMinutes(5)]);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
+            'id' => $log->id,
+            'opened_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at]);
+
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->opened_at);
+    });
+
+    test('_can_mark_as_clicked', function (): void {
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'delivered',
             'delivered_at' => now(),
-        ]);
+            'opened_at' => now()->addMinutes(5)]);
 
         $log->update([
-            'opened_at' => now()->addMinutes(5),
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'clicked_at' => now()->addMinutes(10)]);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
-            'opened_at' => $log->fresh()->opened_at,
-        ]);
+            'clicked_at' => XotBasePest::assertFreshModel($log, MailTemplateLog::class)->clicked_at]);
 
-        $this->assertNotNull($log->fresh()->opened_at);
-    }
+        Assert::assertNotNull(XotBasePest::assertFreshModel($log, MailTemplateLog::class)->clicked_at);
+    });
 
-    /** @test */
-    public function it_can_mark_as_clicked(): void
-    {
-        $log = MailTemplateLog::create([
-            'template_id' => 123,
-            'mailable_type' => 'App\Mail\TestMail',
-            'mailable_id' => 456,
-            'status' => 'delivered',
-            'delivered_at' => now(),
-            'opened_at' => now()->addMinutes(5),
-        ]);
-
-        $log->update([
-            'clicked_at' => now()->addMinutes(10),
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
-            'id' => $log->id,
-            'clicked_at' => $log->fresh()->clicked_at,
-        ]);
-
-        $this->assertNotNull($log->fresh()->clicked_at);
-    }
-
-    /** @test */
-    public function it_can_find_by_template_id(): void
-    {
+    test('_can_find_by_template_id', function (): void {
         MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\WelcomeMail',
             'mailable_id' => 789,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         MailTemplateLog::create([
             'template_id' => 456,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 101,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         $template123Logs = MailTemplateLog::where('template_id', 123)->get();
         $template456Logs = MailTemplateLog::where('template_id', 456)->get();
 
-        $this->assertCount(2, $template123Logs);
-        $this->assertCount(1, $template456Logs);
-        $this->assertEquals(123, $template123Logs[0]->template_id);
-        $this->assertEquals(123, $template123Logs[1]->template_id);
-        $this->assertEquals(456, $template456Logs[0]->template_id);
-    }
+        Assert::assertCount(2, $template123Logs);
+        Assert::assertCount(1, $template456Logs);
+        Assert::assertEquals(123, XotBasePest::assertFirstModel($template123Logs, MailTemplateLog::class)->template_id);
+        Assert::assertEquals(123, XotBasePest::assertFirstModel($template123Logs->slice(1), MailTemplateLog::class)->template_id);
+        Assert::assertEquals(456, XotBasePest::assertFirstModel($template456Logs, MailTemplateLog::class)->template_id);
+    });
 
-    /** @test */
-    public function it_can_find_by_status(): void
-    {
+    test('_can_find_by_status', function (): void {
         MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         MailTemplateLog::create([
             'template_id' => 124,
             'mailable_type' => 'App\Mail\WelcomeMail',
             'mailable_id' => 789,
-            'status' => 'failed',
-        ]);
+            'status' => 'failed']);
 
         MailTemplateLog::create([
             'template_id' => 125,
             'mailable_type' => 'App\Mail\NewsletterMail',
             'mailable_id' => 101,
-            'status' => 'delivered',
-        ]);
+            'status' => 'delivered']);
 
         $sentLogs = MailTemplateLog::where('status', 'sent')->get();
         $failedLogs = MailTemplateLog::where('status', 'failed')->get();
         $deliveredLogs = MailTemplateLog::where('status', 'delivered')->get();
 
-        $this->assertCount(1, $sentLogs);
-        $this->assertCount(1, $failedLogs);
-        $this->assertCount(1, $deliveredLogs);
-        $this->assertEquals('sent', $sentLogs[0]->status);
-        $this->assertEquals('failed', $failedLogs[0]->status);
-        $this->assertEquals('delivered', $deliveredLogs[0]->status);
-    }
+        Assert::assertCount(1, $sentLogs);
+        Assert::assertCount(1, $failedLogs);
+        Assert::assertCount(1, $deliveredLogs);
+        Assert::assertEquals('sent', XotBasePest::assertFirstModel($sentLogs, MailTemplateLog::class)->status);
+        Assert::assertEquals('failed', XotBasePest::assertFirstModel($failedLogs, MailTemplateLog::class)->status);
+        Assert::assertEquals('delivered', XotBasePest::assertFirstModel($deliveredLogs, MailTemplateLog::class)->status);
+    });
 
-    /** @test */
-    public function it_can_find_by_mailable_type(): void
-    {
+    test('_can_find_by_mailable_type', function (): void {
         MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         MailTemplateLog::create([
             'template_id' => 124,
             'mailable_type' => 'App\Mail\WelcomeMail',
             'mailable_id' => 789,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         MailTemplateLog::create([
             'template_id' => 125,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 101,
-            'status' => 'sent',
-        ]);
+            'status' => 'sent']);
 
         $testMailLogs = MailTemplateLog::where('mailable_type', 'App\Mail\TestMail')->get();
         $welcomeMailLogs = MailTemplateLog::where('mailable_type', 'App\Mail\WelcomeMail')->get();
 
-        $this->assertCount(2, $testMailLogs);
-        $this->assertCount(1, $welcomeMailLogs);
-        $this->assertEquals('App\Mail\TestMail', $testMailLogs[0]->mailable_type);
-        $this->assertEquals('App\Mail\TestMail', $testMailLogs[1]->mailable_type);
-        $this->assertEquals('App\Mail\WelcomeMail', $welcomeMailLogs[0]->mailable_type);
-    }
+        Assert::assertCount(2, $testMailLogs);
+        Assert::assertCount(1, $welcomeMailLogs);
+        Assert::assertEquals('App\Mail\TestMail', XotBasePest::assertFirstModel($testMailLogs, MailTemplateLog::class)->mailable_type);
+        Assert::assertEquals('App\Mail\TestMail', XotBasePest::assertFirstModel($testMailLogs->slice(1), MailTemplateLog::class)->mailable_type);
+        Assert::assertEquals('App\Mail\WelcomeMail', XotBasePest::assertFirstModel($welcomeMailLogs, MailTemplateLog::class)->mailable_type);
+    });
 
-    /** @test */
-    public function it_can_find_by_date_range(): void
-    {
+    test('_can_find_by_date_range', function (): void {
         $yesterday = now()->subDay();
         $today = now();
         $tomorrow = now()->addDay();
@@ -422,36 +344,31 @@ class MailTemplateLogTest extends TestCase
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'sent',
-            'sent_at' => $yesterday,
-        ]);
+            'sent_at' => $yesterday]);
 
         MailTemplateLog::create([
             'template_id' => 124,
             'mailable_type' => 'App\Mail\WelcomeMail',
             'mailable_id' => 789,
             'status' => 'sent',
-            'sent_at' => $today,
-        ]);
+            'sent_at' => $today]);
 
         MailTemplateLog::create([
             'template_id' => 125,
             'mailable_type' => 'App\Mail\NewsletterMail',
             'mailable_id' => 101,
             'status' => 'sent',
-            'sent_at' => $tomorrow,
-        ]);
+            'sent_at' => $tomorrow]);
 
         $todayLogs = MailTemplateLog::whereDate('sent_at', $today->toDateString())->get();
         $recentLogs = MailTemplateLog::where('sent_at', '>=', $yesterday)->get();
 
-        $this->assertCount(1, $todayLogs);
-        $this->assertCount(2, $recentLogs); // yesterday and today
-        $this->assertEquals('App\Mail\WelcomeMail', $todayLogs[0]->mailable_type);
-    }
+        Assert::assertCount(1, $todayLogs);
+        Assert::assertCount(2, $recentLogs); // yesterday and today
+        Assert::assertEquals('App\Mail\WelcomeMail', XotBasePest::assertFirstModel($todayLogs, MailTemplateLog::class)->mailable_type);
+    });
 
-    /** @test */
-    public function it_can_find_by_data_pattern(): void
-    {
+    test('_can_find_by_data_pattern', function (): void {
         MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
@@ -460,9 +377,7 @@ class MailTemplateLogTest extends TestCase
             'data' => [
                 'to' => 'user@example.com',
                 'subject' => 'Welcome to our platform',
-                'template' => 'welcome_template',
-            ],
-        ]);
+                'template' => 'welcome_template']]);
 
         MailTemplateLog::create([
             'template_id' => 124,
@@ -472,22 +387,18 @@ class MailTemplateLogTest extends TestCase
             'data' => [
                 'to' => 'admin@example.com',
                 'subject' => 'System notification',
-                'template' => 'system_template',
-            ],
-        ]);
+                'template' => 'system_template']]);
 
         $welcomeSubjectLogs = MailTemplateLog::whereJsonPath('data.subject', 'like', '%Welcome%')->get();
         $welcomeTemplateLogs = MailTemplateLog::whereJsonPath('data.template', 'like', '%welcome%')->get();
 
-        $this->assertCount(1, $welcomeSubjectLogs);
-        $this->assertCount(1, $welcomeTemplateLogs);
-        $this->assertEquals('Welcome to our platform', $welcomeSubjectLogs[0]->data['subject']);
-        $this->assertEquals('welcome_template', $welcomeTemplateLogs[0]->data['template']);
-    }
+        Assert::assertCount(1, $welcomeSubjectLogs);
+        Assert::assertCount(1, $welcomeTemplateLogs);
+        Assert::assertEquals('Welcome to our platform', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($welcomeSubjectLogs, MailTemplateLog::class)->data, 'subject'));
+        Assert::assertEquals('welcome_template', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($welcomeTemplateLogs, MailTemplateLog::class)->data, 'template'));
+    });
 
-    /** @test */
-    public function it_can_find_by_metadata_pattern(): void
-    {
+    test('_can_find_by_metadata_pattern', function (): void {
         MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
@@ -496,9 +407,7 @@ class MailTemplateLogTest extends TestCase
             'metadata' => [
                 'provider' => 'smtp',
                 'queue_id' => 'queue_123',
-                'attempts' => 1,
-            ],
-        ]);
+                'attempts' => 1]]);
 
         MailTemplateLog::create([
             'template_id' => 124,
@@ -508,22 +417,18 @@ class MailTemplateLogTest extends TestCase
             'metadata' => [
                 'provider' => 'ses',
                 'queue_id' => 'queue_456',
-                'attempts' => 1,
-            ],
-        ]);
+                'attempts' => 1]]);
 
         $smtpLogs = MailTemplateLog::whereJsonPath('metadata.provider', 'smtp')->get();
         $sesLogs = MailTemplateLog::whereJsonPath('metadata.provider', 'ses')->get();
 
-        $this->assertCount(1, $smtpLogs);
-        $this->assertCount(1, $sesLogs);
-        $this->assertEquals('smtp', $smtpLogs[0]->metadata['provider']);
-        $this->assertEquals('ses', $sesLogs[0]->metadata['provider']);
-    }
+        Assert::assertCount(1, $smtpLogs);
+        Assert::assertCount(1, $sesLogs);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpLogs, MailTemplateLog::class)->metadata, 'provider'));
+        Assert::assertEquals('ses', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($sesLogs, MailTemplateLog::class)->metadata, 'provider'));
+    });
 
-    /** @test */
-    public function it_can_find_by_multiple_criteria(): void
-    {
+    test('_can_find_by_multiple_criteria', function (): void {
         MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
@@ -531,13 +436,10 @@ class MailTemplateLogTest extends TestCase
             'status' => 'sent',
             'data' => [
                 'to' => 'user@example.com',
-                'subject' => 'Welcome email',
-            ],
+                'subject' => 'Welcome email'],
             'metadata' => [
                 'provider' => 'smtp',
-                'attempts' => 1,
-            ],
-        ]);
+                'attempts' => 1]]);
 
         MailTemplateLog::create([
             'template_id' => 124,
@@ -546,28 +448,23 @@ class MailTemplateLogTest extends TestCase
             'status' => 'failed',
             'data' => [
                 'to' => 'admin@example.com',
-                'subject' => 'System notification',
-            ],
+                'subject' => 'System notification'],
             'metadata' => [
                 'provider' => 'smtp',
-                'attempts' => 3,
-            ],
-        ]);
+                'attempts' => 3]]);
 
         $smtpWelcomeLogs = MailTemplateLog::where('status', 'sent')
             ->whereJsonPath('metadata.provider', 'smtp')
             ->whereJsonPath('data.subject', 'like', '%Welcome%')
             ->get();
 
-        $this->assertCount(1, $smtpWelcomeLogs);
-        $this->assertEquals('sent', $smtpWelcomeLogs[0]->status);
-        $this->assertEquals('smtp', $smtpWelcomeLogs[0]->metadata['provider']);
-        $this->assertEquals('Welcome email', $smtpWelcomeLogs[0]->data['subject']);
-    }
+        Assert::assertCount(1, $smtpWelcomeLogs);
+        Assert::assertEquals('sent', XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->status);
+        Assert::assertEquals('smtp', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->metadata, 'provider'));
+        Assert::assertEquals('Welcome email', TestCase::notifyArrayGet(XotBasePest::assertFirstModel($smtpWelcomeLogs, MailTemplateLog::class)->data, 'subject'));
+    });
 
-    /** @test */
-    public function it_can_handle_null_values(): void
-    {
+    test('_can_handle_null_values', function (): void {
         $log = MailTemplateLog::create([
             'template_id' => null,
             'mailable_type' => null,
@@ -580,44 +477,35 @@ class MailTemplateLogTest extends TestCase
             'delivered_at' => null,
             'failed_at' => null,
             'opened_at' => null,
-            'clicked_at' => null,
-        ]);
+            'clicked_at' => null]);
 
-        $this->assertNull($log->template_id);
-        $this->assertNull($log->mailable_type);
-        $this->assertNull($log->mailable_id);
-        $this->assertNull($log->status);
-        $this->assertNull($log->status_message);
-        $this->assertNull($log->data);
-        $this->assertNull($log->metadata);
-        $this->assertNull($log->sent_at);
-        $this->assertNull($log->delivered_at);
-        $this->assertNull($log->failed_at);
-        $this->assertNull($log->opened_at);
-        $this->assertNull($log->clicked_at);
-    }
+        Assert::assertNull($log->template_id);
+        Assert::assertNull($log->mailable_type);
+        Assert::assertNull($log->mailable_id);
+        Assert::assertNull($log->status);
+        Assert::assertNull($log->status_message);
+        Assert::assertNull($log->data);
+        Assert::assertNull($log->metadata);
+        Assert::assertNull($log->sent_at);
+        Assert::assertNull($log->delivered_at);
+        Assert::assertNull($log->failed_at);
+        Assert::assertNull($log->opened_at);
+        Assert::assertNull($log->clicked_at);
+    });
 
-    /** @test */
-    public function it_can_handle_empty_arrays(): void
-    {
+    test('_can_handle_empty_arrays', function (): void {
         $log = MailTemplateLog::create([
             'template_id' => 123,
             'mailable_type' => 'App\Mail\TestMail',
             'mailable_id' => 456,
             'status' => 'sent',
             'data' => [],
-            'metadata' => [],
-        ]);
-
-        $this->assertDatabaseHas('mail_template_logs', [
+            'metadata' => []]);
+        XotBasePest::assertTableHas('notify', 'mail_template_logs', [
             'id' => $log->id,
             'data' => json_encode([]),
-            'metadata' => json_encode([]),
-        ]);
-
-        $this->assertIsArray($log->data);
-        $this->assertIsArray($log->metadata);
-        $this->assertEmpty($log->data);
-        $this->assertEmpty($log->metadata);
-    }
-}
+            'metadata' => json_encode([])]);
+        Assert::assertEmpty($log->data);
+        Assert::assertEmpty($log->metadata);
+    });
+});

@@ -1,5 +1,17 @@
-<<<<<<< HEAD
-=======
+---
+issues: []
+discussions: []
+title: "Ffmpeg"
+module: "Media"
+type: concept
+tags: [ffmpeg]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ffmpeg"
+related:
+  - "./webm.md"
+status: draft
+---
 WINDOWS
 
 https://www.gyan.dev/ffmpeg/builds/
@@ -8,22 +20,11 @@ choco install ffmpeg
 choco install ffmpeg-full
 winget install ffmpeg
 
->>>>>>> 6ed19256f (.)
+
 $ which ffmpeg
 $ which ffprobe
+
 
 add to .env
 FFMPEG_PATH=c:/ProgramData/chocolatey/bin/ffmpeg.exe
 FFPROBE_PATH=c:/ProgramData/chocolatey/bin/ffprobe.exe
-
--------------------------------------------------------------
-<<<<<<< HEAD
----
-module: theme
-topic: ffmpeg
-canonical: ../../../Themes/docs/shared-components/ffmpeg.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/ffmpeg.txt
-=======
->>>>>>> 6ed19256f (.)

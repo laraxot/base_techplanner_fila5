@@ -1,6 +1,17 @@
+---
+title: "addresssection philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "addresssection philosophy"
+issues: []
+discussions: []
+status: draft
+---
+
 # AddressSection - Filosofia del Componente Riutilizzabile
 
-**Data**: 2025-12-12
 **Modulo**: Geo
 **Status**: 📚 **DOCUMENTAZIONE**
 
@@ -169,8 +180,4 @@ class ClientAddressSection extends AddressSection
 
 ## Conclusione
 
-<<<<<<< HEAD
 AddressSection embodies the philosophy of **intelligent delegation**: rather than duplicating code, it adapts existing functionality for specific use cases while maintaining a single source of truth. This creates a maintainable, consistent, and evolving address system that scales with the application.
-=======
-AddressSection embodies the philosophy of **intelligent delegation**: rather than duplicating code, it adapts existing functionality for specific use cases while maintaining a single source of truth. This creates a maintainable, consistent, and evolving address system that scales with the application.
->>>>>>> 6ed19256f (.)

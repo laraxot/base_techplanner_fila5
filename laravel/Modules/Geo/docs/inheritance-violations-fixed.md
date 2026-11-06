@@ -1,3 +1,15 @@
+---
+title: "inheritance violations fixed"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "inheritance violations fixed"
+issues: []
+discussions: []
+status: draft
+---
+
 # Violazioni Ereditarietà Corrette - Modulo Geo
 
 ## 🚨 ERRORE GRAVE IDENTIFICATO E CORRETTO
@@ -11,15 +23,9 @@
 // Modules/Geo/app/Models/BaseModel.php
 abstract class BaseModel extends Model
 {
-    use \Modules\Xot\Models\Traits\HasXotFactory;  // ← GIÀ PRESENTE QUI
-    use Updater;
-
-<<<<<<< HEAD
     use HasFactory;  // ← GIÀ PRESENTE QUI
     use Updater;
     
-=======
->>>>>>> 6ed19256f (.)
     // Metodo newFactory() ereditato automaticamente
 }
 ```
@@ -27,11 +33,7 @@ abstract class BaseModel extends Model
 ### Modelli con Violazioni
 1. **Province.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 2. **PlaceType.php** - ❌ `use HasFactory` + `newFactory()` → ✅ CORRETTO
-3. **State.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
-<<<<<<< HEAD
 3. **State.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO  
-=======
->>>>>>> 6ed19256f (.)
 4. **Place.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 5. **Comune.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 6. **County.php** - ✅ Era già corretto
@@ -43,13 +45,8 @@ abstract class BaseModel extends Model
 // ❌ PRIMA - Con duplicazioni
 class PlaceType extends BaseModel
 {
-    use \Modules\Xot\Models\Traits\HasXotFactory;  // DUPLICAZIONE!
-
-<<<<<<< HEAD
     use HasFactory;  // DUPLICAZIONE!
     
-=======
->>>>>>> 6ed19256f (.)
     protected static function newFactory(): \Modules\Geo\Database\Factories\PlaceTypeFactory
     {
         return \Modules\Geo\Database\Factories\PlaceTypeFactory::new();
@@ -61,12 +58,7 @@ class PlaceType extends BaseModel
 {
     // NIENTE trait duplicati!
     // NIENTE metodi newFactory()!
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     protected $fillable = [
         'name',
         'description',
@@ -101,11 +93,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 - **Catena ereditarietà** pulita e prevedibile
 - **Manutenzione** centralizzata in BaseModel
 
-### Performance
-<<<<<<< HEAD
 ### Performance  
-=======
->>>>>>> 6ed19256f (.)
 - **Nessun overhead** trait duplicati
 - **Memory usage** ottimizzato
 - **Class loading** più veloce
@@ -138,11 +126,7 @@ grep -r "use HasFactory" Modules/*/app/Models/ | grep -v BaseModel
 ### Altri Moduli da Verificare
 Questo pattern di violazione potrebbe esistere in altri moduli:
 - **User**: BaseUser vs User, Doctor, Patient
-- **<main module>**: BaseModel vs modelli specifici
-<<<<<<< HEAD
 - **<main module>**: BaseModel vs modelli specifici  
-=======
->>>>>>> 6ed19256f (.)
 - **Notify**: BaseModel vs modelli notifica
 - **Cms**: BaseModel vs modelli content
 
@@ -185,13 +169,8 @@ done
 4. **Code review**: Controllo ereditarietà
 
 ---
-
 ## ✅ CORREZIONI COMPLETATE
 
 **Tutti i modelli del modulo Geo** sono ora corretti e rispettano la catena di ereditarietà. Il principio DRY è ripristinato e le regole sono aggiornate per prevenire errori futuri.
 
-<<<<<<< HEAD
 *Correzioni completate: gennaio 2025*
-=======
-*Correzioni completate: gennaio 2025*
->>>>>>> 6ed19256f (.)

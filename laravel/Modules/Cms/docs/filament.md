@@ -1,12 +1,19 @@
+---
+title: "filament"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament"
+issues: []
+discussions: []
+status: draft
+---
+
 # Filament nel Modulo CMS
 
-<<<<<<< HEAD
 **Versione**: il progetto usa Filament 5.x. Compatibilità e riferimenti: [filament-5x-compatibility.md](filament-5x-compatibility.md).
 
-**Versione**: il progetto usa Filament 5.x. Compatibilità e riferimenti: [filament-5x-compatibility.md](filament-5x-compatibility.md).
-
-=======
->>>>>>> 6ed19256f (.)
 ## Risorse (Resources)
 
 Tutte le risorse Filament nel modulo CMS devono seguire queste convenzioni:
@@ -107,26 +114,11 @@ Le pagine custom devono essere collocate in `app/Filament/Pages`:
    - Devono avere un titolo e un slug descrittivi
 ## Collegamenti tra versioni di filament.md
 * [filament.md](docs/tecnico/filament/filament.md)
-<<<<<<< HEAD
 * [filament.md](laravel/modules/chart/docs/filament.md)
-* [filament.md](laravel/modules/gdpr/docs/filament.md)
+* [filament.md](../../Gdpr/docs/filament.md)
 * [filament.md](laravel/modules/xot/docs/technical/filament.md)
 * [filament.md](laravel/modules/xot/docs/roadmap/integration/filament.md)
-* [filament.md](laravel/modules/lang/docs/filament.md)
-* [filament.md](laravel/modules/job/docs/filament.md)
-* [filament.md](laravel/modules/activity/docs/filament.md)
+* [filament.md](../../Lang/docs/filament.md)
+* [filament.md](../../Job/docs/filament.md)
+* [filament.md](../../Activity/docs/filament.md)
 * [filament.md](laravel/modules/cms/docs/filament.md)
-=======
->>>>>>> 6ed19256f (.)
-* [filament.md](laravel/Modules/Chart/docs/filament.md)
-* [filament.md](laravel/Modules/Gdpr/docs/filament.md)
-* [filament.md](laravel/Modules/Xot/docs/technical/filament.md)
-* [filament.md](laravel/Modules/Xot/docs/roadmap/integration/filament.md)
-* [filament.md](laravel/Modules/Lang/docs/filament.md)
-* [filament.md](laravel/Modules/Job/docs/filament.md)
-* [filament.md](laravel/Modules/Activity/docs/filament.md)
-<<<<<<< HEAD
-* [filament.md](laravel/Modules/Cms/docs/filament.md)
-=======
-* [filament.md](laravel/Modules/Cms/docs/filament.md)
->>>>>>> 6ed19256f (.)

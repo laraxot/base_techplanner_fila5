@@ -1,8 +1,18 @@
-<<<<<<< HEAD
+---
+issues: []
+discussions: []
+title: "Audit Traduzioni con '.navigation' - <nome progetto>"
+module: "Lang"
+type: concept
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Audit Traduzioni con ".navigation" - <nome progetto>
-=======
-# Audit Traduzioni con ".navigation" - SaluteOra
->>>>>>> 6ed19256f (.)
 
 ## Panoramica
 Questo documento elenca tutte le occorrenze di chiavi di traduzione che contengono ".navigation" nei file di lingua dei moduli. Queste chiavi violano le regole di traduzione e devono essere sistematizzate secondo i principi DRY + KISS.
@@ -118,28 +128,31 @@ Questo file contiene molteplici occorrenze problematiche:
 - **File corrotto rimosso**: `/lang/it/.php` eliminato completamente
 - **Struttura corretta**: Confermata in `geo.php` con navigazione appropriata
 - **Documentazione**: [Correzioni Geo](../Modules/Geo/docs/navigation-translations-fixes.md)
-<<<<<<< HEAD
 - **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
-=======
->>>>>>> 6ed19256f (.)
+- **Documentazione**: [Correzioni Geo](../modules/geo/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni Geo](../../Geo/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni Geo](../../Geo/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni Geo](../../Geo/docs/navigation-translations-fixes.md)
 
 ### ✅ Modulo User - RISOLTO
 - **device.php**: Traduzioni corrette (Dispositivi → Sicurezza)
 - **permission.php**: Traduzioni corrette (Permessi → Sicurezza)
 - **Documentazione**: [Correzioni User](../Modules/User/docs/navigation-translations-fixes.md)
-<<<<<<< HEAD
 - **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
-=======
->>>>>>> 6ed19256f (.)
+- **Documentazione**: [Correzioni User](../modules/user/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni User](../../User/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni User](../../User/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Correzioni User](../../User/docs/navigation-translations-fixes.md)
 
 ### ✅ Modulo Lang - CONFORME
 - **edit_translation_file.php**: Verificato già conforme agli standard
 - **Nessuna correzione necessaria**: File già strutturato correttamente
 - **Documentazione**: [Verifica Lang](../Modules/Lang/docs/navigation-translations-fixes.md)
-<<<<<<< HEAD
 - **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
-=======
->>>>>>> 6ed19256f (.)
+- **Documentazione**: [Verifica Lang](../modules/lang/docs/navigation-translations-fixes.md)
+- **Documentazione**: [Verifica Lang](navigation-translations-fixes.md)
+- **Documentazione**: [Verifica Lang](navigation-translations-fixes.md)
+- **Documentazione**: [Verifica Lang](navigation-translations-fixes.md)
 
 ## Note
 - Ogni file deve essere studiato nel contesto del modulo
@@ -148,7 +161,6 @@ Questo file contiene molteplici occorrenze problematiche:
 - Mantenere la struttura espansa (label, placeholder, helper_text, description)
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Regole Traduzioni](../modules/xot/docs/translation-rules.md)
 - [Standard Qualità Traduzioni](../modules/<nome progetto>/docs/translation-quality-standards.md)
 
@@ -159,10 +171,14 @@ Questo file contiene molteplici occorrenze problematiche:
 *Audit creato il: 2025-08-07*
 *Ultimo aggiornamento: 2025-08-07*
 *Ultimo aggiornamento: [DATE]*
-=======
 - [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
-- [Standard Qualità Traduzioni](../Modules/SaluteOra/docs/translation-quality-standards.md)
+- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
+
+*Audit creato il: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
+- [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
 
 *Audit creato il: 2025-08-07*
 *Ultimo aggiornamento: 2025-08-07*
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: [DATE]*

@@ -1,16 +1,23 @@
+---
+title: "prompt rules link"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "prompt rules link"
+issues: []
+discussions: []
+status: draft
+---
+
 # Regole per i Prompt
 
-Per le regole sui prompt, fare riferimento a [Regole Prompt nel modulo Xot](../../Xot/docs/PROMPT_RULES.md)
-<<<<<<< HEAD
 Per le regole sui prompt, fare riferimento a [Regole Prompt nel modulo Xot](../../xot/docs/prompt_rules.md)
-=======
->>>>>>> 6ed19256f (.)
 ### Versione HEAD
 
 ### Versione Incoming
 
 ## Collegamenti tra versioni di PROMPT_RULES_LINK.md
-<<<<<<< HEAD
 * [PROMPT_RULES_LINK.md](../../../ui/docs/prompt_rules_link.md)
 * [PROMPT_RULES_LINK.md](../../../lang/docs/prompt_rules_link.md)
 * [PROMPT_RULES_LINK.md](../../../cms/docs/prompt_rules_link.md)
@@ -18,30 +25,16 @@ Per le regole sui prompt, fare riferimento a [Regole Prompt nel modulo Xot](../.
 ## Collegamenti tra versioni di prompt_rules_link.md
 * [prompt_rules_link.md](../../lang/docs/prompt_rules_link.md)
 * [prompt_rules_link.md](../../cms/docs/prompt_rules_link.md)
-=======
->>>>>>> 6ed19256f (.)
-* [PROMPT_RULES_LINK.md](../../../UI/docs/PROMPT_RULES_LINK.md)
-* [PROMPT_RULES_LINK.md](../../../Lang/docs/PROMPT_RULES_LINK.md)
-* [PROMPT_RULES_LINK.md](../../../Cms/docs/PROMPT_RULES_LINK.md)
-
-## Collegamenti tra versioni di prompt_rules_link.md
-* [prompt_rules_link.md](../../Lang/docs/prompt_rules_link.md)
-* [prompt_rules_link.md](../../Cms/docs/prompt_rules_link.md)
 
 ---
 # Regole per i Prompt
 
-Per le regole sui prompt, fare riferimento a [Regole Prompt nel modulo Xot](../../Xot/docs/PROMPT_RULES.md)
-<<<<<<< HEAD
 Per le regole sui prompt, fare riferimento a [Regole Prompt nel modulo Xot](../../xot/docs/prompt_rules.md)
-=======
->>>>>>> 6ed19256f (.)
 ### Versione HEAD
 
 ### Versione Incoming
 
 ## Collegamenti tra versioni di PROMPT_RULES_LINK.md
-<<<<<<< HEAD
 * [PROMPT_RULES_LINK.md](../../../ui/docs/prompt_rules_link.md)
 * [PROMPT_RULES_LINK.md](../../../lang/docs/prompt_rules_link.md)
 * [PROMPT_RULES_LINK.md](../../../cms/docs/prompt_rules_link.md)
@@ -49,18 +42,5 @@ Per le regole sui prompt, fare riferimento a [Regole Prompt nel modulo Xot](../.
 ## Collegamenti tra versioni di prompt_rules_link.md
 * [prompt_rules_link.md](../../lang/docs/prompt_rules_link.md)
 * [prompt_rules_link.md](../../cms/docs/prompt_rules_link.md)
-=======
->>>>>>> 6ed19256f (.)
-* [PROMPT_RULES_LINK.md](../../../UI/docs/PROMPT_RULES_LINK.md)
-* [PROMPT_RULES_LINK.md](../../../Lang/docs/PROMPT_RULES_LINK.md)
-* [PROMPT_RULES_LINK.md](../../../Cms/docs/PROMPT_RULES_LINK.md)
 
-## Collegamenti tra versioni di prompt_rules_link.md
-* [prompt_rules_link.md](../../Lang/docs/prompt_rules_link.md)
-* [prompt_rules_link.md](../../Cms/docs/prompt_rules_link.md)
-
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

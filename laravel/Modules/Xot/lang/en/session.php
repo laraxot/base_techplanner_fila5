@@ -10,7 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione delle sessioni utente e sicurezza',
         ],
-        'label' => 'session',
+        'label' => 'Session',
         'sort' => '18',
         'icon' => 'xot-session',
     ],
@@ -25,13 +25,10 @@ return [
                 'placeholder' => 'Seleziona l\'utente',
                 'help' => 'Utente proprietario della sessione',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'connection' => [
             'ip_address' => [
@@ -46,13 +43,10 @@ return [
                 'label' => 'Posizione',
                 'help' => 'Localizzazione geografica approssimativa',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'data' => [
             'payload' => [
@@ -63,13 +57,10 @@ return [
                 'label' => 'Dimensione',
                 'help' => 'Dimensione dei dati in memoria',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'timing' => [
             'created_at' => [
@@ -84,13 +75,10 @@ return [
                 'label' => 'Scadenza',
                 'help' => 'Momento di scadenza previsto',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -153,21 +141,12 @@ return [
             'label' => 'Durata Sessione',
             'help' => 'Tempo massimo di inattività',
             'options' => [
-<<<<<<< HEAD
                 120 => '2 ore',
                 240 => '4 ore',
                 480 => '8 ore',
                 720 => '12 ore',
                 1440 => '1 giorno',
                 10080 => '1 settimana',
-=======
-                '120' => '2 ore',
-                '240' => '4 ore',
-                '480' => '8 ore',
-                '720' => '12 ore',
-                '1440' => '1 giorno',
-                '10080' => '1 settimana',
->>>>>>> 6ed19256f (.)
             ],
         ],
         'security' => [
@@ -206,9 +185,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

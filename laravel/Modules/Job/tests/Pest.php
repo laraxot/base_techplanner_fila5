@@ -2,71 +2,21 @@
 
 declare(strict_types=1);
 
-use Modules\Job\Models\Job;
-use Modules\Job\Models\JobBatch;
-use Modules\Job\Tests\TestCase;
-
 /*
- * |--------------------------------------------------------------------------
- * | Test Case
- * |--------------------------------------------------------------------------
- * |
- * | The closure you provide to your test functions is always bound to a specific PHPUnit test
- * | case class. By default, that class is "PHPUnit\Framework\TestCase". Of course, you may
- * | need to change it using the "pest()" function to bind a different classes or traits.
- * |
+ * Bootstrap Pest — modulo Job.
+ *
+ * Questo file NON viene caricato. `Pest\Bootstrappers\BootFiles` legge `Pest.php`,
+ * `Helpers.php` ed `Expectations.php` da un solo percorso per run — quello della root —
+ * quindi ogni funzione dichiarata qui è codice morto e i test che la chiamano falliscono
+ * con `Call to undefined function`.
+ *
+ * Regole, non negoziabili:
+ * - zero funzioni libere qui dentro (`grep -c '^function ' ` deve dare 0);
+ * - helper condivisi: metodi statici su `Modules\Xot\Tests\XotBasePest` (autoload PSR-4,
+ *   niente `require_once`);
+ * - helper di dominio: metodi statici su `Modules\Job\Tests\TestCase`;
+ * - ogni file di test dichiara `uses(\Modules\Job\Tests\TestCase::class)` in testa —
+ *   un `uses()->in(...)` scritto qui non verrebbe applicato;
+ * - vietati `pest()->extend()` e `pest()->uses()` (PHPStan `method.internalClass`);
+ * - vietata la cartella `tests/Support/` per helper Pest (ADR-002).
  */
-
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
-
-/*
- * |--------------------------------------------------------------------------
- * | Expectations
- * |--------------------------------------------------------------------------
- * |
- * | When you're writing tests, you often need to check that values meet certain conditions. The
- * | "expect()" function gives you access to a set of "expectations" methods that you can use
- * | to assert different things. Of course, you may extend the Expectation API at any time.
- * |
- */
-
-<<<<<<< HEAD
-expect()->extend('toBeJob', fn () => $this->toBeInstanceOf(Job::class));
-
-expect()->extend('toBeJobBatch', fn () => $this->toBeInstanceOf(JobBatch::class));
-=======
-expect()->extend('toBeJob', fn() => $this->toBeInstanceOf(Job::class));
-
-expect()->extend('toBeJobBatch', fn() => $this->toBeInstanceOf(JobBatch::class));
->>>>>>> 6ed19256f (.)
-
-/*
- * |--------------------------------------------------------------------------
- * | Functions
- * |--------------------------------------------------------------------------
- * |
- * | While Pest is very powerful out-of-the-box, you may have some testing code specific to your
- * | project that you don't want to repeat in every file. Here you can also expose helpers as
- * | global functions to help you to reduce the number of lines of code in your test files.
- * |
- */
-
-function createJob(array $attributes = []): Job
-{
-    return Job::factory()->create($attributes);
-}
-
-function makeJob(array $attributes = []): Job
-{
-    return Job::factory()->make($attributes);
-}
-
-function createJobBatch(array $attributes = []): JobBatch
-{
-    return JobBatch::factory()->create($attributes);
-}
-
-function makeJobBatch(array $attributes = []): JobBatch
-{
-    return JobBatch::factory()->make($attributes);
-}

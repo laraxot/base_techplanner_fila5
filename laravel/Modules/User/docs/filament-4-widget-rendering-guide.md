@@ -1,12 +1,32 @@
+---
+title: "Guida Rendering Widget Filament 4 - Modulo User"
+type: guide
+tags: [filament, widget, rendering, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-4-widget-rendering-guide guida rendering widget filament 4 - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Guida Rendering Widget Filament 4 - Modulo User
 
-<<<<<<< HEAD
 **Data**: 14 Ottobre 2025  
 **Modulo**: User  
-=======
-**Data**: 14 Ottobre 2025
-**Modulo**: User
->>>>>>> 6ed19256f (.)
 **Framework**: Filament 4.x + Laraxot
 
 ## 🎯 Obiettivo
@@ -49,11 +69,7 @@ class LoginWidget extends XotBaseWidget
 {
     // ✅ CORRETTO: View path con pub_theme
     protected string $view = 'pub_theme::filament.widgets.auth.login';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public ?array $data = [];
 
     // ✅ CORRETTO: Definire schema form
@@ -280,21 +296,13 @@ public function login(): void
 {
     try {
         $data = $this->form->getState();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         if (!Auth::attempt($data)) {
             // ✅ CORRETTO: Errore specifico sul campo
             $this->addError('email', __('auth.failed'));
             return;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         redirect()->intended('/');
     } catch (\Exception $e) {
         // ✅ CORRETTO: Errore generico
@@ -371,13 +379,8 @@ class LoginWidget extends XotBaseWidget
             <form wire:submit="login" class="space-y-6">
                 {{ $this->form }}
 
-<<<<<<< HEAD
                 <button 
                     type="submit" 
-=======
-                <button
-                    type="submit"
->>>>>>> 6ed19256f (.)
                     wire:loading.attr="disabled"
                     class="w-full py-3 bg-primary-600 text-white rounded-md hover:bg-primary-700"
                 >
@@ -401,7 +404,7 @@ class LoginWidget extends XotBaseWidget
 - [Filament 4 Widgets](https://filamentphp.com/docs/4.x/widgets)
 - [Filament 4 Forms](https://filamentphp.com/docs/4.x/forms)
 - [Livewire 3](https://livewire.laravel.com/docs/3.x)
-- [Laraxot Widget Rules](./auth_widget_rules.md)
+- [Laraxot Widget Rules](./auth-widget-rules.md)
 
 ## 🎯 Conclusione
 

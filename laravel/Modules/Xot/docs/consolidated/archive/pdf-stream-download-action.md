@@ -1,3 +1,11 @@
+---
+title: "StreamDownloadPdfAction Documentation"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "streamdownloadpdfaction documentation xot"
+---
 # StreamDownloadPdfAction Documentation
 
 ## Overview
@@ -142,11 +150,7 @@ Generated PDF data can be attached to emails through the notification system.
 ## Related Files
 - `ContentPdfAction.php` - Content-specific PDF generation action
 - `Modules\Notify\Emails\SpatieEmail.php` - Email attachment handling
-<<<<<<< HEAD
 - `Modules\<nome progetto>\States\Appointment\Transitions\ReportPendingToReportCompleted.php` - Usage example
-=======
-- `Modules\SaluteOra\States\Appointment\Transitions\ReportPendingToReportCompleted.php` - Usage example
->>>>>>> 6ed19256f (.)
 
 ## Notes
 - The action uses QueueableAction trait, making it suitable for background processing

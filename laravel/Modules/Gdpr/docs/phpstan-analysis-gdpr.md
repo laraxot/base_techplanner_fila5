@@ -1,14 +1,22 @@
+---
+title: "phpstan analysis gdpr"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis gdpr"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Analysis - Gdpr Module
 
 ## 📊 Status
 
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
-**Last Analysis**: 2025-11-05
-<<<<<<< HEAD
 **Last Analysis**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## 🎯 Module Overview
 
@@ -20,19 +28,11 @@
 
 ### Historical Status (from documentation)
 - **Initial Errors**: 57
-<<<<<<< HEAD
 - **Progress ([DATE])**: 68% reduction (39 errors fixed)
 - **Remaining Errors ([DATE])**: 18
 - **Completion Percentage ([DATE])**: 68%
 
 ### Current Status ([DATE])
-=======
->>>>>>> 6ed19256f (.)
-- **Progress (2025-10-13)**: 68% reduction (39 errors fixed)
-- **Remaining Errors (2025-10-13)**: 18
-- **Completion Percentage (2025-10-13)**: 68%
-
-### Current Status (2025-11-05)
 - **Current Errors**: 0
 - **Completion Percentage**: 100%
 - **Status**: ✅ Fully PHPStan Level 10 Compliant
@@ -138,11 +138,7 @@ function createConsent(array $attributes = []): Consent
 ## 📝 Documentation Status
 
 ### Current Documentation
-- ✅ `phpstan-fixes-2025-10-13.md` - Historical progress documentation
-<<<<<<< HEAD
 - ✅ `phpstan-fixes-[DATE].md` - Historical progress documentation
-=======
->>>>>>> 6ed19256f (.)
 - ✅ `phpstan-fixes.md` - General fixes documentation
 - ✅ `phpstan-compliance.md` - Compliance status
 - ✅ `phpstan-analysis-gdpr.md` - Current status (this file)
@@ -167,17 +163,8 @@ function createConsent(array $attributes = []): Consent
 - [ ] Document GDPR best practices for other modules
 
 ---
-
-**Analysis Date**: 2025-11-05
-<<<<<<< HEAD
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ✅ Fully PHPStan Level 10 Compliant
 **Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
-=======
-**PHPStan Version**: 2.1.2
-**Laravel Version**: 12.31.1
-**Status**: ✅ Fully PHPStan Level 10 Compliant
-**Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
->>>>>>> 6ed19256f (.)

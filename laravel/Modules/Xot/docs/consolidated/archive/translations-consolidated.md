@@ -1,3 +1,11 @@
+---
+title: "Translations - Documentazione Consolidata DRY + KISS"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "translations - documentazione consolidata dry + kiss xot"
+---
 # Translations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione traduzioni del progetto
@@ -272,20 +280,12 @@ return [
 - **Campi comuni**: `title`, `message`, `type`, `read_at`
 - **Stati**: `unread`, `read`, `archived`
 
-<<<<<<< HEAD
 ### <nome progetto> Module
-=======
-### SaluteMo Module
->>>>>>> 6ed19256f (.)
 - **Focus**: Health management, Medical data
 - **Campi comuni**: `patient_id`, `doctor_id`, `date`, `notes`
 - **Stati**: `scheduled`, `completed`, `cancelled`
 
-<<<<<<< HEAD
 ### <nome progetto> Module (CRITICO)
-=======
-### SaluteOra Module (CRITICO)
->>>>>>> 6ed19256f (.)
 - **Focus**: Core health platform, Appointments
 - **Campi comuni**: `appointment_id`, `patient_id`, `doctor_id`, `studio_id`
 - **Stati**: `scheduled`, `confirmed`, `in_progress`, `completed`, `cancelled`
@@ -356,20 +356,12 @@ TextInput::make('name') // Label automatica da traduzione
 ### Controlli Automatici (Tutti i Moduli)
 ```bash
 # Controllo chiavi hardcoded (tutti i moduli)
-<<<<<<< HEAD
 for module in Activity Chart Cms FormBuilder Gdpr Geo Job Lang Media Notify <nome progetto> <nome progetto> Tenant UI User Xot; do
-=======
-for module in Activity Chart Cms FormBuilder Gdpr Geo Job Lang Media Notify SaluteMo SaluteOra Tenant UI User Xot; do
->>>>>>> 6ed19256f (.)
     php artisan translation:check-hardcoded --module=$module
 done
 
 # Validazione sintassi (tutti i moduli)
-<<<<<<< HEAD
 for module in Activity Chart Cms FormBuilder Gdpr Geo Job Lang Media Notify <nome progetto> <nome progetto> Tenant UI User Xot; do
-=======
-for module in Activity Chart Cms FormBuilder Gdpr Geo Job Lang Media Notify SaluteMo SaluteOra Tenant UI User Xot; do
->>>>>>> 6ed19256f (.)
     php artisan translation:validate-syntax --module=$module
 done
 ```
@@ -405,7 +397,6 @@ rm Modules/Tenant/project_docs/translations.md
 rm Modules/UI/project_docs/translations.md
 rm Modules/UI/project_docs/translation-rules.md
 
-<<<<<<< HEAD
 # <nome progetto>
 rm Modules/<nome progetto>/project_docs/translation-files-improvement.md
 rm Modules/<nome progetto>/project_docs/translations.md
@@ -414,16 +405,6 @@ rm Modules/<nome progetto>/project_docs/translations-states-analysis.md
 rm Modules/<nome progetto>/project_docs/translation-rules.md
 rm Modules/<nome progetto>/project_docs/translation_standards.md
 rm Modules/<nome progetto>/project_docs/translations-appointments.md
-=======
-# SaluteOra
-rm Modules/SaluteOra/project_docs/translation-files-improvement.md
-rm Modules/SaluteOra/project_docs/translations.md
-rm Modules/SaluteOra/project_docs/translation_quality_standards.md
-rm Modules/SaluteOra/project_docs/translations-states-analysis.md
-rm Modules/SaluteOra/project_docs/translation-rules.md
-rm Modules/SaluteOra/project_docs/translation_standards.md
-rm Modules/SaluteOra/project_docs/translations-appointments.md
->>>>>>> 6ed19256f (.)
 
 # User
 rm Modules/User/project_docs/translations.md

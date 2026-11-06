@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Carbon;
 
 /**
  * Common query scopes for Laraxot models.
@@ -27,14 +28,16 @@ use Illuminate\Database\Eloquent\Builder;
  * ```
  *
  * @see docs/METODI_DUPLICATI_ANALISI.md - Proposta 4: Model Traits
+ * @phpstan-ignore trait.unused
  */
-trait HasCommonScopes
+trait HasCommonScopes // @phpstan-ignore trait.unused
 {
     /**
      * Scope query to only active records.
      *
-     * Found 100% identical in: Activity, Blog, Cms, User, Fixcity modules.
+     * Trovato identico in piu' moduli che condividono questo scope.
      *
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
@@ -45,6 +48,7 @@ trait HasCommonScopes
     /**
      * Scope query to only inactive records.
      *
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeInactive(Builder $query): Builder
@@ -57,6 +61,7 @@ trait HasCommonScopes
      *
      * Records with published_at <= now().
      *
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopePublished(Builder $query): Builder
@@ -70,11 +75,12 @@ trait HasCommonScopes
      *
      * Records with published_at = null or > now().
      *
+     * @param  Builder<static>  $query
      * @return Builder<static>
      */
     public function scopeDraft(Builder $query): Builder
     {
-        return $query->where(function ($q): void {
+        return $query->where(function (Builder $q): void {
             $q->whereNull('published_at')
                 ->orWhere('published_at', '>', now());
         });
@@ -83,15 +89,10 @@ trait HasCommonScopes
     /**
      * Scope query to records created after a date.
      *
-<<<<<<< HEAD
-     * @param Builder<static> $query
-=======
      * @param  Builder<static>  $query
->>>>>>> 6ed19256f (.)
-     *
      * @return Builder<static>
      */
-    public function scopeCreatedAfter(Builder $query, mixed $date): Builder
+    public function scopeCreatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
     {
         return $query->where('created_at', '>=', $date);
     }
@@ -99,15 +100,10 @@ trait HasCommonScopes
     /**
      * Scope query to records created before a date.
      *
-<<<<<<< HEAD
-     * @param Builder<static> $query
-=======
      * @param  Builder<static>  $query
->>>>>>> 6ed19256f (.)
-     *
      * @return Builder<static>
      */
-    public function scopeCreatedBefore(Builder $query, mixed $date): Builder
+    public function scopeCreatedBefore(Builder $query, \DateTimeInterface|string|int $date): Builder
     {
         return $query->where('created_at', '<=', $date);
     }
@@ -115,15 +111,10 @@ trait HasCommonScopes
     /**
      * Scope query to records updated after a date.
      *
-<<<<<<< HEAD
-     * @param Builder<static> $query
-=======
      * @param  Builder<static>  $query
->>>>>>> 6ed19256f (.)
-     *
      * @return Builder<static>
      */
-    public function scopeUpdatedAfter(Builder $query, mixed $date): Builder
+    public function scopeUpdatedAfter(Builder $query, \DateTimeInterface|string|int $date): Builder
     {
         return $query->where('updated_at', '>=', $date);
     }
@@ -131,12 +122,7 @@ trait HasCommonScopes
     /**
      * Scope query to records created by a specific user.
      *
-<<<<<<< HEAD
-     * @param Builder<static> $query
-=======
      * @param  Builder<static>  $query
->>>>>>> 6ed19256f (.)
-     *
      * @return Builder<static>
      */
     public function scopeCreatedBy(Builder $query, string|int $userId): Builder
@@ -149,17 +135,13 @@ trait HasCommonScopes
      */
     public function isPublished(): bool
     {
-        if (! isset($this->published_at)) {
+        $publishedAt = $this->getAttribute('published_at');
+
+        if (! $publishedAt instanceof Carbon) {
             return false;
         }
 
-<<<<<<< HEAD
-        return null !== $this->published_at
-               && $this->published_at->isPast();
-=======
-        return $this->published_at !== null &&
-               $this->published_at->isPast();
->>>>>>> 6ed19256f (.)
+        return $publishedAt->isPast();
     }
 
     /**
@@ -175,10 +157,6 @@ trait HasCommonScopes
      */
     public function isActive(): bool
     {
-<<<<<<< HEAD
-        return isset($this->is_active) && true === $this->is_active;
-=======
-        return isset($this->is_active) && $this->is_active === true;
->>>>>>> 6ed19256f (.)
+        return $this->getAttribute('is_active') === true;
     }
 }

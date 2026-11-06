@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
@@ -18,14 +17,10 @@ class CreateSocialiteUserAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     public function __construct(
         private readonly SocialiteUser $socialiteUserModel,
-    ) {
-    }
+    ) {}
 
-=======
->>>>>>> 6ed19256f (.)
     /**
      * Execute the action.
      */
@@ -41,10 +36,6 @@ class CreateSocialiteUserAction
             'avatar' => $oauthUser->getAvatar(),
         ];
 
-<<<<<<< HEAD
         return $this->socialiteUserModel->create(attributes: $attributes);
-=======
-        return SocialiteUser::create(attributes: $attributes);
->>>>>>> 6ed19256f (.)
     }
 }

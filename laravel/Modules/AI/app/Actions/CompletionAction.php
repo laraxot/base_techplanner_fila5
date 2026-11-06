@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\AI\Actions;
 
-use Illuminate\Support\Facades\Http;
 use Modules\AI\Datas\CompletionData;
+use OpenAI\Laravel\Facades\OpenAI;
 use Spatie\QueueableAction\QueueableAction;
 
 class CompletionAction
@@ -17,33 +17,26 @@ class CompletionAction
      */
     public function execute(string $prompt): CompletionData
     {
-        $apiKey = config('openai.api_key');
-        if (! is_string($apiKey) || $apiKey === '') {
-            throw new \RuntimeException('OpenAI API key not configured');
-        }
+        $result = OpenAI::completions()->create([
+            // 'model' => 'text-davinci-003',
+            'model' => 'gpt-3.5-turbo-instruct',
+            'prompt' => $prompt,
+            'temperature' => 0.5,
+            'max_tokens' => 100,
+            'top_p' => 1.0,
+            'frequency_penalty' => 0.0,
+            'presence_penalty' => 0.0,
+        ]);
 
-        $response = Http::withToken($apiKey)
-            ->post('https://api.openai.com/v1/completions', [
-                'model' => 'gpt-3.5-turbo-instruct',
-                'prompt' => $prompt,
-                'temperature' => 0.5,
-                'max_tokens' => 100,
-                'top_p' => 1.0,
-                'frequency_penalty' => 0.0,
-                'presence_penalty' => 0.0,
-            ]);
-
-        /** @var array{choices: array{0: array{text: string}}, usage: array{prompt_tokens: int, completion_tokens: int, total_tokens: int}} $data */
-        $data = $response->json();
-
-        $choice = $data['choices'][0]['text'];
-        $usage = $data['usage'];
+        // Map OpenAI response to Data Transfer Object
+        $choice = $result->choices[0]->text;
+        $usage = $result->usage;
 
         return new CompletionData(
             text: trim($choice),
-            promptTokens: $usage['prompt_tokens'],
-            completionTokens: $usage['completion_tokens'] ?? 0,
-            totalTokens: $usage['total_tokens'],
+            promptTokens: $usage->promptTokens,
+            completionTokens: $usage->completionTokens ?? 0,
+            totalTokens: $usage->totalTokens,
         );
     }
 }

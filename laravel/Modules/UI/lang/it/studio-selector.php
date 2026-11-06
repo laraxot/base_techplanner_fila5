@@ -17,29 +17,20 @@ return [
         'distance' => [
             'label' => 'Distanza',
             'helper_text' => 'Distanza approssimativa dalla tua posizione',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'helper_text' => 'Numero di telefono dello studio',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'specializations' => [
             'label' => 'Specializzazioni',
             'helper_text' => 'Servizi offerti dallo studio',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'accessibility' => [
@@ -47,7 +38,6 @@ return [
         'selected_studio' => 'Studio selezionato',
         'select_studio' => 'Premi spazio o invio per selezionare questo studio',
     ],
-<<<<<<< HEAD
     'label' => 'Studio Selector',
     'plural_label' => 'Studio Selector (Plurale)',
     'navigation' => [
@@ -59,8 +49,53 @@ return [
         ],
         'label' => 'Studio Selector',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
->>>>>>> 6ed19256f (.)
+    'card' => [
+        'address_unavailable' => [
+            'label' => 'Indirizzo non disponibile',
+        ],
+        'visit_website' => [
+            'label' => 'Visita sito',
+        ],
+        'services_offered' => [
+            'label' => 'Servizi offerti',
+        ],
+        'more_services' => [
+            'label' => '+:count altri',
+        ],
+        'today_hours' => [
+            'label' => 'Oggi: :open - :close',
+        ],
+        'today_closed' => [
+            'label' => 'Oggi: Chiuso',
+        ],
+        'actions' => [
+            'book' => 'Prenota',
+            'details' => 'Dettagli',
+            'call' => 'Chiama',
+        ],
+    ],
+    'list' => [
+        'services_count' => [
+            'label' => ':count servizi',
+        ],
+        'empty' => [
+            'title' => 'Nessuno studio trovato',
+            'description' => 'Non ci sono studi disponibili nell\'area selezionata.',
+        ],
+        'selected' => [
+            'label' => 'Studio selezionato: :name',
+        ],
+    ],
+    'sections' => [
+        'buttons' => [
+            'title' => 'Gli Studi Odontoiatrici più vicini a te',
+        ],
+    ],
+    'buttons' => [
+        'empty' => [
+            'message' => 'Nessuno studio trovato con i criteri di ricerca selezionati.',
+        ],
+    ],
 ];

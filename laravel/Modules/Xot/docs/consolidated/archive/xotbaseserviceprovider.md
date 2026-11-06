@@ -1,12 +1,16 @@
+---
+title: "XotBaseServiceProvider"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "xotbaseserviceprovider xot"
+---
 # XotBaseServiceProvider
 
 ## Descrizione
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli . Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
-<<<<<<< HEAD
 `XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in <nome progetto>. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
-=======
-`XotBaseServiceProvider` è una classe astratta che fornisce l'implementazione base per i Service Provider di tutti i moduli in SaluteOra. Estende `Illuminate\Support\ServiceProvider` e implementa funzionalità comuni per la registrazione di componenti, traduzioni, configurazioni e altro.
->>>>>>> 6ed19256f (.)
 
 ## Caratteristiche Principali
 

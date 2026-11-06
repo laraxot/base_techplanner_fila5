@@ -1,5 +1,12 @@
-<<<<<<< HEAD
-=======
+---
+title: "Widget Translation Rules - SaluteOra Project"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "widget translation rules - saluteora project user"
+---
+# Widget Translation Rules - SaluteOra Project
 # Widget Translation Rules - FixCity Project
 
 ## Core Principles
@@ -135,15 +142,14 @@ protected static string $view = 'user::widgets.edit-user';
 - Check responsive design and accessibility
 - Validate form submission and error handling
 ## Related Documentation
->>>>>>> 6ed19256f (.)
-- [User Module Widget Structure](../Modules/User/project_docs/widgets_structure.md)
-- [EditUserWidget Documentation](../Modules/User/project_docs/widgets/edit-user-widget.md)
-- [Widget Translation Guidelines](../Modules/User/project_docs/widgets/translation-guidelines.md)
-- [Filament Widget Conventions](../Modules/Xot/project_docs/filament-widgets.md)
-- [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
-- [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
-- [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
-- [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
+- [User Module Widget Structure](../modules/user/project_docs/widgets_structure.md)
+- [EditUserWidget Documentation](../modules/user/project_docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/project_docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/project_docs/filament-widgets.md)
+- [User Module Widget Structure](../modules/user/docs/widgets_structure.md)
+- [EditUserWidget Documentation](../modules/user/docs/widgets/edit-user-widget.md)
+- [Widget Translation Guidelines](../modules/user/docs/widgets/translation-guidelines.md)
+- [Filament Widget Conventions](../modules/xot/docs/filament-widgets.md)
 ## Memory Integration
 This document serves as a reference for:
 - Widget development standards
@@ -151,11 +157,7 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 All widget development should follow these rules to maintain consistency and quality across the FixCity project.
-<<<<<<< HEAD
 # Widget Translation Rules - <nome progetto> Project
-=======
-# Widget Translation Rules - SaluteOra Project
->>>>>>> 6ed19256f (.)
 
 ## Core Principles
 
@@ -270,13 +272,13 @@ class EditUserWidget extends XotBaseWidget
     <h2 class="text-xl font-semibold mb-4">
         {{ __('user::widgets.edit_user.title') }}
     </h2>
-
+    
     <p class="text-gray-600 mb-6">
         {{ __('user::widgets.edit_user.description') }}
     </p>
-
+    
     {{ $this->form }}
-
+    
     <div class="mt-6 flex justify-end space-x-3">
         <button type="button" class="btn-secondary">
             {{ __('user::widgets.edit_user.actions.cancel.label') }}
@@ -353,15 +355,23 @@ This document serves as a reference for:
 - Code quality requirements
 - Documentation standards
 
-<<<<<<< HEAD
-All widget development should follow these rules to maintain consistency and quality across the <nome progetto> project.
+All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
 ---
 module: theme
 topic: widget-translation-rules
 canonical: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/widget-translation-rules-Modules.md
-=======
-All widget development should follow these rules to maintain consistency and quality across the SaluteOra project.
->>>>>>> 6ed19256f (.)

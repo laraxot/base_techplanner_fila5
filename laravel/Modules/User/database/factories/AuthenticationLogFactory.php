@@ -7,6 +7,9 @@ namespace Modules\User\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\User\Models\AuthenticationLog;
 
+/**
+ * @extends Factory<AuthenticationLog>
+ */
 class AuthenticationLogFactory extends Factory
 {
     /**
@@ -16,6 +19,9 @@ class AuthenticationLogFactory extends Factory
 
     /**
      * Define the model's default state.
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function definition(): array
     {

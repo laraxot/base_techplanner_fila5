@@ -8,19 +8,10 @@
         <img
             class="absolute top-0 left-0 w-full h-full p-0 m-0 opacity-20 object-center object-cover"
             src="{{ $post->getMainImage() }}"
-<<<<<<< HEAD
-            alt="{{ $title ?? $name ?? "Immagine" }}"
-=======
-            alt=""
->>>>>>> 6ed19256f (.)
+            alt="{{ $title ?? $name ?? __('pub_theme::block_fallbacks.post_card.image_alt.label') }}"
         >
         <div class="relative z-1 p-4">
             {{ $text ?: $post->title }}
         </div>
     </a>
 @endif
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "footer section"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "footer section"
+issues: []
+discussions: []
+status: draft
+---
+
 # Footer Section
 
 ## Struttura
@@ -117,10 +129,4 @@ Per dettagli su configurazione e template, consulta: [Documentazione Sezione Foo
 ## Collegamenti
 - [Gestione Blocchi](../blocks/README.md)
 - [Componenti UI](../components/README.md)
-- [Documentazione Root](../../../../docs/sections.md)
-<<<<<<< HEAD
-- [Gestione Blocchi](../blocks/readme.md)
-- [Componenti UI](../components/readme.md)
-- [Documentazione Root](../../../../../docs/sections.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Documentazione Root](../sections.md)

@@ -1,11 +1,23 @@
+---
+title: "design comuni segnalazioni elenco"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "design comuni segnalazioni elenco"
+issues: []
+discussions: []
+status: draft
+---
+
 # Design Comuni - Segnalazioni Elenco
 
 ## Panoramica
 
 Analisi e implementazione della pagina elenco segnalazioni del progetto Design Comuni Italia.
 
-- **Reference**: https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html
-- **Local**: http://127.0.0.1:8000/it/tests/segnalazioni-elenco
+- **Reference**: https://italia.github.io/design-comuni-pagine-statiche/sito/ticket-list.html
+- **Local**: http://127.0.0.1:8000/it/tests/ticket-list
 - **Data**: 2026-04-03
 
 ## 📊 Stato
@@ -37,19 +49,18 @@ Analisi e implementazione della pagina elenco segnalazioni del progetto Design C
 ## 📚 Link Bidirezionali
 
 ### Tema Sixteen
-- [Analisi HTML](../../Themes/Sixteen/docs/design-comuni/SEGNALAZIONI_ELENCO_ANALISI.md)
-- [Report](../../Themes/Sixteen/docs/design-comuni/SEGNALAZIONI_ELENCO_REPORT.md)
-- [Progress Report](../../Themes/Sixteen/docs/design-comuni/PROGRESS_REPORT.md)
-- [All Pages Analysis](../../Themes/Sixteen/docs/design-comuni/ALL_PAGES_ANALYSIS.md)
+- [Analisi HTML](../../../Themes/Sixteen/docs/design-comuni/SEGNALAZIONI_ELENCO_ANALISI.md)
+- [Report](../../../Themes/Sixteen/docs/design-comuni/SEGNALAZIONI_ELENCO_REPORT.md)
+- [Progress Report](../../../Themes/Sixteen/docs/design-comuni/PROGRESS_REPORT.md)
+- [All Pages Analysis](../../../Themes/Sixteen/docs/design-comuni/ALL_PAGES_ANALYSIS.md)
 
 ### Master Index
-- [docs/design-comuni/MASTER_INDEX.md](../../../docs/design-comuni/MASTER_INDEX.md)
+- [docs/design-comuni/MASTER_INDEX.md](../../../../docs/design-comuni/MASTER_INDEX.md)
 
 ### Scripts
-- [analyze-segnalazioni-elenco.js](../../../bashscripts/design-comuni/analyze-segnalazioni-elenco.js)
+- [analyze-ticket-list.js](../../../bashscripts/design-comuni/analyze-ticket-list.js)
 
 ---
-
 **Data**: 2026-04-03  
 **Stato**: ⚠️ 52.7% (migliorato da 38.4%)  
 **Prossimo**: Implementare tabs navigation, map placeholder

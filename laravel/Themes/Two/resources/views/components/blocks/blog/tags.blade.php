@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Esplora per Tag',
+    'title' => __('pub_theme::block_defaults.blog_tags.title.title'),
     'subtitle' => '',
     'style' => 'cloud',
     'max_tags' => 20,

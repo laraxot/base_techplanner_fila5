@@ -1,5 +1,11 @@
-<<<<<<< HEAD
-=======
+---
+title: "Bug Fix: Icone Mancanti - 27 Gennaio 2025"
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, ui]
+qmd: "bug fix: icone mancanti - 27 gennaio 2025 ui"
+---
 # Bug Fix: Icone Mancanti - 27 Gennaio 2025
 
 ## Problema Identificato
@@ -96,23 +102,12 @@ php artisan config:clear
 
 - [Sistema Icone UI](../icon-system.md)
 - [Blade Icons Documentation](../blade-icons.md)
->>>>>>> 6ed19256f (.)
 - [XotBaseServiceProvider](../XotBaseServiceProvider.md)
 
 ---
 
-**Data**: 27 Gennaio 2025
-**Modulo**: UI
-**Tipo**: Bug Fix
-**Priorità**: Alta
+**Data**: 27 Gennaio 2025  
+**Modulo**: UI  
+**Tipo**: Bug Fix  
+**Priorità**: Alta  
 **Stato**: ✅ Risolto
-<<<<<<< HEAD
----
-module: theme
-topic: bugfix-icons-missing
-canonical: ../../../Themes/docs/shared-components/bugfix-icons-missing.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/bugfix-icons-missing.md
-=======
->>>>>>> 6ed19256f (.)

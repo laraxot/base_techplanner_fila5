@@ -1,11 +1,16 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: sushi-to-json-implementation-plan
-canonical: ../../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Sushi To Json Implementation Plan"
+module: "Tenant"
+type: concept
+tags: [sushi, json, implementation, plan]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sushi to json implementation plan"
+related:
+  - "./phpstan-corrections-january.md"
+  - "../phpstan-corrections-january.md"
+status: draft
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)

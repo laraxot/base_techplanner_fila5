@@ -1,3 +1,15 @@
+---
+title: "header"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "header"
+issues: []
+discussions: []
+status: draft
+---
+
 # Componente Header
 
 ## Descrizione
@@ -52,22 +64,10 @@ Il componente Header è un elemento fondamentale dell'interfaccia utente che for
 ## Collegamenti
 - [Documentazione Componenti](./README.md)
 - [Documentazione Blocchi](../blocks/README.md)
-- [Convenzioni Layout](../../../docs/laravel-conventions.md)
-
-## Collegamenti tra versioni di header.md
-* [header.md](docs/sections/header.md)
-* [header.md](laravel/Modules/Cms/docs/components/header.md)
-* [header.md](laravel/Modules/Cms/docs/sections/header.md)
-* [header.md](laravel/Themes/One/docs/sections/header.md)
-<<<<<<< HEAD
-- [Documentazione Componenti](./readme.md)
-- [Documentazione Blocchi](../blocks/readme.md)
 - [Convenzioni Layout](../../../../docs/laravel-conventions.md)
 
 ## Collegamenti tra versioni di header.md
-* [header.md](docs/sections/header.md)
+* [header.md](../sections/header.md)
 * [header.md](laravel/modules/cms/docs/components/header.md)
-* [header.md](laravel/modules/cms/docs/sections/header.md)
+* [header.md](../sections/header.md)
 * [header.md](laravel/themes/one/docs/sections/header.md)
-=======
->>>>>>> 6ed19256f (.)

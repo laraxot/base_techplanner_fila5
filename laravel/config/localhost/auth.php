@@ -74,13 +74,7 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-<<<<<<< HEAD
-            // 'model' => App\User::class,
             //'model' => App\User::class,
-            // 'model' => App\User::class,
-=======
-            //'model' => App\User::class,
->>>>>>> 6ed19256f (.)
             'model' => Modules\User\Models\User::class,
         ],
 

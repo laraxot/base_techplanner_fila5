@@ -1,3 +1,15 @@
+---
+title: "module analysis complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module analysis complete"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Completa Modulo Geo - Factory, Seeder e Test
 
 ## 📊 Panoramica Generale
@@ -269,13 +281,7 @@ Il modulo Geo è il sistema di gestione geografica di <main module>, fornendo mo
 - Miglioramento manutenibilità
 
 ---
-
-**Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 1.0
 **Stato**: In Progress
 **Responsabile**: Team Sviluppo <main module>
-<<<<<<< HEAD
 **Prossima Revisione**: Gennaio 2025
-=======
-**Prossima Revisione**: Gennaio 2025
->>>>>>> 6ed19256f (.)

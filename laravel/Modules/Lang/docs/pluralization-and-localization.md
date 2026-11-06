@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Plurale/Singolare e Localizzazione Date/Valute"
+module: "Lang"
+type: concept
+tags: [google, translate]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "google translate"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Plurale/Singolare e Localizzazione Date/Valute
 
 ## Pluralizzazione
@@ -32,21 +46,13 @@
 - **File JSON**: Evitare l'uso per le stringhe plurali, salvo casi di necessità per traduttori non-dev.
 
 ### 1.5 Esempio Completo
-<<<<<<< HEAD
 - `lang/en/messages.php`:
-=======
-- `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/lang/en/messages.php`:
->>>>>>> 6ed19256f (.)
   ```php
   return [
       'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
   ];
   ```
-<<<<<<< HEAD
 - `lang/it/messages.php`:
-=======
-- `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/lang/it/messages.php`:
->>>>>>> 6ed19256f (.)
   ```php
   return [
       'newMessageIndicator' => '{0} Non hai nuovi messaggi|{1} Hai 1 nuovo messaggio|[2,*] Hai :count nuovi messaggi',
@@ -187,7 +193,7 @@
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
 - [README.md](./README.md)
@@ -225,21 +231,13 @@
 - **File JSON**: Evitare l'uso per le stringhe plurali, salvo casi di necessità per traduttori non-dev.
 
 ### 1.5 Esempio Completo
-<<<<<<< HEAD
 - `lang/en/messages.php`:
-=======
-- `/var/www/html/saluteora/laravel/lang/en/messages.php`:
->>>>>>> 6ed19256f (.)
   ```php
   return [
       'newMessageIndicator' => '{0} You have no new messages|{1} You have 1 new message|[2,*] You have :count new messages',
   ];
   ```
-<<<<<<< HEAD
 - `lang/it/messages.php`:
-=======
-- `/var/www/html/saluteora/laravel/lang/it/messages.php`:
->>>>>>> 6ed19256f (.)
   ```php
   return [
       'newMessageIndicator' => '{0} Non hai nuovi messaggi|{1} Hai 1 nuovo messaggio|[2,*] Hai :count nuovi messaggi',
@@ -380,11 +378,11 @@
 ## 4. Collegamenti correlati
 
 - [translations-faq.md](./translations-faq.md)
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](./TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](translation-keys-best-practices.md)
 - [translations-storage.md](./translations-storage.md)
 - [translation-process.md](./translation-process.md)
-<<<<<<< HEAD
 - [README.md](./README.md)
-=======
 - [README.md](./README.md)
->>>>>>> 6ed19256f (.)
+- [README.md](./README.md)
+- [README.md](./README.md)
+- [README.md](./README.md)

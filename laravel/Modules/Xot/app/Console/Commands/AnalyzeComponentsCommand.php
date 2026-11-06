@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Modules\Xot\Console\Commands;
 
 use Illuminate\Console\Command;
+use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\GetComponentsAction;
+use Modules\Xot\Datas\ComponentFileData;
 
 class AnalyzeComponentsCommand extends Command
 {
@@ -39,31 +41,26 @@ class AnalyzeComponentsCommand extends Command
 
         // Type-safe module handling
         $moduleStr = is_string($module) ? $module : '';
-<<<<<<< HEAD
-        $path = '' !== $moduleStr ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
-        $namespace = '' !== $moduleStr ? "Modules\\{$moduleStr}" : 'Modules';
-=======
         $path = $moduleStr !== '' ? base_path("laravel/Modules/{$moduleStr}") : base_path('laravel/Modules');
         $namespace = $moduleStr !== '' ? "Modules\\{$moduleStr}" : 'Modules';
->>>>>>> 6ed19256f (.)
 
         $components = $getComponentsAction->execute($path, $namespace, $prefix, $force);
 
+        $typeFilter = is_string($type) ? $type : '';
+
         $this->table(
             ['Componente', 'Tipo', 'Modulo', 'Path'],
-            collect($components)->map(function ($component) {
-                // Type-safe component access
-                if (! is_array($component)) {
-                    return ['Invalid component', 'N/A', 'N/A', 'N/A'];
-                }
-
-                return [
-                    $component['comp_name'] ?? 'N/A',
-                    $component['type'] ?? 'N/A',
-                    $component['module'] ?? 'N/A',
-                    $component['path'] ?? 'N/A',
-                ];
-            })
+            collect($components)
+                ->filter(static fn (ComponentFileData $component): bool => $typeFilter === ''
+                    || Str::contains($component->ns ?? $component->class, $typeFilter, ignoreCase: true))
+                ->map(static function (ComponentFileData $component): array {
+                    return [
+                        $component->name,
+                        $component->class,
+                        $component->module ?? 'N/A',
+                        $component->path ?? 'N/A',
+                    ];
+                })
         );
 
         return Command::SUCCESS;

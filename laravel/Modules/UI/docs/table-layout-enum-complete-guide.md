@@ -1,3 +1,15 @@
+---
+title: "table layout enum complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "table layout enum complete guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # TableLayoutEnum - Guida Completa
 
 ## Panoramica
@@ -356,16 +368,8 @@ dd($this->layout->getTableContentGrid());
 
 - [UI Components](../components.md)
 - [Filament Tables](https://filamentphp.com/docs/3.x/tables/overview)
-- [Translation Standards](../../Xot/docs/translation-standards.md)
-- [Enum Standards](../../../docs/enum_standards.md)
-
-## Ultimo Aggiornamento
-2025-01-27 - Documentazione completa TableLayoutEnum
-<<<<<<< HEAD
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [Enum Standards](../../../../docs/enum_standards.md)
 
 ## Ultimo Aggiornamento
 [DATE] - Documentazione completa TableLayoutEnum
-=======
->>>>>>> 6ed19256f (.)

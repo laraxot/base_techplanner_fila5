@@ -1,3 +1,15 @@
+---
+title: "phpstan error resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan error resolution"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Errori PHPStan - 8 Gennaio 2025
 
 ## Panoramica
@@ -45,11 +57,7 @@ Risolti sistematicamente 9 errori PHPStan critici attraverso l'analisi del codic
 - Aggiunta documentazione PHPDoc completa
 - Verificata compatibilità PHPStan livello 9
 
-**Documentazione**: [Chart Model Fixes](../laravel/Modules/Chart/docs/phpstan/chart-model-fixes.md)
-<<<<<<< HEAD
 **Documentazione**: [Chart Model Fixes](../laravel/modules/chart/docs/phpstan/chart-model-fixes.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Impatto Architetturale
 
@@ -80,25 +88,14 @@ Risolti sistematicamente 9 errori PHPStan critici attraverso l'analisi del codic
 
 ## Collegamenti Tecnici
 
-<<<<<<< HEAD
 - [Correzioni Dettagliate](../laravel/modules/xot/docs/phpstan-fixes-[date].md)
-- [Regole PHPStan Critiche](../laravel/modules/xot/docs/phpstan-critical-rules.md)
+- [Regole PHPStan Critiche](../../Xot/docs/phpstan-critical-rules.md)
 - [Linee Guida Livello 10](../laravel/modules/xot/docs/phpstan-level10-guidelines.md)
 - [Chart Model Fixes](../laravel/modules/chart/docs/phpstan/chart-model-fixes.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Correzioni Dettagliate](../laravel/Modules/Xot/docs/phpstan-fixes-2025-01-06.md)
-- [Regole PHPStan Critiche](../laravel/Modules/Xot/docs/phpstan-critical-rules.md)
-- [Linee Guida Livello 10](../laravel/Modules/Xot/docs/phpstan-level10-guidelines.md)
-- [Chart Model Fixes](../laravel/Modules/Chart/docs/phpstan/chart-model-fixes.md)
 
 ## Memoria Tecnica
 
 Questo intervento consolida l'approccio sistematico alla risoluzione di errori PHPStan nel progetto Laraxot, dimostrando come l'analisi approfondita del codice e l'applicazione coerente delle regole del framework portino a soluzioni robuste e scalabili.
 
 *Documento aggiornato: 8 Gennaio 2025*
-<<<<<<< HEAD
 *Conformità: PHPStan Level 9+, Laraxot Conventions*
-=======
-*Conformità: PHPStan Level 9+, Laraxot Conventions*
->>>>>>> 6ed19256f (.)

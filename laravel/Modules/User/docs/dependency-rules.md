@@ -1,9 +1,33 @@
+---
+title: "dependency-rules"
+type: rule
+tags: [dependency, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "dependency-rules dependency-rules"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # dependency-rules
 
 ## Principle (MANDATORY)
 - Base modules MUST NOT depend on specific/domain modules.
 - Allowed dependencies for `Modules/User`: `Modules/Xot`, `Modules/UI`, other base/intermediate modules.
-<<<<<<< HEAD
 - Forbidden: any import from `Modules/<nome progetto>`, `Modules/Patient`, `Modules/Doctor`, etc.
 
 ## Symptoms of violations
@@ -12,16 +36,6 @@
 
 ## Remediation options
 - Option A (move): Move feature-specific classes into the domain module (e.g., `<nome progetto>`) and update namespaces.
-=======
-- Forbidden: any import from `Modules/SaluteOra`, `Modules/Patient`, `Modules/Doctor`, etc.
-
-## Symptoms of violations
-- `use Modules\SaluteOra\...` inside `Modules/User/...`
-- Widgets/Resources/Providers in `User` referencing domain types like `Patient`, `Appointment`, etc.
-
-## Remediation options
-- Option A (move): Move feature-specific classes into the domain module (e.g., `SaluteOra`) and update namespaces.
->>>>>>> 6ed19256f (.)
 - Option B (contract): Define a contract in `Modules\User\Contracts\...` (e.g., `UserTypeStatProvider`) and implement/bind it inside the domain module’s ServiceProvider.
 
 ## Test policy alignment

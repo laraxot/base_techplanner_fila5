@@ -1,3 +1,15 @@
+---
+title: "validation files multilingua"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "validation files multilingua"
+issues: []
+discussions: []
+status: draft
+---
+
 # File Validation Multilingua - Modulo UI
 
 ## Panoramica
@@ -190,11 +202,7 @@ Verificare che i parametri `:day` e `:session` vengano sostituiti correttamente 
 
 ## Collegamenti
 - [Opening Hours Rule](../app/Rules/OpeningHoursRule.php)
-- [TransTrait Documentation](../../Xot/docs/trans_trait.md)
-<<<<<<< HEAD
 - [TransTrait Documentation](../../xot/docs/trans_trait.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Opening Hours Field](./opening_hours_field.md)
 - [Localization Guidelines](./localization_guidelines.md)
 
@@ -391,16 +399,8 @@ Verificare che i parametri `:day` e `:session` vengano sostituiti correttamente 
 
 ## Collegamenti
 - [Opening Hours Rule](../app/Rules/OpeningHoursRule.php)
-- [TransTrait Documentation](../../Xot/docs/trans_trait.md)
-<<<<<<< HEAD
 - [TransTrait Documentation](../../xot/docs/trans_trait.md)
 - [Opening Hours Field](./opening_hours_field.md)
 - [Localization Guidelines](./localization_guidelines.md)
 
 *Implementazione completata: gennaio 2025*
-=======
-- [Opening Hours Field](./opening_hours_field.md)
-- [Localization Guidelines](./localization_guidelines.md)
-
-*Implementazione completata: gennaio 2025*
->>>>>>> 6ed19256f (.)

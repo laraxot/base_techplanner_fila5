@@ -1,10 +1,18 @@
+---
+title: "geo actions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geo actions"
+issues: []
+discussions: []
+status: draft
+---
+
 # Geo Actions Architecture
 
-**Date**: 2025-12-18
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## Overview
 This document describes the reusable actions available in the Geo module.
@@ -35,8 +43,4 @@ This document describes the reusable actions available in the Geo module.
 ## Backlog DRY + KISS
 - [ ] Estrarre un DTO condiviso (es. `UpdateCoordinatesResultData`) per conteggi success/error.
 - [ ] Documentare la policy “mai logica inline nelle Page Filament”: tutte le bulk action devono vivere in `Modules\Geo\Filament\Actions`.
-<<<<<<< HEAD
 - [ ] Programmare integrazione con notifiche broadcast per mostrare in tempo reale l’avanzamento (utile per dataset > 500 record).
-=======
-- [ ] Programmare integrazione con notifiche broadcast per mostrare in tempo reale l’avanzamento (utile per dataset > 500 record).
->>>>>>> 6ed19256f (.)

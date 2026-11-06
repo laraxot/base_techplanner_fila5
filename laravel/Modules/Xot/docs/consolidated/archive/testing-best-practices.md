@@ -1,3 +1,11 @@
+---
+title: "Testing Best Practices - Laraxot Framework"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "testing best practices - laraxot framework xot"
+---
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -39,11 +47,7 @@ function mockXotData(): void
     $mockXotData = \Mockery::mock(\Modules\Xot\Datas\XotData::class)->makePartial();
 
     $mockXotData->shouldReceive('getUserClass')
-<<<<<<< HEAD
         ->andReturn(\Modules\<nome progetto>\Models\User::class);
-=======
-        ->andReturn(\Modules\SaluteOra\Models\User::class);
->>>>>>> 6ed19256f (.)
 
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);

@@ -5,49 +5,48 @@ declare(strict_types=1);
 namespace Modules\Xot\Tests\Feature\Actions\Pdf;
 
 use Illuminate\Database\Eloquent\Model;
-use Modules\User\Models\User;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-/**
- * Test suite for GetPdfContentByRecordAction.
- */
-class GetPdfContentByRecordActionTest extends TestCase
-{
-    private GetPdfContentByRecordAction $action;
+uses(TestCase::class);
 
-    protected function setUp(): void
-    {
-        parent::setUp();
-        $this->action = new GetPdfContentByRecordAction();
-    }
+// $this dentro le closure Pest e' tipizzato da Pest come TestCall, non come
+// Modules\Xot\Tests\TestCase: PHPStan vieta di ritipizzare $this via @var, quindi
+// l'action del test vive in una variabile locale condivisa per riferimento. Per lo
+// stesso motivo expectException()/markTestSkipped() via $this non sono risolvibili
+// da PHPStan qui: si usano try/catch + Assert e Assert::markTestSkipped() statico.
+$action = null;
 
-    /** @test */
-    public function itGeneratesPdfContentFromRecord(): void
-    {
+beforeEach(function () use (&$action): void {
+    $action = new GetPdfContentByRecordAction;
+});
+
+describe('Get Pdf Content By Record Action', function () use (&$action): void {
+    test('it generates pdf content from record', function (): void {
         // Arrange
-        $user = User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-        ]);
+        // Email e id generati dalla factory: il DB di test e' condiviso, valori fissi collidono.
+        $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Mock view existence
         view()->addNamespace('user', resource_path('views'));
 
         // Act & Assert
-        $this->expectException(\Exception::class);
-        $this->expectExceptionMessage("View 'user::user.show.pdf' not found");
+        try {
+            app(GetPdfContentByRecordAction::class)->execute($user);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertSame("View 'user::user.show.pdf' not found for model ".$user::class, $e->getMessage());
+        }
+    });
 
-        $this->action->execute($user);
-    }
-
-    /** @test */
-    public function itGeneratesCorrectViewName(): void
-    {
+    test('it generates correct view name', function () use (&$action): void {
         // Arrange
-        $user = User::factory()->create();
+        $user = UserFactory::new()->createOne();
 
         // Use reflection to test protected method
+        Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateViewName');
         $method->setAccessible(true);
@@ -56,16 +55,15 @@ class GetPdfContentByRecordActionTest extends TestCase
         $viewName = $method->invoke($action, $user);
 
         // Assert
-        $this->assertEquals('user::user.show.pdf', $viewName);
-    }
+        Assert::assertEquals('user::user.show.pdf', $viewName);
+    });
 
-    /** @test */
-    public function itGeneratesCorrectFilenameForBasicModel(): void
-    {
+    test('it generates correct filename for basic model', function () use (&$action): void {
         // Arrange
-        $user = User::factory()->create(['id' => 123, 'name' => 'Test User']);
+        $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
+        Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
         $method->setAccessible(true);
@@ -74,29 +72,30 @@ class GetPdfContentByRecordActionTest extends TestCase
         $filename = $method->invoke($action, $user);
 
         // Assert
-        $this->assertEquals('user_123_test-user.pdf', $filename);
-    }
+        $key = $user->getKey();
+        if (! is_string($key)) {
+            throw new \RuntimeException('Il modello utente deve avere una chiave stringa (keyType string).');
+        }
 
-    /** @test */
-    public function itGeneratesEnhancedFilenameForPerformanceModels(): void
-    {
+        Assert::assertEquals('user_'.$key.'_test-user.pdf', $filename);
+    });
+
+    test('it generates enhanced filename for performance models', function () use (&$action): void {
         // Arrange - Create a mock model with performance fields
-        $record = new class extends Model {
+        $record = new class extends Model
+        {
             protected $table = 'test_performance';
 
             protected $fillable = ['id', 'matr', 'cognome', 'nome'];
-
-            public function getKey()
-            {
-                return 456;
-            }
         };
 
-        $record->matr = 'ABC123';
-        $record->cognome = 'Rossi';
-        $record->nome = 'Mario';
+        $record->setAttribute('id', 456);
+        $record->setAttribute('matr', 'ABC123');
+        $record->setAttribute('cognome', 'Rossi');
+        $record->setAttribute('nome', 'Mario');
 
         // Use reflection to test protected method
+        Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('generateFilename');
         $method->setAccessible(true);
@@ -105,16 +104,15 @@ class GetPdfContentByRecordActionTest extends TestCase
         $filename = $method->invoke($action, $record);
 
         // Assert
-        $this->assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename);
-    }
+        Assert::assertEquals('scheda_456_ABC123_Rossi_Mario.pdf', $filename);
+    });
 
-    /** @test */
-    public function itPreparesCorrectViewParameters(): void
-    {
+    test('it prepares correct view parameters', function () use (&$action): void {
         // Arrange
-        $user = User::factory()->create(['name' => 'Test User']);
+        $user = UserFactory::new()->createOne(['name' => 'Test User']);
 
         // Use reflection to test protected method
+        Assert::assertInstanceOf(GetPdfContentByRecordAction::class, $action);
         $reflection = new \ReflectionClass($action);
         $method = $reflection->getMethod('prepareViewParameters');
         $method->setAccessible(true);
@@ -123,76 +121,71 @@ class GetPdfContentByRecordActionTest extends TestCase
         $params = $method->invoke($action, $user, 'user::user.show.pdf');
 
         // Assert
-        $this->assertIsArray($params);
-        $this->assertArrayHasKey('view', $params);
-        $this->assertArrayHasKey('row', $params);
-        $this->assertArrayHasKey('transKey', $params);
-        $this->assertEquals('user::user.show.pdf', $params['view']);
-        $this->assertSame($user, $params['row']);
-        $this->assertEquals('user::users.fields', $params['transKey']);
-    }
+        Assert::assertIsArray($params);
+        Assert::assertArrayHasKey('view', $params);
+        Assert::assertArrayHasKey('row', $params);
+        Assert::assertArrayHasKey('transKey', $params);
+        Assert::assertEquals('user::user.show.pdf', $params['view']);
+        Assert::assertSame($user, $params['row']);
+        Assert::assertEquals('user::users.fields', $params['transKey']);
+    });
 
-    /** @test */
-    public function itThrowsExceptionForMissingView(): void
-    {
+    test('it throws exception for missing view', function (): void {
         // Arrange
-        $user = User::factory()->create();
+        $user = UserFactory::new()->createOne();
 
         // Act & Assert
-        $this->expectException(\Exception::class);
-        $this->expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/");
+        try {
+            app(GetPdfContentByRecordAction::class)->execute($user);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertMatchesRegularExpression("/View 'user::user\.show\.pdf' not found/", $e->getMessage());
+        }
+    });
 
-        $this->action->execute($user);
-    }
-
-    /** @test */
-    public function itThrowsExceptionForEmptyHtmlContent(): void
-    {
+    test('it throws exception for empty html content', function (): void {
         // This test would require mocking view rendering to return empty content
         // Implementation depends on testing infrastructure setup
-        $this->markTestSkipped('Requires view mocking infrastructure');
-    }
+        Assert::markTestSkipped('Requires view mocking infrastructure');
+    });
 
-    /** @test */
-    public function itUsesCustomFilenameWhenProvided(): void
-    {
+    test('it uses custom filename when provided', function (): void {
         // Arrange
-        $user = User::factory()->create();
+        $user = UserFactory::new()->createOne();
         $customFilename = 'custom-report.pdf';
 
         // Act & Assert - Should use custom filename in error message
-        $this->expectException(\Exception::class);
+        try {
+            app(GetPdfContentByRecordAction::class)->execute($user, $customFilename);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertNotEmpty($e->getMessage());
+        }
+    });
 
-        $this->action->execute($user, $customFilename);
-    }
-
-    /** @test */
-    public function itHandlesFromRecordConvenienceMethod(): void
-    {
+    test('it handles from record convenience method', function (): void {
         // Arrange
-        $user = User::factory()->create();
+        $user = UserFactory::new()->createOne();
         $filename = 'convenience-test.pdf';
 
         // Act & Assert
-        $this->expectException(\Exception::class);
-        $this->expectExceptionMessageMatches("/View 'user::user\.show\.pdf' not found/");
+        try {
+            app(GetPdfContentByRecordAction::class)->fromRecord($user, $filename);
+            Assert::fail('Expected exception was not thrown.');
+        } catch (\Exception $e) {
+            Assert::assertMatchesRegularExpression("/View 'user::user\.show\.pdf' not found/", $e->getMessage());
+        }
+    });
 
-        $this->action->fromRecord($user, $filename);
-    }
-
-    /** @test */
-    public function itLogsErrorsWhenPdfGenerationFails(): void
-    {
+    test('it logs errors when pdf generation fails', function (): void {
         // This test would require mocking HTML2PDF to throw exceptions
         // Implementation depends on testing infrastructure setup
-        $this->markTestSkipped('Requires HTML2PDF mocking infrastructure');
-    }
+        Assert::markTestSkipped('Requires HTML2PDF mocking infrastructure');
+    });
 
-    /** @test */
-    public function itReturnsValidPdfContentWhenViewExists(): void
-    {
+    test('it returns valid pdf content when view exists', function (): void {
         // This test would require creating actual test views
         // Implementation depends on test view infrastructure
-        $this->markTestSkipped('Requires test view infrastructure');
-    }
-}
+        Assert::markTestSkipped('Requires test view infrastructure');
+    });
+});

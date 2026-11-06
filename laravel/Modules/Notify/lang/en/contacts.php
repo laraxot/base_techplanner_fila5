@@ -8,53 +8,36 @@ return [
         'label' => 'Contatti Notifiche',
         'icon' => 'notify-contacts-animated',
         'sort' => '49',
-        'description' => 'Gestione dei contatti per l\'invio delle notifiche',
-    ],
+        'description' => 'Gestione dei contatti per l\'invio delle notifiche'],
     'fields' => [
         'name' => [
             'label' => 'Nome',
             'tooltip' => 'Nome del contatto',
             'placeholder' => 'es: Mario Rossi',
             'help' => 'Inserisci il nome completo del contatto',
-<<<<<<< HEAD
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'email' => [
             'label' => 'Email',
             'tooltip' => 'Indirizzo email del contatto',
             'placeholder' => 'es: mario.rossi@example.com',
             'help' => 'Inserisci un indirizzo email valido',
-<<<<<<< HEAD
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'phone' => [
             'label' => 'Telefono',
             'tooltip' => 'Numero di telefono del contatto',
             'placeholder' => 'es: +39 123 456 7890',
             'help' => 'Inserisci il numero con prefisso internazionale',
-<<<<<<< HEAD
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'telegram_chat_id' => [
             'label' => 'Chat ID Telegram',
             'tooltip' => 'ID della chat Telegram del contatto',
             'placeholder' => 'es: 123456789',
             'help' => 'ID numerico fornito dal bot Telegram',
-<<<<<<< HEAD
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'group' => [
             'label' => 'Gruppo',
             'tooltip' => 'Gruppo di appartenenza del contatto',
@@ -63,23 +46,15 @@ return [
             'options' => [
                 'admin' => [
                     'label' => 'Amministratori',
-                    'tooltip' => 'Staff amministrativo',
-                ],
+                    'tooltip' => 'Staff amministrativo'],
                 'users' => [
                     'label' => 'Utenti',
-                    'tooltip' => 'Utenti standard',
-                ],
+                    'tooltip' => 'Utenti standard'],
                 'support' => [
                     'label' => 'Supporto',
-                    'tooltip' => 'Team di supporto',
-                ],
-            ],
-<<<<<<< HEAD
+                    'tooltip' => 'Team di supporto']],
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'channels' => [
             'label' => 'Canali',
             'tooltip' => 'Canali di notifica preferiti',
@@ -87,27 +62,18 @@ return [
             'options' => [
                 'email' => [
                     'label' => 'Email',
-                    'tooltip' => 'Notifiche via email',
-                ],
+                    'tooltip' => 'Notifiche via email'],
                 'sms' => [
                     'label' => 'SMS',
-                    'tooltip' => 'Notifiche via SMS',
-                ],
+                    'tooltip' => 'Notifiche via SMS'],
                 'telegram' => [
                     'label' => 'Telegram',
-                    'tooltip' => 'Notifiche via Telegram',
-                ],
+                    'tooltip' => 'Notifiche via Telegram'],
                 'push' => [
                     'label' => 'Push',
-                    'tooltip' => 'Notifiche push sul browser',
-                ],
-            ],
-<<<<<<< HEAD
+                    'tooltip' => 'Notifiche push sul browser']],
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'preferences' => [
             'label' => 'Preferenze',
             'tooltip' => 'Preferenze di notifica',
@@ -119,50 +85,30 @@ return [
                     'options' => [
                         'immediate' => [
                             'label' => 'Immediata',
-                            'tooltip' => 'Invia le notifiche immediatamente',
-                        ],
+                            'tooltip' => 'Invia le notifiche immediatamente'],
                         'daily' => [
                             'label' => 'Giornaliera',
-                            'tooltip' => 'Raggruppa le notifiche in un digest giornaliero',
-                        ],
+                            'tooltip' => 'Raggruppa le notifiche in un digest giornaliero'],
                         'weekly' => [
                             'label' => 'Settimanale',
-                            'tooltip' => 'Raggruppa le notifiche in un digest settimanale',
-                        ],
-                    ],
-                ],
+                            'tooltip' => 'Raggruppa le notifiche in un digest settimanale']]],
                 'quiet_hours' => [
                     'label' => 'Ore di silenzio',
                     'tooltip' => 'Periodo in cui non inviare notifiche',
-                    'help' => 'Le notifiche verranno inviate al termine del periodo di silenzio',
-                ],
-            ],
-<<<<<<< HEAD
+                    'help' => 'Le notifiche verranno inviate al termine del periodo di silenzio']],
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del contatto',
             'help' => 'Disattiva temporaneamente l\'invio di notifiche a questo contatto',
-<<<<<<< HEAD
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'last_notified_at' => [
             'label' => 'Ultima notifica',
             'tooltip' => 'Data e ora dell\'ultima notifica inviata',
-<<<<<<< HEAD
             'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'description' => '']],
     'actions' => [
         'test_notification' => [
             'label' => 'Invia test',
@@ -173,75 +119,53 @@ return [
                 'title' => 'Conferma invio test',
                 'message' => 'Vuoi inviare una notifica di test a questo contatto?',
                 'confirm' => 'Sì, invia test',
-                'cancel' => 'No, annulla',
-            ],
-        ],
+                'cancel' => 'No, annulla']],
         'import' => [
             'label' => 'Importa contatti',
             'tooltip' => 'Importa contatti da file CSV',
             'icon' => 'heroicon-o-arrow-up-tray',
-            'color' => 'success',
-        ],
+            'color' => 'success'],
         'export' => [
             'label' => 'Esporta contatti',
             'tooltip' => 'Esporta contatti in CSV',
             'icon' => 'heroicon-o-arrow-down-tray',
-            'color' => 'info',
-        ],
+            'color' => 'info'],
         'verify_contacts' => [
             'label' => 'Verifica contatti',
             'tooltip' => 'Verifica la validità dei contatti',
             'icon' => 'heroicon-o-check-circle',
-            'color' => 'warning',
-        ],
-    ],
+            'color' => 'warning']],
     'messages' => [
         'test_sent' => [
             'title' => 'Test Inviato',
-            'message' => 'La notifica di test è stata inviata con successo al contatto',
-        ],
+            'message' => 'La notifica di test è stata inviata con successo al contatto'],
         'test_failed' => [
             'title' => 'Errore Test',
-            'message' => 'Impossibile inviare la notifica di test: :error',
-        ],
+            'message' => 'Impossibile inviare la notifica di test: :error'],
         'import_success' => [
             'title' => 'Importazione Completata',
-            'message' => ':count contatti importati con successo',
-        ],
+            'message' => ':count contatti importati con successo'],
         'import_failed' => [
             'title' => 'Errore Importazione',
-            'message' => 'Errore durante l\'importazione dei contatti: :error',
-        ],
+            'message' => 'Errore durante l\'importazione dei contatti: :error'],
         'export_success' => [
             'title' => 'Esportazione Completata',
-            'message' => 'I contatti sono stati esportati con successo',
-        ],
+            'message' => 'I contatti sono stati esportati con successo'],
         'verification_complete' => [
             'title' => 'Verifica Completata',
-            'message' => 'La verifica dei contatti è stata completata. :valid validi, :invalid non validi',
-        ],
-    ],
+            'message' => 'La verifica dei contatti è stata completata. :valid validi, :invalid non validi']],
     'filters' => [
         'group' => [
             'label' => 'Gruppo',
-            'tooltip' => 'Filtra per gruppo di appartenenza',
-        ],
+            'tooltip' => 'Filtra per gruppo di appartenenza'],
         'channels' => [
             'label' => 'Canali',
-            'tooltip' => 'Filtra per canali attivi',
-        ],
+            'tooltip' => 'Filtra per canali attivi'],
         'status' => [
             'label' => 'Stato',
-            'tooltip' => 'Filtra per stato di attivazione',
-        ],
+            'tooltip' => 'Filtra per stato di attivazione'],
         'last_notified' => [
             'label' => 'Ultima notifica',
-            'tooltip' => 'Filtra per data ultima notifica',
-        ],
-    ],
-<<<<<<< HEAD
+            'tooltip' => 'Filtra per data ultima notifica']],
     'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
+    'plural_label' => 'Missing Plural label'];

@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Standardizzazione Traduzioni Modulo Notify"
+module: "Lang"
+type: concept
+tags: [migration, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Standardizzazione Traduzioni Modulo Notify
 
 ## Panoramica delle Problematiche
@@ -23,15 +37,15 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 ## Standardizzazione Implementata
 
 ### Documenti di Riferimento
-- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
-- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
-- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
-<<<<<<< HEAD
-- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
-- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
-- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
 
 ### Struttura Standard Richiesta
 
@@ -106,24 +120,20 @@ La corretta implementazione degli standard di traduzione garantisce:
 
 ## Collegamenti alla Documentazione
 
-- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
-- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-<<<<<<< HEAD
-- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
-- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
 # Standardizzazione Traduzioni Modulo Notify
 
 ## Panoramica delle Problematiche
 
-<<<<<<< HEAD
 Durante l'analisi del codice è emerso che numerosi file di traduzione nel modulo Notify non rispettano gli standard definiti per <nome progetto>. Questo documento riassume i problemi identificati e le strategie di correzione implementate.
-=======
-Durante l'analisi del codice è emerso che numerosi file di traduzione nel modulo Notify non rispettano gli standard definiti per SaluteOra. Questo documento riassume i problemi identificati e le strategie di correzione implementate.
->>>>>>> 6ed19256f (.)
 
 ## Standard Violati
 
@@ -144,15 +154,15 @@ Durante l'analisi del codice è emerso che numerosi file di traduzione nel modul
 ## Standardizzazione Implementata
 
 ### Documenti di Riferimento
-- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
-- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
-- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
-<<<<<<< HEAD
-- [Regole di Naming per i File di Traduzione](../../Notify/docs/TRANSLATION_FILE_NAMING_RULES.md)
-- [Guida alla Struttura dei File di Traduzione](../../Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md)
-- [Progresso della Standardizzazione](../../Notify/docs/TRANSLATION_STANDARDS_PROGRESS.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
+- [Regole di Naming per i File di Traduzione](translation-file-naming-rules.md)
+- [Guida alla Struttura dei File di Traduzione](translation-file-structure-guide.md)
+- [Progresso della Standardizzazione](translation_standards_progress.md)
 
 ### Struttura Standard Richiesta
 
@@ -223,20 +233,16 @@ La corretta implementazione degli standard di traduzione garantisce:
 - Coerenza nell'interfaccia utente
 - Facilità di manutenzione
 - Miglior supporto per la localizzazione
-<<<<<<< HEAD
 - Conformità alle best practice di Laravel e <nome progetto>
-=======
-- Conformità alle best practice di Laravel e SaluteOra
->>>>>>> 6ed19256f (.)
 
 ## Collegamenti alla Documentazione
 
-- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
-- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-<<<<<<< HEAD
-- [Regole Generali per le Traduzioni](./TRANSLATION_KEYS_RULES.md)
-- [Best Practices per le Traduzioni](./TRANSLATION_KEYS_BEST_PRACTICES.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../Notify/docs/TRANSLATION_CONVENTIONS.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)
+- [Regole Generali per le Traduzioni](translation_keys_rules.md)
+- [Best Practices per le Traduzioni](translation-keys-best-practices.md)
+- [Convenzioni di Traduzione nel Modulo Notify](translation_conventions.md)

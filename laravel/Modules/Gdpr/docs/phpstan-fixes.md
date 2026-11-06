@@ -1,39 +1,32 @@
-<<<<<<< HEAD
-=======
-# PHPStan Fixes - Modulo Gdpr
-
-## ✅ Status: 90 Errori Rimanenti (94 → 90)
-
->>>>>>> 6ed19256f (.)
-**Data**: 11 Ottobre 2025
-**Errori Risolti**: 4 ✅
-
+---
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+status: draft
 ---
 
-## 📊 Correzioni Implementate
+# GDPR Module — PHPStan
 
-### 1. Rimozione Generic Type da BaseModel ✅
-**File**: `app/Models/BaseModel.php:22`
+## 2026-10-20 — wave r3 · gate modulo
 
-### 2. Rimozione Generic Type da BaseMorphPivot ✅
-**File**: `app/Models/BaseMorphPivot.php:18`
+```bash
+cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/Gdpr
+# [OK] No errors
+```
 
----
+Test: ereditarietà verificata con `Safe\class_parents` + `assertArrayHasKey` (niente `is_a`/`is_subclass_of` ridondanti); variabili fixture usate in asserzioni comportamentali.
 
-## 🚨 Errori Rimanenti (90)
+## 2026-06-10 — STORY-306 · L10 · 0 errori codice
 
-**Problema Principale**: Test files riferiscono classi non esistenti:
-- `Modules\Gdpr\Models\GdprConsent` (non esiste)
-- `Modules\Gdpr\Models\GdprRequest` (non esiste)
-
-**Soluzione**: Implementare i modelli mancanti o rimuovere i test.
+`./vendor/bin/phpstan analyse Modules/Gdpr` — 728→0 (test Assert, TestCase wrappers). Issue [#334](https://github.com/laraxot/base_fixcity_fila5/issues/334).
 
 ---
-
-**Status**: ✅ BaseModel corretti
-**Prossimo**: Lang (185 errori)
-<<<<<<< HEAD
-# GDPR Module - PHPStan Fixes Session 2025-10-01
+## Storico — Session 2025-10-01 · Level 9
 
 ## ✅ Stato: ZERO ERRORI - PHPStan Level 9 Compliance
 
@@ -156,13 +149,11 @@ Il modulo GDPR gestisce:
 ## 🔗 Collegamenti
 
 - [← GDPR Module README](./README.md)
-- [← PHPStan Session Report](../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Root Documentation](../../../docs/index.md)
+- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
 **Status**: ✅ COMPLETATO  
 **PHPStan Level**: 9  
 **Maintenance**: Nessuna azione richiesta
-=======
->>>>>>> 6ed19256f (.)

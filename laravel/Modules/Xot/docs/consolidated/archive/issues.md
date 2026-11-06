@@ -3,6 +3,11 @@ title: Errori Comuni
 description: Come Risolvere gli Errori più Comuni
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "come risolvere gli errori più comuni {#issues} xot"
 ---
 
 # Come Risolvere gli Errori più Comuni {#issues}
@@ -73,19 +78,11 @@ dddx($profile->hasArea('NOME_AREA'));
 @endphp
 ```
 
-<<<<<<< HEAD
 ### The "Modules/Test/Providers/../Http/Livewire" directory does not exist
 
 Aggiungere la cartella nel MODULO/Http/Livewire con dentro il file .gitkeep
 
 ### file_put_contents(Modules/Test/Providers/../Http/Livewire/_components.json): Failed to open stream: Permission denied
-=======
-### The "/var/www/html/BASE/laravel/Modules/Test/Providers/../Http/Livewire" directory does not exist
-
-Aggiungere la cartella nel MODULO/Http/Livewire con dentro il file .gitkeep
-
-### file_put_contents(/var/www/html/BASE/laravel/Modules/Test/Providers/../Http/Livewire/_components.json): Failed to open stream: Permission denied
->>>>>>> 6ed19256f (.)
 
 ```bash
 sudo chmod PERMESSI_CORRETTI -R .

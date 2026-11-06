@@ -9,17 +9,13 @@ return [
             'description' => 'text',
             'placeholder' => 'text',
             'helper_text' => 'text',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'level' => [
             'label' => 'Grandezza',
             'description' => 'level',
             'helper_text' => 'level',
             'placeholder' => 'level',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         '_tpl' => [
@@ -27,18 +23,12 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        '_tpl' => [
-            'label' => '_tpl',
->>>>>>> 6ed19256f (.)
         ],
         'view' => [
             'label' => 'view',
             'description' => 'view',
             'helper_text' => 'view',
             'placeholder' => 'view',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -53,7 +43,7 @@ return [
         ],
         'label' => 'Title',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -64,8 +54,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Title',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

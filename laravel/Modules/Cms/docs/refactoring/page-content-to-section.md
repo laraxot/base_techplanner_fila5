@@ -1,3 +1,15 @@
+---
+title: "page content to section"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "page content to section"
+issues: []
+discussions: []
+status: draft
+---
+
 # Refactoring: Da PageContent a Section
 
 ## Motivazione
@@ -60,10 +72,5 @@ protected $fillable = [
 
 ## Collegamenti
 - [Gestione Sezioni](../section-management.md)
-<<<<<<< HEAD
 - [Documentazione Root](../../../../../../docs/sections.md)
 - [Documentazione Pagine](../page-management.md)
-=======
-- [Documentazione Root](../../../../../docs/sections.md)
-- [Documentazione Pagine](../page-management.md)
->>>>>>> 6ed19256f (.)

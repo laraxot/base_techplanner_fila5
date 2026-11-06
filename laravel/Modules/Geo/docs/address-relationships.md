@@ -1,3 +1,15 @@
+---
+title: "address relationships"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "address relationships"
+issues: []
+discussions: []
+status: draft
+---
+
 # Relazioni del Modello Address
 
 ## Casi d'Uso Tipici
@@ -128,12 +140,7 @@ trait HasAddresses
     {
         return $this->morphMany(Address::class, 'addressable');
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Get the primary address for this model.
      */
@@ -142,12 +149,7 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('is_primary', true);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Get addresses of a specific type.
      */
@@ -156,12 +158,7 @@ trait HasAddresses
         return $this->morphMany(Address::class, 'addressable')
             ->where('type', $type);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Get the home address for this model.
      */
@@ -170,12 +167,7 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_HOME);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Get the work address for this model.
      */
@@ -184,12 +176,7 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_WORK);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Get the billing address for this model.
      */
@@ -198,12 +185,7 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_BILLING);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Get the shipping address for this model.
      */
@@ -221,12 +203,7 @@ Utilizzo del trait:
 class Doctor extends Model
 {
     use HasAddresses;
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // ... altri metodi e proprietà
 }
 
@@ -258,45 +235,25 @@ class AddressForm
                     Forms\Components\TextInput::make('street_address')
                         ->label('address-form.fields.street_address')
                         ->required(),
-<<<<<<< HEAD
                         
-                        
-=======
-
->>>>>>> 6ed19256f (.)
                     Forms\Components\TextInput::make('address_line2')
                         ->label('address-form.fields.address_line2'),
                 ])
                 ->columns(2),
-<<<<<<< HEAD
                 
-                
-=======
-
->>>>>>> 6ed19256f (.)
             Forms\Components\Grid::make()
                 ->schema([
                     // Componenti per regione, provincia e comune
                     // ... componenti geografici specifici per l'Italia
                 ])
                 ->columns(3),
-<<<<<<< HEAD
                 
-                
-=======
-
->>>>>>> 6ed19256f (.)
             Forms\Components\Grid::make()
                 ->schema([
                     Forms\Components\TextInput::make('postal_code')
                         ->label('address-form.fields.postal_code')
                         ->required(),
-<<<<<<< HEAD
                         
-                        
-=======
-
->>>>>>> 6ed19256f (.)
                     Forms\Components\Select::make('type')
                         ->label('address-form.fields.type')
                         ->options(function () {
@@ -304,12 +261,7 @@ class AddressForm
                         })
                         ->default(Address::TYPE_HOME)
                         ->required(),
-<<<<<<< HEAD
                         
-                        
-=======
-
->>>>>>> 6ed19256f (.)
                     Forms\Components\Toggle::make('is_primary')
                         ->label('address-form.fields.is_primary')
                         ->default(false),
@@ -317,12 +269,7 @@ class AddressForm
                 ->columns(3),
         ];
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     public static function saveAddress(Model $model, array $data): void
     {
         $address = $model->addresses()->updateOrCreate(
@@ -341,12 +288,7 @@ class AddressForm
                 'country_code' => $data['country_code'] ?? 'IT',
             ]
         );
-<<<<<<< HEAD
         
-        
-=======
-
->>>>>>> 6ed19256f (.)
         // Se questo è l'indirizzo principale, imposta tutti gli altri come non principali
         if ($data['is_primary'] ?? false) {
             $model->addresses()
@@ -383,12 +325,7 @@ trait HasAddress
     {
         return json_decode($this->attributes['address_data'] ?? '{}', true);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     public function setAddressAttribute(array $value): void
     {
         $this->attributes['address_data'] = json_encode($value);
@@ -453,8 +390,4 @@ Il modello `Address` è stato progettato per essere altamente riutilizzabile in 
 2. **Per semplicità**: Utilizzare il trait HasAddress con JSON
 3. **Per tipizzazione**: Considerare i modelli embeddable (con Laravel 10+)
 
-<<<<<<< HEAD
 In tutti i casi, è importante mantenere una struttura coerente per gli indirizzi in tutta l'applicazione e seguire le best practices per la validazione e la formattazione degli indirizzi italiani.
-=======
-In tutti i casi, è importante mantenere una struttura coerente per gli indirizzi in tutta l'applicazione e seguire le best practices per la validazione e la formattazione degli indirizzi italiani.
->>>>>>> 6ed19256f (.)

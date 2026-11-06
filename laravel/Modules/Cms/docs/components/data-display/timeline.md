@@ -1,3 +1,15 @@
+---
+title: "timeline"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "timeline"
+issues: []
+discussions: []
+status: draft
+---
+
 # Timeline
 
 Il componente Timeline visualizza una sequenza di eventi in ordine cronologico, ideale per mostrare storico, attività o progressi.
@@ -50,7 +62,6 @@ Il componente Timeline visualizza una sequenza di eventi in ordine cronologico, 
 ```blade
 <x-filament::timeline>
     <x-filament::timeline.item
-        title="Stato Aggiornato"
         date="2024-03-15"
     >
         <x-slot name="badge">
@@ -214,8 +225,4 @@ Il componente Timeline visualizza una sequenza di eventi in ordine cronologico, 
 4. **Best Practices**
    - Limitare numero di eventi visibili
    - Ottimizzare rendering icone
-<<<<<<< HEAD
    - Implementare infinite scroll per timeline lunghe
-=======
-   - Implementare infinite scroll per timeline lunghe
->>>>>>> 6ed19256f (.)

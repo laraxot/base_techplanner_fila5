@@ -1,3 +1,15 @@
+---
+title: "phpstan activity fixes complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan activity fixes complete"
+issues: []
+discussions: []
+status: draft
+---
+
 # ✅ Correzioni PHPStan Modulo Activity Completate
 
 ## 🎯 Errori Risolti
@@ -40,8 +52,3 @@ array_merge(
 \Modules\Module\Database\Factories\ModelFactory::new()
 ```
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)

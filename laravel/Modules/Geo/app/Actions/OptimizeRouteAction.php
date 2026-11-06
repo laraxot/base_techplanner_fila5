@@ -5,23 +5,19 @@ declare(strict_types=1);
 namespace Modules\Geo\Actions;
 
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
 use Modules\Geo\Contracts\CalculateDistanceActionContract;
-=======
->>>>>>> 6ed19256f (.)
 use Modules\Geo\Datas\LocationData;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Action per ottimizzare l'ordine di un percorso minimizzando la distanza totale.
  */
-readonly class OptimizeRouteAction
+class OptimizeRouteAction
 {
+    use QueueableAction;
+
     public function __construct(
-<<<<<<< HEAD
-        private CalculateDistanceActionContract $calculateDistance,
-=======
-        private CalculateDistanceAction $calculateDistance,
->>>>>>> 6ed19256f (.)
+        private readonly CalculateDistanceActionContract $calculateDistance,
     ) {
     }
 

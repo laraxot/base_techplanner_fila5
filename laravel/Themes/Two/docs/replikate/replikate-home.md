@@ -1,0 +1,3 @@
+# Replikate home
+
+controlla la nostra homepage url /it sembra che abbia dei contenuti duplicati, puoi controllare ? dopo analizza studia ragiona e aggiorna le cartelle docs dentro i moduli e dentro i temi

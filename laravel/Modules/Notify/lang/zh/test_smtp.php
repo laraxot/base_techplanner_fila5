@@ -7,126 +7,72 @@ return [
         'label' => 'SMTP测试',
         'group' => '通知',
         'icon' => 'heroicon-o-envelope-open',
-        'sort' => 47,
-    ],
+        'sort' => 47],
     'label' => 'SMTP测试',
     'plural_label' => 'SMTP测试',
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'name' => [
             'label' => '名称',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'host' => [
             'label' => '主机',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'port' => [
             'label' => '端口',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'username' => [
             'label' => '用户名',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'password' => [
             'label' => '密码',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'encryption' => [
             'label' => '加密',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'from_address' => [
             'label' => '发件人地址',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'from_name' => [
             'label' => '发件人名称',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'status' => [
             'label' => '状态',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'last_tested_at' => [
             'label' => '最后测试时间',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'created_at' => [
             'label' => '创建时间',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => '名称',
-        ],
-        'host' => [
-            'label' => '主机',
-        ],
-        'port' => [
-            'label' => '端口',
-        ],
-        'username' => [
-            'label' => '用户名',
-        ],
-        'password' => [
-            'label' => '密码',
-        ],
-        'encryption' => [
-            'label' => '加密',
-        ],
-        'from_address' => [
-            'label' => '发件人地址',
-        ],
-        'from_name' => [
-            'label' => '发件人名称',
-        ],
-        'status' => [
-            'label' => '状态',
-        ],
-        'last_tested_at' => [
-            'label' => '最后测试时间',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'description' => '']],
     'actions' => [
         'send_test_email' => [
-            'label' => '发送测试邮件',
-        ],
+            'label' => '发送测试邮件'],
         'test_connection' => [
-            'label' => '测试连接',
-        ],
-    ],
-];
+            'label' => '测试连接']]];

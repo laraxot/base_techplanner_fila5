@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see Jeffgreco13\FilamentBreezy\Pages
  * @see https://www.filamentcomponents.com/blog/how-to-create-a-custom-profile-page-with-filamentphp
@@ -14,11 +13,8 @@ use Filament\Facades\Filament;
 use Filament\Forms\Components\TextInput;
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
 use Filament\Schemas\Concerns\InteractsWithSchemas;
 use Filament\Schemas\Contracts\HasSchemas;
-=======
->>>>>>> 6ed19256f (.)
 use Filament\Schemas\Schema;
 use Filament\Support\Exceptions\Halt;
 use Illuminate\Contracts\Auth\Authenticatable;
@@ -32,17 +28,14 @@ use Modules\Xot\Filament\Pages\XotBasePage;
  * @property Schema $editProfileForm
  * @property Schema $editPasswordForm
  */
-<<<<<<< HEAD
 class MyProfilePage extends XotBasePage implements HasSchemas
 {
     use InteractsWithSchemas;
 
-=======
-class MyProfilePage extends XotBasePage
-{
->>>>>>> 6ed19256f (.)
+    /** @var array<string, mixed>|null */
     public ?array $profileData = [];
 
+    /** @var array<string, mixed>|null */
     public ?array $passwordData = [];
 
     protected string $view = 'user::filament.pages.my-profile';
@@ -86,7 +79,6 @@ class MyProfilePage extends XotBasePage
                     ->aside()
                     ->description('Ensure your account is using long, random password to stay secure.')
                     ->schema([
-<<<<<<< HEAD
                         TextInput::make('current_password')
                             ->password()
                             ->required()
@@ -94,21 +86,11 @@ class MyProfilePage extends XotBasePage
                             ->validationMessages([
                                 'current_password' => 'current_password',
                             ]),
-=======
-                        TextInput::make('Current password')
-                            ->password()
-                            ->required()
-                            ->currentPassword(),
->>>>>>> 6ed19256f (.)
                         PasswordData::make()
                             ->getPasswordFormComponent('new_password')
                             ->dehydrateStateUsing(fn (string $state): string => Hash::make($state))
                             ->live(debounce: 500),
-<<<<<<< HEAD
                         // ->same('password_confirmation')
-=======
-                        // ->same('passwordConfirmation')
->>>>>>> 6ed19256f (.)
                         /*
                          * Forms\Components\TextInput::make('password')
                          * ->password()
@@ -117,15 +99,9 @@ class MyProfilePage extends XotBasePage
                          * ->autocomplete('new-password')
                          * ->dehydrateStateUsing(fn ($state): string => Hash::make($state))
                          * ->live(debounce: 500)
-<<<<<<< HEAD
                          * ->same('password_confirmation'),
                          */
                         TextInput::make('password_confirmation')
-=======
-                         * ->same('passwordConfirmation'),
-                         */
-                        TextInput::make('passwordConfirmation')
->>>>>>> 6ed19256f (.)
                             ->password()
                             ->required()
                             ->dehydrated(false)
@@ -140,11 +116,7 @@ class MyProfilePage extends XotBasePage
     {
         $user = Filament::auth()->user();
 
-<<<<<<< HEAD
         if (! $user instanceof Model) {
-=======
-        if (! ($user instanceof Model)) {
->>>>>>> 6ed19256f (.)
             throw new \Exception('The authenticated user object must be an Eloquent model to allow the profile page to update it.');
         }
 
@@ -163,7 +135,7 @@ class MyProfilePage extends XotBasePage
 
     public function getSubheading(): ?string
     {
-        return __('user::profile.subheading') ?? null;
+        return __('user::profile.subheading');
     }
 
     // public static function shouldRegisterNavigation(): bool
@@ -215,13 +187,8 @@ class MyProfilePage extends XotBasePage
                 unset($data['new_password']);
             }
 
-<<<<<<< HEAD
             if (isset($data['password_confirmation'])) {
                 unset($data['password_confirmation']);
-=======
-            if (isset($data['passwordConfirmation'])) {
-                unset($data['passwordConfirmation']);
->>>>>>> 6ed19256f (.)
             }
 
             $this->handleRecordUpdate($this->getUser(), $data);
@@ -252,10 +219,7 @@ class MyProfilePage extends XotBasePage
 
     protected function fillForms(): void
     {
-<<<<<<< HEAD
         /** @var array<string, mixed> $data */
-=======
->>>>>>> 6ed19256f (.)
         $data = $this->getUser()->attributesToArray();
 
         $this->editProfileForm->fill($data);
@@ -283,6 +247,9 @@ class MyProfilePage extends XotBasePage
      * }
      */
 
+    /**
+     * @return array<Action>
+     */
     protected function getUpdateProfileFormActions(): array
     {
         return [
@@ -290,6 +257,9 @@ class MyProfilePage extends XotBasePage
         ];
     }
 
+    /**
+     * @return array<Action>
+     */
     protected function getUpdatePasswordFormActions(): array
     {
         return [
@@ -300,7 +270,7 @@ class MyProfilePage extends XotBasePage
     // ...
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

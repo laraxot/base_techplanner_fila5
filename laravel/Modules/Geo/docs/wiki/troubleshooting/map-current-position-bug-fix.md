@@ -1,4 +1,7 @@
 ---
+qmd: "map current position bug fix"
+issues: []
+discussions: []
 title: "Map Current Position Bug Fix"
 type: troubleshooting
 confidence: high
@@ -6,8 +9,9 @@ created: 2026-05-13
 updated: 2026-05-13
 tags: [map-lit, geolocation, fullscreen, search-control, coordinate-picker]
 related:
-  - concepts/segnalazioni-elenco-map-visibility-issue.md
+  - concepts/ticket-list-map-visibility-issue.md
   - concepts/ticket-location-json-architecture.md
+status: draft
 ---
 
 # Map Current Position Bug Fix
@@ -135,6 +139,6 @@ Open browser console and check for:
 
 ## Related Documentation
 
-- [[concepts/segnalazioni-elenco-map-visibility-issue.md]] - Previous map visibility fixes
+- [[concepts/ticket-list-map-visibility-issue.md]] - Previous map visibility fixes
 - [[concepts/ticket-location-json-architecture.md]] - Location data structure
 - [[concepts/geo-map-controls-unification-rule.md]] - Map controls architecture

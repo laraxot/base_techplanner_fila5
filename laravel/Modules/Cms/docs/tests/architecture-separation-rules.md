@@ -1,12 +1,14 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: architecture-separation-rules
-canonical: ../../../../Themes/docs/shared-components/architecture-aration-rules.md
+title: "Architecture Separation Rules - Test Strategy"
+type: note
+status: draft
+created: 2026-01-27
+updated: 2026-10-18
+module: Cms
+tags: [docs, cms, tests]
+qmd: "architecture separation rules - test strategy cms"
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/architecture-aration-rules.md
-=======
 # Architecture Separation Rules - Test Strategy
 
 ## 🚨 **REGOLA CRITICA: Separazione Architettuale**
@@ -15,7 +17,7 @@ See canonical documentation: ../../../../Themes/docs/shared-components/architect
 
 ## 📊 **Architetture Separate**
 
-### 1. **Laravel Folio Pages**
+### 1. **Laravel Folio Pages** 
 - **File Test**: `{PageName}Test.php`
 - **Target**: Route e rendering pagina
 - **Focus**: UI, middleware, layout, elementi
@@ -31,7 +33,7 @@ test('login page can be rendered', function () {
 ```
 
 ### 2. **Filament Widgets**
-- **File Test**: `{WidgetName}WidgetTest.php`
+- **File Test**: `{WidgetName}WidgetTest.php` 
 - **Target**: Componente widget logic
 - **Focus**: Form, validation, business logic
 
@@ -49,7 +51,7 @@ test('widget can be rendered', function () {
 - ✅ **LoginTest.php**: Pagina `/it/auth/login` (Laravel Folio)
 - ✅ **LoginWidgetTest.php**: Widget `LoginWidget` (Filament)
 
-### Register vs RegistrationWidget
+### Register vs RegistrationWidget  
 - ✅ **RegisterTypeTest.php**: Pagina `/it/auth/{type}/register` (Laravel Folio)
 - ✅ **RegisterTypeWidgetTest.php**: Widget `RegistrationWidget` (Filament)
 
@@ -60,14 +62,14 @@ test('widget can be rendered', function () {
 - ✅ Focus: rendering, middleware, UI elements
 
 ### LoginWidgetTest.php (Widget)
-- ✅ 5/7 test passati (71% successo)
+- ✅ 5/7 test passati (71% successo)  
 - ✅ Focus: form logic, authentication, validation
 
 ### RegisterTypeTest.php (Pagina)
 - ✅ 10/14 test passati (71% successo)
 - ✅ Focus: parametro dinamico [type], rendering condizionale
 
-### RegisterTypeWidgetTest.php (Widget)
+### RegisterTypeWidgetTest.php (Widget) 
 - ✅ 9/9 test passati (100% successo) 🏆
 - ✅ Focus: widget logic, form interaction, XotData integration
 
@@ -150,7 +152,7 @@ test('page has correct middleware', function () {
 });
 ```
 
-### Widget Test Template
+### Widget Test Template  
 ```php
 <?php
 
@@ -196,7 +198,7 @@ function mockXotData(): void {
 - Review più semplici
 - Onboarding nuovo team più rapido
 
-### 4. **Architecture Enforcement**
+### 4. **Architecture Enforcement**  
 - Forza rispetto dei boundaries modulari
 - Previene tight coupling
 - Mantiene separation of concerns
@@ -209,7 +211,6 @@ function mockXotData(): void {
 
 ---
 
-**Status**: ✅ Regole Stabilite e Validate
-**Enforcement**: Obbligatorio per tutti i nuovi test
-**Review**: Required in code review process
->>>>>>> 6ed19256f (.)
+**Status**: ✅ Regole Stabilite e Validate  
+**Enforcement**: Obbligatorio per tutti i nuovi test  
+**Review**: Required in code review process 

@@ -4,13 +4,7 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-        'qty' => [
-            'label' => 'qty',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
+        'qty' => ['label' => 'qty', 'tooltip' => '', 'helper_text' => '', 'description' => '', 'placeholder' => 'qty'],
     ],
     'label' => 'Fake Seeder Header',
     'plural_label' => 'Fake Seeder Header (Plurale)',
@@ -34,8 +28,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Fake Seeder Header',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

@@ -1,3 +1,15 @@
+---
+title: "convenzioni naming campi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "convenzioni naming campi"
+issues: []
+discussions: []
+status: draft
+---
+
 # Convenzioni di Naming dei Campi
 
 ## Collegamenti Bidirezionali
@@ -101,17 +113,10 @@ TextInput::make('full_name')
 ## Collegamenti Correlati
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/fields/text-input)
-<<<<<<< HEAD
 - [Best Practices Database](../../../../docs/database/best-practices.md)
 - [Convenzioni API](../../../../docs/api/convenzioni.md)
 ## Collegamenti tra versioni di convenzioni-naming-campi.md
 * [convenzioni-naming-campi.md](../../../../../docs/convenzioni-naming-campi.md)
-=======
-- [Best Practices Database](../../../docs/database/best-practices.md)
-- [Convenzioni API](../../../docs/api/convenzioni.md)
-## Collegamenti tra versioni di convenzioni-naming-campi.md
-* [convenzioni-naming-campi.md](../../../../docs/convenzioni-naming-campi.md)
->>>>>>> 6ed19256f (.)
 # Convenzioni di Naming dei Campi
 
 ## Collegamenti Bidirezionali
@@ -215,7 +220,6 @@ TextInput::make('full_name')
 ## Collegamenti Correlati
 
 - [Documentazione Filament Forms](https://filamentphp.com/project_docs/3.x/forms/fields/text-input)
-<<<<<<< HEAD
 - [Best Practices Database](../../../../docs/project/database/best-practices.md)
 - [Convenzioni API](../../../../docs/project/api/convenzioni.md)
 ## Collegamenti tra versioni di convenzioni-naming-campi.md
@@ -223,12 +227,3 @@ TextInput::make('full_name')
 - [Documentazione Filament Forms](https://filamentphp.com/project_docs/3.x/forms/fields/text-input)
 - [Best Practices Database](../../../../docs/project/database/best-practices.md)
 - [Convenzioni API](../../../../docs/project/api/convenzioni.md)
-=======
-- [Best Practices Database](../../../project_docs/database/best-practices.md)
-- [Convenzioni API](../../../project_docs/api/convenzioni.md)
-## Collegamenti tra versioni di convenzioni-naming-campi.md
-* [convenzioni-naming-campi.md](../../../../project_docs/convenzioni-naming-campi.md)
-- [Documentazione Filament Forms](https://filamentphp.com/project_docs/3.x/forms/fields/text-input)
-- [Best Practices Database](../../../project_docs/database/best-practices.md)
-- [Convenzioni API](../../../project_docs/api/convenzioni.md)
->>>>>>> 6ed19256f (.)

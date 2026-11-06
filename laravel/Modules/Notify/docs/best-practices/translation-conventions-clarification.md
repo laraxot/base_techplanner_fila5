@@ -1,3 +1,23 @@
+---
+title: "Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify"
+type: concept
+tags: [notify, docs, best-practices, translation, conventions, clarification]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione best practices translation conventions clarification chiarimento sulle convenzioni di traduzione nel modulo notify frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../architecture/README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - naming-conventions.md
+status: draft
+---
 # Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify
 
 ## Identificazione di Convenzioni Contrastanti
@@ -45,11 +65,7 @@ Dopo un'analisi approfondita, è stato determinato che:
 
 2. **Eccezioni alle convenzioni generali**
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di
-<<<<<<< HEAD
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di <nome progetto>
-=======
-   - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di SaluteOra
->>>>>>> 6ed19256f (.)
    - Questa eccezione è documentata e intenzionale
 
 ## Convenzioni Corrette per il Modulo Notify
@@ -87,20 +103,15 @@ return [
 ## Conclusione
 
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di , poiché rappresentano un'eccezione documentata.
-<<<<<<< HEAD
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di <nome progetto>, poiché rappresentano un'eccezione documentata.
-=======
-Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di SaluteOra, poiché rappresentano un'eccezione documentata.
->>>>>>> 6ed19256f (.)
 
 ## Riferimenti
 
-- [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
-- [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
-- [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
-<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](./translation_conventions.md)
 - [Regole per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Regole per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
+- [Convenzioni Generali di Traduzione](../../../Lang/docs/translation_keys_rules.md)
+- [Convenzioni Specifiche del Modulo Notify](../translation_conventions.md)
+- [Regole per le Chiavi di Traduzione](../../../Lang/docs/translation_keys_best_practices.md)
+- [Regole per le Chiavi di Traduzione](../../../Lang/docs/translation-keys-best-practices.md)

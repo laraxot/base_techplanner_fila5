@@ -21,14 +21,11 @@ export default {
           800: '#075985',
           900: '#0c4a6e',
         },
-<<<<<<< HEAD
         brand: {
           blue: '#1E5A96',
           green: '#2D8659',
           orange: '#D35400',
         },
-=======
->>>>>>> 6ed19256f (.)
         secondary: {
           50: '#f8fafc',
           100: '#f1f5f9',
@@ -52,9 +49,5 @@ export default {
     require('@tailwindcss/typography'),
     require('flowbite/plugin'),
   ],
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> 6ed19256f (.)

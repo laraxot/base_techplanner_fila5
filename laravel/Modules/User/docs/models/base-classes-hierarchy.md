@@ -1,12 +1,26 @@
+---
+title: "Gerarchia delle Classi Base - Modulo User"
+type: concept
+tags: [base, classes, hierarchy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "base-classes-hierarchy gerarchia delle classi base - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./baseuser.md"
+  - "./README.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+  - "./xotbasepivot-migration.md"
+status: draft
+---
+
 # Gerarchia delle Classi Base - Modulo User
 
-<<<<<<< HEAD
 **Data:** 15 Ottobre 2025  
 **Tipo:** Documentazione Architetturale  
-=======
-**Data:** 15 Ottobre 2025
-**Tipo:** Documentazione Architetturale
->>>>>>> 6ed19256f (.)
 **Stato:** ✅ Aggiornato
 
 ## Principio Fondamentale
@@ -87,11 +101,7 @@ namespace Modules\User\Models;
 class User extends BaseModel
 {
     protected $fillable = ['name', 'email'];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function teams(): BelongsToMany
     {
         return $this->belongsToMany(Team::class);
@@ -139,40 +149,24 @@ namespace Modules\User\Models;
 
 /**
  * TeamUser Pivot Model
-<<<<<<< HEAD
  * 
-=======
- *
->>>>>>> 6ed19256f (.)
  * Tabella pivot per la relazione many-to-many tra Team e User.
  */
 class TeamUser extends BasePivot
 {
     protected $table = 'team_user';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected $fillable = [
         'team_id',
         'user_id',
         'role',
     ];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function team(): BelongsTo
     {
         return $this->belongsTo(Team::class);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function user(): BelongsTo
     {
         return $this->belongsTo(User::class);
@@ -211,21 +205,13 @@ namespace Modules\User\Models;
 
 /**
  * ModelHasRole Morph Pivot
-<<<<<<< HEAD
  * 
-=======
- *
->>>>>>> 6ed19256f (.)
  * Tabella pivot polymorphic: qualsiasi modello può avere ruoli.
  */
 class ModelHasRole extends BaseMorphPivot
 {
     protected $table = 'model_has_role';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected $fillable = [
         'role_id',
         'model_type',
@@ -399,18 +385,11 @@ Quando crei un nuovo modello nel modulo User:
 - [Architettura Core](../core/architecture.md)
 - [XotBasePivot Migration Guide](./xotbasepivot-migration.md)
 - [Best Practices](../best-practices/models.md)
+- [Best Practices](../models.md)
 - [PHPStan Compliance](../development/phpstan-guide.md)
 
 ---
 
-<<<<<<< HEAD
-**Ultimo aggiornamento:** 15 Ottobre 2025  
 **Autore:** AI Assistant + Team Laraxot  
 **Versione:** 2.0 - Correzione gerarchia modelli  
 **Status:** ✅ Production Ready
-=======
-**Ultimo aggiornamento:** 15 Ottobre 2025
-**Autore:** AI Assistant + Team Laraxot
-**Versione:** 2.0 - Correzione gerarchia modelli
-**Status:** ✅ Production Ready
->>>>>>> 6ed19256f (.)

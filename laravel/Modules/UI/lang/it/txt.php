@@ -7,7 +7,6 @@ return [
     'edit' => 'modifica',
     'view' => 'vedi',
     'note' => 'note',
-<<<<<<< HEAD
     'label' => 'Txt',
     'plural_label' => 'Txt (Plurale)',
     'navigation' => [
@@ -19,7 +18,7 @@ return [
         ],
         'label' => 'Txt',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -52,6 +51,4 @@ return [
             'label' => 'Elimina Txt',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

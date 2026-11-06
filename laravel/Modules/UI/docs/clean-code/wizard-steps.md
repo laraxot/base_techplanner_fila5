@@ -1,3 +1,15 @@
+---
+title: "wizard steps"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "wizard steps"
+issues: []
+discussions: []
+status: draft
+---
+
 # Gestione degli Step nei Wizard Filament
 
 ## Collegamenti Bidirezionali
@@ -136,8 +148,4 @@ class DoctorResource extends XotBaseResource
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/layout/wizard)
 - [Best Practices Forms](../forms/best-practices.md)
-<<<<<<< HEAD
 - [Clean Code Guidelines](../../../../docs/clean-code.md)
-=======
-- [Clean Code Guidelines](../../../docs/clean-code.md)
->>>>>>> 6ed19256f (.)

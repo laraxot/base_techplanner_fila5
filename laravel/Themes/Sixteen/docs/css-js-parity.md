@@ -1,3 +1,15 @@
+---
+title: "css js parity"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "css js parity"
+issues: []
+discussions: []
+status: draft
+---
+
 # CSS/JS Parity Phase - Design Comuni
 
 ## Obiettivo
@@ -52,7 +64,7 @@ When fixing fonts on Design Comuni pages, ALWAYS check for conflicting rules wit
 | segnalazione-area-personale | **91.9%** | 886 righe | 875 righe | ✅ PASS |
 | segnalazione-dettaglio | **86.8%** | 804 righe | 812 righe | ✅ PASS |
 | segnalazione-03-riepilogo | **83.3%** | 523 righe | 529 righe | ✅ PASS |
-| segnalazioni-elenco | **72.5%** | 775 righe | 783 righe | ⚠️ NEEDS WORK |
+| ticket-list | **72.5%** | 775 righe | 783 righe | ⚠️ NEEDS WORK |
 | segnalazione-04-conferma | **43.6%** | 551 righe | 224 righe | ❌ NEEDS WORK |
 
 **5/7 pages PASS (>80% threshold)**
@@ -63,7 +75,7 @@ When fixing fonts on Design Comuni pages, ALWAYS check for conflicting rules wit
 - **segnalazione-03-riepilogo**: Phone shows literal `:phone` instead of actual number (data issue)
 - **segnalazione-04-conferma**: Stepper shows circles instead of tabs; missing wrapper structure
 - **segnalazione-dettaglio**: Empty green line gaps between content sections
-- **segnalazioni-elenco**: Title uppercase "ELENCO SEGNALAZIONI" vs reference "Elenco segnalazioni"
+- **ticket-list**: Title uppercase "ELENCO SEGNALAZIONI" vs reference "Elenco segnalazioni"
 - **segnalazione-area-personale**: ✅ Looks good visually
 
 ### CSS Fixes Applied (2026-04-09)
@@ -155,5 +167,5 @@ Senza screenshot automatici, verificare visivamente:
 
 ## See Also
 - [Segnalazione CSS Diff](segnalazione-css-diff.md)
-- [Design Comuni Master Plan](design-comuni/MASTER_IMPLEMENTATION_PLAN.md)
+- [Design Comuni Master Plan](design-comuni/master-implementation-plan.md)
 - [Sixteen Theme Index](../../docs/themes/index.md)

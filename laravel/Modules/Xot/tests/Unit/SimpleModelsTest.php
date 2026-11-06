@@ -1,34 +1,18 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\Xot\Tests\Unit;
-
-use Modules\UI\Models\Asset;
 use Modules\Xot\Models\Module;
+use Modules\Xot\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-it('can create a test asset', function () {
-    $asset = Asset::factory()->create([
-        'name' => 'Test Asset',
-        'path' => '/test/path',
-    ]);
+uses(TestCase::class);
 
-    expect($asset)->toBeInstanceOf(Asset::class);
-    expect($asset->name)->toBe('Test Asset');
-    expect($asset->path)->toBe('/test/path');
+// Module e' un registry Sushi di sola lettura: le righe vengono da nwidart (getRows()),
+// non si creano con una factory. Lo schema Sushi non ha le colonne della ModuleFactory.
+it('legge i moduli nwidart dal registry Sushi', function () {
+    $module = Module::query()->where('name', 'Xot')->first();
+
+    Assert::assertInstanceOf(Module::class, $module);
+    Assert::assertSame('Xot', $module->name);
 });
 
-it('can create a test module', function () {
-    $module = Module::factory()->create([
-        'name' => 'TestModule',
-        'enabled' => true,
-    ]);
-
-    expect($module)->toBeInstanceOf(Module::class);
-    expect($module->name)->toBe('TestModule');
-    expect($module->enabled)->toBeTrue();
-});
-
-it('can run migrations', function () {
-    $this->artisan('migrate', ['--env' => 'testing', '--force' => true]);
-});

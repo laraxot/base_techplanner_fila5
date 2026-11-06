@@ -1,3 +1,11 @@
+---
+title: "Proprietà `$data` in XotBaseWidget: COMPONENTE CRITICO DEL SISTEMA"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "proprietà `$data` in xotbasewidget: componente critico del sistema xot"
+---
 # Proprietà `$data` in XotBaseWidget: COMPONENTE CRITICO DEL SISTEMA
 
 ## ⚠️ AVVISO CRITICO
@@ -77,11 +85,7 @@ Se la proprietà `$data` viene rimossa da `XotBaseWidget`, si verificano i segue
 Prima di ogni commit che coinvolge `XotBaseWidget`, eseguire questo controllo:
 
 ```bash
-<<<<<<< HEAD
 grep -n "public ?array \$data" Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
-=======
-grep -n "public ?array \$data" /var/www/html/base_saluteora/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php
->>>>>>> 6ed19256f (.)
 ```
 
 Se il comando non restituisce risultati, LA PROPRIETÀ È STATA RIMOSSA e deve essere ripristinata immediatamente.

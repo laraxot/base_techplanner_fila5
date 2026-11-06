@@ -1,7 +1,13 @@
-<<<<<<< HEAD
-multi key, fixing lazy loading
-https://github.com/topclaudy/compoships
-=======
+---
+title: "Modelli"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Modelli"
+---
 # Modelli
 
 ## Configurazione Base
@@ -250,7 +256,7 @@ try {
     Log::error('Errore nella creazione del prodotto', [
         'error' => $e->getMessage(),
     ]);
-
+    
     throw $e;
 }
 ```
@@ -314,5 +320,4 @@ class Comment extends Model
         return $this->morphTo();
     }
 }
-```
->>>>>>> 6ed19256f (.)
+``` 

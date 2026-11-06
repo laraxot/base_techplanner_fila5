@@ -1,3 +1,15 @@
+---
+title: "geojson model vs sushi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geojson model vs sushi"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Comparativa: GeoJsonModel vs Laravel Sushi
 
 ## Panoramica
@@ -184,21 +196,10 @@ Una migrazione a Laravel Sushi potrebbe essere riconsiderata, con un costo di co
 
 ## Collegamenti a Documentazione Correlata
 
-- [Modulo Core: Architettura](../../Xot/docs/module-architecture.md)
-- [Best Practices per i Modelli](../../Xot/docs/model-best-practices.md)
-- [Pattern di Data Access](../../Xot/docs/data-access-patterns.md)
-<<<<<<< HEAD
 - [Modulo Core: Architettura](../../xot/docs/module-architecture.md)
 - [Best Practices per i Modelli](../../xot/docs/model-best-practices.md)
 - [Pattern di Data Access](../../xot/docs/data-access-patterns.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Laravel Sushi GitHub](https://github.com/calebporzio/sushi)
 
 ---
-
-<<<<<<< HEAD
 *Documento creato il: 27/05/2025*
-=======
-*Documento creato il: 27/05/2025*
->>>>>>> 6ed19256f (.)

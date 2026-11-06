@@ -7,11 +7,8 @@ return [
         'view' => [
             'label' => 'View',
             'tooltip' => 'Select the view to display',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -22,7 +19,6 @@ return [
             'color' => 'primary',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -32,6 +28,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

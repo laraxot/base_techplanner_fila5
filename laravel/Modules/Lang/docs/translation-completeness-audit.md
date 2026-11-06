@@ -1,23 +1,34 @@
+---
+issues: []
+discussions: []
+title: "Translation Completeness Audit"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Translation Completeness Audit
 
 ## Overview
-<<<<<<< HEAD
 This document tracks the completeness and quality of translation files across the <nome progetto> system, ensuring all user-facing text is properly localized in Italian, English, and German.
-=======
-This document tracks the completeness and quality of translation files across the SaluteOra system, ensuring all user-facing text is properly localized in Italian, English, and German.
->>>>>>> 6ed19256f (.)
 
 ## Recent Updates
 
 ### 2025-01-06: Complete PDF Template Internationalization
-<<<<<<< HEAD
+### 2025-01-06: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### 2025-01-06: Complete PDF Template Internationalization
 ### 2025-01-06: Complete PDF Template Internationalization
 
 **Issue**: PDF template `Themes/One/resources/views/appointment/report_pdf.blade.php` contained hardcoded Italian text, making it non-multilingual.
-=======
-
-**Issue**: PDF template `/var/www/html/_bases/base_saluteora/laravel/Themes/One/resources/views/appointment/report_pdf.blade.php` contained hardcoded Italian text, making it non-multilingual.
->>>>>>> 6ed19256f (.)
 
 **Files Updated**:
 - `laravel/Themes/One/resources/views/appointment/report_pdf.blade.php` (completely internationalized)
@@ -74,10 +85,13 @@ This document tracks the completeness and quality of translation files across th
 - Proper Html2Pdf page break syntax maintained
 
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
-<<<<<<< HEAD
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
+### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
 
 **Files Updated**:
 - `laravel/Themes/One/lang/it/common.php`
@@ -93,10 +107,13 @@ This document tracks the completeness and quality of translation files across th
 - `page` used in PDF footer for page numbering
 
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
-<<<<<<< HEAD
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
+### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
 
 **File**: `laravel/Themes/One/resources/views/appointment/report_pdf.blade.php`
 
@@ -127,10 +144,13 @@ This document tracks the completeness and quality of translation files across th
 - Professional document structure
 
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
-<<<<<<< HEAD
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
+### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
 
 **Files**:
 - `laravel/Themes/One/resources/views/appointment/item.blade.php`
@@ -153,10 +173,13 @@ This document tracks the completeness and quality of translation files across th
 - `theme.my_profile` - "Il mio profilo" / "My Profile" / "Mein Profil"
 
 ### 2025-01-06: Report PDF Template Improvements
-<<<<<<< HEAD
 ### 2025-01-06: Report PDF Template Improvements
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Report PDF Template Improvements
+### [DATE]: Report PDF Template Improvements
+### [DATE]: Report PDF Template Improvements
+### [DATE]: Report PDF Template Improvements
+### 2025-01-06: Report PDF Template Improvements
+### 2025-01-06: Report PDF Template Improvements
 
 **File**: `laravel/Themes/One/resources/views/appointment/report_pdf.blade.php`
 
@@ -184,10 +207,13 @@ This document tracks the completeness and quality of translation files across th
 - Additional notes
 
 ### 2025-01-06: Appointment Translation Files Enhancement
-<<<<<<< HEAD
 ### 2025-01-06: Appointment Translation Files Enhancement
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Appointment Translation Files Enhancement
+### [DATE]: Appointment Translation Files Enhancement
+### [DATE]: Appointment Translation Files Enhancement
+### [DATE]: Appointment Translation Files Enhancement
+### 2025-01-06: Appointment Translation Files Enhancement
+### 2025-01-06: Appointment Translation Files Enhancement
 
 **Files Updated**:
 - `laravel/Themes/One/lang/it/appointment.php`
@@ -207,10 +233,13 @@ This document tracks the completeness and quality of translation files across th
 - Professional medical vocabulary
 
 ### 2025-01-06: Doctor Translation Files Audit and Fix
-<<<<<<< HEAD
 ### 2025-01-06: Doctor Translation Files Audit and Fix
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Doctor Translation Files Audit and Fix
+### [DATE]: Doctor Translation Files Audit and Fix
+### [DATE]: Doctor Translation Files Audit and Fix
+### [DATE]: Doctor Translation Files Audit and Fix
+### 2025-01-06: Doctor Translation Files Audit and Fix
+### 2025-01-06: Doctor Translation Files Audit and Fix
 
 **Files Updated**:
 - `laravel/Themes/One/lang/en/doctor.php`
@@ -229,10 +258,13 @@ This document tracks the completeness and quality of translation files across th
 - Maintained consistent structure across all language files
 
 ### 2025-01-06: Opening Hours Translation Improvements
-<<<<<<< HEAD
 ### 2025-01-06: Opening Hours Translation Improvements
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Opening Hours Translation Improvements
+### [DATE]: Opening Hours Translation Improvements
+### [DATE]: Opening Hours Translation Improvements
+### [DATE]: Opening Hours Translation Improvements
+### 2025-01-06: Opening Hours Translation Improvements
+### 2025-01-06: Opening Hours Translation Improvements
 
 **Files Updated**:
 - `laravel/Themes/One/lang/it/opening_hours.php`
@@ -251,19 +283,18 @@ This document tracks the completeness and quality of translation files across th
 - Professional tone suitable for medical appointment scheduling
 
 ### 2025-01-06: English Translation Files Completion
-<<<<<<< HEAD
 ### 2025-01-06: English Translation Files Completion
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: English Translation Files Completion
+### [DATE]: English Translation Files Completion
+### [DATE]: English Translation Files Completion
+### [DATE]: English Translation Files Completion
+### 2025-01-06: English Translation Files Completion
+### 2025-01-06: English Translation Files Completion
 
 **Files Updated**:
 - `laravel/Modules/Notify/lang/en/opening_hours.php`
 - `laravel/Modules/Notify/lang/en/send_email.php`
-<<<<<<< HEAD
 - `laravel/Modules/<nome progetto>/lang/en/find_doctor_widget.php`
-=======
-- `laravel/Modules/SaluteOra/lang/en/find_doctor_widget.php`
->>>>>>> 6ed19256f (.)
 
 **Process**:
 - Translated all Italian content to proper English
@@ -272,10 +303,13 @@ This document tracks the completeness and quality of translation files across th
 - Verified syntax correctness and array structure
 
 ### 2025-01-06: Translation Structure Modernization
-<<<<<<< HEAD
 ### 2025-01-06: Translation Structure Modernization
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Translation Structure Modernization
+### [DATE]: Translation Structure Modernization
+### [DATE]: Translation Structure Modernization
+### [DATE]: Translation Structure Modernization
+### 2025-01-06: Translation Structure Modernization
+### 2025-01-06: Translation Structure Modernization
 
 **Files Updated**:
 - `laravel/Modules/Notify/lang/it/send_email.php`
@@ -299,11 +333,7 @@ This document tracks the completeness and quality of translation files across th
 ### Completed ✅
 - ✅ Notify module Italian translations (modernized and expanded)
 - ✅ Notify module English translations (completed)
-<<<<<<< HEAD
 - ✅ <nome progetto> module English translations (completed)
-=======
-- ✅ SaluteOra module English translations (completed)
->>>>>>> 6ed19256f (.)
 - ✅ Theme opening hours translations (improved across all languages)
 - ✅ Theme doctor translations (fixed English and German)
 - ✅ Theme appointment translations (enhanced with complete fields)
@@ -338,39 +368,36 @@ This document tracks the completeness and quality of translation files across th
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
 - [Notify Module Translations](../laravel/Modules/Notify/lang/)
-<<<<<<< HEAD
+- [Notify Module Translations](../../Notify/lang)
 - [<nome progetto> Module Translations](../laravel/Modules/<nome progetto>/lang/)
-=======
-- [SaluteOra Module Translations](../laravel/Modules/SaluteOra/lang/)
->>>>>>> 6ed19256f (.)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 
 ---
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
-<<<<<<< HEAD
+*Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
+*
+*
+*
+*
+*Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
 # Translation Completeness Audit
 
 ## Overview
 This document tracks the completeness and quality of translation files across the <nome progetto> system, ensuring all user-facing text is properly localized in Italian, English, and German.
-=======
-# Translation Completeness Audit
-
-## Overview
-This document tracks the completeness and quality of translation files across the SaluteOra system, ensuring all user-facing text is properly localized in Italian, English, and German.
->>>>>>> 6ed19256f (.)
 
 ## Recent Updates
 
 ### 2025-01-06: Complete PDF Template Internationalization
-<<<<<<< HEAD
+### 2025-01-06: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### [DATE]: Complete PDF Template Internationalization
+### 2025-01-06: Complete PDF Template Internationalization
 ### 2025-01-06: Complete PDF Template Internationalization
 
 **Issue**: PDF template `Themes/One/resources/views/appointment/report_pdf.blade.php` contained hardcoded Italian text, making it non-multilingual.
-=======
-
-**Issue**: PDF template `/var/www/html/_bases/base_saluteora/laravel/Themes/One/resources/views/appointment/report_pdf.blade.php` contained hardcoded Italian text, making it non-multilingual.
->>>>>>> 6ed19256f (.)
 
 **Files Updated**:
 - `laravel/Themes/One/resources/views/appointment/report_pdf.blade.php` (completely internationalized)
@@ -427,10 +454,13 @@ This document tracks the completeness and quality of translation files across th
 - Proper Html2Pdf page break syntax maintained
 
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
-<<<<<<< HEAD
 ### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### [DATE]: Added Missing 'minutes' and 'page' Translation Keys
+### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
+### 2025-01-06: Added Missing 'minutes' and 'page' Translation Keys
 
 **Files Updated**:
 - `laravel/Themes/One/lang/it/common.php`
@@ -446,10 +476,13 @@ This document tracks the completeness and quality of translation files across th
 - `page` used in PDF footer for page numbering
 
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
-<<<<<<< HEAD
 ### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### [DATE]: PDF Template Redesign Following Designers Italia Principles
+### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
+### 2025-01-06: PDF Template Redesign Following Designers Italia Principles
 
 **File**: `laravel/Themes/One/resources/views/appointment/report_pdf.blade.php`
 
@@ -480,10 +513,13 @@ This document tracks the completeness and quality of translation files across th
 - Professional document structure
 
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
-<<<<<<< HEAD
 ### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### [DATE]: Fixed Hardcoded Italian Text in Theme Views
+### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
+### 2025-01-06: Fixed Hardcoded Italian Text in Theme Views
 
 **Files**:
 - `laravel/Themes/One/resources/views/appointment/item.blade.php`
@@ -506,10 +542,13 @@ This document tracks the completeness and quality of translation files across th
 - `theme.my_profile` - "Il mio profilo" / "My Profile" / "Mein Profil"
 
 ### 2025-01-06: Report PDF Template Improvements
-<<<<<<< HEAD
 ### 2025-01-06: Report PDF Template Improvements
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Report PDF Template Improvements
+### [DATE]: Report PDF Template Improvements
+### [DATE]: Report PDF Template Improvements
+### [DATE]: Report PDF Template Improvements
+### 2025-01-06: Report PDF Template Improvements
+### 2025-01-06: Report PDF Template Improvements
 
 **File**: `laravel/Themes/One/resources/views/appointment/report_pdf.blade.php`
 
@@ -537,10 +576,13 @@ This document tracks the completeness and quality of translation files across th
 - Additional notes
 
 ### 2025-01-06: Appointment Translation Files Enhancement
-<<<<<<< HEAD
 ### 2025-01-06: Appointment Translation Files Enhancement
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Appointment Translation Files Enhancement
+### [DATE]: Appointment Translation Files Enhancement
+### [DATE]: Appointment Translation Files Enhancement
+### [DATE]: Appointment Translation Files Enhancement
+### 2025-01-06: Appointment Translation Files Enhancement
+### 2025-01-06: Appointment Translation Files Enhancement
 
 **Files Updated**:
 - `laravel/Themes/One/lang/it/appointment.php`
@@ -560,10 +602,13 @@ This document tracks the completeness and quality of translation files across th
 - Professional medical vocabulary
 
 ### 2025-01-06: Doctor Translation Files Audit and Fix
-<<<<<<< HEAD
 ### 2025-01-06: Doctor Translation Files Audit and Fix
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Doctor Translation Files Audit and Fix
+### [DATE]: Doctor Translation Files Audit and Fix
+### [DATE]: Doctor Translation Files Audit and Fix
+### [DATE]: Doctor Translation Files Audit and Fix
+### 2025-01-06: Doctor Translation Files Audit and Fix
+### 2025-01-06: Doctor Translation Files Audit and Fix
 
 **Files Updated**:
 - `laravel/Themes/One/lang/en/doctor.php`
@@ -582,10 +627,13 @@ This document tracks the completeness and quality of translation files across th
 - Maintained consistent structure across all language files
 
 ### 2025-01-06: Opening Hours Translation Improvements
-<<<<<<< HEAD
 ### 2025-01-06: Opening Hours Translation Improvements
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Opening Hours Translation Improvements
+### [DATE]: Opening Hours Translation Improvements
+### [DATE]: Opening Hours Translation Improvements
+### [DATE]: Opening Hours Translation Improvements
+### 2025-01-06: Opening Hours Translation Improvements
+### 2025-01-06: Opening Hours Translation Improvements
 
 **Files Updated**:
 - `laravel/Themes/One/lang/it/opening_hours.php`
@@ -604,19 +652,18 @@ This document tracks the completeness and quality of translation files across th
 - Professional tone suitable for medical appointment scheduling
 
 ### 2025-01-06: English Translation Files Completion
-<<<<<<< HEAD
 ### 2025-01-06: English Translation Files Completion
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: English Translation Files Completion
+### [DATE]: English Translation Files Completion
+### [DATE]: English Translation Files Completion
+### [DATE]: English Translation Files Completion
+### 2025-01-06: English Translation Files Completion
+### 2025-01-06: English Translation Files Completion
 
 **Files Updated**:
 - `laravel/Modules/Notify/lang/en/opening_hours.php`
 - `laravel/Modules/Notify/lang/en/send_email.php`
-<<<<<<< HEAD
 - `laravel/Modules/<nome progetto>/lang/en/find_doctor_widget.php`
-=======
-- `laravel/Modules/SaluteOra/lang/en/find_doctor_widget.php`
->>>>>>> 6ed19256f (.)
 
 **Process**:
 - Translated all Italian content to proper English
@@ -625,10 +672,13 @@ This document tracks the completeness and quality of translation files across th
 - Verified syntax correctness and array structure
 
 ### 2025-01-06: Translation Structure Modernization
-<<<<<<< HEAD
 ### 2025-01-06: Translation Structure Modernization
-=======
->>>>>>> 6ed19256f (.)
+### [DATE]: Translation Structure Modernization
+### [DATE]: Translation Structure Modernization
+### [DATE]: Translation Structure Modernization
+### [DATE]: Translation Structure Modernization
+### 2025-01-06: Translation Structure Modernization
+### 2025-01-06: Translation Structure Modernization
 
 **Files Updated**:
 - `laravel/Modules/Notify/lang/it/send_email.php`
@@ -652,11 +702,7 @@ This document tracks the completeness and quality of translation files across th
 ### Completed ✅
 - ✅ Notify module Italian translations (modernized and expanded)
 - ✅ Notify module English translations (completed)
-<<<<<<< HEAD
 - ✅ <nome progetto> module English translations (completed)
-=======
-- ✅ SaluteOra module English translations (completed)
->>>>>>> 6ed19256f (.)
 - ✅ Theme opening hours translations (improved across all languages)
 - ✅ Theme doctor translations (fixed English and German)
 - ✅ Theme appointment translations (enhanced with complete fields)
@@ -691,16 +737,16 @@ This document tracks the completeness and quality of translation files across th
 
 - [Theme Translation Files](../laravel/Themes/One/lang/)
 - [Notify Module Translations](../laravel/Modules/Notify/lang/)
-<<<<<<< HEAD
+- [Notify Module Translations](../../Notify/lang)
 - [<nome progetto> Module Translations](../laravel/Modules/<nome progetto>/lang/)
-=======
-- [SaluteOra Module Translations](../laravel/Modules/SaluteOra/lang/)
->>>>>>> 6ed19256f (.)
 - [PDF Template](../laravel/Themes/One/resources/views/appointment/report_pdf.blade.php)
 
 ---
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
-<<<<<<< HEAD
 *Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
-=======
->>>>>>> 6ed19256f (.)
+*
+*
+*
+*
+*Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*
+*Last updated: 2025-01-06 - PDF template completely internationalized with full multilingual support*

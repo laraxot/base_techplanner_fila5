@@ -1,3 +1,15 @@
+---
+title: "navigation block"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "navigation block"
+issues: []
+discussions: []
+status: draft
+---
+
 # NavigationBlock
 
 ## Introduzione
@@ -157,26 +169,14 @@ Alpine.data('navigation', () => ({
 ```
 
 ## Links
-<<<<<<< HEAD
-- [Documentazione Filament Forms](../../../../docs/filament-forms.md)
-- [Gestione Contenuti](../../../../docs/content-management.md)
+- [Documentazione Filament Forms](../filament-forms.md)
+- [Gestione Contenuti](../content-management.md)
 - [Best Practices UI](../../../../docs/ui-best-practices.md)
 - [Sistema di Blocchi (root)](../../../../docs/blocks-system.md)
 - [Collegamenti alla documentazione principale](../../../../docs/collegamenti-documentazione.md)
-=======
-- [Documentazione Filament Forms](../../../docs/filament-forms.md)
-- [Gestione Contenuti](../../../docs/content-management.md)
-- [Best Practices UI](../../../docs/ui-best-practices.md)
-- [Sistema di Blocchi (root)](../../../docs/blocks-system.md)
-- [Collegamenti alla documentazione principale](../../../docs/collegamenti-documentazione.md)
->>>>>>> 6ed19256f (.)
 
 ## Note
 - La configurazione è salvata in JSON per versionamento
 - Supporto multilingua integrato
 - Cache automatica dei contenuti
-<<<<<<< HEAD
 - Backup incluso nel versionamento
-=======
-- Backup incluso nel versionamento
->>>>>>> 6ed19256f (.)

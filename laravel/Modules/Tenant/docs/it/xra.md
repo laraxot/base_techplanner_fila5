@@ -55,7 +55,6 @@ Di default viene utilizzata **laravel\Themes\adm_theme\Resources\views\admin\das
 * [xra.md](../../../Xot/docs/install/xra.md)
 * [xra.md](../../../Tenant/docs/it/xra.md)
 * [xra.md](../../../Tenant/docs/it/config/xra.md)
-<<<<<<< HEAD
 * [xra.md](../../../xot/docs/install/xra.md)
 * [xra.md](../../../tenant/docs/it/xra.md)
 * [xra.md](../../../tenant/docs/it/config/xra.md)
@@ -63,9 +62,3 @@ Di default viene utilizzata **laravel\Themes\adm_theme\Resources\views\admin\das
 ### Versione Incoming
 
 ---
-=======
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)

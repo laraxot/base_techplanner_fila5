@@ -13,7 +13,6 @@ return [
             'body' => 'Si è verificato un errore durante la transizione di stato: :error',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Notifications',
     'plural_label' => 'Notifications (Plurale)',
     'navigation' => [
@@ -25,7 +24,7 @@ return [
         ],
         'label' => 'Notifications',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -58,6 +57,4 @@ return [
             'label' => 'Elimina Notifications',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

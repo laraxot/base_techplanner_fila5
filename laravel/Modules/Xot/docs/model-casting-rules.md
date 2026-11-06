@@ -1,3 +1,11 @@
+---
+title: "Regole per Model Casting in Laraxot - CRITICO"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "regole per model casting in laraxot - critico xot"
+---
 # Regole per Model Casting in Laraxot - CRITICO
 
 ## ERRORE ARCHITETTURALE GRAVE: Proprietà $casts Deprecata
@@ -119,10 +127,6 @@ protected function casts(): array
 ```
 
 ## Audit Risultati (2025-08-01)
-<<<<<<< HEAD
-## Audit Risultati ([DATE])
-=======
->>>>>>> 6ed19256f (.)
 
 ### File con Errori Trovati: 20
 
@@ -247,8 +251,4 @@ class User extends BaseModel
 
 ## Ultimo aggiornamento
 
-<<<<<<< HEAD
 agosto 2025
-=======
-agosto 2025
->>>>>>> 6ed19256f (.)

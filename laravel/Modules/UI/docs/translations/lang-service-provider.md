@@ -1,3 +1,15 @@
+---
+title: "lang service provider"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "lang service provider"
+issues: []
+discussions: []
+status: draft
+---
+
 # Gestione delle Traduzioni con LangServiceProvider
 
 ## Collegamenti Bidirezionali
@@ -144,8 +156,4 @@ public static function getFormSchema(): array
 
 - [Laravel Localization](https://laravel.com/docs/localization)
 - [Filament Forms](https://filamentphp.com/docs/forms)
-<<<<<<< HEAD
 - [Best Practices Internazionalizzazione](../../../../docs/i18n/best-practices.md)
-=======
-- [Best Practices Internazionalizzazione](../../../docs/i18n/best-practices.md)
->>>>>>> 6ed19256f (.)

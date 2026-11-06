@@ -14,6 +14,9 @@ use Filament\Tables\Columns\TextColumn;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
 use Override;
 
@@ -26,12 +29,11 @@ use Override;
  */
 abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
 {
-<<<<<<< HEAD
-    use HasXotTable;
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    }
     use InteractsWithForms;
-=======
-    use HasXotTable, InteractsWithForms;
->>>>>>> 6ed19256f (.)
     // protected static string $resource;
 
     /**
@@ -45,11 +47,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
     /**
      * Restituisce lo schema del form per i record correlati.
      *
-<<<<<<< HEAD
      * @return array<Component>
-=======
-     * @return array<\Filament\Schemas\Components\Component>
->>>>>>> 6ed19256f (.)
      */
     // abstract public static function getFormSchema(): array;
 
@@ -69,11 +67,7 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      *
      * @return array<Component>
      */
-<<<<<<< HEAD
     protected function getFormSchema(): array
-=======
-    public function getFormSchema(): array
->>>>>>> 6ed19256f (.)
     {
         return [];
     }
@@ -83,16 +77,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, TextColumn>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-<<<<<<< HEAD
-    #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->label('ID')->sortable(),
+            'id' => IDColumn::make('id'),
             'name' => TextColumn::make('name')
                 ->label('Nome')
                 ->searchable()
@@ -109,11 +100,13 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableHeaderActions(): array
     {
         return [
-            'create' => CreateAction::make()->label('Crea Nuovo')->disableCreateAnother(),
+            'create' => CreateAction::make()->label('Crea Nuovo')->createAnother(false),
         ];
     }
 
@@ -122,10 +115,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      * Questo metodo può essere sovrascritto nelle classi figlie.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {
-<<<<<<< HEAD
         // Preferisci la risorsa correlata per i record nested; altrimenti usa la risorsa della pagina.
         $resource = static::$relatedResource ?? static::getResource();
         // Mostra "view" solo se la risorsa correlata espone quella pagina.
@@ -140,11 +134,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
-                    if ('' === $url) {
+                    if ($url === '') {
                         $url = $resource::getUrl('view', ['record' => $record], shouldGuessMissingParameters: false);
                     }
 
-                    return is_string($url) ? $url : (string) $url;
+                    return SafeStringCastAction::cast($url);
                 }),
             'edit' => Action::make('edit')
                 ->label('Modifica')
@@ -153,19 +147,11 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
                     // Prova il guessing degli URL nested di Filament (funziona con nesting multi-livello in richieste normali).
                     $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: true);
                     // Fallback per contesti senza dati di request (es. test Livewire).
-                    if ('' === $url) {
+                    if ($url === '') {
                         $url = $resource::getUrl('edit', ['record' => $record], shouldGuessMissingParameters: false);
                     }
-=======
-        return [
-            'edit' => Action::make('edit')
-                ->label('Modifica')
-                ->icon('heroicon-o-pencil')
-                ->url(function (Model $record): string {
-                    $url = static::getResource()::getUrl('edit', ['record' => $record]);
->>>>>>> 6ed19256f (.)
 
-                    return is_string($url) ? $url : (string) $url;
+                    return SafeStringCastAction::cast($url);
                 }),
             // 'view' => Action::make('view')
             //     ->label('Visualizza')
@@ -207,16 +193,10 @@ abstract class XotBaseManageRelatedRecords extends FilamentManageRelatedRecords
      */
     public function getTitle(): string
     {
-        $resource = static::getResource();
         $recordTitle = $this->getRecordTitle();
         $relationship = static::getRelationshipName();
 
-        $titleString = '';
-        if ($recordTitle instanceof Htmlable) {
-            $titleString = $recordTitle->toHtml();
-        } else {
-            $titleString = (string) $recordTitle;
-        }
+        $titleString = $recordTitle instanceof Htmlable ? $recordTitle->toHtml() : (string) $recordTitle;
 
         return Str::of($relationship)
             ->title()

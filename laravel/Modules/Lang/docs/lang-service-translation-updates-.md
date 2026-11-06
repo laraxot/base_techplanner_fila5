@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Aggiornamento File di Traduzione Lang Service - 2025-01-06"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Aggiornamento File di Traduzione Lang Service - 2025-01-06
 
 ## Panoramica
@@ -123,15 +137,9 @@ Nel campo `value`, il valore di `helper_text` era uguale alla chiave del padre (
 - [Lang Service Provider](lang-service-provider.md)
 
 ### Regole Applicate
-<<<<<<< HEAD
 - [Regola Helper Text Critica](../../../docs/translation-helper-text-critical-rule.md)
 - [Struttura Espansa Traduzioni](struttura-traduzioni.md)
 - [Convenzioni Multi-Lingua](../../../../docs/multi-language-conventions.md)
-=======
-- [Regola Helper Text Critica](../../docs/translation-helper-text-critical-rule.md)
-- [Struttura Espansa Traduzioni](struttura-traduzioni.md)
-- [Convenzioni Multi-Lingua](../../../docs/multi-language-conventions.md)
->>>>>>> 6ed19256f (.)
 
 ## Note Implementative
 
@@ -156,8 +164,4 @@ La gestione delle traduzioni deve essere:
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di gestione traduzioni Laraxot
 **Versione**: 1.0
-<<<<<<< HEAD
 **Stato**: Implementato e testato
-=======
-**Stato**: Implementato e testato
->>>>>>> 6ed19256f (.)

@@ -254,11 +254,7 @@ class Domain extends BaseModel {
 - Usa XotData per user management
 - **Principio**: "Tenant è specializzazione di Xot"
 
-<<<<<<< HEAD
 ### Tenant ↔ Business Modules (<nome progetto>, Patient, Dental)
-=======
-### Tenant ↔ Business Modules (Quaeris, Patient, Dental)
->>>>>>> 6ed19256f (.)
 **Relazione**: Enabler
 - Business modules ereditano `$connection = 'tenant'` da BaseModel
 - **Principio**: "Tenant è invisibile ma onnipresente"
@@ -316,8 +312,4 @@ Il modulo Tenant incarna il **paradosso dell'unità nella diversità**:
 **Creato**: 5 Novembre 2025
 **Autore**: Team Development
 **Revision**: 1.0
-<<<<<<< HEAD
 **Status**: 📚 Foundation Document
-=======
-**Status**: 📚 Foundation Document
->>>>>>> 6ed19256f (.)

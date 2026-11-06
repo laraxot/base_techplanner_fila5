@@ -1,7 +1,16 @@
 ---
-module: theme
-topic: migration-filament
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Migration Filament"
+module: "Media"
+type: concept
+tags: [migration, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
+---
+---

@@ -1,3 +1,16 @@
+---
+title: "indice documentazione"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "indice documentazione"
+issues: []
+discussions: []
+status: superseded
+superseded_by: documentation-index.md
+---
+
 # Indice della Documentazione del Modulo Geo
 
 Questo documento fornisce un indice completo e organizzato di tutta la documentazione disponibile nel modulo Geo, facilitando la navigazione e la ricerca di informazioni specifiche.
@@ -18,10 +31,6 @@ Questo documento fornisce un indice completo e organizzato di tutta la documenta
 Documenti che forniscono una panoramica generale del modulo Geo, della sua architettura e dei suoi componenti principali.
 
 - [README.md](README.md) - Introduzione generale al modulo Geo
-<<<<<<< HEAD
-- [README.md](readme.md) - Introduzione generale al modulo Geo
-=======
->>>>>>> 6ed19256f (.)
 - [module_geo.md](module_geo.md) - Panoramica dettagliata del modulo
 - [architecture.md](architecture.md) - Architettura del modulo Geo
 - [structure.md](structure.md) - Struttura del modulo e organizzazione dei file
@@ -75,15 +84,9 @@ Documenti che confrontano le diverse strategie implementative e approcci.
 
 Guide tecniche e tutorial per l'utilizzo e l'implementazione delle funzionalità del modulo Geo.
 
-- [COMPREHENSIVE_GUIDE.md](COMPREHENSIVE_GUIDE.md) - Guida completa al modulo
-- [TECHNICAL.md](TECHNICAL.md) - Documentazione tecnica
-- [ADVANCED_FEATURES.md](ADVANCED_FEATURES.md) - Funzionalità avanzate
-<<<<<<< HEAD
 - [COMPREHENSIVE_GUIDE.md](comprehensive_guide.md) - Guida completa al modulo
 - [TECHNICAL.md](technical.md) - Documentazione tecnica
 - [ADVANCED_FEATURES.md](advanced_features.md) - Funzionalità avanzate
-=======
->>>>>>> 6ed19256f (.)
 - [tutorial.md](tutorial.md) - Tutorial passo-passo
 - [migration-guide.md](migration-guide.md) - Guida alla migrazione
 
@@ -98,7 +101,6 @@ Documenti che descrivono l'integrazione del modulo Geo con altri componenti del 
 - [autocomplete.md](autocomplete.md) - Funzionalità di autocompletamento
 - [location-select.md](location-select.md) - Selezione della posizione
 
-<<<<<<< HEAD
 ### AddressResource
 
 Documenti specifici per l'analisi e il miglioramento dell'AddressResource.
@@ -107,8 +109,6 @@ Documenti specifici per l'analisi e il miglioramento dell'AddressResource.
 - [addressresource_improvements.md](addressresource_improvements.md) - Miglioramenti proposti per l'AddressResource
 - [addressresource_summary.md](addressresource_summary.md) - Sintesi completa dell'analisi AddressResource
 
-=======
->>>>>>> 6ed19256f (.)
 ## Servizi Esterni
 
 Documenti relativi all'integrazione con servizi geografici esterni.
@@ -159,12 +159,5 @@ Alcuni documenti potrebbero avere nomi simili ma contenuti diversi, in particola
 - Documenti con prefisso lingua (es. `en-` o `it-`) contengono versioni in lingue specifiche
 
 ---
-
-*Documento creato il: 28/05/2025*
-*Ultimo aggiornamento: 28/05/2025*
-<<<<<<< HEAD
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
-=======
-*Autore: Team <main module>*
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "glossary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "glossary"
+issues: []
+discussions: []
+status: draft
+---
+
 # Glossario Tecnico
 
 ## Elementi Strutturali
@@ -103,15 +115,7 @@ Elemento interattivo che:
 
 ## Collegamenti
 - [Documentazione Componenti](./components/README.md)
-- [Guida allo Stile](./style/README.md)
-- [Convenzioni Layout](./layout/README.md)
-<<<<<<< HEAD
-- [Documentazione Componenti](./components/readme.md)
 - [Guida allo Stile](./style/readme.md)
 - [Convenzioni Layout](./layout/readme.md)
 
 [Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)
-=======
-
-[Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)
->>>>>>> 6ed19256f (.)

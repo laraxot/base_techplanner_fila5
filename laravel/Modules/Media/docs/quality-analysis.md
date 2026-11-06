@@ -1,9 +1,19 @@
+---
+issues: []
+discussions: []
+title: "Quality Analysis Report - Media Module"
+module: "Media"
+type: concept
+tags: [quality, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "quality analysis"
+related:
+  - "./webm.md"
+status: draft
+---
 # Quality Analysis Report - Media Module
-**Date**: 2025-11-11
-<<<<<<< HEAD
-**Date**: 2025-11-11
-=======
->>>>>>> 6ed19256f (.)
+**Date**: [DATE]
 **Status**: ✅ **ILLUMINATED** - PHPStan Level 10 PASS
 
 ---
@@ -209,12 +219,5 @@ The **Media module** is in **excellent condition** with PHPStan Level 10 complia
 
 ---
 
-**Next Review**: After high-priority refactoring (Q1 2025)
-<<<<<<< HEAD
-**Next Review**: After high-priority refactoring (Q1 2025)
 **Documentation**: Comprehensive (63 docs files)
 **Test Coverage**: Integration tests available
-=======
-**Documentation**: Comprehensive (63 docs files)
-**Test Coverage**: Integration tests available
->>>>>>> 6ed19256f (.)

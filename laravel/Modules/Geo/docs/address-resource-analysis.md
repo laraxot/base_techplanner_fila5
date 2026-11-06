@@ -1,10 +1,19 @@
+---
+title: "address resource analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "address resource analysis"
+issues: []
+discussions: []
+status: superseded
+superseded_by: addressresource-analysis.md
+---
+
 # Analisi AddressResource.php
 
-**Data analisi**: 2025-07-30
-<<<<<<< HEAD
 **Data analisi**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
 **Stato**: Analizzato completamente (404 righe)
 
@@ -151,8 +160,4 @@ Regione → Province → Località → CAP
 - **Metodi**: 5
 - **Complessità ciclomatica**: Media-Alta (per le closure nei Select)
 - **Dipendenze**: 11 import
-<<<<<<< HEAD
 - **Modelli coinvolti**: 5
-=======
-- **Modelli coinvolti**: 5
->>>>>>> 6ed19256f (.)

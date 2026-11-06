@@ -1,3 +1,11 @@
+---
+title: "TestCase SQLite to MySQL Fix - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "testcase sqlite to mysql fix - activity module activity"
+---
 # TestCase SQLite to MySQL Fix - Activity Module
 
 ## Problema Identificato
@@ -195,14 +203,11 @@ Activity dipende da User per `causedBy()`. Assicurarsi che:
 
 - Pattern di riferimento: `Modules/Job/tests/TestCase.php`
 - Filosofia: `Modules/Job/docs/testcase-philosophy-analysis.md`
-<<<<<<< HEAD
 - Documentazione generale: `laravel/docs/test-corrections-complete-[DATE].md`
 
 ---
 
 **Data:** [DATE]
-=======
->>>>>>> 6ed19256f (.)
 - Documentazione generale: `laravel/docs/test-corrections-complete-2026-01-09.md`
 
 ---
@@ -210,8 +215,4 @@ Activity dipende da User per `causedBy()`. Assicurarsi che:
 **Data:** 2026-01-09
 **Stato:** Pronto per implementazione
 **Righe:** 156 → ~40 (-74%)
-<<<<<<< HEAD
 **Filosofia:** MySQL Production = MySQL Tests ✅
-=======
-**Filosofia:** MySQL Production = MySQL Tests ✅
->>>>>>> 6ed19256f (.)

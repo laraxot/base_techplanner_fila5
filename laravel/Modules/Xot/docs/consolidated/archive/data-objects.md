@@ -1,3 +1,11 @@
+---
+title: "Data Objects"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "data objects xot"
+---
 # Data Objects
 
 ## Principi Fondamentali
@@ -64,13 +72,8 @@
 ## Errori Comuni
 
 1. **Errore**: Directory errata
-<<<<<<< HEAD
    - ❌ `Modules/Module/Datas/`
    - ✅ `Modules/Module/Datas/`
-=======
-   - ❌ `/var/www/html/saluteora/Modules/Module/Datas/`
-   - ✅ `/var/www/html/saluteora/laravel/Modules/Module/Datas/`
->>>>>>> 6ed19256f (.)
 
 2. **Errore**: Namespace errato
    - ❌ `namespace Modules\Module\App\Datas;`

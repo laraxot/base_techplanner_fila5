@@ -1,7 +1,18 @@
+---
+title: "factory coverage report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "factory coverage report"
+issues: []
+discussions: []
+status: draft
+---
+
 # Factory Coverage Report - CMS Module
 
 ## 📊 Status Report
-**Date:** 2025-08-22
 **Module:** CMS
 
 ## ✅ Factory Coverage Complete
@@ -55,8 +66,4 @@ All factories have been tested and:
 - ✅ Support config hierarchy system
 
 ---
-<<<<<<< HEAD
 *Report generated automatically - Factory coverage: 100%*
-=======
-*Report generated automatically - Factory coverage: 100%*
->>>>>>> 6ed19256f (.)

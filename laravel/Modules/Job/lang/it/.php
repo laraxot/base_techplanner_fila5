@@ -5,19 +5,13 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
-<<<<<<< HEAD
             'label' => 'empty9',
             'heading' => 'empty10',
-=======
-            'label' => 'empty',
-            'heading' => 'empty',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'logout' => [
             'tooltip' => 'logout',
-<<<<<<< HEAD
             'icon' => 'logout',
         ],
     ],
@@ -31,8 +25,4 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

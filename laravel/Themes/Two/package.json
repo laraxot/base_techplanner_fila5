@@ -6,26 +6,19 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && npm run sync-public",
     "watch": "vite build --watch",
-<<<<<<< HEAD
-    "copy": "mkdir -p ../../../public_html/themes/Two && cp -rv ./public/* ../../../public_html/themes/Two/"
-=======
-    "copy": "cp -r ./resources/dist/* ../../../public_html/themes/Two"
->>>>>>> 6ed19256f (.)
+    "copy": "npm run sync-public",
+    "sync-public": "mkdir -p ../../../public/themes/Two/images ../../../public_html/themes/Two && cp -a resources/images/. ../../../public/themes/Two/images/ && cp -a resources/site.webmanifest ../../../public/themes/Two/site.webmanifest && cp -a ../../Modules/Xot/resources/img/apple-touch-icon.png ../../../public/themes/Two/apple-touch-icon.png && cp -a ../../Modules/Xot/resources/img/favicon.ico ../../../public_html/favicon.ico && cp -a ../../../public/themes/Two/. ../../../public_html/themes/Two/"
   },
   "devDependencies": {
     "@alpinejs/focus": "^3.14.9",
     "@headlessui/vue": "^1.7.19",
     "@heroicons/vue": "^2.1.1",
     "@tailwindcss/forms": "^0.5.10",
-<<<<<<< HEAD
     "@tailwindcss/postcss": "^4.1.18",
     "@tailwindcss/typography": "^0.5.16",
     "@tailwindcss/vite": "^4.2.0",
-=======
-    "@tailwindcss/typography": "^0.5.16",
->>>>>>> 6ed19256f (.)
     "@types/node": "^20.11.24",
     "@vitejs/plugin-vue": "^5.0.4",
     "autoprefixer": "^10.4.21",
@@ -36,7 +29,6 @@
     "postcss": "^8.5.3",
     "postcss-nesting": "^13.0.1",
     "swiper": "^11.2.6",
-<<<<<<< HEAD
     "tailwindcss": "^4.2.0",
     "tippy.js": "^6.3.7",
     "vite": "^6.2.4",
@@ -44,10 +36,5 @@
   },
   "dependencies": {
     "daisyui": "^5.5.18"
-=======
-    "tailwindcss": "^3.4.17",
-    "vite": "^6.2.4",
-    "vue": "^3.4.21"
->>>>>>> 6ed19256f (.)
   }
 }

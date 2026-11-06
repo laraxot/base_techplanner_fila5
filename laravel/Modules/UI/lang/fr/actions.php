@@ -13,7 +13,6 @@ return [
         'title' => 'Test',
         'body' => 'Ceci est un message de test pour l\'enregistrement avec l\'ID: :id',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -27,6 +26,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

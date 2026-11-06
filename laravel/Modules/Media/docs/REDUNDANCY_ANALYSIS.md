@@ -1,7 +1,16 @@
 ---
-module: theme
-topic: REDUNDANCY_ANALYSIS
-canonical: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
+issues: []
+discussions: []
+title: "REDUNDANCY ANALYSIS"
+module: "Media"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./webm.md"
+status: superseded
+superseded_by: redundancy-analysis.md
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/REDUNDANCY_ANALYSIS.md
+Redundancy analysis available: docs/analysis/redundancies/summary.md

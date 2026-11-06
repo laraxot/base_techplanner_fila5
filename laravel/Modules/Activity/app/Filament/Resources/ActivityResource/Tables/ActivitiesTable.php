@@ -4,18 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Filament\Resources\ActivityResource\Tables;
 
+use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
+use Modules\UI\Filament\Tables\Columns\IDColumn;
 use Modules\Xot\Filament\Resources\Tables\XotBaseResourceTable;
 
 class ActivitiesTable extends XotBaseResourceTable
 {
     /**
-     * @return array<int|string, \Filament\Tables\Columns\Column>
+     * @return array<int|string, Column>
      */
     public function getTableColumns(): array
     {
         return [
-            'id' => TextColumn::make('id')->searchable()->sortable(),
+            'id' => IDColumn::make('id')->searchable()->sortable(),
             'log_name' => TextColumn::make('log_name')->searchable(),
             'description' => TextColumn::make('description')->searchable(),
             'event' => TextColumn::make('event')->searchable(),

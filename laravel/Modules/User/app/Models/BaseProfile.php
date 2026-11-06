@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Models;
 
-<<<<<<< HEAD
 // // use Illuminate\Support\Str;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -12,16 +11,6 @@ use Illuminate\Notifications\DatabaseNotification;
 use Illuminate\Notifications\DatabaseNotificationCollection;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Str;
-=======
-// use Illuminate\Database\Eloquent\Relations\HasOne;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Concerns\HasUuids;
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Notifications\DatabaseNotification;
-use Illuminate\Notifications\DatabaseNotificationCollection;
-use Illuminate\Notifications\Notifiable;
->>>>>>> 6ed19256f (.)
 use Modules\Media\Models\Media;
 use Modules\User\Models\Traits\IsProfileTrait;
 use Modules\Xot\Contracts\ProfileContract;
@@ -34,73 +23,56 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 use Spatie\SchemalessAttributes\SchemalessAttributesTrait;
 
 /**
-<<<<<<< HEAD
- * @property int                                                       $id
- * @property string                                                    $uuid
-=======
->>>>>>> 6ed19256f (.)
- * @property \Spatie\SchemalessAttributes\SchemalessAttributes         $extra
- * @property string                                                    $avatar
- * @property Collection<int, DeviceUser>                               $deviceUsers
- * @property int|null                                                  $device_users_count
- * @property Collection<int, Device>                                   $devices
- * @property int|null                                                  $devices_count
- * @property string|null                                               $first_name
- * @property string|null                                               $full_name
- * @property string|null                                               $last_name
- * @property string|null                                               $lang
- * @property MediaCollection<int, Media>                               $media
- * @property int|null                                                  $media_count
- * @property Collection<int, DeviceUser>                               $mobileDeviceUsers
- * @property int|null                                                  $mobile_device_users_count
- * @property Collection<int, Device>                                   $mobileDevices
- * @property int|null                                                  $mobile_devices_count
+ * @property int $id
+ * @property string $uuid
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra
+ * @property string $avatar
+ * @property Collection<int, DeviceUser> $deviceUsers
+ * @property int|null $device_users_count
+ * @property Collection<int, Device> $devices
+ * @property int|null $devices_count
+ * @property string|null $first_name
+ * @property string|null $full_name
+ * @property string|null $last_name
+ * @property string|null $lang
+ * @property MediaCollection<int, Media> $media
+ * @property int|null $media_count
+ * @property Collection<int, DeviceUser> $mobileDeviceUsers
+ * @property int|null $mobile_device_users_count
+ * @property Collection<int, Device> $mobileDevices
+ * @property int|null $mobile_devices_count
  * @property DatabaseNotificationCollection<int, DatabaseNotification> $notifications
- * @property int|null                                                  $notifications_count
- * @property Collection<int, Permission>                               $permissions
- * @property int|null                                                  $permissions_count
- * @property Collection<int, Role>                                     $roles
- * @property int|null                                                  $roles_count
- * @property UserContract|null                                         $user
- * @property string|null                                               $user_name
+ * @property int|null $notifications_count
+ * @property Collection<int, Permission> $permissions
+ * @property int|null $permissions_count
+ * @property Collection<int, Role> $roles
+ * @property int|null $roles_count
+ * @property UserContract|null $user
+ * @property string|null $user_name
  *
- * @method static Builder|ProfileContract newModelQuery()
- * @method static Builder|ProfileContract newQuery()
- * @method static Builder|ProfileContract permission($permissions, $without = false)
- * @method static Builder|ProfileContract query()
- * @method static Builder|ProfileContract role($roles, $guard = null, $without = false)
-<<<<<<< HEAD
- * @method static Builder|ProfileContract byUuid(string $uuid)
-=======
->>>>>>> 6ed19256f (.)
- * @method static Builder|BaseProfile     withExtraAttributes()
- * @method static Builder|ProfileContract withoutPermission($permissions)
- * @method static Builder|ProfileContract withoutRole($roles, $guard = null)
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> permission($permissions, $without = false)
+ * @method static Builder<static> query()
+ * @method static Builder<static> role($roles, $guard = null, $without = false)
+ * @method static Builder<static> byUuid(string $uuid)
+ * @method static Builder<static> withExtraAttributes()
+ * @method static Builder<static> withoutPermission($permissions)
+ * @method static Builder<static> withoutRole($roles, $guard = null)
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
-=======
->>>>>>> 6ed19256f (.)
 abstract class BaseProfile extends BaseModel implements ProfileContract
 {
     use HasChildren;
     use HasRoles;
-<<<<<<< HEAD
 
     // use HasUuids;
-=======
-    use HasUuids;
->>>>>>> 6ed19256f (.)
     use InteractsWithMedia;
     use IsProfileTrait;
     use Notifiable;
     use SchemalessAttributesTrait;
-<<<<<<< HEAD
-=======
-    use SoftDeletes;
->>>>>>> 6ed19256f (.)
 
     /**
      * Undocumented variable.
@@ -110,10 +82,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
     /** @var list<string> */
     protected $fillable = [
-<<<<<<< HEAD
-=======
-        'id',
->>>>>>> 6ed19256f (.)
         'uuid',
         'user_id',
         'type',
@@ -144,7 +112,6 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         'user',
     ];
 
-<<<<<<< HEAD
     /** @var list<string> */
     protected array $formlessAttributes = [
         'extra',
@@ -152,19 +119,15 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
 
     /**
      * Scope per lookup da API/Android/Postgres (usa uuid, non id).
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
     public function scopeByUuid(Builder $query, string $uuid): Builder
     {
         return $query->where('uuid', $uuid);
     }
 
-=======
-    /** @var array */
-    protected $formlessAttributes = [
-        'extra',
-    ];
-
->>>>>>> 6ed19256f (.)
     // ✅ CORRETTO: NON implementare scopeWithExtraAttributes() manualmente
     // Il trait SchemalessAttributesTrait lo fornisce automaticamente!
     // NOTA: BaseProfile ha attributo 'extra' diretto, non relazione 'extra'
@@ -177,7 +140,7 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
     public function getAvatarUrl(): string
     {
         $avatar = $this->getFirstMediaUrl('avatar');
-        if ('' !== $avatar) {
+        if ($avatar !== '') {
             return $avatar;
         }
 
@@ -186,9 +149,16 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         // 'MyEmailAddress@example.com'
         $email = mb_strtolower($email);
         // 'myemailaddress@example.com'
+        if ($email === '') {
+            // Nulla da cifrare: l'hash della stringa vuota e' uguale per tutti e farebbe partire una richiesta
+            // a gravatar.com per niente. Stringa vuota = le viste mostrano l'iniziale (CMT-022).
+            return '';
+        }
+
         $hash = hash('sha256', $email);
 
-        return 'https://gravatar.com/avatar/'.$hash.'?s=64';
+        // d=mp: silhouette neutra quando l'email non ha un Gravatar (mai il logo Gravatar).
+        return 'https://gravatar.com/avatar/'.$hash.'?s=80&d=mp';
 
         // https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80
         // in caso eseguire php artisan module:publish
@@ -209,19 +179,18 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
         $locale = config('app.locale');
         $defaultLocale = 'it';
 
-        if (null === $locale || ! is_string($locale)) {
+        if ($locale === null || ! is_string($locale)) {
             $locale = $defaultLocale;
         }
 
         $userLang = $this->lang;
 
-        if (null === $userLang || ! is_string($userLang)) {
+        if ($userLang === null || ! is_string($userLang)) {
             return $locale;
         }
 
         return $userLang;
     }
-<<<<<<< HEAD
     // use SoftDeletes;
 
     /**
@@ -235,19 +204,13 @@ abstract class BaseProfile extends BaseModel implements ProfileContract
             }
         });
     }
-=======
->>>>>>> 6ed19256f (.)
 
     /** @return array<string, string> */
     #[\Override]
     protected function casts(): array
     {
         return [
-<<<<<<< HEAD
             'id' => 'integer',
-=======
-            'id' => 'string',
->>>>>>> 6ed19256f (.)
             'uuid' => 'string',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',

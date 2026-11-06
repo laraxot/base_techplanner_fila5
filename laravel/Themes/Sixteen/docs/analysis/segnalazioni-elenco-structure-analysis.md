@@ -1,4 +1,16 @@
-# HTML Structure Analysis: segnalazioni-elenco
+---
+title: "segnalazioni elenco structure analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "segnalazioni elenco structure analysis"
+issues: []
+discussions: []
+status: draft
+---
+
+# HTML Structure Analysis: ticket-list
 
 ## Executive Summary
 - **Reference**: 775 lines, 29 unique tags

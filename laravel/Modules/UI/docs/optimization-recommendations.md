@@ -1,3 +1,15 @@
+---
+title: "optimization recommendations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "optimization recommendations"
+issues: []
+discussions: []
+status: draft
+---
+
 # Raccomandazioni di Ottimizzazione - Modulo UI
 
 ## 🎯 Stato Attuale e Analisi
@@ -53,7 +65,6 @@
 #### Pattern di Correzione
 ```php
 // ❌ PROBLEMI ATTUALI (in documentazione)
-<<<<<<< HEAD
 Modules/UI/
 Modules/UI/
 Modules/UI/
@@ -61,15 +72,6 @@ Modules/UI/
 Modules/UI/
 Modules/UI/
 Modules/UI/
-=======
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/UI/
->>>>>>> 6ed19256f (.)
 https://api.<nome progetto>.com/
 
 // ✅ SOLUZIONI
@@ -265,19 +267,10 @@ php artisan ui:accessibility-check
 
 ## Collegamenti
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Components Guide](components.md)
 - [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
 
-=======
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
-- [Components Guide](components.md)
-- [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
-
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)
 # Raccomandazioni di Ottimizzazione - Modulo UI
 
 ## 🎯 Stato Attuale e Analisi
@@ -308,15 +301,9 @@ php artisan ui:accessibility-check
 
 #### 1. Riusabilità Path (IMPORTANTE)
 - **115+ occorrenze hardcoded** di "<nome progetto>" in documentazione
-<<<<<<< HEAD
 - **115+ occorrenze hardcoded** di "<nome progetto>" in documentazione
 - **115+ occorrenze hardcoded** di "<nome progetto>" in documentazione
 - **115+ occorrenze hardcoded** di "<nome progetto>" in documentazione
-=======
-- **115+ occorrenze hardcoded** di "saluteora" in documentazione
-- **115+ occorrenze hardcoded** di "saluteora" in documentazione
-- **115+ occorrenze hardcoded** di "saluteora" in documentazione
->>>>>>> 6ed19256f (.)
 - **Path assoluti** in esempi e guide
 - **Link interni** con riferimenti specifici al progetto
 
@@ -324,15 +311,9 @@ php artisan ui:accessibility-check
 - **README.md**: 407 righe (troppo denso)
 - **Informazioni duplicate** tra sezioni
 - **Esempi troppo specifici** per <nome progetto>
-<<<<<<< HEAD
 - **Esempi troppo specifici** per <nome progetto>
 - **Esempi troppo specifici** per <nome progetto>
 - **Esempi troppo specifici** per <nome progetto>
-=======
-- **Esempi troppo specifici** per SaluteOra
-- **Esempi troppo specifici** per SaluteOra
-- **Esempi troppo specifici** per SaluteOra
->>>>>>> 6ed19256f (.)
 
 ## 🔧 RACCOMANDAZIONI SPECIFICHE
 
@@ -341,7 +322,6 @@ php artisan ui:accessibility-check
 #### Pattern di Correzione
 ```php
 // ❌ PROBLEMI ATTUALI (in documentazione)
-<<<<<<< HEAD
 Modules/UI/
 https://api.<nome progetto>.com/
 Modules/UI/
@@ -350,16 +330,6 @@ Modules/UI/
 https://api.<nome progetto>.com/
 Modules/UI/
 https://api.<nome progetto>.com/
-=======
-/var/www/html/<nome progetto>/laravel/Modules/UI/
-https://api.<nome progetto>.com/
-/var/www/html/saluteora/laravel/Modules/UI/
-https://api.saluteora.com/
-/var/www/html/saluteora/laravel/Modules/UI/
-https://api.saluteora.com/
-/var/www/html/saluteora/laravel/Modules/UI/
-https://api.saluteora.com/
->>>>>>> 6ed19256f (.)
 
 // ✅ SOLUZIONI
 {{project_path}}/laravel/Modules/UI/
@@ -500,15 +470,9 @@ class ComponentPerformanceMiddleware
 ```bash
 # Verifica path hardcoded
 grep -r "<nome progetto>" Modules/UI/docs/ --include="*.md" | wc -l
-<<<<<<< HEAD
 grep -r "<nome progetto>" Modules/UI/docs/ --include="*.md" | wc -l
 grep -r "<nome progetto>" Modules/UI/docs/ --include="*.md" | wc -l
 grep -r "<nome progetto>" Modules/UI/docs/ --include="*.md" | wc -l
-=======
-grep -r "saluteora" Modules/UI/docs/ --include="*.md" | wc -l
-grep -r "saluteora" Modules/UI/docs/ --include="*.md" | wc -l
-grep -r "saluteora" Modules/UI/docs/ --include="*.md" | wc -l
->>>>>>> 6ed19256f (.)
 
 # Verifica lunghezza README
 wc -l Modules/UI/docs/README.md
@@ -555,15 +519,7 @@ php artisan ui:accessibility-check
 
 ## Collegamenti
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Components Guide](components.md)
 - [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
-=======
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
-- [Components Guide](components.md)
-- [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
 
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)

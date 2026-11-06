@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: filament-table-actions
-canonical: ../../../Themes/docs/shared-components/filament-table-actions-1.md
+issues: []
+discussions: []
+title: "Convenzioni per le Table Actions in Filament"
+module: "Media"
+type: concept
+tags: [filament, table, actions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament table actions"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-table-actions-1.md
-=======
 # Convenzioni per le Table Actions in Filament
 
 ## Regola Fondamentale
@@ -92,4 +97,3 @@ Le chiavi devono:
 - Mantenere coerenza nei nomi delle chiavi tra diverse classi
 - Documentare eventuali chiavi personalizzate
 - Le chiavi sono case-sensitive, mantenere la coerenza
->>>>>>> 6ed19256f (.)

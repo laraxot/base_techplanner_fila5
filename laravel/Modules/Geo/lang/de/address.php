@@ -21,7 +21,6 @@ return [
         'geocode' => 'Geocodierung',
     ],
     'fields' => [
-<<<<<<< HEAD
         'use_my_location' => [
             'label' => 'Meinen Standort verwenden',
         ],
@@ -30,18 +29,13 @@ return [
             'placeholder' => 'Adresse eingeben',
             'use_my_location' => 'Meinen Standort verwenden',
         ],
-=======
->>>>>>> 6ed19256f (.)
         'model_type' => [
             'label' => 'Modelltyp',
             'placeholder' => 'Modelltyp auswählen',
             'help' => 'Mit der Adresse verknüpfter Modelltyp',
             'description' => 'Typ des Modells, das diese Adresse besitzt',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'model_id' => [
             'label' => 'Modell-ID',
@@ -49,10 +43,7 @@ return [
             'help' => 'Kennung des verknüpften Modells',
             'description' => 'ID des Modells, das diese Adresse besitzt',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'Name',
@@ -60,10 +51,7 @@ return [
             'help' => 'Ein identifizierender Name für diese Adresse, z.B. "Zuhause" oder "Büro"',
             'helper_text' => '',
             'description' => 'Identifizierender Adressname',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Beschreibung',
@@ -71,10 +59,7 @@ return [
             'help' => 'Zusätzliche Hinweise zur Adresse',
             'description' => 'Zusätzliche Adressbeschreibung',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'street' => [
             'label' => 'Straße',
@@ -82,10 +67,7 @@ return [
             'help' => 'Straßenadresse mit Hausnummer',
             'description' => 'Straßenadresse',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'city' => [
             'label' => 'Stadt',
@@ -93,10 +75,7 @@ return [
             'help' => 'Stadtname',
             'description' => 'Stadtname',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'Bundesland/Provinz',
@@ -104,10 +83,7 @@ return [
             'help' => 'Bundesland oder Provinz',
             'description' => 'Bundesland oder Provinz',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'postal_code' => [
             'label' => 'Postleitzahl',
@@ -115,10 +91,7 @@ return [
             'help' => 'PLZ oder Postleitzahl',
             'description' => 'Postleitzahl',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'country' => [
             'label' => 'Land',
@@ -126,10 +99,7 @@ return [
             'help' => 'Ländername',
             'description' => 'Ländername',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'latitude' => [
             'label' => 'Breitengrad',
@@ -137,10 +107,7 @@ return [
             'help' => 'Geografische Breitengrad-Koordinate',
             'description' => 'Breitengrad-Koordinate',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'longitude' => [
             'label' => 'Längengrad',
@@ -148,27 +115,20 @@ return [
             'help' => 'Geografische Längengrad-Koordinate',
             'description' => 'Längengrad-Koordinate',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_primary' => [
             'label' => 'Primäre Adresse',
             'help' => 'Als primäre Adresse markieren',
             'description' => 'Ob dies die primäre Adresse ist',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_verified' => [
             'label' => 'Verifizierte Adresse',
             'help' => 'Adresse wurde überprüft',
             'description' => 'Ob diese Adresse überprüft wurde',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -183,8 +143,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

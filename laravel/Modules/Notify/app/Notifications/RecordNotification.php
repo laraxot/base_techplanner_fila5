@@ -20,7 +20,7 @@ class RecordNotification extends Notification implements ShouldQueue
     /** @var array<string, mixed> */
     public array $data = [];
 
-    /** @var array<int, array<string, string>> */
+    /** @var array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}> */
     public array $attachments = [];
 
     protected Model $record;
@@ -34,17 +34,25 @@ class RecordNotification extends Notification implements ShouldQueue
     }
 
     /**
+     * Modello per cui è stata costruita la notifica.
+     *
+     * `SendRecordNotificationAction` invia sempre con
+     * `Notification::route($channel, $to)->notify(...)`: il notifiable in
+     * `NotificationSent` è un `AnonymousNotifiable`, mai `$record`. I listener
+     * (es. `UpdateContactInviteCountersListener`) leggono il modello da qui.
+     */
+    public function getRecord(): Model
+    {
+        return $this->record;
+    }
+
+    /**
      * Get the notification's delivery channels.
      *
      * Determines channels based on the notifiable's routing capabilities.
      * Uses `routeNotificationFor()` method to check if the notifiable supports each channel.
      *
-<<<<<<< HEAD
      * @param  object  $notifiable  The entity to be notified
-=======
-     * @param object $notifiable The entity to be notified
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string|class-string>
      */
     public function via(object $notifiable): array
@@ -70,12 +78,7 @@ class RecordNotification extends Notification implements ShouldQueue
      * This follows the Zen Delegation pattern: RecordNotification is a bridge,
      * SpatieEmail handles all template resolution, placeholder replacement, and layout logic.
      *
-<<<<<<< HEAD
      * @param  object  $notifiable  The entity to be notified
-=======
-     * @param object $notifiable The entity to be notified
-     *
->>>>>>> 6ed19256f (.)
      * @return SpatieEmail Configured SpatieEmail instance ready to send
      */
     public function toMail(object $notifiable): SpatieEmail
@@ -114,9 +117,9 @@ class RecordNotification extends Notification implements ShouldQueue
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $to = $notifiable->routeNotificationFor('sms');
         }
-        $fallback_to = config('sms.fallback_to');
-        if (is_string($fallback_to)) {
-            $to = $fallback_to;
+        $fallbackTo = config('sms.fallback_to');
+        if (is_string($fallbackTo)) {
+            $to = $fallbackTo;
         }
         if ($to === null) {
             return null;
@@ -125,29 +128,38 @@ class RecordNotification extends Notification implements ShouldQueue
         // Build SMS content using SpatieEmail (which handles template resolution and placeholder replacement)
         $smsBody = $email->buildSms();
 
+        // Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 17
+        // (AC7, 2026-09-15): un survey senza sms_template configurato non lancia
+        // nessuna eccezione qui — buildSms() ritorna semplicemente stringa vuota
+        // (Mustache::render('', ...)). Senza questo controllo, un SMS reale con
+        // corpo vuoto veniva spedito per davvero al gateway. `trim()` per non far
+        // passare un corpo fatto di soli spazi.
+        if (trim($smsBody) === '') {
+            return null;
+        }
+
+        // Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 9:
+        // il mittente era il letterale 'Xot'. Ora SpatieEmail lo risolve dal
+        // MailTemplate (colonna sms_from), con fallback a config('sms.from').
+        $smsFrom = $email->buildSmsFrom();
+
         // Wrap in SmsData for the SmsChannel (ensure all values are strings for type safety)
         /** @var array<string, string> $smsDataArray */
         $smsDataArray = [
-            'from' => 'Xot',
             'recipient' => $to,
-            'body' => $smsBody,
-        ];
-<<<<<<< HEAD
+            'body' => $smsBody];
 
-=======
->>>>>>> 6ed19256f (.)
+        if ($smsFrom !== null) {
+            $smsDataArray['from'] = $smsFrom;
+        }
+
         return SmsData::from($smsDataArray);
     }
 
     /**
      * Merge additional data with record attributes for placeholder replacement.
      *
-<<<<<<< HEAD
      * @param  array<string, mixed>  $data  Additional data to merge
-=======
-     * @param array<string, mixed> $data Additional data to merge
-     *
->>>>>>> 6ed19256f (.)
      * @return $this
      */
     public function mergeData(array $data): self
@@ -160,12 +172,7 @@ class RecordNotification extends Notification implements ShouldQueue
     /**
      * Add attachments to the notification.
      *
-<<<<<<< HEAD
-     * @param  array<int, array<string, string>>  $attachments  Array of attachment data
-=======
-     * @param array<int, array<string, string>> $attachments Array of attachment data
-     *
->>>>>>> 6ed19256f (.)
+     * @param  array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>  $attachments
      * @return $this
      */
     public function addAttachments(array $attachments): self

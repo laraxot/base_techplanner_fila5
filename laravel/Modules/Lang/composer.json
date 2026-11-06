@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
     "name": "laraxot/module_lang_fila5",
     "description": "Internationalization and localization module for the Laraxot ecosystem: translations, languages, and locale management.",
     "keywords": [
@@ -13,37 +12,29 @@
         "translations",
         "localization"
     ],
+
     "description": "",
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila3.git",
     "license": "MIT",
     "homepage": "https://github.com/laraxot/module_lang_fila5.git",
-=======
-    "name": "laraxot/module_lang_fila3",
-    "description": "",
-    "license": "MIT",
-    "homepage": "https://github.com/laraxot/module_lang_fila3.git",
->>>>>>> 6ed19256f (.)
     "authors": [
         {
             "name": "Marco Sottana",
             "email": "marco.sottana@gmail.com"
         }
     ],
+
+    "repositories_comment": "Local path package (lara-zeus/spatie-translatable) moved to root composer.json for proper priority. DO NOT add Packagist here.",
     "require": {
         "mcamara/laravel-localization": "*",
         "lara-zeus/spatie-translatable": "*",
         "rinvex/countries": "^9.1",
-<<<<<<< HEAD
-    "repositories_comment": "Local path package (lara-zeus/spatie-translatable) moved to root composer.json for proper priority. DO NOT add Packagist here.",
+
         "spatie/laravel-sluggable": "*",
         "php": "^8.3"
     },
     "require-comment": {},
-=======
-        "spatie/laravel-sluggable": "*"
-    },
->>>>>>> 6ed19256f (.)
     "repositories": [
         {
             "type": "path",
@@ -57,7 +48,6 @@
             "type": "path",
             "url": "../UI"
         }
-<<<<<<< HEAD
         
     ],
     "repositories-comment": [
@@ -71,6 +61,7 @@
             "canonical": false
         }
     ],
+
     "repositories-comment": [
         {
             "type": "path",
@@ -81,8 +72,6 @@
             "url": "https://packagist.org",
             "canonical": false
         }
-=======
->>>>>>> 6ed19256f (.)
     ],
     "autoload": {
         "psr-4": {
@@ -122,8 +111,4 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6ed19256f (.)

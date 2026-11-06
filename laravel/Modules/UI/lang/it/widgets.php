@@ -9,7 +9,11 @@ return [
         'light_mode' => 'Tema chiaro',
         'dark_mode' => 'Tema scuro',
     ],
-<<<<<<< HEAD
+    'user-calendar' => [
+        'title' => 'Calendario utente',
+        'description' => 'Consulta e gestisci gli eventi del calendario dell\'utente.',
+        'implementation_pending' => 'Funzionalità in fase di implementazione.',
+    ],
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',
     'navigation' => [
@@ -21,7 +25,7 @@ return [
         ],
         'label' => 'Widgets',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -54,6 +58,4 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,15 @@
+---
+title: "iconstatesplicolumn improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "iconstatesplicolumn improvements"
+issues: []
+discussions: []
+status: draft
+---
+
 # IconStateSplitColumn - Comprehensive Improvements Summary
 
 ## 🎯 **Problem Analysis**
@@ -271,11 +283,13 @@ This comprehensive refactor demonstrates best practices for Filament component d
 
 ---
 
-**Last Updated**: 2025-01-28
-**Version**: 2.0.0
-<<<<<<< HEAD
 
+title: "iconstatesplicolumn improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "iconstatesplicolumn improvements"
+issues: []
+discussions: []
 **Status**: ✅ Production Ready
-=======
-**Status**: ✅ Production Ready
->>>>>>> 6ed19256f (.)

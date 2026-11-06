@@ -1,3 +1,15 @@
+---
+title: "json migration fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "json migration fixes"
+issues: []
+discussions: []
+status: draft
+---
+
 # Correzioni per le Migrazioni JSON in Laravel
 
 ## Problema Identificato
@@ -44,19 +56,11 @@ if(in_array($this->getColumnType('subject'), ['text', 'string'])) {
     DB::table('mail_templates')->whereNotNull('subject')->update([
         'subject' => DB::raw("JSON_OBJECT('it', subject)")
     ]);
-<<<<<<< HEAD
-    
-=======
->>>>>>> 6ed19256f (.)
 
     // Passo 2: Gestire i valori NULL (opzionale)
     DB::table('mail_templates')->whereNull('subject')->update([
         'subject' => DB::raw("JSON_OBJECT('it', '')")
     ]);
-<<<<<<< HEAD
-    
-=======
->>>>>>> 6ed19256f (.)
 
     // Passo 3: Ora è sicuro cambiare il tipo di colonna
     $table->json('subject')->nullable()->change();
@@ -82,10 +86,6 @@ MailTemplate::whereNotNull('subject')->each(function ($template) {
 Un'altra strategia sicura è:
 
 1. **Creare una nuova colonna** JSON
-<<<<<<< HEAD
-1. **Creare una nuova colonna** JSON
-=======
->>>>>>> 6ed19256f (.)
 2. **Migrare i dati** dalla vecchia colonna a quella nuova, convertendoli
 3. **Eliminare la vecchia colonna**
 4. **Rinominare** la nuova colonna
@@ -95,10 +95,6 @@ Un'altra strategia sicura è:
 if(in_array($this->getColumnType('subject'), ['text', 'string'])) {
     // Passo 1: Aggiungi colonna temporanea
     $table->json('subject_json')->nullable()->after('subject');
-<<<<<<< HEAD
-    
-=======
->>>>>>> 6ed19256f (.)
 
     // Passo 2: Migra i dati (da eseguire dopo la modifica dello schema)
     Schema::table('mail_templates', function (Blueprint $table) {
@@ -138,15 +134,9 @@ if(!$this->hasColumn('subject')) {
 ## Applicazione a
 
 Nel contesto di , tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
-<<<<<<< HEAD
 ## Applicazione a <nome progetto>
 
 Nel contesto di <nome progetto>, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
-=======
-## Applicazione a SaluteOra
-
-Nel contesto di SaluteOra, tutte le migrazioni che coinvolgono la conversione di campi esistenti a JSON devono seguire queste linee guida, in particolare:
->>>>>>> 6ed19256f (.)
 
 1. Le migrazioni per `mail_templates` e tabelle simili
 2. Campi multilingua che utilizzano il trait `HasTranslations`
@@ -157,15 +147,9 @@ Nel contesto di SaluteOra, tutte le migrazioni che coinvolgono la conversione di
 È necessario esaminare tutte le migrazioni esistenti per identificare pattern simili di conversione diretta a JSON:
 
 ```bash
-<<<<<<< HEAD
 grep -r "json.*change" Modules/*/database/migrations/
 grep -r "json.*change" Modules/*/database/migrations/
 grep -r "json.*change" Modules/*/database/migrations/
-=======
-grep -r "json.*change" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/*/database/migrations/
-grep -r "json.*change" /var/www/html/saluteora/laravel/Modules/*/database/migrations/
-grep -r "json.*change" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/*/database/migrations/
->>>>>>> 6ed19256f (.)
 ```
 
 I problemi più comuni si verificano in migrazioni che coinvolgono campi con traduzioni multilingua o configurazioni serializzate.
@@ -310,11 +294,7 @@ Nel contesto di <main module>, tutte le migrazioni che coinvolgono la conversion
 È necessario esaminare tutte le migrazioni esistenti per identificare pattern simili di conversione diretta a JSON:
 
 ```bash
-<<<<<<< HEAD
 grep -r "json.*change" Modules/*/database/migrations/
-=======
-grep -r "json.*change" /var/www/html/<directory progetto>/laravel/Modules/*/database/migrations/
->>>>>>> 6ed19256f (.)
 ```
 
 I problemi più comuni si verificano in migrazioni che coinvolgono campi con traduzioni multilingua o configurazioni serializzate.
@@ -324,8 +304,4 @@ I problemi più comuni si verificano in migrazioni che coinvolgono campi con tra
 - [Laravel Doctrine - Working with JSON columns](https://www.laraveldoctrine.org/docs/1.3/orm/working-with-objects/json-objects)
 - [MySQL JSON Functions Reference](https://dev.mysql.com/doc/refman/8.0/en/json-functions.html)
 - [Laravel Migration & Database Guide](https://laravel.com/docs/10.x/migrations)
-<<<<<<< HEAD
 - [Converting Database Column Types in Laravel](https://laravel.com/docs/10.x/migrations#modifying-columns)
-=======
-- [Converting Database Column Types in Laravel](https://laravel.com/docs/10.x/migrations#modifying-columns)
->>>>>>> 6ed19256f (.)

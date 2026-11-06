@@ -1,3 +1,15 @@
+---
+title: "phpmd analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpmd analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPMD Analysis - Modulo Notify
 
 ## 📊 Analisi Filosofica Errori PHPMD
@@ -5,7 +17,6 @@
 ### 🧘 Principio Zen: "Il nome giusto illumina il codice"
 
 ---
-
 ## Errori Rilevati e Filosofia
 
 ### 1. ShortVariable: $to, $as
@@ -29,11 +40,7 @@ Avoid variables with short names like $as. Configured minimum length is 3.
 - Facilitare manutenzione futura
 
 **FILOSOFIA:**
-<<<<<<< HEAD
 > "Un nome corto risparmia 2 caratteri ma costa 2 minuti di comprensione.  
-=======
-> "Un nome corto risparmia 2 caratteri ma costa 2 minuti di comprensione.
->>>>>>> 6ed19256f (.)
 > Un nome esplicito costa 10 caratteri ma risparmia 10 minuti di debug."
 
 **ZEN:**
@@ -41,11 +48,7 @@ Avoid variables with short names like $as. Configured minimum length is 3.
 $to   → oscurità (cosa? dove? chi?)
 $recipient → chiarezza (destinatario email)
 
-<<<<<<< HEAD
 $as   → confusione (come cosa?)  
-=======
-$as   → confusione (come cosa?)
->>>>>>> 6ed19256f (.)
 $filename → illuminazione (nome del file)
 ```
 
@@ -77,11 +80,7 @@ The variable $fallback_to is not named in camelCase.
 - snake_case è per database, camelCase per codice
 
 **FILOSOFIA:**
-<<<<<<< HEAD
 > "La convenzione unisce, l'eccezione divide.  
-=======
-> "La convenzione unisce, l'eccezione divide.
->>>>>>> 6ed19256f (.)
 > Come un fiume segue il suo letto, il codice segue le convenzioni."
 
 **DECISIONE:**
@@ -111,11 +110,7 @@ Avoid using static access to class 'Auth', 'Assert', 'Str', etc.
 - Dependency Injection ovunque = verboso e impraticabile
 
 **FILOSOFIA:**
-<<<<<<< HEAD
 > "Il pragmatismo tempera il purismo.  
-=======
-> "Il pragmatismo tempera il purismo.
->>>>>>> 6ed19256f (.)
 > La teoria serve la pratica, non la domina."
 
 **ZEN:**
@@ -155,13 +150,8 @@ SpatieEmail has coupling value of 13. Consider reducing under 13.
 - 13 dipendenze per 5+ responsabilità = ragionevole
 
 **FILOSOFIA:**
-<<<<<<< HEAD
 > "Non tutte le complessità sono uguali.  
 > La complessità essenziale serve il dominio.  
-=======
-> "Non tutte le complessità sono uguali.
-> La complessità essenziale serve il dominio.
->>>>>>> 6ed19256f (.)
 > La complessità accidentale serve l'ego."
 
 **DECISIONE:**
@@ -237,8 +227,6 @@ Avoid unused parameters such as '$cid'.
 - [PHPMD Rules](https://phpmd.org/rules/index.html)
 - [PSR-12 Coding Standard](https://www.php-fig.org/psr/psr-12/)
 - [Xot - Code Quality Standards](../../../Xot/docs/CODE_QUALITY_STANDARDS.md)
-<<<<<<< HEAD
-- [Xot - Code Quality Standards](../../../xot/docs/code_quality_standards.md)
 
 ---
 
@@ -246,12 +234,4 @@ Avoid unused parameters such as '$cid'.
 **Tool:** PHPMD 2.15.0  
 **Filosofia:** DRY + KISS + Laravel Way  
 **Stato:** 📝 Analisi completata, fix in corso
-=======
 
----
-
-**Data Analisi:** 2025-01-22
-**Tool:** PHPMD 2.15.0
-**Filosofia:** DRY + KISS + Laravel Way
-**Stato:** 📝 Analisi completata, fix in corso
->>>>>>> 6ed19256f (.)

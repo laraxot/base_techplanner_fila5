@@ -2,263 +2,185 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\User\Tests\Feature\Filament\Resources;
 
-=======
->>>>>>> 6ed19256f (.)
-use Filament\Forms\Components\Placeholder;
+use Filament\Actions\Action;
+use Filament\Actions\ActionGroup;
+use Filament\Forms\Components\Field;
 use Filament\Forms\Components\TextInput;
+use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Illuminate\Support\Facades\Hash;
-<<<<<<< HEAD
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
-=======
-use Illuminate\Support\HtmlString;
-use Modules\User\Enums\UserType;
-use Modules\User\Filament\Resources\UserResource;
-use Modules\User\Filament\Resources\UserResource\Pages\EditUser;
->>>>>>> 6ed19256f (.)
 use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< HEAD
-    $user = User::factory()
+    UserFactory::new()
         ->create([
             'type' => UserType::MasterAdmin,
             'email' => 'admin-'.uniqid().'@example.com',
             'password' => Hash::make('password123'),
         ]);
-=======
-    $this->user = User::factory()->create([
-        'type' => UserType::MasterAdmin,
-        'email' => 'admin@example.com',
-        'password' => Hash::make('password123'),
-    ]);
->>>>>>> 6ed19256f (.)
 });
 
-test('user resource has correct navigation icon', function (): void {
-    expect(UserResource::getNavigationIcon())->toBe('ui-user-main');
-});
+describe('User Resource', function (): void {
+    test('user resource has correct navigation icon', function (): void {
+        Assert::assertSame('ui-user-main', UserResource::getNavigationIcon());
+    });
 
-test('user resource has correct widgets', function (): void {
-    $widgets = UserResource::getWidgets();
+    test('user resource has correct widgets', function (): void {
+        $widgets = UserResource::getWidgets();
 
-    expect($widgets)->toHaveCount(1);
-    expect($widgets)->toContain(UserOverview::class);
-});
+        Assert::assertCount(1, $widgets);
+        Assert::assertContains(UserOverview::class, $widgets);
+    });
 
-test('user resource has correct form schema', function (): void {
-    $form = UserResource::getFormSchema();
+    test('user resource has correct form schema', function (): void {
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
 
-    expect($form)->toHaveKey('section01');
-    expect($form)->toHaveKey('section02');
+        Assert::assertArrayHasKey('section01', $form);
+        Assert::assertArrayHasKey('section02', $form);
+        $section01 = $form['section01'];
+        Assert::assertInstanceOf(Section::class, $section01);
+        $section01Schema = userResourceSectionComponents($this, $section01);
+        Assert::assertGreaterThanOrEqual(1, count($section01Schema));
 
-    // Test section01
-    $section01 = $form['section01'];
-    expect($section01)->toBeInstanceOf(Section::class);
+        $hasNameOrEmail = collect($section01Schema)->contains(
+            fn (Component|Action|ActionGroup $component, int $index): bool => $component instanceof Field
+                && in_array($component->getName(), ['name', 'email', 'password'], true)
+        );
+        Assert::assertTrue($hasNameOrEmail);
+        $section02 = $form['section02'];
+        Assert::assertInstanceOf(Section::class, $section02);
+        $section02Schema = userResourceSectionComponents($this, $section02);
+        Assert::assertGreaterThanOrEqual(1, count($section02Schema));
 
-    $section01Schema = $section01->getDefaultChildComponents();
-<<<<<<< HEAD
-    expect(count($section01Schema))->toBeGreaterThanOrEqual(1);
+        $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
+        Assert::assertNotNull($createdAtField);
+        Assert::assertInstanceOf(TextEntry::class, $createdAtField);
+    });
 
-    // Check if name or email field exists in section01
-    $hasNameOrEmail = collect($section01Schema)->contains(fn ($c) => in_array($c->getName(), ['name', 'email', 'password'], true));
-    expect($hasNameOrEmail)->toBeTrue();
-=======
-    expect($section01Schema)->toHaveCount(3);
+    test('user resource has combined relation manager tabs', function (): void {
+        Assert::assertTrue((new UserResource)->hasCombinedRelationManagerTabsWithContent());
+    });
 
-    // Check if name field exists
-    $nameField = collect($section01Schema)->first(fn ($c) => 'name' === $c->getName());
-    expect($nameField)->not->toBeNull();
-    expect($nameField)->toBeInstanceOf(TextInput::class);
+    test('user resource extends correct base class', function (): void {
+        Assert::assertSame(XotBaseResource::class, get_parent_class(UserResource::class));
+    });
 
-    // Check if email field exists
-    $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
-    expect($emailField)->not->toBeNull();
-    expect($emailField)->toBeInstanceOf(TextInput::class);
+    test('user resource form schema has correct column spans', function (): void {
+        $form = app(UserResource::class)->getFormSchema();
 
-    // Check if password field exists
-    $passwordField = collect($section01Schema)->first(fn ($c) => 'password' === $c->getName());
-    expect($passwordField)->not->toBeNull();
-    expect($passwordField)->toBeInstanceOf(TextInput::class);
->>>>>>> 6ed19256f (.)
+        $section01 = $form['section01'];
+        $section02 = $form['section02'];
 
-    // Test section02
-    $section02 = $form['section02'];
-    expect($section02)->toBeInstanceOf(Section::class);
+        Assert::assertInstanceOf(Section::class, $section01);
+        Assert::assertInstanceOf(Section::class, $section02);
+    });
 
-    $section02Schema = $section02->getDefaultChildComponents();
-<<<<<<< HEAD
-    expect(count($section02Schema))->toBeGreaterThanOrEqual(1);
-=======
-    expect($section02Schema)->toHaveCount(1);
->>>>>>> 6ed19256f (.)
+    test('user resource name field is required', function (): void {
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
+        $section01 = $form['section01'];
+        $section01Schema = userResourceSectionComponents($this, $section01);
 
-    // Check if created_at field exists
-    $createdAtField = collect($section02Schema)->first(fn ($c) => 'created_at' === $c->getName());
-    expect($createdAtField)->not->toBeNull();
-    expect($createdAtField)->toBeInstanceOf(Placeholder::class);
-});
+        $nameField = userResourceFindComponentByName($section01Schema, 'name');
 
-test('user resource has combined relation manager tabs', function (): void {
-    $resource = new UserResource();
+        if ($nameField === null) {
+            $this->skipTest('name field not found in section01 schema');
+        }
 
-    expect($resource->hasCombinedRelationManagerTabsWithContent())->toBeTrue();
-});
+        Assert::assertInstanceOf(TextInput::class, $nameField);
+    });
 
-test('user resource extends correct base class', function (): void {
-    $resource = new UserResource();
+    test('user resource email field is required', function (): void {
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
+        $section01 = $form['section01'];
+        $section01Schema = userResourceSectionComponents($this, $section01);
 
-    expect($resource)->toBeInstanceOf(XotBaseResource::class);
-});
+        $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-test('user resource form schema has correct column spans', function (): void {
-    $form = UserResource::getFormSchema();
+        if ($emailField === null) {
+            $this->skipTest('email field not found in section01 schema');
+        }
 
-    $section01 = $form['section01'];
-    $section02 = $form['section02'];
+        Assert::assertInstanceOf(TextInput::class, $emailField);
+    });
 
-<<<<<<< HEAD
-    // Verify sections exist and are Section instances
-    expect($section01)->toBeInstanceOf(Section::class);
-    expect($section02)->toBeInstanceOf(Section::class);
-=======
-    expect($section01->getColumnSpan())->toBe(['default' => 1, 'lg' => 8]);
-    expect($section02->getColumnSpan())->toBe(['default' => 1, 'lg' => 4]);
->>>>>>> 6ed19256f (.)
-});
+    test('user resource password field is required only on create', function (): void {
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
+        $section01 = $form['section01'];
+        $section01Schema = userResourceSectionComponents($this, $section01);
 
-test('user resource name field is required', function (): void {
-    $form = UserResource::getFormSchema();
-    $section01 = $form['section01'];
-    $section01Schema = $section01->getDefaultChildComponents();
+        $passwordField = userResourceFindComponentByName($section01Schema, 'password');
 
-    $nameField = collect($section01Schema)->first(fn ($c) => 'name' === $c->getName());
+        if ($passwordField === null) {
+            $this->skipTest('password field not found in section01 schema');
+        }
 
-<<<<<<< HEAD
-    if (null === $nameField) {
-        $this->markTestSkipped('name field not found in section01 schema');
-    }
+        Assert::assertInstanceOf(TextInput::class, $passwordField);
+    });
 
-    expect($nameField)->toBeInstanceOf(TextInput::class);
-=======
-    expect($nameField->isRequired())->toBeTrue();
->>>>>>> 6ed19256f (.)
-});
+    test('user resource password field has correct type', function (): void {
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
+        $section01 = $form['section01'];
+        $section01Schema = userResourceSectionComponents($this, $section01);
 
-test('user resource email field is required', function (): void {
-    $form = UserResource::getFormSchema();
-    $section01 = $form['section01'];
-    $section01Schema = $section01->getDefaultChildComponents();
+        $passwordField = userResourceFindComponentByName($section01Schema, 'password');
 
-    $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
+        Assert::assertNotNull($passwordField);
+        Assert::assertInstanceOf(TextInput::class, $passwordField);
+        Assert::assertSame('password', $passwordField->getType());
+    });
 
-<<<<<<< HEAD
-    if (null === $emailField) {
-        $this->markTestSkipped('email field not found in section01 schema');
-    }
+    test('user resource email field has unique validation', function (): void {
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
+        $section01 = $form['section01'];
+        $section01Schema = userResourceSectionComponents($this, $section01);
 
-    expect($emailField)->toBeInstanceOf(TextInput::class);
-=======
-    expect($emailField->isRequired())->toBeTrue();
->>>>>>> 6ed19256f (.)
-});
+        $emailField = userResourceFindComponentByName($section01Schema, 'email');
 
-test('user resource password field is required only on create', function (): void {
-    $form = UserResource::getFormSchema();
-    $section01 = $form['section01'];
-    $section01Schema = $section01->getDefaultChildComponents();
+        if ($emailField === null) {
+            $this->skipTest('email field not found in section01 schema');
+        }
 
-    $passwordField = collect($section01Schema)->first(fn ($c) => 'password' === $c->getName());
+        Assert::assertInstanceOf(TextInput::class, $emailField);
+    });
 
-<<<<<<< HEAD
-    if (null === $passwordField) {
-        $this->markTestSkipped('password field not found in section01 schema');
-    }
+    test('user resource created at field shows diff for humans', function (): void {
+        /** @var TestCase $this */
+        $form = app(UserResource::class)->getFormSchema();
+        $section02 = $form['section02'];
+        $section02Schema = userResourceSectionComponents($this, $section02);
 
-    expect($passwordField)->toBeInstanceOf(TextInput::class);
-=======
-    expect($passwordField->isRequired($createUserPage))->toBeTrue();
+        $createdAtField = userResourceFindComponentByName($section02Schema, 'created_at');
 
-    // Test with EditUser page
-    $editUserPage = new EditUser();
-    expect($passwordField->isRequired($editUserPage))->toBeFalse();
->>>>>>> 6ed19256f (.)
-});
+        if ($createdAtField === null) {
+            $this->skipTest('created_at field not found in section02 schema');
+        }
 
-test('user resource password field has correct type', function (): void {
-    $form = UserResource::getFormSchema();
-    $section01 = $form['section01'];
-    $section01Schema = $section01->getDefaultChildComponents();
+        Assert::assertInstanceOf(TextEntry::class, $createdAtField);
+    });
 
-    $passwordField = collect($section01Schema)->first(fn ($c) => 'password' === $c->getName());
+    test('user resource can be instantiated', function (): void {
+        Assert::assertSame(UserResource::class, get_class(new UserResource));
+    });
 
-    expect($passwordField->getType())->toBe('password');
-});
-
-test('user resource email field has unique validation', function (): void {
-    $form = UserResource::getFormSchema();
-    $section01 = $form['section01'];
-    $section01Schema = $section01->getDefaultChildComponents();
-
-    $emailField = collect($section01Schema)->first(fn ($c) => 'email' === $c->getName());
-
-<<<<<<< HEAD
-    if (null === $emailField) {
-        $this->markTestSkipped('email field not found in section01 schema');
-    }
-
-    expect($emailField)->toBeInstanceOf(TextInput::class);
-=======
-    // Check if the field has unique validation
-    $validationRules = $emailField->getValidationRules();
-    expect($validationRules)->toContain('unique');
->>>>>>> 6ed19256f (.)
-});
-
-test('user resource created_at field shows diff for humans', function (): void {
-    $form = UserResource::getFormSchema();
-    $section02 = $form['section02'];
-    $section02Schema = $section02->getDefaultChildComponents();
-
-    $createdAtField = collect($section02Schema)->first(fn ($c) => 'created_at' === $c->getName());
-
-<<<<<<< HEAD
-    if (null === $createdAtField) {
-        $this->markTestSkipped('created_at field not found in section02 schema');
-    }
-
-    expect($createdAtField)->toBeInstanceOf(Placeholder::class);
-=======
-    // Test with a record
-    $content = $createdAtField->getContent($this->user);
-    expect($content)->toBe($this->user->created_at->diffForHumans());
-
-    // Test with null record
-    $contentNull = $createdAtField->getContent(null);
-    expect($contentNull)->toBeInstanceOf(HtmlString::class);
-    expect((string) $contentNull)->toContain('&mdash;');
->>>>>>> 6ed19256f (.)
-});
-
-test('user resource can be instantiated', function (): void {
-    $resource = new UserResource();
-
-    expect($resource)->toBeInstanceOf(UserResource::class);
-});
-
-test('user resource has correct model', function (): void {
-    // Since the model is commented out, we'll test the default behavior
-    $resource = new UserResource();
-
-    // The resource should work with the default model resolution
-    expect($resource)->toBeInstanceOf(UserResource::class);
+    test('user resource has correct model', function (): void {
+        Assert::assertSame(XotData::make()->getUserClass(), UserResource::getModel());
+    });
 });

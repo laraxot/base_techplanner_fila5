@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: model-classification
-canonical: ../../../Themes/docs/shared-components/model-classification.md
+title: "Xot Module - Model Classification"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "xot module - model classification xot"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/model-classification.md
-=======
 # Xot Module - Model Classification
 
 ## Business-Relevant Models (Require Factories/Seeders)
@@ -51,4 +50,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/model-classi
 - Infrastructure models typically don't need factories as they're system-managed
 - Evaluate if all these models are actually used in business logic
 - Consider that many Xot models may be framework infrastructure rather than business entities
->>>>>>> 6ed19256f (.)

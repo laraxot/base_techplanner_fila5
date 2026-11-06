@@ -110,14 +110,14 @@ $subscribeNewsletter = function () {
                 {{-- Main Search --}}
                 <div class="lg:col-span-3">
                     <div class="relative">
-                        <label for="blog-search-input-{{ uniqid() }}" class="sr-only">Cerca articoli</label>
+                        <label for="blog-search-input-{{ uniqid() }}" class="sr-only">{{ __('pub_theme::blog.search_bar.field.label') }}</label>
                         <input 
                             type="text" 
                             id="blog-search-input-{{ uniqid() }}"
                             wire:model.live.debounce.300ms="search"
-                            placeholder="Cerca articoli per titolo, contenuto o argomento..."
+                            placeholder="{{ __('pub_theme::blog.filters.search.placeholder') }}"
                             autocomplete="off"
-                            aria-label="Cerca articoli per titolo, contenuto o argomento"
+                            aria-label="{{ __('pub_theme::blog.filters.search_description.label') }}"
                             class="w-full px-6 py-4 pr-12 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                         >
                         <svg class="absolute right-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -127,7 +127,7 @@ $subscribeNewsletter = function () {
                     
                     @if($this->search)
                         <div class="mt-2 text-sm text-gray-600">
-                            Risultati per: <strong>"{{ $this->search }}"</strong>
+                            {{ __('pub_theme::blog.filters.results_for.label') }} <strong>"{{ $this->search }}"</strong>
                         </div>
                     @endif
                 </div>
@@ -137,10 +137,10 @@ $subscribeNewsletter = function () {
                     @if($this->selectedCategory || $this->selectedTag || $this->search)
                         <button 
                             wire:click="resetFilters"
-                            aria-label="Rimuovi tutti i filtri di ricerca"
+                            aria-label="{{ __('pub_theme::blog.filters.clear_description.label') }}"
                             class="px-3 py-1 text-sm bg-red-100 text-red-700 rounded-full hover:bg-red-200 transition-colors focus:outline-none focus:ring-2 focus:ring-red-500 rounded-md"
                         >
-                            Reset Filtri
+                            {{ __('pub_theme::blog.filters.reset.label') }}
                         </button>
                     @endif
                 </div>
@@ -150,7 +150,7 @@ $subscribeNewsletter = function () {
             <div class="flex flex-wrap gap-4 mt-6">
                 {{-- Category Filter --}}
                 <div class="flex items-center gap-2">
-                    <label for="blog-category-filter-{{ uniqid() }}" class="text-sm font-medium text-gray-700">Categoria:</label>
+                    <label for="blog-category-filter-{{ uniqid() }}" class="text-sm font-medium text-gray-700">{{ __('pub_theme::blog.filters.category.label') }}</label>
                     <select 
                         id="blog-category-filter-{{ uniqid() }}"
                         wire:model.live="selectedCategory"
@@ -158,7 +158,7 @@ $subscribeNewsletter = function () {
                         aria-describedby="blog-category-filter-help-{{ uniqid() }}"
                         class="px-3 py-1 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
-                        <option value="">Tutte</option>
+                        <option value="">{{ __('pub_theme::blog.filters.all_categories_short.label') }}</option>
                         @foreach($this->categories as $category)
                             <option value="{{ $category->id }}">{{ $category->name }} ({{ $category->posts_count }})</option>
                         @endforeach
@@ -167,7 +167,7 @@ $subscribeNewsletter = function () {
                 
                 {{-- Tag Filter --}}
                 <div class="flex items-center gap-2">
-                    <label for="blog-tag-filter-{{ uniqid() }}" class="text-sm font-medium text-gray-700">Tag:</label>
+                    <label for="blog-tag-filter-{{ uniqid() }}" class="text-sm font-medium text-gray-700">{{ __('pub_theme::blog.filters.tag.label') }}</label>
                     <select 
                         id="blog-tag-filter-{{ uniqid() }}"
                         wire:model.live="selectedTag"
@@ -175,7 +175,7 @@ $subscribeNewsletter = function () {
                         aria-describedby="blog-tag-filter-help-{{ uniqid() }}"
                         class="px-3 py-1 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
-                        <option value="">Tutti</option>
+                        <option value="">{{ __('pub_theme::common.filters.all.label') }}</option>
                         @foreach($this->tags as $tag)
                             <option value="{{ $tag->name }}">{{ $tag->name }}</option>
                         @endforeach
@@ -189,9 +189,9 @@ $subscribeNewsletter = function () {
     @if($this->posts->count() > 0)
         <div class="container mx-auto px-4 py-4">
             <p class="text-gray-600">
-                Trovati {{ $this->posts->total() }} articoli
-                @if($this->selectedCategory) nella categoria "{{ $this->categories->find($this->selectedCategory)?->name }}"@endif
-                @if($this->selectedTag) con tag "{{ $this->selectedTag }}"@endif
+                {{ __('pub_theme::blog.filters_summary.found.message', ['count' => $this->posts->total()]) }}
+                @if($this->selectedCategory) {{ __('pub_theme::blog.filters_summary.in_category.message', ['category' => $this->categories->find($this->selectedCategory)?->name]) }}@endif
+                @if($this->selectedTag) {{ __('pub_theme::blog.filters_summary.with_tag.message', ['tag' => $this->selectedTag]) }}@endif
             </p>
         </div>
     @endif
@@ -270,10 +270,10 @@ $subscribeNewsletter = function () {
                             @if($this->posts->currentPage() > 1)
                     <button 
                         wire:click="goToPage({{ $this->posts->currentPage() - 1 }})"
-                        aria-label="Vai alla pagina precedente"
+                        aria-label="{{ __('pub_theme::common.pagination.previous.label') }}"
                         class="px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                     >
-                                    Precedente
+                                    {{ __('pub_theme::common.pagination.previous_text.label') }}
                                 </button>
                             @endif
                             
@@ -282,7 +282,7 @@ $subscribeNewsletter = function () {
                                 @if($page['url'])
                                     <button 
                                         wire:click="goToPage({{ $page['page'] }})"
-                                        aria-label="Vai alla pagina {{ $page['label'] }}"
+                                        aria-label="{{ __('pub_theme::common.pagination.goto.label', ['page' => $page['label']]) }}"
                                         @if($page['active']) aria-current="page" @endif
                                         class="px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E5A96] {{ $page['active'] ? 'bg-brand-blue text-white' : 'bg-white border border-gray-300 hover:bg-gray-50' }} rounded-lg transition-colors"
                                     >
@@ -295,10 +295,10 @@ $subscribeNewsletter = function () {
                             @if($this->posts->hasMorePages())
                                 <button 
                                     wire:click="goToPage({{ $this->posts->currentPage() + 1 }})"
-                                    aria-label="Vai alla pagina successiva"
+                                    aria-label="{{ __('pub_theme::common.pagination.next.label') }}"
                                     class="px-3 py-2 text-sm bg-white border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors focus:outline-none focus:ring-2 focus:ring-[#1E5A96]"
                                 >
-                                    Successiva
+                                    {{ __('pub_theme::common.pagination.next_text.label') }}
                                 </button>
                             @endif
                         </nav>
@@ -310,16 +310,16 @@ $subscribeNewsletter = function () {
                     <svg class="w-24 h-24 mx-auto text-gray-300 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M12 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
-                    <h3 class="text-xl font-semibold text-gray-900 mb-2">Nessun articolo trovato</h3>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ __('pub_theme::blog.filters_empty.title.title') }}</h3>
                     <p class="text-gray-600 mb-6">
-                        Prova a modificare i criteri di ricerca o i filtri applicati.
+                        {{ __('pub_theme::blog.filters_empty.hint.message') }}
                     </p>
                     <button 
                         wire:click="resetFilters"
-                        aria-label="Rimuovi tutti i filtri e mostra tutti gli articoli"
+                        aria-label="{{ __('pub_theme::blog.filters_empty.reset_description.label') }}"
                         class="px-6 py-2 bg-brand-blue text-white rounded-lg hover:bg-blue-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]"
                     >
-                        Resetta tutti i filtri
+                        {{ __('pub_theme::blog.filters_empty.reset.label') }}
                     </button>
                 </div>
             @endif

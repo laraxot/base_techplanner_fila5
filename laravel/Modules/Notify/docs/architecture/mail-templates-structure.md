@@ -1,3 +1,23 @@
+---
+title: "Struttura Template Email"
+type: concept
+tags: [notify, docs, architecture, mail, templates, structure]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione architecture mail templates structure struttura template email frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - ../best-practices/naming-conventions.md
+status: draft
+---
 # Struttura Template Email
 
 ## Introduzione
@@ -121,23 +141,15 @@ $attachments = [
 
 - [Documentazione MailPace](https://github.com/mailpace/templates)
 - [Best Practices Email HTML](./EMAIL_HTML_BEST_PRACTICES.md)
+- [Best Practices Email HTML](../email_html_best_practices.md)
 - [Guida Testing](./EMAIL_TESTING.md)
-<<<<<<< HEAD
-- [Best Practices Email HTML](./EMAIL_HTML_BEST_PRACTICES.md)
-- [Guida Testing](./EMAIL_TESTING.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Supporto
 
 Per supporto tecnico:
 - Email: support@example.com
 - Documentazione: https://docs.example.com
-<<<<<<< HEAD
 - Repository: https://github.com/organization/notify 
-=======
-- Repository: https://github.com/organization/notify
->>>>>>> 6ed19256f (.)
 
 ## Lezioni Apprese
 
@@ -228,8 +240,4 @@ Per supporto tecnico:
 2. I path relativi sono preferibili
 3. I mime type devono essere corretti
 4. La documentazione deve essere aggiornata
-<<<<<<< HEAD
 5. I test devono essere completi 
-=======
-5. I test devono essere completi
->>>>>>> 6ed19256f (.)

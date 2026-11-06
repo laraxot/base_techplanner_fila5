@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: event-sourcing-examples-duplicate
-canonical: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+title: "Practical Event Sourcing Examples for Healthcare"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "practical event sourcing examples for healthcare activity"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
-=======
 # Practical Event Sourcing Examples for Healthcare
 
 ## Table of Contents
@@ -285,5 +284,6 @@ These examples demonstrate how event sourcing can be applied to various aspects 
 3. **Resilient**: The system can be rebuilt by replaying events
 4. **Understandable**: The business logic is expressed in terms of domain events
 
-Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.
->>>>>>> 6ed19256f (.)
+Remember to always consider the specific needs of your healthcare application and adjust these patterns accordingly.=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-examples-duplicate.md

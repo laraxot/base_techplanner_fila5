@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: usage
-canonical: ../../../../Themes/docs/shared-components/usage.md
+issues: []
+discussions: []
+title: "Utilizzo Base e Layout"
+module: "Media"
+type: concept
+tags: [usage]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "usage"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/usage.md
-=======
 # Utilizzo Base e Layout
 
 Questa sezione descrive l'utilizzo di base della libreria, come istanziare la classe `Html2Pdf` e come gestire il layout delle pagine con i tag speciali.
@@ -128,4 +133,3 @@ Il contenuto all'interno di questo tag non verrà spezzato tra due pagine.
     </table>
 </nobreak>
 ```
->>>>>>> 6ed19256f (.)

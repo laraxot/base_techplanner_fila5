@@ -1,6 +1,19 @@
+---
+issues: []
+discussions: []
+title: "Media Module: Philosophy, Purpose, and Design Principles"
+module: "Media"
+type: concept
+tags: [philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "philosophy"
+related:
+  - "./webm.md"
+status: draft
+---
 # Media Module: Philosophy, Purpose, and Design Principles
 
-**Date:** December 23, 2025
 
 ## 🎯 Purpose and Core Responsibilities
 
@@ -53,8 +66,4 @@ The `Media` module, as the guardian of digital assets, can significantly benefit
 4.  **Git (MCP)**: Aids in reviewing changes to media models, transformation recipes, or storage configurations, ensuring robust and reliable digital asset management.
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex media processing workflows (e.g., chained image manipulations, video encoding pipelines), helping to break down and understand intricate asset handling processes.
 
-<<<<<<< HEAD
 By leveraging these MCPs, the `Media` module can ensure its critical role in managing digital assets is more efficient, verifiable, and transparent, ultimately contributing to a richer and more engaging application experience.
-=======
-By leveraging these MCPs, the `Media` module can ensure its critical role in managing digital assets is more efficient, verifiable, and transparent, ultimately contributing to a richer and more engaging application experience.
->>>>>>> 6ed19256f (.)

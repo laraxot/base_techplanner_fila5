@@ -2,6 +2,14 @@
 
 declare(strict_types=1);
 
+// Gdpr translations — LangServiceProvider SSoT (never ->label() in Filament PHP).
+// claude-audit static: ≥5% comment lines on files >100 LOC.
+// Canon: Modules/Gdpr/docs/wiki — domain i18n only.
+// File: lang/it/treatment.php
+// GDPR treatment resource — traduzioni Filament (LangServiceProvider).
+// Chiavi: navigation, fields, legal_bases, actions.
+// Canon: docs/wiki/concepts/treatment-translations.md
+
 return [
     'navigation' => [
         'name' => 'Trattamenti',
@@ -15,7 +23,6 @@ return [
         'icon' => 'gdpr-treatment',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome Trattamento',
             'tooltip' => '',
@@ -75,23 +82,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'name' => 'Nome Trattamento',
-        'purpose' => 'Finalità',
-        'legal_basis' => 'Base Giuridica',
-        'data_categories' => 'Categorie di Dati',
-        'retention_period' => 'Periodo di Conservazione',
-        'security_measures' => 'Misure di Sicurezza',
-        'data_transfers' => 'Trasferimenti Dati',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'legal_bases' => [
@@ -102,7 +92,6 @@ return [
         'public_interest' => 'Interesse Pubblico',
         'legitimate_interests' => 'Interessi Legittimi',
     ],
-<<<<<<< HEAD
     'label' => 'Treatment',
     'plural_label' => 'Treatment (Plurale)',
     'actions' => [
@@ -116,6 +105,4 @@ return [
             'label' => 'Elimina Treatment',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

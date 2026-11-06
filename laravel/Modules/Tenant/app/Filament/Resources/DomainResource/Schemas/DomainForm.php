@@ -14,7 +14,7 @@ class DomainForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'title' => TextInput::make('title')
@@ -40,6 +40,5 @@ class DomainForm extends XotBaseResourceForm
                 ->minValue(0)
                 ->maxValue(5),
         ];
-
     }
 }

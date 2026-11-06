@@ -1,3 +1,11 @@
+---
+title: "Organizzazione dei Namespace Filament nel Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "organizzazione dei namespace filament nel modulo xot xot"
+---
 # Organizzazione dei Namespace Filament nel Modulo Xot
 
 ## Problema Identificato: Duplicazione di Classi Base
@@ -63,12 +71,6 @@ Questo errore indica che un metodo è stato erroneamente definito come statico q
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Filament](Modules/Xot/project_docs/filament/filament_best_practices.md)
 - [XotBasePage](Modules/Xot/project_docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](Modules/Xot/project_docs/filament/filament_inheritance_guidelines.md)
-=======
-- [Documentazione Filament](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/filament/filament_best_practices.md)
-- [XotBasePage](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/filament/pages/xotbasepage.md)
-- [Linee Guida per l'Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/project_docs/filament/filament_inheritance_guidelines.md)
->>>>>>> 6ed19256f (.)

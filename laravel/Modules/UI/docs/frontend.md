@@ -1,3 +1,15 @@
+---
+title: "frontend"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "frontend"
+issues: []
+discussions: []
+status: draft
+---
+
 # Frontend e Sistema di Componenti
 
 ## Struttura della Homepage
@@ -5,21 +17,12 @@
 La homepage del sito è costruita utilizzando un sistema di componenti modulare basato su blocchi. La configurazione della homepage si trova in:
 
 ```
-<<<<<<< HEAD
 config/local/<nome progetto>/database/content/pages/1.json
 config/local/<nome progetto>/database/content/pages/1.json
 config/local/<nome progetto>/database/content/pages/1.json
 config/local/<nome progetto>/database/content/pages/1.json
 config/local/<nome progetto>/database/content/pages/1.json
 config/local/<nome progetto>/database/content/pages/1.json
-=======
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/config/local/<nome progetto>/database/content/pages/1.json
-/var/www/html/saluteora/laravel/config/local/saluteora/database/content/pages/1.json
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/config/local/<nome progetto>/database/content/pages/1.json
-/var/www/html/saluteora/laravel/config/local/saluteora/database/content/pages/1.json
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/config/local/<nome progetto>/database/content/pages/1.json
-/var/www/html/saluteora/laravel/config/local/saluteora/database/content/pages/1.json
->>>>>>> 6ed19256f (.)
 ```
 
 ### Componenti Disponibili

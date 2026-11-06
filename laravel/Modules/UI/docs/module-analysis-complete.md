@@ -1,21 +1,25 @@
+---
+title: "module analysis complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module analysis complete"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Completa Modulo UI - Factory, Seeder e Test
 
 ## 📊 Panoramica Generale
 
 Il modulo UI è il sistema di componenti e interfacce utente condivisi di , fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
-<<<<<<< HEAD
 Il modulo UI è il sistema di componenti e interfacce utente condivisi di <nome progetto>, fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
 Il modulo UI è il sistema di componenti e interfacce utente condivisi di , fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
 Il modulo UI è il sistema di componenti e interfacce utente condivisi di <nome progetto>, fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
 Il modulo UI è il sistema di componenti e interfacce utente condivisi di , fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
 Il modulo UI è il sistema di componenti e interfacce utente condivisi di <nome progetto>, fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
-=======
-Il modulo UI è il sistema di componenti e interfacce utente condivisi di SaluteOra, fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
-Il modulo UI è il sistema di componenti e interfacce utente condivisi di , fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
-Il modulo UI è il sistema di componenti e interfacce utente condivisi di SaluteOra, fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
-Il modulo UI è il sistema di componenti e interfacce utente condivisi di , fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
-Il modulo UI è il sistema di componenti e interfacce utente condivisi di SaluteOra, fornendo widget, componenti Filament, form e layout riutilizzabili per tutti gli altri moduli. Questo documento fornisce un'analisi completa dello stato attuale di factory, seeder e test, con focus sulla business logic.
->>>>>>> 6ed19256f (.)
 
 ## 🏗️ Struttura Modelli e Componenti
 
@@ -238,22 +242,13 @@ Il modulo UI è il sistema di componenti e interfacce utente condivisi di Salute
 - Miglioramento manutenibilità
 
 ---
-
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 1.0
 **Stato**: In Progress
 **Responsabile**: Team Sviluppo
-<<<<<<< HEAD
 **Responsabile**: Team Sviluppo <nome progetto>
 **Responsabile**: Team Sviluppo
 **Responsabile**: Team Sviluppo <nome progetto>
 **Responsabile**: Team Sviluppo
 **Responsabile**: Team Sviluppo <nome progetto>
-=======
-**Responsabile**: Team Sviluppo SaluteOra
-**Responsabile**: Team Sviluppo
-**Responsabile**: Team Sviluppo SaluteOra
-**Responsabile**: Team Sviluppo
-**Responsabile**: Team Sviluppo SaluteOra
->>>>>>> 6ed19256f (.)
 **Prossima Revisione**: Gennaio 2025

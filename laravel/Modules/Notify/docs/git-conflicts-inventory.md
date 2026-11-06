@@ -1,3 +1,15 @@
+---
+title: "git conflicts inventory"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git conflicts inventory"
+issues: []
+discussions: []
+status: draft
+---
+
 # Inventario Conflitti Git - Notify Module
 
 ## File con conflitti di merge non risolti
@@ -17,10 +29,5 @@
 
 ## Stato
 - ❌ Conflitti da risolvere
-- 📅 Data rilevamento: 2025-11-12
-<<<<<<< HEAD
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: MEDIA - Template email e test
-=======
-- 🔄 Priorità: MEDIA - Template email e test
->>>>>>> 6ed19256f (.)

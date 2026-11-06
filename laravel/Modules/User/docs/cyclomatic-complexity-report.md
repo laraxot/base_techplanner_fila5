@@ -1,10 +1,31 @@
+---
+title: "Cyclomatic Complexity Report - Module: User"
+type: concept
+tags: [cyclomatic, complexity, report]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cyclomatic-complexity-report cyclomatic complexity report - module: user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Cyclomatic Complexity Report - Module: User
 
-<<<<<<< HEAD
 **Generated:** 2025-10-01 19:44:12  
-=======
-**Generated:** 2025-10-01 19:44:12
->>>>>>> 6ed19256f (.)
 **Analyzer:** Super Mucca 🐮
 
 ---
@@ -25,11 +46,7 @@
 
 ### What is Cyclomatic Complexity?
 
-<<<<<<< HEAD
 La complessità ciclomatica è una metrica del software che misura la complessità di un programma. 
-=======
-La complessità ciclomatica è una metrica del software che misura la complessità di un programma.
->>>>>>> 6ed19256f (.)
 Viene calcolata contando il numero di percorsi di esecuzione indipendenti attraverso il codice sorgente.
 
 ### Interpretation Guidelines
@@ -93,10 +110,7 @@ These methods should be considered for refactoring:
 
 ### Priority:
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 ---
 
 ## 📚 References

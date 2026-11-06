@@ -1,3 +1,15 @@
+---
+title: "custom components"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "custom components"
+issues: []
+discussions: []
+status: draft
+---
+
 # Componenti Personalizzati in Filament V3
 
 Questa guida spiega come implementare componenti personalizzati all'interno di un pannello Filament V3 utilizzando Livewire e TailwindCSS.
@@ -230,8 +242,4 @@ npm run build
 
 - [Documentazione Filament](https://filamentphp.com)
 - [Documentazione Livewire](https://livewire.laravel.com)
-- [Documentazione TailwindCSS](https://tailwindcss.com)
-<<<<<<< HEAD
 - [Documentazione TailwindCSS](https://tailwindcss.com) 
-=======
->>>>>>> 6ed19256f (.)

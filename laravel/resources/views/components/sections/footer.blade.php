@@ -12,8 +12,7 @@
                     <span class="text-xl font-bold">TechPlanner</span>
                 </div>
                 <p class="text-gray-400 mb-4">
-                    Da oltre 10 anni al servizio della sicurezza sanitaria nel nord Italia. 
-                    Esperti in radioprotezione e controlli elettromedicali.
+                    {{ __('footer.description') }}
                 </p>
                 <div class="flex space-x-4">
                     <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition-colors">
@@ -36,38 +35,38 @@
 
             <!-- Quick Links -->
             <div>
-                <h3 class="text-lg font-semibold mb-4">Link Veloci</h3>
+                <h3 class="text-lg font-semibold mb-4">{{ __('footer.quick_links') }}</h3>
                 <ul class="space-y-2">
-                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">Servizi</a></li>
-                    <li><a href="/about" class="text-gray-400 hover:text-white transition-colors">Chi Siamo</a></li>
-                    <li><a href="/blog" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                    <li><a href="/faq" class="text-gray-400 hover:text-white transition-colors">FAQ</a></li>
-                    <li><a href="/contacts" class="text-gray-400 hover:text-white transition-colors">Contatti</a></li>
+                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.links.services') }}</a></li>
+                    <li><a href="/about" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.links.about') }}</a></li>
+                    <li><a href="/blog" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.links.blog') }}</a></li>
+                    <li><a href="/faq" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.links.faq') }}</a></li>
+                    <li><a href="/contacts" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.links.contacts') }}</a></li>
                 </ul>
             </div>
 
             <!-- Services -->
             <div>
-                <h3 class="text-lg font-semibold mb-4">Servizi Principali</h3>
+                <h3 class="text-lg font-semibold mb-4">{{ __('footer.main_services') }}</h3>
                 <ul class="space-y-2">
-                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">Controllo Radioprotezione</a></li>
-                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">Controllo Elettromedicali</a></li>
-                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">Documentazione</a></li>
-                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">Consulenza Normativa</a></li>
-                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">Formazione</a></li>
+                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.services_menu.radiation.control') }}</a></li>
+                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.services_menu.electromedical.control') }}</a></li>
+                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.services_menu.documentation.title') }}</a></li>
+                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">{{ __('navigation.services_menu.documentation.regulatory_consulting') }}</a></li>
+                    <li><a href="/services" class="text-gray-400 hover:text-white transition-colors">{{ __('footer.training') }}</a></li>
                 </ul>
             </div>
 
             <!-- Contact Info -->
             <div>
-                <h3 class="text-lg font-semibold mb-4">Contatti</h3>
+                <h3 class="text-lg font-semibold mb-4">{{ __('navigation.links.contacts') }}</h3>
                 <ul class="space-y-3">
                     <li class="flex items-start">
                         <svg class="w-5 h-5 mr-3 mt-0.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                         </svg>
                         <div>
-                            <div class="text-white">Telefono</div>
+                            <div class="text-white">{{ __('footer.contact.phone') }}</div>
                             <a href="tel:+393480123456" class="text-gray-400 hover:text-white transition-colors">+39 348 0123 456</a>
                         </div>
                     </li>
@@ -76,7 +75,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                         </svg>
                         <div>
-                            <div class="text-white">Email</div>
+                            <div class="text-white">{{ __('footer.contact.email') }}</div>
                             <a href="mailto:info@techplanner.it" class="text-gray-400 hover:text-white transition-colors">info@techplanner.it</a>
                         </div>
                     </li>
@@ -86,7 +85,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                         </svg>
                         <div>
-                            <div class="text-white">Sede</div>
+                            <div class="text-white">{{ __('footer.contact.address') }}</div>
                             <div class="text-gray-400">Via Roma 123, 35131 Padova (PD)</div>
                         </div>
                     </li>
@@ -94,11 +93,11 @@
 
                 <!-- Newsletter -->
                 <div class="mt-6">
-                    <h4 class="text-white font-medium mb-2">Newsletter</h4>
-                    <p class="text-gray-400 text-sm mb-3">Ricevi aggiornamenti su normative e servizi</p>
+                    <h4 class="text-white font-medium mb-2">{{ __('footer.newsletter.title') }}</h4>
+                    <p class="text-gray-400 text-sm mb-3">{{ __('footer.newsletter.description') }}</p>
                     <form class="flex">
                         <input type="email" 
-                               placeholder="La tua email" 
+                               placeholder="{{ __('footer.newsletter.email_placeholder') }}" 
                                class="flex-1 px-3 py-2 bg-gray-800 border border-gray-700 rounded-l-lg focus:outline-none focus:border-blue-500 text-white">
                         <button type="submit" class="px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-r-lg transition-colors">
                             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -114,13 +113,13 @@
         <div class="border-t border-gray-800 mt-8 pt-8">
             <div class="flex flex-col md:flex-row justify-between items-center">
                 <div class="text-gray-400 text-sm mb-4 md:mb-0">
-                    © {{ date('Y') }} TechPlanner. Tutti i diritti riservati.
+                    © {{ date('Y') }} TechPlanner. {{ __('footer.rights_reserved') }}
                 </div>
                 <div class="flex space-x-6">
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Cookie Policy</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Termini di Servizio</a>
-                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">Note Legali</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">{{ __('footer.legal.privacy') }}</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">{{ __('footer.legal.cookies') }}</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">{{ __('footer.legal.terms') }}</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors text-sm">{{ __('footer.legal.notices') }}</a>
                 </div>
             </div>
         </div>

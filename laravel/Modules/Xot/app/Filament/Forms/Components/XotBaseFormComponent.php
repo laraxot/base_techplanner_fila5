@@ -35,11 +35,7 @@ abstract class XotBaseFormComponent extends Field
     {
         $label = parent::getLabel();
 
-<<<<<<< HEAD
-        if (null === $label) {
-=======
         if ($label === null) {
->>>>>>> 6ed19256f (.)
             return Str::title($this->getName());
         }
 
@@ -55,14 +51,9 @@ abstract class XotBaseFormComponent extends Field
      */
     public function getValidationRules(): array
     {
-<<<<<<< HEAD
         /** @var array<string, mixed> $rules */
         $rules = parent::getValidationRules();
 
         return $rules;
-=======
-        /** @var array<string, mixed> */
-        return parent::getValidationRules();
->>>>>>> 6ed19256f (.)
     }
 }

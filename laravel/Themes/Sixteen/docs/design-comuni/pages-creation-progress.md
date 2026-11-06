@@ -1,3 +1,15 @@
+---
+title: "pages creation progress"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pages creation progress"
+issues: []
+discussions: []
+status: draft
+---
+
 # 📊 Pages Creation Progress Report
 
 **Data**: 2026-03-30  
@@ -70,7 +82,7 @@
 - [ ] segnalazione-03-riepilogo
 - [ ] segnalazione-04-conferma
 - [ ] segnalazione-area-personale
-- [ ] segnalazioni-elenco
+- [ ] ticket-list
 
 ### Altre Pagine (4)
 - [ ] accesso-servizio
@@ -150,7 +162,6 @@
 4. Document patterns and conventions
 
 ---
-
 **Ultimo Aggiornamento**: 2026-03-30  
 **Prossima Azione**: Creare block views mancanti  
 **ETA Completamento**: 7-10 giorni

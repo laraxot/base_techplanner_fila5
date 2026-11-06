@@ -1,6 +1,17 @@
+---
+title: "update coordinates bulk action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "update coordinates bulk action"
+issues: []
+discussions: []
+status: draft
+---
+
 # UpdateCoordinatesBulkAction - Azione Riutilizzabile per Aggiornamento Coordinate
 
-**Data**: 2025-01-27
 **Modulo**: Geo
 **Status**: ✅ **IMPLEMENTATO**
 
@@ -155,17 +166,7 @@ public function getTableBulkActions(): array
 ## Collegamenti
 
 - [Filosofia Componenti Riutilizzabili](./reusable-components-philosophy.md)
-- [Pattern QueueableActions](../../Xot/docs/queueable-actions-pattern.md)
-<<<<<<< HEAD
 - [Pattern QueueableActions](../../xot/docs/queueable-actions-pattern.md)
-=======
->>>>>>> 6ed19256f (.)
 - [GetAddressDataFromFullAddressAction](./../app/Actions/GetAddressDataFromFullAddressAction.php)
 
 ---
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27*
-=======
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)

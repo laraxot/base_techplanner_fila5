@@ -6,38 +6,41 @@ namespace Modules\Xot\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Carbon;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\ModuleFactory;
+use Modules\Xot\Models\Traits\ModuleStatus;
 use Nwidart\Modules\Facades\Module as ModuleFacade;
 use Nwidart\Modules\Module as NModule;
-<<<<<<< HEAD
+use Sushi\Sushi;
 
 use function Safe\json_encode;
 
-use Sushi\Sushi;
-
 /**
- * @property int                          $id
- * @property string|null                  $name
- * @property string|null                  $description
- * @property bool|null                    $status
- * @property int|null                     $priority
- * @property string|null                  $path
- * @property string|null                  $icon
-=======
-use function Safe\json_encode;
-use Sushi\Sushi;
-
-/**
+ * Registry Sushi dei moduli nwidart: espone name/slug/status/path per Filament e query.
+ * Non esiste un campo `alias` (nwidart alias → `slug` / `name`); i timestamp seguono BaseModel.
+ *
  * @property int $id
  * @property string|null $name
+ * @property string|null $slug
+ * @property string|null $version
  * @property string|null $description
  * @property bool|null $status
+ * @property bool|null $enabled
+ * @property bool|null $is_active
  * @property int|null $priority
  * @property string|null $path
  * @property string|null $icon
->>>>>>> 6ed19256f (.)
  * @property array<array-key, mixed>|null $colors
+ * @property array<array-key, mixed>|null $dependencies
+ * @property array<array-key, mixed>|null $config
+ * @property array<array-key, mixed>|null $metadata
+ * @property Carbon|null $activation_date
+ * @property Carbon|null $deactivation_date
+ * @property Carbon|null $installation_date
+ * @property array<array-key, mixed>|null $update_history
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  *
  * @method static Builder<static>|Module newModelQuery()
  * @method static Builder<static>|Module newQuery()
@@ -50,16 +53,12 @@ use Sushi\Sushi;
  * @method static Builder<static>|Module wherePath($value)
  * @method static Builder<static>|Module wherePriority($value)
  * @method static Builder<static>|Module whereStatus($value)
+ * @method static Builder<static>|Module whereSlug($value)
+ * @method static Builder<static>|Module whereEnabled($value)
  *
-<<<<<<< HEAD
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $deleter
  * @property ProfileContract|null $updater
-=======
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
- * @property-read ProfileContract|null $updater
->>>>>>> 6ed19256f (.)
  *
  * @method static ModuleFactory factory($count = null, $state = [])
  *
@@ -67,41 +66,54 @@ use Sushi\Sushi;
  */
 final class Module extends BaseModel
 {
+    use ModuleStatus;
     use Sushi;
 
     protected $fillable = [
         'name',
-        // 'alias',
-        // 'description',
+        'slug',
+        'version',
+        'description',
         'status',
+        'enabled',
+        'is_active',
         'priority',
         'path',
         'icon',
         'colors',
+        'dependencies',
+        'config',
+        'metadata',
+        'activation_date',
+        'deactivation_date',
+        'installation_date',
+        'update_history',
     ];
 
     /**
-<<<<<<< HEAD
      * @var string
      */
     protected $connection = 'xot';
 
     /**
-=======
->>>>>>> 6ed19256f (.)
      * @return array<int, array<string, mixed>>
      */
     public function getRows(): array
     {
-        $modules = ModuleFacade::all();
-        $modules = Arr::map($modules, function (NModule $module): array {
+        $rows = [];
+
+        foreach (ModuleFacade::all() as $module) {
+            if (! $module instanceof NModule) {
+                continue;
+            }
+
             $config = config('tenant::config');
             if (! is_array($config)) {
                 $config = [];
             }
             $colors = Arr::get($config, 'colors', []);
 
-            return [
+            $rows[] = [
                 'name' => $module->getName(),
                 // 'alias' => $module->getAlias(),
                 'description' => $module->getDescription(),
@@ -111,17 +123,9 @@ final class Module extends BaseModel
                 'icon' => Arr::get($config, 'icon', 'heroicon-o-question-mark-circle'),
                 'colors' => json_encode($colors),
             ];
-        });
-
-<<<<<<< HEAD
-        /** @var array<int, array<string, mixed>> $rows */
-        $rows = array_values($modules);
+        }
 
         return $rows;
-=======
-        /** @var array<int, array<string, mixed>> */
-        return array_values($modules);
->>>>>>> 6ed19256f (.)
     }
 
     protected function casts(): array
@@ -130,6 +134,7 @@ final class Module extends BaseModel
             'name' => 'string',
             'description' => 'string',
             'status' => 'boolean',
+            'enabled' => 'boolean',
             'priority' => 'integer',
             'path' => 'string',
             'icon' => 'string',

@@ -1,5 +1,5 @@
 @props([
-    'title'       => 'Dove Siamo',
+    'title'       => __('pub_theme::blocks.sections.map.title'),
     'address'     => 'Via Vanzo 86/A, 31021 Mogliano Veneto TV',
     'coordinates' => [],
     'image'       => '/modules/techplanner/images/map-via-vanzo.png',
@@ -30,12 +30,12 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     class="block relative group cursor-pointer"
-                    aria-label="Apri {{ $address }} in Google Maps"
+                    aria-label="{{ __('pub_theme::a11y_labels.map.open.label', ['address' => $address]) }}"
                 >
                     {{-- Immagine mappa OSM (statica, nessuna API) --}}
                     <img
                         src="{{ $image }}"
-                        alt="Mappa: {{ $address }}"
+                        alt="{{ __('pub_theme::blocks.fields.map.alt', ['address' => $address]) }}"
                         class="w-full h-auto"
                         loading="lazy"
                     />
@@ -48,7 +48,7 @@
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-blue-600 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                         </svg>
-                        <span class="text-sm font-semibold text-gray-700">Apri in Google Maps</span>
+                        <span class="text-sm font-semibold text-gray-700">{{ __('pub_theme::blocks.map.open_in_google.label') }}</span>
                     </div>
                 </a>
             </div>
@@ -68,13 +68,13 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
-                    Ottieni Indicazioni
+                    {{ __('pub_theme::blocks.map.directions_short.label') }}
                 </a>
             </div>
 
             {{-- Attribuzione OpenStreetMap (obbligatoria per ODbL) --}}
             <p class="text-center text-xs text-gray-400 mt-3">
-                Mappa © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" class="underline hover:text-gray-600">OpenStreetMap</a> contributors
+                {!! __('pub_theme::blocks.map.attribution.label', ['link' => '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener" class="underline hover:text-gray-600">OpenStreetMap</a>']) !!}
             </p>
         </div>
     </div>

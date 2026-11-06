@@ -1,30 +1,27 @@
+---
+title: "index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index"
+issues: []
+discussions: []
+status: draft
+---
+
 # Indice della Documentazione - Sezioni CMS
 
 ## Collegamenti Correlati
-<<<<<<< HEAD
 - [Indice CMS](../index.md)
-- [README CMS](../readme.md)
-- [Sezioni](../sections.md)
-- [Gestione Sezioni](../section-management.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Indice CMS](../INDEX.md)
 - [README CMS](../README.md)
 - [Sezioni](../sections.md)
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Generale](../../../../../docs/README.md)
 - [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
-- [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
-- [Implementazione nell'UI](../../../UI/docs/sections/INDEX.md)
-- [Implementazione nel Tema One](../../../../Themes/One/docs/sections/INDEX.md)
-<<<<<<< HEAD
-- [Documentazione Generale](../../../../../../docs/readme.md)
-- [Documentazione Generale <nome progetto>](../../../../../../docs/readme.md)
 - [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
 - [Implementazione nell'UI](../../../ui/docs/sections/index.md)
 - [Implementazione nel Tema One](../../../../themes/one/docs/sections/index.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Panoramica
 Le sezioni sono componenti strutturali che compongono le pagine del sito. Ogni sezione può contenere diversi blocchi e viene definita tramite file JSON di configurazione.
@@ -35,15 +32,9 @@ Le sezioni sono componenti strutturali che compongono le pagine del sito <nome p
 ### Header
 - [Header](./header.md) - Documentazione generale dell'header
 - [Header Section](./header-section.md) - Struttura e implementazione della sezione header
-- [Header con Lingua e Dropdown Utente](./HEADER_LANGUAGE_USER_DROPDOWN.md) - Implementazione completa del dropdown utente e selettore lingua
-- [Header con Lingua e Avatar](./HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md) - Implementazione dell'avatar utente e selettore lingua
-- [Selettore Lingua con Bandiere](./HEADER_LANGUAGE_SELECTOR_WITH_FLAGS.md) - Implementazione del selettore lingua con bandiere
-<<<<<<< HEAD
 - [Header con Lingua e Dropdown Utente](./header_language_user_dropdown.md) - Implementazione completa del dropdown utente e selettore lingua
 - [Header con Lingua e Avatar](./header_language_avatar_implementation.md) - Implementazione dell'avatar utente e selettore lingua
 - [Selettore Lingua con Bandiere](./header_language_selector_with_flags.md) - Implementazione del selettore lingua con bandiere
-=======
->>>>>>> 6ed19256f (.)
 
 ### Footer
 - [Footer Section](./footer-section.md) - Struttura e implementazione della sezione footer
@@ -113,8 +104,3 @@ La struttura JSON tipica di una sezione include:
 - I riferimenti ai blocchi devono sempre utilizzare la notazione `cms::blocks.nome-blocco`
 - I valori tradotti devono essere organizzati per lingua come nell'esempio sopra
 
-<<<<<<< HEAD
-Ultimo aggiornamento: 14 Maggio 2025
-=======
-Ultimo aggiornamento: 14 Maggio 2025
->>>>>>> 6ed19256f (.)

@@ -14,13 +14,10 @@ return [
     'next' => 'Weiter',
     'confirm' => 'Bestätigen',
     'completed' => 'Abgeschlossen',
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

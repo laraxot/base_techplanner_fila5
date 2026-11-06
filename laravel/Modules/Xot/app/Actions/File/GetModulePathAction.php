@@ -4,21 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
-
-use function Safe\scandir;
-
-=======
-use Exception;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
-use Nwidart\Modules\Facades\Module;
-use function Safe\scandir;
->>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
+
+use function Safe\scandir;
 
 class GetModulePathAction
 {
@@ -27,45 +18,29 @@ class GetModulePathAction
     /**
      * Ottiene il percorso di un modulo.
      *
-<<<<<<< HEAD
-     * @param string $moduleName Il nome del modulo
-=======
      * @param  string  $moduleName  Il nome del modulo
->>>>>>> 6ed19256f (.)
-     *
      * @return string Il percorso completo del modulo
      */
     public function execute(string $moduleName): string
     {
         try {
             $module_path = Module::getModulePath($moduleName);
-<<<<<<< HEAD
         } catch (\Exception) {
-=======
-        } catch (Exception) {
->>>>>>> 6ed19256f (.)
             $modulesPath = base_path('Modules');
             if (! File::exists($modulesPath)) {
                 return __DIR__.'/../';
             }
 
+            /** @var array<int, string> $files */
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
 
-            $foundModule = collect($files)->filter(static function ($item) use ($moduleNameLower): bool {
-                if (! is_string($item)) {
-                    return false;
-                }
-
+            $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
                 return Str::lower($item) === $moduleNameLower;
             })->first();
 
             // Se non troviamo il modulo, restituiamo un percorso di fallback
-<<<<<<< HEAD
-            if (null === $foundModule || ! is_string($foundModule)) {
-=======
-            if ($foundModule === null || ! is_string($foundModule)) {
->>>>>>> 6ed19256f (.)
+            if (! is_string($foundModule)) {
                 return base_path('Modules/'.$moduleName);
             }
 

@@ -1,3 +1,11 @@
+---
+title: "Analisi e Implementazione Colonna Composita 'Contatti' - TechPlanner"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "analisi e implementazione colonna composita 'contatti' - techplanner xot"
+---
 # Analisi e Implementazione Colonna Composita "Contatti" - TechPlanner
 
 ## Richiesta Utente
@@ -230,10 +238,6 @@ Questa implementazione stabilisce un precedente per:
 
 - [Filament Table Columns Documentation](filament_table_columns.md)
 - [UI Icons System](../../UI/project_docs/icons.md)
-<<<<<<< HEAD
-- [UI Icons System](../../ui/project_docs/icons.md)
-=======
->>>>>>> 6ed19256f (.)
 - [TechPlanner Client Model](../../TechPlanner/app/Models/Client.php)
 - [Filament Official Documentation](https://filamentphp.com/project_docs/3.x/tables/columns)
 
@@ -241,8 +245,4 @@ Questa implementazione stabilisce un precedente per:
 
 **Stato**: Analisi completata, pronto per implementazione
 **Ultimo aggiornamento**: agosto 2025
-<<<<<<< HEAD
 **Autore**: Cascade AI Assistant
-=======
-**Autore**: Cascade AI Assistant
->>>>>>> 6ed19256f (.)

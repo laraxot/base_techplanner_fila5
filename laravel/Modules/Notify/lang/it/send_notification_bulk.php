@@ -9,35 +9,22 @@ return [
             'placeholder' => 'template_slug',
             'helper_text' => 'template_slug',
             'description' => 'template_slug',
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'tooltip' => ''],
         'channels' => [
             'label' => 'channels',
             'placeholder' => 'channels',
             'helper_text' => 'channels',
             'description' => 'channels',
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'tooltip' => '']],
     'actions' => [
         'cancel' => [
             'tooltip' => 'cancel',
             'label' => 'cancel',
-            'icon' => 'cancel',
-        ],
+            'icon' => 'cancel'],
         'submit' => [
             'label' => 'submit',
             'icon' => 'submit',
-            'tooltip' => 'submit',
-        ],
-    ],
-<<<<<<< HEAD
+            'tooltip' => 'submit']],
     'label' => 'Send Notification Bulk',
     'plural_label' => 'Send Notification Bulk (Plurale)',
     'navigation' => [
@@ -45,12 +32,7 @@ return [
         'plural' => 'Send Notification Bulk',
         'group' => [
             'name' => 'General',
-            'description' => 'General Settings',
-        ],
+            'description' => 'General Settings'],
         'label' => 'Send Notification Bulk',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
+        'icon' => 'heroicon-o-collection']];

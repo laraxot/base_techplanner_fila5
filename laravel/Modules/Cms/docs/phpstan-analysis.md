@@ -1,11 +1,21 @@
+---
+title: "phpstan analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Analysis - Cms Module
 
-**Data**: 2025-10-10T12:40:18+02:00
 **Livello**: MAX (9)
 **Errori Totali**: 767
 
 ---
-
 ## 📊 Distribuzione Errori
 
 | Tipo | Quantità | % | Status |
@@ -24,8 +34,4 @@
 
 ---
 
-<<<<<<< HEAD
 **Prossimo modulo**: Fixcity
-=======
-**Prossimo modulo**: Fixcity
->>>>>>> 6ed19256f (.)

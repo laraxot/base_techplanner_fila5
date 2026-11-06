@@ -1,6 +1,17 @@
+---
+title: "duplicate methods analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "duplicate methods analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Metodi Duplicati - Modulo Job
 
-**Data Generazione**: 2025-10-15 06:41:17
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo
@@ -54,7 +65,6 @@ public function scopeActive($query): void
 **Procedere con refactoring** - Alta confidenza e bassa complessità rendono questa ottimizzazione sicura.
 
 ---
-
 ### 2. Metodo: `task`
 
 **Tipo Refactoring**: `BaseClass` | **Complessità**: 🟡 Medium | **Confidenza**: ✅ 75%
@@ -592,8 +602,4 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **90-100%**: Altamente raccomandato
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
-<<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
-=======
-- **< 50%**: Richiede analisi dettagliata
->>>>>>> 6ed19256f (.)

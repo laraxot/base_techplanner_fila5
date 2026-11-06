@@ -17,7 +17,7 @@ export default defineConfig({
     },
   },
   build: {
-    outDir: '../public/themes/Two',
+    outDir: '../../../public/themes/Two',
     emptyOutDir: true,
   },
 })

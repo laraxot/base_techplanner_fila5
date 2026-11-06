@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
@@ -15,32 +14,29 @@ class GetDomainAllowListAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     public function __construct(
         private readonly Arr $arrHelper,
-    ) {
-    }
+    ) {}
 
-=======
->>>>>>> 6ed19256f (.)
     /**
      * Execute the action.
+     *
+     * @return array<int, string>
      */
     public function execute(): array
     {
-        $res = config('filament-socialite.domain_allowlist');
+        $res = config('socialite.domain_allowlist', []);
         if (\is_string($res)) {
-<<<<<<< HEAD
             return $this->arrHelper->wrap($res);
-=======
-            return Arr::wrap($res);
->>>>>>> 6ed19256f (.)
         }
 
         if (\is_array($res)) {
-            return $res;
+            return array_values(array_filter(array_map(
+                static fn (mixed $item): ?string => \is_scalar($item) || $item instanceof \Stringable ? (string) $item : null,
+                $res
+            ), static fn (?string $item): bool => $item !== null));
         }
 
-        throw new \Exception('check config filament-socialite.domain_allowlist');
+        return [];
     }
 }

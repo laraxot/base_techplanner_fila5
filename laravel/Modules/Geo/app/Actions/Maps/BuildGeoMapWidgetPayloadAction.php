@@ -7,9 +7,14 @@ namespace Modules\Geo\Actions\Maps;
 use Illuminate\Database\Eloquent\Collection;
 use Modules\Geo\Datas\Map\GeoMapWidgetData;
 use Modules\Geo\Models\Place;
+use Modules\Xot\Actions\Cast\SafeFloatCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Spatie\QueueableAction\QueueableAction;
 
 class BuildGeoMapWidgetPayloadAction
 {
+    use QueueableAction;
+
     public function execute(): GeoMapWidgetData
     {
         $places = $this->getPlaces();
@@ -99,16 +104,16 @@ class BuildGeoMapWidgetPayloadAction
         $address = $place->getFormattedAddress();
         $description = \is_string($place->description ?? null) ? $place->description : '';
         $search = trim(strtolower(implode(' ', array_filter([
-            (string) $title,
-            (string) $category,
-            (string) $address,
-            (string) $description,
+            SafeStringCastAction::cast($title),
+            SafeStringCastAction::cast($category),
+            SafeStringCastAction::cast($address),
+            SafeStringCastAction::cast($description),
         ]))));
 
         return [
             'type' => 'Feature',
             'properties' => [
-                'id' => (string) $place->getKey(),
+                'id' => SafeStringCastAction::cast($place->getKey()),
                 'title' => $title,
                 'name' => $title,
                 'category' => \is_string($category) ? $category : 'unknown',
@@ -125,8 +130,8 @@ class BuildGeoMapWidgetPayloadAction
             'geometry' => [
                 'type' => 'Point',
                 'coordinates' => [
-                    (float) $place->longitude,
-                    (float) $place->latitude,
+                    SafeFloatCastAction::cast($place->longitude),
+                    SafeFloatCastAction::cast($place->latitude),
                 ],
             ],
         ];
@@ -143,12 +148,13 @@ class BuildGeoMapWidgetPayloadAction
             return ['lat' => 45.4642, 'lng' => 9.1900];
         }
 
-        $latitudes = $places->pluck('latitude')->filter(static fn ($value): bool => \is_float($value) || \is_int($value));
-        $longitudes = $places->pluck('longitude')->filter(static fn ($value): bool => \is_float($value) || \is_int($value));
+        $isNumber = static fn (mixed $value): bool => \is_float($value) || \is_int($value);
+        $latitudes = $places->pluck('latitude')->filter($isNumber);
+        $longitudes = $places->pluck('longitude')->filter($isNumber);
 
         return [
-            'lat' => (float) ($latitudes->average() ?? 45.4642),
-            'lng' => (float) ($longitudes->average() ?? 9.1900),
+            'lat' => SafeFloatCastAction::cast($latitudes->average() ?? 45.4642),
+            'lng' => SafeFloatCastAction::cast($longitudes->average() ?? 9.1900),
         ];
     }
 
@@ -166,6 +172,6 @@ class BuildGeoMapWidgetPayloadAction
             return $formattedAddress;
         }
 
-        return 'Place #'.(string) $place->getKey();
+        return 'Place #'.SafeStringCastAction::cast($place->getKey());
     }
 }

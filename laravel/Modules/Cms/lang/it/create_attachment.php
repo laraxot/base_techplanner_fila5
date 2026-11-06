@@ -17,7 +17,6 @@ return [
             'label' => 'cancel',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Create Attachment',
     'plural_label' => 'Create Attachment (Plurale)',
     'navigation' => [
@@ -29,7 +28,7 @@ return [
         ],
         'label' => 'Create Attachment',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -51,6 +50,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

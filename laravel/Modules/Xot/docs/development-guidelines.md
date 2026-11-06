@@ -1,11 +1,15 @@
+---
+title: "Development Guidelines - Xot Module"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "development guidelines - xot module xot"
+---
 # Development Guidelines - Xot Module
 
 ## Panoramica
-<<<<<<< HEAD
 Questo documento fornisce linee guida generali per lo sviluppo e la qualità del codice nel progetto <nome progetto>.
-=======
-Questo documento fornisce linee guida generali per lo sviluppo e la qualità del codice nel progetto SaluteOra.
->>>>>>> 6ed19256f (.)
 
 ## PHPStan Best Practices
 
@@ -29,11 +33,6 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 ### Moduli Corretti
 - [FormBuilder FieldOption Model](../FormBuilder/docs/phpstan-corrections.md)
 - [Lang Console Commands](../Lang/docs/phpstan-corrections.md)
-<<<<<<< HEAD
-- [FormBuilder FieldOption Model](../formbuilder/docs/phpstan-corrections.md)
-- [Lang Console Commands](../lang/docs/phpstan-corrections.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Principi di Correzione
 
@@ -56,11 +55,6 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 
 - [FormBuilder PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
 - [Lang PHPStan Corrections](../Lang/docs/phpstan-corrections.md)
-<<<<<<< HEAD
-- [FormBuilder PHPStan Corrections](../formbuilder/docs/phpstan-corrections.md)
-- [Lang PHPStan Corrections](../lang/docs/phpstan-corrections.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Xot Architecture](./architecture.md)
 
 ## Note per Sviluppo Futuro
@@ -68,8 +62,4 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 1. **Type Safety**: Mantenere sempre type hints espliciti
 2. **Static Properties**: Evitare accesso statico a proprietà di istanza
 3. **Mixed Types**: Gestire sempre i tipi `mixed` con type casting appropriato
-<<<<<<< HEAD
 4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
-=======
-4. **Documentation**: Aggiornare sempre la documentazione dopo correzioni significative
->>>>>>> 6ed19256f (.)

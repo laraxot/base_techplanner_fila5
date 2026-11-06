@@ -1,3 +1,11 @@
+---
+title: "Struttura dei Prompt"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "struttura dei prompt xot"
+---
 # Struttura dei Prompt
 
 I prompt sono file di testo che contengono istruzioni per l'AI. Devono seguire queste regole:
@@ -86,11 +94,7 @@ Per la regola universale sui prompt condivisi (come quelli in bashscripts/prompt
 
 ### Percorsi Assoluti
 ⚠️ **Problema Identificato**: Uso di percorsi assoluti nei collegamenti
-<<<<<<< HEAD
 ❌ Esempio errato: `Modules/Xot/project_docs/file.md`
-=======
-❌ Esempio errato: `/var/www/html/saluteora/laravel/Modules/Xot/project_docs/file.md`
->>>>>>> 6ed19256f (.)
 ✅ Esempio corretto: `./file.md` o `../altro-modulo/file.md`
 
 ### Impatto dell'Errore

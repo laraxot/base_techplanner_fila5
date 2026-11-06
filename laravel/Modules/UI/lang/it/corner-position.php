@@ -15,7 +15,6 @@ return [
     'bottom-right' => [
         'label' => 'basso a destra',
     ],
-<<<<<<< HEAD
     'label' => 'Corner Position',
     'plural_label' => 'Corner Position (Plurale)',
     'navigation' => [
@@ -27,7 +26,7 @@ return [
         ],
         'label' => 'Corner Position',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -60,6 +59,4 @@ return [
             'label' => 'Elimina Corner Position',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

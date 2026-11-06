@@ -1,4 +1,15 @@
-<<<<<<< HEAD
+---
+title: "links"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "links"
+issues: []
+discussions: []
+status: draft
+---
+
 //---- making documentation
 
 https://github.com/42coders/document-templates
@@ -50,30 +61,14 @@ https://laravel-bootstrap-components.com/themes/liara/features
 
 
 
-=======
->>>>>>> 6ed19256f (.)
-# Collegamenti Modulo Cms
 
-## Collegamenti in Uscita
-- [Modulo UI](../UI/docs/components.md)
-- [Modulo Xot](../Xot/docs/documentation.md)
-- [Modulo Lang](../Lang/docs/README.md)
-- [Modulo Media](../Media/docs/README.md)
 
-## Collegamenti in Entrata
-- [Modulo UI](../UI/docs/LINKS.md)
-- [Modulo Xot](../Xot/docs/LINKS.md)
-- [Modulo Lang](../Lang/docs/LINKS.md)
-- [Modulo Media](../Media/docs/LINKS.md)
-- [Modulo Patient](../Patient/docs/LINKS.md)
-- [Modulo Dental](../Dental/docs/LINKS.md)
-## Collegamenti tra versioni di LINKS.md
-* [LINKS.md](laravel/Modules/Xot/docs/LINKS.md)
-* [LINKS.md](laravel/Modules/User/docs/LINKS.md)
-* [LINKS.md](laravel/Modules/UI/docs/LINKS.md)
-* [LINKS.md](laravel/Modules/Cms/docs/LINKS.md)
-<<<<<<< HEAD
-* [LINKS.md](laravel/Themes/One/docs/LINKS.md)
-=======
-* [LINKS.md](laravel/Themes/One/docs/LINKS.md)
->>>>>>> 6ed19256f (.)
+## Contenuto originale (txt)
+
+---
+module: theme
+topic: links
+canonical: ../../../Themes/docs/shared-components/links-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/links-Modules.md

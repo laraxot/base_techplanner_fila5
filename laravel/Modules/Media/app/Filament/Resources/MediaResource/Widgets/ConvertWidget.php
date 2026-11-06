@@ -6,27 +6,15 @@ namespace Modules\Media\Filament\Resources\MediaResource\Widgets;
 
 use FFMpeg\Format\Video\WebM;
 use Filament\Notifications\Notification;
-<<<<<<< HEAD
-=======
-use Filament\Widgets\Widget;
->>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Modules\Media\Actions\Ffmpeg\ResolveMediaExporterAction;
 use Modules\Media\Filament\Resources\MediaResource;
 use Modules\Media\Models\Media;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use ProtoneMedia\LaravelFFMpeg\Exporters\MediaExporter;
 use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
-use RuntimeException;
 
 class ConvertWidget extends XotBaseWidget
-=======
-use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
-use RuntimeException;
-
-class ConvertWidget extends Widget
->>>>>>> 6ed19256f (.)
 {
     public Media $record;
 
@@ -36,30 +24,25 @@ class ConvertWidget extends Widget
 
     public float $percentage = 0;
 
-<<<<<<< HEAD
-    public float $remaining;
+    public float $remaining = 0.0;
 
-    public float $rate;
+    public float $rate = 0.0;
 
     protected string $view = 'media::filament.widgets.convert';
 
-    public static string $resource = MediaResource::class;
+    protected static string $resource = MediaResource::class;
+
+    public function __construct()
+    {
+        $this->view = 'media::filament.widgets.convert';
+
+        parent::__construct();
+    }
 
     public function getFormSchema(): array
     {
         return [];
     }
-=======
-    /** @var float */
-    public $remaining;
-
-    /** @var float */
-    public $rate;
-
-    protected string $view = 'media::filament.widgets.convert';
-
-    protected static string $resource = MediaResource::class;
->>>>>>> 6ed19256f (.)
 
     public function begin(): void
     {
@@ -69,30 +52,13 @@ class ConvertWidget extends Widget
         $disk_path = Storage::disk($disk_mp4)->path('/');
         $file_mp4 = Str::after($file_mp4, $disk_path);
 
-        // dddx($file_mp4);
-
-<<<<<<< HEAD
         $format = new WebM;
-=======
-        $format = new WebM();
->>>>>>> 6ed19256f (.)
         $extension = mb_strtolower(class_basename($format));
         $file_new = Str::of($file_mp4)->replaceLast('.mp4', '.'.$extension)->toString();
 
-        /*
-         * -preset ultrafast.
-         */
-<<<<<<< HEAD
-        /** @var MediaExporter $exportedMedia */
-=======
->>>>>>> 6ed19256f (.)
         $exportedMedia = FFMpeg::fromDisk($disk_mp4)
             ->open($file_mp4)
             ->export();
-        // ->addFilter(function (VideoFilters $filters) {
-        //    $filters->resize(new \FFMpeg\Coordinate\Dimension(640, 480));
-        // })
-        // ->resize(640, 480)
 
         $exportedMedia->onProgress(function (float $percentage, float $remaining, float $rate): void {
             $this->percentage = $percentage;
@@ -106,30 +72,9 @@ class ConvertWidget extends Widget
                 ->send();
         });
 
-<<<<<<< HEAD
-        /** @var MediaExporter $toDiskMedia */
-        $toDiskMedia = $exportedMedia->toDisk($disk_mp4);
-
-        /** @var MediaExporter $formattedMedia */
-        $formattedMedia = $toDiskMedia->inFormat($format);
-=======
-        /** @phpstan-ignore-next-line - FFMpeg fluent API */
-        $toDiskMedia = $exportedMedia->toDisk($disk_mp4);
-        if ($toDiskMedia === null) {
-            throw new RuntimeException('Failed to export media to disk');
-        }
-
-        /** @phpstan-ignore-next-line - FFMpeg fluent API */
-        $formattedMedia = $toDiskMedia->inFormat($format);
-        if ($formattedMedia === null || ! is_object($formattedMedia)) {
-            throw new RuntimeException('Failed to format media');
-        }
-
-        if (! method_exists($formattedMedia, 'save')) {
-            throw new RuntimeException('Formatted media does not have save method');
-        }
->>>>>>> 6ed19256f (.)
-
+        $formattedMedia = app(ResolveMediaExporterAction::class)->execute(
+            $exportedMedia->toDisk($disk_mp4)
+        )->inFormat($format);
         $formattedMedia->save($file_new);
 
         while ($this->percentage < 100) {
@@ -140,21 +85,8 @@ class ConvertWidget extends Widget
                 replace: true,
             );
 
-            // Pause for 1 second between numbers...
-            // sleep(1);
-
             $this->start =
                 "{$this->percentage}% transcoded".PHP_EOL."{$this->remaining} seconds left at rate: {$this->rate}";
-<<<<<<< HEAD
-=======
-
-            // Decrement the counter...
-            // $this->start = $this->start - 1;
-            // $this->start = (string) now();
-            // if ('impossible' === $this->start) {
-            //    $cond = false;
-            // }
->>>>>>> 6ed19256f (.)
         }
     }
 }

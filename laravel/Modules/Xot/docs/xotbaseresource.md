@@ -1,3 +1,15 @@
+---
+title: "xotbaseresource"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource"
+issues: []
+discussions: []
+status: draft
+---
+
 # XotBaseResource
 
 ## Panoramica
@@ -25,7 +37,17 @@ Questo significa che:
 ### Metodi Astratti
 
 ```php
-abstract public static function getFormSchema(): array;
+abstract public function getFormSchema(): array;
+---
+title: "xotbaseresource"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbaseresource"
+issues: []
+discussions: []
+abstract public function getFormSchema(): array;
 ```
 
 Questo metodo DEVE essere implementato nelle classi figlie e deve restituire un array di componenti del form.
@@ -59,7 +81,9 @@ class NotificationResource extends XotBaseResource
 {
     protected static ?string $model = 'Modules\Notify\Models\Notification';
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+    public function getFormSchema(): array
     {
         return [
             Forms\Components\TextInput::make('title')
@@ -76,17 +100,6 @@ class NotificationResource extends XotBaseResource
 ## Collegamenti Bidirezionali
 
 ### Collegamenti nella Root
-<<<<<<< HEAD
-- [Notify Resource](../../Notify/docs/filament-resources.md)
-- [User Resource](../../User/docs/filament-resources.md)
-- [Architettura Filament](../../../../docs/architecture/filament.md)
-- [Gestione Risorse](../../../../docs/architecture/resources.md)
-- [Regole XotBaseResource](../../../../docs/regole/xotbaseresource-rules.md)
-
-### Collegamenti ai Moduli
-- [Notify Resource](../../notify/docs/filament-resources.md)
-- [User Resource](../../user/docs/filament-resources.md)
-=======
 - [Architettura Filament](../../../docs/architecture/filament.md)
 - [Gestione Risorse](../../../docs/architecture/resources.md)
 - [Regole XotBaseResource](../../../docs/regole/xotbaseresource-rules.md)
@@ -94,7 +107,6 @@ class NotificationResource extends XotBaseResource
 ### Collegamenti ai Moduli
 - [Notify Resource](../../Notify/docs/filament-resources.md)
 - [User Resource](../../User/docs/filament-resources.md)
->>>>>>> 6ed19256f (.)
 
 ## Note Importanti
 
@@ -102,8 +114,4 @@ class NotificationResource extends XotBaseResource
 2. Implementare sempre i metodi astratti richiesti
 3. Utilizzare i file di traduzione per le label
 4. Evitare override non necessari di metodi
-<<<<<<< HEAD
 5. Seguire le convenzioni di Filament
-=======
-5. Seguire le convenzioni di Filament
->>>>>>> 6ed19256f (.)

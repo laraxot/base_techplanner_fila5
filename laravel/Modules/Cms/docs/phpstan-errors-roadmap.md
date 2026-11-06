@@ -1,12 +1,22 @@
+---
+title: "phpstan errors roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Level 10 Errors Roadmap - Cms Module
 
-**Data**: 2026-01-09  
 **Modulo**: Cms  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **IN ANALISI**
 
 ---
-
 ## 📊 Errori Identificati
 
 ### Totale Errori: 3
@@ -162,8 +172,4 @@ return $page;
 
 **Status**: 🧘 **IN ANALISI**
 
-**Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
-=======
->>>>>>> 6ed19256f (.)

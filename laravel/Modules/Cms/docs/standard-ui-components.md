@@ -1,10 +1,18 @@
+---
+title: "standard ui components"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "standard ui components"
+issues: []
+discussions: []
+status: draft
+---
+
 # Standard UI Components in il progetto
 
-<<<<<<< HEAD
 > **Nota**: Questo documento è una copia sincronizzata di [/docs/implementazione/standard_ui_components.md](../../../../../docs/implementazione/standard_ui_components.md)
-=======
-> **Nota**: Questo documento è una copia sincronizzata di [/docs/implementazione/standard_ui_components.md](../../../../docs/implementazione/standard_ui_components.md)
->>>>>>> 6ed19256f (.)
 >
 > Per modifiche, aggiornare il file originale e sincronizzare le modifiche qui.
 
@@ -72,8 +80,4 @@
 
 ## Collegamenti tra versioni di standard_ui_components.md
 * [standard_ui_components.md](docs/implementazione/standard_ui_components.md)
-* [standard_ui_components.md](laravel/Modules/Cms/docs/standard_ui_components.md)
-<<<<<<< HEAD
 * [standard_ui_components.md](laravel/modules/cms/docs/standard_ui_components.md)
-=======
->>>>>>> 6ed19256f (.)

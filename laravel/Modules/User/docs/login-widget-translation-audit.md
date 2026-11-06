@@ -1,3 +1,24 @@
+---
+title: "LoginWidget Translation Audit - Gennaio 2025"
+type: concept
+tags: [login, widget, translation, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-widget-translation-audit loginwidget translation audit - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # LoginWidget Translation Audit - Gennaio 2025
 
 ## Obiettivo
@@ -11,11 +32,7 @@ Il `LoginWidget` (`/Modules/User/app/Filament/Widgets/LoginWidget.php`) utilizza
 ```php
 // Linee 112, 127, 146, 149, 155
 __('user::messages.credentials_incorrect')
-<<<<<<< HEAD
 __('user::messages.login_success') 
-=======
-__('user::messages.login_success')
->>>>>>> 6ed19256f (.)
 __('user::messages.validation_error')
 __('user::messages.login_error')
 ```
@@ -45,11 +62,7 @@ return [
 #### Inglese (`/Modules/User/lang/en/messages.php`)
 ```php
 return [
-<<<<<<< HEAD
     // Authentication messages for LoginWidget  
-=======
-    // Authentication messages for LoginWidget
->>>>>>> 6ed19256f (.)
     'credentials_incorrect' => 'The provided credentials are incorrect.',
     'login_success' => 'Login successful.',
     'login_error' => 'An error occurred during login. Please try again later.',
@@ -72,11 +85,7 @@ return [
 
 ## Collegamenti
 - [Widget Translation Rules](widget-translation-rules.md)
-<<<<<<< HEAD
 - [Root Translation Guidelines](../../../../../docs/project/translation-standards.md)
-=======
-- [Root Translation Guidelines](../../../../project_docs/translation-standards.md)
->>>>>>> 6ed19256f (.)
 ### 2. Struttura Completa delle Traduzioni
 Ogni file `messages.php` include categorie complete di messaggi:
 
@@ -95,11 +104,7 @@ I file creati rispettano le **Widget Translation Rules** del progetto:
 
 ✅ **Struttura expanded** con `label`, `placeholder`, `help`
 ✅ **Nessuna stringa hardcoded** nel codice PHP
-<<<<<<< HEAD
 ✅ **Coerenza** tra tutte le lingue supportate  
-=======
-✅ **Coerenza** tra tutte le lingue supportate
->>>>>>> 6ed19256f (.)
 ✅ **Declare strict_types** per type safety
 ✅ **Commenti documentativi** per clarity
 
@@ -115,11 +120,7 @@ ls -la Modules/User/lang/*/messages.php
 php artisan tinker
 >>> __('user::messages.credentials_incorrect')
 >>> __('user::messages.login_success')
-<<<<<<< HEAD
 >>> __('user::messages.validation_error') 
-=======
->>> __('user::messages.validation_error')
->>>>>>> 6ed19256f (.)
 >>> __('user::messages.login_error')
 # Tutte le chiavi ora risolvono correttamente ✅
 ```
@@ -128,11 +129,7 @@ php artisan tinker
 Il `LoginWidget` ora funziona correttamente in tutte le lingue:
 
 1. **Italiano**: Messaggi di errore e successo localizzati
-<<<<<<< HEAD
 2. **Inglese**: Messaggi appropriati per utenti anglofoni  
-=======
-2. **Inglese**: Messaggi appropriati per utenti anglofoni
->>>>>>> 6ed19256f (.)
 3. **Tedesco**: Supporto completo per utenti germanofoni
 
 ## Pattern di Refactoring Applicato
@@ -150,11 +147,7 @@ throw ValidationException::withMessages([
 ```php
 // Stesso codice, ma ora:
 // ✅ IT: "Le credenziali inserite non sono corrette."
-<<<<<<< HEAD
 // ✅ EN: "The provided credentials are incorrect."  
-=======
-// ✅ EN: "The provided credentials are incorrect."
->>>>>>> 6ed19256f (.)
 // ✅ DE: "Die angegebenen Anmeldedaten sind falsch."
 ```
 
@@ -192,11 +185,7 @@ throw ValidationException::withMessages([
 - ❌ **User experience degradata** con chiavi non tradotte
 - ❌ **Inconsistenza** tra lingue supportate
 
-<<<<<<< HEAD
 ### After Audit  
-=======
-### After Audit
->>>>>>> 6ed19256f (.)
 - ✅ **100% translation coverage** per LoginWidget
 - ✅ **Seamless multilingual experience**
 - ✅ **Consistent error messaging** in tutte le lingue
@@ -229,14 +218,19 @@ Questo audit rappresenta un esempio di:
 Il pattern può essere applicato a tutti i widget del sistema per garantire consistency e quality.
 
 ---
-<<<<<<< HEAD
 **Audit completato**: Gennaio 2025  
 **File modificati**: 3 (it/messages.php, en/messages.php, de/messages.php)  
 **Translation keys aggiunte**: 60+ per lingua  
 **LoginWidget status**: ✅ Fully functional in all languages
-=======
-**Audit completato**: Gennaio 2025
-**File modificati**: 3 (it/messages.php, en/messages.php, de/messages.php)
-**Translation keys aggiunte**: 60+ per lingua
-**LoginWidget status**: ✅ Fully functional in all languages
->>>>>>> 6ed19256f (.)
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "login widget translation audit 2025"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "login widget translation audit 2025 user"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/login-widget-translation-audit-2025.md

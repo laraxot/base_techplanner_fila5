@@ -1,3 +1,15 @@
+---
+title: "structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "structure"
+issues: []
+discussions: []
+status: draft
+---
+
 # Struttura dei Componenti
 
 ## Componenti Base
@@ -101,50 +113,23 @@ I blocchi sono componenti modulari che:
 
 ## Collegamenti
 - [Glossario Tecnico](../glossary.md)
-<<<<<<< HEAD
 - [Guida allo Stile](../style/readme.md)
-- [Documentazione Blocchi](../blocks/readme.md)
-
-## Collegamenti tra versioni di structure.md
-* [structure.md](bashscripts/docs/structure.md)
-* [structure.md](laravel/modules/gdpr/docs/structure.md)
-* [structure.md](laravel/modules/notify/docs/structure.md)
-* [structure.md](laravel/modules/xot/docs/structure.md)
-* [structure.md](laravel/modules/xot/docs/base/structure.md)
-* [structure.md](laravel/modules/xot/docs/config/structure.md)
-* [structure.md](laravel/modules/user/docs/structure.md)
-* [structure.md](laravel/modules/ui/docs/structure.md)
-* [structure.md](laravel/modules/lang/docs/structure.md)
-* [structure.md](laravel/modules/job/docs/structure.md)
-* [structure.md](laravel/modules/media/docs/structure.md)
-* [structure.md](laravel/modules/tenant/docs/structure.md)
-* [structure.md](laravel/modules/activity/docs/structure.md)
-* [structure.md](laravel/modules/cms/docs/structure.md)
-* [structure.md](laravel/modules/cms/docs/themes/structure.md)
-* [structure.md](laravel/modules/cms/docs/components/structure.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Guida allo Stile](../style/README.md)
 - [Documentazione Blocchi](../blocks/README.md)
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
-* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
-* [structure.md](laravel/Modules/Notify/docs/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
-* [structure.md](laravel/Modules/User/docs/structure.md)
-* [structure.md](laravel/Modules/UI/docs/structure.md)
-* [structure.md](laravel/Modules/Lang/docs/structure.md)
-* [structure.md](laravel/Modules/Job/docs/structure.md)
-* [structure.md](laravel/Modules/Media/docs/structure.md)
-* [structure.md](laravel/Modules/Tenant/docs/structure.md)
-* [structure.md](laravel/Modules/Activity/docs/structure.md)
-* [structure.md](laravel/Modules/Cms/docs/structure.md)
-* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
-<<<<<<< HEAD
-* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
-=======
-* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
->>>>>>> 6ed19256f (.)
+* [structure.md](../../../Gdpr/docs/structure.md)
+* [structure.md](../../../Notify/docs/structure.md)
+* [structure.md](../../../Xot/docs/structure.md)
+* [structure.md](laravel/modules/xot/docs/base/structure.md)
+* [structure.md](../../../Xot/docs/config/structure.md)
+* [structure.md](../../../User/docs/structure.md)
+* [structure.md](../../../UI/docs/structure.md)
+* [structure.md](../../../Lang/docs/structure.md)
+* [structure.md](../../../Job/docs/structure.md)
+* [structure.md](../../../Media/docs/structure.md)
+* [structure.md](../../../Tenant/docs/structure.md)
+* [structure.md](../../../Activity/docs/structure.md)
+* [structure.md](laravel/modules/cms/docs/structure.md)
+* [structure.md](../themes/structure.md)
+* [structure.md](laravel/modules/cms/docs/components/structure.md)

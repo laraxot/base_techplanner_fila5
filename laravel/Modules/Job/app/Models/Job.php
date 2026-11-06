@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
@@ -12,16 +11,10 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\JobFactory;
+use Modules\Job\Models\Traits\JobMutators;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
-<<<<<<< HEAD
 use Webmozart\Assert\Assert;
-
-use function Safe\json_decode;
-=======
-use function Safe\json_decode;
-use Webmozart\Assert\Assert;
->>>>>>> 6ed19256f (.)
 
 /**
  * Modules\Job\Models\Job.
@@ -36,10 +29,6 @@ use Webmozart\Assert\Assert;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Carbon|null $updated_at
-<<<<<<< HEAD
-=======
- *
->>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
  * @property-read string|null $display_name
  * @property-read string $status
@@ -66,6 +55,8 @@ use Webmozart\Assert\Assert;
  */
 class Job extends BaseModel
 {
+    use JobMutators;
+
     protected $fillable = [
         'id',
         'queue',
@@ -86,6 +77,9 @@ class Job extends BaseModel
         return $res;
     }
 
+    /**
+     * @return Attribute<string, never>
+     */
     public function status(): Attribute
     {
         return Attribute::make(get: function (): string {
@@ -96,19 +90,6 @@ class Job extends BaseModel
 
             return 'waiting';
         });
-    }
-
-    public function getDisplayNameAttribute(): ?string
-    {
-        Assert::string($json = $this->attributes['payload'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-        $payload = json_decode($json, true);
-        if (! is_array($payload)) {
-            return null;
-        }
-
-        Assert::nullOrString($res = $payload['displayName'] ?? null);
-
-        return $res;
     }
 
     #[Override]

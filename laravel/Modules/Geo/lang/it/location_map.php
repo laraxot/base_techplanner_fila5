@@ -7,7 +7,6 @@ return [
         'label' => 'Mappa Posizioni',
         'group' => 'Geo',
     ],
-<<<<<<< HEAD
     'label' => 'Location Map',
     'plural_label' => 'Location Map (Plurale)',
     'fields' => [
@@ -41,6 +40,4 @@ return [
             'label' => 'Elimina Location Map',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

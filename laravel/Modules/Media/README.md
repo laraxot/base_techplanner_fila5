@@ -1,245 +1,139 @@
-<<<<<<< HEAD
-# 🖼️ Media
-
-[![Domain-Media](https://img.shields.io/badge/Domain-Media%20Library-AD1457.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
-[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
-
-> **Allegati, foto segnalazione, PDF.** Media library tipizzata — upload che non rompe il wizard.
-
+---
+id: module-media-readme
+title: "Media - File, Immagini, Video e Documenti"
+type: module-readme
+category: module-documentation
+module: Media
+status: active
+tags: [media, files, images, video, storage]
+created: 2026-09-14
+updated: 2026-10-07
+qmd: "media files images video ffmpeg storage cdn module documentation"
+issues:
+  - "https://github.com/laraxot/module_media_fila5/issues/57"
+discussions:
+  - "https://github.com/laraxot/module_media_fila5/discussions/58"
+related:
+  - "./docs/"
+sources: []
 ---
 
-## Perché esiste
+# Media
 
-Asset digitali collegati a ticket, profili e contenuti CMS.
+## Perche guardarlo adesso
 
-## Superpoteri
+Upload, storage, trasformazioni e distribuzione media locale o cloud, per l'ecosistema Laraxot.
 
-- Upload Filament e frontoffice
-- Collections e conversioni
-- Integrazione ticket/CMS
-- Performance e storage policy
+## Cosa promette
 
-## Certificazioni
+- **Upload**: carico sicuro di file, con upload temporanei legati alla sessione
+- **Immagini**: gestione dimensioni e formati (Intervention Image)
+- **Video/FFmpeg**: transcodifica e processing
+- **S3/CDN**: distribuzione e caching, URL firmati CloudFront
+- **Filament admin UI**: libreria media, operazioni di massa, diagnostica S3/AWS
 
-| Certificazione | Stato |
-|----------------|-------|
-| PHPStan livello 10 | Target progetto |
-| `declare(strict_types=1)` | Su nuovo codice PHP |
-| Filament 5 + XotBase | Admin enterprise |
-| Test PHPUnit / Pest | Suite modulo |
-| Documentazione wiki | Cartella `docs/` |
+## Perche' questo modulo
 
-## Vuoi entrare nel team?
+- **Gestione file unificata**: API coerente per upload, validazione e storage in tutti i moduli
+- **Integrazione FFmpeg**: encoding video con preset di qualita'
+- **Cloud-native**: supporto S3/CloudFront con ripiego su storage locale
+- **Convenzioni Laraxot**: logica nelle `Actions`, UI admin su XotBase
 
-Ogni pixel **tracciato e sicuro** — media done right.
+## Funzionalita' chiave
 
-Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+### Upload e storage
+- Upload temporanei con tracciamento di sessione
+- Validazione automatica (MIME type, dimensione, estensioni)
+- Supporto multi-disk (local, S3, Minio, CloudFront)
+- Operazioni di attach atomiche
 
----
+
+### Video
+- Pipeline di conversione FFmpeg (MP4, WebM, HLS)
+- Generazione ed embedding sottotitoli
+- Estrazione frame per thumbnail
+- Preparazione dello streaming a bitrate adattivo
+
+### Cloud
+- Supporto nativo AWS S3, URL firmati CloudFront per contenuti privati
+- Compatibilita' Minio per deployment self-hosted
+- Invalidazione CDN automatica
+
+> Elenco delle funzionalita' dichiarate nella documentazione storica. Verificato nel codice
+> (2026-10-07): WebM, thumbnail, sottotitoli e URL firmati CloudFront. Non trovati in `app/`:
+> HLS, AVIF, invalidazione CDN, bitrate adattivo (da verificare prima di promettere queste voci).
+
+## Documentazione essenziale
+
+- `pbmedia/laravel-ffmpeg` e `intervention/image` (vedi `composer.json` per i vincoli correnti)
+- `spatie/laravel-medialibrary` (model `Media`, `TemporaryUpload`)
+- `spatie/laravel-queueable-action` (Actions asincrone)
+- Pacchetti di sistema: `ffmpeg`, `imagemagick` o `gd`
+
+## Filosofia
+
+Questo modulo pubblica contratti usabili da altri moduli. La logica vive in `Actions`; la UI admin segue Laraxot/XotBase.
+
+## Integrazione rapida
+
+```bash
+cd laravel
+php artisan module:list
+./vendor/bin/phpstan analyse Modules/Media
+```
+
+Per i pattern di integrazione vedi la documentazione locale.
 
 ## Documentazione
 
-=======
->>>>>>> 6ed19256f (.)
-### Versione HEAD
+La mappa tecnica e' in [docs/README.md](./docs/README.md); l'indice completo in [docs/INDEX.md](./docs/INDEX.md).
 
-# 🎉 Unlock the Power of Media with Fila3 Module! 🚀
+- [Story BMAD del modulo](./docs/stories/)
+- [Architettura](./docs/ARCHITECTURE.md) · [Pattern](./docs/patterns.md) · [Troubleshooting](./docs/troubleshooting.md)
+- [FFmpeg](./docs/ffmpeg-usage.md) · [Performance](./docs/PERFORMANCE-OPTIMIZATION.md) · [Migrazioni](./docs/MIGRATIONS.md) · [Testing](./docs/testing-guidelines.md)
+- [Regole del progetto](../../../docs/wiki/)
+- [README del progetto](../../README.md)
 
-![GitHub issues](https://img.shields.io/github/issues/laraxot/module_media_fila3)
-![GitHub forks](https://img.shields.io/github/forks/laraxot/module_media_fila3)
-![GitHub stars](https://img.shields.io/github/stars/laraxot/module_media_fila3)
-![License](https://img.shields.io/badge/license-MIT-green)
+## Rilascio e automazione
 
-Welcome to the **Fila3 Media Module**! This innovative module is designed to revolutionize how you manage and display media content in your applications. Whether you’re building a new project or enhancing an existing one, the Fila3 module brings flexibility and ease to your media handling needs.
+- **Semantic release**: configurazione in [.releaserc.json](./.releaserc.json)
+- **Changelog**: [CHANGELOG.md](./CHANGELOG.md)
 
-## 📦 What’s Inside?
+## Filosofia
 
-The Fila3 module integrates seamlessly with your application, providing:
+- **Scopo prima del codice**: ogni classe serve un caso d'uso specifico.
+- **DRY prima dell'orgoglio**: riusare i pattern gia' stabiliti in Laraxot.
+- **KISS prima dell'astrazione**: codice semplice e verificabile, non framework astuti.
 
-- **Dynamic Media Management**: Effortlessly upload, categorize, and display various media types.
-- **User-Friendly Interface**: A sleek and intuitive UI for managing media files.
-- **Powerful API Support**: Interact with media content programmatically with our robust API.
+## Qualita' e manutenzione
 
-## 🌟 Key Features
+Mantenere `declare(strict_types=1);` in PHP, rispettare la configurazione PHPStan del progetto e aggiornare i docs quando i contratti evolvono.
 
-- **Multi-format Support**: Handle images, videos, and audio files with ease.
-- **Advanced Media Upload**: Supports drag-and-drop functionality for effortless uploads.
-- **Search & Filter**: Quickly find media files using advanced search and filtering options.
-- **Responsive Design**: Looks great on any device, ensuring a smooth user experience.
-- **Media Previews**: Get instant previews of media files before finalizing your uploads.
-- **Batch Processing**: Upload and manage multiple media files at once.
-- **Role-based Access Control**: Secure your media management with customizable user permissions.
+## Scheda tecnica verificata (2026-10-07)
 
-## 🚀 Why Choose Fila3?
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `Media` |
+| Namespace | `Modules\Media\` |
+| File PHP in `app/` | 127 |
+| File PHP di test | 46 |
+| Aree `app/` rilevate | Actions, Console, Contracts, Conversions, Datas, Enums, Exceptions, Filament, Http, Models, Providers, Rules, Services, Support, View, conversions |
+| Migrazioni PHP | 6 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
 
-- **Fast & Efficient**: Say goodbye to sluggish media handling! Experience lightning-fast performance.
-- **Scalable**: Perfect for small projects and large enterprises alike.
-- **Active Community**: Join a vibrant community of developers and contributors who are ready to help.
+Questa scheda e' un inventario statico, non una dichiarazione di qualita'. Per ogni
+modifica eseguire i gate dal progetto Laravel:
 
-## 🔧 Installation
-
-Getting started is a breeze! Follow these simple steps to install the Fila3 module:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/laraxot/module_media_fila3.git
-
-Navigate to the project directory:
-bash
-Copia codice
-cd module_media_fila3
-Install dependencies:
-bash
-Copia codice
-npm install
-Configure your settings in the config file.
-Start your application and watch the magic happen!
-🤝 Contributing
-We welcome contributions! Whether it’s fixing bugs, improving documentation, or adding new features, your help is invaluable. Check out the contributing guidelines to get started!
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👤 Author
-Marco Sottana
-Check out more of my work at marco76tv!
-
-### Versione Incoming
-
-# 🖼️ Media Module - Gestione Media
-
-[![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
-[![Laravel Version](https://img.shields.io/badge/Laravel-11.x-orange.svg)](https://laravel.com)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Code Quality](https://img.shields.io/badge/code%20quality-A+-brightgreen.svg)](.codeclimate.yml)
-[![Test Coverage](https://img.shields.io/badge/coverage-95%25-success.svg)](phpunit.xml.dist)
-[![Media Manager](https://img.shields.io/badge/media-enabled-brightgreen.svg)](docs/module_media.md)
-[![Filament Version](https://img.shields.io/badge/Filament-3.x-purple.svg)](https://filamentphp.com)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/laraxot/module_media)
-[![Downloads](https://img.shields.io/badge/downloads-1k+-blue.svg)](https://packagist.org/packages/laraxot/module_media)
-[![Stars](https://img.shields.io/badge/stars-100+-yellow.svg)](https://github.com/laraxot/module_media)
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/laraxot/module_media/main/docs/assets/media-banner.png" alt="Media Module Banner" width="800">
-</div>
-
-## 🇮🇹 Italiano
-
-### 📝 Descrizione
-Il modulo Media fornisce un sistema completo di gestione dei file multimediali per applicazioni Laravel, con supporto per immagini, video, documenti e altri tipi di file.
-
-### ✨ Caratteristiche Principali
-- ✅ Gestione file avanzata
-- ✅ Upload multiplo
-- ✅ Ottimizzazione immagini
-- ✅ Interfaccia amministrativa Filament
-- ✅ API RESTful per la gestione media
-- ✅ CDN integrato
-- ✅ Watermark automatico
-- ✅ Galleria multimediale
-
-### 🚀 Installazione
 ```bash
-composer require modules/media
-php artisan module:enable Media
-php artisan migrate
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Media
+./vendor/bin/pest Modules/Media
 ```
 
-### 📚 Documentazione
-Consulta la [documentazione completa](docs/module_media.md) per:
-- [File](docs/files.md)
-- [Galleria](docs/gallery.md)
-- [API](docs/api.md)
-
-## 🇬🇧 English
-
-### 📝 Description
-The Media module provides a complete media file management system for Laravel applications, with support for images, videos, documents, and other file types.
-
-### ✨ Key Features
-- ✅ Advanced file management
-- ✅ Multiple upload
-- ✅ Image optimization
-- ✅ Filament admin interface
-- ✅ RESTful API for media management
-- ✅ Built-in CDN
-- ✅ Automatic watermark
-- ✅ Media gallery
-
-### 🚀 Installation
-```bash
-composer require modules/media
-php artisan module:enable Media
-php artisan migrate
-```
-
-### 📚 Documentation
-Check out the [complete documentation](docs/module_media.md) for:
-- [Files](docs/files.md)
-- [Gallery](docs/gallery.md)
-- [API](docs/api.md)
-
-## 🇪🇸 Español
-
-### 📝 Descripción
-El módulo Media proporciona un sistema completo de gestión de archivos multimedia para aplicaciones Laravel, con soporte para imágenes, videos, documentos y otros tipos de archivos.
-
-### ✨ Características Principales
-- ✅ Gestión avanzada de archivos
-- ✅ Subida múltiple
-- ✅ Optimización de imágenes
-- ✅ Interfaz administrativa Filament
-- ✅ API RESTful para gestión de medios
-- ✅ CDN integrado
-- ✅ Marca de agua automática
-- ✅ Galería multimedia
-
-### 🚀 Instalación
-```bash
-composer require modules/media
-php artisan module:enable Media
-php artisan migrate
-```
-
-### 📚 Documentación
-Consulta la [documentación completa](docs/module_media.md) para:
-- [Archivos](docs/files.md)
-- [Galería](docs/gallery.md)
-- [API](docs/api.md)
-
-## 🤝 Contribuire / Contributing / Contribuir
-
-Siamo aperti a contribuzioni! Consulta le nostre [linee guida per i contributori](.github/CONTRIBUTING.md).
-
-We are open to contributions! Check out our [contributor guidelines](.github/CONTRIBUTING.md).
-
-¡Estamos abiertos a contribuciones! Consulta nuestras [pautas para contribuidores](.github/CONTRIBUTING.md).
-
-## 📄 Licenza / License / Licencia
-
-Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
-
-This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
-
-Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
----
-<<<<<<< HEAD
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+La responsabilita' del modulo, le decisioni architetturali e le opportunita' sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
 
 ---
 
-**Modulo** `media` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
->>>>>>> 6ed19256f (.)
+**Modulo** `media` · **Laraxot ecosystem** · **Project-agnostic**

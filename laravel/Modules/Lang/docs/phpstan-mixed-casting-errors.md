@@ -1,3 +1,15 @@
+---
+title: "phpstan mixed casting errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan mixed casting errors"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Mixed Type Casting Errors
 
 ## Problema
@@ -210,20 +222,13 @@ Dopo aver applicato le correzioni:
 ## Riferimenti
 
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-=======
->>>>>>> 6ed19256f (.)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-<<<<<<< HEAD
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
-=======
-- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
->>>>>>> 6ed19256f (.)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
@@ -440,25 +445,14 @@ Dopo aver applicato le correzioni:
 ## Riferimenti
 
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-<<<<<<< HEAD
 - [SafeFloatCastAction Documentation](../../Xot/docs/safe-casting-actions.md)
-=======
->>>>>>> 6ed19256f (.)
 - [PHP Type Casting](https://www.php.net/manual/en/language.types.type-juggling.php)
 - [PHPStan Mixed Type](https://phpstan.org/writing-php-code/phpdoc-types#mixed)
 
 ## Backlink
 
-<<<<<<< HEAD
 - [Root PHPStan Rules](../../../../docs/phpstan_rules.md)
 - [Lang Module Structure](./README.md)
 - [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
 
 *Ultimo aggiornamento: 2025-07-31*
-=======
-- [Root PHPStan Rules](../../../docs/phpstan_rules.md)
-- [Lang Module Structure](./README.md)
-- [Xot Safe Casting Actions](../../Xot/docs/safe-casting-actions.md)
-
-*Ultimo aggiornamento: 2025-07-31*
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "sushi models dependency cycle fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sushi models dependency cycle fix"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sushi Models - Dependency Cycle Fix
 
 ## 🚨 Problema Critico Risolto
@@ -66,15 +78,9 @@ public function getJsonFile(): string
 class SafeSushiModel extends BaseModel
 {
     use Sushi;
-
-    private const JSON_FILE_PATH = 'laravel/Modules/{ModuleName}/resources/json/data.json';
-
-<<<<<<< HEAD
     
     private const JSON_FILE_PATH = 'laravel/Modules/{ModuleName}/resources/json/data.json';
     
-=======
->>>>>>> 6ed19256f (.)
     public function getJsonFile(): string
     {
         return base_path(self::JSON_FILE_PATH);
@@ -135,13 +141,6 @@ La trasparenza del path diretto è superiore all'astrazione del `module_path()` 
 - [Sushi Documentation](https://github.com/calebporzio/sushi)
 
 ---
-
-**Risolto**: Dicembre 2024
-**Priorità**: P0 (Critical) - Bloccava registrazioni
-**Impatto**: Sistema completamente non funzionale
-<<<<<<< HEAD
 **Risolto**: Dicembre 2024  
 **Priorità**: P0 (Critical) - Bloccava registrazioni  
 **Impatto**: Sistema completamente non funzionale  
-=======
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Colli di Bottiglia e Soluzioni - Modulo Media"
+module: "Media"
+type: concept
+tags: [bottlenecks]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bottlenecks"
+related:
+  - "./webm.md"
+status: draft
+---
 # Colli di Bottiglia e Soluzioni - Modulo Media
 
 ## Panoramica
@@ -243,21 +257,13 @@ class Media extends Model
 # Supervisor config (/etc/supervisor/conf.d/laravel-media-worker.conf)
 [program:laravel-media-worker]
 process_name=%(program_name)s_%(process_num)02d
-<<<<<<< HEAD
 command=php artisan queue:work database --queue=media --sleep=3 --tries=3 --max-time=3600
-=======
-command=php /var/www/html/base_<nome progetto>/laravel/artisan queue:work database --queue=media --sleep=3 --tries=3 --max-time=3600
->>>>>>> 6ed19256f (.)
 autostart=true
 autorestart=true
 user=www-data
 numprocs=2
 redirect_stderr=true
-<<<<<<< HEAD
 stdout_logfile=storage/logs/media-worker.log
-=======
-stdout_logfile=/var/www/html/base_<nome progetto>/laravel/storage/logs/media-worker.log
->>>>>>> 6ed19256f (.)
 ```
 
 7. **Implementare Interfaccia per Monitoraggio Stato**
@@ -823,72 +829,34 @@ Implementando queste soluzioni, il modulo Media potrà superare i principali col
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
-<<<<<<< HEAD
 - [Sintesi Colli di Bottiglia](../../../docs/performance_bottlenecks.md)
 - [Best Practices](../xot/docs/best-practices.md)
 - [Struttura Moduli](../xot/docs/module_structure.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../xot/docs/bottlenecks.md)
-* [BOTTLENECKS.md](../../../user/docs/bottlenecks.md)
+* [BOTTLENECKS.md](../../User/docs/bottlenecks.md)
 * [BOTTLENECKS.md](../../../media/docs/bottlenecks.md)
-* [BOTTLENECKS.md](../../../cms/docs/bottlenecks.md)
+* [BOTTLENECKS.md](../../Cms/docs/bottlenecks.md)
 
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../gdpr/docs/bottlenecks.md)
-* [bottlenecks.md](../../gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
+* [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../xot/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../dental/docs/bottlenecks.md)
-* [bottlenecks.md](../../user/docs/bottlenecks.md)
-* [bottlenecks.md](../../user/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/bottlenecks.md)
-* [bottlenecks.md](../../ui/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../lang/docs/bottlenecks.md)
-* [bottlenecks.md](../../lang/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../job/docs/performance/bottlenecks.md)
-* [bottlenecks.md](performance/bottlenecks.md)
-* [bottlenecks.md](../../activity/docs/bottlenecks.md)
-* [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../cms/docs/bottlenecks.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Sintesi Colli di Bottiglia](../../docs/PERFORMANCE_BOTTLENECKS.md)
-- [Best Practices](../Xot/docs/BEST-PRACTICES.md)
-- [Struttura Moduli](../Xot/docs/MODULE_STRUCTURE.md)
-
-## Collegamenti tra versioni di BOTTLENECKS.md
-* [BOTTLENECKS.md](../../../Xot/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
-* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
-
-## Collegamenti tra versioni di bottlenecks.md
-* [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/docs/bottlenecks.md)
-* [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
-* [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/docs/bottlenecks.md)
-* [bottlenecks.md](../../Xot/docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../Xot/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../Dental/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/bottlenecks.md)
 * [bottlenecks.md](../../User/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../UI/docs/bottlenecks.md)
-* [bottlenecks.md](../../UI/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../ui/docs/bottlenecks.md)
+* [bottlenecks.md](../../ui/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/bottlenecks.md)
 * [bottlenecks.md](../../Lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
-* [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
-<<<<<<< HEAD
+* [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-=======
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
->>>>>>> 6ed19256f (.)

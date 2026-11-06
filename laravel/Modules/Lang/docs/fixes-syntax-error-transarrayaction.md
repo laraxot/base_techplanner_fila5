@@ -1,10 +1,22 @@
+---
+issues: []
+discussions: []
+title: "Fix Errore Sintassi TransArrayAction"
+module: "Lang"
+type: concept
+tags: [REDUNDANCY, ANALYSIS]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "redundancy analysis"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Fix Errore Sintassi TransArrayAction
 
 ## Data: 2025-01-27
-<<<<<<< HEAD
+## Data: 2025-01-27
 ## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Identificato
 
@@ -63,6 +75,7 @@ public function execute(
 ## Collegamenti
 
 - [TransArrayAction.php](../../app/Actions/TransArrayAction.php)
+- [TransArrayAction.php](../app/Actions/TransArrayAction.php)
 - [PHPStan Fixes](./phpstan-fixes.md)
 - [Translation Actions](./translation-actions.md)
 
@@ -70,8 +83,8 @@ public function execute(
 
 - Evitare trailing comma nei parametri di funzione PHP
 - Verificare sempre la sintassi prima del commit
-<<<<<<< HEAD
 - Utilizzare PHPStan per validazione continua
-=======
 - Utilizzare PHPStan per validazione continua
->>>>>>> 6ed19256f (.)
+- Utilizzare PHPStan per validazione continua
+- Utilizzare PHPStan per validazione continua
+- Utilizzare PHPStan per validazione continua

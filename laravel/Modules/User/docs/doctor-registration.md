@@ -1,3 +1,29 @@
+---
+title: "Registrazione Odontoiatra (Doctor)"
+type: concept
+tags: [doctor, registration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "doctor-registration registrazione odontoiatra (doctor)"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: superseded
+superseded_by: dor-registration.md
+---
+
 # Registrazione Odontoiatra (Doctor)
 
 ## Panoramica
@@ -158,8 +184,4 @@ public static function getFormSchemaWidget(): array
 - Testare la registrazione in ambiente di sviluppo
 - Monitorare le performance
 - Mantenere le traduzioni aggiornate
-<<<<<<< HEAD
 - Documentare le modifiche 
-=======
-- Documentare le modifiche
->>>>>>> 6ed19256f (.)

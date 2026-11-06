@@ -1,3 +1,28 @@
+---
+title: "🗺️ ROADMAP COMPLETA - Modulo User"
+type: concept
+tags: [roadmap, complete]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-complete 🗺️ roadmap completa - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # 🗺️ ROADMAP COMPLETA - Modulo User
 
 ## 📊 Business Logic
@@ -404,14 +429,12 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 ## 🔗 Collegamenti Utili
 
 ### Documentazione Correlata
-- [Roadmap Progetto](../../../docs/roadmap_project.md)
-- [Modulo Fixcity](../../Fixcity/docs/ROADMAP.md)
+- [Roadmap Progetto](../../../../docs/roadmap_project.md)
+- [Modulo Fixcity](../../Fixcity/docs/roadmap.md)
 - [Modulo Tenant](../../Tenant/docs/README.md)
-<<<<<<< HEAD
-- [Modulo Fixcity](../../fixcity/docs/roadmap.md)
-- [Modulo Tenant](../../tenant/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Roadmap Progetto](../../../../docs/roadmap_project.md)
+- [Modulo Fixcity](../../Fixcity/docs/roadmap.md)
+- [Modulo Tenant](../../Tenant/docs/README.md)
 - [Spatie Permissions](https://spatie.be/docs/laravel-permission)
 
 ### Best Practices
@@ -421,16 +444,10 @@ La cartella `docs/` contiene ~300+ file con molti duplicati:
 
 ---
 
-<<<<<<< HEAD
 **Versione**: 1.0.0  
 **
 **Maintainer**: User Module Team  
 **Status**: 🚧 In Development (70% completo)  
 **Prossima Revisione**: 2025-02-01
-=======
-**Versione**: 1.0.0
-**Ultimo Aggiornamento**: 2025-01-01
-**Maintainer**: User Module Team
-**Status**: 🚧 In Development (70% completo)
-**Prossima Revisione**: 2025-02-01
->>>>>>> 6ed19256f (.)
+
+

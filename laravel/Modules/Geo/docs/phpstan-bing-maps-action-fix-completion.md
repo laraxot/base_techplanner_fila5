@@ -1,6 +1,17 @@
+---
+title: "phpstan bing maps action fix completion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan bing maps action fix completion"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Fix Completion - GetAddressFromBingMapsAction - Gennaio 2026
 
-**Data**: 2026-01-09  
 **Stato**: ✅ COMPLETATO CON SUCCESSO  
 **File**: `Modules/Geo/app/Actions/Bing/GetAddressFromBingMapsAction.php`
 
@@ -83,13 +94,8 @@ Basato sulla documentazione `phpstan-code-quality-guide.md`:
 
 - [File Corretto](../app/Actions/Bing/GetAddressFromBingMapsAction.php) 
 - [Documento Roadmap](./phpstan-bing-maps-action-fix-roadmap.md)
-- [PHPStan Code Quality Guide](../../../Xot/docs/phpstan-code-quality-guide.md)
-- [Best Practices Geocoding](../README.md)
-<<<<<<< HEAD
 - [PHPStan Code Quality Guide](../../../xot/docs/phpstan-code-quality-guide.md)
-- [Best Practices Geocoding](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Best Practices Geocoding](../README.md)
 
 ## 🎯 Impatto sul Sistema
 
@@ -99,13 +105,7 @@ Basato sulla documentazione `phpstan-code-quality-guide.md`:
 - **Manutenibilità**: Migliorata con documentazione tipo esplicita
 
 ---
-
 **Autore**: iFlow CLI  
 **Approvazione**: Completo e verificato  
 **Status**: Pronto per produzione  
-<<<<<<< HEAD
-**Data Completamento**: 2026-01-09
 **Data Completamento**: [DATE]
-=======
-**Data Completamento**: 2026-01-09
->>>>>>> 6ed19256f (.)

@@ -4,36 +4,34 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Tables\Columns;
 
-use Filament\Tables\Columns\IconColumn;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
+use Modules\Xot\Filament\Tables\Columns\XotBaseIconColumn;
 
-class IconMediaColumn extends IconColumn
+// phpmd: CyclomaticComplexity, NPathComplexity — setUp Filament con branching mime/icon
+class IconMediaColumn extends XotBaseIconColumn
 {
     protected function setUp(): void
     {
         parent::setUp();
         $attachment = $this->getName();
 
-        $this->default(function ($record) use ($attachment) {
+        $this->default(static function (?Model $record) use ($attachment) {
             if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                 return $record->getFirstMedia($attachment);
             }
-<<<<<<< HEAD
-=======
 
-            return null;
->>>>>>> 6ed19256f (.)
         })
             ->icon('heroicon-o-document-text')
-            ->color(function ($record) use ($attachment): string {
+            ->color(static function (?Model $record) use ($attachment): string {
                 if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                     return $record->getFirstMedia($attachment) ? 'success' : 'danger';
                 }
 
                 return 'danger';
             })
-            ->tooltip(function ($record) use ($attachment): string {
+            ->tooltip(static function (?Model $record) use ($attachment): string {
                 if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                     $media = $record->getFirstMedia($attachment);
                     if (is_object($media) && isset($media->file_name) && is_string($media->file_name)) {
@@ -43,44 +41,26 @@ class IconMediaColumn extends IconColumn
 
                 return 'Documento non caricato';
             })
-<<<<<<< HEAD
-            ->action(function (array $arguments, Request $request) use ($attachment): void {
-                // Skip action if record is not available or doesn't have media capabilities
-                if (! isset($arguments['record'])) {
-                    return;
-=======
             ->action(function (array $arguments, Request $request) use ($attachment) {
                 // Skip action if record is not available or doesn't have media capabilities
                 if (! isset($arguments['record'])) {
-                    return null;
->>>>>>> 6ed19256f (.)
+                    return;
                 }
 
                 $record = $arguments['record'];
 
                 // Verify record is an object and has the required method
                 if (! is_object($record) || ! method_exists($record, 'getFirstMedia')) {
-<<<<<<< HEAD
                     return;
-=======
-                    return null;
->>>>>>> 6ed19256f (.)
                 }
 
                 /** @var Media|null $media */
                 $media = $record->getFirstMedia($attachment);
                 if ($media === null) {
-<<<<<<< HEAD
                     return;
                 }
 
-                $media->toInlineResponse($request);
-=======
-                    return null;
-                }
-
                 return $media->toInlineResponse($request);
->>>>>>> 6ed19256f (.)
 
                 // return $media->toResponse($request);
                 // return Storage::disk($media->disk)->download($media->getPathRelativeToRoot());

@@ -1,3 +1,15 @@
+---
+title: "business logic overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "business logic overview"
+issues: []
+discussions: []
+status: draft
+---
+
 # Cms Module - Business Logic Overview
 
 ## Core Business Logic Components
@@ -145,12 +157,14 @@ Page::create([
 
 ---
 
-**Last Updated**: 2025-08-28
-<<<<<<< HEAD
 
+title: "business logic overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "business logic overview"
+issues: []
+discussions: []
 **Module Version**: Latest
 **Business Logic Status**: Core functionality implemented
-=======
-**Module Version**: Latest
-**Business Logic Status**: Core functionality implemented
->>>>>>> 6ed19256f (.)

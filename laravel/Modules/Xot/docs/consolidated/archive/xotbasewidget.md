@@ -1,3 +1,11 @@
+---
+title: "XotBaseWidget"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "xotbasewidget xot"
+---
 # XotBaseWidget
 
 ## Panoramica
@@ -31,10 +39,5 @@ class MyCustomWidget extends XotBaseWidget
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [Documentazione Filament Widgets](Modules/Xot/project_docs/filament/widgets/index.md)
 - [XotBaseWidget](Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
-=======
-- [Documentazione Filament Widgets](/var/www/html/base_generic/laravel/Modules/Xot/project_docs/filament/widgets/index.md)
-- [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/app/Filament/Widgets/XotBaseWidget.php)
->>>>>>> 6ed19256f (.)

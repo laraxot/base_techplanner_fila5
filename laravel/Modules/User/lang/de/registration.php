@@ -88,78 +88,57 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il tuo nome',
             'help' => 'Il tuo nome di battesimo',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il tuo cognome',
             'help' => 'Il tuo cognome di famiglia',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci il tuo indirizzo email',
             'help' => 'Indirizzo email valido che utilizzerai per accedere',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci una password sicura',
             'help' => 'Minimo 8 caratteri con lettere, numeri e simboli',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
             'placeholder' => 'Ripeti la password',
             'help' => 'Inserisci nuovamente la password per confermarla',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono per essere contattato',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'address' => [
             'label' => 'Indirizzo',
             'placeholder' => 'Inserisci il tuo indirizzo completo',
             'help' => 'Via/Piazza e numero civico di residenza',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'city' => [
             'label' => 'Stadt',
@@ -183,45 +162,33 @@ return [
             'label' => 'CAP',
             'placeholder' => 'Inserisci il CAP',
             'help' => 'Codice di avviamento postale',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'country' => [
             'label' => 'Paese',
             'placeholder' => 'Seleziona il paese',
             'help' => 'Paese di residenza',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'fiscal_code' => [
             'label' => 'Codice Fiscale',
             'placeholder' => 'Inserisci il codice fiscale',
             'help' => 'Codice fiscale italiano (16 caratteri)',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'La tua data di nascita nel formato gg/mm/aaaa',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'birth_place' => [
             'label' => 'Geburtsort',
@@ -231,243 +198,187 @@ return [
             'description' => 'Geburtsort für demografische Dokumentation',
             'icon' => 'heroicon-o-map-pin',
             'color' => 'primary',
-<<<<<<< HEAD
             'helper_text' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'gender' => [
             'label' => 'Genere',
             'placeholder' => 'Seleziona il genere',
             'help' => 'Genere anagrafico',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'nationality' => [
             'label' => 'Nazionalità',
             'placeholder' => 'Inserisci la nazionalità',
             'help' => 'Nazionalità secondo il documento d\'identità',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'document_type' => [
             'label' => 'Tipo Documento',
             'placeholder' => 'Seleziona il tipo di documento',
             'help' => 'Carta d\'identità, patente, passaporto',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'document_number' => [
             'label' => 'Numero Documento',
             'placeholder' => 'Inserisci il numero del documento',
             'help' => 'Numero identificativo del documento',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'document_issue_date' => [
             'label' => 'Data Rilascio',
             'placeholder' => 'Seleziona la data di rilascio',
             'help' => 'Data in cui il documento è stato rilasciato',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'document_expiry_date' => [
             'label' => 'Data Scadenza',
             'placeholder' => 'Seleziona la data di scadenza',
             'help' => 'Data di scadenza del documento',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'document_issuing_authority' => [
             'label' => 'Autorità Rilascio',
             'placeholder' => 'Inserisci l\'autorità che ha rilasciato il documento',
             'help' => 'Comune, questura o altro ente che ha rilasciato il documento',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'document_file' => [
             'label' => 'File Documento',
             'placeholder' => 'Carica una scansione del documento',
             'help' => 'Scansione fronte/retro del documento in formato PDF o JPG',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'photo' => [
             'label' => 'Foto Profilo',
             'placeholder' => 'Carica una foto profilo',
             'help' => 'Foto recente per il profilo, formato quadrato consigliato',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'cv' => [
             'label' => 'Curriculum Vitae',
             'placeholder' => 'Carica il tuo CV',
             'help' => 'Curriculum vitae aggiornato in formato PDF',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'bio' => [
             'label' => 'Biografia',
             'placeholder' => 'Scrivi una breve biografia',
             'help' => 'Descrizione di te stesso e delle tue competenze',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'professional_title' => [
             'label' => 'Titolo Professionale',
             'placeholder' => 'Inserisci il tuo titolo professionale',
             'help' => 'La tua qualifica o posizione professionale principale',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'terms' => [
             'label' => 'Termini e Condizioni',
             'placeholder' => 'Accetta i termini e condizioni',
             'help' => 'Devi accettare i termini e condizioni per procedere',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'privacy' => [
             'label' => 'Informativa Privacy',
             'placeholder' => 'Accetta l\'informativa sulla privacy',
             'help' => 'Erforderliche Zustimmung zur Verarbeitung personenbezogener Daten',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'marketing' => [
             'label' => 'Comunicazioni Marketing',
             'placeholder' => 'Accetta di ricevere comunicazioni promozionali',
             'help' => 'Consenso facoltativo per ricevere newsletter e promozioni',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'moderation_status' => [
             'label' => 'Stato Moderazione',
             'placeholder' => 'Stato attuale della moderazione',
             'help' => 'Lo stato di verifica del profilo da parte degli amministratori',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'moderation_notes' => [
             'label' => 'Note Moderazione',
             'placeholder' => 'Note del moderatore',
             'help' => 'Eventuali annotazioni del team di moderazione',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'register' => [
-            'label' => 'Registrati',
-            'tooltip' => 'Completa la registrazione',
-            'modal_heading' => 'Conferma Registrazione',
-            'modal_description' => 'Confermi di voler completare la registrazione con i dati inseriti?',
-            'success' => 'Registrazione completata con successo',
-            'error' => 'Si è verificato un errore durante la registrazione',
+            'label' => 'Registrieren',
+            'tooltip' => 'Registrierung abschließen',
+            'modal_heading' => 'Registrierung bestätigen',
+            'modal_description' => 'Möchten Sie die Registrierung mit den eingegebenen Daten abschließen?',
+            'success' => 'Registrierung erfolgreich abgeschlossen',
+            'error' => 'Bei der Registrierung ist ein Fehler aufgetreten',
         ],
         'previous' => [
-            'label' => 'Precedente',
-            'tooltip' => 'Torna al passaggio precedente',
+            'label' => 'Zurück',
+            'tooltip' => 'Zum vorherigen Schritt zurückkehren',
         ],
         'next' => [
-            'label' => 'Successivo',
-            'tooltip' => 'Procedi al passaggio successivo',
+            'label' => 'Weiter',
+            'tooltip' => 'Zum nächsten Schritt wechseln',
         ],
         'save_draft' => [
-            'label' => 'Salva Bozza',
-            'tooltip' => 'Salva i dati inseriti come bozza',
-            'success' => 'Bozza salvata con successo',
-            'error' => 'Errore durante il salvataggio della bozza',
+            'label' => 'Entwurf speichern',
+            'tooltip' => 'Die eingegebenen Daten als Entwurf speichern',
+            'success' => 'Entwurf erfolgreich gespeichert',
+            'error' => 'Fehler beim Speichern des Entwurfs',
         ],
     ],
     'messages' => [
-        'welcome' => 'Benvenuto nella procedura di registrazione',
-        'step_completed' => 'Passaggio completato con successo',
-        'all_steps_completed' => 'Tutti i passaggi sono stati completati',
-        'validation_errors' => 'Controlla i campi evidenziati e correggi gli errori',
-        'required_fields' => 'I campi contrassegnati con * sono obbligatori',
-        'save_progress' => 'I tuoi progressi sono stati salvati automaticamente',
+        'welcome' => 'Willkommen beim Registrierungsverfahren',
+        'step_completed' => 'Schritt erfolgreich abgeschlossen',
+        'all_steps_completed' => 'Alle Schritte wurden abgeschlossen',
+        'validation_errors' => 'Bitte prüfen Sie die markierten Felder und korrigieren Sie die Fehler',
+        'required_fields' => 'Mit * gekennzeichnete Felder sind Pflichtfelder',
+        'save_progress' => 'Ihr Fortschritt wurde automatisch gespeichert',
         'errors' => [
-            'general' => 'Si è verificato un errore durante la registrazione',
-            'email_exists' => 'Questo indirizzo email è già registrato',
-            'validation' => 'Alcuni campi contengono errori, controllali e riprova',
+            'general' => 'Bei der Registrierung ist ein Fehler aufgetreten',
+            'email_exists' => 'Diese E-Mail-Adresse ist bereits registriert',
+            'validation' => 'Einige Felder enthalten Fehler, bitte prüfen Sie sie und versuchen Sie es erneut',
         ],
         'success' => [
-            'registration' => 'Registrazione completata con successo! Riceverai una email di conferma',
-            'step' => 'Passaggio completato correttamente',
+            'registration' => 'Registrierung erfolgreich abgeschlossen! Sie erhalten eine Bestätigungs-E-Mail',
+            'step' => 'Schritt erfolgreich abgeschlossen',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'already_registered' => 'Haben Sie bereits ein Konto?',
 ];

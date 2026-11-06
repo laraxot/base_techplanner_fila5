@@ -7,7 +7,6 @@ return [
     'next_month' => 'Mese successivo',
     'today' => 'Oggi',
     'months' => [
-<<<<<<< HEAD
         0 => 'Gennaio',
         1 => 'Febbraio',
         2 => 'Marzo',
@@ -50,7 +49,7 @@ return [
         ],
         'label' => 'Datepicker',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -83,29 +82,14 @@ return [
             'label' => 'Elimina Datepicker',
         ],
     ],
-=======
-        'Gennaio',
-        'Febbraio',
-        'Marzo',
-        'Aprile',
-        'Maggio',
-        'Giugno',
-        'Luglio',
-        'Agosto',
-        'Settembre',
-        'Ottobre',
-        'Novembre',
-        'Dicembre',
+    'messages' => [
+        'loading_calendar' => [
+            'message' => 'Caricamento calendario...',
+        ],
     ],
-    'weekdays' => [
-        'Domenica',
-        'Lunedì',
-        'Martedì',
-        'Mercoledì',
-        'Giovedì',
-        'Venerdì',
-        'Sabato',
+    'test_page' => [
+        'form_state' => [
+            'label' => 'Stato del form:',
+        ],
     ],
-    'weekdays_short' => ['Dom', 'Lun', 'Mar', 'Mer', 'Gio', 'Ven', 'Sab'],
->>>>>>> 6ed19256f (.)
 ];

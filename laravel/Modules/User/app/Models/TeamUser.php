@@ -6,10 +6,6 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\TeamUserFactory;
->>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -19,8 +15,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|TeamUser newQuery()
  * @method static Builder|TeamUser query()
  *
- * @property int         $id
- * @property string      $uuid
+ * @property int $id
+ * @property string $uuid
  * @property string|null $team_id
  * @property string|null $user_id
  * @property string|null $role
@@ -49,28 +45,17 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
- * @mixin IdeHelperTeamUser
- *
-<<<<<<< HEAD
- * @property ProfileContract|null         $deleter
- * @property Team|null                    $team
- * @property User|null                    $user
- * @property array<array-key, mixed>|null $permissions
- * @property string|null                  $joined_at
- *
- * @method static Builder<static>|TeamUser                         childrenWith(array $relations)
- * @method static Builder<static>|TeamUser                         childrenWithCount(array $relations)
- * @method static \Modules\User\Database\Factories\TeamUserFactory factory($count = null, $state = [])
- * @method static Builder<static>|TeamUser                         whereJoinedAt($value)
- * @method static Builder<static>|TeamUser                         wherePermissions($value)
-=======
  * @property ProfileContract|null $deleter
- * @property Team|null            $team
- * @property User|null            $user
+ * @property Team|null $team
+ * @property User|null $user
+ * @property array<array-key, mixed>|null $permissions
+ * @property string|null $joined_at
  *
- * @method static TeamUserFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
+ * @method static Builder<static>|TeamUser childrenWith(array<int|string, mixed> $relations)
+ * @method static Builder<static>|TeamUser childrenWithCount(array<int|string, mixed> $relations)
+ * @method static \Modules\User\Database\Factories\TeamUserFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamUser whereJoinedAt($value)
+ * @method static Builder<static>|TeamUser wherePermissions($value)
  *
  * @mixin \Eloquent
  */

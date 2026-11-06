@@ -1,8 +1,16 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "customizing your site"
+issues: []
+discussions: []
 title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 # Customizing Your Site {#customizing}
 
@@ -86,7 +94,6 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
-<<<<<<< HEAD
 * [customizing-your-site.md](../../../gdpr/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../xot/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
@@ -97,24 +104,11 @@ class Foo extends bar
 * [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
-=======
->>>>>>> 6ed19256f (.)
-* [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/project_docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/docs/customizing-your-site.md)
 
 ### Versione Incoming
 
 ---
 ---
-title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
 section: content
@@ -188,7 +182,6 @@ class Foo extends bar
 ```
 
 </div>
-<<<<<<< HEAD
 * [customizing-your-site.md](../../../gdpr/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../xot/docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
@@ -199,23 +192,7 @@ class Foo extends bar
 * [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
 * [customizing-your-site.md](../../../tenant/project_docs/it/customizing-your-site.md)
 * [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
-=======
->>>>>>> 6ed19256f (.)
-* [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../Tenant/project_docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../Cms/project_docs/customizing-your-site.md)
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

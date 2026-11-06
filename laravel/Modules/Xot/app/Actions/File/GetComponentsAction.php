@@ -4,26 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-<<<<<<< HEAD
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ComponentFileData;
-
-use function Safe\json_decode;
-use function Safe\json_encode;
-
-=======
-use Exception;
-use Illuminate\Support\Facades\File;
-use Illuminate\Support\Str;
-use Modules\Xot\Datas\ComponentFileData;
-use ReflectionClass;
-use function Safe\json_decode;
-use function Safe\json_encode;
->>>>>>> 6ed19256f (.)
 use Spatie\LaravelData\DataCollection;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+
+use function Safe\json_decode;
+use function Safe\json_encode;
 
 class GetComponentsAction
 {
@@ -32,7 +21,7 @@ class GetComponentsAction
     /**
      * Undocumented function.
      *
-     * @return DataCollection<ComponentFileData>
+     * @return DataCollection<int, ComponentFileData>
      */
     public function execute(
         string $path,
@@ -62,23 +51,25 @@ class GetComponentsAction
                 $content = File::get($components_json),
                 '['.__LINE__.']['.class_basename(static::class).']',
             );
-            $comps = json_decode($content, false);
-            if (! is_array($comps)) {
-                $comps = [];
+            $decoded = json_decode($content, true);
+            /** @var array<int, array<string, mixed>> $comps */
+            $comps = is_array($decoded) ? array_values($decoded) : [];
+
+            if ($this->hasCurrentSchema($comps)) {
+                return ComponentFileData::collection($comps);
             }
 
-            return ComponentFileData::collection($comps);
+            // Cache scritta da uno schema precedente (name/class/ns rinominati o
+            // mancanti): rigenerare invece di far fallire il boot dell'app con
+            // "Typed property ...::$name must not be accessed before
+            // initialization" alla prima lettura di un DTO incompleto.
         }
 
         $files = File::allFiles($path);
         $comps = [];
 
         foreach ($files as $file) {
-<<<<<<< HEAD
-            if ('php' !== $file->getExtension()) {
-=======
             if ($file->getExtension() !== 'php') {
->>>>>>> 6ed19256f (.)
                 continue;
             }
 
@@ -93,14 +84,9 @@ class GetComponentsAction
             $comp_name = $prefix.$comp_name;
             $comp_ns = $namespace.'\\'.$class_name;
 
-<<<<<<< HEAD
-            if ('' !== $relative_path) {
-=======
             if ($relative_path !== '') {
->>>>>>> 6ed19256f (.)
-                $comp_name = '';
                 $piece = collect(explode('\\', $relative_path))
-                    ->map(fn ($item) => Str::slug(Str::snake($item)))
+                    ->map(fn (string $item) => Str::slug(Str::snake($item)))
                     ->implode('.');
 
                 $comp_name = $prefix.$piece.'.'.Str::slug(Str::snake(Str::replace('\\', ' ', $class_name)));
@@ -110,19 +96,11 @@ class GetComponentsAction
 
             try {
                 if (! class_exists($comp_ns)) {
-<<<<<<< HEAD
                     throw new \Exception("La classe {$comp_ns} non esiste");
                 }
 
                 /** @var class-string<object> $comp_ns */
                 $reflection = new \ReflectionClass($comp_ns);
-=======
-                    throw new Exception("La classe {$comp_ns} non esiste");
-                }
-
-                /** @var class-string<object> $comp_ns */
-                $reflection = new ReflectionClass($comp_ns);
->>>>>>> 6ed19256f (.)
                 if ($reflection->isAbstract()) {
                     continue;
                 }
@@ -132,11 +110,7 @@ class GetComponentsAction
                     'class' => $class_name,
                     'ns' => $comp_ns,
                 ])->toArray();
-<<<<<<< HEAD
             } catch (\Exception $e) {
-=======
-            } catch (Exception $e) {
->>>>>>> 6ed19256f (.)
                 /*
                  * dddx([
                  * 'comp_name' => $comp_name,
@@ -160,5 +134,24 @@ class GetComponentsAction
         }
 
         return ComponentFileData::collection($comps);
+    }
+
+    /**
+     * @param  array<int, array<string, mixed>>  $comps
+     */
+    private function hasCurrentSchema(array $comps): bool
+    {
+        foreach ($comps as $comp) {
+            if (
+                ! isset($comp['name'], $comp['class'], $comp['ns'])
+                || ! is_string($comp['name']) || $comp['name'] === ''
+                || ! is_string($comp['class']) || $comp['class'] === ''
+                || ! is_string($comp['ns']) || $comp['ns'] === ''
+            ) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }

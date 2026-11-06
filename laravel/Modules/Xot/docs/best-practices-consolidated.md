@@ -1,3 +1,15 @@
+---
+title: "best practices consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "best practices consolidated"
+issues: []
+discussions: []
+status: draft
+---
+
 # Best Practices - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTE le best practices del progetto
@@ -252,7 +264,17 @@ use Filament\Forms\Components\TextInput;
 
 class ExampleResource extends XotBaseResource
 {
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+title: "best practices consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "best practices consolidated"
+issues: []
+discussions: []
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required(),
@@ -292,7 +314,9 @@ class UserModerationResource extends XotBaseResource
 /**
  * @return array<string, \Filament\Forms\Components\Component>
  */
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+public function getFormSchema(): array
 {
     return [
         // Schema del form
@@ -483,11 +507,7 @@ Modules/UI/resources/views/components/ui/
 
 ### Livello 9+ Obbligatorio
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/_bases/base_saluteora/laravel
->>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 
@@ -719,11 +739,7 @@ return new class extends XotBaseMigration {
 **Soluzione**:
 ```bash
 # Eseguire da directory Laravel
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/_bases/base_saluteora/laravel
->>>>>>> 6ed19256f (.)
 ./vendor/bin/phpstan analyze --level=9 --memory-limit=2G
 ```
 
@@ -907,8 +923,4 @@ php artisan view:clear
 
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
-<<<<<<< HEAD
 *Categoria: Best Practices*
-=======
-*Categoria: Best Practices*
->>>>>>> 6ed19256f (.)

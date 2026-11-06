@@ -1,7 +1,11 @@
 ---
-module: theme
-topic: addressresource_summary
-canonical: ../../../Themes/docs/shared-components/addressresource-sumy.md
+title: stub alias
+status: stub
+canonical: addressresource-summary.md
+type: note
+updated: 2026-10-20
+tags: [docs, geo]
+qmd: "addressresource summary geo"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/addressresource-sumy.md
+> Alias storico. Canonico: [addressresource-summary.md](./addressresource-summary.md).

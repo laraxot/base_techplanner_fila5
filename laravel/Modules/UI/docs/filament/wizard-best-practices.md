@@ -1,3 +1,15 @@
+---
+title: "wizard best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "wizard best practices"
+issues: []
+discussions: []
+status: draft
+---
+
 # Best Practices per i Wizard in Filament
 
 ## Regola Fondamentale: Estrazione dei Metodi per gli Step
@@ -160,8 +172,4 @@ public static function getFormSchemaWidget(): array
 
 - [Filament Resources Structure](../filament-resources-structure.md)
 - [Form Components](../form-components.md)
-- [Filament Best Practices](../../Xot/docs/filament-best-practices.md)
-<<<<<<< HEAD
 - [Filament Best Practices](../../xot/docs/filament-best-practices.md)
-=======
->>>>>>> 6ed19256f (.)

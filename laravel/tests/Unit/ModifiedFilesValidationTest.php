@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace Tests\Unit;
 
-test('Confirm component render method has View return type', function (): void {
-    $reflection = new \ReflectionMethod(\Modules\User\Http\Livewire\Auth\Passwords\Confirm::class, 'render');
-    expect($reflection->getReturnType()?->getName())->toBe('Illuminate\View\View');
+test('password confirmation page remains a Volt page', function (): void {
+    $path = dirname(__DIR__, 2).'/Modules/User/resources/views/pages/auth/password/confirm.blade.php';
+
+    expect(is_file($path))->toBeTrue()
+        ->and(file_get_contents($path))->toContain('new class extends Component');
 });
 
 test('AutoLabelAction getComponentName method simplification', function (): void {

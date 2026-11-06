@@ -1,3 +1,15 @@
+---
+title: "notify send email translations improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "notify send email translations improvements"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sistemazione e Miglioramenti File Traduzione send_email.php - Modulo Notify
 
 ## Introduzione
@@ -5,7 +17,7 @@
 Documento che descrive la sistemazione completa dei file di traduzione per la funzionalità `send_email.php` del modulo Notify, con risoluzione di problemi critici e implementazione di best practices.
 
 ## Collegamenti correlati
-- [Documentazione Modulo Notify](/laravel/Modules/Notify/docs/INDEX.md)
+- [Documentazione Modulo Notify](/laravel/Modules/Notify/docs/index.md)
 - [Best Practices Traduzioni](/docs/translation-system-rules.md)
 - [Convenzioni PHP](/docs/php-best-practices.md)
 - [Regole Qualità Codice](/docs/code-quality-rules.md)
@@ -138,11 +150,7 @@ return array (            // ✅ Legacy syntax mantenuta (IT)
 // ✅ Convenzioni coerenti
 'navigation' => [          // Navigazione principale
 'fields' => [             // Campi form
-<<<<<<< HEAD
 'actions' => [            // Azioni utente  
-=======
-'actions' => [            // Azioni utente
->>>>>>> 6ed19256f (.)
 'messages' => [           // Messaggi sistema
 'validation' => [         // Regole validazione
 ```
@@ -190,11 +198,7 @@ return array (            // ✅ Legacy syntax mantenuta (IT)
 ```php
 'tracking' => [
     'opened' => 'Email opened',
-<<<<<<< HEAD
     'clicked' => 'Link clicked', 
-=======
-    'clicked' => 'Link clicked',
->>>>>>> 6ed19256f (.)
     'device' => 'Device',
     'location' => 'Location',
     'open_count' => 'Times opened',
@@ -241,11 +245,7 @@ return array (            // ✅ Legacy syntax mantenuta (IT)
 // ✅ Sempre aggiungere in tutte e 3 le lingue
 'new_feature' => [
     'label' => 'EN: New Feature',      // en/send_email.php
-<<<<<<< HEAD
     'label' => 'IT: Nuova Funzione',   // it/send_email.php  
-=======
-    'label' => 'IT: Nuova Funzione',   // it/send_email.php
->>>>>>> 6ed19256f (.)
     'label' => 'DE: Neue Funktion',    // de/send_email.php
 ],
 ```
@@ -264,8 +264,4 @@ return array (            // ✅ Legacy syntax mantenuta (IT)
 
 La sistemazione del file `send_email.php` ha risolto problemi critici e implementato un sistema di traduzioni robusto e completo. L'applicazione di best practices e la standardizzazione della struttura garantiscono un'esperienza utente coerente e facilita la manutenzione futura del sistema.
 
-<<<<<<< HEAD
 **Risultato**: Sistema di invio email completamente localizzato e funzionale in italiano, inglese e tedesco con oltre 100 chiavi di traduzione per ogni lingua e funzionalità avanzate per tracking, programmazione e gestione allegati. 
-=======
-**Risultato**: Sistema di invio email completamente localizzato e funzionale in italiano, inglese e tedesco con oltre 100 chiavi di traduzione per ogni lingua e funzionalità avanzate per tracking, programmazione e gestione allegati.
->>>>>>> 6ed19256f (.)

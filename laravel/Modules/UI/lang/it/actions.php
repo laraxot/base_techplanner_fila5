@@ -13,7 +13,6 @@ return [
         'title' => 'Prova',
         'body' => 'Questo è un messaggio di prova per il record con ID: :id',
     ],
-<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -25,7 +24,7 @@ return [
         ],
         'label' => 'Actions',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -58,6 +57,4 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

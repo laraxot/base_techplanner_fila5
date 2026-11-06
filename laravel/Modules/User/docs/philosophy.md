@@ -1,4 +1,28 @@
-<<<<<<< HEAD
+---
+title: "User - Filosofia Completa: Logica, Religione, Politica, Zen"
+type: concept
+tags: [philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "philosophy user - filosofia completa: logica, religione, politica, zen"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # User - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: [DATE]
@@ -89,6 +113,313 @@ class Doctor extends User
 {
     use HasParent;
     // Type-specific logic
+# User Module: Philosophy, Architecture & Zen
+
+> **Identity & Authorization**: Who you are, what you can do, which tenant you belong to. User module is the backbone of Laraxot's security and multi-tenancy.
+
+---
+
+## 1. Philosophy & Zen
+
+### Canonical Purpose
+
+User module provides:
+- **Authentication** (Passport OAuth, email/password, Socialite multi-provider)
+- **Authorization** (Roles, Permissions via Spatie, Policies)
+- **Identity** (User profile, device tracking, session management)
+- **Multi-tenancy** (User → Teams → Tenants isolation)
+- **Security** (2FA-ready, device verification, rate limiting)
+
+**Why**: Every module depends on User for `auth()` context, authorization checks, tenant scoping.
+
+### Zen
+
+**"Identity is the anchor. Everything else hangs from it."**
+
+User is not just a table; it's a security perimeter. Decisions here (auth flow, role structure, device trust) cascade through the entire system.
+
+---
+
+## 2. Architecture
+
+### Core Models (50+ total)
+
+| Model | Purpose |
+|-------|---------|
+| **BaseUser** | Foundation user (Passport, Spatie Permission, Teams, Tenants) |
+| **User** | Concrete user (tenant-specific, extends BaseUser) |
+| **BaseTeam** | Team (ownership, membership) |
+| **BaseProfile** | User profile (bio, avatar, extra attributes) |
+| **Device** | Device tracking (IP, user agent, last seen) |
+| **DeviceVerification** | 2FA-ready device verification |
+| **Authentication** | Auth session record (immutable log) |
+| **AuthenticationLog** | Failed attempt log |
+| **OauthClient**, **OauthToken** | Passport OAuth (API tokens) |
+| **SocialiteUser** | OAuth provider links (Auth0, Microsoft, Google) |
+| **Role**, **Permission** | Spatie RBAC (authorization) |
+| **BaseUuidModel** | Variant base model using UUID instead of int ID |
+
+### Auth Flow
+
+```
+Request
+  ↓
+Passport/Sanctum (guard)
+  ↓
+User Model (auth context)
+  ↓
+Policy/Gate (authorization)
+  ↓
+Tenant Scope (data isolation)
+  ↓
+Action (with user context)
+```
+
+### Multi-Tenancy Pattern
+
+```
+User
+  ├─ currentTeam (active context)
+  ├─ ownedTeams (user manages)
+  ├─ membershipTeams (user belongs to)
+  └─ tenants (via teams)
+
+Team
+  ├─ users (members)
+  ├─ pivot TeamsUser (role within team)
+  └─ tenant (owner)
+
+Tenant (from Tenant module)
+  ├─ users (all users with access)
+  ├─ domain, database config
+  └─ data isolation boundary
+```
+
+### Traits (Composition)
+
+| Trait | What |
+|-------|------|
+| **HasApiTokens** | Passport tokens (OAuth) |
+| **HasXotFactory** | Factory generation |
+| **HasUuids** | Use UUID instead of int ID |
+| **Notifiable** | Send notifications |
+| **HasAuthentications** | Track auth events |
+| **HasAuthenticationLogTrait** | Failed login tracking |
+| **HasDevices** | Device management |
+| **HasSocialite** | OAuth provider links |
+| **HasSpatiePermission** | Roles & permissions |
+| **HasTeams** | Team membership |
+| **HasModules** | Module-level permissions |
+| **InteractsWithMedia** | Avatar, media library |
+| **HasChildren** | Polymorphic User inheritance |
+
+### OAuth & Socialite
+
+**Passport** (native Laravel OAuth):
+- User → OauthClient (API credentials)
+- OauthToken (refresh + access token)
+- Use: API authentication, SPA backends
+
+**Socialite** (social login):
+- SocialiteUser (provider + provider ID)
+- Providers: Auth0, Microsoft, Google, GitHub, Facebook
+- Use: "Login with..." flows, SSO integration
+
+### Roles & Permissions
+
+**Spatie Permission**:
+- Role (admin, editor, viewer, custom)
+- Permission (create_post, delete_comment, etc.)
+- User.hasRole('admin') / hasPermission('edit_post')
+- Team-level roles (team-specific permissions)
+
+**Policies**:
+- Laravel Gate/Policy for fine-grained checks
+- Tied to User + Resource (e.g., "Can user edit this post?")
+
+---
+
+## 3. Best/Bad Practices
+
+### Best
+
+1. **Passport + Sanctum hybrid**
+   - Passport for long-lived API tokens (desktop apps, integrations)
+   - Sanctum for SPA (short-lived, CSRF-protected)
+   ```php
+   $user->createToken('api', ['*'])->plainTextToken;
+   ```
+
+2. **Tenant scoping via user context**
+   - Every query within action runs in user's current tenant
+   - Query scope applied at middleware/ServiceProvider level
+   - No manual `where('tenant_id', ...)` needed
+
+3. **Device verification + 2FA ready**
+   - DeviceVerification model (extends app to add MFA)
+   - Device::track() logs all auth, can rate-limit per device
+   ```php
+   Device::where('user_id', $user->id)->where('ip', request()->ip())->update(['last_seen' => now()]);
+   ```
+
+4. **Profile extraction**
+   - BaseProfile keeps user table lean (no nullable columns for avatar, bio)
+   - 1:1 relationship, loaded eagerly where needed
+
+5. **Immutable authentication log**
+   - AuthenticationLog::create() records every auth event (success + failure)
+   - Never deleted (compliance, forensics)
+
+### Bad
+
+1. **Storing OAuth tokens in cookies**
+   ```php
+   // ❌ WRONG
+   cookie('oauth_token', $token->access_token)->httpOnly(false);
+   
+   // ✅ RIGHT
+   // Use Passport guard, token stored server-side
+   ```
+
+2. **Bypassing Spatie Permission with custom policy**
+   ```php
+   // ❌ WRONG
+   if ($user->id === 1) return true; // Hardcoded super-admin
+   
+   // ✅ RIGHT
+   $user->hasRole('admin') && $user->hasPermission('action');
+   ```
+
+3. **Multi-team without scoping**
+   ```php
+   // ❌ WRONG
+   User::all()->teams(); // Leaks all teams
+   
+   // ✅ RIGHT
+   auth()->user()->currentTeam->users();
+   ```
+
+4. **Device verification optional**
+   - If added later, existing sessions unverified
+   - Approach: Gradual rollout with feature flag
+
+### False Friends
+
+1. **auth()->user() vs auth('api')->user()**
+   - First: session guard (web)
+   - Second: API guard (Passport token)
+   - **Trap**: Switching guards in middleware breaks context
+
+2. **Role vs Permission ambiguity**
+   - Role: container of permissions (one user = multiple roles)
+   - Permission: atomic action (one permission = many roles)
+   - **Trap**: Assigning permissions directly to user (works, but unmaintainable)
+
+3. **currentTeam() magic**
+   ```php
+   // ⚠️ currentTeam is context, not loaded by default
+   auth()->user()->currentTeam; // May be null if not set
+   auth()->user()->load('currentTeam')->currentTeam; // Safe
+   ```
+
+4. **Device.user_id vs Device.ip**
+   - user_id: owner of the device
+   - ip: client IP at last login (not unique, VPN/proxy spoofs it)
+   - **Trap**: Using IP alone for 2FA (unreliable)
+
+---
+
+## 4. Integration
+
+### Who Uses User
+
+**Every module**:
+- Auth context in policies
+- Tenant scoping
+- Audit trail (created_by, updated_by)
+- Notifications (send to users)
+
+### Reverse Dependencies
+
+- **Tenant module** (scoping context)
+- **Notify module** (send notifications to users)
+- **Activity module** (track who changed what)
+- **Geo module** (user location/address)
+- **Media module** (user avatar)
+
+---
+
+## 5. Security Audit
+
+### Built-In
+
+✓ Passport rate limiting (OAuth guard)
+✓ Authentication log (immutable)
+✓ Device tracking (IP, user agent)
+✓ Spatie Permission (fine-grained ACL)
+✓ Tenant isolation (currentTeam scope)
+
+### Gaps (to address)
+
+- [ ] 2FA implementation (DeviceVerification ready, not implemented)
+- [ ] Rate limiting on login attempts (AuthenticationLog tracked, not enforced)
+- [ ] Cross-tenant CSRF token validation
+- [ ] Session hijacking detection (compare user agent / IP change)
+
+---
+
+## 6. Roadmap
+
+1. **Multi-Factor Authentication (MFA)**
+   - TOTP (Google Authenticator) + SMS backup codes
+   - Leverage DeviceVerification model
+
+2. **Single Sign-On (SSO)**
+   - SAML/OpenID Connect support
+   - Extend SocialiteUser model
+
+3. **Passwordless Auth**
+   - Magic link / email-based login
+   - 2FA-aware
+
+4. **Session Management UI**
+   - User sees active devices
+   - Revoke sessions remotely
+
+5. **Audit Trail Dashboard**
+   - Authentication log visualization
+   - Failed login alerts
+
+---
+
+## 7. Installation & Setup
+
+```bash
+# Already in monorepo
+cd laravel/
+composer install
+
+# Run migrations (74 total)
+php artisan migrate --path="Modules/User/database/migrations"
+
+# Seed default roles/permissions
+php artisan db:seed UserSeeder
+
+# Publish config
+php artisan vendor:publish --provider="Modules\User\Providers\UserServiceProvider"
+```
+
+### Quick Start: Protect a Route
+
+```php
+// routes/web.php
+Route::middleware(['auth', 'verified'])->group(function () {
+    Route::get('/dashboard', DashboardAction::class);
+});
+
+// Filament resource (auto-protected)
+class UserResource extends XotBaseResource {
+    // ...
 }
 ```
 
@@ -260,68 +591,21 @@ class DoctorScope implements Scope
 ---
 
 **Filosofia**: STI Unity, RBAC Standard, Multi-Tenant Isolation, Identity Foundation
-=======
->>>>>>> 6ed19256f (.)
-# User Module: Philosophy, Purpose, and Design Principles
+## 8. Summary Card
 
-**Date:** December 23, 2025
+```
+┌──────────────────────────────────────────────┐
+│ MODULE: User (Identity & Authorization)      │
+├──────────────────────────────────────────────┤
+│ Purpose: Auth, roles, teams, multi-tenancy   │
+│ Owner: laravel/Modules/User/                 │
+│ Status: Stable (production)                  │
+│ PHPStan: Level 10 target                     │
+│ Models: 50+ (104 files total)                │
+│ Migrations: 74                               │
+│ Dependencies: Xot, Tenant, UI                │
+│ Reverse Deps: All other modules              │
+│ Complexity: High (security-critical)         │
+└──────────────────────────────────────────────┘
+```
 
-## 🎯 Purpose and Core Responsibilities
-
-The `User` module is the central nervous system for all user-related functionalities within the application. Its core purpose is to meticulously manage user identities, control access, and facilitate seamless user interactions. Key responsibilities include:
-
-1.  **Comprehensive User Management:** Overseeing the entire user lifecycle, from registration and authentication to password management and email verification.
-2.  **Authentication & Authorization Hub:** Acting as the primary integration point for diverse security protocols, including Laravel Passport for API authentication, Socialite Providers for OAuth/social logins, and Laravel's native authentication system. It defines granular access controls through features like Passport scopes and Pulse dashboard Gates.
-3.  **Enhanced Security Policies:** Enforcing robust security measures, notably through custom password complexity rules (via `PasswordData`) to protect user accounts.
-4.  **Customizable User Communication:** Tailoring critical user notifications (e.g., password reset, email verification) using custom `SpatieEmail` templates, ensuring branded and consistent communication.
-5.  **Team and Collaboration Support:** Providing foundational bindings for `TeamUser` and `TeamInvitation` models, indicating support for collaborative features where users can be part of organizational teams.
-6.  **Event-Driven User Flows:** Leveraging an event-driven architecture to manage user-related actions, allowing for decoupled and extensible responses to user events.
-
-## 💡 Philosophy & Zen (Guiding Principles)
-
-The `User` module is built upon a philosophy that prioritizes security, flexibility, and a high-quality user experience:
-
-*   **Security as an Absolute Prerequisite:** A "security-first" mindset permeates the module's design. This is evident in the robust password policies, secure API authentication via Passport, and careful handling of user credentials and sensitive operations. Protecting user data and access is considered non-negotiable.
-*   **Uncompromising Customization and Adaptability:** The module offers extensive customization points for authentication flows, password strength, and user communication. This flexibility allows the application to meet specific business needs, branding guidelines, and evolving security requirements without being constrained by framework defaults.
-*   **Extensible Authentication Landscape:** Designed to be highly extensible, the module supports a variety of authentication strategies. The integration of Laravel Passport and Socialite provides a clear path for future expansion to other authentication providers or custom authentication methods.
-*   **User-Centric Experience with Brand Consistency:** Beyond functionality, the module focuses on the user's journey. Custom email notifications, secure password resets, and streamlined verification processes are crafted to provide a secure, intuitive, and brand-consistent experience, minimizing friction for the user.
-*   **Architectural Harmony (Aligning with `Xot`):** By extending `XotBaseServiceProvider`, the `User` module integrates seamlessly into the overarching `Xot` architectural framework. This ensures that user-related services adhere to the project's standardized patterns for service providers and leverage core functionalities.
-*   **"Politics" (Defining User Identity and Authority):** The "politics" of the `User` module are concerned with establishing and governing user identity and their authority within the application. It dictates who users are, what roles they embody, and what actions they are permitted to perform, thus forming the foundational layer of access control and system governance.
-*   **"Religion" (The User as the Central Entity):** The module's "religion" is the unwavering belief that the user is the primary actor and ultimate focus of the application. Every feature, piece of data, and interaction ultimately relates back to a user. This conviction drives the meticulous attention to user security, privacy, and the integrity of their digital identity.
-*   **"Zen" (Seamless and Secure Digital Identity Management):** The "zen" of the `User` module is to cultivate an experience of effortless and secure digital identity management. It aims for a smooth, predictable, and trustworthy lifecycle for every user, from their first interaction to ongoing engagement. This eliminates anxiety around account security and access, allowing users to interact with the application with confidence and peace of mind.
-
-## 🤝 Business Logic (Core Aspect)
-
-The `User` module implements fundamental business logic for **identity and access management (IAM)**, which is critical for the application's functionality and security posture. It directly supports:
-
-*   **User Onboarding and Lifecycle Management:** Handling new user registration, email verification, and the ongoing management of user profiles.
-*   **Access Control and Data Security:** Implementing authentication and authorization policies that govern who can access which parts of the application and its data.
-*   **Collaboration and Community Features:** Providing the underlying structure for team creation, invitations, and user-to-user interactions within a defined organizational context.
-*   **Customer Relationship and Engagement:** Facilitating customized communication channels and ensuring a professional, branded interaction with users at key touchpoints.
-
-The `User` module is thus not merely a utility but a critical component that underpinning the application's security, usability, and its ability to deliver value to its end-users.
-
-## 🤖 Integration with Model Context Protocol (MCP)
-
-The `User` module, as the guardian of identity and access, significantly benefits from integration with Model Context Protocol (MCP) servers. MCPs provide enhanced capabilities for understanding, managing, and debugging user-related contexts, which aligns perfectly with `User`'s philosophy of security, control, and developer experience.
-
-### Alignment with `User`'s Philosophy:
-
-*   **Security First:** MCPs can assist in auditing user access patterns or changes to security configurations. Laravel Boost can help inspect user authentication status or roles within specific contexts, enhancing security validation during development and testing.
-*   **Customization & Adaptability:** MCPs can store and retrieve knowledge about custom authentication flows or password policies, making it easier to manage and extend these customizations. Memory MCP can track common customization patterns.
-*   **Developer Experience (DX) Enhancement:** Debugging authentication and authorization issues can be complex. MCPs, particularly Laravel Boost, offer powerful insights into the user's session, permissions, and related data, drastically simplifying debugging and development of user-centric features.
-*   **"Zen" (Seamless and Secure Digital Identity Management):** MCPs contribute to this zen by providing tools that make it easier to verify, debug, and understand the user's digital identity lifecycle, leading to a more reliable and secure user management system.
-
-### Key MCPs for `User`'s Operations:
-
-1.  **Laravel Boost (MCP)**: Invaluable for inspecting authenticated user data, roles, permissions, and API tokens directly from the console. It can help debug authentication flows, user-specific configurations, and authorization issues.
-2.  **Filesystem (MCP)**: Useful for verifying user-related configuration files, such as custom password rule definitions or Socialite provider settings.
-3.  **Memory (MCP)**: Can store and retrieve best practices for user security, common authentication pitfalls, and architectural decisions related to user management, enhancing knowledge transfer and consistency.
-4.  **Git (MCP)**: Aids in reviewing changes to authentication logic, authorization policies, or user model modifications, ensuring secure and compliant development practices.
-5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex authorization cascades or multi-factor authentication flows, helping to break down and understand intricate security mechanisms.
-
-<<<<<<< HEAD
-By leveraging these MCPs, the `User` module can ensure its critical role in managing digital identities is more efficient, secure, and transparent, ultimately contributing to a more robust and trustworthy application.
-=======
-By leveraging these MCPs, the `User` module can ensure its critical role in managing digital identities is more efficient, secure, and transparent, ultimately contributing to a more robust and trustworthy application.
->>>>>>> 6ed19256f (.)

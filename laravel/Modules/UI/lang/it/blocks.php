@@ -55,7 +55,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Blocks',
     'plural_label' => 'Blocks (Plurale)',
     'fields' => [
@@ -89,6 +88,4 @@ return [
             'label' => 'Elimina Blocks',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

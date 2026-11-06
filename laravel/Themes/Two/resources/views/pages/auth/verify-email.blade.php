@@ -1,7 +1,2 @@
-<x-filament::page>
-    <div class="min-h-screen flex flex-col sm:justify-center items-center pt-6 sm:pt-0 bg-gray-100">
-        <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
-            <livewire:user::auth.verify-email-widget />
-        </div>
-    </div>
-</x-filament::page>
+{{-- The verification flow is owned by User; this route is a compatibility entry point. --}}
+@include('user::pages.auth.verify')

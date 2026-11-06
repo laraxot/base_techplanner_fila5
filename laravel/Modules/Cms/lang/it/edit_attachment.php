@@ -14,7 +14,6 @@ return [
             'label' => 'cancel',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Edit Attachment',
     'plural_label' => 'Edit Attachment (Plurale)',
     'navigation' => [
@@ -26,7 +25,7 @@ return [
         ],
         'label' => 'Edit Attachment',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -48,6 +47,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

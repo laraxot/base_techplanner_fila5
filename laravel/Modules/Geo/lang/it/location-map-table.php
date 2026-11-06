@@ -26,7 +26,6 @@ return [
         'edit_coordinates' => 'Modifica coordinate',
         'export' => 'Esporta dati',
     ],
-<<<<<<< HEAD
     'label' => 'Location Map Table',
     'plural_label' => 'Location Map Table (Plurale)',
     'fields' => [
@@ -49,6 +48,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

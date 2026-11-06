@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Analisi Modelli, Factory e Seeder - Modulo Lang"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Analisi Modelli, Factory e Seeder - Modulo Lang
 
 ## Riepilogo Modelli
@@ -32,7 +46,10 @@
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
-=======
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: [DATE]*
+*Ultimo aggiornamento: 2025-01-06*
+*Ultimo aggiornamento: 2025-01-06*

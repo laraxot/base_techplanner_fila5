@@ -1,3 +1,11 @@
+---
+title: "Installazione Iniziale il progetto"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "installazione iniziale il progetto xot"
+---
 # Installazione Iniziale il progetto
 
 ## Prerequisiti
@@ -23,20 +31,9 @@ composer global require laravel/installer
 È fondamentale creare il progetto nella posizione corretta:
 
 ```bash
-<<<<<<< HEAD
 cd var/www/html/<nome progetto>/laravel`
 > - NON utilizzare variazioni come `laravel new <nome progetto>` o `laravel new laravel --version=X.Y`
 > - NON creare il progetto in `public_html` o altre posizioni
-=======
-cd /var/www/html/<nome progetto>
-laravel new laravel
-```
-
-> ⚠️ **IMPORTANTE**:
-> - Il progetto DEVE essere installato in `/var/www/html/<nome progetto>/laravel`
-> - NON utilizzare variazioni come `laravel new <nome progetto>` o `laravel new laravel --version=X.Y`
-> - NON creare il progetto in `/var/www/html/<nome progetto>/public_html` o altre posizioni
->>>>>>> 6ed19256f (.)
 
 ### 3. Installazione Laravel Modules
 
@@ -81,11 +78,7 @@ Verificare che il file `composer.json` NON contenga la riga `"Modules\\": "Modul
 ### 7. Installazione BashScripts
 
 ```bash
-<<<<<<< HEAD
 git subtree add -P bashscripts git@github.com:laraxot/bashscripts_fila5.git dev --squash
-=======
-git subtree add -P bashscripts git@github.com:laraxot/bashscripts_fila3.git dev --squash
->>>>>>> 6ed19256f (.)
 ```
 
 ## Correzione Installazione Errata
@@ -93,11 +86,7 @@ git subtree add -P bashscripts git@github.com:laraxot/bashscripts_fila3.git dev 
 Se Laravel è stato installato nella posizione errata, utilizzare questo comando per spostarlo:
 
 ```bash
-<<<<<<< HEAD
 mv public_html/laravel laravel
-=======
-mv /var/www/html/<nome progetto>/public_html/laravel /var/www/html/<nome progetto>/laravel
->>>>>>> 6ed19256f (.)
 ```
 
 ## Verifica Installazione
@@ -105,11 +94,7 @@ mv /var/www/html/<nome progetto>/public_html/laravel /var/www/html/<nome progett
 Per verificare che l'installazione sia corretta:
 
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/<nome progetto>/laravel
->>>>>>> 6ed19256f (.)
 php artisan --version
 ```
 
@@ -126,8 +111,4 @@ Dopo l'installazione iniziale, procedere con:
 ## Collegamenti tra versioni di installazione-iniziale.md
 * [installazione-iniziale.md](docs/installazione-iniziale.md)
 * [installazione-iniziale.md](docs/tecnico/installazione-iniziale.md)
-<<<<<<< HEAD
 * [installazione-iniziale.md](../../../Xot/project_docs/implementation/installazione-iniziale.md)
-=======
-* [installazione-iniziale.md](../../../Xot/project_docs/implementation/installazione-iniziale.md)
->>>>>>> 6ed19256f (.)

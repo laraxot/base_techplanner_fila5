@@ -1,12 +1,33 @@
+---
+title: "Factory Mancanti - Modulo User"
+type: concept
+tags: [missing, factories, audit]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "missing-factories-audit factory mancanti - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Factory Mancanti - Modulo User
 
 ## Situazione Critica Identificata
 
-<<<<<<< HEAD
 **Data audit**: 2025-01-06  
-=======
-**Data audit**: 2025-01-06
->>>>>>> 6ed19256f (.)
 **Gravità**: CRITICA - 17 factory mancanti su 33 models
 
 ## Models senza Factory
@@ -16,21 +37,13 @@
 - **Scopo**: Gestione autenticazioni utenti
 - **Priorità**: ALTA
 
-<<<<<<< HEAD
 ### 2. DeviceProfileFactory.php  
-=======
-### 2. DeviceProfileFactory.php
->>>>>>> 6ed19256f (.)
 - **Model**: DeviceProfile.php
 - **Scopo**: Profili dispositivi utenti
 - **Priorità**: MEDIA
 
 ### 3. DeviceUserFactory.php
-<<<<<<< HEAD
 - **Model**: DeviceUser.php  
-=======
-- **Model**: DeviceUser.php
->>>>>>> 6ed19256f (.)
 - **Scopo**: Associazione dispositivi-utenti
 - **Priorità**: MEDIA
 
@@ -41,11 +54,7 @@
 
 ### 5. NotificationFactory.php
 - **Model**: Notification.php
-<<<<<<< HEAD
 - **Scopo**: Notifiche utenti  
-=======
-- **Scopo**: Notifiche utenti
->>>>>>> 6ed19256f (.)
 - **Priorità**: ALTA
 
 ### 6. OauthAccessTokenFactory.php
@@ -58,11 +67,7 @@
 - **Scopo**: Codici autorizzazione OAuth
 - **Priorità**: MEDIA
 
-<<<<<<< HEAD
 ### 8. OauthClientFactory.php  
-=======
-### 8. OauthClientFactory.php
->>>>>>> 6ed19256f (.)
 - **Model**: OauthClient.php
 - **Scopo**: Client OAuth registrati
 - **Priorità**: ALTA
@@ -109,11 +114,7 @@
 
 ### 17. TenantUserFactory.php
 - **Model**: TenantUser.php
-<<<<<<< HEAD
 - **Scopo**: Associazione tenant-utenti  
-=======
-- **Scopo**: Associazione tenant-utenti
->>>>>>> 6ed19256f (.)
 - **Priorità**: ALTA
 
 ## Impatto
@@ -123,11 +124,7 @@
 - Test di integrazione fallimentari
 - Coverage insufficiente
 
-<<<<<<< HEAD
 ### Sviluppo Compromesso  
-=======
-### Sviluppo Compromesso
->>>>>>> 6ed19256f (.)
 - Seeding database difficoltoso
 - Demo data non generabili
 - Sviluppo locale problematico
@@ -135,22 +132,14 @@
 ## Azioni Richieste
 
 1. **IMMEDIATA**: Creazione factory mancanti ad alta priorità
-<<<<<<< HEAD
 2. **BREVE TERMINE**: Creazione factory rimanenti  
-=======
-2. **BREVE TERMINE**: Creazione factory rimanenti
->>>>>>> 6ed19256f (.)
 3. **MEDIO TERMINE**: Revisione completa factory esistenti
 4. **LUNGO TERMINE**: Automazione controllo factory
 
 ## Checklist Correzione
 
 - [ ] AuthenticationFactory.php
-<<<<<<< HEAD
 - [ ] MembershipFactory.php  
-=======
-- [ ] MembershipFactory.php
->>>>>>> 6ed19256f (.)
 - [ ] NotificationFactory.php
 - [ ] OauthAccessTokenFactory.php
 - [ ] OauthClientFactory.php
@@ -169,24 +158,9 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [README Modulo User](./readme.md)
-- [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
-- [Models Documentation](./models/readme.md)
-
----
-**Errore gravissimo da non ripetere mai più**  
-=======
->>>>>>> 6ed19256f (.)
 - [README Modulo User](./README.md)
-- [Factory Audit Root](../../../project_docs/factory-audit-2025.md)
+- [Factory Audit Root](../../../../docs/project/factory-audit-2025.md)
 - [Models Documentation](./models/README.md)
 
 ---
-<<<<<<< HEAD
 **Errore gravissimo da non ripetere mai più**  
-*Ultimo aggiornamento: 2025-01-06*
-=======
-**Errore gravissimo da non ripetere mai più**
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

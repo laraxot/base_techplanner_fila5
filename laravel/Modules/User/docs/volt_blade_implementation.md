@@ -1,7 +1,21 @@
+---
+title: "Implementazione dei Form con Widget Filament"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "implementazione dei form con widget filament user"
+---
+# Implementazione dei Form con Widget Filament
+
+## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
+- [Convenzioni Path](./path_conventions.md)
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
-- [Analisi dell'Errore di Implementazione](./VOLT_BLADE_IMPLEMENTATION_ERROR.md)
+- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
+- [Convenzioni Path](./path_conventions.md)
+- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+- [Analisi dell'Errore di Implementazione](./volt_blade_implementation_error.md)
 
 ## Introduzione
 
@@ -192,7 +206,7 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Form;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class RegisterFormWidget extends XotBaseWidget
@@ -280,12 +294,6 @@ L'utilizzo di widget Filament per l'implementazione dei form  offre un approccio
 ## Collegamenti Correlati
 - [Documentazione Filament Widgets](https://filamentphp.com/docs/3.x/panels/widgets)
 - [Best Practices di Sicurezza](./SECURITY_BEST_PRACTICES.md)
-- [Gestione Sessione](./SESSION_MANAGEMENT.md)
+- [Gestione Sessione](./session_management.md)
+- [Gestione Sessione](./session_management.md)
 - [Tema One Documentation](../../Themes/One/docs/README.md) 
----
-module: theme
-topic: volt_blade_implementation
-canonical: ../../../Themes/docs/shared-components/volt_blade_implementation.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/volt_blade_implementation.md

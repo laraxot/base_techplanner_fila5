@@ -6,7 +6,7 @@ tags: [code-audit, redundancy, dry, second-brain, theme]
 created: "2026-05-26"
 updated: "2026-05-26"
 owner: "Zero"
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
+issue: "https://github.com/provtv/<repo progetto>/issues/150"
 ---
 
 # Code redundancy audit — Zero
@@ -65,6 +65,14 @@ Ridurre rumore, duplicazione e ambiguita' nel codice di questo theme, senza perd
 - AGENTS.md/SKILL.md devono restare manifest leggeri, con YAML/front matter e routing on-demand.
 - I descrittori architetturali navigabili riducono i passi di localizzazione: ogni owner dovrebbe avere mappa scopo -> file chiave.
 - AI utile = recupero mirato, non pre-caricamento: report atomici, QMD, issue e log.
+
+## Moduli Ptv / Sigma (puntatore DRY)
+
+- [Ptv — audit ridondanza](../../../Modules/Ptv/docs/wiki/redundancy-audit.md)
+- [Catalogo superficie Ptv↔Sigma](../../../Modules/Ptv/docs/wiki/ptv-sigma-shared-surface-catalog.md)
+- [Policy ownership (Xot)](../../../Modules/Xot/docs/wiki/concepts/ptv-sigma-redundancy-ownership.md)
+
+Issue tema: **#3** Discussione ridondanza. Campagna mono: **#162**.
 
 ## Prossimo passo
 

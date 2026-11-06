@@ -9,10 +9,7 @@ return [
             'placeholder' => 'html_layout_path',
             'helper_text' => 'html_layout_path',
             'description' => 'html_layout_path',
-<<<<<<< HEAD
-            'tooltip' => '',
-        ],
-    ],
+            'tooltip' => '']],
     'label' => 'Html Layout Path Select',
     'plural_label' => 'Html Layout Path Select (Plurale)',
     'navigation' => [
@@ -20,23 +17,14 @@ return [
         'plural' => 'Html Layout Path Select',
         'group' => [
             'name' => 'General',
-            'description' => 'General Settings',
-        ],
+            'description' => 'General Settings'],
         'label' => 'Html Layout Path Select',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
+        'icon' => 'heroicon-o-collection'],
     'actions' => [
         'create' => [
-            'label' => 'Crea Html Layout Path Select',
-        ],
+            'label' => 'Crea Html Layout Path Select'],
         'edit' => [
-            'label' => 'Modifica Html Layout Path Select',
-        ],
+            'label' => 'Modifica Html Layout Path Select'],
         'delete' => [
-            'label' => 'Elimina Html Layout Path Select',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
-];
+            'label' => 'Elimina Html Layout Path Select']]];

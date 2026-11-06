@@ -17,6 +17,9 @@ class Get
 {
     use QueueableAction;
 
+    /**
+     * @param  array<string, mixed>  $view_params
+     */
     public function execute(string $name, string $type, array $view_params): NotifyThemeData
     {
         $xotData = XotData::make();
@@ -124,7 +127,6 @@ class Get
             'from' => $theme->from,
             'subject' => $subject,
             'body_html' => $body_html,
-            'view_params' => $view_params,
-        ]);
+            'view_params' => $view_params]);
     }
 }

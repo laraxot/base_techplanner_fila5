@@ -1,39 +1,50 @@
+---
+title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
+type: concept
+tags: [header, language, avatar, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "header-language-avatar-implementation implementazione del selettore di lingua e avatar utente nell'header"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Implementazione Logout](./logout_blade_implementation.md)
-=======
->>>>>>> 6ed19256f (.)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Implementazione Logout](./logout-blade-implementation.md)
+- [Convenzioni Path](./path-conventions-user.md)
+- [Volt Folio Logout](./volt-folio-logout-panoramica.md)
+- [Implementazione Logout](./logout-blade-implementation-posizione-corretta.md)
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questo documento descrive come implementare nell'header di <nome progetto>:
-=======
-Questo documento descrive come implementare nell'header di SaluteOra:
->>>>>>> 6ed19256f (.)
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
 
 ## Struttura Attuale dell'Header
 
-<<<<<<< HEAD
 L'header di <nome progetto> è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
 - **Configurazione JSON**: `/config/local/<nome progetto>/database/content/sections/1.json`
-=======
-L'header di SaluteOra è gestito tramite:
-- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
-- **Configurazione JSON**: `/config/local/saluteora/database/content/sections/1.json`
->>>>>>> 6ed19256f (.)
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
 - Un logo
@@ -223,11 +234,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
                     "alt": "Logo <nome progetto>",
-=======
-                    "alt": "Logo SaluteOra",
->>>>>>> 6ed19256f (.)
                     "width": 150,
                     "height": 32
                 }
@@ -301,11 +308,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
                     "alt": "<nome progetto> Logo",
-=======
-                    "alt": "SaluteOra Logo",
->>>>>>> 6ed19256f (.)
                     "width": 150,
                     "height": 32
                 }
@@ -404,39 +407,25 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Implementazione Logout](./logout_blade_implementation.md)
-=======
->>>>>>> 6ed19256f (.)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Implementazione Logout](./LOGOUT_BLADE_IMPLEMENTATION.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Volt Folio Logout](./volt-folio-logout.md)
+- [Implementazione Logout](./logout-blade-implementation.md)
+- [Convenzioni Path](./path-conventions-user.md)
+- [Volt Folio Logout](./volt-folio-logout-panoramica.md)
+- [Implementazione Logout](./logout-blade-implementation-posizione-corretta.md)
 
 ## Panoramica
 
-<<<<<<< HEAD
 Questo documento descrive come implementare nell'header di <nome progetto>:
-=======
-Questo documento descrive come implementare nell'header di SaluteOra:
->>>>>>> 6ed19256f (.)
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
 
 ## Struttura Attuale dell'Header
 
-<<<<<<< HEAD
 L'header di <nome progetto> è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
 - **Configurazione JSON**: `/config/local/<nome progetto>/database/content/sections/1.json`
-=======
-L'header di SaluteOra è gestito tramite:
-- **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
-- **Configurazione JSON**: `/config/local/saluteora/database/content/sections/1.json`
->>>>>>> 6ed19256f (.)
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
 - Un logo
@@ -626,11 +615,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
                     "alt": "Logo <nome progetto>",
-=======
-                    "alt": "Logo SaluteOra",
->>>>>>> 6ed19256f (.)
                     "width": 150,
                     "height": 32
                 }
@@ -704,11 +689,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-<<<<<<< HEAD
                     "alt": "<nome progetto> Logo",
-=======
-                    "alt": "SaluteOra Logo",
->>>>>>> 6ed19256f (.)
                     "width": 150,
                     "height": 32
                 }
@@ -803,8 +784,4 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
 
 - [Documentazione Alpine.js](https://alpinejs.dev/) - Per le interazioni dropdown
 - [Documentazione Filament](https://filamentphp.com/docs) - Per i componenti UI
-<<<<<<< HEAD
 - [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization) - Per la gestione delle lingue
-=======
-- [Documentazione Laravel Localization](https://laravel.com/docs/10.x/localization) - Per la gestione delle lingue
->>>>>>> 6ed19256f (.)

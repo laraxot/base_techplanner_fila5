@@ -1,3 +1,11 @@
+---
+title: "Temi in il progetto"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "temi in il progetto xot"
+---
 # Temi in il progetto
 
 il progetto utilizza un sistema di temi basato su Filament 3.3. Ogni tema è un pacchetto Laravel indipendente che può essere installato e configurato separatamente.
@@ -87,10 +95,5 @@ Per personalizzare un tema:
 * [themes.md](../../../Xot/project_docs/themes.md)
 * [themes.md](../../../Cms/project_docs/frontoffice/themes.md)
 
-<<<<<<< HEAD
 * [README.md Tema One](laravel/Themes/One/project_docs/README.md)
 * [Convenzioni Namespace Tema One](laravel/Themes/One/project_docs/namespace-conventions.md)b6f667c (.)
-=======
-* [README.md Tema One](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Themes/One/project_docs/README.md)
-* [Convenzioni Namespace Tema One](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Themes/One/project_docs/namespace-conventions.md)b6f667c (.)
->>>>>>> 6ed19256f (.)

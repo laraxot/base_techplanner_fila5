@@ -1,3 +1,15 @@
+---
+title: "laravel sushi guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel sushi guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # Laravel Sushi: Guida Completa
 
 ## Cos'è Laravel Sushi?
@@ -97,32 +109,17 @@ I modelli Sushi possono avere relazioni con altri modelli Eloquent standard:
 class Province extends Model
 {
     use Sushi;
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     protected $rows = [
         ['id' => 1, 'code' => 'MI', 'name' => 'Milano', 'region_id' => 1],
         ['id' => 2, 'code' => 'RM', 'name' => 'Roma', 'region_id' => 2],
     ];
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     public function region()
     {
         return $this->belongsTo(Region::class);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     public function comuni()
     {
         return $this->hasMany(Comune::class);
@@ -223,8 +220,4 @@ Rappresenta un equilibrio ottimale tra la semplicità degli array PHP e la poten
 
 - [Repository ufficiale di Laravel Sushi](https://github.com/calebporzio/sushi)
 - [Documentazione di Laravel Eloquent](https://laravel.com/project_docs/eloquent)
-<<<<<<< HEAD
 - [Estensione PDO SQLite](https://www.php.net/manual/en/ref.pdo-sqlite.php)
-=======
-- [Estensione PDO SQLite](https://www.php.net/manual/en/ref.pdo-sqlite.php)
->>>>>>> 6ed19256f (.)

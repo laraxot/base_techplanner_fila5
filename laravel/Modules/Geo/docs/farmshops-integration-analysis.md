@@ -1,11 +1,21 @@
+---
+title: "farmshops integration analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "farmshops integration analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🗺️ Farmshops.eu Integration Analysis
 
-**Date:** 2025-10-02
 **Module:** Geo
 **Status:** Analysis & Proposal
 
 ---
-
 ## 📋 Executive Summary
 
 **Farmshops.eu** è un progetto open-source che visualizza su mappa interattiva negozi di fattoria, distributori automatici di latte/cibo e mercati diretti utilizzando dati da OpenStreetMap.
@@ -25,11 +35,7 @@
 | **Linguaggio** | JavaScript |
 | **Stars** | 40 |
 | **Forks** | 10 |
-| **Ultimo Update** | 2025-09-23 |
-<<<<<<< HEAD
 | **Ultimo Update** | [DATE] |
-=======
->>>>>>> 6ed19256f (.)
 | **Homepage** | https://farmshops.eu |
 
 ### Stack Tecnologico
@@ -620,17 +626,9 @@ Realtà aumentata per visualizzare punti di interesse tramite fotocamera smartph
 ---
 
 **📝 Documento preparato da:** Super Mucca 🐮
-**📅 Data:** 2025-10-02
-<<<<<<< HEAD
 **📅 Data:** [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **📧 Contatto:** geo-team@fixcity.com
 
 ---
 
-<<<<<<< HEAD
 *Prossimi passi: Creare POC (Proof of Concept) con subset di dati per validare approccio.*
-=======
-*Prossimi passi: Creare POC (Proof of Concept) con subset di dati per validare approccio.*
->>>>>>> 6ed19256f (.)

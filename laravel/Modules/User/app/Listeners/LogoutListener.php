@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/rappasoft/laravel-authentication-log/blob/main/src/Listeners/LogoutListener.php
  */
@@ -9,9 +8,12 @@ declare(strict_types=1);
 namespace Modules\User\Listeners;
 
 use Illuminate\Auth\Events\Logout;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Modules\User\Actions\Authentication\GetAuthenticationLogQueryForAuthenticatableAction;
 use Modules\User\Actions\GetCurrentDeviceAction;
+use Modules\User\Contracts\UserContract;
 use Modules\User\Contracts\HasAuthentications;
 use Modules\User\Models\DeviceUser;
 
@@ -62,7 +64,7 @@ class LogoutListener
             }
 
             // Gestione delle autenticazioni
-            if ($event->user instanceof HasAuthentications) {
+            if ($event->user instanceof UserContract && $event->user instanceof HasAuthentications) {
                 try {
                     $event
                         ->user
@@ -81,11 +83,7 @@ class LogoutListener
             }
 
             // Log dell'evento
-<<<<<<< HEAD
             Log::debug('Logout effettuato', [
-=======
-            Log::info('Logout effettuato', [
->>>>>>> 6ed19256f (.)
                 'user_id' => $event->user->getAuthIdentifier(),
                 'device_id' => $device->id,
                 'timestamp' => now(),
@@ -104,11 +102,9 @@ class LogoutListener
      */
     public function forgetRememberTokens(Logout $event): void
     {
-        if ($event->user && $event->user instanceof HasAuthentications) {
+        if ($event->user instanceof UserContract && $event->user instanceof Model) {
             try {
-                $event
-                    ->user
-                    ->authentications()
+                app(GetAuthenticationLogQueryForAuthenticatableAction::class)->execute($event->user)
                     ->whereNotNull('remember_token')
                     ->update([
                         'remember_token' => null,

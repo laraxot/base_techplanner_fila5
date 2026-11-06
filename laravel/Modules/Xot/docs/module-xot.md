@@ -1,12 +1,13 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: module-xot
-canonical: ../../../Themes/docs/shared-components/module-xot.md
+title: "Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Modulo Xot"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/module-xot.md
-=======
 # Modulo Xot
 
 ## Informazioni Generali
@@ -114,5 +115,4 @@ composer format        # Formatta il codice
 - Pest
 
 ## Changelog
-Le modifiche vengono tracciate nel repository GitHub.
->>>>>>> 6ed19256f (.)
+Le modifiche vengono tracciate nel repository GitHub. 

@@ -1,3 +1,15 @@
+---
+title: "monitoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "monitoring"
+issues: []
+discussions: []
+status: draft
+---
+
 # Monitoraggio
 
 ## Pacchetti Utilizzati
@@ -86,22 +98,12 @@ Artisan::call('queue:forget', ['id' => 'all']);
 ### Versione HEAD
 
 ## Collegamenti tra versioni di monitoring.md
-* [monitoring.md](../../../Job/docs/packages/monitoring.md)
-* [monitoring.md](../../../../Themes/One/docs/monitoring.md)
-<<<<<<< HEAD
 * [monitoring.md](../../../job/docs/packages/monitoring.md)
 * [monitoring.md](../../../../themes/one/docs/monitoring.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ---
-
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

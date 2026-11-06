@@ -1,3 +1,15 @@
+---
+title: "documentation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation"
+issues: []
+discussions: []
+status: draft
+---
+
 # Documentazione CMS
 
 ## Stato
@@ -99,12 +111,6 @@ La documentazione dettagliata degli endpoint, esempi e Swagger/OpenAPI sono in f
 
 ## Collegamenti tra versioni di documentation.md
 * [documentation.md](docs/rules/documentation.md)
-* [documentation.md](laravel/Modules/Xot/docs/documentation.md)
-* [documentation.md](laravel/Modules/Xot/docs/guidelines/documentation.md)
-* [documentation.md](laravel/Modules/Cms/docs/roadmap/features/documentation.md)
-<<<<<<< HEAD
 * [documentation.md](laravel/modules/xot/docs/documentation.md)
-* [documentation.md](laravel/modules/xot/docs/guidelines/documentation.md)
-* [documentation.md](laravel/modules/cms/docs/roadmap/features/documentation.md)
-=======
->>>>>>> 6ed19256f (.)
+* [documentation.md](../../../../../Xot/docs/guidelines/documentation.md)
+* [documentation.md](../../../roadmap/features/documentation.md)

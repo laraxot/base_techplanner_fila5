@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Notify\Actions\NotifyTheme\Get;
 use Modules\Notify\Datas\AttachmentData;
-use Modules\Xot\Services\HtmlService;
+use Modules\Xot\Actions\Html\HtmlToPdfAction;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -19,6 +19,9 @@ class Pdf
 {
     use QueueableAction;
 
+    /**
+     * @param  array<string, mixed>  $view_params
+     */
     public function execute(string $post_type, array $view_params): AttachmentData
     {
         $notify_theme_data = app(Get::class)->execute($post_type, 'pdf', $view_params);
@@ -31,7 +34,7 @@ class Pdf
         Assert::string($file_name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
         $file_path = Storage::disk('cache')->path($file_name);
 
-        HtmlService::toPdf(
+        app(HtmlToPdfAction::class)->execute(
             filename: $file_path,
             html: $html,
             out: 'file',
@@ -41,7 +44,6 @@ class Pdf
         return AttachmentData::from([
             'path' => $file_path,
             'as' => $file_name,
-            'mime' => 'application/pdf',
-        ]);
+            'mime' => 'application/pdf']);
     }
 }

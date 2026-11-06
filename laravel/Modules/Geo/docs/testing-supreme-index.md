@@ -1,3 +1,15 @@
+---
+title: "testing supreme index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing supreme index"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🎯 INDICE SUPREMO: Testing Business Behavior Rules
 
 ## LA REGOLA PIÙ IMPORTANTE DI TUTTO IL PROGETTO
@@ -23,11 +35,7 @@ Questa è la regola fondamentale che ha precedenza ASSOLUTA su qualsiasi altra c
 - **[Laravel AI Guidelines - Testing Priority](../laravel/.ai/guidelines/testing-priority-rule.md)**
 
 ### 📁 Regole per Modulo
-- **[<nome progetto> Testing Guidelines](../laravel/Modules/<nome progetto>/docs/testing-guidelines.md)**
-<<<<<<< HEAD
 - **[<nome progetto> Testing Guidelines](../laravel/modules/<nome progetto>/docs/testing-guidelines.md)**
-=======
->>>>>>> 6ed19256f (.)
 
 ### ⚙️ Regole Sistema
 - **[Windsurf Rules - Testing Business Behavior](../.windsurf/rules/testing-business-behavior-supreme.mdc)**
@@ -108,13 +116,7 @@ Queste regole si applicano a:
 - **TUTTI i framework** utilizzati (Pest, PHPUnit, Filament, Livewire)
 
 ---
-
 **Questa è la REGOLA SUPREMA del progetto <nome progetto> e ha precedenza su qualsiasi altra considerazione di testing.**
 
-**Ultimo aggiornamento**: Gennaio 2025
 **Status**: REGOLA SUPREMA E NON NEGOZIABILE
-<<<<<<< HEAD
 **Applicabilità**: UNIVERSALE - tutto il progetto
-=======
-**Applicabilità**: UNIVERSALE - tutto il progetto
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "view components"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "view components"
+issues: []
+discussions: []
+status: draft
+---
+
 # View Components
 
 ## Panoramica
@@ -107,9 +119,4 @@ class Section extends Component
 ## Collegamenti
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Blocchi](../blocks/README.md)
-- [Documentazione Root](../../../../docs/components.md)
-<<<<<<< HEAD
-- [Documentazione Blocchi](../blocks/readme.md)
-- [Documentazione Root](../../../../../docs/components.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Documentazione Root](../components.md)

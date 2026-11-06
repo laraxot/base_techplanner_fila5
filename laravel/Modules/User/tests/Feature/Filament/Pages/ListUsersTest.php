@@ -2,170 +2,141 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\User\Tests\Feature\Filament\Pages;
-
-=======
->>>>>>> 6ed19256f (.)
 use Filament\Actions\Action;
-use Filament\Facades\Filament;
+use Filament\Actions\DeleteBulkAction;
+use Filament\Actions\ExportBulkAction;
 use Filament\Tables\Columns\TextColumn;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Actions\ChangePasswordAction;
 use Modules\User\Filament\Resources\UserResource;
-use Modules\User\Filament\Resources\UserResource\Pages\BaseListUsers;
 use Modules\User\Filament\Resources\UserResource\Pages\ListUsers;
+use Modules\User\Filament\Resources\UserResource\Tables\UsersTable;
+use Modules\User\Filament\Resources\UserResource\Widgets\UserOverview;
 use Modules\User\Models\User;
-use Modules\User\Providers\Filament\AdminPanelProvider;
-use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use Tests\TestCase;
 
 uses(TestCase::class);
 
-beforeEach(function (): void {
-    // Ensure the panel is registered
-    try {
-        $panel = Filament::getPanel('user::admin');
-    } catch (Exception $e) {
-        $panelProvider = new AdminPanelProvider(app());
-        $panel = $panelProvider->panel(Filament::getPanelRegistry()->makePanel('user::admin'));
-        Filament::registerPanel($panel);
-    }
-    Filament::setCurrentPanel($panel);
-
-    $this->listUsersPage = new ListUsers();
-
-    // Create some test users
-    $this->users = User::factory()
-        ->count(3)
-        ->create([
-            'type' => UserType::MasterAdmin,
-        ]);
-});
+/**
+ * La tabella utenti e' costruita da `UsersTable`: i `getTable*()` della pagina `ListUsers`
+ * sono `final` e restituiscono `[]` (vedi `XotBaseListRecords`), quindi non descrivono la tabella.
+ */
+function usersTable(): UsersTable
+{
+    return app(UsersTable::class);
+}
 
 test('list users page has correct resource', function (): void {
     expect(ListUsers::getResource())->toBe(UserResource::class);
 });
 
-test('list users page extends correct base class', function (): void {
-    expect($this->listUsersPage)
-        ->toBeInstanceOf(BaseListUsers::class);
-});
-
-test('list users page can be instantiated', function (): void {
-    expect($this->listUsersPage)->toBeInstanceOf(ListUsers::class);
-});
-
 test('list users page has correct table columns', function (): void {
-    $columns = $this->listUsersPage->getTableColumns();
+    $columns = usersTable()->getTableColumns();
 
-    expect($columns)->toHaveKey('name');
-    expect($columns)->toHaveKey('email');
+    expect($columns)->toHaveKeys(['name', 'email']);
 
-    // Test name column
-    $nameColumn = $columns['name'];
-    expect($nameColumn)->toBeInstanceOf(TextColumn::class);
-    expect($nameColumn->getName())->toBe('name');
-    expect($nameColumn->isSearchable())->toBeTrue();
-
-    // Test email column
-    $emailColumn = $columns['email'];
-    expect($emailColumn)->toBeInstanceOf(TextColumn::class);
-    expect($emailColumn->getName())->toBe('email');
-    expect($emailColumn->isSearchable())->toBeTrue();
+    foreach (['name', 'email'] as $name) {
+        $column = $columns[$name];
+        expect($column)->toBeInstanceOf(TextColumn::class)
+            ->and($column->getName())->toBe($name);
+    }
 });
 
 test('list users page has correct table filters', function (): void {
-    $filters = $this->listUsersPage->getTableFilters();
-
-    // Currently no filters are defined
-    expect($filters)->toBeArray();
-    expect($filters)->toHaveCount(0);
+    // Nessun filtro definito: UsersTable usa il default di HasXotTable.
+    expect(usersTable()->getTableFilters())->toBe([]);
 });
 
 test('list users page has correct table actions', function (): void {
-    $actions = $this->listUsersPage->getTableActions();
+    $actions = usersTable()->getTableActions();
 
-    // Debug output
-    // dump($actions);
+    expect($actions)->toHaveKeys(['change_password', 'deactivate'])
+        ->and($actions['change_password'])->toBeInstanceOf(ChangePasswordAction::class);
 
-    expect($actions)->toHaveKey('change_password');
-    expect($actions)->toHaveKey('change_password');
-    // expect($actions)->toHaveKey('deactivate');
-
-    // Test change password action
-    $changePasswordAction = $actions['change_password'];
-    expect($changePasswordAction)->toBeInstanceOf(ChangePasswordAction::class);
-
-    // Test deactivate action
-    /*
     $deactivateAction = $actions['deactivate'];
-    expect($deactivateAction)->toBeInstanceOf(Action::class);
-    expect($deactivateAction->getColor())->toBe('danger');
-    expect($deactivateAction->getIcon())->toBe('heroicon-o-trash');
-    */
+    Assert::assertInstanceOf(Action::class, $deactivateAction);
+    expect($deactivateAction->getColor())->toBe('danger')
+        ->and($deactivateAction->getIcon())->toBe('heroicon-o-trash');
 });
 
 test('list users page has correct header widgets', function (): void {
-    // getHeaderWidgets is protected and currently commented out in BaseListUsers
-    // So we can't test it directly on the instance without reflection
-    // And since it returns empty, the previous test expectation was wrong.
-    expect(true)->toBeTrue();
+    // `getHeaderWidgets()` e' protected: Filament lo legge internamente, qui lo si legge via Reflection.
+    $widgets = (new ReflectionMethod(ListUsers::class, 'getHeaderWidgets'))->invoke(new ListUsers());
+
+    expect($widgets)->toBe([UserOverview::class]);
 });
 
 test('list users page has correct bulk actions', function (): void {
-    // getTableBulkActions is available on BaseListUsers via inheritance/mixins effectively?
-    // Usually defined in ListRecords or InteractsWithTable.
-    // However, calling it might rely on table() being set up.
-    // For now, simpler test or skip if it's protected/complex.
-    expect(true)->toBeTrue();
+    $bulkActions = usersTable()->getTableBulkActions();
+
+    expect($bulkActions)->toHaveKeys(['delete', 'export'])
+        ->and($bulkActions['delete'])->toBeInstanceOf(DeleteBulkAction::class)
+        ->and($bulkActions['export'])->toBeInstanceOf(ExportBulkAction::class);
 });
 
 test('list users page can display users', function (): void {
-    $createdUserIds = $this->users->pluck('id');
-    $testUsers = User::whereIn('id', $createdUserIds)->get();
+    skipUnlessUsersTableReady();
 
-    expect($testUsers)->toHaveCount(3);
+    // La connessione `user` puo' contenere altri utenti: si contano solo quelli creati qui.
+    $created = User::factory()->count(3)->create(['type' => UserType::MasterAdmin]);
 
-    foreach ($testUsers as $user) {
-        expect($user)->toBeInstanceOf(User::class);
-        // Fix Enum check - use value comparison if type is string in DB/Accessor
-        if (is_string($user->type)) {
-            expect($user->type)->toBe(UserType::MasterAdmin->value);
-        } else {
-            expect($user->type)->toBe(UserType::MasterAdmin);
-        }
+    $users = User::whereIn('id', $created->modelKeys())->get();
+    expect($users)->toHaveCount(3);
+
+    foreach ($users as $user) {
+        // `users.type` non ha un cast enum: l'attributo e' la stringa del case.
+        expect($user->type)->toBe(UserType::MasterAdmin->value);
     }
 });
 
 test('list users page has correct navigation label', function (): void {
-    $label = $this->listUsersPage->getNavigationLabel();
-    expect($label)->not->toBeNull();
+    expect(ListUsers::getNavigationLabel())->not->toBeEmpty();
 });
 
 test('list users page has correct title', function (): void {
-    $title = $this->listUsersPage->getTitle();
-    expect($title)->not->toBeNull();
+    expect((new ListUsers())->getTitle())->not->toBeEmpty();
 });
 
 test('list users page has correct breadcrumbs', function (): void {
-    // Breadcrumbs might depend on routing parameters which are missing in simple instantiation
+    // Senza i parametri di rotta del tenant la generazione lancia: il test non e' applicabile.
     try {
-        $breadcrumbs = $this->listUsersPage->getBreadcrumbs();
-        expect($breadcrumbs)->toBeArray();
-    } catch (Exception $e) {
-        expect(true)->toBeTrue(); // Skip if fails due to routing
+        $breadcrumbs = (new ListUsers())->getBreadcrumbs();
+    } catch (Exception) {
+        $this->markTestSkipped('Breadcrumbs need route parameters not available in multi-tenant setup.');
     }
+
+    // Filament aggiunge sempre almeno il breadcrumb della pagina corrente.
+    expect($breadcrumbs)->not->toBeEmpty();
 });
 
 test('list users page can handle search', function (): void {
-    $columns = $this->listUsersPage->getTableColumns();
-    $nameColumn = $columns['name'];
-    $emailColumn = $columns['email'];
+    $columns = usersTable()->getTableColumns();
 
-    expect($nameColumn->isSearchable())->toBeTrue();
-    expect($emailColumn->isSearchable())->toBeTrue();
+    expect($columns['name']->isSearchable())->toBeTrue()
+        ->and($columns['email']->isSearchable())->toBeTrue();
 });
 
-// Removed tests for protected methods:
-// getTablePaginationPageOptions, getTableQuery, canSelectRecords, getTableLayout
-// getTableEmptyStateHeading, getTableActionsAlignment, getTableRecordsPerPageSelectOptions
+test('list users page can handle sorting', function (): void {
+    $columns = usersTable()->getTableColumns();
+
+    expect($columns['name']->isSortable())->toBeTrue()
+        ->and($columns['email']->isSortable())->toBeTrue();
+});
+
+// Specifiche Filament v3 sulla pagina: in Filament 5 queste impostazioni stanno nella Table
+// (UsersTable::table()), senza un equivalente statico su ListUsers. Corpo originale in git:
+// repo Modules/User, commit 0e2e66d86, tests/Feature/Filament/Pages/ListUsersTest.php.
+test('list users page can handle pagination')->skip('ListUsers::getTablePaginationPageOptions() not implemented');
+
+test('list users page has correct table query')->skip('ListUsers::getTableQuery() not implemented');
+
+test('list users page can handle record selection')->skip('ListUsers::canSelectRecords() not implemented');
+
+test('list users page has correct table layout')->skip('ListUsers::getTableLayout() not implemented');
+
+test('list users page can handle empty state')->skip('ListUsers::getTableEmptyStateHeading() not implemented');
+
+test('list users page has correct table actions alignment')->skip('ListUsers::getTableActionsAlignment() not implemented');
+
+test('list users page can handle table records per page')->skip('ListUsers::getTableRecordsPerPageSelectOptions() not implemented');

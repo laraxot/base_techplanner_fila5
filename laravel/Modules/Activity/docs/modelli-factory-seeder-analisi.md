@@ -1,8 +1,13 @@
-<<<<<<< HEAD
+---
+title: "Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot======="
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "analisi modelli, factory e seeder - moduli activity, gdpr, tenant, ui, salutemo, xot======= activity"
+---
+# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot=======
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
-=======
-# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot
->>>>>>> 6ed19256f (.)
 
 ## Modulo Activity
 
@@ -76,11 +81,8 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ---
 
-<<<<<<< HEAD
+## Modulo SaluteMo=======
 ## Modulo <nome progetto>
-=======
-## Modulo SaluteMo
->>>>>>> 6ed19256f (.)
 
 ### Modelli Attivi e Business Logic
 | Modello | Factory | Seeder | Utilizzo Business Logic |
@@ -96,11 +98,8 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ### Seeder Obsoleti
 - **PatientSeeder.php.old** - 🗑️ Da rimuovere
-<<<<<<< HEAD
+- **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura=======
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
-=======
-- **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura
->>>>>>> 6ed19256f (.)
 
 ### Note
 Modulo specifico per Modena, attualmente non utilizzato attivamente.
@@ -151,6 +150,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ## Riepilogo Generale
 
 ### Totale Modelli Analizzati
+- **SaluteOra**: 20 modelli attivi, 7 obsoleti=======
 - ****: 20 modelli attivi, 7 obsoleti
 - **User**: 35+ modelli attivi
 - **Geo**: 12 modelli attivi, 1 obsoleto
@@ -163,11 +163,8 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 - **Gdpr**: 7 modelli
 - **Tenant**: 3 modelli, 2 obsoleti
 - **UI**: 0 modelli (solo componenti)
-<<<<<<< HEAD
+- **SaluteMo**: 2 modelli base, 1 obsoleto=======
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
-=======
-- **SaluteMo**: 2 modelli base, 1 obsoleto
->>>>>>> 6ed19256f (.)
 - **Xot**: 12+ modelli sistema, molti base abstract
 
 ### Factory Coverage
@@ -185,6 +182,8 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 4. **Documentazione**: Aggiornare documentazione moduli
 
 ### Moduli Critici per Business Logic
+1. **SaluteOra** - Core sanitario ✅ Completo
+2. **User** - Autenticazione ✅ Completo  =======
 1. **** - Core sanitario ✅ Completo
 2. **User** - Autenticazione ✅ Completo
 3. **Notify** - Comunicazioni ✅ Completo
@@ -200,12 +199,8 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 6. **Xot** - Framework base ✅ Completo
 
 *Ultimo aggiornamento: Gennaio 2025*
-*Analisi completa sistema : 150+ modelli, 14 moduli*
-<<<<<<< HEAD
+*Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli**Analisi completa sistema : 150+ modelli, 14 moduli*
 # Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, <nome progetto>, Xot
-=======
-# Analisi Modelli, Factory e Seeder - Moduli Activity, Gdpr, Tenant, UI, SaluteMo, Xot
->>>>>>> 6ed19256f (.)
 
 ## Modulo Activity
 
@@ -279,11 +274,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ---
 
-<<<<<<< HEAD
 ## Modulo <nome progetto>
-=======
-## Modulo SaluteMo
->>>>>>> 6ed19256f (.)
 
 ### Modelli Attivi e Business Logic
 | Modello | Factory | Seeder | Utilizzo Business Logic |
@@ -299,11 +290,7 @@ Il modulo UI contiene solo componenti Blade e risorse frontend, nessun modello E
 
 ### Seeder Obsoleti
 - **PatientSeeder.php.old** - 🗑️ Da rimuovere
-<<<<<<< HEAD
 - **<nome progetto>DatabaseSeeder.php** - ✅ Mantiene struttura
-=======
-- **SaluteMoDatabaseSeeder.php** - ✅ Mantiene struttura
->>>>>>> 6ed19256f (.)
 
 ### Note
 Modulo specifico per Modena, attualmente non utilizzato attivamente.
@@ -354,11 +341,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 ## Riepilogo Generale
 
 ### Totale Modelli Analizzati
-<<<<<<< HEAD
 - **<nome progetto>**: 20 modelli attivi, 7 obsoleti
-=======
-- **SaluteOra**: 20 modelli attivi, 7 obsoleti
->>>>>>> 6ed19256f (.)
 - **User**: 35+ modelli attivi
 - **Geo**: 12 modelli attivi, 1 obsoleto
 - **Media**: 4 modelli attivi
@@ -370,11 +353,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 - **Gdpr**: 7 modelli
 - **Tenant**: 3 modelli, 2 obsoleti
 - **UI**: 0 modelli (solo componenti)
-<<<<<<< HEAD
 - **<nome progetto>**: 2 modelli base, 1 obsoleto
-=======
-- **SaluteMo**: 2 modelli base, 1 obsoleto
->>>>>>> 6ed19256f (.)
 - **Xot**: 12+ modelli sistema, molti base abstract
 
 ### Factory Coverage
@@ -392,11 +371,7 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 4. **Documentazione**: Aggiornare documentazione moduli
 
 ### Moduli Critici per Business Logic
-<<<<<<< HEAD
 1. **<nome progetto>** - Core sanitario ✅ Completo
-=======
-1. **SaluteOra** - Core sanitario ✅ Completo
->>>>>>> 6ed19256f (.)
 2. **User** - Autenticazione ✅ Completo
 3. **Notify** - Comunicazioni ✅ Completo
 4. **Media** - File management ✅ Completo
@@ -411,8 +386,4 @@ Modulo specifico per Modena, attualmente non utilizzato attivamente.
 6. **Xot** - Framework base ✅ Completo
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
 *Analisi completa sistema <nome progetto>: 150+ modelli, 14 moduli*
-=======
-*Analisi completa sistema SaluteOra: 150+ modelli, 14 moduli*
->>>>>>> 6ed19256f (.)

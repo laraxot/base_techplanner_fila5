@@ -1,3 +1,15 @@
+---
+title: "filament best practices uppercase"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament best practices uppercase"
+issues: []
+discussions: []
+status: draft
+---
+
 # Best Practices per Filament Resources in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framework Laraxot.
@@ -38,7 +50,17 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+title: "filament best practices uppercase"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament best practices uppercase"
+issues: []
+discussions: []
+public function getFormSchema(): array
 {
     return [
         TextInput::make('nome')->required(),
@@ -175,7 +197,9 @@ class SocioResource extends XotBaseResource
     // NON definire $navigationSort quando si estende XotBaseResource
 
     // Form Schema - CORRETTO ✅
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('cognome')
@@ -355,7 +379,9 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+public function getFormSchema(): array
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -602,7 +628,9 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('nome')->required(),
@@ -628,21 +656,10 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
-<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
-- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/docs/resource.md)
-- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/docs/best-practices.md)
-- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/docs/resource.md)
-- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/docs/best-practices.md)
-=======
-- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
-- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
-- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/resource.md)
-- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/docs/best-practices.md)
->>>>>>> 6ed19256f (.)
 # Best Practices per Filament Resources in Laraxot
 
 Questo documento definisce le linee guida ufficiali e le best practices per l'implementazione delle risorse Filament all'interno del framework Laraxot.
@@ -683,7 +700,9 @@ class UserResource extends Resource
 Tutte le risorse Filament devono implementare il metodo `getFormSchema()` che restituisce un array di componenti:
 
 ```php
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+public function getFormSchema(): array
 {
     return [
         TextInput::make('nome')->required(),
@@ -820,7 +839,9 @@ class SocioResource extends XotBaseResource
     // NON definire $navigationSort quando si estende XotBaseResource
 
     // Form Schema - CORRETTO ✅
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('cognome')
@@ -1000,7 +1021,9 @@ return [
 Utilizzare componenti come `Section`, `Tabs` e `Fieldset` per organizzare logicamente i campi:
 
 ```php
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+public function getFormSchema(): array
 {
     return [
         Forms\Components\Tabs::make('Tabs')
@@ -1247,7 +1270,9 @@ class SocioResource extends XotBaseResource
 {
     protected static ?string $model = Socio::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('nome')->required(),
@@ -1273,12 +1298,5 @@ Consulta l'esempio completo all'inizio di questo documento per una implementazio
 ## Riferimenti
 
 - [Documentazione Filament](https://filamentphp.com/docs)
-<<<<<<< HEAD
 - [Documentazione XotBaseResource](base_orisbroker_fila3/laravel/Modules/Xot/project_docs/resource.md)
 - [Best Practices Laraxot](base_orisbroker_fila3/laravel/Modules/Xot/project_docs/best-practices.md)
-- [Documentazione XotBaseResource](base_orisbroker_fila5/laravel/modules/xot/project_docs/resource.md)
-- [Best Practices Laraxot](base_orisbroker_fila5/laravel/modules/xot/project_docs/best-practices.md)
-=======
-- [Documentazione XotBaseResource](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/project_docs/resource.md)
-- [Best Practices Laraxot](/var/www/html/exa/base_orisbroker_fila3/laravel/Modules/Xot/project_docs/best-practices.md)
->>>>>>> 6ed19256f (.)

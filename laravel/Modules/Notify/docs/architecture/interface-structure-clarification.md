@@ -1,23 +1,33 @@
-<<<<<<< HEAD
+---
+title: "Chiarimento sulla Struttura delle Interfacce"
+type: concept
+tags: [notify, docs, architecture, interface, structure, clarification]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione architecture interface structure clarification chiarimento sulla struttura delle interfacce frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - ../best-practices/naming-conventions.md
+status: draft
+---
 # Chiarimento sulla Struttura delle Interfacce 
-=======
-# Chiarimento sulla Struttura delle Interfacce
->>>>>>> 6ed19256f (.)
 
 ## Struttura Corretta per le Interfacce SMS
 
 , le interfacce per le azioni SMS seguono questa struttura:
 
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-=======
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-/var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
->>>>>>> 6ed19256f (.)
 ```
 
 Con il namespace corrispondente:

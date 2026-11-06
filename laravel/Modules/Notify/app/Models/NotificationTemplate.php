@@ -4,119 +4,68 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Models;
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Facades\Blade;
 use Modules\Media\Models\Media;
-use Modules\Notify\Database\Factories\NotificationTemplateFactory;
+use Modules\Notify\Actions\RenderNotificationTemplateStringAction;
 use Modules\Notify\Enums\NotificationTypeEnum;
+use Modules\Notify\Models\Traits\NotificationTemplateMutators;
 use Modules\Xot\Contracts\ProfileContract;
-use Override;
 use Spatie\MediaLibrary\HasMedia;
-use Spatie\MediaLibrary\InteractsWithMedia;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\Translatable\HasTranslations;
 
 /**
  * Class NotificationTemplate.
  *
- * @property int $id
- * @property string $name
- * @property string $code
+ * @property string|null $name
+ * @property string|null $code
  * @property string|null $description
- * @property string $subject
+ * @property string|null $category
+ * @property array<string, mixed>|null $metadata
+ * @property string|null $subject
+ * @property bool $is_active
+ * @property array<string, mixed>|null $variables
  * @property string|null $body_html
  * @property string|null $body_text
- * @property array $channels
- * @property array $variables
- * @property array|null $conditions
- * @property array|null $preview_data
- * @property array|null $metadata
- * @property string|null $category
- * @property bool $is_active
- * @property int $version
- * @property int|null $tenant_id
- * @property array|null $grapesjs_data
- * @property Carbon $created_at
- * @property Carbon $updated_at
- * @property Carbon|null $deleted_at
-<<<<<<< HEAD
- * @property-read string $channels_label
+ * @property array<int, string>|null $channels
+ * @property array<string, mixed>|null $conditions
+ * @property array<string, mixed>|null $preview_data
+ * @property array<string, mixed>|null $grapesjs_data
  * @property NotificationTypeEnum $type
-=======
- *
- * @property-read string $channels_label
- *
- * @property NotificationTypeEnum $type
- *
->>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
- * @property-read int|null $logs_count
+ * @property-read string $channels_label
+ * @property-read list<string> $translatable_columns_from
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read mixed $translations
+ * @property-read array<string, array<string, mixed>> $translations
  * @property-read ProfileContract|null $updater
- * @property-read int|null $versions_count
  *
  * @method static Builder<static>|NotificationTemplate active()
- * @method static NotificationTemplateFactory factory($count = null, $state = [])
  * @method static Builder<static>|NotificationTemplate forCategory(string $category)
  * @method static Builder<static>|NotificationTemplate forChannel(string $channel)
  * @method static Builder<static>|NotificationTemplate newModelQuery()
  * @method static Builder<static>|NotificationTemplate newQuery()
  * @method static Builder<static>|NotificationTemplate query()
  * @method static Builder<static>|NotificationTemplate whereJsonContainsLocale(string $column, string $locale, ?mixed $value, string $operand = '=')
- * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array $locales, ?mixed $value, string $operand = '=')
+ * @method static Builder<static>|NotificationTemplate whereJsonContainsLocales(string $column, array<int, string> $locales, ?mixed $value, string $operand = '=')
  * @method static Builder<static>|NotificationTemplate whereLocale(string $column, string $locale)
- * @method static Builder<static>|NotificationTemplate whereLocales(string $column, array $locales)
+ * @method static Builder<static>|NotificationTemplate whereLocales(string $column, array<int, string> $locales)
  *
- * @mixin IdeHelperNotificationTemplate
- *
- * @property-read ProfileContract|null $deleter
-<<<<<<< HEAD
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_by
- *
- * @method static Builder<static>|NotificationTemplate whereBodyHtml($value)
- * @method static Builder<static>|NotificationTemplate whereBodyText($value)
- * @method static Builder<static>|NotificationTemplate whereCategory($value)
- * @method static Builder<static>|NotificationTemplate whereChannels($value)
- * @method static Builder<static>|NotificationTemplate whereCode($value)
- * @method static Builder<static>|NotificationTemplate whereConditions($value)
- * @method static Builder<static>|NotificationTemplate whereCreatedAt($value)
- * @method static Builder<static>|NotificationTemplate whereCreatedBy($value)
- * @method static Builder<static>|NotificationTemplate whereDeletedAt($value)
- * @method static Builder<static>|NotificationTemplate whereDeletedBy($value)
- * @method static Builder<static>|NotificationTemplate whereDescription($value)
- * @method static Builder<static>|NotificationTemplate whereGrapesjsData($value)
- * @method static Builder<static>|NotificationTemplate whereId($value)
- * @method static Builder<static>|NotificationTemplate whereIsActive($value)
- * @method static Builder<static>|NotificationTemplate whereMetadata($value)
- * @method static Builder<static>|NotificationTemplate whereName($value)
- * @method static Builder<static>|NotificationTemplate wherePreviewData($value)
- * @method static Builder<static>|NotificationTemplate whereSubject($value)
- * @method static Builder<static>|NotificationTemplate whereTenantId($value)
- * @method static Builder<static>|NotificationTemplate whereType($value)
- * @method static Builder<static>|NotificationTemplate whereUpdatedAt($value)
- * @method static Builder<static>|NotificationTemplate whereUpdatedBy($value)
- * @method static Builder<static>|NotificationTemplate whereVariables($value)
- * @method static Builder<static>|NotificationTemplate whereVersion($value)
-=======
->>>>>>> 6ed19256f (.)
- *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class NotificationTemplate extends BaseModel implements HasMedia
 {
     use HasTranslations;
-    use InteractsWithMedia;
+    use NotificationTemplateMutators;
 
+    /** La chiave e' un UUID char(36): niente auto-increment, altrimenti dopo l'insert l'id diventa '0'. */
+    public $incrementing = false;
+
+    /** @var list<string> */
     public array $translatable = [
         'subject',
         'body_text',
-        'body_html',
-    ];
+        'body_html'];
 
     protected $fillable = [
         'name',
@@ -135,8 +84,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         'version',
         'tenant_id',
         'grapesjs_data',
-        'type',
-    ];
+        'type'];
 
     public function registerMediaCollections(): void
     {
@@ -184,10 +132,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Compile the template with the given data.
      *
      * @param  array<string, mixed>  $data  The data to compile the template with
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function compile(array $data = []): array
@@ -199,8 +143,7 @@ class NotificationTemplate extends BaseModel implements HasMedia
         return [
             'subject' => $subject ?? '',
             'body_html' => $bodyHtml,
-            'body_text' => $bodyText,
-        ];
+            'body_text' => $bodyText];
     }
 
     /**
@@ -228,10 +171,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      * Preview the template with the given data.
      *
      * @param  array<string, mixed>  $data  Additional data to merge with preview data
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array{subject: string, body_html: string|null, body_text: string|null}
      */
     public function preview(array $data = []): array
@@ -246,51 +185,36 @@ class NotificationTemplate extends BaseModel implements HasMedia
 
     /**
      * Scope a query to only include active templates.
-<<<<<<< HEAD
+     */
+    /**
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
     public function scopeActive(Builder $query): Builder
-=======
-     *
-     * @param  Builder  $query
-     *
-     * @return Builder
-     */
-    public function scopeActive($query)
->>>>>>> 6ed19256f (.)
     {
         return $query->where('is_active', true);
     }
 
     /**
      * Scope a query to only include templates for a specific channel.
-<<<<<<< HEAD
+     */
+    /**
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
     public function scopeForChannel(Builder $query, string $channel): Builder
-=======
-     *
-     * @param  Builder  $query
-     *
-     * @return Builder
-     */
-    public function scopeForChannel($query, string $channel)
->>>>>>> 6ed19256f (.)
     {
         return $query->whereJsonContains('channels', $channel);
     }
 
     /**
      * Scope a query to only include templates for a specific category.
-<<<<<<< HEAD
+     */
+    /**
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
     public function scopeForCategory(Builder $query, string $category): Builder
-=======
-     *
-     * @param  Builder  $query
-     *
-     * @return Builder
-     */
-    public function scopeForCategory($query, string $category)
->>>>>>> 6ed19256f (.)
     {
         return $query->where('category', $category);
     }
@@ -298,15 +222,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
     /**
      * Get the channels label attribute.
      */
-    public function getChannelsLabelAttribute(): string
-    {
-        /** @var array<int, string> $channels */
-        $channels = $this->channels;
-
-        return collect($channels)
-            ->map(fn (string $channel): string => (string) __('notify::template.fields.channel.options.'.$channel.'.label'))
-            ->implode(', ');
-    }
 
     /**
      * Get the GrapesJS data.
@@ -341,6 +256,9 @@ class NotificationTemplate extends BaseModel implements HasMedia
         return $this;
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function getPreviewData(): array
     {
         return $this->preview_data ?? [];
@@ -372,7 +290,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
      *
      * @return array<string, string>
      */
-    #[Override]
     protected function casts(): array
     {
         return [
@@ -385,12 +302,13 @@ class NotificationTemplate extends BaseModel implements HasMedia
             'conditions' => 'array',
             'metadata' => 'array',
             'is_active' => 'boolean',
-            'grapesjs_data' => 'array',
-        ];
+            'grapesjs_data' => 'array'];
     }
 
     /**
      * Compile a string template with the given data.
+     *
+     * I template sono letti dal database: si sostituiscono solo i segnaposto, mai Blade/PHP (DCP-283, C-08).
      *
      * @param  string|null  $template  The template to compile
      * @param  array<string, mixed>  $data  The data to compile with
@@ -401,6 +319,6 @@ class NotificationTemplate extends BaseModel implements HasMedia
             return null;
         }
 
-        return Blade::render($template, $data);
+        return app(RenderNotificationTemplateStringAction::class)->execute($template, $data);
     }
 }

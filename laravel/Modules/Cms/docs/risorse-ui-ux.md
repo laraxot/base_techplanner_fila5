@@ -1,3 +1,15 @@
+---
+title: "risorse ui ux"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "risorse ui ux"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risorse per UI/UX e Frontend Development in il progetto
 
 Questo documento raccoglie le migliori risorse per UI/UX design e frontend development che possono essere utilizzate per migliorare l'interfaccia utente e l'esperienza complessiva del progetto il progetto.
@@ -262,12 +274,7 @@ Ecco come integrare tutte queste risorse in un approccio coerente per il progett
     </div>
     <!-- Altre statistiche -->
   </div>
-<<<<<<< HEAD
   
-  
-=======
-
->>>>>>> 6ed19256f (.)
   <!-- Lista appuntamenti con principi di UXPin -->
   <div class="card bg-base-100 shadow-lg">
     <div class="card-body">
@@ -279,12 +286,7 @@ Ecco come integrare tutte queste risorse in un approccio coerente per il progett
           <button class="btn btn-sm btn-ghost">Mese</button>
         </div>
       </div>
-<<<<<<< HEAD
       
-      
-=======
-
->>>>>>> 6ed19256f (.)
       <!-- Tabella con principi di CSS-Tricks -->
       <div class="overflow-x-auto">
         <!-- Contenuto tabella -->
@@ -312,11 +314,7 @@ Per massimizzare il valore di queste risorse:
 
 ## Conclusione
 
-L'integrazione di queste diverse risorse permette di creare un'interfaccia utente per il progetto che sia non solo esteticamente piacevole, ma anche altamente usabile, accessibile e performante.
-<<<<<<< HEAD
 L'integrazione di queste diverse risorse permette di creare un'interfaccia utente per il progetto che sia non solo esteticamente piacevole, ma anche altamente usabile, accessibile e performante. 
-=======
->>>>>>> 6ed19256f (.)
 
 L'approccio combinato sfrutta:
 - I principi di design tattico di Refactoring UI
@@ -328,8 +326,4 @@ L'approccio combinato sfrutta:
 - Le best practices consolidate del settore
 - L'efficienza di Tailwind CSS e DaisyUI
 
-Il risultato sarà un'interfaccia che soddisfa le esigenze di pazienti e operatori sanitari, contribuendo al successo complessivo della piattaforma il progetto.
-<<<<<<< HEAD
 Il risultato sarà un'interfaccia che soddisfa le esigenze di pazienti e operatori sanitari, contribuendo al successo complessivo della piattaforma il progetto. 
-=======
->>>>>>> 6ed19256f (.)

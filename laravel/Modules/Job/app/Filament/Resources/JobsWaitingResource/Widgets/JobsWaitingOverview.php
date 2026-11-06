@@ -1,14 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * ---.
  */
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -50,19 +49,11 @@ class JobsWaitingOverview extends BaseWidget
             $totalSeconds = (int) $cast->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0');
 
             $averageTime = $averageSeconds > 0.0
-<<<<<<< HEAD
                 ? (string) ceil($averageSeconds).'s'
                 : '0';
 
             $totalTime = $totalSeconds > 0
                 ? $this->formatSeconds($totalSeconds)
-=======
-                ? (string) ceil($averageSeconds) . 's'
-                : '0';
-
-            $totalTime = $totalSeconds > 0
-                ? $this->formatSeconds($totalSeconds) . 's'
->>>>>>> 6ed19256f (.)
                 : '0';
         }
 

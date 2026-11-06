@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\RelationManagers;
 
-<<<<<<< HEAD
 use Filament\Actions\Action;
 use Filament\Actions\AttachAction;
 use Filament\Actions\BulkAction;
-=======
-use Filament\Actions\AttachAction;
->>>>>>> 6ed19256f (.)
 use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\DetachAction;
@@ -24,12 +20,11 @@ use Filament\Tables\Columns\Layout\Component as LayoutComponent;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
-<<<<<<< HEAD
-=======
-use Override;
->>>>>>> 6ed19256f (.)
 use stdClass;
 use Webmozart\Assert\Assert;
 
@@ -38,7 +33,18 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseRelationManager extends FilamentRelationManager
 {
-    use HasXotTable;
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    }
+
+    /**
+     * @param  array<string, bool|float|int|string|null>  $params
+     */
+    public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
+    {
+        return static::getResourceClass()::trans($key, $exceptionIfNotExist, $params);
+    }
 
     protected static string $relationship = '';
 
@@ -52,11 +58,23 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
-<<<<<<< HEAD
-        if (isset(static::$resource) && \is_string(static::$resource) && '' !== static::$resource) {
-=======
-        if (isset(static::$resource) && \is_string(static::$resource) && static::$resource !== '') {
->>>>>>> 6ed19256f (.)
+        return static::getResourceClass();
+    }
+
+    /**
+     * La classe Resource genitrice, derivata dal namespace del RelationManager e
+     * memoizzata in `static::$resource`.
+     *
+     * Statica e non `getResource()` (di istanza) perché serve anche a `trans()`,
+     * chiamato durante la build delle azioni tabella in un ciclo Livewire in cui
+     * `static::$resource` non è ancora inizializzata — la proprietà tipata senza
+     * default lanciava «must not be accessed before initialization».
+     *
+     * @return class-string<XotBaseResource>
+     */
+    protected static function getResourceClass(): string
+    {
+        if (isset(static::$resource) && static::$resource !== '') {
             return static::$resource;
         }
 
@@ -75,11 +93,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         Assert::true(class_exists($resource), 'Resource class does not exist: '.$resource);
         Assert::true(is_subclass_of($resource, XotBaseResource::class), 'Resource must extend XotBaseResource: '.$resource);
 
-<<<<<<< HEAD
-        /* @var class-string<XotBaseResource> $resource */
-=======
         /** @var class-string<XotBaseResource> $resource */
->>>>>>> 6ed19256f (.)
         static::$resource = $resource;
 
         return static::$resource;
@@ -106,21 +120,24 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $schema->components($components);
     }
 
+    /** @return array<int|string, Component> */
     public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchema();
+        $class = $this->getResource()::getFormClass();
+        $instance = app($class);
+        Assert::isInstanceOf($instance, XotBaseResourceForm::class);
+
+        /** @var XotBaseResourceForm $instance */
+        return $instance->getFormSchema();
     }
 
     /**
      * @return array<int|string, Column|LayoutComponent>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-<<<<<<< HEAD
     #[\Override]
     protected function getTableColumns(): array
-=======
-    #[Override]
-    public function getTableColumns(): array
->>>>>>> 6ed19256f (.)
     {
         $index = Arr::get($this->getResource()::getPages(), 'index');
         if (! $index) {
@@ -171,7 +188,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
             // $column è già verificato come instance di Column|LayoutComponent sopra
             $name = method_exists($column, 'getName') ? $column->getName() : (string) spl_object_hash($column);
-            $nameStr = \is_string($name) ? $name : (string) $name;
+            $nameStr = SafeStringCastAction::cast($name);
             $assoc[$nameStr] = $column;
         }
 
@@ -179,7 +196,6 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     }
 
     // */
-<<<<<<< HEAD
     /**
      * Get table actions.
      *
@@ -187,9 +203,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * richiede che questo metodo sia pubblico.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-=======
->>>>>>> 6ed19256f (.)
     public function getTableActions(): array
     {
         $actions = [];
@@ -197,11 +213,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['edit'] = EditAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-<<<<<<< HEAD
-                if (null === $record) {
-=======
                 if ($record === null) {
->>>>>>> 6ed19256f (.)
                     return false;
                 }
 
@@ -211,11 +223,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         $actions['detach'] = DetachAction::make()
             ->iconButton()
             ->visible(static function (?Model $record) use ($me): bool {
-<<<<<<< HEAD
-                if (null === $record) {
-=======
                 if ($record === null) {
->>>>>>> 6ed19256f (.)
                     return false;
                 }
 
@@ -225,16 +233,15 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $actions;
     }
 
-<<<<<<< HEAD
     /**
      * Get table bulk actions.
      *
      * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
      *
      * @return array<string, BulkAction>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-=======
->>>>>>> 6ed19256f (.)
     public function getTableBulkActions(): array
     {
         $actions = [];
@@ -250,21 +257,19 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $actions;
     }
 
-<<<<<<< HEAD
     /**
      * Get table header actions.
      *
      * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
      *
      * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-=======
->>>>>>> 6ed19256f (.)
     public function getTableHeaderActions(): array
     {
         $actions = [];
         $me = $this;
-<<<<<<< HEAD
         $actions['attach'] = AttachAction::make()
             ->icon('heroicon-o-link')
             ->iconButton()
@@ -275,28 +280,15 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
             ->iconButton()
             ->tooltip(static::trans('actions.create.tooltip'))
             ->visible(static fn (?Model $_record): bool => $me->canCreate());
-=======
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($me, 'canAttach')) {
-            $actions['attach'] = AttachAction::make()
-                ->icon('heroicon-o-link')
-                ->iconButton()
-                ->tooltip(__('user::actions.attach.label'))
-                ->visible(static fn (?Model $_record): bool => $me->canAttach());
-        }
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($me, 'canCreate')) {
-            $actions['create'] = CreateAction::make()
-                ->icon('heroicon-o-plus')
-                ->iconButton()
-                ->tooltip(static::trans('actions.create.tooltip'))
-                ->visible(static fn (?Model $_record): bool => $me->canCreate());
-        }
->>>>>>> 6ed19256f (.)
 
         return $actions;
     }
 
+    /**
+     * @return array<string|int, \Filament\Tables\Filters\BaseFilter>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
+     */
     public function getTableFilters(): array
     {
         return [];
@@ -310,15 +302,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk delete action can be performed on the given record.
      */
-<<<<<<< HEAD
-    public function canDeleteBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
-=======
     public function canDeleteBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
->>>>>>> 6ed19256f (.)
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }
@@ -329,15 +315,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
     /**
      * Determine if the bulk detach action can be performed on the given record.
      */
-<<<<<<< HEAD
-    public function canDetachBulk(Model|\stdClass|null $record): bool
-    {
-        if ($record instanceof \stdClass) {
-=======
     public function canDetachBulk(Model|stdClass|null $record): bool
     {
         if ($record instanceof stdClass) {
->>>>>>> 6ed19256f (.)
             // For stdClass records (lightweight bulk operations), allow by default
             return true;
         }

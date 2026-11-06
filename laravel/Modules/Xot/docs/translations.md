@@ -1,3 +1,11 @@
+---
+title: "Traduzioni"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "traduzioni xot"
+---
 ### Versione HEAD
 
 # Traduzioni
@@ -71,11 +79,6 @@ Modules/<NomeModulo>/
 
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale
 - [Regole Generali](../../Xot/docs/translations.md) - Regole base
-<<<<<<< HEAD
-- [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale
-- [Regole Generali](../../xot/docs/translations.md) - Regole base
-=======
->>>>>>> 6ed19256f (.)
 
 ## Struttura
 
@@ -372,26 +375,6 @@ Action::make('delete')
 - Test di performance
 
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
-* [translations.md](../../../chart/docs/translations.md)
-* [translations.md](../../../reporting/docs/translations.md)
-* [translations.md](../../../gdpr/docs/translations.md)
-* [translations.md](../../../notify/docs/translations.md)
-* [translations.md](../../../xot/docs/roadmap/lang/translations.md)
-* [translations.md](../../../xot/docs/translations.md)
-* [translations.md](../../../dental/docs/translations.md)
-* [translations.md](../../../user/docs/translations.md)
-* [translations.md](../../../ui/docs/translations.md)
-* [translations.md](../../../lang/docs/packages/translations.md)
-* [translations.md](../../../lang/docs/translations.md)
-* [translations.md](../../../job/docs/translations.md)
-* [translations.md](../../../media/docs/translations.md)
-* [translations.md](../../../tenant/docs/translations.md)
-* [translations.md](../../../activity/docs/translations.md)
-* [translations.md](../../../patient/docs/translations.md)
-* [translations.md](../../../cms/docs/translations.md)
-=======
->>>>>>> 6ed19256f (.)
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -414,8 +397,4 @@ Action::make('delete')
 
 ```
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

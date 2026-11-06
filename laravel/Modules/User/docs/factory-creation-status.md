@@ -1,3 +1,28 @@
+---
+title: "Factory Creation Status - User Module"
+type: concept
+tags: [factory, creation, status]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "factory-creation-status factory creation status - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Factory Creation Status - User Module
 
 ## ERRORE GRAVISSIMO IDENTIFICATO E RISOLUZIONE IN CORSO
@@ -12,11 +37,7 @@ Il modulo User aveva **16 factory mancanti** su 31 modelli totali. Questo è un 
 
 ### ✅ COMPLETATE
 1. **Authentication.php** → AuthenticationFactory.php ✅
-<<<<<<< HEAD
 2. **DeviceUser.php** → DeviceUserFactory.php ✅  
-=======
-2. **DeviceUser.php** → DeviceUserFactory.php ✅
->>>>>>> 6ed19256f (.)
 3. **DeviceProfile.php** → DeviceProfileFactory.php ✅
 4. **Membership.php** → MembershipFactory.php ✅
 
@@ -62,20 +83,12 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 class ModelFactory extends Factory
 {
     protected $model = Model::class;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function definition(): array
     {
         // Definition with realistic data
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // State methods for common scenarios
 }
 ```
@@ -108,20 +121,10 @@ Questo errore è **GRAVISSIMO** perché:
 
 ## COLLEGAMENTI
 
-<<<<<<< HEAD
-- [User Module README](./README.md)
-- [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
-- [Database Documentation](./database/README.md)
 - [Factory Audit Complete Analysis](../../../../docs/project/factory-audit-complete-analysis.md)
-- [User Module README](./readme.md)
+- [User Module README](./README.md)
 - [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
 - [Database Documentation](./database/readme.md)
-=======
-- [Factory Audit Complete Analysis](../../../project_docs/factory-audit-complete-analysis.md)
-- [User Module README](./README.md)
-- [Factory PHPStan Fixes](./phpstan/factory-fixes.md)
-- [Database Documentation](./database/README.md)
->>>>>>> 6ed19256f (.)
 
 ## PROSSIMI PASSI
 
@@ -132,8 +135,3 @@ Questo errore è **GRAVISSIMO** perché:
 5. ⏳ Documentare pattern e best practice
 
 *Creato: 2025-01-06*
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

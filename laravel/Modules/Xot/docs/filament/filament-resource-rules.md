@@ -1,12 +1,13 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: filament-resource-rules
-canonical: ../../../../Themes/docs/shared-components/filament-resource-rules-Modules.md
+title: "Regole Critiche per Filament Resources - Laraxot PTVX"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Regole Critiche per Filament Resources - Laraxot PTVX"
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/filament-resource-rules-Modules.md
-=======
 # Regole Critiche per Filament Resources - Laraxot PTVX
 
 ## ⚠️ ERRORI GRAVI DA EVITARE ASSOLUTAMENTE
@@ -45,7 +46,7 @@ public static function getTableBulkActions(): array { ... }  // ❌ VIETATO in X
 class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = Integparam::class;
-
+    
     public static function getFormSchema(): array
     {
         return [
@@ -154,7 +155,7 @@ class ListIntegparams extends XotBaseListRecords
 class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = Integparam::class;
-
+    
     // Solo getFormSchema() è obbligatorio
     public static function getFormSchema(): array
     {
@@ -299,5 +300,4 @@ class IntegparamResource extends XotBaseResource
 **Causa**: Override di metodi già gestiti da XotBaseResource
 **Soluzione**: Rimuovere i metodi non necessari
 
-*Ultimo aggiornamento: 5 giugno 2025*
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: 5 giugno 2025* 

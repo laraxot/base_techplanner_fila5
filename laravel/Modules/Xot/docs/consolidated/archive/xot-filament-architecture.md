@@ -1,3 +1,11 @@
+---
+title: "Architettura Filament-Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "architettura filament-xot xot"
+---
 # Architettura Filament-Xot
 
 ## Panoramica
@@ -10,13 +18,8 @@ L'architettura Filament-Xot definisce come il modulo Xot estende e personalizza 
 
 Il sistema è costruito attorno a classi base che forniscono funzionalità comuni:
 
-<<<<<<< HEAD
 - [XotBasePage](Modules/Xot/project_docs/filament/pages/xotbasepage.md) - Classe base per le pagine Filament
 - [XotBaseWidget](Modules/Xot/project_docs/filament/widgets/xotbasewidget.md) - Classe base per i widget Filament
-=======
-- [XotBasePage](/var/www/html/base_generic/laravel/Modules/Xot/project_docs/filament/pages/xotbasepage.md) - Classe base per le pagine Filament
-- [XotBaseWidget](/var/www/html/base_generic/laravel/Modules/Xot/project_docs/filament/widgets/xotbasewidget.md) - Classe base per i widget Filament
->>>>>>> 6ed19256f (.)
 
 ### Principi Architetturali
 

@@ -1,7 +1,15 @@
 ---
-module: theme
-topic: permission
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Permission"
+module: "Tenant"
+type: concept
+tags: [permission]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "permission"
+related:
+  - "./phpstan-corrections-january.md"
+status: draft
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

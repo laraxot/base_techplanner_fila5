@@ -6,7 +6,6 @@ return [
     'title' => 'Allegati',
     'label' => 'Carica allegato',
     'fields' => [
-<<<<<<< HEAD
         'file' => [
             'label' => 'file',
             'tooltip' => '',
@@ -40,7 +39,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-        'label' => 'Add Attachment Action',
+        'label' => 'Carica allegato',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
@@ -54,11 +53,5 @@ return [
         'delete' => [
             'label' => 'Elimina Add Attachment Action',
         ],
-=======
-        'file' => 'file',
-        'file_hint' => '',
-        'name' => 'Nome',
-        'name_hint' => 'nome del file',
->>>>>>> 6ed19256f (.)
     ],
 ];

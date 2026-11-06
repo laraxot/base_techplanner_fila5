@@ -1,3 +1,23 @@
+---
+title: "Regole per la Struttura dei DTO"
+type: concept
+tags: [notify, docs, architecture, dto, structure, rules]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione architecture dto structure rules regole per la struttura dei dto frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - ../best-practices/naming-conventions.md
+status: draft
+---
 # Regole per la Struttura dei DTO
 
 ## Directory e Namespace
@@ -84,11 +104,7 @@
    // ERRATO
    app/Data/NetfunSmsRequestData.php
    app/DTOs/NetfunSmsRequestData.php
-<<<<<<< HEAD
    
-=======
-
->>>>>>> 6ed19256f (.)
    // CORRETTO
    app/Datas/NetfunSmsRequestData.php
    ```
@@ -98,11 +114,7 @@
    // ERRATO
    namespace App\Datas;
    namespace Modules\Notify\App\Datas;
-<<<<<<< HEAD
    
-=======
-
->>>>>>> 6ed19256f (.)
    // CORRETTO
    namespace Modules\Notify\Datas;
    ```
@@ -112,11 +124,7 @@
    // ERRATO
    class NetfunSmsRequestDTO
    class NetfunSmsRequest
-<<<<<<< HEAD
    
-=======
-
->>>>>>> 6ed19256f (.)
    // CORRETTO
    class NetfunSmsRequestData
    ```
@@ -125,8 +133,4 @@
 
 - [PSR-4 Autoloading](https://www.php-fig.org/psr/psr-4/)
 - [spatie/laravel-data](https://github.com/spatie/laravel-data)
-<<<<<<< HEAD
 - [Laravel Best Practices](https://laravel.com/docs/best-practices) 
-=======
-- [Laravel Best Practices](https://laravel.com/docs/best-practices)
->>>>>>> 6ed19256f (.)

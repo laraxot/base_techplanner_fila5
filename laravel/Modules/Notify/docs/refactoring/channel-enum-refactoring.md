@@ -1,3 +1,15 @@
+---
+title: "channel enum refactoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "channel enum refactoring"
+issues: []
+discussions: []
+status: draft
+---
+
 # Refactoring: Replace CHANNEL_CONFIG with Smart Enum
 
 ## Goal
@@ -22,11 +34,7 @@ enum ChannelEnum: string {
     public function getNotificationClass(): string { ... }
     public function requiresNormalization(): bool { ... }
     public function requiresSmsContent(): bool { ... }
-<<<<<<< HEAD
     // Logic for contact method resolution can be handled via a method that returns the method name, 
-=======
-    // Logic for contact method resolution can be handled via a method that returns the method name,
->>>>>>> 6ed19256f (.)
     // OR we can make the Action handle it map-based if it's specific to the Action's private methods.
     // For now, returning the method name is a pragmatic step to replace the existing config array 1:1.
 }

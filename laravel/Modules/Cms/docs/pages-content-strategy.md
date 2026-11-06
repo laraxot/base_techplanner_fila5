@@ -1,12 +1,20 @@
+---
+title: "pages content strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pages content strategy"
+issues: []
+discussions: []
+status: draft
+---
+
 # Strategia Contenuti Pagine - <main module>
 
 ## Filosofia dei Contenuti
 
-<main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla <slogan progetto> per le gestanti vulnerabili**.
-<<<<<<< HEAD
 <main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla salute orale per le gestanti vulnerabili**.
-=======
->>>>>>> 6ed19256f (.)
 
 ### Principi Guida
 
@@ -21,13 +29,8 @@
 ### Vision Strategica
 La pagina servizi deve comunicare:
 - **Cosa**: Servizi odontoiatrici gratuiti per gestanti
-- **Chi**: Donne incinte con ISEE ≤ 20.000€
-- **Perché**: <slogan progetto> cruciale per mamma e bambino
-<<<<<<< HEAD
 - **Chi**: Donne incinte con ISEE ≤ 20.000€ 
 - **Perché**: Salute orale cruciale per mamma e bambino
-=======
->>>>>>> 6ed19256f (.)
 - **Come**: Processo semplice e umano
 - **Dove**: Rete nazionale di professionisti qualificati
 
@@ -98,11 +101,7 @@ La pagina servizi deve comunicare:
 
 ### Parole Chiave SEO
 
-- <slogan progetto> gravidanza
-<<<<<<< HEAD
 - salute orale gravidanza
-=======
->>>>>>> 6ed19256f (.)
 - odontoiatra gratuito gestanti
 - ISEE 20000 cure dentali
 - prevenzione dentale gravidanza
@@ -111,14 +110,6 @@ La pagina servizi deve comunicare:
 ## Collegamenti Strategici
 
 - [Content Management](content-management.md)
-- [UI Components](../UI/docs/components.md)
-- [Theme Blocks](../../Themes/One/docs/blocks.md)
-- [User Experience](../../../docs/frontend/ux-guidelines.md)
-
-*Ultimo aggiornamento: 2025-01-15*
-<<<<<<< HEAD
 - [UI Components](../ui/project_docs/components.md)
 - [Theme Blocks](../../themes/one/project_docs/blocks.md)
 - [User Experience](../../../../docs/project/frontend/ux-guidelines.md)
-=======
->>>>>>> 6ed19256f (.)

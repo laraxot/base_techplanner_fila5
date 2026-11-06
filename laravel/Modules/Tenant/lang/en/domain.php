@@ -8,14 +8,13 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'domain',
+        'label' => 'Domain',
         'sort' => 6,
         'icon' => 'tenant-domain-animated',
     ],
     'fields' => [
         'domain' => [
             'label' => 'Domain',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -67,32 +66,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'domains' => [
-            'label' => 'Domains',
-        ],
-        'list' => [
-            'label' => 'Domain List',
-        ],
-        'create' => [
-            'label' => 'Create Domain',
-        ],
-        'edit' => [
-            'label' => 'Edit Domain',
-        ],
-        'destroy' => [
-            'label' => 'Delete Domain',
-        ],
-        'name' => [
-            'label' => 'Name',
-        ],
-        'rating' => [
-            'label' => 'rating',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -115,9 +88,6 @@ return [
             'label' => 'domain.plural.model',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

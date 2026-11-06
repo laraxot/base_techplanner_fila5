@@ -1,8 +1,13 @@
-<<<<<<< HEAD
+---
+title: "Analisi dei Principali <nome progetto>ion Market (2024-2025)"
+type: note
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "analisi dei principali <nome progetto>ion market (2024-2025) activity"
+status: superseded
+superseded_by: analisi-siti-esistenti.md
+---
 # Analisi dei Principali <nome progetto>ion Market (2024-2025)
-=======
-# Analisi dei Principali Prediction Market (2024-2025)
->>>>>>> 6ed19256f (.)
 
 ## Polymarket
 - Blockchain: Ethereum/Polygon
@@ -16,11 +21,7 @@
 - User Experience: interfaccia intuitiva, storico prezzi, API pubblica
 
 ## Manifold Markets
-<<<<<<< HEAD
 - <nome progetto>ion market social, gamificato
-=======
-- Prediction market social, gamificato
->>>>>>> 6ed19256f (.)
 - Mercati: ampia varietà, anche "fun" e cultura pop
 - Tecnologie: web app, token interni, reputazione utenti
 
@@ -34,8 +35,4 @@
 - Tokenizzazione delle quote
 - Commissioni: 1-2% sulle vincite
 - Trasparenza: tutte le transazioni sono pubbliche su blockchain
-<<<<<<< HEAD
 - Inclusività: accesso globale, pochi limiti geografici
-=======
-- Inclusività: accesso globale, pochi limiti geografici
->>>>>>> 6ed19256f (.)

@@ -1,8 +1,22 @@
+---
+title: "map lit cluster type icons"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "map lit cluster type icons"
+issues: []
+discussions: []
+status: draft
+---
+
 # map-lit — icone tipo nel cluster (14px, no SVG oversize)
 
 ## Scopo
 
-Nei cluster zoom ≥ 8 mostrare **diversità tipologica** con pallini colore piccoli (pattern farmshops), senza iniettare SVG Heroicon grezzi (es. trash) che il CSS globale del tema può ingrandire.
+Nei cluster zoom ≥ 8 mostrare **diversità tipologica** con **icone tipo** (`iconUrl` da `TicketTypeEnum`, come [farmshops.eu](https://github.com/CodeforKarlsruhe/farmshops.eu) mostra farm/market/automat), non colori **stato**.
+
+**Gap 2026-06-06:** `_createClusterIcon` usa ancora `statusColor` — vedi [farmshops-cluster-type-icons-study.md](./farmshops-cluster-type-icons-study.md) e STORY-284.
 
 ## Sintomo (#12 / #13)
 

@@ -1,14 +1,37 @@
+---
+title: "🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE"
+type: guide
+tags: [2fa, guide]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "2fa-guide 🔐 two-factor authentication (2fa) - guida implementazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-structure.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+  - "./actions-structure.md"
+status: draft
+---
+
 # 🔐 TWO-FACTOR AUTHENTICATION (2FA) - GUIDA IMPLEMENTAZIONE
 
-<<<<<<< HEAD
 **Versione**: 1.0  
 **Status**: 🚧 60% Implementato  
 **Data**: 2025-10-01  
-=======
-**Versione**: 1.0
-**Status**: 🚧 60% Implementato
-**Data**: 2025-10-01
->>>>>>> 6ed19256f (.)
 
 ---
 
@@ -141,11 +164,7 @@ class User extends BaseUser
      */
     public function hasTwoFactorEnabled(): bool
     {
-<<<<<<< HEAD
         return $this->two_factor_enabled 
-=======
-        return $this->two_factor_enabled
->>>>>>> 6ed19256f (.)
             && ! is_null($this->two_factor_secret)
             && ! is_null($this->two_factor_confirmed_at);
     }
@@ -173,21 +192,13 @@ class User extends BaseUser
     public function useRecoveryCode(string $code): bool
     {
         $codes = $this->getRecoveryCodes();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         if (($key = array_search($code, $codes)) !== false) {
             unset($codes[$key]);
             $this->setRecoveryCodes(array_values($codes));
             return true;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return false;
     }
 }
@@ -226,11 +237,7 @@ class TwoFactorService
     public function enable(User $user): array
     {
         $secret = $this->google2fa->generateSecretKey();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         $user->update([
             'two_factor_secret' => encrypt($secret),
             'two_factor_enabled' => false, // Will be enabled after confirmation
@@ -258,11 +265,7 @@ class TwoFactorService
             ]);
             return true;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return false;
     }
 
@@ -285,11 +288,7 @@ class TwoFactorService
     public function verify(User $user, string $code): bool
     {
         $secret = decrypt($user->two_factor_secret);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return $this->google2fa->verifyKey($secret, $code);
     }
 
@@ -318,11 +317,7 @@ class TwoFactorService
         );
 
         $writer = new Writer($renderer);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return $writer->writeString($qrCodeUrl);
     }
 
@@ -343,11 +338,7 @@ class TwoFactorService
     {
         $codes = $this->generateRecoveryCodes();
         $user->setRecoveryCodes($codes);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return $codes;
     }
 }
@@ -383,11 +374,7 @@ class TwoFactorAuthentication extends Page
     {
         $user = auth()->user();
         $this->enabled = $user->hasTwoFactorEnabled();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         $this->form->fill([
             'enabled' => $this->enabled,
         ]);
@@ -563,11 +550,7 @@ class TwoFactorAuthentication extends Page
                                             maxlength="6"
                                         />
                                     </x-filament::input.wrapper>
-<<<<<<< HEAD
                                     
-=======
-
->>>>>>> 6ed19256f (.)
                                     <x-filament::button
                                         class="mt-2"
                                         wire:click="confirm($wire.confirmCode)"
@@ -680,20 +663,12 @@ class TwoFactorPolicy
     public function disable(User $user): bool
     {
         $tenant = $user->tenant;
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Cannot disable if required by tenant
         if ($tenant && $this->required($user, $tenant)) {
             return false;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return true;
     }
 }
@@ -821,7 +796,6 @@ class TwoFactorEnabledNotification extends Notification
 ## 📊 BEST PRACTICES
 
 ### Security
-<<<<<<< HEAD
 ✅ **Encrypt secrets**: Always encrypt 2FA secrets in database  
 ✅ **Rate limiting**: Limit verification attempts  
 ✅ **Recovery codes**: Provide backup access method  
@@ -838,21 +812,3 @@ class TwoFactorEnabledNotification extends Notification
 **Last Updated**: 2025-10-01  
 **Status**: 60% Implemented  
 **Next Steps**: Complete UI, add SMS backup, implement policy enforcement  
-=======
-✅ **Encrypt secrets**: Always encrypt 2FA secrets in database
-✅ **Rate limiting**: Limit verification attempts
-✅ **Recovery codes**: Provide backup access method
-✅ **Audit logging**: Log all 2FA events
-
-### UX
-✅ **Clear instructions**: Guide users through setup
-✅ **QR code + manual**: Provide both options
-✅ **Recovery codes**: Emphasize importance
-✅ **Testing**: Allow code testing before enabling
-
----
-
-**Last Updated**: 2025-10-01
-**Status**: 60% Implemented
-**Next Steps**: Complete UI, add SMS backup, implement policy enforcement
->>>>>>> 6ed19256f (.)

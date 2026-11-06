@@ -1,4 +1,12 @@
-<<<<<<< HEAD
+---
+title: "Glossario <nome progetto>ion Market"
+type: note
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "glossario <nome progetto>ion market activity"
+status: superseded
+superseded_by: glossario.md
+---
 # Glossario <nome progetto>ion Market
 
 - **<nome progetto>ion Market**: Mercato di previsione, piattaforma per scommettere su eventi futuri.
@@ -6,22 +14,9 @@
 - **Smart Contract**: Contratto auto-eseguente su blockchain.
 - **AMM**: Automated Market Maker, algoritmo per la liquidità automatica.
 - **LMSR**: Logarithmic Market Scoring Rule, algoritmo per market making che garantisce liquidità automatica e prezzi dinamici nei <nome progetto>ion market.
-=======
-# Glossario Prediction Market
-
-- **Prediction Market**: Mercato di previsione, piattaforma per scommettere su eventi futuri.
-- **Oracolo**: Servizio che fornisce dati reali a smart contract.
-- **Smart Contract**: Contratto auto-eseguente su blockchain.
-- **AMM**: Automated Market Maker, algoritmo per la liquidità automatica.
-- **LMSR**: Logarithmic Market Scoring Rule, algoritmo per market making che garantisce liquidità automatica e prezzi dinamici nei prediction market.
->>>>>>> 6ed19256f (.)
 - **Event Sourcing**: Pattern di persistenza basato su eventi immutabili.
 - **Proiezione**: Vista di lettura generata dagli eventi.
 - **Reattore**: Componente che gestisce effetti collaterali.
 - **Aggregate Root**: Oggetto che incapsula la logica di business e gestisce gli eventi.
 - **CQRS**: Separazione tra comandi (scrittura) e query (lettura).
-<<<<<<< HEAD
 - **Tokenizzazione**: Rappresentazione digitale di asset o quote tramite token.
-=======
-- **Tokenizzazione**: Rappresentazione digitale di asset o quote tramite token.
->>>>>>> 6ed19256f (.)

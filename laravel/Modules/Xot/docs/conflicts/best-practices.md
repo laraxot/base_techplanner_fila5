@@ -1,3 +1,13 @@
+---
+title: "Best Practices per la Risoluzione dei Conflitti"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, conflicts]
+qmd: "Best Practices per la Risoluzione dei Conflitti"
+---
 # Best Practices per la Risoluzione dei Conflitti
 
 ## Principi Generali
@@ -74,11 +84,7 @@ namespace Modules\ModuleName\App\Models;
 
 ## Collegamenti Correlati
 
-- [Convenzioni Namespace](../NAMESPACE-CONVENTIONS.md)
-<<<<<<< HEAD
 - [Convenzioni Namespace](../namespace-conventions.md)
-=======
->>>>>>> 6ed19256f (.)
 - [PHPStan Livello 10](../phpstan_livello10_linee_guida.md)
 - [Struttura Moduli](../module-structure.md)
 - [Risoluzione Conflitti Merge](../risoluzione_conflitti_merge.md)
@@ -110,8 +116,4 @@ namespace Modules\ModuleName\App\Models;
 3. **Testing**
    - Verificare le modifiche con PHPStan
    - Testare la compatibilità
-<<<<<<< HEAD
-   - Validare le funzionalità
-=======
-   - Validare le funzionalità
->>>>>>> 6ed19256f (.)
+   - Validare le funzionalità 

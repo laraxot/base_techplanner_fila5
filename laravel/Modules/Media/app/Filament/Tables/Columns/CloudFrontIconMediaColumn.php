@@ -4,35 +4,34 @@ declare(strict_types=1);
 
 namespace Modules\Media\Filament\Tables\Columns;
 
-use Filament\Tables\Columns\IconColumn;
+use Illuminate\Database\Eloquent\Model;
 use Modules\Media\Actions\CloudFront\GetCloudFrontSignedUrlAction;
+use Modules\Xot\Filament\Tables\Columns\XotBaseIconColumn as IconColumn;
+use Modules\Xot\Filament\Tables\Columns\XotBaseIconColumn;
 
-class CloudFrontIconMediaColumn extends IconColumn
+// phpmd: CyclomaticComplexity, NPathComplexity — setUp Filament con branching mime/icon
+class CloudFrontIconMediaColumn extends XotBaseIconColumn
 {
     protected function setUp(): void
     {
         parent::setUp();
         $attachment = $this->getName();
 
-        $this->default(function ($record) use ($attachment) {
+        $this->default(static function (?Model $record) use ($attachment) {
             if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                 return $record->getFirstMedia($attachment);
             }
-<<<<<<< HEAD
-=======
 
-            return null;
->>>>>>> 6ed19256f (.)
         })
             ->icon('heroicon-o-document-text')
-            ->color(function ($record) use ($attachment): string {
+            ->color(static function (?Model $record) use ($attachment): string {
                 if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                     return $record->getFirstMedia($attachment) ? 'success' : 'danger';
                 }
 
                 return 'danger';
             })
-            ->tooltip(function ($record) use ($attachment): string {
+            ->tooltip(static function (?Model $record) use ($attachment): string {
                 if (is_object($record) && method_exists($record, 'getFirstMedia')) {
                     $media = $record->getFirstMedia($attachment);
                     if (is_object($media) && isset($media->file_name) && is_string($media->file_name)) {
@@ -42,7 +41,7 @@ class CloudFrontIconMediaColumn extends IconColumn
 
                 return 'Documento non caricato';
             })
-            ->url(function ($record) use ($attachment): ?string {
+            ->url(static function (?Model $record) use ($attachment): ?string {
                 if (! is_object($record) || ! method_exists($record, 'getFirstMedia')) {
                     return null;
                 }

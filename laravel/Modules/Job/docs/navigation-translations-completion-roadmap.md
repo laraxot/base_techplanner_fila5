@@ -1,11 +1,21 @@
+---
+title: "navigation translations completion roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "navigation translations completion roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
 # Navigation Translations Completion Roadmap - Job Module
 
-**Data**: 2026-01-09  
 **Modulo**: Job  
 **Status**: 📝 **ROADMAP CREATA**
 
 ---
-
 ## 📊 Executive Summary
 
 Completamento e miglioramento delle traduzioni per i file con sezione `.navigation` nel modulo Job per le **6 lingue più parlate al mondo**:
@@ -226,20 +236,11 @@ I file usano chiavi di traduzione nidificate che rimandano a chiavi principali:
 
 ## 📚 Documentazione Correlata
 
-- [Translation Standards](../../Xot/docs/translation-standards.md)
-- [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
-<<<<<<< HEAD
 - [Translation Standards](../../xot/docs/translation-standards.md)
-- [Navigation Translations Fixes](../../lang/docs/navigation-translations-fixes.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Navigation Translations Fixes](../../Lang/docs/navigation-translations-fixes.md)
 
 ---
 
 **Status**: 📝 **ROADMAP CREATA - PRONTA PER IMPLEMENTAZIONE**
 
-**Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
-=======
->>>>>>> 6ed19256f (.)

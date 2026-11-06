@@ -17,11 +17,8 @@ package-lock.json
 # Backup files
 *.backup
 *.backup.*
-<<<<<<< HEAD
 *.backup-*
 *.backup_*
-=======
->>>>>>> 6ed19256f (.)
 *.bak
 *.old
 *.old1
@@ -47,10 +44,12 @@ package-lock.json
 # PHPStan documentation
 docs/phpstan/
 
-<<<<<<< HEAD
 _docs/
 
 # Local generated documentation archives
-archive/
-=======
->>>>>>> 6ed19256f (.)
+archive/agentdb.rvf
+
+# Le story di lane PHPStan vanno versionate: il .gitignore radice del modulo nasconde
+# phpstan* (cache e baseline) e coprirebbe anche loro. Le negazioni vincono sul file radice.
+!stories/phpstan-*.story.md
+!phpstan-*.story.md

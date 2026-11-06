@@ -1,3 +1,13 @@
+---
+title: "Deprecazione Comandi MCP e Migrazione Azioni Database"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Deprecazione Comandi MCP e Migrazione Azioni Database"
+---
 # Deprecazione Comandi MCP e Migrazione Azioni Database
 
 ## Panoramica
@@ -119,13 +129,8 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 ## Collegamenti Correlati
 
 - [Modulo DbForge](../DbForge/docs/)
-<<<<<<< HEAD
-- [Best Practices Database](../../../docs/database-best-practices.md)
-- [Architettura Moduli](../../../docs/module-architecture.md)
-=======
 - [Best Practices Database](../../docs/database-best-practices.md)
 - [Architettura Moduli](../../docs/module-architecture.md)
->>>>>>> 6ed19256f (.)
 
 ## Note per gli Sviluppatori
 
@@ -144,8 +149,4 @@ Aggiornare la documentazione del progetto per riflettere i nuovi percorsi dei co
 
 ---
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: Giugno 2025*
-=======
-*Ultimo aggiornamento: Giugno 2025*
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: Giugno 2025* 

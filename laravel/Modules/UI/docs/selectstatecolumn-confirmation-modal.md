@@ -1,3 +1,15 @@
+---
+title: "selectstatecolumn confirmation modal"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "selectstatecolumn confirmation modal"
+issues: []
+discussions: []
+status: draft
+---
+
 # SelectStateColumn - Aggiunta Modal di Conferma
 
 ## Panoramica
@@ -34,11 +46,7 @@ Questo documento descrive l'implementazione di una modale di conferma con textar
 - Verificare i permessi dell'utente prima di consentire la transizione
 
 ## Documentazione Correlata
-- [SelectStateColumn.md](./SelectStateColumn.md)
-<<<<<<< HEAD
 - [SelectStateColumn.md](./selectstatecolumn.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Filament Modals Documentation](https://filamentphp.com/docs/3.x/panels/modals)
 - [State Management](./state-management.md)
 
@@ -90,11 +98,7 @@ Questo documento descrive l'implementazione di una modale di conferma con textar
 - Verificare i permessi dell'utente prima di consentire la transizione
 
 ## Documentazione Correlata
-- [SelectStateColumn.md](./SelectStateColumn.md)
-<<<<<<< HEAD
 - [SelectStateColumn.md](./selectstatecolumn.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Filament Modals Documentation](https://filamentphp.com/project_docs/3.x/panels/modals)
 - [Filament Modals Documentation](https://filamentphp.com/project_docs/3.x/panels/modals)
 - [Filament Modals Documentation](https://filamentphp.com/project_docs/3.x/panels/modals)
@@ -111,8 +115,4 @@ Verificare che:
 2. Il messaggio venga passato correttamente alla transizione
 3. La modale si chiuda in entrambi gli scenari
 4. Lo stato venga aggiornato correttamente nel database
-<<<<<<< HEAD
 5. Gli errori vengano gestiti in modo appropriato
-=======
-5. Gli errori vengano gestiti in modo appropriato
->>>>>>> 6ed19256f (.)

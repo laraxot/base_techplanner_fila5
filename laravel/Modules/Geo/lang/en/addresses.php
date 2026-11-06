@@ -6,9 +6,9 @@ return [
     'field' => [
         'label' => 'Indirizzi',
         'help' => [
-            'title' => 'Gestione Indirizzi',
-            'description' => 'Puoi aggiungere più indirizzi. Con più indirizzi potrai specificare un nome identificativo e designare uno come principale.',
-            'primary_note' => 'Solo un indirizzo può essere impostato come principale alla volta.',
+            'title' => 'Address management',
+            'description' => 'You can add multiple addresses. With multiple addresses you can specify an identifying name and designate one as the primary address.',
+            'primary_note' => 'Only one address can be set as primary at a time.',
         ],
         'actions' => [
             'add' => 'Aggiungi Indirizzo',
@@ -26,22 +26,16 @@ return [
             'label' => 'Nome Indirizzo',
             'placeholder' => 'es. Sede Principale, Filiale Nord, Casa',
             'help' => 'Nome identificativo per questo indirizzo (visibile solo con più indirizzi)',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_primary' => [
             'label' => 'Indirizzo Principale',
             'help' => 'Designa questo come indirizzo principale (solo uno può essere principale)',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [
@@ -62,7 +56,6 @@ return [
         'primary_exclusivity' => 'Impostando questo come principale, tutti gli altri diventeranno secondari',
         'single_primary' => 'Con un solo indirizzo, questo è automaticamente il principale',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -74,6 +67,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

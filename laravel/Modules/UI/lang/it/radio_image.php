@@ -6,7 +6,6 @@ return [
     'fields' => [
         'view' => [
             'label' => 'view',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -23,7 +22,7 @@ return [
         ],
         'label' => 'Radio Image',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -34,8 +33,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Radio Image',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

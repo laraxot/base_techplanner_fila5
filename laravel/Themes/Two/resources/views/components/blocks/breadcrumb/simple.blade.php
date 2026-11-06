@@ -1,13 +1,13 @@
-<nav class="flex items-center space-x-2 text-sm py-4" aria-label="Breadcrumb">
+<nav class="flex items-center space-x-2 text-sm py-4" aria-label="{{ __('pub_theme::header.navigation.breadcrumb.label') }}">
     @foreach($items as $index => $item)
         @if($index > 0)
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4 text-gray-600" aria-hidden="true">
                 <path d="m9 18 6-6-6-6"></path>
             </svg>
         @endif
         
         @if($item['url'])
-            <a href="{{ $item['url'] }}" class="flex items-center text-gray-600 hover:text-brand-blue transition-colors">
+            <a href="{{ $item['url'] }}" class="inline-flex min-h-11 min-w-11 items-center justify-center rounded-md text-gray-700 hover:text-brand-blue hover:underline transition-colors">
                 @if($index === 0)
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-4 h-4">
                         <path d="M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"></path>
@@ -18,7 +18,7 @@
                 @endif
             </a>
         @else
-            <span class="text-gray-900 font-medium">{{ $item['label'] }}</span>
+            <span class="text-gray-900 font-medium" aria-current="page">{{ $item['label'] }}</span>
         @endif
     @endforeach
 </nav>

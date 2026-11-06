@@ -1,10 +1,18 @@
+---
+title: "address column implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "address column implementation"
+issues: []
+discussions: []
+status: draft
+---
+
 # AddressColumn Implementation Plan
 
-**Date**: 2025-12-12
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Module**: Geo
 **Status**: 📋 **PLANNING**
 
@@ -158,8 +166,4 @@ AddressItemEnum::columns($table, $this);
 1. Implement `AddressItemEnum::columns()` method
 2. Create `AddressColumn` trait
 3. Update documentation in other modules
-<<<<<<< HEAD
 4. Begin migration updates
-=======
-4. Begin migration updates
->>>>>>> 6ed19256f (.)

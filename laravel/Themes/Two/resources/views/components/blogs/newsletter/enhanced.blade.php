@@ -2,12 +2,12 @@
 declare(strict_types=1);
 
 @props([
-    'title' => 'Rimani Aggiornato',
-    'subtitle' => 'Ricevi ogni settimana i migliori articoli e aggiornamenti normativi direttamente nella tua casella di posta',
-    'placeholder' => 'Inserisci la tua email',
-    'button_text' => 'Iscriviti Ora',
+    'title' => __('pub_theme::blog.newsletter.title.title'),
+    'subtitle' => __('pub_theme::blog.newsletter.subtitle.message'),
+    'placeholder' => __('pub_theme::blog.newsletter.email.placeholder'),
+    'button_text' => __('pub_theme::blog.newsletter.submit.label'),
     'subscriber_count' => 2500,
-    'privacy_text' => 'Iscrivendoti accetti la nostra Privacy Policy. Puoi cancellarti in qualsiasi momento.'
+    'privacy_text' => __('pub_theme::blog.newsletter.privacy.message')
 ])
 ?>
 
@@ -43,13 +43,13 @@ declare(strict_types=1);
                     <div class="flex -space-x-2">
                         @for($i = 1; $i <= 5; $i++)
                             <img src="https://i.pravatar.cc/40?img={{ $i + 10 }}" 
-                                 alt="Subscriber" 
+                                 alt="{{ __('pub_theme::blog.newsletter.subscriber.label') }}" 
                                  class="w-10 h-10 rounded-full border-2 border-white">
                         @endfor
                     </div>
                     <div class="ml-4 text-white">
                         <span class="font-bold text-lg">{{ number_format($subscriber_count) }}</span>
-                        <span class="text-blue-100 text-sm"> iscritti attivi</span>
+                        <span class="text-blue-100 text-sm"> {{ __('pub_theme::blog.newsletter.active_subscribers.label') }}</span>
                     </div>
                 </div>
             </div>
@@ -82,19 +82,19 @@ declare(strict_types=1);
                     <svg class="w-5 h-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span class="text-sm">Articoli esclusivi</span>
+                    <span class="text-sm">{{ __('pub_theme::blog.newsletter.benefit_articles.label') }}</span>
                 </div>
                 <div class="flex items-center justify-center space-x-2 text-white">
                     <svg class="w-5 h-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span class="text-sm">Aggiornamenti normativi</span>
+                    <span class="text-sm">{{ __('pub_theme::blog.newsletter.benefit_updates.label') }}</span>
                 </div>
                 <div class="flex items-center justify-center space-x-2 text-white">
                     <svg class="w-5 h-5 text-blue-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    <span class="text-sm">Niente spam</span>
+                    <span class="text-sm">{{ __('pub_theme::blog.newsletter.benefit_nospam.label') }}</span>
                 </div>
             </div>
         </div>

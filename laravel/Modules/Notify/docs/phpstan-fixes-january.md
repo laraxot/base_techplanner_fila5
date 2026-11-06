@@ -1,3 +1,15 @@
+---
+title: "phpstan fixes january"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes january"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🔧 PHPStan Fixes - Modulo Notify - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -232,10 +244,6 @@ public function toMail(object $notifiable): MailMessage
 
 ### **Documentazione Correlata**
 - [README.md Modulo Notify](./README.md)
-<<<<<<< HEAD
-- [README.md Modulo Notify](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Template Management](./template-management.md)
 - [Best Practices](./best-practices.md)
 
@@ -245,14 +253,9 @@ public function toMail(object $notifiable): MailMessage
 - [Laravel Mail Best Practices](https://laravel.com/docs/mail)
 
 ---
-
 **🔄 Ultimo aggiornamento**: 27 Gennaio 2025
 **📦 Versione**: 1.0
 **🐛 PHPStan Level**: 9–10 ✅
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 92/100 score
-<<<<<<< HEAD
 **✨ Test Coverage**: 95% ✅
-=======
-**✨ Test Coverage**: 95% ✅
->>>>>>> 6ed19256f (.)

@@ -1,10 +1,18 @@
+---
+title: "transclass rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "transclass rule"
+issues: []
+discussions: []
+status: draft
+---
+
 # REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
 
-## Data: 2025-01-06
-<<<<<<< HEAD
 ## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## ✅ CORRETTO - Implementazione Enum con TransTrait
 
@@ -286,16 +294,9 @@ rules:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
 - [Translation Standards](../../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
 - [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
-=======
-- [Translation Standards](../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../docs/filament_best_practices.md)
-- [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
->>>>>>> 6ed19256f (.)
 
 ## Memoria Permanente
 
@@ -306,16 +307,9 @@ rules:
 - SEMPRE struttura espansa nelle traduzioni
 - SEMPRE sincronizzazione IT/EN/DE
 
-*Ultimo aggiornamento: 2025-01-06*
-# REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
-
-## Data: 2025-01-06
-<<<<<<< HEAD
 # REGOLA CRITICA: Usa SEMPRE transClass() negli Enum
 
 ## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## ✅ CORRETTO - Implementazione Enum con TransTrait
 
@@ -597,16 +591,9 @@ rules:
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
 - [Translation Standards](../../../../docs/translation_standards.md)
 - [Filament Best Practices](../../../../docs/filament_best_practices.md)
 - [TransTrait Documentation](../../xot/docs/trans_trait_usage.md)
-=======
-- [Translation Standards](../../../docs/translation_standards.md)
-- [Filament Best Practices](../../../docs/filament_best_practices.md)
-- [TransTrait Documentation](../../Xot/docs/trans_trait_usage.md)
->>>>>>> 6ed19256f (.)
 
 ## Memoria Permanente
 
@@ -617,8 +604,3 @@ rules:
 - SEMPRE struttura espansa nelle traduzioni
 - SEMPRE sincronizzazione IT/EN/DE
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

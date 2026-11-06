@@ -1,3 +1,15 @@
+---
+title: "volt folio structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "volt folio structure"
+issues: []
+discussions: []
+status: draft
+---
+
 # Volt con Folio: Struttura Corretta
 
 ## Regola Fondamentale
@@ -129,17 +141,10 @@ function login(): void {
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
 - [Folio ](./folio_overview.md)
 - [Volt Best Practices](./volt_best_practices.md)
-- [Autenticazione con Volt e Folio](../../user/docs/volt_folio_auth_implementation.md)
+- [Autenticazione con Volt e Folio](../../User/docs/volt_folio_auth_implementation.md)
 - [Layout Components](../components/layouts.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Folio ](./FOLIO_OVERVIEW.md)
-- [Volt Best Practices](./VOLT_BEST_PRACTICES.md)
-- [Autenticazione con Volt e Folio](../../User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
-- [Layout Components](../components/LAYOUTS.md)
 # Volt con Folio: Struttura Corretta
 
 ## Regola Fondamentale
@@ -271,18 +276,7 @@ function login(): void {
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
 - [Folio ](./folio_overview.md)
 - [Volt Best Practices](./volt_best_practices.md)
-- [Autenticazione con Volt e Folio](../../user/docs/volt_folio_auth_implementation.md)
+- [Autenticazione con Volt e Folio](../../User/docs/volt_folio_auth_implementation.md)
 - [Layout Components](../components/layouts.md)
-- [Folio ](./FOLIO_OVERVIEW.md)
-- [Volt Best Practices](./VOLT_BEST_PRACTICES.md)
-- [Autenticazione con Volt e Folio](../../User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
-- [Layout Components](../components/LAYOUTS.md)
-=======
-- [Folio ](./FOLIO_OVERVIEW.md)
-- [Volt Best Practices](./VOLT_BEST_PRACTICES.md)
-- [Autenticazione con Volt e Folio](../../User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
-- [Layout Components](../components/LAYOUTS.md)
->>>>>>> 6ed19256f (.)

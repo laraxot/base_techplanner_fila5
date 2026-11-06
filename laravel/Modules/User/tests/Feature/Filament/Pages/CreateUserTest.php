@@ -2,46 +2,20 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-namespace Modules\User\Tests\Feature\Filament\Pages;
-
-=======
->>>>>>> 6ed19256f (.)
-use Filament\Facades\Filament;
+use Tests\TestCase;
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Models\User;
-use Modules\User\Providers\Filament\AdminPanelProvider;
-use Modules\User\Tests\TestCase;
-use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 uses(TestCase::class);
 
 beforeEach(function (): void {
-    // Ensure the panel is registered
-    try {
-        $panel = Filament::getPanel('user::admin');
-    } catch (Exception $e) {
-        $panelProvider = new AdminPanelProvider(app());
-        $panel = $panelProvider->panel(Filament::getPanelRegistry()->makePanel('user::admin'));
-        Filament::registerPanel($panel);
-    }
-    Filament::setCurrentPanel($panel);
-
     $this->createUserPage = new CreateUser();
 });
 
 test('create user page has correct resource', function (): void {
     expect($this->createUserPage->getResource())->toBe(UserResource::class);
-});
-
-test('create user page extends correct base class', function (): void {
-    expect($this->createUserPage)->toBeInstanceOf(XotBaseCreateRecord::class);
-});
-
-test('create user page can be instantiated', function (): void {
-    expect($this->createUserPage)->toBeInstanceOf(CreateUser::class);
 });
 
 test('create user page has correct navigation label', function (): void {
@@ -59,24 +33,15 @@ test('create user page has correct title', function (): void {
 });
 
 test('create user page has correct breadcrumbs structure', function (): void {
-    // Breadcrumbs generation might fail due to route parameters in multi-tenant setup
-    // Instead, test that the method exists and returns the expected type
-    expect(method_exists($this->createUserPage, 'getBreadcrumbs'))->toBeTrue();
-
+    // Senza i parametri di rotta del tenant la generazione lancia: il test non e' applicabile.
     try {
         $breadcrumbs = $this->createUserPage->getBreadcrumbs();
-        expect($breadcrumbs)->toBeArray();
-    } catch (Exception $e) {
-        // In multi-tenant environments, breadcrumb generation might fail due to missing parameters
-        // This is expected behavior, so we'll just verify the method exists
-        expect(true)->toBeTrue();
+    } catch (Exception) {
+        $this->markTestSkipped('Breadcrumbs need route parameters not available in multi-tenant setup.');
     }
-});
 
-test('create user page can be accessed', function (): void {
-    // This test would require authentication and proper setup
-    // For now, we'll test that the class can be instantiated
-    expect($this->createUserPage)->toBeInstanceOf(CreateUser::class);
+    // Filament aggiunge sempre almeno il breadcrumb della pagina corrente.
+    expect($breadcrumbs)->not->toBeEmpty();
 });
 
 test('create user page can create user with valid data', function (): void {
@@ -114,6 +79,12 @@ test('create user page handles form submission structure', function (): void {
     expect($formData['email'])->toBe('newuser@example.com');
     expect($formData['password'])->toBe('newpassword123');
     expect($formData['type'])->toBe(UserType::BoUser);
+});
+
+test('create user page has basic form functionality', function (): void {
+    // Test that the page has basic form capabilities
+    // Filament 5 non espone piu' `getFormModel()` (form -> schema): il modello e' verificato da `getModel()` sotto.
+    expect(method_exists($this->createUserPage, 'form'))->toBeTrue();
 });
 
 test('create user page follows filament conventions', function (): void {

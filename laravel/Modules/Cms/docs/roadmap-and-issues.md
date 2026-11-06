@@ -1,3 +1,15 @@
+---
+title: "roadmap and issues"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap and issues"
+issues: []
+discussions: []
+status: draft
+---
+
 # Cms Module - Roadmap & Optimization
 
 **Modulo**: Cms (Content Management System)
@@ -6,7 +18,6 @@
 **Status Generale**: ✅ ECCELLENTE
 
 ---
-
 ## ✅ COMPLETEZZA: 90%
 
 **Funzionalità Implementate**:
@@ -52,17 +63,9 @@
 ## 🔗 Collegamenti
 
 - [← Cms Module README](../README.md)
-<<<<<<< HEAD
-- [← Cms Module README](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [← Root Documentation](../../../docs/index.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
 **Status**: ✅ COMPLETO
-<<<<<<< HEAD
 **Maintenance**: Routine
-=======
-**Maintenance**: Routine
->>>>>>> 6ed19256f (.)

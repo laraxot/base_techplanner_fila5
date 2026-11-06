@@ -8,13 +8,14 @@ use Modules\Cms\Tests\TestCase;
 
 use function Pest\Laravel\get;
 
-uses(TestCase::class);
-
 describe('CMS Individual Folio Routes Tests', function () {
+    beforeEach(function () {
+        $this->lang = app()->getLocale();
+    });
+
     // Test homepage dal punto di vista CMS
     test('cms: route GET /{locale} (homepage)', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale);
+        $response = get('/'.$this->lang);
 
         $response->assertStatus(200);
 
@@ -28,8 +29,7 @@ describe('CMS Individual Folio Routes Tests', function () {
 
     // Test auth routes dal punto di vista CMS
     test('cms: route GET /{locale}/auth/login', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/login');
+        $response = get('/'.$this->lang.'/auth/login');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/login: '.$status);
@@ -43,8 +43,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/register', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/register');
+        $response = get('/'.$this->lang.'/auth/register');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/register: '.$status);
@@ -58,8 +57,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/logout', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/logout');
+        $response = get('/'.$this->lang.'/auth/logout');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/logout: '.$status);
@@ -72,8 +70,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/logout_fixed', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/logout_fixed');
+        $response = get('/'.$this->lang.'/auth/logout_fixed');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/logout_fixed: '.$status);
@@ -85,8 +82,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/password/confirm', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/password/confirm');
+        $response = get('/'.$this->lang.'/auth/password/confirm');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/password/confirm: '.$status);
@@ -98,8 +94,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/password/reset', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/password/reset');
+        $response = get('/'.$this->lang.'/auth/password/reset');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/password/reset: '.$status);
@@ -111,8 +106,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/password/{token}', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/password/test-token');
+        $response = get('/'.$this->lang.'/auth/password/test-token');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/password/{token}: '.$status);
@@ -124,8 +118,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/verify', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/verify');
+        $response = get('/'.$this->lang.'/auth/verify');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/verify: '.$status);
@@ -137,8 +130,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/thank-you', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/thank-you');
+        $response = get('/'.$this->lang.'/auth/thank-you');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/thank-you: '.$status);
@@ -150,8 +142,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/register/thank-you', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/register/thank-you');
+        $response = get('/'.$this->lang.'/auth/register/thank-you');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/register/thank-you: '.$status);
@@ -163,8 +154,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/{type}/register - patient', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/patient/register');
+        $response = get('/'.$this->lang.'/auth/patient/register');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/{type}/register (patient): '.$status);
@@ -178,8 +168,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/auth/{type}/register - doctor', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/auth/doctor/register');
+        $response = get('/'.$this->lang.'/auth/doctor/register');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/auth/{type}/register (doctor): '.$status);
@@ -193,8 +182,7 @@ describe('CMS Individual Folio Routes Tests', function () {
 
     // Test pagine CMS specifiche
     test('cms: route GET /{locale}/pages', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/pages');
+        $response = get('/'.$this->lang.'/pages');
 
         $response->assertStatus(200);
 
@@ -203,15 +191,8 @@ describe('CMS Individual Folio Routes Tests', function () {
         $response->assertSee('<html');
     });
 
-<<<<<<< HEAD
-    test('cms: route GET /{locale}/{slug}', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/test-slug');
-=======
     test('cms: route GET /{locale}/pages/{slug}', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/pages/test-slug');
->>>>>>> 6ed19256f (.)
+        $response = get('/'.$this->lang.'/pages/test-slug');
 
         // Le pagine dinamiche potrebbero non esistere
         expect($response->status())->toBeIn([200, 404]);
@@ -225,8 +206,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/learn', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/learn');
+        $response = get('/'.$this->lang.'/learn');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/learn: '.$status);
@@ -238,8 +218,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/genesis/about', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/genesis/about');
+        $response = get('/'.$this->lang.'/genesis/about');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/genesis/about: '.$status);
@@ -251,8 +230,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/genesis/power-ups', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/genesis/power-ups');
+        $response = get('/'.$this->lang.'/genesis/power-ups');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/genesis/power-ups: '.$status);
@@ -264,8 +242,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/classi-css', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/classi-css');
+        $response = get('/'.$this->lang.'/classi-css');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/classi-css: '.$status);
@@ -277,8 +254,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/registration/thank-you', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/registration/thank-you');
+        $response = get('/'.$this->lang.'/registration/thank-you');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/registration/thank-you: '.$status);
@@ -290,8 +266,7 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: route GET /{locale}/errors/password-expired', function () {
-        $locale = (string) app()->getLocale();
-        $response = get('/'.$locale.'/errors/password-expired');
+        $response = get('/'.$this->lang.'/errors/password-expired');
         $status = $response->status();
         if ($status >= 500) {
             $this->markTestSkipped('Server error on /{locale}/errors/password-expired: '.$status);
@@ -305,31 +280,17 @@ describe('CMS Individual Folio Routes Tests', function () {
     // Test CMS con contenuti JSON
     describe('CMS Content Management Routes', function () {
         test('cms verifies json content loading for homepage', function () {
-            $locale = (string) app()->getLocale();
-            $response = get('/'.$locale);
+            $response = get('/'.$this->lang);
             $response->assertStatus(200);
 
-            // Verifica che il JSON della homepage sia caricato correttamente
-            // Il sito funziona, quindi il path reale è config/local/laravelpizza/
-<<<<<<< HEAD
-            $homepageJsonPath = config_path('local/laravelpizza/database/content/home.json');
-=======
-            $homepageJsonPath = config_path('local/laravelpizza/database/content/pages/home.json');
->>>>>>> 6ed19256f (.)
-            // Il file potrebbe non esistere in test environment, quindi accettiamo sia true che false
-            if (! file_exists($homepageJsonPath)) {
-                $this->markTestSkipped('Homepage JSON file not found in test environment: '.$homepageJsonPath);
-            }
-
-            $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
-            $locale = (string) app()->getLocale();
-            expect($homepageData['content_blocks'])->toHaveKey($locale);
+            // Verifica che il JSON della homepage sia caricato correttamente (salta se il tenant non ce l'ha)
+            $homepageData = TestCase::homepageJsonForBlocksArchitecture();
+            expect($homepageData['content_blocks'])->toHaveKey($this->lang);
 
             $content = $response->getContent();
 
             // Verifica che i blocchi JSON siano renderizzati
-            $locale = (string) app()->getLocale();
-            $blocks = $homepageData['content_blocks'][$locale];
+            $blocks = cmsHomepageBlocks($this->lang);
             foreach ($blocks as $block) {
                 if (isset($block['data']['title'])) {
                     expect($content)->toContain($block['data']['title']);
@@ -338,26 +299,10 @@ describe('CMS Individual Folio Routes Tests', function () {
         });
 
         test('cms handles theme view resolution correctly', function () {
-            $locale = (string) app()->getLocale();
-            $response = get('/'.$locale);
+            $response = get('/'.$this->lang);
             $response->assertStatus(200);
 
-            // Il sito funziona, quindi il path reale è config/local/laravelpizza/
-<<<<<<< HEAD
-            $homepageJsonPath = config_path('local/laravelpizza/database/content/home.json');
-=======
-            $homepageJsonPath = config_path('local/laravelpizza/database/content/pages/home.json');
->>>>>>> 6ed19256f (.)
-            if (! file_exists($homepageJsonPath)) {
-                $this->markTestSkipped('Homepage JSON file not found in test environment: '.$homepageJsonPath);
-            }
-            $homepageData = json_decode(
-                file_get_contents($homepageJsonPath),
-                true,
-            );
-
-            $locale = (string) app()->getLocale();
-            $blocks = $homepageData['content_blocks'][$locale];
+            $blocks = cmsHomepageBlocks($this->lang);
 
             // Verifica che le viste seguano il pattern theme
             foreach ($blocks as $block) {
@@ -368,22 +313,7 @@ describe('CMS Individual Folio Routes Tests', function () {
         });
 
         test('cms processes blade syntax in json correctly', function () {
-            // Il sito funziona, quindi il path reale è config/local/laravelpizza/
-<<<<<<< HEAD
-            $homepageJsonPath = config_path('local/laravelpizza/database/content/home.json');
-=======
-            $homepageJsonPath = config_path('local/laravelpizza/database/content/pages/home.json');
->>>>>>> 6ed19256f (.)
-            if (! file_exists($homepageJsonPath)) {
-                $this->markTestSkipped('Homepage JSON file not found in test environment: '.$homepageJsonPath);
-            }
-            $homepageData = json_decode(
-                file_get_contents($homepageJsonPath),
-                true,
-            );
-
-            $locale = (string) app()->getLocale();
-            $blocks = $homepageData['content_blocks'][$locale];
+            $blocks = cmsHomepageBlocks($this->lang);
             $landingBlock = collect($blocks)->firstWhere('type', 'landing-page');
 
             if ($landingBlock) {
@@ -391,8 +321,7 @@ describe('CMS Individual Folio Routes Tests', function () {
                 expect($landingBlock['data']['cta_link'])->toContain("{{ route('register') }}");
 
                 // Verifica che sia processata correttamente nella pagina
-                $locale = (string) app()->getLocale();
-                $response = get('/'.$locale);
+                $response = get('/'.$this->lang);
                 $content = $response->getContent();
 
                 $expectedUrl = route('register');
@@ -403,10 +332,9 @@ describe('CMS Individual Folio Routes Tests', function () {
 
     // Test performance CMS
     test('cms: homepage renders within acceptable time', function () {
-        $locale = (string) app()->getLocale();
         $startTime = microtime(true);
 
-        $response = get('/'.$locale);
+        $response = get('/'.$this->lang);
         $response->assertStatus(200);
 
         $endTime = microtime(true);
@@ -417,10 +345,9 @@ describe('CMS Individual Folio Routes Tests', function () {
     });
 
     test('cms: auth pages render within acceptable time', function () {
-        $locale = (string) app()->getLocale();
         $authRoutes = [
-            '/'.$locale.'/auth/login',
-            '/'.$locale.'/auth/register',
+            '/'.$this->lang.'/auth/login',
+            '/'.$this->lang.'/auth/register',
         ];
 
         foreach ($authRoutes as $route) {

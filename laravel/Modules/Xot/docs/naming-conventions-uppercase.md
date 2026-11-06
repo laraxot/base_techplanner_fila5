@@ -1,3 +1,11 @@
+---
+title: "Convenzioni di Nomenclatura in <nome progetto>"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "convenzioni di nomenclatura in <nome progetto> xot"
+---
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -194,19 +202,11 @@ Questo documento descrive le convenzioni di denominazione da seguire all'interno
 - Aggiornare questo documento se vengono introdotti nuovi schemi di denominazione o convenzioni.
 
 ## Collegamenti alla documentazione correlata
-<<<<<<< HEAD
-- [Qualità del codice](./code_quality.md)
-- [Tipi rigorosi PHP](./php-strict-types.md)
-- [Guida all'implementazione di PHPStan](./phpstan-implementation-guide.md)
-- [Best practice per i provider di servizi](./service-provider-best-practices.md)
-- [Best practice per Filament](./filament-best-practices.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Qualità del codice](./CODE_QUALITY.md)
-- [Tipi rigorosi PHP](./PHP-STRICT-TYPES.md)
-- [Guida all'implementazione di PHPStan](./PHPSTAN-IMPLEMENTATION-GUIDE.md)
-- [Best practice per i provider di servizi](./SERVICE-PROVIDER-BEST-PRACTICES.md)
-- [Best practice per Filament](./FILAMENT-BEST-PRACTICES.md)
+- [Qualità del codice](code_quality.md)
+- [Tipi rigorosi PHP](php-strict-types.md)
+- [Guida all'implementazione di PHPStan](phpstan-implementation-guide.md)
+- [Best practice per i provider di servizi](service-provider-best-practices.md)
+- [Best practice per Filament](filament-best-practices.md)
 # Convenzioni di Nomenclatura in <nome progetto>
 
 Questo documento definisce le convenzioni ufficiali di nomenclatura da utilizzare in tutto il progetto <nome progetto>.
@@ -350,8 +350,4 @@ type(scope): descrizione breve
 Descrizione dettagliata se necessaria
 ```
 
-<<<<<<< HEAD
 Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
-=======
-Tipi: `feat`, `fix`, `docs`, `style`, `refactor`, `test`, `chore`
->>>>>>> 6ed19256f (.)

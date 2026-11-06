@@ -9,33 +9,24 @@ return [
             'placeholder' => 'Geben Sie Ihre E-Mail ein',
             'help' => 'Geben Sie die E-Mail-Adresse ein, mit der Sie sich registriert haben',
             'description' => 'E-Mail-Adresse für die Anmeldung',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Passwort',
             'placeholder' => 'Geben Sie Ihr Passwort ein',
             'help' => 'Geben Sie Ihr Kontopasswort ein',
             'description' => 'Passwort für die Anmeldung',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'remember' => [
             'label' => 'Angemeldet bleiben',
             'placeholder' => 'Sitzung aktiv halten',
             'help' => 'Wählen Sie aus, um Ihre Sitzung 30 Tage lang aktiv zu halten',
             'description' => 'Option zum Merken der Anmeldung',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -43,19 +34,6 @@ return [
             'label' => 'Anmelden',
             'tooltip' => 'Klicken Sie, um auf Ihr Konto zuzugreifen',
         ],
-<<<<<<< HEAD
-        'hidePassword' => [
-            'tooltip' => 'hidePassword',
-            'label' => 'hidePassword',
-            'icon' => 'hidePassword',
-        ],
-        'showPassword' => [
-            'label' => 'showPassword',
-            'icon' => 'showPassword',
-            'tooltip' => 'showPassword',
-        ],
-=======
->>>>>>> 6ed19256f (.)
     ],
     'messages' => [
         'login_success' => 'Anmeldung erfolgreich',
@@ -68,16 +46,4 @@ return [
         'forgot_password' => 'Passwort vergessen?',
         'errors_title' => 'Es sind einige Fehler aufgetreten',
     ],
-<<<<<<< HEAD
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

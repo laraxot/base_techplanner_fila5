@@ -1,3 +1,15 @@
+---
+title: "filament resource rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament resource rules"
+issues: []
+discussions: []
+status: draft
+---
+
 # Regole per le Risorse Filament in
 
 ## Panoramica
@@ -7,7 +19,6 @@ Questo documento definisce le regole fondamentali per l'implementazione delle ri
 ## Estensione di XotBaseResource
 
 Tutte le risorse Filament in  **DEVONO** estendere `Modules\Xot\Filament\Resources\XotBaseResource` invece di `Filament\Resources\Resource`. Questa classe base personalizzata fornisce funzionalità specifiche per il progetto e garantisce coerenza in tutta l'applicazione.
-<<<<<<< HEAD
 # Regole per le Risorse Filament in <nome progetto>
 
 ## Panoramica
@@ -17,17 +28,6 @@ Questo documento definisce le regole fondamentali per l'implementazione delle ri
 ## Estensione di XotBaseResource
 
 Tutte le risorse Filament in <nome progetto> **DEVONO** estendere `Modules\Xot\Filament\Resources\XotBaseResource` invece di `Filament\Resources\Resource`. Questa classe base personalizzata fornisce funzionalità specifiche per il progetto e garantisce coerenza in tutta l'applicazione.
-=======
-# Regole per le Risorse Filament in SaluteOra
-
-## Panoramica
-
-Questo documento definisce le regole fondamentali per l'implementazione delle risorse Filament nel progetto SaluteOra. Seguire queste linee guida è essenziale per garantire coerenza, manutenibilità e prestazioni ottimali dell'applicazione.
-
-## Estensione di XotBaseResource
-
-Tutte le risorse Filament in SaluteOra **DEVONO** estendere `Modules\Xot\Filament\Resources\XotBaseResource` invece di `Filament\Resources\Resource`. Questa classe base personalizzata fornisce funzionalità specifiche per il progetto e garantisce coerenza in tutta l'applicazione.
->>>>>>> 6ed19256f (.)
 
 ```php
 // ✅ CORRETTO
@@ -86,7 +86,17 @@ Le classi che estendono `XotBaseResource` **DEVONO** dichiarare solo:
 // ✅ DICHIARARE SOLO QUESTE PROPRIETÀ/METODI
 protected static ?string $model = YourModel::class;
 
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+title: "filament resource rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament resource rules"
+issues: []
+discussions: []
+public function getFormSchema(): array
 {
     return [
         'field_name' => Forms\Components\TextInput::make('field_name'),
@@ -181,7 +191,9 @@ class DoctorResource extends XotBaseResource
 {
     protected static ?string $model = Doctor::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+    public function getFormSchema(): array
     {
         return [
             'first_name' => Forms\Components\TextInput::make('first_name')

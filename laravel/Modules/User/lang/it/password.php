@@ -5,191 +5,41 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'name' => 'Password',
-        'plural' => 'Passwords',
+        'plural' => 'Password',
+        'updateDataAction' => [
+            'label' => 'Aggiorna dati',
+            'icon' => 'heroicon-o-arrow-path',
+            'tooltip' => 'Aggiorna i dati della password',
+        ],
+        'save' => [
+            'label' => 'Salva',
+            'icon' => 'heroicon-o-check',
+            'tooltip' => 'Salva la nuova password',
+        ],
+        'profile' => [
+            'label' => 'Profilo',
+            'icon' => 'heroicon-o-user-circle',
+            'tooltip' => 'Torna al profilo',
+        ],
+        'logout' => [
+            'label' => 'Esci',
+            'icon' => 'heroicon-o-arrow-right-on-rectangle',
+            'tooltip' => 'Esci dall\'account',
+        ],
         'group' => [
-            'name' => 'Admin',
-        ],
-    ],
-    'fields' => [
-<<<<<<< HEAD
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'otp_expiration_minutes' => [
-            'help' => 'Durata in minuti della validità della password temporanea',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'otp_length' => [
-            'help' => 'Lunghezza del codice OTP',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'expires_in' => [
-            'help' => 'Il numero di giorni prima che la password scadrà',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'min' => [
-            'help' => 'La dimensione minima della password',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'mixedCase' => [
-            'help' => 'la password richiede almeno una lettera maiuscola e una minuscola',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'letters' => [
-            'help' => 'la password richiede almeno una lettera',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'numbers' => [
-            'help' => 'la password richiede almeno un numero',
-            'label' => '',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'otp_expiration_minutes' => [
-            'help' => 'Durata in minuti della validità della password temporanea',
-        ],
-        'otp_length' => [
-            'help' => 'Lunghezza del codice OTP',
-        ],
-        'expires_in' => [
-            'help' => 'Il numero di giorni prima che la password scadrà',
-        ],
-        'min' => [
-            'help' => 'La dimensione minima della password',
-        ],
-        'mixedCase' => [
-            'help' => 'la password richiede almeno una lettera maiuscola e una minuscola',
-        ],
-        'letters' => [
-            'help' => 'la password richiede almeno una lettera',
-        ],
-        'numbers' => [
-            'help' => 'la password richiede almeno un numero',
->>>>>>> 6ed19256f (.)
-        ],
-        'symbols' => [
-            'help' => 'la password richiede almeno un simbolo',
-            'label' => [
-                'help' => 'la password richiede almeno un simbolo',
-            ],
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'uncompromised' => [
-            'help' => 'Se la password non deve essere stata compromessa in data leaks',
-            'label' => [
-                'help' => 'Se la password non deve essere stata compromessa in data leaks',
-            ],
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'compromisedThreshold' => [
-            'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
-            'label' => [
-                'help' => 'Il numero di volte che una password può apparire in data leaks prima di essere considerata compromessa',
-            ],
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'new_password' => [
-            'label' => 'new_password',
-            'fields' => [
-                'label' => 'new_password',
-            ],
-            'description' => 'new_password',
-            'helper_text' => 'new_password',
-            'placeholder' => 'new_password',
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'password' => [
-            'label' => 'Password',
-            'placeholder' => 'Inserisci la password',
-            'helper_text' => 'La password deve essere di almeno 8 caratteri',
-            'description' => 'Password',
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-            'placeholder' => 'Conferma la password',
-            'helper_text' => 'Reinserisci la password per confermare',
-            'description' => 'Conferma Password',
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
+            'name' => 'Gestione account',
+            'description' => 'Impostazioni e aggiornamento della password',
         ],
     ],
     'actions' => [
-        'import' => [
-            'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
+        'change_password' => [
+            'label' => 'Cambia password',
+            'modal' => [
+                'heading' => 'Cambia Password',
+                'description' => 'Inserisci la nuova password per confermare il cambio.',
             ],
-        ],
-        'export' => [
-            'filename_prefix' => 'Aree al',
-            'columns' => [
-                'name' => 'Nome area',
-                'parent_name' => 'Nome area livello superiore',
-            ],
-        ],
-        'change_password' => 'Cambio password',
-        'updateDataAction' => [
-            'label' => 'updateDataAction',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Password',
     'plural_label' => 'Password (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

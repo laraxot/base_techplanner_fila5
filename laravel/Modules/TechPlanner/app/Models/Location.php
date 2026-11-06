@@ -8,9 +8,14 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
-use Modules\TechPlanner\Database\Factories\LocationFactoryFactory;
+use Modules\TechPlanner\Database\Factories\LocationFactory;
 
 /**
+ * @method static \Modules\TechPlanner\Database\Factories\LocationFactory factory($count = null, $state = [])
+ * @method static Builder<static>|Location newModelQuery()
+ * @method static Builder<static>|Location newQuery()
+ * @method static Builder<static>|Location query()
+ *
  * @property int $id
  * @property string|null $model_type
  * @property string|null $model_id
@@ -30,14 +35,7 @@ use Modules\TechPlanner\Database\Factories\LocationFactoryFactory;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
- * @method static LocationFactoryFactory factory($count = null, $state = [])
- * @method static Builder<static>|Location newModelQuery()
- * @method static Builder<static>|Location newQuery()
- * @method static Builder<static>|Location query()
  * @method static Builder<static>|Location whereCity($value)
  * @method static Builder<static>|Location whereCreatedAt($value)
  * @method static Builder<static>|Location whereCreatedBy($value)
@@ -57,14 +55,12 @@ use Modules\TechPlanner\Database\Factories\LocationFactoryFactory;
  * @method static Builder<static>|Location whereUpdatedAt($value)
  * @method static Builder<static>|Location whereUpdatedBy($value)
  * @method static Builder<static>|Location whereZip($value)
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Location extends Model
 {
+    /** @use HasFactory<LocationFactory> */
     use HasFactory;
 
     /**
@@ -78,8 +74,8 @@ class Location extends Model
         'country',
     ];
 
-    protected static function newFactory(): LocationFactoryFactory
+    protected static function newFactory(): LocationFactory
     {
-        return LocationFactoryFactory::new();
+        return LocationFactory::new();
     }
 }

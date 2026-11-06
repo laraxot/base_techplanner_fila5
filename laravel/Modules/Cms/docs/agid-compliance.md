@@ -1,16 +1,23 @@
+---
+title: "agid compliance"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agid compliance"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🏛️ AGID Compliance - CMS Module
 
 **Module**: Cms
-**Date**: 2025-10-02
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Reference**: [design-comuni-pagine-statiche v2.4.0](https://github.com/italia/design-comuni-pagine-statiche)
 **Compliance Status**: **80%** ✅
 
 ---
-
 ## 📋 Overview
 
 The Cms module provides the foundation for content management in compliance with AGID standards for Italian public administration websites.
@@ -529,11 +536,5 @@ class Page extends BaseModel
 
 ---
 
-**Last Updated**: 2025-10-02
-**Next Review**: Bi-weekly
-<<<<<<< HEAD
 
 **Owner**: Cms Module Team
-=======
-**Owner**: Cms Module Team
->>>>>>> 6ed19256f (.)

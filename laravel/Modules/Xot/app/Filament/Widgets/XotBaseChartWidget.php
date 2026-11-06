@@ -23,7 +23,10 @@ abstract class XotBaseChartWidget extends FilamentChartWidget
 
     protected static ?int $sort = 1;
 
-    protected static bool $isLazy = true;
+    /*
+     * Niente $isLazyLoaded: il default di Filament e' gia' lazy, e un valore non null qui farebbe
+     * ignorare il $isLazy (deprecato) ancora dichiarato da sottoclassi in altri progetti.
+     */
 
     protected ?string $pollingInterval = null;
 
@@ -60,11 +63,7 @@ abstract class XotBaseChartWidget extends FilamentChartWidget
      *
      * @return array<string, mixed>
      */
-<<<<<<< HEAD
     protected function getOptionsArray(): array
-=======
-    protected function getOptions(): array
->>>>>>> 6ed19256f (.)
     {
         return [
             'responsive' => true,

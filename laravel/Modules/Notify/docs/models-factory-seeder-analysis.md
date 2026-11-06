@@ -1,3 +1,15 @@
+---
+title: "models factory seeder analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "models factory seeder analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Modelli, Factory e Seeder - Modulo Notify
 
 ## Riepilogo Modelli
@@ -55,7 +67,4 @@
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
->>>>>>> 6ed19256f (.)
+

@@ -1,12 +1,12 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -27,11 +27,7 @@ return new class extends XotBaseMigration {
             $table->string('avatar')->nullable();
 
             /*
-<<<<<<< HEAD
              * $table->unique([)
-=======
-             * $table->unique([
->>>>>>> 6ed19256f (.)
              * 'provider',
              * 'provider_id',
              * ]);
@@ -40,14 +36,10 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
             // if (! $this->hasColumn('email'))
-=======
-            // if (! $this->hasColumn('email')) {
->>>>>>> 6ed19256f (.)
             //    $table->string('email')->nullable();
             // }
-            if ('varchar' === $this->getColumnType('token')) {
+            if ($this->getColumnType('token') === 'varchar') {
                 $table->text('token')->nullable()->change();
             }
             $this->updateTimestamps($table);

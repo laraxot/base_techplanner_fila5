@@ -1,3 +1,11 @@
+---
+title: "Gestione della Documentazione e delle Regole"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "gestione della documentazione e delle regole xot"
+---
 # Gestione della Documentazione e delle Regole
 
 ## Struttura della Documentazione
@@ -5,11 +13,7 @@
 La documentazione del progetto è organizzata in modo gerarchico:
 
 ```
-<<<<<<< HEAD
 base_predict_fila5_mono/
-=======
-base_predict_fila3_mono/
->>>>>>> 6ed19256f (.)
 ├── docs/                           # Documentazione globale del progetto
 │   ├── ARCHITECTURE.md            # Architettura generale
 │   ├── MODULES.md                 # Panoramica dei moduli
@@ -147,8 +151,4 @@ Quando si identifica una nuova regola o pattern importante:
 4. **Windsurf**
    - [ ] Aggiornare .windsurfrules
    - [ ] Verificare coerenza
-<<<<<<< HEAD
    - [ ] Testare applicabilità
-=======
-   - [ ] Testare applicabilità
->>>>>>> 6ed19256f (.)

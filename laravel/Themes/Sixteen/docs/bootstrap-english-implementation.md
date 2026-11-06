@@ -1,3 +1,15 @@
+---
+title: "bootstrap english implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bootstrap english implementation"
+issues: []
+discussions: []
+status: draft
+---
+
 # Bootstrap Italia Design System Implementation
 
 Implementazione del design system Bootstrap Italia con Tailwind CSS per il tema Sixteen.
@@ -173,11 +185,7 @@ Tutti i componenti seguono le linee guida WCAG 2.1 AA:
 ## 🔧 Build e Compilazione
 
 ```bash
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
-=======
-cd /var/www/html/_bases/base_fixcity_fila3_mono/laravel/Themes/Sixteen
->>>>>>> 6ed19256f (.)
 
 # Installa dipendenze
 npm install
@@ -205,5 +213,4 @@ npm run build
 - [Tailwind CSS](https://tailwindcss.com/)
 
 ---
-
 *Implementazione conforme alle linee guida AGID per i siti web della Pubblica Amministrazione*

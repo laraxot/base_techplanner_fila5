@@ -1,10 +1,18 @@
+---
+title: "conflict resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitti Git - Modulo Geo
 
-## Data: 2025-01-06
-<<<<<<< HEAD
 ## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## File Corretti
 
@@ -98,7 +106,6 @@ use function Safe\json_decode;
 
 ## Verifiche Post-Correzione
 
-<<<<<<< HEAD
 
 ### 2. Validazione PHPStan
 ```bash
@@ -156,13 +163,6 @@ php artisan lang:check
 - [x] Collegamenti bidirezionali creati
 
 ---
-
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
-### 1. Controllo Conflitti
-```bash
 **Stato**: ✅ Completato
-=======
-### 1. Controllo Conflitti
-```bash
->>>>>>> 6ed19256f (.)

@@ -3,16 +3,10 @@
 declare(strict_types=1);
 
 return [
-    'navigation' => [
-        'label' => 'media convert',
-        'group' => 'media convert',
-        'icon' => 'media convert',
-        'sort' => 20,
-    ],
+    'navigation' => ['label' => 'Conversione media', 'group' => 'Conversione media', 'icon' => 'Conversione media', 'sort' => 20],
     'fields' => [
         'applyFilters' => [
             'label' => 'applyFilters',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -98,11 +92,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Media Convert',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

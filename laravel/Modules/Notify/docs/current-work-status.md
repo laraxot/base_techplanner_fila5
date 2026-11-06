@@ -1,3 +1,16 @@
+---
+title: "current work status"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "current work status"
+issues: []
+discussions: []
+status: superseded
+superseded_by: current-work.md
+---
+
 # Stato Attuale del Lavoro - 12 Maggio 2025
 
 ## Problematiche Identificate
@@ -13,13 +26,7 @@ Durante il lavoro di oggi sono state identificate due problematiche principali n
 ### 2. Problemi con le Traduzioni
 
 - **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di
-<<<<<<< HEAD
 - **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di <nome progetto>
-- **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di
-- **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di <nome progetto>
-=======
-- **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di SaluteOra
->>>>>>> 6ed19256f (.)
 - **Causa**: Il modulo Notify utilizza convenzioni specifiche che rappresentano un'eccezione documentata alle convenzioni generali
 - **Dettagli**: I file utilizzano la chiave `navigation` e un pattern di naming con prefisso `send_` in snake_case
 
@@ -69,11 +76,7 @@ Durante il lavoro di oggi sono state identificate due problematiche principali n
 ## Note Aggiuntive
 
 - È importante rispettare le convenzioni specifiche del modulo Notify, anche se differiscono dalle convenzioni generali di
-<<<<<<< HEAD
 - È importante rispettare le convenzioni specifiche del modulo Notify, anche se differiscono dalle convenzioni generali di <nome progetto>
-=======
-- È importante rispettare le convenzioni specifiche del modulo Notify, anche se differiscono dalle convenzioni generali di SaluteOra
->>>>>>> 6ed19256f (.)
 - La documentazione è stata aggiornata per riflettere queste eccezioni e prevenire confusioni future
 - Le soluzioni implementate mantengono la compatibilità con il codice esistente, garantendo al contempo chiarezza per gli sviluppatori futuri
 # Stato Attuale del Lavoro - 12 Maggio 2025
@@ -141,8 +144,4 @@ Durante il lavoro di oggi sono state identificate due problematiche principali n
 
 - È importante rispettare le convenzioni specifiche del modulo Notify, anche se differiscono dalle convenzioni generali di <main module>
 - La documentazione è stata aggiornata per riflettere queste eccezioni e prevenire confusioni future
-<<<<<<< HEAD
 - Le soluzioni implementate mantengono la compatibilità con il codice esistente, garantendo al contempo chiarezza per gli sviluppatori futuri
-=======
-- Le soluzioni implementate mantengono la compatibilità con il codice esistente, garantendo al contempo chiarezza per gli sviluppatori futuri
->>>>>>> 6ed19256f (.)

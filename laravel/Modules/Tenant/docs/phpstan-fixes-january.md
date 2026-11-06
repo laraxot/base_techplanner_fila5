@@ -1,12 +1,16 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: phpstan-fixes-january
-canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-.md
+title: "phpstan fixes january"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes january"
+issues: []
+discussions: []
+status: superseded
+superseded_by: phpstan-fixes-gennaio.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-.md
-=======
 # Correzioni PHPStan - Gennaio 2025
 
 ## Panoramica
@@ -100,4 +104,3 @@ if (isset($extra_conf['connections'][$default]) && is_array($extra_conf['connect
 - [Architettura Modulo Tenant](./architecture.md)
 - [SushiToJsons Trait](./sushi-to-jsons-trait.md)
 - [Tenant Service](./tenant-service.md)
->>>>>>> 6ed19256f (.)

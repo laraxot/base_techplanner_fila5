@@ -6,46 +6,17 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-=======
-use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Support\Carbon;
-use Modules\User\Database\Factories\TeamFactory;
->>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Class Modules\User\Models\Team.
  *
-<<<<<<< HEAD
- * @property string                          $id
- * @property string                          $user_id                (DC2Type:guid)
- * @property string                          $name
- * @property int                             $personal_team
- * @property Carbon|null                     $created_at
- * @property Carbon|null                     $updated_at
- * @property string|null                     $updated_by
- * @property string|null                     $created_by
- * @property Carbon|null                     $deleted_at
- * @property string|null                     $deleted_by
- * @property ProfileContract|null            $creator
- * @property TeamUser                        $pivot
- * @property Collection<int, User>           $members
- * @property int|null                        $members_count
- * @property User|null                       $owner
- * @property Collection<int, TeamInvitation> $teamInvitations
- * @property int|null                        $team_invitations_count
- * @property ProfileContract|null            $updater
- * @property Collection<int, User>           $users
- * @property int|null                        $users_count
- *
-=======
  * @property string $id
  * @property string $user_id (DC2Type:guid)
  * @property string $name
- * @property int $personal_team
+ * @property bool $personal_team
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -63,8 +34,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Collection<int, User> $users
  * @property int|null $users_count
  *
- * @method static TeamFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  * @method static Builder|Team newModelQuery()
  * @method static Builder|Team newQuery()
  * @method static Builder|Team query()
@@ -90,48 +59,33 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $owner_id
  *
  * @method static Builder<static>|Team whereOwnerId($value)
-<<<<<<< HEAD
- * @method static static               create(array $attributes = [])
- * @method static static               firstOrCreate(array $attributes, array $values = [])
- * @method static static               updateOrCreate(array $attributes, array $values = [])
-=======
- * @method static static create(array $attributes = [])
- * @method static static firstOrCreate(array $attributes, array $values = [])
- * @method static static updateOrCreate(array $attributes, array $values = [])
->>>>>>> 6ed19256f (.)
- *
- * @mixin IdeHelperTeam
+ * @method static static create(array<string, mixed> $attributes = [])
+ * @method static static firstOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
+ * @method static static updateOrCreate(array<string, mixed> $attributes, array<string, mixed> $values = [])
  *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\TeamFactory factory($count = null, $state = [])
  *
- * @property string|null                     $slug
- * @property string|null                     $description
- * @property string|null                     $avatar_path
- * @property array<array-key, mixed>|null    $settings
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $avatar_path
+ * @property array<array-key, mixed>|null $settings
  * @property Collection<int, TeamPermission> $permissions
- * @property int|null                        $permissions_count
- * @property Collection<int, TeamUser>       $teamUsers
- * @property int|null                        $team_users_count
+ * @property int|null $permissions_count
+ * @property Collection<int, TeamUser> $teamUsers
+ * @property int|null $team_users_count
  *
  * @method static Builder<static>|Team whereAvatarPath($value)
  * @method static Builder<static>|Team whereDescription($value)
  * @method static Builder<static>|Team whereSettings($value)
  * @method static Builder<static>|Team whereSlug($value)
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Team extends BaseTeam
 {
-<<<<<<< HEAD
     // use SoftDeletes;
-=======
-    use SoftDeletes;
->>>>>>> 6ed19256f (.)
 
     protected $fillable = [
         'user_id',
@@ -143,7 +97,9 @@ class Team extends BaseTeam
         'settings',
     ];
 
-<<<<<<< HEAD
+    /**
+     * @return HasMany<TeamPermission, $this>
+     */
     public function permissions(): HasMany
     {
         return $this->hasMany(TeamPermission::class);
@@ -161,26 +117,4 @@ class Team extends BaseTeam
             'settings' => 'array',
         ];
     }
-=======
-    /**
-     * @var array<string, string>
-     */
-    protected $casts = [
-        'personal_team' => 'boolean',
-        'settings' => 'array',
-    ];
-
-    public function users(): \Illuminate\Database\Eloquent\Relations\BelongsToMany
-    {
-        return $this->belongsToMany(User::class, 'team_user')
-            ->withPivot(['role', 'permissions', 'joined_at'])
-            ->withTimestamps()
-            ->as('membership');
-    }
-
-    public function permissions(): \Illuminate\Database\Eloquent\Relations\HasMany
-    {
-        return $this->hasMany(TeamPermission::class);
-    }
->>>>>>> 6ed19256f (.)
 }

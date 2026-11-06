@@ -10,7 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione dei lock di cache',
         ],
-        'label' => 'cache-lock',
+        'label' => 'Cache lock',
         'sort' => '20',
         'icon' => 'xot-lock',
     ],
@@ -19,34 +19,25 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave del lock',
             'help' => 'Identificativo univoco del lock in cache',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'owner' => [
             'label' => 'Proprietario',
             'placeholder' => 'Identificativo del proprietario',
             'help' => 'Identificativo del processo che detiene il lock',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'expiration' => [
             'label' => 'Scadenza',
             'placeholder' => 'Timestamp di scadenza',
             'help' => 'Momento in cui il lock scadrà automaticamente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -93,9 +84,6 @@ return [
             'lock_extended' => 'Durata del lock estesa',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

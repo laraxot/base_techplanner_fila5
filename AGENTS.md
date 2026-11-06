@@ -21,6 +21,6 @@ Regole, skill e memorie vivono solo in `docs/wiki/`. Caricamento on-demand via Q
 - Mai estendere Filament diretto — XotBase / LangBase
 - Mai `RefreshDatabase` — `.env.testing` SQLite
 - Commit solo su richiesta esplicita utente
-- Stesso task multi-agente → `docs/chat/INDEX.md` + issue GitHub (`git remote -v`)
+- Stesso task multi-agente → una BMAD story canonica nell'owner corretto (`docs/stories/`, `Modules/*/docs/stories/` o `Themes/*/docs/stories/`) + lock + issue GitHub (`git remote -v`). `docs/chat/` è solo storico legacy.
 
 *Stub ≤50 righe — SSoT: docs/wiki/*

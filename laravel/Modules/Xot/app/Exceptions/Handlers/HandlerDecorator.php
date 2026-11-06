@@ -6,22 +6,38 @@ namespace Modules\Xot\Exceptions\Handlers;
 
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Symfony\Component\HttpFoundation\Response as SymfonyResponse;
-<<<<<<< HEAD
-=======
-use Throwable;
->>>>>>> 6ed19256f (.)
 
 class HandlerDecorator implements ExceptionHandler
 {
-    protected HandlersRepository $repository;
+    /**
+     * The custom handlers reporting exceptions.
+     *
+     * @var array<int, callable>
+     */
+    protected array $reporters = [];
+
+    /**
+     * The custom handlers rendering exceptions.
+     *
+     * @var array<int, callable>
+     */
+    protected array $renderers = [];
+
+    /**
+     * The custom handlers rendering exceptions in console.
+     *
+     * @var array<int, callable>
+     */
+    protected array $consoleRenderers = [];
 
     public function __construct(
         protected ExceptionHandler $defaultHandler,
-        HandlersRepository $repository,
-    ) {
-        $this->repository = $repository;
-    }
+    ) {}
 
+    /**
+     * @param  array<int, mixed>  $parameters
+     * @return mixed Risultato del metodo delegato al defaultHandler (firmato mixed perché dipende da $name)
+     */
     public function __call(string $name, array $parameters): mixed
     {
         /** @var callable */
@@ -30,13 +46,9 @@ class HandlerDecorator implements ExceptionHandler
         return \call_user_func_array($callable, $parameters);
     }
 
-<<<<<<< HEAD
     public function report(\Throwable $e): void
-=======
-    public function report(Throwable $e): void
->>>>>>> 6ed19256f (.)
     {
-        foreach ($this->repository->getReportersByException($e) as $reporter) {
+        foreach ($this->getReportersByException($e) as $reporter) {
             if (is_callable($reporter)) {
                 $reporter($e);
             }
@@ -45,13 +57,9 @@ class HandlerDecorator implements ExceptionHandler
         $this->defaultHandler->report($e);
     }
 
-<<<<<<< HEAD
     public function render($request, \Throwable $e): SymfonyResponse
-=======
-    public function render($request, Throwable $e): SymfonyResponse
->>>>>>> 6ed19256f (.)
     {
-        foreach ($this->repository->getRenderersByException($e) as $renderer) {
+        foreach ($this->getRenderersByException($e) as $renderer) {
             if (is_callable($renderer)) {
                 $response = $renderer($e, $request);
                 if ($response instanceof SymfonyResponse) {
@@ -63,50 +71,122 @@ class HandlerDecorator implements ExceptionHandler
         return $this->defaultHandler->render($request, $e);
     }
 
-<<<<<<< HEAD
     public function renderForConsole($output, \Throwable $e): void
-=======
-    /**
-     * @phpstan-ignore-next-line
-     */
-    public function renderForConsole($output, Throwable $e): void
->>>>>>> 6ed19256f (.)
     {
-        foreach ($this->repository->getConsoleRenderersByException($e) as $renderer) {
+        foreach ($this->getConsoleRenderersByException($e) as $renderer) {
             if (is_callable($renderer)) {
                 $renderer($e, $output);
             }
         }
 
-<<<<<<< HEAD
         $this->__call('renderForConsole', [$output, $e]);
-=======
-        /** @phpstan-ignore-next-line */
-        $this->defaultHandler->renderForConsole($output, $e);
->>>>>>> 6ed19256f (.)
     }
 
     public function reporter(callable $reporter): int
     {
-        return $this->repository->addReporter($reporter);
+        return $this->addReporter($reporter);
     }
 
     public function renderer(callable $renderer): int
     {
-        return $this->repository->addRenderer($renderer);
+        return $this->addRenderer($renderer);
     }
 
     public function consoleRenderer(callable $renderer): int
     {
-        return $this->repository->addConsoleRenderer($renderer);
+        return $this->addConsoleRenderer($renderer);
     }
 
-<<<<<<< HEAD
+    /**
+     * Register a custom handler to report exceptions.
+     */
+    private function addReporter(callable $reporter): int
+    {
+        return array_unshift($this->reporters, $reporter);
+    }
+
+    /**
+     * Register a custom handler to render exceptions.
+     */
+    private function addRenderer(callable $renderer): int
+    {
+        return array_unshift($this->renderers, $renderer);
+    }
+
+    /**
+     * Register a custom handler to render exceptions in console.
+     */
+    private function addConsoleRenderer(callable $renderer): int
+    {
+        return array_unshift($this->consoleRenderers, $renderer);
+    }
+
+    /**
+     * Retrieve all reporters handling the given exception.
+     *
+     * @return array<int, callable>
+     */
+    private function getReportersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->reporters,
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+        );
+    }
+
+    /**
+     * Retrieve all renderers handling the given exception.
+     *
+     * @return array<int, callable>
+     */
+    private function getRenderersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->renderers,
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+        );
+    }
+
+    /**
+     * Retrieve all console renderers handling the given exception.
+     *
+     * @return array<int, callable>
+     */
+    private function getConsoleRenderersByException(\Throwable $e): array
+    {
+        return array_filter(
+            $this->consoleRenderers,
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
+        );
+    }
+
     public function shouldReport(\Throwable $e): bool
-=======
-    public function shouldReport(Throwable $e): bool
->>>>>>> 6ed19256f (.)
     {
         return $this->defaultHandler->shouldReport($e);
+    }
+
+    /**
+     * Determine whether the given handler can handle the provided exception.
+     */
+    protected function handlesException(callable $handler, \Throwable $e): bool
+    {
+        $reflection = new \ReflectionFunction(
+            $handler instanceof \Closure ? $handler : \Closure::fromCallable($handler),
+        );
+
+        if (! ($params = $reflection->getParameters())) {
+            return false;
+        }
+
+        $type = $params[0]->getType();
+
+        if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
+            return true;
+        }
+
+        $className = $type->getName();
+
+        return (class_exists($className) || interface_exists($className))
+            && (new \ReflectionClass($className))->isInstance($e);
     }
 }

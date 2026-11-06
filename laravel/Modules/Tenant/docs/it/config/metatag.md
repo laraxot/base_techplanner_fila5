@@ -37,18 +37,11 @@ return [
 ## Collegamenti tra versioni di metatag.md
 * [metatag.md](../../../Xot/docs/install/metatag.md)
 * [metatag.md](../../../Tenant/docs/it/config/metatag.md)
-<<<<<<< HEAD
 * [metatag.md](../../../xot/docs/install/metatag.md)
 * [metatag.md](../../../tenant/docs/it/config/metatag.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ];
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

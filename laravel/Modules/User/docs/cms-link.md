@@ -1,3 +1,28 @@
+---
+title: "Collegamento al Modulo Cms"
+type: concept
+tags: [cms, link]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "cms-link collegamento al modulo cms"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Collegamento al Modulo Cms
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo User e il modulo Cms per quanto riguarda i componenti Filament e le convenzioni di namespace.
@@ -7,27 +32,18 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 - Non va mai aggiunto `App` nel namespace
 Per dettagli specifici, consulta:
 - [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
-- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) nel modulo Cms
-- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
-<<<<<<< HEAD
 - [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md) nel modulo Cms
-- [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
-=======
->>>>>>> 6ed19256f (.)
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
 ## Punti di Integrazione
 - **Autenticazione e UI**: I componenti di autenticazione del modulo User sono integrati con l'interfaccia utente del modulo Cms
 - **Widgets condivisi**: Alcuni widget del modulo User sono utilizzati nelle dashboard del modulo Cms
 - **Filament Resources**: I resource di entrambi i moduli interagiscono in diverse parti dell'applicazione
 ## Collegamenti Bidirezionali
-<<<<<<< HEAD
 - [Convenzioni Namespace Filament nel modulo Cms](../../cms/project_docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../cms/project_docs/user-link.md)
-- [Convenzioni Namespace Filament nel modulo Cms](../../cms/docs/convenzioni-namespace-filament.md)
-- [Collegamento User-Cms nel modulo Cms](../../cms/docs/user-link.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Convenzioni Namespace Filament nel modulo Cms](../../Cms/project_docs/convenzioni-namespace-filament.md)
-- [Collegamento User-Cms nel modulo Cms](../../Cms/project_docs/user-link.md)
+- [Convenzioni Namespace Filament nel modulo Cms](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Collegamento User-Cms nel modulo Cms](../../Cms/docs/user-link.md)
 - [Convenzioni Namespace Filament nel modulo Cms](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../Cms/docs/user-link.md)
 ---
@@ -37,25 +53,15 @@ Quando aggiungi nuovi componenti Filament nel modulo User, assicurati di:
 2. NON includere `App` nel namespace
 3. Seguire le convenzioni di stile condivise con il modulo Cms
 ## Collegamenti tra versioni di cms-link.md
-<<<<<<< HEAD
 * [cms-link.md](../../../xot/project_docs/cms-link.md)
 * [cms-link.md](../../../user/project_docs/cms-link.md)
 * [cms-link.md](../../../ui/project_docs/cms-link.md)
 * [cms-link.md](../../../lang/project_docs/cms-link.md)
 * [cms-link.md](../../../xot/docs/cms-link.md)
 * [cms-link.md](../../../user/docs/cms-link.md)
-* [cms-link.md](../../../ui/docs/cms-link.md)
-* [cms-link.md](../../../lang/docs/cms-link.md)
-=======
->>>>>>> 6ed19256f (.)
-* [cms-link.md](../../../Xot/project_docs/cms-link.md)
-* [cms-link.md](../../../User/project_docs/cms-link.md)
-* [cms-link.md](../../../UI/project_docs/cms-link.md)
-* [cms-link.md](../../../Lang/project_docs/cms-link.md)
-* [cms-link.md](../../../Xot/docs/cms-link.md)
-* [cms-link.md](../../../User/docs/cms-link.md)
-* [cms-link.md](../../../UI/docs/cms-link.md)
-* [cms-link.md](../../../Lang/docs/cms-link.md)
+* [cms-link.md](../../UI/docs/cms-link.md)
+* [cms-link.md](../../Lang/docs/cms-link.md)
+* [cms-link.md](../../Lang/docs/cms-link.md)
 # Collegamento al Modulo Cms
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo User e il modulo Cms per quanto riguarda i componenti Filament e le convenzioni di namespace.
@@ -70,10 +76,7 @@ Sia il modulo User che il modulo Cms seguono le stesse convenzioni di namespace 
 Per dettagli specifici, consulta:
 - [Convenzioni di Namespace](./namespace-conventions.md) in questo modulo
 - [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
-<<<<<<< HEAD
-- [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
-=======
->>>>>>> 6ed19256f (.)
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) nel modulo Cms
 
 ## Punti di Integrazione
 
@@ -85,11 +88,8 @@ Per dettagli specifici, consulta:
 
 - [Convenzioni Namespace Filament nel modulo Cms](../../Cms/docs/convenzioni-namespace-filament.md)
 - [Collegamento User-Cms nel modulo Cms](../../Cms/docs/user-link.md)
-<<<<<<< HEAD
-- [Convenzioni Namespace Filament nel modulo Cms](../../cms/docs/convenzioni-namespace-filament.md)
-- [Collegamento User-Cms nel modulo Cms](../../cms/docs/user-link.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Convenzioni Namespace Filament nel modulo Cms](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Collegamento User-Cms nel modulo Cms](../../Cms/docs/user-link.md)
 
 ---
 
@@ -100,18 +100,8 @@ Quando aggiungi nuovi componenti Filament nel modulo User, assicurati di:
 3. Seguire le convenzioni di stile condivise con il modulo Cms
 
 ## Collegamenti tra versioni di cms-link.md
-<<<<<<< HEAD
 * [cms-link.md](../../../xot/docs/cms-link.md)
 * [cms-link.md](../../../user/docs/cms-link.md)
-* [cms-link.md](../../../ui/docs/cms-link.md)
-* [cms-link.md](../../../lang/docs/cms-link.md)
-* [cms-link.md](../../../Xot/docs/cms-link.md)
-* [cms-link.md](../../../User/docs/cms-link.md)
-* [cms-link.md](../../../UI/docs/cms-link.md)
-* [cms-link.md](../../../Lang/docs/cms-link.md)
-=======
-* [cms-link.md](../../../Xot/docs/cms-link.md)
-* [cms-link.md](../../../User/docs/cms-link.md)
-* [cms-link.md](../../../UI/docs/cms-link.md)
-* [cms-link.md](../../../Lang/docs/cms-link.md)
->>>>>>> 6ed19256f (.)
+* [cms-link.md](../../UI/docs/cms-link.md)
+* [cms-link.md](../../Lang/docs/cms-link.md)
+* [cms-link.md](../../Lang/docs/cms-link.md)

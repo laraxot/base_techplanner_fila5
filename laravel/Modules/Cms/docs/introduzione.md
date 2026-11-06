@@ -1,8 +1,16 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "introduzione"
+issues: []
+discussions: []
 title: Introducendo Cms
 description: Introduzione a Module Cms
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 # Introducendo Cms {#introducendo-cms}
@@ -23,10 +31,5 @@ Una volta configurato il modulo, è possibile utilizzarlo per creare e gestire i
 
 Dipende un po da tutti i Moduli.
 ## Collegamenti tra versioni di introduzione.md
-* [introduzione.md](laravel/Modules/Chart/docs/introduzione.md)
-* [introduzione.md](laravel/Modules/Cms/docs/introduzione.md)
-<<<<<<< HEAD
 * [introduzione.md](laravel/modules/chart/docs/introduzione.md)
 * [introduzione.md](laravel/modules/cms/docs/introduzione.md)
-=======
->>>>>>> 6ed19256f (.)

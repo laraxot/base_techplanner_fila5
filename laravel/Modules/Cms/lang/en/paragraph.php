@@ -9,7 +9,6 @@ return [
             'placeholder' => 'content',
             'helper_text' => 'content',
             'description' => 'content',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -24,8 +23,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

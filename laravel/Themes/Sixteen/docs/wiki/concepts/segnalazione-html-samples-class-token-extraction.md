@@ -1,4 +1,7 @@
 ---
+qmd: "segnalazione html samples class token extraction"
+issues: []
+discussions: []
 title: "Estrazione token class= — 7 HTML segnalazione (fonte .planning/research)"
 type: concept
 sources:
@@ -8,7 +11,7 @@ sources:
   - "../../../../../../.planning/research/local-segnalazione-03-riepilogo.html"
   - "../../../../../../.planning/research/local-segnalazione-04-conferma.html"
   - "../../../../../../.planning/research/local-segnalazione-area-personale.html"
-  - "../../../../../../.planning/research/local-segnalazioni-elenco.html"
+  - "../../../../../../.planning/research/local-ticket-list.html"
 confidence: high
 created: 2026-05-04
 updated: 2026-05-04
@@ -19,6 +22,8 @@ related:
   - "../../../../../../_bmad-output/implementation-artifacts/7-105-design-comuni-segnalazione-static-pages-bootstrap-to-tailwind-class-map.md"
   - "../../../../../../_bmad-output/implementation-artifacts/7-103-segnalazione-01-privacy-tailwind-lit-html-audit-correction-plan.md"
   - "../../../../../../_bmad-output/implementation-artifacts/7-104-segnalazione-01-privacy-tailwind-correction-implementation.md"
+status: superseded
+superseded_by: ticket-html-samples-class-token-extraction.md
 ---
 
 # Estrazione riproducibile `class="..."` — sette pagine segnalazione
@@ -54,7 +59,7 @@ Rigenerazione: dalla root del workspace eseguire `php bashscripts/extract-segnal
 | `p03` | `local-segnalazione-03-riepilogo.html` |
 | `p04` | `local-segnalazione-04-conferma.html` |
 | `ap` | `local-segnalazione-area-personale.html` |
-| `el` | `local-segnalazioni-elenco.html` |
+| `el` | `local-ticket-list.html` |
 
 ## Riconciliazione con [bootstrap italia class inventory](../entities/bootstrap-italia-class-inventory.md)
 

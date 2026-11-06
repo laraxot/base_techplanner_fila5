@@ -1,3 +1,15 @@
+---
+title: "resource"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resource"
+issues: []
+discussions: []
+status: draft
+---
+
 # XotBaseResource
 
 ## Overview
@@ -55,7 +67,17 @@ class MyResource extends XotBaseResource
 {
     protected static ?string $model = MyModel::class;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+title: "resource"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "resource"
+issues: []
+discussions: []
+    public function getFormSchema(): array
     {
         return [
             // Schema del form
@@ -88,7 +110,7 @@ class MyResource extends XotBaseResource
 
 2. **IMPLEMENTARE nella Resource**
    - ✅ `protected static ?string $model`
-   - ✅ `public static function getFormSchema(): array`
+   - ✅ `public function getFormSchema(): array`
    - ✅ `public static function getPages(): array`
 
 ## Gestione Tabelle
@@ -200,7 +222,9 @@ class ListRecords extends XotBaseListRecords
 
 ### 1. Form Schema con Relazioni
 ```php
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+public function getFormSchema(): array
 {
     return [
         Forms\Components\Select::make('cliente_id')
@@ -529,7 +553,9 @@ public function getTableColumns(): array
 /**
  * @return array<string, Forms\Components\Component>
  */
-public static function getFormSchema(): array
+public function getFormSchema(): array
+---
+public function getFormSchema(): array
 {
     return [
         'nome' => TextInput::make('nome'),
@@ -607,18 +633,9 @@ public function getTableBulkActions(): array
 ## Collegamenti tra versioni di resource.md
 * [resource.md](../../../Xot/docs/filament/resource.md)
 * [resource.md](../../../Xot/docs/resource.md)
-<<<<<<< HEAD
-* [resource.md](../../../xot/docs/filament/resource.md)
-* [resource.md](../../../xot/docs/resource.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 // ... existing code ...
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

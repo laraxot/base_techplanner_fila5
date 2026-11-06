@@ -37,110 +37,6 @@ return [
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
-        'id' => [
-            'label' => 'ID',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'lang' => [
-            'label' => 'Lingua',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'value' => [
-            'label' => 'Valore',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'key' => [
-            'label' => 'Chiave',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'namespace' => [
-            'label' => 'Namespace',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'group' => [
-            'label' => 'Gruppo',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'item' => [
-            'label' => 'Elemento',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'Nome Utente',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'email' => [
-            'label' => 'Email',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'is_active' => [
-            'label' => 'Stato account',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'color' => [
-            'label' => 'Colore',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'asset_id_root' => [
-            'label' => 'Abitazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'asset_id' => [
-            'label' => 'Asset',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'type' => [
-            'label' => 'tipo',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'user_name' => [
-            'label' => 'nome utente',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-=======
         'id' => ['label' => 'ID'],
         'lang' => ['label' => 'Lingua'],
         'value' => ['label' => 'Valore'],
@@ -158,7 +54,6 @@ return [
         'asset_id' => 'Asset',
         'type' => 'tipo',
         'user_name' => 'nome utente',
->>>>>>> 6ed19256f (.)
     ],
     'filters' => [
         'is_active' => [
@@ -184,9 +79,4 @@ return [
     'act' => [
         'publish_item_trans' => 'pubblica modifiche riga',
     ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

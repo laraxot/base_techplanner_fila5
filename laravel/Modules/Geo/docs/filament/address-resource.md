@@ -1,3 +1,15 @@
+---
+title: "address resource"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "address resource"
+issues: []
+discussions: []
+status: draft
+---
+
 # AddressResource
 
 ## Panoramica
@@ -259,10 +271,5 @@ return [
 
 - [Modello Address](../models/address.md)
 - [Trait HasAddress](../traits/hasaddress-implementation.md)
-- [XotBaseResource](../../Xot/docs/filament/xotbase-resource.md)
-<<<<<<< HEAD
 - [XotBaseResource](../../xot/docs/filament/xotbase-resource.md)
 - [Documentazione Filament](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
-=======
-- [Documentazione Filament](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
->>>>>>> 6ed19256f (.)

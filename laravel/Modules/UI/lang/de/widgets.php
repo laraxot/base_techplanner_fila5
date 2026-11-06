@@ -9,7 +9,11 @@ return [
         'light_mode' => 'Helles Design',
         'dark_mode' => 'Dunkles Design',
     ],
-<<<<<<< HEAD
+    'user-calendar' => [
+        'title' => 'Benutzerkalender',
+        'description' => 'Termine im Kalender des Benutzers ansehen und verwalten.',
+        'implementation_pending' => 'Diese Funktion befindet sich noch in Entwicklung.',
+    ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -23,6 +27,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

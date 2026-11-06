@@ -4,19 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Tests\Unit\Actions;
 
-uses(TestCase::class);
-
 use Modules\Gdpr\Actions\Registration\HandleSuccessfulRegistrationAction;
-use Modules\Gdpr\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
-test('HandleSuccessfulRegistrationAction can be instantiated', function () {
-    $action = new HandleSuccessfulRegistrationAction();
-    $action = new HandleSuccessfulRegistrationAction();
-    expect($action)->toBeInstanceOf(HandleSuccessfulRegistrationAction::class);
-});
+test('HandleSuccessfulRegistrationAction exposes execute for post-registration login redirect', function (): void {
+    $action = new HandleSuccessfulRegistrationAction;
+    $method = new ReflectionMethod($action, 'execute');
 
-test('HandleSuccessfulRegistrationAction execute method exists', function () {
-    $action = new HandleSuccessfulRegistrationAction();
-    $action = new HandleSuccessfulRegistrationAction();
-    expect(method_exists($action, 'execute'))->toBeTrue();
+    Assert::assertSame(HandleSuccessfulRegistrationAction::class, $action::class);
+    Assert::assertTrue($method->isPublic());
+    Assert::assertSame(2, $method->getNumberOfParameters());
 });

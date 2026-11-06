@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Correzione Errori Traduzioni - 2025"
+module: "Lang"
+type: concept
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: translation-errors-correction.md
+---
 # Correzione Errori Traduzioni - 2025
 
 ## Problema Identificato
@@ -34,11 +49,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `txt.php`: `'title_required' => 'The title is required'`
 - `edit_section.php`: `'required' => 'This field is required'`
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteOra
->>>>>>> 6ed19256f (.)
 **File Tedeschi (DE):**
 - `doctor_availability_calendar.php`: `'required' => 'Dieses Feld ist erforderlich'`
 - `appointment.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
@@ -79,11 +90,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `create.php`: `'required' => 'This field is required'`
 - `edit_section.php`: `'required' => 'This field is required'`
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteMo
->>>>>>> 6ed19256f (.)
 **File Tedeschi (DE):**
 - `user.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
 - `doctor.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
@@ -188,21 +195,13 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-<<<<<<< HEAD
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
 - [Root Docs: Translation Standards](../../../docs/translation_standards.md)
+- [Root Docs: Translation Standards](../../../../docs/translation_standards.md)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
-=======
-2. **SaluteOra Module**: `laravel/Modules/SaluteOra/docs/translation_refactor_summary_2025.md`
-
-### Collegamenti Bidirezionali
-- [Root Docs: Translation Standards](../../docs/translation_standards.md)
-- [Lang Module: Translation Best Practices](translation_best_practices.md)
-- [SaluteOra Module: Translation Guidelines](../SaluteOra/docs/translation_guidelines.md)
->>>>>>> 6ed19256f (.)
 
 ## Riepilogo Statistiche
 
@@ -214,17 +213,10 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 ### Moduli Interessati
 1. Lang Module ✅
 2. DbForge Module ✅
-<<<<<<< HEAD
 3. <nome progetto> Module ✅
 4. Notify Module ✅
 5. FormBuilder Module ✅
 6. <nome progetto> Module ✅
-=======
-3. SaluteOra Module ✅
-4. Notify Module ✅
-5. FormBuilder Module ✅
-6. SaluteMo Module ✅
->>>>>>> 6ed19256f (.)
 7. Cms Module ✅
 8. Xot Module ✅
 9. User Module ✅
@@ -310,11 +302,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `txt.php`: `'title_required' => 'The title is required'`
 - `edit_section.php`: `'required' => 'This field is required'`
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteOra
->>>>>>> 6ed19256f (.)
 **File Tedeschi (DE):**
 - `doctor_availability_calendar.php`: `'required' => 'Dieses Feld ist erforderlich'`
 - `appointment.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
@@ -355,11 +343,7 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 - `create.php`: `'required' => 'This field is required'`
 - `edit_section.php`: `'required' => 'This field is required'`
 
-<<<<<<< HEAD
 #### ✅ Modulo <nome progetto>
-=======
-#### ✅ Modulo SaluteMo
->>>>>>> 6ed19256f (.)
 **File Tedeschi (DE):**
 - `user.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
 - `doctor.php`: `'required' => 'Das Feld :attribute ist erforderlich'`
@@ -464,21 +448,13 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 
 ### Moduli con Documentazione Aggiornata
 1. **Lang Module**: `laravel/Modules/Lang/docs/translation_errors_correction_2025.md`
-<<<<<<< HEAD
 2. **<nome progetto> Module**: `laravel/Modules/<nome progetto>/docs/translation_refactor_summary_2025.md`
 
 ### Collegamenti Bidirezionali
 - [Root Docs: Translation Standards](../../../docs/translation_standards.md)
+- [Root Docs: Translation Standards](../../../../docs/translation_standards.md)
 - [Lang Module: Translation Best Practices](translation_best_practices.md)
 - [<nome progetto> Module: Translation Guidelines](../<nome progetto>/docs/translation_guidelines.md)
-=======
-2. **SaluteOra Module**: `laravel/Modules/SaluteOra/docs/translation_refactor_summary_2025.md`
-
-### Collegamenti Bidirezionali
-- [Root Docs: Translation Standards](../../docs/translation_standards.md)
-- [Lang Module: Translation Best Practices](translation_best_practices.md)
-- [SaluteOra Module: Translation Guidelines](../SaluteOra/docs/translation_guidelines.md)
->>>>>>> 6ed19256f (.)
 
 ## Riepilogo Statistiche
 
@@ -490,17 +466,10 @@ Durante l'audit delle traduzioni, sono state identificate numerose traduzioni ch
 ### Moduli Interessati
 1. Lang Module ✅
 2. DbForge Module ✅
-<<<<<<< HEAD
 3. <nome progetto> Module ✅
 4. Notify Module ✅
 5. FormBuilder Module ✅
 6. <nome progetto> Module ✅
-=======
-3. SaluteOra Module ✅
-4. Notify Module ✅
-5. FormBuilder Module ✅
-6. SaluteMo Module ✅
->>>>>>> 6ed19256f (.)
 7. Cms Module ✅
 8. Xot Module ✅
 9. User Module ✅
@@ -549,8 +518,4 @@ Tutte le traduzioni problematiche sono state corrette seguendo i pattern standar
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di Correzione Automatica
-<<<<<<< HEAD
 **Versione**: 1.0
-=======
-**Versione**: 1.0
->>>>>>> 6ed19256f (.)

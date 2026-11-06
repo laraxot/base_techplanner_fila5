@@ -1,3 +1,11 @@
+---
+title: "Best Practices per Model States e Transizioni Custom"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, consolidated]
+qmd: "best practices per model states e transizioni custom xot"
+---
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom
@@ -9,9 +17,5 @@
   - [ ] Tutte le chiamate a `transitionTo` forniscono i parametri richiesti
   - [ ] La documentazione delle transizioni specifica i parametri richiesti
 - **Collegamenti**:
-<<<<<<< HEAD
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/project_docs/model-states-errors.md)
-=======
-  - [Errori comuni nelle transizioni custom (SaluteOra)](../../SaluteOra/project_docs/model-states-errors.md)
->>>>>>> 6ed19256f (.)
   - [README.md centrale](../../../project_docs/README.md)

@@ -10,14 +10,11 @@ use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Modules\User\Models\User;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-=======
-use Modules\User\Models\User;
->>>>>>> 6ed19256f (.)
 use function Safe\strtotime;
 
 /**
@@ -27,15 +24,9 @@ use function Safe\strtotime;
  * across List pages in all modules.
  *
  * Usage:
- * ```php
- * public function getTableFilters(): array
- * {
- *     return [
- *         FilterBuilder::activeToggle(),
- *         FilterBuilder::selectFromModel('category', Category::class),
- *     ];
- * }
- * ```
+ *
+ * Use this builder from resource table filter methods to compose common
+ * Filament filters without duplicating filter callbacks.
  */
 class FilterBuilder
 {
@@ -82,11 +73,7 @@ class FilterBuilder
         string $column,
         string $label,
         string $trueLabel = 'Yes',
-<<<<<<< HEAD
         string $falseLabel = 'No',
-=======
-        string $falseLabel = 'No'
->>>>>>> 6ed19256f (.)
     ): TernaryFilter {
         return TernaryFilter::make($column)
             ->label($label)
@@ -111,11 +98,11 @@ class FilterBuilder
                 return $query
                     ->when(
                         $data['from'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', is_string($date) ? $date : (string) $date),
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '>=', SafeStringCastAction::cast($date)),
                     )
                     ->when(
                         $data['until'] ?? null,
-                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', is_string($date) ? $date : (string) $date),
+                        fn (Builder $query, mixed $date): Builder => $query->whereDate($column, '<=', SafeStringCastAction::cast($date)),
                     );
             })
             ->indicateUsing(function (array $data) use ($label): ?string {
@@ -127,20 +114,20 @@ class FilterBuilder
                 }
 
                 if ($from && $until) {
-                    $fromStr = is_string($from) ? $from : (string) $from;
-                    $untilStr = is_string($until) ? $until : (string) $until;
+                    $fromStr = SafeStringCastAction::cast($from);
+                    $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.': '.date('d/m/Y', strtotime($fromStr)).' - '.date('d/m/Y', strtotime($untilStr));
                 }
 
                 if ($from) {
-                    $fromStr = is_string($from) ? $from : (string) $from;
+                    $fromStr = SafeStringCastAction::cast($from);
 
                     return $label.' from: '.date('d/m/Y', strtotime($fromStr));
                 }
 
                 if ($until) {
-                    $untilStr = is_string($until) ? $until : (string) $until;
+                    $untilStr = SafeStringCastAction::cast($until);
 
                     return $label.' until: '.date('d/m/Y', strtotime($untilStr));
                 }
@@ -176,22 +163,14 @@ class FilterBuilder
     /**
      * Select filter from model.
      *
-<<<<<<< HEAD
-     * @param class-string<Model> $modelClass
-=======
      * @param  class-string<Model>  $modelClass
->>>>>>> 6ed19256f (.)
      */
     public static function selectFromModel(
         string $name,
         string $modelClass,
         string $labelColumn = 'name',
         string $valueColumn = 'id',
-<<<<<<< HEAD
         ?string $relationshipName = null,
-=======
-        ?string $relationshipName = null
->>>>>>> 6ed19256f (.)
     ): SelectFilter {
         /** @var array<int|string, string> $options */
         $options = $modelClass::pluck($labelColumn, $valueColumn)->toArray();
@@ -199,11 +178,7 @@ class FilterBuilder
         $filter = SelectFilter::make($name)
             ->options($options);
 
-<<<<<<< HEAD
-        if (null !== $relationshipName) {
-=======
         if ($relationshipName !== null) {
->>>>>>> 6ed19256f (.)
             $filter->relationship($relationshipName, $labelColumn);
         }
 
@@ -213,11 +188,7 @@ class FilterBuilder
     /**
      * Status select filter with common statuses.
      *
-<<<<<<< HEAD
-     * @param array<string, string> $customStatuses
-=======
      * @param  array<string, string>  $customStatuses
->>>>>>> 6ed19256f (.)
      */
     public static function statusSelect(array $customStatuses = []): SelectFilter
     {
@@ -235,11 +206,7 @@ class FilterBuilder
     /**
      * Priority select filter.
      *
-<<<<<<< HEAD
-     * @param array<string, string> $customPriorities
-=======
      * @param  array<string, string>  $customPriorities
->>>>>>> 6ed19256f (.)
      */
     public static function prioritySelect(array $customPriorities = []): SelectFilter
     {
@@ -257,11 +224,7 @@ class FilterBuilder
     /**
      * Type select filter.
      *
-<<<<<<< HEAD
-     * @param array<string, string> $types
-=======
      * @param  array<string, string>  $types
->>>>>>> 6ed19256f (.)
      */
     public static function typeSelect(array $types): SelectFilter
     {
@@ -272,11 +235,7 @@ class FilterBuilder
     /**
      * Category select filter.
      *
-<<<<<<< HEAD
-     * @param class-string<Model> $categoryModel
-=======
      * @param  class-string<Model>  $categoryModel
->>>>>>> 6ed19256f (.)
      */
     public static function categorySelect(string $categoryModel, string $labelColumn = 'name'): SelectFilter
     {
@@ -286,34 +245,18 @@ class FilterBuilder
     /**
      * User/Author select filter.
      *
-<<<<<<< HEAD
-     * @param class-string<Model> $userModel
-=======
      * @param  class-string<Model>  $userModel
->>>>>>> 6ed19256f (.)
      */
     public static function userSelect(
         string $name = 'user',
         string $userModel = User::class,
-<<<<<<< HEAD
         string $labelColumn = 'name',
-=======
-        string $labelColumn = 'name'
->>>>>>> 6ed19256f (.)
     ): SelectFilter {
         return self::selectFromModel($name, $userModel, $labelColumn, 'id', $name);
     }
 
     /**
      * Trashed filter (for SoftDeletes).
-<<<<<<< HEAD
-=======
-     *
-     * Note: This filter assumes the model uses SoftDeletes trait.
-     * PHPStan may not recognize withTrashed/onlyTrashed methods on base Builder.
-     *
-     * @phpstan-ignore-next-line
->>>>>>> 6ed19256f (.)
      */
     public static function trashedFilter(): TernaryFilter
     {
@@ -323,18 +266,24 @@ class FilterBuilder
             ->trueLabel('Only trashed')
             ->falseLabel('Without trashed')
             ->queries(
-<<<<<<< HEAD
                 true: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'only'),
                 false: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'without'),
                 blank: fn (Builder $query): Builder => self::applyTrashedQuery($query, 'with'),
             );
     }
 
+    /**
+     * @param  Builder<Model>  $query
+     */
     private static function modelUsesSoftDeletes(Builder $query): bool
     {
         return in_array(SoftDeletes::class, class_uses_recursive($query->getModel()), true);
     }
 
+    /**
+     * @param  Builder<Model>  $query
+     * @return Builder<Model>
+     */
     private static function applyTrashedQuery(Builder $query, string $mode): Builder
     {
         if (! self::modelUsesSoftDeletes($query)) {
@@ -350,14 +299,4 @@ class FilterBuilder
             default => $query,
         };
     }
-=======
-                /** @phpstan-ignore-next-line */
-                true: fn (Builder $query) => $query->onlyTrashed(),
-                /** @phpstan-ignore-next-line */
-                false: fn (Builder $query) => $query->withoutTrashed(),
-                /** @phpstan-ignore-next-line */
-                blank: fn (Builder $query) => $query->withTrashed(),
-            );
-    }
->>>>>>> 6ed19256f (.)
 }

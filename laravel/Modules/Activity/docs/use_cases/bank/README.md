@@ -1,3 +1,11 @@
+---
+title: "Bank Use Case: Approcci Event Sourcing e Tradizionale"
+type: index
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use_cases]
+qmd: "bank use case: approcci event sourcing e tradizionale activity"
+---
 # Bank Use Case: Approcci Event Sourcing e Tradizionale
 
 ## Introduzione
@@ -21,14 +29,11 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 - **Projector**: componente che aggiorna proiezioni leggibili a partire dagli eventi
 
 ## Collegamenti correlati
-<<<<<<< HEAD
 - [<nome progetto>ion Market](../<nome progetto>ion_market/readme.md)
 - [Event Sourcing & CQRS](../event_sourcing_cqrs/readme.md)
 - [Audit Log](../audit_log/readme.md)
 - [Workflow Approval](../workflow_approval/readme.md)
 - [Task Management](../task_management/readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Prediction Market](../prediction_market/README.md)
 - [Event Sourcing & CQRS](../event_sourcing_cqrs/README.md)
 - [Audit Log](../audit_log/README.md)
@@ -50,6 +55,12 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 - Audit trail completo, facile rollback
 - Più complesso, ma molto flessibile
 
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+
 ### 3. Event Sourcing con Eventsauce
 - Simile ai projectors, ma con una libreria dedicata (Eventsauce)
 - Gestione avanzata di aggregate, snapshot, replay
@@ -66,8 +77,4 @@ L'obiettivo è fornire una panoramica neutra e riutilizzabile dei pattern, dei v
 - **Projectors/Eventsauce**: sistemi critici, necessità di audit, rollback, proiezioni avanzate
 
 ## Prossimi passi
-<<<<<<< HEAD
 Consulta i file flow.md, domain_model.md, examples.md e tips.md per dettagli su flussi, modelli, esempi e best practice.
-=======
-Consulta i file flow.md, domain_model.md, examples.md e tips.md per dettagli su flussi, modelli, esempi e best practice.
->>>>>>> 6ed19256f (.)

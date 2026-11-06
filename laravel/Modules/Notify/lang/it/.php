@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -24,18 +23,3 @@ return array (
   array (
   ),
 );
-=======
-return [
-    'navigation' => [
-        'label' => 'Menu Notifiche',
-        'group' => 'Sistema',
-    ],
-    'actions' => [
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-    ],
-];
->>>>>>> 6ed19256f (.)

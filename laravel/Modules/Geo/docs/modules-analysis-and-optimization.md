@@ -1,3 +1,15 @@
+---
+title: "modules analysis and optimization"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modules analysis and optimization"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi e Ottimizzazioni Moduli Laraxot - <nome progetto>
 # Analisi e Ottimizzazioni Moduli Laraxot - <nome progetto>
 
@@ -333,8 +345,3 @@ public static function getProjectBasePath(): string
 - [Architettura Testing](testing-architecture-overview.md)
 - [Best Practices Testing](testing-best-practices.md)
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)

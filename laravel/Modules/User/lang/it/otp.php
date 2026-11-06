@@ -24,31 +24,13 @@ return [
         'current_password' => [
             'label' => 'Password Attuale',
             'validation_attribute' => 'password_attuale',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Nuova Password',
             'validation_attribute' => 'password',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
-        ],
-        'password_confirmation' => [
-            'label' => 'Conferma Password',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'reset_password' => 'Reimposta Password',
@@ -110,15 +92,10 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione delle password usa e getta',
         ],
-        'label' => 'otp',
+        'label' => 'OTP',
         'sort' => 31,
         'icon' => 'user-user-otp',
     ],
-<<<<<<< HEAD
     'label' => 'Otp',
     'plural_label' => 'Otp (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

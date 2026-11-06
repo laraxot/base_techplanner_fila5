@@ -1,11 +1,15 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: sushi-to-jsons
-canonical: ../../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Sushi To Jsons"
+module: "Tenant"
+type: concept
+tags: [sushi, jsons]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "sushi to jsons"
+related:
+  - "../phpstan-corrections-january.md"
+status: draft
 ---
 
-See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)

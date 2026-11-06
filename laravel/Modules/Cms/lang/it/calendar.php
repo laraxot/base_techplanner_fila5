@@ -52,7 +52,6 @@ return [
         'event_updated' => 'Evento aggiornato con successo',
         'event_deleted' => 'Evento eliminato con successo',
     ],
-<<<<<<< HEAD
     'label' => 'Calendar',
     'plural_label' => 'Calendar (Plurale)',
     'navigation' => [
@@ -64,7 +63,7 @@ return [
         ],
         'label' => 'Calendar',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -97,6 +96,4 @@ return [
             'label' => 'Elimina Calendar',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

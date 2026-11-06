@@ -1,6 +1,13 @@
+---
+title: "Analisi Metodi Duplicati - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "analisi metodi duplicati - modulo activity activity"
+---
 # Analisi Metodi Duplicati - Modulo Activity
 
-**Data Generazione**: 2025-10-15 06:41:17
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo
@@ -406,8 +413,4 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **90-100%**: Altamente raccomandato
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
-<<<<<<< HEAD
 - **< 50%**: Richiede analisi dettagliata
-=======
-- **< 50%**: Richiede analisi dettagliata
->>>>>>> 6ed19256f (.)

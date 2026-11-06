@@ -10,7 +10,6 @@ return [
         'sort' => '30',
     ],
     'fields' => [
-<<<<<<< HEAD
         'latitude' => [
             'label' => 'Latitudine',
             'tooltip' => '',
@@ -23,10 +22,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'latitude' => 'Latitudine',
-        'longitude' => 'Longitudine',
->>>>>>> 6ed19256f (.)
     ],
     'actions' => [
         'select_position' => 'Seleziona Posizione',
@@ -36,9 +31,26 @@ return [
         'coordinates_updated' => 'Coordinate aggiornate con successo',
         'invalid_coordinates' => 'Coordinate non valide',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'widget' => [
+        'locating' => [
+            'label' => 'Getting your location...',
+        ],
+        'heading' => [
+            'title' => 'Lat-lng',
+        ],
+        'latitude' => [
+            'label' => 'lat',
+        ],
+        'longitude' => [
+            'label' => 'lng',
+        ],
+        'error_code' => [
+            'label' => 'Error code',
+        ],
+        'error_message' => [
+            'label' => 'Error message',
+        ],
+    ],
 ];

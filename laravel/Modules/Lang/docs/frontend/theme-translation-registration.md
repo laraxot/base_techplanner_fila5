@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Registrazione Traduzioni Temi - Standard Laraxot"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+  - "../italian-text-refined-audit-report.md"
+status: draft
+---
 # Registrazione Traduzioni Temi - Standard Laraxot
 
 ## Principio Fondamentale
@@ -92,14 +107,11 @@ Time: Ora
 ## Moduli Correlati
 
 ### Temi Implementati
-<<<<<<< HEAD
 - [Themes/One/docs/pub_theme_namespace_registration.md](../../themes/one/docs/pub_theme_namespace_registration.md)
 - [Themes/Two/docs/theme-translations.md](../../themes/two/docs/theme-translations.md)
 
 ### Documentazione Base
 - [Modules/Xot/docs/theme-service-provider-rules.md](../../modules/xot/docs/theme-service-provider-rules.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Themes/One/docs/pub_theme_namespace_registration.md](../../Themes/One/docs/pub_theme_namespace_registration.md)
 - [Themes/Two/docs/theme-translations.md](../../Themes/Two/docs/theme-translations.md)
 
@@ -120,8 +132,4 @@ Time: Ora
 2. Verificare ServiceProvider registrato
 3. Pulire cache traduzioni: `php artisan config:clear`
 
-<<<<<<< HEAD
 *Standard Laraxot - Ultimo aggiornamento: 2025-08-07*
-=======
-*Standard Laraxot - Ultimo aggiornamento: 2025-08-07*
->>>>>>> 6ed19256f (.)

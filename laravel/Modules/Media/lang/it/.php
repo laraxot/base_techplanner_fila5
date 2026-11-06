@@ -1,18 +1,13 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
-
-=======
->>>>>>> 6ed19256f (.)
 return array (
   'sections' => 
   array (
     'empty' => 
     array (
-<<<<<<< HEAD
-      'label' => 'empty13',
-      'heading' => 'empty14',
+      'label' => 'empty',
+      'heading' => 'empty',
     ),
   ),
   'navigation' => 
@@ -31,10 +26,4 @@ return array (
   'actions' => 
   array (
   ),
-=======
-      'label' => 'empty',
-      'heading' => 'empty',
-    ),
-  ),
->>>>>>> 6ed19256f (.)
 );

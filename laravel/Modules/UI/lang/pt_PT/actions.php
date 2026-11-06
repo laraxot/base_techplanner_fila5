@@ -13,7 +13,6 @@ return [
         'title' => 'Teste',
         'body' => 'Esta é uma mensagem de teste para o registo com ID: :id',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -27,6 +26,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

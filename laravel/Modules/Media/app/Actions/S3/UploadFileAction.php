@@ -6,10 +6,8 @@ namespace Modules\Media\Actions\S3;
 
 use Aws\S3\ObjectUploader;
 use Exception;
-<<<<<<< HEAD
+use Spatie\QueueableAction\QueueableAction;
 
-=======
->>>>>>> 6ed19256f (.)
 use function Safe\fclose;
 use function Safe\filesize;
 use function Safe\fopen;
@@ -17,14 +15,12 @@ use function Safe\mime_content_type;
 
 class UploadFileAction extends BaseS3Action
 {
+    use QueueableAction;
+
     /**
      * Upload a file to S3
      *
      * @param  array<string, mixed>  $options
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     public function execute(string $localFilePath, string $destinationFilePath, array $options = []): array
@@ -66,7 +62,7 @@ class UploadFileAction extends BaseS3Action
                 $this->bucketName,
                 $destinationFilePath,
                 $sourceFile,
-                (string) ($uploadOptions['ACL'] ?? 'private'),
+                $acl,
                 $uploadOptions,
             );
 
@@ -96,9 +92,6 @@ class UploadFileAction extends BaseS3Action
                 'bucket' => $this->bucketName,
             ];
         } catch (Exception $exception) {
-            // Initialize $sourceFile as null if not already defined
-            $sourceFile ??= null;
-
             if (isset($sourceFile) && is_resource($sourceFile)) {
                 fclose($sourceFile);
             }

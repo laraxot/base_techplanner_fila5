@@ -6,10 +6,7 @@ namespace Modules\Lang\Actions\Filament;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
-<<<<<<< HEAD
 use Filament\Infolists\Components\Entry;
-=======
->>>>>>> 6ed19256f (.)
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Wizard\Step;
 use Filament\Tables\Columns\Column;
@@ -32,15 +29,11 @@ class AutoLabelAction
      * Undocumented function.
      * return number of input added.
      */
-<<<<<<< HEAD
     public function execute(Field|Entry|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|Entry|BaseFilter|Column|Step|Action|Section
-=======
-    public function execute(Field|BaseFilter|Column|Step|Action|Section $component, string $type = 'label'): Field|BaseFilter|Column|Step|Action|Section
->>>>>>> 6ed19256f (.)
     {
         $backtrace = debug_backtrace();
         $backtrace_slice = array_slice($backtrace, 2);
-        $class = Arr::first($backtrace_slice, function ($item) use ($component) {
+        $class = Arr::first($backtrace_slice, function (array $item) use ($component) {
             if ('execute' === $item['function']) {
                 return false;
             }
@@ -81,6 +74,9 @@ class AutoLabelAction
 
         $label_tkey = null;
         $val = 'no-set-val';
+        // Valore da persistere quando la traduzione non esiste ancora. Di norma coincide
+        // con il segmento di chiave, ma non sempre: vedi le sezioni senza titolo.
+        $default_val = null;
 
         if ($component instanceof Step) {
             Assert::string($val = $component->getLabel());
@@ -89,7 +85,13 @@ class AutoLabelAction
         if (null === $label_tkey && $component instanceof Section) {
             $val = $component->getHeading();
             if (null === $val) {
+                // Una sezione senza titolo e' una scelta: raggruppa i campi senza
+                // annunciarsi. Serve comunque un segmento di chiave, e `empty` lo fa, ma
+                // il valore salvato deve restare vuoto — altrimenti la prima visita
+                // persiste la stringa "empty" e da li' in poi la sezione mostra quella
+                // parola come intestazione.
                 $val = 'empty';
+                $default_val = '';
             }
             if (! is_string($val)) {
                 $val = app(SafeStringCastAction::class)->execute($val);
@@ -110,7 +112,7 @@ class AutoLabelAction
 
         $label = trans($label_key);
         if (is_string($label) && $label_key === $label) { // se non esiste la traduzione, la salvo
-            app(SaveTransAction::class)->execute($label_key, $val);
+            app(SaveTransAction::class)->execute($label_key, $default_val ?? $val);
         }
         if (! is_string($label)) {
             $component->label('FIX:'.$label_key);

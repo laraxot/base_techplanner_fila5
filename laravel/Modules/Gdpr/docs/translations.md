@@ -1,14 +1,21 @@
+---
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations"
+issues: []
+discussions: []
+status: draft
+---
+
 # Traduzioni del Modulo Gdpr
 
 ## Collegamenti
 
-- [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
-- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
-<<<<<<< HEAD
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
-- [Regole Generali Traduzioni](../../xot/docs/translations.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
 
 ## Struttura
 
@@ -58,7 +65,6 @@ return [
 ];
 ```
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
 * [translations.md](laravel/modules/chart/docs/translations.md)
 * [translations.md](laravel/modules/reporting/docs/translations.md)
 * [translations.md](laravel/modules/gdpr/docs/translations.md)
@@ -76,26 +82,3 @@ return [
 * [translations.md](laravel/modules/activity/docs/translations.md)
 * [translations.md](laravel/modules/patient/docs/translations.md)
 * [translations.md](laravel/modules/cms/docs/translations.md)
-=======
->>>>>>> 6ed19256f (.)
-* [translations.md](laravel/Modules/Chart/docs/translations.md)
-* [translations.md](laravel/Modules/Reporting/docs/translations.md)
-* [translations.md](laravel/Modules/Gdpr/docs/translations.md)
-* [translations.md](laravel/Modules/Notify/docs/translations.md)
-* [translations.md](laravel/Modules/Xot/docs/roadmap/lang/translations.md)
-* [translations.md](laravel/Modules/Xot/docs/translations.md)
-* [translations.md](laravel/Modules/Dental/docs/translations.md)
-* [translations.md](laravel/Modules/User/docs/translations.md)
-* [translations.md](laravel/Modules/UI/docs/translations.md)
-* [translations.md](laravel/Modules/Lang/docs/packages/translations.md)
-* [translations.md](laravel/Modules/Lang/docs/translations.md)
-* [translations.md](laravel/Modules/Job/docs/translations.md)
-* [translations.md](laravel/Modules/Media/docs/translations.md)
-* [translations.md](laravel/Modules/Tenant/docs/translations.md)
-* [translations.md](laravel/Modules/Activity/docs/translations.md)
-* [translations.md](laravel/Modules/Patient/docs/translations.md)
-<<<<<<< HEAD
-* [translations.md](laravel/Modules/Cms/docs/translations.md)
-=======
-* [translations.md](laravel/Modules/Cms/docs/translations.md)
->>>>>>> 6ed19256f (.)

@@ -5,22 +5,18 @@ declare(strict_types=1);
 namespace Modules\Employee\Filament\Widgets;
 
 use Carbon\Carbon;
+use Exception;
 use Filament\Actions\Action;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
 use Filament\Schemas\Components\Actions;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Components\Tabs;
 use Filament\Schemas\Components\Tabs\Tab;
+use Filament\Schemas\Components\Text;
 use Illuminate\Contracts\View\View;
 use Modules\User\Models\User;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 6ed19256f (.)
-use Override;
 
 /**
  * Attendance overview widget showing next 7 days schedule.
@@ -28,11 +24,7 @@ use Override;
  * Displays upcoming absences, smart working, and transfers
  * with department filtering capabilities.
  */
-<<<<<<< HEAD
 class AttendanceOverviewWidget extends XotBaseSchemaWidget
-=======
-class AttendanceOverviewWidget extends XotBaseWidget
->>>>>>> 6ed19256f (.)
 {
     protected static ?int $sort = 3;
 
@@ -47,10 +39,6 @@ class AttendanceOverviewWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
-<<<<<<< HEAD
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public function getFormSchema(): array
     {
         return [
@@ -61,7 +49,7 @@ class AttendanceOverviewWidget extends XotBaseWidget
                         ->options($this->getDepartmentOptions())
                         ->default($this->selectedDepartment)
                         ->live()
-                        ->afterStateUpdated(function ($state): void {
+                        ->afterStateUpdated(function (mixed $state): void {
                             if (is_string($state) || $state === null) {
                                 $this->selectedDepartment = $state;
                             }
@@ -72,34 +60,22 @@ class AttendanceOverviewWidget extends XotBaseWidget
                                 ->label(__('employee::widgets.attendance_overview.tabs.absences'))
                                 ->badge($this->getAbsencesCount())
                                 ->schema([
-                                    Placeholder::make(
-                                        'absences_list',
-                                    )->content(fn (): View => view('employee::widgets.attendance-overview.attendance-list', [
-                                        'items' => $this->getAbsences(),
-                                        'type' => 'absences',
-                                    ])),
+                                    Text::make('absences_list')
+                                        ->content(fn () => $this->renderAbsencesList()),
                                 ]),
                             Tab::make('smart_working')
                                 ->label(__('employee::widgets.attendance_overview.tabs.smart_working'))
                                 ->badge($this->getSmartWorkingCount())
                                 ->schema([
-                                    Placeholder::make(
-                                        'smart_working_list',
-                                    )->content(fn (): View => view('employee::widgets.attendance-overview.attendance-list', [
-                                        'items' => $this->getSmartWorking(),
-                                        'type' => 'smart_working',
-                                    ])),
+                                    Text::make('smart_working_list')
+                                        ->content(fn () => $this->renderSmartWorkingList()),
                                 ]),
                             Tab::make('transfers')
                                 ->label(__('employee::widgets.attendance_overview.tabs.transfers'))
                                 ->badge($this->getTransfersCount())
                                 ->schema([
-                                    Placeholder::make(
-                                        'transfers_list',
-                                    )->content(fn (): View => view('employee::widgets.attendance-overview.attendance-list', [
-                                        'items' => $this->getTransfers(),
-                                        'type' => 'transfers',
-                                    ])),
+                                    Text::make('transfers_list')
+                                        ->content(fn () => $this->renderTransfersList()),
                                 ]),
                         ])
                         ->activeTab(1),
@@ -158,8 +134,6 @@ class AttendanceOverviewWidget extends XotBaseWidget
     protected function getAbsences(): array
     {
         $startDate = Carbon::today();
-        $endDate = Carbon::today()->addDays(7);
-
         // Since we don't have 'absence' type in WorkHour schema,
         // we'll look for employees who haven't clocked in recently
         // This is a mock implementation for widget display
@@ -279,5 +253,50 @@ class AttendanceOverviewWidget extends XotBaseWidget
     protected function getTransfersCount(): int
     {
         return count($this->getTransfers());
+    }
+
+    private function renderAbsencesList(): string
+    {
+        try {
+            /** @var view-string $view */
+            $view = 'employee::widgets.attendance-overview.attendance-list';
+
+            return view($view, [
+                'items' => $this->getAbsences(),
+                'type' => 'absences',
+            ])->render();
+        } catch (Exception $e) {
+            return '<div class="text-red-500">Error: '.$e->getMessage().'</div>';
+        }
+    }
+
+    private function renderSmartWorkingList(): string
+    {
+        try {
+            /** @var view-string $view */
+            $view = 'employee::widgets.attendance-overview.attendance-list';
+
+            return view($view, [
+                'items' => $this->getSmartWorking(),
+                'type' => 'smart_working',
+            ])->render();
+        } catch (Exception $e) {
+            return '<div class="text-red-500">Error: '.$e->getMessage().'</div>';
+        }
+    }
+
+    private function renderTransfersList(): string
+    {
+        try {
+            /** @var view-string $view */
+            $view = 'employee::widgets.attendance-overview.attendance-list';
+
+            return view($view, [
+                'items' => $this->getTransfers(),
+                'type' => 'transfers',
+            ])->render();
+        } catch (Exception $e) {
+            return '<div class="text-red-500">Error: '.$e->getMessage().'</div>';
+        }
     }
 }

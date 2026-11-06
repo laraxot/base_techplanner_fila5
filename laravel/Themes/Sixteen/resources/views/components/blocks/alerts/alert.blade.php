@@ -90,13 +90,9 @@
                     type="button"
                     class="inline-flex {$variantClasses['text']} hover:{$variantClasses['bg']} focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
                     @click="show = false"
-                    aria-label="{{ __('sixteen::alerts.dismiss') }}"
+                    aria-label="{{ __('pub_theme::alerts.dismiss') }}"
                 >
-<<<<<<< HEAD
                     <x-filament::icon icon="heroicon-o-x-mark" class="h-4 w-4" />
-=======
-                    <x-filament::icon name="heroicon-o-x-mark" class="h-4 w-4" />
->>>>>>> 6ed19256f (.)
                 </button>
             </div>
         @endif

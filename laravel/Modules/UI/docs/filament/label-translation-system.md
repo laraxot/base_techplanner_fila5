@@ -1,3 +1,15 @@
+---
+title: "label translation system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "label translation system"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sistema di Traduzione Automatica delle Etichette (Label) in Filament
 
 ## Regola Fondamentale
@@ -68,11 +80,6 @@ Se vedi un'etichetta come `FIX:modulo::fields.nome_campo.label`, significa che i
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Implementazione del LangServiceProvider](Modules/Lang/app/Providers/LangServiceProvider.php)
 - [AutoLabelAction](Modules/Lang/app/Actions/Filament/AutoLabelAction.php)
-=======
-- [Implementazione del LangServiceProvider](/var/www/html/base_saluteora/laravel/Modules/Lang/app/Providers/LangServiceProvider.php)
-- [AutoLabelAction](/var/www/html/base_saluteora/laravel/Modules/Lang/app/Actions/Filament/AutoLabelAction.php)
->>>>>>> 6ed19256f (.)
 - [Documentazione Filament sui Form](https://filamentphp.com/docs/3.x/forms/fields/getting-started)

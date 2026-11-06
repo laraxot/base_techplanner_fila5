@@ -1,5 +1,20 @@
+---
+issues: []
+discussions: []
+title: "Lang Module: Philosophy, Purpose, and Design Principles"
+module: "Lang"
+type: concept
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Lang Module: Philosophy, Purpose, and Design Principles
 
+**Date:** December 23, 2025
 **Date:** December 23, 2025
 
 ## 🎯 Purpose and Core Responsibilities
@@ -54,8 +69,4 @@ The `Lang` module, as the facilitator of multilingualism, can significantly bene
 4.  **Git (MCP)**: Aids in reviewing changes to translation files or `AutoLabelAction` logic, ensuring that localization efforts are consistent and correctly versioned.
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex translation fallback mechanisms or debugging issues where labels are not resolving correctly across different locales.
 
-<<<<<<< HEAD
 By leveraging these MCPs, the `Lang` module can ensure its critical role in enabling global reach and enhancing usability is more efficient, verifiable, and transparent, ultimately contributing to a truly multilingual and inclusive application.
-=======
-By leveraging these MCPs, the `Lang` module can ensure its critical role in enabling global reach and enhancing usability is more efficient, verifiable, and transparent, ultimately contributing to a truly multilingual and inclusive application.
->>>>>>> 6ed19256f (.)

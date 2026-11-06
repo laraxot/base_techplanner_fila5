@@ -5,37 +5,39 @@ declare(strict_types=1);
 namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Media\Models\Media;
-use Modules\Notify\Database\Factories\NotificationTemplateVersionFactory;
-use Modules\User\Models\Profile;
+use Modules\Notify\Models\Traits\NotificationTemplateVersionRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
-use Override;
 use RuntimeException;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 // BaseModel in same namespace provides common behaviors
 /**
- * @property-read Profile|null $creator
+ * @property int|null $template_id
+ * @property string $id
+ * @property string|null $subject
+ * @property string|null $body_html
+ * @property string|null $body_text
+ * @property array<int, string>|null $channels
+ * @property array<string, mixed>|null $variables
+ * @property array<string, mixed>|null $conditions
+ * @property int|string|null $version
+ * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
  * @property-read NotificationTemplate|null $template
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
- * @method static NotificationTemplateVersionFactory factory($count = null, $state = [])
  * @method static Builder<static>|NotificationTemplateVersion newModelQuery()
  * @method static Builder<static>|NotificationTemplateVersion newQuery()
  * @method static Builder<static>|NotificationTemplateVersion query()
  *
- * @mixin IdeHelperNotificationTemplateVersion
- *
- * @property-read ProfileContract|null $deleter
- *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class NotificationTemplateVersion extends BaseModel
 {
+    use NotificationTemplateVersionRelations;
     use Updater;
 
     protected $fillable = [
@@ -48,15 +50,9 @@ class NotificationTemplateVersion extends BaseModel
         'conditions',
         'version',
         'created_by',
-        'change_notes',
-    ];
+        'change_notes'];
 
-    public function template(): BelongsTo
-    {
-        return $this->belongsTo(NotificationTemplate::class, 'template_id');
-    }
-
-    public function restore(): NotificationTemplate
+    public function restoreTemplate(): NotificationTemplate
     {
         $template = $this->template;
 
@@ -70,8 +66,7 @@ class NotificationTemplateVersion extends BaseModel
             'body_text' => $this->body_text ?? null,
             'channels' => $this->channels ?? null,
             'variables' => $this->variables ?? null,
-            'conditions' => $this->conditions ?? null,
-        ]);
+            'conditions' => $this->conditions ?? null]);
 
         return $template;
     }
@@ -81,13 +76,11 @@ class NotificationTemplateVersion extends BaseModel
      *
      * @return array<string, string>
      */
-    #[Override]
     protected function casts(): array
     {
         return [
             'channels' => 'array',
             'variables' => 'array',
-            'conditions' => 'array',
-        ];
+            'conditions' => 'array'];
     }
 }

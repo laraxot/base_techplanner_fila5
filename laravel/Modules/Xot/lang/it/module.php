@@ -9,9 +9,11 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'Moduli',
+        'icon' => 'heroicon-o-cube',
+        'sort' => 65,
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'placeholder' => 'Nome',
@@ -106,62 +108,60 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => ['label' => 'Nome', 'placeholder' => 'Nome'],
-        'description' => ['label' => 'Descrizione', 'placeholder' => 'Descrizione'],
-        'is_visible' => ['label' => 'Visibile', 'help' => 'Se selezionato, la pagina sarà visibile nella navigazione'],
-        'is_active' => ['label' => 'Attivo', 'help' => 'Se selezionato, la pagina sarà attiva'],
-        'is_home' => ['label' => 'Home', 'help' => 'Se selezionato, la pagina sarà la home'],
-        'status' => ['label' => 'Stato', 'placeholder' => 'Stato'],
-        'priority' => ['label' => 'Priorità', 'placeholder' => 'Priorità'],
-        'colors' => ['label' => 'Colori', 'placeholder' => 'Colori'],
-        'key' => ['label' => 'color key'],
-        'color' => ['label' => 'color'],
-        'value' => ['label' => 'value'],
-        'hex' => ['label' => 'hex'],
-        'icon' => ['label' => 'Icona', 'placeholder' => 'Icona'],
-        'timezone' => ['label' => 'Fuso orario', 'placeholder' => 'Fuso orario'],
->>>>>>> 6ed19256f (.)
+        'path' => [
+            'label' => 'path',
+        ],
+        'enabled' => [
+            'label' => 'enabled',
+        ],
     ],
     'pages' => [
         'health_check_results' => [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
-<<<<<<< HEAD
             'heading' => 'Application Health',
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Module',
     'plural_label' => 'Module (Plurale)',
     'actions' => [
         'create' => [
             'label' => 'Crea Module',
+            'icon' => 'create',
+            'tooltip' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Module',
+            'icon' => 'edit',
+            'tooltip' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Module',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'view' => [
+            'label' => 'view',
+            'icon' => 'view',
+            'tooltip' => 'view',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

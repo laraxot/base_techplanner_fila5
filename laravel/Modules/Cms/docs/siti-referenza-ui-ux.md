@@ -1,3 +1,15 @@
+---
+title: "siti referenza ui ux"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "siti referenza ui ux"
+issues: []
+discussions: []
+status: draft
+---
+
 # Siti di Riferimento per UI/UX in Ambito Sanitario
 
 Questo documento elenca siti web e applicazioni in ambito sanitario che possono servire come ispirazione per il design UI/UX di il progetto, evidenziando elementi di design particolarmente riusciti.
@@ -15,11 +27,7 @@ Per ogni sito, vengono valutati i seguenti aspetti:
 
 ### Fascicolo Sanitario Elettronico 2.0
 - **URL**: [FSE 2.0](https://www.fascicolosanitario.gov.it/)
-- **Punti di forza**:
-<<<<<<< HEAD
 - **Punti di forza**: 
-=======
->>>>>>> 6ed19256f (.)
   - Organizzazione chiara delle informazioni
   - Interfaccia semplificata per diverse fasce d'età
   - Buon contrasto per leggibilità
@@ -156,7 +164,6 @@ Per ogni sito, vengono valutati i seguenti aspetti:
 1. **Fase di audit**
    - Analizzare i siti di riferimento con test utente
    - Documentare pattern efficaci
-<<<<<<< HEAD
    
 2. **Sistema di design**
    - Creare moodboard basata sui migliori esempi
@@ -166,17 +173,6 @@ Per ogni sito, vengono valutati i seguenti aspetti:
    - Sviluppare prototipi di componenti chiave
    - Testare con utenti reali
    
-=======
->>>>>>> 6ed19256f (.)
-
-2. **Sistema di design**
-   - Creare moodboard basata sui migliori esempi
-   - Definire linee guida specifiche per il progetto
-
-3. **Prototipazione**
-   - Sviluppare prototipi di componenti chiave
-   - Testare con utenti reali
-
 4. **Implementazione**
    - Utilizzare DaisyUI e Tailwind CSS
    - Sviluppare componenti custom quando necessario
@@ -185,8 +181,4 @@ Per ogni sito, vengono valutati i seguenti aspetti:
 
 L'analisi di questi siti di riferimento offre una base solida per il design UI/UX di il progetto. Identificando le migliori pratiche nel settore sanitario e applicando i principi di design moderno, possiamo creare un'interfaccia che sia al contempo funzionale, accessibile e piacevole da utilizzare.
 
-L'integrazione con gli strumenti già selezionati (DaisyUI, Tailwind CSS) e l'applicazione dei principi di design (Refactoring UI) permetteranno di creare un'esperienza utente coerente e di alta qualità.
-<<<<<<< HEAD
 L'integrazione con gli strumenti già selezionati (DaisyUI, Tailwind CSS) e l'applicazione dei principi di design (Refactoring UI) permetteranno di creare un'esperienza utente coerente e di alta qualità. 
-=======
->>>>>>> 6ed19256f (.)

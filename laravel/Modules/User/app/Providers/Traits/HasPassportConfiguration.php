@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Providers\Traits;
 
-use Carbon\CarbonInterval;
 use Illuminate\Support\Facades\Config;
 use Laravel\Passport\Passport;
 use Modules\User\Models\OauthAccessToken;
@@ -13,7 +12,10 @@ use Modules\User\Models\OauthClient;
 use Modules\User\Models\OauthRefreshToken;
 use Webmozart\Assert\Assert;
 
-trait HasPassportConfiguration
+/**
+ * @phpstan-ignore trait.unused
+ */
+trait HasPassportConfiguration // @phpstan-ignore trait.unused
 {
     /**
      * Configurazione completa di Passport.
@@ -52,13 +54,6 @@ trait HasPassportConfiguration
         Assert::isArray($config);
 
         Passport::tokensExpireIn(
-            CarbonInterval::days((int) ($config['access_token'] ?? 15))
-        );
-        Passport::refreshTokensExpireIn(
-            CarbonInterval::days((int) ($config['refresh_token'] ?? 30))
-        );
-        Passport::personalAccessTokensExpireIn(
-            CarbonInterval::months((int) ($config['personal_access_token'] ?? 6))
         );
     }
 

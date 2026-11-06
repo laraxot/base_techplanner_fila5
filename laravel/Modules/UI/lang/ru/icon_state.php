@@ -10,10 +10,7 @@ return [
             'help' => 'Идентифицирующее имя элемента',
             'description' => 'Имя объекта',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'edit-name' => [
             'label' => 'Редактировать имя',
@@ -21,10 +18,7 @@ return [
             'help' => 'Изменить существующее имя',
             'description' => 'Действие для изменения имени',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'change-state' => [
             'label' => 'Изменить состояние',
@@ -32,10 +26,7 @@ return [
             'help' => 'Изменить текущее состояние',
             'description' => 'Действие для изменения состояния',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'Состояние',
@@ -43,10 +34,7 @@ return [
             'help' => 'Текущее состояние элемента',
             'description' => 'Текущее состояние системы',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Сообщение',
@@ -54,10 +42,7 @@ return [
             'help' => 'Информационное сообщение',
             'description' => 'Текст сообщения',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [
@@ -71,7 +56,6 @@ return [
             'title' => 'Ошибка перехода',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -83,6 +67,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

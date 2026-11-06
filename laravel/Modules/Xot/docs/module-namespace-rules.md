@@ -1,3 +1,11 @@
+---
+title: "Regola generale: Label e traduzioni in Filament"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "regola generale: label e traduzioni in filament xot"
+---
 # Regola generale: Label e traduzioni in Filament
 
 ## Regola
@@ -19,15 +27,7 @@
 - Test che verifica la presenza di tutte le chiavi di traduzione.
 
 ## Collegamenti
-<<<<<<< HEAD
-- [docs Lang](../../Lang/docs/filament-label.md)
-
-Ultimo aggiornamento: maggio 2025.
-- [docs root](../../../../../docs/actions.md)
-- [docs Lang](../../lang/docs/filament-label.md)
-=======
 - [docs root](../../../../docs/actions.md)
 - [docs Lang](../../Lang/docs/filament-label.md)
 
 Ultimo aggiornamento: maggio 2025.
->>>>>>> 6ed19256f (.)

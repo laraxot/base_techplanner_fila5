@@ -1,11 +1,15 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: data-models
-canonical: ../../../Themes/docs/shared-components/data-models.md
+issues: []
+discussions: []
+title: "Data Models"
+module: "Media"
+type: concept
+tags: [data, models]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "data models"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/data-models.md
-=======
 # Data Models
->>>>>>> 6ed19256f (.)

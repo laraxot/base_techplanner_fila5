@@ -1,3 +1,15 @@
+---
+title: "analisi moduli ottimizzazioni"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi moduli ottimizzazioni"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Completa Moduli - Ottimizzazioni e Miglioramenti
 
 ## 📊 Panoramica Generale
@@ -225,7 +237,6 @@ class ModuleMetricsService
 ## 🔗 Collegamenti Documentazione
 
 ### Moduli Base
-<<<<<<< HEAD
 - [Xot - Core Framework](../laravel/modules/xot/docs/ottimizzazioni-e-miglioramenti.md)
 - [User - Authentication](../laravel/modules/user/docs/ottimizzazioni-e-miglioramenti.md)
 - [Geo - Geographic Data](../laravel/modules/geo/docs/ottimizzazioni-e-miglioramenti.md)
@@ -246,28 +257,6 @@ class ModuleMetricsService
 - [<nome modulo> - Mobile Features](../laravel/modules/<nome modulo>/docs/ottimizzazioni-e-miglioramenti.md)
 - [<nome progetto> - Main Healthcare](../laravel/modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
 - [<nome progetto> - Mobile Features](../laravel/modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Xot - Core Framework](../laravel/Modules/Xot/docs/ottimizzazioni-e-miglioramenti.md)
-- [User - Authentication](../laravel/Modules/User/docs/ottimizzazioni-e-miglioramenti.md)
-- [Geo - Geographic Data](../laravel/Modules/Geo/docs/ottimizzazioni-e-miglioramenti.md)
-- [UI - Shared Components](../laravel/Modules/UI/docs/ottimizzazioni-e-miglioramenti.md)
-
-### Moduli Funzionali
-- [Activity - Audit Trail](../laravel/Modules/Activity/docs/ottimizzazioni-e-miglioramenti.md)
-- [Cms - Content Management](../laravel/Modules/Cms/docs/ottimizzazioni-e-miglioramenti.md)
-- [Gdpr - Privacy Compliance](../laravel/Modules/Gdpr/docs/ottimizzazioni-e-miglioramenti.md)
-- [Lang - Localization](../laravel/Modules/Lang/docs/ottimizzazioni-e-miglioramenti.md)
-- [Media - File Management](../laravel/Modules/Media/docs/ottimizzazioni-e-miglioramenti.md)
-- [Notify - Notifications](../laravel/Modules/Notify/docs/ottimizzazioni-e-miglioramenti.md)
-- [Job - Queue Management](../laravel/Modules/Job/docs/ottimizzazioni-e-miglioramenti.md)
-- [Tenant - Multi-Tenancy](../laravel/Modules/Tenant/docs/ottimizzazioni-e-miglioramenti.md)
-
-### Moduli Specifici
-- [<nome progetto> - Main Healthcare](../laravel/Modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
-- [<nome modulo> - Mobile Features](../laravel/Modules/<nome modulo>/docs/ottimizzazioni-e-miglioramenti.md)
-- [<nome progetto> - Main Healthcare](../laravel/Modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
-- [<nome progetto> - Mobile Features](../laravel/Modules/<nome progetto>/docs/ottimizzazioni-e-miglioramenti.md)
 
 ## 🎯 Conclusioni
 
@@ -282,11 +271,5 @@ L'analisi ha identificato **pattern comuni** e **opportunità di miglioramento**
 La roadmap proposta è **incrementale** e **non disruptive**, permettendo miglioramenti graduali senza compromettere la stabilità del sistema in produzione.
 
 ---
-
-**Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 1.0
-<<<<<<< HEAD
 **Stato**: ✅ Analisi completa di tutti i 14 moduli
-=======
-**Stato**: ✅ Analisi completa di tutti i 14 moduli
->>>>>>> 6ed19256f (.)

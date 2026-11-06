@@ -4,13 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
+use Spatie\QueueableAction\QueueableAction;
+
 use function Safe\file_get_contents;
 use function Safe\preg_match;
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ed19256f (.)
-use Spatie\QueueableAction\QueueableAction;
 
 class GetClassNameByPathAction
 {

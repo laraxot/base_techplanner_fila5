@@ -8,7 +8,6 @@ return [
             'label' => 'activeLocale',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Lang Base Create Record',
     'plural_label' => 'Lang Base Create Record (Plurale)',
     'navigation' => [
@@ -19,8 +18,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Lang Base Create Record',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -42,6 +41,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,12 +1,11 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: filament-errors-duplicate
-canonical: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+title: "Errori Comuni Filament nel Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "errori comuni filament nel modulo activity activity"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
-=======
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
@@ -171,5 +170,6 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
-- [ ] Eseguire PHPStan per verificare altri possibili errori
->>>>>>> 6ed19256f (.)
+- [ ] Eseguire PHPStan per verificare altri possibili errori=======
+See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
+See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md

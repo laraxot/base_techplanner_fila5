@@ -1,8 +1,18 @@
-<<<<<<< HEAD
+---
+issues: []
+discussions: []
+title: "Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Struttura Completa dei Campi di Traduzione - Standard Laraxot <nome progetto>
-=======
-# Struttura Completa dei Campi di Traduzione - Standard Laraxot SaluteOra
->>>>>>> 6ed19256f (.)
 
 ## Principi Fondamentali DRY + KISS
 
@@ -304,11 +314,7 @@ return [
 ## File da Aggiornare (Priorità)
 
 ### Alta Priorità - Tedeschi
-<<<<<<< HEAD
 1. `/laravel/Modules/<nome progetto>/lang/de/patient-resource.php`
-=======
-1. `/laravel/Modules/SaluteOra/lang/de/patient-resource.php`
->>>>>>> 6ed19256f (.)
 2. `/laravel/Modules/User/lang/de/registration.php`
 3. `/laravel/Modules/User/lang/de/register_tenant.php`
 
@@ -318,15 +324,17 @@ return [
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
 - [<nome progetto> Translation Audit](../Modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
 - [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
 - [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
-=======
-- [SaluteOra Translation Audit](../Modules/SaluteOra/docs/translation_audit_city_fields.md)
-- [User Module Translation Rules](../Modules/User/docs/widget-translation-rules.md)
->>>>>>> 6ed19256f (.)
+- [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
+- [User Module Translation Rules](../modules/user/docs/widget-translation-rules.md)
+- [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
+- [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
+- [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
+- [<nome progetto> Translation Audit](../modules/<nome progetto>/docs/translation_audit_city_fields.md)
+- [User Module Translation Rules](../../User/docs/widget-translation-rules.md)
 - [Translation Syntax Fixes](translation_syntax_fixes.md)
 - [Windsurf Translation Rules](../.windsurf/rules/translation-complete-structure.mdc)
 
@@ -344,7 +352,9 @@ cd laravel && ./vendor/bin/phpstan analyze Modules/*/lang/ --level=9
 ```
 
 *Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
-<<<<<<< HEAD
 *Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
-=======
->>>>>>> 6ed19256f (.)
+*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
+*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
+*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*
+*Ultimo aggiornamento: 2025-08-08 - Struttura completa standardizzata*
+*Ultimo aggiornamento: [DATE] - Struttura completa standardizzata*

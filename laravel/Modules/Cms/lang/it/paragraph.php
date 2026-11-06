@@ -9,7 +9,6 @@ return [
             'placeholder' => 'content',
             'helper_text' => 'content',
             'description' => 'content',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -24,7 +23,7 @@ return [
         ],
         'label' => 'Paragraph',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -35,8 +34,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Paragraph',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

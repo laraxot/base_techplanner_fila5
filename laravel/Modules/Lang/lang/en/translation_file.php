@@ -1,10 +1,10 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'model' => [
         'label' => 'translation file.model',
+        'placeholder' => 'Seleziona file traduzione',
+        'helper_text' => 'File di traduzione per la gestione delle lingue',
     ],
     'navigation' => [
         'label' => 'Navigation Label',
@@ -15,7 +15,6 @@ return [
     'fields' => [
         'toggleColumns' => [
             'label' => 'toggleColumns',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -37,23 +36,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'description' => 'content',
             'helper_text' => 'content',
             'placeholder' => 'content',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
         ],
@@ -62,11 +49,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> 6ed19256f (.)
         ],
         'snapshots' => [
             'fields' => [
@@ -81,10 +63,10 @@ return [
                         'description' => 'snapshots.fields.updated_at.label',
                         'helper_text' => 'snapshots.fields.updated_at.label',
                         'placeholder' => 'snapshots.fields.updated_at.label',
+                        'label' => 'Etichetta Data',
                     ],
                 ],
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -101,27 +83,27 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
+            'placeholder' => 'Inserisci chiave traduzione',
+            'help' => 'Chiave identificativa della traduzione',
         ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'key' => [
-            'label' => 'key',
->>>>>>> 6ed19256f (.)
+        'delete' => [
+            'label' => 'delete',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [
         'create' => [
             'label' => 'create',
+            'tooltip' => 'Crea nuovo file di traduzione',
+            'success' => 'File di traduzione creato con successo',
         ],
         'lang' => [
             'label' => 'lang',
+            'tooltip' => 'Seleziona lingua',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

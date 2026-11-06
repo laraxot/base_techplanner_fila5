@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\User\Models\Traits;
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
 use Illuminate\Support\Carbon;
@@ -16,14 +17,10 @@ use Modules\User\Models\AuthenticationLog;
  * It includes methods for retrieving the latest authentication logs, login timestamps, IP addresses,
  * and other related information, including tracking consecutive login days.
  *
- * @property MorphMany<AuthenticationLog, $this> $authentications      The authentication logs related to the model.
- * @property MorphOne<AuthenticationLog, $this>  $latestAuthentication The most recent authentication log entry.
- * @property string|null                         $login_at             The timestamp of the last login.
- * @property string|null                         $ip_address           The IP address of the last login.
- * @property MorphMany<AuthenticationLog>        $authentications
- * @property MorphOne<AuthenticationLog>         $latestAuthentication
- * @property Carbon|null                         $login_at
- * @property string|null                         $ip_address
+ * @property MorphMany<AuthenticationLog, $this> $authentications The authentication logs related to the model.
+ * @property MorphOne<AuthenticationLog, $this> $latestAuthentication The most recent authentication log entry.
+ * @property string|null $login_at The timestamp of the last login.
+ * @property string|null $ip_address The IP address of the last login.
  */
 trait HasAuthenticationLogTrait
 {
@@ -67,7 +64,7 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->first();
 
-        return null !== $auth ? $auth->login_at : null;
+        return $auth !== null ? $auth->login_at : null;
     }
 
     /**
@@ -80,7 +77,7 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->where('login_successful', true)->first();
 
-        return null !== $auth ? $auth->login_at : null;
+        return $auth !== null ? $auth->login_at : null;
     }
 
     /**
@@ -93,7 +90,7 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->first();
 
-        return null !== $auth ? $auth->ip_address : null;
+        return $auth !== null ? $auth->ip_address : null;
     }
 
     /**
@@ -106,7 +103,7 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->where('login_successful', true)->first();
 
-        return null !== $auth ? $auth->ip_address : null;
+        return $auth !== null ? $auth->ip_address : null;
     }
 
     /**
@@ -119,7 +116,7 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->skip(1)->first();
 
-        return null !== $auth ? $auth->login_at : null;
+        return $auth !== null ? $auth->login_at : null;
     }
 
     /**
@@ -132,7 +129,7 @@ trait HasAuthenticationLogTrait
         /** @var AuthenticationLog|null $auth */
         $auth = $this->authentications()->skip(1)->first();
 
-        return null !== $auth ? $auth->ip_address : null;
+        return $auth !== null ? $auth->ip_address : null;
     }
 
     /**
@@ -152,7 +149,7 @@ trait HasAuthenticationLogTrait
             while ($count > 0) {
                 $date = $date->subDay();
                 $count = $this->authentications()->whereDate('login_at', $date)->count();
-                ++$days;
+                $days++;
             }
 
             return $days;

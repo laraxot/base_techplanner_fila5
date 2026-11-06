@@ -1,10 +1,15 @@
+---
+title: "Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "modulo activity activity"
+---
 # Modulo Activity
 
-Data: 2025-04-23 19:09:55
-<<<<<<< HEAD
+Data: [DATE] 19:09:55Data: 2025-04-23 19:09:55
 Data: [DATE] 19:09:55
-=======
->>>>>>> 6ed19256f (.)
 
 ## Informazioni generali
 
@@ -14,11 +19,7 @@ Modules\\Activity\\Database\\Seeders
 Workbench\\App
 Workbench\\Database\\Factories
 Workbench\\Database\\Seeders
-<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_activity_fila5
-=======
-- **Pacchetto Composer**: laraxot/module_activity_fila3
->>>>>>> 6ed19256f (.)
 Marco Sottana
 - **Dipendenze**: spatie/laravel-activitylog * spatie/laravel-event-sourcing * repositories type path url ../Xot type path url ../Tenant type path url ../UI scripts post-autoload-dump
 - **Totale file PHP**: 55
@@ -243,15 +244,9 @@ database/seeders
 docs
 docs/.github
 docs/.github/workflows
-<<<<<<< HEAD
 docs/archivedd
 docs/archivedd/.github
 docs/archivedd/.github/workflows
-=======
-docs/archived
-docs/archived/.github
-docs/archived/.github/workflows
->>>>>>> 6ed19256f (.)
 docs/database
 docs/phpstan
 lang
@@ -296,10 +291,7 @@ workbench/routes
 ## Collegamenti
 
 - [Torna a README](./README.md)
-<<<<<<< HEAD
-- [Torna a README](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Torna a README](./README.md)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Bottlenecks](./bottlenecks.md)
 
@@ -366,7 +358,6 @@ workbench/routes
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
-<<<<<<< HEAD
 * [structure.md](laravel/modules/gdpr/docs/structure.md)
 * [structure.md](laravel/modules/notify/docs/structure.md)
 * [structure.md](laravel/modules/xot/docs/structure.md)
@@ -382,8 +373,6 @@ workbench/routes
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
-=======
->>>>>>> 6ed19256f (.)
 * [structure.md](laravel/Modules/Gdpr/docs/structure.md)
 * [structure.md](laravel/Modules/Notify/docs/structure.md)
 * [structure.md](laravel/Modules/Xot/docs/structure.md)
@@ -431,8 +420,4 @@ Modules/Activity/
 - È possibile sincronizzare eventi e log tramite reactor dedicati
 
 ### Collegamenti
-<<<<<<< HEAD
 - [Best Practice Event Sourcing .mdc](../../.cursor/rules/ACTIVITY_EVENT_SOURCING_BEST_PRACTICES.mdc)
-=======
-- [Best Practice Event Sourcing .mdc](../../.cursor/rules/ACTIVITY_EVENT_SOURCING_BEST_PRACTICES.mdc)
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "homepage struttura corretta"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "homepage struttura corretta"
+issues: []
+discussions: []
+status: draft
+---
+
 # Struttura e Contenuto Corretto dell'Homepage di il progetto
 
 ## Introduzione
@@ -7,11 +19,7 @@ Questo documento descrive in dettaglio la struttura e il contenuto corretto che 
 ## Contenuto Testuale Ufficiale
 
 ### Titolo Principale
-"Benvenuta su <slogan>,"
-<<<<<<< HEAD
 "Benvenuta su Salute Orale,"
-=======
->>>>>>> 6ed19256f (.)
 
 ### Testo Principale
 Il testo principale da mostrare è:
@@ -27,11 +35,7 @@ Il pulsante deve contenere il testo: "INIZIA ORA"
 ## Elementi Visivi Richiesti
 
 1. **Intestazione**:
-   - Logo "<slogan>" (con la "O" stilizzata)
-<<<<<<< HEAD
    - Logo "Salute Orale" (con la "O" stilizzata) 
-=======
->>>>>>> 6ed19256f (.)
    - Selettore lingua (IT/EN)
 
 2. **Sezione Centrale**:
@@ -80,8 +84,4 @@ Per verificare che l'implementazione sia corretta:
 3. Compromettere l'efficacia comunicativa del portale
 4. Non rispettare gli accordi con i partner del progetto
 
-Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto.
-<<<<<<< HEAD
 Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto. 
-=======
->>>>>>> 6ed19256f (.)

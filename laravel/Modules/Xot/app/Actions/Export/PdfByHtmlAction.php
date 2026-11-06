@@ -6,10 +6,6 @@ namespace Modules\Xot\Actions\Export;
 
 use Illuminate\Support\Facades\Storage;
 use Spatie\QueueableAction\QueueableAction;
-<<<<<<< HEAD
-use Spipu\Html2Pdf\Exception\HtmlParsingException;
-=======
->>>>>>> 6ed19256f (.)
 use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 
@@ -26,15 +22,8 @@ class PdfByHtmlAction
     ): string|BinaryFileResponse {
         $html2pdf = new Html2Pdf($orientation, 'A4', 'it');
         $html2pdf->setTestTdInOnePage(false);
-<<<<<<< HEAD
-        try {
-            $html2pdf->writeHTML($html);
-        } catch (HtmlParsingException $e) {
-            dddx($html);
-        }
-=======
+        // Un HtmlParsingException risale all'handler: continuare significherebbe scrivere un PDF incompleto.
         $html2pdf->writeHTML($html);
->>>>>>> 6ed19256f (.)
         $path = Storage::disk($disk)->path($filename);
         $html2pdf->output($path, 'F');
 

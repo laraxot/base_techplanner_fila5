@@ -1,3 +1,15 @@
+---
+title: "git conflicts resolution summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git conflicts resolution summary"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitti Git - Modulo UI
 
 ## Data Risoluzione
@@ -45,18 +57,9 @@ Tutti i file risolti rispettano:
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Root UI](../../../../docs/modules/ui.md)
 - [Components Documentation](./components.md)
 - [Design System Guidelines](../../../../docs/design-system.md)
 
 ---
 *Aggiornato automaticamente dopo risoluzione conflitti Git*
-=======
-- [Documentazione Root UI](../../../docs/modules/ui.md)
-- [Components Documentation](./components.md)
-- [Design System Guidelines](../../../docs/design-system.md)
-
----
-*Aggiornato automaticamente dopo risoluzione conflitti Git*
->>>>>>> 6ed19256f (.)

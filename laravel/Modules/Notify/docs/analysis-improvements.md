@@ -1,3 +1,15 @@
+---
+title: "analysis improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis improvements"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi e Miglioramenti del Modulo Notify
 
 ## Analisi delle Soluzioni Esistenti
@@ -290,8 +302,4 @@ class TemplatePreview extends Component
 - [MJML Documentation](https://mjml.io/documentation/)
 - [Mailgun API](https://documentation.mailgun.com/en/latest/api_reference.html)
 - [Filament Documentation](https://filamentphp.com/docs)
-<<<<<<< HEAD
 - [Laravel Mail Documentation](https://laravel.com/docs/mail) 
-=======
-- [Laravel Mail Documentation](https://laravel.com/docs/mail)
->>>>>>> 6ed19256f (.)

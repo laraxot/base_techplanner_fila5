@@ -107,11 +107,7 @@ return [
     ],
     'pec' => [
         'label' => 'PEC',
-<<<<<<< HEAD
         'description' => 'Indirizzo di posta elettronica certificata (PEC] associato all\'indirizzo',
-=======
-        'description' => 'Indirizzo di posta elettronica certificata (PEC) associato all\'indirizzo',
->>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-shield-check',
         'color' => 'purple',
     ],
@@ -133,7 +129,6 @@ return [
         'icon' => 'heroicon-o-document-text',
         'color' => 'gray',
     ],
-<<<<<<< HEAD
     'label' => 'Address Item Enum',
     'plural_label' => 'Address Item Enum (Plurale)',
     'navigation' => [
@@ -178,6 +173,4 @@ return [
             'label' => 'Elimina Address Item Enum',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

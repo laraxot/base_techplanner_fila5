@@ -1,3 +1,15 @@
+---
+title: "ticket comparison analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ticket comparison analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Comparativa Pagine Segnalazione - Task Attivo
 
 **Data**: 2026-04-06
@@ -14,7 +26,7 @@
 | segnalazione-03-riepilogo | 51% | 🔴 Da correggere |
 | segnalazione-04-conferma | 80% | ⚠️ Discreto |
 | segnalazione-area-personale | 59% | 🔴 Da correggere |
-| segnalazioni-elenco | 85% | ⚠️ Buono |
+| ticket-list | 85% | ⚠️ Buono |
 | segnalazione-disservizio | 4% | 🔴 Critico |
 
 ## Struttura HTML Riferimento (Bootstrap Italia)
@@ -50,6 +62,6 @@ Dall'analisi delle pagine reference, la struttura comune per le pagine segnalazi
 
 ## Riferimenti
 
-- Documentazione esistente: `docs/COMPLETE-VISUAL-PARITY-REPORT.md`
+- Documentazione esistente: `docs/complete-visual-parity-report.md`
 - Componenti: `resources/views/components/blocks/tests/`
 - JSON content: `config/local/fixcity/database/content/pages/tests.*`

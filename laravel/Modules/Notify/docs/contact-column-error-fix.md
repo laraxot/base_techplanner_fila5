@@ -1,9 +1,20 @@
+---
+title: "contact column error fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contact column error fix"
+issues: []
+discussions: []
+status: draft
+---
+
 # Correzione Errori ContactColumn - Modulo Notify
 
 ## 📋 Riepilogo della Correzione
 
 **File**: `laravel/Modules/Notify/app/Filament/Tables/Columns/ContactColumn.php`
-**Data**: 2025-01-06
 **Stato**: ✅ **CORRETTO** - Errori risolti completamente
 
 ## 🚨 Errori Identificati e Risolti
@@ -186,19 +197,11 @@ return [
 class ContactColumn extends ViewColumn
 {
     protected string $view = 'notify::filament.tables.columns.contact';
-<<<<<<< HEAD
     
     protected function setUp(): void
     {
         parent::setUp();
         
-=======
-
-    protected function setUp(): void
-    {
-        parent::setUp();
-
->>>>>>> 6ed19256f (.)
         $this->label(__('notify::columns.contact.label'))
             ->searchable(['phone', 'mobile', 'email', 'pec', 'whatsapp', 'fax', 'first_name', 'last_name'])
             ->sortable(false)
@@ -350,9 +353,4 @@ La ContactColumn ora:
 - ✅ Mostra correttamente le icone
 - ✅ Mostra solo i contatti del record specifico
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06* 
 *Ultimo aggiornamento: [DATE]* 
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

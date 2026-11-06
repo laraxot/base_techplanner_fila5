@@ -1,3 +1,11 @@
+---
+title: "PSR-4 Compliance per Test - Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "psr-4 compliance per test - modulo xot xot"
+---
 # PSR-4 Compliance per Test - Modulo Xot
 
 ## Problema Identificato
@@ -105,19 +113,11 @@ composer dump-autoload
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Testing Guide - Modulo <nome progetto>](../../<nome progetto>/project_docs/testing.md)
-=======
-- [Testing Guide - Modulo SaluteMo](../../SaluteMo/project_docs/testing.md)
->>>>>>> 6ed19256f (.)
 - [PHPStan Configuration](./phpstan-configuration-fixes.md)
 - [Best Practices](./best-practices-consolidated.md)
 
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< HEAD
 *Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
-=======
-*Conformità: PSR-4, PHPStan livello 9+, Laraxot standards*
->>>>>>> 6ed19256f (.)

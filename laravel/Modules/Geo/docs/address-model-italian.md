@@ -1,4 +1,18 @@
+---
+title: "address model italian"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "address model italian"
+issues: []
+discussions: []
+status: draft
+---
+
 # Modello Address per Indirizzi Italiani
+
+> Nota (docs-audit): verificato sul codice, i campi `$fillable` di `Address` sono quelli elencati sotto (contengono nomi, non codici). Le relazioni `region()`, `province()`, `comune()` e i metodi `GeoJsonModel::get*CodeByName()` sono una proposta: in `app/Models/Address.php` le relazioni sono commentate, esistono solo `getRegione()` e `getProvincia()` (array), e `GeoJsonModel` non ha quei metodi. Le regole `exists:regions,code` non hanno una tabella migrata (resta solo `2024_03_21_000001_create_regions_table.php,bak`).
 
 ## Struttura Amministrativa Italiana
 L'Italia ha una struttura amministrativa specifica che richiede un'attenzione particolare nella modellazione degli indirizzi:
@@ -122,47 +136,26 @@ public static function getFormSchema(): array
             ->options(fn () => GeoJsonModel::getRegionsForSelect())
             ->reactive()
             ->required(),
-<<<<<<< HEAD
             
         'administrative_area_level_2' => Select::make('administrative_area_level_2')
             ->label('Provincia')
             ->options(fn (callable $get) => 
-=======
->>>>>>> 6ed19256f (.)
-
-        'administrative_area_level_2' => Select::make('administrative_area_level_2')
-            ->label('Provincia')
-            ->options(fn (callable $get) =>
                 GeoJsonModel::getProvincesForSelect($get('administrative_area_level_1')))
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_1')),
-<<<<<<< HEAD
             
         'administrative_area_level_3' => Select::make('administrative_area_level_3')
             ->label('Comune')
             ->options(fn (callable $get) => 
-=======
->>>>>>> 6ed19256f (.)
-
-        'administrative_area_level_3' => Select::make('administrative_area_level_3')
-            ->label('Comune')
-            ->options(fn (callable $get) =>
                 GeoJsonModel::getComuniForSelect($get('administrative_area_level_2')))
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_2')),
-<<<<<<< HEAD
             
         'postal_code' => Select::make('postal_code')
             ->label('CAP')
             ->options(fn (callable $get) => 
-=======
->>>>>>> 6ed19256f (.)
-
-        'postal_code' => Select::make('postal_code')
-            ->label('CAP')
-            ->options(fn (callable $get) =>
                 GeoJsonModel::getCapsForSelect($get('administrative_area_level_3')))
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_3')),
@@ -190,12 +183,7 @@ Esempio di implementazione:
 public function formatItalianAddress(): string
 {
     $parts = [];
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // Nome via e numero civico
     if (!empty($this->route)) {
         $addressLine = $this->route;
@@ -204,56 +192,31 @@ public function formatItalianAddress(): string
         }
         $parts[] = $addressLine;
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     // CAP, Comune e Provincia
     $locationLine = '';
     if (!empty($this->postal_code)) {
         $locationLine .= $this->postal_code . ' ';
     }
-<<<<<<< HEAD
     
     if (!empty($this->administrative_area_level_3)) {
         $locationLine .= $this->administrative_area_level_3;
         
-=======
->>>>>>> 6ed19256f (.)
-
-    if (!empty($this->administrative_area_level_3)) {
-        $locationLine .= $this->administrative_area_level_3;
-
         // Aggiungi sigla provincia tra parentesi
         if (!empty($this->administrative_area_level_2)) {
             $locationLine .= ' (' . $this->administrative_area_level_2 . ')';
         }
     }
-<<<<<<< HEAD
     
     if (!empty($locationLine)) {
         $parts[] = $locationLine;
     }
     
-=======
->>>>>>> 6ed19256f (.)
-
-    if (!empty($locationLine)) {
-        $parts[] = $locationLine;
-    }
-
     // Paese (se diverso dall'Italia, altrimenti implicito)
     if (!empty($this->country) && strtoupper($this->country) !== 'ITALIA' && strtoupper($this->country_code) !== 'IT') {
         $parts[] = strtoupper($this->country);
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     return implode("\n", $parts);
 }
 ```
@@ -310,12 +273,7 @@ public function populateFromGoogleComponents(array $components): self
         $types = $component['types'] ?? [];
         $value = $component['long_name'] ?? '';
         $shortValue = $component['short_name'] ?? '';
-<<<<<<< HEAD
         
-        
-=======
-
->>>>>>> 6ed19256f (.)
         if (in_array('postal_code', $types)) {
             $this->postal_code = $value;
         } elseif (in_array('administrative_area_level_1', $types)) {
@@ -338,12 +296,7 @@ public function populateFromGoogleComponents(array $components): self
             $this->country_code = $shortValue;
         }
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     return $this;
 }
 ```
@@ -373,32 +326,18 @@ Esempio di implementazione:
 public function geocode(): bool
 {
     $address = $this->formatItalianAddress();
-<<<<<<< HEAD
     
     // Utilizzo di un servizio di geocodifica
     $result = app(GeocodingService::class)->geocode($address);
     
-=======
->>>>>>> 6ed19256f (.)
-
-    // Utilizzo di un servizio di geocodifica
-    $result = app(GeocodingService::class)->geocode($address);
-
     if ($result && isset($result['latitude'], $result['longitude'])) {
         $this->latitude = $result['latitude'];
         $this->longitude = $result['longitude'];
         $this->save();
-<<<<<<< HEAD
         
         return true;
     }
     
-=======
->>>>>>> 6ed19256f (.)
-
-        return true;
-    }
-
     return false;
 }
 ```
@@ -413,8 +352,4 @@ Per supportare gli indirizzi italiani in un contesto multilingua:
 
 ## Conclusione
 
-<<<<<<< HEAD
 La corretta gestione degli indirizzi italiani richiede una struttura dedicata che rispetti la suddivisione amministrativa del paese. Il modello `Address` proposto, con i campi e le relazioni specifiche per regioni, province e comuni italiani, fornisce una base solida per implementare un sistema di indirizzi completo e conforme agli standard italiani.
-=======
-La corretta gestione degli indirizzi italiani richiede una struttura dedicata che rispetti la suddivisione amministrativa del paese. Il modello `Address` proposto, con i campi e le relazioni specifiche per regioni, province e comuni italiani, fornisce una base solida per implementare un sistema di indirizzi completo e conforme agli standard italiani.
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "models factory seeder analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "models factory seeder analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Modelli, Factory e Seeder - Modulo Geo
 
 ## Panoramica
@@ -194,21 +206,11 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<main module> Module](../../<main module>/docs/modelli_factory_seeder_analisi.md)
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md)
 - [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md)
-<<<<<<< HEAD
-- [User Module](../../user/docs/modelli_factory_seeder_analisi.md)
-- [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Risorse Esterne
 - [ISTAT Comuni](https://www.istat.it/it/archivio/6789)
 - [Codici Postali](https://www.poste.it/cap.html)
 - [OpenStreetMap](https://www.openstreetmap.org/)
 
-*Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 12 modelli attivi, 1 modello obsoleto identificato*
-<<<<<<< HEAD
 *Sistema geografico completo per Italia con supporto internazionale*
-=======
-*Sistema geografico completo per Italia con supporto internazionale*
->>>>>>> 6ed19256f (.)

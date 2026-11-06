@@ -1,12 +1,17 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: styling
-canonical: ../../../../Themes/docs/shared-components/styling-Modules.md
+issues: []
+discussions: []
+title: "Guida agli Stili, Tabelle e Immagini"
+module: "Media"
+type: concept
+tags: [styling]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "styling"
+related:
+  - "./webm.md"
+status: draft
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/styling-Modules.md
-=======
 # Guida agli Stili, Tabelle e Immagini
 
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.
@@ -146,4 +151,3 @@ $src = 'data:image/png;base64,' . $imageData;
 // Passa la stringa $src alla view
 return view('pdf.template', compact('src'));
 ```
->>>>>>> 6ed19256f (.)

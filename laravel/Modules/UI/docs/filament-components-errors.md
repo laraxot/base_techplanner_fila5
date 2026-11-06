@@ -1,3 +1,15 @@
+---
+title: "filament components errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament components errors"
+issues: []
+discussions: []
+status: draft
+---
+
 # Errori Comuni nei Componenti Filament UI
 
 ## ⚠️ Errori di Metodi Non Supportati
@@ -137,11 +149,7 @@ TextInput::make('first_name')  // ✅ Il LangServiceProvider gestirà automatica
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
 - [Documentazione Componenti Filament](../../../../docs/filament/components.md)
-=======
-- [Documentazione Componenti Filament](../../../docs/filament/components.md)
->>>>>>> 6ed19256f (.)
 - [Best Practices UI](../../best-practices.md)
 - [Errori Comuni UI](../../common-errors.md)
 - [Implementazione Corretta](../../examples/correct-implementation.md)
@@ -314,15 +322,9 @@ TextInput::make('first_name')  // ✅ Il LangServiceProvider gestirà automatica
 
 ## Collegamenti Bidirezionali
 
-<<<<<<< HEAD
 - [Documentazione Componenti Filament](../../../../docs/project/filament/components.md)
 - [Documentazione Componenti Filament](../../../../docs/project/filament/components.md)
 - [Documentazione Componenti Filament](../../../../docs/project/filament/components.md)
-=======
-- [Documentazione Componenti Filament](../../../project_docs/filament/components.md)
-- [Documentazione Componenti Filament](../../../project_docs/filament/components.md)
-- [Documentazione Componenti Filament](../../../project_docs/filament/components.md)
->>>>>>> 6ed19256f (.)
 - [Best Practices UI](../../best-practices.md)
 - [Errori Comuni UI](../../common-errors.md)
 - [Implementazione Corretta](../../examples/correct-implementation.md)
@@ -357,8 +359,4 @@ TextInput::make('first_name')  // ✅ Il LangServiceProvider gestirà automatica
 1. La documentazione degli errori UI deve essere sempre in `Modules/UI/project_docs/`
 2. Mantenere collegamenti bidirezionali aggiornati
 3. Seguire le convenzioni di naming del progetto
-<<<<<<< HEAD
 4. Aggiornare la documentazione quando vengono scoperti nuovi errori
-=======
-4. Aggiornare la documentazione quando vengono scoperti nuovi errori
->>>>>>> 6ed19256f (.)

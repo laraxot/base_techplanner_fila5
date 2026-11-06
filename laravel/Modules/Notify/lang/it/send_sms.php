@@ -24,60 +24,42 @@ return [
             'helper_text' => 'Seleziona il provider per l\'invio SMS',
             'placeholder' => 'Seleziona un driver',
             'label' => 'Driver',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'description' => 'Contenuto del messaggio',
             'helper_text' => 'Testo del messaggio da inviare',
             'placeholder' => 'Scrivi il messaggio',
             'label' => 'Messaggio',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'description' => 'Numero di telefono',
             'helper_text' => 'Numero del destinatario',
             'placeholder' => 'Inserisci il numero',
             'label' => 'Numero telefono',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'gateway' => [
             'description' => 'Gateway SMS',
             'helper_text' => 'Gateway utilizzato per l\'invio',
             'placeholder' => 'Gateway SMS',
             'label' => 'Gateway',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'to' => [
             'description' => 'to',
             'helper_text' => 'to',
             'placeholder' => 'to',
             'label' => 'to',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'template_slug' => [
             'description' => 'template_slug',
             'helper_text' => 'template_slug',
             'placeholder' => 'template_slug',
             'label' => 'template_slug',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -86,6 +68,7 @@ return [
             'tooltip' => 'Invia un messaggio SMS al destinatario',
             'success_message' => 'SMS inviato con successo',
             'error_message' => 'Errore nell\'invio dell\'SMS',
+            'icon' => 'send',
         ],
         'test' => [
             'label' => 'Test connessione',
@@ -93,15 +76,23 @@ return [
             'success_message' => 'Connessione verificata con successo',
             'error_message' => 'Errore nella verifica della connessione',
         ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
     ],
     'messages' => [
         'success' => 'SMS inviato con successo',
         'error' => 'Si è verificato un errore durante l\'invio dell\'SMS',
         'confirmation' => 'Sei sicuro di voler inviare questo SMS?',
     ],
-<<<<<<< HEAD
     'label' => 'Send Sms',
     'plural_label' => 'Send Sms (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
+    'sections' => [
+        'page' => [
+            'title' => 'Test Invio SMS',
+            'description' => 'Utilizza questo form per testare l\'invio di messaggi SMS tramite diversi provider.',
+        ],
+    ],
 ];

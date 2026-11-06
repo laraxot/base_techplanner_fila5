@@ -1,5 +1,17 @@
+---
+title: "Best Practices per l'Implementazione del Logout"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "best practices per l'implementazione del logout user"
+---
+# Best Practices per l'Implementazione del Logout 
+
+## Collegamenti correlati
 - [README modulo User](./README.md)
-- [Best Practices Componenti di Autenticazione](./AUTH_COMPONENTS_BEST_PRACTICES.md)
+- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
 - [Utilizzo di Laravel Localization](/laravel/Modules/Lang/docs/LARAVEL_LOCALIZATION_USAGE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 
@@ -236,10 +248,3 @@ $this->redirect(LaravelLocalization::getLocalizedURL($locale, route('home')));
 - [Documentazione Livewire Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
----
-module: theme
-topic: logout_implementation_best_practices
-canonical: ../../../Themes/docs/shared-components/logout_implementation_best_practices.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/logout_implementation_best_practices.md

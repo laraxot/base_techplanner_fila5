@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "DRY & KISS Analysis - Modulo Lang"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # DRY & KISS Analysis - Modulo Lang
 
 **Data:** 15 Ottobre 2025
@@ -23,8 +37,4 @@ abstract class BaseModel extends XotBaseModel
 - 🔄 RouteServiceProvider: Auto-detect nome
 
 ---
-<<<<<<< HEAD
 [DRY/KISS Global](../../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
-=======
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
->>>>>>> 6ed19256f (.)
