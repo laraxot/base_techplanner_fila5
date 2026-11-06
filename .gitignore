@@ -138,3 +138,4 @@ archive
 artifacts/
 bashscripts/ai/.agents/projects/
 ___FILE___tests/
+*.lock
