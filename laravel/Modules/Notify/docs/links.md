@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_CpZEon
 ---
 title: "links"
 type: note
@@ -10,7 +11,12 @@ discussions: []
 status: draft
 ---
 
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_NrWvdq
 
+=======
+>>>>>>> 6ed19256f (.)
 ----------------------------------------------------------------------------------
 Laravel Mailator for Configuring Email Scheduler & Templates
 --- molto simile a quello che facciamo noi con themenotification
@@ -25,4 +31,7 @@ Catch All Sent Email & Show them on Laravel Application View
 https://codebrisk.com/blog/catch-all-sent-email-show-them-on-laravel-application-view
 composer require creagia/laravel-web-mailer
 --------------------------------------------------------------------------------------
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)

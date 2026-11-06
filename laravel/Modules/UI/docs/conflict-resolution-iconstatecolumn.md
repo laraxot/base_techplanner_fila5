@@ -80,8 +80,18 @@ Il file `Modules/UI/app/Filament/Tables/Columns/IconStateColumn.php` presenta co
 
 - [selectstatecolumn.md](selectstatecolumn.md)
 - [table-components.md](table-components.md)
+<<<<<<< .merge_file_iVw3Fb
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> .merge_file_DPEEWQ
 - [Modules/UI/docs/](../../docs/)
 
+=======
+- [Modules/UI/docs/](../docs/)
+
+*Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> 6ed19256f (.)
 # Risoluzione Conflitto IconStateColumn.php
 
 ## Problema Identificato
@@ -156,3 +166,11 @@ Il file `Modules/UI/app/Filament/Tables/Columns/IconStateColumn.php` presenta co
 - [Modules/UI/project_docs/](../project_docs/)
 - [Modules/UI/project_docs/](../project_docs/)
 
+<<<<<<< .merge_file_iVw3Fb
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: 29 luglio 2025*
+=======
+*Ultimo aggiornamento: 29 luglio 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_DPEEWQ

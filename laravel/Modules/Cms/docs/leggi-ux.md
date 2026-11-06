@@ -555,4 +555,12 @@ Per implementare efficacemente queste leggi di UX nel progetto il progetto, segu
 - [Laws of UX](https://lawsofux.com/)
 - [Don't Make Me Think](https://www.sensible.com/dmmt.html) di Steve Krug
 - [The Design of Everyday Things](https://www.nngroup.com/books/design-everyday-things-revised/) di Don Norman
+<<<<<<< .merge_file_syZo1p
 - [Universal Principles of Design](https://www.rockpublishing.com/products/universal-principles-of-design-revised-and-updated) di William Lidwell 
+=======
+- [Universal Principles of Design](https://www.rockpublishing.com/products/universal-principles-of-design-revised-and-updated) di William Lidwell
+<<<<<<< HEAD
+- [Universal Principles of Design](https://www.rockpublishing.com/products/universal-principles-of-design-revised-and-updated) di William Lidwell 
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_wkntD8

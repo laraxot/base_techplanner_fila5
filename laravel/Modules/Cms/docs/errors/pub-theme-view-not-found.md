@@ -90,7 +90,11 @@ Il componente `Section` del modulo CMS:
 
 ## 🔗 Riferimenti
 
+<<<<<<< HEAD
 - [Documentazione Completa](../../../../../docs/pub_theme-view-not-found-error.md)
+=======
+- [Documentazione Completa](../../../../docs/pub_theme-view-not-found-error.md)
+>>>>>>> 6ed19256f (.)
 - [Componente Section](../../app/View/Components/Section.php)
 - [Configurazione Tema](../../../../config/local/techplanner/xra.php)
 - [ServiceProvider Tema Sixteen](../../../../Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
@@ -176,10 +180,22 @@ Il componente `Section` del modulo CMS:
 
 ## 🔗 Riferimenti
 
+<<<<<<< HEAD
 - [Documentazione Completa](../../../../../docs/pub_theme-view-not-found-error.md)
+=======
+- [Documentazione Completa](../../../../docs/pub_theme-view-not-found-error.md)
+>>>>>>> 6ed19256f (.)
 - [Componente Section](../../app/View/Components/Section.php)
 - [Configurazione Tema](../../../../config/local/techplanner/xra.php)
 - [ServiceProvider Tema Sixteen](../../../../Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
 
 ---
 
+<<<<<<< .merge_file_OMNmu6
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: Settembre 2025*
+=======
+*Ultimo aggiornamento: Settembre 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_UHpt7T

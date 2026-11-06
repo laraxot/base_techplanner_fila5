@@ -1,7 +1,9 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
+<<<<<<< .merge_file_OEqNde
 namespace Modules\Activity\Tests\Unit\Models;
 
 use Modules\Activity\Models\StoredEvent;
@@ -32,6 +34,47 @@ final class StoredEventBusinessLogicTest extends TestCase
     public function test_exposes_expected_fillable_attributes_for_event_payload(): void
     {
         $expected = [
+=======
+uses(\Modules\Activity\Tests\TestCase::class);
+use Modules\Activity\Models\StoredEvent;
+use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
+
+describe('StoredEvent Business Logic', function (): void {
+    test('stored event has correct connection configured', function (): void {
+        $storedEvent = new StoredEvent;
+=======
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Modules\Activity\Models\StoredEvent;
+use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
+
+use function Safe\class_uses;
+
+describe('StoredEvent Business Logic', function (): void {
+    test('stored event has correct connection configured', function (): void {
+        $storedEvent = new StoredEvent();
+>>>>>>> 6ed19256f (.)
+
+        expect($storedEvent->getConnectionName())->toBe('activity');
+    });
+
+    test('stored event has correct table configured', function (): void {
+<<<<<<< HEAD
+        $storedEvent = new StoredEvent;
+=======
+        $storedEvent = new StoredEvent();
+>>>>>>> 6ed19256f (.)
+
+        expect($storedEvent->getTable())->toBe('stored_events');
+    });
+
+    test('stored event has expected fillable fields for event sourcing', function (): void {
+<<<<<<< HEAD
+        $storedEvent = new StoredEvent;
+=======
+        $storedEvent = new StoredEvent();
+>>>>>>> 6ed19256f (.)
+        $expectedFillable = [
+>>>>>>> .merge_file_fORk3Q
             'id',
             'aggregate_uuid',
             'aggregate_version',

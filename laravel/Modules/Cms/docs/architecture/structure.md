@@ -100,14 +100,29 @@ Modules/Cms/
 6. Aggiornare i riferimenti nelle routes
 
 ## Collegamenti Bidirezionali
+<<<<<<< .merge_file_TNznAH
 - [README](readme.md) - Documentazione principale del modulo
 - [Architettura](../frontoffice/architecture.md) - Architettura del sistema CMS
 - [Struttura Moduli Laravel](../struttura-moduli-laravel.md) - Struttura standard dei moduli Laravel
+=======
+- [README](README.md) - Documentazione principale del modulo
+<<<<<<< HEAD
+- [README](readme.md) - Documentazione principale del modulo
+=======
+>>>>>>> 6ed19256f (.)
+- [Architettura](architecture.md) - Architettura del sistema CMS
+- [Struttura Moduli Laravel](struttura-moduli-laravel.md) - Struttura standard dei moduli Laravel
+>>>>>>> .merge_file_IRkZ0G
 - [Namespace Moduli](namespace-moduli-laravel-<nome progetto>.md) - Convenzioni di namespace
 - [Struttura Route e Viste](../struttura-route-e-viste.md) - Organizzazione di route e viste
 
 ## Vedi Anche
+<<<<<<< .merge_file_TNznAH
 - [Modulo Xot](../../../Xot/docs/README.md) - Struttura base dei moduli
+=======
+<<<<<<< HEAD
+- [Modulo Xot](../xot/docs/readme.md) - Struttura base dei moduli
+>>>>>>> .merge_file_IRkZ0G
 - [Documentazione Laravel](https://laravel.com/docs/structure.html) - Struttura standard Laravel
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
@@ -124,5 +139,35 @@ Modules/Cms/
 * [structure.md](../../../Tenant/docs/structure.md)
 * [structure.md](../../../Activity/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/structure.md)
+<<<<<<< .merge_file_TNznAH
 * [structure.md](../themes/structure.md)
 * [structure.md](../components/structure.md)
+=======
+* [structure.md](laravel/modules/cms/docs/themes/structure.md)
+* [structure.md](laravel/modules/cms/docs/components/structure.md)
+=======
+>>>>>>> 6ed19256f (.)
+- [Modulo Xot](../Xot/docs/README.md) - Struttura base dei moduli
+- [Documentazione Laravel](https://laravel.com/docs/structure.html) - Struttura standard Laravel
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/docs/structure.md)
+* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
+* [structure.md](laravel/Modules/Notify/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
+* [structure.md](laravel/Modules/User/docs/structure.md)
+* [structure.md](laravel/Modules/UI/docs/structure.md)
+* [structure.md](laravel/Modules/Lang/docs/structure.md)
+* [structure.md](laravel/Modules/Job/docs/structure.md)
+* [structure.md](laravel/Modules/Media/docs/structure.md)
+* [structure.md](laravel/Modules/Tenant/docs/structure.md)
+* [structure.md](laravel/Modules/Activity/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
+<<<<<<< HEAD
+* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
+=======
+* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_IRkZ0G

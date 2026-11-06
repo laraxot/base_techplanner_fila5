@@ -1,6 +1,11 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_S6Sc7r
+=======
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_3kqd3x
 return array (
   'sections' => 
   array (
@@ -39,3 +44,25 @@ return array (
   array (
   ),
 );
+=======
+return [
+    'sections' => [
+        'empty' => [
+            'label' => 'empty',
+            'heading' => 'empty',
+        ],
+    ],
+    'actions' => [
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => 'logout',
+        ],
+    ],
+];
+>>>>>>> 6ed19256f (.)

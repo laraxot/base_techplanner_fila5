@@ -138,4 +138,13 @@ Ogni metodo di test implementa:
 5. **User Feedback**: Notifiche chiare per successo/errore
 6. **Documentazione**: File markdown nella cartella docs del modulo
 
+<<<<<<< .merge_file_gPXVsa
 *Errore risolto: ErrorException Undefined variable $results*
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+<<<<<<< HEAD
+*Errore risolto: ErrorException Undefined variable $results*
+=======
+*Errore risolto: ErrorException Undefined variable $results*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LT3Ckb

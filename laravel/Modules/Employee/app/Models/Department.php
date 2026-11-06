@@ -4,8 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+<<<<<<< .merge_file_CUnk4v
 use Modules\TechPlanner\Models\Profile;
 use Modules\Employee\Database\Factories\DepartmentFactory;
+=======
+<<<<<<< HEAD
+=======
+use Modules\TechPlanner\Models\Profile;
+use Modules\Employee\Database\Factories\DepartmentFactory;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_VzprXv
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -18,7 +26,10 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\TechPlanner\Models\Profile;
 =======
 >>>>>>> 6ed19256f (.)
+<<<<<<< .merge_file_CUnk4v
 >>>>>>> .merge_file_DpJYkm
+=======
+>>>>>>> .merge_file_VzprXv
 
 /**
  * Class Department.
@@ -41,7 +52,10 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< .merge_file_CUnk4v
 >>>>>>> .merge_file_DpJYkm
+=======
+>>>>>>> .merge_file_VzprXv
  *
 =======
 >>>>>>> 6ed19256f (.)
@@ -49,7 +63,10 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|Department newModelQuery()
  * @method static Builder<static>|Department newQuery()
  * @method static Builder<static>|Department query()
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Department extends BaseModel

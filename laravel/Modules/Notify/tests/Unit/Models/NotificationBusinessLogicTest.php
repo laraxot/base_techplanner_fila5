@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_rqcv1k
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Carbon;
 use Modules\Notify\Models\Notification;
@@ -15,6 +16,19 @@ describe('Notification Business Logic', function (): void {
 
         Assert::assertContains('channels', $notification->getFillable());
         Assert::assertContains('sent_at', $notification->getFillable());
+=======
+<<<<<<< HEAD
+=======
+use Modules\Notify\Models\Notification;
+use Modules\Xot\Models\BaseModel;
+
+uses(\Modules\Notify\Tests\TestCase::class);
+>>>>>>> 6ed19256f (.)
+
+describe('Notification Business Logic', function () {
+    test('notification extends xot base model', function () {
+        expect(Notification::class)->toBeSubclassOf(BaseModel::class);
+>>>>>>> .merge_file_o0Home
     });
 
     test('notification can store polymorphic notifiable relationships', function (): void {
@@ -89,4 +103,12 @@ describe('Notification Business Logic', function (): void {
     test('notification has factory for testing', function (): void {
         Assert::assertInstanceOf(Factory::class, Notification::factory());
     });
+<<<<<<< .merge_file_rqcv1k
 });
+=======
+<<<<<<< HEAD
+});
+=======
+});
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_o0Home

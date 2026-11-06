@@ -44,7 +44,13 @@ return [
         'icon' => 'heroicon-o-document-text',
         'color' => 'text-gray-600',
         'hex_color' => '#6b7280',
+<<<<<<< .merge_file_jMdyMF
         'description' => 'Kontaktnotizen'],
+=======
+        'description' => 'Kontaktnotizen',
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_Xq3EKX
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -56,4 +62,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_jMdyMF
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_Xq3EKX

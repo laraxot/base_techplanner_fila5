@@ -86,6 +86,7 @@ class CreateRecordWidget extends Widget implements HasForms
     {
         // Ottieni i dati validati dal form
         $data = $this->form->getState();
+<<<<<<< HEAD
         
         // Crea il nuovo record
         MioModello::create($data);
@@ -93,6 +94,18 @@ class CreateRecordWidget extends Widget implements HasForms
         // Resetta il form
         $this->form->fill();
         
+<<<<<<< .merge_file_w8yxur
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        // Crea il nuovo record
+        MioModello::create($data);
+
+        // Resetta il form
+        $this->form->fill();
+
+>>>>>>> .merge_file_XV59wW
         // Invia un evento Livewire per aggiornare la tabella
         $this->dispatch('record-created');
     }
@@ -233,7 +246,15 @@ public function create(): void
     MioModello::create($data);
     $this->form->fill();
     $this->dispatch('record-created');
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_w8yxur
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XV59wW
     // Mostra una notifica di successo
     Notification::make()
         ->title('Record creato con successo')
@@ -308,7 +329,15 @@ public function create(): void
         MioModello::create($data);
         $this->form->fill();
         $this->dispatch('record-created');
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_w8yxur
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XV59wW
         Notification::make()
             ->title('Record creato con successo')
             ->success()
@@ -346,4 +375,12 @@ Seguendo questa guida e rispettando le convenzioni di il progetto, potrai implem
 - [Documentazione ufficiale di Filament](https://filamentphp.com/docs)
 - [Documentazione di Livewire](https://livewire.laravel.com/docs)
 - [Repository di esempio su GitHub](https://github.com/LaravelDaily/Filament-Form-On-Top-Of-Resource)
+<<<<<<< .merge_file_w8yxur
 - [FilamentExamples.com](https://filamentexamples.com)
+=======
+<<<<<<< HEAD
+- [FilamentExamples.com](https://filamentexamples.com)
+=======
+- [FilamentExamples.com](https://filamentexamples.com)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XV59wW

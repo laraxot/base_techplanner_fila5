@@ -28,8 +28,19 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
     });
 
     test('json content structure is properly loaded by cms', function () {
+<<<<<<< .merge_file_3YvObn
         // Il loader salta il test se il tenant non ha la homepage e fallisce se la forma non e' valida.
         $homepageData = TestCase::homepageJsonForBlocksArchitecture();
+=======
+<<<<<<< HEAD
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
+=======
+        $homepageJsonPath = config_path('local/<nome progetto>/database/content/pages/home.json');
+>>>>>>> 6ed19256f (.)
+        expect(file_exists($homepageJsonPath))->toBeTrue('Homepage JSON must exist for CMS');
+
+        $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
+>>>>>>> .merge_file_HKPWA4
 
         // Verify CMS-specific JSON structure
         expect($homepageData)->toHaveKeys(['id', 'slug', 'content_blocks']);
@@ -65,7 +76,20 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
         expect(class_exists(Blocks::class))->toBeTrue('Blocks render component should exist');
 
         // Load homepage blocks
+<<<<<<< .merge_file_3YvObn
         $blocks = cmsHomepageBlocks($this->lang);
+=======
+        $homepageData = json_decode(
+<<<<<<< HEAD
+            file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 6ed19256f (.)
+            true,
+        );
+
+        $blocks = $homepageData['content_blocks'][$this->lang];
+>>>>>>> .merge_file_HKPWA4
 
         // Test component instantiation with blocks (stessa vista usata da ThemeComposer)
         $component = new Blocks('ui::components.render.blocks.v1', $blocks);
@@ -79,7 +103,20 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
         $content = $response->getContent();
 
         // Load expected content from JSON
+<<<<<<< .merge_file_3YvObn
         $blocks = cmsHomepageBlocks($this->lang);
+=======
+        $homepageData = json_decode(
+<<<<<<< HEAD
+            file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 6ed19256f (.)
+            true,
+        );
+
+        $blocks = $homepageData['content_blocks'][$this->lang];
+>>>>>>> .merge_file_HKPWA4
 
         // Verify that CMS-managed content appears on page
         foreach ($blocks as $block) {
@@ -102,7 +139,20 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
         expect($content)->toContain('pub_theme::');
 
         // Load blocks to verify theme views
+<<<<<<< .merge_file_3YvObn
         $blocks = cmsHomepageBlocks($this->lang);
+=======
+        $homepageData = json_decode(
+<<<<<<< HEAD
+            file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 6ed19256f (.)
+            true,
+        );
+
+        $blocks = $homepageData['content_blocks'][$this->lang];
+>>>>>>> .merge_file_HKPWA4
 
         foreach ($blocks as $block) {
             $view = $block['data']['view'];
@@ -112,7 +162,22 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
     });
 
     test('cms handles multilingual content correctly', function () {
+<<<<<<< .merge_file_3YvObn
         $homepageData = TestCase::homepageJsonForBlocksArchitecture();
+=======
+        $homepageData = json_decode(
+<<<<<<< HEAD
+            file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 6ed19256f (.)
+            true,
+        );
+
+        // Verify CMS multilingual structure
+        expect($homepageData['content_blocks'])->toBeArray();
+        expect($homepageData['title'])->toBeArray();
+>>>>>>> .merge_file_HKPWA4
 
         // Verify current locale has content
         expect($homepageData['content_blocks'])->toHaveKey($this->lang);
@@ -143,9 +208,23 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
     });
 
     test('cms json storage pattern is consistent', function () {
+<<<<<<< .merge_file_3YvObn
         // Esistenza della cartella e forma di locale, `type` (string) e `data` (object) di ogni blocco:
         // le verifica il loader (salta senza homepage, fallisce se la forma e' errata).
         $homepageData = TestCase::homepageJsonForBlocksArchitecture();
+=======
+<<<<<<< HEAD
+        $pagesPath = config_path('local/<nome progetto>/database/content/');
+=======
+        $pagesPath = config_path('local/<nome progetto>/database/content/pages/');
+>>>>>>> 6ed19256f (.)
+        expect(file_exists($pagesPath))->toBeTrue('CMS pages directory should exist');
+
+        $homepageJsonPath = $pagesPath.'home.json';
+        expect(file_exists($homepageJsonPath))->toBeTrue('Homepage JSON should exist');
+
+        $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
+>>>>>>> .merge_file_HKPWA4
 
         // Verify CMS-required fields
         expect($homepageData)->toHaveKeys(['id', 'slug', 'content_blocks']);
@@ -160,7 +239,20 @@ describe('Homepage Filament Builder Blocks - CMS Module', function () {
     });
 
     test('cms blade syntax processing works in json', function () {
+<<<<<<< .merge_file_3YvObn
         $blocks = cmsHomepageBlocks($this->lang);
+=======
+        $homepageData = json_decode(
+<<<<<<< HEAD
+            file_get_contents(config_path('local/<nome progetto>/database/content/home.json')),
+=======
+            file_get_contents(config_path('local/<nome progetto>/database/content/pages/home.json')),
+>>>>>>> 6ed19256f (.)
+            true,
+        );
+
+        $blocks = $homepageData['content_blocks'][$this->lang];
+>>>>>>> .merge_file_HKPWA4
         $landingBlock = collect($blocks)->firstWhere('type', 'landing-page');
 
         if ($landingBlock) {

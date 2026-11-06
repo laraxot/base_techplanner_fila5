@@ -133,11 +133,22 @@ public static function table(Table $table): Table
             if ($record->status === 'critical') {
                 return 'bg-danger-500/10';
             }
+<<<<<<< HEAD
             
             if ($record->status === 'warning') {
                 return 'bg-warning-500/10';
             }
             
+<<<<<<< .merge_file_IAJ7lV
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+            if ($record->status === 'warning') {
+                return 'bg-warning-500/10';
+            }
+
+>>>>>>> .merge_file_684GLL
             return '';
         });
 }
@@ -151,11 +162,22 @@ TextColumn::make('stock')
         if ($state <= 0) {
             return 'danger';
         }
+<<<<<<< HEAD
         
         if ($state < 10) {
             return 'warning';
         }
         
+<<<<<<< .merge_file_IAJ7lV
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        if ($state < 10) {
+            return 'warning';
+        }
+
+>>>>>>> .merge_file_684GLL
         return 'success';
     })
 ```
@@ -364,12 +386,28 @@ class MiaRisorsa extends XotBaseResource
 class MiaRisorsa extends XotBaseResource
 {
     protected static ?string $navigationIcon = 'heroicon-o-document';
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_IAJ7lV
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_684GLL
     public static function getRelations(): array
     {
         return [];
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_IAJ7lV
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_684GLL
     public static function getFormSchema(): array
     {
         return [
@@ -388,4 +426,12 @@ Queste personalizzazioni avanzate di Filament consentono di creare interfacce am
 
 - [Documentazione ufficiale di Filament](https://filamentphp.com/docs)
 - [FilamentExamples.com](https://filamentexamples.com)
+<<<<<<< .merge_file_IAJ7lV
 - [Repository GitHub di Filament](https://github.com/filamentphp/filament)
+=======
+<<<<<<< HEAD
+- [Repository GitHub di Filament](https://github.com/filamentphp/filament)
+=======
+- [Repository GitHub di Filament](https://github.com/filamentphp/filament)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_684GLL

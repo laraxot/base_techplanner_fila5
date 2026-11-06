@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_v4XRzg
 use Illuminate\Support\Carbon;
 use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Models\Contact;
@@ -12,6 +13,17 @@ uses(TestCase::class);
 describe('Contact Business Logic', function (): void {
     test('contact extends base model', function (): void {
         Assert::assertSame(BaseModel::class, get_parent_class(Contact::class));
+=======
+<<<<<<< HEAD
+=======
+use Modules\Notify\Models\BaseModel;
+use Modules\Notify\Models\Contact;
+>>>>>>> 6ed19256f (.)
+
+describe('Contact Business Logic', function () {
+    test('contact extends base model', function () {
+        expect(Contact::class)->toBeSubclassOf(BaseModel::class);
+>>>>>>> .merge_file_N6KJsK
     });
 
     test('contact can store polymorphic model relationships', function (): void {

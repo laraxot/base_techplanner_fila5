@@ -1,9 +1,3 @@
-<<<<<<< .merge_file_HIBT8m
-=======
-<<<<<<< HEAD
-https://filamentphp.com/community/danharrin-fast-table-pagination
-
->>>>>>> .merge_file_23aHpJ
 ---
 title: "optimization"
 type: note
@@ -16,12 +10,5 @@ discussions: []
 status: draft
 ---
 
-<<<<<<< .merge_file_HIBT8m
 https://filamentphp.com/community/danharrin-fast-table-pagination
 
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/optimization.txt
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_23aHpJ

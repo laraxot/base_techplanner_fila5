@@ -56,6 +56,13 @@ Il componente Page è uno dei componenti fondamentali del CMS. Per una documenta
 ## Collegamenti Bidirezionali
 
 - [README](README.md) - Documentazione principale del modulo
+<<<<<<< .merge_file_wh1efi
+=======
+<<<<<<< HEAD
+- [README](readme.md) - Documentazione principale del modulo
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tCURgF
 - [DaisyUI Componenti](daisyui-componenti.md) - Componenti basati su DaisyUI
 - [Componenti Blocchi](componenti-blocchi-contenuto.md) - Componenti per i blocchi di contenuto
 - [Componenti Header](componenti-header.md) - Componenti per l'header
@@ -64,7 +71,15 @@ Il componente Page è uno dei componenti fondamentali del CMS. Per una documenta
 - [Custom Components](custom-components.md) - Creazione di componenti personalizzati
 
 ## Vedi Anche
+<<<<<<< .merge_file_wh1efi
 - [Modulo UI](../../UI/docs/README.md) - Componenti UI riutilizzabili
+=======
+- [Modulo UI](../UI/docs/README.md) - Componenti UI riutilizzabili
+<<<<<<< HEAD
+- [Modulo UI](../ui/docs/readme.md) - Componenti UI riutilizzabili
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tCURgF
 - [Namespace Componenti](namespace-componenti-blocchi.md) - Convenzioni di namespace
 - [Standard UI](standard-ui-components.md) - Standard per i componenti UI
 
@@ -78,7 +93,25 @@ Il componente Page è uno dei componenti fondamentali del CMS. Per una documenta
 @see laravel/Modules/Cms/docs/best-practices/page-rendering.md
 
 ## Collegamenti tra versioni di components.md
+<<<<<<< .merge_file_wh1efi
 * [components.md](../../UI/docs/components.md)
 * [components.md](../../UI/docs/themes/components.md)
 * [components.md](laravel/modules/cms/docs/components.md)
 * [components.md](laravel/themes/one/docs/components.md)
+=======
+<<<<<<< HEAD
+* [components.md](laravel/modules/ui/docs/components.md)
+* [components.md](laravel/modules/ui/docs/themes/components.md)
+* [components.md](laravel/modules/cms/docs/components.md)
+* [components.md](laravel/themes/one/docs/components.md)
+* [components.md](laravel/Modules/UI/docs/components.md)
+* [components.md](laravel/Modules/UI/docs/themes/components.md)
+* [components.md](laravel/Modules/Cms/docs/components.md)
+* [components.md](laravel/Themes/One/docs/components.md)
+=======
+* [components.md](laravel/Modules/UI/docs/components.md)
+* [components.md](laravel/Modules/UI/docs/themes/components.md)
+* [components.md](laravel/Modules/Cms/docs/components.md)
+* [components.md](laravel/Themes/One/docs/components.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tCURgF

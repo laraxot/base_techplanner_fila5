@@ -185,5 +185,15 @@ class HeaderBlock extends Block
 
 - [Documentazione Blocchi](content-blocks.md)
 - [Gestione Navigazione](../navigation.md)
+<<<<<<< .merge_file_t3UZ20
 - [Best Practices UI](../../../UI/docs/best-practices.md)
 - [Accessibilità](../../ui/docs/accessibility.md)
+=======
+- [Best Practices UI](../../UI/docs/best-practices.md)
+- [Accessibilità](../../UI/docs/accessibility.md)
+<<<<<<< HEAD
+- [Best Practices UI](../../ui/docs/best-practices.md)
+- [Accessibilità](../../ui/docs/accessibility.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_QERgdC

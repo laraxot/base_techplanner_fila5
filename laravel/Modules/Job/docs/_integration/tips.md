@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "tips"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_5BXOf0
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_gRwxQQ

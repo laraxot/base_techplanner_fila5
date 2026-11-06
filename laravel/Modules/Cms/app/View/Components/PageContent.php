@@ -26,6 +26,7 @@ class PageContent extends Component
             '['.__LINE__.']['.__FILE__.']',
         );
         $blocks = $page->content_blocks;
+<<<<<<< .merge_file_lTcXsq
         if (is_array($blocks)) {
             $locale = app()->getLocale();
             $localeKeys = ['it', 'en', 'fr', 'de', 'es', XotData::make()->primary_lang];
@@ -37,6 +38,15 @@ class PageContent extends Component
             }
         } else {
             $blocks = $page->getTranslation('content_blocks', XotData::make()->primary_lang, false);
+=======
+        if (! is_array($blocks)) {
+            $primary_lang = XotData::make()->primary_lang;
+<<<<<<< HEAD
+=======
+            /* @phpstan-ignore-next-line method.notFound */
+>>>>>>> 6ed19256f (.)
+            $blocks = $page->getTranslation('content_blocks', $primary_lang);
+>>>>>>> .merge_file_aS5eB5
         }
 
         if (! is_array($blocks)) {
@@ -55,6 +65,13 @@ class PageContent extends Component
     {
         $view = 'cms::components.page-content';
         $view_params = [];
+<<<<<<< HEAD
+=======
+        // @phpstan-ignore-next-line
+        if (! view()->exists($view)) {
+            throw new \Exception('view not found: '.$view);
+        }
+>>>>>>> 6ed19256f (.)
 
         return view($view, $view_params);
     }

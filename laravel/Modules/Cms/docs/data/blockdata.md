@@ -119,6 +119,7 @@ public static function fromArray(array $blocks): Collection
 }
 ```
 
+<<<<<<< HEAD
 ### Livello 3: Componente Page (Rendering Diretto o Livewire)
 
 Se nel `data` del blocco è presente la chiave **`livewire`** (stringa con il nome del componente Livewire/Volt), il componente `page-content` (Cms) renderizza il blocco con `@livewire($name, $merged)` invece di `@include($block->view, ...)`. Il nome deve corrispondere a un componente Volt montato (es. tema: `resources/views/livewire/` → nome `blocks.events.detail`). Vedi documentazione tema (volt-components-usage) per path montati e standard [container0]/[slug0]/index.
@@ -133,6 +134,18 @@ Se nel `data` del blocco è presente la chiave **`livewire`** (stringa con il no
 @else
     @include($block->view, $merged)
 @endif
+<<<<<<< .merge_file_JhWXEy
+=======
+=======
+>>>>>>> 6ed19256f (.)
+### Livello 3: Componente Page (Rendering Diretto)
+
+```blade
+@foreach($blocks as $block)
+    {{-- BlockData garantisce tutto: vista esistente, data array valido --}}
+    @include($block->view, $block->data)
+@endforeach
+>>>>>>> .merge_file_2s5P7N
 ```
 
 ## Utilizzo Corretto
@@ -247,8 +260,23 @@ Questa architettura garantisce:
 
 ## Collegamenti correlati
 
+<<<<<<< HEAD
 - [Architettura CMS](/laravel/modules/cms/docs/architecture.md)
 - [Blocks Documentation](/laravel/modules/cms/docs/blocks.md)
 - [Page Component](/laravel/modules/cms/docs/components/page.md)
 - [Best Practices](/laravel/Modules/Cms/docs/best-practices/)
 - [Blade Components Rules](/laravel/modules/cms/docs/best-practices/blade-components.md)
+<<<<<<< .merge_file_JhWXEy
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Architettura CMS](/laravel/Modules/Cms/docs/architecture.md)
+- [Blocks Documentation](/laravel/Modules/Cms/docs/blocks.md)
+- [Page Component](/laravel/Modules/Cms/docs/components/page.md)
+- [Best Practices](/laravel/Modules/Cms/docs/best-practices/)
+<<<<<<< HEAD
+- [Blade Components Rules](/laravel/Modules/Cms/docs/best-practices/blade-components.md)
+=======
+- [Blade Components Rules](/laravel/Modules/Cms/docs/best-practices/blade-components.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_2s5P7N

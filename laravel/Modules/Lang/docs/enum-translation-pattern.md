@@ -241,17 +241,9 @@ Prima di ogni commit, verificare:
 - [TableLayoutEnum Guide](../../UI/docs/table-layout-enum-complete-guide.md)
 
 ## Ultimo Aggiornamento
-<<<<<<< .merge_file_Itj3b5
 2025-01-27 - Regola critica per enum translation pattern
 [DATE] - Regola critica per enum translation pattern
 [DATE] - Regola critica per enum translation pattern
 [DATE] - Regola critica per enum translation pattern
 [DATE] - Regola critica per enum translation pattern
 2025-01-27 - Regola critica per enum translation pattern
-=======
-<<<<<<< HEAD
-2025-01-27 - Regola critica per enum translation pattern
-=======
-2025-01-27 - Regola critica per enum translation pattern
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_sjuLUY

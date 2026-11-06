@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo UI**
 
 **Last Update**: 31 Gennaio 2026
@@ -43,3 +44,14 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+<<<<<<< .merge_file_CCbyS0
+=======
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)
+=======
+# Documentation Index
+# Documentation Index
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_dGE78c

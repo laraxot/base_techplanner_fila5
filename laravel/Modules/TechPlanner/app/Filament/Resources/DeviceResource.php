@@ -19,5 +19,45 @@ class DeviceResource extends XotBaseResource
 {
     protected static ?string $model = Device::class;
 
+<<<<<<< .merge_file_5NyfYj
    
+=======
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 6ed19256f (.)
+    #[Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            'name' => TextInput::make('name')->required()->maxLength(255),
+            'serial_number' => TextInput::make('serial_number')->required()->maxLength(255),
+            'model' => TextInput::make('model')->required()->maxLength(255),
+            'manufacturer' => TextInput::make('manufacturer')->required()->maxLength(255),
+            'purchase_date' => DatePicker::make('purchase_date')->required(),
+            'warranty_expiration' => DatePicker::make('warranty_expiration')->required(),
+            'notes' => Textarea::make('notes')->maxLength(65535)->columnSpanFull(),
+        ];
+    }
+
+    #[Override]
+    public static function getPages(): array
+    {
+        return [
+            'index' => ListDevices::route('/'),
+            'create' => CreateDevice::route('/create'),
+            'view' => ViewDevice::route('/{record}'),
+            'edit' => EditDevice::route('/{record}/edit'),
+        ];
+    }
+
+    #[Override]
+    public static function getRelations(): array
+    {
+        return [
+            DeviceVerificationsRelationManager::class,
+        ];
+    }
+>>>>>>> .merge_file_R1dAtv
 }

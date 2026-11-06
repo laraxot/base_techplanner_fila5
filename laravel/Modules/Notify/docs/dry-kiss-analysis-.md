@@ -44,4 +44,12 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
+<<<<<<< .merge_file_oOnD5N
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+=======
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+<<<<<<< HEAD
+[DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_N3Nq3d

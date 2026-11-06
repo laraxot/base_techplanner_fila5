@@ -6,6 +6,7 @@ return [
     'fields' => [
         'mailable' => [
             'label' => 'mailable',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => ''],
@@ -23,14 +24,38 @@ return [
             'label' => 'text_template',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_8Fvfj9
             'description' => '']],
+=======
+            'description' => '',
+=======
+        ],
+        'subject' => [
+            'label' => 'subject',
+        ],
+        'html_template' => [
+            'label' => 'html_template',
+        ],
+        'text_template' => [
+            'label' => 'text_template',
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_3FqsAE
     'actions' => [
         'create' => [
             'label' => 'create'],
         'createAnother' => [
             'label' => 'createAnother'],
         'cancel' => [
+<<<<<<< .merge_file_8Fvfj9
             'label' => 'cancel']],
+=======
+            'label' => 'cancel',
+        ],
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_3FqsAE
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -38,4 +63,11 @@ return [
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100],
     'label' => 'Missing Label',
+<<<<<<< .merge_file_8Fvfj9
     'plural_label' => 'Missing Plural label'];
+=======
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_3FqsAE

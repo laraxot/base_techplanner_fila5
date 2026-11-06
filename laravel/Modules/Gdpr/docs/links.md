@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_6Aqoyf
 ---
 title: "links"
 type: note
@@ -13,3 +14,13 @@ status: draft
 https://github.com/maize-tech/laravel-legal-consent
 https://github.com/foothing/laravel-gdpr-consent
 
+=======
+<<<<<<< HEAD
+https://github.com/maize-tech/laravel-legal-consent
+https://github.com/foothing/laravel-gdpr-consent
+https://github.com/maize-tech/laravel-legal-consent
+https://github.com/foothing/laravel-gdpr-consent
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Bm26kq

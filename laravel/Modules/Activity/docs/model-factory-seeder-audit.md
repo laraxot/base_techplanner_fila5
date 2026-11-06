@@ -9,7 +9,10 @@ qmd: "model/factory/seeder audit activity"
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:20
+<<<<<<< HEAD
 Generated: [DATE] 16:20
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Coverage
 - Models: Activity, Snapshot, StoredEvent
@@ -24,4 +27,8 @@ Generated: [DATE] 16:20
 
 ## Actions
 - Add seeding inside `Modules/Activity/database/seeders/ActivityDatabaseSeeder.php`
+<<<<<<< HEAD
 - Keep factories updated with strict typing
+=======
+- Keep factories updated with strict typing
+>>>>>>> 6ed19256f (.)

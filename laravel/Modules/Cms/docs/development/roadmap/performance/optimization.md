@@ -128,6 +128,18 @@ Le altre ottimizzazioni sono in fase di implementazione:
 - [Best Practices Performance](../../../best-practices.md#performance)
 
 ## Collegamenti tra versioni di optimization.md
+<<<<<<< .merge_file_mAdvcz
 * [optimization.md](laravel/modules/xot/docs/roadmap/performance/optimization.md)
 * [optimization.md](../../../../../Job/docs/optimization.md)
 * [optimization.md](laravel/modules/cms/docs/roadmap/performance/optimization.md)
+=======
+* [optimization.md](laravel/Modules/Xot/docs/roadmap/performance/optimization.md)
+* [optimization.md](laravel/Modules/Job/docs/optimization.md)
+* [optimization.md](laravel/Modules/Cms/docs/roadmap/performance/optimization.md)
+<<<<<<< HEAD
+* [optimization.md](laravel/modules/xot/docs/roadmap/performance/optimization.md)
+* [optimization.md](laravel/modules/job/docs/optimization.md)
+* [optimization.md](laravel/modules/cms/docs/roadmap/performance/optimization.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_HuzlXs

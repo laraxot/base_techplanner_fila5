@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,6 +16,13 @@ status: draft
 ---
 # Funzionalità Avanzate
 
+<<<<<<< .merge_file_nhMKpL
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/advanced-Modules.md
+=======
+# Funzionalità Avanzate
+
+>>>>>>> .merge_file_cnflwg
 Questa sezione copre funzionalità avanzate come la generazione di codici a barre, QR code, la creazione di segnalibri (bookmark), indici e altri metodi utili della libreria.
 
 **Menu di Navigazione:**
@@ -129,3 +137,7 @@ Imposta il titolo visibile nelle proprietà del file PDF.
 ```php
 $html2pdf->pdf->SetTitle('Il Mio Bel Documento');
 ```
+<<<<<<< .merge_file_nhMKpL
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_cnflwg

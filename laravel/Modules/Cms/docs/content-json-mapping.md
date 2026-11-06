@@ -119,7 +119,11 @@ Quando viene richiesta la homepage, il flusso di caricamento dei contenuti è il
 ## Perché lo Slug "home" è Collegato al File 1.json
 Questo avviene perché il trait `SushiToJsons` carica tutti i JSON in `/config/local/<nome progetto>/database/content/pages/`, e la query Eloquent `Page::firstOrCreate(['slug'=>'home'], ...)` cerca nello "slug" interno di ogni file. Il file `1.json` contiene `"slug": "home"`, perciò viene restituito.
 
+<<<<<<< HEAD
 Consulta anche la documentazione di riferimento in root: ../../../../../docs/gestione-homepage.md
+=======
+Consulta anche la documentazione di riferimento in root: ../../../../docs/gestione-homepage.md
+>>>>>>> 6ed19256f (.)
 
 ## Vantaggi di Questa Architettura
 
@@ -143,4 +147,12 @@ Per personalizzare o estendere questo sistema:
 
 ## Conclusione
 
+<<<<<<< .merge_file_UKLY6v
 Il sistema di mappatura tra slug e file JSON è un esempio di un'architettura ben progettata che combina la semplicità dei file JSON con la potenza dei modelli Eloquent. Questo approccio offre un modo flessibile e manutenibile per gestire i contenuti delle pagine, consentendo agli sviluppatori di concentrarsi sulla creazione di un'esperienza utente eccellente senza doversi preoccupare della complessità del backend.
+=======
+<<<<<<< HEAD
+Il sistema di mappatura tra slug e file JSON è un esempio di un'architettura ben progettata che combina la semplicità dei file JSON con la potenza dei modelli Eloquent. Questo approccio offre un modo flessibile e manutenibile per gestire i contenuti delle pagine, consentendo agli sviluppatori di concentrarsi sulla creazione di un'esperienza utente eccellente senza doversi preoccupare della complessità del backend.
+=======
+Il sistema di mappatura tra slug e file JSON è un esempio di un'architettura ben progettata che combina la semplicità dei file JSON con la potenza dei modelli Eloquent. Questo approccio offre un modo flessibile e manutenibile per gestire i contenuti delle pagine, consentendo agli sviluppatori di concentrarsi sulla creazione di un'esperienza utente eccellente senza doversi preoccupare della complessità del backend.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZJskgU

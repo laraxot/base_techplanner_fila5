@@ -944,7 +944,12 @@ Implementando queste soluzioni, il modulo Cms potrà superare i principali colli
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
 - [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md)
+<<<<<<< .merge_file_mBoRP4
 - [Best Practices](../../Xot/docs/best-practices.md)
+=======
+<<<<<<< HEAD
+- [Best Practices](../xot/docs/best-practices.md)
+>>>>>>> .merge_file_50iRla
 - [Struttura Moduli](../xot/docs/module_structure.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
@@ -957,6 +962,41 @@ Implementando queste soluzioni, il modulo Cms potrà superare i principali colli
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
+<<<<<<< .merge_file_mBoRP4
+=======
+* [bottlenecks.md](../../gdpr/docs/bottlenecks.md)
+* [bottlenecks.md](../../gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../xot/docs/bottlenecks.md)
+* [bottlenecks.md](../../xot/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../xot/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../dental/docs/bottlenecks.md)
+* [bottlenecks.md](../../user/docs/bottlenecks.md)
+* [bottlenecks.md](../../user/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../ui/docs/bottlenecks.md)
+* [bottlenecks.md](../../ui/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../lang/docs/bottlenecks.md)
+* [bottlenecks.md](../../lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../job/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../media/docs/bottlenecks.md)
+* [bottlenecks.md](../../media/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../activity/docs/bottlenecks.md)
+* [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
+=======
+>>>>>>> 6ed19256f (.)
+- [Best Practices](../Xot/docs/BEST-PRACTICES.md)
+- [Struttura Moduli](../Xot/docs/MODULE_STRUCTURE.md)
+
+## Collegamenti tra versioni di BOTTLENECKS.md
+* [BOTTLENECKS.md](laravel/Modules/Xot/docs/BOTTLENECKS.md)
+* [BOTTLENECKS.md](laravel/Modules/User/docs/BOTTLENECKS.md)
+* [BOTTLENECKS.md](laravel/Modules/Media/docs/BOTTLENECKS.md)
+* [BOTTLENECKS.md](laravel/Modules/Cms/docs/BOTTLENECKS.md)
+
+## Collegamenti tra versioni di bottlenecks.md
+* [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
+* [bottlenecks.md](../../Chart/docs/bottlenecks.md)
+* [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
+>>>>>>> .merge_file_50iRla
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Xot/docs/bottlenecks.md)
@@ -973,4 +1013,12 @@ Implementando queste soluzioni, il modulo Cms potrà superare i principali colli
 * [bottlenecks.md](../../Media/docs/bottlenecks.md)
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Activity/docs/bottlenecks.md)
+<<<<<<< .merge_file_mBoRP4
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
+=======
+<<<<<<< HEAD
+* [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
+=======
+* [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_50iRla

@@ -14,14 +14,26 @@ use Modules\Gdpr\Models\Treatment;
 use Stringable;
 
 /**
+<<<<<<< HEAD
  * Trait HasGdpr.
  *
  * Provides GDPR-related functionality for Eloquent models.
  *
  * @property Collection<int, Consent> $consents
  * @property Collection<int, Consent> $activeConsents
+<<<<<<< .merge_file_Ovt6Ma
  *
  * @see \Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest
+=======
+=======
+ * Trait HasGdpr
+ *
+ * Provides GDPR-related functionality for Eloquent models.
+ *
+ * @property-read Collection<int, Consent> $consents
+ * @property-read Collection<int, Consent> $activeConsents
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_u6ttiT
  */
 trait HasGdpr
 {
@@ -60,12 +72,20 @@ trait HasGdpr
 
     /**
      * Check if the user has given a specific consent.
+<<<<<<< HEAD
      */
     public function hasGivenConsent(ConsentType|string $type): bool
+=======
+     *
+     * @param  bool  $cached  Use cached version if available
+     */
+    public function hasGivenConsent(ConsentType|string $type, bool $cached = true): bool
+>>>>>>> 6ed19256f (.)
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
         $cacheKey = $this->consentCacheKey($type);
 
+<<<<<<< HEAD
         if (Cache::has($cacheKey)) {
             return (bool) Cache::get($cacheKey);
         }
@@ -81,6 +101,12 @@ trait HasGdpr
         $type = $type instanceof ConsentType ? $type->value : $type;
         $cacheKey = $this->consentCacheKey($type);
 
+=======
+        if ($cached && Cache::has($cacheKey)) {
+            return (bool) Cache::get($cacheKey);
+        }
+
+>>>>>>> 6ed19256f (.)
         $hasConsent = $this->activeConsents()->where('type', $type)->exists();
 
         Cache::put($cacheKey, $hasConsent, now()->addDay());
@@ -91,8 +117,17 @@ trait HasGdpr
     /**
      * Give consent for a specific type.
      *
+<<<<<<< .merge_file_Ovt6Ma
      * @param  array<string, mixed>  $metadata
      * @param  array<string, mixed>  $metadata
+=======
+<<<<<<< HEAD
+     * @param array<string, mixed> $metadata
+     * @param array<string, mixed> $metadata
+=======
+     * @param  array<string, mixed>  $metadata
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_u6ttiT
      */
     public function giveConsent(ConsentType|string $type, array $metadata = []): Consent
     {
@@ -144,6 +179,7 @@ trait HasGdpr
     {
         $givenConsents = $this->activeConsents()->pluck('type')->toArray();
 
+<<<<<<< .merge_file_Ovt6Ma
         /** @var list<string> $consentTypes */
         $consentTypes = ConsentType::getRequiredConsentTypes();
 
@@ -151,6 +187,16 @@ trait HasGdpr
         $given = $givenConsents;
 
         return array_values(array_diff($consentTypes, $given));
+=======
+<<<<<<< HEAD
+        $givenConsents = array_map(static fn (mixed $v): string => (string) $v, $givenConsents);
+
+        /* @var array<string> */
+=======
+        /** @var array<string> */
+>>>>>>> 6ed19256f (.)
+        return array_diff(ConsentType::getRequiredConsentTypes(), $givenConsents);
+>>>>>>> .merge_file_u6ttiT
     }
 
     /**

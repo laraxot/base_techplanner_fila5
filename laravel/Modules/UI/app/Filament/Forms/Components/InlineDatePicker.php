@@ -27,7 +27,10 @@ class InlineDatePicker extends XotBaseDatePicker
      * Mese attualmente visualizzato (formato Y-m).
      */
     public string $currentViewMonth;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
     /**
      * Date abilitate per la selezione.
      *
@@ -101,7 +104,15 @@ class InlineDatePicker extends XotBaseDatePicker
     /**
      * Imposta le date abilitate.
      *
+<<<<<<< .merge_file_eIUAL2
      * @param  array<string>|\Closure  $dates
+=======
+     * @param array<string>|\Closure $dates
+<<<<<<< HEAD
+     * @param array<string>|\Closure $dates
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_UAqXWK
      */
     public function enabledDates(array|\Closure $dates): static
     {
@@ -113,7 +124,15 @@ class InlineDatePicker extends XotBaseDatePicker
     /**
      * Imposta il mese corrente di visualizzazione.
      *
+<<<<<<< .merge_file_eIUAL2
      * @param  string  $month  Formato Y-m (es. '2025-06')
+=======
+     * @param string $month Formato Y-m (es. '2025-06')
+<<<<<<< HEAD
+     * @param string $month Formato Y-m (es. '2025-06')
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_UAqXWK
      */
     public function currentViewMonth(string $month): static
     {
@@ -184,11 +203,17 @@ class InlineDatePicker extends XotBaseDatePicker
             $this->currentViewMonth = now()->format('Y-m');
         }
 
+<<<<<<< HEAD
         $targetMonthRaw = Carbon::createFromFormat('Y-m', $this->currentViewMonth);
         if (! $targetMonthRaw) {
             $targetMonthRaw = Carbon::now();
         }
         $targetMonth = $targetMonthRaw->startOfMonth();
+=======
+        /** @phpstan-ignore method.nonObject */
+        $targetMonth = Carbon::createFromFormat('Y-m', $this->currentViewMonth)->startOfMonth();
+        /** @phpstan-ignore-next-line */
+>>>>>>> 6ed19256f (.)
         $firstDay = $targetMonth->copy()->startOfWeek(Carbon::MONDAY);
         $lastDay = $targetMonth->copy()->endOfMonth()->endOfWeek(Carbon::SUNDAY);
 
@@ -222,13 +247,22 @@ class InlineDatePicker extends XotBaseDatePicker
             $weeks->push($week->toArray());
         }
 
+<<<<<<< .merge_file_eIUAL2
         return [
+=======
+<<<<<<< HEAD
+        $res = [
+=======
+        return [
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_UAqXWK
             'weeks' => $weeks->toArray(),
             'month' => $targetMonth,
             'monthName' => $targetMonth->translatedFormat('F'),
             'year' => $targetMonth->year,
             'weekdays' => $this->getLocalizedWeekdays(),
         ];
+<<<<<<< .merge_file_eIUAL2
     }
 
     /**
@@ -244,6 +278,14 @@ class InlineDatePicker extends XotBaseDatePicker
             // Stato non leggibile o data non valida: il calendario resta senza giorno selezionato.
             return null;
         }
+=======
+<<<<<<< HEAD
+
+        /* @var array<string, mixed> $res */
+        return $res;
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_UAqXWK
     }
 
     /**
@@ -255,7 +297,15 @@ class InlineDatePicker extends XotBaseDatePicker
     {
         $calendarData = $this->generateCalendarData();
 
+<<<<<<< .merge_file_eIUAL2
         return array_merge(parent::getViewData(), [
+=======
+<<<<<<< HEAD
+        $res = array_merge(parent::getViewData(), [
+=======
+        return array_merge(parent::getViewData(), [
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_UAqXWK
             'calendarData' => $calendarData,
             'currentViewMonth' => $this->currentViewMonth,
             'currentValue' => $this->getState(),
@@ -265,6 +315,15 @@ class InlineDatePicker extends XotBaseDatePicker
             'year' => $calendarData['year'],
             'weekdays' => $calendarData['weekdays'],
         ]);
+<<<<<<< .merge_file_eIUAL2
+=======
+<<<<<<< HEAD
+
+        /* @var array<string, mixed> $res */
+        return $res;
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_UAqXWK
     }
 
     /**
@@ -277,13 +336,22 @@ class InlineDatePicker extends XotBaseDatePicker
         $weekdays = [];
         $monday = Carbon::now()->startOfWeek(Carbon::MONDAY);
 
+<<<<<<< .merge_file_eIUAL2
         for ($i = 0; $i < 7; $i++) {
+=======
+        for ($i = 0; $i < 7; ++$i) {
+<<<<<<< HEAD
+>>>>>>> .merge_file_UAqXWK
             $dayCarbon = $monday->copy()->addDays($i)->locale(App::getLocale());
             if (! $dayCarbon instanceof Carbon) {
                 throw new RuntimeException('Expected Carbon instance');
             }
             $shortDay = $dayCarbon->shortLocaleDayOfWeek;
             $weekdays[] = \is_string($shortDay) ? mb_substr($shortDay, 0, 1) : (string) $shortDay;
+=======
+            /* @phpstan-ignore property.nonObject */
+            $weekdays[] = $monday->copy()->addDays($i)->locale(App::getLocale())->shortLocaleDayOfWeek[0];
+>>>>>>> 6ed19256f (.)
         }
 
         return $weekdays;

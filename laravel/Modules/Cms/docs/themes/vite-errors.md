@@ -47,7 +47,11 @@ ThemeName/
 
 ### 1. Verifica Preliminare
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
+=======
+cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/[NomeTema]
+>>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Processo di Compilazione
@@ -81,9 +85,18 @@ ls -la dist/
 - Verifica dell'integrità dei file compilati
 
 ## Collegamenti Correlati
+<<<<<<< .merge_file_CzrKGy
+=======
+- [Documentazione Generale Errori](/project_docs/errors/README.md)
+- [Gestione Temi CMS](../themes/README.md)
+- [Processo di Deploy](../../project_docs/deployment/THEMES.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_RUzAD9
 - [Documentazione Generale Errori](/project_docs/errors/readme.md)
 - [Gestione Temi CMS](../../../../Themes/README.md)
 - [Processo di Deploy](../../project_docs/deployment/themes.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Note Tecniche
 - La compilazione deve essere eseguita per ogni tema individualmente
@@ -126,4 +139,12 @@ npm install && npm run copy
 ## Manutenzione
 - Aggiornare regolarmente le dipendenze npm
 - Verificare la compatibilità con le versioni Laravel
+<<<<<<< .merge_file_CzrKGy
 - Mantenere backup dei file di configurazione 
+=======
+- Mantenere backup dei file di configurazione
+<<<<<<< HEAD
+- Mantenere backup dei file di configurazione 
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_RUzAD9

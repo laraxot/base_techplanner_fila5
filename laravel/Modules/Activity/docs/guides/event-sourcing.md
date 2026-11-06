@@ -47,22 +47,54 @@ class activity_aggregate_root
 {
     private $uuid;
     private $activities = [];
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public static function start(string $uuid): self
         $aggregate = new self();
         $aggregate->record_that(new activity_started($uuid));
         return $aggregate;
     }
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     public function log_activity(string $type, array $data)
         $this->record_that(new activity_logged($this->uuid, $type, $data));
+<<<<<<< .merge_file_HlNAVv
+=======
+    }
+<<<<<<< HEAD
+>>>>>>> .merge_file_aDj5Oy
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function apply_activity_started(activity_started $event)
         $this->uuid = $event->uuid;
+<<<<<<< .merge_file_HlNAVv
+=======
+    }
+<<<<<<< HEAD
+>>>>>>> .merge_file_aDj5Oy
     
+=======
+
+>>>>>>> 6ed19256f (.)
     protected function apply_activity_logged(activity_logged $event)
         $this->activities[] = ['type' => $event->type, 'data' => $event->data];
+<<<<<<< .merge_file_HlNAVv
+=======
+    }
+<<<<<<< HEAD
+>>>>>>> .merge_file_aDj5Oy
     
+=======
+
+>>>>>>> 6ed19256f (.)
     private function record_that($event)
         // logic to record the event
 ```
@@ -183,9 +215,19 @@ event sourcing offers a powerful approach to manage complexity in the `activity`
 
 
 
+<<<<<<< .merge_file_HlNAVv
+=======
+event sourcing offers a powerful approach to manage complexity in the `activity` module, ensuring traceability and flexibility. by implementing aggregate roots, projectors, and strategies like snapshotting, existing code robustness and scalability can be improved. following the described patterns and recommendations, the module can evolve to support future requirements without compromising data consistency.
+<<<<<<< HEAD
+>>>>>>> .merge_file_aDj5Oy
 ---
 module: theme
 topic: event-sourcing
 canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
 
 See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md
+<<<<<<< .merge_file_HlNAVv
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_aDj5Oy

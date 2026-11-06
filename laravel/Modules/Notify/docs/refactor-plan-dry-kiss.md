@@ -157,7 +157,17 @@ Creare sistema di navigazione coerente:
 - Onboarding sviluppatori semplificato
 
 ---
+<<<<<<< .merge_file_X5HRrn
+=======
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_t2HyIm
 **Stato**: In corso  
 **Priorità**: Alta  
 **Responsabile**: Sistema automatico  
+=======
+**Stato**: In corso
+**Priorità**: Alta
+**Responsabile**: Sistema automatico
+>>>>>>> 6ed19256f (.)
 **Deadline**: Immediata

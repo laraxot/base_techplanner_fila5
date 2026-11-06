@@ -124,6 +124,13 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di auth.md
+<<<<<<< .merge_file_8gzoYv
+=======
+* [auth.md](../../../Xot/docs/install/auth.md)
+* [auth.md](../../../User/docs/lang/en/auth.md)
+* [auth.md](../../../Tenant/docs/it/config/auth.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_uBu2wm
 * [auth.md](../../../xot/docs/install/auth.md)
 * [auth.md](../../../user/docs/lang/en/auth.md)
 * [auth.md](../../../../User/docs/lang/en/auth.md)
@@ -132,3 +139,12 @@ return [
 ### Versione Incoming
 
 ---
+<<<<<<< .merge_file_8gzoYv
+=======
+=======
+
+### Versione Incoming
+
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_uBu2wm

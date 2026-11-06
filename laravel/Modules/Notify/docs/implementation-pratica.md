@@ -322,7 +322,11 @@ class MjmlService
         try {
             $mjml = $this->convertToMjml($template);
             $result = $this->mjml->render($mjml, $this->options);
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> 6ed19256f (.)
             return [
                 'html' => $result->html,
                 'errors' => $result->errors
@@ -610,11 +614,19 @@ class SendAction extends Action
 <body>
     <div class="container">
         @include('notify::partials.header')
+<<<<<<< HEAD
         
         <div class="content">
             {{ $slot }}
         </div>
         
+=======
+
+        <div class="content">
+            {{ $slot }}
+        </div>
+
+>>>>>>> 6ed19256f (.)
         @include('notify::partials.footer')
     </div>
 </body>
@@ -790,4 +802,8 @@ class TemplateControllerTest extends TestCase
 - [Laravel Mail Documentation](https://laravel.com/docs/mail)
 - [MJML Documentation](https://mjml.io/documentation/)
 - [Mailgun API](https://documentation.mailgun.com/en/latest/api_reference.html)
+<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com/docs) 
+=======
+- [Filament Documentation](https://filamentphp.com/docs)
+>>>>>>> 6ed19256f (.)

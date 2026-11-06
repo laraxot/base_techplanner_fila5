@@ -113,6 +113,7 @@ I blocchi sono componenti modulari che:
 
 ## Collegamenti
 - [Glossario Tecnico](../glossary.md)
+<<<<<<< HEAD
 - [Guida allo Stile](../style/readme.md)
 - [Documentazione Blocchi](../blocks/README.md)
 
@@ -133,3 +134,32 @@ I blocchi sono componenti modulari che:
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](../themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
+<<<<<<< .merge_file_1aYFHL
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Guida allo Stile](../style/README.md)
+- [Documentazione Blocchi](../blocks/README.md)
+
+## Collegamenti tra versioni di structure.md
+* [structure.md](bashscripts/docs/structure.md)
+* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
+* [structure.md](laravel/Modules/Notify/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
+* [structure.md](laravel/Modules/User/docs/structure.md)
+* [structure.md](laravel/Modules/UI/docs/structure.md)
+* [structure.md](laravel/Modules/Lang/docs/structure.md)
+* [structure.md](laravel/Modules/Job/docs/structure.md)
+* [structure.md](laravel/Modules/Media/docs/structure.md)
+* [structure.md](laravel/Modules/Tenant/docs/structure.md)
+* [structure.md](laravel/Modules/Activity/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
+<<<<<<< HEAD
+* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
+=======
+* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_9w2QaK

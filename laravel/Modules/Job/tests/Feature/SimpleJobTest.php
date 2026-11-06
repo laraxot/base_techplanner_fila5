@@ -5,15 +5,7 @@ use Modules\Job\Models\Job;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_lpnSsm
 uses(TestCase::class);
-=======
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Carbon;
-use Modules\Job\Models\Job;
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_wZyC0R
 
 describe('Job Business Logic', function () {
     it('can create job with basic information', function () {
@@ -39,8 +31,4 @@ describe('Job Business Logic', function () {
 
         Assert::assertNull($job->reserved_at);
     });
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 6ed19256f (.)

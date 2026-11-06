@@ -10,6 +10,7 @@ return [
     'create' => 'Kanal erstellen',
     'edit' => 'Kanal bearbeiten',
     'delete' => 'Kanal löschen',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -21,4 +22,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_JMWphz
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_bwV2av

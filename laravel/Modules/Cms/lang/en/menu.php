@@ -18,30 +18,42 @@ return [
         'id' => [
             'label' => 'ID',
             'placeholder' => 'Menu ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'Name',
             'placeholder' => 'Menu name',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'Menu slug',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Description',
             'placeholder' => 'Menu description',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Type',
@@ -51,9 +63,12 @@ return [
                 'footer' => 'Footer',
                 'sidebar' => 'Sidebar',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Status',
@@ -63,6 +78,7 @@ return [
                 'inactive' => 'Inactive',
                 'draft' => 'Draft',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -114,6 +130,32 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'message' => [
+            'label' => 'message',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'title' => [
+            'label' => 'title',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -138,6 +180,9 @@ return [
     'model' => [
         'label' => 'menu.model',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

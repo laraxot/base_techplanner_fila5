@@ -380,6 +380,11 @@ describe('Performance and Caching', function () {
 
 ---
 
+<<<<<<< .merge_file_lKb8Jk
+=======
+**Last Updated**: 2025-08-28
+<<<<<<< HEAD
+>>>>>>> .merge_file_Pshvks
 
 title: "testing guidelines"
 type: note
@@ -391,3 +396,10 @@ issues: []
 discussions: []
 **Testing Framework**: Pest
 **Environment**: .env.testing
+<<<<<<< .merge_file_lKb8Jk
+=======
+=======
+**Testing Framework**: Pest
+**Environment**: .env.testing
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Pshvks

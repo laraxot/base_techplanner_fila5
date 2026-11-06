@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_eFak05
 ---
 title: "cleanup log"
 type: note
@@ -10,7 +11,13 @@ discussions: []
 status: draft
 ---
 
+=======
+# Cms Module Cleanup - 2025-12-18
+<<<<<<< HEAD
+>>>>>>> .merge_file_0KfSAl
 # Cms Module Cleanup - [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Removed Files
 The following files were identified as broken standalone scripts (incorrect paths to autoload.php) and were moved/archived to cleaner locations outside the source tree or into bashscripts:
@@ -21,4 +28,12 @@ The following files were identified as broken standalone scripts (incorrect path
 ## Reason
 1. They contained incorrect paths (`require_once __DIR__.'/laravel/vendor/autoload.php'`) which do not exist.
 2. They violated the rule regarding loose scripts in the module root.
+<<<<<<< .merge_file_eFak05
 3. They caused PHPStan errors (level 10) due to mixed types and manual bootstrapping.
+=======
+<<<<<<< HEAD
+3. They caused PHPStan errors (level 10) due to mixed types and manual bootstrapping.
+=======
+3. They caused PHPStan errors (level 10) due to mixed types and manual bootstrapping.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_0KfSAl

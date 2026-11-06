@@ -21,8 +21,17 @@ class Image
                 TextInput::make('url'),
                 Select::make('ratio')
                     ->options(static::getRatios())
+<<<<<<< .merge_file_Cjcu8N
                     ->afterStateHydrated(static function (?string $state, Set $set): void {
                         if (! $state) {
+=======
+<<<<<<< HEAD
+                    ->afterStateHydrated(function (mixed $state, mixed $set): void {
+=======
+                    ->afterStateHydrated(function (mixed $state, mixed $set) {
+>>>>>>> 6ed19256f (.)
+                        if (! $state && is_callable($set)) {
+>>>>>>> .merge_file_KqIGN4
                             $set('ratio', '4-3');
                         }
                     }),

@@ -106,7 +106,11 @@ Components should never rely on variables that haven't been explicitly defined a
 
 ```blade
 <!-- INCORRECT: Hard-coded project references -->
+<<<<<<< HEAD
 <div class="title">Welcome to <nome progetto></div>
+=======
+<div class="title">Welcome to SaluteOra</div>
+>>>>>>> 6ed19256f (.)
 
 <!-- CORRECT: Dynamic configuration -->
 <div class="title">Welcome to {{ config('app.name') }}</div>
@@ -141,9 +145,18 @@ Components should never rely on variables that haven't been explicitly defined a
 
 ## Related Documentation
 
+<<<<<<< .merge_file_8tnwsO
+=======
+- [Block Components Overview](./blocks/README.md)
+- [Component Architecture](./components/README.md)
+- [Section Architecture](./sections/README.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_Iw0fFv
 - [Block Components Overview](./blocks/readme.md)
 - [Component Architecture](./components/readme.md)
 - [Section Architecture](./sections/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 > **Note**: This document is the primary reference for Blade data handling patterns across all modules.
 > All module-specific implementations should link back to this document.
@@ -280,9 +293,24 @@ Components should never rely on variables that haven't been explicitly defined a
 
 ## Related Documentation
 
+<<<<<<< .merge_file_8tnwsO
+=======
+- [Block Components Overview](./blocks/README.md)
+- [Component Architecture](./components/README.md)
+- [Section Architecture](./sections/README.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_Iw0fFv
 - [Block Components Overview](./blocks/readme.md)
 - [Component Architecture](./components/readme.md)
 - [Section Architecture](./sections/readme.md)
 
 > **Note**: This document is the primary reference for Blade data handling patterns across all modules.
 > All module-specific implementations should link back to this document.
+<<<<<<< .merge_file_8tnwsO
+=======
+=======
+
+> **Note**: This document is the primary reference for Blade data handling patterns across all modules.
+> All module-specific implementations should link back to this document.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Iw0fFv

@@ -44,6 +44,10 @@ class GroupColumn extends XotBaseColumn
             return $item instanceof Column;
         });
 
+<<<<<<< HEAD
+=======
+        /** @var array<int|string, Column> $filtered */
+>>>>>>> 6ed19256f (.)
         /** @var array<int, Column> $filteredValues */
         $filteredValues = array_values($filtered);
         $this->schema = $filteredValues;

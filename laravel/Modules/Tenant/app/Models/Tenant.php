@@ -26,6 +26,7 @@ use Modules\Xot\Contracts\UserContract;
  * @property bool $is_active
  * @property Carbon|null $last_activity_at
  * @property string|null $logo
+<<<<<<< .merge_file_JW2SA6
  * @property string|null $email
  * @property string|null $phone
  * @property string|null $address
@@ -35,6 +36,13 @@ use Modules\Xot\Contracts\UserContract;
  * @property string|null $country
  * @property string|null $tax_code
  * @property string|null $vat_number
+=======
+<<<<<<< HEAD
+ * @property \Carbon\Carbon|null $last_activity_at
+=======
+ *
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_7jMFeg
  * @property-read string $url
  * @property-read Collection<int, Model&UserContract> $users
  * @property-read int|null $users_count
@@ -44,6 +52,32 @@ use Modules\Xot\Contracts\UserContract;
  * @method static Builder<static>|Tenant newQuery()
  * @method static Builder<static>|Tenant query()
  *
+<<<<<<< .merge_file_JW2SA6
+=======
+ * @property string $id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $deleted_at
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
+ * @property ProfileContract|null $deleter
+ *
+ * @method static Builder<static>|Tenant whereCreatedAt($value)
+ * @method static Builder<static>|Tenant whereDatabase($value)
+ * @method static Builder<static>|Tenant whereDeletedAt($value)
+ * @method static Builder<static>|Tenant whereDomain($value)
+ * @method static Builder<static>|Tenant whereId($value)
+ * @method static Builder<static>|Tenant whereIsActive($value)
+ * @method static Builder<static>|Tenant whereName($value)
+ * @method static Builder<static>|Tenant whereSlug($value)
+ * @method static Builder<static>|Tenant whereUpdatedAt($value)
+<<<<<<< HEAD
+ * @method static Builder<static>|Tenant whereSettings($value)
+=======
+>>>>>>> 6ed19256f (.)
+ *
+ * @mixin \Eloquent
+>>>>>>> .merge_file_7jMFeg
  */
 class Tenant extends BaseModel
 {
@@ -70,7 +104,10 @@ class Tenant extends BaseModel
         'country',
         'tax_code',
         'vat_number',
+<<<<<<< HEAD
         'last_activity_at',
+=======
+>>>>>>> 6ed19256f (.)
     ];
 
     // Commented out - Patient and Dental modules not available
@@ -110,7 +147,10 @@ class Tenant extends BaseModel
         return [
             'settings' => 'array',
             'is_active' => 'boolean',
+<<<<<<< HEAD
             'last_activity_at' => 'datetime',
+=======
+>>>>>>> 6ed19256f (.)
         ];
     }
 }

@@ -830,4 +830,12 @@ class ServiceTest extends TestCase
 ---
 
 **📝 Documento preparato da:** Super Mucca 🐮
+<<<<<<< .merge_file_BwisdT
 **📅 Data:** [DATE]
+=======
+**📅 Data:** 2025-10-02
+<<<<<<< HEAD
+**📅 Data:** [DATE]
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_8NPLY3

@@ -26,6 +26,27 @@ class WorkHourResource extends XotBaseResource
 
 =======
 >>>>>>> 6ed19256f (.)
+<<<<<<< .merge_file_zkpxrd
+=======
+    /**
+     * @return array<string|int, Component>
+     */
+    #[Override]
+    public static function getFormSchema(): array
+    {
+        return [
+            Section::make('Time Entry Details')
+                ->schema([
+                    Select::make('employee_id')->relationship('employee', 'name')->required(),
+                    DateTimePicker::make('clock_in')->required(),
+                    DateTimePicker::make('clock_out'),
+                    Textarea::make('notes')->maxLength(65535),
+                ])
+                ->columns(2),
+        ];
+    }
+
+>>>>>>> .merge_file_EsybZr
     /**
      * @return array<class-string<Widget>>
      */

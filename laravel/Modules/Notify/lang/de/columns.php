@@ -13,7 +13,14 @@ return [
             'type' => 'Typ',
             'verified' => 'Verifiziert',
             'sms_sent' => 'SMS gesendet',
+<<<<<<< .merge_file_QQ1pbZ
             'email_sent' => 'E-Mails gesendet']],
+=======
+            'email_sent' => 'E-Mails gesendet',
+        ],
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_Hd2h0V
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -25,4 +32,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_QQ1pbZ
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_Hd2h0V

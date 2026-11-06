@@ -17,78 +17,175 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => '模板的唯一标识符',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'mailable' => [
             'label' => '可邮件类',
             'placeholder' => '输入可邮件类名称',
             'help' => '处理邮件发送的PHP类',
             'helper_text' => '处理邮件发送的PHP类',
             'description' => '可邮件类',
+<<<<<<< .merge_file_10CGgp
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'subject' => [
             'label' => '主题',
             'placeholder' => '输入邮件主题',
             'help' => '邮件中显示的主题',
             'helper_text' => '邮件主题',
             'description' => '主题',
+<<<<<<< .merge_file_10CGgp
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'html_template' => [
             'label' => 'HTML内容',
             'placeholder' => '输入邮件HTML内容',
             'help' => 'HTML格式的邮件内容',
             'helper_text' => '邮件模板的HTML内容',
             'description' => 'HTML模板',
+<<<<<<< .merge_file_10CGgp
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'text_template' => [
             'label' => '文本内容',
             'placeholder' => '输入邮件文本内容',
             'help' => '不支持HTML的邮件客户端的文本版本',
             'helper_text' => '邮件模板的文本版本',
             'description' => '文本模板',
+<<<<<<< .merge_file_10CGgp
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'version' => [
             'label' => '版本',
             'help' => '模板版本号',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'created_at' => [
             'label' => '创建时间',
             'helper_text' => '模板创建日期',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'updated_at' => [
             'label' => '最后修改',
             'helper_text' => '模板最后修改日期',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'from_email' => [
             'label' => '发件人邮箱',
             'helper_text' => '发件人邮箱地址',
             'placeholder' => 'noreply@example.com',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'from_name' => [
             'label' => '发件人姓名',
             'helper_text' => '发件人显示姓名',
             'placeholder' => '公司名称',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'variables' => [
             'label' => '可用变量',
             'helper_text' => '模板中可使用的变量列表',
             'placeholder' => '例如: {{name}}, {{email}}',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'is_markdown' => [
             'label' => '使用Markdown',
             'helper_text' => '模板是否使用Markdown语法',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'status' => [
             'label' => '状态',
             'helper_text' => '模板当前状态',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => ''],
         'toggleColumns' => [
@@ -120,25 +217,75 @@ return [
             'label' => '布局',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_10CGgp
             'description' => ''],
+=======
+            'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => '切换列',
+        ],
+        'reorderRecords' => [
+            'label' => '重新排序记录',
+        ],
+        'resetFilters' => [
+            'label' => '重置筛选器',
+        ],
+        'applyFilters' => [
+            'label' => '应用筛选器',
+        ],
+        'openFilters' => [
+            'label' => '打开筛选器',
+        ],
+        'layout' => [
+            'label' => '布局',
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'slug' => [
             'label' => '别名',
             'description' => '别名',
             'helper_text' => '别名',
             'placeholder' => '别名',
+<<<<<<< .merge_file_10CGgp
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'name' => [
             'description' => '模板名称',
             'helper_text' => '用于标识模板的描述性名称',
             'placeholder' => '例如: 欢迎邮件, 订单确认, 密码重置',
             'label' => '模板名称',
+<<<<<<< .merge_file_10CGgp
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_xZmEUq
         'params' => [
             'label' => '参数',
             'helper_text' => '输入模板中可使用的参数，用逗号分隔',
             'placeholder' => 'name, email, date, company',
             'description' => '邮件模板可用参数',
+<<<<<<< .merge_file_10CGgp
             'tooltip' => '']],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_xZmEUq
     'filters' => [
         'search_placeholder' => '搜索模板...',
         'version' => [
@@ -239,6 +386,17 @@ return [
         'bounced' => '退回',
         'spam' => '标记为垃圾邮件'],
     'model' => [
+<<<<<<< .merge_file_10CGgp
         'label' => '邮件模板'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+        'label' => '邮件模板',
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_xZmEUq

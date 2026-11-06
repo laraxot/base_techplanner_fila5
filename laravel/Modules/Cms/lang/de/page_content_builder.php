@@ -9,6 +9,7 @@ return [
             'placeholder' => 'blocks',
             'helper_text' => 'blocks',
             'description' => 'blocks',
+<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -23,10 +24,17 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+<<<<<<< .merge_file_2jNS6N
     'messages' => [
         'block_unavailable' => [
             'title' => 'Block nicht verfuegbar',
             'body' => 'Der Block ":block" konnte nicht geladen werden und wird im Editor nicht angezeigt. Vor dem Speichern das Log pruefen.',
         ],
     ],
+=======
+=======
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XJBPnA
 ];

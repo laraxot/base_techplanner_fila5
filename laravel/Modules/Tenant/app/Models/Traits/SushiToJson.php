@@ -7,18 +7,31 @@ namespace Modules\Tenant\Models\Traits;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
+<<<<<<< .merge_file_kflxfb
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Actions\Json\CreateJsonFileByRecordAction;
 use Modules\Tenant\Actions\Json\DeleteJsonFileByRecordAction;
 use Modules\Tenant\Actions\Json\UpdateJsonFileByRecordAction;
 use Modules\Tenant\Models\Contracts\HasSushiToJson;
 use Modules\Xot\Actions\Arr\EnsureKeysAction;
+=======
+use InvalidArgumentException;
+use Modules\Tenant\Services\TenantService;
+<<<<<<< HEAD
+>>>>>>> .merge_file_Bub1eb
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
 
 use function Safe\file_get_contents;
 use function Safe\json_decode;
 use function Safe\json_encode;
+=======
+use function Safe\file_get_contents;
+use function Safe\json_decode;
+use function Safe\json_encode;
+use Sushi\Sushi;
+use Throwable;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Trait SushiToJson.
@@ -83,7 +96,16 @@ trait SushiToJson
      * Ottiene il percorso del file JSON per il modello corrente.
      * Il file è specifico per il tenant corrente e la tabella del modello.
      *
+<<<<<<< .merge_file_kflxfb
      * @return string Percorso completo del file JSON
+=======
+     * @param  array<int, array<string, mixed>>  $data  Array di record da salvare
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
+     * @return bool True se il salvataggio è riuscito, false in caso di errore
+>>>>>>> .merge_file_Bub1eb
      */
     public function getJsonFile(): string
     {
@@ -174,4 +196,56 @@ trait SushiToJson
             app(DeleteJsonFileByRecordAction::class)->execute($record);
         });
     }
+<<<<<<< .merge_file_kflxfb
+=======
+
+    /**
+     * Trova l'indice del record nell'array dato un id.
+     *
+     * @param  array<int, array<string, mixed>>  $rows
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
+     * @return int|null Indice se trovato, altrimenti null
+     */
+    protected function findRowIndexById(array $rows, int $id): ?int
+    {
+        foreach ($rows as $index => $row) {
+            if (is_array($row) && ((int) ($row['id'] ?? 0)) === $id) {
+                return (int) $index;
+            }
+        }
+
+        return null;
+    }
+
+    /**
+     * Ottiene l'ID dell'utente autenticato per i campi di audit.
+     */
+    protected function authId(): int|string|null
+    {
+        if (\function_exists('authId')) {
+            return authId();
+        }
+
+        if (class_exists('\Illuminate\Support\Facades\Auth')) {
+            return Auth::id();
+        }
+
+        return null;
+    }
+
+    /**
+     * Assicura che la directory per il file JSON esista.
+     */
+    protected function ensureDirectoryExists(string $filePath): void
+    {
+        $directory = dirname($filePath);
+
+        if (! File::exists($directory)) {
+            File::makeDirectory($directory, 0o755, true, true);
+        }
+    }
+>>>>>>> .merge_file_Bub1eb
 }

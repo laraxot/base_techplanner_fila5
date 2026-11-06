@@ -55,6 +55,13 @@ describe('Notification Management', function () {
             'notification_type_id' => $this->notificationType->id,
             'template_id' => $template->id,
             'data' => json_encode(['date' => '2024-01-15 10:00']),
+<<<<<<< .merge_file_PKSLSj
+=======
+<<<<<<< HEAD
+            'data' => json_encode(['date' => '2024-01-15 10:00']),
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_yx58Vm
             'scheduled_at' => now()->addHour(),
         ]);
 
@@ -155,11 +162,25 @@ describe('Email Template System', function () {
             'patient_name' => 'John Doe',
             'doctor_name' => 'Smith',
             'date' => '2024-01-15',
+<<<<<<< .merge_file_PKSLSj
+=======
+<<<<<<< HEAD
+            'date' => '2024-01-15',
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_yx58Vm
         ];
 
         $rendered = $template->render($data);
 
         expect($rendered)->toBe('Hello John Doe, your appointment with Dr. Smith is on 2024-01-15');
+<<<<<<< .merge_file_PKSLSj
+=======
+<<<<<<< HEAD
+        expect($rendered)->toBe('Hello John Doe, your appointment with Dr. Smith is on 2024-01-15');
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_yx58Vm
     });
 });
 ```
@@ -278,8 +299,13 @@ describe('Notification Types', function () {
 
         $validChannels = ['email', 'sms', 'push', 'in_app'];
         $typeChannels = json_decode($type->channels, true);
+<<<<<<< HEAD
         
         $hasValidChannels = collect($typeChannels)->every(fn($channel) => 
+=======
+
+        $hasValidChannels = collect($typeChannels)->every(fn($channel) =>
+>>>>>>> 6ed19256f (.)
             in_array($channel, $validChannels)
         );
 
@@ -442,7 +468,11 @@ describe('Security and Compliance', function () {
         ]);
 
         $storedData = $notification->getDecryptedData();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         expect($storedData['patient_ssn'])->toBe('123-45-6789');
         expect($notification->data)->not->toContain('123-45-6789'); // Should be encrypted in storage
     });
@@ -483,6 +513,7 @@ describe('Security and Compliance', function () {
 protected function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
     
     // Use testing database
     config(['database.default' => 'sqlite']);
@@ -492,6 +523,17 @@ protected function setUp(): void
     config(['mail.default' => 'log']);
     config(['queue.default' => 'sync']);
     
+=======
+
+    // Use testing database
+    config(['database.default' => 'sqlite']);
+    config(['database.connections.sqlite.database' => ':memory:']);
+
+    // Configure notification testing
+    config(['mail.default' => 'log']);
+    config(['queue.default' => 'sync']);
+
+>>>>>>> 6ed19256f (.)
     // Set up test notification channels
     config(['notify.channels' => [
         'email' => TestEmailChannel::class,
@@ -506,7 +548,11 @@ protected function setUp(): void
 $this->mock(EmailServiceInterface::class, function ($mock) {
     $mock->shouldReceive('send')
          ->andReturn(true);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $mock->shouldReceive('getDeliveryStatus')
          ->andReturn('delivered');
 });
@@ -545,4 +591,12 @@ $this->mock(SmsServiceInterface::class, function ($mock) {
 - Verify access controls and permissions
 - Test audit logging and compliance requirements
 
+<<<<<<< .merge_file_PKSLSj
 This testing framework ensures comprehensive coverage of the Notify module's business logic while maintaining fast, reliable, and maintainable tests using the Pest framework with `.env.testing` configuration.
+=======
+<<<<<<< HEAD
+This testing framework ensures comprehensive coverage of the Notify module's business logic while maintaining fast, reliable, and maintainable tests using the Pest framework with `.env.testing` configuration.
+=======
+This testing framework ensures comprehensive coverage of the Notify module's business logic while maintaining fast, reliable, and maintainable tests using the Pest framework with `.env.testing` configuration.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_yx58Vm

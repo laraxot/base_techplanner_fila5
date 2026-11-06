@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "links"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_HLca5c
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_swG4xL

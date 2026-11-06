@@ -8,12 +8,17 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
+=======
+use Modules\Gdpr\Database\Factories\ConsentFactory;
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\Gdpr\Models\Consent.
  *
+<<<<<<< .merge_file_mtc9BR
  * @property string $id
  * @property string|null $treatment_id
  * @property string|null $subject_id
@@ -27,6 +32,22 @@ use Modules\Xot\Datas\XotData;
  * @property string|null $user_id
  * @property string|null $type
  * @property string|null $accepted_at
+=======
+<<<<<<< HEAD
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $subject_id
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $user_type
+ * @property string|null          $user_id
+ * @property string|null          $type
+ * @property string|null          $accepted_at
+>>>>>>> .merge_file_xCIquX
  * @property ProfileContract|null $creator
  * @property Treatment|null $treatment
  * @property string $id
@@ -46,6 +67,27 @@ use Modules\Xot\Datas\XotData;
  * @property Treatment|null $treatment
  * @property ProfileContract|null $updater
  *
+=======
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $subject_id
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $user_type
+ * @property string|null $user_id
+ * @property string|null $type
+ * @property string|null $accepted_at
+ *
+ * @property-read ProfileContract|null $creator
+ * @property-read Treatment|null $treatment
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static ConsentFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Consent newModelQuery()
  * @method static Builder<static>|Consent newQuery()
  * @method static Builder<static>|Consent query()
@@ -63,6 +105,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Consent whereUserId($value)
  * @method static Builder<static>|Consent whereUserType($value)
  *
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  * @property string|null $ip_address
  * @property string|null $user_agent
@@ -75,8 +118,16 @@ use Modules\Xot\Datas\XotData;
  * @property string|null $user_agent
  *
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
+<<<<<<< .merge_file_mtc9BR
  * @method static Builder<static>|Consent whereIpAddress($value)
  * @method static Builder<static>|Consent whereUserAgent($value)
+=======
+ * @method static Builder<static>|Consent                         whereIpAddress($value)
+ * @method static Builder<static>|Consent                         whereUserAgent($value)
+=======
+ * @property-read ProfileContract|null $deleter
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_xCIquX
  *
  * @mixin \Eloquent
  */
@@ -86,6 +137,7 @@ class Consent extends BaseModel
 
     public $incrementing = false;
 
+<<<<<<< .merge_file_mtc9BR
     protected static function booted(): void
     {
         static::creating(function (Consent $consent): void {
@@ -95,6 +147,9 @@ class Consent extends BaseModel
         });
     }
 
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_xCIquX
     public $fillable = [
         'id',
         'subject_id',
@@ -108,6 +163,9 @@ class Consent extends BaseModel
         'ip_address',
         'user_agent',
     ];
+=======
+    public $fillable = ['subject_id', 'treatment_id'];
+>>>>>>> 6ed19256f (.)
 
     /**
      * @return BelongsTo<Treatment, $this>

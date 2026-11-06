@@ -40,5 +40,15 @@ php artisan splade:show-versions
 da   @components('theme::includes.components.(nome)
 a <x-(nome controllato)
 ## Collegamenti tra versioni di aggiornamenti.md
+<<<<<<< .merge_file_7NxKs1
 * [aggiornamenti.md](laravel/modules/chart/docs/aggiornamenti.md)
 * [aggiornamenti.md](laravel/modules/cms/docs/aggiornamenti.md)
+=======
+* [aggiornamenti.md](laravel/Modules/Chart/docs/aggiornamenti.md)
+* [aggiornamenti.md](laravel/Modules/Cms/docs/aggiornamenti.md)
+<<<<<<< HEAD
+* [aggiornamenti.md](laravel/modules/chart/docs/aggiornamenti.md)
+* [aggiornamenti.md](laravel/modules/cms/docs/aggiornamenti.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_S0P7Aj

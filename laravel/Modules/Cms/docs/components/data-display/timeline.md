@@ -225,4 +225,12 @@ Il componente Timeline visualizza una sequenza di eventi in ordine cronologico, 
 4. **Best Practices**
    - Limitare numero di eventi visibili
    - Ottimizzare rendering icone
+<<<<<<< .merge_file_ER2nc1
    - Implementare infinite scroll per timeline lunghe
+=======
+<<<<<<< HEAD
+   - Implementare infinite scroll per timeline lunghe
+=======
+   - Implementare infinite scroll per timeline lunghe
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZPXFf2

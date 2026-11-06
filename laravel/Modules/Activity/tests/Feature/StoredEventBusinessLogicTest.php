@@ -6,6 +6,7 @@ namespace Modules\Activity\Tests\Feature;
 
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\DB;
+<<<<<<< HEAD
 use Illuminate\Support\Str;
 use Modules\Activity\Models\StoredEvent;
 use Modules\Activity\Tests\TestCase;
@@ -14,7 +15,20 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 uses(\Modules\Activity\Tests\TestCase::class);
 
+<<<<<<< .merge_file_xlL4FG
 test('can create stored event with basic information', function (): void {
+=======
+it('can create stored event with basic information', function (): void {
+=======
+use Modules\Activity\Models\StoredEvent;
+use Illuminate\Support\Str;
+
+uses(Modules\Activity\Tests\TestCase::class);
+
+it('can create stored event with basic information', function (): void
+{
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ODabFb
     $eventData = [
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
@@ -250,12 +264,25 @@ test('can query events by aggregate uuid', function (): void {
 
     $first1 = $events1->first();
     $first2 = $events2->first();
+<<<<<<< .merge_file_xlL4FG
     Assert::assertNotNull($first1);
     Assert::assertNotNull($first2);
     Assert::assertInstanceOf(StoredEvent::class, $first1);
     Assert::assertInstanceOf(StoredEvent::class, $first2);
     Assert::assertSame($uuid1, $first1->aggregate_uuid);
     Assert::assertSame($uuid2, $first2->aggregate_uuid);
+=======
+    $this->assertNotNull($first1);
+    $this->assertNotNull($first2);
+    \assert($first1 instanceof StoredEvent);
+    \assert($first2 instanceof StoredEvent);
+    $this->assertSame($uuid1, $first1->aggregate_uuid);
+    $this->assertSame($uuid2, $first2->aggregate_uuid);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ODabFb
 });
 
 test('can query events by event class', function (): void {
@@ -302,6 +329,7 @@ test('can query events by event class', function (): void {
     $firstCreated = $userCreatedEvents->first();
     $firstUpdated = $userUpdatedEvents->first();
     $firstDeleted = $userDeletedEvents->first();
+<<<<<<< .merge_file_xlL4FG
     Assert::assertNotNull($firstCreated);
     Assert::assertNotNull($firstUpdated);
     Assert::assertNotNull($firstDeleted);
@@ -311,6 +339,21 @@ test('can query events by event class', function (): void {
     Assert::assertSame('App\\Events\\UserCreated', $firstCreated->event_class);
     Assert::assertSame('App\\Events\\UserUpdated', $firstUpdated->event_class);
     Assert::assertSame('App\\Events\\UserDeleted', $firstDeleted->event_class);
+=======
+    $this->assertNotNull($firstCreated);
+    $this->assertNotNull($firstUpdated);
+    $this->assertNotNull($firstDeleted);
+    \assert($firstCreated instanceof StoredEvent);
+    \assert($firstUpdated instanceof StoredEvent);
+    \assert($firstDeleted instanceof StoredEvent);
+    $this->assertSame('App\\Events\\UserCreated', $firstCreated->event_class);
+    $this->assertSame('App\\Events\\UserUpdated', $firstUpdated->event_class);
+    $this->assertSame('App\\Events\\UserDeleted', $firstDeleted->event_class);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ODabFb
 });
 
 test('can handle event with empty properties', function (): void {
@@ -456,7 +499,11 @@ test('can compare event versions', function (): void {
 
 test('can handle event with timestamps', function (): void {
     $now = now();
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 6ed19256f (.)
     $storedEvent = StoredEvent::create([
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,

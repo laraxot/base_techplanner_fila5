@@ -21,7 +21,33 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
 /**
+<<<<<<< .merge_file_YpVS9J
  * @property SchemalessAttributes $extra
+=======
+<<<<<<< HEAD
+ * @property int $id
+ * @property string $uuid
+ * @property string|null $user_id
+=======
+ * @property string $id
+ * @property string $user_id
+>>>>>>> 6ed19256f (.)
+ * @property string|null $first_name
+ * @property string|null $last_name
+ * @property string|null $fiscal_code
+ * @property string|null $phone
+ * @property string|null $email
+ * @property string|null $notes
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ * @property string $credits
+ * @property string|null $slug
+ * @property SchemalessAttributes|null $extra
+>>>>>>> .merge_file_GxJyMq
  * @property-read string $avatar
  * @property-read Profile|null $creator
  * @property-read Collection<int, DeviceUser> $deviceUsers
@@ -47,10 +73,17 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property-read Profile|null $updater
  * @property-read User|null $user
  * @property-read string|null $user_name
+<<<<<<< HEAD
  *
+<<<<<<< .merge_file_YpVS9J
  * @method static Builder<static>|Profile byUuid(string $uuid)
  * @method static Builder<static>|Profile childrenWith(array<string> $relations)
  * @method static Builder<static>|Profile childrenWithCount(array<string> $relations)
+=======
+=======
+>>>>>>> 6ed19256f (.)
+ * @method static ProfileFactory factory($count = null, $state = [])
+>>>>>>> .merge_file_GxJyMq
  * @method static Builder<static>|Profile newModelQuery()
  * @method static Builder<static>|Profile newQuery()
  * @method static Builder<static>|Profile permission($permissions, bool $without = false)
@@ -106,8 +139,25 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Profile whereUpdatedAt($value)
  * @method static Builder<static>|Profile whereUpdatedBy($value)
  * @method static Builder<static>|Profile whereUserId($value)
+<<<<<<< .merge_file_YpVS9J
  * @method static Builder<static>|Profile whereUserName($value)
+=======
+ * @method static Builder<static>|Profile withExtraAttributes()
+ * @method static Builder<static>|Profile withoutPermission($permissions)
+ * @method static Builder<static>|Profile withoutRole($roles, $guard = null)
+<<<<<<< HEAD
  *
+ * @property string|null $bio
+ * @property-read Profile|null $deleter
+ *
+ * @method static Builder<static>|Profile whereBio($value)
+>>>>>>> .merge_file_GxJyMq
+ *
+=======
+ * @property string|null $bio
+ * @property-read Profile|null $deleter
+ * @method static Builder<static>|Profile whereBio($value)
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Profile extends BaseProfile {}

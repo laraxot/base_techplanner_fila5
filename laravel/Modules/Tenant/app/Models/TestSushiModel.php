@@ -47,7 +47,15 @@ class TestSushiModel extends BaseModel implements HasSushiToJson
     /**
      * @var array<string, string>
      */
+<<<<<<< .merge_file_b8RqWy
     protected array $schema = [
+=======
+<<<<<<< HEAD
+    protected array $form = [
+=======
+    protected $form = [
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_7lKg64
         'id' => 'integer',
         'name' => 'string',
         'description' => 'string',

@@ -6,6 +6,7 @@ return [
     'fields' => [
         'recipient' => [
             'label' => 'recipient',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => ''],
@@ -66,4 +67,37 @@ return [
         'edit' => [
             'label' => 'Modifica Log'],
         'delete' => [
+<<<<<<< .merge_file_EnStFP
             'label' => 'Elimina Log']]];
+=======
+            'label' => 'Elimina Log',
+=======
+        ],
+        'subject' => [
+            'label' => 'subject',
+        ],
+        'status' => [
+            'label' => 'status',
+        ],
+        'sent_at' => [
+            'label' => 'sent_at',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+];
+>>>>>>> .merge_file_PhIFo3

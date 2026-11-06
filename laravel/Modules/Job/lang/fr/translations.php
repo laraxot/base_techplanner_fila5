@@ -8,13 +8,8 @@ return [
     'navigation_label' => 'Jobs',
     'navigation_group' => 'Système',
     'total_jobs' => 'Total Jobs Executé(s)',
-<<<<<<< HEAD
     'execution_time' => 'Temps Total d\'Execution',
     'average_time' => 'Temps moyen d\'Execution',
-=======
-    'execution_time' => "Temps Total d'Execution",
-    'average_time' => "Temps moyen d'Execution",
->>>>>>> 6ed19256f (.)
     'succeeded' => 'Succes',
     'failed' => 'Echec',
     'running' => 'En cours',
@@ -25,7 +20,6 @@ return [
     'started_at' => 'Débuté à',
     'created_at' => 'Créé à',
     'reserved_at' => 'Réservé à',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -39,6 +33,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

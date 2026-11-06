@@ -37,9 +37,12 @@ return [
                 'help' => 'Função do usuário no sistema',
                 'validation' => 'required|string',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'action' => [
             'label' => 'Ação',
@@ -88,9 +91,12 @@ return [
                     'color' => 'gray',
                 ],
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Assunto',
@@ -114,36 +120,48 @@ return [
                 'help' => 'Nome descritivo do objeto',
                 'validation' => 'nullable|string|max:255',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrição',
             'placeholder' => 'Insira uma descrição',
             'help' => 'Descrição detalhada da atividade',
             'validation' => 'nullable|string|max:1000',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'ip_address' => [
             'label' => 'Endereço IP',
             'placeholder' => 'Ex. 192.168.1.1',
             'help' => 'Endereço IP de onde a ação foi realizada',
             'validation' => 'nullable|ip',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'user_agent' => [
             'label' => 'Agente de Usuário',
             'placeholder' => 'Navegador e sistema operacional',
             'help' => 'Informações sobre o navegador e sistema do usuário',
             'validation' => 'nullable|string|max:500',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data',
@@ -151,9 +169,12 @@ return [
             'help' => 'Data e hora em que a atividade foi criada',
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'properties' => [
             'label' => 'Propriedades',
@@ -169,20 +190,27 @@ return [
                 'placeholder' => 'Valor atual',
                 'help' => 'Valor após a alteração',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'toggleColumns' => [
             'label' => 'Mostrar/Ocultar Colunas',
             'help' => 'Configurar visibilidade das colunas',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'reorderRecords' => [
             'label' => 'Reordenar Registros',
             'help' => 'Reordenar registros na tabela',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -198,6 +226,14 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'resetFilters' => [
+            'label' => 'Redefinir Filtros',
+        ],
+        'applyFilters' => [
+            'label' => 'Aplicar Filtros',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -351,19 +387,33 @@ return [
     'pagination' => [
         'per_page' => '25',
         'options' => [
+<<<<<<< HEAD
             0 => '10',
             1 => '25',
             2 => '50',
             3 => '100',
+=======
+            '0' => '10',
+            '1' => '25',
+            '2' => '50',
+            '3' => '100',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
+<<<<<<< HEAD
             0 => 'activities',
             1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+            '0' => 'activities',
+            '1' => 'monitoring',
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

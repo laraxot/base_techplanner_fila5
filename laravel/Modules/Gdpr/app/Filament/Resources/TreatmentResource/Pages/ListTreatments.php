@@ -19,6 +19,7 @@ class ListTreatments extends XotBaseListRecords
         return [
             // Tables\Columns\IDColumn::make('id')
             //     ->searchable(),
+<<<<<<< HEAD
             'active' => IconColumn::make('active')->boolean(),
             'required' => IconColumn::make('required')->boolean(),
             'name' => TextColumn::make('name')->searchable(),
@@ -30,6 +31,19 @@ class ListTreatments extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => TextColumn::make('updated_at')
+=======
+            IconColumn::make('active')->boolean(),
+            IconColumn::make('required')->boolean(),
+            TextColumn::make('name')->searchable(),
+            TextColumn::make('documentVersion')->searchable(),
+            TextColumn::make('documentUrl')->searchable(),
+            TextColumn::make('weight')->numeric()->sortable(),
+            TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            TextColumn::make('updated_at')
+>>>>>>> 6ed19256f (.)
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),

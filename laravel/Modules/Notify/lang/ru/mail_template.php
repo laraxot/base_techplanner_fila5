@@ -17,78 +17,175 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Уникальный идентификатор шаблона',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'mailable' => [
             'label' => 'Класс Mailable',
             'placeholder' => 'Введите имя класса Mailable',
             'help' => 'PHP класс, который обрабатывает отправку email',
             'helper_text' => 'PHP класс, управляющий отправкой email',
             'description' => 'mailable',
+<<<<<<< .merge_file_1kSbtk
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'subject' => [
             'label' => 'Тема',
             'placeholder' => 'Введите тему письма',
             'help' => 'Тема, которая появится в письме',
             'helper_text' => 'Тема письма',
             'description' => 'subject',
+<<<<<<< .merge_file_1kSbtk
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'html_template' => [
             'label' => 'HTML содержимое',
             'placeholder' => 'Введите HTML содержимое письма',
             'help' => 'Содержимое письма в формате HTML',
             'helper_text' => 'HTML содержимое email шаблона',
             'description' => 'html_template',
+<<<<<<< .merge_file_1kSbtk
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'text_template' => [
             'label' => 'Текстовое содержимое',
             'placeholder' => 'Введите текстовое содержимое письма',
             'help' => 'Текстовая версия письма для клиентов, не поддерживающих HTML',
             'helper_text' => 'Текстовая версия email шаблона',
             'description' => 'text_template',
+<<<<<<< .merge_file_1kSbtk
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'version' => [
             'label' => 'Версия',
             'help' => 'Номер версии шаблона',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'created_at' => [
             'label' => 'Создано',
             'helper_text' => 'Дата создания шаблона',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'updated_at' => [
             'label' => 'Последнее изменение',
             'helper_text' => 'Дата последнего изменения шаблона',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'from_email' => [
             'label' => 'Email отправителя',
             'helper_text' => 'Адрес электронной почты отправителя',
             'placeholder' => 'noreply@example.com',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'from_name' => [
             'label' => 'Имя отправителя',
             'helper_text' => 'Отображаемое имя отправителя',
             'placeholder' => 'Название компании',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'variables' => [
             'label' => 'Доступные переменные',
             'helper_text' => 'Список переменных, которые можно использовать в шаблоне',
             'placeholder' => 'напр: {{name}}, {{email}}',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'is_markdown' => [
             'label' => 'Использовать Markdown',
             'helper_text' => 'Указывает, использует ли шаблон синтаксис Markdown',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'status' => [
             'label' => 'Статус',
             'helper_text' => 'Текущий статус шаблона',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => ''],
         'toggleColumns' => [
@@ -120,25 +217,75 @@ return [
             'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_1kSbtk
             'description' => ''],
+=======
+            'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'layout' => [
+            'label' => 'layout',
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
+<<<<<<< .merge_file_1kSbtk
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'name' => [
             'description' => 'Название шаблона',
             'helper_text' => 'Описательное имя для идентификации шаблона',
             'placeholder' => 'Напр: Добро пожаловать, Подтверждение заказа, Сброс пароля',
             'label' => 'Название шаблона',
+<<<<<<< .merge_file_1kSbtk
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f6CFWd
         'params' => [
             'label' => 'Параметры',
             'helper_text' => 'Введите параметры, разделенные запятыми, которые можно использовать в шаблоне',
             'placeholder' => 'name, email, date, company',
             'description' => 'Доступные параметры для email шаблона',
+<<<<<<< .merge_file_1kSbtk
             'tooltip' => '']],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_f6CFWd
     'filters' => [
         'search_placeholder' => 'Поиск шаблонов...',
         'version' => [
@@ -239,6 +386,17 @@ return [
         'bounced' => 'Возвращено',
         'spam' => 'Помечено как спам'],
     'model' => [
+<<<<<<< .merge_file_1kSbtk
         'label' => 'email шаблон'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+        'label' => 'email шаблон',
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_f6CFWd

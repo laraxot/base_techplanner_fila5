@@ -28,6 +28,7 @@ use Webmozart\Assert\Assert;
 class Footer extends XotBasePage
 {
     /**
+<<<<<<< HEAD
      * Dati dominio footer (tenant config), separati dallo stato form Livewire.
      */
     public ?FooterData $footerData = null;
@@ -35,6 +36,12 @@ class Footer extends XotBasePage
     /**
      * @var array<string, mixed>
      */
+=======
+     * @var FooterData|null the form data
+     */
+    public ?FooterData $footerData = null;
+
+>>>>>>> 6ed19256f (.)
     public array $data = [];
 
     protected string $view = 'cms::filament.clusters.appearance.pages.headernav';

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 type: note
 tags: [documentation]
@@ -12,6 +13,7 @@ status: production
 last_updated: 2026-07-28
 ---
 
+<<<<<<< .merge_file_CPx8Fa
 # Tenant Module Troubleshooting Guide
 
 **Last updated: 2026-07-28**
@@ -492,3 +494,9 @@ php artisan migrate --database=tenant_123
 ---
 
 Navigation: [Documentation Index](index.md) | [README](README.md) | [Patterns](patterns.md)
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_4Q5wHM

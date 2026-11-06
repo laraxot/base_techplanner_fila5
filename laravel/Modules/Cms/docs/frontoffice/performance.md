@@ -168,6 +168,7 @@ return [
 
 ## Collegamenti tra versioni di performance.md
 * [performance.md](laravel/vendor/spatie/laravel-data/docs/advanced-usage/performance.md)
+<<<<<<< HEAD
 * [performance.md](laravel/modules/xot/docs/features/performance.md)
 * [performance.md](laravel/modules/xot/docs/packages/performance.md)
 * [performance.md](laravel/modules/xot/docs/roadmap/architecture/performance.md)
@@ -175,3 +176,19 @@ return [
 * [performance.md](../../../Lang/docs/packages/performance.md)
 * [performance.md](../../../Job/docs/packages/performance.md)
 * [performance.md](laravel/modules/cms/docs/frontoffice/performance.md)
+<<<<<<< .merge_file_tM2MBV
+=======
+=======
+>>>>>>> 6ed19256f (.)
+* [performance.md](laravel/Modules/Xot/docs/features/performance.md)
+* [performance.md](laravel/Modules/Xot/docs/packages/performance.md)
+* [performance.md](laravel/Modules/Xot/docs/roadmap/architecture/performance.md)
+* [performance.md](laravel/Modules/UI/docs/standards/performance.md)
+* [performance.md](laravel/Modules/Lang/docs/packages/performance.md)
+* [performance.md](laravel/Modules/Job/docs/packages/performance.md)
+<<<<<<< HEAD
+* [performance.md](laravel/Modules/Cms/docs/frontoffice/performance.md)
+=======
+* [performance.md](laravel/Modules/Cms/docs/frontoffice/performance.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LSVfWI

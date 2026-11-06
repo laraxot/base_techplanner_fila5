@@ -20,14 +20,30 @@ return [
             'label' => 'Titolo',
             'helper_text' => 'Titolo della notifica',
             'placeholder' => 'Inserisci il titolo',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_3VfAzz
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'message' => [
             'label' => 'Messaggio',
             'helper_text' => 'Contenuto della notifica',
             'placeholder' => 'Inserisci il messaggio',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_3VfAzz
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'type' => [
             'label' => 'Tipo',
             'helper_text' => 'Tipologia di notifica',
@@ -38,9 +54,20 @@ return [
                 'info' => 'Informazione',
                 'success' => 'Successo',
                 'warning' => 'Attenzione',
+<<<<<<< .merge_file_3VfAzz
                 'error' => 'Errore'],
             'tooltip' => '',
             'description' => ''],
+=======
+                'error' => 'Errore',
+            ],
+<<<<<<< HEAD
+            'tooltip' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'status' => [
             'label' => 'Stato',
             'helper_text' => 'Stato corrente della notifica',
@@ -48,30 +75,73 @@ return [
             'options' => [
                 'unread' => 'Non letta',
                 'read' => 'Letta',
+<<<<<<< .merge_file_3VfAzz
                 'archived' => 'Archiviata'],
             'tooltip' => '',
             'description' => ''],
+=======
+                'archived' => 'Archiviata',
+            ],
+<<<<<<< HEAD
+            'tooltip' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'recipient' => [
             'label' => 'Destinatario',
             'helper_text' => 'Utente destinatario della notifica',
             'placeholder' => 'Seleziona il destinatario',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_3VfAzz
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'sent_at' => [
             'label' => 'Inviata il',
             'helper_text' => 'Data e ora di invio della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_3VfAzz
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'read_at' => [
             'label' => 'Letta il',
             'helper_text' => 'Data e ora di lettura della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_3VfAzz
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'archived_at' => [
             'label' => 'Archiviata il',
             'helper_text' => 'Data e ora di archiviazione della notifica',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_3VfAzz
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'channel' => [
             'label' => 'Canale',
             'tooltip' => 'Canale di invio della notifica',
@@ -89,8 +159,19 @@ return [
                     'tooltip' => 'Invia come notifica push'],
                 'telegram' => [
                     'label' => 'Telegram',
+<<<<<<< .merge_file_3VfAzz
                     'tooltip' => 'Invia tramite Telegram']],
             'description' => ''],
+=======
+                    'tooltip' => 'Invia tramite Telegram',
+                ],
+            ],
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'template' => [
             'label' => 'Template',
             'tooltip' => 'Template da utilizzare per la notifica',
@@ -108,8 +189,19 @@ return [
                 'variables' => [
                     'label' => 'Variabili disponibili',
                     'tooltip' => 'Variabili che possono essere utilizzate nel template',
+<<<<<<< .merge_file_3VfAzz
                     'helper_text' => 'Usa {variable} per inserire valori dinamici']],
             'description' => ''],
+=======
+                    'helper_text' => 'Usa {variable} per inserire valori dinamici',
+                ],
+            ],
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_I2iqIS
         'schedule' => [
             'label' => 'Programmazione',
             'tooltip' => 'Quando inviare la notifica',
@@ -129,13 +221,33 @@ return [
                 'time' => [
                     'label' => 'Ora',
                     'tooltip' => 'Ora di invio programmato',
+<<<<<<< .merge_file_3VfAzz
                     'placeholder' => 'es: 14:30']],
             'description' => ''],
+=======
+                    'placeholder' => 'es: 14:30',
+                ],
+            ],
+<<<<<<< HEAD
+            'description' => '',
+        ],
+>>>>>>> .merge_file_I2iqIS
         'applyFilters' => [
             'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_3VfAzz
             'description' => '']],
+=======
+            'description' => '',
+=======
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_I2iqIS
     'actions' => [
         'mark_as_read' => [
             'label' => 'Segna come letta',
@@ -182,6 +294,17 @@ return [
         'delete_confirmation' => 'Sei sicuro di voler eliminare questa notifica?',
         'batch_action_confirmation' => 'Sei sicuro di voler eseguire questa azione su tutte le notifiche selezionate?',
         'success' => 'Operazione completata con successo',
+<<<<<<< .merge_file_3VfAzz
         'error' => 'Si è verificato un errore durante l\'operazione'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+        'error' => 'Si è verificato un errore durante l\'operazione',
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_I2iqIS

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "sushi to json"
 type: note
@@ -13,4 +14,12 @@ canonical: ../../../../Themes/docs/shared-components/.gitkeep-Modules
 status: stub
 ---
 
+<<<<<<< .merge_file_HtcPvU
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep-Modules
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+=======
+
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Zaa0No

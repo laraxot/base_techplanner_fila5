@@ -50,22 +50,11 @@ Il `RouteServiceProvider` gestisce:
 ## Collegamenti Bidirezionali
 - [Documentazione Generale dei Moduli](/docs/modules.md)
 - [Configurazione Job](/docs/module_job.md)
-<<<<<<< HEAD
 - [Best Practices PHPStan](/docs/phpstan/phpstan_level10_linee_guida.md)
 
 # Analisi Dettagliata del Modulo Job
 
 Data: [DATE] 19:09:55
-<<<<<<< .merge_file_N4MtHb
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Best Practices PHPStan](/docs/phpstan/PHPSTAN_LEVEL10_LINEE_GUIDA.md)
-
-# Analisi Dettagliata del Modulo Job
-
-Data: 2025-04-23 19:09:55
->>>>>>> .merge_file_RuBVpW
 
 ## Informazioni generali
 
@@ -73,11 +62,7 @@ Data: 2025-04-23 19:09:55
 - **Namespaces secondari**:
   - Modules\\Job\\Database\\Factories
   - Modules\\Job\\Database\\Seeders
-<<<<<<< HEAD
 - **Pacchetto Composer**: laraxot/module_job_fila5
-=======
-- **Pacchetto Composer**: laraxot/module_job_fila3
->>>>>>> 6ed19256f (.)
 - **Autore**: Marco Sottana
 - **Dipendenze**:
   - repositories_comment
@@ -159,7 +144,6 @@ namespace Modules\Job\App\Filament\Resources;
 
 - [Analisi strutturale complessiva](/docs/phpstan/modules_structure_analysis.md)
 - [Report PHPStan](/docs/phpstan/)
-<<<<<<< HEAD
 - [Documentazione Xot](laravel/modules/xot/docs/readme.md)
 - [Documentazione UI](laravel/modules/ui/docs/readme.md)
 - [Convenzioni dei Namespace](laravel/docs/module_namespace_rules.md)
@@ -179,52 +163,9 @@ namespace Modules\Job\App\Filament\Resources;
 * [structure.md](../../Tenant/docs/structure.md)
 * [structure.md](../../Activity/docs/structure.md)
 * [structure.md](../../../cms/docs/structure.md)
-<<<<<<< .merge_file_N4MtHb
 * [structure.md](../../Cms/docs/themes/structure.md)
 * [structure.md](../../Cms/docs/components/structure.md)
 
 ### Versione Incoming
 
 * [structure.md](../../Cms/docs/components/structure.md)
-=======
-* [structure.md](../../../cms/docs/themes/structure.md)
-* [structure.md](../../../cms/docs/components/structure.md)
-
-### Versione Incoming
-
-* [structure.md](../../../cms/docs/components/structure.md)
-- [Documentazione Xot](laravel/Modules/Xot/docs/README.md)
-- [Documentazione UI](laravel/Modules/UI/docs/README.md)
-- [Convenzioni dei Namespace](laravel/docs/MODULE_NAMESPACE_RULES.md)
-=======
-- [Documentazione Xot](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/Xot/docs/README.md)
-- [Documentazione UI](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/Modules/UI/docs/README.md)
-- [Convenzioni dei Namespace](/var/www/html/_bases/base_ptvx_fila3_mono/laravel/docs/MODULE_NAMESPACE_RULES.md)
->>>>>>> 6ed19256f (.)
-
-## Collegamenti tra versioni di structure.md
-* [structure.md](bashscripts/docs/structure.md)
-* [structure.md](../../../Gdpr/docs/structure.md)
-* [structure.md](../../../Notify/docs/structure.md)
-* [structure.md](../../../Xot/docs/structure.md)
-* [structure.md](../../../Xot/docs/base/structure.md)
-* [structure.md](../../../Xot/docs/config/structure.md)
-* [structure.md](../../../User/docs/structure.md)
-* [structure.md](../../../UI/docs/structure.md)
-* [structure.md](../../../Lang/docs/structure.md)
-* [structure.md](../../../Job/docs/structure.md)
-* [structure.md](../../../Media/docs/structure.md)
-* [structure.md](../../../Tenant/docs/structure.md)
-* [structure.md](../../../Activity/docs/structure.md)
-* [structure.md](../../../Cms/docs/structure.md)
-* [structure.md](../../../Cms/docs/themes/structure.md)
-* [structure.md](../../../Cms/docs/components/structure.md)
-
-### Versione Incoming
-
-<<<<<<< HEAD
-* [structure.md](../../../Cms/docs/components/structure.md)
-=======
-* [structure.md](../../../Cms/docs/components/structure.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_RuBVpW

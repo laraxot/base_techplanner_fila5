@@ -23,27 +23,7 @@ related:
 sources: []
 ---
 
-<<<<<<< .merge_file_0sBfzp
 # Job
-=======
-<div align="center">
-  <strong>⚡ Job - Il SISTEMA di CODE più POTENTE! 🚀</strong>
-  <br>
-  <em>Costruito con ❤️ per la comunità Laravel</em>
-</div>
-<<<<<<< HEAD
-# ⚙️ Job
-
-[![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
-[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
-[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
-[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
->>>>>>> .merge_file_D2BpfW
 
 Gestione dei lavori asincroni: monitor delle code Laravel e scheduler di task
 persistiti su database, con UI Filament.
@@ -106,10 +86,4 @@ di merge (story [02.Job-merge-conflict-resolution](./docs/stories/02.Job-merge-c
   73/100 grado C); ridotta la nidificazione in `GetTaskCommandsAction`; QA gate superato.
 - 2026-10-07: risolti i marker di conflitto committati in `e7e667b11` (questo file incluso).
 
-<<<<<<< .merge_file_0sBfzp
 **Modulo** `job` | **Laraxot** | PHPStan max | Filament 5
-=======
-**Modulo** `job` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_D2BpfW

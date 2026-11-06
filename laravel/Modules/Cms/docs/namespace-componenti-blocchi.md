@@ -124,4 +124,12 @@ Ecco l'elenco dei componenti blocchi comuni e i loro percorsi:
 2. **Namespace Coerenti**: Usare sempre `pub_theme::` come namespace e non il nome effettivo del tema
 3. **Estensioni Corrette**: Assicurarsi che i file abbiano l'estensione `.blade.php`
 4. **Proprietà Props**: Definire chiaramente le props accettate dal componente usando la direttiva `@props`
+<<<<<<< .merge_file_fJ4Fxk
 5. **Documentazione**: Documentare il comportamento e l'uso di ogni componente 
+=======
+5. **Documentazione**: Documentare il comportamento e l'uso di ogni componente
+<<<<<<< HEAD
+5. **Documentazione**: Documentare il comportamento e l'uso di ogni componente 
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_nTKMVu

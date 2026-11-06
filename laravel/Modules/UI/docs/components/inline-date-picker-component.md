@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "inline date picker component"
 type: note
@@ -14,3 +15,9 @@ status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_j2gyYt
+=======
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OFoK0x

@@ -14,7 +14,11 @@ status: draft
 
 ## Overview
 
+<<<<<<< HEAD
 This module follows the project's [testing guidelines](../../docs/TESTING.md) and uses Pest PHP as the testing framework.
+=======
+This module follows the project's [testing guidelines](../docs/TESTING.md) and uses Pest PHP as the testing framework.
+>>>>>>> 6ed19256f (.)
 
 ## Test Structure
 
@@ -61,12 +65,20 @@ Authentication tests are located in `tests/Feature/Auth/`. These tests cover:
 ```php
 test('users can login with valid credentials', function () {
     $user = User::factory()->create();
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $response = $this->post('/login', [
         'email' => $user->email,
         'password' => 'password',
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     $response->assertRedirect('/dashboard');
     $this->assertAuthenticatedAs($user);
 });
@@ -84,7 +96,83 @@ Run a specific test file:
 ./vendor/bin/pest Modules/Cms/tests/Feature/Auth/AuthenticationTest.php
 ```
 
+<<<<<<< .merge_file_nLg4XK
 ## Unit model business logic (PHPStan)
+=======
+## Best Practices
+
+1. **Use Factories**: Always use factories to create test data
+2. **Test Edge Cases**: Include tests for validation errors and edge cases
+3. **Keep Tests Focused**: Each test should verify one specific behavior
+4. **Use Descriptive Names**: Test names should clearly indicate what's being tested
+<<<<<<< HEAD
+# Testing Documentation
+
+## Overview
+
+This document provides testing guidelines and examples for the Cms module in Laraxot.
+
+## Test Structure
+
+### Directory Structure
+
+```
+Modules/Cms/tests/
+├── Feature/
+│   ├── (feature tests)
+├── Unit/
+│   └── (unit tests)
+├── TestCase.php
+└── Pest.php
+```
+
+### Test Files
+
+- **TestCase.php** - Base test case with database configuration
+- **Pest.php** - Pest configuration and extensions
+- **Feature/** - Feature tests for Cms functionality
+- **Unit/** - Unit tests for Cms components
+
+## Testing Configuration
+
+### TestCase Configuration
+
+The Cms TestCase extends the base testing configuration and provides:
+- Database connection setup
+- Module-specific configuration
+- Test environment setup
+
+### Database Configuration
+
+Cms module uses the following database connections:
+- `cms` - Main Cms module connection
+- `mysql` - Default connection
+- All connections configured to use test database
+
+## Testing Best Practices
+
+### 1. Database Transactions
+
+Use database transactions for test isolation:
+
+```php
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+```
+
+### 2. Test Isolation
+
+Each test should be independent:
+
+```php
+protected function tearDown(): void
+{
+    parent::tearDown();
+    // Clean up test data
+}
+```
+
+### 3. Module Configuration
+>>>>>>> .merge_file_KRugD4
 
 I test in `tests/Unit/Models/*BusinessLogicTest.php` sono classi PHPUnit pure (`TestCase` + `PHPUnit\Framework\Assert`): verificano solo API pubbliche del model (fillable, translatable, `getCasts()`, query builder) e non usano Pest `expect()` per evitare errori PHPStan sulle higher-order expectation. I flussi con factory/DB restano nei test Feature.
 
@@ -103,7 +191,13 @@ Regola assoluta: [phpstan test mai escludere](../../Notify/docs/regole-critiche/
 
 ## Best Practices
 
+<<<<<<< .merge_file_nLg4XK
 1. **Use Factories**: Always use factories to create test data
 2. **Test Edge Cases**: Include tests for validation errors and edge cases
 3. **Keep Tests Focused**: Each test should verify one specific behavior
 4. **Use Descriptive Names**: Test names should clearly indicate what's being tested
+=======
+*Last updated: January 2025*
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_KRugD4

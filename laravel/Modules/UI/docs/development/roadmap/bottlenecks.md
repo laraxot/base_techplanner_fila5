@@ -226,6 +226,7 @@ status: draft
 - Automazione test visivi
 - Documentazione aggiornata
 ## Collegamenti tra versioni di bottlenecks.md
+<<<<<<< HEAD
 * [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
@@ -236,3 +237,22 @@ status: draft
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/docs/roadmap/bottlenecks.md)
+<<<<<<< .merge_file_vPcd96
+=======
+=======
+>>>>>>> 6ed19256f (.)
+* [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/docs/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Xot/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../User/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../UI/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Job/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)
+<<<<<<< HEAD
+* [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
+=======
+* [bottlenecks.md](../../../Patient/docs/roadmap/bottlenecks.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OiLTTb

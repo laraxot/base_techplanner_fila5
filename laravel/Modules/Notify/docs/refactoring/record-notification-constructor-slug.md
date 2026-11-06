@@ -12,7 +12,16 @@ status: draft
 
 # Refactoring RecordNotification Constructor - Slug Pattern
 
+<<<<<<< .merge_file_vy9N9k
+=======
+<<<<<<< HEAD
+**Data**: 19 Dicembre 2025  
+>>>>>>> .merge_file_THs97v
 **Stato**: ✅ Implementato  
+=======
+**Data**: 19 Dicembre 2025
+**Stato**: ✅ Implementato
+>>>>>>> 6ed19256f (.)
 **Motivazione**: Lazy Resolution, Consistency, DRY + KISS
 
 ## 🎯 Problema Identificato
@@ -249,7 +258,14 @@ $notification = new RecordNotification($record, 'welcome');
 
 ## 🔗 Riferimenti
 
+<<<<<<< .merge_file_vy9N9k
+=======
+- [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md) - Filosofia Zen per costruttore
+<<<<<<< HEAD
+>>>>>>> .merge_file_THs97v
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen per costruttore
+=======
+>>>>>>> 6ed19256f (.)
 - [RecordNotification Zen Delegation](./record-notification-zen-delegation.md) - **✅ Pattern attuale**: Delega completa a SpatieEmail
 - [record-notification.md](../notifications/record-notification.md) - Documentazione completa RecordNotification
 - [send-record-notification-action.md](../actions/send-record-notification-action.md) - Documentazione SendRecordNotificationAction
@@ -262,5 +278,16 @@ $notification = new RecordNotification($record, 'welcome');
 Il pattern attuale di `RecordNotification` è **Zen Delegation**: invece di risolvere `MailTemplate` internamente (lazy resolution), `RecordNotification` delega completamente a `SpatieEmail` che gestisce tutta la logica di template resolution, placeholder replacement e layout application. Questo elimina qualsiasi duplicazione e segue il principio DRY in modo assoluto.
 
 ---
+<<<<<<< .merge_file_vy9N9k
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Intent over implementation, lazy over eager, simple over complex"*
+=======
+
+<<<<<<< HEAD
+**Ultimo aggiornamento**: 19 Dicembre 2025  
+**Filosofia**: *"Intent over implementation, lazy over eager, simple over complex"*
+=======
+**Ultimo aggiornamento**: 19 Dicembre 2025
+**Filosofia**: *"Intent over implementation, lazy over eager, simple over complex"*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_THs97v

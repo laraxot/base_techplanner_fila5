@@ -13,6 +13,7 @@ class ActivityDatabaseSeeder extends Seeder
 {
     public function run(): void
     {
+<<<<<<< .merge_file_8XkZ9A
         if ($this->command !== null) {
 
             $this->command->info('ActivityDatabaseSeeder: entity seeders…');
@@ -30,5 +31,12 @@ class ActivityDatabaseSeeder extends Seeder
             $this->command->info('ActivityDatabaseSeeder: completato.');
 
         }
+=======
+        Model::unguard();
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Llan45
     }
 }

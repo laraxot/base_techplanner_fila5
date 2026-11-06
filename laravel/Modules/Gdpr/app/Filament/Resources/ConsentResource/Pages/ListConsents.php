@@ -16,7 +16,12 @@ class ListConsents extends XotBaseListRecords
     public function getTableColumns(): array
     {
         return [
+<<<<<<< .merge_file_ZicQBL
             'id' => IDColumn::make('id')->searchable(),
+=======
+<<<<<<< HEAD
+            'id' => TextColumn::make('id')->searchable(),
+>>>>>>> .merge_file_fgdYWN
             TextColumn::make('treatment.name')->searchable(),
             'subject_id' => TextColumn::make('subject_id')->searchable(),
             'created_at' => TextColumn::make('created_at')
@@ -24,6 +29,16 @@ class ListConsents extends XotBaseListRecords
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
             'updated_at' => TextColumn::make('updated_at')
+=======
+            TextColumn::make('id')->searchable(),
+            TextColumn::make('treatment.name')->searchable(),
+            TextColumn::make('subject_id')->searchable(),
+            TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            TextColumn::make('updated_at')
+>>>>>>> 6ed19256f (.)
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),

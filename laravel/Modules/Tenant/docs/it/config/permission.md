@@ -181,11 +181,27 @@ return [
 
 ];
 ## Collegamenti tra versioni di permission.md
+<<<<<<< .merge_file_YEM9y8
+=======
+* [permission.md](../../../Xot/docs/install/permission.md)
+* [permission.md](../../../Tenant/docs/it/config/permission.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_63x8O6
 * [permission.md](../../../xot/docs/install/permission.md)
 * [permission.md](../../../tenant/docs/it/config/permission.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ];
 
+<<<<<<< .merge_file_YEM9y8
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_63x8O6

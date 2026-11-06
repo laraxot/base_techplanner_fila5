@@ -17,78 +17,175 @@ return [
         'id' => [
             'label' => 'आईडी',
             'helper_text' => 'टेम्पलेट की विशिष्ट पहचान',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'mailable' => [
             'label' => 'मेलेबल क्लास',
             'placeholder' => 'मेलेबल क्लास का नाम दर्ज करें',
             'help' => 'ईमेल भेजने वाला PHP क्लास',
             'helper_text' => 'ईमेल भेजने का PHP क्लास',
             'description' => 'मेलेबल',
+<<<<<<< .merge_file_e2Wql1
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'subject' => [
             'label' => 'विषय',
             'placeholder' => 'ईमेल विषय दर्ज करें',
             'help' => 'ईमेल में दिखाई देने वाला विषय',
             'helper_text' => 'ईमेल विषय',
             'description' => 'विषय',
+<<<<<<< .merge_file_e2Wql1
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'html_template' => [
             'label' => 'HTML सामग्री',
             'placeholder' => 'ईमेल HTML सामग्री दर्ज करें',
             'help' => 'HTML प्रारूप में ईमेल सामग्री',
             'helper_text' => 'ईमेल टेम्पलेट की HTML सामग्री',
             'description' => 'HTML टेम्पलेट',
+<<<<<<< .merge_file_e2Wql1
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'text_template' => [
             'label' => 'पाठ सामग्री',
             'placeholder' => 'ईमेल पाठ सामग्री दर्ज करें',
             'help' => 'HTML का समर्थन नहीं करने वाले क्लाइंट्स के लिए पाठ संस्करण',
             'helper_text' => 'ईमेल टेम्पलेट का पाठ संस्करण',
             'description' => 'पाठ टेम्पलेट',
+<<<<<<< .merge_file_e2Wql1
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'version' => [
             'label' => 'संस्करण',
             'help' => 'टेम्पलेट संस्करण संख्या',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'created_at' => [
             'label' => 'बनाया गया',
             'helper_text' => 'टेम्पलेट बनाने की तारीख',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'updated_at' => [
             'label' => 'अंतिम संशोधन',
             'helper_text' => 'टेम्पलेट अंतिम संशोधन की तारीख',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'from_email' => [
             'label' => 'प्रेषक ईमेल',
             'helper_text' => 'प्रेषक का ईमेल पता',
             'placeholder' => 'noreply@example.com',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'from_name' => [
             'label' => 'प्रेषक का नाम',
             'helper_text' => 'प्रदर्शित प्रेषक का नाम',
             'placeholder' => 'कंपनी का नाम',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'variables' => [
             'label' => 'उपलब्ध चर',
             'helper_text' => 'टेम्पलेट में उपयोग किए जा सकने वाले चरों की सूची',
             'placeholder' => 'उदा: {{name}}, {{email}}',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'is_markdown' => [
             'label' => 'मार्कडाउन उपयोग करें',
             'helper_text' => 'बताता है कि क्या टेम्पलेट मार्कडाउन वाक्य रचना का उपयोग करता है',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'status' => [
             'label' => 'स्थिति',
             'helper_text' => 'टेम्पलेट की वर्तमान स्थिति',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => ''],
         'toggleColumns' => [
@@ -120,25 +217,75 @@ return [
             'label' => 'लेआउट',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_e2Wql1
             'description' => ''],
+=======
+            'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'कॉलम टॉगल करें',
+        ],
+        'reorderRecords' => [
+            'label' => 'रिकॉर्ड पुनः क्रमित करें',
+        ],
+        'resetFilters' => [
+            'label' => 'फ़िल्टर रीसेट करें',
+        ],
+        'applyFilters' => [
+            'label' => 'फ़िल्टर लागू करें',
+        ],
+        'openFilters' => [
+            'label' => 'फ़िल्टर खोलें',
+        ],
+        'layout' => [
+            'label' => 'लेआउट',
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'slug' => [
             'label' => 'स्लग',
             'description' => 'स्लग',
             'helper_text' => 'स्लग',
             'placeholder' => 'स्लग',
+<<<<<<< .merge_file_e2Wql1
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'name' => [
             'description' => 'टेम्पलेट का नाम',
             'helper_text' => 'टेम्पलेट को पहचानने के लिए वर्णनात्मक नाम',
             'placeholder' => 'उदा: स्वागत, आदेश पुष्टि, पासवर्ड रीसेट',
             'label' => 'टेम्पलेट का नाम',
+<<<<<<< .merge_file_e2Wql1
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_XqNX4N
         'params' => [
             'label' => 'पैरामीटर्स',
             'helper_text' => 'टेम्पलेट में उपयोग किए जा सकने वाले पैरामीटर अल्पविराम से अलग करके दर्ज करें',
             'placeholder' => 'name, email, date, company',
             'description' => 'ईमेल टेम्पलेट के लिए उपलब्ध पैरामीटर्स',
+<<<<<<< .merge_file_e2Wql1
             'tooltip' => '']],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_XqNX4N
     'filters' => [
         'search_placeholder' => 'टेम्पलेट्स खोजें...',
         'version' => [
@@ -239,6 +386,17 @@ return [
         'bounced' => 'वापस आया',
         'spam' => 'स्पैम के रूप में चिह्नित'],
     'model' => [
+<<<<<<< .merge_file_e2Wql1
         'label' => 'ईमेल टेम्पलेट'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+        'label' => 'ईमेल टेम्पलेट',
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_XqNX4N

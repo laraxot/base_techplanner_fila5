@@ -2,8 +2,14 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_R9dNXQ
 namespace Modules\Notify\Tests\Feature;
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_LEOOkm
 
+=======
+>>>>>>> 6ed19256f (.)
 use Filament\Facades\Filament;
 use Filament\Panel;
 use Illuminate\Contracts\Auth\Authenticatable;

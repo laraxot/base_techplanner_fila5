@@ -7,6 +7,10 @@ namespace Modules\Tenant\Actions\Config;
 use Illuminate\Support\Facades\File;
 use Spatie\QueueableAction\QueueableAction;
 use Throwable;
+<<<<<<< HEAD
+=======
+use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
+>>>>>>> 6ed19256f (.)
 
 class GetTenantConfigArrayAction
 {

@@ -20,9 +20,12 @@ return [
     'fields' => [
         'device_token' => [
             'label' => 'Token Dispositivo',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -31,6 +34,7 @@ return [
                 'data' => 'Dati',
                 'both' => 'Entrambi',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -48,13 +52,26 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+<<<<<<< .merge_file_sksAtq
             'placeholder' => 'body',
+=======
+=======
+        ],
+        'title' => [
+            'label' => 'Titolo',
+        ],
+        'body' => [
+            'label' => 'Contenuto',
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZuhVQy
         ],
         'data' => [
             'label' => 'Dati Aggiuntivi',
             'description' => 'Dati in formato JSON da inviare con la notifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_sksAtq
             'placeholder' => 'data',
         ],
         'deviceToken' => [
@@ -74,6 +91,10 @@ return [
             'placeholder' => 'value',
             'helper_text' => '',
             'description' => 'value',
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZuhVQy
         ],
     ],
     'actions' => [
@@ -161,12 +182,18 @@ return [
             'tooltip' => 'logout',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Send Push Notification',
     'plural_label' => 'Send Push Notification (Plurale)',
+<<<<<<< .merge_file_sksAtq
     'sections' => [
         'page' => [
             'title' => 'Test Invio Notifiche Push',
             'description' => 'Utilizza questo form per testare l\'invio di notifiche push ai dispositivi mobili tramite diversi servizi.',
         ],
     ],
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZuhVQy
 ];

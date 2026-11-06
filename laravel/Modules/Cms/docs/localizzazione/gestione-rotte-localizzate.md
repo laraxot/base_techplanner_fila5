@@ -169,3 +169,10 @@ Se la lingua non viene impostata correttamente, verificare:
 - [Documentazione Laravel Folio](https://laravel.com/docs/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Modulo Lang - Documentazione](../../../Lang/docs/working-with-locales.md)
+<<<<<<< .merge_file_d4pgvi
+=======
+<<<<<<< HEAD
+- [Modulo Lang - Documentazione](../../../lang/docs/working-with-locales.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZtjKQC

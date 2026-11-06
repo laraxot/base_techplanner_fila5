@@ -5,41 +5,130 @@ declare(strict_types=1);
 return [
     'navigation' => ['group' => 'Sistema', 'label' => 'Tema Notifica', 'icon' => 'notify-theme-animated', 'sort' => 50, 'description' => 'Gestione del tema per le notifiche'],
     'fields' => [
+<<<<<<< .merge_file_xXyhS6
         'name' => ['label' => 'Nome', 'tooltip' => 'Nome del tema', 'placeholder' => 'es: Tema Aziendale', 'help' => 'Inserisci un nome descrittivo per il tema', 'helper_text' => '', 'description' => ''],
         'description' => ['label' => 'Descrizione', 'tooltip' => 'Descrizione del tema', 'placeholder' => 'es: Tema standard per le comunicazioni aziendali', 'help' => 'Breve descrizione dello scopo del tema', 'helper_text' => '', 'description' => ''],
+=======
+        'name' => [
+            'label' => 'Nome',
+            'tooltip' => 'Nome del tema',
+            'placeholder' => 'es: Tema Aziendale',
+            'help' => 'Inserisci un nome descrittivo per il tema',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+            'tooltip' => 'Descrizione del tema',
+            'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
+            'help' => 'Breve descrizione dello scopo del tema',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_oHXesY
         'colors' => [
             'label' => 'Colori',
             'tooltip' => 'Schema colori del tema',
             'help' => 'Definisci i colori principali del tema',
             'options' => [
+<<<<<<< .merge_file_xXyhS6
                 'primary' => ['label' => 'Primario', 'tooltip' => 'Colore principale del tema', 'placeholder' => 'es: #4A90E2'],
                 'secondary' => ['label' => 'Secondario', 'tooltip' => 'Colore secondario del tema', 'placeholder' => 'es: #5C6AC4'],
                 'accent' => ['label' => 'Accento', 'tooltip' => 'Colore di accento per elementi in evidenza', 'placeholder' => 'es: #F5A623']],
             'helper_text' => '',
             'description' => ''],
+=======
+                'primary' => [
+                    'label' => 'Primario',
+                    'tooltip' => 'Colore principale del tema',
+                    'placeholder' => 'es: #4A90E2',
+                ],
+                'secondary' => [
+                    'label' => 'Secondario',
+                    'tooltip' => 'Colore secondario del tema',
+                    'placeholder' => 'es: #5C6AC4',
+                ],
+                'accent' => [
+                    'label' => 'Accento',
+                    'tooltip' => 'Colore di accento per elementi in evidenza',
+                    'placeholder' => 'es: #F5A623',
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_oHXesY
         'typography' => [
             'label' => 'Tipografia',
             'tooltip' => 'Impostazioni tipografiche',
             'help' => 'Configura i font e le dimensioni del testo',
             'options' => [
+<<<<<<< .merge_file_xXyhS6
                 'font_family' => ['label' => 'Font principale', 'tooltip' => 'Font utilizzato per il testo principale', 'placeholder' => 'es: Arial, sans-serif'],
                 'heading_font' => ['label' => 'Font titoli', 'tooltip' => 'Font utilizzato per i titoli', 'placeholder' => 'es: Helvetica, Arial, sans-serif']],
             'helper_text' => '',
             'description' => ''],
+=======
+                'font_family' => [
+                    'label' => 'Font principale',
+                    'tooltip' => 'Font utilizzato per il testo principale',
+                    'placeholder' => 'es: Arial, sans-serif',
+                ],
+                'heading_font' => [
+                    'label' => 'Font titoli',
+                    'tooltip' => 'Font utilizzato per i titoli',
+                    'placeholder' => 'es: Helvetica, Arial, sans-serif',
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_oHXesY
         'layout' => [
             'label' => 'Layout',
             'tooltip' => 'Impostazioni del layout',
             'help' => 'Configura la struttura del template',
             'options' => [
+<<<<<<< .merge_file_xXyhS6
                 'header' => ['label' => 'Intestazione', 'tooltip' => 'Stile dell\'intestazione'],
                 'footer' => ['label' => 'Piè di pagina', 'tooltip' => 'Stile del piè di pagina']],
             'helper_text' => '',
             'description' => ''],
+=======
+                'header' => [
+                    'label' => 'Intestazione',
+                    'tooltip' => 'Stile dell\'intestazione',
+                ],
+                'footer' => [
+                    'label' => 'Piè di pagina',
+                    'tooltip' => 'Stile del piè di pagina',
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_oHXesY
         'assets' => [
             'label' => 'Risorse',
             'tooltip' => 'Risorse del tema',
             'help' => 'Gestisci le risorse associate al tema',
             'options' => [
+<<<<<<< .merge_file_xXyhS6
                 'logo' => ['label' => 'Logo', 'tooltip' => 'Logo da utilizzare nelle notifiche'],
                 'background' => ['label' => 'Sfondo', 'tooltip' => 'Immagine di sfondo']],
             'helper_text' => '',
@@ -62,6 +151,44 @@ return [
         'id' => ['label' => 'id'],
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at']],
+=======
+                'logo' => [
+                    'label' => 'Logo',
+                    'tooltip' => 'Logo da utilizzare nelle notifiche',
+                ],
+                'background' => [
+                    'label' => 'Sfondo',
+                    'tooltip' => 'Immagine di sfondo',
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+        'is_default' => [
+            'label' => 'Predefinito',
+            'tooltip' => 'Imposta come tema predefinito',
+            'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+            'tooltip' => 'Stato di attivazione del tema',
+            'help' => 'Solo i temi attivi possono essere utilizzati',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_oHXesY
     'actions' => [
         'preview' => ['label' => 'Anteprima', 'tooltip' => 'Visualizza anteprima del tema', 'icon' => 'heroicon-o-eye', 'color' => 'primary'],
         'duplicate' => [
@@ -75,6 +202,7 @@ return [
             'tooltip' => 'Imposta questo tema come predefinito',
             'icon' => 'heroicon-o-star',
             'color' => 'primary',
+<<<<<<< .merge_file_xXyhS6
             'confirmation' => ['title' => 'Conferma impostazione predefinito', 'message' => 'Vuoi impostare questo tema come predefinito?', 'confirm' => 'Sì, imposta', 'cancel' => 'No, annulla']],
         'delete' => ['tooltip' => 'delete', 'label' => 'delete', 'icon' => 'delete'],
         'create' => ['label' => 'create', 'icon' => 'create', 'tooltip' => 'create'],
@@ -92,3 +220,54 @@ return [
     'model' => ['label' => 'Tema Notifica'],
     'label' => 'Notify Theme',
     'plural_label' => 'Notify Theme (Plurale)'];
+=======
+            'confirmation' => [
+                'title' => 'Conferma impostazione predefinito',
+                'message' => 'Vuoi impostare questo tema come predefinito?',
+                'confirm' => 'Sì, imposta',
+                'cancel' => 'No, annulla',
+            ],
+        ],
+<<<<<<< HEAD
+        'delete' => [
+            'tooltip' => 'delete',
+        ],
+=======
+>>>>>>> 6ed19256f (.)
+    ],
+    'messages' => [
+        'created' => [
+            'title' => 'Tema Creato',
+            'message' => 'Il tema è stato creato con successo',
+        ],
+        'updated' => [
+            'title' => 'Tema Aggiornato',
+            'message' => 'Il tema è stato aggiornato con successo',
+        ],
+        'deleted' => [
+            'title' => 'Tema Eliminato',
+            'message' => 'Il tema è stato eliminato con successo',
+        ],
+        'duplicated' => [
+            'title' => 'Tema Duplicato',
+            'message' => 'Il tema è stato duplicato con successo',
+        ],
+        'preview' => [
+            'title' => 'Anteprima Tema',
+            'message' => 'Questa è un\'anteprima di come apparirà il tema',
+        ],
+        'set_default' => [
+            'title' => 'Tema Predefinito',
+            'message' => 'Il tema è stato impostato come predefinito',
+        ],
+    ],
+    'model' => [
+        'label' => 'Tema Notifica',
+    ],
+<<<<<<< HEAD
+    'label' => 'Notify Theme',
+    'plural_label' => 'Notify Theme (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_oHXesY

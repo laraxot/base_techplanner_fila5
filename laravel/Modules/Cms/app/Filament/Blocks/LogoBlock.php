@@ -33,6 +33,14 @@ class LogoBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
+<<<<<<< .merge_file_dUTCZU
         return \trans_string('cms::blocks.logo.label') ?: 'Logo Block';
+=======
+<<<<<<< HEAD
+        return \trans_string('cms::blocks.logo.label');
+=======
+        return \trans_string('cms::blocks.logo.label') ?? 'Logo';
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_PEzclF
     }
 }

@@ -65,7 +65,10 @@ class BuildWeeklyTimeTableAction
             // Filtra entries per questo giorno
             $dayEntries = $entries->filter(fn ($entry) => $entry->timestamp->isSameDay($current));
 >>>>>>> 6ed19256f (.)
+<<<<<<< .merge_file_eMbVoK
 >>>>>>> .merge_file_2ge5Vl
+=======
+>>>>>>> .merge_file_6kHemr
 
             // Costruisci sessioni per questo giorno
             $sessions = $this->buildDaySessions($dayEntries);

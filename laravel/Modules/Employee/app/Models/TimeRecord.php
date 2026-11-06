@@ -9,8 +9,11 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeRecordFactory;
+<<<<<<< .merge_file_RDdcLZ
 <<<<<<< .merge_file_4spT9T
 =======
+=======
+>>>>>>> .merge_file_4Yml8h
 =======
 use Modules\Employee\Database\Factories\TimeRecordFactory;
 use Carbon\Carbon;
@@ -52,7 +55,10 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< .merge_file_RDdcLZ
 >>>>>>> .merge_file_BVS2fz
+=======
+>>>>>>> .merge_file_4Yml8h
  *
 =======
 >>>>>>> 6ed19256f (.)

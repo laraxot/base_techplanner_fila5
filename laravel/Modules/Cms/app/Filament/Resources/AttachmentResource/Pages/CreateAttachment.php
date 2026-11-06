@@ -10,12 +10,21 @@ use Modules\Lang\Filament\Resources\Pages\LangBaseCreateRecord;
 
 class CreateAttachment extends LangBaseCreateRecord
 {
+<<<<<<< HEAD
     public static string $resource = AttachmentResource::class;
 
     protected function mutateFormDataBeforeCreate(array $data): array
     {
         // Handle translatable attachment field for FileUpload in create mode
         if (isset($data['attachment']) && is_string($data['attachment']) && '' !== $data['attachment']) {
+=======
+    protected static string $resource = AttachmentResource::class;
+
+    protected function mutateFormDataBeforeSave(array $data): array
+    {
+        // Handle translatable attachment field for FileUpload in create mode
+        if (isset($data['attachment']) && is_string($data['attachment']) && ! empty($data['attachment'])) {
+>>>>>>> 6ed19256f (.)
             $currentLocale = app()->getLocale();
 
             // Generate UUID for the file
@@ -30,6 +39,11 @@ class CreateAttachment extends LangBaseCreateRecord
             ];
         }
 
+<<<<<<< HEAD
         return parent::mutateFormDataBeforeCreate($data);
+=======
+        /* @phpstan-ignore-next-line */
+        return parent::mutateFormDataBeforeSave($data);
+>>>>>>> 6ed19256f (.)
     }
 }

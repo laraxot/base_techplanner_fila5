@@ -33,7 +33,19 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< .merge_file_aSmR2k
  *
+=======
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+<<<<<<< HEAD
+ *
+=======
+>>>>>>> 6ed19256f (.)
+ * @method static Builder<static>|LegalOffice newModelQuery()
+ * @method static Builder<static>|LegalOffice newQuery()
+ * @method static Builder<static>|LegalOffice query()
+>>>>>>> .merge_file_ogfy1n
  * @method static Builder<static>|LegalOffice whereAddress($value)
  * @method static Builder<static>|LegalOffice whereCity($value)
  * @method static Builder<static>|LegalOffice whereClientId($value)
@@ -50,7 +62,16 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|LegalOffice whereProvince($value)
  * @method static Builder<static>|LegalOffice whereUpdatedAt($value)
  * @method static Builder<static>|LegalOffice whereUpdatedBy($value)
+<<<<<<< HEAD
  *
+<<<<<<< .merge_file_aSmR2k
+=======
+ * @property-read Profile|null $deleter
+ *
+=======
+ * @property-read Profile|null $deleter
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ogfy1n
  * @mixin \Eloquent
  */
 class LegalOffice extends BaseModel

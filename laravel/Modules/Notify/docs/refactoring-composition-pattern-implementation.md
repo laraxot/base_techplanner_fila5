@@ -12,9 +12,15 @@ status: draft
 
 # Refactoring Summary: SendRecordsNotificationBulkAction Implementation
 
+<<<<<<< HEAD
 **Date**: 18 Dicembre 2025  
 **Status**: ✅ Implementation Complete  
 **Module**: Notify  
+=======
+**Date**: 18 Dicembre 2025
+**Status**: ✅ Implementation Complete
+**Module**: Notify
+>>>>>>> 6ed19256f (.)
 **Architecture Pattern**: DRY + KISS + Composition
 
 ## Overview
@@ -28,7 +34,11 @@ This document summarizes the refactoring of the notification bulk action system 
 - Handled all notification sending logic internally
 - Violated DRY principle
 
+<<<<<<< HEAD
 ### After Refactoring  
+=======
+### After Refactoring
+>>>>>>> 6ed19256f (.)
 - `SendRecordsNotificationBulkAction` (plural) - handles orchestration for multiple records
 - `SendRecordNotificationAction` (singular) - handles single record notification logic
 - Proper composition pattern where bulk action delegates to single action
@@ -43,7 +53,11 @@ This document summarizes the refactoring of the notification bulk action system 
 - Maintains detailed error reporting per record-channel combination
 - Follows DRY principle by not duplicating single-record logic
 
+<<<<<<< HEAD
 ### SendRecordNotificationAction  
+=======
+### SendRecordNotificationAction
+>>>>>>> 6ed19256f (.)
 - Handles single record notification logic
 - Manages multiple channels for a single record
 - Centralized logic for contact extraction and normalization
@@ -56,7 +70,11 @@ This document summarizes the refactoring of the notification bulk action system 
 - Bulk action simply orchestrates the process
 - No code duplication between single and bulk operations
 
+<<<<<<< HEAD
 ### 2. **KISS Principle Compliance** 
+=======
+### 2. **KISS Principle Compliance**
+>>>>>>> 6ed19256f (.)
 - Each action has a single, clear responsibility
 - Simple composition pattern makes code easy to understand
 - Easy to modify single-record logic without touching bulk logic
@@ -73,10 +91,17 @@ This document summarizes the refactoring of the notification bulk action system 
 
 ## Code Quality Verification
 
+<<<<<<< HEAD
 ✅ **PHPStan Level 10**: All files pass static analysis  
 ✅ **Type Safety**: Proper return types and parameter validation  
 ✅ **Architecture Compliance**: Follows QueueableAction extension rules  
 ✅ **Documentation**: Updated with new implementation details  
+=======
+✅ **PHPStan Level 10**: All files pass static analysis
+✅ **Type Safety**: Proper return types and parameter validation
+✅ **Architecture Compliance**: Follows QueueableAction extension rules
+✅ **Documentation**: Updated with new implementation details
+>>>>>>> 6ed19256f (.)
 
 ## Files Updated
 
@@ -109,4 +134,13 @@ foreach ($records as $record) {
 - Ensure all similar bulk operations follow the same composition pattern
 
 ---
+<<<<<<< .merge_file_TpClvc
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+
+<<<<<<< HEAD
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_0juRbT

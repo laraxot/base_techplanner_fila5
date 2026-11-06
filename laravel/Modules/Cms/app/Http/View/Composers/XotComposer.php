@@ -21,11 +21,23 @@ final class XotComposer
     public function compose(View $view): void
     {
         $user = Auth::user();
+<<<<<<< HEAD
         if (! $user instanceof Authenticatable) {
             return;
         }
 
+<<<<<<< .merge_file_3KP153
         if (! $user instanceof User) {
+=======
+        if (! $user instanceof UserContract) {
+=======
+        if (! ($user instanceof Authenticatable)) {
+            return;
+        }
+
+        if (! ($user instanceof UserContract)) {
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tx9xev
             return;
         }
 

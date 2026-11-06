@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_UPnih4
 ---
 title: "cookie consent"
 type: note
@@ -12,6 +13,9 @@ status: stale
 
 > Nota 2026-10-14 (docs-audit): Superato da cookie-banner.md (DCP-153, 2026-10-14): non descrive il banner che gira. Il contenuto e' conservato come cronologia. Contenuto non riscritto, verificare prima di usarlo.
 
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_ktcOr7
 https://github.com/whitecube/laravel-cookie-consent
 
 https://devpeel.com/how-to-add-gdpr-cookie-consent-in-laravel/#google_vignette
@@ -21,6 +25,7 @@ https://codebrisk.com/blog/make-your-laravel-app-compliant-with-the-eu-gdpr-cook
 https://github.com/statikbe/laravel-cookie-consent
 
 https://github.com/scify/laravel-cookies-consent
+<<<<<<< .merge_file_UPnih4
 
 
 
@@ -28,3 +33,8 @@ https://github.com/scify/laravel-cookies-consent
 
 
 
+=======
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ktcOr7

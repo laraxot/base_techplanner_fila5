@@ -126,7 +126,10 @@ The `bashscripts/ai/ai_init.sh` script is a core utility designed to promote AI-
 ## 🔗 Links
 - [Xot Module](../../Xot/docs/README.md)
 >>>>>>> 6ed19256f (.)
+<<<<<<< .merge_file_ATsAU3
 <<<<<<< .merge_file_LGncdV
 >>>>>>> .merge_file_PKukJo
 =======
 >>>>>>> .merge_file_CfTVzb
+=======
+>>>>>>> .merge_file_x0g590

@@ -29,8 +29,13 @@ vendor/lara-zeus/spatie-translatable/src/Resources/Pages/ListRecords/Concerns/Tr
 
 ## Contesto
 
+<<<<<<< HEAD
 **URL**: `/notify/admin/mail-templates`  
 **Resource**: `Modules\Notify\Filament\Resources\MailTemplateResource`  
+=======
+**URL**: `/notify/admin/mail-templates`
+**Resource**: `Modules\Notify\Filament\Resources\MailTemplateResource`
+>>>>>>> 6ed19256f (.)
 **Page**: `Modules\Notify\Filament\Resources\MailTemplateResource\Pages\ListMailTemplates`
 
 ## Business Logic
@@ -38,7 +43,11 @@ vendor/lara-zeus/spatie-translatable/src/Resources/Pages/ListRecords/Concerns/Tr
 ### Struttura Ereditarietà
 
 ```
+<<<<<<< HEAD
 ListMailTemplates 
+=======
+ListMailTemplates
+>>>>>>> 6ed19256f (.)
   └─> LangBaseListRecords (Modules/Lang)
        └─> trait Translatable (lara-zeus/spatie-translatable)
             └─> LocaleSwitcher::make()
@@ -58,7 +67,11 @@ ListMailTemplates
    ```php
    // Modules/Lang/.../Pages/LangBaseListRecords.php
    use LaraZeus\SpatieTranslatable\Resources\Pages\ListRecords\Concerns\Translatable;
+<<<<<<< HEAD
    
+=======
+
+>>>>>>> 6ed19256f (.)
    abstract class LangBaseListRecords extends XotBaseListRecords
    {
        use Translatable;  // ← Richiede il plugin!
@@ -96,7 +109,11 @@ public function panel(Panel $panel): Panel
     // $panel->plugins([
     //     SpatieTranslatablePlugin::make(),
     // ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // ...
     return parent::panel($panel);
 }
@@ -120,7 +137,11 @@ public function panel(Panel $panel): Panel
         SpatieTranslatablePlugin::make()
             ->defaultLocales(['it', 'en']),
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Database notifications...
     if (! XotData::make()->disable_database_notifications) {
         DatabaseNotifications::trigger('notify::livewire.database-notifications-trigger');
@@ -218,7 +239,11 @@ use Spatie\Translatable\HasTranslations;
 class MailTemplate extends BaseModel
 {
     use HasTranslations;
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     /** @var list<string> */
     public array $translatable = ['subject', 'html_template', 'text_template'];
 }
@@ -312,7 +337,11 @@ public function panel(Panel $panel): Panel
         SpatieTranslatablePlugin::make()
             ->defaultLocales(['it', 'en']),
     ]);
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     if (! XotData::make()->disable_database_notifications) {
         // ...
     }
@@ -325,7 +354,11 @@ public function panel(Panel $panel): Panel
 
 ```bash
 # Dopo il fix
+<<<<<<< HEAD
 cd laravel
+=======
+cd /var/www/html/ptvx/laravel
+>>>>>>> 6ed19256f (.)
 php artisan optimize:clear
 php artisan cache:clear
 
@@ -351,9 +384,15 @@ public function panel(Panel $panel): Panel
             ->defaultLocales(config('app.available_locales', ['it', 'en']))
             ->persist(),  // Ricorda lingua selezionata
     ]);
+<<<<<<< HEAD
     
     // ... altre configurazioni ...
     
+=======
+
+    // ... altre configurazioni ...
+
+>>>>>>> 6ed19256f (.)
     return parent::panel($panel);
 }
 ```
@@ -374,13 +413,36 @@ Prima di usare `LangBase*`:
 - [Spatie Laravel Translatable](https://spatie.be/docs/laravel-translatable/v6/introduction)
 
 ### Documentazione Interna
+<<<<<<< HEAD
 - [Lang Module README](../../../lang/docs/readme.md)
 - [Lang Module README](../../../Lang/docs/readme.md)
 - [Filament Panel Configuration](../../../xot/docs/filament/panel-configuration.md)
 
 ---
+<<<<<<< .merge_file_jtiFWE
 **Status**: ⏳ ATTENDE DECISIONE  
 **Priority**: P1 (blocca funzionalità)  
 **Next Step**: Decidere se MailTemplate deve essere traducibile
 
 
+=======
+
+=======
+>>>>>>> 6ed19256f (.)
+- [Lang Module README](../../../Lang/docs/README.md)
+- [Filament Panel Configuration](../../../Xot/docs/filament/panel-configuration.md)
+
+---
+
+<<<<<<< HEAD
+**Created**: 27 Ottobre 2025  
+**Status**: ⏳ ATTENDE DECISIONE  
+**Priority**: P1 (blocca funzionalità)  
+**Next Step**: Decidere se MailTemplate deve essere traducibile
+=======
+**Created**: 27 Ottobre 2025
+**Status**: ⏳ ATTENDE DECISIONE
+**Priority**: P1 (blocca funzionalità)
+**Next Step**: Decidere se MailTemplate deve essere traducibile
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_101kSR

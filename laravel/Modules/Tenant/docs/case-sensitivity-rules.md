@@ -18,7 +18,14 @@ status: draft
 
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
+<<<<<<< .merge_file_V7qLxZ
+=======
+Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_6bHPJA
 Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## File/Directory Rimossi da Tenant Module
 
@@ -66,8 +73,21 @@ Laravel usa le convenzioni lowercase per directory:
 
 ## Update Log
 
+<<<<<<< .merge_file_V7qLxZ
 - **[2026-07-01]**: Rimossa `database/Factories_/` (copia stale); confermato solo `database/factories/`. Wiki: `docs/wiki/concepts/lowercase-database-factories-directory.md`
+=======
+- **2025-11-04**: Major cleanup
+<<<<<<< HEAD
+>>>>>>> .merge_file_6bHPJA
 - **[DATE]**: Major cleanup
   - Removed `database/Factories/` uppercase directory
   - Removed `Tests/` uppercase directory
   - Removed `domaintest.php` lowercase test file
+<<<<<<< .merge_file_V7qLxZ
+=======
+=======
+  - Removed `database/Factories/` uppercase directory
+  - Removed `Tests/` uppercase directory
+  - Removed `domaintest.php` lowercase test file
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_6bHPJA

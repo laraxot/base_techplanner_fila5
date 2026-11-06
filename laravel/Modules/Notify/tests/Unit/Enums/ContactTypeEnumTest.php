@@ -2,15 +2,29 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_Cel8y3
 namespace Modules\Notify\Tests\Unit\Enums;
+=======
+<<<<<<< HEAD
+=======
+namespace Modules\Notify\Tests\Unit\Enums;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_n2iIha
 
 use Filament\Forms\Components\TextInput;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Modules\Notify\Enums\ContactTypeEnum;
+<<<<<<< .merge_file_Cel8y3
 use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+=======
+<<<<<<< HEAD
+=======
+use ReflectionClass;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_n2iIha
 
 use function Safe\class_implements;
 
@@ -34,7 +48,14 @@ it('implements filament contracts', function (): void {
 });
 
 it('has trans trait', function (): void {
+<<<<<<< .merge_file_Cel8y3
     $reflection = new \ReflectionClass(ContactTypeEnum::class);
+=======
+<<<<<<< HEAD
+=======
+    $reflection = new ReflectionClass(ContactTypeEnum::class);
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_n2iIha
     $traits = $reflection->getTraitNames();
 
     Assert::assertContains('Modules\\Xot\\Traits\\EnumTrait', $traits);

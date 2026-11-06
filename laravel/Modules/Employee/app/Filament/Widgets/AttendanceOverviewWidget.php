@@ -18,8 +18,11 @@ use Illuminate\Contracts\View\View;
 use Modules\User\Models\User;
 <<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+<<<<<<< .merge_file_S5WoHh
 <<<<<<< .merge_file_bSGtxm
 =======
+=======
+>>>>>>> .merge_file_XuHBUh
 =======
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 >>>>>>> 6ed19256f (.)
@@ -51,7 +54,14 @@ class AttendanceOverviewWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
+<<<<<<< .merge_file_S5WoHh
     #[Override]
+=======
+<<<<<<< HEAD
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XuHBUh
     public function getFormSchema(): array
     {
         return [

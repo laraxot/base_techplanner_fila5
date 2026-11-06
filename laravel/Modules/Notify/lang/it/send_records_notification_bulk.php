@@ -11,7 +11,14 @@ return [
         'cancel' => [
             'label' => 'cancel',
             'icon' => 'cancel',
+<<<<<<< .merge_file_YM8q4K
             'tooltip' => 'cancel']],
+=======
+            'tooltip' => 'cancel',
+        ],
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_YCeLpD
     'label' => 'Send Records Notification Bulk',
     'plural_label' => 'Send Records Notification Bulk (Plurale)',
     'navigation' => [
@@ -38,4 +45,13 @@ return [
             'label' => 'Ultima Modifica',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_YM8q4K
             'description' => '']]];
+=======
+            'description' => '',
+        ],
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_YCeLpD

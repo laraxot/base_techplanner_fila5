@@ -14,7 +14,11 @@ status: draft
 
 ## Riferimento Principale
 
+<<<<<<< HEAD
 📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
+=======
+📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
+>>>>>>> 6ed19256f (.)
 
 ## Stato del Modulo Cms
 
@@ -211,11 +215,31 @@ protected function casts(): array
 
 ## Link Correlati
 
+<<<<<<< .merge_file_3FKLN8
+=======
+<<<<<<< HEAD
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
+>>>>>>> .merge_file_bVFCki
 - 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
+=======
+- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+- 📖 [Modulo Xot - Classi Base](../../Xot/docs/analisi-metodi-duplicati.md)
+>>>>>>> 6ed19256f (.)
 - 📖 [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md)
 - 📖 [Gestione Temi](./frontoffice/create-theme.md)
 
 ---
+<<<<<<< .merge_file_3FKLN8
 **Data:** [DATE]
 **Status:** 📋 Draft per Review
+=======
+
+**Data:** 2025-10-15
+<<<<<<< HEAD
+**Data:** [DATE]
+**Status:** 📋 Draft per Review
+=======
+**Status:** 📋 Draft per Review
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_bVFCki

@@ -192,3 +192,12 @@ class S3Test extends XotBasePage
 - [UI Module README](./readme.md)
 - [Blade Components](./blade-components.md)
 
+<<<<<<< .merge_file_qaXJ1a
+=======
+*Ultimo aggiornamento: 2025-01-06*
+<<<<<<< HEAD
+- [UI Module README](./readme.md)
+- [Blade Components](./blade-components.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_HqWYla

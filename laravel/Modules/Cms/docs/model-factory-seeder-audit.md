@@ -12,7 +12,14 @@ status: draft
 
 # Model/Factory/Seeder Audit
 
+<<<<<<< .merge_file_cDZYtd
+=======
+Generated: 2025-08-22 16:28
+<<<<<<< HEAD
+>>>>>>> .merge_file_N6vKc7
 Generated: [DATE] 16:28
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Coverage
 | Model | Factory | Seeded |
@@ -32,4 +39,12 @@ Seeder: `database/seeders/CmsDatabaseSeeder.php`
 - `HasBlocks`: infrastructure/behavioral; no factory/seeding required.
 
 ## Likely non-business-critical
+<<<<<<< .merge_file_cDZYtd
 - `HasBlocks` (behavioral helper). Documented as infra; exclude from factory/seeding.
+=======
+<<<<<<< HEAD
+- `HasBlocks` (behavioral helper). Documented as infra; exclude from factory/seeding.
+=======
+- `HasBlocks` (behavioral helper). Documented as infra; exclude from factory/seeding.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_N6vKc7

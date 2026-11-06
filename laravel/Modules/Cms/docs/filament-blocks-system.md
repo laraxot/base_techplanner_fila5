@@ -185,6 +185,20 @@ Ogni blocco supporta diversi contesti:
 
 ## Collegamenti
 - [Modulo <main module>](../<main module>/docs/homepage-architecture.md)
+<<<<<<< .merge_file_IIbZej
 - [Modulo UI](../../UI/docs/blocks-system.md)
 - [Filament Builder](https://filamentphp.com/docs/3.x/forms/fields/builder)
 - [Laravel Folio](../../../docs/folio-routing.md)
+=======
+- [Modulo UI](../UI/docs/blocks-system.md)
+- [Filament Builder](https://filamentphp.com/docs/3.x/forms/fields/builder)
+- [Laravel Folio](../../docs/folio-routing.md)
+
+*Ultimo aggiornamento: Dicembre 2024*
+<<<<<<< HEAD
+- [Modulo UI](../ui/docs/blocks-system.md)
+- [Filament Builder](https://filamentphp.com/docs/3.x/forms/fields/builder)
+- [Laravel Folio](../../../docs/folio-routing.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_erQ05x

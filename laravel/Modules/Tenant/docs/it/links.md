@@ -19,6 +19,7 @@ status: draft
 ### Versione HEAD
 
 ## Collegamenti tra versioni di links.md
+<<<<<<< HEAD
 * [links.md](../../../gdpr/docs/links.md)
 * [links.md](../../../notify/docs/links.md)
 * [links.md](../../../xot/docs/ci/links.md)
@@ -28,6 +29,12 @@ status: draft
 * [links.md](../../../job/docs/links.md)
 * [links.md](../../../tenant/docs/it/links/links.md)
 * [links.md](../../../cms/docs/links.md)
+<<<<<<< .merge_file_V5r6ZX
+=======
+* [links.md](../../../../themes/one/docs/links.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_lg6N7N
 * [links.md](../../../Gdpr/docs/links.md)
 * [links.md](../../../Notify/docs/links.md)
 * [links.md](../../../xot/docs/ci/links.md)
@@ -41,4 +48,12 @@ status: draft
 
 ### Versione Incoming
 
+<<<<<<< .merge_file_V5r6ZX
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_lg6N7N

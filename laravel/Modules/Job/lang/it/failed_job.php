@@ -25,7 +25,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -107,37 +106,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'uuid' => [
-            'label' => 'UUID',
-        ],
-        'connection' => [
-            'label' => 'Connessione',
-        ],
-        'queue' => [
-            'label' => 'Coda',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-        ],
-        'exception' => [
-            'label' => 'Eccezione',
-        ],
-        'failed_at' => [
-            'label' => 'Fallito il',
-        ],
-        'attempts' => 'Tentativi',
-        'max_attempts' => 'Tentativi Massimi',
-        'status' => 'Stato',
-        'created_at' => 'Creato il',
-        'updated_at' => 'Aggiornato il',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -250,14 +218,6 @@ return [
         'sort' => 93,
         'icon' => 'job-failed-job',
     ],
-<<<<<<< .merge_file_6MoktY
     'label' => 'Job fallito',
     'plural_label' => 'Jobs Falliti',
-=======
-    'label' => 'failed job',
-<<<<<<< HEAD
-    'plural_label' => 'Failed Job (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ZR5Ltw
 ];

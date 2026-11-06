@@ -17,78 +17,175 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificativo univoco del template',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'mailable' => [
             'label' => 'Mailable Class',
             'placeholder' => 'Enter the Mailable class name',
             'help' => 'The PHP class that handles email sending',
             'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
             'description' => 'mailable',
+<<<<<<< .merge_file_NQUzR7
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'subject' => [
             'label' => 'Subject',
             'placeholder' => 'Enter the email subject',
             'help' => 'The subject that will appear in the email',
             'helper_text' => 'Oggetto dell\'email',
             'description' => 'subject',
+<<<<<<< .merge_file_NQUzR7
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'html_template' => [
             'label' => 'HTML Content',
             'placeholder' => 'Enter the email HTML content',
             'help' => 'The email content in HTML format',
             'helper_text' => 'Contenuto HTML del template email',
             'description' => 'html_template',
+<<<<<<< .merge_file_NQUzR7
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'text_template' => [
             'label' => 'Text Content',
             'placeholder' => 'Enter the email text content',
             'help' => 'Text version of the email for clients that don\'t support HTML',
             'helper_text' => 'Versione testuale del template email',
             'description' => 'text_template',
+<<<<<<< .merge_file_NQUzR7
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'version' => [
             'label' => 'Version',
             'help' => 'Template version number',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'created_at' => [
             'label' => 'Created At',
             'helper_text' => 'Data di creazione del template',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'updated_at' => [
             'label' => 'Last Modified',
             'helper_text' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'from_email' => [
             'label' => 'Email mittente',
             'helper_text' => 'Indirizzo email del mittente',
             'placeholder' => 'noreply@example.com',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'from_name' => [
             'label' => 'Nome mittente',
             'helper_text' => 'Nome visualizzato del mittente',
             'placeholder' => 'Nome Azienda',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'variables' => [
             'label' => 'Variabili disponibili',
             'helper_text' => 'Elenco delle variabili che possono essere utilizzate nel template',
             'placeholder' => 'es: {{name}}, {{email}}',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'is_markdown' => [
             'label' => 'Usa Markdown',
             'helper_text' => 'Indica se il template utilizza la sintassi Markdown',
+<<<<<<< HEAD
             'tooltip' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'status' => [
             'label' => 'Stato',
             'helper_text' => 'Stato attuale del template',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => ''],
         'toggleColumns' => [
@@ -120,25 +217,75 @@ return [
             'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
+<<<<<<< .merge_file_NQUzR7
             'description' => ''],
+=======
+            'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'toggleColumns',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'layout' => [
+            'label' => 'layout',
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
+<<<<<<< .merge_file_NQUzR7
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'name' => [
             'description' => 'Nome del template',
             'helper_text' => 'Nome descrittivo per identificare il template',
             'placeholder' => 'Es: Benvenuto, Conferma ordine, Reset password',
             'label' => 'Nome Template',
+<<<<<<< .merge_file_NQUzR7
             'tooltip' => ''],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_H81Ot2
         'params' => [
             'label' => 'Parametri',
             'helper_text' => 'Inserisci i parametri separati da virgola che possono essere utilizzati nel template',
             'placeholder' => 'name, email, date, company',
             'description' => 'Parametri disponibili per il template email',
+<<<<<<< .merge_file_NQUzR7
             'tooltip' => '']],
+=======
+<<<<<<< HEAD
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_H81Ot2
     'filters' => [
         'search_placeholder' => 'Search templates...',
         'version' => [
@@ -242,6 +389,17 @@ return [
         'bounced' => 'Respinta',
         'spam' => 'Segnalata come spam'],
     'model' => [
+<<<<<<< .merge_file_NQUzR7
         'label' => 'mail template.model'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+        'label' => 'mail template.model',
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_H81Ot2

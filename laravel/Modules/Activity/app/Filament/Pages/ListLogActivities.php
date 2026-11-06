@@ -5,6 +5,14 @@ declare(strict_types=1);
 namespace Modules\Activity\Filament\Pages;
 
 use Exception;
+<<<<<<< .merge_file_jD47rg
+=======
+use Filament\Forms\Components\Field;
+<<<<<<< HEAD
+=======
+use Filament\Forms\Contracts\HasForms;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LVbmbD
 use Filament\Notifications\Notification;
 use Filament\Pages\Concerns\InteractsWithFormActions;
 use Filament\Resources\Pages\Concerns\InteractsWithRecord;
@@ -19,13 +27,23 @@ use Illuminate\Support\Collection;
 use InvalidArgumentException;
 use Livewire\WithPagination;
 use LogicException;
+<<<<<<< HEAD
 use Modules\Activity\Actions\RestoreActivityAction;
 use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
 use Modules\Activity\Models\Activity;
 use Modules\Xot\Filament\Resources\Pages\XotBasePage;
+<<<<<<< .merge_file_jD47rg
 use Stringable;
 
 use function Safe\json_encode;
+=======
+use Webmozart\Assert\Assert;
+=======
+use Modules\Activity\Filament\Pages\Concerns\CanPaginate;
+use Modules\Activity\Models\Activity;
+use Modules\Xot\Filament\Resources\Pages\XotBasePage;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LVbmbD
 
 /**
  * Classe base per visualizzare lo storico delle attività di un record.
@@ -39,7 +57,11 @@ use function Safe\json_encode;
  * @see XotBasePage
  * @see \Modules\Activity\docs\errori\route-method-does-not-exist.md
  */
+<<<<<<< HEAD
 abstract class ListLogActivities extends XotBasePage
+=======
+abstract class ListLogActivities extends XotBasePage implements HasForms
+>>>>>>> 6ed19256f (.)
 {
     use CanPaginate;
     use InteractsWithFormActions;
@@ -65,6 +87,7 @@ abstract class ListLogActivities extends XotBasePage
 
         // Convert to string (__() returns string|array|null)
         if (is_array($breadcrumb)) {
+<<<<<<< .merge_file_jD47rg
             return implode(' ', array_map(
                 fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $breadcrumb,
@@ -73,6 +96,13 @@ abstract class ListLogActivities extends XotBasePage
 
         if (is_string($breadcrumb)) {
             return $breadcrumb;
+=======
+<<<<<<< HEAD
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $breadcrumb));
+=======
+            return implode(' ', $breadcrumb);
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LVbmbD
         }
 
         return '';
@@ -92,6 +122,7 @@ abstract class ListLogActivities extends XotBasePage
 
         // __() returns string|array|null
         if (is_array($title)) {
+<<<<<<< .merge_file_jD47rg
             return implode(' ', array_map(
                 fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $title,
@@ -100,6 +131,13 @@ abstract class ListLogActivities extends XotBasePage
 
         if (is_string($title)) {
             return $title;
+=======
+<<<<<<< HEAD
+            return implode(' ', array_map(fn (mixed $v): string => (string) $v, $title));
+=======
+            return implode(' ', $title);
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LVbmbD
         }
 
         return '';
@@ -185,6 +223,7 @@ abstract class ListLogActivities extends XotBasePage
             abort(403);
         }
 
+<<<<<<< HEAD
         try {
             $activity = $this->resolveActivity($key);
             $oldProperties = $this->getOldProperties($activity);
@@ -195,6 +234,39 @@ abstract class ListLogActivities extends XotBasePage
         } catch (Exception $e) {
             $this->sendRestoreFailureNotification($e->getMessage());
         }
+=======
+        $result = $this->prepareRestore($key);
+        $error = $result['error'] ?? null;
+        if ($error !== null && $error !== '') {
+            $this->sendRestoreFailureNotification((string) $error);
+
+            return;
+        }
+
+        $activity = $result['activity'] ?? null;
+        $record = $result['record'] ?? null;
+
+        if (! $record instanceof Model) {
+            $this->sendRestoreFailureNotification('Invalid record type');
+
+            return;
+        }
+
+        $oldProperties = data_get($activity, 'properties.old');
+        if ($oldProperties === null) {
+            $this->sendRestoreFailureNotification();
+
+            return;
+        }
+
+        if (! \is_array($oldProperties)) {
+            $this->sendRestoreFailureNotification('Invalid properties format');
+
+            return;
+        }
+
+        $this->performRestore($record, $oldProperties);
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -216,18 +288,50 @@ abstract class ListLogActivities extends XotBasePage
             $labelMap[$field->getName()] = self::stringifyTranslationValue($field->getLabel());
         }
 
+<<<<<<< .merge_file_jD47rg
         return new Collection($labelMap);
+=======
+        /** @var Collection<string, string> $labelMap */
+        $labelMap = $extracted
+            ->filter(static fn ($field): bool => $field instanceof Field)
+            ->mapWithKeys(
+                /** @param Field $field
+<<<<<<< HEAD
+=======
+                 *
+>>>>>>> 6ed19256f (.)
+                 * @return array<string, string>
+                 */
+                static function (Component $field): array {
+                    $name = $field->getName();
+                    $label = $field->getLabel();
+                    $labelString = $label instanceof Htmlable ? $label->toHtml() : (string) $label;
+
+                    return [$name => $labelString];
+                }
+            );
+
+        return $labelMap;
+>>>>>>> .merge_file_LVbmbD
     }
 
     protected function sendRestoreSuccessNotification(): Notification
     {
         $title = __('activity::activities.events.restore_successful');
+<<<<<<< .merge_file_jD47rg
         $titleString = is_array($title)
             ? implode(' ', array_map(
                 static fn (mixed $value): string => self::stringifyTranslationValue($value),
                 $title,
             ))
             : (is_string($title) ? $title : '');
+=======
+<<<<<<< HEAD
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+=======
+        $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LVbmbD
 
         return Notification::make()
             ->title($titleString)
@@ -238,12 +342,20 @@ abstract class ListLogActivities extends XotBasePage
     protected function sendRestoreFailureNotification(?string $message = null): Notification
     {
         $title = __('activity::activities.events.restore_failed');
+<<<<<<< .merge_file_jD47rg
         $titleString = is_array($title)
             ? implode(' ', array_map(
                 fn (mixed $v): string => is_scalar($v) ? (string) $v : json_encode($v),
                 $title,
             ))
             : (is_string($title) ? $title : '');
+=======
+<<<<<<< HEAD
+        $titleString = is_array($title) ? implode(' ', array_map(fn (mixed $v): string => (string) $v, $title)) : (string) $title;
+=======
+        $titleString = is_array($title) ? implode(' ', $title) : (string) $title;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LVbmbD
 
         $notification = Notification::make()
             ->title($titleString)
@@ -256,6 +368,7 @@ abstract class ListLogActivities extends XotBasePage
         return $notification->send();
     }
 
+<<<<<<< .merge_file_jD47rg
     private static function stringifyTranslationValue(mixed $value): string
     {
         if (is_string($value)) {
@@ -284,6 +397,9 @@ abstract class ListLogActivities extends XotBasePage
         return '';
     }
 
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_LVbmbD
     private function resolveActivity(int|string $key): Activity
     {
         $record = $this->record;
@@ -321,6 +437,7 @@ abstract class ListLogActivities extends XotBasePage
             throw new Exception('Invalid properties format in activity log');
         }
 
+<<<<<<< .merge_file_jD47rg
         $oldProperties = [];
         foreach ($old as $field => $value) {
             if (! \is_string($field)) {
@@ -331,5 +448,45 @@ abstract class ListLogActivities extends XotBasePage
         }
 
         return $oldProperties;
+=======
+        /** @var array<string, mixed> $old */
+        return $old;
+=======
+    private function prepareRestore(int|string $key): array
+    {
+        $record = $this->record;
+        if (! \is_object($record) || ! method_exists($record, 'activities')) {
+            return ['error' => 'Invalid record', 'activity' => null, 'record' => null];
+        }
+
+        $activitiesRelation = $record->activities();
+        if (! \is_object($activitiesRelation) || ! method_exists($activitiesRelation, 'whereKey')) {
+            return ['error' => 'Invalid activities relation', 'activity' => null, 'record' => null];
+        }
+
+        $whereKeyQuery = $activitiesRelation->whereKey($key);
+        if (! \is_object($whereKeyQuery) || ! method_exists($whereKeyQuery, 'first')) {
+            return ['error' => 'Invalid query', 'activity' => null, 'record' => null];
+        }
+
+        $activity = $whereKeyQuery->first();
+
+        return ['error' => null, 'activity' => $activity, 'record' => $record];
+    }
+
+    private function performRestore(Model $record, array $oldProperties): void
+    {
+        try {
+            /** @var array<string, mixed> $safeProperties */
+            $safeProperties = $oldProperties;
+
+            $record->update($safeProperties);
+
+            $this->sendRestoreSuccessNotification();
+        } catch (Exception $e) {
+            $this->sendRestoreFailureNotification($e->getMessage());
+        }
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LVbmbD
     }
 }

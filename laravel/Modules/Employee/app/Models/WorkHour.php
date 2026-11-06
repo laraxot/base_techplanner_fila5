@@ -4,12 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+<<<<<<< .merge_file_1oL6yk
 use Modules\Employee\Database\Factories\WorkHourFactory;
+=======
+<<<<<<< HEAD
+=======
+use Modules\Employee\Database\Factories\WorkHourFactory;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_AeI55W
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+<<<<<<< HEAD
 use Modules\Employee\Database\Factories\WorkHourFactory;
+=======
+>>>>>>> 6ed19256f (.)
 use Modules\Employee\Enums\WorkHourStatusEnum;
 use Modules\Employee\Enums\WorkHourTypeEnum;
 use Modules\User\Models\User;
@@ -52,7 +62,10 @@ use Modules\Xot\Contracts\ProfileContract;
 =======
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< .merge_file_1oL6yk
 >>>>>>> .merge_file_sNqu1y
+=======
+>>>>>>> .merge_file_AeI55W
  *
 =======
 >>>>>>> 6ed19256f (.)

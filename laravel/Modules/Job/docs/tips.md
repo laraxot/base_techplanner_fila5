@@ -1,24 +1,3 @@
-<<<<<<< .merge_file_JZd4MB
-=======
-### Versione HEAD
-
-<<<<<<< HEAD
-https://dudi.dev/optimize-laravel-database-queries/
-
-=======
-https://dudi.dev/optimize-laravel-database-queries/
->>>>>>> 6ed19256f (.)
-## Collegamenti tra versioni di tips.md
-* [tips.md](../../../../bashscripts/docs/wsl/tips.md)
-
-### Versione Incoming
-
-<<<<<<< HEAD
-https://dudi.dev/optimize-laravel-database-queries/
-
-
----
->>>>>>> .merge_file_JnOjUL
 ---
 title: "tips"
 type: note
@@ -30,14 +9,5 @@ issues: []
 discussions: []
 ---
 
-<<<<<<< .merge_file_JZd4MB
 https://dudi.dev/optimize-laravel-database-queries/
 
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/tips.txt
-=======
-https://dudi.dev/optimize-laravel-database-queries/
-
----
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JnOjUL

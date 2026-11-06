@@ -32,7 +32,13 @@ return [
         'label' => 'Fax',
         'icon' => 'heroicon-o-printer',
         'color' => 'text-gray-600',
+<<<<<<< .merge_file_UMCHPE
         'description' => 'Numero fax'],
+=======
+        'description' => 'Numero fax',
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_C1lt2O
     'label' => 'Contact Type Enum',
     'plural_label' => 'Contact Type Enum (Plurale)',
     'navigation' => [
@@ -66,4 +72,13 @@ return [
         'edit' => [
             'label' => 'Modifica Contact Type Enum'],
         'delete' => [
+<<<<<<< .merge_file_UMCHPE
             'label' => 'Elimina Contact Type Enum']]];
+=======
+            'label' => 'Elimina Contact Type Enum',
+        ],
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_C1lt2O

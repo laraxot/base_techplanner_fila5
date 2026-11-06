@@ -41,6 +41,19 @@ use Spatie\Translatable\HasTranslations;
  * @method static Builder<static>|PageContent whereSlug($value)
  * @method static Builder<static>|PageContent whereUpdatedAt($value)
  * @method static Builder<static>|PageContent whereUpdatedBy($value)
+<<<<<<< .merge_file_4hTrSY
+=======
+ * @method static int                         count()
+ *
+ * @property ProfileContract|null $deleter
+ *
+<<<<<<< HEAD
+ * @method static PageContentFactory               factory($count = null, $state = [])
+ * @method        array<int, array<string, mixed>> getSushiRows()
+=======
+ * @method static PageContentFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_YZYxFE
  *
  * @mixin \Eloquent
  */
@@ -49,8 +62,13 @@ class PageContent extends BaseModel
     use HasTranslations;
     use SushiToJsons;
 
+<<<<<<< HEAD
     /** @var list<string> */
     public array $translatable = [
+=======
+    /** @var array<int, string> */
+    public $translatable = [
+>>>>>>> 6ed19256f (.)
         'name',
         'blocks',
     ];
@@ -62,8 +80,16 @@ class PageContent extends BaseModel
         'blocks',
     ];
 
+<<<<<<< HEAD
     /** @var array<string, string> */
+<<<<<<< .merge_file_4hTrSY
     protected array $schema = [
+=======
+    protected $schema = [
+=======
+    protected array $schema = [
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_YZYxFE
         'id' => 'integer',
         'name' => 'json',
         'slug' => 'string',
@@ -75,6 +101,12 @@ class PageContent extends BaseModel
     ];
 
     /**
+<<<<<<< HEAD
+=======
+     * @return array<string, mixed>
+     */
+    /**
+>>>>>>> 6ed19256f (.)
      * @return array<int, array<string, mixed>>
      */
     public function getRows(): array

@@ -28,7 +28,6 @@ class JobStatsOverview extends BaseWidget
         ];
 
         $aggregatedInfo = JobManager::query()->select($aggregationColumns)->first();
-<<<<<<< .merge_file_ZQU5nt
         $cast = app(SafeEloquentCastAction::class);
 
         if ($aggregatedInfo instanceof Model) {
@@ -37,29 +36,6 @@ class JobStatsOverview extends BaseWidget
             $totalJobs = $cast->getIntAttribute($aggregatedInfo, 'count', 0);
             $averageTime = $averageSeconds > 0.0 ? ceil($averageSeconds).'s' : '0';
             $totalTime = $totalSeconds > 0 ? $this->formatSeconds($totalSeconds) : '0';
-=======
-
-        if ($aggregatedInfo) {
-            $averageTime = app(SafeEloquentCastAction::class)
-                ->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0')
-                ? ceil(
-                    (float) app(SafeEloquentCastAction::class)
-                        ->getStringAttribute($aggregatedInfo, 'average_time_elapsed', '0'),
-<<<<<<< HEAD
-                ).'s'
-=======
-                ) . 's'
->>>>>>> 6ed19256f (.)
-                : '0';
-
-            $totalTime = app(SafeEloquentCastAction::class)
-                ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0')
-                ? $this->formatSeconds(
-                    (int) app(SafeEloquentCastAction::class)
-                        ->getStringAttribute($aggregatedInfo, 'total_time_elapsed', '0'),
-                )
-                : '0';
->>>>>>> .merge_file_baTIS9
         } else {
             $averageTime = '0';
             $totalTime = '0';

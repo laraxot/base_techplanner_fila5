@@ -8,6 +8,7 @@ return [
     'description' => 'Beschreibung',
     'configure' => 'Konfigurieren',
     'settings' => 'Einstellungen',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -19,4 +20,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_17GTwH
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_qBcRvE

@@ -265,11 +265,22 @@ To use the widget in a Blade view:
 
 ## Backlinks and References
 
+<<<<<<< HEAD
 - [Ptv Module - Calendar Usage](../../ptv/docs/features/full_calendar.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
 
 *
+<<<<<<< .merge_file_OD9Hbj
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Ptv Module - Calendar Usage](../../Ptv/docs/features/full_calendar.md)
+- [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
+- [FullCalendar.io Documentation](https://fullcalendar.io/docs)
+
+*Last updated: June 2025*
+>>>>>>> .merge_file_bXuiqd
 # FullCalendar Component for Filament
 
 ## Introduction
@@ -525,8 +536,23 @@ To use the widget in a Blade view:
 
 ## Backlinks and References
 
+<<<<<<< HEAD
 - [Ptv Module - Calendar Usage](../../ptv/docs/features/full_calendar.md)
 - [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
 - [FullCalendar.io Documentation](https://fullcalendar.io/docs)
 
 *
+<<<<<<< .merge_file_OD9Hbj
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Ptv Module - Calendar Usage](../../Ptv/docs/features/full_calendar.md)
+- [Official Saade FullCalendar Documentation](https://github.com/saade/filament-fullcalendar)
+- [FullCalendar.io Documentation](https://fullcalendar.io/docs)
+
+<<<<<<< HEAD
+*Last updated: June 2025*
+=======
+*Last updated: June 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_bXuiqd

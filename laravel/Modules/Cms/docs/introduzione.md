@@ -31,5 +31,15 @@ Una volta configurato il modulo, è possibile utilizzarlo per creare e gestire i
 
 Dipende un po da tutti i Moduli.
 ## Collegamenti tra versioni di introduzione.md
+<<<<<<< .merge_file_heJSOC
 * [introduzione.md](laravel/modules/chart/docs/introduzione.md)
 * [introduzione.md](laravel/modules/cms/docs/introduzione.md)
+=======
+* [introduzione.md](laravel/Modules/Chart/docs/introduzione.md)
+* [introduzione.md](laravel/Modules/Cms/docs/introduzione.md)
+<<<<<<< HEAD
+* [introduzione.md](laravel/modules/chart/docs/introduzione.md)
+* [introduzione.md](laravel/modules/cms/docs/introduzione.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tMDArt

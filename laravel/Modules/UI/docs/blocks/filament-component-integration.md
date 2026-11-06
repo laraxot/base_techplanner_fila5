@@ -194,8 +194,22 @@ I form Filament che utilizzano campi complessi, wizard multi-step o molti campi 
 ## Riferimenti alla Documentazione
 
 - [Documentazione ufficiale Filament](https://filamentphp.com/docs/3.x/support/blade-components)
+<<<<<<< .merge_file_lDafc2
+=======
+- [Integrazione Filament nel modulo CMS](../../Cms/docs/filament-integration.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_Det80g
 - [Integrazione Filament nel modulo CMS](../../cms/docs/filament-integration.md)
 - [Best practices per i componenti UI](../components/best-practices.md)
 
 ---
 *Aggiornato: 2025-05-08*
+<<<<<<< .merge_file_lDafc2
+=======
+=======
+- [Best practices per i componenti UI](../components/best-practices.md)
+
+---
+*Aggiornato: 2025-05-08*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Det80g

@@ -9,18 +9,57 @@ use Modules\Gdpr\Filament\Resources\ProfileResource\Pages\EditProfile;
 use Modules\Gdpr\Filament\Resources\ProfileResource\Pages\ListProfiles;
 use Modules\Gdpr\Models\Profile;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class ProfileResource extends XotBaseResource
 {
     protected static ?string $model = Profile::class;
 
+<<<<<<< HEAD
     #[\Override]
+<<<<<<< .merge_file_CJ9cRD
+=======
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
+    public static function getFormSchema(): array
+    {
+        return [
+            'type' => TextInput::make('type')->maxLength(255)->default(null),
+            'first_name' => TextInput::make('first_name')->maxLength(191)->default(null),
+            'last_name' => TextInput::make('last_name')->maxLength(191)->default(null),
+            'full_name' => TextInput::make('full_name')->maxLength(191)->default(null),
+            'email' => TextInput::make('email')
+                ->email()
+                ->maxLength(191)
+                ->default(null),
+            'user_id' => TextInput::make('user_id')->maxLength(36)->default(null),
+            'updated_by' => TextInput::make('updated_by')->maxLength(36)->default(null),
+            'created_by' => TextInput::make('created_by')->maxLength(36)->default(null),
+            'deleted_by' => TextInput::make('deleted_by')->maxLength(36)->default(null),
+            'is_active' => Toggle::make('is_active')->required(),
+        ];
+    }
+
+<<<<<<< HEAD
+    #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_6xXoTq
     public static function getRelations(): array
     {
         return [];
     }
 
+<<<<<<< HEAD
     #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

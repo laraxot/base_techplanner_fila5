@@ -226,11 +226,27 @@ Notify Module
 
 ---
 
+<<<<<<< .merge_file_QoI1F2
+=======
+**Last Updated**: 2025-10-01
+**Next Review**: 2025-11-01
+<<<<<<< HEAD
+>>>>>>> .merge_file_WU1mse
 **
 **Next Review**: 2025-11-01
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: 🚧 PLANNING
 **Confidence Level**: 70%
 
 ---
 
+<<<<<<< .merge_file_QoI1F2
 *Questa roadmap è specifica per il modulo Notify e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+<<<<<<< HEAD
+*Questa roadmap è specifica per il modulo Notify e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+=======
+*Questa roadmap è specifica per il modulo Notify e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_WU1mse

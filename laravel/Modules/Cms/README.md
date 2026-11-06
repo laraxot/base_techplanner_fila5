@@ -45,7 +45,54 @@ php artisan module:list
 
 See local docs for integration patterns.
 
+<<<<<<< .merge_file_ITyDL0
 ## Documentazione
+=======
+Le pull request sono benvenute. Per modifiche importanti, aprire prima una issue per discutere la modifica proposta.
+
+## Licenza
+
+MIT
+<<<<<<< HEAD
+# 📄 Cms
+
+[![Domain-CMS](https://img.shields.io/badge/Domain-CMS%20Folio-00838F.svg)](#)
+[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
+[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
+[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
+[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
+[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+
+> **Pagine che respirano Design Comuni.** Folio, blocchi CMS, JSON content — il frontoffice non è un afterthought.
+
+---
+
+## Perché esiste
+
+Gestisce contenuti e composizione pagine `/it` senza hardcode in Blade monolitici.
+
+## Superpoteri
+
+- Laravel Folio + blocchi riusabili
+- Content JSON-driven
+- Integrazione tema Sixteen
+- Filament per gestione contenuti
+
+## Certificazioni
+
+| Certificazione | Stato |
+|----------------|-------|
+| PHPStan livello 10 | Target progetto |
+| `declare(strict_types=1)` | Su nuovo codice PHP |
+| Filament 5 + XotBase | Admin enterprise |
+| Test PHPUnit / Pest | Suite modulo |
+| Documentazione wiki | Cartella `docs/` |
+
+## Vuoi entrare nel team?
+>>>>>>> .merge_file_3uhBEx
 
 The technical map is in [docs/README.md](./docs/README.md).
 
@@ -59,4 +106,10 @@ Maintain `declare(strict_types=1);` in PHP, adhere to project PHPStan config, an
 
 ---
 
+<<<<<<< .merge_file_ITyDL0
 **Modulo** `cms` · **Laraxot ecosystem** · **Project-agnostic**
+=======
+**Modulo** `cms` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_3uhBEx

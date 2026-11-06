@@ -240,12 +240,32 @@ $resourceClass = XotData::make()->getUserResourceClassByType($type);
 - [Register Type Test Implementation](./register-type-test-implementation.md)
 
 ### **Documentazione Root**
+<<<<<<< .merge_file_lPdokc
 - [Testing Organization](../../../../docs/testing-organization.md)
 - [PestPHP Best Practices](../../../../docs/testing/pestphp-best-practices.md)
 
 ### **Documentazione Moduli Correlati**
 - [User Module: RegistrationWidget](../../../User/docs/widgets/registration-widget.md)
 - [Xot Module: Testing Infrastructure](../../../Xot/docs/testing/infrastructure.md)
+=======
+<<<<<<< HEAD
+- [User Module: RegistrationWidget](../../../User/docs/widgets/registration-widget.md)
+- [Xot Module: Testing Infrastructure](../../../Xot/docs/testing/infrastructure.md)
+- [Testing Organization](../../../../../docs/testing-organization.md)
+- [PestPHP Best Practices](../../../../../docs/testing/pestphp-best-practices.md)
+
+### **Documentazione Moduli Correlati**
+- [User Module: RegistrationWidget](../../../user/docs/widgets/registration-widget.md)
+- [Xot Module: Testing Infrastructure](../../../xot/docs/testing/infrastructure.md)
+=======
+- [Testing Organization](../../../../docs/testing-organization.md)
+- [PestPHP Best Practices](../../../../docs/testing/pestphp-best-practices.md)
+
+### **Documentazione Moduli Correlati**
+- [User Module: RegistrationWidget](../../../User/docs/widgets/registration-widget.md)
+- [Xot Module: Testing Infrastructure](../../../Xot/docs/testing/infrastructure.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ol40dY
 
 ## 🎉 Conclusioni
 
@@ -261,6 +281,16 @@ L'implementazione del `RegisterTypeWidgetTest` è stata **completata con success
 Il modulo Cms ora ha una **strategia di testing solida** e **replicabile** per altri widget Filament.
 
 ---
+<<<<<<< .merge_file_lPdokc
 **Ultimo aggiornamento**: Gennaio 2025  
 **Status**: ✅ PRODUCTION READY  
 **Performance**: 9 test / 4.44s / 100% pass rate 
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+**Status**: ✅ PRODUCTION READY
+<<<<<<< HEAD
+**Performance**: 9 test / 4.44s / 100% pass rate
+=======
+**Performance**: 9 test / 4.44s / 100% pass rate
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ol40dY

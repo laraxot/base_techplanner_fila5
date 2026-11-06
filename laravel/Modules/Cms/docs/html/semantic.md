@@ -161,6 +161,18 @@ Contenuto autonomo con didascalia:
 ## Collegamenti
 - [Struttura Layout](../architecture/structure/layout.md)
 - [Componenti HTML](../components/html.md)
+<<<<<<< .merge_file_P21mL3
 - [Accessibilità](../accessibility/readme.md)
 
 [Fonte: W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
+=======
+- [Accessibilità](../accessibility/README.md)
+<<<<<<< HEAD
+- [Accessibilità](../accessibility/readme.md)
+
+[Fonte: W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
+=======
+
+[Fonte: W3Schools](https://www.w3schools.com/html/html5_semantic_elements.asp)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_5ndGuJ

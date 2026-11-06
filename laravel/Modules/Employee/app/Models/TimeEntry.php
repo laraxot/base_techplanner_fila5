@@ -21,7 +21,10 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 >>>>>>> 6ed19256f (.)
+<<<<<<< .merge_file_LUja2a
 >>>>>>> .merge_file_VkNs8c
+=======
+>>>>>>> .merge_file_zGUSvW
 
 /**
  * Class TimeEntry.
@@ -66,7 +69,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< .merge_file_LUja2a
 >>>>>>> .merge_file_VkNs8c
+=======
+>>>>>>> .merge_file_zGUSvW
  *
 =======
 >>>>>>> 6ed19256f (.)
@@ -106,7 +112,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static Builder<static>|TimeEntry whereTimestamp($value)
  * @method static Builder<static>|TimeEntry whereType($value)
  * @method static Builder<static>|TimeEntry withAnomalies()
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 final class TimeEntry extends BaseModel
@@ -254,4 +263,11 @@ final class TimeEntry extends BaseModel
         return $this->status === TimeEntryStatusEnum::REJECTED->value;
     }
 }
+<<<<<<< .merge_file_LUja2a
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_zGUSvW

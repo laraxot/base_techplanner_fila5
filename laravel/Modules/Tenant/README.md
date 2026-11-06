@@ -196,6 +196,11 @@ Tenant/
 - Pages for administration
 
 ---
+<<<<<<< .merge_file_wm386x
+=======
+<<<<<<< HEAD
+# 🏢 Tenant
+>>>>>>> .merge_file_VxQK4D
 
 ## API Reference
 
@@ -332,4 +337,10 @@ See [Contributing Guide](../../docs/wiki/how-to/contributing.md) for details.
 
 ---
 
+<<<<<<< .merge_file_wm386x
 Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md) | [Documentation Index](index.md)
+=======
+**Modulo** `tenant` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_VxQK4D

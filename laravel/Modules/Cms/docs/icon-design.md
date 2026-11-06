@@ -53,7 +53,21 @@ FilamentIcon::register([
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_IVwHz7
+=======
+<<<<<<< HEAD
+- [CMS Module Documentation](./README.md)
+>>>>>>> .merge_file_DOjQzM
 - [Design System Globale](../../../../../docs/module-icons-design-system.md)
 - [CMS Module Documentation](./README.md)
 
 *Creato: Agosto 2025*
+<<<<<<< .merge_file_IVwHz7
+=======
+=======
+- [Design System Globale](../../../../docs/module-icons-design-system.md)
+- [CMS Module Documentation](./README.md)
+
+*Creato: Agosto 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_DOjQzM

@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_uSwnMA
+=======
+<<<<<<< HEAD
+2025-11-29
+>>>>>>> .merge_file_QFLOto
 ---
 issues: []
 discussions: []
@@ -14,6 +19,13 @@ status: draft
 ---
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
+<<<<<<< .merge_file_uSwnMA
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/folio-volt-best-practices.md
+=======
+# Laravel Folio + Volt - Best Practices and Patterns Analysis
+
+>>>>>>> .merge_file_QFLOto
 ## Overview
 
 Based on research of multiple Laravel Folio + Volt repositories and official documentation, this document outlines the best practices and patterns for implementing Folio + Volt in applications.
@@ -114,4 +126,9 @@ middleware(['auth', 'verified']);
 - Genesis Starter Kit: https://github.com/thedevdojo/genesis
 
 ## Date
+<<<<<<< .merge_file_uSwnMA
 [DATE]
+=======
+2025-11-29
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_QFLOto

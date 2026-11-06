@@ -13,6 +13,13 @@ status: draft
 # User Dropdown Block
 
 > **NOTA IMPORTANTE**: Per informazioni dettagliate sull'integrazione di componenti Filament in questo blocco, vedere la [documentazione nel modulo UI](../../../UI/docs/blocks/filament-component-integration.md).
+<<<<<<< .merge_file_iKRmTG
+=======
+<<<<<<< HEAD
+> **NOTA IMPORTANTE**: Per informazioni dettagliate sull'integrazione di componenti Filament in questo blocco, vedere la [documentazione nel modulo UI](../../../ui/docs/blocks/filament-component-integration.md).
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_QZXWCc
 
 ## Indice
 1. [Introduzione](#introduzione)
@@ -212,6 +219,18 @@ Questa soluzione sfrutta il componente dropdown di Filament, mantiene la coerenz
 - [Documentazione Filament Blade Components](../filament-blade-components.md)
 - [Best Practices UI/UX](../guida-implementazione-ux.md)
 - [Documentazione Accessibilità](./accessibility.md)
+<<<<<<< .merge_file_iKRmTG
 - [Modulo UI - Filament Blade Components](/var/www/html/<directory progetto>/laravel/modules/ui/docs/filament/resources.md)
 - [Documentazione Blocchi Navigation](./navigation.md)
 - [Modulo UI - Filament Blade Components](../../../UI/docs/filament/resources.md)
+=======
+- [Modulo UI - Filament Blade Components](/var/www/html/<directory progetto>/laravel/Modules/UI/docs/filament/resources.md)
+- [Documentazione Blocchi Navigation](./navigation.md)
+- [Modulo UI - Filament Blade Components](../UI/docs/filament/resources.md)
+<<<<<<< HEAD
+- [Modulo UI - Filament Blade Components](/var/www/html/<directory progetto>/laravel/modules/ui/docs/filament/resources.md)
+- [Documentazione Blocchi Navigation](./navigation.md)
+- [Modulo UI - Filament Blade Components](../ui/docs/filament/resources.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_QZXWCc

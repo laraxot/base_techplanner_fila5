@@ -11,11 +11,7 @@ abstract class JobBasePolicy
 {
     use HandlesAuthorization;
 
-<<<<<<< HEAD
     public function before(UserContract $user, string $_ability): ?bool
-=======
-    public function before(UserContract $user, string $_ability): null|bool
->>>>>>> 6ed19256f (.)
     {
         if ($user->hasRole('super-admin')) {
             return true;

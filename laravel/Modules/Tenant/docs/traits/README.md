@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "README"
 type: note
@@ -10,6 +11,7 @@ discussions: []
 status: draft
 ---
 
+<<<<<<< .merge_file_SYGZt5
 # Tenant
 
 [![Module](https://img.shields.io/badge/Module-Tenant-8B0000.svg)]()
@@ -43,3 +45,9 @@ Core module for the FixCity Platform.
 
 ---
 **Modulo** `Tenant` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_6tZg3Y

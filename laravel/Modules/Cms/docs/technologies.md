@@ -121,8 +121,26 @@ Questo documento descrive le tecnologie principali utilizzate nel modulo CMS.
 
 ## Collegamenti
 
+<<<<<<< .merge_file_CAaVFt
 - [Architettura](frontoffice/architecture.md)
+=======
+- [Architettura](architecture.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_36srzE
 - [API](api/readme.md)
 - [Frontend](frontoffice/README.md)
 - [Sviluppo](developer/readme.md)
 - [Utente](user/readme.md)
+<<<<<<< .merge_file_CAaVFt
+=======
+- [API](api/README.md)
+- [Frontend](frontoffice/README.md)
+- [Sviluppo](developer/README.md)
+- [Utente](user/README.md)
+=======
+- [API](api/README.md)
+- [Frontend](frontoffice/README.md)
+- [Sviluppo](developer/README.md)
+- [Utente](user/README.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_36srzE

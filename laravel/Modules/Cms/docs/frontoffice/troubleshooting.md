@@ -151,5 +151,15 @@ export default defineConfig({
 - [ ] Verificare la sicurezza
 
 ## Collegamenti tra versioni di troubleshooting.md
+<<<<<<< .merge_file_Ux3ZZB
 * [troubleshooting.md](../../../Xot/docs/troubleshooting.md)
 * [troubleshooting.md](laravel/modules/cms/docs/frontoffice/troubleshooting.md)
+=======
+* [troubleshooting.md](laravel/Modules/Xot/docs/troubleshooting.md)
+* [troubleshooting.md](laravel/Modules/Cms/docs/frontoffice/troubleshooting.md)
+<<<<<<< HEAD
+* [troubleshooting.md](laravel/modules/xot/docs/troubleshooting.md)
+* [troubleshooting.md](laravel/modules/cms/docs/frontoffice/troubleshooting.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Xspimk

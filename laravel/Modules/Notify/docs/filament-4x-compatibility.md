@@ -91,8 +91,19 @@ UPDATE templates SET counter = ? WHERE id = ?
 
 ## 🔗 Collegamenti
 
+<<<<<<< HEAD
 - [Rapporto Aggiornamento Filament 4.x](../../../docs/filament_4x_upgrade_report.md)
 - [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
 - [Documentazione Eloquent](https://laravel.com/docs/eloquent)
 
 *Ultimo aggiornamento: 2025-01-27*
+<<<<<<< .merge_file_Ly2PRX
+=======
+=======
+- [Rapporto Aggiornamento Filament 4.x](../../docs/filament_4x_upgrade_report.md)
+- [Guida Ufficiale Filament 4.x](https://filamentphp.com/docs/4.x/upgrade-guide)
+- [Documentazione Eloquent](https://laravel.com/docs/eloquent)
+
+*Ultimo aggiornamento: 2025-01-27*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_aFVrYE

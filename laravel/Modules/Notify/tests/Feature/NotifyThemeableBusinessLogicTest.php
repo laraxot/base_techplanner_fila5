@@ -2,8 +2,14 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_jmDggH
 namespace Modules\Notify\Tests\Feature;
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_OJ4RCl
 
+=======
+>>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Notify\Database\Factories\NotifyThemeableFactory;
 use Modules\Notify\Database\Factories\NotifyThemeFactory;

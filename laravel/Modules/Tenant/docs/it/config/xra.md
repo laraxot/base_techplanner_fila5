@@ -34,13 +34,30 @@ return [
 
 ];
 ## Collegamenti tra versioni di xra.md
+<<<<<<< .merge_file_T0rpjV
+=======
+* [xra.md](../../../Xot/docs/install/xra.md)
+* [xra.md](../../../Tenant/docs/it/xra.md)
+* [xra.md](../../../Tenant/docs/it/config/xra.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_mNXmzf
 * [xra.md](../../../xot/docs/install/xra.md)
 * [xra.md](../../../tenant/docs/it/xra.md)
 * [xra.md](../xra.md)
 * [xra.md](../../../tenant/docs/it/config/xra.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ];
 
+<<<<<<< .merge_file_T0rpjV
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_mNXmzf

@@ -5,13 +5,23 @@ declare(strict_types=1);
 namespace Modules\Cms\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
 use Illuminate\Database\Eloquent\ModelNotFoundException;
+<<<<<<< .merge_file_tqGi4K
 use Illuminate\Database\MultipleRecordsFoundException;
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_jtmCXU
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Modules\Cms\Datas\BlockData;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
+=======
+use Spatie\LaravelData\DataCollection;
+>>>>>>> 6ed19256f (.)
 
 use function Safe\preg_match;
 use function Safe\preg_replace_callback;
@@ -27,6 +37,7 @@ use function Safe\preg_replace_callback;
 trait HasBlocks
 {
     /**
+<<<<<<< HEAD
      * @return array<string, BlockData>
      */
     public function getBlocks(?string $side = null): array
@@ -56,6 +67,17 @@ trait HasBlocks
         if (! is_array($blocks)) {
             $primary_lang = XotData::make()->primary_lang;
             $blocks = $this->getTranslation($field, $primary_lang);
+=======
+     * @return DataCollection<BlockData>
+     */
+    public function getBlocks(): DataCollection
+    {
+        $blocks = $this->blocks;
+
+        if (! is_array($blocks)) {
+            $primary_lang = XotData::make()->primary_lang;
+            $blocks = $this->getTranslation('blocks', $primary_lang);
+>>>>>>> 6ed19256f (.)
         }
 
         if (! is_array($blocks)) {
@@ -64,6 +86,7 @@ trait HasBlocks
 
         $blocks = $this->compile($blocks);
 
+<<<<<<< HEAD
         // Create BlockData instances manually to ensure constructor is called
         // This is necessary because Laravel Data's collect() doesn't call custom constructors
         // which is needed for dynamic query resolution
@@ -87,6 +110,10 @@ trait HasBlocks
 
         // Return array directly to ensure BlockData constructor is called for dynamic query resolution
         return $blockDataInstances;
+=======
+        /* @var DataCollection<BlockData> $collection */
+        return BlockData::collection($blocks);
+>>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -108,15 +135,19 @@ trait HasBlocks
             } else {
                 $result[$key] = $value;
             }
+<<<<<<< HEAD
             if (is_array($value)) {
                 $result[$key] = $this->compile($value);
             }
+=======
+>>>>>>> 6ed19256f (.)
         }
 
         return $result;
     }
 
     /**
+<<<<<<< .merge_file_tqGi4K
      * Unico PHP ammesso nei blocchi: `route(...)` Folio (es. container0.view).
      * Vietato `LaravelLocalization::localizeURL` (religione FO — Fixcity
      * frontoffice-link-conventions). Ogni altra espressione resta testo
@@ -143,6 +174,9 @@ trait HasBlocks
     }
 
     /**
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_jtmCXU
      * Get blocks by slug for a specific side.
      *
      * Cercato il record per slug, itera sui blocchi e filtra per side quando fornito.
@@ -184,15 +218,42 @@ trait HasBlocks
 
         if (! $record instanceof Model) {
             return [];
+=======
+     * Get blocks for a record by slug.
+     *
+     * @return DataCollection<BlockData>
+     */
+    public static function getBlocksBySlug(string $slug): DataCollection
+    {
+        // This trait requires the class to extend Model (@phpstan-require-extends Model)
+        // So we can safely use static methods
+        $query = static::where('slug', $slug);
+
+        if (! method_exists($query, 'first')) {
+            return BlockData::collection([]);
+        }
+
+        $record = $query->first();
+        if (! $record instanceof Model) {
+            return BlockData::collection([]);
+>>>>>>> 6ed19256f (.)
         }
 
         // Check if getBlocks method exists
         if (! method_exists($record, 'getBlocks')) {
+<<<<<<< HEAD
             return [];
         }
 
         /** @var array<string, BlockData> $blocks */
         $blocks = $record->getBlocks($side);
+=======
+            return BlockData::collection([]);
+        }
+
+        /** @var DataCollection<BlockData> $blocks */
+        $blocks = $record->getBlocks();
+>>>>>>> 6ed19256f (.)
 
         return $blocks;
     }

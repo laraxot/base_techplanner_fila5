@@ -13,6 +13,7 @@ return [
     'fields' => [
         'background_color' => [
             'label' => 'background_color',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -89,6 +90,31 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        ],
+        'background' => [
+            'label' => 'background',
+        ],
+        'overlay_color' => [
+            'label' => 'overlay_color',
+        ],
+        'overlay_opacity' => [
+            'label' => 'overlay_opacity',
+        ],
+        'class' => [
+            'label' => 'class',
+        ],
+        'style' => [
+            'label' => 'style',
+        ],
+        'name' => 'Nome',
+        'guard_name' => 'Guard',
+        'permissions' => 'Permessi',
+        'roles' => 'Ruoli',
+        'updated_at' => 'Aggiornato il',
+        'first_name' => 'Nome',
+        'last_name' => 'Cognome',
+>>>>>>> 6ed19256f (.)
     ],
     'rating' => [
         'no_import' => 'Nessuna cifra inserita',
@@ -119,6 +145,9 @@ return [
             'label' => 'updateAction',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Breadcrumb',
     'plural_label' => 'Breadcrumb (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

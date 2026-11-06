@@ -80,7 +80,15 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    $result = $object->nonExistentMethod();
+<<<<<<< HEAD
    
+<<<<<<< .merge_file_CwUxKN
+=======
+   
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_SlsKRV
    // Dopo
    $result = $object->existingMethod();
    ```
@@ -89,7 +97,15 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    $value = $object->nonExistentProperty;
+<<<<<<< HEAD
    
+<<<<<<< .merge_file_CwUxKN
+=======
+   
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_SlsKRV
    // Dopo
    $value = $object->existingProperty;
    ```
@@ -98,7 +114,15 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    public function process($data) {
+<<<<<<< HEAD
    
+<<<<<<< .merge_file_CwUxKN
+=======
+   
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_SlsKRV
    // Dopo
    public function process(array $data): void {
    ```
@@ -107,11 +131,27 @@ Lo script opera sul file `phpstan.neon` nella directory principale. La configura
    ```php
    // Prima
    public function getData() {
+<<<<<<< HEAD
    
+<<<<<<< .merge_file_CwUxKN
+=======
+   
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_SlsKRV
    // Dopo
    public function getData(): array {
    ```
 
 ## Conclusione
 
+<<<<<<< .merge_file_CwUxKN
 L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza. 
+=======
+L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza.
+<<<<<<< HEAD
+L'analisi incrementale ti consente di migliorare gradualmente la qualità del codice, affrontando i problemi in ordine di importanza e complessità. Una volta raggiunto il livello 9, il codice sarà conforme agli standard più elevati di qualità e tipo-sicurezza. 
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_SlsKRV

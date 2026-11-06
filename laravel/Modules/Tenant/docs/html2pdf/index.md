@@ -111,4 +111,12 @@ enum PdfEngineEnum
     case SPIPU;    // spipu/html2pdf (default)
     case SPATIE;   // spatie/laravel-pdf (alternative)
 }
+<<<<<<< .merge_file_giodj9
 ```
+=======
+<<<<<<< HEAD
+```
+=======
+```
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_2Ec6EQ

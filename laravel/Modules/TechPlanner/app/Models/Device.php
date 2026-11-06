@@ -50,7 +50,22 @@ use Override;
  * @property string|null $purchase_date
  * @property Carbon|null $first_verification_date
  * @property string|null $warranty_expiration
+<<<<<<< .merge_file_ErHGde
  *
+=======
+ * @property-read Profile|null $creator
+ * @property-read DeviceVerification|null $latest_verification
+ * @property-read bool $needs_verification
+ * @property-read Profile|null $updater
+ * @property-read int|null $verifications_count
+<<<<<<< HEAD
+ *
+=======
+>>>>>>> 6ed19256f (.)
+ * @method static Builder<static>|Device newModelQuery()
+ * @method static Builder<static>|Device newQuery()
+ * @method static Builder<static>|Device query()
+>>>>>>> .merge_file_L2l5le
  * @method static Builder<static>|Device whereAppointmentId($value)
  * @method static Builder<static>|Device whereBrand($value)
  * @method static Builder<static>|Device whereClientId($value)
@@ -75,7 +90,16 @@ use Override;
  * @method static Builder<static>|Device whereUpdatedAt($value)
  * @method static Builder<static>|Device whereUpdatedBy($value)
  * @method static Builder<static>|Device whereWarrantyExpiration($value)
+<<<<<<< HEAD
  *
+<<<<<<< .merge_file_ErHGde
+=======
+ * @property-read Profile|null $deleter
+ *
+=======
+ * @property-read Profile|null $deleter
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_L2l5le
  * @mixin \Eloquent
  */
 class Device extends BaseModel

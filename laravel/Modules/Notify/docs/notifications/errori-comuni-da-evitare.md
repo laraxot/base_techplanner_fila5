@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_fHy8fT
 ---
 title: "errori comuni da evitare"
 type: note
@@ -10,24 +11,48 @@ discussions: []
 status: draft
 ---
 
+=======
+# Errori Comuni da Evitare nelle Implementazioni di Moduli
+<<<<<<< HEAD
+# Errori Comuni da Evitare nelle Implementazioni di Moduli <nome progetto>
+>>>>>>> .merge_file_tg0bXK
 # Errori Comuni da Evitare nelle Implementazioni di Moduli
 # Errori Comuni da Evitare nelle Implementazioni di Moduli <nome progetto>
+=======
+# Errori Comuni da Evitare nelle Implementazioni di Moduli SaluteOra
+>>>>>>> 6ed19256f (.)
 
 ## Errori di Struttura Directory e Namespace
 
 1. **Errore di Case nelle Directory**
+<<<<<<< HEAD
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
+=======
+   - ❌ ERRATO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/`
+   - ❌ ERRATO: `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/`
+   - ❌ ERRATO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/`
+>>>>>>> 6ed19256f (.)
 
    > Le directory standard di Laravel sono sempre in lowercase (`app`, `config`, `resources`, ecc.)
 
 2. **Errore di Namespace nei File**
    - ❌ ERRATO: `namespace Modules\Notify\App\Actions;`
    - ✅ CORRETTO: `namespace Modules\Notify\Actions;`
+<<<<<<< .merge_file_fHy8fT
+=======
+<<<<<<< HEAD
+   
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tg0bXK
 
    > Il namespace dipende dalla configurazione PSR-4 nel composer.json del modulo
 
@@ -45,6 +70,13 @@ status: draft
            'retry_attempts' => 3,  // ERRORE: Duplicazione
        ],
    ],
+<<<<<<< .merge_file_fHy8fT
+=======
+<<<<<<< HEAD
+   
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tg0bXK
 
    // CORRETTO
    'drivers' => [
@@ -104,8 +136,13 @@ status: draft
 ## Errori di Struttura Directory e Namespace
 
 1. **Errore di Case nelle Directory**
+<<<<<<< HEAD
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
+=======
+   - ❌ ERRATO: `/var/www/html/<directory progetto>/laravel/Modules/Notify/App/Actions/`
+   - ✅ CORRETTO: `/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Actions/`
+>>>>>>> 6ed19256f (.)
 
    > Le directory standard di Laravel sono sempre in lowercase (`app`, `config`, `resources`, ecc.)
 
@@ -182,4 +219,12 @@ status: draft
 3. **Principio DRY (Don't Repeat Yourself)**
    - Non duplicare configurazioni generiche
    - Riutilizzare componenti e logiche esistenti
+<<<<<<< .merge_file_fHy8fT
    - Centralizzare comportamenti comuni
+=======
+<<<<<<< HEAD
+   - Centralizzare comportamenti comuni
+=======
+   - Centralizzare comportamenti comuni
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tg0bXK

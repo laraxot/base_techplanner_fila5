@@ -24,10 +24,6 @@ class GetTaskFrequenciesAction
             return $frequencies;
         }
 
-<<<<<<< HEAD
         throw new Exception('['.__LINE__.']['.class_basename($this).']');
-=======
-        throw new Exception('[' . __LINE__ . '][' . class_basename($this) . ']');
->>>>>>> 6ed19256f (.)
     }
 }

@@ -1,6 +1,16 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_70kiIw
+=======
+
+use Filament\Resources\Pages\ListRecords;
+use Illuminate\Database\Eloquent\Model;
+<<<<<<< HEAD
+=======
+use Mockery\MockInterface;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_JkzsiM
 use Modules\Activity\Filament\Actions\ListLogActivitiesAction;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestPage;
 use Modules\Activity\Tests\Fixtures\ListLogActivitiesActionTestRecord;
@@ -27,8 +37,31 @@ test('action has correct configuration', function (): void {
 test('action generates a log-activity URL containing record key', function (): void {
     $action = ListLogActivitiesAction::make();
 
+<<<<<<< .merge_file_70kiIw
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResourceSimple::class);
     $record = new ListLogActivitiesActionTestRecord;
+=======
+<<<<<<< HEAD
+    $resource = new class
+    {
+=======
+    $resource = new class() {
+>>>>>>> 6ed19256f (.)
+        public static function getUrl(string $name, array $parameters = []): string
+        {
+            $record = $parameters['record'] ?? null;
+            $key = $record instanceof Model ? (string) $record->getKey() : '';
+
+            return '/log-activity/'.$key;
+        }
+    };
+
+    $livewire = Mockery::mock(ListRecords::class);
+    $livewire->shouldReceive('getResource')->andReturn($resource::class);
+
+    $record = Mockery::mock(Model::class);
+    $record->shouldReceive('getKey')->andReturn('test-record-key');
+>>>>>>> .merge_file_JkzsiM
 
     $action->livewire($livewire);
     $action->record($record);

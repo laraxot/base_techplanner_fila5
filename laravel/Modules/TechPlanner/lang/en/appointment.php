@@ -1,3 +1,8 @@
+<<<<<<< .merge_file_vtWQnv
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_3RnDwZ
 <?php
 
 declare(strict_types=1);
@@ -304,6 +309,10 @@ return [
     // ==============================================
     // OPTIONS - OPZIONI E VALORI PREDEFINITI
     // ==============================================
+<<<<<<< .merge_file_vtWQnv
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_3RnDwZ
     'options' => [
         'statuses' => [
             'scheduled' => 'Scheduled',

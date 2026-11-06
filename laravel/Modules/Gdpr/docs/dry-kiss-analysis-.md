@@ -42,4 +42,12 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
+<<<<<<< .merge_file_fvl7vK
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+=======
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+<<<<<<< HEAD
+[DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_b1yVC4

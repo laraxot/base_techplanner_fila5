@@ -285,6 +285,7 @@ Activity/
 
 ---
 
+<<<<<<< HEAD
 **Last Updated**: 2026-01-15
 **Maintainer**: Team Laraxot
 **Status**: Active Development
@@ -293,6 +294,7 @@ topic: roadmap
 canonical: ../../../Themes/docs/shared-components/roadmap--Modules.md
 
 See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Modules.md
+<<<<<<< .merge_file_GGaOWc
 - [phpstan-override-fix-roadmap.md](phpstan-override-fix-roadmap.md)
 - [phpstan-roadmap.md](phpstan-roadmap.md) (✅ Completed)
 - [roadmap/00-index.md](roadmap/00-index.md)
@@ -318,3 +320,10 @@ See canonical documentation: ../../../Themes/docs/shared-components/roadmap--Mod
 - [roadmap/tasks/realtime-monitoring-dashboard.md](roadmap/tasks/realtime-monitoring-dashboard.md)
 - [roadmap/vision.md](roadmap/vision.md)
 - [stabilization-roadmap.md](stabilization-roadmap.md)
+=======
+=======
+**Last Updated**: 2026-01-02
+**Maintainer**: Team Laraxot
+**Status**: Active Development
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_JxbpaX

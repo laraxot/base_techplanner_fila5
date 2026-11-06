@@ -6,8 +6,18 @@ namespace Modules\Tenant\Actions\Config;
 
 use InvalidArgumentException;
 use Modules\Tenant\Actions\GetTenantNameAction;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
+<<<<<<< .merge_file_AyacFC
+=======
+use function Safe\realpath;
+=======
+use function Safe\realpath;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
+
+>>>>>>> .merge_file_N5mxmz
 class GetTenantFilePathAction
 {
     use QueueableAction;

@@ -21,7 +21,15 @@ class ResolveTenantConfigValueAction
      * Works consistently in web, console, queue, and scheduler contexts.
      *
      * @param  string  $key  Config key (e.g., 'app.name', 'mail.driver')
+<<<<<<< .merge_file_Wwh8wP
      * @param  string|int|array<mixed>|null  $defaultValue  Default value if config not found
+=======
+     * @param  string|int|array<mixed>|null  $_default  Default value if config not found
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_mRisYL
      * @return float|int|string|array<mixed>|null Resolved configuration value
      *
      * @throws Exception If config key is invalid or value type is unexpected
@@ -55,9 +63,23 @@ class ResolveTenantConfigValueAction
             ? app(FilterConfigStringKeysAction::class)->execute($originalConf)
             : [];
 
+<<<<<<< .merge_file_Wwh8wP
         $extraConfTyped = is_array($extraConf)
             ? app(FilterConfigStringKeysAction::class)->execute($extraConf)
             : [];
+=======
+        if (! \is_array($extraConf)) {
+            $extraConf = [];
+        }
+
+<<<<<<< HEAD
+        $mergeConf = array_replace_recursive($originalConf, $extraConf);
+=======
+        $mergeConf = collect($originalConf)->merge($extraConf)->all();
+>>>>>>> 6ed19256f (.)
+
+        Config::set($group, $mergeConf);
+>>>>>>> .merge_file_mRisYL
 
         return app(MergeRecursiveStringKeyConfigAction::class)->execute($originalConfTyped, $extraConfTyped);
     }

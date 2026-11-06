@@ -147,10 +147,25 @@ return [
 ## Collegamenti
 - [Documentazione API](./api.md)
 - [Template Email](./templates.md)
+<<<<<<< .merge_file_L00mbO
+=======
+- [Guida Contribuzione](./CONTRIBUTING.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_hMNXfl
 - [Guida Contribuzione](./contributing.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Note
 - Testare le notifiche in ambiente di sviluppo
 - Monitorare i tassi di consegna
 - Aggiornare i template regolarmente
+<<<<<<< .merge_file_L00mbO
 - Mantenere le traduzioni aggiornate 
+=======
+<<<<<<< HEAD
+- Mantenere le traduzioni aggiornate 
+=======
+- Mantenere le traduzioni aggiornate
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_hMNXfl

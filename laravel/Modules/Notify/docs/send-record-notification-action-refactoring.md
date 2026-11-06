@@ -12,9 +12,15 @@ status: draft
 
 # Refactoring: SendRecordNotificationAction Duplication
 
+<<<<<<< HEAD
 **Date**: 18 Dicembre 2025  
 **Status**: ✅ Refactoring Completed  
 **Module**: Notify  
+=======
+**Date**: 18 Dicembre 2025
+**Status**: ✅ Refactoring Completed
+**Module**: Notify
+>>>>>>> 6ed19256f (.)
 **Focus**: DRY + KISS + Clean Code Principles
 
 ## Overview
@@ -60,7 +66,11 @@ The `sendWhatsApp()` method was slightly different but still shared the core not
 - Method repetition: 3 similar notification methods (with 2 nearly identical)
 - Attribute lookup duplication: 3 similar lookup methods
 
+<<<<<<< HEAD
 ### After Refactoring  
+=======
+### After Refactoring
+>>>>>>> 6ed19256f (.)
 - Lines of Code: ~140 (slightly reduced due to better organization)
 - Method repetition: Eliminated through `extractRecordAttribute()` and `sendGenericNotification()` abstractions
 - Attribute lookup: Unified through generic approach
@@ -68,11 +78,27 @@ The `sendWhatsApp()` method was slightly different but still shared the core not
 
 ## Architecture Compliance
 
+<<<<<<< HEAD
 ✅ **QueueableAction Pattern**: Maintained proper action structure  
 ✅ **Error Handling**: Preserved comprehensive exception handling  
 ✅ **Type Safety**: Maintained strict typing throughout  
 ✅ **Backward Compatibility**: Public interface unchanged  
+=======
+✅ **QueueableAction Pattern**: Maintained proper action structure
+✅ **Error Handling**: Preserved comprehensive exception handling
+✅ **Type Safety**: Maintained strict typing throughout
+✅ **Backward Compatibility**: Public interface unchanged
+>>>>>>> 6ed19256f (.)
 ✅ **Laraxot Philosophy**: Follows established architectural patterns
 
 ---
+<<<<<<< .merge_file_z7r3m4
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+
+<<<<<<< HEAD
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_YEkDak

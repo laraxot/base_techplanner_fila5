@@ -21,9 +21,18 @@ require_once __DIR__.'/PestHelpers.php';
  * |--------------------------------------------------------------------------
  */
 
+<<<<<<< .merge_file_BIQsu2
 // expect()->extend('toBeValidHtml', function () {
 //     return $this->toContain('<html');
 // });
+=======
+<<<<<<< HEAD
+=======
+// expect()->extend('toBeValidHtml', function () {
+//     return $this->toContain('<html');
+// });
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_KhVkZM
 
 /*
  * |--------------------------------------------------------------------------

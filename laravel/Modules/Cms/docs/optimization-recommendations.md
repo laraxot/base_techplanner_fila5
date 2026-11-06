@@ -31,7 +31,14 @@ status: draft
 ### ⚠️ AREE DI MIGLIORAMENTO CRITICHE
 
 #### 1. Riusabilità Compromessa (CRITICO)
+<<<<<<< .merge_file_BcFp4c
+=======
+- **194+ occorrenze hardcoded** di "<nome progetto>"
+<<<<<<< HEAD
+>>>>>>> .merge_file_GdJUvV
 - **194+ occorrenze hardcoded** di "<nome progetto>" 
+=======
+>>>>>>> 6ed19256f (.)
 - **Path assoluti** in configurazioni e esempi
 - **Content specifico** per <main module> in examples
 - **URL hardcoded** in documentazione
@@ -73,7 +80,15 @@ return [
         'domain' => config('app.domain'),
         'business_type' => config('app.business_type', 'organization'),
     ],
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_BcFp4c
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_GdJUvV
     'content' => [
         'default_templates' => [
             'homepage' => 'cms::templates.homepage',
@@ -81,7 +96,15 @@ return [
             'about' => 'cms::templates.about',
         ],
     ],
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_BcFp4c
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_GdJUvV
     'seo' => [
         'default_meta' => [
             'title' => config('app.name') . ' - {{page_title}}',
@@ -95,12 +118,24 @@ return [
 ```blade
 {{-- templates/services.blade.php --}}
 <x-cms::page>
+<<<<<<< HEAD
     <x-cms::hero 
         title="I nostri servizi"
         subtitle="Scopri tutti i servizi offerti da {{ config('app.name') }}"
     />
     
     <x-cms::services-grid 
+<<<<<<< .merge_file_BcFp4c
+=======
+=======
+>>>>>>> 6ed19256f (.)
+    <x-cms::hero
+        title="I nostri servizi"
+        subtitle="Scopri tutti i servizi offerti da {{ config('app.name') }}"
+    />
+
+    <x-cms::services-grid
+>>>>>>> .merge_file_GdJUvV
         :services="$services"
         business-type="{{ config('app.business_type', 'organization') }}"
     />
@@ -167,7 +202,15 @@ class ContentCacheService
     public function getCachedPage(string $slug): ?Page
     {
         $cacheKey = $this->cachePrefix . 'page_' . $slug;
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_BcFp4c
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_GdJUvV
         return cache()->remember($cacheKey, $this->defaultTtl, function () use ($slug) {
             return Page::with(['blocks', 'media', 'seo'])
                 ->where('slug', $slug)
@@ -225,7 +268,15 @@ class SeoService
     public function generateStructuredData(Page $page): array
     {
         $businessType = config('app.business_type', 'Organization');
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_BcFp4c
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_GdJUvV
         return [
             '@context' => 'https://schema.org',
             '@type' => $businessType,
@@ -330,7 +381,22 @@ php artisan cms:seo-audit
 
 ## Collegamenti
 
+<<<<<<< .merge_file_BcFp4c
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Content Management Guide](content-management/)
 - [SEO Best Practices](seo/)
 
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: gennaio 2025*
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+- [Content Management Guide](content-management/)
+- [SEO Best Practices](seo/)
+=======
+- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+- [Content Management Guide](content-management/)
+- [SEO Best Practices](seo/)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_GdJUvV

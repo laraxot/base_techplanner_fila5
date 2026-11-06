@@ -11,6 +11,21 @@ beforeEach(function (): void {
 /*
  * Tests for dynamic registration pages rendered by Themes/One
  * Route pattern: /{locale}/auth/{type}/register
+<<<<<<< .merge_file_ADSalH
+=======
+ *
+ * This test suite verifies that:
+ * 1. Registration pages render correctly for each user type
+ * 2. Authentication rules are enforced (guests can access, authenticated users are redirected)
+ * 3. Dynamic content is correctly displayed based on user type
+ * 4. Required components (Livewire widget) are present
+ *
+<<<<<<< HEAD
+=======
+ * The Cms module must remain independent from <nome progetto>; all user operations
+>>>>>>> 6ed19256f (.)
+ * go through XotData to obtain the correct User class.
+>>>>>>> .merge_file_Nd8lex
  */
 
 /** @var list<string> $userTypes */
@@ -83,8 +98,28 @@ describe('Registration Page Performance', function () use ($userTypes): void {
             /** @var Illuminate\Testing\TestResponse<Illuminate\Http\Response> $response */
             $loadTime = microtime(true) - $startTime;
 
+<<<<<<< .merge_file_ADSalH
             Assert::assertSame(200, $response->status());
             Assert::assertLessThan(3.0, $loadTime);
         });
     }
+=======
+<<<<<<< HEAD
+=======
+test('guest can view type registration pages', function (): void {
+    foreach (['doctor', 'patient'] as $type) {
+        $response = get("/it/auth/{$type}/register");
+        $this->assertSame(404, $response->status());
+    }
+});
+
+test('authenticated user is redirected from type registration pages', function (): void {
+    $this->assertTrue(true);
+});
+
+test('invalid user type is handled gracefully', function (): void {
+    $response = get('/it/auth/invalid-type/register');
+    $this->assertSame(404, $response->status());
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Nd8lex
 });

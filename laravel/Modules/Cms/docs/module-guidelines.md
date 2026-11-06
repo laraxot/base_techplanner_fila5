@@ -97,7 +97,15 @@ Modifica il file `header.blade.php` in questa posizione per personalizzare l'hea
 
 ## Collegamenti Bidirezionali
 - [README](README.md) - Documentazione principale del modulo
+<<<<<<< .merge_file_A9ixnC
 - [Architettura](frontoffice/architecture.md) - Architettura del modulo
+=======
+<<<<<<< HEAD
+- [README](readme.md) - Documentazione principale del modulo
+=======
+>>>>>>> 6ed19256f (.)
+- [Architettura](architecture.md) - Architettura del modulo
+>>>>>>> .merge_file_Of6tIC
 - [Struttura](structure.md) - Struttura del modulo
 - [Namespace](namespace-moduli-laravel-<nome progetto>.md) - Convenzioni namespace
 - [Case Sensitivity](case-sensitivity-percorsi-moduli.md) - Gestione case sensitivity
@@ -105,9 +113,24 @@ Modifica il file `header.blade.php` in questa posizione per personalizzare l'hea
 - [Componenti](components.md) - Componenti disponibili
 
 ## Vedi Anche
+<<<<<<< .merge_file_A9ixnC
+=======
+- [Modulo Xot](../Xot/project_docs/README.md) - Linee guida generali
+- [Modulo UI](../UI/project_docs/README.md) - Componenti di interfaccia
+- [Modulo Theme](../Theme/project_docs/README.md) - Gestione temi
+- [Convenzioni Naming](../../../project_docs/standards/file_naming_conventions.md) - Standard naming
+<<<<<<< HEAD
+>>>>>>> .merge_file_Of6tIC
 - [Modulo Xot](../xot/project_docs/readme.md) - Linee guida generali
 - [Modulo UI](../ui/project_docs/readme.md) - Componenti di interfaccia
 - [Modulo Theme](../theme/project_docs/readme.md) - Gestione temi
 - [Convenzioni Naming](../../../../docs/project/standards/file_naming_conventions.md) - Standard naming
 - [Documentazione Laravel](https://laravel.com/docs) - Documentazione ufficiale
 - [Best Practices](https://laravel.com/project_docs/11.x/best-practices) - Best practices Laravel
+<<<<<<< .merge_file_A9ixnC
+=======
+=======
+- [Documentazione Laravel](https://laravel.com/docs) - Documentazione ufficiale
+- [Best Practices](https://laravel.com/project_docs/11.x/best-practices) - Best practices Laravel
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Of6tIC

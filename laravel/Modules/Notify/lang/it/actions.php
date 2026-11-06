@@ -22,7 +22,16 @@ return [
             'email_not_available' => 'Email non disponibile per questo record',
             'phone_not_available' => 'Numero di telefono non disponibile per questo record',
             'whatsapp_not_available' => 'Numero WhatsApp non disponibile per questo record',
+<<<<<<< .merge_file_QUNi84
             'channel_not_sent' => 'Canale non inviato (dati non disponibili]'],
+=======
+<<<<<<< HEAD
+            'channel_not_sent' => 'Canale non inviato (dati non disponibili]',
+=======
+            'channel_not_sent' => 'Canale non inviato (dati non disponibili)',
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_uN9ERx
         'notifications' => [
             'success' => [
                 'title' => 'Notifiche inviate',
@@ -32,8 +41,20 @@ return [
                 'invalid_data' => 'Template e almeno un canale devono essere selezionati'],
             'error' => [
                 'title' => 'Alcune notifiche non sono state inviate',
+<<<<<<< HEAD
                 'item' => 'Record :record (canale :channel]: :error',
+<<<<<<< .merge_file_QUNi84
                 'more_errors' => '... e altri :count errori']]],
+=======
+=======
+                'item' => 'Record :record (canale :channel): :error',
+>>>>>>> 6ed19256f (.)
+                'more_errors' => '... e altri :count errori',
+            ],
+        ],
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_uN9ERx
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -67,4 +88,13 @@ return [
         'edit' => [
             'label' => 'Modifica Actions'],
         'delete' => [
+<<<<<<< .merge_file_QUNi84
             'label' => 'Elimina Actions']]];
+=======
+            'label' => 'Elimina Actions',
+        ],
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_uN9ERx

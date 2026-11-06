@@ -242,4 +242,12 @@ npm run build
 
 - [Documentazione Filament](https://filamentphp.com)
 - [Documentazione Livewire](https://livewire.laravel.com)
+<<<<<<< .merge_file_kcVvUF
 - [Documentazione TailwindCSS](https://tailwindcss.com) 
+=======
+- [Documentazione TailwindCSS](https://tailwindcss.com)
+<<<<<<< HEAD
+- [Documentazione TailwindCSS](https://tailwindcss.com) 
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_aA4WrV

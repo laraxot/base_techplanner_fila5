@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Event Sourcing in Laravel"
 type: note
@@ -8,6 +9,13 @@ qmd: "event sourcing in laravel activity"
 ---
 # Event Sourcing in Laravel
 
+<<<<<<< .merge_file_1EU5Tz
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
+=======
+# Event Sourcing in Laravel
+
+>>>>>>> .merge_file_cgvlEi
 Questo documento fornisce una guida completa sull'implementazione dell'**Event Sourcing** in Laravel, basata sul libro *Event Sourcing in Laravel* di Brent Roose, pubblicato da Spatie nel 2021. Include concetti fondamentali, pattern avanzati, sfide, casi d'uso pratici e consigli per migliorare il codice esistente nel contesto del modulo `Activity`.
 
 ## Introduzione all'Event Sourcing
@@ -165,6 +173,11 @@ class UserActivityReportProjector
 
 L'Event Sourcing offre un approccio potente per gestire la complessità nel modulo `Activity`, garantendo tracciabilità e flessibilità. Implementando radici aggregate, proiettori e strategie come snapshotting, è possibile migliorare la robustezza e la scalabilità del codice esistente. Seguendo i pattern e i consigli descritti, il modulo può evolversi per supportare requisiti futuri senza compromettere la coerenza dei dati.
 
+<<<<<<< .merge_file_1EU5Tz
 Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-duplicate.md
+=======
+Se hai bisogno di ulteriori dettagli o di un'implementazione specifica, fammi sapere!
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_cgvlEi

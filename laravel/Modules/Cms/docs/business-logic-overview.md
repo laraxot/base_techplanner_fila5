@@ -157,6 +157,11 @@ Page::create([
 
 ---
 
+<<<<<<< .merge_file_wQo08P
+=======
+**Last Updated**: 2025-08-28
+<<<<<<< HEAD
+>>>>>>> .merge_file_URXDui
 
 title: "business logic overview"
 type: note
@@ -168,3 +173,10 @@ issues: []
 discussions: []
 **Module Version**: Latest
 **Business Logic Status**: Core functionality implemented
+<<<<<<< .merge_file_wQo08P
+=======
+=======
+**Module Version**: Latest
+**Business Logic Status**: Core functionality implemented
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_URXDui

@@ -15,15 +15,31 @@ return [
             'tooltip' => 'Nome del tema',
             'placeholder' => 'es: Tema Aziendale',
             'help' => 'Inserisci un nome descrittivo per il tema',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_ECN2mg
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_YfTam7
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del tema',
             'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
             'help' => 'Breve descrizione dello scopo del tema',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_ECN2mg
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_YfTam7
         'colors' => [
             'label' => 'Colori',
             'tooltip' => 'Schema colori del tema',
@@ -52,9 +68,21 @@ return [
                 'error' => [
                     'label' => 'Errore',
                     'tooltip' => 'Colore per messaggi di errore',
+<<<<<<< .merge_file_ECN2mg
                     'placeholder' => 'es: #D0021B']],
             'helper_text' => '',
             'description' => ''],
+=======
+                    'placeholder' => 'es: #D0021B',
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_YfTam7
         'typography' => [
             'label' => 'Tipografia',
             'tooltip' => 'Impostazioni tipografiche',
@@ -80,9 +108,23 @@ return [
                             'tooltip' => 'Testo normale'],
                         'large' => [
                             'label' => 'Grande',
+<<<<<<< .merge_file_ECN2mg
                             'tooltip' => 'Testo grande (es: titoli)']]]],
             'helper_text' => '',
             'description' => ''],
+=======
+                            'tooltip' => 'Testo grande (es: titoli)',
+                        ],
+                    ],
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_YfTam7
         'layout' => [
             'label' => 'Layout',
             'tooltip' => 'Impostazioni del layout',
@@ -96,9 +138,21 @@ return [
                     'tooltip' => 'Stile del piè di pagina'],
                 'spacing' => [
                     'label' => 'Spaziatura',
+<<<<<<< .merge_file_ECN2mg
                     'tooltip' => 'Spaziatura tra gli elementi']],
             'helper_text' => '',
             'description' => ''],
+=======
+                    'tooltip' => 'Spaziatura tra gli elementi',
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_YfTam7
         'assets' => [
             'label' => 'Risorse',
             'tooltip' => 'Risorse del tema',
@@ -112,21 +166,50 @@ return [
                     'tooltip' => 'Immagine di sfondo'],
                 'icons' => [
                     'label' => 'Icone',
+<<<<<<< .merge_file_ECN2mg
                     'tooltip' => 'Set di icone del tema']],
             'helper_text' => '',
             'description' => ''],
+=======
+                    'tooltip' => 'Set di icone del tema',
+                ],
+            ],
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_YfTam7
         'is_default' => [
             'label' => 'Predefinito',
             'tooltip' => 'Imposta come tema predefinito',
             'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_ECN2mg
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_YfTam7
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del tema',
             'help' => 'Solo i temi attivi possono essere utilizzati',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_ECN2mg
             'description' => '']],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_YfTam7
     'actions' => [
         'preview' => [
             'label' => 'Anteprima',
@@ -185,6 +268,18 @@ return [
             'tooltip' => 'Filtra per stato di attivazione'],
         'type' => [
             'label' => 'Tipo',
+<<<<<<< .merge_file_ECN2mg
             'tooltip' => 'Filtra per tipo di tema']],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+            'tooltip' => 'Filtra per tipo di tema',
+        ],
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_YfTam7

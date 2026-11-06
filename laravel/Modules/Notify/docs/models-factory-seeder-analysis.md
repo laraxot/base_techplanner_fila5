@@ -67,4 +67,11 @@ status: draft
 
 ---
 *Ultimo aggiornamento: 2025-01-06*
+<<<<<<< .merge_file_4Ks3rS
 
+=======
+<<<<<<< HEAD
+*Ultimo aggiornamento: 2025-01-06*
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gegSak

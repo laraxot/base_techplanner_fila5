@@ -13,6 +13,22 @@ return [
         'sort' => '50',
     ],
     'fields' => [
+<<<<<<< .merge_file_KriM5A
+=======
+        'id' => [
+            'label' => 'ID',
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'name' => [
+            'label' => 'Name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> .merge_file_b1BE1F
         'host' => [
             'label' => 'Host SMTP',
             'placeholder' => 'Inserisci l\'host SMTP (es. smtp.gmail.com)',
@@ -58,6 +74,7 @@ return [
             'placeholder' => 'destinatario@dominio.com',
             'help' => 'Indirizzo email del destinatario per il test SMTP',
         ],
+<<<<<<< .merge_file_KriM5A
         'subject' => [
             'label' => 'Oggetto',
             'placeholder' => 'Test configurazione SMTP - {{app_name}}',
@@ -67,6 +84,57 @@ return [
             'label' => 'Contenuto HTML',
             'placeholder' => '<h1>Test SMTP</h1><p>Questa è una email di test per verificare la configurazione SMTP.</p>',
             'help' => 'Contenuto HTML della email di test (opzionale)',
+=======
+        'created_at' => [
+            'label' => 'Erstellt Am',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Name',
+        ],
+        'host' => [
+            'label' => 'Host',
+        ],
+        'port' => [
+            'label' => 'Port',
+        ],
+        'username' => [
+            'label' => 'Benutzername',
+        ],
+        'password' => [
+            'label' => 'Passwort',
+        ],
+        'encryption' => [
+            'label' => 'Verschlüsselung',
+        ],
+        'from_address' => [
+            'label' => 'Absenderadresse',
+        ],
+        'from_name' => [
+            'label' => 'Absendername',
+        ],
+        'status' => [
+            'label' => 'Status',
+        ],
+        'last_tested_at' => [
+            'label' => 'Zuletzt Getestet Am',
+        ],
+        'created_at' => [
+            'label' => 'Erstellt Am',
+>>>>>>> 6ed19256f (.)
+        ],
+        'body_html' => [
+            'description' => 'HTML-Körper',
+            'helper_text' => 'HTML-Inhalt der E-Mail',
+<<<<<<< HEAD
+            'label' => '',
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_b1BE1F
         ],
     ],
     'actions' => [

@@ -45,7 +45,14 @@ return [
         'messages' => [
             'created' => 'Template email creato con successo',
             'updated' => 'Template email aggiornato con successo',
+<<<<<<< .merge_file_fKOybs
             'deleted' => 'Template email eliminato con successo']],
+=======
+            'deleted' => 'Template email eliminato con successo',
+        ],
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_yPiOoV
     'label' => 'Mail',
     'plural_label' => 'Mail (Plurale)',
     'navigation' => [
@@ -79,4 +86,13 @@ return [
         'edit' => [
             'label' => 'Modifica Mail'],
         'delete' => [
+<<<<<<< .merge_file_fKOybs
             'label' => 'Elimina Mail']]];
+=======
+            'label' => 'Elimina Mail',
+        ],
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_yPiOoV

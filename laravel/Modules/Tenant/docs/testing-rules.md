@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,6 +15,13 @@ status: draft
 ---
 # Testing Rules Summary
 
+<<<<<<< .merge_file_UG3alB
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/testing-rules-Modules.md
+=======
+# Testing Rules Summary
+
+>>>>>>> .merge_file_xZkWLk
 ## Regole Fondamentali dei Test
 
 ### 1. **Pest Testing Mandatory**
@@ -115,3 +123,7 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
+<<<<<<< .merge_file_UG3alB
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_xZkWLk

@@ -18,16 +18,28 @@ status: draft
 ```php
 $attachments = [
     [
+<<<<<<< HEAD
         'path' => 'public_html/images/avatars/default-3.svg',
         'path' => 'public_html/images/avatars/default-3.svg',
         'path' => 'public_html/images/avatars/default-3.svg',
+=======
+        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default-3.svg',
+        'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
+        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default-3.svg',
+>>>>>>> 6ed19256f (.)
         'as' => 'logo.png',
         'mime' => 'image/png'
     ],
     [
+<<<<<<< HEAD
         'path' => 'public_html/images/avatars/default-3.svg',
         'path' => 'public_html/images/avatars/default-3.svg',
         'path' => 'public_html/images/avatars/default-3.svg',
+=======
+        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default-3.svg',
+        'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
+        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default-3.svg',
+>>>>>>> 6ed19256f (.)
         'as' => 'logo.png',
         'mime' => 'image/png'
     ]
@@ -49,10 +61,17 @@ $attachments = [
    ```php
    // Creare l'istanza dell'email
    $email = new SpatieEmail($user, 'due');
+<<<<<<< HEAD
    
    // Aggiungere gli allegati
    $email->addAttachments($attachments);
    
+=======
+
+   // Aggiungere gli allegati
+   $email->addAttachments($attachments);
+
+>>>>>>> 6ed19256f (.)
    // Inviare l'email
    Mail::to($data['to'])
        ->locale('it')
@@ -142,4 +161,8 @@ Mail::to($user->email)
 - Verificare la compatibilità
 - Documentare i tipi supportati
 - Implementare gestione errori
+<<<<<<< HEAD
 - Monitorare le performance 
+=======
+- Monitorare le performance
+>>>>>>> 6ed19256f (.)

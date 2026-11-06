@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: 03-flusso-utente
@@ -11,3 +12,9 @@ qmd: "03 flusso utente activity"
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_LphQzW
+=======
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_StO8fv

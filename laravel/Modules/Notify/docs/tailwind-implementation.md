@@ -95,7 +95,11 @@ module.exports = {
 // resources/views/components/email/button.blade.php
 @props(['url', 'color' => 'primary'])
 
+<<<<<<< HEAD
 <a href="{{ $url }}" 
+=======
+<a href="{{ $url }}"
+>>>>>>> 6ed19256f (.)
    class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-notify-{{ $color }} hover:bg-notify-{{ $color }}-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-notify-{{ $color }}-500">
     {{ $slot }}
 </a>
@@ -296,11 +300,19 @@ class EmailTemplateTest extends TestCase
     public function test_welcome_email_renders_correctly()
     {
         $user = User::factory()->create();
+<<<<<<< HEAD
         
         $view = view('notifications::email.welcome', [
             'user' => $user
         ])->render();
         
+=======
+
+        $view = view('notifications::email.welcome', [
+            'user' => $user
+        ])->render();
+
+>>>>>>> 6ed19256f (.)
         $this->assertStringContainsString('Benvenuto', $view);
         $this->assertStringContainsString($user->name, $view);
         $this->assertStringContainsString('bg-white', $view);
@@ -318,7 +330,11 @@ class EmailResponsiveTest extends TestCase
         $view = view('notifications::email.appointment', [
             'appointment' => Appointment::factory()->create()
         ])->render();
+<<<<<<< HEAD
         
+=======
+
+>>>>>>> 6ed19256f (.)
         $this->assertStringContainsString('sm:max-w-xl', $view);
         $this->assertStringContainsString('md:flex-row', $view);
     }
@@ -332,6 +348,15 @@ class EmailResponsiveTest extends TestCase
 - Ogni sezione ha il suo README.md specifico
 
 ## Contribuire
+<<<<<<< .merge_file_a89fVW
+=======
+<<<<<<< HEAD
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md). Per contribuire alla documentazione, seguire le [Linee Guida](../../../project_docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../project_docs/regole_collegamenti_documentazione.md).
+
+## Collegamenti Completi
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../project_docs/README_links.md). 
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md). 
+>>>>>>> .merge_file_FFFbza
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
@@ -340,3 +365,16 @@ Per una lista completa di tutti i collegamenti tra i README.md, consultare il fi
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/project/README_links.md). 
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/README_links.md). 
+<<<<<<< .merge_file_a89fVW
+=======
+=======
+Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../docs/regole_collegamenti_documentazione.md).
+
+## Collegamenti Completi
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md). Per contribuire alla documentazione, seguire le [Linee Guida](../../../project_docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../project_docs/regole_collegamenti_documentazione.md).
+
+## Collegamenti Completi
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../project_docs/README_links.md).
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_FFFbza

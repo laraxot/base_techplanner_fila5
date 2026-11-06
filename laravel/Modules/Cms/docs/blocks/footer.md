@@ -29,11 +29,26 @@ Questo permette di aggiungere, ordinare e rimuovere ogni tipo di blocco.
 3. Testare su diversi dispositivi per la responsività.
 
 ## Collegamenti
+<<<<<<< .merge_file_V1ma8A
 - [Documentazione Blocchi](README.md)
+=======
+<<<<<<< HEAD
+- [Documentazione Blocchi](../blocks/readme.md)
+>>>>>>> .merge_file_NFHOgj
 - [PageContentBuilder](../filament-forms.md)
 - [Gestione Sezioni](../sections/footer-section.md)
 - [Documentazione UI](../../../UI/docs/README.md)
 - [Documentazione Moduli](../../xot/docs/modules.md)
+<<<<<<< .merge_file_V1ma8A
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Documentazione Blocchi](../blocks/README.md)
+- [PageContentBuilder](../filament-forms.md)
+- [Gestione Sezioni](../sections/footer-section.md)
+- [Documentazione UI](../../UI/docs/README.md)
+- [Documentazione Moduli](../../Xot/docs/modules.md)
+>>>>>>> .merge_file_NFHOgj
 - [Linee guida etichette Filament](/docs/filament-block-labels.md)
 
 ## Note
@@ -48,9 +63,29 @@ Le etichette dei Filament Blocks **NON** devono essere definite con `->label()`.
 ## Collegamenti tra versioni di footer.md
 * [footer.md](docs/laravel-app/themes/one/components/footer.md)
 * [footer.md](docs/sections/footer.md)
+<<<<<<< .merge_file_V1ma8A
 * [footer.md](../../../UI/docs/components/footer.md)
+=======
+<<<<<<< HEAD
+* [footer.md](laravel/modules/ui/docs/components/footer.md)
+>>>>>>> .merge_file_NFHOgj
 * [footer.md](laravel/modules/cms/docs/blocks/footer.md)
 * [footer.md](../themes/one/footer.md)
 * [footer.md](../components/footer.md)
 * [footer.md](laravel/themes/one/docs/components/layouts/footer.md)
 * [footer.md](laravel/themes/one/docs/sections/footer.md)
+<<<<<<< .merge_file_V1ma8A
+=======
+=======
+>>>>>>> 6ed19256f (.)
+* [footer.md](laravel/Modules/UI/docs/components/footer.md)
+* [footer.md](laravel/Modules/Cms/docs/blocks/footer.md)
+* [footer.md](laravel/Modules/Cms/docs/themes/one/footer.md)
+* [footer.md](laravel/Modules/Cms/docs/components/footer.md)
+* [footer.md](laravel/Themes/One/docs/components/layouts/footer.md)
+<<<<<<< HEAD
+* [footer.md](laravel/Themes/One/docs/sections/footer.md)
+=======
+* [footer.md](laravel/Themes/One/docs/sections/footer.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_NFHOgj

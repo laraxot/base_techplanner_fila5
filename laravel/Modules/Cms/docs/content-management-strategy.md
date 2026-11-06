@@ -18,7 +18,14 @@ Seguendo i principi **zen** e **minimalista** di Laraxot, la gestione dei conten
 
 ### 🧘 **Principi Zen del Contenuto**
 - **Semplicità**: Informazioni chiare e immediate
+<<<<<<< .merge_file_ATnkxL
+=======
+- **Trasparenza**: Conformità normativa GDPR per dati sanitari
+<<<<<<< HEAD
+>>>>>>> .merge_file_57BZ76
 - **Trasparenza**: Conformità normativa GDPR per dati sanitari  
+=======
+>>>>>>> 6ed19256f (.)
 - **Accessibilità**: Contenuti comprensibili a tutti gli utenti
 - **Fiducia**: Linguaggio professionale e rassicurante
 - **Etica**: Rispetto della privacy e dei diritti del paziente
@@ -28,7 +35,14 @@ Le pagine istituzionali devono:
 - Trasmettere **competenza medica** e **affidabilità**
 - Garantire **compliance normativa** (GDPR, Codice Privacy)
 - Facilitare l'**accessibilità** per tutti i pazienti
+<<<<<<< .merge_file_ATnkxL
+=======
+- Riflettere la **missione** di promozione della <slogan>
+<<<<<<< HEAD
+>>>>>>> .merge_file_57BZ76
 - Riflettere la **missione** di promozione della salute orale
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Struttura delle Pagine Istituzionali
 
@@ -41,7 +55,14 @@ Le pagine istituzionali devono:
 - Team medico con competenze certificate
 - Certificazioni e riconoscimenti
 
+<<<<<<< .merge_file_ATnkxL
+=======
+### 🔒 **Pagina 14: Privacy Policy**
+<<<<<<< HEAD
+>>>>>>> .merge_file_57BZ76
 ### 🔒 **Pagina 14: Privacy Policy**  
+=======
+>>>>>>> 6ed19256f (.)
 **Filosofia**: Trasparenza totale nella gestione dati sanitari
 **Compliance**: GDPR, Codice Privacy, normative sanitarie
 **Componenti strutturati**:
@@ -105,9 +126,25 @@ Le pagine istituzionali devono:
 
 Questa strategia integra:
 - [Gestione Homepage](/var/www/html/_bases/<directory progetto>/project_docs/gestione-homepage.md)
+<<<<<<< .merge_file_ATnkxL
+=======
+- [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_57BZ76
 - [Best Practice UX](/var/www/html/_bases/<directory progetto>/project_docs/ux-design-principles.md)  
+=======
+>>>>>>> 6ed19256f (.)
 - [Compliance GDPR](/var/www/html/_bases/<directory progetto>/project_docs/privacy-compliance.md)
 
 ---
+<<<<<<< .merge_file_ATnkxL
+=======
+
+**Ultimo aggiornamento**: Gennaio 2025
+**Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario
+<<<<<<< HEAD
+>>>>>>> .merge_file_57BZ76
 **Ultimo aggiornamento**: Gennaio 2025  
 **Revisione**: Conforme regole Laraxot olistica e filosofia zen del contenuto sanitario 
+=======
+>>>>>>> 6ed19256f (.)

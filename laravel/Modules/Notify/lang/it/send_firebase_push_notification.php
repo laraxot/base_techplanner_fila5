@@ -3,7 +3,15 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_228fK0
     'navigation' => ['label' => 'Invio Push Notification', 'group' => 'Notifiche'],
+=======
+    'navigation' => [
+        'label' => 'Invio Push Notification',
+        'group' => 'Notifiche',
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_hQXUFw
     'label' => 'Send Firebase Push Notification',
     'plural_label' => 'Send Firebase Push Notification (Plurale)',
     'fields' => [
@@ -18,8 +26,24 @@ return [
         'high_priority' => ['label' => 'high_priority', 'placeholder' => 'high_priority', 'helper_text' => 'high_priority', 'description' => 'high_priority'],
         'custom_data' => ['label' => 'custom_data', 'placeholder' => 'custom_data', 'helper_text' => 'custom_data', 'description' => 'custom_data']],
     'actions' => [
+<<<<<<< .merge_file_228fK0
         'create' => ['label' => 'Crea Send Firebase Push Notification'],
         'edit' => ['label' => 'Modifica Send Firebase Push Notification'],
         'delete' => ['label' => 'Elimina Send Firebase Push Notification'],
         'sendPushNotification' => ['label' => 'sendPushNotification', 'icon' => 'sendPushNotification', 'tooltip' => 'sendPushNotification'],
         'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save']]];
+=======
+        'create' => [
+            'label' => 'Crea Send Firebase Push Notification',
+        ],
+        'edit' => [
+            'label' => 'Modifica Send Firebase Push Notification',
+        ],
+        'delete' => [
+            'label' => 'Elimina Send Firebase Push Notification',
+        ],
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_hQXUFw

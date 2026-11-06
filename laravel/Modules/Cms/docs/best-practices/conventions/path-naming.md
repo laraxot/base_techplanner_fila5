@@ -39,7 +39,11 @@ In Laravel e nei moduli, alcune directory DEVONO essere in lowercase:
 - ❌ Il file `section.blade.php` per il componente Section è stato creato in `Modules/Cms/Resources/views/components` (ERRATO)
 - ✅ Il percorso corretto è `Modules/Cms/resources/views/components/section.blade.php` (CORRETTO)
 
+<<<<<<< HEAD
 Per approfondimenti, vedere [Analisi Gestione Percorsi (Root)](../../../../../../docs/error_analysis/path_management.md)
+=======
+Per approfondimenti, vedere [Analisi Gestione Percorsi (Root)](../../../../../docs/error_analysis/path_management.md)
+>>>>>>> 6ed19256f (.)
 
 ### Motivazioni
 1. **Compatibilità**:
@@ -161,5 +165,16 @@ ls -la
 
 ## Collegamenti
 - [Struttura Moduli](../architecture/module-structure.md)
+<<<<<<< .merge_file_p82xU2
 - [Documentazione Root – Naming Conventions](../../../../../docs/regole/naming-convention.md)
 - [Documentazione Root – Indice](../../../../../../docs/README.md)
+=======
+<<<<<<< HEAD
+- [Documentazione Root – Indice](../../../../docs/README.md)
+- [Documentazione Root – Naming Conventions](../../../../../docs/regole/naming-convention.md)
+- [Documentazione Root – Indice](../../../../../docs/readme.md)
+=======
+- [Documentazione Root – Naming Conventions](../../../../docs/regole/naming-convention.md)
+- [Documentazione Root – Indice](../../../../docs/README.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ihMKPO

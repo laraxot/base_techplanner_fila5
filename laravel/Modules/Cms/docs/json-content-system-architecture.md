@@ -12,7 +12,14 @@ status: draft
 
 # JSON Content System Architecture - CMS Module
 
+<<<<<<< .merge_file_EVcApY
+=======
+## Data: 2026-01-08
+<<<<<<< HEAD
+>>>>>>> .merge_file_ab9meq
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 ## Metodologia: Super Mucca - La Litigata Interna
 ## File: `Modules/Cms/app/View/Components/Section.php` e `config/local/laravelpizza/database/content/`
 
@@ -258,6 +265,18 @@ $blocks = SectionModel::getBlocksBySlug($this->slug); // Carica blocchi da JSON
 
 ---
 
+<<<<<<< .merge_file_EVcApY
 **Ultimo aggiornamento**: [DATE]
 **Versione**: 1.0.0
 **Status**: ✅ Completato
+=======
+**Ultimo aggiornamento**: 2026-01-08
+<<<<<<< HEAD
+**Ultimo aggiornamento**: [DATE]
+**Versione**: 1.0.0
+**Status**: ✅ Completato
+=======
+**Versione**: 1.0.0
+**Status**: ✅ Completato
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ab9meq

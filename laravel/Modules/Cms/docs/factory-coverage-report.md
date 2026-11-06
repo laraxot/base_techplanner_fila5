@@ -66,4 +66,12 @@ All factories have been tested and:
 - ✅ Support config hierarchy system
 
 ---
+<<<<<<< .merge_file_vZOVUG
 *Report generated automatically - Factory coverage: 100%*
+=======
+<<<<<<< HEAD
+*Report generated automatically - Factory coverage: 100%*
+=======
+*Report generated automatically - Factory coverage: 100%*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_hsP5xh

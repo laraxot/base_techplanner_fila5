@@ -5,24 +5,12 @@ use Modules\Job\Actions\GetTaskFrequenciesAction;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
-<<<<<<< .merge_file_JWL8G5
 uses(TestCase::class);
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_3Pv8tO
 
 describe('GetTaskFrequenciesAction Integration', function () {
     beforeEach(function () {
         /** @var TestCase $this */
         $this->action = new GetTaskFrequenciesAction;
-=======
-use Modules\Job\Actions\GetTaskFrequenciesAction;
-use Modules\Job\Models\TaskFrequency;
-
-describe('GetTaskFrequenciesAction Integration', function () {
-    beforeEach(function () {
-        $this->action = new GetTaskFrequenciesAction();
->>>>>>> 6ed19256f (.)
     });
 
     it('returns array when config exists', function () {

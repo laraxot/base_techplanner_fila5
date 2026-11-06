@@ -13,7 +13,14 @@ return [
             'type' => 'Type',
             'verified' => 'Verified',
             'sms_sent' => 'SMS sent',
+<<<<<<< .merge_file_Q00xap
             'email_sent' => 'Emails sent']],
+=======
+            'email_sent' => 'Emails sent',
+        ],
+    ],
+<<<<<<< HEAD
+>>>>>>> .merge_file_PZ25m3
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -25,4 +32,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_Q00xap
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_PZ25m3

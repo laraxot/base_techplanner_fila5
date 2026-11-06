@@ -8,7 +8,11 @@ use Modules\Xot\Filament\Clusters\XotBaseCluster;
 
 /**
  * Cluster per la gestione del profilo GDPR.
+<<<<<<< HEAD
  *
+=======
+ * 
+>>>>>>> 6ed19256f (.)
  * ⚠️ IMPORTANTE: Estende XotBaseCluster, MAI Filament\Clusters\Cluster direttamente!
  */
 class Profile extends XotBaseCluster

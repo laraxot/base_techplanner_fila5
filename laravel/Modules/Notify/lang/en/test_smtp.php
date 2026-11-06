@@ -12,6 +12,22 @@ return [
         'sort' => '50',
     ],
     'fields' => [
+<<<<<<< .merge_file_1ixuXr
+=======
+        'id' => [
+            'label' => 'ID',
+<<<<<<< HEAD
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'name' => [
+            'label' => 'Name',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+>>>>>>> .merge_file_e13h9Z
         'host' => [
             'label' => 'SMTP Host',
             'placeholder' => 'Enter SMTP host (e.g. smtp.gmail.com)',
@@ -57,6 +73,7 @@ return [
             'placeholder' => 'recipient@domain.com',
             'help' => 'Email address of the recipient for the SMTP test',
         ],
+<<<<<<< .merge_file_1ixuXr
         'subject' => [
             'label' => 'Subject',
             'placeholder' => 'SMTP Configuration Test - {{app_name}}',
@@ -66,6 +83,57 @@ return [
             'label' => 'HTML Content',
             'placeholder' => '<h1>SMTP Test</h1><p>This is a test email to verify the SMTP configuration.</p>',
             'help' => 'HTML content of the test email (optional)',
+=======
+        'created_at' => [
+            'label' => 'Created At',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => 'Name',
+        ],
+        'host' => [
+            'label' => 'Host',
+        ],
+        'port' => [
+            'label' => 'Port',
+        ],
+        'username' => [
+            'label' => 'Username',
+        ],
+        'password' => [
+            'label' => 'Password',
+        ],
+        'encryption' => [
+            'label' => 'Encryption',
+        ],
+        'from_address' => [
+            'label' => 'From Address',
+        ],
+        'from_name' => [
+            'label' => 'From Name',
+        ],
+        'status' => [
+            'label' => 'Status',
+        ],
+        'last_tested_at' => [
+            'label' => 'Last Tested At',
+        ],
+        'created_at' => [
+            'label' => 'Created At',
+>>>>>>> 6ed19256f (.)
+        ],
+        'body_html' => [
+            'description' => 'HTML Body',
+            'helper_text' => 'HTML content of the email',
+<<<<<<< HEAD
+            'label' => '',
+            'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_e13h9Z
         ],
     ],
     'actions' => [

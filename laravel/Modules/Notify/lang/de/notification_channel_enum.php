@@ -7,6 +7,7 @@ return [
     'sms' => 'SMS',
     'telegram' => 'Telegram',
     'whatsapp' => 'WhatsApp',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -18,4 +19,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_ALITTC
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_fOcZDg

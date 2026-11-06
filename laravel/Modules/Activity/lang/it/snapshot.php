@@ -11,6 +11,7 @@ return [
         'sort' => 63,
         'icon' => 'activity-snapshot-animated',
     ],
+<<<<<<< HEAD
     'fields' => [
         'model_type' => ['label' => 'model_type', 'placeholder' => 'model_type', 'helper_text' => 'model_type', 'description' => 'model_type', 'tooltip' => ''],
         'model_id' => ['label' => 'model_id', 'placeholder' => 'model_id', 'helper_text' => 'model_id', 'description' => 'model_id', 'tooltip' => ''],
@@ -44,6 +45,11 @@ return [
             'tooltip' => 'logout',
         ],
     ],
+<<<<<<< .merge_file_pullmC
     'label' => 'Snapshot',
     'plural_label' => 'Snapshot (Plurale)',
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_2d2ObA
 ];

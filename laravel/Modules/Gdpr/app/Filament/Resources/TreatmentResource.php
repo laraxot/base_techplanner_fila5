@@ -9,12 +9,41 @@ use Modules\Gdpr\Filament\Resources\TreatmentResource\Pages\EditTreatment;
 use Modules\Gdpr\Filament\Resources\TreatmentResource\Pages\ListTreatments;
 use Modules\Gdpr\Models\Treatment;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 class TreatmentResource extends XotBaseResource
 {
     protected static ?string $model = Treatment::class;
 
+<<<<<<< HEAD
     #[\Override]
+<<<<<<< .merge_file_kLor8z
+=======
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
+    public static function getFormSchema(): array
+    {
+        return [
+            'active' => Toggle::make('active')->required(),
+            'required' => Toggle::make('required')->required(),
+            'name' => TextInput::make('name')->required()->maxLength(191),
+            'description' => Textarea::make('description')->required()->columnSpanFull(),
+            'documentVersion' => TextInput::make('documentVersion')->maxLength(191)->default(null),
+            'documentUrl' => TextInput::make('documentUrl')->maxLength(191)->default(null),
+            'weight' => TextInput::make('weight')->required()->numeric(),
+        ];
+    }
+
+<<<<<<< HEAD
+    #[\Override]
+=======
+    #[Override]
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Y069TK
     public static function getPages(): array
     {
         return [

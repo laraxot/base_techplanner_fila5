@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "Architecture Separation Rules - Test Strategy"
 type: note
@@ -9,6 +10,11 @@ tags: [docs, cms, tests]
 qmd: "architecture separation rules - test strategy cms"
 ---
 
+<<<<<<< .merge_file_8w0AnC
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/architecture-aration-rules.md
+=======
+>>>>>>> .merge_file_q3JXzF
 # Architecture Separation Rules - Test Strategy
 
 ## 🚨 **REGOLA CRITICA: Separazione Architettuale**
@@ -17,7 +23,11 @@ qmd: "architecture separation rules - test strategy cms"
 
 ## 📊 **Architetture Separate**
 
+<<<<<<< .merge_file_8w0AnC
 ### 1. **Laravel Folio Pages** 
+=======
+### 1. **Laravel Folio Pages**
+>>>>>>> .merge_file_q3JXzF
 - **File Test**: `{PageName}Test.php`
 - **Target**: Route e rendering pagina
 - **Focus**: UI, middleware, layout, elementi
@@ -33,7 +43,11 @@ test('login page can be rendered', function () {
 ```
 
 ### 2. **Filament Widgets**
+<<<<<<< .merge_file_8w0AnC
 - **File Test**: `{WidgetName}WidgetTest.php` 
+=======
+- **File Test**: `{WidgetName}WidgetTest.php`
+>>>>>>> .merge_file_q3JXzF
 - **Target**: Componente widget logic
 - **Focus**: Form, validation, business logic
 
@@ -51,7 +65,11 @@ test('widget can be rendered', function () {
 - ✅ **LoginTest.php**: Pagina `/it/auth/login` (Laravel Folio)
 - ✅ **LoginWidgetTest.php**: Widget `LoginWidget` (Filament)
 
+<<<<<<< .merge_file_8w0AnC
 ### Register vs RegistrationWidget  
+=======
+### Register vs RegistrationWidget
+>>>>>>> .merge_file_q3JXzF
 - ✅ **RegisterTypeTest.php**: Pagina `/it/auth/{type}/register` (Laravel Folio)
 - ✅ **RegisterTypeWidgetTest.php**: Widget `RegistrationWidget` (Filament)
 
@@ -62,14 +80,22 @@ test('widget can be rendered', function () {
 - ✅ Focus: rendering, middleware, UI elements
 
 ### LoginWidgetTest.php (Widget)
+<<<<<<< .merge_file_8w0AnC
 - ✅ 5/7 test passati (71% successo)  
+=======
+- ✅ 5/7 test passati (71% successo)
+>>>>>>> .merge_file_q3JXzF
 - ✅ Focus: form logic, authentication, validation
 
 ### RegisterTypeTest.php (Pagina)
 - ✅ 10/14 test passati (71% successo)
 - ✅ Focus: parametro dinamico [type], rendering condizionale
 
+<<<<<<< .merge_file_8w0AnC
 ### RegisterTypeWidgetTest.php (Widget) 
+=======
+### RegisterTypeWidgetTest.php (Widget)
+>>>>>>> .merge_file_q3JXzF
 - ✅ 9/9 test passati (100% successo) 🏆
 - ✅ Focus: widget logic, form interaction, XotData integration
 
@@ -152,7 +178,11 @@ test('page has correct middleware', function () {
 });
 ```
 
+<<<<<<< .merge_file_8w0AnC
 ### Widget Test Template  
+=======
+### Widget Test Template
+>>>>>>> .merge_file_q3JXzF
 ```php
 <?php
 
@@ -198,7 +228,11 @@ function mockXotData(): void {
 - Review più semplici
 - Onboarding nuovo team più rapido
 
+<<<<<<< .merge_file_8w0AnC
 ### 4. **Architecture Enforcement**  
+=======
+### 4. **Architecture Enforcement**
+>>>>>>> .merge_file_q3JXzF
 - Forza rispetto dei boundaries modulari
 - Previene tight coupling
 - Mantiene separation of concerns
@@ -211,6 +245,13 @@ function mockXotData(): void {
 
 ---
 
+<<<<<<< .merge_file_8w0AnC
 **Status**: ✅ Regole Stabilite e Validate  
 **Enforcement**: Obbligatorio per tutti i nuovi test  
 **Review**: Required in code review process 
+=======
+**Status**: ✅ Regole Stabilite e Validate
+**Enforcement**: Obbligatorio per tutti i nuovi test
+**Review**: Required in code review process
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_q3JXzF

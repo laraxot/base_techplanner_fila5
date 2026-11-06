@@ -77,9 +77,18 @@ Il file `Modules/UI/app/Enums/TableLayoutEnum.php` presenta un conflitto Git nel
 ## Collegamenti Correlati
 
 - [UI Components](../components/volt.md)
+<<<<<<< .merge_file_oVBprR
+=======
+- [PHPStan Level 10 Fixes](../../Xot/docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/docs/translation-standards.md)
+- [Best Practices](../../Xot/docs/translation-keys-best-practices.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_aWDQ9l
 - [PHPStan Level 10 Fixes](../../xot/docs/phpstan-level10-fixes.md)
 - [Translation Standards](../../lang/docs/translation-standards.md)
 - [Best Practices](../../xot/docs/translation-keys-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Note per Sviluppatori Futuri
 
@@ -162,6 +171,7 @@ Il file `Modules/UI/app/Enums/TableLayoutEnum.php` presenta un conflitto Git nel
 ## Collegamenti Correlati
 
 - [UI Components](../components/volt.md)
+<<<<<<< HEAD
 - [PHPStan Level 10 Fixes](../../xot/project_docs/phpstan-level10-fixes.md)
 - [Translation Standards](../../lang/project_docs/translation-standards.md)
 - [Best Practices](../../xot/project_docs/translation-keys-best-practices.md)
@@ -171,6 +181,20 @@ Il file `Modules/UI/app/Enums/TableLayoutEnum.php` presenta un conflitto Git nel
 - [PHPStan Level 10 Fixes](../../xot/project_docs/phpstan-level10-fixes.md)
 - [Translation Standards](../../lang/project_docs/translation-standards.md)
 - [Best Practices](../../xot/project_docs/translation-keys-best-practices.md)
+<<<<<<< .merge_file_oVBprR
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [PHPStan Level 10 Fixes](../../Xot/project_docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/project_docs/translation-standards.md)
+- [Best Practices](../../Xot/project_docs/translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../../Xot/project_docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/project_docs/translation-standards.md)
+- [Best Practices](../../Xot/project_docs/translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](../../Xot/project_docs/phpstan-level10-fixes.md)
+- [Translation Standards](../../Lang/project_docs/translation-standards.md)
+- [Best Practices](../../Xot/project_docs/translation-keys-best-practices.md)
+>>>>>>> .merge_file_aWDQ9l
 
 ## Note per Sviluppatori Futuri
 
@@ -187,4 +211,12 @@ Il file `Modules/UI/app/Enums/TableLayoutEnum.php` presenta un conflitto Git nel
 - **Tipo Conflitto**: Sintassi PHPStan
 - **Scelta**: Versione Branch 988693e (sintassi moderna)
 - **Scelta**: Versione Branch 988693e (sintassi moderna)
+<<<<<<< .merge_file_oVBprR
 - **Scelta**: Versione Branch 988693e (sintassi moderna)
+=======
+<<<<<<< HEAD
+- **Scelta**: Versione Branch 988693e (sintassi moderna)
+=======
+- **Scelta**: Versione Branch 988693e (sintassi moderna)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_aWDQ9l

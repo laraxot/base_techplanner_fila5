@@ -10,6 +10,7 @@ return [
     'failed' => 'Fehler beim Senden der SMS',
     'recipient' => 'Empfänger',
     'phone' => 'Telefonnummer',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -21,4 +22,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_YsUPUj
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_j2Zn1V

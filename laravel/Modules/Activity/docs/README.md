@@ -56,17 +56,58 @@ use Modules\Activity\Actions\LogActivityAction;
 
 Controllare la qualita' del modulo (eseguito il 2026-10-14 con `laravel/phpstan.neon`: uscita 0, nessun errore):
 
+<<<<<<< .merge_file_u7Z2jB
 ```bash
 cd laravel
 ./vendor/bin/phpstan analyse Modules/Activity --memory-limit=3G
+=======
+*Ultimo aggiornamento: gennaio 2025*
+<<<<<<< HEAD
+---
+title: "Activity Module Documentation"
+type: documentation
+tags: [module, documentation]
+created: 2026-06-05
+updated: 2026-06-05
+---
+
+# Modulo Activity
+
+## Overview
+
+Il modulo **Activity** fa parte dell'ecosistema Laraxot PTVX.
+
+## Scopo
+
+Questo modulo gestisce [DESCRIZIONE SPECIFICA DA COMPLETARE].
+
+## Struttura
+
+```
+Activity/
+├── app/
+│   ├── Models/
+│   ├── Filament/
+│   └── ...
+├── docs/
+├── lang/
+└── resources/
+>>>>>>> .merge_file_K664lb
 ```
 
 I test Pest non sono stati rieseguiti in questa sessione: non verificato che passino.
 
 ## Limiti noti
 
+<<<<<<< .merge_file_u7Z2jB
 - Con `user` nullo `LogActivityAction` imposta `causer_id` a `Auth::id()` ma lascia `causer_type` nullo (codice di `execute()`): l'attivita' risulta senza causer risolvibile come relazione.
 - `LoginListener` non registra nulla: gli accessi non finiscono nel log, solo le uscite.
 - In `database/migrations` restano altre quattro migrazioni `create_activity_table` (`2023_03_31_103350`, `2023_03_31_103351`, `2024_01_01_000001`, `2024_01_01_000002`) oltre a quella del 2026-06-10. Se siano innocue non e' verificato.
 - La connessione `activity` e' dichiarata nei modelli (`$connection = 'activity'`) ma non e' definita in `laravel/config/database.php`: dove venga creata non e' verificato.
 - Documenti che non descrivono il codice: [ARCHITECTURE.md](./ARCHITECTURE.md) (Repositories, Services, Projections inesistenti), [API.md](./api.md) (firma `execute(array $data)` inesistente), [readme.md](./readme.md) (`ActivityStatsWidget`, `EventStore`, monitoraggio in tempo reale inesistenti). Sono marcati `stale`.
+=======
+## AI Workflows
+- [AI Methodologies](./ai-methodologies.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_K664lb

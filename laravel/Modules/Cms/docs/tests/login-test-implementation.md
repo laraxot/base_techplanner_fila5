@@ -287,6 +287,14 @@ expect($schema)->toHaveCount(3)
 ### Internal Links
 - [UserFactory Implementation](../../<nome progetto>/docs/factories/UserFactory-implementation-final.md)
 - [LoginWidget Documentation](../../User/docs/widgets/login-widget.md)
+<<<<<<< .merge_file_cN4PkA
+=======
+<<<<<<< HEAD
+- [UserFactory Implementation](../../<nome progetto>/docs/factories/userfactory-implementation-final.md)
+- [LoginWidget Documentation](../../user/docs/widgets/login-widget.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_m2KZgE
 - [STI Architecture](../../<nome progetto>/docs/models/sti-architecture.md)
 
 ### External References
@@ -296,7 +304,18 @@ expect($schema)->toHaveCount(3)
 
 ---
 
+<<<<<<< .merge_file_cN4PkA
 **Created**: Gennaio 2025  
 **Status**: ✅ PRODUCTION READY  
 **Test Coverage**: 🎯 100% Login Functionality  
 **Maintainer**: Modulo Cms Testing Team 
+=======
+**Created**: Gennaio 2025
+**Status**: ✅ PRODUCTION READY
+**Test Coverage**: 🎯 100% Login Functionality
+<<<<<<< HEAD
+**Maintainer**: Modulo Cms Testing Team
+=======
+**Maintainer**: Modulo Cms Testing Team
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_m2KZgE

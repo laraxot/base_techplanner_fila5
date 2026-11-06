@@ -9,6 +9,7 @@ return [
     'create' => 'Vorlage erstellen',
     'edit' => 'Vorlage bearbeiten',
     'delete' => 'Vorlage löschen',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -20,4 +21,11 @@ return [
     'fields' => [
     ],
     'actions' => [
+<<<<<<< .merge_file_8JKUqp
     ]];
+=======
+    ],
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_0jViMT

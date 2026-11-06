@@ -8,10 +8,20 @@ qmd: "indice documentazione   modulo activity activity"
 ---
 # Indice documentazione — Modulo Activity
 
+<<<<<<< .merge_file_ntew2r
 Indice organizzato per argomento. Copre tutti i file `.md` sotto `Modules/Activity/docs/`
 (890 file al 2026-10-14, 755 al 2026-09-03, non 362 come indicato nel task originale — la cartella e'
 cresciuta molto oltre le stime precedenti, vedi `docs/task-consolidare-documentazione.md`
 e `docs/docs-health.md`).
+=======
+## Overview
+The Activity module provides comprehensive activity logging and tracking functionality for the Laraxot system. It records user actions, system events, and business operations to enable audit trails, analytics, and monitoring.
+<<<<<<< HEAD
+**
+**Status**: Active Development
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_u3xfKG
 
 ## Key Features
 - **Activity Logging**: Automatic logging of user and system activities
@@ -487,10 +497,14 @@ Non richiedono consolidamento: sono puntatori voluti, non copie accidentali.
 - [User Module](../User/docs/README.md) - User authentication and management
 - [Notify Module](../Notify/docs/index.md) - Notification system
 - [Xot Module](../Xot/docs/index.md) - Core base classes
+<<<<<<< HEAD
 - [User Module](../user/docs/readme.md) - User authentication and management
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [Xot Module](../xot/docs/index.md) - Core base classes
+=======
+>>>>>>> 6ed19256f (.)
 
+<<<<<<< .merge_file_ntew2r
 Quattro copie parallele dello stesso lotto di file di test/placeholder, quasi tutte a
 0-3 righe (`archived-note.md`, `documentation*.md`, `2024-03-27.md`, `test*.md`,
 `import-placeholder*.md`, `filament*.md`, `changelog*.md`): presenti sia direttamente
@@ -520,3 +534,15 @@ cartelle di import grezzo sopra citate (49 file a 0 righe in tutto il modulo).
 - File completamente vuoti (0 righe): 49.
 - File stub con puntatore `canonical:` verso `Themes/docs/shared-components/`: 73 (di cui 6 template `_templates/`, 4 ibridi con contenuto reale aggiuntivo, 63 stub puri).
 - File indicizzati esplicitamente per argomento in questo documento: la quasi totalita' dei restanti file con contenuto reale; le eccezioni (import grezzo/placeholder vuoti) sono referenziate per gruppo con comando `find` riproducibile, non singolarmente.
+=======
+## Troubleshooting
+Common issues and solutions:
+- Database performance with large activity logs
+- Missing activity entries
+- Configuration issues
+<<<<<<< HEAD
+
+- [Conflict Resolution](conflict-resolution.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_u3xfKG

@@ -146,6 +146,7 @@ test('any user type can login successfully', function (): void {
 - [XotData Architecture](../../../Xot/docs/best-practices.md)
 - [UserContract Interface](../../Modules/Xot/Contracts/UserContract.php)
 - [Modular Testing Guide](../../docs/testing/modular-independence.md)
+<<<<<<< .merge_file_YEICXi
 
 ---
 
@@ -153,3 +154,22 @@ test('any user type can login successfully', function (): void {
 **Priorità**: 🚨 P0 - CRITICO (ora risolto)  
 **Ultimo Aggiornamento**: 2025-01-16  
 **Validato**: Test in passing ✅ 
+=======
+<<<<<<< HEAD
+- [XotData Architecture](../../modules/xot/docs/best-practices.md)
+- [UserContract Interface](../../Modules/Xot/Contracts/UserContract.php)
+- [Modular Testing Guide](../../../docs/testing/modular-independence.md)
+=======
+>>>>>>> 6ed19256f (.)
+
+---
+
+**Status**: ✅ COMPLETATO
+**Priorità**: 🚨 P0 - CRITICO (ora risolto)
+**Ultimo Aggiornamento**: 2025-01-16
+<<<<<<< HEAD
+**Validato**: Test in passing ✅
+=======
+**Validato**: Test in passing ✅
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_JQ6rf4

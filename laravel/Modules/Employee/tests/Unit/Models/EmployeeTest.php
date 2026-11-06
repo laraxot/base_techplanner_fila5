@@ -10,7 +10,15 @@ use Modules\Employee\Models\User;
 use PHPUnit\Framework\Assert;
 =======
 use Modules\Employee\Models\Position;
+<<<<<<< .merge_file_QSBgC8
 use Modules\Employee\Tests\TestCase;
+=======
+<<<<<<< HEAD
+=======
+use Modules\Employee\Tests\TestCase;
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_6yevCP
 
 >>>>>>> .merge_file_X4bKd9
 

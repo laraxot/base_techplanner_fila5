@@ -21,7 +21,51 @@ Le azioni dei provider in Notify seguono il pattern di Spatie Queueable Actions 
 Tutte le azioni di invio SMS devono implementare `Modules\Notify\Contracts\SMS\SmsActionContract` per garantire un'interfaccia unificata:
 
 ```php
+<<<<<<< .merge_file_aU2JTa
 namespace Modules\Notify\Contracts\SMS;
+=======
+interface SmsProviderActionInterface
+{
+    public function execute(SmsData $smsData): array;
+}
+```
+
+Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza modificare il codice di utilizzo.
+
+### 2. Posizione delle Azioni
+
+Le azioni specifiche dei provider SMS si trovano nella directory:
+<<<<<<< HEAD
+- `Modules/Notify/app/Actions/SMS/`
+- `Modules/Notify/app/Actions/SMS/`
+- `Modules/Notify/app/Actions/SMS/`
+- `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/SMS/`
+=======
+- `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SMS/`
+- `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/`
+- `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SMS/`
+>>>>>>> 6ed19256f (.)
+
+### 3. Convenzioni di Nomenclatura
+
+- Le azioni devono essere nominate seguendo il pattern `Send{Provider}SMSAction`
+- Esempio: `SendNetfunSMSAction`, `SendTwilioSMSAction`, ecc.
+
+## Data Transfer Objects
+
+### Principale: `SmsData`
+
+La classe `SmsData` è l'interfaccia comune che tutte le azioni di provider devono accettare:
+
+```php
+class SmsData extends Data
+{
+    public string $from;    // Mittente
+    public string $to;      // Destinatario
+    public string $body;    // Corpo del messaggio
+}
+```
+>>>>>>> .merge_file_ZSuPwd
 
 use Modules\Notify\Datas\SmsData;
 
@@ -36,7 +80,15 @@ Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza m
 ### 2. Posizione delle Azioni
 
 Le azioni specifiche dei provider SMS si trovano nella directory:
+<<<<<<< .merge_file_aU2JTa
 - `laravel/Modules/Notify/app/Actions/SMS/`
+=======
+<<<<<<< HEAD
+- `Modules/Notify/app/Actions/SMS/`
+=======
+- `/var/www/html/<directory progetto>/laravel/Modules/Notify/app/Actions/SMS/`
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZSuPwd
 
 ### 3. Convenzioni di Nomenclatura
 
@@ -124,4 +176,12 @@ Tutte le azioni devono gestire correttamente gli errori:
 
 1. Log appropriati degli errori
 2. Lancio di eccezioni in caso di errori critici
+<<<<<<< .merge_file_aU2JTa
 3. Restituzione di un array con `'success' => false` in caso di errori non critici
+=======
+<<<<<<< HEAD
+3. Restituzione di un array con `'success' => false` in caso di errori non critici
+=======
+3. Restituzione di un array con `'success' => false` in caso di errori non critici
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ZSuPwd

@@ -10,41 +10,89 @@ return [
             'help' => 'The identifying name of the template',
             'tooltip' => 'This field is required',
             'helper_text' => 'Inserisci un nome descrittivo per il template',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'subject' => [
             'label' => 'Subject',
             'placeholder' => 'Enter notification subject',
             'help' => 'The subject that will appear in the notification',
             'tooltip' => 'This field is required',
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'body_text' => [
             'label' => 'Text',
             'placeholder' => 'Enter notification text',
             'help' => 'The text content of the notification',
             'tooltip' => 'This field is required',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'body_html' => [
             'label' => 'HTML',
             'placeholder' => 'Enter notification HTML content',
             'help' => 'The HTML content of the notification',
             'tooltip' => 'This field is required',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'preview_data' => [
             'label' => 'Preview Data',
             'placeholder' => 'Enter preview data',
             'help' => 'The data used to display the preview',
             'tooltip' => 'JSON format',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del template',
             'placeholder' => 'es: Template per le notifiche di scadenza',
             'helper_text' => 'Breve descrizione dello scopo del template',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'type' => [
             'label' => 'Tipo',
             'tooltip' => 'Tipologia di notifica',
@@ -55,35 +103,86 @@ return [
                 'sms' => 'SMS',
                 'push' => 'Notifica Push',
                 'telegram' => 'Telegram',
+<<<<<<< .merge_file_Oe8bBp
                 'whatsapp' => 'WhatsApp'],
             'description' => ''],
+=======
+                'whatsapp' => 'WhatsApp',
+            ],
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'content' => [
             'label' => 'Contenuto',
             'tooltip' => 'Corpo del messaggio',
             'placeholder' => 'Inserisci il testo del messaggio',
             'helper_text' => 'Contenuto principale della notifica',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'variables' => [
             'label' => 'Variabili',
             'tooltip' => 'Variabili disponibili',
             'placeholder' => '{{nome}}, {{email}}, ecc.',
             'helper_text' => 'Variabili che possono essere utilizzate nel template',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato del template',
             'helper_text' => 'Se attivo, il template può essere utilizzato per l\'invio di notifiche',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'created_at' => [
             'label' => 'Data creazione',
             'tooltip' => 'Data di creazione del template',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_Oe8bBp
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_HSkxbH
         'updated_at' => [
             'label' => 'Ultima modifica',
             'tooltip' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_Oe8bBp
             'description' => '']],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_HSkxbH
     'navigation' => [
         'label' => 'Notification Templates',
         'group' => [
@@ -127,6 +226,18 @@ return [
             'tooltip' => 'Invia una notifica di test',
             'icon' => 'heroicon-o-paper-airplane',
             'success_message' => 'Notifica di test inviata con successo',
+<<<<<<< .merge_file_Oe8bBp
             'error_message' => 'Errore nell\'invio della notifica di test']],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+            'error_message' => 'Errore nell\'invio della notifica di test',
+        ],
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_HSkxbH

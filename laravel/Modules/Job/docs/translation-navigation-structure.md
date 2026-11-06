@@ -69,11 +69,7 @@ Le chiavi rimandano a **chiavi di traduzione nidificate** che devono essere defi
 
 ### Step 1: Creare directory per le 6 lingue
 ```bash
-<<<<<<< HEAD
 mkdir -p Modules/Job/resources/lang/{en,es,fr,de,zh}
-=======
-mkdir -p /var/www/_bases/base_laravelpizza/laravel/Modules/Job/resources/lang/{en,es,fr,de,zh}
->>>>>>> 6ed19256f (.)
 ```
 
 ### Step 2: Tradurre i file .navigation
@@ -127,25 +123,10 @@ Verificare che User abbia le stesse 6 lingue per i file `.navigation` (passport.
 
 ## Backlink
 
-<<<<<<< .merge_file_8ZgBqp
-=======
-- [Modules/Job/docs/README.md](./README.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_V7W95F
 - [Modules/Job/docs/README.md](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Modules/User/lang/it/passport.php](../../User/lang/it/passport.php)
 - [bashscripts/docs/translation-management.md](../../../bashscripts/docs/translation-management.md)
 
 ---
 **Autore**: Cascade AI  
-<<<<<<< .merge_file_8ZgBqp
 **Status**: 🟡 In Progress
-=======
-<<<<<<< HEAD
-**Status**: 🟡 In Progress
-=======
-**Status**: 🟡 In Progress
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_V7W95F

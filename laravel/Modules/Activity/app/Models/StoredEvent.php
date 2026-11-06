@@ -11,7 +11,11 @@ use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStored
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
+=======
+use Spatie\SchemalessAttributes\SchemalessAttributes;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Class StoredEvent.
@@ -24,10 +28,18 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property int $event_version
  * @property string $event_class
  * @property array<array-key, mixed> $event_properties
+<<<<<<< HEAD
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
  * @property string $created_at
  * @property string|null $updated_by
  * @property string|null $created_by
+=======
+ * @property SchemalessAttributes $meta_data
+ * @property string $created_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
+>>>>>>> 6ed19256f (.)
  * @property-read ShouldBeStored|null $event
  *
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent afterVersion(int $version)
@@ -55,22 +67,29 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @method static StoredEventFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
  * @property string|null $updated_at
  *
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
  *
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
+=======
+ * @mixin \Eloquent
+ */
+>>>>>>> 6ed19256f (.)
 class StoredEvent extends SpatieStoredEvent
 {
     /** > */
     use HasXotFactory;
 
+<<<<<<< HEAD
     /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
     protected $table = 'stored_events';
 
+<<<<<<< .merge_file_aSoArC
     public function __construct(array $attributes = [])
     {
         parent::__construct($attributes);
@@ -80,6 +99,17 @@ class StoredEvent extends SpatieStoredEvent
         }
     }
 
+=======
+=======
+    /** @var string */
+    protected $connection = 'activity';
+
+    /** @var string */
+    protected $table = 'stored_events';
+
+    /** @var list<string> */
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gzwybx
     protected $fillable = [
         'id',
         'aggregate_uuid',
@@ -92,6 +122,7 @@ class StoredEvent extends SpatieStoredEvent
         'updated_by',
         'created_by',
     ];
+<<<<<<< HEAD
 
     /**
      * Get the attributes that should be cast.
@@ -105,4 +136,6 @@ class StoredEvent extends SpatieStoredEvent
             'meta_data' => SchemalessAttributes::class,
         ];
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

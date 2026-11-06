@@ -12,9 +12,15 @@ status: draft
 
 # Refactoring Report: SendRecordNotificationAction
 
+<<<<<<< HEAD
 **Date**: 2025-12-18  
 **Module**: Notify  
 **Status**: ✅ Refactoring Completed  
+=======
+**Date**: 2025-12-18
+**Module**: Notify
+**Status**: ✅ Refactoring Completed
+>>>>>>> 6ed19256f (.)
 **Compliance**: DRY + KISS + Clean Code
 
 ## Overview
@@ -67,9 +73,15 @@ This document details the refactoring of `SendRecordNotificationAction.php` to e
 enum ChannelEnum: string
 {
     case MAIL = 'mail';
+<<<<<<< HEAD
     case SMS = 'sms'; 
     case WHATSAPP = 'whatsapp';
     
+=======
+    case SMS = 'sms';
+    case WHATSAPP = 'whatsapp';
+
+>>>>>>> 6ed19256f (.)
     public function getContactMethodName(): string { ... }
     public function getNotificationClass(): string { ... }
     public function requiresNormalization(): bool { ... }
@@ -95,7 +107,11 @@ private function sendNotification(Model $record, string $templateSlug, ChannelEn
 - **After**: 1 unified method with configuration
 - **Result**: 70% reduction in code duplication
 
+<<<<<<< HEAD
 ### ✅ KISS Compliance  
+=======
+### ✅ KISS Compliance
+>>>>>>> 6ed19256f (.)
 - **Before**: Complex branching with repeated patterns
 - **After**: Simple configuration-driven approach
 - **Result**: More maintainable and readable code
@@ -109,7 +125,11 @@ private function sendNotification(Model $record, string $templateSlug, ChannelEn
 
 ### ✅ No Breaking Changes
 - Method signatures unchanged
+<<<<<<< HEAD
 - Return types unchanged  
+=======
+- Return types unchanged
+>>>>>>> 6ed19256f (.)
 - Exception handling unchanged
 - Dependencies unchanged (still uses `app()` pattern)
 
@@ -195,6 +215,16 @@ private function sendNotification(Model $record, string $templateSlug, ChannelEn
 - [x] Test compatibility preserved
 
 ---
+<<<<<<< .merge_file_eSMKC8
+=======
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_RK8gC9
 **Refactored by**: iFlow CLI  
 **Compliance**: 100% DRY + KISS + Clean Code  
 **Status**: Ready for production deployment
+=======
+**Refactored by**: iFlow CLI
+**Compliance**: 100% DRY + KISS + Clean Code
+**Status**: Ready for production deployment
+>>>>>>> 6ed19256f (.)

@@ -22,13 +22,29 @@ return [
             'placeholder' => 'es: Notifica Scadenza',
             'helper_text' => 'Inserisci un nome descrittivo per il template',
             'help' => 'Inserisci un nome descrittivo per il template',
+<<<<<<< .merge_file_qwPfVy
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del template',
             'placeholder' => 'es: Template per le notifiche di scadenza',
             'helper_text' => 'Breve descrizione dello scopo del template',
+<<<<<<< .merge_file_qwPfVy
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'type' => [
             'label' => 'Tipo',
             'tooltip' => 'Tipologia di notifica',
@@ -39,41 +55,100 @@ return [
                 'sms' => 'SMS',
                 'push' => 'Notifica Push',
                 'telegram' => 'Telegram',
+<<<<<<< .merge_file_qwPfVy
                 'whatsapp' => 'WhatsApp'],
             'description' => ''],
+=======
+                'whatsapp' => 'WhatsApp',
+            ],
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'subject' => [
             'label' => 'Oggetto',
             'tooltip' => 'Oggetto della notifica',
             'placeholder' => 'es: Promemoria appuntamento',
             'helper_text' => 'Oggetto visualizzato nella notifica (es. oggetto email)',
+<<<<<<< .merge_file_qwPfVy
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'content' => [
             'label' => 'Contenuto',
             'tooltip' => 'Corpo del messaggio',
             'placeholder' => 'Inserisci il testo del messaggio',
             'helper_text' => 'Contenuto principale della notifica',
+<<<<<<< .merge_file_qwPfVy
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'variables' => [
             'label' => 'Variabili',
             'tooltip' => 'Variabili disponibili',
             'placeholder' => '{{nome}}, {{email}}, ecc.',
             'helper_text' => 'Variabili che possono essere utilizzate nel template',
+<<<<<<< .merge_file_qwPfVy
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato del template',
             'helper_text' => 'Se attivo, il template può essere utilizzato per l\'invio di notifiche',
+<<<<<<< .merge_file_qwPfVy
             'description' => ''],
+=======
+<<<<<<< HEAD
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'created_at' => [
             'label' => 'Data creazione',
             'tooltip' => 'Data di creazione del template',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_qwPfVy
             'description' => ''],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_f9ARii
         'updated_at' => [
             'label' => 'Ultima modifica',
             'tooltip' => 'Data dell\'ultima modifica del template',
+<<<<<<< HEAD
             'helper_text' => '',
+<<<<<<< .merge_file_qwPfVy
             'description' => '']],
+=======
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+    ],
+>>>>>>> .merge_file_f9ARii
     'actions' => [
         'preview' => [
             'label' => 'Anteprima',
@@ -99,6 +174,17 @@ return [
         'confirmation' => 'Sei sicuro di voler procedere con questa operazione?',
         'template_created' => 'Il template è stato creato con successo',
         'template_updated' => 'Il template è stato aggiornato con successo',
+<<<<<<< .merge_file_qwPfVy
         'template_deleted' => 'Il template è stato eliminato con successo'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
+=======
+        'template_deleted' => 'Il template è stato eliminato con successo',
+    ],
+<<<<<<< HEAD
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
+];
+>>>>>>> .merge_file_f9ARii

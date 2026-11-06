@@ -14,9 +14,18 @@ status: draft
 
 ## Documentazione Dettagliata
 
+<<<<<<< .merge_file_8djM28
+=======
+- [Tema One - Gestione Assets](../../../Themes/One/docs/theme-assets.md)
+- [Tema One - Processo di Build](../../../Themes/One/docs/build-process.md)
+- [Tema One - Assets](../../../Themes/One/docs/ASSETS.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_6BbaZ3
 - [Tema One - Gestione Assets](../../../themes/one/docs/theme-assets.md)
 - [Tema One - Processo di Build](../../../themes/one/docs/build-process.md)
 - [Tema One - Assets](../../../themes/one/docs/assets.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Punti Critici
 
@@ -104,6 +113,18 @@ status: draft
    - Verificare i timestamp dei file
 
 ## Collegamenti tra versioni di assets.md
+<<<<<<< .merge_file_8djM28
 * [assets.md](laravel/modules/xot/docs/assets.md)
 * [assets.md](laravel/modules/cms/docs/themes/assets.md)
 * [assets.md](laravel/themes/one/docs/assets.md)
+=======
+* [assets.md](laravel/Modules/Xot/docs/assets.md)
+* [assets.md](laravel/Modules/Cms/docs/themes/assets.md)
+* [assets.md](laravel/Themes/One/docs/assets.md)
+<<<<<<< HEAD
+* [assets.md](laravel/modules/xot/docs/assets.md)
+* [assets.md](laravel/modules/cms/docs/themes/assets.md)
+* [assets.md](laravel/themes/one/docs/assets.md)
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_6BbaZ3

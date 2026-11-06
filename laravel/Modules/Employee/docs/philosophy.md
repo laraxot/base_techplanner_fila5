@@ -59,6 +59,7 @@ status: active
 - Payroll calculation
 - OrgChart visualization
 
+<<<<<<< .merge_file_03G6Ak
 ---
 
 ```
@@ -77,3 +78,10 @@ status: active
 - **Last verified**: 2026-09-06 (module closure workflow)
 
 By leveraging these MCPs, the `Employee` module can ensure its critical role in managing the workforce is more efficient, secure, and transparent, ultimately contributing to a more robust and compliant HR system.
+=======
+<<<<<<< HEAD
+By leveraging these MCPs, the `Employee` module can ensure its critical role in managing the workforce is more efficient, secure, and transparent, ultimately contributing to a more robust and compliant HR system.
+=======
+By leveraging these MCPs, the `Employee` module can ensure its critical role in managing the workforce is more efficient, secure, and transparent, ultimately contributing to a more robust and compliant HR system.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_JFvy9o

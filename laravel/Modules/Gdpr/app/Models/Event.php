@@ -13,13 +13,19 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Crypt;
+<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
 
+=======
+use Modules\Gdpr\Database\Factories\EventFactory;
+use Modules\Xot\Contracts\ProfileContract;
+>>>>>>> 6ed19256f (.)
 use function Safe\json_encode;
 
 /**
  * Modules\Gdpr\Models\Event.
  *
+<<<<<<< .merge_file_yMd7jv
  * @property string $id
  * @property string|null $treatment_id
  * @property string|null $consent_id
@@ -118,9 +124,131 @@ use function Safe\json_encode;
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
  * @property Consent|null $consent
+=======
+<<<<<<< HEAD
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+ * @property string               $id
+ * @property string|null          $treatment_id
+ * @property string|null          $consent_id
+ * @property string               $subject_id
+ * @property string               $ip
+ * @property string               $action
+ * @property string               $payload
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property Consent|null         $consent
+>>>>>>> .merge_file_vej3UL
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
+=======
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property Carbon|null $deleted_at
+ * @property string|null $deleted_by
+ *
+ * @property-read Consent|null $consent
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $updater
+ *
+ * @method static EventFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Event newModelQuery()
  * @method static Builder<static>|Event newQuery()
  * @method static Builder<static>|Event query()
@@ -138,9 +266,13 @@ use function Safe\json_encode;
  * @method static Builder<static>|Event whereUpdatedAt($value)
  * @method static Builder<static>|Event whereUpdatedBy($value)
  *
+<<<<<<< HEAD
  * @property ProfileContract|null $deleter
  *
  * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
+=======
+ * @property-read ProfileContract|null $deleter
+>>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -148,6 +280,11 @@ class Event extends BaseModel
 {
     use HasUuids;
 
+<<<<<<< HEAD
+=======
+    // protected $table = 'event';
+
+>>>>>>> 6ed19256f (.)
     public $fillable = [
         'id',
         'action',
@@ -158,6 +295,7 @@ class Event extends BaseModel
         'payload',
     ];
 
+<<<<<<< .merge_file_yMd7jv
     protected static function booted(): void
     {
         static::creating(function (Event $event): void {
@@ -172,6 +310,13 @@ class Event extends BaseModel
     /**
      * @return BelongsTo<Consent, $this>
      */
+=======
+<<<<<<< HEAD
+    protected $table = 'gdpr_events';
+
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_vej3UL
     public function consent(): BelongsTo
     {
         return $this->belongsTo(Consent::class);

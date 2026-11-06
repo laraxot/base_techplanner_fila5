@@ -191,8 +191,20 @@ describe('CMS Individual Folio Routes Tests', function () {
         $response->assertSee('<html');
     });
 
+<<<<<<< .merge_file_so8b1F
     test('cms: route GET /{locale}/pages/{slug}', function () {
         $response = get('/'.$this->lang.'/pages/test-slug');
+=======
+<<<<<<< HEAD
+    test('cms: route GET /{locale}/{slug}', function () {
+        $locale = (string) app()->getLocale();
+        $response = get('/'.$locale.'/test-slug');
+=======
+    test('cms: route GET /{locale}/pages/{slug}', function () {
+        $locale = (string) app()->getLocale();
+        $response = get('/'.$locale.'/pages/test-slug');
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_3VlG1Y
 
         // Le pagine dinamiche potrebbero non esistere
         expect($response->status())->toBeIn([200, 404]);
@@ -283,9 +295,27 @@ describe('CMS Individual Folio Routes Tests', function () {
             $response = get('/'.$this->lang);
             $response->assertStatus(200);
 
+<<<<<<< .merge_file_so8b1F
             // Verifica che il JSON della homepage sia caricato correttamente (salta se il tenant non ce l'ha)
             $homepageData = TestCase::homepageJsonForBlocksArchitecture();
             expect($homepageData['content_blocks'])->toHaveKey($this->lang);
+=======
+            // Verifica che il JSON della homepage sia caricato correttamente
+            // Il sito funziona, quindi il path reale è config/local/laravelpizza/
+<<<<<<< HEAD
+            $homepageJsonPath = config_path('local/laravelpizza/database/content/home.json');
+=======
+            $homepageJsonPath = config_path('local/laravelpizza/database/content/pages/home.json');
+>>>>>>> 6ed19256f (.)
+            // Il file potrebbe non esistere in test environment, quindi accettiamo sia true che false
+            if (! file_exists($homepageJsonPath)) {
+                $this->markTestSkipped('Homepage JSON file not found in test environment: '.$homepageJsonPath);
+            }
+
+            $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
+            $locale = (string) app()->getLocale();
+            expect($homepageData['content_blocks'])->toHaveKey($locale);
+>>>>>>> .merge_file_3VlG1Y
 
             $content = $response->getContent();
 
@@ -302,7 +332,26 @@ describe('CMS Individual Folio Routes Tests', function () {
             $response = get('/'.$this->lang);
             $response->assertStatus(200);
 
+<<<<<<< .merge_file_so8b1F
             $blocks = cmsHomepageBlocks($this->lang);
+=======
+            // Il sito funziona, quindi il path reale è config/local/laravelpizza/
+<<<<<<< HEAD
+            $homepageJsonPath = config_path('local/laravelpizza/database/content/home.json');
+=======
+            $homepageJsonPath = config_path('local/laravelpizza/database/content/pages/home.json');
+>>>>>>> 6ed19256f (.)
+            if (! file_exists($homepageJsonPath)) {
+                $this->markTestSkipped('Homepage JSON file not found in test environment: '.$homepageJsonPath);
+            }
+            $homepageData = json_decode(
+                file_get_contents($homepageJsonPath),
+                true,
+            );
+
+            $locale = (string) app()->getLocale();
+            $blocks = $homepageData['content_blocks'][$locale];
+>>>>>>> .merge_file_3VlG1Y
 
             // Verifica che le viste seguano il pattern theme
             foreach ($blocks as $block) {
@@ -313,7 +362,26 @@ describe('CMS Individual Folio Routes Tests', function () {
         });
 
         test('cms processes blade syntax in json correctly', function () {
+<<<<<<< .merge_file_so8b1F
             $blocks = cmsHomepageBlocks($this->lang);
+=======
+            // Il sito funziona, quindi il path reale è config/local/laravelpizza/
+<<<<<<< HEAD
+            $homepageJsonPath = config_path('local/laravelpizza/database/content/home.json');
+=======
+            $homepageJsonPath = config_path('local/laravelpizza/database/content/pages/home.json');
+>>>>>>> 6ed19256f (.)
+            if (! file_exists($homepageJsonPath)) {
+                $this->markTestSkipped('Homepage JSON file not found in test environment: '.$homepageJsonPath);
+            }
+            $homepageData = json_decode(
+                file_get_contents($homepageJsonPath),
+                true,
+            );
+
+            $locale = (string) app()->getLocale();
+            $blocks = $homepageData['content_blocks'][$locale];
+>>>>>>> .merge_file_3VlG1Y
             $landingBlock = collect($blocks)->firstWhere('type', 'landing-page');
 
             if ($landingBlock) {

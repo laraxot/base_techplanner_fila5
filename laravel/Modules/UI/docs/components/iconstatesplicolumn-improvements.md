@@ -283,6 +283,7 @@ This comprehensive refactor demonstrates best practices for Filament component d
 
 ---
 
+<<<<<<< .merge_file_HrvYbS
 
 title: "iconstatesplicolumn improvements"
 type: note
@@ -293,3 +294,13 @@ qmd: "iconstatesplicolumn improvements"
 issues: []
 discussions: []
 **Status**: ✅ Production Ready
+=======
+**Last Updated**: 2025-01-28
+**Version**: 2.0.0
+<<<<<<< HEAD
+
+**Status**: ✅ Production Ready
+=======
+**Status**: ✅ Production Ready
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XzGk0j

@@ -11,8 +11,24 @@ use Modules\Activity\Tests\TestCase;
 use Modules\Xot\Traits\Updater;
 use PHPUnit\Framework\Assert;
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
 uses(TestCase::class);
 
+<<<<<<< .merge_file_uNICvn
+=======
+beforeEach(function (): void {
+    /* @phpstan-ignore-next-line property.notFound */
+<<<<<<< HEAD
+    $this->model = new TestActivityModel;
+=======
+    $this->model = new TestActivityModel();
+>>>>>>> 6ed19256f (.)
+});
+
+>>>>>>> .merge_file_zTOXw3
 test('can create base model instance', function (): void {
     $model = new TestActivityModel;
 
@@ -51,6 +67,7 @@ test('has correct snake attributes setting', function (): void {
 });
 
 test('has correct casts configuration', function (): void {
+<<<<<<< .merge_file_uNICvn
     $model = new TestActivityModel;
     $casts = $model->getCasts();
 
@@ -60,6 +77,60 @@ test('has correct casts configuration', function (): void {
 
     Assert::assertArrayHasKey('published_at', $casts);
     Assert::assertSame('datetime', $casts['published_at']);
+=======
+    /** @phpstan-ignore-next-line property.notFound */
+    $casts = $this->model->getCasts();
+
+<<<<<<< HEAD
+    // id is cast to string (as defined in XotBaseModel)
+=======
+>>>>>>> 6ed19256f (.)
+    expect($casts)->toHaveKey('id');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['id'])->toBe('string');
+
+<<<<<<< HEAD
+    // published_at is cast to datetime (defined in TestActivityModel)
+    expect($casts)->toHaveKey('published_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['published_at'])->toBe('datetime');
+
+    // Verify getCasts returns an array
+    expect($casts)->toBeArray();
+=======
+    expect($casts)->toHaveKey('uuid');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['uuid'])->toBe('string');
+
+    expect($casts)->toHaveKey('created_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['created_at'])->toBe('datetime');
+
+    expect($casts)->toHaveKey('updated_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['updated_at'])->toBe('datetime');
+
+    expect($casts)->toHaveKey('deleted_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['deleted_at'])->toBe('datetime');
+
+    expect($casts)->toHaveKey('updated_by');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['updated_by'])->toBe('string');
+
+    expect($casts)->toHaveKey('created_by');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['created_by'])->toBe('string');
+
+    expect($casts)->toHaveKey('deleted_by');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['deleted_by'])->toBe('string');
+
+    expect($casts)->toHaveKey('published_at');
+    /* @phpstan-ignore-next-line offsetAccess.nonOffsetAccessible */
+    expect($casts['published_at'])->toBe('datetime');
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_zTOXw3
 });
 
 // Il fixture sta in Tests\Feature, non in Models: GetFactoryAction ricava il modulo da `Modules\<M>\Models\`
@@ -72,6 +143,7 @@ test('can use factory', function (): void {
 });
 
 test('has updater trait', function (): void {
+<<<<<<< .merge_file_uNICvn
     $model = new TestActivityModel;
     $traits = class_uses_recursive($model::class);
     Assert::assertContains(Updater::class, $traits);
@@ -81,6 +153,39 @@ test('has has factory trait', function (): void {
     $model = new TestActivityModel;
     $traits = class_uses_recursive($model::class);
     Assert::assertContains(HasFactory::class, $traits);
+=======
+    /** @var TestActivityModel $model */
+    /** @phpstan-ignore-next-line property.notFound */
+    $model = $this->model;
+    $traits = class_uses($model);
+    if (in_array(Updater::class, $traits, true)) {
+        expect($traits)->toContain(Updater::class);
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6ed19256f (.)
+        return;
+    }
+
+    expect(true)->toBeTrue();
+});
+
+test('has has factory trait', function (): void {
+    /** @var TestActivityModel $model */
+    /** @phpstan-ignore-next-line property.notFound */
+    $model = $this->model;
+    $traits = class_uses($model);
+    if (in_array(HasFactory::class, $traits, true)) {
+        expect($traits)->toContain(HasFactory::class);
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6ed19256f (.)
+        return;
+    }
+
+    expect(true)->toBeTrue();
+>>>>>>> .merge_file_zTOXw3
 });
 
 test('can handle uuid generation', function (): void {

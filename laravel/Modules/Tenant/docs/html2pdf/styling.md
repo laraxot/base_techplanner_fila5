@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,6 +16,13 @@ status: draft
 ---
 # Guida agli Stili, Tabelle e Immagini
 
+<<<<<<< .merge_file_Hdol3i
+=======
+See canonical documentation: ../../../../Themes/docs/shared-components/styling-Modules.md
+=======
+# Guida agli Stili, Tabelle e Immagini
+
+>>>>>>> .merge_file_mWI2zV
 Questa guida illustra come applicare stili CSS, creare layout con tabelle e gestire le immagini nei PDF generati con Html2Pdf.
 
 **Menu di Navigazione:**
@@ -152,3 +160,7 @@ $src = 'data:image/png;base64,' . $imageData;
 // Passa la stringa $src alla view
 return view('pdf.template', compact('src'));
 ```
+<<<<<<< .merge_file_Hdol3i
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_mWI2zV

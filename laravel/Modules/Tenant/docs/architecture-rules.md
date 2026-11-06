@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_eOhP0X
 ---
 issues: []
 discussions: []
@@ -12,18 +13,42 @@ related:
   - "./phpstan-corrections-january.md"
 status: draft
 ---
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_LC9Tq6
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.
 
 For strict coding standards, Filament extension rules, and PHPStan guidelines, please refer to the central documentation in the **Xot Module**:
 
+<<<<<<< .merge_file_eOhP0X
 -   [Super Cow Methodology](../../xot/docs/super_cow_methodology.md)
 -   [PHP Quality Guide](../../xot/docs/php_quality_guide.md)
 -   [Filament Extension Rules](../../xot/docs/filament_extension_rules.md)
+=======
+>>>>>>> 6ed19256f (.)
+-   [Super Cow Methodology](../../Xot/docs/super_cow_methodology.md)
+-   [PHP Quality Guide](../../Xot/docs/php_quality_guide.md)
+-   [Filament Extension Rules](../../Xot/docs/filament_extension_rules.md)
+>>>>>>> .merge_file_LC9Tq6
 
 **Key Principles:**
 1.  **DRY & KISS**: Don't repeat yourself, keep it simple.
 2.  **Zero Errors**: PHPStan Level 10 compliance is mandatory.
 3.  **XotBase**: Always extend `XotBase` classes, never Filament classes directly.
 4.  **Translations**: Use `LangServiceProvider` for automatic label resolution.
+<<<<<<< .merge_file_eOhP0X
+=======
+<<<<<<< HEAD
+---
+module: theme
+topic: architecture-rules
+canonical: ../../../Themes/docs/shared-components/architecture-rules-Modules.md
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/architecture-rules-Modules.md
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LC9Tq6

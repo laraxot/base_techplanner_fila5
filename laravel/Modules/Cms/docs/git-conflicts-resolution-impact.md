@@ -12,7 +12,14 @@ status: draft
 
 # Impatto Risoluzione Conflitti Git - Modulo Cms
 
+<<<<<<< .merge_file_GDfs2j
+=======
+## Data: 2025-01-06
+<<<<<<< HEAD
+>>>>>>> .merge_file_1KzlNN
 ## Data: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Contesto
 Il modulo Cms è stato coinvolto indirettamente nella risoluzione di conflitti Git che hanno interessato moduli correlati. Questo documento analizza l'impatto e le implicazioni per il sistema di gestione contenuti.
@@ -52,7 +59,14 @@ Il modulo Cms è stato coinvolto indirettamente nella risoluzione di conflitti G
 
 ### 1. Gestione Dipendenze
 **Problema**: Conflitti in moduli correlati possono impattare Cms
+<<<<<<< .merge_file_GDfs2j
+=======
+**Soluzione**:
+<<<<<<< HEAD
+>>>>>>> .merge_file_1KzlNN
 **Soluzione**: 
+=======
+>>>>>>> 6ed19256f (.)
 - Monitorare sempre i moduli correlati (Geo, User)
 - Testare integrazioni dopo risoluzioni
 - Documentare dipendenze cross-modulo
@@ -158,9 +172,20 @@ php artisan lang:check
 ## Documentazione Correlata
 
 ### Moduli Correlati
+<<<<<<< .merge_file_GDfs2j
 - [Geo Conflict Resolution](../../Geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](../../User/docs/theme-translation-conflicts-resolution.md)
+=======
+- [Geo Conflict Resolution](../../Geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](../../User/project_docs/theme-translation-conflicts-resolution.md)
+- [Xot Git Conflicts](../../Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
+<<<<<<< HEAD
+- [Geo Conflict Resolution](../../geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](../../user/project_docs/theme-translation-conflicts-resolution.md)
+>>>>>>> .merge_file_1KzlNN
 - [Xot Git Conflicts](../../xot/project_docs/git-conflicts-resolution-[date].md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Documentazione Cms
 - [Content Management](content-management.md)
@@ -200,9 +225,20 @@ php artisan lang:check
 ## Collegamenti Correlati
 
 ### Documentazione Moduli
+<<<<<<< .merge_file_GDfs2j
 - [Geo Conflict Resolution](../../Geo/docs/conflict-resolution.md)
 - [User Theme Conflicts](../../User/docs/theme-translation-conflicts-resolution.md)
+=======
+- [Geo Conflict Resolution](../../Geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](../../User/project_docs/theme-translation-conflicts-resolution.md)
+- [Xot Git Conflicts](../../Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
+<<<<<<< HEAD
+- [Geo Conflict Resolution](../../geo/project_docs/conflict-resolution.md)
+- [User Theme Conflicts](../../user/project_docs/theme-translation-conflicts-resolution.md)
+>>>>>>> .merge_file_1KzlNN
 - [Xot Git Conflicts](../../xot/project_docs/git-conflicts-resolution-[date].md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Documentazione Cms
 - [Content Management](content-management.md)
@@ -210,6 +246,16 @@ php artisan lang:check
 - [Architecture](frontoffice/architecture.md)
 
 ---
+<<<<<<< .merge_file_GDfs2j
+=======
+
+**Ultimo aggiornamento**: 2025-01-06
+**Autore**: Sistema di correzione automatica
+**Stato**: ✅ Completato
+<<<<<<< HEAD
+>>>>>>> .merge_file_1KzlNN
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
 **Stato**: ✅ Completato
+=======
+>>>>>>> 6ed19256f (.)

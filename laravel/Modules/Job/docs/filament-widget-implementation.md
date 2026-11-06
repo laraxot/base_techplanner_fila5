@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "filament widget implementation"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_41QC4d
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_0cIz34

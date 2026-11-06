@@ -118,7 +118,18 @@ I blocchi sono l'unità base di contenuto. Ogni blocco:
 
 ## Documentazione Correlata
 
+<<<<<<< .merge_file_EFr0sC
 - [Gestione dei Temi](../../../../Themes/README.md)
+=======
+<<<<<<< HEAD
+- [Gestione dei Temi](../themes/readme.md)
+- [Componenti UI](../components/readme.md)
+- [Configurazione Blocchi](../blocks/readme.md)
+- [Ottimizzazione Performance](../performance/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
+- [Gestione dei Temi](../themes/README.md)
+>>>>>>> .merge_file_Uh4XM4
 - [Componenti UI](../components/README.md)
 - [Configurazione Blocchi](../blocks/README.md)
 - [Ottimizzazione Performance](../performance/readme.md)
@@ -126,7 +137,25 @@ I blocchi sono l'unità base di contenuto. Ogni blocco:
 ## Collegamenti tra versioni di architecture.md
 * [architecture.md](docs/tecnico/filament/architecture.md)
 * [architecture.md](docs/rules/architecture.md)
+<<<<<<< .merge_file_EFr0sC
 * [architecture.md](../../../Gdpr/docs/architecture.md)
 * [architecture.md](laravel/modules/cms/docs/frontoffice/architecture.md)
 * [architecture.md](laravel/modules/cms/docs/architecture.md)
 * [architecture.md](laravel/themes/one/docs/roadmap/inspiration/architecture.md)
+=======
+<<<<<<< HEAD
+* [architecture.md](laravel/modules/gdpr/docs/architecture.md)
+* [architecture.md](laravel/modules/cms/docs/frontoffice/architecture.md)
+* [architecture.md](laravel/modules/cms/docs/architecture.md)
+* [architecture.md](laravel/themes/one/docs/roadmap/inspiration/architecture.md)
+* [architecture.md](laravel/Modules/Gdpr/docs/architecture.md)
+* [architecture.md](laravel/Modules/Cms/docs/frontoffice/architecture.md)
+* [architecture.md](laravel/Modules/Cms/docs/architecture.md)
+* [architecture.md](laravel/Themes/One/docs/roadmap/inspiration/architecture.md)
+=======
+* [architecture.md](laravel/Modules/Gdpr/docs/architecture.md)
+* [architecture.md](laravel/Modules/Cms/docs/frontoffice/architecture.md)
+* [architecture.md](laravel/Modules/Cms/docs/architecture.md)
+* [architecture.md](laravel/Themes/One/docs/roadmap/inspiration/architecture.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Uh4XM4

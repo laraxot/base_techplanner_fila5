@@ -2,7 +2,17 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_O7d41V
 namespace Modules\Notify\Tests\Unit\Models;
+=======
+<<<<<<< HEAD
+=======
+namespace Modules\Notify\Tests\Unit\Models;
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Notify\Models\BaseModel;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_YUjr2v
 
 use Modules\Notify\Models\BaseModel;
 use Modules\Notify\Tests\TestCase;

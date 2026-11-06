@@ -50,11 +50,27 @@ return [
 
 ];
 ## Collegamenti tra versioni di metatag.md
+<<<<<<< .merge_file_DYK2vu
+=======
+* [metatag.md](../../../Xot/docs/install/metatag.md)
+* [metatag.md](../../../Tenant/docs/it/config/metatag.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_adnma0
 * [metatag.md](../../../xot/docs/install/metatag.md)
 * [metatag.md](../../../tenant/docs/it/config/metatag.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ];
 
+<<<<<<< .merge_file_DYK2vu
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_adnma0

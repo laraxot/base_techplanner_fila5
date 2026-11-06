@@ -79,7 +79,15 @@ use Modules\NomeModulo\App\Filament\Widgets\MioWidget;
 public function boot(): void
 {
     // Altre operazioni...
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_rw3SSw
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_WaN66C
     $this->registerFilamentWidgets();
 }
 
@@ -119,4 +127,12 @@ public function registerFilamentWidgets(): void
 
 ## Conclusione
 
+<<<<<<< .merge_file_rw3SSw
 L'utilizzo corretto dei widget Filament nelle viste Blade può migliorare significativamente l'esperienza utente e la manutenibilità del codice. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e sfruttare appieno le potenzialità di Filament in il progetto.
+=======
+<<<<<<< HEAD
+L'utilizzo corretto dei widget Filament nelle viste Blade può migliorare significativamente l'esperienza utente e la manutenibilità del codice. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e sfruttare appieno le potenzialità di Filament in il progetto.
+=======
+L'utilizzo corretto dei widget Filament nelle viste Blade può migliorare significativamente l'esperienza utente e la manutenibilità del codice. Seguendo le best practices descritte in questo documento, è possibile evitare errori comuni e sfruttare appieno le potenzialità di Filament in il progetto.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_WaN66C

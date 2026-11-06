@@ -254,9 +254,18 @@ class AdvancedForm extends Component
 - Breaking changes
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](docs/tecnico/filament/best-practices.md)
+<<<<<<< .merge_file_JhyylY
+=======
+* [best-practices.md](../../../Xot/docs/laraxot/best-practices.md)
+* [best-practices.md](../../../UI/docs/best-practices.md)
+* [best-practices.md](../../../../Themes/One/docs/best-practices.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_eijxrt
 * [best-practices.md](../../../xot/docs/laraxot/best-practices.md)
 * [best-practices.md](../../../ui/docs/best-practices.md)
 * [best-practices.md](../../../../themes/one/docs/best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
@@ -507,6 +516,7 @@ class AdvancedForm extends Component
 - Breaking changes
 ## Collegamenti tra versioni di best-practices.md
 * [best-practices.md](docs/tecnico/filament/best-practices.md)
+<<<<<<< HEAD
 * [best-practices.md](../../../xot/project_docs/laraxot/best-practices.md)
 * [best-practices.md](../../../ui/project_docs/best-practices.md)
 * [best-practices.md](../../../../themes/one/project_docs/best-practices.md)
@@ -516,9 +526,31 @@ class AdvancedForm extends Component
 * [best-practices.md](../../../xot/project_docs/laraxot/best-practices.md)
 * [best-practices.md](../../../ui/project_docs/best-practices.md)
 * [best-practices.md](../../../../themes/one/project_docs/best-practices.md)
+<<<<<<< .merge_file_JhyylY
+=======
+=======
+>>>>>>> 6ed19256f (.)
+* [best-practices.md](../../../Xot/project_docs/laraxot/best-practices.md)
+* [best-practices.md](../../../UI/project_docs/best-practices.md)
+* [best-practices.md](../../../../Themes/One/project_docs/best-practices.md)
+* [best-practices.md](../../../Xot/project_docs/laraxot/best-practices.md)
+* [best-practices.md](../../../UI/project_docs/best-practices.md)
+* [best-practices.md](../../../../Themes/One/project_docs/best-practices.md)
+* [best-practices.md](../../../Xot/project_docs/laraxot/best-practices.md)
+* [best-practices.md](../../../UI/project_docs/best-practices.md)
+* [best-practices.md](../../../../Themes/One/project_docs/best-practices.md)
+>>>>>>> .merge_file_eijxrt
 
 ### Versione Incoming
 
 - Breaking changes
 
+<<<<<<< .merge_file_JhyylY
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_eijxrt

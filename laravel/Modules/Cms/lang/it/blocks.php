@@ -28,6 +28,7 @@ return [
             'orientation' => 'Orientamento',
         ],
     ],
+<<<<<<< HEAD
     'header_nav' => [
         'label' => 'Navigazione Header',
         'fields' => [
@@ -43,6 +44,8 @@ return [
             'children' => 'Sottomenu',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
     'actions' => [
         'label' => 'Azioni',
         'fields' => [
@@ -157,6 +160,7 @@ return [
             'label' => 'Etichetta',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Blocks',
     'plural_label' => 'Blocks (Plurale)',
     'fields' => [
@@ -179,4 +183,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

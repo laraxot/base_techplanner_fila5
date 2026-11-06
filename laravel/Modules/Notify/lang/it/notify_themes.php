@@ -5,8 +5,33 @@ declare(strict_types=1);
 return [
     'navigation' => ['group' => 'Sistema', 'label' => 'Temi Notifiche', 'icon' => 'notify-theme-animated', 'sort' => 50, 'description' => 'Gestione dei temi per le notifiche'],
     'fields' => [
+<<<<<<< .merge_file_QH4YFA
         'name' => ['label' => 'Nome', 'tooltip' => 'Nome del tema', 'placeholder' => 'es: Tema Aziendale', 'help' => 'Inserisci un nome descrittivo per il tema', 'helper_text' => '', 'description' => ''],
         'description' => ['label' => 'Descrizione', 'tooltip' => 'Descrizione del tema', 'placeholder' => 'es: Tema standard per le comunicazioni aziendali', 'help' => 'Breve descrizione dello scopo del tema', 'helper_text' => '', 'description' => ''],
+=======
+        'name' => [
+            'label' => 'Nome',
+            'tooltip' => 'Nome del tema',
+            'placeholder' => 'es: Tema Aziendale',
+            'help' => 'Inserisci un nome descrittivo per il tema',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+        'description' => [
+            'label' => 'Descrizione',
+            'tooltip' => 'Descrizione del tema',
+            'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
+            'help' => 'Breve descrizione dello scopo del tema',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_Ybusk0
         'colors' => [
             'label' => 'Colori',
             'tooltip' => 'Schema colori del tema',
@@ -19,8 +44,11 @@ return [
                 'warning' => ['label' => 'Attenzione', 'tooltip' => 'Colore per messaggi di avviso', 'placeholder' => 'es: #F5A623'],
                 'error' => ['label' => 'Errore', 'tooltip' => 'Colore per messaggi di errore', 'placeholder' => 'es: #D0021B'],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'typography' => [
             'label' => 'Tipografia',
@@ -33,14 +61,40 @@ return [
                     'label' => 'Dimensioni font',
                     'tooltip' => 'Dimensioni dei caratteri',
                     'options' => [
+<<<<<<< .merge_file_QH4YFA
                         'small' => ['label' => 'Piccolo', 'tooltip' => 'Testo piccolo (es: note]'],
                         'normal' => ['label' => 'Normale', 'tooltip' => 'Testo normale'],
                         'large' => ['label' => 'Grande', 'tooltip' => 'Testo grande (es: titoli]'],
+=======
+                        'small' => [
+                            'label' => 'Piccolo',
+<<<<<<< HEAD
+                            'tooltip' => 'Testo piccolo (es: note]',
+=======
+                            'tooltip' => 'Testo piccolo (es: note)',
+>>>>>>> 6ed19256f (.)
+                        ],
+                        'normal' => [
+                            'label' => 'Normale',
+                            'tooltip' => 'Testo normale',
+                        ],
+                        'large' => [
+                            'label' => 'Grande',
+<<<<<<< HEAD
+                            'tooltip' => 'Testo grande (es: titoli]',
+=======
+                            'tooltip' => 'Testo grande (es: titoli)',
+>>>>>>> 6ed19256f (.)
+                        ],
+>>>>>>> .merge_file_Ybusk0
                     ],
                 ],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'layout' => [
             'label' => 'Layout',
@@ -51,8 +105,11 @@ return [
                 'footer' => ['label' => 'Piè di pagina', 'tooltip' => 'Stile del piè di pagina'],
                 'spacing' => ['label' => 'Spaziatura', 'tooltip' => 'Spaziatura tra gli elementi'],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'assets' => [
             'label' => 'Risorse',
@@ -63,9 +120,13 @@ return [
                 'background' => ['label' => 'Sfondo', 'tooltip' => 'Immagine di sfondo'],
                 'icons' => ['label' => 'Icone', 'tooltip' => 'Set di icone del tema'],
             ],
+<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
+<<<<<<< .merge_file_QH4YFA
         'is_default' => ['label' => 'Predefinito', 'tooltip' => 'Imposta come tema predefinito', 'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico', 'helper_text' => '', 'description' => ''],
         'is_active' => ['label' => 'Attivo', 'tooltip' => 'Stato di attivazione del tema', 'help' => 'Solo i temi attivi possono essere utilizzati', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
@@ -77,6 +138,28 @@ return [
         'created_at' => ['label' => 'created_at'],
         'updated_at' => ['label' => 'updated_at'],
         'post_type' => ['label' => 'post_type'],
+=======
+        'is_default' => [
+            'label' => 'Predefinito',
+            'tooltip' => 'Imposta come tema predefinito',
+            'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+            'tooltip' => 'Stato di attivazione del tema',
+            'help' => 'Solo i temi attivi possono essere utilizzati',
+<<<<<<< HEAD
+            'helper_text' => '',
+            'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
+        ],
+>>>>>>> .merge_file_Ybusk0
     ],
     'actions' => [
         'preview' => ['label' => 'Anteprima', 'tooltip' => 'Visualizza anteprima del tema', 'icon' => 'heroicon-o-eye', 'color' => 'primary'],
@@ -113,6 +196,9 @@ return [
         'status' => ['label' => 'Stato', 'tooltip' => 'Filtra per stato di attivazione'],
         'type' => ['label' => 'Tipo', 'tooltip' => 'Filtra per tipo di tema'],
     ],
+<<<<<<< HEAD
     'label' => 'Notify Themes',
     'plural_label' => 'Notify Themes (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

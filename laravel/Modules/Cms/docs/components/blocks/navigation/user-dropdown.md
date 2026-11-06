@@ -129,6 +129,18 @@ public function boot()
 - Proteggere le rotte sensibili
 
 ## Collegamenti
+<<<<<<< .merge_file_aOKzCf
 - [Documentazione Blocchi](../../README.md)
 - [Best Practices CMS](../../../best-practices.md)
 - [Guida Componenti](../../../components.md)
+=======
+- [Documentazione Blocchi](../README.md)
+<<<<<<< HEAD
+- [Documentazione Blocchi](../readme.md)
+- [Best Practices CMS](../../best-practices.md)
+- [Guida Componenti](../../components.md)
+=======
+- [Best Practices CMS](../../best-practices.md)
+- [Guida Componenti](../../components.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_jgBwin

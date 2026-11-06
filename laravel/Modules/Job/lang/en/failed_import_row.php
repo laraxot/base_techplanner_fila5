@@ -25,7 +25,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -107,47 +106,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'uuid' => [
-            'label' => 'UUID',
-        ],
-        'connection' => [
-            'label' => 'Connessione',
-        ],
-        'queue' => [
-            'label' => 'Coda',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-        ],
-        'exception' => [
-            'label' => 'Eccezione',
-        ],
-        'failed_at' => [
-            'label' => 'Fallito il',
-        ],
-        'attempts' => [
-            'label' => 'Tentativi',
-        ],
-        'max_attempts' => [
-            'label' => 'Tentativi Massimi',
-        ],
-        'status' => [
-            'label' => 'Stato',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
-        ],
-        'updated_at' => [
-            'label' => 'Aggiornato il',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -236,9 +194,6 @@ return [
         'sort' => '93',
         'icon' => 'job-failed-job',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

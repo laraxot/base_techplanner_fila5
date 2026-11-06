@@ -13,6 +13,13 @@ status: draft
 # Seasonal Email Templates Implementation Report
 
 **Date**: 2025-12-19
+<<<<<<< .merge_file_sfqhp8
+=======
+<<<<<<< HEAD
+**Date**: 2025-12-19
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_FqqMfv
 **Status**: Completed
 
 ## 1. Implementation Summary
@@ -22,6 +29,13 @@ We have successfully implemented the seasonal email templates as requested.
 ### Created Files
 - `Themes/Sixteen/resources/mail-layouts/christmas.html`: Classic Christmas theme (Red/Green/Gold) with falling snow animation.
 
+<<<<<<< .merge_file_sfqhp8
+=======
+<<<<<<< HEAD
+
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_FqqMfv
 ### Documentation Updated
 - `Modules/Notify/docs/seasonal-email-templates.md`: Updated to include the new templates and usage instructions.
 - `Themes/Sixteen/resources/mail-layouts/README.md`: Synced with the main documentation.
@@ -54,4 +68,12 @@ Ran `phpstan analyse Modules/Notify` to ensure no regression in the module.
 
 ## 4. Conclusion
 
+<<<<<<< .merge_file_sfqhp8
 The logic, philosophy, and implementation of the "Zen of Christmas Emails" have been established. The system is flexible enough to swap themes by files or context logic without code changes.
+=======
+<<<<<<< HEAD
+The logic, philosophy, and implementation of the "Zen of Christmas Emails" have been established. The system is flexible enough to swap themes by files or context logic without code changes.
+=======
+The logic, philosophy, and implementation of the "Zen of Christmas Emails" have been established. The system is flexible enough to swap themes by files or context logic without code changes.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_FqqMfv

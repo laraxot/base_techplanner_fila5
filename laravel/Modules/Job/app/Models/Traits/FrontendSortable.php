@@ -38,11 +38,8 @@ trait FrontendSortable
             },
             static function (Builder $query) use ($defaultSort): void {
                 foreach ($defaultSort as $key => $direction) {
-<<<<<<< HEAD
                     /** @var 'asc'|'desc' $direction */
                     $direction = in_array($direction, ['asc', 'desc'], true) ? $direction : 'asc';
-=======
->>>>>>> 6ed19256f (.)
                     $query->orderBy($key, $direction);
                 }
             },

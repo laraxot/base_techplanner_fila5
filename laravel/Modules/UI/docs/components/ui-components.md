@@ -14,7 +14,11 @@ status: draft
 
 ## Panoramica
 
+<<<<<<< HEAD
 I componenti UI forniscono elementi riutilizzabili e standardizzati per l'interfaccia utente dell'ecosistema PTVX Fila 5.
+=======
+I componenti UI forniscono elementi riutilizzabili e standardizzati per l'interfaccia utente dell'ecosistema PTVX Fila3 Mono.
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Principi di Design
 
@@ -188,9 +192,25 @@ return [
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_G7VG3B
+=======
+- [**README Modulo UI**](../README.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_uGcwII
 - [**README Modulo UI**](../readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [**Sistema Layout**](../layout/layout-system.md)
 - [**Gestione Asset**](../assets/asset-management.md)
 - [**Personalizzazioni Filament**](../filament/filament-customizations.md)
 
 ---
+<<<<<<< .merge_file_G7VG3B
+=======
+
+<<<<<<< HEAD
+*Ultimo aggiornamento: giugno 2025*
+=======
+*Ultimo aggiornamento: giugno 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_uGcwII

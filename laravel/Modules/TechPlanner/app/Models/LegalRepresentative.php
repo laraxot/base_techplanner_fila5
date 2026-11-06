@@ -32,7 +32,20 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< .merge_file_HQ6Z1s
  *
+=======
+ * @property-read Client $client
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+<<<<<<< HEAD
+ *
+=======
+>>>>>>> 6ed19256f (.)
+ * @method static Builder<static>|LegalRepresentative newModelQuery()
+ * @method static Builder<static>|LegalRepresentative newQuery()
+ * @method static Builder<static>|LegalRepresentative query()
+>>>>>>> .merge_file_PiY5jk
  * @method static Builder<static>|LegalRepresentative whereClientId($value)
  * @method static Builder<static>|LegalRepresentative whereCreatedAt($value)
  * @method static Builder<static>|LegalRepresentative whereCreatedBy($value)
@@ -46,7 +59,16 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|LegalRepresentative wherePhone($value)
  * @method static Builder<static>|LegalRepresentative whereUpdatedAt($value)
  * @method static Builder<static>|LegalRepresentative whereUpdatedBy($value)
+<<<<<<< HEAD
  *
+<<<<<<< .merge_file_HQ6Z1s
+=======
+ * @property-read Profile|null $deleter
+ *
+=======
+ * @property-read Profile|null $deleter
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_PiY5jk
  * @mixin \Eloquent
  */
 class LegalRepresentative extends BaseModel

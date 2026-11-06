@@ -32,6 +32,14 @@ final class QuickLinksBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
+<<<<<<< .merge_file_0YeNY3
         return \trans_string('cms::blocks.quick_links.label') ?: 'Quick Links Block';
+=======
+<<<<<<< HEAD
+        return \trans_string('cms::blocks.quick_links.label');
+=======
+        return \trans_string('cms::blocks.quick_links.label') ?? 'Quick Links';
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_W8obmk
     }
 }

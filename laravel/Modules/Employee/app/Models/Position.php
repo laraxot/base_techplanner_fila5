@@ -4,8 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+<<<<<<< .merge_file_CfSF4P
 use Modules\TechPlanner\Models\Profile;
 use Modules\Employee\Database\Factories\PositionFactory;
+=======
+<<<<<<< HEAD
+=======
+use Modules\TechPlanner\Models\Profile;
+use Modules\Employee\Database\Factories\PositionFactory;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_8QTr70
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
@@ -18,7 +26,10 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\TechPlanner\Models\Profile;
 =======
 >>>>>>> 6ed19256f (.)
+<<<<<<< .merge_file_CfSF4P
 >>>>>>> .merge_file_j2a4b1
+=======
+>>>>>>> .merge_file_8QTr70
 
 /**
  * Class Position.
@@ -42,7 +53,10 @@ use Modules\TechPlanner\Models\Profile;
  * @property-read Profile|null $deleter
  * @property-read Profile|null $updater
 <<<<<<< HEAD
+<<<<<<< .merge_file_CfSF4P
 >>>>>>> .merge_file_j2a4b1
+=======
+>>>>>>> .merge_file_8QTr70
  *
 =======
 >>>>>>> 6ed19256f (.)
@@ -50,7 +64,10 @@ use Modules\TechPlanner\Models\Profile;
  * @method static Builder<static>|Position newModelQuery()
  * @method static Builder<static>|Position newQuery()
  * @method static Builder<static>|Position query()
+<<<<<<< HEAD
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Position extends BaseModel
