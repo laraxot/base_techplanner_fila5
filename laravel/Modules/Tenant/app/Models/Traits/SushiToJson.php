@@ -8,7 +8,7 @@ use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use InvalidArgumentException;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Sushi\Sushi;
 use Throwable;
 
@@ -42,7 +42,7 @@ trait SushiToJson
             throw new InvalidArgumentException(__FILE__.':'.__LINE__.' - '.class_basename(self::class).': Table name must be string');
         }
 
-        return TenantService::filePath('database/content/'.$tbl.'.json');
+        return app(GetTenantFilePathAction::class)->execute('database/content/'.$tbl.'.json');
     }
 
     /**
