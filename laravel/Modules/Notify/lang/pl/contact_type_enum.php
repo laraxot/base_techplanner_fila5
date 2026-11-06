@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
     'phone' => [
         'label' => 'Telefon',
         'icon' => 'heroicon-o-phone',
@@ -45,6 +46,7 @@ return [
         'color' => 'text-gray-600',
         'hex_color' => '#6b7280',
         'description' => 'Notatki kontaktowe'],
+    ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
