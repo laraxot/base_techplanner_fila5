@@ -35,6 +35,20 @@ curl -sS -o /dev/null -w 'HTTP %{http_code}\n' https://sottana.com/it
 
 Per gli errori successivi al bootstrap consultare anche `laravel/storage/logs/laravel.log`.
 
+## Collegamenti simbolici del tenant e del tema
+
+Il commit `02abdc831` del 2026-11-06 ha cambiato il tipo Git dei collegamenti da `120000` (symlink) a `100644` (file normale), conservando soltanto il testo del percorso. Un file con scritto `../local/techplanner/` non e' una directory e provoca `DirectoryNotFoundException` durante il bootstrap di Tenant.
+
+Collegamenti richiesti:
+
+- `laravel/config/com/sottana` → `../local/techplanner/`
+- `laravel/config/net/sottana` → `../local/techplanner/`
+- `public_html/themes/Two` → `../../laravel/Themes/Two/public`
+
+Ripristinati i tre symlink e impostato `git config --local core.symlinks true`. Nei commit e nei merge devono conservare il modo Git `120000`; l'opzione locale non converte da sola file gia' registrati come `100644`. Verificare sia `test -L <percorso>` sia `test -d <percorso>`.
+
+Verifica del ripristino: tenant `com/sottana`, 25 configurazioni PHP leggibili, home e login HTTP 200; `/techplanner/admin` senza sessione autenticata risponde 302 verso il login amministrativo.
+
 ## Pagine da controllare dopo deploy
 
 - Home: https://sottana.net/it
