@@ -1,5 +1,5 @@
 ---
-title: "Project context — Job"
+title: "Project context: Job"
 type: constitution
 module: Job
 track: quick-flow
@@ -14,7 +14,7 @@ related:
   - ./filament-blueprint.md
 ---
 
-# Costituzione — Job
+# Costituzione: Job
 
 Eseguire import/export, notifiche e lavori schedulati in modo affidabile senza perdere transazioni.
 

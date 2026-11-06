@@ -2,7 +2,7 @@
 qmd: "whatsapp consolidated"
 issues: []
 discussions: []
-title: "whatsapp — Consolidated Documentation"
+title: "whatsapp: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# whatsapp — Consolidated Documentation
+# whatsapp: Consolidated Documentation
 
 Consolidated from **12** individual files.
 

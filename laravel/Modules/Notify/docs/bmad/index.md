@@ -1,5 +1,5 @@
 ---
-title: Notify — indice BMAD
+title: Notify: indice BMAD
 type: index
 tags: [docs, bmad, notify]
 qmd: "Notify indice BMAD documentazione"
@@ -7,7 +7,7 @@ status: draft
 updated: 2026-10-09
 ---
 
-# Notify — indice BMAD
+# Notify: indice BMAD
 
 ## Canonico
 
@@ -16,6 +16,7 @@ updated: 2026-10-09
 - [Brainstorming](./brainstorming/)
 - [Epiche](./epics/)
 - [Stories](./stories/)
+- [Migrazione SettingPage alla base comune](./stories/setting-page-base-migration.story.md)
 - [Wiki del modulo](../wiki/)
 
 ## Legacy da consultare, non da estendere

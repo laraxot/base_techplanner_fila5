@@ -11,7 +11,7 @@ related:
   - ../wiki/concepts/services-to-actions-migration.md
 ---
 
-# PHPStan zero — test push / SMS / API template
+# PHPStan zero: test push / SMS / API template
 
 ## Scopo
 

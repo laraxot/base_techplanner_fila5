@@ -7,7 +7,7 @@ status: draft
 updated: 2026-10-09
 ---
 
-# Story — riorganizzazione docs core: Job
+# Story: riorganizzazione docs core: Job
 
 - **ID:** `2026-10-09-docs-reorg-core-job`
 - **Status:** done

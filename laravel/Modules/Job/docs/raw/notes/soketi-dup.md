@@ -2,7 +2,7 @@
 qmd: "soketi dup"
 issues: []
 discussions: []
-title: 'Soketi dup — risorse esterne'
+title: 'Soketi dup: risorse esterne'
 module: Job
 type: reference
 slug: soketi-dup
@@ -13,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Soketi dup — risorse esterne
+# Soketi dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

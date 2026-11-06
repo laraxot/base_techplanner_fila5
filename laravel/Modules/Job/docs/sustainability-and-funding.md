@@ -1,5 +1,5 @@
 ---
-title: "Sostenibilità e inbound marketing — Job"
+title: "Sostenibilità e inbound marketing: Job"
 type: bmad-pointer
 status: decision-input
 updated: 2026-10-15

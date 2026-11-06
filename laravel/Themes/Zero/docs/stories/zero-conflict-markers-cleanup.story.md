@@ -8,7 +8,7 @@ slug: zero-conflict-markers-cleanup
 status: done
 cold_gate: docs-only, no phpstan/pest impact
 created: '2026-09-22'
-updated: '2026-09-22'
+updated: '2026-11-03'
 repository: "https://github.com/laraxot/theme_zero_fila5.git"
 github_issue: null
 github_discussion: null
@@ -137,3 +137,44 @@ minore identificato ma non corretto (link morti in `README.md`, sezione
 "Release automation" — reintrodotti da un rewrite concorrente successivo al
 mio). 1 blocco di sync non risolvibile da questo fork (oggetto mancante verso
 `provtv`). Lock dei 12 file rilasciati a fine story.
+
+## 2026-11-03: rebase del mono dopo il pull dei sottomoduli
+
+### Contesto
+
+Il repo mono e' in un rebase interattivo: `pick 10b6336ff6 .` (lo snapshot locale dopo il pull dei sottomoduli) su `566e95b136 .` (upstream, 2026-11-01). In Zero erano in conflitto 3 percorsi. Diversamente dai moduli, qui il lato upstream era pulito, mentre il lato in arrivo, cioe' l'HEAD del tema (`b41dae5b`, 2026-11-01), aveva marker `.merge_file_*` committati. Il quadro generale del rebase e' in [resolve-conflict-markers-xot.story.md](../../../../Modules/Xot/docs/stories/resolve-conflict-markers-xot.story.md).
+
+### Decisioni per file
+
+| File (relativo a `laravel/Themes/Zero/`) | Scelta | Motivo |
+|---|---|---|
+| `resources/views/filament/widgets/auth/login.blade.php` | Upstream | Il blocco nell'HEAD del tema aveva una meta' vecchia con testo italiano scritto nella vista (`__('Accedi')`) e una meta' nuova con chiavi `pub_theme::auth.*`. La versione upstream e' identica all'HEAD del tema con la meta' nuova tenuta e gli spazi a fine riga tolti (verificato con `cmp`). Le chiavi esistono in `lang/it/auth.php` e danno lo stesso testo. |
+| `resources/views/pages/auth/login.blade.php` | Upstream | Stesso caso: `__('Non hai un account?')` sostituito da `pub_theme::auth.login.no_account.message`. |
+| `resources/views/components/layouts/auth.blade.php` | Upstream (file tenuto) | Conflitto modifica/cancellazione: il tema l'ha cancellato il 2026-09-24 (`dd4ad9ee`, pulizia marker), l'upstream mono l'ha modificato il 2026-11-01 (due testi in chiavi `pub_theme::layout.*`). Tenuto perche': `layout.auth.restricted_area.label` e' stata aggiunta al tema il 2026-10-30 (`a6fa430e`) e la usa solo questo layout; `components.layouts.auth` a runtime si risolve su questo file; `Modules/User/tests/Feature/AuthComponentsTest.php` verifica che esista. Nessuna pagina lo usa oggi. |
+
+Il contenuto upstream e' stato scritto con `git show :2:<path> > <path>`, non con `git checkout --ours` (regola git forward-only). Il layout era gia' uguale alla versione upstream nel working tree.
+
+### Docs del tema con marker committati (non in conflitto nel rebase)
+
+Il rebase ha unito senza conflitto 3 docs che pero' portavano marker committati nell'HEAD del tema (`b41dae5b`). Risolti a mano:
+
+| File | Scelta |
+|---|---|
+| `docs/wiki/index.md` | Meta' nuova in tutti e 4 i blocchi: frontmatter completo del 2026-10-20, elenco concetti e fonti, piede senza data. |
+| `docs/wiki/concepts/ponytail-docs-lifecycle.md` | Meta' nuova: la vecchia era vuota, la nuova aggiunge il frontmatter. |
+| `docs/wiki/concepts/ponytail-audit.md` | Blocco 1 (frontmatter): meta' nuova. Blocco 2 (link): meta' vecchia. La nuova faceva puntare "Hub audit" al file stesso e saliva di 5 cartelle invece di 6. La vecchia raggiunge `docs/audit/ponytail-audit.md` nella root. |
+
+I tre frontmatter sono YAML valido (Symfony Yaml).
+
+### Verifica
+
+- Marker in `laravel/Themes/Zero`: 0.
+- Le tre viste compilano con `Blade::compileString` dentro l'app avviata, e l'output passa `php -l`.
+- `Modules/User/tests/Feature/AuthComponentsTest.php` (con `--test-directory=Modules/User/tests` e le cache di bootstrap bypassate): "auth layout components exist" passa. Gli altri casi falliscono per cause fuori da Zero: `components.auth-session-status` non esiste, e la pagina di login risponde 500 perche' `Modules/Gdpr/resources/views/cookie-consent/index.blade.php` (HEAD Gdpr `2fe83a92`, 2026-11-01) usa `Themes\Sixteen\Infrastructure\Url\FrontofficeUrl`, una classe di un tema che qui non esiste.
+
+### Aperti
+
+- Il repo del tema ora mostra le 2 login modificate e il layout non tracciato. Servono commit e push nel repo del tema, altrimenti il prossimo pull riporta i marker. Li fa l'utente.
+- Link interni rotti in `docs/wiki/index.md`: `concepts/duplicate-method-bodies.md`, `concepts/filament-nested-resources.md`, `concepts/jpgraph-guide.md`, `schema.md`, `memories/index.md`, `commands/index.md`. Non toccati.
+- In `ponytail-audit.md` i link "Remediation" e "Delta temi" puntano a `docs/project/ponytail-audit-remediation.md` e `docs/project/ponytail-audit-themes.md`, che non esistono nel repo.
+- Lock presi con `bashscripts/lock/lock.sh` (task `zero-rebase-conflicts-20261103`) e rilasciati a fine lavoro.

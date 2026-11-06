@@ -61,11 +61,11 @@ $rating->save();
 
 ## Rating module (agnostic pattern)
 
-The Rating module is agnostic — it serves multiple modules (IndennitaResponsabilita, Performance, Progressioni).
+The Rating module is agnostic: it serves multiple modules (IndennitaResponsabilita, Performance, Progressioni).
 
 - Each module has its own Rating model extending `BaseRating` with only `$connection` override
-- `rule` column (singular) is cast to `RuleEnum` — access via `$rating->rule?->value`
-- `$rating->rules` (plural) does NOT exist — common bug to avoid
+- `rule` column (singular) is cast to `RuleEnum`: access via `$rating->rule?->value`
+- `$rating->rules` (plural) does NOT exist: common bug to avoid
 - `extra_attributes->anno` stores year, NOT pivot column
 
 ### RuleEnum pattern

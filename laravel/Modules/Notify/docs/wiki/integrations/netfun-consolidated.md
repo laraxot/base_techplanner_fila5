@@ -2,7 +2,7 @@
 qmd: "netfun consolidated"
 issues: []
 discussions: []
-title: "netfun — Consolidated Documentation"
+title: "netfun: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# netfun — Consolidated Documentation
+# netfun: Consolidated Documentation
 
 Consolidated from **20** individual files.
 

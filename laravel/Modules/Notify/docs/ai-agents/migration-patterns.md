@@ -118,7 +118,7 @@ Modules/{ModuleName}/database/
 └── seeders/       ← minuscolo
 ```
 
-**WRONG**: `database/Migrations/` (maiuscola) — Linux filesystem is case-sensitive!
+**WRONG**: `database/Migrations/` (maiuscola): Linux filesystem is case-sensitive!
 - Both `Migrations/` and `migrations/` can coexist silently
 - Laravel/nwidart loads ONLY `database/migrations/` (lowercase)
 - Files in `database/Migrations/` (uppercase) are **silently ignored**

@@ -14,7 +14,7 @@ type: story
 tags: [docs, ui, bmad]
 ---
 
-# UI — marker nidificati in README + igiene root
+# UI: marker nidificati in README + igiene root
 
 **Perché.** `git status` pulito, HEAD con 20 hunk `<<<<<<<` in `README.md` (anche nidificati: theirs iniziava con `<<<<<<< HEAD`) e contributing duplicato. Root teneva `ARCHITECTURE.md`/`TESTING.md`/`PHILOSOPHY.md` (SSoT è `docs/architecture.md`, kebab).
 

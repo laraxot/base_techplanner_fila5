@@ -1,5 +1,5 @@
 ---
-title: "UI — BMAD dossier"
+title: "UI: BMAD dossier"
 type: bmad-dossier
 module: UI
 updated: 2026-10-07
@@ -9,7 +9,7 @@ issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
 status: draft
 ---
-# UI — BMAD dossier
+# UI: BMAD dossier
 ## Product brief / PRD
 Provide one accessible shared UI vocabulary instead of module-specific forks.
 ## Architecture / UX / security

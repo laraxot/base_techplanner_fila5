@@ -27,11 +27,11 @@ app(MyAction::class)->createPersonalAccessClient();
 
 ## Key Guidelines
 
-- **Short array syntax (CRITICAL)**: **ALWAYS** `[]` — **NEVER** `array()` in any PHP file.
+- **Short array syntax (CRITICAL)**: **ALWAYS** `[]`: **NEVER** `array()` in any PHP file.
 - **Packages**: Add to `Modules/{Module}/composer.json`, then run `composer go` from `laravel/`.
 - **Git Rules**: 
-  - NEVER `git remote set-url` — only project owner does this.
-  - Git goes forward only — never restore old versions.
+  - NEVER `git remote set-url`: only project owner does this.
+  - Git goes forward only: never restore old versions.
   - Every error fix: git commit + GitHub issue + GitHub discussion.
 
 ## Session Best Practices

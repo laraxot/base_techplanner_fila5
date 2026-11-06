@@ -52,11 +52,11 @@ status: draft
 ## Cross-References
 
 ### Related Documentation
-- ← [BMad Tasks Index](../../tasks/index.md) — 22 reusable task definitions
-- ← [BMad Tasks Index](../tasks/index.md) — 22 reusable task definitions
-- ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
-- ← [GEMINI Index](../gemini/index.md) — Gemini-specific rules
-- ← [Main AI Docs Index](../index.md) — Master index
+- ← [BMad Tasks Index](../../tasks/index.md): 22 reusable task definitions
+- ← [BMad Tasks Index](../tasks/index.md): 22 reusable task definitions
+- ← [CLAUDE Index](../claude/index.md): Laravel Boost guidelines
+- ← [GEMINI Index](../gemini/index.md): Gemini-specific rules
+- ← [Main AI Docs Index](../index.md): Master index
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)

@@ -32,14 +32,14 @@ status: draft
 This directory contains split documentation files for AI assistants used in the FixCity project. Each file is focused on a specific area to improve readability and maintainability.
 
 **Original Files** (kept for backward compatibility):
-- [`AGENTS.md`](../../../../AGENTS.md) — 5349 lines, comprehensive BMad agents + tasks
-- [`docs/CLAUDE.md`](../../../../docs/CLAUDE.md) — 833 lines, Laravel Boost guidelines
-- [`QWEN.md`](../../../../QWEN.md) — 47 lines, Qwen output language rules
-- [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md) — 581 lines, Gemini-specific rules
-- [`AGENTS.md`](../../../../../AGENTS.md) — 5349 lines, comprehensive BMad agents + tasks
-- [`docs/CLAUDE.md`](../../CLAUDE.md) — 833 lines, Laravel Boost guidelines
-- [`QWEN.md`](../../../../QWEN.md) — 47 lines, Qwen output language rules
-- [`laravel/GEMINI.md`](../../../../../GEMINI.md) — 581 lines, Gemini-specific rules
+- [`AGENTS.md`](../../../../AGENTS.md): 5349 lines, comprehensive BMad agents + tasks
+- [`docs/CLAUDE.md`](../../../../docs/CLAUDE.md): 833 lines, Laravel Boost guidelines
+- [`QWEN.md`](../../../../QWEN.md): 47 lines, Qwen output language rules
+- [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md): 581 lines, Gemini-specific rules
+- [`AGENTS.md`](../../../../../AGENTS.md): 5349 lines, comprehensive BMad agents + tasks
+- [`docs/CLAUDE.md`](../../CLAUDE.md): 833 lines, Laravel Boost guidelines
+- [`QWEN.md`](../../../../QWEN.md): 47 lines, Qwen output language rules
+- [`laravel/GEMINI.md`](../../../../../GEMINI.md): 581 lines, Gemini-specific rules
 
 ---
 
@@ -137,7 +137,7 @@ Split from [`laravel/GEMINI.md`](../../../../../GEMINI.md):
 
 | File | Lines | Notes |
 |----|----|----|
-| [QWEN.md](../../../../QWEN.md) | 47 | Too small to split — kept as single file |
+| [QWEN.md](../../../../QWEN.md) | 47 | Too small to split: kept as single file |
 
 ---
 

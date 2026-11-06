@@ -78,10 +78,10 @@ Modules\Notify\Models\NotificationTemplateVersion
 ## Risorse
 
 - [PHPStan Config](./phpstan/) - Type checking configuration
-- [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
-- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
-- [Performance](./performance-optimization.md) — Metriche e best practice
-- [Project Structure](./project-structure.md) — Directory layout
+- [On-Demand Pattern](./on-demand-pattern.md): Pattern per caricamento efficiente
+- [QMD Setup](./qmd-setup.md): Configurazione ricerca locale
+- [Performance](./performance-optimization.md): Metriche e best practice
+- [Project Structure](./project-structure.md): Directory layout
 
 ---
 
@@ -243,10 +243,10 @@ Modules\Notify\Models\Theme            // idem
 ## Risorse
 
 - PHPStan: la cartella `docs/phpstan/` non esiste (verificato 2026-10-14); la configurazione e' unica in `laravel/phpstan.neon`
-- [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
-- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
-- [Performance](./performance-optimization.md) — Metriche e best practice
-- [Project Structure](./project-structure.md) — Directory layout
+- [On-Demand Pattern](./on-demand-pattern.md): Pattern per caricamento efficiente
+- [QMD Setup](./qmd-setup.md): Configurazione ricerca locale
+- [Performance](./performance-optimization.md): Metriche e best practice
+- [Project Structure](./project-structure.md): Directory layout
 
 ---
 

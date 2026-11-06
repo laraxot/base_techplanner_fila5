@@ -1,5 +1,5 @@
 ---
-title: "BMAD Planning — Job"
+title: "BMAD Planning: Job"
 type: bmad-planning
 status: active
 module: Job

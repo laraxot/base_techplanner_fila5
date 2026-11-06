@@ -1,5 +1,5 @@
 ---
-title: "Product brief — ritiro Livewire UI"
+title: "Product brief: ritiro Livewire UI"
 type: product-brief
 module: UI
 related:

@@ -1,7 +1,7 @@
 ---
 id: story-ui-table-layout-enum-translations
 slug: ui-table-layout-enum-translations
-title: "UI — Allineare le traduzioni italiane di TableLayoutEnum"
+title: "UI: Allineare le traduzioni italiane di TableLayoutEnum"
 description: "Mantiene le voci enum sotto values, come richiesto da EnumTrait, e impedisce che Filament interpreti la chiave di traduzione come nome SVG."
 document_type: story
 category: quality

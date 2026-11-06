@@ -2,7 +2,7 @@
 qmd: "optimization consolidated"
 issues: []
 discussions: []
-title: "optimization — Consolidated Documentation"
+title: "optimization: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# optimization — Consolidated Documentation
+# optimization: Consolidated Documentation
 
 Consolidated from **8** individual files.
 

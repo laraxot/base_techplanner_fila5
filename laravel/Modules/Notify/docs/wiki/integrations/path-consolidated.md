@@ -2,7 +2,7 @@
 qmd: "path consolidated"
 issues: []
 discussions: []
-title: "path — Consolidated Documentation"
+title: "path: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# path — Consolidated Documentation
+# path: Consolidated Documentation
 
 Consolidated from **14** individual files.
 

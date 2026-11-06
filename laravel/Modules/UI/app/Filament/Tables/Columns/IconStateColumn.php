@@ -95,7 +95,7 @@ class IconStateColumn extends XotBaseIconColumn
                             });
                         })
                         ->required()
-                        ->reactive(),
+                        ->live(),
                     Textarea::make('message')->required(function (Get $get, Model $record): bool {
                         $newState = $get('state');
                         $name = $this->getName();

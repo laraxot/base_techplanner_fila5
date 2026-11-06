@@ -2,7 +2,7 @@
 qmd: "spatie consolidated"
 issues: []
 discussions: []
-title: "spatie — Consolidated Documentation"
+title: "spatie: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# spatie — Consolidated Documentation
+# spatie: Consolidated Documentation
 
 Consolidated from **8** individual files.
 

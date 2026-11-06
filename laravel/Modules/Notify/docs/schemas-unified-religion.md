@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# Filament Schemas Unificati — Regola Canonica
+# Filament Schemas Unificati: Regola Canonica
 
 **Status**: Active  
 **Created**: 2026-04-14  

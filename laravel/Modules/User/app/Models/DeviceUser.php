@@ -5,9 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
+use Modules\User\Models\Traits\DeviceUserRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
@@ -57,6 +56,7 @@ use Modules\Xot\Datas\XotData;
  */
 class DeviceUser extends BasePivot
 {
+    use DeviceUserRelationsTrait;
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -67,36 +67,6 @@ class DeviceUser extends BasePivot
         'push_notifications_token',
         'push_notifications_enabled',
     ];
-
-    /**
-     * @return BelongsTo<Device, $this>
-     */
-    public function device(): BelongsTo
-    {
-        return $this->belongsTo(Device::class);
-    }
-
-    /**
-     * @return BelongsTo<Model, $this>
-     */
-    public function user(): BelongsTo
-    {
-        /** @var class-string<Model> */
-        $userClass = XotData::make()->getUserClass();
-
-        return $this->belongsTo($userClass);
-    }
-
-    /**
-     * @return BelongsTo<Model, $this>
-     */
-    public function profile(): BelongsTo
-    {
-        /** @var class-string<Model> */
-        $profileClass = XotData::make()->getProfileClass();
-
-        return $this->belongsTo($profileClass, 'user_id', 'user_id');
-    }
 
     /** @return array<string, string> */
     #[\Override]

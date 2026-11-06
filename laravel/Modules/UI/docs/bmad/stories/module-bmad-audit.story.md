@@ -1,6 +1,6 @@
 ---
 id: UI/module-bmad-audit-20260928
-title: "UI — baseline BMAD e analisi completa"
+title: "UI: baseline BMAD e analisi completa"
 status: ready-for-dev
 module: UI
 epic: module-governance
@@ -15,7 +15,7 @@ updated: 2026-10-07
 tags: [docs, ui, bmad]
 qmd: "story   ui: baseline bmad ui"
 ---
-# Story — UI: baseline BMAD
+# Story: UI: baseline BMAD
 
 Come manutentore del modulo UI, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
 

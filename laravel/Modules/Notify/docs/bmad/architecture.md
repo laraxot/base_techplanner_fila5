@@ -1,5 +1,5 @@
 ---
-title: "Notify — architecture"
+title: "Notify: architecture"
 type: architecture
 tags: [notify, architecture, module-boundary, models, resources, channels]
 created: 2026-09-28
@@ -14,7 +14,7 @@ related:
 status: draft
 ---
 
-# Notify — architecture
+# Notify: architecture
 
 > **SUMMARY**: indice della documentazione architetturale per
 > `Modules\Notify`. Il dettaglio del confine modulare, inventario `app()`/`tests()`
@@ -49,13 +49,13 @@ status: draft
 | `NotificationLog` | `app/Models/NotificationLog.php` | `BaseModel` | `notification_logs` |
 | `MailTemplate` | `app/Models/MailTemplate.php` | `SpatieMailTemplate`, `MailTemplateInterface` | `mail_templates` |
 | `MailTemplateVersion` | `app/Models/MailTemplateVersion.php` | `BaseModel` | `mail_template_versions` |
-| `MailTemplateLog` | `app/Models/MailTemplateLog.php` | `BaseModel` | — |
+| `MailTemplateLog` | `app/Models/MailTemplateLog.php` | `BaseModel` |: |
 | `Contact` | `app/Models/Contact.php` | `BaseModel` | `notify_contacts` |
 | `NotifyTheme` | `app/Models/NotifyTheme.php` | `BaseModel` | `notify_themes` |
 | `NotificationType` | `app/Models/NotificationType.php` | `Model` | `notification_types` |
 | `NotifyThemeable` | `app/Models/NotifyThemeable.php` | `BaseModel` | `notify_themeables` |
-| `Theme` | `app/Models/Theme.php` | — | — |
-| `BaseModel` | `app/Models/BaseModel.php` | `XotBaseModel` | — |
+| `Theme` | `app/Models/Theme.php` |: |: |
+| `BaseModel` | `app/Models/BaseModel.php` | `XotBaseModel` |: |
 
 ## Relazioni verificate
 
@@ -180,8 +180,8 @@ status: draft
 | Area | Path | Note |
 |---|---|---|
 | Migrations | `database/migrations/` | ~20 file attivi; obsoleti in `_archive_redundant/` e `_bak/` |
-| Factories | `database/factories/` | — |
-| Seeders | `database/seeders/` | — |
+| Factories | `database/factories/` |: |
+| Seeders | `database/seeders/` |: |
 
 ## Test
 
@@ -189,15 +189,15 @@ status: draft
 |---|---|---|
 | Unit/Actions | `tests/Unit/Actions/` | ~30 file |
 | Unit/Models | `tests/Unit/Models/` | ~20 file |
-| Unit/Notifications | `tests/Unit/Notifications/` | — |
+| Unit/Notifications | `tests/Unit/Notifications/` |: |
 | Unit/Channels | `tests/Unit/Channels/` | 4 file |
 | Unit/Enums | `tests/Unit/Enums/` | 9 file |
-| Unit/Console | `tests/Unit/Console/` | — |
-| Unit/Filament | `tests/Unit/Filament/` | — |
+| Unit/Console | `tests/Unit/Console/` |: |
+| Unit/Filament | `tests/Unit/Filament/` |: |
 | Unit/Providers | `tests/Unit/Providers/` | 3 file |
-| Unit/Datas | `tests/Unit/Datas/` | — |
-| Unit/Factories | `tests/Unit/Factories/` | — |
-| Unit/Traits | `tests/Unit/Traits/` | — |
+| Unit/Datas | `tests/Unit/Datas/` |: |
+| Unit/Factories | `tests/Unit/Factories/` |: |
+| Unit/Traits | `tests/Unit/Traits/` |: |
 | Unit/Architecture | `tests/Unit/Architecture/` | 1 file |
 | Feature | `tests/Feature/` | ~15 file |
 | Fixtures | `tests/Fixtures/` | ~15 file |

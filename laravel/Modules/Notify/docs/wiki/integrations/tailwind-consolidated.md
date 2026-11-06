@@ -2,7 +2,7 @@
 qmd: "tailwind consolidated"
 issues: []
 discussions: []
-title: "tailwind — Consolidated Documentation"
+title: "tailwind: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# tailwind — Consolidated Documentation
+# tailwind: Consolidated Documentation
 
 Consolidated from **28** individual files.
 

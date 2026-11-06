@@ -1,5 +1,5 @@
 ---
-title: "BMAD Planning — Notify"
+title: "BMAD Planning: Notify"
 type: bmad-planning
 status: active
 module: Notify

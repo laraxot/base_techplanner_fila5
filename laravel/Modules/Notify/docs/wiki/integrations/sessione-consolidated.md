@@ -2,7 +2,7 @@
 qmd: "sessione consolidated"
 issues: []
 discussions: []
-title: "sessione — Consolidated Documentation"
+title: "sessione: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# sessione — Consolidated Documentation
+# sessione: Consolidated Documentation
 
 Consolidated from **7** individual files.
 

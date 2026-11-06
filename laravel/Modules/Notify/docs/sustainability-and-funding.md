@@ -1,5 +1,5 @@
 ---
-title: "Sostenibilità — responsabilità Notify"
+title: "Sostenibilità: responsabilità Notify"
 type: bmad-reference
 status: decision-input
 updated: 2026-10-15
@@ -26,7 +26,7 @@ disiscrizione**. Il pilota di sostenibilità può vivere senza newsletter.
 ## SSoT
 
 - [how-to-sustain.md](../../../../bmad-output/footer-sponsorship/how-to-sustain.md)
-- [inbound-marketing dossier](../../Fixcity/docs/bmad/inbound-marketing/README.md) — serie email = P2, solo con consenso
+- [inbound-marketing dossier](../../Fixcity/docs/bmad/inbound-marketing/README.md): serie email = P2, solo con consenso
 - [inbound-marketing.md](../../../../bmad-output/footer-sponsorship/inbound-marketing.md)
 - [Gdpr sustainability](../../Gdpr/docs/sustainability-and-funding.md)
 

@@ -12,8 +12,8 @@ status: draft
 
 # 🎨 BMAD Workflow (Breakthrough Method for Agile AI-Driven Development)
 
-**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
-**Related**: [01-GSD-WORKFLOW.md](01-GSD-WORKFLOW.md) — GSD Method
+**Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
+**Related**: [01-GSD-WORKFLOW.md](01-GSD-WORKFLOW.md): GSD Method
 
 ---
 ## 📋 Overview

@@ -2,7 +2,7 @@
 qmd: "logging consolidated"
 issues: []
 discussions: []
-title: "logging — Consolidated Documentation"
+title: "logging: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# logging — Consolidated Documentation
+# logging: Consolidated Documentation
 
 Consolidated from **6** individual files.
 

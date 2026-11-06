@@ -68,10 +68,10 @@ Modules\Notify\Models\NotificationTemplateVersion
 ## Risorse
 
 - [PHPStan Config](./phpstan/) - Type checking configuration
-- [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
-- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
-- [Performance](./performance-optimization.md) — Metriche e best practice
-- [Project Structure](./project-structure.md) — Directory layout
+- [On-Demand Pattern](./on-demand-pattern.md): Pattern per caricamento efficiente
+- [QMD Setup](./qmd-setup.md): Configurazione ricerca locale
+- [Performance](./performance-optimization.md): Metriche e best practice
+- [Project Structure](./project-structure.md): Directory layout
 
 ---
 

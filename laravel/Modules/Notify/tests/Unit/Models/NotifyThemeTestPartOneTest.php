@@ -24,6 +24,7 @@ use PHPUnit\Framework\Assert;
 
 use function Pest\Laravel\withoutExceptionHandling;
 
+uses(TestCase::class);
 beforeEach(function (): void {
     withoutExceptionHandling();
 });

@@ -44,7 +44,7 @@ Filament mette a disposizione molti componenti Blade riutilizzabili:
 
 ### Tabs (Filament 5)
 
-Frontoffice senza Livewire dedicato — pattern [Alpine](https://filamentphp.com/docs/5.x/components/tabs):
+Frontoffice senza Livewire dedicato: pattern [Alpine](https://filamentphp.com/docs/5.x/components/tabs):
 
 ```blade
 <x-filament::tabs x-data="{ activeTab: 'map' }">
@@ -123,7 +123,7 @@ Per migrare da componenti personalizzati a componenti Filament:
 
 ## Documentazione di riferimento
 
-- [Filament 5 — Components overview](https://filamentphp.com/docs/5.x/components/overview)
+- [Filament 5: Components overview](https://filamentphp.com/docs/5.x/components/overview)
 - [Tabs](https://filamentphp.com/docs/5.x/components/tabs)
 - [Button](https://filamentphp.com/docs/5.x/components/button)
 - [Dropdown](https://filamentphp.com/docs/5.x/components/dropdown)

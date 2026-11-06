@@ -10,13 +10,13 @@ discussions: []
 status: draft
 ---
 
-# Token Optimization — La Religione dell'Efficienza
+# Token Optimization: La Religione dell'Efficienza
 
 > **Canonico**: questo è l'unico file attivo su token optimization in
 > `Modules/Notify/docs/`. `TOKEN-OPTIMIZATION-STRATEGY.md.old`,
 > `token-optimization-strategy.md.old` e `token-optimization.md.old`
 > (quest'ultimo già si autodichiarava storico) sono stati rinominati
-> `.old` il 2026-07-24 per deduplicazione — contenuto preservato per
+> `.old` il 2026-07-24 per deduplicazione: contenuto preservato per
 > riferimento, non cancellato. `token-optimization-strategy.md.old`
 > conteneva un riferimento GitHub errato di un altro progetto
 > (`provtv/base_ptv_fila5`), copiato per errore.
@@ -514,17 +514,17 @@ Amen.
 ## Riferimenti
 
 ### Documenti Progetto
-- [docs/token-optimization.md](../../docs/token-optimization.md) — Tecniche generali
-- [docs/ai-agents/token-efficiency.md](../../docs/ai-agents/token-efficiency.md) — Regole OpenAI
-- [docs/token-optimization.md](token-optimization.md) — Tecniche generali
-- [docs/ai-agents/token-efficiency.md](ai-agents/token-efficiency.md) — Regole OpenAI
-- [.qwen/memories/auto-label-religion.md](../memories/auto-label-religion.md) — Regola auto-label
+- [docs/token-optimization.md](../../docs/token-optimization.md): Tecniche generali
+- [docs/ai-agents/token-efficiency.md](../../docs/ai-agents/token-efficiency.md): Regole OpenAI
+- [docs/token-optimization.md](token-optimization.md): Tecniche generali
+- [docs/ai-agents/token-efficiency.md](ai-agents/token-efficiency.md): Regole OpenAI
+- [.qwen/memories/auto-label-religion.md](../memories/auto-label-religion.md): Regola auto-label
 
 ### Fonti Esterne
-- [Branch8 — Claude Code Token Limits](https://branch8.com/posts/claude-code-token-limits-cost-optimization-apac-teams)
-- [Sabrina.dev — 6 Ways to Cut Token Usage](https://www.sabrina.dev/p/6-ways-i-cut-my-claude-token-usage)
+- [Branch8: Claude Code Token Limits](https://branch8.com/posts/claude-code-token-limits-cost-optimization-apac-teams)
+- [Sabrina.dev: 6 Ways to Cut Token Usage](https://www.sabrina.dev/p/6-ways-i-cut-my-claude-token-usage)
 - [Reducing Token Usage of SWE Agents (PDF)](https://repositum.tuwien.at/bitstream/20.500.12708/224666/1/Hrubec%20Nicolas%20-%202025%20-%20Reducing%20Token%20Usage%20of%20Software%20Engineering%20Agents.pdf)
-- [Speakeasy — Reduce MCP Token 100x](https://www.speakeasy.com/blog/how-we-reduced-token-usage-by-100x-dynamic-toolsets-v2)
+- [Speakeasy: Reduce MCP Token 100x](https://www.speakeasy.com/blog/how-we-reduced-token-usage-by-100x-dynamic-toolsets-v2)
 
 ---
 

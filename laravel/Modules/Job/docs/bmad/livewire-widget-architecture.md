@@ -1,5 +1,5 @@
 ---
-title: "Architecture — Job"
+title: "Architecture: Job"
 type: architecture
 module: Job
 related:

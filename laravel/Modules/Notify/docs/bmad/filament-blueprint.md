@@ -1,5 +1,5 @@
 ---
-title: "Filament Blueprint — Notify"
+title: "Filament Blueprint: Notify"
 type: filament-blueprint
 status: active
 module: Notify
@@ -20,7 +20,7 @@ multi-canale; la consegna resta nelle Queueable Actions/canali, non nei form hoo
 
 ## Regole non negoziabili
 
-1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot — mai classi Filament dirette (`MailTemplateResource` → `LangBaseResource` dove serve i18n).
+1. Estendere solo `XotBaseResource` / `XotBaseWidget` / basi Xot: mai classi Filament dirette (`MailTemplateResource` → `LangBaseResource` dove serve i18n).
 2. Nessun `->label()` hardcoded: chiavi in `lang/<locale>/` del modulo.
 3. Business logic nelle Actions del modulo, non nei form hooks grassi.
 4. FO: nessun chrome Notify di default; i moduli owner invocano Actions, non Resource del tema.

@@ -2,7 +2,7 @@
 qmd: "graphify map"
 issues: []
 discussions: []
-title: "Notify Module — Mappa Graphify"
+title: "Notify Module: Mappa Graphify"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-10-23
 status: draft
 ---
 
-# Notify Module — Mappa Graphify
+# Notify Module: Mappa Graphify
 
 **Versione:** 1.0.0 | **Modulo:** Notify | **Data:** 2026-08-02
 
@@ -61,38 +61,38 @@ Notify non ha `app/Jobs/`: la coda la eseguono le Queueable Actions (`->onQueue(
 ### Canali (Channels)
 
 **Email Providers:**
-- `SmtpMailSendAction` — standard SMTP
-- `SendMailtrapMailAction` — Mailtrap testing
-- `SendDuocircleMailAction` — Duocircle provider
+- `SmtpMailSendAction`: standard SMTP
+- `SendMailtrapMailAction`: Mailtrap testing
+- `SendDuocircleMailAction`: Duocircle provider
 - Mail layout resolver
 
 **SMS Providers:**
-- `SendTwilioSMSAction` — Twilio
-- `SendNexmoSMSAction` — Nexmo/Vonage
-- `SendNetfunSMSAction` — Netfun
-- `SendPlivoSMSAction` — Plivo
-- `SendAgiletelecomSMSAction` — Agiletelecom
-- `FormatSmsMessageAction` — validazione e troncamento
+- `SendTwilioSMSAction`: Twilio
+- `SendNexmoSMSAction`: Nexmo/Vonage
+- `SendNetfunSMSAction`: Netfun
+- `SendPlivoSMSAction`: Plivo
+- `SendAgiletelecomSMSAction`: Agiletelecom
+- `FormatSmsMessageAction`: validazione e troncamento
 
 **Push Notifications:**
-- `SendPushToDeviceAction` — singolo dispositivo
-- `SendPushToDevicesAction` — multipli dispositivi
-- `SendPushToPlatformAction` — per piattaforma (iOS/Android)
-- `SendPushToTopicAction` — per topic Firebase
-- `SendPushWithTemplateAction` — con template predefinito
-- `SendPushToAllUsersAction` — broadcast globale
-- `SchedulePushNotificationAction` — invio programmato
+- `SendPushToDeviceAction`: singolo dispositivo
+- `SendPushToDevicesAction`: multipli dispositivi
+- `SendPushToPlatformAction`: per piattaforma (iOS/Android)
+- `SendPushToTopicAction`: per topic Firebase
+- `SendPushWithTemplateAction`: con template predefinito
+- `SendPushToAllUsersAction`: broadcast globale
+- `SchedulePushNotificationAction`: invio programmato
 
 **WhatsApp Providers:**
-- `SendTwilioWhatsAppAction` — Twilio
-- `Send360dialogWhatsAppAction` — 360dialog
-- `SendFacebookWhatsAppAction` — Facebook Business
-- `SendVonageWhatsAppAction` — Vonage
+- `SendTwilioWhatsAppAction`: Twilio
+- `Send360dialogWhatsAppAction`: 360dialog
+- `SendFacebookWhatsAppAction`: Facebook Business
+- `SendVonageWhatsAppAction`: Vonage
 
 **Telegram Providers:**
-- `SendOfficialTelegramAction` — Bot Telegram ufficiale
-- `SendBotmanTelegramAction` — Botman integration
-- `SendNutgramTelegramAction` — Nutgram framework
+- `SendOfficialTelegramAction`: Bot Telegram ufficiale
+- `SendBotmanTelegramAction`: Botman integration
+- `SendNutgramTelegramAction`: Nutgram framework
 
 ### Dependencies (Incoming)
 
@@ -446,34 +446,34 @@ graphify query "Notify SendNotificationAction SendMailAction SendPushAction Send
 ## 🔗 Integrazioni Esterne
 
 ### Email Providers
-- **Mailtrap** — testing/staging
-- **Duocircle** — enterprise SMTP
-- **AWS SES** — scalable mail
-- **Mailgun** — transactional email
+- **Mailtrap**: testing/staging
+- **Duocircle**: enterprise SMTP
+- **AWS SES**: scalable mail
+- **Mailgun**: transactional email
 
 ### SMS Providers
-- **Twilio** — SMS + WhatsApp + Voice
-- **Nexmo/Vonage** — SMS + OTP
-- **Netfun** — SMS locale Italia
-- **Plivo** — SMS + Voice
-- **Agiletelecom** — SMS Europa
-- **Gammu** — SMS gateway locale
+- **Twilio**: SMS + WhatsApp + Voice
+- **Nexmo/Vonage**: SMS + OTP
+- **Netfun**: SMS locale Italia
+- **Plivo**: SMS + Voice
+- **Agiletelecom**: SMS Europa
+- **Gammu**: SMS gateway locale
 
 ### Push Notifications
-- **Firebase Cloud Messaging (FCM)** — Android
-- **Apple Push Notification (APN)** — iOS
-- **OneSignal** — multi-platform orchestration
+- **Firebase Cloud Messaging (FCM)**: Android
+- **Apple Push Notification (APN)**: iOS
+- **OneSignal**: multi-platform orchestration
 
 ### WhatsApp
-- **Twilio** — managed service
-- **360dialog** — WhatsApp Business API
-- **Facebook Business** — ufficiale Meta
-- **Vonage** — multi-channel
+- **Twilio**: managed service
+- **360dialog**: WhatsApp Business API
+- **Facebook Business**: ufficiale Meta
+- **Vonage**: multi-channel
 
 ### Telegram
-- **Official Bot API** — standard
-- **Botman** — framework wrapper
-- **Nutgram** — PHP framework moderno
+- **Official Bot API**: standard
+- **Botman**: framework wrapper
+- **Nutgram**: PHP framework moderno
 
 ---
 

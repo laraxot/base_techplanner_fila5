@@ -22,6 +22,7 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Modules\Media\Actions\CloudFront\GetCloudFrontSignedUrlAction;
 use Modules\Media\Actions\Diagnostic\S3\TestBucketPermissionsAction;
+use Modules\Media\Actions\Storage\GetFilesystemAdapterAction;
 use Modules\Media\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Override;
@@ -251,14 +252,20 @@ class S3Test extends XotBasePage
 
         // Generate CloudFront signed URL for attachment
         $signedUrl = app(GetCloudFrontSignedUrlAction::class)->execute($filePath, 60);
-        dddx([
-            'signedurl' => $signedUrl,
-            'filePath' => $filePath,
-            'url2' => Storage::disk('s3')->url($filePath),
-            'url3' => Storage::disk('s3')->temporaryUrl($filePath, now()->addMinutes(5)),
-        ]);
+        $this->debugResults['signed_url'] = [
+            'title' => 'CloudFront signed URL',
+            'status' => 'info',
+            'data' => [
+                'signedurl' => $signedUrl,
+                'filePath' => $filePath,
+                'url2' => app(GetFilesystemAdapterAction::class)->execute('s3')->url($filePath),
+                'url3' => app(GetFilesystemAdapterAction::class)->execute('s3')->temporaryUrl($filePath, now()->addMinutes(5)),
+            ],
+        ];
+        $this->updateDebugOutput();
+
         Notification::make()
-            ->title(Lang::string('media::s3test.notifications.config_debugged'))
+            ->title(Lang::string('media::s3test.notifications.s3_test_successful'))
             ->success()
             ->send();
     }

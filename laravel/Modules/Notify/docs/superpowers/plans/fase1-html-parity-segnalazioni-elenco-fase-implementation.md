@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# FASE 1 — HTML Parity 90% (segnalazioni-elenco) Implementation Plan
+# FASE 1: HTML Parity 90% (segnalazioni-elenco) Implementation Plan
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
@@ -74,7 +74,7 @@ Se < 0.90 → continua con Task 2.
 cat laravel/Themes/Sixteen/docs/body-structure-comparison/segnalazioni-elenco/report.md
 ```
 
-Annota tutti gli `❌ Elementi mancanti` e `⚠️ Elementi con differenze` — servono per Task 2.
+Annota tutti gli `❌ Elementi mancanti` e `⚠️ Elementi con differenze`: servono per Task 2.
 
 ---
 

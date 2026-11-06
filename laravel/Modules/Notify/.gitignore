@@ -6,6 +6,7 @@ audit-coverage/
 # --- Audit coverage bridge (never commit) ---
 *.backup
 *.backup.*
+*.lock
 # --- Backup files ---
 *.bak
 *.bakcup

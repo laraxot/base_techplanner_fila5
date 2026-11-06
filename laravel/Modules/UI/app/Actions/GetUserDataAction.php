@@ -60,8 +60,10 @@ class GetUserDataAction
         /** @var array<int, string> $permissions */
         $permissions = $allPermissions->pluck('name')->toArray();
 
-        $userName = property_exists($user, 'name') ? $user->name : null;
-        $userEmail = property_exists($user, 'email') ? $user->email : null;
+        // getAttribute, non property_exists: name ed email sono attributi magici Eloquent, per cui
+        // property_exists e' sempre false e UserData usciva con nome ed email vuoti.
+        $userName = $user->getAttribute('name');
+        $userEmail = $user->getAttribute('email');
 
         return new UserData(
             id: SafeIntCastAction::cast($user->id),

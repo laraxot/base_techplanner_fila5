@@ -2,7 +2,7 @@
 qmd: "interface consolidated"
 issues: []
 discussions: []
-title: "interface — Consolidated Documentation"
+title: "interface: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# interface — Consolidated Documentation
+# interface: Consolidated Documentation
 
 Consolidated from **13** individual files.
 

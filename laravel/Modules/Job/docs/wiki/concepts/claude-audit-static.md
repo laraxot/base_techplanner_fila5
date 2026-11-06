@@ -1,5 +1,5 @@
 ---
-title: "claude-audit static — modulo Job"
+title: "claude-audit static: modulo Job"
 type: concept
 module: Job
 tags: [job, quality, claude-audit, testing]

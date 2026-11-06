@@ -5,8 +5,10 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Datas;
 
 use Modules\Notify\Datas\PushNotificationData;
+use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 describe('PushNotificationData DTO', function (): void {
     it('creates with notification fields for FCM and Web Push', function (): void {
         $dto = new PushNotificationData(

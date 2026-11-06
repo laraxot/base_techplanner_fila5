@@ -1,10 +1,10 @@
 ---
-title: "da Support a Actions — Filosofia"
+title: "da Support a Actions: Filosofia"
 type: concept
 tags: [support, actions, philosophy]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "support-to-actions-philosophy da support a actions — filosofia"
+qmd: "support-to-actions-philosophy da support a actions: filosofia"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -27,7 +27,7 @@ related:
 status: draft
 ---
 
-# da Support a Actions — Filosofia
+# da Support a Actions: Filosofia
 
 > **Aggiornato 2026-07-12:** `app/Support/` è **eliminato** nel modulo Notify. Canonico: [wiki/concepts/no-app-support-queueable-actions.md](wiki/concepts/no-app-support-queueable-actions.md).
 

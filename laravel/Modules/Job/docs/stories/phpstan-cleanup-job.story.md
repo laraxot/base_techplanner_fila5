@@ -1,5 +1,5 @@
 ---
-title: "[STORY] PHPStan cleanup — Job"
+title: "[STORY] PHPStan cleanup: Job"
 type: story
 module: Job
 status: done
@@ -9,7 +9,7 @@ updated: 2026-10-06
 tags: [phpstan, cleanup, bmad, job]
 ---
 
-# [STORY] PHPStan cleanup — Job
+# [STORY] PHPStan cleanup: Job
 
 ## User Request
 

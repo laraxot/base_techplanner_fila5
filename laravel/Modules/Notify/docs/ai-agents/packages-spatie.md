@@ -130,8 +130,8 @@ Vedi il riferimento operativo completo: [`spatie-queueable-action.md`](./spatie-
 Usato nel modulo Activity.
 
 **Modelli del progetto**:
-- `Modules/Activity/app/Models/StoredEvent.php` — estende `SpatieStoredEvent`
-- `Modules/Activity/app/Models/Snapshot.php` — estende `SpatieSnapshot`
+- `Modules/Activity/app/Models/StoredEvent.php`: estende `SpatieStoredEvent`
+- `Modules/Activity/app/Models/Snapshot.php`: estende `SpatieSnapshot`
 
 ```php
 // Evento

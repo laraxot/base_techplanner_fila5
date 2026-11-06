@@ -11,7 +11,7 @@ status: superseded
 superseded_by: database-schema.md
 ---
 
-# Notify Module — Database Schema
+# Notify Module: Database Schema
 
 ## notifications Table
 

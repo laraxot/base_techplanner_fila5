@@ -108,8 +108,8 @@ bmad-verify-work [N]         # Verifica
 
 1. **Leggere prima** [gsd-and-bmad-workflow.md](../../docs/project/gsd-and-bmad-workflow.md)
 2. **Verificare** `.planning/STATE.md` per stato corrente
-3. **Non duplicare** — se un agente ha già iniziato, continua da lì
-4. **Commit atomici** — un commit per task
+3. **Non duplicare**: se un agente ha già iniziato, continua da lì
+4. **Commit atomici**: un commit per task
 5. **Aggiornare** `STATE.md` e coordination doc
 
 ---

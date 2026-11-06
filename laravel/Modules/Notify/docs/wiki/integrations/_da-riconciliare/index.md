@@ -2,7 +2,7 @@
 qmd: "index"
 issues: []
 discussions: []
-title: "notify — integrations"
+title: "notify: integrations"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# notify — integrations
+# notify: integrations
 
 Documentation for `notify` module categorized as **integrations**.
 

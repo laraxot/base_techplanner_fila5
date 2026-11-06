@@ -1,5 +1,5 @@
 ---
-title: "Brainstorming — Job Artisan in widget"
+title: "Brainstorming: Job Artisan in widget"
 type: brainstorming
 module: Job
 related:

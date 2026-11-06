@@ -13,8 +13,8 @@ superseded_by: 05-front-office-audit.md
 
 # 📋 Front Office Pages Audit Checklist
 
-**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
-**Related**: [03-ARCHITECTURE-ZEN.md](03-ARCHITECTURE-ZEN.md) — Architecture
+**Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
+**Related**: [03-ARCHITECTURE-ZEN.md](03-ARCHITECTURE-ZEN.md): Architecture
 
 ---
 

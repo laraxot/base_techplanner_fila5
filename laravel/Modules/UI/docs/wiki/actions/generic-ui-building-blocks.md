@@ -21,7 +21,7 @@ modulo che abbia bisogno di tassonomie (`Category`), raggruppamenti eterogenei (
 o opzioni per campi dinamici (`FieldOption`), senza dover reinventare la stessa tabella in
 ogni modulo. Introdotti il 2026-07-15 (vedi `database/migrations/2026_07_15_1000{00,01,02}_*`).
 Estendono `Modules\Xot\Models\BaseModel` (non `FormBuilder`, che non è disponibile in questo
-contesto — annotato nei PHPDoc dei tre modelli).
+contesto: annotato nei PHPDoc dei tre modelli).
 
 ## Stato attuale (2026-07-20)
 
@@ -30,10 +30,10 @@ contesto — annotato nei PHPDoc dei tre modelli).
   ancora collegati a un `Resource`.
 - Nessuna relazione Eloquent è definita: `Category::parent_id` e `Collection::theme_id` sono
   colonne semplici, non `belongsTo()`. Se serve la gerarchia self-referencing su `Category` o il
-  collegamento a un modello Theme su `Collection`, va aggiunta esplicitamente — al momento è
+  collegamento a un modello Theme su `Collection`, va aggiunta esplicitamente: al momento è
   responsabilità del chiamante gestire l'FK a mano.
 - `FieldOption::field_id` è una stringa libera (non FK tipizzata), pensata per riferirsi a un
-  campo dinamico identificato per nome/slug piuttosto che per id di un'altra tabella — nessun
+  campo dinamico identificato per nome/slug piuttosto che per id di un'altra tabella: nessun
   modello `Field` esiste in questo modulo.
 
 ## Category
@@ -59,27 +59,27 @@ costruiti altrove (es. FormBuilder-like), senza dipendere dal modulo FormBuilder
 Il modulo segue la convenzione `QueueableAction` (trait `Spatie\QueueableAction\QueueableAction`,
 unico entrypoint `execute()`). Azioni presenti, raggruppate per sotto-cartella:
 
-- `GetUserDataAction` (root) — legge `Auth::user()` e produce un `UserData` (avatar, ruolo,
+- `GetUserDataAction` (root): legge `Auth::user()` e produce un `UserData` (avatar, ruolo,
   permessi, settings) per l'header/UI utente. Ritorna `null` se non autenticato.
-- `Block/GetAllBlocksAction` — scansiona tutti i moduli (`base_path('Modules')/*/.../Filament/Blocks/*.php`)
+- `Block/GetAllBlocksAction`: scansiona tutti i moduli (`base_path('Modules')/*/.../Filament/Blocks/*.php`)
   e produce l'elenco dei blocchi Filament disponibili come `DataCollection<ComponentFileData>`.
   Cross-modulo per costruzione (glob su tutti i moduli), non solo su UI.
-- `Block/ResolveLocalizedBlockDataAction` — **delega opzionale al modulo Cms**: se
+- `Block/ResolveLocalizedBlockDataAction`: **delega opzionale al modulo Cms**: se
   `Modules\Cms\Actions\ResolveLocalizedBlockDataAction` esiste (`class_exists`), la usa per
   risolvere dati di blocco localizzati; altrimenti restituisce i `viewParams` invariati. Pattern
   di dipendenza opzionale via reflection/class_exists per evitare un hard dependency da UI verso Cms.
-- `Icon/GetAllIconsAction` — enumera le icone registrate in `BladeUI\Icons\Factory` via reflection
+- `Icon/GetAllIconsAction`: enumera le icone registrate in `BladeUI\Icons\Factory` via reflection
   sulla proprietà privata `iconSets` (nessuna API pubblica esposta dal package per farlo), poi
   scansiona i file `.svg` di ogni set. Fragile per definizione: se BladeUI Icons cambia il nome
   interno della proprietà, l'azione fallisce silenziosamente (ritorna `[]` nel `catch`).
-- `Datetime/GetDaysMappingAction` — genera la mappa `giorno_settimana => label localizzata`
+- `Datetime/GetDaysMappingAction`: genera la mappa `giorno_settimana => label localizzata`
   partendo da `Carbon`, usata per select di giorni ricorrenti (es. orari apertura).
-- `Panel/ApplyCalendarToPanelAction` — **temporaneamente no-op**: `Saade\FilamentFullCalendar`
+- `Panel/ApplyCalendarToPanelAction`: **temporaneamente no-op**: `Saade\FilamentFullCalendar`
   non è ancora compatibile con Filament v4, quindi l'azione logga (se `app.debug`) e ritorna il
   `Panel` senza modifiche. C'è un file gemello `.disabled` nella stessa cartella da rimuovere
   quando il pacchetto sarà aggiornato.
 
-## Violazione regola di dipendenza (LocationSelector) — chiusa
+## Violazione regola di dipendenza (LocationSelector): chiusa
 
 `LocationSelector` e' una classe **Geo** finita in UI: importava `Modules\Geo\Models\Comune` (per stringa, dietro `class_exists`). La regola del progetto e' che `Modules/UI` non dipende da `Modules/Geo` (direzione corretta: Geo verso UI). La versione canonica vive in `Modules\Geo\Filament\Forms\Components\LocationSelector` (chiavi lingua `geo::location_selector.*`).
 
@@ -89,5 +89,5 @@ Le Action di questo modulo restano quelle elencate sopra (icone, datetime, blocc
 
 ## Config path
 
-`config/config.php` (minuscolo) è il path corretto e già in uso in questo modulo — nessuna
+`config/config.php` (minuscolo) è il path corretto e già in uso in questo modulo: nessuna
 violazione trovata su questo punto.

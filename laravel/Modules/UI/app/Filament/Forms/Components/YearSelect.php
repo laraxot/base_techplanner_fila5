@@ -17,7 +17,7 @@ class YearSelect extends XotBaseSelect
     {
         parent::setUp();
 
-        $this->options(fn () => $this->getYearsOptions());
+        $this->options(fn (): array => $this->withCurrentYear($this->getYearsOptions()));
 
         // Common setup for all XotBaseSelect components can be added here.
     }
@@ -42,6 +42,24 @@ class YearSelect extends XotBaseSelect
         $this->futureYears = $future;
 
         return $this;
+    }
+
+    /**
+     * L'anno gia' salvato resta tra le opzioni anche se e' fuori dall'intervallo: senza, un record
+     * di un anno vecchio mostra la select vuota e il salvataggio fallisce la validazione `in`.
+     *
+     * @param  array<int, string>  $years
+     * @return array<int, string>
+     */
+    protected function withCurrentYear(array $years): array
+    {
+        $state = $this->getState();
+        if (is_numeric($state) && ! isset($years[(int) $state])) {
+            $years[(int) $state] = (string) (int) $state;
+            ksort($years);
+        }
+
+        return $years;
     }
 
     /**

@@ -20,12 +20,14 @@ use Modules\Notify\Notifications\ThemeNotification;
 use Modules\Notify\Notifications\TicketAssignedNotification;
 use Modules\Notify\Notifications\TicketStatusChangedNotification;
 use Modules\Notify\Notifications\WhatsAppNotification;
+use Modules\Notify\Tests\TestCase;
 use Modules\User\Models\User;
 use Modules\Xot\Tests\XotBasePest;
 use PHPUnit\Framework\Assert;
 
 use function Safe\class_uses;
 
+uses(TestCase::class);
 function notificationsCoverageTicketModel(int $id = 10): Model
 {
     $ticket = new class extends Model

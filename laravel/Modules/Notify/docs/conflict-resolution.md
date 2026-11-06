@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# Conflict Resolution — Module Notify
+# Conflict Resolution: Module Notify
 
 ## Summary
 - **Files resolved**: 44

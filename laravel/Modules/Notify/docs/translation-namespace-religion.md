@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# Translation Namespace Philosophy — La Religione del Dominio
+# Translation Namespace Philosophy: La Religione del Dominio
 
 **Status**: Active  
 **Created**: 2026-04-14  

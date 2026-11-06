@@ -10,9 +10,9 @@ use Modules\Notify\Tests\TestCase;
 
 use function Safe\json_encode;
 
+uses(TestCase::class);
 class NotificationTemplateTest extends TestCase
 {
-
     protected function setUp(): void
     {
         parent::setUp();
@@ -57,7 +57,7 @@ class NotificationTemplateTest extends TestCase
     /** @test */
     public function it_has_correct_fillable_fields(): void
     {
-        $template = new NotificationTemplate();
+        $template = new NotificationTemplate;
 
         $expectedFillable = [
             'name',
@@ -85,7 +85,7 @@ class NotificationTemplateTest extends TestCase
     /** @test */
     public function it_has_correct_casts(): void
     {
-        $template = new NotificationTemplate();
+        $template = new NotificationTemplate;
 
         $expectedCasts = [
             'id' => 'string',
@@ -109,7 +109,7 @@ class NotificationTemplateTest extends TestCase
     /** @test */
     public function it_has_translatable_fields(): void
     {
-        $template = new NotificationTemplate();
+        $template = new NotificationTemplate;
 
         $expectedTranslatable = [
             'subject',

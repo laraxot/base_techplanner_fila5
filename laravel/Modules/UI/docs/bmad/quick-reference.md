@@ -1,5 +1,5 @@
 ---
-title: "UI — BMAD Quick Reference"
+title: "UI: BMAD Quick Reference"
 description: "Comandi rapidi BMAD per il modulo UI"
 module: "UI"
 alias: "ui"
@@ -12,7 +12,7 @@ tags: [docs, ui, bmad]
 qmd: "ui   bmad quick reference ui"
 ---
 
-# UI — BMAD Quick Reference
+# UI: BMAD Quick Reference
 
 ## Comandi Rapidi
 

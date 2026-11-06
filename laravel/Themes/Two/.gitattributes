@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_CYKGem
+* text=auto
+
+=======
 # Prototype: laravel/Modules/* e laravel/Themes/*
 # Canon: repository binary attribute policy.
 # Sync: bash bashscripts/templates/sync-gitattributes-modules.sh
@@ -30,17 +34,22 @@ CHANGELOG.md export-ignore
 *.db binary !filter
 *.sqlite binary !filter
 * text=auto
+>>>>>>> .merge_file_VGbyOy
 *.blade.php diff=html
 *.css diff=css
 *.html diff=html
 *.md diff=markdown
 *.php diff=php
+
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore
+<<<<<<< .merge_file_CYKGem
+=======
 *.png !text !filter !merge !diff
 *.svg !text !filter !merge !diff
 *.jpg !text !filter !merge !diff
 *.jpeg !text !filter !merge !diff
 *.gif !text !filter !merge !diff
 *.webp !text !filter !merge !diff
+>>>>>>> .merge_file_VGbyOy

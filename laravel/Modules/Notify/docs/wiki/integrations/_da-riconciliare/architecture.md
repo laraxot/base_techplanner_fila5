@@ -10,7 +10,7 @@ updated: 2026-07-28
 status: draft
 ---
 
-# Notify Module — Architecture
+# Notify Module: Architecture
 
 ## Purpose
 Manages notifications and messaging via Laravel Notifications and Mailable. Supports email, Slack, SMS, in-app notifications.

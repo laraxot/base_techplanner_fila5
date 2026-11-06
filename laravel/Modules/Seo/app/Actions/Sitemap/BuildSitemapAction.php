@@ -11,6 +11,7 @@ use Modules\Cms\Actions\Head\ResolveRobotsPolicyAction;
 use Modules\Cms\Actions\Head\ResolveWrittenLocalesAction;
 use Modules\Cms\Models\Page;
 use Modules\Seo\Contracts\SitemapPathsContract;
+use Modules\Seo\Datas\SeoConfigData;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -81,6 +82,7 @@ final class BuildSitemapAction
     {
         // La chiave comincia con '/': un percorso numerico ('2024') non diventi un indice intero di PHP.
         $entries = [];
+        $aliases = SeoConfigData::make()->pathAliases();
         foreach ($this->indexableCmsPages() as $page) {
             $slug = app(SafeStringCastAction::class)->execute($page->getAttribute('slug'));
             // Stessa regola del <head> (pagine di prova, `auth.*`, modello di dettaglio `*.view`, alias che reindirizzano, pagine dietro `auth`).
@@ -88,8 +90,8 @@ final class BuildSitemapAction
                 continue;
             }
             $path = $this->pathOf($slug);
-            // Un alias risponde 301 alla pagina canonica (`seo.config.path_aliases`): in sitemap va solo l'URL finale.
-            if (array_key_exists($path, (array) config('seo.config.path_aliases', []))) {
+            // Un alias risponde 301 alla pagina canonica (`SeoConfigData::pathAliases()`): in sitemap va solo l'URL finale.
+            if (array_key_exists($path, $aliases)) {
                 continue;
             }
             $entries['/'.$path] = ['path' => $path, 'written' => app(ResolveWrittenLocalesAction::class)->execute($page)];

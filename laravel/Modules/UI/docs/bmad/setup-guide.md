@@ -1,5 +1,5 @@
 ---
-title: "UI — BMAD Setup Guide"
+title: "UI: BMAD Setup Guide"
 description: "Setup e configurazione BMAD per il modulo UI"
 module: "UI"
 alias: "ui"
@@ -12,7 +12,7 @@ tags: [docs, ui, bmad]
 qmd: "ui   bmad setup guide ui"
 ---
 
-# UI — BMAD Setup Guide
+# UI: BMAD Setup Guide
 
 ## Scopo
 

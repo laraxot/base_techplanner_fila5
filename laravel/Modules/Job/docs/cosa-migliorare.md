@@ -11,7 +11,7 @@ qmd: "cosa migliorare job phpstan phpmd phpinsights coverage debito priorita"
 status: draft
 ---
 
-# Cosa migliorare — modulo Job
+# Cosa migliorare: modulo Job
 
 Ogni affermazione qui sotto viene da un comando eseguito il 1 settembre 2026, dopo il
 ripristino di `vendor/` a 330 pacchetti. Le misure precedenti a quella data giravano su
@@ -23,9 +23,9 @@ un autoloader dimezzato e non valgono.
 |---|---:|
 | Errori PHPStan (modulo isolato) | 0 |
 | Rilievi PHPMD su `app/` | 116 |
-| PHPInsights — Code | 88.2 % |
-| PHPInsights — Architecture | 71.4 % |
-| PHPInsights — Style | 90.1 % |
+| PHPInsights: Code | 88.2 % |
+| PHPInsights: Architecture | 71.4 % |
+| PHPInsights: Style | 90.1 % |
 | File PHP | 475 |
 | Casi di test | 347 |
 | Casi di test per file | 0.73 |

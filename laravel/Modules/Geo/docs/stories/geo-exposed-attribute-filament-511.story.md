@@ -93,3 +93,48 @@ Filament 5.11 depreca `Widget::isLazy()` (sostituto `isLazyLoaded()`): 3 nuovi e
 `staticMethod.deprecated` nei test di Quaeris (`QuestionChartDataTableWidgetTest.php:247`,
 `QuestionChartItemWidgetTest.php:483`, `QuestionChartStatsOverviewWidgetTest.php:156`). Fuori dal
 modulo Geo.
+
+## 2026-11-05: ritorno di `ExposedLivewireMethod` e vincolo `^5.11`
+
+Il rischio dell'opzione 2 si e' avverato al contrario. Il commit upstream `d14913d0` (Marco Xot, 2026-11-05,
+"#[Exposed] inesistente (Filament 5)") ha rimesso `#[ExposedLivewireMethod]` nei 4 punti: sul suo ambiente
+Filament e' sotto 5.11, dove `Exposed` non esiste. Qui (filament 5.11.0) PHPStan ha dato 45 errori
+`attribute.deprecated`/`attribute.deprecatedClass` piu' 1 `classConstant.deprecatedClass` nella guardia
+aggiunta in `CoordinatePickerRefactorTest`.
+
+Causa vera: i `composer.json` dichiaravano `filament/filament: ^5.0`, quindi un ambiente sotto 5.11 era
+"valido" anche se il codice (Geo, Xot `XotBaseChartWidget`, widget Quaeris) usa le API di 5.11.
+
+Correzione:
+- `Modules/Xot/composer.json`: `filament/filament` da `^5.0` a `^5.11` (Xot possiede la dipendenza; Livewire
+  `^4.4.8` arriva da `filament/support`). Composer ora chiede l'aggiornamento invece di lasciare un vendor
+  vecchio dove `#[Exposed]` spegne in silenzio `searchAddress()`/`reverseGeocode()`.
+- `#[Exposed]` di nuovo in `HasCoordinatePicker` (235, 293) e `XotBaseCoordinateField` (203, 213); tenuta la
+  formattazione Pint di `d14913d0`.
+- Guardia nel test: `getAttributes(Exposed::class, ReflectionAttribute::IS_INSTANCEOF)`, lo stesso controllo
+  di `InteractsWithSchemas.php:107`. Sotto 5.11 il test fallisce di proposito con la cura nel commento.
+
+Verifica: PHPStan Geo/Notify/Quaeris 0 errori, PHPStan dell'intero progetto 0 errori; Pest
+`CoordinatePickerRefactorTest` 8/8; Pint passed; PHPMD solo finding preesistenti gia' documentati in
+[quality-gate-closure](./quality-gate-closure.story.md) (`BooleanArgumentFlag`, `CyclomaticComplexity`).
+
+Da fare fuori da qui: chi ha Filament sotto 5.11 lancia `composer update "filament/*" livewire/livewire`;
+la produzione deve avere filament >= 5.11 e livewire >= 4.4.8 prima del deploy.
+
+## 2026-11-05: i 22 errori residui sono il vendor vecchio, non il codice (swarm PHPStan, moduli piccoli)
+
+Scopo: `searchAddress()` e `reverseGeocode()` devono poter essere chiamati dal browser (ricerca indirizzo e
+geocodifica inversa della mappa). Filament lo permette solo ai metodi col suo attributo di esposizione.
+
+Causa dei 22 errori (`attribute.notFound` x20 nel trait e in `XotBaseCoordinateField`, `class.notFound` x1 nella guardia
+di `CoordinatePickerRefactorTest`): in questa copia di lavoro `laravel/vendor` e' **Filament 5.9.0 / Livewire 4.4.7**
+(`vendor/composer/installed.json` del 2026-10-05), sotto il `composer.lock` (5.10.3) e molto sotto il vincolo
+`filament/filament: ^5.11` di `Modules/Xot/composer.json`. In 5.9.0 esiste solo `ExposedLivewireMethod`: `Exposed` nasce in 5.11.
+
+Fix: **nessuna modifica al codice**. `#[Exposed]` e' gia' la scelta documentata sopra (opzione 1, vincolo `^5.11`);
+tornare a `#[ExposedLivewireMethod]` rifarebbe i 45 `attribute.deprecated` visti con 5.11 e sposterebbe la guardia del test
+sul nome vecchio. La cura e' allineare il vendor: `composer update "filament/*" livewire/livewire` (serve anche per `laravel/head`).
+Non l'ho eseguito: il vendor su NAS e' condiviso con gli altri agenti dello swarm e cambiarlo a meta' run falserebbe le loro misure.
+
+Verifica: PHPStan sui 3 file Geo ripete gli stessi errori sul vendor 5.9.0 (nessuno e' nuovo); con 5.11 la misura registrata sopra
+e' 0 errori in Geo. Non riverificato qui per lo stesso motivo.

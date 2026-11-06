@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Job — ScheduleService → Actions"
+title: "Job: ScheduleService → Actions"
 type: concept
 tags: [job, actions, queueable-action, schedule, migration]
 created: 2026-07-13
@@ -13,7 +13,7 @@ related:
 status: draft
 ---
 
-# Job — `ScheduleService` → Actions
+# Job: `ScheduleService` → Actions
 
 ## Mapping
 

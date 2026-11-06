@@ -42,7 +42,7 @@ git lfs fetch provtv --all
 ```
 
 `provtv` remote already had the real LFS objects (registered even though
-`.gitattributes` has no explicit `*.svg filter=lfs` rule — only
+`.gitattributes` has no explicit `*.svg filter=lfs` rule: only
 `*.psd`/`*.zip`/`*.db` are declared). `laraxot` simply never received them.
 
 ## Fix (no history rewrite)
@@ -71,7 +71,7 @@ squashing unpublished local commits) if no remote has the LFS objects at all.
 
 ## Related
 
-- `Modules/User` — same symptom, different root cause (real content lost,
+- `Modules/User`: same symptom, different root cause (real content lost,
   required restoration): `git-lfs-orphan-pointer-svg-fix.md`
-- `docs/multi-org-sync-laraxot-provtv.md` (this module) — shared multi-org
+- `docs/multi-org-sync-laraxot-provtv.md` (this module): shared multi-org
   coordination note, updated with cross-module LFS troubleshooting pointers

@@ -2,7 +2,7 @@
 qmd: "pest bootstrap helpers not loaded single file"
 issues: []
 discussions: []
-title: "Pest — helper di tests/Pest.php non sempre caricati per run isolate"
+title: "Pest: helper di tests/Pest.php non sempre caricati per run isolate"
 type: concept
 module: Notify
 tags: [pest, bootstrap, helpers, second-brain]
@@ -20,7 +20,7 @@ related:
 status: draft
 ---
 
-# Pest — funzioni helper di `tests/Pest.php` non affidabili su run isolate
+# Pest: funzioni helper di `tests/Pest.php` non affidabili su run isolate
 
 ## Problema
 
@@ -38,7 +38,7 @@ function"** quando si esegue un singolo file in isolamento, es.:
 Riprodotto anche con chiamata fully-qualified (`\assertListContains(...)`),
 quindi non e' un problema di risoluzione di namespace: il bootstrap
 `tests/Pest.php` semplicemente non viene richiesto in quel percorso di
-esecuzione. Non e' stato introdotto in questa sessione — riproducibile anche
+esecuzione. Non e' stato introdotto in questa sessione: riproducibile anche
 su file mai toccati (`SmsDataTest.php`).
 
 ## Causa probabile (non confermata)
@@ -71,6 +71,6 @@ dell'intera suite) dichiarano la stessa funzione. Applicato in:
 ## Da fare (non in scope di questa sessione)
 
 Investigare la vera causa del mancato caricamento di `tests/Pest.php` su run
-isolate — probabilmente richiede un test con `--debug` di Pest o ispezione
+isolate: probabilmente richiede un test con `--debug` di Pest o ispezione
 di `vendor/pestphp/pest/src/Kernel.php` per capire come risolve il bootstrap
 quando gli viene passato un path di file invece che una directory/testsuite.

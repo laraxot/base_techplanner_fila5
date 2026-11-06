@@ -8,11 +8,12 @@ use Closure;
 use Illuminate\Http\Request;
 use Modules\Seo\Actions\Url\NormalizeLocalizedPathAction;
 use Modules\Seo\Actions\Url\ResolvePathAliasAction;
+use Modules\Seo\Datas\SeoConfigData;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
  * 301 dalle copie di una pagina (lingua maiuscola, doppio slash, slash finale) alla forma canonica, con la query intatta (DCP-288, FO-6-20).
- * Stessa regola per gli alias di pagina dichiarati in `seo.config.path_aliases` (`/it/faqs` -> `/it/faq`, stessa lingua).
+ * Stessa regola per gli alias di pagina dichiarati nelle impostazioni di Seo (`SeoConfigData::pathAliases()`) (`/it/faqs` -> `/it/faq`, stessa lingua).
  * Solo GET e HEAD: un POST non si reindirizza. E' un middleware globale, cosi' agisce prima della ricerca della rotta.
  */
 final class RedirectToCanonicalPath
@@ -42,19 +43,12 @@ final class RedirectToCanonicalPath
     }
 
     /**
-     * Alias di pagina => pagina canonica (`seo.config.path_aliases`); voci che non sono testo contro testo si ignorano.
+     * Alias di pagina => pagina canonica, dalla SettingPage di Seo (`SeoConfigData`).
      *
      * @return array<string, string>
      */
     private function aliases(): array
     {
-        $aliases = [];
-        foreach ((array) config('seo.config.path_aliases', []) as $alias => $target) {
-            if (is_string($target)) {
-                $aliases[(string) $alias] = $target;
-            }
-        }
-
-        return $aliases;
+        return SeoConfigData::make()->pathAliases();
     }
 }

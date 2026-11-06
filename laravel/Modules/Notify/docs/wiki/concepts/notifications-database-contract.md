@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "notifications — schema Notify, runtime User"
+title: "notifications: schema Notify, runtime User"
 type: concept
 tags: [notify, notifications, migration, database, user-connection, xotbasemigration]
 created: 2026-06-10
@@ -10,7 +10,7 @@ qmd: notifications database notify owner xotbasemigration user forbidden
 status: draft
 ---
 
-# notifications — schema Notify, runtime User
+# notifications: schema Notify, runtime User
 
 ## Religione (boundary)
 
@@ -60,7 +60,7 @@ php artisan migrate
 
 ## Runtime guard
 
-`Modules\User\Support\NotificationSchema::isReadable()` — header FO e widget non queryano pre-migrate.
+`Modules\User\Support\NotificationSchema::isReadable()`: header FO e widget non queryano pre-migrate.
 
 ## Collegamenti
 

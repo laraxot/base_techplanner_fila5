@@ -2,7 +2,7 @@
 qmd: "translation consolidated"
 issues: []
 discussions: []
-title: "translation — Consolidated Documentation"
+title: "translation: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# translation — Consolidated Documentation
+# translation: Consolidated Documentation
 
 Consolidated from **51** individual files.
 
@@ -44,7 +44,7 @@ Consolidated from **51** individual files.
 - [---](#translation-keys-rules-1)
 - [---](#translation-keys-rules)
 - [---](#translation-keys)
-- [Translation Namespace Philosophy — La Religione del Dominio](#translation-namespace-religion)
+- [Translation Namespace Philosophy: La Religione del Dominio](#translation-namespace-religion)
 - [Standard per le Traduzioni](#translation-standards-1)
 - [---](#translation-standards-2)
 - [Progresso Standardizzazione Traduzioni](#translation-standards-progress-1)

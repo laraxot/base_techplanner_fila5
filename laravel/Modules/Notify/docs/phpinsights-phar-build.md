@@ -68,5 +68,5 @@ Exit code 4 indica che PHPInsights ha trovato problemi nel codice analizzato (co
 
 ## Collegamenti
 
-- [quality-tools-setup](quality-tools-setup.md) — uso di PHPMD e PHPInsights
-- [build-phpinsights README](../laravel/tools/build-phpinsights/README.md) — dettagli build
+- [quality-tools-setup](quality-tools-setup.md): uso di PHPMD e PHPInsights
+- [build-phpinsights README](../laravel/tools/build-phpinsights/README.md): dettagli build

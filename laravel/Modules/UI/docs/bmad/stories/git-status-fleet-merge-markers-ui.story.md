@@ -1,5 +1,5 @@
 ---
-title: "Story — bonifica marker merge residui modulo UI"
+title: "Story: bonifica marker merge residui modulo UI"
 type: story
 module: UI
 epic: quality
@@ -198,9 +198,9 @@ in `architecture-patterns.md`, `svg-icons-automatic-registration.md`,
 - `grep -rn '^<<<<<<<\|^=======$\|^>>>>>>>\|^|||||||'` su `laravel/Modules/UI` → **0 hit**.
 - File con menzioni `<<<<<<<` in prosa/backtick (story/doc sui marker): lasciati intatti.
 - `PHILOSOPHY.md` (1311 righe, doc diverso e più ricco di `philosophy.md`) **mantenuto**:
-  contenuto distinto, non un duplicato — solo naming non conforme (segnalato).
+  contenuto distinto, non un duplicato: solo naming non conforme (segnalato).
 - Debris `ours+theirs` residui (righe duplicate consecutive) restano in ~35 file NON nel pack
   (es. `readme.md`, `frontend.md`, `studio-card-selector-implementation.md`,
-  `overview-extended.md`): non toccati, fuori scope del pack — da instradare a batch dedicato.
+  `overview-extended.md`): non toccati, fuori scope del pack: da instradare a batch dedicato.
 - `docs/raw/root-import/` contiene varianti `-1` dei doc importati (es. `changelog-1.md`):
   non toccate, area `raw/` dichiarata immutable dal wiki schema.

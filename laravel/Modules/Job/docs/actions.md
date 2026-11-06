@@ -2,7 +2,7 @@
 qmd: "actions"
 issues: []
 discussions: []
-title: "Job Module — QueueableActions Architecture (Consolidated)"
+title: "Job Module: QueueableActions Architecture (Consolidated)"
 type: guide
 tags: [actions, architecture, queueable]
 created: 2026-07-21
@@ -10,7 +10,7 @@ updated: 2026-07-21
 status: draft
 ---
 
-# Job Module — QueueableActions Architecture
+# Job Module: QueueableActions Architecture
 
 ## Status
 
@@ -132,11 +132,11 @@ php artisan schedule:clear-cache
 
 ## Design Principles
 
-1. **Separation of concerns** — Cache logic isolated from Observer/Command
-2. **Reusability** — Use same action across multiple call sites
-3. **Testability** — Call `execute()` directly without mocking container
-4. **Queueability** — Inherit `dispatch()` for free via QueueableAction trait
-5. **Composition** — Actions call other actions without constructor DI bloat
+1. **Separation of concerns**: Cache logic isolated from Observer/Command
+2. **Reusability**: Use same action across multiple call sites
+3. **Testability**: Call `execute()` directly without mocking container
+4. **Queueability**: Inherit `dispatch()` for free via QueueableAction trait
+5. **Composition**: Actions call other actions without constructor DI bloat
 
 ## Adding New Actions
 

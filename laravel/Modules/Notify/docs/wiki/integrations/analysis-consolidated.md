@@ -2,7 +2,7 @@
 qmd: "analysis consolidated"
 issues: []
 discussions: []
-title: "analysis — Consolidated Documentation"
+title: "analysis: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# analysis — Consolidated Documentation
+# analysis: Consolidated Documentation
 
 Consolidated from **29** individual files.
 

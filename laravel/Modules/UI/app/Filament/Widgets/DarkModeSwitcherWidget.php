@@ -7,6 +7,7 @@ namespace Modules\UI\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cookie;
+use Modules\UI\Datas\UIConfigData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 final class DarkModeSwitcherWidget extends XotBaseSchemaWidget
@@ -45,11 +46,11 @@ final class DarkModeSwitcherWidget extends XotBaseSchemaWidget
     }
 
     /**
-     * Disabilitabile via config per temi/test (default: visibile).
+     * Disabilitabile dalla SettingPage di UI (default: visibile).
      */
     public static function canView(): bool
     {
-        return (bool) config('ui.dark_mode_switcher.enabled', true);
+        return UIConfigData::make()->dark_mode_switcher_enabled;
     }
 
     public function render(): View

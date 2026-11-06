@@ -4,14 +4,14 @@ created: 2026-09-26
 qmd: "frontend stack canonical"
 issues: []
 discussions: []
-title: frontend stack canonico — notify module stub
+title: frontend stack canonico: notify module stub
 type: rule
 module: Notify
 updated: 2026-06-03
 status: draft
 ---
 
-# Stack frontend — modulo Notify
+# Stack frontend: modulo Notify
 
 ## Mantra progetto
 

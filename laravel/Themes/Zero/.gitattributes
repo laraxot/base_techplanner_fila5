@@ -1,17 +1,13 @@
-# Prototipo .gitattributes per laravel/Modules/* e laravel/Themes/*
-# Canon: repository binary attribute policy.
-# Sync:  bash bashscripts/templates/sync-gitattributes-modules.sh
-#
-# I binari restano blob Git normali.
+# Git LFS vietato: tutti i binari restano blob Git normali.
+# Canon: docs/wiki/rules/no-git-lfs.md
 
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
-# Binari come blob Git normali.
-# `binary` disattiva diff e normalizzazione di fine riga.
-# `!filter` annulla eventuali filtri ereditati dalla configurazione di sistema.
+
+# Binary files: binary disables text normalization; !filter blocks inherited LFS.
 *.png binary !filter
 *.jpg binary !filter
 *.jpeg binary !filter
@@ -31,9 +27,3 @@ CHANGELOG.md export-ignore
 *.phar binary !filter
 *.db binary !filter
 *.sqlite binary !filter
-*.png !text !filter !merge !diff
-*.svg !text !filter !merge !diff
-*.jpg !text !filter !merge !diff
-*.jpeg !text !filter !merge !diff
-*.gif !text !filter !merge !diff
-*.webp !text !filter !merge !diff

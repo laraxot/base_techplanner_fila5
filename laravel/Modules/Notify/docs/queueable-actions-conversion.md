@@ -23,7 +23,7 @@ punto di ingresso `execute()` per ogni servizio, che diventa il metodo invocabil
 
 | File | Namespace | Metodo principale `execute()` | Factory preservata |
 |------|-----------|-------------------------------|--------------------|
-| `app/Services/NotificationManager.php` | `Modules\Notify\Services` | `execute(Model $recipient, string $templateCode, array $data, array $channels, array $options): array` | — |
+| `app/Services/NotificationManager.php` | `Modules\Notify\Services` | `execute(Model $recipient, string $templateCode, array $data, array $channels, array $options): array` |: |
 | `app/Services/SmsService.php` | `Modules\Notify\Services` | `execute(): self` | `getInstance()`, `make()` |
 | `app/Services/MailEngines/MailtrapEngine.php` | `Modules\Notify\Services\MailEngines` | `execute(): void` | `getInstance()`, `make()` |
 

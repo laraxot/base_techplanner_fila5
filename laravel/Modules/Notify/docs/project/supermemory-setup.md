@@ -57,9 +57,9 @@ supermemory tags
 ```
 
 ### OpenCode Commands
-- `/supermemory-init` — Explore and memorize codebase
-- `/supermemory-login` — Authenticate with Supermemory
-- `/supermemory-logout` — Clear credentials
+- `/supermemory-init`: Explore and memorize codebase
+- `/supermemory-login`: Authenticate with Supermemory
+- `/supermemory-logout`: Clear credentials
 
 ### Config File
 `~/.config/opencode/supermemory.jsonc`:

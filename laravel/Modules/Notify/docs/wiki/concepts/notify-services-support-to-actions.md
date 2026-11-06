@@ -50,7 +50,7 @@ da HEAD del repo del modulo; nessun `.gitkeep` a preservare la cartella). Dettag
 
 Callers repo-wide di `Modules\Notify\Services\*`: 0.
 
-## Aggiornamento 2026-07-16 — pulizia residui
+## Aggiornamento 2026-07-16: pulizia residui
 
 Verifica finale monorepo-wide (`laravel/Modules/*`, `laravel/Themes/*`,
 `laravel/app/`): l'unico riferimento a codice `Modules\Notify\Services\*`

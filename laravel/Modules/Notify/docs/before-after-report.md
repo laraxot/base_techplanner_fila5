@@ -1,5 +1,5 @@
 ---
-title: "Notify Docs Organization — Before/After Report"
+title: "Notify Docs Organization: Before/After Report"
 type: report
 status: completed
 module: Notify
@@ -8,7 +8,7 @@ tags: [docs, notify]
 qmd: "before/after report   notify module docs notify"
 ---
 
-# Before/After Report — Notify Module Docs
+# Before/After Report: Notify Module Docs
 
 ## Before
 - docs/ contained: bmad/, legacy/ (447 files), wiki/, rules/, stories/, -integration/, readme.md files, images

@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Http;
 use Kreait\Firebase\Contract\Messaging;
 use Mockery;
 use Mockery\MockInterface;
+use Modules\Notify\Actions\Push\SendScheduledPushNotificationAction;
 use Modules\Notify\Actions\Telegram\SendBotmanTelegramAction;
 use Modules\Notify\Actions\Telegram\SendNutgramTelegramAction;
 use Modules\Notify\Actions\Telegram\SendOfficialTelegramAction;
@@ -16,10 +17,11 @@ use Modules\Notify\Actions\WhatsApp\SendTwilioWhatsAppAction;
 use Modules\Notify\Actions\WhatsApp\SendVonageWhatsAppAction;
 use Modules\Notify\Datas\TelegramData;
 use Modules\Notify\Datas\WhatsAppData;
-use Modules\Notify\Actions\Push\SendScheduledPushNotificationAction;
 use Modules\Notify\Notifications\Channels\FirebaseCloudMessagingChannel;
+use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 afterEach(function (): void {
     Mockery::close();
 });

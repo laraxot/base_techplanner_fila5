@@ -38,7 +38,7 @@ abstract class TestCase extends BaseTestCase
     use DatabaseTransactions;
 
     /** @var list<string> */
-    protected $connectionsToTransact = ['fixcity', 'mariadb', 'user', 'notify'];
+    protected $connectionsToTransact = ['user', 'notify'];
 
     /**
      * Type-guard: accetta un valore arbitrario e asserisce che sia un array.
@@ -188,7 +188,6 @@ abstract class TestCase extends BaseTestCase
     /**
      * Get package providers.
      *
-     * @param  Application  $app
      * @return array<int, class-string>
      */
     protected function getPackageProviders(Application $app): array

@@ -36,7 +36,7 @@ E' il replay del vecchio commit `ceaed311` (2026-09-24) sopra `b3d8baa2`, commit
 
 ## Result
 - Prima: **213** (elenco swarm). All'ingresso dell'agent, dopo edit paralleli gia' presenti nel working tree (15:58), `phpstan analyse Modules/Lang` dava **188**.
-- Dopo: **0** — `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang --memory-limit=-1 --no-progress` → exit 0 (2026-10-28 16:1x).
+- Dopo: **0**: `cd laravel && ./vendor/bin/phpstan analyse Modules/Lang --memory-limit=-1 --no-progress` → exit 0 (2026-10-28 16:1x).
 - `php -l` pulito sui file toccati. Nessun file cancellato (`git status` senza ` D`).
 - **Pest NON eseguito**: `.env.testing` punta a MySQL; i test Lang non sono unit puri (`TestCase` con `DatabaseTransactions`).
 
@@ -65,3 +65,15 @@ E' il replay del vecchio commit `ceaed311` (2026-09-24) sopra `b3d8baa2`, commit
 ## GitHub (tracciamento)
 - Issue: TODO (`gh` non installato)
 - Discussion: TODO
+
+## Rimando: trait.unused di Post (2026-11-05)
+`Post` componeva le copie piatte `Traits/PostMutators.php` e `Traits/PostRelations.php` (entrate col commit `.` `dc34e53d6`, contenuto stale) mentre le copie
+nelle sottocartelle `Traits/Mutators/` e `Traits/Relationships/` (merge coerente `bd6a68733`) restavano inutilizzate. Ora `Post` usa le sottocartelle.
+Dettaglio e prove: `../../../User/docs/stories/phpstan-unused-relation-traits.story.md`.
+
+**Chiusura (2026-11-05, sera):** rimosse le due copie piatte, in avanti e senza `git checkout`/`reset`. Prove prima di cancellare: nessun
+`use` o riferimento alle copie piatte in tutto il repo (`rg` su `Traits\PostMutators`/`Traits\PostRelations`); le copie nelle sottocartelle
+sono le piu' nuove e piu' rigorose (`getTxt(?string $value = null): string` con fallback su `attributes['txt']`, contro `getTxt(?string $value): ?string`);
+`Post` si carica con `HasSlug, PostMutators, PostRelations, Updater`. PHPStan su `Modules/Lang/app/Models`: i 2 `trait.unused` delle copie sono spariti
+(resta `HasStrictTranslations`, gia' in baseline). **Rischio noto:** sono il vecchio nome ricomparso dopo il sync (`merge -s resolve` non gestisce le
+rinomine); se un clone gemello ha ancora i file piatti, `merge_remote_repo_2.sh` puo' riportarli. In quel caso ricancellarli e non ripristinarli.

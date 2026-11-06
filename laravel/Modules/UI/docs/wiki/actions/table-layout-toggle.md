@@ -134,8 +134,8 @@ class MyListRecords extends ListRecords
 ## Collegamenti alla Documentazione
 - [Risoluzione Conflitti UI](../../conflitti-merge-risolti.md): Documentazione dei conflitti risolti
 - [Test di Risoluzione Conflitti](../../test-conflicts-resolution.md): Test automatici che verificano la corretta risoluzione
-- **Non** spostare il toggle in `HasTableLayoutPage` — duplicazione inutile.
-- **Non** rimuovere `TableLayoutTrait` dall’Action — è il punto che scrive sessione al click.
+- **Non** spostare il toggle in `HasTableLayoutPage`: duplicazione inutile.
+- **Non** rimuovere `TableLayoutTrait` dall’Action: è il punto che scrive sessione al click.
 - **Non** refactorare icona/tooltip in closure se non c’è bug visivo.
 ## Fix doppio click
 Vedi [bugfix](../bugfix-table-layout-toggle-not-working.md): bastano `resetTable()` + `$wire.$refresh()` dopo `setTableLayout()`.
@@ -143,4 +143,4 @@ Vedi [bugfix](../bugfix-table-layout-toggle-not-working.md): bastano `resetTable
 - [Bugfix doppio click](../bugfix-table-layout-toggle-not-working.md)
 - [Disciplina agente](../../../../../../docs/wiki/memories/agent-table-layout-toggle-discipline.md)
 - [Contratto Xot](../../Xot/docs/filament/table-layout-toggle-contract.md)
-- [Tema One — tabelle](../../../Themes/One/docs/filament-resource-schemas-tables.md)
+- [Tema One: tabelle](../../../Themes/One/docs/filament-resource-schemas-tables.md)

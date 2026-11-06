@@ -8,9 +8,9 @@ use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Forma canonica di un alias di pagina: `/it/faqs` e `/it/faq` sono la stessa pagina scritta due volte, e ne resta una sola.
- * La mappa e' `seo.config.path_aliases`: percorso senza lingua dell'alias => percorso senza lingua canonico ('' = home).
+ * La mappa e' `SeoConfigData::pathAliases()` (impostazioni di Seo): percorso senza lingua dell'alias => percorso senza lingua canonico ('' = home).
  * Restituisce null se il percorso non comincia con una lingua nota o non e' un alias. Un solo salto: un alias che punta a un altro
- * alias non si segue (la mappa deve puntare sempre alla pagina finale, lo verifica un test).
+ * alias non si segue (la mappa deve puntare sempre alla pagina finale: `SeoConfigData::pathAliases()` scarta giri e catene).
  */
 final class ResolvePathAliasAction
 {

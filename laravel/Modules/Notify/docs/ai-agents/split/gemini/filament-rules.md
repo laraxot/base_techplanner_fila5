@@ -165,9 +165,9 @@ livewire(ListUsers::class)
 ---
 ## Cross-References
 
-- ← [GEMINI Index](INDEX.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../INDEX.md) — Master index
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../laravel/GEMINI.md](../../../../laravel/../../../../laravel/GEMINI.md) — Original source
+- ← [GEMINI Index](INDEX.md): All Gemini guidelines
+- ← [Main AI Docs Index](../INDEX.md): Master index
+- ← [GEMINI Index](index.md): All Gemini guidelines
+- ← [Main AI Docs Index](../index.md): Master index
+- ← [../../../../laravel/GEMINI.md](../../../../laravel/../../../../laravel/GEMINI.md): Original source
 

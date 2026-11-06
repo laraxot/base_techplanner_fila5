@@ -1,4 +1,4 @@
-# ImageSpatie / SpatieDocumentUpload — Filament Blueprint
+# ImageSpatie / SpatieDocumentUpload: Filament Blueprint
 
 ## Component Design (BMAD + Ponytail)
 - `SpatieDocumentUpload::make()` standardizes upload: `SpatieMediaLibraryFileUpload`, `disk('private')`, `preserveFilenames()`, `maxSize(10240)`, `acceptedFileTypes` includes `image/heic`, `image/webp`

@@ -10,7 +10,7 @@ updated: 2026-07-28
 status: draft
 ---
 
-# Notify Module — Quick Start
+# Notify Module: Quick Start
 
 ## Send Notification
 

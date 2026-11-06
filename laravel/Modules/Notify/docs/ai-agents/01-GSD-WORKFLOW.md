@@ -13,8 +13,8 @@ superseded_by: 01-gsd-workflow.md
 
 # 🚀 GSD Workflow (Get Shit Done)
 
-**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
-**Related**: [02-BMAD-WORKFLOW.md](02-BMAD-WORKFLOW.md) — BMAD Method
+**Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
+**Related**: [02-BMAD-WORKFLOW.md](02-BMAD-WORKFLOW.md): BMAD Method
 
 ---
 

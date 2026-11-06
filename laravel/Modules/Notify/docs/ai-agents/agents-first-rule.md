@@ -22,11 +22,11 @@ status: draft
 
 **Before modifying ANY file, always follow this sequence:**
 
-1. **Read** — read the file carefully with the Read tool (mandatory — Edit/Write fail without it)
-2. **Reason** — think about context and implications
-3. **Study** — study existing code, module patterns, and conventions
-4. **Update docs** — update `docs/` folders inside modules and themes
-5. **Improve** — only then make changes following project conventions
+1. **Read**: read the file carefully with the Read tool (mandatory: Edit/Write fail without it)
+2. **Reason**: think about context and implications
+3. **Study**: study existing code, module patterns, and conventions
+4. **Update docs**: update `docs/` folders inside modules and themes
+5. **Improve**: only then make changes following project conventions
 
 ## Post-edit cycle (mandatory)
 
@@ -37,7 +37,7 @@ RE-READ → PHPStan → PHPMD → PHPInsights → UPDATE DOCS → GIT COMMIT →
 
 - PHPStan: `./vendor/bin/phpstan analyse Modules/{Module} --level=10` (run from `laravel/`)
 - PHPMD: `bash laravel/tools/phpmd.sh laravel text phpmd.xml --exclude vendor,...`
-- PHPInsights: `.phar ONLY` — NEVER in `composer.json` require-dev
+- PHPInsights: `.phar ONLY`: NEVER in `composer.json` require-dev
 
 All errors from all 3 tools MUST be resolved before commit.
 

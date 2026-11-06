@@ -5,13 +5,11 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\User\Contracts\TeamContract;
+use Modules\User\Models\Traits\TeamInvitationRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\TeamInvitation.
@@ -22,7 +20,6 @@ use Modules\Xot\Datas\XotData;
  * @property string|null $role
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property Team|null $team
  * @property TeamContract|null $team
  *
  * @method static Builder|TeamInvitation newModelQuery()
@@ -63,6 +60,8 @@ use Modules\Xot\Datas\XotData;
  */
 class TeamInvitation extends BaseModel
 {
+    use TeamInvitationRelationsTrait;
+
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -73,18 +72,6 @@ class TeamInvitation extends BaseModel
         'declined_at',
         'user_id',
     ];
-
-    /**
-     * @return BelongsTo<Model, $this>
-     */
-    public function team(): BelongsTo
-    {
-        $xotData = XotData::make();
-        /** @var class-string<Model> */
-        $team_class = $xotData->getTeamClass();
-
-        return $this->belongsTo($team_class);
-    }
 
     /**
      * Accept the invitation.

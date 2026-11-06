@@ -2,7 +2,7 @@
 qmd: "progress dup"
 issues: []
 discussions: []
-title: 'Progress dup — risorse esterne'
+title: 'Progress dup: risorse esterne'
 module: Job
 type: reference
 slug: progress-dup
@@ -13,7 +13,7 @@ created: 2026-08-24
 updated: 2026-08-24
 ---
 
-# Progress dup — risorse esterne
+# Progress dup: risorse esterne
 
 > Fonti raccolte durante lo studio dell'argomento. Una fonte vale quando la si
 > collega a un punto del codice: leggila, poi trova dove è già applicata.

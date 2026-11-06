@@ -43,4 +43,4 @@ IM-GDPR-001, IM-BLOG-004, owner editoriale.
 
 Riaprire solo se: (1) IM-GDPR-001 done, (2) owner editoriale nominato,
 (3) almeno un evergreen + evento pilota pubblicati, (4) prova che il follow-up
-riduce no-show o aumenta partecipazione — non vanity open-rate.
+riduce no-show o aumenta partecipazione: non vanity open-rate.

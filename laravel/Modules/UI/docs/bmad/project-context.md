@@ -1,5 +1,5 @@
 ---
-title: "Project context — UI"
+title: "Project context: UI"
 type: constitution
 module: UI
 track: quick-flow
@@ -14,7 +14,7 @@ related:
   - ./filament-blueprint.md
 ---
 
-# Costituzione — UI
+# Costituzione: UI
 
 Fornire un vocabolario UI accessibile condiviso invece di fork per-modulo.
 

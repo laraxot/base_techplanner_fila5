@@ -2,7 +2,7 @@
 qmd: "telegram consolidated"
 issues: []
 discussions: []
-title: "telegram — Consolidated Documentation"
+title: "telegram: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# telegram — Consolidated Documentation
+# telegram: Consolidated Documentation
 
 Consolidated from **13** individual files.
 
@@ -2568,7 +2568,7 @@ same `array<string, mixed>` return type).
 
 Added the missing `implements` declaration (plus the corresponding `use`
 import) to the six action classes below. No other code in these classes was
-changed — the method bodies were already interface-compliant:
+changed: the method bodies were already interface-compliant:
 
 - `Modules/Notify/app/Actions/Telegram/SendOfficialTelegramAction.php`
 - `Modules/Notify/app/Actions/Telegram/SendNutgramTelegramAction.php`
@@ -2582,9 +2582,9 @@ and was left untouched.
 
 All six classes now implement their respective interface:
 
-- `Modules\Notify\Contracts\TelegramProviderActionInterface` — requires
+- `Modules\Notify\Contracts\TelegramProviderActionInterface`: requires
   `execute(TelegramData $telegramData): array`.
-- `Modules\Notify\Contracts\WhatsAppProviderActionInterface` — requires
+- `Modules\Notify\Contracts\WhatsAppProviderActionInterface`: requires
   `execute(WhatsAppData $whatsappData): array`. The concrete classes use the
   parameter name `$whatsAppData` (capital A); PHP does not require parameter
   names to match between an interface and its implementation, so this is not
@@ -2595,7 +2595,7 @@ All six classes now implement their respective interface:
 `Modules/Notify/tests/Unit/Factories/ActionFactoriesTest.php` had a test named
 `'telegram action factory throws when selected class does not implement
 interface'` that asserted `TelegramActionFactory->create('official')` threw
-an exception — i.e. it encoded the bug as expected behavior. That test was
+an exception: i.e. it encoded the bug as expected behavior. That test was
 rewritten to `'telegram action factory creates official driver instance'`,
 asserting the factory now returns a valid
 `TelegramProviderActionInterface` instance, mirroring the existing WhatsApp
@@ -2618,7 +2618,7 @@ Twilio test.
 - `./vendor/bin/pest` against the Notify Telegram/WhatsApp/Factories/Channels
   test files: 116 passing, 1 pre-existing unrelated failure in
   `NotificationsChannelsTest` (`TelegramChannel` calls `Log::debug()` but the
-  test mocks `Log::shouldReceive('info')`) — untouched by this fix, confirmed
+  test mocks `Log::shouldReceive('info')`): untouched by this fix, confirmed
   via `git log` to predate this change.
 - No browser/Playwright/Puppeteer testing was performed: these are outbound
   HTTP actions calling external Telegram/WhatsApp APIs with no UI surface to

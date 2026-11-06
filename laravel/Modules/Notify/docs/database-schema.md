@@ -10,7 +10,7 @@ created: 2026-07-28
 status: draft
 ---
 
-# Notify Module — Database Schema
+# Notify Module: Database Schema
 
 ## notifications Table
 

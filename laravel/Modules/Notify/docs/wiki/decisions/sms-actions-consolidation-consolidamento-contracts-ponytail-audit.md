@@ -71,12 +71,12 @@ invece che in `app/Contracts/SMS/`.
 
 3. **Codice realmente orfano confermato e consolidato** (zero chiamanti, anche
    dinamici, fuori dal proprio test):
-   - `app/Actions/SMS/SendAgiletelecomSMSv1Action.php` — la factory/enum risolvono
+   - `app/Actions/SMS/SendAgiletelecomSMSv1Action.php`: la factory/enum risolvono
      sempre e solo `SendAgiletelecomSMSAction` (wrapper che delega a `...v2Action`);
      la v1 non è mai istanziata da nessun punto del codice. Rinominata `.bak`.
    - `app/Actions/NormalizePhoneNumberAction.php` (namespace root, diverso da
      `app/Actions/SMS/NormalizePhoneNumberAction.php` che resta attivo e usato
-     da `ChannelEnum`, `RecordNotificationData`, `SendNetfunSMSAction`) — duplicato
+     da `ChannelEnum`, `RecordNotificationData`, `SendNetfunSMSAction`): duplicato
      orfano, usato solo dal proprio test. Rinominata `.bak`.
 
 ## File modificati

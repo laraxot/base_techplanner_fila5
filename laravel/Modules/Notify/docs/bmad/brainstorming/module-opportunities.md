@@ -1,5 +1,5 @@
 ---
-title: "Notify — brainstorming BMAD"
+title: "Notify: brainstorming BMAD"
 type: brainstorming
 status: active
 module: Notify
@@ -8,7 +8,7 @@ updated: 2026-09-28
 qmd: "Notify brainstorming rischi opportunità domande aperte"
 tags: [docs, notify, bmad]
 ---
-# Notify — brainstorming
+# Notify: brainstorming
 
 ## Punto di partenza
 

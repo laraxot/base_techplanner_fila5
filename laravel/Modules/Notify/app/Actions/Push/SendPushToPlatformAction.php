@@ -8,6 +8,7 @@ use Exception;
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
+use Modules\Notify\Datas\NotifyConfigData;
 use Modules\Notify\Datas\PushNotificationData;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -56,7 +57,7 @@ class SendPushToPlatformAction
             'ttl' => $notification->ttl ?? 3600];
 
         $serverKey = SafeStringCastAction::cast(config('notify.fcm.server_key'));
-        $url = SafeStringCastAction::cast(config('notify.fcm.url', 'https://fcm.googleapis.com/fcm/send'));
+        $url = NotifyConfigData::make()->fcm_url;
 
         $response = Http::withHeaders([
             'Authorization' => 'key='.$serverKey,

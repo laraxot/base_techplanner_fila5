@@ -144,10 +144,10 @@ MIT
 
 ## Documentation
 
-- [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
-- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
-- [Performance](./performance-optimization.md) — Metriche e best practice
-- [Project Structure](./project-structure.md) — Directory layout
+- [On-Demand Pattern](./on-demand-pattern.md): Pattern per caricamento efficiente
+- [QMD Setup](./qmd-setup.md): Configurazione ricerca locale
+- [Performance](./performance-optimization.md): Metriche e best practice
+- [Project Structure](./project-structure.md): Directory layout
 
     public function getTableContentGrid(): array
     {

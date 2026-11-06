@@ -1,5 +1,5 @@
 ---
-title: "BMAD Brainstorming — Notify"
+title: "BMAD Brainstorming: Notify"
 type: bmad-brainstorming
 status: synthesized
 module: Notify
@@ -48,7 +48,7 @@ Come tracciare invio/retry/sollecito come eventi Fixcity senza far conoscere a N
 | Eliminate | Duplicazioni di verita (second store, Livewire legacy, Controllers) | H | H |
 | Reverse | Progettare dai failure mode privacy/authz prima delle feature | H | H |
 
-## Reverse brainstorming — come romperlo
+## Reverse brainstorming: come romperlo
 
 - Copiare planning Ticket in questo owner (gia successo: stub da correggere).
 - Mettere business rules nel tema o Controllers.
@@ -65,4 +65,4 @@ Come tracciare invio/retry/sollecito come eventi Fixcity senza far conoscere a N
 
 ## Prossimo step BMAD
 
-Vedi [bmad-planning.md](./bmad-planning.md) — eseguire la Wave 1 e aggiornare il decision-log owner.
+Vedi [bmad-planning.md](./bmad-planning.md): eseguire la Wave 1 e aggiornare il decision-log owner.

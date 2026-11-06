@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Quality Report — Notify"
+title: "Quality Report: Notify"
 type: report
 tags: [quality, phpstan, pest, coverage]
 module: Notify
@@ -12,7 +12,7 @@ status: superseded
 superseded_by: quality-report.md
 ---
 
-# Quality Report — Notify
+# Quality Report: Notify
 
 Aggiornato: 2026-08-24. Rigenera con: `bashscripts/tools/quality-report.sh Notify`
 
