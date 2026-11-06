@@ -82,7 +82,7 @@ middleware(['guest']);
                             {{ __('user::auth.login.title.label') }}
                         </h2>
                         <p class="text-sm mb-8" style="color: #6b7280;">
-                            {{ __('Inserisci le tue credenziali per accedere') }}
+                            {{ __('user::auth.login.subtitle.text') }}
                         </p>
 
                         @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
