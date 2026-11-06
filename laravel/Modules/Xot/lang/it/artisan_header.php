@@ -17,6 +17,7 @@ return [
             'label' => 'filament:clear-cached-components',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Artisan Header',
     'plural_label' => 'Artisan Header (Plurale)',
     'navigation' => [
@@ -50,4 +51,6 @@ return [
             'description' => '',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

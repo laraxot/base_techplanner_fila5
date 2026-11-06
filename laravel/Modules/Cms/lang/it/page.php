@@ -18,44 +18,62 @@ return [
         'id' => [
             'label' => 'ID',
             'placeholder' => 'ID della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'title' => [
             'label' => 'Titolo',
             'placeholder' => 'Titolo della pagina',
+<<<<<<< HEAD
             'helper_text' => 'title',
             'description' => 'title',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'Slug',
             'placeholder' => 'Slug della pagina',
+<<<<<<< HEAD
             'helper_text' => 'slug',
             'description' => 'slug',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'content' => [
             'label' => 'Contenuto',
             'placeholder' => 'Contenuto della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'meta_title' => [
             'label' => 'Meta Titolo',
             'placeholder' => 'Meta titolo per SEO',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'meta_description' => [
             'label' => 'Meta Descrizione',
             'placeholder' => 'Meta descrizione per SEO',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -66,9 +84,12 @@ return [
                 'scheduled' => 'Programmata',
                 'archived' => 'Archiviata',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'layout' => [
             'label' => 'Layout',
@@ -78,34 +99,47 @@ return [
                 'full-width' => 'Larghezza piena',
                 'sidebar' => 'Con barra laterale',
             ],
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'parent_id' => [
             'label' => 'Pagina Genitore',
             'placeholder' => 'Seleziona la pagina genitore',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'order' => [
             'label' => 'Ordine',
             'placeholder' => 'Ordine di visualizzazione',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'lang' => [
             'label' => 'Lingua',
             'placeholder' => 'Seleziona la lingua della pagina',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'placeholder' => 'Data e ora ultima modifica',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -181,6 +215,44 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'toggleColumns' => [
+            'label' => 'Attiva/Disattiva Colonne',
+        ],
+        'reorderRecords' => [
+            'label' => 'reorderRecords',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+        ],
+        'delete' => [
+            'label' => 'delete',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+        'view' => [
+            'label' => 'view',
+        ],
+        'create' => [
+            'label' => 'create',
+        ],
+        'message' => [
+            'label' => 'message',
+        ],
+        'footer_blocks' => [
+            'label' => 'footer_blocks',
+        ],
+        'caption' => [
+            'label' => 'caption',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -215,6 +287,7 @@ return [
     'model' => [
         'label' => 'page.model',
     ],
+<<<<<<< HEAD
     'sections' => [
         'Content' => [
             'label' => 'Content',
@@ -231,4 +304,6 @@ return [
     ],
     'label' => 'Page',
     'plural_label' => 'Page (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

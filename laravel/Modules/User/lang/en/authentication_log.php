@@ -16,8 +16,11 @@ return [
             'label' => 'Reorder Records',
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

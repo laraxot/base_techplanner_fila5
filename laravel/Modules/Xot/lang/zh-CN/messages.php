@@ -27,6 +27,7 @@ return [
         'finished' => '应用已成功安装.',
         'exit' => '点击退出',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -40,4 +41,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

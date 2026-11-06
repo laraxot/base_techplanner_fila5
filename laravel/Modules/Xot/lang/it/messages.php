@@ -27,6 +27,7 @@ return [
         'finished' => 'L\'applicazione è stata configurata correttamente.',
         'exit' => 'Clicca qui per uscire',
     ],
+<<<<<<< HEAD
     'label' => 'Messages',
     'plural_label' => 'Messages (Plurale)',
     'navigation' => [
@@ -71,4 +72,6 @@ return [
             'label' => 'Elimina Messages',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

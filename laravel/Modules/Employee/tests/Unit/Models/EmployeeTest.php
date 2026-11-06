@@ -11,6 +11,11 @@ use Illuminate\Support\Facades\DB;
 use Modules\Employee\Models\Department;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\Position;
+<<<<<<< HEAD
+=======
+use Modules\Employee\Tests\TestCase;
+
+>>>>>>> 6ed19256f (.)
 
 beforeEach(function () {
     DB::beginTransaction();

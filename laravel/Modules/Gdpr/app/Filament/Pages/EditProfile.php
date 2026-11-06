@@ -8,7 +8,11 @@ use Modules\Xot\Filament\Pages\Auth\XotBaseEditProfile;
 
 class EditProfile extends XotBaseEditProfile
 {
+<<<<<<< HEAD
     protected static bool $registerNavigation = true;
+=======
+    protected static bool $shouldRegisterNavigation = true;
+>>>>>>> 6ed19256f (.)
 
     protected static bool $isDiscovered = false;
 }

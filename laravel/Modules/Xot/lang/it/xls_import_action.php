@@ -8,6 +8,7 @@ return [
     'C' => 'C',
     'D' => 'D',
     'E' => 'E',
+<<<<<<< HEAD
     'label' => 'Xls Import Action',
     'plural_label' => 'Xls Import Action (Plurale)',
     'navigation' => [
@@ -52,4 +53,6 @@ return [
             'label' => 'Elimina Xls Import Action',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

@@ -8,6 +8,7 @@ return [
     'sent' => 'قمنا بإرسال رابط إعادة تعيين كلمة مرورك إلى بريدك الإلكتروني!',
     'token' => 'رمز إعادة تعيين كلمة المرور هذا غير صالح.',
     'user' => 'لم نستطع إيجاد مستخدم ينتمي إليه هذا البريد الإلكتروني.',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -21,4 +22,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

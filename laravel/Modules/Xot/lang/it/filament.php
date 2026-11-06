@@ -55,6 +55,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'label' => 'Filament',
     'plural_label' => 'Filament (Plurale)',
     'navigation' => [
@@ -99,4 +100,6 @@ return [
             'label' => 'Elimina Filament',
         ],
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

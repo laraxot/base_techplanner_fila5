@@ -8,6 +8,10 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Modules\TechPlanner\Enums\CompanyItemEnum;
 use Modules\Xot\Filament\Schemas\Components\XotBaseSection;
+<<<<<<< HEAD
+=======
+use Override;
+>>>>>>> 6ed19256f (.)
 
 /**
  * CompanySection - Sezione Form per dati aziendali
@@ -47,4 +51,8 @@ class CompanySection extends XotBaseSection
     {
         return CompanyItemEnum::getFormSchema();
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

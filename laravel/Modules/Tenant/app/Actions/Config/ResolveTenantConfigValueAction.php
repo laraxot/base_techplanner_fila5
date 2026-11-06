@@ -22,6 +22,10 @@ class ResolveTenantConfigValueAction
      *
      * @param  string  $key  Config key (e.g., 'app.name', 'mail.driver')
      * @param  string|int|array<mixed>|null  $_default  Default value if config not found
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
      * @return float|int|string|array<mixed>|null Resolved configuration value
      *
      * @throws Exception If config key is invalid or value type is unexpected
@@ -49,7 +53,11 @@ class ResolveTenantConfigValueAction
             $extraConf = [];
         }
 
+<<<<<<< HEAD
         $mergeConf = array_replace_recursive($originalConf, $extraConf);
+=======
+        $mergeConf = collect($originalConf)->merge($extraConf)->all();
+>>>>>>> 6ed19256f (.)
 
         Config::set($group, $mergeConf);
 

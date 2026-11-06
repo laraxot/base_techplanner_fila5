@@ -7,11 +7,18 @@ namespace Modules\Media\Datas;
 use Illuminate\Support\Facades\Config;
 use Livewire\Wireable;
 use RuntimeException;
+<<<<<<< HEAD
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
 
 use function Safe\file_get_contents;
 
+=======
+use function Safe\file_get_contents;
+use Spatie\LaravelData\Concerns\WireableData;
+use Spatie\LaravelData\Data;
+
+>>>>>>> 6ed19256f (.)
 class CloudFrontData extends Data implements Wireable
 {
     use WireableData;

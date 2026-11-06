@@ -10,13 +10,17 @@ return [
         'current_password' => [
             'label' => 'Current Password',
             'validation_attribute' => 'current_password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
             'validation_attribute' => 'password',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -26,6 +30,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirm Password',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'form' => [
@@ -71,6 +80,7 @@ return [
     'exceptions' => [
         'column_not_found' => 'Either the column ":column_name" or the password column ":password_column_name" was not found in the ":table_name" table. Please publish migrations and run them, if the error still persists, publish the config file and update the table_name, column_name, and password_column_name values.',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'name' => 'Password Expired',
         'plural' => 'Password Expired',
@@ -84,4 +94,9 @@ return [
     ],
     'label' => 'Password Expired',
     'plural_label' => 'Password Expired (Plurale)',
+=======
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

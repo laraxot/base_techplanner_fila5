@@ -6,6 +6,11 @@ namespace Modules\TechPlanner\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\TechPlanner\Models\BaseModel;
+<<<<<<< HEAD
+=======
+use Tests\TestCase;
+
+>>>>>>> 6ed19256f (.)
 
 beforeEach(function () {
     $this->baseModel = new class() extends BaseModel

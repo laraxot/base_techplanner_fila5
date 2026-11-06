@@ -31,8 +31,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @method static TenantSettingFactory factory($count = null, $state = [])
  *
+<<<<<<< HEAD
  * @property-read Tenant|null $tenant
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class TenantSetting extends BaseModel

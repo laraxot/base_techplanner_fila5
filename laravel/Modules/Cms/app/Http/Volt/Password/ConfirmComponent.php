@@ -11,7 +11,11 @@ use Livewire\Volt\Component;
 /**
  * Summary of ConfirmComponent.
  *
+<<<<<<< HEAD
  * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/auth/password/confirm.blade.php
+=======
+ * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/pages/auth/password/confirm.blade.php
+>>>>>>> 6ed19256f (.)
  */
 class ConfirmComponent extends Component
 {

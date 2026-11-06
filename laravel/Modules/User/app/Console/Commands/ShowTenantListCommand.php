@@ -13,11 +13,21 @@ class ShowTenantListCommand extends Command
 {
     /**
      * The name and signature of the console command.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $signature = 'user:tenant-list';
 
     /**
      * The console command description.
+<<<<<<< HEAD
+=======
+     *
+     * @var string
+>>>>>>> 6ed19256f (.)
      */
     protected $description = 'Visualizza lista tenant';
 

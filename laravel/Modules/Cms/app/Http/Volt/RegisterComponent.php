@@ -14,7 +14,11 @@ use Livewire\Volt\Component;
 use Modules\User\Models\User;
 
 /**
+<<<<<<< HEAD
  * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/auth/register.blade.php
+=======
+ * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/pages/auth/register.blade.php
+>>>>>>> 6ed19256f (.)
  */
 #[Layout('cms::layouts.auth')]
 class RegisterComponent extends Component

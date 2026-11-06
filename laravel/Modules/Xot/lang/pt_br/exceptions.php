@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< HEAD
 
 return [
     /*
@@ -65,3 +66,5 @@ return [
         ],
     ],
 ];
+=======
+>>>>>>> 6ed19256f (.)
