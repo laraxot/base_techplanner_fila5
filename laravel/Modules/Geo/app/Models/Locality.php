@@ -67,6 +67,7 @@ class Locality extends BaseModel
         /** @var array<string, array{region_id: mixed, province_id: mixed, id: mixed, name: string, postal_code: mixed}> $unique */
         $unique = [];
 
+<<<<<<< .merge_file_NpyGJv
         foreach ($items as $item) {
             if (! is_array($item)) {
                 continue;
@@ -108,6 +109,10 @@ class Locality extends BaseModel
         );
 
         return $rows;
+=======
+        /* @var array<int, array<string, mixed>> */
+        return $rows->toArray();
+>>>>>>> .merge_file_BkZVec
     }
 
     /**

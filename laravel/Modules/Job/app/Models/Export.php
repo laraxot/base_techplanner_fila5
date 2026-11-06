@@ -30,6 +30,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $deleted_at
  * @property string|null $deleted_by
  * @property string|null $user_type
+ *
  * @property-read Model|Eloquent|null $user
  *
  * @method static Builder<static>|Export newModelQuery()
@@ -52,10 +53,33 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Export whereUserId($value)
  * @method static Builder<static>|Export whereUserType($value)
  *
+<<<<<<< .merge_file_6TVjN0
+=======
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+<<<<<<< HEAD
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+ * @mixin IdeHelperExport
+=======
+ * @mixin Eloquent
+ * @mixin IdeHelperExport
+ * @mixin Eloquent
+ * @mixin IdeHelperExport
+ * @mixin Eloquent
+ * @mixin IdeHelperExport
+ * @mixin Eloquent
+>>>>>>> 6ed19256f (.)
+ * @mixin IdeHelperExport
+>>>>>>> .merge_file_gAVwkd
  * @mixin Eloquent
  */
 class Export extends BaseExport
 {
+    /** @var string */
     protected $connection = 'job';
 
     protected $fillable = [

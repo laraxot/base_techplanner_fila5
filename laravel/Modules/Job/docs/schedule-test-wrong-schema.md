@@ -115,6 +115,19 @@ File `tests/Feature/ScheduleBusinessLogicTest.php` will be DELETED because:
 4. When/if these features are needed, write NEW tests against REAL schema
 
 ---
+<<<<<<< .merge_file_nLv128
 **Date**: [DATE]
 **Status**: Test File Deleted
 **Reason**: Complete schema mismatch - test was fiction, not reality
+=======
+
+**Date**: 2026-01-09
+<<<<<<< HEAD
+**Date**: [DATE]
+**Status**: Test File Deleted
+**Reason**: Complete schema mismatch - test was fiction, not reality
+=======
+**Status**: Test File Deleted
+**Reason**: Complete schema mismatch - test was fiction, not reality
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_uiv59Q

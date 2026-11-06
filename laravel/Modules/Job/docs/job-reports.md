@@ -847,14 +847,35 @@ public function generateWithErrorHandling(array $options = []): string
 
 ## 📚 References
 
+<<<<<<< .merge_file_p9njk5
+=======
+- [HTML2PDF Best Practices](../Xot/docs/html2pdf-best-practices.md)
+- [Job Module README](./README.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_ifWhW7
 - [HTML2PDF Best Practices](../xot/docs/html2pdf-best-practices.md)
 - [Job Module README](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Laravel Queue Documentation](https://laravel.com/docs/queues)
 - [Filament Actions Documentation](https://filamentphp.com/docs/3.x/actions/overview)
 
 ---
 
+<<<<<<< .merge_file_p9njk5
+=======
+**Last Updated:** 2025-12-09
+<<<<<<< HEAD
+>>>>>>> .merge_file_ifWhW7
 **
 **Version:** 1.0.0
 **HTML2PDF Version:** 5.2.x
 **PHPStan Level:** 10 ✅
+<<<<<<< .merge_file_p9njk5
+=======
+=======
+**Version:** 1.0.0
+**HTML2PDF Version:** 5.2.x
+**PHPStan Level:** 10 ✅
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ifWhW7

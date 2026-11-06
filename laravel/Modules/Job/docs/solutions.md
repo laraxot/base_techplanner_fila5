@@ -361,9 +361,19 @@ class RetryTest extends TestCase {
 
    - Aggiornamento strategie retry
 ## Collegamenti tra versioni di solutions.md
+<<<<<<< .merge_file_U7HWCO
 * [solutions.md](../../Gdpr/docs/solutions.md)
+=======
+* [solutions.md](../../../Gdpr/docs/solutions.md)
+* [solutions.md](../../../Xot/docs/solutions.md)
+* [solutions.md](../../../Job/docs/solutions.md)
+<<<<<<< HEAD
+* [solutions.md](../../../gdpr/docs/solutions.md)
+>>>>>>> .merge_file_gaM66W
 * [solutions.md](../../../xot/docs/solutions.md)
 * [solutions.md](../../../job/docs/solutions.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
@@ -374,4 +384,12 @@ class RetryTest extends TestCase {
 
    - Aggiornamento strategie retry
 
+<<<<<<< .merge_file_U7HWCO
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gaM66W

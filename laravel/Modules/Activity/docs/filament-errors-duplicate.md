@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Errori Comuni Filament nel Modulo Activity"
 type: note
@@ -9,13 +8,6 @@ qmd: "errori comuni filament nel modulo activity activity"
 ---
 # Errori Comuni Filament nel Modulo Activity
 
-<<<<<<< .merge_file_EYecrE
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
-=======
-# Errori Comuni Filament nel Modulo Activity
-
->>>>>>> .merge_file_9Dd6O8
 ## Errori di Metodi Statici
 
 ### 1. getTableColumns() non può essere statico
@@ -178,11 +170,6 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
-<<<<<<< .merge_file_EYecrE
 - [ ] Eseguire PHPStan per verificare altri possibili errori=======
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/filament-errors-duplicate.md
-=======
-- [ ] Eseguire PHPStan per verificare altri possibili errori
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_9Dd6O8

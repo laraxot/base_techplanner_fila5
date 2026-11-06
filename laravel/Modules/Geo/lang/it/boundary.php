@@ -104,6 +104,7 @@ return [
         'custom' => 'Personalizzato',
     ],
     'boundary_levels' => [
+<<<<<<< HEAD
         0 => 'Paese',
         1 => 'Regione',
         2 => 'Provincia',
@@ -136,5 +137,15 @@ return [
         'delete' => [
             'label' => 'Elimina Boundary',
         ],
+=======
+        '0' => 'Paese',
+        '1' => 'Regione',
+        '2' => 'Provincia',
+        '3' => 'Comune',
+        '4' => 'Distretto',
+        '5' => 'Quartiere',
+        '6' => 'CAP',
+        '7' => 'Personalizzato',
+>>>>>>> 6ed19256f (.)
     ],
 ];

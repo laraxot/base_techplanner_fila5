@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_VZjwW5
 ---
 title: "Casi d'Uso del <nome progetto>ion Market"
 type: note
@@ -7,13 +6,7 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "casi d'uso del <nome progetto>ion market activity"
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_BVjLJt
 # Casi d'Uso del <nome progetto>ion Market
-=======
-# Casi d'Uso del Prediction Market
->>>>>>> 6ed19256f (.)
 
 ## 1. Previsioni Economiche
 
@@ -41,11 +34,7 @@ qmd: "casi d'uso del <nome progetto>ion market activity"
   - Conformità normativa
 
 ### 2.2 Policy Making
-<<<<<<< HEAD
 - **Descrizione**: Utilizzare i <nome progetto>ion market per valutare l'impatto di nuove politiche.
-=======
-- **Descrizione**: Utilizzare i prediction market per valutare l'impatto di nuove politiche.
->>>>>>> 6ed19256f (.)
 - **Vantaggi**:
   - Crowdsourcing di conoscenze
   - Previsioni più accurate dei sondaggi tradizionali
@@ -53,11 +42,7 @@ qmd: "casi d'uso del <nome progetto>ion market activity"
 ## 3. Mercati Aziendali
 
 ### 3.1 Previsioni di Vendita
-<<<<<<< HEAD
 - **Descrizione**: Le aziende possono utilizzare i <nome progetto>ion market internamente per prevedere le vendite.
-=======
-- **Descrizione**: Le aziende possono utilizzare i prediction market internamente per prevedere le vendite.
->>>>>>> 6ed19256f (.)
 - **Implementazione**:
   - Accesso riservato ai dipendenti
   - Incentivi per previsioni accurate
@@ -156,8 +141,4 @@ class Market extends Model
 - **Performance**:
   - Tempo di risposta dell'API
   - Tempo di risoluzione dei mercati
-<<<<<<< HEAD
   - Tasso di soddisfazione degli utenti
-=======
-  - Tasso di soddisfazione degli utenti
->>>>>>> 6ed19256f (.)

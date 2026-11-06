@@ -16,7 +16,14 @@ status: draft
 
 Il trait `HasAddress` fornisce una soluzione standardizzata per la gestione degli indirizzi in tutti i modelli dell'applicazione <main module>. Questo trait implementa il pattern di relazione polimorfica con il modello `Address` del modulo Geo, permettendo a qualsiasi entità di avere uno o più indirizzi associati.
 
+<<<<<<< HEAD
 
+<<<<<<< .merge_file_aF43rE
+=======
+
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LzAf3B
 ## Motivazione Filosofica
 
 ### Principio DRY (Don't Repeat Yourself)
@@ -28,18 +35,34 @@ Il codice per la gestione degli indirizzi era ripetuto in vari modelli, violando
 - Incoerenza nell'implementazione
 - Maggiore rischio di errori
 
+<<<<<<< HEAD
 
+<<<<<<< .merge_file_aF43rE
+=======
+
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LzAf3B
 ### Cohesion vs Coupling
 Il trait rappresenta un equilibrio tra:
 
 - **Alta coesione**: Raggruppando funzionalità correlate (gestione indirizzi)
 - **Basso accoppiamento**: Minimizzando le dipendenze tra moduli
 
+<<<<<<< HEAD
 
 ### Principio di Responsabilità Singola
 Ogni modello dovrebbe avere una sola responsabilità. La gestione degli indirizzi è una responsabilità distinta che merita la propria astrazione.
 
 
+<<<<<<< .merge_file_aF43rE
+=======
+=======
+>>>>>>> 6ed19256f (.)
+### Principio di Responsabilità Singola
+Ogni modello dovrebbe avere una sola responsabilità. La gestione degli indirizzi è una responsabilità distinta che merita la propria astrazione.
+
+>>>>>>> .merge_file_LzAf3B
 ## Implementazione Tecnica
 
 Il trait `HasAddress` implementa:
@@ -67,7 +90,15 @@ use Modules\Geo\Models\Traits\HasAddress;
 class Studio extends Model
 {
     use HasAddress;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_aF43rE
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_LzAf3B
     // Resto del modello...
 }
 ```

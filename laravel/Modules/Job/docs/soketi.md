@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_hie1R3
 ---
 title: "soketi"
 type: note
@@ -10,6 +11,10 @@ discussions: []
 status: draft
 ---
 
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> .merge_file_vccLdP
 https://github.com/Safemood/REAL-TIME-LARAVEL-9-SOKETI/
 
 https://medium.com/@tthdvd/laravel-reactjs-soketi-triumvirates-step-by-step-guide-to-build-a-real-time-webapp-part-2-f1ed815ec539
@@ -32,13 +37,31 @@ https://aboutyou.tech/blog/setup-and-scale-a-websocket-server-with-laravel/
 
 https://medium.com/@antoine.lame/using-soketi-with-laravel-902ee1e6b7b
 
+<<<<<<< .merge_file_hie1R3
 
 //----------- TESTER 
+=======
+>>>>>>> 6ed19256f (.)
+//----------- TESTER
+>>>>>>> .merge_file_vccLdP
 https://www.piesocket.com/websocket-tester
 
 
 //--------- VIDEO -------------
 https://www.youtube.com/watch?v=mDnsC-sfG7I
+<<<<<<< .merge_file_hie1R3
 
 
 
+=======
+<<<<<<< HEAD
+---
+module: theme
+topic: soketi
+canonical: ../../../Themes/docs/shared-components/soketi.txt
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/soketi.txt
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_vccLdP

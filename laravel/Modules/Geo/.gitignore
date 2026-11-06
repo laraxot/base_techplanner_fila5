@@ -110,6 +110,7 @@ storage/maps/
 *.swp
 # SYSTEM FILES
 test_geo_data.sql
+<<<<<<< .merge_file_RIHAsX
 test-results
 tests/AuditCoverage/
 Thumbs.db
@@ -136,3 +137,32 @@ geo.code-workspace
 # Forbidden parallel documentation archive
 docs/archive/
 *.backup-*
+=======
+
+# ==============================================
+# END OF GEO .GITIGNORE
+# ==============================================
+
+# 🚫 File specifici del progetto
+*.fila2
+laravel
+<<<<<<< HEAD
+public_html
+lang/lang/
+_docs/
+_docs/
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+**/docs/archive/
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+=======
+public_html
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_R489nU

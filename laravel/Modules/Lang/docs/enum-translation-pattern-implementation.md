@@ -225,13 +225,32 @@ return [
 ## Collegamenti
 
 - [Enum Translation Pattern](enum-translation-pattern.md)
+<<<<<<< .merge_file_GKapS1
 - [TableLayoutEnum Guide](../../UI/docs/table-layout-enum-complete-guide.md)
+=======
+<<<<<<< HEAD
+- [TableLayoutEnum Guide](../laravel/modules/ui/docs/table-layout-enum-complete-guide.md)
+>>>>>>> .merge_file_tW8dRy
 - [Translation Management](translation-management.md)
 
 ## Ultimo Aggiornamento
 [DATE] - Implementazione completa regola critica enum translation pattern
+<<<<<<< .merge_file_GKapS1
 - [TableLayoutEnum Guide](../../UI/docs/table-layout-enum-complete-guide.md)
 - [Translation Management](translation-management.md)
 
 ## Ultimo Aggiornamento
 2025-01-27 - Implementazione completa regola critica enum translation pattern
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [TableLayoutEnum Guide](../laravel/Modules/UI/docs/table-layout-enum-complete-guide.md)
+- [Translation Management](translation-management.md)
+
+## Ultimo Aggiornamento
+<<<<<<< HEAD
+2025-01-27 - Implementazione completa regola critica enum translation pattern
+=======
+2025-01-27 - Implementazione completa regola critica enum translation pattern
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_tW8dRy

@@ -136,26 +136,56 @@ public static function getFormSchema(): array
             ->options(fn () => GeoJsonModel::getRegionsForSelect())
             ->reactive()
             ->required(),
+<<<<<<< HEAD
             
         'administrative_area_level_2' => Select::make('administrative_area_level_2')
             ->label('Provincia')
             ->options(fn (callable $get) => 
+<<<<<<< .merge_file_PCad7V
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        'administrative_area_level_2' => Select::make('administrative_area_level_2')
+            ->label('Provincia')
+            ->options(fn (callable $get) =>
+>>>>>>> .merge_file_sR5wJA
                 GeoJsonModel::getProvincesForSelect($get('administrative_area_level_1')))
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_1')),
+<<<<<<< HEAD
             
         'administrative_area_level_3' => Select::make('administrative_area_level_3')
             ->label('Comune')
             ->options(fn (callable $get) => 
+<<<<<<< .merge_file_PCad7V
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        'administrative_area_level_3' => Select::make('administrative_area_level_3')
+            ->label('Comune')
+            ->options(fn (callable $get) =>
+>>>>>>> .merge_file_sR5wJA
                 GeoJsonModel::getComuniForSelect($get('administrative_area_level_2')))
             ->reactive()
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_2')),
+<<<<<<< HEAD
             
         'postal_code' => Select::make('postal_code')
             ->label('CAP')
             ->options(fn (callable $get) => 
+<<<<<<< .merge_file_PCad7V
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        'postal_code' => Select::make('postal_code')
+            ->label('CAP')
+            ->options(fn (callable $get) =>
+>>>>>>> .merge_file_sR5wJA
                 GeoJsonModel::getCapsForSelect($get('administrative_area_level_3')))
             ->required()
             ->disabled(fn (callable $get) => !$get('administrative_area_level_3')),
@@ -183,7 +213,15 @@ Esempio di implementazione:
 public function formatItalianAddress(): string
 {
     $parts = [];
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_PCad7V
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_sR5wJA
     // Nome via e numero civico
     if (!empty($this->route)) {
         $addressLine = $this->route;
@@ -192,31 +230,68 @@ public function formatItalianAddress(): string
         }
         $parts[] = $addressLine;
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_PCad7V
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_sR5wJA
     // CAP, Comune e Provincia
     $locationLine = '';
     if (!empty($this->postal_code)) {
         $locationLine .= $this->postal_code . ' ';
     }
+<<<<<<< HEAD
     
     if (!empty($this->administrative_area_level_3)) {
         $locationLine .= $this->administrative_area_level_3;
         
+<<<<<<< .merge_file_PCad7V
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+    if (!empty($this->administrative_area_level_3)) {
+        $locationLine .= $this->administrative_area_level_3;
+
+>>>>>>> .merge_file_sR5wJA
         // Aggiungi sigla provincia tra parentesi
         if (!empty($this->administrative_area_level_2)) {
             $locationLine .= ' (' . $this->administrative_area_level_2 . ')';
         }
     }
+<<<<<<< HEAD
     
     if (!empty($locationLine)) {
         $parts[] = $locationLine;
     }
     
+<<<<<<< .merge_file_PCad7V
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+    if (!empty($locationLine)) {
+        $parts[] = $locationLine;
+    }
+
+>>>>>>> .merge_file_sR5wJA
     // Paese (se diverso dall'Italia, altrimenti implicito)
     if (!empty($this->country) && strtoupper($this->country) !== 'ITALIA' && strtoupper($this->country_code) !== 'IT') {
         $parts[] = strtoupper($this->country);
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_PCad7V
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_sR5wJA
     return implode("\n", $parts);
 }
 ```
@@ -273,7 +348,15 @@ public function populateFromGoogleComponents(array $components): self
         $types = $component['types'] ?? [];
         $value = $component['long_name'] ?? '';
         $shortValue = $component['short_name'] ?? '';
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_PCad7V
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_sR5wJA
         if (in_array('postal_code', $types)) {
             $this->postal_code = $value;
         } elseif (in_array('administrative_area_level_1', $types)) {
@@ -296,7 +379,15 @@ public function populateFromGoogleComponents(array $components): self
             $this->country_code = $shortValue;
         }
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_PCad7V
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_sR5wJA
     return $this;
 }
 ```
@@ -326,18 +417,38 @@ Esempio di implementazione:
 public function geocode(): bool
 {
     $address = $this->formatItalianAddress();
+<<<<<<< HEAD
     
     // Utilizzo di un servizio di geocodifica
     $result = app(GeocodingService::class)->geocode($address);
     
+<<<<<<< .merge_file_PCad7V
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+    // Utilizzo di un servizio di geocodifica
+    $result = app(GeocodingService::class)->geocode($address);
+
+>>>>>>> .merge_file_sR5wJA
     if ($result && isset($result['latitude'], $result['longitude'])) {
         $this->latitude = $result['latitude'];
         $this->longitude = $result['longitude'];
         $this->save();
+<<<<<<< HEAD
         
         return true;
     }
     
+<<<<<<< .merge_file_PCad7V
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        return true;
+    }
+
+>>>>>>> .merge_file_sR5wJA
     return false;
 }
 ```

@@ -85,9 +85,26 @@ laravel/.ai/guidelines/
 - [Testing Priority Rule](testing-priority-rule.md)
 - [Model Testing Philosophy](model-testing-philosophy.md)
 - [No RefreshDatabase Rule](no-refresh-database-rule.md)
+<<<<<<< .merge_file_KmcEjV
 - [Laraxot Framework](../../Xot/docs/laraxot-framework.md)
+=======
+- [Laraxot Framework](../../laravel/Modules/Xot/docs/laraxot-framework.md)
+
+---
+**Ultimo aggiornamento**: Dicembre 2024
+<<<<<<< HEAD
+- [Laraxot Framework](../../laravel/modules/xot/docs/laraxot-framework.md)
+>>>>>>> .merge_file_dPGChn
 
 ---
 **Versione**: 1.0
 **Compatibilità**: Laraxot <nome progetto>, Architecture Principles
 **Compatibilità**: Laraxot <nome progetto>, Architecture Principles
+<<<<<<< .merge_file_KmcEjV
+=======
+=======
+**Versione**: 1.0
+**Compatibilità**: Laraxot <nome progetto>, Architecture Principles
+**Compatibilità**: Laraxot <nome progetto>, Architecture Principles
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_dPGChn

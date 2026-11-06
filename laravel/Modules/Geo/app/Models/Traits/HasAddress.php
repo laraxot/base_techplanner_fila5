@@ -229,10 +229,15 @@ trait HasAddress
                     }
                 }
 
+<<<<<<< HEAD
         $address = $this->addresses()->create($data);
         Assert::isInstanceOf($address, Address::class);
 
         return $address;
+=======
+        /* @phpstan-ignore return.type */
+        return $this->addresses()->create($data);
+>>>>>>> 6ed19256f (.)
     }
 
     /**

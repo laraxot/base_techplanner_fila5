@@ -141,7 +141,15 @@ class GeoDataService
     public function getCap(string $provinceCode, string $cityCode): ?string
     {
         $cities = $this->getCities($provinceCode);
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_g5sWFh
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_JAO0j3
         $city = collect($cities)
             ->firstWhere('id', $cityCode);
 
@@ -180,7 +188,14 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'province' => Select::make('province')
+<<<<<<< .merge_file_g5sWFh
+=======
+                        ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_JAO0j3
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             $geoService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -191,7 +206,14 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'city' => Select::make('city')
+<<<<<<< .merge_file_g5sWFh
+=======
+                        ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_JAO0j3
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             $geoService->getCities($get('province'))
                         )
                         ->searchable()
@@ -202,7 +224,14 @@ class LocationForm
                         ->selectablePlaceholder(false),
 
                     'cap' => Select::make('cap')
+<<<<<<< .merge_file_g5sWFh
+=======
+                        ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_JAO0j3
                         ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                             collect($geoService->getCities($get('province')))
                                 ->firstWhere('id', $get('city'))['cap']
                         )
@@ -280,6 +309,15 @@ class GeoDataValidator
    - API esterna
 
 ## Collegamenti
+<<<<<<< .merge_file_g5sWFh
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md) 
+=======
+- [Documentazione Squire](../../Geo/project_docs/squire-integration.md)
+- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
+- [Clean Code](../../../project_docs/clean-code.md)
+- [Documentazione Squire](../../geo/project_docs/squire-integration.md)
+- [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
+- [Clean Code](../../../../docs/project/clean-code.md) 
+>>>>>>> .merge_file_JAO0j3

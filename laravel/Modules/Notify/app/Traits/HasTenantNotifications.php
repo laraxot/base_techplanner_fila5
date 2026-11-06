@@ -77,17 +77,32 @@ trait HasTenantNotifications // @phpstan-ignore trait.unused
      */
     public static function bootHasTenantNotifications(): void
     {
+<<<<<<< HEAD
         static::creating(function (Model $model): void {
+<<<<<<< .merge_file_qRqNED
             if (! $model instanceof static) {
                 return;
             }
 
+=======
+=======
+        static::creating(function (Model $model) {
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Qnojs0
             if (! isset($model->tenant_id)) {
                 $model->tenant_id = $model->getTenantId();
             }
         });
 
+<<<<<<< HEAD
         static::addGlobalScope('tenant', function (Builder $builder): void {
+<<<<<<< .merge_file_qRqNED
+=======
+=======
+        static::addGlobalScope('tenant', function (Builder $builder) {
+>>>>>>> 6ed19256f (.)
+            /** @var Model $model */
+>>>>>>> .merge_file_Qnojs0
             $model = $builder->getModel();
 
             if (! $model instanceof static) {

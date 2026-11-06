@@ -62,10 +62,14 @@ return [
         'sort_direction' => [
             'label' => 'Direzione ordinamento',
             'placeholder' => 'Seleziona la direzione',
+<<<<<<< HEAD
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'Direzione dell\'ordinamento (crescente/decrescente)',
+>>>>>>> 6ed19256f (.)
         ],
         'limit' => [
             'label' => 'Limite',
@@ -131,10 +135,17 @@ return [
         'ascii' => 'ASCII',
     ],
     'delimiters' => [
+<<<<<<< HEAD
         'comma' => 'Virgola (,]',
         'semicolon' => 'Punto e virgola (;]',
         'tab' => 'Tab',
         'pipe' => 'Pipe (|]',
+=======
+        'comma' => 'Virgola (,)',
+        'semicolon' => 'Punto e virgola (;)',
+        'tab' => 'Tab',
+        'pipe' => 'Pipe (|)',
+>>>>>>> 6ed19256f (.)
         'space' => 'Spazio',
     ],
     'compression_types' => [

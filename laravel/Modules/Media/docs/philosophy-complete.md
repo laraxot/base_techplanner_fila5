@@ -14,7 +14,14 @@ status: draft
 ---
 # Media - Filosofia Completa: Logica, Religione, Politica, Zen
 
+<<<<<<< .merge_file_mpdQHA
+=======
+**Data Creazione**: 2025-12-23
+<<<<<<< HEAD
+>>>>>>> .merge_file_pIle8r
 **Data Creazione**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -254,8 +261,22 @@ Media::registerMediaConversions(function ($media) {
 
 - [File Management Architecture](./file-management-architecture.md)
 - [Business Logic Overview](./business-logic-overview.md)
+<<<<<<< .merge_file_mpdQHA
+=======
+- [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_pIle8r
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
 
 ---
 
 **Filosofia**: Secure Upload, Smart Storage, Automatic Processing, Simple Access
+<<<<<<< .merge_file_mpdQHA
+=======
+=======
+
+---
+
+**Filosofia**: Secure Upload, Smart Storage, Automatic Processing, Simple Access
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_pIle8r

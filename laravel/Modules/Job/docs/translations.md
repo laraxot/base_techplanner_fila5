@@ -14,8 +14,16 @@ status: draft
 
 ## Collegamenti
 
+<<<<<<< .merge_file_TpkPUY
+=======
+- [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
+- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_qBIWY3
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../xot/docs/translations.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Struttura
 
@@ -67,6 +75,7 @@ return [
 
 ```
 ## Collegamenti tra versioni di translations.md
+<<<<<<< HEAD
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
 * [translations.md](../../Gdpr/docs/translations.md)
@@ -84,11 +93,34 @@ return [
 * [translations.md](../../Activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
+<<<<<<< .merge_file_TpkPUY
+=======
+=======
+>>>>>>> 6ed19256f (.)
+* [translations.md](../../../Chart/docs/translations.md)
+* [translations.md](../../../Reporting/docs/translations.md)
+* [translations.md](../../../Gdpr/docs/translations.md)
+* [translations.md](../../../Notify/docs/translations.md)
+* [translations.md](../../../Xot/docs/roadmap/lang/translations.md)
+* [translations.md](../../../Xot/docs/translations.md)
+* [translations.md](../../../Dental/docs/translations.md)
+* [translations.md](../../../User/docs/translations.md)
+* [translations.md](../../../UI/docs/translations.md)
+* [translations.md](../../../Lang/docs/packages/translations.md)
+* [translations.md](../../../Lang/docs/translations.md)
+* [translations.md](../../../Job/docs/translations.md)
+* [translations.md](../../../Media/docs/translations.md)
+* [translations.md](../../../Tenant/docs/translations.md)
+* [translations.md](../../../Activity/docs/translations.md)
+* [translations.md](../../../Patient/docs/translations.md)
+* [translations.md](../../../Cms/docs/translations.md)
+>>>>>>> .merge_file_qBIWY3
 
 ### Versione Incoming
 
 ```
 
+<<<<<<< .merge_file_TpkPUY
 ---
 title: "translations"
 type: note
@@ -98,3 +130,10 @@ updated: 2026-09-26
 qmd: "translations"
 issues: []
 discussions: []
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_qBIWY3

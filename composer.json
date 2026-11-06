@@ -30,8 +30,11 @@
         "spatie/laravel-schemaless-attributes": "^2.6"
     }
 }
+<<<<<<< .merge_file_p8SDsx
 <<<<<<< .merge_file_caAwNa
 =======
+=======
+>>>>>>> .merge_file_5bhFg7
 =======
 {
     "autoload": {
@@ -54,4 +57,7 @@
     }
 }
 >>>>>>> 6ed19256f (.)
+<<<<<<< .merge_file_p8SDsx
 >>>>>>> .merge_file_kp4OSP
+=======
+>>>>>>> .merge_file_5bhFg7

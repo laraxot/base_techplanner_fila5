@@ -71,4 +71,9 @@ superseded_by: comune-sushi-analisi.md
 
 ---
 
+<<<<<<< .merge_file_jF7Bq2
 Responsabile: Cascade AI
+=======
+**Ultimo aggiornamento:** {{date('Y-m-d')}}
+Responsabile: Cascade AI
+>>>>>>> .merge_file_1iaJb1

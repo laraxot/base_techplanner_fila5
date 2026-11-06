@@ -12,8 +12,16 @@ status: draft
 
 # Analisi AddressResource.php
 
+<<<<<<< .merge_file_ithfeK
+=======
+**Data analisi**: 2025-07-30
+**File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
+<<<<<<< HEAD
+>>>>>>> .merge_file_fMDyfd
 **Data analisi**: [DATE]  
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`  
+=======
+>>>>>>> 6ed19256f (.)
 **Stato**: Analizzato completamente (404 righe)
 
 ## 📋 Panoramica Generale
@@ -115,7 +123,14 @@ Regione → Province → Località → CAP
 ### Modelli Utilizzati
 - `Address` - Modello principale
 - `Region` - Regioni italiane
+<<<<<<< .merge_file_ithfeK
+=======
+- `Province` - Province italiane
+<<<<<<< HEAD
+>>>>>>> .merge_file_fMDyfd
 - `Province` - Province italiane  
+=======
+>>>>>>> 6ed19256f (.)
 - `Locality` - Comuni/Località
 - `Comune` - Importato ma non utilizzato
 

@@ -12,6 +12,7 @@ return [
         ],
         'label' => 'Impostazioni',
         'sort' => 34,
+<<<<<<< HEAD
         'icon' => 'ui-settings',
     ],
     'fields' => [
@@ -21,6 +22,12 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'icon' => 'ui-settings', // Aggiornamento dell'icona delle impostazioni
+    ],
+    'fields' => [
+        'default_map_provider' => 'Provider Mappa Predefinito',
+>>>>>>> 6ed19256f (.)
         'api_keys' => [
             'google_maps' => 'API Key Google Maps',
             'mapbox' => 'API Key Mapbox',

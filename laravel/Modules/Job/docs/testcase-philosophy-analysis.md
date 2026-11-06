@@ -276,8 +276,13 @@ php artisan migrate --env=testing --database=xot --force
 **File:** `laravel/.env.testing`
 
 **Verificare:**
+<<<<<<< HEAD
 - ✅ JOB_DB_DATABASE=<nome progetto>_job_test
 - ✅ XOT_DB_DATABASE=<nome progetto>_xot_test
+=======
+- ✅ JOB_DB_DATABASE=laravelpizza_job_test
+- ✅ XOT_DB_DATABASE=laravelpizza_xot_test
+>>>>>>> 6ed19256f (.)
 - ✅ Connessioni MySQL configurate
 
 ### 4. Aggiornare Documentazione
@@ -314,7 +319,20 @@ Creare:
 
 ---
 
+<<<<<<< .merge_file_QCeBon
+=======
+**Data:** 2026-01-09
+<<<<<<< HEAD
+>>>>>>> .merge_file_hSS5kR
 **Data:** [DATE]
 **Stato:** Analisi Completata - Pronto per Implementazione
 **Vincitore Litigata:** Posizione B (MySQL)
 **Motivazione:** Correttezza > Velocità + Rispetto indicazioni utente
+<<<<<<< .merge_file_QCeBon
+=======
+=======
+**Stato:** Analisi Completata - Pronto per Implementazione
+**Vincitore Litigata:** Posizione B (MySQL)
+**Motivazione:** Correttezza > Velocità + Rispetto indicazioni utente
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_hSS5kR

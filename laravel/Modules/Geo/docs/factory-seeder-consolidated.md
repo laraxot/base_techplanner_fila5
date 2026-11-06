@@ -323,11 +323,25 @@ Ho creato uno script intelligente (`smart_populate_models.php`) che:
 ## 🔗 Collegamenti Documentazione
 
 ### Documentazione Moduli
+<<<<<<< HEAD
 - [<nome progetto> Factory](../modules/<nome progetto>/docs/factory-issues-analysis.md)
 - [<nome progetto> Factory](../modules/<nome progetto>/docs/factory-issues-analysis.md)
+<<<<<<< .merge_file_3YqEaZ
 - [User Factory](../../User/docs/factory-audit-lessons-learned.md)
 - [Geo Factory](factory-creation-geo-module.md)
 - [Media Factory](../../Media/docs/README.md)
+=======
+- [User Factory](../modules/user/docs/factory-audit-lessons-learned.md)
+- [Geo Factory](../modules/geo/docs/factory-creation-geo-module.md)
+- [Media Factory](../modules/media/docs/readme.md)
+=======
+>>>>>>> 6ed19256f (.)
+- [<nome progetto> Factory](../Modules/<nome progetto>/docs/factory-issues-analysis.md)
+- [<nome progetto> Factory](../Modules/<nome progetto>/docs/factory-issues-analysis.md)
+- [User Factory](../Modules/User/docs/factory-audit-lessons-learned.md)
+- [Geo Factory](../Modules/Geo/docs/factory-creation-geo-module.md)
+- [Media Factory](../Modules/Media/docs/README.md)
+>>>>>>> .merge_file_FQQnVS
 
 ### Documentazione Tecnica
 - [Business Logic](../business-logic-consolidated.md)

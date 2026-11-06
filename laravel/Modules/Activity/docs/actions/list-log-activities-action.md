@@ -64,11 +64,7 @@ $panel = Filament::getCurrentPanel(); // ❌ CLASSE NON ESISTENTE
 return $resource::getUrl('log-activity', ['record' => $record], panel: $panelId);
 ```
 
-<<<<<<< HEAD
 Vedi [Filament 4 Important Notes](../../../../../../docs/filament4-important.md) per dettagli completi.
-=======
-Vedi [Filament 4 Important Notes](../../../../../docs/filament4-important.md) per dettagli completi.
->>>>>>> 6ed19256f (.)
 
 ### Metodi Principali
 
@@ -303,8 +299,4 @@ it('navigates to correct activities page', function () {
 - [Performance Module Integration](../../performance/docs/activity-integration.md)
 - [User Module Integration](../../user/docs/activity-integration.md)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: Sistema di documentazione automatica*
-=======
-*Ultimo aggiornamento: Sistema di documentazione automatica*
->>>>>>> 6ed19256f (.)

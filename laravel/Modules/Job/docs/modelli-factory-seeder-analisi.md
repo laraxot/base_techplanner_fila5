@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "modelli factory seeder analisi"
 type: note
@@ -15,3 +16,10 @@ superseded_by: filament-4x-compatibility.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
+<<<<<<< .merge_file_JYC3x9
+=======
+=======
+
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_j2GHts

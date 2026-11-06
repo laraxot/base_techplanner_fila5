@@ -196,10 +196,24 @@ Una migrazione a Laravel Sushi potrebbe essere riconsiderata, con un costo di co
 
 ## Collegamenti a Documentazione Correlata
 
+<<<<<<< .merge_file_9RANCX
+=======
+- [Modulo Core: Architettura](../../Xot/docs/module-architecture.md)
+- [Best Practices per i Modelli](../../Xot/docs/model-best-practices.md)
+- [Pattern di Data Access](../../Xot/docs/data-access-patterns.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_m6YG4c
 - [Modulo Core: Architettura](../../xot/docs/module-architecture.md)
 - [Best Practices per i Modelli](../../xot/docs/model-best-practices.md)
 - [Pattern di Data Access](../../xot/docs/data-access-patterns.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Laravel Sushi GitHub](https://github.com/calebporzio/sushi)
 
 ---
+<<<<<<< .merge_file_9RANCX
 *Documento creato il: 27/05/2025*
+=======
+
+*Documento creato il: 27/05/2025*
+>>>>>>> .merge_file_m6YG4c

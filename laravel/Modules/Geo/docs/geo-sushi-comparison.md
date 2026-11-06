@@ -83,6 +83,7 @@ status: draft
 ---
 
 ## 5. Collegamenti e approfondimenti
+<<<<<<< HEAD
 - [Geo/project_docs/geo-json-model.md](geo-json-model.md)
 - [Sushi - usesushi.dev](https://usesushi.dev/)
 - [Squire PHP](https://github.com/squirephp/squire)
@@ -92,3 +93,18 @@ status: draft
 ---
 
 Responsabile: Cascade AI 
+<<<<<<< .merge_file_4fq44f
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [geo-json-model.md](geo-json-model.md)
+- [Sushi - usesushi.dev](https://usesushi.dev/)
+- [Squire PHP](https://github.com/squirephp/squire)
+- [Xot/docs/module-structure.md](../../Xot/docs/module-structure.md)
+- [<main module>/docs/geo-integration.md](../../<main module>/docs/geo-integration.md)
+
+---
+
+**Ultimo aggiornamento:** 2025-01-15
+Responsabile: Antigravity
+>>>>>>> .merge_file_QSj6fi

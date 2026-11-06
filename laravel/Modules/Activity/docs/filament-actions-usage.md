@@ -247,11 +247,7 @@ Il modulo include test per:
 
 **Eseguire i test**:
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/ptvx/laravel
->>>>>>> 6ed19256f (.)
 php artisan test --filter=ListLogActivitiesAction
 ```
 
@@ -356,28 +352,18 @@ class ListMyModelActivities extends ListLogActivities
 
 ### Documentazione Interna
 - [README Activity Module](../README.md)
-<<<<<<< .merge_file_WvAhYw
 - [README Activity Module](../README.md)
-=======
-<<<<<<< HEAD
-- [README Activity Module](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_eKThRB
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 
 ### Regole e Convenzioni
 - [Filament Custom Actions Rules](../../../.cursor/rules/filament-custom-actions.mdc)
-<<<<<<< HEAD
 - [Translation Best Practices](../../xot/docs/translation-best-practices.md)
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md)
 
 ### Moduli Correlati
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 - [Xot - Filament Base Components](../../xot/docs/filament/readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Translation Best Practices](../../Xot/docs/translation-best-practices.md)
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
 
@@ -389,8 +375,4 @@ class ListMyModelActivities extends ListLogActivities
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Pattern**: DRY + KISS per Actions riutilizzabili
-<<<<<<< HEAD
 **Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite
-=======
-**Conformità**: ✅ PHPStan livello 9+, ✅ Pint, ✅ Test Suite
->>>>>>> 6ed19256f (.)

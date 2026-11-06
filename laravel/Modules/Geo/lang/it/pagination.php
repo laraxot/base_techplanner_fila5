@@ -145,6 +145,7 @@ return [
         'offset' => 'Offset',
     ],
     'per_page_options' => [
+<<<<<<< HEAD
         10 => '10 per pagina',
         25 => '25 per pagina',
         50 => '50 per pagina',
@@ -152,6 +153,15 @@ return [
         250 => '250 per pagina',
         500 => '500 per pagina',
         1000 => '1000 per pagina',
+=======
+        '10' => '10 per pagina',
+        '25' => '25 per pagina',
+        '50' => '50 per pagina',
+        '100' => '100 per pagina',
+        '250' => '250 per pagina',
+        '500' => '500 per pagina',
+        '1000' => '1000 per pagina',
+>>>>>>> 6ed19256f (.)
     ],
     'pagination_controls' => [
         'first' => 'Prima',

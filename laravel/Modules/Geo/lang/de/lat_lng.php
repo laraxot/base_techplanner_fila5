@@ -10,6 +10,7 @@ return [
         'sort' => '30',
     ],
     'fields' => [
+<<<<<<< HEAD
         'latitude' => [
             'label' => 'Latitudine',
             'tooltip' => '',
@@ -22,6 +23,10 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'latitude' => 'Latitudine',
+        'longitude' => 'Longitudine',
+>>>>>>> 6ed19256f (.)
     ],
     'actions' => [
         'select_position' => 'Seleziona Posizione',
@@ -31,8 +36,10 @@ return [
         'coordinates_updated' => 'Coordinate aggiornate con successo',
         'invalid_coordinates' => 'Coordinate non valide',
     ],
+<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+<<<<<<< .merge_file_D84iMT
     'widget' => [
         'locating' => [
             'label' => 'Standort wird ermittelt...',
@@ -53,4 +60,8 @@ return [
             'label' => 'Fehlermeldung',
         ],
     ],
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_HFUplu
 ];

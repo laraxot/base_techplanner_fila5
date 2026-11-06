@@ -30,6 +30,7 @@ use Override;
  * @property Carbon|null $cancelled_at
  * @property Carbon $created_at
  * @property Carbon|null $finished_at
+ *
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -54,10 +55,20 @@ use Override;
  */
 class JobBatch extends BaseModel
 {
+<<<<<<< .merge_file_7UriI8
     public const ?string UPDATED_AT = null;
 
+=======
+<<<<<<< HEAD
     public $incrementing = false;
 
+=======
+    /** @var bool */
+>>>>>>> .merge_file_vHiQiU
+    public $incrementing = false;
+
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $keyType = 'string';
 
     protected $fillable = [

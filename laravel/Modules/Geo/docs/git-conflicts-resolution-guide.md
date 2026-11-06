@@ -359,12 +359,34 @@ git log --oneline --grep="conflict" | head -20
 ## Collegamenti
 
 - [Architettura Testing Principale](testing-architecture-overview.md)
+<<<<<<< .merge_file_5kFgD3
 - [Modulo Geo Testing](testing.md)
+=======
+<<<<<<< HEAD
+- [Modulo Geo Testing](../../laravel/modules/geo/docs/testing.md)
+>>>>>>> .merge_file_Hmgyyk
 - [Modulo <nome modulo> Testing](../../laravel/modules/<nome modulo>/docs/testing-architecture.md)
 - [Best Practices Testing](../../laravel/modules/<nome modulo>/docs/testing-best-practices.md)
 - [Modulo <nome progetto> Testing](../../laravel/modules/<nome progetto>/docs/testing-architecture.md)
 - [Best Practices Testing](../../laravel/modules/<nome progetto>/docs/testing-best-practices.md)
 
 ---
+<<<<<<< .merge_file_5kFgD3
 **Versione**: 1.0
 **Compatibilità**: Git 2.x+, Laravel 12.x, PHP 8.3+
+=======
+
+=======
+>>>>>>> 6ed19256f (.)
+- [Modulo Geo Testing](../../laravel/Modules/Geo/docs/testing.md)
+- [Modulo <nome modulo> Testing](../../laravel/Modules/<nome modulo>/docs/testing-architecture.md)
+- [Best Practices Testing](../../laravel/Modules/<nome modulo>/docs/testing-best-practices.md)
+- [Modulo <nome progetto> Testing](../../laravel/Modules/<nome progetto>/docs/testing-architecture.md)
+- [Best Practices Testing](../../laravel/Modules/<nome progetto>/docs/testing-best-practices.md)
+
+---
+
+**Ultimo aggiornamento**: Gennaio 2025
+**Versione**: 1.0
+**Compatibilità**: Git 2.x+, Laravel 12.x, PHP 8.3+
+>>>>>>> .merge_file_Hmgyyk

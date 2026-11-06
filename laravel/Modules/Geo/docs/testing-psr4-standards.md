@@ -270,8 +270,23 @@ Prima di committare file di test:
 
 ## Collegamenti ai Moduli
 
+<<<<<<< .merge_file_Aa9zTA
 - [Testing PSR-4 Compliance - Modulo Xot](../../Xot/docs/testing-psr4-compliance.md)
 - [Testing Guide - Modulo <nome modulo>](../modules/<nome modulo>/docs/testing.md)
 
 ---
 *Standard: PSR-4, PHPStan livello 9+, Laraxot conventions*
+=======
+- [Testing PSR-4 Compliance - Modulo Xot](../modules/xot/docs/testing-psr4-compliance.md)
+- [Testing Guide - Modulo <nome modulo>](../modules/<nome modulo>/docs/testing.md)
+
+---
+
+- [Testing PSR-4 Compliance - Modulo Xot](../Modules/Xot/docs/testing-psr4-compliance.md)
+- [Testing Guide - Modulo <nome modulo>](../Modules/<nome modulo>/docs/testing.md)
+
+---
+
+*Ultimo aggiornamento: 2025-01-06*
+*Standard: PSR-4, PHPStan livello 9+, Laraxot conventions*
+>>>>>>> .merge_file_T3hd2q

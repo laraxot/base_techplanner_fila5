@@ -12,7 +12,14 @@ status: draft
 
 # 🐄 DRY & KISS Analysis - Geo
 
+<<<<<<< .merge_file_rEUlWU
+=======
+**Data:** 2025-10-15 | **Status:** ✅
+<<<<<<< HEAD
+>>>>>>> .merge_file_3VnwEC
 **Data:** [DATE] | **Status:** ✅
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 📊 Struttura
 Models: 21 | Resources: 2 | Services: 6 | Actions: 40 🟡 | Docs: 212 🟡

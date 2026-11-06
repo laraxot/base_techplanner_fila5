@@ -1,0 +1,186 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Job\Tests;
+
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+<<<<<<< .merge_file_Nw5xUG
+use Illuminate\Support\Facades\DB;
+=======
+<<<<<<< HEAD
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+>>>>>>> .merge_file_ualbMg
+use Modules\Job\Providers\JobServiceProvider;
+use Modules\User\Models\User;
+use Modules\User\Providers\UserServiceProvider;
+use Modules\Xot\Tests\XotBaseTestCase;
+use PHPUnit\Framework\Assert;
+
+/**
+ * Base test case for Job module.
+ *
+ * Uses MySQL from .env.testing.
+ * All module connections are mapped by TenantServiceProvider.
+ * Migrations must be run ONCE externally: php artisan migrate --env=testing
+ * DatabaseTransactions handles rollback between tests.
+=======
+use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Illuminate\Support\Facades\Schema;
+use Modules\Job\Providers\JobServiceProvider;
+use Modules\Xot\Tests\CreatesApplication;
+
+/**
+ * Base test case for Job module tests.
+ *
+ * Philosophy: RESPECT .env.testing - DON'T override it!
+ *
+ * This TestCase follows the unified testing philosophy:
+ * - Trusts .env.testing configuration (single source of truth)
+ * - Uses migrations instead of manual Schema::create()
+ * - Minimal code - inherits behavior from XotBase
+ * - DRY + KISS principles
+ *
+ * @see Modules/Xot/docs/testing-philosophy-unified.md
+ * @see Modules/Job/docs/testing-philosophy-refactor.md
+ *
+ * Database Configuration:
+ * - .env.testing defines JOB_DB_* variables
+ * - config/database.php defines 'job' connection
+ * - This TestCase just runs migrations - no hardcoded config!
+ *
+ * From 192 lines to 39 lines. This is the way.
+>>>>>>> 6ed19256f (.)
+ */
+abstract class TestCase extends XotBaseTestCase
+{
+    use DatabaseTransactions;
+
+<<<<<<< .merge_file_Nw5xUG
+    /** @var list<string> */
+    protected $connectionsToTransact = ['job', 'sqlite', 'xot', 'user'];
+
+    /**
+     * Action instance under test.
+     *
+     * @var mixed Must stay `mixed`: overrides XotBaseTestCase::$action (property types are invariant).
+     */
+    public mixed $action = null;
+
+    /**
+     * @return array<int, class-string>
+     */
+    protected function getPackageProviders(Application $app): array
+=======
+<<<<<<< HEAD
+    protected function getPackageProviders($app): array
+>>>>>>> .merge_file_ualbMg
+    {
+        return [
+            ...parent::getPackageProviders($app),
+            UserServiceProvider::class,
+            JobServiceProvider::class,
+        ];
+=======
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        foreach (['job', 'xot'] as $connection) {
+            $driver = config("database.connections.{$connection}.driver");
+            if (!\is_string($driver) || $driver === '') {
+                $this->markTestSkipped('Missing database connection: '.$connection.' (expected from .env.testing)');
+            }
+
+            if ($driver !== 'mysql') {
+                $this->markTestSkipped('Invalid DB driver for connection '.$connection.': '.$driver.' (expected mysql from .env.testing)');
+            }
+        }
+
+        if (!Schema::connection('job')->hasTable('jobs')) {
+            $this->markTestSkipped('Missing jobs table on connection job. Run migrations on test DBs configured in .env.testing.');
+        }
+
+        if (!Schema::connection('xot')->hasTable('tasks') || !Schema::connection('xot')->hasTable('results')) {
+            $this->markTestSkipped('Missing Job module tables (tasks/results) on connection xot. Run module migrations on test DBs configured in .env.testing.');
+        }
+    }
+
+    /**
+     * @return array<int, class-string>
+     */
+    protected function getPackageProviders(Application $app): array
+    {
+        return [JobServiceProvider::class];
+>>>>>>> 6ed19256f (.)
+    }
+
+    protected function setUp(): void
+    {
+        parent::setUp();
+
+        $database = self::sharedSqlitePath();
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            if (config("database.connections.{$connection}.driver") !== 'sqlite') {
+                continue;
+            }
+
+            $this->app['config']->set("database.connections.{$connection}.database", $database);
+            DB::purge($connection);
+        }
+
+        config(['auth.providers.users.model' => User::class]);
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseHasRow(string $table, array $data, ?string $connection = null): void
+    {
+        $this->assertDatabaseHas($table, $data, $connection);
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     */
+    public function assertDatabaseMissingRow(string $table, array $data, ?string $connection = null): void
+    {
+        $query = DB::connection($connection)->table($table);
+
+        foreach ($data as $column => $value) {
+            $query->where((string) $column, $value);
+        }
+
+        Assert::assertFalse($query->exists());
+    }
+
+    /**
+     * @template T of object
+     *
+     * @param  class-string<T>  $class
+     * @return T
+     */
+    public function getAction(string $class): object
+    {
+        Assert::assertInstanceOf($class, $this->action);
+
+        return $this->action;
+    }
+
+    /**
+     * @param  class-string<\Throwable>  $exceptionClass
+     */
+    public function expectApplicationException(string $exceptionClass, ?string $message = null): void
+    {
+        $this->expectException($exceptionClass);
+        if ($message !== null) {
+            $this->expectThrowableMessage($message);
+        }
+    }
+}

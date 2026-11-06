@@ -4,12 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+use Modules\TechPlanner\Models\Profile;
+use Modules\Employee\Database\Factories\DepartmentFactory;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
+<<<<<<< HEAD
 use Modules\Employee\Database\Factories\DepartmentFactory;
+<<<<<<< .merge_file_D45e6L
 use Modules\Xot\Contracts\ProfileContract;
+=======
+use Modules\TechPlanner\Models\Profile;
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_DpJYkm
 
 /**
  * Class Department.
@@ -23,10 +32,19 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property Carbon|null $updated_at
  * @property-read Collection<int, Employee> $employees
  * @property-read int|null $employees_count
+<<<<<<< .merge_file_D45e6L
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $deleter
  * @property-read ProfileContract|null $updater
+=======
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $deleter
+ * @property-read Profile|null $updater
+<<<<<<< HEAD
+>>>>>>> .merge_file_DpJYkm
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static DepartmentFactory factory($count = null, $state = [])
  * @method static Builder<static>|Department newModelQuery()
  * @method static Builder<static>|Department newQuery()

@@ -574,6 +574,11 @@ Address::whereIn('model_type', [Ticket::class, Client::class])
 Ticket::with('addresses')->inCity('Milano')->get();
 ```
 
+<<<<<<< .merge_file_V1ZGaJ
+=======
+By leveraging these MCPs, the `Geo` module can ensure its critical role in managing geographical data is more efficient, verifiable, and transparent, ultimately contributing to more accurate and reliable location-aware applications.
+<<<<<<< HEAD
+>>>>>>> .merge_file_yocvK9
 ---
 
 ## FALSE FRIENDS
@@ -1047,7 +1052,13 @@ Welcome to the geographic heart of FixCity.
 
 ---
 
+<<<<<<< .merge_file_V1ZGaJ
 **Version**: 2.0  
 **Last Updated**: 2026-09-06  
 **Maintainer**: FixCity Geo Team  
 **License**: By the module's license (check LICENSE file)  
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/philosophy.md
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_yocvK9

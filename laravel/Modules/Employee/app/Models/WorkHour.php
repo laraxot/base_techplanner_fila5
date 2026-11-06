@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+use Modules\Employee\Database\Factories\WorkHourFactory;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
@@ -19,7 +20,11 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property int $id
  * @property int $employee_id
+<<<<<<< HEAD
  * @property WorkHourTypeEnum $type
+=======
+ * @property string $type
+>>>>>>> 6ed19256f (.)
  * @property Carbon $timestamp
  * @property float|null $location_lat
  * @property float|null $location_lng
@@ -27,7 +32,11 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property array<string, mixed>|null $device_info
  * @property string|null $photo_path
  * @property string|null $notes
+<<<<<<< HEAD
  * @property WorkHourStatusEnum $status
+=======
+ * @property string $status
+>>>>>>> 6ed19256f (.)
  * @property int|null $approved_by
  * @property Carbon|null $approved_at
  * @property Carbon|null $created_at
@@ -38,8 +47,15 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read string $formatted_date
  * @property-read string $formatted_date_time
  * @property-read string $formatted_time
+<<<<<<< .merge_file_k7Ft75
  * @property-read ProfileContract|null $updater
+=======
+ * @property-read Profile|null $updater
+<<<<<<< HEAD
+>>>>>>> .merge_file_sNqu1y
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|WorkHour forDate(\Carbon\Carbon $date)
  * @method static Builder<static>|WorkHour forEmployee(int $employeeId)
  * @method static Builder<static>|WorkHour newModelQuery()
@@ -62,11 +78,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|WorkHour whereTimestamp($value)
  * @method static Builder<static>|WorkHour whereType($value)
  * @method static Builder<static>|WorkHour whereUpdatedAt($value)
+<<<<<<< HEAD
  *
  * @property-read ProfileContract|null $deleter
  *
  * @method static WorkHourFactory factory($count = null, $state = [])
  *
+=======
+ * @property-read Profile|null $deleter
+ * @method static WorkHourFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class WorkHour extends BaseModel

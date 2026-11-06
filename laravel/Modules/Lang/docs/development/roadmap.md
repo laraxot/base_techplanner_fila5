@@ -39,9 +39,15 @@ status: draft
 - [x] API endpoints
 - [x] Cache system
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./PHILOSOPHY.md))
+<<<<<<< HEAD
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./philosophy.md))
+<<<<<<< .merge_file_W2rClU
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](../lang-service-provider.md), [PHILOSOPHY.md](./PHILOSOPHY.md))
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](../lang-service-provider.md), [PHILOSOPHY.md](./philosophy.md))
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_oykFEd
 
 ### In Progress (50%)
 - [ ] Performance optimization
@@ -175,7 +181,11 @@ I risultati completi sono disponibili nella cartella [docs/phpstan](phpstan/).
 
 ### Obiettivi di Qualità
 
+<<<<<<< HEAD
 Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi per l'analisi PHPStan sono:
+=======
+Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'analisi PHPStan sono:
+>>>>>>> 6ed19256f (.)
 
 - Iniziare dal livello 1 per i nuovi moduli
 - Assicurarsi che tutto il codice passi almeno il livello 5
@@ -349,7 +359,10 @@ Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi 
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
 - [Best Practices](BEST-PRACTICES.md)
+<<<<<<< HEAD
 - [Best Practices](best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Testing](testing.md)
 
 ### Versione HEAD
@@ -359,6 +372,7 @@ Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi 
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
+<<<<<<< HEAD
 * [roadmap.md](../../../gdpr/docs/roadmap.md)
 * [roadmap.md](../../../notify/docs/roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)
@@ -387,6 +401,8 @@ Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi 
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)
 * [roadmap.md](../../../Xot/docs/roadmap.md)
@@ -402,4 +418,12 @@ Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi 
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
 
+<<<<<<< .merge_file_W2rClU
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_oykFEd

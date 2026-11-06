@@ -46,6 +46,7 @@ abstract class BaseModel extends XotBaseModel
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
+<<<<<<< .merge_file_q050RI
 title: "dry kiss analysis conflict"
 type: note
 tags: [documentation]
@@ -55,3 +56,7 @@ qmd: "dry kiss analysis conflict"
 issues: []
 discussions: []
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
+=======
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+[DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
+>>>>>>> .merge_file_tBhHgw

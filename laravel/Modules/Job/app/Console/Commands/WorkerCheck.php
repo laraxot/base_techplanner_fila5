@@ -10,19 +10,29 @@ namespace Modules\Job\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Storage;
+<<<<<<< .merge_file_8dPDH8
 use Modules\Job\Actions\BuildQueueWorkerCommandAction;
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_WS8S4a
 
+=======
+>>>>>>> 6ed19256f (.)
 use function Safe\exec;
 
 class WorkerCheck extends Command
 {
     /**
      * The name and signature of the console command.
+     *
+     * @var string
      */
     protected $signature = 'worker:check';
 
     /**
      * The console command description.
+     *
+     * @var string
      */
     protected $description = 'Ensure that the queue listener is running.';
 

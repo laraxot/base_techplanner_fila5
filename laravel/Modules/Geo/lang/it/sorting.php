@@ -15,10 +15,14 @@ return [
         'direction' => [
             'label' => 'Direzione',
             'placeholder' => 'Seleziona la direzione dell\'ordinamento',
+<<<<<<< HEAD
             'help' => 'Direzione dell\'ordinamento (crescente/decrescente]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'Direzione dell\'ordinamento (crescente/decrescente)',
+>>>>>>> 6ed19256f (.)
         ],
         'priority' => [
             'label' => 'Priorità',
@@ -146,10 +150,17 @@ return [
     'sorting_directions' => [
         'asc' => 'Crescente',
         'desc' => 'Decrescente',
+<<<<<<< HEAD
         'asc_nulls_first' => 'Crescente (nulli prima]',
         'asc_nulls_last' => 'Crescente (nulli dopo]',
         'desc_nulls_first' => 'Decrescente (nulli prima]',
         'desc_nulls_last' => 'Decrescente (nulli dopo]',
+=======
+        'asc_nulls_first' => 'Crescente (nulli prima)',
+        'asc_nulls_last' => 'Crescente (nulli dopo)',
+        'desc_nulls_first' => 'Decrescente (nulli prima)',
+        'desc_nulls_last' => 'Decrescente (nulli dopo)',
+>>>>>>> 6ed19256f (.)
     ],
     'nulls_positions' => [
         'first' => 'Prima',
@@ -157,11 +168,19 @@ return [
         'ignore' => 'Ignora',
     ],
     'sorting_priorities' => [
+<<<<<<< HEAD
         1 => 'Molto bassa',
         2 => 'Bassa',
         3 => 'Media',
         4 => 'Alta',
         5 => 'Molto alta',
+=======
+        '1' => 'Molto bassa',
+        '2' => 'Bassa',
+        '3' => 'Media',
+        '4' => 'Alta',
+        '5' => 'Molto alta',
+>>>>>>> 6ed19256f (.)
     ],
     'sorting_types' => [
         'simple' => 'Semplice',

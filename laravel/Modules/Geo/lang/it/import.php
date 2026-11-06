@@ -7,10 +7,14 @@ return [
         'file' => [
             'label' => 'File',
             'placeholder' => 'Seleziona il file da importare',
+<<<<<<< HEAD
             'help' => 'File da importare (CSV, Excel, GeoJSON, Shapefile]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'File da importare (CSV, Excel, GeoJSON, Shapefile)',
+>>>>>>> 6ed19256f (.)
         ],
         'format' => [
             'label' => 'Formato',
@@ -130,6 +134,7 @@ return [
         'ascii' => 'ASCII',
     ],
     'delimiters' => [
+<<<<<<< HEAD
         'comma' => 'Virgola (,]',
         'semicolon' => 'Punto e virgola (;]',
         'tab' => 'Tab',
@@ -160,4 +165,12 @@ return [
             'label' => 'Elimina Import',
         ],
     ],
+=======
+        'comma' => 'Virgola (,)',
+        'semicolon' => 'Punto e virgola (;)',
+        'tab' => 'Tab',
+        'pipe' => 'Pipe (|)',
+        'space' => 'Spazio',
+    ],
+>>>>>>> 6ed19256f (.)
 ];

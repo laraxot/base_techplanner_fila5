@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 return [
     'article' => 'Modules\Blog\Models\Article',
     'banner' => 'Modules\Blog\Models\Banner',
@@ -15,8 +14,6 @@ return [
     'survey_pdf' => 'Modules\Quaeris\Models\SurveyPdf',
     'user' => 'Modules\User\Models\User',
 ];
-=======
->>>>>>> 6ed19256f (.)
  return array (
   'article' => 'Modules\Blog\Models\Article',
   'banner' => 'Modules\Blog\Models\Banner',
@@ -30,8 +27,4 @@ return [
   'rating' => 'Modules\Rating\Models\Rating',
   'survey_pdf' => 'Modules\Quaeris\Models\SurveyPdf',
   'user' => 'Modules\User\Models\User',
-<<<<<<< HEAD
 );
-=======
-);
->>>>>>> 6ed19256f (.)

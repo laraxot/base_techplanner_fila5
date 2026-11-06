@@ -94,17 +94,8 @@ test('translations exist and are structured', function (): void {
 });
 
 test('views exist and are valid', function (): void {
-<<<<<<< .merge_file_uKapcC
     $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
     Assert::assertTrue(file_exists($viewPath));
-=======
-<<<<<<< HEAD
-    $viewPath = base_path('Modules/Activity/resources/views/filament/list-log-activities.blade.php');
-=======
-    $viewPath = base_path('Modules/Activity/resources/views/filament/pages/list-log-activities.blade.php');
->>>>>>> 6ed19256f (.)
-    expect(file_exists($viewPath))->toBeTrue();
->>>>>>> .merge_file_SOjoXO
 
     $viewContent = file_get_contents($viewPath);
     Assert::assertStringContainsString('getActivities()', $viewContent);

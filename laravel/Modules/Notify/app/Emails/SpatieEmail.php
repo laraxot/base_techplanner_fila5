@@ -16,23 +16,37 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\MetatagData;
 use Modules\Xot\Datas\XotData;
 use Mustache_Engine;
+<<<<<<< HEAD
+=======
+use function Safe\file_get_contents;
+>>>>>>> 6ed19256f (.)
 use Spatie\MailTemplates\Interfaces\MailTemplateInterface;
 use Spatie\MailTemplates\TemplateMailable;
 use Symfony\Component\Mime\MimeTypes;
 use Webmozart\Assert\Assert;
 
+<<<<<<< HEAD
 use function Safe\file_get_contents;
 
+=======
+>>>>>>> 6ed19256f (.)
 /**
  * @see https://github.com/spatie/laravel-database-mail-templates
  */
 class SpatieEmail extends TemplateMailable
 {
+<<<<<<< HEAD
     public string $slug;
 
     /** @var array<string, mixed> */
     public array $data = [];
 
+=======
+
+    public string $slug;
+
+    public array $data = [];
+>>>>>>> 6ed19256f (.)
     // use our custom mail template model
     /** @var class-string<MailTemplateInterface> */
     protected static $templateModelClass = MailTemplate::class;
@@ -132,7 +146,11 @@ class SpatieEmail extends TemplateMailable
      */
     public function envelope(): Envelope
     {
+<<<<<<< HEAD
         $envelope = new Envelope;
+=======
+        $envelope = new Envelope();
+>>>>>>> 6ed19256f (.)
 
         // Set the recipient if available
         if ($this->recipient) {
@@ -246,14 +264,22 @@ class SpatieEmail extends TemplateMailable
 
         foreach ($attachments as $item) {
             $attachment = null;
+<<<<<<< .merge_file_yJFfY0
             $path = $item['path'] ?? null;
             if (is_string($path) && $path !== '' && file_exists($path)) {
+=======
+            if (isset($item['path']) && file_exists($item['path'])) {
+<<<<<<< HEAD
+>>>>>>> .merge_file_uIYVJR
                 /** @var array{path: string, as?: string, mime?: string} $pathAttachment */
                 $pathAttachment = [
                     'path' => $path,
                     'as' => $item['as'] ?? null,
                     'mime' => $item['mime'] ?? null];
                 $attachment = $this->getAttachmentFromPath($pathAttachment);
+=======
+                $attachment = $this->getAttachmentFromPath($item);
+>>>>>>> 6ed19256f (.)
             }
 
             if ($attachment === null && isset($item['data'])) {
@@ -282,13 +308,20 @@ class SpatieEmail extends TemplateMailable
 
     public function buildSms(): string
     {
+<<<<<<< HEAD
+=======
+        /*@phpstan-ignore method.notFound */
+>>>>>>> 6ed19256f (.)
         /** @var MailTemplate $mailTemplate */
         $mailTemplate = $this->getMailTemplate();
         $sms_template = $mailTemplate->sms_template;
         /** @var string $smsTemplateString */
         $smsTemplateString = app(SafeStringCastAction::class)->execute($sms_template);
         $mustache = app(Mustache_Engine::class);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
         return $mustache->render($smsTemplateString, $this->data);
     }
 

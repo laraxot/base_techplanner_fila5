@@ -57,7 +57,15 @@ public static function getFormSchema(): array
 {
     return [
         // Altri campi specifici dello Studio
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_ZpTF05
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gvg7Ey
         'addresses' => Forms\Components\Repeater::make('addresses')
             ->relationship('addresses')
             ->schema(AddressResource::getFormSchema()),

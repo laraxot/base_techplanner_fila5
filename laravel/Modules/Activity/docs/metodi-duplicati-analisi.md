@@ -202,11 +202,8 @@ _Report generato automaticamente: fonte: `/tmp/metodi_duplicati_domain_report.md
 **Powered by**: Super Mucca AI 🐄✨
 **Data**: 15 Ottobre 2025
 **Versione**: 2.0 ULTIMATE
-<<<<<<< HEAD
 **Powered by**: Super Mucca AI 🐄✨  
 **Versione**: 2.0 ULTIMATE  
-=======
->>>>>>> 6ed19256f (.)
 **Confidenza**: 99.9% (Dati Reali dal Codice)
 
 ---
@@ -247,10 +244,7 @@ abstract class BaseModel extends XotBaseModel
 #### Blog BaseModel (BEN FATTO)
 ```php
 // File: Modules/Blog/app/Models/BaseModel.php
-<<<<<<< HEAD
 // File: Modules/Blog/app/Models/BaseModel.php  
-=======
->>>>>>> 6ed19256f (.)
 // Linee: 46
 abstract class BaseModel extends XotBaseModel implements HasMedia
 {
@@ -259,12 +253,9 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 
     protected $connection = 'blog';
 
-<<<<<<< HEAD
     
     protected $connection = 'blog';
     
-=======
->>>>>>> 6ed19256f (.)
     protected function casts(): array
     {
         return array_merge(parent::casts(), [  // ✅ CORRETTO
@@ -285,12 +276,9 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 
     protected $connection = 'user';
 
-<<<<<<< HEAD
     
     protected $connection = 'user';
     
-=======
->>>>>>> 6ed19256f (.)
     protected function casts(): array
     {
         return array_merge(parent::casts(), [  // ✅ CORRETTO
@@ -319,11 +307,8 @@ abstract class BaseModel extends \Modules\Xot\Models\XotBaseModel
 
 **Media Linee**: 57.8 linee
 **Target Ottimale**: 25-50 linee
-<<<<<<< HEAD
 **Media Linee**: 57.8 linee  
 **Target Ottimale**: 25-50 linee  
-=======
->>>>>>> 6ed19256f (.)
 **Conformità**: 80% dei moduli sono OTTIMALI ✅
 
 ---
@@ -423,12 +408,8 @@ class ColumnBuilder
             ->searchable()
             ->label('ID');
     }
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Standard name column
      */
@@ -438,12 +419,8 @@ class ColumnBuilder
             ->searchable($searchable)
             ->sortable();
     }
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Status badge column with standard colors
      */
@@ -455,22 +432,14 @@ class ColumnBuilder
             'success' => 'resolved',
             'secondary' => 'closed',
         ];
-<<<<<<< HEAD
         
         
-=======
-
->>>>>>> 6ed19256f (.)
         return TextColumn::make('status')
             ->badge()
             ->colors(array_merge($defaultColors, $customColors));
     }
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Priority badge column
      */
@@ -485,12 +454,8 @@ class ColumnBuilder
                 'danger' => 'critical',
             ]);
     }
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Standard timestamps (created_at, updated_at)
      */
@@ -506,12 +471,8 @@ class ColumnBuilder
                 ->toggleable(isToggledHiddenByDefault: $hideUpdated),
         ];
     }
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Email column with searchable
      */
@@ -588,12 +549,8 @@ class FilterBuilder
             ->trueLabel('Active')
             ->falseLabel('Inactive');
     }
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Date range filter
      */
@@ -616,12 +573,8 @@ class FilterBuilder
                     );
             });
     }
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Select filter from model
      */
@@ -686,11 +639,8 @@ public function getTableFilters(): array
 
 **ROI Anno 1**: +159% (€4,450 netto)
 **Break-Even**: 4.6 mesi
-<<<<<<< HEAD
 **ROI Anno 1**: +159% (€4,450 netto)  
 **Break-Even**: 4.6 mesi  
-=======
->>>>>>> 6ed19256f (.)
 **ROI 3 Anni**: +675% (€18,950 netto)
 
 ### Scenario Ottimistico
@@ -1244,11 +1194,8 @@ public function getTableFilters(): array
 
 **ROI Anno 1**: +338% (€9,450 netto)
 **Break-Even**: 2.7 mesi
-<<<<<<< HEAD
 **ROI Anno 1**: +338% (€9,450 netto)  
 **Break-Even**: 2.7 mesi  
-=======
->>>>>>> 6ed19256f (.)
 **ROI 3 Anni**: +1,210% (€33,950 netto)
 
 ---
@@ -1348,8 +1295,4 @@ public function getTableFilters(): array
 3. Kick-off Fase 1
 4. Implementazione ColumnBuilder
 
-<<<<<<< HEAD
 **Domande?** Chiedi alla Super Mucca! 🐄⚡
-=======
-**Domande?** Chiedi alla Super Mucca! 🐄⚡
->>>>>>> 6ed19256f (.)

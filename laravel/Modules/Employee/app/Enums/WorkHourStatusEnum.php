@@ -31,6 +31,7 @@ enum WorkHourStatusEnum: string
             self::REJECTED => 'Rejected',
         };
     }
+<<<<<<< HEAD
 
     public function getColor(): string
     {
@@ -40,4 +41,6 @@ enum WorkHourStatusEnum: string
             self::REJECTED => 'danger',
         };
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

@@ -14,7 +14,11 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Modules\Employee\Models\AbsenceRequest;
 use Modules\Employee\Models\Employee;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+>>>>>>> 6ed19256f (.)
 use Override;
 
 /**
@@ -22,7 +26,11 @@ use Override;
  *
  * Displays monthly and annual leave balances with visual progress bars.
  */
+<<<<<<< HEAD
 class LeaveBalanceWidget extends XotBaseSchemaWidget
+=======
+class LeaveBalanceWidget extends XotBaseWidget
+>>>>>>> 6ed19256f (.)
 {
     protected static ?int $sort = 2;
 

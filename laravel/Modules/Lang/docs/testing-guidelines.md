@@ -21,8 +21,15 @@ All tests MUST use `.env.testing` configuration:
 ```env
 APP_ENV=testing
 DB_CONNECTION=sqlite
+<<<<<<< .merge_file_riK1lI
 DB_CONNECTION=mysql
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_wgLGEi
 DB_DATABASE=<nome progetto>_data_test
+=======
+DB_DATABASE=saluteora_data_test
+>>>>>>> 6ed19256f (.)
 APP_LOCALE=en
 APP_FALLBACK_LOCALE=en
 ```
@@ -388,9 +395,11 @@ describe('Lang Performance Tests', function () {
 ---
 
 **Last Updated**: 2025-08-28
+<<<<<<< HEAD
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
+<<<<<<< .merge_file_riK1lI
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
@@ -404,3 +413,9 @@ describe('Lang Performance Tests', function () {
 
 **Testing Framework**: Pest
 **Environment**: .env.testing
+=======
+=======
+**Testing Framework**: Pest
+**Environment**: .env.testing
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_wgLGEi

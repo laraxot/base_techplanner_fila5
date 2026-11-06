@@ -13,7 +13,15 @@ related:
 status: draft
 ---
 # Quality Analysis Report - Media Module
+<<<<<<< .merge_file_OdxUfs
 **Date**: [DATE]
+=======
+**Date**: 2025-11-11
+<<<<<<< HEAD
+**Date**: 2025-11-11
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_qyrZXP
 **Status**: ✅ **ILLUMINATED** - PHPStan Level 10 PASS
 
 ---
@@ -219,5 +227,17 @@ The **Media module** is in **excellent condition** with PHPStan Level 10 complia
 
 ---
 
+<<<<<<< .merge_file_OdxUfs
 **Documentation**: Comprehensive (63 docs files)
 **Test Coverage**: Integration tests available
+=======
+**Next Review**: After high-priority refactoring (Q1 2025)
+<<<<<<< HEAD
+**Next Review**: After high-priority refactoring (Q1 2025)
+**Documentation**: Comprehensive (63 docs files)
+**Test Coverage**: Integration tests available
+=======
+**Documentation**: Comprehensive (63 docs files)
+**Test Coverage**: Integration tests available
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_qyrZXP

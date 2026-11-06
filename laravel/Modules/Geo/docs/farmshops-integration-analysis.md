@@ -35,7 +35,14 @@ status: draft
 | **Linguaggio** | JavaScript |
 | **Stars** | 40 |
 | **Forks** | 10 |
+<<<<<<< .merge_file_b6oLIW
+=======
+| **Ultimo Update** | 2025-09-23 |
+<<<<<<< HEAD
+>>>>>>> .merge_file_qpgPiR
 | **Ultimo Update** | [DATE] |
+=======
+>>>>>>> 6ed19256f (.)
 | **Homepage** | https://farmshops.eu |
 
 ### Stack Tecnologico
@@ -626,7 +633,14 @@ Realtà aumentata per visualizzare punti di interesse tramite fotocamera smartph
 ---
 
 **📝 Documento preparato da:** Super Mucca 🐮
+<<<<<<< .merge_file_b6oLIW
+=======
+**📅 Data:** 2025-10-02
+<<<<<<< HEAD
+>>>>>>> .merge_file_qpgPiR
 **📅 Data:** [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 **📧 Contatto:** geo-team@fixcity.com
 
 ---

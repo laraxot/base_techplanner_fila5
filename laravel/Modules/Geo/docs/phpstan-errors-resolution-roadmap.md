@@ -264,8 +264,18 @@ Prima di considerare completata la risoluzione:
 
 ---
 *Roadmap creata il: Gennaio 2025*  
+<<<<<<< HEAD
 *⚠️ File critico: AddressItemEnum.php (67 errori)*
 
 ## ✅ Update Febbraio 2026
 - **CalculateDistanceAction.php**: Risolto errore critico di namespace collision (PHPStan) e violazioni di complessità/stile (PHPMD/PHPInsights). Rifattorizzato per usare `final`, importazioni corrette e rimozione di complessità inutile.
 
+<<<<<<< .merge_file_4wGzJc
+=======
+*Ultimo aggiornamento: Gennaio 2025*  
+*⚠️ File critico: AddressItemEnum.php (67 errori)*
+=======
+*Ultimo aggiornamento: Gennaio 2025*  
+*⚠️ File critico: AddressItemEnum.php (67 errori)*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_x9oha2

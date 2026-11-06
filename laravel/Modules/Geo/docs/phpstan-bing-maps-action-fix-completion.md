@@ -94,8 +94,15 @@ Basato sulla documentazione `phpstan-code-quality-guide.md`:
 
 - [File Corretto](../app/Actions/Bing/GetAddressFromBingMapsAction.php) 
 - [Documento Roadmap](./phpstan-bing-maps-action-fix-roadmap.md)
+<<<<<<< .merge_file_mkU0DD
 - [PHPStan Code Quality Guide](../../../xot/docs/phpstan-code-quality-guide.md)
 - [Best Practices Geocoding](../README.md)
+=======
+- [PHPStan Code Quality Guide](../../../Xot/docs/phpstan-code-quality-guide.md)
+- [Best Practices Geocoding](../README.md)
+- [PHPStan Code Quality Guide](../../../xot/docs/phpstan-code-quality-guide.md)
+- [Best Practices Geocoding](../readme.md)
+>>>>>>> .merge_file_KJV2uK
 
 ## 🎯 Impatto sul Sistema
 
@@ -108,4 +115,13 @@ Basato sulla documentazione `phpstan-code-quality-guide.md`:
 **Autore**: iFlow CLI  
 **Approvazione**: Completo e verificato  
 **Status**: Pronto per produzione  
+<<<<<<< .merge_file_mkU0DD
 **Data Completamento**: [DATE]
+=======
+<<<<<<< HEAD
+**Data Completamento**: 2026-01-09
+**Data Completamento**: [DATE]
+=======
+**Data Completamento**: 2026-01-09
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_KJV2uK

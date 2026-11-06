@@ -149,12 +149,7 @@ function createTestUser(array $attributes = []): UserContract
 ## 🔗 **Collegamenti Documentazione**
 
 ### **Pattern Architetturali**
-<<<<<<< .merge_file_tn38V7
 - [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../../Cms/docs/architecture-xotdata-pattern.md)
-=======
-<<<<<<< HEAD
-- [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../laravel/modules/cms/docs/architecture-xotdata-pattern.md)
->>>>>>> .merge_file_IDOl7F
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../laravel/modules/xot/docs/architecture-violations-and-fixes.md)
 
 ### **Sistema Folio/Volt**
@@ -166,13 +161,7 @@ function createTestUser(array $attributes = []): UserContract
 ### **Sistema Folio/Volt**
 - [laravel/Themes/One/project_docs/folio-pages.md](../laravel/themes/one/project_docs/folio-pages.md)
 - [laravel/Themes/One/project_docs/routing_with_folio_volt.md](../laravel/themes/one/project_docs/routing_with_folio_volt.md)
-<<<<<<< .merge_file_tn38V7
 - [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../../Cms/docs/architecture-xotdata-pattern.md)
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [laravel/Modules/Cms/docs/architecture-xotdata-pattern.md](../laravel/Modules/Cms/docs/architecture-xotdata-pattern.md)
->>>>>>> .merge_file_IDOl7F
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../laravel/Modules/Xot/docs/architecture-violations-and-fixes.md)
 
 ### **Sistema Folio/Volt**
@@ -203,8 +192,4 @@ function createTestUser(array $attributes = []): UserContract
 3. **SEMPRE** usare pattern XotData
 4. **SEMPRE** approfondire prima di agire
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: Dicembre 2024 - Analisi completa struttura login*
-=======
-*Ultimo aggiornamento: Dicembre 2024 - Analisi completa struttura login*
->>>>>>> 6ed19256f (.)

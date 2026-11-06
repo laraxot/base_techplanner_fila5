@@ -115,4 +115,9 @@ PHPStan analysis was blocked by a syntax error in the Cms module, but PHPMD anal
 
 ---
 **Report Generated**: 2025-11-11
+<<<<<<< .merge_file_ngKORQ
 **Target Completion**: 2025-11-20
+=======
+**Next Review**: After fixing Cms module syntax error
+**Target Completion**: 2025-11-20
+>>>>>>> .merge_file_BbLfeM

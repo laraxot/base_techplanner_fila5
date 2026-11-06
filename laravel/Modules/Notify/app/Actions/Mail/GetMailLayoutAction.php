@@ -8,9 +8,14 @@ use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Theme\GetThemeContextAction;
 use Modules\Xot\Datas\XotData;
+<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\file_get_contents;
+=======
+use function Safe\file_get_contents;
+use Spatie\QueueableAction\QueueableAction;
+>>>>>>> 6ed19256f (.)
 
 /**
  * Action to resolve and load the appropriate email HTML layout.
@@ -25,15 +30,29 @@ class GetMailLayoutAction
     /**
      * Resolve and return the layout HTML content.
      *
+<<<<<<< HEAD
      * @param  string  $baseName  The base name of the layout (default: 'base')
+=======
+     * @param string $baseName The base name of the layout (default: 'base')
+     *
+>>>>>>> 6ed19256f (.)
      * @return string The HTML content of the layout
      */
     public function execute(string $baseName = 'base'): string
     {
+<<<<<<< .merge_file_pf2ATA
         $xotResult = XotData::make();
         $pubThemeValue = $xotResult->pub_theme ?? null;
         $pub_theme = is_string($pubThemeValue) ? $pubThemeValue : 'theme';
+=======
+        $xot = XotData::make();
+        $pub_theme = $xot->pub_theme;
+<<<<<<< HEAD
+>>>>>>> .merge_file_LnbnyI
         $themePath = base_path('Themes/'.$pub_theme.'/resources/mail-layouts');
+=======
+        $themePath = base_path('Themes/' . $pub_theme . '/resources/mail-layouts');
+>>>>>>> 6ed19256f (.)
 
         $context = app(GetThemeContextAction::class)->execute();
 
@@ -43,11 +62,19 @@ class GetMailLayoutAction
         // 3. Generic base layout (base.html) - Fallback for when no seasonal layout is found
         // Potential filenames to check in priority order
         $candidates = [
+<<<<<<< HEAD
             $baseName.'_'.$context.'.html', // 1. Specific Context (e.g. welcome_christmas.html)
         ];
 
         if ($baseName !== 'base') {
             $candidates[] = $baseName.'.html';   // 2. Specific Base (e.g. welcome.html) - Before generic seasonal!
+=======
+            $baseName . '_' . $context . '.html', // 1. Specific Context (e.g. welcome_christmas.html)
+        ];
+
+        if ($baseName !== 'base') {
+            $candidates[] = $baseName . '.html';   // 2. Specific Base (e.g. welcome.html) - Before generic seasonal!
+>>>>>>> 6ed19256f (.)
         }
 
         // Special priority for professional christmas layout if available
@@ -55,12 +82,20 @@ class GetMailLayoutAction
             $candidates[] = 'christmas-professional.html';
         }
 
+<<<<<<< HEAD
         $candidates[] = $context.'.html';       // 3. Generic Seasonal (e.g. christmas.html)
+=======
+        $candidates[] = $context . '.html';       // 3. Generic Seasonal (e.g. christmas.html)
+>>>>>>> 6ed19256f (.)
         $candidates[] = 'base.html';              // 4. Fallback Base (base.html)
 
         $layoutPath = '';
         foreach ($candidates as $candidate) {
+<<<<<<< HEAD
             $path = $themePath.'/'.$candidate;
+=======
+            $path = $themePath . '/' . $candidate;
+>>>>>>> 6ed19256f (.)
             if (File::exists($path)) {
                 $layoutPath = $path;
                 break;
@@ -69,7 +104,11 @@ class GetMailLayoutAction
 
         // Final fallback if nothing found
         if ($layoutPath === '') {
+<<<<<<< HEAD
             $layoutPath = $themePath.'/base.html';
+=======
+            $layoutPath = $themePath . '/base.html';
+>>>>>>> 6ed19256f (.)
         }
 
         if (! File::exists($layoutPath)) {

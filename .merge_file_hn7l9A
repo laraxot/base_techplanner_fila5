@@ -1,0 +1,30 @@
+<?php
+
+declare(strict_types=1);
+/**
+ * @see https://github.com/protonemedia/laravel-ffmpeg
+ */
+
+namespace Modules\Media\Actions\Video;
+
+use Spatie\QueueableAction\QueueableAction;
+
+class GetVideoScreenshotAction
+{
+    use QueueableAction;
+
+    /**
+     * The number of seconds to wait before retrying the action.
+     *
+     * @var array<int>|int
+     */
+<<<<<<< .merge_file_hn7l9A
+    public $backoff = 3;
+=======
+<<<<<<< HEAD
+    public array|int $backoff = 3;
+=======
+    public $backoff = 3;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_7pDmJ9
+}

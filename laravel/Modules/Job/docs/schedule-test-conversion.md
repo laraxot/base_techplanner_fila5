@@ -87,5 +87,16 @@ it('can do something', function () {
 Total: 12 tests, 10 converted from PHPUnit to Pest
 
 ---
+<<<<<<< .merge_file_EpSRzr
 **Date**: [DATE]
 **Status**: Complete
+=======
+
+**Date**: 2026-01-09
+<<<<<<< HEAD
+**Date**: [DATE]
+**Status**: Complete
+=======
+**Status**: Complete
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_8AXz6L

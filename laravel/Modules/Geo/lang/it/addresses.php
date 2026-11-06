@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+/**
+ * Traduzioni per il componente AddressesField e gestione indirizzi.
+ */
 return [
     'field' => [
         'label' => 'Indirizzi',
@@ -25,6 +28,7 @@ return [
         'name' => [
             'label' => 'Nome Indirizzo',
             'placeholder' => 'es. Sede Principale, Filiale Nord, Casa',
+<<<<<<< HEAD
             'help' => 'Nome identificativo per questo indirizzo (visibile solo con più indirizzi]',
             'tooltip' => '',
             'helper_text' => '',
@@ -36,6 +40,13 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+            'help' => 'Nome identificativo per questo indirizzo (visibile solo con più indirizzi)',
+        ],
+        'is_primary' => [
+            'label' => 'Indirizzo Principale',
+            'help' => 'Designa questo come indirizzo principale (solo uno può essere principale)',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'messages' => [

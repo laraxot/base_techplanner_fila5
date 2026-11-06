@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Event Sourcing in `<nome progetto>`"
 type: note
@@ -9,13 +8,6 @@ qmd: "event sourcing in `<nome progetto>` activity"
 ---
 # Event Sourcing in `<nome progetto>`
 
-<<<<<<< .merge_file_uAzKsL
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
-=======
-# Event Sourcing in `<nome progetto>`
-
->>>>>>> .merge_file_4l6EXx
 ## Introduction to Event Sourcing
 Event Sourcing is an architectural pattern where application state is derived from a sequence of events. Instead of storing the current state in a database, the application stores all events that led to the current state. This approach is particularly beneficial in a healthcare context like `<nome progetto>` for tracking patient activities, medical records, and system interactions with full auditability.
 # Event Sourcing in `<nome progetto>`
@@ -170,11 +162,6 @@ public function store(Request $request)
 - [Larabank Examples](https://github.com/spatie/larabank-traditional)
 
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
-<<<<<<< .merge_file_uAzKsL
 This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.=======
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
 See canonical documentation: ../../../Themes/docs/shared-components/event-sourcing-introduction-duplicate.md
-=======
-This introduction to event sourcing sets the foundation for implementing a robust activity tracking system in `<nome progetto>`, ensuring full traceability and compliance with healthcare standards.
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_4l6EXx

@@ -52,3 +52,4 @@ array_merge(
 \Modules\Module\Database\Factories\ModelFactory::new()
 ```
 
+*Ultimo aggiornamento: gennaio 2025*

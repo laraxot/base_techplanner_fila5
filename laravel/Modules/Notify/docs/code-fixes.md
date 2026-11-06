@@ -13,6 +13,13 @@ status: draft
 # Notify Module - Code Fixes & Improvements (2025)
 
 > **Last Updated:** 2025-11-23
+<<<<<<< .merge_file_TC8gWd
+=======
+<<<<<<< HEAD
+> **Last Updated:** 2025-11-23
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XNmugb
 > **PHPStan Level:** Target 10
 > **Status:** Major Syntax Fixes Completed
 
@@ -404,4 +411,12 @@ The Notify module has undergone a complete syntax cleanup, resolving 41 files wi
 
 **Document Version:** 1.0
 **Author:** Claude Code Analysis
+<<<<<<< .merge_file_TC8gWd
 **Next Review:** After PHPStan L10 completion
+=======
+<<<<<<< HEAD
+**Next Review:** After PHPStan L10 completion
+=======
+**Next Review:** After PHPStan L10 completion
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_XNmugb

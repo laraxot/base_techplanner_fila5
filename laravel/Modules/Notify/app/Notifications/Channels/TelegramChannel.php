@@ -12,8 +12,21 @@ class TelegramChannel
 {
     /**
      * Invia la notifica tramite Telegram.
+<<<<<<< HEAD
      */
+<<<<<<< .merge_file_sICxkq
     public function send(object $notifiable, Notification $notification): void
+=======
+    public function send(mixed $notifiable, Notification $notification): void
+=======
+     *
+     * @param  mixed  $notifiable
+     *
+     * @return void
+     */
+    public function send($notifiable, Notification $notification)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_PmcHD6
     {
         if (! method_exists($notification, 'toTelegram')) {
             throw new Exception('Il metodo toTelegram() non è definito nella notifica.');
@@ -33,7 +46,11 @@ class TelegramChannel
 
         // TODO: Implementare BotTelegramAction e TelegramMessageData
         // Per ora, logghiamo solo l'intento di invio
+<<<<<<< HEAD
         Log::debug('Telegram notification would be sent', [
+=======
+        Log::info('Telegram notification would be sent', [
+>>>>>>> 6ed19256f (.)
             'chat_id' => $chatId,
             'message' => $message]);
     }

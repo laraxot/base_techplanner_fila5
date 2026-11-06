@@ -2,13 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_zTgVhW
 namespace Modules\Activity\Tests\Feature;
 
 use Illuminate\Support\Carbon;
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_JdGk0D
 use Illuminate\Support\Str;
 use Modules\Activity\Database\Factories\SnapshotFactory;
 use Modules\Activity\Models\Snapshot;
@@ -17,23 +13,8 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
-<<<<<<< .merge_file_zTgVhW
 test('can create snapshot with basic information', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-it('can create snapshot with basic information', function (): void {
-=======
-use Modules\Activity\Models\Snapshot;
-use Modules\Activity\Tests\TestCase;
-use Illuminate\Support\Str;
-
-uses(TestCase::class);
-
-it('can create snapshot with basic information', function (): void
-{
->>>>>>> 6ed19256f (.)
-    $snapshot = Snapshot::factory()->create([
->>>>>>> .merge_file_JdGk0D
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['name' => 'Test Aggregate', 'status' => 'active'],
@@ -49,16 +30,7 @@ it('can create snapshot with basic information', function (): void
     Assert::assertSame('active', $state['status']);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can create snapshot with complex state', function (): void {
-=======
-<<<<<<< HEAD
-it('can create snapshot with complex state', function (): void {
-=======
-it('can create snapshot with complex state', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $complexState = [
         'user_info' => [
             'id' => 123,
@@ -125,16 +97,7 @@ it('can create snapshot with complex state', function (): void
     Assert::assertContains('verified', $meta['tags']);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can manage snapshot versioning', function (): void {
-=======
-<<<<<<< HEAD
-it('can manage snapshot versioning', function (): void {
-=======
-it('can manage snapshot versioning', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $aggregateUuid = Str::uuid()->toString();
 
     $snapshot1 = SnapshotFactory::new()->createOne([
@@ -167,16 +130,7 @@ it('can manage snapshot versioning', function (): void
     Assert::assertSame($snapshot3->aggregate_version, 3);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can query snapshots by aggregate uuid', function (): void {
-=======
-<<<<<<< HEAD
-it('can query snapshots by aggregate uuid', function (): void {
-=======
-it('can query snapshots by aggregate uuid', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $uuid1 = Str::uuid()->toString();
     $uuid2 = Str::uuid()->toString();
 
@@ -212,16 +166,7 @@ it('can query snapshots by aggregate uuid', function (): void
     Assert::assertSame($uuid2, $first2->aggregate_uuid);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can query snapshots by version', function (): void {
-=======
-<<<<<<< HEAD
-it('can query snapshots by version', function (): void {
-=======
-it('can query snapshots by version', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $uuid = Str::uuid()->toString();
 
     SnapshotFactory::new()->createOne([
@@ -263,18 +208,8 @@ it('can query snapshots by version', function (): void
     Assert::assertSame($version10Snapshot->aggregate_version, 10);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can handle snapshot with empty state', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-<<<<<<< HEAD
-it('can handle snapshot with empty state', function (): void {
-=======
-it('can handle snapshot with empty state', function (): void
-{
->>>>>>> 6ed19256f (.)
-    $snapshot = Snapshot::factory()->create([
->>>>>>> .merge_file_JdGk0D
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => [],
@@ -286,18 +221,8 @@ it('can handle snapshot with empty state', function (): void
     Assert::assertEmpty($state);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can handle snapshot with empty array state', function (): void {
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-<<<<<<< HEAD
-it('can handle snapshot with empty array state', function (): void {
-=======
-it('can handle snapshot with empty array state', function (): void
-{
->>>>>>> 6ed19256f (.)
-    $snapshot = Snapshot::factory()->create([
->>>>>>> .merge_file_JdGk0D
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => [],
@@ -309,16 +234,7 @@ it('can handle snapshot with empty array state', function (): void
     Assert::assertEmpty($state);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can restore state from snapshot', function (): void {
-=======
-<<<<<<< HEAD
-it('can restore state from snapshot', function (): void {
-=======
-it('can restore state from snapshot', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $originalState = [
         'user_id' => 456,
         'settings' => [
@@ -346,16 +262,7 @@ it('can restore state from snapshot', function (): void
     Assert::assertSame($originalState, $restoredState);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can compare snapshot versions', function (): void {
-=======
-<<<<<<< HEAD
-it('can compare snapshot versions', function (): void {
-=======
-it('can compare snapshot versions', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $uuid = Str::uuid()->toString();
 
     $snapshot1 = SnapshotFactory::new()->createOne([
@@ -398,24 +305,10 @@ it('can compare snapshot versions', function (): void
     Assert::assertSame('final', $state3['status']);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can handle snapshot with timestamps', function (): void {
     $now = now();
 
     $snapshot = SnapshotFactory::new()->createOne([
-=======
-<<<<<<< HEAD
-it('can handle snapshot with timestamps', function (): void {
-    $now = now();
-
-=======
-it('can handle snapshot with timestamps', function (): void
-{
-    $now = now();
-    
->>>>>>> 6ed19256f (.)
-    $snapshot = Snapshot::factory()->create([
->>>>>>> .merge_file_JdGk0D
         'aggregate_uuid' => Str::uuid()->toString(),
         'aggregate_version' => 1,
         'state' => ['created_at' => $now->toISOString()],
@@ -427,16 +320,7 @@ it('can handle snapshot with timestamps', function (): void
     Assert::assertInstanceOf(Carbon::class, $snapshot->created_at);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can query snapshots by date range', function (): void {
-=======
-<<<<<<< HEAD
-it('can query snapshots by date range', function (): void {
-=======
-it('can query snapshots by date range', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $yesterday = now()->subDay();
     $today = now();
     $tomorrow = now()->addDay();
@@ -476,16 +360,7 @@ it('can query snapshots by date range', function (): void
     Assert::assertCount(3, $recentSnapshots);
 });
 
-<<<<<<< .merge_file_zTgVhW
 test('can handle snapshot with metadata', function (): void {
-=======
-<<<<<<< HEAD
-it('can handle snapshot with metadata', function (): void {
-=======
-it('can handle snapshot with metadata', function (): void
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JdGk0D
     $metadata = [
         'source' => 'user_action',
         'user_id' => 789,
@@ -507,7 +382,6 @@ it('can handle snapshot with metadata', function (): void
             'metadata' => $metadata,
         ],
     ]);
-<<<<<<< .merge_file_zTgVhW
     Assert::assertInstanceOf(Snapshot::class, $snapshot);
 
     /** @var array<array-key, mixed> $state */
@@ -525,16 +399,4 @@ it('can handle snapshot with metadata', function (): void
     Assert::assertSame('user_action', $meta['source']);
     Assert::assertSame(789, $meta['user_id']);
     Assert::assertSame('profile_update', $meta['action']);
-=======
-
-    expect('Alice Johnson')->toBe($snapshot->state['profile']['name']);
-    expect('alice@example.com')->toBe($snapshot->state['profile']['email']);
-    expect('user_action')->toBe($snapshot->state['metadata']['source']);
-    expect(789)->toBe($snapshot->state['metadata']['user_id']);
-    expect('profile_update')->toBe($snapshot->state['metadata']['action']);
-<<<<<<< HEAD
 });
-=======
->>>>>>> .merge_file_JdGk0D
-});
->>>>>>> 6ed19256f (.)

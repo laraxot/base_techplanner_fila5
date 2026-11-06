@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "best practice"
 type: alias
@@ -7,15 +6,8 @@ canonical: "use_cases/bank/best-practice.md"
 qmd: "best-practice alias superseded"
 ---
 
-<<<<<<< .merge_file_0ja5DL
 # best practice
 
 Documento identico al canonico: [best-practice.md](../bank/best-practice.md).
 
 Canonico: `laravel/Modules/Activity/docs/use_cases/bank/best-practice.md`. Qui non ci sono istruzioni: seguire il file collegato.
-=======
-See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_9fuILC

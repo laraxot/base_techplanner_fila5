@@ -1,0 +1,93 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Media\Console\Commands;
+
+use FFMpeg\Format\Video\WebM;
+use Illuminate\Console\Command;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
+<<<<<<< .merge_file_XRMx10
+use Modules\Media\Actions\Storage\GetFilesystemAdapterAction;
+use Modules\Media\Actions\Ffmpeg\ResolveMediaExporterAction;
+=======
+<<<<<<< HEAD
+use ProtoneMedia\LaravelFFMpeg\Exporters\MediaExporter;
+use ProtoneMedia\LaravelFFMpeg\MediaOpener;
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_zfkVBz
+use ProtoneMedia\LaravelFFMpeg\Support\FFMpeg;
+use Webmozart\Assert\Assert;
+
+class ConvertVideoCommand extends Command
+{
+    protected $signature = 'media:convert-video {disk} {file}';
+
+    protected $description = 'Convert Video';
+
+    public function handle(): string
+    {
+        Assert::string($disk = $this->argument('disk'));
+        Assert::string($file = $this->argument('file'));
+        $this->info('disk: '.print_r($disk, true));
+        $this->info('file: '.print_r($file, true));
+
+        if (! Storage::disk($disk)->exists($file)) {
+            $this->error('['.$disk.'] file ['.$file.'] Not Exists');
+
+            return '';
+        }
+
+<<<<<<< HEAD
+        $format = new WebM;
+        $extension = mb_strtolower(class_basename($format));
+        $file_new = Str::of($file)->replaceLast('.mp4', '.'.$extension)->toString();
+
+        $media = FFMpeg::fromDisk($disk)->open($file);
+<<<<<<< .merge_file_XRMx10
+=======
+
+        /** @var MediaExporter $export */
+=======
+        $format = new WebM();
+        $extension = mb_strtolower(class_basename($format));
+        $file_new = Str::of($file)->replaceLast('.mp4', '.'.$extension)->toString();
+
+        $media = FFMpeg::fromDisk($disk)->open($file);
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_zfkVBz
+        $export = $media->export();
+
+        $export->onProgress(function (float $percentage, float $remaining, float $rate): void {
+            $this->info("{$percentage}% transcoded");
+            $this->info("{$remaining} seconds left at rate: {$rate}");
+        });
+<<<<<<< .merge_file_XRMx10
+
+        // Una sola transcodifica: toDisk() e inFormat() configurano lo stesso exporter, save() scrive $file_new.
+        app(ResolveMediaExporterAction::class)->execute($export->toDisk($disk))->inFormat($format)->save($file_new);
+=======
+<<<<<<< HEAD
+        /** @var MediaExporter $toDisk */
+        $toDisk = $export->toDisk($disk);
+
+        /** @var MediaExporter $formatted */
+        $formatted = $toDisk->inFormat($format);
+
+        $formatted->save($file_new);
+=======
+        // @phpstan-ignore method.nonObject, method.nonObject
+        $export
+            ->toDisk($disk)
+            // @phpstan-ignore method.nonObject
+            ->inFormat($format)
+            // @phpstan-ignore method.nonObject
+            ->save($file_new);
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_zfkVBz
+
+        return app(GetFilesystemAdapterAction::class)->execute($disk)->url($file_new);
+    }
+}

@@ -102,4 +102,9 @@ public function getTableBulkActions(): array
 - Proper separation of concerns
 
 ---
+<<<<<<< .merge_file_MFhzwy
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+=======
+
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+>>>>>>> .merge_file_RmTvzQ

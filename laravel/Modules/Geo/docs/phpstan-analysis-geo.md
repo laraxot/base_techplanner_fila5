@@ -16,7 +16,14 @@ status: draft
 
 **PHPStan Level 10**: ⚠️ **ANALYSIS ISSUE** - Cannot complete analysis
 
+<<<<<<< .merge_file_Whvupo
+=======
+**Last Analysis**: 2025-11-05
+<<<<<<< HEAD
+>>>>>>> .merge_file_vGSOo4
 **Last Analysis**: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Module Overview
 
@@ -94,8 +101,23 @@ PHPStan analysis on the Geo module consistently times out or hangs, preventing c
    - Gradually increase to level 10
 
 ---
+<<<<<<< .merge_file_Whvupo
+=======
+
+**Analysis Date**: 2025-11-05
+<<<<<<< HEAD
+>>>>>>> .merge_file_vGSOo4
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ⚠️ Analysis Blocked - Requires Investigation
 **Documentation Status**: ⚠️ Basic - Analysis issues need resolution
+<<<<<<< .merge_file_Whvupo
+=======
+=======
+**PHPStan Version**: 2.1.2
+**Laravel Version**: 12.31.1
+**Status**: ⚠️ Analysis Blocked - Requires Investigation
+**Documentation Status**: ⚠️ Basic - Analysis issues need resolution
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_vGSOo4

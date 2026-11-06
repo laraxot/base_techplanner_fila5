@@ -13,7 +13,11 @@ status: draft
 # Risoluzione Conflitti MailTemplate.php
 
 ## Contesto del Conflitto
+<<<<<<< HEAD
 **File**: `Modules/Notify/app/Models/MailTemplate.php`
+=======
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Models/MailTemplate.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 75-79
 **Tipo**: Conflitto di proprietà translatable
 
@@ -81,6 +85,17 @@ Verificare che:
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
 - [Translation Standards](translation_standards.md)
+<<<<<<< .merge_file_xjK0OJ
+=======
+- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+<<<<<<< HEAD
+- [Notify Module Documentation](README.md)
+- [SMS Implementation Guide](sms_implementation.md)
+- [Mail Templates Structure](mail_templates_structure.md)
+- [Translation Standards](translation_standards.md)
+>>>>>>> .merge_file_Fl7Xs9
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
@@ -88,6 +103,12 @@ Verificare che:
 
 ## Contesto del Conflitto
 **File**: `Modules/Notify/app/Models/MailTemplate.php`
+=======
+# Risoluzione Conflitti MailTemplate.php
+
+## Contesto del Conflitto
+**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Models/MailTemplate.php`
+>>>>>>> 6ed19256f (.)
 **Linee**: 75-79
 **Tipo**: Conflitto di proprietà translatable
 
@@ -155,6 +176,22 @@ Verificare che:
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
 - [Translation Standards](translation_standards.md)
+<<<<<<< .merge_file_xjK0OJ
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
+=======
+- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+<<<<<<< HEAD
+- [Notify Module Documentation](README.md)
+- [SMS Implementation Guide](sms_implementation.md)
+- [Mail Templates Structure](mail_templates_structure.md)
+- [Translation Standards](translation_standards.md)
+- [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
+
+*Ultimo aggiornamento: giugno 2025*
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Fl7Xs9

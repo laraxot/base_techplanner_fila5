@@ -15,6 +15,7 @@ return [
         'icon' => 'ui-geo-place',
     ],
     'fields' => [
+<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -75,6 +76,18 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'name' => 'Nome',
+        'description' => 'Descrizione',
+        'category' => 'Categoria',
+        'location' => 'Località',
+        'rating' => 'Valutazione',
+        'opening_hours' => 'Orari di Apertura',
+        'contact_info' => 'Contatti',
+        'website' => 'Sito Web',
+        'photos' => 'Foto',
+        'amenities' => 'Servizi',
+>>>>>>> 6ed19256f (.)
     ],
     'categories' => [
         'restaurant' => 'Ristorante',
@@ -90,8 +103,10 @@ return [
         'share' => 'Condividi',
         'bookmark' => 'Salva',
     ],
+<<<<<<< HEAD
     'label' => 'Place',
     'plural_label' => 'Place (Plurale)',
+<<<<<<< .merge_file_yZjxYB
     'card' => [
         'like' => [
             'label' => 'Mi piace',
@@ -106,4 +121,8 @@ return [
             'label' => 'Foto',
         ],
     ],
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_WYlGeZ
 ];

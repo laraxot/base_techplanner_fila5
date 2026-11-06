@@ -34,11 +34,27 @@ class TelegramChannel
      * Invia la notifica attraverso il canale Telegram.
      *
      * @param  Notification  $notification  Notifica da inviare
+<<<<<<< .merge_file_UyNk75
      * @return array<string, mixed>|null Risultato dell'operazione o null in caso di errore
      *
      * @throws Exception Se la notifica non ha il metodo toTelegram o il driver non è supportato
      */
     public function send(object $notifiable, Notification $notification): ?array
+=======
+<<<<<<< HEAD
+=======
+     *
+>>>>>>> 6ed19256f (.)
+     * @return array|null Risultato dell'operazione o null in caso di errore
+     *
+     * @throws Exception Se la notifica non ha il metodo toTelegram o il driver non è supportato
+     */
+<<<<<<< HEAD
+    public function send(mixed $notifiable, Notification $notification): ?array
+=======
+    public function send($notifiable, Notification $notification)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ylu7TB
     {
         if (! method_exists($notification, 'toTelegram')) {
             throw new Exception('Notification does not have toTelegram method');

@@ -9,16 +9,8 @@ qmd: "non utilizzare `->label()` nei componenti filament activity"
 # Non utilizzare `->label()` nei componenti Filament
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo Activity.
-<<<<<<< .merge_file_qnH8Da
 > La documentazione principale e completa si trova nel [modulo UI](../../../../UI/docs/filament/label-translation-system.md).
 > La documentazione principale e completa si trova nel [modulo UI](../../../../UI/docs/filament/label-translation-system.md).
-=======
-> La documentazione principale e completa si trova nel [modulo UI](../../../UI/docs/filament/label-translation-system.md).
-<<<<<<< HEAD
-> La documentazione principale e completa si trova nel [modulo UI](../../../ui/docs/filament/label-translation-system.md).
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_r5ev8X
 
 ## Regola fondamentale
 
@@ -85,13 +77,5 @@ Cercare e rimuovere tutte le chiamate a `->label()` nei seguenti file:
 
 - [Documentazione principale sul sistema di traduzione](../../../../UI/docs/filament/label-translation-system.md)
 - [LangServiceProvider e AutoLabelAction](../../../Lang/docs/filament/autolabel-system.md)
-<<<<<<< .merge_file_qnH8Da
 - [Documentazione principale sul sistema di traduzione](../../../../UI/docs/filament/label-translation-system.md)
 - [LangServiceProvider e AutoLabelAction](../../../lang/docs/filament/autolabel-system.md)
-=======
-<<<<<<< HEAD
-- [Documentazione principale sul sistema di traduzione](../../../ui/docs/filament/label-translation-system.md)
-- [LangServiceProvider e AutoLabelAction](../../../lang/docs/filament/autolabel-system.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_r5ev8X

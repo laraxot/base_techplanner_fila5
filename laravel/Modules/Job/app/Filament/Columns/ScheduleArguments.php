@@ -83,10 +83,21 @@ class ScheduleArguments extends XotBaseTextColumn
                             : (string) $key;
                         $val = isset($value['value']) ? SafeStringCastAction::cast($value['value']) : '';
 
+<<<<<<< HEAD
                         return $name.'='.$val;
                     }
 
+<<<<<<< .merge_file_MmZ8Qy
                     return (string) $key.'='.SafeStringCastAction::cast($value);
+=======
+                    return (string) $key.'='.(string) $value;
+=======
+                        return $name . '=' . $val;
+                    }
+
+                    return (string) $key . '=' . (string) $value;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_mzs3ER
                 },
             )
             ->values()

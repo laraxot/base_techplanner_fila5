@@ -52,7 +52,15 @@ Questo documento analizza l'applicabilità del trait `SushiToJsons` al modello `
 class Comune extends Model
 {
     use SushiToJsons;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     protected $schema = [
         'id' => 'string',
         'nome' => 'string',
@@ -63,7 +71,15 @@ class Comune extends Model
         'cap' => 'json',
         'popolazione' => 'integer'
     ];
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     protected $casts = [
         'regione' => 'array',
         'provincia' => 'array',
@@ -204,12 +220,28 @@ use Modules\Tenant\Models\Traits\SushiToJsons;
 class Comune extends Model
 {
     use SushiToJsons;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     /**
      * Indica a Sushi di non utilizzare timestamps
      */
     public $timestamps = false;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     /**
      * Definizione dello schema per i campi
      */
@@ -222,7 +254,15 @@ class Comune extends Model
         'codiceCatastale' => 'string',
         'popolazione' => 'integer'
     ];
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     /**
      * Cast per le colonne JSON
      */
@@ -231,7 +271,15 @@ class Comune extends Model
         'provincia' => 'array',
         'cap' => 'array',
     ];
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     /**
      * Recupera le regioni
      */
@@ -240,9 +288,18 @@ class Comune extends Model
         return $query->where('regione->codice', $regionCode)
                      ->orderBy('nome');
     }
+<<<<<<< .merge_file_YZcvDv
+=======
+
+    // Implementazione di altri metodi e scope...
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_OfVzis
     
     // Implementazione di altri metodi e scope...
     
+=======
+>>>>>>> 6ed19256f (.)
     /**
      * Prepopola i file JSON dai dati esistenti (da eseguire una tantum)
      */
@@ -250,6 +307,7 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $comuni = json_decode(file_get_contents($path), true);
+<<<<<<< HEAD
         
         $basePath = TenantService::filePath('database/content/comuni');
         
@@ -257,6 +315,18 @@ class Comune extends Model
             File::makeDirectory($basePath, 0755, true, true);
         }
         
+<<<<<<< .merge_file_YZcvDv
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        $basePath = TenantService::filePath('database/content/comuni');
+
+        if (!File::exists($basePath)) {
+            File::makeDirectory($basePath, 0755, true, true);
+        }
+
+>>>>>>> .merge_file_OfVzis
         foreach ($comuni as $index => $comune) {
             $id = $index + 1;
             $comune['id'] = $id;
@@ -301,29 +371,70 @@ use Illuminate\Support\Facades\Cache;
 trait GeoSushi
 {
     use \Sushi\Sushi;
+<<<<<<< .merge_file_YZcvDv
+=======
+
+    protected const CACHE_TTL = 604800; // 1 settimana
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_OfVzis
     
     protected const CACHE_TTL = 604800; // 1 settimana
     
+=======
+>>>>>>> 6ed19256f (.)
     public function getRows()
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_YZcvDv
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     protected function sushiShouldCache()
     {
         return true;
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     protected function sushiCacheReferencePath()
     {
         return module_path('Geo', 'resources/json/comuni.json');
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_YZcvDv
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
     /**
      * Metodo per aggiornare il file JSON principale
      * Implementa la logica di persistenza solo quando necessaria
@@ -332,23 +443,48 @@ trait GeoSushi
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $data = json_decode(file_get_contents($path), true);
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_YZcvDv
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
         foreach ($updates as $update) {
             $index = array_search($update['codice'], array_column($data, 'codice'));
             if ($index !== false) {
                 $data[$index] = array_merge($data[$index], $update);
             }
         }
+<<<<<<< .merge_file_YZcvDv
+=======
+
+        $result = file_put_contents($path, json_encode($data, JSON_PRETTY_PRINT));
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_OfVzis
         
         $result = file_put_contents($path, json_encode($data, JSON_PRETTY_PRINT));
         
+=======
+>>>>>>> 6ed19256f (.)
         if ($result) {
             // Invalida la cache
             static::clearSushiCache();
             Cache::forget('geo_comuni_json_' . md5($path));
             return true;
         }
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_YZcvDv
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis
         return false;
     }
 }
@@ -386,5 +522,16 @@ Dopo un'analisi approfondita del trait `SushiToJsons` e delle sue potenziali app
 Questo approccio offre il miglior equilibrio tra performance, flessibilità e manutenibilità per il caso specifico del modello `Comune` nel modulo Geo.
 
 ---
+<<<<<<< .merge_file_YZcvDv
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
+=======
+
+*Documento creato il: 28/05/2025*
+<<<<<<< HEAD
+*Documento creato il: 28/05/2025*  
+*Autore: Team <main module>*
+=======
+*Autore: Team <main module>*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OfVzis

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "filament best practices"
 type: note
@@ -14,3 +15,9 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_1sVySv
+=======
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Pn8lWX

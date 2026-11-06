@@ -101,11 +101,26 @@ SlackAlert::to('channel-name')->message('Job in corso...');
 
 ## Collegamenti tra versioni di integrations.md
 * [integrations.md](docs/tecnico/filament/integrations.md)
+<<<<<<< .merge_file_RronKZ
+=======
+* [integrations.md](../../../Job/docs/packages/integrations.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_ilgbdY
 * [integrations.md](../../../job/docs/packages/integrations.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ---
 ### Versione Incoming
 
+<<<<<<< .merge_file_RronKZ
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_ilgbdY

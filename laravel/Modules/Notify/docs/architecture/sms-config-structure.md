@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_iJ2IKu
 ---
 title: "Struttura della Configurazione SMS"
 type: concept
@@ -18,7 +19,13 @@ related:
   - ../best-practices/naming-conventions.md
 status: draft
 ---
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_6YAdJD
 # Struttura della Configurazione SMS 
+=======
+# Struttura della Configurazione SMS
+>>>>>>> 6ed19256f (.)
 
 ## Introduzione
 
@@ -32,12 +39,20 @@ Il file `config/sms.php` è organizzato in sezioni distinte:
 return [
     // Driver predefinito
     'default' => env('SMS_DRIVER', 'default_provider'),
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Configurazione dei driver/provider
     'drivers' => [
         // Configurazioni specifiche per provider...
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Configurazioni generiche per tutti i provider
     'queue' => env('SMS_QUEUE', 'default'),
     'retry' => [...],
@@ -77,22 +92,36 @@ Le configurazioni specifiche per provider sono definite all'interno della sezion
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', ''),
+<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
         'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
         
+=======
+        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
+        'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
+
+>>>>>>> 6ed19256f (.)
         // Configurazioni avanzate specifiche per Netfun
         'circuit_breaker' => [
             'threshold' => env('NETFUN_CIRCUIT_BREAKER_THRESHOLD', 5),
             'timeout' => env('NETFUN_CIRCUIT_BREAKER_TIMEOUT', 60),
         ],
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     'twilio' => [
         'account_sid' => env('TWILIO_ACCOUNT_SID'),
         'auth_token' => env('TWILIO_AUTH_TOKEN'),
         'from' => env('TWILIO_FROM'),
     ],
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6ed19256f (.)
     // Altri provider...
 ],
 ```
@@ -135,9 +164,15 @@ Le configurazioni specifiche per provider sono definite all'interno della sezion
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', ''),
+<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
         'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
         
+=======
+        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
+        'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
+
+>>>>>>> 6ed19256f (.)
         // Solo configurazioni veramente specifiche per Netfun
         'circuit_breaker' => [
             'threshold' => env('NETFUN_CIRCUIT_BREAKER_THRESHOLD', 5),
@@ -171,9 +206,25 @@ $retryDelay = $config['drivers'][$driver]['retry_delay'] ?? $config['retry']['de
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Configurazione Netfun](./netfun_config_requirements.md)
 - [Configurazione Netfun](../netfun_config_requirements.md)
 - [Provider SMS Supportati](./notifications/sms_provider_configuration.md)
 
 ---
 
+<<<<<<< .merge_file_iJ2IKu
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
+- [Provider SMS Supportati](./notifications/SMS_PROVIDER_CONFIGURATION.md)
+
+---
+
+<<<<<<< HEAD
+*Ultimo aggiornamento: 2025-05-12*
+=======
+*Ultimo aggiornamento: 2025-05-12*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_6YAdJD

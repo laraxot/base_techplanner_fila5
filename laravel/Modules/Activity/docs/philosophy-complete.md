@@ -9,10 +9,7 @@ qmd: "activity - filosofia completa: logica, religione, politica, zen activity"
 # Activity - Filosofia Completa: Logica, Religione, Politica, Zen
 
 **Data Creazione**: 2025-12-23
-<<<<<<< HEAD
 **Data Creazione**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
 
@@ -238,21 +235,10 @@ class ClientObserver
 - [Business Logic Overview](./README.md)
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
-<<<<<<< .merge_file_6Kt0m6
 - [Business Logic Overview](./README.md)
-=======
-<<<<<<< HEAD
-- [Business Logic Overview](./readme.md)
->>>>>>> .merge_file_DkNDfa
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
 
 ---
 
 **Filosofia**: Track Everything, Reconstruct Anything, Privacy First, Silent Observer
-=======
-
----
-
-**Filosofia**: Track Everything, Reconstruct Anything, Privacy First, Silent Observer
->>>>>>> 6ed19256f (.)

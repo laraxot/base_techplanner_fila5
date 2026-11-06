@@ -3,9 +3,13 @@ CNAME
 -e 
 # PHPStan documentation
 docs/phpstan/
+<<<<<<< .merge_file_zqDk5q
 _docs/
 maps
 data
 fonts
 webfonts
 agentdb.rvf
+=======
+_docs/
+>>>>>>> .merge_file_wYvLzC

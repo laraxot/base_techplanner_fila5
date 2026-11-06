@@ -50,7 +50,14 @@ Laravel offre diverse varianti di metodi per creare campi polimorfici:
 
 Nel nostro caso specifico:
 
+<<<<<<< .merge_file_nTTzox
+=======
+1. **Uso di `model` invece di `addressable`**:
+<<<<<<< HEAD
+>>>>>>> .merge_file_G3eV4B
 1. **Uso di `model` invece di `addressable`**: 
+=======
+>>>>>>> 6ed19256f (.)
    - Mantiene la coerenza con altre parti del sistema
    - Riflette una terminologia più generale e neutrale
    - Si allinea con le convenzioni di naming esistenti nel progetto
@@ -79,7 +86,14 @@ $table->timestamps(); // Nella sezione tableCreate
 $this->updateTimestamps($table, true); // Nella sezione tableUpdate
 ```
 
+<<<<<<< .merge_file_nTTzox
+=======
+Questo codice crea una duplicazione:
+<<<<<<< HEAD
+>>>>>>> .merge_file_G3eV4B
 Questo codice crea una duplicazione: 
+=======
+>>>>>>> 6ed19256f (.)
 1. `$table->timestamps()` crea le colonne `created_at` e `updated_at`
 2. `$this->updateTimestamps($table, true)` tenta di creare nuovamente queste colonne, più `deleted_at`
 

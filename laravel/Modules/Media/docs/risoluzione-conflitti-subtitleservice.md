@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,6 +16,13 @@ superseded_by: conflict-resolution-subtitleservice.md
 ---
 # Risoluzione Conflitti Git - SubtitleService.php
 
+<<<<<<< .merge_file_tHCB8o
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/conflict-resolution-subtitleservice.md
+=======
+# Risoluzione Conflitti Git - SubtitleService.php
+
+>>>>>>> .merge_file_dvCesF
 ## Intento
 - Garantire che il metodo `upateModel()` aggiorni il modello in modo atomico assegnando l'istanza aggiornata correttamente.
 
@@ -26,5 +34,11 @@ superseded_by: conflict-resolution-subtitleservice.md
 - Mantenimento dell'utilizzo di `tap($this->model)->update($up)` per garantire coerenza e robustezza.
 
 ## Collegamenti
+<<<<<<< .merge_file_tHCB8o
 - [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md)
 - [Documentazione Conflitti Git nei Moduli](../../../../../docs/conflitti_git_moduli.md)
+=======
+- [Linee Guida Generali per la Risoluzione dei Conflitti Git](../../../../docs/risoluzione_conflitti_git.md)
+- [Documentazione Conflitti Git nei Moduli](../../../../docs/conflitti_git_moduli.md)
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_dvCesF

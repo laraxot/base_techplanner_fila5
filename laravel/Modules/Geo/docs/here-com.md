@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_WtAQro
 ---
 title: "here com"
 type: note
@@ -12,3 +13,7 @@ status: draft
 
 Depending on your authentication method you either need to add an Authorization header with a Bearer token or a query parameter 
 
+=======
+Depending on your authentication method you either need to add an Authorization header with a Bearer token or a query parameter
+Depending on your authentication method you either need to add an Authorization header with a Bearer token or a query parameter 
+>>>>>>> .merge_file_5xNgXl

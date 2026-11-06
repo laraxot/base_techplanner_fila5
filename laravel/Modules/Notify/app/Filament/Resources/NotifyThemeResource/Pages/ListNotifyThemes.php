@@ -10,4 +10,62 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 class ListNotifyThemes extends XotBaseListRecords
 {
     protected static string $resource = NotifyThemeResource::class;
+<<<<<<< .merge_file_2RLLHY
+=======
+
+<<<<<<< HEAD
+    /**
+     * Colonne tabella NotifyTheme (condivise con ManageNotifyThemes).
+     *
+     * @return array<string, TextColumn>
+     */
+    public static function getNotifyThemeTableColumns(): array
+=======
+    #[Override]
+    public function getTableColumns(): array
+>>>>>>> 6ed19256f (.)
+    {
+        return [
+            'id' => TextColumn::make('id')->sortable(),
+            'lang' => TextColumn::make('lang')->sortable(),
+            'type' => TextColumn::make('type')->sortable(),
+            'post_id' => TextColumn::make('post_id')->sortable(),
+            'post_type' => TextColumn::make('post_type')->sortable(),
+            'logo_src' => TextColumn::make('logo_src')->sortable(),
+            'created_at' => TextColumn::make('created_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+            'updated_at' => TextColumn::make('updated_at')
+                ->dateTime()
+                ->sortable()
+                ->toggleable(isToggledHiddenByDefault: true),
+        ];
+    }
+
+    #[Override]
+<<<<<<< HEAD
+    public function getTableColumns(): array
+    {
+        return self::getNotifyThemeTableColumns();
+    }
+
+    #[Override]
+=======
+>>>>>>> 6ed19256f (.)
+    public function getTableFilters(): array
+    {
+        return [
+            'lang' => SelectFilter::make('lang')->options(
+                fn (): array => NotifyThemeResource::fieldOptions('lang'),
+            ),
+            'post_type' => SelectFilter::make('post_type')->options(
+                fn (): array => NotifyThemeResource::fieldOptions('post_type'),
+            ),
+            'type' => SelectFilter::make('type')->options(
+                fn (): array => NotifyThemeResource::fieldOptions('type'),
+            ),
+        ];
+    }
+>>>>>>> .merge_file_DDHwKt
 }

@@ -12,8 +12,16 @@ status: draft
 
 # Correzione Sintassi Obsoleta Array() - Modulo Geo
 
+<<<<<<< .merge_file_faW3Cb
+=======
+**Data**: 6 Gennaio 2025
+**Priorità**: ALTA
+<<<<<<< HEAD
+>>>>>>> .merge_file_XLXO76
 **Data**: 6 Gennaio 2025  
 **Priorità**: ALTA  
+=======
+>>>>>>> 6ed19256f (.)
 **Stato**: ✅ RISOLTO
 
 ## 🚨 Problema Identificato
@@ -125,9 +133,18 @@ php -l laravel/Modules/Geo/lang/it/address.php
 
 ## 📚 Collegamenti
 
+<<<<<<< .merge_file_faW3Cb
 - [Address Translation Fixes](address-translation-fixes-correzioni-traduzioni-gennaio.md) - Correzioni traduzioni address
+=======
+- [Address Translation Fixes](address-translation-fixes-2025-01-27.md) - Correzioni traduzioni address
 - [README Modulo Geo](README.md) - Documentazione principale
 - [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+<<<<<<< HEAD
+>>>>>>> .merge_file_XLXO76
+- [README Modulo Geo](README.md) - Documentazione principale
+- [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
+=======
+>>>>>>> 6ed19256f (.)
 
 ## 🎯 Lezioni Apprese
 
@@ -143,5 +160,13 @@ php -l laravel/Modules/Geo/lang/it/address.php
 - Mantenere standard di codice uniformi
 
 ---
+<<<<<<< .merge_file_faW3Cb
 **Ultimo aggiornamento**: 6 Gennaio 2025  
 **Autore**: AI Assistant  
+=======
+
+**Ultimo aggiornamento**: 6 Gennaio 2025
+**Autore**: AI Assistant
+**Ultimo aggiornamento**: 6 Gennaio 2025  
+**Autore**: AI Assistant  
+>>>>>>> .merge_file_XLXO76

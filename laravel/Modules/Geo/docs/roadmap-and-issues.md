@@ -157,8 +157,15 @@ Cache::remember("geocode:{$address}", 3600, function() use ($address) {
 ## 🔗 Collegamenti
 
 - [← Geo Module README](../README.md)
+<<<<<<< .merge_file_74GW50
 - [← Fixcity Integration](../../fixcity/docs/roadmap-and-issues.md)
 - [← Root Documentation](../../../../docs/index.md)
+=======
+- [← Fixcity Integration](../../Fixcity/docs/roadmap-and-issues.md)
+- [← Geo Module README](../readme.md)
+- [← Fixcity Integration](../../fixcity/docs/roadmap-and-issues.md)
+- [← Root Documentation](../../../docs/index.md)
+>>>>>>> .merge_file_ePzHzL
 
 ---
 

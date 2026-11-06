@@ -216,12 +216,33 @@ php artisan docs:validate
 ## 🔗 Collegamenti Documentazione
 
 ### Moduli Principali
+<<<<<<< HEAD
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [<nome progetto> - Core Business](../modules/<nome progetto>/docs/optimization-analysis.md)
 - [User - Authentication](../../User/docs/optimization-analysis.md)
 - [Xot - Framework Base](../modules/xot/docs/optimization-analysis.md)
 - [UI - Interface Components](../modules/ui/docs/optimization-analysis.md)
+<<<<<<< .merge_file_8md8sf
 - [Tenant - Multi-Tenancy](../../Tenant/docs/optimization-analysis.md)
+=======
+- [Tenant - Multi-Tenancy](../modules/tenant/docs/optimization-analysis.md)
+
+### Moduli di Supporto
+- [Activity - Logging](../modules/activity/docs/optimization-analysis.md)
+- [Geo - Geolocation](../modules/geo/docs/optimization-analysis.md)
+- [Gdpr - Privacy](../modules/gdpr/docs/optimization-analysis.md)
+- [Media - File Management](../modules/media/docs/optimization-analysis.md)
+- [Lang - Translations](../modules/lang/docs/optimization-analysis.md)
+- [Notify - Notifications](../modules/notify/docs/optimization-analysis.md)
+=======
+>>>>>>> 6ed19256f (.)
+- [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
+- [<nome progetto> - Core Business](../Modules/<nome progetto>/docs/optimization-analysis.md)
+- [User - Authentication](../Modules/User/docs/optimization-analysis.md)
+- [Xot - Framework Base](../Modules/Xot/docs/optimization-analysis.md)
+- [UI - Interface Components](../Modules/UI/docs/optimization-analysis.md)
+- [Tenant - Multi-Tenancy](../Modules/Tenant/docs/optimization-analysis.md)
+>>>>>>> .merge_file_iQLPAc
 
 ### Moduli di Supporto
 - [Activity - Logging](../../Activity/docs/optimization-analysis.md)

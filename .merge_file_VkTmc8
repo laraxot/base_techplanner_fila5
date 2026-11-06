@@ -1,0 +1,137 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Media\Actions;
+
+use Illuminate\Support\Facades\Storage;
+<<<<<<< HEAD
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\QueueableAction\QueueableAction;
+use UnexpectedValueException;
+
+use function Safe\file_put_contents;
+use function Safe\tempnam;
+use function Safe\unlink;
+=======
+use function Safe\file_put_contents;
+use function Safe\tempnam;
+use function Safe\unlink;
+use Spatie\MediaLibrary\HasMedia;
+use Webmozart\Assert\Assert;
+>>>>>>> 6ed19256f (.)
+
+class SaveAttachmentsAction
+{
+    use QueueableAction;
+
+    /**
+     * Save attachments to media library.
+     *
+     * @param  array<int, string>  $attachments
+     * @param  array<string, mixed>  $data
+     */
+    public function execute(HasMedia $record, array $attachments, array $data, string $disk = 'attachments'): void
+    {
+        $dataAttachments = [];
+        $storage = Storage::disk($disk);
+
+        foreach ($attachments as $attachment) {
+            if (! array_key_exists($attachment, $data)) {
+                continue;
+            }
+
+            $path = $data[$attachment];
+            if (! is_string($path)) {
+                throw new UnexpectedValueException("Attachment [{$attachment}] must resolve to a string path.");
+            }
+
+            if ($path === '' || ! $storage->exists($path)) {
+                continue;
+            }
+
+            $fileContent = $storage->get($path);
+<<<<<<< .merge_file_VkTmc8
+            if (! is_string($fileContent)) {
+                throw new UnexpectedValueException("Attachment [{$attachment}] could not be read as a string.");
+            }
+=======
+<<<<<<< HEAD
+            $tempPath = tempnam(storage_path('framework/cache'), 'media_');
+=======
+            $tempPath = tempnam(sys_get_temp_dir(), 'media_');
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_AJGYue
+
+            $tempPath = tempnam(storage_path('framework/cache'), 'media_');
+
+            try {
+                file_put_contents($tempPath, $fileContent);
+
+                $media = $record->addMedia($tempPath)
+                    ->usingFileName(basename($path))
+                    ->toMediaCollection($attachment, $disk);
+
+                $dataAttachments[$attachment] = $media->getPathRelativeToRoot();
+            } finally {
+                if (file_exists($tempPath)) {
+                    unlink($tempPath);
+                }
+            }
+        }
+
+        if ($dataAttachments !== []) {
+            $record->update($dataAttachments);
+        }
+    }
+<<<<<<< .merge_file_VkTmc8
+=======
+
+    /**
+     * @param  array<int, string>  $attachments
+     * @param  array<string, mixed>  $data
+     */
+    public function executeOLD(HasMedia $record, array $attachments, array $data, string $disk = 'attachments'): void
+    {
+        $data_attachments = [];
+        foreach ($attachments as $attachment) {
+            Assert::string($attachment, '['.__LINE__.']['.class_basename(self::class).']');
+            $path = $data[$attachment];
+            Assert::string($path, '['.__LINE__.']['.class_basename(self::class).']');
+            $full_path = Storage::disk($disk)->path($path);
+            // *
+            dddx([
+                'exists' => Storage::disk($disk)->exists($path),
+                'path' => $path,
+                'disk' => $disk,
+                'full_path' => Storage::disk($disk)->path($path),
+            ]);
+            // */
+            if (! method_exists($record, 'addMediaFromDisk')) {
+                throw new Exception('Method addMediaFromDisk not found');
+            }
+            $fileAdder = $record->addMediaFromDisk($path, $disk);
+<<<<<<< HEAD
+            Assert::nullOrIsInstanceOf($fileAdder, FileAdder::class);
+=======
+>>>>>>> 6ed19256f (.)
+            // $media=$record->addMediaFromRequest($attachment)
+
+            // $media=$record->addMedia($full_path)
+            if ($fileAdder === null) {
+                continue;
+            }
+<<<<<<< HEAD
+            $media = $fileAdder->toMediaCollection($attachment);
+=======
+            /** @phpstan-ignore-next-line - Spatie MediaLibrary fluent API */
+            $media = $fileAdder->toMediaCollection($attachment);
+            /** @phpstan-ignore-next-line - Spatie MediaLibrary Media model */
+>>>>>>> 6ed19256f (.)
+            $data_attachments[$attachment] = $media->getPathRelativeToRoot();
+        }
+        /** @var array<string, string> $data_attachments */
+        $record->update($data_attachments);
+    }
+>>>>>>> .merge_file_AJGYue
+}

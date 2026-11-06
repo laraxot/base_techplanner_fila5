@@ -14,7 +14,15 @@ class ClusterLocationsAction
     use QueueableAction;
 
     public function __construct(
+<<<<<<< .merge_file_KoPNPC
         private readonly CalculateDistanceActionContract $distanceCalculator,
+=======
+<<<<<<< HEAD
+        private CalculateDistanceActionContract $distanceCalculator,
+=======
+        private CalculateDistanceAction $distanceCalculator,
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_vtaEoB
     ) {
     }
 
@@ -33,7 +41,11 @@ class ClusterLocationsAction
         $clusters = [];
 
         foreach ($locations as $location) {
+<<<<<<< HEAD
             if (! $location instanceof LocationData) {
+=======
+            if (! ($location instanceof LocationData)) {
+>>>>>>> 6ed19256f (.)
                 throw InvalidLocationException::invalidData();
             }
 

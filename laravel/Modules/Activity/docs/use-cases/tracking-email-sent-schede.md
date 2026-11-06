@@ -217,11 +217,7 @@ use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Modules\Activity\Models\Activity;
 
-<<<<<<< HEAD
 class SchedaEmailStatsWidget extends BaseWidget
-=======
-class SchedeEmailStatsWidget extends BaseWidget
->>>>>>> 6ed19256f (.)
 {
     protected function getStats(): array
     {
@@ -371,16 +367,9 @@ public function it_logs_activity_when_sending_email(): void
 - [Ptv - Analisi Filosofica](../../../Ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
 - [Ptv - Implementation Guide](../../../Ptv/docs/activity-log-email-tracking-implementation.md)
 - [Activity - README](../../README.md)
-<<<<<<< HEAD
 - [Ptv - Analisi Filosofica](../../../ptv/docs/activity-log-email-tracking-philosophical-analysis.md)
 - [Ptv - Implementation Guide](../../../ptv/docs/activity-log-email-tracking-implementation.md)
-<<<<<<< .merge_file_WAA47h
 - [Activity - README](../../README.md)
-=======
-- [Activity - README](../../readme.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_vMrGVC
 - [Activity - LogActivityAction](../../app/Actions/LogActivityAction.php)
 
 ---
@@ -388,8 +377,4 @@ public function it_logs_activity_when_sending_email(): void
 **Ultimo Aggiornamento:** 2025-01-22
 **Versione:** 1.0
 **Autore:** System Integration Documentation
-<<<<<<< HEAD
 **Stato:** ✅ Production Ready
-=======
-**Stato:** ✅ Production Ready
->>>>>>> 6ed19256f (.)

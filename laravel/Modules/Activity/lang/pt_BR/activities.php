@@ -1,31 +1,17 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Histórico',
     'title' => 'Histórico :record',
     'default_datetime_format' => 'd/m/Y H:i:s',
-=======
-return [
-    'breadcrumb' => 'Histórico',
-
-    'title' => 'Histórico :record',
-
-    'default_datetime_format' => 'd/m/Y H:i:s',
-
->>>>>>> 6ed19256f (.)
     'table' => [
         'field' => 'Campo',
         'old' => 'Antes',
         'new' => 'Depois',
         'restore' => 'Restaurado',
     ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
     'events' => [
         'updated' => 'Atualizado',
         'created' => 'Criado',
@@ -34,7 +20,6 @@ return [
         'restore_successful' => 'Restaurado com sucesso',
         'restore_failed' => 'Falha na restauração',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -48,6 +33,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

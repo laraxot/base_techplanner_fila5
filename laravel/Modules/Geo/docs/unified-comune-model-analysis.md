@@ -41,7 +41,14 @@ status: draft
 
 ### Struttura Proposta
 ```php
+<<<<<<< .merge_file_Ly2C6f
+=======
+class Comune extends GeoJsonModel
+<<<<<<< HEAD
+>>>>>>> .merge_file_YvMWwW
 class Comune extends GeoJsonModel 
+=======
+>>>>>>> 6ed19256f (.)
 {
     // Tutti i dati in un'unica struttura
     protected static string $jsonFile = 'resources/json/comuni.json';
@@ -51,7 +58,15 @@ class Comune extends GeoJsonModel
     public static function getProvinceByRegione($regione) { /* ... */ }
     public static function getComuniByProvincia($provincia) { /* ... */ }
     public static function getCapByComune($comune) { /* ... */ }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_Ly2C6f
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_YvMWwW
     // Metodo unificato
     public static function getDatiCompleti($filtri = []) { /* ... */ }
 }
@@ -96,7 +111,14 @@ class Comune extends GeoJsonModel
 | Utilizzo Memoria     | 25MB            | 18MB             | +28%      |
 | Manutenzione         | Media           | Alta             | +40%      |
 
+<<<<<<< HEAD
 
+<<<<<<< .merge_file_Ly2C6f
+=======
+
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_YvMWwW
 ## Raccomandazione (90% Favorevole)
 
 Si consiglia di procedere con l'unificazione per i seguenti motivi:

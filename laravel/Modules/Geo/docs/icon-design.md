@@ -53,7 +53,21 @@ FilamentIcon::register([
 ```
 
 ## Collegamenti
+<<<<<<< .merge_file_FTipve
+=======
+<<<<<<< HEAD
+- [Geo Module Documentation](./README.md)
+>>>>>>> .merge_file_K428yc
 - [Design System Globale](../../../../../docs/module-icons-design-system.md)
 - [Geo Module Documentation](./README.md)
 
 *Creato: Agosto 2025*
+<<<<<<< .merge_file_FTipve
+=======
+=======
+- [Design System Globale](../../../../docs/module-icons-design-system.md)
+- [Geo Module Documentation](./README.md)
+
+*Creato: Agosto 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_K428yc

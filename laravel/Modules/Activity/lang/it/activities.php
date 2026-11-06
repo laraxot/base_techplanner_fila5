@@ -4,26 +4,14 @@ declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Cronologia',
-<<<<<<< HEAD
     'title' => 'Cronologia :record',
     'default_datetime_format' => 'd/m/Y, H:i:s',
-=======
-
-    'title' => 'Cronologia :record',
-
-    'default_datetime_format' => 'd/m/Y, H:i:s',
-
->>>>>>> 6ed19256f (.)
     'table' => [
         'field' => 'Campo',
         'old' => 'Vecchio',
         'new' => 'Nuovo',
         'restore' => 'Ripristina',
     ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
     'events' => [
         'updated' => 'Aggiornato',
         'created' => 'Creato',
@@ -32,25 +20,16 @@ return [
         'restore_successful' => 'Ripristinato con successo',
         'restore_failed' => 'Ripristino fallito',
     ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
     'subject' => [
         'type' => 'Tipo',
         'id' => 'ID',
         'unknown' => 'Sconosciuto',
     ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
     'metadata' => [
         'log_name' => 'Log',
         'batch_uuid' => 'Batch UUID',
         'properties' => 'Proprietà',
     ],
-<<<<<<< HEAD
     'no_changes' => 'Nessuna modifica registrata',
     'no_description' => 'Nessuna descrizione disponibile',
     'modified' => 'Modificato',
@@ -101,13 +80,4 @@ return [
             'tooltip' => 'delete',
         ],
     ],
-=======
-
-    'no_changes' => 'Nessuna modifica registrata',
-    'no_description' => 'Nessuna descrizione disponibile',
-
-    'modified' => 'Modificato',
-    'fields_modified' => ':count campo modificato|:count campi modificati',
-    'anonymous' => 'Utente Anonimo',
->>>>>>> 6ed19256f (.)
 ];

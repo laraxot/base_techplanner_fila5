@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Filament\Forms\Components;
 
+use Closure;
+use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Toggle;
 use Filament\Schemas\Components\Component;
@@ -102,11 +104,25 @@ class AddressesField extends XotBaseRepeater
         // Campo name: visibile solo con più di 1 elemento
         $baseSchema['name'] = TextInput::make('name')
             ->maxLength(255)
+<<<<<<< .merge_file_ke5Yc5
             ->visible(fn (Get $get): bool => count(self::repeaterAddresses($get)) > 1)
+=======
+            ->visible(function (Get $get): bool {
+<<<<<<< HEAD
+                return count(self::addressesFromGet($get)) > 1;
+=======
+                $addresses = $get('../../addresses') ?? [];
+
+                /* @phpstan-ignore argument.type */
+                return count($addresses) > 1;
+>>>>>>> 6ed19256f (.)
+            })
+>>>>>>> .merge_file_OdWk9B
             ->live();
 
         // Campo is_primary: logica complessa per esclusività
         $baseSchema['is_primary'] = Toggle::make('is_primary')
+<<<<<<< .merge_file_ke5Yc5
             ->visible(fn (Get $get): bool => count(self::repeaterAddresses($get)) > 1)
             ->default(fn (Get $get): bool => count(self::repeaterAddresses($get)) <= 1)
             ->afterStateUpdated(function (mixed $state, Set $set, Get $get, Component $component): void {
@@ -115,17 +131,57 @@ class AddressesField extends XotBaseRepeater
                     $addresses = self::repeaterAddresses($get);
 
                     // Estrae l'indice dal path del componente (es. "addresses.0.is_primary")
+=======
+            ->visible(function (Get $get): bool {
+<<<<<<< HEAD
+                return count(self::addressesFromGet($get)) > 1;
+            })
+            ->default(function (Get $get): bool {
+                return count(self::addressesFromGet($get)) <= 1;
+            })
+            ->afterStateUpdated(function ($state, Closure $set, Get $get, Component $component): void {
+                if (true === $state) {
+                    $addresses = self::addressesFromGet($get);
+
+=======
+                $addresses = $get('../../addresses') ?? [];
+
+                /* @phpstan-ignore argument.type */
+                return count($addresses) > 1;
+            })
+            ->default(function (Get $get): bool {
+                $addresses = $get('../../addresses') ?? [];
+
+                // Se è il primo elemento o c'è un solo elemento, default true
+                /* @phpstan-ignore argument.type */
+                return count($addresses) <= 1;
+            })
+            ->afterStateUpdated(function ($state, $set, Get $get, Component $component): void {
+                // Se questo diventa primary, disattiva tutti gli altri
+                if (true === $state) {
+                    $addresses = $get('../../addresses') ?? [];
+
+                    // Estrae l'indice dal path del componente (es. "addresses.0.is_primary")
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OdWk9B
                     $path = $component->getStatePath();
                     preg_match('/addresses\.(\d+)\.is_primary/', $path ?? '', $matches);
                     $currentIndex = $matches[1] ?? null;
 
+<<<<<<< .merge_file_ke5Yc5
                     if ($currentIndex !== null) {
                         // Disattiva is_primary negli altri elementi
+=======
+                    if (null !== $currentIndex) {
+                        // Disattiva is_primary negli altri elementi
+                        /* @phpstan-ignore foreach.nonIterable */
+>>>>>>> .merge_file_OdWk9B
                         foreach ($addresses as $index => $address) {
                             $indexStr = app(SafeStringCastAction::class)->execute($index);
                             $currentIndexStr = app(SafeStringCastAction::class)
                                 ->execute($currentIndex);
                             if ($indexStr !== $currentIndexStr) {
+                                /* @phpstan-ignore callable.nonCallable */
                                 $set('../../addresses.'.$indexStr.'.is_primary', false);
                             }
                         }
@@ -133,9 +189,21 @@ class AddressesField extends XotBaseRepeater
                 }
             })
             ->live()
+<<<<<<< .merge_file_ke5Yc5
             ->dehydrateStateUsing(function (mixed $state, Get $get): bool {
                 // Se c'è un solo elemento, forza sempre true
                 if (count(self::repeaterAddresses($get)) <= 1) {
+=======
+            ->dehydrateStateUsing(function ($state, Get $get): bool {
+<<<<<<< HEAD
+                if (count(self::addressesFromGet($get)) <= 1) {
+=======
+                $addresses = $get('../../addresses') ?? [];
+                // Se c'è un solo elemento, forza sempre true
+                /* @phpstan-ignore argument.type */
+                if (count($addresses) <= 1) {
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_OdWk9B
                     return true;
                 }
 
@@ -143,5 +211,15 @@ class AddressesField extends XotBaseRepeater
             });
 
         return $baseSchema;
+    }
+
+    /**
+     * @return array<int|string, mixed>
+     */
+    private static function addressesFromGet(Get $get): array
+    {
+        $addresses = $get('../../addresses');
+
+        return is_array($addresses) ? $addresses : [];
     }
 }

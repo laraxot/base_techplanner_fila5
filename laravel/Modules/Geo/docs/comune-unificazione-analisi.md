@@ -68,8 +68,20 @@ status: draft
 - [geo-json-model.md](geo-json-model.md)
 - [geo-sushi-comparison.md](geo-sushi-comparison.md)
 - [module_geo.md](module_geo.md)
+<<<<<<< HEAD
 - [Xot/module-structure.md](../../xot/project_docs/module-structure.md)
 
 ---
 
 Responsabile: Cascade AI 
+<<<<<<< .merge_file_BQffBA
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Xot/module-structure.md](../../Xot/project_docs/module-structure.md)
+
+---
+
+**Ultimo aggiornamento:** {{date('Y-m-d')}}
+Responsabile: Cascade AI
+>>>>>>> .merge_file_B5OEJU

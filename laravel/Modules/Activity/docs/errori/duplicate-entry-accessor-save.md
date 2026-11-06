@@ -289,11 +289,7 @@ abstract class BaseScheda extends BaseModel
 ### Fase 1: Audit Completo
 
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/ptvx/laravel
->>>>>>> 6ed19256f (.)
 grep -n "\$this->save()" Modules/Sigma/app/Models/Traits/SchedaTrait.php
 ```
 
@@ -464,16 +460,9 @@ class SchedaObserver
 - [Activity Module - README](../README.md)
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessors.md)
-<<<<<<< .merge_file_rIPvwS
 - [Activity Module - README](../README.md)
-=======
-<<<<<<< HEAD
-- [Activity Module - README](../readme.md)
->>>>>>> .merge_file_qq4ABE
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessors.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Issue Tracker
 - [GitHub Issue #XXX: Refactor SchedaTrait Accessor with $this->save()](link)
@@ -486,8 +475,4 @@ class SchedaObserver
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait
 **Fix Definitivo**: Refactoring accessor in SchedaTrait
-<<<<<<< HEAD
 **Impatto**: Tutti i modelli che usano BaseScheda (IndennitaResponsabilita, Progressioni, etc.)
-=======
-**Impatto**: Tutti i modelli che usano BaseScheda (IndennitaResponsabilita, Progressioni, etc.)
->>>>>>> 6ed19256f (.)

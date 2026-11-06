@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_zsOQp9
 ---
 title: "Chiarimento sulla Struttura delle Interfacce"
 type: concept
@@ -18,16 +19,28 @@ related:
   - ../best-practices/naming-conventions.md
 status: draft
 ---
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_1HigQJ
 # Chiarimento sulla Struttura delle Interfacce 
+=======
+# Chiarimento sulla Struttura delle Interfacce
+>>>>>>> 6ed19256f (.)
 
 ## Struttura Corretta per le Interfacce SMS
 
 , le interfacce per le azioni SMS seguono questa struttura:
 
 ```
+<<<<<<< HEAD
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+=======
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+/var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+>>>>>>> 6ed19256f (.)
 ```
 
 Con il namespace corrispondente:

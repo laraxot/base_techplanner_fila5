@@ -11,7 +11,6 @@ qmd: "collegamento alle traduzioni del modulo activity activity"
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni qui:
-<<<<<<< .merge_file_dQKE79
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
@@ -21,45 +20,11 @@ Consulta la documentazione delle traduzioni qui:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../Lang/docs/structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
-=======
-<<<<<<< HEAD
-- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../lang/docs/structure.md)
-- [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
-=======
-- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
-- [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
->>>>>>> 6ed19256f (.)
-
-Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
-
-Consulta la documentazione delle traduzioni qui:
-<<<<<<< HEAD
-- [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../lang/docs/structure.md)
-- [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
-=======
-- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
-- [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
->>>>>>> 6ed19256f (.)
-
->>>>>>> .merge_file_BL5W7C
 ## Collegamento Bidirezionale
 
 ## Collegamenti
 
-<<<<<<< .merge_file_dQKE79
 - [Torna a README](./README.md)- [Vai a Struttura](./structure.md)
-=======
-<<<<<<< HEAD
-- [Torna a README](./readme.md)
-=======
-- [Torna a README](./README.md)
->>>>>>> 6ed19256f (.)
-- [Vai a Struttura](./structure.md)
->>>>>>> .merge_file_BL5W7C
 - [Vai a Traduzioni](./translations.md)
 
 Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in questo modulo e la relativa sezione in [Lang](../../Lang/docs/).
@@ -71,40 +36,6 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 > Aggiorna entrambi i riferimenti se aggiungi nuove chiavi di traduzione o modifichi la struttura.
 
 ## Collegamenti tra versioni di lang-link.md
-<<<<<<< .merge_file_dQKE79
-=======
-<<<<<<< HEAD
-* [lang-link.md](laravel/modules/chart/docs/lang-link.md)
-* [lang-link.md](laravel/modules/reporting/docs/lang-link.md)
-* [lang-link.md](laravel/modules/gdpr/docs/lang-link.md)
-* [lang-link.md](laravel/modules/notify/docs/lang-link.md)
-* [lang-link.md](laravel/modules/xot/docs/lang-link.md)
-* [lang-link.md](laravel/modules/dental/docs/lang-link.md)
-* [lang-link.md](laravel/modules/user/docs/lang-link.md)
-* [lang-link.md](laravel/modules/ui/docs/lang-link.md)
-* [lang-link.md](laravel/modules/job/docs/lang-link.md)
-* [lang-link.md](laravel/modules/media/docs/lang-link.md)
-* [lang-link.md](laravel/modules/tenant/docs/lang-link.md)
-* [lang-link.md](laravel/modules/activity/docs/lang-link.md)
-* [lang-link.md](laravel/modules/patient/docs/lang-link.md)
-* [lang-link.md](laravel/modules/cms/docs/lang-link.md)
-
-* [lang-link.md](laravel/modules/chart/docs/lang-link.md)
-* [lang-link.md](laravel/modules/reporting/docs/lang-link.md)
-* [lang-link.md](laravel/modules/gdpr/docs/lang-link.md)
-* [lang-link.md](laravel/modules/notify/docs/lang-link.md)
-* [lang-link.md](laravel/modules/xot/docs/lang-link.md)
-* [lang-link.md](laravel/modules/dental/docs/lang-link.md)
-* [lang-link.md](laravel/modules/user/docs/lang-link.md)
-* [lang-link.md](laravel/modules/ui/docs/lang-link.md)
-* [lang-link.md](laravel/modules/job/docs/lang-link.md)
-* [lang-link.md](laravel/modules/media/docs/lang-link.md)
-* [lang-link.md](laravel/modules/tenant/docs/lang-link.md)
-* [lang-link.md](laravel/modules/activity/docs/lang-link.md)
-* [lang-link.md](laravel/modules/patient/docs/lang-link.md)
-* [lang-link.md](laravel/modules/cms/docs/lang-link.md)
-=======
->>>>>>> .merge_file_BL5W7C
 * [lang-link.md](laravel/Modules/Chart/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Reporting/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Gdpr/docs/lang-link.md)
@@ -133,9 +64,4 @@ Per ogni risorsa o campo localizzato, vedi anche il file corrispondente in quest
 * [lang-link.md](laravel/Modules/Tenant/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Activity/docs/lang-link.md)
 * [lang-link.md](laravel/Modules/Patient/docs/lang-link.md)
-<<<<<<< .merge_file_dQKE79
 * [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
-=======
-* [lang-link.md](laravel/Modules/Cms/docs/lang-link.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_BL5W7C

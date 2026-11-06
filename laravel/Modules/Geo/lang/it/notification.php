@@ -158,7 +158,11 @@ return [
         'mail' => 'Email',
         'database' => 'Database',
         'broadcast' => 'Broadcast',
+<<<<<<< HEAD
         'nexmo' => 'SMS (Nexmo]',
+=======
+        'nexmo' => 'SMS (Nexmo)',
+>>>>>>> 6ed19256f (.)
         'slack' => 'Slack',
         'telegram' => 'Telegram',
         'push' => 'Push Notification',

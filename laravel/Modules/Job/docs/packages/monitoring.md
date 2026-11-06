@@ -98,12 +98,28 @@ Artisan::call('queue:forget', ['id' => 'all']);
 ### Versione HEAD
 
 ## Collegamenti tra versioni di monitoring.md
+<<<<<<< .merge_file_MyxR1K
+=======
+* [monitoring.md](../../../Job/docs/packages/monitoring.md)
+* [monitoring.md](../../../../Themes/One/docs/monitoring.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_Thy5s5
 * [monitoring.md](../../../job/docs/packages/monitoring.md)
 * [monitoring.md](../../../../themes/one/docs/monitoring.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
 ---
 ### Versione Incoming
 
+<<<<<<< .merge_file_MyxR1K
 ---
+=======
+<<<<<<< HEAD
+---
+=======
+---
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Thy5s5

@@ -308,9 +308,19 @@ class JobPageTest extends TestCase
 ### Versione HEAD
 
 ## Collegamenti tra versioni di implementation.md
+<<<<<<< .merge_file_bUu3Yy
 * [implementation.md](../../Gdpr/docs/implementation.md)
+=======
+* [implementation.md](../../../Gdpr/docs/implementation.md)
+* [implementation.md](../../../Xot/docs/implementation.md)
+* [implementation.md](../../../Job/docs/implementation.md)
+<<<<<<< HEAD
+* [implementation.md](../../../gdpr/docs/implementation.md)
+>>>>>>> .merge_file_1AyBs2
 * [implementation.md](../../../xot/docs/implementation.md)
 * [implementation.md](../../../job/docs/implementation.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 

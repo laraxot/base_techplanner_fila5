@@ -82,7 +82,15 @@ class Region extends Model
         ['codice' => 'LAZ', 'nome' => 'Lazio'],
         // ...
     ];
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_VOjcBM
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_9IsC7P
     // Oppure con caricamento da file JSON
     protected function getRows()
     {
@@ -196,10 +204,24 @@ Una migrazione a Laravel Sushi potrebbe essere riconsiderata, con un costo di co
 
 ## Collegamenti a Documentazione Correlata
 
+<<<<<<< .merge_file_VOjcBM
+=======
+- [Modulo Core: Architettura](../../Xot/project_docs/module-architecture.md)
+- [Best Practices per i Modelli](../../Xot/project_docs/model-best-practices.md)
+- [Pattern di Data Access](../../Xot/project_docs/data-access-patterns.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_9IsC7P
 - [Modulo Core: Architettura](../../xot/project_docs/module-architecture.md)
 - [Best Practices per i Modelli](../../xot/project_docs/model-best-practices.md)
 - [Pattern di Data Access](../../xot/project_docs/data-access-patterns.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Laravel Sushi GitHub](https://github.com/calebporzio/sushi)
 
 ---
+<<<<<<< .merge_file_VOjcBM
 *Documento creato il: 27/05/2025*
+=======
+
+*Documento creato il: 27/05/2025*
+>>>>>>> .merge_file_9IsC7P

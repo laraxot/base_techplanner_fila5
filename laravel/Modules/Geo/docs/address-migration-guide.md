@@ -19,15 +19,29 @@ Quando progettiamo la tabella per il modello `Address`, è importante considerar
 ### Migrazione Proposta
 
 ```php
+<<<<<<< .merge_file_mGw78R
+=======
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+use Modules\Geo\Enums\AddressItemEnum;
+
+public function up(): void
+{
+    Schema::create('addresses', function (Blueprint $table): void {
+<<<<<<< HEAD
+>>>>>>> .merge_file_TZaUmV
 public function up(): void
 {
     Schema::create('addresses', function (Blueprint $table) {
+=======
+>>>>>>> 6ed19256f (.)
         $table->id();
         $table->nullableMorphs('addressable'); // Relazione polimorfica
         $table->string('name')->nullable()->comment('Nome identificativo dell\'indirizzo');
         $table->text('description')->nullable()->comment('Descrizione dell\'indirizzo');
         $table->string('type', 20)->nullable()->comment('Tipo di indirizzo (casa, lavoro, ecc.)');
         $table->boolean('is_primary')->default(false)->comment('Indica se è l\'indirizzo principale');
+<<<<<<< HEAD
         
         // Componenti dell'indirizzo
         $table->string('street_number', 20)->nullable()->comment('Numero civico');
@@ -48,6 +62,18 @@ public function up(): void
         // Dati aggiuntivi
         $table->json('extra_data')->nullable()->comment('Dati aggiuntivi in formato JSON');
         
+<<<<<<< .merge_file_mGw78R
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+        // Tutti i componenti dell'indirizzo definiti da AddressItemEnum (route, locality, ...)
+        AddressItemEnum::columns($table);
+
+        // Dati aggiuntivi
+        $table->json('extra_data')->nullable()->comment('Dati aggiuntivi in formato JSON');
+
+>>>>>>> .merge_file_TZaUmV
         // Timestamp standard
         $table->timestamps();
     });
@@ -64,7 +90,14 @@ Nella tua domanda hai giustamente notato:
 > $table->string('address_region', 100)->nullable()->comment('Regione/Provincia');
 > $table->string('postal_code', 20)->nullable()->comment('Codice postale');
 > $table->string('address_country', 2)->nullable()->comment('Codice paese ISO 3166-1 alpha-2');`
+<<<<<<< .merge_file_mGw78R
+=======
+>
+<<<<<<< HEAD
+>>>>>>> .merge_file_TZaUmV
 > 
+=======
+>>>>>>> 6ed19256f (.)
 > ripetere "address" quando siamo già nella tabella address?
 
 Hai perfettamente ragione. Esistono diverse considerazioni riguardo alle convenzioni di naming:

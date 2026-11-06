@@ -64,12 +64,28 @@ use Sushi\Sushi;
 class Comune extends Model
 {
     use Sushi;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Indica a Sushi di non utilizzare timestamps
      */
     public $timestamps = false;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Definisce le colonne del modello
      */
@@ -79,7 +95,15 @@ class Comune extends Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Carica i dati dal file JSON
      */
@@ -87,12 +111,28 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_MHQlzQ
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
         return cache()->rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Scope per filtrare per regione
      */
@@ -101,7 +141,15 @@ class Comune extends Model
         return $query->where('regione->codice', $regionCode)
                      ->orderBy('nome');
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Scope per filtrare per provincia
      */
@@ -110,7 +158,15 @@ class Comune extends Model
         return $query->where('provincia->codice', $provinceCode)
                      ->orderBy('nome');
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Scope per cercare per nome
      */
@@ -119,7 +175,15 @@ class Comune extends Model
         return $query->where('nome', 'like', '%' . $name . '%')
                      ->orderBy('nome');
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Scope per filtrare per CAP
      */
@@ -129,7 +193,15 @@ class Comune extends Model
         // Richiede una soluzione personalizzata o un'estensione
         return $query->whereRaw("JSON_CONTAINS(cap, '\"$cap\"')");
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Verifica se il CAP è valido
      */
@@ -137,7 +209,15 @@ class Comune extends Model
     {
         return self::byCap($cap)->exists();
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Relazione con la regione
      */
@@ -145,7 +225,15 @@ class Comune extends Model
     {
         // Implementazione della relazione se necessario
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Relazione con la provincia
      */
@@ -191,11 +279,22 @@ public static function byProvince(string $provinceCode): Collection
 public static function searchByName(string $name, int $limit = 0): Collection
 {
     $query = static::query()->searchByName($name);
+<<<<<<< HEAD
     
     if ($limit > 0) {
         $query->limit($limit);
     }
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+    if ($limit > 0) {
+        $query->limit($limit);
+    }
+
+>>>>>>> .merge_file_fEoPYL
     return $query->get();
 }
 ```
@@ -317,14 +416,31 @@ use Sushi\Sushi;
 class Comune extends Model
 {
     use Sushi;
+<<<<<<< .merge_file_MHQlzQ
+=======
+
+    public $timestamps = false;
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_fEoPYL
     
     public $timestamps = false;
     
+=======
+>>>>>>> 6ed19256f (.)
     /**
      * Durata della cache in secondi (1 settimana)
      */
     protected const CACHE_TTL = 604800;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Definisce le colonne del modello
      */
@@ -334,7 +450,15 @@ class Comune extends Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
     /**
      * Ottiene i dati dal file JSON con caching
      */
@@ -342,16 +466,35 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_MHQlzQ
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_fEoPYL
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
+<<<<<<< HEAD
     
     // Scopes Eloquent per query comuni
     
     // + implementazione dei metodi attuali per compatibilità
     
+<<<<<<< .merge_file_MHQlzQ
+=======
+=======
+>>>>>>> 6ed19256f (.)
+
+    // Scopes Eloquent per query comuni
+
+    // + implementazione dei metodi attuali per compatibilità
+
+>>>>>>> .merge_file_fEoPYL
     /**
      * Pulisce tutta la cache
      */
@@ -399,4 +542,9 @@ Considerando l'analisi sopra, **raccomandiamo un'implementazione ibrida** che co
 L'implementazione ibrida rappresenta il miglior compromesso tra funzionalità Eloquent e prestazioni, mantenendo al contempo la compatibilità con il codice esistente.
 
 ---
+<<<<<<< .merge_file_MHQlzQ
 *Documento creato il: 28/05/2025*
+=======
+
+*Documento creato il: 28/05/2025*
+>>>>>>> .merge_file_fEoPYL

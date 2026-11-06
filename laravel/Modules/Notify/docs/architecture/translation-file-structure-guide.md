@@ -170,9 +170,15 @@ return [
 ## Riferimenti
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< .merge_file_EVMyia
 - [Regole di Naming per i File di Traduzione](../translation_file_naming_rules.md)
 - [Regole Generali per le Traduzioni](../../../Lang/docs/translation_keys_rules.md)
 - [Regole di Naming per i File di Traduzione](../translation_file_naming_rules.md)
 - [Regole Generali per le Traduzioni](../../../Lang/docs/translation_keys_rules.md)
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_AbsMni

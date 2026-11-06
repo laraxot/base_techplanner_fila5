@@ -40,11 +40,7 @@ class ActivityServiceProvider extends SpatieActivitylogServiceProvider
             // Ignora attività di basso valore come visualizzazioni semplici
             if ($activity->description === 'viewed' && !in_array($activity->subject_type, [
                 'Modules\\User\\Models\\User',
-<<<<<<< HEAD
                 'Modules\\<nome progetto>\\Models\\Patient',
-=======
-                'Modules\\SaluteOra\\Models\\Patient',
->>>>>>> 6ed19256f (.)
                 // Altri modelli critici...
             ])) {
                 return false;
@@ -331,25 +327,18 @@ class ListActivities extends XotBasePage
 ## Collegamenti Bidirezionali
 
 - [README Activity](./README.md)
-<<<<<<< HEAD
 - [README Activity](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Roadmap](./roadmap.md)
 - [Struttura del Modulo](./structure.md)
 ## Collegamenti
 
 - [Torna a README](./README.md)
-<<<<<<< HEAD
 - [Torna a README](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Struttura](./structure.md)
 
 ## Collegamenti tra versioni di bottlenecks.md
 * [bottlenecks.md](../../../../bashscripts/docs/bottlenecks.md)
-<<<<<<< HEAD
 * [bottlenecks.md](../../chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
@@ -368,13 +357,7 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../Media/docs/bottlenecks.md)
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../patient/docs/roadmap/bottlenecks.md)
-<<<<<<< .merge_file_Hcd7eB
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-=======
-* [bottlenecks.md](../../cms/docs/bottlenecks.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_OSjAl4
 * [bottlenecks.md](../../Chart/docs/bottlenecks.md)
 * [bottlenecks.md](../../Chart/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Gdpr/docs/bottlenecks.md)
@@ -393,8 +376,4 @@ class ListActivities extends XotBasePage
 * [bottlenecks.md](../../Media/docs/bottlenecks.md)
 * [bottlenecks.md](../../Media/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../Patient/docs/roadmap/bottlenecks.md)
-<<<<<<< HEAD
 * [bottlenecks.md](../../Cms/docs/bottlenecks.md)
-=======
-* [bottlenecks.md](../../Cms/docs/bottlenecks.md)
->>>>>>> 6ed19256f (.)

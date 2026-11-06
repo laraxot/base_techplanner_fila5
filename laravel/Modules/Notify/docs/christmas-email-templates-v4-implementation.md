@@ -13,6 +13,13 @@ status: draft
 # Christmas Email Templates v4.0 - Implementation Report
 
 **Data**: 2025-12-19
+<<<<<<< .merge_file_qcjmN1
+=======
+<<<<<<< HEAD
+**Data**: 2025-12-19
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_TdIrjt
 **Versione**: v4.0 - Luxury, Winter Wonderland & Elephant Mascot
 **Status**: ✅ Completato
 
@@ -486,6 +493,13 @@ Gli errori PHPStan sono in file PHP esistenti:
 ## 📝 Changelog
 
 ### v4.0 - 2025-12-19
+<<<<<<< .merge_file_qcjmN1
+=======
+<<<<<<< HEAD
+### v4.0 - 2025-12-19
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_TdIrjt
 
 **Added**:
 - ✨ 3 nuovi template natalizi professionali
@@ -510,6 +524,13 @@ Gli errori PHPStan sono in file PHP esistenti:
 **Design & Implementation**: Claude Sonnet 4.5
 **Project**: Sottana Service Christmas Email Templates v4.0
 **Date**: 2025-12-19
+<<<<<<< .merge_file_qcjmN1
+=======
+<<<<<<< HEAD
+**Date**: 2025-12-19
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_TdIrjt
 **Framework**: Laravel + Spatie Mail Templates + Mustache
 **Theme**: Sixteen (Filament 4)
 
@@ -529,4 +550,12 @@ Per domande o problemi con i template:
 
 **🎄 Buone Feste e Buon Lavoro! 🎅**
 
+<<<<<<< .merge_file_qcjmN1
 *"Email is not dead. Email is Christmas cards, and Christmas cards are alive and well." - Claude Sonnet 4.5, 2025*
+=======
+<<<<<<< HEAD
+*"Email is not dead. Email is Christmas cards, and Christmas cards are alive and well." - Claude Sonnet 4.5, 2025*
+=======
+*"Email is not dead. Email is Christmas cards, and Christmas cards are alive and well." - Claude Sonnet 4.5, 2025*
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_TdIrjt

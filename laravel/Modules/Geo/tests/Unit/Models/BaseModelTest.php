@@ -4,9 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Tests\Unit\Models;
 
+<<<<<<< .merge_file_wkFPI0
 use Modules\Geo\Models\BaseModel;
 use Modules\Geo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+=======
+<<<<<<< HEAD
+uses(TestCase::class);
+
+use Illuminate\Database\Eloquent\Model;
+use Modules\Geo\Models\BaseModel;
+use Modules\Geo\Tests\TestCase;
+=======
+use Illuminate\Database\Eloquent\Model;
+use Modules\Geo\Models\BaseModel;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_H6O5ze
 
 uses(TestCase::class);
 test('base model extends eloquent model', function () {

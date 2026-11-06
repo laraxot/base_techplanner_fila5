@@ -15,6 +15,7 @@ status: draft
 ## 🎯 Errori Risolti
 
 ### 1. StoredEventFactory.php ✅
+<<<<<<< HEAD
 **Errore**: `array_merge` con parametri mixed  
 **Soluzione**: Cast esplicito `is_array()` per type safety
 
@@ -24,12 +25,33 @@ status: draft
 
 ### 3. File Traduzione ✅
 **Errore**: Chiavi 'navigation' e 'fields' duplicate  
+<<<<<<< .merge_file_qw0Obh
+=======
+=======
+>>>>>>> 6ed19256f (.)
+**Errore**: `array_merge` con parametri mixed
+**Soluzione**: Cast esplicito `is_array()` per type safety
+
+### 2. ActivityMassSeeder.php ✅
+**Errore**: `Activity::factory()` metodo non trovato
+**Soluzione**: Utilizzo diretto `ActivityFactory::new()`
+
+### 3. File Traduzione ✅
+**Errore**: Chiavi 'navigation' e 'fields' duplicate
+>>>>>>> .merge_file_gXiIpr
 **Soluzione**: Rimozione sezioni duplicate
 
 ## 📊 Verifica PHPStan Level 9
 
 ```bash
+<<<<<<< .merge_file_qw0Obh
+=======
+# ✅ StoredEventFactory: No errors
+<<<<<<< HEAD
+>>>>>>> .merge_file_gXiIpr
 # ✅ StoredEventFactory: No errors  
+=======
+>>>>>>> 6ed19256f (.)
 # ✅ ActivityMassSeeder: No errors
 # ✅ lang/de/activity.php: No errors
 # ✅ lang/en/activity.php: No errors
@@ -52,3 +74,4 @@ array_merge(
 \Modules\Module\Database\Factories\ModelFactory::new()
 ```
 
+*Ultimo aggiornamento: gennaio 2025*

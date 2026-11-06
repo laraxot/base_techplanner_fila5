@@ -11,7 +11,27 @@ audit-coverage/
 *.bak
 *.bakcup
 /build/
+<<<<<<< .merge_file_SQWTvL
 # --- Build & compiled ---
+=======
+build/
+dist/
+docs/cache/
+cache/
+
+# ==============================================
+<<<<<<< HEAD
+# MERGE / CONFLICT BACKUP SYMLINKS (mai in git — LFS GH008)
+# ==============================================
+*~cc6378f*
+*~cc6378f (*)
+
+# ==============================================
+=======
+>>>>>>> 6ed19256f (.)
+# CACHE & TEMPORARY FILES
+# ==============================================
+>>>>>>> .merge_file_z0GRDY
 *.cache
 cache/
 # --- Cache & temporary ---
@@ -65,6 +85,7 @@ npm-debug.log*
 *.old*
 *.old1
 *.old2
+<<<<<<< .merge_file_SQWTvL
 # --- Old directories (legacy cleanup) ---
 *.orig
 package-lock.json
@@ -76,6 +97,23 @@ phpmd*
 phpmd.ruleset.xml
 phpmd.ruleset.xml.bak
 phpstan*
+=======
+<<<<<<< HEAD
+*.old*
+=======
+>>>>>>> 6ed19256f (.)
+*.backup
+*.backup.*
+*.bak
+*.bakcup
+*.new
+
+# ==============================================
+# DEVELOPMENT TOOLS
+# ==============================================
+.windsurf/
+.cursor/
+>>>>>>> .merge_file_z0GRDY
 .phpstorm.meta.php
 .phpunit.result.cache
 phpunit.xml
@@ -93,6 +131,7 @@ storage/queue/
 *.swp
 # --- System files ---
 test_notifications.sql
+<<<<<<< .merge_file_SQWTvL
 tests/AuditCoverage/
 Thumbs.db
 *.tmp
@@ -116,3 +155,50 @@ notify.code-workspace
 /.github/skills/
 docs/graphify
 resources/lang
+=======
+
+# ==============================================
+# END OF NOTIFY .GITIGNORE
+# ==============================================
+
+# 🚫 File specifici del progetto
+*.fila2
+*.old
+laravel
+public_html
+<<<<<<< HEAD
+lang/lang/
+_docs/
+_docs/
+
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+docs/archive/.devcontainer/
+.planning/
+.ralph
+_bmad-output/
+bashscripts/
+.agent*/
+.agent*
+.ai*
+.claude*
+.c*
+.i*
+.j*
+.p*
+.w*
+.z*
+laravel/
+config/Config
+config/config
+
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_z0GRDY

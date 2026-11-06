@@ -104,3 +104,42 @@ Nessun codice PHP, configurazione runtime, dato, commit o push è stato toccato.
    dei gate del 64 usa `flock` per PHPStan e `heavy-slot` per phpinsights.
 4. La versione pulita e' solo nel working tree: su `laraxot/dev` c'e' ancora quella con i marker. Il sync deprecato
    e' in esecuzione e puo' sovrascriverla di nuovo.
+
+## Aggiornamento sessione 2026-11-06 (seconda parte)
+
+### Stato merge e collisioni
+
+- In root repo girano due `git merge origin/master --allow-unrelated-histories -s resolve`
+  lanciati da shell interattivi (PID 390639 alle 10:29, PID 398735 alle 10:31).
+  Il secondo era un duplicato esatto: terminato (PID 398735 + figli 398836/398936)
+  per evitare scritture doppie sullo stesso worktree. È sopravvissuto il primo
+  (merge-resolve 390731 + merge-index 390777).
+- `git ls-files -u` ~16.7k path unmerged; merge-index sta riscrivendo i file
+  con marker `<<<<<<< HEAD / >>>>>>> 6ed19256f` (conflitti verso la storia
+  master non correlata). I marker compaiono anche nei worktree dei moduli
+  nested (repo git propri): ~1.079 file PHP in `Modules/` con marker attivi,
+  1.111 file falliscono `php -l`.
+- I marker sono SCRITTURA IN CORSO: risolverli ora fa solo razza col merge-index.
+  Strategia: attendere fine merge, poi sweep finale con intent per file.
+
+### Lavoro completato in questa sessione
+
+- `laravel/phpstan_bootstrap.php`, `app/` (Application, User, provider, config,
+  routes, seeders) e 7 provider di modulo risolti marker → `php -l` OK.
+- `64-audit.md` aggiornato: path canonici (`docs/wiki/rules/00-TRIGGER_MAP.md`,
+  serie audit `docs/wiki/audits/`/`bashscripts/docs/audit/`), `heavy-slot.sh`
+  reso condizionale (`test -x`), tabella gate marcata come catalogo non
+  garentito, aggiunta nota verifica `bashscripts/tools/` assente.
+- Standing order permanente persistito: Hindsight doc +
+  `bashscripts/ai/wiki/memories/standing-order-permanente-utente.md`.
+- Lock rilasciati su tutti i file toccati.
+
+### Bloccato / residuo
+
+- PHPStan `analyse Modules`: BLOCKED — ~7 provider unmerged (Cms×3, Gdpr×2,
+  Geo×2) + migliaia di marker in Modules rendono il bootstrap inaffidabile.
+  I 3 errori della baseline iniziale (`AbsenceRequestPolicy::replicate`,
+  `GeoTrait` generico in Client/Worker) erano letti su stato meta-merge:
+  ri-verificare a merge completato.
+- File `.md` toccati: solo `64-audit.md` e questa story (nessuna data/timestamp
+  nei nomi).

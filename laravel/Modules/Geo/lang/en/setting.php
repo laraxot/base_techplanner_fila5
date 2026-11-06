@@ -15,12 +15,16 @@ return [
         'icon' => 'ui-settings',
     ],
     'fields' => [
+<<<<<<< HEAD
         'default_map_provider' => [
             'label' => 'Provider Mappa Predefinito',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
+=======
+        'default_map_provider' => 'Provider Mappa Predefinito',
+>>>>>>> 6ed19256f (.)
         'api_keys' => [
             'google_maps' => 'API Key Google Maps',
             'mapbox' => 'API Key Mapbox',

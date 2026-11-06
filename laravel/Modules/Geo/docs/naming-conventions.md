@@ -148,4 +148,9 @@ Quando si migra da vecchi schemi che utilizzano prefissi ridondanti, è importan
 1. Aggiornare tutte le query esistenti
 2. Verificare la compatibilità con i form esistenti
 3. Aggiornare eventuali validazioni
+<<<<<<< .merge_file_3n8H8e
 4. Creare una migrazione che rinomini i campi in modo appropriato
+=======
+4. Creare una migrazione che rinomini i campi in modo appropriato
+4. Creare una migrazione che rinomini i campi in modo appropriato
+>>>>>>> .merge_file_v87gUx

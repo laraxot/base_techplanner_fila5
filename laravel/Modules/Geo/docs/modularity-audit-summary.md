@@ -94,7 +94,18 @@ Questo errore viola i principi fondamentali dell'architettura modulare Laraxot e
 - [modularity-hardcoded-names.md](./modularity-hardcoded-names.md) - Regole globali di modularità
 
 ### Modulo Notify
+<<<<<<< .merge_file_w3oIbM
 - [modularity-hardcoded-names.md](../../Notify/docs/modularity-hardcoded-names.md) - Correzione critica per modulo Notify
+=======
+- [modularity-hardcoded-names.md](../laravel/modules/notify/docs/modularity-hardcoded-names.md) - Correzione critica per modulo Notify
+
+### Modulo UI
+- [modularity-optimizations.md](../laravel/modules/ui/docs/modularity-optimizations.md) - Ottimizzazioni per modularità
+
+### Modulo Xot
+- [modularity-optimizations.md](../laravel/modules/xot/docs/modularity-optimizations.md) - Ottimizzazioni per modularità
+- [modularity-hardcoded-names.md](../laravel/Modules/Notify/docs/modularity-hardcoded-names.md) - Correzione critica per modulo Notify
+>>>>>>> .merge_file_tmOi0B
 
 ### Modulo UI
 - [modularity-optimizations.md](../../UI/docs/modularity-optimizations.md) - Ottimizzazioni per modularità
@@ -305,9 +316,18 @@ Dopo la correzione completa, tutti i comandi devono restituire **0 occorrenze**.
 - [modularity-hardcoded-names.md](./modularity-hardcoded-names.md) - Regole globali di modularità
 
 ### Modulo Specifico
+<<<<<<< .merge_file_w3oIbM
 - [Notify: Modularity Corrections](../../Notify/docs/modularity-hardcoded-names.md)
 - [UI: Modularity Optimizations](../../UI/docs/modularity-optimizations.md)
 - [Xot: Modularity Optimizations](../../Xot/docs/modularity-optimizations.md)
+=======
+- [Notify: Modularity Corrections](../laravel/Modules/Notify/docs/modularity-hardcoded-names.md)
+- [UI: Modularity Optimizations](../laravel/Modules/UI/docs/modularity-optimizations.md)
+- [Xot: Modularity Optimizations](../laravel/Modules/Xot/docs/modularity-optimizations.md)
+- [Notify: Modularity Corrections](../laravel/modules/notify/docs/modularity-hardcoded-names.md)
+- [UI: Modularity Optimizations](../laravel/modules/ui/docs/modularity-optimizations.md)
+- [Xot: Modularity Optimizations](../laravel/modules/xot/docs/modularity-optimizations.md)
+>>>>>>> .merge_file_tmOi0B
 
 ### Regole e Memorie
 - [Cursor Rules: Modularity](../.cursor/rules/modularity-hardcoded-names.mdc)

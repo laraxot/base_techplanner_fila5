@@ -25,13 +25,26 @@ class PrivateEvent implements ShouldBroadcast
      */
     public function __construct(
         public string $message,
+<<<<<<< HEAD
     ) {}
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
 
     /**
      * Get the channels the event should broadcast on.
      */
     public function broadcastOn(): Channel
     {
+<<<<<<< .merge_file_kRDk72
         return new PrivateChannel('private.'.Auth::id());
+=======
+<<<<<<< HEAD
+        return new PrivateChannel('private.'.auth()->id());
+=======
+        return new PrivateChannel('private.' . auth()->id());
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_wWEX2l
     }
 }

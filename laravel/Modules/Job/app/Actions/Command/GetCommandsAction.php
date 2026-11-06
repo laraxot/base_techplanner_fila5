@@ -29,8 +29,16 @@ class GetCommandsAction
         /** @var array<string, Command> $commands */
         $commands = $kernel->all();
 
+<<<<<<< .merge_file_ZrQuJK
         /** @var Collection<int, CommandData> $commandsData */
         $commandsData = collect($commands)->map(
+=======
+        /** @var Collection<int, CommandData> $commandDataCollection */
+        $commandDataCollection = collect($commands)->map(
+            /**
+             * @param  Command  $command
+             */
+>>>>>>> .merge_file_PVq0eD
             static function (Command $command): CommandData {
                 $name = (string) $command->getName();
                 $description = (string) $command->getDescription();
@@ -65,8 +73,16 @@ class GetCommandsAction
                     name: $name,
                     description: $description,
                     signature: $signature,
+<<<<<<< HEAD
                     full_name: $name.' - '.$description,
+<<<<<<< .merge_file_ZrQuJK
                     arguments: $argumentsArray,
+=======
+=======
+                    full_name: $name . ' - ' . $description,
+>>>>>>> 6ed19256f (.)
+                    arguments: $arguments->toArray(),
+>>>>>>> .merge_file_PVq0eD
                     options: [
                         'withValue' => $options->toArray(),
                     ],

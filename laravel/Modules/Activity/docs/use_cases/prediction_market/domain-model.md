@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_qyRgxA
 ---
 title: "Modello di Dominio - <nome progetto>ion Market"
 type: note
@@ -7,13 +6,7 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "modello di dominio - <nome progetto>ion market activity"
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_G9EvkA
 # Modello di Dominio - <nome progetto>ion Market
-=======
-# Modello di Dominio - Prediction Market
->>>>>>> 6ed19256f (.)
 
 ## Aggregate
 - **Market**: rappresenta un mercato predittivo
@@ -48,8 +41,4 @@ class BetPlaced implements ShouldBeStored
         public string $outcome
     ) {}
 }
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> 6ed19256f (.)

@@ -2,14 +2,28 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Geo\Tests\Unit;
 
+<<<<<<< .merge_file_4wqsmy
+=======
+uses(TestCase::class);
+
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_nS1S3z
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Modules\Geo\Database\Factories\AddressFactory;
 use Modules\Geo\Enums\AddressTypeEnum;
 use Modules\Geo\Models\Address;
+<<<<<<< HEAD
 use Modules\Geo\Tests\TestCase;
+<<<<<<< .merge_file_4wqsmy
 use PHPUnit\Framework\Assert;
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_nS1S3z
 
 uses(TestCase::class);
 describe('Address Model', function () {

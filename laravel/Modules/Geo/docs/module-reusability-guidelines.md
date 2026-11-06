@@ -246,8 +246,24 @@ class <nome progetto>SpecificService
 
 ## Collegamenti e Riferimenti
 
+<<<<<<< .merge_file_yo0rml
 - [Modules/Notify/docs/reusability_guidelines.md](../../Notify/docs/reusability_guidelines.md)
+=======
+<<<<<<< HEAD
+- [Modules/Notify/docs/reusability_guidelines.md](../laravel/modules/notify/docs/reusability_guidelines.md)
+>>>>>>> .merge_file_yQJtxh
 - [Modules/Xot/docs/xotdata_usage.md](../laravel/modules/xot/docs/xotdata_usage.md)
 - [docs/laraxot_conventions.md](laraxot_conventions.md)
 - [docs/module_architecture.md](module_architecture.md)
 
+<<<<<<< .merge_file_yo0rml
+=======
+=======
+>>>>>>> 6ed19256f (.)
+- [Modules/Notify/docs/reusability_guidelines.md](../laravel/Modules/Notify/docs/reusability_guidelines.md)
+- [Modules/Xot/docs/xotdata_usage.md](../laravel/Modules/Xot/docs/xotdata_usage.md)
+- [docs/laraxot_conventions.md](laraxot_conventions.md)
+- [docs/module_architecture.md](module_architecture.md)
+
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> .merge_file_yQJtxh

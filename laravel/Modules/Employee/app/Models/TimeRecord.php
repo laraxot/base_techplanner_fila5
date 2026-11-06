@@ -4,10 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
+<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeRecordFactory;
+<<<<<<< .merge_file_4spT9T
+=======
+=======
+use Modules\Employee\Database\Factories\TimeRecordFactory;
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+>>>>>>> 6ed19256f (.)
+use Modules\TechPlanner\Models\Profile;
+>>>>>>> .merge_file_BVS2fz
 use Modules\User\Models\User;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -36,8 +47,15 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property-read string $formatted_date
  * @property-read string $formatted_time
  * @property-read string $formatted_timestamp
+<<<<<<< .merge_file_4spT9T
  * @property-read ProfileContract|null $updater
+=======
+ * @property-read Profile|null $updater
+<<<<<<< HEAD
+>>>>>>> .merge_file_BVS2fz
  *
+=======
+>>>>>>> 6ed19256f (.)
  * @method static Builder<static>|TimeRecord forDate(\Carbon\Carbon $date)
  * @method static Builder<static>|TimeRecord forUser(int|string $userId)
  * @method static Builder<static>|TimeRecord newModelQuery()
@@ -45,11 +63,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|TimeRecord ofType(string $type)
  * @method static Builder<static>|TimeRecord query()
  * @method static Builder<static>|TimeRecord valid()
+<<<<<<< HEAD
  *
  * @property-read ProfileContract|null $deleter
  *
  * @method static TimeRecordFactory factory($count = null, $state = [])
  *
+=======
+ * @property-read Profile|null $deleter
+ * @method static TimeRecordFactory factory($count = null, $state = [])
+>>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class TimeRecord extends BaseModel

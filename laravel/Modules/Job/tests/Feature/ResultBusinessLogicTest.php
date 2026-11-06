@@ -1,6 +1,14 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_BbKCal
+=======
+
+<<<<<<< HEAD
+=======
+use Illuminate\Support\Carbon;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_jLBzjR
 use Modules\Job\Models\Result;
 use Modules\Job\Models\Task;
 use Modules\Job\Tests\TestCase;
@@ -8,7 +16,12 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
+<<<<<<< HEAD
 it('can create result with basic information', function (): void {
+=======
+it('can create result with basic information', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Test Task',
         'command' => 'test:command',
@@ -37,7 +50,12 @@ it('can create result with basic information', function (): void {
     Assert::assertSame('5.2', $result->duration);
 });
 
+<<<<<<< HEAD
 it('can manage result execution lifecycle', function (): void {
+=======
+it('can manage result execution lifecycle', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Lifecycle Task',
         'command' => 'lifecycle:test',
@@ -64,7 +82,12 @@ it('can manage result execution lifecycle', function (): void {
     Assert::assertSame('3.5', $result->duration);
 });
 
+<<<<<<< HEAD
 it('can handle result relationships with task', function (): void {
+=======
+it('can handle result relationships with task', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Relationship Task',
         'command' => 'relationship:test',
@@ -99,7 +122,12 @@ it('can handle result relationships with task', function (): void {
     Assert::assertTrue($task->results->contains($result2));
 });
 
+<<<<<<< HEAD
 it('can manage result status variations', function (): void {
+=======
+it('can manage result status variations', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Status Task',
         'command' => 'status:test',
@@ -132,7 +160,12 @@ it('can manage result status variations', function (): void {
     Assert::assertSame('2.5', $result->duration);
 });
 
+<<<<<<< HEAD
 it('can handle result with different durations', function (): void {
+=======
+it('can handle result with different durations', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Duration Task',
         'command' => 'duration:test',
@@ -157,7 +190,12 @@ it('can handle result with different durations', function (): void {
     Assert::assertSame('0.001', $result->duration);
 });
 
+<<<<<<< HEAD
 it('can validate result data integrity', function (): void {
+=======
+it('can validate result data integrity', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Validation Task',
         'command' => 'validation:test',
@@ -184,7 +222,12 @@ it('can validate result data integrity', function (): void {
     Assert::assertSame('1.0', $validResult->duration);
 });
 
+<<<<<<< HEAD
 it('can manage multiple results for same task', function (): void {
+=======
+it('can manage multiple results for same task', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Batch Task',
         'command' => 'batch:test',
@@ -207,7 +250,11 @@ it('can manage multiple results for same task', function (): void {
         $results[] = Result::create([
             'task_id' => $task->id,
             'ran_at' => now()->subMinutes($i),
+<<<<<<< HEAD
             'duration' => (string) (0.5 * $i),
+=======
+            'duration' => (string)(0.5 * $i),
+>>>>>>> 6ed19256f (.)
             'result' => $statuses[$i - 1],
         ]);
     }
@@ -224,7 +271,12 @@ it('can manage multiple results for same task', function (): void {
     Assert::assertSame(2, $failedCount);
 });
 
+<<<<<<< HEAD
 it('can access task last result', function (): void {
+=======
+it('can access task last result', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Last Result Task',
         'command' => 'last-result:test',
@@ -263,7 +315,12 @@ it('can access task last result', function (): void {
     Assert::assertSame('failed', $lastResult->result);
 });
 
+<<<<<<< HEAD
 it('can calculate average runtime', function (): void {
+=======
+it('can calculate average runtime', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Average Runtime Task',
         'command' => 'avg-runtime:test',
@@ -306,7 +363,12 @@ it('can calculate average runtime', function (): void {
     Assert::assertGreaterThan(0, $taskWithAvg->average_runtime);
 });
 
+<<<<<<< HEAD
 it('can handle result with empty values', function (): void {
+=======
+it('can handle result with empty values', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Empty Result Task',
         'command' => 'empty:test',
@@ -332,7 +394,12 @@ it('can handle result with empty values', function (): void {
     Assert::assertSame('pending', $result->result);
 });
 
+<<<<<<< HEAD
 it('can handle result with large duration', function (): void {
+=======
+it('can handle result with large duration', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Large Duration Task',
         'command' => 'large-duration:test',
@@ -357,7 +424,12 @@ it('can handle result with large duration', function (): void {
     Assert::assertSame('3600.0', $result->duration);
 });
 
+<<<<<<< HEAD
 it('can manage result timestamps', function (): void {
+=======
+it('can manage result timestamps', function (): void
+{
+>>>>>>> 6ed19256f (.)
     $task = Task::create([
         'description' => 'Timestamp Task',
         'command' => 'timestamp:test',
@@ -379,6 +451,15 @@ it('can manage result timestamps', function (): void {
         'result' => 'success',
     ]);
 
+<<<<<<< .merge_file_BbKCal
     Assert::assertNotNull($result->created_at);
     Assert::assertNotNull($result->updated_at);
+=======
+    expect($result->created_at)->not->toBeNull();
+    expect($result->updated_at)->not->toBeNull();
+<<<<<<< HEAD
+>>>>>>> .merge_file_jLBzjR
 });
+=======
+});
+>>>>>>> 6ed19256f (.)

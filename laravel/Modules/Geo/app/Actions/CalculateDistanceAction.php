@@ -20,12 +20,31 @@ use Spatie\QueueableAction\QueueableAction;
  * - Lo stato della richiesta
  *
  * @see https://developers.google.com/maps/documentation/distance-matrix
+<<<<<<< HEAD
  *
  * @SuppressWarnings("PHPMD.StaticAccess")
  */
 final class CalculateDistanceAction implements CalculateDistanceActionContract
+=======
+ */
+readonly class CalculateDistanceAction
+>>>>>>> 6ed19256f (.)
 {
+<<<<<<< .merge_file_aW92BP
     use QueueableAction;
+=======
+    /**
+     * @param CalculateDistanceMatrixAction $distanceMatrixAction Servizio per il calcolo delle distanze
+     */
+    public function __construct(
+<<<<<<< HEAD
+        private readonly CalculateDistanceMatrixAction $distanceMatrixAction,
+=======
+        private CalculateDistanceMatrixAction $distanceMatrixAction,
+>>>>>>> 6ed19256f (.)
+    ) {
+    }
+>>>>>>> .merge_file_OxAhNL
 
     /**
      * Calcola la distanza e il tempo di percorrenza tra due punti.
@@ -48,7 +67,12 @@ final class CalculateDistanceAction implements CalculateDistanceActionContract
         $this->validateCoordinates($destination);
 
         try {
+<<<<<<< .merge_file_aW92BP
             $response = app(CalculateDistanceMatrixAction::class)->execute(
+=======
+<<<<<<< HEAD
+            $response = $this->distanceMatrixAction->execute(
+>>>>>>> .merge_file_OxAhNL
                 new Collection([$origin]),
                 new Collection([$destination])
             );
@@ -61,6 +85,14 @@ final class CalculateDistanceAction implements CalculateDistanceActionContract
             // The previous check was: empty($response) || empty($response[0]) || empty($response[0][0])
             // isset checks definition and null.
 
+=======
+            $response = $this->distanceMatrixAction->execute(new Collection([$origin]), new Collection([$destination]));
+
+            if (empty($response) || empty($response[0]) || empty($response[0][0])) {
+                throw DistanceCalculationException::invalidResponse();
+            }
+
+>>>>>>> 6ed19256f (.)
             return $response[0][0];
         } catch (\Throwable $e) {
             throw DistanceCalculationException::calculationError('Errore nel calcolo della distanza: '.$e->getMessage(), $e);

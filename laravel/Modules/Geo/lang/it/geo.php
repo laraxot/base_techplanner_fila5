@@ -19,7 +19,11 @@ return [
                 'name' => 'Mappa',
                 'group' => 'Geo',
                 'sort' => 10,
+<<<<<<< HEAD
                 'icon' => 'ui-geo-map',
+=======
+                'icon' => 'ui-geo-map', // Questo è già corretto
+>>>>>>> 6ed19256f (.)
                 'badge' => [
                     'color' => 'info',
                     'label' => 'Interattiva',
@@ -44,7 +48,11 @@ return [
                 'name' => 'Posizioni',
                 'group' => 'Geo',
                 'sort' => 20,
+<<<<<<< HEAD
                 'icon' => 'ui-geo-location',
+=======
+                'icon' => 'ui-geo-location', // Questo è già corretto
+>>>>>>> 6ed19256f (.)
                 'badge' => [
                     'color' => 'warning',
                     'label' => 'Da Verificare',

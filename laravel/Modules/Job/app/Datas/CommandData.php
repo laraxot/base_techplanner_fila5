@@ -19,5 +19,18 @@ class CommandData extends Data
         public string $full_name,
         public array $arguments,
         public array $options,
+<<<<<<< HEAD
     ) {}
+<<<<<<< .merge_file_BjeVF5
+=======
+=======
+    ) {
+    }
+>>>>>>> 6ed19256f (.)
+
+    public static function collection(EloquentCollection|Collection|array $data): DataCollection
+    {
+        return self::collect($data, DataCollection::class);
+    }
+>>>>>>> .merge_file_Ip8NxW
 }

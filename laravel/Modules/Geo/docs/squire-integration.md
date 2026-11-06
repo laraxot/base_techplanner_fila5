@@ -68,7 +68,14 @@ Select::make('region')
 use Modules\Geo\Models\Province;
 
 Select::make('province')
+<<<<<<< .merge_file_bP2eqD
+=======
+    ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_x0IsuQ
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         Province::where('region_id', $get('region'))
             ->orderBy('name')
             ->pluck('name', 'id')
@@ -86,7 +93,14 @@ Select::make('province')
 use Modules\Geo\Models\City;
 
 Select::make('city')
+<<<<<<< .merge_file_bP2eqD
+=======
+    ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_x0IsuQ
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         City::where('province_id', $get('province'))
             ->orderBy('name')
             ->pluck('name', 'id')
@@ -104,7 +118,14 @@ Select::make('city')
 use Modules\Geo\Models\Cap;
 
 Select::make('cap')
+<<<<<<< .merge_file_bP2eqD
+=======
+    ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_x0IsuQ
     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
         Cap::where('city_id', $get('city'))
             ->orderBy('code')
             ->pluck('code', 'id')
@@ -164,7 +185,14 @@ public function getFormSchema(): array
                     ->selectablePlaceholder(false),
 
                 'province' => Select::make('province')
+<<<<<<< .merge_file_bP2eqD
+=======
+                    ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_x0IsuQ
                     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                         Province::where('region_id', $get('region'))
                             ->orderBy('name')
                             ->pluck('name', 'id')
@@ -177,7 +205,14 @@ public function getFormSchema(): array
                     ->selectablePlaceholder(false),
 
                 'city' => Select::make('city')
+<<<<<<< .merge_file_bP2eqD
+=======
+                    ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_x0IsuQ
                     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                         City::where('province_id', $get('province'))
                             ->orderBy('name')
                             ->pluck('name', 'id')
@@ -190,7 +225,14 @@ public function getFormSchema(): array
                     ->selectablePlaceholder(false),
 
                 'cap' => Select::make('cap')
+<<<<<<< .merge_file_bP2eqD
+=======
+                    ->options(fn (Get $get) =>
+<<<<<<< HEAD
+>>>>>>> .merge_file_x0IsuQ
                     ->options(fn (Get $get) => 
+=======
+>>>>>>> 6ed19256f (.)
                         Cap::where('city_id', $get('city'))
                             ->orderBy('code')
                             ->pluck('code', 'id')
@@ -223,7 +265,20 @@ public function getFormSchema(): array
 
 ## Collegamenti
 - [Documentazione Squire](https://github.com/squirephp/squire)
+<<<<<<< .merge_file_bP2eqD
+=======
+- [Best Practices Filament](../../../docs/filament-best-practices.md)
+- [Clean Code](../../../docs/clean-code.md)
+
+**Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
+<<<<<<< HEAD
+>>>>>>> .merge_file_x0IsuQ
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
+<<<<<<< .merge_file_bP2eqD
+=======
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_x0IsuQ

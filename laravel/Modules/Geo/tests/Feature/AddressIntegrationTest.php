@@ -2,13 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< HEAD
 namespace Modules\Geo\Tests\Feature;
 
 use Modules\Geo\Enums\AddressTypeEnum;
 use Modules\Geo\Tests\TestCase;
+<<<<<<< .merge_file_7YxWbj
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
+=======
+=======
+use Modules\Geo\Enums\AddressTypeEnum;
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_irOCOw
 
 /**
  * In-memory Address tests (no factories / DB / container).

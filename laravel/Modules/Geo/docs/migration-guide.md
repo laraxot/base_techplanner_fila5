@@ -196,7 +196,15 @@ trait SushiToJsons
     protected function loadFromJson(): array
     {
         $path = $this->getJsonFile();
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_ccilOX
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
         if (!File::exists($path)) {
             return [];
         }
@@ -313,21 +321,47 @@ class SushiCommand extends Command
 
         try {
             $path = base_path('database/content/comuni.json');
+<<<<<<< HEAD
             
+<<<<<<< .merge_file_ccilOX
+=======
+            
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
             if (!File::exists($path)) {
                 $this->error('File comuni.json non trovato');
                 return 1;
             }
+<<<<<<< .merge_file_ccilOX
+=======
+
+            $data = json_decode(File::get($path), true);
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_MDxY1K
             
             $data = json_decode(File::get($path), true);
             
+=======
+>>>>>>> 6ed19256f (.)
             if (json_last_error() !== JSON_ERROR_NONE) {
                 $this->error('Errore nel parsing del file JSON: ' . json_last_error_msg());
                 return 1;
             }
+<<<<<<< .merge_file_ccilOX
+=======
+
+            DB::table('comuni')->truncate();
+
+<<<<<<< HEAD
+>>>>>>> .merge_file_MDxY1K
             
             DB::table('comuni')->truncate();
             
+=======
+>>>>>>> 6ed19256f (.)
             foreach ($data as $comune) {
                 DB::table('comuni')->insert([
                     'id' => $comune['id'],
@@ -341,7 +375,15 @@ class SushiCommand extends Command
                     'updated_at' => $comune['updated_at'] ?? now(),
                 ]);
             }
+<<<<<<< HEAD
             
+<<<<<<< .merge_file_ccilOX
+=======
+            
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
             $this->info('Database SQLite di Sushi aggiornato con successo');
             return 0;
         } catch (\Exception $e) {
@@ -371,25 +413,57 @@ class SushiCommand extends Command
         try {
             $count = DB::table('comuni')->count();
             $this->info("Numero di comuni: {$count}");
+<<<<<<< HEAD
             
+<<<<<<< .merge_file_ccilOX
+=======
+            
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
             $regioni = DB::table('comuni')
                 ->select('regione')
                 ->distinct()
                 ->count();
             $this->info("Numero di regioni: {$regioni}");
+<<<<<<< HEAD
             
+<<<<<<< .merge_file_ccilOX
+=======
+            
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
             $province = DB::table('comuni')
                 ->select('provincia')
                 ->distinct()
                 ->count();
             $this->info("Numero di province: {$province}");
+<<<<<<< HEAD
             
+<<<<<<< .merge_file_ccilOX
+=======
+            
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
             $cap = DB::table('comuni')
                 ->select('cap')
                 ->distinct()
                 ->count();
             $this->info("Numero di CAP: {$cap}");
+<<<<<<< HEAD
             
+<<<<<<< .merge_file_ccilOX
+=======
+            
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
             return 0;
         } catch (\Exception $e) {
             $this->error('Errore durante la verifica dello stato del database: ' . $e->getMessage());
@@ -428,7 +502,15 @@ class ComuneTest extends TestCase
     protected function setUp(): void
     {
         parent::setUp();
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_ccilOX
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
         $this->testData = [
             [
                 'id' => 1,
@@ -453,7 +535,15 @@ class ComuneTest extends TestCase
                 'updated_at' => now(),
             ],
         ];
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_ccilOX
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
         File::put(
             base_path('database/content/comuni.json'),
             json_encode($this->testData, JSON_PRETTY_PRINT)
@@ -471,7 +561,15 @@ class ComuneTest extends TestCase
     public function it_can_load_comuni_from_json()
     {
         $comuni = Comune::all();
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_ccilOX
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_MDxY1K
         $this->assertCount(2, $comuni);
         $this->assertEquals('Milano', $comuni[0]->comune);
         $this->assertEquals('Sesto San Giovanni', $comuni[1]->comune);

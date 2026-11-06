@@ -140,7 +140,15 @@ trait HasAddresses
     {
         return $this->morphMany(Address::class, 'addressable');
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     /**
      * Get the primary address for this model.
      */
@@ -149,7 +157,15 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('is_primary', true);
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     /**
      * Get addresses of a specific type.
      */
@@ -158,7 +174,15 @@ trait HasAddresses
         return $this->morphMany(Address::class, 'addressable')
             ->where('type', $type);
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     /**
      * Get the home address for this model.
      */
@@ -167,7 +191,15 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_HOME);
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     /**
      * Get the work address for this model.
      */
@@ -176,7 +208,15 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_WORK);
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     /**
      * Get the billing address for this model.
      */
@@ -185,7 +225,15 @@ trait HasAddresses
         return $this->morphOne(Address::class, 'addressable')
             ->where('type', Address::TYPE_BILLING);
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     /**
      * Get the shipping address for this model.
      */
@@ -203,7 +251,15 @@ Utilizzo del trait:
 class Doctor extends Model
 {
     use HasAddresses;
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     // ... altri metodi e proprietà
 }
 
@@ -235,25 +291,57 @@ class AddressForm
                     Forms\Components\TextInput::make('street_address')
                         ->label('address-form.fields.street_address')
                         ->required(),
+<<<<<<< HEAD
                         
+<<<<<<< .merge_file_GMVPFS
+=======
+                        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
                     Forms\Components\TextInput::make('address_line2')
                         ->label('address-form.fields.address_line2'),
                 ])
                 ->columns(2),
+<<<<<<< HEAD
                 
+<<<<<<< .merge_file_GMVPFS
+=======
+                
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
             Forms\Components\Grid::make()
                 ->schema([
                     // Componenti per regione, provincia e comune
                     // ... componenti geografici specifici per l'Italia
                 ])
                 ->columns(3),
+<<<<<<< HEAD
                 
+<<<<<<< .merge_file_GMVPFS
+=======
+                
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
             Forms\Components\Grid::make()
                 ->schema([
                     Forms\Components\TextInput::make('postal_code')
                         ->label('address-form.fields.postal_code')
                         ->required(),
+<<<<<<< HEAD
                         
+<<<<<<< .merge_file_GMVPFS
+=======
+                        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
                     Forms\Components\Select::make('type')
                         ->label('address-form.fields.type')
                         ->options(function () {
@@ -261,7 +349,15 @@ class AddressForm
                         })
                         ->default(Address::TYPE_HOME)
                         ->required(),
+<<<<<<< HEAD
                         
+<<<<<<< .merge_file_GMVPFS
+=======
+                        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
                     Forms\Components\Toggle::make('is_primary')
                         ->label('address-form.fields.is_primary')
                         ->default(false),
@@ -269,7 +365,15 @@ class AddressForm
                 ->columns(3),
         ];
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     public static function saveAddress(Model $model, array $data): void
     {
         $address = $model->addresses()->updateOrCreate(
@@ -288,7 +392,15 @@ class AddressForm
                 'country_code' => $data['country_code'] ?? 'IT',
             ]
         );
+<<<<<<< HEAD
         
+<<<<<<< .merge_file_GMVPFS
+=======
+        
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
         // Se questo è l'indirizzo principale, imposta tutti gli altri come non principali
         if ($data['is_primary'] ?? false) {
             $model->addresses()
@@ -325,7 +437,15 @@ trait HasAddress
     {
         return json_decode($this->attributes['address_data'] ?? '{}', true);
     }
+<<<<<<< HEAD
     
+<<<<<<< .merge_file_GMVPFS
+=======
+    
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gVjN7A
     public function setAddressAttribute(array $value): void
     {
         $this->attributes['address_data'] = json_encode($value);

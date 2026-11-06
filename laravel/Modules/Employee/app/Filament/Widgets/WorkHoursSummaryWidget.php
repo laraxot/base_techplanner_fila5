@@ -4,15 +4,26 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Filament\Widgets;
 
+<<<<<<< HEAD
+=======
+use Filament\Actions\Action;
+>>>>>>> 6ed19256f (.)
 use Filament\Schemas\Components\Component;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Auth;
 use Modules\Employee\Models\WorkHour;
+<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Override;
 
 class WorkHoursSummaryWidget extends XotBaseSchemaWidget
+=======
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Override;
+
+class WorkHoursSummaryWidget extends XotBaseWidget
+>>>>>>> 6ed19256f (.)
 {
     protected static ?int $sort = 3;
 
@@ -108,6 +119,7 @@ class WorkHoursSummaryWidget extends XotBaseSchemaWidget
      * Get the form model for the widget.
      */
     #[Override]
+<<<<<<< HEAD
     protected function getFormModel(): Model|string|null
     {
         return null;
@@ -115,4 +127,30 @@ class WorkHoursSummaryWidget extends XotBaseSchemaWidget
 
     #[Override]
     public function save(): void {}
+=======
+    public function getFormModel(): string|Model|null
+    {
+        return null; // No model needed for this widget
+    }
+
+    /**
+     * Get the form actions for the widget.
+     *
+     * @return array<int|string, Action>
+     */
+    #[Override]
+    protected function getFormActions(): array
+    {
+        return [];
+    }
+
+    /**
+     * Save the form data.
+     */
+    #[Override]
+    public function save(): void
+    {
+        // No save action needed for this widget
+    }
+>>>>>>> 6ed19256f (.)
 }

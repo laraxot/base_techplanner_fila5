@@ -17,7 +17,15 @@ class OptimizeRouteAction
     use QueueableAction;
 
     public function __construct(
+<<<<<<< .merge_file_0PSbja
         private readonly CalculateDistanceActionContract $calculateDistance,
+=======
+<<<<<<< HEAD
+        private CalculateDistanceActionContract $calculateDistance,
+=======
+        private CalculateDistanceAction $calculateDistance,
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gKhb5K
     ) {
     }
 
