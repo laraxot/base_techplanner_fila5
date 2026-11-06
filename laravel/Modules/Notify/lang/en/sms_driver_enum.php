@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
     'smsfactor' => [
         'label' => 'SMSFactor',
         'color' => 'primary',
@@ -38,6 +39,7 @@ return [
         'color' => 'gray',
         'icon' => 'heroicon-o-truck',
         'description' => 'Italian provider for telecommunications services and SMS'],
+    ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
