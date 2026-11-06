@@ -102,6 +102,21 @@ return [
             'icon' => 'createAnother',
             'tooltip' => 'createAnother',
         ],
+        'resetColumnManager' => [
+            'label' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'tooltip' => 'resetColumnManager',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => 'logout',
+        ],
     ],
     'fields' => [
         'date' => [
