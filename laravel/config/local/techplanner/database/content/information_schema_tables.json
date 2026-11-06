@@ -1,8 +1,6 @@
 [
     {
-        "id": 1,
         "table_schema": "techplanner_data",
-<<<<<<< .merge_file_5EYijf
         "model_class": "Modules\\TechPlanner\\Models\\Appointment",
         "table_name": "appointments",
         "id": 9,
@@ -55,7 +53,10 @@
         "updated_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
         "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
         "table_rows": 0
-=======
+    },
+    {
+        "id": 1,
+        "table_schema": "techplanner_data",
         "table_name": "media_converts",
         "table_rows": 0,
         "model_class": "Modules\\Media\\Models\\MediaConvert",
@@ -63,7 +64,6 @@
         "updated_by": null,
         "created_at": "2026-09-06T13:45:41.000000Z",
         "created_by": null
->>>>>>> .merge_file_W7mrcn
     },
     {
         "id": 2,
@@ -88,9 +88,7 @@
         "created_by": null
     },
     {
-        "id": "4",
         "table_schema": "techplanner_data",
-<<<<<<< .merge_file_5EYijf
         "model_class": "Modules\\TechPlanner\\Models\\PhoneCall",
         "table_name": "phone_calls",
         "id": 16,
@@ -110,14 +108,27 @@
         "updated_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b",
         "created_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b",
         "table_rows": 123
-=======
-        "table_name": "appointments",
-        "table_rows": null,
-        "model_class": "Modules\\TechPlanner\\Models\\Appointment",
-        "updated_at": "2026-10-30T13:54:39.000000Z",
-        "updated_by": null,
-        "created_at": "2026-10-30T13:54:39.000000Z",
-        "created_by": null
->>>>>>> .merge_file_W7mrcn
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\Notify\\Models\\MailTemplate",
+        "table_name": "mail_templates",
+        "created_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "id": "18",
+        "updated_at": "2026-11-06T12:15:59.000000Z",
+        "created_at": "2026-11-06T12:15:59.000000Z",
+        "table_rows": 9
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\TechPlanner\\Models\\MedicalDirector",
+        "table_name": "medical_directors",
+        "created_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "id": "19",
+        "updated_at": "2026-11-06T12:15:59.000000Z",
+        "created_at": "2026-11-06T12:15:59.000000Z",
+        "table_rows": 0
     }
 ]

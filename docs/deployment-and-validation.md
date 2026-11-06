@@ -49,6 +49,14 @@ Ripristinati i tre symlink e impostato `git config --local core.symlinks true`. 
 
 Verifica del ripristino: tenant `com/sottana`, 25 configurazioni PHP leggibili, home e login HTTP 200; `/techplanner/admin` senza sessione autenticata risponde 302 verso il login amministrativo.
 
+## Verifica dei log del 2026-11-06
+
+L'audit ha individuato un riferimento residuo a `TenantService::filePath()` nel trait `SushiToJson`: sostituito con `GetTenantFilePathAction`. Riparato inoltre `information_schema_tables.json`, che conteneva marcatori di merge, e ripubblicati gli asset Livewire per allinearli al pacchetto installato.
+
+Verificati HTTP 200 su dashboard, clienti e dispositivi con autenticazione temporanea interna, oltre alle pagine pubbliche e di autenticazione. Controllati i JSON runtime e il comportamento dell'attributo `Client::distance`. PHPStan sul trait corretto: nessun errore. La suite Pest resta bloccata dal bootstrap dei test (`XotBaseTestCase` non risolto); PHPMD non e' installato e il browser headless richiede librerie di sistema mancanti.
+
+La pulizia interessa i log attivi `laravel/storage/logs/{laravel,browser}.log` e `/var/log/nginx/sottana.{com,net}-error.log`, troncati senza rimuovere i file. Gli archivi ruotati restano conservati. Dopo la pulizia ripetere le richieste e controllare che non vengano registrati nuovi errori.
+
 ## Pagine da controllare dopo deploy
 
 - Home: https://sottana.net/it

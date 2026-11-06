@@ -175,6 +175,11 @@ return [
             'icon' => 'logout',
             'tooltip' => 'logout',
         ],
+        'resetColumnManager' => [
+            'label' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'tooltip' => 'resetColumnManager',
+        ],
     ],
     'messages' => [
         'created' => 'Dispositivo creato con successo',

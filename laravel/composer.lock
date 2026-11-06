@@ -13275,23 +13275,23 @@
         },
         {
             "name": "spatie/php-attribute-reader",
-            "version": "1.1.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/php-attribute-reader.git",
-                "reference": "46e7484d7b51f5b22d672745c541e48c5a385404"
+                "reference": "1483a248ff0dafd9b9409e65cda685730da2b23d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/php-attribute-reader/zipball/46e7484d7b51f5b22d672745c541e48c5a385404",
-                "reference": "46e7484d7b51f5b22d672745c541e48c5a385404",
+                "url": "https://api.github.com/repos/spatie/php-attribute-reader/zipball/1483a248ff0dafd9b9409e65cda685730da2b23d",
+                "reference": "1483a248ff0dafd9b9409e65cda685730da2b23d",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0"
+                "php": "^8.4"
             },
             "require-dev": {
-                "pestphp/pest": "^1.0|^2.0|^3.0|^4.0"
+                "pestphp/pest": "^5.3.4"
             },
             "type": "library",
             "autoload": {
@@ -13321,7 +13321,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/php-attribute-reader/issues",
-                "source": "https://github.com/spatie/php-attribute-reader/tree/1.1.0"
+                "source": "https://github.com/spatie/php-attribute-reader/tree/1.2.1"
             },
             "funding": [
                 {
@@ -13329,8 +13329,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-02-23T09:01:55+00:00",
-            "published-time": "2026-02-23T09:02:14+00:00"
+            "time": "2026-11-06T12:12:33+00:00",
+            "published-time": "2026-11-06T12:14:35+00:00"
         },
         {
             "name": "spatie/php-structure-discoverer",
@@ -13478,23 +13478,23 @@
         },
         {
             "name": "spatie/robots-txt",
-            "version": "2.5.5",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/robots-txt.git",
-                "reference": "b451e56b67ab9c852d354de75e88e3b797729b9e"
+                "reference": "a416c58e9572c8680d3c3720184b8ffb8320720d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/robots-txt/zipball/b451e56b67ab9c852d354de75e88e3b797729b9e",
-                "reference": "b451e56b67ab9c852d354de75e88e3b797729b9e",
+                "url": "https://api.github.com/repos/spatie/robots-txt/zipball/a416c58e9572c8680d3c3720184b8ffb8320720d",
+                "reference": "a416c58e9572c8680d3c3720184b8ffb8320720d",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1"
+                "php": "^8.4.1"
             },
             "require-dev": {
-                "phpunit/phpunit": "^11.5.2"
+                "phpunit/phpunit": "^13.4.5"
             },
             "type": "library",
             "autoload": {
@@ -13522,7 +13522,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/robots-txt/issues",
-                "source": "https://github.com/spatie/robots-txt/tree/2.5.5"
+                "source": "https://github.com/spatie/robots-txt/tree/2.6.0"
             },
             "funding": [
                 {
@@ -13534,8 +13534,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-17T08:57:09+00:00",
-            "published-time": "2026-10-17T09:02:27+00:00"
+            "time": "2026-11-06T12:00:00+00:00",
+            "published-time": "2026-11-06T12:01:27+00:00"
         },
         {
             "name": "spatie/shiki-php",
