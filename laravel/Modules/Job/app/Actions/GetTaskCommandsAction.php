@@ -8,7 +8,6 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Artisan;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Console\Command\Command;
-use Webmozart\Assert\Assert;
 
 class GetTaskCommandsAction
 {
@@ -19,12 +18,20 @@ class GetTaskCommandsAction
      */
     public function execute(): Collection
     {
-        $allCommands = collect(Artisan::all());
+        $allCommands = collect(Artisan::all())
+            ->filter(static fn (mixed $command): bool => $command instanceof Command)
+            ->values();
 
-        /** @var Collection<int, Command> $sorted */
-        $sorted = $allCommands->sortBy(static function (Command $command) {
+        $sorted = $allCommands->sortBy(static function (mixed $command): string {
+            if (! $command instanceof Command) {
+                return '';
+            }
+
             $name = $command->getName();
-            Assert::string($name, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+            if ($name === null) {
+                return '';
+            }
+
             if (mb_strpos($name, ':') === false) {
                 return ':'.$name;
             }
