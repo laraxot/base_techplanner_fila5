@@ -136,3 +136,4 @@ archive
 .playwright-mcp/
 artifacts/
 bashscripts/ai/.agents/projects/
+___FILE___tests/
