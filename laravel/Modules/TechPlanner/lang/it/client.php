@@ -12,139 +12,6 @@ return [
             'label' => 'Aggiorna Coordinate',
             'tooltip' => 'populateCoordinates',
             'icon' => 'populateCoordinates',
-<<<<<<< .merge_file_B83I17
-            'modal' => [
-                'heading' => 'Aggiorna Coordinate',
-                'description' => 'Questa azione aggiornerà le coordinate per tutti i clienti basandosi sui loro indirizzi. Vuoi continuare?',
-                'submit_label' => 'Sì, Aggiorna Tutto',
-            ],
-        ],
-        'updateCoordinates' => [
-            'label' => 'Aggiorna Coordinate',
-            'tooltip' => 'updateCoordinates',
-            'icon' => 'updateCoordinates',
-        ],
-        'sortByDistance' => [
-            'label' => 'Ordina per Distanza',
-            'tooltip' => 'sortByDistance',
-            'icon' => 'sortByDistance',
-        ],
-        'downloadExample' => [
-            'label' => 'Scarica Esempio',
-            'tooltip' => 'downloadExample',
-            'icon' => 'downloadExample',
-        ],
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-        'profile' => [
-            'tooltip' => 'profile',
-            'icon' => 'profile',
-            'label' => 'profile',
-        ],
-        'cancel' => [
-            'tooltip' => 'cancel',
-            'icon' => 'cancel',
-            'label' => 'cancel',
-        ],
-        'save' => [
-            'tooltip' => 'save',
-            'icon' => 'save',
-            'label' => 'save',
-        ],
-        'reorderRecords' => [
-            'tooltip' => 'reorderRecords',
-            'icon' => 'reorderRecords',
-            'label' => 'reorderRecords',
-        ],
-        'openColumnManager' => [
-            'tooltip' => 'openColumnManager',
-            'icon' => 'openColumnManager',
-            'label' => 'openColumnManager',
-        ],
-        'applyTableColumnManager' => [
-            'tooltip' => 'applyTableColumnManager',
-            'icon' => 'applyTableColumnManager',
-            'label' => 'applyTableColumnManager',
-        ],
-        'resetFilters' => [
-            'tooltip' => 'resetFilters',
-            'icon' => 'resetFilters',
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'tooltip' => 'applyFilters',
-            'icon' => 'applyFilters',
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'tooltip' => 'openFilters',
-            'icon' => 'openFilters',
-            'label' => 'openFilters',
-        ],
-        'delete' => [
-            'tooltip' => 'delete',
-            'icon' => 'delete',
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'tooltip' => 'edit',
-            'icon' => 'edit',
-            'label' => 'edit',
-        ],
-        'view' => [
-            'tooltip' => 'view',
-            'icon' => 'view',
-            'label' => 'view',
-        ],
-        'layout' => [
-            'tooltip' => 'layout',
-            'icon' => 'layout',
-            'label' => 'layout',
-        ],
-        'SendNotificationBulkAction' => [
-            'tooltip' => 'SendNotificationBulkAction',
-            'label' => 'SendNotificationBulkAction',
-            'icon' => 'SendNotificationBulkAction',
-        ],
-        'UpdateCoordinatesBulkAction' => [
-            'tooltip' => 'UpdateCoordinatesBulkAction',
-            'icon' => 'UpdateCoordinatesBulkAction',
-            'label' => 'UpdateCoordinatesBulkAction',
-        ],
-        'send_notification_bulk' => [
-            'tooltip' => 'send_notification_bulk',
-            'icon' => 'send_notification_bulk',
-            'label' => 'send_notification_bulk',
-        ],
-        'update_coordinates_bulk' => [
-            'tooltip' => 'update_coordinates_bulk',
-            'icon' => 'update_coordinates_bulk',
-            'label' => 'update_coordinates_bulk',
-        ],
-        'SendRecordsNotificationBulkAction' => [
-            'tooltip' => 'SendRecordsNotificationBulkAction',
-            'icon' => 'SendRecordsNotificationBulkAction',
-            'label' => 'SendRecordsNotificationBulkAction',
-        ],
-        'sendRecordsNotification' => [
-            'tooltip' => 'sendRecordsNotification',
-            'icon' => 'sendRecordsNotification',
-            'label' => 'sendRecordsNotification',
-        ],
-        'createAnother' => [
-            'tooltip' => 'createAnother',
-            'icon' => 'createAnother',
-            'label' => 'createAnother',
-        ],
-        'submit' => [
-            'tooltip' => 'submit',
-            'icon' => 'submit',
-            'label' => 'submit',
-        ],
-=======
             'modal' => ['heading' => 'Aggiorna Coordinate', 'description' => 'Questa azione aggiornerà le coordinate per tutti i clienti basandosi sui loro indirizzi. Vuoi continuare?', 'submit_label' => 'Sì, Aggiorna Tutto'],
         ],
         'updateCoordinates' => ['label' => 'Aggiorna Coordinate', 'tooltip' => 'updateCoordinates', 'icon' => 'updateCoordinates'],
@@ -172,7 +39,6 @@ return [
         'sendRecordsNotification' => ['tooltip' => 'sendRecordsNotification', 'icon' => 'sendRecordsNotification', 'label' => 'sendRecordsNotification'],
         'removeAllFilters' => ['tooltip' => 'removeAllFilters', 'icon' => 'removeAllFilters', 'label' => 'removeAllFilters'],
         'resetColumnManager' => ['tooltip' => 'resetColumnManager', 'icon' => 'resetColumnManager', 'label' => 'resetColumnManager'],
->>>>>>> .merge_file_XDXAds
     ],
     'fields' => [
         'id' => ['label' => 'ID'],
@@ -250,26 +116,7 @@ return [
         'tech_planner::client' => [
             'sections' => [
                 'additional_info' => [
-<<<<<<< .merge_file_B83I17
-                    'label' => [
-                        'heading' => 'tech_planner::client.sections.additional_info.label',
-                        'label' => 'tech_planner::client.sections.additional_info.label',
-                    ],
-                ],
-                'company' => [
-                    'label' => [
-                        'label' => 'tech_planner::client.sections.company.label',
-                        'heading' => 'tech_planner::client.sections.company.label',
-                    ],
-                ],
-                'contact_info' => [
-                    'label' => [
-                        'label' => 'tech_planner::client.sections.contact_info.label',
-                        'heading' => 'tech_planner::client.sections.contact_info.label',
-                    ],
-=======
                     'label' => ['heading' => 'tech_planner::client.sections.additional_info.label'],
->>>>>>> .merge_file_XDXAds
                 ],
             ],
         ],
