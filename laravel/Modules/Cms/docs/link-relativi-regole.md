@@ -19,25 +19,14 @@ status: draft
 ### ❌ **VIETATO - Link Assoluti**
 ```markdown
 [Link errato](/var/www/html/_bases/<directory progetto>/docs/file.md)
-<<<<<<< .merge_file_BUdRJW
-=======
-[Link errato](../../laravel/Modules/Cms/docs/file.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_P1Q6AN
 [Link errato](../../laravel/modules/cms/docs/file.md)
-=======
->>>>>>> 6ed19256f (.)
 ```
 
 ### ✅ **CORRETTO - Link Relativi**
 ```markdown
 [Link corretto](./file.md)
 [Link corretto](../altro-modulo/docs/file.md)
-<<<<<<< HEAD
 [Link alla root](../../../../docs/file.md)
-=======
-[Link alla root](../../../docs/file.md)
->>>>>>> 6ed19256f (.)
 ```
 
 ## 🎯 **Motivazioni Filosofiche**
@@ -64,11 +53,7 @@ status: draft
 
 ### **Dal modulo Cms alla root docs**
 ```
-<<<<<<< HEAD
 Percorso: Modules/Cms/docs/ → ../../../../docs/
-=======
-Percorso: Modules/Cms/docs/ → ../../../docs/
->>>>>>> 6ed19256f (.)
 Logica:
   Modules/Cms/docs/ → ../ (torna a Modules/)
   Modules/ → ../ (torna a laravel/)
@@ -107,43 +92,22 @@ Link: ./components/
 [Gestione Homepage](/var/www/html/_bases/<directory progetto>/docs/gestione-homepage.md)
 
 <!-- DOPO (CORRETTO) -->
-<<<<<<< HEAD
 [Gestione Homepage](../../../../docs/gestione-homepage.md)
-=======
-[Gestione Homepage](../../../docs/gestione-homepage.md)
->>>>>>> 6ed19256f (.)
 ```
 
 ### **Caso 2: Link ad altro modulo**
 ```markdown
 <!-- PRIMA (ERRATO) -->
-<<<<<<< HEAD
 [Modulo User](/var/www/html/_bases/<directory progetto>/laravel/modules/user/docs/readme.md)
 
 <!-- DOPO (CORRETTO) -->
 [Modulo User](../../user/docs/readme.md)
-<<<<<<< .merge_file_BUdRJW
-=======
-=======
->>>>>>> 6ed19256f (.)
-[Modulo User](/var/www/html/_bases/<directory progetto>/laravel/Modules/User/docs/README.md)
-
-<!-- DOPO (CORRETTO) -->
-[Modulo User](../../User/docs/README.md)
->>>>>>> .merge_file_P1Q6AN
 ```
 
 ### **Caso 3: Link interno al modulo**
 ```markdown
 <!-- PRIMA (ERRATO) -->
-<<<<<<< .merge_file_BUdRJW
-=======
-[Componenti](../../laravel/Modules/Cms/docs/components/header.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_P1Q6AN
 [Componenti](../../laravel/modules/cms/docs/components/header.md)
-=======
->>>>>>> 6ed19256f (.)
 
 <!-- DOPO (CORRETTO) -->
 [Componenti](./components/header.md)
@@ -187,12 +151,4 @@ Aggiornare sempre le regole personali:
 ---
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
-<<<<<<< .merge_file_BUdRJW
 **Conformità**: Regole Laraxot per documentazione modulare e portabile
-=======
-<<<<<<< HEAD
-**Conformità**: Regole Laraxot per documentazione modulare e portabile
-=======
-**Conformità**: Regole Laraxot per documentazione modulare e portabile
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_P1Q6AN

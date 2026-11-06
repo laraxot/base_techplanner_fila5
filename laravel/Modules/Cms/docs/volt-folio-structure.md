@@ -141,20 +141,10 @@ function login(): void {
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
 - [Folio ](./folio_overview.md)
 - [Volt Best Practices](./volt_best_practices.md)
 - [Autenticazione con Volt e Folio](../../User/docs/volt_folio_auth_implementation.md)
 - [Layout Components](../components/layouts.md)
-<<<<<<< .merge_file_LIPQiW
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Folio ](./FOLIO_OVERVIEW.md)
-- [Volt Best Practices](./VOLT_BEST_PRACTICES.md)
-- [Autenticazione con Volt e Folio](../../User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
-- [Layout Components](../components/LAYOUTS.md)
->>>>>>> .merge_file_ZbTzQq
 # Volt con Folio: Struttura Corretta
 
 ## Regola Fondamentale
@@ -286,21 +276,7 @@ function login(): void {
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
 - [Folio ](./folio_overview.md)
 - [Volt Best Practices](./volt_best_practices.md)
 - [Autenticazione con Volt e Folio](../../User/docs/volt_folio_auth_implementation.md)
 - [Layout Components](../components/layouts.md)
-<<<<<<< .merge_file_LIPQiW
-=======
-- [Folio ](./FOLIO_OVERVIEW.md)
-- [Volt Best Practices](./VOLT_BEST_PRACTICES.md)
-- [Autenticazione con Volt e Folio](../../User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
-- [Layout Components](../components/LAYOUTS.md)
-=======
-- [Folio ](./FOLIO_OVERVIEW.md)
-- [Volt Best Practices](./VOLT_BEST_PRACTICES.md)
-- [Autenticazione con Volt e Folio](../../User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
-- [Layout Components](../components/LAYOUTS.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ZbTzQq

@@ -1,8 +1,3 @@
-<<<<<<< .merge_file_dWGWvv
-=======
-<<<<<<< HEAD
-=======
->>>>>>> .merge_file_Q8FC0q
 <?php
 
 declare(strict_types=1);
@@ -309,9 +304,6 @@ return [
     // ==============================================
     // OPTIONS - OPZIONI E VALORI PREDEFINITI
     // ==============================================
-<<<<<<< .merge_file_dWGWvv
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_Q8FC0q
     'options' => [
         'statuses' => [

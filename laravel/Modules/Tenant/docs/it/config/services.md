@@ -53,24 +53,10 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di services.md
-<<<<<<< .merge_file_OtMnLX
-=======
-* [services.md](../../../Xot/docs/services.md)
-* [services.md](../../../Tenant/docs/it/config/services.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_KaQTW6
 * [services.md](../../../xot/docs/services.md)
 * [services.md](../../../tenant/docs/it/config/services.md)
 
 ### Versione Incoming
 
 ---
-<<<<<<< .merge_file_OtMnLX
-=======
-=======
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_KaQTW6

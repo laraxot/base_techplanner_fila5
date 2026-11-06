@@ -15,12 +15,7 @@ status: draft
 # Tenant Module Updates - December 2025
 
 ## PHPStan Fixes
-<<<<<<< .merge_file_TbQF36
 - **DocBlock Updates**: Fixed `class.notFound` errors in `Tenant`, `Domain`, and `TestSushiModel` by replacing incorrect `modulo operativo` and `<nome progetto>` profile references with `Modules\Xot\Contracts\ProfileContract`.
-=======
-<<<<<<< HEAD
-- **DocBlock Updates**: Fixed `class.notFound` errors in `Tenant`, `Domain`, and `TestSushiModel` by replacing incorrect `TechPlanner` and `<nome progetto>` profile references with `Modules\Xot\Contracts\ProfileContract`.
->>>>>>> .merge_file_DpqCi1
 - **Helper Functions**: Added `getAllModulesModels` and `array_merge_recursive_distinct` to `Modules/Xot/helpers/Helper.php` to resolve undefined function errors.
 =======
 - **DocBlock Updates**: Fixed `class.notFound` errors in `Tenant`, `Domain`, and `TestSushiModel` by replacing incorrect `TechPlanner` and `Quaeris` profile references with `Modules\Xot\Contracts\ProfileContract`.
@@ -43,12 +38,5 @@ status: draft
 ## Architectural Alignment
 This module adheres to the **Super Cow Methodology**:
 - **Compliance**: Module now passes PHPStan analysis at Level 10.
-<<<<<<< .merge_file_TbQF36
 - **Documentation**: Referenced core architecture rules in `Modules/Xot/docs/`.
-=======
-<<<<<<< HEAD
-- **Documentation**: Referenced core architecture rules in `Modules/Xot/docs/`.
-=======
-- **Documentation**: Referenced core architecture rules in `Modules/Xot/docs/`.
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_DpqCi1

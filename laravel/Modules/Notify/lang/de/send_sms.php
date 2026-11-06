@@ -24,40 +24,28 @@ return [
             'helper_text' => 'Seleziona il provider per l\'invio SMS',
             'placeholder' => 'Seleziona un driver',
             'label' => 'Driver',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'description' => 'Contenuto del messaggio',
             'helper_text' => 'Testo del messaggio da inviare',
             'placeholder' => 'Scrivi il messaggio',
             'label' => 'Messaggio',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'description' => 'Numero di telefono',
             'helper_text' => 'Numero del destinatario',
             'placeholder' => 'Inserisci il numero',
             'label' => 'Numero telefono',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'gateway' => [
             'description' => 'Gateway SMS',
             'helper_text' => 'Gateway utilizzato per l\'invio',
             'placeholder' => 'Gateway SMS',
             'label' => 'Gateway',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -79,18 +67,12 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio dell\'SMS',
         'confirmation' => 'Sei sicuro di voler inviare questo SMS?',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< .merge_file_IQE8Fv
     'sections' => [
         'page' => [
             'title' => 'SMS-Versand testen',
             'description' => 'Verwenden Sie dieses Formular, um den SMS-Versand über verschiedene Anbieter zu testen.',
         ],
     ],
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_fsrQtU
 ];

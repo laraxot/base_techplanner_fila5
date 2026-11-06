@@ -1,6 +1,5 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
 use Modules\Activity\Database\Factories\ActivityFactory;
@@ -46,8 +45,3 @@ test('activity model has expected attributes', function () {
     Assert::assertTrue(isset($activity->description));
     Assert::assertTrue(isset($activity->event));
 });
-=======
-test('a basic module pest test runs', function () {
-    expect(true)->toBeTrue();
-});
->>>>>>> 6ed19256f (.)

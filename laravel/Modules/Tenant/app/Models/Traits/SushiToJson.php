@@ -7,18 +7,12 @@ namespace Modules\Tenant\Models\Traits;
 use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
-<<<<<<< .merge_file_kflxfb
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Actions\Json\CreateJsonFileByRecordAction;
 use Modules\Tenant\Actions\Json\DeleteJsonFileByRecordAction;
 use Modules\Tenant\Actions\Json\UpdateJsonFileByRecordAction;
 use Modules\Tenant\Models\Contracts\HasSushiToJson;
 use Modules\Xot\Actions\Arr\EnsureKeysAction;
-=======
-use InvalidArgumentException;
-use Modules\Tenant\Services\TenantService;
-<<<<<<< HEAD
->>>>>>> .merge_file_Bub1eb
 use Sushi\Sushi;
 use Webmozart\Assert\Assert;
 
@@ -96,14 +90,7 @@ trait SushiToJson
      * Ottiene il percorso del file JSON per il modello corrente.
      * Il file è specifico per il tenant corrente e la tabella del modello.
      *
-<<<<<<< .merge_file_kflxfb
      * @return string Percorso completo del file JSON
-=======
-     * @param  array<int, array<string, mixed>>  $data  Array di record da salvare
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return bool True se il salvataggio è riuscito, false in caso di errore
 >>>>>>> .merge_file_Bub1eb
      */
@@ -196,17 +183,6 @@ trait SushiToJson
             app(DeleteJsonFileByRecordAction::class)->execute($record);
         });
     }
-<<<<<<< .merge_file_kflxfb
-=======
-
-    /**
-     * Trova l'indice del record nell'array dato un id.
-     *
-     * @param  array<int, array<string, mixed>>  $rows
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return int|null Indice se trovato, altrimenti null
      */
     protected function findRowIndexById(array $rows, int $id): ?int

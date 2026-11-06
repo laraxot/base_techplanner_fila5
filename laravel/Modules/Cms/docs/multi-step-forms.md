@@ -275,15 +275,7 @@ $saveAndContinue = function () {
     $this->validate();
 
     $applicant = Applicant::findOrFail(session('applicant_id'));
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_mFB4uR
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_9GjFYH
     $applicant->educations()->create([
         'institution' => $this->institution,
         'degree' => $this->degree,
@@ -419,24 +411,9 @@ class PersonalInfoTest extends TestCase
 
 - [Documentazione Laravel Volt](https://livewire.laravel.com/project_docs/volt)
 - [Documentazione Laravel Folio](https://github.com/laravel/folio)
-<<<<<<< HEAD
 - [Documentazione Laravel](https://laravel.com/docs) 
 
 ## Collegamenti tra versioni di multi-step-forms.md
 * [multi-step-forms.md](laravel/modules/cms/project_docs/multi-step-forms.md)
 * [multi-step-forms.md](components/multi-step-forms.md)
 
-<<<<<<< .merge_file_mFB4uR
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Documentazione Laravel](https://laravel.com/docs)
-
-## Collegamenti tra versioni di multi-step-forms.md
-* [multi-step-forms.md](laravel/Modules/Cms/project_docs/multi-step-forms.md)
-<<<<<<< HEAD
-* [multi-step-forms.md](laravel/Modules/Cms/project_docs/components/multi-step-forms.md)
-=======
-* [multi-step-forms.md](laravel/Modules/Cms/project_docs/components/multi-step-forms.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_9GjFYH

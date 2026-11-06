@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Forms\Components;
 
-<<<<<<< HEAD
-=======
-use Filament\Forms\Components\Field;
->>>>>>> 6ed19256f (.)
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Grid;
@@ -15,19 +11,12 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\MorphOne;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Forms\Components\XotBaseField;
-=======
->>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 // use Squire\Models\Country;
 
-<<<<<<< HEAD
 class AddressField extends XotBaseField
-=======
-class AddressField extends Field
->>>>>>> 6ed19256f (.)
 {
     /** @var string|callable|null */
     public $relationship;
@@ -38,28 +27,8 @@ class AddressField extends Field
     {
         parent::setUp();
 
-<<<<<<< .merge_file_U2IJg3
         $this->afterStateHydrated(function (AddressField $_component, Model|array|null $record): void {
-=======
-<<<<<<< HEAD
-        $this->afterStateHydrated(function (AddressField $_component, mixed $record): void {
-=======
-        $this->afterStateHydrated(function (AddressField $_component, mixed $record) {
->>>>>>> 6ed19256f (.)
-            $data = [
-                'country' => null,
-                'street' => null,
-                'city' => null,
-                'state' => null,
-                'zip' => null,
-            ];
-
-<<<<<<< HEAD
->>>>>>> .merge_file_qI52S4
             if (! $record instanceof Model) {
-=======
-            if (! ($record instanceof Model)) {
->>>>>>> 6ed19256f (.)
                 return;
             }
 

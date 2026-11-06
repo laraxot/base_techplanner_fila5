@@ -15,14 +15,10 @@ return [
         'code' => [
             'label' => 'Sigla',
             'placeholder' => 'Inserisci la sigla della provincia',
-<<<<<<< HEAD
             'help' => 'Sigla della provincia (es. RM, MI, TO]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-            'help' => 'Sigla della provincia (es. RM, MI, TO)',
->>>>>>> 6ed19256f (.)
         ],
         'region' => [
             'label' => 'Regione',

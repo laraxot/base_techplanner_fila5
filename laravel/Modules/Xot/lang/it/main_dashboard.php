@@ -5,13 +5,8 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
-<<<<<<< HEAD
             'label' => 'Vuoto',
             'heading' => 'Nessun Dato',
-=======
-            'label' => '',
-            'heading' => '',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -31,7 +26,6 @@ return [
             'tooltip' => 'il-mio-profilo',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Main Dashboard',
     'plural_label' => 'Main Dashboard (Plurale)',
     'navigation' => [
@@ -65,6 +59,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

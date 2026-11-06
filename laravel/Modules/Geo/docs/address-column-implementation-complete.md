@@ -12,14 +12,7 @@ status: draft
 
 # AddressColumn Implementation Complete
 
-<<<<<<< .merge_file_kBF4Pe
-=======
-**Date**: 2025-12-12
-<<<<<<< HEAD
->>>>>>> .merge_file_ynoT5L
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Module**: Geo
 **Status**: ✅ **COMPLETED**
 

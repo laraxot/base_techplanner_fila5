@@ -14,14 +14,7 @@ status: draft
 
 ## Situazione Critica Identificata
 
-<<<<<<< .merge_file_OIpLUO
-=======
-**Data audit**: 2025-01-06
-<<<<<<< HEAD
->>>>>>> .merge_file_T49Jkt
 **Data audit**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Gravità**: CRITICA - 8 factory mancanti su 11 models
 
 ## Models senza Factory
@@ -166,18 +159,9 @@ status: draft
 ## Collegamenti
 
 - [README Modulo Geo](./README.md)
-<<<<<<< .merge_file_OIpLUO
-=======
-- [Factory Audit Root](../../../docs/factory-audit-2025.md)
-<<<<<<< HEAD
-- [README Modulo Geo](./readme.md)
->>>>>>> .merge_file_T49Jkt
 - [Factory Audit Root](../../../../docs/factory-audit-2025.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Address Implementation](./address-implementation.md)
 - [Sushi Implementation](./sushi-implementation.md)
 
 ---
 **Errore gravissimo da non ripetere mai più**
-*Ultimo aggiornamento: 2025-01-06*

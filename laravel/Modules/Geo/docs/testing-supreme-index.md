@@ -35,14 +35,7 @@ Questa è la regola fondamentale che ha precedenza ASSOLUTA su qualsiasi altra c
 - **[Laravel AI Guidelines - Testing Priority](../laravel/.ai/guidelines/testing-priority-rule.md)**
 
 ### 📁 Regole per Modulo
-<<<<<<< .merge_file_szaEY5
-=======
-- **[<nome progetto> Testing Guidelines](../laravel/Modules/<nome progetto>/docs/testing-guidelines.md)**
-<<<<<<< HEAD
->>>>>>> .merge_file_E20mJR
 - **[<nome progetto> Testing Guidelines](../laravel/modules/<nome progetto>/docs/testing-guidelines.md)**
-=======
->>>>>>> 6ed19256f (.)
 
 ### ⚙️ Regole Sistema
 - **[Windsurf Rules - Testing Business Behavior](../.windsurf/rules/testing-business-behavior-supreme.mdc)**

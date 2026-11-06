@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_nomXlr
 ---
 qmd: "approfondimento completo tailwind"
 issues: []
@@ -13,11 +12,3 @@ status: draft
 ---
 
  
-=======
-<<<<<<< HEAD
- 
-=======
-
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_6Ek7Ga

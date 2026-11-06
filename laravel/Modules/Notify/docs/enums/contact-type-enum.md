@@ -422,14 +422,7 @@ return [
 
 ## Riferimenti
 
-<<<<<<< .merge_file_7qgYd1
-=======
-- [AddressItemEnum Documentation](../../Geo/docs/enums/address-item-enum.md) - Pattern gemello
-<<<<<<< HEAD
->>>>>>> .merge_file_nALYne
 - [AddressItemEnum Documentation](../../geo/docs/enums/address-item-enum.md) - Pattern gemello
-=======
->>>>>>> 6ed19256f (.)
 - [Notify Module Architecture](../architecture.md)
 - [ContactTypeEnum Source](../../Notify/app/Enums/ContactTypeEnum.php)
 - [AddressItemEnum Documentation](../../../Geo/docs/enums/address-item-enum.md) - Pattern gemello
@@ -445,12 +438,4 @@ return [
 
 ---
 > **Nota**: Questo documento segue la filosofia del progetto: Scopo, Logica, Filosofia, Politica, Religione, Zen.
-<<<<<<< .merge_file_7qgYd1
 > Ogni modifica all'enum DEVE essere documentata e tradotta.
-=======
-<<<<<<< HEAD
-> Ogni modifica all'enum DEVE essere documentata e tradotta.
-=======
-> Ogni modifica all'enum DEVE essere documentata e tradotta.
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_nALYne

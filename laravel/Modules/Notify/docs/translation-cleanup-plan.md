@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_cZYk3h
 ---
 title: "translation cleanup plan"
 type: note
@@ -10,98 +9,14 @@ issues: []
 discussions: []
 status: draft
 ---
-=======
-# Piano di Pulizia e Standardizzazione delle Traduzioni
-
-Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di .
-
-## Analisi della Situazione Attuale
-
-<<<<<<< HEAD
-Dall'analisi dei file di traduzione nella cartella `Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
-Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di <nome progetto>.
-
-## Analisi della Situazione Attuale
-
-Dall'analisi dei file di traduzione nella cartella `Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
-Dall'analisi dei file di traduzione nella cartella `Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
-=======
-Dall'analisi dei file di traduzione nella cartella `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
-Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di SaluteOra.
-
-## Analisi della Situazione Attuale
-
-Dall'analisi dei file di traduzione nella cartella `/var/www/html/saluteora/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
-Dall'analisi dei file di traduzione nella cartella `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
->>>>>>> 6ed19256f (.)
-
-### 1. File con Nomi Errati
-- `send_s_m_s.php` invece di `send_sms.php`
-- `send_a_w_s_email.php` invece di `send_aws_email.php`
-- `send_whats_app.php` invece di `send_whatsapp.php`
-- `send_netfun_s_m_s.php` invece di `send_netfun_sms.php`
-
-### 2. File Duplicati
-- Esistono sia `send_s_m_s.php` che `send_sms.php`
-- Esistono sia `send_a_w_s_email.php` che `send_aws_email.php`
-- Esistono sia `send_netfun_s_m_s.php` che `send_netfun_sms.php`
-
-### 3. File Senza Nome
-- `.php` (file senza nome)
-
-### 4. Struttura Non Standardizzata
-- Alcuni file utilizzano array piatti
-- Altri utilizzano strutture nidificate
-- Manca la dichiarazione `declare(strict_types=1);` in molti file
-
-### 5. Directory Non Necessarie
-- `backup`, `corrected`, `temp` (directory temporanee)
-
-## Piano di Azione
-
-### Fase 1: Backup dei File Esistenti
-- Creare un backup completo di tutti i file di traduzione prima di procedere con le modifiche
-
-### Fase 2: Rimozione dei File Errati e Duplicati
-- Rimuovere i file con nomi errati dopo aver verificato che il contenuto sia stato migrato nei file con nomi corretti
-- Rimuovere il file senza nome `.php`
-
-### Fase 3: Standardizzazione della Struttura dei File
-- Aggiungere `declare(strict_types=1);` a tutti i file
-- Convertire tutti gli array piatti in strutture nidificate
-- Assicurarsi che tutti i file seguano lo stesso formato
-
-### Fase 4: Pulizia delle Directory Temporanee
-- Rimuovere le directory temporanee `backup`, `corrected` e `temp` dopo aver verificato che non contengano informazioni importanti
-
-### Fase 5: Verifica della Coerenza con i File Inglesi
-- Assicurarsi che per ogni file italiano esista un corrispondente file inglese
-- Verificare che le chiavi di traduzione siano coerenti tra le versioni italiana e inglese
->>>>>>> .merge_file_ewVtTZ
 
 # Piano di Pulizia e Standardizzazione delle Traduzioni
 
-<<<<<<< .merge_file_cZYk3h
-=======
-Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di <main module>.
-
-## Analisi della Situazione Attuale
-
-<<<<<<< HEAD
-Dall'analisi dei file di traduzione nella cartella `Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
->>>>>>> .merge_file_ewVtTZ
 Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di Quaeris.
 
 ## Analisi della Situazione Attuale
 
-<<<<<<< .merge_file_cZYk3h
 Dall'analisi dei file di traduzione nella cartella `Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
-=======
-Dall'analisi dei file di traduzione nella cartella `/var/www/html/Quaeris/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
-=======
-Dall'analisi dei file di traduzione nella cartella `/var/www/html/<directory progetto>/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ewVtTZ
 
 ### 1. File con Nomi Errati
 - `send_s_m_s.php` invece di `send_sms.php`
@@ -192,12 +107,4 @@ return [
 
 ## Implementazione
 
-<<<<<<< .merge_file_cZYk3h
 L'implementazione di questo piano garantirà che le traduzioni nel modulo Notify seguano gli standard definiti, migliorando la manutenibilità e la coerenza del codice.
-=======
-<<<<<<< HEAD
-L'implementazione di questo piano garantirà che le traduzioni nel modulo Notify seguano gli standard definiti, migliorando la manutenibilità e la coerenza del codice.
-=======
-L'implementazione di questo piano garantirà che le traduzioni nel modulo Notify seguano gli standard definiti, migliorando la manutenibilità e la coerenza del codice.
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ewVtTZ

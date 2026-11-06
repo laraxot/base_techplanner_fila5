@@ -4,29 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Database\Factories;
 
-<<<<<<< .merge_file_n65whL
-<<<<<<< .merge_file_YDkb7T
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Employee\Models\TimeEntry;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
-=======
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\Employee\Models\TimeEntry;
-=======
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Modules\Employee\Models\TimeEntry;
->>>>>>> .merge_file_RlVJi8
-=======
-use Modules\Employee\Models\TimeEntry;
-use Illuminate\Database\Eloquent\Factories\Factory;
->>>>>>> 6ed19256f (.)
-<<<<<<< .merge_file_n65whL
->>>>>>> .merge_file_oe4IUD
-=======
->>>>>>> .merge_file_RlVJi8
 
 /** @extends Factory<TimeEntry> */
 class TimeEntryFactory extends Factory
@@ -80,11 +61,3 @@ class TimeEntryFactory extends Factory
         ];
     }
 }
-<<<<<<< .merge_file_n65whL
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_RlVJi8

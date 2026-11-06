@@ -44,13 +44,7 @@ return [
         'icon' => 'heroicon-o-document-text',
         'color' => 'text-gray-600',
         'hex_color' => '#6b7280',
-<<<<<<< .merge_file_P5YvMB
         'description' => 'Notas de contacto'],
-=======
-        'description' => 'Notas de contacto',
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_WqkoPv
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -62,11 +56,4 @@ return [
     'fields' => [
     ],
     'actions' => [
-<<<<<<< .merge_file_P5YvMB
     ]];
-=======
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_WqkoPv

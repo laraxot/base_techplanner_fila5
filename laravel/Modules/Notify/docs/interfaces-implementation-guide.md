@@ -22,40 +22,16 @@ Le interfacce sono organizzate in due livelli:
 
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
    Modules/Notify/app/Contracts/SmsActionContract.php
-<<<<<<< .merge_file_8z76fV
-=======
-   Modules/Notify/app/Contracts/SmsActionContract.php
-   Modules/Notify/app/Contracts/SmsActionContract.php
-   Modules/Notify/app/Contracts/SmsActionContract.php
-=======
-   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
-   /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
-   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_e05UNK
    ```
 
 2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
    ```
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-<<<<<<< .merge_file_8z76fV
-=======
-   Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-   Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-   Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-=======
-   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-   /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-   /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_e05UNK
    ```
 
 ### Convenzioni di Naming
@@ -64,13 +40,6 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // ✅ CORRETTO
    interface SmsActionContract
-<<<<<<< .merge_file_8z76fV
-=======
-<<<<<<< HEAD
-   
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_e05UNK
 
    // ❌ ERRATO
    interface SmsActionInterface
@@ -80,13 +49,6 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // Per interfacce nella directory principale
    namespace Modules\Notify\Contracts;
-<<<<<<< .merge_file_8z76fV
-=======
-<<<<<<< HEAD
-   
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_e05UNK
 
    // Per interfacce in sottodirectory
    namespace Modules\Notify\Contracts\SMS;
@@ -119,13 +81,6 @@ use Modules\Notify\Datas\SmsData;
 final class SendNetfunSMSAction implements SmsActionContract
 {
     // Implementazione...
-<<<<<<< .merge_file_8z76fV
-=======
-<<<<<<< HEAD
-    
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_e05UNK
 
     public function execute(SmsData $smsData): array
     {
@@ -172,20 +127,12 @@ Le interfacce sono organizzate in due livelli:
 
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SmsActionContract.php
-=======
-   /var/www/html/<directory progetto>/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
->>>>>>> 6ed19256f (.)
    ```
 
 2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
    ```
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-=======
-   /var/www/html/<directory progetto>/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
->>>>>>> 6ed19256f (.)
    ```
 
 ### Convenzioni di Naming
@@ -265,15 +212,7 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
-<<<<<<< .merge_file_8z76fV
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
 - [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
 - [Architettura dei Contratti](./contracts_architecture.md)
-=======
-<<<<<<< HEAD
-- [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-=======
-- [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_e05UNK

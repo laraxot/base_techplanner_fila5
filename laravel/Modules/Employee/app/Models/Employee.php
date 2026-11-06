@@ -114,10 +114,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read Collection<int, Treatment> $treatments
  * @property-read int|null $treatments_count
  * @property-read int|null $work_hours_count
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @method static EmployeeFactory factory($count = null, $state = [])
  * @method static Builder<static>|Employee newModelQuery()
  * @method static Builder<static>|Employee newQuery()
@@ -151,15 +148,10 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|Employee whereUpdatedBy($value)
  * @method static Builder<static>|Employee withoutPermission($permissions)
  * @method static Builder<static>|Employee withoutRole($roles, $guard = null)
-<<<<<<< HEAD
  *
  * @property-read Employee|null $manager
  * @property-read Collection<int, Employee> $subordinates
  *
-=======
- * @property-read Employee|null $manager
- * @property-read Collection<int, Employee> $subordinates
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Employee extends User
@@ -252,11 +244,7 @@ class Employee extends User
     {
         $status = $this->status;
         $statusStr = is_string($status) ? $status : '';
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6ed19256f (.)
         return match ($statusStr) {
             'active' => 'Attivo',
             'inactive' => 'Inattivo',

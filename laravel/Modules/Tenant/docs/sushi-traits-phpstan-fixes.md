@@ -150,11 +150,6 @@ $safeForm = $form;
 - **File corretti indirettamente**: 9 modelli
 - **Rapporto efficienza**: 1 correzione trait → 3-5 modelli corretti
 
-<<<<<<< .merge_file_aPI8MS
-=======
-### Aggiornamento 2025-11-17
-<<<<<<< HEAD
->>>>>>> .merge_file_6OG7eM
 ### Aggiornamento [DATE]
 =======
 >>>>>>> 6ed19256f (.)
@@ -199,18 +194,13 @@ non un difetto del modulo).
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [../../../../docs/phpstan-level10-achievement.md](../../../../docs/phpstan-level10-achievement.md)
-=======
-- [../../../docs/phpstan-level10-achievement.md](../../../docs/phpstan-level10-achievement.md)
->>>>>>> 6ed19256f (.)
 - [Sushi Package Documentation](https://github.com/calebporzio/sushi)
 - [league/csv 9.27: deprecazione dei costruttori nominati](https://csv.thephpleague.com/9.0/connections/instantiation/)
 
 ---
 
 **PHPStan Level**: 10
-<<<<<<< .merge_file_aPI8MS
 **Status**: ✅ COMPLETATO
 
 ## Host reale vs Model nudo (famiglia A, 2026-08-24)
@@ -257,10 +247,4 @@ apertura non cambiano.
 Entrambi i gate terminano con zero errori. Il gate Tenant module-wide va comunque
 eseguito separatamente: errori in test non posseduti non vanno mascherati né
 duplicati nei trait.
-=======
-<<<<<<< HEAD
-**Status**: ✅ COMPLETATO
-=======
-**Status**: ✅ COMPLETATO
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_6OG7eM

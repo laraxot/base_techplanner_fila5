@@ -129,7 +129,6 @@ return [
             'help' => 'Adresse wurde überprüft',
             'description' => 'Ob diese Adresse überprüft wurde',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -144,8 +143,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

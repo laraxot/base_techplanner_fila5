@@ -36,11 +36,7 @@ return [
                         'fields' => [
                             'label' => 'Etichetta Link',
                             'url' => 'URL',
-<<<<<<< HEAD
                             'icon' => 'Icona (opzionale]',
-=======
-                            'icon' => 'Icona (opzionale)',
->>>>>>> 6ed19256f (.)
                         ],
                     ],
                 ],
@@ -87,7 +83,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Filament',
     'plural_label' => 'Filament (Plurale)',
     'navigation' => [
@@ -132,6 +127,4 @@ return [
             'label' => 'Elimina Filament',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -52,15 +52,7 @@ class Comune extends GeoJsonModel
     {
         return static::loadData()->pluck('regione')->unique()->values();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_brU5oC
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_NnQJHN
     // Recupera le province di una regione
     public static function getProvince(string $codiceRegione): Collection
     {
@@ -70,15 +62,7 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_brU5oC
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_NnQJHN
     // Recupera le città di una provincia
     public static function getCitta(string $codiceProvincia): Collection
     {
@@ -88,15 +72,7 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_brU5oC
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_NnQJHN
     // Recupera i CAP di una città
     public static function getCap(string $codiceCitta): Collection
     {
@@ -106,28 +82,13 @@ class Comune extends GeoJsonModel
             ->unique()
             ->values();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_brU5oC
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_NnQJHN
     // Cerca comuni per nome (funzionalità aggiuntiva)
     public static function cercaPerNome(string $nome): Collection
     {
         return static::loadData()
             ->filter(fn($item) => str_contains(
-<<<<<<< .merge_file_brU5oC
-=======
-                strtolower($item['comune']['nome']),
-<<<<<<< HEAD
->>>>>>> .merge_file_NnQJHN
                 strtolower($item['comune']['nome']), 
-=======
->>>>>>> 6ed19256f (.)
                 strtolower($nome)
             ));
     }
@@ -192,14 +153,7 @@ Select::make('region')
     ->afterStateUpdated(fn (Set $set) => $set('province', null)),
 
 Select::make('province')
-<<<<<<< .merge_file_brU5oC
-=======
-    ->options(fn (Get $get) =>
-<<<<<<< HEAD
->>>>>>> .merge_file_NnQJHN
     ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
         Province::byRegion($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```
@@ -211,14 +165,7 @@ Select::make('region')
     ->afterStateUpdated(fn (Set $set) => $set('province', null)),
 
 Select::make('province')
-<<<<<<< .merge_file_brU5oC
-=======
-    ->options(fn (Get $get) =>
-<<<<<<< HEAD
->>>>>>> .merge_file_NnQJHN
     ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
         Comune::getProvince($get('region'))->pluck('nome', 'codice'))
     ->visible(fn (Get $get) => filled($get('region'))),
 ```
@@ -330,9 +277,4 @@ L'implementazione esistente:
 In sintesi, il modello `Comune` implementato rappresenta un caso di studio positivo di come il consolidamento di modelli strettamente correlati possa, in determinati contesti, portare a un codice più pulito, performante e facile da utilizzare.
 
 ---
-<<<<<<< .merge_file_brU5oC
 *Documento creato il: 27/05/2025*
-=======
-
-*Documento creato il: 27/05/2025*
->>>>>>> .merge_file_NnQJHN

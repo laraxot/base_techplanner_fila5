@@ -4,37 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Models;
 
-<<<<<<< .merge_file_kxVVgM
-=======
-<<<<<<< HEAD
-=======
-use Modules\Geo\Models\Address;
-use UnitEnum;
->>>>>>> 6ed19256f (.)
-use Carbon\Carbon;
->>>>>>> .merge_file_N4NkOM
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Geo\Enums\AddressItemEnum;
-<<<<<<< HEAD
 use Modules\Geo\Models\Address;
-<<<<<<< .merge_file_kxVVgM
 use Modules\Geo\Models\Traits\GeoTrait;
-=======
-=======
->>>>>>> 6ed19256f (.)
-use Modules\Geo\Models\Traits\GeographicalScopes;
->>>>>>> .merge_file_N4NkOM
 use Modules\Geo\Models\Traits\HasAddress;
 use Modules\Xot\Models\Traits\HasDynamicFillable;
 use Override;
-<<<<<<< HEAD
 use UnitEnum;
 
-=======
->>>>>>> 6ed19256f (.)
 use function Safe\preg_match;
 use function Safe\preg_replace;
 
@@ -61,9 +42,7 @@ use function Safe\preg_replace;
  * @property-read Collection<int, PhoneCall> $phoneCalls
  * @property-read int|null $phone_calls_count
  * @property-read Profile|null $updater
-<<<<<<< HEAD
  *
-<<<<<<< .merge_file_kxVVgM
  * @method static Builder<static>|Client inCity(string $city)
  * @method static Builder<static>|Client inPostalCode(string $postalCode)
  * @method static Builder<static>|Client inProvince(string $province)
@@ -105,84 +84,11 @@ use function Safe\preg_replace;
  * @property string|null $activity Attività
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
-=======
-=======
->>>>>>> 6ed19256f (.)
- * @method static Builder<static>|Client newModelQuery()
- * @method static Builder<static>|Client newQuery()
- * @method static Builder<static>|Client query()
- * @method static Builder<static>|Client whereAddress(string $value)
- * @method static Builder<static>|Client whereAdministrativeReference(string $value)
- * @method static Builder<static>|Client whereAssignedWorkerId(int $value)
- * @method static Builder<static>|Client whereBusinessClosed(bool $value)
- * @method static Builder<static>|Client whereCity(string $value)
- * @method static Builder<static>|Client whereCompanyName(string $value)
- * @method static Builder<static>|Client whereCompetentHealthUnit(string $value)
- * @method static Builder<static>|Client whereCountry(string $value)
- * @method static Builder<static>|Client whereCreatedAt(Carbon $value)
- * @method static Builder<static>|Client whereEmail(string $value)
- * @method static Builder<static>|Client whereFax(string $value)
- * @method static Builder<static>|Client whereFiscalCode(string $value)
- * @method static Builder<static>|Client whereId(int $value)
- * @method static Builder<static>|Client whereLatitude(float $value)
- * @method static Builder<static>|Client whereLocality(string $value)
- * @method static Builder<static>|Client whereLongitude(float $value)
- * @method static Builder<static>|Client whereMobile(string $value)
- * @method static Builder<static>|Client whereName(string $value)
- * @method static Builder<static>|Client whereNotes(string $value)
- * @method static Builder<static>|Client wherePec(string $value)
- * @method static Builder<static>|Client wherePhone(string $value)
- * @method static Builder<static>|Client wherePostalCode(string $value)
- * @method static Builder<static>|Client whereProvince(string $value)
- * @method static Builder<static>|Client whereRoute(string $value)
- * @method static Builder<static>|Client whereStreetNumber(string $value)
- * @method static Builder<static>|Client whereSublocality(string $value)
- * @method static Builder<static>|Client whereSublocalityLevel1(string $value)
- * @method static Builder<static>|Client whereSublocalityLevel2(string $value)
- * @method static Builder<static>|Client whereTaxCode(string $value)
- * @method static Builder<static>|Client whereUpdatedAt(Carbon $value)
- * @method static Builder<static>|Client whereUpdatedBy(string $value)
- * @method static Builder<static>|Client whereVatNumber(string $value)
- * @method static Builder<static>|Client whereWhatsapp(string $value)
- * @method static Builder<static>|Client withDistance(float $latitude, float $longitude, float $radiusKm = 10)
-<<<<<<< HEAD
- *
-=======
->>>>>>> 6ed19256f (.)
- * @property string|null $company_office
- * @property string|null $activity
->>>>>>> .merge_file_N4NkOM
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
-<<<<<<< .merge_file_kxVVgM
  *
-=======
- * @property string|null $administrative_area_level_1
- * @property string|null $administrative_area_level_2
- * @property string|null $administrative_area_level_3
- * @property string|null $formatted_address Full formatted address
- * @property string|null $place_id Geocoding provider Place ID
- * @property string|null $region DEPRECATED: Use administrative_area_level_1 instead - legacy compatibility
- * @property-read Collection<int, Address> $addresses
- * @property-read int|null $addresses_count
- * @property-read Profile|null $deleter
- * @property-read string|null $full_addresses
- * @property-read Collection<int, MedicalDirector> $medicalDirectors
- * @property-read int|null $medical_directors_count
- * @property-read Collection<int, PhoneCall> $phoneCalls
- * @property-read int|null $phone_calls_count
-<<<<<<< HEAD
- *
-=======
->>>>>>> 6ed19256f (.)
- * @method static Builder<static>|Client inCity(string $city)
- * @method static Builder<static>|Client inPostalCode(string $postalCode)
- * @method static Builder<static>|Client inProvince(string $province)
- * @method static Builder<static>|Client inRegion(string $region)
- * @method static Builder<static>|Client orderByDistance(float $latitude, float $longitude)
->>>>>>> .merge_file_N4NkOM
  * @method static Builder<static>|Client whereActivity($value)
  * @method static Builder<static>|Client whereAddress($value)
  * @method static Builder<static>|Client whereAdministrativeAreaLevel1($value)
@@ -209,41 +115,20 @@ use function Safe\preg_replace;
  * @method static Builder<static>|Client wherePostalCode($value)
  * @method static Builder<static>|Client whereProvince($value)
  * @method static Builder<static>|Client whereRegion($value)
-<<<<<<< .merge_file_kxVVgM
  * @method static Builder<static>|Client whereRoute($value)
  * @method static Builder<static>|Client whereStreetNumber($value)
  * @method static Builder<static>|Client whereTaxCode($value)
  * @method static Builder<static>|Client whereUpdatedAt($value)
  * @method static Builder<static>|Client whereUpdatedBy($value)
  * @method static Builder<static>|Client whereVatNumber($value)
-=======
- * @method static Builder<static>|Client whereNull($columns, $boolean = 'and', $not = false)
- * @method static Builder<static>|Client whereNotNull($columns, $boolean = 'and')
- * @method static Builder<static>|Client orWhereNull($columns, $boolean = 'and')
- * @method static Builder<static>|Client where($column, $operator = null, $value = null, $boolean = 'and')
- * @method static Collection<int, static> get($columns = ['*'])
- * @method static int update(array $values)
- * @method static void chunk(int $count, callable $callback)
-<<<<<<< HEAD
->>>>>>> .merge_file_N4NkOM
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Client extends BaseModel
 {
-<<<<<<< .merge_file_kxVVgM
     use GeoTrait;
 
     /** @use HasAddress<Client> */
-=======
-    use GeographicalScopes;
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_N4NkOM
     use HasAddress;
 
     use HasDynamicFillable;
@@ -257,7 +142,6 @@ class Client extends BaseModel
         AddressItemEnum::class,
     ];
 
-<<<<<<< HEAD
     /**
      * @return array<int, class-string<UnitEnum>>
      */
@@ -266,8 +150,6 @@ class Client extends BaseModel
         return $this->dynamicFillableEnums;
     }
 
-=======
->>>>>>> 6ed19256f (.)
     protected $fillable = [
         'name',
         'vat_number',
@@ -304,11 +186,7 @@ class Client extends BaseModel
         if ($replaced === null || is_array($replaced)) {
             return trim($address);
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6ed19256f (.)
         return trim($replaced);
     }
 
@@ -479,17 +357,10 @@ class Client extends BaseModel
     {
         $phone = preg_replace('/[^+\d]/', '', $value);
         $whatsapp = preg_replace('/[^+\d]/', '', $value);
-<<<<<<< HEAD
 
         $phoneClean = is_string($phone) ? $phone : '';
         $whatsappClean = is_string($whatsapp) ? $whatsapp : '';
 
-=======
-        
-        $phoneClean = is_string($phone) ? $phone : '';
-        $whatsappClean = is_string($whatsapp) ? $whatsapp : '';
-        
->>>>>>> 6ed19256f (.)
         return match ($type) {
             'phone', 'mobile' => 'tel:'.$phoneClean,
             'email', 'pec' => 'mailto:'.$value,

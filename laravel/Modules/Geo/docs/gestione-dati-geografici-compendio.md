@@ -221,15 +221,5 @@ Questo compendio fornisce un punto di partenza per navigare nella documentazione
 
 ---
 
-<<<<<<< .merge_file_pP1urI
 *Documento creato il: 28/05/2025*  
 *Autore: Team <main module>*
-=======
-*Documento creato il: 28/05/2025*
-<<<<<<< HEAD
-*Documento creato il: 28/05/2025*  
-*Autore: Team <main module>*
-=======
-*Autore: Team <main module>*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_IVTD0a

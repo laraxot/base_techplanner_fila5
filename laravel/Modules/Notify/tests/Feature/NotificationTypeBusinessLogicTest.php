@@ -2,14 +2,7 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_DKaqzB
 namespace Modules\Notify\Tests\Feature;
-=======
-<<<<<<< HEAD
-=======
-use Modules\Notify\Models\NotificationType;
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_XUY206
 
 use Modules\Notify\Database\Factories\NotificationTypeFactory;
 use Modules\Notify\Models\NotificationType;

@@ -14,11 +14,6 @@ status: draft
 ---
 # Analisi Qualità - Modulo Tenant
 
-<<<<<<< .merge_file_UTGNkT
-=======
-**Ultimo aggiornamento**: 2025-01-27
-<<<<<<< HEAD
->>>>>>> .merge_file_69uFP8
 **Ultimo aggiornamento**: [DATE]
 =======
 >>>>>>> 6ed19256f (.)
@@ -79,19 +74,8 @@ status: draft
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_UTGNkT
 - [PHPStan Analysis](../../xot/docs/phpstan-analysis-[date].md)
 - [Quality Guide](../../xot/docs/php-quality-guide.md)
 - [CI/CD Workflow](../.github/workflows/quality.yml)
 - [CI/CD Workflow](../../../../.github/workflows/quality.yml)
-=======
-- [PHPStan Analysis](../../Xot/docs/phpstan-analysis-2025-01-27.md)
-- [Quality Guide](../../Xot/docs/php-quality-guide.md)
-<<<<<<< HEAD
-- [PHPStan Analysis](../../xot/docs/phpstan-analysis-[date].md)
-- [Quality Guide](../../xot/docs/php-quality-guide.md)
-- [CI/CD Workflow](../.github/workflows/quality.yml)
-=======
-- [CI/CD Workflow](../.github/workflows/quality.yml)
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_69uFP8

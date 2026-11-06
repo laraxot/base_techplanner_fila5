@@ -107,11 +107,7 @@ return [
     ],
     'pec' => [
         'label' => 'PEC',
-<<<<<<< HEAD
         'description' => 'Indirizzo di posta elettronica certificata (PEC] associato all\'indirizzo',
-=======
-        'description' => 'Indirizzo di posta elettronica certificata (PEC) associato all\'indirizzo',
->>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-shield-check',
         'color' => 'purple',
     ],

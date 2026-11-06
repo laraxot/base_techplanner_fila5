@@ -23,7 +23,6 @@ class AdminPanelProvider extends XotBasePanelProvider
     public const string BUILD_DIRECTORY = 'assets/geo';
 
     protected string $module = 'Geo';
-<<<<<<< HEAD
 
     #[\Override]
     public function panel(Panel $panel): Panel
@@ -49,7 +48,6 @@ class AdminPanelProvider extends XotBasePanelProvider
 
         return $panel;
     }
-<<<<<<< .merge_file_K1hfPj
 
     public static function assetsAreAvailable(?string $publicRoot = null): bool
     {
@@ -58,8 +56,4 @@ class AdminPanelProvider extends XotBasePanelProvider
         return File::exists($root.DIRECTORY_SEPARATOR.'hot')
             || File::exists($root.DIRECTORY_SEPARATOR.self::BUILD_DIRECTORY.'/manifest.json');
     }
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_L38OSE
 }

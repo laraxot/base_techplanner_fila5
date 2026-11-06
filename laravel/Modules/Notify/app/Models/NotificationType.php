@@ -7,25 +7,9 @@ namespace Modules\Notify\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< .merge_file_Yz6SUZ
 use Modules\Notify\Database\Factories\NotificationTypeFactory;
 
 /**
-=======
-<<<<<<< HEAD
-use Illuminate\Support\Carbon;
-=======
->>>>>>> 6ed19256f (.)
-
-/**
- * @method static Builder<static>|NotificationType newModelQuery()
- * @method static Builder<static>|NotificationType newQuery()
- * @method static Builder<static>|NotificationType query()
- *
- * @mixin IdeHelperNotificationType
-<<<<<<< HEAD
- *
->>>>>>> .merge_file_QmPxmc
  * @property int $id
  * @property string|null $name
  * @property string|null $slug
@@ -40,13 +24,7 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|NotificationType newQuery()
  * @method static Builder<static>|NotificationType query()
  *
-<<<<<<< .merge_file_Yz6SUZ
  * @mixin \Illuminate\Database\Eloquent\Model
-=======
-=======
->>>>>>> 6ed19256f (.)
- * @mixin \Eloquent
->>>>>>> .merge_file_QmPxmc
  */
 class NotificationType extends Model
 {

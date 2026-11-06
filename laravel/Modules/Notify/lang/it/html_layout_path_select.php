@@ -9,14 +9,7 @@ return [
             'placeholder' => 'html_layout_path',
             'helper_text' => 'html_layout_path',
             'description' => 'html_layout_path',
-<<<<<<< .merge_file_fsRl1s
             'tooltip' => '']],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-        ],
-    ],
->>>>>>> .merge_file_QXiNla
     'label' => 'Html Layout Path Select',
     'plural_label' => 'Html Layout Path Select (Plurale)',
     'navigation' => [
@@ -34,13 +27,4 @@ return [
         'edit' => [
             'label' => 'Modifica Html Layout Path Select'],
         'delete' => [
-<<<<<<< .merge_file_fsRl1s
             'label' => 'Elimina Html Layout Path Select']]];
-=======
-            'label' => 'Elimina Html Layout Path Select',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
-];
->>>>>>> .merge_file_QXiNla

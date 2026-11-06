@@ -332,12 +332,4 @@ public static function getFormSchema(): array
 
 **Status**: 📝 **ANALISI COMPLETATA**
 
-<<<<<<< .merge_file_RA3vTp
 **Ultimo aggiornamento**: [DATE]
-=======
-**Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_HocX3q

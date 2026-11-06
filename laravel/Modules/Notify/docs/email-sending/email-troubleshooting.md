@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_RzxonN
 ---
 title: "email troubleshooting"
 type: note
@@ -11,13 +10,7 @@ discussions: []
 status: draft
 ---
 
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_4nAg0F
 # Risoluzione dei Problemi nelle Email 
-=======
-# Risoluzione dei Problemi nelle Email
->>>>>>> 6ed19256f (.)
 
 Questa documentazione fornisce soluzioni per i problemi comuni che possono verificarsi durante l'invio di email nel modulo Notify.
 
@@ -33,23 +26,8 @@ La classe `SpatieEmail` ora utilizza l'API moderna di Laravel per gli allegati t
 // Preparazione degli allegati
 $attachments = [
     [
-<<<<<<< .merge_file_RzxonN
         // public_path() punta a public_html/: mai percorsi assoluti di un'installazione
         'path' => public_path('images/avatars/default.svg'),
-=======
-<<<<<<< HEAD
-        'path' => 'public_html/images/avatars/default.svg',
-        'path' => 'public_html/images/avatars/default.svg',
-        'path' => 'public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
-'path' => '/var/www/html/Quaeris/public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/_bases/base_techplanner_fila5_mono/public_html/images/avatars/default.svg',
-=======
-        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/saluteora/public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default.svg',
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_4nAg0F
         'as' => 'logo.svg',
         'mime' => 'image/svg+xml',
     ],
@@ -78,14 +56,7 @@ L'implementazione attuale include:
 3. **Gestione opzionale di nome e MIME type**: Personalizzazione flessibile degli allegati
 4. **Documentazione PHPDoc completa**: Miglior supporto IDE e type hints
 
-<<<<<<< .merge_file_RzxonN
-=======
-Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./ATTACHMENTS_USAGE.md).
-<<<<<<< HEAD
->>>>>>> .merge_file_4nAg0F
 Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./attachments_usage.md).
-=======
->>>>>>> 6ed19256f (.)
 
 ### 2. Errore: "View [notify::emails.template-name] not found"
 
@@ -217,11 +188,7 @@ Esempio di test per verificare il corretto funzionamento dell'invio email:
 public function test_can_send_email_with_attachments()
 {
     Mail::fake();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $user = User::factory()->create();
     $attachments = [
         [
@@ -230,26 +197,15 @@ public function test_can_send_email_with_attachments()
             'mime' => 'text/plain',
         ],
     ];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Crea il file test se non esiste
     if (!file_exists(public_path('test-file.txt'))) {
         file_put_contents(public_path('test-file.txt'), 'Test content');
     }
-<<<<<<< HEAD
     
     // Invia email
     Mail::to($user->email)->send((new SpatieEmail($user, 'test-template'))->addAttachments($attachments));
     
-=======
-
-    // Invia email
-    Mail::to($user->email)->send((new SpatieEmail($user, 'test-template'))->addAttachments($attachments));
-
->>>>>>> 6ed19256f (.)
     // Verifica che l'email sia stata inviata
     Mail::assertSent(SpatieEmail::class, function ($mail) use ($user) {
         return $mail->hasTo($user->email);
@@ -259,19 +215,7 @@ public function test_can_send_email_with_attachments()
 
 ## Collegamenti alla Documentazione Correlata
 
-<<<<<<< .merge_file_RzxonN
 - [ATTACHMENTS_USAGE.md](./attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie-mail-templates-structure.md)
-=======
-- [ATTACHMENTS_USAGE.md](./ATTACHMENTS_USAGE.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
-<<<<<<< HEAD
-- [ATTACHMENTS_USAGE.md](./attachments_usage.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_4nAg0F

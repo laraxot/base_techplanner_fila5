@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "lang link"
 type: note
@@ -15,10 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
-<<<<<<< .merge_file_IIi7oW
-=======
-=======
-
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Ug1NMg

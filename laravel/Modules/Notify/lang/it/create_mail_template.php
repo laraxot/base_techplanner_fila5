@@ -6,7 +6,6 @@ return [
     'fields' => [
         'mailable' => [
             'label' => 'mailable',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => ''],
@@ -24,38 +23,14 @@ return [
             'label' => 'text_template',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_BfMdLC
             'description' => '']],
-=======
-            'description' => '',
-=======
-        ],
-        'subject' => [
-            'label' => 'subject',
-        ],
-        'html_template' => [
-            'label' => 'html_template',
-        ],
-        'text_template' => [
-            'label' => 'text_template',
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_9Zx3DD
     'actions' => [
         'create' => [
             'label' => 'create'],
         'createAnother' => [
             'label' => 'createAnother'],
         'cancel' => [
-<<<<<<< .merge_file_BfMdLC
             'label' => 'cancel']],
-=======
-            'label' => 'cancel',
-        ],
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_9Zx3DD
     'label' => 'Create Mail Template',
     'plural_label' => 'Create Mail Template (Plurale)',
     'navigation' => [
@@ -66,12 +41,4 @@ return [
             'description' => 'General Settings'],
         'label' => 'Create Mail Template',
         'sort' => 1,
-<<<<<<< .merge_file_BfMdLC
         'icon' => 'heroicon-o-collection']];
-=======
-        'icon' => 'heroicon-o-collection',
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_9Zx3DD

@@ -23,15 +23,8 @@ class FooterData extends Data implements Wireable
 
     /**
      * The view path.
-<<<<<<< HEAD
      */
     public string $view = 'cms::components.footer';
-=======
-     *
-     * @var string
-     */
-    public $view = 'cms::components.footer';
->>>>>>> 6ed19256f (.)
 
     public ?string $_tpl = null;
 
@@ -39,16 +32,8 @@ class FooterData extends Data implements Wireable
 
     public static function make(): self
     {
-<<<<<<< HEAD
         if (! self::$instance instanceof FooterData) {
-<<<<<<< .merge_file_LqcPXV
             $data = app(GetTenantConfigArrayAction::class)->execute('appearance');
-=======
-=======
-        if (! (self::$instance instanceof FooterData)) {
->>>>>>> 6ed19256f (.)
-            $data = TenantService::getConfig('appearance');
->>>>>>> .merge_file_WIYcSx
             $data = Arr::get($data, 'footer', []);
             self::$instance = self::from($data);
         }

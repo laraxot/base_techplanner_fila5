@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_Vr0i0j
 ---
 title: "user link"
 type: note
@@ -9,43 +8,6 @@ qmd: "user link"
 issues: []
 discussions: []
 status: draft
-=======
-# Collegamento al Modulo User
-
-Questo documento descrive le relazioni e i collegamenti tra il modulo Cms e il modulo User per quanto riguarda i componenti Filament e le convenzioni di namespace.
-
-## Convenzioni di Namespace
-
-Sia il modulo Cms che il modulo User seguono le stesse convenzioni di namespace per i componenti Filament:
-
-- Il namespace corretto è sempre `Modules\<NomeModulo>\Filament`, anche se i file si trovano in `app/Filament`
-- Non va mai aggiunto `App` nel namespace
-
-Per dettagli specifici, consulta:
-- [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md) in questo modulo
-- [Convenzioni di Namespace](../../User/project_docs/namespace-conventions.md) nel modulo User
-<<<<<<< HEAD
-- [Convenzioni di Namespace](../../user/project_docs/namespace-conventions.md) nel modulo User
-=======
->>>>>>> 6ed19256f (.)
-
-## Punti di Integrazione
-
-- **Componenti UI condivisi**: Alcuni componenti UI del modulo Cms sono utilizzati anche nel modulo User
-- **Convenzioni di stile**: Entrambi i moduli seguono le stesse convenzioni di stile per garantire coerenza
-- **Filament Resources**: I resource di entrambi i moduli interagiscono in diverse parti dell'applicazione
-
-## Collegamenti Bidirezionali
-
-- [Convenzioni di Namespace nel modulo User](../../User/project_docs/namespace-conventions.md)
-- [Best Practices Filament nel modulo User](../../User/project_docs/FILAMENT_BEST_PRACTICES.md)
-<<<<<<< HEAD
-- [Convenzioni di Namespace nel modulo User](../../user/project_docs/namespace-conventions.md)
-- [Best Practices Filament nel modulo User](../../user/project_docs/filament_best_practices.md)
-=======
->>>>>>> 6ed19256f (.)
-
->>>>>>> .merge_file_AJSHPE
 ---
 
 # Collegamento al Modulo User
@@ -82,16 +44,6 @@ Quando aggiungi nuovi componenti Filament, assicurati di:
 3. Mantenere aggiornata la documentazione in entrambi i moduli
 
 ## Collegamenti tra versioni di user-link.md
-<<<<<<< .merge_file_Vr0i0j
 * [user-link.md](../../Lang/docs/user-link.md)
 * [user-link.md](laravel/modules/cms/project_docs/user-link.md)
 
-=======
-* [user-link.md](laravel/Modules/Lang/docs/user-link.md)
-* [user-link.md](laravel/Modules/Cms/docs/user-link.md)
-<<<<<<< HEAD
-* [user-link.md](laravel/modules/lang/project_docs/user-link.md)
-* [user-link.md](laravel/modules/cms/project_docs/user-link.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_AJSHPE

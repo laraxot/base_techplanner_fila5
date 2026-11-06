@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_SUulsn
 ---
 title: "google analytics"
 type: note
@@ -13,11 +12,4 @@ status: draft
 
 https://plausible.io/
 
-=======
-<<<<<<< HEAD
-https://plausible.io/
-https://plausible.io/
-=======
-
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_C9Z2nz

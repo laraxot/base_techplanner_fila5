@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-/**
- * da.
- */
-
->>>>>>> 6ed19256f (.)
 declare(strict_types=1);
 
 return [
@@ -120,11 +113,7 @@ return [
                 ],
             ],
             'territories' => [
-<<<<<<< HEAD
                 'canada' => 'Canada\'s provinser og territorier',
-=======
-                'canada' => "Canada's provinser og territorier",
->>>>>>> 6ed19256f (.)
             ],
             'timezone' => 'Tidszone',
         ],
@@ -143,7 +132,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -157,6 +145,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -117,19 +117,8 @@ Questo documento elenca tutti i file che contengono conflitti di merge  nel modu
 ## Collegamenti
 
 - [Documentazione Modulo Geo](module_geo.md)
-<<<<<<< HEAD
 - [Convenzioni Laraxot](../../../../docs/project/laraxot_conventions.md)
-=======
-- [Convenzioni Laraxot](../../../project_docs/laraxot_conventions.md)
->>>>>>> 6ed19256f (.)
 - [Regole PHPStan](phpstan_fixes.md)
 
 ---
-<<<<<<< .merge_file_jlbeL1
 **Stato**: In corso di analisi 
-=======
-
-**Ultimo aggiornamento**: Gennaio 2025
-**Stato**: In corso di analisi
-**Stato**: In corso di analisi 
->>>>>>> .merge_file_uus6OE

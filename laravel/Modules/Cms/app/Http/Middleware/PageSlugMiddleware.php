@@ -5,13 +5,6 @@ declare(strict_types=1);
 namespace Modules\Cms\Http\Middleware;
 
 use Illuminate\Contracts\Http\Kernel;
-<<<<<<< .merge_file_TeKJG6
-=======
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\ModelNotFoundException;
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_2QW25g
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Modules\Cms\Actions\ValidatePageMiddlewareAction;
@@ -88,7 +81,6 @@ class PageSlugMiddleware
         }
     }
 
-<<<<<<< .merge_file_TeKJG6
     /**
      * Middleware dichiarati dal JSON della pagina `$slug`. Lancia se il campo e' illeggibile.
      *
@@ -113,22 +105,6 @@ class PageSlugMiddleware
             throw new \InvalidArgumentException(sprintf("Middleware CMS '%s' non risolvibile: usare un alias (es. 'auth') o una classe esistente; 'web' e' gia' applicato dallo stack Folio.", $declared));
         }
     }
-=======
-<<<<<<< HEAD
-        try {
-            $middlewares = Page::getMiddlewareBySlug($slug);
-        } catch (ModelNotFoundException $e) {
-            // Page doesn't exist in CMS - this is fine for dynamic models like Predict
-            $middlewares = [];
-        } catch (\Throwable $e) {
-            // Any other error - continue without middleware
-            $middlewares = [];
-        }
-=======
-        $middlewares = Page::getMiddlewareBySlug($slug);
->>>>>>> 6ed19256f (.)
-        // Should return ["auth", "Modules\User\Http\Middleware\EnsureUserHasType:doctor"]
->>>>>>> .merge_file_2QW25g
 
     /**
      * Resolve CMS page slug from Folio route (name, container+segment, or single slug).

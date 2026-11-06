@@ -9,50 +9,18 @@ use Modules\Gdpr\Filament\Resources\EventResource\Pages\EditEvent;
 use Modules\Gdpr\Filament\Resources\EventResource\Pages\ListEvents;
 use Modules\Gdpr\Models\Event;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< HEAD
-=======
-use Override;
->>>>>>> 6ed19256f (.)
 
 class EventResource extends XotBaseResource
 {
     protected static ?string $model = Event::class;
 
-<<<<<<< HEAD
     #[\Override]
-<<<<<<< .merge_file_j8aILP
-=======
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
-    public static function getFormSchema(): array
-    {
-        return [
-            'treatment_id' => TextInput::make('treatment_id')->maxLength(36)->default(null),
-            'consent_id' => Select::make('consent_id')->relationship('consent', 'id'),
-            'subject_id' => TextInput::make('subject_id')->required()->maxLength(191),
-            'ip' => TextInput::make('ip')->required()->maxLength(191),
-            'action' => TextInput::make('action')->required()->maxLength(191),
-            'payload' => Textarea::make('payload')->required()->columnSpanFull(),
-        ];
-    }
-
-<<<<<<< HEAD
-    #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_tQD1Re
     public static function getRelations(): array
     {
         return [];
     }
 
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

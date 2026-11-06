@@ -40,20 +40,7 @@ Da quel nome derivano tutte le configurazioni per tenant (verificato 2026-10-14)
 
 Tenant esistenti oggi in `laravel/config/`: `local/fixcity`, `eu/fixcity`, `net/futurely`, `localhost`.
 
-<<<<<<< .merge_file_m0lmrK
 ## Quick start
-=======
-**Ultimo Aggiornamento**: 5 Novembre 2025
-**Status**: PHPStan Fixes In Progress
-<<<<<<< HEAD
----
-title: "Tenant Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
----
->>>>>>> .merge_file_G9zg7l
 
 ```bash
 cd laravel
@@ -133,17 +120,9 @@ This directory contains documentation for the module.
 
 ## Guidelines
 
-<<<<<<< .merge_file_m0lmrK
 Documentation should be:
 - Clear and concise
 - Example-driven
 - Updated with code changes
 - Use Markdown format (.md)
-=======
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_G9zg7l

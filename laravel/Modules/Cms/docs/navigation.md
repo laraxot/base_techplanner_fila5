@@ -42,30 +42,9 @@ $page->navigation
 ```
 
 ## Collegamenti tra versioni di navigation.md
-<<<<<<< .merge_file_1h6HZw
 * [navigation.md](../../Gdpr/docs/navigation.md)
-=======
-<<<<<<< HEAD
-* [navigation.md](laravel/modules/gdpr/docs/navigation.md)
->>>>>>> .merge_file_EAfFGT
 * [navigation.md](laravel/modules/xot/docs/navigation.md)
 * [navigation.md](../../UI/docs/navigation.md)
 * [navigation.md](blocks/navigation.md)
 * [navigation.md](laravel/modules/cms/docs/navigation.md)
-<<<<<<< .merge_file_1h6HZw
 * [navigation.md](components/navigation.md)
-=======
-* [navigation.md](laravel/modules/cms/docs/components/navigation.md)
-=======
->>>>>>> 6ed19256f (.)
-* [navigation.md](laravel/Modules/Gdpr/docs/navigation.md)
-* [navigation.md](laravel/Modules/Xot/docs/navigation.md)
-* [navigation.md](laravel/Modules/UI/docs/navigation.md)
-* [navigation.md](laravel/Modules/Cms/docs/blocks/navigation.md)
-* [navigation.md](laravel/Modules/Cms/docs/navigation.md)
-<<<<<<< HEAD
-* [navigation.md](laravel/Modules/Cms/docs/components/navigation.md)
-=======
-* [navigation.md](laravel/Modules/Cms/docs/components/navigation.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_EAfFGT

@@ -225,33 +225,12 @@ public function boot(): void
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_i7aRfz
 - [Best Practices Sistema](../../../docs/core/best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
-=======
-<<<<<<< HEAD
-- [Best Practices Sistema](../../../../docs/core/best-practices.md)
-- [Convenzioni Sistema](../../../../docs/core/conventions.md)
-- [Template Modulo](../../../../docs/templates/module-template.md)
-=======
-- [Best Practices Sistema](../../../docs/core/best-practices.md)
-- [Convenzioni Sistema](../../../docs/core/conventions.md)
-- [Template Modulo](../../../docs/templates/module-template.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Eau3fd
 - [PHPStan Guide](../development/phpstan-guide.md)
 
 ---
 
-<<<<<<< .merge_file_i7aRfz
 **Ultimo aggiornamento:** Gennaio 2025  
 **Versione:** 2.0 - Consolidata DRY + KISS
-=======
-**Ultimo aggiornamento:** Gennaio 2025
-<<<<<<< HEAD
-**Versione:** 2.0 - Consolidata DRY + KISS
-=======
-**Versione:** 2.0 - Consolidata DRY + KISS
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Eau3fd

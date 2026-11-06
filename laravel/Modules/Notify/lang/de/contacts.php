@@ -15,61 +15,29 @@ return [
             'tooltip' => 'Nome del contatto',
             'placeholder' => 'es: Mario Rossi',
             'help' => 'Inserisci il nome completo del contatto',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_3qxt4p
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'email' => [
             'label' => 'Email',
             'tooltip' => 'Indirizzo email del contatto',
             'placeholder' => 'es: mario.rossi@example.com',
             'help' => 'Inserisci un indirizzo email valido',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_3qxt4p
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'phone' => [
             'label' => 'Telefono',
             'tooltip' => 'Numero di telefono del contatto',
             'placeholder' => 'es: +39 123 456 7890',
             'help' => 'Inserisci il numero con prefisso internazionale',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_3qxt4p
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'telegram_chat_id' => [
             'label' => 'Chat ID Telegram',
             'tooltip' => 'ID della chat Telegram del contatto',
             'placeholder' => 'es: 123456789',
             'help' => 'ID numerico fornito dal bot Telegram',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_3qxt4p
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'group' => [
             'label' => 'Gruppo',
             'tooltip' => 'Gruppo di appartenenza del contatto',
@@ -84,21 +52,9 @@ return [
                     'tooltip' => 'Utenti standard'],
                 'support' => [
                     'label' => 'Supporto',
-<<<<<<< .merge_file_3qxt4p
                     'tooltip' => 'Team di supporto']],
             'helper_text' => '',
             'description' => ''],
-=======
-                    'tooltip' => 'Team di supporto',
-                ],
-            ],
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'channels' => [
             'label' => 'Canali',
             'tooltip' => 'Canali di notifica preferiti',
@@ -115,21 +71,9 @@ return [
                     'tooltip' => 'Notifiche via Telegram'],
                 'push' => [
                     'label' => 'Push',
-<<<<<<< .merge_file_3qxt4p
                     'tooltip' => 'Notifiche push sul browser']],
             'helper_text' => '',
             'description' => ''],
-=======
-                    'tooltip' => 'Notifiche push sul browser',
-                ],
-            ],
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'preferences' => [
             'label' => 'Preferenze',
             'tooltip' => 'Preferenze di notifica',
@@ -151,49 +95,20 @@ return [
                 'quiet_hours' => [
                     'label' => 'Ore di silenzio',
                     'tooltip' => 'Periodo in cui non inviare notifiche',
-<<<<<<< .merge_file_3qxt4p
                     'help' => 'Le notifiche verranno inviate al termine del periodo di silenzio']],
             'helper_text' => '',
             'description' => ''],
-=======
-                    'help' => 'Le notifiche verranno inviate al termine del periodo di silenzio',
-                ],
-            ],
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del contatto',
             'help' => 'Disattiva temporaneamente l\'invio di notifiche a questo contatto',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_3qxt4p
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_HSbEaj
         'last_notified_at' => [
             'label' => 'Ultima notifica',
             'tooltip' => 'Data e ora dell\'ultima notifica inviata',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_3qxt4p
             'description' => '']],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_HSbEaj
     'actions' => [
         'test_notification' => [
             'label' => 'Invia test',
@@ -251,18 +166,6 @@ return [
             'tooltip' => 'Filtra per stato di attivazione'],
         'last_notified' => [
             'label' => 'Ultima notifica',
-<<<<<<< .merge_file_3qxt4p
             'tooltip' => 'Filtra per data ultima notifica']],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-            'tooltip' => 'Filtra per data ultima notifica',
-        ],
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_HSbEaj

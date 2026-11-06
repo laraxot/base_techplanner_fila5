@@ -17,16 +17,8 @@ return [
             'tooltip' => 'Nome identificativo del canale',
             'placeholder' => 'es: Email Marketing',
             'help' => 'Inserisci un nome univoco per identificare il canale',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_ssLTpU
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IZuUKR
         'driver' => [
             'label' => 'Driver',
             'tooltip' => 'Tipo di servizio utilizzato per l\'invio',
@@ -49,21 +41,9 @@ return [
                     'tooltip' => 'Invio tramite bot Telegram'],
                 'slack' => [
                     'label' => 'Slack',
-<<<<<<< .merge_file_ssLTpU
                     'tooltip' => 'Invio tramite webhook Slack']],
             'helper_text' => '',
             'description' => ''],
-=======
-                    'tooltip' => 'Invio tramite webhook Slack',
-                ],
-            ],
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IZuUKR
         'configuration' => [
             'label' => 'Configurazione',
             'tooltip' => 'Parametri di configurazione del canale',
@@ -122,50 +102,21 @@ return [
                 'webhook_url' => [
                     'label' => 'URL Webhook',
                     'tooltip' => 'URL per le chiamate webhook',
-<<<<<<< .merge_file_ssLTpU
                     'placeholder' => 'es: https://hooks.slack.com/services/...']],
             'helper_text' => '',
             'description' => ''],
-=======
-                    'placeholder' => 'es: https://hooks.slack.com/services/...',
-                ],
-            ],
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IZuUKR
         'is_default' => [
             'label' => 'Predefinito',
             'tooltip' => 'Imposta come canale predefinito',
             'help' => 'Il canale predefinito verrà utilizzato quando non specificato diversamente',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_ssLTpU
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IZuUKR
         'is_enabled' => [
             'label' => 'Abilitato',
             'tooltip' => 'Stato di attivazione del canale',
             'help' => 'Disabilita temporaneamente il canale senza eliminarlo',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_ssLTpU
             'description' => '']],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_IZuUKR
     'actions' => [
         'test_connection' => [
             'label' => 'Testa connessione',
@@ -194,18 +145,6 @@ return [
             'message' => 'Il messaggio di test è stato inviato con successo'],
         'test_failed' => [
             'title' => 'Errore Test',
-<<<<<<< .merge_file_ssLTpU
             'message' => 'Impossibile inviare il messaggio di test: :error']],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-            'message' => 'Impossibile inviare il messaggio di test: :error',
-        ],
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_IZuUKR

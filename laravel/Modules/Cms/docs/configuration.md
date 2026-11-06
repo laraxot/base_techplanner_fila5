@@ -165,15 +165,5 @@ Vedi [no-app-support-queueable-actions](wiki/concepts/no-app-support-queueable-a
 
 ## Collegamenti tra versioni di configuration.md
 * [configuration.md](docs/configuration.md)
-<<<<<<< .merge_file_yUYXWv
 * [configuration.md](laravel/modules/xot/docs/configuration.md)
 * [configuration.md](laravel/modules/cms/docs/configuration.md)
-=======
-* [configuration.md](laravel/Modules/Xot/docs/configuration.md)
-* [configuration.md](laravel/Modules/Cms/docs/configuration.md)
-<<<<<<< HEAD
-* [configuration.md](laravel/modules/xot/docs/configuration.md)
-* [configuration.md](laravel/modules/cms/docs/configuration.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Ucdcoa

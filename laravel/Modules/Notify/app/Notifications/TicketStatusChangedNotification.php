@@ -20,12 +20,7 @@ class TicketStatusChangedNotification extends Notification
         public Model $ticket,
         public string $oldStatus,
         public string $newStatus
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     /**
      * @return list<string>
@@ -37,11 +32,7 @@ class TicketStatusChangedNotification extends Notification
 
     public function toMail(object $notifiable): MailMessage
     {
-<<<<<<< HEAD
         return (new MailMessage)
-=======
-        return (new MailMessage())
->>>>>>> 6ed19256f (.)
             ->subject('Ticket Status Changed')
             ->line("Ticket status has changed from {$this->oldStatus} to {$this->newStatus}")
             ->action('View Ticket', url('/'));

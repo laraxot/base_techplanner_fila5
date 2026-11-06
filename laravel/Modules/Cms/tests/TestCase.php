@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests;
 
-<<<<<<< .merge_file_NiIJEP
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
@@ -19,15 +18,6 @@ use Tests\TestCase as RootTestCase;
 
 use function Safe\file_get_contents;
 use function Safe\json_decode;
-=======
-<<<<<<< HEAD
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Modules\Cms\Providers\CmsServiceProvider;
-use Modules\User\Providers\UserServiceProvider;
-use Modules\Xot\Providers\XotServiceProvider;
-use Modules\Xot\Tests\CreatesApplication;
->>>>>>> .merge_file_nEmRz9
 
 /**
  * TestCase base per il modulo Cms.
@@ -154,7 +144,6 @@ abstract class TestCase extends RootTestCase
             'content_blocks' => self::blocksByLocale($contentBlocks),
         ];
     }
-<<<<<<< .merge_file_NiIJEP
 
     /**
      * Blocchi della homepage per una lingua.
@@ -229,15 +218,4 @@ abstract class TestCase extends RootTestCase
 
         return $map;
     }
-=======
-=======
-use Modules\Xot\Tests\TestCase as BaseTestCase;
-
-/**
- * TestCase base per il modulo Cms.
- */
-abstract class TestCase extends BaseTestCase
-{
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_nEmRz9
 }

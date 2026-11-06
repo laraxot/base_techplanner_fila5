@@ -236,17 +236,5 @@ public function template(): BelongsTo
 ## Collegamenti tra versioni di migrations.md
 * [migrations.md](../../Gdpr/docs/migrations.md)
 * [migrations.md](../../Activity/docs/database/migrations.md)
-<<<<<<< .merge_file_4N8M1U
 
 ---
-=======
-<<<<<<< HEAD
-* [migrations.md](../../Gdpr/docs/migrations.md)
-* [migrations.md](../../Activity/docs/database/migrations.md)
-
----
-=======
-
----
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_RtK5UG

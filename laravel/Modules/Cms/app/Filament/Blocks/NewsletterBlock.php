@@ -24,14 +24,6 @@ final class NewsletterBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
-<<<<<<< .merge_file_8FhLv1
         return \trans_string('cms::blocks.newsletter.label') ?: 'Newsletter Block';
-=======
-<<<<<<< HEAD
-        return \trans_string('cms::blocks.newsletter.label');
-=======
-        return \trans_string('cms::blocks.newsletter.label') ?? 'Newsletter';
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_UyZKl3
     }
 }

@@ -108,20 +108,7 @@ private function extractBingCoordinates(array $data): ?array
 - Update any related documentation
 
 ## Date
-<<<<<<< .merge_file_wcPlxr
-=======
-2025-11-23
-<<<<<<< HEAD
->>>>>>> .merge_file_QxFXBs
 [DATE]
 
 ## Version
 1.0.0
-<<<<<<< .merge_file_wcPlxr
-=======
-=======
-
-## Version
-1.0.0
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_QxFXBs

@@ -216,12 +216,6 @@ $consent->delete();
 ### Guide Principali
 
 - [README.md](./README.md) - Overview modulo
-<<<<<<< .merge_file_IoOy37
-=======
-<<<<<<< HEAD
-- [README.md](./readme.md) - Overview modulo
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_WI0ksV
 - [implementation-guide.md](./implementation-guide.md) - Guida implementazione
 - [api.md](./api.md) - API reference
@@ -266,12 +260,5 @@ $consent->delete();
 
 ---
 
-<<<<<<< .merge_file_IoOy37
 *"Privacy by design, security by default."*
-=======
-<<<<<<< HEAD
-*"Privacy by design, security by default."*
-=======
-*"Privacy by design, security by default."*
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_WI0ksV

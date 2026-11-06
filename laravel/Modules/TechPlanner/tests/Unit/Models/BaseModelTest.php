@@ -6,14 +6,7 @@ namespace Modules\TechPlanner\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\TechPlanner\Models\BaseModel;
-<<<<<<< .merge_file_OTqbmQ
 use Modules\TechPlanner\Tests\TestCase;
-=======
-<<<<<<< HEAD
-=======
-use Tests\TestCase;
-
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_tcFcWk
 
 uses(TestCase::class);

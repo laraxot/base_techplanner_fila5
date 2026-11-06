@@ -9,14 +9,7 @@ return [
             'placeholder' => 'mail_template_slug',
             'helper_text' => 'mail_template_slug',
             'description' => 'mail_template_slug',
-<<<<<<< .merge_file_7WfknJ
             'tooltip' => '']],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-        ],
-    ],
->>>>>>> .merge_file_yB6EhG
     'label' => 'Mail Template Select',
     'plural_label' => 'Mail Template Select (Plurale)',
     'navigation' => [
@@ -34,13 +27,4 @@ return [
         'edit' => [
             'label' => 'Modifica Mail Template Select'],
         'delete' => [
-<<<<<<< .merge_file_7WfknJ
             'label' => 'Elimina Mail Template Select']]];
-=======
-            'label' => 'Elimina Mail Template Select',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
-];
->>>>>>> .merge_file_yB6EhG

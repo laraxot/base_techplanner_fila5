@@ -45,15 +45,5 @@ type = "graph"
 
 Per altre informazioni leggere documentazione [ChartJs](https://www.chartjs.org/docs/latest/).
 ## Collegamenti tra versioni di graph.md
-<<<<<<< .merge_file_SFJxHB
 * [graph.md](laravel/modules/chart/docs/components/graph.md)
 * [graph.md](laravel/modules/cms/docs/components/graph.md)
-=======
-* [graph.md](laravel/Modules/Chart/docs/components/graph.md)
-* [graph.md](laravel/Modules/Cms/docs/components/graph.md)
-<<<<<<< HEAD
-* [graph.md](laravel/modules/chart/docs/components/graph.md)
-* [graph.md](laravel/modules/cms/docs/components/graph.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_EqQ3j5

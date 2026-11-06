@@ -151,12 +151,4 @@ Questo documento descrive il flusso completo del frontoffice di <main module>, d
 ## Collegamenti
 - [Struttura Route e Viste](./struttura-route-e-viste.md)
 - [Layout e Componenti](./struttura-layout-componenti-blade-<nome progetto>.md)
-<<<<<<< .merge_file_VKkIsL
 - [Best Practices Filament](./best-practices/filament.md) 
-=======
-- [Best Practices Filament](./best-practices/filament.md)
-<<<<<<< HEAD
-- [Best Practices Filament](./best-practices/filament.md) 
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_BeicHk

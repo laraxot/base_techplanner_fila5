@@ -6,7 +6,6 @@ return [
     'fields' => [
         'provider' => [
             'label' => 'Proveedor',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,41 +75,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'provider_id' => [
-            'label' => 'ID del Proveedor',
-        ],
-        'name' => [
-            'label' => 'Nombre',
-        ],
-        'email' => [
-            'label' => 'Correo Electrónico',
-        ],
-        'avatar' => [
-            'label' => 'Avatar',
-        ],
-        'create' => [
-            'label' => 'Crear',
-        ],
-        'attach' => [
-            'label' => 'Adjuntar',
-        ],
-        'layout' => [
-            'label' => 'Diseño',
-        ],
-        'view' => [
-            'label' => 'Ver',
-        ],
-        'edit' => [
-            'label' => 'Editar',
-        ],
-        'detach' => [
-            'label' => 'Desadjuntar',
-        ],
-        'toggleColumns' => [
-            'label' => 'Alternar Columnas',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -119,11 +83,8 @@ return [
         'group' => 'Autenticación',
         'label' => 'Usuarios Socialite',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

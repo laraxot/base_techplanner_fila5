@@ -30,15 +30,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
-<<<<<<< .merge_file_PRFgZD
  *
-=======
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
-<<<<<<< HEAD
- *
-=======
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|MedicalDirector newModelQuery()
  * @method static Builder<static>|MedicalDirector newQuery()
  * @method static Builder<static>|MedicalDirector query()
@@ -59,16 +51,6 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|MedicalDirector wherePhone($value)
  * @method static Builder<static>|MedicalDirector whereUpdatedAt($value)
  * @method static Builder<static>|MedicalDirector whereUpdatedBy($value)
-<<<<<<< .merge_file_PRFgZD
-=======
- * @method static Builder<static>|MedicalDirector selectRaw(string $expression)
- * @method static Builder<static>|MedicalDirector distinct()
- * @method static mixed pluck($column, $key = null)
- * @method static array toArray()
-<<<<<<< HEAD
- *
- * @property-read Profile|null $deleter
->>>>>>> .merge_file_0G3ZzV
  *
 =======
  * @property-read Profile|null $deleter

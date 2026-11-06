@@ -28,7 +28,6 @@ return [
             'orientation' => 'Orientation',
         ],
     ],
-<<<<<<< HEAD
     'header_nav' => [
         'label' => 'Header Navigation',
         'fields' => [
@@ -44,8 +43,6 @@ return [
             'children' => 'Submenu',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
     'actions' => [
         'label' => 'Actions',
         'fields' => [
@@ -160,11 +157,8 @@ return [
             'label' => 'Label',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

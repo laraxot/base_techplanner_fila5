@@ -1,31 +1,17 @@
 <?php
 
-<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Geschiedenis',
     'title' => 'Geschiedenis :record',
     'default_datetime_format' => 'Y-m-d, H:i:s',
-=======
-return [
-    'breadcrumb' => 'Geschiedenis',
-
-    'title' => 'Geschiedenis :record',
-
-    'default_datetime_format' => 'Y-m-d, H:i:s',
-
->>>>>>> 6ed19256f (.)
     'table' => [
         'field' => 'Veld',
         'old' => 'Oud',
         'new' => 'Nieuw',
         'restore' => 'Herstellen',
     ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
     'events' => [
         'updated' => 'Bewerkt',
         'created' => 'Aangemaakt',
@@ -34,7 +20,6 @@ return [
         'restore_successful' => 'Succesvol hersteld',
         'restore_failed' => 'Herstellen mislukt',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -48,6 +33,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

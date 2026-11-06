@@ -226,12 +226,9 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
-<<<<<<< HEAD
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
-=======
->>>>>>> 6ed19256f (.)
 # Activity Module Filament Resource Guidelines
 
 ## Extension Patterns
@@ -340,9 +337,6 @@ All resources must be tested to ensure:
 - [XotBaseResource Documentation](../../Xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../Xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../Xot/project_docs/base-classes.md)
-<<<<<<< HEAD
 - [XotBaseResource Documentation](../../xot/project_docs/filament/resources/xot-base-resource.md)
 - [Filament Best Practices](../../xot/project_docs/filament-best-practices.md)
 - [Laraxot Extension Patterns](../../xot/project_docs/base-classes.md)
-=======
->>>>>>> 6ed19256f (.)

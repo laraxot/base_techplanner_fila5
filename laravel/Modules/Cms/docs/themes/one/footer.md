@@ -16,14 +16,7 @@ Questo documento è un riferimento al componente Footer implementato nel tema On
 
 ## Collegamenti alla Documentazione
 
-<<<<<<< .merge_file_9PgrPE
-=======
-- [Documentazione Completa del Footer](/laravel/Themes/One/docs/components/layouts/footer.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_QbWtQS
 - [Documentazione Completa del Footer](/laravel/themes/one/docs/components/layouts/footer.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Documentazione Root](/laravel/docs/themes/one/components/footer.md)
 
 ## Integrazione con il Modulo CMS
@@ -63,46 +56,16 @@ return [
 
 ## Collegamenti Utili
 
-<<<<<<< .merge_file_9PgrPE
-=======
-- [Tema One - Overview](/laravel/Themes/One/docs/README.md)
-- [CMS Module - Components](/laravel/Modules/Cms/docs/components.md)
-- [Integrazione Temi](/laravel/Modules/Cms/docs/themes.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_QbWtQS
 - [Tema One - Overview](/laravel/themes/one/docs/readme.md)
 - [CMS Module - Components](/laravel/modules/cms/docs/components.md)
 - [Integrazione Temi](/laravel/modules/cms/docs/themes.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Collegamenti tra versioni di footer.md
 * [footer.md](docs/laravel-app/themes/one/components/footer.md)
 * [footer.md](docs/sections/footer.md)
-<<<<<<< .merge_file_9PgrPE
 * [footer.md](../../../../UI/docs/components/footer.md)
 * [footer.md](../../blocks/footer.md)
-=======
-<<<<<<< HEAD
-* [footer.md](laravel/modules/ui/docs/components/footer.md)
-* [footer.md](laravel/modules/cms/docs/blocks/footer.md)
->>>>>>> .merge_file_QbWtQS
 * [footer.md](laravel/modules/cms/docs/themes/one/footer.md)
 * [footer.md](../../components/footer.md)
 * [footer.md](laravel/themes/one/docs/components/layouts/footer.md)
 * [footer.md](laravel/themes/one/docs/sections/footer.md)
-<<<<<<< .merge_file_9PgrPE
-=======
-=======
->>>>>>> 6ed19256f (.)
-* [footer.md](laravel/Modules/UI/docs/components/footer.md)
-* [footer.md](laravel/Modules/Cms/docs/blocks/footer.md)
-* [footer.md](laravel/Modules/Cms/docs/themes/one/footer.md)
-* [footer.md](laravel/Modules/Cms/docs/components/footer.md)
-* [footer.md](laravel/Themes/One/docs/components/layouts/footer.md)
-<<<<<<< HEAD
-* [footer.md](laravel/Themes/One/docs/sections/footer.md)
-=======
-* [footer.md](laravel/Themes/One/docs/sections/footer.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_QbWtQS

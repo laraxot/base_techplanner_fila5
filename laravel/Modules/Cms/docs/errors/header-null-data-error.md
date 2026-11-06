@@ -100,19 +100,9 @@ Per prevenire regressioni future:
 
 ## Collegamenti Correlati
 
-<<<<<<< .merge_file_cBdLNM
 - [Componente Section](../components/section.md)
-=======
-- [Componente Section](../../laravel/Modules/Cms/docs/components/section.md)
-- [Trait HasBlocks](../../laravel/Modules/Cms/docs/traits/has-blocks.md)
-- [Gestione Errori Blade](../../laravel/Modules/Cms/docs/errors/blade-errors.md)
-<<<<<<< HEAD
-- [Componente Section](../../laravel/modules/cms/docs/components/section.md)
->>>>>>> .merge_file_ncBZrE
 - [Trait HasBlocks](../../laravel/modules/cms/docs/traits/has-blocks.md)
 - [Gestione Errori Blade](../../laravel/modules/cms/docs/errors/blade-errors.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Note di Manutenzione
 
@@ -121,11 +111,3 @@ Per prevenire regressioni future:
 - I controlli di sicurezza prevengono errori simili in futuro
 - La soluzione è compatibile con il sistema di blocchi CMS esistente
 
-<<<<<<< .merge_file_cBdLNM
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ncBZrE

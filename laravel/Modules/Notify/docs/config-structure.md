@@ -11,11 +11,7 @@ status: draft
 ---
 
 # Struttura di Configurazione nei Moduli
-<<<<<<< HEAD
 # Struttura di Configurazione nei Moduli <nome progetto>
-=======
-# Struttura di Configurazione nei Moduli SaluteOra
->>>>>>> 6ed19256f (.)
 
 ## Principi di Configurazione
 

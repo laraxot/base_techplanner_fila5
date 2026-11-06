@@ -32,11 +32,6 @@ Modules/Tenant/tests/Unit/DomainTest.php
 
 **File PHP con classi DEVONO usare UpperCamelCase (PascalCase) identico al nome della classe (PSR-4).**
 
-<<<<<<< .merge_file_39JAfg
-=======
-Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../Xot/docs/file-naming-case-sensitivity.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_6vAWe1
 Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../xot/docs/file-naming-case-sensitivity.md)
 =======
 >>>>>>> 6ed19256f (.)
@@ -45,11 +40,7 @@ Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../x
 
 ### Manuale
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/_bases/base_ptvx_fila4_mono/laravel
->>>>>>> 6ed19256f (.)
 rm Modules/Tenant/tests/Unit/domaintest.php
 git add -A
 git commit -m "fix: remove lowercase duplicate test file (PSR-4 compliance)"
@@ -58,25 +49,12 @@ git commit -m "fix: remove lowercase duplicate test file (PSR-4 compliance)"
 ### Automatico (Tutti i Moduli)
 ```bash
 # Script automatico (include anche altri moduli)
-<<<<<<< HEAD
 bashscripts/fix/cleanup-case-duplicates.sh
-=======
-/var/www/_bases/base_ptvx_fila4_mono/bashscripts/fix/cleanup-case-duplicates.sh
->>>>>>> 6ed19256f (.)
 ```
 
 ---
 
 **Riferimenti**:
-<<<<<<< .merge_file_39JAfg
 - [Xot File Naming Rules](../../xot/docs/file-naming-case-sensitivity.md)
 - [Bashscripts Location Policy](../../xot/docs/bashscripts-location-policy.md)
-=======
-- [Xot File Naming Rules](../../Xot/docs/file-naming-case-sensitivity.md)
-- [Bashscripts Location Policy](../../Xot/docs/bashscripts-location-policy.md)
-<<<<<<< HEAD
-- [Xot File Naming Rules](../../xot/docs/file-naming-case-sensitivity.md)
-- [Bashscripts Location Policy](../../xot/docs/bashscripts-location-policy.md)
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_6vAWe1

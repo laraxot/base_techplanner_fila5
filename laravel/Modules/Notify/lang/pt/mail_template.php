@@ -17,175 +17,78 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificador único do modelo',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'mailable' => [
             'label' => 'Classe Mailable',
             'placeholder' => 'Insira o nome da classe Mailable',
             'help' => 'A classe PHP que lida com o envio de e-mails',
             'helper_text' => 'Classe PHP que gerencia o envio de e-mails',
             'description' => 'mailable',
-<<<<<<< .merge_file_zY09gi
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'subject' => [
             'label' => 'Assunto',
             'placeholder' => 'Insira o assunto do e-mail',
             'help' => 'O assunto que aparecerá no e-mail',
             'helper_text' => 'Assunto do e-mail',
             'description' => 'subject',
-<<<<<<< .merge_file_zY09gi
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'html_template' => [
             'label' => 'Conteúdo HTML',
             'placeholder' => 'Insira o conteúdo HTML do e-mail',
             'help' => 'O conteúdo do e-mail em formato HTML',
             'helper_text' => 'Conteúdo HTML do modelo de e-mail',
             'description' => 'html_template',
-<<<<<<< .merge_file_zY09gi
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'text_template' => [
             'label' => 'Conteúdo de Texto',
             'placeholder' => 'Insira o conteúdo de texto do e-mail',
             'help' => 'Versão de texto do e-mail para clientes que não suportam HTML',
             'helper_text' => 'Versão de texto do modelo de e-mail',
             'description' => 'text_template',
-<<<<<<< .merge_file_zY09gi
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'version' => [
             'label' => 'Versão',
             'help' => 'Número da versão do modelo',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'created_at' => [
             'label' => 'Criado em',
             'helper_text' => 'Data de criação do modelo',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'updated_at' => [
             'label' => 'Última Modificação',
             'helper_text' => 'Data da última modificação do modelo',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'from_email' => [
             'label' => 'E-mail do remetente',
             'helper_text' => 'Endereço de e-mail do remetente',
             'placeholder' => 'noreply@exemplo.com',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'from_name' => [
             'label' => 'Nome do remetente',
             'helper_text' => 'Nome exibido do remetente',
             'placeholder' => 'Nome da Empresa',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'variables' => [
             'label' => 'Variáveis disponíveis',
             'helper_text' => 'Lista de variáveis que podem ser usadas no modelo',
             'placeholder' => 'ex: {{name}}, {{email}}',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'is_markdown' => [
             'label' => 'Usar Markdown',
             'helper_text' => 'Indica se o modelo usa sintaxe Markdown',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'status' => [
             'label' => 'Status',
             'helper_text' => 'Status atual do modelo',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => ''],
         'toggleColumns' => [
@@ -217,75 +120,25 @@ return [
             'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_zY09gi
             'description' => ''],
-=======
-            'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
-<<<<<<< .merge_file_zY09gi
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'name' => [
             'description' => 'Nome do modelo',
             'helper_text' => 'Nome descritivo para identificar o modelo',
             'placeholder' => 'Ex: Bem-vindo, Confirmação de pedido, Redefinição de senha',
             'label' => 'Nome do Modelo',
-<<<<<<< .merge_file_zY09gi
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_Qho2YJ
         'params' => [
             'label' => 'Parâmetros',
             'helper_text' => 'Insira os parâmetros separados por vírgula que podem ser usados no modelo',
             'placeholder' => 'name, email, date, company',
             'description' => 'Parâmetros disponíveis para o modelo de e-mail',
-<<<<<<< .merge_file_zY09gi
             'tooltip' => '']],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_Qho2YJ
     'filters' => [
         'search_placeholder' => 'Procurar modelos...',
         'version' => [
@@ -386,17 +239,6 @@ return [
         'bounced' => 'Devolvido',
         'spam' => 'Marcado como spam'],
     'model' => [
-<<<<<<< .merge_file_zY09gi
         'label' => 'modelo de e-mail'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-        'label' => 'modelo de e-mail',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_Qho2YJ

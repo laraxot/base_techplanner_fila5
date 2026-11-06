@@ -12,17 +12,10 @@ status: draft
 
 # Raccomandazioni per lo Sviluppo del Sistema Email Stagionali
 
-<<<<<<< HEAD
 **Data**: 19 Dicembre 2025  
 **Progetto**: TechPlanner Laravel Multi-Tenant Application  
 **Tipo**: Linee guida e raccomandazioni  
 **Stato**: ✅ Completato  
-=======
-**Data**: 19 Dicembre 2025
-**Progetto**: TechPlanner Laravel Multi-Tenant Application
-**Tipo**: Linee guida e raccomandazioni
-**Stato**: ✅ Completato
->>>>>>> 6ed19256f (.)
 
 ## Indice
 
@@ -242,18 +235,7 @@ Lo sviluppo del sistema email stagionali deve sempre tenere conto dei seguenti p
 Queste raccomandazioni rappresentano un punto di riferimento per tutti gli sviluppatori che lavoreranno sul sistema email stagionali, garantendo coerenza e qualità nel tempo.
 
 ---
-<<<<<<< .merge_file_YfNWBx
-=======
-
-<<<<<<< HEAD
->>>>>>> .merge_file_vgoyF3
 **Autore**: iFlow CLI  
 **Data**: 19 Dicembre 2025  
 **Versione**: 1.0  
 **Approvazione**: Sistema Pronto per la Produzione
-=======
-**Autore**: iFlow CLI
-**Data**: 19 Dicembre 2025
-**Versione**: 1.0
-**Approvazione**: Sistema Pronto per la Produzione
->>>>>>> 6ed19256f (.)

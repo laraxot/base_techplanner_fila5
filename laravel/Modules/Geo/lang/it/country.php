@@ -15,14 +15,10 @@ return [
         'code' => [
             'label' => 'Codice',
             'placeholder' => 'Inserisci il codice ISO',
-<<<<<<< HEAD
             'help' => 'Codice ISO del paese (es. IT, US, DE]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-            'help' => 'Codice ISO del paese (es. IT, US, DE)',
->>>>>>> 6ed19256f (.)
         ],
         'phone_code' => [
             'label' => 'Prefisso telefonico',

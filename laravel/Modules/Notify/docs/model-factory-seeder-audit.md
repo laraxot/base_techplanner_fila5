@@ -13,13 +13,6 @@ status: draft
 # Model/Factory/Seeder Audit
 
 Generated: 2025-08-22 16:29
-<<<<<<< .merge_file_b67sT9
-=======
-<<<<<<< HEAD
-Generated: 2025-08-22 16:29
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_tBDjQD
 
 ## Coverage
 | Model | Factory | Seeded |
@@ -46,12 +39,4 @@ Seeders:
 - Keep `MailTemplate*` seeding as is; extend with relationships if needed.
 
 ## Likely non-business-critical
-<<<<<<< .merge_file_b67sT9
 - None; all listed are domain entities but some may be configuration-only and safe to seed minimally.
-=======
-<<<<<<< HEAD
-- None; all listed are domain entities but some may be configuration-only and safe to seed minimally.
-=======
-- None; all listed are domain entities but some may be configuration-only and safe to seed minimally.
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_tBDjQD

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "migration patterns"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_KRHV2V
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_y2rPGN

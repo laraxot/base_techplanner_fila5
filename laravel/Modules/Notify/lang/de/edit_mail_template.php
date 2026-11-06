@@ -5,14 +5,7 @@ declare(strict_types=1);
 return [
     'actions' => [
         'delete' => [
-<<<<<<< .merge_file_SumkBo
             'label' => 'delete']],
-=======
-            'label' => 'delete',
-        ],
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_BouvKR
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,11 +15,4 @@ return [
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
-<<<<<<< .merge_file_SumkBo
     ]];
-=======
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_BouvKR

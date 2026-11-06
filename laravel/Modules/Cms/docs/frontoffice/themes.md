@@ -166,15 +166,5 @@ npm run copy
 
 ## Collegamenti tra versioni di themes.md
 * [themes.md](docs/rules/themes.md)
-<<<<<<< .merge_file_d7jLIK
 * [themes.md](../../../Xot/docs/themes.md)
 * [themes.md](laravel/modules/cms/docs/frontoffice/themes.md)
-=======
-* [themes.md](laravel/Modules/Xot/docs/themes.md)
-* [themes.md](laravel/Modules/Cms/docs/frontoffice/themes.md)
-<<<<<<< HEAD
-* [themes.md](laravel/modules/xot/docs/themes.md)
-* [themes.md](laravel/modules/cms/docs/frontoffice/themes.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_csv0jH

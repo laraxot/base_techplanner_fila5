@@ -227,11 +227,6 @@ $success = $action->execute($client);
 
 ---
 
-<<<<<<< .merge_file_NVaDnO
-=======
-**Last Updated**: December 2025
-<<<<<<< HEAD
->>>>>>> .merge_file_TwTf1w
 
 title: "architectural philosophy"
 type: note
@@ -245,12 +240,3 @@ discussions: []
 **Compliance**: PHPStan Level 10 ✅
 **Patterns**: Strategy, Command, Adapter, Observer ✅
 **Principles**: SoC, DRY, Interface Segregation ✅
-<<<<<<< .merge_file_NVaDnO
-=======
-=======
-**Architectural Version**: 2.0
-**Compliance**: PHPStan Level 10 ✅
-**Patterns**: Strategy, Command, Adapter, Observer ✅
-**Principles**: SoC, DRY, Interface Segregation ✅
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_TwTf1w

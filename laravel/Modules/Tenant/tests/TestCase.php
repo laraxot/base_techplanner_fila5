@@ -4,13 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Tests;
 
-<<<<<<< .merge_file_atK97p
 use Closure;
 use Illuminate\Database\QueryException;
 use Illuminate\Foundation\Application;
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_wttT1d
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;

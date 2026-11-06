@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_fREZ5G
 ---
 title: "Convenzioni per i Form Schema"
 type: concept
@@ -19,13 +18,7 @@ related:
   - naming-conventions.md
 status: draft
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_8L9wFp
 # Convenzioni per i Form Schema 
-=======
-# Convenzioni per i Form Schema
->>>>>>> 6ed19256f (.)
 
 ## Regola Fondamentale per Array di Schema
 
@@ -122,15 +115,9 @@ La classe `XotBasePage` è progettata per lavorare con array associativi nei met
 Per verificare che tutti i metodi schema rispettino questa convenzione:
 
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
-=======
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
-find /var/www/html/saluteora/laravel/Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti

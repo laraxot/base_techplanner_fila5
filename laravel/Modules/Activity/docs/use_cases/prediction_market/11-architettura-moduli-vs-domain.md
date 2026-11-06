@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_e1Cz0K
 ---
 title: "Architettura a Moduli vs Domain per <nome progetto>ion Market"
 type: note
@@ -7,9 +6,6 @@ updated: 2026-10-23
 tags: [docs, activity, use_cases]
 qmd: "architettura a moduli vs domain per <nome progetto>ion market activity"
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_1dZZOz
 # Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione
@@ -17,25 +13,12 @@ Un <nome progetto>ion market può essere implementato sia seguendo una struttura
 
 ## Struttura a Moduli (Laravel Modules)
 - Ogni modulo è un dominio funzionale isolato (es. <nome progetto>ionMarket, User, Payment).
-=======
-# Architettura a Moduli vs Domain per Prediction Market
-
-## Introduzione
-Un prediction market può essere implementato sia seguendo una struttura a moduli (Laravel Modules) sia una struttura a bounded context (Domain). Qui spieghiamo differenze, vantaggi, svantaggi e best practice.
-
-## Struttura a Moduli (Laravel Modules)
-- Ogni modulo è un dominio funzionale isolato (es. PredictionMarket, User, Payment).
->>>>>>> 6ed19256f (.)
 - Ogni modulo ha la sua `app/`, `config/`, `database/`, `resources/`, `routes/`, `tests/`, `composer.json`, `module.json`.
 - Ideale per progetti enterprise, multi-team, multi-prodotto.
 - Esempio:
 ```
 Modules/
-<<<<<<< HEAD
   <nome progetto>ionMarket/
-=======
-  PredictionMarket/
->>>>>>> 6ed19256f (.)
     app/Events/
     app/Actions/
     app/Projectors/
@@ -55,20 +38,12 @@ Modules/
 ```
 
 ## Struttura a Domain (Bounded Context)
-<<<<<<< HEAD
 - Tutto il dominio <nome progetto>ion market è in una cartella (es. `app/Domain/<nome progetto>ionMarket/`).
-=======
-- Tutto il dominio prediction market è in una cartella (es. `app/Domain/PredictionMarket/`).
->>>>>>> 6ed19256f (.)
 - Suddivisione interna: `Events/`, `Actions/`, `Projectors/`, ecc.
 - Ideale per progetti monolitici o con pochi domini.
 - Esempio:
 ```
-<<<<<<< HEAD
 app/Domain/<nome progetto>ionMarket/
-=======
-app/Domain/PredictionMarket/
->>>>>>> 6ed19256f (.)
   Events/
   Actions/
   Projectors/
@@ -113,14 +88,3 @@ app/Domain/PredictionMarket/
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)
 - [Testing prediction_market](./07_test.md)
-<<<<<<< .merge_file_e1Cz0K
-=======
-<<<<<<< HEAD
-- [Indice <nome progetto>ion_market](./readme.md)
-- [Architettura <nome progetto>ion_market](./02_architettura.md)
-- [Best practice <nome progetto>ion_market](./04_best_practice.md)
-- [API <nome progetto>ion_market](./06_api.md)
-- [Testing <nome progetto>ion_market](./07_test.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_1dZZOz

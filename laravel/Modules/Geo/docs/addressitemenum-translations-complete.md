@@ -12,14 +12,7 @@ status: draft
 
 # AddressItemEnum Translations - Complete Implementation
 
-<<<<<<< .merge_file_OiDPEL
-=======
-**Date**: 2025-12-12
-<<<<<<< HEAD
->>>>>>> .merge_file_Aci73L
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Module**: Geo
 **Status**: ✅ **COMPLETED**
 

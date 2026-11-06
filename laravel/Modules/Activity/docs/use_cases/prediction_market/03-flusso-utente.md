@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_Rx81Bg
 ---
 title: "Flusso Utente <nome progetto>ion Market"
 type: note
@@ -8,13 +7,7 @@ qmd: "flusso utente <nome progetto>ion market activity"
 status: superseded
 superseded_by: flusso-utente.md
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_rEaSXb
 # Flusso Utente <nome progetto>ion Market
-=======
-# Flusso Utente Prediction Market
->>>>>>> 6ed19256f (.)
 
 1. **Creazione Mercato**: un utente crea un mercato (es. “Vincerà il candidato X?”).
    - Comando console: `market:create "Vincerà il candidato X?"`
@@ -39,8 +32,4 @@ superseded_by: flusso-utente.md
 
 ## Zen
 - "Ogni comando console è un test vivente del dominio."
-<<<<<<< HEAD
 - "La semplicità favorisce la testabilità e la comprensione."
-=======
-- "La semplicità favorisce la testabilità e la comprensione."
->>>>>>> 6ed19256f (.)

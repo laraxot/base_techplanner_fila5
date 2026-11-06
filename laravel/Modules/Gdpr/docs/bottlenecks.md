@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "bottlenecks"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_ahSDja
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_MoYTfb

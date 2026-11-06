@@ -78,18 +78,9 @@ public function getJsonFile(): string
 class SafeSushiModel extends BaseModel
 {
     use Sushi;
-<<<<<<< .merge_file_tT9dzx
-=======
-
-    private const JSON_FILE_PATH = 'laravel/Modules/{ModuleName}/resources/json/data.json';
-
-<<<<<<< HEAD
->>>>>>> .merge_file_A50hrl
     
     private const JSON_FILE_PATH = 'laravel/Modules/{ModuleName}/resources/json/data.json';
     
-=======
->>>>>>> 6ed19256f (.)
     public function getJsonFile(): string
     {
         return base_path(self::JSON_FILE_PATH);
@@ -150,16 +141,6 @@ La trasparenza del path diretto è superiore all'astrazione del `module_path()` 
 - [Sushi Documentation](https://github.com/calebporzio/sushi)
 
 ---
-<<<<<<< .merge_file_tT9dzx
 **Risolto**: Dicembre 2024  
 **Priorità**: P0 (Critical) - Bloccava registrazioni  
 **Impatto**: Sistema completamente non funzionale  
-=======
-
-**Risolto**: Dicembre 2024
-**Priorità**: P0 (Critical) - Bloccava registrazioni
-**Impatto**: Sistema completamente non funzionale
-**Risolto**: Dicembre 2024  
-**Priorità**: P0 (Critical) - Bloccava registrazioni  
-**Impatto**: Sistema completamente non funzionale  
->>>>>>> .merge_file_A50hrl

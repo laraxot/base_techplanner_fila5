@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_mayAvq
 title: "address translation fixes"
 type: note
 tags: [documentation]
@@ -9,103 +8,6 @@ qmd: "address translation fixes"
 issues: []
 discussions: []
 status: draft
-=======
-
-# CORREZIONI CRITICHE - 6 Agosto 2025
-
-## Errori Gravissimi Identificati e Corretti
-
-### 1. Label in Inglese nel File Italiano
-PROBLEMA CRITICO: Nel file `it/address.php` erano presenti etichette in inglese invece che in italiano.
-
-### 2. Sintassi Array() Obsoleta
-PROBLEMA: Presenza di sintassi `array()` invece di `[]`.
-
-## Correzioni Applicate
-
-### 1. Traduzioni Corrette
-- `'cap'` → `'CAP'` con placeholder e help appropriati
-- `'region'` → `'Regione'` con traduzioni complete
-- `'province'` → `'Provincia'` con traduzioni complete
-
-### 2. Struttura Standardizzata
-- Sintassi convertita da `array()` a `[]`
-- Ordine standardizzato delle proprietà
-- Aggiunti `help` mancanti
-- Struttura uniforme per tutti i campi
-
-## Regole Applicate
-
-1. MAI etichette in inglese nei file di traduzione italiana
-2. SEMPRE sintassi array breve `[]`
-3. SEMPRE struttura espansa completa
-4. SEMPRE `helper_text` vuoto quando uguale alla chiave
-5. SEMPRE aggiungere `help` descrittivo
-
-**Data correzione**: 6 Agosto 2025
-**Status**: RISOLTO
-- `'aaa'` → Rimossi (campi di test)
-
-### 4. **Sintassi Moderna**
-- Convertito da `array()` a `[]`
-- Aggiunto `declare(strict_types=1)`
-
-### 5. **Correzione Sintassi Obsoleta Array() - Gennaio 2025**
-```php
-// PRIMA (Obsoleto)
-return array (
-  'singular' => 'Indirizzo',
-  'fields' => array (
-    'administrative_area_level_1' => array (
-      'label' => 'Regione',
-    ),
-  ),
-);
-
-// DOPO (Moderno)
-<?php
-declare(strict_types=1);
-
-return [
-  'singular' => 'Indirizzo',
-  'fields' => [
-    'administrative_area_level_1' => [
-      'label' => 'Regione',
-    ],
-  ],
-];
-```
-
-**Benefici della correzione**:
-- ✅ **Leggibilità**: Sintassi più pulita e moderna
-- ✅ **Coerenza**: Uniformità con il resto del progetto
-- ✅ **Manutenibilità**: Codice più facile da mantenere
-- ✅ **Standard**: Rispetto degli standard PHP moderni
-
-## Regola Critica Applicata
-
-**MAI togliere contenuto dalle traduzioni, solo aggiungere o migliorare**
-
-- ✅ **Aggiunto**: Traduzioni appropriate per tutti i campi
-- ✅ **Migliorato**: Helper text e descrizioni
-- ✅ **Mantenuto**: Tutti i campi esistenti
-- ✅ **Corretto**: Sintassi e struttura
-
-## Applicazione Multilingua
-
-Le stesse correzioni sono state applicate a:
-- `laravel/Modules/Geo/lang/it/address.php` - Italiano
-- `laravel/Modules/Geo/lang/en/address.php` - Inglese
-- `laravel/Modules/Geo/lang/de/address.php` - Tedesco
-
-## Collegamenti
-
-<<<<<<< HEAD
-- [README Modulo Geo](readme.md) - Documentazione principale
-- [Translation Standards](../../lang/docs/translation-helper-text-standards.md) - Standard traduzioni
-- [Address Implementation](address-implementation.md) - Implementazione indirizzi
-
->>>>>>> .merge_file_S87MQ7
 ---
 
 # Correzioni Traduzioni Address - Gennaio 2025
@@ -321,20 +223,8 @@ Le stesse correzioni sono state applicate a:
 
 - [README Modulo Geo](README.md) - Documentazione principale
 - [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
-<<<<<<< .merge_file_mayAvq
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [README Modulo Geo](README.md) - Documentazione principale
-- [Translation Standards](../../Lang/docs/translation-helper-text-standards.md) - Standard traduzioni
->>>>>>> .merge_file_S87MQ7
 - [Address Implementation](address-implementation.md) - Implementazione indirizzi
 
 ---
 
-<<<<<<< .merge_file_mayAvq
 **Ultimo aggiornamento**: 27 Gennaio 2025  
-=======
-**Ultimo aggiornamento**: 27 Gennaio 2025
-**Ultimo aggiornamento**: 27 Gennaio 2025  
->>>>>>> .merge_file_S87MQ7

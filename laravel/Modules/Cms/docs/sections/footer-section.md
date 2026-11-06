@@ -129,14 +129,4 @@ Per dettagli su configurazione e template, consulta: [Documentazione Sezione Foo
 ## Collegamenti
 - [Gestione Blocchi](../blocks/README.md)
 - [Componenti UI](../components/README.md)
-<<<<<<< .merge_file_1NKIq5
 - [Documentazione Root](../sections.md)
-=======
-- [Documentazione Root](../../../../docs/sections.md)
-<<<<<<< HEAD
-- [Gestione Blocchi](../blocks/readme.md)
-- [Componenti UI](../components/readme.md)
-- [Documentazione Root](../../../../../docs/sections.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_lSMBKj

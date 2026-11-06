@@ -8,7 +8,6 @@ return [
     'sent' => 'Un email contenant un lien de réinitialisation vous a été envoyé !',
     'token' => 'Ce code de réinitialisation est incorrect.',
     'user' => 'Aucun utilisateur n\'est enregistré avec cette adresse email.',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +21,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

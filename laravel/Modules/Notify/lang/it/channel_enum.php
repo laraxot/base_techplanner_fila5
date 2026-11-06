@@ -8,13 +8,7 @@ return [
     'sms' => [
         'label' => 'SMS'],
     'whatsapp' => [
-<<<<<<< .merge_file_PJhBEb
         'label' => 'WhatsApp'],
-=======
-        'label' => 'WhatsApp',
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_HaUZzH
     'label' => 'Channel Enum',
     'plural_label' => 'Channel Enum (Plurale)',
     'navigation' => [
@@ -48,13 +42,4 @@ return [
         'edit' => [
             'label' => 'Modifica Channel Enum'],
         'delete' => [
-<<<<<<< .merge_file_PJhBEb
             'label' => 'Elimina Channel Enum']]];
-=======
-            'label' => 'Elimina Channel Enum',
-        ],
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_HaUZzH

@@ -194,16 +194,6 @@ Il sistema di test è ora **pronto per produzione** con:
 
 ---
 
-<<<<<<< .merge_file_AkjLsk
 *Ultimo aggiornamento: Dicembre 2024*  
 *Versione: 2.0 - Helper Functions Centralized*  
 *Compatibilità: <nome progetto>, PestPHP 2.x, Laravel 10+* 
-=======
-*Ultimo aggiornamento: Dicembre 2024*
-*Versione: 2.0 - Helper Functions Centralized*
-<<<<<<< HEAD
-*Compatibilità: <nome progetto>, PestPHP 2.x, Laravel 10+*
-=======
-*Compatibilità: <nome progetto>, PestPHP 2.x, Laravel 10+*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_OqWxh2

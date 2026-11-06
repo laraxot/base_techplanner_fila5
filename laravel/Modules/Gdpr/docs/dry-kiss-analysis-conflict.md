@@ -12,11 +12,6 @@ status: draft
 
 # 🐄✨ DRY & KISS Analysis - Modulo Gdpr
 
-<<<<<<< .merge_file_IN7DhN
-=======
-**Data Analisi:** 2025-12-02
-<<<<<<< HEAD
->>>>>>> .merge_file_g9k1r9
 **Data Analisi:** [DATE]
 =======
 >>>>>>> 6ed19256f (.)
@@ -44,11 +39,6 @@ status: draft
 
 ---
 
-<<<<<<< .merge_file_IN7DhN
-=======
-## ✅ AZIONI COMPLETATE (2025-12-02)
-<<<<<<< HEAD
->>>>>>> .merge_file_g9k1r9
 ## ✅ AZIONI COMPLETATE ([DATE])
 =======
 >>>>>>> 6ed19256f (.)
@@ -85,12 +75,5 @@ I seguenti file sono stati refactorati per estendere le classi base di `Modules\
 - [x] BasePivot refactoring
 - [x] BaseModel connection fix
 - [ ] Resources audit
-<<<<<<< .merge_file_IN7DhN
 - [ ] Pages audit
-=======
-<<<<<<< HEAD
-- [ ] Pages audit
-=======
-- [ ] Pages audit
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_g9k1r9

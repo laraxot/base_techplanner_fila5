@@ -283,11 +283,7 @@ public function toMail($notifiable): SpatieEmail
     $email = new SpatieEmail($this->record, $this->slug);
     $email = $email->mergeData($this->data);
     $email = $email->addAttachments($this->attachments);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     if (method_exists($notifiable, 'routeNotificationFor')) {
         $to = $notifiable->routeNotificationFor('mail');
         $email->to($to);
@@ -295,11 +291,7 @@ public function toMail($notifiable): SpatieEmail
             $email->setRecipient($to);
         }
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     return $email;
 }
 ```
@@ -333,21 +325,13 @@ public function addAttachments(array $attachments): self
     foreach ($attachments as $item) {
         try {
             $attachment = null;
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 6ed19256f (.)
             // Validate attachment structure
             if (!is_array($item)) {
                 \Log::warning('Invalid attachment structure', ['item' => $item]);
                 continue;
             }
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 6ed19256f (.)
             if (isset($item['path']) && file_exists($item['path'])) {
                 $attachment = $this->getAttachmentFromPath($item);
             } elseif (isset($item['data'])) {
@@ -356,11 +340,7 @@ public function addAttachments(array $attachments): self
                 \Log::warning('Attachment missing path or data', ['item' => $item]);
                 continue;
             }
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 6ed19256f (.)
             if ($attachment) {
                 $attachmentObjects[] = $attachment;
             }
@@ -371,11 +351,7 @@ public function addAttachments(array $attachments): self
             ]);
         }
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $this->customAttachments = $attachmentObjects;
     return $this;
 }
@@ -402,15 +378,9 @@ private function validateFilePath(string $path): bool
 {
     $realPath = realpath($path);
     $allowedBasePath = realpath(storage_path('app'));
-<<<<<<< HEAD
     
     return $realPath && 
            strpos($realPath, $allowedBasePath) === 0 && 
-=======
-
-    return $realPath &&
-           strpos($realPath, $allowedBasePath) === 0 &&
->>>>>>> 6ed19256f (.)
            is_readable($realPath);
 }
 ```

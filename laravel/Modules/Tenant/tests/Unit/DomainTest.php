@@ -2,16 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 namespace Modules\Tenant\Tests\Unit;
 
-<<<<<<< .merge_file_d5Eals
 use Mockery;
 use Mockery\Expectation;
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_KhZTWb
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Models\Domain;
 use Modules\Tenant\Tests\TestCase;

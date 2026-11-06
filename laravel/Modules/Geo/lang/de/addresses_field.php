@@ -24,7 +24,6 @@ return [
             'label' => 'Indirizzo Principale',
             'placeholder' => 'Seleziona se questo è l\'indirizzo principale',
             'help' => 'Indica se questo è l\'indirizzo principale tra tutti quelli registrati',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -41,8 +40,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

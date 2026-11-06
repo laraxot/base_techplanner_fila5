@@ -12,13 +12,8 @@ status: draft
 
 # Pattern DRY: Composizione Actions Bulk → Single
 
-<<<<<<< HEAD
 **Data**: 2025-01-18  
 **Modulo**: Notify  
-=======
-**Data**: 2025-01-18
-**Modulo**: Notify
->>>>>>> 6ed19256f (.)
 **Status**: ✅ Pattern consolidato
 
 ## Principio Fondamentale
@@ -135,11 +130,7 @@ class SendMailByRecordsAction
             // ✅ Compone SendMailByRecordAction
             app(SendMailByRecordAction::class)->execute($record, $mail_class);
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return true;
     }
 }
@@ -221,25 +212,9 @@ Prima di creare una bulk action:
 - [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md) - Pattern per chiamare Actions con `app()`
 - [SendNotificationBulkAction](./send-notification-bulk-action.md) - Implementazione completa
 - [Geo Module Architectural Philosophy](../Geo/docs/architectural-philosophy.md) - Filosofia architetturale modulare
-<<<<<<< .merge_file_wscVoI
 - [Geo Module Architectural Philosophy](../../Geo/docs/architectural-philosophy.md) - Filosofia architetturale modulare
-=======
-<<<<<<< HEAD
-- [Geo Module Architectural Philosophy](../Geo/docs/architectural-philosophy.md) - Filosofia architetturale modulare
->>>>>>> .merge_file_fiJszB
 
 ---
 **Filosofia**: "Una volta, una sola volta, in un solo posto" - DRY Principle  
 **Pattern**: Bulk Action compone Single Action  
 **Naming**: Bulk Action con plurale nel nome (Records, not Record)
-<<<<<<< .merge_file_wscVoI
-=======
-=======
-
----
-
-**Filosofia**: "Una volta, una sola volta, in un solo posto" - DRY Principle
-**Pattern**: Bulk Action compone Single Action
-**Naming**: Bulk Action con plurale nel nome (Records, not Record)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_fiJszB

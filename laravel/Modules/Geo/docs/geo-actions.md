@@ -12,14 +12,7 @@ status: draft
 
 # Geo Actions Architecture
 
-<<<<<<< .merge_file_WJTH0v
-=======
-**Date**: 2025-12-18
-<<<<<<< HEAD
->>>>>>> .merge_file_ir6BAf
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## Overview
 This document describes the reusable actions available in the Geo module.

@@ -345,4 +345,3 @@ public static function getProjectBasePath(): string
 - [Architettura Testing](testing-architecture-overview.md)
 - [Best Practices Testing](testing-best-practices.md)
 
-*Ultimo aggiornamento: gennaio 2025*

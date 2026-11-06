@@ -54,15 +54,7 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_9yIeEM
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Y7lsDs
         return collect($data['regions'])
             ->map(fn ($region) => [
                 'id' => $region['code'],
@@ -75,15 +67,7 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_9yIeEM
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Y7lsDs
         return collect($data['regions'])
             ->firstWhere('code', $regionCode)['provinces']
             ->map(fn ($province) => [
@@ -97,15 +81,7 @@ class GeoDataService
     {
         $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
         $data = json_decode($json, true);
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_9yIeEM
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Y7lsDs
         foreach ($data['regions'] as $region) {
             foreach ($region['provinces'] as $province) {
                 if ($province['code'] === $provinceCode) {
@@ -119,15 +95,7 @@ class GeoDataService
                 }
             }
         }
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_9yIeEM
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Y7lsDs
         return [];
     }
 }
@@ -163,14 +131,7 @@ class LocationForm extends Component
                         ->selectablePlaceholder(false),
 
                     'province' => Select::make('province')
-<<<<<<< .merge_file_9yIeEM
-=======
-                        ->options(fn (Get $get) =>
-<<<<<<< HEAD
->>>>>>> .merge_file_Y7lsDs
                         ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
                             $this->geoDataService->getProvinces($get('region'))
                         )
                         ->searchable()
@@ -181,14 +142,7 @@ class LocationForm extends Component
                         ->selectablePlaceholder(false),
 
                     'city' => Select::make('city')
-<<<<<<< .merge_file_9yIeEM
-=======
-                        ->options(fn (Get $get) =>
-<<<<<<< HEAD
->>>>>>> .merge_file_Y7lsDs
                         ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
                             $this->geoDataService->getCities($get('province'))
                         )
                         ->searchable()
@@ -199,14 +153,7 @@ class LocationForm extends Component
                         ->selectablePlaceholder(false),
 
                     'cap' => Select::make('cap')
-<<<<<<< .merge_file_9yIeEM
-=======
-                        ->options(fn (Get $get) =>
-<<<<<<< HEAD
->>>>>>> .merge_file_Y7lsDs
                         ->options(fn (Get $get) => 
-=======
->>>>>>> 6ed19256f (.)
                             collect($this->geoDataService->getCities($get('province')))
                                 ->firstWhere('code', $get('city'))['cap']
                         )
@@ -247,15 +194,7 @@ class GeoDataService
         return Cache::remember('geo_regions', 86400, function () {
             $json = File::get(module_path('Geo', 'resources/json/comuni.json'));
             $data = json_decode($json, true);
-<<<<<<< HEAD
             
-<<<<<<< .merge_file_9yIeEM
-=======
-            
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Y7lsDs
             return collect($data['regions'])
                 ->map(fn ($region) => [
                     'id' => $region['code'],
@@ -285,22 +224,8 @@ class GeoDataService
    - Utilizzare un database dedicato
 
 ## Collegamenti
-<<<<<<< .merge_file_9yIeEM
-=======
-- [Documentazione Squire](../../Geo/docs/squire-integration.md)
-- [Best Practices Filament](../../../docs/filament-best-practices.md)
-- [Clean Code](../../../docs/clean-code.md)
-
-**Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
-<<<<<<< HEAD
->>>>>>> .merge_file_Y7lsDs
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 
-<<<<<<< .merge_file_9yIeEM
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Y7lsDs

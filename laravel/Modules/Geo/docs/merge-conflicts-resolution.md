@@ -13,14 +13,7 @@ status: draft
 # Risoluzione Conflitti di Merge - Modulo Geo
 
 ## Panoramica
-<<<<<<< .merge_file_soMkiV
-=======
-Data: 2025-07-30
-<<<<<<< HEAD
->>>>>>> .merge_file_sGSvFJ
 Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 Conflitti identificati: 34 file
 Strategia: DRY, KISS, analisi contestuale
 
@@ -28,14 +21,7 @@ Strategia: DRY, KISS, analisi contestuale
 
 ### Modelli (8 file)
 - `app/Models/Address.php`
-<<<<<<< .merge_file_soMkiV
-=======
-- `app/Models/County.php`
-<<<<<<< HEAD
->>>>>>> .merge_file_sGSvFJ
 - `app/Models/County.php` 
-=======
->>>>>>> 6ed19256f (.)
 - `app/Models/GeoNamesCap.php`
 - `app/Models/Location.php`
 - `app/Models/Place.php`
@@ -96,14 +82,7 @@ Strategia: DRY, KISS, analisi contestuale
 
 ## Status Risoluzione
 - [ ] Modelli (3/8) - ✅ Address.php, County.php, GeographicalScopes.php risolti
-<<<<<<< .merge_file_soMkiV
-=======
-- [ ] Actions (0/12)
-<<<<<<< HEAD
->>>>>>> .merge_file_sGSvFJ
 - [ ] Actions (0/12) 
-=======
->>>>>>> 6ed19256f (.)
 - [ ] Filament (0/5)
 - [ ] Data Objects (0/2)
 - [x] Services (2/2) — ELIMINATI (No-Services, non ricreati)
@@ -121,21 +100,9 @@ Strategia: DRY, KISS, analisi contestuale
   - Implementazione Schema.org PostalAddress
 - **Motivazione**: Versione avanzata segue best practice Laraxot
 
-<<<<<<< .merge_file_soMkiV
 ### GeographicalScopes.php ✅ (ELIMINATO — No-Services)
 - **Conflitto**: Non applicabile; il file `app/Models/Traits/GeographicalScopes.php` è stato rimosso (zero chiamanti in produzione, sostituito da `GeoTrait::scopeWithDistance`).
 - **Stato attuale**: Il trait non esiste. Le scope di distanza vivono in `GeoTrait.php`. Vedi [decision-log](./decision-log.md) 2026-10-20.
-=======
-### GeographicalScopes.php ✅
-- **Conflitto**: Già risolto correttamente
-- **Stato**: Utilizza correttamente `GetDistanceExpressionAction` centralizzata
-- **Implementazione**:
-- **Implementazione**: 
-  - Scope `scopeWithDistance` per calcolo distanza
-  - Scope `scopeOrderByDistance` per ordinamento geografico
-  - Metodo `getDistanceExpression` che delega all'action
-- **Motivazione**: Segue principi DRY e KISS, action centralizzata
->>>>>>> .merge_file_sGSvFJ
 
 ## Note Tecniche
 - Tutti i conflitti sembrano essere nel modulo Geo

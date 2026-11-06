@@ -140,11 +140,7 @@ nwidart/laravel-modules (Module facade)
 
 **Order garantito**:
 1. Xot service provider registrato
-<<<<<<< HEAD
 2. Xot helpers/Helper.php autoloaded (via `files` in composer.json)
-=======
-2. Xot Helpers/Helper.php autoloaded (via `files` in composer.json)
->>>>>>> 6ed19256f (.)
 3. Tenant service provider registrato
 4. Tenant può usare helper functions
 
@@ -157,11 +153,7 @@ Call to undefined function Modules\Tenant\Services\inAdmin()
 at Modules/Tenant/app/Services/TenantService.php:68
 ```
 
-<<<<<<< HEAD
 **Causa**: Funzioni `inAdmin()` e `getModuleModels()` non definite in `Xot/helpers/Helper.php`.
-=======
-**Causa**: Funzioni `inAdmin()` e `getModuleModels()` non definite in `Xot/Helpers/Helper.php`.
->>>>>>> 6ed19256f (.)
 
 ### Perché Accadeva
 
@@ -174,11 +166,7 @@ Durante `composer dump-autoload`:
 
 ### Fix Applicato
 
-<<<<<<< HEAD
 Aggiunte in `Xot/helpers/Helper.php`:
-=======
-Aggiunte in `Xot/Helpers/Helper.php`:
->>>>>>> 6ed19256f (.)
 
 ```php
 if (! function_exists('inAdmin')) {
@@ -202,11 +190,7 @@ if (! function_exists('getModuleModels')) {
 ### Test Composer Autoload
 
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/_bases/base_ptvx_fila4_mono/laravel
->>>>>>> 6ed19256f (.)
 composer dump-autoload
 
 # Deve completare senza errori:
@@ -273,20 +257,10 @@ if (inAdmin()) { }
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Xot Helper Functions](../../xot/docs/helpers.md)
 - [Xot RouteService](../../Xot/app/Services/RouteService.php)
 - [Xot GetAllModelsByModuleNameAction](../../Xot/app/Actions/Model/GetAllModelsByModuleNameAction.php)
 - [Helper Architecture Analysis](../../xot/docs/helpers-architecture-analysis.md)
-<<<<<<< .merge_file_nbkkSc
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Xot Helper Functions](../../Xot/docs/helpers.md)
-- [Xot RouteService](../../Xot/app/Services/RouteService.php)
-- [Xot GetAllModelsByModuleNameAction](../../Xot/app/Actions/Model/GetAllModelsByModuleNameAction.php)
-- [Helper Architecture Analysis](../../Xot/docs/helpers-architecture-analysis.md)
->>>>>>> .merge_file_KFj1uA
 - [nwidart/laravel-modules GitHub](https://github.com/nWidart/laravel-modules)
 
 ---
@@ -294,12 +268,4 @@ if (inAdmin()) { }
 **Data Fix**: 2 Dicembre 2025
 **Tipo**: Helper functions dependency
 **Status**: ✅ Risolto - Composer autoload funzionante
-<<<<<<< .merge_file_nbkkSc
 **Priority**: CRITICA (bloccava composer)
-=======
-<<<<<<< HEAD
-**Priority**: CRITICA (bloccava composer)
-=======
-**Priority**: CRITICA (bloccava composer)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_KFj1uA

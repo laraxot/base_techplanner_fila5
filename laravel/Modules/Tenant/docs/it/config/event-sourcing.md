@@ -145,24 +145,10 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di event-sourcing.md
-<<<<<<< .merge_file_2zqinT
-=======
-* [event-sourcing.md](../../../Xot/docs/activity/event-sourcing.md)
-* [event-sourcing.md](../../../Tenant/docs/it/config/event-sourcing.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_brlmLk
 * [event-sourcing.md](../../../xot/docs/activity/event-sourcing.md)
 * [event-sourcing.md](../../../tenant/docs/it/config/event-sourcing.md)
 
 ### Versione Incoming
 
 ---
-<<<<<<< .merge_file_2zqinT
-=======
-=======
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_brlmLk

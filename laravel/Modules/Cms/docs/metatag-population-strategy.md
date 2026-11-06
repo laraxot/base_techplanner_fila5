@@ -22,27 +22,13 @@ I file metatag in `config/local/<directory progetto>/lang/{locale}/metatag.php` 
 - `Themes/One/lang/it/navigation.php` - Contenuti hero e navigazione
 - `Themes/One/lang/it/landing.php` - Contenuti landing page
 - `Themes/One/lang/en/navigation.php` - Versione inglese
-<<<<<<< .merge_file_ZkrDZE
-=======
-- `Themes/One/lang/en/landing.php` - Versione inglese
-<<<<<<< HEAD
->>>>>>> .merge_file_rRqRYy
 - `Themes/One/lang/en/landing.php` - Versione inglese  
-=======
->>>>>>> 6ed19256f (.)
 - `Themes/One/lang/de/navigation.php` - Versione tedesca
 
 ### Contenuti Chiave Estratti
 
 #### Titolo Principale (title)
-<<<<<<< .merge_file_ZkrDZE
-=======
-- **IT**: "<main module> - <slogan> per Gestanti"
-<<<<<<< HEAD
->>>>>>> .merge_file_rRqRYy
 - **IT**: "<main module> - Salute Orale per Gestanti"
-=======
->>>>>>> 6ed19256f (.)
 - **EN**: "<main module> - Oral Health for Pregnant Women"
 - **DE**: "<main module> - Mundgesundheit für Schwangere"
 
@@ -57,7 +43,6 @@ Basato su: `navigation.hero.welcome_subtitle.label`
 
 ## Strategia SEO Keywords
 
-<<<<<<< HEAD
 ### Keywords Italiane
 ```
 salute orale, gravidanza, gestanti, dentista, prevenzione, odontoiatria, 
@@ -69,30 +54,13 @@ controllo dentistico, primo trimestre
 ```
 oral health, pregnancy, pregnant women, dentist, prevention, dentistry, 
 free visits, ISEE, mother baby health, cavities, dental hygiene, 
-<<<<<<< .merge_file_ZkrDZE
-=======
-=======
->>>>>>> 6ed19256f (.)
-### Keywords Inglesi
-```
-oral health, pregnancy, pregnant women, dentist, prevention, dentistry,
-free visits, ISEE, mother baby health, cavities, dental hygiene,
->>>>>>> .merge_file_rRqRYy
 dental checkup, first trimester
 ```
 
 ### Keywords Tedesche
 ```
-<<<<<<< .merge_file_ZkrDZE
-=======
-mundgesundheit, schwangerschaft, schwangere, zahnarzt, prävention,
-zahnmedizin, kostenlose besuche, ISEE, mutter baby gesundheit, karies,
-<<<<<<< HEAD
->>>>>>> .merge_file_rRqRYy
 mundgesundheit, schwangerschaft, schwangere, zahnarzt, prävention, 
 zahnmedizin, kostenlose besuche, ISEE, mutter baby gesundheit, karies, 
-=======
->>>>>>> 6ed19256f (.)
 zahnhygiene, zahnkontrolle, erstes trimester
 ```
 
@@ -115,26 +83,16 @@ zahnhygiene, zahnkontrolle, erstes trimester
 
 ### Autore (author)
 - **IT**: "Progetto <main module> - ANDI, INMP, COI"
-<<<<<<< .merge_file_ZkrDZE
-=======
-- **EN**: "<main module> Project - ANDI, INMP, COI"
-<<<<<<< HEAD
->>>>>>> .merge_file_rRqRYy
 - **EN**: "<main module> Project - ANDI, INMP, COI"  
-=======
->>>>>>> 6ed19256f (.)
 - **DE**: "<main module> Projekt - ANDI, INMP, COI"
 
 Basato sui partner del progetto identificati nelle traduzioni.
 
-<<<<<<< HEAD
 ### Partner Identificati
 - **ANDI**: Fondazione ANDI (Associazione Nazionale Dentisti Italiani)
 - **INMP**: Istituto Nazionale per la promozione della salute delle popolazioni Migranti e per il contrasto delle malattie della Povertà
 - **COI**: Cooperazione Odontoiatrica Internazionale
 
-=======
->>>>>>> 6ed19256f (.)
 ## Configurazioni Tecniche
 
 ### Robots
@@ -183,14 +141,7 @@ I metatag vengono utilizzati nel componente `Modules\Cms\app\View\Components\Met
 
 ### Aggiornamenti Necessari
 - Aggiornare keywords se cambiano i servizi
-<<<<<<< .merge_file_ZkrDZE
-=======
-- Modificare descrizioni se cambia il focus del progetto
-<<<<<<< HEAD
->>>>>>> .merge_file_rRqRYy
 - Modificare descrizioni se cambia il focus del progetto  
-=======
->>>>>>> 6ed19256f (.)
 - Aggiungere nuove lingue se necessario
 - Aggiornare informazioni partner se cambiano
 
@@ -206,12 +157,4 @@ I metatag vengono utilizzati nel componente `Modules\Cms\app\View\Components\Met
 - [Traduzioni Tema EN](../../../Themes/One/lang/en/)
 - [Traduzioni Tema DE](../../../Themes/One/lang/de/)
 
-<<<<<<< .merge_file_ZkrDZE
 *Implementazione completata: gennaio 2025*
-=======
-<<<<<<< HEAD
-*Implementazione completata: gennaio 2025*
-=======
-*Implementazione completata: gennaio 2025*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_rRqRYy

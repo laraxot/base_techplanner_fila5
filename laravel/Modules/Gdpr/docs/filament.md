@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_LAVYDr
 ---
 title: "filament"
 type: note
@@ -13,11 +12,4 @@ status: draft
 
 https://github.com/andrewdwallo/filament-companies
 
-=======
-<<<<<<< HEAD
-https://github.com/andrewdwallo/filament-companies
-https://github.com/andrewdwallo/filament-companies
-=======
-
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_zKYfLQ

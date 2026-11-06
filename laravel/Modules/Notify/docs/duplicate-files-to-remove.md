@@ -58,7 +58,6 @@ Modules/Notify/resources/views/emails/templates/ark/wideImage.blade.php
 
 ## 📜 Regola
 
-<<<<<<< HEAD
 **File PHP con classi**: UpperCamelCase (PSR-4)  
 **Blade templates**: Seguire convenzione esistente (qui camelCase per i componenti)
 
@@ -67,16 +66,6 @@ Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../x
 ## ⚠️ Problema
 
 Su Linux (production): file diversi per case  
-=======
-**File PHP con classi**: UpperCamelCase (PSR-4)
-**Blade templates**: Seguire convenzione esistente (qui camelCase per i componenti)
-
-Vedi documentazione completa: [Xot/docs/file-naming-case-sensitivity.md](../../Xot/docs/file-naming-case-sensitivity.md)
-
-## ⚠️ Problema
-
-Su Linux (production): file diversi per case
->>>>>>> 6ed19256f (.)
 Su Windows/macOS (dev): stesso file → **conflitti Git**, **errori rendering template**
 
 ## 🔧 Script Cleanup
@@ -84,20 +73,12 @@ Su Windows/macOS (dev): stesso file → **conflitti Git**, **errori rendering te
 ### Automatico (Raccomandato)
 ```bash
 # Script automatico che elimina tutti i duplicati lowercase
-<<<<<<< HEAD
 bashscripts/fix/cleanup-case-duplicates.sh
-=======
-/var/www/_bases/base_ptvx_fila4_mono/bashscripts/fix/cleanup-case-duplicates.sh
->>>>>>> 6ed19256f (.)
 ```
 
 ### Manuale (Solo Modulo Notify)
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/_bases/base_ptvx_fila4_mono/laravel
->>>>>>> 6ed19256f (.)
 
 # Tests
 rm Modules/Notify/tests/Feature/emailtemplatestest.php
@@ -133,20 +114,7 @@ git commit -m "fix: remove lowercase duplicate files (case sensitivity complianc
 ```
 
 ---
-<<<<<<< .merge_file_7TDdlj
-=======
-
-<<<<<<< HEAD
->>>>>>> .merge_file_CjX1Uc
 **Riferimenti**: 
 - [Xot File Naming Rules](../../xot/docs/file-naming-case-sensitivity.md)
 - [Bashscripts Location Policy](../../xot/docs/bashscripts-location-policy.md)
-<<<<<<< .merge_file_7TDdlj
 
-=======
-=======
-**Riferimenti**:
-- [Xot File Naming Rules](../../Xot/docs/file-naming-case-sensitivity.md)
-- [Bashscripts Location Policy](../../Xot/docs/bashscripts-location-policy.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_CjX1Uc

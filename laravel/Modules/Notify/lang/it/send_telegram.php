@@ -24,20 +24,14 @@ return [
             'placeholder' => 'Inserisci l\'ID della chat',
             'helper_text' => 'ID della chat Telegram di destinazione',
             'description' => 'Identificativo univoco della chat Telegram',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Inserisci il messaggio da inviare',
             'helper_text' => 'Contenuto del messaggio Telegram',
             'description' => 'Testo del messaggio da inviare tramite Telegram',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'parse_mode' => [
             'label' => 'Formato',
@@ -49,10 +43,7 @@ return [
                 'html' => 'HTML',
                 'markdown' => 'Markdown',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'text' => [
             'label' => 'text',
@@ -151,10 +142,8 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio del messaggio Telegram',
         'confirmation' => 'Sei sicuro di voler inviare questo messaggio Telegram?',
     ],
-<<<<<<< HEAD
     'label' => 'Send Telegram',
     'plural_label' => 'Send Telegram (Plurale)',
-<<<<<<< .merge_file_34zuVi
     'sections' => [
         'empty' => [
             'label' => 'empty',
@@ -165,8 +154,4 @@ return [
             'description' => 'Utilizza questo form per testare l\'invio di messaggi Telegram tramite diversi provider.',
         ],
     ],
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_rEUm6v
 ];

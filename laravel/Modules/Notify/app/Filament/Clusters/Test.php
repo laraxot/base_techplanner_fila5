@@ -9,11 +9,7 @@ use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
  * Cluster di test per il modulo Notify.
-<<<<<<< HEAD
  *
-=======
- * 
->>>>>>> 6ed19256f (.)
  * ⚠️ IMPORTANTE: Estende XotBaseCluster, MAI Filament\Clusters\Cluster direttamente!
  */
 class Test extends XotBaseCluster

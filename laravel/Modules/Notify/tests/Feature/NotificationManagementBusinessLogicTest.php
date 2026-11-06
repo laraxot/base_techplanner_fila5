@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_jutJAT
 namespace Modules\Notify\Tests\Feature;
 
 use Modules\Notify\Database\Factories\ContactFactory;
@@ -12,13 +11,6 @@ use Modules\Notify\Database\Factories\MailTemplateVersionFactory;
 use Modules\Notify\Database\Factories\NotificationFactory;
 use Modules\Notify\Database\Factories\NotificationTemplateFactory;
 use Modules\Notify\Database\Factories\NotificationTypeFactory;
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ed19256f (.)
-use Modules\Notify\Helpers\ConfigHelper;
->>>>>>> .merge_file_ojl8hr
 use Modules\Notify\Models\Contact;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Models\MailTemplateLog;

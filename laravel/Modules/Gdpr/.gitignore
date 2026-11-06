@@ -82,7 +82,6 @@ package-lock.json
 .phpunit.result.cache
 public/hot
 public_html
-<<<<<<< .merge_file_Yx4fo7
 public_html/hot
 public_html/storage
 public/storage
@@ -109,22 +108,4 @@ graphify-out/
 .claude-audit/
 test-results/
 gdpr.code-workspace
-=======
-<<<<<<< HEAD
-lang/lang/
-_docs/
-_docs/
-
-# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
-docs/archive/
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-*~HEAD
-*~BASE
-*~LOCAL
-*~REMOTE
-*.orig
-*.rej
-*~head
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_eOGfo9

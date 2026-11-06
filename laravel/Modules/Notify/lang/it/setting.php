@@ -11,7 +11,6 @@ return [
         'icon' => 'heroicon-o-document-text',
         'sort' => 99,
     ],
-<<<<<<< .merge_file_iuiZIQ
     'title' => 'Impostazioni Notifiche',
     'actions' => [
         'save' => [
@@ -28,29 +27,6 @@ return [
             'label' => 'Esci',
             'icon' => 'heroicon-o-arrow-left-on-rectangle',
             'tooltip' => 'Esci',
-=======
-<<<<<<< HEAD
-    'label' => 'Setting',
-    'plural_label' => 'Setting (Plurale)',
-    'fields' => [
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
->>>>>>> .merge_file_yIjiTt
         ],
     ],
     'fields' => [
@@ -70,6 +46,4 @@ return [
             'label' => 'Endpoint FCM',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -20,31 +20,14 @@ return [
             'label' => 'Destinatario',
             'placeholder' => 'Inserisci il numero di telefono',
             'helper_text' => 'Numero di telefono del destinatario',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_PnyFOr
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_zD4szl
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Scrivi il testo del messaggio',
             'helper_text' => 'Contenuto del messaggio SMS',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_PnyFOr
             'description' => '']],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_zD4szl
     'actions' => [
         'send' => [
             'label' => 'Invia',
@@ -54,17 +37,6 @@ return [
     'messages' => [
         'success' => 'Messaggio SMS inviato con successo tramite Netfun',
         'error' => 'Si è verificato un errore durante l\'invio del messaggio SMS',
-<<<<<<< .merge_file_PnyFOr
         'confirmation' => 'Sei sicuro di voler inviare questo messaggio SMS?'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-        'confirmation' => 'Sei sicuro di voler inviare questo messaggio SMS?',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_zD4szl

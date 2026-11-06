@@ -17,7 +17,6 @@ return [
             'label' => 'cancel',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Create Attachment',
     'plural_label' => 'Create Attachment (Plurale)',
     'navigation' => [
@@ -51,6 +50,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -250,31 +250,13 @@ User (base)
 ## 🔗 Collegamenti Documentazione
 
 ### Documentazione Moduli
-<<<<<<< HEAD
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
-<<<<<<< .merge_file_vtCjht
 - [User](../../User/docs/README.md)
 - [Geo](README.md)
 - [Media](../../Media/docs/README.md)
 - [UI](../../UI/docs/README.md)
 - [Xot](../../Xot/docs/README.md)
-=======
-- [User](../modules/user/docs/readme.md)
-- [Geo](../modules/geo/docs/readme.md)
-- [Media](../modules/media/docs/readme.md)
-- [UI](../modules/ui/docs/readme.md)
-- [Xot](../modules/xot/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
-- [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
-- [User](../Modules/User/docs/README.md)
-- [Geo](../Modules/Geo/docs/README.md)
-- [Media](../Modules/Media/docs/README.md)
-- [UI](../Modules/UI/docs/README.md)
-- [Xot](../Modules/Xot/docs/README.md)
->>>>>>> .merge_file_vGnCoo
 
 ### Documentazione Tecnica
 - [Architettura](../laraxot-architecture-principles.md)

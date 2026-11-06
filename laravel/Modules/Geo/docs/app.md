@@ -14,11 +14,4 @@ https://hackernoon.com/transforming-mobile-maps-with-jetpack-compose-insights-fr
 
 
 https://developer.android.com/develop/ui/compose/tutorial?hl=it
-<<<<<<< HEAD
 
-<<<<<<< .merge_file_d7ryPo
-=======
-https://developer.android.com/develop/ui/compose/tutorial?hl=it
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_UXiIXK

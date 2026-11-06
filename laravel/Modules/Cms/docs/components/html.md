@@ -170,14 +170,5 @@ I componenti HTML del modulo CMS seguono le best practices HTML5 e utilizzano ta
 
 ## Collegamenti
 - [Elementi Semantici](../html/semantic.md)
-<<<<<<< .merge_file_mV8yi1
 - [Struttura Layout](../architecture/structure/layout.md)
 - [Accessibilità](../accessibility/readme.md)
-=======
-- [Struttura Layout](../structure/layout.md)
-- [Accessibilità](../accessibility/README.md)
-<<<<<<< HEAD
-- [Accessibilità](../accessibility/readme.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_aJpWiD

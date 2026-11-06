@@ -52,14 +52,7 @@ test('doctor can create appointment for patient', function () {
     $this->actingAs($doctor)
         ->post('/appointments', [
             'patient_id' => $patient->id,
-<<<<<<< .merge_file_D5VCxP
-=======
-            'date' => '2024-01-15',
-<<<<<<< HEAD
->>>>>>> .merge_file_JInSoB
             'date' => '[DATE]',
-=======
->>>>>>> 6ed19256f (.)
             'time' => '10:00',
             'type' => 'consultation',
         ]);
@@ -178,18 +171,6 @@ test('patient inherits user functionality', function () {
 - [Testing Guidelines](../laravel/.ai/guidelines/testing-guidelines.md)
 
 ---
-<<<<<<< .merge_file_D5VCxP
 **Ultima modifica**: [DATE]
 **Priorità**: CRITICA
 **Applicazione**: SEMPRE, TUTTI I TEST
-=======
-**Ultima modifica**: 2025-01-06
-<<<<<<< HEAD
-**Ultima modifica**: [DATE]
-**Priorità**: CRITICA
-**Applicazione**: SEMPRE, TUTTI I TEST
-=======
-**Priorità**: CRITICA
-**Applicazione**: SEMPRE, TUTTI I TEST
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JInSoB

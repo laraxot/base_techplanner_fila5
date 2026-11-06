@@ -172,12 +172,4 @@ return $page;
 
 **Status**: 🧘 **IN ANALISI**
 
-<<<<<<< .merge_file_ICFB2O
 **Ultimo aggiornamento**: [DATE]
-=======
-**Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
-**Ultimo aggiornamento**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_aH5nie

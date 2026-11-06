@@ -162,12 +162,5 @@ cd /var/www/html/_bases/base_workorder_fila3_mono/laravel
 - [Employee Module XotBase Extension Rules](./xotbase_extension_rules.md)
 - [Employee Module Technical Implementation](./technical_implementation.md)
 
-<<<<<<< .merge_file_D4wWeB
 *Ultimo aggiornamento: Luglio 2025*
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: Luglio 2025*
-=======
-*Ultimo aggiornamento: Luglio 2025*
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_poczyl

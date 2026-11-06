@@ -44,22 +44,11 @@ class LocationSelect extends Select
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< HEAD
         
         $this->afterStateUpdated(function ($state, callable $set) {
             // Clear dependent fields when parent changes
             $path = $this->getStatePath();
             
-<<<<<<< .merge_file_Gig8zj
-=======
-=======
->>>>>>> 6ed19256f (.)
-
-        $this->afterStateUpdated(function ($state, callable $set) {
-            // Clear dependent fields when parent changes
-            $path = $this->getStatePath();
-
->>>>>>> .merge_file_LtahJy
             if ($path === 'region_id') {
                 $set('province_id', null);
                 $set('city_id', null);
@@ -72,28 +61,12 @@ class LocationSelect extends Select
             }
         });
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_Gig8zj
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
     public static function make(string $name): static
     {
         return parent::make($name)->searchable()->reactive();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_Gig8zj
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
     public function getRegionSelect(): static
     {
         return $this->make('region_id')
@@ -105,15 +78,7 @@ class LocationSelect extends Select
             ->required()
             ->reactive();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_Gig8zj
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
     public function getProvinceSelect(): static
     {
         return $this->make('province_id')
@@ -129,15 +94,7 @@ class LocationSelect extends Select
             ->required()
             ->reactive();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_Gig8zj
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
     public function getCitySelect(): static
     {
         return $this->make('city_id')
@@ -153,15 +110,7 @@ class LocationSelect extends Select
             ->required()
             ->reactive();
     }
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_Gig8zj
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
     public function getCapSelect(): static
     {
         return $this->make('cap')
@@ -200,7 +149,6 @@ public function panel(Panel $panel): Panel
                         ->schema([
                             LocationSelect::make('region_id')
                                 ->getRegionSelect(),
-<<<<<<< HEAD
                                 
                             LocationSelect::make('province_id')
                                 ->getProvinceSelect(),
@@ -208,18 +156,6 @@ public function panel(Panel $panel): Panel
                             LocationSelect::make('city_id')
                                 ->getCitySelect(),
                                 
-<<<<<<< .merge_file_Gig8zj
-=======
-=======
->>>>>>> 6ed19256f (.)
-
-                            LocationSelect::make('province_id')
-                                ->getProvinceSelect(),
-
-                            LocationSelect::make('city_id')
-                                ->getCitySelect(),
-
->>>>>>> .merge_file_LtahJy
                             LocationSelect::make('cap')
                                 ->getCapSelect(),
                         ]),
@@ -266,20 +202,11 @@ public static function form(Form $form): Form
     return $form
         ->schema([
             // Other fields...
-<<<<<<< HEAD
             
-<<<<<<< .merge_file_Gig8zj
-=======
-            
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
             Forms\Components\Fieldset::make(__('geo::location.location'))
                 ->schema([
                     LocationSelect::make('region_id')
                         ->getRegionSelect(),
-<<<<<<< HEAD
                         
                     LocationSelect::make('province_id')
                         ->getProvinceSelect(),
@@ -290,21 +217,6 @@ public static function form(Form $form): Form
                     LocationSelect::make('cap')
                         ->getCapSelect(),
                         
-<<<<<<< .merge_file_Gig8zj
-=======
-=======
->>>>>>> 6ed19256f (.)
-
-                    LocationSelect::make('province_id')
-                        ->getProvinceSelect(),
-
-                    LocationSelect::make('city_id')
-                        ->getCitySelect(),
-
-                    LocationSelect::make('cap')
-                        ->getCapSelect(),
-
->>>>>>> .merge_file_LtahJy
                     Forms\Components\TextInput::make('address')
                         ->label(__('geo::location.address'))
                         ->required(),
@@ -337,15 +249,7 @@ class ImportGeoData extends Command
     public function handle()
     {
         $json = json_decode(file_get_contents(module_path('Geo', 'resources/json/comuni.json')), true);
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_Gig8zj
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
         DB::transaction(function () use ($json) {
             foreach ($json as $item) {
                 // Import region
@@ -353,15 +257,7 @@ class ImportGeoData extends Command
                     ['code' => $item['regione']['codice']],
                     ['name' => $item['regione']['nome']]
                 );
-<<<<<<< HEAD
                 
-<<<<<<< .merge_file_Gig8zj
-=======
-                
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
                 // Import province
                 $province = Province::firstOrCreate(
                     ['code' => $item['provincia']['codice']],
@@ -370,15 +266,7 @@ class ImportGeoData extends Command
                         'region_id' => $region->id,
                     ]
                 );
-<<<<<<< HEAD
                 
-<<<<<<< .merge_file_Gig8zj
-=======
-                
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
                 // Import city
                 $city = City::firstOrCreate(
                     ['code' => $item['codice']],
@@ -387,15 +275,7 @@ class ImportGeoData extends Command
                         'province_id' => $province->id,
                     ]
                 );
-<<<<<<< HEAD
                 
-<<<<<<< .merge_file_Gig8zj
-=======
-                
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
                 // Import CAPs
                 foreach ($item['cap'] as $capCode) {
                     Cap::firstOrCreate(
@@ -406,15 +286,7 @@ class ImportGeoData extends Command
                     );
                 }
             }
-<<<<<<< HEAD
             
-<<<<<<< .merge_file_Gig8zj
-=======
-            
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
             $this->info('Geographical data imported successfully!');
         });
     }
@@ -482,48 +354,21 @@ class LocationSelectTest extends TestCase
         $province = Province::factory()->create(['region_id' => $region->id]);
         $city = City::factory()->create(['province_id' => $province->id]);
         $cap = Cap::factory()->create(['city_id' => $city->id]);
-<<<<<<< HEAD
         
         $this->get(route('filament.resources.addresses.create'))
             ->assertSuccessful()
             ->assertSee('Region');
             
-<<<<<<< .merge_file_Gig8zj
-=======
-=======
->>>>>>> 6ed19256f (.)
-
-        $this->get(route('filament.resources.addresses.create'))
-            ->assertSuccessful()
-            ->assertSee('Region');
-
->>>>>>> .merge_file_LtahJy
         // Test region selection
         $this->post(route('filament.resources.addresses.get-province-options'), [
             'region_id' => $region->id
         ])->assertJson([$province->id => $province->name]);
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_Gig8zj
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
         // Test city selection
         $this->post(route('filament.resources.addresses.get-city-options'), [
             'province_id' => $province->id
         ])->assertJson([$city->id => $city->name]);
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_Gig8zj
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LtahJy
         // Test CAP selection
         $this->post(route('filament.resources.addresses.get-cap-options'), [
             'city_id' => $city->id

@@ -11,14 +11,7 @@ return [
         'save' => [
             'label' => 'save'],
         'activeLocale' => [
-<<<<<<< .merge_file_Lq1LDC
             'label' => 'activeLocale']],
-=======
-            'label' => 'activeLocale',
-        ],
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_erJuh4
     'label' => 'Edit Mail Template',
     'plural_label' => 'Edit Mail Template (Plurale)',
     'navigation' => [
@@ -45,13 +38,4 @@ return [
             'label' => 'Ultima Modifica',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_Lq1LDC
             'description' => '']]];
-=======
-            'description' => '',
-        ],
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_erJuh4

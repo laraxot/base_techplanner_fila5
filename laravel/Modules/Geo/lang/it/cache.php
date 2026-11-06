@@ -16,7 +16,6 @@ return [
             'label' => 'Valore',
             'placeholder' => 'Inserisci il valore da memorizzare',
             'help' => 'Valore da memorizzare in cache',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -28,13 +27,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'ttl' => [
-            'label' => 'TTL (Time To Live)',
-            'placeholder' => 'Inserisci il tempo di vita in secondi',
-            'help' => 'Tempo di vita dei dati in cache in secondi',
->>>>>>> 6ed19256f (.)
         ],
         'tags' => [
             'label' => 'Tag',
@@ -83,11 +75,7 @@ return [
         'value_required' => 'Il valore è obbligatorio',
         'ttl_numeric' => 'Il TTL deve essere numerico',
         'ttl_min' => 'Il TTL deve essere almeno 0',
-<<<<<<< HEAD
         'ttl_max' => 'Il TTL non può superare 86400 (24 ore]',
-=======
-        'ttl_max' => 'Il TTL non può superare 86400 (24 ore)',
->>>>>>> 6ed19256f (.)
         'driver_required' => 'Il driver è obbligatorio',
         'connection_required' => 'La connessione è obbligatoria',
         'prefix_invalid' => 'Il prefisso non è valido',

@@ -10,11 +10,7 @@ use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
 
 /**
-<<<<<<< HEAD
  * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/auth/password/reset.blade.php
-=======
- * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/pages/auth/password/reset.blade.php
->>>>>>> 6ed19256f (.)
  */
 #[Layout('cms::layouts.auth')]
 class ResetComponent extends Component
@@ -37,14 +33,10 @@ class ResetComponent extends Component
         if (Password::RESET_LINK_SENT === $response) {
             $message = trans($response);
             if (is_array($message)) {
-<<<<<<< HEAD
                 $this->emailSentMessage = implode(' ', array_map(
                     static fn (mixed $item): string => is_scalar($item) ? (string) $item : '',
                     $message
                 ));
-=======
-                $this->emailSentMessage = implode(' ', $message);
->>>>>>> 6ed19256f (.)
             } else {
                 $this->emailSentMessage = is_string($message) ? $message : (string) $message;
             }

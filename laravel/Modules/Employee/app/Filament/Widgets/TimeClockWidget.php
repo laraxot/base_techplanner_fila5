@@ -4,24 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Filament\Widgets;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Collection;
-=======
-use Illuminate\Database\Eloquent\Collection;
-use Carbon\Carbon;
-use Filament\Notifications\Notification;
->>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\Auth;
 use Modules\Employee\Enums\WorkHourStatusEnum;
 use Modules\Employee\Enums\WorkHourTypeEnum;
 use Modules\Employee\Models\WorkHour;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-=======
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 6ed19256f (.)
 use Override;
 
 /**
@@ -46,11 +36,7 @@ use Override;
  *
  * This is the ONLY time tracking widget - consolidates all time tracking features.
  */
-<<<<<<< HEAD
 class TimeClockWidget extends XotBaseSchemaWidget
-=======
-class TimeClockWidget extends XotBaseWidget
->>>>>>> 6ed19256f (.)
 {
     /**
      * Vista del widget.
@@ -155,7 +141,6 @@ class TimeClockWidget extends XotBaseWidget
             ->orderBy('timestamp', 'asc')
             ->get();
 
-<<<<<<< HEAD
         $todayEntries = [];
         foreach ($entries as $entry) {
             $todayEntries[] = [
@@ -164,26 +149,6 @@ class TimeClockWidget extends XotBaseWidget
                 'status' => $entry->status->value,
             ];
         }
-=======
-        /** @var array<int, array{time: string, type: string, status: string}> $todayEntries */
-        $todayEntries = $entries
-            ->map(function (WorkHour $entry): array {
-                $type = $entry->type;
-                $status = $entry->status;
-
-                return [
-                    'time' => $entry->timestamp->format('H:i'),
-                    'type' => is_object($type) && method_exists($type, 'value')
-                        ? $type->value
-                        : (is_string($type) ? $type : ''),
-                    'status' => is_object($status) && method_exists($status, 'value')
-                        ? $status->value
-                        : (is_string($status) ? $status : ''),
-                ];
-            })
-            ->values()
-            ->all();
->>>>>>> 6ed19256f (.)
         $this->todayEntries = $todayEntries;
     }
 

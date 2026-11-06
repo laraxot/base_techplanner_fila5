@@ -6,20 +6,10 @@ declare(strict_types=1);
 // here: without it, the first render creates them with raw values.
 return [
     'navigation' => [
-<<<<<<< .merge_file_bmALhd
         'label' => 'Notification Settings',
         'group' => 'Notifications',
         'icon' => 'heroicon-o-document-text',
         'sort' => 99,
-=======
-        'label' => 'Impostazioni Notifiche',
-        'group' => 'Notifiche',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
->>>>>>> .merge_file_l6lTdQ
     ],
     'title' => 'Notification Settings',
     'actions' => [
@@ -56,6 +46,4 @@ return [
             'label' => 'FCM endpoint',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

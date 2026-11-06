@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "algolia docsearch duplicate"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_oQHXrT
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_wlJO3F

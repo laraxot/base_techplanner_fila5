@@ -19,14 +19,7 @@ Questo documento descrive in dettaglio la struttura e il contenuto corretto che 
 ## Contenuto Testuale Ufficiale
 
 ### Titolo Principale
-<<<<<<< .merge_file_VtNng4
-=======
-"Benvenuta su <slogan>,"
-<<<<<<< HEAD
->>>>>>> .merge_file_nzCawd
 "Benvenuta su Salute Orale,"
-=======
->>>>>>> 6ed19256f (.)
 
 ### Testo Principale
 Il testo principale da mostrare è:
@@ -42,14 +35,7 @@ Il pulsante deve contenere il testo: "INIZIA ORA"
 ## Elementi Visivi Richiesti
 
 1. **Intestazione**:
-<<<<<<< .merge_file_VtNng4
-=======
-   - Logo "<slogan>" (con la "O" stilizzata)
-<<<<<<< HEAD
->>>>>>> .merge_file_nzCawd
    - Logo "Salute Orale" (con la "O" stilizzata) 
-=======
->>>>>>> 6ed19256f (.)
    - Selettore lingua (IT/EN)
 
 2. **Sezione Centrale**:
@@ -98,12 +84,4 @@ Per verificare che l'implementazione sia corretta:
 3. Compromettere l'efficacia comunicativa del portale
 4. Non rispettare gli accordi con i partner del progetto
 
-<<<<<<< .merge_file_VtNng4
 Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto. 
-=======
-Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto.
-<<<<<<< HEAD
-Questo documento serve come riferimento definitivo per il contenuto dell'homepage e deve essere consultato prima di qualsiasi modifica all'interfaccia utente del portale il progetto. 
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_nzCawd

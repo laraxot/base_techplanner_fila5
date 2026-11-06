@@ -111,7 +111,6 @@ return [
             'rule-name' => 'custom-message',
         ],
     ],
-<<<<<<< HEAD
     'attributes' => [
     ],
     'navigation' => [
@@ -127,7 +126,4 @@ return [
     ],
     'actions' => [
     ],
-=======
-    'attributes' => [],
->>>>>>> 6ed19256f (.)
 ];

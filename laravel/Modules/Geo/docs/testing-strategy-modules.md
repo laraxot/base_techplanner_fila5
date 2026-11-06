@@ -373,17 +373,9 @@ class DatabaseHelper
 
 ## Collegamenti
 
-<<<<<<< .merge_file_grvQt0
 - [Test Autenticazione Esistenti](../../../tests/Feature/Auth) - Pattern di riferimento
 - [Documentazione Modulo <nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [Documentazione Modulo User](../../User/docs/README.md)
-=======
-- [Test Autenticazione Esistenti](../tests/Feature/Auth/) - Pattern di riferimento
-- [Documentazione Modulo <nome progetto>](../Modules/<nome progetto>/docs/README.md)
-- [Documentazione Modulo User](../Modules/User/docs/README.md)
-- [Documentazione Modulo <nome progetto>](../modules/<nome progetto>/docs/readme.md)
-- [Documentazione Modulo User](../modules/user/docs/readme.md)
->>>>>>> .merge_file_Qz9VTI
 - [Configurazione Pest](../tests/Pest.php)
 
 ---

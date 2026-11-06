@@ -12,14 +12,7 @@ status: draft
 
 # Processo di Build del Tema in il progetto
 
-<<<<<<< .merge_file_lI1BtV
-=======
-Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/Modules/Cms/project_docs/theme-build-process.md).
-<<<<<<< HEAD
->>>>>>> .merge_file_2lEqUD
 Questo documento fornisce una panoramica del processo di build e pubblicazione del tema principale di il progetto. Per una documentazione più dettagliata, consultare il [documento completo nel modulo CMS](../../laravel/modules/cms/project_docs/theme-build-process.md).
-=======
->>>>>>> 6ed19256f (.)
 
 ## Comandi Principali
 
@@ -56,26 +49,11 @@ Il tema è strettamente integrato con il modulo CMS di il progetto, che fornisce
 - Configurazione dei template
 - Definizione dei blocchi di contenuto
 
-<<<<<<< .merge_file_lI1BtV
-=======
-Per ulteriori dettagli su come funziona l'integrazione, consultare la [documentazione del modulo CMS](../../laravel/Modules/Cms/project_docs/theme-cms-integration.md).
-<<<<<<< HEAD
->>>>>>> .merge_file_2lEqUD
 Per ulteriori dettagli su come funziona l'integrazione, consultare la [documentazione del modulo CMS](../../laravel/modules/cms/project_docs/theme-cms-integration.md).
-=======
->>>>>>> 6ed19256f (.)
 
 ## Risorse Aggiuntive
 
 - [Sviluppo Frontend in il progetto](./frontend-overview.md)
 - [Personalizzazione del Tema](./theme-customization.md)
 - [Struttura dei Componenti](./theme-components.md)
-<<<<<<< .merge_file_lI1BtV
 - [Integrazione con Filament](./filament-integration.md) 
-=======
-- [Integrazione con Filament](./filament-integration.md)
-<<<<<<< HEAD
-- [Integrazione con Filament](./filament-integration.md) 
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_2lEqUD

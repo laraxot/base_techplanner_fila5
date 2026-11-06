@@ -18,78 +18,37 @@ return [
             'label' => 'Destinatario Email',
             'placeholder' => 'Inserisci indirizzo email destinatario',
             'help' => 'Indirizzo email del destinatario principale del messaggio',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_iH5yNH
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_KB2T2t
         'subject' => [
             'label' => 'Oggetto Email',
             'placeholder' => 'Inserisci l\'oggetto del messaggio',
             'help' => 'Testo che apparirà come oggetto dell\'email ricevuta',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_iH5yNH
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_KB2T2t
         'body_html' => [
             'label' => 'Corpo HTML',
             'placeholder' => 'Inserisci il contenuto HTML dell\'email',
             'help' => 'Contenuto formattato in HTML per email con layout avanzato',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_iH5yNH
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_KB2T2t
         'template' => [
             'label' => 'Template Email',
             'placeholder' => 'Seleziona un template predefinito',
             'help' => 'Template predefinito da utilizzare per la formattazione dell\'email',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_iH5yNH
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_KB2T2t
         'add_attachments' => [
             'label' => 'Allegati Email',
             'placeholder' => 'Carica file da allegare al messaggio',
             'help' => 'File allegati che verranno inviati insieme all\'email',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_iH5yNH
             'description' => '']],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_KB2T2t
     'actions' => [
         'send_email' => [
             'label' => 'Invia Email',
@@ -104,17 +63,6 @@ return [
         'loading' => 'Preparazione email in corso...',
         'sent' => 'Email inviata correttamente',
         'queue' => 'Email aggiunta alla coda di invio',
-<<<<<<< .merge_file_iH5yNH
         'failed' => 'Invio email fallito'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-        'failed' => 'Invio email fallito',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_KB2T2t

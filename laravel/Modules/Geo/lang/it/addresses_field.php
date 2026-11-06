@@ -15,14 +15,10 @@ return [
         'name' => [
             'label' => 'Nome Indirizzo',
             'placeholder' => 'Inserisci un nome identificativo',
-<<<<<<< HEAD
             'help' => 'Nome descrittivo per identificare facilmente l\'indirizzo (es. Casa, Ufficio, Studio]',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-            'help' => 'Nome descrittivo per identificare facilmente l\'indirizzo (es. Casa, Ufficio, Studio)',
->>>>>>> 6ed19256f (.)
         ],
         'is_primary' => [
             'label' => 'Indirizzo Principale',

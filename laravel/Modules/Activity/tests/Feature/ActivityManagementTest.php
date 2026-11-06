@@ -22,44 +22,20 @@ beforeEach(function () {
 });
 
 test('user can create activity', function () {
-<<<<<<< .merge_file_I0VPzc
     $user = UserFactory::new()->createOne();
     Assert::assertInstanceOf(User::class, $user);
-=======
-    $user = User::factory()->create(); // @phpstan-ignore-line method.nonObject
-    \assert($user instanceof User);
-    expect($user)->not->toBeNull();
-<<<<<<< HEAD
->>>>>>> .merge_file_UAKxHA
 
-=======
-    
->>>>>>> 6ed19256f (.)
     $activity = Activity::create([
         'log_name' => 'test',
         'description' => 'Test Description',
         'causer_type' => User::class,
         'causer_id' => $user->id,
     ]);
-<<<<<<< .merge_file_I0VPzc
     Assert::assertNotNull($activity);
 
     Assert::assertInstanceOf(Activity::class, $activity);
     Assert::assertSame('Test Description', $activity->description);
     Assert::assertSame($user->id, $activity->causer_id);
-=======
-    \assert($activity instanceof Activity);
-    expect($activity)->not->toBeNull();
-<<<<<<< HEAD
-
-=======
-    
->>>>>>> 6ed19256f (.)
-    expect($activity)
-        ->toBeInstanceOf(Activity::class)
-        ->and($activity->description)->toBe('Test Description')
-        ->and($activity->causer_id)->toBe($user->id);
->>>>>>> .merge_file_UAKxHA
 });
 
 test('activity can be updated', function () {
@@ -67,24 +43,10 @@ test('activity can be updated', function () {
         'log_name' => 'test',
         'description' => 'Original Description',
     ]);
-<<<<<<< .merge_file_I0VPzc
-=======
-    \assert($activity instanceof Activity);
-    expect($activity)->not->toBeNull();
-<<<<<<< HEAD
-
->>>>>>> .merge_file_UAKxHA
     $activity->update([
         'description' => 'Updated Description',
     ]);
 
-=======
-    
-    $activity->update([
-        'description' => 'Updated Description',
-    ]);
-    
->>>>>>> 6ed19256f (.)
     $freshActivity = $activity->fresh();
     Assert::assertNotNull($freshActivity);
     Assert::assertSame('Updated Description', $freshActivity->description);
@@ -95,28 +57,12 @@ test('activity can be deleted', function () {
         'log_name' => 'test',
         'description' => 'Test Description',
     ]);
-<<<<<<< .merge_file_I0VPzc
     Assert::assertNotNull($activity);
-=======
-    \assert($activity instanceof Activity);
-    expect($activity)->not->toBeNull();
-<<<<<<< HEAD
->>>>>>> .merge_file_UAKxHA
 
     $activityId = $activity->id;
     $activity->delete();
 
-<<<<<<< .merge_file_I0VPzc
     Assert::assertNull(Activity::find($activityId));
-=======
-=======
-    
-    $activityId = $activity->id;
-    $activity->delete();
-    
->>>>>>> 6ed19256f (.)
-    expect(Activity::find($activityId))->toBeNull();
->>>>>>> .merge_file_UAKxHA
 });
 
 test('activity belongs to user', function () {
@@ -129,17 +75,8 @@ test('activity belongs to user', function () {
         'causer_type' => User::class,
         'causer_id' => $user->id,
     ]);
-<<<<<<< .merge_file_I0VPzc
     Assert::assertNotNull($activity);
-=======
-    \assert($activity instanceof Activity);
-    expect($activity)->not->toBeNull();
-<<<<<<< HEAD
->>>>>>> .merge_file_UAKxHA
 
-=======
-    
->>>>>>> 6ed19256f (.)
     $causer = $activity->causer;
     Assert::assertInstanceOf(User::class, $causer);
     Assert::assertSame($user->id, $causer->id);

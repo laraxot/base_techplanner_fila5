@@ -26,11 +26,7 @@ use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
  * @property Schema $smsForm
-=======
- * @property \Filament\Schemas\Schema $smsForm
->>>>>>> 6ed19256f (.)
  */
 class SendSmsPage extends XotBasePage
 {
@@ -39,11 +35,7 @@ class SendSmsPage extends XotBasePage
     /** @var array<string, mixed>|null */
     public ?array $smsData = [];
 
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-device-phone-mobile';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-device-phone-mobile';
->>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-sms';
 
@@ -81,11 +73,7 @@ class SendSmsPage extends XotBasePage
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, TextInput|Select>
-=======
-     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Select>
->>>>>>> 6ed19256f (.)
      */
     public function getSmsFormSchema(): array
     {

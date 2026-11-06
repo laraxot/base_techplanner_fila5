@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_IBUMHe
 ---
 title: "module tenant"
 type: note
@@ -16,21 +15,6 @@ superseded_by: lang-link.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
-=======
-# Modulo Tenant
-
-## Informazioni Generali
-<<<<<<< HEAD
-- **Nome**: `laraxot/module_tenant_fila5`
-- **Descrizione**: Modulo per l'architettura multi-tenant che permette a una singola istanza dell'applicazione di servire più tenant
-- **Namespace**: `Modules\Tenant`
-- **Repository**: https://github.com/laraxot/module_tenant_fila5
-=======
-- **Nome**: `laraxot/module_tenant_fila3`
-- **Descrizione**: Modulo per l'architettura multi-tenant che permette a una singola istanza dell'applicazione di servire più tenant
-- **Namespace**: `Modules\Tenant`
-- **Repository**: https://github.com/laraxot/module_tenant_fila3
->>>>>>> 6ed19256f (.)
 
 ## Service Providers
 1. `Modules\Tenant\Providers\TenantServiceProvider`
@@ -147,17 +131,10 @@ composer format        # Formatta il codice
 # Modulo Tenant
 
 ## Informazioni Generali
-<<<<<<< HEAD
 - **Nome**: `laraxot/module_tenant_fila5`
 - **Descrizione**: Modulo per l'architettura multi-tenant che permette a una singola istanza dell'applicazione di servire più tenant
 - **Namespace**: `Modules\Tenant`
 - **Repository**: https://github.com/laraxot/module_tenant_fila5
-=======
-- **Nome**: `laraxot/module_tenant_fila3`
-- **Descrizione**: Modulo per l'architettura multi-tenant che permette a una singola istanza dell'applicazione di servire più tenant
-- **Namespace**: `Modules\Tenant`
-- **Repository**: https://github.com/laraxot/module_tenant_fila3
->>>>>>> 6ed19256f (.)
 
 ## Service Providers
 1. `Modules\Tenant\Providers\TenantServiceProvider`
@@ -274,10 +251,5 @@ Le modifiche vengono tracciate nel repository GitHub.
 ## Collegamenti sulla risoluzione dei conflitti
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
-<<<<<<< HEAD
 - [Linee guida globali per la risoluzione dei conflitti git](../../../../docs/risoluzione_conflitti_git.md)
-=======
-- [Linee guida globali per la risoluzione dei conflitti git](../../../docs/risoluzione_conflitti_git.md)
-
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_TbRsqn

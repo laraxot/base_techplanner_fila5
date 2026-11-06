@@ -115,21 +115,7 @@ Elemento interattivo che:
 
 ## Collegamenti
 - [Documentazione Componenti](./components/README.md)
-<<<<<<< .merge_file_m0U066
-=======
-- [Guida allo Stile](./style/README.md)
-- [Convenzioni Layout](./layout/README.md)
-<<<<<<< HEAD
-- [Documentazione Componenti](./components/readme.md)
->>>>>>> .merge_file_Ay5uha
 - [Guida allo Stile](./style/readme.md)
 - [Convenzioni Layout](./layout/readme.md)
 
 [Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)
-<<<<<<< .merge_file_m0U066
-=======
-=======
-
-[Fonte: sopralerighe.org](https://www.sopralerighe.org/sito-web-glossario-tecnico/)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Ay5uha

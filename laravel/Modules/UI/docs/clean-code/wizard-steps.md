@@ -148,12 +148,4 @@ class DoctorResource extends XotBaseResource
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/layout/wizard)
 - [Best Practices Forms](../forms/best-practices.md)
-<<<<<<< .merge_file_JaxVUD
 - [Clean Code Guidelines](../../../../docs/clean-code.md)
-=======
-<<<<<<< HEAD
-- [Clean Code Guidelines](../../../../docs/clean-code.md)
-=======
-- [Clean Code Guidelines](../../../docs/clean-code.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_tUWIFZ

@@ -6,7 +6,6 @@ return [
     'fields' => [
         'anno' => [
             'label' => 'anno',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -34,8 +33,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Year',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

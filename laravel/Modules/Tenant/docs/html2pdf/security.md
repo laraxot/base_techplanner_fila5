@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -16,13 +15,6 @@ status: draft
 ---
 # Configurazione della Sicurezza
 
-<<<<<<< .merge_file_3EeMys
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/security.md
-=======
-# Configurazione della Sicurezza
-
->>>>>>> .merge_file_Nu95Kb
 A partire dalla versione 5.3, `Html2Pdf` ha introdotto un `Security Service` per controllare l'accesso a risorse esterne (immagini, fogli di stile, etc.) e prevenire vulnerabilità.
 
 **Menu di Navigazione:**
@@ -176,7 +168,3 @@ public function isUriValid(string $uri): bool
     return true;
 }
 ```
-<<<<<<< .merge_file_3EeMys
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Nu95Kb

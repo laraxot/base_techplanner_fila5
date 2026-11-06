@@ -28,7 +28,6 @@ return [
         'finished' => 'Application has been successfully installed.',
         'exit' => 'Click here to exit',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -42,6 +41,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

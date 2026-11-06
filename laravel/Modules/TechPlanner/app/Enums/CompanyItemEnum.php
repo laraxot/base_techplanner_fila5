@@ -31,11 +31,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * - Stato operativo (business_closed)
  * - Settore merceologico (activity)
  */
-<<<<<<< HEAD
 enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
-=======
-enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
->>>>>>> 6ed19256f (.)
 {
     use TransTrait;
 
@@ -82,21 +78,13 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
         $cases = self::cases();
         /** @var array<string, TextInput|Toggle> $result */
         $result = [];
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6ed19256f (.)
         foreach ($cases as $item) {
             $fieldName = $item->value;
             $label = $item->getLabel();
             $icon = $item->getIcon();
             $isRequired = $item === self::COMPANY_NAME;
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6ed19256f (.)
             if ($item === self::BUSINESS_CLOSED) {
                 $result[$fieldName] = Toggle::make($fieldName)
                     ->label($label);
@@ -104,21 +92,13 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
                 $input = TextInput::make($fieldName)
                     ->label($label)
                     ->prefixIcon($icon);
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 6ed19256f (.)
                 if ($isRequired) {
                     $input->required();
                 } else {
                     $input->nullable();
                 }
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 6ed19256f (.)
                 $result[$fieldName] = $input;
             }
         }
@@ -243,8 +223,4 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
             },
         ];
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6ed19256f (.)

@@ -175,14 +175,7 @@ state([
 
 $products = computed(function () {
     return Product::query()
-<<<<<<< .merge_file_HoXf4x
-=======
-        ->when($this->search, fn($query) =>
-<<<<<<< HEAD
->>>>>>> .merge_file_aaWsc3
         ->when($this->search, fn($query) => 
-=======
->>>>>>> 6ed19256f (.)
             $query->where('name', 'like', "%{$this->search}%")
                   ->orWhere('sku', 'like', "%{$this->search}%")
         )
@@ -277,15 +270,7 @@ $save = function () {
     $product->categories()->sync($this->selectedCategories);
 
     session()->flash('message', 'Prodotto salvato con successo.');
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_HoXf4x
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_aaWsc3
     return redirect()->route('products.index');
 };
 ?>
@@ -400,24 +385,9 @@ class ProductTest extends TestCase
 
 - [Laravel Folio Documentation](https://github.com/laravel/folio)
 - [Laravel Volt Documentation](https://livewire.laravel.com/project_docs/volt)
-<<<<<<< HEAD
 - [Filament Documentation](https://filamentphp.com) 
 
 ## Collegamenti tra versioni di product-management.md
 * [product-management.md](laravel/modules/cms/project_docs/product-management.md)
 * [product-management.md](components/product-management.md)
 
-<<<<<<< .merge_file_HoXf4x
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Filament Documentation](https://filamentphp.com)
-
-## Collegamenti tra versioni di product-management.md
-* [product-management.md](laravel/Modules/Cms/project_docs/product-management.md)
-<<<<<<< HEAD
-* [product-management.md](laravel/Modules/Cms/project_docs/components/product-management.md)
-=======
-* [product-management.md](laravel/Modules/Cms/project_docs/components/product-management.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_aaWsc3

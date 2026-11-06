@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -14,10 +13,3 @@ related:
 status: draft
 ---
 
-<<<<<<< .merge_file_ixB9JK
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Q4ShcE

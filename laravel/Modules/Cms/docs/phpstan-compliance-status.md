@@ -12,14 +12,7 @@ status: draft
 
 # PHPStan Level 10 Compliance Status
 
-<<<<<<< .merge_file_qzF01Z
-=======
-**Last Updated**: 2025-12-10
-<<<<<<< HEAD
->>>>>>> .merge_file_ArAKZG
 
-=======
->>>>>>> 6ed19256f (.)
 **Status**: ✅ FULLY COMPLIANT (0 errors)
 
 ## Summary
@@ -43,11 +36,7 @@ The Cms module is now fully compliant with PHPStan Level 10 analysis. All static
 **Problem**: Returning array<mixed, mixed> instead of array<string, mixed>
 **Solution**: Removed incorrect PHPDoc annotation
 **File**: `app/View/Composers/ThemeComposer.php`
-<<<<<<< HEAD
 **Details**: Clean return without misleading PHPDoc, removed duplicate PHPDoc at line 37-38
-=======
-**Details**: Clean return without misleading PHPDoc
->>>>>>> 6ed19256f (.)
 
 ### 4. Factory Method Calls
 **Problem**: Cannot call create() on mixed (factory objects)
@@ -55,7 +44,6 @@ The Cms module is now fully compliant with PHPStan Level 10 analysis. All static
 **Files**:
 - `generate_business_data.php`
 - `populate_database_comprehensive.php`
-<<<<<<< HEAD
 **Details**: Added instanceof checks, method_exists() calls, and @phpstan-ignore-next-line for template covariance issues
 
 ### 5. Test Scripts Type Safety
@@ -71,11 +59,6 @@ The Cms module is now fully compliant with PHPStan Level 10 analysis. All static
 - Improved callable type hints in createRecords method
 
 ### 6. Array Type in Compile Method
-=======
-**Details**: Added instanceof checks and method_exists() calls
-
-### 5. Array Type in Compile Method
->>>>>>> 6ed19256f (.)
 **Problem**: Method should return array<string, mixed> but returns array
 **Solution**: Ensured string keys in result array
 **File**: `app/Models/Traits/HasBlocks.php`
@@ -143,12 +126,4 @@ To maintain PHPStan compliance:
 - [Cms Architecture](cms-architecture.md)
 - [Block System](block-system.md)
 - [Data Population Patterns](data-population.md)
-<<<<<<< .merge_file_qzF01Z
 - [Theme Management](theme-management.md)
-=======
-<<<<<<< HEAD
-- [Theme Management](theme-management.md)
-=======
-- [Theme Management](theme-management.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ArAKZG

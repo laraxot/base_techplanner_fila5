@@ -12,15 +12,9 @@ status: draft
 
 # Implementation of Notification Bulk Action in Client Resource
 
-<<<<<<< HEAD
 **Date**: 18 Dicembre 2025  
 **Status**: ✅ Completed  
 **Module**: TechPlanner → Notify  
-=======
-**Date**: 18 Dicembre 2025
-**Status**: ✅ Completed
-**Module**: TechPlanner → Notify
->>>>>>> 6ed19256f (.)
 **Implementation Type**: Feature Addition
 
 ## Overview
@@ -39,11 +33,7 @@ The implementation leverages existing architecture components:
    - Provides comprehensive error handling and logging
    - Uses proper phone number normalization
 
-<<<<<<< HEAD
 2. **FilamentAction**: `Modules\Notify\Filament\Actions\SendNotificationBulkAction`  
-=======
-2. **FilamentAction**: `Modules\Notify\Filament\Actions\SendNotificationBulkAction`
->>>>>>> 6ed19256f (.)
    - Provides the UI modal with template selection
    - Offers channel selection via checkboxes
    - Handles form validation and user notifications
@@ -103,17 +93,10 @@ This implementation aligns with:
 
 ## Code Quality Verification
 
-<<<<<<< HEAD
 ✅ **PHPStan Level 10**: All files pass static analysis  
 ✅ **Type Safety**: Proper return types and parameter validation  
 ✅ **Architecture Compliance**: Follows XotBase extension rules  
 ✅ **Documentation**: Updated with new implementation details  
-=======
-✅ **PHPStan Level 10**: All files pass static analysis
-✅ **Type Safety**: Proper return types and parameter validation
-✅ **Architecture Compliance**: Follows XotBase extension rules
-✅ **Documentation**: Updated with new implementation details
->>>>>>> 6ed19256f (.)
 
 ## Usage Pattern
 
@@ -163,13 +146,4 @@ After implementation, users can:
 - Enhanced reporting and analytics for sent notifications
 
 ---
-<<<<<<< .merge_file_enUP90
 *Documento conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
-
-<<<<<<< HEAD
-*Documento conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
-*Documento conforme agli standard Laraxot - DRY + KISS + SOLID*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_GR5mkB

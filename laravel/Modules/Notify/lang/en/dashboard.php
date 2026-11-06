@@ -66,21 +66,8 @@ return [
         'success' => 'Operazione completata con successo',
         'error' => 'Si è verificato un errore durante l\'operazione',
         'no_data' => 'Nessun dato disponibile per il periodo selezionato',
-<<<<<<< .merge_file_VEWl51
         'loading' => 'Caricamento dati in corso...'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ]];
-=======
-        'loading' => 'Caricamento dati in corso...',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_XySYCD

@@ -7,7 +7,6 @@ return [
         'list_log_activities' => ['label' => 'list_log_activities', 'icon' => 'list_log_activities', 'tooltip' => 'list_log_activities'],
         'test' => ['label' => 'test', 'icon' => 'test', 'tooltip' => 'test'],
     ],
-<<<<<<< HEAD
     'label' => 'Log Activities Action Test',
     'plural_label' => 'Log Activities Action Test (Plurale)',
     'navigation' => [
@@ -23,6 +22,4 @@ return [
         'created_at' => ['label' => 'Data Creazione', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
         'updated_at' => ['label' => 'Ultima Modifica', 'tooltip' => '', 'helper_text' => '', 'description' => ''],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

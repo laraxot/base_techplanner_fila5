@@ -25,157 +25,68 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificativo univoco del template',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'mailable' => [
             'label' => 'Classe Mailable',
             'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
             'placeholder' => 'es: App\\Mail\\WelcomeEmail',
             'description' => 'mailable',
-<<<<<<< .merge_file_MVgxOF
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'subject' => [
             'label' => 'Oggetto',
             'helper_text' => 'Oggetto dell\'email',
             'placeholder' => 'Inserisci l\'oggetto dell\'email',
             'description' => 'subject',
-<<<<<<< .merge_file_MVgxOF
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'html_template' => [
             'label' => 'Template HTML',
             'helper_text' => 'Contenuto HTML del template email',
             'placeholder' => 'Inserisci il codice HTML',
             'description' => 'html_template',
-<<<<<<< .merge_file_MVgxOF
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'text_template' => [
             'label' => 'Template Testo',
             'helper_text' => 'Versione testuale del template email',
             'placeholder' => 'Inserisci la versione testuale',
             'description' => 'text_template',
-<<<<<<< .merge_file_MVgxOF
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'from_email' => [
             'label' => 'Email mittente',
             'helper_text' => 'Indirizzo email del mittente',
             'placeholder' => 'noreply@example.com',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'from_name' => [
             'label' => 'Nome mittente',
             'helper_text' => 'Nome visualizzato del mittente',
             'placeholder' => 'Nome Azienda',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'variables' => [
             'label' => 'Variabili disponibili',
             'helper_text' => 'Elenco delle variabili che possono essere utilizzate nel template',
             'placeholder' => 'es: {{name}}, {{email}}',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'is_markdown' => [
             'label' => 'Usa Markdown',
             'helper_text' => 'Indica se il template utilizza la sintassi Markdown',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'status' => [
             'label' => 'Stato',
             'helper_text' => 'Stato attuale del template',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'created_at' => [
             'label' => 'Data creazione',
             'helper_text' => 'Data di creazione del template',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'updated_at' => [
             'label' => 'Ultima modifica',
             'helper_text' => 'Data dell\'ultima modifica del template',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => ''],
         'toggleColumns' => [
@@ -207,75 +118,25 @@ return [
             'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_MVgxOF
             'description' => ''],
-=======
-            'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
-<<<<<<< .merge_file_MVgxOF
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'name' => [
             'description' => 'Nome del template',
             'helper_text' => 'Nome descrittivo per identificare il template',
             'placeholder' => 'Es: Benvenuto, Conferma ordine, Reset password',
             'label' => 'Nome Template',
-<<<<<<< .merge_file_MVgxOF
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_vMU4Th
         'params' => [
             'label' => 'Parametri',
             'helper_text' => 'Inserisci i parametri separati da virgola che possono essere utilizzati nel template',
             'placeholder' => 'name, email, date, company',
             'description' => 'Parametri disponibili per il template email',
-<<<<<<< .merge_file_MVgxOF
             'tooltip' => '']],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_vMU4Th
     'actions' => [
         'preview' => [
             'label' => 'Anteprima',
@@ -318,17 +179,6 @@ return [
         'bounced' => 'Respinta',
         'spam' => 'Segnalata come spam'],
     'model' => [
-<<<<<<< .merge_file_MVgxOF
         'label' => 'mail template.model'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-        'label' => 'mail template.model',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_vMU4Th

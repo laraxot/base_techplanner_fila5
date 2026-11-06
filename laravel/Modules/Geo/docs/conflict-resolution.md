@@ -12,14 +12,7 @@ status: draft
 
 # Risoluzione Conflitti Git - Modulo Geo
 
-<<<<<<< .merge_file_3VeXvm
-=======
-## Data: 2025-01-06
-<<<<<<< HEAD
->>>>>>> .merge_file_Qq79Pd
 ## Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## File Corretti
 
@@ -113,7 +106,6 @@ use function Safe\json_decode;
 
 ## Verifiche Post-Correzione
 
-<<<<<<< HEAD
 
 ### 2. Validazione PHPStan
 ```bash
@@ -173,14 +165,4 @@ php artisan lang:check
 ---
 **Ultimo aggiornamento**: [DATE]
 **Autore**: Sistema di correzione automatica
-<<<<<<< .merge_file_3VeXvm
 **Stato**: ✅ Completato
-=======
-### 1. Controllo Conflitti
-```bash
-**Stato**: ✅ Completato
-=======
-### 1. Controllo Conflitti
-```bash
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Qq79Pd

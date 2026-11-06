@@ -44,13 +44,7 @@ return [
         'icon' => 'heroicon-o-document-text',
         'color' => 'text-gray-600',
         'hex_color' => '#6b7280',
-<<<<<<< .merge_file_cjJo1v
         'description' => 'Note di contatto'],
-=======
-        'description' => 'Note di contatto',
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_xtzbuA
     'label' => 'Contact Type Enum',
     'plural_label' => 'Contact Type Enum (Plurale)',
     'navigation' => [
@@ -84,13 +78,4 @@ return [
         'edit' => [
             'label' => 'Modifica Contact Type Enum'],
         'delete' => [
-<<<<<<< .merge_file_cjJo1v
             'label' => 'Elimina Contact Type Enum']]];
-=======
-            'label' => 'Elimina Contact Type Enum',
-        ],
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_xtzbuA

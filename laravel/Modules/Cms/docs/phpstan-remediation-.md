@@ -40,11 +40,7 @@ status: draft
 
 ## Strategia operativa
 
-<<<<<<< HEAD
 1. **Censire utilizzi reali** degli script legacy (grep in CronJob/bashes). Se obsoleti → archiviarli in `docs/archived/legacy-scripts.md`, altrimenti refactor.
-=======
-1. **Censire utilizzi reali** degli script legacy (grep in CronJob/bashes). Se obsoleti → archiviarli in `docs/archive/legacy-scripts.md`, altrimenti refactor.
->>>>>>> 6ed19256f (.)
 2. **Creare Actions dedicate**:
 
    ```php
@@ -65,12 +61,4 @@ status: draft
 
 - Introdurre un documento unico “CMS Data Generators” che descriva come generare contenuti fake senza script duplicati.
 - Standardizzare l’uso delle `Data` (es. `FooterData`, `HeadernavData`) come fonte unica per i composer, evitando logica duplicata.
-<<<<<<< .merge_file_6NJzVS
 - Automatizzare, via bashscript quality, un check che impedisca script PHP fuori da `app/` senza namespace/autoload nel modulo CMS.
-=======
-<<<<<<< HEAD
-- Automatizzare, via bashscript quality, un check che impedisca script PHP fuori da `app/` senza namespace/autoload nel modulo CMS.
-=======
-- Automatizzare, via bashscript quality, un check che impedisca script PHP fuori da `app/` senza namespace/autoload nel modulo CMS.
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_lcVRKI

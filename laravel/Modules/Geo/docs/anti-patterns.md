@@ -61,16 +61,9 @@ if (app(SafeObjectCastAction::class)->hasProperty($object, 'value')) {
 
 ### Collegamenti
 
-<<<<<<< .merge_file_AEXBC3
 - [Documentazione Azioni Cast](../../Xot/docs/cast-actions.md)
 - [SafeEloquentCastAction](../../Xot/app/Actions/Cast/SafeEloquentCastAction.php)
 - [SafeObjectCastAction](../../Xot/app/Actions/Cast/SafeObjectCastAction.php)
-=======
-- [Documentazione Azioni Cast](../../laravel/Modules/Xot/docs/cast-actions.md)
-- [Documentazione Azioni Cast](../../laravel/modules/xot/docs/cast-actions.md)
-- [SafeEloquentCastAction](../../laravel/Modules/Xot/app/Actions/Cast/SafeEloquentCastAction.php)
-- [SafeObjectCastAction](../../laravel/Modules/Xot/app/Actions/Cast/SafeObjectCastAction.php)
->>>>>>> .merge_file_2KORBj
 
 ## 2. Estensione Diretta di Classi Filament
 
@@ -273,10 +266,5 @@ php artisan test
 
 - [Regole Cursor](../../../../.cursor/rules)
 - [Regole Windsurf](../../.windsurf/rules)
-<<<<<<< .merge_file_AEXBC3
 - [Documentazione Moduli](../..)
 - [PHPStan Configuration](../../../phpstan.neon)
-=======
-- [Documentazione Moduli](../../laravel/Modules/)
-- [PHPStan Configuration](../../laravel/phpstan.neon)
->>>>>>> .merge_file_2KORBj

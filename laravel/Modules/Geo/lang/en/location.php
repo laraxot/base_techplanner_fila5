@@ -15,7 +15,6 @@ return [
         'icon' => 'ui-geo-location',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Name',
             'tooltip' => '',
@@ -28,10 +27,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Name',
-        'address' => 'Address',
->>>>>>> 6ed19256f (.)
         'city' => [
             'label' => 'City',
             'placeholder' => 'Select a city',
@@ -40,7 +35,6 @@ return [
             'description' => 'City of the address',
             'icon' => 'heroicon-o-building-office',
             'color' => 'primary',
-<<<<<<< HEAD
             'helper_text' => '',
         ],
         'province' => [
@@ -85,16 +79,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        ],
-        'province' => 'Province',
-        'postal_code' => 'Postal Code',
-        'country' => 'Country',
-        'latitude' => 'Latitude',
-        'longitude' => 'Longitude',
-        'type' => 'Type',
-        'status' => 'Status',
->>>>>>> 6ed19256f (.)
     ],
     'types' => [
         'business' => 'Business',

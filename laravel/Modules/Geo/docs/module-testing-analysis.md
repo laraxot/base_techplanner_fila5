@@ -363,7 +363,6 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 ## 📚 Documentazione e Riferimenti
 
 ### File di Analisi Moduli
-<<<<<<< HEAD
 - [<nome progetto>](../laravel/modules/<nome progetto>/docs/module-analysis-complete.md)
 - [<nome modulo>](../laravel/modules/<nome modulo>/docs/module-analysis-complete.md)
 - [<nome progetto>](../laravel/modules/<nome progetto>/docs/module-analysis-complete.md)
@@ -372,7 +371,6 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 - [Lang](../laravel/modules/lang/docs/module-analysis-complete.md)
 - [Gdpr](../laravel/modules/gdpr/docs/module-analysis-complete.md)
 - [Tenant](../laravel/modules/tenant/docs/module-analysis-complete.md)
-<<<<<<< .merge_file_Rxhrq9
 - [Xot](../../Xot/docs/module-analysis-complete.md)
 - [User](../../User/docs/module-analysis-complete.md)
 - [UI](../../UI/docs/module-analysis-complete.md)
@@ -382,42 +380,6 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 
 ### Documentazione Root
 - [README Principale](../README.md)
-=======
-- [Xot](../laravel/modules/xot/docs/module-analysis-complete.md)
-- [User](../laravel/modules/user/docs/module-analysis-complete.md)
-- [UI](../laravel/modules/ui/docs/module-analysis-complete.md)
-- [Geo](../laravel/modules/geo/docs/module-analysis-complete.md)
-- [Cms](../laravel/modules/cms/docs/module-analysis-complete.md)
-- [Notify](../laravel/modules/notify/docs/module-analysis-complete.md)
-
-### Documentazione Root
-- [README Principale](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [<nome progetto>](../laravel/Modules/<nome progetto>/docs/module-analysis-complete.md)
-- [<nome modulo>](../laravel/Modules/<nome modulo>/docs/module-analysis-complete.md)
-- [<nome progetto>](../laravel/Modules/<nome progetto>/docs/module-analysis-complete.md)
-- [<nome progetto>](../laravel/Modules/<nome progetto>/docs/module-analysis-complete.md)
-- [Media](../laravel/Modules/Media/docs/module-analysis-complete.md)
-- [Lang](../laravel/Modules/Lang/docs/module-analysis-complete.md)
-- [Gdpr](../laravel/Modules/Gdpr/docs/module-analysis-complete.md)
-- [Tenant](../laravel/Modules/Tenant/docs/module-analysis-complete.md)
-- [Xot](../laravel/Modules/Xot/docs/module-analysis-complete.md)
-- [User](../laravel/Modules/User/docs/module-analysis-complete.md)
-- [UI](../laravel/Modules/UI/docs/module-analysis-complete.md)
-- [Geo](../laravel/Modules/Geo/docs/module-analysis-complete.md)
-- [Cms](../laravel/Modules/Cms/docs/module-analysis-complete.md)
-- [Notify](../laravel/Modules/Notify/docs/module-analysis-complete.md)
-
-### Documentazione Root
-- [README Principale](../README.md)
-- [Analisi Testing](../docs/module-testing-analysis.md)
-
----
-
-**Ultimo aggiornamento**: Dicembre 2024
-<<<<<<< HEAD
->>>>>>> .merge_file_QVCP3h
 - [Analisi Testing](../../docs/module-testing-analysis.md)
 
 ---
@@ -425,12 +387,3 @@ Questo documento fornisce un'analisi completa dello stato attuale di factory, se
 **Stato**: 100% moduli completati (14/14) ✅
 **Copertura Media**: 85%
 **Prossimo obiettivo**: Completamento factories e test unitari
-<<<<<<< .merge_file_Rxhrq9
-=======
-=======
-**Versione**: 2.1
-**Stato**: 100% moduli completati (14/14) ✅
-**Copertura Media**: 85%
-**Prossimo obiettivo**: Completamento factories e test unitari
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_QVCP3h

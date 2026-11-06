@@ -12,14 +12,7 @@ status: draft
 
 # PHP Insights Report (CMS)
 
-<<<<<<< .merge_file_xTXPql
-=======
-## sintesi esecuzione 2025-11-12
-<<<<<<< HEAD
->>>>>>> .merge_file_ezqFDX
 ## sintesi esecuzione [DATE]
-=======
->>>>>>> 6ed19256f (.)
 - Comando: `./vendor/bin/phpinsights analyse Modules/Cms --config-path=phpinsights.php --composer=laravel/composer.lock --no-interaction`
 - Score ottenuti: `Code 83.7% · Complexity 97.2% · Architecture 76.5% · Style 84.3%`
 - Blocco principale: **Style score < 90%** dovuto a conflitti irrisolti e violazioni PSR / naming.
@@ -42,12 +35,4 @@ status: draft
 ## prossimi passi
 - Integrare le correzioni sopra e rieseguire PHP Insights. Obiettivo: Style ≥ 90%, Architecture ≥ 85%.
 - Aggiornare questa nota e `quality-tooling.md` dopo ogni passaggio per tracciare lo stato.
-<<<<<<< .merge_file_xTXPql
 - Collegare i fix ai relativi documenti tecnici (es. `./naming-conventions.md`, `./filament-integration.md`).
-=======
-<<<<<<< HEAD
-- Collegare i fix ai relativi documenti tecnici (es. `./naming-conventions.md`, `./filament-integration.md`).
-=======
-- Collegare i fix ai relativi documenti tecnici (es. `./naming-conventions.md`, `./filament-integration.md`).
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ezqFDX

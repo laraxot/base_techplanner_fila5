@@ -52,7 +52,6 @@ return [
         'event_updated' => 'Evento aggiornato con successo',
         'event_deleted' => 'Evento eliminato con successo',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -66,6 +65,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

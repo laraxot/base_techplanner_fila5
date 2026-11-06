@@ -198,7 +198,6 @@ return [
         'phone_code' => 'Prefisso telefonico',
     ],
     'filter_priorities' => [
-<<<<<<< HEAD
         1 => 'Molto bassa',
         2 => 'Bassa',
         3 => 'Media',
@@ -228,12 +227,5 @@ return [
         'delete' => [
             'label' => 'Elimina Filters',
         ],
-=======
-        '1' => 'Molto bassa',
-        '2' => 'Bassa',
-        '3' => 'Media',
-        '4' => 'Alta',
-        '5' => 'Molto alta',
->>>>>>> 6ed19256f (.)
     ],
 ];

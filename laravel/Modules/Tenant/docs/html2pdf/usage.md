@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -16,13 +15,6 @@ status: draft
 ---
 # Utilizzo Base e Layout
 
-<<<<<<< .merge_file_Czy27n
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/usage.md
-=======
-# Utilizzo Base e Layout
-
->>>>>>> .merge_file_zYFVMB
 Questa sezione descrive l'utilizzo di base della libreria, come istanziare la classe `Html2Pdf` e come gestire il layout delle pagine con i tag speciali.
 
 **Menu di Navigazione:**
@@ -142,7 +134,3 @@ Il contenuto all'interno di questo tag non verrà spezzato tra due pagine.
     </table>
 </nobreak>
 ```
-<<<<<<< .merge_file_Czy27n
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_zYFVMB

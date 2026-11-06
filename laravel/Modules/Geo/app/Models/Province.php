@@ -61,7 +61,6 @@ class Province extends BaseModel
             return [];
         }
 
-<<<<<<< .merge_file_P4X70S
         $items = File::json($path);
         if (! is_array($items)) {
             return [];
@@ -108,10 +107,6 @@ class Province extends BaseModel
         );
 
         return $rows;
-=======
-        /* @var array<int, array<string, mixed>> */
-        return $rows->toArray();
->>>>>>> .merge_file_pJOpDy
     }
 
     /**

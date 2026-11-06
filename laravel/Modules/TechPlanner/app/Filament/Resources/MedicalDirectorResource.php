@@ -18,46 +18,7 @@ class MedicalDirectorResource extends XotBaseResource
 {
     protected static ?string $model = MedicalDirector::class;
 
-<<<<<<< .merge_file_FSwAGm
    
-=======
-    #[Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'name' => TextInput::make('name')->required()->maxLength(255),
-            'license_number' => TextInput::make('license_number')->required()->maxLength(255),
-            'specialization' => TextInput::make('specialization')->required()->maxLength(255),
-            'email' => TextInput::make('email')
-                ->email()
-                ->required()
-                ->maxLength(255),
-            'phone' => TextInput::make('phone')
-                ->tel()
-                ->required()
-                ->maxLength(255),
-            'license_expiry' => DatePicker::make('license_expiry')->required(),
-            'notes' => Textarea::make('notes')->maxLength(65535)->columnSpanFull(),
-        ];
-    }
-
-    #[Override]
-    public static function getRelations(): array
-    {
-        return [];
-    }
-
-    #[Override]
-    public static function getPages(): array
-    {
-        return [
-            'index' => ListMedicalDirectors::route('/'),
-            'create' => CreateMedicalDirector::route('/create'),
-            'edit' => EditMedicalDirector::route('/{record}/edit'),
-        ];
-    }
-<<<<<<< HEAD
->>>>>>> .merge_file_DxcUgD
 }
 =======
 }

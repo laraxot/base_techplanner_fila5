@@ -78,14 +78,7 @@ Builder::make('content_blocks')
     ->blocks([
         Builder\Block::make('hero')
             ->schema([/* campi specifici */]),
-<<<<<<< .merge_file_QBSOG7
-=======
-        Builder\Block::make('feature_sections')
-<<<<<<< HEAD
->>>>>>> .merge_file_Jf18HL
         Builder\Block::make('feature_sections')  
-=======
->>>>>>> 6ed19256f (.)
             ->schema([/* campi specifici */]),
         // Altri blocchi...
     ])
@@ -173,11 +166,3 @@ Builder::make('content_blocks')
 - [wiki/concepts/headernavblock-filament-builder.md](./wiki/concepts/headernavblock-filament-builder.md)
 - [safe.md](./safe.md)
 
-<<<<<<< .merge_file_QBSOG7
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Jf18HL

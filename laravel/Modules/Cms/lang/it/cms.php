@@ -94,7 +94,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Cms',
     'plural_label' => 'Cms (Plurale)',
     'navigation' => [
@@ -139,6 +138,4 @@ return [
             'label' => 'Elimina Cms',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

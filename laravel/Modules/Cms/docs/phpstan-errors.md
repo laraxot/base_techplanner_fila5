@@ -12,14 +12,7 @@ status: draft
 
 # PHPStan Errors - Cms Module
 
-<<<<<<< .merge_file_DRm4Fe
-=======
-**Date**: 2025-12-16
-<<<<<<< HEAD
->>>>>>> .merge_file_S3UpuQ
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **PHPStan Level**: 10
 **Total Errors in Module**: ~15
 
@@ -347,22 +340,11 @@ Same as Error 1 - correct the import and add proper type hint.
 **Priority**: 🔥 **HIGH** - Core CMS functionality affected
 **Owner**: Cms Module Team
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 ---
 
 ## Related Documentation
 
 - [Spatie Laravel Data Documentation](https://spatie.be/docs/laravel-data)
 - [DataCollection Usage](https://spatie.be/docs/laravel-data/v3/as-a-data-transfer-object/collections)
-<<<<<<< .merge_file_DRm4Fe
 - [UserContract Interface](../../Xot/Contracts/UserContract.php)
-=======
-<<<<<<< HEAD
-- [UserContract Interface](../../Xot/Contracts/UserContract.php)
-=======
-- [UserContract Interface](../../Xot/Contracts/UserContract.php)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_S3UpuQ

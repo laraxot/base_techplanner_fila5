@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_CvWEUv
 ---
 title: "links"
 type: note
@@ -11,9 +10,6 @@ discussions: []
 status: draft
 ---
 
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_CwniUv
 //---- making documentation
 
 https://github.com/42coders/document-templates
@@ -65,15 +61,8 @@ https://laravel-bootstrap-components.com/themes/liara/features
 
 
 
-<<<<<<< .merge_file_CvWEUv
-=======
-=======
->>>>>>> 6ed19256f (.)
-# Collegamenti Modulo Cms
->>>>>>> .merge_file_CwniUv
 
 
-<<<<<<< .merge_file_CvWEUv
 ## Contenuto originale (txt)
 
 ---
@@ -83,22 +72,3 @@ canonical: ../../../Themes/docs/shared-components/links-Modules.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/links-Modules.md
-=======
-## Collegamenti in Entrata
-- [Modulo UI](../UI/docs/LINKS.md)
-- [Modulo Xot](../Xot/docs/LINKS.md)
-- [Modulo Lang](../Lang/docs/LINKS.md)
-- [Modulo Media](../Media/docs/LINKS.md)
-- [Modulo Patient](../Patient/docs/LINKS.md)
-- [Modulo Dental](../Dental/docs/LINKS.md)
-## Collegamenti tra versioni di LINKS.md
-* [LINKS.md](laravel/Modules/Xot/docs/LINKS.md)
-* [LINKS.md](laravel/Modules/User/docs/LINKS.md)
-* [LINKS.md](laravel/Modules/UI/docs/LINKS.md)
-* [LINKS.md](laravel/Modules/Cms/docs/LINKS.md)
-<<<<<<< HEAD
-* [LINKS.md](laravel/Themes/One/docs/LINKS.md)
-=======
-* [LINKS.md](laravel/Themes/One/docs/LINKS.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_CwniUv

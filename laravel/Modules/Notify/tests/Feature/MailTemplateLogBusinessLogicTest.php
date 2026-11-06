@@ -2,14 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_5dMO2Z
-=======
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ed19256f (.)
-use Illuminate\Database\Eloquent\Relations\MorphTo;
->>>>>>> .merge_file_rco3Pl
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Models\MailTemplateLog;
 use PHPUnit\Framework\Assert;

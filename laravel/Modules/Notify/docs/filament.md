@@ -24,19 +24,11 @@ status: draft
                 {{ $status->label }}
             </x-filament::badge>
         </div>
-<<<<<<< HEAD
         
         <div class="prose max-w-none">
             {{ $content }}
         </div>
         
-=======
-
-        <div class="prose max-w-none">
-            {{ $content }}
-        </div>
-
->>>>>>> 6ed19256f (.)
         <div class="flex items-center justify-between text-sm text-gray-500">
             <span>{{ $created_at->diffForHumans() }}</span>
             <div class="flex items-center space-x-2">
@@ -65,11 +57,7 @@ status: draft
                 :notification="$notification"
             />
         @endforeach
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         <div class="mt-4">
             {{ $notifications->links() }}
         </div>
@@ -91,11 +79,7 @@ status: draft
                 required
             />
         </x-filament::input.wrapper>
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         <x-filament::input.wrapper>
             <x-filament::input.label for="content">
                 {{ __('Contenuto') }}
@@ -107,11 +91,7 @@ status: draft
                 required
             />
         </x-filament::input.wrapper>
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         <div class="flex justify-end">
             <x-filament::button type="submit">
                 {{ __('Salva') }}
@@ -306,21 +286,13 @@ final class AnalyticsRelationManager extends RelationManager
                 :value="$sent"
                 icon="heroicon-o-paper-airplane"
             />
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 6ed19256f (.)
             <x-filament::stats-card
                 :label="__('Aperture')"
                 :value="$open_rate . '%'"
                 icon="heroicon-o-eye"
             />
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 6ed19256f (.)
             <x-filament::stats-card
                 :label="__('Click')"
                 :value="$click_rate . '%'"
@@ -342,11 +314,7 @@ final class EmailActivityWidget extends Widget
     protected function getViewData(): array
     {
         $analytics = app(AnalyticsService::class);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return [
             'chart' => [
                 'type' => 'line',
@@ -374,21 +342,13 @@ final class EmailActivityWidget extends Widget
                     :value="$sent"
                     icon="heroicon-o-paper-airplane"
                 />
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 6ed19256f (.)
                 <x-filament::stats-card
                     :label="__('Aperture')"
                     :value="$open_rate . '%'"
                     icon="heroicon-o-eye"
                 />
-<<<<<<< HEAD
                 
-=======
-
->>>>>>> 6ed19256f (.)
                 <x-filament::stats-card
                     :label="__('Click')"
                     :value="$click_rate . '%'"

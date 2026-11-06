@@ -13,13 +13,6 @@ status: draft
 # Analisi Repository: filament-spatie-laravel-database-mail-templates
 
 **Data**: 2026-01-09  
-<<<<<<< .merge_file_QDpPlV
-=======
-<<<<<<< HEAD
-**Data**: 2026-01-09  
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JS2RVZ
 **Repository**: https://github.com/olivierguerriat/filament-spatie-laravel-database-mail-templates  
 **Modulo**: Notify  
 **Status**: 📝 **ANALISI COMPLETATA**
@@ -486,10 +479,3 @@ public static function getHeaderActions(): array
 **Status**: 📝 **ANALISI COMPLETATA - PRONTA PER IMPLEMENTAZIONE**
 
 **Ultimo aggiornamento**: 2026-01-09
-<<<<<<< .merge_file_QDpPlV
-=======
-<<<<<<< HEAD
-**Ultimo aggiornamento**: 2026-01-09
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JS2RVZ

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,13 +14,6 @@ status: draft
 ---
 # Regole di Naming per File
 
-<<<<<<< .merge_file_ikxdk7
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/file-naming-rules.md
-=======
-# Regole di Naming per File
-
->>>>>>> .merge_file_Mcff9E
 ## 🎯 Regola Fondamentale: NO Duplicati Case-Insensitive
 
 ### Problema
@@ -140,7 +132,3 @@ Se entrambi i file contengono contenuto diverso:
 - Laravel Naming Conventions
 - Filament Best Practices
 - Git Case Sensitivity Issues
-<<<<<<< .merge_file_ikxdk7
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Mcff9E

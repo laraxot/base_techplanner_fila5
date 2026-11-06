@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -18,11 +17,3 @@ return array (
   array (
   ),
 );
-=======
-return [
-    'navigation' => [
-        'label' => 'Benachrichtigungsmenü',
-        'group' => 'System',
-    ],
-];
->>>>>>> 6ed19256f (.)

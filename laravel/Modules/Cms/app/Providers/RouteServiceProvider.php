@@ -6,16 +6,9 @@ namespace Modules\Cms\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Xot\Providers\XotBaseRouteServiceProvider;
 
-=======
-use Modules\Xot\Providers\XotBaseRouteServiceProvider;
-
-// public function boot(\Illuminate\Routing\Router $router)
-
->>>>>>> 6ed19256f (.)
 class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
     public string $name = 'Cms';
@@ -88,7 +81,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
     public function registerRoutePattern(Router $router): void
     {
         // ---------- Lang Route Pattern
-<<<<<<< HEAD
         try {
             $langKeys = LaravelLocalization::getSupportedLanguagesKeys();
         } catch (\Exception $e) {
@@ -96,19 +88,6 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
         }
 
         $lang_pattern = collect($langKeys)->implode('|');
-=======
-        // ✅ Controllo sicuro della configurazione laravellocalization
-        $langs = config()->has('laravellocalization.supportedLocales')
-            ? config('laravellocalization.supportedLocales')
-            : ['it' => 'it', 'en' => 'en'];
-
-        if (! \is_array($langs)) {
-            // throw new \Exception('[.__LINE__.]['.class_basename(__CLASS__).']');
-            $langs = ['it' => 'it', 'en' => 'en'];
-        }
-
-        $lang_pattern = collect(array_keys($langs))->implode('|');
->>>>>>> 6ed19256f (.)
         $lang_pattern = '/|'.$lang_pattern.'|/i';
 
         $router->pattern('lang', $lang_pattern);

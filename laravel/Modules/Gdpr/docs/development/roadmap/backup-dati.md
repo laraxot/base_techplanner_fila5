@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "backup dati"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_pk7u8F
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JRvCo2

@@ -285,45 +285,19 @@ protected function getInfolistSchema()
 
 ## Collegamenti e Riferimenti
 
-<<<<<<< HEAD
 - [Filament ViewRecord Errors (Root Docs)](../../../docs/filament-view-record-errors.md)
 - [Testing Analysis Documentation](../../../docs/testing-analysis.md)
-<<<<<<< .merge_file_tI6PCS
 - [XotBaseViewRecord Source Code](../../Xot/app/Filament/Resources/Pages/XotBaseViewRecord.php)
 - [Location Model](../app/Models/Location.php)
 - [LocationResource](../app/Filament/Resources/LocationResource.php)
-=======
-=======
-- [Filament ViewRecord Errors (Root Docs)](../../docs/filament-view-record-errors.md)
-- [Testing Analysis Documentation](../../docs/testing-analysis.md)
->>>>>>> 6ed19256f (.)
-- [XotBaseViewRecord Source Code](../../../Xot/app/Filament/Resources/Pages/XotBaseViewRecord.php)
-- [Location Model](../../app/Models/Location.php)
-- [LocationResource](../../app/Filament/Resources/LocationResource.php)
->>>>>>> .merge_file_sOTQYi
 
 ## Note di Manutenzione
 
-<<<<<<< HEAD
 - **Data Creazione**: [DATE]
 - **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
 - **Autore**: AI Assistant
 - **Stato**: Completato e verificato
 - **Ultimo Aggiornamento**: [DATE]
-<<<<<<< .merge_file_tI6PCS
 
 ---
 **IMPORTANTE**: Ricorda sempre di implementare il metodo `getInfolistSchema()` quando si estende `XotBaseViewRecord`. Questo errore è comune e può essere facilmente evitato seguendo i pattern documentati sopra.
-=======
-=======
->>>>>>> 6ed19256f (.)
-- **Data Creazione**: 2025-01-06
-- **Motivazione**: Documentazione della risoluzione dell'errore FatalError in ViewLocation
-- **Autore**: AI Assistant
-- **Stato**: Completato e verificato
-- **Ultimo Aggiornamento**: 2025-01-06
-
----
-
-**IMPORTANTE**: Ricorda sempre di implementare il metodo `getInfolistSchema()` quando si estende `XotBaseViewRecord`. Questo errore è comune e può essere facilmente evitato seguendo i pattern documentati sopra.
->>>>>>> .merge_file_sOTQYi

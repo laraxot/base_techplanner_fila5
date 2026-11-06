@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_PuUg0T
 ---
 title: "attachments usage"
 type: note
@@ -10,128 +9,6 @@ issues: []
 discussions: []
 status: draft
 ---
-=======
-# Utilizzo Corretto degli Allegati nelle Email Spatie
-
-Questa documentazione descrive come utilizzare correttamente il metodo `addAttachments()` nella classe `SpatieEmail` del modulo Notify.
-
-## Formato degli Allegati
-
-Il metodo `addAttachments()` accetta un array di array, dove ogni array interno rappresenta un singolo allegato con le relative proprietà.
-
-### Formato Corretto
-
-```php
-// Formato corretto - un array di array di allegati
-$attachments = [
-    [
-<<<<<<< HEAD
-        'path' => 'public_html/images/avatars/default-3.svg',
-        'path' => 'public_html/images/avatars/default-3.svg',
-        'path' => 'public_html/images/avatars/default-3.svg',
-=======
-        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default-3.svg',
-        'path' => '/var/www/html/saluteora/public_html/images/avatars/default-3.svg',
-        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default-3.svg',
->>>>>>> 6ed19256f (.)
-        'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
-        'mime' => 'image/svg+xml',  // Opzionale: MIME type del file
-    ],
-    // Eventualmente altri allegati...
-    [
-<<<<<<< HEAD
-        'path' => 'public_html/documents/terms.pdf',
-        'path' => 'public_html/documents/terms.pdf',
-        'path' => 'public_html/documents/terms.pdf',
-=======
-        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/documents/terms.pdf',
-        'path' => '/var/www/html/saluteora/public_html/documents/terms.pdf',
-        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/documents/terms.pdf',
->>>>>>> 6ed19256f (.)
-        'as' => 'termini.pdf',
-        'mime' => 'application/pdf',
-    ],
-];
-```
-
-## Implementazione nella Classe SpatieEmail
-
-La classe `SpatieEmail` utilizza la classe `Illuminate\Mail\Mailables\Attachment` di Laravel per gestire gli allegati in modo robusto:
-
-```php
-/**
- * Add attachments to the email
- *
- * @param array<int, array<string, string>> $attachments Array of attachment data
- * @return self
- */
-public function addAttachments(array $attachments): self
-{
-    $attachmentObjects = [];
-
-    foreach ($attachments as $item) {
-        if (!isset($item['path']) || !file_exists($item['path'])) {
-            continue;
-        }
-
-        $attachment = Attachment::fromPath($item['path']);
-
-        if (isset($item['as'])) {
-            $attachment = $attachment->as($item['as']);
-        }
-
-        if (isset($item['mime'])) {
-            $attachment = $attachment->withMime($item['mime']);
-        }
-
-        $attachmentObjects[] = $attachment;
-    }
-
-    $this->customAttachments = $attachmentObjects;
-
-    return $this;
-}
-
-/**
- * Get the attachments for the message.
- *
- * @return array<int, \Illuminate\Mail\Mailables\Attachment>
- */
-public function attachments(): array
-{
-    return $this->customAttachments;
-}
-```
-
-## Esempio di Utilizzo Completo
-
-```php
-// Creazione di un array di allegati
-$attachments = [
-    [
-        'path' => 'modules/notify/resources/assets/images/logo.png',
-        'as' => 'logo.png',
-        'mime' => 'image/png',
-    ],
-];
-
-// Invio email con allegati
-Mail::to($recipient)
-    ->locale('it')
-    ->send((new SpatieEmail($user, 'email_template_slug'))
-    ->addAttachments($attachments));
-```
-
-## Opzioni Disponibili per gli Allegati
-
-Ogni allegato deve contenere i seguenti parametri:
-
-- `path`: Percorso al file da allegare (può essere percorso relativo o assoluto)
-- `as`: Nome del file che apparirà nell'email
-- `mime`: Tipo MIME del file (es. 'image/png', 'application/pdf', ecc.)
-
-## Note Aggiuntive
->>>>>>> .merge_file_FdxKF0
 
 # Utilizzo Corretto degli Allegati nelle Email Spatie
 
@@ -151,32 +28,14 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 // Formato corretto - allegato da file su filesystem
 $attachments = [
     [
-<<<<<<< .merge_file_PuUg0T
         // public_path() punta a public_html/ (vedi laravel/app/Application.php): mai percorsi assoluti di un'installazione
         'path' => public_path('images/avatars/default-3.svg'),
-=======
-<<<<<<< HEAD
-        'path' => 'public_html/images/avatars/default-3.svg',
-'path' => '/var/www/html/Quaeris/public_html/images/avatars/default-3.svg',
-=======
-        'path' => '/var/www/html/<directory progetto>/public_html/images/avatars/default-3.svg',
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_FdxKF0
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
         'mime' => 'image/svg+xml',  // Opzionale: MIME type del file
     ],
     // Eventualmente altri allegati...
     [
-<<<<<<< .merge_file_PuUg0T
         'path' => public_path('documents/terms.pdf'),
-=======
-<<<<<<< HEAD
-        'path' => 'public_html/documents/terms.pdf',
-'path' => '/var/www/html/Quaeris/public_html/documents/terms.pdf',
-=======
-        'path' => '/var/www/html/<directory progetto>/public_html/documents/terms.pdf',
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_FdxKF0
         'as' => 'termini.pdf',
         'mime' => 'application/pdf',
     ],
@@ -219,62 +78,27 @@ La classe `SpatieEmail` utilizza la classe `Illuminate\Mail\Mailables\Attachment
 public function addAttachments(array $attachments): self
 {
     $attachmentObjects = [];
-<<<<<<< HEAD
     
     foreach ($attachments as $item) {
         $attachment = null;
         
-<<<<<<< .merge_file_PuUg0T
-=======
-=======
->>>>>>> 6ed19256f (.)
-
-    foreach ($attachments as $item) {
-        $attachment = null;
-
->>>>>>> .merge_file_FdxKF0
         // Priorità 1: Se esiste 'path' e il file esiste, usa getAttachmentFromPath()
         if (isset($item['path']) && file_exists($item['path'])) {
             $attachment = $this->getAttachmentFromPath($item);
         }
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_PuUg0T
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_FdxKF0
         // Priorità 2: Se non c'è path o file non esiste, prova con 'data' (contenuto binario)
         if ($attachment === null && isset($item['data'])) {
             $attachment = $this->getAttachmentFromData($item);
         }
-<<<<<<< HEAD
         
-<<<<<<< .merge_file_PuUg0T
-=======
-        
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_FdxKF0
         if ($attachment) {
             $attachmentObjects[] = $attachment;
         }
     }
-<<<<<<< .merge_file_PuUg0T
-=======
-
-    $this->customAttachments = $attachmentObjects;
-
-<<<<<<< HEAD
->>>>>>> .merge_file_FdxKF0
     
     $this->customAttachments = $attachmentObjects;
     
-=======
->>>>>>> 6ed19256f (.)
     return $this;
 }
 
@@ -397,14 +221,7 @@ Ogni allegato può utilizzare **due formati** a seconda della fonte:
 
 ### Esempio: Email con PDF di Scheda Valutazione
 
-<<<<<<< .merge_file_PuUg0T
-=======
-Vedi [Email PDF Attachments](../../../Ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
-<<<<<<< HEAD
->>>>>>> .merge_file_FdxKF0
 Vedi [Email PDF Attachments](../../../ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
-=======
->>>>>>> 6ed19256f (.)
 
 ## Esempi Completi
 
@@ -463,15 +280,7 @@ use Modules\Xot\Actions\Pdf\GetPdfContentByRecordAction;
 
 foreach ($records as $record) {
     $pdfContent = app(GetPdfContentByRecordAction::class)->execute($record);
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_PuUg0T
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_FdxKF0
     $attachments = [
         [
             'data' => $pdfContent,
@@ -479,20 +288,10 @@ foreach ($records as $record) {
             'mime' => 'application/pdf',
         ],
     ];
-<<<<<<< HEAD
     
     $notify = new RecordNotification($record, 'bulk-template');
     $notify->addAttachments($attachments);
     
-<<<<<<< .merge_file_PuUg0T
-=======
-=======
->>>>>>> 6ed19256f (.)
-
-    $notify = new RecordNotification($record, 'bulk-template');
-    $notify->addAttachments($attachments);
-
->>>>>>> .merge_file_FdxKF0
     Notification::route('mail', $record->email)->notify($notify);
 }
 ```
@@ -500,33 +299,14 @@ foreach ($records as $record) {
 ## Collegamenti alla Documentazione Correlata
 
 ### Documentazione Interna
-<<<<<<< HEAD
 - [Ptv - Complete PDF Email Guide](../../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Xot - PDF Generation Technical](../../../xot/docs/actions/pdf-content-generation-technical.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie-mail-templates-structure.md)
 - [EMAIL_TROUBLESHOOTING.md](./email_troubleshooting.md)
-<<<<<<< .merge_file_PuUg0T
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Ptv - Complete PDF Email Guide](../../../Ptv/docs/pdf-email-attachments-complete-guide.md)
-- [Xot - PDF Generation Technical](../../../Xot/docs/actions/pdf-content-generation-technical.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
-- [EMAIL_TROUBLESHOOTING.md](./EMAIL_TROUBLESHOOTING.md)
->>>>>>> .merge_file_FdxKF0
 
 ### File Correlati
 - `Modules/Notify/app/Emails/SpatieEmail.php` - Gestione allegati
 - `Modules/Notify/app/Notifications/RecordNotification.php` - Notifiche con allegati
-<<<<<<< .merge_file_PuUg0T
 - `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
-=======
-<<<<<<< HEAD
-- `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
-=======
-- `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_FdxKF0

@@ -78,23 +78,12 @@ php artisan activity:shop:checkout cart_12345_xxx
 - [Build from Scratch](./build-from-scratch.md)
 - [README Prediction Market](../prediction_market/README.md)
 - [README Bank](../bank/README.md)
-<<<<<<< .merge_file_p2mTCf
 
 | Lingua | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
 | 📚 Wiki tecnica | [./docs/wiki/](../..) |
-=======
-<<<<<<< HEAD
-- [README <nome progetto>ion Market](../<nome progetto>ion_market/readme.md)
-- [README Bank](../bank/readme.md)
->>>>>>> .merge_file_abU4il
 
 ---
 **Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**
-=======
-
----
-**Questa documentazione è neutra e riutilizzabile, senza riferimenti a progetti specifici, e segue le regole di neutralità e modularità.**
->>>>>>> 6ed19256f (.)

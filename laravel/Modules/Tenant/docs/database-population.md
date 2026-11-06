@@ -14,11 +14,6 @@ status: draft
 ---
 # Popolamento Database - Modulo Tenant
 
-<<<<<<< .merge_file_EUk8CK
-=======
-## Aggiornamento 2025-11-11 – Test Sushi Seeder
-<<<<<<< HEAD
->>>>>>> .merge_file_6wIU5w
 ## Aggiornamento [DATE] – Test Sushi Seeder
 =======
 >>>>>>> 6ed19256f (.)
@@ -317,14 +312,7 @@ private function generateRealisticDomain(string $tenantName, string $sector): st
 
 ## Collegamenti
 
-<<<<<<< .merge_file_EUk8CK
 - [README Modulo Tenant](README.md)
-=======
-- [README Modulo Tenant](./README.md)
-<<<<<<< HEAD
-- [README Modulo Tenant](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_6wIU5w
 - [Multi-Tenancy Architecture](./multi-tenancy.md)
 - [Database Schema](./database-schema.md)
@@ -334,12 +322,5 @@ private function generateRealisticDomain(string $tenantName, string $sector): st
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
-<<<<<<< .merge_file_EUk8CK
 **Autore**: Sistema Laraxot
-=======
-<<<<<<< HEAD
-**Autore**: Sistema Laraxot
-=======
-**Autore**: Sistema Laraxot
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_6wIU5w

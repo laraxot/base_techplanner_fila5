@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues: []
 discussions: []
@@ -15,10 +14,3 @@ related:
 status: draft
 ---
 
-<<<<<<< .merge_file_NroZA9
-=======
-See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_3a1Exo

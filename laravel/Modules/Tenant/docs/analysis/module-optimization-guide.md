@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "module optimization guide"
 type: note
@@ -15,9 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_r8XGeO
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_NXgeb4

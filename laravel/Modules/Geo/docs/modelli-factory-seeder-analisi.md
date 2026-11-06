@@ -131,14 +131,7 @@ Tutti i modelli attivi che necessitano factory le hanno.
 
 ### Dati Gestiti
 - **Regioni**: 20 regioni italiane
-<<<<<<< .merge_file_GD6xSW
-=======
-- **Province**: 110+ province italiane
-<<<<<<< HEAD
->>>>>>> .merge_file_cf2yDQ
 - **Province**: 110+ province italiane  
-=======
->>>>>>> 6ed19256f (.)
 - **Comuni**: 8000+ comuni italiani
 - **CAP**: Sistema CAP completo
 - **Codici ISTAT**: Codici identificativi ufficiali
@@ -201,8 +194,6 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<main module> Module](../../<main module>/docs/modelli_factory_seeder_analisi.md)
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md)
 - [Cms Module](../../Cms/docs/modelli_factory_seeder_analisi.md)
-- [User Module](../../user/docs/modelli_factory_seeder_analisi.md)
-- [Cms Module](../../cms/docs/modelli_factory_seeder_analisi.md)
 
 ### Risorse Esterne
 - [ISTAT Comuni](https://www.istat.it/it/archivio/6789)

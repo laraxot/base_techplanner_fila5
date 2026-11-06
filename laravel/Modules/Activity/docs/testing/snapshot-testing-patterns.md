@@ -255,10 +255,7 @@ test('can reconstruct aggregate from snapshots', function () {
 
 ### Documentazione
 - [Testing Strategy](../../Xot/docs/testing-strategy.md) - **Policy ufficiale**
-<<<<<<< HEAD
 - [Testing Strategy](../../xot/docs/testing-strategy.md) - **Policy ufficiale**
-=======
->>>>>>> 6ed19256f (.)
 - [No RefreshDatabase Policy](./no-refresh-database-policy.md)
 - [Event Sourcing Introduction](../event-sourcing-introduction.md)
 - [Snapshot Model](../models/snapshot-model.md)
@@ -271,8 +268,4 @@ test('can reconstruct aggregate from snapshots', function () {
 
 **Pattern**: Manual Cleanup con UUID Isolation
 **Status**: ✅ STANDARD PROGETTO
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 6ed19256f (.)

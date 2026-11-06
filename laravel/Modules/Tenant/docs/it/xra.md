@@ -60,13 +60,6 @@ Di default viene utilizzata **laravel\Themes\adm_theme\Resources\views\admin\das
 ### Versione HEAD
 
 ## Collegamenti tra versioni di xra.md
-<<<<<<< .merge_file_qhbQoK
-=======
-* [xra.md](../../../Xot/docs/install/xra.md)
-* [xra.md](../../../Tenant/docs/it/xra.md)
-* [xra.md](../../../Tenant/docs/it/config/xra.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_MdbMW9
 * [xra.md](../../../xot/docs/install/xra.md)
 * [xra.md](../../../tenant/docs/it/xra.md)
 * [xra.md](../../../tenant/docs/it/config/xra.md)
@@ -75,12 +68,4 @@ Di default viene utilizzata **laravel\Themes\adm_theme\Resources\views\admin\das
 ### Versione Incoming
 
 ---
-<<<<<<< .merge_file_qhbQoK
-=======
-=======
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_MdbMW9

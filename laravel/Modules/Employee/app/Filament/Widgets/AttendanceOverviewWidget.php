@@ -16,18 +16,7 @@ use Filament\Schemas\Components\Tabs\Tab;
 use Filament\Schemas\Components\Text;
 use Illuminate\Contracts\View\View;
 use Modules\User\Models\User;
-<<<<<<< HEAD
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
-<<<<<<< .merge_file_S5WoHh
-<<<<<<< .merge_file_bSGtxm
-=======
-=======
->>>>>>> .merge_file_XuHBUh
-=======
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
->>>>>>> 6ed19256f (.)
-use Override;
->>>>>>> .merge_file_Rvu1OT
 
 /**
  * Attendance overview widget showing next 7 days schedule.
@@ -35,11 +24,7 @@ use Override;
  * Displays upcoming absences, smart working, and transfers
  * with department filtering capabilities.
  */
-<<<<<<< HEAD
 class AttendanceOverviewWidget extends XotBaseSchemaWidget
-=======
-class AttendanceOverviewWidget extends XotBaseWidget
->>>>>>> 6ed19256f (.)
 {
     protected static ?int $sort = 3;
 
@@ -54,14 +39,6 @@ class AttendanceOverviewWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
-<<<<<<< .merge_file_S5WoHh
-    #[Override]
-=======
-<<<<<<< HEAD
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_XuHBUh
     public function getFormSchema(): array
     {
         return [

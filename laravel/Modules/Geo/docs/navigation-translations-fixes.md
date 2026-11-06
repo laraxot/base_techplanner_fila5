@@ -13,14 +13,7 @@ status: draft
 # Correzioni Traduzioni Navigation - Modulo Geo
 
 ## Data Intervento
-<<<<<<< .merge_file_2KVTSx
-=======
-**2025-08-07** - Sistemazione traduzioni secondo regole DRY + KISS
-<<<<<<< HEAD
->>>>>>> .merge_file_DICjv1
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Critico Identificato
 
@@ -93,27 +86,10 @@ status: draft
 
 ## Collegamenti
 
-<<<<<<< .merge_file_2KVTSx
-=======
-<<<<<<< HEAD
-- [Documentazione Modulo Geo](README.md)
-- [Struttura Geo](structure.md)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
->>>>>>> .merge_file_DICjv1
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Geo](README.md)
 - [Struttura Geo](structure.md)
-<<<<<<< .merge_file_2KVTSx
 - [Regole Traduzioni Laraxot](../../Xot/docs/translation-rules.md)
-=======
-- [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
-=======
-- [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
-- [Documentazione Modulo Geo](README.md)
-- [Struttura Geo](structure.md)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_DICjv1
 
 ## Note Tecniche
 
@@ -128,15 +104,5 @@ status: draft
 - Validare contenuto traduzioni prima del commit
 - Utilizzare linting per file PHP malformati
 
-<<<<<<< .merge_file_2KVTSx
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
-=======
-*Intervento completato il: 2025-08-07*
-<<<<<<< HEAD
-*Intervento completato il: [DATE]*
-*Conforme alle regole DRY + KISS*
-=======
-*Conforme alle regole DRY + KISS*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_DICjv1

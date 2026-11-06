@@ -29,13 +29,5 @@ status: draft
 
 ## Stato
 - ❌ Conflitti da risolvere
-<<<<<<< .merge_file_7h0v7e
-=======
-- 📅 Data rilevamento: 2025-11-12
-<<<<<<< HEAD
->>>>>>> .merge_file_GaMppq
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: MEDIA - Template email e test
-=======
-- 🔄 Priorità: MEDIA - Template email e test
->>>>>>> 6ed19256f (.)

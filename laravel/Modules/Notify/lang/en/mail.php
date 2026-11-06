@@ -45,14 +45,7 @@ return [
         'messages' => [
             'created' => 'Email template created successfully',
             'updated' => 'Email template updated successfully',
-<<<<<<< .merge_file_fvMcRs
             'deleted' => 'Email template deleted successfully']],
-=======
-            'deleted' => 'Email template deleted successfully',
-        ],
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_i0vuL6
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -64,11 +57,4 @@ return [
     'fields' => [
     ],
     'actions' => [
-<<<<<<< .merge_file_fvMcRs
     ]];
-=======
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_i0vuL6

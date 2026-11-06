@@ -67,7 +67,6 @@ it('loads rows from valid json file', function (): void {
     Assert::assertSame('Test Item 1', $rows[0]['name'] ?? null);
 });
 
-<<<<<<< .merge_file_faVmZL
 it('throws when json file is not an array', function (): void {
     /** @var TestCase $this */
     File::put(TestCase::$testJsonPath, json_encode('not-an-array'));
@@ -76,53 +75,6 @@ it('throws when json file is not an array', function (): void {
         fn (): array => $this->sushiModel()->getSushiRows(),
         Exception::class
     );
-=======
-describe('Business Logic Tests', function () {
-    it('handles large datasets efficiently', function () {
-        $largeData = [];
-        for ($i = 1; $i <= 1000; $i++) {
-            $largeData[(string) $i] = [
-                'id' => $i,
-                'name' => "Item {$i}",
-                'status' => ($i % 2) === 0 ? 'active' : 'inactive',
-                'created_at' => now()->toISOString(),
-            ];
-        }
-
-        File::put($this->testJsonPath, json_encode($largeData));
-
-        $rows = $this->model->getSushiRows();
-
-        expect($rows)->toHaveCount(1000);
-        expect($rows['1']['name'])->toBe('Item 1');
-        expect($rows['1000']['name'])->toBe('Item 1000');
-    })->group('performance', 'traits', 'sushi-json');
-
-    it('preserves data types correctly', function () {
-        $testData = [
-            '1' => [
-                'id' => 1, // integer
-                'name' => 'Test Item', // string
-                'active' => true, // boolean
-                'price' => 19.99, // float
-                'metadata' => ['key' => 'value'], // array
-                'created_at' => '2024-01-01T10:00:00Z', // string datetime
-            ],
-        ];
-
-        File::put($this->testJsonPath, json_encode($testData));
-
-        $rows = $this->model->getSushiRows();
-
-        expect($rows['1']['id'])->toBeInt();
-        expect($rows['1']['name'])->toBeString();
-        expect($rows['1']['active'])->toBeBool();
-        expect($rows['1']['price'])->toBeFloat();
-        expect($rows['1']['metadata'])->toBeArray();
-        expect($rows['1']['created_at'])->toBeString();
-    })->group('data-types', 'traits', 'sushi-json');
-<<<<<<< HEAD
->>>>>>> .merge_file_iSbDrC
 });
 =======
 });

@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_DiLMqa
 issues: []
 discussions: []
 title: "🎯 TENANT MODULE - ROADMAP 2025"
@@ -13,11 +12,6 @@ related:
   - "./phpstan-corrections-january.md"
 status: draft
 ---
-=======
-
-**Filosofia**: Tenant incarna il paradosso dell'unità nella diversità - un solo codebase, infinite istanze isolate.
-<<<<<<< HEAD
->>>>>>> .merge_file_CL7bXb
 # 🎯 TENANT MODULE - ROADMAP 2025
 
 **Modulo**: Tenant ([Description])  
@@ -234,8 +228,4 @@ Tenant Module
 ---
 
 *Questa roadmap è specifica per il modulo Tenant e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-<<<<<<< .merge_file_DiLMqa
-=======
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_CL7bXb

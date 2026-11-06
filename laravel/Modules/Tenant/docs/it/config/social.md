@@ -41,12 +41,6 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di social.md
-<<<<<<< .merge_file_uiiGAX
-=======
-* [social.md](../../../Tenant/docs/it/config/social.md)
-* [social.md](../../../Cms/docs/blocks/social.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_RefVUz
 * [social.md](../../../tenant/docs/it/config/social.md)
 * [social.md](../../../cms/docs/blocks/social.md)
 * [social.md](../../../../Cms/docs/blocks/social.md)
@@ -54,12 +48,4 @@ return [
 ### Versione Incoming
 
 ---
-<<<<<<< .merge_file_uiiGAX
-=======
-=======
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_RefVUz

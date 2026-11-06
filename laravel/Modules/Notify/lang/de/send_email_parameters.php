@@ -11,7 +11,6 @@ return [
         'group' => [
             'name' => 'Invia']],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome Area',
             'tooltip' => '',
@@ -36,20 +35,7 @@ return [
             'label' => 'Quantità di asset',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_5G5wkf
             'description' => '']],
-=======
-            'description' => '',
-        ],
-=======
-        'name' => 'Nome Area',
-        'parent' => 'Settore di appartenenza',
-        'parent.name' => 'Settore di appartenenza',
-        'parent_name' => 'Settore di appartenenza',
-        'assets' => 'Quantità di asset',
->>>>>>> 6ed19256f (.)
-    ],
->>>>>>> .merge_file_Av3Yw0
     'actions' => [
         'import' => [
             'name' => 'Importa da file',
@@ -60,19 +46,6 @@ return [
             'filename_prefix' => 'Aree al',
             'columns' => [
                 'name' => 'Nome area',
-<<<<<<< .merge_file_5G5wkf
                 'parent_name' => 'Nome area livello superiore']]],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-                'parent_name' => 'Nome area livello superiore',
-            ],
-        ],
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_Av3Yw0

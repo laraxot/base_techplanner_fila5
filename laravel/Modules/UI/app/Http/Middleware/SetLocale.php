@@ -34,16 +34,8 @@ final class SetLocale
         Session::put('locale', $locale);
 
         $response = $next($request);
-<<<<<<< HEAD
         if (! $response instanceof Response) {
-<<<<<<< .merge_file_gZXYJi
             throw new RuntimeException('Middleware must return a Response instance');
-=======
-=======
-        if (! ($response instanceof Response)) {
->>>>>>> 6ed19256f (.)
-            throw new \RuntimeException('Middleware must return a Response instance');
->>>>>>> .merge_file_YA5VQ1
         }
 
         return $response;

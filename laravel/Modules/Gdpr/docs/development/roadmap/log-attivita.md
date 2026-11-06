@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "log attivita"
 type: note
@@ -16,9 +15,3 @@ superseded_by: backup-dati.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep
-<<<<<<< .merge_file_KFdKzn
-=======
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_UXV5Jp

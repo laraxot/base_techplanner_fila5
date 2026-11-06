@@ -69,54 +69,6 @@ Grazie,<br>
 use Filament\Forms\Components\Builder;
 
 public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-<<<<<<< HEAD
-=======
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(Form $form): Form
-public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-public static function form(Form $form): Form
->>>>>>> 6ed19256f (.)
 {
     return $form->schema([
         Builder::make('content')
@@ -205,16 +157,10 @@ public function toMail($notifiable)
 - Ogni sezione ha il suo README.md specifico
 
 ## Contribuire
-<<<<<<< .merge_file_1OuZNB
-=======
-<<<<<<< HEAD
-Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/README_links.md). 
->>>>>>> .merge_file_UrP72w
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../../docs/readme_links.md). 
-<<<<<<< .merge_file_1OuZNB
 ---
 
 <!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
@@ -232,11 +178,3 @@ related:
   - "./module-readme-template.md"
 ---
 
-=======
-=======
-Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
-
-## Collegamenti Completi
-Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/README_links.md).
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_UrP72w

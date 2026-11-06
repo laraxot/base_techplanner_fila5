@@ -220,7 +220,6 @@ it('renders filament icon buttons for social links', function () {
 - [Best Practices Filament](https://filamentphp.com/docs/3.x/support/overview)
 
 ## Collegamenti Interni
-<<<<<<< HEAD
 - [Guida ai Temi](/laravel/themes/one/docs/readme.md)
 - [Componenti UI](/laravel/modules/cms/docs/components/readme.md)
 - [Testing Components](/laravel/modules/cms/docs/testing/components.md)
@@ -228,24 +227,5 @@ it('renders filament icon buttons for social links', function () {
 ## Collegamenti tra versioni di filament-components.md
 * [filament-components.md](../../../User/docs/best-practices/filament-components.md)
 * [filament-components.md](laravel/modules/cms/docs/best-practices/filament-components.md)
-<<<<<<< .merge_file_YbqLby
 * [filament-components.md](../filament-components.md)
 * [filament-components.md](laravel/docs/rules/filament-components.md)
-=======
-* [filament-components.md](laravel/modules/cms/docs/filament-components.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Guida ai Temi](/laravel/Themes/One/docs/README.md)
-- [Componenti UI](/laravel/Modules/Cms/docs/components/README.md)
-- [Testing Components](/laravel/Modules/Cms/docs/testing/components.md)
-
-## Collegamenti tra versioni di filament-components.md
-* [filament-components.md](laravel/Modules/User/docs/best-practices/filament-components.md)
-* [filament-components.md](laravel/Modules/Cms/docs/best-practices/filament-components.md)
-* [filament-components.md](laravel/Modules/Cms/docs/filament-components.md)
-<<<<<<< HEAD
-* [filament-components.md](laravel/docs/rules/filament-components.md)
-=======
-* [filament-components.md](laravel/docs/rules/filament-components.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_WxCBOS

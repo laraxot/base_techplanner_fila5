@@ -34,12 +34,4 @@ status: draft
 
 ---
 
-<<<<<<< .merge_file_TWcvqP
 **Prossimo modulo**: Fixcity
-=======
-<<<<<<< HEAD
-**Prossimo modulo**: Fixcity
-=======
-**Prossimo modulo**: Fixcity
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_hVm7dz

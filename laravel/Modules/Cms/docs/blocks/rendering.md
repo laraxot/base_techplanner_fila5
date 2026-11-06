@@ -171,18 +171,6 @@ Il sistema include diversi tipi di blocchi predefiniti:
 
 ## Riferimenti
 
-<<<<<<< .merge_file_agDzKh
 - [Documentazione BlockData](/var/www/html/_bases/base_predict_fila5_mono/laravel/modules/cms/docs/data/blockdata.md)
 - [Documentazione Page Component](/var/www/html/_bases/base_predict_fila5_mono/laravel/modules/cms/docs/components/page.md)
 - [Regole del Sistema di Rendering](/var/www/html/_bases/base_predict_fila5_mono/laravel/.windsurf/rules/block-rendering-system.mdc)
-=======
-- [Documentazione BlockData](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Cms/docs/data/blockdata.md)
-- [Documentazione Page Component](/var/www/html/_bases/base_predict_fila3_mono/laravel/Modules/Cms/docs/components/page.md)
-- [Regole del Sistema di Rendering](/var/www/html/_bases/base_predict_fila3_mono/laravel/.windsurf/rules/block-rendering-system.mdc)
-<<<<<<< HEAD
-- [Documentazione BlockData](/var/www/html/_bases/base_predict_fila5_mono/laravel/modules/cms/docs/data/blockdata.md)
-- [Documentazione Page Component](/var/www/html/_bases/base_predict_fila5_mono/laravel/modules/cms/docs/components/page.md)
-- [Regole del Sistema di Rendering](/var/www/html/_bases/base_predict_fila5_mono/laravel/.windsurf/rules/block-rendering-system.mdc)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_yGaIpR

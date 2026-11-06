@@ -37,13 +37,7 @@ return [
         'label' => 'Agile Telecom',
         'color' => 'gray',
         'icon' => 'heroicon-o-truck',
-<<<<<<< .merge_file_HNz0xL
         'description' => 'Italienischer Anbieter für Telekommunikationsdienste und SMS'],
-=======
-        'description' => 'Italienischer Anbieter für Telekommunikationsdienste und SMS',
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_hVawyE
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -55,11 +49,4 @@ return [
     'fields' => [
     ],
     'actions' => [
-<<<<<<< .merge_file_HNz0xL
     ]];
-=======
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_hVawyE

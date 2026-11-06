@@ -33,18 +33,8 @@ return [
      * |
      */
     'database' => [
-<<<<<<< .merge_file_AACHb6
         'connection' => Illuminate\Support\Env::get('SUSHI_DB_CONNECTION', 'mysql'),
         'database' => Illuminate\Support\Env::get('SUSHI_DB_DATABASE', 'quaeris_data_test'),
-=======
-<<<<<<< HEAD
-        'connection' => env('SUSHI_DB_CONNECTION', 'mysql'),
-        'database' => env('SUSHI_DB_DATABASE', 'quaeris_data_test'),
-=======
-        'connection' => env('SUSHI_DB_CONNECTION', 'sqlite'),
-        'database' => env('SUSHI_DB_DATABASE', ':memory:'),
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_uTp3eD
     ],
     /*
      * |--------------------------------------------------------------------------

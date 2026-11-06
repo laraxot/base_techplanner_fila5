@@ -17,11 +17,7 @@ status: draft
 ### 1. Errore Destinatario Mancante
 **Errore**: `Symfony\Component\Mime\Exception\LogicException: An email must have a "To", "Cc", or "Bcc" header.`
 
-<<<<<<< HEAD
 **Causa**: 
-=======
-**Causa**:
->>>>>>> 6ed19256f (.)
 - Il destinatario dell'email non è stato specificato correttamente
 - Il valore del destinatario è null o vuoto
 - Il formato del destinatario non è valido
@@ -37,11 +33,7 @@ status: draft
 
 **Causa**: Formato errato degli allegati nell'email.
 
-<<<<<<< HEAD
 **Soluzione**: 
-=======
-**Soluzione**:
->>>>>>> 6ed19256f (.)
 - Utilizzare il formato corretto per gli allegati (array di array)
 - Verificare la struttura dei dati passati a `addAttachments()`
 - Consultare la documentazione completa in `ATTACHMENTS.md`
@@ -49,11 +41,7 @@ status: draft
 ### 3. Errori di Template
 **Errore**: Template non trovato o non valido
 
-<<<<<<< HEAD
 **Causa**: 
-=======
-**Causa**:
->>>>>>> 6ed19256f (.)
 - Percorso errato del template
 - Template non registrato nel database
 - Problemi di cache
@@ -141,8 +129,4 @@ status: draft
 - Testare regolarmente i template
 - Monitorare le performance
 - Implementare gestione errori
-<<<<<<< HEAD
 - Documentare le soluzioni 
-=======
-- Documentare le soluzioni
->>>>>>> 6ed19256f (.)

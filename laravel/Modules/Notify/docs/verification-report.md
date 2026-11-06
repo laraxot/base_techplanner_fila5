@@ -13,13 +13,6 @@ status: draft
 # Verification Report - Compliance and XotBase Refactoring
 
 **Date**: 2025-12-18
-<<<<<<< .merge_file_ShN2PN
-=======
-<<<<<<< HEAD
-**Date**: 2025-12-18
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ZxiEwH
 **Modules**: Geo, Notify
 **Status**: ✅ Verified and Compliant
 
@@ -57,12 +50,4 @@ This report verifies the compliance of Bulk Actions with strict Filament extensi
 All active Bulk Actions in the scope are now compliant with the strict architectural rules imposed.
 
 ---
-<<<<<<< .merge_file_ShN2PN
 **Verified by**: iFlow CLI
-=======
-<<<<<<< HEAD
-**Verified by**: iFlow CLI
-=======
-**Verified by**: iFlow CLI
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ZxiEwH

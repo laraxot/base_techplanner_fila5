@@ -17,16 +17,12 @@ class IconStateGroupColumn extends XotBaseColumnGroup
 
     public string $modelClass = '';
 
-<<<<<<< HEAD
     /**
      * Form data holder.
      *
      * @var array<string, mixed>
      */
     public ?array $data = [];
-=======
-    public array $data = [];
->>>>>>> 6ed19256f (.)
 
     protected function setUp(): void
     {

@@ -12,14 +12,7 @@ status: draft
 
 # PHPMD Report (CMS)
 
-<<<<<<< .merge_file_CDISXq
-=======
-## esecuzione 2025-11-12
-<<<<<<< HEAD
->>>>>>> .merge_file_Vyjyhx
 ## esecuzione [DATE]
-=======
->>>>>>> 6ed19256f (.)
 - Comando: `./vendor/bin/phpmd Modules/Cms text Modules/Cms/phpmd.ruleset.xml`
 - Risultato: **non concluso** per numero elevato di violazioni + file non parsabili.
 
@@ -40,12 +33,4 @@ status: draft
 ## follow-up suggeriti
 - Creare task dedicati in `todo_application.md` per ciascuna macro-area (naming, test, coupling).
 - Integrare PHPMD nel CI (read-only) per evitare regressioni.
-<<<<<<< .merge_file_CDISXq
 - Collegare i fix ai relativi documenti (es. `./architecture-xotdata-pattern.md`, `./filament-integration.md`).
-=======
-<<<<<<< HEAD
-- Collegare i fix ai relativi documenti (es. `./architecture-xotdata-pattern.md`, `./filament-integration.md`).
-=======
-- Collegare i fix ai relativi documenti (es. `./architecture-xotdata-pattern.md`, `./filament-integration.md`).
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Vyjyhx

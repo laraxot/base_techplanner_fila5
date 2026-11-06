@@ -27,7 +27,6 @@ return [
         'marker_removed' => 'Marker rimosso con successo',
         'marker_updated' => 'Marker aggiornato con successo',
     ],
-<<<<<<< HEAD
     'label' => 'Webbingbrasil Map',
     'plural_label' => 'Webbingbrasil Map (Plurale)',
     'fields' => [
@@ -61,7 +60,6 @@ return [
             'label' => 'Elimina Webbingbrasil Map',
         ],
     ],
-<<<<<<< .merge_file_obC3vk
     'sections' => [
         'unavailable' => [
             'title' => 'Mappa temporaneamente non disponibile',
@@ -75,8 +73,4 @@ return [
             'description' => 'Sarà ripristinato non appena saranno disponibili pacchetti compatibili.',
         ],
     ],
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_VifC6j
 ];

@@ -4,9 +4,5 @@
 -e 
 # PHPStan documentation
 docs/phpstan/
-<<<<<<< .merge_file_HJTCSx
 _docs/
 agentdb.rvf
-=======
-_docs/
->>>>>>> .merge_file_nngPND

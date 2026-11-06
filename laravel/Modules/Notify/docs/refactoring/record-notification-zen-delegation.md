@@ -12,16 +12,7 @@ status: draft
 
 # Refactoring RecordNotification - Zen Delegation Pattern
 
-<<<<<<< .merge_file_D1aira
-=======
-<<<<<<< HEAD
-**Data**: 19 Dicembre 2025  
->>>>>>> .merge_file_cqTtD8
 **Stato**: ✅ Implementato  
-=======
-**Data**: 19 Dicembre 2025
-**Stato**: ✅ Implementato
->>>>>>> 6ed19256f (.)
 **Motivazione**: Zen Delegation, DRY assoluto, SRP
 
 ## 🎯 Problema Identificato
@@ -131,11 +122,7 @@ class RecordNotification extends Notification
         $email = new SpatieEmail($this->record, $this->slug);
         $email = $email->mergeData($this->data);
         $email = $email->addAttachments($this->attachments);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Set recipient per envelope()
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $to = $notifiable->routeNotificationFor('mail');
@@ -277,30 +264,12 @@ $client->notify($notification); // via() determina canali da routeNotificationFo
 
 ## 🔗 Riferimenti
 
-<<<<<<< .merge_file_D1aira
-=======
-- [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md) - Filosofia Zen Delegation
-<<<<<<< HEAD
->>>>>>> .merge_file_cqTtD8
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen Delegation
-=======
->>>>>>> 6ed19256f (.)
 - [record-notification.md](../notifications/record-notification.md) - Documentazione completa RecordNotification
 - [record-notification-constructor-slug.md](./record-notification-constructor-slug.md) - Refactoring precedente (Lazy Resolution, ora superato)
 - [send-record-notification-action.md](../actions/send-record-notification-action.md) - Documentazione SendRecordNotificationAction
 - [send-record-notification-action.md](send-record-notification-action.md) - Documentazione SendRecordNotificationAction
 
 ---
-<<<<<<< .merge_file_D1aira
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Delegation over duplication, bridge over God Object, simplicity over complexity"*
-=======
-
-<<<<<<< HEAD
-**Ultimo aggiornamento**: 19 Dicembre 2025  
-**Filosofia**: *"Delegation over duplication, bridge over God Object, simplicity over complexity"*
-=======
-**Ultimo aggiornamento**: 19 Dicembre 2025
-**Filosofia**: *"Delegation over duplication, bridge over God Object, simplicity over complexity"*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_cqTtD8

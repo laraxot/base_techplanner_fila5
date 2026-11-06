@@ -50,13 +50,6 @@ class SendTemplatedEmailJob implements ShouldQueue
      * @param string $mailable Classe mailable
      * @param array<string, mixed> $data Dati per il template
      * @param string|null $locale Lingua del template
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-     */
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
     public function __construct(
         protected string $to,
         protected string $mailable,
@@ -132,25 +125,11 @@ return [
             'retry_after' => 90,
             'block_for' => null,
         ],
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-    ],
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 
     'failed' => [
         'driver' => env('QUEUE_FAILED_DRIVER', 'database-uuids'),
         'database' => env('DB_CONNECTION', 'mysql'),
         'table' => 'failed_jobs',
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-    ],
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 ];
 ```
 
@@ -167,13 +146,6 @@ class QueueWorkerManager
     public function startWorkers(): void
     {
         $workerCount = config('notify.queue.workers', 2);
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-        
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 
         for ($i = 0; $i < $workerCount; $i++) {
             Process::run('php artisan queue:work --queue=emails --tries=3');
@@ -181,13 +153,6 @@ class QueueWorkerManager
     }
 
      * Monitora lo stato dei worker.
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-     * Monitora lo stato dei worker.
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
     public function monitorWorkers(): array
     {
         return [
@@ -214,13 +179,6 @@ SendTemplatedEmailJob::dispatch(
 // Invio multiplo
 $users->each(function ($user) {
         $user->email,
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-        $user->email,
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
     )->onQueue('emails');
 });
 ```
@@ -238,13 +196,6 @@ php artisan queue:monitor
 # Gestione failed jobs
 php artisan queue:failed
 php artisan queue:retry all
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-```
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 
 ## Best Practices
 
@@ -263,13 +214,6 @@ php artisan queue:retry all
     'emails-high' => 100,  // 100/min
     'emails-normal' => 50, // 50/min
     'emails-bulk' => 10,   // 10/min
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-],
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 ```
 
 ### 2. Monitoraggio
@@ -284,15 +228,6 @@ $histogram = Histogram::create('email_sending_duration_seconds', 'Time spent sen
 
 ### 3. Retry Strategy
 
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-
-### 3. Retry Strategy
-
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 public function backoff(): array
 {
     return [
@@ -338,14 +273,6 @@ $this->call('queue:prune-failed', [
 // Rimuovi job completati
 $this->call('queue:prune-batches', [
     '--hours' => 24
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-]);
-```
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 
 ## Scaling
 
@@ -355,21 +282,9 @@ $this->call('queue:prune-batches', [
 # Supervisor config
 [program:<nome progetto>-worker]
 process_name=%(program_name)s_%(process_num)02d
-<<<<<<< HEAD
 command=php artisan queue:work redis --queue=emails
 
 command=php artisan queue:work redis --queue=emails
-<<<<<<< .merge_file_Vklj97
-=======
-command=php artisan queue:work redis --queue=emails
-
-command=php artisan queue:work redis --queue=emails
-=======
-command=php /var/www/html/_bases/base_techplanner_fila3_mono/laravel/artisan queue:work redis --queue=emails
-
-command=php /var/www/html/base_<nome progetto>/artisan queue:work redis --queue=emails
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 autostart=true
 autorestart=true
 numprocs=4
@@ -390,15 +305,6 @@ RateLimiter::for('mail-global', function () {
 
 ### 3. Sharding
 
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-
-### 3. Sharding
-
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 // Distribuzione su multiple code
 $queue = 'emails-' . ($user->id % 4); // 4 code
 
@@ -422,14 +328,6 @@ $metrics = [
         'help' => 'Email sending duration',
     'failed_jobs_total' => [
         'help' => 'Total failed jobs',
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-    'failed_jobs_total' => [
-        'help' => 'Total failed jobs',
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 ];
 ```
 
@@ -455,13 +353,6 @@ if ($failedJobs > $threshold) {
         ->error("High email failure rate detected")
         ->send();
 }
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-```
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 
 ## Manutenzione
 
@@ -488,15 +379,6 @@ php artisan queue:failed-table > failed_jobs_backup.sql
 
 ### 3. Ripristino
 
-<<<<<<< .merge_file_Vklj97
-=======
-<<<<<<< HEAD
-
-### 3. Ripristino
-
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL
 // Ripristino job falliti
 php artisan queue:retry all
 php artisan queue:restart
@@ -505,11 +387,7 @@ php artisan queue:restart
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
 - [Mail Templates](database-mail-templates.md)
-<<<<<<< HEAD
 - [Queue Configuration](../../../../docs/queue-configuration.md)
-=======
-- [Queue Configuration](../../../docs/queue-configuration.md)
->>>>>>> 6ed19256f (.)
 
 ## Vedi Anche
 - [Laravel Queues](https://laravel.com/docs/queues)
@@ -788,19 +666,11 @@ $this->call('queue:prune-batches', [
 
 [program:<nome progetto>-worker]
 process_name=%(program_name)s_%(process_num)02d
-<<<<<<< HEAD
 command=php artisan queue:work redis --queue=emails
 [program:ptv-worker]
 command=php artisan queue:work redis --queue=emails
 
 command=php artisan queue:work redis --queue=emails
-=======
-command=php /var/www/html/base_<nome progetto>/artisan queue:work redis --queue=emails
-[program:ptv-worker]
-command=php /var/www/_bases/base_ptv_fila3_mono/laravel/artisan queue:work redis --queue=emails
-
-command=php /var/www/html/_bases/base_<nome progetto>/laravel/artisan queue:work redis --queue=emails
->>>>>>> 6ed19256f (.)
 
 autostart=true
 autorestart=true
@@ -904,28 +774,13 @@ php artisan queue:restart
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
 - [Mail Templates](database-mail-templates.md)
-<<<<<<< HEAD
 - [Queue Configuration](../../../../docs/queue-configuration.md)
-=======
-- [Queue Configuration](../../../docs/queue-configuration.md)
->>>>>>> 6ed19256f (.)
 
 ## Vedi Anche
 - [Laravel Queues](https://laravel.com/docs/queues)
 - [Horizon Documentation](https://laravel.com/docs/horizon)
-<<<<<<< HEAD
 - [Queue Configuration](../../../../docs/project/queue-configuration.md)
 
 - [Laravel Queues](https://laravel.com/project_docs/queues)
 - [Horizon Documentation](https://laravel.com/project_docs/horizon)
 - [Redis Documentation](https://redis.io/documentation)
-<<<<<<< .merge_file_Vklj97
-=======
-=======
-- [Queue Configuration](../../../project_docs/queue-configuration.md)
-
-- [Laravel Queues](https://laravel.com/project_docs/queues)
-- [Horizon Documentation](https://laravel.com/project_docs/horizon)
-- [Redis Documentation](https://redis.io/documentation)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ROLPiL

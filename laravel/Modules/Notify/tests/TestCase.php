@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests;
 
-<<<<<<< .merge_file_1XNgc9
 use Illuminate\Foundation\Application;
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_XHA4b9
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 use Illuminate\Support\Facades\DB;
@@ -31,38 +27,16 @@ use function Safe\json_decode;
 /**
  * Base test case for Notify module tests.
  *
-<<<<<<< .merge_file_1XNgc9
  * Lo schema (migrate) e i seeder del DB di test si eseguono una volta dall'esterno
  * (`php artisan migrate --env=testing`): `loadLaravelMigrations()` e' di Testbench,
  * non di `Illuminate\Foundation\Testing\TestCase`, e non esiste qui.
  * Mai RefreshDatabase: wipea il MariaDB `*_test` condiviso con Fixcity.
-=======
- * Uses MySQL from .env.testing.
- * All module connections are mapped by TenantServiceProvider.
- * Migrations must be run ONCE externally: php artisan migrate --env=testing
- * DatabaseTransactions handles rollback between tests.
-=======
-require_once __DIR__.'/../../Xot/tests/CreatesApplication.php';
-
-use Illuminate\Foundation\Application;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Str;
-use Modules\Notify\Providers\NotifyServiceProvider;
-use Modules\Xot\Tests\CreatesApplication;
-
-/**
- * Base test case for Notify module tests.
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_XHA4b9
  */
 abstract class TestCase extends BaseTestCase
 {
     use CreatesApplication;
     use DatabaseTransactions;
 
-<<<<<<< .merge_file_1XNgc9
     /** @var list<string> */
     protected $connectionsToTransact = ['user', 'notify'];
 
@@ -219,82 +193,6 @@ abstract class TestCase extends BaseTestCase
     protected function getPackageProviders(Application $app): array
     {
         return [
-=======
-<<<<<<< HEAD
-    protected function getPackageProviders($app): array
-    {
-        return [
-            XotServiceProvider::class,
-            UserServiceProvider::class,
-=======
-    /**
-     * Setup the test environment.
-     * Il sito funziona, quindi i test devono riflettere il comportamento reale
-     */
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        // Usiamo SQLite shared memory seguendo pattern Activity/TestCase.php
-        $dbName = 'file:memdb_notify_'.Str::random(10).'?mode=memory&cache=shared';
-
-        $connections = [
-            'sqlite',
-            'mysql',
-            'mariadb',
-            'pgsql',
-            'activity',
-            'cms',
-            'gdpr',
-            'geo',
-            'job',
-            'lang',
-            'media',
-            'meetup',
-            'notify',
-            'seo',
-            'tenant',
-            'ui',
-            'user',
-            'xot',
-        ];
-
-        foreach ($connections as $conn) {
-            $this->app['config']->set("database.connections.{$conn}.driver", 'sqlite');
-            $this->app['config']->set("database.connections.{$conn}.database", $dbName);
-        }
-
-        foreach ($connections as $conn) {
-            DB::purge($conn);
-        }
-
-        foreach ($connections as $conn) {
-            try {
-                $pdo = DB::connection($conn)->getPdo();
-                if ($pdo instanceof \PDO && method_exists($pdo, 'sqliteCreateFunction')) {
-                    $pdo->sqliteCreateFunction('md5', static fn (?string $value): ?string => $value === null ? null : md5($value));
-                    $pdo->sqliteCreateFunction('unhex', static fn (?string $value): ?string => $value);
-                }
-            } catch (\Throwable) {
-            }
-        }
-
-        $this->artisan('module:migrate', ['module' => 'Xot', '--force' => true]);
-        $this->artisan('module:migrate', ['module' => 'User', '--force' => true]);
-        $this->artisan('module:migrate', ['module' => 'Notify', '--force' => true]);
-    }
-
-    /**
-     * Get package providers.
-     *
-     * @param  Application  $app
-     * @return array<int, class-string>
-     */
-    protected function getPackageProviders($app): array
-    {
-        return [
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_XHA4b9
             NotifyServiceProvider::class,
         ];
     }

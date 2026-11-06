@@ -131,18 +131,6 @@ Esempio:
 
 ## Collegamenti tra versioni di header.md
 * [header.md](docs/sections/header.md)
-<<<<<<< .merge_file_zQhI8M
 * [header.md](../components/header.md)
 * [header.md](laravel/modules/cms/docs/sections/header.md)
 * [header.md](laravel/themes/one/docs/sections/header.md)
-=======
-* [header.md](laravel/Modules/Cms/docs/components/header.md)
-* [header.md](laravel/Modules/Cms/docs/sections/header.md)
-* [header.md](laravel/Themes/One/docs/sections/header.md)
-<<<<<<< HEAD
-* [header.md](laravel/modules/cms/docs/components/header.md)
-* [header.md](laravel/modules/cms/docs/sections/header.md)
-* [header.md](laravel/themes/one/docs/sections/header.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_IadmUG

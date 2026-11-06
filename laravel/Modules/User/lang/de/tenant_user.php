@@ -9,13 +9,10 @@ return [
         'icon' => 'heroicon-o-building-office',
         'sort' => 99,
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

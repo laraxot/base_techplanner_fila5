@@ -391,15 +391,6 @@ La cartella `docs/` è ben organizzata con:
 - [Modulo User](../../user/docs/roadmap_complete.md)
 - [Modulo Media](../../Media/docs/README.md)
 - [Theme Sixteen](../../../Themes/Sixteen/docs/README.md)
-<<<<<<< .merge_file_Go2DbG
-=======
-<<<<<<< HEAD
-- [Modulo User](../../user/docs/roadmap_complete.md)
-- [Modulo Media](../../media/docs/readme.md)
-- [Theme Sixteen](../../../themes/sixteen/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_xh5cx0
 
 ### Resources
 - [Filament Documentation](https://filamentphp.com/docs)
@@ -410,19 +401,6 @@ La cartella `docs/` è ben organizzata con:
 ---
 
 **Versione**: 1.0.0
-<<<<<<< .merge_file_Go2DbG
 **Maintainer**: CMS Team
 **Status**: 🚧 In Development (65% completo)
 **Prossima Revisione**: [DATE]
-=======
-**Ultimo Aggiornamento**: 2025-01-01
-**Maintainer**: CMS Team
-**Status**: 🚧 In Development (65% completo)
-**Prossima Revisione**: 2025-02-01
-<<<<<<< HEAD
-**Maintainer**: CMS Team
-**Status**: 🚧 In Development (65% completo)
-**Prossima Revisione**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_xh5cx0

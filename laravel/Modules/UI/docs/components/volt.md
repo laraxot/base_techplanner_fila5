@@ -15,23 +15,13 @@ status: draft
 ## Panoramica
 Volt è un framework per la creazione di componenti Livewire in modo dichiarativo. Questa guida spiega come utilizzare Volt nel nostro sistema.
 
-<<<<<<< HEAD
 Nel progetto la regola di default per le componenti Volt interattive è la sintassi **class-based** (`new class extends Livewire\Volt\Component`). Gli esempi più sotto usano la sintassi functional solo come **legacy/mantenimento**: per nuovi componenti usa la sezione “Struttura Base” in basso.
 
-=======
->>>>>>> 6ed19256f (.)
 ## Collegamenti
 - [Documentazione Volt](https://livewire.laravel.com/docs/volt)
 - [Livewire](https://livewire.laravel.com)
 - [Filament](https://filamentphp.com)
-<<<<<<< .merge_file_eFAQmR
-=======
-- [Documentazione UI](../README.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_2jVx9h
 - [Documentazione UI](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Best Practices](../best-practices.md)
 - [Layout](../layouts.md)
 - [Temi](../themes.md)
@@ -41,7 +31,6 @@ Nel progetto la regola di default per le componenti Volt interattive è la sinta
 ### Componente Base
 ```php
 <?php
-<<<<<<< HEAD
 use Livewire\Volt\Component;
 
 new class extends Component {
@@ -53,20 +42,6 @@ new class extends Component {
         // logica di submit
     }
 };
-=======
-
-use function Livewire\Volt\{state, mount};
-
-state([
-    'name' => '',
-    'email' => '',
-]);
-
-$submit = function() {
-    // logica di submit
-};
-
->>>>>>> 6ed19256f (.)
 ?>
 
 <form wire:submit="submit">
@@ -365,7 +340,6 @@ mount(function() {
 ## Collegamenti Moduli
 
 ### Modulo Xot
-<<<<<<< HEAD
 - [Core](../../xot/docs/core.md)
 - [Servizi](../../xot/docs/services.md)
 - [Traits](../../xot/docs/traits.md)
@@ -431,77 +405,3 @@ mount(function() {
 - [Grafici](../../chart/docs/charts.md)
 - [Dashboard](../../chart/docs/dashboard.md)
 - [Visualizzazione](../../chart/docs/visualization.md)
-<<<<<<< .merge_file_eFAQmR
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Core](../../Xot/docs/core.md)
-- [Servizi](../../Xot/docs/services.md)
-- [Traits](../../Xot/docs/traits.md)
-- [Best Practices](../../Xot/docs/best-practices.md)
-
-### Modulo Cms
-- [Frontend](../../Cms/docs/frontend.md)
-- [Temi](../../Cms/docs/themes.md)
-- [Contenuti](../../Cms/docs/content.md)
-- [Convenzioni Filament](../../Cms/docs/convenzioni-namespace-filament.md)
-
-### Modulo Lang
-- [Traduzioni](../../Lang/docs/translations.md)
-- [Localizzazione](../../Lang/docs/localization.md)
-- [API Traduzioni](../../Lang/docs/api.md)
-
-### Modulo User
-- [Autenticazione](../../User/docs/auth.md)
-- [Permessi](../../User/docs/permissions.md)
-- [Profilo](../../User/docs/profile.md)
-
-### Modulo Patient
-- [Gestione Pazienti](../../Patient/docs/patients.md)
-- [Cartelle Cliniche](../../Patient/docs/records.md)
-- [Appuntamenti](../../Patient/docs/appointments.md)
-
-### Modulo Dental
-- [Trattamenti](../../Dental/docs/treatments.md)
-- [Pianificazione](../../Dental/docs/planning.md)
-- [Documenti](../../Dental/docs/documents.md)
-
-### Modulo Tenant
-- [Multi-tenant](../../Tenant/docs/multi-tenant.md)
-- [Configurazione](../../Tenant/docs/configuration.md)
-- [Migrazione](../../Tenant/docs/migration.md)
-
-### Modulo Media
-- [Gestione File](../../Media/docs/files.md)
-- [Upload](../../Media/docs/upload.md)
-- [Storage](../../Media/docs/storage.md)
-
-### Modulo Notify
-- [Notifiche](../../Notify/docs/notifications.md)
-- [Email](../../Notify/docs/email.md)
-- [SMS](../../Notify/docs/sms.md)
-
-### Modulo Reporting
-- [Report](../../Reporting/docs/reports.md)
-- [Esportazione](../../Reporting/docs/export.md)
-- [Analytics](../../Reporting/docs/analytics.md)
-
-### Modulo Gdpr
-- [Privacy](../../Gdpr/docs/privacy.md)
-- [Consensi](../../Gdpr/docs/consents.md)
-- [Sicurezza](../../Gdpr/docs/security.md)
-
-### Modulo Job
-- [Jobs](../../Job/docs/jobs.md)
-- [Queue](../../Job/docs/queue.md)
-- [Scheduling](../../Job/docs/scheduling.md)
-
-### Modulo Chart
-- [Grafici](../../Chart/docs/charts.md)
-- [Dashboard](../../Chart/docs/dashboard.md)
-<<<<<<< HEAD
-- [Visualizzazione](../../Chart/docs/visualization.md)
-=======
-- [Visualizzazione](../../Chart/docs/visualization.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_2jVx9h

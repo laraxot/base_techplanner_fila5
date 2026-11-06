@@ -9,14 +9,6 @@ use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
 use Filament\Panel;
-<<<<<<< .merge_file_olNGat
-=======
-use Filament\PanelProvider;
-<<<<<<< HEAD
-=======
-use Filament\Support\Colors\Color;
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_GdXCpu
 use Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse;
 use Illuminate\Cookie\Middleware\EncryptCookies;
 use Illuminate\Foundation\Http\Middleware\PreventRequestForgery;
@@ -25,14 +17,8 @@ use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
 use Modules\Cms\Filament\Pages\Themes;
-<<<<<<< HEAD
 use Modules\Xot\Datas\MetatagData;
-<<<<<<< .merge_file_olNGat
 use Modules\Xot\Providers\Filament\XotBasePanelProvider;
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_GdXCpu
 
 class FrontPanelProvider extends XotBasePanelProvider
 {
@@ -41,17 +27,7 @@ class FrontPanelProvider extends XotBasePanelProvider
         return $panel
             ->id('cms::front')
             ->path('{lang}/front')
-<<<<<<< .merge_file_olNGat
             ->colors(MetatagData::make()->getFilamentColors())
-=======
-<<<<<<< HEAD
-            ->colors(MetatagData::make()->getAllColors())
-=======
-            ->colors([
-                'primary' => Color::Amber,
-            ])
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_GdXCpu
             ->discoverResources(
                 in: app_path('Filament/Front/Resources'),
                 for: 'App\\Filament\\Front\\Resources',

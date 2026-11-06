@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 ?>
-<<<<<<< HEAD
 <x-filament-panels::page>
     {{-- Il pannello non ha tema Tailwind (space-y-6/grid-cols-* non esistono nel CSS): CSS nativo inline, 1 colonna su telefono. --}}
     <div style="display:flex;flex-direction:column;gap:1.5rem;">
@@ -26,8 +25,3 @@ declare(strict_types=1);
         {{ $this->table }}
     </div>
 </x-filament-panels::page>
-=======
-<x-filament::page>
-    
-</x-filament::page>
->>>>>>> 6ed19256f (.)

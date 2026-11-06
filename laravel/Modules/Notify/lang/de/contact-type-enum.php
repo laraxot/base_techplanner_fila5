@@ -32,13 +32,7 @@ return [
         'label' => 'Fax',
         'icon' => 'heroicon-o-printer',
         'color' => 'text-gray-600',
-<<<<<<< .merge_file_eeoBLf
         'description' => 'Faxnummer'],
-=======
-        'description' => 'Faxnummer',
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_G4cYcU
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -50,11 +44,4 @@ return [
     'fields' => [
     ],
     'actions' => [
-<<<<<<< .merge_file_eeoBLf
     ]];
-=======
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_G4cYcU

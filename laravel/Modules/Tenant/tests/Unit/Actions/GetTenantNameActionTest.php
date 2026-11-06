@@ -2,13 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_mnaahL
-=======
-<<<<<<< HEAD
-namespace Modules\Tenant\Tests\Unit\Actions;
-
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_l7EEze
 use Modules\Tenant\Actions\GetTenantNameAction;
 use Tests\TestCase;

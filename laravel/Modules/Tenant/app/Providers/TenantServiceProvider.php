@@ -114,7 +114,6 @@ class TenantServiceProvider extends XotBaseServiceProvider
 
     public function mergeConfigs(): void
     {
-<<<<<<< .merge_file_giUvlh
         $configs = app(GetTenantConfigNamesAction::class)->execute();
 
         foreach ($configs as $config) {
@@ -128,10 +127,6 @@ class TenantServiceProvider extends XotBaseServiceProvider
             }
         }
     }
-=======
-<<<<<<< HEAD
-        Schema::defaultStringLength(191);
->>>>>>> .merge_file_1YljZM
 
     private function resolveDefaultConnectionName(): string
     {
@@ -143,24 +138,8 @@ class TenantServiceProvider extends XotBaseServiceProvider
     private function purgeConnectionWhenMigrating(string $connectionName): void
     {
         if (Request::has('act') && Request::input('act') === 'migrate') {
-<<<<<<< .merge_file_giUvlh
             DB::purge($connectionName);
             DB::reconnect($connectionName);
-=======
-            DB::purge($preMergeDefaultConn); // Call to a member function prepare() on null
-            DB::reconnect($preMergeDefaultConn);
-=======
-        // Skip database purge/reconnect during testing to preserve test DB mappings
-        if ($this->app->environment('testing')) {
-            return;
-        }
-
-        Schema::defaultStringLength(191);
-
-        if (Request::has('act') && Request::input('act') === 'migrate') {
-            DB::purge('mysql'); // Call to a member function prepare() on null
-            DB::reconnect('mysql');
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_1YljZM
         }
     }
@@ -202,14 +181,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
             }
 
             $name = $module->getSnakeName();
-<<<<<<< .merge_file_giUvlh
             if (isset($connections[$defaultConnection]) && ! isset($connections[$name])) {
-=======
-<<<<<<< HEAD
-            $upperName = strtoupper($name);
-
-            if (isset($connections[$default]) && ! isset($connections[$name])) {
->>>>>>> .merge_file_1YljZM
                 /** @var array<string, mixed> $moduleConfig */
                 $moduleConfig = $connections[$defaultConnection];
                 $connections[$name] = $moduleConfig;
@@ -225,27 +197,7 @@ class TenantServiceProvider extends XotBaseServiceProvider
 >>>>>>> 6ed19256f (.)
         }
 
-<<<<<<< .merge_file_giUvlh
         return $connections;
-=======
-        $data = Arr::set($data, 'connections', $connections);
-        Config::set('database', $data);
-
-<<<<<<< HEAD
-        // Skip purge/reconnect during testing to preserve test DB mappings
-        if (! $this->app->environment('testing')) {
-            // Call to a member function prepare() on null — connessione default da .env (mariadb|mysql ecc.)
-            $purgeConnRaw = Config::get('database.default');
-            $purgeConnName = \is_string($purgeConnRaw) && $purgeConnRaw !== '' ? $purgeConnRaw : 'mysql';
-            DB::purge($purgeConnName);
-            DB::reconnect();
-        }
-=======
-        // Call to a member function prepare() on null
-        // Database connection [mysql] not configured.
-        DB::purge('mysql');
-        DB::reconnect();
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_1YljZM
     }
 

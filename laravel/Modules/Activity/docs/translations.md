@@ -12,15 +12,8 @@ qmd: "traduzioni del modulo activity activity"
 
 - [Modulo Lang](../../Lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
-<<<<<<< HEAD
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
-<<<<<<< .merge_file_wRZTTY
 - [Regole Generali Traduzioni](../../Xot/docs/translations.md)
-=======
-- [Regole Generali Traduzioni](../../xot/docs/translations.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_0Iebd9
 - [Activity Module Fixes](../../.cursor/rules/activity-module-fixes.mdc) - Correzioni applicate dicembre 2024
 
 ## Struttura
@@ -190,7 +183,6 @@ Traduzioni specifiche per gli eventi archiviati:
 4. **Validazione**: Includere controlli automatici per verificare la conformità
 
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
 * [translations.md](laravel/modules/chart/docs/translations.md)
 * [translations.md](laravel/modules/reporting/docs/translations.md)
 * [translations.md](laravel/modules/gdpr/docs/translations.md)
@@ -208,8 +200,6 @@ Traduzioni specifiche per gli eventi archiviati:
 * [translations.md](laravel/modules/activity/docs/translations.md)
 * [translations.md](laravel/modules/patient/docs/translations.md)
 * [translations.md](laravel/modules/cms/docs/translations.md)
-=======
->>>>>>> 6ed19256f (.)
 * [translations.md](laravel/Modules/Chart/docs/translations.md)
 * [translations.md](laravel/Modules/Reporting/docs/translations.md)
 * [translations.md](laravel/Modules/Gdpr/docs/translations.md)
@@ -226,8 +216,4 @@ Traduzioni specifiche per gli eventi archiviati:
 * [translations.md](laravel/Modules/Tenant/docs/translations.md)
 * [translations.md](laravel/Modules/Activity/docs/translations.md)
 * [translations.md](laravel/Modules/Patient/docs/translations.md)
-<<<<<<< HEAD
 * [translations.md](laravel/Modules/Cms/docs/translations.md)
-=======
-* [translations.md](laravel/Modules/Cms/docs/translations.md)
->>>>>>> 6ed19256f (.)

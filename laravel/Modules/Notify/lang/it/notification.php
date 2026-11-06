@@ -16,30 +16,14 @@ return [
             'label' => 'Titolo',
             'helper_text' => 'Titolo della notifica',
             'placeholder' => 'Inserisci il titolo',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_Xon4Qr
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'message' => [
             'label' => 'Messaggio',
             'helper_text' => 'Contenuto della notifica',
             'placeholder' => 'Inserisci il messaggio',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_Xon4Qr
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'type' => [
             'label' => 'Tipo',
             'helper_text' => 'Tipologia di notifica',
@@ -50,20 +34,9 @@ return [
                 'info' => 'Informazione',
                 'success' => 'Successo',
                 'warning' => 'Attenzione',
-<<<<<<< .merge_file_Xon4Qr
                 'error' => 'Errore'],
             'tooltip' => '',
             'description' => ''],
-=======
-                'error' => 'Errore',
-            ],
-<<<<<<< HEAD
-            'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'status' => [
             'label' => 'Stato',
             'helper_text' => 'Stato corrente della notifica',
@@ -71,184 +44,67 @@ return [
             'options' => [
                 'unread' => 'Non letta',
                 'read' => 'Letta',
-<<<<<<< .merge_file_Xon4Qr
                 'archived' => 'Archiviata'],
             'tooltip' => '',
             'description' => ''],
-=======
-                'archived' => 'Archiviata',
-            ],
-<<<<<<< HEAD
-            'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'recipient' => [
             'label' => 'Destinatario',
             'helper_text' => 'Utente destinatario della notifica',
             'placeholder' => 'Seleziona il destinatario',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_Xon4Qr
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'sent_at' => [
             'label' => 'Inviata il',
             'helper_text' => 'Data e ora di invio della notifica',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_Xon4Qr
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'read_at' => [
             'label' => 'Letta il',
             'helper_text' => 'Data e ora di lettura della notifica',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-<<<<<<< .merge_file_Xon4Qr
             'placeholder' => 'read_at'],
-=======
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'archived_at' => [
             'label' => 'Archiviata il',
             'helper_text' => 'Data e ora di archiviazione della notifica',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_Xon4Qr
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'channel' => [
             'label' => 'Canale',
             'tooltip' => 'Canale di invio della notifica',
             'helper_text' => 'Seleziona il canale attraverso cui inviare la notifica',
             'placeholder' => 'Seleziona un canale',
             'options' => [
-<<<<<<< .merge_file_Xon4Qr
                 'email' => ['label' => 'Email', 'tooltip' => 'Invia tramite email'],
                 'sms' => ['label' => 'SMS', 'tooltip' => 'Invia tramite SMS'],
                 'push' => ['label' => 'Push', 'tooltip' => 'Invia come notifica push'],
                 'telegram' => ['label' => 'Telegram', 'tooltip' => 'Invia tramite Telegram']],
             'description' => ''],
-=======
-                'email' => [
-                    'label' => 'Email',
-                    'tooltip' => 'Invia tramite email',
-                ],
-                'sms' => [
-                    'label' => 'SMS',
-                    'tooltip' => 'Invia tramite SMS',
-                ],
-                'push' => [
-                    'label' => 'Push',
-                    'tooltip' => 'Invia come notifica push',
-                ],
-                'telegram' => [
-                    'label' => 'Telegram',
-                    'tooltip' => 'Invia tramite Telegram',
-                ],
-            ],
-<<<<<<< HEAD
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'template' => [
             'label' => 'Template',
             'tooltip' => 'Template da utilizzare per la notifica',
             'helper_text' => 'Scegli il modello predefinito per questa notifica',
             'placeholder' => 'Seleziona un template',
             'options' => [
-<<<<<<< .merge_file_Xon4Qr
                 'subject' => ['label' => 'Oggetto', 'tooltip' => 'Oggetto della notifica', 'placeholder' => 'es: Notifica importante'],
                 'body' => ['label' => 'Corpo', 'tooltip' => 'Contenuto principale della notifica', 'placeholder' => 'Inserisci il testo della notifica...'],
                 'variables' => ['label' => 'Variabili disponibili', 'tooltip' => 'Variabili che possono essere utilizzate nel template', 'helper_text' => 'Usa {variable} per inserire valori dinamici']],
             'description' => ''],
-=======
-                'subject' => [
-                    'label' => 'Oggetto',
-                    'tooltip' => 'Oggetto della notifica',
-                    'placeholder' => 'es: Notifica importante',
-                ],
-                'body' => [
-                    'label' => 'Corpo',
-                    'tooltip' => 'Contenuto principale della notifica',
-                    'placeholder' => 'Inserisci il testo della notifica...',
-                ],
-                'variables' => [
-                    'label' => 'Variabili disponibili',
-                    'tooltip' => 'Variabili che possono essere utilizzate nel template',
-                    'helper_text' => 'Usa {variable} per inserire valori dinamici',
-                ],
-            ],
-<<<<<<< HEAD
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_C1USbh
         'schedule' => [
             'label' => 'Programmazione',
             'tooltip' => 'Quando inviare la notifica',
             'helper_text' => 'Imposta quando la notifica deve essere inviata',
             'placeholder' => 'Seleziona l\'opzione di programmazione',
             'options' => [
-<<<<<<< .merge_file_Xon4Qr
                 'immediate' => ['label' => 'Immediata', 'tooltip' => 'Invia subito la notifica'],
                 'scheduled' => ['label' => 'Programmata', 'tooltip' => 'Programma l\'invio per una data specifica'],
                 'date' => ['label' => 'Data', 'tooltip' => 'Data di invio programmato', 'placeholder' => 'es: 01/01/2024'],
                 'time' => ['label' => 'Ora', 'tooltip' => 'Ora di invio programmato', 'placeholder' => 'es: 14:30']],
             'description' => ''],
-=======
-                'immediate' => [
-                    'label' => 'Immediata',
-                    'tooltip' => 'Invia subito la notifica',
-                ],
-                'scheduled' => [
-                    'label' => 'Programmata',
-                    'tooltip' => 'Programma l\'invio per una data specifica',
-                ],
-                'date' => [
-                    'label' => 'Data',
-                    'tooltip' => 'Data di invio programmato',
-                    'placeholder' => 'es: 01/01/2024',
-                ],
-                'time' => [
-                    'label' => 'Ora',
-                    'tooltip' => 'Ora di invio programmato',
-                    'placeholder' => 'es: 14:30',
-                ],
-            ],
-<<<<<<< HEAD
-            'description' => '',
-        ],
->>>>>>> .merge_file_C1USbh
         'applyFilters' => [
             'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_Xon4Qr
             'description' => ''],
         'id' => [
             'label' => 'id'],
@@ -298,16 +154,6 @@ return [
             'placeholder' => 'values',
             'helper_text' => '',
             'description' => 'values']],
-=======
-            'description' => '',
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_C1USbh
     'actions' => [
         'mark_as_read' => [
             'label' => 'Segna come letta',
@@ -415,19 +261,8 @@ return [
         'delete_confirmation' => 'Sei sicuro di voler eliminare questa notifica?',
         'batch_action_confirmation' => 'Sei sicuro di voler eseguire questa azione su tutte le notifiche selezionate?',
         'success' => 'Operazione completata con successo',
-<<<<<<< .merge_file_Xon4Qr
         'error' => 'Si è verificato un errore durante l\'operazione'],
     'label' => 'Notification',
     'plural_label' => 'Notification (Plurale)',
     'sections' => [
         'empty' => ['label' => 'empty', 'heading' => 'empty']]];
-=======
-        'error' => 'Si è verificato un errore durante l\'operazione',
-    ],
-<<<<<<< HEAD
-    'label' => 'Notification',
-    'plural_label' => 'Notification (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_C1USbh

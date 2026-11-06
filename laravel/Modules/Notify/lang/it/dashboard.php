@@ -66,13 +66,7 @@ return [
         'success' => 'Operazione completata con successo',
         'error' => 'Si è verificato un errore durante l\'operazione',
         'no_data' => 'Nessun dato disponibile per il periodo selezionato',
-<<<<<<< .merge_file_XG85rU
         'loading' => 'Caricamento dati in corso...'],
-=======
-        'loading' => 'Caricamento dati in corso...',
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_V66sw9
     'label' => 'Dashboard',
     'plural_label' => 'Dashboard (Plurale)',
     'fields' => [
@@ -90,13 +84,4 @@ return [
             'label' => 'Ultima Modifica',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_XG85rU
             'description' => '']]];
-=======
-            'description' => '',
-        ],
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_V66sw9

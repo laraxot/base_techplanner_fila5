@@ -4,27 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeEntryFactory;
-<<<<<<< .merge_file_ZjqY8n
 use Modules\Employee\Enums\TimeEntryStatusEnum;
 use Modules\Xot\Contracts\ProfileContract;
-=======
-use Modules\TechPlanner\Models\Profile;
-=======
-use Modules\TechPlanner\Models\Profile;
-use Modules\Employee\Database\Factories\TimeEntryFactory;
-use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
->>>>>>> 6ed19256f (.)
-<<<<<<< .merge_file_LUja2a
->>>>>>> .merge_file_VkNs8c
-=======
->>>>>>> .merge_file_zGUSvW
 
 /**
  * Class TimeEntry.
@@ -60,22 +45,10 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property numeric|null $location_lng GPS longitude coordinate
  * @property string|null $location_name Human readable location name
  * @property string|null $photo_path Path to verification photo
-<<<<<<< .merge_file_ZjqY8n
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $deleter
  * @property-read ProfileContract|null $updater
-=======
- * @property-read Profile|null $creator
- * @property-read Profile|null $deleter
- * @property-read Profile|null $updater
-<<<<<<< HEAD
-<<<<<<< .merge_file_LUja2a
->>>>>>> .merge_file_VkNs8c
-=======
->>>>>>> .merge_file_zGUSvW
  *
-=======
->>>>>>> 6ed19256f (.)
  * @method static TimeEntryFactory factory($count = null, $state = [])
  * @method static Builder<static>|TimeEntry forEmployee(int $employeeId)
  * @method static Builder<static>|TimeEntry newModelQuery()
@@ -112,30 +85,11 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @method static Builder<static>|TimeEntry whereTimestamp($value)
  * @method static Builder<static>|TimeEntry whereType($value)
  * @method static Builder<static>|TimeEntry withAnomalies()
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 final class TimeEntry extends BaseModel
 {
-<<<<<<< .merge_file_ZjqY8n
-=======
-    public const STATUS_PENDING = 'pending';
-<<<<<<< HEAD
-
-    public const STATUS_APPROVED = 'approved';
-
-    public const STATUS_AUTO_APPROVED = 'auto_approved';
-
-=======
-    public const STATUS_APPROVED = 'approved';
-    public const STATUS_AUTO_APPROVED = 'auto_approved';
->>>>>>> 6ed19256f (.)
-    public const STATUS_REJECTED = 'rejected';
-
->>>>>>> .merge_file_VkNs8c
     /** @var list<string> */
     protected $fillable = [
         'employee_id',
@@ -263,11 +217,3 @@ final class TimeEntry extends BaseModel
         return $this->status === TimeEntryStatusEnum::REJECTED->value;
     }
 }
-<<<<<<< .merge_file_LUja2a
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_zGUSvW

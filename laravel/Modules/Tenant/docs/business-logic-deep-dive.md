@@ -135,11 +135,7 @@ public static function config(string $key): mixed
 if ($key === 'database') {
     // Per ogni modulo enabled
     foreach (Module::all() as $module) {
-<<<<<<< HEAD
         $name = $module->getSnakeName();  // 'user', '<nome progetto>', etc.
-=======
-        $name = $module->getSnakeName();  // 'user', 'quaeris', etc.
->>>>>>> 6ed19256f (.)
 
         // Se tenant non ha config per questo modulo
         if (!isset($extra_conf['connections'][$name])) {
@@ -178,11 +174,7 @@ if (Str::endsWith($serverName, '.<nome progetto>.it')) {
 }
 
 // Step 3: Config file lookup
-<<<<<<< HEAD
 $configFile = '/etc/<nome progetto>/server_names.php';
-=======
-$configFile = '/etc/quaeris/server_names.php';
->>>>>>> 6ed19256f (.)
 if (File::exists($configFile)) {
     $mapping = File::getRequire($configFile);
     // ['acme-custom-domain.com' => 'tenant_acme']
@@ -637,11 +629,7 @@ chown www-data:tenant_acme config/tenant_acme/
    ↓
 4. Load merged config → config/app + config/tenant_acme/app
    ↓
-<<<<<<< HEAD
 5. Execute business logic (User, <nome progetto>, etc.)
-=======
-5. Execute business logic (User, Quaeris, etc.)
->>>>>>> 6ed19256f (.)
    ↓
 6. Response (tutto isolato nel contesto tenant_acme)
 ```
@@ -673,11 +661,7 @@ chown www-data:tenant_acme config/tenant_acme/
 
 ### Provides To
 - **User Module**: Connection isolation
-<<<<<<< HEAD
 - **<nome progetto> Module**: Tenant-aware queries
-=======
-- **Quaeris Module**: Tenant-aware queries
->>>>>>> 6ed19256f (.)
 - **Patient/Dental Modules**: Multi-clinic support
 - **ALL Business Modules**: Automatic data isolation
 
@@ -748,15 +732,6 @@ chown www-data:tenant_acme config/tenant_acme/
 ---
 
 **Document Version**: 1.0
-<<<<<<< .merge_file_mAxfZ6
 
 **Status**: 📘 Authoritative Reference
-=======
-**Last Updated**: 5 Novembre 2025
-<<<<<<< HEAD
-
-**Status**: 📘 Authoritative Reference
-=======
-**Status**: 📘 Authoritative Reference
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_abdfYZ

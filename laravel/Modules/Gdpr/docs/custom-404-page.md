@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "custom 404 page"
 type: note
@@ -15,10 +14,3 @@ status: stub
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
-<<<<<<< .merge_file_LB9YBh
-=======
-=======
-
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_IpM7if

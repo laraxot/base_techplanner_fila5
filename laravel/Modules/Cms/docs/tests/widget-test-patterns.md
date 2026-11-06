@@ -222,18 +222,7 @@ test('widget can be rendered', function () {
 
 ---
 
-<<<<<<< .merge_file_5tYdn3
 **Status**: ✅ Gold Standard Stabilito  
 **Autore**: AI Assistant con validazione utente  
 **Data**: Dicembre 2024  
 **Versione**: 1.0 - Pattern Definitivo 
-=======
-**Status**: ✅ Gold Standard Stabilito
-**Autore**: AI Assistant con validazione utente
-**Data**: Dicembre 2024
-<<<<<<< HEAD
-**Versione**: 1.0 - Pattern Definitivo
-=======
-**Versione**: 1.0 - Pattern Definitivo
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_6QGcJh

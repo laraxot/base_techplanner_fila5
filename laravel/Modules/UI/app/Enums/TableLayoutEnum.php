@@ -4,27 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Enums;
 
-<<<<<<< .merge_file_tx6IY5
-=======
-<<<<<<< HEAD
-use Modules\Xot\Traits\EnumTrait;
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_OwW7yw
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\Layout\Component;
-<<<<<<< .merge_file_tx6IY5
 use Modules\Xot\Traits\EnumTrait;
-=======
-<<<<<<< HEAD
-=======
-use Modules\Xot\Filament\Traits\TransTrait;
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_OwW7yw
 
 /**
  * Enum for managing table layout types in Filament UI components.
@@ -37,11 +23,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  */
 enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
 {
-<<<<<<< HEAD
     use EnumTrait;
-=======
-    use TransTrait;
->>>>>>> 6ed19256f (.)
 
     case LIST = 'list';
     case GRID = 'grid';
@@ -51,39 +33,6 @@ enum TableLayoutEnum: string implements HasColor, HasIcon, HasLabel
         return self::LIST;
     }
 
-<<<<<<< .merge_file_tx6IY5
-=======
-<<<<<<< HEAD
-    
-
-    
-
-    
-
-    
-=======
-    public function getLabel(): string
-    {
-        return $this->transClass(self::class, $this->value.'.label');
-    }
-
-    public function getColor(): string
-    {
-        return $this->transClass(self::class, $this->value.'.color');
-    }
-
-    public function getIcon(): string
-    {
-        return $this->transClass(self::class, $this->value.'.icon');
-    }
-
-    public function getDescription(): string
-    {
-        return $this->transClass(self::class, $this->value.'.description');
-    }
->>>>>>> 6ed19256f (.)
-
->>>>>>> .merge_file_OwW7yw
     public function getTooltip(): string
     {
         return $this->transClass(self::class, $this->value.'.tooltip');

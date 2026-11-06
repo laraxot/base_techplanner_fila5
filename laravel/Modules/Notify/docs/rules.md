@@ -38,14 +38,7 @@ status: draft
 - ✅ Usare classi dedicate per le notifiche
 - ✅ Documentare il codice
 - ❌ Non mischiare responsabilità
-<<<<<<< .merge_file_ZS3iYJ
-=======
-- ❌ Non usare mai il segmento `App` nei namespace, anche se il file è in `app/`. Per i Data Object usare sempre `Modules\<NomeModulo>\Datas`. Vedi [PATH_AND_NAMESPACE_RULES.md](./PATH_AND_NAMESPACE_RULES.md) per dettagli.
-<<<<<<< HEAD
->>>>>>> .merge_file_nsUag1
 - ❌ Non usare mai il segmento `App` nei namespace, anche se il file è in `app/`. Per i Data Object usare sempre `Modules\<NomeModulo>\Datas`. Vedi [PATH_AND_NAMESPACE_RULES.md](./path_and_namespace_rules.md) per dettagli.
-=======
->>>>>>> 6ed19256f (.)
 
 ### 5. Testing
 - ✅ Testare con dati validi
@@ -106,12 +99,4 @@ status: draft
 - [PHP The Right Way](https://phptherightway.com/)
 - [Laravel Documentation](https://laravel.com/docs)
 - [Spatie Queueable Action](https://github.com/spatie/laravel-queueable-action)
-<<<<<<< .merge_file_ZS3iYJ
 - [Laravel News](https://laravel-news.com/) 
-=======
-<<<<<<< HEAD
-- [Laravel News](https://laravel-news.com/) 
-=======
-- [Laravel News](https://laravel-news.com/)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_nsUag1

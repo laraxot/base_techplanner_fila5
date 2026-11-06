@@ -12,15 +12,8 @@ status: draft
 
 # Notify Module - Filament v4 Upgrade Notes
 
-<<<<<<< HEAD
 This document outlines specific considerations and changes for the `Notify` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../../docs/Filament_Upgrade_v4.md).
-<<<<<<< .merge_file_E6Zdic
 This document outlines specific considerations and changes for the `Notify` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament-v4-upgrade.md`](../../../docs/Filament_Upgrade_v4.md).
-=======
-=======
-This document outlines specific considerations and changes for the `Notify` module during the Filament v4 upgrade. For a comprehensive overview of the Filament v4 upgrade process, refer to the main project documentation: [`docs/filament_v4_upgrade.md`](../../docs/Filament_Upgrade_v4.md).
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_mrUgA5
 
 ## **Key Changes and Action Items for `Notify` Module**
 
@@ -84,12 +77,4 @@ This document outlines specific considerations and changes for the `Notify` modu
 
     Section::configureUsing(fn (Section $section) => $section->columnSpanFull());
 
-<<<<<<< .merge_file_E6Zdic
     ```
-=======
-<<<<<<< HEAD
-    ```
-=======
-    ```
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_mrUgA5

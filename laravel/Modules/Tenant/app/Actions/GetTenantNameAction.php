@@ -128,12 +128,6 @@ class GetTenantNameAction
      * Durante LoadConfiguration le facade non sono ancora disponibili — usare getenv.
      *
      * @param  string  $default  Il valore di default da usare
-<<<<<<< .merge_file_TSPclN
-=======
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return string Il nome del server
 >>>>>>> .merge_file_LHjrtd
      */
@@ -155,10 +149,6 @@ class GetTenantNameAction
      * Costruisce il percorso di configurazione.
      *
      * @param  Collection<int, string>  $parts  Le parti del percorso
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return string Il percorso completo
      */
     private function buildConfigPath(Collection $parts): string

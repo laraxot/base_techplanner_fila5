@@ -23,18 +23,9 @@ status: draft
 // Modules/Geo/app/Models/BaseModel.php
 abstract class BaseModel extends Model
 {
-<<<<<<< .merge_file_DyYPu2
-=======
-    use \Modules\Xot\Models\Traits\HasXotFactory;  // ← GIÀ PRESENTE QUI
-    use Updater;
-
-<<<<<<< HEAD
->>>>>>> .merge_file_mLT176
     use HasFactory;  // ← GIÀ PRESENTE QUI
     use Updater;
     
-=======
->>>>>>> 6ed19256f (.)
     // Metodo newFactory() ereditato automaticamente
 }
 ```
@@ -42,14 +33,7 @@ abstract class BaseModel extends Model
 ### Modelli con Violazioni
 1. **Province.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 2. **PlaceType.php** - ❌ `use HasFactory` + `newFactory()` → ✅ CORRETTO
-<<<<<<< .merge_file_DyYPu2
-=======
-3. **State.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
-<<<<<<< HEAD
->>>>>>> .merge_file_mLT176
 3. **State.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO  
-=======
->>>>>>> 6ed19256f (.)
 4. **Place.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 5. **Comune.php** - ❌ `use HasFactory` duplicato → ✅ CORRETTO
 6. **County.php** - ✅ Era già corretto
@@ -61,16 +45,8 @@ abstract class BaseModel extends Model
 // ❌ PRIMA - Con duplicazioni
 class PlaceType extends BaseModel
 {
-<<<<<<< .merge_file_DyYPu2
-=======
-    use \Modules\Xot\Models\Traits\HasXotFactory;  // DUPLICAZIONE!
-
-<<<<<<< HEAD
->>>>>>> .merge_file_mLT176
     use HasFactory;  // DUPLICAZIONE!
     
-=======
->>>>>>> 6ed19256f (.)
     protected static function newFactory(): \Modules\Geo\Database\Factories\PlaceTypeFactory
     {
         return \Modules\Geo\Database\Factories\PlaceTypeFactory::new();
@@ -82,15 +58,7 @@ class PlaceType extends BaseModel
 {
     // NIENTE trait duplicati!
     // NIENTE metodi newFactory()!
-<<<<<<< HEAD
     
-<<<<<<< .merge_file_DyYPu2
-=======
-    
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_mLT176
     protected $fillable = [
         'name',
         'description',
@@ -125,14 +93,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 - **Catena ereditarietà** pulita e prevedibile
 - **Manutenzione** centralizzata in BaseModel
 
-<<<<<<< .merge_file_DyYPu2
-=======
-### Performance
-<<<<<<< HEAD
->>>>>>> .merge_file_mLT176
 ### Performance  
-=======
->>>>>>> 6ed19256f (.)
 - **Nessun overhead** trait duplicati
 - **Memory usage** ottimizzato
 - **Class loading** più veloce
@@ -165,14 +126,7 @@ grep -r "use HasFactory" Modules/*/app/Models/ | grep -v BaseModel
 ### Altri Moduli da Verificare
 Questo pattern di violazione potrebbe esistere in altri moduli:
 - **User**: BaseUser vs User, Doctor, Patient
-<<<<<<< .merge_file_DyYPu2
-=======
-- **<main module>**: BaseModel vs modelli specifici
-<<<<<<< HEAD
->>>>>>> .merge_file_mLT176
 - **<main module>**: BaseModel vs modelli specifici  
-=======
->>>>>>> 6ed19256f (.)
 - **Notify**: BaseModel vs modelli notifica
 - **Cms**: BaseModel vs modelli content
 

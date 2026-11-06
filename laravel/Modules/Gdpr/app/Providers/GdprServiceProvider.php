@@ -7,14 +7,9 @@ namespace Modules\Gdpr\Providers;
 use Illuminate\Contracts\Http\Kernel as HttpKernel;
 use Illuminate\Foundation\Http\Kernel;
 use Illuminate\Routing\Router;
-<<<<<<< .merge_file_SKbWDq
 use Illuminate\Support\Facades\View;
 use Illuminate\Translation\Translator;
 use Modules\Gdpr\Http\Middleware\InjectCookieBanner;
-=======
-use Modules\Gdpr\Datas\GdprData;
-<<<<<<< HEAD
->>>>>>> .merge_file_kfOnBt
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
 use function Safe\realpath;
@@ -34,23 +29,14 @@ class GdprServiceProvider extends XotBaseServiceProvider
 
     protected string $module_ns = __NAMESPACE__;
 
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public function boot(): void
     {
         parent::boot();
 
-<<<<<<< .merge_file_SKbWDq
         // cookie-consent namespace: not covered by XotBaseServiceProvider (loads only module nameLower).
         // Per le traduzioni vince l'ultimo namespace registrato e statikbe/laravel-cookie-consent registra il suo (solo en, es, fr, nl, oc) dopo
         // questo provider: a boot concluso il namespace del modulo (it, en, de, es) torna a prevalere. Senza, in /it il banner mostrava le chiavi.
-=======
-<<<<<<< HEAD
-        // cookie-consent namespace: not covered by XotBaseServiceProvider (loads only module nameLower)
->>>>>>> .merge_file_kfOnBt
         $cookieConsentLangPath = realpath(__DIR__.'/../../lang/cookie-consent');
         if ($cookieConsentLangPath && is_dir($cookieConsentLangPath)) {
             $this->app->booted(function () use ($cookieConsentLangPath): void {
@@ -87,7 +73,6 @@ class GdprServiceProvider extends XotBaseServiceProvider
 
     public function registerMyMiddleware(Router $router): void
     {
-<<<<<<< .merge_file_SKbWDq
         // Sempre registrato: il flag `cookie_banner_on` del tenant lo valuta il middleware a ogni richiesta (InjectCookieBanner).
         // Sul kernel e non solo sul router: il kernel risincronizza i gruppi sul router e un push fatto solo sul router puo' andare perso.
         $kernel = $this->app->make(HttpKernel::class);
@@ -95,13 +80,6 @@ class GdprServiceProvider extends XotBaseServiceProvider
             $kernel->appendMiddlewareToGroup('web', InjectCookieBanner::class);
 
             return;
-=======
-        $gdpr = GdprData::make();
-<<<<<<< HEAD
-        if ($gdpr->cookie_banner_on) {
-=======
-        if ($gdpr->cookie_banner_enabled) {
->>>>>>> 6ed19256f (.)
             $router->pushMiddlewareToGroup('web', CookieConsentMiddleware::class);
 >>>>>>> .merge_file_kfOnBt
         }

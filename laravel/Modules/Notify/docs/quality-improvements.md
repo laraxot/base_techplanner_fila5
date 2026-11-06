@@ -14,13 +14,6 @@ status: draft
 
 ## Data
 2025-01-06
-<<<<<<< .merge_file_lp9SaG
-=======
-<<<<<<< HEAD
-2025-01-06
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_z5BiVe
 
 ## Obiettivo
 Migliorare sistematicamente la qualità del codice del modulo Notify utilizzando strumenti di analisi statica e refactoring automatico.
@@ -188,10 +181,3 @@ Tutti i pattern di correzione sono documentati in:
 - [Index](./index.md)
 
 *Ultimo aggiornamento: 2025-01-06*
-<<<<<<< .merge_file_lp9SaG
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_z5BiVe

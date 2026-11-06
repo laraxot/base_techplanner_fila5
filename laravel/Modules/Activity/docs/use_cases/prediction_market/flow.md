@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_RuXG3v
 ---
 title: "Flusso degli Eventi - <nome progetto>ion Market"
 type: note
@@ -7,13 +6,7 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "flusso degli eventi - <nome progetto>ion market activity"
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_o7j21n
 # Flusso degli Eventi - <nome progetto>ion Market
-=======
-# Flusso degli Eventi - Prediction Market
->>>>>>> 6ed19256f (.)
 
 ## 1. Creazione Mercato
 ```mermaid
@@ -50,8 +43,4 @@ sequenceDiagram
 
 ## 4. Audit Trail e Rollback
 - Tutti gli eventi sono persistiti e possono essere rigiocati per ricostruire lo stato
-<<<<<<< HEAD
 - Possibilità di rollback tramite snapshot e replay
-=======
-- Possibilità di rollback tramite snapshot e replay
->>>>>>> 6ed19256f (.)

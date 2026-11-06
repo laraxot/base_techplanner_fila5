@@ -5,57 +5,10 @@ declare(strict_types=1);
 return [
     'navigation' => ['group' => 'Sistema', 'label' => 'Contatti Notifiche', 'icon' => 'notify-contacts-animated', 'sort' => 49, 'description' => 'Gestione dei contatti per l\'invio delle notifiche'],
     'fields' => [
-<<<<<<< .merge_file_48xNXw
         'name' => ['label' => 'Nome', 'tooltip' => 'Nome del contatto', 'placeholder' => 'es: Mario Rossi', 'help' => 'Inserisci il nome completo del contatto', 'helper_text' => '', 'description' => ''],
         'email' => ['label' => 'Email', 'tooltip' => 'Indirizzo email del contatto', 'placeholder' => 'es: mario.rossi@example.com', 'help' => 'Inserisci un indirizzo email valido', 'helper_text' => '', 'description' => ''],
         'phone' => ['label' => 'Telefono', 'tooltip' => 'Numero di telefono del contatto', 'placeholder' => 'es: +39 123 456 7890', 'help' => 'Inserisci il numero con prefisso internazionale', 'helper_text' => '', 'description' => ''],
         'telegram_chat_id' => ['label' => 'Chat ID Telegram', 'tooltip' => 'ID della chat Telegram del contatto', 'placeholder' => 'es: 123456789', 'help' => 'ID numerico fornito dal bot Telegram', 'helper_text' => '', 'description' => ''],
-=======
-        'name' => [
-            'label' => 'Nome',
-            'tooltip' => 'Nome del contatto',
-            'placeholder' => 'es: Mario Rossi',
-            'help' => 'Inserisci il nome completo del contatto',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'email' => [
-            'label' => 'Email',
-            'tooltip' => 'Indirizzo email del contatto',
-            'placeholder' => 'es: mario.rossi@example.com',
-            'help' => 'Inserisci un indirizzo email valido',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'phone' => [
-            'label' => 'Telefono',
-            'tooltip' => 'Numero di telefono del contatto',
-            'placeholder' => 'es: +39 123 456 7890',
-            'help' => 'Inserisci il numero con prefisso internazionale',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'telegram_chat_id' => [
-            'label' => 'Chat ID Telegram',
-            'tooltip' => 'ID della chat Telegram del contatto',
-            'placeholder' => 'es: 123456789',
-            'help' => 'ID numerico fornito dal bot Telegram',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_OQ3vKd
         'group' => [
             'label' => 'Gruppo',
             'tooltip' => 'Gruppo di appartenenza del contatto',
@@ -66,11 +19,8 @@ return [
                 'users' => ['label' => 'Utenti', 'tooltip' => 'Utenti standard'],
                 'support' => ['label' => 'Supporto', 'tooltip' => 'Team di supporto'],
             ],
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'channels' => [
             'label' => 'Canali',
@@ -82,11 +32,8 @@ return [
                 'telegram' => ['label' => 'Telegram', 'tooltip' => 'Notifiche via Telegram'],
                 'push' => ['label' => 'Push', 'tooltip' => 'Notifiche push sul browser'],
             ],
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'preferences' => [
             'label' => 'Preferenze',
@@ -104,13 +51,9 @@ return [
                 ],
                 'quiet_hours' => ['label' => 'Ore di silenzio', 'tooltip' => 'Periodo in cui non inviare notifiche', 'help' => 'Le notifiche verranno inviate al termine del periodo di silenzio'],
             ],
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
-<<<<<<< .merge_file_48xNXw
         'is_active' => ['label' => 'Attivo', 'tooltip' => 'Stato di attivazione del contatto', 'help' => 'Disattiva temporaneamente l\'invio di notifiche a questo contatto', 'helper_text' => '', 'description' => ''],
         'last_notified_at' => ['label' => 'Ultima notifica', 'tooltip' => 'Data e ora dell\'ultima notifica inviata', 'helper_text' => '', 'description' => ''],
         'id' => ['label' => 'id'],
@@ -124,27 +67,6 @@ return [
         'inactive' => ['label' => 'inactive'],
         'first_name' => ['label' => 'first_name'],
         'last_name' => ['label' => 'last_name'],
-=======
-        'is_active' => [
-            'label' => 'Attivo',
-            'tooltip' => 'Stato di attivazione del contatto',
-            'help' => 'Disattiva temporaneamente l\'invio di notifiche a questo contatto',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'last_notified_at' => [
-            'label' => 'Ultima notifica',
-            'tooltip' => 'Data e ora dell\'ultima notifica inviata',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_OQ3vKd
     ],
     'actions' => [
         'test_notification' => [
@@ -175,9 +97,6 @@ return [
         'status' => ['label' => 'Stato', 'tooltip' => 'Filtra per stato di attivazione'],
         'last_notified' => ['label' => 'Ultima notifica', 'tooltip' => 'Filtra per data ultima notifica'],
     ],
-<<<<<<< HEAD
     'label' => 'Contacts',
     'plural_label' => 'Contacts (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

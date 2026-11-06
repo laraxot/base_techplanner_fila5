@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 issues:
   - "https://github.com/provtv/module_tenant_fila5/issues/18"
@@ -17,7 +16,6 @@ related:
 status: active
 ---
 
-<<<<<<< .merge_file_0FDR8K
 # Sushi To Jsons
 
 > Questo trait espone i file JSON del tenant attivo come righe Sushi; il percorso risolto dal tenant è parte del contratto di isolamento, non un dettaglio di ricerca file.
@@ -82,9 +80,3 @@ validazione applicativa, non nascosta durante il caricamento.
 - `tests/Unit/SushiToJsonTraitPestTest.php`
 - `tests/Integration/Traits/SushiToJsonTraitIntegrationTest.php`
 
-=======
-See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ru2EVO

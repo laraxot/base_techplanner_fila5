@@ -21,14 +21,7 @@ status: draft
 ## 📊 Vision e Filosofia Implementata
 
 ### Missione Sociale
-<<<<<<< .merge_file_qQKnFM
-=======
-- **Democratizzazione**: Accesso gratuito alla <slogan> per gestanti vulnerabili
-<<<<<<< HEAD
->>>>>>> .merge_file_GZEGps
 - **Democratizzazione**: Accesso gratuito alla salute orale per gestanti vulnerabili
-=======
->>>>>>> 6ed19256f (.)
 - **Umanità**: Oltre la tecnologia, toccare il cuore delle persone
 - **Inclusività**: Nessuna discriminazione, massima apertura sociale
 - **Competenza Medica**: Expertise certificata e protocolli sicuri
@@ -172,14 +165,7 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - **Bounce Rate**: <45% sulle sezioni chiave
 
 ### SEO
-<<<<<<< .merge_file_qQKnFM
-=======
-- **Keywords**: <slogan> gravidanza, odontoiatra gratuito gestanti
-<<<<<<< HEAD
->>>>>>> .merge_file_GZEGps
 - **Keywords**: salute orale gravidanza, odontoiatra gratuito gestanti
-=======
->>>>>>> 6ed19256f (.)
 - **Structured Data**: MedicalOrganization, MedicalService
 - **Meta Tags**: Ottimizzati per search intent
 
@@ -192,22 +178,6 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ### Strategici
 - [Strategia Contenuti CMS](pages-content-strategy.md)
-<<<<<<< .merge_file_qQKnFM
-=======
-- [Componenti Servizi](../../Themes/One/project_docs/components/services-blocks.md)
-- [Content Strategy Frontend](../../../project_docs/frontend/content-strategy.md)
-
-### Tecnici
-- [Blocks Architecture](blocks.md)
-- [Component System](../../Themes/One/project_docs/components.md)
-- [Content Management](content-management.md)
-
-### Filosofici
-- [Architettura Sistema](../../../project_docs/architettura_sistema.md)
-- [Rules](../../../project_docs/rules.md)
-- [README Principale](../../../project_docs/README.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_GZEGps
 - [Componenti Servizi](../../themes/one/project_docs/components/services-blocks.md)
 - [Content Strategy Frontend](../../../../docs/project/frontend/content-strategy.md)
 
@@ -219,13 +189,7 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 ### Filosofici
 - [Architettura Sistema](../../../../docs/project/architettura_sistema.md)
 - [Rules](../../../../docs/project/rules.md)
-<<<<<<< .merge_file_qQKnFM
 - [README Principale](../../../../docs/project/README.md)
-=======
-- [README Principale](../../../../docs/project/readme.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_GZEGps
 
 ## ✅ Checklist Completamento
 
@@ -299,29 +263,9 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 - **Emergency Ready**: Supporto 24/7 multilingue
 
 ---
-<<<<<<< .merge_file_qQKnFM
-=======
-
-<<<<<<< HEAD
->>>>>>> .merge_file_GZEGps
 **Data Implementazione**: 15 Gennaio 2025  
 **Versione Documentazione**: 1.0.0  
 **Maintainer**: Team <main module>  
 **Review**: Approvazione stakeholder medici, tecnici, UX
 
 *Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla salute orale attraverso tecnologia umana, competente e inclusiva.* 
-<<<<<<< .merge_file_qQKnFM
-=======
-=======
->>>>>>> 6ed19256f (.)
-**Data Implementazione**: 15 Gennaio 2025
-**Versione Documentazione**: 1.0.0
-**Maintainer**: Team <main module>
-**Review**: Approvazione stakeholder medici, tecnici, UX
-
-<<<<<<< HEAD
-*Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
-=======
-*Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_GZEGps

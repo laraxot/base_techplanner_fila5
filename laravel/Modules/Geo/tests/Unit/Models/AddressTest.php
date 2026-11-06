@@ -4,21 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Geo\Tests\Unit\Models;
 
-<<<<<<< .merge_file_eXuYeS
 use Modules\Geo\Database\Factories\AddressFactory;
 use Modules\Geo\Enums\AddressTypeEnum;
 use Modules\Geo\Models\Address;
 use Modules\Geo\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-=======
-uses(TestCase::class);
-
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
-use Modules\Geo\Models\Address;
-use Modules\Geo\Models\Comune;
-use Modules\Geo\Models\Province;
-use Modules\Geo\Tests\TestCase;
->>>>>>> .merge_file_8qSSCz
 
 uses(TestCase::class);
 test('address can be created', function (): void {

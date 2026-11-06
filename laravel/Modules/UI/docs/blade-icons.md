@@ -126,13 +126,6 @@ La stessa filosofia di gestione centralizzata dei path tramite action (es. GetMo
 - **Descrizione**: Icona per l'autenticazione e il login degli utenti
 - **Utilizzo**: `@svg('ui-login')` o `ui-login` nei componenti Filament
 - **Aggiunta**: 2025-01-27 - Sostituisce `heroicon-o-login` non disponibile
-<<<<<<< .merge_file_9uiNdy
-=======
-<<<<<<< HEAD
-- **Aggiunta**: [DATE] - Sostituisce `heroicon-o-login` non disponibile
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Gwtix7
 
 ### Icona Authenticate
 - **Nome**: `ui-authenticate`
@@ -140,13 +133,6 @@ La stessa filosofia di gestione centralizzata dei path tramite action (es. GetMo
 - **Descrizione**: Icona per l'autenticazione e verifica utenti
 - **Utilizzo**: `@svg('ui-authenticate')` o `ui-authenticate` nei componenti Filament
 - **Aggiunta**: 2025-01-27 - Sostituisce `authenticate` non disponibile
-<<<<<<< .merge_file_9uiNdy
-=======
-<<<<<<< HEAD
-- **Aggiunta**: [DATE] - Sostituisce `authenticate` non disponibile
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Gwtix7
 
 ## Come Funziona il Sistema
 
@@ -195,19 +181,6 @@ MenuItem::make()
     ->url('/login')
 ```
 
-<<<<<<< .merge_file_9uiNdy
-=======
-<<<<<<< HEAD
-## Nota sulla correzione e centralizzazione ([DATE])
-
-- Seguire i pattern e le regole documentate in [XotBaseServiceProvider.md](./xotbaseserviceprovider.md) per la registrazione delle icone Blade.
-- Centralizzare la logica di fallback e logging per i path SVG e la configurazione delle icone.
-- Documentare ogni estensione o personalizzazione.
-
-**Collegamento:** Vedi anche [XotBaseServiceProvider.md](./xotbaseserviceprovider.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Gwtix7
 ## Nota sulla correzione e centralizzazione (2025-05-13)
 
 - Seguire i pattern e le regole documentate in [XotBaseServiceProvider.md](./XotBaseServiceProvider.md) per la registrazione delle icone Blade.
@@ -217,12 +190,4 @@ MenuItem::make()
 **Collegamento:** Vedi anche [XotBaseServiceProvider.md](./XotBaseServiceProvider.md)
 
 ## Conclusione
-<<<<<<< .merge_file_9uiNdy
 Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e i principi di design software possano convergere in una soluzione elegante ed efficace. La sua implementazione bilancia perfettamente la necessità di flessibilità con la robustezza del sistema, creando un ponte tra la modularità del codice e l'espressività dell'interfaccia utente. 
-=======
-<<<<<<< HEAD
-Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e i principi di design software possano convergere in una soluzione elegante ed efficace. La sua implementazione bilancia perfettamente la necessità di flessibilità con la robustezza del sistema, creando un ponte tra la modularità del codice e l'espressività dell'interfaccia utente.
-=======
-Il metodo `registerBladeIcons` rappresenta un esempio di come la filosofia zen e i principi di design software possano convergere in una soluzione elegante ed efficace. La sua implementazione bilancia perfettamente la necessità di flessibilità con la robustezza del sistema, creando un ponte tra la modularità del codice e l'espressività dell'interfaccia utente.
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Gwtix7

@@ -15,27 +15,11 @@ status: draft
 ## Pacchetti Utilizzati
 
 ### Core
-<<<<<<< .merge_file_4MfXqa
 - [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../../UI/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../../Tenant/docs/packages.md) - Gestione multi-tenant
 - [laraxot/module_user_fila5](../../User/docs/packages.md) - Gestione utenti e permessi
 - [laraxot/module_lang_fila5](../../Lang/docs/packages.md) - Gestione lingue e traduzioni
-=======
-- [laraxot/module_xot_fila3](../Xot/docs/packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](../UI/docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila3](../Tenant/docs/packages.md) - Gestione multi-tenant
-- [laraxot/module_user_fila3](../User/docs/packages.md) - Gestione utenti e permessi
-- [laraxot/module_lang_fila3](../Lang/docs/packages.md) - Gestione lingue e traduzioni
-<<<<<<< HEAD
-- [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila5](../tenant/docs/packages.md) - Gestione multi-tenant
-- [laraxot/module_user_fila5](../user/docs/packages.md) - Gestione utenti e permessi
-- [laraxot/module_lang_fila5](../lang/docs/packages.md) - Gestione lingue e traduzioni
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_IngJ3G
 
 ### Development
 - [spatie/laravel-package-tools](https://github.com/spatie/laravel-package-tools) - Strumenti per lo sviluppo di pacchetti Laravel
@@ -83,12 +67,4 @@ status: draft
 - [Gestione Contenuti](packages/content-management.md)
 - [Performance](packages/performance.md)
 - [SEO](packages/seo.md)
-<<<<<<< .merge_file_4MfXqa
 - [Analytics](packages/analytics.md)
-=======
-<<<<<<< HEAD
-- [Analytics](packages/analytics.md)
-=======
-- [Analytics](packages/analytics.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_IngJ3G

@@ -1,18 +1,8 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-<<<<<<< .merge_file_nz9M4o
 namespace Modules\Cms\Tests\Unit\Models;
-=======
-=======
->>>>>>> 6ed19256f (.)
-use Illuminate\Database\Eloquent\Model;
-use Modules\Cms\Models\Conf;
-
-use function Safe\class_uses;
->>>>>>> .merge_file_suvNrt
 
 use Modules\Cms\Models\Conf;
 use Modules\Cms\Tests\TestCase;

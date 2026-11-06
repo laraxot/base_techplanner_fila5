@@ -4,21 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Database\Factories;
 
-<<<<<<< .merge_file_XW4Vbf
-<<<<<<< .merge_file_kGHMmX
 use Carbon\Carbon;
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_pivfwE
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_VKAk4t
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Employee\Models\TimeRecord;
-=======
-use Modules\Employee\Models\TimeRecord;
-use Illuminate\Database\Eloquent\Factories\Factory;
->>>>>>> 6ed19256f (.)
 
 /** @extends Factory<TimeRecord> */
 class TimeRecordFactory extends Factory
@@ -53,11 +41,3 @@ class TimeRecordFactory extends Factory
         ];
     }
 }
-<<<<<<< .merge_file_XW4Vbf
-
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_VKAk4t

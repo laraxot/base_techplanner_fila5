@@ -45,11 +45,7 @@ Il metodo helper nel controller/resource gestisce la logica di rendering:
 private function formatContacts($record): string
 {
     $contacts = [];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Telefono
     if ($record->phone) {
         $contacts[] = '<a href="tel:' . $record->phone . '" class="inline-flex items-center text-blue-600 hover:text-blue-800 transition-colors duration-200">
@@ -59,11 +55,7 @@ private function formatContacts($record): string
             <span class="text-xs font-medium hidden sm:inline-block">' . htmlspecialchars($record->phone) . '</span>
         </a>';
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Email
     if ($record->email) {
         $contacts[] = '<a href="mailto:' . $record->email . '" class="inline-flex items-center text-green-600 hover:text-green-800 transition-colors duration-200">
@@ -74,11 +66,7 @@ private function formatContacts($record): string
             <span class="text-xs font-medium hidden sm:inline-block">' . htmlspecialchars(Str::limit($record->email, 20)) . '</span>
         </a>';
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // PEC (Posta Elettronica Certificata)
     if ($record->pec) {
         $contacts[] = '<a href="mailto:' . $record->pec . '" class="inline-flex items-center text-purple-600 hover:text-purple-800 transition-colors duration-200">
@@ -88,11 +76,7 @@ private function formatContacts($record): string
             <span class="text-xs font-medium hidden sm:inline-block">PEC</span>
         </a>';
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // WhatsApp
     if ($record->whatsapp) {
         $whatsappNumber = preg_replace('/[^0-9]/', '', $record->whatsapp);
@@ -104,15 +88,9 @@ private function formatContacts($record): string
             <span class="text-xs font-medium hidden sm:inline-block">WA</span>
         </a>';
     }
-<<<<<<< HEAD
     
     return empty($contacts) 
         ? '<span class="text-gray-400 text-sm italic">Nessun contatto</span>' 
-=======
-
-    return empty($contacts)
-        ? '<span class="text-gray-400 text-sm italic">Nessun contatto</span>'
->>>>>>> 6ed19256f (.)
         : '<div class="flex flex-wrap gap-2 items-center">' . implode('', $contacts) . '</div>';
 }
 ```
@@ -181,11 +159,7 @@ private function formatContacts($record): string
 ### Campi Supportati
 Il modulo Notify supporta questi campi di contatto standard:
 - `phone` - Telefono fisso
-<<<<<<< HEAD
 - `mobile` - Telefono cellulare  
-=======
-- `mobile` - Telefono cellulare
->>>>>>> 6ed19256f (.)
 - `email` - Email principale
 - `pec` - Posta Elettronica Certificata
 - `whatsapp` - Numero WhatsApp
@@ -248,7 +222,6 @@ Questo pattern può essere applicato a:
 - [Best Practices](best_practices.md)
 
 ### Root Documentation
-<<<<<<< HEAD
 - [Filament Table Columns Best Practices](../../../../docs/filament-table-columns-best-practices.md)
 - [Composite Columns Pattern](../../../../docs/composite-columns-pattern.md)
 - [UI/UX Standards](../../../../docs/ui-ux-standards.md)
@@ -260,41 +233,11 @@ Questo pattern può essere applicato a:
 ## Changelog
 
 ### [DATE]
-<<<<<<< .merge_file_OmDRz7
-=======
-=======
-- [Filament Table Columns Best Practices](../../../docs/filament-table-columns-best-practices.md)
-- [Composite Columns Pattern](../../../docs/composite-columns-pattern.md)
-- [UI/UX Standards](../../../docs/ui-ux-standards.md)
-
-### Altri Moduli
->>>>>>> 6ed19256f (.)
-- [TechPlanner Contacts Column](../../TechPlanner/docs/contacts-column-implementation-complete.md)
-- [UI Components](../../UI/docs/components.md)
-
-## Changelog
-
-### 2025-08-01
->>>>>>> .merge_file_ANyrPD
 - **Creazione**: Documentazione iniziale del pattern
 - **Standardizzazione**: Pattern derivato da TechPlanner
 - **Best Practices**: Definite regole architetturali
 
 ---
-<<<<<<< .merge_file_OmDRz7
 *Ultimo aggiornamento: [DATE]*  
 *Autore: Sistema Laraxot*  
 *Versione: 1.0*
-=======
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-08-01*  
-*Ultimo aggiornamento: [DATE]*  
-*Autore: Sistema Laraxot*  
-*Versione: 1.0*
-=======
-*Ultimo aggiornamento: 2025-08-01*
-*Autore: Sistema Laraxot*
-*Versione: 1.0*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ANyrPD

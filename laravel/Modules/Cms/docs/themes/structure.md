@@ -79,16 +79,9 @@ status: draft
 
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
-<<<<<<< .merge_file_xgeqR8
 * [structure.md](../../../Gdpr/docs/structure.md)
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
-=======
-<<<<<<< HEAD
-* [structure.md](laravel/modules/gdpr/docs/structure.md)
-* [structure.md](laravel/modules/notify/docs/structure.md)
-* [structure.md](laravel/modules/xot/docs/structure.md)
->>>>>>> .merge_file_SuLA58
 * [structure.md](laravel/modules/xot/docs/base/structure.md)
 * [structure.md](../../../Xot/docs/config/structure.md)
 * [structure.md](../../../User/docs/structure.md)
@@ -100,29 +93,4 @@ status: draft
 * [structure.md](../../../Activity/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
-<<<<<<< .merge_file_xgeqR8
 * [structure.md](../components/structure.md)
-=======
-* [structure.md](laravel/modules/cms/docs/components/structure.md)
-=======
->>>>>>> 6ed19256f (.)
-* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
-* [structure.md](laravel/Modules/Notify/docs/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
-* [structure.md](laravel/Modules/User/docs/structure.md)
-* [structure.md](laravel/Modules/UI/docs/structure.md)
-* [structure.md](laravel/Modules/Lang/docs/structure.md)
-* [structure.md](laravel/Modules/Job/docs/structure.md)
-* [structure.md](laravel/Modules/Media/docs/structure.md)
-* [structure.md](laravel/Modules/Tenant/docs/structure.md)
-* [structure.md](laravel/Modules/Activity/docs/structure.md)
-* [structure.md](laravel/Modules/Cms/docs/structure.md)
-* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
-<<<<<<< HEAD
-* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
-=======
-* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_SuLA58

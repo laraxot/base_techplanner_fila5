@@ -63,25 +63,9 @@ status: draft
 ## 🔗 Collegamenti
 
 - [← Cms Module README](../README.md)
-<<<<<<< .merge_file_ScMMsk
 - [← Root Documentation](../../../../docs/index.md)
-=======
-<<<<<<< HEAD
-- [← Cms Module README](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [← Root Documentation](../../../docs/index.md)
->>>>>>> .merge_file_uPy8ZA
 
 ---
 
 **Status**: ✅ COMPLETO
-<<<<<<< .merge_file_ScMMsk
 **Maintenance**: Routine
-=======
-<<<<<<< HEAD
-**Maintenance**: Routine
-=======
-**Maintenance**: Routine
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_uPy8ZA

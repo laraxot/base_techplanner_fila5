@@ -15,7 +15,6 @@ status: draft
 
 # Indice della Documentazione - Modulo Tenant
 
-<<<<<<< .merge_file_GX5MwV
 > **Verificato 2026-07-24**: la maggior parte dei link di questo indice autogenerato punta a file/sottocartelle
 > mai esistiti (`architecture/`, `models/`, `forms/`, `phpstan/index.md`, `actions/index.md`, `console/index.md`,
 > `enums/index.md`, `filament/index.md`, `services/index.md`, `traits/index.md`, `domain-management.md`,
@@ -137,52 +136,14 @@ Each tenant operates in complete isolation:
 - **[Xot](../../Xot/docs/index.md)**: Core framework and abstractions
 - **[Xot](../../Xot/docs/00-INDEX.md)**: Core framework and abstractions
 - **[User](../../User/docs/index.md)**: User management and authentication
-=======
-## Panoramica
-Questo documento serve come indice centrale per il modulo Tenant, fornendo una guida per la gestione del multi-tenancy all'interno di un'applicazione Laravel. Il modulo Tenant gestisce la creazione, configurazione e isolamento di tenant multipli con supporto per database separati e isolamento dei dati.
-
-## Principi Chiave
-1. **Modularità**: Il modulo Tenant è progettato per essere riutilizzabile in diversi progetti, mantenendo funzionalità generiche
-2. **Estensibilità**: Consente personalizzazione e aggiunta di nuove funzionalità di multi-tenancy senza alterare il codice principale
-3. **Affidabilità**: Garantisce l'isolamento sicuro dei dati tra tenant attraverso gestione robusta degli errori e logging
-
-## Funzionalità Principali
-- **Gestione Tenant**: Creazione, aggiornamento e eliminazione di profili tenant
-- **Isolamento Dati**: Isolamento completo dei dati tra tenant diversi
-- **Database Separati**: Supporto per database separati per ogni tenant
-- **Routing per Tenant**: Routing dinamico basato sul dominio del tenant
-- **Configurazione Dinamica**: Personalizzazione delle impostazioni per ogni tenant
-- **Autenticazione per Tenant**: Supporto per autenticazione basata su tenant
-- **Controllo Accessi**: Sistema di ruoli e permessi per tenant
-- **Migrazioni Automatiche**: Migrazioni automatiche per nuovi tenant
-
-## Collegamenti Correlati
-- [Documentazione Generale <nome progetto>](../../../../docs/README.md)
-- [Collegamenti Documentazione](../../../../docs/collegamenti-documentazione.md)
-- [Standard di Documentazione](../../../../docs/DOCUMENTATION_STANDARDS.md)
-- [Modulo Xot](../../Xot/docs/README.md)
-- [Modulo Lang](../../Lang/docs/README.md)
-- [Modulo UI](../../UI/docs/README.md)
-<<<<<<< HEAD
-- [Documentazione Generale <nome progetto>](../../../../../docs/readme.md)
-- [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
-- [Standard di Documentazione](../../../../../docs/documentation_standards.md)
-- [Modulo Xot](../../xot/docs/readme.md)
-- [Modulo Lang](../../lang/docs/readme.md)
-- [Modulo UI](../../ui/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Categorie Principali
 
 ### Architettura e Struttura
-<<<<<<< HEAD
 - [README](./readme.md) - Panoramica generale del modulo
 - [Architettura](./architecture/readme.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./models/readme.md) - Documentazione dei modelli Eloquent
-=======
->>>>>>> 6ed19256f (.)
 - [README](./README.md) - Panoramica generale del modulo
 - [Architettura](./architecture/README.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
@@ -201,11 +162,8 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 - [Pagine Filament](./filament-pages.md) - Componenti Filament Pages
 - [Form Filament](./Forms/README.md) - Form personalizzati
 - [Convenzioni Filament](./FILAMENT_EXTENSION_PATTERN.md) - Pattern di estensione per Filament
-<<<<<<< HEAD
 - [Form Filament](./forms/readme.md) - Form personalizzati
 - [Convenzioni Filament](./filament_extension_pattern.md) - Pattern di estensione per Filament
-=======
->>>>>>> 6ed19256f (.)
 
 ### API e Integrazione
 - [API RESTful](./api.md) - API per la gestione dei tenant
@@ -213,7 +171,6 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 - [Webhooks](./webhooks.md) - Sistema di webhook per eventi tenant
 
 ### Configurazione
-<<<<<<< HEAD
 - [Struttura Config](./config_structure.md) - Struttura dei file di configurazione
 - [Configurazione Multi-Tenant](./multi-tenant-config.md) - Configurazione sistema multi-tenant
 - [Principi di Configurazione](./configurations_usage_principles.md) - Principi per l'utilizzo delle configurazioni
@@ -230,8 +187,6 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 
 ### Testing e Qualità
 - [PHPStan Level 10](./phpstan/index.md) - Correzioni per PHPStan Level 10
-=======
->>>>>>> 6ed19256f (.)
 - [Struttura Config](./CONFIG_STRUCTURE.md) - Struttura dei file di configurazione
 - [Configurazione Multi-Tenant](./multi-tenant-config.md) - Configurazione sistema multi-tenant
 - [Principi di Configurazione](./CONFIGURATIONS_USAGE_PRINCIPLES.md) - Principi per l'utilizzo delle configurazioni
@@ -249,11 +204,8 @@ Questo documento serve come indice centrale per il modulo Tenant, fornendo una g
 ### Testing e Qualità
 - [PHPStan Level 10](./phpstan/INDEX.md) - Correzioni per PHPStan Level 10
 - [Testing](./TESTING.md) - Strategie e approcci per il testing
-<<<<<<< HEAD
 - [PHPStan Cluster 2026-03-10](./phpstan-cluster-2026-03-10.md) - Factory `DatabaseConfig` e modello canonico mancante
 - [Testing](./testing.md) - Strategie e approcci per il testing
-=======
->>>>>>> 6ed19256f (.)
 - [Test Multi-Tenant](./multi-tenant-testing.md) - Test specifici per ambiente multi-tenant
 
 ## Linee Guida per l'Implementazione
@@ -300,7 +252,6 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'acc
 ## Sottocartelle
 
 ### Actions
-<<<<<<< HEAD
 - [Index](./actions/index.md) - Indice della documentazione sulle azioni
 
 ### Architettura
@@ -326,8 +277,6 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nell'acc
 
 ### Traits
 - [Index](./traits/index.md) - Indice della documentazione sui traits
-=======
->>>>>>> 6ed19256f (.)
 - [Index](./Actions/INDEX.md) - Indice della documentazione sulle azioni
 
 ### Architettura
@@ -357,21 +306,9 @@ For detailed development guidance, see [Contributing Guide](../../docs/wiki/how-
 
 # Documentation Index
 
-<<<<<<< .merge_file_GX5MwV
 Modulo: Tenant
-=======
-*Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
-- Vedi anche: [../../../../../docs/README.md](../../../../../docs/readme.md)
-- Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
->>>>>>> .merge_file_WvOX0y
 
 ## File disponibili
 
-<<<<<<< .merge_file_GX5MwV
 <!-- auto-generato: elencare i file .md presenti -->
-=======
-- [Conflict Resolution](conflict-resolution.md)
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_WvOX0y

@@ -88,23 +88,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Address whereType($value)
  * @method static Builder<static>|Address whereUpdatedAt($value)
  * @method static Builder<static>|Address whereUpdatedBy($value)
-<<<<<<< .merge_file_5iq0hX
  * @method static Builder<static>|Address withTrashed(bool $withTrashed = true)
  * @method static Builder<static>|Address withoutTrashed()
-=======
  *
- * @property ProfileContract|null $deleter
- *
- * @method static AddressFactory factory($count = null, $state = [])
- *
-<<<<<<< HEAD
- * @property string|null $phone
- *
- * @method static Builder<static>|Address wherePhone($value)
->>>>>>> .merge_file_sIXcyK
- *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Address extends BaseModel
@@ -190,18 +176,12 @@ class Address extends BaseModel
      */
     public function getRegione(): ?array
     {
-        /** @phpstan-ignore method.unresolvableReturnType */
         $res = Comune::select('regione')
             ->distinct()
             ->orderBy('regione->nome')
             ->where('regione->codice', $this->administrative_area_level_1)
             ->get()
-<<<<<<< .merge_file_5iq0hX
             ->map(function (mixed $item) {
-=======
-            /* @phpstan-ignore argument.unresolvableType */
-            ->map(function ($item) {
->>>>>>> .merge_file_sIXcyK
                 $regione = $item->regione;
                 if (! is_array($regione) || ! isset($regione['codice'], $regione['nome'])) {
                     return;
@@ -219,13 +199,11 @@ class Address extends BaseModel
      */
     public function getProvincia(): ?array
     {
-        /** @phpstan-ignore method.unresolvableReturnType */
         $res = Comune::select('provincia')
             ->distinct()
             ->orderBy('provincia->nome')
             ->where('provincia->codice', $this->administrative_area_level_2)
             ->get()
-<<<<<<< .merge_file_5iq0hX
             ->map(function (mixed $item): array {
                 $provincia = is_array($item->provincia ?? null) ? $item->provincia : [];
 
@@ -234,27 +212,6 @@ class Address extends BaseModel
                     'nome' => is_string($provincia['nome'] ?? null) ? $provincia['nome'] : '',
                 ];
             });
-=======
-<<<<<<< HEAD
-            ->map(function ($item) {
-                $provincia = $item->provincia;
-                if (! is_array($provincia) || ! isset($provincia['codice'], $provincia['nome'])) {
-                    return null;
-                }
-
-                return ['codice' => $provincia['codice'] ?? null, 'nome' => $provincia['nome'] ?? null];
-            })
-            ->filter(fn ($p) => isset($p['codice'], $p['nome']));
-=======
-            /* @phpstan-ignore argument.unresolvableType */
-            ->map(fn ($item) => [
-                /* @phpstan-ignore offsetAccess.notFound */
-                'codice' => $item->provincia['codice'],
-                /* @phpstan-ignore offsetAccess.notFound */
-                'nome' => $item->provincia['nome'],
-            ]);
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_sIXcyK
 
         return $res->first();
     }
@@ -264,12 +221,7 @@ class Address extends BaseModel
      */
     public function getLocality(): ?array
     {
-<<<<<<< .merge_file_5iq0hX
         $comune = Comune::where('codice', $this->locality)
-=======
-        /* @phpstan-ignore-next-line */
-        return Comune::where('codice', $this->locality)
->>>>>>> .merge_file_sIXcyK
             ->distinct()
             ->first();
 

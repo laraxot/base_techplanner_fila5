@@ -9,15 +9,8 @@ use Modules\Tenant\Actions\GetTenantNameAction;
 
 class TestCommand extends Command
 {
-<<<<<<< HEAD
     protected $signature = 'tenant:test';
 
-=======
-    /** @var string */
-    protected $signature = 'tenant:test';
-
-    /** @var string */
->>>>>>> 6ed19256f (.)
     protected $description = 'Check Tenant';
 
     /**

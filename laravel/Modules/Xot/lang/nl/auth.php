@@ -10,7 +10,6 @@ return [
     ],
     'throttle' => 'Te veel aanmeld pogingen, probeer het nog eens na :seconds seconden.',
     'unknown' => 'Onbekende fout opgetreden',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -24,6 +23,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

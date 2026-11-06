@@ -17,175 +17,78 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Identificador único de la plantilla',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'mailable' => [
             'label' => 'Clase Mailable',
             'placeholder' => 'Ingrese el nombre de la clase Mailable',
             'help' => 'La clase PHP que maneja el envío de correos electrónicos',
             'helper_text' => 'Clase PHP que gestiona el envío de correos electrónicos',
             'description' => 'mailable',
-<<<<<<< .merge_file_o7kc3r
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'subject' => [
             'label' => 'Asunto',
             'placeholder' => 'Ingrese el asunto del correo electrónico',
             'help' => 'El asunto que aparecerá en el correo electrónico',
             'helper_text' => 'Asunto del correo electrónico',
             'description' => 'subject',
-<<<<<<< .merge_file_o7kc3r
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'html_template' => [
             'label' => 'Contenido HTML',
             'placeholder' => 'Ingrese el contenido HTML del correo electrónico',
             'help' => 'El contenido del correo electrónico en formato HTML',
             'helper_text' => 'Contenido HTML de la plantilla de correo electrónico',
             'description' => 'html_template',
-<<<<<<< .merge_file_o7kc3r
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'text_template' => [
             'label' => 'Contenido de Texto',
             'placeholder' => 'Ingrese el contenido de texto del correo electrónico',
             'help' => 'Versión de texto del correo electrónico para clientes que no admiten HTML',
             'helper_text' => 'Versión de texto de la plantilla de correo electrónico',
             'description' => 'text_template',
-<<<<<<< .merge_file_o7kc3r
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'version' => [
             'label' => 'Versión',
             'help' => 'Número de versión de la plantilla',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'created_at' => [
             'label' => 'Creado el',
             'helper_text' => 'Fecha de creación de la plantilla',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'updated_at' => [
             'label' => 'Última Modificación',
             'helper_text' => 'Fecha de la última modificación de la plantilla',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'from_email' => [
             'label' => 'Email del remitente',
             'helper_text' => 'Dirección de correo electrónico del remitente',
             'placeholder' => 'noreply@ejemplo.com',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'from_name' => [
             'label' => 'Nombre del remitente',
             'helper_text' => 'Nombre mostrado del remitente',
             'placeholder' => 'Nombre de la Empresa',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'variables' => [
             'label' => 'Variables disponibles',
             'helper_text' => 'Lista de variables que se pueden utilizar en la plantilla',
             'placeholder' => 'ej: {{name}}, {{email}}',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'is_markdown' => [
             'label' => 'Usar Markdown',
             'helper_text' => 'Indica si la plantilla utiliza sintaxis Markdown',
-<<<<<<< HEAD
             'tooltip' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'status' => [
             'label' => 'Estado',
             'helper_text' => 'Estado actual de la plantilla',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => ''],
         'toggleColumns' => [
@@ -217,75 +120,25 @@ return [
             'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
-<<<<<<< .merge_file_o7kc3r
             'description' => ''],
-=======
-            'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'slug' => [
             'label' => 'slug',
             'description' => 'slug',
             'helper_text' => 'slug',
             'placeholder' => 'slug',
-<<<<<<< .merge_file_o7kc3r
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'name' => [
             'description' => 'Nombre de la plantilla',
             'helper_text' => 'Nombre descriptivo para identificar la plantilla',
             'placeholder' => 'Ej: Bienvenida, Confirmación de pedido, Restablecer contraseña',
             'label' => 'Nombre de la Plantilla',
-<<<<<<< .merge_file_o7kc3r
             'tooltip' => ''],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_IXptx2
         'params' => [
             'label' => 'Parámetros',
             'helper_text' => 'Ingrese los parámetros separados por comas que se pueden utilizar en la plantilla',
             'placeholder' => 'name, email, date, company',
             'description' => 'Parámetros disponibles para la plantilla de correo electrónico',
-<<<<<<< .merge_file_o7kc3r
             'tooltip' => '']],
-=======
-<<<<<<< HEAD
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_IXptx2
     'filters' => [
         'search_placeholder' => 'Buscar plantillas...',
         'version' => [
@@ -386,17 +239,6 @@ return [
         'bounced' => 'Rebotado',
         'spam' => 'Marcado como spam'],
     'model' => [
-<<<<<<< .merge_file_o7kc3r
         'label' => 'plantilla de correo'],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label'];
-=======
-        'label' => 'plantilla de correo',
-    ],
-<<<<<<< HEAD
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_IXptx2

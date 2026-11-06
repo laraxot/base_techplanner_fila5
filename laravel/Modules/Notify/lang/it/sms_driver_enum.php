@@ -14,11 +14,7 @@ return [
         'icon' => 'heroicon-o-chat-bubble-left-right',
         'description' => 'Piattaforma cloud per comunicazioni con API robuste e documentazione completa'],
     'nexmo' => [
-<<<<<<< HEAD
         'label' => 'Nexmo (Vonage]',
-=======
-        'label' => 'Nexmo (Vonage)',
->>>>>>> 6ed19256f (.)
         'color' => 'warning',
         'icon' => 'heroicon-o-globe-alt',
         'description' => 'Provider globale per SMS e comunicazioni con copertura internazionale'],
@@ -41,13 +37,7 @@ return [
         'label' => 'Agile Telecom',
         'color' => 'gray',
         'icon' => 'heroicon-o-truck',
-<<<<<<< .merge_file_onu7Jd
         'description' => 'Provider italiano per servizi di telecomunicazioni e SMS'],
-=======
-        'description' => 'Provider italiano per servizi di telecomunicazioni e SMS',
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_eabUx5
     'label' => 'Sms Driver Enum',
     'plural_label' => 'Sms Driver Enum (Plurale)',
     'navigation' => [
@@ -81,13 +71,4 @@ return [
         'edit' => [
             'label' => 'Modifica Sms Driver Enum'],
         'delete' => [
-<<<<<<< .merge_file_onu7Jd
             'label' => 'Elimina Sms Driver Enum']]];
-=======
-            'label' => 'Elimina Sms Driver Enum',
-        ],
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_eabUx5

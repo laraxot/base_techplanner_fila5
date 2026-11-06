@@ -8,27 +8,16 @@ return [
             'buttons' => [
                 'refresh' => 'Làm mới',
             ],
-<<<<<<< HEAD
             'heading' => 'Tình trạng ứng dụng',
-=======
-
-            'heading' => 'Tình trạng ứng dụng',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Cài đặt',
                 'label' => 'Tình trạng ứng dụng',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Kết quả được kiểm tra từ',
             ],
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -42,6 +31,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_32bzYT
 ---
 title: "**Indice Documentazione Modulo Activity**"
 type: index
@@ -7,10 +6,6 @@ tags: [docs, activity]
 qmd: "**indice documentazione modulo activity** activity"
 status: stale
 ---
-=======
-<<<<<<< HEAD
-# 📚 **Indice Documentazione Modulo Activity**
->>>>>>> .merge_file_MwglHs
 
 > Nota 2026-10-14 (docs-audit): Copia con contenuto raddoppiato di 00-INDEX.md (varianti di sola maiuscola) con link a file inesistenti; l'indice canonico e' 00-INDEX.md. Contenuto non riscritto, verificare prima di usarlo.
 
@@ -64,18 +59,10 @@ status: stale
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e task aperti.
 3. [philosophy.md](./philosophy.md) - I principi dell'Audit Trail e dell'Event Sourcing.
 
-<<<<<<< .merge_file_32bzYT
 ## 🏗️ **Architettura e Pattern**
 - 🧩 **[Core Structure](./structure.md)** - Organizzazione interna del modulo.
 - 🎯 **[Event Sourcing](./event-sourcing.md)** - Dettagli sull'implementazione degli eventi di dominio.
 - 🔧 **[Actions Calling Actions](./actions-calling-actions-pattern.md)** - Pattern per la composizione delle azioni di logging.
-=======
----
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
->>>>>>> 6ed19256f (.)
-# Activity Module - Documentation Index
->>>>>>> .merge_file_MwglHs
 
 ## 📊 **Filament & UI**
 - 📈 **[Filament Resources](./filament-resources.md)** - Gestione Log e Analytics nell'Admin Panel.
@@ -222,7 +209,6 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 ---
 
 *Modulo di riferimento per PHPStan compliance nel progetto Laraxot*
-<<<<<<< HEAD
 
 ## Dependency Intelligence
 
@@ -234,12 +220,7 @@ Il modulo Activity serve da **riferimento** per compliance nativa:
 - Riferimento globale: [Pre-Edit Docs-First Rule](../../../../docs/rules/pre-edit-docs-first-rule.md)
 - Memory: [Pre-Edit Docs-First Memory](../../../../docs/memory/pre-edit-docs-first-memory.md)
 - Skill: [Pre-Edit Docs-First Skill](../../../../docs/skills/pre-edit-docs-first-skill.md)
-<<<<<<< .merge_file_32bzYT
 
 ## Cosa manca per completare
 
 [completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_MwglHs

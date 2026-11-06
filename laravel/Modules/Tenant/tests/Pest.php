@@ -22,32 +22,6 @@ declare(strict_types=1);
  *   migrare per directory, non mescolare;
  * - vietata la cartella `tests/Support/` (ADR-002).
  */
-<<<<<<< .merge_file_CzkEMk
-=======
-
-// NOTE: The 'toBeTenant' expectation was removed as it was not used elsewhere
-// and caused PHPStan errors related to '$this' binding.
-
-/*
- * |--------------------------------------------------------------------------
- * | Functions
- * |--------------------------------------------------------------------------
- * |
- * | While Pest is very powerful out-of-the-box, you may have some testing code specific to your
- * | project that you don't want to repeat in every file. Here you can also expose helpers as
- * | global functions to help you to reduce the number of lines of code in your test files.
- * |
- */
-
-function createTenant(array $attributes = []): Tenant
-{
-    /** @var Tenant $tenant */
-    $tenant = Tenant::factory()->create($attributes);
-    Assert::isInstanceOf($tenant, Tenant::class); // Added for PHPStan
-<<<<<<< HEAD
-
-=======
->>>>>>> 6ed19256f (.)
     return $tenant;
 }
 
@@ -56,16 +30,9 @@ function makeTenant(array $attributes = []): Tenant
     /** @var Tenant $tenant */
     $tenant = Tenant::factory()->make($attributes);
     Assert::isInstanceOf($tenant, Tenant::class); // Added for PHPStan
-<<<<<<< HEAD
 
     return $tenant;
 }
 
 // Removed TenantUser functions as the model doesn't exist in this module
-=======
-    return $tenant;
-}
-
-// Removed TenantUser functions as the model doesn't exist in this module
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_xajnfQ

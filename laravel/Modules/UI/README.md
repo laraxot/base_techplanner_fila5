@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_fb29lM
 ---
 id: module-ui-readme
 title: "UI - componenti visuali condivisi"
@@ -20,10 +19,6 @@ sources: []
 ---
 
 # UI
-=======
-<<<<<<< HEAD
-# 🎨 UI
->>>>>>> .merge_file_Vf3VhI
 
 [![Domain-UI](https://img.shields.io/badge/Domain-UI%20Kit-7B1FA2.svg)](#)
 [![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
@@ -74,13 +69,7 @@ Questo modulo pubblica contratti usabili da altri moduli. La logica vive nelle `
 ## La visione
 ## La visione
 
-<<<<<<< .merge_file_fb29lM
 Crediamo che il software debba essere **chiaro, modulare e potente**. Ogni modulo è stato pensato per risolvere problemi reali con soluzioni eleganti.
-=======
-=======
->>>>>>> 6ed19256f (.)
-# 🎨 UI Module - Eleva la Tua Interfaccia al Livello Successivo! 🚀
->>>>>>> .merge_file_Vf3VhI
 
 ## Perché esiste questo modulo
 
@@ -226,18 +215,8 @@ rigenerati quando il modulo cambia; non copiarli in badge non verificati.
 | Migrazioni PHP | 3 |
 | SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
 
-<<<<<<< .merge_file_fb29lM
 Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
 modifica eseguire i gate dal progetto Laravel:
-=======
----
-<<<<<<< HEAD
-| Lingua | Link |
-|--------|------|
-| 🇮🇹 Presentazione | Questo file (`README.md`) |
-| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
->>>>>>> .merge_file_Vf3VhI
 
 ```bash
 cd laravel
@@ -245,12 +224,6 @@ php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/UI
 ./vendor/bin/pest Modules/UI
 ```
 
-<<<<<<< .merge_file_fb29lM
 La responsabilità del modulo, le decisioni architetturali e le opportunità sono
 documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
 rigenerati quando il modulo cambia; non copiarli in badge non verificati.
-=======
-**Modulo** `ui` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_Vf3VhI

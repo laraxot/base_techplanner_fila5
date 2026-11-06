@@ -7,11 +7,8 @@ return [
         'view' => [
             'label' => 'Visualizzazione',
             'tooltip' => 'Seleziona la visualizzazione da mostrare',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -22,7 +19,6 @@ return [
             'color' => 'primary',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Footer',
     'plural_label' => 'Footer (Plurale)',
     'navigation' => [
@@ -36,6 +32,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

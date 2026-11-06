@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Password Profilo',
         'plural_label' => 'Password Profilo',
@@ -34,20 +33,10 @@ return [
             'placeholder' => 'Conferma la tua nuova password',
             'helper_text' => 'Devi inserire la stessa password per conferma',
             'description' => 'Inserisci nuovamente la nuova password per confermarla',
-=======
-    'fields' => [
-        'new_password_confirmation' => [
-            'label' => 'Conferma nuova password',
-            'placeholder' => 'Conferma la tua nuova password',
-            'helper_text' => '',
-            'description' => 'Inserisci nuovamente la nuova password per confermarla',
-            'tooltip' => 'Ripeti la nuova password per sicurezza',
->>>>>>> 6ed19256f (.)
             'icon' => 'heroicon-o-lock-closed',
             'color' => 'warning',
         ],
     ],
-<<<<<<< HEAD
     'actions' => [
         'save' => [
             'label' => 'Salva Password',
@@ -67,10 +56,4 @@ return [
         'password_mismatch' => 'Le password non coincidono',
         'error' => 'Si è verificato un errore',
     ],
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 6ed19256f (.)
 ];

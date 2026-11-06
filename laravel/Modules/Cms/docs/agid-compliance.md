@@ -13,14 +13,7 @@ status: draft
 # 🏛️ AGID Compliance - CMS Module
 
 **Module**: Cms
-<<<<<<< .merge_file_UEFDOg
-=======
-**Date**: 2025-10-02
-<<<<<<< HEAD
->>>>>>> .merge_file_SbkBMc
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Reference**: [design-comuni-pagine-statiche v2.4.0](https://github.com/italia/design-comuni-pagine-statiche)
 **Compliance Status**: **80%** ✅
 
@@ -543,16 +536,5 @@ class Page extends BaseModel
 
 ---
 
-<<<<<<< .merge_file_UEFDOg
 
 **Owner**: Cms Module Team
-=======
-**Last Updated**: 2025-10-02
-**Next Review**: Bi-weekly
-<<<<<<< HEAD
-
-**Owner**: Cms Module Team
-=======
-**Owner**: Cms Module Team
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_SbkBMc

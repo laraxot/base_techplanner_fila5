@@ -19,12 +19,9 @@ return [
             'label' => 'ID',
             'help' => 'Unique identifier of the stored event',
             'validation' => 'required|integer|min:1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'event_class' => [
             'label' => 'Event Class',
@@ -32,12 +29,9 @@ return [
             'help' => 'Full name of the class that represents the event',
             'validation' => 'required|string|max:255',
             'searchable' => '1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'event_properties' => [
             'label' => 'Event Properties',
@@ -46,12 +40,9 @@ return [
             'validation' => 'required|json',
             'type' => 'json',
             'format' => 'json',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'aggregate_uuid' => [
             'label' => 'Aggregate UUID',
@@ -59,12 +50,9 @@ return [
             'help' => 'Unique identifier of the related aggregate',
             'validation' => 'required|uuid',
             'searchable' => '1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'aggregate_version' => [
             'label' => 'Aggregate Version',
@@ -72,24 +60,18 @@ return [
             'help' => 'Version number of the aggregate',
             'validation' => 'required|integer|min:1',
             'sortable' => '1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'event_version' => [
             'label' => 'Event Version',
             'placeholder' => 'Event version',
             'help' => 'Version number of the event format',
             'validation' => 'nullable|string|max:20',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'meta_data' => [
             'label' => 'Metadata',
@@ -98,12 +80,9 @@ return [
             'validation' => 'nullable|json',
             'type' => 'json',
             'format' => 'json',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Creation Date',
@@ -112,12 +91,9 @@ return [
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
             'sortable' => '1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_by' => [
             'label' => 'Created By',
@@ -125,24 +101,18 @@ return [
             'help' => 'User who generated the event',
             'validation' => 'nullable|integer|exists:users,id',
             'searchable' => '1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_by' => [
             'label' => 'Updated By',
             'placeholder' => 'Updating user',
             'help' => 'User who updated the event',
             'validation' => 'nullable|integer|exists:users,id',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'stream_name' => [
             'label' => 'Stream Name',
@@ -150,12 +120,9 @@ return [
             'help' => 'Identifier of the stream the event belongs to',
             'validation' => 'nullable|string|max:255',
             'searchable' => '1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'stream_position' => [
             'label' => 'Stream Position',
@@ -163,23 +130,17 @@ return [
             'help' => 'Sequential position of the event in the stream',
             'validation' => 'nullable|integer|min:0',
             'sortable' => '1',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'toggleColumns' => [
             'label' => 'Show/Hide Columns',
             'placeholder' => '',
             'help' => 'Configure column visibility in the table',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -371,32 +332,19 @@ return [
     'pagination' => [
         'per_page' => '50',
         'options' => [
-<<<<<<< HEAD
             0 => '25',
             1 => '50',
             2 => '100',
             3 => '200',
-=======
-            '0' => '25',
-            '1' => '50',
-            '2' => '100',
-            '3' => '200',
->>>>>>> 6ed19256f (.)
         ],
         'simple' => '',
     ],
     'cache' => [
         'ttl' => '600',
         'tags' => [
-<<<<<<< HEAD
             0 => 'stored_events',
             1 => 'event_sourcing',
             2 => 'monitoring',
-=======
-            '0' => 'stored_events',
-            '1' => 'event_sourcing',
-            '2' => 'monitoring',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'event_sourcing' => [
@@ -415,9 +363,6 @@ return [
         'performance_tracking' => '1',
         'audit_trail' => '1',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

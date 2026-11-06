@@ -13,13 +13,6 @@ status: draft
 # The Zen of Seasonal Emails
 
 **Date**: 2025-12-19
-<<<<<<< .merge_file_hGkBZ1
-=======
-<<<<<<< HEAD
-**Date**: 2025-12-19
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_AptlrR
 **By**: Antigravity
 
 ## Philosophy
@@ -67,12 +60,4 @@ This demonstrates the flexibility of the system: multiple "skins" for the same c
 - **Improvement**: We could add a "Preview" feature in the backend to see how `base.html` transforms contextually.
 - **Verification**: Static analysis tools (PHPStan/PHPMD) ensure the *plumbing* is leak-proof, but only the *human eye* can verify the *feeling* of the template.
 
-<<<<<<< .merge_file_hGkBZ1
 *"Code is temporary, the feeling you give the user is permanent."*
-=======
-<<<<<<< HEAD
-*"Code is temporary, the feeling you give the user is permanent."*
-=======
-*"Code is temporary, the feeling you give the user is permanent."*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_AptlrR

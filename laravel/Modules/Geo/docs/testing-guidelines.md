@@ -370,11 +370,6 @@ describe('Geographic Performance', function () {
 
 ---
 
-<<<<<<< .merge_file_t3LMYU
-=======
-**Last Updated**: 2025-08-28
-<<<<<<< HEAD
->>>>>>> .merge_file_JvD8VZ
 
 title: "testing guidelines"
 type: note
@@ -386,10 +381,3 @@ issues: []
 discussions: []
 **Testing Framework**: Pest
 **Environment**: .env.testing
-<<<<<<< .merge_file_t3LMYU
-=======
-=======
-**Testing Framework**: Pest
-**Environment**: .env.testing
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_JvD8VZ

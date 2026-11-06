@@ -156,15 +156,5 @@ Il blocco può essere utilizzato in vari contesti:
 - [Analytics Integration](../packages/analytics.md)
 
 ## Collegamenti tra versioni di social.md
-<<<<<<< .merge_file_qO7ws8
 * [social.md](../../../Tenant/docs/it/config/social.md)
 * [social.md](laravel/modules/cms/docs/blocks/social.md)
-=======
-* [social.md](laravel/Modules/Tenant/docs/it/config/social.md)
-* [social.md](laravel/Modules/Cms/docs/blocks/social.md)
-<<<<<<< HEAD
-* [social.md](laravel/modules/tenant/docs/it/config/social.md)
-* [social.md](laravel/modules/cms/docs/blocks/social.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_IckdBw

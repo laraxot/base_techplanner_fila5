@@ -165,25 +165,7 @@ Ogni progetto può personalizzare i valori tramite variabili d'ambiente senza mo
 
 - [Modulo Notify](../../Notify/docs/modularity-hardcoded-names.md)
 - [Regole Cursor](../.cursor/rules/modularity-hardcoded-names.mdc)
-<<<<<<< .merge_file_fP6XUH
 - [Testing Guidelines](../../Notify/docs/testing-guidelines.md)
 
 ---
 **Questa regola è CRITICA e va applicata SEMPRE. La violazione compromette l'architettura modulare del sistema e crea debito tecnico significativo.**
-=======
-- [Testing Guidelines](../laravel/Modules/Notify/docs/testing-guidelines.md)
-<<<<<<< HEAD
-- [Modulo Notify](../laravel/modules/notify/docs/modularity-hardcoded-names.md)
-- [Regole Cursor](../.cursor/rules/modularity-hardcoded-names.mdc)
-- [Testing Guidelines](../laravel/modules/notify/docs/testing-guidelines.md)
-
----
-
-**Questa regola è CRITICA e va applicata SEMPRE. La violazione compromette l'architettura modulare del sistema e crea debito tecnico significativo.**
-=======
-
----
-
-**Questa regola è CRITICA e va applicata SEMPRE. La violazione compromette l'architettura modulare del sistema e crea debito tecnico significativo.**
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ZDcF4u

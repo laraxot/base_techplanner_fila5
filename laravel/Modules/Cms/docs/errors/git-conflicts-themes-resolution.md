@@ -183,16 +183,8 @@ php artisan view:clear
 
 ## Collegamenti Correlati
 
-<<<<<<< .merge_file_Tnf38I
 - [Documentazione Temi](../temi.md)
-=======
-- [Documentazione Temi](../../temi.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_IeP0Eo
 - [Gestione Conflitti Git](../../../../docs/git-conflicts-management.md)
-=======
-- [Gestione Conflitti Git](../../../docs/git-conflicts-management.md)
->>>>>>> 6ed19256f (.)
 - [Architettura CMS](../../architecture.md)
 - [Best Practices Sviluppo](../best-practices.md)
 
@@ -203,14 +195,4 @@ php artisan view:clear
 - **2025-01-06**: Standardizzazione sui componenti Bootstrap Italia
 
 ---
-<<<<<<< .merge_file_Tnf38I
 *Autore: Sistema di Risoluzione Conflitti Git*
-=======
-
-*Ultimo aggiornamento: 6 gennaio 2025*
-*Autore: Sistema di Risoluzione Conflitti Git*
-<<<<<<< HEAD
-*Autore: Sistema di Risoluzione Conflitti Git*
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_IeP0Eo

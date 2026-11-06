@@ -24,16 +24,8 @@ class BingMapData extends Data
      *         postalCode: ?string,
      *         addressLine: ?string,
      *         countryRegionIso2: ?string,
-<<<<<<< HEAD
      *         neighborhood: ?string,
-<<<<<<< .merge_file_1nbrac
      *         houseNumber: ?string
-=======
-     *         houseNumber?: ?string
-=======
-     *         neighborhood: ?string
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_h8O3OT
      *     }
      * } $data
      */
@@ -57,16 +49,8 @@ class BingMapData extends Data
      *         postalCode: ?string,
      *         addressLine: ?string,
      *         countryRegionIso2: ?string,
-<<<<<<< HEAD
      *         neighborhood: ?string,
-<<<<<<< .merge_file_1nbrac
      *         houseNumber: ?string
-=======
-     *         houseNumber?: ?string
-=======
-     *         neighborhood: ?string
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_h8O3OT
      *     }
      * }
      */

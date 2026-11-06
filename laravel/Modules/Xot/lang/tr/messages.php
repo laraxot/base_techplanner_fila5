@@ -17,11 +17,7 @@ return [
     ],
     'environment' => [
         'title' => 'Ortam Ayarları',
-<<<<<<< HEAD
         'save' => '.env\'yi Kaydet',
-=======
-        'save' => ".env'yi Kaydet",
->>>>>>> 6ed19256f (.)
         'success' => '.env dosyanız kaydedildi.',
         'errors' => '.env dosyanız kaydedilemedi, lütfen manuel yaratınız.',
     ],
@@ -30,7 +26,6 @@ return [
         'finished' => 'Uygulama başarıyla yüklendi.',
         'exit' => 'Çıkış yapmak için tıklayınız',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -44,6 +39,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

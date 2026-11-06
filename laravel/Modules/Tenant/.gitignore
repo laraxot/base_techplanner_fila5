@@ -94,7 +94,6 @@ storage/tenant/
 tenant_test_data.json
 tests/AuditCoverage/
 test_tenants.sql
-<<<<<<< .merge_file_F4lahO
 Thumbs.db
 *.tmp
 .Trashes
@@ -117,36 +116,4 @@ tenant.code-workspace
 /.github/skills/
 docs/graphify
 resources/lang
-=======
-
-# ==============================================
-# END OF TENANT .GITIGNORE
-# ==============================================
-
-# 🚫 File specifici del progetto
-*.fila2
-laravel
-public_html
-<<<<<<< HEAD
-lang/lang/
-_docs/
-_docs/
-Tests/
-
-# -----------------------------------------------------------------------------
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-# -----------------------------------------------------------------------------
-*~HEAD
-*~BASE
-*~LOCAL
-*~REMOTE
-*.orig
-*.rej
-*~head
-
-
-# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
-docs/archive/
-=======
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_U9hgYK

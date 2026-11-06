@@ -14,14 +14,7 @@ status: draft
 
 ## Filosofia dei Contenuti
 
-<<<<<<< .merge_file_gYAHfK
-=======
-<main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla <slogan progetto> per le gestanti vulnerabili**.
-<<<<<<< HEAD
->>>>>>> .merge_file_SkRXgM
 <main module> segue una filosofia di contenuti modulari e riutilizzabili che riflette la missione sociale del progetto: **garantire l'accesso alla salute orale per le gestanti vulnerabili**.
-=======
->>>>>>> 6ed19256f (.)
 
 ### Principi Guida
 
@@ -36,16 +29,8 @@ status: draft
 ### Vision Strategica
 La pagina servizi deve comunicare:
 - **Cosa**: Servizi odontoiatrici gratuiti per gestanti
-<<<<<<< .merge_file_gYAHfK
-=======
-- **Chi**: Donne incinte con ISEE ≤ 20.000€
-- **Perché**: <slogan progetto> cruciale per mamma e bambino
-<<<<<<< HEAD
->>>>>>> .merge_file_SkRXgM
 - **Chi**: Donne incinte con ISEE ≤ 20.000€ 
 - **Perché**: Salute orale cruciale per mamma e bambino
-=======
->>>>>>> 6ed19256f (.)
 - **Come**: Processo semplice e umano
 - **Dove**: Rete nazionale di professionisti qualificati
 
@@ -116,14 +101,7 @@ La pagina servizi deve comunicare:
 
 ### Parole Chiave SEO
 
-<<<<<<< .merge_file_gYAHfK
-=======
-- <slogan progetto> gravidanza
-<<<<<<< HEAD
->>>>>>> .merge_file_SkRXgM
 - salute orale gravidanza
-=======
->>>>>>> 6ed19256f (.)
 - odontoiatra gratuito gestanti
 - ISEE 20000 cure dentali
 - prevenzione dentale gravidanza
@@ -132,20 +110,6 @@ La pagina servizi deve comunicare:
 ## Collegamenti Strategici
 
 - [Content Management](content-management.md)
-<<<<<<< .merge_file_gYAHfK
 - [UI Components](../ui/project_docs/components.md)
 - [Theme Blocks](../../themes/one/project_docs/blocks.md)
 - [User Experience](../../../../docs/project/frontend/ux-guidelines.md)
-=======
-- [UI Components](../UI/docs/components.md)
-- [Theme Blocks](../../Themes/One/docs/blocks.md)
-- [User Experience](../../../docs/frontend/ux-guidelines.md)
-
-*Ultimo aggiornamento: 2025-01-15*
-<<<<<<< HEAD
-- [UI Components](../ui/project_docs/components.md)
-- [Theme Blocks](../../themes/one/project_docs/blocks.md)
-- [User Experience](../../../../docs/project/frontend/ux-guidelines.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_SkRXgM

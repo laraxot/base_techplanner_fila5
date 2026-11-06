@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Tests\Unit\Traits;
 
-<<<<<<< .merge_file_2xwMVQ
 use Exception;
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_CMd0Sw
 use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\File;
 use Mockery;

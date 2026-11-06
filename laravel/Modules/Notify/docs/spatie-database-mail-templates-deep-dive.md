@@ -21,11 +21,7 @@ Il pacchetto **spatie/laravel-database-mail-templates** permette di gestire temp
 - ✅ Layout HTML customizzabili
 - ✅ Supporto multilingua (via spatie/translatable)
 
-<<<<<<< HEAD
 **Versione Installata**: 3.7.1  
-=======
-**Versione Installata**: 3.7.1
->>>>>>> 6ed19256f (.)
 **Repository**: https://github.com/spatie/laravel-database-mail-templates
 
 ## Architettura nel Progetto PTVX
@@ -88,11 +84,7 @@ use Spatie\Translatable\HasTranslations;
 class MailTemplate extends SpatieMailTemplate
 {
     use HasTranslations;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public array $translatable = [
         'subject',
         'html_template',
@@ -124,15 +116,9 @@ public function scopeForMailable(Builder $query, Mailable $mailable): Builder
     if (!method_exists($mailable, 'getSlug')) {
         throw new \Exception('Il metodo getSlug() non è definito');
     }
-<<<<<<< HEAD
     
     $slug = $mailable->getSlug();
     
-=======
-
-    $slug = $mailable->getSlug();
-
->>>>>>> 6ed19256f (.)
     return $query
         ->where('mailable', get_class($mailable))
         ->where('slug', $slug);
@@ -160,11 +146,7 @@ SpatieEmail
 public function __construct(Model $record, string $slug)
 {
     $this->slug = Str::slug($slug);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // ✅ Auto-crea template se non esiste!
     $tpl = MailTemplate::firstOrCreate(
         [
@@ -178,17 +160,10 @@ public function __construct(Model $record, string $slug)
             'sms_template' => 'Gentile {{ first_name }} {{ last_name }}, ...',
         ],
     );
-<<<<<<< HEAD
     
     // Incrementa contatore invii
     $tpl->update(['counter' => $tpl->counter + 1]);
     
-=======
-
-    // Incrementa contatore invii
-    $tpl->update(['counter' => $tpl->counter + 1]);
-
->>>>>>> 6ed19256f (.)
     // ... prepare data
 }
 ```
@@ -226,17 +201,10 @@ public function getHtmlLayout(): string
 {
     $xot = XotData::make();
     $pub_theme = $xot->pub_theme;  // Es: 'Zero', 'One'
-<<<<<<< HEAD
     
     $pubThemePath = base_path('Themes/'.$pub_theme);
     $pathToLayout = $pubThemePath.'/resources/mail-layouts/base.html';
     
-=======
-
-    $pubThemePath = base_path('Themes/'.$pub_theme);
-    $pathToLayout = $pubThemePath.'/resources/mail-layouts/base.html';
-
->>>>>>> 6ed19256f (.)
     return file_get_contents($pathToLayout);
 }
 ```
@@ -258,7 +226,6 @@ public function embedLogo(string $path, string $cid = 'logo_header'): self
     if (!file_exists($path)) {
         return $this;
     }
-<<<<<<< HEAD
     
     $attachment = Attachment::fromPath($path)
         ->as(basename($path))
@@ -266,15 +233,6 @@ public function embedLogo(string $path, string $cid = 'logo_header'): self
     
     $this->customAttachments[] = $attachment;
     
-=======
-
-    $attachment = Attachment::fromPath($path)
-        ->as(basename($path))
-        ->withMime(File::mimeType($path));
-
-    $this->customAttachments[] = $attachment;
-
->>>>>>> 6ed19256f (.)
     return $this;
 }
 ```
@@ -294,26 +252,15 @@ public function addAttachments(array $attachments): self
         if (isset($item['path']) && file_exists($item['path'])) {
             $attachment = $this->getAttachmentFromPath($item);
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Dati binari
         if ($attachment === null && isset($item['data'])) {
             $attachment = $this->getAttachmentFromData($item);
         }
-<<<<<<< HEAD
         
         $this->customAttachments[] = $attachment;
     }
     
-=======
-
-        $this->customAttachments[] = $attachment;
-    }
-
->>>>>>> 6ed19256f (.)
     return $this;
 }
 ```
@@ -341,17 +288,10 @@ $email->addAttachments([
 public function buildSms(): string
 {
     $sms_template = $this->getMailTemplate()->getAttributeValue('sms_template');
-<<<<<<< HEAD
     
     $mustache = app(Mustache_Engine::class);
     $sms = $mustache->render($sms_template, $this->data);
     
-=======
-
-    $mustache = app(Mustache_Engine::class);
-    $sms = $mustache->render($sms_template, $this->data);
-
->>>>>>> 6ed19256f (.)
     return $sms;
 }
 ```
@@ -487,29 +427,17 @@ $this->data = [
     'lang' => app()->getLocale(),  // 'it', 'en'
     'login_url' => route('login'),
     'site_url' => url('/'.$lang),
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Brand
     'logo_header' => 'https://example.com/logo.png',
     'logo_header_base64' => 'data:image/png;base64,...',
     'logo_svg' => '<svg>...</svg>',
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Social (da MetatagData)
     'facebook_url' => 'https://facebook.com/...',
     'twitter_url' => 'https://twitter.com/...',
     'linkedin_url' => 'https://linkedin.com/...',
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Company
     'company_name' => 'Provincia di Trento',
     'company_url' => 'https://provincia.tn.it',
@@ -591,13 +519,6 @@ $email = new SpatieEmail($user, 'welcome-user');
 $email->mergeData([
     'activation_code' => '123456',
     'expires_at' => '2025-10-30 12:00',
-<<<<<<< .merge_file_9iaqCg
-=======
-<<<<<<< HEAD
-    'expires_at' => '2025-10-30 12:00',
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_pnsSUn
 ]);
 
 Mail::to($user->email)->send($email);
@@ -667,11 +588,7 @@ SmsGateway::send($user->phone, $smsText);
 ### Struttura Cartelle
 
 ```
-<<<<<<< HEAD
 
-=======
-/var/www/html/ptvx/
->>>>>>> 6ed19256f (.)
 │
 ├─ laravel/Modules/Notify/resources/mail-layouts/
 │  ├─ base.html                    # Layout default
@@ -766,11 +683,7 @@ class ProgressioneApprovata extends SpatieEmail
     public function __construct(Progressioni $progressione)
     {
         parent::__construct($progressione, 'progressione-approvata');
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Dati custom per Progressioni
         $this->mergeData([
             'anno' => $progressione->anno,
@@ -796,11 +709,7 @@ class IndennitaApprovata extends SpatieEmail
     public function __construct(IndennitaResponsabilita $indennita)
     {
         parent::__construct($indennita, 'indennita-responsabilita-approvata');
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         $this->mergeData([
             'importo' => number_format($indennita->importo, 2, ',', '.'),
             'dal' => $indennita->dal->format('d/m/Y'),
@@ -831,21 +740,12 @@ class SendSpatieEmailPage extends Page
     public function sendTestEmail(): void
     {
         $template = MailTemplate::where('slug', $this->selectedTemplate)->first();
-<<<<<<< HEAD
         
         $testUser = User::factory()->create();
         $email = new SpatieEmail($testUser, $template->slug);
         
         Mail::to('test@example.com')->send($email);
         
-=======
-
-        $testUser = User::factory()->create();
-        $email = new SpatieEmail($testUser, $template->slug);
-
-        Mail::to('test@example.com')->send($email);
-
->>>>>>> 6ed19256f (.)
         Notification::make()
             ->title('Email inviata!')
             ->success()
@@ -863,22 +763,14 @@ public function mergeData(array $data): self
 {
     $this->data = array_merge($this->data, $data);
     $this->setAdditionalData($this->data);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // ✅ Auto-aggiorna params nel DB
     $params = implode(',', array_keys($this->data));
     MailTemplate::where([
         'slug' => $this->slug,
         'mailable' => SpatieEmail::class
     ])->update(['params' => $params]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     return $this;
 }
 ```
@@ -899,19 +791,11 @@ public function setRecipient(string $email): self
 public function envelope(): Envelope
 {
     $envelope = new Envelope;
-<<<<<<< HEAD
     
     if ($this->recipient) {
         $envelope->to($this->recipient);
     }
     
-=======
-
-    if ($this->recipient) {
-        $envelope->to($this->recipient);
-    }
-
->>>>>>> 6ed19256f (.)
     return $envelope;
 }
 ```
@@ -989,15 +873,9 @@ MailTemplate::create([
 test('welcome email renders correctly', function () {
     $user = User::factory()->create();
     $email = new SpatieEmail($user, 'welcome-user');
-<<<<<<< HEAD
     
     $html = $email->render();
     
-=======
-
-    $html = $email->render();
-
->>>>>>> 6ed19256f (.)
     expect($html)
         ->toContain($user->first_name)
         ->toContain($user->last_name)
@@ -1007,17 +885,10 @@ test('welcome email renders correctly', function () {
 // Test invio
 test('welcome email is sent', function () {
     Mail::fake();
-<<<<<<< HEAD
     
     $user = User::factory()->create();
     Mail::to($user->email)->send(new SpatieEmail($user, 'welcome-user'));
     
-=======
-
-    $user = User::factory()->create();
-    Mail::to($user->email)->send(new SpatieEmail($user, 'welcome-user'));
-
->>>>>>> 6ed19256f (.)
     Mail::assertSent(SpatieEmail::class);
 });
 ```
@@ -1036,11 +907,7 @@ test('welcome email is sent', function () {
 
 ### Problema: Variabili Non Sostituite
 
-<<<<<<< HEAD
 **Template**: `<p>Ciao {{ first_name }}</p>`  
-=======
-**Template**: `<p>Ciao {{ first_name }}</p>`
->>>>>>> 6ed19256f (.)
 **Output**: `<p>Ciao {{ first_name }}</p>` (non sostituito!)
 
 **Causa**: Variabile non presente in `$data`
@@ -1070,7 +937,6 @@ test('welcome email is sent', function () {
 - [MailTemplate Model](../app/Models/MailTemplate.php)
 - [MailTemplateResource](../app/Filament/Resources/MailTemplateResource.php)
 - [Mail Layouts README](../resources/mail-layouts/README.md)
-<<<<<<< .merge_file_9iaqCg
 - [Spatie Translatable Integration](./spatie-translatable-integration.md)
 
 ---
@@ -1078,22 +944,3 @@ test('welcome email is sent', function () {
 **Versione Pacchetto**: spatie/laravel-database-mail-templates 3.7.1  
 **Compatibilità**: Laravel 12.x, PHP 8.3+
 
-=======
-<<<<<<< HEAD
-- [Mail Layouts README](../resources/mail-layouts/README.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Spatie Translatable Integration](./spatie-translatable-integration.md)
-
----
-
-<<<<<<< HEAD
-**Ultimo aggiornamento**: 27 Ottobre 2025  
-**Versione Pacchetto**: spatie/laravel-database-mail-templates 3.7.1  
-**Compatibilità**: Laravel 12.x, PHP 8.3+
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
-**Versione Pacchetto**: spatie/laravel-database-mail-templates 3.7.1
-**Compatibilità**: Laravel 12.x, PHP 8.3+
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_pnsSUn

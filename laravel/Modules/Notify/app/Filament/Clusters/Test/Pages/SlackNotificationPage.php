@@ -10,16 +10,9 @@ use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 class SlackNotificationPage extends XotBasePage
 {
-<<<<<<< .merge_file_agEh7M
     use SuperAdminOnlyTrait;
 
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_Y1oq0O
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
->>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.clusters.test.pages.slack-notification';
 

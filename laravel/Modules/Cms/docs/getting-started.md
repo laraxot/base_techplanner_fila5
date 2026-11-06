@@ -85,30 +85,9 @@ npm run dev
 ```
 
 ## Collegamenti tra versioni di getting-started.md
-<<<<<<< .merge_file_QW3Nxe
 * [getting-started.md](../../Gdpr/docs/getting-started.md)
 * [getting-started.md](../../Xot/docs/getting-started.md)
 * [getting-started.md](../../UI/docs/getting-started.md)
 * [getting-started.md](../../Tenant/docs/it/getting-started.md)
 * [getting-started.md](laravel/modules/cms/project_docs/getting-started.md)
 
-=======
-<<<<<<< HEAD
-* [getting-started.md](laravel/modules/gdpr/project_docs/getting-started.md)
-* [getting-started.md](laravel/modules/xot/project_docs/getting-started.md)
-* [getting-started.md](laravel/modules/ui/project_docs/getting-started.md)
-* [getting-started.md](laravel/modules/tenant/project_docs/it/getting-started.md)
-* [getting-started.md](laravel/modules/cms/project_docs/getting-started.md)
-
-=======
->>>>>>> 6ed19256f (.)
-* [getting-started.md](laravel/Modules/Gdpr/project_docs/getting-started.md)
-* [getting-started.md](laravel/Modules/Xot/project_docs/getting-started.md)
-* [getting-started.md](laravel/Modules/UI/project_docs/getting-started.md)
-* [getting-started.md](laravel/Modules/Tenant/project_docs/it/getting-started.md)
-<<<<<<< HEAD
-* [getting-started.md](laravel/Modules/Cms/project_docs/getting-started.md)
-=======
-* [getting-started.md](laravel/Modules/Cms/project_docs/getting-started.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LXnDrN

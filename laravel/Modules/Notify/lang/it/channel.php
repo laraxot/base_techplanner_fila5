@@ -11,22 +11,13 @@ return [
             'tooltip' => 'Nome identificativo del canale',
             'placeholder' => 'es: Email Marketing',
             'help' => 'Inserisci un nome univoco per identificare il canale',
-<<<<<<< HEAD
             'helper_text' => '',
-<<<<<<< .merge_file_0NAlgJ
             'description' => ''],
-=======
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_xQBghp
         'driver' => [
             'label' => 'Driver',
             'tooltip' => 'Tipo di servizio utilizzato per l\'invio',
             'help' => 'Seleziona il driver appropriato per questo canale',
             'options' => [
-<<<<<<< .merge_file_0NAlgJ
                 'mail' => ['label' => 'Email', 'tooltip' => 'Invio tramite server SMTP'],
                 'database' => ['label' => 'Database', 'tooltip' => 'Salvataggio nel database'],
                 'broadcast' => ['label' => 'Broadcast', 'tooltip' => 'Invio tramite websocket'],
@@ -35,39 +26,6 @@ return [
                 'slack' => ['label' => 'Slack', 'tooltip' => 'Invio tramite webhook Slack']],
             'helper_text' => '',
             'description' => ''],
-=======
-                'mail' => [
-                    'label' => 'Email',
-                    'tooltip' => 'Invio tramite server SMTP',
-                ],
-                'database' => [
-                    'label' => 'Database',
-                    'tooltip' => 'Salvataggio nel database',
-                ],
-                'broadcast' => [
-                    'label' => 'Broadcast',
-                    'tooltip' => 'Invio tramite websocket',
-                ],
-                'sms' => [
-                    'label' => 'SMS',
-                    'tooltip' => 'Invio tramite gateway SMS',
-                ],
-                'telegram' => [
-                    'label' => 'Telegram',
-                    'tooltip' => 'Invio tramite bot Telegram',
-                ],
-                'slack' => [
-                    'label' => 'Slack',
-                    'tooltip' => 'Invio tramite webhook Slack',
-                ],
-            ],
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
->>>>>>> .merge_file_xQBghp
         'configuration' => [
             'label' => 'Configurazione',
             'tooltip' => 'Parametri di configurazione del canale',
@@ -81,7 +39,6 @@ return [
                     'label' => 'Crittografia',
                     'tooltip' => 'Metodo di crittografia',
                     'options' => [
-<<<<<<< .merge_file_0NAlgJ
                         'tls' => ['label' => 'TLS', 'tooltip' => 'Transport Layer Security'],
                         'ssl' => ['label' => 'SSL', 'tooltip' => 'Secure Sockets Layer']]],
                 'from_address' => ['label' => 'Indirizzo mittente', 'tooltip' => 'Indirizzo email del mittente', 'placeholder' => 'es: noreply@example.com'],
@@ -98,81 +55,6 @@ return [
         'mail' => ['label' => 'mail', 'placeholder' => 'mail', 'helper_text' => 'mail', 'description' => 'mail'],
         'sms' => ['label' => 'sms', 'placeholder' => 'sms', 'helper_text' => 'sms', 'description' => 'sms'],
         'whatsapp' => ['label' => 'whatsapp', 'placeholder' => 'whatsapp', 'helper_text' => 'whatsapp', 'description' => 'whatsapp']],
-=======
-                        'tls' => [
-                            'label' => 'TLS',
-                            'tooltip' => 'Transport Layer Security',
-                        ],
-                        'ssl' => [
-                            'label' => 'SSL',
-                            'tooltip' => 'Secure Sockets Layer',
-                        ],
-                    ],
-                ],
-                'from_address' => [
-                    'label' => 'Indirizzo mittente',
-                    'tooltip' => 'Indirizzo email del mittente',
-                    'placeholder' => 'es: noreply@example.com',
-                ],
-                'from_name' => [
-                    'label' => 'Nome mittente',
-                    'tooltip' => 'Nome visualizzato del mittente',
-                    'placeholder' => 'es: Sistema Notifiche',
-                ],
-                'api_key' => [
-                    'label' => 'API Key',
-                    'tooltip' => 'Chiave API per l\'autenticazione',
-                    'help' => 'Chiave fornita dal servizio per l\'autenticazione',
-                ],
-                'api_secret' => [
-                    'label' => 'API Secret',
-                    'tooltip' => 'Chiave segreta API',
-                    'help' => 'Non condividere mai questa chiave',
-                ],
-                'bot_token' => [
-                    'label' => 'Token Bot',
-                    'tooltip' => 'Token del bot Telegram',
-                    'help' => 'Ottieni il token da @BotFather su Telegram',
-                ],
-                'chat_id' => [
-                    'label' => 'ID Chat',
-                    'tooltip' => 'ID della chat Telegram',
-                    'help' => 'ID del gruppo o canale Telegram',
-                ],
-                'webhook_url' => [
-                    'label' => 'URL Webhook',
-                    'tooltip' => 'URL per le chiamate webhook',
-                    'placeholder' => 'es: https://hooks.slack.com/services/...',
-                ],
-            ],
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'is_default' => [
-            'label' => 'Predefinito',
-            'tooltip' => 'Imposta come canale predefinito',
-            'help' => 'Il canale predefinito verrà utilizzato quando non specificato diversamente',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-        'is_enabled' => [
-            'label' => 'Abilitato',
-            'tooltip' => 'Stato di attivazione del canale',
-            'help' => 'Disabilita temporaneamente il canale senza eliminarlo',
-<<<<<<< HEAD
-            'helper_text' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
->>>>>>> .merge_file_xQBghp
     'actions' => [
         'test_connection' => ['label' => 'Testa connessione', 'tooltip' => 'Verifica la configurazione del canale', 'icon' => 'heroicon-o-signal', 'color' => 'info'],
         'send_test' => [
@@ -182,35 +64,9 @@ return [
             'color' => 'primary',
             'confirmation' => ['title' => 'Conferma test', 'message' => 'Vuoi inviare un messaggio di test?', 'confirm' => 'Sì, invia', 'cancel' => 'No, annulla']]],
     'messages' => [
-<<<<<<< .merge_file_0NAlgJ
         'connection_success' => ['title' => 'Connessione Riuscita', 'message' => 'La connessione al canale è stata stabilita con successo'],
         'connection_failed' => ['title' => 'Errore di Connessione', 'message' => 'Impossibile connettersi al canale: :error'],
         'test_sent' => ['title' => 'Test Inviato', 'message' => 'Il messaggio di test è stato inviato con successo'],
         'test_failed' => ['title' => 'Errore Test', 'message' => 'Impossibile inviare il messaggio di test: :error']],
     'label' => 'Channel',
     'plural_label' => 'Channel (Plurale)'];
-=======
-        'connection_success' => [
-            'title' => 'Connessione Riuscita',
-            'message' => 'La connessione al canale è stata stabilita con successo',
-        ],
-        'connection_failed' => [
-            'title' => 'Errore di Connessione',
-            'message' => 'Impossibile connettersi al canale: :error',
-        ],
-        'test_sent' => [
-            'title' => 'Test Inviato',
-            'message' => 'Il messaggio di test è stato inviato con successo',
-        ],
-        'test_failed' => [
-            'title' => 'Errore Test',
-            'message' => 'Impossibile inviare il messaggio di test: :error',
-        ],
-    ],
-<<<<<<< HEAD
-    'label' => 'Channel',
-    'plural_label' => 'Channel (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_xQBghp

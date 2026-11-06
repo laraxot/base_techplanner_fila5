@@ -274,15 +274,7 @@ Ecco come integrare tutte queste risorse in un approccio coerente per il progett
     </div>
     <!-- Altre statistiche -->
   </div>
-<<<<<<< HEAD
   
-<<<<<<< .merge_file_yGbvO6
-=======
-  
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_zO4GaF
   <!-- Lista appuntamenti con principi di UXPin -->
   <div class="card bg-base-100 shadow-lg">
     <div class="card-body">
@@ -294,15 +286,7 @@ Ecco come integrare tutte queste risorse in un approccio coerente per il progett
           <button class="btn btn-sm btn-ghost">Mese</button>
         </div>
       </div>
-<<<<<<< HEAD
       
-<<<<<<< .merge_file_yGbvO6
-=======
-      
-=======
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_zO4GaF
       <!-- Tabella con principi di CSS-Tricks -->
       <div class="overflow-x-auto">
         <!-- Contenuto tabella -->
@@ -330,14 +314,7 @@ Per massimizzare il valore di queste risorse:
 
 ## Conclusione
 
-<<<<<<< .merge_file_yGbvO6
-=======
-L'integrazione di queste diverse risorse permette di creare un'interfaccia utente per il progetto che sia non solo esteticamente piacevole, ma anche altamente usabile, accessibile e performante.
-<<<<<<< HEAD
->>>>>>> .merge_file_zO4GaF
 L'integrazione di queste diverse risorse permette di creare un'interfaccia utente per il progetto che sia non solo esteticamente piacevole, ma anche altamente usabile, accessibile e performante. 
-=======
->>>>>>> 6ed19256f (.)
 
 L'approccio combinato sfrutta:
 - I principi di design tattico di Refactoring UI
@@ -349,12 +326,4 @@ L'approccio combinato sfrutta:
 - Le best practices consolidate del settore
 - L'efficienza di Tailwind CSS e DaisyUI
 
-<<<<<<< .merge_file_yGbvO6
 Il risultato sarà un'interfaccia che soddisfa le esigenze di pazienti e operatori sanitari, contribuendo al successo complessivo della piattaforma il progetto. 
-=======
-Il risultato sarà un'interfaccia che soddisfa le esigenze di pazienti e operatori sanitari, contribuendo al successo complessivo della piattaforma il progetto.
-<<<<<<< HEAD
-Il risultato sarà un'interfaccia che soddisfa le esigenze di pazienti e operatori sanitari, contribuendo al successo complessivo della piattaforma il progetto. 
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_zO4GaF

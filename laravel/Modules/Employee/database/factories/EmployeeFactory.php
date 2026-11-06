@@ -17,10 +17,6 @@ class EmployeeFactory extends Factory
      *
      * @var class-string<Employee>
      */
-<<<<<<< HEAD
-=======
-    // @phpstan-ignore-next-line
->>>>>>> 6ed19256f (.)
     protected $model = Employee::class;
 
     /**

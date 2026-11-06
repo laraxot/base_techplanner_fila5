@@ -218,23 +218,8 @@ view:cache compila
 - [Filament v4 Forms Documentation](https://filamentphp.com/docs/4.x/forms/getting-started)
 
 ---
-<<<<<<< .merge_file_rUxatN
-=======
-
-<<<<<<< HEAD
->>>>>>> .merge_file_j9KWDv
 **Data migrazione**: [DATE]
 **Versione Filament**: v4.x
 **Files modificati**: 4
 **Errori risolti**: 2 (form.actions, form component)
 **Status**: ✅ Completo
-<<<<<<< .merge_file_rUxatN
-=======
-=======
-**Data migrazione**: 2025-12-12
-**Versione Filament**: v4.x
-**Files modificati**: 4
-**Errori risolti**: 2 (form.actions, form component)
-**Status**: ✅ Completo
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_j9KWDv

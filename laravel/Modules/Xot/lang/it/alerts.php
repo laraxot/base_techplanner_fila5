@@ -19,7 +19,6 @@ return [
             'updated_password' => 'La password dell\'utente è stata aggiornata con successo.',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Alerts',
     'plural_label' => 'Alerts (Plurale)',
     'navigation' => [
@@ -64,6 +63,4 @@ return [
             'label' => 'Elimina Alerts',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

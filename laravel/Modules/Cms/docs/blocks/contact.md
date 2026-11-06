@@ -99,7 +99,6 @@ Il blocco può essere utilizzato in vari contesti:
    - ARIA labels
    - Focus states
 
-<<<<<<< HEAD
 ## Blade Namespace Rule
 
 Se il blocco `contact.main` usa sottocomponenti del tema, il naming deve distinguere fra:
@@ -109,8 +108,6 @@ Se il blocco `contact.main` usa sottocomponenti del tema, il naming deve disting
 
 Non usare `<x-pub_theme::components.blocks.contact.info />`, perche' `view:cache` non riesce a risolverlo come anonymous component.
 
-=======
->>>>>>> 6ed19256f (.)
 ## Implementazione
 
 1. **Validazione**:
@@ -140,12 +137,4 @@ Non usare `<x-pub_theme::components.blocks.contact.info />`, perche' `view:cache
 - [Documentazione Filament Forms](../filament-forms.md)
 - [UI Components](../components.md)
 - [Maps Integration](../integrations/maps.md)
-<<<<<<< .merge_file_wDgKLp
 - [Schema.org Guidelines](../seo/schema-org.md)
-=======
-<<<<<<< HEAD
-- [Schema.org Guidelines](../seo/schema-org.md)
-=======
-- [Schema.org Guidelines](../seo/schema-org.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_KOAH3e

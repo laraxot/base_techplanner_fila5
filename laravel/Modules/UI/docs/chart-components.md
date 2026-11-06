@@ -149,14 +149,7 @@ class UserStats extends Component
 - [Componenti Form](./form-components.md)
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
-<<<<<<< .merge_file_rpPuaQ
-=======
-- [Documentazione Frontend](../Cms/docs/frontend-architecture.md)
-<<<<<<< HEAD
->>>>>>> .merge_file_g3gt2s
 - [Documentazione Frontend](../cms/docs/frontend-architecture.md)
-=======
->>>>>>> 6ed19256f (.)
 # Componenti Chart
 
 ## Introduzione
@@ -296,18 +289,6 @@ class UserStats extends Component
 - [Componenti Form](./form-components.md)
 - [Componenti Table](./table-components.md)
 - [Componenti Layout](./layout-components.md)
-<<<<<<< .merge_file_rpPuaQ
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
 - [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
-=======
-- [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
-- [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
-- [Documentazione Frontend](../Cms/project_docs/frontend-architecture.md)
-<<<<<<< HEAD
-- [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
-- [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
-- [Documentazione Frontend](../cms/project_docs/frontend-architecture.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_g3gt2s

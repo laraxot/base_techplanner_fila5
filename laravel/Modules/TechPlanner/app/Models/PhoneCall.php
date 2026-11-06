@@ -28,19 +28,7 @@ use Override;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
-<<<<<<< .merge_file_JPtPVV
  *
-=======
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
-<<<<<<< HEAD
- *
-=======
->>>>>>> 6ed19256f (.)
- * @method static Builder<static>|PhoneCall newModelQuery()
- * @method static Builder<static>|PhoneCall newQuery()
- * @method static Builder<static>|PhoneCall query()
->>>>>>> .merge_file_9Jsn6t
  * @method static Builder<static>|PhoneCall whereCallType($value)
  * @method static Builder<static>|PhoneCall whereClientId($value)
  * @method static Builder<static>|PhoneCall whereCreatedAt($value)
@@ -53,16 +41,7 @@ use Override;
  * @method static Builder<static>|PhoneCall whereNotes($value)
  * @method static Builder<static>|PhoneCall whereUpdatedAt($value)
  * @method static Builder<static>|PhoneCall whereUpdatedBy($value)
-<<<<<<< HEAD
  *
-<<<<<<< .merge_file_JPtPVV
-=======
- * @property-read Profile|null $deleter
- *
-=======
- * @property-read Profile|null $deleter
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_9Jsn6t
  * @mixin \Eloquent
  */
 class PhoneCall extends BaseModel

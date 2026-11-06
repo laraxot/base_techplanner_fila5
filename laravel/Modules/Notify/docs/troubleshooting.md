@@ -55,23 +55,8 @@ This document provides guidance on diagnosing and resolving common issues encoun
 - Update this document if new issues or resolution strategies are identified.
 
 ## Links to Related Documentation
-<<<<<<< HEAD
 - [Notify Module Index](./index.md)
 - [Architecture Overview](./ARCHITECTURE.md)
 - [Notification Channels Implementation](./notification_channels_implementation.md)
 - [Email Templates](./email_templates.md)
 - [SMS Implementation](./sms_implementation.md)
-<<<<<<< .merge_file_KHVbin
-=======
-=======
->>>>>>> 6ed19256f (.)
-- [Notify Module Index](./INDEX.md)
-- [Architecture Overview](./ARCHITECTURE.md)
-- [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
-- [Email Templates](./EMAIL_TEMPLATES.md)
-<<<<<<< HEAD
-- [SMS Implementation](./SMS_IMPLEMENTATION.md)
-=======
-- [SMS Implementation](./SMS_IMPLEMENTATION.md)
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_XwE1Dl

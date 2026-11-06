@@ -5,14 +5,7 @@ declare(strict_types=1);
 namespace Modules\Tenant\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< .merge_file_uQVkga
 use Modules\Tenant\Models\Tenant;
-=======
-<<<<<<< HEAD
-use Modules\User\Models\Tenant;
-=======
-use Modules\Tenant\Models\Tenant;
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_AXD2vR
 
 /**

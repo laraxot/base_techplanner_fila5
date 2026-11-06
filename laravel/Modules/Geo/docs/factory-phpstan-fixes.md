@@ -79,7 +79,3 @@ return [
 - [Factory Pattern Guidelines](../../../../docs/factory-pattern.md)
 - [PHPStan Compliance Guide](../phpstan-fixes.md)
 
-*Ultimo aggiornamento: 2025-01-06*
-- [Geo Module Documentation](../readme.md)
-- [Factory Pattern Guidelines](../../../../docs/factory-pattern.md)
-- [PHPStan Compliance Guide](../phpstan-fixes.md)

@@ -119,13 +119,4 @@ class Section extends Component
 ## Collegamenti
 - [Gestione Sezioni](../section-management.md)
 - [Documentazione Blocchi](../blocks/README.md)
-<<<<<<< .merge_file_aQ6jZV
 - [Documentazione Root](../components.md)
-=======
-- [Documentazione Root](../../../../docs/components.md)
-<<<<<<< HEAD
-- [Documentazione Blocchi](../blocks/readme.md)
-- [Documentazione Root](../../../../../docs/components.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_X3m23z

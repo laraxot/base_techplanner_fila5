@@ -129,18 +129,6 @@ The error occurred because:
 
 ## Related Documentation
 
-<<<<<<< .merge_file_oeh5Ii
 - [Block Components Overview](./readme.md)
 - [Data Handling in Blade Components](../blade-data-handling.md)
 - [Section Architecture](../sections/readme.md)
-=======
-- [Block Components Overview](./README.md)
-- [Data Handling in Blade Components](../blade-data-handling.md)
-- [Section Architecture](../sections/README.md)
-<<<<<<< HEAD
-- [Block Components Overview](./readme.md)
-- [Data Handling in Blade Components](../blade-data-handling.md)
-- [Section Architecture](../sections/readme.md)
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_gwhGeB

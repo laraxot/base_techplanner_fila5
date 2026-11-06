@@ -11,16 +11,10 @@ use Illuminate\Support\Facades\Log;
 use Modules\Notify\Contracts\TelegramProviderActionInterface;
 use Modules\Notify\Datas\TelegramData;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
-<<<<<<< HEAD
 use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\json_decode;
 use function Safe\json_encode;
-=======
-use function Safe\json_decode;
-use function Safe\json_encode;
-use Spatie\QueueableAction\QueueableAction;
->>>>>>> 6ed19256f (.)
 
 final class SendBotmanTelegramAction implements TelegramProviderActionInterface
 {
@@ -68,28 +62,12 @@ final class SendBotmanTelegramAction implements TelegramProviderActionInterface
      * Execute the action.
      *
      * @param  TelegramData  $telegramData  I dati del messaggio Telegram
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string, mixed> Risultato dell'operazione
      *
      * @throws Exception In caso di errore durante l'invio
      */
     public function execute(TelegramData $telegramData): array
     {
-<<<<<<< HEAD
-=======
-        // Log di debug se abilitato
-        if ($this->debug) {
-            Log::debug('Invio Telegram BotMan', [
-                'chat_id' => $telegramData->chatId,
-                'message_length' => strlen($telegramData->text),
-                'type' => $telegramData->type,
-            ]);
-        }
-
->>>>>>> 6ed19256f (.)
         $client = new Client([
             'timeout' => $this->timeout,
             'base_uri' => $this->apiUrl]);
@@ -146,11 +124,7 @@ final class SendBotmanTelegramAction implements TelegramProviderActionInterface
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
-<<<<<<< HEAD
             Log::debug('Telegram BotMan inviato con successo', [
-=======
-            Log::info('Telegram BotMan inviato con successo', [
->>>>>>> 6ed19256f (.)
                 'chat_id' => $telegramData->chatId,
                 'response_code' => $statusCode]);
 

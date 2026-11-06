@@ -1,6 +1,5 @@
 # Riepilogo Risoluzione Conflitti Git - 2025-01-06
 
-<<<<<<< HEAD
 ## Tool canonici (2026-06)
 
 Implementazione e documentazione operativa — **non** in root monorepo; versionate nel repo [bashscripts_fila5](https://github.com/laraxot/bashscripts_fila5) (clone locale `bashscripts/`):
@@ -15,8 +14,6 @@ Implementazione e documentazione operativa — **non** in root monorepo; version
 
 Wiki: [git-merge-marker-sweep](wiki/how-to/git-merge-marker-sweep.md)
 
-=======
->>>>>>> 6ed19256f (.)
 ## Data
 2025-01-06
 
@@ -100,14 +97,7 @@ I seguenti file hanno conflitti Git ma non bloccano PHPStan per l'analisi di alt
 
 ## Collegamenti
 
-<<<<<<< .merge_file_DFjyuY
 - [Git Conflicts Resolution](./git-conflicts-resolution.md)
-=======
-- [Git Conflicts Resolution](./git-conflicts-resolution-2025-01-06.md)
-<<<<<<< HEAD
-<<<<<<< .merge_file_FChkhZ
-<<<<<<< .merge_file_xDZvqL
->>>>>>> .merge_file_sGncpn
 =======
 >>>>>>> .merge_file_Hu1xsq
 =======

@@ -105,22 +105,7 @@ public static function init(): self
 - Mantenere solo commenti che aggiungono valore reale
 
 ## Collegamenti
-<<<<<<< .merge_file_uYkAts
 - [../../../docs/clean-code-no-obvious-comments.md](../../../../docs/clean-code-no-obvious-comments.md)
 - [wizard-steps.md](wizard-steps.md)
 - [wizard-schema-separation.md](wizard-schema-separation.md)
 
-=======
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-08-04*
-- [../../../docs/clean-code-no-obvious-comments.md](../../../../docs/clean-code-no-obvious-comments.md)
-- [wizard-steps.md](wizard-steps.md)
-- [wizard-schema-separation.md](wizard-schema-separation.md)
-=======
-- [../../docs/clean-code-no-obvious-comments.md](../../../docs/clean-code-no-obvious-comments.md)
-- [wizard-steps.md](wizard-steps.md)
-- [wizard-schema-separation.md](wizard-schema-separation.md)
-
-*Ultimo aggiornamento: 2025-08-04*
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_2xN88N

@@ -63,29 +63,10 @@ All map to Tenant via Domain table.
 
 ## Integration
 
-<<<<<<< .merge_file_W0cbkM
 - **User** → currentTeam → Tenant scoping
 - **Middleware** → Sets tenant context
 - **Policies** → Enforce tenant isolation
 - **All models** → inherit tenant_id scope
-=======
-### Tenant ↔ User
-**Relazione**: Simbiosi
-- User dipende da Tenant per isolamento
-- Tenant dipende da User per ownership
-- **Principio**: "L'utente esiste nel contesto del tenant"
-
-### Tenant ↔ Xot
-**Relazione**: Foundation
-- Tenant estende BaseModel da Xot
-- Usa XotData per user management
-- **Principio**: "Tenant è specializzazione di Xot"
-
-<<<<<<< HEAD
-### Tenant ↔ Business Modules (<nome progetto>, Patient, Dental)
-=======
-### Tenant ↔ Business Modules (Quaeris, Patient, Dental)
->>>>>>> 6ed19256f (.)
 **Relazione**: Enabler
 - Business modules ereditano `$connection = 'tenant'` da BaseModel
 - **Principio**: "Tenant è invisibile ma onnipresente"
@@ -124,16 +105,6 @@ All map to Tenant via Domain table.
 
 ---
 
-<<<<<<< .merge_file_W0cbkM
 - **Generated**: 2026-09-06
 
-=======
-**Creato**: 5 Novembre 2025
-**Autore**: Team Development
-**Revision**: 1.0
-<<<<<<< HEAD
-**Status**: 📚 Foundation Document
-=======
-**Status**: 📚 Foundation Document
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_8lq8ID

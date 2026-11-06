@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "lang link"
 type: note
@@ -14,12 +13,4 @@ canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
 status: stub
 ---
 
-<<<<<<< .merge_file_1luAb2
 See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
-=======
-See canonical documentation: ../../../Themes/docs/shared-components/algolia-docsearch-Modules.md
-=======
-
-
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_dkImGB

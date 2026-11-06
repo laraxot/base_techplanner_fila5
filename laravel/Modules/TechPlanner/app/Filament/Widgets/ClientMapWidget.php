@@ -7,12 +7,7 @@ namespace Modules\TechPlanner\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< .merge_file_eSoQBh
 use Modules\TechPlanner\Models\Client;
-=======
-<<<<<<< HEAD
-use Modules\TechPlanner\Filament\Resources\ClientResource;
->>>>>>> .merge_file_9SW3Kx
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 =======
 use Livewire\Attributes\Reactive;
@@ -28,17 +23,7 @@ class ClientMapWidget extends XotBaseWidget
     protected int|string|array $columnSpan = 'full';
 
     /**
-<<<<<<< .merge_file_eSoQBh
      * @return array<int, Component>
-=======
-<<<<<<< HEAD
-     * @return array<string, Component>
-     */
-=======
-     * Get the form schema for the widget.
-     *
-     * @return array<string, Component>
->>>>>>> .merge_file_9SW3Kx
      */
     #[Override]
 >>>>>>> 6ed19256f (.)

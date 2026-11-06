@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_JFcMbQ
 ---
 title: "Consigli e Best Practice - <nome progetto>ion Market"
 type: note
@@ -7,13 +6,7 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "consigli e best practice - <nome progetto>ion market activity"
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_y3UcNN
 # Consigli e Best Practice - <nome progetto>ion Market
-=======
-# Consigli e Best Practice - Prediction Market
->>>>>>> 6ed19256f (.)
 
 ## Refactoring e Miglioramenti
 - Separare sempre comandi (write) e query (read) secondo CQRS
@@ -34,8 +27,4 @@ qmd: "consigli e best practice - <nome progetto>ion market activity"
 ## Errori Comuni
 - Non validare input lato comando
 - Non gestire la concorrenza sugli aggregate
-<<<<<<< HEAD
 - Dimenticare il rollback in caso di errore
-=======
-- Dimenticare il rollback in caso di errore
->>>>>>> 6ed19256f (.)

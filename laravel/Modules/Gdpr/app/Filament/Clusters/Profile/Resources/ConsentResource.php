@@ -10,10 +10,6 @@ use Modules\Gdpr\Filament\Clusters\Profile\Resources\ConsentResource\Pages\EditC
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ConsentResource\Pages\ListConsents;
 use Modules\Gdpr\Models\Consent;
 use Modules\Xot\Filament\Resources\XotBaseResource;
-<<<<<<< HEAD
-=======
-use Override;
->>>>>>> 6ed19256f (.)
 
 class ConsentResource extends XotBaseResource
 {
@@ -21,34 +17,13 @@ class ConsentResource extends XotBaseResource
 
     protected static ?string $cluster = ProfileCluster::class;
 
-<<<<<<< HEAD
     #[\Override]
-<<<<<<< .merge_file_GCbmQZ
-=======
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
-    public static function getFormSchema(): array
-    {
-        return [];
-    }
-
-<<<<<<< HEAD
-    #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_tGo6G2
     public static function getRelations(): array
     {
         return [];
     }
 
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     public static function getPages(): array
     {
         return [

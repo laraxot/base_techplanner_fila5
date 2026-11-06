@@ -51,11 +51,6 @@ Before submitting a pull request:
 
 If the project maintainer has any additional requirements, you will find them listed here.
 
-<<<<<<< .merge_file_xC4H5y
-=======
-- **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-2-coding-style-guide.md)** - The standard can be enforced by running the `composer lint` console command.
-<<<<<<< HEAD
->>>>>>> .merge_file_1F17R1
 - **[PSR-2 Coding Standard](https://github.com/php-fig/fig-standards/blob/master/accepted/psr-2-coding-style-guide.md)** - The standard can be enforced by running the `composer lint` console command.
 =======
 >>>>>>> 6ed19256f (.)
@@ -70,12 +65,5 @@ If the project maintainer has any additional requirements, you will find them li
 
 - **Send coherent history** - Make sure each individual commit in your pull request is meaningful. If you had to make multiple intermediate commits while developing, please [squash them](https://www.git-scm.com/book/en/v2/Git-Tools-Rewriting-History#Changing-Multiple-Commit-Messages) before submitting.
 
-<<<<<<< .merge_file_xC4H5y
 **Happy coding**!
-=======
-<<<<<<< HEAD
-**Happy coding**!
-=======
-**Happy coding**!
->>>>>>> 6ed19256f (.)
 >>>>>>> .merge_file_1F17R1

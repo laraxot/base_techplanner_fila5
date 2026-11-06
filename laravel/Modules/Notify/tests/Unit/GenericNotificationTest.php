@@ -2,17 +2,9 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_WI39kH
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Notifications\GenericNotification;
 use Modules\Notify\Tests\TestCase;
-=======
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Model;
-use Modules\Notify\Notifications\GenericNotification;
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_T27uqO
 
 uses(TestCase::class);
 // Basic unit tests focusing on business logic of recipient name resolution
@@ -29,14 +21,7 @@ describe('GenericNotification getRecipientName', function (): void {
             }
         };
 
-<<<<<<< .merge_file_WI39kH
         $ref = new ReflectionClass(GenericNotification::class);
-=======
-<<<<<<< HEAD
-=======
-        $ref = new ReflectionClass(GenericNotification::class);
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_T27uqO
         $method = $ref->getMethod('getRecipientName');
         $method->setAccessible(true);
 
@@ -53,14 +38,7 @@ describe('GenericNotification getRecipientName', function (): void {
             ];
         };
 
-<<<<<<< .merge_file_WI39kH
         $ref = new ReflectionClass(GenericNotification::class);
-=======
-<<<<<<< HEAD
-=======
-        $ref = new ReflectionClass(GenericNotification::class);
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_T27uqO
         $method = $ref->getMethod('getRecipientName');
         $method->setAccessible(true);
 
@@ -86,14 +64,7 @@ describe('GenericNotification getRecipientName', function (): void {
             protected $attributes = [];
         };
 
-<<<<<<< .merge_file_WI39kH
         $ref = new ReflectionClass(GenericNotification::class);
-=======
-<<<<<<< HEAD
-=======
-        $ref = new ReflectionClass(GenericNotification::class);
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_T27uqO
         $method = $ref->getMethod('getRecipientName');
         $method->setAccessible(true);
 

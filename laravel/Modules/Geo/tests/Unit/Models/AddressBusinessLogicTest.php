@@ -2,24 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Modules\Geo\Tests\Unit\Models;
-
-uses(TestCase::class);
-
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Geo\Enums\AddressTypeEnum;
 use Modules\Geo\Models\Address;
 use Modules\Geo\Models\BaseModel;
-<<<<<<< HEAD
 use Modules\Geo\Tests\TestCase;
-<<<<<<< .merge_file_9l3jEb
 use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_ijvTAJ
 
 /*
  * Contratto di dominio Address (PostalAddress / Schema.org, geolocalizzazione, scope query).

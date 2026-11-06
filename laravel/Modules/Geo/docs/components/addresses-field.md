@@ -486,7 +486,6 @@ public function address(): BelongsTo
 ---
 
 
-<<<<<<< .merge_file_tZJbUL
 title: "addresses field"
 type: note
 tags: [documentation]
@@ -496,6 +495,3 @@ qmd: "addresses field"
 issues: []
 discussions: []
 **Il componente AddressesField rappresenta un esempio eccellente di applicazione del principio DRY e di progettazione orientata al riutilizzo nel contesto Filament.**
-=======
-**Il componente AddressesField rappresenta un esempio eccellente di applicazione del principio DRY e di progettazione orientata al riutilizzo nel contesto Filament.**
->>>>>>> .merge_file_yqDRcY

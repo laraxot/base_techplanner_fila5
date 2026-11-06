@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_daucKn
 ---
 issues: []
 discussions: []
@@ -14,9 +13,6 @@ related:
   - "../../phpstan-corrections-january.md"
 status: draft
 ---
-=======
-<<<<<<< HEAD
->>>>>>> .merge_file_FEKfbF
 # Laravel Passport Configuration (Version 13.4.x)
 
 ## Overview
@@ -83,27 +79,12 @@ return [
         'secret' => env('PASSPORT_PERSONAL_ACCESS_CLIENT_SECRET'),
     ],
 
-<<<<<<< HEAD
     // Storage driver configuration
-=======
-    /*
-    |--------------------------------------------------------------------------
-    | Passport Storage Driver
-    |--------------------------------------------------------------------------
-    |
-    | This configuration value allows you to customize the storage options
-    | for Passport, such as the database connection that should be used
-    | by Passport's internal database models which store tokens, etc.
-    |
-    */
-
->>>>>>> 6ed19256f (.)
     'storage' => [
         'database' => [
             'connection' => env('DB_CONNECTION', 'mysql'),
         ],
     ],
-<<<<<<< HEAD
 ];
 ```
 
@@ -125,15 +106,3 @@ return [
 
 ---
 *Documentation reflects Laravel Passport version 13 as of January 2026.*
-=======
-
-];
-### Versione HEAD
-
-## Collegamenti tra versioni di passport.md
-* [passport.md](../../../../User/docs/passport.md)
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)

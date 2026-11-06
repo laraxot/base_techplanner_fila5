@@ -75,11 +75,7 @@ class RadioBadge extends XotBaseRadio
     public function getIconForOption(string $value): ?string
     {
         $enum = $this->getEnumValue($value);
-<<<<<<< HEAD
         if (! $enum instanceof HasIcon) {
-=======
-        if (! ($enum instanceof HasIcon)) {
->>>>>>> 6ed19256f (.)
             return null;
         }
         $icon = $enum->getIcon();

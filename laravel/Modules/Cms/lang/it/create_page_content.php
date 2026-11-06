@@ -6,7 +6,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -118,62 +117,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'slug' => [
-            'label' => 'slug',
-        ],
-        'content' => [
-            'label' => 'content',
-        ],
-        'level' => [
-            'label' => 'level',
-        ],
-        'blocks' => [
-            'label' => 'blocks',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'caption' => [
-            'label' => 'caption',
-        ],
-        'video' => [
-            'label' => 'video',
-        ],
-        'img_uuid' => [
-            'label' => 'img_uuid',
-        ],
-        'text' => [
-            'label' => 'text',
-        ],
-        'method' => [
-            'label' => 'method',
-        ],
-        'title' => [
-            'label' => 'title',
-        ],
-        'version' => [
-            'label' => 'version',
-        ],
-        'subtitle' => [
-            'label' => 'subtitle',
-        ],
-        'url' => [
-            'label' => 'url',
-        ],
-        'label' => [
-            'label' => 'label',
-        ],
-        'items' => [
-            'label' => 'items',
-        ],
-        'image' => [
-            'label' => 'image',
-        ],
-        'gallery' => [
-            'label' => 'gallery',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -187,7 +130,6 @@ return [
             'label' => 'create',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Create Page Content',
     'plural_label' => 'Create Page Content (Plurale)',
     'navigation' => [
@@ -201,6 +143,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

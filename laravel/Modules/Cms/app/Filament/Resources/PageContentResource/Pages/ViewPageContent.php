@@ -5,18 +5,7 @@ declare(strict_types=1);
 namespace Modules\Cms\Filament\Resources\PageContentResource\Pages;
 
 use Filament\Actions\EditAction;
-<<<<<<< .merge_file_eHCHWg
-=======
-use Filament\Infolists\Components\TextEntry;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Components\Grid;
-use Filament\Schemas\Components\Section;
-<<<<<<< HEAD
->>>>>>> .merge_file_zMASEW
 // use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
-=======
-use LaraZeus\SpatieTranslatable\Actions\LocaleSwitcher;
->>>>>>> 6ed19256f (.)
 use Modules\Cms\Filament\Resources\PageContentResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -30,11 +19,7 @@ class ViewPageContent extends XotBaseViewRecord
     {
         return [
             'edit' => EditAction::make(),
-<<<<<<< HEAD
             // 'locale-switcher' => LocaleSwitcher::make(), // Temporarily disabled until lara-zeus package is working
-=======
-            'locale-switcher' => LocaleSwitcher::make(),
->>>>>>> 6ed19256f (.)
         ];
     }
 }

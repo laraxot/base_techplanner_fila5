@@ -14,14 +14,7 @@ status: draft
 https://gasparesganga.com/labs/php-shapefile/
 -----------------------------------------------
 
-<<<<<<< HEAD
 
-<<<<<<< .merge_file_P3WhsG
-=======
-
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_rhQiIA
 fathernelson/laravel-mysql-spatial
 -----------------------------------------------
 

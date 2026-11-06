@@ -64,25 +64,7 @@ class GetAllIconsAction
                     continue;
                 }
 
-<<<<<<< .merge_file_dVufu5
                 foreach (File::allFiles($path) as $file) {
-=======
-                $files = File::allFiles($path);
-                if (! is_iterable($files)) {
-                    continue;
-                }
-
-                foreach ($files as $file) {
-                    // Type narrowing per SplFileInfo
-<<<<<<< HEAD
-                    if (! $file instanceof \SplFileInfo) {
-=======
-                    if (! ($file instanceof \SplFileInfo)) {
->>>>>>> 6ed19256f (.)
-                        continue;
-                    }
-
->>>>>>> .merge_file_6TpSUo
                     // Simply ignore files that aren't SVGs
                     if ($file->getExtension() !== 'svg') {
                         continue;

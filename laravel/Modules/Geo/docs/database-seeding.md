@@ -234,17 +234,8 @@ php bashscripts/database/seeding/<nome progetto>-1000-records.php
 
 ## Collegamenti e Riferimenti
 
-<<<<<<< .merge_file_ZZJozM
 - [README BashScripts](../../../../bashscripts/README.md)
-=======
-- [README BashScripts](../bashscripts/README.md)
-- [Quick Start Seeding](../bashscripts/database/seeding/QUICK_START.md)
-<<<<<<< HEAD
-- [README BashScripts](../bashscripts/readme.md)
->>>>>>> .merge_file_MufmSd
 - [Quick Start Seeding](../bashscripts/database/seeding/quick_start.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Documentazione Modulo <nome progetto>](../laravel/Modules/<nome progetto>/docs/)
 - [Documentazione Modulo <nome modulo>](../laravel/Modules/<nome modulo>/docs/)
 - [Documentazione Modulo <nome progetto>](../laravel/Modules/<nome progetto>/docs/)

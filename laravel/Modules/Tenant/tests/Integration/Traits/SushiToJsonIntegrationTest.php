@@ -8,12 +8,7 @@ use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Illuminate\Support\Facades\File;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Modules\Tenant\Models\TestSushiModel;
-<<<<<<< .merge_file_jwe9rB
 use Modules\Tenant\Tests\TestCase;
-=======
-use Modules\Tenant\Services\TenantService;
-<<<<<<< HEAD
->>>>>>> .merge_file_RtSWym
 
 use function Safe\json_encode;
 

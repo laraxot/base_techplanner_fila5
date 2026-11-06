@@ -118,15 +118,8 @@ Thumbs.db
 
 # DOCUMENTATION CACHE
 docs/phpstan/
-<<<<<<< .merge_file_Dnbnip
-=======
-docs/cache/
-<<<<<<< HEAD
->>>>>>> .merge_file_M8tH3A
 docs/legacy/
 docs/legacy/**
-=======
->>>>>>> 6ed19256f (.)
 
 # LANGUAGE FILES
 lang/lang/
@@ -158,7 +151,6 @@ test_activity_logs.sql
 *.fila2
 laravel
 public_html
-<<<<<<< HEAD
 tests/coverage
 _docs/
 tests/coverage/
@@ -174,7 +166,6 @@ activity_coverage.xml
 *.orig
 *.rej
 *~head
-<<<<<<< .merge_file_Dnbnip
 agentdb.rvf
 tests/AuditCoverage
 audit-coverage/
@@ -221,7 +212,3 @@ tests/activity_coverage.xml
 docs/graphify
 resources/lang
 Activity
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_M8tH3A

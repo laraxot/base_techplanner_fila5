@@ -13,13 +13,7 @@ related:
 status: draft
 ---
 
-<<<<<<< HEAD
 
 Installed packages index:
 
 - [../../../../docs/packages/index.md](../../../../docs/packages/index.md)
-<<<<<<< .merge_file_2lQ6sf
-=======
-=======
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_LdU1K9

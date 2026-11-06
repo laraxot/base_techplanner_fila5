@@ -10,7 +10,6 @@ return [
     ],
     'throttle' => 'For mange mislykkede forsøg. Prøv igen om :seconds sekunder.',
     'unknown' => 'Der opstod en ukendt fejl.',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -24,6 +23,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

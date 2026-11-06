@@ -156,4 +156,3 @@ $percentage = SafeFloatCastAction::castAsPercentage($mixedValue);
 - [Azioni Cast Xot](../../Xot/app/Actions/Cast)
 
 ---
-Ultimo aggiornamento: 2025-01-06

@@ -45,14 +45,7 @@ return [
         'messages' => [
             'created' => 'Template email creato con successo',
             'updated' => 'Template email aggiornato con successo',
-<<<<<<< .merge_file_TLG5MK
             'deleted' => 'Template email eliminato con successo']],
-=======
-            'deleted' => 'Template email eliminato con successo',
-        ],
-    ],
-<<<<<<< HEAD
->>>>>>> .merge_file_b4lqGs
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -64,11 +57,4 @@ return [
     'fields' => [
     ],
     'actions' => [
-<<<<<<< .merge_file_TLG5MK
     ]];
-=======
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
->>>>>>> .merge_file_b4lqGs

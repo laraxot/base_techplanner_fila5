@@ -76,12 +76,4 @@ $response->assertStatus(200);
 
 ---
 **Status**: In Progress
-<<<<<<< .merge_file_inRTjq
 **Prossimo step**: Correggere tutti i test per usare `/{locale}` invece di `/`
-=======
-<<<<<<< HEAD
-**Prossimo step**: Correggere tutti i test per usare `/{locale}` invece di `/`
-=======
-**Prossimo step**: Correggere tutti i test per usare `/{locale}` invece di `/`
->>>>>>> 6ed19256f (.)
->>>>>>> .merge_file_0mVEMy
