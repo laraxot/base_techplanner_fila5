@@ -57,6 +57,20 @@ Verificati HTTP 200 su dashboard, clienti e dispositivi con autenticazione tempo
 
 La pulizia interessa i log attivi `laravel/storage/logs/{laravel,browser}.log` e `/var/log/nginx/sottana.{com,net}-error.log`, troncati senza rimuovere i file. Gli archivi ruotati restano conservati. Dopo la pulizia ripetere le richieste e controllare che non vengano registrati nuovi errori.
 
+## Asset JavaScript Filament dopo Composer
+
+Gli errori Alpine `filamentSidebar is not defined`, `filamentSidebarBackground is not defined`, `notificationsComponent is not defined` e `setUpFilamentBroadcastNotifications is not defined` richiedono di verificare gli asset Filament, oltre a quelli Livewire. Le viste aggiornate devono essere servite insieme ai JavaScript della stessa versione.
+
+Il callback Composer `post-autoload-dump` esegue `php artisan filament:upgrade` dopo `package:discover`: pubblica gli asset correnti e pulisce le cache Filament interessate. La pubblicazione manuale si esegue dalla cartella `laravel/`:
+
+```bash
+php artisan filament:upgrade
+php artisan livewire:publish --assets
+php artisan vendor:publish --tag=cookie-public --force
+```
+
+La verifica browser autenticata del 2026-11-06 su `/techplanner/admin/medical-directors` conferma HTTP 200, tabella inizializzata, sidebar disponibile e funzione broadcast registrata, senza errori JavaScript. Pubblicato anche il CSS cookie-consent precedentemente in 404. Il browser pulito non riproduce gli avvisi Permissions-Policy indicati: le risposte osservate non contengono quell'header. Dopo una pubblicazione con URL gia' presenti nella cache del browser, ricaricare la pagina con `Ctrl+F5`.
+
 ## Pagine da controllare dopo deploy
 
 - Home: https://sottana.net/it
