@@ -143,3 +143,44 @@ Nessun codice PHP, configurazione runtime, dato, commit o push è stato toccato.
   ri-verificare a merge completato.
 - File `.md` toccati: solo `64-audit.md` e questa story (nessuna data/timestamp
   nei nomi).
+
+## Aggiornamento sessione 2026-11-06 (terza parte — merge storm)
+
+### Cosa è successo
+
+- MANY merge automatice concorrenti (`git merge origin/master -s resolve` e
+  `git merge laraxot/dev -s resolve`) lanciati da shell interattivi di altri
+  agenti (pts/0,6,9,10). Ogni merge scriveva marker in ~19k path e committava
+  automaticamente (commit "." di Marco Xot ogni ~30s-20min).
+- Il branch locale era `master` (non dev): contiene lo snapshot master di
+  luglio (3583f9e5d, 8.050 file). `laraxot/dev` è il remote canonico, 224
+  commit avanti.
+- Risoluzione index: ~6.4k path unmerged → presi i lati giusti (ours per UU/AA,
+  theirs per UA, rm per DU), poi `checkout --theirs` + merge commit manuale
+  `82a497991` (MERGE_HEAD=1d98c1035) → master ora contiene laraxot/dev.
+- Cleanup marker: 2.232 file `.merge_file_*` committati rimossi, ~1.300 file
+  con marker risolti (ours/remote/clean-blob), commit `02befe01e` (773 file,
+  -15k righe marker). Worktree: 0 marker, `php artisan` boot OK (Laravel 13.40).
+
+### Ripristini dev-intent
+
+File ritornati alla versione pre-merge (8a234df95) perché il merge li aveva
+resi master-flavored: TenantServiceProvider, ConsentResource, 14 file
+TechPlanner/Employee/Job Filament (override di `getFormSchema()` final in
+XotBaseResource → fatal error).
+
+### Stato PHPStan
+
+- Baseline post-merge: **1.049 file_errors** (errore fatale 0). Dominati da
+  `mixed` e test Tenant (mockAppService/expectMockery). Run:
+  `phpstan analyse Modules --error-format=json` → /tmp/phpstan-final2.json
+- I 3 errori iniziali (AbsenceRequestPolicy, GeoTrait) non si ripresentano nel
+  top-error; verificare nel dettaglio.
+
+### Rischi residui
+
+- Altri agenti possono rilanciare i merge: se riparte il loop, rifare
+  `git ls-files -u` + stesso protocollo.
+- Moduli nested hanno repo propri ancora sporchi (lavoro altrui).
+- 5.336 file locali-extra preservati nel merge (snapshot files, .playwright-mcp,
+  workspace) — da ripulire in una passata dedicata se indesiderati.
