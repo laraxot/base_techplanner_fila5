@@ -20,17 +20,8 @@ class LogUserLogoutAction
     use QueueableAction;
 
     public function __construct(
-<<<<<<< .merge_file_z34Omt
         public ?UserContract $user = null
-=======
-        public User $user
-<<<<<<< HEAD
->>>>>>> .merge_file_xRJdEY
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     public function execute(?UserContract $user = null): Activity
     {
