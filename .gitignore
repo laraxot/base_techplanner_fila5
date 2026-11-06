@@ -38,6 +38,7 @@ laravel/stubs/
 laravel/lang/vendor/
 public_html/deploy/config.php
 public_html/deploy/*.txt
+.certbot/
 laravel/tmp/
 laravel/venv/
 laravel/resources/lang/vendor/

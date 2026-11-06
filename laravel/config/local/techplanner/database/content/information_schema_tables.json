@@ -98,8 +98,8 @@
         "table_name": "clients",
         "table_rows": 2,
         "table_schema": "techplanner_data",
-        "updated_at": "2026-02-22T17:50:49.000000Z",
-        "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96"
+        "updated_at": "2026-11-06T09:55:13.000000Z",
+        "updated_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b"
     },
     {
         "table_schema": "techplanner_data",
@@ -166,5 +166,16 @@
         "updated_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
         "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
         "table_rows": 104
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\Employee\\Models\\WorkHour",
+        "table_name": "work_hours",
+        "id": 17,
+        "updated_at": "2026-02-22T20:57:37.000000Z",
+        "created_at": "2026-02-22T20:57:37.000000Z",
+        "updated_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b",
+        "created_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b",
+        "table_rows": 123
     }
 ]

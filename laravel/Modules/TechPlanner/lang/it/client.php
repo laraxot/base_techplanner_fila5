@@ -148,6 +148,16 @@ return [
             'icon' => 'sendRecordsNotification',
             'label' => 'sendRecordsNotification',
         ],
+        'createAnother' => [
+            'tooltip' => 'createAnother',
+            'icon' => 'createAnother',
+            'label' => 'createAnother',
+        ],
+        'submit' => [
+            'tooltip' => 'submit',
+            'icon' => 'submit',
+            'label' => 'submit',
+        ],
     ],
     'fields' => [
         'id' => [
@@ -437,6 +447,19 @@ return [
                 'additional_info' => [
                     'label' => [
                         'heading' => 'tech_planner::client.sections.additional_info.label',
+                        'label' => 'tech_planner::client.sections.additional_info.label',
+                    ],
+                ],
+                'company' => [
+                    'label' => [
+                        'label' => 'tech_planner::client.sections.company.label',
+                        'heading' => 'tech_planner::client.sections.company.label',
+                    ],
+                ],
+                'contact_info' => [
+                    'label' => [
+                        'label' => 'tech_planner::client.sections.contact_info.label',
+                        'heading' => 'tech_planner::client.sections.contact_info.label',
                     ],
                 ],
             ],
