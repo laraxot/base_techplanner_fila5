@@ -24,7 +24,7 @@ class DeviceForm extends XotBaseResourceForm
                 ->relationship('client', 'company_name')
                 ->getOptionLabelFromRecordUsing(static function (Client $client): string {
                     return $client->company_name
-                        ?: ($client->name ?: 'Client #'.$client->getKey());
+                        ?: ($client->name ?: 'Client');
                 })
                 ->searchable()
                 ->preload(),
