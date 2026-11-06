@@ -1,8 +1,21 @@
+---
+title: "title with slug component"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "title with slug component"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi del Componente TitleWithSlugInput per Filament
 
 ## Introduzione
 
-Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di SaluteOra, in particolare per la gestione dei template email.
+Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di Quaeris, in particolare per la gestione dei template email.
+Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di App, in particolare per la gestione dei template email.
 
 ## Panoramica del Pacchetto
 
@@ -16,9 +29,12 @@ Il pacchetto `filament-title-with-slug` di Camya fornisce un componente speciali
 - **Supporto Dark Mode**: Compatibilità con il tema scuro di Filament
 - **Validazione Avanzata**: Regole di validazione personalizzabili
 
-### Compatibilità con SaluteOra
+### Compatibilità con Quaeris
 
-Il componente è compatibile con l'architettura di SaluteOra e può essere integrato seguendo le convenzioni del progetto:
+Il componente è compatibile con l'architettura di Quaeris e può essere integrato seguendo le convenzioni del progetto:
+### Compatibilità con App
+
+Il componente è compatibile con l'architettura di App e può essere integrato seguendo le convenzioni del progetto:
 
 - Non utilizza componenti UI personalizzati
 - Può essere configurato per restituire array associativi con chiavi stringhe
@@ -43,7 +59,8 @@ php artisan vendor:publish --tag="filament-title-with-slug-config"
 
 ### Configurazione Base
 
-Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di SaluteOra:
+Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di Quaeris:
+Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di App:
 
 ```php
 use Camya\Filament\Forms\Components\TitleWithSlugInput;
@@ -75,7 +92,8 @@ public static function getFormSchema(): array
 
 ### Personalizzazione Avanzata
 
-Per adattare il componente alle esigenze specifiche di SaluteOra:
+Per adattare il componente alle esigenze specifiche di Quaeris:
+Per adattare il componente alle esigenze specifiche di App:
 
 ```php
 'titleSlug' => TitleWithSlugInput::make(
@@ -112,7 +130,8 @@ Il componente mostra un'anteprima dell'URL completo, personalizzabile attraverso
 
 ```php
 ->urlPath('/mail-templates/')
-->urlHost('https://saluteora.example.com')
+->urlHost('https://Quaeris.example.com')
+->urlHost('https://app.example.test')
 ->urlHostVisible(true)
 ```
 
@@ -147,7 +166,8 @@ Il componente può generare un link per visualizzare direttamente la risorsa:
     : null)
 ```
 
-## Vantaggi per SaluteOra
+## Vantaggi per Quaeris
+## Vantaggi per App
 
 L'integrazione di questo componente nel modulo Notify offrirebbe:
 
@@ -159,11 +179,11 @@ L'integrazione di questo componente nel modulo Notify offrirebbe:
 
 ## Considerazioni per l'Implementazione
 
-### Conformità con le Convenzioni di SaluteOra
+### Conformità con le Convenzioni di Quaeris
 
 Per rispettare le convenzioni del progetto, è necessario:
 
-1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di SaluteOra anziché testi hardcoded
+1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di Quaeris anziché testi hardcoded
 2. **Array Associativo**: Utilizzare chiavi stringhe nell'array di schema del form
 3. **Nomenclatura**: Seguire le convenzioni di nomenclatura del progetto
 
@@ -195,18 +215,21 @@ public static function getFormSchema(): array
 ### Potenziali Limitazioni
 
 1. **Dipendenza Esterna**: Introduce una dipendenza aggiuntiva nel progetto
-2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di SaluteOra
+2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di Quaeris
+2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di App
 3. **Modifiche Future**: Come ogni dipendenza, è soggetto a cambiamenti nelle versioni future
 
 ### Alternative
 
-1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di SaluteOra
+1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di Quaeris
+1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di App
 2. **Approccio Modulare**: Utilizzare i componenti nativi di Filament con logica personalizzata
 3. **Altri Pacchetti**: Valutare pacchetti alternativi con funzionalità simili
 
 ## Conclusioni
 
-Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di SaluteOra potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
+Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di Quaeris potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
+Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di App potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
 
 L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare attenzione alla localizzazione e alla struttura del form schema.
 

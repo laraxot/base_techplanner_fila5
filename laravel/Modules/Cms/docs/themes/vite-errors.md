@@ -1,3 +1,15 @@
+---
+title: "vite errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "vite errors"
+issues: []
+discussions: []
+status: draft
+---
+
 # Gestione Errori Vite nei Temi
 
 ## Perché
@@ -35,7 +47,7 @@ ThemeName/
 
 ### 1. Verifica Preliminare
 ```bash
-cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/[NomeTema]
+cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
 ```
 
 ### 2. Processo di Compilazione
@@ -70,7 +82,7 @@ ls -la dist/
 
 ## Collegamenti Correlati
 - [Documentazione Generale Errori](/project_docs/errors/readme.md)
-- [Gestione Temi CMS](../themes/readme.md)
+- [Gestione Temi CMS](../../../../Themes/README.md)
 - [Processo di Deploy](../../project_docs/deployment/themes.md)
 
 ## Note Tecniche

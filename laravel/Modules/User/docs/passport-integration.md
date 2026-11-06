@@ -1,8 +1,33 @@
+---
+title: "Laravel Passport Integration - Architettura Completa"
+type: concept
+tags: [passport, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-integration laravel passport integration - architettura completa"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Laravel Passport Integration - Architettura Completa
 
 > **Generato**: [DATE]
 > **Filosofia**: L'Architetto Laraxot (Vincitore del Dibattito Interno)
-> **PHPStan Status**: ✅ Level MAX Compliant (Zero Errori)
+> **PHPStan Status**: ✅ Modulo `User` verificato pulito il 2026-03-10
 
 ---
 
@@ -38,11 +63,18 @@ Durante l'analisi dell'integrazione Passport, sono emerse tre posizioni:
 laravel/Modules/User/app/Models/
 ├── BaseUser.php              # Implements OAuthenticatable + HasApiTokens
 ├── OauthClient.php          # Extends Laravel\Passport\Client
-├── OauthAccessToken.php     # Extends Laravel\Passport\Token
+├── OauthToken.php           # Extends Laravel\Passport\Token
+├── OauthAccessToken.php     # Local alias/model used by app consumers when needed
 ├── OauthRefreshToken.php    # Extends Laravel\Passport\RefreshToken
 ├── OauthAuthCode.php        # Extends Laravel\Passport\AuthCode
-└── OauthPersonalAccessClient.php  # Extends Laravel\Passport\PersonalAccessClient
+└── OauthPersonalAccessClient.php  # Local application model for oauth_personal_access_clients
 ```
+
+### Distinzione critica
+
+- I wrapper 1:1 obbligatori esistono solo per i model vendor Passport che estendono `Illuminate\Database\Eloquent\Model`
+- `Laravel\Passport\PersonalAccessClient` non e un model Eloquent vendor disponibile come wrapper 1:1 nel progetto
+- `OauthPersonalAccessClient` resta quindi un model locale del modulo `User`, non un mirror diretto del vendor
 
 ### BaseUser + Passport
 
@@ -492,9 +524,9 @@ $ ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale
-- [README.md](./readme.md) - Overview modulo
-- [BUSINESS_LOGIC_DEEP_DIVE.md](./business_logic_deep_dive.md) - Business logic completa
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale
+- [README.md](./README.md) - Overview modulo
+- [business-logic-deep-dive-4.md](./business-logic-deep-dive.md) - Business logic completa
 
 ### Documentazione Esterna
 - [Laravel Passport Official](https://laravel.com/docs/passport)

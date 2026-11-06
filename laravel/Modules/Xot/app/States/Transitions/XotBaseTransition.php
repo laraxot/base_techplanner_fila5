@@ -4,19 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\States\Transitions;
 
-use BackedEnum;
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\Notify\Notifications\RecordNotification;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
-use Spatie\ModelStates\Transition;
-use TypeError;
 use Webmozart\Assert\InvalidArgumentException;
 
-abstract class XotBaseTransition extends Transition
+abstract class XotBaseTransition
 {
     public function __construct(
         public Model $record,
@@ -32,8 +30,7 @@ abstract class XotBaseTransition extends Transition
         $stateClassName = Str::of($class)->afterLast('To')->toString();
         $newStateClass = $stateNamespace.'\\'.$stateClassName;
 
-        /* @phpstan-ignore-next-line */
-        $this->record->state = new $newStateClass($this->record);
+        $this->record->setAttribute('state', new $newStateClass($this->record));
         $this->record->save();
 
         return $this->record;
@@ -66,7 +63,7 @@ abstract class XotBaseTransition extends Transition
     /**
      * Get notification attachments.
      *
-     * @return array<int, array<string, string>>
+     * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
      */
     public function getNotificationAttachments(): array
     {
@@ -76,7 +73,7 @@ abstract class XotBaseTransition extends Transition
     public function getNotificationSlug(UserContract $recipient): string
     {
         $typeEnum = $recipient->type;
-        $type = $typeEnum instanceof BackedEnum ? (string) $typeEnum->value : 'unknown';
+        $type = $typeEnum instanceof \BackedEnum ? SafeStringCastAction::cast($typeEnum->value) : 'unknown';
 
         $slug =
             class_basename($this->record).
@@ -113,7 +110,7 @@ abstract class XotBaseTransition extends Transition
 
         try {
             Notification::route($recipient->getChannel(), $recipient->getRoute())->notify($notify);
-        } catch (TypeError|InvalidArgumentException $e) {
+        } catch (\TypeError|InvalidArgumentException $e) {
             $message = 'channel :['.$recipient->getChannel().'] error: ['.$e->getMessage().']';
             FilamentNotification::make()
                 ->title('Error')

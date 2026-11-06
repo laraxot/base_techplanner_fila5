@@ -1,13 +1,12 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  *
  * @see https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
  * @see https://philo.dev/laravel-batches-and-real-time-progress-with-livewire/
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
@@ -55,10 +54,10 @@ use Override;
  */
 class JobBatch extends BaseModel
 {
-    /** @var bool */
+    public const ?string UPDATED_AT = null;
+
     public $incrementing = false;
 
-    /** @var string */
     protected $keyType = 'string';
 
     protected $fillable = [
@@ -81,8 +80,8 @@ class JobBatch extends BaseModel
      */
     public function processedJobs(): int|float
     {
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
-        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+        $totalJobs = $this->integerAttribute('total_jobs');
+        $pendingJobs = $this->integerAttribute('pending_jobs');
 
         return $totalJobs - $pendingJobs;
     }
@@ -92,7 +91,7 @@ class JobBatch extends BaseModel
      */
     public function progress(): int
     {
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+        $totalJobs = $this->integerAttribute('total_jobs');
         $progress = $totalJobs > 0 ? round($this->processedJobs() / $totalJobs * 100) : 0;
 
         return (int) $progress;
@@ -103,7 +102,7 @@ class JobBatch extends BaseModel
      */
     public function hasPendingJobs(): bool
     {
-        $pendingJobs = (int) ($this->attributes['pending_jobs'] ?? 0);
+        $pendingJobs = $this->integerAttribute('pending_jobs');
 
         return $pendingJobs > 0;
     }
@@ -113,9 +112,7 @@ class JobBatch extends BaseModel
      */
     public function finished(): bool
     {
-        $finishedAt = $this->attributes['finished_at'] ?? null;
-
-        return $finishedAt instanceof Carbon;
+        return $this->finished_at !== null;
     }
 
     /**
@@ -123,7 +120,7 @@ class JobBatch extends BaseModel
      */
     public function hasFailures(): bool
     {
-        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
+        $failedJobs = $this->integerAttribute('failed_jobs');
 
         return $failedJobs > 0;
     }
@@ -133,8 +130,8 @@ class JobBatch extends BaseModel
      */
     public function failed(): bool
     {
-        $failedJobs = (int) ($this->attributes['failed_jobs'] ?? 0);
-        $totalJobs = (int) ($this->attributes['total_jobs'] ?? 0);
+        $failedJobs = $this->integerAttribute('failed_jobs');
+        $totalJobs = $this->integerAttribute('total_jobs');
 
         return $failedJobs === $totalJobs;
     }
@@ -144,9 +141,14 @@ class JobBatch extends BaseModel
      */
     public function cancelled(): bool
     {
-        $cancelledAt = $this->attributes['cancelled_at'] ?? null;
+        return $this->cancelled_at !== null;
+    }
 
-        return $cancelledAt instanceof Carbon;
+    private function integerAttribute(string $attribute): int
+    {
+        $value = $this->getAttribute($attribute);
+
+        return is_numeric($value) ? (int) $value : 0;
     }
 
     /**  @return array<string, string>  */

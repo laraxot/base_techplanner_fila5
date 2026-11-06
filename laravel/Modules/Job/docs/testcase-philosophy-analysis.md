@@ -1,3 +1,15 @@
+---
+title: "testcase philosophy analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testcase philosophy analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # TestCase Philosophy Analysis - Job Module
 
 ## Il Problema Attuale
@@ -56,7 +68,6 @@ protected function configureTestConnections(): void
    - ❌ Commenti che non aggiungono valore
 
 ---
-
 ## La Filosofia CORRETTA
 
 ### Principio Fondamentale
@@ -265,8 +276,8 @@ php artisan migrate --env=testing --database=xot --force
 **File:** `laravel/.env.testing`
 
 **Verificare:**
-- ✅ JOB_DB_DATABASE=laravelpizza_job_test
-- ✅ XOT_DB_DATABASE=laravelpizza_xot_test
+- ✅ JOB_DB_DATABASE=<nome progetto>_job_test
+- ✅ XOT_DB_DATABASE=<nome progetto>_xot_test
 - ✅ Connessioni MySQL configurate
 
 ### 4. Aggiornare Documentazione

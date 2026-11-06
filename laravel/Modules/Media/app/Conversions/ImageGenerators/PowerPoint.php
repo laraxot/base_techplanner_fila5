@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://spatie.be/docs/laravel-medialibrary/v11/converting-other-file-types/creating-a-custom-image-generator
  */
-
-declare(strict_types=1);
 
 namespace Modules\Media\Conversions\ImageGenerators;
 
@@ -33,11 +32,17 @@ class PowerPoint extends ImageGenerator
         return true;
     }
 
+    /**
+     * @return Collection<int, string>
+     */
     public function supportedExtensions(): Collection
     {
         return collect(['ppt', 'pptx']);
     }
 
+    /**
+     * @return Collection<int, string>
+     */
     public function supportedMimeTypes(): Collection
     {
         return collect([

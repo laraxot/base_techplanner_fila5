@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Modulo Media - Gestione File Multimediali"
+module: "Media"
+type: concept
+tags: [module]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module"
+related:
+  - "./webm.md"
+status: draft
+---
 # Modulo Media - Gestione File Multimediali
 
 ## Scopo Principale
@@ -184,7 +198,7 @@ Security → Organization → Thumbnails → Tags → CDN
 3. **Performance Optimization**
    - Missing intelligent caching
    - No adaptive streaming for video
-   - Missing predictive loading
+   - Missing <nome progetto>ive loading
    - No bandwidth optimization
 
 ### 🟢 MEDIE (Priorità Bassa)
@@ -296,7 +310,7 @@ $share = SharingService::create($media, [
 - [ ] AI-powered content analysis
 - [ ] Smart tagging system
 - [ ] Content-based search
-- [ ] Predictive loading
+- [ ] <nome progetto>ive loading
 
 ### Fase 3: Collaboration (3-4 settimane)
 - [ ] Real-time collaboration

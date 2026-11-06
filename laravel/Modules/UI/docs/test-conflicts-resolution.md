@@ -1,3 +1,15 @@
+---
+title: "test conflicts resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "test conflicts resolution"
+issues: []
+discussions: []
+status: draft
+---
+
 # Test di Risoluzione Conflitti nel Modulo UI
 
 ## Descrizione
@@ -39,8 +51,8 @@ cd laravel
 
 ## Collegamenti Principali
 
-- [Risoluzione Conflitti Git](../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
-- [UI Conflict Links](../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.
+- [Risoluzione Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
+- [UI Conflict Links](../../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.
 # Test di Risoluzione Conflitti nel Modulo UI
 
 ## Descrizione
@@ -82,5 +94,5 @@ cd laravel
 
 ## Collegamenti Principali
 
-- [Risoluzione Conflitti Git](../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
-- [UI Conflict Links](../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.
+- [Risoluzione Conflitti Git](../../../../../docs/risoluzione_conflitti_git.md): Documentazione principale sulla risoluzione dei conflitti git.
+- [UI Conflict Links](../../../../../docs/ui_conflict_links.md): Collegamenti ai file di risoluzione dei conflitti nel modulo UI.

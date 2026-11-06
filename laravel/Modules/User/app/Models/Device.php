@@ -7,17 +7,17 @@ namespace Modules\User\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Carbon;
+use Modules\User\Database\Factories\DeviceFactory;
+use Modules\User\Models\Traits\DeviceRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
 
 /**
  * Device model representing a user's device in the system.
  *
  * @property EloquentCollection<int, Model&UserContract> $users
- * @property int|null                                    $users_count
+ * @property int|null $users_count
  *
  * @method static Builder|Device newModelQuery()
  * @method static Builder|Device newQuery()
@@ -40,38 +40,46 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|Device whereUpdatedBy($value)
  * @method static Builder|Device whereVersion($value)
  *
- * @property DeviceUser           $pivot
+ * @property DeviceUser $pivot
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- * @property string               $id
- * @property string|null          $mobile_id
- * @property array|null           $languages
- * @property string|null          $device
- * @property string|null          $platform
- * @property string|null          $browser
- * @property string|null          $version
- * @property bool|null            $is_robot
- * @property string|null          $robot
- * @property bool|null            $is_desktop
- * @property bool|null            $is_mobile
- * @property bool|null            $is_tablet
- * @property bool|null            $is_phone
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $updated_by
- * @property string|null          $created_by
- * @property string|null          $uuid
+ * @property string $id
+ * @property string|null $mobile_id
+ * @property array<int, string>|null $languages
+ * @property string|null $device
+ * @property string|null $platform
+ * @property string|null $browser
+ * @property string|null $version
+ * @property bool|null $is_robot
+ * @property string|null $robot
+ * @property bool|null $is_desktop
+ * @property bool|null $is_mobile
+ * @property bool|null $is_tablet
+ * @property bool|null $is_phone
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ * @property string|null $uuid
  *
  * @method static Builder<static>|Device whereUuid($value)
  *
- * @mixin IdeHelperDevice
- *
  * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\DeviceFactory factory($count = null, $state = [])
+ *
+ * @property string|null $name
+ * @property string|null $type
+ *
+ * @method static Builder<static>|Device whereName($value)
+ * @method static Builder<static>|Device whereType($value)
  *
  * @mixin \Eloquent
  */
 class Device extends BaseModel
 {
+    protected $connection = 'user';
+
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -91,15 +99,11 @@ class Device extends BaseModel
     ];
 
     /**
-     * Define the many-to-many relationship between devices and users.
-     *
-     * return BelongsToMany<UserContract, Device>
+     * Create a new factory instance for the model, typed for static analysis.
      */
-    public function users(): BelongsToMany
+    protected static function newFactory(): DeviceFactory
     {
-        $userClass = XotData::make()->getUserClass();
-
-        return $this->belongsToManyX($userClass);
+        return DeviceFactory::new();
     }
 
     /**
@@ -127,4 +131,6 @@ class Device extends BaseModel
             'is_phone' => 'boolean',
         ];
     }
+
+    use DeviceRelationsTrait;
 }

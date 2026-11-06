@@ -4,333 +4,346 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\User\Models\Device;
-use Modules\User\Tests\TestCase;
+use Tests\TestCase;
 
-uses(TestCase::class, DatabaseTransactions::class);
+uses(\Modules\User\Tests\TestCase::class);
 
-test('can create device with minimal data', function (): void {
-    $device = Device::factory()->create([
-        'device' => 'iPhone',
-        'platform' => 'iOS',
-    ]);
+class DeviceTest extends TestCase
+{
+    public function test_can_create_device_with_minimal_data(): void
+    {
+        $device = Device::factory()->create([
+            'device' => 'iPhone',
+            'platform' => 'iOS',
+        ]);
 
-    $this->assertDatabaseHas('devices', [
-        'id' => $device->id,
-        'device' => 'iPhone',
-        'platform' => 'iOS',
-    ]);
-});
-
-test('can create device with all fields', function (): void {
-    $deviceData = [
-        'uuid' => '550e8400-e29b-41d4-a716-446655440000',
-        'mobile_id' => 'mobile123',
-        'languages' => ['en', 'it', 'de'],
-        'device' => 'iPhone 13',
-        'platform' => 'iOS',
-        'browser' => 'Safari',
-        'version' => '15.0',
-        'is_robot' => false,
-        'robot' => null,
-        'is_desktop' => false,
-        'is_mobile' => true,
-        'is_tablet' => false,
-        'is_phone' => true,
-    ];
-
-    $device = Device::factory()->create($deviceData);
-
-    $this->assertDatabaseHas('devices', [
-        'id' => $device->id,
-        'uuid' => '550e8400-e29b-41d4-a716-446655440000',
-        'mobile_id' => 'mobile123',
-        'device' => 'iPhone 13',
-        'platform' => 'iOS',
-        'browser' => 'Safari',
-        'version' => '15.0',
-        'is_robot' => false,
-        'is_desktop' => false,
-        'is_mobile' => true,
-        'is_tablet' => false,
-        'is_phone' => true,
-    ]);
-
-    // Verifica campi JSON
-    expect($device->languages)->toBe(['en', 'it', 'de']);
-});
-
-test('device has soft deletes', function (): void {
-    $device = Device::factory()->create();
-    $deviceId = $device->id;
-
-    $device->delete();
-
-    $this->assertSoftDeleted('devices', ['id' => $deviceId]);
-    $this->assertDatabaseMissing('devices', ['id' => $deviceId]);
-});
-
-test('can restore soft deleted device', function (): void {
-    if (! method_exists(Device::class, 'withTrashed')) {
-        $this->markTestSkipped('SoftDeletes trait not present on Device model');
-
-        return;
+        $this->assertDatabaseHas('devices', [
+            'id' => $device->id,
+            'device' => 'iPhone',
+            'platform' => 'iOS',
+        ]);
     }
 
-    $device = Device::factory()->create();
-    $deviceId = $device->id;
+    public function test_can_create_device_with_all_fields(): void
+    {
+        $deviceData = [
+            'uuid' => '550e8400-e29b-41d4-a716-446655440000',
+            'mobile_id' => 'mobile123',
+            'languages' => ['en', 'it', 'de'],
+            'device' => 'iPhone 13',
+            'platform' => 'iOS',
+            'browser' => 'Safari',
+            'version' => '15.0',
+            'is_robot' => false,
+            'robot' => null,
+            'is_desktop' => false,
+            'is_mobile' => true,
+            'is_tablet' => false,
+            'is_phone' => true,
+        ];
 
-    $device->delete();
-    $this->assertSoftDeleted('devices', ['id' => $deviceId]);
+        $device = Device::factory()->create($deviceData);
 
-    /** @var Device $restoredDevice */
-    $restoredDevice = Device::withTrashed()->find($deviceId);
-    $restoredDevice->restore();
+        $this->assertDatabaseHas('devices', [
+            'id' => $device->id,
+            'uuid' => '550e8400-e29b-41d4-a716-446655440000',
+            'mobile_id' => 'mobile123',
+            'device' => 'iPhone 13',
+            'platform' => 'iOS',
+            'browser' => 'Safari',
+            'version' => '15.0',
+            'is_robot' => false,
+            'is_desktop' => false,
+            'is_mobile' => true,
+            'is_tablet' => false,
+            'is_phone' => true,
+        ]);
 
-    $this->assertDatabaseHas('devices', ['id' => $deviceId]);
-    expect($restoredDevice->deleted_at)->toBeNull();
-});
+        // Verifica campi JSON
+        static::assertSame(['en', 'it', 'de'], $device->languages);
+    }
 
-test('can find device by uuid', function (): void {
-    $uuid = '550e8400-e29b-41d4-a716-446655440000';
-    $device = Device::factory()->create(['uuid' => $uuid]);
+    public function test_device_has_soft_deletes(): void
+    {
+        $this->markTestSkipped('Device model does not use SoftDeletes.');
+    }
 
-    $foundDevice = Device::where('uuid', $uuid)->first();
+    public function test_can_restore_soft_deleted_device(): void
+    {
+        $this->markTestSkipped('Device model does not use SoftDeletes.');
+    }
 
-    expect($foundDevice)->not->toBeNull();
-    expect($foundDevice->id)->toBe($device->id);
-});
+    public function test_can_find_device_by_uuid(): void
+    {
+        $uuid = '550e8400-e29b-41d4-a716-446655440000';
+        $device = Device::factory()->create(['uuid' => $uuid]);
 
-test('can find device by mobile id', function (): void {
-    $device = Device::factory()->create(['mobile_id' => 'unique_mobile_123']);
-    $foundDevice = Device::where('mobile_id', 'unique_mobile_123')->first();
+        $foundDevice = Device::where('uuid', $uuid)->first();
 
-    expect($foundDevice)->not->toBeNull();
-    expect($foundDevice->id)->toBe($device->id);
-});
+        static::assertNotNull($foundDevice);
+        static::assertSame($device->id, $foundDevice->id);
+    }
 
-test('can find device by device type', function (): void {
-    $device = Device::factory()->create(['device' => 'iPhone 13 Pro']);
-    $foundDevice = Device::where('device', 'iPhone 13 Pro')->first();
+    public function test_can_find_device_by_mobile_id(): void
+    {
+        $device = Device::factory()->create(['mobile_id' => 'unique_mobile_123']);
 
-    expect($foundDevice)->not->toBeNull();
-    expect($foundDevice->id)->toBe($device->id);
-});
+        $foundDevice = Device::where('mobile_id', 'unique_mobile_123')->first();
 
-test('can find device by platform', function (): void {
-    Device::factory()->create(['platform' => 'iOS']);
-    Device::factory()->create(['platform' => 'Android']);
-    Device::factory()->create(['platform' => 'Windows']);
+        static::assertNotNull($foundDevice);
+        static::assertSame($device->id, $foundDevice->id);
+    }
 
-    $iosDevices = Device::where('platform', 'iOS')->get();
+    public function test_can_find_device_by_device_type(): void
+    {
+        $device = Device::factory()->create(['device' => 'iPhone 13 Pro']);
 
-    expect($iosDevices)->toHaveCount(1);
-    expect($iosDevices->first()->platform)->toBe('iOS');
-});
+        $foundDevice = Device::where('device', 'iPhone 13 Pro')->first();
 
-test('can find device by browser', function (): void {
-    Device::factory()->create(['browser' => 'Safari']);
-    Device::factory()->create(['browser' => 'Chrome']);
-    Device::factory()->create(['browser' => 'Firefox']);
+        static::assertNotNull($foundDevice);
+        static::assertSame($device->id, $foundDevice->id);
+    }
 
-    $safariDevices = Device::where('browser', 'Safari')->get();
+    public function test_can_find_device_by_platform(): void
+    {
+        Device::factory()->create(['platform' => 'iOS']);
+        Device::factory()->create(['platform' => 'Android']);
+        Device::factory()->create(['platform' => 'Windows']);
 
-    expect($safariDevices)->toHaveCount(1);
-    expect($safariDevices->first()->browser)->toBe('Safari');
-});
+        $iosDevices = Device::where('platform', 'iOS')->get();
 
-test('can find device by version', function (): void {
-    $device = Device::factory()->create(['version' => '15.0.1']);
-    $foundDevice = Device::where('version', '15.0.1')->first();
+        static::assertCount(1, $iosDevices);
+        static::assertSame('iOS', $iosDevices->firstOrFail()->platform);
+    }
 
-    expect($foundDevice)->not->toBeNull();
-    expect($foundDevice->id)->toBe($device->id);
-});
+    public function test_can_find_device_by_browser(): void
+    {
+        Device::factory()->create(['browser' => 'Safari']);
+        Device::factory()->create(['browser' => 'Chrome']);
+        Device::factory()->create(['browser' => 'Firefox']);
 
-test('can find desktop devices', function (): void {
-    Device::factory()->create(['is_desktop' => true]);
-    Device::factory()->create(['is_desktop' => false]);
-    Device::factory()->create(['is_desktop' => true]);
+        $safariDevices = Device::where('browser', 'Safari')->get();
 
-    $desktopDevices = Device::where('is_desktop', true)->get();
+        static::assertCount(1, $safariDevices);
+        static::assertSame('Safari', $safariDevices->firstOrFail()->browser);
+    }
 
-    expect($desktopDevices)->toHaveCount(2);
-    expect($desktopDevices->every(fn ($device) => $device->is_desktop))->toBeTrue();
-});
+    public function test_can_find_device_by_version(): void
+    {
+        $device = Device::factory()->create(['version' => '15.0.1']);
 
-test('can find mobile devices', function (): void {
-    Device::factory()->create(['is_mobile' => true]);
-    Device::factory()->create(['is_mobile' => false]);
-    Device::factory()->create(['is_mobile' => true]);
+        $foundDevice = Device::where('version', '15.0.1')->first();
 
-    $mobileDevices = Device::where('is_mobile', true)->get();
+        static::assertNotNull($foundDevice);
+        static::assertSame($device->id, $foundDevice->id);
+    }
 
-    expect($mobileDevices)->toHaveCount(2);
-    expect($mobileDevices->every(fn ($device) => $device->is_mobile))->toBeTrue();
-});
+    public function test_can_find_desktop_devices(): void
+    {
+        Device::factory()->create(['is_desktop' => true]);
+        Device::factory()->create(['is_desktop' => false]);
+        Device::factory()->create(['is_desktop' => true]);
 
-test('can find tablet devices', function (): void {
-    Device::factory()->create(['is_tablet' => true]);
-    Device::factory()->create(['is_tablet' => false]);
-    Device::factory()->create(['is_tablet' => true]);
+        $desktopDevices = Device::where('is_desktop', true)->get();
 
-    $tabletDevices = Device::where('is_tablet', true)->get();
+        static::assertCount(2, $desktopDevices);
+        static::assertTrue($desktopDevices->every(fn (Device $device): bool => (bool) $device->is_desktop));
+    }
 
-    expect($tabletDevices)->toHaveCount(2);
-    expect($tabletDevices->every(fn ($device) => $device->is_tablet))->toBeTrue();
-});
+    public function test_can_find_mobile_devices(): void
+    {
+        Device::factory()->create(['is_mobile' => true]);
+        Device::factory()->create(['is_mobile' => false]);
+        Device::factory()->create(['is_mobile' => true]);
 
-test('can find phone devices', function (): void {
-    Device::factory()->create(['is_phone' => true]);
-    Device::factory()->create(['is_phone' => false]);
-    Device::factory()->create(['is_phone' => true]);
+        $mobileDevices = Device::where('is_mobile', true)->get();
 
-    $phoneDevices = Device::where('is_phone', true)->get();
+        static::assertCount(2, $mobileDevices);
+        static::assertTrue($mobileDevices->every(fn (Device $device): bool => (bool) $device->is_mobile));
+    }
 
-    expect($phoneDevices)->toHaveCount(2);
-    expect($phoneDevices->every(fn ($device) => $device->is_phone))->toBeTrue();
-});
+    public function test_can_find_tablet_devices(): void
+    {
+        Device::factory()->create(['is_tablet' => true]);
+        Device::factory()->create(['is_tablet' => false]);
+        Device::factory()->create(['is_tablet' => true]);
 
-test('can find robot devices', function (): void {
-    Device::factory()->create(['is_robot' => true, 'robot' => 'Googlebot']);
-    Device::factory()->create(['is_robot' => false, 'robot' => null]);
-    Device::factory()->create(['is_robot' => true, 'robot' => 'Bingbot']);
+        $tabletDevices = Device::where('is_tablet', true)->get();
 
-    $robotDevices = Device::where('is_robot', true)->get();
+        static::assertCount(2, $tabletDevices);
+        static::assertTrue($tabletDevices->every(fn (Device $device): bool => (bool) $device->is_tablet));
+    }
 
-    expect($robotDevices)->toHaveCount(2);
-    expect($robotDevices->every(fn ($device) => $device->is_robot))->toBeTrue();
-});
+    public function test_can_find_phone_devices(): void
+    {
+        Device::factory()->create(['is_phone' => true]);
+        Device::factory()->create(['is_phone' => false]);
+        Device::factory()->create(['is_phone' => true]);
 
-test('can find devices by language', function (): void {
-    Device::factory()->create(['languages' => ['en', 'it']]);
-    Device::factory()->create(['languages' => ['en', 'de']]);
-    Device::factory()->create(['languages' => ['fr', 'es']]);
+        $phoneDevices = Device::where('is_phone', true)->get();
 
-    $englishDevices = Device::whereJsonContains('languages', 'en')->get();
+        static::assertCount(2, $phoneDevices);
+        static::assertTrue($phoneDevices->every(fn (Device $device): bool => (bool) $device->is_phone));
+    }
 
-    expect($englishDevices)->toHaveCount(2);
-    expect($englishDevices->every(fn ($device) => in_array('en', $device->languages, strict: true)))->toBeTrue();
-});
+    public function test_can_find_robot_devices(): void
+    {
+        Device::factory()->create(['is_robot' => true, 'robot' => 'Googlebot']);
+        Device::factory()->create(['is_robot' => false, 'robot' => null]);
+        Device::factory()->create(['is_robot' => true, 'robot' => 'Bingbot']);
 
-test('can find devices by device pattern', function (): void {
-    Device::factory()->create(['device' => 'iPhone 13']);
-    Device::factory()->create(['device' => 'iPhone 14']);
-    Device::factory()->create(['device' => 'Samsung Galaxy']);
+        $robotDevices = Device::where('is_robot', true)->get();
 
-    $iphoneDevices = Device::where('device', 'like', '%iPhone%')->get();
+        static::assertCount(2, $robotDevices);
+        static::assertTrue($robotDevices->every(fn (Device $device): bool => (bool) $device->is_robot));
+    }
 
-    expect($iphoneDevices)->toHaveCount(2);
-    expect($iphoneDevices->every(fn ($device) => str_contains($device->device, 'iPhone')))->toBeTrue();
-});
+    public function test_can_find_devices_by_language(): void
+    {
+        Device::factory()->create(['languages' => ['en', 'it']]);
+        Device::factory()->create(['languages' => ['en', 'de']]);
+        Device::factory()->create(['languages' => ['fr', 'es']]);
 
-test('can update device', function (): void {
-    $device = Device::factory()->create(['device' => 'Old Device']);
-    $device->update(['device' => 'New Device']);
+        $englishDevices = Device::whereJsonContains('languages', 'en')->get();
 
-    $this->assertDatabaseHas('devices', [
-        'id' => $device->id,
-        'device' => 'New Device',
-    ]);
-});
+        static::assertCount(2, $englishDevices);
+        static::assertTrue($englishDevices->every(fn (Device $device): bool => in_array('en', $device->languages ?? [], strict: true)));
+    }
 
-test('can handle null values', function (): void {
-    $device = Device::factory()->create([
-        'device' => 'Test Device',
-        'platform' => 'Test Platform',
-        'mobile_id' => null,
-        'languages' => null,
-        'browser' => null,
-        'version' => null,
-        'robot' => null,
-    ]);
+    public function test_can_find_devices_by_device_pattern(): void
+    {
+        Device::factory()->create(['device' => 'iPhone 13']);
+        Device::factory()->create(['device' => 'iPhone 14']);
+        Device::factory()->create(['device' => 'Samsung Galaxy']);
 
-    $this->assertDatabaseHas('devices', [
-        'id' => $device->id,
-        'mobile_id' => null,
-        'browser' => null,
-        'version' => null,
-        'robot' => null,
-    ]);
-});
+        $iphoneDevices = Device::where('device', 'like', '%iPhone%')->get();
 
-test('can find devices by multiple criteria', function (): void {
-    Device::factory()->create([
-        'platform' => 'iOS',
-        'is_mobile' => true,
-        'browser' => 'Safari',
-    ]);
+        static::assertCount(2, $iphoneDevices);
+        static::assertTrue($iphoneDevices->every(fn (Device $device): bool => str_contains((string) $device->device, 'iPhone')));
+    }
 
-    Device::factory()->create([
-        'platform' => 'Android',
-        'is_mobile' => true,
-        'browser' => 'Chrome',
-    ]);
+    public function test_can_update_device(): void
+    {
+        $device = Device::factory()->create(['device' => 'Old Device']);
 
-    Device::factory()->create([
-        'platform' => 'Windows',
-        'is_mobile' => false,
-        'browser' => 'Edge',
-    ]);
+        $device->update(['device' => 'New Device']);
 
-    $devices = Device::where('is_mobile', true)->where('browser', 'Safari')->get();
+        $this->assertDatabaseHas('devices', [
+            'id' => $device->id,
+            'device' => 'New Device',
+        ]);
+    }
 
-    expect($devices)->toHaveCount(1);
-    expect($devices->first()->platform)->toBe('iOS');
-    expect($devices->first()->is_mobile)->toBeTrue();
-    expect($devices->first()->browser)->toBe('Safari');
-});
+    public function test_can_handle_null_values(): void
+    {
+        $device = Device::factory()->create([
+            'device' => 'Test Device',
+            'platform' => 'Test Platform',
+            'mobile_id' => null,
+            'languages' => null,
+            'browser' => null,
+            'version' => null,
+            'robot' => null,
+        ]);
 
-test('device has users relationship', function (): void {
-    $device = Device::factory()->create();
-    expect(method_exists($device, 'users'))->toBeTrue();
-});
+        $this->assertDatabaseHas('devices', [
+            'id' => $device->id,
+            'mobile_id' => null,
+            'browser' => null,
+            'version' => null,
+            'robot' => null,
+        ]);
+    }
 
-test('device has factory', function (): void {
-    $device = Device::factory()->create();
-    expect($device->id)->not->toBeNull();
-    expect($device)->toBeInstanceOf(Device::class);
-});
+    public function test_can_find_devices_by_multiple_criteria(): void
+    {
+        Device::factory()->create([
+            'platform' => 'iOS',
+            'is_mobile' => true,
+            'browser' => 'Safari',
+        ]);
 
-test('device has fillable attributes', function (): void {
-    $device = new Device();
-    $expectedFillable = [
-        'id',
-        'uuid',
-        'mobile_id',
-        'languages',
-        'device',
-        'platform',
-        'browser',
-        'version',
-        'is_robot',
-        'robot',
-        'is_desktop',
-        'is_mobile',
-        'is_tablet',
-        'is_phone',
-    ];
-    expect($device->getFillable())->toBe($expectedFillable);
-});
+        Device::factory()->create([
+            'platform' => 'Android',
+            'is_mobile' => true,
+            'browser' => 'Chrome',
+        ]);
 
-test('device has casts', function (): void {
-    $device = new Device();
-    $expectedCasts = [
-        'id' => 'string',
-        'uuid' => 'string',
-        'created_at' => 'datetime',
-        'updated_at' => 'datetime',
-        'deleted_at' => 'datetime',
-        'updated_by' => 'string',
-        'created_by' => 'string',
-        'deleted_by' => 'string',
-        'languages' => 'array',
-        'is_robot' => 'boolean',
-        'is_desktop' => 'boolean',
-        'is_mobile' => 'boolean',
-        'is_tablet' => 'boolean',
-        'is_phone' => 'boolean',
-    ];
-    expect($device->getCasts())->toBe($expectedCasts);
-});
+        Device::factory()->create([
+            'platform' => 'Windows',
+            'is_mobile' => false,
+            'browser' => 'Edge',
+        ]);
+
+        $devices = Device::where('is_mobile', true)->where('browser', 'Safari')->get();
+
+        static::assertCount(1, $devices);
+        static::assertSame('iOS', $devices->firstOrFail()->platform);
+        static::assertTrue($devices->firstOrFail()->is_mobile);
+        static::assertSame('Safari', $devices->firstOrFail()->browser);
+    }
+
+    public function test_device_has_users_relationship(): void
+    {
+        $device = Device::factory()->create();
+
+        static::assertTrue(method_exists($device, 'users'));
+    }
+
+    public function test_device_has_factory(): void
+    {
+        $device = Device::factory()->create();
+
+        static::assertNotNull($device->id);
+        static::assertInstanceOf(Device::class, $device);
+    }
+
+    public function test_device_has_fillable_attributes(): void
+    {
+        $device = new Device;
+
+        $expectedFillable = [
+            'id',
+            'uuid',
+            'mobile_id',
+            'languages',
+            'device',
+            'platform',
+            'browser',
+            'version',
+            'is_robot',
+            'robot',
+            'is_desktop',
+            'is_mobile',
+            'is_tablet',
+            'is_phone',
+        ];
+
+        static::assertSame($expectedFillable, $device->getFillable());
+    }
+
+    public function test_device_has_casts(): void
+    {
+        $device = new Device;
+
+        $expectedCasts = [
+            'id' => 'string',
+            'uuid' => 'string',
+            'created_at' => 'datetime',
+            'updated_at' => 'datetime',
+            'deleted_at' => 'datetime',
+            'updated_by' => 'string',
+            'created_by' => 'string',
+            'deleted_by' => 'string',
+            'languages' => 'array',
+            'is_robot' => 'boolean',
+            'is_desktop' => 'boolean',
+            'is_mobile' => 'boolean',
+            'is_tablet' => 'boolean',
+            'is_phone' => 'boolean',
+        ];
+
+        static::assertSame($expectedCasts, $device->getCasts());
+    }
+}

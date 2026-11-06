@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 // ---- models ---
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -20,7 +19,6 @@ return new class extends XotBaseMigration
         $this->tableCreate(static function (Blueprint $table): void {
             $table->increments('id');
             $table->uuidMorphs('model');
-            // @phpstan-ignore-next-line method.notFound
             $table->schemalessAttributes('extra_attributes');
             $table->unique(['model_id', 'model_type'], 'morph_unique');
         });

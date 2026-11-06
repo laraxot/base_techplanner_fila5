@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "MCP Server Configuration - Lang Module"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # MCP Server Configuration - Lang Module
 
 
@@ -36,14 +50,14 @@ The Lang module's MCP configuration enables AI assistants to interact with:
     },
     "filesystem": {
       "command": "npx",
-      "args": ["-y", "@modelcontextprotocol/server-filesystem", "/var/www/_bases/base_laravelpizza/laravel"],
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", ". progetto>/laravel"],
       "description": "Access to Lang module files"
     },
     "database": {
       "command": "npx",
       "args": ["-y", "@bytebase/dbhub"],
       "env": {
-        "DATABASE_URL": "sqlite:///var/www/_bases/base_laravelpizza/laravel/database/database.sqlite"
+        "DATABASE_URL": "sqlite://. progetto>/laravel/database/database.sqlite"
       },
       "description": "SQLite database queries"
     }
@@ -58,7 +72,7 @@ The Lang module's MCP configuration enables AI assistants to interact with:
 ### Asana Integration
 ```bash
 # Create task
-"Create task in 'LaravelPizza - Lang Module' project: 'Implement translation export feature'"
+"Create task in '<nome progetto> - Lang Module' project: 'Implement translation export feature'"
 
 # Update status
 "Update task 'Add translation memory support' status to 'In Progress'"
@@ -111,9 +125,9 @@ The Lang module's MCP configuration enables AI assistants to interact with:
 
 ## 📚 Related Documentation
 
-- [Asana MCP Configuration](../../../docs/mcp-asana-configuration.md)
-- [ClickUp MCP Configuration](../../../docs/mcp-clickup-configuration.md)
-- [Redmine MCP Configuration](../../../docs/mcp-redmine-configuration.md)
+- [Asana MCP Configuration](../../../../docs/mcp-asana-configuration.md)
+- [ClickUp MCP Configuration](../../../../docs/mcp-clickup-configuration.md)
+- [Redmine MCP Configuration](../../../../docs/mcp-redmine-configuration.md)
 - [Lang Module Roadmap](./roadmap-[date].md)
 
 ---

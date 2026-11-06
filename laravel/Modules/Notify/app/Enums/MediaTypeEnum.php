@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Enums;
 
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Traits\EnumTrait;
+
 /**
  * Enum per i tipi di media supportati
  *
@@ -12,6 +15,8 @@ namespace Modules\Notify\Enums;
  */
 enum MediaTypeEnum: string
 {
+    use EnumTrait;
+
     case IMAGE = 'image';
     case VIDEO = 'video';
     case DOCUMENT = 'document';
@@ -28,8 +33,7 @@ enum MediaTypeEnum: string
             self::IMAGE->value => 'Image',
             self::VIDEO->value => 'Video',
             self::DOCUMENT->value => 'Document',
-            self::AUDIO->value => 'Audio',
-        ];
+            self::AUDIO->value => 'Audio'];
     }
 
     /**
@@ -40,11 +44,10 @@ enum MediaTypeEnum: string
     public static function labels(): array
     {
         return [
-            self::IMAGE->value => __('notify::whatsapp.media_types.image'),
-            self::VIDEO->value => __('notify::whatsapp.media_types.video'),
-            self::DOCUMENT->value => __('notify::whatsapp.media_types.document'),
-            self::AUDIO->value => __('notify::whatsapp.media_types.audio'),
-        ];
+            self::IMAGE->value => SafeStringCastAction::cast(__('notify::whatsapp.media_types.image')),
+            self::VIDEO->value => SafeStringCastAction::cast(__('notify::whatsapp.media_types.video')),
+            self::DOCUMENT->value => SafeStringCastAction::cast(__('notify::whatsapp.media_types.document')),
+            self::AUDIO->value => SafeStringCastAction::cast(__('notify::whatsapp.media_types.audio'))];
     }
 
     /**

@@ -33,9 +33,9 @@ use Modules\Xot\Database\Factories\PulseAggregateFactory;
  * @method static Builder<static>|PulseAggregate whereType($value)
  * @method static Builder<static>|PulseAggregate whereValue($value)
  *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
- * @property-read ProfileContract|null $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent
  */

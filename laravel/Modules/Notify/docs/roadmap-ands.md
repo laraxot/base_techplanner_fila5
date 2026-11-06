@@ -1,11 +1,22 @@
+---
+title: "roadmap ands"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap ands"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notify Module - Roadmap, Issues & Optimization
 
 **Modulo**: Notify (Multi-Channel Notifications)  
 **Data Analisi**: 1 Ottobre 2025  
-**Status PHPStan**: ✅ 0 errori (Level 9)
+**Status PHPStan**: ✅ 0 errori (Level 10)
 
 ---
-
 ## 📊 STATO ATTUALE
 
 ### Completezza Funzionale: 70%
@@ -232,7 +243,7 @@ class TicketDigest extends Notification implements ShouldQueue
 - [ ] A/B testing
 
 ### Quality
-- [x] PHPStan Level 9 ✅
+- [x] PHPStan Level 10 ✅
 - [ ] Test coverage 80%
 - [ ] Documentation complete
 - [ ] Error handling robust
@@ -242,8 +253,10 @@ class TicketDigest extends Notification implements ShouldQueue
 ## 🔗 Collegamenti
 
 - [← Notify Module README](../readme.md)
+- [← Notify Module README](../README.md)
 - [← Fixcity Integration](../../fixcity/docs/roadmap-and-issues.md)
-- [← Root Documentation](../../../docs/index.md)
+- [← Fixcity Integration](../../ptv/docs/roadmap-and-issues.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 

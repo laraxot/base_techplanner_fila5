@@ -1,3 +1,15 @@
+---
+title: "forbidden methods"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "forbidden methods"
+issues: []
+discussions: []
+status: draft
+---
+
 # Metodi da NON implementare in classi che estendono XotBaseResource
 
 ## Regola fondamentale
@@ -34,7 +46,17 @@ class ProductResource extends XotBaseResource
     protected static ?string $model = Product::class;
 
     // UNICI metodi che dovrebbero essere implementati
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+title: "forbidden methods"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "forbidden methods"
+issues: []
+discussions: []
+    public function getFormSchema(): array
     {
         return [
             'name' => Forms\Components\TextInput::make('name')

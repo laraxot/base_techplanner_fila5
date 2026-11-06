@@ -1,3 +1,15 @@
+---
+title: "missing features"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "missing features"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Funzionalità Mancanti - Modulo Notify
 
 **Data Analisi**: [DATE]  
@@ -136,7 +148,7 @@ Il modulo **Notify** è il motore di comunicazione dell'applicazione, fornendo:
 - [ ] **Click Heatmaps** - Mappe di calore click
 - [ ] **Conversion Funnels** - Funnel conversione
 - [ ] **Engagement Scoring** - Scoring engagement
-- [ ] **Predictive Analytics** - Analisi predittive
+- [ ] **<nome progetto>ive Analytics** - Analisi predittive
 - [ ] **Cohort Analysis** - Analisi coorti
 - [ ] **Attribution Modeling** - Modelli attribuzione
 
@@ -203,7 +215,7 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 ### ⚪ BASSA (Nice to Have)
 
 1. **Rich Media Push** - Push con media
-2. **Predictive Analytics** - Analisi predittive
+2. **<nome progetto>ive Analytics** - Analisi predittive
 3. **Advanced Segmentation** - Segmentazione avanzata
 
 ## Roadmap Implementazione
@@ -228,10 +240,9 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 
 ## Collegamenti
 
-- [Modulo Quaeris](../quaeris/docs/readme.md)
+- [Modulo Quaeris](../Quaeris/docs/readme.md)
 - [Modulo Limesurvey](../limesurvey/docs/readme.md)
 - [Notify README](./readme.md)
 
 ---
-
 **Prossima Revisione**: [DATE]

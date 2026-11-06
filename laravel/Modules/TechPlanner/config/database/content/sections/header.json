@@ -1,0 +1,152 @@
+{
+    "id": "1",
+    "name": {
+        "it": "Header Navigation",
+        "en": "Header Navigation"
+    },
+    "slug": "header",
+    "blocks": {
+        "it": [
+            {
+                "type": "navigation",
+                "slug": "nav1",
+                "data": {
+                    "view": "pub_theme::components.sections.header.v1",
+                    "brand": "Sottana Service",
+                    "brand_subtitle": null,
+                    "cta_label": "Richiedi Consulenza",
+                    "cta_url": "{{ route('container0.index',['container0'=>'contacts']) }}",
+                    "items": [
+                        {
+                            "label": "Home",
+                            "url": "{{ route('home') }}",
+                            "type": "link",
+                            "active": true
+                        },
+                        {
+                            "label": "Chi Siamo",
+                            "url": "{{ route('container0.index',['container0'=>'about']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Servizi",
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Blog",
+                            "url": "{{ route('blog') }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "FAQ",
+                            "url": "{{ route('container0.index',['container0'=>'faqs']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Contatti",
+                            "url": "{{ route('container0.index',['container0'=>'contacts']) }}",
+                            "type": "link"
+                        }
+                    ]
+                }
+            }
+        ],
+        "en": [
+            {
+                "type": "navigation",
+                "slug": "nav1",
+                "data": {
+                    "view": "pub_theme::components.sections.header.v1",
+                    "brand": "Sottana Service",
+                    "brand_subtitle": null,
+                    "cta_label": "Request Consultation",
+                    "cta_url": "{{ route('container0.index',['container0'=>'contacts']) }}",
+                    "items": [
+                        {
+                            "label": "Home",
+                            "url": "{{ route('home') }}",
+                            "type": "link",
+                            "active": true
+                        },
+                        {
+                            "label": "About Us",
+                            "url": "{{ route('container0.index',['container0'=>'about']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Services",
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Blog",
+                            "url": "{{ route('blog') }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "FAQ",
+                            "url": "{{ route('container0.index',['container0'=>'faqs']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Contact",
+                            "url": "{{ route('container0.index',['container0'=>'contacts']) }}",
+                            "type": "link"
+                        }
+                    ]
+                }
+            }
+        ],
+        "de": [
+            {
+                "type": "navigation",
+                "slug": "nav1",
+                "data": {
+                    "view": "pub_theme::components.sections.header.v1",
+                    "brand": "Sottana Service",
+                    "brand_subtitle": null,
+                    "cta_label": "Konsultation Anfordern",
+                    "cta_url": "{{ route('container0.index',['container0'=>'contacts']) }}",
+                    "items": [
+                        {
+                            "label": "Startseite",
+                            "url": "{{ route('home') }}",
+                            "type": "link",
+                            "active": true
+                        },
+                        {
+                            "label": "Über Uns",
+                            "url": "{{ route('container0.index',['container0'=>'about']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Dienstleistungen",
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Blog",
+                            "url": "{{ route('blog') }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "FAQ",
+                            "url": "{{ route('container0.index',['container0'=>'faqs']) }}",
+                            "type": "link"
+                        },
+                        {
+                            "label": "Kontakt",
+                            "url": "{{ route('container0.index',['container0'=>'contacts']) }}",
+                            "type": "link"
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "created_at": "2025-07-08T09:02:57.000000Z",
+    "updated_at": "2026-02-07T10:00:00.000000Z",
+    "created_by": null,
+    "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
+}

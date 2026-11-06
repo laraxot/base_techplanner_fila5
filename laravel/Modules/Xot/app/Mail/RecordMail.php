@@ -9,13 +9,14 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
 /**
- * Class RecordMail
+ * Class RecordMail.
  *
  * Mailable per l'invio di dati di record via email.
  */
 class RecordMail extends Mailable
 {
-    use Queueable, SerializesModels;
+    use Queueable;
+    use SerializesModels;
 
     /**
      * @var array<string, mixed>

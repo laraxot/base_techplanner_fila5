@@ -1,3 +1,14 @@
+---
+title: "Migrazioni"
+type: note
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, migrations]
+qmd: "Migrazioni"
+status: superseded
+superseded_by: ../migrations.md
+---
 # Migrazioni
 
 ## Configurazione Base
@@ -220,7 +231,7 @@ try {
         'migration' => 'create_users_table',
         'error' => $e->getMessage(),
     ]);
-
+    
     throw $e;
 }
 ```
@@ -298,4 +309,4 @@ return new class extends Migration
         Schema::dropIfExists('comments');
     }
 };
-```
+``` 

@@ -1,242 +1,139 @@
-# Media Module
-
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
-[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PHP 8.3+](https://img.shields.io/badge/PHP-8.3+-blue.svg)](https://php.net)
-[![Spatie Media Library](https://img.shields.io/badge/Spatie-Media%20Library-orange.svg)](https://spatie.be/docs/laravel-medialibrary)
-
-> **Gestione media completa**: upload, conversioni video FFMpeg, streaming, responsive images, S3/CloudFront, temporary uploads con session lifecycle. Basato su Spatie Media Library.
-
+---
+id: module-media-readme
+title: "Media - File, Immagini, Video e Documenti"
+type: module-readme
+category: module-documentation
+module: Media
+status: active
+tags: [media, files, images, video, storage]
+created: 2026-09-14
+updated: 2026-10-07
+qmd: "media files images video ffmpeg storage cdn module documentation"
+issues:
+  - "https://github.com/laraxot/module_media_fila5/issues/57"
+discussions:
+  - "https://github.com/laraxot/module_media_fila5/discussions/58"
+related:
+  - "./docs/"
+sources: []
 ---
 
-## Cosa fa
+# Media
 
-Il modulo Media gestisce l'intero ciclo di vita dei file multimediali: upload temporanei con pulizia automatica, conversioni video con FFMpeg (codec, bitrate, dimensioni), streaming video, integrazione S3 e CloudFront con URL firmati, e responsive images. Estende Spatie Media Library con modelli custom e DTO tipizzati.
+## Perche guardarlo adesso
 
-```php
-// Upload e media library (Spatie)
-$model->addMedia($file)
-    ->toMediaCollection('documents');
+Upload, storage, trasformazioni e distribuzione media locale o cloud, per l'ecosistema Laraxot.
 
-// Conversione video con DTO
-$convertData = ConvertData::from([
-    'format' => 'mp4',
-    'codec_video' => 'X264',
-    'bitrate' => 1000,
-    'width' => 1920,
-    'height' => 1080,
-]);
-app(ConvertVideoByConvertDataAction::class)->execute($media, $convertData);
+## Cosa promette
 
-// URL firmato CloudFront
-$signedUrl = app(GetCloudFrontSignedUrlAction::class)->execute($media);
+- **Upload**: carico sicuro di file, con upload temporanei legati alla sessione
+- **Immagini**: gestione dimensioni e formati (Intervention Image)
+- **Video/FFmpeg**: transcodifica e processing
+- **S3/CDN**: distribuzione e caching, URL firmati CloudFront
+- **Filament admin UI**: libreria media, operazioni di massa, diagnostica S3/AWS
 
-// Screenshot da video
-$screenshot = app(GetVideoScreenshotAction::class)->execute($media, $atSecond);
-```
+## Perche' questo modulo
 
----
+- **Gestione file unificata**: API coerente per upload, validazione e storage in tutti i moduli
+- **Integrazione FFmpeg**: encoding video con preset di qualita'
+- **Cloud-native**: supporto S3/CloudFront con ripiego su storage locale
+- **Convenzioni Laraxot**: logica nelle `Actions`, UI admin su XotBase
 
-## Architettura
+## Funzionalita' chiave
 
-```
-File Upload (Filament / API)
-    |
-    v
-TemporaryUpload (session-based, auto-pruning)
-    |
-    v
-Media (Spatie Media Library extended)
-    |
-    +-- Conversioni Video (FFMpeg)
-    |     +-- ConvertData DTO (codec, bitrate, dimensioni)
-    |     +-- MediaConvert model (tracking progresso %)
-    |     +-- Output: MP4 X264
-    |
-    +-- Storage
-    |     +-- Local disk
-    |     +-- S3 (upload, check, delete, info)
-    |     +-- CloudFront (URL firmati)
-    |
-    +-- Responsive Images (Spatie)
-    +-- Video Streaming (VideoStream service)
-    +-- Subtitles (SubtitleService)
-```
+### Upload e storage
+- Upload temporanei con tracciamento di sessione
+- Validazione automatica (MIME type, dimensione, estensioni)
+- Supporto multi-disk (local, S3, Minio, CloudFront)
+- Operazioni di attach atomiche
 
----
 
-## Modelli (3)
+### Video
+- Pipeline di conversione FFmpeg (MP4, WebM, HLS)
+- Generazione ed embedding sottotitoli
+- Estrazione frame per thumbnail
+- Preparazione dello streaming a bitrate adattivo
 
-| Modello | Funzione |
-|---------|----------|
-| **Media** | Estende Spatie Media: file storage, conversioni, responsive images, EXIF metadata |
-| **MediaConvert** | Tracking conversioni video: codec, bitrate, dimensioni, progresso %, tempo esecuzione |
-| **TemporaryUpload** | Upload temporanei con session lifecycle e auto-pruning (MassPrunable) |
+### Cloud
+- Supporto nativo AWS S3, URL firmati CloudFront per contenuti privati
+- Compatibilita' Minio per deployment self-hosted
+- Invalidazione CDN automatica
 
----
+> Elenco delle funzionalita' dichiarate nella documentazione storica. Verificato nel codice
+> (2026-10-07): WebM, thumbnail, sottotitoli e URL firmati CloudFront. Non trovati in `app/`:
+> HLS, AVIF, invalidazione CDN, bitrate adattivo (da verificare prima di promettere queste voci).
 
-## Azioni (17)
+## Documentazione essenziale
 
-### Upload & Attachments
+- `pbmedia/laravel-ffmpeg` e `intervention/image` (vedi `composer.json` per i vincoli correnti)
+- `spatie/laravel-medialibrary` (model `Media`, `TemporaryUpload`)
+- `spatie/laravel-queueable-action` (Actions asincrone)
+- Pacchetti di sistema: `ffmpeg`, `imagemagick` o `gd`
 
-| Action | Funzione |
-|--------|----------|
-| **GetAttachmentsSchemaAction** | Genera schema Filament FileUpload con validazione (PDF, DOCX, 10MB) |
-| **SaveAttachmentsAction** | Persiste file nella media library con cleanup temp |
-| **AttachMediaAction** | Attachment generico (Queueable) |
+## Filosofia
 
-### Video (5)
+Questo modulo pubblica contratti usabili da altri moduli. La logica vive in `Actions`; la UI admin segue Laraxot/XotBase.
 
-| Action | Funzione |
-|--------|----------|
-| **ConvertVideoAction** | Conversione FFMpeg a MP4 X264 (1000 kbps) |
-| **ConvertVideoByConvertDataAction** | Conversione parametrizzata via ConvertData DTO |
-| **ConvertVideoByMediaConvertAction** | Conversione con tracking via MediaConvert model |
-| **GetVideoDurationAction** | Estrae durata video |
-| **GetVideoScreenshotAction** | Genera thumbnail/frame capture |
-
-### S3 (5)
-
-| Action | Funzione |
-|--------|----------|
-| **UploadFileAction** | Upload file su S3 |
-| **CheckFileExistsAction** | Verifica esistenza file su S3 |
-| **GetFileInfoAction** | Metadata file da S3 |
-| **DeleteFileAction** | Eliminazione file da S3 |
-| **BaseS3Action** | Base class per operazioni S3 |
-
-### CloudFront & Images
-
-| Action | Funzione |
-|--------|----------|
-| **GetCloudFrontSignedUrlAction** | URL firmati AWS CloudFront |
-| **SvgExistsAction** | Verifica esistenza SVG |
-
----
-
-## DTO (Spatie Data)
-
-| DTO | Funzione |
-|-----|----------|
-| **ConvertData** | Parametri FFMpeg: disk, format, codec_video/audio, preset, bitrate, width, height, threads, speed |
-| **CloudFrontData** | Configurazione CloudFront: region, base_url, private_key, key_pair_id (singleton) |
-
----
-
-## Filament Integration
-
-| Resource | Funzione |
-|----------|----------|
-| **MediaResource** | CRUD media library con upload, metadata, conversione |
-| **MediaConvertResource** | Gestione job conversione video |
-| **TemporaryUploadResource** | Gestione upload temporanei |
-
-| Componente | Funzione |
-|------------|----------|
-| **ConvertWidget** | Widget progresso conversioni |
-| **VideoEntry** | Infolist component per video player |
-| **IconMediaColumn** | Colonna tabella con icona media |
-| **CloudFrontIconMediaColumn** | Colonna con URL CloudFront |
-| **ConvertAction** | Table action per conversione |
-| **MediaRelationManager** | Relation manager per HasMedia |
-
-| Pagina | Funzione |
-|--------|----------|
-| **Dashboard** | Overview modulo media |
-| **S3Test** | Test connettivita S3 |
-| **ConvertMedia** | Interfaccia conversione video |
-
----
-
-## Servizi
-
-| Service | Funzione |
-|---------|----------|
-| **VideoStream** | Streaming video con range requests |
-| **SubtitleService** | Gestione sottotitoli video |
-
----
-
-## Enum
-
-| Enum | Valori |
-|------|--------|
-| **AttachmentTypeEnum** | IMAGE, VIDEO, DOCUMENT, MANUAL |
-
----
-
-## Artisan Command
+## Integrazione rapida
 
 ```bash
-# Accoda conversione video
-php artisan media:convert-video {media_id}
+cd laravel
+php artisan module:list
+./vendor/bin/phpstan analyse Modules/Media
 ```
 
----
-
-## Integrazione con altri moduli
-
-```
-Media <── Cms       (allegati pagine/sezioni)
-Media <── Quaeris   (allegati survey, immagini report)
-Media <── User      (avatar, documenti utente)
-Media <── Notify    (allegati email)
-Media ──> CloudStorage (storage S3/CloudFront)
-Media ──> Job       (conversioni video in coda)
-Media ──> Activity  (audit trail operazioni file)
-```
-
----
-
-## Quick Start
-
-```bash
-php artisan module:enable Media
-php artisan migrate
-
-# Configurare S3 in .env (opzionale)
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=
-AWS_BUCKET=
-
-# FFMpeg per conversioni video
-sudo apt install ffmpeg
-```
-
----
-
-## Metriche
-
-| Metrica | Valore |
-|---------|--------|
-| **Modelli** | 3 |
-| **Azioni** | 17 |
-| **Resource Filament** | 3 |
-| **Componenti Filament** | 6 (widget, columns, actions, relation manager) |
-| **DTO** | 2 (ConvertData, CloudFrontData) |
-| **Servizi** | 2 (VideoStream, SubtitleService) |
-| **Enum** | 1 (AttachmentTypeEnum) |
-| **Artisan Commands** | 1 |
-| **PHPStan Level** | 10 |
-
----
+Per i pattern di integrazione vedi la documentazione locale.
 
 ## Documentazione
 
-| Guida | Link |
-|-------|------|
-| **Indice** | [docs/00-index.md](docs/00-index.md) |
-| **Architettura** | [docs/architecture/structure.md](docs/architecture/structure.md) |
-| **Configurazione** | [docs/configuration.md](docs/configuration.md) |
-| **Core Functionality** | [docs/core-functionality.md](docs/core-functionality.md) |
-| **Best Practices** | [docs/best-practices.md](docs/best-practices.md) |
+La mappa tecnica e' in [docs/README.md](./docs/README.md); l'indice completo in [docs/INDEX.md](./docs/INDEX.md).
+
+- [Story BMAD del modulo](./docs/stories/)
+- [Architettura](./docs/ARCHITECTURE.md) · [Pattern](./docs/patterns.md) · [Troubleshooting](./docs/troubleshooting.md)
+- [FFmpeg](./docs/ffmpeg-usage.md) · [Performance](./docs/PERFORMANCE-OPTIMIZATION.md) · [Migrazioni](./docs/MIGRATIONS.md) · [Testing](./docs/testing-guidelines.md)
+- [Regole del progetto](../../../docs/wiki/)
+- [README del progetto](../../README.md)
+
+## Rilascio e automazione
+
+- **Semantic release**: configurazione in [.releaserc.json](./.releaserc.json)
+- **Changelog**: [CHANGELOG.md](./CHANGELOG.md)
+
+## Filosofia
+
+- **Scopo prima del codice**: ogni classe serve un caso d'uso specifico.
+- **DRY prima dell'orgoglio**: riusare i pattern gia' stabiliti in Laraxot.
+- **KISS prima dell'astrazione**: codice semplice e verificabile, non framework astuti.
+
+## Qualita' e manutenzione
+
+Mantenere `declare(strict_types=1);` in PHP, rispettare la configurazione PHPStan del progetto e aggiornare i docs quando i contratti evolvono.
+
+## Scheda tecnica verificata (2026-10-07)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `Media` |
+| Namespace | `Modules\Media\` |
+| File PHP in `app/` | 127 |
+| File PHP di test | 46 |
+| Aree `app/` rilevate | Actions, Console, Contracts, Conversions, Datas, Enums, Exceptions, Filament, Http, Models, Providers, Rules, Services, Support, View, conversions |
+| Migrazioni PHP | 6 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda e' un inventario statico, non una dichiarazione di qualita'. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Media
+./vendor/bin/pest Modules/Media
+```
+
+La responsabilita' del modulo, le decisioni architetturali e le opportunita' sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
 
 ---
 
-**Module Type**: File & Media Management
-**Architecture**: Spatie Media Library, FFMpeg conversions, S3/CloudFront, session-based uploads
-**Quality**: PHPStan Level 10
-
-*Gestione media enterprise: da upload temporaneo a streaming video, da S3 a CloudFront, con conversioni FFMpeg tracciate.*
+**Modulo** `media` · **Laraxot ecosystem** · **Project-agnostic**

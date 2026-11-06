@@ -1,13 +1,25 @@
+---
+title: "Analisi Approfondita dell'Errore nell'Implementazione del Logout"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi approfondita dell'errore nell'implementazione del logout user"
+---
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/readme.md)
+- [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Logout](logout_blade_analysis.md)
 - [Conclusioni Logout](logout_blade_conclusions.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+- [Implementazione Auth Pages](auth_pages_implementation.md)
+- [Implementazione Logout](logout_blade_implementation.md)
+- [Analisi Logout](logout_blade_analysis.md)
+- [Conclusioni Logout](logout_blade_conclusions.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Fondamentale Identificato
 

@@ -1,3 +1,13 @@
+---
+title: "Integrazione Cross-Module - Laraxot PTVX"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Integrazione Cross-Module - Laraxot PTVX"
+---
 # Integrazione Cross-Module - Laraxot PTVX
 
 ## Panoramica
@@ -40,14 +50,14 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = Integparam::class;
-
+    
     public static function getFormSchema(): array
     {
         return [
             // Schema del form
         ];
     }
-
+    
     public static function getTableColumns(): array
     {
         return [
@@ -117,7 +127,7 @@ namespace Modules\Progressioni\Filament\Resources;
 class IntegparamResource extends XotBaseResource
 {
     protected static ?string $model = \Modules\Sigma\Models\Integparam::class;
-
+    
     public static function getFormSchema(): array
     {
         return [
@@ -193,8 +203,8 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - **Traduzioni**: `Modules\Progressioni\lang\it\integparam.php`
 
 ## Collegamenti
-- [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
-- [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
+- [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
+- [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
 ```
 
 ## Checklist per Integrazioni Cross-Module
@@ -218,8 +228,9 @@ Il modulo Progressioni integra il modello `Integparam` del modulo Sigma per gest
 - [ ] Implementare test automatizzati
 
 ## Collegamenti
-- [Modulo Sigma](/laravel/modules/sigma/docs/readme.md)
-- [Modulo Progressioni](/laravel/modules/progressioni/docs/readme.md)
+- [Modulo Sigma](/laravel/Modules/Sigma/docs/README.md)
+- [Modulo Progressioni](/laravel/Modules/Progressioni/docs/README.md)
 - [Filament Resources Best Practices](/docs/filament-best-practices.md)
 - [Translation Standards](/docs/translation-standards.md)
 
+*Ultimo aggiornamento: 5 giugno 2025* 

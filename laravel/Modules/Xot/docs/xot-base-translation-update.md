@@ -1,7 +1,15 @@
+---
+title: "Aggiornamento File di Traduzione xot_base.php"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "aggiornamento file di traduzione xot_base.php xot"
+---
 # Aggiornamento File di Traduzione xot_base.php
 
 ## Data Aggiornamento
-[DATE]
+2025-01-27
 
 ## File Modificato
 `Modules/Xot/lang/it/xot_base.php`
@@ -90,3 +98,4 @@ return [
 - [Best Practices Traduzioni](translations-best-practices.md)
 - [Documentazione Principale Traduzioni](../../../project_docs/translation_rules.md)
 
+*Ultimo aggiornamento: 27 Gennaio 2025*

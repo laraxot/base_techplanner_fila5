@@ -6,9 +6,11 @@ namespace Modules\Xot\Actions\Tree;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\HasRecursiveRelationshipsContract;
 use Spatie\QueueableAction\QueueableAction;
-use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection;
+use Staudenmeir\LaravelAdjacencyList\Eloquent\Collection as TreeCollection;
+use Webmozart\Assert\Assert;
 
 class GetTreeOptionsByModelClassAction
 {
@@ -18,37 +20,38 @@ class GetTreeOptionsByModelClassAction
     public array $options = [];
 
     /**
-     * @param  class-string<HasRecursiveRelationshipsContract>  $class
+     * @param  class-string<HasRecursiveRelationshipsContract<Model>>  $class
      * @return array<int|string, string>
      */
     public function execute(string $class, Model|callable|null $_where = null): array
     {
-        /** @var HasRecursiveRelationshipsContract $model */
         $model = new $class;
 
-        /** @var Collection<int, HasRecursiveRelationshipsContract> $collection */
-        // @phpstan-ignore generics.notSubtype
         $collection = $model->newQuery()->get();
+        Assert::isInstanceOf($collection, TreeCollection::class);
         $rows = $collection->toTree();
 
         foreach ($rows as $row) {
-            /** @var HasRecursiveRelationshipsContract $row */
+            if (! $row instanceof HasRecursiveRelationshipsContract) {
+                continue;
+            }
             $key = $row->getKey();
-            $this->options[is_string($key) ? $key : ((string) $key)] = is_string($row)
-                ? $row
-                : (string) $row->getLabel();
+            $this->options[SafeStringCastAction::cast($key)] = $row->getLabel();
             $this->parse($row);
         }
 
         return $this->options;
     }
 
+    /**
+     * @param HasRecursiveRelationshipsContract<Model> $model
+     */
     public function parse(HasRecursiveRelationshipsContract $model): void
     {
         foreach ($model->children as $child) {
-            /** @var HasRecursiveRelationshipsContract $child */
+            /** @var HasRecursiveRelationshipsContract<Model> $child */
             $key = $child->getKey();
-            $this->options[is_string($key) ? $key : ((string) $key)] =
+            $this->options[SafeStringCastAction::cast($key)] =
                 Str::repeat('---', $child->depth).'   '.$child->getLabel();
         }
     }

@@ -4,7 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Widgets;
 
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Filament\Schemas\Components\Component;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
  * RedirectWidget - Widget per gestire redirect verso URL specifici.
@@ -22,7 +23,7 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
  *     }
  * }
  */
-final class RedirectWidget extends XotBaseWidget
+final class RedirectWidget extends XotBaseSchemaWidget
 {
     public ?string $url = null;
 
@@ -56,6 +57,8 @@ final class RedirectWidget extends XotBaseWidget
     /**
      * Vista di default per il widget.
      * Può essere sovrascritta dalla configurazione con la chiave 'view'.
+     *
+     * @var view-string
      */
     protected string $view = 'ui::filament.widgets.redirect-widget';
 
@@ -63,9 +66,8 @@ final class RedirectWidget extends XotBaseWidget
      * Implementazione richiesta da XotBaseWidget.
      * Per questo widget non abbiamo form, quindi restituiamo array vuoto.
      *
-     * @return array<string, mixed>
+     * @return array<string, Component>
      */
-    #[\Override]
     public function getFormSchema(): array
     {
         return [];

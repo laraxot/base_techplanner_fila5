@@ -1,15 +1,13 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://stackoverflow.com/questions/39213022/custom-laravel-relations
  * @see https://github.com/johnnyfreeman/laravel-custom-relation
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Traits;
 
-use Closure;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Relations\CustomRelation;
 use Webmozart\Assert\Assert;
@@ -18,14 +16,15 @@ use Webmozart\Assert\Assert;
 
 /**
  * Trait HasCustomRelations.
+ * @phpstan-ignore trait.unused
  */
-trait HasCustomRelations
+trait HasCustomRelations // @phpstan-ignore trait.unused
 {
     public function customRelation(
         string $related,
-        Closure $baseConstraints,
-        ?Closure $eagerConstraints = null,
-        ?Closure $eagerMatcher = null,
+        \Closure $baseConstraints,
+        ?\Closure $eagerConstraints = null,
+        ?\Closure $eagerMatcher = null,
     ): CustomRelation {
         $instance = new $related;
         // Call to an undefined method object::newQuery()

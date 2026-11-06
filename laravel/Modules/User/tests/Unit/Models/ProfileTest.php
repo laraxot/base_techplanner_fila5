@@ -4,264 +4,320 @@ declare(strict_types=1);
 
 namespace Modules\User\Tests\Unit\Models;
 
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 use Modules\User\Models\Profile;
-use Modules\User\Tests\TestCase;
+use Tests\TestCase;
 
-uses(TestCase::class, DatabaseTransactions::class);
+uses(\Modules\User\Tests\TestCase::class);
 
-test('can create profile with minimal data', function (): void {
-    $profile = Profile::factory()->create([
-        'first_name' => 'John',
-        'last_name' => 'Doe',
-        'user_name' => 'johndoe',
-        'email' => 'john@example.com',
-    ]);
+class ProfileTest extends TestCase
+{
+    public function test_can_create_profile_with_minimal_data(): void
+    {
+        $profile = Profile::factory()->create([
+            'first_name' => 'John',
+            'last_name' => 'Doe',
+            'user_name' => 'johndoe',
+            'email' => 'john@example.com',
+        ]);
 
-    $this->assertDatabaseHas('profiles', [
-        'id' => $profile->id,
-        'first_name' => 'John',
-        'last_name' => 'Doe',
-        'user_name' => 'johndoe',
-        'email' => 'john@example.com',
-    ]);
-});
+        $this->assertDatabaseHas('profiles', [
+            'id' => $profile->id,
+            'first_name' => 'John',
+            'last_name' => 'Doe',
+            'user_name' => 'johndoe',
+            'email' => 'john@example.com',
+        ]);
+    }
 
-test('can create profile with all fields', function (): void {
-    $profileData = [
-        'first_name' => 'Jane',
-        'last_name' => 'Smith',
-        'user_name' => 'janesmith',
-        'email' => 'jane@example.com',
-        'phone' => '+1234567890',
-        'bio' => 'Software Developer',
-        'avatar' => 'avatar.jpg',
-        'timezone' => 'UTC',
-        'locale' => 'en',
-        'preferences' => ['theme' => 'dark', 'notifications' => true],
-        'status' => 'active',
-        'extra' => ['skills' => ['PHP', 'Laravel'], 'experience' => 5],
-    ];
+    public function test_can_create_profile_with_all_fields(): void
+    {
+        $profileData = [
+            'first_name' => 'Jane',
+            'last_name' => 'Smith',
+            'user_name' => 'janesmith',
+            'email' => 'jane@example.com',
+            'phone' => '+1234567890',
+            'bio' => 'Software Developer',
+            'avatar' => 'avatar.jpg',
+            'timezone' => 'UTC',
+            'locale' => 'en',
+            'preferences' => ['theme' => 'dark', 'notifications' => true],
+            'status' => 'active',
+            'extra' => ['skills' => ['PHP', 'Laravel'], 'experience' => 5],
+        ];
 
-    $profile = Profile::factory()->create($profileData);
+        $profile = Profile::factory()->create($profileData);
 
-    $this->assertDatabaseHas('profiles', [
-        'id' => $profile->id,
-        'first_name' => 'Jane',
-        'last_name' => 'Smith',
-        'user_name' => 'janesmith',
-        'email' => 'jane@example.com',
-        'phone' => '+1234567890',
-        'bio' => 'Software Developer',
-        'avatar' => 'avatar.jpg',
-        'timezone' => 'UTC',
-        'locale' => 'en',
-        'status' => 'active',
-    ]);
+        $this->assertDatabaseHas('profiles', [
+            'id' => $profile->id,
+            'first_name' => 'Jane',
+            'last_name' => 'Smith',
+            'user_name' => 'janesmith',
+            'email' => 'jane@example.com',
+            'phone' => '+1234567890',
+            'bio' => 'Software Developer',
+            'avatar' => 'avatar.jpg',
+            'timezone' => 'UTC',
+            'locale' => 'en',
+            'status' => 'active',
+        ]);
 
-    // Verifica campi JSON
-    expect($profile->preferences)->toBe(['theme' => 'dark', 'notifications' => true]);
-    expect($profile->extra->toArray())->toBe(['skills' => ['PHP', 'Laravel'], 'experience' => 5]);
-});
+        // Verifica campi JSON
+        static::assertSame(['theme' => 'dark', 'notifications' => true], $profile->preferences);
+        static::assertSame(['skills' => ['PHP', 'Laravel'], 'experience' => 5], $profile->extra);
+    }
 
-test('profile has schemaless attributes', function (): void {
-    $profile = new Profile();
-    $expectedAttributes = ['extra'];
-    expect($profile->getSchemalessAttributes())->toBe($expectedAttributes);
-});
+    public function test_profile_has_schemaless_attributes(): void
+    {
+        $profile = new Profile;
 
-test('profile has table name', function (): void {
-    $profile = new Profile();
-    expect($profile->getTable())->toBe('profiles');
-});
+        $expectedAttributes = ['extra'];
+        static::assertSame($expectedAttributes, $profile->getSchemalessAttributes());
+    }
 
-test('can find profile by email', function (): void {
-    $profile = Profile::factory()->create(['email' => 'unique@example.com']);
-    $foundProfile = Profile::where('email', 'unique@example.com')->first();
-    expect($foundProfile)->not->toBeNull();
-    expect($foundProfile->id)->toBe($profile->id);
-});
+    public function test_profile_has_table_name(): void
+    {
+        $profile = new Profile;
 
-test('can find profile by user name', function (): void {
-    $profile = Profile::factory()->create(['user_name' => 'uniqueuser']);
-    $foundProfile = Profile::where('user_name', 'uniqueuser')->first();
-    expect($foundProfile)->not->toBeNull();
-    expect($foundProfile->id)->toBe($profile->id);
-});
+        static::assertSame('profiles', $profile->getTable());
+    }
 
-test('can find profile by first name', function (): void {
-    $profile = Profile::factory()->create(['first_name' => 'Unique']);
-    $foundProfile = Profile::where('first_name', 'Unique')->first();
-    expect($foundProfile)->not->toBeNull();
-    expect($foundProfile->id)->toBe($profile->id);
-});
+    public function test_can_find_profile_by_email(): void
+    {
+        $profile = Profile::factory()->create(['email' => 'unique@example.com']);
 
-test('can find profile by last name', function (): void {
-    $profile = Profile::factory()->create(['last_name' => 'Unique']);
-    $foundProfile = Profile::where('last_name', 'Unique')->first();
-    expect($foundProfile)->not->toBeNull();
-    expect($foundProfile->id)->toBe($profile->id);
-});
+        $foundProfile = Profile::where('email', 'unique@example.com')->first();
 
-test('can find profile by phone', function (): void {
-    $profile = Profile::factory()->create(['phone' => '+1234567890']);
-    $foundProfile = Profile::where('phone', '+1234567890')->first();
-    expect($foundProfile)->not->toBeNull();
-    expect($foundProfile->id)->toBe($profile->id);
-});
+        static::assertNotNull($foundProfile);
+        static::assertSame($profile->id, $foundProfile->id);
+    }
 
-test('can find profile by status', function (): void {
-    Profile::factory()->create(['status' => 'active']);
-    Profile::factory()->create(['status' => 'inactive']);
-    Profile::factory()->create(['status' => 'pending']);
+    public function test_can_find_profile_by_user_name(): void
+    {
+        $profile = Profile::factory()->create(['user_name' => 'uniqueuser']);
 
-    $activeProfiles = Profile::where('status', 'active')->get();
-    expect($activeProfiles)->toHaveCount(1);
-    expect($activeProfiles->first()->status)->toBe('active');
-});
+        $foundProfile = Profile::where('user_name', 'uniqueuser')->first();
 
-test('can find profile by timezone', function (): void {
-    Profile::factory()->create(['timezone' => 'UTC']);
-    Profile::factory()->create(['timezone' => 'Europe/Rome']);
-    Profile::factory()->create(['timezone' => 'America/New_York']);
+        static::assertNotNull($foundProfile);
+        static::assertSame($profile->id, $foundProfile->id);
+    }
 
-    $utcProfiles = Profile::where('timezone', 'UTC')->get();
-    expect($utcProfiles)->toHaveCount(1);
-    expect($utcProfiles->first()->timezone)->toBe('UTC');
-});
+    public function test_can_find_profile_by_first_name(): void
+    {
+        $profile = Profile::factory()->create(['first_name' => 'Unique']);
 
-test('can find profile by locale', function (): void {
-    Profile::factory()->create(['locale' => 'en']);
-    Profile::factory()->create(['locale' => 'it']);
-    Profile::factory()->create(['locale' => 'de']);
+        $foundProfile = Profile::where('first_name', 'Unique')->first();
 
-    $englishProfiles = Profile::where('locale', 'en')->get();
-    expect($englishProfiles)->toHaveCount(1);
-    expect($englishProfiles->first()->locale)->toBe('en');
-});
+        static::assertNotNull($foundProfile);
+        static::assertSame($profile->id, $foundProfile->id);
+    }
 
-test('can find profiles by name pattern', function (): void {
-    Profile::factory()->create(['first_name' => 'John', 'last_name' => 'Doe']);
-    Profile::factory()->create(['first_name' => 'Jane', 'last_name' => 'Doe']);
-    Profile::factory()->create(['first_name' => 'Bob', 'last_name' => 'Smith']);
+    public function test_can_find_profile_by_last_name(): void
+    {
+        $profile = Profile::factory()->create(['last_name' => 'Unique']);
 
-    $doeProfiles = Profile::where('last_name', 'like', '%Doe%')->get();
-    expect($doeProfiles)->toHaveCount(2);
-    expect($doeProfiles->every(fn ($profile) => str_contains($profile->last_name, 'Doe')))->toBeTrue();
-});
+        $foundProfile = Profile::where('last_name', 'Unique')->first();
 
-test('can find profiles by bio pattern', function (): void {
-    Profile::factory()->create(['bio' => 'Software Developer']);
-    Profile::factory()->create(['bio' => 'Designer']);
-    Profile::factory()->create(['bio' => 'Product Manager']);
+        static::assertNotNull($foundProfile);
+        static::assertSame($profile->id, $foundProfile->id);
+    }
 
-    $devProfiles = Profile::where('bio', 'like', '%Developer%')->get();
-    expect($devProfiles)->toHaveCount(1);
-    expect($devProfiles->every(fn ($profile) => str_contains($profile->bio, 'Developer')))->toBeTrue();
-});
+    public function test_can_find_profile_by_phone(): void
+    {
+        $profile = Profile::factory()->create(['phone' => '+1234567890']);
 
-test('can update profile', function (): void {
-    $profile = Profile::factory()->create(['first_name' => 'Old Name']);
-    $profile->update(['first_name' => 'New Name']);
+        $foundProfile = Profile::where('phone', '+1234567890')->first();
 
-    $this->assertDatabaseHas('profiles', [
-        'id' => $profile->id,
-        'first_name' => 'New Name',
-    ]);
-});
+        static::assertNotNull($foundProfile);
+        static::assertSame($profile->id, $foundProfile->id);
+    }
 
-test('can handle null values', function (): void {
-    $profile = Profile::factory()->create([
-        'first_name' => 'Test',
-        'last_name' => 'User',
-        'user_name' => 'testuser',
-        'email' => 'test@example.com',
-        'phone' => null,
-        'bio' => null,
-        'avatar' => null,
-        'timezone' => null,
-        'locale' => null,
-    ]);
+    public function test_can_find_profile_by_status(): void
+    {
+        Profile::factory()->create(['status' => 'active']);
+        Profile::factory()->create(['status' => 'inactive']);
+        Profile::factory()->create(['status' => 'pending']);
 
-    $this->assertDatabaseHas('profiles', [
-        'id' => $profile->id,
-        'phone' => null,
-        'bio' => null,
-        'avatar' => null,
-        'timezone' => null,
-        'locale' => null,
-    ]);
-});
+        $activeProfiles = Profile::where('status', 'active')->get();
 
-test('can find profiles by multiple criteria', function (): void {
-    Profile::factory()->create([
-        'status' => 'active',
-        'timezone' => 'UTC',
-        'locale' => 'en',
-    ]);
+        static::assertCount(1, $activeProfiles);
+        static::assertSame('active', $activeProfiles->firstOrFail()->status);
+    }
 
-    Profile::factory()->create([
-        'status' => 'active',
-        'timezone' => 'Europe/Rome',
-        'locale' => 'it',
-    ]);
+    public function test_can_find_profile_by_timezone(): void
+    {
+        Profile::factory()->create(['timezone' => 'UTC']);
+        Profile::factory()->create(['timezone' => 'Europe/Rome']);
+        Profile::factory()->create(['timezone' => 'America/New_York']);
 
-    Profile::factory()->create([
-        'status' => 'inactive',
-        'timezone' => 'UTC',
-        'locale' => 'en',
-    ]);
+        $utcProfiles = Profile::where('timezone', 'UTC')->get();
 
-    $profiles = Profile::where('status', 'active')->where('timezone', 'UTC')->get();
-    expect($profiles)->toHaveCount(1);
-    expect($profiles->first()->status)->toBe('active');
-    expect($profiles->first()->timezone)->toBe('UTC');
-});
+        static::assertCount(1, $utcProfiles);
+        static::assertSame('UTC', $utcProfiles->firstOrFail()->timezone);
+    }
 
-test('profile has roles relationship', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'roles'))->toBeTrue();
-});
+    public function test_can_find_profile_by_locale(): void
+    {
+        Profile::factory()->create(['locale' => 'en']);
+        Profile::factory()->create(['locale' => 'it']);
+        Profile::factory()->create(['locale' => 'de']);
 
-test('profile has permissions relationship', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'permissions'))->toBeTrue();
-});
+        $englishProfiles = Profile::where('locale', 'en')->get();
 
-test('profile has teams relationship', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'teams'))->toBeTrue();
-});
+        static::assertCount(1, $englishProfiles);
+        static::assertSame('en', $englishProfiles->firstOrFail()->locale);
+    }
 
-test('profile has devices relationship', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'devices'))->toBeTrue();
-});
+    public function test_can_find_profiles_by_name_pattern(): void
+    {
+        Profile::factory()->create(['first_name' => 'John', 'last_name' => 'Doe']);
+        Profile::factory()->create(['first_name' => 'Jane', 'last_name' => 'Doe']);
+        Profile::factory()->create(['first_name' => 'Bob', 'last_name' => 'Smith']);
 
-test('profile has media relationship', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'media'))->toBeTrue();
-});
+        $doeProfiles = Profile::where('last_name', 'like', '%Doe%')->get();
 
-test('profile can use permission scopes', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'scopePermission'))->toBeTrue();
-    expect(method_exists($profile, 'scopeWithoutPermission'))->toBeTrue();
-});
+        static::assertCount(2, $doeProfiles);
+        static::assertTrue($doeProfiles->every(fn (Profile $profile): bool => str_contains((string) $profile->last_name, 'Doe')));
+    }
 
-test('profile can use role scopes', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'scopeRole'))->toBeTrue();
-    expect(method_exists($profile, 'scopeWithoutRole'))->toBeTrue();
-});
+    public function test_can_find_profiles_by_bio_pattern(): void
+    {
+        Profile::factory()->create(['bio' => 'Software Developer']);
+        Profile::factory()->create(['bio' => 'Designer']);
+        Profile::factory()->create(['bio' => 'Product Manager']);
 
-test('profile can use extra attributes scopes', function (): void {
-    $profile = Profile::factory()->create();
-    expect(method_exists($profile, 'scopeWithExtraAttributes'))->toBeTrue();
-});
+        $devProfiles = Profile::where('bio', 'like', '%Developer%')->get();
 
-test('profile has factory', function (): void {
-    $profile = Profile::factory()->create();
-    expect($profile->id)->not->toBeNull();
-    expect($profile)->toBeInstanceOf(Profile::class);
-});
+        static::assertCount(1, $devProfiles);
+        static::assertTrue($devProfiles->every(fn (Profile $profile): bool => str_contains((string) $profile->bio, 'Developer')));
+    }
+
+    public function test_can_update_profile(): void
+    {
+        $profile = Profile::factory()->create(['first_name' => 'Old Name']);
+
+        $profile->update(['first_name' => 'New Name']);
+
+        $this->assertDatabaseHas('profiles', [
+            'id' => $profile->id,
+            'first_name' => 'New Name',
+        ]);
+    }
+
+    public function test_can_handle_null_values(): void
+    {
+        $profile = Profile::factory()->create([
+            'first_name' => 'Test',
+            'last_name' => 'User',
+            'user_name' => 'testuser',
+            'email' => 'test@example.com',
+            'phone' => null,
+            'bio' => null,
+            'avatar' => null,
+            'timezone' => null,
+            'locale' => null,
+        ]);
+
+        $this->assertDatabaseHas('profiles', [
+            'id' => $profile->id,
+            'phone' => null,
+            'bio' => null,
+            'avatar' => null,
+            'timezone' => null,
+            'locale' => null,
+        ]);
+    }
+
+    public function test_can_find_profiles_by_multiple_criteria(): void
+    {
+        Profile::factory()->create([
+            'status' => 'active',
+            'timezone' => 'UTC',
+            'locale' => 'en',
+        ]);
+
+        Profile::factory()->create([
+            'status' => 'active',
+            'timezone' => 'Europe/Rome',
+            'locale' => 'it',
+        ]);
+
+        Profile::factory()->create([
+            'status' => 'inactive',
+            'timezone' => 'UTC',
+            'locale' => 'en',
+        ]);
+
+        $profiles = Profile::where('status', 'active')->where('timezone', 'UTC')->get();
+
+        static::assertCount(1, $profiles);
+        static::assertSame('active', $profiles->firstOrFail()->status);
+        static::assertSame('UTC', $profiles->firstOrFail()->timezone);
+    }
+
+    public function test_profile_has_roles_relationship(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'roles'));
+    }
+
+    public function test_profile_has_permissions_relationship(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'permissions'));
+    }
+
+    public function test_profile_has_teams_relationship(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'teams'));
+    }
+
+    public function test_profile_has_devices_relationship(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'devices'));
+    }
+
+    public function test_profile_has_media_relationship(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'media'));
+    }
+
+    public function test_profile_can_use_permission_scopes(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'permission'));
+        static::assertTrue(method_exists($profile, 'withoutPermission'));
+    }
+
+    public function test_profile_can_use_role_scopes(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'role'));
+        static::assertTrue(method_exists($profile, 'withoutRole'));
+    }
+
+    public function test_profile_can_use_extra_attributes_scopes(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertTrue(method_exists($profile, 'withExtraAttributes'));
+    }
+
+    public function test_profile_has_factory(): void
+    {
+        $profile = Profile::factory()->create();
+
+        static::assertNotNull($profile->id);
+        static::assertInstanceOf(Profile::class, $profile);
+    }
+}

@@ -18,6 +18,9 @@ class OauthAuthCodeFactory extends Factory
 {
     protected $model = OauthAuthCode::class;
 
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
@@ -32,7 +35,9 @@ class OauthAuthCodeFactory extends Factory
 
     public function expired(): static
     {
-        return $this->state(['expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now')]);
+        return $this->state([
+            'expires_at' => $this->faker->dateTimeBetween('-1 hour', 'now'),
+        ]);
     }
 
     public function revoked(): static

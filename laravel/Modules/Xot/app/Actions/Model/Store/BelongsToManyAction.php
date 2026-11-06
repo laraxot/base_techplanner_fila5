@@ -7,6 +7,7 @@ namespace Modules\Xot\Actions\Model\Store;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Support\Facades\Session;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Datas\RelationData as RelationDTO;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -24,11 +25,12 @@ class BelongsToManyAction
          * 'relation' => $relation, ]);
          */
         if (
-            \in_array('to', array_keys($relationDTO->data), false) ||
-                \in_array('from', array_keys($relationDTO->data), false)
+            \in_array('to', array_keys($relationDTO->data), false)
+                || \in_array('from', array_keys($relationDTO->data), false)
         ) {
             // $this->saveMultiselectTwoSides($row, $relation->name, $relation->data);
             Assert::isArray($to = $relationDTO->data['to'] ?? []);
+            $to = array_map(static fn (mixed $id): string => SafeStringCastAction::cast($id), $to);
             $rows->sync($to);
             $status = 'collegati ['.implode(', ', $to).'] ';
             Session::flash('status', $status);

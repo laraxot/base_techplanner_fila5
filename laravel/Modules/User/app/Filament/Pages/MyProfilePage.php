@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see Jeffgreco13\FilamentBreezy\Pages
  * @see https://www.filamentcomponents.com/blog/how-to-create-a-custom-profile-page-with-filamentphp
@@ -33,8 +32,10 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 {
     use InteractsWithSchemas;
 
+    /** @var array<string, mixed>|null */
     public ?array $profileData = [];
 
+    /** @var array<string, mixed>|null */
     public ?array $passwordData = [];
 
     protected string $view = 'user::filament.pages.my-profile';
@@ -134,7 +135,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
 
     public function getSubheading(): ?string
     {
-        return __('user::profile.subheading') ?? null;
+        return __('user::profile.subheading');
     }
 
     // public static function shouldRegisterNavigation(): bool
@@ -246,6 +247,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
      * }
      */
 
+    /**
+     * @return array<Action>
+     */
     protected function getUpdateProfileFormActions(): array
     {
         return [
@@ -253,6 +257,9 @@ class MyProfilePage extends XotBasePage implements HasSchemas
         ];
     }
 
+    /**
+     * @return array<Action>
+     */
     protected function getUpdatePasswordFormActions(): array
     {
         return [
@@ -263,7 +270,7 @@ class MyProfilePage extends XotBasePage implements HasSchemas
     // ...
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

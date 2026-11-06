@@ -197,3 +197,4 @@ Prima di considerare completata la risoluzione:
 ---
 
 *Roadmap creata il: Gennaio 2025*  
+*Ultimo aggiornamento: Gennaio 2025*

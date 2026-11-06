@@ -1,10 +1,22 @@
+---
+title: "improvements roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "improvements roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notify Module - Improvements Roadmap
 
+**Data**: 2026-01-09  
 **Modulo**: Notify  
 **Status**: 📝 **ROADMAP CREATA**
 
 ---
-
 ## 📊 Executive Summary
 
 Roadmap delle migliorie ipotizzate per il modulo Notify basate sull'analisi del repository `filament-spatie-laravel-database-mail-templates` e confronto con il nostro sistema attuale.
@@ -187,7 +199,7 @@ Tutte le migliorie sono **retrocompatibili**:
 
 ## 📚 Documentazione Correlata
 
-- [Filament Spatie Database Mail Templates Analysis](./filament-spatie-database-mail-templates-analysis-[date].md)
+- [Filament Spatie Database Mail Templates Analysis](./filament-spatie-database-mail-templates-analysis.md)
 - [Database Mail System](./database-mail-system.md)
 - [Mail Template Improvements](./database-mail-templates-improvements.md)
 
@@ -195,4 +207,4 @@ Tutte le migliorie sono **retrocompatibili**:
 
 **Status**: 📝 **ROADMAP CREATA**
 
-**Ultimo aggiornamento**: [DATE]
+**Ultimo aggiornamento**: 2026-01-09

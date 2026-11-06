@@ -5,24 +5,22 @@ declare(strict_types=1);
 namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\User\Contracts\TeamContract;
+use Modules\User\Models\Traits\TeamInvitationRelationsTrait;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Datas\XotData;
 
 /**
  * Modules\User\Models\TeamInvitation.
  *
- * @property int               $id
- * @property string|null       $team_id
- * @property string            $email
- * @property string|null       $role
- * @property Carbon|null       $created_at
- * @property Carbon|null       $updated_at
- * @property Team|null         $team
+ * @property int $id
+ * @property string|null $team_id
+ * @property string $email
+ * @property string|null $role
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Team|null $team
  * @property TeamContract|null $team
  *
  * @method static Builder|TeamInvitation newModelQuery()
@@ -35,7 +33,7 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder|TeamInvitation whereTeamId($value)
  * @method static Builder|TeamInvitation whereUpdatedAt($value)
  *
- * @property string      $uuid
+ * @property string $uuid
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
@@ -49,16 +47,20 @@ use Modules\Xot\Datas\XotData;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
- * @mixin IdeHelperTeamInvitation
- *
  * @property ProfileContract|null $deleter
+ * @property Carbon|null $accepted_at
+ * @property Carbon|null $declined_at
+ * @property string|null $user_id
+ *
+ * @method static \Modules\User\Database\Factories\TeamInvitationFactory factory($count = null, $state = [])
+ * @method static Builder<static>|TeamInvitation whereAcceptedAt($value)
+ * @method static Builder<static>|TeamInvitation whereDeclinedAt($value)
+ * @method static Builder<static>|TeamInvitation whereUserId($value)
  *
  * @mixin \Eloquent
  */
 class TeamInvitation extends BaseModel
 {
-    /** @var string */
     protected $connection = 'user';
 
     /** @var list<string> */
@@ -69,20 +71,6 @@ class TeamInvitation extends BaseModel
         'declined_at',
         'user_id',
     ];
-
-    /**
-     * Get the team that the invitation belongs to.
-     *  BelongsTo<the related model, the current model>
-     * -return BelongsTo<TeamContract, TeamInvitation> No TeamContract ..
-     */
-    public function team(): BelongsTo
-    {
-        $xotData = XotData::make();
-        /** @var class-string<Model> */
-        $team_class = $xotData->getTeamClass();
-
-        return $this->belongsTo($team_class);
-    }
 
     /**
      * Accept the invitation.
@@ -116,4 +104,6 @@ class TeamInvitation extends BaseModel
             'declined_at' => 'datetime',
         ];
     }
+
+    use TeamInvitationRelationsTrait;
 }

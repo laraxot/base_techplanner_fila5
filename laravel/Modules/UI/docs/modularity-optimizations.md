@@ -1,3 +1,15 @@
+---
+title: "modularity optimizations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modularity optimizations"
+issues: []
+discussions: []
+status: draft
+---
+
 # Modulo UI - Ottimizzazioni per Modularità
 
 ## Problemi Identificati
@@ -210,7 +222,7 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 
 ## Documentazione Correlata
 
-- [Root Docs: Modularity Hardcoded Names](../../../docs/modularity-hardcoded-names.md)
+- [Root Docs: Modularity Hardcoded Names](../../../../docs/modularity-hardcoded-names.md)
 - [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
 - [UI Architecture Overview](./architecture-overview.md)
 - [UI Best Practices](./best-practices/readme.md)
@@ -230,5 +242,4 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 - **Testing-Validated**: Verificare modularità con test specifici
 
 ---
-
 **Queste ottimizzazioni sono CRITICHE per mantenere l'architettura modulare del sistema. Ogni violazione deve essere corretta immediatamente.**

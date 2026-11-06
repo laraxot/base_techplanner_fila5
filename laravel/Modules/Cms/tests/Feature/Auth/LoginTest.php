@@ -6,53 +6,33 @@ namespace Modules\Cms\Tests\Feature\Auth;
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
 use Livewire\Volt\Volt as LivewireVolt;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Xot\Datas\XotData;
-use Modules\Xot\Tests\TestCase;
 
 use function Pest\Laravel\actingAs;
 use function Pest\Laravel\assertAuthenticated;
 use function Pest\Laravel\assertGuest;
 use function Pest\Laravel\get;
 
-uses(TestCase::class);
+// Helper (createTestUser, generateUniqueEmail, getUserClass) su Modules\Cms\Tests\TestCase, legato da tests/Pest.php.
+// Use $this->generateUniqueEmail(), $this->getUserClass(), $this->createTestUser()
 
-function cmsGenerateUniqueEmail(): string
-{
-    return 'test+'.Str::uuid()->toString().'@example.com';
-}
-
-/**
- * @param array<string, mixed> $overrides
- */
-function cmsCreateTestUser(array $overrides = []): \Illuminate\Database\Eloquent\Model
-{
-    /** @var class-string<\Illuminate\Database\Eloquent\Model> $userClass */
-    $userClass = XotData::make()->getUserClass();
-
-    return $userClass::factory()->create($overrides);
-}
-
-// NOTE: Helper functions moved to Modules\Xot\Tests\TestCase for DRY pattern
-// Use $this->$this->generateUniqueEmail(), $this->$this->getUserClass(), $this->$this->createTestUser()
-
-describe('Frontend Login Page Rendering', function () {
-    test('login page can be rendered', function () {
+describe('Frontend Login Page Rendering', function (): void {
+    test('login page can be rendered', function (): void {
         $locale = app()->getLocale();
         $response = get('/'.$locale.'/auth/login');
         $response->assertStatus(200);
     });
 
-    test('login page contains login widget', function () {
+    test('login page contains login widget', function (): void {
         $locale = app()->getLocale();
         $response = get('/'.$locale.'/auth/login');
         $response->assertStatus(200); // ->assertSee('@livewire')
         // ->assertSee('LoginWidget')
     });
 
-    test('login page has required form elements', function () {
+    test('login page has required form elements', function (): void {
         $locale = app()->getLocale();
         $response = get('/'.$locale.'/auth/login');
         $response->assertStatus(200); // ->assertSee('Hai dimenticato la password?')
@@ -61,8 +41,8 @@ describe('Frontend Login Page Rendering', function () {
     });
 });
 
-describe('Frontend Login Page Localization', function () {
-    test('login page works in italian', function () {
+describe('Frontend Login Page Localization', function (): void {
+    test('login page works in italian', function (): void {
         app()->setLocale('it');
         $response = get('/it/auth/login');
         $response->assertStatus(200);
@@ -75,21 +55,22 @@ describe('Frontend Login Page Localization', function () {
     //    //$response->assertStatus(200);
     // });
 
-    test('login page contains localized content', function () {
+    test('login page contains localized content', function (): void {
         $response = get('/it/auth/login');
-        $response->assertStatus(200);
+        $response
+            ->assertStatus(200)
+            ->assertSee('Hai dimenticato la password?')
+            ->assertSee(__('pub_theme::auth.login.title'))
+            ->assertSee(__('pub_theme::auth.login.or'));
     });
 });
 
-describe('Frontend Login Page Authentication', function () {
-    test('user can authenticate via frontend login page', function () {
-        $this->markTestSkipped('Requires TechPlanner Profile via XotData view composer; not available in minimal sqlite test bootstrap.');
-
-        $email = cmsGenerateUniqueEmail();
-        $password = 'password123';
-        $user = cmsCreateTestUser([
+describe('Frontend Login Page Authentication', function (): void {
+    test('user can authenticate via frontend login page', function (): void {
+        $email = $this->generateUniqueEmail();
+        $user = $this->createTestUser([
             'email' => $email,
-            'password' => Hash::make($password),
+            'password' => Hash::make('password123'),
         ]);
 
         assertGuest();
@@ -111,16 +92,24 @@ describe('Frontend Login Page Authentication', function () {
     });
 });
 
-describe('Frontend Login Page Integration', function () {
-    test('authenticated users are redirected from login page', function () {
-        expect(true)->toBeTrue();
+describe('Frontend Login Page Integration', function (): void {
+    test('authenticated users are redirected from login page', function (): void {
+        $user = $this->createTestUser();
+
+        actingAs($user);
+
+        $locale = app()->getLocale();
+        $response = get('/'.$locale.'/auth/login');
+
+        // May redirect to dashboard or intended page
+        $response->assertStatus(302);
     });
 });
 
-describe('Frontend Login Session Management', function () {
-    test('remember me functionality works', function () {
-        $email = cmsGenerateUniqueEmail();
-        cmsCreateTestUser([
+describe('Frontend Login Session Management', function (): void {
+    test('remember me functionality works', function (): void {
+        $email = $this->generateUniqueEmail();
+        $this->createTestUser([
             'email' => $email,
             'password' => Hash::make('password123'),
         ]);
@@ -137,9 +126,9 @@ describe('Frontend Login Session Management', function () {
         assertAuthenticated();
     });
 
-    test('session regeneration on login', function () {
-        $email = cmsGenerateUniqueEmail();
-        cmsCreateTestUser([
+    test('session regeneration on login', function (): void {
+        $email = $this->generateUniqueEmail();
+        $this->createTestUser([
             'email' => $email,
             'password' => Hash::make('password123'),
         ]);
@@ -159,16 +148,16 @@ describe('Frontend Login Session Management', function () {
     });
 });
 
-describe('Frontend Login Security', function () {
-    test('login attempts are rate limited', function () {
-        $email = cmsGenerateUniqueEmail();
-        cmsCreateTestUser([
+describe('Frontend Login Security', function (): void {
+    test('login attempts are rate limited', function (): void {
+        $email = $this->generateUniqueEmail();
+        $this->createTestUser([
             'email' => $email,
             'password' => Hash::make('password123'),
         ]);
 
         // Multiple failed attempts
-        for ($i = 0; $i < 5; ++$i) {
+        for ($i = 0; $i < 5; $i++) {
             LivewireVolt::test('auth.login')
                 ->set('email', $email)
                 ->set('password', 'wrong_password')
@@ -187,11 +176,11 @@ describe('Frontend Login Security', function () {
     });
 });
 
-describe('Frontend Login User Types', function () {
-    test('any user type can login via frontend', function () {
+describe('Frontend Login User Types', function (): void {
+    test('any user type can login via frontend', function (): void {
         // Using XotData pattern ensures compatibility with any user type
-        $email = cmsGenerateUniqueEmail();
-        $user = cmsCreateTestUser([
+        $email = $this->generateUniqueEmail();
+        $this->createTestUser([
             'email' => $email,
             'password' => Hash::make('password123'),
         ]);

@@ -1,3 +1,15 @@
+---
+title: "mcp ui ux"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mcp ui ux"
+issues: []
+discussions: []
+status: draft
+---
+
 # MCP Servers per UI/UX - Modulo Cms
 
 
@@ -33,4 +45,4 @@ Il modulo Cms gestisce il rendering dei temi frontend (pub_theme) e la registraz
 - [CmsServiceProvider](../app/Providers/CmsServiceProvider.php)
 - [MCP UI/UX Tema Two](../../themes/two/docs/mcp-ui-ux.md)
 - [MCP UI/UX Modulo UI](../../../laravel/modules/ui/docs/mcp-ui-ux.md)
-- [Status MCP Progetto](../../../docs/mcp-servers-status.md)
+- [Status MCP Progetto](../../../../docs/mcp-servers-status.md)

@@ -1,333 +1,129 @@
-# Tema Sixteen - Bootstrap Italia per Laravel/Tailwind
-
-## 🎯 Panoramica del Progetto
-
-Il tema Sixteen è un'implementazione completa delle **Linee Guida AGID per il Design della PA Italiana** utilizzando **Laravel**, **Filament** e **Tailwind CSS**. Il tema fornisce una migrazione moderna da Bootstrap Italia, mantenendo la piena conformità alle specifiche AGID con un'architettura più flessibile e performante.
-
-## 📊 Stato Implementazione AGID
-
-### 📈 Compliance Generale
-- **Componenti Bootstrap Italia**: 16/54+ implementati (30%)
-- **Accessibilità**: WCAG 2.1 AA parziale
-- **Design System**: Colori e tipografia base
-- **Requisiti Legali**: In implementazione
-
-### 📋 Documentazione Aggiornata
-- **[Analisi Compliance AGID](agid-compliance-analysis.md)** - Analisi completa requisiti
-- **[Roadmap Componenti Mancanti](missing-components-roadmap.md)** - Piano implementazione 38+ componenti
-- **[Stato Componenti](components-status.md)** - Stato dettagliato implementazione
-
-## 🏛️ Conformità PA Italiana
-
-### Requisiti AGID Soddisfatti
-- ✅ **Design System**: Colori, tipografia, spaziature conformi
-- ✅ **Accessibilità**: WCAG 2.1 AA con skiplinks e navigation
-- ✅ **Responsive**: Mobile-first, touch-friendly
-- ✅ **Multilingual**: Supporto italiano/inglese
-- ✅ **Performance**: Ottimizzato per dispositivi PA
-
-### Requisiti AGID Mancanti  
-- ❌ **SPID Authentication**: Componente login SPID
-- ❌ **PagoPA Payments**: Integrazione pagamenti PA
-- ❌ **Complete Forms**: Date/time pickers, validazione avanzata
-- ❌ **Icon System**: Libreria completa SVG Bootstrap Italia
-
-## 🚀 Avvio Rapido
-
-### Installazione
-```bash
-# Clone del tema
-cd themes/
-git clone [repository-url] Sixteen
-
-# Installazione dipendenze
-cd Sixteen
-npm install
-composer install
-
-# Build assets
-npm run build
-```
-
-### Configurazione Laravel
-```php
-// config/app.php
-'providers' => [
-    Themes\Sixteen\Providers\SixteenServiceProvider::class,
-],
-```
-
-### Configurazione Filament
-```php
-// app/Providers/AdminPanelProvider.php
-public function panel(Panel $panel): Panel
-{
-    return $panel
-        ->viteTheme('themes/sixteen/resources/css/app.css')
-        ->theme('sixteen');
-}
-```
-
-## 📁 Struttura del Progetto
-
-```
-Themes/Sixteen/
-├── docs/                           # 📚 Documentazione completa
-│   ├── agid-bootstrap-italia-gap-analysis.md  # Gap analysis AGID
-│   ├── bootstrap-italia-compliance-analysis.md # Stato compliance
-│   ├── components-status.md        # Stato componenti
-│   ├── filament-4-login-widget-implementation.md # ✅ Login Widget Guide
-│   └── index.md                    # Indice documentazione
-├── resources/views/components/
-│   └── bootstrap-italia/           # 🎨 Componenti AGID
-│       ├── alert.blade.php         # ✅ Messaggi di stato
-│       ├── badge.blade.php         # ✅ Indicatori stato
-│       ├── breadcrumb.blade.php    # ✅ Navigazione breadcrumb
-│       ├── button.blade.php        # ✅ Pulsanti PA-compliant
-│       ├── card.blade.php          # ✅ Contenitori contenuto
-│       ├── carousel.blade.php      # ✅ Slider contenuti
-│       ├── cookiebar.blade.php     # ✅ GDPR compliance
-│       ├── footer.blade.php        # ✅ Piè di pagina PA
-│       ├── header-main.blade.php   # ✅ Header principale
-│       ├── header-slim.blade.php   # ✅ Barra istituzionale
-│       ├── hero.blade.php          # ✅ Sezioni hero
-│       ├── megamenu.blade.php      # ✅ Menu complessi
-│       ├── notification.blade.php  # ✅ Notifiche toast
-│       ├── progress.blade.php      # ✅ Barre progresso
-│       ├── radio.blade.php         # ✅ Radio button
-│       ├── rating.blade.php        # ✅ Sistema valutazioni
-│       ├── select.blade.php        # ✅ Dropdown selezione
-│       ├── sidebar.blade.php       # ✅ Navigazione laterale
-│       ├── skiplinks.blade.php     # ✅ Accessibilità WCAG
-│       ├── tabs.blade.php          # ✅ Interfacce a schede
-│       ├── toggle.blade.php        # ✅ Switch controlli
-│       └── upload.blade.php        # ✅ Caricamento file
-├── tailwind.config.js              # 🎨 Configurazione Tailwind
-├── vite.config.js                  # ⚡ Build configuration
-└── package.json                    # 📦 Dipendenze NPM
-```
-
-## 🎨 Sistema di Design
-
-### Colori AGID Bootstrap Italia
-```javascript
-// Palette colori PA Italiana implementata in Tailwind
-colors: {
-    'italia-blue': {
-        50: '#E3F2FD',
-        500: '#0066CC',  // Primary PA blue
-        900: '#003D7A'
-    },
-    'italia-green': {
-        50: '#E8F5E8', 
-        500: '#00B373', // Success green
-        900: '#007A4F'
-    },
-    'italia-red': {
-        50: '#FFEBEE',
-        500: '#D9364F', // Error red  
-        900: '#B71C1C'
-    }
-}
-```
-
-### Tipografia PA Compliant
-```css
-/* Font system conformi alle linee guida */
-font-family: {
-    'sans': ['Inter var', 'system-ui', 'sans-serif'],
-    'serif': ['Lora', 'Georgia', 'serif'],
-    'mono': ['Roboto Mono', 'monospace']
-}
-```
-
-## 🔧 Utilizzo Componenti
-
-### Header PA Standard
-```blade
-<x-bootstrap-italia.header-slim
-    :institution="'Comune di Roma'"
-    :links="[
-        ['url' => '#', 'text' => 'Amministrazione Trasparente'],
-        ['url' => '#', 'text' => 'URP']
-    ]"
-/>
-
-<x-bootstrap-italia.header-main
-    :site-name="'Sito Comunale'"
-    :tagline="'Servizi digitali per i cittadini'"
-    :navigation="$mainNavigation"
-    show-search
-/>
-```
-
-### Form PA Compliant
-```blade
-<form class="space-y-6">
-    <x-bootstrap-italia.select
-        name="provincia"
-        label="Provincia di residenza"
-        :options="$province"
-        placeholder="Seleziona provincia"
-        required
-    />
-    
-    <x-bootstrap-italia.radio
-        name="servizio"
-        label="Tipo di servizio richiesto"
-        :options="[
-            'certificati' => 'Certificati anagrafici',
-            'tributi' => 'Tributi e pagamenti',
-            'pratiche' => 'Pratiche edilizie'
-        ]"
-        required
-    />
-    
-    <x-bootstrap-italia.upload
-        name="documenti"
-        label="Documenti allegati"
-        accept=".pdf,.doc,.docx"
-        multiple
-    />
-</form>
-```
-
-### Notifiche e Feedback
-```blade
-{{-- Notifica successo --}}
-<x-bootstrap-italia.notification
-    type="success"
-    title="Richiesta inviata"
-    message="La tua richiesta è stata inviata correttamente"
-    dismissible
-/>
-
-{{-- Progress indicator per processi lunghi --}}
-<x-bootstrap-italia.progress-indicators
-    :steps="[
-        'Compilazione dati',
-        'Verifica documenti', 
-        'Pagamento',
-        'Conferma'
-    ]"
-    :current-step="2"
-/>
-```
-
-### Accessibilità Built-in
-```blade
-{{-- Skiplinks per navigazione da tastiera --}}
-<x-bootstrap-italia.skiplinks
-    :links="[
-        '#main-content' => 'Vai al contenuto principale',
-        '#main-navigation' => 'Vai al menu principale',
-        '#footer' => 'Vai al footer'
-    ]"
-/>
-```
-
-## ♿ Accessibilità WCAG 2.1 AA
-
-### Funzionalità Implementate
-- ✅ **Skiplinks**: Navigazione rapida da tastiera
-- ✅ **Contrasto Colori**: Rapporto ≥ 4.5:1 per testo normale
-- ✅ **Focus Visibile**: Indicatori focus chiari su tutti gli elementi interattivi  
-- ✅ **Markup Semantico**: Struttura HTML corretta con landmark ARIA
-- ✅ **Label Accessibili**: Tutti i form field hanno label associate
-- ✅ **ARIA Attributes**: Supporto completo per screen reader
-
-### Test di Accessibilità
-```bash
-# Test automatici con axe-core
-npm run test:a11y
-
-# Audit manuale con screen reader
-# - NVDA (Windows)
-# - VoiceOver (macOS)  
-# - Orca (Linux)
-```
-
-## 📈 Roadmap Sviluppo
-
-### 🚨 Priorità CRITICA (Prossime 2-3 settimane)
-1. **Dropdown Component** - Essenziale per navigazione e form
-2. **Pagination Component** - Richiesto per dataset PA
-3. **SPID Integration** - Obbligatorio per autenticazione PA
-4. **Form completi** - Date/time picker, autocomplete
-
-### 🔥 Priorità ALTA (1-2 mesi)  
-1. **PagoPA Integration** - Pagamenti PA
-2. **Tooltip/Popover** - UX e accessibilità
-3. **Steppers** - Processi multi-step
-4. **Complete Icon System** - Libreria SVG Bootstrap Italia
-
-### 📈 Priorità MEDIA (2-3 mesi)
-1. **Timeline Component** - Visualizzazione processi
-2. **Advanced UX** - Callout, Collapse, Avatar
-3. **Performance Optimization** - Bundle size, lazy loading
-4. **Documentation** - Guide complete utilizzo
-
-## 🧪 Testing e Qualità
-
-### Test Automatici
-```bash
-# Test componenti Laravel
-php artisan test --filter=SixteenTheme
-
-# Test accessibilità  
-npm run test:a11y
-
-# Test performance
-npm run lighthouse
-```
-
-### Metriche Qualità Target
-- **Accessibilità**: 100% WCAG 2.1 AA
-- **Performance**: Lighthouse Score > 90
-- **Bundle Size**: CSS < 300KB, JS < 200KB
-- **Coverage**: Test coverage > 80%
-
-## 📚 Documentazione Completa
-
-### Guide Specializzate
-- **[📊 Stato Componenti](components-status.md)** - Inventario completo implementazione
-- **[🔍 Gap Analysis AGID](agid-bootstrap-italia-gap-analysis.md)** - Analisi conformità PA
-- **[🔧 Bootstrap Italia → Tailwind](bootstrap-italia-to-tailwind.md)** - Guida migrazione
-- **[📋 Indice Completo](index.md)** - Navigazione documentazione
-
-### Risorse Esterne
-- [Bootstrap Italia Documentation](https://italia.github.io/bootstrap-italia/docs/)
-- [AGID Design Guidelines](https://www.agid.gov.it/it/argomenti/linee-guida-design-pa)  
-- [Design Comuni Documentation](https://docs.italia.it/italia/designers-italia/design-comuni-docs/)
-- [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
-
-## 🤝 Contribuire
-
-### Come Contribuire
-1. **Fork** del repository
-2. **Create feature branch** (`git checkout -b feature/nuovo-componente`)
-3. **Implementa** seguendo le linee guida AGID
-4. **Testa** accessibilità e performance
-5. **Documenta** le modificare
-6. **Submit Pull Request**
-
-### Guidelines Sviluppo
-- Seguire convenzioni nomenclatura esistenti
-- Implementare test automatici per nuovi componenti
-- Verificare conformità WCAG 2.1 AA
-- Documentare API e utilizzo componenti
-- Ottimizzare per performance
-
+---
+title: "Sixteen: ingresso alla documentazione"
+type: readme
+tags: [documentation, sixteen]
+created: 2026-09-26
+updated: 2026-10-27
+qmd: "sixteen theme readme stato pub_theme vivo contenuti conteggi build npm limiti rotte dormienti layout design-comuni"
+issues: []
+discussions: []
+status: active
 ---
 
-## 🏅 Status Badge
+# Sixteen
 
-![AGID Compliance](https://img.shields.io/badge/AGID-48%25%20Compliant-yellow)
-![WCAG 2.1](https://img.shields.io/badge/WCAG%202.1-AA-green)
-![Laravel](https://img.shields.io/badge/Laravel-12+-red)
-![Tailwind](https://img.shields.io/badge/Tailwind-3.4+-blue)
+**Scopo:** Sixteen e' il vestito Design Comuni del FO Fixcity: compone Folio/Volt e monta widget dei moduli owner (User, Cms, Comment, …) senza possedere Resource Filament ne' Actions di dominio. Hub BMAD: [bmad/decision-log.md](./bmad/decision-log.md), [bmad/filament-blueprint.md](./bmad/filament-blueprint.md).
 
-**Versione**: 2.0.0  
-**Ultimo aggiornamento**: Settembre 1, 2025  
-**Mantenuto da**: Team Bootstrap Italia Migration  
-**Licenza**: MIT
+## Operational guides
+
+- [Verified recovery, accessibility corrections and evidence](./bmad/verification-recovery.md)
+- [Lista categorie: contratto di rendering](./bmad/lista-categorie-rendering-contract.md)
+
+- [Documentation index](./index.md)
+- [Documentation naming and frontmatter rules](../../../../bashscripts/ai/wiki/rules/markdown-file-naming-and-frontmatter.md)
+- [Dependency refresh and verification](./bmad/dependency-refresh-and-verification.md)
+- [Typography remediation](./bmad/typography-comunidesign-remediation-bmad.md)
+- [FAQ route ownership](./bmad/faq-route-ownership.md)
+- [FAQ CSS remediation plan](./bmad/plans/css-data-page-elimination-plan.md)
+- [Login UX and reusable CSS contract](./auth/login-ux-fixes.md)
+- [Testing boundary](./testing-convention.md)
+
+### Regola prima di modificare una pagina pubblica
+
+La risoluzione canonica è `URL → Folio shell → slug CMS → JSON tenant → block
+view → action del modulo`. Non aggiungere una Blade in `pages/<slug>/` per
+correggere una pagina già coperta dallo shell dinamico: per FAQ ciò significa
+che `resources/views/pages/domande-frequenti/index.blade.php` deve restare
+assente. Il test di contratto lo verifica; il dettaglio è in
+[faq-route-ownership.md](./bmad/faq-route-ownership.md).
+
+Tema pubblico (front office) di Fixcity: resa Design Comuni su Laravel 13, PHP 8.4, Filament 5. Biglietto da visita: [IT](../README.md), [EN](./readme-en.md). L'indice operativo e' [00-INDEX.md](00-INDEX.md).
+
+`README.md` è l'ingresso canonico del tema. `00-INDEX.md` è l'indice operativo
+(documenti e cartelle): orienta verso i documenti, ma non duplica i contratti.
+`index.md` è un router storico; `INDEX.md` non esiste più (rimosso da git).
+
+## Stato verificato (2026-10-14)
+
+| Domanda | Risposta | Prova |
+|---|---|---|
+| E' il tema in uso? | si, vivo | `'pub_theme' => 'Sixteen'` in tutti e 4 i `laravel/config/**/xra.php`; `public_html/themes/Sixteen` e' un link a `laravel/Themes/Sixteen/public/` |
+| Dove vive il codice? | repo git separato (submodule) | `gitmodules.ini`, remote `git@github.com:laraxot/theme_sixteen_fila5.git`; Composer `laraxot/theme_sixteen_fila5`, namespace `Themes\Sixteen\` (app/), provider `Providers\ThemeServiceProvider` che estende `XotBaseThemeServiceProvider` |
+| Altri temi | `TwentyOne` (importato da Predict, non usato), `Barthelemy` e `Meetup` (gusci senza codice); al 2026-10-28 `laravel/Themes/` contiene solo Meetup, Sixteen, TwentyOne, Two, Zero: `Barthelemy` non è presente | [Meetup/docs](../../Meetup/docs/00-index.md) |
+
+## Cosa contiene (conteggi del 2026-10-14)
+
+- `resources/views/`: 957 file Blade. `layouts/` (11), `components/` (795, di cui `components/blocks/` con 166 voci e 508 Blade, piu' `header/`, `footer/`, `wizard/`, `layouts/`), `pages/` (Folio: `[container0]/`, `tests/[slug]`), `sections/` (footer), `partials/` (accessibility-bar, cookie-bar).
+- `resources/css/` (95 file) e `resources/js/` (21 file); punti d'ingresso Vite: `app.css`, `app-test.css`, `app.js` e i Lit di Geo (`map-lit.js`).
+- `app/` (79 file PHP): Actions (menu, SPID, CIE, blocchi, asset, URL), Enums (24), Models (13, di cui 9 in `Municipal/`), Http (5 controller, 2 middleware, 1 componente Livewire), Providers, Support, View.
+- `lang/` it (43 file), en (43), de (16), es (15).
+- `tests/`: 15 test Unit, 6 Feature, 10 spec Playwright in `tests/browser/`.
+- `scripts/`: smoke e verifiche di parity (`map-*-smoke.cjs`, `auth-register-smoke.cjs`, `visual-parity.mjs`).
+
+## Come si costruisce (da `package.json`)
+
+- `npm run build`: `npm run prepare:static-assets` (`resources/scripts/prepare-static-assets.mjs`) e poi `vite build` (uscita in `public/`, collegata a `public_html/themes/Sixteen`). `build:with-webroot` e' `vite build` + `npm run copy`; la vecchia catena `vite build` + `copy` + `php artisan view:clear` e' ora `build1`.
+- `npm run dev`: server Vite. `npm test`: Jest. `npm run lint` e `npm run format`.
+- Smoke del browser: `test:map-picker-smoke`, `test:map-lit-smoke`, `test:map-lit-stress`, `test:auth-register-smoke`.
+- Riferimento esteso: le 14 guide Vite in [build/](build/) (nessun indice proprio; partire da [vite-configuration-guide.md](build/vite-configuration-guide.md)).
+
+## Limiti noti (verificati)
+
+- Il tema contiene controller e rotte (`app/Http/Controllers/`, `routes/web.php`, `routes/auth.php`) che a runtime non risultano registrati: `php artisan route:list` (461 rotte, senza route cache) non ha ne' `comune/*` ne' `auth/spid` ne' `auth/cie`. Sono codice dormiente, non la via con cui il tema serve le pagine.
+- Restano viste legacy non usate dal CSS principale: `resources/views/bootstrap-italia/` (16 Blade), `layouts/bootstrap-italia*.blade.php` (4), `pages_old/` (45); gli `@import` di Bootstrap Italia in `app.css` sono commentati.
+- Il layout pubblico canonico è `components/layouts/app.blade.php`: Sixteen è già Design Comuni. `design-comuni-authenticated.blade.php` e `design-comuni-bare.blade.php` restano solo template specializzati per le pagine di test che li dichiarano esplicitamente.
+
+## Ownership e stack canonico
+
+Sixteen è già il tema Design Comuni: non si crea un secondo tema, layout o
+namespace `design-comuni`. Il rendering usa TailwindCSS (`@apply`), Alpine.js,
+Lit, DaisyUI e Flowbite; Bootstrap Italia non è una dipendenza runtime.
+
+Sixteen non possiede `app/Jobs/`, `app/Services/` o `app/Servces/`: i flussi
+asincroni restano nelle Queueable Actions del modulo owner. Il tema si limita a
+comporre viste e a invocare il contratto dell'Action.
+
+I data object appartengono invece al modulo owner: quando il tema consuma un
+contratto dati, importa il namespace canonico `Modules\\<Module>\\Datas` e non
+crea copie in `Themes/Sixteen/app/Data(s)`. La cartella `Datas` distingue il
+catalogo di oggetti di trasferimento dal codice visuale del tema e impedisce
+che una view diventi proprietaria della logica di dominio.
+
+- contenuti: JSON CMS, con view block riusabili;
+- shell pubblica: `x-layouts.app` e, quando dichiarato dal contratto pagina,
+  `x-layouts.test`;
+- routing pubblico: Folio e `PageSlugMiddleware`;
+- accessibilità: WCAG 2.1 AA come requisito minimo, con verifica manuale e automatizzata;
+- build: Vite, con asset generati nella public del tema.
+
+I temi **non** contano modelli/migrazioni, ma gli agenti che toccano Fixcity/User devono rispettare:
+
+- [Parità modulo N=N](../../../../bashscripts/ai/wiki/bmad/architecture-module-model-artifact-parity.md) — audit: `bashscripts/tools/audit-module-artifact-parity.sh Fixcity`
+- [Dati sacri](../../../../bashscripts/ai/wiki/rules/data-sacred-no-destructive-db.md) — solo `php artisan migrate`
+- Wiki tema: [docs/wiki/](./wiki/) · ingest: `bashscripts/docs/llm-wiki-qmd.sh update`
+
+Nessun nuovo contenuto va in `docs/archive/`; le storie non sono da duplicare
+fuori da BMAD e la memoria wiki storica resta in `docs/wiki/_archive/`. Regola
+Second Brain: [no-docs-archive](../../../../bashscripts/ai/wiki/concepts/no-docs-archive-rule.md).
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./readme-en.md) |
+| 📚 Wiki tecnica | [./wiki/](./wiki/) |
+| 💶 Sostenibilità FO | [project-sustainability-front-office.md](./project-sustainability-front-office.md) |
+| 📣 Inbound blog/eventi | [inbound-marketing-blog-eventi.md](./inbound-marketing-blog-eventi.md) |
+| 🧭 Dipendenze e font | [Sixteen dependency maintenance](./bmad/dependency-refresh-and-verification.md) |
+| 🧠 Moduli e temi (repo git separati) | [Multi-repo map](../../../../docs/wiki/rules/multi-repo-modules-themes-map.md) |
+
+## Verifica 2026-10-19
+
+Il pipeline font canonico usa `laravel-vite-plugin/fonts` (`google(...)`) in
+`vite.config.js` per Titillium Web, Lora e Roboto Mono. Vite emette il
+`fonts-manifest.json` e gli asset hashati sotto `public/assets/`; il build
+obbligatorio è passato con `npm run build`. La pagina di riferimento per la
+tipografia è il Design Comuni, mentre Bootstrap Italia resta solo riferimento
+normativo/stilistico e non dipendenza runtime.
+
+---
+**Tema** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan `level: max` (`laravel/phpstan.neon`) · Filament 5

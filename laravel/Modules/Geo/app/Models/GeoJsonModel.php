@@ -23,6 +23,9 @@ abstract class GeoJsonModel
     /**
      * Restituisce tutti i dati come collection.
      */
+    /**
+     * @return Collection<int, array<string, mixed>>
+     */
     public static function all(): Collection
     {
         return static::loadData();
@@ -35,7 +38,7 @@ abstract class GeoJsonModel
      *
      * @return Collection<int, array<string, mixed>>
      */
-    public static function where(string $key, $value): Collection
+    public static function where(string $key, mixed $value): Collection
     {
         /** @var Collection<int, array<string, mixed>> $all */
         $all = static::all();

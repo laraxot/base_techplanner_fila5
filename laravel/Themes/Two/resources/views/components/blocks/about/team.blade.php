@@ -1,5 +1,5 @@
 @props([
-    'title' => 'Il Nostro Team',
+    'title' => __('pub_theme::block_defaults.team.title.title'),
     'subtitle' => '',
     'members' => [],
 ])
@@ -21,12 +21,12 @@
                     {{-- Member Image --}}
                     <div class="relative h-64 overflow-hidden">
                         <img src="{{ $member['image'] ?? '/themes/Two/Main_files/images/testimonial-1.jpg' }}"
-                             alt="{{ $member['name'] ?? 'Team Member' }}"
+                             alt="{{ $member['name'] ?? __('pub_theme::block_fallbacks.team.member_alt.label') }}"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                         <div class="absolute bottom-4 left-4 right-4 text-white">
-                            <h3 class="text-xl font-bold">{{ $member['name'] ?? 'Nome' }}</h3>
-                            <p class="text-brand-orange-dark font-medium">{{ $member['role'] ?? 'Ruolo' }}</p>
+                            <h3 class="text-xl font-bold">{{ $member['name'] ?? __('pub_theme::block_fallbacks.team.name.label') }}</h3>
+                            <p class="text-brand-orange-dark font-medium">{{ $member['role'] ?? __('pub_theme::block_defaults.team.role.label') }}</p>
                         </div>
                     </div>
 

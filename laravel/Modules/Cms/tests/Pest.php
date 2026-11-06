@@ -2,19 +2,15 @@
 
 declare(strict_types=1);
 
-use Tests\TestCase;
-
 /*
- * |--------------------------------------------------------------------------
- * | Test Case
- * |--------------------------------------------------------------------------
- * |
- * | Il TestCase di default per tutti i test del modulo Cms.
- * | Utilizza il TestCase globale di Laravel con setup specifico per frontend.
- * |
+ * Bootstrap Pest — modulo Cms.
+ * Helper globali (cmsHomepageBlocks, cmsGet, …) in PestHelpers.php.
+ * Binding TestCase solo qui: i file test non dichiarano uses(TestCase) ridondanti.
+ * @see docs/stories/phpstan-cms-zero.story.md
  */
+require_once __DIR__.'/PestHelpers.php';
 
-uses(Modules\Cms\Tests\TestCase::class)->in('Feature', 'Unit');
+uses(\Modules\Cms\Tests\TestCase::class)->in(__DIR__.'/Feature', __DIR__.'/Unit');
 
 /*
  * |--------------------------------------------------------------------------
@@ -27,14 +23,9 @@ uses(Modules\Cms\Tests\TestCase::class)->in('Feature', 'Unit');
  * |
  */
 
-expect()->extend('toBeSubclassOf', function (string $parentClass) {
-    $class = $this->value;
-    if (! is_string($class)) {
-        throw new InvalidArgumentException('Expected a class name string');
-    }
-
-    return $this->and(is_subclass_of($class, $parentClass) || $class === $parentClass)->toBeTrue();
-});
+// expect()->extend('toBeValidHtml', function () {
+//     return $this->toContain('<html');
+// });
 
 /*
  * |--------------------------------------------------------------------------

@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\On;
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Override;
 
 class CoordinatesWidget extends XotBaseWidget
 {
@@ -22,11 +21,8 @@ class CoordinatesWidget extends XotBaseWidget
     public float $longitude = 0;
 
     /**
-     * Get the form schema for the widget.
-     *
-     * @return array<string, Component>
+     * @return array<int, Component>
      */
-    #[Override]
     public function getFormSchema(): array
     {
         return [];

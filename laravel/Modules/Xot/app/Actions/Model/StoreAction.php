@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Validator;
 use Spatie\QueueableAction\QueueableAction;
@@ -51,7 +50,7 @@ class StoreAction
             $action = app($action_class);
             Assert::object($action);
             if (! method_exists($action, 'execute')) {
-                throw new Exception('method [execute] not found in ['.$action_class.']');
+                throw new \Exception('method [execute] not found in ['.$action_class.']');
             }
             $action->execute($model, $relation);
         }

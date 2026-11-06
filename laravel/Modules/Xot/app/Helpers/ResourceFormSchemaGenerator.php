@@ -4,10 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Helpers;
 
-use Exception;
 use Illuminate\Support\Str;
-use ReflectionClass;
-use RuntimeException;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 
 use function Safe\error_log;
@@ -26,14 +24,14 @@ class ResourceFormSchemaGenerator
     {
         try {
             if (! class_exists($resourceClass)) {
-                throw new RuntimeException("Class {$resourceClass} does not exist");
+                throw new \RuntimeException("Class {$resourceClass} does not exist");
             }
 
-            $reflection = new ReflectionClass($resourceClass);
+            $reflection = new \ReflectionClass($resourceClass);
             $filename = $reflection->getFileName();
 
             if ($filename === false) {
-                throw new RuntimeException("Failed to get filename for class: {$resourceClass}");
+                throw new \RuntimeException("Failed to get filename for class: {$resourceClass}");
             }
 
             // Read the file contents
@@ -60,7 +58,7 @@ class ResourceFormSchemaGenerator
             file_put_contents($filename, $modifiedContents);
 
             return true;
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             error_log("Error generating form schema for {$resourceClass}: ".$e->getMessage());
 
             return false;
@@ -73,7 +71,7 @@ class ResourceFormSchemaGenerator
     public static function generateForAllResources(): array
     {
         $resourceFiles = glob(
-            '/var/www/html/base_orisbroker_fila3/laravel/Modules/*/app/Filament/Resources/*Resource.php',
+            '/var/www/html/base_orisbroker_fila5/laravel/Modules/*/app/Filament/Resources/*Resource.php',
         );
 
         $results = ['updated' => [], 'skipped' => []];
@@ -86,10 +84,10 @@ class ResourceFormSchemaGenerator
                 $classMatch = [];
 
                 if (
-                    preg_match('/namespace\s+([\w\\\\\\\\]+);/', $content, $namespaceMatch) &&
-                        preg_match('/class\s+(\w+)\s+extends\s+XotBaseResource/', $content, $classMatch) &&
-                        ! empty($namespaceMatch[1]) &&
-                        ! empty($classMatch[1])
+                    preg_match('/namespace\s+([\w\\\\\\\\]+);/', $content, $namespaceMatch)
+                        && preg_match('/class\s+(\w+)\s+extends\s+XotBaseResource/', $content, $classMatch)
+                        && ! empty($namespaceMatch[1])
+                        && ! empty($classMatch[1])
                 ) {
                     $fullClassName = $namespaceMatch[1].'\\'.$classMatch[1];
 
@@ -100,8 +98,8 @@ class ResourceFormSchemaGenerator
                         }
                     }
                 }
-            } catch (Exception $e) {
-                $results['skipped'][] = is_string($file) ? $file : (((string) $file).': '.$e->getMessage());
+            } catch (\Exception $e) {
+                $results['skipped'][] = is_string($file) ? $file : (SafeStringCastAction::cast($file).': '.$e->getMessage());
             }
         }
 

@@ -1,3 +1,15 @@
+---
+title: "s3test"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "s3test"
+issues: []
+discussions: []
+status: draft
+---
+
 # S3Test Component Documentation
 
 ## Overview
@@ -106,7 +118,7 @@ All AWS operations are wrapped in try-catch blocks to handle exceptions graceful
 ## Related Documentation
 - [AWS Test Bugfix Documentation](./awstest-bugfix-undefined-variable.md)
 - [Bugfix: Undefined Variable in AWS Test](./bugfix-awstest-undefined-variable.md)
-- [Root Documentation: AWS Testing](../../docs/aws-testing.md)
+- [Root Documentation: AWS Testing](../../../docs/aws-testing.md)
 
 ## PHPStan Compliance
 The component has been updated to comply with PHPStan level 9 requirements:

@@ -1,5 +1,14 @@
+---
+title: "Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "modulo activity activity"
+---
 # Modulo Activity
 
+Data: [DATE] 19:09:55Data: 2025-04-23 19:09:55
 Data: [DATE] 19:09:55
 
 ## Informazioni generali
@@ -10,7 +19,7 @@ Modules\\Activity\\Database\\Seeders
 Workbench\\App
 Workbench\\Database\\Factories
 Workbench\\Database\\Seeders
-- **Pacchetto Composer**: laraxot/module_activity_fila3
+- **Pacchetto Composer**: laraxot/module_activity_fila5
 Marco Sottana
 - **Dipendenze**: spatie/laravel-activitylog * spatie/laravel-event-sourcing * repositories type path url ../Xot type path url ../Tenant type path url ../UI scripts post-autoload-dump
 - **Totale file PHP**: 55
@@ -235,9 +244,9 @@ database/seeders
 docs
 docs/.github
 docs/.github/workflows
-docs/archived
-docs/archived/.github
-docs/archived/.github/workflows
+docs/archivedd
+docs/archivedd/.github
+docs/archivedd/.github/workflows
 docs/database
 docs/phpstan
 lang
@@ -281,7 +290,8 @@ workbench/routes
 
 ## Collegamenti
 
-- [Torna a README](./readme.md)
+- [Torna a README](./README.md)
+- [Torna a README](./README.md)
 - [Vai a Roadmap](./roadmap.md)
 - [Vai a Bottlenecks](./bottlenecks.md)
 
@@ -363,6 +373,21 @@ workbench/routes
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
+* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
+* [structure.md](laravel/Modules/Notify/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
+* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
+* [structure.md](laravel/Modules/User/docs/structure.md)
+* [structure.md](laravel/Modules/UI/docs/structure.md)
+* [structure.md](laravel/Modules/Lang/docs/structure.md)
+* [structure.md](laravel/Modules/Job/docs/structure.md)
+* [structure.md](laravel/Modules/Media/docs/structure.md)
+* [structure.md](laravel/Modules/Tenant/docs/structure.md)
+* [structure.md](laravel/Modules/Activity/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
+* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
 
 ## Architettura Event Sourcing e Activity Log
 

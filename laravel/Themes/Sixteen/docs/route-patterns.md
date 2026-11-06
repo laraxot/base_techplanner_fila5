@@ -1,3 +1,15 @@
+---
+title: "route patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "route patterns"
+issues: []
+discussions: []
+status: draft
+---
+
 # Pattern Route - Tema Sixteen
 
 ## Problema Identificato
@@ -41,7 +53,7 @@ L'utilizzo di route dirette come `route('privacy')` e `route('accessibility')` Ã
 Il sistema Laraxot utilizza route dinamiche per le pagine:
 
 ```php
-// File: resources/views/pages/pages/[slug].blade.php
+// File: resources/views/pages/[container0]/[slug0]/index.blade.php
 name('page_slug.view');
 
 render(function (View $view, string $slug) {
@@ -214,6 +226,6 @@ foreach ($pages as $page) {
 
 - [Layout Usage Patterns](layout-usage-patterns.md)
 - [AGID Login Implementation](agid-login-implementation.md)
-- [Route File](resources/views/pages/pages/[slug].blade.php)
-- [CMS Module](../../../laravel/Modules/Cms/)
+- [Route Contract](./page-directory-structure.md)
+- [CMS Module](../../../Modules/Cms)
 

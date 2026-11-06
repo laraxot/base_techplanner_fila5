@@ -96,3 +96,4 @@ Se mancano funzionalità come autenticazione o navigazione, verificare che si st
 - [docs/FILAMENT_BEST_PRACTICES.md](mdc:../../docs/FILAMENT_BEST_PRACTICES.md)
 - [docs/ARCHITECTURE.md](mdc:../../docs/ARCHITECTURE.md)
 
+*Ultimo aggiornamento: 2025-01-06* 

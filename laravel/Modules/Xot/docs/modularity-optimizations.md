@@ -1,3 +1,11 @@
+---
+title: "Modulo Xot - Ottimizzazioni per Modularità"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "modulo xot - ottimizzazioni per modularità xot"
+---
 # Modulo Xot - Ottimizzazioni per Modularità
 
 ## Problemi Identificati
@@ -289,7 +297,7 @@ Dopo l'ottimizzazione completa, i comandi devono restituire **0 occorrenze**.
 - [Root Docs: Modularity Hardcoded Names](../../../project_docs/modularity-hardcoded-names.md)
 - [Regole Cursor: Modularity Rules](../../../.cursor/rules/modularity-hardcoded-names.mdc)
 - [Xot Architecture Overview](./architecture-overview.md)
-- [Xot Best Practices](./best-practices/readme.md)
+- [Xot Best Practices](./best-practices/README.md)
 
 ## Note di Implementazione
 

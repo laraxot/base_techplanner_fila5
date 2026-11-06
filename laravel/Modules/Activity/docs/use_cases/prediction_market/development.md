@@ -1,4 +1,12 @@
-# 🛠️ Guida allo Sviluppo del Modulo Prediction Market
+---
+title: "Guida allo Sviluppo del Modulo <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "guida allo sviluppo del modulo <nome progetto>ion market activity"
+---
+# 🛠️ Guida allo Sviluppo del Modulo <nome progetto>ion Market
 
 ## 📋 Prerequisiti
 
@@ -37,7 +45,7 @@ Configura le variabili d'ambiente nel file `.env`:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-DB_DATABASE=prediction_market
+DB_DATABASE=<nome progetto>ion_market
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -72,7 +80,7 @@ app/
       Bet/              # Comandi Artisan per la gestione delle scommesse
 
   Domain/
-    PredictionMarket/
+    <nome progetto>ionMarket/
       Models/          # Modelli Eloquent
       Events/           # Eventi di dominio
       Commands/         # Comandi CQRS
@@ -89,7 +97,7 @@ app/
     Resources/          # API Resources
 
 config/
-  prediction-market.php  # Configurazione del modulo
+  <nome progetto>ion-market.php  # Configurazione del modulo
 
 database/
   migrations/          # Migrazioni del database
@@ -294,18 +302,18 @@ php artisan view:cache
 Configura un gestore di processi come Supervisor per gestire i worker:
 
 ```ini
-[program:prediction-market-worker]
+[program:<nome progetto>ion-market-worker]
 process_name=%(program_name)s_%(process_num)02d
-command=php /var/www/prediction-market/artisan queue:work --sleep=3 --tries=3 --max-time=3600
+command=php /var/www/<nome progetto>ion-market/artisan queue:work --sleep=3 --tries=3 --max-time=3600
 autostart=true
 autorestart=true
 stopasgroup=true
 killasgroup=true
 user=www-data
 numprocs=8
-directory=/var/www/prediction-market
+directory=/var/www/<nome progetto>ion-market
 redirect_stderr=true
-stdout_logfile=/var/log/supervisor/prediction-market-worker.log
+stdout_logfile=/var/log/supervisor/<nome progetto>ion-market-worker.log
 stopwaitsecs=3600
 ```
 

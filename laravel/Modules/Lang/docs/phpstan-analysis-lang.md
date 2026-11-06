@@ -1,9 +1,24 @@
+---
+title: "phpstan analysis lang"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis lang"
+issues: []
+discussions: []
+status: stale
+---
+
+> Nota 2026-10-14 (docs-audit): Rapporto del 2025-11-05 con campo 'Last Analysis: [DATE]' non compilato; il livello PHPStan non e' stato rimisurato il 2026-10-14. Contenuto non riscritto, verificare prima di usarlo.
+
 # PHPStan Analysis - Lang Module
 
 ## 📊 Status
 
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
+**Last Analysis**: 2025-11-05
 **Last Analysis**: [DATE]
 
 ## 🎯 Module Overview
@@ -20,6 +35,7 @@
 - **Errors Found**: 0 (as of September 22, 2025)
 - **Status**: ✅ Already clean
 
+### Current Status (2025-11-05)
 ### Current Status ([DATE])
 - **Current Errors**: 0
 - **PHPStan Level**: 10 (upgraded from Level 9)
@@ -112,7 +128,7 @@
 - [ ] Document best practices for internationalization
 
 ---
-
+**Analysis Date**: 2025-11-05
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1

@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/mooxphp/jobs/tree/main
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
@@ -45,8 +44,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|JobsWaiting whereReservedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedBy($value)
- *
- * @mixin IdeHelperJobsWaiting
  *
  * @property-read ProfileContract|null $deleter
  *

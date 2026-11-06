@@ -67,7 +67,7 @@ class TimeClockPage extends XotBasePage implements HasTable
                         WorkHourStatusEnum::REJECTED->value => 'danger',
                         default => 'gray',
                     }),
-                TextColumn::make('location_name')->label('Location')->searchable(),
+                TextColumn::make('location_name')->label('Location')->searchable()->visibleFrom('md'),
                 TextColumn::make('notes')->label('Notes')->toggleable(isToggledHiddenByDefault: true),
                 TextColumn::make('created_at')
                     ->label('Created')
@@ -78,15 +78,26 @@ class TimeClockPage extends XotBasePage implements HasTable
             ->filters([
                 Filter::make('date_range')
                     ->label('Date Range')
-                    ->form([
+                    ->schema([
                         DatePicker::make('date_from')
                             ->label('From'),
                         DatePicker::make('date_to')
                             ->label('To'),
                     ])
-                    ->query(fn (Builder $query, array $data): Builder => $query
-                        ->when(isset($data['date_from']) && $data['date_from'], fn (Builder $query): Builder => $query->whereDate('timestamp', '>=', (string) $data['date_from']))
-                        ->when(isset($data['date_to']) && $data['date_to'], fn (Builder $query): Builder => $query->whereDate('timestamp', '<=', (string) $data['date_to']))),
+                    ->query(function (Builder $query, array $data): Builder {
+                        $dateFrom = null;
+                        if (isset($data['date_from']) && is_string($data['date_from'])) {
+                            $dateFrom = $data['date_from'];
+                        }
+                        $dateTo = null;
+                        if (isset($data['date_to']) && is_string($data['date_to'])) {
+                            $dateTo = $data['date_to'];
+                        }
+
+                        return $query
+                            ->when($dateFrom, fn (Builder $query): Builder => $query->whereDate('timestamp', '>=', $dateFrom))
+                            ->when($dateTo, fn (Builder $query): Builder => $query->whereDate('timestamp', '<=', $dateTo));
+                    }),
                 SelectFilter::make('type')
                     ->label('Type')
                     ->options(WorkHourTypeEnum::class),
@@ -119,6 +130,9 @@ class TimeClockPage extends XotBasePage implements HasTable
             ]);
     }
 
+    /**
+     * @return Builder<WorkHour>
+     */
     protected function getTableQuery(): Builder
     {
         return WorkHour::query()

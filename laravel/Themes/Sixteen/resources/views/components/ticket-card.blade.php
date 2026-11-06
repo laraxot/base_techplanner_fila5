@@ -24,7 +24,7 @@
 
             {{-- Title --}}
             <h5 class="card-title big-heading">
-                <a href="{{ route('tickets.show', $ticket) }}">
+                <a href="{{ \Themes\Sixteen\Infrastructure\Url\FrontofficeRoutes::ticketsShow($ticket->getKey()) }}">
                     {{ $ticket->name }}
                 </a>
             </h5>
@@ -44,7 +44,7 @@
             @if($ticket->address)
             <p class="card-text">
                 <svg class="icon icon-sm">
-                    <use href="/bootstrap-italia/svg/sprites.svg#it-pin"></use>
+                    <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/svg/sprites.svg#it-pin"></use>
                 </svg>
                 <small class="text-muted">{{ $ticket->address }}</small>
             </p>
@@ -57,10 +57,10 @@
 
             {{-- Actions --}}
             @if($showActions)
-            <a class="read-more" href="{{ route('tickets.show', $ticket) }}">
-                <span class="text">Leggi di più</span>
+            <a class="read-more" href="{{ \Themes\Sixteen\Infrastructure\Url\FrontofficeRoutes::ticketsShow($ticket->getKey()) }}">
+                <span class="text">{{ __('pub_theme::news.read_more') }}</span>
                 <svg class="icon">
-                    <use href="/bootstrap-italia/svg/sprites.svg#it-arrow-right"></use>
+                    <use href="/themes/Sixteen/design-comuni/assets/bootstrap-italia/svg/sprites.svg#it-arrow-right"></use>
                 </svg>
             </a>
             @endif

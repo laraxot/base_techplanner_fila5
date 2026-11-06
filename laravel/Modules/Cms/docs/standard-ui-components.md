@@ -1,6 +1,18 @@
+---
+title: "standard ui components"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "standard ui components"
+issues: []
+discussions: []
+status: draft
+---
+
 # Standard UI Components in il progetto
 
-> **Nota**: Questo documento è una copia sincronizzata di [/docs/implementazione/standard_ui_components.md](../../../../docs/implementazione/standard_ui_components.md)
+> **Nota**: Questo documento è una copia sincronizzata di [/docs/implementazione/standard_ui_components.md](../../../../../docs/implementazione/standard_ui_components.md)
 >
 > Per modifiche, aggiornare il file originale e sincronizzare le modifiche qui.
 

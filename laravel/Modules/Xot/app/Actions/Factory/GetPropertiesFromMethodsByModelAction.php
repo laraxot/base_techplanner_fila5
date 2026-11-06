@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/TheDoctor0/laravel-factory-generator. 24 days ago
  * @see https://github.com/mpociot/laravel-test-factory-helper  on 2 Mar 2020.
@@ -12,15 +11,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Factory;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Str;
-use ReflectionMethod;
 use Spatie\QueueableAction\QueueableAction;
-use SplFileObject;
 use Webmozart\Assert\Assert;
 
+use function Safe\file;
 use function Safe\preg_replace;
 
 /**
@@ -51,7 +48,7 @@ class GetPropertiesFromMethodsByModelAction
 
             // Utilizziamo la reflection per ispezionare il codice
             try {
-                $reflection = new ReflectionMethod($model, $method);
+                $reflection = new \ReflectionMethod($model, $method);
                 $filename = $reflection->getFileName();
 
                 if ($filename === false) {
@@ -61,7 +58,7 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::fileExists($filename, "Il file {$filename} non esiste");
 
                 // Leggiamo il contenuto del metodo
-                $file = new SplFileObject($filename);
+                $file = new \SplFileObject($filename);
 
                 $file->seek($reflection->getStartLine() - 1);
                 $startLine = $file->key();
@@ -104,8 +101,8 @@ class GetPropertiesFromMethodsByModelAction
                 Assert::stringNotEmpty($codeStr, 'Il corpo della funzione non può essere vuoto');
 
                 // Cerchiamo relazioni belongsTo
-                $this->extractBelongsToRelations($codeStr, $model, $method, $data);
-            } catch (Exception $e) {
+                $data = array_merge($data, $this->extractBelongsToRelations($codeStr, $model, $method));
+            } catch (\Exception $e) {
                 // Se c'è un errore nell'analisi del metodo, lo ignoriamo e passiamo al successivo
                 continue;
             }
@@ -120,15 +117,15 @@ class GetPropertiesFromMethodsByModelAction
      * @param  string  $codeStr  Il codice da analizzare
      * @param  Model  $model  Il modello
      * @param  string  $method  Il nome del metodo
-     * @param  array<string, string>  &$data  L'array in cui salvare i dati estratti
+     * @return array<string, string> Chiave esterna => espressione factory del model correlato
      */
-    private function extractBelongsToRelations(string $codeStr, Model $model, string $method, array &$data): void
+    private function extractBelongsToRelations(string $codeStr, Model $model, string $method): array
     {
         $search = '$this->belongsTo(';
         $pos = mb_stripos($codeStr, $search);
 
         if ($pos === false) {
-            return; // Il metodo non contiene una relazione belongsTo
+            return []; // Il metodo non contiene una relazione belongsTo
         }
 
         try {
@@ -136,13 +133,13 @@ class GetPropertiesFromMethodsByModelAction
             $relationObj = $model->$method();
 
             // Verifichiamo che sia effettivamente una relazione
-            if (! ($relationObj instanceof Relation)) {
-                return;
+            if (! $relationObj instanceof Relation) {
+                return [];
             }
 
             // Verifichiamo che il metodo getForeignKeyName esista
             if (! method_exists($relationObj, 'getForeignKeyName')) {
-                throw new Exception('Il metodo getForeignKeyName non esiste nella relazione');
+                throw new \Exception('Il metodo getForeignKeyName non esiste nella relazione');
             }
 
             // Otteniamo il nome della chiave esterna
@@ -152,14 +149,11 @@ class GetPropertiesFromMethodsByModelAction
             // Otteniamo la classe relazionata
             $relatedClass = get_class($relationObj->getRelated());
 
-            // Chiamiamo GetFakerAction con parametri corretti
-            $fakerAction = app(GetFakerAction::class);
-            // Assert::isCallable rimosso - metodo verificato a compile time
-
-            $type = 'factory('.$relatedClass.'::class)';
-        } catch (Exception $e) {
+            // La colonna FK viene valorizzata con la factory del model correlato.
+            return [$foreignKeyName => 'factory('.$relatedClass.'::class)'];
+        } catch (\Exception $e) {
             // In caso di errore, ignoriamo la relazione
-            return;
+            return [];
         }
     }
 }

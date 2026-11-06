@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\View\Composers;
 
-use Exception;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\Auth;
@@ -27,15 +26,15 @@ class XotComposer
     /**
      * Undocumented function.
      *
-     * @param  array<mixed|void>  $arguments
+     * @param  array<int, mixed>  $arguments
      */
     public function __call(string $name, array $arguments): mixed
     {
         $modules = Module::getOrdered();
 
-        $module = Arr::first($modules, static function ($module) use ($name): bool {
+        $module = Arr::first($modules, static function (mixed $module) use ($name): bool {
             // Ensure the module is an instance of LaravelModule
-            if (! ($module instanceof LaravelModule)) {
+            if (! $module instanceof LaravelModule) {
                 return false;
             }
 
@@ -46,9 +45,7 @@ class XotComposer
         });
 
         if (! \is_object($module)) {
-            throw new Exception('Create a View\Composers\ThemeComposer.php inside a module with ['.
-                $name.
-                '] method');
+            throw new \Exception('Create a View\Composers\ThemeComposer.php inside a module with ['.$name.'] method');
         }
 
         Assert::isInstanceOf($module, LaravelModule::class, '['.__LINE__.']['.class_basename($this).']');
@@ -101,11 +98,13 @@ class XotComposer
         $metatag = MetatagData::make();
         $fun = 'get'.Str::studly($str);
         if (method_exists($metatag, $fun)) {
-            // @phpstan-ignore return.type
-            return $metatag->{$fun}();
+            $value = $metatag->{$fun}();
+
+            return is_string($value) || is_bool($value) ? $value : null;
         }
 
-        // @phpstan-ignore return.type
-        return $metatag->{$str};
+        $value = $metatag->{$str} ?? null;
+
+        return is_string($value) || is_bool($value) ? $value : null;
     }
 }

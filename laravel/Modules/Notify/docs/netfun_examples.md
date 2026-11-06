@@ -1,3 +1,15 @@
+---
+title: "netfun examples"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "netfun examples"
+issues: []
+discussions: []
+status: draft
+---
+
 # Esempi Pratici Netfun
 
 ## 1. Invio SMS OTP
@@ -240,6 +252,7 @@ public function sendReminder(Appointment $appointment)
         // Invia il promemoria
         $appointment->patient->notify(
             new AppointmentReminderNotification(
+                appointmentDate: $appointment->date,
                 doctorName: $appointment->doctor->name,
                 location: $appointment->location,
                 notes: $appointment->notes

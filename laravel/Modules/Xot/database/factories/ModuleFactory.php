@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\Module;
 
 /**
- * Module Factory
+ * Module Factory.
  *
  * @extends Factory<Module>
  */
@@ -16,6 +16,9 @@ class ModuleFactory extends Factory
 {
     protected $model = Module::class;
 
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [

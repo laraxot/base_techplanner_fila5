@@ -89,8 +89,8 @@ class SafeBooleanCastAction
      * Converte un valore in boolean con validazione di valori specifici.
      *
      * @param  mixed  $value  Il valore da convertire
-     * @param  array  $trueValues  Array di valori che rappresentano true
-     * @param  array  $falseValues  Array di valori che rappresentano false
+     * @param  array<mixed>  $trueValues  Array di valori che rappresentano true
+     * @param  array<mixed>  $falseValues  Array di valori che rappresentano false
      * @param  bool|null  $default  Valore di default se la conversione fallisce
      * @return bool Il valore convertito
      */
@@ -106,7 +106,7 @@ class SafeBooleanCastAction
             if (
                 in_array(
                     $trimmed,
-                    array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $trueValues),
+                    array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $trueValues),
                     true,
                 )
             ) {
@@ -116,7 +116,7 @@ class SafeBooleanCastAction
             if (
                 in_array(
                     $trimmed,
-                    array_map(fn ($value) => is_string($value) ? strtolower($value) : $value, $falseValues),
+                    array_map(fn (mixed $value) => is_string($value) ? strtolower($value) : $value, $falseValues),
                     true,
                 )
             ) {
@@ -184,8 +184,8 @@ class SafeBooleanCastAction
      * Metodo statico per cast con valori personalizzati.
      *
      * @param  mixed  $value  Il valore da convertire
-     * @param  array  $trueValues  Array di valori che rappresentano true
-     * @param  array  $falseValues  Array di valori che rappresentano false
+     * @param  array<mixed>  $trueValues  Array di valori che rappresentano true
+     * @param  array<mixed>  $falseValues  Array di valori che rappresentano false
      * @param  bool|null  $default  Valore di default se la conversione fallisce
      * @return bool Il valore convertito
      */

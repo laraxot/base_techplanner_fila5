@@ -1,3 +1,15 @@
+---
+title: "testing best practices uppercase"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing best practices uppercase"
+issues: []
+discussions: []
+status: draft
+---
+
 # Testing Best Practices - Laraxot Framework
 
 ## 🏆 **Gold Standard Pattern**
@@ -44,6 +56,22 @@ function mockXotData(): void
     $mockXotData->shouldReceive('make')
         ->andReturn($mockXotData);
 
+---
+    
+title: "testing best practices uppercase"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing best practices uppercase"
+issues: []
+discussions: []
+    $mockXotData->shouldReceive('getUserClass')
+        ->andReturn(\Modules\SaluteOra\Models\User::class);
+        
+    $mockXotData->shouldReceive('make')
+        ->andReturn($mockXotData);
+    
     // ✅ CRITICO: Bind nel container
     app()->instance(\Modules\Xot\Datas\XotData::class, $mockXotData);
 }
@@ -182,6 +210,8 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 ./vendor/bin/pest -v {TestFile} | grep -E "(seconds|ms)"
 
 # Success rate calculation
+---
+# Success rate calculation  
 ./vendor/bin/pest {TestFile} --compact
 
 # Memory usage monitoring
@@ -204,12 +234,13 @@ app()->instance(\Modules\Xot\Datas\XotData::class, $mock);
 
 ## 🔗 **Related Documentation**
 
-- [Widget Test Patterns](../cms/project_docs/tests/widget-test-patterns.md)
-- [Architecture Separation Rules](../cms/project_docs/tests/architecture-separation-rules.md)
-- [XotData Testing Strategy](xotdata_testing.md)
+- [Widget Test Patterns](../Cms/project_docs/tests/widget-test-patterns.md)
+- [Architecture Separation Rules](../Cms/project_docs/tests/architecture-separation-rules.md)
+- [XotData Testing Strategy](XOTDATA_TESTING.md)
 
 ---
 
 **Status**: ✅ Best Practices Validate
 **Enforcement**: Obbligatorio per tutti i test
+**Version**: 1.0 - Gold Standard
 **Last Update**: Dicembre 2024

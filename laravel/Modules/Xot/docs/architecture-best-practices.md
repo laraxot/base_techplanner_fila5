@@ -1,3 +1,11 @@
+---
+title: "architecture best practices"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "architecture best practices xot"
+---
 ## Convenzioni di naming per le azioni (Actions)
 
 Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi, valutatore_id, ecc.), si raccomanda l'uso esplicito del suffisso `By<Chiave>` nel nome della classe. Esempio:
@@ -7,7 +15,7 @@ Per tutte le azioni che operano su chiavi di aggregazione specifiche (es. stabi,
 Questa convenzione migliora la leggibilità e la chiarezza del codice, rendendo immediatamente evidente la logica di aggregazione utilizzata.
 
 **Collegamento bidirezionale:**
-- [Motivazione e applicazione nel modulo Performance](../../performance/project_docs/azioni_organizzativa.md)
+- [Motivazione e applicazione nel modulo Performance](../../Performance/project_docs/azioni_organizzativa.md)
 
 ## Memo e regole operative permanenti (per tutti i moduli che seguono Xot)
 

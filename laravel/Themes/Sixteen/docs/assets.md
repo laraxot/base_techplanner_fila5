@@ -1,3 +1,15 @@
+---
+title: "assets"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "assets"
+issues: []
+discussions: []
+status: draft
+---
+
 # Gestione degli asset Vite per il tema Sixteen
 
 ## Problema
@@ -13,15 +25,14 @@ significa che gli asset Vite non sono stati pubblicati correttamente nella carte
 Portarsi nella cartella del tema:
 
 ```bash
-cd /var/www/html/_bases/base_fixcity_fila3_mono/laravel/Themes/Sixteen
+cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
 npm run copy
 ```
 
 Questo comando si occupa di copiare e generare tutti gli asset necessari, risolvendo l'errore di Vite.
 
 ---
-
 ## Collegamenti
-- [Guida risoluzione errore Vite nella root](../../../../project_docs/modules/cms.md)
+- [Guida risoluzione errore Vite nella root](../../../../../docs/project/modules/cms.md)
 
 Vedi anche la sezione "Gestione temi e asset" nella documentazione di root del progetto.

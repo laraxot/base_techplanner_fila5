@@ -1,3 +1,15 @@
+---
+title: "conflict resolution iconstatecolumn"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution iconstatecolumn"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitto IconStateColumn.php
 
 ## Problema Identificato
@@ -68,7 +80,7 @@ Il file `Modules/UI/app/Filament/Tables/Columns/IconStateColumn.php` presenta co
 
 - [selectstatecolumn.md](selectstatecolumn.md)
 - [table-components.md](table-components.md)
-- [Modules/UI/docs/](../docs/)
+- [Modules/UI/docs/](../../docs/)
 
 # Risoluzione Conflitto IconStateColumn.php
 

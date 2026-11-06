@@ -1,3 +1,15 @@
+---
+title: "filament composite contacts column"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament composite contacts column"
+issues: []
+discussions: []
+status: draft
+---
+
 # Colonna Contatti Composite per Filament - Modulo Notify
 
 ## Panoramica
@@ -210,9 +222,9 @@ Questo pattern può essere applicato a:
 - [Best Practices](best_practices.md)
 
 ### Root Documentation
-- [Filament Table Columns Best Practices](../../../docs/filament-table-columns-best-practices.md)
-- [Composite Columns Pattern](../../../docs/composite-columns-pattern.md)
-- [UI/UX Standards](../../../docs/ui-ux-standards.md)
+- [Filament Table Columns Best Practices](../../../../docs/filament-table-columns-best-practices.md)
+- [Composite Columns Pattern](../../../../docs/composite-columns-pattern.md)
+- [UI/UX Standards](../../../../docs/ui-ux-standards.md)
 
 ### Altri Moduli
 - [TechPlanner Contacts Column](../../techplanner/docs/contacts-column-implementation-complete.md)
@@ -226,6 +238,6 @@ Questo pattern può essere applicato a:
 - **Best Practices**: Definite regole architetturali
 
 ---
-
+*Ultimo aggiornamento: [DATE]*  
 *Autore: Sistema Laraxot*  
 *Versione: 1.0*

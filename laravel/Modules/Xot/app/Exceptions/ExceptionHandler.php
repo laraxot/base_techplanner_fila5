@@ -1,14 +1,12 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://dev.to/jackmiras/laravels-exceptions-part-2-custom-exceptions-1367
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Exceptions;
 
-use Exception;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Http\Request;
 use Modules\Xot\Actions\View\GetViewPathAction;
@@ -33,9 +31,7 @@ class ExceptionHandler
 
             $view = 'pub_theme::errors.'.$status_code;
             if (! view()->exists($view)) {
-                throw new Exception(
-                    'view not found: ['.$view.'] view path:'.app(GetViewPathAction::class)->execute($view),
-                );
+                throw new \Exception('view not found: ['.$view.'] view path:'.app(GetViewPathAction::class)->execute($view));
             }
             $view_params = ['exception' => $e];
 

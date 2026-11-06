@@ -16,10 +16,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|Feature newQuery()
  * @method static Builder|Feature query()
  *
- * @property string      $id
- * @property string      $name
- * @property string      $scope
- * @property string      $value
+ * @property string $id
+ * @property string $name
+ * @property string $scope
+ * @property string $value
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
@@ -38,9 +38,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|Feature whereUpdatedBy($value)
  * @method static Builder|Feature whereValue($value)
  *
- * @mixin IdeHelperFeature
- *
  * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\FeatureFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
  */

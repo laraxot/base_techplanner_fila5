@@ -1,13 +1,14 @@
+---
+title: "Best Practices per Proprietà Modelli Eloquent - Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Best Practices per Proprietà Modelli Eloquent - Modulo Xot"
+---
 # Best Practices per Proprietà Modelli Eloquent - Modulo Xot
-
-## ✅ STATO: property_exists() ELIMINATO (Data: [DATE])
-
-**Nel modulo Xot, `property_exists()` è stato completamente eliminato dal codice eseguibile.**
-
-### Correzioni Applicate
-- ✅ `Console/Commands/SearchTextInDbCommand.php` - sostituito con `isset()`
-- ✅ `Filament/Support/ColumnBuilder.php` - sostituito con `isset()` (3 occorrenze)
-- ✅ PHPDoc generati automaticamente per tutti i modelli con `php artisan ide-helper:models`
 
 ## ⚠️ Regola Critica: property_exists() VIETATO
 
@@ -146,11 +147,11 @@ public function getDisplayName(): string
     if (isset($this->full_name) && $this->full_name) {
         return $this->full_name;
     }
-
+    
     if (isset($this->first_name) && $this->first_name) {
         return $this->first_name;
     }
-
+    
     return 'Utente';
 }
 ```
@@ -163,7 +164,7 @@ public function getScore(): float
     if (isset($this->calculated_score) && $this->calculated_score) {
         return $this->calculated_score;
     }
-
+    
     return 0.0;
 }
 ```
@@ -176,7 +177,7 @@ public function getStatus(): string
     if (isset($this->current_status) && $this->current_status) {
         return $this->current_status;
     }
-
+    
     return 'pending';
 }
 ```
@@ -186,7 +187,7 @@ public function getStatus(): string
 Tutti i file devono passare la validazione PHPStan livello 9+:
 
 ```bash
-cd laravel
+cd /var/www/html/ptvx/laravel
 ./vendor/bin/phpstan analyze Modules --level=9
 ```
 
@@ -206,8 +207,8 @@ Prima di ogni commit in qualsiasi modulo, verificare:
 ## Riferimenti
 
 - [Regola Cursor](../../.cursor/rules/eloquent-properties.md)
-- [Memoria Cursor](../../.cursor/memories)
-- [Linee Guida AI](../../.ai/guidelines/core.md)
+- [Memoria Cursor](../../../../.cursor/memories)
+- [Linee Guida AI](../../.ai/guidelines/CORE.md)
 - [Esempio Corretto](../../Notify/app/Notifications/GenericNotification.php)
 
 ## Esempi di Correzione
@@ -243,4 +244,5 @@ Questa regola si applica a tutti i moduli che estendono Xot:
 - [PHP Magic Methods](https://www.php.net/manual/en/language.oop5.magic.php)
 - [PHPStan Eloquent Analysis](https://phpstan.org/user-guide/rule-levels)
 
+*Ultimo aggiornamento: Giugno 2025*
 *Regola applicabile a tutti i moduli*

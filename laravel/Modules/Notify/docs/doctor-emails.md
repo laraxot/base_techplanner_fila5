@@ -1,3 +1,15 @@
+---
+title: "doctor emails"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "doctor emails"
+issues: []
+discussions: []
+status: draft
+---
+
 # Email per i Dottori
 
 ## Introduzione
@@ -168,8 +180,10 @@ try {
 
 ## Collegamenti Correlati
 
-- [Documentazione Root](../../../../docs/readme.md)
-- [Documentazione Modulo Notify](./readme.md)
+- [Documentazione Root](../../../../docs/README.md)
+- [Documentazione Modulo Notify](./README.md)
+- [Documentazione Template Email](./EMAIL_TEMPLATES.md)
+- [Guida all'utilizzo di SpatieEmail](./SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Documentazione Template Email](./email_templates.md)
 - [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)
 - [Documentazione Filament Resources](./filament-resources.md)

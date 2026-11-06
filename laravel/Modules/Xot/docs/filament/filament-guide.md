@@ -1,3 +1,14 @@
+---
+title: "Guida a Filament"
+type: note
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Guida a Filament"
+status: superseded
+superseded_by: ../filament-guide.md
+---
 # Guida a Filament
 
 ## Risorse Utili
@@ -16,4 +27,4 @@
 ### Componenti
 - [Filament Widgets](https://filamentphp.com/docs/3.x/widgets/installation)
 - [Filament Actions](https://filamentphp.com/docs/3.x/actions/installation)
-- [Filament Resources](https://filamentphp.com/docs/3.x/resources/installation)
+- [Filament Resources](https://filamentphp.com/docs/3.x/resources/installation) 

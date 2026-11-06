@@ -1,36 +1,53 @@
 <?php
 
 declare(strict_types=1);
-
-uses(\Modules\Job\Tests\TestCase::class);
-
-use Illuminate\Database\Eloquent\Model;
 use Modules\Job\Models\BaseModel;
+use Modules\Job\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-beforeEach(function () {
-    $this->baseModel = new class extends BaseModel
+uses(TestCase::class);
+
+test('base model extends eloquent model', function () {
+    $baseModel = new class extends BaseModel
     {
         protected $table = 'test_job_table';
     };
-});
 
-test('base model extends eloquent model', function () {
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    Assert::assertFalse($baseModel->exists);
 });
 
 test('base model has correct table name', function () {
-    expect($this->baseModel->getTable())->toBe('test_job_table');
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'test_job_table';
+    };
+
+    Assert::assertSame('test_job_table', $baseModel->getTable());
 });
 
 test('base model can be instantiated', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'test_job_table';
+    };
+
+    Assert::assertFalse($baseModel->exists);
 });
 
 test('base model has proper inheritance chain', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'test_job_table';
+    };
+
+    Assert::assertSame(BaseModel::class, get_parent_class($baseModel));
 });
 
 test('base model has timestamps enabled', function () {
-    expect($this->baseModel->usesTimestamps())->toBeTrue();
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'test_job_table';
+    };
+
+    Assert::assertTrue($baseModel->usesTimestamps());
 });

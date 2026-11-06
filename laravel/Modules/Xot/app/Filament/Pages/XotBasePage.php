@@ -10,17 +10,15 @@ use Filament\Forms\Concerns\InteractsWithForms;
 use Filament\Forms\Contracts\HasForms;
 use Filament\Pages\Page;
 // use Filament\Resources\Pages\Page;
+use Filament\Schemas\Components\Component;
 use Filament\Schemas\Schema;
 use Illuminate\Auth\Access\AuthorizationException;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Str;
-use LogicException;
 use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Filament\Traits\TransTrait;
-use RuntimeException;
-use UnitEnum;
 
 /**
  * Classe base astratta per tutte le pagine Filament *standalone* (non legate a risorse specifiche).
@@ -82,7 +80,7 @@ abstract class XotBasePage extends Page implements HasForms
         $moduleName = Str::between($namespace, 'Modules\\', '\\Filament');
 
         if ($moduleName === '') {
-            throw new LogicException(sprintf('Cannot extract module name from class %s', static::class));
+            throw new \LogicException(sprintf('Cannot extract module name from class %s', static::class));
         }
 
         return $moduleName;
@@ -101,9 +99,9 @@ abstract class XotBasePage extends Page implements HasForms
     /**
      * Ottiene il gruppo di navigazione.
      *
-     * @return UnitEnum|string|null Il gruppo di navigazione
+     * @return \UnitEnum|string|null Il gruppo di navigazione
      */
-    public static function getNavigationGroup(): UnitEnum|string|null
+    public static function getNavigationGroup(): \UnitEnum|string|null
     {
         return static::transFunc(__FUNCTION__);
     }
@@ -116,9 +114,7 @@ abstract class XotBasePage extends Page implements HasForms
      */
     public function getModel(): string
     {
-        /** @phpstan-ignore property.staticAccess */
         if (static::$model !== null) {
-            /** @phpstan-ignore property.staticAccess */
             /** @var class-string<Model> $modelValue */
             $modelValue = static::$model;
 
@@ -138,17 +134,17 @@ abstract class XotBasePage extends Page implements HasForms
             ->toString();
 
         if ($modelName === '') {
-            throw new LogicException(sprintf('Cannot determine model name from class %s', static::class));
+            throw new \LogicException(sprintf('Cannot determine model name from class %s', static::class));
         }
 
         $modelNamespace = 'Modules\\'.$moduleName.'\\Models\\'.$modelName;
 
         // Verifica che la classe del modello esista
-        if (! class_exists($modelNamespace)) {
-            throw new LogicException("Model class {$modelNamespace} does not exist");
+        if (! class_exists($modelNamespace) || ! is_subclass_of($modelNamespace, Model::class)) {
+            throw new \LogicException("Model class {$modelNamespace} does not exist");
         }
 
-        /** @var class-string<Model> $modelNamespace */
+        /* @var class-string<Model> $modelNamespace */
         return $modelNamespace;
     }
 
@@ -156,12 +152,12 @@ abstract class XotBasePage extends Page implements HasForms
      * Configura il form della pagina.
      * Imposta lo schema e il percorso dello stato per il form.
      *
-     * @param  \Filament\Schemas\Schema  $schema  Il form da configurare
-     * @return \Filament\Schemas\Schema Lo schema configurato
+     * @param  Schema  $schema  Il form da configurare
+     * @return Schema Lo schema configurato
      */
     public function schema(Schema $schema): Schema
     {
-        $schema = $schema->components($this->getFormSchema());
+        $schema = $schema->components($this->resolveFormSchemaForXotPage());
 
         $schema->statePath('data');
 
@@ -187,10 +183,30 @@ abstract class XotBasePage extends Page implements HasForms
             }
 
             // Se non troviamo una vista, lanciamo un'eccezione
-            throw new RuntimeException('Nessuna vista trovata per la classe: '.static::class);
+            throw new \RuntimeException('Nessuna vista trovata per la classe: '.static::class);
         }
 
         return $this->view;
+    }
+
+    /**
+     * Resolve concrete page schema without invoking deprecated Filament hook directly.
+     *
+     * @return array<int|string, Component>
+     */
+    private function resolveFormSchemaForXotPage(): array
+    {
+        $method = new \ReflectionMethod($this, 'getFormSchema');
+        $declaringClass = $method->getDeclaringClass()->getName();
+
+        if ($declaringClass === self::class || str_starts_with($declaringClass, 'Filament\\')) {
+            return [];
+        }
+
+        /** @var array<int|string, Component> $schema */
+        $schema = $method->invoke($this);
+
+        return $schema;
     }
 
     /**
@@ -208,25 +224,24 @@ abstract class XotBasePage extends Page implements HasForms
      * Ottiene l'utente autenticato.
      * Verifica che l'utente sia un'istanza di Model per permettere aggiornamenti.
      *
+     *
      * @return Authenticatable&Model L'utente autenticato
      *
-     * @throws RuntimeException Se l'utente non è autenticato o non è un'istanza di Model
+     * @throws \RuntimeException Se l'utente non è autenticato o non è un'istanza di Model
      */
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();
 
         if ($user === null) {
-            throw new RuntimeException('Nessun utente autenticato trovato.');
+            throw new \RuntimeException('Nessun utente autenticato trovato.');
         }
 
-        if (! ($user instanceof Model)) {
-            throw new RuntimeException(
-                'L\'utente autenticato deve essere un modello Eloquent per permettere aggiornamenti.',
-            );
+        if (! $user instanceof Model) {
+            throw new \RuntimeException('L\'utente autenticato deve essere un modello Eloquent per permettere aggiornamenti.');
         }
 
-        /** @var Authenticatable&Model $user */
+        /* @var Authenticatable&Model $user */
         return $user;
     }
 
@@ -252,21 +267,17 @@ abstract class XotBasePage extends Page implements HasForms
     {
         $user = $this->getUser();
 
-        // @phpstan-ignore-next-line
-        if (! method_exists($user, 'hasPermissionTo')) {
-            throw new RuntimeException('Il modello utente deve implementare il metodo hasPermissionTo');
-        }
-
-        // Use method_exists to safely call hasPermissionTo
+        // ponytail: $user is Authenticatable&Model, hasPermissionTo is always available via Spatie traits
         return $user->hasPermissionTo($permission);
     }
 
     /**
      * Risolve il percorso della vista.
      *
+     *
      * @return string Il percorso della vista
      *
-     * @throws RuntimeException Se la vista non esiste
+     * @throws \RuntimeException Se la vista non esiste
      */
     protected function resolveViewPath(): string
     {
@@ -275,28 +286,29 @@ abstract class XotBasePage extends Page implements HasForms
             return $view;
         }
 
-        throw new RuntimeException("View [{$view}] not found for page: ".static::class);
+        throw new \RuntimeException("View [{$view}] not found for page: ".static::class);
     }
 
     /**
      * Ottiene una query builder per il modello associato alla pagina.
      *
+     *
      * @return Builder<Model>
      *
-     * @throws LogicException Se il modello non è definito
+     * @throws \LogicException Se il modello non è definito
      */
     protected function getQuery(): Builder
     {
         $modelClass = $this->getModel();
 
         if (! class_exists($modelClass)) {
-            throw new LogicException("Model class {$modelClass} does not exist");
+            throw new \LogicException("Model class {$modelClass} does not exist");
         }
 
         /** @var class-string<Model> $modelClass */
         $instance = new $modelClass;
-        if (! ($instance instanceof Model)) {
-            throw new LogicException("Class {$modelClass} must extend Eloquent Model");
+        if (! $instance instanceof Model) {
+            throw new \LogicException("Class {$modelClass} must extend Eloquent Model");
         }
 
         return $modelClass::query();
@@ -313,11 +325,11 @@ abstract class XotBasePage extends Page implements HasForms
         // Per ora lasciamo vuoto, può essere implementato nelle classi figlie
     }
 
+    /** @return list<Action> */
     protected function getFormActions(): array
     {
         return [
             Action::make('save')
-                ->label(__('filament-panels::resources/edit-record.form.actions.save.label'))
                 ->submit('save'),
         ];
     }

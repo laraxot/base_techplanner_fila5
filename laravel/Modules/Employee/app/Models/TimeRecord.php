@@ -8,8 +8,8 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Modules\Employee\Database\Factories\TimeRecordFactory;
-use Modules\TechPlanner\Models\Profile;
 use Modules\User\Models\User;
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Class TimeRecord.
@@ -32,21 +32,21 @@ use Modules\User\Models\User;
  * @property-read User $user
  * @property-read User|null $createdBy
  * @property-read User|null $updatedBy
- * @property-read Profile|null $creator
+ * @property-read ProfileContract|null $creator
  * @property-read string $formatted_date
  * @property-read string $formatted_time
  * @property-read string $formatted_timestamp
- * @property-read Profile|null $updater
+ * @property-read ProfileContract|null $updater
  *
  * @method static Builder<static>|TimeRecord forDate(\Carbon\Carbon $date)
- * @method static Builder<static>|TimeRecord forUser(int $userId)
+ * @method static Builder<static>|TimeRecord forUser(int|string $userId)
  * @method static Builder<static>|TimeRecord newModelQuery()
  * @method static Builder<static>|TimeRecord newQuery()
  * @method static Builder<static>|TimeRecord ofType(string $type)
  * @method static Builder<static>|TimeRecord query()
  * @method static Builder<static>|TimeRecord valid()
  *
- * @property-read Profile|null $deleter
+ * @property-read ProfileContract|null $deleter
  *
  * @method static TimeRecordFactory factory($count = null, $state = [])
  *
@@ -91,6 +91,8 @@ class TimeRecord extends BaseModel
 
     /**
      * Get the user that owns the timbratura.
+     *
+     * @return BelongsTo<User, $this>
      */
     public function user(): BelongsTo
     {
@@ -99,6 +101,8 @@ class TimeRecord extends BaseModel
 
     /**
      * Get the user that created the timbratura.
+     *
+     * @return BelongsTo<User, $this>
      */
     public function createdBy(): BelongsTo
     {
@@ -107,6 +111,8 @@ class TimeRecord extends BaseModel
 
     /**
      * Get the user that updated the timbratura.
+     *
+     * @return BelongsTo<User, $this>
      */
     public function updatedBy(): BelongsTo
     {
@@ -119,7 +125,7 @@ class TimeRecord extends BaseModel
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeForUser($query, int $userId)
+    public function scopeForUser(Builder $query, int|string $userId)
     {
         return $query->where('user_id', $userId);
     }
@@ -130,7 +136,7 @@ class TimeRecord extends BaseModel
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeOfType($query, string $type)
+    public function scopeOfType(Builder $query, string $type)
     {
         return $query->where('type', $type);
     }
@@ -141,7 +147,7 @@ class TimeRecord extends BaseModel
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeForDate($query, Carbon $date)
+    public function scopeForDate(Builder $query, Carbon $date)
     {
         return $query->whereDate('timestamp', $date);
     }
@@ -152,7 +158,7 @@ class TimeRecord extends BaseModel
      * @param  Builder<static>  $query
      * @return Builder<static>
      */
-    public function scopeValid($query)
+    public function scopeValid(Builder $query)
     {
         return $query->where('status', 'valid');
     }

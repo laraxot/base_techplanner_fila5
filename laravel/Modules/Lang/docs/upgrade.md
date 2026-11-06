@@ -1,8 +1,16 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "upgrade"
+issues: []
+discussions: []
 title: Aggiornamenti
 description: Aggiornamenti
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 # Aggiornamenti {#aggiornamenti}
@@ -31,11 +39,24 @@ php artisan module_lang:show-versions
 
 ```
 ## Collegamenti tra versioni di upgrade.md
-* [upgrade.md](../../../lang/docs/upgrade.md)
-* [upgrade.md](../../../cms/docs/upgrade.md)
+* [upgrade.md](../../../Lang/docs/upgrade.md)
+* [upgrade.md](../../../Cms/docs/upgrade.md)
+* [upgrade.md](../../../Lang/docs/upgrade.md)
+* [upgrade.md](../../../Cms/docs/upgrade.md)
+* [upgrade.md](../../../Lang/docs/upgrade.md)
+* [upgrade.md](../../../Cms/docs/upgrade.md)
+* [upgrade.md](../../Cms/docs/upgrade.md)
+* [upgrade.md](../../../Lang/docs/upgrade.md)
+* [upgrade.md](../../Cms/docs/upgrade.md)
+* [upgrade.md](../../../Lang/docs/upgrade.md)
+* [upgrade.md](../../Cms/docs/upgrade.md)
 
 ### Versione Incoming
 
 ```
 
+---
+---
+---
+---
 ---

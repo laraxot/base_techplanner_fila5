@@ -2,35 +2,49 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Notify\Tests\TestCase::class);
+namespace Modules\Notify\Tests\Unit\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Models\BaseModel;
+use Modules\Notify\Tests\TestCase;
+use Modules\Xot\Models\XotBaseModel;
+use PHPUnit\Framework\Assert;
 
-beforeEach(function () {
-    $this->baseModel = new class extends BaseModel
-    {
-        protected $table = 'test_notify_table';
-    };
-});
-
+uses(TestCase::class);
 test('base model extends eloquent model', function () {
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    $parent = (new \ReflectionClass(BaseModel::class))->getParentClass();
+    Assert::assertNotFalse($parent);
+    Assert::assertSame(XotBaseModel::class, $parent->getName());
 });
 
 test('base model has correct table name', function () {
-    expect($this->baseModel->getTable())->toBe('test_notify_table');
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'test_notify_table';
+    };
+
+    Assert::assertSame('test_notify_table', $baseModel->getTable());
 });
 
 test('base model can be instantiated', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'test_notify_table';
+    };
+
+    Assert::assertFalse($baseModel->exists);
 });
 
 test('base model has proper inheritance chain', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    $parent = (new \ReflectionClass(BaseModel::class))->getParentClass();
+    Assert::assertNotFalse($parent);
+    Assert::assertSame(XotBaseModel::class, $parent->getName());
 });
 
 test('base model has timestamps enabled', function () {
-    expect($this->baseModel->usesTimestamps())->toBeTrue();
+    $baseModel = new class extends BaseModel
+    {
+        protected $table = 'test_notify_table';
+    };
+
+    Assert::assertTrue($baseModel->usesTimestamps());
 });

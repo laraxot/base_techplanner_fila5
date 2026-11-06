@@ -1,3 +1,11 @@
+---
+title: "Convenzione Naming File Test - Activity Module"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, testing]
+qmd: "convenzione naming file test - activity module activity"
+---
 # Convenzione Naming File Test - Activity Module
 
 **Modulo:** Activity
@@ -46,7 +54,7 @@ done
 
 ## 📚 Riferimenti
 
-- [Regola Critica Progetto](../../../../docs/regole-critiche/test-naming-pascalcase.md)
+- [Regola Critica Progetto](../../../../../docs/regole-critiche/test-naming-pascalcase.md)
 - [PHPStan Best Practices](../phpstan/best-practices.md)
 
 ---

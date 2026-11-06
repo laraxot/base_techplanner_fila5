@@ -1,3 +1,15 @@
+---
+title: "sms provider configuration best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms provider configuration best practices"
+issues: []
+discussions: []
+status: draft
+---
+
 # Best Practices per la Configurazione dei Provider SMS
 
 ## Struttura Corretta della Configurazione
@@ -73,7 +85,7 @@ Per parametri critici come `sender`, non utilizzare valori predefiniti:
 
 ```php
 // ❌ ERRATO
-'sender' => env('NETFUN_SENDER', 'SaluteOra'),
+'sender' => env('NETFUN_SENDER', 'Quaeris'),
 
 // ✅ CORRETTO
 'sender' => env('NETFUN_SENDER'),
@@ -104,13 +116,17 @@ $token = config('services.netfun.token');
 | Provider | Endpoint Verificato | Metodo Autenticazione |
 |----------|---------------------|------------------------|
 | Netfun | `https://v2.smsviainternet.it/api/rest/v1/sms-batch.json` | username/password |
-| Twilio | `https://api.twilio.com/[DATE]/Accounts/{account_sid}/Messages.json` | account_sid/auth_token |
+| Twilio | `https://api.twilio.com/2010-04-01/Accounts/{account_sid}/Messages.json` | account_sid/auth_token |
 | Vonage | `https://rest.nexmo.com/sms/json` | api_key/api_secret |
 | SMSHosting | `https://api.smshosting.it/rest/api/sms/send` | token |
 | Telcob | `https://api.telcob.com/sms/v1/send` | api_key |
 
 ## Documentazione Correlata
 
+- [SMS Provider Architecture](./SMS_PROVIDER_ARCHITECTURE.md)
+- [SMS Implementation](./SMS_IMPLEMENTATION.md)
+- [SMS Best Practices](./SMS_BEST_PRACTICES.md)
+- [Netfun Authentication Methods](./NETFUN_AUTHENTICATION_METHODS.md)
 - [SMS Provider Architecture](./sms_provider_architecture.md)
 - [SMS Implementation](./sms_implementation.md)
 - [SMS Best Practices](./sms_best_practices.md)

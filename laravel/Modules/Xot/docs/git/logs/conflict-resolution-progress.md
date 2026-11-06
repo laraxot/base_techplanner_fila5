@@ -1,3 +1,13 @@
+---
+title: "Stato Avanzamento Risoluzione Conflitti Git"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-18
+module: Xot
+tags: [xot, git]
+qmd: "Stato Avanzamento Risoluzione Conflitti Git"
+---
 # Stato Avanzamento Risoluzione Conflitti Git
 
 ## Panoramica
@@ -89,9 +99,10 @@ Questo documento tiene traccia dello stato di avanzamento della risoluzione dei 
 - **File in corso**: 0 (0%)
 - **File da risolvere**: ~294 (98%)
 
+Ultimo aggiornamento: Gennaio 2025
 
 ## Prossimi Passaggi
 
 1. Continuare la risoluzione dei conflitti nel modulo Xot, in particolare nei contratti e interfacce
 2. Procedere con la documentazione aggiornata per ogni file risolto
-3. Eseguire test per verificare il funzionamento corretto delle modifiche
+3. Eseguire test per verificare il funzionamento corretto delle modifiche 

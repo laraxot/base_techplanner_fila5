@@ -1,13 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     public function up(): void
     {
         $xot = XotData::make();
@@ -25,10 +25,7 @@ return new class extends XotBaseMigration {
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
             $this->updateUser($table);
-            $this->updateTimestamps(
-                table: $table,
-                hasSoftDeletes: true,
-            );
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
         });
     }
 };

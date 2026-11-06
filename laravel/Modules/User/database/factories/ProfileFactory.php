@@ -12,11 +12,6 @@ use Modules\User\Models\Profile;
  */
 class ProfileFactory extends Factory
 {
-    /**
-     * The name of the factory's corresponding model.
-     *
-     * @var class-string<Profile>
-     */
     protected $model = Profile::class;
 
     /**
@@ -24,20 +19,21 @@ class ProfileFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
-            'user_id' => null,
-            'first_name' => fake()->firstName(),
-            'last_name' => fake()->lastName(),
-            'email' => fake()->unique()->safeEmail(),
-            'phone' => fake()->phoneNumber(),
-            'bio' => fake()->sentence(),
+            'first_name' => $this->faker->firstName(),
+            'last_name' => $this->faker->lastName(),
+            'user_name' => $this->faker->unique()->userName(),
+            'email' => $this->faker->unique()->safeEmail(),
+            'bio' => $this->faker->text(200),
+            'avatar' => '/avatars/'.$this->faker->word(),
+            'phone' => $this->faker->phoneNumber(),
+            'birth_date' => $this->faker->date(),
             'status' => 'active',
-            'locale' => 'it',
-            'timezone' => 'Europe/Rome',
-            'preferences' => [],
-            'extra' => [],
         ];
     }
 }

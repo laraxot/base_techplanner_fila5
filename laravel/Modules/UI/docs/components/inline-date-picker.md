@@ -1,3 +1,15 @@
+---
+title: "inline date picker"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "inline date picker"
+issues: []
+discussions: []
+status: draft
+---
+
 # InlineDatePicker Component
 
 ## Overview
@@ -342,7 +354,7 @@ public function setCurrentViewMonth(string $monthString): void
 ### Versione 3.0 - AI-Powered Temporal Intelligence
 - **Smart Suggestions**: Suggerimenti AI per date ottimali
 - **Pattern Recognition**: Riconoscimento pattern utente
-- **Predictive Availability**: Previsione disponibilità
+- **<nome progetto>ive Availability**: Previsione disponibilità
 ### Versione 4.0 - Universal Temporal Interface
 - **Multiple Calendars**: Supporto calendari diversi (Gregoriano, Lunare, etc.)
 - **Timezone Handling**: Gestione fusi orari avanzata
@@ -394,6 +406,14 @@ public function register(): void
         Js::make('inline-date-picker', __DIR__.'/../resources/js/inline-date-picker.js'),
     ], 'ui');
 ---
+title: "inline date picker"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "inline date picker"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: Dicembre 2024
 **Versione**: 2.0 con Navigazione Temporale Avanzata
 **Compatibilità**: Laraxot , Filament 4.x, Alpine.js 3.x

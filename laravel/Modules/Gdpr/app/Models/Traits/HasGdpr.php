@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Cache;
 use Modules\Gdpr\Enums\ConsentType;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
+use Stringable;
 
 /**
  * Trait HasGdpr.
@@ -19,6 +20,8 @@ use Modules\Gdpr\Models\Treatment;
  *
  * @property Collection<int, Consent> $consents
  * @property Collection<int, Consent> $activeConsents
+ *
+ * @see \Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest
  */
 trait HasGdpr
 {
@@ -61,7 +64,7 @@ trait HasGdpr
     public function hasGivenConsent(ConsentType|string $type): bool
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
-        $cacheKey = 'user_'.(string) $this->getKey().'_consent_'.$type;
+        $cacheKey = $this->consentCacheKey($type);
 
         if (Cache::has($cacheKey)) {
             return (bool) Cache::get($cacheKey);
@@ -76,7 +79,7 @@ trait HasGdpr
     public function hasGivenConsentWithoutCache(ConsentType|string $type): bool
     {
         $type = $type instanceof ConsentType ? $type->value : $type;
-        $cacheKey = 'user_'.(string) $this->getKey().'_consent_'.$type;
+        $cacheKey = $this->consentCacheKey($type);
 
         $hasConsent = $this->activeConsents()->where('type', $type)->exists();
 
@@ -88,7 +91,8 @@ trait HasGdpr
     /**
      * Give consent for a specific type.
      *
-     * @param array<string, mixed> $metadata
+     * @param  array<string, mixed>  $metadata
+     * @param  array<string, mixed>  $metadata
      */
     public function giveConsent(ConsentType|string $type, array $metadata = []): Consent
     {
@@ -134,14 +138,19 @@ trait HasGdpr
     /**
      * Get all required consents that the user hasn't given yet.
      *
-     * @return array<string>
+     * @return list<string>
      */
     public function getMissingRequiredConsents(): array
     {
         $givenConsents = $this->activeConsents()->pluck('type')->toArray();
 
-        /* @var array<string> */
-        return array_diff(ConsentType::getRequiredConsentTypes(), $givenConsents);
+        /** @var list<string> $consentTypes */
+        $consentTypes = ConsentType::getRequiredConsentTypes();
+
+        /** @var array<string> $given */
+        $given = $givenConsents;
+
+        return array_values(array_diff($consentTypes, $given));
     }
 
     /**
@@ -157,7 +166,17 @@ trait HasGdpr
      */
     protected function clearConsentCache(string $type): void
     {
-        $cacheKey = 'user_'.(string) $this->getKey().'_consent_'.$type;
-        Cache::forget($cacheKey);
+        Cache::forget($this->consentCacheKey($type));
+    }
+
+    private function consentCacheKey(string $type): string
+    {
+        $key = $this->getKey();
+
+        if (! is_scalar($key) && ! $key instanceof Stringable) {
+            throw new \LogicException('The model key must be scalar or stringable.');
+        }
+
+        return 'user_'.(string) $key.'_consent_'.$type;
     }
 }

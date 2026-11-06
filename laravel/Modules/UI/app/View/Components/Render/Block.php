@@ -9,6 +9,8 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\View\Component;
 use Illuminate\View\View;
+use Modules\UI\Actions\Block\ResolveLocalizedBlockDataAction;
+use UnexpectedValueException;
 use Webmozart\Assert\Assert;
 
 /**
@@ -18,13 +20,16 @@ class Block extends Component
 {
     public ?string $view = null;
 
+    /**
+     * @param  array<string, mixed>  $block
+     */
     public function __construct(
         public array $block,
         public ?Model $model = null,
         public string $tpl = '',
     ) {
         $view = Arr::get($this->block, 'data.view', null);
-        if (null === $view) {
+        if ($view === null) {
             $view = 'ui::empty';
         }
         Assert::string($view, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
@@ -40,22 +45,39 @@ class Block extends Component
         $view = $this->view;
         if (! view()->exists(is_string($view) ? $view : ((string) $view))) {
             $message = 'view not exists ['.$view.'] ! <pre>'.print_r($this->block, true).'</pre>';
-            $view_params = [
+            $viewParams = [
                 'title' => 'deprecated',
                 'message' => $message,
             ];
 
-            return view('ui::alert', $view_params);
+            return view('ui::alert', $viewParams);
         }
-        $view_params_raw = $this->block['data'] ?? [];
-        $view_params = is_array($view_params_raw) ? $view_params_raw : [];
-        /** @var array<string, mixed> $view_params */
-        $view_params = (array) $view_params;
+        $rawData = $this->block['data'] ?? [];
+        $viewParams = \is_array($rawData) ? $this->normalizeViewData($rawData) : [];
+        $viewParams = app(ResolveLocalizedBlockDataAction::class)->execute($viewParams);
+        $viewParams = $this->normalizeViewData($viewParams);
         Assert::string($view, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-        if (! view()->exists($view)) {
-            throw new \Exception('view not found ['.$view.']');
+
+        /** @var view-string $view */
+        return view($view, $viewParams);
+    }
+
+    /**
+     * @param  array<array-key, mixed>  $data
+     * @return array<string, mixed>
+     */
+    private function normalizeViewData(array $data): array
+    {
+        $viewData = [];
+
+        foreach ($data as $key => $value) {
+            if (! is_string($key)) {
+                throw new UnexpectedValueException('Block view data must have string keys.');
+            }
+
+            $viewData[$key] = $value;
         }
 
-        return view($view, $view_params);
+        return $viewData;
     }
 }

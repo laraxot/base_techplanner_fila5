@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
-use Exception;
 use Filament\Navigation\NavigationItem;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
 use Spatie\QueueableAction\QueueableAction;
-use Throwable;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
@@ -36,15 +36,7 @@ class GetModulesNavigationItems
     {
         $navs = [];
 
-        $modules = TenantService::allModules();
-        // TenantService::allModules() restituisce sempre array
-        // Pre-load user roles to avoid N+1 queries
-        /** @var Authenticatable|null $user */
-        $user = Auth::user();
-
-        /** @var array<int, string> $userRoles */
-        $userRoles = [];
-        // Se serve re-introdurre un preload ruoli, farlo solo se il metodo è disponibile e tipizzato nel modello.
+        $modules = app(GetTenantModulesAction::class)->execute();
 
         foreach ($modules as $module) {
             Assert::string($module, 'Il nome del modulo deve essere una stringa');
@@ -55,7 +47,7 @@ class GetModulesNavigationItems
             // Tolleranza: durante comandi CLI alcuni moduli possono non avere ancora struttura completa
             try {
                 $configPath = app(GetModulePathByGeneratorAction::class)->execute($module, 'config');
-            } catch (Throwable $e) {
+            } catch (\Throwable $e) {
                 // Skip modulo non pronto/senza generator path config
                 continue;
             }
@@ -71,7 +63,7 @@ class GetModulesNavigationItems
                 /** @var array<string, mixed> $config */
                 $config = File::getRequire($configFilePath);
                 Assert::isArray($config, 'Il file di configurazione deve restituire un array');
-            } catch (Exception $e) {
+            } catch (\Exception $e) {
                 continue;
             }
 
@@ -86,24 +78,7 @@ class GetModulesNavigationItems
             Assert::integerish($navigation_sort, 'navigation_sort deve essere un intero');
             $navigation_sort = (int) $navigation_sort;
 
-            // Check role using pre-loaded roles instead of hasRole() method
-            /*
-             $hasRole = in_array($role, $userRoles, true);
-
-             // Only create NavigationItem if user has the role (memory optimization)
-             if ($hasRole) {
-                 $nav = NavigationItem::make($module)
-                     ->url('/'.$module_low.'/admin')
-                     ->icon($icon)
-                     ->group('Modules')
-                     ->sort($navigation_sort)
-                     ->visible(true); // Already checked above
-
-                 $navs[] = $nav;
-             }
-             */
-
-            // Creiamo l'elemento di navigazione
+            // Il ruolo viene verificato lazy in visible(), per utente corrente
             $nav = NavigationItem::make($module)
                 ->url('/'.$module_low.'/admin')
                 ->icon($icon)
@@ -123,7 +98,6 @@ class GetModulesNavigationItems
                         return false;
                     }
 
-                    /** @phpstan-ignore-next-line */
                     return (bool) $user->hasRole($role);
                 });
 
@@ -141,8 +115,7 @@ class GetModulesNavigationItems
      */
     public function getCachedModuleConfigs(): array
     {
-        $modules = TenantService::allModules();
-        // TenantService::allModules() restituisce sempre array
+        $modules = app(GetTenantModulesAction::class)->execute();
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 
@@ -169,15 +142,15 @@ class GetModulesNavigationItems
                     /** @var array<string, mixed> $config */
                     $config = File::getRequire($configFilePath);
                     Assert::isArray($config);
-                } catch (Exception $e) {
+                } catch (\Exception $e) {
                     continue;
                 }
                 $icon = $config['icon'] ?? 'heroicon-o-cube';
-                $navigation_sort = (int) ($config['navigation_sort'] ?? 1);
+                $navigation_sort = SafeIntCastAction::cast($config['navigation_sort'] ?? 1);
                 $out[] = [
                     'module' => $module,
                     'module_low' => $module_low,
-                    'icon' => (string) $icon,
+                    'icon' => SafeStringCastAction::cast($icon),
                     'sort' => $navigation_sort,
                 ];
             }
@@ -198,7 +171,7 @@ class GetModulesNavigationItems
             Assert::integer($item['sort']);
         }
 
-        /** @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
+        /* @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
         return $result;
     }
 }

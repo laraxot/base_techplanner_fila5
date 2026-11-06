@@ -22,7 +22,7 @@ class ExportXlsStreamByLazyCollection
     /**
      * Esporta una LazyCollection in un file CSV streamed.
      *
-     * @param  LazyCollection  $data  I dati da esportare
+     * @param  LazyCollection<int, mixed>  $data  I dati da esportare
      * @param  string  $filename  Nome del file CSV
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @param  array<string>|null  $_fields  Campi da includere nell'export (attualmente non utilizzato)
@@ -47,7 +47,7 @@ class ExportXlsStreamByLazyCollection
 
                 fputcsv($file, $headStrings);
 
-                foreach ($data as $key => $value) {
+                foreach ($data as $value) {
                     // Gestiamo sia oggetti che possono essere convertiti ad array che array diretti
                     if (is_object($value) && method_exists($value, 'toArray')) {
                         /** @var array<string|int|float|bool|null> $rowData */
@@ -60,7 +60,7 @@ class ExportXlsStreamByLazyCollection
                         continue;
                     }
                     // Convertiamo tutti i valori in stringhe o null
-                    $safeRowData = array_map(function ($item) {
+                    $safeRowData = array_map(function (string|int|float|bool|null $item) {
                         if ($item === null) {
                             return '';
                         }
@@ -87,7 +87,7 @@ class ExportXlsStreamByLazyCollection
     /**
      * Ottiene le intestazioni per l'export.
      *
-     * @param  LazyCollection  $data  I dati da cui estrarre le intestazioni
+     * @param  LazyCollection<int, mixed>  $data  I dati da cui estrarre le intestazioni
      * @param  string|null  $transKey  Chiave di traduzione per le intestazioni
      * @return array<string>
      */
@@ -125,7 +125,9 @@ class ExportXlsStreamByLazyCollection
             });
         }
 
-        /** @var array<string> */
-        return $headings->map(strval(...))->toArray();
+        /** @var array<string> $headers */
+        $headers = array_values($headings->map(strval(...))->toArray());
+
+        return $headers;
     }
 }

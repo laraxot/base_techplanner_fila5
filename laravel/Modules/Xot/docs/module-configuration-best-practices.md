@@ -1,3 +1,11 @@
+---
+title: "Module Configuration Best Practices"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "module configuration best practices xot"
+---
 # Module Configuration Best Practices
 
 ## 📋 Overview
@@ -241,6 +249,6 @@ Before committing a config file, verify:
 
 ---
 
-*
+*Last Updated: 2025-08-27*
 *Configuration Standards Version: 2.0*
 

@@ -7,10 +7,19 @@ namespace Modules\Notify\Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Notify\Models\NotificationType;
 
+/**
+ * @extends Factory<NotificationType>
+ */
 class NotificationTypeFactory extends Factory
 {
     protected $model = NotificationType::class;
+    /**
+     * @return array<string, mixed>
+     */
 
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
@@ -19,7 +28,6 @@ class NotificationTypeFactory extends Factory
             'description' => $this->faker->sentence(),
             'is_active' => $this->faker->boolean(90),
             'created_at' => $this->faker->dateTimeBetween('-1 year'),
-            'updated_at' => $this->faker->dateTimeBetween('-1 year'),
-        ];
+            'updated_at' => $this->faker->dateTimeBetween('-1 year')];
     }
 }

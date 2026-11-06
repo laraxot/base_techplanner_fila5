@@ -8,6 +8,7 @@ use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use Illuminate\Support\Facades\Log;
+use Modules\Notify\Contracts\TelegramProviderActionInterface;
 use Modules\Notify\Datas\TelegramData;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -15,7 +16,7 @@ use Spatie\QueueableAction\QueueableAction;
 use function Safe\json_decode;
 use function Safe\json_encode;
 
-final class SendNutgramTelegramAction
+final class SendNutgramTelegramAction implements TelegramProviderActionInterface
 {
     use QueueableAction;
 
@@ -34,6 +35,8 @@ final class SendNutgramTelegramAction
 
     /**
      * Create a new action instance.
+     *
+     * @return void
      */
     public function __construct()
     {
@@ -65,19 +68,9 @@ final class SendNutgramTelegramAction
      */
     public function execute(TelegramData $telegramData): array
     {
-        // Log di debug se abilitato
-        if ($this->debug) {
-            Log::debug('Invio Telegram Nutgram', [
-                'chat_id' => $telegramData->chatId,
-                'message_length' => strlen($telegramData->text),
-                'type' => $telegramData->type,
-            ]);
-        }
-
         $client = new Client([
             'timeout' => $this->timeout,
-            'base_uri' => $this->apiUrl,
-        ]);
+            'base_uri' => $this->apiUrl]);
 
         // Determina l'endpoint in base al tipo di messaggio
         $endpoint = match ($telegramData->type) {
@@ -92,8 +85,7 @@ final class SendNutgramTelegramAction
         // Prepara il payload in base al tipo di messaggio
         $payload = [
             'chat_id' => $telegramData->chatId,
-            'disable_notification' => $telegramData->disableNotification,
-        ];
+            'disable_notification' => $telegramData->disableNotification];
 
         if ($telegramData->replyToMessageId !== null) {
             $payload['reply_to_message_id'] = $telegramData->replyToMessageId;
@@ -120,8 +112,7 @@ final class SendNutgramTelegramAction
 
         try {
             $response = $client->post($endpoint, [
-                'json' => $payload,
-            ]);
+                'json' => $payload]);
 
             $statusCode = $response->getStatusCode();
             $responseContent = $response->getBody()->getContents();
@@ -133,10 +124,9 @@ final class SendNutgramTelegramAction
             $this->vars['status_txt'] = $responseContent;
             $this->vars['response_data'] = $responseData;
 
-            Log::info('Telegram Nutgram inviato con successo', [
+            Log::debug('Telegram Nutgram inviato con successo', [
                 'chat_id' => $telegramData->chatId,
-                'response_code' => $statusCode,
-            ]);
+                'response_code' => $statusCode]);
 
             /** @var array<string, mixed> $result */
             $result = $responseData['result'] ?? [];
@@ -147,8 +137,7 @@ final class SendNutgramTelegramAction
                 'success' => ($responseData['ok'] ?? false) === true,
                 'message_id' => $messageId,
                 'response' => $responseData,
-                'vars' => $this->vars,
-            ];
+                'vars' => $this->vars];
         } catch (ClientException $e) {
             $response = $e->getResponse();
             $statusCode = $response->getStatusCode();
@@ -163,16 +152,14 @@ final class SendNutgramTelegramAction
             Log::warning('Errore invio Telegram Nutgram', [
                 'chat_id' => $telegramData->chatId,
                 'status' => $statusCode,
-                'response' => $responseBody,
-            ]);
+                'response' => $responseBody]);
 
             return [
                 'success' => false,
                 'error' => $responseBody['description'] ?? 'Errore sconosciuto',
                 'error_code' => $responseBody['error_code'] ?? null,
                 'status_code' => $statusCode,
-                'vars' => $this->vars,
-            ];
+                'vars' => $this->vars];
         }
     }
 }

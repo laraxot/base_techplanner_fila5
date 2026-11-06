@@ -1,14 +1,12 @@
 <?php
 
+declare(strict_types=1);
 /*
  * @see https://github.com/masterix21/laravel-html2pdf/blob/master/src/PDF.php
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Datas;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
@@ -45,6 +43,7 @@ class PdfData extends Data
 
     public string $encoding = 'UTF-8';
 
+    /** @var array{0: int, 1: int, 2: int, 3: int} */
     public array $margins = [5, 5, 5, 8];
 
     public bool $pdfa = false;
@@ -154,7 +153,7 @@ class PdfData extends Data
     public function view(string $view, array $params = []): self
     {
         if (! view()->exists($view)) {
-            throw new Exception('View '.$view.' not found');
+            throw new \Exception('View '.$view.' not found');
         }
         $out = view($view, $params);
         $this->html = $out->render();

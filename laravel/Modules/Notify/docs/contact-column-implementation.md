@@ -1,9 +1,21 @@
+---
+title: "contact column implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contact column implementation"
+issues: []
+discussions: []
+status: draft
+---
+
 # ContactColumn - Implementazione DRY/KISS Centralizzata
 
 ## 🎯 Obiettivo
 Implementare `ContactColumn.php` come colonna Filament riutilizzabile che utilizza `ContactTypeEnum` per il rendering centralizzato dei contatti seguendo i principi DRY e KISS.
 
-## 🚨 **PROBLEMA CRITICO IDENTIFICATO** ([DATE])
+## 🚨 **PROBLEMA CRITICO IDENTIFICATO** (2025-08-01)
 **ICONE NON VISIBILI**: La sintassi `@svg()` nel template Blade non è compatibile con Filament 3.x
 - 📋 **Analisi Completa**: [contact-column-icon-issue-analysis.md](./contact-column-icon-issue-analysis.md)
 - 🛠️ **Soluzione**: Sostituire `@svg()` con `<x-filament::icon>`
@@ -49,6 +61,8 @@ Implementare `ContactColumn.php` come colonna Filament riutilizzabile che utiliz
 ```
 
 ### Campi Aggiuntivi
+```
+
 ```php
 // Attributi dinamici
 'attribute_1' to 'attribute_14',  // Attributi personalizzabili
@@ -358,3 +372,4 @@ public function table(Table $table): Table
 4. **Documentare** l'utilizzo
 5. **Aggiornare** le regole e memorie
 
+*Ultimo aggiornamento: 2025-01-06* 

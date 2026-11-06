@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions;
 
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\Support\Str;
-use InvalidArgumentException;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -26,9 +26,9 @@ class GetViewByClassAction
     public function execute(string $class, array $params = [], ?string $viewName = null): View
     {
         $viewName ??= $this->getViewNameFromClass($class);
-
         /** @var view-string $viewName */
-        return view($viewName, $params);
+
+        return ViewFacade::make($viewName, $params);
     }
 
     /**
@@ -44,7 +44,7 @@ class GetViewByClassAction
 
         // Verifica che la classe sia nel namespace Modules
         if ($arr[0] !== 'Modules') {
-            throw new InvalidArgumentException('Class must be in Modules namespace');
+            throw new \InvalidArgumentException('Class must be in Modules namespace');
         }
 
         $module = $arr[1];

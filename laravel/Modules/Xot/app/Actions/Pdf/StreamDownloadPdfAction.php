@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
-use Exception;
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Symfony\Component\HttpFoundation\StreamedResponse;
@@ -32,7 +31,7 @@ class StreamDownloadPdfAction
     ): StreamedResponse {
         if ($html === null && $view !== null) {
             if (! view()->exists($view)) {
-                throw new Exception('View '.$view.' not found');
+                throw new \Exception('View '.$view.' not found');
             }
             /** @var array<string, mixed> $viewData */
             $viewData = is_array($data) ? $data : [];

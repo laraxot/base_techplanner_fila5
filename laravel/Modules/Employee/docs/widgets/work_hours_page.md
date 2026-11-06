@@ -1,3 +1,9 @@
+---
+title: "Employee - WORK_HOURS_PAGE"
+module: Employee
+bmad: true
+status: active
+---
 ## WorkHoursPage – design and implementation guide
 
 This guide documents how to implement the WorkHoursPage for the Employee module, replicating the target UI while adhering to Laraxot and PHPStan L10.
@@ -18,6 +24,7 @@ This guide documents how to implement the WorkHoursPage for the Employee module,
 `BuildTimeEntriesForRangeAction::execute(int $userId, Carbon $start, Carbon $end): array` returns
 ```
 {
+  byDate: { [date: string]: Array<{ start: string, end: string|null, status: string }> },
   summary: { workedMinutes: int, addedMinutes: int, reducedMinutes: int, contractMinutes: int },
   contracts: { [date: string]: int }
 }
@@ -46,5 +53,3 @@ This guide documents how to implement the WorkHoursPage for the Employee module,
 
 ### references
 - Spatie Queueable Actions: https://github.com/spatie/laravel-queueable-action
-
-

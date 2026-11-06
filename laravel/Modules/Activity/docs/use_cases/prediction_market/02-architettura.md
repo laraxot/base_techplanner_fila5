@@ -1,4 +1,13 @@
-# Architettura di un Prediction Market
+---
+title: "Architettura di un <nome progetto>ion Market"
+type: note
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "architettura di un <nome progetto>ion market activity"
+status: superseded
+superseded_by: architettura.md
+---
+# Architettura di un <nome progetto>ion Market
 
 ## Pattern Principali
 - **Event Sourcing**: ogni cambiamento di stato è registrato come evento immutabile.

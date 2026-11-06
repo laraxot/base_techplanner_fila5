@@ -2,6 +2,25 @@
 description:
 globs:
 alwaysApply: false
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "Best Practice: XotBaseMigration"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "best practice: xotbasemigration user"
 ---
 # Best Practice: XotBaseMigration
 
@@ -47,7 +66,7 @@ if (!Schema::hasColumn('users', 'state')) {
 - Aggiornare la documentazione ogni volta che si introduce una nuova convenzione o helper in XotBaseMigration.
 
 ## Collegamenti correlati
-- [Migrazioni del Database](mdc:../../../docs/database-migrations.md)
+- [Migrazioni del Database](mdc:../../../../docs/database-migrations.md)
 - [Moderazione e Wizard Generici](mdc:MODERATION_WIZARD_GENERIC.mdc)
 - [Contratti e Interfacce Moderazione](mdc:MODERATION_CONTRACTS.mdc)
 - [Configurazione Stati Utente](mdc:USER_STATES.mdc)

@@ -2,11 +2,11 @@
 declare(strict_types=1);
 
 @props([
-    'title' => 'Hai Domande sulla Radioprotezione?',
-    'subtitle' => 'I nostri esperti sono pronti ad aiutarti con consulenze personalizzate',
-    'primary_cta_label' => 'Prenota una Consulenza',
+    'title' => __('pub_theme::blog.cta.title.title'),
+    'subtitle' => __('pub_theme::blog.cta.subtitle.message'),
+    'primary_cta_label' => __('pub_theme::blog.cta.primary.label'),
     'primary_cta_url' => '/contatti',
-    'secondary_cta_label' => 'Chiama Ora',
+    'secondary_cta_label' => __('pub_theme::blog.cta.secondary.label'),
     'secondary_cta_url' => 'tel:+390212345678',
     'testimonials' => [
         [
@@ -72,19 +72,19 @@ declare(strict_types=1);
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Consulenze personalizzate</span>
+                        <span>{{ __('pub_theme::blog.cta.feature_consulting.label') }}</span>
                     </div>
                     <div class="flex items-center space-x-3 text-gray-600">
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Supporto completo</span>
+                        <span>{{ __('pub_theme::blog.cta.feature_support.label') }}</span>
                     </div>
                     <div class="flex items-center space-x-3 text-gray-600">
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                         </svg>
-                        <span>Risposte entro 24 ore</span>
+                        <span>{{ __('pub_theme::blog.cta.feature_response.label') }}</span>
                     </div>
                 </div>
             </div>

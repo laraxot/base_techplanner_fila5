@@ -1,3 +1,16 @@
+---
+title: "squire integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "squire integration"
+issues: []
+discussions: []
+status: superseded
+superseded_by: squire-integration.md
+---
+
 # Integrazione con Squire per dati geografici
 
 ## Contesto
@@ -211,7 +224,7 @@ public function getFormSchema(): array
 
 ## Collegamenti
 - [Documentazione Squire](https://github.com/squirephp/squire)
-- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
-- [Clean Code](../../../project_docs/clean-code.md)
+- [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
+- [Clean Code](../../../../docs/project/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`. 

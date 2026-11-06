@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
-use Exception;
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Webmozart\Assert\Assert;
@@ -30,7 +29,7 @@ class ContentPdfAction
      * @param  string  $_filename  Nome del file PDF (per riferimento, attualmente non utilizzato)
      * @return string Contenuto binario del PDF
      *
-     * @throws Exception Se la vista non esiste
+     * @throws \Exception Se la vista non esiste
      */
     public function execute(
         ?string $html = null,
@@ -41,7 +40,7 @@ class ContentPdfAction
         // Generate HTML content if view is provided
         if ($html === null && $view !== null) {
             if (! view()->exists($view)) {
-                throw new Exception('View '.$view.' not found');
+                throw new \Exception('View '.$view.' not found');
             }
             if (! is_array($data)) {
                 $data = [];

@@ -7,7 +7,6 @@ namespace Modules\Xot\Actions\Model\Update;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use InvalidArgumentException;
 use Modules\Xot\Actions\Model\UpdateAction;
 use Modules\Xot\Datas\HasManyUpdateData;
 use Modules\Xot\Datas\RelationData;
@@ -21,7 +20,7 @@ class HasManyAction
     /**
      * Execute the HasMany relation update.
      *
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     public function execute(Model $model, RelationData $relationDTO): void
     {
@@ -50,7 +49,7 @@ class HasManyAction
 
     private function handleDirectUpdate(RelationData $relationDTO, HasManyUpdateData $updateData): void
     {
-        /** @var Builder $query */
+        /** @var Builder<Model> $query */
         $query = $relationDTO->related->newQuery();
 
         $query->where($updateData->foreignKey, $updateData->parentKey)->update([$updateData->foreignKey => null]);
@@ -95,7 +94,7 @@ class HasManyAction
     /**
      * Clean up orphaned records after batch update.
      *
-     * @param  array<int|string>  $updatedIds
+     * @param  array<int, int|string>  $updatedIds
      */
     private function cleanupOrphanedRecords(
         RelationData $relationDTO,

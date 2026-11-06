@@ -13,19 +13,13 @@ abstract class BaseModelLang extends BaseModel
 {
     use HasTranslations;
 
-    /** @var array<int, string> */
-    public $translatable = [
-        'name',
-        'blocks',
-    ];
-
     /** @var list<string> */
-    protected $fillable = [
+    public array $translatable = [
         'name',
-        'slug',
         'blocks',
     ];
 
+    /** @var array<string, string> */
     protected array $schema = [
         'id' => 'integer',
         'name' => 'json',
@@ -52,8 +46,8 @@ abstract class BaseModelLang extends BaseModel
     /**
      * The attributes that should be mutated to dates.
      *
-     * @return array<string, string> */
-    #[\Override]
+     * @return array<string, string>
+     */
     protected function casts(): array
     {
         return [

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\View;
 
-use Exception;
 use Nwidart\Modules\Facades\Module;
 use Spatie\QueueableAction\QueueableAction;
 
@@ -13,7 +12,7 @@ class GetViewNameSpacePathAction
     use QueueableAction;
 
     /**
-     * @throws Exception
+     * @throws \Exception
      */
     public function execute(?string $module_name = null): string
     {

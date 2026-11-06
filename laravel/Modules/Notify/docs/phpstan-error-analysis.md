@@ -1,5 +1,18 @@
+---
+title: "phpstan error analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan error analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Errori PHPStan - Modulo Notify
 
+**Data**: 2025-12-23
 **Modulo**: Notify
 **Livello PHPStan**: max
 **Status**: ✅ Corretto (0 errori)

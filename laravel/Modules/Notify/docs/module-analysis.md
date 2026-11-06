@@ -1,3 +1,15 @@
+---
+title: "module analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notify Module - Comprehensive Analysis
 
 ## Module Overview
@@ -56,7 +68,7 @@ The Notify module provides comprehensive notification and communication function
 
 ## Integration with Other Modules
 - **User**: Communication with system users
-- **Quaeris**: Survey participant notifications
+- **healthcare_app**: Survey participant notifications
 - **Limesurvey**: Survey response notifications
 - **Xot**: Base notification infrastructure
 - **Filament**: Management interface

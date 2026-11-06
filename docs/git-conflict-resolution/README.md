@@ -69,4 +69,5 @@ docs/git-conflict-resolution/
 - [Regole Git Conflict Resolution](../../.cursor/rules/git-conflict-resolution.mdc)
 
 ---
+*Ultimo aggiornamento: 2025-07-31*  
 *Sistemazione completata: Documentazione riorganizzata secondo convenzioni Laraxot* 

@@ -1,3 +1,15 @@
+---
+title: "filament extension fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament extension fixes"
+issues: []
+discussions: []
+status: draft
+---
+
 # Correzione Estensione Filament - S3Test.php
 
 ## Problema Identificato
@@ -81,5 +93,5 @@ class S3Test extends XotBasePage
 ## Collegamenti
 - [Regole Estensione Filament](../../../.cursor/rules/filament-extension-rules.mdc)
 - [XotBasePage Implementation](../../xot/project_docs/xotbasepage_implementation.md)
-- [Filament Best Practices](../../../project_docs/filament-best-practices.md)
+- [Filament Best Practices](../../../../docs/project/filament-best-practices.md)
 

@@ -1,3 +1,15 @@
+---
+title: "filament components"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament components"
+issues: []
+discussions: []
+status: draft
+---
+
 # Componenti Filament UI
 
 ## Collegamenti Bidirezionali
@@ -60,7 +72,7 @@
 * [filament-components.md](../../user/docs/best-practices/filament-components.md)
 * [filament-components.md](../../cms/docs/best-practices/filament-components.md)
 * [filament-components.md](../../cms/docs/filament-components.md)
-* [filament-components.md](../../../docs/rules/filament-components.md)
+* [filament-components.md](../../../../docs/rules/filament-components.md)
 # Componenti Filament UI
 
 ## Collegamenti Bidirezionali
@@ -125,4 +137,4 @@
 * [filament-components.md](../../user/project_docs/best-practices/filament-components.md)
 * [filament-components.md](../../cms/project_docs/best-practices/filament-components.md)
 * [filament-components.md](../../cms/project_docs/filament-components.md)
-* [filament-components.md](../../../project_docs/rules/filament-components.md)
+* [filament-components.md](../../../../docs/project/rules/filament-components.md)

@@ -1,9 +1,21 @@
+---
+title: "packages"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "packages"
+issues: []
+discussions: []
+status: draft
+---
+
 # Pacchetti del Modulo UI
 
 ## Pacchetti Utilizzati
 
 ### Core
-- [laraxot/module_xot_fila3](../xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [filament/filament](https://filamentphp.com) - Admin panel e componenti UI
 - [tailwindcss/tailwindcss](https://tailwindcss.com) - Framework CSS utility-first
 

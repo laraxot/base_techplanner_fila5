@@ -1,45 +1,29 @@
+@props([
+    'title' => '',
+    'titleKey' => null,
+])
+@php
+    // La chiave di traduzione si usa solo se esiste nella lingua corrente (senza ripiego): mai una chiave grezza né un titolo in un'altra lingua.
+    $documentTitle = $title !== '' ? $title : (is_string($titleKey) && trans()->has($titleKey, null, false) ? __($titleKey) : null);
+@endphp
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        @hasSection('title')
-
-            <title>@yield('title') - {{ config('app.name') }}</title>
-        @else
-            <title>{{ config('app.name') }}</title>
-        @endif
-
-        <!-- Favicon -->
-		<link rel="shortcut icon" href="{{ url(asset('favicon.ico')) }}">
-
-        <style>
-            [x-cloak] {
-                display: none !important;
-            }
-        </style>
-
-        <!-- Fonts -->
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-        @filamentStyles
-        @vite(['resources/css/app.css'], 'themes/Two')
-
-        <!-- CSRF Token -->
-        <meta name="csrf-token" content="{{ csrf_token() }}">
-
-        {{-- Alpine.js: fornito da Livewire/Filament nel bundle, NON da CDN. Vedi docs/fix/layout.txt --}}
-    </head>
-
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
+    <x-pub_theme::ui.cookie-bar-space />
+    <x-cms::head :title="$documentTitle" theme-color="#0f2b46" />
     <body>
-        @isset($slot)
-            {{ $slot }}
-        @else
-            @yield('body')
-        @endisset
+        <a href="#main-content" class="skip-link sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-50 focus:rounded focus:bg-white focus:px-4 focus:py-2 focus:text-gray-900">
+            {{ __('pub_theme::navigation.actions.skip_to_main.label') }}
+        </a>
+
+        <main id="main-content" role="main" tabindex="-1">
+            @isset($slot)
+                {{ $slot }}
+            @else
+                @yield('body')
+            @endisset
+        </main>
 
         @livewire('notifications')
-
-        {{-- Livewire prima di Filament: necessario per $wire nei form (LoginWidget, ecc.) --}}
         @livewireScripts
         @filamentScripts
         @vite(['resources/js/app.js'], 'themes/Two')

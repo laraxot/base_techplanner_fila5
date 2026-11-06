@@ -1,8 +1,16 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "installation"
+issues: []
+discussions: []
 title: Installazione Automatizzata
 description: Installazione Automatizzata
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 # Installazione {#installazione}
@@ -19,13 +27,13 @@ php artisan module_lang:install
 
 ```
 ## Collegamenti tra versioni di installation.md
-* [installation.md](../../../xot/docs/filament/installation.md)
-* [installation.md](../../../xot/docs/installation.md)
-* [installation.md](../../../xot/docs/base/installation.md)
-* [installation.md](../../../user/docs/installation.md)
-* [installation.md](../../../lang/docs/installation.md)
-* [installation.md](../../../cms/docs/installation.md)
-* [installation.md](../../../../themes/one/docs/installation.md)
+* [installation.md](../../Xot/docs/filament/installation.md)
+* [installation.md](../../Xot/docs/installation.md)
+* [installation.md](../../Xot/docs/base/installation.md)
+* [installation.md](../../../User/docs/installation.md)
+* [installation.md](../../../Lang/docs/installation.md)
+* [installation.md](../../../Cms/docs/installation.md)
+* [installation.md](../../../../Themes/One/docs/installation.md)
 
 ### Versione Incoming
 
@@ -34,4 +42,8 @@ php artisan module_lang:install
 ## Documentazione collegata
 - [Composer merge plugin](composer-merge-plugin.md)
 
+---
+---
+---
+---
 ---

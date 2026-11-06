@@ -9,7 +9,7 @@ declare(strict_types=1);
 
             <div class="relative z-50 flex items-center w-auto h-full">
                 <a href="{{ route('home') }}" class="flex items-center mr-0 md:mr-5 shrink-0">
-                   	<x-filament-panels::logo />
+                   	<img src="{{ asset('assets/predict/img/logo-ft.svg') }}" alt="{{ config('app.name') }}" class="h-8 w-auto" />
                 </a>
                 <div @click="mobileMenuOpen=!mobileMenuOpen" class="relative flex items-center justify-center w-8 h-8 ml-5 overflow-hidden text-gray-500 bg-gray-100 rounded cursor-pointer md:hidden hover:text-gray-700 hover:bg-gray-200">
                     <div :class="{ 'rotate-0' : mobileMenuOpen }" class="flex flex-col items-center justify-center w-4 h-4 duration-300 ease-in-out">
@@ -67,14 +67,14 @@ declare(strict_types=1);
                                 icon="heroicon-m-user"
                                 :href="route('profile.show')"
                             >
-                                {{ __('Profile') }}
+                                {{ __('cms::block_headernav.user_menu.profile.label') }}
                             </x-filament::dropdown.list.item>
 
                             <x-filament::dropdown.list.item
                                 icon="heroicon-m-cog"
                                 :href="route('profile.show')"
                             >
-                                {{ __('Settings') }}
+                                {{ __('cms::block_headernav.user_menu.settings.label') }}
                             </x-filament::dropdown.list.item>
 
                             <div class="border-t border-gray-200 dark:border-gray-700 my-1"></div>
@@ -85,7 +85,7 @@ declare(strict_types=1);
                                     icon="heroicon-m-arrow-right-on-rectangle"
                                     type="submit"
                                 >
-                                    {{ __('Log Out') }}
+                                    {{ __('cms::block_headernav.user_menu.logout.label') }}
                                 </x-filament::dropdown.list.item>
                             </form>
                         </x-filament::dropdown.list>
@@ -94,14 +94,7 @@ declare(strict_types=1);
                 
             @else
                 <div class="flex items-center w-auto">
-                    <x-ui.button type="secondary" submit="true" tag="a" href="{{ route('login') }}">
-                        {{ __('user::auth.login-in') }}
-                    </x-ui.button>
-                </div>
-                <div class="flex items-center w-auto">
-                    <x-ui.button type="primary" submit="true" tag="a" href="{{ route('register') }}">
-                        {{ __('user::auth.sign-up') }}
-                    </x-ui.button>
+                    @include('pub_theme::components.ui.auth-buttons', ['showLabels' => true, 'size' => 'md'])
                 </div>
             @endauth
 

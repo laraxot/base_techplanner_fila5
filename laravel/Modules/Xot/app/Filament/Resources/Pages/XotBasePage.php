@@ -13,7 +13,6 @@ use Filament\Schemas\Schema;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
-use LogicException;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
 
 /**
@@ -51,7 +50,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      */
     public function getView(): string
     {
-        if (isset($this->view)) {
+        if ($this->view !== 'filament-panels::pages.page') {
             return $this->view;
         }
 
@@ -79,7 +78,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
         $after[1] = Str::before($after[1], 'Resource');
         $after[3] = Str::before($after[3], $after[1]);
 
-        $after = collect($after)->map(function ($item) {
+        $after = collect($after)->map(function (string $item) {
             return Str::kebab($item);
             // return Str::snake($item);
         })->implode('.');
@@ -152,7 +151,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
     public function getModel(): string
     {
         if (static::$model === null) {
-            throw new LogicException('Model class not set for page: '.static::class);
+            throw new \LogicException('Model class not set for page: '.static::class);
         }
 
         /** @var class-string<Model> $model */
@@ -167,7 +166,7 @@ abstract class XotBasePage extends FilamentPage implements HasForms
      *
      * @return class-string<Model>|null
      */
-    protected function getFormModel(): Model|string|null
+    protected function getFormModel(): ?string
     {
         return static::$model;
     }

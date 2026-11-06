@@ -1,3 +1,11 @@
+---
+title: "Cross Database Relations Issue - belongsToManyX SQLite Problem"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "cross database relations issue - belongstomanyx sqlite problem user"
+---
 # Cross Database Relations Issue - belongsToManyX SQLite Problem
 
 ## Problema Identificato
@@ -68,14 +76,14 @@ Sostituire `belongsToManyX` con relazioni `belongsToMany` esplicite per cross-da
 
 ### Test 1: Verifica Relazione Base
 ```php
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 $user = User::find('0199690d-481a-7101-ac17-7518b3959314');
 $tenants = $user->tenants; // Dovrebbe funzionare senza errori
 ```
 
 ### Test 2: Verifica Cross-Database Query
 ```php
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 use Modules\Quaeris\Models\Customer;
 $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 // Verifica che la query sia corretta
@@ -83,7 +91,7 @@ $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 
 ## Riferimenti Correlati
 
-- [Quaeris Customer User Table Issue](../../quaeris/docs/customer_user_table_issue.md)
+- [Quaeris Customer User Table Issue](../../Quaeris/docs/customer_user_table_issue.md)
 - [Traits Complete Guide](./traits-complete-guide.md)
 - [Jetstream vs Laraxot Philosophy](./jetstream-vs-laraxot-philosophy.md)
 - [Database Errors](./database-errors.md)
@@ -108,7 +116,7 @@ if ($pivotDbName !== $dbName || $relatedDbName !== $dbName) {
 ```bash
 # Test HasTenants trait
 php artisan tinker --execute="
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
 \$tenants = \$user->tenants; // ✅ Funziona
 echo 'HasTenants works! Count: ' . \$tenants->count();
@@ -116,7 +124,7 @@ echo 'HasTenants works! Count: ' . \$tenants->count();
 
 # Test getTenants method
 php artisan tinker --execute="
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
 \$tenants = \$user->getTenants(app('filament')->getPanel('quaeris::admin'));
 echo 'getTenants works! Count: ' . count(\$tenants); // ✅ Funziona

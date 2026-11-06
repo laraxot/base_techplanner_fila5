@@ -1,7 +1,19 @@
-# Activity Module - Business Logic Analysis
+---
+module: theme
+topic: business-logic
+canonical: ../../../Themes/docs/shared-components/business-logic-analysis.md
+title: "business logic"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "business logic activity"
+---
 
+See canonical documentation: ../../../Themes/docs/shared-components/business-logic-analysis.md
 ## Overview
 The Activity module provides comprehensive audit logging and event sourcing capabilities for the Quaeris platform. It tracks user actions, system events, and data changes across all modules.
+The Activity module provides comprehensive audit logging and event sourcing capabilities for the healthcare_app platform. It tracks user actions, system events, and data changes across all modules.
 
 ## Business Purpose
 - **Audit Trail**: Maintain complete audit trails for compliance and security
@@ -31,13 +43,11 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 **Purpose**: Reconstruct application state from events
 **Scope**: Critical business operations
 
-**Key Components**:
 - `StoredEvent` model for event persistence
 - Event handlers and listeners
 - State reconstruction capabilities
 - Event replay functionality
 
-**Business Rules**:
 - Events are immutable once stored
 - Events must be stored in chronological order
 - Event replay must produce consistent results
@@ -47,13 +57,11 @@ The Activity module provides comprehensive audit logging and event sourcing capa
 **Purpose**: Optimize event sourcing performance
 **Scope**: Large datasets and complex aggregates
 
-**Key Components**:
 - `Snapshot` model for state snapshots
 - Automatic snapshot creation
 - Snapshot-based state reconstruction
 - Snapshot cleanup and archival
 
-**Business Rules**:
 - Snapshots created at configurable intervals
 - Snapshots must be consistent with event stream
 - Old snapshots archived but not deleted
@@ -100,20 +108,15 @@ The Activity module provides comprehensive audit logging and event sourcing capa
    ```
 
 2. **Advanced Table Features**:
-   ```php
    Tables\Columns\TextColumn::make('description')
-       ->searchable()
        ->sortable()
        ->toggleable()
        ->wrap(),
-   ```
 
 3. **Custom Actions**:
-   ```php
    Tables\Actions\Action::make('replay_events')
        ->icon('heroicon-o-arrow-path')
        ->action(fn(StoredEvent $record) => $this->replayEvents($record)),
-   ```
 
 ## Code Quality Issues
 

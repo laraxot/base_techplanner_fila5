@@ -1,3 +1,15 @@
+---
+title: "blade logic separation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "blade logic separation"
+issues: []
+discussions: []
+status: draft
+---
+
 # Blade Logic Separation: Content Resolution
 
 ## The Problem
@@ -150,8 +162,19 @@ When `x-page` renders a block component (e.g., `pub_theme::components.blocks.eve
     side="content" 
     :slug="$this->pageSlug" 
     :data="$this->data"
-    :container0="$this->container0" // Pass explicit props if needed by sub-components
-    :slug0="$this->slug0"         // Pass explicit props if needed by sub-components
 />
 ```
-This ensures that the `x-page` component (which is designed for this purpose) handles the resolution and rendering of content based on the provided slug and data, maintaining architectural consistency. Child block components then receive and process this data as standard Blade variables.
+This ensures that the `x-page` component (which is designed for this purpose) handles the resolution and rendering of content based on the provided slug and data, maintaining architectural consistency.
+
+### Generic route context rule
+
+`x-page` must stay route-agnostic.
+
+Do not add dedicated props for each route depth such as:
+
+- `container0`
+- `slug0`
+- `container1`
+- `slug1`
+
+The route context belongs in the `data` array so the component can support future nested patterns without changing its constructor signature. If the view needs direct access, the component may spread `...$data` into the final view params while keeping internal keys authoritative.

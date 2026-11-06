@@ -1,3 +1,15 @@
+---
+title: "gits resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gits resolution"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitti Git - Modulo Notify
 
 ## Data Risoluzione
@@ -63,7 +75,7 @@ Tutti i file risolti rispettano:
 
 ## Collegamenti
 
-- [Documentazione Root Notify](../../../docs/modules/notify.md)
+- [Documentazione Root Notify](../../../../docs/modules/notify.md)
 - [Architecture Documentation](./architecture.md)
 - [Email Templates](./email_templates.md)
 - [Notification Channels](./notification_channels_implementation.md)

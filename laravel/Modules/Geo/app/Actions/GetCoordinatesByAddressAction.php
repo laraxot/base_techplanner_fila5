@@ -7,10 +7,15 @@ namespace Modules\Geo\Actions;
 use Filament\Notifications\Notification;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
-use Modules\Geo\Datas\CoordinatesData;
+use Modules\Geo\Datas\Location\CoordinatesData;
+use Modules\Geo\Infrastructure\Config\GeoApiEndpoints;
+use Modules\Xot\Actions\Cast\SafeFloatCastAction;
+use Spatie\QueueableAction\QueueableAction;
 
 class GetCoordinatesByAddressAction
 {
+    use QueueableAction;
+
     public function execute(string $address): ?CoordinatesData
     {
         // Prova con Google Maps
@@ -39,7 +44,7 @@ class GetCoordinatesByAddressAction
      */
     private function getGoogleResponse(string $address): array
     {
-        $response = $this->makeHttpRequest('https://maps.googleapis.com/maps/api/geocode/json', [
+        $response = $this->makeHttpRequest(GeoApiEndpoints::GOOGLE_GEOCODING, [
             'address' => $address,
             'key' => config('services.google.maps_api_key'),
         ]);
@@ -88,7 +93,7 @@ class GetCoordinatesByAddressAction
      */
     private function getBingResponse(string $address, string $apiKey): array
     {
-        $response = $this->makeHttpRequest('http://dev.virtualearth.net/REST/v1/Locations', [
+        $response = $this->makeHttpRequest(GeoApiEndpoints::BING_LOCATIONS, [
             'q' => $address,
             'key' => $apiKey,
         ]);
@@ -132,11 +137,16 @@ class GetCoordinatesByAddressAction
         }
 
         return new CoordinatesData(
-            latitude: (float) ($coordinates[0] ?? 0),
-            longitude: (float) ($coordinates[1] ?? 0),
+            latitude: SafeFloatCastAction::cast($coordinates[0] ?? 0),
+            longitude: SafeFloatCastAction::cast($coordinates[1] ?? 0),
         );
     }
 
+    /**
+     * @param array<mixed> $data
+     *
+     * @return array<mixed>|null
+     */
     private function extractBingCoordinates(array $data): ?array
     {
         $resourceSets = $data['resourceSets'] ?? null;
@@ -228,7 +238,7 @@ class GetCoordinatesByAddressAction
      */
     private function getNominatimResponse(string $address): array
     {
-        $response = $this->makeHttpRequest('https://nominatim.openstreetmap.org/search', [
+        $response = $this->makeHttpRequest(GeoApiEndpoints::NOMINATIM_SEARCH, [
             'q' => $address,
             'format' => 'json',
             'limit' => 1,

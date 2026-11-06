@@ -2,33 +2,43 @@
 
 declare(strict_types=1);
 
+namespace Modules\Media\Tests\Feature;
+
 use Illuminate\Http\UploadedFile;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
+use Modules\Media\Database\Factories\MediaConvertFactory;
+use Modules\Media\Database\Factories\MediaFactory;
+use Modules\Media\Database\Factories\TemporaryUploadFactory;
 use Modules\Media\Models\Media;
 use Modules\Media\Models\MediaConvert;
-use Modules\Media\Models\TemporaryUpload;
 use Modules\Media\Tests\TestCase;
-use Modules\User\Models\User;
+use Modules\User\Database\Factories\UserFactory;
+use Modules\Xot\Contracts\UserContract;
+use Modules\Xot\Tests\XotBasePest;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 describe('Media Business Logic', function () {
-    beforeEach(function () {
+    beforeEach(function (): void {
         Storage::fake('public');
     });
 
-    it('can create media from temporary upload', function () {
+    it('can create media from temporary upload', function (): void {
         $file = UploadedFile::fake()->image('test-image.jpg', 100, 100);
 
         $temporaryColumns = Schema::connection('media')->getColumnListing('temporary_uploads');
 
+        /** @var array<string, mixed> $temporaryPayload */
         $temporaryPayload = [
             'session_id' => session()->getId(),
         ];
 
+        $user = null;
+
         if (in_array('user_id', $temporaryColumns, true)) {
-            $user = User::factory()->create();
+            $user = UserFactory::new()->createOne();
             $temporaryPayload['user_id'] = $user->id;
         }
 
@@ -48,10 +58,11 @@ describe('Media Business Logic', function () {
             $temporaryPayload['status'] = 'uploading';
         }
 
-        $temporaryUpload = TemporaryUpload::factory()->create($temporaryPayload);
+        $temporaryUpload = TemporaryUploadFactory::new()->createOne($temporaryPayload);
 
         $mediaColumns = Schema::connection('media')->getColumnListing('media');
 
+        /** @var array<string, mixed> $mediaPayload */
         $mediaPayload = [
             'disk' => 'public',
             'collection_name' => 'default',
@@ -77,83 +88,83 @@ describe('Media Business Logic', function () {
             $mediaPayload['size'] = (int) $temporaryUpload->file_size;
         }
 
-        if (isset($user) && in_array('user_id', $mediaColumns, true)) {
+        if ($user instanceof UserContract && in_array('user_id', $mediaColumns, true)) {
             $mediaPayload['user_id'] = $user->id;
         }
 
-        $media = Media::factory()->create($mediaPayload);
+        $media = MediaFactory::new()->createOne($mediaPayload);
 
-        expect($media)
-            ->toBeInstanceOf(Media::class)
-            ->and($media->file_name)
+        expect($media->file_name)
             ->toBe($mediaPayload['file_name'])
             ->and($media->mime_type)
             ->toBe($mediaPayload['mime_type']);
 
-        $this->assertDatabaseHas('media', [
-            'id' => (int) $media->getKey(),
+        $this->assertMediaTableHas('media', [
+            'id' => $media->id,
             'file_name' => $mediaPayload['file_name'],
             'mime_type' => $mediaPayload['mime_type'],
-        ], 'media');
+        ]);
     });
 
-    it('can convert media to different formats', function () {
+    it('can convert media to different formats', function (): void {
         $mediaColumns = Schema::connection('media')->getColumnListing('media');
         $convertColumns = Schema::connection('media')->getColumnListing('media_converts');
 
         foreach (['media_id', 'original_format', 'target_format', 'status'] as $requiredColumn) {
             if (! in_array($requiredColumn, $convertColumns, true)) {
-                $this->markTestSkipped('media_converts table is missing required columns for this test in this install.');
+                $this->skipTest('media_converts table is missing required columns for this test in this install.');
             }
         }
 
+        /** @var array<string, mixed> $payload */
         $payload = [
             'mime_type' => 'image/jpeg',
         ];
 
         if (in_array('user_id', $mediaColumns, true)) {
-            $user = User::factory()->create();
+            $user = UserFactory::new()->createOne();
             $payload['user_id'] = $user->id;
         }
 
-        $media = Media::factory()->create($payload);
+        $media = MediaFactory::new()->createOne($payload);
 
-        $mediaConvert = MediaConvert::factory()->create([
+        $mediaConvert = MediaConvertFactory::new()->createOne([
             'media_id' => $media->id,
             'original_format' => 'jpeg',
             'target_format' => 'png',
             'status' => 'pending',
         ]);
 
-        expect($mediaConvert)
-            ->toBeInstanceOf(MediaConvert::class)
-            ->and($mediaConvert->media_id)
+        expect($mediaConvert->media_id)
             ->toBe($media->id)
-            ->and($mediaConvert->original_format)
+            ->and($mediaConvert->getAttribute('original_format'))
             ->toBe('jpeg')
-            ->and($mediaConvert->target_format)
+            ->and($mediaConvert->getAttribute('target_format'))
             ->toBe('png');
 
-        $this->assertDatabaseHas('media_converts', [
-            'id' => (int) $mediaConvert->getKey(),
-            'media_id' => (int) $media->getKey(),
+        $this->assertMediaTableHas('media_converts', [
+            'id' => $mediaConvert->id,
+            'media_id' => $media->id,
             'original_format' => 'jpeg',
             'target_format' => 'png',
             'status' => 'pending',
-        ], 'media');
+        ]);
     });
 
-    it('can track temporary upload lifecycle', function () {
+    it('can track temporary upload lifecycle', function (): void {
         $file = UploadedFile::fake()->image('test-image.jpg', 100, 100);
 
         $columns = Schema::connection('media')->getColumnListing('temporary_uploads');
 
+        /** @var array<string, mixed> $payload */
         $payload = [
             'session_id' => session()->getId(),
         ];
 
+        $user = null;
+
         if (in_array('user_id', $columns, true)) {
-            $user = User::factory()->create();
+            $user = UserFactory::new()->createOne();
             $payload['user_id'] = $user->id;
         }
 
@@ -173,174 +184,186 @@ describe('Media Business Logic', function () {
             $payload['status'] = 'uploading';
         }
 
-        $temporaryUpload = TemporaryUpload::factory()->create($payload);
+        $temporaryUpload = TemporaryUploadFactory::new()->createOne($payload);
 
-        // Simulate upload completion
         $temporaryUpload->update(['status' => 'completed']);
 
-        expect($temporaryUpload->fresh()->status)->toBe('completed');
+        expect($temporaryUpload->fresh()?->getAttribute('status'))->toBe('completed');
 
+        /** @var array<string, mixed> $expected */
         $expected = [
-            'id' => (int) $temporaryUpload->getKey(),
+            'id' => $temporaryUpload->id,
             'status' => 'completed',
         ];
 
-        if (isset($user) && in_array('user_id', $columns, true)) {
+        if ($user instanceof UserContract && in_array('user_id', $columns, true)) {
             $expected['user_id'] = $user->id;
         }
 
-        $this->assertDatabaseHas('temporary_uploads', $expected, 'media');
+        $this->assertMediaTableHas('temporary_uploads', $expected);
     });
 
-    it('can manage media collections', function () {
+    it('can manage media collections', function (): void {
         $columns = Schema::connection('media')->getColumnListing('media');
 
+        /** @var array<string, mixed> $profilePayload */
         $profilePayload = [
             'collection_name' => 'profile',
             'disk' => 'public',
         ];
 
+        /** @var array<string, mixed> $documentPayload */
         $documentPayload = [
             'collection_name' => 'documents',
             'disk' => 'public',
         ];
 
         if (in_array('user_id', $columns, true)) {
-            $user = User::factory()->create();
+            $user = UserFactory::new()->createOne();
             $profilePayload['user_id'] = $user->id;
             $documentPayload['user_id'] = $user->id;
         }
 
-        $profileMedia = Media::factory()->create($profilePayload);
+        $profileMedia = MediaFactory::new()->createOne($profilePayload);
 
-        $documentMedia = Media::factory()->create($documentPayload);
+        $documentMedia = MediaFactory::new()->createOne($documentPayload);
 
         expect($profileMedia->collection_name)
             ->toBe('profile')
             ->and($documentMedia->collection_name)
             ->toBe('documents');
 
-        $this->assertDatabaseHas('media', [
-            'id' => (int) $profileMedia->getKey(),
-            'collection_name' => 'profile',
-        ], 'media');
+        $profileMediaId = $profileMedia->getKey();
+        Assert::assertIsInt($profileMediaId);
 
-        $this->assertDatabaseHas('media', [
-            'id' => (int) $documentMedia->getKey(),
+        $this->assertMediaTableHas('media', [
+            'id' => $profileMediaId,
+            'collection_name' => 'profile',
+        ]);
+
+        $documentMediaId = $documentMedia->getKey();
+        Assert::assertIsInt($documentMediaId);
+
+        $this->assertMediaTableHas('media', [
+            'id' => $documentMediaId,
             'collection_name' => 'documents',
-        ], 'media');
+        ]);
     });
 
-    it('can validate media file types', function () {
+    it('can validate media file types', function (): void {
         $columns = Schema::connection('media')->getColumnListing('media');
 
+        /** @var array<string, mixed> $imagePayload */
         $imagePayload = [
             'mime_type' => 'image/jpeg',
             'file_name' => 'valid-image.jpg',
         ];
 
+        $user = null;
+
         if (in_array('user_id', $columns, true)) {
-            $user = User::factory()->create();
+            $user = UserFactory::new()->createOne();
             $imagePayload['user_id'] = $user->id;
         }
 
-        $validImage = Media::factory()->create($imagePayload);
+        $validImage = MediaFactory::new()->createOne($imagePayload);
 
         $imageMime = (string) ($validImage->mime_type ?? '');
         expect($imageMime)->toStartWith('image/');
 
+        /** @var array<string, mixed> $documentPayload */
         $documentPayload = [
             'mime_type' => 'application/pdf',
             'file_name' => 'valid-document.pdf',
         ];
 
-        if (isset($user) && in_array('user_id', $columns, true)) {
+        if ($user instanceof UserContract && in_array('user_id', $columns, true)) {
             $documentPayload['user_id'] = $user->id;
         }
 
-        $validDocument = Media::factory()->create($documentPayload);
+        $validDocument = MediaFactory::new()->createOne($documentPayload);
 
         $docMime = (string) ($validDocument->mime_type ?? '');
         expect($docMime)->toStartWith('application/');
     });
 
-    it('can track media conversion status', function () {
+    it('can track media conversion status', function (): void {
         $mediaColumns = Schema::connection('media')->getColumnListing('media');
         $convertColumns = Schema::connection('media')->getColumnListing('media_converts');
 
         if (! in_array('status', $convertColumns, true) || ! in_array('media_id', $convertColumns, true)) {
-            $this->markTestSkipped('media_converts table is missing required columns for this test in this install.');
+            $this->skipTest('media_converts table is missing required columns for this test in this install.');
         }
 
+        /** @var array<string, mixed> $payload */
         $payload = [
             'mime_type' => 'image/jpeg',
         ];
 
         if (in_array('user_id', $mediaColumns, true)) {
-            $user = User::factory()->create();
+            $user = UserFactory::new()->createOne();
             $payload['user_id'] = $user->id;
         }
 
-        $media = Media::factory()->create($payload);
+        $media = MediaFactory::new()->createOne($payload);
 
-        $mediaConvert = MediaConvert::factory()->create([
+        $mediaConvert = MediaConvertFactory::new()->createOne([
             'media_id' => $media->id,
             'status' => 'pending',
         ]);
 
-        // Simulate conversion progress
         $mediaConvert->update(['status' => 'processing']);
         $mediaConvert->update(['status' => 'completed']);
 
-        expect($mediaConvert->fresh()->status)->toBe('completed');
+        expect($mediaConvert->fresh()?->getAttribute('status'))->toBe('completed');
 
-        $this->assertDatabaseHas('media_converts', [
-            'id' => (int) $mediaConvert->getKey(),
+        $this->assertMediaTableHas('media_converts', [
+            'id' => $mediaConvert->id,
             'status' => 'completed',
-        ], 'media');
+        ]);
     });
 
-    it('can manage media permissions', function () {
-        $owner = User::factory()->create();
-        $otherUser = User::factory()->create();
+    it('can manage media permissions', function (): void {
+        $owner = UserFactory::new()->createOne();
+        $otherUser = UserFactory::new()->createOne();
 
         $columns = Schema::connection('media')->getColumnListing('media');
         if (! in_array('user_id', $columns, true) || ! in_array('is_public', $columns, true)) {
-            $this->markTestSkipped('This install does not have user_id/is_public columns on media table.');
+            $this->skipTest('This install does not have user_id/is_public columns on media table.');
         }
 
-        $media = Media::factory()->create([
+        $media = MediaFactory::new()->createOne([
             'user_id' => $owner->id,
             'is_public' => false,
         ]);
 
         expect($media->user_id)
             ->toBe($owner->id)
-            ->and($media->is_public)
+            ->and($media->getAttribute('is_public'))
             ->toBeFalse()
             ->and($media->user_id)
             ->not->toBe($otherUser->id);
     });
 
-    it('can handle media deletion', function () {
+    it('can handle media deletion', function (): void {
         $columns = Schema::connection('media')->getColumnListing('media');
 
         if (in_array('deleted_at', $columns, true)) {
-            $this->markTestSkipped('This install has deleted_at on media table; deletion semantics are install-specific.');
+            $this->skipTest('This install has deleted_at on media table; deletion semantics are install-specific.');
         }
 
-        $media = Media::factory()->create();
-        $mediaId = (int) $media->getKey();
+        $media = MediaFactory::new()->createOne();
+        $mediaId = $media->id;
 
         $media->delete();
 
-        $this->assertDatabaseMissing('media', [
+        $this->assertMediaTableMissing('media', [
             'id' => $mediaId,
-        ], 'media');
+        ]);
     });
 
-    it('can generate media urls', function () {
-        $media = Media::factory()->create([
+    it('can generate media urls', function (): void {
+        $media = MediaFactory::new()->createOne([
             'file_name' => 'test-image.jpg',
             'disk' => 'public',
         ]);
@@ -350,68 +373,68 @@ describe('Media Business Logic', function () {
         expect($url)->not->toBeEmpty()->and($url)->toContain('test-image.jpg');
     });
 
-    it('can validate file size limits', function () {
-        $user = User::factory()->create();
+    it('can validate file size limits', function (): void {
+        $user = UserFactory::new()->createOne();
 
-        $columns = Schema::getColumnListing('media');
-        $payloadBase = [];
+        $columns = TestCase::mediaTableColumns();
 
-        $trySet = function (array &$payload, string $column, mixed $value) use ($columns): void {
-            if (in_array($column, $columns, true)) {
-                $payload[$column] = $value;
-            }
-        };
-
-        $makePayload = function (int $size) use ($user, $payloadBase, $trySet): array {
-            $payload = $payloadBase;
-            $trySet($payload, 'user_id', $user->id);
-            $trySet($payload, 'file_size', $size);
-            $trySet($payload, 'size', $size);
-            $trySet($payload, 'file_name', 'test-file.pdf');
-            $trySet($payload, 'disk', 'public');
-            $trySet($payload, 'collection_name', 'default');
-            $trySet($payload, 'mime_type', 'application/pdf');
-            $trySet($payload, 'created_at', now());
-            $trySet($payload, 'updated_at', now());
+        $makePayload = function (int $size) use ($user, $columns): array {
+            $payload = TestCase::mediaPayloadSet([], $columns, 'user_id', $user->id);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'model_type', $user->getMorphClass());
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'model_id', $user->id);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'file_size', $size);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'size', $size);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'file_name', 'test-file.pdf');
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'name', 'test-file');
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'disk', 'public');
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'collection_name', 'default');
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'mime_type', 'application/pdf');
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'manipulations', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'custom_properties', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'generated_conversions', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'responsive_images', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'created_at', now());
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'updated_at', now());
 
             return $payload;
         };
 
         $validPayload = $makePayload(1024 * 1024);
         if ($validPayload === []) {
-            $this->markTestSkipped('Unable to build minimal payload for media table in this install.');
+            $this->skipTest('Unable to build minimal payload for media table in this install.');
         }
 
         $validMedia = Media::query()->create($validPayload);
-        $sizeValue = (int) ($validMedia->getAttribute('file_size') ?? $validMedia->getAttribute('size') ?? 0);
+        $sizeValue = $validMedia->size;
         expect($sizeValue)->toBeLessThanOrEqual(10 * 1024 * 1024);
 
         $largeMedia = Media::query()->create($makePayload(15 * 1024 * 1024));
-        $largeSizeValue = (int) ($largeMedia->getAttribute('file_size') ?? $largeMedia->getAttribute('size') ?? 0);
+        $largeSizeValue = $largeMedia->size;
         expect($largeSizeValue)->toBeGreaterThan(10 * 1024 * 1024);
     });
 
-    it('can track media usage statistics', function () {
-        $user = User::factory()->create();
+    it('can track media usage statistics', function (): void {
+        $user = UserFactory::new()->createOne();
 
-        $columns = Schema::getColumnListing('media');
-        $trySet = function (array &$payload, string $column, mixed $value) use ($columns): void {
-            if (in_array($column, $columns, true)) {
-                $payload[$column] = $value;
-            }
-        };
+        $columns = TestCase::mediaTableColumns();
 
-        $makePayload = function (string $mime, string $fileName) use ($user, $trySet): array {
-            $payload = [];
-            $trySet($payload, 'user_id', $user->id);
-            $trySet($payload, 'mime_type', $mime);
-            $trySet($payload, 'file_name', $fileName);
-            $trySet($payload, 'disk', 'public');
-            $trySet($payload, 'collection_name', 'default');
-            $trySet($payload, 'file_size', 123);
-            $trySet($payload, 'size', 123);
-            $trySet($payload, 'created_at', now());
-            $trySet($payload, 'updated_at', now());
+        $makePayload = function (string $mime, string $fileName) use ($user, $columns): array {
+            $payload = TestCase::mediaPayloadSet([], $columns, 'user_id', $user->id);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'model_type', $user->getMorphClass());
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'model_id', $user->id);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'mime_type', $mime);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'file_name', $fileName);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'name', pathinfo($fileName, PATHINFO_FILENAME));
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'disk', 'public');
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'collection_name', 'default');
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'file_size', 123);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'size', 123);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'manipulations', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'custom_properties', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'generated_conversions', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'responsive_images', []);
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'created_at', now());
+            $payload = TestCase::mediaPayloadSet($payload, $columns, 'updated_at', now());
 
             return $payload;
         };
@@ -424,9 +447,9 @@ describe('Media Business Logic', function () {
             Media::query()->create($makePayload('application/pdf', "doc-{$i}.pdf"));
         }
 
-        $columns = Schema::connection('media')->getColumnListing('media');
-        if (! in_array('user_id', $columns, true)) {
-            $this->markTestSkipped('This install does not have user_id column on media table.');
+        $mediaColumns = Schema::connection('media')->getColumnListing('media');
+        if (! in_array('user_id', $mediaColumns, true)) {
+            $this->skipTest('This install does not have user_id column on media table.');
         }
 
         $totalMedia = Media::where('user_id', $user->id)->count();

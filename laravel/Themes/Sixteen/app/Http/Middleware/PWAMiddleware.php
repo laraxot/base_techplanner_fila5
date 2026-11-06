@@ -18,6 +18,8 @@ class PWAMiddleware
 {
     /**
      * Handle an incoming request.
+     *
+     * @param  Closure(Request): Response  $next
      */
     public function handle(Request $request, Closure $next): Response
     {
@@ -52,8 +54,8 @@ class PWAMiddleware
         $response->headers->set('Link', '</manifest.json>; rel="manifest"');
 
         // Header per viewport mobile
-        if ($response->headers->has('Content-Type') &&
-            str_contains($response->headers->get('Content-Type'), 'text/html')) {
+        $contentType = $response->headers->get('Content-Type');
+        if (is_string($contentType) && str_contains($contentType, 'text/html')) {
             $this->addViewportMeta($response);
         }
     }
@@ -95,8 +97,8 @@ class PWAMiddleware
         }
 
         // Aggiungi meta tag per offline
-        if ($response->headers->has('Content-Type') &&
-            str_contains($response->headers->get('Content-Type'), 'text/html')) {
+        $contentType = $response->headers->get('Content-Type');
+        if (is_string($contentType) && str_contains($contentType, 'text/html')) {
             $this->addOfflineMeta($response);
         }
     }
@@ -108,13 +110,17 @@ class PWAMiddleware
     {
         $content = $response->getContent();
 
+        if (! is_string($content)) {
+            return;
+        }
+
         // Verifica se viewport meta è già presente
         if (str_contains($content, 'name="viewport"')) {
             return;
         }
 
-        // Aggiungi viewport meta tag
-        $viewportMeta = '<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">';
+        // Aggiungi viewport meta tag. Mai maximum-scale/user-scalable=no: blocca lo zoom (WCAG 1.4.4).
+        $viewportMeta = '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
 
         // Inserisci dopo <head>
         $content = str_replace('<head>', "<head>\n    {$viewportMeta}", $content);
@@ -128,6 +134,10 @@ class PWAMiddleware
     private function addOfflineMeta(Response $response): void
     {
         $content = $response->getContent();
+
+        if (! is_string($content)) {
+            return;
+        }
 
         // Meta tag per PWA
         $pwaMeta = implode("\n    ", [
@@ -166,7 +176,8 @@ class PWAMiddleware
      */
     private function isPageRequest(Request $request): bool
     {
-        return $request->header('Accept') &&
-               str_contains($request->header('Accept'), 'text/html');
+        $accept = $request->header('Accept');
+
+        return is_string($accept) && str_contains($accept, 'text/html');
     }
 }

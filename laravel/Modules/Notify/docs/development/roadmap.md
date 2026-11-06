@@ -1,3 +1,15 @@
+---
+title: "roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notify Module Roadmap
 
 ## Module Progress Overview
@@ -95,7 +107,35 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../activity/docs/roadmap.md)
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
+* [roadmap.md](../roadmap.md)
+* [roadmap.md](../../../Gdpr/docs/roadmap.md)
+* [roadmap.md](../roadmap.md)
+* [roadmap.md](../../../xot/docs/roadmap.md)
+* [roadmap.md](../../../dental/docs/roadmap.md)
+* [roadmap.md](../../../User/docs/roadmap.md)
+* [roadmap.md](../../../ui/docs/roadmap.md)
+* [roadmap.md](../../../Lang/docs/roadmap.md)
+* [roadmap.md](../../../Job/docs/roadmap.md)
+* [roadmap.md](../../../Media/docs/roadmap.md)
+* [roadmap.md](../../../Tenant/docs/roadmap.md)
+* [roadmap.md](../../../Activity/docs/roadmap.md)
+* [roadmap.md](../../../patient/docs/roadmap.md)
+* [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
+* [roadmap.md](../../../Gdpr/docs/roadmap.md)
+* [roadmap.md](../../../Notify/docs/roadmap.md)
+* [roadmap.md](../../../Xot/docs/roadmap.md)
+* [roadmap.md](../../../Dental/docs/roadmap.md)
+* [roadmap.md](../../../User/docs/roadmap.md)
+* [roadmap.md](../../../UI/docs/roadmap.md)
+* [roadmap.md](../../../Lang/docs/roadmap.md)
+* [roadmap.md](../../../Job/docs/roadmap.md)
+* [roadmap.md](../../../Media/docs/roadmap.md)
+* [roadmap.md](../../../Tenant/docs/roadmap.md)
+* [roadmap.md](../../../Activity/docs/roadmap.md)
+* [roadmap.md](../../../Patient/docs/roadmap.md)
+* [roadmap.md](../../../Cms/docs/roadmap.md)
+* [roadmap.md](../../../../Themes/One/docs/roadmap.md)
 
 # Roadmap Implementazione
 
@@ -244,14 +284,14 @@ Overall Module Completion: 60%
 - Ogni sezione ha il suo README.md specifico
 
 ## Contribuire
-Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../docs/regole_collegamenti_documentazione.md).
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).
+Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
-Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/readme_links.md).
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/readme_links.md).
 
 
 ### Versione Incoming
 
 
 ---
-

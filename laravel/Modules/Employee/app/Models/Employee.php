@@ -17,7 +17,6 @@ use Modules\Employee\Database\Factories\EmployeeFactory;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
 use Modules\Media\Models\Media;
-use Modules\TechPlanner\Models\Profile;
 use Modules\Tenant\Models\Domain;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Device;
@@ -29,6 +28,7 @@ use Modules\User\Models\Role;
 use Modules\User\Models\SocialiteUser;
 use Modules\User\Models\Team;
 use Modules\User\Models\TenantUser;
+use Modules\Xot\Contracts\ProfileContract;
 use Override;
 use Parental\HasParent;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
@@ -52,7 +52,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property-read \Modules\User\Models\User|null $user
- * @property-read Collection<WorkHour> $workHours
+ * @property-read Collection<int, WorkHour> $workHours
  * @property string|null $name
  * @property string|null $first_name
  * @property string|null $last_name
@@ -97,7 +97,7 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @property-read int|null $owned_teams_count
  * @property-read Collection<int, Permission> $permissions
  * @property-read int|null $permissions_count
- * @property-read Profile|null $profile
+ * @property-read ProfileContract|null $profile
  * @property-read Collection<int, Role> $roles
  * @property-read int|null $roles_count
  * @property-read Collection<int, SocialiteUser> $socialiteUsers

@@ -1,10 +1,22 @@
+---
+title: "case sensitivity rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "case sensitivity rules"
+issues: []
+discussions: []
+status: draft
+---
+
 # Case Sensitivity Rules - Notify Module
 
 ## Problema / Problem
 
 **NON possono esistere file con lo stesso nome che differiscono solo per maiuscole/minuscole nella stessa directory.**
 
-Riferimento completo: [Xot Module Case Sensitivity Rules](../../xot/docs/case-sensitivity-rules.md)
+Riferimento completo: [Xot Module Case Sensitivity Rules](../../Xot/docs/case-sensitivity-rules.md)
 
 ## File/Directory Rimossi da Notify Module
 
@@ -101,7 +113,7 @@ Questa convenzione migliora la leggibilità e mantiene la coerenza con le conven
 
 ## Update Log
 
-- **[DATE]**: Major cleanup
+- **2025-11-04**: Major cleanup
   - Removed 14 duplicate blade templates (ark, minty, sunny, widgets)
   - Removed 2 duplicate test files
   - Removed Config/ directory and duplicate config files

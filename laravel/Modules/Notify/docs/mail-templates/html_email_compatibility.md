@@ -1,8 +1,20 @@
+---
+title: "html email compatibility"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "html email compatibility"
+issues: []
+discussions: []
+status: draft
+---
+
 # Guida alla Compatibilità HTML per Email
 
 ## Introduzione
 
-Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di SaluteOra con i diversi client email.
+Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di <nome progetto> con i diversi client email.
 
 ## Compatibilità Client Email
 
@@ -128,6 +140,8 @@ I template nella directory `mail-layouts` seguono queste linee guida di compatib
 
 ## Riferimenti
 
+- [Guida ai Layout Email](../MAIL_LAYOUTS_GUIDE.md)
+- [Integrazione MailPace](./MAILPACE_TEMPLATES_INTEGRATION.md)
 - [Guida ai Layout Email](../mail_layouts_guide.md)
 - [Integrazione MailPace](./mailpace_templates_integration.md)
 - [Campaign Monitor Guide](https://www.campaignmonitor.com/css/)

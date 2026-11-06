@@ -1,3 +1,15 @@
+---
+title: "send push notification resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "send push notification resolution"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione conflitto git su SendPushNotification.php
 
 ## Intent
@@ -9,4 +21,4 @@
 - Filtro semplificato e affidabile dei dispositivi attivi.
 
 ## Collegamenti
-- Documentazione principale: [Ris. conflitti Git - Modulo Notify](../../../docs/risoluzione_conflitti_git.md#modulo-notify)
+- Documentazione principale: [Ris. conflitti Git - Modulo Notify](../../../../docs/risoluzione_conflitti_git.md#modulo-notify)

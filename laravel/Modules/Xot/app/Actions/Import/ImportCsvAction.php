@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Import;
 
-use Exception;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\DB;
@@ -29,7 +28,7 @@ class ImportCsvAction
      * @param  string  $db  the database connection name
      * @param  string  $tbl  the table name where data will be imported
      *
-     * @throws Exception
+     * @throws \Exception
      */
     public function execute(string $disk, string $filename, string $db, string $tbl): void
     {
@@ -72,7 +71,7 @@ class ImportCsvAction
     /**
      * Get table columns excluding certain fields.
      *
-     * @return array<ColumnData>
+     * @return array<int, ColumnData>
      */
     private function getTableColumns(Builder $conn, string $tbl): array
     {
@@ -80,8 +79,7 @@ class ImportCsvAction
         $excludedColumns = ['id'];
 
         return array_map(
-            function ($column) use ($conn, $tbl) {
-                /** @var string $column */
+            function (string $column) use ($conn, $tbl) {
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(
@@ -96,7 +94,7 @@ class ImportCsvAction
     /**
      * Prepare fields for the SQL query.
      *
-     * @param  array<ColumnData>  $columns
+     * @param  array<int, ColumnData>  $columns
      * @return array<string>
      */
     private function prepareFields(array $columns): array
@@ -110,7 +108,7 @@ class ImportCsvAction
     /**
      * Build the SQL query for importing data.
      *
-     * @param  array<ColumnData>  $columns
+     * @param  array<int, ColumnData>  $columns
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -137,28 +135,5 @@ class ImportCsvAction
         }
 
         return $sql;
-    }
-
-    /**
-     * Transform columns into ColumnData objects.
-     *
-     * @param  array<string>  $columns
-     * @return array<ColumnData>
-     *
-     * @deprecated This method is currently unused but kept for future expansion.
-     *
-     * @phpstan-ignore method.unused
-     */
-    private function transformColumnsToColumnData(array $columns): array
-    {
-        return array_map(
-            function (string $column): ColumnData {
-                return new ColumnData(
-                    name: $column,
-                    type: 'string', // Default type, modify if necessary
-                );
-            },
-            $columns,
-        );
     }
 }

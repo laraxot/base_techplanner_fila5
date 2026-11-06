@@ -69,7 +69,18 @@
 - ✅ 用户认证状态显示 (Avatar + Dropdown)
 - ✅ 严格遵循 JSON 数据结构 (Foreach Loops)
 
-### 2. header.json 配置更新
+### 2. 登录 CTA 动态化（Login CTA Behaviour）
+
+为保持前台与认证流程一致，头部 slim 区域的登录 CTA 现在根据用户状态动态切换：
+
+- 🆕 **访客状态**：按钮链接至 `/{locale}/auth/login`（通过 `LaravelLocalization::localizeURL` 生成），遵循“所有 form 由 Filament Widget 处理”的Laraxot规则。
+- 🆕 **已登录用户**：按钮改为“Accedi all'area personale”，指向 `/admin`，快速进入 Filament 后台，无需再返回登录页。
+- 保持 Bootstrap Italia 视觉样式（`btn btn-primary btn-icon btn-full`），仅替换图标引用与文本为翻译键 `pub_theme::navigation.login_cta` / `pub_theme::navigation.dashboard_cta`。
+- 通过 `@guest` / `@auth` 控制可见性，避免重复渲染。
+
+该行为记录在 `header_bi5.blade.php` 中，确保主题级组件即可完成导航 CTA 管理。
+
+### 3. header.json 配置更新
 
 **品牌信息:**
 ```json

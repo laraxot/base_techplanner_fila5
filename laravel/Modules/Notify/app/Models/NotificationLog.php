@@ -4,171 +4,157 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Models;
 
-use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
+use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
-use Modules\Notify\Database\Factories\NotificationLogFactory;
 use Modules\Notify\Enums\NotificationLogStatusEnum;
+use Modules\Notify\Models\Traits\NotificationLogRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 /**
- * Modello per il logging delle notifiche.
- *
- * @property int $id
- * @property int|null $template_id
- * @property string $recipient_type
- * @property int $recipient_id
- * @property string $content
- * @property array $data
- * @property array $channels
- * @property NotificationLogStatusEnum $status
- * @property Carbon|null $sent_at
- * @property Carbon|null $delivered_at
- * @property Carbon|null $opened_at
- * @property Carbon|null $clicked_at
- * @property Carbon $created_at
- * @property Carbon $updated_at
- * @property-read NotificationTemplate|null $template
- * @property string $notifiable_type
- * @property int $notifiable_id
- * @property string $title
- * @property string|null $error
  * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
- * @property-read Model|\Eloquent $notifiable
+ * @property-read Model $notifiable
+ * @property-read NotificationTemplate|null $template
  * @property-read ProfileContract|null $updater
  *
- * @method static NotificationLogFactory factory($count = null, $state = [])
- * @method static Builder<static>|NotificationLog forNotifiable(Model $notifiable)
- * @method static Builder<static>|NotificationLog forTemplate(int $templateId)
+ * @method static Builder<static>|NotificationLog forChannel(string $channel)
+ * @method static Builder<static>|NotificationLog forNotifiable(\Illuminate\Database\Eloquent\Model $notifiable)
  * @method static Builder<static>|NotificationLog newModelQuery()
  * @method static Builder<static>|NotificationLog newQuery()
  * @method static Builder<static>|NotificationLog query()
- * @method static Builder<static>|NotificationLog whereChannels($value)
- * @method static Builder<static>|NotificationLog whereContent($value)
- * @method static Builder<static>|NotificationLog whereCreatedAt($value)
- * @method static Builder<static>|NotificationLog whereData($value)
- * @method static Builder<static>|NotificationLog whereError($value)
- * @method static Builder<static>|NotificationLog whereId($value)
- * @method static Builder<static>|NotificationLog whereNotifiableId($value)
- * @method static Builder<static>|NotificationLog whereNotifiableType($value)
- * @method static Builder<static>|NotificationLog whereSentAt($value)
- * @method static Builder<static>|NotificationLog whereStatus($value)
- * @method static Builder<static>|NotificationLog whereTitle($value)
- * @method static Builder<static>|NotificationLog whereUpdatedAt($value)
  * @method static Builder<static>|NotificationLog withStatus(NotificationLogStatusEnum $status)
  *
- * @mixin \Eloquent
+ * @property string $id
+ * @property string|null $template_id
+ * @property string $notifiable_type
+ * @property string $notifiable_id
+ * @property string $channel
+ * @property NotificationLogStatusEnum $status
+ * @property string|null $status_message
+ * @property array<array-key, mixed>|null $data
+ * @property array<array-key, mixed>|null $metadata
+ * @property string|null $tenant_id
+ * @property Carbon|null $sent_at
+ * @property Carbon|null $delivered_at
+ * @property Carbon|null $failed_at
+ * @property Carbon|null $opened_at
+ * @property Carbon|null $clicked_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $updated_by
+ * @property string|null $created_by
+ *
+ * @method static Builder<static>|NotificationLog whereChannel($value)
+ * @method static Builder<static>|NotificationLog whereClickedAt($value)
+ * @method static Builder<static>|NotificationLog whereCreatedAt($value)
+ * @method static Builder<static>|NotificationLog whereCreatedBy($value)
+ * @method static Builder<static>|NotificationLog whereData($value)
+ * @method static Builder<static>|NotificationLog whereDeliveredAt($value)
+ * @method static Builder<static>|NotificationLog whereFailedAt($value)
+ * @method static Builder<static>|NotificationLog whereId($value)
+ * @method static Builder<static>|NotificationLog whereMetadata($value)
+ * @method static Builder<static>|NotificationLog whereNotifiableId($value)
+ * @method static Builder<static>|NotificationLog whereNotifiableType($value)
+ * @method static Builder<static>|NotificationLog whereOpenedAt($value)
+ * @method static Builder<static>|NotificationLog whereSentAt($value)
+ * @method static Builder<static>|NotificationLog whereStatus($value)
+ * @method static Builder<static>|NotificationLog whereStatusMessage($value)
+ * @method static Builder<static>|NotificationLog whereTemplateId($value)
+ * @method static Builder<static>|NotificationLog whereTenantId($value)
+ * @method static Builder<static>|NotificationLog whereUpdatedAt($value)
+ * @method static Builder<static>|NotificationLog whereUpdatedBy($value)
+ *
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
-final class NotificationLog extends BaseModel
+class NotificationLog extends BaseModel
 {
-    /**
-     * @var list<string>
-     */
+    use NotificationLogRelations;
+
+    protected $table = 'notification_logs';
+
     protected $fillable = [
         'template_id',
-        'recipient_id',
-        'recipient_type',
-        'content',
-        'data',
-        'channels',
+        'notifiable_type',
+        'notifiable_id',
+        'channel',
         'status',
+        'status_message',
+        'data',
+        'metadata',
         'sent_at',
         'delivered_at',
+        'failed_at',
         'opened_at',
         'clicked_at',
-    ];
+        'tenant_id'];
+
+    /** @return MorphTo<Model, $this> */
+
+    /** @return BelongsTo<NotificationTemplate, $this> */
 
     /**
-     * Ottiene il template associato a questo log.
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function template(): BelongsTo
+    public function scopeWithStatus(Builder $query, NotificationLogStatusEnum $status): Builder
     {
-        return $this->belongsTo(NotificationTemplate::class);
+        return $query->where('status', $status->value);
     }
 
     /**
-     * Ottiene il notifiable associato a questo log.
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function notifiable(): MorphTo
+    public function scopeForChannel(Builder $query, string $channel): Builder
     {
-        return $this->morphTo();
+        return $query->where('channel', $channel);
     }
 
     /**
-     * Scope per filtrare i log per notifiable.
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function scopeForNotifiable(
-        Builder $query,
-        Model $notifiable,
-    ): Builder {
-        return $query->where('recipient_type', $notifiable->getMorphClass())->where(
-            'recipient_id',
-            $notifiable->getKey(),
-        );
-    }
-
-    /**
-     * Scope per filtrare i log per stato.
-     */
-    public function scopeWithStatus(
-        Builder $query,
-        NotificationLogStatusEnum $status,
-    ): Builder {
-        return $query->where('status', $status);
-    }
-
-    /**
-     * Segna il log come aperto (tracking apertura email).
-     */
-    public function markAsOpened(): void
+    public function scopeForNotifiable(Builder $query, Model $notifiable): Builder
     {
-        if ($this->opened_at === null) {
-            $this->update(['opened_at' => now()]);
-        }
+        return $query
+            ->where('notifiable_type', $notifiable::class)
+            ->where('notifiable_id', $notifiable->getKey());
     }
 
-    /**
-     * Segna il log come cliccato (tracking click su link).
-     */
-    public function markAsClicked(): void
+    public function markAsOpened(): self
     {
-        if ($this->clicked_at === null) {
-            $this->update(['clicked_at' => now()]);
-        }
+        $this->update([
+            'status' => NotificationLogStatusEnum::OPENED->value,
+            'opened_at' => now()]);
+
+        return $this;
     }
 
-    /**
-     * Scope per filtrare i log per template.
-     */
-    public function scopeForTemplate(
-        Builder $query,
-        int $templateId,
-    ): Builder {
-        return $query->where('template_id', $templateId);
+    public function markAsClicked(): self
+    {
+        $this->update([
+            'status' => NotificationLogStatusEnum::CLICKED->value,
+            'clicked_at' => now()]);
+
+        return $this;
     }
 
-    /**
-     * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
-     */
     protected function casts(): array
     {
-        return [
+        return array_merge(parent::casts(), [
+            'status' => NotificationLogStatusEnum::class,
             'data' => 'array',
-            'channels' => 'array',
+            'metadata' => 'array',
             'sent_at' => 'datetime',
             'delivered_at' => 'datetime',
+            'failed_at' => 'datetime',
             'opened_at' => 'datetime',
-            'clicked_at' => 'datetime',
-            'status' => NotificationLogStatusEnum::class,
-        ];
+            'clicked_at' => 'datetime']);
     }
 }

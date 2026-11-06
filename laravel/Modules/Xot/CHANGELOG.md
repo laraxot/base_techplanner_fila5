@@ -1,3 +1,13 @@
+---
+title: "CHANGELOG"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-10-25
+qmd: "CHANGELOG"
+issues: []
+discussions: []
+---
 # Changelog - Modulo Xot
 
 Tutte le modifiche significative al modulo Xot sono documentate in questo file.
@@ -103,6 +113,22 @@ All notable changes to `:package_name` will be documented in this file.
 
 ---
 
+## [2025-06-04] - Sessione Fix Critica
+
+### Fixed
+- **HasXotTable.php**: Risolti if duplicati (3x) e array malformati da merge conflict
+- **XotBaseChartWidget.php**: Rimossi metodi duplicati e chiusure classe multiple
+  - Causa: conflitto Git risolto automaticamente con residui
+- **Script git conflicts v6.sh**: Corretti 3 bug critici (P0+P1)
+  - Cleanup file temporanei (P0), ottimizzazione `stat` (P1), cattura exit code robusta (P1)
+  - Versione: 6.0 -> 6.1
+
+### Added
+- Pattern identificato: "Triplice Mostro del Merge"
+- Analisi critica degli script bash con dialettica interna
+
+---
+
 ## Pattern di Versioning
 
 ### Major (x.0.0)
@@ -125,10 +151,10 @@ All notable changes to `:package_name` will be documented in this file.
 ## 🔗 Collegamenti
 
 ### Documenti Correlati
-- [README.md](./docs/readme.md) - Entry point
-- [File Locking Pattern](./docs/file-locking-pattern.md) - Nuova regola
-- [Architecture Rules](./docs/laraxot-architecture-rules.md) - Regole base
-- [Merge Conflict Resolution](./docs/merge-conflict-resolution-2025-11-04.md) - Latest fix
+- [README.md](./docs/README.md) - Entry point
+- [File Locking Pattern](../../../docs/wiki/rules/file-lock-workflow.md) - Regola di coordinamento
+- [Architecture Rules](./docs/wiki/architecture/laraxot-architecture-rules.md) - Regole base
+- [Merge Conflict Resolution](./docs/git-conflict-resolution.md) - Latest fix
 
 ### Repository
 - **Branch:** develop

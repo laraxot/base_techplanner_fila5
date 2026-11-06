@@ -1,8 +1,20 @@
+---
+title: "analisi metodi duplicati"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi metodi duplicati"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Metodi Duplicati - Modulo Cms
 
 ## Riferimento Principale
 
-📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
+📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
 
 ## Stato del Modulo Cms
 
@@ -199,12 +211,11 @@ protected function casts(): array
 
 ## Link Correlati
 
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+- 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Convenzioni Namespace Filament](./convenzioni-namespace-filament.md)
 - 📖 [Gestione Temi](./frontoffice/create-theme.md)
 
 ---
-
 **Data:** [DATE]
 **Status:** 📋 Draft per Review

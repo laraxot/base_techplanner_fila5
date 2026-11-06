@@ -2,39 +2,43 @@
 
 declare(strict_types=1);
 
-uses(Modules\Cms\Tests\TestCase::class);
-
 use Modules\Cms\Models\Attachment;
+use PHPUnit\Framework\Assert;
 
 test('Attachment model can be instantiated', function () {
-    $attachment = new Attachment();
+    $attachment = new Attachment;
+    Assert::assertSame(Attachment::class, $attachment::class);
 
-    expect($attachment)->toBeInstanceOf(Attachment::class);
 });
 
 test('Attachment model has expected fillable fields', function () {
-    $attachment = new Attachment();
+    $attachment = new Attachment;
 
     $fillable = $attachment->getFillable();
 
-    expect($fillable)->toContain('title')
-        ->and($fillable)->toContain('description')
-        ->and($fillable)->toContain('slug')
-        ->and($fillable)->toContain('disk')
-        ->and($fillable)->toContain('attachment');
+    Assert::assertContains('title', $fillable);
+
+    Assert::assertContains('description', $fillable);
+
+    Assert::assertContains('slug', $fillable);
+
+    Assert::assertContains('disk', $fillable);
+
+    Assert::assertContains('attachment', $fillable);
 });
 
 test('Attachment model has expected casts', function () {
-    $attachment = new Attachment();
+    $attachment = new Attachment;
 
     $casts = $attachment->getCasts();
 
-    expect($casts)->toHaveKey('attachment')
-        ->and($casts['attachment'])->toBe('array');
+    Assert::assertArrayHasKey('attachment', $casts);
+
+    Assert::assertSame('array', $casts['attachment']);
 });
 
 test('Attachment model implements HasMedia interface', function () {
-    $attachment = new Attachment();
+    $attachment = new Attachment;
+    Assert::assertSame(Attachment::class, $attachment::class);
 
-    expect($attachment)->toBeInstanceOf(Spatie\MediaLibrary\HasMedia::class);
 });

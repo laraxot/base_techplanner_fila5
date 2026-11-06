@@ -1,3 +1,11 @@
+---
+title: "Filament Actions nel Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity]
+qmd: "filament actions nel modulo activity activity"
+---
 # Filament Actions nel Modulo Activity
 
 ## Panoramica
@@ -343,7 +351,8 @@ class ListMyModelActivities extends ListLogActivities
 ## Collegamenti
 
 ### Documentazione Interna
-- [README Activity Module](../readme.md)
+- [README Activity Module](../README.md)
+- [README Activity Module](../README.md)
 - [ListLogActivitiesAction Details](./actions/list-log-activities-action.md)
 - [ListLogActivities Page](./pages/list-log-activities.md)
 
@@ -355,6 +364,12 @@ class ListMyModelActivities extends ListLogActivities
 ### Moduli Correlati
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 - [Xot - Filament Base Components](../../xot/docs/filament/readme.md)
+- [Translation Best Practices](../../Xot/docs/translation-best-practices.md)
+- [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md)
+
+### Moduli Correlati
+- [IndennitaResponsabilita - Activity Log Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
+- [Xot - Filament Base Components](../../Xot/docs/filament/README.md)
 
 ---
 

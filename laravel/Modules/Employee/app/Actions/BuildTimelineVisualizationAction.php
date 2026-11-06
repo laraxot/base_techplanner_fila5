@@ -34,10 +34,10 @@ class BuildTimelineVisualizationAction
      *     position: array{top: int, height: int}
      *   }>>,
      *   workingHoursBounds: array{start: string, end: string},
-     *   dayStatus: array<string, array{status: string, indicator: string, color: string}>
+     *   dayStatus: array<string, array{status: string, indicator: string, color: string, dayName: string, isToday: bool, isWeekend: bool}>
      * }
      */
-    public function execute(int $userId, Carbon $weekStart, Carbon $weekEnd): array
+    public function execute(int|string $userId, Carbon $weekStart, Carbon $weekEnd): array
     {
         // 1. Costruisci slot temporali (06:00-20:00 come nell'immagine)
         $timeSlots = $this->buildTimeSlots();
@@ -82,7 +82,7 @@ class BuildTimelineVisualizationAction
      *
      * @return Collection<int, WorkHour>
      */
-    private function getWeekEntries(int $userId, Carbon $weekStart, Carbon $weekEnd): Collection
+    private function getWeekEntries(int|string $userId, Carbon $weekStart, Carbon $weekEnd): Collection
     {
         return WorkHour::query()
             ->where('employee_id', $userId)
@@ -108,7 +108,7 @@ class BuildTimelineVisualizationAction
         $current = $weekStart->copy();
         while ($current->lte($weekEnd)) {
             $dateKey = $current->toDateString();
-            $dayEntries = $entries->filter(fn ($entry) => $entry->timestamp->isSameDay($current));
+            $dayEntries = $entries->filter(fn (WorkHour $entry) => $entry->timestamp->isSameDay($current));
 
             $blocks[$dateKey] = $this->buildDaySessionBlocks($dayEntries);
 
@@ -210,12 +210,12 @@ class BuildTimelineVisualizationAction
     /**
      * Determina colore sessione basato su orari e durata.
      *
-     * @param  array{startTime: Carbon, endTime: Carbon|null}  $session
+     * @param  array{start: string, startTime: Carbon, end: string|null, endTime: Carbon|null, color: string, status: string}  $session
      */
     private function determineSessionColor(array $session): string
     {
         $startTime = $session['startTime'];
-        $endTime = $session['endTime'] ?? null;
+        $endTime = $session['endTime'];
 
         if (! $endTime) {
             return 'orange'; // Sessione in corso
@@ -239,7 +239,7 @@ class BuildTimelineVisualizationAction
      * Costruisce stati giorni con indicatori.
      *
      * @param  array<string, array<int, array{start: string, end: string|null, duration: float, color: string, status: string, position: array{top: int, height: int}}>>  $sessionBlocks
-     * @return array<string, array{status: string, indicator: string, color: string}>
+     * @return array<string, array{status: string, indicator: string, color: string, dayName: string, isToday: bool, isWeekend: bool}>
      */
     private function buildDayStatus(array $sessionBlocks, Carbon $weekStart, Carbon $weekEnd): array
     {
@@ -256,8 +256,7 @@ class BuildTimelineVisualizationAction
                 'status' => $status['status'],
                 'indicator' => $status['indicator'],
                 'color' => $status['color'],
-                // @phpstan-ignore-next-line
-                'dayName' => Carbon::parse($current)->locale('it')->format('D d'),
+                'dayName' => $current->copy()->translatedFormat('D d'),
                 'isToday' => $current->isToday(),
                 'isWeekend' => $current->isWeekend(),
             ];

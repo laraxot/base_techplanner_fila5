@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Lang Module Roadmap"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Lang Module Roadmap
 
 "Abbattiamo le barriere: la lingua come servizio universale."
@@ -226,6 +240,31 @@ Lang/
 
 ---
 
+**Last Updated**: 2026-01-02
 
+
+
+
+**Last Updated**: 2026-01-02
 **Maintainer**: Team Laraxot
 **Status**: Active Development
+# Product Roadmap - Lang Module
+
+## 🎯 Vision & Strategy
+Make the Laraxot ecosystem fully multilingual with zero developer effort for common translation patterns.
+
+## 🗓️ Timeline
+### Q1 2026: Discovery (Current)
+- **Automatic Translation Discovery** - *Status: Shipped*
+- **Multilingual Routing** - *Status: In Progress*
+- **Google Translate API Integration** - *Status: Planned*
+
+## 🚦 Status Overview
+| Feature | Status | Owner | Target Date |
+| :--- | :--- | :--- | :--- |
+| Core Localization | ✅ Stable | @CoreTeam | Jan 2026 |
+| Translation Manager | 🏗️ In Dev | @CoreTeam | Mar 2026 |
+
+## 📂 Backlog / Future Ideas
+- AI-assisted translation for technical terms.
+- Support for RTL (Right-to-Left) languages.

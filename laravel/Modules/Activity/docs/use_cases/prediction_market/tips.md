@@ -1,4 +1,12 @@
-# Consigli e Best Practice - Prediction Market
+---
+title: "Consigli e Best Practice - <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "consigli e best practice - <nome progetto>ion market activity"
+---
+# Consigli e Best Practice - <nome progetto>ion Market
 
 ## Refactoring e Miglioramenti
 - Separare sempre comandi (write) e query (read) secondo CQRS

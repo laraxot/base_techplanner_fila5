@@ -1,4 +1,14 @@
+---
+title: "Bug Fix: TableLayoutToggleTableAction Access Level Error - 27 Gennaio 2025"
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, ui]
+qmd: "bug fix: tablelayouttoggletableaction access level error - 27 gennaio 2025 ui"
+---
 # Bug Fix: TableLayoutToggleTableAction Access Level Error - 27 Gennaio 2025
+
+> Documento storico. Funzionamento attuale del toggle: [table-layout-toggle.md](./table-layout-toggle.md).
 
 ## Problema Identificato
 
@@ -173,6 +183,7 @@ curl -I http://127.0.0.1:8001/quaeris/admin/gaia/survey-pdfs
 
 ---
 
+**Data**: 27 Gennaio 2025  
 **Modulo**: UI  
 **Tipo**: Bug Fix  
 **Priorità**: Alta  

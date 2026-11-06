@@ -1,3 +1,11 @@
+---
+title: "Bugfix: Carbon Timezone Error in XotServiceProvider"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "bugfix: carbon timezone error in xotserviceprovider xot"
+---
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
 ## Problema Identificato
@@ -75,6 +83,7 @@ public function registerTimezone(): void
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
+*Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*
 # Bugfix: Carbon Timezone Error in XotServiceProvider
 
@@ -153,4 +162,5 @@ public function registerTimezone(): void
 - [PHP date_default_timezone_set](https://www.php.net/manual/en/function.date-default-timezone-set.php)
 - [Root Bugfix Guidelines](../../../project_docs/bugfix-guidelines.md)
 
+*Ultimo aggiornamento: giugno 2025*
 *Risolto da: Windsurf AI Assistant*

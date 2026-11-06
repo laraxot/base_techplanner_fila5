@@ -1,3 +1,15 @@
+---
+title: "link relativi regole"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "link relativi regole"
+issues: []
+discussions: []
+status: draft
+---
+
 # Regole per Link Relativi nella Documentazione
 
 ## 🚨 **REGOLA CRITICA LARAXOT**
@@ -14,7 +26,7 @@
 ```markdown
 [Link corretto](./file.md)
 [Link corretto](../altro-modulo/docs/file.md)
-[Link alla root](../../../docs/file.md)
+[Link alla root](../../../../docs/file.md)
 ```
 
 ## 🎯 **Motivazioni Filosofiche**
@@ -41,7 +53,7 @@
 
 ### **Dal modulo Cms alla root docs**
 ```
-Percorso: Modules/Cms/docs/ → ../../../docs/
+Percorso: Modules/Cms/docs/ → ../../../../docs/
 Logica:
   Modules/Cms/docs/ → ../ (torna a Modules/)
   Modules/ → ../ (torna a laravel/)
@@ -80,7 +92,7 @@ Link: ./components/
 [Gestione Homepage](/var/www/html/_bases/<directory progetto>/docs/gestione-homepage.md)
 
 <!-- DOPO (CORRETTO) -->
-[Gestione Homepage](../../../docs/gestione-homepage.md)
+[Gestione Homepage](../../../../docs/gestione-homepage.md)
 ```
 
 ### **Caso 2: Link ad altro modulo**
@@ -137,7 +149,6 @@ Aggiornare sempre le regole personali:
 "Un link relativo oggi, refactoring sereno domani"
 
 ---
-
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
 **Conformità**: Regole Laraxot per documentazione modulare e portabile

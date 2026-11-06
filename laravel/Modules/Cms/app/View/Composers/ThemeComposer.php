@@ -16,7 +16,7 @@ class ThemeComposer
     /**
      * Get menu items by name.
      *
-     * @return array<string, mixed>|null
+     * @return array<int|string, mixed>|null
      */
     public function getMenu(string $menu_name): ?array
     {
@@ -37,6 +37,9 @@ class ThemeComposer
         return $normalized;
     }
 
+    /**
+     * @param array<string, mixed> $menu
+     */
     public function getMenuUrl(array $menu): string
     {
         if ([] === $menu) {
@@ -131,16 +134,17 @@ class ThemeComposer
         return $blocksComponent->render();
     }
     */
+    /**
+     * @return Collection<int, Page>
+     */
     public function getPages(): Collection
     {
-        /* @var Collection<int, Page> $pages */
         return Page::all();
     }
 
     public function getPageModel(string $slug): ?Page
     {
-        /* @var Page|null $page */
-        return Page::where('slug', $slug)->first();
+        return Page::findUniqueBySlug($slug);
     }
 
     public function getUrlPage(string $slug): string

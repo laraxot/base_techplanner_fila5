@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Correzioni Errori Sintassi File Traduzione - Gennaio 2025"
+module: "Lang"
+type: concept
+tags: [git, conflicts, resolution, summary]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "git conflicts resolution summary"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: fixes-syntax-errors.md
+---
 # Correzioni Errori Sintassi File Traduzione - Gennaio 2025
 
 ## Riepilogo Problemi Risolti
@@ -166,3 +181,6 @@ grep -r "'label' => '[a-z_]\+'" Modules/*/lang/it/ --include="*.php"
 - [Regole sintassi array breve](/.cursor/rules/translation_files_array_syntax.mdc)
 - [Best practices traduzioni](./translation_rules.md)
 
+*Ultimo aggiornamento: 6 Gennaio 2025*
+*Ultimo aggiornamento: 6 Gennaio 2025*
+*Ultimo aggiornamento: 6 Gennaio 2025*

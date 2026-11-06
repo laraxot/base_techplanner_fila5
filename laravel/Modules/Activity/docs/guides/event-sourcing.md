@@ -1,4 +1,18 @@
-# event sourcing comprehensive guide
+---
+module: theme
+topic: event_sourcing
+canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
+title: "event sourcing"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, activity, guides]
+qmd: "event sourcing activity"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.mdtopic: event-sourcing
+canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
+---
 
 ## introduction to event sourcing
 
@@ -35,51 +49,35 @@ class activity_aggregate_root
     private $activities = [];
     
     public static function start(string $uuid): self
-    {
         $aggregate = new self();
         $aggregate->record_that(new activity_started($uuid));
         return $aggregate;
     }
     
     public function log_activity(string $type, array $data)
-    {
         $this->record_that(new activity_logged($this->uuid, $type, $data));
-    }
     
     protected function apply_activity_started(activity_started $event)
-    {
         $this->uuid = $event->uuid;
-    }
     
     protected function apply_activity_logged(activity_logged $event)
-    {
         $this->activities[] = ['type' => $event->type, 'data' => $event->data];
-    }
     
     private function record_that($event)
-    {
         // logic to record the event
-    }
-}
 ```
 
 ### 4. projectors
 projectors create read views based on events. for example, a projector can update an `activity_logs` table with activity counts.
 
 **projector example**:
-```php
 namespace modules\activity\projectors;
 
 class activity_log_projector
-{
     public function on_activity_logged(activity_logged $event, string $uuid)
-    {
         $log = activity_log::find_or_create($uuid);
         $log->increment('count');
         $log->save();
-    }
-}
-```
 
 ## advanced patterns
 
@@ -112,23 +110,15 @@ periodically save the current state of an aggregate to reduce the number of even
 ## practical examples
 
 **activity logging**:
-```php
 $activity_aggregate = activity_aggregate_root::start($user->uuid);
 $activity_aggregate->log_activity('login', ['timestamp' => now(), 'ip' => request()->ip()]);
-```
 
 **report projection**:
-```php
 class user_activity_report_projector
-{
     public function on_user_activity_logged(user_activity_logged $event, string $uuid)
-    {
         $report = user_activity_report::find_or_create($uuid);
         $report->last_login = $event->data['timestamp'];
         $report->save();
-    }
-}
-```
 
 ## code improvement recommendations
 
@@ -154,3 +144,48 @@ class user_activity_report_projector
 ## conclusion
 
 event sourcing offers a powerful approach to manage complexity in the `activity` module, ensuring traceability and flexibility. by implementing aggregate roots, projectors, and strategies like snapshotting, existing code robustness and scalability can be improved. following the described patterns and recommendations, the module can evolve to support future requirements without compromising data consistency.
+# event sourcing comprehensive guide
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+module: theme
+topic: event-sourcing
+canonical: ../../../../Themes/docs/shared-components/event-sourcing.md
+
+See canonical documentation: ../../../../Themes/docs/shared-components/event-sourcing.md

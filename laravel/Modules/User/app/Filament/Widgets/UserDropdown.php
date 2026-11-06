@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Filament\Widgets;
 
 use Illuminate\Support\Facades\Auth;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
-class UserDropdown extends XotBaseWidget
+class UserDropdown extends XotBaseSchemaWidget
 {
     /**
      * The view for this widget.
@@ -48,8 +48,28 @@ class UserDropdown extends XotBaseWidget
 
         return [
             'user' => $user,
-            'avatarUrl' => $profile?->getAvatarUrl() ?? 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y',
+            'avatarUrl' => $this->resolveAvatarUrl($profile),
             'name' => $user->name ?? 'User',
         ];
+    }
+
+    private function resolveAvatarUrl(?object $profile): string
+    {
+        $fallback = 'https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y';
+
+        if (! \is_object($profile)) {
+            return $fallback;
+        }
+
+        if (method_exists($profile, 'getAvatarUrl')) {
+            $url = $profile->getAvatarUrl();
+            if (\is_string($url) && $url !== '') {
+                return $url;
+            }
+        }
+
+        $avatarUrl = $profile->avatar_url ?? null;
+
+        return \is_string($avatarUrl) && $avatarUrl !== '' ? $avatarUrl : $fallback;
     }
 }

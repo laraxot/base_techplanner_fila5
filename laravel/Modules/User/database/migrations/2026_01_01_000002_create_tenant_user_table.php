@@ -1,28 +1,22 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-use function Safe\file_put_contents;
-
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
     public function up(): void
     {
-        $conn = $this->getConn()->getConnection()->getName();
-        $db = $this->getConn()->getConnection()->getDatabaseName();
-        $exists = $this->tableExists();
-        file_put_contents(base_path('migration_debug.log'), "MIGRATING tenant_user | CONN: $conn | DB: $db | EXISTS: ".($exists ? 'YES' : 'NO')."\n", FILE_APPEND);
-
         // -- CREATE --
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
             $table->id();
-            $table->foreignId('tenant_id');
+            // tenants.id è una stringa (uuid o slug): un foreignId intero non la può contenere
+            $table->string('tenant_id', 36)->index();
             $table->uuid('user_id')->nullable()->index();
 
             // $table->foreignIdFor(\Modules\Xot\Datas\XotData::make()->getUserClass());
@@ -32,10 +26,11 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-            $this->updateTimestamps(
-                table: $table,
-                hasSoftDeletes: true,
-            );
+            if (\in_array($this->getColumnType('tenant_id'), ['bigint', 'integer', 'int'], true)) {
+                $table->string('tenant_id', 36)->change();
+            }
+
+            $this->updateTimestamps(table: $table, hasSoftDeletes: true);
         });
     }
 };

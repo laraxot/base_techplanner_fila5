@@ -1,10 +1,23 @@
+---
+title: "module geo"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module geo"
+issues: []
+discussions: []
+status: superseded
+superseded_by: module-geo.md
+---
+
 # Modulo Geo
 
 ## Informazioni Generali
-- **Nome**: `laraxot/module_geo_fila3`
+- **Nome**: `laraxot/module_geo_fila5`
 - **Descrizione**: Modulo per la gestione delle funzionalità geografiche
 - **Namespace**: `Modules\Geo`
-- **Repository**: https://github.com/laraxot/module_geo_fila3.git
+- **Repository**: https://github.com/laraxot/module_geo_fila5.git
 
 ## Service Providers
 1. `Livewire\LivewireServiceProvider`
@@ -40,7 +53,6 @@ Namespace: `Modules\Geo\Database\Factories`
 Namespace: `Modules\Geo\Database\Seeders`
 
 ---
-
 ## Gestione dati geografici statici (GeoJsonModel readonly)
 
 Per tutti i dati statici (regioni, province, comuni, cap) di dimensioni ridotte, **NON** vengono create tabelle/migration dedicate. Si utilizza invece un modello base readonly, ispirato a [Squire](https://github.com/squirephp/squire), che legge i dati direttamente dal file JSON (`resources/json/comuni.json`).

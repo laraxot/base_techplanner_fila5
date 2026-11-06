@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
-use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
@@ -26,7 +25,7 @@ class PerformanceMonitoringMiddleware
     /**
      * Handle an incoming request.
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, \Closure $next): Response
     {
         $startTime = microtime(true);
         $startMemory = memory_get_usage(true);
@@ -47,12 +46,7 @@ class PerformanceMonitoringMiddleware
         // Registra la richiesta
         Assert::isInstanceOf($response, Response::class);
         $statusCode = $response->getStatusCode();
-        $this->recordRequest(
-            $request->method(),
-            $request->path(),
-            $responseTime,
-            $statusCode
-        );
+        $this->recordRequest($responseTime, $statusCode);
 
         // Registra utilizzo memoria finale
         $this->recordMemoryUsage();
@@ -102,7 +96,7 @@ class PerformanceMonitoringMiddleware
     /**
      * Registra richiesta.
      */
-    private function recordRequest(string $method, string $path, float $responseTime, int $statusCode): void
+    private function recordRequest(float $responseTime, int $statusCode): void
     {
         Cache::increment('total_requests');
         Cache::increment('requests_per_minute');

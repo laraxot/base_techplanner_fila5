@@ -28,7 +28,6 @@ This is a Laravel-based monolithic application using Filament Admin Panel with m
 ### 1. Nested Double Conflicts
 Common pattern in test files and configuration:
 ```php
-=======
 // use Illuminate\Foundation\Testing\RefreshDatabase;
 ```
 

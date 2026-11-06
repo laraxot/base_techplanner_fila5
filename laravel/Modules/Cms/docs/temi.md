@@ -1,3 +1,15 @@
+---
+title: "temi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "temi"
+issues: []
+discussions: []
+status: draft
+---
+
 # Struttura dei Temi in il progetto
 
 ## Panoramica
@@ -28,13 +40,13 @@ laravel/Themes/One/
 
 ### Installazione Corretta
 ```bash
-git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila3.git dev --squash
+git subtree add --prefix laravel/Themes/One git@github.com:laraxot/theme_one_fila5.git dev --squash
 ```
 
 ### Errore da Evitare
 ❌ **NON** utilizzare:
 ```bash
-git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila3.git dev --squash
+git subtree add --prefix laravel/Modules/ThemeOne git@github.com:laraxot/theme_one_fila5.git dev --squash
 ```
 
 ## Struttura del Tema

@@ -1,3 +1,11 @@
+---
+title: "Raccomandazioni di Ottimizzazione - Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "raccomandazioni di ottimizzazione - modulo xot xot"
+---
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -316,6 +324,7 @@ php artisan xot:test-framework
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
+*Ultimo aggiornamento: gennaio 2025*
 # Raccomandazioni di Ottimizzazione - Modulo Xot
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -634,3 +643,4 @@ php artisan xot:test-framework
 - [PathHelper Current](../Helpers/PathHelper.php)
 - [XotData Current](../Datas/XotData.php)
 
+*Ultimo aggiornamento: gennaio 2025*

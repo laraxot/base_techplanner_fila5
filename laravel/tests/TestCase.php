@@ -7,9 +7,8 @@ namespace Tests;
 use Dotenv\Dotenv;
 use Illuminate\Contracts\Console\Kernel;
 use Illuminate\Foundation\Application;
-use Illuminate\Foundation\Testing\TestCase as BaseTestCase; // Added for explicit Dotenv loading in createApplication
-
-// Added
+use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
+use Mockery;
 
 // Manually require Composer's autoloader to ensure it's loaded
 require_once __DIR__.'/../vendor/autoload.php';

@@ -20,7 +20,6 @@ class GetTenantConfigArrayAction
         $path = app(GetTenantFilePathAction::class)->execute($name.'.php');
 
         try {
-            /** @var mixed $data */
             $data = File::getRequire($path);
         } catch (Throwable $e) {
             $data = [];
@@ -30,12 +29,12 @@ class GetTenantConfigArrayAction
             $data = [];
         }
 
+        /** @var array<string, mixed> $dataArray */
         $dataArray = [];
         foreach ($data as $key => $value) {
             $dataArray[(string) $key] = $value;
         }
 
-        /** @var array<string, mixed> $dataArray */
         return $dataArray;
     }
 }

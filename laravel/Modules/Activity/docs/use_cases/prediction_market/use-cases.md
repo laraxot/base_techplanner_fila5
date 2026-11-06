@@ -1,4 +1,12 @@
-# Casi d'Uso del Prediction Market
+---
+title: "Casi d'Uso del <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "casi d'uso del <nome progetto>ion market activity"
+---
+# Casi d'Uso del <nome progetto>ion Market
 
 ## 1. Previsioni Economiche
 
@@ -26,7 +34,7 @@
   - Conformità normativa
 
 ### 2.2 Policy Making
-- **Descrizione**: Utilizzare i prediction market per valutare l'impatto di nuove politiche.
+- **Descrizione**: Utilizzare i <nome progetto>ion market per valutare l'impatto di nuove politiche.
 - **Vantaggi**:
   - Crowdsourcing di conoscenze
   - Previsioni più accurate dei sondaggi tradizionali
@@ -34,7 +42,7 @@
 ## 3. Mercati Aziendali
 
 ### 3.1 Previsioni di Vendita
-- **Descrizione**: Le aziende possono utilizzare i prediction market internamente per prevedere le vendite.
+- **Descrizione**: Le aziende possono utilizzare i <nome progetto>ion market internamente per prevedere le vendite.
 - **Implementazione**:
   - Accesso riservato ai dipendenti
   - Incentivi per previsioni accurate

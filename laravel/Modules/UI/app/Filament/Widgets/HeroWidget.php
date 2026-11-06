@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget;
 
-class HeroWidget extends BaseWidget
+class HeroWidget extends XotBaseStatsOverviewWidget
 {
     protected ?string $heading = 'Hero Widget';
 
-    // PHPStan L10: Protected per type safety - public properties sono viste come mixed
     protected string $title = '';
 
     protected string $icon = '';
@@ -24,7 +23,7 @@ class HeroWidget extends BaseWidget
     protected function getStats(): array
     {
         return [
-            Stat::make('', $this->title ?? '')->icon($this->icon ?? ''),
+            Stat::make('', $this->title)->icon($this->icon),
         ];
     }
 }

@@ -1,14 +1,12 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Actions;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
@@ -32,8 +30,8 @@ class GetModelByModelTypeAction
             ? $model_class::query()->find($model_id)
             : new $model_class;
 
-        if (! ($model instanceof Model)) {
-            throw new Exception('['.__LINE__.']['.class_basename($this).']');
+        if (! $model instanceof Model) {
+            throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 
         return $model;

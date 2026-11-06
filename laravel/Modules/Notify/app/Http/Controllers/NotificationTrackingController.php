@@ -39,16 +39,14 @@ class NotificationTrackingController extends Controller
     public function trackClick(Request $request, string $id): RedirectResponse
     {
         $log = NotificationLog::find($id);
-        /** @var mixed $urlParam */
-        $urlParam = $request->get('url', '');
+        $urlParam = $request->input('url', '');
         $url = is_string($urlParam) ? $urlParam : '';
 
         if ($log) {
             $log->markAsClicked();
 
-            // Aggiorna i metadati con il link cliccato
-            $data = $log->data;
-            $metadata = is_array($data) ? $data : [];
+            // Aggiorna i metadati (non il payload `data`) con il link cliccato
+            $metadata = $log->metadata ?? [];
             $clickedLinks = isset($metadata['clicked_links']) && is_array($metadata['clicked_links'])
                 ? $metadata['clicked_links']
                 : [];
@@ -57,9 +55,8 @@ class NotificationTrackingController extends Controller
                 $clickedLinks[$url] = now()->toIso8601String();
             }
 
-            /** @var array<string, mixed> $metadata */
             $metadata['clicked_links'] = $clickedLinks;
-            $log->update(['data' => $metadata]);
+            $log->update(['metadata' => $metadata]);
         }
 
         // Redirect all'URL originale

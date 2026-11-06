@@ -1,3 +1,11 @@
+---
+title: "Migrazioni del modulo Activity"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, database]
+qmd: "migrazioni del modulo activity activity"
+---
 # Migrazioni del modulo Activity
 
 Questo documento descrive le migrazioni del database per il modulo Activity. Ogni migrazione include un docblock e un type hint `Blueprint $table` per migliorare la leggibilità e l'analisi statica con PHPStan.
@@ -26,5 +34,7 @@ Questo documento descrive le migrazioni del database per il modulo Activity. Ogn
 - Docblock e type hint già presenti
 
 ## Collegamenti tra versioni di migrations.md
-* [migrations.md](../../../gdpr/docs/migrations.md)
-* [migrations.md](../../../notify/docs/migrations.md)
+* [migrations.md](../../../Gdpr/docs/migrations.md)
+* [migrations.md](../../../Notify/docs/migrations.md)
+* [migrations.md](../../../Gdpr/docs/migrations.md)
+* [migrations.md](../../../Notify/docs/migrations.md)

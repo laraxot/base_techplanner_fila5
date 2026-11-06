@@ -1,3 +1,11 @@
+---
+title: "Regole per i file di traduzione in Laraxot PTVX"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "regole per i file di traduzione in laraxot ptvx xot"
+---
 # Regole per i file di traduzione in Laraxot PTVX
 
 ## Struttura dei file di traduzione
@@ -140,7 +148,8 @@ return [
 
 ## Link alla documentazione correlata
 
-- [Errori comuni nei file di traduzione](/laravel/modules/lang/project_docs/errori_comuni_traduzione.md)
-- [Convenzioni di documentazione](/laravel/modules/xot/project_docs/documentation_conventions.md)
+- [Errori comuni nei file di traduzione](/laravel/Modules/Lang/project_docs/errori_comuni_traduzione.md)
+- [Convenzioni di documentazione](/laravel/Modules/Xot/project_docs/documentation_conventions.md)
 - [Documentazione principale sulle traduzioni](/project_docs/translation_rules.md)
 
+*Ultimo aggiornamento: 3 Giugno 2025*

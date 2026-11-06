@@ -1,3 +1,13 @@
+---
+title: "Componenti Filament - Guida di Riferimento"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Componenti Filament - Guida di Riferimento"
+---
 # Componenti Filament - Guida di Riferimento
 
 ## FileUpload Component
@@ -82,7 +92,7 @@ DatePicker::make('field_name')
     ->label('Label')
     ->format('Y-m-d')
     ->displayFormat('d/m/Y')
-    ->minDate('[DATE]')
+    ->minDate('2020-01-01')
     ->maxDate('today')
 ```
 
@@ -90,10 +100,10 @@ DatePicker::make('field_name')
 1. Controlla sempre la documentazione ufficiale di Filament per i metodi più recenti
 2. Usa l'autocompletamento dell'IDE per verificare i metodi disponibili
 3. Mantieni consistenza nei nomi dei metodi in tutto il progetto
-4. Aggiorna questa documentazione quando trovi nuovi metodi o pattern utili
+4. Aggiorna questa documentazione quando trovi nuovi metodi o pattern utili 
 ## Collegamenti tra versioni di FILAMENT_COMPONENTS.md
-* [FILAMENT_COMPONENTS.md](../../../xot/docs/filament_components.md)
-* [FILAMENT_COMPONENTS.md](../../../../themes/one/docs/filament_components.md)
+* [FILAMENT_COMPONENTS.md](../../../Xot/docs/FILAMENT_COMPONENTS.md)
+* [FILAMENT_COMPONENTS.md](../../../../Themes/One/docs/FILAMENT_COMPONENTS.md)
 
 ## Correzione e regole per XotBaseManageRelatedRecords
 
@@ -103,4 +113,5 @@ DatePicker::make('field_name')
 - Il metodo per le colonne della tabella deve essere sempre getTableColumns.
 - Ogni correzione deve essere documentata qui e in FILAMENT_TABLE_COLUMNS.md.
 
-**Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
+**Collegamento:** Vedi anche [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
+

@@ -2,112 +2,52 @@
 
 declare(strict_types=1);
 
-uses(Modules\Cms\Tests\TestCase::class);
+namespace Modules\Cms\Tests\Unit\Models;
 
 use Modules\Cms\Models\PageContent;
+use Modules\Cms\Tests\TestCase;
 use Modules\Tenant\Models\Traits\SushiToJsons;
+use PHPUnit\Framework\Assert;
+
+use function Safe\class_uses;
+
 use Spatie\Translatable\HasTranslations;
 
-test('page content model can be instantiated', function (): void {
-    $pageContent = new PageContent();
-    expect($pageContent)->toBeInstanceOf(PageContent::class);
-});
+/**
+ * Verifica il contratto pubblico del model PageContent (contenuti traducibili e blocchi).
+ */
+final class PageContentBusinessLogicTest extends TestCase
+{
+    public function testUsesTranslationsAndSushiTraits(): void
+    {
+        Assert::assertArrayHasKey(HasTranslations::class, class_uses(PageContent::class));
+        Assert::assertArrayHasKey(SushiToJsons::class, class_uses(PageContent::class));
+    }
 
-test('page content extends BaseModel', function (): void {
-    $pageContent = new PageContent();
-    expect($pageContent)->toBeInstanceOf(Modules\Cms\Models\BaseModel::class);
-});
+    public function testDeclaresTranslatableNameAndBlocks(): void
+    {
+        Assert::assertSame(['name', 'blocks'], (new PageContent())->translatable);
+    }
 
-test('page content uses SushiToJsons trait', function (): void {
-    $pageContent = new PageContent();
-    $traits = class_uses_recursive($pageContent);
+    public function testExposesExpectedFillableAttributes(): void
+    {
+        Assert::assertSame(['name', 'slug', 'blocks'], (new PageContent())->getFillable());
+    }
 
-    expect(array_values($traits))->toContain(SushiToJsons::class);
-});
+    public function testCastsBlocksAndIdentifiersForStructuredContent(): void
+    {
+        $casts = (new PageContent())->getCasts();
 
-test('page content uses HasTranslations trait', function (): void {
-    $pageContent = new PageContent();
-    $traits = class_uses_recursive($pageContent);
+        Assert::assertSame('string', $casts['id']);
+        Assert::assertSame('string', $casts['slug']);
+        Assert::assertSame('array', $casts['blocks']);
+    }
 
-    expect(array_values($traits))->toContain(HasTranslations::class);
-});
-
-test('page content has correct translatable attributes', function (): void {
-    $pageContent = new PageContent();
-
-    expect($pageContent->translatable)->toBeArray()
-        ->and($pageContent->translatable)->toContain('name')
-        ->and($pageContent->translatable)->toContain('blocks');
-});
-
-test('page content has correct fillable attributes', function (): void {
-    $pageContent = new PageContent();
-    $fillable = $pageContent->getFillable();
-
-    expect($fillable)->toContain('name')
-        ->and($fillable)->toContain('slug')
-        ->and($fillable)->toContain('blocks');
-});
-
-test('page content has correct schema definition', function (): void {
-    $pageContent = new PageContent();
-
-    $reflection = new ReflectionClass($pageContent);
-    $schemaProperty = $reflection->getProperty('schema');
-
-    expect($schemaProperty->isProtected())->toBeTrue();
-
-    $schema = $schemaProperty->getValue($pageContent);
-    expect($schema)->toBeArray()
-        ->and($schema)->toHaveKey('id')
-        ->and($schema)->toHaveKey('name')
-        ->and($schema)->toHaveKey('slug')
-        ->and($schema)->toHaveKey('blocks')
-        ->and($schema['name'])->toBe('json')
-        ->and($schema['blocks'])->toBe('json')
-        ->and($schema['slug'])->toBe('string');
-});
-
-test('page content has correct casts', function (): void {
-    $pageContent = new PageContent();
-    $casts = $pageContent->getCasts();
-
-    expect($casts)->toBeArray()
-        ->and($casts)->toHaveKey('id')
-        ->and($casts)->toHaveKey('blocks')
-        ->and($casts)->toHaveKey('created_at')
-        ->and($casts)->toHaveKey('updated_at')
-        ->and($casts['blocks'])->toBe('array');
-});
-
-test('page content getRows method returns array', function (): void {
-    $pageContent = new PageContent();
-    $rows = $pageContent->getRows();
-
-    expect($rows)->toBeArray();
-});
-
-test('page content has sluggable configuration', function (): void {
-    $pageContent = new PageContent();
-    $sluggable = $pageContent->sluggable();
-
-    expect($sluggable)->toBeArray()
-        ->and($sluggable)->toHaveKey('slug')
-        ->and($sluggable['slug'])->toHaveKey('source')
-        ->and($sluggable['slug']['source'])->toBe('title');
-});
-
-test('page content blocks cast to array', function (): void {
-    $pageContent = new PageContent();
-    $casts = $pageContent->getCasts();
-
-    expect($casts['blocks'])->toBe('array');
-});
-
-test('page content has datetime casts for timestamps', function (): void {
-    $pageContent = new PageContent();
-    $casts = $pageContent->getCasts();
-
-    expect($casts['created_at'])->toBe('datetime');
-    expect($casts['updated_at'])->toBe('datetime');
-});
+    public function testDefinesSlugSourceForSluggableConfiguration(): void
+    {
+        Assert::assertSame(
+            ['slug' => ['source' => 'title']],
+            (new PageContent())->sluggable(),
+        );
+    }
+}

@@ -1,3 +1,11 @@
+---
+title: "Errore: No hint path defined for [activity]"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, errori]
+qmd: "errore: no hint path defined for [activity] activity"
+---
 # Errore: No hint path defined for [activity]
 
 ## Descrizione dell'Errore
@@ -471,14 +479,24 @@ docker-compose restart app
 ### Documentazione Correlata
 - [Activity Module - README](../readme.md)
 - [XotBaseServiceProvider Architecture](../../xot/docs/service-provider-architecture.md)
-- [Xot Module - README](../../xot/docs/readme.md)
+- [Xot Module - README](../../../Xot/docs/README.md)
 
 ### Altri Moduli con Activity Log
 - [IndennitaResponsabilita - Activity Log Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 
 ### Sistema Architecture
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md) - Architettura completa del sistema ServiceProvider
+- [Activity Module - README](../README.md)
+- [XotBaseServiceProvider Architecture](../../Xot/docs/service-provider-architecture.md)
+- [Xot Module - README](../../../Xot/docs/README.md)
+
+### Altri Moduli con Activity Log
+- [IndennitaResponsabilita - Activity Log Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
+
+### Sistema Architecture
+- [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md) - Architettura completa del sistema ServiceProvider
 - [Laraxot Conventions](../../../docs/laraxot-conventions.md) - Convenzioni generali
+- [Laraxot Conventions](../../../../docs/laraxot-conventions.md) - Convenzioni generali
 
 ---
 

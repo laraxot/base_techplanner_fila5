@@ -1,3 +1,15 @@
+---
+title: "spatie email usage guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie email usage guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # Guida all'utilizzo di SpatieEmail
 
 ## Introduzione
@@ -6,12 +18,17 @@ Questa guida illustra come utilizzare la classe `SpatieEmail` per inviare email 
 
 ## Collegamenti correlati
 
-- [README del modulo Notify](./readme.md)
+- [README del modulo Notify](./README.md)
+- [Documentazione Email Templates](./EMAIL_TEMPLATES.md)
+- [Email Specifiche per Dottori](./DOCTOR_EMAILS.md)
+- [Implementazione Database Mail](./database-mail.md)
+- [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
+- [Modulo Xot](../../../Xot/docs/README.md)
 - [Documentazione Email Templates](./email_templates.md)
 - [Email Specifiche per Dottori](./doctor_emails.md)
 - [Implementazione Database Mail](./database-mail.md)
 - [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
-- [Modulo Xot](../../../xot/docs/readme.md)
+- [Modulo Xot](../../Xot/docs/README.md)
 
 ## Implementazione attuale
 

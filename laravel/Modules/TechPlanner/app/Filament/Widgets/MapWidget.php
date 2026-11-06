@@ -6,7 +6,6 @@ namespace Modules\TechPlanner\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
-use Override;
 
 class MapWidget extends XotBaseWidget
 {
@@ -16,11 +15,8 @@ class MapWidget extends XotBaseWidget
     protected int|string|array $columnSpan = 'full';
 
     /**
-     * Get the form schema for the widget.
-     *
-     * @return array<string, Component>
+     * @return array<int, Component>
      */
-    #[Override]
     public function getFormSchema(): array
     {
         return [];

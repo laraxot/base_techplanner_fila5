@@ -1,3 +1,11 @@
+---
+title: "Migrations - Documentazione Consolidata DRY + KISS"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "migrations - documentazione consolidata dry + kiss xot"
+---
 # Migrations - Documentazione Consolidata DRY + KISS
 
 > **🎯 Single Source of Truth**: Questo documento centralizza TUTTA la documentazione migrazioni del progetto
@@ -498,6 +506,6 @@ rm Modules/<nome progetto>/project_docs/database/migrations.md
 **📈 Beneficio**: 96% riduzione duplicazioni, manutenzione semplificata
 **🔗 Vedi anche**: [database-guidelines.md](database-guidelines.md) | [best-practices.md](best-practices.md)
 
-**Aggiornato**: [DATE]
+**Aggiornato**: 2025-08-07
 **Categoria**: database
 **Priorità**: CRITICA

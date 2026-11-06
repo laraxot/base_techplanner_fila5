@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Spatie\Permission\Contracts\Permission;
+use Spatie\Permission\Contracts\Role;
 use Spatie\Permission\Exceptions\PermissionDoesNotExist;
 
 /**
@@ -15,7 +16,7 @@ use Spatie\Permission\Exceptions\PermissionDoesNotExist;
  *
  * @phpstan-require-extends Model
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 interface ModelProfileContract extends ModelContract
 {
@@ -30,19 +31,19 @@ interface ModelProfileContract extends ModelContract
     /**
      * Assign the given role to the model.
      *
-     * @param  array<int, string|int|\Spatie\Permission\Contracts\Role>|string|int|\Spatie\Permission\Contracts\Role|Collection<int, \Spatie\Permission\Contracts\Role>  $roles
+     * @param  array<int, string|int|Role>|string|int|Role|Collection<int, Role>  $roles
      * @return $this
      */
-    public function assignRole(array|string|int|\Spatie\Permission\Contracts\Role|Collection $roles = [
+    public function assignRole(array|string|int|Role|Collection $roles = [
     ]);
 
     /**
      * Determine if the model has (one of) the given role(s).
      *
-     * @param  string|int|array<int, string|int|\Spatie\Permission\Contracts\Role>|\Spatie\Permission\Contracts\Role|Collection<int, \Spatie\Permission\Contracts\Role>  $roles
+     * @param  string|int|array<int, string|int|Role>|Role|Collection<int, Role>  $roles
      */
     public function hasRole(
-        string|int|array|\Spatie\Permission\Contracts\Role|Collection $roles,
+        string|int|array|Role|Collection $roles,
         ?string $guard = null,
     ): bool;
 
@@ -51,9 +52,9 @@ interface ModelProfileContract extends ModelContract
      *
      * Alias to hasRole() but without Guard controls
      *
-     * @param  string|int|array<int, string|int|\Spatie\Permission\Contracts\Role>|\Spatie\Permission\Contracts\Role|Collection<int, \Spatie\Permission\Contracts\Role>  $roles
+     * @param  string|int|array<int, string|int|Role>|Role|Collection<int, Role>  $roles
      */
-    public function hasAnyRole(string|int|array|\Spatie\Permission\Contracts\Role|Collection $roles = [
+    public function hasAnyRole(string|int|array|Role|Collection $roles = [
     ]): bool;
 
     /**
@@ -66,7 +67,8 @@ interface ModelProfileContract extends ModelContract
     /**
      * Create a new Eloquent query builder for the model.
      *
-     * @return Builder|static
+     * @param  Builder<Model>  $query
+     * @return Builder<Model>
      */
-    public function newEloquentBuilder(Builder $query);
+    public function newEloquentBuilder(Builder $query): Builder;
 }

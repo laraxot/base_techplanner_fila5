@@ -1,3 +1,15 @@
+---
+title: "no obvious comments"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "no obvious comments"
+issues: []
+discussions: []
+status: draft
+---
+
 # REGOLA CRITICA: NO Commenti Ovvi nel Codice
 
 ## Principio Fondamentale
@@ -93,7 +105,7 @@ public static function init(): self
 - Mantenere solo commenti che aggiungono valore reale
 
 ## Collegamenti
-- [../../docs/clean-code-no-obvious-comments.md](../../../docs/clean-code-no-obvious-comments.md)
+- [../../../docs/clean-code-no-obvious-comments.md](../../../../docs/clean-code-no-obvious-comments.md)
 - [wizard-steps.md](wizard-steps.md)
 - [wizard-schema-separation.md](wizard-schema-separation.md)
 

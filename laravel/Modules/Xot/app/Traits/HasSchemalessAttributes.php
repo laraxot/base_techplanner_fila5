@@ -7,15 +7,20 @@ namespace Modules\Xot\Traits;
 use Illuminate\Database\Eloquent\Builder;
 use Spatie\SchemalessAttributes\SchemalessAttributes;
 
+use function Safe\json_encode;
+
 /**
  * Trait per implementare Schemaless Attributes in modo consistente.
  *
  * Fornisce metodi standard per lavorare con extra_attributes
  * seguendo le best practices di Spatie.
  *
+ * @property SchemalessAttributes|null $extra_attributes
+ *
  * @see https://github.com/spatie/laravel-schemaless-attributes
+ * @phpstan-ignore trait.unused
  */
-trait HasSchemalessAttributes
+trait HasSchemalessAttributes // @phpstan-ignore trait.unused
 {
     /**
      * Aggiunge extra_attributes al fillable.
@@ -36,17 +41,23 @@ trait HasSchemalessAttributes
      */
     protected function schemalessCasts(): array
     {
-        return array_merge($this->casts ?? [], [
+        /** @var array<string, string> $casts */
+        $casts = $this->casts;
+
+        return array_merge($casts, [
             'extra_attributes' => SchemalessAttributes::class,
         ]);
     }
 
     /**
      * Scope per filtrare per attributi schemaless.
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
     public function scopeWithExtraAttributes(Builder $query): Builder
     {
-        if (isset($this->extra_attributes) && is_object($this->extra_attributes)) {
+        if ($this->extra_attributes instanceof SchemalessAttributes) {
             return $this->extra_attributes->modelScope();
         }
 
@@ -55,6 +66,10 @@ trait HasSchemalessAttributes
 
     /**
      * Scope per query specifiche su extra_attributes.
+     *
+     * @param  Builder<static>  $query
+     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile da confrontare
+     * @return Builder<static>
      */
     public function scopeWhereExtraAttribute(Builder $query, string $key, mixed $value): Builder
     {
@@ -62,23 +77,46 @@ trait HasSchemalessAttributes
     }
 
     /**
-     * Get un valore da extra_attributes.
+     * Spatie persiste extra_attributes come array sul modello dopo set/forget.
+     * Re-idratare sempre il wrapper prima di leggere o scrivere.
      */
-    public function getExtraAttribute(string $key, mixed $default = null): mixed
+    protected function extraAttributesWrapper(): SchemalessAttributes
     {
-        return $this->extra_attributes?->get($key, $default) ?? $default;
+        if ($this->extra_attributes instanceof SchemalessAttributes) {
+            return $this->extra_attributes;
+        }
+
+        $raw = $this->attributes['extra_attributes'] ?? null;
+        if (is_array($raw)) {
+            $this->attributes['extra_attributes'] = json_encode($raw);
+        }
+
+        $wrapper = SchemalessAttributes::createForModel($this, 'extra_attributes');
+        $this->extra_attributes = $wrapper;
+
+        return $wrapper;
+    }
+
+    /**
+     * Get un valore da extra_attributes.
+     *
+     * @param  scalar|array<array-key, mixed>|null  $default  Fallback JSON-serializzabile
+     * @return mixed Valore schemaless (scalar|array|null nel dominio JSON)
+     */
+    public function getExtraValue(string $key, mixed $default = null): mixed
+    {
+        return $this->extraAttributesWrapper()->get($key, $default);
     }
 
     /**
      * Set un valore in extra_attributes.
+     *
+     * @param  scalar|array<array-key, mixed>|null  $value  Valore JSON-serializzabile
      */
-    public function setExtraAttribute(string $key, mixed $value): void
+    public function setExtraValue(string $key, mixed $value): void
     {
-        if (! $this->extra_attributes) {
-            $this->extra_attributes = new SchemalessAttributes;
-        }
-
-        $this->extra_attributes->set($key, $value);
+        $this->extraAttributesWrapper()->set($key, $value);
+        $this->syncExtraAttributesWrapper();
     }
 
     /**
@@ -88,7 +126,16 @@ trait HasSchemalessAttributes
      */
     public function getExtraAttributes(): array
     {
-        return $this->extra_attributes?->all() ?? [];
+        $raw = $this->extraAttributesWrapper()->all();
+        $result = [];
+
+        foreach ($raw as $key => $value) {
+            if (is_string($key)) {
+                $result[$key] = $value;
+            }
+        }
+
+        return $result;
     }
 
     /**
@@ -96,7 +143,7 @@ trait HasSchemalessAttributes
      */
     public function hasExtraAttribute(string $key): bool
     {
-        return $this->extra_attributes?->has($key) ?? false;
+        return $this->extraAttributesWrapper()->has($key);
     }
 
     /**
@@ -104,7 +151,18 @@ trait HasSchemalessAttributes
      */
     public function removeExtraAttribute(string $key): void
     {
-        $this->extra_attributes->forget($key);
+        $this->extraAttributesWrapper()->forget($key);
+        $this->syncExtraAttributesWrapper();
+    }
+
+    protected function syncExtraAttributesWrapper(): void
+    {
+        $raw = $this->attributes['extra_attributes'] ?? null;
+        if (is_array($raw)) {
+            $this->attributes['extra_attributes'] = json_encode($raw);
+        }
+
+        $this->extra_attributes = SchemalessAttributes::createForModel($this, 'extra_attributes');
     }
 
     /**

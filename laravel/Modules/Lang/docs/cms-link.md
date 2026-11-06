@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Collegamento al Modulo Cms"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Collegamento al Modulo Cms
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo Lang e il modulo Cms per quanto riguarda le traduzioni e l'internazionalizzazione.
@@ -8,7 +22,9 @@ Il modulo Lang fornisce il sistema di traduzione utilizzato dal modulo Cms nei s
 
 ## Convenzioni di Namespace e Struttura
 
-Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
 
 ## Punti di Integrazione
 
@@ -18,8 +34,12 @@ Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzi
 
 ## Collegamenti Bidirezionali
 
-- [Convenzioni Namespace Filament](../../cms/project_docs/convenzioni-namespace-filament.md)
-- [Lang Link nel modulo Cms](../../cms/project_docs/lang-link.md)
+- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md)
+- [Lang Link nel modulo Cms](../../Cms/project_docs/lang-link.md)
+- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md)
+- [Lang Link nel modulo Cms](../../Cms/project_docs/lang-link.md)
+- [Convenzioni Namespace Filament](../../Cms/project_docs/convenzioni-namespace-filament.md)
+- [Lang Link nel modulo Cms](../../Cms/project_docs/lang-link.md)
 
 ---
 
@@ -30,10 +50,10 @@ Quando aggiungi nuovi componenti Filament nel modulo Cms, ricorda di:
 3. Mantenere aggiornata la documentazione in entrambi i moduli
 
 ## Collegamenti tra versioni di cms-link.md
-* [cms-link.md](../../../xot/project_docs/cms-link.md)
-* [cms-link.md](../../../user/project_docs/cms-link.md)
-* [cms-link.md](../../../ui/project_docs/cms-link.md)
-* [cms-link.md](../../../lang/project_docs/cms-link.md)
+* [cms-link.md](../../../Xot/project_docs/cms-link.md)
+* [cms-link.md](../../../User/project_docs/cms-link.md)
+* [cms-link.md](../../../UI/project_docs/cms-link.md)
+* [cms-link.md](../../../Lang/project_docs/cms-link.md)
 # Collegamento al Modulo Cms
 
 Questo documento descrive le relazioni e i collegamenti tra il modulo Lang e il modulo Cms per quanto riguarda le traduzioni e l'internazionalizzazione.
@@ -44,7 +64,9 @@ Il modulo Lang fornisce il sistema di traduzione utilizzato dal modulo Cms nei s
 
 ## Convenzioni di Namespace e Struttura
 
-Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
+Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md) che si integrano con il sistema di traduzioni di questo modulo.
 
 ## Punti di Integrazione
 
@@ -54,8 +76,12 @@ Il modulo Cms segue specifiche convenzioni di namespace documentate in [Convenzi
 
 ## Collegamenti Bidirezionali
 
-- [Convenzioni Namespace Filament](../../cms/docs/convenzioni-namespace-filament.md)
-- [Lang Link nel modulo Cms](../../cms/docs/lang-link.md)
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Lang Link nel modulo Cms](../../Cms/docs/lang-link.md)
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Lang Link nel modulo Cms](../../Cms/docs/lang-link.md)
+- [Convenzioni Namespace Filament](../../Cms/docs/convenzioni-namespace-filament.md)
+- [Lang Link nel modulo Cms](../../Cms/docs/lang-link.md)
 
 ---
 
@@ -66,7 +92,11 @@ Quando aggiungi nuovi componenti Filament nel modulo Cms, ricorda di:
 3. Mantenere aggiornata la documentazione in entrambi i moduli
 
 ## Collegamenti tra versioni di cms-link.md
-* [cms-link.md](../../../xot/docs/cms-link.md)
-* [cms-link.md](../../../user/docs/cms-link.md)
-* [cms-link.md](../../../ui/docs/cms-link.md)
-* [cms-link.md](../../../lang/docs/cms-link.md)
+* [cms-link.md](../../../Xot/docs/cms-link.md)
+* [cms-link.md](../../User/docs/cms-link.md)
+* [cms-link.md](../../../UI/docs/cms-link.md)
+* [cms-link.md](../../../Lang/docs/cms-link.md)
+* [cms-link.md](../../../Lang/docs/cms-link.md)
+* [cms-link.md](../../../Lang/docs/cms-link.md)
+* [cms-link.md](../../../Lang/docs/cms-link.md)
+* [cms-link.md](../../../Lang/docs/cms-link.md)

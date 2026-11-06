@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Models;
 
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Activity\Database\Factories\StoredEventFactory;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent as SpatieStoredEvent;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventCollection;
 use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
-use Spatie\SchemalessAttributes\SchemalessAttributes;
+use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
 
 /**
  * Class StoredEvent.
@@ -23,7 +24,7 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property int $event_version
  * @property string $event_class
  * @property array<array-key, mixed> $event_properties
- * @property SchemalessAttributes $meta_data
+ * @property \Spatie\SchemalessAttributes\SchemalessAttributes $meta_data
  * @property string $created_at
  * @property string|null $updated_by
  * @property string|null $created_by
@@ -54,16 +55,30 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent withMetaDataAttributes()
  * @method static StoredEventFactory factory($count = null, $state = [])
  *
- * @mixin \Eloquent
+ * @property string|null $updated_at
+ *
+ * @method static EloquentStoredEventQueryBuilder<static>|StoredEvent whereUpdatedAt($value)
+ *
  */
 // @see Modules/Xot/docs/spatie-schemaless-attributes.md
 class StoredEvent extends SpatieStoredEvent
 {
+    /** > */
     use HasXotFactory;
 
+    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
     protected $connection = 'activity';
 
     protected $table = 'stored_events';
+
+    public function __construct(array $attributes = [])
+    {
+        parent::__construct($attributes);
+        if (app()->environment('testing')) {
+            $default = config('database.default');
+            $this->connection = is_string($default) ? $default : 'mysql';
+        }
+    }
 
     protected $fillable = [
         'id',

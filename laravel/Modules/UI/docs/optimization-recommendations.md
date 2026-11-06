@@ -1,3 +1,15 @@
+---
+title: "optimization recommendations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "optimization recommendations"
+issues: []
+discussions: []
+status: draft
+---
+
 # Raccomandazioni di Ottimizzazione - Modulo UI
 
 ## 🎯 Stato Attuale e Analisi
@@ -255,7 +267,7 @@ php artisan ui:accessibility-check
 
 ## Collegamenti
 
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Components Guide](components.md)
 - [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
 
@@ -507,7 +519,7 @@ php artisan ui:accessibility-check
 
 ## Collegamenti
 
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Components Guide](components.md)
 - [TableLayoutEnum Guide](table-layout-enum-complete-guide.md)
 

@@ -1,3 +1,15 @@
+---
+title: "file upload"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "file upload"
+issues: []
+discussions: []
+status: draft
+---
+
 # Componente FileUpload
 
 ## Collegamenti Bidirezionali
@@ -80,7 +92,7 @@ Forms\Components\FileUpload::make('document')
 ## Collegamenti Correlati
 
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/fields/file-upload)
-- [Gestione Upload in il progetto](../../../docs/upload-management.md)
-- [Convenzioni di Naming](../../../docs/convenzioni-naming-campi.md)
+- [Gestione Upload in il progetto](../../../../docs/upload-management.md)
+- [Convenzioni di Naming](../../../../docs/convenzioni-naming-campi.md)
 ## Collegamenti tra versioni di file-upload.md
 * [file-upload.md](../filament-components/file-upload.md)

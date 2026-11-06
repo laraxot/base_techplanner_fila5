@@ -1,5 +1,11 @@
 ---
 description: Regole di posizionamento dei test per il core Xot
+title: "Test Placement Guidelines (Xot)"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, testing]
+qmd: "test placement guidelines (xot) xot"
 ---
 
 # Test Placement Guidelines (Xot)
@@ -72,3 +78,4 @@ Dopo aver aggiunto o spostato test:
 - [ ] PHPStan livello 9+ passa senza errori
 - [ ] Documentazione aggiornata (questo file & root docs)
 
+*Ultimo aggiornamento: 2025-07-06 – aggiunte linee guida per prevenire posizionamenti errati (es. `MetatagDataTest`).*

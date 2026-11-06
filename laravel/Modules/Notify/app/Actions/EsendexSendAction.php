@@ -26,7 +26,7 @@ class EsendexSendAction
     public string $base_endpoint = 'https://app.messaggissima.it/API/v1.0/REST/';
 
     /**
-     * Sends an SMS message.
+     * @return array<string, mixed>
      */
     public function execute(SmsData $smsData): array
     {
@@ -41,30 +41,19 @@ class EsendexSendAction
             'message_type' => 'N',
             'returnCredits' => false,
             'recipient' => [$smsData->recipient],
-            'sender' => config('esendex.sender'),
-        ];
+            'sender' => config('esendex.sender')];
 
         $curlHandle = curl_init();
         curl_setopt($curlHandle, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curlHandle, CURLOPT_URL, $this->base_endpoint.'sms');
 
-        // Verifichiamo che i valori dell'array di autenticazione siano stringhe
-        if (! is_string($auth[0])) {
-            $auth[0] = '';
-        }
-
-        if (! is_string($auth[1])) {
-            $auth[1] = '';
-        }
-
         curl_setopt($curlHandle, CURLOPT_HTTPHEADER, [
             'Content-type: application/json',
             'user_key: '.$auth[0],
-            'Session_key: '.$auth[1],
-        ]);
+            'Session_key: '.$auth[1]]);
 
         curl_setopt($curlHandle, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($curlHandle, CURLOPT_POST, 1);
+        curl_setopt($curlHandle, CURLOPT_POST, true);
         curl_setopt($curlHandle, CURLOPT_POSTFIELDS, json_encode($data, JSON_THROW_ON_ERROR));
         $response = curl_exec($curlHandle);
         $info = curl_getinfo($curlHandle);
@@ -74,19 +63,19 @@ class EsendexSendAction
             return [];
         }
 
-        $res = json_decode(is_string($response) ? $response : (string) $response, true, 512, JSON_THROW_ON_ERROR);
+        /** @var array<string, mixed>|null $res */
+        $res = json_decode((string) $response, true, 512, JSON_THROW_ON_ERROR);
 
-        dddx($res);
         if (! is_array($res)) {
             throw new Exception('['.__LINE__.']['.class_basename($this).']');
         }
 
+        /** @var array<string, mixed> $res */
         return $res;
     }
 
     /**
-     * Authenticates the user given it's username and password.
-     * Returns the pair user_key, Session_key.
+     * @return array<int, string>|null
      */
     public function login(): ?array
     {

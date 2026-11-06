@@ -1,12 +1,20 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "page resource"
+issues: []
+discussions: []
 title: PageResource
 description: PageResource
 extends: _layouts.documentation
 section: content
+status: draft
 ---
 
 ## 🔗 Collegamenti
-- [Root – Gestione Contenuti](../../../project_docs/page-content-management.md)
+- [Root – Gestione Contenuti](../../../../docs/project/page-content-management.md)
 - [Blocchi di Contenuto](blocks.md)
 
 # PageResource {#page-resource}

@@ -1,3 +1,15 @@
+---
+title: "testing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing"
+issues: []
+discussions: []
+status: draft
+---
+
 # Testing Documentation
 
 ## Overview
@@ -175,7 +187,7 @@ protected function createApplication()
     $app = parent::createApplication();
     
     $app['config']->set([
-        'database.connections.gdpr.database' => 'quaeris_data_test',
+'database.connections.gdpr.database' => 'Quaeris_data_test',
     ]);
     
     return $app;
@@ -261,9 +273,9 @@ protected function createApplication()
 
 ### Internal Resources
 
-- [Testing Setup Guide](../../docs/testing-setup.md)
-- [Testing Best Practices](../../docs/testing-best-practices.md)
-- [Troubleshooting Guide](../../docs/troubleshooting.md)
+- [Testing Setup Guide](../../../docs/testing-setup.md)
+- [Testing Best Practices](../../../docs/testing-best-practices.md)
+- [Troubleshooting Guide](../../../../docs/troubleshooting.md)
 
 ## Testing Examples
 
@@ -368,5 +380,9 @@ Following these guidelines will ensure your GDPR module tests are:
 Remember: Good tests are the foundation of reliable software development.
 
 ---
-
 *
+
+## consent business logic test (2026-10)
+
+`GdprConsentBusinessLogicTest` verifica il model reale `Consent` (non la classe fantasma `GdprConsent`) con asserzioni PHPUnit pure e factory tipizzate (`createOne`).
+

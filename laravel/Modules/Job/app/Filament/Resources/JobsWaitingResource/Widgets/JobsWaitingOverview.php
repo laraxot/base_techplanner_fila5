@@ -1,14 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * ---.
  */
 
 namespace Modules\Job\Filament\Resources\JobsWaitingResource\Widgets;
 
-use Filament\Widgets\StatsOverviewWidget as BaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseStatsOverviewWidget as BaseWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
@@ -54,7 +53,7 @@ class JobsWaitingOverview extends BaseWidget
                 : '0';
 
             $totalTime = $totalSeconds > 0
-                ? $this->formatSeconds($totalSeconds).'s'
+                ? $this->formatSeconds($totalSeconds)
                 : '0';
         }
 

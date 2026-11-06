@@ -1,6 +1,18 @@
+---
+title: "model factory seeder audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "model factory seeder audit"
+issues: []
+discussions: []
+status: draft
+---
+
 # Model/Factory/Seeder Audit
 
-Generated: [DATE] 16:29
+Generated: 2025-08-22 16:29
 
 ## Coverage
 | Model | Factory | Seeded |

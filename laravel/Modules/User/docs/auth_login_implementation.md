@@ -1,11 +1,19 @@
+---
+title: "Implementazione Corretta della Pagina di Login"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "implementazione corretta della pagina di login user"
+---
 # Implementazione Corretta della Pagina di Login 
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/readme.md)
+- [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)
-- [Implementazione Auth Pages](/laravel/modules/user/docs/auth_pages_implementation.md)
-- [Volt Folio Auth](/laravel/modules/user/docs/volt_folio_auth_implementation.md)
+- [Regole Traduzioni](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Implementazione Auth Pages](/laravel/Modules/User/docs/AUTH_PAGES_IMPLEMENTATION.md)
+- [Volt Folio Auth](/laravel/Modules/User/docs/VOLT_FOLIO_AUTH_IMPLEMENTATION.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Analisi e Miglioramenti della Pagina di Login

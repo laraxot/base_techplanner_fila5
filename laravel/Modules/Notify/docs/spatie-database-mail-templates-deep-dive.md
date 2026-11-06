@@ -1,3 +1,15 @@
+---
+title: "spatie database mail templates deep dive"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie database mail templates deep dive"
+issues: []
+discussions: []
+status: draft
+---
+
 # Spatie Laravel Database Mail Templates - Analisi Approfondita
 
 ## Overview
@@ -506,7 +518,7 @@ $email = new SpatieEmail($user, 'welcome-user');
 
 $email->mergeData([
     'activation_code' => '123456',
-    'expires_at' => '[DATE] 12:00',
+    'expires_at' => '2025-10-30 12:00',
 ]);
 
 Mail::to($user->email)->send($email);
@@ -924,11 +936,10 @@ test('welcome email is sent', function () {
 - [SpatieEmail Class](../app/Emails/SpatieEmail.php)
 - [MailTemplate Model](../app/Models/MailTemplate.php)
 - [MailTemplateResource](../app/Filament/Resources/MailTemplateResource.php)
-- [Mail Layouts README](../resources/mail-layouts/readme.md)
+- [Mail Layouts README](../resources/mail-layouts/README.md)
 - [Spatie Translatable Integration](./spatie-translatable-integration.md)
 
 ---
-
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Versione Pacchetto**: spatie/laravel-database-mail-templates 3.7.1  
 **Compatibilità**: Laravel 12.x, PHP 8.3+

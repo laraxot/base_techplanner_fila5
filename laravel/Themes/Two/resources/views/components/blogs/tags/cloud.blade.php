@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 @props([
-    'title' => 'Argomenti Popolari',
+    'title' => __('pub_theme::blog.tags.title.title'),
     'tags' => [
         ['name' => 'Radioprotezione', 'count' => 45, 'slug' => 'radioprotezione'],
         ['name' => 'Normativa', 'count' => 38, 'slug' => 'normativa'],
@@ -35,13 +35,13 @@ declare(strict_types=1);
                 {{ $title }}
             </h3>
             <p class="text-gray-600">
-                Esplora gli argomenti più discussi nella community
+                {{ __('pub_theme::blog.tags.subtitle.message') }}
             </p>
         </div>
         
         <div class="flex flex-wrap gap-3 justify-center">
             @foreach($tags as $tag)
-                <a href="/it/blog?tag={{ $tag['slug'] }}" 
+                <a href="{{ route('blog', ['tag' => $tag['slug']]) }}" 
                    class="group inline-flex items-center px-4 py-2 rounded-lg font-medium transition-all duration-300 transform hover:scale-105 hover:-translate-y-1
                           bg-white border border-gray-200 text-gray-700 hover:border-blue-500 hover:text-blue-600 hover:shadow-md">
                     <span class="relative">

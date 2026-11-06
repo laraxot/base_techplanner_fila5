@@ -2,6 +2,10 @@
 
 declare(strict_types=1);
 
+use Illuminate\Contracts\Http\Kernel;
+use Modules\Xot\Datas\XotData;
+use Nwidart\Modules\Facades\Module;
+
 if (! defined('__DIR__')) {
     define('__DIR__', getcwd());
 }
@@ -60,7 +64,7 @@ if (! isset($app)) {
     $app = require $appPath;
 
     // Create an instance of the HTTP kernel
-    $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
+    $kernel = $app->make(Kernel::class);
 
     // Bootstrap the application for console commands
     $consoleKernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
@@ -68,12 +72,33 @@ if (! isset($app)) {
 }
 
 // Manually register the service providers for modules
-if (class_exists(Nwidart\Modules\Facades\Module::class)) {
-    foreach (\Nwidart\Modules\Facades\Module::getOrdered() as $module) {
+if (class_exists(Module::class)) {
+    foreach (Module::getOrdered() as $module) {
         // Assuming the service provider follows the {ModuleName}ServiceProvider convention
         $serviceProvider = "Modules\\{$module->getName()}\\Providers\\{$module->getName()}ServiceProvider";
         if (class_exists($serviceProvider)) {
             $app->register($serviceProvider);
         }
     }
+}
+
+/*
+|--------------------------------------------------------------------------
+| PHPStan analysis context: force TechPlanner main_module
+|--------------------------------------------------------------------------
+|
+| Larastan resolves Updater::deleter()/creator()/updater() BelongsTo targets via
+| XotData::getProfileClass(). Without a stable main_module, analysis can point
+| at a missing Fixcity Profile class from another tenant config snapshot.
+|
+*/
+if (class_exists(XotData::class)) {
+    config(['xra.main_module' => 'TechPlanner']);
+
+    $xotDataReflection = new ReflectionClass(XotData::class);
+    $instanceProperty = $xotDataReflection->getProperty('instance');
+    $instanceProperty->setAccessible(true);
+    $instanceProperty->setValue(null);
+
+    XotData::make();
 }

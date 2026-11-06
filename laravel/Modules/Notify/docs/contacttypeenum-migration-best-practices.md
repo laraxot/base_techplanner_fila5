@@ -1,3 +1,15 @@
+---
+title: "contacttypeenum migration best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contacttypeenum migration best practices"
+issues: []
+discussions: []
+status: draft
+---
+
 # ContactTypeEnum Migration Best Practices
 
 ## Overview
@@ -458,7 +470,7 @@ class ContactRequest extends FormRequest
 
 - [AddressItemEnum Pattern](../geo/docs/addressitemenum-migration-pattern.md)
 - [XotBaseMigration Documentation](../../xot/docs/migration-patterns.md)
-- [Filament Integration](../../docs/filament-integration.md)
+- [Filament Integration](../../../docs/filament-integration.md)
 - [Laravel Migration Best Practices](https://laravel.com/docs/migrations)
 
 ## Note Tecniche

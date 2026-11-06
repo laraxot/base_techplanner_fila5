@@ -2,6 +2,10 @@
 
 **Ultimo aggiornamento**: 2026-02-06  
 **Configurazione**: `.windsurf/mcp.json`
+# Status Server MCP - base_techplanner_fila4_mono
+
+**Ultimo aggiornamento**: 2025-01-27  
+**Configurazione**: `.windsurf/mcp.json` e `.cursor/mcp.json`
 
 ---
 
@@ -36,6 +40,44 @@
 13. **mui-mcp** — Documentazione Material UI accurata, zero hallucination
     - `npx -y @mui/mcp@latest`
     - Docs: https://mui.com/material-ui/getting-started/mcp/
+### Configurati e Funzionanti
+
+1. **laravel-boost** ⭐
+   - Documentazione nativa Laravel/Filament/Livewire
+   - Comandi Artisan, query database, Tinker
+   - **Alternative a mcp-package-docs deprecato**
+
+2. **filesystem**
+   - Accesso completo ai file del progetto
+   - Path: laravel, docs, public_html, bashscripts
+
+3. **memory**
+   - Knowledge graph persistente
+   - Memoria tra sessioni
+
+4. **sequential-thinking**
+   - Analisi problemi complessi
+   - Reasoning avanzato
+
+5. **fetch**
+   - HTTP requests
+   - Download risorse web
+
+6. **git**
+   - Operazioni git native
+   - Repository management
+
+7. **playwright**
+   - Browser automation
+   - Testing E2E
+
+8. **puppeteer**
+   - Browser automation alternativo
+   - Screenshot, PDF
+
+9. **mysql**
+   - Query database MySQL
+   - Script custom: `bashscripts/mcp/mysql-db-connector.js`
 
 ---
 
@@ -56,6 +98,7 @@
 | Figma MCP (Cursor Talk) | Richiede plugin Figma + Cursor specifico |
 | Magic UI MCP | Docs insufficienti |
 | tailwindcss-mcp-server | Ridondante con flowbite che include già contesto Tailwind |
+- **Alternativa**: Laravel Boost fornisce documentazione nativa
 
 ---
 
@@ -65,6 +108,9 @@
 # Verifica server configurati
 cat .windsurf/mcp.json | jq -r '.mcpServers | keys[]' | sort
 
+# Verifica assenza mcp-package-docs
+grep -c "mcp-package-docs" .windsurf/mcp.json .cursor/mcp.json
+# Output atteso: 0
 # Output atteso (2026-02-06):
 # asana, daisyui, deepwiki, fetch, filesystem, flowbite, git,
 # memory, mui-mcp, puppeteer, sequential-thinking, shadcn, time
@@ -74,6 +120,8 @@ cat .windsurf/mcp.json | jq -r '.mcpServers | keys[]' | sort
 
 ## 🔗 Collegamenti
 
+- [MCP Configuration](../laravel/Modules/Xot/docs/mcp-configuration-optimized.md)
+- [Memoria Rimozione](../.cursor/memories/mcp-package-docs-removed.md)
 - [MCP UI/UX Tema Two](../laravel/Themes/Two/docs/mcp-ui-ux.md)
 - [Configurazione Windsurf](../.windsurf/mcp.json)
 - [Prompt MCP](../bashscripts/tools/prompts/mcp.txt)

@@ -15,8 +15,8 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @property string $key
  * @property string|null $key_hash
  * @property int|null $value
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
  * @method static PulseEntryFactory factory($count = null, $state = [])
  * @method static Builder<static>|PulseEntry newModelQuery()
@@ -29,7 +29,7 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @method static Builder<static>|PulseEntry whereType($value)
  * @method static Builder<static>|PulseEntry whereValue($value)
  *
- * @property-read ProfileContract|null $deleter
+ * @property ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */

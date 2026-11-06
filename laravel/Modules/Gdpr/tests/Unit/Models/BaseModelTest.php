@@ -2,34 +2,25 @@
 
 declare(strict_types=1);
 
-uses(Modules\Gdpr\Tests\TestCase::class);
+namespace Modules\Gdpr\Tests\Unit\Models;
 
-use Illuminate\Database\Eloquent\Model;
 use Modules\Gdpr\Models\BaseModel;
+use PHPUnit\Framework\Assert;
 
-beforeEach(function () {
-    $this->baseModel = new class extends BaseModel {
+function makeGdprBaseModel(): BaseModel
+{
+    return new class extends BaseModel
+    {
         protected $table = 'test_gdpr_table';
     };
+}
+
+test('base model has correct table name', function (): void {
+    $baseModel = makeGdprBaseModel();
+    Assert::assertSame('test_gdpr_table', $baseModel->getTable());
 });
 
-test('base model extends eloquent model', function () {
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
-});
-
-test('base model has correct table name', function () {
-    expect($this->baseModel->getTable())->toBe('test_gdpr_table');
-});
-
-test('base model can be instantiated', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-});
-
-test('base model has proper inheritance chain', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
-});
-
-test('base model has timestamps enabled', function () {
-    expect($this->baseModel)->usesTimestamps()->toBeTrue();
+test('base model has timestamps enabled', function (): void {
+    $baseModel = makeGdprBaseModel();
+    Assert::assertTrue($baseModel->usesTimestamps());
 });

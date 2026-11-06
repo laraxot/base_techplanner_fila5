@@ -1,3 +1,15 @@
+---
+title: "cms themes link"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "cms themes link"
+issues: []
+discussions: []
+status: draft
+---
+
 # Collegamenti ai Temi nel Modulo Cms
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo UI e il modulo Cms per quanto riguarda i temi.
@@ -26,8 +38,8 @@ I componenti UI definiti in questo modulo vengono utilizzati nei temi attraverso
 
 ## Collegamenti ai Temi nella Root
 
-- [Compilazione Temi](../../../docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
-- [Theme Links](../../../docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
+- [Compilazione Temi](../../../../docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
+- [Theme Links](../../../../docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
 
 ## Collegamento Bidirezionale
 
@@ -62,8 +74,8 @@ I componenti UI definiti in questo modulo vengono utilizzati nei temi attraverso
 
 ## Collegamenti ai Temi nella Root
 
-- [Compilazione Temi](../../../project_docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
-- [Theme Links](../../../project_docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
+- [Compilazione Temi](../../../../docs/project/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
+- [Theme Links](../../../../docs/project/theme-links.md) - Collegamenti nella root alla documentazione sui temi
 
 ## Collegamento Bidirezionale
 

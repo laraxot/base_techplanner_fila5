@@ -1,3 +1,15 @@
+---
+title: "register page wcag"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "register page wcag"
+issues: []
+discussions: []
+status: draft
+---
+
 # Register Page WCAG Compliance
 
 ## Overview
@@ -195,7 +207,7 @@ a:focus-visible {
 #### Page Titles
 ```html
 <!-- Unique and descriptive page titles -->
-<title>{{ __('gdpr::register.meta.title') }} - LaravelPizza</title>
+<title>{{ __('gdpr::register.meta.title') }} - <nome progetto></title>
 ```
 
 ## Understandable
@@ -226,7 +238,7 @@ p + p {
 }
 ```
 
-### 3.2 Predictable (Level A)
+### 3.2 <nome progetto>able (Level A)
 
 #### Consistent Navigation
 ```html

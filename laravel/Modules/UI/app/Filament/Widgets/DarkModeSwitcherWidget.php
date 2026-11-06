@@ -7,14 +7,16 @@ namespace Modules\UI\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 use Illuminate\Contracts\View\View;
 use Illuminate\Support\Facades\Cookie;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\UI\Datas\UIConfigData;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
-final class DarkModeSwitcherWidget extends XotBaseWidget
+final class DarkModeSwitcherWidget extends XotBaseSchemaWidget
 {
     public ?array $data = [];
 
     public bool $darkMode = false;
 
+    /** @var view-string */
     protected string $view = 'ui::filament.widgets.dark-mode-switcher';
 
     public function mount(): void
@@ -38,10 +40,17 @@ final class DarkModeSwitcherWidget extends XotBaseWidget
      *
      * @return array<int, Component>
      */
-    #[\Override]
     public function getFormSchema(): array
     {
         return [];
+    }
+
+    /**
+     * Disabilitabile dalla SettingPage di UI (default: visibile).
+     */
+    public static function canView(): bool
+    {
+        return UIConfigData::make()->dark_mode_switcher_enabled;
     }
 
     public function render(): View

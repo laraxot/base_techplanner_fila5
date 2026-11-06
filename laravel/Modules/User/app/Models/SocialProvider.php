@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * inspired by  DutchCodingCompany\FilamentSocialite.
  */
@@ -13,16 +12,16 @@ use Modules\Tenant\Models\Traits\SushiToPhpArray;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
- * @property int|null             $id
- * @property string|null          $name
- * @property array|null           $scopes
- * @property array|null           $parameters
- * @property bool|null            $stateless
- * @property bool|null            $active
- * @property bool|null            $socialite
- * @property string|null          $svg
- * @property string|null          $client_id
- * @property string|null          $client_secret
+ * @property int|null $id
+ * @property string|null $name
+ * @property array<int, string>|null $scopes
+ * @property array<string, mixed>|null $parameters
+ * @property bool|null $stateless
+ * @property bool|null $active
+ * @property bool|null $socialite
+ * @property string|null $svg
+ * @property string|null $client_id
+ * @property string|null $client_secret
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
@@ -50,9 +49,9 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder|SocialProvider whereUpdatedAt($value)
  * @method static Builder|SocialProvider whereUpdatedBy($value)
  *
- * @mixin IdeHelperSocialProvider
- *
  * @property ProfileContract|null $deleter
+ *
+ * @method static \Modules\User\Database\Factories\SocialProviderFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
  */
@@ -60,7 +59,6 @@ class SocialProvider extends BaseModel
 {
     use SushiToPhpArray;
 
-    /** @var bool */
     public $incrementing = false;
 
     /** @var list<string> */
@@ -113,9 +111,15 @@ class SocialProvider extends BaseModel
         'updated_by' => 'string',
     ];
 
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public function getRows(): array
     {
-        return $this->getSushiRows();
+        /** @var array<int, array<string, mixed>> $rows */
+        $rows = $this->getSushiRows();
+
+        return $rows;
     }
 
     /** @return array<string, string> */

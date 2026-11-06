@@ -1,3 +1,11 @@
+---
+title: "Best Practices per Model States e Transizioni Custom"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "best practices per model states e transizioni custom xot"
+---
 # Best Practices per Model States e Transizioni Custom
 
 ## Parametri aggiuntivi nelle transizioni custom
@@ -10,4 +18,4 @@
   - [ ] La documentazione delle transizioni specifica i parametri richiesti
 - **Collegamenti**:
   - [Errori comuni nelle transizioni custom (<nome progetto>)](../../<nome progetto>/docs/model-states-errors.md)
-  - [README.md centrale](../../../docs/readme.md)
+  - [README.md centrale](../../../docs/README.md)

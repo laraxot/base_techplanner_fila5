@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Enums;
 
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Traits\EnumTrait;
+
 /**
  * Enum per i driver Telegram supportati
  *
@@ -12,6 +15,8 @@ namespace Modules\Notify\Enums;
  */
 enum TelegramDriverEnum: string
 {
+    use EnumTrait;
+
     case TELEGRAM = 'telegram';
     case BOTAPI = 'botapi';
     case LARAVEL_TELEGRAM = 'laravel-telegram';
@@ -26,8 +31,7 @@ enum TelegramDriverEnum: string
         return [
             self::TELEGRAM->value => 'Telegram',
             self::BOTAPI->value => 'Bot API',
-            self::LARAVEL_TELEGRAM->value => 'Laravel Telegram',
-        ];
+            self::LARAVEL_TELEGRAM->value => 'Laravel Telegram'];
     }
 
     /**
@@ -38,10 +42,9 @@ enum TelegramDriverEnum: string
     public static function labels(): array
     {
         return [
-            self::TELEGRAM->value => __('notify::telegram.drivers.telegram'),
-            self::BOTAPI->value => __('notify::telegram.drivers.botapi'),
-            self::LARAVEL_TELEGRAM->value => __('notify::telegram.drivers.laravel_telegram'),
-        ];
+            self::TELEGRAM->value => SafeStringCastAction::cast(__('notify::telegram.drivers.telegram')),
+            self::BOTAPI->value => SafeStringCastAction::cast(__('notify::telegram.drivers.botapi')),
+            self::LARAVEL_TELEGRAM->value => SafeStringCastAction::cast(__('notify::telegram.drivers.laravel_telegram'))];
     }
 
     /**

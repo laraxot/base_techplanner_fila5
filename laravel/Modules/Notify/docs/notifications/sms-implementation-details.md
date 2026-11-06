@@ -1,3 +1,15 @@
+---
+title: "sms implementation details"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms implementation details"
+issues: []
+discussions: []
+status: draft
+---
+
 # Implementazione SMS : Guida Dettagliata
 
 Questa documentazione fornisce una guida dettagliata all'implementazione delle notifiche SMS , con confronto tra diversi provider e best practices specifiche per il contesto italiano.
@@ -281,7 +293,8 @@ return [
         'username' => env('SMSHOSTING_USERNAME'),
         'password' => env('SMSHOSTING_PASSWORD'),
         'sender' => env('SMSHOSTING_SENDER', '<nome progetto>'),
-        'sender' => env('SMSHOSTING_SENDER', 'SaluteOra'),
+'sender' => env('SMSHOSTING_SENDER', 'Quaeris'),
+'sender' => env('SMSHOSTING_SENDER', 'App'),
     ],
 ];
 ```
@@ -731,14 +744,18 @@ Quando si inviano SMS, è necessario rispettare le normative GDPR:
 
 ### Template SMS GDPR-Compliant
 
+```
+
 ```php
 public function toTwilio($notifiable)
 {
     return (new TwilioSmsMessage())
         ->content("<nome progetto>: Promemoria appuntamento {$this->appointment->formatted_date}. 
         Per annullare rispondere NO. Per info: <nome progetto>.it/privacy");
-        ->content("SaluteOra: Promemoria appuntamento {$this->appointment->formatted_date}. 
-        Per annullare rispondere NO. Per info: saluteora.it/privacy");
+->content("Quaeris: Promemoria appuntamento {$this->appointment->formatted_date}. 
+        Per annullare rispondere NO. Per info: Quaeris.it/privacy");
+->content("App: Promemoria appuntamento {$this->appointment->formatted_date}. 
+        Per annullare rispondere NO. Per info: App.it/privacy");
 }
 ```
 

@@ -3,7 +3,7 @@
 ## ⚠️ ERRORE CRITICO DA NON RIPETERE
 
 ### Descrizione dell'Errore
-Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece dell'alias dinamico `pub_theme::` nelle configurazioni CMS e nei componenti.
+Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `themes.two::`, `zero::`) invece dell'alias dinamico `pub_theme::` nelle configurazioni CMS e nei componenti. Anche `pub_theme:` (manca un `:`) è errato.
 
 ### Regola Fondamentale
 
@@ -31,12 +31,15 @@ Utilizzo di namespace specifico del tema (`sixteen::`, `two::`, `zero::`) invece
 {
     "view": "sixteen::components.blocks.hero.main",
     "view": "two::components.blocks.navigation.simple",
+    "view": "themes.two::components.sections.header.v1",
     "view": "zero::layouts.app"
 }
 ```
 
 ```blade
 @include('sixteen::components.header')
+@include('themes.two::components.sections.header_bi5', ['blocks' => $blocks])
+@include('pub_theme:components.header')  {{-- ERRORE: manca : in pub_theme:: --}}
 <x-sixteen::button>Click me</x-sixteen::button>
 @lang('sixteen::navigation.home')
 ```
@@ -207,6 +210,11 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 ## Changelog Errori Risolti
 
+### 2026-06-06 — `/it` serviva Sixteen invece di Two
+**Causa**: override temporaneo `pub_theme => 'Sixteen'` in `xra.php` per fix partial `language-switcher` (esistono solo nel header Design Comuni di Sixteen). Confusione con doc BMAD §7 “Folio FO shell (Sixteen)” che descrive **pattern Fixcity**, non il tenant TechPlanner.
+**Soluzione**: ripristinare `'pub_theme' => 'Two'` in `xra.php`; allineare header CMS ai partial del tema Two; `php artisan config:clear && view:clear`.
+**Prevenzione**: non cambiare tema per workaround view — portare i partial mancanti nel tema canonico o adattare `header.json`.
+
 ### 2025-01-06 - Errore "view not found: pub_theme::components.blocks.navigation.simple"
 **Causa**: `CmsServiceProvider` non registrato in `config/app.php`
 **Impatto**: Namespace `pub_theme::` non risolto, blocchi CMS non funzionanti
@@ -223,7 +231,10 @@ Ogni volta che si lavora con temi e CMS, consultare questa regola per garantire 
 
 - [CMS System Documentation](./cms_system.md)
 - [Theme Components](./theme_components.md)
+- [CMS System Documentation](./cms_system.md)
+- [Theme Components](./theme_components.md)
 - [Configurazione Tema](../laravel/config/local/techplanner/xra.php)
 - [ThemeServiceProvider Sixteen](../laravel/Themes/Sixteen/app/Providers/ThemeServiceProvider.php)
 - [CmsServiceProvider](../laravel/Modules/Cms/app/Providers/CmsServiceProvider.php)
 
+*Ultimo aggiornamento: Gennaio 2025*

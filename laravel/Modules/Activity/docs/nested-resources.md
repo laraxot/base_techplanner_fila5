@@ -1,3 +1,11 @@
+---
+title: "Activity Module - Nested Resource Implementation Guide"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "activity module - nested resource implementation guide activity"
+---
 # Activity Module - Nested Resource Implementation Guide
 
 ## Overview
@@ -44,12 +52,14 @@ The Activity module provides comprehensive activity logging and audit trail func
 
 ### 5. Customer Activity Tracking
 **Parent Resource:** CustomerResource (from Quaeris module)
+**Parent Resource:** CustomerResource (from healthcare_app module)
 **Child Resource:** ActivityResource
 **Relationship:** Customer (as subject) hasMany Activities
 **Justification:** Track all activities related to customer records for business audit trails.
 
 ### 6. Survey Activity Logs
 **Parent Resource:** SurveyPdfResource (from Quaeris module)
+**Parent Resource:** SurveyPdfResource (from healthcare_app module)
 **Child Resource:** ActivityResource
 **Relationship:** SurveyPdf (as subject) hasMany Activities
 **Justification:** Monitor all activities related to specific surveys for compliance and tracking.
@@ -161,7 +171,7 @@ Pattern minimo (quando applicabile):
 
 ### 1. Intelligent Activity Analysis
 - Automated anomaly detection in activity patterns
-- Predictive analytics for security threats
+- <nome progetto>ive analytics for security threats
 - Machine learning-based activity categorization
 
 ### 2. Advanced Compliance Features

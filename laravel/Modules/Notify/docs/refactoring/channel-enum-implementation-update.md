@@ -1,3 +1,15 @@
+---
+title: "channel enum implementation update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "channel enum implementation update"
+issues: []
+discussions: []
+status: draft
+---
+
 # ChannelEnum Implementation Update
 
 **Date**: 2025-12-18  
@@ -90,8 +102,8 @@ This document records the successful implementation of ChannelEnum in `SendRecor
 
 ## Related Documentation
 
-- [Existing ChannelEnum documentation](../docs/refactoring/channel-enum-refactoring.md)
-- [Enum-driven architecture patterns](../docs/patterns/enum-architecture.md)
+- [Existing ChannelEnum documentation](../../docs/refactoring/channel-enum-refactoring.md)
+- [Enum-driven architecture patterns](../../docs/patterns/enum-architecture.md)
 
 ## Verification
 
@@ -116,7 +128,6 @@ Channel-specific logic can be extended by adding methods to ChannelEnum:
 - Channel-specific processing rules
 
 ---
-
 **Implemented by**: iFlow CLI  
 **Pattern**: Enum-driven architecture  
 **Compliance**: DRY + KISS + Type Safety

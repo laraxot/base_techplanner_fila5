@@ -6,7 +6,7 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Themes\Sixteen\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 /**
  * Evento lanciato quando un utente si autentica con successo tramite SPID
@@ -18,8 +18,11 @@ class SpidAuthenticated
 {
     use Dispatchable, SerializesModels;
 
+    /**
+     * @param  array<string, mixed>  $spidAttributes
+     */
     public function __construct(
-        public User $user,
+        public UserContract $user,
         public array $spidAttributes
     ) {}
 
@@ -28,7 +31,9 @@ class SpidAuthenticated
      */
     public function getProvider(): ?string
     {
-        return $this->spidAttributes['provider'] ?? null;
+        $value = $this->spidAttributes['provider'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
@@ -36,7 +41,9 @@ class SpidAuthenticated
      */
     public function getAuthLevel(): ?int
     {
-        return $this->spidAttributes['auth_level'] ?? null;
+        $value = $this->spidAttributes['auth_level'] ?? null;
+
+        return is_int($value) ? $value : null;
     }
 
     /**
@@ -44,7 +51,9 @@ class SpidAuthenticated
      */
     public function getFiscalCode(): ?string
     {
-        return $this->spidAttributes['fiscal_code'] ?? null;
+        $value = $this->spidAttributes['fiscal_code'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
@@ -58,6 +67,9 @@ class SpidAuthenticated
     /**
      * Ottiene tutti gli attributi SPID ricevuti
      */
+    /**
+     * @return array<string, mixed>
+     */
     public function getSpidAttributes(): array
     {
         return $this->spidAttributes;
@@ -65,6 +77,9 @@ class SpidAuthenticated
 
     /**
      * Ottiene attributi specifici per logging sicuro
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function getLoggingData(): array
     {

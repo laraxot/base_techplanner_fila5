@@ -1,6 +1,19 @@
+---
+title: "translation files update conflict 67b1d4"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation files update conflict 67b1d4"
+issues: []
+discussions: []
+status: draft
+---
+
 # Aggiornamento File di Traduzione - Gennaio 2025
 
 ## Data Aggiornamento
+2025-01-27
 [DATE]
 
 ## File Modificati
@@ -119,6 +132,9 @@ return [
 
 ## Collegamenti
 
+- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Standards](./translation-standards.md)
+- [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../xot/docs/translations-best-practices.md)

@@ -1,3 +1,11 @@
+---
+title: "Development Guidelines - Xot Module"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "development guidelines - xot module xot"
+---
 # Development Guidelines - Xot Module
 
 ## Panoramica
@@ -23,8 +31,8 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 ## Correzioni Implementate
 
 ### Moduli Corretti
-- [FormBuilder FieldOption Model](../formbuilder/docs/phpstan-corrections.md)
-- [Lang Console Commands](../lang/docs/phpstan-corrections.md)
+- [FormBuilder FieldOption Model](../FormBuilder/docs/phpstan-corrections.md)
+- [Lang Console Commands](../Lang/docs/phpstan-corrections.md)
 
 ## Principi di Correzione
 
@@ -45,8 +53,8 @@ Questo documento fornisce linee guida generali per lo sviluppo e la qualità del
 
 ## Collegamenti Correlati
 
-- [FormBuilder PHPStan Corrections](../formbuilder/docs/phpstan-corrections.md)
-- [Lang PHPStan Corrections](../lang/docs/phpstan-corrections.md)
+- [FormBuilder PHPStan Corrections](../FormBuilder/docs/phpstan-corrections.md)
+- [Lang PHPStan Corrections](../Lang/docs/phpstan-corrections.md)
 - [Xot Architecture](./architecture.md)
 
 ## Note per Sviluppo Futuro

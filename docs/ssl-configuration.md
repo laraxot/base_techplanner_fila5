@@ -152,7 +152,34 @@ bash bashscripts/utils/verify_ssl_dns.sh
 
 ## Collegamenti
 
+<<<<<<< .merge_file_FQUHHk
 - [Installazione dettagliata e troubleshooting](./ssl-certificate-installation.md)
 - [Deploy e validazione](./deployment-and-validation.md)
 - [Tema Two – deploy](../laravel/Themes/Two/docs/deployment-and-validation.md)
+=======
+- [Installazione Certificato SSL](./ssl-certificate-installation.md)
+- [Documentazione Nginx](https://nginx.org/en/docs/)
+When running the application with SSL/HTTPS, you may need to update your .env file to reflect the secure URL:
+
+```
+APP_URL=https://techplanner.local
+```
+
+This ensures:
+- Asset URLs are generated with HTTPS
+- Redirects maintain the HTTPS protocol
+- Session cookies are properly handled with secure flag when appropriate
+
+The SSL certificates have been generated and configured in Apache with the setup script located at:
+- `bashscripts/ssl/setup_techplanner_ssl.sh`
+
+The certificates are valid for 365 days and are self-signed, which is appropriate for development environments but should be replaced with certificates from a trusted Certificate Authority in production.
+
+To access the application securely after SSL setup:
+1. Run the SSL setup script: `bash bashscripts/ssl/setup_techplanner_ssl.sh`
+2. Update your APP_URL in .env to use https://techplanner.local
+3. Access the application at: https://techplanner.local
+
+Note: You may need to accept the self-signed certificate warning in your browser.
+>>>>>>> .merge_file_XvE13z
 - [Documentazione Certbot](https://certbot.eff.org/docs/)

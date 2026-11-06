@@ -1,3 +1,15 @@
+---
+title: "conflitti git"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflitti git"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitti Git - Modulo Notify
 
 ## Conflitti nelle definizioni dei componenti JSON
@@ -107,4 +119,4 @@ Mantenuta la versione con metodo `renderTemplate()`, assicurando separazione tra
 
 ## Collegamenti alla documentazione centrale
 
-Per una panoramica completa di tutti i conflitti risolti, vedere la [documentazione centrale sulla risoluzione dei conflitti git](../../../../docs/risoluzione_conflitti_git.md). 
+Per una panoramica completa di tutti i conflitti risolti, vedere la [documentazione centrale sulla risoluzione dei conflitti git](../../../../../docs/risoluzione_conflitti_git.md). 

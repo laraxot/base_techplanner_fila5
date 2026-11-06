@@ -1,3 +1,11 @@
+---
+title: "Filament 5.x Nested Resources - Guida Completa 2024"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "filament 5.x nested resources - guida completa 2024 activity"
+---
 # 🎯 Filament 5.x Nested Resources - Guida Completa 2024
 
 ## 📋 **Introduzione a Nested Resources**
@@ -47,6 +55,11 @@ namespace Modules\Quaeris\Filament\Resources\Courses;
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
+namespace Modules\healthcare_app\Filament\Resources\Courses;
+
+use Filament\Resources\Resource;
+use Filament\Resources\Pages\Page;
+use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 
 class CourseResource extends Resource
 {
@@ -88,6 +101,11 @@ namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 use Filament\Resources\Resource;
 use Filament\Resources\Pages\Page;
 use Modules\Quaeris\Filament\Resources\Courses\CourseResource;
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
+
+use Filament\Resources\Resource;
+use Filament\Resources\Pages\Page;
+use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
 
 class LessonResource extends Resource
 {
@@ -127,6 +145,7 @@ class LessonResource extends Resource
 <?php
 
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Tables;
@@ -134,6 +153,7 @@ use Filament\Forms;
 use Filament\Tables\Table;
 use Filament\Forms\Form;
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
+use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 
 class LessonsRelationManager extends RelationManager
 {
@@ -201,6 +221,11 @@ namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
 use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Resources\ParentResourceRegistration;
 use Modules\Quaeris\Filament\Resources\Courses\CourseResource;
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
+
+use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Resources\ParentResourceRegistration;
+use Modules\healthcare_app\Filament\Resources\Courses\CourseResource;
 
 class LessonResource extends Resource
 {
@@ -222,6 +247,7 @@ class LessonResource extends Resource
 <?php
 
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -249,6 +275,7 @@ class LessonsRelationManager extends RelationManager
 <?php
 
 namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons;
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons;
 
 use Filament\Resources\RelationManagers\RelationManager;
 use Illuminate\Database\Eloquent\Model;
@@ -325,6 +352,11 @@ namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\Pages;
 use Filament\Resources\Pages\CreateRecord;
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Modules\Quaeris\Models\Course;
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pages;
+
+use Filament\Resources\Pages\CreateRecord;
+use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
+use Modules\healthcare_app\Models\Course;
 
 class CreateLesson extends CreateRecord
 {
@@ -353,6 +385,10 @@ namespace Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\Pages;
 
 use Filament\Resources\Pages\CreateRecord;
 use Modules\Quaeris\Filament\Resources\Courses\Resources\Lessons\LessonResource;
+namespace Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\Pages;
+
+use Filament\Resources\Pages\CreateRecord;
+use Modules\healthcare_app\Filament\Resources\Courses\Resources\Lessons\LessonResource;
 use Illuminate\Validation\Rule;
 
 class CreateLesson extends CreateRecord
@@ -453,7 +489,8 @@ dd($this->getRouteKey(), $this->getRecord());
 public function test_nested_resource_routing()
 {
     $course = Course::factory()->create();
-    $response = $this->get(route('filament.quaeris.resources.courses.resources.lessons.list', [
+$response = $this->get(route('filament.Quaeris.resources.courses.resources.lessons.list', [
+    $response = $this->get(route('filament.healthcare_app.resources.courses.resources.lessons.list', [
         'course' => $course,
     ]));
     
@@ -468,6 +505,7 @@ public function test_nested_resource_routing()
 - **Plugin Guava**: https://filamentphp.com/plugins/guava-nested-resources
 
 ## 🔄 **Integrazione con Quaeris**
+## 🔄 **Integrazione con healthcare_app**
 
 ### **Pattern di Integrazione**
 
@@ -487,6 +525,6 @@ class NestedResourceGenerator
 
 ---
 
-**Ultimo Aggiornamento:** [DATE]  
+**
 **Versione Filament:** 5.x  
 **Stato:** 📚 Completamente Analizzato e Documentato

@@ -1,3 +1,16 @@
+---
+title: "send email fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "send email fix"
+issues: []
+discussions: []
+status: superseded
+superseded_by: send-email.md
+---
+
 # Guida alla Correzione di SendEmail.php
 
 ## 🔍 Analisi del Problema
@@ -213,6 +226,9 @@ class SmtpData extends Data
 - [Documentazione Laravel Mail](https://laravel.com/project_docs/mail)
 - [Documentazione Filament Forms](https://filamentphp.com/project_docs/forms)
 - [Best Practices SMTP](https://laravel.com/project_docs/mail#smtp-configuration)
+- [Documentazione Laravel Mail](https://laravel.com/docs/mail)
+- [Documentazione Filament Forms](https://filamentphp.com/docs/forms)
+- [Best Practices SMTP](https://laravel.com/docs/mail#smtp-configuration)
 
 ## ⚠️ Note Importanti
 

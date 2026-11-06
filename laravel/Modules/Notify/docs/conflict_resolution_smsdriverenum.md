@@ -1,3 +1,16 @@
+---
+title: "conflict resolution smsdriverenum"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution smsdriverenum"
+issues: []
+discussions: []
+status: superseded
+superseded_by: bmad/architecture/conflict-resolution-smsdriverenum.md
+---
+
 # Risoluzione Conflitto SmsDriverEnum
 
 ## Problema Identificato
@@ -215,10 +228,10 @@ enum SmsDriverEnum: string implements HasLabel, HasIcon, HasColor
 
 ## Collegamenti Correlati
 
-- [Notify Module](../readme.md)
+- [Notify Module](../README.md)
 - [SMS Configuration](../sms-configuration.md)
-- [Translation Standards](../../lang/project_docs/translation-standards.md)
-- [Filament Integration](../../xot/project_docs/filament-translations.md)
+- [Translation Standards](../../Lang/project_docs/translation-standards.md)
+- [Filament Integration](../../Xot/project_docs/filament-translations.md)
 
 ## Note per Sviluppatori Futuri
 

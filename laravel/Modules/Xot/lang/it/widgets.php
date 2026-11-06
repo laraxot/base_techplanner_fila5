@@ -44,6 +44,11 @@ return [
             'description' => '',
         ],
     ],
+    'infolist' => [
+        'record_not_available' => [
+            'label' => 'Contenuto non disponibile o non visibile.',
+        ],
+    ],
     'actions' => [
         'create' => [
             'label' => 'Crea Widgets',
@@ -53,6 +58,17 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Widgets',
+        ],
+    ],
+    'base' => [
+        'title' => 'Widget base',
+        'description' => 'Widget di base da cui derivano gli altri widget.',
+        'warning' => 'Attenzione',
+        'abstract_widget_message' => 'Questo è un widget astratto e non deve essere usato direttamente.',
+    ],
+    'schema' => [
+        'submit' => [
+            'label' => 'Invia',
         ],
     ],
 ];

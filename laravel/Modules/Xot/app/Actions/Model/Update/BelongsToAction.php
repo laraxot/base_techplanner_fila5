@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Model\Update;
 
-use Exception;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
@@ -34,8 +33,7 @@ class BelongsToAction
          */
 
         if (! Arr::isAssoc($relationDTO->data) && \count($relationDTO->data) === 1) {
-            /** @phpstan-ignore-next-line argument.unresolvableType */
-            $related_id = Arr::first($relationDTO->data);
+            $related_id = reset($relationDTO->data);
             if ($related_id === null) {
                 return;
             }
@@ -46,8 +44,8 @@ class BelongsToAction
                 $related = $related->first(); // Prendi il primo modello della collezione
             }
 
-            if (! ($related instanceof Model)) {
-                throw new Exception('Expected a single model, got null or invalid object.');
+            if (! $related instanceof Model) {
+                throw new \Exception('Expected a single model, got null or invalid object.');
             }
             $res = $rows->associate($related);
             $res->save();
@@ -59,7 +57,7 @@ class BelongsToAction
             $sub = $rows->firstOrCreate();
             // $sub = $rows->first() ?? $rows->getModel();
             if ($sub === null) {
-                throw new Exception('['.__LINE__.']['.class_basename($this).']');
+                throw new \Exception('['.__LINE__.']['.class_basename($this).']');
             }
 
             app(RelationAction::class)->execute($sub, $relationDTO->data);

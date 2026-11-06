@@ -4,29 +4,19 @@ declare(strict_types=1);
 
 namespace Modules\Job\Actions;
 
+use BadMethodCallException;
 use Spatie\QueueableAction\QueueableAction;
 
 class ExecuteTaskAction
 {
     use QueueableAction;
 
-    public function execute(string $_task_id): string
+    public function execute(string $taskId): string
     {
-        /*
-         * $task = Task::findOrFail($task_id);
-         * $start = microtime(true);
-         * try {
-         * Artisan::call($task->command, $task->compileParameters());
-         * $output = Artisan::output();
-         * } catch (\Exception $e) {
-         * $output = $e->getMessage();
-         * }
-         * Executed::dispatch($task, $start, $output);
-         *
-         * return $output;
-         */
-        dddx('wip');
-
-        return 'WIP';
+        // TODO: Implement task execution
+        // See ROADMAP-2026.md Phase 1 - Critical Fixes
+        throw new BadMethodCallException(
+            'Method ExecuteTaskAction::execute() not implemented yet. See ROADMAP-2026.md'
+        );
     }
 }

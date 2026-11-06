@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Pdf;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use Log;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
 use Spipu\Html2Pdf\Html2Pdf;
 use Webmozart\Assert\Assert;
@@ -35,7 +35,7 @@ class GetPdfContentByRecordAction
      * @param  string|null  $filename  Nome file PDF personalizzato (opzionale)
      * @return string Contenuto binario del PDF
      *
-     * @throws Exception Se la vista non esiste o si verificano errori di generazione
+     * @throws \Exception Se la vista non esiste o si verificano errori di generazione
      */
     public function execute(Model $record, ?string $filename = null): string
     {
@@ -47,7 +47,7 @@ class GetPdfContentByRecordAction
 
         // Validate view existence
         if (! view()->exists($viewName)) {
-            throw new Exception("View '{$viewName}' not found for model ".$record::class);
+            throw new \Exception("View '{$viewName}' not found for model ".$record::class);
         }
 
         // Render view to HTML
@@ -57,7 +57,7 @@ class GetPdfContentByRecordAction
         Assert::string($html, 'Generated HTML content must be a valid string');
 
         if (empty(trim($html))) {
-            throw new Exception("Generated HTML content is empty for view '{$viewName}'");
+            throw new \Exception("Generated HTML content is empty for view '{$viewName}'");
         }
 
         // Generate filename if not provided
@@ -117,9 +117,9 @@ class GetPdfContentByRecordAction
 
         // Add specific relationship data if available
         if (
-            method_exists($record, 'valutatore') &&
-                $record->relationLoaded('valutatore') &&
-                isset($record->valutatore)
+            method_exists($record, 'valutatore')
+                && $record->relationLoaded('valutatore')
+                && isset($record->valutatore)
         ) {
             $valutatore = $record->valutatore;
             if (is_object($valutatore) && isset($valutatore->nome_diri)) {
@@ -140,7 +140,7 @@ class GetPdfContentByRecordAction
     {
         $modelName = class_basename($record::class);
         $recordKey = $record->getKey();
-        $baseFilename = mb_strtolower($modelName).'_'.(string) ($recordKey ?? 'unknown');
+        $baseFilename = mb_strtolower($modelName).'_'.SafeStringCastAction::cast($recordKey ?? 'unknown');
 
         // Enhanced filename for records with identification fields
         if (isset($record->matr, $record->cognome, $record->nome)) {
@@ -148,7 +148,7 @@ class GetPdfContentByRecordAction
             $cognome = is_string($record->cognome) ? $record->cognome : 'unknown';
             $nome = is_string($record->nome) ? $record->nome : 'unknown';
 
-            return 'scheda_'.(string) ($recordKey ?? 'unknown').'_'.$matr.'_'.$cognome.'_'.$nome.'.pdf';
+            return 'scheda_'.SafeStringCastAction::cast($recordKey ?? 'unknown').'_'.$matr.'_'.$cognome.'_'.$nome.'.pdf';
         }
 
         // Enhanced filename for records with name field
@@ -167,7 +167,7 @@ class GetPdfContentByRecordAction
      * @param  string  $filename  Nome file per riferimento
      * @return string Contenuto binario del PDF
      *
-     * @throws Exception Se si verificano errori durante la generazione PDF
+     * @throws \Exception Se si verificano errori durante la generazione PDF
      */
     protected function generatePdfContent(string $html, string $filename): string
     {
@@ -190,14 +190,14 @@ class GetPdfContentByRecordAction
 
             // Generate and return PDF content as binary string
             return $html2pdf->output('', 'S'); // 'S' returns string content
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             Log::error('PDF generation failed in GetPdfContentByRecordAction', [
                 'filename' => $filename,
                 'error' => $e->getMessage(),
                 'trace' => $e->getTraceAsString(),
             ]);
 
-            throw new Exception('Failed to generate PDF content: '.$e->getMessage(), 0, $e);
+            throw new \Exception('Failed to generate PDF content: '.$e->getMessage(), 0, $e);
         }
     }
 }

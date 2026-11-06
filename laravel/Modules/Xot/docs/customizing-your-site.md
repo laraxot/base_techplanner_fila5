@@ -3,6 +3,11 @@ title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
 section: content
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "customizing your site {#customizing} xot"
 ---
 # Customizing Your Site {#customizing}
 
@@ -86,22 +91,21 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
-* [customizing-your-site.md](../../../gdpr/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../xot/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../tenant/project_docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../ui/docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../cms/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Tenant/project_docs/it/customizing-your-site.md)
+* [customizing-your-site.md](../../../Cms/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Gdpr/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Xot/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../UI/docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Tenant/docs/it/customizing-your-site.md)
+* [customizing-your-site.md](../../../Cms/docs/customizing-your-site.md)
 
 ### Versione Incoming
 
 ---
 ---
-title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
 section: content
@@ -178,11 +182,11 @@ class Foo extends bar
 ### Versione HEAD
 
 ## Collegamenti tra versioni di customizing-your-site.md
-* [customizing-your-site.md](../../../gdpr/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../xot/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../ui/project_docs/customizing-your-site.md)
-* [customizing-your-site.md](../../../tenant/project_docs/it/customizing-your-site.md)
-* [customizing-your-site.md](../../../cms/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Gdpr/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Xot/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../UI/project_docs/customizing-your-site.md)
+* [customizing-your-site.md](../../../Tenant/project_docs/it/customizing-your-site.md)
+* [customizing-your-site.md](../../../Cms/project_docs/customizing-your-site.md)
 
 ### Versione Incoming
 

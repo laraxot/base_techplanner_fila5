@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Modules\Lang\Filament\Resources\TranslationFileResource\Pages;
 
 use Filament\Actions\Action;
-use Filament\Tables\Columns\TextColumn;
+use Filament\Actions\ActionGroup;
 use Modules\Lang\Filament\Actions\LocaleSwitcherRefresh;
 use Modules\Lang\Filament\Resources\TranslationFileResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
@@ -14,16 +14,8 @@ class ListTranslationFiles extends XotBaseListRecords
 {
     protected static string $resource = TranslationFileResource::class;
 
-    #[\Override]
-    public function getTableColumns(): array
-    {
-        return [
-            'key' => TextColumn::make('key')->searchable(['key', 'content']),
-        ];
-    }
-
     /**
-     * @return array<string, Action>
+     * @return array<string, Action|ActionGroup>
      */
     #[\Override]
     protected function getHeaderActions(): array
@@ -31,6 +23,7 @@ class ListTranslationFiles extends XotBaseListRecords
         $parentActions = parent::getHeaderActions();
 
         // Assicurarsi che tutte le azioni abbiano chiavi stringa
+        /** @var array<string, Action|ActionGroup> $actions */
         $actions = [
             'locale_switcher' => LocaleSwitcherRefresh::make('lang'),
         ];

@@ -7,17 +7,13 @@ namespace Modules\User\Filament\Resources;
 use Filament\Actions\BulkActionGroup;
 use Filament\Actions\DeleteAction;
 use Filament\Actions\DeleteBulkAction;
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
 use Filament\Tables\Columns\IconColumn;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ListOauthAuthCodes;
 use Modules\User\Filament\Clusters\Passport\Resources\OauthAuthCodeResource\Pages\ViewOauthAuthCode;
-use Modules\User\Filament\Resources\OauthAuthCodeResource\Pages;
 use Modules\User\Models\OauthAuthCode;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -33,29 +29,6 @@ class OauthAuthCodeResource extends XotBaseResource
     protected static ?string $recordTitleAttribute = 'id';
 
     /**
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Select|TextInput>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'user_id' => Select::make('user_id')
-                ->relationship('user', 'name')
-                ->searchable(),
-            'client_id' => Select::make('client_id')
-                ->relationship('client', 'name')
-                ->searchable()
-                ->required(),
-            'scopes' => TextInput::make('scopes'),
-            'revoked' => TextInput::make('revoked')
-                ->numeric()
-                ->required(),
-        ];
-    }
-
-    /**
      * Extend table callback for the resource.
      *
      * @return array<string, mixed>
@@ -67,7 +40,7 @@ class OauthAuthCodeResource extends XotBaseResource
                 TextColumn::make('id')
                     ->searchable()
                     ->sortable()
-                    ->formatStateUsing(function (mixed $state): string {
+                    ->formatStateUsing(function (string|int|null $state): string {
                         if (! is_string($state)) {
                             return '';
                         }
@@ -86,7 +59,7 @@ class OauthAuthCodeResource extends XotBaseResource
                     ->limit(30)
                     ->tooltip(function (TextColumn $column): ?string {
                         $state = $column->getState();
-                        if (null === $state) {
+                        if ($state === null) {
                             return null;
                         }
                         if (is_array($state)) {

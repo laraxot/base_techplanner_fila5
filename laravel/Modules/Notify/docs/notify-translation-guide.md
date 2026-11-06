@@ -1,8 +1,21 @@
+---
+title: "notify translation guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "notify translation guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # Guida alle Traduzioni nel Modulo Notify
 
 ## Introduzione
 
-Questo documento fornisce una guida completa e dettagliata per la gestione delle traduzioni nel modulo Notify di SaluteOra. Il modulo Notify segue convenzioni specifiche che rappresentano un'eccezione documentata alle convenzioni generali di SaluteOra.
+Questo documento fornisce una guida completa e dettagliata per la gestione delle traduzioni nel modulo Notify di . Il modulo Notify segue convenzioni specifiche che rappresentano un'eccezione documentata alle convenzioni generali di .
+Questo documento fornisce una guida completa e dettagliata per la gestione delle traduzioni nel modulo Notify di <nome progetto>. Il modulo Notify segue convenzioni specifiche che rappresentano un'eccezione documentata alle convenzioni generali di <nome progetto>.
 
 ## Struttura dei File di Traduzione
 
@@ -140,7 +153,8 @@ return [
 
 ## Eccezione alle Convenzioni Generali
 
-È importante notare che questa struttura rappresenta un'eccezione documentata alle convenzioni generali di SaluteOra. Mentre le convenzioni generali (descritte in `Modules/Lang/docs/TRANSLATION_KEYS_RULES.md`) prevedono una struttura gerarchica espansa senza chiavi come `.navigation`, il modulo Notify utilizza intenzionalmente questa struttura specifica.
+È importante notare che questa struttura rappresenta un'eccezione documentata alle convenzioni generali di . Mentre le convenzioni generali (descritte in `Modules/Lang/docs/TRANSLATION_KEYS_RULES.md`) prevedono una struttura gerarchica espansa senza chiavi come `.navigation`, il modulo Notify utilizza intenzionalmente questa struttura specifica.
+È importante notare che questa struttura rappresenta un'eccezione documentata alle convenzioni generali di <nome progetto>. Mentre le convenzioni generali (descritte in `Modules/Lang/docs/TRANSLATION_KEYS_RULES.md`) prevedono una struttura gerarchica espansa senza chiavi come `.navigation`, il modulo Notify utilizza intenzionalmente questa struttura specifica.
 
 ### Motivazione dell'Eccezione
 
@@ -169,8 +183,13 @@ Questo comando verificherà che tutte le chiavi di traduzione necessarie siano p
 
 ## Collegamenti Correlati
 
+- [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
+- [Chiarimento sulle Convenzioni di Traduzione](./TRANSLATION_CONVENTIONS_CLARIFICATION.md)
+- [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+- [Standard per le Traduzioni ](./TRANSLATION_STANDARDS.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)
 - [Chiarimento sulle Convenzioni di Traduzione](./translation_conventions_clarification.md)
-- [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
+- [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/translation_keys_rules.md)
+- [Best Practices per le Chiavi di Traduzione](../../Lang/docs/translation_keys_best_practices.md)
 - [Standard per le Traduzioni ](./translation_standards.md)

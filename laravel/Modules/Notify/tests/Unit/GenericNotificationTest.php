@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Notify\Tests\TestCase::class);
-
 use Illuminate\Database\Eloquent\Model;
 use Modules\Notify\Notifications\GenericNotification;
+use Modules\Notify\Tests\TestCase;
 
+uses(TestCase::class);
 // Basic unit tests focusing on business logic of recipient name resolution
 
 describe('GenericNotification getRecipientName', function (): void {

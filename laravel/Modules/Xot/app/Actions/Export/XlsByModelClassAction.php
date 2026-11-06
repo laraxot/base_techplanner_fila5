@@ -10,7 +10,6 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
 use Maatwebsite\Excel\Facades\Excel;
 use Modules\Xot\Actions\Model\GetTransKeyByModelClassAction;
-// use Modules\Xot\Services\ArrayService;
 use Modules\Xot\Exports\CollectionExport;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
@@ -23,11 +22,11 @@ class XlsByModelClassAction
     /**
      * Esporta i dati di un modello in Excel.
      *
-     * @param  string  $modelClass  Classe del modello da esportare
+     * @param  class-string<Model>  $modelClass  Classe del modello da esportare
      * @param  array<string, mixed>  $where  Condizioni where per la query
      * @param  array<int, string>  $includes  Relazioni o campi da includere
      * @param  array<int, string>  $excludes  Campi da escludere
-     * @param  callable|null  $callback  Callback per manipolare i dati
+     * @param  callable(array<string, mixed>|Model, int): mixed|null  $callback  Callback per manipolare i dati
      */
     public function execute(
         string $modelClass,
@@ -53,12 +52,12 @@ class XlsByModelClassAction
         }
 
         // Otteniamo i risultati
-        /** @var Collection $rows */
+        /** @var \Illuminate\Database\Eloquent\Collection<int, Model> $rows */
         $rows = $query->get();
 
         // Filtriamo i campi se sono specificati gli includes
         if ($includes !== []) {
-            $rows = $rows->map(static function ($item) use ($includes) {
+            $rows = $rows->map(static function (Model $item) use ($includes) {
                 $data = [];
                 foreach ($includes as $include) {
                     $data[$include] = data_get($item, $include);
@@ -68,29 +67,46 @@ class XlsByModelClassAction
             });
         }
 
-        // Nascondiamo i campi esclusi
         if ($excludes !== []) {
-            $rows = $rows->map(function ($item) use ($excludes) {
-                if (is_object($item) && method_exists($item, 'makeHidden')) {
-                    /** @var Model $item */
-                    return $item->makeHidden($excludes);
-                }
-
-                return $item;
-            });
+            $rows = $rows->map(static fn (Model|array $item): Model|array => $item instanceof Model ? $item->makeHidden($excludes) : $item);
         }
 
         // Applichiamo il callback se fornito
         if ($callback !== null) {
-            $rows = $rows->map($callback);
+            $rows = $rows->map($this->rowCallback($callback));
         }
 
         // Otteniamo la chiave di traduzione e creiamo l'export
         $transKey = app(GetTransKeyByModelClassAction::class)->execute($modelClass);
-        $collectionExport = new CollectionExport($rows, $transKey);
+        /** @var Collection<int|string, mixed> $exportRows */
+        $exportRows = $rows;
+        $collectionExport = new CollectionExport($exportRows, $transKey);
         $filename = $this->getExportName($modelClass);
 
         return Excel::download($collectionExport, $filename);
+    }
+
+    /**
+     * @param  callable(array<string, mixed>|Model, int): mixed  $callback
+     * @return \Closure(Model|array<array-key, mixed>, int): mixed
+     */
+    private function rowCallback(callable $callback): \Closure
+    {
+        return static function (Model|array $item, int $key) use ($callback): mixed {
+            if ($item instanceof Model) {
+                return $callback($item, $key);
+            }
+
+            /** @var array<string, mixed> $data */
+            $data = [];
+            foreach ($item as $itemKey => $itemValue) {
+                if (is_string($itemKey)) {
+                    $data[$itemKey] = $itemValue;
+                }
+            }
+
+            return $callback($data, $key);
+        };
     }
 
     /**

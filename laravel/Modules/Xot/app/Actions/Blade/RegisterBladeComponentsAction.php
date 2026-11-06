@@ -22,7 +22,7 @@ class RegisterBladeComponentsAction
         }
 
         foreach ($comps->items() as $comp) {
-            if (! ($comp instanceof ComponentFileData)) {
+            if (! $comp instanceof ComponentFileData) {
                 continue;
             }
             Blade::component($comp->name, $comp->ns);

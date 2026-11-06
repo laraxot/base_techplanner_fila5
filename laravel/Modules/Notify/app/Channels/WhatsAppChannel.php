@@ -33,13 +33,12 @@ class WhatsAppChannel
     /**
      * Invia la notifica attraverso il canale WhatsApp.
      *
-     * @param  mixed  $notifiable  Entità che riceve la notifica
      * @param  Notification  $notification  Notifica da inviare
-     * @return array|null Risultato dell'operazione o null in caso di errore
+     * @return array<string, mixed>|null Risultato dell'operazione o null in caso di errore
      *
      * @throws Exception Se la notifica non ha il metodo toWhatsApp o il driver non è supportato
      */
-    public function send($notifiable, Notification $notification)
+    public function send(object $notifiable, Notification $notification): ?array
     {
         if (! method_exists($notification, 'toWhatsApp')) {
             throw new Exception('Notification does not have toWhatsApp method');

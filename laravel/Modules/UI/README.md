@@ -1,340 +1,229 @@
-# UI Module
+---
+id: module-ui-readme
+title: "UI - componenti visuali condivisi"
+type: module-readme
+category: module-documentation
+module: UI
+status: active
+tags: [ui, components, filament, module, blade, livewire, accessibility]
+created: 2026-09-14
+updated: 2026-10-07
+qmd: "ui blade livewire filament components accessibility module documentation"
+issues:
+  - "https://github.com/laraxot/module_ui_fila5/issues/33"
+discussions:
+  - "https://github.com/laraxot/module_ui_fila5/discussions/34"
+related:
+  - "./docs/"
+sources: []
+---
 
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 5.x](https://img.shields.io/badge/Filament-5.x-blue.svg)](https://filamentphp.com/)
+# UI
+
+[![Domain-UI](https://img.shields.io/badge/Domain-UI%20Kit-7B1FA2.svg)](#)
+[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
+[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
+[![PHP 8.3+](https://img.shields.io/badge/PHP-8.3+-777BB4.svg)](https://php.net/)
+[![Stars](https://img.shields.io/github/stars/laraxot/module_ui_fila5?style=plastic&color=yellow)]()
+[![Forks](https://img.shields.io/github/forks/laraxot/module_ui_fila5?style=plastic&color=green)]()
+[![Issues](https://img.shields.io/github/issues/laraxot/module_ui_fila5?style=plastic&color=red)]()
+[![License](https://img.shields.io/github/license/laraxot/module_ui_fila5?style=plastic&color=blue)]()
+[![Last Commit](https://img.shields.io/github/last-commit/laraxot/module_ui_fila5?style=plastic&color=purple)]()
+[![Release](https://img.shields.io/github/v/release/laraxot/module_ui_fila5?style=plastic&color=orange&display_name=release)]()
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=plastic)]()
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
-[![PHP 8.3+](https://img.shields.io/badge/PHP-8.3+-blue.svg)](https://php.net)
-[![Components 222+](https://img.shields.io/badge/Components-222+-purple.svg)](#componenti-blade)
-[![SVG Icons 365+](https://img.shields.io/badge/SVG%20Icons-365+-orange.svg)](#sistema-icone)
-[![Widgets 11](https://img.shields.io/badge/Widgets-11-blue.svg)](#widget-filament)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
+[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
 
-> **Design system condiviso per tutti i moduli Laraxot**: 222 componenti Blade, 365+ icone SVG, 11 widget Filament, page builder a blocchi, dark mode, layout responsive. La base visiva dell'intero ecosistema.
+> **Componenti UI riutilizzabili e design system**
+> Componenti UI, layout, temi e pattern di design per Filament v5, senza logica di dominio.
 
----
+## Perché esiste
+## 🎯 La Visione
 
-## Cosa fa
+Crediamo che il software debba essere **chiaro, modulare e potente**. Ogni modulo è stato pensato per risolvere problemi reali con soluzioni eleganti.
 
-Il modulo UI e il **design system centralizzato** di Laraxot. Ogni modulo (Quaeris, Limesurvey, Cms, etc.) usa i suoi componenti Blade, icone SVG e widget Filament per garantire coerenza visiva e ridurre la duplicazione.
+## Perché esiste questo modulo?
 
-```blade
-{{-- Icone con prefisso ui- --}}
-@svg('ui-login')
-@svg('ui-user')
-@svg('ui-settings')
+**Componenti UI, layout, temi e pattern di design per Filament v5.**
 
-{{-- Componenti layout --}}
-<x-ui::navbar />
-<x-ui::sidebar />
-<x-ui::dark-mode-switcher />
+In un mondo dove la complessità è l'avere, abbiamo scritto codice semplice. Questo modulo non è solo una libreria: è una **promessa di qualità** mantenuta.
 
-{{-- Blocchi pre-costruiti per pagine --}}
-<x-ui::blocks.hero.centered />
-<x-ui::blocks.cta.stacked />
-<x-ui::blocks.features.grid />
-```
+## Cosa offre
 
----
+- **Blade/Livewire** — componenti riusabili
+- **Filament XotBase** — base per admin
+- **Accessibilità** — a11y conforme
+- **Tailwind/DaisyUI** — design system
 
-## Architettura
+## Confini architetturali
 
-```
-UI Module (design system centralizzato)
-    |
-    +-- 222 Componenti Blade
-    |     +-- 11 Component class PHP (Svg, Logo, Navbar, Sidebar...)
-    |     +-- 211 Block templates (hero, CTA, features, blog, newsletter...)
-    |
-    +-- 365+ Icone SVG
-    |     +-- 100+ icone azione/UI
-    |     +-- 240+ bandiere paesi
-    |     +-- 20+ brand social media
-    |     +-- 4 avatar default
-    |
-    +-- 11 Widget Filament
-    |     +-- StatsOverview, Calendar, DarkMode, Chart...
-    |
-    +-- TableLayoutEnum (toggle lista/griglia)
-    +-- InlineDatePicker (date selettive)
-    +-- Theme system (dark/light, multi-tenant)
-    |
-    v
-Tutti i moduli Laraxot
-```
+Questo modulo pubblica contratti usabili da altri moduli. La logica vive nelle `Actions`; la UI admin segue Laraxot/XotBase. Nessuna logica di dominio: quella resta nei moduli che la possiedono (vedi [docs/purpose.md](./docs/purpose.md)).
 
----
+## 🧘 I Principi Zen (e la nostra filosofia)
 
-## Componenti Blade
+## 🎯 La Visione
+## La visione
+## La visione
 
-### Component Class (11 PHP)
+Crediamo che il software debba essere **chiaro, modulare e potente**. Ogni modulo è stato pensato per risolvere problemi reali con soluzioni eleganti.
 
-| Componente | Funzione |
-|------------|----------|
-| **Svg** | Rendering icone SVG con attributi dinamici |
-| **Logo** | Logo applicazione con varianti |
-| **Navbar** | Barra navigazione responsive |
-| **Sidebar** | Sidebar collassabile |
-| **Block** | Container blocco contenuto |
-| **DarkModeSwitcher** | Toggle tema chiaro/scuro |
-| **BreadLink** | Link breadcrumb |
-| **WithSidebar** | Layout con sidebar |
-| **Simple / Std** | Layout standard |
+## Perché esiste questo modulo
 
-### Blocchi Pre-costruiti (211 template)
+**Componenti UI, layout, temi e pattern di design per Filament v5.**
 
-Libreria completa di blocchi riutilizzabili per costruire pagine:
+In un mondo dove la complessità è l'avere, abbiamo scritto codice semplice. Questo modulo non è solo una libreria: è una **promessa di qualità** mantenuta.
 
-| Categoria | Varianti | Esempi |
-|-----------|----------|--------|
-| **Hero** | 13 | Centered, split, con immagine, dark, phone mockup, code example |
-| **Features** | 30+ | Grid, testimonials, screenshots, product showcase |
-| **CTA** | 15+ | Centered, stacked, justified, dark, branded |
-| **Blog** | 15+ | Single/multi colonna, con immagini, featured, archivio |
-| **Header** | 15+ | Centered, con stats, background image, dark |
-| **Newsletter** | 10+ | Side-by-side, stacked, su card, dark background |
-| **Altro** | 20+ | Appointment, documents, eligibility, gallery, paragraph |
+## Cosa offre
 
-```blade
-{{-- Costruisci una pagina combinando blocchi --}}
-<x-ui::blocks.hero.centered
-    title="Dashboard Survey"
-    subtitle="Gestisci i tuoi questionari"
-/>
+- **Blade/Livewire**: componenti riusabili
+- **Filament XotBase**: base per admin
+- **Accessibilità**: a11y conforme
+- **Tailwind/DaisyUI**: design system
 
-<x-ui::blocks.features.grid :features="$features" />
+## Confini architetturali
 
-<x-ui::blocks.cta.branded
-    action-url="/surveys/create"
-    action-text="Crea Survey"
-/>
-```
+Questo modulo pubblica contratti usabili da altri moduli. La logica vive nelle `Actions`; la UI admin segue Laraxot/XotBase. Nessuna logica di dominio: quella resta nei moduli che la possiedono (vedi [docs/purpose.md](./docs/purpose.md)).
 
----
+## I principi zen e la nostra filosofia
 
-## Sistema Icone
+1. **Semplicità vince sulla complessità** - Il codice chiaro è più potente di mille righe di commenti.
+2. **Modulare è dare vita** - Ogni pezzo può vivere da solo, ma insieme diventa un universo.
+3. **Documentare è onniscienza** - La mancanza di documentazione è la paura del futuro.
+4. **Testare è fidarsi** - Non fidarsi del proprio codice è fidarsi del caos.
+5. **Rifattorizzare è crescere** - Lentamente, incrementalmente, diventiamo migliori.
 
-365+ icone SVG registrate automaticamente con Blade Icons, prefisso `ui-`:
+## Superpoteri
 
-### Icone Azione/UI (100+)
+- **Architettura modulare** - Separazione netta tra logica di business e presentazione
+- **PHPStan Level 10** - Massima sicurezza tipizzazione
+- **PSR-12** - Codice che parla lo stesso linguaggio del mondo
+- **Filament 5** - Admin panel d'eccellenza
+- **XotBase** - Pattern consolidati che funzionano
 
-```blade
-@svg('ui-edit')       {{-- Modifica --}}
-@svg('ui-delete')     {{-- Elimina --}}
-@svg('ui-create')     {{-- Crea --}}
-@svg('ui-export')     {{-- Esporta --}}
-@svg('ui-login')      {{-- Login --}}
-@svg('ui-user')       {{-- Utente --}}
-@svg('ui-settings')   {{-- Impostazioni --}}
-@svg('ui-archive')    {{-- Archivio --}}
-@svg('ui-ai')         {{-- Intelligenza artificiale --}}
-@svg('ui-brain')      {{-- Cervello/AI --}}
-```
-
-### In Filament
-
-```php
-// Form
-TextInput::make('email')->prefixIcon('ui-login');
-
-// Table
-TextColumn::make('name')->icon('ui-user');
-
-// Action
-Action::make('delete')->icon('ui-trash');
-
-// Navigation
-protected static ?string $navigationIcon = 'ui-settings';
-```
-
-### Bandiere Paesi (240+)
-
-```blade
-@svg('ui-flag-it')  {{-- Italia --}}
-@svg('ui-flag-de')  {{-- Germania --}}
-@svg('ui-flag-us')  {{-- USA --}}
-{{-- Tutte le bandiere ISO 3166-1 --}}
-```
-
-### Brand Social Media (20+)
-
-```blade
-@svg('ui-brand-twitter')
-@svg('ui-brand-linkedin')
-@svg('ui-brand-github')
-@svg('ui-brand-facebook')
-@svg('ui-brand-instagram')
-@svg('ui-brand-youtube')
-@svg('ui-brand-discord')
-@svg('ui-brand-slack')
-@svg('ui-brand-spotify')
-```
-
----
-
-## Widget Filament
-
-11 widget che estendono XotBaseWidget:
-
-| Widget | Funzione |
-|--------|----------|
-| **StatsOverviewWidget** | Dashboard con metriche aggregate |
-| **StatWithIconWidget** | Statistica singola con icona |
-| **RowWidget** | Layout a riga per widget multipli |
-| **HeroWidget** | Sezione hero nel pannello admin |
-| **DarkModeSwitcherWidget** | Toggle tema nel pannello |
-| **UserCalendarWidget** | Calendario eventi con date picker |
-| **GroupWidget** | Container per raggruppare widget |
-| **OverlookWidget** | Overview/sommario rapido |
-| **RedirectWidget** | Redirect programmabile |
-| **TestChartWidget** | Chart di test/demo |
-| **TestWidget** | Widget di test/sviluppo |
-
----
-
-## TableLayoutEnum
-
-Sistema toggle per passare da vista lista a vista griglia nelle tabelle Filament:
-
-```php
-use Modules\UI\Enums\TableLayoutEnum;
-
-// Nella resource Filament
-public function getTableLayout(): TableLayoutEnum
-{
-    return TableLayoutEnum::fromSession('posts', TableLayoutEnum::List);
-}
-
-// L'utente puo switchare tra List e Grid
-// La preferenza viene salvata in sessione
-```
-
----
-
-## InlineDatePicker
-
-Date picker custom con selezione di date specifiche:
-
-```php
-use Modules\UI\Filament\Forms\Components\InlineDatePicker;
-
-InlineDatePicker::make('selected_dates')
-    ->selectableDates($availableDates)
-    ->multiple()
-    ->label('Seleziona le date');
-```
-
----
-
-## Dark Mode e Theming
-
-```blade
-{{-- Toggle automatico --}}
-<x-ui::dark-mode-switcher />
-
-{{-- Il sistema supporta: --}}
-{{-- 1. Dark/Light mode con classe Tailwind dark: --}}
-{{-- 2. Theme per tenant (colori personalizzati) --}}
-{{-- 3. Persistenza preferenza utente --}}
-```
-
----
-
-## Modelli
-
-| Modello | Funzione |
-|---------|----------|
-| **Category** | Categorie per organizzazione contenuti |
-| **Collection** | Collezioni/raggruppamenti |
-| **FieldOption** | Opzioni per campi form dinamici |
-
----
-
-## Integrazione con altri moduli
-
-```
-UI ──> Xot        (XotBaseWidget, XotBaseResource)
-UI ──> Quaeris    (componenti dashboard, icone survey)
-UI ──> Cms        (blocchi pagina, layout)
-UI ──> Chart      (widget chart base)
-UI ──> User       (avatar, icone profilo)
-UI ──> Limesurvey (icone tipi domanda)
-UI ──> Notify     (template email, icone notifica)
-UI ──> Lang       (traduzioni IT/EN/DE)
-```
-
-Tutti i moduli importano componenti e icone dal modulo UI per coerenza visiva.
-
----
-
-## Quick Start
+## Quick start
 
 ```bash
-# Il modulo e gia incluso nel monorepo
+# Installazione modulo
 php artisan module:enable UI
+php artisan module:list
+php artisan migrate
 
-# Le icone sono disponibili immediatamente
-# Usa il prefisso ui- in Blade o Filament
-
-# Verifica le icone disponibili
-ls laravel/Modules/UI/resources/svg/
+# Sviluppo locale
+cd laravel
+composer dev
+./vendor/bin/pest Modules/UI/tests
+./vendor/bin/phpstan analyse Modules/UI --memory-limit=-1
 ```
 
-### Usare un blocco in una pagina
+Configuration is in `config/config.php`. Adjust as needed.
 
-```blade
-{{-- resources/views/pages/landing.blade.php --}}
-@extends('ui::layouts.master')
+## Contributing
 
-@section('content')
-    <x-ui::blocks.hero.split
-        title="Quaeris Survey Platform"
-        subtitle="Gestione survey professionale"
-        image="/images/dashboard-preview.png"
-    />
+Esegui i comandi di sviluppo locale del Quick start, poi:
 
-    <x-ui::blocks.features.grid :features="[
-        ['title' => 'Survey', 'icon' => 'ui-survey'],
-        ['title' => 'Dashboard', 'icon' => 'ui-chart'],
-        ['title' => 'Report PDF', 'icon' => 'ui-export'],
-    ]" />
-@endsection
-```
+**Before submitting:**
+- [ ] Tests pass
+- [ ] PHPStan L10 passes
+- [ ] Code style (Pint) applied
+- [ ] Documentation updated
 
----
-
-## Metriche del modulo
-
-| Metrica | Valore |
-|---------|--------|
-| **Componenti Blade** | 222 (11 class + 211 block template) |
-| **Icone SVG** | 365+ (azioni, bandiere, brand) |
-| **Widget Filament** | 11 |
-| **Modelli** | 3 |
-| **Bandiere paesi** | 240+ (ISO 3166-1 completo) |
-| **Brand social** | 20+ |
-| **Categorie blocchi** | 7 (hero, CTA, features, blog, header, newsletter, misc) |
-| **Lingue** | 3 (IT/EN/DE) |
-| **Documentazione** | 498 file |
-| **PHPStan Level** | 10 |
-
----
+See [docs/architecture.md](./docs/architecture.md) for design decisions.
 
 ## Documentazione
 
-| Guida | Link |
-|-------|------|
-| **Indice** | [docs/README.md](docs/readme.md) |
-| **Filosofia design** | [docs/philosophy.md](docs/philosophy.md) |
-| **Sistema icone** | [docs/icon-system.md](docs/icon-system.md) |
-| **Componenti Blade** | [docs/blade-components.md](docs/blade-components.md) |
-| **TableLayoutEnum** | [docs/table-layout-enum-complete-guide.md](docs/table-layout-enum-complete-guide.md) |
-| **Componenti Filament** | [docs/filament-components-usage.md](docs/filament-components-usage.md) |
-| **Architettura** | [docs/architecture.md](docs/architecture.md) |
+| Tipo | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/](./docs/) |
+| 🗺️ Mappa tecnica docs | [docs/README.md](./docs/README.md) |
+| 🎯 Esempi | [docs/examples/](./docs/examples/) |
+| 📋 Story BMAD | [docs/stories/](./docs/stories/) |
+| 🏗️ Architettura | [docs/architecture.md](./docs/architecture.md) |
+| 🧪 Testing | [docs/testing.md](./docs/testing.md) |
+| 📜 Changelog | [CHANGELOG.md](./CHANGELOG.md) |
+| 📐 Regole del progetto | [../../../docs/wiki/](../../../docs/wiki/) |
+| 🏠 README del progetto | [../../../README.md](../../../README.md) |
+
+## 🔧 Tecnologie chiave
+| Presentazione (IT) | Questo file (`README.md`) |
+| Business card (EN) | [docs/readme-en.md](./docs/readme-en.md) |
+| Wiki tecnica | [./docs/](./docs/) |
+| Mappa tecnica docs | [docs/README.md](./docs/README.md) |
+| Esempi | [docs/examples/](./docs/examples/) |
+| Story BMAD | [docs/stories/](./docs/stories/) |
+| Architettura | [docs/architecture.md](./docs/architecture.md) |
+| Testing | [docs/testing.md](./docs/testing.md) |
+| Changelog | [CHANGELOG.md](./CHANGELOG.md) |
+| Regole del progetto | [../../../docs/wiki/](../../../docs/wiki/) |
+| README del progetto | [../../../README.md](../../../README.md) |
+
+## Tecnologie chiave
+
+**Stack principale:** Laravel 13, Filament 5, XotBase
+
+**Keywords:** UI, Components, Design System
+
+## Qualità e manutenzione
+
+Mantenere `declare(strict_types=1);` in PHP, aderire alla configurazione PHPStan del progetto e aggiornare i docs quando i contratti evolvono.
 
 ---
 
-**Module Type**: Design System & UI Components
-**Critical Level**: Alto (usato da tutti i moduli per interfaccia)
-**Architecture**: Component-based, Blade + Filament, Tailwind CSS v4
-**Quality**: PHPStan Level 10, 365+ icone, 222 componenti testati
+**Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
 
-*Il design system che unifica l'intero ecosistema Laraxot: componenti, icone e layout condivisi.*
+## Scheda tecnica verificata (2026-10-07)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `UI` |
+| Namespace | `Modules\UI\` |
+| File PHP (escluso vendor) | 747 |
+| File PHP di test | 81 |
+| Aree `app/` rilevate | Actions, Adapters, Console, Contracts, Data, Datas, Enums, Filament, Forms, Http, Livewire, Models, Providers, Rules, Services, Traits, View |
+| Migrazioni PHP | 3 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/UI
+./vendor/bin/pest Modules/UI
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
+**Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+**Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+
+## Scheda tecnica verificata (2026-10-07)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `UI` |
+| Namespace | `Modules\UI\` |
+| File PHP (escluso vendor) | 747 |
+| File PHP di test | 81 |
+| Aree `app/` rilevate | Actions, Adapters, Console, Contracts, Data, Datas, Enums, Filament, Forms, Http, Livewire, Models, Providers, Rules, Services, Traits, View |
+| Migrazioni PHP | 3 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/UI
+./vendor/bin/pest Modules/UI
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.

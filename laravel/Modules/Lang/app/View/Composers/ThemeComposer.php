@@ -19,7 +19,7 @@ class ThemeComposer
      *
      * @throws \Exception if supportedLocales config is not an array
      *
-     * @return DataCollection<LangData>
+     * @return DataCollection<int, LangData>
      */
     public function languages(): DataCollection
     {
@@ -35,12 +35,8 @@ class ThemeComposer
             throw new \Exception(sprintf('Invalid config for supportedLocales on line %d in %s', __LINE__, class_basename($this)));
         }
 
-        $languages = collect($langs)->map(function (mixed $item, string $locale): array {
-            // Ensure $item is an array
-            if (! is_array($item)) {
-                throw new \InvalidArgumentException(sprintf('Expected array at locale %s, got %s', $locale, gettype($item)));
-            }
-
+        /** @var array<string, array<array-key, mixed>> $langs */
+        $languages = collect($langs)->map(function (array $item, string $locale): array {
             // Ensure $item has the required keys
             if (! isset($item['regional'], $item['name'])) {
                 throw new \InvalidArgumentException(sprintf('Expected array with "regional" and "name" keys at locale %s', $locale));
@@ -87,20 +83,26 @@ class ThemeComposer
     /**
      * Get all languages except the current one.
      *
-     * @return DataCollection<LangData>
+     * @return DataCollection<int, LangData>
      */
     public function otherLanguages(): DataCollection
     {
         $currentLocale = app()->getLocale();
 
-        return $this->languages()->filter(function (mixed $item) use ($currentLocale): bool {
-            // Ensure the item is an instance of LangData
-            if (! $item instanceof LangData) {
-                throw new \Exception(sprintf('Expected instance of LangData, got %s', is_object($item) ? $item::class : gettype($item)));
-            }
+        // `DataCollection::filter()` e' deprecata in spatie/laravel-data v5 («use a
+        // regular Laravel collection instead»). Il filtro passa quindi da
+        // `toCollection()`, e il risultato viene ricomposto in DataCollection perche'
+        // e' quello che il tipo di ritorno e i chiamanti dichiarano.
+        $others = $this->languages()
+            ->toCollection()
+            ->filter(static fn (LangData $item): bool => $item->id !== $currentLocale)
+            ->values()
+            ->all();
 
-            return $item->id !== $currentLocale;
-        });
+        /** @var DataCollection<int, LangData> $collection */
+        $collection = LangData::collect($others, DataCollection::class);
+
+        return $collection;
     }
 
     /**
@@ -135,13 +137,13 @@ class ThemeComposer
      *
      * @return string The generated URL
      */
-    private function buildAdminLanguageUrl(string $locale): string
+    public function buildAdminLanguageUrl(string $locale): string
     {
         $routeName = Route::currentRouteName();
         if (! is_string($routeName)) {
             return '#';
         }
-        $routeParameters = array_merge(getRouteParameters(), ['lang' => $locale]);
+        $routeParameters = array_merge(Route::current()?->parameters() ?? [], ['lang' => $locale]);
         $queryParameters = request()->all();
 
         $url = route($routeName, $routeParameters);

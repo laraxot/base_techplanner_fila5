@@ -1,3 +1,15 @@
+---
+title: "naming rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming rules"
+issues: []
+discussions: []
+status: draft
+---
+
 # Regole di Naming nei Moduli
 
 ## Regola: No Nomi Specifici dell'Applicazione
@@ -43,8 +55,8 @@ I nomi specifici dell'applicazione devono apparire solo:
 - [Componenti](components.md)
 
 ## Vedi Anche
-- [Documentazione Principale](../../../docs/readme.md)
-- [Standard di Codice](../../../docs/standards/coding-standards.md)
+- [Documentazione Principale](../../../../docs/readme.md)
+- [Standard di Codice](../../../../docs/standards/coding-standards.md)
 # Regole di Naming nei Moduli
 
 ## Regola: No Nomi Specifici dell'Applicazione
@@ -88,6 +100,6 @@ I nomi specifici dell'applicazione devono apparire solo:
 - [Componenti](components.md)
 
 ## Vedi Anche
-- [Documentazione Principale](../../../project_docs/readme.md)
-- [Standard di Codice](../../../project_docs/standards/coding-standards.md)
-- [Best Practices](../../../project_docs/standards/best-practices.md)
+- [Documentazione Principale](../../../../docs/project/readme.md)
+- [Standard di Codice](../../../../docs/project/standards/coding-standards.md)
+- [Best Practices](../../../../docs/project/standards/best-practices.md)

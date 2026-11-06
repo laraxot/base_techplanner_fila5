@@ -1,3 +1,15 @@
+---
+title: "register page design research "
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "register page design research "
+issues: []
+discussions: []
+status: draft
+---
+
 # Register Page Design Research 2026
 
 This document compiles the latest design patterns, UX best practices, and modern trends for registration/signup pages based on comprehensive research from top design resources.
@@ -254,7 +266,7 @@ This document compiles the latest design patterns, UX best practices, and modern
 - **Success States**: Redirect or show confirmation
 - **Progressive Fields**: Show/hide based on validation
 
-## LaravelPizza-Specific Considerations
+## <nome progetto>-Specific Considerations
 
 ### Brand Integration
 - **Primary Colors**: Slate-900 (#0f172a) + Red-600 (#dc2626)
@@ -305,7 +317,6 @@ This document compiles the latest design patterns, UX best practices, and modern
 5. **Competitive Analysis**: Regular design audits
 
 ---
-
 ## References
 
 - Dribbble Register Page Examples: https://dribbble.com/tags/register-page

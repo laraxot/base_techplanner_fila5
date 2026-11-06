@@ -4,40 +4,47 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Traits;
 
+use Filament\Facades\Filament;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Modules\Notify\Models\NotificationLog;
-use Modules\Tenant\Services\TenantManager;
+use Webmozart\Assert\Assert;
 
+/**
+ * Trait HasTenantNotifications.
+ *
+ * Fornisce funzionalità per la gestione delle notifiche per tenant.
+ */
 trait HasTenantNotifications
 {
     /**
-     * Ottiene tutte le notifiche per il tenant corrente.
+     * @return MorphMany<NotificationLog, $this>
      */
     public function notifications(): MorphMany
     {
-        return $this->morphMany(NotificationLog::class, 'notifiable')->where('tenant_id', $this->getTenantId());
+        return $this->tenantNotificationLogs();
     }
 
     /**
-     * Ottiene le notifiche non lette per il tenant corrente.
+     * @return MorphMany<NotificationLog, $this>
      */
     public function unreadNotifications(): MorphMany
     {
-        return $this->notifications()->whereNull('read_at');
+        return $this->tenantNotificationLogs()->whereNull('read_at');
     }
 
     /**
-     * Ottiene le notifiche lette per il tenant corrente.
+     * @return MorphMany<NotificationLog, $this>
      */
     public function readNotifications(): MorphMany
     {
-        return $this->notifications()->whereNotNull('read_at');
+        return $this->tenantNotificationLogs()->whereNotNull('read_at');
     }
 
     /**
-     * Scope per filtrare le notifiche per tenant.
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
     public function scopeForTenant(Builder $query, ?string $tenantId = null): Builder
     {
@@ -59,7 +66,9 @@ trait HasTenantNotifications
      */
     public function belongsToCurrentTenant(): bool
     {
-        return $this->belongsToTenant($this->getTenantId());
+        $currentTenantId = $this->getTenantId();
+
+        return $currentTenantId !== null && $this->belongsToTenant($currentTenantId);
     }
 
     /**
@@ -67,17 +76,39 @@ trait HasTenantNotifications
      */
     public static function bootHasTenantNotifications(): void
     {
-        static::creating(function (Model $model) {
+        static::creating(function (Model $model): void {
+            if (! $model instanceof static) {
+                return;
+            }
+
             if (! isset($model->tenant_id)) {
                 $model->tenant_id = $model->getTenantId();
             }
         });
 
-        static::addGlobalScope('tenant', function (Builder $builder) {
-            /** @var Model $model */
+        static::addGlobalScope('tenant', function (Builder $builder): void {
             $model = $builder->getModel();
-            $builder->where($model->getTable().'.tenant_id', $model->getTenantId());
+
+            if (! $model instanceof static) {
+                return;
+            }
+
+            $tenantId = $model->getTenantId();
+
+            if ($tenantId !== null) {
+                $builder->where($model->getTable().'.tenant_id', $tenantId);
+            }
         });
+    }
+
+    /**
+     * Relazione morph verso NotificationLog filtrata per tenant corrente.
+     *
+     * @return MorphMany<NotificationLog, static>
+     */
+    protected function tenantNotificationLogs(): MorphMany
+    {
+        return $this->morphMany(NotificationLog::class, 'notifiable')->where('tenant_id', $this->getTenantId());
     }
 
     /**
@@ -85,9 +116,24 @@ trait HasTenantNotifications
      */
     protected function getTenantId(): ?string
     {
-        /** @var TenantManager */
-        $tenantManager = app(TenantManager::class);
+        try {
+            $tenant = Filament::getTenant();
+        } catch (\Throwable) {
+            return null;
+        }
 
-        return $tenantManager->getTenantId();
+        if ($tenant === null) {
+            return null;
+        }
+
+        $key = $tenant->getKey();
+
+        if ($key === null) {
+            return null;
+        }
+
+        Assert::scalar($key);
+
+        return (string) $key;
     }
 }

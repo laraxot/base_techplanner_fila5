@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -9,7 +8,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateLiveuserUsersTable.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -19,7 +19,7 @@ return new class extends XotBaseMigration {
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
-            $table->string('name')->nullable();
+            $table->string('name');
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
@@ -60,14 +60,6 @@ return new class extends XotBaseMigration {
                 $table->boolean('is_active')->default(true);
             }
 
-            if (! $this->hasColumn('type')) {
-                $table->string('type')->default('customer_user')->after('is_active');
-            }
-
-            if (! $this->hasColumn('state')) {
-                $table->string('state')->default('active')->after('type');
-            }
-
             if (! $this->hasColumn('is_otp')) {
                 $table->boolean('is_otp')->default(false);
             }
@@ -79,7 +71,7 @@ return new class extends XotBaseMigration {
                 $table->string('password')->nullable()->change();
             }
 
-            if ('uuid' === $this->getColumnType('id')) {
+            if ($this->getColumnType('id') === 'uuid') {
                 Schema::disableForeignKeyConstraints();
 
                 $table->dropPrimary(['id']);

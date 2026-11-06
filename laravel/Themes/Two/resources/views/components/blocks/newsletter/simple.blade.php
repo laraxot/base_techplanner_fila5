@@ -1,8 +1,8 @@
 @props([
-    'title' => 'Rimani Aggiornato',
-    'description' => 'Iscriviti alla nostra newsletter per ricevere aggiornamenti.',
-    'placeholder' => 'La tua email',
-    'button_label' => 'Iscriviti',
+    'title' => __('pub_theme::blog.newsletter.title.title'),
+    'description' => __('pub_theme::block_defaults.newsletter_block.description.message'),
+    'placeholder' => __('pub_theme::footer_section.newsletter.email.placeholder'),
+    'button_label' => __('pub_theme::block_defaults.newsletter_block.submit.label'),
     'privacy_text' => '',
     'bg_color' => 'gradient',
 ])
@@ -18,7 +18,7 @@
 
 <section class="py-20">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="{{ $bgClass }} rounded-3xl p-10 lg:p-16 text-center text-white shadow-xl">
+        <div class="{{ $bgClass }} rounded-3xl p-6 sm:p-10 lg:p-16 text-center text-white shadow-xl">
             {{-- Mail Icon --}}
             <div class="w-16 h-16 mx-auto mb-6 bg-white/10 rounded-2xl flex items-center justify-center backdrop-blur-sm">
                 <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
@@ -35,19 +35,20 @@
             @endif
 
             <form class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" @submit.prevent>
-                <input type="email"
+                <input type="email" autocomplete="email" enterkeyhint="send"
+                       aria-label="{{ $placeholder }}"
                        placeholder="{{ $placeholder }}"
                        class="flex-1 px-5 py-4 rounded-xl bg-white border-0 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#E67E22] text-base shadow-inner"
                        required>
                 <button type="submit"
-                        class="px-8 py-4 bg-[#E67E22] hover:bg-[#d35400] text-white rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 whitespace-nowrap shadow-lg">
+                        class="px-8 py-4 bg-[#E67E22] hover:bg-[#d35400] text-black rounded-xl font-semibold transition-all duration-300 flex items-center justify-center gap-2 whitespace-nowrap shadow-lg">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
                     {{ $button_label }}
                 </button>
             </form>
 
             @if($privacy_text)
-                <p class="text-sm text-white/50 mt-5">{{ $privacy_text }}</p>
+                <p class="text-sm text-white/80 mt-5">{{ $privacy_text }}</p>
             @endif
         </div>
     </div>

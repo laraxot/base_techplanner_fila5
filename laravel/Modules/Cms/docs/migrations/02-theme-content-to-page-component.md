@@ -1,3 +1,15 @@
+---
+title: "02 theme content to page component"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "02 theme content to page component"
+issues: []
+discussions: []
+status: draft
+---
+
 # Migrazione da $_theme->showPageContent() a <x-page> Component
 
 ## Panoramica
@@ -28,10 +40,10 @@ Cerca tutte le occorrenze del vecchio pattern nei file Blade:
 
 ```bash
 # Cerca showPageContent
-grep -r "showPageContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila3_mono/laravel
+grep -r "showPageContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila5_mono/laravel
 
 # Cerca showPageSidebarContent
-grep -r "showPageSidebarContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila3_mono/laravel
+grep -r "showPageSidebarContent" --include="*.blade.php" /var/www/html/_bases/base_predict_fila5_mono/laravel
 ```
 
 ### 2. Pattern di Migrazione

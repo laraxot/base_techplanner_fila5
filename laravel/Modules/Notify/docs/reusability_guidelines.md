@@ -1,3 +1,15 @@
+---
+title: "reusability guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "reusability guidelines"
+issues: []
+discussions: []
+status: draft
+---
+
 # Linee Guida per la Riusabilità del Modulo Notify
 
 ## Principio Fondamentale
@@ -164,6 +176,7 @@ grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
 ## Collegamenti
 
 - [../../../docs/module_reusability_guidelines.md](../../../docs/module_reusability_guidelines.md)
-- [../../Xot/docs/xotdata_usage.md](../../xot/docs/xotdata_usage.md)
+- [../../Xot/docs/xotdata_usage.md](../../Xot/docs/xotdata_usage.md)
 - [testing_best_practices.md](testing_best_practices.md)
 
+*Ultimo aggiornamento: gennaio 2025*

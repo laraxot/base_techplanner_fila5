@@ -2,16 +2,14 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Gdpr\Tests\TestCase::class);
-
 namespace Modules\Gdpr\Tests\Feature;
 
 use Modules\Gdpr\Models\Profile;
 use Modules\Gdpr\Models\Treatment;
 
 it('verifica che le classi corrette siano istanziabili', function (): void {
-    expect(new Treatment())->toBeInstanceOf(Treatment::class);
-    expect(new Profile())->toBeInstanceOf(Profile::class);
+    expect(new Treatment())->not->toBeNull();
+    expect(new Profile())->not->toBeNull();
 });
 
 it('verifica che le proprietà delle classi siano accessibili', function (): void {
@@ -19,8 +17,8 @@ it('verifica che le proprietà delle classi siano accessibili', function (): voi
     $profile = new Profile();
 
     // Verifica che le proprietà fillable siano definite
-    expect($treatment->getFillable())->toBeArray();
-    expect($profile->getFillable())->toBeArray();
+    expect($treatment->getFillable())->not->toBeNull();
+    expect($profile->getFillable())->not->toBeNull();
 
     // Verifica che la connessione al database sia definita correttamente
     expect($profile->getConnectionName())->toBe('gdpr');

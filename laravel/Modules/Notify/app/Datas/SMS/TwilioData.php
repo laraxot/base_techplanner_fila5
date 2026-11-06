@@ -25,7 +25,7 @@ class TwilioData extends Data
     {
         if (! (self::$instance instanceof TwilioData)) {
             /*
-             * $data = TenantService::getConfig('sms');
+             * Was: TenantService::getConfig('sms') — use GetTenantConfigArrayAction::execute('sms').
              * $data = Arr::get($data, 'drivers.twilio', []);
              */
             $data = Config::array('sms.drivers.twilio');
@@ -35,6 +35,9 @@ class TwilioData extends Data
         return self::$instance;
     }
 
+    /**
+     * @return array<string, string>
+     */
     public function getAuthHeaders(): array
     {
         switch ($this->auth_type) {
@@ -42,8 +45,7 @@ class TwilioData extends Data
             default:
                 return [
                     'Authorization' => 'Basic '.base64_encode($this->account_sid.':'.$this->auth_token),
-                    'Content-Type' => 'application/x-www-form-urlencoded',
-                ];
+                    'Content-Type' => 'application/x-www-form-urlencoded'];
         }
     }
 

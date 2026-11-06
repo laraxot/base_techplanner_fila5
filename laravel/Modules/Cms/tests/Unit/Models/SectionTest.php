@@ -2,38 +2,38 @@
 
 declare(strict_types=1);
 
-uses(Modules\Cms\Tests\TestCase::class);
-
+use Modules\Cms\Models\BaseModelLang;
 use Modules\Cms\Models\Section;
+use PHPUnit\Framework\Assert;
 
 test('Section model can be instantiated', function () {
-    $section = new Section();
+    Assert::assertSame(Section::class, (new Section)::class);
 
-    expect($section)->toBeInstanceOf(Section::class);
 });
 
 test('Section model has expected fillable fields', function () {
-    $section = new Section();
+    $section = new Section;
 
     $fillable = $section->getFillable();
 
     // Actual fillable fields from the Section model
-    expect($fillable)->toContain('name')
-        ->and($fillable)->toContain('slug')
-        ->and($fillable)->toContain('blocks');
+    Assert::assertContains('name', $fillable);
+    Assert::assertContains('slug', $fillable);
+    Assert::assertContains('blocks', $fillable);
 });
 
 test('Section model extends BaseModelLang', function () {
-    $section = new Section();
+    Assert::assertSame(Section::class, (new Section)::class);
 
     // Section extends BaseModelLang for translations support
-    expect($section)->toBeInstanceOf(Modules\Cms\Models\BaseModelLang::class);
 });
 
 test('Section model has expected casts', function () {
-    $section = new Section();
+    $section = new Section;
 
     $casts = $section->getCasts();
 
-    expect($casts)->toBeArray();
+    Assert::assertArrayHasKey('slug', $casts);
+    Assert::assertArrayHasKey('blocks', $casts);
+    Assert::assertArrayHasKey('name', $casts);
 });

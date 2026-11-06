@@ -6,7 +6,7 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Themes\Sixteen\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 /**
  * Evento lanciato quando un utente si autentica con successo tramite CIE
@@ -18,8 +18,11 @@ class CieAuthenticated
 {
     use Dispatchable, SerializesModels;
 
+    /**
+     * @param  array<string, mixed>  $cieAttributes
+     */
     public function __construct(
-        public User $user,
+        public UserContract $user,
         public array $cieAttributes
     ) {}
 
@@ -28,7 +31,9 @@ class CieAuthenticated
      */
     public function getAuthMethod(): ?string
     {
-        return $this->cieAttributes['auth_method'] ?? null;
+        $value = $this->cieAttributes['auth_method'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
@@ -44,7 +49,9 @@ class CieAuthenticated
      */
     public function getFiscalCode(): ?string
     {
-        return $this->cieAttributes['fiscal_code'] ?? null;
+        $value = $this->cieAttributes['fiscal_code'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
@@ -52,7 +59,9 @@ class CieAuthenticated
      */
     public function getCieId(): ?string
     {
-        return $this->cieAttributes['cie_id'] ?? null;
+        $value = $this->cieAttributes['cie_id'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
@@ -68,7 +77,9 @@ class CieAuthenticated
      */
     public function isEmailVerified(): bool
     {
-        return $this->cieAttributes['email_verified'] ?? false;
+        $value = $this->cieAttributes['email_verified'] ?? false;
+
+        return is_bool($value) && $value;
     }
 
     /**
@@ -76,11 +87,16 @@ class CieAuthenticated
      */
     public function isPhoneVerified(): bool
     {
-        return $this->cieAttributes['phone_verified'] ?? false;
+        $value = $this->cieAttributes['phone_verified'] ?? false;
+
+        return is_bool($value) && $value;
     }
 
     /**
      * Ottiene tutti gli attributi CIE ricevuti
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function getCieAttributes(): array
     {
@@ -89,6 +105,9 @@ class CieAuthenticated
 
     /**
      * Ottiene attributi specifici per logging sicuro
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function getLoggingData(): array
     {

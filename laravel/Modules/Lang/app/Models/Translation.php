@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -9,8 +8,10 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder as EloquentBuilder;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Query\Builder as QueryBuilder;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\DB;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Xot\Contracts\ProfileContract;
 
@@ -51,15 +52,16 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static EloquentBuilder<static>|Translation whereValue($value)
  *
  * @property ProfileContract|null $deleter
+ * @property string|null          $locale
+ * @property int|null             $user_id
  *
- * @mixin \Eloquent
+ * @method static EloquentBuilder<static>|Translation whereLocale($value)
+ * @method static EloquentBuilder<static>|Translation whereUserId($value)
+ *
+ * @mixin Model
  */
 class Translation extends BaseModel
 {
-    final public const STATUS_SAVED = 0;
-
-    final public const STATUS_CHANGED = 1;
-
     protected $fillable = [
         'id',
         'lang',
@@ -70,16 +72,24 @@ class Translation extends BaseModel
     ];
 
     // protected $table = 'ltm_translations';
+    /** @var list<string> */
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**
-     * Undocumented function.
+     * @param EloquentBuilder<Translation> $query
+     *
+     * @return EloquentBuilder<Translation>|QueryBuilder
      */
     public function scopeOfTranslatedGroup(EloquentBuilder $query, string $group): QueryBuilder|EloquentBuilder
     {
         return $query->where('group', $group)->whereNotNull('value');
     }
 
+    /**
+     * @param EloquentBuilder<Translation> $query
+     *
+     * @return EloquentBuilder<Translation>
+     */
     public function scopeOrderByGroupKeys(EloquentBuilder $query, bool $ordered): EloquentBuilder
     {
         if ($ordered) {
@@ -89,14 +99,19 @@ class Translation extends BaseModel
         return $query;
     }
 
+    /**
+     * @param EloquentBuilder<Translation> $query
+     *
+     * @return EloquentBuilder<Translation>|QueryBuilder
+     */
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder
     {
-        $select = match (\DB::getDriverName()) {
+        $select = match (DB::getDriverName()) {
             'mysql' => 'DISTINCT `group`',
             default => 'DISTINCT "group"',
         };
 
-        return $query->select(\DB::raw($select));
+        return $query->select(DB::raw($select));
     }
 
     /*

@@ -6,16 +6,20 @@ namespace Modules\Geo\Actions\IPGeolocation;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\GuzzleException;
-use Modules\Geo\Datas\IPLocationData;
+use Modules\Geo\Datas\Location\IPLocationData;
 
 use function Safe\json_decode;
+
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Action per ottenere informazioni di geolocalizzazione da un indirizzo IP.
  */
 class FetchIPLocationAction
 {
-    private const API_URL = 'http://ip-api.com/json/';
+    use QueueableAction;
+
+    private const string API_URL = 'http://ip-api.com/json/';
 
     private Client $client;
 

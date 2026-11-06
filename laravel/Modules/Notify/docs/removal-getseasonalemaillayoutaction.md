@@ -1,5 +1,18 @@
+---
+title: "removal getseasonalemaillayoutaction"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "removal getseasonalemaillayoutaction"
+issues: []
+discussions: []
+status: draft
+---
+
 # Rimozione GetSeasonalEmailLayoutAction - Report Completo
 
+**Data**: 19 Dicembre 2025  
 **Stato**: ✅ Completato  
 **Filosofia**: DRY + KISS + Clean Code
 
@@ -76,7 +89,7 @@ public function execute(string $baseName = 'base'): string
 - `Modules/Notify/app/Notifications/RecordNotification.php` - Usa `GetMailLayoutAction`
 
 ### File Aggiornati (Documentazione)
-- `Modules/Notify/docs/phpstan-fixes-[DATE].md` - Aggiornato con motivazione rimozione
+- `Modules/Notify/docs/phpstan-fixes-2025-12-19.md` - Aggiornato con motivazione rimozione
 - `Modules/Notify/docs/seasonal-email-templates.md` - Aggiornato pattern corretto
 - `Modules/Notify/docs/seasonal-email-system-recommendations.md` - Corretti esempi
 - `Modules/Notify/docs/00-index.md` - Aggiornate statistiche
@@ -113,6 +126,5 @@ Delega semplice invece di azione complessa separata.
 4. **Separazione responsabilità**: La logica di contesto stagionale appartiene al modulo core (Xot), non al modulo specifico (Notify)
 
 ---
-
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Type safety first, simplicity second, DRY always"*

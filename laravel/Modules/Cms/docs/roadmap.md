@@ -1,3 +1,88 @@
+---
+title: "roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap"
+issues: []
+discussions: []
+status: draft
+---
+
+# Roadmap (Module Cms)
+
+## Current roadmap
+
+- [Overview](roadmap/00-overview.md)
+- [Now](roadmap/01-now.md)
+- [Next](roadmap/02-next.md)
+- [Later](roadmap/03-later.md)
+- [Risks and dependencies](roadmap/04-risks.md)
+
+## Legacy / existing roadmap docs
+
+- [module-implementation-roadmap.md](module-implementation-roadmap.md)
+- [phpstan-errors-roadmap.md](phpstan-errors-roadmap.md)
+- [phpstan-fixes-roadmap.md](phpstan-fixes-roadmap.md)
+- [phpstan-roadmap.md](phpstan-roadmap.md)
+- [phpstan-scripts-roadmap.md](phpstan-scripts-roadmap.md)
+- [roadmap/00-index.md](roadmap/00-index.md)
+- [roadmap/00-overview.md](roadmap/00-overview.md)
+- [roadmap/01-current-state.md](roadmap/01-current-state.md)
+- [roadmap/01-now.md](roadmap/01-now.md)
+- [roadmap/02-goals.md](roadmap/02-goals.md)
+- [roadmap/02-next.md](roadmap/02-next.md)
+- [roadmap/03-later.md](roadmap/03-later.md)
+- [roadmap/03-workstreams.md](roadmap/03-workstreams.md)
+- [roadmap/04-milestones.md](roadmap/04-milestones.md)
+- [roadmap/04-risks.md](roadmap/04-risks.md)
+- [roadmap/05-risks.md](roadmap/05-risks.md)
+- [roadmap/roadmap.md](roadmap/roadmap-q4.md)
+- [roadmap/README.md](roadmap/README.md)
+- [roadmap/features/documentation.md](roadmap/features/documentation.md)
+- [roadmap/legacy-roadmap.md](roadmap/legacy-roadmap.md)
+- [roadmap/legacy/legacy-roadmap-2.md](roadmap/legacy/legacy-roadmap-modulo-cms.md)
+- [roadmap/legacy/legacy-roadmap-content-management.md](roadmap/legacy/legacy-roadmap-content-management.md)
+- [roadmap/legacy/legacy-roadmap-and-issues.md](roadmap/legacy/legacy-roadmap-and-issues.md)
+- [roadmap/legacy/legacy-roadmap-complete.md](roadmap/legacy/legacy-roadmap-complete.md)
+- [roadmap/legacy/legacy-roadmap-x.md](roadmap/legacy/legacy-roadmap-x.md)
+- [roadmap/legacy/legacy-roadmap.md](roadmap/legacy/legacy-roadmap.md)
+- [roadmap/phases.md](roadmap/phases.md)
+- [roadmap/q4-roadmap.md](roadmap/q4-roadmap.md)
+- [roadmap/roadmap.md](roadmap/roadmap.md)
+- [roadmap/status.md](roadmap/status.md)
+- [roadmap/tasks.md](roadmap/tasks.md)
+- [roadmap/tasks/advanced-block-system.md](roadmap/tasks/advanced-block-system.md)
+- [roadmap/tasks/ai-powered-content-generation.md](roadmap/tasks/ai-powered-content-generation.md)
+- [roadmap/tasks/headless-cms-api.md](roadmap/tasks/headless-cms-api.md)
+Il modulo Cms fornisce:
+- **Pagine dinamiche** con slug-based routing e content blocks JSON
+- **Sistema Blocks** modulare (Paragraph, Navigation, Newsletter, Logo, Social, Links)
+- **Menu gerarchici** con `HasRecursiveRelationships`
+- **Modelli Sushi** per configurazione e moduli (no database)
+- **FolioVoltServiceProvider** per routing file-based multi-lingua
+- **DTOs** Wireable per Livewire (BlockData, FooterData, HeadernavData)
+- **Integrazione Filament** per admin content management
+
+---
+## Tasks
+
+| # | Task | File | Priorita' | % |
+|---|------|------|-----------|---|
+| 1 | Ridurre suppressioni PHPStan (10) | [task-ridurre-phpstan-suppressioni.md](task-ridurre-phpstan-suppressioni.md) | Alta | 0% |
+| 2 | Completare sistema blocks | [task-completare-sistema-blocks.md](task-completare-sistema-blocks.md) | Alta | 60% |
+| 3 | Migliorare test Folio/Volt routing | [task-test-folio-volt-routing.md](task-test-folio-volt-routing.md) | Media | 40% |
+| 4 | Consolidare documentazione (315 file) | [task-consolidare-documentazione.md](task-consolidare-documentazione.md) | Media | 20% |
+| 5 | Implementare versioning pagine | [task-versioning-pagine.md](task-versioning-pagine.md) | Bassa | 0% |
+
+---
+
+## Note
+
+- Buona copertura test (91 file)
+- 10 suppressioni PHPStan da risolvere
+- Sistema blocks funzionante ma estensibile
 # 🎯 CMS MODULE - ROADMAP 2025
 
 **Modulo**: Cms ([Description])  
@@ -206,7 +291,7 @@ Cms Module
 
 ---
 
-**Last Updated**: 2025-10-01
+**
 **Next Review**: 2025-11-01
 **Status**: 🚧 PLANNING  
 **Confidence Level**: 70%  

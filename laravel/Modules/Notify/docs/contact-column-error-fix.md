@@ -1,3 +1,15 @@
+---
+title: "contact column error fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contact column error fix"
+issues: []
+discussions: []
+status: draft
+---
+
 # Correzione Errori ContactColumn - Modulo Notify
 
 ## 📋 Riepilogo della Correzione
@@ -341,3 +353,4 @@ La ContactColumn ora:
 - ✅ Mostra correttamente le icone
 - ✅ Mostra solo i contatti del record specifico
 
+*Ultimo aggiornamento: [DATE]* 

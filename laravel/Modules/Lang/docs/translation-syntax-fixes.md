@@ -1,3 +1,17 @@
+---
+issues: []
+discussions: []
+title: "Correzione Errori di Sintassi nei File di Traduzione"
+module: "Lang"
+type: concept
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Correzione Errori di Sintassi nei File di Traduzione
 
 ## Riepilogo Intervento
@@ -119,7 +133,9 @@ return [
 
 ## Documentazione Aggiornata
 
-- [Chart Module - Translation Syntax Errors](../../laravel/modules/chart/project_docs/translation_syntax_errors.md)
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
 
@@ -151,7 +167,9 @@ return [
 
 ## Collegamenti
 
-- [Chart Module Documentation](../../laravel/modules/chart/project_docs/translation_syntax_errors.md)
+- [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+- [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
+- [Chart Module Documentation](../../laravel/Modules/Chart/project_docs/translation_syntax_errors.md)
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/project_docs/)
 - [Job Module Documentation](../../laravel/Modules/Job/project_docs/)
 - [Lang Module Documentation](../../laravel/Modules/Lang/project_docs/)
@@ -159,7 +177,14 @@ return [
 - [UI Module Documentation](../../laravel/Modules/UI/project_docs/)
 
 ## Ultimo Aggiornamento
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 # Correzione Errori di Sintassi nei File di Traduzione
 
 ## Riepilogo Intervento
@@ -281,7 +306,9 @@ return [
 
 ## Documentazione Aggiornata
 
-- [Chart Module - Translation Syntax Errors](../../laravel/modules/chart/docs/translation_syntax_errors.md)
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+- [Chart Module - Translation Syntax Errors](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [Translation Best Practices](translation-best-practices.md)
 - [PHPStan Configuration](phpstan-configuration.md)
 
@@ -313,12 +340,25 @@ return [
 
 ## Collegamenti
 
-- [Chart Module Documentation](../../laravel/modules/chart/docs/translation_syntax_errors.md)
+- [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+- [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
+- [Chart Module Documentation](../../laravel/Modules/Chart/docs/translation_syntax_errors.md)
 - [FormBuilder Module Documentation](../../laravel/Modules/FormBuilder/docs/)
 - [Job Module Documentation](../../laravel/Modules/Job/docs/)
 - [Lang Module Documentation](../../laravel/Modules/Lang/docs/)
 - [Notify Module Documentation](../../laravel/Modules/Notify/docs/)
 - [UI Module Documentation](../../laravel/Modules/UI/docs/)
+- [Job Module Documentation](../../Job/docs)
+- [Lang Module Documentation](.)
+- [Notify Module Documentation](../../Notify/docs)
+- [UI Module Documentation](../../UI/docs)
 
 ## Ultimo Aggiornamento
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
 [DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+[DATE] - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO
+2025-01-06 - Correzione completa errori sintassi file traduzione ✅ COMPLETATO

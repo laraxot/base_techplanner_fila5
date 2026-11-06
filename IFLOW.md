@@ -423,4 +423,5 @@ php artisan route:clear
 php artisan view:clear
 ```
 
+本项目是专有软件。保留所有权利。
 **LESSON**: SerializableClosure errors sono spesso causati da cache corrotte.

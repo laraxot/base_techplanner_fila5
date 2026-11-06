@@ -1,3 +1,28 @@
+---
+title: "Registration Widget Documentation"
+type: concept
+tags: [registration, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "registration-widget registration widget documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Registration Widget Documentation
 
 ## Overview
@@ -41,9 +66,9 @@ protected function getConfirmationRoute(): string
     return $mapping[$this->type] ?? 'user.registration.confirmation';
 ```
 ## References
-- [Namespace Issues](../../../project_docs/references/namespace-issues.md)
+- [Namespace Issues](../../../../docs/project/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/project_docs/rules/filament-resource-guidelines.md)
-- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)
 # Registration Widget Documentation
 
@@ -108,5 +133,5 @@ protected function getConfirmationRoute(): string
 
 ## References
 
-- [Namespace Issues](../../../docs/references/namespace-issues.md)
+- [Namespace Issues](../../../../docs/references/namespace-issues.md)
 - [Filament Resource Guidelines](../../../modules/xot/docs/rules/filament-resource-guidelines.md)

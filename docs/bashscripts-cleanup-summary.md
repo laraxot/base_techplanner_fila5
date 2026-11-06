@@ -6,6 +6,7 @@
 ## Problemi Identificati e Risolti
 
 ### 1. ✅ Conflitti Git nel .gitignore
+**Problema**: Centinaia di marker di conflitto Git (`<<<<<<< HEAD`, `=======`, `>>>>>>>`) nel file `.gitignore`.
 **Problema**: Centinaia di marker di conflitto Git  nel file `.gitignore`.
 
 **Soluzione**: Creato un nuovo `.gitignore` pulito seguendo le best practice standard, rimuovendo tutti i conflitti.
@@ -15,6 +16,8 @@
 ### 2. ✅ Conflitto in mysql-db-connector.js
 **Problema**: Conflitto di merge non risolto in `bashscripts/mcp/mysql-db-connector.js`:
 ```javascript
+console.error('MySQL MCP Server started for base_techplanner_fila4_mono');
+console.error('MySQL MCP Server started for base_ptvx_fila4_mono');
 console.error('MySQL MCP Server started ');
 ```
 
@@ -84,6 +87,10 @@ bashscripts/
 
 ## Comandi Utili
 
+### Verificare conflitti rimanenti:
+```bash
+grep -r "<<<<<<< HEAD" bashscripts/
+```
 ### Verificare conflitti rimanenti
 
 ### Organizzare script:

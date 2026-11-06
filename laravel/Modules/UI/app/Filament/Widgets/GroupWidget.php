@@ -4,13 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Widgets;
 
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Filament\Schemas\Components\Component;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
-final class GroupWidget extends XotBaseWidget
+final class GroupWidget extends XotBaseSchemaWidget
 {
     protected static ?string $heading = 'Group Widget';
 
-    #[\Override]
+    /**
+     * @return array<string, Component>
+     */
     public function getFormSchema(): array
     {
         return [];

@@ -17,18 +17,20 @@ use Filament\Schemas\Schema;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Notification;
 use Modules\Notify\Datas\FirebaseNotificationData;
 use Modules\Notify\Filament\Clusters\Test;
-use Modules\Notify\Notifications\PushNotification;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Override;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
- * @property \Filament\Schemas\Schema $pushForm
+ * @property Schema $pushForm
  */
 class SendFirebasePushNotificationPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
+    /** @var array<string, mixed>|null */
     public ?array $pushData = [];
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-bell-alert';
@@ -45,8 +47,7 @@ class SendFirebasePushNotificationPage extends XotBasePage
     protected function getForms(): array
     {
         return [
-            'pushForm',
-        ];
+            'pushForm'];
     }
 
     protected function fillForms(): void
@@ -60,7 +61,7 @@ class SendFirebasePushNotificationPage extends XotBasePage
     }
 
     /**
-     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Textarea|\Filament\Forms\Components\Select|\Filament\Forms\Components\Toggle|\Filament\Forms\Components\KeyValue>
+     * @return array<string, TextInput|Textarea|Select|Toggle|KeyValue>
      */
     public function getPushFormSchema(): array
     {
@@ -87,8 +88,7 @@ class SendFirebasePushNotificationPage extends XotBasePage
                     'message' => 'Message',
                     'alert' => 'Alert',
                     'reminder' => 'Reminder',
-                    'update' => 'Update',
-                ])
+                    'update' => 'Update'])
                 ->default('message')
                 ->required(),
             'high_priority' => Toggle::make('high_priority')
@@ -99,23 +99,16 @@ class SendFirebasePushNotificationPage extends XotBasePage
                 ->label(__('notify::push.form.custom_data.label'))
                 ->keyLabel(__('notify::push.form.custom_data.key_label'))
                 ->valueLabel(__('notify::push.form.custom_data.value_label'))
-                ->helperText(__('notify::push.form.custom_data.helper')),
-        ];
+                ->helperText(__('notify::push.form.custom_data.helper'))];
     }
 
     public function sendPushNotification(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->pushForm->getState();
 
         try {
-            // Creare i dati della notifica Firebase
-            $notificationData = FirebaseNotificationData::from([
-                'type' => $data['notification_type'] ?? 'message',
-                'title' => $data['title'] ?? '',
-                'body' => $data['body'] ?? '',
-                'data' => $data['custom_data'] ?? [],
-            ]);
-
             // TODO: Implementare PushNotification class
             // Inviare la notifica push
             // Notification::route('firebase', $data['token'])
@@ -129,17 +122,15 @@ class SendFirebasePushNotificationPage extends XotBasePage
                 ->send();
 
             // Loggare l'invio
-            Log::info('Notifica push inviata con successo', [
+            Log::debug('Notifica push inviata con successo', [
                 'token' => $data['token'],
                 'title' => $data['title'],
-                'type' => $data['notification_type'],
-            ]);
+                'type' => $data['notification_type']]);
         } catch (Exception $e) {
             // Loggare l'errore
             Log::error('Errore durante l\'invio della notifica push', [
                 'error' => $e->getMessage(),
-                'token' => $data['token'],
-            ]);
+                'token' => $data['token']]);
 
             // Notificare l'errore
             FilamentNotification::make()
@@ -150,16 +141,33 @@ class SendFirebasePushNotificationPage extends XotBasePage
         }
     }
 
+    /**
+     * FCM accetta solo coppie chiave non vuota => stringa: il tipo viaggia come chiave `type`.
+     *
+     * @return array<non-empty-string, string>
+     */
+    protected function getMessageData(FirebaseNotificationData $notificationData): array
+    {
+        $messageData = ['type' => $notificationData->type];
+
+        foreach ($notificationData->data as $key => $value) {
+            if ($key !== '') {
+                $messageData[$key] = SafeStringCastAction::cast($value);
+            }
+        }
+
+        return $messageData;
+    }
+
+    /** @return array<string, Action> */
     protected function getPushFormActions(): array
     {
         return [
-            Action::make('sendPushNotification')
+            'submit' => Action::make('sendPushNotification')
                 ->label(__('notify::push.actions.send'))
-                ->submit('sendPushNotification'),
-        ];
+                ->submit('sendPushNotification')];
     }
 
-    #[Override]
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();

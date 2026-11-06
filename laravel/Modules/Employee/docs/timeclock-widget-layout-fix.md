@@ -1,3 +1,9 @@
+---
+title: "Employee - TIMECLOCK-WIDGET-LAYOUT-FIX"
+module: Employee
+bmad: true
+status: active
+---
 # TimeClockWidget - Layout Fix: Da Verticale a 3 Colonne
 
 ## 🚨 PROBLEMA UI IDENTIFICATO
@@ -41,6 +47,7 @@
 {{-- PROBLEMATICO: Layout verticale forzato --}}
 <div class="text-center space-y-6" wire:poll.30s="updateData">
     
+    {{-- Time/Date: OK ma non in colonna --}}
     <div class="space-y-2">...</div>
     
     {{-- Sessions: Lista verticale invece che compatta --}}

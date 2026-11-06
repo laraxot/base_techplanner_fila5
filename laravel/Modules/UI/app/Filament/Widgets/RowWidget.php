@@ -9,14 +9,17 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
-abstract class RowWidget extends XotBaseWidget
+abstract class RowWidget extends XotBaseSchemaWidget
 {
+    /** @var array<string, int|string> */
     public array $grid = [];
 
+    /** @var array<int, class-string> */
     public array $widgets = [];
 
+    /** @var view-string */
     protected string $view = 'ui::filament.widgets.row';
 
     protected int|string|array $columnSpan = 'full';

@@ -4,22 +4,28 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Tests\Feature;
 
-beforeEach(function () {
-    // Clean database before each test
-    \Modules\User\Models\User::query()->delete();
+use Modules\Gdpr\Tests\TestCase;
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
+beforeEach(function (): void {
+    /* @var \Modules\Gdpr\Tests\TestCase $this */
+    User::query()->delete();
 });
 
-it('can access database connection', function () {
-    $count = \Modules\User\Models\User::count();
-    expect($count)->toBeInt();
+it('can access database connection', function (): void {
+    $count = User::count();
+
+    Assert::assertIsInt($count);
 });
 
-it('can create user via factory', function () {
-    $user = \Modules\User\Models\User::factory()->create([
+it('can create user via factory', function (): void {
+    $user = UserFactory::new()->createOne([
         'email' => 'test@example.com',
         'first_name' => 'Test',
         'last_name' => 'User',
     ]);
 
-    expect($user->email)->toBe('test@example.com');
+    Assert::assertSame('test@example.com', $user->email);
 });

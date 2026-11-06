@@ -1,9 +1,34 @@
+---
+title: "User Module - Roadmap, Issues & Optimization"
+type: concept
+tags: [roadmap, issues]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-and-issues user module - roadmap, issues & optimization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # User Module - Roadmap, Issues & Optimization
 
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
 **Maintainer**: Team FixCity  
-**Status PHPStan**: ⚠️ 95 errori (Level 9)
+**Status PHPStan**: ⚠️ 95 errori (Level 10)
 
 ---
 
@@ -23,7 +48,7 @@
 
 ---
 
-## 🔴 ERRORI PHPSTAN DA CORREGGERE (95)
+## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
 
 ### Categorizzazione Errori
 
@@ -247,7 +272,7 @@ php artisan queue:prune-failed --hours=48
 - [ ] Cleanup PHPStan suppressions
 
 **Totale**: ~6 ore  
-**Risultato**: ✅ 0 errori PHPStan Level 9
+**Risultato**: ✅ 0 errori PHPStan Level 10
 
 ---
 
@@ -313,7 +338,7 @@ php artisan queue:prune-failed --hours=48
 - [ ] **User Analytics**
   - Activity metrics
   - Engagement tracking
-  - Churn prediction
+  - Churn <nome progetto>ion
 
 ---
 
@@ -369,17 +394,18 @@ php artisan queue:prune-failed --hours=48
 
 ## 🔗 Collegamenti
 
-- [← User Module README](./readme.md)
-- [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
+- [← User Module README](./README.md)
+- [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
-- [← Root Documentation](../../../docs/index.md)
+- [← Root Documentation](../../../../docs/index.md)
+- [← Project Roadmap](../../../../docs/project-analysis-and-roadmap.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
-**Status**: ⚠️ 95 ERRORI DA CORREGGERE  
+**Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN
-
 
 

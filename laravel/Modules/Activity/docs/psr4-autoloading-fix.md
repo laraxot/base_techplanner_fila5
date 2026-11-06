@@ -1,3 +1,11 @@
+---
+title: "PSR-4 Autoloading Compliance Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "psr-4 autoloading compliance fix activity"
+---
 # PSR-4 Autoloading Compliance Fix
 
 ## Data: 21 Gennaio 2025
@@ -303,9 +311,21 @@ Namespace\Class → file/path/Class.php
 
 Questa regola DEVE essere rispettata al 100% per tutti i file, inclusi i test.
 
+## Seconda ondata PSR-4 (Marzo 2026)
+
+Moduli coinvolti: Activity, Notify, Xot, User.
+
+I warning segnalati riguardavano classi come `CanPaginateHarness`, `ListLogActivitiesPageTest`,
+`NotifyRateLimitDummy`, `TestModel`, `TestClassWithPasswordValidationRules`, ecc.
+
+Analisi: tutti i file indicati erano gia' stati convertiti a factory functions + anonymous classes.
+I warning erano da classmap composer stantio. Fix: `composer dump-autoload`.
+
+Lezione chiave: i warning PSR-4 su classi che non esistono piu' nei file indicano classmap
+obsoleto: non richiedono modifiche al codice, solo `composer dump-autoload`.
+
 ---
 
-**Autore**: Claude Code
 **PHPStan Level**: 10
 **PSR-4 Compliance**: 100%
 **Status**: ✅ Completato e Verificato

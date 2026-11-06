@@ -9,16 +9,16 @@ declare(strict_types=1);
     'side' => 'content',
     'slug' => '',
     'page' => null,
-    'container0' => '',
-    'slug0' => '',
-    'data' => []
+    'data' => [],
 ])
 
-@if(!empty($blocks))
-    <div class="page-{{ $side }}-content" data-slug="{{ $slug }}" data-side="{{ $side }}">
-        @include('cms::components.page-content', [
-            'blocks' => $blocks,
-            'data' => array_merge(['container0' => $container0, 'slug0' => $slug0], $data)
-        ])
-    </div>
+@if (!empty($blocks))
+    @foreach ($blocks as $block)
+        {{-- BlockData ha già gestito tutto: vista, dati, fallback --}}
+        {{-- Salta i blocchi non attivi --}}
+        @if (property_exists($block, 'active') && !$block->active)
+            @continue
+        @endif
+        @include($block->view, array_merge($block->data, $data, ['data' => array_merge($block->data, $data)]))
+    @endforeach
 @endif

@@ -1,0 +1,10 @@
+128	Xot
+84	User
+47	Employee
+30	Cms
+22	Job
+21	Lang
+19	Activity
+6	Gdpr
+6	UI
+files=145 modules=9 errors=363

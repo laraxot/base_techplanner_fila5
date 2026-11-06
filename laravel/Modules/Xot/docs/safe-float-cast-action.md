@@ -1,3 +1,11 @@
+---
+title: "SafeFloatCastAction"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "safefloatcastaction xot"
+---
 # SafeFloatCastAction
 
 ## Descrizione
@@ -180,9 +188,10 @@ class SafeFloatCastActionTest extends TestCase
 ## Collegamenti
 
 - [SafeStringCastAction](../actions/cast/safe-string-cast-action.md)
-- [Xot Actions Documentation](../actions/readme.md)
+- [Xot Actions Documentation](../actions/README.md)
 - [DRY Principle](../../project_docs/dry-principle.md)
 - [KISS Principle](../../project_docs/kiss-principle.md)
 
 ---
 
+*Ultimo aggiornamento: 2025-01-06*

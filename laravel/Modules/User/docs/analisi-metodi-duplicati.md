@@ -1,8 +1,33 @@
+---
+title: "Analisi Metodi Duplicati - Modulo User"
+type: concept
+tags: [analisi, metodi, duplicati]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "analisi-metodi-duplicati analisi metodi duplicati - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Analisi Metodi Duplicati - Modulo User
 
 ## Riferimento Principale
 
-📚 **Documento Completo:** [../../../docs/analisi-metodi-duplicati.md](../../../docs/analisi-metodi-duplicati.md)
+📚 **Documento Completo:** [../../../../docs/analisi-metodi-duplicati.md](../../../../docs/analisi-metodi-duplicati.md)
 
 ## Stato del Modulo User
 
@@ -140,7 +165,7 @@ protected function registerObservers(): void
 
 ## Link Correlati
 
-- 📚 [Analisi Completa](../../../docs/analisi-metodi-duplicati.md)
+- 📚 [Analisi Completa](../../../../docs/analisi-metodi-duplicati.md)
 - 📖 [Modulo Xot - Classi Base](../../xot/docs/analisi-metodi-duplicati.md)
 - 📖 [Architettura User](./core/architecture.md)
 - 📖 [Regole Business Logic](./business-logic-deep-dive.md)

@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Unit;
 
 use Carbon\Carbon;
-use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use stdClass;
+use Tests\TestCase;
 
 uses(TestCase::class);
 
@@ -17,7 +19,7 @@ describe('Authentication Business Logic', function () {
             'name' => 'Mario Rossi',
             'email' => 'mario.rossi@example.com',
             'email_verified_at' => Carbon::now()->subDays(5),
-            'password' => '$2y$10$abcdefghijklmnopqrstuvwxyz1234567890ABcdefghijKlmnopqrstu',
+            'password' => '$2y$10$encrypted_password_hash',
             'remember_token' => 'remember_token_123',
             'current_team_id' => 2001,
             'profile_photo_path' => 'avatars/mario-rossi.jpg',
@@ -81,28 +83,28 @@ describe('Authentication Business Logic', function () {
             $user = (object) $this->userData;
 
             // Business Logic: User must be active and verified
-            expect($user->is_active)->toBeTrue();
-            expect($user->email_verified_at)->not->toBeNull();
-            expect($user->locked_until)->toBeNull();
+            Assert::assertTrue($user->is_active);
+            Assert::assertNotNull($user->email_verified_at);
+            Assert::assertNull($user->locked_until);
         });
 
         it('validates email format and verification', function () {
             $user = (object) $this->userData;
 
             // Business Logic: Email must be valid format and verified
-            expect($user->email)->toMatch('/^[^\s@]+@[^\s@]+\.[^\s@]+$/');
-            expect($user->email_verified_at)->toBeInstanceOf(Carbon::class);
-            expect($user->email_verified_at->isPast())->toBeTrue();
+            Assert::assertMatchesRegularExpression('/^[^\s@]+@[^\s@]+\.[^\s@]+$/', $user->email);
+            Assert::assertInstanceOf(Carbon::class, $user->email_verified_at);
+            Assert::assertTrue($user->email_verified_at->isPast());
         });
 
         it('handles password security requirements', function () {
             $user = (object) $this->userData;
 
             // Business Logic: Password must be hashed and have expiration
-            expect($user->password)->toStartWith('$2y$'); // bcrypt hash
-            expect(strlen($user->password))->toBeGreaterThan(50); // Proper hash length
-            expect($user->password_expires_at)->toBeInstanceOf(Carbon::class);
-            expect($user->password_expires_at->isFuture())->toBeTrue();
+            Assert::assertStringStartsWith('$2y$', $user->password);
+            Assert::assertGreaterThan(50, strlen($user->password));
+            Assert::assertInstanceOf(Carbon::class, $user->password_expires_at);
+            Assert::assertTrue($user->password_expires_at->isFuture());
         });
 
         it('tracks login attempts and lockouts', function () {
@@ -111,8 +113,8 @@ describe('Authentication Business Logic', function () {
             $lockoutMinutes = 30;
 
             // Business Logic: Account lockout after failed attempts
-            expect($user->failed_login_attempts)->toBeLessThan($maxAttempts);
-            expect($user->locked_until)->toBeNull(); // Not locked
+            Assert::assertLessThan($maxAttempts, $user->failed_login_attempts);
+            Assert::assertNull($user->locked_until);
 
             // Simulate lockout scenario
             $userLocked = (object) array_merge($this->userData, [
@@ -120,25 +122,25 @@ describe('Authentication Business Logic', function () {
                 'locked_until' => Carbon::now()->addMinutes($lockoutMinutes),
             ]);
 
-            expect($userLocked->failed_login_attempts)->toBe($maxAttempts);
-            expect($userLocked->locked_until->isFuture())->toBeTrue();
+            Assert::assertSame($maxAttempts, $userLocked->failed_login_attempts);
+            Assert::assertTrue($userLocked->locked_until->isFuture());
         });
 
         it('manages session and remember tokens', function () {
             $user = (object) $this->userData;
 
             // Business Logic: Remember token for persistent sessions
-            expect($user->remember_token)->toBeString();
-            expect(strlen($user->remember_token))->toBeGreaterThan(10);
-            expect($user->last_login_at)->toBeInstanceOf(Carbon::class);
+            Assert::assertIsString($user->remember_token);
+            Assert::assertGreaterThan(10, strlen($user->remember_token));
+            Assert::assertInstanceOf(Carbon::class, $user->last_login_at);
         });
 
         it('validates profile completeness', function () {
             $user = (object) $this->userData;
 
             // Business Logic: User profile requirements
-            expect($user->name)->not->toBeEmpty();
-            expect($user->email)->not->toBeEmpty();
+            Assert::assertNotSame('', $user->name);
+            Assert::assertNotSame('', $user->email);
 
             // Optional profile fields
             $profileScore = 0;
@@ -155,7 +157,7 @@ describe('Authentication Business Logic', function () {
                 $profileScore += 25;
             }
 
-            expect($profileScore)->toBeGreaterThanOrEqual(75); // Good profile
+            Assert::assertGreaterThanOrEqual(75, $profileScore);
         });
     });
 
@@ -165,17 +167,18 @@ describe('Authentication Business Logic', function () {
             $user = (object) $this->userData;
 
             // Business Logic: User can own and belong to teams
-            expect($team->user_id)->toBe($user->id); // Owner relationship
-            expect($user->current_team_id)->toBe($team->id); // Active team
-            expect($team->is_active)->toBeTrue();
+            Assert::assertSame($user->id, $team->user_id);
+            Assert::assertSame($team->id, $user->current_team_id);
+            Assert::assertTrue($team->is_active);
         });
 
         it('distinguishes personal vs organizational teams', function () {
             $team = (object) $this->teamData;
+            $user = (object) $this->userData;
 
             // Business Logic: Personal teams vs organizational teams
-            expect($team->personal_team)->toBeFalse(); // This is organizational
-            expect($team->name)->not->toContain('Personal'); // Org team naming
+            Assert::assertFalse($team->personal_team);
+            Assert::assertStringNotContainsString('Personal', $team->name);
 
             // Personal team would be:
             $personalTeam = (object) [
@@ -184,8 +187,9 @@ describe('Authentication Business Logic', function () {
                 'user_id' => 1001,
             ];
 
-            expect($personalTeam->personal_team)->toBeTrue();
-            expect($personalTeam->name)->toContain('Personal');
+            Assert::assertNotSame($team->personal_team, $personalTeam->personal_team);
+            Assert::assertStringContainsString('Personal', $personalTeam->name);
+            Assert::assertSame($user->id, $personalTeam->user_id);
         });
 
         it('validates team settings and preferences', function () {
@@ -193,14 +197,14 @@ describe('Authentication Business Logic', function () {
             $settings = $team->settings;
 
             // Business Logic: Team settings structure
-            expect($settings)->toHaveKey('timezone');
-            expect($settings)->toHaveKey('language');
-            expect($settings)->toHaveKey('notification_preferences');
+            Assert::assertArrayHasKey('timezone', $settings);
+            Assert::assertArrayHasKey('language', $settings);
+            Assert::assertArrayHasKey('notification_preferences', $settings);
 
             // Italian healthcare team defaults
-            expect($settings['timezone'])->toBe('Europe/Rome');
-            expect($settings['language'])->toBe('it');
-            expect($settings['notification_preferences'])->toContain('email');
+            Assert::assertSame('Europe/Rome', $settings['timezone']);
+            Assert::assertSame('it', $settings['language']);
+            Assert::assertContains('email', $settings['notification_preferences']);
         });
 
         it('handles team switching logic', function () {
@@ -209,15 +213,15 @@ describe('Authentication Business Logic', function () {
             $newTeamId = 2002;
 
             // Business Logic: User can switch to teams they belong to
-            expect($availableTeams)->toContain($user->current_team_id);
-            expect($availableTeams)->toContain($newTeamId);
+            Assert::assertContains($user->current_team_id, $availableTeams);
+            Assert::assertContains($newTeamId, $availableTeams);
 
             // Simulate team switch
             $userAfterSwitch = (object) array_merge($this->userData, [
                 'current_team_id' => $newTeamId,
             ]);
 
-            expect($userAfterSwitch->current_team_id)->toBe($newTeamId);
+            Assert::assertSame($newTeamId, $userAfterSwitch->current_team_id);
         });
     });
 
@@ -226,10 +230,10 @@ describe('Authentication Business Logic', function () {
             $role = (object) $this->roleData;
 
             // Business Logic: Role must have name, guard, and permissions
-            expect($role->name)->toBeString();
-            expect($role->guard_name)->toBe('web');
-            expect($role->permissions)->toBeArray();
-            expect(count($role->permissions))->toBeGreaterThan(0);
+            Assert::assertIsString($role->name);
+            Assert::assertSame('web', $role->guard_name);
+            Assert::assertIsArray($role->permissions);
+            Assert::assertGreaterThan(0, count($role->permissions));
         });
 
         it('validates healthcare-specific permissions', function () {
@@ -255,8 +259,9 @@ describe('Authentication Business Logic', function () {
             $hasPatientAccess = in_array('view_patients', $rolePermissions, strict: true);
             $hasAppointmentAccess = in_array('create_appointments', $rolePermissions, strict: true);
 
-            expect($hasPatientAccess)->toBeTrue();
-            expect($hasAppointmentAccess)->toBeTrue();
+            Assert::assertTrue($hasPatientAccess);
+            Assert::assertTrue($hasAppointmentAccess);
+            Assert::assertNotEmpty(array_intersect($rolePermissions, $healthcarePermissions));
         });
 
         it('handles permission inheritance and hierarchy', function () {
@@ -268,11 +273,11 @@ describe('Authentication Business Logic', function () {
             ];
 
             // Business Logic: Higher level roles have more permissions
-            usort($roles, fn ($a, $b) => $a->level <=> $b->level);
+            usort($roles, fn (stdClass $a, stdClass $b) => $a->level <=> $b->level);
 
-            expect($roles[0]->name)->toBe('admin'); // Highest level
-            expect($roles[0]->permissions)->toContain('*'); // All permissions
-            expect(count($roles[1]->permissions))->toBeGreaterThan(count($roles[2]->permissions));
+            Assert::assertSame('admin', $roles[0]->name);
+            Assert::assertContains('*', $roles[0]->permissions);
+            Assert::assertGreaterThan(count($roles[2]->permissions), count($roles[1]->permissions));
         });
 
         it('validates contextual permissions for teams', function () {
@@ -288,9 +293,9 @@ describe('Authentication Business Logic', function () {
             $currentPermissions = $userTeamPermissions[$currentTeam];
             $otherPermissions = $userTeamPermissions[$otherTeam];
 
-            expect(count($currentPermissions))->toBeGreaterThan(count($otherPermissions));
-            expect($currentPermissions)->toContain('create_appointments');
-            expect($otherPermissions)->not->toContain('create_appointments');
+            Assert::assertGreaterThan(count($otherPermissions), count($currentPermissions));
+            Assert::assertContains('create_appointments', $currentPermissions);
+            Assert::assertNotContains('create_appointments', $otherPermissions);
         });
     });
 
@@ -300,21 +305,21 @@ describe('Authentication Business Logic', function () {
             $supportedProviders = ['google', 'facebook', 'azure', 'github'];
 
             // Business Logic: OAuth provider must be supported
-            expect($supportedProviders)->toContain($oauth->provider);
-            expect($oauth->provider_id)->toBeString();
-            expect($oauth->user_id)->toBe(1001);
+            Assert::assertContains($oauth->provider, $supportedProviders);
+            Assert::assertIsString($oauth->provider_id);
+            Assert::assertSame(1001, $oauth->user_id);
         });
 
         it('handles OAuth token lifecycle', function () {
             $oauth = (object) $this->oauthData;
 
             // Business Logic: OAuth tokens have expiration
-            expect($oauth->access_token)->toBeString();
-            expect($oauth->refresh_token)->toBeString();
-            expect($oauth->expires_at)->toBeInstanceOf(Carbon::class);
+            Assert::assertIsString($oauth->access_token);
+            Assert::assertIsString($oauth->refresh_token);
+            Assert::assertInstanceOf(Carbon::class, $oauth->expires_at);
 
             // Token should not be expired for valid session
-            expect($oauth->expires_at->isFuture())->toBeTrue();
+            Assert::assertTrue($oauth->expires_at->isFuture());
         });
 
         it('validates OAuth scope permissions', function () {
@@ -323,13 +328,9 @@ describe('Authentication Business Logic', function () {
 
             // Business Logic: OAuth must have required scopes
             foreach ($requiredScopes as $scope) {
-                expect($oauth->scopes)->toContain($scope);
+                Assert::assertContains($scope, $oauth->scopes);
             }
 
-            // Additional scopes for healthcare context
-            $healthcareScopes = ['openid', 'address', 'phone'];
-
-            // These would be added for healthcare-specific OAuth flows
         });
 
         it('handles OAuth provider fallbacks', function () {
@@ -338,8 +339,8 @@ describe('Authentication Business Logic', function () {
             $allProviders = array_merge([$primaryProvider], $fallbackProviders);
 
             // Business Logic: Must have fallback options
-            expect(count($allProviders))->toBeGreaterThan(1);
-            expect($allProviders[0])->toBe($primaryProvider);
+            Assert::assertGreaterThan(1, count($allProviders));
+            Assert::assertSame($primaryProvider, $allProviders[0]);
         });
     });
 
@@ -349,30 +350,30 @@ describe('Authentication Business Logic', function () {
             $validDeviceTypes = ['mobile', 'tablet', 'desktop', 'web'];
 
             // Business Logic: Device must be properly registered
-            expect($validDeviceTypes)->toContain($device->device_type);
-            expect($device->device_id)->toBeString();
-            expect($device->user_id)->toBe(1001);
+            Assert::assertContains($device->device_type, $validDeviceTypes);
+            Assert::assertIsString($device->device_id);
+            Assert::assertSame(1001, $device->user_id);
         });
 
         it('tracks device activity and trust', function () {
             $device = (object) $this->deviceData;
 
             // Business Logic: Device trust and activity tracking
-            expect($device->last_active)->toBeInstanceOf(Carbon::class);
-            expect($device->is_trusted)->toBeBool();
+            Assert::assertInstanceOf(Carbon::class, $device->last_active);
+            Assert::assertIsBool($device->is_trusted);
 
             // Device should be recently active
             $inactiveThreshold = Carbon::now()->subDays(30);
-            expect($device->last_active->isAfter($inactiveThreshold))->toBeTrue();
+            Assert::assertTrue($device->last_active->isAfter($inactiveThreshold));
         });
 
         it('validates push notification setup', function () {
             $device = (object) $this->deviceData;
 
             // Business Logic: Mobile devices should have push tokens
-            if ('mobile' === $device->device_type) {
-                expect($device->push_token)->toBeString();
-                expect(strlen($device->push_token))->toBeGreaterThan(20);
+            if ($device->device_type === 'mobile') {
+                Assert::assertIsString($device->push_token);
+                Assert::assertGreaterThan(20, strlen($device->push_token));
             }
         });
 
@@ -388,7 +389,7 @@ describe('Authentication Business Logic', function () {
             $currentDeviceCount = count($userDevices);
 
             // Business Logic: Reasonable device limits
-            expect($currentDeviceCount)->toBeLessThanOrEqual($maxDevices);
+            Assert::assertLessThanOrEqual($maxDevices, $currentDeviceCount);
         });
     });
 
@@ -407,8 +408,8 @@ describe('Authentication Business Logic', function () {
             $timeSinceActivity = Carbon::now()->diffInMinutes($session->last_activity);
             $timeSinceStart = Carbon::now()->diffInHours($session->started_at);
 
-            expect($timeSinceActivity)->toBeLessThan($session->timeout_minutes);
-            expect($timeSinceStart)->toBeLessThan($session->max_lifetime_hours);
+            Assert::assertLessThan($session->timeout_minutes, $timeSinceActivity);
+            Assert::assertLessThan($session->max_lifetime_hours, $timeSinceStart);
         });
 
         it('handles concurrent session limits', function () {
@@ -420,7 +421,7 @@ describe('Authentication Business Logic', function () {
             $maxConcurrentSessions = 3;
 
             // Business Logic: Limit concurrent sessions
-            expect(count($userActiveSessions))->toBeLessThanOrEqual($maxConcurrentSessions);
+            Assert::assertLessThanOrEqual($maxConcurrentSessions, count($userActiveSessions));
         });
 
         it('validates IP-based security checks', function () {
@@ -434,9 +435,9 @@ describe('Authentication Business Logic', function () {
             $attempt = (object) $loginAttempt;
 
             // Business Logic: Basic IP security validation
-            expect($attempt->ip_address)->toMatch('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/');
-            expect($attempt->is_suspicious)->toBeFalse();
-            expect($attempt->country)->toBe('Italy'); // Expected for Italian users
+            Assert::assertMatchesRegularExpression('/^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$/', $attempt->ip_address);
+            Assert::assertFalse($attempt->is_suspicious);
+            Assert::assertSame('Italy', $attempt->country);
         });
     });
 });

@@ -1,3 +1,15 @@
+---
+title: "conflict resolution translation files"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution translation files"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitti File di Traduzione UI
 
 ## Problema Identificato
@@ -132,7 +144,7 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 
 ## Collegamenti Correlati
 
-- [Translation Standards](../../../docs/translation-standards.md)
+- [Translation Standards](../../../../docs/translation-standards.md)
 - [PHP Strict Types](./strict_types_implementation.md)
 - [UI Module Structure](./structure.md)
 - [Best Practices](./best-practices.md)
@@ -285,7 +297,7 @@ Applicare la stessa logica a tutti i file di traduzione con conflitti simili:
 
 ## Collegamenti Correlati
 
-- [Translation Standards](../../../project_docs/translation-standards.md)
+- [Translation Standards](../../../../docs/project/translation-standards.md)
 - [PHP Strict Types](./strict_types_implementation.md)
 - [UI Module Structure](./structure.md)
 - [Best Practices](./best-practices.md)

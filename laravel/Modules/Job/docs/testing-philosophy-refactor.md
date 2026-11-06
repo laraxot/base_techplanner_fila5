@@ -1,3 +1,15 @@
+---
+title: "testing philosophy refactor"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing philosophy refactor"
+issues: []
+discussions: []
+status: draft
+---
+
 # Job Module Testing Refactor - The Journey to Zen
 
 ## The Problem (Before Refactor)
@@ -99,14 +111,14 @@ abstract class TestCase extends BaseTestCase
 ```ini
 # Add Job module connection
 DB_CONNECTION=mysql
-DB_DATABASE=laravelpizza_data_test
+DB_DATABASE=<nome progetto>_data_test
 
 JOB_DB_CONNECTION=mysql
 JOB_DB_HOST=127.0.0.1
 JOB_DB_PORT=3306
-JOB_DB_DATABASE=laravelpizza_job_test
+JOB_DB_DATABASE=<nome progetto>_job_test
 JOB_DB_USERNAME=marco
-JOB_DB_PASSWORD=marco
+JOB_DB_PASSWORD=[segreto locale, non nel repo]
 ```
 
 ### Step 2: Update config/database.php
@@ -169,7 +181,7 @@ $this->artisan('migrate', ['--database' => 'job']);
 ### Philosophical Benefits
 
 1. **Respects User Intent**: User configured MySQL → we use MySQL
-2. **Predictable**: Developers expect `.env.testing` to work
+2. **<nome progetto>able**: Developers expect `.env.testing` to work
 3. **Honest**: Code matches documentation
 4. **Robust**: Uses battle-tested migration system
 
@@ -250,7 +262,6 @@ This is the way.
 - `.env.testing` - Single source of truth for test configuration
 
 ---
-
 **Date**: [DATE]
 **Author**: Claude Sonnet 4.5
 **Status**: Implementation Ready

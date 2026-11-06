@@ -1,3 +1,15 @@
+---
+title: "layout variants cleanup complete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "layout variants cleanup complete"
+issues: []
+discussions: []
+status: draft
+---
+
 # Pulizia Completa Varianti Layout - Tema Sixteen
 
 ## ✅ **CORREZIONE COMPLETATA**
@@ -182,10 +194,9 @@ name('login');
 - [Pulizia Naming AGID](./agid-naming-cleanup-complete.md)
 - [Sistema Blocchi](./blocks-system.md)
 - [Componenti Tema](./components.md)
-- [Documentazione Root](../../../../project_docs/agid-compliance.md)
+- [Documentazione Root](../../../../../docs/project/agid-compliance.md)
 
 ---
-
 **Creato**: 2025-08-01  
 **Autore**: Sistema Pulizia Layout  
 **Versione**: 1.0  

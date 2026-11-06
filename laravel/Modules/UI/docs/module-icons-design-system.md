@@ -1,3 +1,15 @@
+---
+title: "module icons design system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module icons design system"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sistema di Design per Icone SVG dei Moduli
 
 ## Principi di Design
@@ -142,5 +154,5 @@ return [
 ## Collegamenti
 - [UI Module Icons](../laravel/modules/ui/docs/icons.md)
 - [Filament Icon Registration](../laravel/modules/xot/docs/filament-assets.md)
-- [Accessibility Guidelines](../docs/accessibility-standards.md)
+- [Accessibility Guidelines](../../docs/accessibility-standards.md)
 

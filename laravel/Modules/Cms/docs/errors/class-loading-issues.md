@@ -1,3 +1,15 @@
+---
+title: "class loading issues"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "class loading issues"
+issues: []
+discussions: []
+status: draft
+---
+
 # Errori di Caricamento Classi
 
 ## Problema: Riferimenti a Classi Rinominate
@@ -59,4 +71,4 @@ include(...PageContentResource.php): Failed to open stream: No such file or dire
 ## Collegamenti
 - [Refactoring PageContent → Section](../refactoring/page-content-to-section.md)
 - [Gestione Sezioni](../section-management.md)
-- [Documentazione Root](../../../../docs/errors.md)
+- [Documentazione Root](../../../../../docs/errors.md)

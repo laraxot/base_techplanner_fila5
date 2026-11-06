@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\ValueObjects;
 
-use InvalidArgumentException;
-
 use function Safe\preg_match;
 
 /**
@@ -20,7 +18,7 @@ readonly class PhoneValueObject
     public static function fromString(string $phone): self
     {
         if (preg_match('/^\+1\d{10}$/', $phone) === 0) {
-            throw new InvalidArgumentException('It is not valid phone value');
+            throw new \InvalidArgumentException('It is not valid phone value');
         }
 
         return new self($phone);

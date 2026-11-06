@@ -1,3 +1,11 @@
+---
+title: "Errore: Duplicate Entry Durante Activity Log"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity, errori]
+qmd: "errore: duplicate entry durante activity log activity"
+---
 # Errore: Duplicate Entry Durante Activity Log
 
 ## Problema
@@ -449,7 +457,10 @@ class SchedaObserver
 - [Model Events](https://laravel.com/docs/eloquent#events)
 
 ### Documentazione Interna
-- [Activity Module - README](../readme.md)
+- [Activity Module - README](../README.md)
+- [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md)
+- [SchedaTrait Refactoring Plan](../../Sigma/docs/refactoring/scheda-trait-accessors.md)
+- [Activity Module - README](../README.md)
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md)
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessors.md)
 
@@ -459,6 +470,7 @@ class SchedaObserver
 
 ---
 
+**=======
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Severità**: CRITICA (blocca edit in produzione)
 **Workaround**: Disabilitare temporaneamente LogsActivity trait

@@ -1,16 +1,24 @@
-# Architettura a Moduli vs Domain per Prediction Market
+---
+title: "Architettura a Moduli vs Domain per <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, use_cases]
+qmd: "architettura a moduli vs domain per <nome progetto>ion market activity"
+---
+# Architettura a Moduli vs Domain per <nome progetto>ion Market
 
 ## Introduzione
-Un prediction market può essere implementato sia seguendo una struttura a moduli (Laravel Modules) sia una struttura a bounded context (Domain). Qui spieghiamo differenze, vantaggi, svantaggi e best practice.
+Un <nome progetto>ion market può essere implementato sia seguendo una struttura a moduli (Laravel Modules) sia una struttura a bounded context (Domain). Qui spieghiamo differenze, vantaggi, svantaggi e best practice.
 
 ## Struttura a Moduli (Laravel Modules)
-- Ogni modulo è un dominio funzionale isolato (es. PredictionMarket, User, Payment).
+- Ogni modulo è un dominio funzionale isolato (es. <nome progetto>ionMarket, User, Payment).
 - Ogni modulo ha la sua `app/`, `config/`, `database/`, `resources/`, `routes/`, `tests/`, `composer.json`, `module.json`.
 - Ideale per progetti enterprise, multi-team, multi-prodotto.
 - Esempio:
 ```
 Modules/
-  PredictionMarket/
+  <nome progetto>ionMarket/
     app/Events/
     app/Actions/
     app/Projectors/
@@ -30,12 +38,12 @@ Modules/
 ```
 
 ## Struttura a Domain (Bounded Context)
-- Tutto il dominio prediction market è in una cartella (es. `app/Domain/PredictionMarket/`).
+- Tutto il dominio <nome progetto>ion market è in una cartella (es. `app/Domain/<nome progetto>ionMarket/`).
 - Suddivisione interna: `Events/`, `Actions/`, `Projectors/`, ecc.
 - Ideale per progetti monolitici o con pochi domini.
 - Esempio:
 ```
-app/Domain/PredictionMarket/
+app/Domain/<nome progetto>ionMarket/
   Events/
   Actions/
   Projectors/
@@ -75,6 +83,7 @@ app/Domain/PredictionMarket/
 - [Best practice modularità](https://laravelmodules.com/docs/12/basic-usage/creating-a-module)
 - [Esempi di modularizzazione](https://github.com/nWidart/laravel-modules)
 - [Indice prediction_market](./readme.md)
+- [Indice prediction_market](./README.md)
 - [Architettura prediction_market](./02_architettura.md)
 - [Best practice prediction_market](./04_best_practice.md)
 - [API prediction_market](./06_api.md)

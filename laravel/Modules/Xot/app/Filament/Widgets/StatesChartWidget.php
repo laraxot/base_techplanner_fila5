@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Widgets;
 
-use Exception;
 use Illuminate\Database\Eloquent\Model;
-use Override;
-use RuntimeException;
+use Illuminate\Support\Facades\DB;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 class StatesChartWidget extends XotBaseChartWidget
 {
@@ -19,31 +19,20 @@ class StatesChartWidget extends XotBaseChartWidget
 
     protected static ?int $sort = 4;
 
-    protected static bool $isLazy = true;
-
-    #[Override]
+    #[\Override]
     public function getHeading(): ?string
     {
         return static::transClass($this->model, 'widgets.states_chart.heading');
     }
 
-    #[Override]
+    #[\Override]
     protected function getData(): array
     {
         $label = static::transClass($this->model, 'widgets.states_chart.label');
         try {
             /** @var class-string<Model> $modelClass */
             $modelClass = $this->model;
-
-            $queryResult = $modelClass::selectRaw('state, COUNT(*) as count')
-                ->groupBy('state')
-                ->get();
-
-            if (! is_object($queryResult) || ! method_exists($queryResult, 'keyBy')) {
-                throw new RuntimeException('Invalid query result');
-            }
-
-            $states = $queryResult->keyBy('state');
+            $instance = new $modelClass;
 
             /** @var array<string, string> $colors */
             $colors = [
@@ -52,28 +41,40 @@ class StatesChartWidget extends XotBaseChartWidget
                 'integration_requested' => 'rgb(107, 114, 128)',
             ];
 
+            /** @var array<string, int> $states */
+            $states = [];
+            $rows = DB::connection($instance->getConnectionName())
+                ->table($instance->getTable())
+                ->selectRaw('state, COUNT(*) as count')
+                ->groupBy('state')
+                ->get();
+            foreach ($rows as $row) {
+                $state = SafeStringCastAction::cast($row->state ?? '');
+                $states[$state] = SafeIntCastAction::cast($row->count ?? 0);
+            }
+
+            $data = [];
+            $backgroundColor = [];
+            $labels = [];
+            foreach ($states as $state => $count) {
+                $data[] = $count;
+                $backgroundColor[] = $colors[$state] ?? 'rgb(156, 163, 175)';
+                $labels[] = static::transClass($this->model, 'states.'.$state.'.label');
+            }
+
             return [
                 'datasets' => [
                     [
                         'label' => $label,
-                        'data' => $states->pluck('count')->toArray(),
-                        'backgroundColor' => $states
-                            ->keys()
-                            ->map(fn ($state) => $colors[(string) $state] ?? 'rgb(156, 163, 175)')
-                            ->toArray(),
-                        'borderColor' => $states
-                            ->keys()
-                            ->map(fn ($state) => $colors[(string) $state] ?? 'rgb(156, 163, 175)')
-                            ->toArray(),
+                        'data' => $data,
+                        'backgroundColor' => $backgroundColor,
+                        'borderColor' => $backgroundColor,
                         'borderWidth' => 1,
                     ],
                 ],
-                'labels' => $states
-                    ->keys()
-                    ->map(fn ($state) => static::transClass($this->model, 'states.'.((string) $state).'.label'))
-                    ->toArray(),
+                'labels' => $labels,
             ];
-        } catch (Exception $e) {
+        } catch (\Exception $e) {
             // Fallback appropriato senza logging inutile
             return [
                 'datasets' => [
@@ -90,7 +91,7 @@ class StatesChartWidget extends XotBaseChartWidget
         }
     }
 
-    #[Override]
+    #[\Override]
     protected function getType(): string
     {
         return 'bar';

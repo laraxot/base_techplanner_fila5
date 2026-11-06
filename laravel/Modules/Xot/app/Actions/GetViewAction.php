@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions;
 
-use Exception;
 use Illuminate\Support\Str;
 use Modules\Xot\Actions\File\FixPathAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -16,9 +15,10 @@ class GetViewAction
     /**
      * Summary of execute.
      *
+     *
      * @return view-string
      *
-     * @throws Exception
+     * @throws \Exception
      */
     public function execute(string $tpl = '', string $file0 = ''): string
     {
@@ -39,7 +39,7 @@ class GetViewAction
         $tmp = array_slice($arr, 4); // con "app"
 
         $tmp = collect($tmp)
-            ->map(static function ($item) {
+            ->map(static function (string $item) {
                 $item = str_replace('.php', '', $item);
 
                 return Str::slug(Str::snake($item));
@@ -73,7 +73,7 @@ class GetViewAction
         // }
         // $view è sempre stringa perché costruita da stringhe
         if (! view()->exists($view)) {
-            throw new Exception('View ['.$view.'] not found');
+            throw new \Exception('View ['.$view.'] not found');
         }
 
         return $view;

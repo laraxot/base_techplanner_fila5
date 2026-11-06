@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Database\Factories\DomainFactory;
@@ -18,7 +19,7 @@ use Sushi\Sushi;
  * @property bool|null $is_primary
  * @property string|null $status
  * @property string|null $verification_token
- * @property \Carbon\Carbon|null $verified_at
+ * @property Carbon|null $verified_at
  *
  * @method static Builder|TenantDomain newModelQuery()
  * @method static Builder|TenantDomain newQuery()

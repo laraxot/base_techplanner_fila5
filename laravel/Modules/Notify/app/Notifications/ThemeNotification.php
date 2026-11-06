@@ -16,11 +16,11 @@ class ThemeNotification extends Notification implements ShouldQueue
 {
     use Queueable;
 
+    /** @var list<string> */
     public array $attachments;
 
     /**
-     * Create a new notification instance.
-     *
+     * @param  array<string, mixed>  $view_params
      * @return void
      */
     public function __construct(
@@ -29,7 +29,7 @@ class ThemeNotification extends Notification implements ShouldQueue
     ) {}
 
     /**
-     * Get the notification's delivery channels.
+     * @return list<string>
      */
     public function via(CanThemeNotificationContract $notifiable): array
     {
@@ -46,7 +46,12 @@ class ThemeNotification extends Notification implements ShouldQueue
         $attachments = $notifiable->getNotificationData($this->name, $this->view_params)->attachments;
 
         $mail_message = app(BuildMailMessageAction::class)
-            ->execute($this->name, $notifiable->getModel(), $this->view_params, $attachments);
+            ->execute(
+                $this->name,
+                $notifiable->getModel(),
+                $this->view_params,
+                $attachments?->toCollection()->all(),
+            );
 
         $notifiable->sendEmailCallback();
 
@@ -70,6 +75,9 @@ class ThemeNotification extends Notification implements ShouldQueue
 
     /**
      * Get the array representation of the notification.
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function toArray(CanThemeNotificationContract $notifiable): array
     {

@@ -1,5 +1,6 @@
 # Memento - Base TechPlanner Fila3
 
+Ultimo aggiornamento: 2025-01-13
 
 ## 🏗 Struttura del Progetto
 

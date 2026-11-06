@@ -1,4 +1,12 @@
-# Modello di Dominio - Prediction Market
+---
+title: "Modello di Dominio - <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "modello di dominio - <nome progetto>ion market activity"
+---
+# Modello di Dominio - <nome progetto>ion Market
 
 ## Aggregate
 - **Market**: rappresenta un mercato predittivo

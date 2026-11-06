@@ -5,19 +5,24 @@ declare(strict_types=1);
 namespace Modules\UI\Filament\Tables\Columns;
 
 use Filament\Actions\Action;
-use Filament\Tables\Columns\ColumnGroup;
 use Filament\Tables\Columns\IconColumn;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Xot\Contracts\StateContract;
+use Modules\Xot\Filament\Tables\Columns\XotBaseColumnGroup;
 use Webmozart\Assert\Assert;
 
-class IconStateGroupColumn extends ColumnGroup
+class IconStateGroupColumn extends XotBaseColumnGroup
 {
     public string $stateClass = '';
 
     public string $modelClass = '';
 
-    public array $data = [];
+    /**
+     * Form data holder.
+     *
+     * @var array<string, mixed>
+     */
+    public ?array $data = [];
 
     protected function setUp(): void
     {
@@ -85,20 +90,20 @@ class IconStateGroupColumn extends ColumnGroup
             $column->action(
                 Action::make($stateKey.'-action')
                     ->requiresConfirmation()
-                    ->modalHeading(function (Model $record) use ($stateInstance) {
+                    ->modalHeading(static function (Model $record) use ($stateInstance) {
                         // StateContract provides modalHeading()
                         return $stateInstance->modalHeading();
                     })
-                    ->modalDescription(function (Model $record) use ($stateInstance) {
+                    ->modalDescription(static function (Model $record) use ($stateInstance) {
                         // StateContract provides modalDescription()
                         return $stateInstance->modalDescription();
                     })
-                    ->schema(function (Model $record) use ($stateInstance) {
+                    ->schema(static function (Model $record) use ($stateInstance) {
                         // StateContract provides modalFormSchema()
                         return $stateInstance->modalFormSchema();
                     })
                     ->fillForm($stateInstance->modalFillFormByRecord(...))
-                    ->action(function (Model $record, array $data) use ($stateInstance): void {
+                    ->action(static function (Model $record, array $data) use ($stateInstance): void {
                         // Ensure data is treated as array<string, mixed> for PHPStan and StateContract
                         /** @var array<string, mixed> $typedData */
                         $typedData = $data;
@@ -108,7 +113,7 @@ class IconStateGroupColumn extends ColumnGroup
             );
 
             $visibleValue = $this->data[$visibleKey] ?? false;
-            $column->visible($visibleValue);
+            $column->visible((bool) $visibleValue);
             $columns[] = $column;
         }
 

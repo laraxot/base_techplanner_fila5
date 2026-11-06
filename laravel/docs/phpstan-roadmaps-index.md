@@ -150,3 +150,4 @@ Per tracciare il progresso, aggiornare questo documento con:
 ---
 
 *Documento creato il: Gennaio 2025*  
+*Ultimo aggiornamento: Gennaio 2025*

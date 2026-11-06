@@ -1,3 +1,11 @@
+---
+title: "Snapshot Testing Patterns - Best Practices"
+type: note
+status: draft
+updated: 2026-10-23
+tags: [docs, activity, testing]
+qmd: "snapshot testing patterns - best practices activity"
+---
 # Snapshot Testing Patterns - Best Practices
 
 ## Overview
@@ -246,14 +254,15 @@ test('can reconstruct aggregate from snapshots', function () {
 ## Collegamenti
 
 ### Documentazione
+- [Testing Strategy](../../Xot/docs/testing-strategy.md) - **Policy ufficiale**
 - [Testing Strategy](../../xot/docs/testing-strategy.md) - **Policy ufficiale**
 - [No RefreshDatabase Policy](./no-refresh-database-policy.md)
 - [Event Sourcing Introduction](../event-sourcing-introduction.md)
 - [Snapshot Model](../models/snapshot-model.md)
 
 ### Test Esempi
-- [SnapshotBusinessLogicTest](../tests/Feature/SnapshotBusinessLogicTest.php)
-- [ActivityBusinessLogicTest](../tests/Feature/ActivityBusinessLogicTest.php)
+- [SnapshotBusinessLogicTest](../../tests/Feature/SnapshotBusinessLogicTest.php)
+- [ActivityBusinessLogicTest](../../tests/Feature/ActivityBusinessLogicTest.php)
 
 ---
 

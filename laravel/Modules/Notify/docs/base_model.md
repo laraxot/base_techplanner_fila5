@@ -1,3 +1,15 @@
+---
+title: "base model"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "base model"
+issues: []
+discussions: []
+status: draft
+---
+
 # BaseModel del Modulo Notify
 
 ## Panoramica
@@ -66,7 +78,7 @@ class NotificationTemplate extends BaseModel
 - [Gestione Notifiche](../../../../project_docs/architecture/notifications.md)
 
 ### Collegamenti ai Moduli
-- [XotBaseModel](../../xot/project_docs/xotbasemodel.md)
+- [XotBaseModel](../../Xot/project_docs/XotBaseModel.md)
 - [Modelli Notify](./models.md)
 
 ## Note Importanti

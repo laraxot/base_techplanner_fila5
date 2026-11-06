@@ -13,15 +13,11 @@ class AnalyzeTranslationFiles extends Command
 {
     /**
      * The name and signature of the console command.
-     *
-     * @var string
      */
     protected $signature = 'notify:analyze-translations';
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected $description = 'Analyze translation files in the Notify module to identify inconsistencies';
 
@@ -40,8 +36,7 @@ class AnalyzeTranslationFiles extends Command
 
         // Collect all files and their keys
         foreach ($languages as $langDir) {
-            /** @var string $langDirPath */
-            $langDirPath = is_string($langDir) ? $langDir : (string) $langDir;
+            $langDirPath = is_scalar($langDir) ? (string) $langDir : '';
             $lang = basename($langDirPath);
             $files = File::files($langDirPath);
 
@@ -62,10 +57,11 @@ class AnalyzeTranslationFiles extends Command
                     continue;
                 }
 
-                $allFiles["{$lang}/{$filename}"] = $this->flattenArray($translations);
+                /** @var array<string, mixed> $translationsTyped */
+                $translationsTyped = $translations;
+                $allFiles["{$lang}/{$filename}"] = $this->flattenArray($translationsTyped);
 
-                // Collect all unique keys
-                foreach (array_keys($this->flattenArray($translations)) as $key) {
+                foreach (array_keys($this->flattenArray($translationsTyped)) as $key) {
                     $allKeys[$key] = true;
                 }
             }
@@ -88,7 +84,8 @@ class AnalyzeTranslationFiles extends Command
     }
 
     /**
-     * Flatten a multi-dimensional array into a single level array with dot notation keys.
+     * @param  array<string, mixed>  $array
+     * @return array<string, mixed>
      */
     private function flattenArray(array $array, string $prefix = ''): array
     {
@@ -98,7 +95,9 @@ class AnalyzeTranslationFiles extends Command
             $newKey = $prefix ? "{$prefix}.{$key}" : $key;
 
             if (is_array($value)) {
-                $result = array_merge($result, $this->flattenArray($value, $newKey));
+                /** @var array<string, mixed> $nested */
+                $nested = $value;
+                $result = array_merge($result, $this->flattenArray($nested, $newKey));
             } else {
                 $result[$newKey] = $value;
             }
@@ -108,7 +107,7 @@ class AnalyzeTranslationFiles extends Command
     }
 
     /**
-     * Analyze structure patterns in translation files.
+     * @param  array<string, array<string, mixed>>  $allFiles
      */
     private function analyzeStructurePatterns(array $allFiles): void
     {
@@ -139,15 +138,15 @@ class AnalyzeTranslationFiles extends Command
         foreach ($patterns as $pattern => $files) {
             $table->addRow([
                 $pattern,
-                implode(PHP_EOL, $files),
-            ]);
+                implode(PHP_EOL, $files)]);
         }
 
         $table->render();
     }
 
     /**
-     * Generate a consistency report for translation files.
+     * @param  array<string, array<string, mixed>>  $allFiles
+     * @param  list<string>  $allKeys
      */
     private function generateConsistencyReport(array $allFiles, array $allKeys): void
     {
@@ -179,7 +178,7 @@ class AnalyzeTranslationFiles extends Command
     }
 
     /**
-     * Generate recommendations for standardizing translation files.
+     * @param  array<string, array<string, mixed>>  $allFiles
      */
     private function generateRecommendations(array $allFiles): void
     {
@@ -220,7 +219,7 @@ class AnalyzeTranslationFiles extends Command
     }
 
     /**
-     * Analyze the navigation structure in translation files.
+     * @param  array<string, array<string, mixed>>  $allFiles
      */
     private function analyzeNavigationStructure(array $allFiles): void
     {
@@ -255,8 +254,7 @@ class AnalyzeTranslationFiles extends Command
         foreach ($navigationStructures as $structure => $files) {
             $table->addRow([
                 $structure,
-                implode(PHP_EOL, $files),
-            ]);
+                implode(PHP_EOL, $files)]);
         }
 
         $table->render();

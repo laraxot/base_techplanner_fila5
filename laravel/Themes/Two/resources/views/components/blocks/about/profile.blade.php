@@ -62,27 +62,27 @@
                 <div class="bg-gray-50 p-6 rounded-lg border border-gray-200">
                     <h4 class="text-sm font-semibold text-gray-900 mb-4 flex items-center">
                         <x-heroicon-o-building-office class="w-5 h-5 mr-2" />
-                        Dati Aziendali
+                        {{ __('pub_theme::blocks.sections.company.title') }}
                     </h4>
                     <div class="space-y-2 text-sm">
                         @if($company_info['piva'] ?? null)
                         <p class="text-gray-600">
-                            <strong>P.IVA:</strong> {{ $company_info['piva'] }}
+                            <strong>{{ __('pub_theme::footer.contact.vat.abbr') }}:</strong> {{ $company_info['piva'] }}
                         </p>
                         @endif
                         @if($company_info['rea'] ?? null)
                         <p class="text-gray-600">
-                            <strong>REA:</strong> {{ $company_info['rea'] }}
+                            <strong>{{ __('pub_theme::footer.contact.rea.abbr') }}:</strong> {{ $company_info['rea'] }}
                         </p>
                         @endif
                         @if($company_info['pec'] ?? null)
                         <p class="text-gray-600">
-                            <strong>PEC:</strong> {{ $company_info['pec'] }}
+                            <strong>{{ __('pub_theme::blocks.company.pec.label') }}:</strong> {{ $company_info['pec'] }}
                         </p>
                         @endif
                         @if($company_info['address'] ?? null)
                         <p class="text-gray-600">
-                            <strong>Sede:</strong> {{ $company_info['address'] }}
+                            <strong>{{ __('pub_theme::blocks.company.registered_office.label') }}:</strong> {{ $company_info['address'] }}
                         </p>
                         @endif
                     </div>

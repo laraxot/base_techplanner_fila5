@@ -1,7 +1,32 @@
-# Autenticazione in Predict
+---
+title: "Autenticazione in <nome progetto>"
+type: concept
+tags: [authentication]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "authentication autenticazione in <nome progetto>"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
+# Autenticazione in <nome progetto>
 
 ## Panoramica
-Il sistema di autenticazione in Predict è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
+Il sistema di autenticazione in <nome progetto> è basato su Laravel Volt e supporta sia l'autenticazione tradizionale che quella sociale.
 
 ## Configurazione
 
@@ -128,4 +153,5 @@ Route::middleware('guest')->group(function () {
 ## Implementazioni Specifiche
 
 ### Logout con Volt e Folio
-Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt_folio_logout_error.md). 
+Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error.md). 
+Per dettagli sull'implementazione del logout utilizzando Volt e Folio, consultare la [documentazione del modulo User](../laravel/modules/user/project_docs/volt-folio-logout-error-best-practices.md). 

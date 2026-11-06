@@ -6,7 +6,7 @@ namespace Themes\Sixteen\Events;
 
 use Illuminate\Foundation\Events\Dispatchable;
 use Illuminate\Queue\SerializesModels;
-use Themes\Sixteen\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 /**
  * Evento lanciato quando un utente effettua il logout da CIE
@@ -18,8 +18,11 @@ class CieLoggedOut
 {
     use Dispatchable, SerializesModels;
 
+    /**
+     * @param  array<array-key, mixed>  $cieAttributes
+     */
     public function __construct(
-        public User $user,
+        public UserContract $user,
         public array $cieAttributes
     ) {}
 
@@ -28,15 +31,19 @@ class CieLoggedOut
      */
     public function getAuthMethod(): ?string
     {
-        return $this->cieAttributes['auth_method'] ?? null;
+        $value = $this->cieAttributes['auth_method'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
-     * Ottiene il codice fiscale dell'utente
+     * Ottiene il codice fiscale dall'autenticazione CIE
      */
     public function getFiscalCode(): ?string
     {
-        return $this->cieAttributes['fiscal_code'] ?? null;
+        $value = $this->cieAttributes['fiscal_code'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
@@ -44,11 +51,16 @@ class CieLoggedOut
      */
     public function getCieId(): ?string
     {
-        return $this->cieAttributes['cie_id'] ?? null;
+        $value = $this->cieAttributes['cie_id'] ?? null;
+
+        return is_string($value) ? $value : null;
     }
 
     /**
      * Ottiene attributi specifici per logging sicuro
+     */
+    /**
+     * @return array<string, mixed>
      */
     public function getLoggingData(): array
     {

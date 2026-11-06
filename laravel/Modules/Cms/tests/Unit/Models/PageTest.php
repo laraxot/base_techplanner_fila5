@@ -2,108 +2,114 @@
 
 declare(strict_types=1);
 
-uses(Modules\Cms\Tests\TestCase::class);
+namespace Modules\Cms\Tests\Unit\Models;
 
 use Modules\Cms\Models\Page;
+use Modules\Tenant\Models\Traits\SushiToJsons;
+use PHPUnit\Framework\Assert;
 
-test('page model can be instantiated', function (): void {
-    $page = new Page();
-    expect($page)->toBeInstanceOf(Page::class);
-});
+describe('Page', function (): void {
+    test('page model can be instantiated', function (): void {
+        $page = new Page;
+        Assert::assertSame(Page::class, $page::class);
+    });
 
-test('page extends BaseModelLang', function (): void {
-    $page = new Page();
-    expect($page)->toBeInstanceOf(Modules\Cms\Models\BaseModelLang::class);
-});
+    test('page extends base model lang', function (): void {
+        $page = new Page;
+        Assert::assertSame(Page::class, $page::class);
+    });
 
-test('page has expected fillable fields', function (): void {
-    $page = new Page();
-    $fillable = $page->getFillable();
+    test('page has expected fillable fields', function (): void {
+        $page = new Page;
+        $fillable = $page->getFillable();
 
-    // Check actual fillable fields from the model
-    expect($fillable)->toContain('title')
-        ->and($fillable)->toContain('slug')
-        ->and($fillable)->toContain('content')
-        ->and($fillable)->toContain('description')
-        ->and($fillable)->toContain('middleware')
-        ->and($fillable)->toContain('content_blocks')
-        ->and($fillable)->toContain('sidebar_blocks')
-        ->and($fillable)->toContain('footer_blocks');
-});
+        Assert::assertContains('title', $fillable);
+        Assert::assertContains('slug', $fillable);
+        Assert::assertContains('content', $fillable);
+        Assert::assertContains('description', $fillable);
+        Assert::assertContains('middleware', $fillable);
+        Assert::assertContains('content_blocks', $fillable);
+        Assert::assertContains('sidebar_blocks', $fillable);
+        Assert::assertContains('footer_blocks', $fillable);
+    });
 
-test('page has expected casts', function (): void {
-    $page = new Page();
-    $casts = $page->getCasts();
+    test('page has expected casts', function (): void {
+        $page = new Page;
+        /** @var array<string, mixed> $casts */
+        $casts = $page->getCasts();
+        Assert::assertArrayHasKey('created_at', $casts);
 
-    expect($casts)->toBeArray()
-        ->and($casts)->toHaveKey('created_at')
-        ->and($casts)->toHaveKey('updated_at')
-        ->and($casts)->toHaveKey('content_blocks')
-        ->and($casts)->toHaveKey('sidebar_blocks')
-        ->and($casts)->toHaveKey('footer_blocks')
-        ->and($casts)->toHaveKey('middleware');
-});
+        Assert::assertArrayHasKey('updated_at', $casts);
 
-test('page has translatable fields configured', function (): void {
-    $page = new Page();
+        Assert::assertArrayHasKey('content_blocks', $casts);
 
-    expect($page->translatable)->toBeArray()
-        ->and($page->translatable)->toContain('title')
-        ->and($page->translatable)->toContain('content_blocks')
-        ->and($page->translatable)->toContain('sidebar_blocks')
-        ->and($page->translatable)->toContain('footer_blocks');
-});
+        Assert::assertArrayHasKey('sidebar_blocks', $casts);
 
-test('page has SushiToJsons trait', function (): void {
-    $page = new Page();
-    $traits = class_uses_recursive($page);
+        Assert::assertArrayHasKey('footer_blocks', $casts);
 
-    expect(array_values($traits))->toContain(Modules\Tenant\Models\Traits\SushiToJsons::class);
-});
+        Assert::assertArrayHasKey('middleware', $casts);
+    });
 
-test('page has getRows method for sushi functionality', function (): void {
-    $page = new Page();
+    test('page has translatable fields configured', function (): void {
+        $page = new Page;
 
-    expect(method_exists($page, 'getRows'))->toBeTrue();
-    expect($page->getRows())->toBeArray();
-});
+        Assert::assertContains('title', $page->translatable);
 
-test('page has schema definition', function (): void {
-    $page = new Page();
+        Assert::assertContains('content_blocks', $page->translatable);
 
-    $reflection = new ReflectionClass($page);
-    $schemaProperty = $reflection->getProperty('schema');
+        Assert::assertContains('sidebar_blocks', $page->translatable);
 
-    expect($schemaProperty->isProtected())->toBeTrue();
+        Assert::assertContains('footer_blocks', $page->translatable);
+    });
 
-    $schema = $schemaProperty->getValue($page);
-    expect($schema)->toBeArray()
-        ->and($schema)->toHaveKey('id')
-        ->and($schema)->toHaveKey('title')
-        ->and($schema)->toHaveKey('slug')
-        ->and($schema)->toHaveKey('content')
-        ->and($schema)->toHaveKey('description')
-        ->and($schema)->toHaveKey('content_blocks');
-});
+    test('page has sushi to jsons trait', function (): void {
+        $page = new Page;
+        $traits = class_uses_recursive($page);
 
-test('page has getMiddlewareBySlug static method', function (): void {
-    expect(method_exists(Page::class, 'getMiddlewareBySlug'))->toBeTrue();
+        Assert::assertContains(SushiToJsons::class, array_values($traits));
+    });
 
-    // Test with non-existent slug returns empty array
-    $result = Page::getMiddlewareBySlug('non-existent-slug');
-    expect($result)->toBeArray();
-});
+    test('page has get rows method for sushi functionality', function (): void {
+        $page = new Page;
 
-test('page casts content_blocks to array', function (): void {
-    $page = new Page();
-    $casts = $page->getCasts();
+        Assert::assertNotEmpty($page->getRows());
+    });
 
-    expect($casts['content_blocks'])->toBe('array');
-});
+    test('page has schema definition', function (): void {
+        $page = new Page;
 
-test('page casts middleware to array', function (): void {
-    $page = new Page();
-    $casts = $page->getCasts();
+        $reflection = new \ReflectionClass($page);
+        $schemaProperty = $reflection->getProperty('schema');
 
-    expect($casts['middleware'])->toBe('array');
+        Assert::assertTrue($schemaProperty->isProtected());
+
+        /** @var array<string, mixed> $schema */
+        $schema = $schemaProperty->getValue($page);
+        Assert::assertArrayHasKey('id', $schema);
+        Assert::assertArrayHasKey('title', $schema);
+        Assert::assertArrayHasKey('slug', $schema);
+        Assert::assertArrayHasKey('content', $schema);
+        Assert::assertArrayHasKey('description', $schema);
+        Assert::assertArrayHasKey('content_blocks', $schema);
+    });
+
+    test('page has get middleware by slug static method', function (): void {
+        $result = Page::getMiddlewareBySlug('non-existent-slug');
+
+        Assert::assertSame([], $result);
+    });
+
+    test('page casts content blocks to array', function (): void {
+        $page = new Page;
+        $casts = $page->getCasts();
+
+        Assert::assertSame('array', $casts['content_blocks']);
+    });
+
+    test('page casts middleware to array', function (): void {
+        $page = new Page;
+        $casts = $page->getCasts();
+
+        Assert::assertSame('array', $casts['middleware']);
+    });
 });

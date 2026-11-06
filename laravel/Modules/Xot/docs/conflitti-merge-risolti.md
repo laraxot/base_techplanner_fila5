@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti di Merge"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "risoluzione conflitti di merge xot"
+---
 # Risoluzione Conflitti di Merge
 
 # Risoluzione Conflitti di Merge in <nome progetto>
@@ -101,6 +109,7 @@ Per prevenire problemi simili in futuro, si raccomanda di:
 
 ### Caso concreto: XotBaseManageRelatedRecords.php
 
+Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` sono emerse chiamate sia a `getListTableColumns` che a `getTableColumns`. In linea con le regole di standardizzazione adottate nel progetto (vedi [FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)), è stato scelto di mantenere **solo** `getTableColumns` come metodo per la definizione delle colonne delle tabelle Filament.
 Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resources/XotBaseResource/Pages/XotBaseManageRelatedRecords.php` sono emerse chiamate sia a `getListTableColumns` che a `getTableColumns`. In linea con le regole di standardizzazione adottate nel progetto (vedi [FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)), è stato scelto di mantenere **solo** `getTableColumns` come metodo per la definizione delle colonne delle tabelle Filament.
 
 **Motivazione:**
@@ -109,6 +118,7 @@ Durante la risoluzione dei conflitti, nel file `Modules/Xot/app/Filament/Resourc
 - Facilità di upgrade futuro e riduzione delle ambiguità
 
 **Backlink:**
+- [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./FILAMENT_TABLE_COLUMNS.md)
 - [Regola generale e motivazione in FILAMENT_TABLE_COLUMNS.md](./filament_table_columns.md)
 
 ---

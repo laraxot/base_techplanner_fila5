@@ -23,7 +23,7 @@ class SmsFactorData extends Data
     {
         if (! (self::$instance instanceof SmsFactorData)) {
             /*
-             * $data = TenantService::getConfig('sms');
+             * Was: TenantService::getConfig('sms') — use GetTenantConfigArrayAction::execute('sms').
              * $data = Arr::get($data, 'drivers.smsfactor', []);
              */
             $data = Config::array('sms.drivers.smsfactor');
@@ -33,6 +33,9 @@ class SmsFactorData extends Data
         return self::$instance;
     }
 
+    /**
+     * @return array<string, string>
+     */
     public function getAuthHeaders(): array
     {
         switch ($this->auth_type) {
@@ -41,8 +44,7 @@ class SmsFactorData extends Data
                 return [
                     'Authorization' => 'Bearer '.$this->token,
                     'Content-Type' => 'application/json',
-                    'Cache-Control' => 'no-cache',
-                ];
+                    'Cache-Control' => 'no-cache'];
         }
     }
 

@@ -1,3 +1,15 @@
+---
+title: "phpstan remediation "
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan remediation "
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Remediation Plan – 23 Dic 2025
 
 ## Contesto
@@ -28,7 +40,7 @@
 
 ## Strategia operativa
 
-1. **Censire utilizzi reali** degli script legacy (grep in CronJob/bashes). Se obsoleti → archiviarli in `docs/archive/legacy-scripts.md`, altrimenti refactor.
+1. **Censire utilizzi reali** degli script legacy (grep in CronJob/bashes). Se obsoleti → archiviarli in `docs/archived/legacy-scripts.md`, altrimenti refactor.
 2. **Creare Actions dedicate**:
 
    ```php

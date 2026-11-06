@@ -1,3 +1,15 @@
+---
+title: "filament extension pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament extension pattern"
+issues: []
+discussions: []
+status: draft
+---
+
 # Pattern di Estensione per Componenti Filament 
 
 Questo documento definisce il pattern di estensione standardizzato per i componenti Filament nel sistema SaluteOra, con particolare attenzione al principio di non estendere mai direttamente le classi Filament.
@@ -46,7 +58,7 @@ Quando si estende `XotBaseResource`, è importante seguire queste regole per evi
 Queste proprietà e metodi sono già configurati in `XotBaseResource` per garantire coerenza e centralizzazione della logica. Ridefinirli può portare a comportamenti imprevisti e aumentare la complessità del codice.
 
 **Collegamenti correlati**:
-- [Linee Guida XotBaseResource](../modules/patient/docs/xot-base-resource-guidelines.md)
+- [Linee Guida XotBaseResource](../Modules/Patient/docs/xot-base-resource-guidelines.md)
 
 ## Esempio di Implementazione Corretta
 

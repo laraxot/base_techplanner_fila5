@@ -1,3 +1,15 @@
+---
+title: "helper text normalization"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "helper text normalization"
+issues: []
+discussions: []
+status: draft
+---
+
 # Helper Text Normalization Fix - Modulo Geo
 
 ## Data Intervento
@@ -87,9 +99,9 @@ php docs/helper-text-audit-script.php
 - ✅ Script di audit automatico creato per controlli futuri
 
 ### Collegamenti Bidirezionali
-- [Documentazione Centrale Traduzioni](../../../docs/translation-field-structure-complete.md)
-- [Script Audit Helper Text](../../../docs/helper-text-audit-script.php)
-- [Memoria Regola Critica](../../../docs/translation-refactor-complete-summary-[date].md)
+- [Documentazione Centrale Traduzioni](../../../../docs/translation-field-structure-complete.md)
+- [Script Audit Helper Text](../../../../docs/helper-text-audit-script.php)
+- [Memoria Regola Critica](../../../../docs/translation-refactor-complete-summary-[date].md)
 
 ## Validazione
 
@@ -134,7 +146,6 @@ Integrare il controllo nei workflow di CI/CD per prevenire regressioni future.
 Assicurarsi che tutti i membri del team conoscano e applichino questa regola critica.
 
 ---
-
 **Status**: ✅ COMPLETATO  
 **Validazione**: ✅ SUPERATA  
 **Conformità**: ✅ REGOLA APPLICATA  

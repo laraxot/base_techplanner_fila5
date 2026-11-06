@@ -1,3 +1,9 @@
+---
+title: "Employee - TIME_TRACKING_WIDGET"
+module: Employee
+bmad: true
+status: active
+---
 # Time Tracking Widget - Specifiche Implementazione
 
 ## Panoramica
@@ -236,3 +242,4 @@ protected function getHeaderWidgets(): array
 - [Widget Guidelines](../implementation/widget_guidelines.md)
 - [Testing Standards](../testing/testing_standards.md)
 
+*Ultimo aggiornamento: Gennaio 2025*

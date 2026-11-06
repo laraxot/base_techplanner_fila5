@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\String;
 
-use Exception;
 use Spatie\QueueableAction\QueueableAction;
 
 class GetStrBetweenStartsWithAction
@@ -15,7 +14,7 @@ class GetStrBetweenStartsWithAction
     {
         $pos = mb_strpos($body, $start);
         if ($pos === false) {
-            throw new Exception("Cannot find {$start} in {$body} [".__LINE__.']['.__FILE__.']');
+            throw new \Exception("Cannot find {$start} in {$body} [".__LINE__.']['.__FILE__.']');
         }
         $pos1 = mb_strpos($body, $close, $pos);
 

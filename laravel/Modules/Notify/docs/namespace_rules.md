@@ -1,3 +1,15 @@
+---
+title: "namespace rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "namespace rules"
+issues: []
+discussions: []
+status: draft
+---
+
 # Regole Namespace PSR-4 per il Modulo Notify
 
 ## Regola Fondamentale
@@ -25,10 +37,10 @@ namespace Modules\Notify\Console\Commands;
   - Namespace: `Modules\Notify\Console\Commands`
 
 ## Collegamenti e Regole Generali
-- Questa regola è valida per tutti i moduli: vedi [Xot Namespace Rules](../../xot/docs/namespace_rules.md)
+- Questa regola è valida per tutti i moduli: vedi [Xot Namespace Rules](../../Xot/docs/NAMESPACE_RULES.md)
 - Collegamento alla documentazione generale: [Regole Namespace Moduli - Root Docs](../../../docs/namespace-moduli.md)
 
 ---
-
+**Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.

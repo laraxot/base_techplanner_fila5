@@ -1,3 +1,16 @@
+---
+title: "email plugins analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "email plugins analysis"
+issues: []
+discussions: []
+status: superseded
+superseded_by: email-plugins.md
+---
+
 # Analisi Plugin Email per Filament - il progetto
 
 ## Panoramica
@@ -270,4 +283,5 @@ class MailAnalytics
 ## Vedi Anche
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Laravel Mail](https://laravel.com/project_docs/mail)
+- [Laravel Mail](https://laravel.com/docs/mail)
 - [Spatie Packages](https://spatie.be/open-source) 

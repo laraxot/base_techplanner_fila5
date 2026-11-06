@@ -32,7 +32,7 @@
                @endif>
                 {{ $link['text'] }}
                 @if(isset($link['external']) && $link['external'])
-                <span class="sr-only">(link esterno)</span>
+                <span class="sr-only">{{ __('pub_theme::navigation_components.skiplinks.external_link.label') }}</span>
                 @endif
             </a>
         </li>
@@ -50,7 +50,7 @@
        @endif>
         {{ $link['text'] }}
         @if(isset($link['external']) && $link['external'])
-        <span class="sr-only">(link esterno)</span>
+        <span class="sr-only">{{ __('pub_theme::navigation_components.skiplinks.external_link.label') }}</span>
         @endif
     </a>
     @endforeach
@@ -69,7 +69,6 @@ Usage Examples:
 
 2. Custom skiplinks:
 <x-pub_theme::skiplinks 
-=======
     :links="[
         ['href' => '#nav', 'text' => 'Vai al menu'],
         ['href' => '#content', 'text' => 'Vai al contenuto'],
@@ -81,6 +80,5 @@ Usage Examples:
 3. Simple div version:
 <x-pub_theme::skiplinks :show-list="false" />
 <x-pub_theme::skiplinks :show-list="false" />
-=======
 <x-pub_theme::skiplinks :show-list="false" />
 --}}

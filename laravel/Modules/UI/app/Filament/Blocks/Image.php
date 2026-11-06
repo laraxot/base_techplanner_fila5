@@ -8,6 +8,8 @@ use Filament\Forms\Components\Builder\Block;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
+use Filament\Schemas\Components\Utilities\Set;
 
 class Image
 {
@@ -19,15 +21,15 @@ class Image
                 TextInput::make('url'),
                 Select::make('ratio')
                     ->options(static::getRatios())
-                    ->afterStateHydrated(function (mixed $state, mixed $set) {
-                        if (! $state && is_callable($set)) {
+                    ->afterStateHydrated(static function (?string $state, Set $set): void {
+                        if (! $state) {
                             $set('ratio', '4-3');
                         }
                     }),
                 TextInput::make('alt')->columnSpanFull(),
                 TextInput::make('caption')->columnSpanFull(),
             ])
-            ->columns('form' === $context ? 2 : 1);
+            ->columns($context === 'form' ? 2 : 1);
     }
 
     /**
@@ -51,6 +53,9 @@ class Image
         };
     }
 
+    /**
+     * @return array<int, Component>
+     */
     public static function getFormSchema(): array
     {
         return [

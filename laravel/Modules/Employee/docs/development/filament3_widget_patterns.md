@@ -1,3 +1,9 @@
+---
+title: "Employee - FILAMENT3_WIDGET_PATTERNS"
+module: Employee
+bmad: true
+status: active
+---
 # Filament 3 Widget Patterns - Employee Module
 
 ## Studio Filament 3 per Widget Custom
@@ -309,3 +315,4 @@ class TimeClockWidget extends XotBaseWidget
 - [Widget Documentation](https://filamentphp.com/docs/3.x/widgets/custom)
 - [UI Components Usage](.cursor/rules/ui-components-usage.mdc)
 
+*Ultimo aggiornamento: Gennaio 2025*

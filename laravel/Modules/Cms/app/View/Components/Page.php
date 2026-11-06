@@ -4,59 +4,68 @@ declare(strict_types=1);
 
 namespace Modules\Cms\View\Components;
 
+use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View as ViewContract;
 use Illuminate\View\Component;
 use Modules\Cms\Datas\BlockData;
 use Modules\Cms\Models\Page as PageModel;
 use Spatie\LaravelData\DataCollection;
 
-class Page extends Component
+/**
+ * CMS page shell: blocks loaded by slug. Route/context keys live only in {@see $data}.
+ *
+ * @SuppressWarnings("PHPMD.StaticAccess")
+ */
+final class Page extends Component
 {
     public string $side;
 
-    public string $slug;
+    public string $slug = '';
 
-    /** @var DataCollection<BlockData>|array */
+    /** @var DataCollection<int, BlockData>|array<string, BlockData> */
     public DataCollection|array $blocks;
 
+    /** @var array<string, mixed> */
     public array $data = [];
 
-    public string $container0 = '';
-
-    public string $slug0 = '';
-
-    public function __construct(string $side, string $slug, ?string $type = null, array $data = [], string $container0 = '', string $slug0 = '')
-    {
-        $this->data = $data;
+    /**
+     * @param array<string, mixed> $data Opaque context bag (container0, slug0, models, …)
+     */
+    public function __construct(
+        string $side = 'content',
+        ?string $slug = null,
+        ?string $type = null,
+        array $data = [],
+    ) {
         $this->side = $side;
+        $this->data = $data;
+
+        if (null === $slug && isset($data['slug']) && is_string($data['slug'])) {
+            $slug = $data['slug'];
+        }
+
+        if (null === $slug) {
+            $slug = '';
+        }
+
         if (null !== $type) {
             $slug = $type.'-'.$slug;
         }
+
         $this->slug = $slug;
-        $this->container0 = $container0;
-        $this->slug0 = $slug0;
-        $this->blocks = PageModel::getBlocksBySlug($slug, $side);
+
+        $this->blocks = PageModel::getBlocksBySlug($this->slug, $this->side);
     }
 
-    /**
-     * Get the view / contents that represents the component.
-     */
-    public function render(): ViewContract
+    public function render(): ViewContract|Factory
     {
-        $view = 'cms::components.page';
-        $view_params = [
+        $viewName = 'cms::components.page';
+
+        return view($viewName, array_merge($this->data, [
             'blocks' => $this->blocks,
             'side' => $this->side,
             'slug' => $this->slug,
             'data' => $this->data,
-            'container0' => $this->container0,
-            'slug0' => $this->slug0,
-        ];
-        // @phpstan-ignore-next-line
-        if (! view()->exists($view)) {
-            throw new \Exception('view not found: '.$view);
-        }
-
-        return view($view, $view_params);
+        ]));
     }
 }

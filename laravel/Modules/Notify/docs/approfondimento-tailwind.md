@@ -1,3 +1,15 @@
+---
+title: "approfondimento tailwind"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "approfondimento tailwind"
+issues: []
+discussions: []
+status: draft
+---
+
 # Approfondimento Implementazione Tailwind CSS nel Modulo Notify
 
 ## 1. Architettura e Configurazione
@@ -399,7 +411,7 @@ class EmailTemplateTest extends DuskTestCase
 - Ogni sezione ha il suo README.md specifico
 
 ## Contribuire
-Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../docs/regole_collegamenti_documentazione.md).
+Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
-Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/readme_links.md). 
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/readme_links.md). 

@@ -1,8 +1,18 @@
+---
+title: "Convenzioni per Form Schema in Filament"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Convenzioni per Form Schema in Filament"
+---
 # Convenzioni per Form Schema in Filament
 
 ## Regola Fondamentale
 
-In <nome progetto>, il metodo `getFormSchema()` nelle risorse Filament deve **SEMPRE** restituire un array associativo con chiavi stringhe, mai un array numerico.
+In SaluteOra, il metodo `getFormSchema()` nelle risorse Filament deve **SEMPRE** restituire un array associativo con chiavi stringhe, mai un array numerico.
 
 ## Implementazione Corretta
 
@@ -131,7 +141,7 @@ class MyResource extends XotBaseResource
 
 ## Documentazione Correlata
 
-- [XotBaseResource](./xot_base_resource.md)
-- [Form Components](./form_components.md)
-- [Form Validation](./form_validation.md)
+- [XotBaseResource](./XOT_BASE_RESOURCE.md)
+- [Form Components](./FORM_COMPONENTS.md)
+- [Form Validation](./FORM_VALIDATION.md)
 - [Filament Best Practices](../../docs/rules/filament_best_practices.md)

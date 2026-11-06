@@ -1,3 +1,15 @@
+---
+title: "table layout implementation example"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "table layout implementation example"
+issues: []
+discussions: []
+status: draft
+---
+
 # Esempio Pratico: Implementazione TableLayoutEnum
 
 ## Panoramica
@@ -340,5 +352,5 @@ class ListUsersTest extends TestCase
 
 - [TableLayoutEnum Documentation](../table-layout-enum-comprehensive.md)
 - [UI Module Architecture](../architecture_rules.md)
-- [Filament Best Practices](../../../docs/filament_best_practices.md)
-- [Translation Standards](../../../docs/translation_standards.md)
+- [Filament Best Practices](../../../../docs/filament_best_practices.md)
+- [Translation Standards](../../../../docs/translation_standards.md)

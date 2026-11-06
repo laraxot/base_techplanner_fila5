@@ -1,3 +1,11 @@
+---
+title: "SimpleChartWidget - Analisi Qualità del Codice e Best Practices"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "simplechartwidget - analisi qualità del codice e best practices activity"
+---
 # SimpleChartWidget - Analisi Qualità del Codice e Best Practices
 
 ## Panoramica
@@ -764,12 +772,14 @@ protected function getData(): array
 ```bash
 # ✅ Zero errori dopo refactoring
 ./vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
+./vendor/bin/phpstan analyse Modules/healthcare_app/app/Filament/Widgets/SimpleChartWidget.php --memory-limit=-1 --level=10
 ```
 
 ### Testing Coverage
 ```bash
 # ✅ 100% coverage per metodi principali
 ./vendor/bin/phpunit --coverage-html=coverage Modules/Quaeris/tests/Unit/SimpleChartWidgetTest.php
+./vendor/bin/phpunit --coverage-html=coverage Modules/healthcare_app/tests/Unit/SimpleChartWidgetTest.php
 ```
 
 ### Performance Metrics

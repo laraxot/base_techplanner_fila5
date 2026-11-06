@@ -1,6 +1,13 @@
-Note: Using configuration file phpstan.neon.
-   0/116 [░░░░░░░░░░░░░░░░░░░░░░░░░░░░]   0%[1G[2K  20/116 [▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░]  17%[1G[2K  40/116 [▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░░░░░░]  34%[1G[2K  60/116 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░░░░░]  51%[1G[2K  76/116 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░░░░░░]  65%[1G[2K  96/116 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓░░░░░]  82%[1G[2K 116/116 [▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓] 100%
+---
+module: theme
+topic: phpstan
+canonical: ../../../Themes/docs/shared-components/phpstan-report-Modules.txt
+title: "phpstan"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "phpstan activity"
+---
 
-
- [OK] No errors                                                                                           
-
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-report-Modules.txt

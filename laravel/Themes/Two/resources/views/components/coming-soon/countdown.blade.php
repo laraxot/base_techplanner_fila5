@@ -38,10 +38,10 @@ function countdownTimer(targetDate) {
         targetDate: new Date(targetDate),
         interval: null,
         units: [
-            { key: 'days', label: "{{ __('Days') }}" },
-            { key: 'hours', label: "{{ __('Hours') }}" },
-            { key: 'minutes', label: "{{ __('Minutes') }}" },
-            { key: 'seconds', label: "{{ __('Seconds') }}" }
+            { key: 'days', label: "{{ __('pub_theme::coming-soon.countdown.days') }}" },
+            { key: 'hours', label: "{{ __('pub_theme::coming-soon.countdown.hours') }}" },
+            { key: 'minutes', label: "{{ __('pub_theme::coming-soon.countdown.minutes') }}" },
+            { key: 'seconds', label: "{{ __('pub_theme::coming-soon.countdown.seconds') }}" }
         ],
         
         startCountdown() {

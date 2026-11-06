@@ -9,6 +9,8 @@ use Illuminate\Support\Facades\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Str;
 
+use function count;
+
 /**
  * Class RouteService.
  * Modules\Xot\Services\RouteService.
@@ -18,9 +20,7 @@ use Illuminate\Support\Str;
 class RouteService
 {
     /**
-     * Verifica se l'utente è in modalità amministrazione.
-     *
-     * @param  array<string,string>  $params  Parametri aggiuntivi
+     * @param  array<string, mixed>  $params
      * @return bool True se l'utente è in modalità amministrazione, false altrimenti
      */
     public static function inAdmin(array $params = []): bool
@@ -40,9 +40,9 @@ class RouteService
         $segments = Request::segments();
 
         // Se abbiamo almeno un segmento, è 'livewire' e la sessione 'in_admin' è true
-        return (is_countable($segments) ? \count($segments) : 0) > 0 &&
-            $segments[0] === 'livewire' &&
-            session('in_admin', false) === true;
+        return (is_countable($segments) ? \count($segments) : 0) > 0
+            && $segments[0] === 'livewire'
+            && session('in_admin', false) === true;
     }
 
     /**
@@ -64,20 +64,20 @@ class RouteService
          */
         $route_action = (string) Route::currentRouteAction();
         Str::snake(Str::after($route_action, '@'));
-        // Cannot call method getName() on mixed.
-        $routename = ''; // Request::route()->getName();
+        $route_current = Route::current();
+        $route_params = [];
+        $routename = '';
+        if ($route_current instanceof \Illuminate\Routing\Route) {
+            $route_params = $route_current->parameters();
+            $routename = $route_current->getName() ?? '';
+        }
+
         $old_act_route = last(explode('.', $routename));
         if (! \is_string($old_act_route)) {
             throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
         }
 
         $routename_act = Str::before($routename, $old_act_route).''.$act;
-        $route_current = Route::current();
-        $route_params = [];
-        if ($route_current instanceof \Illuminate\Routing\Route) {
-            $route_params = $route_current->parameters();
-            // $routename non utilizzata dopo l'assegnazione
-        }
 
         /*
          * try {
@@ -185,7 +185,7 @@ class RouteService
      * $url = str_replace(url(''), '', route($route_name, $route_params));
      * } catch (\Exception $e) {
      * if (request()->input('debug', false)) {
-     * dddx([
+     * dd([
      * 'route_name' => $route_name,
      * 'route_params' => $route_params,
      * 'line' => __LINE__,
@@ -331,17 +331,23 @@ class RouteService
         $controllerName = self::getControllerName();
         $tmp_arr = explode('\\', $controllerName);
 
-        $params = getRouteParameters();
+        $routeCurrent = Route::current();
+        /** @var array<string, mixed> $params */
+        $params = $routeCurrent instanceof \Illuminate\Routing\Route ? $routeCurrent->parameters() : [];
         [$containers] = params2ContainerItem($params);
 
-        $params['containers'] = implode('.', $containers);
+        $params['containers'] = implode('.', array_map(
+            static fn (mixed $value): string => is_scalar($value) ? (string) $value : '',
+            array_values($containers),
+        ));
 
         return collect($tmp_arr)
-            ->filter(static fn ($item): bool => ! \in_array($item, ['Module', 'Item'], false))
-            ->map(static function ($item) use ($params) {
+            ->filter(static fn (string $item): bool => ! \in_array($item, ['Module', 'Item'], false))
+            ->map(static function (string $item) use ($params): string {
                 $item = Str::snake($item);
+                $value = $params[$item] ?? $item;
 
-                return $params[$item] ?? $item;
+                return is_scalar($value) ? (string) $value : $item;
             })
             ->implode('.');
     }

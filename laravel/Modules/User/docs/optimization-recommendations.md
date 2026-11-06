@@ -1,3 +1,28 @@
+---
+title: "Raccomandazioni di Ottimizzazione - Modulo User"
+type: concept
+tags: [optimization, recommendations]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "optimization-recommendations raccomandazioni di ottimizzazione - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -271,8 +296,8 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
-- [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
-- [Linee Guida Riusabilità](../../../project_docs/module_reusability_guidelines.md)
+- [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../../docs/project/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
 # Raccomandazioni di Ottimizzazione - Modulo User
@@ -548,7 +573,6 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
-- [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
+- [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
+- [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
-

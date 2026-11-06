@@ -1,3 +1,15 @@
+---
+title: "structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "structure"
+issues: []
+discussions: []
+status: draft
+---
+
 # Modulo UI
 
 Data: 2025-04-23 19:09:56
@@ -7,7 +19,7 @@ Data: 2025-04-23 19:09:56
 - **Namespace principale**: Modules\\UI
 Modules\\UI\\Database\\Factories
 Modules\\UI\\Database\\Seeders
-- **Pacchetto Composer**: laraxot/module_ui_fila3
+- **Pacchetto Composer**: laraxot/module_ui_fila5
 Marco Sottana
 - **Dipendenze**: owenvoke/blade-fontawesome * repositories type path url ../User type path url ../Tenant type path url ../Xot scripts post-autoload-dump1 @php vendor/bin/testbench package:discover --ansi
 - **Totale file PHP**: 330

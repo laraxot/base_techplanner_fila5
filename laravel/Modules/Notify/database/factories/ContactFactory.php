@@ -23,10 +23,13 @@ class ContactFactory extends Factory
     /**
      * Define the model's default state.
      */
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
-            // 'model_id' => $this->faker->randomNumber(5, false),
+            'model_id' => (string) fake()->uuid(),
             'model_type' => fake()->word,
             'contact_type' => fake()->word,
             'value' => fake()->word,
@@ -36,7 +39,6 @@ class ContactFactory extends Factory
             'updated_by' => fake()->word,
             'created_by' => fake()->word,
             // 'user_id' => $this->faker->randomNumber(5, false),
-            'token' => fake()->word,
-        ];
+            'token' => fake()->word];
     }
 }

@@ -15,6 +15,7 @@ class GenerateModelByModelClass
 {
     use QueueableAction;
 
+    /** @var array<string, string> */
     public array $replaces = [];
 
     /**
@@ -80,14 +81,13 @@ class GenerateModelByModelClass
         $module_name = Str::of($model_class)->between('Modules\\', '\Models\\')->toString();
         $artisan_cmd = 'module:make-model';
         $artisan_params = ['model' => $model_name, 'module' => $module_name];
-        $res = Artisan::call($artisan_cmd, $artisan_params);
+        Artisan::call($artisan_cmd, $artisan_params);
 
         /*
          * $output=Artisan::output();
          *
          * dddx(
          * [
-         * 'res'=>$res,
          * 'output'=>$output,
          * 'model_name'=>$model_name,
          * 'module_name'=>$module_name,
@@ -98,6 +98,9 @@ class GenerateModelByModelClass
          */
     }
 
+    /**
+     * @param  array<string, string>  $replaces
+     */
     public function setCustomReplaces(array $replaces): self
     {
         $this->replaces = array_merge($this->replaces, $replaces);

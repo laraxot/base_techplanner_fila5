@@ -1,3 +1,15 @@
+---
+title: "modelli factory seeder analisi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modelli factory seeder analisi"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Modelli, Factory e Seeder - Modulo Notify
 
 ## Panoramica
@@ -261,10 +273,10 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 ### Moduli Collegati
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
-- [SaluteOra Module](../../saluteora/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
-- [User Module](../../user/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
-- [Media Module](../../media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
-- [Lang Module](../../lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
+- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
+- [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
+- [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
 
 ### Servizi Esterni
 - [Mailgun](https://www.mailgun.com/) - Email delivery service
@@ -272,5 +284,6 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Twilio](https://www.twilio.com/) - SMS service
 - [Firebase](https://firebase.google.com/) - Push notifications
 
+*Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
 *Sistema notifiche multi-canale completo*

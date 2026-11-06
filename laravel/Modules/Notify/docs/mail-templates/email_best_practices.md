@@ -1,3 +1,15 @@
+---
+title: "email best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "email best practices"
+issues: []
+discussions: []
+status: draft
+---
+
 # Best Practices per Email Transazionali
 
 ## Introduzione
@@ -15,7 +27,7 @@ Questo documento descrive le best practices per la creazione e gestione di email
 
 ### 2. Branding Coerente
 
-- **Elementi visuali**: Utilizzare logo, colori e font SaluteOra
+- **Elementi visuali**: Utilizzare logo, colori e font <nome progetto>
 - **Voce e tono**: Mantenere un tono professionale ma amichevole
 - **Firma coerente**: Includere sempre lo stesso formato di firma e disclaimer
 
@@ -48,7 +60,7 @@ Questo documento descrive le best practices per la creazione e gestione di email
 - Separare il contenuto dalla presentazione per facilitare le traduzioni
 - Supportare lingue RTL quando necessario
 
-## Template e Layout 
+## Template e Layout
 
 ### Utilizzo di MailPace Templates
 
@@ -61,7 +73,7 @@ I template di [mailpace/templates](https://github.com/mailpace/templates) integr
 
 ### Directory `mail-layouts`
 
-La directory `/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layouts/` contiene:
+La directory `[project-root]/laravel/Modules/Notify/resources/mail-layouts/` contiene:
 
 - **default.html**: Template base per la maggior parte delle comunicazioni
 - **main.html**: Alternativa minimalista
@@ -70,7 +82,7 @@ La directory `/var/www/html/saluteora/laravel/Modules/Notify/resources/mail-layo
 
 ### Integrazione con Spatie Mail Templates
 
-Seguendo le regole di progetto SaluteOra, ricordare di:
+Seguendo le regole di progetto <nome progetto>, ricordare di:
 
 - NON creare controller personalizzati per gestire l'invio di email
 - Utilizzare il package `spatie/laravel-mail-templates`
@@ -114,6 +126,10 @@ $mailTemplate->send($user->email, [
 
 ## Riferimenti
 
+- [Guida Layout Email](../MAIL_LAYOUTS_GUIDE.md)
+- [Integrazione MailPace](./MAILPACE_TEMPLATES_INTEGRATION.md)
+- [HTML Email Compatibility](./HTML_EMAIL_COMPATIBILITY.md)
+- [Spatie Email Usage Guide](../SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Guida Layout Email](../mail_layouts_guide.md)
 - [Integrazione MailPace](./mailpace_templates_integration.md)
 - [HTML Email Compatibility](./html_email_compatibility.md)

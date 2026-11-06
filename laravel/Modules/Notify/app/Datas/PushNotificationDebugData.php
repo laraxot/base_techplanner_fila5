@@ -12,8 +12,14 @@ use Modules\Notify\Contracts\CanReceivePushNotifications;
 use Modules\Notify\Contracts\MobilePushNotification;
 use Spatie\LaravelData\Data;
 
+/**
+ * @implements Arrayable<string, mixed>
+ */
 final class PushNotificationDebugData extends Data implements Arrayable
 {
+    /**
+     * @return void
+     */
     public function __construct(
         private readonly CanReceivePushNotifications $notifiable,
         private readonly MobilePushNotification $notification,
@@ -28,6 +34,9 @@ final class PushNotificationDebugData extends Data implements Arrayable
         return new self($notifiable, $notification, $sendReport);
     }
 
+    /**
+     * @return array<string, mixed>
+     */
     public function toArray(): array
     {
         return [
@@ -43,25 +52,19 @@ final class PushNotificationDebugData extends Data implements Arrayable
                     ->successes()
                     ->map(static fn (SendReport $report): array => [
                         'type' => $report->target()->type(),
-                        'value' => $report->target()->value(),
-                    ]),
+                        'value' => $report->target()->value()]),
                 'failure_tokens' => $this->sendReport
                     ->failures()
                     ->map(static fn (SendReport $report): array => [
                         'type' => $report->target()->type(),
-                        'value' => $report->target()->value(),
-                    ]),
+                        'value' => $report->target()->value()]),
                 'unknown_tokens' => $this->sendReport
                     ->filter(static fn (SendReport $report): bool => $report->messageWasSentToUnknownToken())
                     ->map(static fn (SendReport $report): array => [
                         'type' => $report->target()->type(),
-                        'value' => $report->target()->value(),
-                    ]),
+                        'value' => $report->target()->value()]),
                 'results' => $this->sendReport->map(static fn (SendReport $report): array => [
                     'target' => $report->target()->value(),
-                    'result' => $report->result(),
-                ]),
-            ],
-        ];
+                    'result' => $report->result()])]];
     }
 }

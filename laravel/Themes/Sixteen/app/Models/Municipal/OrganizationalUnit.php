@@ -4,24 +4,67 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Models\Municipal;
 
+use Carbon\Carbon;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Casts\Attribute;
+use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
+use Illuminate\Database\Eloquent\Relations\Pivot;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Collection;
 use Illuminate\Support\Str;
+use Themes\Sixteen\Enums\OrganizationalUnitTypeEnum;
 
 /**
  * Modello per le unità organizzative
  *
  * Rappresenta uffici, dipartimenti, settori e altre unità organizzative
  * dell'ente secondo l'ontologia AGID
+ *
+ * @property int $id
+ * @property string $name
+ * @property string|null $slug
+ * @property string|null $description
+ * @property string|null $short_description
+ * @property string $type
+ * @property int|null $parent_id
+ * @property string|null $code
+ * @property string|null $logo
+ * @property string|null $image
+ * @property string|null $website
+ * @property string|null $email
+ * @property string|null $pec
+ * @property string|null $phone
+ * @property string|null $address
+ * @property array<array-key, mixed>|null $office_hours
+ * @property bool $is_active
+ * @property bool $is_public
+ * @property int $position
+ * @property array<array-key, mixed>|null $competences
+ * @property array<array-key, mixed>|null $services_provided
+ * @property array<array-key, mixed>|null $accessibility_info
+ * @property array<array-key, mixed>|null $metadata
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property Carbon|null $deleted_at
+ * @property-read self|null $parent
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, self> $children
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, ContactPoint> $contacts
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, self> $allChildren
+ * @property-read string $type_name
+ * @property-read string $hierarchy_path
+ * @property-read bool $has_children
+ * @property-read int $level
+ * @property-read string $url
  */
 class OrganizationalUnit extends Model
 {
+    /** @use HasFactory<Factory<static>> */
     use HasFactory, SoftDeletes;
 
     protected $table = 'sixteen_organizational_units';
@@ -63,50 +106,39 @@ class OrganizationalUnit extends Model
     ];
 
     /**
-     * Tipi di unità organizzative secondo AGID
-     */
-    public const TYPES = [
-        'municipality' => 'Comune',
-        'department' => 'Dipartimento',
-        'sector' => 'Settore',
-        'office' => 'Ufficio',
-        'service' => 'Servizio',
-        'area' => 'Area',
-        'division' => 'Divisione',
-        'unit' => 'Unità',
-        'committee' => 'Commissione',
-        'council' => 'Consiglio',
-        'board' => 'Giunta',
-        'authority' => 'Autorità',
-        'agency' => 'Agenzia',
-    ];
-
-    /**
      * Relazione con l'unità parent
+     *
+     * @return BelongsTo<static, $this>
      */
     public function parent(): BelongsTo
     {
-        return $this->belongsTo(self::class, 'parent_id');
+        return $this->belongsTo(static::class, 'parent_id');
     }
 
     /**
      * Relazione con le unità figlie
+     *
+     * @return HasMany<static, $this>
      */
     public function children(): HasMany
     {
-        return $this->hasMany(self::class, 'parent_id')->ordered();
+        return $this->hasMany(static::class, 'parent_id')->ordered();
     }
 
     /**
      * Relazione con tutti i discendenti
+     *
+     * @return HasMany<static, $this>
      */
     public function descendants(): HasMany
     {
-        return $this->hasMany(self::class, 'parent_id')->with('descendants');
+        return $this->hasMany(static::class, 'parent_id')->with('descendants');
     }
 
     /**
      * Relazione con i punti di contatto
+     *
+     * @return MorphMany<ContactPoint, $this>
      */
     public function contacts(): MorphMany
     {
@@ -115,6 +147,8 @@ class OrganizationalUnit extends Model
 
     /**
      * Relazione con le persone pubbliche
+     *
+     * @return BelongsToMany<PublicPerson, $this, Pivot, 'pivot'>
      */
     public function people(): BelongsToMany
     {
@@ -125,6 +159,8 @@ class OrganizationalUnit extends Model
 
     /**
      * Relazione con i responsabili attuali
+     *
+     * @return BelongsToMany<PublicPerson, $this, Pivot, 'pivot'>
      */
     public function managers(): BelongsToMany
     {
@@ -136,6 +172,8 @@ class OrganizationalUnit extends Model
 
     /**
      * Relazione con i servizi erogati
+     *
+     * @return HasMany<MunicipalService, $this>
      */
     public function services(): HasMany
     {
@@ -144,6 +182,8 @@ class OrganizationalUnit extends Model
 
     /**
      * Relazione con le location
+     *
+     * @return BelongsToMany<MunicipalLocation, $this, Pivot, 'pivot'>
      */
     public function locations(): BelongsToMany
     {
@@ -152,133 +192,63 @@ class OrganizationalUnit extends Model
 
     /**
      * Scope per unità attive
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function scopeActive($query)
+    public function scopeActive(Builder $query): Builder
     {
         return $query->where('is_active', true);
     }
 
     /**
      * Scope per unità pubbliche
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function scopePublic($query)
+    public function scopePublic(Builder $query): Builder
     {
         return $query->where('is_public', true);
     }
 
     /**
      * Scope per tipo di unità
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function scopeOfType($query, string $type)
+    public function scopeOfType(Builder $query, string $type): Builder
     {
         return $query->where('type', $type);
     }
 
     /**
      * Scope per unità radice (senza parent)
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function scopeRoot($query)
+    public function scopeRoot(Builder $query): Builder
     {
         return $query->whereNull('parent_id');
     }
 
     /**
      * Scope ordinato per posizione
+     *
+     * @param  Builder<static>  $query
+     * @return Builder<static>
      */
-    public function scopeOrdered($query)
+    public function scopeOrdered(Builder $query): Builder
     {
         return $query->orderBy('position')->orderBy('name');
     }
 
     /**
-     * Accessor per il nome del tipo
-     */
-    protected function typeName(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => self::TYPES[$this->type] ?? $this->type
-        );
-    }
-
-    /**
-     * Accessor per il percorso gerarchico
-     */
-    protected function hierarchyPath(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                $path = collect([$this->name]);
-                $current = $this;
-
-                while ($current->parent) {
-                    $current = $current->parent;
-                    $path->prepend($current->name);
-                }
-
-                return $path->implode(' › ');
-            }
-        );
-    }
-
-    /**
-     * Accessor per verificare se ha figli
-     */
-    protected function hasChildren(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => $this->children()->exists()
-        );
-    }
-
-    /**
-     * Accessor per il livello gerarchico
-     */
-    protected function level(): Attribute
-    {
-        return Attribute::make(
-            get: function () {
-                $level = 0;
-                $current = $this;
-
-                while ($current->parent) {
-                    $level++;
-                    $current = $current->parent;
-                }
-
-                return $level;
-            }
-        );
-    }
-
-    /**
-     * Accessor per l'URL dell'unità
-     */
-    protected function url(): Attribute
-    {
-        return Attribute::make(
-            get: fn () => route('municipal.organizational-units.show', $this->slug)
-        );
-    }
-
-    /**
-     * Mutator per il nome (genera automaticamente lo slug)
-     */
-    protected function name(): Attribute
-    {
-        return Attribute::make(
-            set: function ($value) {
-                $this->attributes['name'] = $value;
-                if (empty($this->attributes['slug'])) {
-                    $this->attributes['slug'] = Str::slug($value);
-                }
-
-                return $value;
-            }
-        );
-    }
-
-    /**
      * Ottiene le competenze formattate
+     *
+     * @return array<array-key, mixed>
      */
     public function getFormattedCompetences(): array
     {
@@ -299,6 +269,8 @@ class OrganizationalUnit extends Model
 
     /**
      * Ottiene i servizi forniti formattati
+     *
+     * @return array<array-key, mixed>
      */
     public function getFormattedServices(): array
     {
@@ -319,6 +291,8 @@ class OrganizationalUnit extends Model
 
     /**
      * Ottiene gli orari di apertura formattati
+     *
+     * @return array<array-key, mixed>
      */
     public function getFormattedOfficeHours(): array
     {
@@ -363,7 +337,11 @@ class OrganizationalUnit extends Model
         }
 
         foreach ($todayHours as $period) {
-            if (isset($period['open']) && isset($period['close'])) {
+            if (! is_array($period)) {
+                continue;
+            }
+
+            if (isset($period['open'], $period['close'])) {
                 if ($currentTime >= $period['open'] && $currentTime <= $period['close']) {
                     return true;
                 }
@@ -375,33 +353,37 @@ class OrganizationalUnit extends Model
 
     /**
      * Ottiene tutti gli antenati
+     *
+     * @return Collection<int, self>
      */
-    public function getAncestors(): \Illuminate\Support\Collection
+    public function getAncestors(): Collection
     {
-        $ancestors = collect();
+        $ancestors = [];
         $current = $this->parent;
 
         while ($current) {
-            $ancestors->prepend($current);
+            array_unshift($ancestors, $current);
             $current = $current->parent;
         }
 
-        return $ancestors;
+        return new Collection($ancestors);
     }
 
     /**
      * Ottiene tutti i discendenti (recursivo)
+     *
+     * @return Collection<int, self>
      */
-    public function getAllDescendants(): \Illuminate\Support\Collection
+    public function getAllDescendants(): Collection
     {
-        $descendants = collect();
+        $descendants = [];
 
         foreach ($this->children as $child) {
-            $descendants->push($child);
-            $descendants = $descendants->merge($child->getAllDescendants());
+            $descendants[] = $child;
+            $descendants = array_merge($descendants, $child->getAllDescendants()->all());
         }
 
-        return $descendants;
+        return new Collection($descendants);
     }
 
     /**
@@ -421,30 +403,130 @@ class OrganizationalUnit extends Model
     }
 
     /**
+     * Accessor per il nome del tipo
+     *
+     * @return Attribute<string, never>
+     */
+    protected function typeName(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => OrganizationalUnitTypeEnum::tryFrom($this->type)?->getLabel() ?? $this->type
+        );
+    }
+
+    /**
+     * Accessor per il percorso gerarchico
+     *
+     * @return Attribute<string, never>
+     */
+    protected function hierarchyPath(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                $path = collect([$this->name]);
+                $current = $this;
+
+                while ($current->parent) {
+                    $current = $current->parent;
+                    $path->prepend($current->name);
+                }
+
+                return $path->implode(' › ');
+            }
+        );
+    }
+
+    /**
+     * Accessor per verificare se ha figli
+     *
+     * @return Attribute<bool, never>
+     */
+    protected function hasChildren(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => $this->children()->exists()
+        );
+    }
+
+    /**
+     * Accessor per il livello gerarchico
+     *
+     * @return Attribute<int, never>
+     */
+    protected function level(): Attribute
+    {
+        return Attribute::make(
+            get: function () {
+                $level = 0;
+                $current = $this;
+
+                while ($current->parent) {
+                    $level++;
+                    $current = $current->parent;
+                }
+
+                return $level;
+            }
+        );
+    }
+
+    /**
+     * Accessor per l'URL dell'unità
+     *
+     * @return Attribute<string, never>
+     */
+    protected function url(): Attribute
+    {
+        return Attribute::make(
+            get: fn () => route('municipal.organizational-units.show', $this->slug)
+        );
+    }
+
+    /**
+     * Mutator per il nome (genera automaticamente lo slug)
+     *
+     * @return Attribute<string, string>
+     */
+    protected function name(): Attribute
+    {
+        return Attribute::make(
+            set: function (string $value): string {
+                $this->attributes['name'] = $value;
+                if (empty($this->attributes['slug'])) {
+                    $this->attributes['slug'] = Str::slug($value);
+                }
+
+                return $value;
+            }
+        );
+    }
+
+    /**
      * Boot del modello
      */
-    protected static function boot()
+    protected static function boot(): void
     {
         parent::boot();
 
         // Auto-increment position nella stessa categoria
-        static::creating(function ($model) {
+        static::creating(function (self $model): void {
             if (is_null($model->position)) {
-                $model->position = static::where('parent_id', $model->parent_id)
+                $maxPosition = static::where('parent_id', $model->parent_id)
                     ->where('type', $model->type)
-                    ->max('position') + 1;
+                    ->max('position');
+                $model->position = is_numeric($maxPosition) ? ((int) $maxPosition + 1) : 1;
             }
         });
 
         // Genera slug se mancante
-        static::creating(function ($model) {
+        static::creating(function (self $model): void {
             if (empty($model->slug)) {
                 $model->slug = Str::slug($model->name);
             }
         });
 
         // Assicura unicità dello slug
-        static::creating(function ($model) {
+        static::creating(function (self $model): void {
             $originalSlug = $model->slug;
             $counter = 1;
 

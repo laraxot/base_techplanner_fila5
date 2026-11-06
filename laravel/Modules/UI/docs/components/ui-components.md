@@ -1,8 +1,20 @@
+---
+title: "ui components"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ui components"
+issues: []
+discussions: []
+status: draft
+---
+
 # Componenti UI - Modulo UI
 
 ## Panoramica
 
-I componenti UI forniscono elementi riutilizzabili e standardizzati per l'interfaccia utente dell'ecosistema PTVX Fila3 Mono.
+I componenti UI forniscono elementi riutilizzabili e standardizzati per l'interfaccia utente dell'ecosistema PTVX Fila 5.
 
 ## 🎯 Principi di Design
 
@@ -182,4 +194,3 @@ return [
 - [**Personalizzazioni Filament**](../filament/filament-customizations.md)
 
 ---
-

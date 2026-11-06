@@ -1,3 +1,15 @@
+---
+title: "conflict resolution locationselector"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution locationselector"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitto LocationSelector.php
 
 ## Problema Identificato
@@ -76,7 +88,7 @@ Il conflitto riguarda la logica di recupero e gestione dei dati geografici.
 
 - [filament-components-location-studio.md](filament-components-location-studio.md)
 - [components.md](components.md)
-- [Modules/UI/docs/](../docs/)
+- [Modules/UI/docs/](../../docs/)
 
 # Risoluzione Conflitto LocationSelector.php
 

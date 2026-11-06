@@ -2,31 +2,25 @@
 
 declare(strict_types=1);
 
-use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
+use Modules\Activity\Models\Activity;
+use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends Migration
+return new class extends XotBaseMigration
 {
-    /**
-     * Run the migrations.
-     */
+    protected ?string $model_class = Activity::class;
+
     public function up(): void
     {
-        Schema::connection('activity')->table('activity_log', function (Blueprint $table): void {
-            $table->string('causer_id', 36)->nullable()->change();
-            $table->string('subject_id', 36)->nullable()->change();
-        });
-    }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::connection('activity')->table('activity_log', function (Blueprint $table): void {
-            $table->unsignedBigInteger('causer_id')->nullable()->change();
-            $table->unsignedBigInteger('subject_id')->nullable()->change();
+        // Activity causers are UUID-backed Users; keep legacy data and widen
+        // only the existing columns required by the polymorphic relation.
+        $this->tableUpdate(function (Blueprint $table): void {
+            if ($this->hasColumn('causer_id')) {
+                $table->string('causer_id', 36)->nullable()->change();
+            }
+            if ($this->hasColumn('causer_type')) {
+                $table->string('causer_type')->nullable()->change();
+            }
         });
     }
 };

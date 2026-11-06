@@ -1,6 +1,14 @@
-# Eventi del Prediction Market
+---
+title: "Eventi del <nome progetto>ion Market"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity, use_cases]
+qmd: "eventi del <nome progetto>ion market activity"
+---
+# Eventi del <nome progetto>ion Market
 
-Gli eventi sono il cuore del sistema di Event Sourcing per un prediction market. Di seguito sono elencati gli eventi principali che dovrebbero essere implementati nel modulo `Activity`.
+Gli eventi sono il cuore del sistema di Event Sourcing per un <nome progetto>ion market. Di seguito sono elencati gli eventi principali che dovrebbero essere implementati nel modulo `Activity`.
 
 ## Eventi Principali
 
@@ -33,7 +41,7 @@ Gli eventi sono il cuore del sistema di Event Sourcing per un prediction market.
 
 **Esempio di Evento `BetPlaced` in Laravel**:
 ```php
-namespace Modules\Activity\Events\PredictionMarket;
+namespace Modules\Activity\Events\<nome progetto>ionMarket;
 
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
 
@@ -49,4 +57,4 @@ class BetPlaced extends ShouldBeStored
 }
 ```
 
-Questi eventi devono essere registrati da una radice aggregate come `PredictionMarketAggregateRoot` per garantire la coerenza dello stato.
+Questi eventi devono essere registrati da una radice aggregate come `<nome progetto>ionMarketAggregateRoot` per garantire la coerenza dello stato.

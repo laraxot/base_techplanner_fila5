@@ -1,0 +1,105 @@
+---
+title: "Chat Agenti — Indice handoff"
+type: index
+tags: [chat, handoff, multi-agent, second-brain, coordination]
+created: 2026-06-06
+updated: 2026-10-29
+qmd: "chat index handoff agent session techplanner multi agent coordination github issue same task migrate artisan"
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/18"
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/21"
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/23"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/19"
+related:
+  - ../wiki/how-to/multi-agent-coordination-discipline.md
+  - ../wiki/how-to/github-issue-agent-discipline.md
+  - ../wiki/memories/multi-agent-coordination-standing.md
+  - ../wiki/concepts/agent-bootstrap-compact.md
+---
+
+# Chat agenti — TechPlanner
+
+> **Archivio legacy read-only.** Dal passaggio a BMAD stories, i nuovi task, claim,
+> handoff e risultati vanno nella story canonica dell'owner. Questo indice conserva
+> solo la cronologia precedente e non è una fonte operativa per nuovi lavori.
+
+Era il **bus locale** tra agenti AI che ricevevano lo **stesso task**. Non sostituisce `docs/wiki/` (SSoT versionata) né le **GitHub issues** (audit persistente).
+
+## Dove si scrive ora
+
+Ogni voce che qui era un file vive in una sezione della story BMAD dell'owner (modulo, tema o `docs/stories/` per il lavoro trasversale):
+
+| Prima in `docs/chat/` | Ora nella story |
+|---|---|
+| data, agente, scope | frontmatter e `## Owned File/Module Scope` |
+| file o aree rivendicate, rischio di collisione | `## Claim` (tabella Chi, Scope, Stato) e lock di `bashscripts/lock/` |
+| progressi, blocker, decisioni | `## Dev Agent Record`, `## Esito`, `## Decisioni aperte` |
+| prossimo passo | `## Ripartenza` o i task non spuntati |
+| issue e discussion | `## GitHub (tracciamento)` |
+
+Bootstrap: `docs/wiki/concepts/agent-bootstrap-compact.md`, poi `python3 -I bashscripts/tools/claims-open.py` (story `in-progress` e lock), poi `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -n 5 --files` e la riga del dominio in `docs/wiki/rules/00-TRIGGER_MAP.md`. Canon: [multi-agent-coordination-standing](../wiki/memories/multi-agent-coordination-standing.md) e [disciplina di coordinamento](../wiki/how-to/multi-agent-coordination-discipline.md). La memoria standing chiede di committare subito la story; `AGENTS.md` dice commit solo su richiesta dell'utente. In pratica la story si scrive nel working tree condiviso e a committarla ci pensa il sync, a meno che l'utente non chieda un commit.
+
+## Archivio handoff (sola lettura)
+
+| Data | File | Argomento | Issue |
+|------|------|-----------|-------|
+| migrato | [handoff-gitattributes-no-lfs.md](./handoff-gitattributes-no-lfs.md) | Normalizzazione `.gitattributes` e policy no Git LFS. Ora nella story [git-collision-detection-resolution-system](../stories/git-collision-detection-resolution-system.story.md) | — |
+| migrato | [handoff-git-collisions-rebase-markers.md](./handoff-git-collisions-rebase-markers.md) | Collisioni git: marker committati da rebase interrotti nei moduli, guard in `dummy_push`, decisioni aperte. Ora nella story [git-collision-detection-resolution-system](../stories/git-collision-detection-resolution-system.story.md) | — |
+| migrato | [handoff-phpstan-modules-current.md](./handoff-phpstan-modules-current.md) | PHPStan Modules: stato reale, lane concluse e ripartenza. Ora nella story [all-modules-phpstan-zero-errors](../stories/all-modules-phpstan-zero-errors.story.md) | — |
+| migrato | [handoff-design-comuni-data-attributes.md](./handoff-design-comuni-data-attributes.md) | Parità HTML Design Comuni e convenzione `data-*` tra Sixteen e Two. Ora nella story [data-attribute-parity](../../laravel/Themes/Sixteen/docs/stories/data-attribute-parity.story.md) | — |
+| migrato | [handoff-idcolumn-row-anchor.md](./handoff-idcolumn-row-anchor.md) | `IDColumn` e ancora di riga (`return_to`): colonna nascosta di default, validazione del ritorno. Ora nella story [idcolumn-record-anchor-return-to](../../laravel/Modules/Xot/docs/stories/idcolumn-record-anchor-return-to.story.md) | — |
+| corrente | [../audits/project-complete-audit.md](../audits/project-complete-audit.md) | Audit completo sito, moduli, temi, quality gates, sicurezza e docs | — |
+| 2026-07-24 | [handoff-token-efficiency.md](./handoff-token-efficiency.md) | Token efficiency 2026: query wrapper, context-mode, write-back AI/Xot/Sixteen, Obsidian lean | — |
+| 2026-07-24 | [handoff-second-brain-max.md](./handoff-second-brain-max.md) | Second brain max + write-back docs AI/Xot/Sixteen | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-git-sync-modules.md](./handoff-git-sync-modules.md) | Sync git moduli/temi post-PHPStan + bridge Xot rigenerato | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-phpstan-modules.md](./handoff-phpstan-modules.md) | PHPStan Modules 55→0 errori | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-composer-go.md](./handoff-composer-go.md) | composer go agent-safe + lock + gates Seo/Playwright | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [phpstan-modules-post-composer-go-2026-07-24.md](./phpstan-modules-post-composer-go.md) | PHPStan Modules 90→55 dopo composer go: bridge stale regenerato, RegisterBladeComponentsActionTest fix, root cause per 5 file residui (Notify PHPUnit-legacy, AI scoping, Media drift) | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [session-gate-blockers-2026-07-24.md](./session-gate-blockers.md) | Bloccanti residui gate sessione (ide-junction, runtime-psr4) + bug riferimento verify-llm-wiki.sh rotto in 00-master-prompt.md | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-filament-v5-schema.md](./handoff-filament-v5-schema.md) | Schema Filament 5 (doc ufficiale) + anti-invenzione second brain | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-filament-v5-form-view-cache.md](./handoff-filament-v5-form-view-cache.md) | Filament 5 form docs + gate view:cache obbligatorio | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-quality-gates-execution.md](./handoff-quality-gates-execution.md) | Prompt 03 v3 + dedup Job Feature/Unit; drift phpunit↔env.testing | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-master-prompt-v32.md](./handoff-master-prompt-v32.md) | Master prompt v32: dedup, lock fix, gate sessione eseguito | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-07-24 | [handoff-gitmodules-path-iteration.md](./handoff-gitmodules-path-iteration.md) | Prompt 17: audit path gitmodules + fix Seo conflicts | [#42](https://github.com/laraxot/base_techplanner_fila5/issues/42) |
+| 2026-07-24 | [handoff-prompts-nn-unique-merge.md](./handoff-prompts-nn-unique-merge.md) | Prompt: 1 file per prefisso NN in `bashscripts/tools/prompts/` | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-06-06 | [handoff-bmad-one-migration-per-model.md](./handoff-bmad-one-migration-per-model.md) | /bmad/architecture N modelli = N migrazioni | [#23](https://github.com/laraxot/base_techplanner_fila5/issues/23) |
+| 2026-06-06 | [handoff-phpstan-migrate-2026-06-06.md](./handoff-phpstan-migrate.md) | migrate SQLite + PHPStan 0 | [#22](https://github.com/laraxot/base_techplanner_fila5/issues/22) |
+| 2026-06-06 | [handoff-composer-module-dependency-bmad.md](./handoff-composer-module-dependency-bmad.md) | folio→Cms, activitylog→Activity, pdf→Xot | [#16](https://github.com/laraxot/base_techplanner_fila5/issues/16) |
+| 2026-06-06 | [handoff-multi-agent-coordination.md](./handoff-multi-agent-coordination.md) | Regola docs/chat + GitHub multi-agente | [#18](https://github.com/laraxot/base_techplanner_fila5/issues/18) |
+| 2026-06-06 | [handoff-artisan-migrate-2026-06-06.md](./handoff-artisan-migrate.md) | migrate sqlite + user DB, fix Activity index + Media duplicato | [#21](https://github.com/laraxot/base_techplanner_fila5/issues/21) |
+| 2026-06-06 | [handoff-bmad-architecture-one-migration-per-model-2026-06-06.md](./handoff-bmad-architecture-one-migration-per-model.md) | N modelli = N migrazioni create_* per modulo | [#23](https://github.com/laraxot/base_techplanner_fila5/issues/23) |
+| 2026-06-06 | [handoff-composer-go-2026-06-06.md](./handoff-composer-go-techplanner.md) | composer go + fix blocks.governance.cards | [#21](https://github.com/laraxot/base_techplanner_fila5/issues/21) |
+
+| 2026-07-06 | [phpstan-user-migration-syntax-lock-2026-07-06.md](./phpstan-user-migration-syntax-lock.md) | Blocco PHPStan residuo su UserMigrationSyntaxTest.php: file lockato, fix return.type documentato | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+| 2026-07-06 | [phpstan-pest-this-binding-fix-2026-07-06.md](./phpstan-pest-this-binding-fix.md) | Fix sistemico Pest `$this` binding (AST-based) + collisione lock Geo revertita | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+| 2026-07-06 | [phpstan-modules-progress-2026-07-06-pm.md](./phpstan-modules-progress-pm.md) | Modules/ portato a 0 errori PHPStan (lavoro convergente multi-agente); docs di modulo aggiornati con root cause reali | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+| 2026-07-06 | [second-brain-qmd-cache-bug-2026-07-06.md](./second-brain-qmd-cache-bug.md) | Bug wrapper qmd **risolto** (cache vuota → indice reale), embedding vettoriali in corso | — |
+| 2026-07-06 | [phpstan-collision-bugs-round-2026-07-06.md](./phpstan-collision-bugs-round.md) | Round bug reali da collisione multi-agente (namespace corrotto, funzione globale duplicata, merge marker, @var fittizio) → 0 errori riconfermato | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+| 2026-07-06 | [phpstan-modules-progress-2026-07-06-pm.md](./phpstan-modules-progress-pm.md) (append serale) | Pulizia root moduli/temi: cartelle maiuscole, `.txt`, `.md` extra rimossi (grande convergenza multi-agente); `Themes/Two/Resources/` flaggato, non toccato (referenziato da Vite) | — |
+| 2026-07-06 | [phpstan-modules-zero-confirmed-and-phpmd-fix-2026-07-06.md](./phpstan-modules-zero-confirmed-and-phpmd-fix.md) | Riconferma indipendente 0 errori (cache pulita, 2x); fix `tools/phpmd.sh` (phpmd globale via phive, sbloccava Codex) | [#34](https://github.com/laraxot/base_techplanner_fila5/issues/34) |
+| 2026-07-16 | [tenantservice-missing-blocks-phpstan.md](./tenantservice-missing-blocks-phpstan.md) | `Modules\Tenant\Services\TenantService` mancante → fatal bootstrap PHPStan; 3 conflitti merge irrisolti risolti (sync-ide-junctions.sh, Category.php) + 5 widget Geo senza `getFormSchema()` corretti | — |
+| 2026-07-16 | [handoff-models-parity-audit-2026-07-16.md](./handoff-models-parity-audit.md) | Audit (sola lettura) parità Models/Migrations/Seeders/Factories sui 22 moduli: gap grossi in TechPlanner (13 seeder mancanti), Tenant (migrations assenti), duplicati sospetti in Cms/Gdpr/Rating/User; docs/ moduli non toccati | — |
+
+## Sessioni archivio
+
+| Data | Slug | Argomento |
+|------|------|-----------|
+| 2026-06-06 | llm-wiki-bootstrap | Harness LLM Wiki + gap QMD techplanner |
+| 2026-06-06 | [phpstan-zero-swarm-handoff](./phpstan-zero-swarm-handoff.md) | PHPStan 0 errori full project + second brain + BMAD v6 |
+
+## Convenzioni
+
+| Cosa | Dove |
+|------|------|
+| Decisione duratura | `docs/wiki/` + `log.md` + frontmatter GitHub |
+| Stato turno / lock | Issue comment + handoff qui |
+| Firma | `— <Agente> (<modello>)` |
+| Duplicati | Vietato — cerca handoff + `gh issue list` prima |
+
+## Cursor rule
+
+`.cursor/rules/multi-agent-coordination.mdc` (alwaysApply)
+# Active coordination
+
+- [Gitmodules multi-repo sync](gitmodules-multi-repo-sync.md) — issue #42, discussion #43

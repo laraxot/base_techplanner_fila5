@@ -1,11 +1,25 @@
+---
+issues: []
+discussions: []
+title: "Implementazione della Localizzazione"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: draft
+---
 # Implementazione della Localizzazione
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/readme.md)
+- [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni Lang](/laravel/modules/lang/docs/translation_keys_rules.md)
-- [Componenti SVG Bandiere](/laravel/modules/ui/docs/flags_components.md)
-- [Implementazione Header](/laravel/themes/one/docs/sections/header_language_user_dropdown.md)
+- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Componenti SVG Bandiere](/laravel/Modules/UI/docs/FLAGS_COMPONENTS.md)
+- [Implementazione Header](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
 
 ## Panoramica
 
@@ -160,11 +174,11 @@ Seguendo queste linee guida, è possibile implementare correttamente la localizz
 # Implementazione della Localizzazione
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/readme.md)
+- [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni Lang](/laravel/modules/lang/docs/translation_keys_rules.md)
-- [Componenti SVG Bandiere](/laravel/modules/ui/docs/flags_components.md)
-- [Implementazione Header](/laravel/themes/one/docs/sections/header_language_user_dropdown.md)
+- [Regole Traduzioni Lang](/laravel/Modules/Lang/docs/TRANSLATION_KEYS_RULES.md)
+- [Componenti SVG Bandiere](/laravel/Modules/UI/docs/FLAGS_COMPONENTS.md)
+- [Implementazione Header](/laravel/Themes/One/docs/sections/HEADER_LANGUAGE_USER_DROPDOWN.md)
 
 ## Panoramica
 
@@ -315,4 +329,8 @@ Il pacchetto `mcamara/laravel-localization` fornisce diversi middleware per gest
 
 ## Conclusione
 
+Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
+Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
+Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
+Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.
 Seguendo queste linee guida, è possibile implementare correttamente la localizzazione  utilizzando il pacchetto `mcamara/laravel-localization` senza creare rotte o controller personalizzati. Questo approccio è coerente con la filosofia di <nome progetto> di utilizzare Filament e Folio per gestire la maggior parte delle funzionalità dell'applicazione.

@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\File;
 
-use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Nwidart\Modules\Facades\Module;
@@ -26,25 +25,22 @@ class GetModulePathAction
     {
         try {
             $module_path = Module::getModulePath($moduleName);
-        } catch (Exception) {
+        } catch (\Exception) {
             $modulesPath = base_path('Modules');
             if (! File::exists($modulesPath)) {
                 return __DIR__.'/../';
             }
 
+            /** @var array<int, string> $files */
             $files = scandir($modulesPath);
             $moduleNameLower = Str::lower($moduleName);
 
-            $foundModule = collect($files)->filter(static function ($item) use ($moduleNameLower): bool {
-                if (! is_string($item)) {
-                    return false;
-                }
-
+            $foundModule = collect($files)->filter(static function (string $item) use ($moduleNameLower): bool {
                 return Str::lower($item) === $moduleNameLower;
             })->first();
 
             // Se non troviamo il modulo, restituiamo un percorso di fallback
-            if ($foundModule === null || ! is_string($foundModule)) {
+            if (! is_string($foundModule)) {
                 return base_path('Modules/'.$moduleName);
             }
 

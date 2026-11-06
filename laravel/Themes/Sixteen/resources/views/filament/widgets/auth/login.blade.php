@@ -1,61 +1,47 @@
-{{-- Vista per il LoginWidget nel tema Sixteen --}}
-{{-- Design ispirato a https://docs.italia.it/accounts/login/ --}}
-{{-- Conforme AGID Bootstrap Italia + Filament 4.x --}}
+{{-- LoginWidget — vestito Sixteen; logica in Modules\User\Filament\Widgets\Auth\LoginWidget --}}
+<div class="space-y-6">
+    {{-- Esito neutro o positivo (es. "Password cambiata") e riepilogo degli errori: password errata (data.email), campi vuoti, ritorno
+         da Google rifiutato (email). Una sola regione role="status" sempre presente, un solo avviso role="alert" (DCP-290).
+         Il vestito sta in components/auth/assets.blade.php: le utility Tailwind sono spente dentro data-dc. --}}
+    <div role="status" aria-live="polite">
+        @if (session('status'))
+            <p class="auth-status">{{ session('status') }}</p>
+        @endif
+    </div>
 
-<x-filament-widgets::widget>
-    <x-filament::section>
-        <div class="space-y-6">
-            {{-- Header del form --}}
-            <div class="text-center mb-6">
-                <h2 class="text-2xl font-bold text-italia-gray-900 dark:text-white">
-                    {{ __('user::auth.login.title') }}
-                </h2>
-                <p class="mt-2 text-sm text-italia-gray-600 dark:text-gray-400">
-                    {{ __('user::auth.login.subtitle') }}
-                </p>
-            </div>
-            {{-- Form renderizzato dal widget Filament 4 --}}
-            <form wire:submit="login" class="space-y-6">
-                {{ $this->form }}
+    <x-auth.error-summary />
 
-                {{-- Submit Button AGID Style --}}
-                <div class="mt-6">
-                    <button 
-                        type="submit" 
-                        wire:loading.attr="disabled"
-                        class="w-full flex justify-center items-center gap-2 py-3 px-4 border border-transparent text-base font-medium rounded-md text-white bg-primary-600 hover:bg-primary-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary-500 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
-                    >
-                        <svg wire:loading class="animate-spin h-5 w-5" fill="none" viewBox="0 0 24 24">
-                            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-                            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
-                        <span>{{ __('user::auth.login.submit') }}</span>
-                    </button>
-                </div>
-            </form>
-
-            {{-- Links AGID Style --}}
-            <div class="mt-6 space-y-4 text-center text-sm">
-                <p class="text-italia-gray-600 dark:text-gray-400">
-                    {{ __('user::login.no_account') }}
-                    <a 
-                        href="{{ url('/' . app()->getLocale() . '/auth/register') }}" 
-                        class="font-medium text-primary-600 hover:text-primary-500 underline"
-                    >
-                        {{ __('user::login.register_now') }}
-                    </a>
-                </p>
-                
-                <p class="text-italia-gray-600 dark:text-gray-400">
-                    {{ __('user::login.forgot_password_text') }}
-                    <a 
-                        href="{{ url('/' . app()->getLocale() . '/auth/password/reset') }}" 
-                        class="font-medium text-primary-600 hover:text-primary-500 underline"
-                    >
-                        {{ __('user::login.reset_it') }}
-                    </a>
-                </p>
-            </div>
+    <form
+        wire:submit="login"
+        class="space-y-6"
+        aria-labelledby="auth-login-heading"
+        novalidate
+    >
+        {{-- Niente riquadro annidato (le utility border/p-4 erano dipinte anche dentro data-dc): i campi hanno la colonna e l'aspetto
+             della registrazione (DCP-290). L'errore sta nel riepilogo e sul campo, non sul colore del contenitore. --}}
+        <div class="fo-filament-form-shell">
+            {{ $this->form }}
         </div>
-    </x-filament::section>
-</x-filament-widgets::widget>
+
+        <x-filament::button
+            type="submit"
+            color="primary"
+            class="w-full"
+            wire:loading.attr="disabled"
+            wire:loading.attr="aria-busy"
+            wire:target="login"
+            aria-describedby="login-submit-status"
+        >
+            <span wire:loading wire:target="login" class="inline-flex items-center gap-2" role="status" aria-live="polite">
+                <x-filament::icon icon="heroicon-o-arrow-path" class="h-5 w-5 animate-spin motion-reduce:animate-none" aria-hidden="true" />
+                {{ __('user::auth.login.logging_in.text') }}
+            </span>
+            <span wire:loading.remove wire:target="login">
+                {{ __('user::login.actions.login.label') }}
+            </span>
+        </x-filament::button>
+        <span id="login-submit-status" class="sr-only" wire:loading wire:target="login" role="status" aria-live="polite">
+            {{ __('user::auth.login.logging_in.text') }}
+        </span>
+    </form>
+</div>

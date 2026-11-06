@@ -1,10 +1,20 @@
+---
+title: "Miglioramenti al Prompt docs.txt"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Miglioramenti al Prompt docs.txt"
+---
 # Miglioramenti al Prompt docs.txt
 
 > **Collegamenti correlati**
-> - [README.md documentazione generale](../../../../docs/readme.md)
+> - [README.md documentazione generale](../../../../docs/README.md)
 > - [Struttura dei Prompt](./prompts.md)
-> - [Regole per i Prompt](./prompt_rules.md)
-> - [README.md toolkit bashscripts](../../../../bashscripts/docs/readme.md)
+> - [Regole per i Prompt](./PROMPT_RULES.md)
+> - [README.md toolkit bashscripts](../../../../bashscripts/docs/README.md)
 > - [Documentazione miglioramenti prompt docs.txt](../../../../bashscripts/docs/prompt_docs_improvements.md)
 
 ## Introduzione

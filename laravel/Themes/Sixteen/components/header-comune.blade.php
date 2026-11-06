@@ -6,11 +6,11 @@
                     <div class="col-12">
                         <div class="it-header-center-content-wrapper">
                             <div class="it-brand-wrapper">
-                                <a href="{{ route('comune.homepage') }}">
-                                    <img src="{{ theme_asset('images/logo-comune.png') }}" alt="Logo Comune" class="icon">
+                                <a href="{{ route('home') }}">
+                                    <img src="{{ theme_asset('images/logo-comune.png') }}" alt="{{ __('pub_theme::navigation.site_title') }}" class="icon">
                                     <div class="it-brand-text">
                                         <h2>{{ config('comune.nome', 'Nome Comune') }}</h2>
-                                        <h3>Comune di {{ config('comune.nome', 'Nome Comune') }}</h3>
+                                        <h3>{{ __('pub_theme::comune_pages.shared.municipality_of_name.label', ['name' => config('comune.nome', 'Nome Comune')]) }}</h3>
                                     </div>
                                 </a>
                             </div>
@@ -32,19 +32,19 @@
                             <div class="collapse navbar-collapse" id="navbarNav">
                                 <ul class="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.homepage') ? 'active' : '' }}" href="{{ route('comune.homepage') }}">Home</a>
+                                        <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">{{ __('pub_theme::navigation.home') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.servizi*') ? 'active' : '' }}" href="{{ route('comune.servizi') }}">Servizi</a>
+                                        <a class="nav-link {{ request()->routeIs('services.categories*') ? 'active' : '' }}" href="{{ route('services.categories') }}">{{ __('pub_theme::navigation.services') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.novita*') ? 'active' : '' }}" href="{{ route('comune.novita') }}">Novità</a>
+                                        <a class="nav-link {{ request()->routeIs('news*') ? 'active' : '' }}" href="{{ route('news') }}">{{ __('pub_theme::navigation.news') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('comune.contatti') ? 'active' : '' }}" href="{{ route('comune.contatti') }}">Contatti</a>
+                                        <a class="nav-link {{ request()->routeIs('contact') ? 'active' : '' }}" href="{{ route('contact') }}">{{ __('pub_theme::navigation.contact') }}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link {{ request()->routeIs('fixcity.*') ? 'active' : '' }}" href="{{ route('fixcity.tickets.index') }}">Segnalazioni</a>
+                                        <a class="nav-link {{ request()->routeIs('segnalazioni') ? 'active' : '' }}" href="{{ route('segnalazioni') }}">{{ __('pub_theme::home.heading.title') }}</a>
                                     </li>
                                 </ul>
                             </div>

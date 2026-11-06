@@ -5,6 +5,9 @@
 ### Regola Critica: Priorità Test Esistenti
 **PRIMA di creare nuovi test, SEMPRE far funzionare tutti i test esistenti nei moduli.**
 
+### TDD (Test-Driven Development)
+Per nuove feature e bugfix: ciclo RED-GREEN-REFACTOR. Vedi [tdd-laravel-guide.md](../../../development/tdd-laravel-guide.md).
+
 ### Workflow Obbligatorio
 1. **Analisi Test Esistenti**: Identificare tutti i test presenti nei moduli
 2. **Conversione PHPUnit → Pest**: Convertire test PHPUnit legacy in Pest
@@ -211,4 +214,4 @@ php artisan test --coverage
 - [Theme Components](../theme_components.md)
 - [Modules Documentation](../modules/)
 
-
+*Ultimo aggiornamento: Gennaio 2025*

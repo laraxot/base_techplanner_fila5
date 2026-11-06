@@ -22,6 +22,7 @@ class PdfByHtmlAction
     ): string|BinaryFileResponse {
         $html2pdf = new Html2Pdf($orientation, 'A4', 'it');
         $html2pdf->setTestTdInOnePage(false);
+        // Un HtmlParsingException risale all'handler: continuare significherebbe scrivere un PDF incompleto.
         $html2pdf->writeHTML($html);
         $path = Storage::disk($disk)->path($filename);
         $html2pdf->output($path, 'F');

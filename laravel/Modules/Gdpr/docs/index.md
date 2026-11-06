@@ -139,17 +139,17 @@ The `.env.testing` file must be a **COPY CARBON** of `.env` with **ONLY "_test"*
 
 ❌ **NEVER invent new environment variables like**:
 ```bash
-NOTIFY_DB_DATABASE=laravelpizza_data_test  # WRONG!
-GDPR_DB_DATABASE=laravelpizza_data_test    # WRONG!
+NOTIFY_DB_DATABASE=<nome progetto>_data_test  # WRONG!
+GDPR_DB_DATABASE=<nome progetto>_data_test    # WRONG!
 ```
 
 ✅ **CORRECT approach**:
 ```bash
 # If .env has:
-DB_DATABASE=laravelpizza_data
+DB_DATABASE=<nome progetto>_data
 
 # Then .env.testing has:
-DB_DATABASE=laravelpizza_data_test  # Only add "_test"!
+DB_DATABASE=<nome progetto>_data_test  # Only add "_test"!
 ```
 
 See [Database Testing Configuration](./database-testing-configuration.md) for complete details.
@@ -287,6 +287,10 @@ All module connections are automatically mapped to the test MySQL connection def
 
 ## Marketing & Conversion
 - [Clickbait Marketing Best Practices](../themes/meetup/docs/clickbait-marketing-best-practices.md) - Ethical clickbait techniques for conversion optimization
+- [User Module](../User/docs/README.md) - User authentication and management
+- [Activity Module](../Activity/docs/index.md) - Activity logging
+- [Notify Module](../Notify/docs/index.md) - Notification system
+- [Xot Module](../Xot/docs/index.md) - Core base classes
 
 ## Troubleshooting
 Common issues and solutions:
@@ -296,3 +300,7 @@ Common issues and solutions:
 - Privacy policy version management
 - Hardcoded strings in multilingual sites
 - Translation key inconsistencies
+- Hardcoded strings in multilingual sites
+- Translation key inconsistencies
+
+- [Conflict Resolution](conflict-resolution.md)

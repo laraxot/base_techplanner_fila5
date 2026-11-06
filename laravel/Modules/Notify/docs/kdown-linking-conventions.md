@@ -1,3 +1,16 @@
+---
+qmd: "kdown linking conventions"
+issues: []
+discussions: []
+title: "Convenzioni per i Collegamenti nei File Markdown"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+---
+
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -33,6 +46,7 @@ Per collegamenti a documenti in altre directory:
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
+[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
 ```
 
 ## Motivazione
@@ -60,8 +74,8 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 
 ## Collegamenti Correlati
 
-- [Convenzioni di Documentazione](../../../docs/documentation-conventions.md)
-- [Markdown Best Practices](../../../docs/markdown-best-practices.md)
+- [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
+- [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -91,6 +105,7 @@ Per collegamenti a documenti in altre directory:
 ```markdown
 [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
 [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
+[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
 ```
 
 ## Motivazione
@@ -117,5 +132,5 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 
 ## Collegamenti Correlati
 
-- [Convenzioni di Documentazione](../../../docs/documentation-conventions.md)
-- [Markdown Best Practices](../../../docs/markdown-best-practices.md)
+- [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
+- [Markdown Best Practices](../../../../docs/markdown-best-practices.md)

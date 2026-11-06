@@ -1,5 +1,14 @@
+---
+title: "Activity - Filosofia Completa: Logica, Religione, Politica, Zen"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "activity - filosofia completa: logica, religione, politica, zen activity"
+---
 # Activity - Filosofia Completa: Logica, Religione, Politica, Zen
 
+**Data Creazione**: 2025-12-23
 **Data Creazione**: [DATE]
 **Status**: Documentazione Filosofica Completa
 **Versione**: 1.0.0
@@ -93,6 +102,7 @@ class Activity extends ActivityLog
 ### Integrazione Moduli
 
 Il modulo Activity **è utilizzato da** tutti i moduli business:
+- **<nome progetto>**: Traccia modifiche clienti, appuntamenti, dispositivi=======
 - **TechPlanner**: Traccia modifiche clienti, appuntamenti, dispositivi
 - **User**: Traccia azioni utente, login, cambi ruoli
 - **Employee**: Traccia timbrature, modifiche dipendenti
@@ -222,7 +232,10 @@ class ClientObserver
 
 ## 🔗 Collegamenti
 
-- [Business Logic Overview](./readme.md)
+- [Business Logic Overview](./README.md)
+- [Business Logic Analysis](./business-logic-analysis.md)
+- [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
+- [Business Logic Overview](./README.md)
 - [Business Logic Analysis](./business-logic-analysis.md)
 - [Xot Module Foundation](../../xot/docs/philosophy-complete.md)
 

@@ -4,21 +4,25 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\XotBaseResource\RelationManager;
 
-use Exception;
-use Filament\Resources\RelationManagers\RelationManager;
+use Filament\Resources\RelationManagers\RelationManager as FilamentRelationManager;
 use Filament\Support\Components\Component;
 use Filament\Tables;
 use Illuminate\Support\Str;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Override;
+use Webmozart\Assert\Assert;
 
 /**
  * @property class-string<XotBaseResource> $resource
  */
-abstract class XotBaseRelationManager extends RelationManager
+abstract class XotBaseRelationManager extends FilamentRelationManager
 {
-    use HasXotTable;
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    }
 
     protected static string $relationship = '';
 
@@ -53,15 +57,21 @@ abstract class XotBaseRelationManager extends RelationManager
      */
     final public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchema();
+        $class = $this->getResource()::getFormClass();
+        $instance = app($class);
+        Assert::isInstanceOf($instance, XotBaseResourceForm::class);
+
+        return $instance->getFormSchema();
     }
 
     /**
      * Get table columns.
      *
      * @return array<string, Tables\Columns\Column>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-    #[Override]
+    #[\Override]
     public function getTableColumns(): array
     {
         return [];
@@ -105,7 +115,7 @@ abstract class XotBaseRelationManager extends RelationManager
         // Use static property if available
         if (isset(static::$resource) && is_string(static::$resource)) {
             if (is_subclass_of(static::$resource, XotBaseResource::class)) {
-                /** @var class-string<XotBaseResource> */
+                /* @var class-string<XotBaseResource> */
                 return static::$resource;
             }
         }
@@ -124,14 +134,14 @@ abstract class XotBaseRelationManager extends RelationManager
         $resourceClass = $ns.$resourceName;
 
         if (! class_exists($resourceClass)) {
-            throw new Exception("Cannot find resource class {$resourceClass}");
+            throw new \Exception("Cannot find resource class {$resourceClass}");
         }
 
         if (! is_subclass_of($resourceClass, XotBaseResource::class)) {
-            throw new Exception("{$resourceClass} must extend XotBaseResource");
+            throw new \Exception("{$resourceClass} must extend XotBaseResource");
         }
 
-        /** @var class-string<XotBaseResource> $resourceClass */
+        /* @var class-string<XotBaseResource> $resourceClass */
         return $resourceClass;
     }
 }

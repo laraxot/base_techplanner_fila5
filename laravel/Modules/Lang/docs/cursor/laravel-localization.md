@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Laravel Localization Metadata for Cursor"
+module: "Lang"
+type: concept
+tags: [guida, migrazione, step, by]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "guida migrazione step by step"
+related:
+  - "./italian-text-refined-audit-report.md"
+  - "../italian-text-refined-audit-report.md"
+status: draft
+---
 # Laravel Localization Metadata for Cursor
 
 ## Context
@@ -6,18 +21,18 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
 # Laravel Localization Metadata for Cursor
 
 ## Context
-This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `prediction market platform` project.
+This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `<nome progetto>ion market platform` project.
 
 ## Key Points
 
 - **Package**: `mcamara/laravel-localization`
-- **Purpose**: Enhance localization capabilities in Laravel applications for prediction market platforms.
+- **Purpose**: Enhance localization capabilities in Laravel applications for <nome progetto>ion market platforms.
 - **Suggested Actions**:
   - Add package to `composer.json`.
   - Configure supported languages for international trading.
   - Register middleware for language redirects.
   - Implement language selector UI component for traders.
-- **Benefits**: Improved user experience with localized URLs and translated routes for global prediction markets.
+- **Benefits**: Improved user experience with localized URLs and translated routes for global <nome progetto>ion markets.
 
 ## Implementation Notes
 

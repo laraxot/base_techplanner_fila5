@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\FrequencyFactory;
+use Modules\Job\Models\Traits\FrequencyRelations;
 use Modules\Xot\Contracts\ProfileContract;
 
 // use Modules\Job\Models\Traits\HasParameters;
@@ -49,6 +50,8 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Frequency extends BaseModel
 {
+    use FrequencyRelations;
+
     // use HasParameters;
 
     // protected $table = 'task_frequencies';
@@ -59,15 +62,13 @@ class Frequency extends BaseModel
         'interval',
     ];
 
-    public function task(): BelongsTo
-    {
-        return $this->belongsTo(Task::class);
-    }
+    /**
+     * @return BelongsTo<Task, $this>
+     */
 
-    public function parameters(): HasMany
-    {
-        return $this->hasMany(Parameter::class);
-    }
+    /**
+     * @return HasMany<Parameter, $this>
+     */
 
     /**
      * Get the attributes that should be cast.

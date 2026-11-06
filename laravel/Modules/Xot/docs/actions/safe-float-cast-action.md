@@ -1,3 +1,11 @@
+---
+title: "SafeFloatCastAction"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot, actions]
+qmd: "safefloatcastaction xot"
+---
 # SafeFloatCastAction
 
 ## Descrizione
@@ -211,3 +219,4 @@ assert($action->executeWithRange(-10.0, 0.0, 100.0) === 0.0);
 
 ---
 
+*Ultimo aggiornamento: 31 luglio 2025*

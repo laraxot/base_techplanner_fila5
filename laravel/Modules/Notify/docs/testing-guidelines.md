@@ -1,3 +1,15 @@
+---
+title: "testing guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing guidelines"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notify Module - Testing Guidelines
 
 ## Testing Framework Configuration
@@ -42,7 +54,7 @@ describe('Notification Management', function () {
             'user_id' => $this->user->id,
             'notification_type_id' => $this->notificationType->id,
             'template_id' => $template->id,
-            'data' => json_encode(['date' => '[DATE] 10:00']),
+            'data' => json_encode(['date' => '2024-01-15 10:00']),
             'scheduled_at' => now()->addHour(),
         ]);
 
@@ -142,12 +154,12 @@ describe('Email Template System', function () {
         $data = [
             'patient_name' => 'John Doe',
             'doctor_name' => 'Smith',
-            'date' => '[DATE]',
+            'date' => '2024-01-15',
         ];
 
         $rendered = $template->render($data);
 
-        expect($rendered)->toBe('Hello John Doe, your appointment with Dr. Smith is on [DATE]');
+        expect($rendered)->toBe('Hello John Doe, your appointment with Dr. Smith is on 2024-01-15');
     });
 });
 ```

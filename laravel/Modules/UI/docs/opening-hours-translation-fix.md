@@ -1,3 +1,15 @@
+---
+title: "opening hours translation fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "opening hours translation fix"
+issues: []
+discussions: []
+status: draft
+---
+
 # Fix Traduzioni Opening Hours Field - Modulo UI
 
 ## Problema Identificato
@@ -124,7 +136,7 @@ done
 
 ## Collegamenti
 
-- [Documentazione Root Traduzioni](../../../../docs/translation_standards_links.md)
+- [Documentazione Root Traduzioni](../../../../../docs/translation_standards_links.md)
 - [Regole Traduzioni UI](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 
@@ -260,7 +272,7 @@ done
 
 ## Collegamenti
 
-- [Documentazione Root Traduzioni](../../../../docs/translation_standards_links.md)
+- [Documentazione Root Traduzioni](../../../../../docs/translation_standards_links.md)
 - [Regole Traduzioni UI](translation_rules.md)
 - [Best Practices Filament](filament_best_practices.md)
 

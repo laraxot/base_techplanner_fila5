@@ -1,13 +1,25 @@
+---
+title: "Analisi dell'Errore negli Eventi di Logout"
+type: note
+status: draft
+updated: 2026-10-13
+tags: [docs, user]
+qmd: "analisi dell'errore negli eventi di logout user"
+---
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
-- [Documentazione centrale](/docs/readme.md)
+- [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
 - [Implementazione Auth Pages](auth_pages_implementation.md)
 - [Implementazione Logout](logout_blade_implementation.md)
 - [Analisi Errore Logout](logout_blade_error_analysis.md)
 - [Widget Filament Corretto](logout_filament_widget_corrected.md)
-- [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
+- [Implementazione Auth Pages](auth_pages_implementation.md)
+- [Implementazione Logout](logout_blade_implementation.md)
+- [Analisi Errore Logout](logout_blade_error_analysis.md)
+- [Widget Filament Corretto](logout_filament_widget_corrected.md)
+- [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato
 

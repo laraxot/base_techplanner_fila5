@@ -1,14 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 return array (
   'sections' => 
   array (
     'empty' => 
     array (
-      'label' => 'empty',
-      'heading' => 'empty',
+      'label' => 'empty11',
+      'heading' => 'empty12',
     ),
   ),
   'actions' => 
@@ -32,11 +31,11 @@ return array (
     'plural_label' => 'Missing Navigation Plural Label',
     'group' => 'Missing Group',
     'icon' => 'heroicon-o-puzzle-piece',
-    'sort' => 100,
+    'sort' => '100',
   ),
   'label' => 'Missing Label',
   'plural_label' => 'Missing Plural label',
-  'fields' => 
+  'fields' =>
   array (
   ),
 );

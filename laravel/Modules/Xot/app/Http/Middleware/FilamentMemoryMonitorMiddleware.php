@@ -4,23 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
-use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
 use Symfony\Component\HttpFoundation\Response;
 
 /**
  * Middleware per monitorare l'uso della memoria nei pannelli Filament.
- * SuperMucca Memory Monitor 🐄
+ * SuperMucca Memory Monitor 🐄.
  */
 class FilamentMemoryMonitorMiddleware
 {
     /**
      * Handle an incoming request.
      *
-     * @param  Closure(Request):Response  $next
+     * @param  \Closure(Request):Response  $next
      */
-    public function handle(Request $request, Closure $next): Response
+    public function handle(Request $request, \Closure $next): Response
     {
         // Memoria iniziale
         $memoryStart = memory_get_usage(true);
@@ -114,7 +113,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Logga l'uso della memoria.
      *
-     * @param  array<string, mixed>  $metrics
+     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
      */
     private function logMemoryUsage(Request $request, array $metrics): void
     {
@@ -148,7 +147,7 @@ class FilamentMemoryMonitorMiddleware
     /**
      * Determina il livello di log basato sulle metriche.
      *
-     * @param  array<string, mixed>  $metrics
+     * @param  array{memory_used_mb: float, memory_peak_mb: float, memory_total_mb: float, execution_time_ms: float, is_filament_admin: bool, url: string, method: string, user_id: int|string|null}  $metrics
      */
     private function determineLogLevel(array $metrics): string
     {

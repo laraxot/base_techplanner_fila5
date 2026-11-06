@@ -2,20 +2,16 @@
 
 declare(strict_types=1);
 
-namespace Modules\Cms\Tests\Feature\Auth;
-
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Livewire\Livewire;
 use Modules\User\Filament\Widgets\LoginWidget;
+use Modules\Xot\Actions\View\GetViewByClassAction;
 use Modules\Xot\Contracts\UserContract;
-use Modules\Xot\Tests\TestCase;
 
 use function Pest\Laravel\assertAuthenticated;
 use function Pest\Laravel\assertGuest;
 use function Safe\class_implements;
-
-uses(TestCase::class);
 
 // LOGIN WIDGET TESTS - Filament Component
 // ✅ Test del WIDGET Filament, non della pagina
@@ -27,19 +23,17 @@ uses(TestCase::class);
 test('widget can be rendered', function (): void {
     $component = Livewire::test(LoginWidget::class);
 
-    /* @phpstan-ignore-next-line method.nonObject */
     $component->assertStatus(200);
 });
 
 test('widget has correct view', function (): void {
-    expect(LoginWidget::getView())->toBe('user::filament.widgets.login');
+    expect(app(GetViewByClassAction::class)->execute(LoginWidget::class))->toContain('filament.widgets.login');
 });
 
 test('widget initializes correctly', function (): void {
     $component = Livewire::test(LoginWidget::class);
 
     // Widget dovrebbe inizializzare la proprietà data
-    /* @phpstan-ignore-next-line method.nonObject */
     $component->assertSet('data', []);
 });
 
@@ -49,11 +43,9 @@ test('can set form data', function (): void {
     $component = Livewire::test(LoginWidget::class);
 
     // Set form data
-    /* @phpstan-ignore-next-line method.nonObject */
     $component->set('data.email', 'test@example.com')->set('data.password', 'password123');
 
     // Verifica che i dati siano stati impostati
-    /* @phpstan-ignore-next-line method.nonObject */
     $component->assertSet('data.email', 'test@example.com')->assertSet('data.password', 'password123');
 });
 
@@ -62,7 +54,7 @@ test('can set form data', function (): void {
 test('authenticates user with valid credentials', function (): void {
     // ✅ Utilizzo funzione centralizzata dal TestCase
     $email = $this->generateUniqueEmail();
-    $user = $this->createTestUser([
+    $this->createTestUser([
         'email' => $email,
         'password' => Hash::make('password123'),
     ]);
@@ -71,8 +63,7 @@ test('authenticates user with valid credentials', function (): void {
 
     $component = Livewire::test(LoginWidget::class);
 
-    /* @phpstan-ignore-next-line method.nonObject */
-    $component->set('data.email', $email)->set('data.password', 'password123')->call('save');
+    $component->set('data.email', $email)->set('data.password', 'password123')->call('login');
 
     // Verifica che l'utente sia autenticato
     assertAuthenticated();
@@ -96,8 +87,7 @@ test('handles invalid credentials gracefully', function (): void {
     $component = Livewire::test(LoginWidget::class);
 
     // Tenta login con password sbagliata
-    /* @phpstan-ignore-next-line method.nonObject */
-    $component->set('data.email', $email)->set('data.password', 'wrong_password')->call('save');
+    $component->set('data.email', $email)->set('data.password', 'wrong_password')->call('login');
 
     // L'utente dovrebbe rimanere guest
     assertGuest();
@@ -108,7 +98,7 @@ test('handles invalid credentials gracefully', function (): void {
 test('authentication works regardless of user type', function (): void {
     // ✅ Utilizzo funzioni centralizzate dal TestCase
     $email = $this->generateUniqueEmail();
-    $user = $this->createTestUser([
+    $this->createTestUser([
         'email' => $email,
         'password' => Hash::make('password123'),
     ]);
@@ -117,8 +107,7 @@ test('authentication works regardless of user type', function (): void {
 
     $component = Livewire::test(LoginWidget::class);
 
-    /* @phpstan-ignore-next-line method.nonObject */
-    $component->set('data.email', $email)->set('data.password', 'password123')->call('save');
+    $component->set('data.email', $email)->set('data.password', 'password123')->call('login');
 
     assertAuthenticated();
 
@@ -132,7 +121,6 @@ test('getUserClass returns valid class', function (): void {
     // ✅ Utilizzo funzione centralizzata dal TestCase
     $userClass = $this->getUserClass();
 
-    expect($userClass)->toBeString();
     expect(class_exists($userClass))->toBeTrue();
 
     // Verifica che il class implementi UserContract
@@ -146,11 +134,10 @@ test('createTestUser creates valid instances', function (): void {
 
     // Verifica proprietà richieste per autenticazione
     expect($user->email)->toBeString();
-    expect($user->password)->toBeString();
+    expect($user->getAuthPassword())->not->toBeEmpty();
 
     // Verifica che l'utente sia nel database
     $userClass = $this->getUserClass();
     $foundUser = $userClass::where('email', $user->email)->first();
-    expect($foundUser)->not->toBeNull();
-    expect($foundUser->email)->toBe($user->email);
+    expect($foundUser?->getAttribute('email'))->toBe($user->email);
 });

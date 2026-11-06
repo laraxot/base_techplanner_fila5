@@ -1,3 +1,28 @@
+---
+title: "User vs Profile: Guida Completa alla Progettazione"
+type: concept
+tags: [user, profile]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-profile user vs profile: guida completa alla progettazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # User vs Profile: Guida Completa alla Progettazione
 
 ## Sommario
@@ -5,7 +30,7 @@
 2. [Analisi del Codice Attuale](#analisi-del-codice-attuale)
 3. [Best Practice Raccolte](#best-practice-raccolte)
 4. [Casi d'Uso con Percentuali](#casi-duso-con-percentuali)
-5. [Raccomandazioni per LaravelPizza](#raccomandazioni-per-laravelpizza)
+5. [Raccomandazioni per <nome progetto>](#raccomandazioni-per-<nome progetto>)
 6. [Schema Decisionale](#schema-decisionale)
 
 ---
@@ -18,7 +43,7 @@ La separazione tra **User** (tabella per autenticazione) e **Profile** (tabella 
 
 ## Analisi del Codice Attuale
 
-### Struttura Attuale LaravelPizza
+### Struttura Attuale <nome progetto>
 
 ```
 User (connection: user)
@@ -126,7 +151,7 @@ public function profile(): HasOne
 
 ## Casi d'Uso con Percentuali
 
-### Caso 1: Community Platform (es. LaravelPizza)
+### Caso 1: Community Platform (es. <nome progetto>)
 ```
 User: 60% dei dati necessari
 - id, email, password, name, lang, type, state
@@ -231,7 +256,7 @@ START
 
 ---
 
-## Raccomandazioni per LaravelPizza
+## Raccomandazioni per <nome progetto>
 
 ### Attuale (CORRETTO)
 
@@ -306,7 +331,7 @@ Profile: Tutti i dati applicativi
 
 | Scenario | Usa | Note |
 |----------|-----|------|
-| LaravelPizza attuale | User + Profile | Profile in meetup DB |
+| <nome progetto> attuale | User + Profile | Profile in meetup DB |
 | MVP semplice | Solo User | Tutto in una tabella |
 | SaaS multi-tenant | User + Profile | Profile per tenant |
 | Social network | User + Profile | Profile ricco |
@@ -316,7 +341,7 @@ Profile: Tutti i dati applicativi
 
 ## Conclusione
 
-Per **LaravelPizza** la separazione attuale ha senso perché:
+Per **<nome progetto>** la separazione attuale ha senso perché:
 - ✅ Profile è in connection separata (meetup)
 - ✅ Meetup module ha dati specifici
 - ✅ Possibile estensione futura (altri moduli)
@@ -327,5 +352,5 @@ Per **LaravelPizza** la separazione attuale ha senso perché:
 
 ---
 
-*Documento generato per LaravelPizza - Analisi User vs Profile Pattern*
+*Documento generato per <nome progetto> - Analisi User vs Profile Pattern*
 *Data: [DATE]*

@@ -1,3 +1,9 @@
+---
+title: "Employee - OVERVIEW"
+module: Employee
+bmad: true
+status: active
+---
 # Business Logic Overview - Employee Module
 
 ## 📚 Executive Summary
@@ -234,6 +240,8 @@ class GenerateAttendanceReportAction
         
         return new AttendanceReportData(
             department: $department,
+            startDate: $startDate,
+            endDate: $endDate,
             employeeMetrics: $metrics,
             generatedAt: now()
         );

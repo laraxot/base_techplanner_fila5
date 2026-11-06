@@ -1,3 +1,15 @@
+---
+title: "icons"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "icons"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sistema di Icone
 
 ## Utilizzo
@@ -45,7 +57,7 @@ Il modulo UI utilizza un sistema di icone standardizzato basato su:
 Questa documentazione integra entrambe le versioni emerse dal conflitto per fornire sia una panoramica rapida sia una guida dettagliata, facilitando la consultazione a diversi livelli di approfondimento.
 
 ## Backlink
-- [Torna a docs/links.md](../../../../docs/links.md)
+- [Torna a docs/links.md](../../../../../docs/links.md)
 - [Vedi anche: UI/docs/components.md](./components.md)
 - [Vedi anche: Xot/docs/README.md](../../xot/docs/readme.md)
 

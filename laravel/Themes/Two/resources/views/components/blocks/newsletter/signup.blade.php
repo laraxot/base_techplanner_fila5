@@ -26,12 +26,12 @@
             <form action="{{ $form_action ?? '#' }}" method="POST" class="flex flex-col sm:flex-row gap-3 max-w-lg mx-auto">
                 @csrf
                 <input type="email" name="email" required
-                       placeholder="{{ $placeholder ?? 'La tua email' }}"
+                       placeholder="{{ $placeholder ?? __('pub_theme::footer_section.newsletter.email.placeholder') }}"
                        class="flex-1 px-5 py-4 rounded-xl bg-white border-0 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-emerald-400 text-base shadow-inner">
                 <button type="submit"
                         class="px-8 py-4 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-xl font-semibold hover:bg-white/30 transition-all duration-300 flex items-center justify-center gap-2 whitespace-nowrap">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 12L3.269 3.126A59.768 59.768 0 0121.485 12 59.77 59.77 0 013.27 20.876L5.999 12zm0 0h7.5"/></svg>
-                    {{ $button_label ?? 'Iscriviti' }}
+                    {{ $button_label ?? __('pub_theme::block_defaults.newsletter_block.submit.label') }}
                 </button>
             </form>
 

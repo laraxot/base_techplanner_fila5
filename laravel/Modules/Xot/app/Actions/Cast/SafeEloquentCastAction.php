@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Cast;
 
 use Illuminate\Database\Eloquent\Model;
-use InvalidArgumentException;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
@@ -76,7 +75,7 @@ class SafeEloquentCastAction
             return $default ?? '';
         }
 
-        return (string) $value;
+        return SafeStringCastAction::cast($value);
     }
 
     /**
@@ -147,8 +146,8 @@ class SafeEloquentCastAction
      *
      * @param  Model  $model  Il modello Eloquent
      * @param  string  $attribute  Il nome dell'attributo
-     * @param  array|null  $default  Valore di default se l'attributo non esiste o è null
-     * @return array Il valore dell'attributo convertito in array
+     * @param  array<int|string, mixed>|null  $default  Valore di default se l'attributo non esiste o è null
+     * @return array<int|string, mixed> Il valore dell'attributo convertito in array
      */
     public function getArrayAttribute(Model $model, string $attribute, ?array $default = []): array
     {
@@ -157,7 +156,7 @@ class SafeEloquentCastAction
         $value = $model->getAttribute($attribute);
 
         if ($value === null) {
-            return $default ?? [];
+            return app(SafeArrayCastAction::class)->execute([], $default);
         }
 
         return app(SafeArrayCastAction::class)->execute($value, $default);
@@ -182,8 +181,12 @@ class SafeEloquentCastAction
             'int' => $this->getIntAttribute($model, $attribute, is_int($default) ? $default : 0),
             'float' => $this->getFloatAttribute($model, $attribute, is_float($default) ? $default : 0.0),
             'bool' => $this->getBooleanAttribute($model, $attribute, is_bool($default) ? $default : false),
-            'array' => $this->getArrayAttribute($model, $attribute, is_array($default) ? $default : []),
-            default => throw new InvalidArgumentException("Tipo non supportato: {$type}"),
+            'array' => $this->getArrayAttribute(
+                $model,
+                $attribute,
+                is_array($default) ? app(SafeArrayCastAction::class)->execute($default) : null,
+            ),
+            default => throw new \InvalidArgumentException("Tipo non supportato: {$type}"),
         };
     }
 

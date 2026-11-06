@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti Git - Modulo Activity"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, activity]
+qmd: "risoluzione conflitti git - modulo activity activity"
+---
 # Risoluzione Conflitti Git - Modulo Activity
 
 ## Data Risoluzione
@@ -45,7 +53,7 @@ Tutti i file risolti rispettano:
 
 ## Collegamenti
 
-- [Documentazione Root Activity](../../../docs/modules/activity.md)
+- [Documentazione Root Activity](../../../../docs/modules/activity.md)
 - [Event Sourcing Architecture](./event-sourcing.md)
 - [Prediction Market Use Cases](./use_cases/prediction_market/index.md)
 

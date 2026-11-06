@@ -20,14 +20,18 @@ use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
- * @property \Filament\Schemas\Schema $emailForm
+ * @property Schema $emailForm
  */
 class SendEmail extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     // use NavigationLabelTrait;
 
+    /** @var array<string, mixed>|null */
     public ?array $emailData = [];
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
@@ -53,15 +57,15 @@ class SendEmail extends XotBasePage
                             ->email()
                             ->required(),
                         TextInput::make('subject')->required(),
-                        RichEditor::make('body_html')->required(),
-                    ]),
-            ])
+                        RichEditor::make('body_html')->required()])])
             ->model($this->getUser())
             ->statePath('emailData');
     }
 
     public function sendEmail(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->emailForm->getState();
         $email_data = EmailData::from($data);
         // $from_address = config('mail.from.address');
@@ -78,15 +82,14 @@ class SendEmail extends XotBasePage
     protected function getForms(): array
     {
         return [
-            'emailForm',
-        ];
+            'emailForm'];
     }
 
+    /** @return array<string, Action> */
     protected function getEmailFormActions(): array
     {
         return [
-            Action::make('emailFormActions')->submit('emailFormActions'),
-        ];
+            'submit' => Action::make('emailFormActions')->submit('emailFormActions')];
     }
 
     protected function getUser(): Authenticatable&Model

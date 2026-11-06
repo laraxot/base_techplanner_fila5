@@ -8,20 +8,22 @@ use Filament\Support\Colors\Color;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
+use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
 use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
-use Throwable;
 
 use function Safe\file_get_contents;
 
 /**
- * Class MetatagData
+ * Class MetatagData.
  *
  * @property string $title
  * @property string $sitename
@@ -139,8 +141,8 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = TenantService::getConfig('metatag');
-            $data['description'] = TenantService::trans('metatag.description');
+            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
+            $data['description'] = app(TranslateTenantKeyAction::class)->execute('metatag.description');
             self::$instance = self::from($data);
         }
 
@@ -168,9 +170,9 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header);
 
-            return asset($path);
-        } catch (Throwable $e) {
-            return asset($this->logo_header);
+            return $this->normalizeBrandLogoUrl($path);
+        } catch (\Throwable $e) {
+            return $this->fallbackPublicAssetUrl($this->logo_header);
         }
     }
 
@@ -189,10 +191,45 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header_dark);
 
-            return asset($path);
-        } catch (Throwable $e) {
-            return asset($this->logo_header_dark);
+            return $this->normalizeBrandLogoUrl($path);
+        } catch (\Throwable $e) {
+            return $this->fallbackPublicAssetUrl($this->logo_header_dark);
         }
+    }
+
+    /**
+     * Never turn `module::img/x.png` into an HTTP path: browsers 404 on it.
+     * If AssetAction already copied the file, reuse the public relative path.
+     */
+    private function fallbackPublicAssetUrl(string $logoHeader): string
+    {
+        if (! str_contains($logoHeader, '::')) {
+            return asset($logoHeader);
+        }
+
+        $parts = explode('::', $logoHeader, 2);
+        if (! isset($parts[0], $parts[1]) || $parts[0] === '' || $parts[1] === '') {
+            return '';
+        }
+
+        $relative = 'assets/'.$parts[0].'/'.$parts[1];
+
+        if (File::exists(public_path($relative))) {
+            return asset($relative);
+        }
+
+        return '';
+    }
+
+    private function normalizeBrandLogoUrl(string $path): string
+    {
+        if (Str::startsWith($path, ['http://', 'https://'])) {
+            return Str::startsWith($path, url('/'))
+                ? '/'.ltrim(Str::after($path, url('/')), '/')
+                : $path;
+        }
+
+        return '/'.ltrim($path, '/');
     }
 
     /**
@@ -237,7 +274,7 @@ class MetatagData extends Data implements Wireable
 
             // Return as data URI
             return "data:{$mimeType};base64,{$base64Content}";
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             // Fallback: try with the raw logo_header path
             try {
                 $fallbackPath = public_path($this->logo_header);
@@ -248,7 +285,7 @@ class MetatagData extends Data implements Wireable
 
                     return "data:{$mimeType};base64,{$base64Content}";
                 }
-            } catch (Throwable $fallbackException) {
+            } catch (\Throwable $fallbackException) {
                 // Log the error but don't break the application
                 Log::warning('Could not generate base64 logo', [
                     'original_error' => $e->getMessage(),
@@ -262,10 +299,6 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
-     * Get the theme colors.
-     * This method reflects the semantic purpose of getting theme colors,
-     * rather than exposing the raw color data structure.
-     *
      * @return array<string, string>
      */
     public function getThemeColors(): array
@@ -367,7 +400,7 @@ class MetatagData extends Data implements Wireable
     {
         try {
             return app(AssetAction::class)->execute($this->favicon);
-        } catch (Throwable $e) {
+        } catch (\Throwable $e) {
             return asset($this->favicon);
         }
     }
@@ -383,6 +416,8 @@ class MetatagData extends Data implements Wireable
 
     /**
      * @deprecated Use getThemeColors() instead as it better reflects the semantic purpose
+     *
+     * @return array<string, array{key?: string, color: string, hex?: string}>
      */
     public function getColors(): array
     {
@@ -394,18 +429,11 @@ class MetatagData extends Data implements Wireable
     /**
      * Get the default Filament colors configuration.
      *
-     * @return array<string, array<int, string>>
+     * @return array<string, array<int, string>|string>
      */
     public function getFilamentColors(): array
     {
-        return [
-            'danger' => Color::Red,
-            'gray' => Color::Zinc,
-            'info' => Color::Blue,
-            'primary' => Color::Amber,
-            'success' => Color::Green,
-            'warning' => Color::Amber,
-        ];
+        return app(PaDesignColorsAction::class)->filamentPalette();
     }
 
     /**
@@ -418,6 +446,20 @@ class MetatagData extends Data implements Wireable
     {
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
+        $normalizedFilamentColors = [];
+
+        foreach ($filamentColors as $key => $value) {
+            if (is_array($value)) {
+                $normalizedFilamentColors[$key] = array_values(array_map(
+                    static fn (mixed $color): string => (string) $color,
+                    $value,
+                ));
+
+                continue;
+            }
+
+            $normalizedFilamentColors[$key] = [(string) $value];
+        }
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
@@ -428,7 +470,7 @@ class MetatagData extends Data implements Wireable
             }
         }
 
-        return array_merge($filamentColors, $customColors);
+        return array_merge($normalizedFilamentColors, $customColors);
     }
 
     /**
@@ -572,6 +614,11 @@ class MetatagData extends Data implements Wireable
         $xot = XotData::make();
         $path = base_path('Modules/'.$xot->main_module.'/resources/svg/logo.svg');
 
+        // Il modulo principale puo' non avere un logo.svg: chi costruisce l'email non deve fallire (come getBrandLogoBase64()).
+        if (! File::exists($path)) {
+            return '';
+        }
+
         return file_get_contents($path);
     }
 
@@ -582,17 +629,17 @@ class MetatagData extends Data implements Wireable
 
     public function getKeywords(): string
     {
-        return TenantService::trans('metatag.keywords');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.keywords');
     }
 
     public function getAuthor(): string
     {
-        return TenantService::trans('metatag.author');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.author');
     }
 
     public function getSitename(): string
     {
-        return TenantService::trans('metatag.sitename');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.sitename');
     }
 
     public function getRobots(): string

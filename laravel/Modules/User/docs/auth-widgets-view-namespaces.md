@@ -1,3 +1,28 @@
+---
+title: "Widget di Autenticazione: Namespace delle View"
+type: concept
+tags: [auth, widgets, view, namespaces]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-widgets-view-namespaces widget di autenticazione: namespace delle view"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Widget di Autenticazione: Namespace delle View
 
 ## ⚠️ **Regola Critica**
@@ -100,10 +125,10 @@ Per ogni nuovo widget di autenticazione:
 - [ ] View minimalista (solo styling)
 - [ ] Logica centralizzata nel widget PHP
 ## Collegamenti
-- [Documentazione Root: Widget View Namespaces](../../../project_docs/frontend/widget-view-namespaces.md)
-- [Struttura Temi](../../../project_docs/tecnico/themes/theme-structure.md)
-- [Documentazione Root: Widget View Namespaces](../../../docs/frontend/widget-view-namespaces.md)
-- [Struttura Temi](../../../docs/tecnico/themes/theme-structure.md)
+- [Documentazione Root: Widget View Namespaces](../../../../docs/project/frontend/widget-view-namespaces.md)
+- [Struttura Temi](../../../../docs/project/tecnico/themes/theme-structure.md)
+- [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
+- [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)
 # Widget di Autenticazione: Namespace delle View
 
@@ -247,6 +272,6 @@ Per ogni nuovo widget di autenticazione:
 - [ ] Logica centralizzata nel widget PHP
 
 ## Collegamenti
-- [Documentazione Root: Widget View Namespaces](../../../docs/frontend/widget-view-namespaces.md)
-- [Struttura Temi](../../../docs/tecnico/themes/theme-structure.md)
+- [Documentazione Root: Widget View Namespaces](../../../../docs/frontend/widget-view-namespaces.md)
+- [Struttura Temi](../../../../docs/tecnico/themes/theme-structure.md)
 - [Implementazione Auth Pages](auth-pages-implementation.md)

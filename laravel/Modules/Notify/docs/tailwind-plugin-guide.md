@@ -1,9 +1,20 @@
+---
+title: "tailwind plugin guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "tailwind plugin guide"
+issues: []
+discussions: []
+status: draft
+---
+
 # Guida: Creazione di Plugin Tailwind Custom per <nome progetto>
 
 Questa guida mostra come creare, documentare e integrare plugin custom Tailwind CSS per pattern condivisi (bottoni, alert, badge, ecc.) secondo le best practice Webcrunch e le regole <nome progetto>.
 
 ---
-
 ## 1. Cos'è un Plugin Tailwind
 Un plugin Tailwind permette di aggiungere nuove utility, componenti o variant personalizzate, centralizzando la logica di stile e favorendo la coerenza tra moduli/temi.
 
@@ -64,6 +75,7 @@ module.exports = {
 
 ## 4. Best Practice
 - Documentare ogni plugin in `/docs` e `/Themes/One/project_docs/`.
+- Documentare ogni plugin in `/docs` e `/Themes/One/docs/`.
 - Usare i plugin per pattern condivisi (bottoni, alert, badge, card, ecc.).
 - Versionare e testare i plugin per evitare regressioni.
 - Integrare plugin solo se realmente riutilizzati da più moduli/temi.
@@ -81,6 +93,7 @@ module.exports = {
 
 ## 6. Collegamenti e Risorse
 - [Tailwind CSS Plugin Docs](https://tailwindcss.com/project_docs/plugins)
+- [Tailwind CSS Plugin Docs](https://tailwindcss.com/docs/plugins)
 - [Webcrunch: Creare Plugin Tailwind](https://webcrunch.com/posts/create-a-tailwind-css-plugin-from-scratch)
 
 ---

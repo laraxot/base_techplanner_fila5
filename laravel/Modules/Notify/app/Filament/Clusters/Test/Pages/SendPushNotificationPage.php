@@ -22,18 +22,21 @@ use Modules\Notify\Filament\Clusters\Test;
 use Modules\User\Models\DeviceUser;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-use Override;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Webmozart\Assert\Assert;
 
 use function Safe\json_encode;
 
 /**
- * @property \Filament\Schemas\Schema $notificationForm
+ * @property Schema $notificationForm
  */
 class SendPushNotificationPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
     // use NavigationLabelTrait;
 
+    /** @var array<string, mixed>|null */
     public ?array $notificationData = [];
 
     // protected static ?string $navigationIcon = 'heroicon-o-envelope';
@@ -61,26 +64,22 @@ class SendPushNotificationPage extends XotBasePage
         /**
          * Callback per mappare i dispositivi in opzioni per il select.
          */
-        $callback = function ($item) {
-            /** @var mixed $item */
-            if (! is_object($item)) {
-                return [];
-            }
-
+        $callback = static function (DeviceUser $item): array {
             // Relations & attributes (Laravel-safe)
-            $profile = method_exists($item, 'getRelationValue') ? $item->getRelationValue('profile') : null;
+            $profile = $item->getRelationValue('profile');
             if (! is_object($profile)) {
                 return [];
             }
-            $fullName = (string) (data_get($profile, 'full_name') ?? 'Utente');
+            $fullNameRaw = data_get($profile, 'full_name');
+            $fullName = is_scalar($fullNameRaw) ? (string) $fullNameRaw : 'Utente';
 
-            $tokenAttr = method_exists($item, 'getAttribute') ? $item->getAttribute('push_notifications_token') : null;
+            $tokenAttr = $item->getAttribute('push_notifications_token');
             $token = is_string($tokenAttr) ? $tokenAttr : '';
             if ($token === '' || $token === 'unknown') {
                 return [];
             }
 
-            $device = method_exists($item, 'getRelationValue') ? $item->getRelationValue('device') : null;
+            $device = $item->getRelationValue('device');
             $robotVal = data_get($device, 'robot');
             $robot = is_string($robotVal) ? $robotVal : null;
 
@@ -94,13 +93,8 @@ class SendPushNotificationPage extends XotBasePage
         /**
          * Callback per filtrare i dispositivi.
          */
-        $filterCallback = function ($item): bool {
-            if (! is_object($item)) {
-                return false;
-            }
-            $profile = method_exists($item, 'getRelationValue') ? $item->getRelationValue('profile') : null;
-
-            return is_object($profile);
+        $filterCallback = static function (DeviceUser $item): bool {
+            return is_object($item->getRelationValue('profile'));
         };
 
         $to = $devices->filter($filterCallback)->mapWithKeys($callback)->toArray();
@@ -115,15 +109,15 @@ class SendPushNotificationPage extends XotBasePage
                 TextInput::make('body')->required(),
                 Repeater::make('data')->schema([
                     TextInput::make('name')->required(),
-                    TextInput::make('value')->required(),
-                ]),
-            ])
+                    TextInput::make('value')->required()])])
             // ->model($this->getUser())
             ->statePath('notificationData');
     }
 
     public function sendNotification(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->notificationForm->getState();
         $deviceToken = $data['deviceToken'] ?? '';
 
@@ -180,7 +174,8 @@ class SendPushNotificationPage extends XotBasePage
         // Verifichiamo che deviceToken sia una stringa non vuota (per soddisfare il tipo non-empty-string)
         Assert::stringNotEmpty($deviceToken, 'Il token del dispositivo non può essere vuoto');
 
-        $message = CloudMessage::withTarget('token', $deviceToken)
+        $message = CloudMessage::new()
+            ->withToken($deviceToken)
             ->withHighestPossiblePriority()
             ->withData($messageData);
 
@@ -192,10 +187,7 @@ class SendPushNotificationPage extends XotBasePage
 
             $messaging->send($message);
         } catch (Exception $e) {
-            dddx([
-                'message' => $e->getMessage(),
-                'deviceToken' => $deviceToken,
-            ]);
+            throw new \RuntimeException('Removed debug dddx');
         }
 
         Notification::make()
@@ -208,20 +200,18 @@ class SendPushNotificationPage extends XotBasePage
     protected function getForms(): array
     {
         return [
-            'notificationForm',
-        ];
+            'notificationForm'];
     }
 
+    /** @return array<string, Action> */
     protected function getNotificationFormActions(): array
     {
         return [
-            Action::make('notificationFormActions')
+            'submit' => Action::make('notificationFormActions')
 
-                ->submit('notificationFormActions'),
-        ];
+                ->submit('notificationFormActions')];
     }
 
-    #[Override]
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();

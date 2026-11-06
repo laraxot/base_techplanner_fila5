@@ -1,6 +1,7 @@
 <?php
 
 return [
+    // Mai debugbar attiva con APP_DEBUG=false (regola: bashscripts/docs/prompts/debugbar-rule.md)
     'enabled' => env('DEBUGBAR_ENABLED', false) && env('APP_DEBUG', false),
     'except' => [
         'telescope*',
@@ -58,6 +59,8 @@ return [
             'full_log' => false,
         ],
         'views' => [
+            'data' => false, // Note: Can slow down the application, because the data can be quite large..
+            'data' => false, //Note: Can slow down the application, because the data can be quite large..
             'data' => false, // Note: Can slow down the application, because the data can be quite large..
         ],
         'route' => [

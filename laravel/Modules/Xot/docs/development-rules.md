@@ -1,7 +1,17 @@
+---
+title: "Regole Generali di Sviluppo del Progetto"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Regole Generali di Sviluppo del Progetto"
+---
 # Regole Generali di Sviluppo del Progetto
 
 ## Collegamenti
-- [Documentazione generale progetto](/docs/readme.md)
+- [Documentazione generale progetto](/docs/README.md)
 - [Regole Filament](filament-best-practices.md)
 - [Convenzioni Namespace](namespace-conventions.md)
 - [Standard di Codice](code-standards.md)
@@ -83,7 +93,7 @@ Modules/<nome>/
 // ❌ ERRATO
 class PatientResource extends \Filament\Resources\Resource
 
-// ✅ CORRETTO
+// ✅ CORRETTO  
 class PatientResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 
 // MODELLO con HasTranslations
@@ -158,7 +168,7 @@ TextInput::make('name')
 ### Metodi NON Implementare
 Chi estende `XotBaseResource` NON deve implementare:
 - `getTableColumn`
-- `getTableFilters`
+- `getTableFilters` 
 - `getBulkActions`
 - `table`
 - `getPages` (se restituisce solo index,create,edit o index,create,edit,view)

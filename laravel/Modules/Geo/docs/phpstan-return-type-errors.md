@@ -1,3 +1,15 @@
+---
+title: "phpstan return type errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan return type errors"
+issues: []
+discussions: []
+status: draft
+---
+
 # PHPStan Return Type Mismatch Errors
 
 ## Problema
@@ -252,7 +264,7 @@ grep -n "Attribute.*string" Modules/*/Models/*.php | grep -v "SafeStringCastActi
 
 ## Backlink
 
-- [Root PHPStan Rules](../../../project_docs/phpstan_rules.md)
+- [Root PHPStan Rules](../../../../docs/project/phpstan_rules.md)
 - [Geo Module Structure](./structure.md)
 - [Class Not Found Errors](./class_not_found_errors.md)
 

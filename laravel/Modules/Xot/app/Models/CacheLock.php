@@ -23,9 +23,9 @@ use Modules\Xot\Database\Factories\CacheLockFactory;
  * @method static Builder<static>|CacheLock whereKey($value)
  * @method static Builder<static>|CacheLock whereOwner($value)
  *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
- * @property-read ProfileContract|null $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent
  */

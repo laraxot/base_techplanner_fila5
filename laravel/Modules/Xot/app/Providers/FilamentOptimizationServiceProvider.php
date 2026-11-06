@@ -8,16 +8,14 @@ use Illuminate\Database\Events\QueryExecuted;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\ServiceProvider;
-use Modules\Xot\Http\Middleware\FilamentMemoryMonitorMiddleware;
 use Nwidart\Modules\Module;
-use PDO;
 use Webmozart\Assert\Assert;
 
 use function Safe\preg_match;
 
 /**
  * Service Provider per ottimizzazioni Filament.
- * SuperMucca Optimization Provider 🐄
+ * SuperMucca Optimization Provider 🐄.
  */
 class FilamentOptimizationServiceProvider extends ServiceProvider
 {
@@ -46,11 +44,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         // Configura query logging per performance monitoring
         if (config('filament_optimization.monitoring.log_slow_queries', true)) {
             $this->configureQueryLogging();
-        }
-
-        // Registra middleware di monitoraggio
-        if (config('filament_optimization.monitoring.memory_profiling', false)) {
-            $this->registerMemoryMonitoring();
         }
 
         // Ottimizzazioni per l'ambiente di produzione
@@ -112,7 +105,7 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
                 $totalTime = array_sum($times);
 
                 if ($totalQueries > 50 || $totalTime > 1000) {
-                    Log::info('High query count or time detected', [
+                    Log::debug('High query count or time detected', [
                         'total_queries' => $totalQueries,
                         'total_time' => $totalTime,
                         'url' => request()->fullUrl(),
@@ -120,15 +113,6 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
                 }
             });
         }
-    }
-
-    /**
-     * Registra il middleware di monitoraggio memoria.
-     */
-    private function registerMemoryMonitoring(): void
-    {
-        // Il middleware verrà registrato nel kernel HTTP
-        app('router')->pushMiddlewareToGroup('web', FilamentMemoryMonitorMiddleware::class);
     }
 
     /**
@@ -164,8 +148,8 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
                 'database.connections.mysql.options' => array_merge(
                     $optionsArray,
                     [
-                        PDO::ATTR_PERSISTENT => true,
-                        PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
+                        \PDO::ATTR_PERSISTENT => true,
+                        \PDO::MYSQL_ATTR_USE_BUFFERED_QUERY => true,
                     ]
                 ),
             ]);
@@ -245,9 +229,9 @@ class FilamentOptimizationServiceProvider extends ServiceProvider
         if (! app()->runningInConsole() && request()) {
             $path = request()->path();
 
-            return str_contains($path, '/admin') ||
-                   str_ends_with($path, '/admin') ||
-                   preg_match('/\/(user|techplanner|cms|geo|notify|tenant)\/admin/', $path);
+            return str_contains($path, '/admin')
+                   || str_ends_with($path, '/admin')
+                   || preg_match('/\/(user|<nome progetto>|cms|geo|notify|tenant)\/admin/', $path);
         }
 
         return false;

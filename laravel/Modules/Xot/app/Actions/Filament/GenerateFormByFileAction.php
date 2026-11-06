@@ -1,22 +1,17 @@
 <?php
 
+declare(strict_types=1);
 /**
  * -WIP.
  */
 
-declare(strict_types=1);
-
 namespace Modules\Xot\Actions\Filament;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
-use ReflectionClass;
 use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\Finder\SplFileInfo as File;
 use Webmozart\Assert\Assert;
-
-use function Safe\file;
 
 class GenerateFormByFileAction
 {
@@ -24,6 +19,9 @@ class GenerateFormByFileAction
 
     /**
      * Genera un form Filament basato su un file di risorsa.
+     *
+     * WIP: la generazione dello schema non e' implementata, oggi si conta soltanto. Per riscrivere il corpo di
+     * form() usare GetMethodBodyAction come fa GenerateTableColumnsByFileAction per table().
      *
      * @param  File  $file  Il file della risorsa Filament
      * @return int Numero di input aggiunti
@@ -71,31 +69,15 @@ class GenerateFormByFileAction
 
         $fillable = $modelInstance->getFillable();
 
-        $reflection_class = new ReflectionClass($class_name);
+        $reflection_class = new \ReflectionClass($class_name);
 
         // Verifichiamo che il metodo form esista
         if (! $reflection_class->hasMethod('form')) {
             return 0;
         }
 
-        $form_method = $reflection_class->getMethod('form');
-        $start_line = $form_method->getStartLine() - 1;
-        // it's actually - 1, otherwise you wont get the function() block
-        $end_line = $form_method->getEndLine();
-        $length = $end_line - $start_line;
-        Assert::string($file_name = $form_method->getFileName(), '['.__LINE__.']['.class_basename($this).']');
-        // $contents= $file->getContents();
-        $source = file($file_name);
-        $body = implode('', \array_slice($source, $start_line, $length));
-
         // Otteniamo i metodi della classe risorsa
         $resourceMethods = get_class_methods($resourceInstance);
-
-        Log::debug('GenerateFormByFileAction', [
-            'line' => __LINE__,
-            'method' => __METHOD__,
-            'fillable' => $fillable,
-        ]);
 
         // Contiamo gli input aggiunti
         $inputCount = 0;

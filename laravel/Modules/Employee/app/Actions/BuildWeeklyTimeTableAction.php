@@ -25,7 +25,7 @@ class BuildWeeklyTimeTableAction
      *
      * @return array<string, mixed>
      */
-    public function execute(int $userId, Carbon $start, Carbon $end): array
+    public function execute(int|string $userId, Carbon $start, Carbon $end): array
     {
         /** @var Collection<int, WorkHour> $entries */
         $entries = WorkHour::query()
@@ -42,25 +42,22 @@ class BuildWeeklyTimeTableAction
             'totalWorked' => 0.0,
             'totalContract' => 0.0,
             'totalVariance' => 0.0,
-            'averageDaily' => 0.0,
         ];
 
         // Costruisci dati per ogni giorno della settimana
-        /** @var Carbon $current */
-        $current = $start->copy()->startOfDay();
-        while ($current->lte($end)) {
-            assert($current instanceof Carbon);
-            $dateKey = $current->toDateString();
+        $currentDate = $start->copy()->startOfDay();
+        while ($currentDate->lte($end)) {
+            $dateKey = $currentDate->toDateString();
 
             // Filtra entries per questo giorno
-            $dayEntries = $entries->filter(fn ($entry) => $entry->timestamp->isSameDay($current));
+            $dayEntries = $entries->filter(fn (WorkHour $entry) => $entry->timestamp->isSameDay($currentDate));
 
             // Costruisci sessioni per questo giorno
             $sessions = $this->buildDaySessions($dayEntries);
 
             // Calcola ore lavorate
             $workedHours = $this->calculateDayHours($sessions);
-            $contractHours = $this->getContractHours($current); // 8 ore standard
+            $contractHours = $this->getContractHours($currentDate); // 8 ore standard
             $variance = $workedHours - $contractHours;
 
             // Determina stato giorno
@@ -79,15 +76,10 @@ class BuildWeeklyTimeTableAction
                 : true);
             $dayStatus = $this->determineDayStatus($typedSessions, $workedHours, $contractHours);
 
-            /** @var \Carbon\Carbon $currentCarbon */
-            $currentCarbon = $current;
             $days[$dateKey] = [
-                // @phpstan-ignore-next-line
-                'date' => Carbon::parse($currentCarbon)->format('d/m'),
-                // @phpstan-ignore-next-line
-                'dayName' => Carbon::parse($currentCarbon)->locale('it')->format('D'),
-                // @phpstan-ignore-next-line
-                'fullDate' => Carbon::parse($currentCarbon)->locale('it')->format('d/m/Y'),
+                'date' => $currentDate->format('d/m'),
+                'dayName' => $currentDate->translatedFormat('D'),
+                'fullDate' => $currentDate->translatedFormat('d/m/Y'),
                 'entries' => array_map(fn (array $session): array => [
                     'time' => $session['time'],
                     'type' => $session['type'],
@@ -97,8 +89,8 @@ class BuildWeeklyTimeTableAction
                 'contractHours' => $contractHours,
                 'variance' => $variance,
                 'status' => $dayStatus,
-                'isToday' => $current->isToday(),
-                'isWeekend' => $current->isWeekend(),
+                'isToday' => $currentDate->isToday(),
+                'isWeekend' => $currentDate->isWeekend(),
             ];
 
             // Aggiungi al summary settimanale
@@ -106,11 +98,11 @@ class BuildWeeklyTimeTableAction
             $weekSummary['totalContract'] += $contractHours;
             $weekSummary['totalVariance'] += $variance;
 
-            $current->addDay();
+            $currentDate = $currentDate->copy()->addDay();
         }
 
         // Calcola media giornaliera
-        $workDays = collect($days)->filter(fn ($day) => ! $day['isWeekend'])->count();
+        $workDays = collect($days)->filter(fn (array $day) => ! $day['isWeekend'])->count();
         $weekSummary['averageDaily'] = $workDays > 0 ? round($weekSummary['totalWorked'] / $workDays, 2) : 0;
 
         return [

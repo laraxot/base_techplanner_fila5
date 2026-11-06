@@ -1,3 +1,16 @@
+---
+qmd: "composer updatees"
+issues: []
+discussions: []
+title: "Composer Update Fixes - 24 Novembre 2025"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+---
+
 # Composer Update Fixes - 24 Novembre 2025
 
 ## Panoramica
@@ -12,7 +25,7 @@ Documentazione delle correzioni apportate durante l'esecuzione di `composer upda
 
 ### 1. Errore di Sintassi in Helper.php
 
-**File**: `Modules/Xot/Helpers/Helper.php:727`
+**File**: `Modules/Xot/helpers/Helper.php:727`
 
 **Problema**:
 ```php
@@ -29,7 +42,7 @@ $related = $return->getRelated();
 $related_model = (new ReflectionClass($related))->getName();
 ```
 
-**File Modificato**: `Modules/Xot/Helpers/Helper.php:727-728`
+**File Modificato**: `Modules/Xot/helpers/Helper.php:727-728`
 
 ---
 

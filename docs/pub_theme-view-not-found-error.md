@@ -153,4 +153,4 @@ Il `ThemeServiceProvider` del tema Sixteen registra:
 **IMPATTO: CRITICO**  
 **EFFORT: BASSO**
 
-
+*Ultimo aggiornamento: Settembre 2025*

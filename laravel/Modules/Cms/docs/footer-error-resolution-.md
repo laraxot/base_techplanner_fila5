@@ -1,3 +1,15 @@
+---
+title: "footer error resolution "
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "footer error resolution "
+issues: []
+discussions: []
+status: draft
+---
+
 # Footer Error Resolution - [DATE]
 
 ## Error Fixed
@@ -73,7 +85,7 @@ The template attempted to handle both arrays and strings with `is_array()` check
 
 1. **Clear all caches**:
 ```bash
-cd /var/www/_bases/base_techplanner_fila5/laravel
+cd ./laravel
 rm -rf bootstrap/cache/*
 php artisan cache:clear
 php artisan config:clear
@@ -98,11 +110,11 @@ Normative & Certificazioni
 ```
 
 ## Files Modified
-- `/var/www/_bases/base_techplanner_fila5/laravel/Themes/Two/resources/views/components/sections/footer/v1.blade.php`
+- `./laravel/Themes/Two/resources/views/components/sections/footer/v1.blade.php`
 
 ## Related Documentation
-- `/var/www/_bases/base_techplanner_fila5/laravel/Themes/Two/docs/footer-target-complete-analysis.md`
-- `/var/www/_bases/base_techplanner_fila5/laravel/Modules/Cms/docs/footer-target-implementation.md`
+- `./laravel/Themes/Two/docs/footer-target-complete-analysis.md`
+- `./laravel/Modules/Cms/docs/footer-target-implementation.md`
 
 ## Status
 ✅ Error resolved

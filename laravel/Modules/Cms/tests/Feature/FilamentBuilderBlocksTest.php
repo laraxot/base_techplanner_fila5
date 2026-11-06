@@ -8,54 +8,41 @@ use Filament\Forms\Components\Builder\Block;
 use Modules\Cms\Tests\TestCase;
 use Modules\UI\Actions\Block\GetAllBlocksAction;
 use Modules\UI\View\Components\Render\Blocks;
+use PHPUnit\Framework\Assert as PHPUnitAssert;
+use Webmozart\Assert\Assert;
 
 use function Pest\Laravel\get;
-use function Safe\file_get_contents;
-use function Safe\json_decode;
-
-use Spatie\LaravelData\DataCollection;
-
-uses(TestCase::class);
-
 describe('Filament Builder Blocks System', function () {
     test('blocks discovery system finds all available blocks', function () {
         $allBlocks = app(GetAllBlocksAction::class)->execute();
 
-        $this->assertInstanceOf(DataCollection::class, $allBlocks);
-        $this->assertGreaterThan(0, $allBlocks->count(), 'At least one block should be discovered');
+        expect($allBlocks->count())->toBeGreaterThan(0, 'At least one block should be discovered');
 
         // Verify each block has required properties
-        $allBlocks->each(function ($block) {
-            $blockArray = $block->toArray();
-            $this->assertIsArray($blockArray);
-            $this->assertArrayHasKey('name', $blockArray);
-            $this->assertArrayHasKey('class', $blockArray);
-            $this->assertArrayHasKey('module', $blockArray);
-            $this->assertArrayHasKey('path', $blockArray);
-
-            $this->assertTrue(class_exists($block->class), "Block class {$block->class} should exist");
-        });
+        foreach ($allBlocks as $block) {
+            expect($block->toArray())->toHaveKeys(['name', 'class', 'module', 'path']);
+            expect(class_exists($block->class))->toBeTrue("Block class {$block->class} should exist");
+        }
     });
 
     test('xot base block pattern is followed by cms blocks', function () {
         $allBlocks = app(GetAllBlocksAction::class)->execute();
 
-        $cmsBlocks = $allBlocks->filter(fn ($block) => 'Cms' === $block->module);
+        $cmsBlocks = collect($allBlocks)->filter(fn ($block) => 'Cms' === $block->module);
 
-        $this->assertGreaterThan(0, $cmsBlocks->count(), 'CMS module should have blocks');
+        expect($cmsBlocks->count())->toBeGreaterThan(0, 'CMS module should have blocks');
 
-        $cmsBlocks->each(function ($block) {
+        foreach ($cmsBlocks as $block) {
             $blockClass = $block->class;
-            if (! class_exists($blockClass)) {
-                return;
-            }
-
+            expect(class_exists($blockClass))->toBeTrue();
+            Assert::classExists($blockClass);
             $reflection = new \ReflectionClass($blockClass);
 
             // Verify extends XotBaseBlock or has make() method
-            $this->assertTrue($reflection->hasMethod('make'), "Block {$blockClass} should have make() method");
-            $this->assertTrue($reflection->hasMethod('getBlockSchema'), "Block {$blockClass} should have getBlockSchema() method");
-        });
+            expect($reflection->hasMethod('make'))->toBeTrue("Block {$block->class} should have make() method");
+            expect($reflection->hasMethod('getBlockSchema'))
+                ->toBeTrue("Block {$block->class} should have getBlockSchema() method");
+        }
     });
 
     test('page component renders blocks correctly', function () {
@@ -76,107 +63,58 @@ describe('Filament Builder Blocks System', function () {
         ];
 
         // Test that blocks are properly structured
-        $this->assertIsArray($pageData['content_blocks']);
-        $this->assertIsArray($pageData['content_blocks']['it']);
-
         $block = $pageData['content_blocks']['it'][0];
-        $this->assertIsArray($block);
-        $this->assertArrayHasKey('type', $block);
-        $this->assertArrayHasKey('data', $block);
-        $this->assertIsArray($block['data']);
-        $this->assertArrayHasKey('view', $block['data']);
+        expect($block)->toHaveKeys(['type', 'data']);
+        expect($block['data'])->toHaveKey('view');
     });
 
     test('block naming conventions are consistent', function () {
         $allBlocks = app(GetAllBlocksAction::class)->execute();
 
-        $allBlocks->each(function ($block) {
+        foreach ($allBlocks as $block) {
             // Verify snake_case naming
-            $this->assertIsString($block->name);
-            $this->assertMatchesRegularExpression('/^[a-z]+(_[a-z]+)*$/', $block->name, "Block name {$block->name} should be snake_case");
+            expect($block->name)->toMatch('/^[a-z]+(_[a-z]+)*$/', "Block name {$block->name} should be snake_case");
 
             // Verify class naming (PascalCase ending with Block)
             $className = class_basename($block->class);
             if (str_ends_with($className, 'Block')) {
-                $this->assertMatchesRegularExpression(
-                    '/^[A-Z][a-zA-Z]*Block$/',
-                    $className,
-                    "Block class {$className} should be PascalCase ending with 'Block'",
-                );
+                expect($className)
+                    ->toMatch(
+                        '/^[A-Z][a-zA-Z]*Block$/',
+                        "Block class {$className} should be PascalCase ending with 'Block'",
+                    );
             }
-        });
+        }
     });
 
     test('block views follow theme pattern', function () {
         // Test with actual homepage JSON
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-        if (! file_exists($homepageJsonPath)) {
-            $this->assertTrue(true);
-
-            return;
-        }
-
-        /** @var array<string, mixed> $homepageData */
-        $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
-
         $locale = app()->getLocale();
-        /** @var array<string, mixed> $contentBlocks */
-        $contentBlocks = (array) ($homepageData['content_blocks'] ?? []);
-        /** @var array<int, mixed> $blocks */
-        $blocks = (array) ($contentBlocks[$locale] ?? []);
+        $blocks = cmsHomepageBlocks($locale);
 
         foreach ($blocks as $block) {
-            if (! is_array($block)) {
-                continue;
-            }
-
-            $data = $block['data'] ?? null;
-            if (! is_array($data)) {
-                continue;
-            }
-
-            $view = $data['view'] ?? null;
-            if (! is_string($view)) {
-                continue;
-            }
+            $view = $block['data']['view'];
 
             // Verify view follows theme::components.blocks pattern
-            $this->assertStringContainsString('::components.blocks.', $view);
+            expect($view)->toContain('::components.blocks.');
+
+            // Verify theme prefix exists
+            expect($view)->toMatch('/^[a-z_]+::components\.blocks\./');
         }
     });
 
     test('json storage pattern is consistent', function () {
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-        if (! file_exists($homepageJsonPath)) {
-            $this->assertTrue(true);
-
-            return;
-        }
-
-        /** @var array<string, mixed> $homepageData */
-        $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
+        // Esistenza del file e forma di locale, `type` (string) e `data` (object) di ogni blocco:
+        // le verifica il loader (salta senza homepage, fallisce se la forma e' errata).
+        $homepageData = TestCase::homepageJsonForBlocksArchitecture();
 
         // Verify required JSON structure
-        $this->assertArrayHasKey('id', $homepageData);
-        $this->assertArrayHasKey('slug', $homepageData);
-        $this->assertArrayHasKey('content_blocks', $homepageData);
-        $this->assertIsArray($homepageData['content_blocks']);
+        expect($homepageData)->toHaveKeys(['id', 'slug', 'content_blocks']);
 
         // Verify multilingual structure
-        foreach ($homepageData['content_blocks'] as $locale => $blocks) {
-            $this->assertIsString($locale, 'Locale key should be string');
-            $this->assertIsArray($blocks, 'Blocks should be array');
-
+        foreach ($homepageData['content_blocks'] as $blocks) {
             foreach ($blocks as $block) {
-                if (! is_array($block)) {
-                    continue;
-                }
-
-                $this->assertArrayHasKey('type', $block);
-                $this->assertArrayHasKey('data', $block);
-                $this->assertIsString($block['type']);
-                $this->assertIsArray($block['data']);
-                $this->assertArrayHasKey('view', $block['data']);
+                expect($block['data'])->toHaveKey('view');
             }
         }
     });
@@ -184,172 +122,97 @@ describe('Filament Builder Blocks System', function () {
     test('blocks rendering component exists and works', function () {
         // Verify the Blocks component exists
         $blocksClass = Blocks::class;
-        $this->assertTrue(class_exists($blocksClass), 'Blocks render component should exist');
+        expect(class_exists($blocksClass))->toBeTrue('Blocks render component should exist');
 
         $reflection = new \ReflectionClass($blocksClass);
-        $this->assertTrue($reflection->hasMethod('render'), 'Blocks component should have render method');
-        $this->assertTrue($reflection->hasMethod('__construct'), 'Blocks component should have constructor');
+        expect($reflection->hasMethod('render'))->toBeTrue('Blocks component should have render method');
+        expect($reflection->hasMethod('__construct'))->toBeTrue('Blocks component should have constructor');
 
         // Test component instantiation
-        $component = new $blocksClass('ui::components.render.blocks', []);
-        $this->assertInstanceOf($blocksClass, $component);
-        $this->assertIsArray($component->blocks);
+        $component = new $blocksClass('pub_theme::components.blocks');
+        expect($component->view)->toBe('pub_theme::components.blocks');
     });
 
     test('page component integration with blocks system', function () {
         $response = get('/');
-        $status = $response->getStatusCode();
-        if (200 !== $status) {
-            $this->assertTrue(true);
-
-            return;
-        }
-
         $response->assertOk();
 
-        $content = (string) $response->getContent();
+        $content = $response->getContent();
 
         // Verify page component usage
-        $this->assertStringContainsString('x-page', $content);
-        $this->assertStringContainsString('side="content"', $content);
-        $this->assertStringContainsString('slug="home"', $content);
+        expect($content)->toContain('x-page');
+        expect($content)->toContain('side="content"');
+        expect($content)->toContain('slug="home"');
 
         // Verify blocks are rendered
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-        if (! file_exists($homepageJsonPath)) {
-            $this->assertTrue(true);
-
-            return;
-        }
-
-        /** @var array<string, mixed> $homepageData */
-        $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
-
         $locale = app()->getLocale();
-        /** @var array<string, mixed> $contentBlocks */
-        $contentBlocks = (array) ($homepageData['content_blocks'] ?? []);
-        /** @var array<int, mixed> $blocks */
-        $blocks = (array) ($contentBlocks[$locale] ?? []);
+        $blocks = cmsHomepageBlocks($locale);
 
         foreach ($blocks as $block) {
-            if (! is_array($block)) {
-                continue;
-            }
-
-            $data = $block['data'] ?? null;
-            if (! is_array($data)) {
-                continue;
-            }
-
-            $title = $data['title'] ?? null;
-            if (is_string($title) && '' !== $title) {
-                $this->assertStringContainsString($title, $content);
+            if (isset($block['data']['title'])) {
+                expect($content)->toContain($block['data']['title']);
             }
         }
     });
 
     test('block data validation and security', function () {
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-        if (! file_exists($homepageJsonPath)) {
-            $this->assertTrue(true);
-
-            return;
-        }
-
-        /** @var array<string, mixed> $homepageData */
-        $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
-
         $locale = app()->getLocale();
-        /** @var array<string, mixed> $contentBlocks */
-        $contentBlocks = (array) ($homepageData['content_blocks'] ?? []);
-        /** @var array<int, mixed> $blocks */
-        $blocks = (array) ($contentBlocks[$locale] ?? []);
+        $blocks = cmsHomepageBlocks($locale);
 
         foreach ($blocks as $block) {
             // Verify required fields
-            if (! is_array($block)) {
-                continue;
-            }
-
-            $this->assertArrayHasKey('type', $block);
-            $this->assertArrayHasKey('data', $block);
-
-            $data = $block['data'];
-            $this->assertIsArray($data);
-            $this->assertArrayHasKey('view', $data);
+            expect($block)->toHaveKey('type');
+            expect($block)->toHaveKey('data');
+            expect($block['data'])->toHaveKey('view');
 
             // Verify safe data types
-            $this->assertIsString($block['type']);
-            $this->assertIsArray($block['data']);
 
             // Verify view names are safe (no path traversal)
-            $view = $data['view'];
-            if (! is_string($view)) {
-                continue;
-            }
-
-            $this->assertStringNotContainsString('../', $view);
-            $this->assertStringNotContainsString('..\\', $view);
+            $view = $block['data']['view'];
+            expect($view)->not->toContain('../');
+            expect($view)->not->toContain('..\\');
         }
     });
 
     test('cms module blocks extend xot base block correctly', function () {
         $allBlocks = app(GetAllBlocksAction::class)->execute();
-        $cmsBlocks = $allBlocks->filter(fn ($block) => 'Cms' === $block->module);
+        $cmsBlocks = collect($allBlocks)->filter(fn ($block) => 'Cms' === $block->module);
 
-        $cmsBlocks->each(function ($block) {
+        foreach ($cmsBlocks as $block) {
             $blockClass = $block->class;
-            if (! class_exists($blockClass)) {
-                return;
-            }
-
+            expect(class_exists($blockClass))->toBeTrue();
+            Assert::classExists($blockClass);
             $reflection = new \ReflectionClass($blockClass);
 
             // Check if it's a proper block class
             if ($reflection->hasMethod('make') && $reflection->hasMethod('getBlockSchema')) {
-                $instance = $reflection->newInstance();
-
                 // Verify make method returns Filament Block
-                $blockInstance = $blockClass::make();
-                $this->assertInstanceOf(Block::class, $blockInstance);
+                $blockInstance = $reflection->getMethod('make')->invoke(null);
+                expect($blockInstance)->toBeInstanceOf(Block::class);
 
                 // Verify schema is array
-                $schema = $blockClass::getBlockSchema();
-                $this->assertIsArray($schema);
+                $schema = $reflection->getMethod('getBlockSchema')->invoke(null);
+                PHPUnitAssert::assertIsArray($schema);
             }
-        });
+        }
     });
 
     test('performance considerations are implemented', function () {
         // Test that JSON loading is efficient
-        $homepageJsonPath = config_path('local/<nome progetto>/database/content/home.json');
-        if (! file_exists($homepageJsonPath)) {
-            $this->assertTrue(true);
-
-            return;
-        }
-
         $startTime = microtime(true);
 
-        /** @var array<string, mixed> $homepageData */
-        $homepageData = json_decode(file_get_contents($homepageJsonPath), true);
+        TestCase::homepageJsonForBlocksArchitecture();
 
         $loadTime = microtime(true) - $startTime;
-        $this->assertLessThan(0.1, $loadTime, 'JSON loading should be fast');
+        expect($loadTime)->toBeLessThan(0.1, 'JSON loading should be fast');
 
         // Test page rendering performance
         $startTime = microtime(true);
 
         $response = get('/');
-        if (200 !== $response->getStatusCode()) {
-            $this->assertTrue(true);
-
-            return;
-        }
-
         $response->assertOk();
 
         $renderTime = microtime(true) - $startTime;
-        $this->assertLessThan(2.0, $renderTime, 'Page rendering should be reasonably fast');
+        expect($renderTime)->toBeLessThan(2.0, 'Page rendering should be reasonably fast');
     });
 });

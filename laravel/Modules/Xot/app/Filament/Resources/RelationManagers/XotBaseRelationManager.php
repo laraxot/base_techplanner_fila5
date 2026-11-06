@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Resources\RelationManagers;
 
+use Filament\Actions\Action;
 use Filament\Actions\AttachAction;
+use Filament\Actions\BulkAction;
 use Filament\Actions\CreateAction;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\DetachAction;
@@ -18,9 +20,11 @@ use Filament\Tables\Columns\Layout\Component as LayoutComponent;
 use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Modules\Xot\Filament\Resources\XotBaseResource;
+use Modules\Xot\Filament\Traits\HasRelationshipModelClass;
 use Modules\Xot\Filament\Traits\HasXotTable;
-use Override;
 use stdClass;
 use Webmozart\Assert\Assert;
 
@@ -29,7 +33,18 @@ use Webmozart\Assert\Assert;
  */
 abstract class XotBaseRelationManager extends FilamentRelationManager
 {
-    use HasXotTable;
+    use HasRelationshipModelClass;
+    use HasXotTable {
+        HasRelationshipModelClass::getModelClass insteadof HasXotTable;
+    }
+
+    /**
+     * @param  array<string, bool|float|int|string|null>  $params
+     */
+    public static function trans(string $key, bool $exceptionIfNotExist = false, array $params = []): string
+    {
+        return static::getResourceClass()::trans($key, $exceptionIfNotExist, $params);
+    }
 
     protected static string $relationship = '';
 
@@ -43,7 +58,23 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      */
     public function getResource(): string
     {
-        if (isset(static::$resource) && \is_string(static::$resource) && static::$resource !== '') {
+        return static::getResourceClass();
+    }
+
+    /**
+     * La classe Resource genitrice, derivata dal namespace del RelationManager e
+     * memoizzata in `static::$resource`.
+     *
+     * Statica e non `getResource()` (di istanza) perché serve anche a `trans()`,
+     * chiamato durante la build delle azioni tabella in un ciclo Livewire in cui
+     * `static::$resource` non è ancora inizializzata — la proprietà tipata senza
+     * default lanciava «must not be accessed before initialization».
+     *
+     * @return class-string<XotBaseResource>
+     */
+    protected static function getResourceClass(): string
+    {
+        if (isset(static::$resource) && static::$resource !== '') {
             return static::$resource;
         }
 
@@ -89,15 +120,23 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
         return $schema->components($components);
     }
 
+    /** @return array<int|string, Component> */
     public function getFormSchema(): array
     {
-        return $this->getResource()::getFormSchema();
+        $class = $this->getResource()::getFormClass();
+        $instance = app($class);
+        Assert::isInstanceOf($instance, XotBaseResourceForm::class);
+
+        /** @var XotBaseResourceForm $instance */
+        return $instance->getFormSchema();
     }
 
     /**
      * @return array<int|string, Column|LayoutComponent>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
-    #[Override]
+    #[\Override]
     protected function getTableColumns(): array
     {
         $index = Arr::get($this->getResource()::getPages(), 'index');
@@ -149,7 +188,7 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
 
             // $column è già verificato come instance di Column|LayoutComponent sopra
             $name = method_exists($column, 'getName') ? $column->getName() : (string) spl_object_hash($column);
-            $nameStr = \is_string($name) ? $name : (string) $name;
+            $nameStr = SafeStringCastAction::cast($name);
             $assoc[$nameStr] = $column;
         }
 
@@ -163,7 +202,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      * CRITICO: Deve essere PUBLIC perché Filament\Tables\Concerns\InteractsWithTable
      * richiede che questo metodo sia pubblico.
      *
-     * @return array<string, \Filament\Actions\Action>
+     * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableActions(): array
     {
@@ -197,7 +238,9 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      *
      * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
      *
-     * @return array<string, \Filament\Actions\BulkAction>
+     * @return array<string, BulkAction>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableBulkActions(): array
     {
@@ -219,32 +262,33 @@ abstract class XotBaseRelationManager extends FilamentRelationManager
      *
      * CRITICO: Deve essere PUBLIC per Filament InteractsWithTable.
      *
-     * @return array<string, \Filament\Actions\Action>
+     * @return array<string, Action>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
      */
     public function getTableHeaderActions(): array
     {
         $actions = [];
         $me = $this;
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($me, 'canAttach')) {
-            $actions['attach'] = AttachAction::make()
-                ->icon('heroicon-o-link')
-                ->iconButton()
-                ->tooltip(__('user::actions.attach.label'))
-                ->visible(static fn (?Model $_record): bool => $me->canAttach());
-        }
-        // @phpstan-ignore function.alreadyNarrowedType
-        if (method_exists($me, 'canCreate')) {
-            $actions['create'] = CreateAction::make()
-                ->icon('heroicon-o-plus')
-                ->iconButton()
-                ->tooltip(static::trans('actions.create.tooltip'))
-                ->visible(static fn (?Model $_record): bool => $me->canCreate());
-        }
+        $actions['attach'] = AttachAction::make()
+            ->icon('heroicon-o-link')
+            ->iconButton()
+            ->tooltip(__('user::actions.attach.label'))
+            ->visible(static fn (?Model $_record): bool => $me->canAttach());
+        $actions['create'] = CreateAction::make()
+            ->icon('heroicon-o-plus')
+            ->iconButton()
+            ->tooltip(static::trans('actions.create.tooltip'))
+            ->visible(static fn (?Model $_record): bool => $me->canCreate());
 
         return $actions;
     }
 
+    /**
+     * @return array<string|int, \Filament\Tables\Filters\BaseFilter>
+     *
+     * @not-deprecated Hook di progetto, non il metodo deprecato omonimo di Filament.
+     */
     public function getTableFilters(): array
     {
         return [];

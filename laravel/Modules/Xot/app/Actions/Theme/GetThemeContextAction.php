@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Theme;
 
 use Carbon\Carbon;
-use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
 // Added
@@ -81,7 +80,7 @@ class GetThemeContextAction
 
         $carbon = Carbon::create($year, $month, $day);
         if (! $carbon instanceof Carbon) {
-            throw new RuntimeException('Failed to create Easter date');
+            throw new \RuntimeException('Failed to create Easter date');
         }
 
         return $carbon;

@@ -8,6 +8,7 @@ use Filament\Resources\Pages\PageRegistration;
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Notify\Filament\Resources\MailTemplateResource as NotifyBaseMailTemplateResource;
 use Modules\Notify\Models\MailTemplate;
+use Modules\Progressioni\Providers\Filament\AdminPanelProvider;
 use Override;
 
 /**
@@ -18,7 +19,7 @@ use Override;
  *
  * ⚠️ IMPORTANTE: Richiede SpatieTranslatablePlugin registrato nel panel!
  *
- * @see \Modules\Progressioni\Providers\Filament\AdminPanelProvider
+ * @see AdminPanelProvider
  */
 class MailTemplateResource extends NotifyBaseMailTemplateResource
 {
@@ -45,7 +46,7 @@ class MailTemplateResource extends NotifyBaseMailTemplateResource
     #[Override]
     public static function getEloquentQuery(): Builder
     {
-        return parent::getEloquentQuery()
+        return MailTemplate::query()
             ->where(function (Builder $query): void {
                 // $query->where('slug', 'like', 'techplanner-%');
                 $query->where('slug', 'like', '%');

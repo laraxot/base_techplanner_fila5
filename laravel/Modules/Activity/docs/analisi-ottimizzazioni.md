@@ -1,3 +1,11 @@
+---
+title: "analisi e ottimizzazioni - modulo activity"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, activity]
+qmd: "analisi e ottimizzazioni - modulo activity activity"
+---
 # 📊 analisi e ottimizzazioni - modulo activity
 
 ## 🎯 panoramica analisi
@@ -14,7 +22,7 @@ il modulo **activity** è un sistema avanzato di audit trail e event sourcing ch
 
 ### ✅ documentazione
 - documentazione estremamente completa (100+ file)
-- esempi pratici dettagliati (bank, prediction_market, shop)
+- esempi pratici dettagliati (bank, <nome progetto>ion_market, shop)
 - copertura completa di event sourcing patterns
 - integrazione filament ben documentata
 
@@ -51,6 +59,7 @@ phpstan-fixes.md / phpstan_fixes.md
 ### ❌ file di test temporanei
 **problema**: presenza file test temporanei non rimossi
 ```
+test.txt, test02.txt, test03.txt, test04.txt, test2024-12-04.txt, test2222.txt, test444.txt
 test.txt, test02.txt, test03.txt, test04.txt, test[DATE].txt, test2222.txt, test444.txt
 ```
 
@@ -148,7 +157,7 @@ docs/
 ├── examples/                   # esempi pratici
 │   ├── bank-scenario.md        # scenario bancario
 │   ├── ecommerce-scenario.md   # scenario e-commerce
-│   └── prediction-market.md    # mercato predizioni
+│   └── <nome progetto>ion-market.md    # mercato predizioni
 ├── development/               # guide sviluppo
 │   ├── testing.md             # testing
 │   ├── phpstan-compliance.md  # conformità phpstan
@@ -245,6 +254,7 @@ php artisan test
 
 ---
 
+**=======
 **ultimo aggiornamento**: 20 agosto 2025
 **analista**: claude code
 **stato**: pronto per implementazione

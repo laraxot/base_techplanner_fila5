@@ -1,5 +1,19 @@
 # Riepilogo Risoluzione Conflitti Git - 2025-01-06
 
+## Tool canonici (2026-06)
+
+Implementazione e documentazione operativa — **non** in root monorepo; versionate nel repo [bashscripts_fila5](https://github.com/laraxot/bashscripts_fila5) (clone locale `bashscripts/`):
+
+| Asset | Path |
+|-------|------|
+| Resolver PHP/Blade | `bashscripts/tools/git/fix-conflicts.php` |
+| Orchestratore | `bashscripts/tools/git/resolve-conflict-markers.py` |
+| Repair post-sweep | `bashscripts/tools/git/repair-php-after-conflict-resolution.sh` |
+| Guida | [bashscripts/docs/fix-conflicts-guide.md](../bashscripts/docs/fix-conflicts-guide.md) |
+| Architettura | [bashscripts/docs/architecture-git-conflict-tools.md](../bashscripts/docs/architecture-git-conflict-tools.md) |
+
+Wiki: [git-merge-marker-sweep](wiki/how-to/git-merge-marker-sweep.md)
+
 ## Data
 2025-01-06
 
@@ -84,6 +98,6 @@ I seguenti file hanno conflitti Git ma non bloccano PHPStan per l'analisi di alt
 ## Collegamenti
 
 - [Git Conflicts Resolution](./git-conflicts-resolution-2025-01-06.md)
+*Ultimo aggiornamento: 2025-01-06*
+
 - [Module Improvement Workflow](./module-improvement-workflow.md)
-
-

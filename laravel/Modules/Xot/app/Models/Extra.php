@@ -40,9 +40,9 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static Builder<static>|Extra whereUpdatedBy($value)
  * @method static Builder<static>|Extra withExtraAttributes()
  *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $deleter
- * @property-read ProfileContract|null $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $deleter
+ * @property ProfileContract|null $updater
  *
  * @mixin \Eloquent
  */

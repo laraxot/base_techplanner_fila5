@@ -4,7 +4,7 @@
 ])
 
 @if(!empty($items))
-<nav class="breadcrumb" aria-label="Breadcrumb">
+<nav class="breadcrumb" aria-label="{{ __('pub_theme::header.navigation.breadcrumb.label') }}">
     <ol class="flex items-center space-x-2 text-sm">
         @foreach($items as $index => $item)
             @if($index > 0)

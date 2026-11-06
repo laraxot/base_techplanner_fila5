@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Datas;
 
-use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Support\Collection;
 use Spatie\LaravelData\Data;
 use Spatie\LaravelData\DataCollection;
@@ -37,10 +36,15 @@ class LangData extends Data
     /**
      * Crea una collezione di dati di lingua.
      *
-     * @return DataCollection<LangData>
+     * @param Collection<int, array{id: string, name: string, flag: string, url: string}|LangData>|array<int, array{id: string, name: string, flag: string, url: string}|LangData> $data
+     *
+     * @return DataCollection<int, LangData>
      */
-    public static function collection(EloquentCollection|Collection|array $data): DataCollection
+    public static function collection(Collection|array $data): DataCollection
     {
-        return self::collect($data, DataCollection::class);
+        /** @var DataCollection<int, LangData> $collection */
+        $collection = self::collect($data, DataCollection::class);
+
+        return $collection;
     }
 }

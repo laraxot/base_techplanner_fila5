@@ -15,5 +15,10 @@
     "Cms": true,
     "DbForge": true,
     "FormBuilder": true,
-    "Employee": true
+    "Employee": true,
+    "AI": true,
+    "Blog": true,
+    "Comment": true,
+    "Rating": true,
+    "Seo": true
 }

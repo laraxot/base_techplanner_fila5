@@ -1,3 +1,15 @@
+---
+title: "title with slug analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-10-23
+qmd: "title with slug analysis"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi del Pacchetto Filament Title With Slug
 
 ## Panoramica

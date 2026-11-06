@@ -1,3 +1,15 @@
+---
+title: "dry kiss"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dry kiss"
+issues: []
+discussions: []
+status: draft
+---
+
 # DRY & KISS Analysis - Modulo Job
 
 **Data:** 15 Ottobre 2025  
@@ -33,5 +45,5 @@ abstract class BaseModel extends XotBaseModel
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
-[DRY/KISS Global](../../docs/dry_kiss_analysis_[date].md)
+[DRY/KISS Global](../../../docs/dry_kiss_analysis_[date].md)
 
