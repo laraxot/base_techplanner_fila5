@@ -9,9 +9,12 @@ qmd: "listlogactivities ui/ux improvements - 2025-12-04 activity"
 # ListLogActivities UI/UX Improvements - 2025-12-04
 
 ## Data Intervento: 2025-12-04
+<<<<<<< HEAD
 # ListLogActivities UI/UX Improvements - [DATE]
 
 ## Data Intervento: [DATE]
+=======
+>>>>>>> 6ed19256f (.)
 
 ## Obiettivo
 
@@ -299,12 +302,23 @@ PASS: 2 files formattati correttamente
 
 - [Activity Module README](./README.md)
 - [Laraxot UI/UX Guidelines](../../Xot/docs/ui-ux-best-practices.md)
+<<<<<<< .merge_file_Z05How
 - [Activity Module README](./README.md)
+=======
+<<<<<<< HEAD
+- [Activity Module README](./readme.md)
+>>>>>>> .merge_file_cJxuiw
 - [Laraxot UI/UX Guidelines](../../xot/docs/ui-ux-best-practices.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Heroicon Reference](https://heroicons.com/)
 
 ---
 
 **Autore**: iFlow CLI
 **Versione**: 1.0
+<<<<<<< HEAD
 **Status**: ✅ Production Ready
+=======
+**Status**: ✅ Production Ready
+>>>>>>> 6ed19256f (.)

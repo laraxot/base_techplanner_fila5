@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
     "name": "laraxot/module_activity_fila5",
     "description": "Activity logging and event sourcing module for the Laraxot ecosystem: audit trail, user actions tracking, and CQRS event store.",
     "keywords": [
@@ -13,6 +14,11 @@
         "spatie-activitylog"
     ],
     "homepage": "https://github.com/laraxot/module_activity_fila5",
+=======
+    "name": "laraxot/module_activity_fila3",
+    "description": "",
+    "homepage": "https://github.com/laraxot/module_activity_fila3",
+>>>>>>> 6ed19256f (.)
     "license": "MIT",
     "authors": [
         {
@@ -38,6 +44,27 @@
     },
     "autoload-dev": {
         "psr-4": {
+<<<<<<< .merge_file_G7PDfB
+=======
+            "Modules\\Activity\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/",
+            "Workbench\\Database\\Seeders\\": "workbench/database/seeders/"
+<<<<<<< HEAD
+        }
+
+=======
+        },
+        "files": [
+            "tests/PestStubs.php"
+        ]
+>>>>>>> 6ed19256f (.)
+    },
+    "require": {
+        "spatie/laravel-activitylog": "*",
+        "spatie/laravel-event-sourcing": "*"
+<<<<<<< HEAD
+>>>>>>> .merge_file_b4mS8G
             "Modules\\Activity\\Tests\\": "tests/"
         }
     },
@@ -45,6 +72,8 @@
         "spatie/laravel-activitylog": "*",
         "spatie/laravel-event-sourcing": "*",
         "php": "^8.3"
+=======
+>>>>>>> 6ed19256f (.)
     },
     "require-dev": {},
     "repositories_comment": [
@@ -94,4 +123,13 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
+<<<<<<< .merge_file_G7PDfB
 }
+=======
+    
+<<<<<<< HEAD
+}
+=======
+>>>>>>> 6ed19256f (.)
+}
+>>>>>>> .merge_file_b4mS8G

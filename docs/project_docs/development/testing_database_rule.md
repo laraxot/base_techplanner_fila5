@@ -231,4 +231,8 @@ Questa regola deve essere applicata SUBITO a tutti i test esistenti prima di pro
 - [Performance Guidelines](../performance/)
 - [Laraxot Conventions](../laraxot_conventions.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
+=======
+*Ultimo aggiornamento: Gennaio 2025*
+>>>>>>> 6ed19256f (.)

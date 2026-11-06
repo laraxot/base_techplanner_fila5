@@ -45,6 +45,7 @@
     "laravel-docs": {
         "command": "npx",
         "args": ["-y", "@assistant-ui/mcp-docs-server"]
+<<<<<<< HEAD
     },
     "laravel-boost": {
       "command": "/var/www/_bases/base_quaeris_fila5_mono/bashscripts/mcp/laravel-boost-wrapper.sh",
@@ -62,3 +63,9 @@
     }
   }
 }
+=======
+    }
+  }
+}
+
+>>>>>>> 6ed19256f (.)

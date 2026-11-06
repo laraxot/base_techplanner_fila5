@@ -19,6 +19,7 @@ return [
             'updated_password' => 'Ο κωδικός χρήστη ανανεώθηκε επιτυχώς.',
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -32,4 +33,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

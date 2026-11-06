@@ -48,7 +48,10 @@ This script will:
 Before committing, ensure:
 - [ ] All scripts are in appropriate subdirectories
 - [ ] No merge conflicts in any file (check with `grep -r "<<<<<<< HEAD" bashscripts/`)
+<<<<<<< HEAD
 - [ ] No merge conflicts in any file 
+=======
+>>>>>>> 6ed19256f (.)
 - [ ] `.gitignore` is clean (no conflict markers)
 - [ ] Configuration files are not in `bashscripts/` root
 - [ ] Scripts have shebang (`#!/bin/bash`)
@@ -63,4 +66,8 @@ Complete documentation is available in `bashscripts/docs/`:
 - [Scripts Index](../bashscripts/docs/scripts-index.md) - Complete catalog of all scripts
 - [Best Practices](../bashscripts/docs/best-practices.md) - DRY+KISS+Clean Code guidelines
 - [Duplicates Consolidation Plan](../bashscripts/docs/duplicates-consolidation-plan.md) - Strategy for consolidating duplicates
+<<<<<<< HEAD
 - [Work Summary](../bashscripts/docs/work-summary.md) - Summary of cleanup work
+=======
+- [Work Summary](../bashscripts/docs/work-summary.md) - Summary of cleanup work
+>>>>>>> 6ed19256f (.)

@@ -9,31 +9,52 @@
     $socialPlatforms = [
         'facebook' => [
             'name' => 'Facebook',
+<<<<<<< HEAD
             'icon' => 'ui-brands.facebook',
+=======
+            'icon' => 'heroicon-o-facebook',
+>>>>>>> 6ed19256f (.)
             'color' => 'text-blue-600 hover:text-blue-700',
             'bg' => 'hover:bg-blue-50',
         ],
         'twitter' => [
+<<<<<<< HEAD
             'name' => 'X (Twitter)',
             'icon' => 'ui-brands.twitter',
+=======
+            'name' => 'X (Twitter)', 
+            'icon' => 'heroicon-o-chat-bubble-left-right',
+>>>>>>> 6ed19256f (.)
             'color' => 'text-gray-900 hover:text-gray-700',
             'bg' => 'hover:bg-gray-50',
         ],
         'instagram' => [
             'name' => 'Instagram',
+<<<<<<< HEAD
             'icon' => 'ui-brands.instagram',
+=======
+            'icon' => 'heroicon-o-camera',
+>>>>>>> 6ed19256f (.)
             'color' => 'text-pink-600 hover:text-pink-700',
             'bg' => 'hover:bg-pink-50',
         ],
         'linkedin' => [
             'name' => 'LinkedIn',
+<<<<<<< HEAD
             'icon' => 'ui-brands.linkedin',
+=======
+            'icon' => 'heroicon-o-briefcase',
+>>>>>>> 6ed19256f (.)
             'color' => 'text-blue-700 hover:text-blue-800',
             'bg' => 'hover:bg-blue-50',
         ],
         'youtube' => [
             'name' => 'YouTube',
+<<<<<<< HEAD
             'icon' => 'ui-brands.youtube',
+=======
+            'icon' => 'heroicon-o-play',
+>>>>>>> 6ed19256f (.)
             'color' => 'text-red-600 hover:text-red-700',
             'bg' => 'hover:bg-red-50',
         ],
@@ -73,11 +94,19 @@
                 class="{{ $sizeClasses[$size] }} {{ $platformConfig['bg'] }} {{ $platformConfig['color'] }} rounded-full flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-current focus:ring-offset-2"
                 :aria-label="__('pub_theme::social.follow_on', ['platform' => $platformConfig['name']])"
             >
+<<<<<<< HEAD
                 <x-icon
                     :name="$platformConfig['icon']"
                     class="w-5 h-5"
                 />
 
+=======
+                <x-filament::icon 
+                    :name="$platformConfig['icon']" 
+                    class="w-5 h-5"
+                />
+                
+>>>>>>> 6ed19256f (.)
                 <span class="sr-only">
                     {{ __('pub_theme::social.follow_on', ['platform' => $platformConfig['name']]) }}
                 </span>

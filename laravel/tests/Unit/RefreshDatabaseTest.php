@@ -2,8 +2,13 @@
 
 namespace Tests\Unit;
 
+<<<<<<< HEAD
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use PHPUnit\Framework\TestCase;
+=======
+use PHPUnit\Framework\TestCase;
+use Illuminate\Foundation\Testing\RefreshDatabase;
+>>>>>>> 6ed19256f (.)
 
 class RefreshDatabaseTest extends TestCase
 {
@@ -13,4 +18,8 @@ class RefreshDatabaseTest extends TestCase
     {
         $this->assertTrue(true);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 6ed19256f (.)

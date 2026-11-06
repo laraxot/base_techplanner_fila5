@@ -31,8 +31,31 @@ test('action is configured correctly', function (): void {
 test('action generates correct URL for activity log page', function (): void {
     $action = ListLogActivitiesAction::make();
 
+<<<<<<< .merge_file_efIpT7
     $livewire = ListLogActivitiesActionTestPage::usingResource(ListLogActivitiesActionTestResource::class);
     $record = new ListLogActivitiesActionTestRecord;
+=======
+<<<<<<< HEAD
+    $resource = new class
+    {
+=======
+    $resource = new class() {
+>>>>>>> 6ed19256f (.)
+        public static function getUrl(string $name, array $parameters = []): string
+        {
+            $record = $parameters['record'] ?? null;
+            $key = $record instanceof Model ? (string) $record->getKey() : '';
+
+            return '/log-activity/'.$name.'/'.$key;
+        }
+    };
+
+    $livewire = Mockery::mock(ListRecords::class);
+    $livewire->shouldReceive('getResource')->andReturn($resource::class);
+
+    $record = Mockery::mock(Model::class);
+    $record->shouldReceive('getKey')->andReturn('test-record-key');
+>>>>>>> .merge_file_Dzfy4Q
 
     $action->livewire($livewire);
     $action->record($record);

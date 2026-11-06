@@ -7,7 +7,10 @@
 
 ### 1. ✅ Conflitti Git nel .gitignore
 **Problema**: Centinaia di marker di conflitto Git (`<<<<<<< HEAD`, `=======`, `>>>>>>>`) nel file `.gitignore`.
+<<<<<<< HEAD
 **Problema**: Centinaia di marker di conflitto Git  nel file `.gitignore`.
+=======
+>>>>>>> 6ed19256f (.)
 
 **Soluzione**: Creato un nuovo `.gitignore` pulito seguendo le best practice standard, rimuovendo tutti i conflitti.
 
@@ -16,9 +19,17 @@
 ### 2. ✅ Conflitto in mysql-db-connector.js
 **Problema**: Conflitto di merge non risolto in `bashscripts/mcp/mysql-db-connector.js`:
 ```javascript
+<<<<<<< HEAD
 console.error('MySQL MCP Server started for base_techplanner_fila4_mono');
 console.error('MySQL MCP Server started for base_ptvx_fila4_mono');
 console.error('MySQL MCP Server started ');
+=======
+<<<<<<< HEAD
+console.error('MySQL MCP Server started for base_techplanner_fila4_mono');
+=======
+console.error('MySQL MCP Server started for base_ptvx_fila4_mono');
+>>>>>>> laraxot/develop
+>>>>>>> 6ed19256f (.)
 ```
 
 **Soluzione**: Risolto mantenendo la versione corretta per `base_techplanner_fila4_mono`.
@@ -91,7 +102,10 @@ bashscripts/
 ```bash
 grep -r "<<<<<<< HEAD" bashscripts/
 ```
+<<<<<<< HEAD
 ### Verificare conflitti rimanenti
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Organizzare script:
 ```bash
@@ -111,4 +125,8 @@ ls -1 bashscripts/*.sh 2>/dev/null | wc -l    # Dovrebbe essere 0
 
 ---
 
+<<<<<<< HEAD
 *Cleanup completato: 2025-12-18*
+=======
+*Cleanup completato: 2025-12-18*
+>>>>>>> 6ed19256f (.)

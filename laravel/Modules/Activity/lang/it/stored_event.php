@@ -19,9 +19,12 @@ return [
             'label' => 'ID',
             'help' => 'Identificativo unico dell\'evento archiviato',
             'validation' => 'required|integer|min:1',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'event_class' => [
             'label' => 'Classe Evento',
@@ -29,9 +32,12 @@ return [
             'help' => 'Nome completo della classe che rappresenta l\'evento',
             'validation' => 'required|string|max:255',
             'searchable' => true,
+<<<<<<< HEAD
             'helper_text' => 'event_class',
             'description' => 'event_class',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'event_properties' => [
             'label' => 'Proprietà Evento',
@@ -40,9 +46,12 @@ return [
             'validation' => 'required|json',
             'type' => 'json',
             'format' => 'json',
+<<<<<<< HEAD
             'helper_text' => 'event_properties',
             'description' => 'event_properties',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aggregate_uuid' => [
             'label' => 'UUID Aggregato',
@@ -50,9 +59,12 @@ return [
             'help' => 'Identificativo unico dell\'aggregato di appartenenza',
             'validation' => 'required|uuid',
             'searchable' => true,
+<<<<<<< HEAD
             'helper_text' => 'aggregate_uuid',
             'description' => 'aggregate_uuid',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aggregate_version' => [
             'label' => 'Versione Aggregato',
@@ -60,18 +72,24 @@ return [
             'help' => 'Numero di versione dell\'aggregato',
             'validation' => 'required|integer|min:1',
             'sortable' => true,
+<<<<<<< HEAD
             'helper_text' => 'aggregate_version',
             'description' => 'aggregate_version',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'event_version' => [
             'label' => 'Versione Evento',
             'placeholder' => 'Versione dell\'evento',
             'help' => 'Numero di versione del formato evento',
             'validation' => 'nullable|string|max:20',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'meta_data' => [
             'label' => 'Metadata',
@@ -80,9 +98,12 @@ return [
             'validation' => 'nullable|json',
             'type' => 'json',
             'format' => 'json',
+<<<<<<< HEAD
             'helper_text' => 'meta_data',
             'description' => 'meta_data',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
@@ -91,9 +112,12 @@ return [
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
             'sortable' => true,
+<<<<<<< HEAD
             'helper_text' => 'created_at',
             'description' => 'created_at',
             'tooltip' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_by' => [
             'label' => 'Creato Da',
@@ -101,18 +125,24 @@ return [
             'help' => 'Utente che ha generato l\'evento',
             'validation' => 'nullable|integer|exists:users,id',
             'searchable' => true,
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_by' => [
             'label' => 'Aggiornato Da',
             'placeholder' => 'Utente aggiornatore',
             'help' => 'Utente che ha aggiornato l\'evento',
             'validation' => 'nullable|integer|exists:users,id',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'stream_name' => [
             'label' => 'Nome Stream',
@@ -120,9 +150,12 @@ return [
             'help' => 'Identificativo del flusso a cui appartiene l\'evento',
             'validation' => 'nullable|string|max:255',
             'searchable' => true,
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'stream_position' => [
             'label' => 'Posizione Stream',
@@ -130,17 +163,23 @@ return [
             'help' => 'Posizione sequenziale dell\'evento nel flusso',
             'validation' => 'nullable|integer|min:0',
             'sortable' => true,
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'toggleColumns' => [
             'label' => 'Mostra/Nascondi Colonne',
             'placeholder' => '',
             'help' => 'Configura la visibilità delle colonne nella tabella',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -316,7 +355,11 @@ return [
         ],
         'filename_pattern' => 'eventi_archiviati_{date}_{time}',
         'max_records' => 50000,
+<<<<<<< HEAD
         'include_properties' => false,
+=======
+        'include_properties' => false, // Per performance, escludi di default i JSON payload
+>>>>>>> 6ed19256f (.)
     ],
     'permissions' => [
         'view' => 'stored_events.view',
@@ -331,6 +374,7 @@ return [
     ],
     'pagination' => [
         'per_page' => 50,
+<<<<<<< HEAD
         'options' => [
             0 => 25,
             1 => 50,
@@ -351,6 +395,19 @@ return [
         'replay_batch_size' => 100,
         'snapshot_frequency' => 1000,
         'retention_days' => 2555,
+=======
+        'options' => [25, 50, 100, 200],
+        'simple' => false, // Usa paginazione completa per event sourcing
+    ],
+    'cache' => [
+        'ttl' => 600, // 10 minuti - cache più lunga per eventi immutabili
+        'tags' => ['stored_events', 'event_sourcing', 'monitoring'],
+    ],
+    'event_sourcing' => [
+        'replay_batch_size' => 100,
+        'snapshot_frequency' => 1000, // Crea snapshot ogni 1000 eventi
+        'retention_days' => 2555, // ~7 anni di ritenzione per compliance
+>>>>>>> 6ed19256f (.)
         'stream_patterns' => [
             'user' => 'user-{uuid}',
             'order' => 'order-{uuid}',
@@ -363,6 +420,9 @@ return [
         'performance_tracking' => true,
         'audit_trail' => true,
     ],
+<<<<<<< HEAD
     'label' => 'Stored Event',
     'plural_label' => 'Stored Event (Plurale)',
+=======
+>>>>>>> 6ed19256f (.)
 ];

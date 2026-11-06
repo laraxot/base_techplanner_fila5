@@ -40,9 +40,13 @@ return [
              */
             'allowed_updates' => null,
             'commands' => [
+<<<<<<< HEAD
                 // Acme\Project\Commands\MyTelegramBot\BotCommand::class
                 //Acme\Project\Commands\MyTelegramBot\BotCommand::class
                 // Acme\Project\Commands\MyTelegramBot\BotCommand::class
+=======
+                //Acme\Project\Commands\MyTelegramBot\BotCommand::class
+>>>>>>> 6ed19256f (.)
             ],
         ],
 

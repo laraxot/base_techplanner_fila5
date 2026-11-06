@@ -5,6 +5,10 @@ declare(strict_types=1);
 return [
     'login' => [
         'title' => 'Service Access',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
         'description' => 'Enter your credentials to access :service',
         'no_account' => 'Don\'t have an account?',
         'create_account' => 'Register',
@@ -19,6 +23,10 @@ return [
         'remember_me' => 'Remember me',
         'forgot_password' => 'Forgot your password?',
         'submit' => 'Login',
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
         'help' => 'Need help?',
     ],
     'register' => [

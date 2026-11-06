@@ -30,7 +30,10 @@ class RecordNotificationData extends Data
                 return $email;
             case 'sms':
                 Assert::string($phone = $this->record->phone, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6ed19256f (.)
                 return app(NormalizePhoneNumberAction::class)->execute($phone);
         }
         throw new Exception('Channel ['.$this->channel.'] not supported');

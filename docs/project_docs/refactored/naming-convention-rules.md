@@ -81,4 +81,8 @@ Questa regola si applica a:
 ---
 
 *Ultimo aggiornamento: 2025-07-30*
+<<<<<<< HEAD
 *Stato: Implementato e verificato in tutto il progetto*
+=======
+*Stato: Implementato e verificato in tutto il progetto*
+>>>>>>> 6ed19256f (.)

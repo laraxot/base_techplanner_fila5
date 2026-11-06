@@ -10,6 +10,7 @@ return [
     ],
     'throttle' => 'Você realizou muitas tentativas de login. Favor tentar novamente em :seconds segundos.',
     'unknown' => 'Ocorreu um erro desconhecido.',
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -23,4 +24,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

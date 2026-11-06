@@ -4,15 +4,28 @@ declare(strict_types=1);
 
 namespace Modules\Activity\Tests\Unit;
 
+<<<<<<< HEAD
+=======
+use function Safe\json_decode;
+use function Safe\json_encode;
+
+>>>>>>> 6ed19256f (.)
 use Carbon\Carbon;
 use PHPUnit\Framework\Assert;
 use Tests\TestCase;
 use RuntimeException;
 
+<<<<<<< HEAD
 use function Safe\json_decode;
 use function Safe\json_encode;
 
+<<<<<<< .merge_file_550udQ
 uses(\Modules\Activity\Tests\TestCase::class);
+=======
+=======
+>>>>>>> 6ed19256f (.)
+uses(TestCase::class);
+>>>>>>> .merge_file_GYWFSh
 
 describe('Event Sourcing Business Logic', function () {
     beforeEach(function () {

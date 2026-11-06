@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,6 +60,29 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'name' => [
+            'label' => '名称',
+        ],
+        'client_id' => [
+            'label' => '客户端ID',
+        ],
+        'client_secret' => [
+            'label' => '客户端密钥',
+        ],
+        'redirect' => [
+            'label' => '重定向',
+        ],
+        'personal_access_client' => [
+            'label' => '个人访问客户端',
+        ],
+        'password_client' => [
+            'label' => '密码客户端',
+        ],
+        'revoked' => [
+            'label' => '已撤销',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

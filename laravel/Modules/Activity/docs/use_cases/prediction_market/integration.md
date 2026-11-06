@@ -171,7 +171,11 @@ use Illuminate\Console\Command;
 class CreateMarket extends Command
 {
     protected $signature = 'market:create';
+<<<<<<< HEAD
     protected $description = 'Create a new <nome progetto>ion market';
+=======
+    protected $description = 'Create a new prediction market';
+>>>>>>> 6ed19256f (.)
 
     public function handle()
     {
@@ -407,4 +411,12 @@ public function rules()
 
 ## Conclusione
 
+<<<<<<< .merge_file_dbJpF3
 Questa documentazione fornisce una solida base per implementare un <nome progetto>ion market utilizzando Laravel e l'event sourcing. Con questa architettura, il sistema è scalabile, mantenibile e in grado di gestire un elevato volume di transazioni in modo affidabile.
+=======
+<<<<<<< HEAD
+Questa documentazione fornisce una solida base per implementare un <nome progetto>ion market utilizzando Laravel e l'event sourcing. Con questa architettura, il sistema è scalabile, mantenibile e in grado di gestire un elevato volume di transazioni in modo affidabile.
+=======
+Questa documentazione fornisce una solida base per implementare un prediction market utilizzando Laravel e l'event sourcing. Con questa architettura, il sistema è scalabile, mantenibile e in grado di gestire un elevato volume di transazioni in modo affidabile.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_6zpXo8

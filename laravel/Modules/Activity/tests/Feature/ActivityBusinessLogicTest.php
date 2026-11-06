@@ -2,8 +2,12 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_7l91n9
 namespace Modules\Activity\Tests\Feature;
 
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_49Ni3v
 use Illuminate\Support\Str;
 use Modules\Activity\Models\Activity;
 use Modules\Activity\Tests\TestCase;
@@ -12,7 +16,19 @@ use PHPUnit\Framework\Assert;
 use function Safe\json_decode;
 use function Safe\json_encode;
 
+<<<<<<< .merge_file_7l91n9
 uses(TestCase::class);
+=======
+=======
+use function Safe\json_decode;
+use function Safe\json_encode;
+
+use Illuminate\Support\Str;
+use Modules\Activity\Models\Activity;
+
+>>>>>>> 6ed19256f (.)
+uses(\Modules\Activity\Tests\TestCase::class);
+>>>>>>> .merge_file_49Ni3v
 
 describe('Activity Business Logic', function () {
     it('can create activity with basic information', function () {

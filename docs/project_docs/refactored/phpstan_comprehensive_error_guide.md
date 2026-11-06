@@ -193,4 +193,8 @@ MODULE=$1
 - [Geo Return Types](../laravel/Modules/Geo/docs/phpstan_return_type_errors.md)
 - [Xot Safe Casting](../laravel/Modules/Xot/docs/safe-casting-actions.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-07-31*
+=======
+*Ultimo aggiornamento: 2025-07-31*
+>>>>>>> 6ed19256f (.)

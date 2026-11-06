@@ -65,6 +65,7 @@ return [
             'name' => [
                 'label' => 'client.name',
             ],
+<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -114,4 +115,26 @@ return [
     ],
     'label' => 'Oauth Token',
     'plural_label' => 'Oauth Token (Plurale)',
+=======
+        ],
+        'name' => [
+            'label' => 'name',
+        ],
+        'scopes' => [
+            'label' => 'scopes',
+        ],
+        'revoked' => [
+            'label' => 'revoked',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'expires_at' => [
+            'label' => 'expires_at',
+        ],
+    ],
+    'navigation' => [],
+    'label' => '',
+    'plural_label' => '',
+>>>>>>> 6ed19256f (.)
 ];

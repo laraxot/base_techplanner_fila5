@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: 05-analysis-siti-esistenti
@@ -12,7 +13,12 @@ superseded_by: analysis-siti-esistenti.md
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/05-analisi-siti-esistenti.md
+<<<<<<< .merge_file_1Y86Z0
 # Analisi dei Principali <nome progetto>ion Market (2024-2025)
+=======
+=======
+# Analisi dei Principali Prediction Market (2024-2025)
+>>>>>>> .merge_file_gouzHp
 
 ## Polymarket
 - Blockchain: Ethereum/Polygon
@@ -26,7 +32,11 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/05-ana
 - User Experience: interfaccia intuitiva, storico prezzi, API pubblica
 
 ## Manifold Markets
+<<<<<<< .merge_file_1Y86Z0
 - <nome progetto>ion market social, gamificato
+=======
+- Prediction market social, gamificato
+>>>>>>> .merge_file_gouzHp
 - Mercati: ampia varietà, anche "fun" e cultura pop
 - Tecnologie: web app, token interni, reputazione utenti
 
@@ -41,6 +51,10 @@ See canonical documentation: ../../../../../Themes/docs/shared-components/05-ana
 - Commissioni: 1-2% sulle vincite
 - Trasparenza: tutte le transazioni sono pubbliche su blockchain
 - Inclusività: accesso globale, pochi limiti geografici
+<<<<<<< .merge_file_1Y86Z0
 
 
 
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_gouzHp

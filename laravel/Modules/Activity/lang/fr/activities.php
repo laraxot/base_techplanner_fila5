@@ -1,17 +1,31 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Historique',
     'title' => 'Historique :record',
     'default_datetime_format' => 'd/m/Y, H:i:s',
+=======
+return [
+    'breadcrumb' => 'Historique',
+
+    'title' => 'Historique :record',
+
+    'default_datetime_format' => 'd/m/Y, H:i:s',
+
+>>>>>>> 6ed19256f (.)
     'table' => [
         'field' => 'Champ',
         'old' => 'Ancien',
         'new' => 'Nouveau',
         'restore' => 'Restaurer',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
     'events' => [
         'updated' => 'Mis à jour',
         'created' => 'Créé',
@@ -20,6 +34,7 @@ return [
         'restore_successful' => 'Restauré avec succès',
         'restore_failed' => 'Échec de la restauration',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -33,4 +48,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

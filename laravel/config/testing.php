@@ -56,9 +56,13 @@ return [
     | Test Performance Optimizations
     |--------------------------------------------------------------------------
     */
+<<<<<<< HEAD
 
     
 
+=======
+    
+>>>>>>> 6ed19256f (.)
     'performance' => [
         'disable_telescope' => true,
         'disable_debugbar' => true,
@@ -72,9 +76,13 @@ return [
     | Test Data Management
     |--------------------------------------------------------------------------
     */
+<<<<<<< HEAD
 
     
 
+=======
+    
+>>>>>>> 6ed19256f (.)
     'data' => [
         'auto_migrate' => true,
         'auto_seed' => false,

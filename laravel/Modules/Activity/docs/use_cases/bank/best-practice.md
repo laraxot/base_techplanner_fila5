@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 module: theme
 topic: best-practice
@@ -11,3 +12,9 @@ qmd: "best practice activity"
 ---
 
 See canonical documentation: ../../../../../Themes/docs/shared-components/.gitkeep
+<<<<<<< .merge_file_HdP6iC
+=======
+=======
+
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_rTZ2QZ

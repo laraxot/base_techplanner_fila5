@@ -2,12 +2,20 @@
 
 ## Context
 
+<<<<<<< HEAD
 This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `<nome progetto>` project.
+=======
+This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `saluteora` project.
+>>>>>>> 6ed19256f (.)
 # Laravel Localization Metadata for Cursor
 
 ## Context
 
+<<<<<<< HEAD
 This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `<nome progetto>` project.
+=======
+This document provides metadata for Cursor about the integration of `mcamara/laravel-localization` into the `saluteora` project.
+>>>>>>> 6ed19256f (.)
 
 ## Key Points
 
@@ -35,4 +43,8 @@ This document provides metadata for Cursor about the integration of `mcamara/lar
   - [translation_keys_best_practices.md](../translation_keys_best_practices.md)
   - [translation_keys_rules.md](../translation_keys_rules.md)
   - [filament-translations.md](../filament-translations.md)
+<<<<<<< HEAD
   - [docs <nome progetto>](../../../<nome progetto>/docs/translations.md)
+=======
+  - [docs SaluteOra](../../../SaluteOra/docs/translations.md)
+>>>>>>> 6ed19256f (.)

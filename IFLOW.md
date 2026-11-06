@@ -31,11 +31,18 @@ AI 助手**必须始终**确定操作的顺序和优先级。这是确保效率�
 - 支持多租户数据隔离架构
 - 可通过 Tenant 模块实现租户特定配置和功能
 
+<<<<<<< HEAD
 ### Filament v5 集成
 - 现代化管理界面，使用 Filament v5
 - 自定义 XotBase 和 LangBase 抽象类扩展模式
 - 增强的资源模式和 UI 组件
 - 内置翻译系统支持多语言功能
+=======
+### Filament v4 集成
+- 现代化管理界面，使用 Filament v4
+- 自定义 XotBase 和 LangBase 抽象类扩展模式
+- 增强的资源模式和 UI 组件
+>>>>>>> 6ed19256f (.)
 
 ### 基础层（Xot 模块）
 - 为所有其他模块提供核心功能和基础类
@@ -328,6 +335,7 @@ cd laravel && ./vendor/bin/phpstan analyse --memory-limit=-1
 
 ## 许可证
 
+<<<<<<< HEAD
 本项目是专有软件。保留所有权利。
 
 ## 🚨 NEW MEMORIES - 2026-02-08
@@ -425,3 +433,6 @@ php artisan view:clear
 
 本项目是专有软件。保留所有权利。
 **LESSON**: SerializableClosure errors sono spesso causati da cache corrotte.
+=======
+本项目是专有软件。保留所有权利。
+>>>>>>> 6ed19256f (.)

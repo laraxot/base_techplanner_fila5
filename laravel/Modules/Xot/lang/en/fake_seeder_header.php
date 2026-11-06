@@ -6,6 +6,7 @@ return [
     'fields' => [
         'qty' => [
             'label' => 'qty',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -22,4 +23,8 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
+=======
+        ],
+    ],
+>>>>>>> 6ed19256f (.)
 ];

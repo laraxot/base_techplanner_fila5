@@ -4,6 +4,10 @@ declare(strict_types=1);
 
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Geo\Enums\AddressItemEnum;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
 return new class() extends XotBaseMigration
@@ -20,7 +24,13 @@ return new class() extends XotBaseMigration
             // Standard address columns via AddressItemEnum::columns()
             // DRY + KISS pattern inspired by laravel-nestedset and workers_table migration
             // null = CREATE context (no hasColumn checks), true = include legacy fields
+<<<<<<< HEAD
             AddressItemEnum::columnsWithLegacy($table, null);
+=======
+            AddressItemEnum::columns($table, null, true);
+
+
+>>>>>>> 6ed19256f (.)
 
             $this->addCommonFields($table);
         });
@@ -55,7 +65,15 @@ return new class() extends XotBaseMigration
             // Address columns: ensure all standard AddressItemEnum fields exist
             // Following Laraxot pattern from workers_table migration with hasColumn() checks
             // $this = UPDATE context (uses hasColumn), true = include legacy fields
+<<<<<<< HEAD
             AddressItemEnum::columnsWithLegacy($table, $this);
+=======
+            AddressItemEnum::columns($table, $this, true);
+
+
+
+
+>>>>>>> 6ed19256f (.)
 
             $this->updateTimestamps($table, true);
         });

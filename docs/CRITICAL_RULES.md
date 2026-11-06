@@ -348,4 +348,8 @@ jobs:
 2. **PHPMD**: `./vendor/bin/phpmd path/to/dir text phpmd.ruleset.xml`
 3. **PHPInsights**: `./vendor/bin/phpinsights analyse path/to/dir`
 
+<<<<<<< HEAD
 **NEVER skip this step.**
+=======
+**NEVER skip this step.**
+>>>>>>> 6ed19256f (.)

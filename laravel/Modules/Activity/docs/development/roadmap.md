@@ -70,7 +70,10 @@ qmd: "roadmap modulo activity activity"
 ## Collegamenti
 
 - [Torna a README](./README.md)
+<<<<<<< HEAD
 - [Torna a README](./readme.md)
+=======
+>>>>>>> 6ed19256f (.)
 - [Vai a Struttura](./structure.md)
 - [Vai a Bottlenecks](../bottlenecks.md)
 
@@ -197,7 +200,12 @@ qmd: "roadmap modulo activity activity"
 5. [ ] Documentazione base
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
+<<<<<<< .merge_file_EI6Gua
 * [roadmap.md](../roadmap.md)
+=======
+* [roadmap.md](docs/roadmap.md)
+<<<<<<< HEAD
+>>>>>>> .merge_file_x7lvbf
 * [roadmap.md](laravel/modules/gdpr/docs/roadmap.md)
 * [roadmap.md](laravel/modules/notify/docs/roadmap.md)
 * [roadmap.md](laravel/modules/xot/docs/roadmap.md)
@@ -212,6 +220,8 @@ qmd: "roadmap modulo activity activity"
 * [roadmap.md](laravel/modules/patient/docs/roadmap.md)
 * [roadmap.md](laravel/modules/cms/docs/roadmap.md)
 * [roadmap.md](laravel/themes/one/docs/roadmap.md)
+=======
+>>>>>>> 6ed19256f (.)
 * [roadmap.md](laravel/Modules/Gdpr/docs/roadmap.md)
 * [roadmap.md](laravel/Modules/Notify/docs/roadmap.md)
 * [roadmap.md](laravel/Modules/Xot/docs/roadmap.md)
@@ -225,4 +235,8 @@ qmd: "roadmap modulo activity activity"
 * [roadmap.md](laravel/Modules/Activity/docs/roadmap.md)
 * [roadmap.md](laravel/Modules/Patient/docs/roadmap.md)
 * [roadmap.md](laravel/Modules/Cms/docs/roadmap.md)
+<<<<<<< HEAD
 * [roadmap.md](laravel/Themes/One/docs/roadmap.md)
+=======
+* [roadmap.md](laravel/Themes/One/docs/roadmap.md)
+>>>>>>> 6ed19256f (.)

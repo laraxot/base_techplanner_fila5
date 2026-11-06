@@ -170,4 +170,8 @@ class MyModel extends BaseModel
 
 **QUESTA È UNA REGOLA ASSOLUTA E INVIOLABILE**
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: agosto 2025*
+=======
+*Ultimo aggiornamento: agosto 2025*
+>>>>>>> 6ed19256f (.)

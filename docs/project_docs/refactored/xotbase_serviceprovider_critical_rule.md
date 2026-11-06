@@ -272,4 +272,8 @@ public function getFormSchema(): array
 - [Architecture](./architecture.md)
 - [Laraxot Conventions](./laraxot.md)
 
+<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025 - Post doppio errore critico*
+=======
+*Ultimo aggiornamento: Gennaio 2025 - Post doppio errore critico*
+>>>>>>> 6ed19256f (.)

@@ -21,7 +21,11 @@
 					    class="size-5"
 				    />
                     <span class="hidden sm:block">{{ $locales[$lang] }}</span>
+<<<<<<< HEAD
                     <x-filament::icon icon="heroicon-o-chevron-down" class="hidden size-4 sm:block"/>
+=======
+                    <x-heroicon-o-chevron-down class="hidden size-4 sm:block"/>
+>>>>>>> 6ed19256f (.)
                 </div>
             </button>
         </x-slot>

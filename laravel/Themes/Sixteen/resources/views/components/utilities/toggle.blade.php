@@ -149,6 +149,10 @@ Usage Examples:
 1. Basic toggle:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     id="toggle1"
     name="notifications"
@@ -157,6 +161,10 @@ Usage Examples:
 2. Checked toggle:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     id="toggle2"
     name="auto_save"
@@ -166,6 +174,10 @@ Usage Examples:
 3. Disabled toggle:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     id="toggle3"
     name="premium_feature"
@@ -175,6 +187,10 @@ Usage Examples:
 4. Inline toggles:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     id="toggle4"
     name="setting1"
@@ -182,6 +198,10 @@ Usage Examples:
     :inline="true" />
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     id="toggle5"
     name="setting2"
@@ -192,6 +212,10 @@ Usage Examples:
 5. Grouped toggles with fieldset:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     legend="Gruppo di toggle"
     :inline="true"
@@ -216,6 +240,10 @@ Usage Examples:
 6. Simple grouped toggles:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     :toggles="[
         ['id' => 'email_notifications', 'label' => 'Notifiche email', 'name' => 'notifications[email]'],
@@ -225,6 +253,10 @@ Usage Examples:
 7. Toggle with custom value:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     name="consent"
     label="Accetto i termini e condizioni"
@@ -234,6 +266,10 @@ Usage Examples:
 8. Toggle with slot content:
 <x-pub_theme::toggle 
 <x-pub_theme::toggle 
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 <x-pub_theme::toggle 
     name="custom_toggle"
     label="Toggle personalizzato">
@@ -242,6 +278,10 @@ Usage Examples:
     </small>
 </x-pub_theme::toggle>
 </x-pub_theme::toggle>
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 6ed19256f (.)
 </x-pub_theme::toggle>
 
 Bootstrap Italia Classes Reference:

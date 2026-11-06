@@ -9,41 +9,59 @@ return [
             'label' => 'ID',
             'placeholder' => 'Snapshot ID',
             'helper_text' => 'Unique identifier of the snapshot',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aggregate_uuid' => [
             'label' => 'Aggregate UUID',
             'placeholder' => 'Aggregate UUID',
             'helper_text' => 'Unique identifier of the aggregate',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'aggregate_version' => [
             'label' => 'Version',
             'placeholder' => 'Aggregate version',
             'helper_text' => 'Version number of the aggregate',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'State',
             'placeholder' => 'Snapshot state',
             'helper_text' => 'Current state of the snapshot',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'helper_text' => 'Creation date of the snapshot',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Last Modified',
             'helper_text' => 'Last modification date',
+<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
+=======
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -89,6 +107,7 @@ return [
             ],
         ],
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -98,4 +117,6 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
+=======
+>>>>>>> 6ed19256f (.)
 ];

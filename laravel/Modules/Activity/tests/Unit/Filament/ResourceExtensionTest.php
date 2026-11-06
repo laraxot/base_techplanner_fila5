@@ -1,6 +1,15 @@
 <?php
 
 declare(strict_types=1);
+<<<<<<< .merge_file_TDF1NW
+=======
+
+<<<<<<< HEAD
+uses(\Modules\Activity\Tests\TestCase::class);
+
+=======
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_PEfOr5
 use Modules\Activity\Filament\Resources\ActivityResource;
 use Modules\Activity\Filament\Resources\ActivityResource\Schemas\ActivityForm;
 use Modules\Activity\Filament\Resources\SnapshotResource;
@@ -24,7 +33,15 @@ test('activity resources extend xot base resource', function () {
 });
 
 test('activity resource does not implement unnecessary methods', function () {
+<<<<<<< .merge_file_TDF1NW
     $reflection = new ReflectionClass(ActivityResource::class);
+=======
+<<<<<<< HEAD
+    $reflection = new \ReflectionClass(ActivityResource::class);
+=======
+    $reflection = new ReflectionClass(ActivityResource::class);
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_PEfOr5
 
     // Different installs / Filament versions may generate these methods.
     // We keep this as a smoke test instead of enforcing strict absence.
@@ -36,7 +53,15 @@ test('activity resource does not implement unnecessary methods', function () {
 });
 
 test('activity resource implements required getFormSchema method', function () {
+<<<<<<< .merge_file_TDF1NW
     $reflection = new ReflectionClass(ActivityResource::class);
+=======
+<<<<<<< HEAD
+    $reflection = new \ReflectionClass(ActivityResource::class);
+=======
+    $reflection = new ReflectionClass(ActivityResource::class);
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_PEfOr5
 
     Assert::assertTrue($reflection->hasMethod('getFormSchema'));
 
@@ -50,7 +75,12 @@ test('activity resource implements required getFormSchema method', function () {
 });
 
 test('snapshot resource should not implement unnecessary methods', function () {
+<<<<<<< .merge_file_TDF1NW
     $reflection = new ReflectionClass(SnapshotResource::class);
+=======
+<<<<<<< HEAD
+    $reflection = new \ReflectionClass(SnapshotResource::class);
+>>>>>>> .merge_file_PEfOr5
 
     $hasPages = $reflection->hasMethod('getPages');
     $hasRelations = $reflection->hasMethod('getRelations');
@@ -85,6 +115,70 @@ test('stored event resource should not implement unnecessary methods', function 
         $relationsValue = $relationsMethod->invoke(null);
         Assert::assertIsArray($relationsValue);
     }
+<<<<<<< .merge_file_TDF1NW
+=======
+
+    expect(true)->toBeTrue();
+=======
+    $reflection = new ReflectionClass(SnapshotResource::class);
+
+    // These methods should NOT be implemented (they return standard values)
+    $hasUnnecessaryPages = $reflection->hasMethod('getPages');
+    $hasUnnecessaryRelations = $reflection->hasMethod('getRelations');
+
+    if ($hasUnnecessaryPages) {
+        $pagesMethod = $reflection->getMethod('getPages');
+        $pagesValue = $pagesMethod->invoke(null);
+
+        // If it returns standard pages, it shouldn't be implemented
+        $isStandardPages = isset($pagesValue['index'], $pagesValue['create'], $pagesValue['edit']);
+
+        expect($isStandardPages, 'SnapshotResource should not implement getPages() for standard pages')
+            ->toBeFalse();
+    }
+
+    if ($hasUnnecessaryRelations) {
+        $relationsMethod = $reflection->getMethod('getRelations');
+        $relationsValue = $relationsMethod->invoke(null);
+
+        // If it returns empty array, it shouldn't be implemented
+        $isEmptyRelations = empty($relationsValue);
+
+        expect($isEmptyRelations, 'SnapshotResource should not implement getRelations() for empty relations')
+            ->toBeFalse();
+    }
+});
+
+test('stored event resource should not implement unnecessary methods', function () {
+    $reflection = new ReflectionClass(StoredEventResource::class);
+
+    // These methods should NOT be implemented (they return standard values)
+    $hasUnnecessaryPages = $reflection->hasMethod('getPages');
+    $hasUnnecessaryRelations = $reflection->hasMethod('getRelations');
+
+    if ($hasUnnecessaryPages) {
+        $pagesMethod = $reflection->getMethod('getPages');
+        $pagesValue = $pagesMethod->invoke(null);
+
+        // If it returns standard pages, it shouldn't be implemented
+        $isStandardPages = isset($pagesValue['index'], $pagesValue['create'], $pagesValue['edit']);
+
+        expect($isStandardPages, 'StoredEventResource should not implement getPages() for standard pages')
+            ->toBeFalse();
+    }
+
+    if ($hasUnnecessaryRelations) {
+        $relationsMethod = $reflection->getMethod('getRelations');
+        $relationsValue = $relationsMethod->invoke(null);
+
+        // If it returns empty array, it shouldn't be implemented
+        $isEmptyRelations = empty($relationsValue);
+
+        expect($isEmptyRelations, 'StoredEventResource should not implement getRelations() for empty relations')
+            ->toBeFalse();
+    }
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_PEfOr5
 });
 
 test('activity resource has correct model configuration', function () {

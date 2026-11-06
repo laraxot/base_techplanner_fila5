@@ -1,17 +1,31 @@
 <?php
 
+<<<<<<< HEAD
 declare(strict_types=1);
 
 return [
     'breadcrumb' => 'Log',
     'title' => 'Log entity ":record"',
     'default_datetime_format' => 'j.n.Y H:i:s',
+=======
+return [
+    'breadcrumb' => 'Log',
+
+    'title' => 'Log entity ":record"',
+
+    'default_datetime_format' => 'j.n.Y H:i:s',
+
+>>>>>>> 6ed19256f (.)
     'table' => [
         'field' => 'Pole',
         'old' => 'Původní',
         'new' => 'Nové',
         'restore' => 'Obnovit',
     ],
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6ed19256f (.)
     'events' => [
         'updated' => 'Upraveno',
         'created' => 'Vytvořeno',
@@ -20,6 +34,7 @@ return [
         'restore_successful' => 'Úspěšně obnoveno',
         'restore_failed' => 'Obnovení selhalo',
     ],
+<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -33,4 +48,6 @@ return [
     ],
     'actions' => [
     ],
+=======
+>>>>>>> 6ed19256f (.)
 ];

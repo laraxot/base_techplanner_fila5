@@ -321,9 +321,16 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 - [Activity Module - README](../README.md)
 - [XotBase Architecture](../../Xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../Xot/docs/filament/pages-types.md)
+<<<<<<< .merge_file_4AjJYh
 - [Activity Module - README](../README.md)
+=======
+<<<<<<< HEAD
+- [Activity Module - README](../readme.md)
+>>>>>>> .merge_file_OIqCMQ
 - [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../xot/docs/filament/pages-types.md)
+=======
+>>>>>>> 6ed19256f (.)
 
 ### Fix Correlati
 - [Modulo Disabilitato](./modulo-disabilitato.md)
@@ -335,4 +342,8 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 **Ultimo aggiornamento**: 27 Ottobre 2025
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)
+<<<<<<< HEAD
 **Causa**: Confusione tra Standalone Page e Resource Page
+=======
+**Causa**: Confusione tra Standalone Page e Resource Page
+>>>>>>> 6ed19256f (.)

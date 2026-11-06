@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_MkcUjK
 ---
 title: "Eventi del <nome progetto>ion Market"
 type: note
@@ -6,9 +7,17 @@ updated: 2026-10-07
 tags: [docs, activity, use_cases]
 qmd: "eventi del <nome progetto>ion market activity"
 ---
+=======
+<<<<<<< HEAD
+>>>>>>> .merge_file_CFfKqP
 # Eventi del <nome progetto>ion Market
 
 Gli eventi sono il cuore del sistema di Event Sourcing per un <nome progetto>ion market. Di seguito sono elencati gli eventi principali che dovrebbero essere implementati nel modulo `Activity`.
+=======
+# Eventi del Prediction Market
+
+Gli eventi sono il cuore del sistema di Event Sourcing per un prediction market. Di seguito sono elencati gli eventi principali che dovrebbero essere implementati nel modulo `Activity`.
+>>>>>>> 6ed19256f (.)
 
 ## Eventi Principali
 
@@ -41,7 +50,11 @@ Gli eventi sono il cuore del sistema di Event Sourcing per un <nome progetto>ion
 
 **Esempio di Evento `BetPlaced` in Laravel**:
 ```php
+<<<<<<< HEAD
 namespace Modules\Activity\Events\<nome progetto>ionMarket;
+=======
+namespace Modules\Activity\Events\PredictionMarket;
+>>>>>>> 6ed19256f (.)
 
 use Spatie\EventSourcing\StoredEvents\ShouldBeStored;
 
@@ -57,4 +70,12 @@ class BetPlaced extends ShouldBeStored
 }
 ```
 
+<<<<<<< .merge_file_MkcUjK
 Questi eventi devono essere registrati da una radice aggregate come `<nome progetto>ionMarketAggregateRoot` per garantire la coerenza dello stato.
+=======
+<<<<<<< HEAD
+Questi eventi devono essere registrati da una radice aggregate come `<nome progetto>ionMarketAggregateRoot` per garantire la coerenza dello stato.
+=======
+Questi eventi devono essere registrati da una radice aggregate come `PredictionMarketAggregateRoot` per garantire la coerenza dello stato.
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_CFfKqP

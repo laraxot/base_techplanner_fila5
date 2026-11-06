@@ -12,6 +12,10 @@ use Modules\Xot\Models\XotBaseModel;
  */
 abstract class BaseModel extends XotBaseModel
 {
+<<<<<<< HEAD
+=======
+    /** @var string */
+>>>>>>> 6ed19256f (.)
     protected $connection = 'cms';
 
     /** @return array<string, string> */

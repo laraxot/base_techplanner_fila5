@@ -31,7 +31,11 @@ test('activity event sourcing lifecycle works correctly', function () {
         'causer_type' => User::class,
         'causer_id' => $user->id,
         'properties' => ['action' => 'test', 'result' => 'success'],
+<<<<<<< HEAD
         'event' => 'created',
+=======
+        'event' => 'created'
+>>>>>>> 6ed19256f (.)
     ];
 
     $activity = Activity::query()->create($activityData);
@@ -62,7 +66,11 @@ test('activity can be queried with complex scopes', function () {
         'log_name' => 'security',
         'event' => 'login',
         'causer_type' => User::class,
+<<<<<<< HEAD
         'causer_id' => $user1->id,
+=======
+        'causer_id' => $user1->id
+>>>>>>> 6ed19256f (.)
     ]);
     Assert::assertInstanceOf(Activity::class, $activity1);
 
@@ -70,7 +78,11 @@ test('activity can be queried with complex scopes', function () {
         'log_name' => 'security',
         'event' => 'logout',
         'causer_type' => User::class,
+<<<<<<< HEAD
         'causer_id' => $user2->id,
+=======
+        'causer_id' => $user2->id
+>>>>>>> 6ed19256f (.)
     ]);
     Assert::assertInstanceOf(Activity::class, $activity2);
 
@@ -78,7 +90,11 @@ test('activity can be queried with complex scopes', function () {
         'log_name' => 'audit',
         'event' => 'update',
         'causer_type' => User::class,
+<<<<<<< HEAD
         'causer_id' => $user1->id,
+=======
+        'causer_id' => $user1->id
+>>>>>>> 6ed19256f (.)
     ]);
     Assert::assertInstanceOf(Activity::class, $activity3);
 
@@ -126,10 +142,17 @@ test('snapshot creation and retrieval works correctly', function () {
             'balance' => 1000,
             'transactions' => [
                 ['id' => 1, 'amount' => 100, 'type' => 'credit'],
+<<<<<<< HEAD
                 ['id' => 2, 'amount' => 50, 'type' => 'debit'],
             ],
             'status' => 'active',
         ],
+=======
+                ['id' => 2, 'amount' => 50, 'type' => 'debit']
+            ],
+            'status' => 'active'
+        ]
+>>>>>>> 6ed19256f (.)
     ];
 
     $snapshot = Snapshot::create($snapshotData);
@@ -163,8 +186,13 @@ test('stored event creation and event reconstruction works', function () {
         'action' => 'test_action',
         'metadata' => [
             'ip' => '127.0.0.1',
+<<<<<<< HEAD
             'user_agent' => 'Test Browser',
         ],
+=======
+            'user_agent' => 'Test Browser'
+        ]
+>>>>>>> 6ed19256f (.)
     ];
 
     $storedEvent = StoredEvent::create([
@@ -204,15 +232,27 @@ test('activity batch operations work correctly', function () {
 
     $activities = ActivityFactory::new()->count(3)->create([
         'batch_uuid' => $batchUuid,
+<<<<<<< HEAD
         'log_name' => 'batch_operation',
+=======
+        'log_name' => 'batch_operation'
+>>>>>>> 6ed19256f (.)
     ]);
     Assert::assertInstanceOf(Collection::class, $activities);
     Assert::assertCount(3, $activities);
 
     $batchActivities = Activity::forBatch($batchUuid)->get();
 
+<<<<<<< .merge_file_Pw0y0L
     Assert::assertCount(3, $batchActivities);
+=======
+    $this->assertCount(3, $batchActivities);
+<<<<<<< HEAD
+>>>>>>> .merge_file_Qnmopm
 
+=======
+    
+>>>>>>> 6ed19256f (.)
     foreach ($batchActivities as $activity) {
         Assert::assertSame($batchUuid, $activity->batch_uuid);
         Assert::assertSame('batch_operation', $activity->log_name);
@@ -239,25 +279,43 @@ test('activity properties support complex nested structures', function () {
             'id' => 1,
             'name' => 'Test User',
             'roles' => ['admin', 'user'],
+<<<<<<< HEAD
             'permissions' => ['read', 'write', 'delete'],
+=======
+            'permissions' => ['read', 'write', 'delete']
+>>>>>>> 6ed19256f (.)
         ],
         'action' => 'complex_operation',
         'context' => [
             'request' => [
                 'method' => 'POST',
                 'url' => '/api/test',
+<<<<<<< HEAD
                 'headers' => ['Content-Type' => 'application/json'],
             ],
             'response' => [
                 'status' => 200,
                 'data' => ['success' => true, 'message' => 'Operation completed'],
             ],
+=======
+                'headers' => ['Content-Type' => 'application/json']
+            ],
+            'response' => [
+                'status' => 200,
+                'data' => ['success' => true, 'message' => 'Operation completed']
+            ]
+>>>>>>> 6ed19256f (.)
         ],
         'timestamps' => [
             'started_at' => now()->subMinutes(5)->toISOString(),
             'completed_at' => now()->toISOString(),
+<<<<<<< HEAD
             'duration' => 300,
         ],
+=======
+            'duration' => 300
+        ]
+>>>>>>> 6ed19256f (.)
     ];
 
     $activity = Activity::create([
@@ -300,7 +358,15 @@ test('activity properties support complex nested structures', function () {
 
 test('snapshot state maintains data integrity with large datasets', function () {
     $largeState = [
+<<<<<<< .merge_file_Pw0y0L
         'users' => array_map(fn (int $i): array => [
+=======
+<<<<<<< HEAD
+        'users' => array_map(fn ($i) => [
+=======
+        'users' => array_map(fn($i) => [
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Qnmopm
             'id' => $i,
             'name' => "User {$i}",
             'email' => "user{$i}@example.com",
@@ -308,14 +374,24 @@ test('snapshot state maintains data integrity with large datasets', function () 
             'preferences' => [
                 'theme' => $i % 2 === 0 ? 'dark' : 'light',
                 'notifications' => true,
+<<<<<<< HEAD
                 'language' => 'en',
             ],
+=======
+                'language' => 'en'
+            ]
+>>>>>>> 6ed19256f (.)
         ], range(1, 100)),
         'metadata' => [
             'generated_at' => now()->toISOString(),
             'version' => '1.0.0',
+<<<<<<< HEAD
             'checksum' => md5('test'),
         ],
+=======
+            'checksum' => md5('test')
+        ]
+>>>>>>> 6ed19256f (.)
     ];
 
     $snapshot = Snapshot::create([
@@ -349,19 +425,36 @@ test('stored event handles complex event properties with nested arrays', functio
     $complexEvent = [
         'order' => [
             'id' => 12345,
+<<<<<<< .merge_file_Pw0y0L
             'items' => array_map(fn (int $i): array => [
+=======
+<<<<<<< HEAD
+            'items' => array_map(fn ($i) => [
+=======
+            'items' => array_map(fn($i) => [
+>>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_Qnmopm
                 'product_id' => $i,
                 'name' => "Product {$i}",
                 'quantity' => rand(1, 5),
                 'price' => rand(1000, 5000) / 100,
+<<<<<<< HEAD
                 'attributes' => ['color' => 'red', 'size' => 'M'],
+=======
+                'attributes' => ['color' => 'red', 'size' => 'M']
+>>>>>>> 6ed19256f (.)
             ], range(1, 50)),
             'totals' => [
                 'subtotal' => 1234.56,
                 'tax' => 123.46,
                 'shipping' => 15.00,
+<<<<<<< HEAD
                 'total' => 1373.02,
             ],
+=======
+                'total' => 1373.02
+            ]
+>>>>>>> 6ed19256f (.)
         ],
         'customer' => [
             'id' => 67890,
@@ -372,15 +465,25 @@ test('stored event handles complex event properties with nested arrays', functio
                 'city' => 'Anytown',
                 'state' => 'CA',
                 'zip' => '12345',
+<<<<<<< HEAD
                 'country' => 'US',
             ],
+=======
+                'country' => 'US'
+            ]
+>>>>>>> 6ed19256f (.)
         ],
         'payment' => [
             'method' => 'credit_card',
             'transaction_id' => 'txn_123456789',
             'status' => 'completed',
+<<<<<<< HEAD
             'amount' => 1373.02,
         ],
+=======
+            'amount' => 1373.02
+        ]
+>>>>>>> 6ed19256f (.)
     ];
 
     $storedEvent = StoredEventFactory::new()->createOne([

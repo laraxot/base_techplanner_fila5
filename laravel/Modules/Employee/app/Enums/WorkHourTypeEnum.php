@@ -33,6 +33,7 @@ enum WorkHourTypeEnum: string
             self::BREAK_END => 'Break End',
         };
     }
+<<<<<<< HEAD
 
     public function getColor(): string
     {
@@ -43,4 +44,6 @@ enum WorkHourTypeEnum: string
             self::BREAK_END => 'info',
         };
     }
+=======
+>>>>>>> 6ed19256f (.)
 }

@@ -14,6 +14,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
+<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -35,6 +36,17 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+=======
+        ],
+        'email' => [
+            'label' => 'Email',
+        ],
+        'token' => [
+            'label' => 'Jeton',
+        ],
+        'created_at' => [
+            'label' => 'Créé À',
+>>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
