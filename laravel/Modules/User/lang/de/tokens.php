@@ -6,7 +6,6 @@ return [
     'fields' => [
         'name' => [
             'label' => 'name',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -23,8 +22,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

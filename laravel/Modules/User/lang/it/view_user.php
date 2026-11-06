@@ -26,20 +26,14 @@ return [
             'helper_text' => 'endDate3',
             'placeholder' => 'endDate',
             'label' => 'endDate',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'startDate' => [
             'description' => 'startDate',
             'helper_text' => 'startDate1',
             'placeholder' => 'startDate',
             'label' => 'startDate1',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'sections' => [
@@ -48,7 +42,6 @@ return [
             'label' => 'empty',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'name' => 'View User',
         'plural' => 'View User',
@@ -62,9 +55,4 @@ return [
     ],
     'label' => 'View User',
     'plural_label' => 'View User (Plurale)',
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

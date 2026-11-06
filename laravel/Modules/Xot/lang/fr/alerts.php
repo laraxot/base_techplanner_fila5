@@ -19,7 +19,6 @@ return [
             'updated_password' => 'Le mot de passe utilisateur a été mis à jour avec succès.',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -33,6 +32,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

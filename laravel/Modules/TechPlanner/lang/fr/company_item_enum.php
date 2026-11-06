@@ -39,8 +39,4 @@ return [
         'icon' => 'heroicon-o-identification',
         'color' => 'warning',
     ],
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

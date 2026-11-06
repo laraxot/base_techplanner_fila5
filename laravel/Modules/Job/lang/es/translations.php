@@ -23,7 +23,6 @@ return [
     'waiting_jobs' => 'Número de trabajos en espera',
     'attempts' => 'Intentos',
     'waiting' => 'En espera',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -37,6 +36,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

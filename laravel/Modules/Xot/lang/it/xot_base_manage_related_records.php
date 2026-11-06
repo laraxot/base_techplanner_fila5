@@ -11,7 +11,6 @@ return [
     'fields' => [
         'delete' => [
             'label' => 'delete',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -60,23 +59,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-=======
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

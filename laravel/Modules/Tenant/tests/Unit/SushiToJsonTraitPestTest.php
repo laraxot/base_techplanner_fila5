@@ -173,8 +173,4 @@ describe('Business Logic Tests', function () {
         expect($rows['1']['metadata'])->toBeArray();
         expect($rows['1']['created_at'])->toBeString();
     })->group('data-types', 'traits', 'sushi-json');
-<<<<<<< HEAD
 });
-=======
-});
->>>>>>> 6ed19256f (.)

@@ -6,7 +6,6 @@ return [
     'fields' => [
         'deactivate' => [
             'label' => 'deactivate',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,20 +46,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-        'unverified' => [
-            'label' => 'unverified',
-        ],
-        'verified' => [
-            'label' => 'verified',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

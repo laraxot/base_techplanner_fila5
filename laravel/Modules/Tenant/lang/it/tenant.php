@@ -129,7 +129,6 @@ return [
             'occupation' => 'Occupazione',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Tenant',
     'plural_label' => 'Tenant (Plurale)',
     'fields' => [
@@ -163,6 +162,4 @@ return [
             'label' => 'Elimina Tenant',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

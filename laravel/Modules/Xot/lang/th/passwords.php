@@ -8,7 +8,6 @@ return [
     'sent' => 'ระบบได้ส่งอีเมลสำหรับตั้งรหัสผ่านใหม่ให้คุณแล้ว!',
     'token' => 'ชุดรหัสสำหรับการเปลี่ยนรหัสผ่านไม่ถูกต้อง',
     'user' => 'ไม่พบผู้ใช้งานที่ตรงกับอีเมล์นี้',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -22,6 +21,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

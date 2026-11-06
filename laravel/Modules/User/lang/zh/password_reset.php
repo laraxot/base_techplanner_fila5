@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -36,17 +35,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'email' => [
-            'label' => '邮箱',
-        ],
-        'token' => [
-            'label' => '令牌',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

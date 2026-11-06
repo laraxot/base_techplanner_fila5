@@ -23,7 +23,6 @@ return [
             'placeholder' => 'Sélectionner le type de disposition',
             'tooltip' => 'Choisir entre la vue liste et la vue grille',
             'help' => 'Choisissez le type de disposition le plus adapté pour afficher les données',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +36,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

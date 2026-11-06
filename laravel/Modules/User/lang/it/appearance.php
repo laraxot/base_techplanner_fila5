@@ -14,7 +14,6 @@ return [
         'icon' => 'heroicon-o-paint-brush',
         'sort' => 5,
     ],
-<<<<<<< HEAD
     'label' => 'Appearance',
     'plural_label' => 'Appearance (Plurale)',
     'fields' => [
@@ -48,10 +47,4 @@ return [
             'label' => 'Elimina Appearance',
         ],
     ],
-=======
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
->>>>>>> 6ed19256f (.)
 ];

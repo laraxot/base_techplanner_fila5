@@ -4,15 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Database\Seeders;
 
-<<<<<<< HEAD
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Seeder;
 use InvalidArgumentException;
-=======
-use InvalidArgumentException;
-use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Database\Seeder;
->>>>>>> 6ed19256f (.)
 use Modules\Tenant\Models\Domain;
 
 class DomainsSeeder extends Seeder

@@ -9,9 +9,5 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListDomains extends XotBaseListRecords
 {
-<<<<<<< HEAD
     public static string $resource = DomainResource::class;
-=======
-    protected static string $resource = DomainResource::class;
->>>>>>> 6ed19256f (.)
 }

@@ -26,7 +26,6 @@ return [
         'finished' => 'Laravel on edukalt installitud',
         'exit' => 'Väljumiseks vajuta siia',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -40,6 +39,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

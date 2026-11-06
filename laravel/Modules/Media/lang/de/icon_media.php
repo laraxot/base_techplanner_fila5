@@ -10,10 +10,7 @@ return [
             'help' => 'Den aktuellen Status des Elements ändern',
             'description' => 'Aktion zum Ändern des Status',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'Status',
@@ -21,10 +18,7 @@ return [
             'help' => 'Aktueller Status des Elements',
             'description' => 'Aktueller Systemstatus',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Nachricht',
@@ -32,7 +26,6 @@ return [
             'help' => 'Informative Nachricht für den Benutzer',
             'description' => 'Nachrichtentext',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -47,8 +40,4 @@ return [
     'plural_label' => 'Missing Plural label',
     'actions' => [
     ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

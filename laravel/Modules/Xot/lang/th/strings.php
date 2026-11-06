@@ -95,7 +95,6 @@ return [
         ],
         'welcome_to' => 'ยินดีต้อนรับสู่ :place',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -109,6 +108,4 @@ return [
     ],
     'actions' => [
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -280,13 +280,7 @@ return [
     'activators' => [
         'file' => [
             'class' => FileActivator::class,
-<<<<<<< HEAD
-            // 'statuses-file' => base_path('modules_statuses.json'),
             //'statuses-file' => base_path('modules_statuses.json'),
-            // 'statuses-file' => base_path('modules_statuses.json'),
-=======
-            //'statuses-file' => base_path('modules_statuses.json'),
->>>>>>> 6ed19256f (.)
             'statuses-file' => base_path('modules_statuses.json'),
         ],
     ],

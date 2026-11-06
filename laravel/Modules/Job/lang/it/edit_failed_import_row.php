@@ -1,17 +1,13 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 return [
     'actions' => [
         'delete' => [
             'label' => 'delete',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Edit Failed Import Row',
     'plural_label' => 'Edit Failed Import Row (Plurale)',
     'navigation' => [
@@ -45,6 +41,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];
