@@ -1,3 +1,50 @@
+# 🔒 Gdpr
+
+[![Domain-GDPR](https://img.shields.io/badge/Domain-GDPR%20Compliance-37474F.svg)](#)
+[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
+[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
+[![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
+[![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
+[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
+[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
+
+> **Privacy non è un checkbox.** Consensi, diritti utente, policy — conformità che regge un audit PA.
+
+---
+
+## Perché esiste
+
+Obbligatorio per servizi pubblici digitali e fiducia del cittadino.
+
+## Superpoteri
+
+- Gestione consensi e revoche
+- Privacy policy e documentazione
+- Integrazione User/Activity
+- Filament per operatori
+
+## Certificazioni
+
+| Certificazione | Stato |
+|----------------|-------|
+| PHPStan livello 10 | Target progetto |
+| `declare(strict_types=1)` | Su nuovo codice PHP |
+| Filament 5 + XotBase | Admin enterprise |
+| Test PHPUnit / Pest | Suite modulo |
+| Documentazione wiki | Cartella `docs/` |
+
+## Vuoi entrare nel team?
+
+Proteggi i dati **per davvero** — con codice e processi.
+
+Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+
+---
+
+## Documentazione
+
 # GDPR Module Fila3 🔒 Your All-in-One GDPR Compliance Solution for Laravel 🚀
 
 [![Latest Release](https://img.shields.io/github/v/release/laraxot/module_gdpr_fila3)](https://github.com/laraxot/module_gdpr_fila3/releases)
@@ -34,67 +81,105 @@ Inside the `laravel/Modules` folder:
 - **Compliance Reporting**: Generate GDPR compliance reports to stay on top of regulations.
 - **Automatic Logging**: Log all data access and processing activities for compliance.
 
->>>>>>> .merge_file_ZLsCuL
----
-id: module-gdpr-readme
-title: "GDPR — Consensi e Privacy Applicativa"
-type: module-readme
-category: module-documentation
-module: Gdpr
-status: active
-tags: [gdpr, privacy, consent, revocation]
-created: 2026-09-14
-updated: 2026-09-14
-qmd: "gdpr consent privacy policy revocation module documentation"
-issues:
-  - "https://github.com/laraxot/module_gdpr_fila5/issues/39"
-discussions:
-  - "https://github.com/laraxot/module_gdpr_fila5/discussions/40"
-related:
-  - "./docs/"
-sources: []
 ---
 
-# 🔒 GDPR
+### Installation Guide 💻
 
-> **Consensi e privacy applicativa.**
+1. **Install the module:**
+    ```bash
+    git submodule add https://github.com/laraxot/module_gdpr_fila3.git Gdpr
+    ```
 
-Centralizza consensi, revoche e tracciabilità delle preferenze.
+2. **Run Migrations:**
+    ```bash
+    php artisan module:migrate Gdpr
+    ```
 
-## Cosa offre
+3. **Enable the module:**
+    ```bash
+    php artisan module:enable Gdpr
+    ```
 
-- **Consensi** – gestione dinamica del consenso utente
-- **Policy utente** – regole di trattamento dei dati
-- **Audit** – tracciabilità delle operazioni
-- **Pannello Filament** – dashboard compliance
+4. **Check Active Modules:**
+    ```bash
+    php artisan module:list
+    ```
 
-## Confini architetturali
+---
 
-This module publishes contracts usable by other modules. Logic lives in `Actions`; admin UI follows Laraxot/XotBase.
+### Console Commands 🚀
 
-## Integrazione rapida
+Manage GDPR features directly from the terminal:
 
+- **List GDPR Requests:**
+    ```bash
+    php artisan gdpr:list
+    ```
+    _View all active GDPR requests from users._
+
+- **Generate Compliance Report:**
+    ```bash
+    php artisan gdpr:report
+    ```
+    _Generate a report for your GDPR compliance efforts._
+
+- **Log Data Processing Activities:**
+    ```bash
+    php artisan gdpr:log <activity>
+    ```
+    _Automatically log data processing activities to ensure transparency._
+
+---
+
+### Configuration 🔧
+
+Customize the module to fit your app's GDPR needs. Update configurations via `module_gdpr_fila3.php` to adapt logging, consent handling, and more.
+
+---
+
+### FAQ ❓
+
+- **Q: How do I manage consent requests?**
+  A: Consent requests can be created and tracked within the module. You can set custom policies for consent renewal and updates.
+
+- **Q: Is logging data access automatic?**
+  A: Yes! All user data access and processing are automatically logged and can be reviewed at any time.
+
+---
+
+### Author 👨‍💻
+
+Developed and maintained by [Marco Sottana](https://github.com/marco76tv)
+📧 Email: marco.sottana@gmail.com
+
+---
+
+### License 📄
+
+This package is open-sourced under the [MIT license](LICENSE).
+
+---
+
+Stay compliant and secure user trust with **Module GDPR Fila3**! 💥
+
+## Verify the Module is Active
 ```bash
-cd laravel
 php artisan module:list
-./vendor/bin/phpstan analyse Modules/Gdpr
+```
+in caso abilitarlo
+```bash
+php artisan module:enable Gdpr
 ```
 
-Refer to local docs for implementation details.
-
-## Documentazione
-
-The technical map is in [docs/README.md](./docs/README.md).
-
-- [Story BMAD del modulo](./docs/stories/)
-- [Regole del progetto](../../../docs/wiki/)
-- [README del progetto](../../README.md)
-
-## Qualità e manutenzione
-
-Keep `declare(strict_types=1);` in PHP, respect project PHPStan config, and update docs when contracts evolve.
+## Run the Migrations
+```bash
+php artisan module:migrate Gdpr
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
 
 ---
 
-**Modulo** `gdpr` · **Laraxot ecosystem** · **Project-agnostic**
->>>>>>> .merge_file_ZLsCuL
+**Modulo** `gdpr` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

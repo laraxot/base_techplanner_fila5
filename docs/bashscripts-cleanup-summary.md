@@ -19,7 +19,6 @@
 console.error('MySQL MCP Server started for base_techplanner_fila4_mono');
 console.error('MySQL MCP Server started for base_ptvx_fila4_mono');
 console.error('MySQL MCP Server started ');
->>>>>>> 6ed19256f (.)
 ```
 
 **Soluzione**: Risolto mantenendo la versione corretta per `base_techplanner_fila4_mono`.

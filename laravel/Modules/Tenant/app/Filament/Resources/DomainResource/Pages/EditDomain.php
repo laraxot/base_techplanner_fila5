@@ -9,6 +9,5 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseEditRecord;
 
 class EditDomain extends XotBaseEditRecord
 {
-    protected static string $resource = DomainResource::class;
->>>>>>> .merge_file_vFt9ya
+    public static string $resource = DomainResource::class;
 }

@@ -9,6 +9,5 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListDomains extends XotBaseListRecords
 {
-    protected static string $resource = DomainResource::class;
->>>>>>> .merge_file_Oa8DW4
+    public static string $resource = DomainResource::class;
 }

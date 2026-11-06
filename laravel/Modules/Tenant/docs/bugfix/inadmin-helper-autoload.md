@@ -1,17 +1,3 @@
----
-issues: []
-discussions: []
-title: "Bugfix: `inAdmin()` undefined during `package:discover`"
-module: "Tenant"
-type: concept
-tags: [inadmin, helper, autoload]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "inadmin helper autoload"
-related:
-  - "../phpstan-corrections-january.md"
-status: draft
----
 # Bugfix: `inAdmin()` undefined during `package:discover`
 
 ## Symptom
@@ -71,4 +57,3 @@ This follows the existing architecture documented in `Modules/Xot/docs/helpers-a
 - Services contain the real logic
 
 In critical bootstrap paths (Composer scripts, service providers, config resolution), prefer the service method instead of relying on helper autoload order.
->>>>>>> .merge_file_dFTwoE

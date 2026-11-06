@@ -1,17 +1,6 @@
----
-title: "duplicate methods analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "duplicate methods analysis"
-issues: []
-discussions: []
-status: draft
----
-
 # Analisi Metodi Duplicati - Modulo Gdpr
 
+**Data Generazione**: 2025-10-15 06:41:17
 **Totale Gruppi di Duplicati**:
 
 ## Sommario Esecutivo
@@ -168,6 +157,8 @@ protected function casts(): array
 
 ---
 
+---
+
 ## Legenda
 
 ### Tipo di Refactoring
@@ -190,4 +181,3 @@ Indica quanto è probabile che il refactoring sia vantaggioso:
 - **70-89%**: Raccomandato
 - **50-69%**: Valutare caso per caso
 - **< 50%**: Richiede analisi dettagliata
->>>>>>> .merge_file_O22Gg0

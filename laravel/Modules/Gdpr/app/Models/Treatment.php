@@ -12,128 +12,107 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Gdpr\Models\Treatment.
  *
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
+ * @property string               $id
+ * @property int                  $active
+ * @property int                  $required
+ * @property string               $name
+ * @property string               $description
+ * @property string|null          $documentVersion
+ * @property string|null          $documentUrl
+ * @property int                  $weight
+ * @property Carbon|null          $created_at
+ * @property Carbon|null          $updated_at
+ * @property string|null          $updated_by
+ * @property string|null          $created_by
+ * @property Carbon|null          $deleted_at
+ * @property string|null          $deleted_by
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
-=======
- * @property string $id
- * @property int $active
- * @property int $required
- * @property string $name
- * @property string $description
- * @property string|null $documentVersion
- * @property string|null $documentUrl
- * @property int $weight
- * @property Carbon|null $created_at
- * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property Carbon|null $deleted_at
- * @property string|null $deleted_by
- *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
- *
- * @method static TreatmentFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Treatment newModelQuery()
  * @method static Builder<static>|Treatment newQuery()
  * @method static Builder<static>|Treatment query()
@@ -162,25 +141,8 @@ class Treatment extends BaseModel
 {
     use HasUuids;
 
+    // protected $table = 'treatment';
     public $incrementing = false;
-
-    protected static function booted(): void
-    {
-        if (! app()->environment('testing')) {
-            return;
-        }
-
-        static::creating(function (Treatment $treatment): void {
-            $name = $treatment->name;
-            if (! is_string($name) || $name === '') {
-                return;
-            }
-
-            if (static::query()->where('name', $name)->exists()) {
-                $treatment->name = $name.'-'.uniqid('', true);
-            }
-        });
-    }
 
     protected $fillable = [
         'id',
@@ -192,7 +154,4 @@ class Treatment extends BaseModel
         'documentUrl',
         'weight',
     ];
-=======
-    protected $fillable = [''];
->>>>>>> 6ed19256f (.)
 }

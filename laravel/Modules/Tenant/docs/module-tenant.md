@@ -1,20 +1,10 @@
----
-title: "module tenant"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module tenant"
-issues: []
-discussions: []
-module: theme
-topic: module_tenant
-canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
-status: superseded
-superseded_by: lang-link.md
----
+# Modulo Tenant
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules
+## Informazioni Generali
+- **Nome**: `laraxot/module_tenant_fila5`
+- **Descrizione**: Modulo per l'architettura multi-tenant che permette a una singola istanza dell'applicazione di servire più tenant
+- **Namespace**: `Modules\Tenant`
+- **Repository**: https://github.com/laraxot/module_tenant_fila5
 
 ## Service Providers
 1. `Modules\Tenant\Providers\TenantServiceProvider`
@@ -252,4 +242,3 @@ Le modifiche vengono tracciate nel repository GitHub.
 
 - [Risoluzione conflitti nel modulo Tenant](risoluzione_conflitti.md)
 - [Linee guida globali per la risoluzione dei conflitti git](../../../../docs/risoluzione_conflitti_git.md)
->>>>>>> .merge_file_TbRsqn

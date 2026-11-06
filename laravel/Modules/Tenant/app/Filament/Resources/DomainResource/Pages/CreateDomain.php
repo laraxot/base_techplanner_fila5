@@ -9,6 +9,5 @@ use Modules\Xot\Filament\Resources\Pages\XotBaseCreateRecord;
 
 class CreateDomain extends XotBaseCreateRecord
 {
-    protected static string $resource = DomainResource::class;
->>>>>>> .merge_file_xzAVbZ
+    public static string $resource = DomainResource::class;
 }

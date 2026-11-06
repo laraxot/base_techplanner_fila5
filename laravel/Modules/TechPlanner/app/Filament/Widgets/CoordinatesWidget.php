@@ -21,15 +21,8 @@ class CoordinatesWidget extends XotBaseWidget
     public float $longitude = 0;
 
     /**
-     * @return array<int, Component>
-     */
-=======
-     * Get the form schema for the widget.
-     *
      * @return array<string, Component>
      */
-    #[Override]
->>>>>>> 6ed19256f (.)
     public function getFormSchema(): array
     {
         return [];
