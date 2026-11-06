@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Facade;
 use Livewire\Attributes\Locked;
 use Mockery\MockInterface;
 use Modules\Job\Filament\Widgets\JobStatusWidget;
+use Modules\Job\Tests\Unit\Filament\JobStatusWidgetProbe;
 use Modules\Xot\Contracts\UserContract;
 
 use function Safe\file_get_contents;
@@ -35,18 +36,6 @@ uses(\Modules\Job\Tests\TestCase::class);
  * Salta la risoluzione della vista del costruttore di XotBaseWidget (richiede un'app avviata)
  * e redirige la scrittura su un file temporaneo.
  */
-final class JobStatusWidgetProbe extends JobStatusWidget
-{
-    public string $probeEnvFile = '';
-
-    public function __construct() {}
-
-    protected function envFilePath(): string
-    {
-        return $this->probeEnvFile;
-    }
-}
-
 const JOB_ENV_WIDGET_INITIAL = "APP_ENV=testing\nQUEUE_CONNECTION=database\nAPP_DEBUG=false\n";
 
 beforeEach(function (): void {
