@@ -1211,7 +1211,7 @@
         },
         {
             "name": "coolsam/panel-modules",
-            "version": "dev-dev",
+            "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "Modules/Xot/./packages/coolsam/panel-modules",
@@ -11782,16 +11782,16 @@
         },
         {
             "name": "spatie/laravel-activitylog",
-            "version": "5.1.3",
+            "version": "5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-activitylog.git",
-                "reference": "011f43dabf9bf685941f69f7010ef6c4c3845e12"
+                "reference": "3e6f55ac60afa5660980bbe3070e45b1f2ddf478"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-activitylog/zipball/011f43dabf9bf685941f69f7010ef6c4c3845e12",
-                "reference": "011f43dabf9bf685941f69f7010ef6c4c3845e12",
+                "url": "https://api.github.com/repos/spatie/laravel-activitylog/zipball/3e6f55ac60afa5660980bbe3070e45b1f2ddf478",
+                "reference": "3e6f55ac60afa5660980bbe3070e45b1f2ddf478",
                 "shasum": ""
             },
             "require": {
@@ -11859,7 +11859,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-activitylog/issues",
-                "source": "https://github.com/spatie/laravel-activitylog/tree/5.1.3"
+                "source": "https://github.com/spatie/laravel-activitylog/tree/5.1.4"
             },
             "funding": [
                 {
@@ -11871,8 +11871,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-10-19T12:30:00+00:00",
-            "published-time": "2026-10-19T12:30:23+00:00"
+            "time": "2026-11-06T10:47:04+00:00",
+            "published-time": "2026-11-06T10:49:54+00:00"
         },
         {
             "name": "spatie/laravel-data",
@@ -12123,16 +12123,16 @@
         },
         {
             "name": "spatie/laravel-health",
-            "version": "1.40.6",
+            "version": "1.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-health.git",
-                "reference": "0f09ce05d38985476bc64b44d8fd77923b36f250"
+                "reference": "326692c04674eb7ccb47d53f1ebcb4a508d0a45e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-health/zipball/0f09ce05d38985476bc64b44d8fd77923b36f250",
-                "reference": "0f09ce05d38985476bc64b44d8fd77923b36f250",
+                "url": "https://api.github.com/repos/spatie/laravel-health/zipball/326692c04674eb7ccb47d53f1ebcb4a508d0a45e",
+                "reference": "326692c04674eb7ccb47d53f1ebcb4a508d0a45e",
                 "shasum": ""
             },
             "require": {
@@ -12162,6 +12162,7 @@
                 "phpstan/phpstan-deprecation-rules": "^1.0|^2.0",
                 "phpstan/phpstan-phpunit": "^1.1.1|^2.0",
                 "phpunit/phpunit": "^9.5.21|^9.5.10|^10.5|^11.0|^12.0",
+                "pusher/pusher-php-server": "^7.2",
                 "spatie/laravel-ray": "^1.30",
                 "spatie/pest-plugin-snapshots": "^1.1|^2.3|^3.0",
                 "spatie/pest-plugin-test-time": "^1.1.1|^1.1|^2.0|^3.0",
@@ -12205,7 +12206,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-health/issues",
-                "source": "https://github.com/spatie/laravel-health/tree/1.40.6"
+                "source": "https://github.com/spatie/laravel-health/tree/1.41.0"
             },
             "funding": [
                 {
@@ -12213,8 +12214,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-04T15:39:30+00:00",
-            "published-time": "2026-11-04T15:43:16+00:00"
+            "time": "2026-11-06T11:41:49+00:00",
+            "published-time": "2026-11-06T11:46:47+00:00"
         },
         {
             "name": "spatie/laravel-medialibrary",
@@ -12545,16 +12546,16 @@
         },
         {
             "name": "spatie/laravel-permission",
-            "version": "8.4.0",
+            "version": "8.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-permission.git",
-                "reference": "b2ce93ac4d16fb9226abe6db27e562f4740040ac"
+                "reference": "31c6a4f649c6bc4703ae5546cebb7ce1a20a15e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/b2ce93ac4d16fb9226abe6db27e562f4740040ac",
-                "reference": "b2ce93ac4d16fb9226abe6db27e562f4740040ac",
+                "url": "https://api.github.com/repos/spatie/laravel-permission/zipball/31c6a4f649c6bc4703ae5546cebb7ce1a20a15e0",
+                "reference": "31c6a4f649c6bc4703ae5546cebb7ce1a20a15e0",
                 "shasum": ""
             },
             "require": {
@@ -12621,7 +12622,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-permission/issues",
-                "source": "https://github.com/spatie/laravel-permission/tree/8.4.0"
+                "source": "https://github.com/spatie/laravel-permission/tree/8.5.0"
             },
             "funding": [
                 {
@@ -12629,21 +12630,21 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-11-05T09:12:42+00:00",
-            "published-time": "2026-11-05T09:18:08+00:00"
+            "time": "2026-11-06T11:43:27+00:00",
+            "published-time": "2026-11-06T11:43:46+00:00"
         },
         {
             "name": "spatie/laravel-personal-data-export",
-            "version": "4.3.2",
+            "version": "4.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/laravel-personal-data-export.git",
-                "reference": "1fc54e733f4c88c8bb3b305698a48fc284dcd311"
+                "reference": "7fe59d0888e8838bac6f8bfa79a4cbcf8d0808f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/laravel-personal-data-export/zipball/1fc54e733f4c88c8bb3b305698a48fc284dcd311",
-                "reference": "1fc54e733f4c88c8bb3b305698a48fc284dcd311",
+                "url": "https://api.github.com/repos/spatie/laravel-personal-data-export/zipball/7fe59d0888e8838bac6f8bfa79a4cbcf8d0808f3",
+                "reference": "7fe59d0888e8838bac6f8bfa79a4cbcf8d0808f3",
                 "shasum": ""
             },
             "require": {
@@ -12699,7 +12700,7 @@
             ],
             "support": {
                 "issues": "https://github.com/spatie/laravel-personal-data-export/issues",
-                "source": "https://github.com/spatie/laravel-personal-data-export/tree/4.3.2"
+                "source": "https://github.com/spatie/laravel-personal-data-export/tree/4.3.3"
             },
             "funding": [
                 {
@@ -12707,8 +12708,8 @@
                     "type": "custom"
                 }
             ],
-            "time": "2026-02-21T21:50:02+00:00",
-            "published-time": "2026-02-21T21:50:52+00:00"
+            "time": "2026-11-06T10:54:50+00:00",
+            "published-time": "2026-11-06T10:55:38+00:00"
         },
         {
             "name": "spatie/laravel-queueable-action",

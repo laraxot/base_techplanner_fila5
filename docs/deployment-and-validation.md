@@ -16,6 +16,25 @@
 3. Merge su `master` → auto-deploy
 4. Verifica su https://sottana.net (stesse pagine modificate)
 
+## Diagnosi HTTP 500 del 2026-11-06
+
+La richiesta `https://sottana.com/it` ha evidenziato tre blocchi successivi:
+
+1. L'autoload generato richiedeva `Modules/Xot/Helpers/Helper.php`, mentre il manifest corrente indica `Modules/Xot/helpers/Helper.php`. Il fatal avveniva prima del bootstrap Laravel ed era registrato in `/var/log/nginx/sottana.com-error.log`.
+2. La rigenerazione era impedita da una dipendenza duplicata senza virgola in `Modules/Gdpr/composer.json`. Dopo la correzione, il codice richiedeva ancora dipendenze diverse da quelle installate: il runtime era Laravel 12.52.0, mentre il lock del rilascio prevedeva Laravel 13.40.0. Il modello `BaseUser` falliva sulla precedenza del metodo `HasSpatiePermission::teams`. L'aggiornamento Composer avviato separatamente nella sessione del server ha allineato le dipendenze e risolto questo fatal.
+3. Il CMS rilevava due record con slug `header`: `sections/1.json`, vuoto, e `sections/header.json`, completo. Lo stesso valeva per `footer` con `2.json` e `footer.json`. Rimossi i due record vuoti da `laravel/config/local/techplanner/database/content/sections/`, preservando i file completi, la home ha risposto HTTP 200.
+
+Per i deploy, allineare `vendor/` al `composer.lock` del rilascio e verificare la validita' dei manifest di tutti i moduli prima di rigenerare l'autoload. Non mantenere due JSON con lo stesso slug nella cartella dei contenuti attivi: il CMS segnala correttamente la collisione.
+
+Verifiche dalla cartella `laravel/`:
+
+```bash
+php artisan --version
+curl -sS -o /dev/null -w 'HTTP %{http_code}\n' https://sottana.com/it
+```
+
+Per gli errori successivi al bootstrap consultare anche `laravel/storage/logs/laravel.log`.
+
 ## Pagine da controllare dopo deploy
 
 - Home: https://sottana.net/it
