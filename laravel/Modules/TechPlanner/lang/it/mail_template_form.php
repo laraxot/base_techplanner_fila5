@@ -22,5 +22,23 @@ return [
             'helper_text' => 'subject',
             'description' => 'subject',
         ],
+        'html_template' => [
+            'label' => 'html_template',
+            'placeholder' => 'html_template',
+            'helper_text' => 'html_template',
+            'description' => 'html_template',
+        ],
+        'text_template' => [
+            'label' => 'text_template',
+            'placeholder' => 'text_template',
+            'helper_text' => 'text_template',
+            'description' => 'text_template',
+        ],
+        'sms_template' => [
+            'label' => 'sms_template',
+            'placeholder' => 'sms_template',
+            'helper_text' => 'sms_template',
+            'description' => 'sms_template',
+        ],
     ],
 ];
