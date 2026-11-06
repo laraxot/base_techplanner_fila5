@@ -111,6 +111,16 @@ return [
             'icon' => 'removeAllFilters',
             'tooltip' => 'removeAllFilters',
         ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => 'createAnother',
+        ],
+        'cancel' => [
+            'label' => 'cancel',
+            'icon' => 'cancel',
+            'tooltip' => 'cancel',
+        ],
     ],
     'label' => 'medical director',
 ];
