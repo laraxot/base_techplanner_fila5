@@ -15,7 +15,10 @@ use Modules\Activity\Database\Factories\ActivityFactory;
 use Modules\Activity\Traits\ActivityScopes;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Activitylog\Models\Activity as SpatieActivity;
+<<<<<<< HEAD
 use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
+=======
+>>>>>>> 6ed19256f (.)
 
 /**
  * Class Activity.
@@ -26,7 +29,11 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $log_name
  * @property string $description
  * @property string|null $subject_type
+<<<<<<< HEAD
  * @property string|null $subject_id
+=======
+ * @property int|null $subject_id
+>>>>>>> 6ed19256f (.)
  * @property string|null $causer_type
  * @property string|null $causer_id
  * @property array<string, mixed>|Collection<array-key, mixed>|null $properties
@@ -39,6 +46,10 @@ use Spatie\SchemalessAttributes\Casts\SchemalessAttributes;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
+<<<<<<< HEAD
+=======
+ *
+>>>>>>> 6ed19256f (.)
  * @property-read Model|null $causer
  * @property-read Collection<int, mixed> $changes
  * @property-read Model|null $subject
@@ -56,7 +67,12 @@ class Activity extends SpatieActivity
     /** > */
     use HasXotFactory;
 
+<<<<<<< .merge_file_zZ3mdC
     /** @var string */
+=======
+<<<<<<< HEAD
+    /** @laravel/Modules/UI/docs/bugfix-awstest-undefined-variable.md string */
+>>>>>>> .merge_file_S9rRRU
     protected $connection = 'activity';
 
     protected $table = 'activity_log';
@@ -90,6 +106,10 @@ class Activity extends SpatieActivity
         return new EloquentCollection($activities);
     }
 
+=======
+    protected $connection = 'activity';
+
+>>>>>>> 6ed19256f (.)
     /** @var list<string> */
     protected $fillable = [
         'id',
@@ -98,6 +118,7 @@ class Activity extends SpatieActivity
         'subject_type',
         'event',
         'subject_id',
+<<<<<<< HEAD
         'causer_type',
         'causer_id',
         'properties',
@@ -118,6 +139,13 @@ class Activity extends SpatieActivity
         ];
     }
 
+=======
+        'causer_type', // Added
+        'causer_id',   // Added
+        'properties', // Added
+    ];
+
+>>>>>>> 6ed19256f (.)
     // NOTE
     // ----
     // We intentionally do not override static query helper methods here

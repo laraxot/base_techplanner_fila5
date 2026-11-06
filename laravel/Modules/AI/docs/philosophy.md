@@ -58,4 +58,8 @@ The `AI` module, as the central nervous system for intelligence integration, can
 4.  **Git (MCP)**: Aids in reviewing changes to AI service configurations, prompt definitions, or RAG data models, ensuring robust and reliable intelligent features.
 5.  **Sequential Thinking (MCP)**: Crucial for analyzing complex AI workflows (e.g., multi-turn chatbots, iterative content generation), helping to break down and understand intricate intelligent processes.
 
+<<<<<<< HEAD
 By leveraging these MCPs, the `AI` module can ensure its critical role in harnessing artificial cognition is more efficient, verifiable, and transparent, ultimately contributing to a truly intelligent and adaptive application.
+=======
+By leveraging these MCPs, the `AI` module can ensure its critical role in harnessing artificial cognition is more efficient, verifiable, and transparent, ultimately contributing to a truly intelligent and adaptive application.
+>>>>>>> 6ed19256f (.)
