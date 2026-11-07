@@ -21,6 +21,7 @@ return [
         ],
         'populateCoordinates' => [
             'label' => 'Koordinaten aktualisieren',
+            'modal' => ['heading' => 'Koordinaten aktualisieren', 'description' => 'Koordinaten aller Kunden anhand ihrer Adressen aktualisieren?', 'submit_label' => 'Ja, alle aktualisieren'],
         ],
         'updateCoordinates' => [
             'label' => 'Koordinaten aktualisieren',
@@ -65,6 +66,18 @@ return [
         ],
         'distance_km' => [
             'label' => 'km',
+        ],
+        'last_rx_control_date' => [
+            'label' => 'Letzte Röntgenkontrolle',
+        ],
+        'last_intraoral_control_date' => [
+            'label' => 'Letzte intraorale Kontrolle',
+        ],
+        'last_electromedical_control_date' => [
+            'label' => 'Letzte elektromedizinische Kontrolle',
+        ],
+        'last_health_authorization_date' => [
+            'label' => 'Letzte Gesundheitszulassung',
         ],
         'is_active' => [
             'label' => 'Aktiv',
@@ -283,7 +296,38 @@ return [
             'label' => 'Aktivität',
         ],
     ],
+    'filters' => [
+        'has_controls' => ['label' => 'Hat erfasste Kontrollen'],
+        'controls_expiring' => ['label' => 'Kontrollen laufen ab (30 Tage)'],
+        'never_controlled_type' => ['label' => 'Nach Typ nie kontrolliert'],
+        'has_rx_control' => ['label' => 'Röntgenkontrolle'],
+        'has_electromedical_control' => ['label' => 'Elektromedizinische Kontrolle'],
+        'has_health_authorization' => ['label' => 'Gesundheitszulassung'],
+    ],
+    'map' => [
+        'markers_shown' => ':count Kunden-Marker mit Koordinaten werden angezeigt',
+        'aria_label' => 'Kundenkarte',
+        'set_origin' => 'Als Ursprung verwenden',
+        'set_origin_tooltip' => 'Alle Kunden nach Entfernung von diesem Punkt sortieren',
+        'origin_popup' => 'Referenzpunkt für die Entfernung',
+        'origin_set' => ['title' => 'Ausgangspunkt gesetzt', 'body' => 'Die Tabelle wurde nach Entfernung zu diesem Kunden sortiert.'],
+        'origin_missing' => ['title' => 'Koordinaten fehlen', 'body' => 'Der ausgewählte Kunde hat keine verwendbaren Koordinaten.'],
+        'origin_missing_geocode_failed' => [
+            'title' => 'Geocodierung fehlgeschlagen',
+            'body' => 'Die Adresse des Kunden konnte nicht geocodiert werden. Prüfen Sie die Adresse oder verwenden Sie "Koordinaten aktualisieren", um alle fehlenden Koordinaten zu füllen.',
+        ],
+    ],
+    'location_map' => [
+        'heading' => 'Kundenstandort',
+        'aria_label' => 'Kartenansicht des Kundenstandorts',
+        'google_maps' => 'In Google Maps öffnen',
+        'viamichelin' => 'In ViaMichelin öffnen',
+        'missing' => 'Koordinaten sind nicht verfügbar. Adresse vervollständigen und „Koordinaten aktualisieren“ verwenden.',
+    ],
     'messages' => [
+        'coordinates_batch_summary' => ':processed Kunden verarbeitet. Koordinaten für :success aktualisiert.',
+        'coordinates_batch_warning' => 'Koordinatenaktualisierung mit Fehlern abgeschlossen',
+        'coordinates_batch_success' => 'Koordinaten erfolgreich aktualisiert',
         'coordinates_updated' => 'Koordinaten erfolgreich aktualisiert',
         'coordinates_update_failed' => 'Koordinatenaktualisierung fehlgeschlagen',
         'import_success' => 'Import erfolgreich abgeschlossen',
@@ -295,8 +339,11 @@ return [
     ],
     'sections' => [
         'contacts' => [
-            'heading' => 'contacts',
-            'label' => 'contacts',
+            'heading' => 'Kontakte',
+            'label' => 'Kontakte',
+        ],
+        'address_info' => [
+            'label' => 'Adresse',
         ],
         'address' => [
             'heading' => 'address',

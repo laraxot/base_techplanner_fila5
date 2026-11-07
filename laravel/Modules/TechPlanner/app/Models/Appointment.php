@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
+use Modules\TechPlanner\Enums\AppointmentStatusEnum;
 
 /**
  * @property int $id
@@ -46,12 +47,18 @@ class Appointment extends Model
 {
     protected $fillable = [
         'client_id',
+        'worker_id',
         'date',
+        'status',
+        'outcome',
+        'reminder_sent_at',
         'notes',
     ];
 
     /**
      * Relazione con il cliente.
+     *
+     * @return BelongsTo<Client, $this>
      */
     public function client(): BelongsTo
     {
@@ -59,10 +66,34 @@ class Appointment extends Model
     }
 
     /**
+     * Relazione con il tecnico assegnato.
+     *
+     * @return BelongsTo<Worker, $this>
+     */
+    public function worker(): BelongsTo
+    {
+        return $this->belongsTo(Worker::class);
+    }
+
+    /**
      * Relazione con le macchine controllate.
+     *
+     * @return HasMany<Machine, $this>
      */
     public function machines(): HasMany
     {
         return $this->hasMany(Machine::class);
+    }
+
+    /**
+     * @return array<string, string>
+     */
+    protected function casts(): array
+    {
+        return array_merge(parent::casts(), [
+            'status' => AppointmentStatusEnum::class,
+            'date' => 'datetime',
+            'reminder_sent_at' => 'datetime',
+        ]);
     }
 }

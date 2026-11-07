@@ -36,7 +36,21 @@ class AddressSection extends XotBaseSection
 
         return $schema;
         */
-        return AddressItemEnum::getFormSchema();
+        $schema = AddressItemEnum::getFormSchema();
+
+        // Contact values belong to Notify\ContactSection, not to the address block.
+        // 'notes' è esclusa perché i form che usano questa section definiscono
+        // il proprio campo note canonico: senza, due input condividono lo
+        // stesso state path.
+        return array_diff_key($schema, array_flip([
+            'phone',
+            'mobile',
+            'fax',
+            'pec',
+            'whatsapp',
+            'email',
+            'notes',
+        ]));
     }
 
     /*

@@ -12,6 +12,7 @@ use Modules\Geo\Enums\AddressItemEnum;
 use Modules\Geo\Models\Address;
 use Modules\Geo\Models\Traits\GeoTrait;
 use Modules\Geo\Models\Traits\HasAddress;
+use Modules\TechPlanner\Enums\ControlTypeEnum;
 use Modules\Xot\Models\Traits\HasDynamicFillable;
 use Override;
 use UnitEnum;
@@ -198,6 +199,51 @@ class Client extends BaseModel
     public function devices(): HasMany
     {
         return $this->hasMany(Device::class);
+    }
+
+    /**
+     * Controlli tecnici e sanitari unificati del cliente.
+     *
+     * @return HasMany<Control, $this>
+     */
+    public function controls(): HasMany
+    {
+        return $this->hasMany(Control::class);
+    }
+
+    /**
+     * Aggiunge alla lista le ultime date per i controlli operativi.
+     *
+     * @param  Builder<Client>  $query
+     * @return Builder<Client>
+     */
+    public function scopeWithLatestControlDates(Builder $query): Builder
+    {
+        $controlQuery = Control::query();
+        if (! $controlQuery->getModel()->getConnection()->getSchemaBuilder()->hasTable('controls')) {
+            return $query;
+        }
+
+        $table = $query->getModel()->getTable();
+
+        return $query->addSelect([
+            'last_rx_control_date' => (clone $controlQuery)
+                ->selectRaw('MAX(control_date)')
+                ->whereColumn('controls.client_id', $table.'.id')
+                ->where('control_type', ControlTypeEnum::RX->value),
+            'last_intraoral_control_date' => (clone $controlQuery)
+                ->selectRaw('MAX(control_date)')
+                ->whereColumn('controls.client_id', $table.'.id')
+                ->where('control_type', ControlTypeEnum::INTRAORAL->value),
+            'last_electromedical_control_date' => (clone $controlQuery)
+                ->selectRaw('MAX(control_date)')
+                ->whereColumn('controls.client_id', $table.'.id')
+                ->where('control_type', ControlTypeEnum::ELECTROMEDICAL->value),
+            'last_health_authorization_date' => (clone $controlQuery)
+                ->selectRaw('MAX(control_date)')
+                ->whereColumn('controls.client_id', $table.'.id')
+                ->where('control_type', ControlTypeEnum::HEALTH_AUTHORIZATION->value),
+        ]);
     }
 
     /**

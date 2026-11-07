@@ -130,5 +130,16 @@
         "updated_at": "2026-11-06T12:15:59.000000Z",
         "created_at": "2026-11-06T12:15:59.000000Z",
         "table_rows": 0
+    },
+    {
+        "created_at": "2026-11-07T07:11:22.000000Z",
+        "created_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "id": "20",
+        "model_class": "Modules\\TechPlanner\\Models\\Control",
+        "table_name": "controls",
+        "table_rows": 0,
+        "table_schema": "techplanner_data",
+        "updated_at": "2026-11-07T07:15:12.000000Z",
+        "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96"
     }
 ]

@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+return [
     'options' => [
         'statuses' => [
             'scheduled' => 'Scheduled',
@@ -25,5 +30,12 @@
             'high' => 'High',
             'urgent' => 'Urgent',
         ],
+    ],
+    'reminder' => [
+        'subject' => 'Appointment reminder',
+        'client_body' => 'Dear :client, this is a reminder of your appointment scheduled for :date.',
+        'admin_subject' => 'Appointments agenda for :date',
+        'admin_body' => 'Scheduled appointments (:count):',
+        'action_text' => 'View appointments',
     ],
 ];

@@ -76,5 +76,10 @@ return [
             'icon' => 'edit',
             'tooltip' => 'edit',
         ],
+        'sendRecordsNotification' => [
+            'tooltip' => 'sendRecordsNotification',
+            'icon' => 'sendRecordsNotification',
+            'label' => 'sendRecordsNotification',
+        ],
     ],
 ];

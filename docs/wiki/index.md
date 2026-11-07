@@ -33,6 +33,7 @@ Root wiki per regole e concetti riusabili dagli agenti AI su TechPlanner.
 
 ## Audit
 
+- [Audit documentazione TechPlanner](../../laravel/Modules/TechPlanner/docs/audits/techplanner-documentation-audit.md)
 - [Audit completo del progetto (sintesi pubblica)](../stories/project-audit.story.md): 500 finding grezzi, 10 cause radice; evidenze e azioni solo nel report riservato `bashscripts/docs/audit/`
 - [SEO head canonico del tema Two](../stories/seo-head-maximum-schema-org-hreflang.story.md): Cms Head, hreflang, robots e Schema.org
 

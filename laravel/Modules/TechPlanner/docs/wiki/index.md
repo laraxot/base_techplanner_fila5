@@ -48,10 +48,12 @@ bashscripts/docs/llm-wiki-qmd.sh search "TechPlanner client" -c tp-mod-techplann
 1. **Client** come entità centrale — anagrafica, geo, contatti, uffici legali
 2. **Device / Machine** — verifiche, scadenze, relation manager su Client
 3. **Appointment** — pianificazione visite, partecipanti, worker
-4. **Filament admin** — risorse XotBase, widget mappa (Geo), enum in fillable
+4. **Control** — controlli STI unificati e date di ultima verifica
+5. **Filament admin** — risorse XotBase, widget mappa (Geo), enum in fillable
 
 ## Audit del modulo
 
+- [techplanner-documentation-audit](../audits/techplanner-documentation-audit.md) — allineamento BMAD/ECC/second-brain e contratti del dominio.
 - [seo-head-deep-verification](./audits/seo-head-deep-verification.md) — verifica SEO specifica del sito TechPlanner e Theme Two.
 - [module-techplanner-audit](./audits/module-techplanner-audit.md) — audit del dominio e delle risorse Filament del modulo.
 - [site-reaudit](./audits/site-reaudit.md) — sintesi del re-audit del sito live su 12 aspetti, correzioni e piano per priorita'.

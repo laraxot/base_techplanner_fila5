@@ -286,6 +286,17 @@ return [
             'icon' => 'heroicon-o-user',
         ],
     ],
+        'worker_id' => [
+            'label' => 'Tecnico',
+            'placeholder' => 'Seleziona il tecnico',
+        ],
+        'outcome' => [
+            'label' => 'Esito',
+            'placeholder' => 'Esito del sopralluogo',
+        ],
+        'reminder_sent_at' => [
+            'label' => 'Promemoria inviato',
+        ],
     'filters' => [
         'status' => [
             'label' => 'Stato',
@@ -370,4 +381,11 @@ return [
         ],
     ],
     'label' => 'appointment',
+    'reminder' => [
+        'subject' => 'Promemoria appuntamento',
+        'client_body' => 'Gentile :client, le ricordiamo il suo appuntamento previsto il :date.',
+        'admin_subject' => 'Agenda appuntamenti del :date',
+        'admin_body' => 'Appuntamenti previsti (:count):',
+        'action_text' => 'Vedi appuntamenti',
+    ],
 ];

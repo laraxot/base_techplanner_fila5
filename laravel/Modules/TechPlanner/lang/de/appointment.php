@@ -1,3 +1,8 @@
+<?php
+
+declare(strict_types=1);
+
+return [
     'options' => [
         'statuses' => [
             'scheduled' => 'Geplant',
@@ -25,5 +30,12 @@
             'high' => 'Hoch',
             'urgent' => 'Dringend',
         ],
+    ],
+    'reminder' => [
+        'subject' => 'Terminerinnerung',
+        'client_body' => 'Sehr geehrte(r) :client, wir erinnern Sie an Ihren Termin am :date.',
+        'admin_subject' => 'Termine für den :date',
+        'admin_body' => 'Geplante Termine (:count):',
+        'action_text' => 'Termine ansehen',
     ],
 ];
