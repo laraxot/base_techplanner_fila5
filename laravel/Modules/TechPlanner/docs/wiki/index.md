@@ -25,8 +25,9 @@ Modulo **dominio business** del progetto: gestione clienti, dispositivi, appunta
 
 - [ai-harness-techplanner-discipline](./concepts/ai-harness-techplanner-discipline.md)
 - [techplanner-business-domain](./concepts/techplanner-business-domain.md) — **perché** del modulo
+- [client-coordinate-editing-ux](./concepts/client-coordinate-editing-ux.md) — UX e contratto di aggiornamento coordinate
 - [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
-- [cursor-second-brain-max-workflow](../../../../../docs/wiki/skills/cursor-second-brain-max-workflow.md)
+- [cursor-second-brain-max-workflow](../../../../bashscripts/ai/wiki/skills/cursor-second-brain-max-workflow.md)
 
 ## QMD
 
@@ -40,7 +41,7 @@ bashscripts/docs/llm-wiki-qmd.sh search "TechPlanner client" -c tp-mod-techplann
 |----------|-----------|
 | [concepts/](./concepts/INDEX.md) | Business logic, pattern Filament, harness |
 | [entities/](./entities/INDEX.md) | Modelli core (Client, Device, Appointment) |
-| [troubleshooting/](./troubleshooting/) | Runbook errori noti |
+| [audits/](../audits/) | Report audit e quality gate |
 | [../](../00-index.md) | Corpus sorgente legacy (`docs/` non-wiki) |
 
 ## Scopo operativo

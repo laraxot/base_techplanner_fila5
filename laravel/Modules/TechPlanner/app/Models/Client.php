@@ -174,14 +174,25 @@ class Client extends BaseModel
         if ($value !== null) {
             return (string) $value;
         }
-        $address = sprintf(
-            '%s, %s - %s, %s (%s)',
-            (string) ($this->route ?? ''),
-            (string) ($this->street_number ?? ''),
-            (string) ($this->postal_code ?? ''),
-            (string) ($this->city ?? ''),
-            (string) ($this->province ?? ''),
-        );
+        $route = (string) ($this->route ?? '');
+
+        // Campi già contenuti in `route` (import legacy: route = indirizzo
+        // completo) vengono saltati per non duplicare token nel query di
+        // geocoding ("... PD 12 - 35020, , ()" confonde il geocoder).
+        $parts = [$route];
+        foreach (['street_number', 'postal_code', 'city', 'province'] as $field) {
+            $value = $this->getAttribute($field);
+            if (! is_string($value) && ! is_int($value)) {
+                continue;
+            }
+            $value = (string) $value;
+            if ($value === '' || ($route !== '' && mb_stripos($route, $value) !== false)) {
+                continue;
+            }
+            $parts[] = $value;
+        }
+
+        $address = implode(' ', $parts);
 
         $replaced = preg_replace('/[,\s]+/', ' ', $address);
         if ($replaced === null || is_array($replaced)) {

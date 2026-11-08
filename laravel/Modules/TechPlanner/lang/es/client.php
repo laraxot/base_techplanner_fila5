@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 return [
     'actions' => [
+        'geocodeCoordinates' => [
+            'label' => 'Actualizar desde dirección',
+            'failed_title' => 'Geocodificación fallida',
+            'success_title' => 'Coordenadas actualizadas desde la dirección',
+        ],
         'populateCoordinates' => [
             'modal' => ['heading' => 'Actualizar coordenadas', 'description' => '¿Actualizar las coordenadas de todos los clientes a partir de sus direcciones?', 'submit_label' => 'Sí, actualizar todo'],
         ],
@@ -54,7 +59,7 @@ return [
         'aria_label' => 'Mapa de la ubicación del cliente',
         'google_maps' => 'Abrir en Google Maps',
         'viamichelin' => 'Abrir en ViaMichelin',
-        'missing' => 'No hay coordenadas. Completa la dirección y usa “Actualizar coordenadas”.',
+        'missing' => 'No hay coordenadas. Completa la dirección y usa “Actualizar desde dirección” en la sección Coordenadas.',
     ],
     'messages' => [
         'coordinates_batch_summary' => 'Procesados :processed clientes. Coordenadas actualizadas para :success.',
@@ -62,6 +67,10 @@ return [
         'coordinates_batch_success' => 'Coordenadas actualizadas correctamente',
     ],
     'sections' => [
+        'coordinates' => [
+            'label' => 'Coordenadas',
+            'description' => 'Latitud y longitud del cliente. Guarda primero la dirección y actualiza aquí las coordenadas para distancia y mapa.',
+        ],
         'contacts' => [
             'heading' => 'Contactos',
             'label' => 'Contactos',

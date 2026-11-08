@@ -4,10 +4,10 @@ Regole, skill e memorie vivono solo in `docs/wiki/`. Caricamento on-demand via Q
 
 ## Read First
 
-1. [Bootstrap compatto](docs/wiki/concepts/agent-bootstrap-compact.md)
-2. [Trigger Map](docs/wiki/rules/00-TRIGGER_MAP.md) — una riga per task
+1. [Bootstrap compatto](bashscripts/ai/wiki/concepts/agent-bootstrap-compact.md)
+2. [Trigger Map](bashscripts/ai/wiki/rules/00-TRIGGER_MAP.md) — una riga per task
 3. `bashscripts/docs/second-brain-healthcheck.sh "<topic>"`
-4. `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -c techplanner-wiki -n 5 --files`
+4. `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -n 5 --files`
 5. Prompt harness: [bashscripts/tools/prompts/llm-wiki.txt](bashscripts/tools/prompts/llm-wiki.txt)
 
 ## Laravel app

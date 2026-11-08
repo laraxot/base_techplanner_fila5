@@ -286,17 +286,23 @@ return [
             'icon' => 'heroicon-o-user',
         ],
     ],
-        'worker_id' => [
-            'label' => 'Tecnico',
-            'placeholder' => 'Seleziona il tecnico',
-        ],
-        'outcome' => [
-            'label' => 'Esito',
-            'placeholder' => 'Esito del sopralluogo',
-        ],
-        'reminder_sent_at' => [
-            'label' => 'Promemoria inviato',
-        ],
+    'worker_id' => [
+        'label' => 'Tecnico',
+        'placeholder' => 'Seleziona il tecnico',
+    ],
+    'duration_minutes' => [
+        'label' => 'Durata (minuti)',
+        'placeholder' => '60',
+        'helper_text' => 'Durata prevista dell\'appuntamento, usata per rilevare conflitti di agenda',
+        'suffix' => 'min',
+    ],
+    'outcome' => [
+        'label' => 'Esito',
+        'placeholder' => 'Esito del sopralluogo',
+    ],
+    'reminder_sent_at' => [
+        'label' => 'Promemoria inviato',
+    ],
     'filters' => [
         'status' => [
             'label' => 'Stato',
@@ -345,6 +351,7 @@ return [
         'date_after' => 'La data deve essere futura',
         'time_format' => 'L\'ora deve essere in formato HH:MM',
         'notes_max' => 'Le note non possono superare i :max caratteri',
+        'conflict' => 'Il tecnico :worker ha già un appuntamento il :date in questa fascia oraria.',
     ],
     'descriptions' => [
         'appointment_purpose' => 'Gestione completa degli appuntamenti e prenotazioni',

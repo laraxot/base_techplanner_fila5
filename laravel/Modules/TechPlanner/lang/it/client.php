@@ -10,6 +10,11 @@ return [
         'sort' => 30,
     ],
     'actions' => [
+        'geocodeCoordinates' => [
+            'label' => 'Aggiorna da indirizzo',
+            'failed_title' => 'Geocoding non riuscito',
+            'success_title' => 'Coordinate aggiornate dall\'indirizzo',
+        ],
         'create' => [
             'label' => 'Nuovo Cliente',
             'tooltip' => 'create',
@@ -157,6 +162,9 @@ return [
             'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
             'label' => 'resetColumnManager',
+        ],
+        'submit' => [
+            'tooltip' => 'submit',
         ],
     ],
     'fields' => [
@@ -386,6 +394,7 @@ return [
             'description' => 'isActive',
             'helper_text' => 'isActive',
             'placeholder' => 'isActive',
+            'label' => 'isActive',
         ],
     ],
     'import' => [
@@ -474,7 +483,7 @@ return [
         'aria_label' => 'Mappa della posizione del cliente',
         'google_maps' => 'Apri in Google Maps',
         'viamichelin' => 'Apri in ViaMichelin',
-        'missing' => 'Coordinate non disponibili. Completa l’indirizzo e usa “Aggiorna Coordinate”.',
+        'missing' => 'Coordinate non disponibili. Completa l’indirizzo e usa “Aggiorna da indirizzo” nella sezione Coordinate.',
     ],
     'messages' => [
         'coordinates_batch_summary' => 'Elaborati :processed clienti. Coordinate aggiornate per :success.',
@@ -490,6 +499,10 @@ return [
         'plural' => 'Clienti',
     ],
     'sections' => [
+        'coordinates' => [
+            'label' => 'Coordinate',
+            'description' => 'Latitudine e longitudine del cliente. Salva prima l’indirizzo, poi aggiorna qui le coordinate per distanza e mappa.',
+        ],
         'contacts' => [
             'heading' => 'Contatti',
             'label' => 'Contatti',

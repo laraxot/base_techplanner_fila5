@@ -31,6 +31,15 @@ return [
             'urgent' => 'Dringend',
         ],
     ],
+    'fields' => [
+        'duration_minutes' => [
+            'label' => 'Dauer (Minuten)',
+            'suffix' => 'Min.',
+        ],
+    ],
+    'validation' => [
+        'conflict' => 'Der Mitarbeiter :worker hat am :date bereits einen Termin in diesem Zeitfenster.',
+    ],
     'reminder' => [
         'subject' => 'Terminerinnerung',
         'client_body' => 'Sehr geehrte(r) :client, wir erinnern Sie an Ihren Termin am :date.',

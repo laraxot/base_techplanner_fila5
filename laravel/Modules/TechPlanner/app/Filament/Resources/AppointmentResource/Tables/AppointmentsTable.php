@@ -26,9 +26,13 @@ class AppointmentsTable extends XotBaseResourceTable
             // Telefono: la card ha una riga per colonna. Per aprire un appuntamento servono cliente e quando;
             // id e date di sistema sono nascosti di default (riattivabili dal selettore colonne), le note da `md`.
             'id' => IDColumn::make('id')->toggleable(isToggledHiddenByDefault: true),
-            'client.name' => TextColumn::make('client.name')->searchable()->sortable(),
+            'client.company_name' => TextColumn::make('client.company_name')->searchable()->sortable(),
             'worker.full_name' => TextColumn::make('worker.full_name')->placeholder('—')->toggleable(),
             'date' => TextColumn::make('date')->dateTime()->sortable(),
+            'duration_minutes' => TextColumn::make('duration_minutes')
+                ->suffix(' '.__('techplanner::appointment.fields.duration_minutes.suffix'))
+                ->placeholder('—')
+                ->toggleable(),
             'status' => TextColumn::make('status')
                 ->badge()
                 ->formatStateUsing(static fn ($state): string => $state instanceof AppointmentStatusEnum ? $state->getLabel() : (is_string($state) ? $state : ''))

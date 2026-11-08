@@ -11,13 +11,17 @@
         : null;
 @endphp
 
-<x-filament::section :heading="__('techplanner::client.location_map.heading')">
+<div>
+    <h3 class="text-sm font-semibold leading-6 text-gray-950 dark:text-white mb-3">
+        {{ __('techplanner::client.location_map.heading') }}
+    </h3>
     @if ($hasCoordinates)
         <link rel="stylesheet" href="{{ $asset_base }}/leaflet.css">
         <div
             id="{{ $mapId }}"
             role="region"
             aria-label="{{ __('techplanner::client.location_map.aria_label') }}"
+            tabindex="0"
             style="height: 300px; width: 100%; border-radius: 0.5rem;"
         ></div>
         <div class="mt-3 flex flex-wrap gap-2">
@@ -36,7 +40,7 @@
             {{ __('techplanner::client.location_map.missing') }}
         </p>
     @endif
-</x-filament::section>
+</div>
 
 @if ($hasCoordinates)
     @script

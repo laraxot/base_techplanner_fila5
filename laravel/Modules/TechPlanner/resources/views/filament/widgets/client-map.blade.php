@@ -47,116 +47,123 @@ declare(strict_types=1);
 
 @script
 <script>
-    const clientMapId = @js($mapId);
-    const clientMapMarkers = @js($markers);
-    const clientMapOrigin = @js($origin);
-    const clientMapAssetBase = @js($asset_base);
+    (() => {
+        const mapId = @js($mapId);
+        const markers = @js($markers);
+        const origin = @js($origin);
+        const assetBase = @js($asset_base);
+        const state = window.TechPlannerClientMaps ??= {};
 
-    window.clientMapEscape = function (value) {
-        return String(value ?? '')
+        state.escape ??= (value) => String(value ?? '')
             .replace(/&/g, '&amp;')
             .replace(/</g, '&lt;')
             .replace(/>/g, '&gt;')
             .replace(/"/g, '&quot;')
             .replace(/'/g, '&#39;');
-    };
+        state.setOrigin = (clientId) => $wire.setDistanceOrigin(clientId);
 
-    window.clientMapSetOrigin = function (clientId) {
-        $wire.setDistanceOrigin(clientId);
-    };
+        const initialize = () => {
+            const element = document.getElementById(mapId);
+            if (!element || typeof window.L === 'undefined') {
+                return false;
+            }
+            if (element.dataset.clientMapReady === '1') {
+                state.maps?.[mapId]?.invalidateSize();
+                return true;
+            }
 
-    function initClientMap() {
-        const el = document.getElementById(clientMapId);
-        if (!el || typeof L === 'undefined') {
-            return false;
-        }
-        if (el.dataset.clientMapReady === '1') {
+            const map = window.L.map(element, { scrollWheelZoom: false });
+            state.maps ??= {};
+            state.maps[mapId] = map;
+            element.dataset.clientMapReady = '1';
+            window.L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                maxZoom: 19,
+                attribution: '&copy; OpenStreetMap contributors',
+            }).addTo(map);
+
+            const bounds = [];
+            markers.filter((marker) => marker.latitude !== null && marker.longitude !== null
+                && Number.isFinite(Number(marker.latitude)) && Number.isFinite(Number(marker.longitude)))
+                .forEach((marker) => {
+                    const latitude = Number(marker.latitude);
+                    const longitude = Number(marker.longitude);
+                    const icon = window.L.divIcon({
+                        className: 'client-map-marker',
+                        html: '<span class="client-map-marker-dot"></span>',
+                        iconSize: [14, 14],
+                        iconAnchor: [7, 7],
+                    });
+                    const clientMarker = window.L.marker([latitude, longitude], { icon }).addTo(map);
+                    bounds.push([latitude, longitude]);
+                    const markerEl = clientMarker.getElement();
+                    if (markerEl) {
+                        markerEl.setAttribute('tabindex', '0');
+                        markerEl.setAttribute('role', 'button');
+                        markerEl.setAttribute('aria-label', marker.label);
+                        markerEl.addEventListener('keydown', (event) => {
+                            if (event.key === 'Enter' || event.key === ' ') {
+                                event.preventDefault();
+                                clientMarker.openPopup();
+                            }
+                        });
+                    }
+                    const rows = [
+                        marker.address ? `<div>${state.escape(marker.address)}</div>` : '',
+                        marker.phone ? `<div><a href="tel:${state.escape(marker.phone)}">${state.escape(marker.phone)}</a></div>` : '',
+                    ].join('');
+                    clientMarker.bindPopup(`
+                        <div class="client-map-popup" style="min-width: 200px;">
+                            <strong>${state.escape(marker.label)}</strong>${rows}
+                            <div style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap;">
+                                <a class="fi-btn fi-btn-color-gray fi-btn-size-sm" href="${state.escape(marker.view_url)}">{{ trans('filament-actions::modal.view.actions.view.label') }}</a>
+                                <a class="fi-btn fi-btn-color-gray fi-btn-size-sm" href="${state.escape(marker.edit_url)}">{{ trans('filament-actions::modal.edit.actions.edit.label') }}</a>
+                                <button type="button" class="fi-btn fi-btn-color-primary fi-btn-size-sm" onclick="window.TechPlannerClientMaps.setOrigin(${Number(marker.id)})">{{ trans('techplanner::client.map.set_origin') }}</button>
+                            </div>
+                        </div>
+                    `);
+                });
+
+            if (Number.isFinite(Number(origin.latitude)) && Number.isFinite(Number(origin.longitude))) {
+                const latitude = Number(origin.latitude);
+                const longitude = Number(origin.longitude);
+                window.L.marker([latitude, longitude], {
+                    icon: window.L.divIcon({
+                        className: 'client-map-origin-marker',
+                        html: '<span class="client-map-origin-dot"></span>',
+                        iconSize: [18, 18],
+                        iconAnchor: [9, 9],
+                    }),
+                }).addTo(map).bindPopup({ content: @js(trans('techplanner::client.map.origin_popup')) });
+                bounds.push([latitude, longitude]);
+            }
+
+            if (bounds.length === 1) {
+                map.setView(bounds[0], 14);
+            } else if (bounds.length > 1) {
+                map.fitBounds(bounds, { padding: [30, 30], maxZoom: 13 });
+            } else {
+                map.setView([41.8719, 12.5674], 6);
+            }
+
+            [0, 150, 500].forEach((delay) => window.setTimeout(() => map.invalidateSize(), delay));
+            if (window.ResizeObserver) {
+                new ResizeObserver(() => map.invalidateSize()).observe(element);
+            }
             return true;
-        }
-        el.dataset.clientMapReady = '1';
+        };
 
-        const map = L.map(el, { scrollWheelZoom: false });
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '&copy; OpenStreetMap contributors',
-        }).addTo(map);
-
-        const bounds = [];
-        const validMarkers = clientMapMarkers.filter((m) =>
-            m.latitude !== null && m.longitude !== null &&
-            isFinite(m.latitude) && isFinite(m.longitude)
-        );
-
-        validMarkers.forEach((marker) => {
-            const icon = L.divIcon({
-                className: 'client-map-marker',
-                html: '<span class="client-map-marker-dot"></span>',
-                iconSize: [14, 14],
-                iconAnchor: [7, 7],
-            });
-
-            const clientMarker = L.marker([marker.latitude, marker.longitude], { icon })
-                .addTo(map);
-            bounds.push([marker.latitude, marker.longitude]);
-
-            const rows = [
-                marker.address ? `<div>${window.clientMapEscape(marker.address)}</div>` : '',
-                marker.phone ? `<div><a href="tel:${window.clientMapEscape(marker.phone)}">${window.clientMapEscape(marker.phone)}</a></div>` : '',
-            ].join('');
-
-            clientMarker.bindPopup(`
-                <div class="client-map-popup" style="min-width: 200px;">
-                    <strong>${window.clientMapEscape(marker.label)}</strong>
-                    ${rows}
-                    <div style="margin-top: 6px; display: flex; gap: 6px; flex-wrap: wrap;">
-                        <a class="fi-btn fi-btn-color-gray fi-btn-size-sm" href="${window.clientMapEscape(marker.view_url)}">
-                            {{ trans('filament-actions::modal.view.actions.view.label') }}
-                        </a>
-                        <a class="fi-btn fi-btn-color-gray fi-btn-size-sm" href="${window.clientMapEscape(marker.edit_url)}">
-                            {{ trans('filament-actions::modal.edit.actions.edit.label') }}
-                        </a>
-                        <button type="button" class="fi-btn fi-btn-color-primary fi-btn-size-sm"
-                                onclick="clientMapSetOrigin(${Number(marker.id)})">
-                            {{ trans('techplanner::client.map.set_origin') }}
-                        </button>
-                    </div>
-                </div>
-            `);
-        });
-
-        if (clientMapOrigin.latitude !== null && clientMapOrigin.longitude !== null &&
-            isFinite(clientMapOrigin.latitude) && isFinite(clientMapOrigin.longitude)) {
-            L.marker([clientMapOrigin.latitude, clientMapOrigin.longitude], {
-                icon: L.divIcon({
-                    className: 'client-map-origin-marker',
-                    html: '<span class="client-map-origin-dot"></span>',
-                    iconSize: [18, 18],
-                    iconAnchor: [9, 9],
-                }),
-            }).addTo(map)
-                .bindPopup({ content: @js(trans('techplanner::client.map.origin_popup')) });
-            bounds.push([clientMapOrigin.latitude, clientMapOrigin.longitude]);
-        }
-
-        if (bounds.length === 1) {
-            map.setView(bounds[0], 14);
-        } else if (bounds.length > 1) {
-            map.fitBounds(bounds, { padding: [30, 30], maxZoom: 13 });
+        const leafletScript = document.querySelector('script[data-client-map-leaflet]');
+        if (typeof window.L !== 'undefined') {
+            initialize();
+        } else if (leafletScript) {
+            leafletScript.addEventListener('load', initialize, { once: true });
         } else {
-            map.setView([41.8719, 12.5674], 6);
+            const script = document.createElement('script');
+            script.src = `${assetBase}/leaflet.js`;
+            script.dataset.clientMapLeaflet = '1';
+            script.onload = initialize;
+            document.head.appendChild(script);
         }
-
-        return true;
-    }
-
-    if (typeof L === 'undefined' && !document.querySelector('script[data-client-map-leaflet]')) {
-        const script = document.createElement('script');
-        script.src = `${clientMapAssetBase}/leaflet.js`;
-        script.dataset.clientMapLeaflet = '1';
-        script.onload = () => initClientMap();
-        document.body.appendChild(script);
-    } else if (typeof L !== 'undefined') {
-        initClientMap();
-    }
+    })();
 </script>
 @endscript

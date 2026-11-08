@@ -31,6 +31,15 @@ return [
             'urgent' => 'Urgent',
         ],
     ],
+    'fields' => [
+        'duration_minutes' => [
+            'label' => 'Duration (minutes)',
+            'suffix' => 'min',
+        ],
+    ],
+    'validation' => [
+        'conflict' => 'The worker :worker already has an appointment on :date in this time slot.',
+    ],
     'reminder' => [
         'subject' => 'Appointment reminder',
         'client_body' => 'Dear :client, this is a reminder of your appointment scheduled for :date.',

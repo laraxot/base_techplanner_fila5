@@ -41,6 +41,12 @@
         <testsuite name="Notify">
             <directory>Modules/Notify/tests</directory>
         </testsuite>
+        <testsuite name="Seo">
+            <directory>Modules/Seo/tests</directory>
+        </testsuite>
+        <testsuite name="Themes">
+            <directory>Themes</directory>
+        </testsuite>
         <testsuite name="TechPlanner">
             <directory>Modules/TechPlanner/tests</directory>
         </testsuite>

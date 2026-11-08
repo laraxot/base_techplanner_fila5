@@ -52,7 +52,7 @@ class ControlForm extends XotBaseResourceForm
             'appointment_id' => Select::make('appointment_id')
                 ->relationship('appointment', 'date')
                 ->getOptionLabelFromRecordUsing(
-                    static fn (Appointment $appointment): string => $appointment->date
+                    static fn (Appointment $appointment): string => $appointment->date?->format('d/m/Y H:i')
                         ?: 'Appointment #'.SafeStringCastAction::cast($appointment->getKey()),
                 )
                 ->searchable(),

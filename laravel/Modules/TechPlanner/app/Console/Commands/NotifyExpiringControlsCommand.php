@@ -61,7 +61,15 @@ class NotifyExpiringControlsCommand extends Command
 
         /** @var array<string, int> $byType */
         $byType = $controls
-            ->groupBy('control_type')
+            ->groupBy(static function (Control $control): string {
+                $type = $control->getAttribute('control_type');
+
+                if ($type instanceof \BackedEnum) {
+                    return (string) $type->value;
+                }
+
+                return is_scalar($type) ? (string) $type : '';
+            })
             ->map(static fn ($group): int => $group->count())
             ->all();
 

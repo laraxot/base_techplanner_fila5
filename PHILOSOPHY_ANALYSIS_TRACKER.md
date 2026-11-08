@@ -47,7 +47,7 @@ All files follow pattern: `/laravel/Modules/<ModuleName>/docs/PHILOSOPHY.md`
 ✓ Geo/docs/PHILOSOPHY.md
 ✓ Notify/docs/PHILOSOPHY.md
 ✓ Media/docs/PHILOSOPHY.md
-✓ TechPlanner/docs/PHILOSOPHY.md
+✓ TechPlanner/docs/concepts/vision-and-philosophy.md
 ✓ Employee/docs/PHILOSOPHY.md
 ✓ Job/docs/PHILOSOPHY.md
 ✓ Cms/docs/PHILOSOPHY.md

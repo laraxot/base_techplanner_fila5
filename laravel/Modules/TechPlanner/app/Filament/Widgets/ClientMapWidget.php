@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
 use Modules\TechPlanner\Filament\Resources\ClientResource;
 use Modules\TechPlanner\Models\Client;
-use Modules\Xot\Filament\Widgets\XotBaseWidget;
 use Modules\Xot\Actions\Cast\SafeFloatCastAction;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class ClientMapWidget extends XotBaseWidget
 {

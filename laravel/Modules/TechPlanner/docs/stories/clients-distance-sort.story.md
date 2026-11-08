@@ -84,7 +84,7 @@ combined table filters. The correlated date scope is guarded while the pending
 controls migration is not yet applied.
 
 Competitive rationale and the next product slices are recorded in
-`../competitive-analysis-field-controls-2026-11-06.md` and the Filament
+`../competitive-analysis-field-controls.md` and the Filament
 blueprint.
 
 ## Map widget and table consolidation (continuation)
@@ -117,3 +117,40 @@ into `ClientsTable` (the class Xot actually uses to build the Filament table).
   view/edit URLs, origin null-safe.
 - Blade compiles; `@script`/`$wire` is Livewire 4 `SupportScriptsAndAssets`.
 - Pending: browser check of map render + popup actions after deploy.
+
+## Map visibility hardening — 2026-11-07
+
+The browser report was investigated against the current checkout. The Filament
+header-widget hook, widget view, explicit map height, and self-hosted Leaflet
+assets are present. The fragile part was the client-side lifecycle: the view
+declared top-level JavaScript identifiers, did not handle an already-loading
+Leaflet script, and did not invalidate the map size after lazy rendering.
+
+The widget now scopes its state under `window.TechPlannerClientMaps`, waits for
+the shared Leaflet script when necessary, guards duplicate initialization, and
+invalidates the map after initial render and resize. This prevents a blank map
+after Livewire/Filament schema rendering while preserving the existing marker
+and popup actions.
+
+Runtime browser verification remains required on the deployed host: the map
+container, `leaflet-container`, Leaflet asset requests, OSM tiles, and popup
+actions must be checked in DevTools after deployment.
+
+## Client edit coordinate subsection — 2026-11-07
+
+The Client edit form keeps `latitude` and `longitude` in a dedicated
+`ClientCoordinatesSection` based on `XotBaseSection`, nested inside the
+`AddressSection` via its `extraComponents()` hook (Geo shared component).
+The section validates both ranges and exposes a header action that geocodes
+the persisted address and updates both fields together. Address/contact
+fields remain in their respective sections.
+
+Acceptance evidence:
+
+- the coordinate subsection renders inside the address section, before the
+  single-client map;
+- the action reports a recoverable warning when the saved address is empty or
+  cannot be geocoded;
+- successful geocoding updates both inputs without saving unrelated dirty form
+  fields;
+- the map and external map links continue to use the saved coordinates.

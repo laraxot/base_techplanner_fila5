@@ -10,6 +10,11 @@ return [
         'sort' => 30,
     ],
     'actions' => [
+        'geocodeCoordinates' => [
+            'label' => 'Aus Adresse aktualisieren',
+            'failed_title' => 'Geocodierung fehlgeschlagen',
+            'success_title' => 'Koordinaten aus Adresse aktualisiert',
+        ],
         'create' => [
             'label' => 'Neuer Kunde',
         ],
@@ -322,7 +327,7 @@ return [
         'aria_label' => 'Kartenansicht des Kundenstandorts',
         'google_maps' => 'In Google Maps öffnen',
         'viamichelin' => 'In ViaMichelin öffnen',
-        'missing' => 'Koordinaten sind nicht verfügbar. Adresse vervollständigen und „Koordinaten aktualisieren“ verwenden.',
+        'missing' => 'Koordinaten sind nicht verfügbar. Adresse vervollständigen und „Aus Adresse aktualisieren“ im Abschnitt Koordinaten verwenden.',
     ],
     'messages' => [
         'coordinates_batch_summary' => ':processed Kunden verarbeitet. Koordinaten für :success aktualisiert.',
@@ -338,6 +343,10 @@ return [
         'plural' => 'Kunden',
     ],
     'sections' => [
+        'coordinates' => [
+            'label' => 'Koordinaten',
+            'description' => 'Breiten- und Längengrad des Kunden. Adresse zuerst speichern, dann hier die Koordinaten für Entfernung und Karte aktualisieren.',
+        ],
         'contacts' => [
             'heading' => 'Kontakte',
             'label' => 'Kontakte',

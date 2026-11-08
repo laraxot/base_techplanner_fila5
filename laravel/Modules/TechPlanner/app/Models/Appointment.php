@@ -15,7 +15,10 @@ use Modules\TechPlanner\Enums\AppointmentStatusEnum;
 /**
  * @property int $id
  * @property int $client_id
- * @property string $date
+ * @property int|null $worker_id
+ * @property Carbon|null $date
+ * @property int $duration_minutes
+ * @property string|null $status
  * @property string|null $notes
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
@@ -49,11 +52,22 @@ class Appointment extends Model
         'client_id',
         'worker_id',
         'date',
+        'duration_minutes',
         'status',
         'outcome',
         'reminder_sent_at',
         'notes',
     ];
+
+    /**
+     * Istante di fine dell'appuntamento (date + duration_minutes).
+     */
+    public function endAt(): Carbon
+    {
+        $start = $this->date ?? Carbon::now();
+
+        return $start->copy()->addMinutes($this->duration_minutes);
+    }
 
     /**
      * Relazione con il cliente.
@@ -93,6 +107,7 @@ class Appointment extends Model
         return array_merge(parent::casts(), [
             'status' => AppointmentStatusEnum::class,
             'date' => 'datetime',
+            'duration_minutes' => 'integer',
             'reminder_sent_at' => 'datetime',
         ]);
     }

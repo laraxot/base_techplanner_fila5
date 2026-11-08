@@ -40,7 +40,7 @@ Only documentation under the approved paths was eligible for change.
 ## Remaining contradictions and orphans
 
 1. The two timestamp-named PHPStan story files and
-   `competitive-analysis-field-controls-2026-11-06.md` violate the project
+   `competitive-analysis-field-controls.md` violate the project
    filename convention. They were not renamed because links and concurrent
    work must be audited before a recoverable rename. The duplicate PHPStan
    story pair should ultimately have one canonical owner.

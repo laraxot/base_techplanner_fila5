@@ -170,6 +170,7 @@ class ClientsTable extends XotBaseResourceTable
             Action::make('sortByDistance')
                 ->icon('heroicon-o-map')
                 ->iconButton()
+                ->label(__('techplanner::client.map.set_origin_tooltip'))
                 ->tooltip(__('techplanner::client.map.set_origin_tooltip'))
                 ->action(static function (Client $record): void {
                     self::ensureClientCoordinates($record);

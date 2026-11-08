@@ -18,6 +18,7 @@ related:
   - ../../stories/mobile-ux-pass.story.md
   - ../../stories/clients-distance-sort.story.md
   - ../../models-and-relationships.md
+  - ../concepts/client-coordinate-editing-ux.md
 ---
 
 # Client
@@ -77,6 +78,9 @@ coordinate valide.
   nome/indirizzo/telefono, link a view/edit e il pulsante "Usa come origine"
   che fissa il punto di riferimento distanza. Il punto di riferimento corrente
   è segnato sulla mappa con un marker dedicato.
+- L'inizializzazione Leaflet è idempotente e tollera il rendering lazy di
+  Filament/Livewire: lo stato è namespaced, lo script condiviso viene atteso,
+  e `invalidateSize()` viene richiamato dopo il rendering e al resize.
 - `ClientsTable` espone anche l'azione record "Usa come punto di partenza"
   (icon-button, solo icona + tooltip); `CoordinatesWidget` permette di
   digitare lat/lng e l'header action "Aggiorna Coordinate" geocodifica tutte
