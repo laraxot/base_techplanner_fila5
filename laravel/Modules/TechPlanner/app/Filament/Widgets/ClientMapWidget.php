@@ -63,6 +63,10 @@ class ClientMapWidget extends BaseMapWidget
         Cookie::queue('user_latitude', (string) $latitude, 60 * 24 * 30);
         Cookie::queue('user_longitude', (string) $longitude, 60 * 24 * 30);
 
+        // 'coordinates-updated' fa rileggere sessione/cookie al
+        // CoordinatesWidget (checkbox "posizione di riferimento");
+        // 'sort-by-distance' fa resettare e riordinare la tabella.
+        $this->dispatch('coordinates-updated');
         $this->dispatch('sort-by-distance');
 
         Notification::make()
