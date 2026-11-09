@@ -1,8 +1,8 @@
 @php
-    $latitude = is_object($client ?? null) ? $client->getAttribute('latitude') : null;
-    $longitude = is_object($client ?? null) ? $client->getAttribute('longitude') : null;
+    $latitude = is_object($record ?? null) ? $record->getAttribute('latitude') : null;
+    $longitude = is_object($record ?? null) ? $record->getAttribute('longitude') : null;
     $hasCoordinates = is_numeric($latitude) && is_numeric($longitude);
-    $mapId = 'client-location-map-'.\Illuminate\Support\Str::random(8);
+    $mapId = 'geo-location-map-'.\Illuminate\Support\Str::random(8);
     $googleMapsUrl = $hasCoordinates
         ? 'https://www.google.com/maps/search/?api=1&query='.rawurlencode((string) $latitude.','. (string) $longitude)
         : null;
@@ -13,23 +13,23 @@
 
 <div>
     <h3 class="text-sm font-semibold leading-6 text-gray-950 dark:text-white mb-3">
-        {{ __('techplanner::client.location_map.heading') }}
+        {{ __('geo::coordinates.address_form.map.heading') }}
     </h3>
     @if ($hasCoordinates)
         <link rel="stylesheet" href="{{ $asset_base }}/leaflet.css">
         <div
             id="{{ $mapId }}"
             role="region"
-            aria-label="{{ __('techplanner::client.location_map.aria_label') }}"
+            aria-label="{{ __('geo::coordinates.address_form.map.aria_label') }}"
             tabindex="0"
             style="height: 300px; width: 100%; border-radius: 0.5rem;"
         ></div>
         <div class="mt-3 flex flex-wrap gap-2">
             <a class="fi-btn fi-btn-color-primary fi-btn-size-sm" href="{{ $googleMapsUrl }}" target="_blank" rel="noopener noreferrer">
-                {{ __('techplanner::client.location_map.google_maps') }}
+                {{ __('geo::coordinates.address_form.map.google_maps') }}
             </a>
             <a class="fi-btn fi-btn-color-gray fi-btn-size-sm" href="{{ $viaMichelinUrl }}" target="_blank" rel="noopener noreferrer">
-                {{ __('techplanner::client.location_map.viamichelin') }}
+                {{ __('geo::coordinates.address_form.map.viamichelin') }}
             </a>
         </div>
         <p class="mt-2 text-xs text-gray-500">
@@ -37,7 +37,7 @@
         </p>
     @else
         <p class="text-sm text-gray-500">
-            {{ __('techplanner::client.location_map.missing') }}
+            {{ __('geo::coordinates.address_form.map.missing') }}
         </p>
     @endif
 </div>
@@ -65,10 +65,10 @@
                 L.marker([latitude, longitude]).addTo(map);
             };
 
-            if (typeof L === 'undefined' && !document.querySelector('script[data-client-location-leaflet]')) {
+            if (typeof L === 'undefined' && !document.querySelector('script[data-geo-location-leaflet]')) {
                 const script = document.createElement('script');
                 script.src = `${assetBase}/leaflet.js`;
-                script.dataset.clientLocationLeaflet = '1';
+                script.dataset.geoLocationLeaflet = '1';
                 script.onload = initialize;
                 document.body.appendChild(script);
             } else {
