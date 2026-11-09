@@ -86,7 +86,7 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
         .base-map-fs-btn {
             position: absolute;
             top: 10px;
-            left: 10px;
+            left: 10px !important;
             z-index: 1000;
             display: flex;
             align-items: center;
