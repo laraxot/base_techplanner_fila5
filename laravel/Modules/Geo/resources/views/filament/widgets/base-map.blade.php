@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @var array{latitude: float|null, longitude: float|null, label: string} $origin
  * @var string $asset_base
  * @var string $map_height
- * @var array{aria_label: string, fullscreen: string, locate: string, layer_satellite: string, footer: string} $map_strings
+ * @var array{aria_label: string, fullscreen: string, fullscreen_exit: string, locate: string, layer_satellite: string, footer: string} $map_strings
  */
 
 $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
@@ -83,33 +83,36 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
             height: 100% !important;
             border-radius: 0;
         }
+        /*
+         * Controlli come L.Control dentro .leaflet-bar: Leaflet li impila
+         * verticalmente nella corner senza overlap (zoom, fullscreen, ...).
+         */
         .base-map-fs-btn {
+<<<<<<< .merge_file_BIlGLE
             position: fixed;
             bottom: 20px;
             right: 20px;
             z-index: 9999;
+=======
+>>>>>>> .merge_file_as4zAJ
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 34px;
-            height: 34px;
-            border: none;
-            border-radius: 4px;
-            background: #fff;
+            width: 30px;
+            height: 30px;
             color: #374151;
-            box-shadow: 0 1px 5px rgba(0, 0, 0, 0.35);
-            cursor: pointer;
+            text-decoration: none;
         }
-        .base-map-fs-btn:hover {
-            background: #f3f4f6;
+        .base-map-fs-btn svg {
+            width: 16px;
+            height: 16px;
         }
         .base-map-fs-btn.is-fullscreen {
-            background: #dbeafe;
             color: #1d4ed8;
         }
         .base-map-fs-btn:focus-visible {
             outline: 2px solid #2563eb;
-            outline-offset: 2px;
+            outline-offset: -2px;
         }
         .base-map-locate-btn {
             display: flex !important;
@@ -136,6 +139,7 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
             tabindex="0"
             style="height: {{ $map_height }}; width: 100%; border-radius: 0.5rem;"
         ></div>
+<<<<<<< .merge_file_BIlGLE
         <button
             type="button"
             class="base-map-fs-btn"
@@ -149,6 +153,8 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
                 <path fill-rule="evenodd" d="M3 3a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H6.414l2.293 2.293a1 1 0 0 1-1.414 1.414L5 5.414V7a1 1 0 0 1-2 0V3Zm9 1a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-1.586l2.293 2.293a1 1 0 0 1-1.414 1.414L13 5.414V7a1 1 0 1 1-2 0V4ZM3 13a1 1 0 0 1 1 1v1.586l2.293-2.293a1 1 0 0 1 1.414 1.414L5.414 17H7a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1Zm11-1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 1 1 0-2h1.586l-2.293-2.293a1 1 0 0 1 1.414-1.414L15 14.586V13a1 1 0 0 1 1-1Z" clip-rule="evenodd" />
             </svg>
         </button>
+=======
+>>>>>>> .merge_file_as4zAJ
     </div>
     <div class="text-xs text-gray-500 mt-2">
         {{ $map_strings['footer'] }}
@@ -266,6 +272,7 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
             ).addTo(map);
             window.L.control.scale({ imperial: false, position: 'bottomleft' }).addTo(map);
             buildLocateControl(map).addTo(map);
+            buildFullscreenControl(map).addTo(map);
 
             /*
              * Cluster marker: a zoom basso centinaia di pin sovrapposti
@@ -397,49 +404,97 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
         };
 
         /*
-         * Fullscreen: API nativa dove disponibile, fallback CSS
-         * fixed inset-0 per i browser senza element fullscreen.
+         * Fullscreen come L.Control nativo nella corner top-left:
+         * Leaflet lo impila sotto i pulsanti zoom (niente overlap),
+         * stile coerente con .leaflet-bar. L'icona commuta
+         * expand/contract e la label full/exit. API nativa dove
+         * disponibile, fallback CSS fixed inset-0.
          */
-        const wireFullscreen = () => {
-            const stage = document.getElementById(stageId);
-            const button = stage?.querySelector('[data-fs-btn]');
-            if (!stage || !button || state.fsWired) {
-                return;
-            }
-            state.fsWired = true;
+        const FS_ICON_EXPAND = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>';
+        const FS_ICON_CONTRACT = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>';
 
-            const syncFullscreenState = () => {
-                const active = Boolean(document.fullscreenElement || document.webkitFullscreenElement);
-                button.classList.toggle('is-fullscreen', active || stage.classList.contains('is-fullscreen-fallback'));
-                button.setAttribute('aria-pressed', active ? 'true' : 'false');
-                [100, 350].forEach((delay) => window.setTimeout(() => state.maps?.[mapId]?.invalidateSize(), delay));
+        const buildFullscreenControl = (map) => {
+            const stage = document.getElementById(stageId);
+            const enterLabel = @js($map_strings['fullscreen']);
+            const exitLabel = @js($map_strings['fullscreen_exit'] ?? $map_strings['fullscreen']);
+            let link = null;
+
+            const isActive = () => Boolean(
+                document.fullscreenElement
+                || document.webkitFullscreenElement
+                || stage?.classList.contains('is-fullscreen-fallback'),
+            );
+
+            const syncState = () => {
+                const active = isActive();
+                if (link) {
+                    link.classList.toggle('is-fullscreen', active);
+                    link.title = active ? exitLabel : enterLabel;
+                    link.setAttribute('aria-label', link.title);
+                    link.setAttribute('aria-pressed', active ? 'true' : 'false');
+                    link.innerHTML = active ? FS_ICON_CONTRACT : FS_ICON_EXPAND;
+                }
+                [100, 350].forEach((delay) => window.setTimeout(() => map.invalidateSize(), delay));
             };
 
             const toggle = () => {
-                const mapInstance = state.maps?.[mapId];
-                if (document.fullscreenElement || document.webkitFullscreenElement) {
+                const fullscreenEl = document.fullscreenElement || document.webkitFullscreenElement;
+                if (fullscreenEl) {
                     (document.exitFullscreen || document.webkitExitFullscreen).call(document);
-                    stage.classList.remove('is-fullscreen-fallback');
-                    syncFullscreenState();
+                    stage?.classList.remove('is-fullscreen-fallback');
+                    syncState();
                     return;
                 }
-                if (stage.requestFullscreen) {
+                if (stage?.requestFullscreen) {
                     stage.requestFullscreen();
-                } else if (stage.webkitRequestFullscreen) {
+                } else if (stage?.webkitRequestFullscreen) {
                     stage.webkitRequestFullscreen();
-                } else {
+                } else if (stage) {
                     stage.classList.add('is-fullscreen-fallback');
-                    syncFullscreenState();
+                    syncState();
                 }
-                window.setTimeout(() => mapInstance?.invalidateSize(), 100);
+                window.setTimeout(() => map.invalidateSize(), 100);
             };
 
-            button.addEventListener('click', toggle);
-            document.addEventListener('fullscreenchange', () => {
-                stage.classList.remove('is-fullscreen-fallback');
-                syncFullscreenState();
+            if (!state.fsListeners) {
+                state.fsListeners = true;
+                document.addEventListener('fullscreenchange', () => {
+                    document.querySelectorAll('.base-map-stage').forEach((s) => s.classList.remove('is-fullscreen-fallback'));
+                    Object.values(state.maps ?? {}).forEach((m) => {
+                        window.setTimeout(() => m.invalidateSize(), 100);
+                    });
+                    // lo stato del bottone si aggiorna via syncState del control
+                });
+                document.addEventListener('webkitfullscreenchange', () => {
+                    Object.values(state.maps ?? {}).forEach((m) => {
+                        window.setTimeout(() => m.invalidateSize(), 100);
+                    });
+                });
+            }
+
+            const FullscreenControl = window.L.Control.extend({
+                options: { position: 'topleft' },
+                onAdd: function () {
+                    const bar = window.L.DomUtil.create('div', 'leaflet-bar');
+                    link = window.L.DomUtil.create('a', 'base-map-fs-btn', bar);
+                    link.href = '#';
+                    link.setAttribute('role', 'button');
+                    link.innerHTML = FS_ICON_EXPAND;
+                    window.L.DomEvent.disableClickPropagation(link);
+                    window.L.DomEvent.on(link, 'click', (event) => {
+                        window.L.DomEvent.preventDefault(event);
+                        toggle();
+                    });
+                    syncState();
+                    return bar;
+                },
             });
-            document.addEventListener('webkitfullscreenchange', syncFullscreenState);
+
+            // fullscreenchange nativo: aggiorna il bottone della mappa fullscreen
+            document.addEventListener('fullscreenchange', syncState);
+            document.addEventListener('webkitfullscreenchange', syncState);
+
+            return new FullscreenControl();
         };
 
         /*
@@ -473,7 +528,6 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
 
         const tryInitialize = async (attemptsLeft = 30) => {
             if (initialize()) {
-                wireFullscreen();
                 return;
             }
             if (attemptsLeft > 0) {

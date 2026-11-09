@@ -29,3 +29,4 @@ updated: 2026-11-06
 - Ricompresse 36 immagini `resources/images` 62MB→13MB
 - `vite.config.ts` eliminato (emptyOutDir:true su config morta)
 - `docs/asset-management.md`: corretto outDir e sezione Filament CSS
+- 2026-11-09 — Fix login FO: @filamentScripts(withCore:true) ri-aggiunto in components/layouts/base (rimosso per errore: senza, Alpine filamentSchema/passwordReveal non definiti → password in chiaro). CSS: @filamentStyles non copre le FO (nessun panel) → ogni widget auth User pusha @push(head) link a /css/filament/filament/app.css (auto-provisioning). Verificato headless: 0 errori console, type=password→text al toggle, wrapper fi-input-wrp 8px/bianco, label IT.
