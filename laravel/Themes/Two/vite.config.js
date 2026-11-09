@@ -17,7 +17,7 @@ export default defineConfig({
     build: {
         // Il web root canonico e' laravel/public; public_html viene sincronizzato
         // da `npm run sync-public` e non deve diventare un symlink al tema.
-        outDir: '../../../public/themes/Two',
+        outDir: './public/',
         emptyOutDir: false,
     },
 })
