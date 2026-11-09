@@ -4,11 +4,6 @@
     "src": "resources/css/app.css",
     "isEntry": true
   },
-  "resources/css/filament.css": {
-    "file": "assets/filament-Col_t9WP.css",
-    "src": "resources/css/filament.css",
-    "isEntry": true
-  },
   "resources/js/app.js": {
     "file": "assets/app-l0sNRNKZ.js",
     "name": "app",
