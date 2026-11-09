@@ -175,3 +175,12 @@ related:
 - **phpunit.xml**: aggiunte suite `Seo` e `Themes` (~85 test che non giravano mai)
 - **PageSpeed**: immagini 404 fixate (path nesting), 62→13MB ricompressi, CSS Filament rimosso (994→395KB), `@filamentScripts`/`@livewire('notifications')` rimossi dai layout pubblici, `APP_DEBUG=false`
 - **In attesa deploy**: produzione remota — applicare `.env` prod + nginx cache headers
+
+## 2026-11-19 — clients: ultimo appuntamento + filtro per tipo
+
+- **Decisione** ([concepts/last-appointment-purpose.md](./concepts/last-appointment-purpose.md)): il "per cosa" dell'appuntamento si deriva dai `controls.appointment_id` + `control_type` — nessun campo `type` nuovo su `appointments`.
+- **Modello**: `Client::latestAppointment()` (hasOne `latestOfMany('date')`), `Appointment::controls()` (hasMany).
+- **Tabella clienti**: colonna `last_appointment` (data + tipi controllo, eager-load `latestAppointment.controls` in `ListClients::getTableQuery`) e `SelectFilter last_appointment_type` (enum + `none` = mai visitati; `whereHas` su `latestAppointment` → solo ultimo appuntamento).
+- **i18n**: `client.fields.last_appointment` + `client.filters.last_appointment_type` in it/en/de/es.
+- **Test**: `tests/Unit/Models/ClientLatestAppointmentTest.php` — 2 passed.
+- **Verifiche**: phpstan 0 errori, pint passed, `php -l` ok. DB locale: `controls` vuota → la colonna mostra la data da sola finché i controlli non vengono registrati.

@@ -21,6 +21,7 @@ middleware(['guest']);
     https://filamentphp.com/docs/widgets/adding-a-widget-to-a-blade-view
 --}}
 <x-layouts.base :title="__('user::auth.login.title.label')">
+    <x-pub_theme::filament-assets />
 
     {{-- Full-screen split layout: brand panel sx + form panel dx --}}
     {{-- Mobile: min-h-dvh (non 100vh: la barra URL di iOS/Android non deve coprire il fondo). --}}

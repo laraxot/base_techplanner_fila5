@@ -152,16 +152,30 @@ declare(strict_types=1);
             return true;
         };
 
+        /*
+         * `@script` puo' girare prima che il div della mappa sia nel DOM
+         * (widget lazy in header): senza retry initialize() tornava false
+         * e la mappa non partiva mai.
+         */
+        const tryInitialize = (attemptsLeft = 30) => {
+            if (initialize()) {
+                return;
+            }
+            if (attemptsLeft > 0) {
+                window.setTimeout(() => tryInitialize(attemptsLeft - 1), 100);
+            }
+        };
+
         const leafletScript = document.querySelector('script[data-client-map-leaflet]');
         if (typeof window.L !== 'undefined') {
-            initialize();
+            tryInitialize();
         } else if (leafletScript) {
-            leafletScript.addEventListener('load', initialize, { once: true });
+            leafletScript.addEventListener('load', tryInitialize, { once: true });
         } else {
             const script = document.createElement('script');
             script.src = `${assetBase}/leaflet.js`;
             script.dataset.clientMapLeaflet = '1';
-            script.onload = initialize;
+            script.onload = tryInitialize;
             document.head.appendChild(script);
         }
     })();

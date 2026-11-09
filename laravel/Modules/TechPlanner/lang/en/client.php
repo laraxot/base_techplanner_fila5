@@ -81,6 +81,9 @@ return [
         'last_electromedical_control_date' => [
             'label' => 'Last electromedical check',
         ],
+        'last_appointment' => [
+            'label' => 'Last appointment',
+        ],
         'last_health_authorization_date' => [
             'label' => 'Last health authorization',
         ],
@@ -304,6 +307,7 @@ return [
     'filters' => [
         'has_controls' => ['label' => 'Has recorded controls'],
         'controls_expiring' => ['label' => 'Controls expiring (30 days)'],
+        'last_appointment_type' => ['label' => 'Last appointment by type', 'none' => 'No appointment'],
         'never_controlled_type' => ['label' => 'Never controlled by type'],
         'has_rx_control' => ['label' => 'RX control'],
         'has_electromedical_control' => ['label' => 'Electromedical control'],

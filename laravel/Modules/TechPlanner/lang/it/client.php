@@ -210,6 +210,9 @@ return [
         'last_electromedical_control_date' => [
             'label' => 'Ultimo controllo elettromedicali',
         ],
+        'last_appointment' => [
+            'label' => 'Ultimo appuntamento',
+        ],
         'last_health_authorization_date' => [
             'label' => 'Ultima autorizzazione sanitaria',
         ],
@@ -445,6 +448,10 @@ return [
         ],
         'controls_expiring' => [
             'label' => 'Controlli in scadenza (30 gg)',
+        ],
+        'last_appointment_type' => [
+            'label' => 'Ultimo appuntamento per tipo',
+            'none' => 'Nessun appuntamento',
         ],
         'never_controlled_type' => [
             'label' => 'Mai controllato per tipo',

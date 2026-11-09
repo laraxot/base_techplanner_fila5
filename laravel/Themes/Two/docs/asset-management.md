@@ -20,21 +20,14 @@ The theme's `package.json` (`laravel/Themes/Two/package.json`) lists the necessa
 
 ## 4. CSS Imports (`resources/css/app.css`)
 
-The main CSS entry point for the theme is `laravel/Themes/Two/resources/css/app.css`. This file is responsible for importing Tailwind CSS and all required Filament UI component styles.
+The main CSS entry point for the theme is `laravel/Themes/Two/resources/css/app.css`. This file imports Tailwind CSS and daisyUI. **Gli import Filament CSS sono stati rimossi** (2026-11-08): il tema pubblico non renderizza componenti Filament — il pannello admin carica i propri stili. La rimozione ha ridotto il CSS da ~994KB a ~395KB.
 
 **Example Content:**
 
 ```css
 @import 'tailwindcss';
-
-@import '../../vendor/filament/support/resources/css/index.css';
-@import '../../vendor/filament/actions/resources/css/index.css';
-@import '../../vendor/filament/forms/resources/css/index.css';
-@import '../../vendor/filament/infolists/resources/css/index.css';
-@import '../../vendor/filament/notifications/resources/css/index.css';
-@import '../../vendor/filament/schemas/resources/css/index.css';
-@import '../../vendor/filament/tables/resources/css/index.css';
-@import '../../vendor/filament/widgets/resources/css/index.css';
+@plugin "daisyui";
+@plugin "@tailwindcss/typography";
 
 @variant dark (&:where(.dark, .dark *));
 ```
@@ -46,7 +39,7 @@ The `laravel/Themes/Two/vite.config.js` file configures Vite for asset compilati
 **Key Configuration:**
 
 *   `input`: Defines the entry points for Vite (e.g., `resources/css/app.css`, `resources/js/app.js`).
-*   `outDir`: Critically, this is set to `'./public'` relative to the theme's root. This means `npm run build` will output compiled assets into `laravel/Themes/Two/public/`.
+*   `outDir`: `../../../public/themes/Two` (public tree del repo). Il tema viene servito via symlink `public_html/themes/Two -> laravel/Themes/Two/public`; `sync-public` copia l'outDir attraverso il symlink nel theme public. Vedi `docs/wiki/concepts/public-asset-deployment.md`.
 *   `emptyOutDir: false`: Prevents Vite from clearing the `outDir` during each build, allowing for external asset copying.
 *   `tailwindcss()`: Enables Tailwind CSS processing.
 

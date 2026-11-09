@@ -1,0 +1,15 @@
+@reference 'tailwindcss';
+
+/*
+ * Foglio dedicato ai componenti Filament (widget auth, ecc.).
+ * Caricato SOLO dalle pagine che montano widget Filament via `@push('styles')`
+ * — il bundle pubblico `app.css` non deve includerlo (peso e).
+ */
+@import '../../../../vendor/filament/support/resources/css/index.css';
+@import '../../../../vendor/filament/actions/resources/css/index.css';
+@import '../../../../vendor/filament/forms/resources/css/index.css';
+@import '../../../../vendor/filament/infolists/resources/css/index.css';
+@import '../../../../vendor/filament/notifications/resources/css/index.css';
+@import '../../../../vendor/filament/schemas/resources/css/index.css';
+@import '../../../../vendor/filament/tables/resources/css/index.css';
+@import '../../../../vendor/filament/widgets/resources/css/index.css';
