@@ -184,3 +184,10 @@ related:
 - **i18n**: `client.fields.last_appointment` + `client.filters.last_appointment_type` in it/en/de/es.
 - **Test**: `tests/Unit/Models/ClientLatestAppointmentTest.php` — 2 passed.
 - **Verifiche**: phpstan 0 errori, pint passed, `php -l` ok. DB locale: `controls` vuota → la colonna mostra la data da sola finché i controlli non vengono registrati.
+
+## 2026-11-09 — clients: fix mappa non visibile
+
+- **Root cause**: `ClientMapWidget` lazy-loadava via Livewire; la request di resume tornava HTML invece di JSON → `JSON.parse` falliva e la mappa non partiva mai. In più `initialize()` non aveva retry se il div non era ancora nel DOM.
+- **Fix**: `protected static ?bool $isLazyLoaded = false` (render eager — la mappa è il widget principale, ~300KB markers accettabili) + `tryInitialize()` con retry 30×100ms nel blade.
+- **Bug operativo trovato**: scrivere `@script` dentro un commento JS del blade fa interpreare la direttiva a Blade → JS corrotto (`Invalid or unexpected token`). Attenzione: nessuna direttiva Blade nei commenti `@script`.
+- **Verificato headless Chrome**: tile OSM caricati, 501 marker, 0 errori console. PHPStan/Pint ok.

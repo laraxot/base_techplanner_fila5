@@ -19,6 +19,14 @@ class ClientMapWidget extends XotBaseWidget
 {
     protected string $view = 'techplanner::filament.widgets.client-map';
 
+    /*
+     * La mappa e' il widget principale della lista clienti (punti visita,
+     * marker, origine per le distanze): il lazy-load Livewire la rendeva
+     * fragile — la request di resume riceveva HTML invece di JSON e la
+     * mappa non appariva mai. Render eager nel payload iniziale.
+     */
+    protected static ?bool $isLazyLoaded = false;
+
     protected int|string|array $columnSpan = 'full';
 
     private const int MAX_MARKERS = 500;

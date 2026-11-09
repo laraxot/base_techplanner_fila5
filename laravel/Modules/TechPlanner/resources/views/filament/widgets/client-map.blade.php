@@ -153,7 +153,7 @@ declare(strict_types=1);
         };
 
         /*
-         * `@script` puo' girare prima che il div della mappa sia nel DOM
+         * Questo script puo' girare prima che il div della mappa sia nel DOM
          * (widget lazy in header): senza retry initialize() tornava false
          * e la mappa non partiva mai.
          */
