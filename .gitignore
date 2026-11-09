@@ -142,6 +142,10 @@ ___FILE___tests/
 ${HOME}
 artifacts
 public/
+<<<<<<< .merge_file_oZqbPZ
 .pi
 .omp
 .kilocode
+=======
+/ploi-*.sh
+>>>>>>> .merge_file_IBAbWL
