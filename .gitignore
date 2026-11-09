@@ -144,3 +144,4 @@ artifacts
 public/
 .pi
 .omp
+.kilocode
