@@ -84,10 +84,10 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
             border-radius: 0;
         }
         .base-map-fs-btn {
-            position: absolute;
-            top: 10px;
-            left: 10px !important;
-            z-index: 1000;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -143,6 +143,7 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
             aria-pressed="false"
             aria-label="{{ $map_strings['fullscreen'] }}"
             title="{{ $map_strings['fullscreen'] }}"
+            style="position: fixed; bottom: 20px; right: 20px; z-index: 9999;"
         >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
                 <path fill-rule="evenodd" d="M3 3a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2H6.414l2.293 2.293a1 1 0 0 1-1.414 1.414L5 5.414V7a1 1 0 0 1-2 0V3Zm9 1a1 1 0 0 1 1-1h4a1 1 0 1 1 0 2h-1.586l2.293 2.293a1 1 0 0 1-1.414 1.414L13 5.414V7a1 1 0 1 1-2 0V4ZM3 13a1 1 0 0 1 1 1v1.586l2.293-2.293a1 1 0 0 1 1.414 1.414L5.414 17H7a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1v-4a1 1 0 0 1 1-1Zm11-1a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-4a1 1 0 1 1 0-2h1.586l-2.293-2.293a1 1 0 0 1 1.414-1.414L15 14.586V13a1 1 0 0 1 1-1Z" clip-rule="evenodd" />
