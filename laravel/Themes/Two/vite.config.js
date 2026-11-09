@@ -5,7 +5,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
     plugins: [
         laravel({
-            input: ['resources/css/app.css', 'resources/css/filament.css', 'resources/js/app.js'],
+            input: ['resources/css/app.css', 'resources/js/app.js'],
             //publicDirectory: '../../../public_html',
             //buildDirectory: 'themes/Two',
             buildDirectory: '.',
@@ -17,7 +17,7 @@ export default defineConfig({
     build: {
         // Il web root canonico e' laravel/public; public_html viene sincronizzato
         // da `npm run sync-public` e non deve diventare un symlink al tema.
-        outDir: './public/',
+        outDir: '../../../public/themes/Two',
         emptyOutDir: false,
     },
 })

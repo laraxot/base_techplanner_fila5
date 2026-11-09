@@ -24,8 +24,6 @@
         </main>
 
         @livewireScripts
-        {{-- Widget Filament (auth): servono core Alpine/filamentSchema come nel panel (@filamentScripts(withCore: true)). --}}
-        @filamentScripts(withCore: true)
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>
