@@ -316,6 +316,9 @@ return [
     'map' => [
         'markers_shown' => 'Showing :count client markers with coordinates',
         'aria_label' => 'Client map',
+        'fullscreen' => 'Fullscreen',
+        'locate' => 'Center on my location',
+        'layer_satellite' => 'Satellite',
         'set_origin' => 'Use as origin',
         'set_origin_tooltip' => 'Sort all clients by distance from this point',
         'origin_popup' => 'Distance reference point',

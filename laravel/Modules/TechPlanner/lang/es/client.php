@@ -48,6 +48,9 @@ return [
     'map' => [
         'markers_shown' => 'Mostrando :count marcadores de clientes con coordenadas',
         'aria_label' => 'Mapa de clientes',
+        'fullscreen' => 'Pantalla completa',
+        'locate' => 'Centrar en mi ubicación',
+        'layer_satellite' => 'Satélite',
         'set_origin' => 'Usar como origen',
         'set_origin_tooltip' => 'Ordenar todos los clientes por distancia desde este punto',
         'origin_popup' => 'Punto de referencia para la distancia',

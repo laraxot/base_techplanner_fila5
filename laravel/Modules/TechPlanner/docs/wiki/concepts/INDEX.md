@@ -24,6 +24,7 @@ related:
 | [second-brain-local-discipline.md](./second-brain-local-discipline.md) | Stub → canon Xot |
 | [competitor-landscape.md](./competitor-landscape.md) | Confronto FSM/CMMS e gap competitivo |
 | [last-appointment-purpose.md](./last-appointment-purpose.md) | Ultimo appuntamento: tipo intervento derivato da `controls.control_type` |
+| [client-map.md](./client-map.md) | Mappa clienti: cluster, controlli, fullscreen, permalink, trappole blade/asset |
 
 
 ## Resource schema contract
