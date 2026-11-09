@@ -399,14 +399,14 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
         };
 
         /*
-         * Fullscreen come L.Control nativo nella corner top-left:
-         * Leaflet lo impila sotto i pulsanti zoom (niente overlap),
+         * Fullscreen come L.Control nativo nella corner top-right:
+         * Leaflet lo impila sotto i controlli di layer/zoom (niente overlap),
          * stile coerente con .leaflet-bar. L'icona commuta
          * expand/contract e la label full/exit. API nativa dove
          * disponibile, fallback CSS fixed inset-0.
          */
-        const FS_ICON_EXPAND = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v3m18 0V5a2 2 0 0 0-2-2h-3m0 18h3a2 2 0 0 0 2-2v-3M3 16v3a2 2 0 0 0 2 2h3"/></svg>';
-        const FS_ICON_CONTRACT = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3v3a2 2 0 0 1-2 2H3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>';
+        const FS_ICON_EXPAND = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3v4m16 0v4M3 19h4m16 0h4M5 3l16 16M19 3l-16 16"/></svg>';
+        const FS_ICON_CONTRACT = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3a2 2 0 0 0-2 2v3m18 0h-3a2 2 0 0 1-2-2V3m0 18v-3a2 2 0 0 1 2-2h3M3 16h3a2 2 0 0 1 2 2v3"/></svg>';
 
         const buildFullscreenControl = (map) => {
             const stage = document.getElementById(stageId);
@@ -415,9 +415,11 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
             let link = null;
 
             const isActive = () => Boolean(
-                document.fullscreenElement
-                || document.webkitFullscreenElement
-                || stage?.classList.contains('is-fullscreen-fallback'),
+                stage && (
+                    document.fullscreenElement === stage
+                    || document.webkitFullscreenElement === stage
+                    || stage.classList.contains('is-fullscreen-fallback')
+                ),
             );
 
             const syncState = () => {
@@ -434,6 +436,9 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
 
             const toggle = () => {
                 const fullscreenEl = document.fullscreenElement || document.webkitFullscreenElement;
+                if (fullscreenEl && fullscreenEl !== stage) {
+                    return;
+                }
                 if (fullscreenEl) {
                     (document.exitFullscreen || document.webkitExitFullscreen).call(document);
                     stage?.classList.remove('is-fullscreen-fallback');
@@ -468,7 +473,7 @@ $mapId = 'geo-map-'.\Illuminate\Support\Str::random(8);
             }
 
             const FullscreenControl = window.L.Control.extend({
-                options: { position: 'topleft' },
+                options: { position: 'topright' },
                 onAdd: function () {
                     const bar = window.L.DomUtil.create('div', 'leaflet-bar');
                     link = window.L.DomUtil.create('a', 'base-map-fs-btn', bar);
