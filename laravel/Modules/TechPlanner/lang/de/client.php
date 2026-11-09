@@ -316,6 +316,9 @@ return [
     'map' => [
         'markers_shown' => ':count Kunden-Marker mit Koordinaten werden angezeigt',
         'aria_label' => 'Kundenkarte',
+        'fullscreen' => 'Vollbild',
+        'locate' => 'Auf meinen Standort zentrieren',
+        'layer_satellite' => 'Satellit',
         'set_origin' => 'Als Ursprung verwenden',
         'set_origin_tooltip' => 'Alle Kunden nach Entfernung von diesem Punkt sortieren',
         'origin_popup' => 'Referenzpunkt für die Entfernung',
