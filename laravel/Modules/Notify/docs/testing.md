@@ -520,7 +520,7 @@ tags: [notify, testing, pest]
 created: 2026-07-28
 ---
 
-# Notify Module — Testing
+# Notify Module: Testing
 
 ```php
 test('sends welcome notification', function () {

@@ -1,12 +1,12 @@
 ---
-title: "Quality Report — Notify"
+title: "Quality Report: Notify"
 type: alias
 status: superseded
 canonical: "QUALITY_REPORT.md"
 qmd: "quality_report alias superseded"
 ---
 
-# Quality Report — Notify
+# Quality Report: Notify
 
 Documento identico al canonico: [QUALITY_REPORT.md](QUALITY_REPORT.md).
 

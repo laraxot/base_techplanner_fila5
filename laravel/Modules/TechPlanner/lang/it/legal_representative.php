@@ -9,6 +9,8 @@ return [
         'plural_label' => 'Rappresentanti legali',
         'icon' => 'techplanner-legal-representative',
         'sort' => 60,
+        'name' => 'Rappresentante Legale',
+        'plural' => 'Rappresentanti Legali',
     ],
     'actions' => [
         'create' => [

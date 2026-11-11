@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\DB;
 use Modules\TechPlanner\Filament\Resources\DeviceResource\Tables\DevicesTable;
 use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Models\Device;
@@ -46,8 +45,7 @@ function tpDevice(string $type, ?string ...$nextDates): Device
 }
 
 beforeEach(function (): void {
-    config(['database.connections.tech_planner' => ['driver' => 'sqlite', 'database' => ':memory:', 'prefix' => '', 'foreign_key_constraints' => true]]);
-    DB::purge('tech_planner');
+    $this->useIsolatedTechPlannerConnection(foreignKeys: true);
     tpDueMigrate(
         '2024_12_26_000008_create_client_table.php',
         '2019_12_12_000005_create_appointments_table.php',

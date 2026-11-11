@@ -45,6 +45,9 @@ return [
         'trashed' => [
             'label' => 'Record eliminati',
         ],
+        'controls_count' => [
+            'label' => 'Controlli',
+        ],
     ],
     'filters' => [
         'due' => [

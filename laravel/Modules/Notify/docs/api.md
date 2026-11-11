@@ -10,7 +10,7 @@ created: 2026-07-28
 status: draft
 ---
 
-# Notify Module — API
+# Notify Module: API
 
 ## Sending Notifications
 
@@ -21,11 +21,11 @@ $user->notifyLater($when, new Notification());
 
 ## Notification Classes
 
-- `UserVerificationNotification` — Email verification
-- `PasswordResetNotification` — Password reset
-- `WelcomeNotification` — New user welcome
+- `UserVerificationNotification`: Email verification
+- `PasswordResetNotification`: Password reset
+- `WelcomeNotification`: New user welcome
 
 ## Channels
-- `mail` — Email delivery
-- `database` — Database storage (read_at tracking)
-- `slack` — Slack integration
+- `mail`: Email delivery
+- `database`: Database storage (read_at tracking)
+- `slack`: Slack integration

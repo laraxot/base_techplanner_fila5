@@ -1,7 +1,0 @@
-# Robots
-
-User-agent: Googlebot
-Disallow: /
-
-User-agent: *
-Allow: /

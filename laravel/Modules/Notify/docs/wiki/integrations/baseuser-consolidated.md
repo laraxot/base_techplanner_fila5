@@ -2,7 +2,7 @@
 qmd: "baseuser consolidated"
 issues: []
 discussions: []
-title: "baseuser — Consolidated Documentation"
+title: "baseuser: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# baseuser — Consolidated Documentation
+# baseuser: Consolidated Documentation
 
 Consolidated from **6** individual files.
 

@@ -11,7 +11,7 @@ status: superseded
 superseded_by: architecture.md
 ---
 
-# Notify Module — Architecture
+# Notify Module: Architecture
 
 ## Purpose
 Manages notifications and messaging via Laravel Notifications and Mailable. Supports email, Slack, SMS, in-app notifications.

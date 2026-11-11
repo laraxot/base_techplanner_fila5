@@ -7,28 +7,28 @@ namespace Modules\TechPlanner\Filament\Resources\ClientResource\Tables;
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
 use Filament\Actions\BulkAction;
+use Filament\Actions\BulkActionGroup;
 use Filament\Notifications\Notification;
 use Filament\Tables\Columns\Column;
 use Filament\Tables\Columns\TextColumn;
-use Filament\Tables\Contracts\HasTable;
 use Filament\Tables\Filters\BaseFilter;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
-use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Cookie;
 use Illuminate\Support\Facades\Session;
-use Livewire\Component;
+use Modules\Geo\Actions\UpdateCoordinatesFromAddressAction;
 use Modules\Geo\Filament\Actions\UpdateCoordinatesBulkAction;
 use Modules\Geo\Filament\Tables\Columns\AddressColumn;
 use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
+use Modules\TechPlanner\Enums\ControlTypeEnum;
 use Modules\TechPlanner\Filament\Resources\Tables\TechPlannerBaseTable;
 use Modules\TechPlanner\Models\Client;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Override;
+use Modules\Xot\Filament\Tables\Actions\XotBaseBulkAction;
 
 class ClientsTable extends TechPlannerBaseTable
 {
@@ -38,17 +38,24 @@ class ClientsTable extends TechPlannerBaseTable
     public function getTableColumns(): array
     {
         return [
-            /*
-             * `distance` esiste solo se ListClients ha applicato `withDistance()`. Leggerla come
-             * `$record->distance` farebbe trattare a Eloquent il metodo `GeoTrait::distance()` come
-             * relazione (LogicException, pagina in errore alla prima visita): si legge l'attributo grezzo.
-             */
             'distance' => TextColumn::make('distance')
-                ->getStateUsing(static fn (Model $record): mixed => $record->getAttributes()['distance'] ?? null)
-                ->formatStateUsing(static fn (mixed $state): string => is_numeric($state)
-                    ? number_format((float) $state, 2, ',', '.').' km'
-                    : '—')
-                ->placeholder('—'),
+                ->width('5rem')
+                ->extraAttributes(['class' => 'whitespace-nowrap'])
+                ->formatStateUsing(static function (string|int|float|null $state): string {
+                    return is_numeric($state) ? number_format((float) $state, 2, ',', '.').' km' : '—';
+                }),
+            'last_rx_control_date' => TextColumn::make('last_rx_control_date')
+                ->label(__('techplanner::client.fields.last_rx_control_date.label'))
+                ->date()->sortable()->placeholder('—'),
+            'last_intraoral_control_date' => TextColumn::make('last_intraoral_control_date')
+                ->label(__('techplanner::client.fields.last_intraoral_control_date.label'))
+                ->date()->sortable()->placeholder('—')->toggleable(isToggledHiddenByDefault: true),
+            'last_electromedical_control_date' => TextColumn::make('last_electromedical_control_date')
+                ->label(__('techplanner::client.fields.last_electromedical_control_date.label'))
+                ->date()->sortable()->placeholder('—'),
+            'last_health_authorization_date' => TextColumn::make('last_health_authorization_date')
+                ->label(__('techplanner::client.fields.last_health_authorization_date.label'))
+                ->date()->sortable()->placeholder('—'),
             'longitude' => TextColumn::make('longitude')->sortable()->toggleable(isToggledHiddenByDefault: true),
             'latitude' => TextColumn::make('latitude')->sortable()->toggleable(isToggledHiddenByDefault: true),
             'business_closed' => TextColumn::make('business_closed')->toggleable(isToggledHiddenByDefault: true),
@@ -82,53 +89,82 @@ class ClientsTable extends TechPlannerBaseTable
         ];
     }
 
-    /*
-     * Filtri, «Ordina per distanza» e azioni di gruppo stavano in ListClients, ma la tabella della
-     * lista è costruita da questa classe (XotBaseResource::table()): là erano codice morto e nel
-     * pannello non comparivano (verificato con Playwright il 2026-11-05). Spostati qui.
-     */
-
-    #[Override]
-    public function table(Table $table): Table
-    {
-        return parent::table($table)->modifyQueryUsing(static function (Builder $query): Builder {
-            $latitude = Session::get('user_latitude');
-            $longitude = Session::get('user_longitude');
-            if (! is_numeric($latitude) || ! is_numeric($longitude)) {
-                return $query;
-            }
-
-            /** @var Builder<Client> $query */
-            return $query->withDistance((float) $latitude, (float) $longitude);
-        });
-    }
-
     /**
-     * @return array<string|int, Filter|TernaryFilter|BaseFilter>
+     * Keep distance filters/actions on the resource table: Xot builds the
+     * Filament table from this class, not from ListClients.
+     *
+     * @return array<int|string, BaseFilter>
      */
-    #[Override]
     public function getTableFilters(): array
     {
+        $activities = Cache::remember('client_activities_filter', 3600, static fn (): array => Client::query()
+            ->whereNotNull('activity')
+            ->distinct()
+            ->limit(100)
+            ->pluck('activity', 'activity')
+            ->map(SafeStringCastAction::cast(...))
+            ->toArray()
+        );
+
+        /** @var array<string, string> $activities */
         return [
-            ...parent::getTableFilters(),
             'business_closed' => TernaryFilter::make('business_closed')->default(false),
-            'activity' => SelectFilter::make('activity')
-                ->multiple()
-                ->options(static fn (): array => Client::query()
-                    ->whereNotNull('activity')
-                    ->distinct()
-                    ->orderBy('activity')
-                    ->limit(100)
-                    ->pluck('activity', 'activity')
-                    ->map(app(SafeStringCastAction::class)->execute(...))
-                    ->all()),
+            'activity' => SelectFilter::make('activity')->multiple()->preload()->options($activities),
+            'has_controls' => TernaryFilter::make('has_controls')
+                ->label(__('techplanner::client.filters.has_controls.label'))
+                ->queries(
+                    true: fn (Builder $query) => $query->whereHas('controls'),
+                    false: fn (Builder $query) => $query->whereDoesntHave('controls'),
+                    blank: fn (Builder $query) => $query,
+                ),
+            'controls_expiring' => Filter::make('controls_expiring')
+                ->label(__('techplanner::client.filters.controls_expiring.label'))
+                ->query(fn (Builder $query) => $query->whereHas(
+                    'controls',
+                    static fn (Builder $controls) => $controls->whereDate('next_control_date', '<=', now()->addDays(30)),
+                )),
+            'never_controlled_type' => SelectFilter::make('never_controlled_type')
+                ->label(__('techplanner::client.filters.never_controlled_type.label'))
+                ->options(static fn (): array => collect(ControlTypeEnum::cases())
+                    ->mapWithKeys(static fn (ControlTypeEnum $type): array => [$type->value => $type->getLabel()])
+                    ->all())
+                ->query(static fn (Builder $query, array $data): Builder => ($data['value'] ?? null) === null
+                    ? $query
+                    : $query->whereDoesntHave('controls', static fn (Builder $controls) => $controls->where('control_type', $data['value']))),
+            'has_rx_control' => TernaryFilter::make('has_rx_control')
+                ->label(__('techplanner::client.filters.has_rx_control.label'))
+                ->queries(
+                    true: static fn (Builder $query): Builder => $query->whereHas('controls', static fn (Builder $controls): Builder => $controls
+                        ->whereIn('control_type', [ControlTypeEnum::RX->value, ControlTypeEnum::INTRAORAL->value])),
+                    false: static fn (Builder $query): Builder => $query->whereDoesntHave('controls', static fn (Builder $controls): Builder => $controls
+                        ->whereIn('control_type', [ControlTypeEnum::RX->value, ControlTypeEnum::INTRAORAL->value])),
+                    blank: static fn (Builder $query): Builder => $query,
+                ),
+            'has_electromedical_control' => TernaryFilter::make('has_electromedical_control')
+                ->label(__('techplanner::client.filters.has_electromedical_control.label'))
+                ->queries(
+                    true: static fn (Builder $query): Builder => $query->whereHas('controls', static fn (Builder $controls): Builder => $controls
+                        ->where('control_type', ControlTypeEnum::ELECTROMEDICAL->value)),
+                    false: static fn (Builder $query): Builder => $query->whereDoesntHave('controls', static fn (Builder $controls): Builder => $controls
+                        ->where('control_type', ControlTypeEnum::ELECTROMEDICAL->value)),
+                    blank: static fn (Builder $query): Builder => $query,
+                ),
+            'has_health_authorization' => TernaryFilter::make('has_health_authorization')
+                ->label(__('techplanner::client.filters.has_health_authorization.label'))
+                ->queries(
+                    true: static fn (Builder $query): Builder => $query->whereHas('controls', static fn (Builder $controls): Builder => $controls
+                        ->where('control_type', ControlTypeEnum::HEALTH_AUTHORIZATION->value)),
+                    false: static fn (Builder $query): Builder => $query->whereDoesntHave('controls', static fn (Builder $controls): Builder => $controls
+                        ->where('control_type', ControlTypeEnum::HEALTH_AUTHORIZATION->value)),
+                    blank: static fn (Builder $query): Builder => $query,
+                ),
+            ...parent::getTableFilters(),
         ];
     }
 
     /**
      * @return array<int|string, Action|ActionGroup>
      */
-    #[Override]
     public function getTableActions(): array
     {
         return [
@@ -136,14 +172,20 @@ class ClientsTable extends TechPlannerBaseTable
             'sortByDistance' => Action::make('sortByDistance')
                 ->icon('heroicon-o-map')
                 ->hidden(static fn (Client $record): bool => $record->trashed())
-                ->action(static function (Client $record, HasTable $livewire): void {
+                ->iconButton()
+                ->label(__('techplanner::client.map.set_origin_tooltip'))
+                ->tooltip(__('techplanner::client.map.set_origin_tooltip'))
+                ->action(static function (Client $record): void {
+                    self::ensureClientCoordinates($record);
+
                     $latitude = $record->getAttribute('latitude');
                     $longitude = $record->getAttribute('longitude');
+
                     if (! is_numeric($latitude) || ! is_numeric($longitude)) {
                         Notification::make()
                             ->warning()
-                            ->title(__('techplanner::client.actions.sortByDistance.no_coordinates.title'))
-                            ->body(__('techplanner::client.actions.sortByDistance.no_coordinates.body'))
+                            ->title(__('techplanner::client.map.origin_missing.title'))
+                            ->body(__('techplanner::client.map.origin_missing_geocode_failed.body'))
                             ->send();
 
                         return;
@@ -154,26 +196,18 @@ class ClientsTable extends TechPlannerBaseTable
                     Cookie::queue('user_latitude', (string) $latitude, 60 * 24 * 30);
                     Cookie::queue('user_longitude', (string) $longitude, 60 * 24 * 30);
 
-                    if ($livewire instanceof Component) {
-                        $livewire->dispatch('coordinates-updated');
-                    }
-                    if (method_exists($livewire, 'resetTable')) {
-                        $livewire->resetTable();
-                    }
-
                     Notification::make()
                         ->success()
-                        ->title(__('techplanner::client.actions.sortByDistance.done.title'))
-                        ->body(__('techplanner::client.actions.sortByDistance.done.body', ['name' => SafeStringCastAction::cast($record->getAttribute('company_name'))]))
+                        ->title(__('techplanner::client.map.origin_set.title'))
+                        ->body(__('techplanner::client.map.origin_set.body'))
                         ->send();
                 }),
         ];
     }
 
     /**
-     * @return array<int|string, BulkAction>
+     * @return array<int|string, XotBaseBulkAction|BulkAction|BulkActionGroup>
      */
-    #[Override]
     public function getTableBulkActions(): array
     {
         return [
@@ -181,5 +215,22 @@ class ClientsTable extends TechPlannerBaseTable
             'updateCoordinates' => UpdateCoordinatesBulkAction::make('updateCoordinates'),
             'sendRecordsNotification' => SendRecordsNotificationBulkAction::make('sendRecordsNotification'),
         ];
+    }
+
+    /**
+     * Popola le coordinate del cliente geocodificando il suo indirizzo quando
+     * mancano; riusa la stessa action dell'aggiornamento batch.
+     */
+    private static function ensureClientCoordinates(Client $client): void
+    {
+        $latitude = $client->getAttribute('latitude');
+        $longitude = $client->getAttribute('longitude');
+
+        if (is_numeric($latitude) && is_numeric($longitude)) {
+            return;
+        }
+
+        app(UpdateCoordinatesFromAddressAction::class)->execute($client);
+        $client->refresh();
     }
 }

@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# TransChoice DRY — La Religione dell'Unica Fonte di Verita
+# TransChoice DRY: La Religione dell'Unica Fonte di Verita
 
 **Status**: Active  
 **Created**: 2026-04-14  

@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# Ponytail audit — Job (over-engineering)
+# Ponytail audit: Job (over-engineering)
 
 **Ultimo run:** 2026-06-30 (re-run #2)  
 **Modulo:** code, schedule, import/export job.  
@@ -28,7 +28,7 @@ status: draft
 
 | Area | Motivo |
 |------|--------|
-| `app/Models/Policies/*Policy.php` | Contratto Laravel/Filament: una policy per modello (`ExportPolicy`, `ImportPolicy`, …). Anche `class XPolicy extends JobBasePolicy {}` senza metodi è **valida** — la logica può stare in `JobBasePolicy::before()` o nei metodi ability del singolo file. **Mai delete.** |
+| `app/Models/Policies/*Policy.php` | Contratto Laravel/Filament: una policy per modello (`ExportPolicy`, `ImportPolicy`, …). Anche `class XPolicy extends JobBasePolicy {}` senza metodi è **valida**: la logica può stare in `JobBasePolicy::before()` o nei metodi ability del singolo file. **Mai delete.** |
 
 Vedi [wiki/concepts/model-policy-laravel-contract.md](./wiki/concepts/model-policy-laravel-contract.md).
 

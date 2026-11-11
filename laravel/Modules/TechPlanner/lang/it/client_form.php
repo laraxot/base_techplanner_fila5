@@ -16,6 +16,14 @@ return [
             'label' => 'Contatti',
             'heading' => 'Contatti',
         ],
+        'coordinates' => [
+            'label' => 'coordinates',
+            'heading' => 'coordinates',
+        ],
+        'empty' => [
+            'heading' => '',
+            'label' => '',
+        ],
     ],
     'fields' => [
         'competent_health_unit' => [

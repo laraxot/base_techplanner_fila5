@@ -2,7 +2,7 @@
 qmd: "dry consolidated"
 issues: []
 discussions: []
-title: "dry — Consolidated Documentation"
+title: "dry: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# dry — Consolidated Documentation
+# dry: Consolidated Documentation
 
 Consolidated from **12** individual files.
 

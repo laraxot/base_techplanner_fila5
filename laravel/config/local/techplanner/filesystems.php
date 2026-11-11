@@ -57,9 +57,7 @@ return [
         'public_html' => [
             'driver' => 'local',
             'root' => public_path('/'),
-            // 'url' => url('/'),
             //'url' => url('/'),
-            // 'url' => url('/'),
             'url' => '/',
             'visibility' => 'public',
         ],
@@ -92,15 +90,9 @@ return [
 
         'cache' => [
             'driver' => 'local',
-            // 'root' => storage_path('app/public'),
-            'root' => base_path('../cache'),
-            // 'url' => env('APP_URL').'/storage',
             //'root' => storage_path('app/public'),
             'root' => base_path('../cache'),
             //'url' => env('APP_URL').'/storage',
-            // 'root' => storage_path('app/public'),
-            'root' => base_path('../cache'),
-            // 'url' => env('APP_URL').'/storage',
             'visibility' => 'public',
         ],
 

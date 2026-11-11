@@ -5,7 +5,7 @@ updated: 2026-09-26
 qmd: "livewire widget tech spec"
 issues: []
 discussions: []
-title: "Tech spec — Notify FQCN"
+title: "Tech spec: Notify FQCN"
 type: tech-spec
 module: Notify
 related:

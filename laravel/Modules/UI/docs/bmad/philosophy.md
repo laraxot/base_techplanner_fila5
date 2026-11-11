@@ -65,7 +65,7 @@ The `UI` module, as the guardian of the application's user interface, can signif
 By leveraging these MCPs, the `UI` module can ensure its critical role in delivering an engaging and effective user interface is more efficient, verifiable, and transparent, ultimately contributing to a superior user experience.
 # UI Module: Design System & Components
 
-> **Reusable Form/Table Components** — Filament-integrated, consistent styling, multi-module usage.
+> **Reusable Form/Table Components**: Filament-integrated, consistent styling, multi-module usage.
 
 ---
 
@@ -80,9 +80,9 @@ UI is not a domain; it's a toolkit for all modules.
 ## Quick
 
 ### Models (4)
-- **Category** — Component/asset taxonomy
-- **Collection** — Grouped components
-- **FieldOption** — Enum-like picker (for form/table dropdowns)
+- **Category**: Component/asset taxonomy
+- **Collection**: Grouped components
+- **FieldOption**: Enum-like picker (for form/table dropdowns)
 
 ### Components (26 total)
 
@@ -104,7 +104,7 @@ Automatic i18n, validation, styling
 ```
 
 ### Traits (1)
-- **TableLayoutTrait** — Grid/list layout switching
+- **TableLayoutTrait**: Grid/list layout switching
 
 ---
 
@@ -243,8 +243,8 @@ All labels come from translation files:
 
 #### 6. Blade Components as Fragments, Volt as Stateful
 
-- **Blade**: Simple markup (buttons, badges, cards) — no state
-- **Volt**: Complex interactivity (forms, searches, filters) — stateful
+- **Blade**: Simple markup (buttons, badges, cards): no state
+- **Volt**: Complex interactivity (forms, searches, filters): stateful
 
 ```blade
 <!-- Simple: Blade component -->
@@ -279,16 +279,16 @@ All components are type-checked:
 
 If you think a rule is wrong:
 1. **Document the exception** in your module's README
-2. **Extract if repeated** — don't duplicate components
-3. **Never hardcode colors or text** — always use config/i18n
-4. **Never use Filament directly** — extend Xot base
+2. **Extract if repeated**: don't duplicate components
+3. **Never hardcode colors or text**: always use config/i18n
+4. **Never use Filament directly**: extend Xot base
 5. **Notify UI maintainers** if a pattern should be core
 
 ### See Also
 
-- [architecture.md](./architecture.md) — component organization and Filament patterns
-- [testing.md](./testing.md) — component testing strategies
-- `filament-patterns.md` (non ancora scritto) — Filament resource best practices
-- `folio-volt-integration.md` (non ancora scritto) — Folio+Volt workflow
-- `theme-system.md` (non ancora scritto) — multi-tenant theming
-- `i18n-in-components.md` (non ancora scritto) — translation integration
+- [architecture.md](./architecture.md): component organization and Filament patterns
+- [testing.md](./testing.md): component testing strategies
+- `filament-patterns.md` (non ancora scritto): Filament resource best practices
+- `folio-volt-integration.md` (non ancora scritto): Folio+Volt workflow
+- `theme-system.md` (non ancora scritto): multi-tenant theming
+- `i18n-in-components.md` (non ancora scritto): translation integration

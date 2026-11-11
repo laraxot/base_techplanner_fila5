@@ -155,7 +155,7 @@ return [
         'sendRecordsNotification' => [
             'tooltip' => '',
             'icon' => 'sendRecordsNotification',
-            'label' => 'sendRecordsNotification',
+            'label' => 'Invia notifica',
         ],
         'removeAllFilters' => [
             'tooltip' => '',
@@ -176,6 +176,11 @@ return [
             'label' => 'submit',
             'icon' => 'submit',
             'tooltip' => '',
+        ],
+        'geocodeCoordinates' => [
+            'label' => 'Aggiorna da indirizzo',
+            'failed_title' => 'Geocoding non riuscito',
+            'success_title' => 'Coordinate aggiornate dall\'indirizzo',
         ],
     ],
     'fields' => [
@@ -392,6 +397,24 @@ return [
         'contact' => [
             'label' => 'Contatto',
         ],
+        'last_rx_control_date' => [
+            'label' => 'Ultimo controllo RX',
+        ],
+        'last_intraoral_control_date' => [
+            'label' => 'Ultimo controllo endorale',
+        ],
+        'last_electromedical_control_date' => [
+            'label' => 'Ultimo controllo elettromedicali',
+        ],
+        'last_health_authorization_date' => [
+            'label' => 'Ultima autorizzazione sanitaria',
+        ],
+        'isActive' => [
+            'description' => 'isActive',
+            'helper_text' => '',
+            'placeholder' => '',
+            'label' => 'isActive',
+        ],
     ],
     'import' => [
         'label' => 'Importa Clienti',
@@ -440,6 +463,9 @@ return [
         'coordinates_update_failed' => 'Aggiornamento coordinate fallito',
         'import_success' => 'Importazione completata con successo',
         'import_failed' => 'Importazione fallita',
+        'coordinates_batch_summary' => 'Elaborati :processed clienti. Coordinate aggiornate per :success.',
+        'coordinates_batch_warning' => 'Aggiornamento coordinate completato con errori',
+        'coordinates_batch_success' => 'Coordinate aggiornate con successo',
     ],
     'model' => [
         'label' => 'Cliente',
@@ -473,7 +499,60 @@ return [
                 ],
             ],
         ],
+        'coordinates' => [
+            'label' => 'Coordinate',
+            'description' => 'Latitudine e longitudine del cliente. Salva prima l’indirizzo, poi aggiorna qui le coordinate per distanza e mappa.',
+        ],
+        'address_info' => [
+            'label' => 'Indirizzo',
+        ],
     ],
     'label' => 'Cliente',
     'plural_label' => 'Clienti',
+    'filters' => [
+        'has_controls' => [
+            'label' => 'Ha controlli registrati',
+        ],
+        'controls_expiring' => [
+            'label' => 'Controlli in scadenza (30 gg)',
+        ],
+        'never_controlled_type' => [
+            'label' => 'Mai controllato per tipo',
+        ],
+        'has_rx_control' => [
+            'label' => 'Controllo RX',
+        ],
+        'has_electromedical_control' => [
+            'label' => 'Controllo elettromedicali',
+        ],
+        'has_health_authorization' => [
+            'label' => 'Autorizzazione sanitaria',
+        ],
+    ],
+    'map' => [
+        'markers_shown' => 'Mostrati :count marker di clienti con coordinate',
+        'aria_label' => 'Mappa dei clienti',
+        'set_origin' => 'Usa come origine',
+        'set_origin_tooltip' => 'Ordina tutti i clienti per distanza da questo punto',
+        'origin_popup' => 'Punto di riferimento per la distanza',
+        'origin_set' => [
+            'title' => 'Punto di partenza impostato',
+            'body' => 'La tabella è stata ordinata per distanza da questo cliente.',
+        ],
+        'origin_missing' => [
+            'title' => 'Coordinate mancanti',
+            'body' => 'Il cliente selezionato non ha coordinate utilizzabili.',
+        ],
+        'origin_missing_geocode_failed' => [
+            'title' => 'Geocodifica non riuscita',
+            'body' => 'Impossibile geocodificare l\'indirizzo del cliente. Controlla l\'indirizzo o usa "Aggiorna Coordinate" per popolare tutte le coordinate mancanti.',
+        ],
+    ],
+    'location_map' => [
+        'heading' => 'Posizione cliente',
+        'aria_label' => 'Mappa della posizione del cliente',
+        'google_maps' => 'Apri in Google Maps',
+        'viamichelin' => 'Apri in ViaMichelin',
+        'missing' => 'Coordinate non disponibili. Completa l’indirizzo e usa “Aggiorna da indirizzo” nella sezione Coordinate.',
+    ],
 ];

@@ -1,5 +1,5 @@
 ---
-title: "PRD — Job Livewire"
+title: "PRD: Job Livewire"
 type: prd
 module: Job
 related:

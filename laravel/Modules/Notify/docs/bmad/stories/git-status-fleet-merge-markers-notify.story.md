@@ -5,7 +5,7 @@ updated: 2026-09-26
 qmd: "git status fleet merge markers notify.story"
 issues: []
 discussions: []
-title: "Bonifica marker merge committati — Notify"
+title: "Bonifica marker merge committati: Notify"
 type: story
 module: Notify
 epic: quality

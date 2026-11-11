@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "Metodi duplicati — Job"
+title: "Metodi duplicati: Job"
 module: "Job"
 type: concept
 tags: [duplicate, methods]
@@ -12,7 +12,7 @@ related:
   - "./phpstan-fixes-archive-2.md"
 status: draft
 ---
-# Metodi duplicati — Job
+# Metodi duplicati: Job
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.
 

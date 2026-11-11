@@ -1,5 +1,5 @@
 ---
-title: "UI — indice della documentazione"
+title: "UI: indice della documentazione"
 description: "Documentazione del modulo UI: componenti di interfaccia condivisi."
 module: UI
 tags: [ui, documentazione, modulo, laraxot]

@@ -25,16 +25,20 @@ class ClientInfolist extends XotBaseResourceInfolist
                 TextEntry::make('vat_number'),
                 TextEntry::make('fiscal_code'),
             ]),
-            'contact_info' => Section::make(trans('techplanner::client.sections.contact_info.label'))->schema([
+            'address_info' => Section::make(trans('techplanner::client.sections.address_info.label'))->schema([
                 TextEntry::make('address'),
                 TextEntry::make('street_number'),
                 TextEntry::make('city'),
                 TextEntry::make('postal_code'),
                 TextEntry::make('province'),
                 TextEntry::make('country'),
+            ]),
+            'contacts' => Section::make(trans('techplanner::client.sections.contacts.label'))->schema([
                 TextEntry::make('phone'),
                 TextEntry::make('mobile'),
                 TextEntry::make('fax'),
+                TextEntry::make('pec'),
+                TextEntry::make('whatsapp'),
                 TextEntry::make('email'),
             ]),
             'additional_info' => Section::make(trans('techplanner::client.sections.additional_info.label'))->schema([

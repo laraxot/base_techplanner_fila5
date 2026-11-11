@@ -1,5 +1,5 @@
 ---
-title: "Notify — Unit Tests for claude-audit 100/100"
+title: "Notify: Unit Tests for claude-audit 100/100"
 type: story
 module: Notify
 epic: "claude-audit-perfection"
@@ -18,7 +18,7 @@ related:
   - "../../../docs/wiki/guidelines/claude-audit-static-free-tier.md"
 ---
 
-# Notify — Unit Tests for claude-audit 100/100
+# Notify: Unit Tests for claude-audit 100/100
 
 ## Fase BMAD
 

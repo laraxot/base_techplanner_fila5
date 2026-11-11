@@ -12,7 +12,7 @@ status: stale
 
 > Nota 2026-10-14 (docs-audit): Dichiara 8 Action SMS e 3 varianti Agiletelecom spostate in .php.bak; il 2026-10-14 app/ non ha alcun .bak tracciato e app/Actions/SMS/ contiene ancora quelle Action. Contenuto non riscritto, verificare prima di usarlo.
 
-# Ponytail audit — Notify (over-engineering)
+# Ponytail audit: Notify (over-engineering)
 
 **Ultimo run:** 2026-07-02  
 **Remediation run #5:** rimozione file inattivi e PHPStan pulito
@@ -21,9 +21,9 @@ status: stale
 |---|--------|-------|
 | N5 | action SMS inattive, Data class, test, pagina Netfun rimossi | ✅ 2026-07-02 |
 | N9 | `storage/app/ai/generate-notify-sms-tests.php` rimosso | ✅ 2026-07-02 |
-| N10 | `app/Channels/SmsChannel/TelegramChannel/WhatsAppChannel` — rimossi `@var` inutili | ✅ 2026-07-02 |
-| — | PHPStan `Modules/Notify` | ✅ 0 errori |
-| — | Pest `Modules/Notify` | ❌ bloccato da DB MySQL (credenziali `.env.testing` non valide) |
+| N10 | `app/Channels/SmsChannel/TelegramChannel/WhatsAppChannel`: rimossi `@var` inutili | ✅ 2026-07-02 |
+|: | PHPStan `Modules/Notify` | ✅ 0 errori |
+|: | Pest `Modules/Notify` | ❌ bloccato da DB MySQL (credenziali `.env.testing` non valide) |
 
 **Ultimo run:** 2026-07-01  
 **Remediation run #4:** consolidamento SMS su driver canonico `smsfactor`
@@ -49,7 +49,7 @@ Notify invia messaggi su canali configurati (email, SMS, push, …). Il driver a
 
 ## Driver SMS canonico
 
-**`smsfactor`** — SSoT da `config/sms.php` (`default => smsfactor`).
+**`smsfactor`**: SSoT da `config/sms.php` (`default => smsfactor`).
 
 Pattern attivo:
 

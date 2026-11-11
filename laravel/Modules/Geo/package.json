@@ -3,12 +3,12 @@
     "author": "marco76tv <marco.sottana@gmail.com>",
     "license": "MIT",
     "private": true,
-    "version": "0.0.0",
+    "version": "1.1.0",
     "type": "module",
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "copy": "cp -rv ./public/* ../../../public_html/assets/geo"
+        "copy": "mkdir -p ../../../public_html/assets/geo && cp -R ./public/. ../../../public_html/assets/geo"
     },
     "devDependencies": {
         "@tailwindcss/forms": "^0.5.7",

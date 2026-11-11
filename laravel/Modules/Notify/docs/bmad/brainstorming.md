@@ -1,5 +1,5 @@
 ---
-title: "Notify — brainstorming"
+title: "Notify: brainstorming"
 type: brainstorming
 tags: [notify, brainstorming, risks, open-questions, decisions, channels]
 created: 2026-09-28
@@ -14,7 +14,7 @@ related:
 status: draft
 ---
 
-# Notify — brainstorming
+# Notify: brainstorming
 
 > **SUMMARY**: indice dei contenuti di brainstorming per `Modules\Notify`.
 > Le domande ad alto valore, ipotesi, rischi e output attesi sono nei **shard**

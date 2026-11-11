@@ -68,6 +68,6 @@ come `laravel/Modules/<CurrentModule>/tests/Feature/`.
 
 ## Relazioni
 
-- [[../../docs/wiki/concepts/laraxot-architecture]] — architettura DDD del progetto
-- [[concepts/laraxot-architecture]] — (quando disponibile a livello modulo)
+- [[../../docs/wiki/concepts/laraxot-architecture]]: architettura DDD del progetto
+- [[concepts/laraxot-architecture]]: (quando disponibile a livello modulo)
 - Vedi `testing-rules.md` in `docs/` per le regole di testing specifiche del modulo Notify

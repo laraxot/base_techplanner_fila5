@@ -28,12 +28,12 @@ This file contains comprehensive guidelines and commands for AI agents working o
 - **NEVER** create Controllers
 - **ALWAYS** use: Volt, Folio, Filament, Laraxot
 
-### VIEW PATTERN — view-string + viewParams
+### VIEW PATTERN: view-string + viewParams
 - Per view(): variabile con @phpstan-var view-string, $viewParams = [] esplicito
 - return view($viewName, $viewParams)
 - Logica: type safety, estensibilità, consistenza. Vedi docs/view-pattern.md
 
-### PHPMD e PHPInsights — SOLO .phar
+### PHPMD e PHPInsights: SOLO .phar
 - **NON** installare con Composer
 - Usare .phar: `php phpmd.phar`, `php phpinsights.phar`
 - Logica: indipendenza, portabilità, leggerezza. Vedi docs/quality-tools-setup.md

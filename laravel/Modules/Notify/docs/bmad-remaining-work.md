@@ -1,5 +1,5 @@
 ---
-title: "Notify Module — BMAD Stories & Remaining Work"
+title: "Notify Module: BMAD Stories & Remaining Work"
 type: concept
 sources: ["../../AGENTS.md"]
 confidence: medium
@@ -12,15 +12,15 @@ status: draft
 qmd: "notify module   bmad stories & remaining work notify"
 ---
 
-# Notify Module — BMAD Stories & Remaining Work
+# Notify Module: BMAD Stories & Remaining Work
 
 ## Module Overview
 The Notify module provides notification delivery (email, SMS) and messaging services.
 
 ## Remaining Work
 1. PHPStan Zero Verification ✅
-2. SMS Integration — Verify Twilio integrations
-3. Email Templates — Verify template patterns
+2. SMS Integration: Verify Twilio integrations
+3. Email Templates: Verify template patterns
 4. Module Documentation 📋
 5. Test Coverage 📋
 6. BMAD Stories 📋

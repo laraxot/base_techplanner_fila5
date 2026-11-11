@@ -9,13 +9,14 @@ use Illuminate\Support\Arr;
 use Modules\Tenant\Models\Contracts\HasSushiToJson;
 use Modules\Xot\Actions\Arr\EnsureKeysAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Aggiunge al file JSON del tenant la riga corrispondente al record in creazione.
  *
  * L'id non viene assegnato dal database (Sushi usa SQLite in memoria): il
- * record riceve `max(id esistenti) + 1`. Il fallback `?: [0]` copre il file
+ * record riceve `max(id esistenti) + 1`. Lo `0` iniziale copre il file
  * vuoto, dove `max()` su array senza elementi leverebbe una ValueError.
  */
 class CreateJsonFileByRecordAction
@@ -31,15 +32,10 @@ class CreateJsonFileByRecordAction
 
         $keyName = $record->getKeyName();
 
-        // Nei file JSON gli id possono essere stringhe ("4"): prima Assert::integer('4') faceva fallire
-        // ogni creazione (es. il conteggio nel menu mostrava «--»). Gli id non numerici valgono 0.
-        $ids = array_map(
-            static fn (mixed $id): int => is_numeric($id) ? (int) $id : 0,
-            Arr::pluck($rows, $keyName),
-        );
-        $max = $ids === [] ? 0 : max($ids);
+        // Gli id letti dal JSON possono essere stringhe numeriche ('1'): SafeIntCastAction li porta a int.
+        $ids = array_map(SafeIntCastAction::cast(...), Arr::pluck($rows, $keyName));
 
-        $newId = $max + 1;
+        $newId = max([0, ...$ids]) + 1;
 
         $record->setAttribute($keyName, $newId);
 

@@ -1,12 +1,12 @@
 ---
-title: "UI — completion backlog"
+title: "UI: completion backlog"
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, ui]
 qmd: "ui   completion backlog ui"
 ---
-# UI — completion backlog
+# UI: completion backlog
 
 Status: partial and evidence-driven. This file is the canonical owner-local list for future work.
 

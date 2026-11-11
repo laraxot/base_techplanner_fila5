@@ -31,6 +31,12 @@ return [
         'trashed' => [
             'label' => 'Record eliminati',
         ],
+        'country' => [
+            'label' => 'Nazione',
+        ],
+        'postal_code' => [
+            'label' => 'CAP',
+        ],
     ],
     'actions' => [
         'create' => [

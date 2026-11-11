@@ -12,8 +12,8 @@ status: draft
 
 # 🎨 Cinematic Effects & Particles
 
-**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
-**Related**: [06-CINEMATIC-EFFECTS.md](06-CINEMATIC-EFFECTS.md) — Full guide
+**Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
+**Related**: [06-CINEMATIC-EFFECTS.md](06-CINEMATIC-EFFECTS.md): Full guide
 
 ---
 ## 📋 Quick Reference

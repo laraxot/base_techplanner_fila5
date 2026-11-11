@@ -6,10 +6,8 @@
         <main class="relative min-h-screen">
             {{ $slot }}
         </main>
-        @livewire('notifications')
         <x-section slug="footer" />
         @livewireScripts
-        @filamentScripts
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>

@@ -1,5 +1,5 @@
 ---
-title: "job — product"
+title: "job: product"
 module: job
 type: product
 tags: [product, modules, job]
@@ -9,7 +9,7 @@ status: draft
 qmd: "job   product job"
 ---
 
-# job — product
+# job: product
 
 Documentation for `job` module categorized as **product**.
 

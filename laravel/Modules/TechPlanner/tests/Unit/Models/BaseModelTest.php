@@ -6,36 +6,30 @@ namespace Modules\TechPlanner\Tests\Unit\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\TechPlanner\Models\BaseModel;
-use Modules\TechPlanner\Tests\TestCase;
 
-uses(TestCase::class);
+use function Safe\class_parents;
 
-function createTechPlannerTestBaseModel(): BaseModel
-{
-    return new class() extends BaseModel
+beforeEach(function () {
+    // Il boot del modello anonimo fa scattare `eloquent.booting`, intercettato
+    // dal wildcard subscriber di event-sourcing la cui istanza singleton può
+    // non essere risolvibile in test: i metadata non richiedono eventi.
+    $this->baseModel = Model::withoutEvents(static fn () => new class() extends BaseModel
     {
         protected $table = 'test_techplanner_table';
-    };
-}
-
-test('base model extends eloquent model', function () {
-    $this->assertInstanceOf(Model::class, createTechPlannerTestBaseModel());
+    });
 });
 
 test('base model has correct table name', function () {
-    $this->assertSame('test_techplanner_table', createTechPlannerTestBaseModel()->getTable());
-});
-
-test('base model can be instantiated', function () {
-    $this->assertInstanceOf(BaseModel::class, createTechPlannerTestBaseModel());
+    expect($this->baseModel->getTable())->toBe('test_techplanner_table');
 });
 
 test('base model has proper inheritance chain', function () {
-    $baseModel = createTechPlannerTestBaseModel();
-    $this->assertInstanceOf(BaseModel::class, $baseModel);
-    $this->assertInstanceOf(Model::class, $baseModel);
+    $parents = class_parents($this->baseModel);
+
+    expect($parents)->toContain(BaseModel::class);
+    expect($parents)->toContain(Model::class);
 });
 
 test('base model has timestamps enabled', function () {
-    $this->assertTrue(createTechPlannerTestBaseModel()->usesTimestamps());
+    expect($this->baseModel->usesTimestamps())->toBeTrue();
 });

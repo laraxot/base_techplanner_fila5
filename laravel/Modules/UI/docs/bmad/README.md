@@ -157,10 +157,10 @@ MIT
 
 ## Documentation
 
-- [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
-- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
-- [Performance](./performance-optimization.md) — Metriche e best practice
-- [Project Structure](./project-structure.md) — Directory layout
+- [On-Demand Pattern](./on-demand-pattern.md): Pattern per caricamento efficiente
+- [QMD Setup](./qmd-setup.md): Configurazione ricerca locale
+- [Performance](./performance-optimization.md): Metriche e best practice
+- [Project Structure](./project-structure.md): Directory layout
 
     public function getTableContentGrid(): array
     {
@@ -1139,7 +1139,7 @@ extended_by: 40
 documentation_date: "2026-05-27"
 ---
 
-# UI — Il Design System Sacro
+# UI: Il Design System Sacro
 
 ## Scopo
 
@@ -1191,4 +1191,4 @@ L'ecosistema ha 40+ moduli che condividono l'interfaccia admin. Senza un design 
 
 ---
 
-*Documento generato secondo le convenzioni del progetto — modulo `UI` — data 2026-05-27*
+*Documento generato secondo le convenzioni del progetto: modulo `UI`: data 2026-05-27*

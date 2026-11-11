@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+
 use Illuminate\Contracts\Http\Kernel;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;

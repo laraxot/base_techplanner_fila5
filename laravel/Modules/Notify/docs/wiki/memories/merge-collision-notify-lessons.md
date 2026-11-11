@@ -14,7 +14,7 @@ related:
 status: draft
 ---
 
-# Lezioni merge — modulo Notify
+# Lezioni merge: modulo Notify
 
 ## SVG (`resources/svg/`)
 
@@ -25,7 +25,7 @@ status: draft
 
 ## Filament `*Table.php`
 
-**Canon (sempre):** `public function getTableColumns(): array` — filosofia Filament + `XotBaseResourceTable`.
+**Canon (sempre):** `public function getTableColumns(): array`: filosofia Filament + `XotBaseResourceTable`.
 
 | Lato merge | Firma | Azione |
 |------------|-------|--------|
@@ -36,7 +36,7 @@ Corpo colonne (chiavi stringa): di solito da HEAD.
 
 ## File da eliminare, non risolvere
 
-- `*.php.up` — backup merge; rimuovere se compaiono marker.
+- `*.php.up`: backup merge; rimuovere se compaiono marker.
 
 ## Post-fix obbligatorio
 

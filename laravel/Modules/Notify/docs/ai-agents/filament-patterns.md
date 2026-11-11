@@ -109,7 +109,7 @@ In `Modules\\Xot\\Filament\\Traits\\HasXotTable`, the builder method `table(Tabl
 - `getTableColumns()` **DEVE SEMPRE** restituire un array associativo: `array<string, Column>`.
 - Le chiavi **devono essere stringhe**, mai indici numerici.
 - Keys must be stable strings (e.g., column/field name: `'name'`, `'email'`).
-- **MAI** usare `array_values()` — distrugge le chiavi.
+- **MAI** usare `array_values()`: distrugge le chiavi.
 - Vedi `.cursor/rules/gettablecolumns-string-keys.mdc`.
 
 ```php

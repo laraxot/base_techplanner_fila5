@@ -1,5 +1,5 @@
 ---
-title: "Notify — BMAD dossier"
+title: "Notify: BMAD dossier"
 type: bmad-dossier
 module: Notify
 updated: 2026-10-07
@@ -9,7 +9,7 @@ issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
 status: draft
 ---
-# Notify — BMAD dossier
+# Notify: BMAD dossier
 ## Product brief / PRD
 Deliver preference-aware mail/SMS/WhatsApp/Telegram/FCM messages with observable outcomes.
 ## Architecture / UX / security

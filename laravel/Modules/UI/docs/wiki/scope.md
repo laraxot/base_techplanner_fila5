@@ -1,5 +1,5 @@
 ---
-title: "UI — Scopo modulo"
+title: "UI: Scopo modulo"
 status: active
 type: note
 updated: 2026-10-08

@@ -2,7 +2,7 @@
 qmd: "mail consolidated"
 issues: []
 discussions: []
-title: "mail — Consolidated Documentation"
+title: "mail: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# mail — Consolidated Documentation
+# mail: Consolidated Documentation
 
 Consolidated from **8** individual files.
 

@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# NO Hardcoded Language — La Religione i18n
+# NO Hardcoded Language: La Religione i18n
 
 **Status**: Active  
 **Created**: 2026-04-14  

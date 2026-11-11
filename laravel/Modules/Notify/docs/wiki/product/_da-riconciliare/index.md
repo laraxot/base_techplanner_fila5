@@ -2,7 +2,7 @@
 qmd: "index"
 issues: []
 discussions: []
-title: "notify — product"
+title: "notify: product"
 module: notify
 type: product
 tags: [product, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# notify — product
+# notify: product
 
 Documentation for `notify` module categorized as **product**.
 

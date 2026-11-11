@@ -1,5 +1,5 @@
 ---
-title: "[STORY] PHPStan zero errori Notify — param type mancanti nei test"
+title: "[STORY] PHPStan zero errori Notify: param type mancanti nei test"
 type: story
 module: Notify
 status: done-pending-commit
@@ -12,7 +12,7 @@ related:
   - ../wiki/concepts/phpstan-pest-test-doubles.md
 ---
 
-# [STORY] PHPStan zero errori Notify — param type mancanti nei test
+# [STORY] PHPStan zero errori Notify: param type mancanti nei test
 
 ## User Request
 

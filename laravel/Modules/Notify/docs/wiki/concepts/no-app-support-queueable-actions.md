@@ -1,5 +1,5 @@
 ---
-title: "no app/Support — business logic in QueueableAction"
+title: "no app/Support: business logic in QueueableAction"
 type: concept
 tags: [notify, actions, queueable-action, support, refactor, push, mail]
 created: 2026-07-12
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# no `app/Support/` — business logic in QueueableAction
+# no `app/Support/`: business logic in QueueableAction
 
 ## Scopo
 
@@ -34,13 +34,13 @@ Nel modulo Notify **non** esiste più `app/Support/`. Ogni helper con comportame
 
 ## Perché
 
-- **Path = namespace:** `PushNotificationPlatformDelivery` era in `Support/` ma namespace `Modules\Notify\Actions` — incoerenza PSR-4
+- **Path = namespace:** `PushNotificationPlatformDelivery` era in `Support/` ma namespace `Modules\Notify\Actions`: incoerenza PSR-4
 - **Single-purpose:** invio mail Mailtrap → `SendMailtrapMailAction::execute()`
 - **Orchestrazione push (stato 2026-10-08):** non esiste piu' `SendPushNotificationAction` -> `PushNotificationPlatformDelivery`.
   Sia l'orchestrazione sia il recapito per piattaforma vivono in `Actions/Push/*`, una Action per caso d'uso con un solo
   `execute()` (elenco e mapping in [services-to-actions-migration.md](services-to-actions-migration.md)).
 
-## Push — token vs topic (oggi in `Actions/Push/*`)
+## Push: token vs topic (oggi in `Actions/Push/*`)
 
 | Action | Uso | Piattaforme |
 |--------|-----|-------------|

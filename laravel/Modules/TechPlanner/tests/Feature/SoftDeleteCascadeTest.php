@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\TechPlanner\Filament\Resources\ClientResource\Tables\ClientsTable;
 use Modules\TechPlanner\Models\Client;
@@ -31,8 +30,7 @@ function tpSoftMigrate(string ...$files): void
 }
 
 beforeEach(function (): void {
-    config(['database.connections.tech_planner' => ['driver' => 'sqlite', 'database' => ':memory:', 'prefix' => '', 'foreign_key_constraints' => true]]);
-    DB::purge('tech_planner');
+    $this->useIsolatedTechPlannerConnection(foreignKeys: true);
     tpSoftMigrate(
         '2024_12_26_000008_create_client_table.php',
         '2019_12_12_000005_create_appointments_table.php',
@@ -43,6 +41,7 @@ beforeEach(function (): void {
         '2026_11_05_220020_create_medical_directors_table.php',
         '2024_12_26_230220_create_legal_representatives_table.php',
         '2024_12_26_230221_create_legal_offices_table.php',
+        '2026_11_06_000000_create_controls_table.php',
     );
 
     $this->client = Client::query()->create(['company_name' => 'Studio Rossi']);

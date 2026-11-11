@@ -1,5 +1,5 @@
 ---
-title: "Performance Optimization — Module Notify"
+title: "Performance Optimization: Module Notify"
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -17,7 +17,7 @@ status: draft
 qmd: "performance optimization   module **notify** notify"
 ---
 
-# Performance Optimization — Module **Notify**
+# Performance Optimization: Module **Notify**
 
 ## Ottimizzazioni Applicate
 
@@ -29,7 +29,7 @@ qmd: "performance optimization   module **notify** notify"
 \`\`\`diff
 - 150+ rules embeddate in AGENTS.md
 - 150+ rules embeddate in agents.md
-+ 0 rules embeddate — tutte on-demand
++ 0 rules embeddate: tutte on-demand
 \`\`\`
 
 ### 2. Cache Esterna al Repo
@@ -86,10 +86,10 @@ if trigger in trigger_map:
 ### Query QMD Efficienti
 
 \`\`\`bash
-# ❌ Troppo generico — risultati enormi
+# ❌ Troppo generico: risultati enormi
 qmd search "form"
 
-# ✅ Specifico — risultati precisi
+# ✅ Specifico: risultati precisi
 qmd search "filament form schema conventions"
 \`\`\`
 
@@ -105,10 +105,10 @@ qmd search "global validation rules"
 
 ## Prossimi Miglioramenti (TODO)
 
-1. **Auto-index rebuild** — Dopo 500 file changes, `qmd index rebuild`
-2. **Hooks pre-task** — Auto-memory sync
-3. **Context-mode batch** — Convertire script in batch exec
-4. **Permissions allowlist** — .claude/settings.json
+1. **Auto-index rebuild**: Dopo 500 file changes, `qmd index rebuild`
+2. **Hooks pre-task**: Auto-memory sync
+3. **Context-mode batch**: Convertire script in batch exec
+4. **Permissions allowlist**: .claude/settings.json
 
 ## Monitoring
 

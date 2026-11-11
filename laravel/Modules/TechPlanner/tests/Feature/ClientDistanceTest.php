@@ -23,13 +23,13 @@ function tpDistanceCell(Client $client): array
     /** @var TextColumn $column */
     $column = (new ClientsTable())->getTableColumns()['distance'];
 
-    $state = (new ReflectionProperty($column, 'getStateUsing'))->getValue($column);
     $format = (new ReflectionProperty($column, 'formatStateUsing'))->getValue($column);
-    if (! $state instanceof Closure || ! $format instanceof Closure) {
-        throw new RuntimeException('La colonna distance deve dichiarare getStateUsing e formatStateUsing');
+    if (! $format instanceof Closure) {
+        throw new RuntimeException('La colonna distance deve dichiarare formatStateUsing');
     }
 
-    $value = $state($client);
+    // Lo stato è l'attributo `distance` (GeoTrait::getDistanceAttribute), come lo legge Filament.
+    $value = $client->getAttribute('distance');
     $text = $format($value);
     if (! is_string($text)) {
         throw new RuntimeException('Il formattatore della distanza deve restituire una stringa');
@@ -45,8 +45,7 @@ function tpDistanceCell(Client $client): array
  */
 
 beforeEach(function (): void {
-    config(['database.connections.tech_planner' => ['driver' => 'sqlite', 'database' => ':memory:', 'prefix' => '']]);
-    DB::purge('tech_planner');
+    $this->useIsolatedTechPlannerConnection();
     Schema::connection('tech_planner')->create('clients', static function (Blueprint $table): void {
         $table->id();
         $table->string('company_name')->nullable();
@@ -80,9 +79,8 @@ it('orders clients by real kilometres from the chosen client, without coordinate
 it('shows a dash instead of crashing when no starting client was chosen', function (): void {
     $client = Client::query()->findOrFail(3);
 
-    // Causa radice di TPL-01: l'accesso magico tratta GeoTrait::distance() come relazione.
-    expect(fn (): mixed => $client->getAttribute('distance'))->toThrow(LogicException::class);
-
+    // TPL-01: prima l'accesso a `distance` trattava GeoTrait::distance() come relazione (LogicException);
+    // ora l'accessor restituisce NULL quando la query non ha calcolato la distanza.
     [$state, $text] = tpDistanceCell($client);
 
     expect($state)->toBeNull()->and($text)->toBe('—');

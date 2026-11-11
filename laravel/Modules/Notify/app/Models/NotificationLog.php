@@ -11,6 +11,7 @@ use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
 use Modules\Notify\Enums\NotificationLogStatusEnum;
+use Modules\Notify\Models\Traits\NotificationLogRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
@@ -69,10 +70,12 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|NotificationLog whereUpdatedAt($value)
  * @method static Builder<static>|NotificationLog whereUpdatedBy($value)
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class NotificationLog extends BaseModel
 {
+    use NotificationLogRelations;
+
     protected $table = 'notification_logs';
 
     protected $fillable = [
@@ -92,16 +95,8 @@ class NotificationLog extends BaseModel
         'tenant_id'];
 
     /** @return MorphTo<Model, $this> */
-    public function notifiable(): MorphTo
-    {
-        return $this->morphTo();
-    }
 
     /** @return BelongsTo<NotificationTemplate, $this> */
-    public function template(): BelongsTo
-    {
-        return $this->belongsTo(NotificationTemplate::class, 'template_id');
-    }
 
     /**
      * @param  Builder<static>  $query

@@ -5,10 +5,10 @@ declare(strict_types=1);
 namespace Modules\Notify\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
+use Modules\Notify\Models\Traits\MailTemplateVersionRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
 use RuntimeException;
@@ -58,30 +58,24 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder<static>|MailTemplateVersion whereUpdatedBy($value)
  * @method static Builder<static>|MailTemplateVersion whereVersion($value)
  *
- * @mixin \Eloquent
+ * @mixin \Illuminate\Database\Eloquent\Model
  */
 class MailTemplateVersion extends BaseModel
 {
+    use MailTemplateVersionRelations;
     use SoftDeletes, Updater;
 
     protected $connection = 'notify';
 
     /** @var list<string> */
     protected $fillable = [
-        'template_id',
-        'mailable',
+        'mail_template_id',
         'subject',
         'html_template',
         'text_template',
         'version',
         'created_by',
         'change_notes'];
-
-    /** @return BelongsTo<MailTemplate, $this> */
-    public function template(): BelongsTo
-    {
-        return $this->belongsTo(MailTemplate::class, 'template_id');
-    }
 
     public function restoreTemplate(): MailTemplate
     {

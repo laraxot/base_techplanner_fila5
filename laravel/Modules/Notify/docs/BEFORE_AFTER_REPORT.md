@@ -1,5 +1,5 @@
 ---
-title: "Notify Docs Organization — Before/After Report"
+title: "Notify Docs Organization: Before/After Report"
 type: report
 module: Notify
 updated: 2026-10-06
@@ -9,7 +9,7 @@ status: superseded
 superseded_by: before-after-report.md
 ---
 
-# Before/After Report — Notify Module Docs
+# Before/After Report: Notify Module Docs
 
 ## Before
 - docs/ contained: bmad/, legacy/ (447 files), wiki/, rules/, stories/, -integration/, readme.md files, images

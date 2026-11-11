@@ -2,7 +2,7 @@
 qmd: "sms consolidated"
 issues: []
 discussions: []
-title: "sms — Consolidated Documentation"
+title: "sms: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# sms — Consolidated Documentation
+# sms: Consolidated Documentation
 
 Consolidated from **63** individual files.
 

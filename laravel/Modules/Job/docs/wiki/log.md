@@ -19,15 +19,15 @@ status: draft
 - Limite principale emerso: lo scheduler su DB non e' registrato (`JobServiceProvider::registerSchedule()` tutto commentato, `ScheduleObserver` non collegato), le chiavi `job::model`, `job::cache.*`, `jobs.pruning.*` non sono definite.
 - Story: [2026-10-14-docs-ingressi-job](../stories/docs-ingressi-job.story.md). Nota durevole: `bashscripts/ai/wiki/memories/docs-notify-activity-media-job-studio.md`.
 
-## [2026-06-30] docs | Second brain — policy incident consolidato
+## [2026-06-30] docs | Second brain: policy incident consolidato
 
 - Memoria datata rimossa; canon in [policy-restoration-incident.md](./concepts/policy-restoration-incident.md)
 - Hub progetto: [sacred-artifacts-never-delete.md](../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md)
 - Inventario repo-wide: [policy-module-inventory.md](../../../../../docs/wiki/concepts/policy-module-inventory.md) + `bashscripts/tools/audit-policy-inventory.sh`
-- Job 15/15 policy — gold standard (`ExportPolicy extends JobBasePolicy {}`)
+- Job 15/15 policy: gold standard (`ExportPolicy extends JobBasePolicy {}`)
 - Merge conflict risolto in [index.md](./index.md)
 
-## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
+## [2026-06-05] docs | HackerNoon harness: tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), `llm-wiki.txt` (percorso `bashscripts/tools/prompts/llm-wiki.txt`: file non presente il 2026-10-14)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)

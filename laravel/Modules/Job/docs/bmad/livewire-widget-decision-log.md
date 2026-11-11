@@ -1,5 +1,5 @@
 ---
-title: "Decision log — Job"
+title: "Decision log: Job"
 type: decision-log
 module: Job
 related:

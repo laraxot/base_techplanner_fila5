@@ -7,9 +7,9 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Modules\Notify\Models\Contact;
 use Tests\TestCase;
 
+uses(\Modules\Notify\Tests\TestCase::class);
 class ContactTest extends TestCase
 {
-
     protected function setUp(): void
     {
         parent::setUp();
@@ -78,7 +78,7 @@ class ContactTest extends TestCase
     /** @test */
     public function it_has_correct_fillable_fields(): void
     {
-        $contact = new Contact();
+        $contact = new Contact;
 
         $expectedFillable = [
             'model_id',
@@ -100,7 +100,7 @@ class ContactTest extends TestCase
     /** @test */
     public function it_has_correct_casts(): void
     {
-        $contact = new Contact();
+        $contact = new Contact;
 
         $expectedCasts = [
             'id' => 'string',

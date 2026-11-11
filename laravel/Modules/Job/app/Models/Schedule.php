@@ -13,6 +13,7 @@ use Illuminate\Support\Collection;
 use InvalidArgumentException;
 use Modules\Job\Database\Factories\ScheduleFactory;
 use Modules\Job\Enums\Status;
+use Modules\Job\Models\Traits\ScheduleRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
@@ -95,6 +96,7 @@ use Override;
 class Schedule extends BaseModel
 {
     use ManagesFrequencies;
+    use ScheduleRelations;
 
     protected $fillable = [
         'command',
@@ -144,10 +146,6 @@ class Schedule extends BaseModel
      *
      * @return HasMany<ScheduleHistory, $this>
      */
-    public function histories(): HasMany
-    {
-        return $this->hasMany(ScheduleHistory::class, 'schedule_id', 'id');
-    }
 
     /**
      * Scope a query to only include inactive schedules.

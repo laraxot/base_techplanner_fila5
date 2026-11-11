@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Notify\Models\NotificationType;
+use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 describe('NotificationType Business Logic', function (): void {
     test('notification type extends eloquent model', function (): void {
         $notificationType = new NotificationType;

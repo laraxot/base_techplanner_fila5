@@ -1,5 +1,13 @@
 # Decision Log
 
+## [2026-11-06] TechPlanner client control recency and competitive workflow
+
+**Decision:** Keep the client list as the operational hub and add correlated latest-control dates plus relationship filters, alongside the existing distance/map workflow.
+
+**Rationale:** Field-service competitors make proximity and route context easy, while healthcare compliance products make inspection history visible. TechPlanner's differentiator is combining both without duplicating the CRUD surface or introducing enterprise routing complexity prematurely.
+
+**Artifacts:** `techplanner-client-controls-tech-spec.md`, `techplanner-client-controls-experience.md`, `laravel/Modules/TechPlanner/docs/filament/client-controls-blueprint.md`, and the competitive analysis in the TechPlanner module.
+
 ## [2026-09-06] PHPStan Module Fixes - Tech Spec Creation
 
 **Decision:** Create Quick Flow tech spec for PHPStan error fixes across Activity and Employee modules

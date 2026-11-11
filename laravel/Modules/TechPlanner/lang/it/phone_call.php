@@ -9,6 +9,8 @@ return [
         'plural_label' => 'Chiamate',
         'icon' => 'techplanner-phone-call',
         'sort' => 30,
+        'name' => 'Chiamata',
+        'plural' => 'Chiamate',
     ],
     'enums' => [
         'inbound' => [
@@ -128,18 +130,27 @@ return [
     'fields' => [
         'date' => [
             'label' => 'Data',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => 'date',
         ],
         'duration' => [
             'label' => 'Durata',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => 'duration',
         ],
         'notes' => [
             'label' => 'Note',
             'description' => 'notes',
+            'placeholder' => '',
+            'helper_text' => '',
         ],
         'call_type' => [
             'label' => 'Tipo Chiamata',
             'description' => 'call_type',
             'helper_text' => '',
+            'placeholder' => '',
         ],
         'id' => [
             'label' => 'ID',

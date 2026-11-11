@@ -1,12 +1,12 @@
 ---
-title: "BMAD completion pack — Notify"
+title: "BMAD completion pack: Notify"
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, notify, bmad]
 qmd: "bmad completion pack   notify notify"
 ---
-# BMAD completion pack — Notify
+# BMAD completion pack: Notify
 
 This is the owner-local BMAD entry point. Cross-owner contracts are in plans/fixcity-completion-architecture.md; the backlog is in docs/completion-backlog.md.
 

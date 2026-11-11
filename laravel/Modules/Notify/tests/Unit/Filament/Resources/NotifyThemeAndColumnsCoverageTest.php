@@ -18,8 +18,10 @@ use Modules\Notify\Filament\Resources\NotifyThemeResource\Schemas\NotifyThemeFor
 use Modules\Notify\Filament\Resources\NotifyThemeResource\Tables\NotifyThemesTable;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
 use Modules\Notify\Tests\Fixtures\EditNotifyThemeTestProxy;
+use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 function makeEditNotifyThemeTestProxy(): EditNotifyThemeTestProxy
 {
     return new EditNotifyThemeTestProxy;

@@ -1,5 +1,5 @@
 ---
-title: "Composer root minimale — modulo Notify"
+title: "Composer root minimale: modulo Notify"
 type: concept
 tags: [composer, notify, nwidart, merge-plugin]
 created: 2026-06-29
@@ -27,7 +27,7 @@ Dipendenze del dominio **Notify** in `Modules/Notify/composer.json`. Il root `la
 
 
 
-## Merge root — solo moduli
+## Merge root: solo moduli
 
 `laravel/composer.json` → merge **solo** `Modules/*/composer.json`. **Vietato** `Themes/*/composer.json` (nwidart owner = modulo; tema = vestito Blade/assets).
 

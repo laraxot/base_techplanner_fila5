@@ -84,10 +84,10 @@ status: draft
 ## Cross-References
 
 ### Related Documentation
-- ← [BMad Agents Index](../agents/index.md) — 10 agent definitions
-- ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
-- ← [GEMINI Index](../gemini/index.md) — Gemini-specific rules
-- ← [Main AI Docs Index](../index.md) — Master index
+- ← [BMad Agents Index](../agents/index.md): 10 agent definitions
+- ← [CLAUDE Index](../claude/index.md): Laravel Boost guidelines
+- ← [GEMINI Index](../gemini/index.md): Gemini-specific rules
+- ← [Main AI Docs Index](../index.md): Master index
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)

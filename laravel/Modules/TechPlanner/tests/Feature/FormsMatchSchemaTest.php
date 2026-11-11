@@ -5,7 +5,6 @@ declare(strict_types=1);
 use Filament\Forms\Components\Field;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\TechPlanner\Filament\Resources\AppointmentResource\Schemas\AppointmentForm;
 use Modules\TechPlanner\Filament\Resources\DeviceResource\RelationManagers\DeviceVerificationsRelationManager;
@@ -33,8 +32,7 @@ uses(TestCase::class);
  */
 
 beforeEach(function (): void {
-    config(['database.connections.tech_planner' => ['driver' => 'sqlite', 'database' => ':memory:', 'prefix' => '']]);
-    DB::purge('tech_planner');
+    $this->useIsolatedTechPlannerConnection();
     foreach ([
         '2024_12_26_000008_create_client_table.php',
         '2019_12_12_000005_create_appointments_table.php',
@@ -45,6 +43,9 @@ beforeEach(function (): void {
         '2026_11_05_220020_create_medical_directors_table.php',
         '2024_12_26_230220_create_legal_representatives_table.php',
         '2024_12_26_230221_create_legal_offices_table.php',
+        '2026_11_06_100000_add_workflow_fields_to_appointments_table.php',
+        '2026_11_19_000000_add_duration_minutes_to_appointments_table.php',
+        '2026_11_06_000000_create_controls_table.php',
     ] as $file) {
         $migration = require dirname(__DIR__, 2).'/database/migrations/'.$file;
         expect($migration)->toBeInstanceOf(Migration::class);

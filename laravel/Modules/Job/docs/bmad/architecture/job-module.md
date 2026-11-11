@@ -1,5 +1,5 @@
 ---
-title: "Architecture spine — Job (puntatore)"
+title: "Architecture spine: Job (puntatore)"
 type: architecture
 module: Job
 status: pointer

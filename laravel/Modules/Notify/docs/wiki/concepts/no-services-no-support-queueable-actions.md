@@ -1,7 +1,7 @@
 ---
 issues: []
 discussions: []
-title: "No Services / No Support — QueueableAction only"
+title: "No Services / No Support: QueueableAction only"
 type: concept
 module: Notify
 tags: [notify, services, support, actions, queueable-action, migration]
@@ -20,7 +20,7 @@ related:
 status: draft
 ---
 
-# Notify — Services/Support vietati: solo Actions
+# Notify: Services/Support vietati: solo Actions
 
 ## Regola
 

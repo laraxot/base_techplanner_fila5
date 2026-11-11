@@ -84,8 +84,8 @@ return [
         ],
         'value' => [
             'label' => 'Valore',
-            'placeholder' => 'value',
-            'helper_text' => 'value',
+            'placeholder' => '',
+            'helper_text' => '',
             'description' => 'value',
         ],
     ],
@@ -187,7 +187,7 @@ return [
         'removeAllFilters' => [
             'label' => 'removeAllFilters',
             'icon' => 'removeAllFilters',
-            'tooltip' => 'removeAllFilters',
+            'tooltip' => '',
         ],
         'view' => [
             'label' => 'view',
@@ -197,6 +197,11 @@ return [
         'save' => [
             'label' => 'save',
             'icon' => 'save',
+            'tooltip' => '',
+        ],
+        'layout' => [
+            'label' => 'layout',
+            'icon' => 'layout',
             'tooltip' => '',
         ],
     ],

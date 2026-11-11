@@ -2,7 +2,7 @@
 qmd: "no consolidated"
 issues: []
 discussions: []
-title: "no — Consolidated Documentation"
+title: "no: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,14 +11,14 @@ updated: 2026-08-24
 status: draft
 ---
 
-# no — Consolidated Documentation
+# no: Consolidated Documentation
 
 Consolidated from **35** individual files.
 
 ## Table of Contents
 
 - [---](#no-ai-tool-scaffold-dirs)
-- [NO Hardcoded Language — La Religione i18n](#no-hardcoded-language-religion)
+- [NO Hardcoded Language: La Religione i18n](#no-hardcoded-language-religion)
 - [No HTTP controllers in any module](#no-http-controllers)
 - [Notify Rule: No NotificationTrackingController](#no-notification-tracking-controller-rule)
 - [Notify: no NotificationTrackingController](#no-notification-tracking-controller)
@@ -64,12 +64,12 @@ title: No AI/tool scaffold directories in module tree
 
 # Perché queste cartelle non devono esistere qui
 
-Regola canonica: [module-theme-root-cleanup.md — Rule 5](../../../../docs/wiki/rules/module-theme-root-cleanup.md).
-Regola canonica: [module-theme-root-cleanup.md — Rule 5](../../../../../../docs/wiki/rules/module-theme-root-cleanup.md).
+Regola canonica: [module-theme-root-cleanup.md: Rule 5](../../../../docs/wiki/rules/module-theme-root-cleanup.md).
+Regola canonica: [module-theme-root-cleanup.md: Rule 5](../../../../../../docs/wiki/rules/module-theme-root-cleanup.md).
 
 Rimosse in questo modulo: `_docs/`, `scripts/`, `bashscripts/`, `docs/archive|archived|legacy|workbench/`, `.circleci/`, `.claude-audit/`, `tests/.claude-audit/`, `_bmad-output/`, `test-results/`, `.devcontainer/`, `.kilocode/`, `.kiro/`, `.ralph/` (dove presenti) e aggiunte al `.gitignore` di questo modulo.
 
-**Perché**: questo modulo vive anche come repo Git indipendente (multi-repo); ogni agente/tool AI o pipeline CI che gira in quella root scrive lì la propria cache/scaffold locale (skill `.kiro/`, output `_bmad-output/`, stato `.ralph/`, audit `.claude-audit/`, log `test-results/`), ignorando che quella root è in realtà un sotto-albero del monorepo con le proprie convenzioni: `docs/` unica per la conoscenza riusabile, `bashscripts/` unica alla root del monorepo, `build/` unico per gli artefatti generati. Un secondo posto per la stessa categoria di contenuto è entropia, non struttura — se il tool lo rigenera, il `.gitignore` aggiornato lo tiene fuori dal tracking invece di doverlo ripulire ogni sessione.
+**Perché**: questo modulo vive anche come repo Git indipendente (multi-repo); ogni agente/tool AI o pipeline CI che gira in quella root scrive lì la propria cache/scaffold locale (skill `.kiro/`, output `_bmad-output/`, stato `.ralph/`, audit `.claude-audit/`, log `test-results/`), ignorando che quella root è in realtà un sotto-albero del monorepo con le proprie convenzioni: `docs/` unica per la conoscenza riusabile, `bashscripts/` unica alla root del monorepo, `build/` unico per gli artefatti generati. Un secondo posto per la stessa categoria di contenuto è entropia, non struttura: se il tool lo rigenera, il `.gitignore` aggiornato lo tiene fuori dal tracking invece di doverlo ripulire ogni sessione.
 
 ---
 
@@ -626,7 +626,7 @@ There is no slot for a traditional controller.
 - They create implicit routing that bypasses the Folio/Localization middleware stack
 - They cannot use `LaravelLocalization::localizeUrl()` for redirects correctly
 - They bypass the `pub_theme::` namespace resolution
-- They undermine the CMS-driven page model — the page has no JSON definition
+- They undermine the CMS-driven page model: the page has no JSON definition
 - They introduce a parallel routing system that conflicts with Folio's file-based routing
 
 ### The Notify module specifically
@@ -669,7 +669,7 @@ This keeps the HTTP surface in Folio (the correct location) while the business l
 ## Related
 
 - CLAUDE.md rule 1: "NEVER use traditional controllers or routes in web.php/api.php for front office"
-- `laravel/CLAUDE.md` rule 2: Architecture frontend — NO Controller, NO Routes in web.php
+- `laravel/CLAUDE.md` rule 2: Architecture frontend: NO Controller, NO Routes in web.php
 - Folio routing docs: `Themes/Meetup/docs/folio-pages-json-only-rule.md`
 
 ---

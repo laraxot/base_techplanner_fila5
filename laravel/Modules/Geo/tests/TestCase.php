@@ -17,7 +17,6 @@ abstract class TestCase extends BaseTestCase
     use CreatesApplication;
     use DatabaseTransactions;
 
-    /** @var list<string> */
     /**
      * Connessioni da riportare indietro dopo ogni test. Prima elencava `fixcity`, la connessione di
      * un altro progetto: in ogni altro progetto ogni test falliva con «connection [fixcity] not configured».

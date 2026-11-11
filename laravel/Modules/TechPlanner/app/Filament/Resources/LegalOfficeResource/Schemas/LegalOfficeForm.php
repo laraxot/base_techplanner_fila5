@@ -34,7 +34,7 @@ class LegalOfficeForm extends XotBaseResourceForm
             'address' => TextInput::make('address')->maxLength(255),
             'city' => TextInput::make('city')->maxLength(255),
             'postal_code' => TextInput::make('postal_code')->maxLength(10),
-            'province' => TextInput::make('province')->maxLength(2),
+            'province' => TextInput::make('province')->maxLength(100),
             'phone' => TextInput::make('phone')->tel()->maxLength(255),
             'email' => TextInput::make('email')->email()->maxLength(255),
             'notes' => Textarea::make('notes')->maxLength(65535)->columnSpanFull(),

@@ -1,5 +1,5 @@
 ---
-title: Notify Module — Migrations & Schema
+title: Notify Module: Migrations & Schema
 created: 2026-07-15
 updated: 2026-07-15
 type: module-documentation
@@ -17,7 +17,7 @@ tags: [docs, notify, bmad]
 qmd: "notify module   migrations & schema parity notify"
 ---
 
-# Notify Module — Migrations & Schema Parity
+# Notify Module: Migrations & Schema Parity
 
 ## Philosophy
 
@@ -50,66 +50,66 @@ All models in the Notify module must maintain 1:1:1:1 parity across models, migr
 
 ### Core Models
 
-**Contact** — Stores contact information for recipients (email, SMS, phone, etc.)
+**Contact**: Stores contact information for recipients (email, SMS, phone, etc.)
 - Polymorphic: `model_type` / `model_id` (contacts belong to any model)
 - Tracks delivery status: `verified_at`, `sms_sent_at`, `mail_sent_at`, `mail_count`, `sms_count`
 - Custom attributes: `attribute_1` through `attribute_14` for flexible data storage
 
-**MailTemplate** — Reusable email template library
-- `name` — Display name
-- `mailable` — Mailable class reference
-- `slug` — Unique identifier for lookup
-- `subject`, `html_template`, `text_template` — JSON template content
-- `params` — JSON-encoded parameters
-- `sms_template` — SMS variant
+**MailTemplate**: Reusable email template library
+- `name`: Display name
+- `mailable`: Mailable class reference
+- `slug`: Unique identifier for lookup
+- `subject`, `html_template`, `text_template`: JSON template content
+- `params`: JSON-encoded parameters
+- `sms_template`: SMS variant
 
-**MailTemplateVersion** — Version history for email templates
+**MailTemplateVersion**: Version history for email templates
 - Tracks changes and enables rollback
 - Links back to `MailTemplate` via `mail_template_id`
 - Audit columns: `created_by`, `updated_by`, `deleted_by`
 
-**Notification** — Individual notification records
-- `user_id` — Recipient reference
-- `type_id` — Links to NotificationType
-- `channel` — Delivery method (email, SMS, in-app, etc.)
+**Notification**: Individual notification records
+- `user_id`: Recipient reference
+- `type_id`: Links to NotificationType
+- `channel`: Delivery method (email, SMS, in-app, etc.)
 - Status tracking: `read_at`, `sent_at`
 
-**NotificationLog** — Execution audit log for all notifications
+**NotificationLog**: Execution audit log for all notifications
 - Tracks every send attempt: timestamp, status, response
 - Links to Notification via `notification_id`
 - Error tracking: `error_message`, `retry_count`
 
-**NotificationTemplate** — Reusable notification template library
+**NotificationTemplate**: Reusable notification template library
 - Similar to MailTemplate but for generic notifications
 - `name`, `slug`, `subject`, `body` (plain text)
 - JSON-encoded `variables` for substitution
 
-**NotificationType** — Catalog of notification types
-- `name` — Type identifier (e.g., 'password_reset', 'welcome')
+**NotificationType**: Catalog of notification types
+- `name`: Type identifier (e.g., 'password_reset', 'welcome')
 - `description`
-- `default_channel` — Preferred delivery method
+- `default_channel`: Preferred delivery method
 
-**NotifyTheme** — Branding/theming system
-- `name`, `slug` — Theme identifier
+**NotifyTheme**: Branding/theming system
+- `name`, `slug`: Theme identifier
 - JSON configuration for styling, logos, colors
 - Tracks which models use this theme (via pivot)
 
-**NotifyThemeable** (Pivot) — Polymorphic many-to-many linking models to themes
+**NotifyThemeable** (Pivot): Polymorphic many-to-many linking models to themes
 - `theme_id` → NotifyTheme
 - `themeable_type` / `themeable_id` (polymorphic)
 
 ### Models Requiring Migrations (3)
 
-**MailTemplateLog** — Audit log for email template executions
+**MailTemplateLog**: Audit log for email template executions
 - Tracks every send attempt, success/failure
 - Essential for debugging email delivery issues
 
-**NotificationChannel** — Configuration for delivery channels
+**NotificationChannel**: Configuration for delivery channels
 - Supported channels: email, SMS, push, Slack, webhooks
 - Channel-specific settings: API keys, endpoints, rate limits
 - Status: active/inactive per channel
 
-**NotificationTemplateVersion** — Version history for notification templates
+**NotificationTemplateVersion**: Version history for notification templates
 - Similar to MailTemplateVersion
 - Enables template versioning and rollback
 
@@ -117,7 +117,7 @@ All models in the Notify module must maintain 1:1:1:1 parity across models, migr
 
 All migrations MUST extend `XotBaseMigration` and follow the pattern below.
 
-### Template (Recommended — Minimal)
+### Template (Recommended: Minimal)
 
 ```php
 <?php
@@ -147,7 +147,7 @@ return new class extends XotBaseMigration {
 };
 ```
 
-### Template (Explicit — Optional)
+### Template (Explicit: Optional)
 
 ```php
 <?php
@@ -273,9 +273,9 @@ Before committing migration changes:
 ## Questions?
 
 Refer to:
-- `laravel/Modules/Xot/docs/migrations.md` — XotBaseMigration comprehensive guide
-- `docs/wiki/patterns/migration-naming-and-parity-convention.md` — Naming standards
-- `docs/wiki/rules/migration-xot-base-standard.md` — Enforcement rules
+- `laravel/Modules/Xot/docs/migrations.md`: XotBaseMigration comprehensive guide
+- `docs/wiki/patterns/migration-naming-and-parity-convention.md`: Naming standards
+- `docs/wiki/rules/migration-xot-base-standard.md`: Enforcement rules
 
 ---
 

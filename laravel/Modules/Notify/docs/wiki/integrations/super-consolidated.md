@@ -2,7 +2,7 @@
 qmd: "super consolidated"
 issues: []
 discussions: []
-title: "super — Consolidated Documentation"
+title: "super: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# super — Consolidated Documentation
+# super: Consolidated Documentation
 
 Consolidated from **9** individual files.
 

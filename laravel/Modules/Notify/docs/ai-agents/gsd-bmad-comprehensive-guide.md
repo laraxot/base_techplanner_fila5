@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# GSD & BMAD — Guida Completa per Agenti AI
+# GSD & BMAD: Guida Completa per Agenti AI
 
 > **Scopo**: Questa guida è la risorsa definitiva per tutti gli agenti AI che lavorano sul progetto PTVX Fila5.
 > 

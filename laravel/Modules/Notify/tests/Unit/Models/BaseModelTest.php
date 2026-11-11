@@ -5,9 +5,11 @@ declare(strict_types=1);
 namespace Modules\Notify\Tests\Unit\Models;
 
 use Modules\Notify\Models\BaseModel;
+use Modules\Notify\Tests\TestCase;
 use Modules\Xot\Models\XotBaseModel;
 use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 test('base model extends eloquent model', function () {
     $parent = (new \ReflectionClass(BaseModel::class))->getParentClass();
     Assert::assertNotFalse($parent);

@@ -148,6 +148,11 @@ return [
             'icon' => 'save',
             'tooltip' => '',
         ],
+        'removeAllFilters' => [
+            'label' => 'removeAllFilters',
+            'icon' => 'removeAllFilters',
+            'tooltip' => '',
+        ],
     ],
     'label' => 'Direttore sanitario',
     'plural_label' => 'Direttori sanitari',

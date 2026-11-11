@@ -4,15 +4,21 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources\ClientResource\Pages;
 
+use Exception;
 use Filament\Actions\Action;
 use Filament\Actions\ImportAction;
 use Filament\Notifications\Notification;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
+use Illuminate\Database\Eloquent\Relations\Relation;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\On;
 use Modules\Geo\Actions\UpdateCoordinatesFromAddressAction;
 use Modules\TechPlanner\Filament\Imports\ClientImporter;
 use Modules\TechPlanner\Filament\Resources\ClientResource;
+use Modules\TechPlanner\Filament\Widgets\ClientMapWidget;
+use Modules\TechPlanner\Filament\Widgets\CoordinatesWidget;
 use Modules\TechPlanner\Models\Client;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
@@ -35,8 +41,58 @@ class ListClients extends XotBaseListRecords
     protected function getHeaderWidgets(): array
     {
         return [
-            // \Modules\TechPlanner\Filament\Widgets\ClientMapWidget::class, //WIP
+            CoordinatesWidget::class,
+            ClientMapWidget::class,
         ];
+    }
+
+    #[On('set-client-distance-origin')]
+    public function setDistanceOrigin(int $clientId): void
+    {
+        $client = Client::query()->find($clientId);
+
+        if (! $client instanceof Client) {
+            $this->notifyOriginMissing();
+
+            return;
+        }
+
+        $latitude = $client->getAttribute('latitude');
+        $longitude = $client->getAttribute('longitude');
+
+        if (! is_numeric($latitude) || ! is_numeric($longitude)) {
+            app(UpdateCoordinatesFromAddressAction::class)->execute($client);
+            $client->refresh();
+            $latitude = $client->getAttribute('latitude');
+            $longitude = $client->getAttribute('longitude');
+        }
+
+        if (! is_numeric($latitude) || ! is_numeric($longitude)) {
+            $this->notifyOriginMissing(__('techplanner::client.map.origin_missing_geocode_failed.body'));
+
+            return;
+        }
+
+        Session::put('user_latitude', (float) $latitude);
+        Session::put('user_longitude', (float) $longitude);
+        Cookie::queue('user_latitude', (string) $latitude, 60 * 24 * 30);
+        Cookie::queue('user_longitude', (string) $longitude, 60 * 24 * 30);
+        $this->resetTable();
+
+        Notification::make()
+            ->success()
+            ->title(__('techplanner::client.map.origin_set.title'))
+            ->body(__('techplanner::client.map.origin_set.body'))
+            ->send();
+    }
+
+    private function notifyOriginMissing(?string $body = null): void
+    {
+        Notification::make()
+            ->warning()
+            ->title(__('techplanner::client.map.origin_missing.title'))
+            ->body($body ?? __('techplanner::client.map.origin_missing.body'))
+            ->send();
     }
 
     #[Override]
@@ -49,6 +105,7 @@ class ListClients extends XotBaseListRecords
                 ->pluralModelLabel(__('techplanner::client.plural_label')),
             Action::make('populateCoordinates')
                 ->icon('heroicon-o-globe-alt')
+                ->label(__('techplanner::client.actions.populateCoordinates.label'))
                 ->action(function () {
                     $this->populateAllCoordinates();
                 })
@@ -97,12 +154,15 @@ class ListClients extends XotBaseListRecords
                 }
             });
 
-        $message = "Processed {$totalProcessed} clients. Successfully updated {$totalSuccess} coordinates.";
+        $message = __('techplanner::client.messages.coordinates_batch_summary', [
+            'processed' => $totalProcessed,
+            'success' => $totalSuccess,
+        ]);
 
         if (! empty($errors)) {
             Notification::make()
                 ->warning()
-                ->title('Coordinate Update Completed with Errors')
+                ->title(__('techplanner::client.messages.coordinates_batch_warning'))
                 ->body($message."\n\n".implode("\n", array_slice($errors, 0, 5)))
                 ->persistent()
                 ->send();
@@ -112,7 +172,7 @@ class ListClients extends XotBaseListRecords
 
         Notification::make()
             ->success()
-            ->title('Coordinates Updated Successfully')
+            ->title(__('techplanner::client.messages.coordinates_batch_success'))
             ->body($message)
             ->send();
     }
@@ -126,21 +186,46 @@ class ListClients extends XotBaseListRecords
     //         $client->update($addressData->toArray());
     //     }
     // }
-
-    /*
-     * Filtri, azioni di riga, azioni di gruppo e query con distanza stanno in ClientsTable
-     * (la tabella della lista e' costruita da li'); qui restano le azioni di pagina.
+    /**
+     * @return Builder<Client>
      */
-    public function applySort(string $field): void
+    protected function getTableQuery(): Builder
     {
-        if ($field === 'distance') {
-            $this->resetTable();
+        $query = parent::getTableQuery();
+        if ($query === null) {
+            throw new Exception('Query is null');
         }
+
+        if ($query instanceof Relation) {
+            /** @var Builder<Client> $query */
+            $query = $query->getQuery();
+        }
+
+        if (! $query instanceof Builder) {
+            throw new Exception('Query is not a Builder instance');
+        }
+
+        /** @var Builder<Client> $clientQuery */
+        $clientQuery = $query;
+        $query = $clientQuery->withLatestControlDates();
+
+        $latitude = Session::get('user_latitude');
+        $longitude = Session::get('user_longitude');
+
+        if (! is_numeric($latitude) || ! is_numeric($longitude)) {
+            return $query;
+        }
+
+        $lat = (float) $latitude;
+        $lng = (float) $longitude;
+
+        /** @var Builder<Client> $query */
+        return $query->withDistance($lat, $lng);
     }
 
     #[On('sort-by-distance')]
     public function handleSortByDistance(): void
     {
-        $this->applySort('distance');
+        $this->resetTable();
     }
 }

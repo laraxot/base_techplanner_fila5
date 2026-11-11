@@ -61,5 +61,11 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'country' => [
+            'label' => 'Nazione',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => 'country',
+        ],
     ],
 ];

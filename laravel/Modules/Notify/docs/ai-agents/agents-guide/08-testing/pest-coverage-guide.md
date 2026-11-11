@@ -142,7 +142,7 @@ protected $except = [ // @pest-ignore-type
 
 ## Configuration in phpunit.xml
 
-No additional configuration is required for type coverage—it analyzes all PHP files directly.
+No additional configuration is required for type coverage-it analyzes all PHP files directly.
 
 ## Laravel Modules Integration
 

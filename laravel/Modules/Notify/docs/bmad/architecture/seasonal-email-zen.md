@@ -61,7 +61,7 @@ Data must flow transparently to the view.
 ### The "Elegant" Variant
 
 We introduced `christmas-elegant.html` to serve a specific need: **Professional Festivity**.
-Not all brands want red/green and cartoons. Some want "Silent Night" — deep blues, gold, serif fonts.
+Not all brands want red/green and cartoons. Some want "Silent Night": deep blues, gold, serif fonts.
 This demonstrates the flexibility of the system: multiple "skins" for the same context.
 
 ## Reflections & Future

@@ -18,7 +18,7 @@ discussions: []
 
 # Wiki Index — Zero
 
-> **Purpose:** Content-oriented catalog of all wiki pages in this module.
+> **Purpose:** Content-oriented catalog of all wiki pages in this module.  
 > **Replaces embedding-based RAG at moderate scale (~100 sources).**
 
 ## Concepts

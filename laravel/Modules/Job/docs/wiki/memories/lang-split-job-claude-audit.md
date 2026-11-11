@@ -1,5 +1,5 @@
 ---
-title: "lang split job — claude-audit large file"
+title: "lang split job: claude-audit large file"
 type: memory
 module: Job
 tags: [job, i18n, claude-audit, lang-split]

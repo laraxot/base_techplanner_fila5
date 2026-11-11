@@ -38,6 +38,14 @@ return [
             'label' => 'Informazioni Aggiuntive',
             'heading' => 'Informazioni Aggiuntive',
         ],
+        'Indirizzo' => [
+            'label' => 'Indirizzo',
+            'heading' => '',
+        ],
+        'Contatti' => [
+            'label' => 'Contatti',
+            'heading' => '',
+        ],
     ],
     'fields' => [
         'company_name' => [
@@ -96,6 +104,12 @@ return [
         ],
         'notes' => [
             'label' => 'Note',
+        ],
+        'pec' => [
+            'label' => 'PEC',
+        ],
+        'whatsapp' => [
+            'label' => 'WhatsApp',
         ],
     ],
 ];

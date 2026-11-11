@@ -2,7 +2,8 @@
 
 ## Produzione
 
-- **Dominio**: https://sottana.net
+- **Dominio**: `sottana.com` (HTTPS: [ssl-configuration.md](../../../docs/ssl-configuration.md))
+- **Document root**: `/home/ploi/sottana.com/public_html`
 - **Deploy**: push su `master` attiva l’auto-deploy
 - Le modifiche al tema (viste, componenti, asset) vanno verificate su produzione dopo il deploy
 
@@ -10,7 +11,7 @@
 
 Dopo merge su `master` controllare:
 
-1. **Contatti** – https://sottana.net/it/contatti  
+1. **Contatti** – https://sottana.com/it/contatti (o `http://` finché SSL non è attivo)  
    - Sezione "Dove Siamo", mappa (iframe o PNG), link "Ottieni Indicazioni", indirizzo corretto
 2. **Header/Footer** – brand, contatti, link
 3. **Pagine modificate** – stile, link, contenuti
@@ -25,5 +26,6 @@ Dopo merge su `master` controllare:
 ## Collegamenti
 
 - [Deployment e validazione (root)](../../../docs/deployment-and-validation.md)
+- [SSL e document root](../../../docs/ssl-configuration.md)
 - [Contatti Sottana Service](./contatti-sottana-service.md)
 - [Mappa statica implementazione](./mappa-statica-implementazione-completa.md)

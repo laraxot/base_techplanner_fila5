@@ -2,7 +2,7 @@
 qmd: "visual testing playwright puppeteer"
 issues: []
 discussions: []
-title: Visual Testing con Playwright e Puppeteer — Modulo Job
+title: Visual Testing con Playwright e Puppeteer: Modulo Job
 type: concept
 sources:
   - https://playwright.dev/docs/test-snapshots
@@ -17,7 +17,7 @@ related:
 status: draft
 ---
 
-# Visual Testing con Playwright e Puppeteer — Modulo Job
+# Visual Testing con Playwright e Puppeteer: Modulo Job
 
 ## Panoramica
 

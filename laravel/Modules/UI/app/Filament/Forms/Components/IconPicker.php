@@ -37,7 +37,6 @@ class IconPicker extends XotBaseTextInput
                         ->options(static function () use ($packs): array {
                             return $packs;
                         })
-                        ->reactive()
                         ->live(),
                     RadioIcon::make('newstate')
                         ->options(function (Get $get) use ($icons): array {

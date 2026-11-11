@@ -6,7 +6,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Carbon;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\TechPlanner\Filament\Resources\DeviceResource\RelationManagers\DeviceVerificationsRelationManager;
 use Modules\TechPlanner\Models\Appointment;
@@ -28,10 +27,9 @@ function tpVerificationsMigration(): string
     return dirname(__DIR__, 2).'/database/migrations/2026_11_05_220010_create_device_verifications_table.php';
 }
 
-function tpUseMemoryDatabase(): void
+function tpUseMemoryDatabase(TestCase $test): void
 {
-    config(['database.connections.tech_planner' => ['driver' => 'sqlite', 'database' => ':memory:', 'prefix' => '', 'foreign_key_constraints' => true]]);
-    DB::purge('tech_planner');
+    $test->useIsolatedTechPlannerConnection(foreignKeys: true);
     // Device usa la tabella `machines` (condivisa con Machine, che estende Device).
     Schema::connection('tech_planner')->create((new Device())->getTable(), static function (Blueprint $table): void {
         $table->id();
@@ -73,7 +71,7 @@ function tpDeviceForeignKeys(): array
 }
 
 beforeEach(function (): void {
-    tpUseMemoryDatabase();
+    tpUseMemoryDatabase($this);
 });
 
 it('links verifications to the device table on a fresh install', function (): void {

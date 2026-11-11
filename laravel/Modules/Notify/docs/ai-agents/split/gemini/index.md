@@ -75,11 +75,11 @@ status: draft
 ## Cross-References
 
 ### Related Documentation
-- ← [BMad Agents Index](../../agents/index.md) — 10 agent definitions
-- ← [BMad Agents Index](../agents/index.md) — 10 agent definitions
-- ← [BMad Tasks Index](../tasks/index.md) — 22 reusable tasks
-- ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
+- ← [BMad Agents Index](../../agents/index.md): 10 agent definitions
+- ← [BMad Agents Index](../agents/index.md): 10 agent definitions
+- ← [BMad Tasks Index](../tasks/index.md): 22 reusable tasks
+- ← [CLAUDE Index](../claude/index.md): Laravel Boost guidelines
+- ← [Main AI Docs Index](../index.md): Master index
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)

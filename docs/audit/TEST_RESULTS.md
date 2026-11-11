@@ -15,9 +15,16 @@ related:
 
 Ambiente: PHP 8.4.27, MariaDB 10.11 (driver `mysql`, come in produzione), Chromium/Playwright per il pannello.
 
+Unione con `origin/dev` (63 commit di altri agenti, 95 conflitti) il 2026-11-11: tenute entrambe le linee. Da
+`origin/dev`: controlli unificati (`Control`), conflitti d'agenda, filtri per tipo di controllo, mappa e geocodifica dei
+clienti, connessioni dei moduli unite alla predefinita. Da questo lavoro: ruoli e policy, cestino, scadenze, controlli
+P.IVA/CF, deploy. Il crawl del pannello dopo l'unione ha trovato e fatto correggere un errore 500 al login
+dell'operatore (`BaseUser` senza `use Str`) ed etichette grezze nelle pagine nuove; ricontrollato: 0 errori 5xx,
+0 etichette grezze, per amministratore e operatore.
+
 | Controllo | Esito |
 |---|---|
-| Pest modulo TechPlanner (SQLite in memoria) | **119 passati, 0 falliti** (erano 55 il 2026-11-05) |
+| Pest modulo TechPlanner, dopo l'unione con `origin/dev` del 2026-11-11 (controlli unificati, conflitti d'agenda, mappe) | **131 passati, 0 falliti** (erano 55 il 2026-11-05) |
 | PHPStan + Larastan + regole Safe, modulo TechPlanner (`phpstan.techplanner.neon`) | **0 errori** |
 | PHPStan sui file dei moduli condivisi toccati (Xot, User, Lang, Tenant) | 0 errori |
 | Pint sul modulo TechPlanner | conforme |

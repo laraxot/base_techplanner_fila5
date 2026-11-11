@@ -7,9 +7,11 @@ namespace Modules\Notify\Tests\Unit\Channels;
 use Exception;
 use Illuminate\Notifications\Notification;
 use Modules\Notify\Channels\SmsChannel;
+use Modules\Notify\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use stdClass;
 
+uses(TestCase::class);
 /**
  * Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 17
  * (2026-09-15): `toSms()` e' tipizzato `?SmsData` proprio per poter dire

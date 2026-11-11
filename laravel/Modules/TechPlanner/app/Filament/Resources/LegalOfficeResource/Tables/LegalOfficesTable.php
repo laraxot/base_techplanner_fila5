@@ -22,6 +22,7 @@ class LegalOfficesTable extends TechPlannerBaseTable
             'name' => TextColumn::make('name')->searchable()->sortable(),
             'city' => TextColumn::make('city')->searchable()->sortable(),
             'province' => TextColumn::make('province')->searchable()->visibleFrom('md'),
+            'postal_code' => TextColumn::make('postal_code')->searchable()->visibleFrom('md'),
             'phone' => TextColumn::make('phone')->searchable(),
             'email' => TextColumn::make('email')->searchable(),
             'created_at' => TextColumn::make('created_at')->dateTime()->sortable()->toggleable(isToggledHiddenByDefault: true),

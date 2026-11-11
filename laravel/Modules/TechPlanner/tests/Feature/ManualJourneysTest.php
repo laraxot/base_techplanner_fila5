@@ -6,7 +6,6 @@ use Filament\Actions\Action;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Migrations\Migration;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Modules\Geo\Enums\AddressItemEnum;
 use Modules\Notify\Enums\ContactTypeEnum;
@@ -36,8 +35,7 @@ function tpMigrate(string ...$files): void
 }
 
 beforeEach(function (): void {
-    config(['database.connections.tech_planner' => ['driver' => 'sqlite', 'database' => ':memory:', 'prefix' => '', 'foreign_key_constraints' => true]]);
-    DB::purge('tech_planner');
+    $this->useIsolatedTechPlannerConnection(foreignKeys: true);
     tpMigrate(
         '2024_12_26_000008_create_client_table.php',
         '2019_12_12_000005_create_appointments_table.php',

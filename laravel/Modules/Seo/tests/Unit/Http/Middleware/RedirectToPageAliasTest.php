@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use Illuminate\Http\Request;
 use Modules\Seo\Http\Middleware\RedirectToCanonicalPath;
+use Modules\Seo\Tests\Support\FakeTenantSeoConfig;
 use PHPUnit\Framework\Assert;
 use Symfony\Component\HttpFoundation\Response;
 use Tests\TestCase;
@@ -13,11 +14,22 @@ uses(TestCase::class);
 /**
  * Un alias di pagina (`chi-siamo` per `about`) risponde 301 al canonico nella stessa lingua, in un solo salto anche quando
  * la richiesta ha pure una copia di forma (lingua maiuscola, slash finale). La mappa si imposta nel test: in produzione
- * viene dalla configurazione del modulo (`seo.config.path_aliases`).
+ * viene dalle impostazioni di Seo (`SeoConfigData`, file `seo` del tenant).
  */
 function passThroughPageAlias(string $method, string $uri): Response
 {
-    config(['seo.config.path_aliases' => ['chi-siamo' => 'about', 'home' => '']]);
+    FakeTenantSeoConfig::bind([
+        'path_aliases' => [
+            [
+                'alias' => 'chi-siamo',
+                'target' => 'about',
+            ],
+            [
+                'alias' => 'home',
+                'target' => '',
+            ],
+        ],
+    ]);
 
     return (new RedirectToCanonicalPath)->handle(Request::create($uri, $method), static fn (): Response => response('pagina'));
 }
@@ -44,7 +56,7 @@ it('does not redirect an alias for what is not a read', function (string $method
 })->with(['POST', 'PUT', 'DELETE']);
 
 it('redirects nothing when the site declares no aliases', function (): void {
-    config(['seo.config.path_aliases' => []]);
+    FakeTenantSeoConfig::bind(['path_aliases' => []]);
 
     $response = (new RedirectToCanonicalPath)->handle(Request::create('/it/chi-siamo', 'GET'), static fn (): Response => response('pagina'));
 

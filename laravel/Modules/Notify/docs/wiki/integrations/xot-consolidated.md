@@ -2,7 +2,7 @@
 qmd: "xot consolidated"
 issues: []
 discussions: []
-title: "xot — Consolidated Documentation"
+title: "xot: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# xot — Consolidated Documentation
+# xot: Consolidated Documentation
 
 Consolidated from **11** individual files.
 

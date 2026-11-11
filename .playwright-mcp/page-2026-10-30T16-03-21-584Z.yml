@@ -1,0 +1,204 @@
+- generic [active] [ref=f5e1]:
+  - link "Vai al contenuto principale" [ref=f5e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - region "Gestione dei cookie" [ref=f5e3]:
+    - generic [ref=f5e4]:
+      - generic [ref=f5e5]:
+        - paragraph [ref=f5e6]: Cookie
+        - paragraph [ref=f5e7]:
+          - text: "Questo sito usa solo cookie tecnici, necessari al suo funzionamento: non richiedono il tuo consenso. Non usiamo cookie di profilazione né di analisi."
+          - link "Maggiori informazioni (Cookie policy)" [ref=f5e8] [cursor=pointer]:
+            - /url: http://127.0.0.1:8012/it/cookies
+            - text: Maggiori informazioni
+            - generic [ref=f5e9]: (Cookie policy)
+      - button "Ho capito" [ref=f5e11] [cursor=pointer]
+  - banner [ref=f5e12]:
+    - generic [ref=f5e14]:
+      - link "Sottana Service - Home" [ref=f5e15] [cursor=pointer]:
+        - /url: http://127.0.0.1:8012/it
+        - generic [ref=f5e28]: Sottana Service
+      - generic [ref=f5e29]:
+        - 'button "Cambia lingua (attuale: it)" [ref=f5e31] [cursor=pointer]': it
+        - button "Apri/chiudi menu di navigazione" [ref=f5e32] [cursor=pointer]
+  - main [ref=f5e35]:
+    - generic [ref=f5e36]:
+      - generic [ref=f5e42]:
+        - heading "Consulenza Sicurezza e Conformità per Studi Professionali" [level=1] [ref=f5e43]
+        - paragraph [ref=f5e44]: Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie. Conformità D.Lgs 101/2020 e massima tutela di pazienti e operatori.
+        - generic [ref=f5e45]:
+          - link "Richiedi Consulenza" [ref=f5e46] [cursor=pointer]:
+            - /url: /it/contatti
+          - link "Scopri i Servizi" [ref=f5e50] [cursor=pointer]:
+            - /url: /it/services
+      - generic [ref=f5e54]:
+        - generic [ref=f5e55]:
+          - heading "I Nostri Servizi" [level=2] [ref=f5e56]
+          - paragraph [ref=f5e57]: Soluzioni complete per la sicurezza e conformità del tuo studio
+        - generic [ref=f5e58]:
+          - generic [ref=f5e63]:
+            - heading "Autorizzazioni Sanitarie" [level=3] [ref=f5e64]
+            - paragraph [ref=f5e65]: Supporto completo per ottenere e mantenere le autorizzazioni sanitarie necessarie per studi dentistici e cliniche veterinarie con apparecchiature radiologiche.
+            - link "Scopri di più su Autorizzazioni Sanitarie" [ref=f5e66] [cursor=pointer]:
+              - /url: /it/services
+              - text: Scopri di più
+              - generic [ref=f5e67]: su Autorizzazioni Sanitarie
+          - generic [ref=f5e74]:
+            - heading "Controllo Apparecchi RX ed Elettromedicali" [level=3] [ref=f5e75]
+            - paragraph [ref=f5e76]: Verifiche periodiche di sicurezza e funzionalità su apparecchiature radiologiche (RX, OPT, CBCT) e dispositivi elettromedicali (IEC 62353).
+            - link "Scopri di più su Controllo Apparecchi RX ed Elettromedicali" [ref=f5e77] [cursor=pointer]:
+              - /url: /it/services
+              - text: Scopri di più
+              - generic [ref=f5e78]: su Controllo Apparecchi RX ed Elettromedicali
+          - generic [ref=f5e85]:
+            - heading "Documenti di Valutazione del Rischio" [level=3] [ref=f5e86]
+            - paragraph [ref=f5e87]: "Redazione e aggiornamento di tutti i documenti obbligatori: DVR, relazioni tecniche, nomine degli esperti di radioprotezione e registri di controllo."
+            - link "Scopri di più su Documenti di Valutazione del Rischio" [ref=f5e88] [cursor=pointer]:
+              - /url: /it/services
+              - text: Scopri di più
+              - generic [ref=f5e89]: su Documenti di Valutazione del Rischio
+      - generic [ref=f5e94]:
+        - paragraph [ref=f5e95]: Sicurezza e Compliance
+        - heading "Perché la Radioprotezione è Critica?" [level=2] [ref=f5e96]
+        - paragraph [ref=f5e97]: "Non è solo burocrazia: è la base per operare in sicurezza e legalità nel settore sanitario."
+      - generic [ref=f5e99]:
+        - generic [ref=f5e100]:
+          - heading "Settori di Specializzazione" [level=2] [ref=f5e101]
+          - paragraph [ref=f5e102]: Competenza verticale per esigenze specifiche
+        - generic [ref=f5e103]:
+          - generic [ref=f5e105]:
+            - generic [ref=f5e106]:
+              - paragraph [ref=f5e107]: Precisione millimetrica per la diagnostica dentale
+              - heading "Odontoiatria" [level=3] [ref=f5e108]
+              - paragraph [ref=f5e109]: Gli studi dentistici richiedono controlli specifici per diverse tipologie di apparecchiature radiologiche, dalle RX endorali alle panoramiche e ai sistemi CBCT.
+              - list [ref=f5e110]:
+                - listitem [ref=f5e111]:
+                  - strong [ref=f5e114]: Radiografie Endorali - Verifica tubi radiogeni per RX periapicali e bitewing
+                - listitem [ref=f5e115]:
+                  - strong [ref=f5e118]: Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali
+                - listitem [ref=f5e119]:
+                  - strong [ref=f5e122]: CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico
+            - img "Odontoiatria" [ref=f5e125]
+          - generic [ref=f5e127]:
+            - generic [ref=f5e128]:
+              - paragraph [ref=f5e129]: Sicurezza adattata alle esigenze cliniche animali
+              - heading "Medicina Veterinaria" [level=3] [ref=f5e130]
+              - paragraph [ref=f5e131]: Le cliniche veterinarie richiedono protocolli specifici per la radiologia veterinaria, dai sistemi portatili alle apparecchiature fisse.
+              - list [ref=f5e132]:
+                - listitem [ref=f5e133]:
+                  - strong [ref=f5e136]: Radiologia Digitale e Analogica - Controlli su sistemi RX fissi e portatili per animali
+            - img "Medicina Veterinaria" [ref=f5e139]
+      - generic [ref=f5e141]:
+        - generic [ref=f5e142]:
+          - heading "Cosa Controlliamo?" [level=2] [ref=f5e143]
+          - paragraph [ref=f5e144]: Il nostro protocollo di verifica copre ogni aspetto della sicurezza radiologica. Dall'efficienza delle macchine alla protezione strutturale, nulla viene lasciato al caso per garantire la totale conformità al D.Lgs 101/2020.
+          - generic [ref=f5e145]:
+            - heading "Perché è fondamentale?" [level=3] [ref=f5e146]
+            - paragraph [ref=f5e147]: Un controllo accurato previene guasti, sovraesposizioni e sanzioni, proteggendo il tuo investimento e la tua reputazione professionale.
+        - generic [ref=f5e148]:
+          - generic [ref=f5e149]:
+            - heading "Dosimetria" [level=3] [ref=f5e153]
+            - paragraph [ref=f5e154]: Monitoraggio dell'esposizione alle radiazioni per il personale esposto e l'ambiente.
+          - generic [ref=f5e155]:
+            - heading "Schermature" [level=3] [ref=f5e159]
+            - paragraph [ref=f5e160]: Verifica dell'adeguatezza delle barriere protettive e dei DPI (camici, collari).
+          - generic [ref=f5e161]:
+            - heading "Apparecchiature Radiologiche" [level=3] [ref=f5e165]
+            - paragraph [ref=f5e166]: Controllo di costanza, tensione, corrente e tempi di esposizione dei generatori.
+          - generic [ref=f5e167]:
+            - heading "Sistemi di Protezione" [level=3] [ref=f5e171]
+            - paragraph [ref=f5e172]: Verifica e test funzionali su sistemi di sicurezza, interblocchi e segnaletica obbligatoria per zone controllate e sorvegliate.
+          - generic [ref=f5e173]:
+            - heading "Documentazione e Registri" [level=3] [ref=f5e177]
+            - paragraph [ref=f5e178]: Audit sulla corretta tenuta della documentazione obbligatoria.
+  - contentinfo [ref=f5e179]:
+    - generic [ref=f5e181]:
+      - generic [ref=f5e182]:
+        - heading "Sottana Service" [level=2] [ref=f5e183]
+        - paragraph [ref=f5e184]: Consulenza Sicurezza e Radioprotezione
+        - paragraph [ref=f5e185]: Specialisti in radioprotezione e sicurezza per studi dentistici e cliniche veterinarie. Partner di fiducia per la conformità normativa.
+        - generic [ref=f5e186]:
+          - link "Seguici su LinkedIn (si apre in una nuova finestra)" [ref=f5e187] [cursor=pointer]:
+            - /url: https://linkedin.com/in/marcosottana
+            - generic [ref=f5e188]: LinkedIn
+          - link "Seguici su Facebook (si apre in una nuova finestra)" [ref=f5e191] [cursor=pointer]:
+            - /url: https://facebook.com/marcosottana
+            - generic [ref=f5e192]: Facebook
+          - link "Seguici su Instagram (si apre in una nuova finestra)" [ref=f5e195] [cursor=pointer]:
+            - /url: https://instagram.com/marcosottana
+            - generic [ref=f5e196]: Instagram
+      - generic [ref=f5e199]:
+        - heading "Normative & Certificazioni" [level=3] [ref=f5e200]
+        - generic [ref=f5e203]:
+          - generic [ref=f5e204]:
+            - heading "D.Lgs 101/2020" [level=4] [ref=f5e205]
+            - paragraph [ref=f5e206]: Attuazione della direttiva 2013/59/Euratom per la sicurezza radiologica.
+          - generic [ref=f5e207]:
+            - heading "Esperti di Radioprotezione" [level=4] [ref=f5e208]
+            - paragraph [ref=f5e209]: Professionisti iscritti negli elenchi nominativi autorizzati.
+          - generic [ref=f5e210]:
+            - heading "IEC 62353" [level=4] [ref=f5e211]
+            - paragraph [ref=f5e212]: Verifiche periodiche di sicurezza elettrica per apparecchi elettromedicali.
+      - generic [ref=f5e213]:
+        - heading "Servizi di Consulenza" [level=3] [ref=f5e214]
+        - list [ref=f5e215]:
+          - listitem [ref=f5e216]:
+            - generic [ref=f5e218]: Autorizzazioni Sanitarie
+          - listitem [ref=f5e219]:
+            - generic [ref=f5e221]: Controllo Apparecchi RX ed Elettromedicali
+          - listitem [ref=f5e222]:
+            - generic [ref=f5e224]: Documenti di Valutazione del Rischio
+      - generic [ref=f5e225]:
+        - heading "Contatti" [level=3] [ref=f5e226]
+        - list [ref=f5e227]:
+          - listitem [ref=f5e228]:
+            - generic [ref=f5e232]: Via Vanzo 86, 31021 Mogliano Veneto TV
+          - listitem [ref=f5e234]:
+            - link "studio@sottana.com" [ref=f5e239] [cursor=pointer]:
+              - /url: mailto:studio@sottana.com
+          - listitem [ref=f5e240]:
+            - link "+39 041 455552" [ref=f5e245] [cursor=pointer]:
+              - /url: tel:+39041455552
+          - listitem [ref=f5e246]:
+            - link "+39 347 58 96 127" [ref=f5e251] [cursor=pointer]:
+              - /url: tel:+393475896127
+        - generic [ref=f5e252]:
+          - paragraph [ref=f5e253]: "P.IVA: 05532540266"
+          - paragraph [ref=f5e254]: "REA: TV - 451911"
+        - generic [ref=f5e255]:
+          - 'link "Mappa posizione: Via Vanzo 86, Mogliano Veneto Vedi su Google Maps (si apre in una nuova finestra)" [ref=f5e256] [cursor=pointer]':
+            - /url: https://www.google.com/maps/search/?api=1&query=Via+Vanzo+86,+Mogliano+Veneto+TV
+            - 'img "Mappa posizione: Via Vanzo 86, Mogliano Veneto" [ref=f5e257]'
+            - generic [ref=f5e259]:
+              - text: Vedi su Google Maps
+              - generic [ref=f5e260]: (si apre in una nuova finestra)
+          - paragraph [ref=f5e261]: Clicca per aprire la mappa
+    - generic [ref=f5e264]:
+      - paragraph [ref=f5e265]: © 2026 Sottana Service - Consulenza Sicurezza e Radioprotezione. Tutti i diritti riservati.
+      - generic [ref=f5e266]:
+        - link "Privacy Policy" [ref=f5e267] [cursor=pointer]:
+          - /url: /it/privacy
+        - link "Termini e Condizioni" [ref=f5e268] [cursor=pointer]:
+          - /url: /it/terms
+      - button "Torna all'inizio della pagina" [ref=f5e269] [cursor=pointer]
+  - generic [ref=f5e274]:
+    - generic [ref=f5e275] [cursor=pointer]
+    - generic [ref=f5e276]:
+      - generic [ref=f5e277] [cursor=pointer]
+      - generic [ref=f5e279] [cursor=pointer]
+      - generic [ref=f5e281] [cursor=pointer]: "19"
+      - generic [ref=f5e284] [cursor=pointer]
+      - generic [ref=f5e286] [cursor=pointer]: "2"
+      - generic [ref=f5e289] [cursor=pointer]: "4"
+      - generic [ref=f5e292] [cursor=pointer]: "1"
+      - generic [ref=f5e295] [cursor=pointer]
+      - generic [ref=f5e297] [cursor=pointer]
+    - generic [ref=f5e299]:
+      - generic [ref=f5e300] [cursor=pointer]
+      - generic [ref=f5e301] [cursor=pointer]
+      - generic [ref=f5e302] [cursor=pointer]
+      - generic [ref=f5e304] [cursor=pointer]
+      - generic [ref=f5e305]: GET /it
+      - generic [ref=f5e308] [cursor=pointer]: 8.4.27
+      - generic [ref=f5e310] [cursor=pointer]: 1.25s
+      - generic [ref=f5e312] [cursor=pointer]: 22MB
+      - generic [ref=f5e314] [cursor=pointer]

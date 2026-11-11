@@ -96,7 +96,11 @@ che una view diventi proprietaria della logica di dominio.
 - accessibilità: WCAG 2.1 AA come requisito minimo, con verifica manuale e automatizzata;
 - build: Vite, con asset generati nella public del tema.
 
-## Documentazione
+I temi **non** contano modelli/migrazioni, ma gli agenti che toccano Fixcity/User devono rispettare:
+
+- [Parità modulo N=N](../../../../bashscripts/ai/wiki/bmad/architecture-module-model-artifact-parity.md) — audit: `bashscripts/tools/audit-module-artifact-parity.sh Fixcity`
+- [Dati sacri](../../../../bashscripts/ai/wiki/rules/data-sacred-no-destructive-db.md) — solo `php artisan migrate`
+- Wiki tema: [docs/wiki/](./wiki/) · ingest: `bashscripts/docs/llm-wiki-qmd.sh update`
 
 Nessun nuovo contenuto va in `docs/archive/`; le storie non sono da duplicare
 fuori da BMAD e la memoria wiki storica resta in `docs/wiki/_archive/`. Regola

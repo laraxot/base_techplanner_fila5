@@ -7,7 +7,6 @@ namespace Modules\User\Tests\Feature\Socialite;
 use Illuminate\Support\ViewErrorBag;
 use PHPUnit\Framework\Assert;
 
-/** Legge l'errore «email» che RedirectToLoginAction ha messo in sessione. */
 final class NotConfiguredErrorProbe
 {
     public static function message(): string

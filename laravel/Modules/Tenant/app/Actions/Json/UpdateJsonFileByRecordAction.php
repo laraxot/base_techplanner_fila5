@@ -30,11 +30,8 @@ class UpdateJsonFileByRecordAction
         $record->setAttribute('updated_at', now());
 
         $keyName = $record->getKeyName();
-        $key = $record->getKey();
-
-        // Gli id letti dai file JSON possono essere stringhe numeriche ("11"): valgono come interi.
-        Assert::true(is_int($key) || (is_string($key) && ctype_digit($key)), 'Id del record JSON non numerico.');
-        $key = (int) $key;
+        // La chiave puo' essere un UUID oltre che un intero: bool e float invece non sono chiavi di array valide.
+        $key = Assert::validArrayKey($record->getKey());
 
         /** @var array<int|string, array<string, mixed>> $keyed */
         $keyed = Arr::keyBy($rows, $keyName);

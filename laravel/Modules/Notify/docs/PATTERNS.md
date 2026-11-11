@@ -11,7 +11,7 @@ status: superseded
 superseded_by: patterns.md
 ---
 
-# Notify Module — Patterns
+# Notify Module: Patterns
 
 ## Async Pattern (Queued Notifications)
 

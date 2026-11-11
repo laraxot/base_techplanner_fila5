@@ -1,12 +1,12 @@
 ---
-title: "BMAD completion pack — Job"
+title: "BMAD completion pack: Job"
 type: note
 status: draft
 updated: 2026-10-26
 tags: [docs, job, bmad]
 qmd: "bmad completion pack   job job"
 ---
-# BMAD completion pack — Job
+# BMAD completion pack: Job
 
 This is the owner-local BMAD entry point. Cross-owner contracts are in plans/fixcity-completion-architecture.md; the backlog is in docs/completion-backlog.md.
 

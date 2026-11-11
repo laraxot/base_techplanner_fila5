@@ -84,7 +84,7 @@ abstract class TechPlannerBasePolicy extends XotBasePolicy
     }
 
     /** Collegare un record esistente da una scheda (relation manager). */
-    public function associate(UserContract $user, Model $_record): bool
+    public function associate(UserContract $user): bool
     {
         return $this->isStaff($user);
     }

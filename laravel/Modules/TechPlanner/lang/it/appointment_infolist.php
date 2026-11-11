@@ -11,6 +11,9 @@ return [
             'name' => [
                 'label' => 'Cliente',
             ],
+            'company_name' => [
+                'label' => 'Cliente',
+            ],
         ],
         'date' => [
             'label' => 'Data e ora',
@@ -23,6 +26,23 @@ return [
         ],
         'updated_at' => [
             'label' => 'Modificato il',
+        ],
+        'worker' => [
+            'full_name' => [
+                'label' => 'Tecnico',
+            ],
+        ],
+        'duration_minutes' => [
+            'label' => 'Durata (minuti)',
+        ],
+        'status' => [
+            'label' => 'Stato',
+        ],
+        'outcome' => [
+            'label' => 'Esito',
+        ],
+        'reminder_sent_at' => [
+            'label' => 'Promemoria inviato',
         ],
     ],
 ];

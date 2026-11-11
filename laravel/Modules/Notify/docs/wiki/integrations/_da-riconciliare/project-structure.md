@@ -2,7 +2,7 @@
 qmd: "project structure"
 issues: []
 discussions: []
-title: "Project Structure — Module Notify"
+title: "Project Structure: Module Notify"
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
@@ -24,7 +24,7 @@ related:
 status: draft
 ---
 
-# Project Structure — Module **Notify**
+# Project Structure: Module **Notify**
 
 ## Directory Structure
 
@@ -50,7 +50,7 @@ status: draft
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── on-demand-pattern.md          # 🌟 QUESTO FILE: Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization-module-notify.md    # Metriche e best practice
 ├── architecture.md               # (opzionale) Architettura modulo
@@ -65,7 +65,7 @@ status: draft
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+| `on-demand-pattern.md` | **Leggi prima**: pattern da seguire |
 
 ## Convenzioni
 
@@ -150,7 +150,7 @@ git commit -m "docs: add wiki structure for Notify"
 
 ---
 
-# Project Structure — Module **Notify**
+# Project Structure: Module **Notify**
 
 ## Directory Structure
 
@@ -176,7 +176,7 @@ git commit -m "docs: add wiki structure for Notify"
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE: Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
@@ -191,7 +191,7 @@ git commit -m "docs: add wiki structure for Notify"
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+| `ON-DEMAND-PATTERN.md` | **Leggi prima**: pattern da seguire |
 
 ## Convenzioni
 

@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-# Perfection Audit — Notify Module
+# Perfection Audit: Notify Module
 
 **Data**: 2026-09-01
 **Scope**: `laravel/Modules/Notify/docs/`
@@ -37,7 +37,7 @@ Notify ha **1,516 file .md** (100% uppercase) con **44 stub vuoti**. Secondo mod
 
 ## Problemi P0
 
-### P0.1 — 100% uppercase
+### P0.1: 100% uppercase
 Tutti i file in `Notify/docs/` sono maiuscoli. Esempi:
 - `ACTIONS.md`
 - `agents.md`
@@ -46,10 +46,10 @@ Tutti i file in `Notify/docs/` sono maiuscoli. Esempi:
 - `project-structure.md`
 - `prd.md`
 
-### P0.2 — 44 stub vuoti
+### P0.2: 44 stub vuoti
 Residui di iterazioni agenti, 0-100 byte ciascuno.
 
-### P0.3 — Nessun indice consolidato
+### P0.3: Nessun indice consolidato
 Nessun `00-index.md` o `index.md` (a parte l'uppercase `index.md`). Impossibile trovare contenuti.
 
 ---
@@ -64,12 +64,12 @@ Nessun `00-index.md` o `index.md` (a parte l'uppercase `index.md`). Impossibile 
 
 ## Piano bonifica
 
-### Fase 1 — Emergency
+### Fase 1: Emergency
 ```bash
 find laravel/Modules/Notify/docs -name "*.md" -size -100c -delete
 ```
 
-### Fase 2 — Rename ricorsivo
+### Fase 2: Rename ricorsivo
 ```bash
 find laravel/Modules/Notify/docs -type f -name "*.md" \
   -not -name "README.md" \
@@ -81,7 +81,7 @@ find laravel/Modules/Notify/docs -type f -name "*.md" \
   done
 ```
 
-### Fase 3 — Consolidamento
+### Fase 3: Consolidamento
 - Merge `index.md` → `00-index.md`
 - Merge `agents.md` → `agents.md`
 - Merge `ACTIONS.md` → `actions.md`

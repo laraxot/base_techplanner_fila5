@@ -1,5 +1,5 @@
 ---
-title: "Notify — epic 5.251: canali e provider di notifica"
+title: "Notify: epic 5.251: canali e provider di notifica"
 type: epic
 tags: [notify, epic, channels, sms, telegram, whatsapp, push, email]
 created: 2026-09-28
@@ -14,7 +14,7 @@ related:
 status: draft
 ---
 
-# Epic 5.251 — canali e provider di notifica Notify
+# Epic 5.251: canali e provider di notifica Notify
 
 > **SUMMARY**: epic per documentare i canali di notifica (SMS, Telegram,
 > WhatsApp, Email, FCM push) e i rispettivi provider/driver nel modulo
@@ -55,13 +55,13 @@ documenta:
 
 ## Task
 
-- [x] T1 — Inventariare canali in `app/Channels/`
-- [x] T2 — Mappare notification native in `app/Notifications/`
-- [x] T3 — Catalogare driver SMS in `app/Actions/SMS/`
-- [x] T4 — Documentare action push, telegram, whatsapp
-- [x] T5 — Mappare enum di supporto in `app/Enums/`
-- [x] T6 — Redigere `architecture.md` (indice root → shard)
-- [x] T7 — Redigere `quick-reference.md` e `setup-guide.md`
+- [x] T1: Inventariare canali in `app/Channels/`
+- [x] T2: Mappare notification native in `app/Notifications/`
+- [x] T3: Catalogare driver SMS in `app/Actions/SMS/`
+- [x] T4: Documentare action push, telegram, whatsapp
+- [x] T5: Mappare enum di supporto in `app/Enums/`
+- [x] T6: Redigere `architecture.md` (indice root → shard)
+- [x] T7: Redigere `quick-reference.md` e `setup-guide.md`
 
 ## Acceptance Criteria
 

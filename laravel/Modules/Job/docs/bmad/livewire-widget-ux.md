@@ -1,5 +1,5 @@
 ---
-title: "UX — Job"
+title: "UX: Job"
 type: ux-design
 module: Job
 related:

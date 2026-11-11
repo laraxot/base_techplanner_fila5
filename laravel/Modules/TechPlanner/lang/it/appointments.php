@@ -8,6 +8,9 @@ return [
             'company_name' => [
                 'label' => 'Cliente',
             ],
+            'name' => [
+                'label' => 'client.name',
+            ],
         ],
         'date' => [
             'label' => 'Data e ora',
@@ -23,6 +26,35 @@ return [
         ],
         'trashed' => [
             'label' => 'Record eliminati',
+        ],
+        'worker' => [
+            'full_name' => [
+                'label' => 'Tecnico',
+            ],
+        ],
+        'duration_minutes' => [
+            'label' => 'Durata (minuti)',
+        ],
+        'status' => [
+            'label' => 'Stato',
+        ],
+        'worker_id' => [
+            'label' => 'Tecnico',
+        ],
+        'date_range' => [
+            'label' => 'Periodo',
+        ],
+        'from' => [
+            'label' => 'Dal',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'until' => [
+            'label' => 'Fino al',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => '',
         ],
     ],
     'actions' => [

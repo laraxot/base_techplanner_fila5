@@ -2,7 +2,7 @@
 qmd: "conflict consolidated"
 issues: []
 discussions: []
-title: "conflict — Consolidated Documentation"
+title: "conflict: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# conflict — Consolidated Documentation
+# conflict: Consolidated Documentation
 
 Consolidated from **15** individual files.
 
@@ -25,7 +25,7 @@ Consolidated from **15** individual files.
 - [Risoluzione Conflitti SmsChannel.php](#conflict-resolution-smschannel)
 - [---](#conflict-resolution-smsdriverenum-1)
 - [Risoluzione Conflitto SmsDriverEnum](#conflict-resolution-smsdriverenum)
-- [Conflict Resolution — Module Notify](#conflict-resolution)
+- [Conflict Resolution: Module Notify](#conflict-resolution)
 - [Risoluzione Conflitti RecordNotification.php](#conflict_resolution_recordnotification)
 - [Risoluzione Conflitti SendSmsPage.php](#conflict_resolution_sendsmspage)
 - [Risoluzione Conflitti SmsChannel.php](#conflict_resolution_smschannel)

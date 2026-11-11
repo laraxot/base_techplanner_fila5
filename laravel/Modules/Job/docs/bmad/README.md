@@ -1,5 +1,5 @@
 ---
-title: "Job — BMAD dossier"
+title: "Job: BMAD dossier"
 type: bmad-module-dossier
 module: Job
 status: baseline

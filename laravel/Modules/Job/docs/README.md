@@ -114,6 +114,7 @@ questi due comandi non e' stato rieseguito per questa revisione dei docs.
 - [2026-10-14 Ingressi docs rivisti sul codice](./stories/docs-ingressi-job.story.md)
 - [2026-10-29 Autorizzazione pagina e widget operativi (super-admin, allowlist, .env)](./stories/job-admin-authorization.story.md)
 - [2026-10-30 Niente testi fissi nelle Blade (it, en, de, es)](./stories/blade-i18n-no-hardcoded-text.story.md)
+- [Impostazioni: opzioni del worker avviato da worker:check (`JobConfigData`)](./bmad/stories/setting-page-campi-reali.story.md)
 
 ## Stato dell'organizzazione della cartella
 

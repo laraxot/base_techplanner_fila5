@@ -1,6 +1,6 @@
 ---
 id: Notify/module-bmad-audit-20260928
-title: "Notify — baseline BMAD e analisi completa"
+title: "Notify: baseline BMAD e analisi completa"
 status: ready-for-dev
 module: Notify
 epic: module-governance
@@ -15,7 +15,7 @@ updated: 2026-10-07
 tags: [docs, notify, bmad]
 qmd: "story   notify: baseline bmad notify"
 ---
-# Story — Notify: baseline BMAD
+# Story: Notify: baseline BMAD
 
 Come manutentore del modulo Notify, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
 

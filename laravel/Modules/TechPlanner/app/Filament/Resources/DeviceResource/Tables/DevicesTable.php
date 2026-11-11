@@ -52,6 +52,10 @@ class DevicesTable extends TechPlannerBaseTable
                 ->date('d/m/Y')
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
+            'controls_count' => TextColumn::make('controls_count')
+                ->counts('controls')
+                ->sortable()
+                ->toggleable(),
             'notes' => TextColumn::make('notes')->sortable()->searchable()->wrap()->visibleFrom('md'),
         ];
     }

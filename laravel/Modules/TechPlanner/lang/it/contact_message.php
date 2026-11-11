@@ -60,7 +60,7 @@ return [
     ],
     'fields' => [
         'value' => [
-            'label' => 'value',
+            'label' => 'Valore',
             'placeholder' => '',
             'helper_text' => '',
             'description' => '',

@@ -1,5 +1,5 @@
 ---
-title: "Project context — Notify"
+title: "Project context: Notify"
 type: constitution
 module: Notify
 track: bmad-method
@@ -14,7 +14,7 @@ related:
   - ./filament-blueprint.md
 ---
 
-# Costituzione — Notify
+# Costituzione: Notify
 
 Consegnare messaggi multi-canale preference-aware con esiti osservabili.
 

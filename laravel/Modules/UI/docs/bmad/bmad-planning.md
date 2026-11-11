@@ -1,5 +1,5 @@
 ---
-title: "BMAD Planning — UI"
+title: "BMAD Planning: UI"
 type: bmad-planning
 status: active
 module: UI

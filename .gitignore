@@ -40,6 +40,7 @@ laravel/stubs/
 laravel/lang/vendor/
 public_html/deploy/config.php
 public_html/deploy/*.txt
+.certbot/
 laravel/tmp/
 laravel/venv/
 laravel/resources/lang/vendor/
@@ -135,3 +136,12 @@ laravel/config/local/techplanner/database/content/information_schema_tables.json
 archive
 .playwright-mcp/
 artifacts/
+bashscripts/ai/.agents/projects/
+___FILE___tests/
+*.lock
+${HOME}
+artifacts
+public/
+.pi
+.omp
+.kilocode

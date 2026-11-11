@@ -1,5 +1,60 @@
 [
     {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\TechPlanner\\Models\\Appointment",
+        "table_name": "appointments",
+        "id": 9,
+        "updated_at": "2025-12-23T15:59:53.000000Z",
+        "created_at": "2025-12-23T15:59:53.000000Z",
+        "updated_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "table_rows": 277
+    },
+    {
+        "created_at": "2025-12-23T15:59:53.000000Z",
+        "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "id": 10,
+        "model_class": "Modules\\TechPlanner\\Models\\Client",
+        "table_name": "clients",
+        "table_rows": 2,
+        "table_schema": "techplanner_data",
+        "updated_at": "2026-11-06T09:55:13.000000Z",
+        "updated_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b"
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\TechPlanner\\Models\\Device",
+        "table_name": "machines",
+        "id": 11,
+        "updated_at": "2025-12-23T15:59:53.000000Z",
+        "created_at": "2025-12-23T15:59:53.000000Z",
+        "updated_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "table_rows": 0
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\TechPlanner\\Models\\LegalOffice",
+        "table_name": "legal_offices",
+        "id": 12,
+        "updated_at": "2025-12-23T15:59:53.000000Z",
+        "created_at": "2025-12-23T15:59:53.000000Z",
+        "updated_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "table_rows": 0
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\TechPlanner\\Models\\LegalRepresentative",
+        "table_name": "legal_representatives",
+        "id": 13,
+        "updated_at": "2025-12-23T15:59:53.000000Z",
+        "created_at": "2025-12-23T15:59:53.000000Z",
+        "updated_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "table_rows": 0
+    },
+    {
         "id": 1,
         "table_schema": "techplanner_data",
         "table_name": "media_converts",
@@ -33,14 +88,58 @@
         "created_by": null
     },
     {
-        "id": "4",
         "table_schema": "techplanner_data",
-        "table_name": "appointments",
-        "table_rows": null,
-        "model_class": "Modules\\TechPlanner\\Models\\Appointment",
-        "updated_at": "2026-10-30T13:54:39.000000Z",
-        "updated_by": null,
-        "created_at": "2026-10-30T13:54:39.000000Z",
-        "created_by": null
+        "model_class": "Modules\\TechPlanner\\Models\\PhoneCall",
+        "table_name": "phone_calls",
+        "id": 16,
+        "updated_at": "2025-12-23T15:59:53.000000Z",
+        "created_at": "2025-12-23T15:59:53.000000Z",
+        "updated_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "created_by": "9ddf70bd-561e-4513-a742-5523567ef10b",
+        "table_rows": 104
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\Employee\\Models\\WorkHour",
+        "table_name": "work_hours",
+        "id": 17,
+        "updated_at": "2026-02-22T20:57:37.000000Z",
+        "created_at": "2026-02-22T20:57:37.000000Z",
+        "updated_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b",
+        "created_by": "019c86da-97bd-70f1-9bff-ee4af6ecc86b",
+        "table_rows": 123
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\Notify\\Models\\MailTemplate",
+        "table_name": "mail_templates",
+        "created_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "id": "18",
+        "updated_at": "2026-11-06T12:15:59.000000Z",
+        "created_at": "2026-11-06T12:15:59.000000Z",
+        "table_rows": 9
+    },
+    {
+        "table_schema": "techplanner_data",
+        "model_class": "Modules\\TechPlanner\\Models\\MedicalDirector",
+        "table_name": "medical_directors",
+        "created_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "id": "19",
+        "updated_at": "2026-11-06T12:15:59.000000Z",
+        "created_at": "2026-11-06T12:15:59.000000Z",
+        "table_rows": 0
+    },
+    {
+        "created_at": "2026-11-07T07:11:22.000000Z",
+        "created_by": "019c864e-3055-707a-a4fb-f00c631b2d96",
+        "id": "20",
+        "model_class": "Modules\\TechPlanner\\Models\\Control",
+        "table_name": "controls",
+        "table_rows": 0,
+        "table_schema": "techplanner_data",
+        "updated_at": "2026-11-07T07:15:12.000000Z",
+        "updated_by": "019c864e-3055-707a-a4fb-f00c631b2d96"
     }
 ]

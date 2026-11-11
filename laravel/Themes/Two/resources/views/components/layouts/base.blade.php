@@ -23,9 +23,7 @@
             @endisset
         </main>
 
-        @livewire('notifications')
         @livewireScripts
-        @filamentScripts
         @vite(['resources/js/app.js'], 'themes/Two')
     </body>
 </html>

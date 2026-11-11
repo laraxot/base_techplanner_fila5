@@ -2,7 +2,7 @@
 qmd: "git consolidated"
 issues: []
 discussions: []
-title: "git — Consolidated Documentation"
+title: "git: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -11,7 +11,7 @@ updated: 2026-08-24
 status: draft
 ---
 
-# git — Consolidated Documentation
+# git: Consolidated Documentation
 
 Consolidated from **10** individual files.
 
@@ -629,7 +629,7 @@ discussions:
   - "https://github.com/provtv/<nome repository>/discussions/204"
 ---
 
-# Handoff — multi-org sync (STORY-003)
+# Handoff: multi-org sync (STORY-003)
 
 ## Scopo
 
@@ -653,7 +653,7 @@ Un tree dirty o un remote dietro/avanti **non** è sincronizzato, anche se l’a
 
 1. `cd` owner → `git remote -v` → fetch tutti → merge senza force → push tutti
 2. Dopo edit PHP: phpstan/phpmd/phpinsights scoped (prompt `02-gitmodules-sync.md`)
-3. Mai `git restore` — forward-only
+3. Mai `git restore`: forward-only
 4. UI: non reintrodurre `InteractiveMap` (dominio Geo)
 
 ## Note owner
@@ -684,11 +684,11 @@ Seguire sync multi-org e mantenere docs allineate alla story.
 
 *Consolidated from: `git-push-resolution.md`*
 
-title: Notify Push Execution and Resolution — 2026-07-29 Continuation
+title: Notify Push Execution and Resolution: 2026-07-29 Continuation
 date: 2026-07-29
 ---
 
-# Notify Module Push Execution — Session Continuation
+# Notify Module Push Execution: Session Continuation
 
 ## Procedura Eseguita
 
@@ -794,7 +794,7 @@ git push laraxot dev
 
 ---
 
-## Quality Gates — Notify Module
+## Quality Gates: Notify Module
 
 ### PHPStan (Scope: Modules/Notify/app)
 ```bash
@@ -805,7 +805,7 @@ php ./vendor/bin/phpstan analyse Modules/Notify/app
 ### PHPStan (Scope: Global Modules bootstrap)
 ```bash
 php ./vendor/bin/phpstan analyse Modules
-# ⏸️ TIMEOUT @ 120s (Larastan bootstrap timeout — architectural issue, non-Notify-specific)
+# ⏸️ TIMEOUT @ 120s (Larastan bootstrap timeout: architectural issue, non-Notify-specific)
 ```
 
 ### Conclusion

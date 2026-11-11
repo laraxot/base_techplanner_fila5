@@ -10,7 +10,7 @@ discussions: []
 status: draft
 ---
 
-Copilot Redundancy Audit — 2026-05-25
+Copilot Redundancy Audit: 2026-05-25
 
 Sintesi
 - Template e job-related docs ripetuti (job.txt, worker.txt, queue patterns).

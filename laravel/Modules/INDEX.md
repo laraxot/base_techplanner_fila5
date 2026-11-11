@@ -10,22 +10,22 @@
 
 | Module | LOC | Docs | Models | Role | Philosophy |
 |--------|-----|------|--------|------|-----------|
-| **Xot** | 42.7K | 2437 md | 45 | Core Framework | [PHILOSOPHY.md](Xot/docs/PHILOSOPHY.md) |
+| **Xot** | 42.7K | 2437 md | 45 | Core Framework | [PHILOSOPHY.md](Xot/docs/index.md) |
 | **User** | 38.6K | 1525 md | 104 | Authentication | [PHILOSOPHY.md](User/docs/PHILOSOPHY.md) |
-| **Geo** | 18.2K | 562 md | 34 | Geolocation | [PHILOSOPHY.md](Geo/docs/PHILOSOPHY.md) |
+| **Geo** | 18.2K | 562 md | 34 | Geolocation | [PHILOSOPHY.md](Geo/docs/philosophy.md) |
 | **Notify** | 16.8K | 1714 md | 29 | Communications | [PHILOSOPHY.md](Notify/docs/PHILOSOPHY.md) |
 | **Media** | 8.8K | 256 md | 8 | File Handling | [PHILOSOPHY.md](Media/docs/PHILOSOPHY.md) |
-| **Cms** | 8.3K | 568 md | 21 | Content Management | [PHILOSOPHY.md](Cms/docs/PHILOSOPHY.md) |
-| **Job** | 8.5K | 249 md | 34 | Async Jobs | [PHILOSOPHY.md](Job/docs/PHILOSOPHY.md) |
+| **Cms** | 8.3K | 568 md | 21 | Content Management | [PHILOSOPHY.md](Cms/docs/philosophy.md) |
+| **Job** | 8.5K | 249 md | 34 | Async Jobs | [PHILOSOPHY.md](Job/docs/philosophy.md) |
 | **Employee** | 7.4K | 91 md | 10 | Workforce | [PHILOSOPHY.md](Employee/docs/PHILOSOPHY.md) |
-| **UI** | 6.3K | 444 md | 5 | Design System | [PHILOSOPHY.md](UI/docs/PHILOSOPHY.md) |
-| **TechPlanner** | 5.7K | 60 md | 15 | Domain Core | [PHILOSOPHY.md](TechPlanner/docs/PHILOSOPHY.md) |
+| **UI** | 6.3K | 444 md | 5 | Design System | [PHILOSOPHY.md](UI/docs/index.md) |
+| **TechPlanner** | 5.7K | 60 md | 15 | Domain Core | [PHILOSOPHY.md](TechPlanner/docs/concepts/vision-and-philosophy.md) |
 | **Lang** | 4.6K | 540 md | 14 | i18n | [PHILOSOPHY.md](Lang/docs/PHILOSOPHY.md) |
-| **AI** | 4.4K | 90 md | 4 | LLM Integration | [PHILOSOPHY.md](AI/docs/PHILOSOPHY.md) |
-| **Tenant** | 3.6K | 220 md | 15 | Multi-Tenancy | [PHILOSOPHY.md](Tenant/docs/PHILOSOPHY.md) |
-| **Activity** | 3.5K | 362 md | 10 | Audit Logging | [PHILOSOPHY.md](Activity/docs/PHILOSOPHY.md) |
-| **Gdpr** | 3.4K | 19 md | 13 | Compliance | [PHILOSOPHY.md](Gdpr/docs/PHILOSOPHY.md) |
-| **Seo** | 1.6K | 110 md | 0 | Search Optimization | [PHILOSOPHY.md](Seo/docs/PHILOSOPHY.md) |
+| **AI** | 4.4K | 90 md | 4 | LLM Integration | [PHILOSOPHY.md](AI/docs/philosophy.md) |
+| **Tenant** | 3.6K | 220 md | 15 | Multi-Tenancy | [PHILOSOPHY.md](Tenant/docs/philosophy.md) |
+| **Activity** | 3.5K | 362 md | 10 | Audit Logging | [PHILOSOPHY.md](Activity/docs/philosophy.md) |
+| **Gdpr** | 3.4K | 19 md | 13 | Compliance | [PHILOSOPHY.md](Gdpr/docs/philosophy.md) |
+| **Seo** | 1.6K | 110 md | 0 | Search Optimization | [PHILOSOPHY.md](Seo/docs/philosophy.md) |
 
 ---
 
@@ -97,12 +97,12 @@
 
 ## 🎯 How to Use This Index
 
-1. **I want to understand Xot**: Start with [Xot/docs/PHILOSOPHY.md](Xot/docs/PHILOSOPHY.md)
+1. **I want to understand Xot**: Start with [Xot/docs/index.md](Xot/docs/index.md)
    - Read **RELIGIONE** for dogmas
    - Read **ZEN** for the magic
    - Read **BAD PRACTICES** to not become lost
 
-2. **I need to extend a module**: Find it in the table, read **COME USARLO** in its PHILOSOPHY.md
+2. **I need to extend a module**: Find it in the table, read **COME USARLO** in its philosophy doc
 
 3. **I want to add a new feature**: Read the domain module (TechPlanner), then the cross-cutting concerns (Notify, Activity)
 
@@ -112,7 +112,7 @@
 
 ---
 
-## 📖 Each PHILOSOPHY.md Covers
+## 📖 Each module philosophy doc covers
 
 ```
 ├─ RELIGIONE: Non-negotiable principles
@@ -136,29 +136,29 @@
 ## 🚀 Starting Points by Role
 
 ### For Product Managers
-1. TechPlanner/PHILOSOPHY.md (domain)
-2. Geo/PHILOSOPHY.md (logistics)
-3. Notify/PHILOSOPHY.md (UX)
+1. TechPlanner/docs/concepts/vision-and-philosophy.md (domain)
+2. Geo/docs/philosophy.md (logistics)
+3. Notify/docs/PHILOSOPHY.md (UX)
 
 ### For Backend Engineers
-1. Xot/PHILOSOPHY.md (foundation)
-2. User/PHILOSOPHY.md (auth)
-3. [Your domain module]/PHILOSOPHY.md
+1. Xot/docs/index.md (foundation)
+2. User/docs/PHILOSOPHY.md (auth)
+3. [Your domain module]/docs/ (domain)
 
 ### For Frontend Engineers
-1. UI/PHILOSOPHY.md (design system)
-2. Seo/PHILOSOPHY.md (meta/performance)
-3. Lang/PHILOSOPHY.md (i18n)
+1. UI/docs/index.md (design system)
+2. Seo/docs/philosophy.md (meta/performance)
+3. Lang/docs/PHILOSOPHY.md (i18n)
 
 ### For DevOps/Platform
-1. Tenant/PHILOSOPHY.md (isolation)
-2. Job/PHILOSOPHY.md (async)
-3. Gdpr/PHILOSOPHY.md (compliance)
+1. Tenant/docs/philosophy.md (isolation)
+2. Job/docs/philosophy.md (async)
+3. Gdpr/docs/philosophy.md (compliance)
 
 ### For Security
-1. User/PHILOSOPHY.md (auth)
-2. Gdpr/PHILOSOPHY.md (privacy)
-3. Activity/PHILOSOPHY.md (audit)
+1. User/docs/PHILOSOPHY.md (auth)
+2. Gdpr/docs/philosophy.md (privacy)
+3. Activity/docs/philosophy.md (audit)
 
 ---
 
@@ -216,7 +216,7 @@ All PHILOSOPHY.md files are in: `/laravel/Modules/<ModuleName>/docs/PHILOSOPHY.m
 
 ## 📋 Generation Methodology
 
-Each PHILOSOPHY.md was generated by:
+Each module philosophy doc was generated by:
 
 1. **Deep Code Reading**: Models, Actions, Traits, Filament components
 2. **Documentation Review**: Existing docs, README, changelog

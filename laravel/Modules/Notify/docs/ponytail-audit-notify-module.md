@@ -47,30 +47,30 @@ Discussion [#82](https://github.com/laraxot/base_quaeris_fila5/discussions/82) /
 
 Checked `app/Actions/{SMS,Telegram,WhatsApp}/` directly rather than trusting the summary:
 
-- **SMS**: exactly one implementation, `SendSmsFactorSMSAction`. Matches the pattern — collapsed.
-- **Telegram**: three implementations, `SendBotmanTelegramAction`, `SendNutgramTelegramAction`, `SendOfficialTelegramAction`, genuinely selected by `telegram.default` config at runtime. Does **not** match the pattern — left in place.
-- **WhatsApp**: four implementations, `Send360dialogWhatsAppAction`, `SendFacebookWhatsAppAction`, `SendTwilioWhatsAppAction`, `SendVonageWhatsAppAction`, genuinely selected by `whatsapp.default` config at runtime. Does **not** match the pattern — left in place.
+- **SMS**: exactly one implementation, `SendSmsFactorSMSAction`. Matches the pattern: collapsed.
+- **Telegram**: three implementations, `SendBotmanTelegramAction`, `SendNutgramTelegramAction`, `SendOfficialTelegramAction`, genuinely selected by `telegram.default` config at runtime. Does **not** match the pattern: left in place.
+- **WhatsApp**: four implementations, `Send360dialogWhatsAppAction`, `SendFacebookWhatsAppAction`, `SendTwilioWhatsAppAction`, `SendVonageWhatsAppAction`, genuinely selected by `whatsapp.default` config at runtime. Does **not** match the pattern: left in place.
 
 ### Fix applied (SMS only)
 
 1. Deleted `app/Factories/SmsActionFactory.php`.
 2. Replaced `app(SmsActionFactory::class)->create()` / constructor-injected `SmsActionFactory` with direct container resolution of the concrete `Modules\Notify\Actions\SMS\SendSmsFactorSMSAction` at all three call sites:
-   - `app/Notifications/Channels/NetfunChannel.php` — `app(SendSmsFactorSMSAction::class)` inline (no constructor).
-   - `app/Channels/NetfunChannel.php` — constructor now type-hints `SendSmsFactorSMSAction $action` directly, calls `$this->action->execute($smsData)`.
-   - `app/Channels/SmsChannel.php` — same pattern, `SendSmsFactorSMSAction $action` constructor property.
-3. Kept `app/Contracts/SMS/SmsActionContract.php` — it is the Action's own interface (return type for `execute()`), not a `*FactoryContract` wrapper, and remains used for type-hinting in tests and at call sites. Not a target for this cleanup.
+   - `app/Notifications/Channels/NetfunChannel.php`: `app(SendSmsFactorSMSAction::class)` inline (no constructor).
+   - `app/Channels/NetfunChannel.php`: constructor now type-hints `SendSmsFactorSMSAction $action` directly, calls `$this->action->execute($smsData)`.
+   - `app/Channels/SmsChannel.php`: same pattern, `SendSmsFactorSMSAction $action` constructor property.
+3. Kept `app/Contracts/SMS/SmsActionContract.php`: it is the Action's own interface (return type for `execute()`), not a `*FactoryContract` wrapper, and remains used for type-hinting in tests and at call sites. Not a target for this cleanup.
 4. Updated tests to resolve/bind the concrete action instead of the factory:
-   - `tests/Unit/Factories/ActionFactoriesTest.php` — SMS factory test replaced with a direct `app(SendSmsFactorSMSAction::class)` resolution test; Telegram/WhatsApp factory tests untouched.
-   - `tests/Unit/Notifications/Channels/NotificationsChannelsTest.php` — mock now bound via `app()->instance(SendSmsFactorSMSAction::class, ...)` instead of subclassing `SmsActionFactory`.
-   - `tests/Unit/Channels/SmsChannelTest.php` — reflection test updated from `factory` property to `action` property.
+   - `tests/Unit/Factories/ActionFactoriesTest.php`: SMS factory test replaced with a direct `app(SendSmsFactorSMSAction::class)` resolution test; Telegram/WhatsApp factory tests untouched.
+   - `tests/Unit/Notifications/Channels/NotificationsChannelsTest.php`: mock now bound via `app()->instance(SendSmsFactorSMSAction::class, ...)` instead of subclassing `SmsActionFactory`.
+   - `tests/Unit/Channels/SmsChannelTest.php`: reflection test updated from `factory` property to `action` property.
 
 ### Verification
 
-- `phpstan analyse Modules/Notify`: blocked repo-wide by a pre-existing, unrelated Laravel bootstrap failure (`Modules/Xot/app/Contracts/ModelContract.php` missing on disk — confirmed via `git status` as already-deleted working-tree state before this task started). Not caused by this change.
-- `phpmd.phar Modules/Notify ... cleancode,codesize,controversial,design,naming,unusedcode`: crashes module-wide on an unrelated file (pre-existing phpmd/parser bug). Re-ran scoped to only the three edited production files — clean except one pre-existing `StaticAccess` notice in `app/Channels/NetfunChannel.php` unrelated to the factory removal.
-- `phpinsights analyse Modules/Notify --no-interaction`: ran clean; grepped output for all touched files (`SmsChannel.php`, both `NetfunChannel.php`, `SendSmsFactorSMSAction.php`, and the three edited test files) — zero hits, no new issues introduced.
+- `phpstan analyse Modules/Notify`: blocked repo-wide by a pre-existing, unrelated Laravel bootstrap failure (`Modules/Xot/app/Contracts/ModelContract.php` missing on disk: confirmed via `git status` as already-deleted working-tree state before this task started). Not caused by this change.
+- `phpmd.phar Modules/Notify ... cleancode,codesize,controversial,design,naming,unusedcode`: crashes module-wide on an unrelated file (pre-existing phpmd/parser bug). Re-ran scoped to only the three edited production files: clean except one pre-existing `StaticAccess` notice in `app/Channels/NetfunChannel.php` unrelated to the factory removal.
+- `phpinsights analyse Modules/Notify --no-interaction`: ran clean; grepped output for all touched files (`SmsChannel.php`, both `NetfunChannel.php`, `SendSmsFactorSMSAction.php`, and the three edited test files): zero hits, no new issues introduced.
 - Pest: skipped, test DB unreachable in this environment (`Access denied for user`), per task instructions.
-- Puppeteer/playwright-mcp: skipped — this is backend messaging-dispatch code with no renderable UI.
+- Puppeteer/playwright-mcp: skipped: this is backend messaging-dispatch code with no renderable UI.
 
 ### Not collapsed (report only)
 

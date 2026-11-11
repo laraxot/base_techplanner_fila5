@@ -1,5 +1,5 @@
 ---
-title: "[DEV] PHPStan zero errori Notify — param type mancanti nei test"
+title: "[DEV] PHPStan zero errori Notify: param type mancanti nei test"
 type: dev
 module: Notify
 status: done-pending-commit

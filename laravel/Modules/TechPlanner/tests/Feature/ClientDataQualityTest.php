@@ -6,7 +6,7 @@ use Filament\Actions\Imports\Models\Import;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
-use Modules\TechPlanner\Filament\Forms\Components\ClientAddressSection;
+use Modules\Geo\Filament\Forms\Components\AddressSection;
 use Modules\TechPlanner\Filament\Imports\ClientImporter;
 use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Rules\ItalianFiscalCodeRule;
@@ -53,7 +53,7 @@ it('reports an Italian message and lets empty values through', function (): void
 });
 
 it('shows each contact field once in the client form', function (): void {
-    $fields = array_keys((new ClientAddressSection('address'))->getFormSchema());
+    $fields = array_keys((new AddressSection('address'))->getFormSchema());
 
     expect($fields)->toContain('route', 'street_number', 'postal_code', 'locality')
         ->not->toContain('phone', 'email', 'fax', 'mobile', 'pec', 'whatsapp', 'notes');
@@ -61,8 +61,7 @@ it('shows each contact field once in the client form', function (): void {
 
 describe('client import', function (): void {
     beforeEach(function (): void {
-        config(['database.connections.tech_planner' => ['driver' => 'sqlite', 'database' => ':memory:', 'prefix' => '']]);
-        DB::purge('tech_planner');
+        $this->useIsolatedTechPlannerConnection();
         // Anche le tabelle dei figli: il ripristino di un cliente riporta indietro apparecchi, chiamate, referenti.
         foreach ([
             '2024_12_26_000008_create_client_table.php',
@@ -73,6 +72,7 @@ describe('client import', function (): void {
             '2026_11_05_220020_create_medical_directors_table.php',
             '2024_12_26_230220_create_legal_representatives_table.php',
             '2024_12_26_230221_create_legal_offices_table.php',
+            '2026_11_06_000000_create_controls_table.php',
         ] as $file) {
             $migration = require dirname(__DIR__, 2).'/database/migrations/'.$file;
             expect($migration)->toBeInstanceOf(Migration::class);

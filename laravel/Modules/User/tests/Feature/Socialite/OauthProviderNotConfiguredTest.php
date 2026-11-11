@@ -7,7 +7,6 @@ namespace Modules\User\Tests\Feature\Socialite;
 use Illuminate\Support\Facades\Log;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-use Psr\Log\AbstractLogger;
 
 use function Pest\Laravel\get;
 
@@ -20,33 +19,6 @@ uses(TestCase::class);
  * («Missing required parameter: client_id»). Ora il clic torna a /{lang}/auth/login con un errore nostro:
  * in debug con la guida (cosa manca, dove creare le chiavi, dove impostarle), altrimenti gentile e senza dettagli.
  */
-
-/** Registro di prova al posto del canale di log: in test LOG_LEVEL=error scarterebbe i warning. */
-final class NotConfiguredRecordingLogger extends AbstractLogger
-{
-    /** @var list<array{string, string}> */
-    private array $records = [];
-
-    public function log(mixed $level, string|\Stringable $message, array $context = []): void
-    {
-        $this->records[] = [is_string($level) ? $level : '', (string) $message];
-    }
-
-    /**
-     * @return list<string> livelli dei messaggi che contengono $needle
-     */
-    public function levelsOf(string $needle): array
-    {
-        $levels = [];
-        foreach ($this->records as [$level, $message]) {
-            if (str_contains($message, $needle)) {
-                $levels[] = $level;
-            }
-        }
-
-        return $levels;
-    }
-}
 
 dataset('oauth_not_configured_locales', ['it', 'en', 'de', 'es']);
 
@@ -133,7 +105,7 @@ test('on a host Google accepts the guide gives the exact callback of that host a
 ]);
 
 test('the missing configuration is logged once as a warning, not as an error with a stack trace', function (): void {
-    $logger = new NotConfiguredRecordingLogger();
+    $logger = new NotConfiguredRecordingLogger;
     Log::swap($logger);
 
     get('/it/auth/login/google');

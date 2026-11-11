@@ -1,5 +1,5 @@
 ---
-title: "Notify Module — Document"
+title: "Notify Module: Document"
 type: docs/bmad
 status: active
 module: Notify

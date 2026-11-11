@@ -26,8 +26,11 @@ PLAYWRIGHT_MODULE=/percorso/node_modules/playwright ./build-pdf.sh
 3. `php artisan tinker --execute="require 'Modules/TechPlanner/docs/manual/seed-demo.php';"` — utenti demo
    (`super-admin`, due `techplanner::operator`, `user::admin`), clienti, apparecchi, verifiche, chiamate,
    un cliente nel cestino, un appuntamento oggi.
-4. Servire il sito con il nome host del tenant demo: `SERVER_NAME=manuale.local php -S 127.0.0.1:8000 vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php`
-   dalla cartella `public_html` (`artisan serve` non passa `SERVER_NAME`).
+4. Servire il sito con il nome host del tenant demo. Il tenant si ricava da `$_SERVER['SERVER_NAME']`, che il server
+   integrato di PHP imposta all'indirizzo su cui ascolta: si aggiunge `127.0.0.1 manuale.local` a `/etc/hosts` e, dalla
+   cartella `public_html`, si avvia
+   `php -S manuale.local:8000 ../laravel/vendor/laravel/framework/src/Illuminate/Foundation/resources/server.php`
+   (`artisan serve` e `php -S 127.0.0.1:8000` aprono il tenant predefinito, non quello demo).
 5. `node docs/manual/screenshots.cjs <cartella>` — Playwright, deviceScaleFactor 2 (`PLAYWRIGHT_MODULE` se serve);
    i nomi delle scene corrispondono alle immagini di `images/`.
 

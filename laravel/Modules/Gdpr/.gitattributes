@@ -1,11 +1,11 @@
-# Git attributes for this module. Git LFS is intentionally not used.
+# Git LFS is forbidden. Binary files remain normal Git blobs.
 * text=auto
 *.css linguist-vendored
 *.scss linguist-vendored
 *.js linguist-vendored
 CHANGELOG.md export-ignore
 
-# Binary files remain regular Git blobs.
+# Binary files are regular Git blobs; !filter disables inherited Git LFS.
 *.png binary !filter
 *.jpg binary !filter
 *.jpeg binary !filter
@@ -24,3 +24,4 @@ CHANGELOG.md export-ignore
 *.phar binary !filter
 *.db binary !filter
 *.sqlite binary !filter
+
