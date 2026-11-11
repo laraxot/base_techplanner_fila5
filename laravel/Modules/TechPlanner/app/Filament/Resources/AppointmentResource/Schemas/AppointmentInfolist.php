@@ -18,7 +18,7 @@ class AppointmentInfolist extends XotBaseResourceInfolist
         return [
             'id' => TextEntry::make('id'),
             'client.name' => TextEntry::make('client.name'),
-            'date' => TextEntry::make('date')->dateTime(),
+            'date' => TextEntry::make('date')->dateTime('d/m/Y H:i'),
             'notes' => TextEntry::make('notes'),
             'created_at' => TextEntry::make('created_at')->dateTime(),
             'updated_at' => TextEntry::make('updated_at')->dateTime(),

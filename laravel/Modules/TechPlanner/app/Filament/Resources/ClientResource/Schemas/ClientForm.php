@@ -7,8 +7,8 @@ namespace Modules\TechPlanner\Filament\Resources\ClientResource\Schemas;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
-use Modules\Geo\Filament\Forms\Components\AddressSection;
 use Modules\Notify\Filament\Forms\Components\ContactSection;
+use Modules\TechPlanner\Filament\Forms\Components\ClientAddressSection;
 use Modules\TechPlanner\Filament\Forms\Components\CompanySection;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
@@ -21,7 +21,7 @@ class ClientForm extends XotBaseResourceForm
     {
         return [
             'company' => CompanySection::make('company'),
-            'address' => AddressSection::make('address'),
+            'address' => ClientAddressSection::make('address'),
             'contacts' => ContactSection::make('contacts'),
             'competent_health_unit' => TextInput::make('competent_health_unit'),
             'notes' => Textarea::make('notes'),

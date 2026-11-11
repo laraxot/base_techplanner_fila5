@@ -20,7 +20,8 @@ Regole, skill e memorie vivono solo in `docs/wiki/`. Caricamento on-demand via Q
 - Mai Controllers FO — Folio + Volt + Laraxot
 - Mai estendere Filament diretto — XotBase / LangBase
 - Mai `RefreshDatabase` — `.env.testing` SQLite
-- Commit solo su richiesta esplicita utente
+- Committa e pusha su `dev` da solo, senza aspettare la richiesta, quando un blocco di lavoro è verificato (test verdi). Mai segreti, `.env` o file locali/demo nel commit
+- Test solo nella cartella `tests/` del modulo (`laravel/Modules/<Modulo>/tests`): mai in `laravel/tests/`
 - Stesso task multi-agente → una BMAD story canonica nell'owner corretto (`docs/stories/`, `Modules/*/docs/stories/` o `Themes/*/docs/stories/`) + lock + issue GitHub (`git remote -v`). `docs/chat/` è solo storico legacy.
 
 *Stub ≤50 righe — SSoT: docs/wiki/*

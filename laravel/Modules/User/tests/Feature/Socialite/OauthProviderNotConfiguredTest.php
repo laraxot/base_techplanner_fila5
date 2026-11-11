@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\User\Tests\Feature\Socialite;
 
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\ViewErrorBag;
 use Modules\User\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 use Psr\Log\AbstractLogger;
@@ -21,20 +20,6 @@ uses(TestCase::class);
  * («Missing required parameter: client_id»). Ora il clic torna a /{lang}/auth/login con un errore nostro:
  * in debug con la guida (cosa manca, dove creare le chiavi, dove impostarle), altrimenti gentile e senza dettagli.
  */
-
-/** Legge l'errore «email» che RedirectToLoginAction ha messo in sessione. */
-final class NotConfiguredErrorProbe
-{
-    public static function message(): string
-    {
-        $bag = session('errors');
-        Assert::assertInstanceOf(ViewErrorBag::class, $bag);
-        $message = $bag->getBag('default')->first('email');
-        Assert::assertIsString($message);
-
-        return $message;
-    }
-}
 
 /** Registro di prova al posto del canale di log: in test LOG_LEVEL=error scarterebbe i warning. */
 final class NotConfiguredRecordingLogger extends AbstractLogger
@@ -148,7 +133,7 @@ test('on a host Google accepts the guide gives the exact callback of that host a
 ]);
 
 test('the missing configuration is logged once as a warning, not as an error with a stack trace', function (): void {
-    $logger = new NotConfiguredRecordingLogger;
+    $logger = new NotConfiguredRecordingLogger();
     Log::swap($logger);
 
     get('/it/auth/login/google');

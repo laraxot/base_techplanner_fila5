@@ -36,7 +36,7 @@ trait GeoTrait
             '',
         );
 
-        return null !== $distance ? SafeFloatCastAction::cast($distance) : null;
+        return $distance !== null ? SafeFloatCastAction::cast($distance) : null;
     }
 
     public function distanceCustomField(
@@ -60,14 +60,16 @@ trait GeoTrait
             $unit,
         );
 
-        return null !== $distance ? SafeFloatCastAction::cast($distance) : null;
+        return $distance !== null ? SafeFloatCastAction::cast($distance) : null;
     }
 
     /**
-     * Ordina per distanza Haversine da un punto (colonna distance in select).
+     * Ordina per distanza Haversine da un punto (colonna `distance` in km nella select).
      *
-     * @param Builder<TModel> $query
+     * Raggio terrestre 6371 km, nessun fattore miglia (prima `* 1.1515` gonfiava i km del 15%).
+     * Le righe senza coordinate hanno `distance` NULL e vanno in fondo, non in cima.
      *
+     * @param  Builder<TModel>  $query
      * @return Builder<TModel>
      */
     public function scopeWithDistance(Builder $query, float $lat, float $lng): Builder
@@ -78,17 +80,17 @@ trait GeoTrait
 
         return $query
             ->selectRaw(
-                '*, (6371 * acos(cos(radians(?)) * cos(radians(latitude)) * cos(radians(longitude) - radians(?)) + sin(radians(?)) * sin(radians(latitude)))) * 1.1515 AS distance',
+                '*, (6371 * acos(cos(radians(?)) * cos(radians(latitude)) * cos(radians(longitude) - radians(?)) + sin(radians(?)) * sin(radians(latitude)))) AS distance',
                 [$lat, $lng, $lat],
             )
+            ->orderByRaw('distance IS NULL')
             ->orderBy('distance');
     }
 
     /**
      * Filtra righe il cui poligono JSON (`zone_polygon`) contiene il punto.
      *
-     * @param Builder<TModel> $query
-     *
+     * @param  Builder<TModel>  $query
      * @return Builder<TModel>
      */
     public function scopeOfInPolygon(Builder $query, string $polygon_field, float $lat, float $lng): Builder

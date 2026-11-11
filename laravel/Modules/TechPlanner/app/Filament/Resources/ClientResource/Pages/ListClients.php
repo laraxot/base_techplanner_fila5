@@ -4,27 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\TechPlanner\Filament\Resources\ClientResource\Pages;
 
-use Exception;
 use Filament\Actions\Action;
-use Filament\Actions\ActionGroup;
 use Filament\Actions\ImportAction;
 use Filament\Notifications\Notification;
-use Filament\Tables\Filters\SelectFilter;
-use Filament\Tables\Filters\TernaryFilter;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\Relation;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\Cookie;
-use Illuminate\Support\Facades\Session;
 use Livewire\Attributes\On;
 use Modules\Geo\Actions\UpdateCoordinatesFromAddressAction;
-use Modules\Geo\Filament\Actions\UpdateCoordinatesBulkAction;
-use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction;
 use Modules\TechPlanner\Filament\Imports\ClientImporter;
 use Modules\TechPlanner\Filament\Resources\ClientResource;
 use Modules\TechPlanner\Models\Client;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 use Override;
 
@@ -50,58 +39,26 @@ class ListClients extends XotBaseListRecords
         ];
     }
 
-    public function getTableFilters(): array
-    {
-        // Cache del filtro attività per ridurre query e memory usage
-        $activities = Cache::remember('client_activities_filter', 3600, function () {
-            return static::getModel()::query()
-                ->whereNotNull('activity')
-                ->distinct()
-                ->limit(100) // Limitare il numero di attività per evitare overhead
-                ->pluck('activity', 'activity')
-                ->map(app(SafeStringCastAction::class)->execute(...))
-                ->toArray();
-        });
-
-        /** @var array<string, string> $activities */
-
-        return [
-            ...parent::getTableFilters(),
-            TernaryFilter::make('business_closed')->default(false),
-            SelectFilter::make('activity')
-                ->multiple()
-                ->preload()
-                ->options($activities),
-        ];
-    }
-
     #[Override]
     public function getHeaderActions(): array
     {
         /** @var array<string, Action> $actions */
         $actions = [
             ...parent::getHeaderActions(),
-            ImportAction::make('importClient')->importer(ClientImporter::class),
+            ImportAction::make('importClient')->importer(ClientImporter::class)
+                ->pluralModelLabel(__('techplanner::client.plural_label')),
             Action::make('populateCoordinates')
                 ->icon('heroicon-o-globe-alt')
                 ->action(function () {
                     $this->populateAllCoordinates();
                 })
                 ->requiresConfirmation()
-                ->modalHeading(trans('tech_planner::client.actions.populateCoordinates.modal.heading'))
-                ->modalDescription(trans('tech_planner::client.actions.populateCoordinates.modal.description'))
-                ->modalSubmitActionLabel(trans('tech_planner::client.actions.populateCoordinates.modal.submit_label')),
+                ->modalHeading(trans('techplanner::client.actions.populateCoordinates.modal.heading'))
+                ->modalDescription(trans('techplanner::client.actions.populateCoordinates.modal.description'))
+                ->modalSubmitActionLabel(trans('techplanner::client.actions.populateCoordinates.modal.submit_label')),
         ];
 
         return $actions;
-    }
-
-    public function getTableBulkActions(): array
-    {
-        return [
-            'updateCoordinates' => UpdateCoordinatesBulkAction::make('updateCoordinates'),
-            'sendRecordsNotification' => SendRecordsNotificationBulkAction::make('sendRecordsNotification'),
-        ];
     }
 
     private function populateAllCoordinates(): void
@@ -169,66 +126,11 @@ class ListClients extends XotBaseListRecords
     //         $client->update($addressData->toArray());
     //     }
     // }
-    /**
-     * @return array<int|string, Action|ActionGroup>
+
+    /*
+     * Filtri, azioni di riga, azioni di gruppo e query con distanza stanno in ClientsTable
+     * (la tabella della lista e' costruita da li'); qui restano le azioni di pagina.
      */
-    /**
-     * {@inheritDoc}
-     *
-     * @return array<string, Action|ActionGroup>
-     */
-    /**
-     * {@inheritDoc}
-     *
-     * @return array<string, Action|ActionGroup>
-     */
-    public function getTableActions(): array
-    {
-        /** @var array<string, Action|ActionGroup> $actions */
-        $actions = [
-            ...parent::getTableActions(),
-            Action::make('sortByDistance')
-                ->icon('heroicon-o-map')
-                ->action(function (Client $record) {
-                    $latValue = $record->getAttribute('latitude');
-                    $lngValue = $record->getAttribute('longitude');
-                    $latitude = is_numeric($latValue) ? (float) $latValue : null;
-                    $longitude = is_numeric($lngValue) ? (float) $lngValue : null;
-                    if ($latitude === null || $longitude === null) {
-                        Notification::make()
-                            ->warning()
-                            ->title('Attenzione')
-                            ->body('Il cliente selezionato non ha coordinate valide')
-                            ->send();
-
-                        return;
-                    }
-
-                    Session::put('user_latitude', $latitude);
-                    Session::put('user_longitude', $longitude);
-
-                    // Aggiorna i cookie per persistenza
-                    Cookie::queue('user_latitude', (string) $latitude, 60 * 24 * 30); // 30 giorni
-                    Cookie::queue('user_longitude', (string) $longitude, 60 * 24 * 30);
-
-                    // Aggiorna il widget delle coordinate
-                    $this->dispatch('coordinates-updated');
-
-                    // Applica l'ordinamento per distanza
-                    $this->applySort('distance');
-
-                    Notification::make()
-                        ->success()
-                        ->title('Coordinate aggiornate')
-                        ->body('La tabella è stata ordinata in base alla distanza dal cliente selezionato')
-                        ->send();
-                })
-                ->label('Ordina per distanza'),
-        ];
-
-        return $actions;
-    }
-
     public function applySort(string $field): void
     {
         if ($field === 'distance') {
@@ -240,40 +142,5 @@ class ListClients extends XotBaseListRecords
     public function handleSortByDistance(): void
     {
         $this->applySort('distance');
-    }
-
-    /**
-     * @return Builder<Client>
-     */
-    protected function getTableQuery(): Builder
-    {
-        $query = parent::getTableQuery();
-        if ($query === null) {
-            throw new Exception('Query is null');
-        }
-
-        // Ensure we return a Builder, not a Relation
-        if ($query instanceof Relation) {
-            /** @var Builder<Client> */
-            $query = $query->getQuery();
-        }
-
-        // Ensure we have a proper Builder instance
-        if (! $query instanceof Builder) {
-            throw new Exception('Query is not a Builder instance');
-        }
-
-        /** @var Builder<Client> $query */
-        $latitude = Session::get('user_latitude');
-        $longitude = Session::get('user_longitude');
-
-        if (! is_numeric($latitude) || ! is_numeric($longitude)) {
-            return $query;
-        }
-
-        $lat = (float) $latitude;
-        $lng = (float) $longitude;
-
-        return $query->withDistance($lat, $lng);
     }
 }

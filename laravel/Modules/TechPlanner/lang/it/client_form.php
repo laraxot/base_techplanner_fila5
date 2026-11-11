@@ -4,12 +4,31 @@ declare(strict_types=1);
 
 return [
     'sections' => [
-        'company' => ['label' => 'company', 'heading' => 'company'],
-        'address' => ['label' => 'address', 'heading' => 'address'],
-        'contacts' => ['label' => 'contacts', 'heading' => 'contacts'],
+        'company' => [
+            'label' => 'Dati azienda',
+            'heading' => 'Dati azienda',
+        ],
+        'address' => [
+            'label' => 'Indirizzo',
+            'heading' => 'Indirizzo',
+        ],
+        'contacts' => [
+            'label' => 'Contatti',
+            'heading' => 'Contatti',
+        ],
     ],
     'fields' => [
-        'competent_health_unit' => ['label' => 'competent_health_unit', 'placeholder' => 'competent_health_unit', 'helper_text' => 'competent_health_unit', 'description' => 'competent_health_unit'],
-        'notes' => ['label' => 'notes', 'placeholder' => 'notes', 'helper_text' => 'notes', 'description' => 'notes'],
+        'competent_health_unit' => [
+            'label' => 'ASL/ULSS competente',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => 'competent_health_unit',
+        ],
+        'notes' => [
+            'label' => 'Note',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => 'notes',
+        ],
     ],
 ];

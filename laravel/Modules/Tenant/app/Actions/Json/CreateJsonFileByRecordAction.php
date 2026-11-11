@@ -10,7 +10,6 @@ use Modules\Tenant\Models\Contracts\HasSushiToJson;
 use Modules\Xot\Actions\Arr\EnsureKeysAction;
 use Modules\Xot\Actions\Arr\SaveArrayAction;
 use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 /**
  * Aggiunge al file JSON del tenant la riga corrispondente al record in creazione.
@@ -32,9 +31,13 @@ class CreateJsonFileByRecordAction
 
         $keyName = $record->getKeyName();
 
-        $max = max(Arr::pluck($rows, $keyName) ?: [0]);
-
-        Assert::integer($max);
+        // Nei file JSON gli id possono essere stringhe ("4"): prima Assert::integer('4') faceva fallire
+        // ogni creazione (es. il conteggio nel menu mostrava «--»). Gli id non numerici valgono 0.
+        $ids = array_map(
+            static fn (mixed $id): int => is_numeric($id) ? (int) $id : 0,
+            Arr::pluck($rows, $keyName),
+        );
+        $max = $ids === [] ? 0 : max($ids);
 
         $newId = $max + 1;
 

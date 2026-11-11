@@ -6,6 +6,27 @@
 *.md diff=markdown
 *.php diff=php
 
+# File binari: mai conversione di fine riga (eol=lf sopra li corromperebbe).
+*.png binary -text -eol
+*.jpg binary -text -eol
+*.jpeg binary -text -eol
+*.gif binary -text -eol
+*.webp binary -text -eol
+*.ico binary -text -eol
+*.avif binary -text -eol
+*.bmp binary -text -eol
+*.pdf binary -text -eol
+*.woff binary -text -eol
+*.woff2 binary -text -eol
+*.ttf binary -text -eol
+*.otf binary -text -eol
+*.eot binary -text -eol
+*.zip binary -text -eol
+*.gz binary -text -eol
+*.mp4 binary -text -eol
+*.webm binary -text -eol
+*.mp3 binary -text -eol
+
 /.github export-ignore
 CHANGELOG.md export-ignore
 .styleci.yml export-ignore

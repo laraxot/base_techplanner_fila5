@@ -38,7 +38,18 @@ abstract class TestCase extends BaseTestCase
     use DatabaseTransactions;
 
     /** @var list<string> */
-    protected $connectionsToTransact = ['fixcity', 'mariadb', 'user', 'notify'];
+    /**
+     * Connessioni da riportare indietro dopo ogni test. Prima elencava `fixcity`, la connessione di
+     * un altro progetto: in ogni altro progetto ogni test falliva con «connection [fixcity] not configured».
+     *
+     * @return list<string>
+     */
+    protected function connectionsToTransact()
+    {
+        $default = config('database.default');
+
+        return array_values(array_unique(array_filter([\is_string($default) ? $default : null, 'user', 'notify'])));
+    }
 
     /**
      * Type-guard: accetta un valore arbitrario e asserisce che sia un array.
@@ -188,7 +199,6 @@ abstract class TestCase extends BaseTestCase
     /**
      * Get package providers.
      *
-     * @param  Application  $app
      * @return array<int, class-string>
      */
     protected function getPackageProviders(Application $app): array

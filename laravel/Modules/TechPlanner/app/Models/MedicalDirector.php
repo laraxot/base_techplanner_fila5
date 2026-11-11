@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 
 /**
@@ -49,6 +51,8 @@ use Illuminate\Support\Carbon;
  */
 class MedicalDirector extends BaseModel
 {
+    use SoftDeletes;
+
     protected $fillable = [
         'client_id', // IDCliente
         'last_name', // Cognome
@@ -61,5 +65,24 @@ class MedicalDirector extends BaseModel
         'birth_date', // Data nascita
         'start_date', // Data inizio
         'end_date', // Data fine
+        // Colonne usate dal form del pannello.
+        'name',
+        'fiscal_code',
+        'phone',
+        'email',
+        'notes',
+        'license_number',
+        'specialization',
+        'license_expiry',
     ];
+
+    /**
+     * Il cliente a cui appartiene.
+     *
+     * @return BelongsTo<Client, $this>
+     */
+    public function client(): BelongsTo
+    {
+        return $this->belongsTo(Client::class);
+    }
 }

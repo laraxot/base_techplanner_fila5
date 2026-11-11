@@ -14,11 +14,12 @@ export default defineConfig({
         }),
         tailwindcss(),
     ],
+    // Gli asset compilati restano nel tema (`./public`, come Zero e Sixteen): la document root li vede tramite
+    // il symlink public_html/themes/Two (ln -s ../../laravel/Themes/Two/public). Niente più `npm run copy`.
+    publicDir: false,
     build: {
-        // Il web root canonico e' laravel/public; public_html viene sincronizzato
-        // da `npm run sync-public` e non deve diventare un symlink al tema.
-        outDir: '../../../public/themes/Two',
-        emptyOutDir: false,
+        outDir: './public',
+        emptyOutDir: true,
     },
 })
 
