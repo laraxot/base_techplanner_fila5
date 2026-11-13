@@ -5,6 +5,22 @@ ini_set('max_execution_time', 0);
 ignore_user_abort(true);
 set_time_limit(0);
 
+/*
+ * Solo richieste firmate (RC3, 2026-11-10). Prima chiunque poteva inviare un payload e far partire un
+ * deploy. GitHub e Bitbucket firmano il corpo con HMAC-SHA256 nell'header X-Hub-Signature-256 usando il
+ * «Secret» del webhook: lo stesso valore va in config.php alla chiave 'webhook_secret'.
+ * Senza segreto configurato il deploy è rifiutato.
+ */
+$config = is_file(__DIR__.'/config.php') ? include __DIR__.'/config.php' : [];
+$secret = is_array($config) && isset($config['webhook_secret']) && is_string($config['webhook_secret']) ? $config['webhook_secret'] : '';
+$rawBody = (string) file_get_contents('php://input');
+$signature = $_SERVER['HTTP_X_HUB_SIGNATURE_256'] ?? '';
+if ($secret === '' || ! is_string($signature) || ! hash_equals('sha256='.hash_hmac('sha256', $rawBody, $secret), $signature)) {
+    http_response_code(403);
+    echo 'Forbidden';
+    exit;
+}
+
 // Sends a green flag to the repo
 header("Connection: close\r\n");
 header("Content-Encoding: none\r\n");
@@ -23,8 +39,7 @@ if ($fp = fopen('logconnection.txt', 'a')) {
 }
 
 
-$inputJSON = file_get_contents('php://input');
-$payload = json_decode($inputJSON, TRUE);
+$payload = json_decode($rawBody, TRUE);
 
 if (!isset($payload)) {
     $msg = date("d.m.Y, H:i:s", time()) . ": PAYLOAD not supported \n";

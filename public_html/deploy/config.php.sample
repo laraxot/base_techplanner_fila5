@@ -60,5 +60,7 @@ return array(
         'password' => ''
     ),
     // ADMIN password for FTPBucket's UI
-    'admin_pass' => 'CHANGE'
+    'admin_pass' => 'CHANGE',
+    // Lo stesso «Secret» impostato nel webhook di GitHub/Bitbucket: senza, deploy.php rifiuta ogni richiesta.
+    'webhook_secret' => ''
 );

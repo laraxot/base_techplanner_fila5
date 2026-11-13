@@ -6,10 +6,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && npm run sync-public",
+    "build": "vite build && npm run prepare-public",
     "watch": "vite build --watch",
-    "copy": "npm run sync-public",
-    "sync-public": "mkdir -p ../../../public/themes/Two/images ../../../public_html/themes/Two/images && cp -a resources/images/. ../../../public/themes/Two/images/ && cp -a resources/images/. ../../../public_html/themes/Two/images/ && cp -a resources/site.webmanifest ../../../public/themes/Two/site.webmanifest && cp -a ../../Modules/Xot/resources/img/apple-touch-icon.png ../../../public/themes/Two/apple-touch-icon.png && cp -a ../../Modules/Xot/resources/img/favicon.ico ../../../public_html/favicon.ico && cp -a ../../../public/themes/Two/. ../../../public_html/themes/Two/"
+    "prepare-public": "mkdir -p ./public/images && cp -a resources/images/. ./public/images/ && cp -a resources/site.webmanifest ./public/site.webmanifest && cp -a ../../Modules/Xot/resources/img/apple-touch-icon.png ./public/apple-touch-icon.png"
   },
   "devDependencies": {
     "@alpinejs/focus": "^3.14.9",

@@ -1,0 +1,9 @@
+# Analisi del modulo TechPlanner (Larastan arriva da phpstan.neon / extension-installer).
+# Controllo di qualità usato dalla CI su `dev` per il modulo del prodotto: solo app e database del modulo.
+includes:
+    - phpstan.neon
+
+parameters:
+    paths!:
+        - Modules/TechPlanner/app
+        - Modules/TechPlanner/database
