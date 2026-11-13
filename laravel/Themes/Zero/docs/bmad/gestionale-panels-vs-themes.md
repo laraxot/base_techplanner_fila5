@@ -12,7 +12,7 @@ discussions:
   - "https://github.com/laraxot/<repo progetto>/discussions/8"
   - "https://github.com/laraxot/<repo progetto>/discussions/15"
 related:
-  - "./theme-overview.md"
+  - "./readme.md"
   - "../../docs/gestionale-panels-vs-themes.md"
   - "../../docs/gestionale-docs-index.md"
   - "../../docs/gc-modules-runtime-matrix.md"

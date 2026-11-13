@@ -12,6 +12,12 @@ status: draft
 
 # Chaos Monkey Readiness
 
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
+
 ## Overview
 
 This document provides comprehensive readiness information for handling chaos monkey scenarios in the LaravelPizza project. It covers common failure scenarios, debugging skills, and recovery procedures.
@@ -126,7 +132,7 @@ php artisan tinker
 
 **Emergency Fixes:**
 1. Clear all caches
-2. Rebuild theme assets (`npm run build && npm run copy`)
+2. Rebuild theme assets (`npm run build`)
 3. Restart services
 4. Check database connections
 5. Verify module status

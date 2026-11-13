@@ -2,15 +2,15 @@
 id: zero-docs-bmad-readme
 slug: readme
 title: "Mappa della cartella bmad del tema Zero"
-description: "Raggruppa per tema le guide, i report e la pianificazione in docs/bmad, indica i canonici dei duplicati e la panoramica lunga theme-overview.md (gia' readme.md)."
+description: "Raggruppa per tema le guide, i report e la pianificazione in docs/bmad, indica i canonici dei duplicati e il caso del gemello readme.md."
 document_type: index
 type: index
 category: documentation
 status: active
 tags: [zero, bmad, indice]
 created: "2026-10-06"
-updated: "2026-10-20"
-qmd: "bmad tema zero mappa cartella guide report pianificazione duplicati canonico readme gemello theme-overview rinominato maiuscola"
+updated: "2026-10-08"
+qmd: "bmad tema zero mappa cartella guide report pianificazione duplicati canonico readme gemello"
 issues: []
 discussions: []
 related:
@@ -22,9 +22,9 @@ related:
 
 `docs/bmad/` e' il contenitore storico piu' grande della docs del tema Zero: guide, report, regole e pianificazione, quasi tutti piatti. Il punto di ingresso della docs e' [../README.md](../README.md); l'indice storico di questa cartella e' [00-index.md](./00-index.md).
 
-## Panoramica lunga: theme-overview.md
+## Gemello readme.md
 
-La panoramica lunga del tema (27 KB) si chiamava `readme.md` e differiva da questo `README.md` (mappa) solo per la maiuscola: su filesystem case-insensitive i due file collidono e uno sovrascrive l'altro. Il 2026-10-20 e' stata rinominata [theme-overview.md](./theme-overview.md) (la proposta della story di salute della docs); i 16 riferimenti che risolvevano al vecchio nome sono stati riscritti, nessun file e' stato cancellato. Il nome `bmad/readme.md` non esiste piu': chi lo cerca nelle note storiche legga `theme-overview.md`. La vecchia cartella `outputs/` e' stata archiviata in [`../_archive/bmad-outputs/readme.md`](../_archive/bmad-outputs/readme.md).
+Esistono due file che differiscono solo per la maiuscola: questo `README.md` (mappa) e [readme.md](./readme.md) (panoramica lunga del tema, 27 KB). Su filesystem case-insensitive collidono. Non si rinomina senza una decisione: la proposta e' spostare il contenuto di `readme.md` in `theme-overview.md` e aggiornare i riferimenti.
 
 ## Gruppi
 
@@ -33,7 +33,7 @@ La panoramica lunga del tema (27 KB) si chiamava `readme.md` e differiva da ques
 | Architettura e confini | [architecture](./architecture.md), [modern-theme-architecture](./modern-theme-architecture.md), [theme-architecture-best-practices](./theme-architecture-best-practices.md), [accessor-delegation-pattern](./accessor-delegation-pattern.md), [composer-modules-not-themes](./composer-modules-not-themes.md), [model-usage-in-themes](./model-usage-in-themes.md) |
 | Viste e UI | [layouts](./layouts.md), [components](./components.md), [customization](./customization.md), [mail-layouts](./mail-layouts.md), [authentication](./authentication.md), [navigation-integration](./navigation-integration.md) |
 | Filament e grafici | [filament-chart-integration](./filament-chart-integration.md), [filament-table-architecture](./filament-table-architecture.md), [jpgraph-integration-guide](./jpgraph-integration-guide.md), famiglia `chartjs-datalabels-*` |
-| Qualita' e PHPStan | [phpstan](./phpstan.md), [dry-kiss-best-practices](./dry-kiss-best-practices.md), [php-quality-gates-rule](./php-quality-gates-rule.md), [quality-audit](./quality-audit.md), [no-phpstan-probe-policy](./no-phpstan-probe-policy.md) |
+| Qualita' e PHPStan | [phpstan](./phpstan.md), [phpstan-dry-kiss-theme-guidelines](./phpstan-dry-kiss-theme-guidelines.md), [php-quality-gates-rule](./php-quality-gates-rule.md), [quality-audit](./quality-audit.md), [no-phpstan-probe-policy](./no-phpstan-probe-policy.md) |
 | Git e sync | [conflict-resolution](./conflict-resolution.md), [conflict-resolution-summary](./conflict-resolution-summary.md), [git-collision-audit-bashscripts](./git-collision-audit-bashscripts.md), [multi-org-sync-laraxot-provtv](./multi-org-sync-laraxot-provtv.md), [no-git-lfs](./no-git-lfs.md) |
 | Prodotto e pianificazione | [prd](./prd.md), [product-requirements](./product-requirements.md), [product-roadmap](./product-roadmap.md), [product-strategy](./product-strategy.md), [sprint-planning](./sprint-planning.md), [tech-spec](./tech-spec.md), [epics](./epics/zero-epics-and-stories.md) |
 | Governance della docs | [docs-archive-policy](./docs-archive-policy.md), [docs-deduplication](./docs-deduplication.md), [model-docs-governance](./model-docs-governance.md), [naming-conventions](./naming-conventions.md), [theme-documentation-standard](./theme-documentation-standard.md) |

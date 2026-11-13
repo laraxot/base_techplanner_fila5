@@ -3,13 +3,11 @@ title: "PHPStan — Theme Zero"
 type: guide
 tags: [laravel, phpstan, theme-zero]
 created: 2026-07-14
-updated: 2026-10-20
-qmd: "phpstan theme zero solo laravel/phpstan.neon modules gate no --level phpstan configuration immutabile umano"
+updated: 2026-08-24
+qmd: "phpstan theme zero solo laravel/phpstan.neon modules gate no --level"
 related:
   - "./phpstan-level10-analysis.md"
   - "../../../../Modules/Xot/docs/stories/5.7.phpstan-modules-green.story.md"
-  - "../../../../Modules/Xot/docs/wiki/memories/phpstan-single-neon-config.md"
-  - "../../../../../bashscripts/ai/wiki/rules/phpstan-neon-immutable.md"
 id: zero-docs-bmad-phpstan
 slug: phpstan
 description: "Il tema serve il FO (login, layout). PHPStan non è il Job dell'utente: è il gate degli agenti. laravel/phpstan.neon ha paths: Modules/ - analizzare solo il tema produce ignore..."
@@ -19,8 +17,6 @@ status: active
 issues: []
 discussions: []
 ---
-
-<!-- gateguard: update existing Theme Zero phpstan guide; linked from README/bmad; user: "devi utilizzare laravel/phpstan.neon e solo io posso modificarlo, non puoi creare altri .neon" -->
 
 # PHPStan — Theme Zero
 
@@ -33,16 +29,12 @@ cd laravel
 ./vendor/bin/phpstan analyse Modules --memory-limit=-1 --no-progress
 ```
 
-**Solo** `laravel/phpstan.neon`, con il suo `level: max`. Solo l'**umano** lo
-modifica. Agenti: niente neon temp, niente creazione di altri `.neon`, niente
-`-c`, `--level`, baseline, esclusioni o `@phpstan-ignore`. I test fanno parte
-del gate. Memoria:
-[phpstan-single-neon-config](../../../../Modules/Xot/docs/wiki/memories/phpstan-single-neon-config.md).
+**Solo** `laravel/phpstan.neon`, con il suo `level: max`. Agenti: niente neon temp,
+niente `--level`, baseline, esclusioni o `@phpstan-ignore`. I test fanno parte del gate.
 
 ## Vietato
 
 - `phpstan*.neon` / `phpstan*.json` nel tema (tranne output temporanei gitignored)
-- creare o usare neon di modulo (`Modules/*/phpstan*.neon*`) come gate
 - `analyse Themes` da solo
 
 ## Permesso
@@ -114,4 +106,4 @@ cd ./laravel
 ## Riferimenti
 
 - [PHPStan Level 10 Guidelines](../../../docs/phpstan-level10.md)
-- [Root phpstan.neon](../../../../phpstan.neon)
+- [Root phpstan.neon](../../../laravel/phpstan.neon)

@@ -43,7 +43,7 @@ Core module for the FixCity Platform.
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](../bmad/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](..) |
+| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
 
 ---
 

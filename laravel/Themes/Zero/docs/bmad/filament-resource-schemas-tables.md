@@ -22,8 +22,6 @@ issues: []
 discussions: []
 ---
 
-> Nota di verifica 2026-10-20 (docs-temi): questa pagina cita i moduli `IndennitaResponsabilita`, `Progressioni`, `Ptv`, che non esistono in `laravel/Modules` di questo repository (controllato con `ls`). Il contenuto viene da un altro progetto della famiglia Laraxot e non e' stato riscritto: leggilo come pattern di riferimento, non come descrizione di codice presente. I link verso quei moduli non risolvono.
-
 # Filament Resource: Schemas e Tables (tema Zero)
 
 ## Scopo
@@ -56,27 +54,27 @@ Per il dettaglio infolist vedi anche [filament-infolist-pattern](./filament-info
 
 ### Copia metodi tabella Page → `*Table`
 
-Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](./filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
+Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
 
 ## Riferimenti
 
 - [Xot – Filament v5 hybrid pattern](../../../laravel/Modules/Xot/docs/wiki/concepts/filament-v5-hybrid-pattern.md)
-- [Progressioni – inventario scaffold](./filament-resource-schemas-tables.md)
-Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](./filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
+- [Progressioni – inventario scaffold](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md)
+Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](../../Modules/Progressioni/docs/filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
 
 ## Riferimenti
 
 - [Xot – Filament v5 hybrid pattern](../../Modules/Xot/docs/wiki/concepts/filament-v5-hybrid-pattern.md)
-- [Progressioni – inventario scaffold](./filament-resource-schemas-tables.md)
-Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](./filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
+- [Progressioni – inventario scaffold](../../Modules/Progressioni/docs/filament-resource-schemas-tables.md)
+Spostando la config dalla Page alla `*Table`: `getHeaderActions()` → `getTableHeaderActions()`, `$this->getModel()` → FQCN esplicito, `$this->tableFilters ?? []`, niente `#[Override]`. **NON** creare metodi `return parent::getTableXxx();` (passthrough) o `return [];` (vuoto): equivalgono al default `HasXotTable` (DRY+KISS). Dettaglio: [Progressioni](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md#copia-metodi-tabella-page--classe-table-override-utili-vs-inutili).
 
 ## Riferimenti
 
 - [Xot – Filament v5 hybrid pattern](../../../laravel/Modules/Xot/docs/wiki/concepts/filament-v5-hybrid-pattern.md)
-- [Progressioni – inventario scaffold](./filament-resource-schemas-tables.md)
+- [Progressioni – inventario scaffold](../../../laravel/Modules/Progressioni/docs/filament-resource-schemas-tables.md)
 - [Progressioni – wire pilota Assenze](../../Modules/Progressioni/docs/filament-resource-wire-assenze.md)
-- [One – stesso pattern](./filament-resource-schemas-tables.md)
-- [Three – stesso pattern](./filament-resource-schemas-tables.md)
+- [One – stesso pattern](../../One/docs/filament-resource-schemas-tables.md)
+- [Three – stesso pattern](../../Three/docs/filament-resource-schemas-tables.md)
 - [Cursor rule](../../../.cursor/rules/filament-resource-schemas-tables.mdc)
 
 *Ultimo aggiornamento: 2026-09-01*

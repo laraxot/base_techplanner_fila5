@@ -37,14 +37,14 @@ ha portato in `docs/` un `index.md` diverso: un elenco piatto auto-generato per
 cartella (179 righe), senza la sezione "Storico / da consolidare", e con un link
 morto verso `legacy/duplicates/...` (directory mai esistita in questo repo).
 Lo stesso commit ha introdotto ~18 nuove coppie di file duplicati case/underscore
-in `docs/` root (vedi `stories/docs-theme-zero-audit.story.md` per
+in `docs/` root (vedi `stories/docs-theme-zero-audit-2026-09-11.story.md` per
 l'elenco completo), non presenti al momento di questa story.
 
 Non e' un errore di questa story: e' un artefatto sovrascritto da un evento
 successivo e indipendente. Segnalato qui per lo stesso motivo per cui il second
 brain del monorepo diffida di fidarsi ciecamente della documentazione esistente
 ("Story già 'done' ma falsa" e' un pattern gia' visto altrove nel monorepo).
-`index.md` e' stato rigenerato in `docs-theme-zero-audit.story.md`
+`index.md` e' stato rigenerato in `docs-theme-zero-audit-2026-09-11.story.md`
 come inventario completo verificato (235 file, tutti i link controllati contro
 il filesystem), stavolta con provenienza scriptata (non a mano) cosi' e'
 riproducibile: vedere quella story per il comando esatto.

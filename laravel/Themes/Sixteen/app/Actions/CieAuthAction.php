@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace Themes\Sixteen\Actions;
 
+use Firebase\JWT\JWK;
+use Firebase\JWT\JWT;
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -28,7 +30,11 @@ class CieAuthAction
         $this->baseUrl = config('cie.base_url', 'https://preprod.idserver.servizicie.interno.gov.it/idp');
         $this->clientId = config('cie.client_id');
         $this->clientSecret = config('cie.client_secret');
-        $this->redirectUri = route('cie.callback');
+        // config/cie.php non chiama piu' route() (rompeva il boot): l'URL di callback si risolve qui.
+        $configuredCallback = config('cie.redirect_uris.callback');
+        $this->redirectUri = is_string($configuredCallback) && $configuredCallback !== ''
+            ? $configuredCallback
+            : route('cie.callback');
     }
 
     public function execute(): void {}
@@ -151,8 +157,10 @@ class CieAuthAction
 
     public function getLogoutUrl(?string $returnUrl = null): string
     {
+        $configuredLogout = config('cie.redirect_uris.logout');
+        $defaultLogoutUrl = is_string($configuredLogout) && $configuredLogout !== '' ? $configuredLogout : route('home');
         $params = [
-            'post_logout_redirect_uri' => $returnUrl ? $returnUrl : route('home'),
+            'post_logout_redirect_uri' => $returnUrl ? $returnUrl : $defaultLogoutUrl,
             'client_id' => $this->clientId,
         ];
 
@@ -241,13 +249,29 @@ class CieAuthAction
 
     protected function validateIdToken(string $idToken): array
     {
-        $parts = explode('.', $idToken);
-
-        if (count($parts) !== 3) {
-            throw new Exception('Invalid JWT format');
+        $jwksUri = config('cie.certificates.jwks_uri');
+        if (! is_string($jwksUri) || $jwksUri === '') {
+            throw new Exception('JWT signature verification unavailable');
         }
 
-        $payload = json_decode(base64_decode($parts[1]), true);
+        $headerPart = explode('.', $idToken)[0] ?? '';
+        $headerPart .= str_repeat('=', (4 - strlen($headerPart) % 4) % 4);
+        $header = json_decode(base64_decode(strtr($headerPart, '-_', '+/'), true) ?: '', true);
+        $algorithms = config('cie.token.algorithms', []);
+        if (! is_array($header) || ! is_array($algorithms) || ! in_array($header['alg'] ?? null, $algorithms, true)) {
+            throw new Exception('JWT signature verification failed');
+        }
+
+        $jwks = Http::acceptJson()->get($jwksUri);
+        if (! $jwks->successful() || ! is_array($keySet = $jwks->json())) {
+            throw new Exception('JWT signature verification failed');
+        }
+
+        try {
+            $payload = (array) JWT::decode($idToken, JWK::parseKeySet($keySet));
+        } catch (Exception $exception) {
+            throw new Exception('JWT signature verification failed', previous: $exception);
+        }
 
         if (! isset($payload['nonce']) || $payload['nonce'] !== Session::get('cie.nonce')) {
             throw new Exception('Nonce verification failed');

@@ -20,8 +20,12 @@ class ConsentFactory extends Factory
     protected $model = Consent::class;
 
     /**
+<<<<<<< .merge_file_G0DSG3
+     * @return array<string, string>
+=======
      * Define the model's default state.
      *
+>>>>>>> .merge_file_zn8tMh
      * @return array<string, mixed>
      */
     public function definition(): array

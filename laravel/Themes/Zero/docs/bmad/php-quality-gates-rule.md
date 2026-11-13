@@ -21,7 +21,7 @@ discussions: []
 
 ## Regola tema
 - Ogni `.php` / `.blade.php` apre con `<?php` poi `declare(strict_types=1);` (mai prima del tag). Blade: prepend del blocco, non replace dei primi byte. `mixed` solo JSON/config/firma vendor.
-- Campagna: [strict-types-mixed-campaign](../../../../../docs/chat/strict-types-mixed-campaign.md) · [Xot php-strict-types](../../../../Modules/Xot/docs/php-strict-types.md)
+- Campagna: [strict-types-mixed-campaign](../../../../docs/chat/strict-types-mixed-campaign.md) · [Xot php-strict-types](../../../Modules/Xot/docs/php-strict-types.md)
 - Ogni modifica PHP nel tema deve passare:
   - `phpstan`
   - `phpmd`

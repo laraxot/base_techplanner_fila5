@@ -7,7 +7,7 @@ updated: 2026-09-17
 tags: [auth, ui, ux, accessibilita, motion]
 related:
   - ./navigation-integration.md
-  - ../../../../Modules/User/docs/wiki/concepts/login-page-design-comuni.md
+  - ../../Modules/User/docs/wiki/concepts/login-page-design-comuni.md
 id: zero-docs-bmad-auth-login-ui-ux
 slug: auth-login-ui-ux
 description: "La pagina usa una direzione hospitality premium: fondo caldo, accento"
@@ -41,4 +41,4 @@ mobile scompare per lasciare spazio all'accesso.
 ## Verifica
 
 Verificare desktop e viewport 375px con Playwright, controllare la navigazione
-da tastiera e ricostruire gli asset del tema con `npm run build && npm run copy`.
+da tastiera e ricostruire gli asset del tema con `npm run build`.

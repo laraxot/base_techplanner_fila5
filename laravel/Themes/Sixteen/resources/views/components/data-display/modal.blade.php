@@ -44,7 +44,7 @@
                     type="button" 
                     class="btn-close" 
                     data-bs-dismiss="modal" 
-                    aria-label="{{ __('pub_theme::components_common.actions.close_aria.label') }}"
+                    aria-label="Close"
                 ></button>
             </div>
             <div class="modal-body">

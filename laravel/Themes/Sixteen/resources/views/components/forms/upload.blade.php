@@ -29,14 +29,14 @@
     'label' => '',
     'description' => '',
     'fileInfo' => '',
-    'dragText' => __('pub_theme::components_forms.upload.drag_to_upload.label'),
-    'selectText' => __('pub_theme::components_forms.upload.select_from_device.label'),
+    'dragText' => 'Trascina il file per caricarlo',
+    'selectText' => 'selezionalo dal dispositivo',
     'accept' => '',
     'multiple' => false,
     'required' => false,
     'state' => 'default', // 'default', 'loading', 'success'
-    'loadingText' => __('pub_theme::components_common.states.loading_in_progress.label'),
-    'successText' => __('pub_theme::components_forms.upload.completed.label'),
+    'loadingText' => 'Caricamento in corso...',
+    'successText' => 'Caricamento completato',
     'iconPath' => '/assets/upload-drag-drop-icon.svg',
     'progressValue' => '0'
 ])
@@ -72,7 +72,7 @@
     <div class="upload-dragdrop-image">
         <img 
             src="{{ $iconPath }}" 
-            alt="{{ __('pub_theme::components_forms.upload.icon_alt.label') }}" 
+            alt="Upload icon" 
             aria-hidden="true"
         >
         
@@ -107,9 +107,9 @@
         
         <h5>
             @if($state === 'loading')
-                {{ $label ?: __('pub_theme::components_forms.upload.loading_file_name.label') }}
+                {{ $label ?: 'Nome file in caricamento' }}
             @elseif($state === 'success')
-                {{ $label ?: __('pub_theme::components_forms.upload.loaded_file_name.label') }}
+                {{ $label ?: 'Nome file caricato' }}
             @else
                 {{ $label ?: $dragText }}
             @endif
@@ -121,7 +121,7 @@
             @elseif($state === 'success')
                 {{ $successText }}
             @else
-                {{ __('pub_theme::components_forms.upload.or.label') }} 
+                oppure 
                 <input 
                     type="file" 
                     name="{{ $name }}" 
@@ -139,7 +139,7 @@
         </p>
     </div>
     
-    <input type="submit" value="{{ __('pub_theme::components_forms.upload.submit.label') }}" class="d-none" />
+    <input type="submit" value="Submit" class="d-none" />
 </form>
 
 {{-- Include JavaScript for drag & drop functionality --}}

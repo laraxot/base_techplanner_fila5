@@ -23,7 +23,7 @@ discussions: []
 # Sprint Planning — Theme Zero
 
 > Nota 2026-09-11: questo file era vuoto (bug reale, vedi
-> [stories/docs-theme-zero-audit.story.md](../stories/docs-theme-zero-audit.story.md)).
+> [stories/docs-theme-zero-audit-2026-09-11.story.md](../stories/docs-theme-zero-audit-2026-09-11.story.md)).
 > Il contenuto sotto e' stato recuperato da `sprint_planning.md`, marcato
 > "deprecated/renamed to sprint-planning.md" ma mai effettivamente migrato. Le
 > date/sprint sotto sono materiale storico di pianificazione (Q2 2026), non

@@ -6,9 +6,12 @@ tags: [redundancy, theme, blade, auth]
 created: "2026-05-26"
 updated: "2026-05-26"
 related:
+  - ../../../laravel/Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md
+  - ../../../../Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md
+  - ../../../laravel/Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md
   - ../../../../Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md
   - ../../../One/docs/wiki/concepts/code-redundancy-theme.md
-  - ../../../../../Modules/User/docs/wiki/concepts/code-redundancy-user.md
+  - ../../../../Modules/User/docs/wiki/concepts/code-redundancy-user.md
 id: zero-docs-wiki-concepts-code-redundancy-theme
 slug: code-redundancy-theme
 description: "Due temi non sono «duplicati sbagliati» se servono brand/UX diversi. Diventano debito solo quando il diff è zero e nessuno documenta perché esistono due cartelle."
@@ -41,4 +44,7 @@ Verificare che i commenti Blade non dicano «tema Zero» dentro file One (confus
 ## Collegamenti
 
 - [One](code-redundancy-theme.md)
+- [Filosofia](../../../laravel/Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md)
+- [Filosofia](../../../../Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md)
+- [Filosofia](../../../laravel/Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md)
 - [Filosofia](../../../../Modules/Xot/docs/wiki/concepts/code-redundancy-philosophy.md)

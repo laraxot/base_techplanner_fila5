@@ -605,26 +605,26 @@ When working with data in theme views:
 
 ## Related Documentation
 
-- [Model Inheritance Rules (User Module)](../../../../Modules/User/docs/model-inheritance-rules.md)
+- [Model Inheritance Rules (User Module)](../../../laravel/Modules/User/docs/model-inheritance-rules.md)
 - [DRY/KISS Model Refactoring Analysis](../../../laravel/Modules/Xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
 - [Theme Architecture](./architecture.md)
-- [Widget Structure (User Module)](../../../../Modules/User/docs/widgets_structure.md)
-- [Filament Authentication Best Practices](../../../../Modules/Cms/docs/frontoffice/filament-auth.md)
-- [Model Inheritance Rules (User Module)](../../../../Modules/User/docs/model-inheritance-rules.md)
+- [Widget Structure (User Module)](../../../Modules/User/docs/widgets_structure.md)
+- [Filament Authentication Best Practices](../../../laravel/Modules/Cms/docs/frontoffice/filament-auth.md)
+- [Model Inheritance Rules (User Module)](../../../Modules/User/docs/model-inheritance-rules.md)
 - [DRY/KISS Model Refactoring Analysis](../../../Modules/Xot/docs/dry-kiss-model-refactoring.md)
 - [Theme Architecture](./architecture.md)
-- [Widget Structure (User Module)](../../../../Modules/User/docs/widgets_structure.md)
-- [Filament Authentication Best Practices](../../../../Modules/Cms/docs/frontoffice/filament-auth.md)
-- [Model Inheritance Rules (User Module)](../../../../Modules/User/docs/model-inheritance-rules.md)
+- [Widget Structure (User Module)](../../../Modules/User/docs/widgets_structure.md)
+- [Filament Authentication Best Practices](../../Modules/Cms/docs/frontoffice/filament-auth.md)
+- [Model Inheritance Rules (User Module)](../../../Modules/User/docs/model-inheritance-rules.md)
 - [DRY/KISS Model Refactoring Analysis](../../../laravel/Modules/Xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
 - [Theme Architecture](./architecture.md)
-- [Widget Structure (User Module)](../../../../Modules/User/docs/widgets_structure.md)
-- [Filament Authentication Best Practices](../../../../Modules/Cms/docs/frontoffice/filament-auth.md)
-- [Model Inheritance Rules (User Module)](../../../../Modules/User/docs/model-inheritance-rules.md)
+- [Widget Structure (User Module)](../../../Modules/User/docs/widgets_structure.md)
+- [Filament Authentication Best Practices](../../../laravel/Modules/Cms/docs/frontoffice/filament-auth.md)
+- [Model Inheritance Rules (User Module)](../../Modules/User/docs/model-inheritance-rules.md)
 - [DRY/KISS Model Refactoring Analysis](../../Modules/Xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
 - [Theme Architecture](./architecture.md)
-- [Widget Structure (User Module)](../../../../Modules/User/docs/widgets_structure.md)
-- [Filament Authentication Best Practices](../../../../Modules/Cms/docs/frontoffice/filament-auth.md)
+- [Widget Structure (User Module)](../../../Modules/User/docs/widgets_structure.md)
+- [Filament Authentication Best Practices](../../Modules/Cms/docs/frontoffice/filament-auth.md)
 
 ---
 

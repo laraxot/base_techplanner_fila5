@@ -56,12 +56,14 @@ return [
     | Redirect URIs
     |--------------------------------------------------------------------------
     |
-    | URL di callback per l'autenticazione CIE
+    | URL di callback per l'autenticazione CIE. Null = risolto a runtime da
+    | CieAuthAction con route('cie.callback') / route('home'): i file di config si
+    | leggono prima che le rotte esistano, quindi qui route() farebbe fallire il boot.
     |
     */
     'redirect_uris' => [
-        'callback' => env('CIE_REDIRECT_URI', route('cie.callback')),
-        'logout' => env('CIE_LOGOUT_REDIRECT_URI', route('home')),
+        'callback' => env('CIE_REDIRECT_URI'),
+        'logout' => env('CIE_LOGOUT_REDIRECT_URI'),
     ],
 
     /*

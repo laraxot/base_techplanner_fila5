@@ -18,8 +18,22 @@
     .auth-login-card .auth-login-links a,
     .auth-login-card form a { color: #007a52; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
     .auth-login-shell__crumb a:focus-visible,
-    .auth-login-card a:focus-visible { outline: 2px solid #007a52; outline-offset: 2px; }
-    .auth-login-card { background: #fff; border: 1px solid #d9e1e8; border-radius: 0.25rem; padding: 1.5rem 1.25rem 2rem; }
+    .auth-login-card a:focus-visible,
+    .auth-login-card .auth-login-links button.auth-link-button:focus-visible { outline: 2px solid #007a52; outline-offset: 2px; }
+    /* Azioni secondarie che non sono link (resend verifica email, logout da verify): stesso aspetto dei link. */
+    .auth-login-card .auth-login-links button.auth-link-button { padding: 0; border: 0; background: none; font: inherit; color: #007a52; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+    .auth-link-button__loading { display: none; align-items: center; gap: 0.375rem; }
+    .auth-link-button--loading .auth-link-button__label { display: none; }
+    .auth-link-button--loading .auth-link-button__loading { display: inline-flex; }
+    .auth-link-button:disabled { cursor: wait; opacity: 0.7; }
+    /* Il CSS di Filament non e' caricato nel front office: l'SVG dell'indicatore non ha ne' misura ne' animazione (misurato 59x59 e fermo). */
+    .auth-link-button__spinner { flex: none; width: 0.875rem; height: 0.875rem; transform-origin: center; animation: auth-link-spin 0.8s linear infinite; }
+    @keyframes auth-link-spin { to { transform: rotate(360deg); } }
+    /* Con "riduci animazioni" il movimento resta, piu' lento: e' l'unico segnale che l'invio e' in corso. */
+    @media (prefers-reduced-motion: reduce) { .auth-link-button__spinner { animation-duration: 2.4s; } }
+    /* Niente pannello con bordo: le pagine di accesso, registrazione e nuova password hanno la stessa resa delle altre pagine
+       (titolo allineato al breadcrumb, contenuto sullo sfondo della pagina). Il riquadro c'era solo qui: incoerente. */
+    .auth-login-card { background: transparent; border: 0; border-radius: 0; padding: 1rem 0 2.5rem; }
     .auth-login-card h1 { margin: 0; font-size: clamp(1.75rem, 4vw, 2.25rem); line-height: 1.15; font-weight: 700; color: #1a1a1a; }
     .auth-login-card .auth-login-lede { margin: 0.5rem 0 0; color: #5c6f82; font-size: 1.0625rem; line-height: 1.55; }
     .auth-login-card .auth-login-account,
@@ -114,7 +128,7 @@
     .auth-login-card [wire\:loading] { display: none; }
     @media (min-width: 640px) {
         .auth-login-shell { padding-left: 1.5rem; padding-right: 1.5rem; }
-        .auth-login-card { padding: 2rem 2rem 2.25rem; }
+        .auth-login-card { padding: 1.5rem 0 3rem; }
     }
 </style>
 {{-- Dopo un invio non riuscito il focus va al primo campo non valido (WCAG 3.3.1, 2.4.3): il riepilogo role="alert" annuncia

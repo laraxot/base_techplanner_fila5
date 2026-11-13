@@ -258,13 +258,7 @@ class ThemeServiceProvider extends XotBaseThemeServiceProvider
     }
 
     /**
-     * Registra le rotte SPID/CIE solo se l'identità digitale è abilitata.
-     *
-     * Il callback SPID non verifica firma, Issuer, Audience e scadenza della
-     * SAMLResponse (SpidAuthAction::validateSamlResponse): con le rotte attive
-     * chiunque può costruire una risposta e autenticarsi con un codice fiscale
-     * arbitrario. Le rotte restano spente finché la validazione non è completa
-     * e `SIXTEEN_SPID_ENABLED=true` non viene impostato di proposito.
+     * Register authentication routes
      */
     protected function registerAuthRoutes(): void
     {

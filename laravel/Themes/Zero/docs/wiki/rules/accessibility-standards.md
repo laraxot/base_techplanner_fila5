@@ -7,8 +7,8 @@ updated: 2026-07-14
 qmd: "accessibilita e standard cross-browser"
 related:
   - "./accessibility-standards.md"
-  - "../overviews/advanced-features.md"
-  - "../concepts/component-library.md"
+  - "./advanced-features.md"
+  - "./component-library.md"
 id: zero-docs-wiki-rules-accessibility-standards
 slug: accessibility-standards
 description: "Rendere il tema conforme agli standard di accessibilita e compatibile con i principali browser."

@@ -23,8 +23,6 @@ issues: []
 discussions: []
 ---
 
-> Nota di verifica 2026-10-20 (docs-temi): questa pagina cita il modulo `Sigma`, che non esiste in `laravel/Modules` di questo repository (controllato con `ls`). Il contenuto viene da un altro progetto della famiglia Laraxot e non e' stato riscritto: leggilo come pattern di riferimento, non come descrizione di codice presente. I link verso quei moduli non risolvono.
-
 # Censimento omonimi metodi — Theme Zero
 
 ## Esito scan PHP
@@ -63,7 +61,7 @@ La ridondanza di business logic da monitorare sta nei **moduli** Laravel (`Sigma
 - [Sigma — omonimi relazioni](../../../../../Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
 - [Indice censimento progetto](../../../../../../docs/wiki/method-name-homonym-census.md)
 - [Ridondanza tema](./code-redundancy-theme.md)
-- [Sigma — omonimi relazioni](./method-name-homonyms.md)
+- [Sigma — omonimi relazioni](../../../../laravel/Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)
 - [Indice censimento progetto](../../../../docs/wiki/method-name-homonym-census.md)
 - [Ridondanza tema](./code-redundancy-theme.md)
 - [Sigma — omonimi relazioni](../../../../../Modules/Sigma/docs/wiki/concepts/method-name-homonyms.md)

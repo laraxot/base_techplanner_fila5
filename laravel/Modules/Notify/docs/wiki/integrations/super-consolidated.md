@@ -13,6 +13,12 @@ status: draft
 
 # super: Consolidated Documentation
 
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
+
 Consolidated from **9** individual files.
 
 ## Table of Contents
@@ -2061,15 +2067,20 @@ supermemory add --tag <nome progetto> --content "<nome progetto> module: Ticket 
 ### 3. Theme Conventions
 Store theme development patterns:
 ```bash
-supermemory add --tag laraxot --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', then npm run copy to public_html/themes/Sixteen/."
-supermemory add --tag <nome progetto> --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', then npm run copy to public_html/themes/Sixteen/."
+<<<<<<< .merge_file_1cUPlx
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+=======
+supermemory add --tag laraxot --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', served via symlink public_html/themes/Sixteen (no copy)."
+supermemory add --tag <nome progetto> --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', served via symlink public_html/themes/Sixteen (no copy)."
+>>>>>>> .merge_file_evqk44
 ```
 
 ### 4. Development Workflows
 Store build processes:
 ```bash
-supermemory remember "After ANY CSS/JS change in theme: cd Themes/Sixteen && npm run build && npm run copy" --tag laraxot
-supermemory remember "After ANY CSS/JS change in theme: cd Themes/Sixteen && npm run build && npm run copy" --tag <nome progetto>
+supermemory remember "After ANY CSS/JS change in theme: cd Themes/Sixteen && npm run build" --tag laraxot
+supermemory remember "After ANY CSS/JS change in theme: cd Themes/Sixteen && npm run build" --tag <nome progetto>
 ```
 
 ### 5. Architectural Decisions

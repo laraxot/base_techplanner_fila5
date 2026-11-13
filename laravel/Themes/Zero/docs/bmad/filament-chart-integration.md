@@ -195,7 +195,6 @@ After building, copy theme assets to the public directory:
 
 ```bash
 npm run build
-npm run copy
 ```
 
 ## Integration with Filament Components

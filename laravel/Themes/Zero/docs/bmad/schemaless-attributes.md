@@ -17,8 +17,6 @@ issues: []
 discussions: []
 ---
 
-> Nota di verifica 2026-10-20 (docs-temi): questa pagina cita il modulo `Rating`, che non esiste in `laravel/Modules` di questo repository (controllato con `ls`). Il contenuto viene da un altro progetto della famiglia Laraxot e non e' stato riscritto: leggilo come pattern di riferimento, non come descrizione di codice presente. I link verso quei moduli non risolvono.
-
 # 🧬 Schemaless Attributes in Themes
 
 **Status:** ✅ STANDARD
@@ -94,19 +92,19 @@ $record->save();
 
 - [Xot Schemaless Guide](../../../laravel/Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../../laravel/Modules/UI/docs/themes/schemaless-attributes-guide.md)
-- [Rating Schemaless Docs](./schemaless-attributes.md)
+- [Rating Schemaless Docs](../../../laravel/Modules/Rating/docs/schemaless-attributes.md)
 - [Xot Schemaless Guide](../../../laravel/Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../../laravel/Modules/UI/docs/themes/schemaless-attributes-guide.md)
-- [Rating Schemaless Docs](./schemaless-attributes.md)
+- [Rating Schemaless Docs](../../../laravel/Modules/Rating/docs/schemaless-attributes.md)
 - [Xot Schemaless Guide](../../Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../Modules/UI/docs/themes/schemaless-attributes-guide.md)
-- [Rating Schemaless Docs](./schemaless-attributes.md)
+- [Rating Schemaless Docs](../../Modules/Rating/docs/schemaless-attributes.md)
 - [Xot Schemaless Guide](../../../laravel/Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../../laravel/Modules/UI/docs/themes/schemaless-attributes-guide.md)
-- [Rating Schemaless Docs](./schemaless-attributes.md)
+- [Rating Schemaless Docs](../../../laravel/Modules/Rating/docs/schemaless-attributes.md)
 - [Xot Schemaless Guide](../../../laravel/Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../../laravel/Modules/UI/docs/themes/schemaless-attributes-guide.md)
-- [Rating Schemaless Docs](./schemaless-attributes.md)
+- [Rating Schemaless Docs](../../../laravel/Modules/Rating/docs/schemaless-attributes.md)
 - [Xot Schemaless Guide](../../Modules/Xot/docs/spatie-schemaless-attributes.md)
 - [UI Themes Detailed Guide](../../Modules/UI/docs/themes/schemaless-attributes-guide.md)
-- [Rating Schemaless Docs](./schemaless-attributes.md)
+- [Rating Schemaless Docs](../../Modules/Rating/docs/schemaless-attributes.md)

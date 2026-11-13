@@ -7,8 +7,8 @@ updated: 2026-07-14
 qmd: "performance e ottimizzazione asset"
 related:
   - "./accessibility-standards.md"
-  - "../overviews/advanced-features.md"
-  - "../concepts/component-library.md"
+  - "./advanced-features.md"
+  - "./component-library.md"
 id: zero-docs-wiki-rules-performance-optimization
 slug: performance-optimization
 description: "Ridurre i tempi di caricamento e standardizzare la pipeline di asset del tema."
@@ -77,8 +77,8 @@ Ridurre i tempi di caricamento e standardizzare la pipeline di asset del tema.
 
 ## Collegamenti correlati
 
-- [`Roadmap tema Zero`](../../bmad/roadmap.md)
+- [`Roadmap tema Zero`](../roadmap.md)
 - [`responsive-system.md`](../concepts/responsive-system.md)
 - [`theme-customization.md`](../how-to/theme-customization.md)
-- [`code-quality-improvements.md`](../../bmad/code-quality-improvements.md)
-- [`theme-architecture-best-practices.md`](../../bmad/theme-architecture-best-practices.md)
+- [`code-quality-improvements.md`](../code-quality-improvements.md)
+- [`theme-architecture-best-practices.md`](../theme-architecture-best-practices.md)

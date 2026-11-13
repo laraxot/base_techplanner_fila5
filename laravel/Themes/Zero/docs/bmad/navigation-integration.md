@@ -6,7 +6,7 @@ created: 2026-09-17
 updated: 2026-09-17
 tags: [navigazione, traduzioni, filament]
 related:
-  - ./architecture.md
+  - ./ARCHITECTURE.md
 id: zero-docs-bmad-navigation-integration
 slug: navigation-integration
 description: "Zero è un tema infrastrutturale: non contiene traduzioni dominio e non"

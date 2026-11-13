@@ -23,10 +23,10 @@ discussions: []
 
 # Disciplina agenti per massimizzare la confidenza
 
-Regola canonica: [../../../laravel/Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](./agent-confidence-discipline.md).
-Regola canonica: [../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](./agent-confidence-discipline.md).
-Regola canonica: [../../../laravel/Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](./agent-confidence-discipline.md).
-Regola canonica: [../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](./agent-confidence-discipline.md).
+Regola canonica: [../../../laravel/Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](../../../laravel/Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md).
+Regola canonica: [../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md).
+Regola canonica: [../../../laravel/Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](../../../laravel/Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md).
+Regola canonica: [../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md](../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md).
 
 Sintesi: verificare prima di affermare; riprodurre prima di correggere; **business logic prima del tipo** su bugfix; documentare prove, dubbi e rischio residuo; rispondere in italiano sintetico.
 

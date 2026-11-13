@@ -61,4 +61,4 @@ Git: `git show` / basi sibling — **mai** restore ([git-forward-only](../../../
 
 [`verify-no-semantic-folio-pages.sh`](../../../../bashscripts/tools/verify-no-semantic-folio-pages.sh) — greppa **tutti** i temi con `pages/`, fallisce solo su cartelle semantiche vietate; richiede `[container0]` solo se tema = Sixteen o pattern già adottato.
 
-Dettaglio parallelo: [One folio-pages-structure](./folio-pages-structure.md).
+Dettaglio parallelo: [One folio-pages-structure](../../One/docs/folio-pages-structure.md).

@@ -16,6 +16,12 @@ related:
 
 # Media: foto da fotocamera mobile, scelta galleria e riduzione nel browser
 
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
+
 Fase BMAD: Analisi, Solutioning, Dev, Verifica.
 
 ## Richiesta
@@ -123,7 +129,7 @@ PDF inviato intatto; GIF rifiutato con «Formato non consentito». Build ricompi
 - Campo admin: `contain`, `2048`, `2048`, upscale `false` (getter Filament).
 - `camera-image.js` in Chrome headless 155, profilo iPhone 13: JPEG 4000x3000 rumore da 11,28 MB con EXIF Orientation=6 diventa
   1,61 MB, 1536x2048, `image/jpeg`, riquadro rosso in alto a destra (rotazione corretta), 2,9 s. PDF restituito intatto. `a.HEIC` riconosciuto.
-- Build del tema (`npm run build && npm run copy`): `window.MediaCameraImage` in `app-*.js`; `heic2any` solo in `vendor-image-conversion-*.js`,
+- Build del tema (`npm run build`): `window.MediaCameraImage` in `app-*.js`; `heic2any` solo in `vendor-image-conversion-*.js`,
   import dinamico (manifest: `dynamicImports`).
 - PHPStan sui 4 file PHP toccati: 0 errori. Pint: passed. `php -l` sulle 4 traduzioni: ok.
 - Pest **non eseguibile** su questo server (`.env.testing` usa l'utente DB `marco` della macchina dev, `SQLSTATE[HY000] [1045]`): 14 test falliscono

@@ -87,6 +87,15 @@ class Consent extends BaseModel
         'updated_by',
         'ip_address',
         'user_agent',
+<<<<<<< .merge_file_g81dI9
+        // Revoca e richiesta di cancellazione (migrazione 2026_11_12_000002): senza, updateOrCreate le scartava in silenzio.
+        'revoked_at',
+        'revoked_ip_address',
+        'metadata',
+    ];
+
+    /**
+=======
         'metadata',
         'revoked_at',
         'revoked_ip_address',
@@ -96,14 +105,21 @@ class Consent extends BaseModel
      * `metadata` conserva la prova di cosa e' stato accettato (versione e URL del documento, lingua): senza cast ad array
      * e senza fillable veniva scartato in silenzio (regressione del mirror becb0d58bd, ripristinata il 2026-11-11).
      *
+>>>>>>> .merge_file_147EoW
      * @return array<string, string>
      */
     protected function casts(): array
     {
         return array_merge(parent::casts(), [
+<<<<<<< .merge_file_g81dI9
+            'accepted_at' => 'datetime',
+            'revoked_at' => 'datetime',
+            'metadata' => 'array',
+=======
             'metadata' => 'array',
             'accepted_at' => 'datetime',
             'revoked_at' => 'datetime',
+>>>>>>> .merge_file_147EoW
         ]);
     }
 

@@ -105,7 +105,7 @@ Maps all Bootstrap Italia classes to Tailwind CSS using `@layer components`:
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # Compile CSS + JS with Vite
-npm run copy     # Deploy to public_html
+# niente copia: public_html/themes/Sixteen e' un symlink a ./public (Modules/Xot/docs/theme-assets-workflow.md)
 ```
 
 **Output**:
@@ -123,7 +123,7 @@ vim resources/css/tailwind-bootstrap-mapping.css
 vim resources/js/components/[name].js
 
 # Rebuild
-npm run build && npm run copy
+npm run build
 ```
 
 ## Features
@@ -294,14 +294,14 @@ laravel/Themes/Sixteen/
 
 1. Edit: `resources/css/tailwind-bootstrap-mapping.css`
 2. Add mapping for new Bootstrap class
-3. Run: `npm run build && npm run copy`
+3. Run: `npm run build`
 4. Test in browser
 
 ### Modifying Components
 
 1. Edit: `resources/js/components/[name].js`
 2. Update as needed
-3. Run: `npm run build && npm run copy`
+3. Run: `npm run build`
 4. Test functionality
 
 ### Updating Documentation
@@ -354,7 +354,7 @@ Current metrics:
 1. Read: `docs/00-implementation-status.md`
 2. Check: Relevant documentation
 3. Run: `./bashscripts/accessibility-audit.sh`
-4. Rebuild: `npm run build && npm run copy`
+4. Rebuild: `npm run build`
 
 ## Status
 

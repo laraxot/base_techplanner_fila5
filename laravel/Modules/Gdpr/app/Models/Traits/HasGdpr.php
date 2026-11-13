@@ -11,6 +11,7 @@ use Illuminate\Support\Facades\Cache;
 use Modules\Gdpr\Enums\ConsentType;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
+use Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest;
 use Stringable;
 
 /**
@@ -21,7 +22,13 @@ use Stringable;
  * @property Collection<int, Consent> $consents
  * @property Collection<int, Consent> $activeConsents
  *
+<<<<<<< .merge_file_F1ZziF
+ * @see HasGdprTraitTest
+ *
+ * @phpstan-ignore trait.unused
+=======
  * @see \Modules\Gdpr\Tests\Unit\Traits\HasGdprTraitTest
+>>>>>>> .merge_file_Zo0Ch6
  */
 trait HasGdpr
 {

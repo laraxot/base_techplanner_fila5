@@ -4,6 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Providers;
 
+<<<<<<< .merge_file_b6m4wY
+use Illuminate\Database\Connection;
+=======
+<<<<<<< .merge_file_R09Zio
+=======
+use Illuminate\Database\Connection;
+>>>>>>> .merge_file_ENee1N
+>>>>>>> .merge_file_m0F4O4
+use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Arr;
@@ -101,8 +110,55 @@ class TenantServiceProvider extends XotBaseServiceProvider
             }
 
             DB::purge($name);
-            DB::extend($name, static fn (): \Illuminate\Database\ConnectionInterface => DB::connection($defaultConnection));
+<<<<<<< .merge_file_b6m4wY
+=======
+<<<<<<< .merge_file_R09Zio
+            DB::extend($name, static fn (): ConnectionInterface => DB::connection($defaultConnection));
+=======
+>>>>>>> .merge_file_m0F4O4
+            DB::extend(
+                $name,
+                static fn (array $config, string $connectionName): ConnectionInterface => self::resolveModuleConnection($config, $connectionName, $defaultConnection),
+            );
+<<<<<<< .merge_file_b6m4wY
+=======
+>>>>>>> .merge_file_ENee1N
+>>>>>>> .merge_file_m0F4O4
         }
+    }
+
+    /**
+     * Alias della default solo finche' la config del modulo e' quella della default: una config
+     * ridefinita a runtime (es. un test su un file sqlite proprio) apre la sua connessione.
+     *
+     * @param  array<mixed>  $config  config che Laravel passa al resolver di `DB::extend()` (callable non tipizzato)
+     */
+    private static function resolveModuleConnection(array $config, string $connectionName, string $defaultConnection): ConnectionInterface
+    {
+        $default = DB::connection($defaultConnection);
+
+        if (self::hasSameDatabaseConfig($config, $default)) {
+            return $default;
+        }
+
+        return app('db.factory')->make($config, $connectionName);
+    }
+
+    /**
+     * `name` e' escluso perche' differisce per costruzione (e' il nome della connessione);
+     * `==` confronta le chiavi senza badare all'ordine.
+     *
+     * @param  array<mixed>  $moduleConfig
+     */
+    private static function hasSameDatabaseConfig(array $moduleConfig, ConnectionInterface $default): bool
+    {
+        if (! $default instanceof Connection) {
+            return false;
+        }
+
+        $defaultConfig = $default->getConfig();
+
+        return \is_array($defaultConfig) && Arr::except($moduleConfig, ['name']) == Arr::except($defaultConfig, ['name']);
     }
 
     #[Override]

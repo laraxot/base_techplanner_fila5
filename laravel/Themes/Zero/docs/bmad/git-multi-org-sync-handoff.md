@@ -4,6 +4,8 @@ type: handoff
 tags: [git, multi-org, bmad, story-003]
 created: 2026-07-21
 updated: 2026-07-29
+
+updated: 2026-07-23
 module: "Zero"
 issues:
   - "https://github.com/provtv/theme_zero_fila5/issues/12"
@@ -58,7 +60,7 @@ Forward-only: niente reset/squash/force per aggirare LFS.
 ### Caso User 2026-07-23 (unrelated)
 
 `merge-base` vuoto vs un org → STOP. User: laraxot `3ea7273a` OK; provtv unrelated.
-[../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
+[../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../../Modules/User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
 
 ### Sync 2026-07-23 (batch 5-item)
 

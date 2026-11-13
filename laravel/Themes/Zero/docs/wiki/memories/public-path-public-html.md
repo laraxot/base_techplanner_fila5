@@ -7,7 +7,7 @@ updated: 2026-09-01
 qmd: "public_path public_html themes vite copy"
 related:
   - ../../../../docs/wiki/memories/public-path-is-public-html.md
-  - ../rules/binary-assets.md
+  - ./binary-assets.md
 id: zero-docs-wiki-memories-public-path-public-html
 slug: public-path-public-html
 description: "Gli asset del tema dopo build/copy vanno in publichtml/themes/{Theme}/. publicpath() = publichtml/, mai laravel/public/."
