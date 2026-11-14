@@ -118,7 +118,6 @@ coverage.xml/ruvector.db.vscode/
 .vscode.backup-20260120_154353
 reports
 laravel/Modules/Lang/packages/lara-zeus/
-public_html/assets/geo
 bashscripts/ai/.agents/skills/ui-ux-pro-max/scripts/__pycache__/core.cpython-312.pyc
 ${HOME}/.cache/qmd-cache/qmd/index.sqlite-wal
 ${HOME}/.cache/qmd-cache/qmd/index.sqlite-shm
@@ -142,6 +141,10 @@ ___FILE___tests/
 ${HOME}
 artifacts
 public/
+# Gli asset compilati di moduli e temi sono versionati: public_html li vede con i symlink
+# (public_html/assets/<modulo> e public_html/themes/<Tema>).
+!laravel/Modules/*/public/
+!laravel/Themes/*/public/
 .pi
 .omp
 .kilocode

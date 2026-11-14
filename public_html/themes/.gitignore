@@ -1,4 +1,8 @@
+# public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public (versionato).
+# Il pattern con la barra finale vale solo per le cartelle: il symlink resta tracciato, mentre una
+# cartella vera (vecchia copia, npm run copy, AssetAction) viene ignorata e non finisce nel repo.
+Meetup/
 Sixteen/
+TwentyOne/
 Two/
 Zero/
-Two/

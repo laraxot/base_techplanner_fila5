@@ -25,10 +25,12 @@ Stato al 2026-11-10: il codice del modulo TechPlanner è pronto; **tre azioni re
 | 3 | Impostare `webhook_secret` in `public_html/deploy/config.php` e lo stesso «Secret» nel webhook GitHub/Bitbucket | `deploy.php` ora rifiuta le richieste non firmate | Un push di prova arriva con `200`, una richiesta senza firma riceve `403` |
 | 4 | Assegnare i ruoli: segreteria e tecnici `techplanner::operator`, chi può cancellare `techplanner::admin` | Prima chiunque entrasse nel pannello poteva cancellare tutto | Un operatore non vede il cestino rosso nelle tabelle |
 
-Asset dei temi: arrivano in `public_html` con symlink (`public_html/themes/<Tema>` creato con `ln -s ../../laravel/Themes/<Tema>/public`),
-niente `npm run copy`. Se sul server `public_html/themes/Two` è ancora una **cartella** (vecchia copia), toglierla una
-volta prima del `git pull`: `rm -rf public_html/themes/Two`. La cartella `public_html` è la document root: non va
-cancellata né sostituita.
+Asset di temi e moduli: arrivano in `public_html` con symlink relativi — `themes/<Tema>` → `../../laravel/Themes/<Tema>/public`
+e `assets/<modulo>` → `../../laravel/Modules/<Modulo>/public` — niente `npm run copy` né `vendor:publish`. Se sul server
+al posto di un link c'è una **cartella** (vecchia copia), `git pull` non può creare il link: spostarla prima del pull
+(`mv public_html/themes/Two ~/themes-Two-vecchia`); `deploy.sh` comunque la sposta in `storage/backups` e crea il link.
+Perché e dettagli: `laravel/Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md`. La cartella `public_html` è
+la document root: non va cancellata né sostituita.
 
 Requisiti del server: **PHP ≥ 8.4.1** (lo richiede il `composer.lock`; `deploy.sh` si ferma se manca), MySQL/MariaDB,
 `mysqldump` e `gzip` per la copia del database.

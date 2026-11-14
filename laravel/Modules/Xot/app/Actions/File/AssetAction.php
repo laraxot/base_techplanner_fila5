@@ -117,9 +117,25 @@ class AssetAction
         $assetPath = 'assets/'.$ns.'/'.$ns_after;
         $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
 
+        // public_html/assets/<modulo> è un symlink a Modules/<Modulo>/public: la destinazione è il file versionato
+        // del modulo e fa fede. Copiarci sopra da resources/ modificherebbe la repo a ogni richiesta (in locale la
+        // copia è forzata). public_path() restituisce il percorso già risolto, per questo si confronta la
+        // destinazione con la cartella public del modulo invece di usare is_link().
+        if (Str::startsWith($filename_to, $module_path.'/public/') && File::exists($filename_to)) {
+            return $this->publicAssetUrl($assetPath);
+        }
+
         $forceCopy = app()->environment() !== 'production';
         $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
 
+        return $this->publicAssetUrl($assetPath);
+    }
+
+    /**
+     * Percorso pubblico relativo (senza dominio) di un asset.
+     */
+    private function publicAssetUrl(string $assetPath): string
+    {
         $asset = Str::replace(url(''), '', asset($assetPath));
         Assert::string($asset, '['.__LINE__.']['.class_basename(static::class).']');
 

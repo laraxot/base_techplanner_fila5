@@ -19,6 +19,7 @@ use function Safe\fileinode;
 use function Safe\filemtime;
 use function Safe\glob;
 use function Safe\mkdir;
+use function Safe\symlink;
 use function Safe\touch;
 use function Safe\unlink;
 
@@ -83,6 +84,50 @@ it('publishes module asset to public assets path', function (): void {
     }
 });
 
+/*
+ * public_html/assets/<modulo> è un symlink a Modules/<Modulo>/public: il file che c'è è quello versionato.
+ * AssetAction non deve copiarci sopra la versione di resources/, altrimenti ogni richiesta in locale
+ * modifica la repo (successo con assets/xot/img/logo.png).
+ */
+it('never overwrites a versioned file reached through the module symlink', function (): void {
+    $moduleRoot = sys_get_temp_dir().'/xot_link_mod_'.uniqid('', true);
+    mkdir($moduleRoot.'/resources/img', 0o755, true);
+    mkdir($moduleRoot.'/public/img', 0o755, true);
+    file_put_contents($moduleRoot.'/resources/img/logo.png', 'resources-version');
+    file_put_contents($moduleRoot.'/public/img/logo.png', 'versioned-public');
+    $link = public_path('assets/XotAssetLinkTest');
+    symlink($moduleRoot.'/public', $link);
+
+    app()->instance(GetModulePathAction::class, new class($moduleRoot) extends GetModulePathAction
+    {
+        public function __construct(private string $modulePath) {}
+
+        public function execute(string $module): string
+        {
+            return $this->modulePath;
+        }
+    });
+
+    try {
+        $result = app(AssetAction::class)->execute('XotAssetLinkTest::img/logo.png');
+
+        Assert::assertStringContainsString('assets/XotAssetLinkTest/img/logo.png', $result);
+        Assert::assertSame('versioned-public', file_get_contents($moduleRoot.'/public/img/logo.png'));
+
+        // Un file che nella cartella public non c'è viene invece copiato, così l'asset resta raggiungibile.
+        file_put_contents($moduleRoot.'/resources/img/new.png', 'only-in-resources');
+        app(AssetAction::class)->execute('XotAssetLinkTest::img/new.png');
+        Assert::assertSame('only-in-resources', file_get_contents($moduleRoot.'/public/img/new.png'));
+    } finally {
+        unlink($link);
+        foreach (['resources/img/logo.png', 'resources/img/new.png', 'public/img/logo.png', 'public/img/new.png'] as $file) {
+            if (is_file($moduleRoot.'/'.$file)) {
+                unlink($moduleRoot.'/'.$file);
+            }
+        }
+    }
+});
+
 it('keeps published dest when force-copy fails (best-effort via copyAsset)', function (): void {
     $from = sys_get_temp_dir().'/xot_asset_from_'.uniqid('', true).'.bin';
     $to = sys_get_temp_dir().'/xot_asset_to_'.uniqid('', true).'.bin';
@@ -106,7 +151,7 @@ it('keeps published dest when force-copy fails (best-effort via copyAsset)', fun
             unlink($to);
         }
     }
-});
+})->skip(fn (): bool => \function_exists('posix_geteuid') && posix_geteuid() === 0, 'da root chmod 0444 non impedisce la scrittura');
 
 it('skips force-copy when destination exists but is not writable', function (): void {
     $from = sys_get_temp_dir().'/xot_asset_from_'.uniqid('', true).'.bin';
@@ -130,7 +175,7 @@ it('skips force-copy when destination exists but is not writable', function (): 
             unlink($to);
         }
     }
-});
+})->skip(fn (): bool => \function_exists('posix_geteuid') && posix_geteuid() === 0, 'da root chmod 0444 non impedisce la scrittura');
 
 /*
  * Outside production every request force-copies the asset (story 5.180). A plain copy()

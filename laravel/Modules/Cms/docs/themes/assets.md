@@ -38,12 +38,12 @@ status: draft
 ## Best Practices
 
 1. **Sviluppo**
-   - Utilizzare `npm run dev` seguito da `npm run copy`
+   - Utilizzare `npm run dev` (il symlink `public_html/themes/<Tema>` rende visibile la build, niente copia)
    - Verificare il corretto caricamento degli assets
    - Mantenere la documentazione aggiornata
 
 2. **Produzione**
-   - Eseguire `npm run build` seguito da `npm run copy`
+   - Eseguire `npm run build` (niente `npm run copy`: `public_html/themes/<Tema>` è un symlink)
    - Verificare la presenza e l'accessibilità degli assets
    - Testare il funzionamento completo del tema
 

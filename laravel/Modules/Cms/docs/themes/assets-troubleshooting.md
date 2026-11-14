@@ -63,6 +63,6 @@ Per maggiori dettagli sul funzionamento interno, consultare:
 
 3. **Ambiente di Sviluppo**
    - In sviluppo: utilizzare `npm run dev`
-   - In produzione: utilizzare `npm run copy`
+   - In produzione: `npm run build`; `public_html/themes/<Tema>` è un symlink, niente copia
 
 Per una guida completa sulla risoluzione dei problemi, consultare la [documentazione principale](/docs/vite_assets_troubleshooting.md).

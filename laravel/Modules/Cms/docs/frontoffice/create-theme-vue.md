@@ -212,7 +212,7 @@ npm run preview
 
 3. **Copiatura degli Asset**
 ```bash
-npm run copy
+# public_html/themes/<Tema> è un symlink a laravel/Themes/<Tema>/public: niente copia (Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md)
 ```
 
 ## Troubleshooting

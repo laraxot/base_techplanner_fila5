@@ -48,7 +48,7 @@ laravel/Themes/One/
 npm run build
 
 # Pubblicazione
-npm run copy
+# public_html/themes/<Tema> è un symlink a laravel/Themes/<Tema>/public: niente copia (Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md)
 ```
 
 ## Riflessioni e Linee Guida
@@ -129,7 +129,7 @@ npm run copy
    ls -la public/themes/One
 
    # Forza copia
-   npm run copy -- --force
+   # public_html/themes/<Tema> è un symlink a laravel/Themes/<Tema>/public: niente copia (Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md)
    ```
 
 3. **Problemi di Cache**

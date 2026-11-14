@@ -40,7 +40,7 @@ To see changes in the browser, follow this strict sequence:
 1.  **Navigate** to the theme directory: `Themes/Meetup/`
 2.  **Install** dependencies: `npm install`
 3.  **Build** assets: `npm run build`
-4.  **Deploy** to public root: `npm run copy` (Deploys compiled assets to `public_html/themes/Meetup`)
+4.  **Deploy** to public root: nothing to copy — `public_html/themes/Meetup` is a symlink to `Themes/Meetup/public`
 
 ## 5. Tenant Resolution
 

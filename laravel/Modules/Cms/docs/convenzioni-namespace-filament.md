@@ -66,7 +66,7 @@ namespace Modules\User\App\Filament\Widgets;
 - Per temi custom (es. Themes/One) la build e pubblicazione asset si fa SOLO dalla cartella del tema:
   ```sh
   npm run build
-  npm run copy
+  # public_html/themes/<Tema> è un symlink a laravel/Themes/<Tema>/public: niente copia (Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md)
   ```
 - Non usare mai `vendor:publish` per asset dei temi custom.
 - Vedi anche [README tema One](../../../../themes/one/readme.md)

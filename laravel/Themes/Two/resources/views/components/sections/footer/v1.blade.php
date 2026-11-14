@@ -267,7 +267,7 @@
                        class="block w-full h-32 rounded-lg overflow-hidden border border-white/20 hover:border-white/40 transition-colors relative group focus:outline-none focus:ring-2 focus:ring-white">
                         {{-- Mobile: immagine sotto la piega -> lazy + dimensioni (niente salto di layout, niente byte sprecati). --}}
                         <img
-                            src="{{ asset('modules/techplanner/images/map-via-vanzo.png') }}"
+                            src="{{ asset('assets/techplanner/images/map-via-vanzo.png') }}"
                             loading="lazy" decoding="async" width="400" height="128"
                             alt="{{ __('pub_theme::footer.fields.map.alt') }}"
                             class="w-full h-full object-cover grayscale-[30%] contrast-[1.1] group-hover:grayscale-0 transition-all duration-500"

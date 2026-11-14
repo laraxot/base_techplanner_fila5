@@ -7,8 +7,8 @@
 #   - sito in manutenzione durante il rilascio, e rimesso online anche se qualcosa fallisce;
 #   - copia del database prima delle migrazioni (mysqldump), con il nome stampato a fine rilascio;
 #   - niente più `vendor:publish --all` + `rm -rf database/migrations/*` (si pubblicano solo gli asset necessari);
-#   - gli asset dei temi arrivano in public_html con symlink (ln -s ../../laravel/Themes/<Tema>/public public_html/themes/<Tema>):
-#     nessun `npm run copy`;
+#   - gli asset di temi e moduli arrivano in public_html con symlink (themes/<Tema> e assets/<modulo>, vedi sotto):
+#     nessun `npm run copy`, nessun vendor:publish degli asset dei moduli;
 #   - si ferma al primo errore (set -euo pipefail) e dice dove.
 #
 # Uso:   ./deploy.sh                 rilascio completo
@@ -48,22 +48,40 @@ step "Controllo PHP"
 $PHP -r 'exit(version_compare(PHP_VERSION, "8.4.1", ">=") ? 0 : 1);' \
     || { echo "Serve PHP 8.4.1 o superiore (trovato $($PHP -r 'echo PHP_VERSION;'))." >&2; exit 1; }
 
-step "Temi nella document root"
-# public_html/themes/<Tema> deve essere un symlink a ../../laravel/Themes/<Tema>/public: gli asset restano nel tema.
-for theme_public in "$APP_DIR"/Themes/*/public; do
-    theme=$(basename "$(dirname "$theme_public")")
-    link="$APP_DIR/../public_html/themes/$theme"
+step "Symlink nella document root (temi e moduli)"
+# public_html/themes/<Tema>          -> ../../laravel/Themes/<Tema>/public
+# public_html/assets/<modulo minusc> -> ../../laravel/Modules/<Modulo>/public
+# Gli asset restano nel tema o nel modulo (una sola copia, versionata). I .gitignore di public_html/themes e
+# public_html/assets ignorano le cartelle vere con quei nomi: una vecchia copia trovata lì non è nel repo e si
+# può rigenerare, quindi viene spostata in storage/backups (non cancellata) e sostituita dal symlink.
+link_public() {
+    local link=$1 target=$2
     if [ -L "$link" ]; then
-        continue
+        if [ "$(readlink "$link")" != "$target" ]; then
+            echo "$link punta a $(readlink "$link") invece di $target: lo correggo."
+            ln -sfn "$target" "$link"
+        fi
+        return
     fi
     if [ -e "$link" ]; then
-        echo "public_html/themes/$theme è una cartella, non un symlink: spostala e rilancia (vedi docs/audit/RELEASE.md)." >&2
-        exit 1
+        local parked="$BACKUP_DIR/public_html-$(basename "$(dirname "$link")")-$(basename "$link")-$STAMP"
+        mkdir -p "$BACKUP_DIR"
+        mv "$link" "$parked"
+        echo "Vecchia copia $link spostata in $parked"
     fi
-    if [ -f "$theme_public/manifest.json" ]; then
-        ln -s "../../laravel/Themes/$theme/public" "$link"
-        echo "Creato public_html/themes/$theme -> ../../laravel/Themes/$theme/public"
-    fi
+    ln -s "$target" "$link"
+    echo "Creato $link -> $target"
+}
+mkdir -p "$APP_DIR/../public_html/themes" "$APP_DIR/../public_html/assets"
+for theme_public in "$APP_DIR"/Themes/*/public; do
+    [ -f "$theme_public/manifest.json" ] || continue
+    theme=$(basename "$(dirname "$theme_public")")
+    link_public "$APP_DIR/../public_html/themes/$theme" "../../laravel/Themes/$theme/public"
+done
+for module_public in "$APP_DIR"/Modules/*/public; do
+    [ -d "$module_public" ] || continue
+    module=$(basename "$(dirname "$module_public")")
+    link_public "$APP_DIR/../public_html/assets/${module,,}" "../../laravel/Modules/$module/public"
 done
 
 step "Sito in manutenzione"

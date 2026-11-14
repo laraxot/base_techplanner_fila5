@@ -438,7 +438,7 @@ Vite Build Process:
 2. Compiles resources/css/app.css
 3. Compiles resources/js/app.js
 4. Outputs to public/
-5. npm run copy (copies to public_html/themes/Meetup)
+5. (niente copia: public_html/themes/Meetup è un symlink a Themes/Meetup/public)
 ```
 
 ## Common Integration Patterns

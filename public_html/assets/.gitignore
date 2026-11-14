@@ -1,0 +1,22 @@
+# public_html/assets/<modulo> è un symlink a ../../laravel/Modules/<Modulo>/public (versionato).
+# Il pattern con la barra finale vale solo per le cartelle: il symlink resta tracciato, mentre una
+# cartella vera (copia da vendor:publish, npm run copy, AssetAction) viene ignorata e non finisce nel repo.
+ai/
+activity/
+cms/
+employee/
+fixcity/
+gdpr/
+geo/
+job/
+lang/
+media/
+notify/
+seo/
+techplanner/
+tenant/
+ui/
+user/
+xot/
+# Cartelle generate dai test.
+XotAssetTest/
