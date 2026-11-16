@@ -25,11 +25,8 @@ use Modules\Geo\Filament\Tables\Columns\AddressColumn;
 use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
 use Modules\TechPlanner\Enums\ControlTypeEnum;
-<<<<<<< .merge_file_oFF70P
 use Modules\TechPlanner\Filament\Resources\ClientResource\Pages\ListClients;
-=======
 use Modules\TechPlanner\Filament\Resources\Tables\TechPlannerBaseTable;
->>>>>>> .merge_file_5TamUt
 use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Models\Control;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -162,8 +159,7 @@ class ClientsTable extends TechPlannerBaseTable
                     'controls',
                     static fn (Builder $controls) => $controls->whereDate('next_control_date', '<=', now()->addDays(30)),
                 )),
-<<<<<<< .merge_file_oFF70P
-            SelectFilter::make('last_appointment_type')
+            'last_appointment_type' => SelectFilter::make('last_appointment_type')
                 ->label(__('techplanner::client.filters.last_appointment_type.label'))
                 ->options(static fn (): array => collect(ControlTypeEnum::cases())
                     ->mapWithKeys(static fn (ControlTypeEnum $type): array => [$type->value => $type->getLabel()])
@@ -185,10 +181,7 @@ class ClientsTable extends TechPlannerBaseTable
                     return $query->whereHas('latestAppointment', static fn (Builder $appointments): Builder => $appointments
                         ->whereHas('controls', static fn (Builder $controls): Builder => $controls->where('control_type', $value)));
                 }),
-            SelectFilter::make('never_controlled_type')
-=======
             'never_controlled_type' => SelectFilter::make('never_controlled_type')
->>>>>>> .merge_file_5TamUt
                 ->label(__('techplanner::client.filters.never_controlled_type.label'))
                 ->options(static fn (): array => collect(ControlTypeEnum::cases())
                     ->mapWithKeys(static fn (ControlTypeEnum $type): array => [$type->value => $type->getLabel()])
