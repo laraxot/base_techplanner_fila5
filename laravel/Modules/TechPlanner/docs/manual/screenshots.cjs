@@ -3,6 +3,9 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 // Il tenant si riconosce dal nome host: il browser risolve manuale.local sul server locale.
 const base = process.env.MANUAL_BASE || 'http://manuale.local:8000';
 const out = process.argv[2];
+if (!out) throw new Error('Cartella destinazione screenshot mancante');
+require('node:fs').mkdirSync(out, { recursive: true });
+const outputNames = {"01-accesso":"fig01-accesso.png","02-menu":"fig02-menu.png","03-menu-utente":"fig03-menu-utente.png","04-dashboard":"dashboard.png","32-apparecchi-scadenze":"apparecchi-scadenze.png","19-cliente-piva":"cliente-partita-iva.png","56-cestino":"cestino.png","24-richieste-sito":"richieste-sito.png","10-clienti-elenco":"fig04-clienti-elenco.png","11-cliente-nuovo":"fig05-cliente-nuovo.png","12-cliente-scheda":"fig06-cliente-scheda.png","13-ordina-distanza":"fig12-ordina-distanza.png","14-aggiorna-coordinate":"fig13-aggiorna-coordinate.png","15-importa-clienti":"fig07-importa-clienti.png","20-chiamate-scheda":"fig08-chiamate-scheda.png","21-chiamata-nuova":"fig09-chiamata-nuova.png","22-appuntamento-nuovo":"fig10-appuntamento-nuovo.png","23-appuntamenti-elenco":"fig11-appuntamenti-elenco.png","30-apparecchi-elenco":"fig14-apparecchi-elenco.png","31-apparecchio-scheda":"fig15-apparecchio-scheda.png","32-verifica-nuova":"fig16-verifica-nuova.png","33-apparecchio-nuovo":"fig17-apparecchio-nuovo.png","40-direttori":"fig18-direttori.png","50-utenti":"fig20-utenti.png","51-utente-nuovo":"fig21-utente-nuovo.png","52-utente-ruoli":"fig22-utente-ruoli.png","53-ruoli":"fig23-ruoli.png","54-pannello-principale":"fig19-pannello-principale.png","60-sito-home":"fig24-sito-home.jpg","62-sito-contatti":"fig25-sito-contatti.png","61-sito-registrazione":"fig26-sito-registrazione.png"};
 const only = process.argv[3] ? process.argv[3].split(',') : null;
 const PASS = process.env.MANUAL_DEMO_PASSWORD; if (!PASS) throw new Error('Imposta MANUAL_DEMO_PASSWORD');
 const IDS = { bianchi: 11, device: 14 };
@@ -58,7 +61,8 @@ async function mark(page, items) {
 }
 async function unmark(page) { await page.evaluate(() => document.querySelectorAll('.manuale-mark').forEach((e) => e.remove())); }
 async function shot(page, name, opts = {}) {
-  await page.screenshot({ path: `${out}/${name}.png`, ...opts });
+  if (!outputNames[name]) throw new Error('Immagine senza mappatura: ' + name);
+  await page.screenshot({ path: `${out}/${outputNames[name]}`, ...opts });
   await unmark(page);
   console.log('ok', name);
 }
@@ -304,9 +308,11 @@ const scenes = {
 
 (async () => {
   const browser = await chromium.launch({ args: ['--host-resolver-rules=MAP manuale.local 127.0.0.1'] });
+  let failures = 0;
   for (const [name, fn] of Object.entries(scenes)) {
     if (only && !only.some((o) => name.startsWith(o))) continue;
-    try { await fn(browser); } catch (e) { console.log('ERRORE', name, e.message.split('\n')[0]); }
+    try { await fn(browser); } catch (e) { failures++; console.error('ERRORE', name, e.message.split('\n')[0]); }
   }
   await browser.close();
+  if (failures) { console.error(`${failures} scene fallite; il manuale non è aggiornato.`); process.exitCode = 1; }
 })();
