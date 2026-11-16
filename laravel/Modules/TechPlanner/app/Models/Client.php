@@ -7,11 +7,8 @@ namespace Modules\TechPlanner\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-<<<<<<< .merge_file_LardQ9
 use Illuminate\Database\Eloquent\Relations\HasOne;
-=======
 use Illuminate\Database\Eloquent\SoftDeletes;
->>>>>>> .merge_file_yvnqO7
 use Illuminate\Support\Carbon;
 use Modules\Geo\Enums\AddressItemEnum;
 use Modules\Geo\Models\Address;
