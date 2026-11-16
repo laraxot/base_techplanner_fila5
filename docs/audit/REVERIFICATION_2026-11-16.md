@@ -18,7 +18,7 @@
 | --- | --- | --- | --- |
 | P0 | `laravel/Modules/TechPlanner/app/Models/Client.php` | Marcatori Git nelle importazioni di `HasOne` e `SoftDeletes` | Risolto in `5485d2329` |
 | P0 | `laravel/Modules/TechPlanner/app/Filament/Resources/ClientResource/Tables/ClientsTable.php` | Marcatori Git negli import e nei filtri `last_appointment_type`, `never_controlled_type` | Risolto in `84d6782c3`, mantenendo entrambi i filtri |
-| P1 | `laravel/Modules/TechPlanner/database/factories/DeviceFactory.php` | `client_id=1`, `device_type`, `power_kv`, `current_ma` non corrispondono ai campi del modello `Device` | Da correggere e testare |
+| P1 | `laravel/Modules/TechPlanner/database/factories/DeviceFactory.php` | `client_id=1`, `device_type`, `power_kv`, `current_ma` non corrispondevano ai campi del modello `Device` | Definizione corretta in `65172d76e` usando `ClientFactory::new()`, `type`, `kv`, `ma`; test DB ancora da eseguire |
 | P1 | `laravel/Modules/TechPlanner/docs/manual/seed-demo.php` | Dati demo creati con `create()` e ID presunti; `Model::unguard()` senza blocco ambiente esplicito | Rendere idempotente, isolare da produzione e creare veri Seeder/Factory |
 | P1 | `laravel/Modules/TechPlanner/docs/manual/screenshots.cjs` | 31 chiamate screenshot in origine con nomi diversi dal Markdown e senza exit code nonzero | Mapping 31/31 e fail-on-error corretti nel commit `52cc51549`; esecuzione browser ancora da provare |
 | P1 | `laravel/Modules/TechPlanner/app/Console/Commands/*Reminder*Command.php` | Destinatari `admin`/`super-admin`, ma non `techplanner::admin` | Verificare e correggere con test di notifica |
