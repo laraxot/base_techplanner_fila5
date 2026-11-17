@@ -1,22 +1,39 @@
 ---
+<<<<<<< HEAD
+=======
+title: "🔒 FixCity Security Checklist"
+>>>>>>> laraxot/dev
 title: "🔒 Notify Security Checklist"
 type: concept
 tags: [security, checklist]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "security-checklist 🔒 fixcity security checklist"
+>>>>>>> laraxot/dev
 qmd: "security-checklist 🔒 laraxot security checklist"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./2025-excellence-achievement.md"
   - "./agid-implementation-guide.md"
   - "./ARCHITECTURE.md"
+=======
+  - "./excellence-achievement.md"
+  - "./agid-implementation-guide.md"
+  - "./architecture.md"
+>>>>>>> laraxot/dev
   - "./complete-refactoring-analysis.md"
   - "./documentation-status.md"
   - "./final-implementation-report-.md"
   - "./final-implementation-report-1.md"
   - "./final-implementation-report.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🔒 FixCity Security Checklist

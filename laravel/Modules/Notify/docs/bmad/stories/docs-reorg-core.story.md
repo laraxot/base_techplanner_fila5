@@ -3,11 +3,17 @@ title: "Riorganizzazione docs core Notify"
 type: story
 tags: [docs, bmad, notify, reorganization]
 qmd: "riorganizzazione docs core Notify"
+<<<<<<< HEAD
 status: draft
 updated: 2026-10-09
 ---
 
 # Story: riorganizzazione docs core: Notify
+=======
+---
+
+# Story — riorganizzazione docs core: Notify
+>>>>>>> laraxot/dev
 
 - **ID:** `2026-10-09-docs-reorg-core-notify`
 - **Status:** done

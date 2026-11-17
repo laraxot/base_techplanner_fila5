@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "build and dev commands"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Build & development commands

@@ -3,11 +3,18 @@ title: "logging optimization plan"
 type: note
 tags: [documentation]
 created: 2026-09-26
+<<<<<<< HEAD
 updated: 2026-10-23
 qmd: "logging optimization plan"
 issues: []
 discussions: []
 status: draft
+=======
+updated: 2026-09-26
+qmd: "logging optimization plan"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - Logging Optimization Plan
@@ -54,11 +61,19 @@ Log::info('SMS inviato con successo', ['to' => $phone]);
 Log::info('Notifica push inviata con successo', ['to' => $device_token]);
 ```
 
+<<<<<<< HEAD
 #### Queued Actions (no `app/Jobs/`)
 The former `app/Jobs/SendScheduledPushNotification.php` is now the Queueable Action
 `app/Actions/Push/SendScheduledPushNotificationAction.php` (queued by `SchedulePushNotificationAction`
 via `ActionJob::dispatch(...)->delay(...)`); its success log is already `Log::debug('Scheduled push notification sent', ...)`.
 See the [no-Jobs rule](../../../../bashscripts/ai/wiki/rules/no-module-jobs-queueable-action.md).
+=======
+#### Jobs
+```php
+// app/Jobs/SendScheduledPushNotification.php:69
+Log::info('Scheduled push notification sent', ['notification_id' => $id]);
+```
+>>>>>>> laraxot/dev
 
 ### Impact
 
@@ -159,8 +174,13 @@ Log::info('Push notification sent successfully');
 2. Add try-catch blocks for error logging
 3. Implement audit trail creation
 
+<<<<<<< HEAD
 ### Step 5: Queued Actions
 1. Remove `Log::info()` from the Queueable Actions that run on the queue (`app/Actions/**`; modules have no `app/Jobs/`)
+=======
+### Step 5: Jobs
+1. Remove `Log::info()` from job files
+>>>>>>> laraxot/dev
 2. Add try-catch blocks for error logging
 3. Implement audit trail creation
 

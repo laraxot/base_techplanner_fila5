@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "iflow overview"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # IFLOW Overview
@@ -15,6 +18,18 @@ status: draft
 Panoramica del progetto LaravelPizza.com.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "iflow overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "iflow overview"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🍕 LaravelPizza.com
 
 **Il side-project Laravel che vorrai mostrare al prossimo meetup**

@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "spatie email slug proposal"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: spatie-email-slug-proposal.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Proposta: Aggiunta Slug a SpatieEmail e MailTemplate
@@ -259,8 +262,11 @@ Nonostante i potenziali svantaggi, i benefici superano i costi di implementazion
 - [Documentazione Spatie Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 - [Sistema di Template Email](./EMAIL_TEMPLATES.md)
 - [Email per i Dottori](./DOCTOR_EMAILS.md)
+<<<<<<< HEAD
 - [Sistema di Template Email](./email_templates.md)
 - [Email per i Dottori](./doctor_emails.md)
+=======
+>>>>>>> laraxot/dev
 - [Filament Resources](./filament-resources.md)
 
 ## Implementazione Migrazione

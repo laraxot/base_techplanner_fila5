@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "communication systems architecture"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: communication-systems-architecture.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - Communication Systems Architecture

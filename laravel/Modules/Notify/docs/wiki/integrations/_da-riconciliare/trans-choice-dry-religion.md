@@ -2,16 +2,26 @@
 qmd: "trans choice dry religion"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "TransChoice DRY: La Religione dell'Unica Fonte di Verita"
+=======
+title: "TransChoice DRY — La Religione dell'Unica Fonte di Verita"
+>>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
 ---
 
 # TransChoice DRY: La Religione dell'Unica Fonte di Verita
+=======
+---
+
+# TransChoice DRY — La Religione dell'Unica Fonte di Verita
+>>>>>>> laraxot/dev
 
 **Status**: Active  
 **Created**: 2026-04-14  
@@ -345,10 +355,15 @@ Amen.
 - [Laravel Localization - Pluralization](https://laravel.com/docs/localization#pluralization)
 - [ticket.php (corretto)](../../Modules/App/lang/it/ticket.php)
 - [ticket.php (corretto)](../../Modules/<nome progetto>/lang/it/ticket.php)
+<<<<<<< HEAD
 - [Translation Namespace Religion](../../../translation-namespace-religion.md)
 - [No Hardcoded Language Religion](../../../no-hardcoded-language-religion.md)
 - [Translation Namespace Religion](../../../translation-namespace-religion.md)
 - [No Hardcoded Language Religion](../../../no-hardcoded-language-religion.md)
+=======
+- [Translation Namespace Religion](../../docs/translation-namespace-religion.md)
+- [No Hardcoded Language Religion](../../docs/no-hardcoded-language-religion.md)
+>>>>>>> laraxot/dev
 
 ---
 

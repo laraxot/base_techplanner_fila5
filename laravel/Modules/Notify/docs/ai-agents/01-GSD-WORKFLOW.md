@@ -7,14 +7,22 @@ updated: 2026-09-26
 qmd: "01 GSD WORKFLOW"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: 01-gsd-workflow.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🚀 GSD Workflow (Get Shit Done)
 
+<<<<<<< HEAD
 **Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
 **Related**: [02-BMAD-WORKFLOW.md](02-BMAD-WORKFLOW.md): BMAD Method
+=======
+**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
+**Related**: [02-BMAD-WORKFLOW.md](02-BMAD-WORKFLOW.md) — BMAD Method
+>>>>>>> laraxot/dev
 
 ---
 

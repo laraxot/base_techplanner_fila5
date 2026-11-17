@@ -16,7 +16,10 @@ related:
   - "./commit-message.md"
   - "./configuration.md"
   - "./design-comuni-bmad-master-plan.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🌐 VHost Configuration Summary
@@ -202,6 +205,7 @@ curl -I http://laraxot.local
 | **Project Docs** | `docs/project/vhost-configuration.md` | ✅ | [Link](docs/project/vhost-configuration.md) |
 | **Modules Docs** | `laravel/Modules/docs/vhost-configuration.md` | ✅ | [Link](laravel/Modules/docs/vhost-configuration.md) |
 | **Themes Docs** | `laravel/Themes/docs/vhost-configuration.md` | ✅ | [Link](laravel/Themes/docs/vhost-configuration.md) |
+<<<<<<< HEAD
 | **Governance** | `docs/rules/vhost-governance.md` | ✅ | [Link](../rules/vhost-governance.md) |
 | **Project Index** | `docs/project/README.md` | ✅ | [Link](docs/project/README.md) |
 | **Rules Index** | `docs/rules/README.md` | ✅ | [Link](docs/rules/README.md) |
@@ -213,6 +217,12 @@ curl -I http://laraxot.local
 | **Project Index** | `docs/project/README.md` | ✅ | [Link](README.md) |
 | **Rules Index** | `docs/rules/README.md` | ✅ | [Link](../rules/README.md) |
 | **Main Index** | `docs/index.md` | ✅ Updated | [Link](../index.md) |
+=======
+| **Governance** | `docs/rules/vhost-governance.md` | ✅ | [Link](docs/rules/vhost-governance.md) |
+| **Project Index** | `docs/project/README.md` | ✅ | [Link](docs/project/README.md) |
+| **Rules Index** | `docs/rules/README.md` | ✅ | [Link](docs/rules/README.md) |
+| **Main Index** | `docs/index.md` | ✅ Updated | [Link](docs/index.md) |
+>>>>>>> laraxot/dev
 | **Modules Index** | `laravel/Modules/docs/README.md` | ✅ Updated | [Link](laravel/Modules/docs/README.md) |
 | **Themes Index** | `laravel/Themes/docs/README.md` | ✅ Updated | [Link](laravel/Themes/docs/README.md) |
 | **AI Memory** | `.qwen/vhost-configuration.md` | ✅ | - |
@@ -287,14 +297,21 @@ curl -I http://laraxot.local
 
 - [Complete Setup Guide](docs/project/vhost-configuration.md)
 - [Troubleshooting](docs/project/vhost-configuration.md#troubleshooting)
+<<<<<<< HEAD
 - [Complete Setup Guide](vhost-configuration.md)
 - [Troubleshooting](vhost-configuration.md#troubleshooting)
+=======
+>>>>>>> laraxot/dev
 - [Quick Reference](.qwen/vhost-configuration.md)
 
 ### For DevOps
 
+<<<<<<< HEAD
 - [Governance Rules](../rules/vhost-governance.md)
 - [Governance Rules](../rules/vhost-governance.md)
+=======
+- [Governance Rules](docs/rules/vhost-governance.md)
+>>>>>>> laraxot/dev
 - [Management Skill](.github/skills/vhost-management/SKILL.md)
 - [Configuration File](laravel/config/vhost/laraxot.local.conf)
 
@@ -303,7 +320,10 @@ curl -I http://laraxot.local
 - [Memory File](.qwen/vhost-configuration.md)
 - [Skill Definition](.github/skills/vhost-management/SKILL.md)
 - [Project Context](docs/project/README.md)
+<<<<<<< HEAD
 - [Project Context](README.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 

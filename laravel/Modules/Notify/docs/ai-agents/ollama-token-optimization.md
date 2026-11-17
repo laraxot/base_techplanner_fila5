@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "ollama token optimization"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Ollama Token Optimization Guide

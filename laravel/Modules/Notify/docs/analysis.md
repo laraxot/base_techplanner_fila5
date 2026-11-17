@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "analysis"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module Analysis
@@ -85,6 +88,7 @@ Modules/Notify/
 * [analysis.md](../../../job/docs/analysis.md)
 * [analysis.md](../../../job/docs/phpstan/analysis.md)
 * [analysis.md](../../../media/docs/analysis.md)
+<<<<<<< HEAD
 * [analysis.md](../../User/docs/analysis.md)
 * [analysis.md](../../../user/docs/phpstan/analysis.md)
 * [analysis.md](../../../ui/docs/analysis.md)
@@ -92,6 +96,8 @@ Modules/Notify/
 * [analysis.md](../../Job/docs/analysis.md)
 * [analysis.md](../../../job/docs/phpstan/analysis.md)
 * [analysis.md](../../Media/docs/analysis.md)
+=======
+>>>>>>> laraxot/dev
 * [analysis.md](../../../media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/docs/analysis.md)
 
@@ -100,3 +106,15 @@ Modules/Notify/
 
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

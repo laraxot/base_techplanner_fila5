@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email cache"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-cache.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema Cache Email 

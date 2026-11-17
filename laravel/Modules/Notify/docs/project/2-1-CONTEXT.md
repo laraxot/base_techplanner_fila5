@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "2 1 CONTEXT"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # PHASE 2 - EPIC 2.1: Citizen Dashboard - CONTEXT

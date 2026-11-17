@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "netfun channel"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Implementazione Canale Netfun

@@ -70,16 +70,19 @@ class Reset extends Component
             },
         );
 
-        /* @phpstan-ignore argument.type */
-        Assert::string($response_lang = trans((string) $response));
+        // Password::reset() restituisce la chiave di stato (stringa); la UI
+        // mostra il messaggio tradotto corrispondente (success o errore email).
+        Assert::string($response);
+        $translated = trans($response);
+        Assert::string($translated);
 
         if (Password::PASSWORD_RESET === $response) {
-            session()->flash($response_lang);
+            session()->flash($translated);
 
             return redirect(route('home'));
         }
 
-        $this->addError('email', $response_lang);
+        $this->addError('email', $translated);
 
         return null;
     }

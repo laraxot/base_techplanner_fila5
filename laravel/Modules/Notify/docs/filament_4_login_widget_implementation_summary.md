@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 qmd: "filament 4 login widget implementation summary"
+=======
+qmd: "FILAMENT 4 LOGIN WIDGET IMPLEMENTATION SUMMARY"
+>>>>>>> laraxot/dev
 issues: []
 discussions: []
 title: "Riepilogo Implementazione Login Widget Filament 4"
@@ -8,8 +12,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: filament-4-login-widget-implementation-summary.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎯 Riepilogo Implementazione Login Widget Filament 4
@@ -229,9 +236,12 @@ TextInput::make('email') // Label da user::fields.email.label
 - [Filament 4 Login Widget Implementation](../laravel/Themes/Sixteen/docs/filament-4-login-widget-implementation.md)
 - [Filament 4 Widget Rendering Guide](../laravel/Modules/User/docs/filament-4-widget-rendering-guide.md)
 - [Auth Widget Rules](../laravel/Modules/User/docs/auth_widget_rules.md)
+<<<<<<< HEAD
 - [Filament 4 Login Widget Implementation](../../../Themes/Sixteen/docs/filament-4-login-widget-implementation.md)
 - [Filament 4 Widget Rendering Guide](../../User/docs/filament-4-widget-rendering-guide.md)
 - [Auth Widget Rules](../../User/docs/auth_widget_rules.md)
+=======
+>>>>>>> laraxot/dev
 - [Laraxot Architecture Rules](../laravel/Modules/Xot/docs/laraxot-architecture-rules.md)
 
 ### Esterna

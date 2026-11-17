@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "spatieatabase mail templates"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Integrazione con Spatie Laravel Database Mail Templates

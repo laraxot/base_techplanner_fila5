@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "coverage gaps analysis guide"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Coverage Gaps Analysis & Test Implementation Guide

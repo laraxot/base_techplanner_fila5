@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "filament 4x compatibility"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Compatibilità Filament 4.x - Modulo Notify

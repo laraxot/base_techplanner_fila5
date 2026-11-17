@@ -11,7 +11,11 @@ updated: 2026-08-27
 note: "Convertito da _todo.txt (elenco di link) da convert-docs-txt-to-md.py."
 ---
 
+<<<<<<< HEAD
 # Todo: risorse esterne
+=======
+# Todo — risorse esterne
+>>>>>>> laraxot/dev
 
 Elenco di collegamenti migrato da un file `.txt`; URL deduplicati.
 

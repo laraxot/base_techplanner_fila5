@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "00 index"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🔴 CRITICAL RULES - AI Agents
@@ -18,6 +21,18 @@ status: draft
 **Priority**: BLOCKER (violation = STOP immediately)
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "00 index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 index"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 Rule #1: Filament Tables for Lists
 
 > **MAI** creare blade personalizzati per liste di outcomes, predict, o dati tabellari.

@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email templates best practices"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: email-templates-best-practices.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per Template Email

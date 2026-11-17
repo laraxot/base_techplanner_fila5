@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "fix tests homepage"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: fix-tests-homepage.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # ✅ Fix Applicati - Tests Homepage

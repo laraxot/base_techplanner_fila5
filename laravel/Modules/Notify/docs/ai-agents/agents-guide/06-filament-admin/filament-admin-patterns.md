@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "filament admin patterns"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 6. Filament (Admin) Patterns
@@ -24,3 +27,15 @@ status: draft
 | `Widget` | `XotBaseWidget` |
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "filament admin patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament admin patterns"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

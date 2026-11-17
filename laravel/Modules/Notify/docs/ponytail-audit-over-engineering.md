@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "ponytail audit over engineering"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: stale
 ---
 
@@ -15,17 +16,32 @@ status: stale
 # Ponytail audit: Notify (over-engineering)
 
 **Ultimo run:** 2026-07-02
+=======
+---
+
+# Ponytail audit — Notify (over-engineering)
+
+**Ultimo run:** 2026-07-02  
+>>>>>>> laraxot/dev
 **Remediation run #5:** rimozione file inattivi e PHPStan pulito
 
 | # | Azione | Stato |
 |---|--------|-------|
 | N5 | action SMS inattive, Data class, test, pagina Netfun rimossi | ✅ 2026-07-02 |
 | N9 | `storage/app/ai/generate-notify-sms-tests.php` rimosso | ✅ 2026-07-02 |
+<<<<<<< HEAD
 | N10 | `app/Channels/SmsChannel/TelegramChannel/WhatsAppChannel`: rimossi `@var` inutili | ✅ 2026-07-02 |
 |: | PHPStan `Modules/Notify` | ✅ 0 errori |
 |: | Pest `Modules/Notify` | ❌ bloccato da DB MySQL (credenziali `.env.testing` non valide) |
 
 **Ultimo run:** 2026-07-01
+=======
+| N10 | `app/Channels/SmsChannel/TelegramChannel/WhatsAppChannel` — rimossi `@var` inutili | ✅ 2026-07-02 |
+| — | PHPStan `Modules/Notify` | ✅ 0 errori |
+| — | Pest `Modules/Notify` | ❌ bloccato da DB MySQL (credenziali `.env.testing` non valide) |
+
+**Ultimo run:** 2026-07-01  
+>>>>>>> laraxot/dev
 **Remediation run #4:** consolidamento SMS su driver canonico `smsfactor`
 
 | # | Azione | Stato |
@@ -38,10 +54,17 @@ status: stale
 | N7 | `_bmad/`, `.planning/` sotto Notify | ✅ assenti |
 | N8 | `scheduleNotification`: `SendScheduledPushNotification::dispatch()->delay()` | ✅ (no regressione) |
 
+<<<<<<< HEAD
 **Modulo:** notifiche multi-canale.
 **Hub:** [../../../../docs/audit/ponytail-audit.md](../../../../docs/audit/ponytail-audit.md)
 **Remediation:** [../../../../docs/project/ponytail-audit-remediation.md](../../../../docs/project/ponytail-audit-remediation.md)
 **GitHub monorepo:** [Issue #221](https://github.com/laraxot/base_<nome progetto>_fila5/issues) · [Discussion #222](https://github.com/laraxot/base_<nome progetto>_fila5/discussions) · [Discussion #228](https://github.com/laraxot/base_<nome progetto>_fila5/discussions)
+=======
+**Modulo:** notifiche multi-canale.  
+**Hub:** [../../../../docs/audit/ponytail-audit.md](../../../../docs/audit/ponytail-audit.md)  
+**Remediation:** [../../../../docs/project/ponytail-audit-remediation.md](../../../../docs/project/ponytail-audit-remediation.md)  
+**GitHub monorepo:** [Issue #221](https://github.com/laraxot/base_quaeris_fila5/issues) · [Discussion #222](https://github.com/laraxot/base_quaeris_fila5/discussions) · [Discussion #228](https://github.com/laraxot/base_quaeris_fila5/discussions)
+>>>>>>> laraxot/dev
 
 ## Scopo business
 
@@ -49,7 +72,11 @@ Notify invia messaggi su canali configurati (email, SMS, push, …). Il driver a
 
 ## Driver SMS canonico
 
+<<<<<<< HEAD
 **`smsfactor`**: SSoT da `config/sms.php` (`default => smsfactor`).
+=======
+**`smsfactor`** — SSoT da `config/sms.php` (`default => smsfactor`).
+>>>>>>> laraxot/dev
 
 Pattern attivo:
 
@@ -100,7 +127,11 @@ Utility mantenute: `NormalizePhoneNumberAction`, `FormatSmsMessageAction`.
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [wiki/decisions/sms-actions-consolidation.md](./wiki/decisions/sms-actions-consolidation.md)
 - [wiki/decisions/sms-actions-consolidation-consolidamento-contracts-ponytail-audit.md](./wiki/decisions/sms-actions-consolidation-consolidamento-contracts-ponytail-audit.md)
+=======
+- [wiki/decisions/sms-actions-consolidation-2026-06-30.md](./wiki/decisions/sms-actions-consolidation-2026-06-30.md)
+>>>>>>> laraxot/dev
 - [provider-actions-architecture.md](./provider-actions-architecture.md)
 - [Xot Notify hub](../../Xot/docs/ponytail-audit-over-engineering.md)

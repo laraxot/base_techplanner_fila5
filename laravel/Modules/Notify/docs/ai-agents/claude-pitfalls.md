@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "claude pitfalls"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # CLAUDE Common Pitfalls
@@ -26,6 +29,18 @@ Errori comuni da evitare.
 **✅ CORRETTO**: Usare Folio + Volt + JSON pages
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "claude pitfalls"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "claude pitfalls"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ### 2. ❌ Connessioni Per-Modulo in Config
 **✅ CORRETTO**: Seguire Laravel 12 standard - solo driver connections
 
@@ -86,6 +101,7 @@ Errori comuni da evitare.
 
 ---
 
+<<<<<<< HEAD
 <<<<<<< .merge_file_tC3XR9
 niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 **✅ CORRETTO**: Sempre eseguire copy per deploy assets
@@ -93,6 +109,12 @@ niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../larave
 ### 14. ❌ Dimenticare il symlink `public_html/themes/<Tema>` dopo theme build (`npm run copy` dismesso)
 **✅ CORRETTO**: Verificare che `public_html/themes/<Tema>` sia symlink a `laravel/Themes/<Tema>/public` (`php artisan xot:theme-link`, una volta per installazione); `npm run copy` non serve più.
 >>>>>>> .merge_file_szNhtH
+=======
+### 14. ❌ Dimenticare symlink public_html/themes (npm run copy obsoleto) dopo theme build
+**✅ CORRETTO**: Sempre eseguire copy per deploy assets
+### 14. ❌ Dimenticare il symlink `public_html/themes/<Tema>` dopo theme build (`npm run copy` dismesso)
+**✅ CORRETTO**: Verificare che `public_html/themes/<Tema>` sia symlink a `laravel/Themes/<Tema>/public` (`php artisan xot:theme-link`, una volta per installazione); `npm run copy` non serve più.
+>>>>>>> laraxot/dev
 
 ---
 
@@ -101,5 +123,8 @@ niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../larave
 - [Indice CLAUDE](./claude-split-index.md)
 - [critical-rules.md](./critical-rules.md)
 - [CLAUDE.md originale](../../CLAUDE.md)
+<<<<<<< HEAD
 - [CLAUDE.md originale](../CLAUDE.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

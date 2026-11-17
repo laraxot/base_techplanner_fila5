@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "pub theme namespace critical rule"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 5.1. Theme & pub_theme Namespace - CRITICAL RULE
@@ -44,3 +47,15 @@ The current active theme is configured via `config('xra.pub_theme')` which retur
 - Use `XotBaseMigration` with `tableCreate()` and `tableUpdate()` methods
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "pub theme namespace critical rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pub theme namespace critical rule"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

@@ -8,8 +8,11 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: sessione-100-percent.divergenza.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Divergenza: `SESSIONE_100_PERCENT.md`

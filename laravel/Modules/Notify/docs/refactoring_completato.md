@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "refactoring completato"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🐄✨ REFACTORING BASEMODEL - COMPLETATO! ✨🐄
@@ -17,6 +20,18 @@ status: draft
 **Status:** ✅ **FASE 1 COMPLETATA CON SUCCESSO**
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "refactoring completato"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "refactoring completato"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 RISULTATI FINALI
 
 ### Statistiche Precise

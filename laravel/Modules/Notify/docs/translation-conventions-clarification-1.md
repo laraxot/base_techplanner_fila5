@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation conventions clarification 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation conventions clarification 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify
 
 ## Identificazione di Convenzioni Contrastanti
@@ -45,10 +59,14 @@ Dopo un'analisi approfondita, è stato determinato che:
 
 2. **Eccezioni alle convenzioni generali**
 <<<<<<< HEAD
+<<<<<<< HEAD
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di <nome progetto>
 =======
    - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di SaluteOra
 >>>>>>> 6ed19256f (.)
+=======
+   - Il modulo Notify rappresenta un'eccezione alle convenzioni generali di <nome progetto>
+>>>>>>> laraxot/dev
    - Questa eccezione è documentata e intenzionale
 
 ## Convenzioni Corrette per il Modulo Notify
@@ -86,10 +104,14 @@ return [
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di <nome progetto>, poiché rappresentano un'eccezione documentata.
 =======
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di SaluteOra, poiché rappresentano un'eccezione documentata.
 >>>>>>> 6ed19256f (.)
+=======
+Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di <nome progetto>, poiché rappresentano un'eccezione documentata.
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 

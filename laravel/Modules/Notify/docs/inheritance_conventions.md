@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "inheritance conventions"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: inheritance-conventions.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Convenzioni di Ereditarietà

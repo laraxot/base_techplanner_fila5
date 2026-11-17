@@ -4,10 +4,15 @@ type: concept
 tags: [excellence, 2025]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "excellence-2025 🏆 fixcity - eccellenza 2025"
+>>>>>>> laraxot/dev
 qmd: "excellence-2025 🏆 ptv - eccellenza 2025"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -25,6 +30,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🏆 FIXCITY - ECCELLENZA 2025
@@ -53,7 +68,11 @@ FixCity è la piattaforma enterprise leader per la gestione delle segnalazioni u
 2. ✅ **documentation-index.md** - Indice navigabile 400+ pagine
 3. ✅ **quick-start.md** - Onboarding sviluppatori < 30 minuti
 4. ✅ **project-completion-status.md** - Tracking avanzamento
+<<<<<<< HEAD
 5. ✅ **excellence-2025.md** - Questo documento
+=======
+5. ✅ **excellence-year-note-snake.md** - Questo documento
+>>>>>>> laraxot/dev
 
 ### 🎫 Modulo Fixcity - ECCELLENZA (90%)
 - ✅ **API.md** - REST API completa con 15+ endpoints

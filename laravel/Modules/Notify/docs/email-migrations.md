@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "email migrations"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema Migrazione Email 

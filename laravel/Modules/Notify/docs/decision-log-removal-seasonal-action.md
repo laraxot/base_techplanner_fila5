@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "decision log removal seasonal action"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Decision Log: Rimozione Azioni Seasonal Over-Engineered

@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module Documentation
@@ -63,9 +66,12 @@ This document serves as the central index for the Notify module, providing guida
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
+<<<<<<< HEAD
 - [Notification Channels Implementation](../../../notification_channels_implementation.md)
 - [Email Templates](../../../email_templates.md)
 - [SMS Implementation](../../../sms_implementation.md)
+=======
+>>>>>>> laraxot/dev
 - [Troubleshooting](./TROUBLESHOOTING.md)
 
 # Indice della Documentazione - Modulo Notify
@@ -95,6 +101,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 - [Modulo Xot](../../Xot/docs/README.md)
 - [Modulo Lang](../../Lang/docs/README.md)
 - [Modulo UI](../../UI/docs/README.md)
+<<<<<<< HEAD
 - [Documentazione Generale <nome progetto>](../../../README.md)
 - [Documentazione Generale PTV](../../../README.md)
 - [Documentazione Generale <nome progetto>](../../../README.md)
@@ -106,6 +113,8 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 - [Modulo Xot](../../../../../Xot/docs/README.md)
 - [Modulo Lang](../../../../../Lang/docs/README.md)
 - [Modulo UI](../../../../../UI/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Categorie Principali
 
@@ -151,6 +160,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 
 ### Testing e Qualità
 - [PHPStan Level 10](./PHPSTAN_LEVEL10_FIXES.md) - Correzioni per PHPStan Level 10
+<<<<<<< HEAD
 - [Eventi](../../../events.md) - Eventi e listeners
 
 ### Sistema Email
@@ -188,6 +198,8 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 
 ### Testing e Qualità
 - [PHPStan Level 10](../../../phpstan_level10_fixes.md) - Correzioni per PHPStan Level 10
+=======
+>>>>>>> laraxot/dev
 - [Testing](./TESTING.md) - Strategie e approcci per il testing
 
 ## Linee Guida per l'Implementazione
@@ -239,7 +251,10 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nella co
 ### Mail Templates
 - [Index](./mail-templates/index.md) - Indice della documentazione sui template email
 - [Implementazione Slug](./mail-templates/MAIL_TEMPLATE_SLUG_IMPLEMENTATION.md) - Implementazione del campo slug
+<<<<<<< HEAD
 - [Implementazione Slug](../../../mail_template_slug_implementation.md) - Implementazione del campo slug
+=======
+>>>>>>> laraxot/dev
 
 ### Notifications
 - [Index](./notifications/index.md) - Indice della documentazione sulle notifiche
@@ -249,9 +264,12 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nella co
 - [Implementazione Canali Notifica](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Template Email](./EMAIL_TEMPLATES.md)
 - [Implementazione SMS](./SMS_IMPLEMENTATION.md)
+<<<<<<< HEAD
 - [Implementazione Canali Notifica](../../../notification_channels_implementation.md)
 - [Template Email](../../../email_templates.md)
 - [Implementazione SMS](../../../sms_implementation.md)
+=======
+>>>>>>> laraxot/dev
 - [Troubleshooting](./TROUBLESHOOTING.md)
 
 ## Note sulla Manutenzione
@@ -267,8 +285,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 - Il file `NOTIFICATION_CHANNELS_IMPLEMENTATION.md` è stato risolto manualmente mantenendo la versione più aggiornata e coerente con le best practice architetturali del modulo Notify.
 - Vedi anche: [../../../../../docs/README.md](../../../../../docs/README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../../../docs/project/README.md)
+<<<<<<< HEAD
 - Vedi anche: [../../../../../docs/README.md](../../../README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../project/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
@@ -294,7 +315,10 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 - Il file `NOTIFICATION_CHANNELS_IMPLEMENTATION.md` è stato risolto manualmente mantenendo la versione più aggiornata e coerente con le best practice architetturali del modulo Notify
 - **Filosofia di risoluzione**: Approccio olistico con analisi manuale approfondita, mantenimento integrità architetturale, documentazione bidirezionale aggiornata
 - Vedi anche: [../../../../../docs/README.md](../../../../../docs/README.md)
+<<<<<<< HEAD
 - Vedi anche: [../../../../../docs/README.md](../../../README.md)
+=======
+>>>>>>> laraxot/dev
 Ultimo aggiornamento: 14 Maggio 2025
 
 ## Risoluzione conflitti e standard
@@ -303,8 +327,11 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 - Vedi anche: [../../../../../docs/README.md](../../../../../docs/README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../../../docs/project/README.md)
+<<<<<<< HEAD
 - Vedi anche: [../../../../../docs/README.md](../../../README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../project/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
@@ -317,7 +344,10 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 *Ultimo aggiornamento: Gennaio 2025*
 - Vedi anche: [../../../../../docs/project/README.md](../../../../../docs/project/README.md)
+<<<<<<< HEAD
 - Vedi anche: [../../../../../docs/project/README.md](../../../project/README.md)
+=======
+>>>>>>> laraxot/dev
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 *Ultimo aggiornamento: Gennaio 2025*
@@ -327,19 +357,25 @@ Ultimo aggiornamento: 14 Maggio 2025
 
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 - Vedi anche: [../../../../../docs/project/README.md](../../../../../docs/project/README.md)
+<<<<<<< HEAD
 - Vedi anche: [../../../../../docs/README.md](../../../README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../project/README.md)
 
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 - Vedi anche: [../../../../../docs/project/README.md](../../../project/README.md)
+=======
+>>>>>>> laraxot/dev
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 *Ultimo aggiornamento: Gennaio 2025*
 
 - Vedi anche: [../../../../../docs/README.md](../../../../../docs/README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../../../docs/project/README.md)
+<<<<<<< HEAD
 - Vedi anche: [../../../../../docs/README.md](../../../README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../project/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
@@ -418,6 +454,7 @@ Ultimo aggiornamento: 14 Maggio 2025
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
 - Vedi anche: [../../../../../docs/README.md](../../../../../docs/README.md)
+<<<<<<< HEAD
 - Vedi anche: [../../../../../docs/README.md](../../../README.md)
 - Vedi anche: [../../../../../docs/project/README.md](../../../project/README.md)
 
@@ -489,4 +526,6 @@ Ultimo aggiornamento: 14 Maggio 2025
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
 - Vedi anche: [../../../../../docs/README.md](../../../README.md)
+=======
+>>>>>>> laraxot/dev
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".

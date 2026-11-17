@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "filament patterns"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Filament Patterns
@@ -109,7 +112,11 @@ In `Modules\\Xot\\Filament\\Traits\\HasXotTable`, the builder method `table(Tabl
 - `getTableColumns()` **DEVE SEMPRE** restituire un array associativo: `array<string, Column>`.
 - Le chiavi **devono essere stringhe**, mai indici numerici.
 - Keys must be stable strings (e.g., column/field name: `'name'`, `'email'`).
+<<<<<<< HEAD
 - **MAI** usare `array_values()`: distrugge le chiavi.
+=======
+- **MAI** usare `array_values()` — distrugge le chiavi.
+>>>>>>> laraxot/dev
 - Vedi `.cursor/rules/gettablecolumns-string-keys.mdc`.
 
 ```php
@@ -133,6 +140,7 @@ When encountering "Cannot call constructor" in Filament widgets:
 ### Debugging Workflow
 ```bash
 # 1. Check widget structure
+<<<<<<< HEAD
 grep -n "getOptions\|__construct" Modules/<nome progetto>/app/Filament/Widgets/Simple05ChartWidget.php
 
 # 2. Verify PHPStan compliance
@@ -140,6 +148,15 @@ cd laravel && vendor/bin/phpstan analyse Modules/<nome progetto>/app/Filament/Wi
 
 # 3. Check for syntax errors in related services
 cd laravel && php -l Modules/<nome progetto>/app/Services/ChartService.php
+=======
+grep -n "getOptions\|__construct" Modules/Quaeris/app/Filament/Widgets/Simple05ChartWidget.php
+
+# 2. Verify PHPStan compliance
+cd laravel && vendor/bin/phpstan analyse Modules/Quaeris/app/Filament/Widgets/Simple05ChartWidget.php
+
+# 3. Check for syntax errors in related services
+cd laravel && php -l Modules/Quaeris/app/Services/ChartService.php
+>>>>>>> laraxot/dev
 ```
 
 ## Chart Widget Pattern (CRITICAL)
@@ -200,11 +217,19 @@ JS);
 final class HybridChartWidget extends Widget
 {
     private ?JpGraphService $chartService = null;
+<<<<<<< HEAD
 
     public function getChartData(): array
     {
         $this->chartService ??= new JpGraphService();
 
+=======
+    
+    public function getChartData(): array
+    {
+        $this->chartService ??= new JpGraphService();
+        
+>>>>>>> laraxot/dev
         return [
             'static_url' => $this->generateStaticChart(),
             'interactive_data' => $this->getInteractiveData()

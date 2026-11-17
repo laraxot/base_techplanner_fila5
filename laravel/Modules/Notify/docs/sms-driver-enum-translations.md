@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "sms driver enum translations"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Traduzioni SmsDriverEnum - Modulo Notify
@@ -18,8 +21,11 @@ Il `SmsDriverEnum` utilizza il `TransTrait` per gestire automaticamente le tradu
 
 ## Struttura Enum
 
+<<<<<<< HEAD
 > **Stato reale (2026-10-20):** `app/Enums/SmsDriverEnum.php` ha un solo caso, `SMSFACTOR`, e usa `EnumTrait` (non `TransTrait`). L'elenco a 7 casi qui sotto e' storico; `tests/Unit/Enums/SmsDriverEnumTest.php` verifica il caso unico. Questo file e' duplicato da `smsriver-enum-translations.md` (nome con refuso, contenuto diverso): da unificare, non cancellato.
 
+=======
+>>>>>>> laraxot/dev
 ```php
 enum SmsDriverEnum: string implements HasLabel, HasIcon, HasColor
 {
@@ -202,3 +208,15 @@ php -l laravel/Modules/Notify/lang/de/sms_driver_enum.php
 - [Documentazione Traduzioni](../../Lang/docs/)- [Documentazione Traduzioni](../../Lang/project_docs/)
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "sms driver enum translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms driver enum translations"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

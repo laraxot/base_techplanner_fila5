@@ -1,13 +1,22 @@
 ---
+<<<<<<< HEAD
+=======
+title: "📸 Header Notify vs Bootstrap Italia - Analisi e Fix"
+>>>>>>> laraxot/dev
 title: "📸 Header <nome progetto> vs Bootstrap Italia - Analisi e Fix"
 type: concept
 tags: [header, fix, analysis]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "header-fix-analysis 📸 header laraxot vs bootstrap italia - analisi e fix"
+>>>>>>> laraxot/dev
 qmd: "header-fix-analysis 📸 header <nome progetto> vs bootstrap italia - analisi e fix"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -22,6 +31,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # 📸 Header Notify vs Bootstrap Italia - Analisi e Fix

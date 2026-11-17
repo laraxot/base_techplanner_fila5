@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "locations standards 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "locations standards 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Standard di Posizionamento dei File in Notify
 
 ## Organizzazione Directory Principali
@@ -18,10 +32,14 @@ Le interfacce devono sempre essere collocate nella directory `/app/Contracts/`, 
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/Notify/app/Contracts/
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/app/Contracts/
+>>>>>>> laraxot/dev
 ├── SmsProviderActionInterface.php   ✅ CORRETTO
 ├── NotificationChannelInterface.php ✅ CORRETTO
 └── ...
@@ -31,10 +49,14 @@ Modules/Notify/app/Contracts/
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/Notify/app/Actions/SMS/
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/app/Actions/SMS/
+>>>>>>> laraxot/dev
 ├── SmsActionInterface.php           ❌ ERRATO
 └── ...
 ```

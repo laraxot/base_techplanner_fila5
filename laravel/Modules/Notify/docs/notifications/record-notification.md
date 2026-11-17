@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "record notification"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # `RecordNotification`
@@ -202,8 +205,12 @@ SpatieEmail (Specialized Agent)
 
 *   [`ChannelEnum` Documentation](../enums/channel-enum.md)
 *   [`SpatieEmail` Documentation](../emails/spatie-email.md)
+<<<<<<< HEAD
 *   [`SendRecordNotificationAction` Documentation](../refactoring/send-record-notification-action.md)
 *   [`SendRecordNotificationAction` Documentation](../refactoring/send-record-notification-action.md)
+=======
+*   [`SendRecordNotificationAction` Documentation](../actions/send-record-notification-action.md)
+>>>>>>> laraxot/dev
 *   [`SmsChannel` Documentation](./channels/sms-channel.md) - Note: Uses `Modules\Notify\Channels\SmsChannel` (expects `SmsData`)
 *   [`SmsData` Documentation](../datas/sms-data.md)
 *   [Zen Delegation Strategy](../refactoring/record-notification-zen-delegation.md)

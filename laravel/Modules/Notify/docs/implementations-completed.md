@@ -4,10 +4,15 @@ type: concept
 tags: [implementations, completed]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "implementations-completed ✅ fixcity - implementazioni completate"
+>>>>>>> laraxot/dev
 qmd: "implementations-completed ✅ ptv - implementazioni completate"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -25,6 +30,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # ✅ FIXCITY - IMPLEMENTAZIONI COMPLETATE
@@ -75,7 +90,11 @@ Analizzato lo scopo del progetto, identificate le features mancanti e implementa
 8. ✅ **documentation-index.md**
 9. ✅ **quick-start.md**
 10. ✅ **project-completion-status.md**
+<<<<<<< HEAD
 11. ✅ **excellence-2025.md**
+=======
+11. ✅ **excellence-year-note-snake.md**
+>>>>>>> laraxot/dev
 12. ✅ **final-summary.md**
 
 ### 📖 Guide Complete (3 - da sessione precedente)
@@ -417,7 +436,11 @@ Modules/Fixcity/
 ├── implementations-completed.md             ✅ NEW (questo file)
 ├── documentation-index.md                   ✅ EXISTING
 ├── quick-start.md                           ✅ EXISTING
+<<<<<<< HEAD
 ├── excellence-2025.md                       ✅ EXISTING
+=======
+├── excellence-year-note-snake.md                       ✅ EXISTING
+>>>>>>> laraxot/dev
 └── final-summary.md                         ✅ EXISTING
 ```
 

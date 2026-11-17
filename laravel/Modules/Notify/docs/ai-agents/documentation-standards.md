@@ -7,13 +7,19 @@ updated: 2026-09-26
 qmd: "documentation standards"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Documentation standards
 
 > Source: [IFLOW.md](../../bashscripts/ai/IFLOW.md) | [CLAUDE.md](../../CLAUDE.md)
+<<<<<<< HEAD
 > Source: [IFLOW.md](../../../../../bashscripts/ai/IFLOW.md) | [CLAUDE.md](../CLAUDE.md)
+=======
+>>>>>>> laraxot/dev
 > Back: [index](index.md)
 
 ## File naming conventions (CRITICAL)
@@ -34,8 +40,12 @@ WRONG:   ModelArchitecture.md
 Never include dates in filenames:
 ```
 CORRECT: dry-kiss-analysis.md
+<<<<<<< HEAD
 WRONG:   dry-kiss-analysis-modulo-job.md
 WRONG:   dry-kiss-analysis.md
+=======
+WRONG:   dry-kiss-analysis-2025-10-15.md
+>>>>>>> laraxot/dev
 WRONG:   phpstan-fixes-january-2026.md
 ```
 

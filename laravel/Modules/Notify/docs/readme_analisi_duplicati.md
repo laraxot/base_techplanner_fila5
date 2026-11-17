@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "readme analisi duplicati"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🐄 Analisi Metodi Duplicati - Guida Rapida
@@ -233,6 +236,18 @@ A: 5 settimane totali, ma benefici visibili già dopo Fase 1.
 - **Team Lead**: [Da definire]
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "readme analisi duplicati"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme analisi duplicati"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **🐄 Super Mucca Approved**: Documento basato su analisi REALE del codice con confidenza 99.9%.
 
 **Ultima Revisione**: 15 Ottobre 2025

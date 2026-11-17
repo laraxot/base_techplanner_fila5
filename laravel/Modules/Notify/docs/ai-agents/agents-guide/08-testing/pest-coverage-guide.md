@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "pest coverage guide"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Pest Coverage Guide
@@ -142,7 +145,11 @@ protected $except = [ // @pest-ignore-type
 
 ## Configuration in phpunit.xml
 
+<<<<<<< HEAD
 No additional configuration is required for type coverage-it analyzes all PHP files directly.
+=======
+No additional configuration is required for type coverage—it analyzes all PHP files directly.
+>>>>>>> laraxot/dev
 
 ## Laravel Modules Integration
 

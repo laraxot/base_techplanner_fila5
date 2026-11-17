@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "database mail system"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema di Gestione Email Basato su Database - il progetto
@@ -315,7 +318,10 @@ php artisan notify:mail-template:test
 
 ## Collegamenti
 - [Notify Module](../readme.md)
+<<<<<<< HEAD
 - [Notify Module](../README.md)
+=======
+>>>>>>> laraxot/dev
 - [Email Templates](email-templates.md)
 - [Mail Queue](mail-queue.md)
 

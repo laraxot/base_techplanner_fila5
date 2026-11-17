@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "filament grapesjs"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: filament-grapesjs.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Abilitare il plugin `gjs-blocks-basic` in GrapesJS

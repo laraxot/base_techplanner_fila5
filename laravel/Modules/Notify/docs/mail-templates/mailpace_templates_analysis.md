@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "mailpace templates analysis"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: mailpace-templates-analysis.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Mailpace Templates
@@ -221,6 +224,10 @@ return [
 ## Collegamenti
 - [Mailpace Templates](https://github.com/mailpace/templates)
 - [Email Best Practices](./EMAIL_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Template Management](../template-management.md) 
 - [Email Best Practices](./email_best_practices.md)
 - [Template Management](../template-management.md) 
+=======
+- [Template Management](./template-management.md) 
+>>>>>>> laraxot/dev

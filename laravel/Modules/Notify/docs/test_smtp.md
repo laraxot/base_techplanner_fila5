@@ -11,7 +11,10 @@ tags: [migrato-da-txt, notify]
 converted_from: test_smtp.txt
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 //----------------------------------------------------------------------------

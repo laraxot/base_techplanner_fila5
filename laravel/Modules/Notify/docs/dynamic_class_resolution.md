@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "dynamic class resolution"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Risoluzione Dinamica delle Classi nei Factory Pattern

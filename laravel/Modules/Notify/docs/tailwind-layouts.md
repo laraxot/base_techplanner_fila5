@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "tailwind layouts"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Layout con Filament Components
@@ -295,4 +298,8 @@ return [
 - [Documentazione Form](tailwind_forms.md)
 - [Documentazione Notifiche](tailwind_notifications.md)
 - [Documentazione Componenti](tailwind_components.md)
+<<<<<<< HEAD
 - [Architettura](ARCHITECTURE.md)
+=======
+- [Architettura](architecture.md)
+>>>>>>> laraxot/dev

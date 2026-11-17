@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "sms provider configuration"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Configurazione Provider SMS per le Notifiche
@@ -479,9 +482,15 @@ Log::info('SMS sent', [
 
 ## Collegamenti alla Documentazione Correlata
 
+<<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](telegram_notifications_guide.md)
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+=======
+- [MULTI_CHANNEL_NOTIFICATIONS.md](./MULTI_CHANNEL_NOTIFICATIONS.md)
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
+>>>>>>> laraxot/dev

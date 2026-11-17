@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - Nested Resource Implementation Guide
@@ -80,14 +83,22 @@ The Notify module provides a comprehensive notification system for the Laraxot s
 
 ### 7. Customer Communication History
 **Parent Resource:** CustomerResource (from App module)
+<<<<<<< HEAD
 **Parent Resource:** CustomerResource (from <nome progetto> module)
+=======
+**Parent Resource:** CustomerResource (from Quaeris module)
+>>>>>>> laraxot/dev
 **Child Resource:** NotificationLogResource
 **Relationship:** Customer-related notifications (via contacts/surveys)
 **Justification:** Track all communication with customers across different channels for relationship management.
 
 ### 8. Survey Communication Logs
 **Parent Resource:** SurveyPdfResource (from App module)
+<<<<<<< HEAD
 **Parent Resource:** SurveyPdfResource (from <nome progetto> module)
+=======
+**Parent Resource:** SurveyPdfResource (from Quaeris module)
+>>>>>>> laraxot/dev
 **Child Resource:** NotificationLogResource
 **Relationship:** Survey-related notifications (via survey contacts)
 **Justification:** Monitor all communication related to specific surveys for better survey management.
@@ -126,7 +137,11 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 2. **Parent Resource Enhancement:**
    ```php
    use SevendaysDigital\FilamentNestedResources\Columns\ChildResourceLink;
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> laraxot/dev
    public static function table(Table $table): Table
    {
        return $table->columns([
@@ -146,7 +161,11 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
    {
        return $query->where('template_id', $templateId);
    }
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> laraxot/dev
    // For polymorphic relationships
    public function scopeOfUserAsRecipient($query, $userId)
    {
@@ -195,7 +214,11 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 
 ### 4. Integration with Other Modules
 - Handle relationships with App module (surveys and contacts)
+<<<<<<< HEAD
 - Handle relationships with <nome progetto> module (surveys and contacts)
+=======
+- Handle relationships with Quaeris module (surveys and contacts)
+>>>>>>> laraxot/dev
 - Coordinate with User module for recipient management
 - Integrate with Tenant module for multi-tenant operations
 
@@ -231,4 +254,8 @@ Following the documented approach in `Modules/UI/docs/filament/nested-resource.m
 ### 3. Cross-module Communication Integration
 - Unified communication history across modules
 - Business process notifications
+<<<<<<< HEAD
 - Automated communication workflows
+=======
+- Automated communication workflows
+>>>>>>> laraxot/dev

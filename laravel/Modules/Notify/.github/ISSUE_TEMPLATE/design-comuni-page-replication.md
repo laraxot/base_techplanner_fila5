@@ -128,5 +128,10 @@ Replicare la pagina **[pagina-name].html** da Design Comuni Italia.
 
 - **Design Comuni**: https://italia.github.io/design-comuni-pagine-statiche/sito/[pagina-name].html
 - **Block Analysis**: `_bmad-output/design-comuni-block-analysis.md`
+<<<<<<< HEAD
 - **Master Plan**: `Themes/Sixteen/docs/design-comuni/master-implementation-plan.md`
 - **Architecture**: `Themes/Sixteen/docs/design-comuni/architectural-decisions.md`
+=======
+- **Master Plan**: `Themes/Sixteen/docs/design-comuni/MASTER_IMPLEMENTATION_PLAN.md`
+- **Architecture**: `Themes/Sixteen/docs/design-comuni/ARCHITECTURAL_DECISIONS.md`
+>>>>>>> laraxot/dev

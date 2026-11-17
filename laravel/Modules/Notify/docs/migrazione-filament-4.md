@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "migrazione filament 4"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migrazione filament 4"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Notify Module - Migrazione a Filament 4
 
 ## Panoramica Notify Module
@@ -44,19 +58,27 @@ class NotificationTemplateResource extends Resource
                     ->maxLength(255)
                     ->live(onBlur: true),
 <<<<<<< HEAD
-                    
-=======
-
->>>>>>> 6ed19256f (.)
-                TextInput::make('subject')
-                    ->required()
-                    ->maxLength(255)
-                    ->placeholder('Email subject line'),
 <<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
+                TextInput::make('subject')
+                    ->required()
+                    ->maxLength(255)
+                    ->placeholder('Email subject line'),
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    
+=======
+
+>>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 MarkdownEditor::make('content')
                     ->required()
                     ->toolbarButtons(['bold', 'italic', 'link', 'bulletList', 'orderedList'])
@@ -68,10 +90,14 @@ class NotificationTemplateResource extends Resource
                     }),
             ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+            
+>>>>>>> laraxot/dev
             Section::make('Channel Configuration')->schema([
                 CheckboxList::make('channels')
                     ->options([
@@ -92,10 +118,14 @@ class NotificationTemplateResource extends Resource
                         }
                     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 KeyValue::make('variables')
                     ->label('Template Variables')
                     ->keyLabel('Variable Name')
@@ -104,19 +134,27 @@ class NotificationTemplateResource extends Resource
                     ->reorderable()
                     ->columnSpanFull(),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 Toggle::make('is_active')
                     ->default(true)
                     ->label('Template Active'),
             ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+            
+>>>>>>> laraxot/dev
             Section::make('Advanced Settings')->schema([
                 TextInput::make('priority')
                     ->numeric()
@@ -125,19 +163,27 @@ class NotificationTemplateResource extends Resource
                     ->maxValue(10)
                     ->helperText('1 = Highest, 10 = Lowest'),
 <<<<<<< HEAD
-                    
-=======
-
->>>>>>> 6ed19256f (.)
-                Toggle::make('track_opens')
-                    ->default(false)
-                    ->label('Track Email Opens')
-                    ->visible(fn($get) => in_array('email', $get('channels') ?? [])),
 <<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
+                Toggle::make('track_opens')
+                    ->default(false)
+                    ->label('Track Email Opens')
+                    ->visible(fn($get) => in_array('email', $get('channels') ?? [])),
+<<<<<<< HEAD
+<<<<<<< HEAD
+                    
+=======
+
+>>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 Toggle::make('track_clicks')
                     ->default(false)
                     ->label('Track Link Clicks')
@@ -155,11 +201,15 @@ class NotificationTemplateResource extends Resource
                     ->sortable()
                     ->weight('bold'),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     
                 TextColumn::make('subject')
                     ->limit(40)
                     ->tooltip(fn($record) => $record->subject),
                     
+<<<<<<< HEAD
 =======
 
                 TextColumn::make('subject')
@@ -167,6 +217,8 @@ class NotificationTemplateResource extends Resource
                     ->tooltip(fn($record) => $record->subject),
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                 BadgeColumn::make('channels')
                     ->formatStateUsing(fn($state) => count($state ?? []) . ' channels')
                     ->colors([
@@ -175,35 +227,49 @@ class NotificationTemplateResource extends Resource
                         'danger' => fn($state) => count($state ?? []) <= 1,
                     ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 TextColumn::make('usage_count')
                     ->getStateUsing(fn($record) => $record->notifications()->count())
                     ->numeric()
                     ->sortable()
                     ->label('Times Used'),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 BadgeColumn::make('success_rate')
                     ->getStateUsing(function($record) {
                         $total = $record->notifications()->count();
                         if ($total === 0) return 'N/A';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                         
                         $successful = $record->notifications()
                             ->where('status', 'delivered')->count();
                         
+<<<<<<< HEAD
 =======
 
                         $successful = $record->notifications()
                             ->where('status', 'delivered')->count();
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                         return round(($successful / $total) * 100) . '%';
                     })
                     ->colors([
@@ -212,11 +278,15 @@ class NotificationTemplateResource extends Resource
                         'danger' => fn($state) => str_replace('%', '', $state) < 70,
                     ]),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     
                 IconColumn::make('is_active')
                     ->boolean()
                     ->sortable(),
                     
+<<<<<<< HEAD
 =======
 
                 IconColumn::make('is_active')
@@ -224,6 +294,8 @@ class NotificationTemplateResource extends Resource
                     ->sortable(),
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                 TextColumn::make('updated_at')
                     ->dateTime()
                     ->sortable()
@@ -239,10 +311,14 @@ class NotificationTemplateResource extends Resource
                     })
                     ->modalWidth('4xl'),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 Action::make('send_test')
                     ->icon('heroicon-o-paper-airplane')
                     ->color('success')
@@ -253,11 +329,15 @@ class NotificationTemplateResource extends Resource
                             ))
                             ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                             
                         TextInput::make('recipient')
                             ->required()
                             ->helperText('Email, phone, or username depending on channel'),
                             
+<<<<<<< HEAD
 =======
 
                         TextInput::make('recipient')
@@ -265,6 +345,8 @@ class NotificationTemplateResource extends Resource
                             ->helperText('Email, phone, or username depending on channel'),
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                         KeyValue::make('test_data')
                             ->label('Test Variables')
                             ->default(fn($record) => collect($record->variables ?? [])->mapWithKeys(
@@ -281,20 +363,28 @@ class NotificationTemplateResource extends Resource
                             )
                         );
 <<<<<<< HEAD
+<<<<<<< HEAD
                         
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                        
+>>>>>>> laraxot/dev
                         Notification::make()
                             ->title('Test notification sent')
                             ->success()
                             ->send();
                     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 Action::make('duplicate')
                     ->icon('heroicon-o-document-duplicate')
                     ->action(function($record) {
@@ -303,10 +393,14 @@ class NotificationTemplateResource extends Resource
                         $copy->is_active = false;
                         $copy->save();
 <<<<<<< HEAD
+<<<<<<< HEAD
                         
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                        
+>>>>>>> laraxot/dev
                         return redirect(static::getUrl('edit', ['record' => $copy]));
                     }),
             ])
@@ -334,10 +428,14 @@ class NotificationTemplateResource extends Resource
                         }
                     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 BulkAction::make('bulk_activate')
                     ->icon('heroicon-o-check-circle')
                     ->color('success')
@@ -356,11 +454,15 @@ class NotificationTemplateResource extends Resource
                         }
                     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     
                 Filter::make('active_only')
                     ->query(fn($query) => $query->where('is_active', true))
                     ->label('Active Templates'),
                     
+<<<<<<< HEAD
 =======
 
                 Filter::make('active_only')
@@ -368,6 +470,8 @@ class NotificationTemplateResource extends Resource
                     ->label('Active Templates'),
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                 Filter::make('recently_used')
                     ->query(function($query) {
                         return $query->whereHas('notifications', function($q) {
@@ -400,6 +504,9 @@ class NotificationDashboardWidget extends Widget
                         default => $state,
                     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     
                 TextColumn::make('sent_today')
                     ->numeric()
@@ -413,6 +520,7 @@ class NotificationDashboardWidget extends Widget
                     ->numeric()
                     ->color('danger'),
                     
+<<<<<<< HEAD
 =======
 
                 TextColumn::make('sent_today')
@@ -428,6 +536,8 @@ class NotificationDashboardWidget extends Widget
                     ->color('danger'),
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                 TextColumn::make('success_rate')
                     ->formatStateUsing(fn($state) => $state . '%')
                     ->color(fn($state) => match(true) {
@@ -436,10 +546,14 @@ class NotificationDashboardWidget extends Widget
                         default => 'danger',
                     }),
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                    
+>>>>>>> laraxot/dev
                 TextColumn::make('avg_delivery_time')
                     ->formatStateUsing(fn($state) => $state . 's')
                     ->color('info'),
@@ -458,10 +572,14 @@ class NotificationDashboardWidget extends Widget
             ]);
     }
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+    
+>>>>>>> laraxot/dev
     private function getNotificationStats(): array
     {
         return ['email', 'sms', 'push', 'whatsapp', 'telegram', 'slack']
@@ -469,11 +587,15 @@ class NotificationDashboardWidget extends Widget
                 $todayNotifications = Notification::where('channel', $channel)
                     ->whereDate('created_at', today());
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     
                 $sent = $todayNotifications->count();
                 $delivered = $todayNotifications->where('status', 'delivered')->count();
                 $failed = $todayNotifications->where('status', 'failed')->count();
                 
+<<<<<<< HEAD
 =======
 
                 $sent = $todayNotifications->count();
@@ -481,6 +603,8 @@ class NotificationDashboardWidget extends Widget
                 $failed = $todayNotifications->where('status', 'failed')->count();
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                 return [
                     'channel' => $channel,
                     'sent_today' => $sent,
@@ -503,11 +627,15 @@ class ContactNotificationResource extends Resource
     protected static ?string $parentResource = ContactResource::class;
     protected static string $relationship = 'notifications';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
     
     // URL: /admin/contacts/123/notifications
 }
 
 // Template -> Sent Notifications relationship  
+<<<<<<< HEAD
 =======
 
     // URL: /admin/contacts/123/notifications
@@ -515,15 +643,21 @@ class ContactNotificationResource extends Resource
 
 // Template -> Sent Notifications relationship
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 class TemplateNotificationResource extends Resource
 {
     protected static ?string $parentResource = NotificationTemplateResource::class;
     protected static string $relationship = 'notifications';
 <<<<<<< HEAD
+<<<<<<< HEAD
     
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+    
+>>>>>>> laraxot/dev
     // URL: /admin/notification-templates/456/notifications
 }
 ```
@@ -536,10 +670,14 @@ class BulkNotificationAction extends Action
     {
         parent::setUp();
 <<<<<<< HEAD
+<<<<<<< HEAD
         
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+        
+>>>>>>> laraxot/dev
         $this
             ->form([
                 Select::make('template_id')
@@ -547,6 +685,9 @@ class BulkNotificationAction extends Action
                     ->searchable()
                     ->required(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     
                 CheckboxList::make('channels')
                     ->options([
@@ -556,6 +697,7 @@ class BulkNotificationAction extends Action
                     ])
                     ->required(),
                     
+<<<<<<< HEAD
 =======
 
                 CheckboxList::make('channels')
@@ -567,16 +709,22 @@ class BulkNotificationAction extends Action
                     ->required(),
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                 Select::make('contact_group_id')
                     ->relationship('contactGroups', 'name')
                     ->multiple()
                     ->searchable(),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
                     
                 DateTimePicker::make('scheduled_at')
                     ->label('Schedule For')
                     ->native(false),
                     
+<<<<<<< HEAD
 =======
 
                 DateTimePicker::make('scheduled_at')
@@ -584,6 +732,8 @@ class BulkNotificationAction extends Action
                     ->native(false),
 
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
                 Toggle::make('test_mode')
                     ->helperText('Send to 10 random contacts only'),
             ])
@@ -596,10 +746,14 @@ class BulkNotificationAction extends Action
                     testMode: $data['test_mode'] ?? false
                 );
 <<<<<<< HEAD
+<<<<<<< HEAD
                 
 =======
 
 >>>>>>> 6ed19256f (.)
+=======
+                
+>>>>>>> laraxot/dev
                 dispatch($job);
             });
     }
@@ -615,10 +769,14 @@ class BulkNotificationAction extends Action
 - **Performance analytics** per optimization
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### 2. Template Management Revolution  
 =======
 ### 2. Template Management Revolution
 >>>>>>> 6ed19256f (.)
+=======
+### 2. Template Management Revolution  
+>>>>>>> laraxot/dev
 ```php
 // Advanced template features
 $template = NotificationTemplate::create([
@@ -638,10 +796,14 @@ $template = NotificationTemplate::create([
 - **Live delivery tracking**
 - **Channel performance comparison**
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Template effectiveness metrics**  
 =======
 - **Template effectiveness metrics**
 >>>>>>> 6ed19256f (.)
+=======
+- **Template effectiveness metrics**  
+>>>>>>> laraxot/dev
 - **Failure analysis e automated retry**
 
 ### 4. Advanced Scheduling & Automation
@@ -664,10 +826,14 @@ NotificationScheduler::make()
 # Migration per existing templates
 ⚠️  Schema changes breaking existing templates
 <<<<<<< HEAD
+<<<<<<< HEAD
 ⚠️  Variable system restructuring needed  
 =======
 ⚠️  Variable system restructuring needed
 >>>>>>> 6ed19256f (.)
+=======
+⚠️  Variable system restructuring needed  
+>>>>>>> laraxot/dev
 ⚠️  Channel configuration format changes
 ```
 
@@ -692,10 +858,14 @@ NotificationScheduler::make()
 // Mock services per testing channels:
 - Email sandbox environments
 <<<<<<< HEAD
+<<<<<<< HEAD
 - SMS simulation services  
 =======
 - SMS simulation services
 >>>>>>> 6ed19256f (.)
+=======
+- SMS simulation services  
+>>>>>>> laraxot/dev
 - Push notification test devices
 - Webhook endpoint testing
 ```
@@ -715,10 +885,14 @@ NotificationScheduler::make()
 4. 🔄 Create real-time dashboard widgets
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ### Fase 3: Advanced Features (3-4 giorni)  
 =======
 ### Fase 3: Advanced Features (3-4 giorni)
 >>>>>>> 6ed19256f (.)
+=======
+### Fase 3: Advanced Features (3-4 giorni)  
+>>>>>>> laraxot/dev
 1. 🆕 Multi-channel bulk operations
 2. 🆕 Analytics e reporting system
 3. 🆕 A/B testing framework
@@ -744,10 +918,14 @@ NotificationScheduler::make()
 
 1. **Complete template system redesign**
 <<<<<<< HEAD
+<<<<<<< HEAD
 2. **Real-time multi-channel monitoring**  
 =======
 2. **Real-time multi-channel monitoring**
 >>>>>>> 6ed19256f (.)
+=======
+2. **Real-time multi-channel monitoring**  
+>>>>>>> laraxot/dev
 3. **Advanced personalization engine**
 4. **Comprehensive analytics dashboard**
 5. **Smart delivery optimization**
@@ -763,10 +941,14 @@ NotificationScheduler::make()
 
 - **Foundation recovery**: 3-4 giorni
 <<<<<<< HEAD
+<<<<<<< HEAD
 - **Core Filament 4 migration**: 5-6 giorni  
 =======
 - **Core Filament 4 migration**: 5-6 giorni
 >>>>>>> 6ed19256f (.)
+=======
+- **Core Filament 4 migration**: 5-6 giorni  
+>>>>>>> laraxot/dev
 - **Advanced features**: 4-5 giorni
 - **Integration testing**: 4-5 giorni
 - **Performance optimization**: 2-3 giorni
@@ -778,10 +960,14 @@ NotificationScheduler::make()
 **MIGRAZIONE PRIORITY ALTA** - Il modulo Notify ha **perso componenti critici** e la migrazione a Filament 4 è un'opportunità perfetta per:
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ✅ **Ricostruire funzionalità mancanti** con architettura moderna  
 =======
 ✅ **Ricostruire funzionalità mancanti** con architettura moderna
 >>>>>>> 6ed19256f (.)
+=======
+✅ **Ricostruire funzionalità mancanti** con architettura moderna  
+>>>>>>> laraxot/dev
 ✅ **Implementare real-time monitoring** essenziale per notifications
 ✅ **Migliorare drasticamente UX** per template management
 ✅ **Aggiungere analytics avanzate** per optimization
@@ -790,7 +976,11 @@ NotificationScheduler::make()
 **Raccomandazione**: Procedere nella **seconda wave** di migrazione, dopo aver validato l'approccio su moduli più semplici.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **ROI**: **Molto alto** considerando che risolve problemi attuali while adding significant value attraverso modern features.
 =======
 **ROI**: **Molto alto** considerando che risolve problemi attuali while adding significant value attraverso modern features.
 >>>>>>> 6ed19256f (.)
+=======
+**ROI**: **Molto alto** considerando che risolve problemi attuali while adding significant value attraverso modern features.
+>>>>>>> laraxot/dev

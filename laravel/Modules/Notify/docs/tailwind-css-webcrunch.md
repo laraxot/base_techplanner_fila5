@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "tailwind css webcrunch"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Tailwind CSS: Approfondimento Collezione Webcrunch

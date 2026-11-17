@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation standards progress 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation standards progress 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Progresso Standardizzazione Traduzioni
 
 ## Stato Attuale - 12/05/2025
@@ -15,11 +29,15 @@
 
 3. **File Problematici Identificati**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
    - `Modules/Notify/lang/it/send_aws_email.php`
    - `Modules/Notify/lang/it/setting.php`
    - `Modules/Notify/lang/it/edit_mail_template.php`
    - `Modules/Notify/lang/it/send_netfun_sms.php`
    - `Modules/Notify/lang/it/notification_template.php`
+<<<<<<< HEAD
 =======
    - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_aws_email.php`
    - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/setting.php`
@@ -27,18 +45,24 @@
    - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_netfun_sms.php`
    - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/notification_template.php`
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
    - E altri 15 file (elenco completo in appendice)
 
 ### Correzioni Implementate
 
 1. **Documentazione Standard**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
 
 2. **File Corretti**
    - Creato `Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
    - Aggiornato `Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
+<<<<<<< HEAD
 =======
    - Creato `/var/www/html/saluteora/laravel/Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
    - Creato `/var/www/html/saluteora/laravel/Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
@@ -47,18 +71,24 @@
    - Creato `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
    - Aggiornato `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
    - Rimosso il file con naming errato `send_whats_app.php`
 
 ### Prossime Correzioni da Implementare
 
 1. **File da Correggere Prioritariamente**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
    - `Modules/Notify/lang/it/send_email.php`
    - `Modules/Notify/lang/it/send_sms.php`
    - `Modules/Notify/lang/it/send_telegram.php`
 
 2. **Verifiche da Eseguire**
    - Analisi della cartella `Modules/Notify/lang/en/` per identificare problemi simili
+<<<<<<< HEAD
 =======
    - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_email.php`
    - `/var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_sms.php`
@@ -67,6 +97,8 @@
 2. **Verifiche da Eseguire**
    - Analisi della cartella `/var/www/html/saluteora/laravel/Modules/Notify/lang/en/` per identificare problemi simili
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
    - Controllo dei riferimenti nel codice che potrebbero puntare ai vecchi file
 
 ## Documentazione di Riferimento
@@ -84,6 +116,9 @@
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Modules/Notify/lang/it/send_aws_email.php
 Modules/Notify/lang/it/setting.php
 Modules/Notify/lang/it/edit_mail_template.php
@@ -104,6 +139,7 @@ Modules/Notify/lang/it/send_firebase_push_notification.php
 Modules/Notify/lang/it/send_email.php
 Modules/Notify/lang/it/send_spatie_email.php
 Modules/Notify/lang/it/create_mail_template.php
+<<<<<<< HEAD
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_aws_email.php
 /var/www/html/saluteora/laravel/Modules/Notify/lang/it/setting.php
@@ -126,4 +162,6 @@ Modules/Notify/lang/it/create_mail_template.php
 /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_spatie_email.php
 /var/www/html/saluteora/laravel/Modules/Notify/lang/it/create_mail_template.php
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 ```

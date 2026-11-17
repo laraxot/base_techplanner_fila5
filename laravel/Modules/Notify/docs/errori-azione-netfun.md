@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "errori azione netfun"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi degli Errori in SendNetfunSMSAction

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "xotbase extension rule"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🔴 XotBase Extension Rule - PHILOSOPHY
@@ -18,6 +21,18 @@ status: draft
 **Priority**: BLOCKER
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "xotbase extension rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "xotbase extension rule"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 The Rule
 
 > **TUTTI** i widget FILAMENT devono estendere `XotBaseWidget`

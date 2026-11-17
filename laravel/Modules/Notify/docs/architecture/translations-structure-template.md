@@ -16,8 +16,11 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
+<<<<<<< HEAD
 status: superseded
 superseded_by: ../translations-structure-template.md
+=======
+>>>>>>> laraxot/dev
 ---
 # Template di Struttura per le Traduzioni
 

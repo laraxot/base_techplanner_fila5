@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "notification implementation"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notification System Implementation Plan

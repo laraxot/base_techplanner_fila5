@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "json best practices"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per Migrazioni JSON
@@ -219,7 +222,10 @@ protected function rollback(): void
 ## Collegamenti Correlati
 
 - [Documentazione Migrazioni](./MIGRATION_RULES.md)
+<<<<<<< HEAD
 - [Documentazione Migrazioni](./migration_rules.md)
+=======
+>>>>>>> laraxot/dev
 - [Gestione Errori](./ERROR_HANDLING.md)
 - [Best Practices Database](./DATABASE_BEST_PRACTICES.md)
 

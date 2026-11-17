@@ -2,16 +2,26 @@
 qmd: "mail consolidated"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "mail: Consolidated Documentation"
+=======
+title: "mail — Consolidated Documentation"
+>>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
 ---
 
 # mail: Consolidated Documentation
+=======
+---
+
+# mail — Consolidated Documentation
+>>>>>>> laraxot/dev
 
 Consolidated from **8** individual files.
 
@@ -30,7 +40,11 @@ Consolidated from **8** individual files.
 
 ## mail-layouts-1
 
+<<<<<<< HEAD
 *Consolidated from: `mail-layouts.md`*
+=======
+*Consolidated from: `mail-layouts-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Layout delle Email"
 type: concept
@@ -41,6 +55,7 @@ qmd: "mail-layouts-1 layout delle email"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -52,6 +67,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -117,7 +140,11 @@ class WelcomeMail extends TemplateMailable
 
 ## mail-layouts-guide-1
 
+<<<<<<< HEAD
 *Consolidated from: `mail-layouts-guide.md`*
+=======
+*Consolidated from: `mail-layouts-guide-1.md`*
+>>>>>>> laraxot/dev
 
 
 ## Introduzione
@@ -249,24 +276,36 @@ I CSS sono definiti inline all'interno di ciascun layout per massimizzare la com
 
 ## Integrazione con MailPace
 
+<<<<<<< HEAD
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](../../mail-templates/mailpace_templates_integration.md) per dettagli sull'integrazione.
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](../../mail-templates/mailpace_templates_integration.md) per dettagli sull'integrazione.
+=======
+I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md) per dettagli sull'integrazione.
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 
 - [Laravel Mail Documentation](https://laravel.com/docs/mail)
 - [Spatie Email Documentation](./SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [HTML Email Compatibility Guide](../../mail-templates/html_email_compatibility.md)
 - [Spatie Email Documentation](../../spatie_email_usage_guide.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
 - [HTML Email Compatibility Guide](../../mail-templates/html_email_compatibility.md)
+=======
+- [HTML Email Compatibility Guide](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+>>>>>>> laraxot/dev
 
 ---
 
 ## mail-layouts-guide-2
 
+<<<<<<< HEAD
 *Consolidated from: `mail-layouts-guide.md`*
+=======
+*Consolidated from: `mail-layouts-guide-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Guida ai Layout Email nel Modulo Notify"
 type: guide
@@ -277,6 +316,7 @@ qmd: "mail-layouts-guide-2 guida ai layout email nel modulo notify"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -288,6 +328,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -423,14 +471,28 @@ I CSS sono definiti inline all'interno di ciascun layout per massimizzare la com
 
 ## Integrazione con MailPace
 
+<<<<<<< HEAD
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](../../mail-templates/mailpace-templates-integration.md) per dettagli sull'integrazione.
+=======
+I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md) per dettagli sull'integrazione.
+I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](./mail-templates/mailpace-templates-integration-1.md) per dettagli sull'integrazione.
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 
 - [Laravel Mail Documentation](https://laravel.com/docs/mail)
+<<<<<<< HEAD
 - [Spatie Email Documentation](../../spatie-email-usage-guide.md)
 - [Email Best Practices](../../mail-templates/email-best-practices.md)
 - [HTML Email Compatibility Guide](../../mail-templates/html-email-compatibility.md)
+=======
+- [Spatie Email Documentation](./spatie-email-usage-guide.md)
+- [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+- [HTML Email Compatibility Guide](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+- [Spatie Email Documentation](./spatie-email-usage-guide-1.md)
+- [Email Best Practices](./mail-templates/email-best-practices-1.md)
+- [HTML Email Compatibility Guide](./mail-templates/html-email-compatibility-1.md)
+>>>>>>> laraxot/dev
 ---
 
 ## mail-layouts-guide
@@ -568,18 +630,26 @@ I CSS sono definiti inline all'interno di ciascun layout per massimizzare la com
 
 ## Integrazione con MailPace
 
+<<<<<<< HEAD
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](../../mail-templates/mailpace_templates_integration.md) per dettagli sull'integrazione.
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](../../mail-templates/mailpace_templates_integration.md) per dettagli sull'integrazione.
+=======
+I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md) per dettagli sull'integrazione.
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 
 - [Laravel Mail Documentation](https://laravel.com/docs/mail)
 - [Spatie Email Documentation](./SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [HTML Email Compatibility Guide](../../mail-templates/html_email_compatibility.md)
 - [Spatie Email Documentation](../../spatie_email_usage_guide.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
 - [HTML Email Compatibility Guide](../../mail-templates/html_email_compatibility.md)
+=======
+- [HTML Email Compatibility Guide](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -936,6 +1006,7 @@ class EmailLayoutResource extends XotBaseResource
 - [Base Layout](../resources/mail-layouts/base.html)
 - [Default Layout](../resources/mail-layouts/base/default.html)
 - [Responsive Layout](../resources/mail-layouts/base/responsive.html)
+<<<<<<< HEAD
 - [Spatie Database Mail Templates Deep Dive](../../spatie-database-mail-templates-deep-dive.md)
 - [Mail Layouts README](../../../resources/mail-layouts/README.md)
 - [SpatieEmail Class](../../../app/Emails/SpatieEmail.php)
@@ -944,6 +1015,8 @@ class EmailLayoutResource extends XotBaseResource
 - [Base Layout](../../../resources/mail-layouts/base.html)
 - [Default Layout](../../../resources/mail-layouts/base/default.html)
 - [Responsive Layout](../../../resources/mail-layouts/base/responsive.html)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -1208,18 +1281,26 @@ I CSS sono definiti inline all'interno di ciascun layout per massimizzare la com
 
 ## Integrazione con MailPace
 
+<<<<<<< HEAD
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](../../mail-templates/mailpace_templates_integration.md) per dettagli sull'integrazione.
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](../../mail-templates/mailpace_templates_integration.md) per dettagli sull'integrazione.
+=======
+I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md) per dettagli sull'integrazione.
+>>>>>>> laraxot/dev
 
 ## Riferimenti
 
 - [Laravel Mail Documentation](https://laravel.com/docs/mail)
 - [Spatie Email Documentation](./SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [HTML Email Compatibility Guide](../../mail-templates/html_email_compatibility.md)
 - [Spatie Email Documentation](../../spatie_email_usage_guide.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
 - [HTML Email Compatibility Guide](../../mail-templates/html_email_compatibility.md)
+=======
+- [HTML Email Compatibility Guide](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+>>>>>>> laraxot/dev
 
 ---
 

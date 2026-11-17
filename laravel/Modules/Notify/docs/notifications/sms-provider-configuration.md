@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "sms provider configuration"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
 ---
 
@@ -14,6 +15,14 @@ status: draft
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
+=======
+---
+
+# Configurazione Provider SMS per le Notifiche 
+
+Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
+Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di Quaeris, con focus sui diversi provider e sulla loro configurazione.
+>>>>>>> laraxot/dev
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di App, con focus sui diversi provider e sulla loro configurazione.
 
 ## Indice
@@ -76,7 +85,11 @@ class AppointmentNotification extends Notification
     {
         return ['mail', TwilioChannel::class];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function toTwilio($notifiable)
     {
         return (new TwilioSmsMessage())
@@ -121,7 +134,11 @@ composer require laravel-notification-channels/vonage
 VONAGE_KEY=abcd1234
 VONAGE_SECRET=xyz789...
 VONAGE_SMS_FROM=<nome progetto>
+<<<<<<< HEAD
 VONAGE_SMS_FROM=<nome progetto>
+=======
+VONAGE_SMS_FROM=Quaeris
+>>>>>>> laraxot/dev
 VONAGE_SMS_FROM=App
 ```
 
@@ -137,7 +154,11 @@ class AppointmentNotification extends Notification
     {
         return ['mail', VonageChannel::class];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function toVonage($notifiable)
     {
         return (new VonageMessage())
@@ -433,7 +454,11 @@ $this->app->bind(CustomSMSChannel::class, function ($app) {
     if ($app->environment('testing')) {
         return new TestSMSChannel();
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     return new CustomSMSChannel(
         new HttpClient(),
         config('services.sms.base_url'),

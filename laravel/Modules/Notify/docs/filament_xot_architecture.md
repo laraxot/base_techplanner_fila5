@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "filament xot architecture"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Architettura Filament : Pattern XotBase

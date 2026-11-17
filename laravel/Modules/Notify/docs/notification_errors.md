@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "notification errors"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: notification-errors.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Errori Comuni nelle Notifiche

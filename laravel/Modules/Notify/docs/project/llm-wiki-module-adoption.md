@@ -7,10 +7,16 @@ updated: 2026-09-26
 qmd: "llm wiki module adoption"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
 ---
 
 # LLM Wiki: Adozione per Moduli e Temi
+=======
+---
+
+# LLM Wiki — Adozione per Moduli e Temi
+>>>>>>> laraxot/dev
 
 > Stato: adottato
 > Aggiornato: 2026-04-15
@@ -62,7 +68,11 @@ Se serve una sintesi, va in `docs/wiki/`, non nella fonte.
 
 ## Workflow per gli agenti
 
+<<<<<<< HEAD
 ### Ingest: quando arriva una nuova fonte nel modulo
+=======
+### Ingest — quando arriva una nuova fonte nel modulo
+>>>>>>> laraxot/dev
 
 1. La fonte arriva in `docs/` (o `docs/raw/` se è un dump/asset)
 2. L'agente legge la fonte
@@ -75,9 +85,15 @@ Se serve una sintesi, va in `docs/wiki/`, non nella fonte.
    - Pagine wiki create/aggiornate
    ```
 
+<<<<<<< HEAD
 ### Query: quando si fa una domanda sul dominio del modulo
 
 1. Apri `docs/wiki/index.md`: catalogo dei nodi disponibili
+=======
+### Query — quando si fa una domanda sul dominio del modulo
+
+1. Apri `docs/wiki/index.md` — catalogo dei nodi disponibili
+>>>>>>> laraxot/dev
 2. Apri le pagine wiki rilevanti
 3. Scendi ai file raw solo per verifica puntuale
 4. Se la risposta produce una sintesi riusabile → salva in `docs/wiki/`
@@ -88,7 +104,11 @@ Se serve una sintesi, va in `docs/wiki/`, non nella fonte.
    - Nuove pagine create se applicabile
    ```
 
+<<<<<<< HEAD
 ### Lint: pulizia periodica
+=======
+### Lint — pulizia periodica
+>>>>>>> laraxot/dev
 
 Controlla:
 - Pagine `wiki/` senza backlink da `index.md`
@@ -114,7 +134,11 @@ docs/
 │   └── log.md      # log append-only (obbligatorio)
 ├── raw/
 │   └── index.md    # lista fonti raw esplicite
+<<<<<<< HEAD
 └── README.md       # o index.md: entrypoint umano
+=======
+└── README.md       # o index.md — entrypoint umano
+>>>>>>> laraxot/dev
 ```
 
 ## Priorità wiki per modulo
@@ -140,4 +164,8 @@ Sono l'input per il wiki, non il wiki stesso.
 Il wiki (`docs/wiki/`) è più piccolo, più stabile, più navigabile.
 Deve contenere **sintesi ad alto riuso**, non archivi di report usa-e-getta.
 
+<<<<<<< HEAD
 Vedi anche: [karpathy-llm-wiki-adoption.md](./karpathy-llm-wiki-adoption.md): adozione a livello root progetto.
+=======
+Vedi anche: [karpathy-llm-wiki-adoption.md](./karpathy-llm-wiki-adoption.md) — adozione a livello root progetto.
+>>>>>>> laraxot/dev

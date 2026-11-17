@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 https://github.com/visualbuilder/email-templates
@@ -21,10 +24,16 @@ https://www.mailcoach.app/resources/blog/using-the-mailcoach-markdown-editor-in-
 
 
 ## Collegamenti tra versioni di repositories.md
+<<<<<<< HEAD
 * [repositories.md](repositories.md)
 * [repositories.md](../../../notify/docs/repositories.md)
 * [repositories.md](../../../user/docs/repositories.md)
 * [repositories.md](../../User/docs/repositories.md)
+=======
+* [repositories.md](docs/repositories.md)
+* [repositories.md](../../../notify/docs/repositories.md)
+* [repositories.md](../../../user/docs/repositories.md)
+>>>>>>> laraxot/dev
 
 
 ### Versione Incoming

@@ -7,14 +7,22 @@ updated: 2026-09-26
 qmd: "06 CINEMATIC EFFECTS"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: 06-cinematic-effects.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎨 Cinematic Effects & Particles
 
+<<<<<<< HEAD
 **Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
 **Related**: [06-CINEMATIC-EFFECTS.md](06-CINEMATIC-EFFECTS.md): Full guide
+=======
+**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
+**Related**: [06-CINEMATIC-EFFECTS.md](06-CINEMATIC-EFFECTS.md) — Full guide
+>>>>>>> laraxot/dev
 
 ---
 

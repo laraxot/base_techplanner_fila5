@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "theme translations critical rule"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 14. Theme Translations - CRITICAL RULE

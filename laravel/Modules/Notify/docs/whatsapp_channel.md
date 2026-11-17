@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "whatsapp channel"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/whatsapp-channel.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Implementazione Canale WhatsApp

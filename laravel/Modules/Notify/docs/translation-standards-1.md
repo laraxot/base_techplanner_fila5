@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Standard per le Traduzioni
 
 <<<<<<< HEAD
@@ -5,6 +6,22 @@ Questo documento definisce gli standard e le best practices per la gestione dell
 =======
 Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di SaluteOra, con particolare attenzione al modulo Notify.
 >>>>>>> 6ed19256f (.)
+=======
+---
+title: "translation standards 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation standards 1"
+issues: []
+discussions: []
+---
+
+# Standard per le Traduzioni
+
+Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di <nome progetto>, con particolare attenzione al modulo Notify.
+>>>>>>> laraxot/dev
 
 ## Struttura delle Cartelle
 

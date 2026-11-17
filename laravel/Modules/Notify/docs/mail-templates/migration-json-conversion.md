@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "migration json conversion"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Gestione Conversioni JSON nelle Migrazioni

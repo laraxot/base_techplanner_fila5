@@ -1,11 +1,16 @@
 ---
+<<<<<<< HEAD
 title: "Notify: epic roadmap BMAD"
+=======
+title: "Notify — epic roadmap BMAD"
+>>>>>>> laraxot/dev
 type: epic
 status: active
 module: Notify
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "Notify epic roadmap qualità architettura test documentazione"
+<<<<<<< HEAD
 tags: [docs, notify, bmad]
 ---
 # Notify: epic roadmap
@@ -23,6 +28,24 @@ Ridurre finding PHPStan, mantenere test Pest eseguibili e registrare evidence ri
 Verificare parità Form/Table, traduzioni, autorizzazioni, error handling e integrazioni dichiarate.
 
 ## Epic D: Documentazione viva
+=======
+---
+# Notify — epic roadmap
+
+## Epic A — Contratto e architettura
+
+Documentare API pubbliche, dipendenze, confini e invarianti del modulo.
+
+## Epic B — Qualità verificabile
+
+Ridurre finding PHPStan, mantenere test Pest eseguibili e registrare evidence ripetibile.
+
+## Epic C — UX e integrazione
+
+Verificare parità Form/Table, traduzioni, autorizzazioni, error handling e integrazioni dichiarate.
+
+## Epic D — Documentazione viva
+>>>>>>> laraxot/dev
 
 Collegare ogni decisione a story BMAD, mantenere il second brain e chiudere i duplicati senza cancellare storia.
 

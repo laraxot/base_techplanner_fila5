@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "path and interface rules 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "path and interface rules 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Regole di Percorso e Interfacce nel Modulo Notify
 
 ## Principi Fondamentali
@@ -17,10 +31,14 @@
 ### Directory Fisiche (path su disco)
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/Notify/
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/
+>>>>>>> laraxot/dev
 ├── app/                           # Directory fisica con app minuscolo
 │   ├── Actions/
 │   │   ├── Email/                # Azioni per email

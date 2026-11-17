@@ -16,7 +16,10 @@ related:
   - ../conventions/README.md
   - README.md
   - ../best-practices/naming-conventions.md
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 # 🌐 VHost Governance Rules
 

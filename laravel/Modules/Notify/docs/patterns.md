@@ -7,10 +7,16 @@ title: "Notify Module Patterns"
 type: guide
 tags: [notify, patterns]
 created: 2026-07-28
+<<<<<<< HEAD
 status: draft
 ---
 
 # Notify Module: Patterns
+=======
+---
+
+# Notify Module — Patterns
+>>>>>>> laraxot/dev
 
 ## Async Pattern (Queued Notifications)
 

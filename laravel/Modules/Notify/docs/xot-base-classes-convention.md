@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "xot base classes convention"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Convenzioni per le Classi Base Xot

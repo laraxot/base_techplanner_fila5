@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "llm wiki index"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: stub
+=======
+>>>>>>> laraxot/dev
 ---
 
 # LLM Wiki Index

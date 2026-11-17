@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "model mail template changes"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Modifiche Tecniche al Modello MailTemplate

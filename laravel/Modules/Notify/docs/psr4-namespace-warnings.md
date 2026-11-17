@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "psr4 namespace warnings"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # PSR-4 Namespace Warnings - Modulo Notify
@@ -100,6 +103,18 @@ php artisan optimize:clear
 - [Xot/docs/modules/structure.md](../../xot/docs/modules/structure.md)
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "psr4 namespace warnings"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "psr4 namespace warnings"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Verifica**: Gennaio 2025  
 **Status**: ✅ File conformi PSR-4  
 **Azione**: Nessuna (già corretti)

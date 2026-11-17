@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament template conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament template conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni per Template Blade di Filament
 
 ## Struttura Standard dei Template di Pagina
@@ -68,12 +82,17 @@ Per verificare che tutti i template seguano queste convenzioni:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 grep -L "name=\"description\"" Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"footer\"" Modules/*/resources/views/filament/pages/*.blade.php
 =======
 grep -L "name=\"description\"" /var/www/html/saluteora/laravel/Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"footer\"" /var/www/html/saluteora/laravel/Modules/*/resources/views/filament/pages/*.blade.php
 >>>>>>> 6ed19256f (.)
+=======
+grep -L "name=\"description\"" Modules/*/resources/views/filament/pages/*.blade.php
+grep -L "name=\"footer\"" Modules/*/resources/views/filament/pages/*.blade.php
+>>>>>>> laraxot/dev
 ```
 
 ## Riferimenti

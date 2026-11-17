@@ -9,7 +9,10 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
+<<<<<<< HEAD
 use Modules\Notify\Database\Factories\MailTemplateVersionFactory;
+=======
+>>>>>>> laraxot/dev
 use Modules\Notify\Models\Traits\MailTemplateVersionRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Traits\Updater;
@@ -17,8 +20,11 @@ use RuntimeException;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 /**
+<<<<<<< HEAD
  * @method static MailTemplateVersionFactory factory($count = null, $state = [])
  *
+=======
+>>>>>>> laraxot/dev
  * @property-read ProfileContract|null $creator
  * @property-read MediaCollection<int, Media> $media
  * @property-read int|null $media_count
@@ -70,7 +76,10 @@ class MailTemplateVersion extends BaseModel
     use SoftDeletes;
     use Updater;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> laraxot/dev
     protected $connection = 'notify';
 
     /** @var list<string> */
@@ -81,7 +90,12 @@ class MailTemplateVersion extends BaseModel
         'text_template',
         'version',
         'created_by',
+<<<<<<< HEAD
         'change_notes'];
+=======
+        'change_notes',
+    ];
+>>>>>>> laraxot/dev
 
     public function restoreTemplate(): MailTemplate
     {
@@ -94,7 +108,12 @@ class MailTemplateVersion extends BaseModel
         $template->update([
             'subject' => $this->subject,
             'html_template' => $this->html_template,
+<<<<<<< HEAD
             'text_template' => $this->text_template]);
+=======
+            'text_template' => $this->text_template,
+        ]);
+>>>>>>> laraxot/dev
 
         return $template;
     }
@@ -110,6 +129,11 @@ class MailTemplateVersion extends BaseModel
             'metadata' => 'array',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
+<<<<<<< HEAD
             'deleted_at' => 'datetime'];
+=======
+            'deleted_at' => 'datetime',
+        ];
+>>>>>>> laraxot/dev
     }
 }

@@ -16,7 +16,10 @@ related:
   - "./configuration.md"
   - "./design-comuni-bmad-master-plan.md"
   - "./docs-governance.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # PHASE 2 - EPIC 2.1 - TASK 1: Create /my-tickets Folio Page

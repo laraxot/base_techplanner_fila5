@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "document root architecture"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: document-root-architecture.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Document Root Architecture

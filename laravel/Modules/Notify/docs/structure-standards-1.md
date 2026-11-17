@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "structure standards 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "structure standards 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Standard di Struttura nel Modulo Notify
 
 ## Directory Principali e Convenzioni di Denominazione
@@ -17,16 +31,22 @@ Questo è lo standard stabilito nel modulo Notify per tutti i DTOs:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 Modules/Notify/app/Datas/NetfunSmsData.php
 Modules/Notify/app/Datas/NetfunSmsRequestData.php
 Modules/Notify/app/Datas/NetfunSmsResponseData.php
 Modules/Notify/app/Datas/SmsData.php
+<<<<<<< HEAD
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/app/Datas/NetfunSmsData.php
 /var/www/html/saluteora/laravel/Modules/Notify/app/Datas/NetfunSmsRequestData.php
 /var/www/html/saluteora/laravel/Modules/Notify/app/Datas/NetfunSmsResponseData.php
 /var/www/html/saluteora/laravel/Modules/Notify/app/Datas/SmsData.php
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 ```
 
 ### ❌ ERRATO: ALTERNATIVE COMUNI MA ERRATE
@@ -51,14 +71,19 @@ Modules/Notify/app/Datas/SmsData.php
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 find Modules/Notify/app -type d -name "Data*"
 =======
 find /var/www/html/saluteora/laravel/Modules/Notify/app -type d -name "Data*"
 >>>>>>> 6ed19256f (.)
+=======
+find Modules/Notify/app -type d -name "Data*"
+>>>>>>> laraxot/dev
 ```
 
 Questo restituirà:
 ```
+<<<<<<< HEAD
 <<<<<<< HEAD
 Modules/Notify/app/Datas
 Modules/Notify/app/Datas/SMS
@@ -66,6 +91,10 @@ Modules/Notify/app/Datas/SMS
 /var/www/html/saluteora/laravel/Modules/Notify/app/Datas
 /var/www/html/saluteora/laravel/Modules/Notify/app/Datas/SMS
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/app/Datas
+Modules/Notify/app/Datas/SMS
+>>>>>>> laraxot/dev
 ```
 
 ## Esempi di Importazioni Corrette
@@ -99,6 +128,17 @@ Tutte le classi nella cartella `app/Filament/Clusters/*/Pages` **devono terminar
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "structure standards 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "structure standards 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Esempio
 
 - File: `SendNetfunSMS.php` → `SendNetfunSMSPage.php`

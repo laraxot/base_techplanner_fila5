@@ -8,6 +8,7 @@ qmd: "documentation-audit documentation audit report"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -25,6 +26,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # Documentation Audit Report
@@ -251,8 +262,13 @@ Xot/docs/README.md
 ### 3.4 Duplicate Documentation Patterns
 
 **Same pattern documented multiple times:**
+<<<<<<< HEAD
 - `naming-conventions.md` / `naming-conventions.md` / `naming-rules.md`
 - `phpstan-fixes.md` / `phpstan-fixes-.md` / `phpstan-fixes-gennaio.md`
+=======
+- `naming-conventions.md` / `naming-conventions-2.md` / `naming-rules.md`
+- `phpstan-fixes.md` / `phpstan-fixes-.md` / `phpstan-fixes-early-cycle.md`
+>>>>>>> laraxot/dev
 - `conflict-resolution.md` appears in 10+ modules with identical content
 
 ---
@@ -301,16 +317,23 @@ docs/master/
 ### 5.1 Inconsistent Naming Conventions
 
 **Observed patterns:**
+<<<<<<< HEAD
 - `snake_case.md` (e.g., `phpstan-fixes.md`)
+=======
+- `snake_case.md` (e.g., `phpstan-fixes-2.md`)
+>>>>>>> laraxot/dev
 - `kebab-case.md` (e.g., `phpstan-fixes.md`)
 - `PascalCase.md` (e.g., `PHPStanFixes.md`)
 - `UPPERCASE.md` (e.g., `README.md`)
 - Mixed with suffixes: `phpstan-fixes-.md`, `phpstan-fixes-1.md`
+<<<<<<< HEAD
 - `snake_case.md` (e.g., `phpstan-fixes-documentation-themes-shared.md`)
 - `kebab-case.md` (e.g., `phpstan-fixes.md`)
 - `PascalCase.md` (e.g., `PHPStanFixes.md`)
 - `UPPERCASE.md` (e.g., `README.md`)
 - Mixed with suffixes: `phpstan-fixes-.md`, `phpstan-fixes-documentation-themes.md`
+=======
+>>>>>>> laraxot/dev
 
 **Recommended Standard:**
 - Lowercase kebab-case: `topic-subtopic.md`

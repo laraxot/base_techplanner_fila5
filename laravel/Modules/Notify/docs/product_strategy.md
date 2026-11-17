@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 qmd: "product strategy"
+=======
+qmd: "PRODUCT STRATEGY"
+>>>>>>> laraxot/dev
 issues: []
 discussions: []
 title: "Notify Module - Product Strategy"
@@ -8,8 +12,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/product-strategy.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - Product Strategy

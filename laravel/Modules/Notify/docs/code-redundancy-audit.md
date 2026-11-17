@@ -2,17 +2,28 @@
 qmd: "code redundancy audit"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Code redundancy audit: Notify"
+=======
+title: "Code redundancy audit — Notify"
+>>>>>>> laraxot/dev
 type: source
 status: draft
 tags: [code-audit, redundancy, dry, second-brain, module]
 created: "2026-05-26"
 updated: "2026-05-26"
 owner: "Notify"
+<<<<<<< HEAD
 issue: "https://github.com/provtv/base_ptv_fila5/issues/150"
 ---
 
 # Code redundancy audit: Notify
+=======
+issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/150"
+---
+
+# Code redundancy audit — Notify
+>>>>>>> laraxot/dev
 
 ## Scopo
 
@@ -83,7 +94,11 @@ Ridurre rumore, duplicazione e ambiguita' nel codice di questo module, senza per
 - Religione: DRY e KISS sono dogmi utili solo se servono lo scopo.
 - Filosofia: il codice e' memoria operativa; la documentazione spiega perche' esiste.
 
+<<<<<<< HEAD
 ## Second Brain 2026: note operative
+=======
+## Second Brain 2026 — note operative
+>>>>>>> laraxot/dev
 
 - Markdown locale + Git restano la base piu' portabile: gli agenti leggono/scrivono file senza database esterni.
 - AGENTS.md/SKILL.md devono restare manifest leggeri, con YAML/front matter e routing on-demand.

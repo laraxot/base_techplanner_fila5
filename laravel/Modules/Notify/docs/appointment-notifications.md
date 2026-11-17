@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "appointment notifications"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema di Notifica Appuntamenti - il progetto

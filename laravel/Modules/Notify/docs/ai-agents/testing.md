@@ -7,12 +7,19 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Testing Guide
 
+<<<<<<< HEAD
 > Guida completa per i test in PTVX fila5.
+=======
+> Guida completa per i test in PTVX Fila5 Mono.
+>>>>>>> laraxot/dev
 
 ## 🧪 Testing con Pest
 
@@ -49,10 +56,17 @@ status: draft
 it('creates user successfully', function () {
     // ARRANGE
     $data = UserData::factory()->make();
+<<<<<<< HEAD
 
     // ACT
     $user = CreateUserAction::execute($data);
 
+=======
+    
+    // ACT
+    $user = CreateUserAction::execute($data);
+    
+>>>>>>> laraxot/dev
     // ASSERT
     expect($user)->toBeInstanceOf(User::class);
 });
@@ -63,8 +77,11 @@ it('creates user successfully', function () {
 **Di ritorno:**
 - → [AGENTS.md - Testing Patterns](../../AGENTS.md#testing-patterns)
 - → [agents.md - Testing Patterns](../../agents.md#testing-patterns)
+<<<<<<< HEAD
 - → [AGENTS.md - Testing Patterns](../AGENTS.md#testing-patterns)
 - → [agents.md - Testing Patterns](../agents.md#testing-patterns)
+=======
+>>>>>>> laraxot/dev
 - → [AGENT_MEMORY.md - Testing Patterns](../../AGENT_MEMORY.md#-testing-validation-patterns)
 - → [commands.md](commands.md)
 - → [INDEX](index.md)

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "livewire rules"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 === livewire/core rules ===
@@ -61,6 +64,7 @@ status: draft
 
 
 ---
+<<<<<<< HEAD
 ## Cross-References
 
 - ← [CLAUDE Index](INDEX.md): All Laravel Boost guidelines
@@ -68,4 +72,22 @@ status: draft
 - ← [CLAUDE Index](index.md): All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md): Master index
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md): Original source
+=======
+
+title: "livewire rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "livewire rules"
+issues: []
+discussions: []
+## Cross-References
+
+- ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
+- ← [Main AI Docs Index](../INDEX.md) — Master index
+- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
+- ← [Main AI Docs Index](../index.md) — Master index
+- ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
+>>>>>>> laraxot/dev
 

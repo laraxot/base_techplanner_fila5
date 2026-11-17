@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "decisione basemodel refactoring"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎯 DECISIONE: BaseModel Refactoring - Analisi Approfondita
@@ -17,6 +20,18 @@ status: draft
 **Risposta**: **SÌ, MA CON ECCEZIONI DOCUMENTATE** ✅⚠️
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "decisione basemodel refactoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "decisione basemodel refactoring"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 Situazione Attuale (VERIFICATA)
 
 ### Stato dei 18 Moduli

@@ -7,5 +7,8 @@ updated: 2026-09-26
 qmd: "analysis detailed"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---

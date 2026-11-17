@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "development commands"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Common Development Commands
@@ -28,7 +31,11 @@ npm run build
 php artisan serve
 ```
 
+<<<<<<< HEAD
 **Access:** http://localhost:8000/<nome progetto>/admin/{tenant}
+=======
+**Access:** http://localhost:8000/quaeris/admin/{tenant}
+>>>>>>> laraxot/dev
 **Access:** http://localhost:8000/this-project/admin/{tenant}
 
 ## Testing
@@ -54,7 +61,11 @@ php artisan test --coverage
 ./vendor/bin/pest --coverage --min=80
 
 # Per modulo
+<<<<<<< HEAD
 ./vendor/bin/pest Modules/<nome progetto>/tests --coverage
+=======
+./vendor/bin/pest Modules/Quaeris/tests --coverage
+>>>>>>> laraxot/dev
 ./vendor/bin/pest Modules/App/tests --coverage
 
 # Report HTML → build/coverage/html/

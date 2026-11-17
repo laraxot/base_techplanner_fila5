@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 title: "no app/Support: business logic in QueueableAction"
+=======
+title: "no app/Support — business logic in QueueableAction"
+>>>>>>> laraxot/dev
 type: concept
 tags: [notify, actions, queueable-action, support, refactor, push, mail]
 created: 2026-07-12
@@ -16,10 +20,16 @@ related:
   - "./llm-wiki-governance.md"
   - "./method-name-homonyms.md"
   - "./module-root-uppercase-folders-archive.md"
+<<<<<<< HEAD
 status: draft
 ---
 
 # no `app/Support/`: business logic in QueueableAction
+=======
+---
+
+# no `app/Support/` — business logic in QueueableAction
+>>>>>>> laraxot/dev
 
 ## Scopo
 
@@ -34,13 +44,21 @@ Nel modulo Notify **non** esiste più `app/Support/`. Ogni helper con comportame
 
 ## Perché
 
+<<<<<<< HEAD
 - **Path = namespace:** `PushNotificationPlatformDelivery` era in `Support/` ma namespace `Modules\Notify\Actions`: incoerenza PSR-4
+=======
+- **Path = namespace:** `PushNotificationPlatformDelivery` era in `Support/` ma namespace `Modules\Notify\Actions` — incoerenza PSR-4
+>>>>>>> laraxot/dev
 - **Single-purpose:** invio mail Mailtrap → `SendMailtrapMailAction::execute()`
 - **Orchestrazione push (stato 2026-10-08):** non esiste piu' `SendPushNotificationAction` -> `PushNotificationPlatformDelivery`.
   Sia l'orchestrazione sia il recapito per piattaforma vivono in `Actions/Push/*`, una Action per caso d'uso con un solo
   `execute()` (elenco e mapping in [services-to-actions-migration.md](services-to-actions-migration.md)).
 
+<<<<<<< HEAD
 ## Push: token vs topic (oggi in `Actions/Push/*`)
+=======
+## Push — token vs topic (oggi in `Actions/Push/*`)
+>>>>>>> laraxot/dev
 
 | Action | Uso | Piattaforme |
 |--------|-----|-------------|
@@ -60,4 +78,7 @@ il nome della classe: le copie `Actions/PushNotificationPlatformDelivery`, `Supp
 
 - [claude-audit-static.md](claude-audit-static.md)
 - [queueable-action-trait-mandatory](../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)
+<<<<<<< HEAD
 - [queueable-action-trait-mandatory](../../../../../../docs/wiki/rules/queueable-action-trait-mandatory.md)
+=======
+>>>>>>> laraxot/dev

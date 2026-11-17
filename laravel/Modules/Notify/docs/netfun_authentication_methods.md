@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "netfun authentication methods"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Autenticazione Netfun SMS
@@ -79,8 +82,22 @@ public function send($notifiable, Notification $notification)
 
 - [Documentazione Netfun SMS Channel](./SMS_NETFUN_CHANNEL.md)
 - [Requisiti di Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
+<<<<<<< HEAD
 - [Documentazione Netfun SMS Channel](./sms_netfun_channel.md)
 - [Requisiti di Configurazione Netfun](./netfun_config_requirements.md)
 
 ---
+=======
+
+---
+
+title: "netfun authentication methods"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "netfun authentication methods"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-05-12*

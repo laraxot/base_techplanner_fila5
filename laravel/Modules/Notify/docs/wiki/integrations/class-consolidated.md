@@ -2,16 +2,26 @@
 qmd: "class consolidated"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "class: Consolidated Documentation"
+=======
+title: "class — Consolidated Documentation"
+>>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
 ---
 
 # class: Consolidated Documentation
+=======
+---
+
+# class — Consolidated Documentation
+>>>>>>> laraxot/dev
 
 Consolidated from **8** individual files.
 
@@ -30,7 +40,11 @@ Consolidated from **8** individual files.
 
 ## class-inheritance-best-practices-1
 
+<<<<<<< HEAD
 *Consolidated from: `class-inheritance-best-practices.md`*
+=======
+*Consolidated from: `class-inheritance-best-practices-1.md`*
+>>>>>>> laraxot/dev
 
 
 Questo documento definisce le best practices per l'ereditarietà delle classi nel sistema <nome progetto>, con particolare attenzione alle classi che estendono `XotBasePage`.
@@ -116,7 +130,11 @@ Seguire queste best practices garantisce un codice più pulito, manutenibile e m
 
 ## class-inheritance-best-practices-2
 
+<<<<<<< HEAD
 *Consolidated from: `class-inheritance-best-practices.md`*
+=======
+*Consolidated from: `class-inheritance-best-practices-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Best Practices per l'Ereditarietà delle Classi"
 type: concept
@@ -127,6 +145,7 @@ qmd: "class-inheritance-best-practices-2 best practices per l'ereditarietà dell
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -138,6 +157,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -155,7 +182,11 @@ abstract class XotBasePage extends Page implements HasForms
 {
     use TransTrait;
     use InteractsWithForms;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // ...
 }
 ```
@@ -187,7 +218,11 @@ class SendSmsPage extends XotBasePage
 class SendSmsPage extends XotBasePage implements HasForms
 {
     use InteractsWithForms;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // Implementazione...
 }
 ```
@@ -241,7 +276,11 @@ abstract class XotBasePage extends Page implements HasForms
 {
     use TransTrait;
     use InteractsWithForms;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // ...
 }
 ```
@@ -273,7 +312,11 @@ class SendSmsPage extends XotBasePage
 class SendSmsPage extends XotBasePage implements HasForms
 {
     use InteractsWithForms;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // Implementazione...
 }
 ```
@@ -313,7 +356,11 @@ Seguire queste best practices garantisce un codice più pulito, manutenibile e m
 
 ## class-inheritance-principles-1
 
+<<<<<<< HEAD
 *Consolidated from: `class-inheritance-principles.md`*
+=======
+*Consolidated from: `class-inheritance-principles-1.md`*
+>>>>>>> laraxot/dev
 
 # Principi di Ereditarietà nelle Classi <nome progetto>
 
@@ -405,7 +452,11 @@ grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
 
 ## class-inheritance-principles-2
 
+<<<<<<< HEAD
 *Consolidated from: `class-inheritance-principles.md`*
+=======
+*Consolidated from: `class-inheritance-principles-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Principi di Ereditarietà nelle Classi <nome progetto>"
 type: concept
@@ -416,6 +467,7 @@ qmd: "class-inheritance-principles-2 principi di ereditarietà nelle classi <nom
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -427,6 +479,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -858,7 +918,11 @@ grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/htm
 grep -r --include="*.php" "extends XotBasePage implements HasForms" [project-root]/laravel/Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/_bases/<nome repository>/laravel/Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/saluteora/laravel/Modules/
+<<<<<<< HEAD
 grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/
+=======
+grep -r --include="*.php" "extends XotBasePage implements HasForms" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/
+>>>>>>> laraxot/dev
 ```
 
 ## Riferimenti

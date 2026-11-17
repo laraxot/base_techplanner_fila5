@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "sms best practices"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: sms-best-practices.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per l'Invio SMS

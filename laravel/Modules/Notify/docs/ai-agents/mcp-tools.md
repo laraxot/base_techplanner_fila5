@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "mcp tools"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # MCP Tools
@@ -32,6 +35,9 @@ La configurazione MCP si trova in:
 
 **Di ritorno:**
 - → [CLAUDE.md - MCP Tools Section](../../CLAUDE.md)
+<<<<<<< HEAD
 - → [CLAUDE.md - MCP Tools Section](../CLAUDE.md)
+=======
+>>>>>>> laraxot/dev
 - → [mcp.md](mcp.md)
 - → [INDEX](index.md)

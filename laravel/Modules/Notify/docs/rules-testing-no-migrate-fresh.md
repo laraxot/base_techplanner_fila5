@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "rules testing no migrate fresh"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # CRITICAL ARCHITECTURE RULE: NO MIGRATE:FRESH

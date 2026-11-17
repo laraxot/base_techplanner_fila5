@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "mail templates"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: mail-templates.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Mail Templates in Notify Module

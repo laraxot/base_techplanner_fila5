@@ -16,7 +16,10 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 # 📁 Project Documentation Index
 
@@ -125,7 +128,10 @@ echo "127.0.0.1 laraxot.local" | sudo tee -a /etc/hosts
 - [Modules Docs](../../Modules/docs/) - Module documentation
 - [Themes Docs](../../Themes/docs/) - Theme documentation
 - [Bash Scripts](../../../../bashscripts/docs/) - Script documentation
+<<<<<<< HEAD
 - [Bash Scripts](../../../../../bashscripts/docs) - Script documentation
+=======
+>>>>>>> laraxot/dev
 
 ### External
 

@@ -21,17 +21,28 @@ file committati, vedi `docs-frontmatter-batch-enrichment-pattern.story.md` in Xo
 
 ## Non ancora iniziato
 
+<<<<<<< HEAD
 Nessun lavoro eseguito su Notify in questa sessione: solo la ricognizione. Il pattern/script
+=======
+Nessun lavoro eseguito su Notify in questa sessione — solo la ricognizione. Il pattern/script
+>>>>>>> laraxot/dev
 usato per Xot è documentato e riutilizzabile:
 `Modules/Xot/docs/stories/docs-frontmatter-batch-enrichment-pattern.story.md`
 
 ## Note dal batch Xot (da tenere presente)
 
 - Escludere cartelle archivio (`_archive/`, `legacy/`, `historical/`, `wiki-archive/`,
+<<<<<<< HEAD
   `old_tasks/`): non curare quei file
 - Se ci sono altre fork concorrenti attive sullo stesso repo, isolare i commit per hunk
   singolo/firma esatta: NON usare `git diff` grezzo che mescolerebbe commit altrui
 - Evitare `git reset` durante l'investigazione: può fare unstage di file che altre fork
+=======
+  `old_tasks/`) — non curare quei file
+- Se ci sono altre fork concorrenti attive sullo stesso repo, isolare i commit per hunk
+  singolo/firma esatta — NON usare `git diff` grezzo che mescolerebbe commit altrui
+- Evitare `git reset` durante l'investigazione — può fare unstage di file che altre fork
+>>>>>>> laraxot/dev
   hanno in index (incidente documentato nel batch Xot)
 - Verificare Notify per lo stesso pattern anti-pattern di scaffold vuoti trovato in Xot
   (regola `docs/no-ai-tool-scaffold-dirs.md`) prima di aggiungere frontmatter a file che

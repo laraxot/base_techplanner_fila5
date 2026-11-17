@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "translations structure template"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Template di Struttura per le Traduzioni

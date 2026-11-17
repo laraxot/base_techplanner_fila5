@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "roadmap quality"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🏆 ROADMAP QUALITÀ - FIXCITY PLATFORM
@@ -583,6 +586,18 @@ composer require --dev phpstan/phpstan-phpunit
 - **Open Source**: Community recognition
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "roadmap quality"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap quality"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **📞 Contatti Quality**
 - **Quality Lead**: Quality Assurance Team
 - **Email**: quality@laraxot.com

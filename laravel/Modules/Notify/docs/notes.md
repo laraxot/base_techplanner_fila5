@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "notes"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Note Finali sul Modulo Notify

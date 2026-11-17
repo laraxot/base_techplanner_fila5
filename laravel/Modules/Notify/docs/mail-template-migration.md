@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "mail template migration"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Guida alla Migrazione di MailTemplate

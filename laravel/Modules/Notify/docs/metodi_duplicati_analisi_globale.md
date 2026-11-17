@@ -1,13 +1,23 @@
 ---
+<<<<<<< HEAD
 title: "metodi duplicati analisi globale"
+=======
+title: "METODI DUPLICATI ANALISI GLOBALE"
+>>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
+<<<<<<< HEAD
 qmd: "metodi duplicati analisi globale"
 issues: []
 discussions: []
 status: draft
+=======
+qmd: "METODI DUPLICATI ANALISI GLOBALE"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ---
 
 # 🐮 ANALISI GLOBALE METODI DUPLICATI
@@ -18,6 +28,18 @@ status: draft
 **Opportunità Totali**: 76
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "METODI DUPLICATI ANALISI GLOBALE"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "METODI DUPLICATI ANALISI GLOBALE"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 Executive Summary
 
 ### 💰 Impatto Economico

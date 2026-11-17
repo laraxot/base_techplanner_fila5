@@ -10,7 +10,11 @@ updated_at: '2026-11-12'
 # File parcheggiati
 
 File `.wip` spostato qui da `app/` il 2026-11-12
+<<<<<<< HEAD
 ([module_<nome progetto>_fila5#61](https://github.com/laraxot/module_<nome progetto>_fila5/issues/61)).
+=======
+([module_quaeris_fila5#61](https://github.com/laraxot/module_quaeris_fila5/issues/61)).
+>>>>>>> laraxot/dev
 
 | File | Stato | Nota |
 |---|---|---|
@@ -18,9 +22,15 @@ File `.wip` spostato qui da `app/` il 2026-11-12
 
 ## Perche' questo stava nel posto peggiore di tutti
 
+<<<<<<< HEAD
 `SpatieEmail` e' la classe che manda **tutti gli inviti di <nome progetto>** dopo la
 migrazione a RecordNotification
 ([#38](https://github.com/laraxot/module_<nome progetto>_fila5/issues/38)). Avere
+=======
+`SpatieEmail` e' la classe che manda **tutti gli inviti di Quaeris** dopo la
+migrazione a RecordNotification
+([#38](https://github.com/laraxot/module_quaeris_fila5/issues/38)). Avere
+>>>>>>> laraxot/dev
 accanto al file vivo una versione da un decimo delle righe, senza niente che
 dica di cosa sia la bozza, e' la condizione perfetta perche' qualcuno apra
 quella sbagliata mentre cerca di capire perche' un invito non e' partito.

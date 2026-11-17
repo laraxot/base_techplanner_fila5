@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "valori"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Politica, Filosofia, Religione, Etica, Zen – Modulo Notify

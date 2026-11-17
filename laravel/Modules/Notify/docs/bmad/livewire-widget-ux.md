@@ -5,12 +5,19 @@ updated: 2026-09-26
 qmd: "livewire widget ux"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "UX: campanella"
+=======
+title: "UX — campanella"
+>>>>>>> laraxot/dev
 type: ux-design
 module: Notify
 related:
   - ./livewire-inventory.md
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # UX

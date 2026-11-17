@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "reusability guidelines"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Linee Guida per la Riusabilità del Modulo Notify

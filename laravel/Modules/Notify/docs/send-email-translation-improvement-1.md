@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "send email translation improvement 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "send email translation improvement 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Miglioramento File Traduzione send_email.php
 
 ## 🔍 Analisi del Problema
@@ -253,6 +267,9 @@ return [
 ### 1. Controllo Sintassi PHP
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 cd laravel
 cd laravel
 cd laravel
@@ -730,6 +747,7 @@ cd laravel
 cd laravel
 cd laravel
 cd laravel
+<<<<<<< HEAD
 =======
 cd /var/www/html/_bases/base_saluteora/laravel
 cd /var/www/html/_bases/base_saluteora/laravel
@@ -1209,6 +1227,8 @@ cd /var/www/html/_bases/base_<nome progetto>/laravel
 cd /var/www/html/_bases/base_<nome progetto>/laravel
 cd /var/www/html/_bases/base_techplanner_fila5/laravel
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 php -l Modules/Notify/lang/it/send_email.php
 
 # Output: No syntax errors detected
@@ -1233,6 +1253,9 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ### Documentazione Correlata
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
@@ -1335,6 +1358,7 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
+<<<<<<< HEAD
 =======
 - [Regole Traduzioni Laraxot](../../../docs/translation-standards.md)
 - [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
@@ -1439,6 +1463,8 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
 - [Best Practice Filament](../../../project_docs/FILAMENT-BEST-PRACTICES.md)
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 - [Struttura Modulo Notify](./README.md)
 
 ### File Modificati
@@ -1779,9 +1805,22 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ---
 
+<<<<<<< HEAD
 **Ultimo aggiornamento**: Gennaio 2025
 <<<<<<< HEAD
 **Autore**: Sistema di miglioramento automatico
 =======
 **Autore**: Sistema di miglioramento automatico
 >>>>>>> 6ed19256f (.)
+=======
+title: "send email translation improvement 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "send email translation improvement 1"
+issues: []
+discussions: []
+**Ultimo aggiornamento**: Gennaio 2025
+**Autore**: Sistema di miglioramento automatico
+>>>>>>> laraxot/dev

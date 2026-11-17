@@ -8,6 +8,7 @@ qmd: "openviking-bmad-gsd-ralph-complete openviking + bmad + gsd + ralph loop - 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -22,6 +23,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # OpenViking + BMAD + GSD + Ralph Loop - Setup Complete Report
@@ -382,12 +393,18 @@ cat agents.md
 ### Documentation
 - [OpenViking Integration](./openviking-integration.md)
 - [BMAD-GSD-Ralph Integration](./bmad-gsd-ralph-integration.md)
+<<<<<<< HEAD
 - [Unified Workflow](../../../unified-ai-workflow.md)
 - [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
 - [agents.md](../agents.md)
 - [Unified Workflow](../../../unified-ai-workflow.md)
 - [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
 - [agents.md](../../agents.md)
+=======
+- [Unified Workflow](./unified-ai-workflow.md)
+- [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
+- [agents.md](../agents.md)
+>>>>>>> laraxot/dev
 
 ### Scripts
 - OpenViking Init: `bashscripts/ai/openviking-init.sh`

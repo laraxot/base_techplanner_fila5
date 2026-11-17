@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "email plugins"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Plugin Email per Filament - il progetto

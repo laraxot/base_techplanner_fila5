@@ -10,8 +10,11 @@ created: {{date}}
 updated: {{date}}
 tags: [person, organization, module]
 related: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: ../../llm-wiki/_templates/entity.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # {{title}}

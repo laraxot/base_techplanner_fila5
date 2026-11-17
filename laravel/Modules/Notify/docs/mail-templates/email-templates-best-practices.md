@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "email templates best practices"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per Template Email

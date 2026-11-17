@@ -16,7 +16,10 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 # Documentazione SpatieEmail
 
@@ -36,9 +39,12 @@ Questa directory contiene la documentazione relativa all'implementazione delle e
 - [Best Practices per Laravel Translatable](modules/lang/docs/translatable/best-practices.md)
 - [Documentazione Laravel Translatable](../lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../lang/docs/translatable/best-practices.md)
+<<<<<<< HEAD
 - [Documentazione Laravel Translatable](../../../Lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../../../Lang/docs/translatable/best-practices.md)
 - [Documentazione Laravel Translatable](modules/lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../best-practices.md)
 - [Documentazione Laravel Translatable](../../../Lang/docs/translatable/index.md)
 - [Best Practices per Laravel Translatable](../../../Lang/docs/translatable/best-practices.md)
+=======
+>>>>>>> laraxot/dev

@@ -8,8 +8,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: documentation-index.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 📚 Indice Generale Documentazione - App
@@ -47,8 +50,12 @@ superseded_by: documentation-index.md
 
 ### Documentazione Architetturale
 - [Design Patterns](./architecture.md) - Pattern architetturali
+<<<<<<< HEAD
 - [Database Schema](../../schema.md) - Schema database
 - [Database Schema](../../schema.md) - Schema database
+=======
+- [Database Schema](./database/schema.md) - Schema database
+>>>>>>> laraxot/dev
 - [API Documentation](./api/README.md) - Documentazione API
 - [Security](./security/README.md) - Sicurezza e conformità
 
@@ -205,6 +212,7 @@ superseded_by: documentation-index.md
 ## 🛠️ Guide Sviluppo
 
 ### Development Setup
+<<<<<<< HEAD
 - [Environment Setup](../../../ai-agents/setup.md) - Configurazione ambiente
 - [Docker Setup](./development/docker.md) - Configurazione Docker
 - [Database Setup](../../../ai-agents/setup.md) - Setup database
@@ -219,13 +227,26 @@ superseded_by: documentation-index.md
 ### Coding Guidelines
 - [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
 - [Laravel Best Practices](../../../html2pdf/laravel.md) - Best practices Laravel
+=======
+- [Environment Setup](./development/setup.md) - Configurazione ambiente
+- [Docker Setup](./development/docker.md) - Configurazione Docker
+- [Database Setup](./database/setup.md) - Setup database
+
+### Coding Guidelines
+- [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
+- [Laravel Best Practices](./standards/laravel.md) - Best practices Laravel
+>>>>>>> laraxot/dev
 - [Filament Guidelines](./standards/filament.md) - Linee guida Filament
 - [Blade Components](./standards/blade.md) - Componenti Blade
 
 ### Quality Assurance
 - [PHPStan Configuration](./phpstan/README.md) - Analisi statica
+<<<<<<< HEAD
 - [Testing Strategy](../../../strategy.md) - Strategia testing
 - [Testing Strategy](../../../strategy.md) - Strategia testing
+=======
+- [Testing Strategy](./testing/strategy.md) - Strategia testing
+>>>>>>> laraxot/dev
 - [CI/CD Pipeline](./ci-cd/README.md) - Continuous integration
 
 ---
@@ -266,8 +287,12 @@ superseded_by: documentation-index.md
 - [Error Tracking](./monitoring/errors.md) - Tracking errori
 
 ### Analytics
+<<<<<<< HEAD
 - [Usage Analytics](../../../html2pdf/usage.md) - Analisi utilizzo
 - [Usage Analytics](../../../html2pdf/usage.md) - Analisi utilizzo
+=======
+- [Usage Analytics](./analytics/usage.md) - Analisi utilizzo
+>>>>>>> laraxot/dev
 - [Business Metrics](./analytics/business.md) - Metriche business
 
 ---
@@ -275,8 +300,12 @@ superseded_by: documentation-index.md
 ## 🔒 Security
 
 ### Security Documentation
+<<<<<<< HEAD
 - [Security Guidelines](../../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
 - [Security Guidelines](../../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
+=======
+- [Security Guidelines](./security/guidelines.md) - Linee guida sicurezza
+>>>>>>> laraxot/dev
 - [GDPR Compliance](./security/gdpr.md) - Conformità GDPR
 - [Authentication](./security/authentication.md) - Sistema autenticazione
 - [Authorization](./security/authorization.md) - Sistema autorizzazioni

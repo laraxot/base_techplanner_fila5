@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "path conventions"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Convenzioni sui Percorsi 

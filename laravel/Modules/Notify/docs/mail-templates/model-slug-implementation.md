@@ -7,14 +7,21 @@ updated: 2026-09-26
 qmd: "model slug implementation"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Implementazione del Campo `slug` nel Modello MailTemplate
 
 ## Panoramica delle Modifiche
 
+<<<<<<< HEAD
 Il modello `MailTemplate` (`/var/www/html/<nome progetto>/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
+=======
+Il modello `MailTemplate` (`/var/www/html/Quaeris/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
+>>>>>>> laraxot/dev
 Il modello `MailTemplate` (`/var/www/_bases/base_ptvx_fila5/laravel/Modules/Notify/app/Models/MailTemplate.php`) è stato aggiornato per supportare l'identificazione dei template tramite slug. Questa implementazione segue le migliori pratiche di Laravel e migliora l'usabilità del sistema di template email.
 
 ## Modifiche Effettuate
@@ -29,7 +36,11 @@ class MailTemplate extends SpatieMailTemplate implements MailTemplateInterface
 {
     use HasTranslations;
     use HasSlug;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // ...
 }
 ```

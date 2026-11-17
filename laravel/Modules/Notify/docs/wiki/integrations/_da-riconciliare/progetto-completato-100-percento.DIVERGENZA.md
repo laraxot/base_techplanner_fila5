@@ -8,8 +8,11 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: progetto-completato-100-percento.divergenza.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Divergenza: `progetto-completato-100-percento.md`

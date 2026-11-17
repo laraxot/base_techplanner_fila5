@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "configurations usage principles"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: configurations-usage-principles.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Principi di Utilizzo delle Configurazioni 

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament slug generation 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament slug generation 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Generazione di Slug in Filament
 
 ## Panoramica

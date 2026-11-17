@@ -1,12 +1,30 @@
+<<<<<<< HEAD
+=======
+---
+title: "provider contracts naming 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "provider contracts naming 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni di Naming per i Contracts
 
 ## Regola Fondamentale
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Nel sistema <nome progetto>, tutte le interfacce (interfaces) devono seguire queste convenzioni di naming:
 =======
 Nel sistema SaluteOra, tutte le interfacce (interfaces) devono seguire queste convenzioni di naming:
 >>>>>>> 6ed19256f (.)
+=======
+Nel sistema <nome progetto>, tutte le interfacce (interfaces) devono seguire queste convenzioni di naming:
+>>>>>>> laraxot/dev
 
 1. **Suffisso `Contract` e non `Interface`**:
    - ✅ CORRETTO: `SmsProviderContract`

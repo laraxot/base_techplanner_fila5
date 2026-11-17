@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "html structure comparison"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # HTML Structure Comparison Tools

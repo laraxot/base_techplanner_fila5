@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "layout structure"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: layout-structure.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Struttura Layout Email

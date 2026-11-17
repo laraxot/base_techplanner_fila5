@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "implementazione refactoring basemodel"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🐄✨ IMPLEMENTAZIONE REFACTORING BASEMODEL - REPORT
@@ -17,6 +20,18 @@ status: draft
 **Status:** ✅ IN CORSO - 10/16 moduli completati
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "implementazione refactoring basemodel"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementazione refactoring basemodel"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 MODULI COMPLETATI
 
 ### ✅ Moduli Refactorati (10)

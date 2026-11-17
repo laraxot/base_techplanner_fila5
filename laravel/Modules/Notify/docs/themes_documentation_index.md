@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "themes documentation index"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Theme Documentation Master Index
@@ -17,6 +20,18 @@ status: draft
 Connects all theme docs with bidirectional links and visual architecture.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "themes documentation index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "themes documentation index"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🗺️ Active Themes
 
 ### Sixteen - PRIMARY THEME ⭐
@@ -32,11 +47,14 @@ Connects all theme docs with bidirectional links and visual architecture.
 - [Design Comuni Integration](../laravel/Themes/Sixteen/docs/design-comuni-integration.md)
 - [Component Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md)
 - [Layout Architecture](../laravel/Themes/Sixteen/docs/layout-hierarchy.md)
+<<<<<<< HEAD
 - [00-INDEX.md](../../../Themes/Sixteen/docs/00-INDEX.md) - Start here
 - [00-index.md](../../../Themes/Sixteen/docs/00-INDEX.md) - Start here
 - [Design Comuni Integration](../../../Themes/Sixteen/docs/design-comuni-integration.md)
 - [Component Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md)
 - [Layout Architecture](../../../Themes/Sixteen/docs/layout-hierarchy.md)
+=======
+>>>>>>> laraxot/dev
 
 **Directory Structure:**
 ```
@@ -324,7 +342,10 @@ Typography:
 | File | Purpose | View |
 |------|---------|------|
 | `layout-hierarchy.md` | Layout component structure | [View](../laravel/Themes/Sixteen/docs/layout-hierarchy.md) |
+<<<<<<< HEAD
 | `layout-hierarchy.md` | Layout component structure | [View](../../../Themes/Sixteen/docs/layout-hierarchy.md) |
+=======
+>>>>>>> laraxot/dev
 | `component-structure.md` | Component organization | [View](../laravel/Themes/Sixteen/docs/component-structure.md) |
 | `data-flow.md` | How data flows through views | [View](../laravel/Themes/Sixteen/docs/data-flow.md) |
 | `styling-system.md` | Tailwind + CSS strategy | [View](../laravel/Themes/Sixteen/docs/styling-system.md) |
@@ -353,7 +374,11 @@ Typography:
 
 | File | Purpose | View |
 |------|---------|------|
+<<<<<<< HEAD
 | `guides/getting-started.md` | Theme setup | [View](getting-started.md) |
+=======
+| `guides/getting-started.md` | Theme setup | [View](../laravel/Themes/Sixteen/docs/guides/getting-started.md) |
+>>>>>>> laraxot/dev
 | `guides/adding-components.md` | Create new component | [View](../laravel/Themes/Sixteen/docs/guides/adding-components.md) |
 | `guides/styling-guide.md` | Styling best practices | [View](../laravel/Themes/Sixteen/docs/guides/styling-guide.md) |
 | `guides/responsive-design.md` | Mobile-first approach | [View](../laravel/Themes/Sixteen/docs/guides/responsive-design.md) |
@@ -469,9 +494,12 @@ public_html/assets/
 - **Master Index:** [00-INDEX.md](../laravel/Themes/Sixteen/docs/00-INDEX.md)
 - **Code Quality:** [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
 - **Framework Rules:** [../laravel/CLAUDE.md](../laravel/CLAUDE.md)
+<<<<<<< HEAD
 - **Master Index:** [00-INDEX.md](../../../Themes/Sixteen/docs/00-INDEX.md)
 - **Code Quality:** [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
 - **Framework Rules:** [../laravel/CLAUDE.md](../../../CLAUDE.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 

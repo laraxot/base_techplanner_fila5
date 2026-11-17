@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "mcp server recommended"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: mcp-server-recommended.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # MCP Server Consigliati per il Modulo Notify

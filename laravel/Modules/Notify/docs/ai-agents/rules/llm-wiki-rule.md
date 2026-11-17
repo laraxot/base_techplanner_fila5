@@ -9,7 +9,10 @@ issues: []
 discussions: []
 name: llm-wiki rule
 description: Ensure every module and theme includes a `docs/wiki/` directory and related llm‑wiki scaffolding.
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # LLM‑Wiki Rule

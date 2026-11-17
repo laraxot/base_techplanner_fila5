@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "optimization recommendations"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Raccomandazioni di Ottimizzazione - Modulo Notify
@@ -24,8 +27,12 @@ status: draft
 
 #### 2. Documentazione Frammentata
 - **150+ file** di documentazione non organizzati
+<<<<<<< HEAD
 - **Duplicazioni** multiple (analysis-dettagliata-architettura-struttura.md fino a -8.md)
 - **Duplicazioni** multiple (analysis-dettagliata-architettura-struttura.md fino a appunti-filters.md)
+=======
+- **Duplicazioni** multiple (analysis-dettagliata-1.md fino a -8.md)
+>>>>>>> laraxot/dev
 - **File obsoleti** non rimossi
 - **Naming inconsistente** (alcuni file con maiuscole)
 
@@ -254,8 +261,12 @@ php artisan notify:benchmark
 
 #### 2. Documentazione Frammentata
 - **150+ file** di documentazione non organizzati
+<<<<<<< HEAD
 - **Duplicazioni** multiple (analysis-dettagliata-architettura-struttura.md fino a -8.md)
 - **Duplicazioni** multiple (analysis-dettagliata-architettura-struttura.md fino a appunti-filters.md)
+=======
+- **Duplicazioni** multiple (analysis-dettagliata-1.md fino a -8.md)
+>>>>>>> laraxot/dev
 - **File obsoleti** non rimossi
 - **Naming inconsistente** (alcuni file con maiuscole)
 

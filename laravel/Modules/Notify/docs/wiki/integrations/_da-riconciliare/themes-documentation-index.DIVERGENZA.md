@@ -8,8 +8,11 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: themes-documentation-index.divergenza.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Divergenza: `themes-documentation-index.md`

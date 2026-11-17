@@ -4,10 +4,15 @@ type: concept
 tags: [quick, start]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "quick-start 🚀 fixcity - guida rapida sviluppatori"
+>>>>>>> laraxot/dev
 qmd: "quick-start 🚀 ptv - guida rapida sviluppatori"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -22,13 +27,29 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🚀 FIXCITY - GUIDA RAPIDA SVILUPPATORI
 
+<<<<<<< HEAD
 **Versione**: 1.0
 **Data**: 2025-10-01
 **Target**: Sviluppatori che iniziano a lavorare su FixCity
+=======
+**Versione**: 1.0  
+**Data**: 2025-10-01  
+**Target**: Sviluppatori che iniziano a lavorare su FixCity  
+>>>>>>> laraxot/dev
 
 ---
 
@@ -159,7 +180,11 @@ class MyResource extends XotBaseResource
             // schema fields
         ];
     }
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // NON definire table() method
 }
 ```
@@ -197,7 +222,11 @@ class MyServiceProvider extends XotBaseServiceProvider
 {
     protected string $moduleName = 'ModuleName';
     protected string $moduleNameLower = 'modulename';
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     public function boot(): void
     {
         parent::boot(); // SEMPRE chiamare parent
@@ -255,8 +284,13 @@ return [
 ## 📁 STRUTTURA PROGETTO
 
 ```
+<<<<<<< HEAD
 base_fixcity_fila5/
 base_ptv_fila5/
+=======
+base_fixcity_fila5_mono/
+base_ptv_fila5_mono/
+>>>>>>> laraxot/dev
 ├── laravel/                    # Applicazione Laravel
 │   ├── Modules/               # Moduli Nwidart
 │   │   ├── Fixcity/          # Core business logic
@@ -403,7 +437,11 @@ class TicketTest extends TestCase
     public function test_can_create_ticket(): void
     {
         $ticket = Ticket::factory()->create();
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
         $this->assertDatabaseHas('tickets', [
             'id' => $ticket->id,
         ]);
@@ -420,9 +458,15 @@ class TicketResourceTest extends TestCase
     public function test_can_list_tickets(): void
     {
         $this->actingAs($user = User::factory()->create());
+<<<<<<< HEAD
 
         $response = $this->get(route('filament.admin.resources.tickets.index'));
 
+=======
+        
+        $response = $this->get(route('filament.admin.resources.tickets.index'));
+        
+>>>>>>> laraxot/dev
         $response->assertSuccessful();
     }
 }
@@ -516,8 +560,12 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 
 ### Regole Progetto
 - **[Laraxot Rules](./.windsurf/rules/user_15338591596331277449.md)**
+<<<<<<< HEAD
 - **[Code Quality](ai-agents/code-quality.md)**
 - **[Code Quality](./ai-agents/code-quality.md)**
+=======
+- **[Code Quality](./.windsurf/rules/code-quality.md)**
+>>>>>>> laraxot/dev
 - **[Project Rules](./.windsurf/rules/project-rules.md)**
 
 ---
@@ -534,7 +582,11 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 **Soluzione**: Verifica di estendere XotBaseMigration e non Migration standard
 
 ### Problema: Assets non caricati
+<<<<<<< HEAD
 **Soluzione**:
+=======
+**Soluzione**: 
+>>>>>>> laraxot/dev
 ```bash
 npm run build
 php artisan optimize:clear
@@ -571,7 +623,11 @@ created: 2026-07-28
 updated: 2026-07-28
 ---
 
+<<<<<<< HEAD
 # Notify Module: Quick Start
+=======
+# Notify Module — Quick Start
+>>>>>>> laraxot/dev
 
 ## Send Notification
 

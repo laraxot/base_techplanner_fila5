@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "project status"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # FixCity Platform - Project Status Report
@@ -184,6 +187,18 @@ status: draft
 - [ ] ISO 27001 (planned)
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "project status"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "project status"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Report Generated**: 2025-01-01  
 **Next Update**: 2025-01-15  
 **Contact**: development@fixcity.io

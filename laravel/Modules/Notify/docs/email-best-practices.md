@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "email best practices"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per il Sistema Email

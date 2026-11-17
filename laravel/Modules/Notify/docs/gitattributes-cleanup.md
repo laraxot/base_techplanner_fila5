@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "gitattributes cleanup"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🧹 GitAttributes Cleanup Report
@@ -17,6 +20,18 @@ status: draft
 > **Action**: Removed all `.gitattributes` files
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "gitattributes cleanup"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gitattributes cleanup"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📋 Summary
 
 Tutti i file `.gitattributes` sono stati rimossi dal progetto e sostituiti con regole `.gitignore` più complete.

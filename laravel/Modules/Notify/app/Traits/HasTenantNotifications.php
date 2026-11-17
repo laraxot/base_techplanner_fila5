@@ -15,8 +15,11 @@ use Webmozart\Assert\Assert;
  * Trait HasTenantNotifications.
  *
  * Fornisce funzionalità per la gestione delle notifiche per tenant.
+<<<<<<< HEAD
  *
  * Usato da test/unit helpers (es. NotifyTenantDummyModel); non ignorare trait.unused.
+=======
+>>>>>>> laraxot/dev
  */
 trait HasTenantNotifications
 {

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "multi channel notifications 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "multi channel notifications 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Implementazione di Notifiche Multi-Canale
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
@@ -791,6 +805,7 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
@@ -799,3 +814,8 @@ TELEGRAM_BOT_TOKEN=12345:ABC...
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](telegram_notifications_guide.md)
 >>>>>>> 6ed19256f (.)
+=======
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
+- [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+>>>>>>> laraxot/dev

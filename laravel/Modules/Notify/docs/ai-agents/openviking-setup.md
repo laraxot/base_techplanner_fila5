@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "openviking setup"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # OpenViking Setup

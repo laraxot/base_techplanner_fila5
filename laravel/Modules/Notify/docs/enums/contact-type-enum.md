@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "contact type enum"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # ContactTypeEnum - The Universal Contact Field Schema
@@ -227,11 +230,19 @@ L'enum è la **fonte di autorità** per i campi contatto. Per aggiungere un nuov
 
 *"Qual è il nome del campo per l'email?"*
 - Prima: "email? mail? e_mail? electronic_mail? contact_email?"
+<<<<<<< HEAD
 - Dopo: `ContactTypeEnum::EMAIL->value`: un solo nome, una sola verità.
 
 *"Come aggiungo 6 campi contatto alla migrazione?"*
 - Prima: 36 righe di codice con if statements duplicati
 - Dopo: `ContactTypeEnum::columns($table, $this)`: una sola linea, zero duplicazione.
+=======
+- Dopo: `ContactTypeEnum::EMAIL->value` — un solo nome, una sola verità.
+
+*"Come aggiungo 6 campi contatto alla migrazione?"*
+- Prima: 36 righe di codice con if statements duplicati
+- Dopo: `ContactTypeEnum::columns($table, $this)` — una sola linea, zero duplicazione.
+>>>>>>> laraxot/dev
 
 ### La Via del Codice Senza Codice
 
@@ -403,9 +414,15 @@ return [
 
 ### ❌ DON'T
 
+<<<<<<< HEAD
 - Non hardcodare `'email'`, `'phone'`, etc.: usa l'enum
 - Non creare campi contatto con nomi diversi dall'enum
 - Non duplicare colonne in UPDATE con if statements: usa `columns()`
+=======
+- Non hardcodare `'email'`, `'phone'`, etc. — usa l'enum
+- Non creare campi contatto con nomi diversi dall'enum
+- Non duplicare colonne in UPDATE con if statements — usa `columns()`
+>>>>>>> laraxot/dev
 - Non mescolare nomenclature (es. `telephone` vs `phone`)
 - Non lasciare traduzioni incomplete
 - Non aggiungere campi generici (notes, description) a ContactTypeEnum
@@ -425,9 +442,12 @@ return [
 - [AddressItemEnum Documentation](../../geo/docs/enums/address-item-enum.md) - Pattern gemello
 - [Notify Module Architecture](../architecture.md)
 - [ContactTypeEnum Source](../../Notify/app/Enums/ContactTypeEnum.php)
+<<<<<<< HEAD
 - [AddressItemEnum Documentation](../../../Geo/docs/enums/address-item-enum.md) - Pattern gemello
 - [Notify Module Architecture](../architecture.md)
 - [ContactTypeEnum Source](../../app/Enums/ContactTypeEnum.php)
+=======
+>>>>>>> laraxot/dev
 
 ## Changelog
 
@@ -437,5 +457,17 @@ return [
 - **2025-01**: Pattern DRY + KISS ispirato da AddressItemEnum e workers_table
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "contact type enum"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contact type enum"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 > **Nota**: Questo documento segue la filosofia del progetto: Scopo, Logica, Filosofia, Politica, Religione, Zen.
 > Ogni modifica all'enum DEVE essere documentata e tradotta.

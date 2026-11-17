@@ -8,6 +8,7 @@ qmd: "multi-agent-coordination-rules 🤖 multi-agent ai coordination - critical
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -22,6 +23,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🤖 Multi-Agent AI Coordination - Critical Rules
@@ -270,6 +281,7 @@ git push origin dev
 
 ## 🔗 Resources
 
+<<<<<<< HEAD
 - [Multi-Agent Guide](multi-agent-collaboration-guide.md)
 - [GitHub Sync Rule](docs/github-sync-rule.md)
 - [AI Rules](../.qwen/ai-rules-critical.md)
@@ -278,6 +290,12 @@ git push origin dev
 - [GitHub Sync Rule](github-sync-rule.md)
 - [AI Rules](../.qwen/ai-rules-critical.md)
 - [AI Memory](../../../../.qwen/AI_MEMORY.md)
+=======
+- [Multi-Agent Guide](docs/multi-agent-collaboration-guide.md)
+- [GitHub Sync Rule](docs/github-sync-rule.md)
+- [AI Rules](../.qwen/ai-rules-critical.md)
+- [AI Memory](../.qwen/AI_MEMORY.md)
+>>>>>>> laraxot/dev
 
 ---
 

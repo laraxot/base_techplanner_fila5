@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "model mail template changes"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: model-mail-template-changes.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Modifiche Tecniche al Modello MailTemplate

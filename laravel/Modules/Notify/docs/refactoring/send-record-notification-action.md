@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "send record notification action"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Refactoring Plan: SendRecordNotificationAction

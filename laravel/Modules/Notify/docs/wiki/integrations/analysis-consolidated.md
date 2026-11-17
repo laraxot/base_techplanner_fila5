@@ -2,16 +2,26 @@
 qmd: "analysis consolidated"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "analysis: Consolidated Documentation"
+=======
+title: "analysis — Consolidated Documentation"
+>>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
 ---
 
 # analysis: Consolidated Documentation
+=======
+---
+
+# analysis — Consolidated Documentation
+>>>>>>> laraxot/dev
 
 Consolidated from **29** individual files.
 
@@ -336,7 +346,11 @@ class Template extends Model
 
 ## analysis-detailed-1
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-detailed.md`*
+=======
+*Consolidated from: `analysis-detailed-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Analysis Detailed 1"
 type: concept
@@ -347,6 +361,7 @@ qmd: "analysis-detailed-1 analysis detailed 1"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -358,6 +373,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -368,42 +391,66 @@ related:
 
 ## analysis-detailed-3
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-detailed.md`*
+=======
+*Consolidated from: `analysis-detailed-3.md`*
+>>>>>>> laraxot/dev
 
 
 ---
 
 ## analysis-detailed-4
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-detailed.md`*
+=======
+*Consolidated from: `analysis-detailed-4.md`*
+>>>>>>> laraxot/dev
 
 
 ---
 
 ## analysis-detailed-5
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-detailed.md`*
+=======
+*Consolidated from: `analysis-detailed-5.md`*
+>>>>>>> laraxot/dev
 
 
 ---
 
 ## analysis-detailed-6
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-detailed.md`*
+=======
+*Consolidated from: `analysis-detailed-6.md`*
+>>>>>>> laraxot/dev
 
 
 ---
 
 ## analysis-detailed-7
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-detailed.md`*
+=======
+*Consolidated from: `analysis-detailed-7.md`*
+>>>>>>> laraxot/dev
 
 
 ---
 
 ## analysis-detailed-8
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-detailed.md`*
+=======
+*Consolidated from: `analysis-detailed-8.md`*
+>>>>>>> laraxot/dev
 
 
 ---
@@ -417,7 +464,11 @@ related:
 
 ## analysis-dettagliata-1
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-architettura-struttura.md`*
+=======
+*Consolidated from: `analysis-dettagliata-1.md`*
+>>>>>>> laraxot/dev
 
 
 ## 1. Architettura del Sistema
@@ -940,7 +991,11 @@ return [
 
 ## analysis-dettagliata-2
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-modelli-relazioni.md`*
+=======
+*Consolidated from: `analysis-dettagliata-2.md`*
+>>>>>>> laraxot/dev
 
 
 ## 2. Modelli e Relazioni
@@ -1587,7 +1642,11 @@ Schema::create('template_analytics', function (Blueprint $table) {
 
 ## analysis-dettagliata-3
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-servizi-core.md`*
+=======
+*Consolidated from: `analysis-dettagliata-3.md`*
+>>>>>>> laraxot/dev
 
 
 ## 3. Servizi Core
@@ -2238,7 +2297,11 @@ protected function updateAnalytics(string $messageId, string $event): void
 
 ## analysis-dettagliata-4
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-integrazione-filament.md`*
+=======
+*Consolidated from: `analysis-dettagliata-4.md`*
+>>>>>>> laraxot/dev
 
 
 ## 4. Integrazione con Filament
@@ -2929,7 +2992,11 @@ class TemplateTestPage extends Page
 
 ## analysis-dettagliata-5
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-testing-parte.md`*
+=======
+*Consolidated from: `analysis-dettagliata-5.md`*
+>>>>>>> laraxot/dev
 
 
 ## 5. Testing
@@ -3749,7 +3816,11 @@ class WebhookControllerTest extends TestCase
 
 ## analysis-dettagliata-6
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-monitoraggio-analytics.md`*
+=======
+*Consolidated from: `analysis-dettagliata-6.md`*
+>>>>>>> laraxot/dev
 
 
 ## 6. Monitoraggio e Analytics
@@ -4373,7 +4444,11 @@ class AnalyticsExporter
 
 ## analysis-dettagliata-7
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-manutenzione-backup.md`*
+=======
+*Consolidated from: `analysis-dettagliata-7.md`*
+>>>>>>> laraxot/dev
 
 
 ## 7. Manutenzione e Backup
@@ -5022,7 +5097,11 @@ class MaintainTemplatesCommand extends Command
 
 ## analysis-dettagliata-8
 
+<<<<<<< HEAD
 *Consolidated from: `analysis-dettagliata-finali-parte.md`*
+=======
+*Consolidated from: `analysis-dettagliata-8.md`*
+>>>>>>> laraxot/dev
 
 
 ## 8. Note Finali
@@ -6241,6 +6320,7 @@ Modules/Notify/
 * [analysis.md](../../../job/docs/analysis.md)
 * [analysis.md](../../../job/docs/phpstan/analysis.md)
 * [analysis.md](../../../media/docs/analysis.md)
+<<<<<<< HEAD
 * [analysis.md](../../analysis.md)
 * [analysis.md](../../../notify/docs/phpstan/analysis.md)
 * [analysis.md](../../../xot/docs/analysis.md)
@@ -6252,6 +6332,8 @@ Modules/Notify/
 * [analysis.md](../../../../Job/docs/analysis.md)
 * [analysis.md](../../../job/docs/phpstan/analysis.md)
 * [analysis.md](../../../../Media/docs/analysis.md)
+=======
+>>>>>>> laraxot/dev
 * [analysis.md](../../../media/docs/phpstan/analysis.md)
 * [analysis.md](../../../../themes/one/docs/analysis.md)
 
@@ -6266,7 +6348,11 @@ Modules/Notify/
 
 ## analysisettagliata-2
 
+<<<<<<< HEAD
 *Consolidated from: `analysisettagliata-modelli-relazioni.md`*
+=======
+*Consolidated from: `analysisettagliata-2.md`*
+>>>>>>> laraxot/dev
 
 
 ## 2. Modelli e Relazioni
@@ -6913,7 +6999,11 @@ Schema::create('template_analytics', function (Blueprint $table) {
 
 ## analysisettagliata-3
 
+<<<<<<< HEAD
 *Consolidated from: `analysisettagliata-servizi-core.md`*
+=======
+*Consolidated from: `analysisettagliata-3.md`*
+>>>>>>> laraxot/dev
 
 
 ## 3. Servizi Core
@@ -7564,7 +7654,11 @@ protected function updateAnalytics(string $messageId, string $event): void
 
 ## analysisettagliata-4
 
+<<<<<<< HEAD
 *Consolidated from: `analysisettagliata-integrazione-filament.md`*
+=======
+*Consolidated from: `analysisettagliata-4.md`*
+>>>>>>> laraxot/dev
 
 
 ## 4. Integrazione con Filament
@@ -8255,7 +8349,11 @@ class TemplateTestPage extends Page
 
 ## analysisettagliata-5
 
+<<<<<<< HEAD
 *Consolidated from: `analysisettagliata-testing-parte.md`*
+=======
+*Consolidated from: `analysisettagliata-5.md`*
+>>>>>>> laraxot/dev
 
 
 ## 5. Testing
@@ -9075,7 +9173,11 @@ class WebhookControllerTest extends TestCase
 
 ## analysisettagliata-6
 
+<<<<<<< HEAD
 *Consolidated from: `analysisettagliata-monitoraggio-analytics.md`*
+=======
+*Consolidated from: `analysisettagliata-6.md`*
+>>>>>>> laraxot/dev
 
 
 ## 6. Monitoraggio e Analytics
@@ -9699,7 +9801,11 @@ class AnalyticsExporter
 
 ## analysisettagliata-7
 
+<<<<<<< HEAD
 *Consolidated from: `analysisettagliata-manutenzione-backup.md`*
+=======
+*Consolidated from: `analysisettagliata-7.md`*
+>>>>>>> laraxot/dev
 
 
 ## 7. Manutenzione e Backup
@@ -10348,7 +10454,11 @@ class MaintainTemplatesCommand extends Command
 
 ## analysisettagliata-8
 
+<<<<<<< HEAD
 *Consolidated from: `analysisettagliata-finali-parte.md`*
+=======
+*Consolidated from: `analysisettagliata-8.md`*
+>>>>>>> laraxot/dev
 
 
 ## 8. Note Finali

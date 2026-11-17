@@ -1,22 +1,44 @@
+<<<<<<< HEAD
+=======
+---
+title: "appointment field naming issues 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "appointment field naming issues 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Appointment Field Naming Issues
 
 ## Overview
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 The Appointment model in <nome progetto> module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
 =======
 The Appointment model in SaluteOra module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
 >>>>>>> 6ed19256f (.)
+=======
+The Appointment model in <nome progetto> module defines both legacy field names (`start_time`, `end_time`) and canonical field names (`starts_at`, `ends_at`). The canonical field names `starts_at` and `ends_at` should be used consistently throughout the codebase.
+>>>>>>> laraxot/dev
 
 ## Issues Detected
 
 ### SendAppointmentNotificationAction.php.old
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 =======
 **File Path**: `/var/www/html/_bases/base_saluteora/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 >>>>>>> 6ed19256f (.)
+=======
+**File Path**: `Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
+>>>>>>> laraxot/dev
 
 **Line 120**:
 ```php

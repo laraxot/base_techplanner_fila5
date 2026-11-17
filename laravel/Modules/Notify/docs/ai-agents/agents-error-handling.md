@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "agents error handling"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # AGENTS Error Handling
@@ -30,6 +33,18 @@ try {
 ```
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "agents error handling"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents error handling"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Validation
 
 - Use **Form Request classes** for validation (not inline)
@@ -91,9 +106,15 @@ try {
 ## 🔗 Link
 
 - [Indice AGENTS](./agents-split-index.md)
+<<<<<<< HEAD
 - [phpstan.md](../phpstan.md) - Analisi statica
 - [AGENTS.md originale](../../AGENTS.md)
 - [agents.md originale](../../agents.md)
 - [AGENTS.md originale](../AGENTS.md)
 - [agents.md originale](../agents.md)
+=======
+- [phpstan.md](./phpstan.md) - Analisi statica
+- [AGENTS.md originale](../../AGENTS.md)
+- [agents.md originale](../../agents.md)
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

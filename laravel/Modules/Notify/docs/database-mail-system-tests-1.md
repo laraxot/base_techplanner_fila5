@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "database mail system tests 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database mail system tests 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Test del Sistema di Gestione Email - il progetto
 
 ## Panoramica
@@ -377,17 +391,23 @@ php artisan test --coverage --filter=MailTemplate
 - [Database Mail System](database-mail-system.md)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Testing Guide](../../../../docs/testing-guide.md)
 - [CI/CD Pipeline](../../../../docs/ci-cd.md)
 =======
 - [Testing Guide](../../../docs/testing-guide.md)
 - [CI/CD Pipeline](../../../docs/ci-cd.md)
 >>>>>>> 6ed19256f (.)
+=======
+- [Testing Guide](../../../../docs/testing-guide.md)
+- [CI/CD Pipeline](../../../../docs/ci-cd.md)
+>>>>>>> laraxot/dev
 
 ## Vedi Anche
 - [Laravel Testing](https://laravel.com/docs/testing)
 - [PHPUnit Documentation](https://phpunit.de/documentation.html)
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 - [Testing Guide](../../../../docs/project/testing-guide.md)
 - [CI/CD Pipeline](../../../../docs/project/ci-cd.md)
@@ -395,6 +415,10 @@ php artisan test --coverage --filter=MailTemplate
 - [Testing Guide](../../../project_docs/testing-guide.md)
 - [CI/CD Pipeline](../../../project_docs/ci-cd.md)
 >>>>>>> 6ed19256f (.)
+=======
+- [Testing Guide](../../../../docs/project/testing-guide.md)
+- [CI/CD Pipeline](../../../../docs/project/ci-cd.md)
+>>>>>>> laraxot/dev
 
 ## Vedi Anche
 - [Laravel Testing](https://laravel.com/project_docs/testing)
@@ -499,7 +523,11 @@ php artisan test --coverage --filter=MailTemplate
 - [Pest PHP](https://pestphp.com/docs)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [Pest PHP](https://pestphp.com/docs)
 =======
 - [Pest PHP](https://pestphp.com/docs)
 >>>>>>> 6ed19256f (.)
+=======
+- [Pest PHP](https://pestphp.com/docs)
+>>>>>>> laraxot/dev

@@ -1,13 +1,22 @@
 ---
+<<<<<<< HEAD
+=======
+title: "🏆 NOTIFY - COMPLETAMENTO ASSOLUTO 100%"
+>>>>>>> laraxot/dev
 title: "🏆 <nome progetto> - COMPLETAMENTO ASSOLUTO 100%"
 type: concept
 tags: [absolute, completion, 100]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "absolute-completion-100 🏆 laraxot - completamento assoluto 100%"
+>>>>>>> laraxot/dev
 qmd: "absolute-completion-100 🏆 <nome progetto> - completamento assoluto 100%"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -25,6 +34,16 @@ related:
   - "./action-plan-immediate.md"
   - "../../../actions-calling-actions-pattern.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+  - "./actions-calling-actions-pattern.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🏆 NOTIFY - COMPLETAMENTO ASSOLUTO 100%
@@ -56,7 +75,11 @@ Partiti da un progetto con documentazione al 65% e implementazione al 60%, abbia
 2. documentation-index.md
 3. quick-start.md
 4. project-completion-status.md
+<<<<<<< HEAD
 5. excellence-2025.md
+=======
+5. excellence-year-note-snake.md
+>>>>>>> laraxot/dev
 6. final-summary.md
 7. WORK-COMPLETED-.md.md
 8. gap-analysis-implementation.md
@@ -94,8 +117,12 @@ Partiti da un progetto con documentazione al 65% e implementazione al 60%, abbia
 #### Reports (5)
 28. super-mucca-completion.md
 29. ultimate-completion-report.md
+<<<<<<< HEAD
 30. absolute-completion.md (questo)
 30. absolute-completion-notify-completamento-assoluto.md (questo)
+=======
+30. absolute-completion-100.md (questo)
+>>>>>>> laraxot/dev
 31. Roadmap aggiornate (3)
 
 ---

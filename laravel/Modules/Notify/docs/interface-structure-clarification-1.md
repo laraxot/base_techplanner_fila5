@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "interface structure clarification 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "interface structure clarification 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Chiarimento sulla Struttura delle Interfacce
 
 ## Struttura Corretta per le Interfacce SMS
@@ -6,10 +20,14 @@
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+>>>>>>> laraxot/dev
 ```
 
 Con il namespace corrispondente:

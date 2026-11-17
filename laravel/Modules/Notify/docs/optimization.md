@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "optimization"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi di Ottimizzazione - Modulo Notify
@@ -77,5 +80,16 @@ class NotificationTemplateCache
 - **Fase 4**: Delivery tracking e analytics
 
 ---
+<<<<<<< HEAD
+=======
+title: "optimization"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "optimization"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Stato: 🟡 Funzionale ma Necessita Reliability Enhancement*
 

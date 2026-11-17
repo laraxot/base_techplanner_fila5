@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "filament ui enhancements"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: filament-ui-enhancements.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Miglioramenti UI/UX per MailTemplateResource

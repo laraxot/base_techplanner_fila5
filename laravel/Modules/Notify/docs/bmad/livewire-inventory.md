@@ -5,7 +5,11 @@ updated: 2026-09-26
 qmd: "livewire inventory"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Inventario Http/Livewire → Filament widget: Notify"
+=======
+title: "Inventario Http/Livewire → Filament widget — Notify"
+>>>>>>> laraxot/dev
 type: inventory
 module: Notify
 status: approved
@@ -16,6 +20,7 @@ related:
   - ./livewire-widget-decision-log.md
   - ./livewire-widget-epics.md
   - ../stories/12.1.notify-notifications-fqcn.story.md
+<<<<<<< HEAD
   - ../../../User/docs/bmad/livewire-inventory.md
   - ../../Xot/docs/bmad/livewire-widget-project-context.md
 ---
@@ -25,6 +30,17 @@ related:
 **Solo documentazione. Nessun PHP toccato in questo audit.**
 
 Questo file è la SSoT del modulo Notify per la campagna di conversione Livewire → Filament widget. Formato e metodo ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../../Cms/docs/bmad/livewire-inventory.md).
+=======
+  - ../../User/docs/bmad/livewire-inventory.md
+  - ../../Xot/docs/bmad/livewire-widget-project-context.md
+---
+
+# Inventario: Livewire HTTP → Filament — modulo Notify
+
+**Solo documentazione. Nessun PHP toccato in questo audit.**
+
+Questo file è la SSoT del modulo Notify per la campagna di conversione Livewire → Filament widget. Formato e metodo ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md).
+>>>>>>> laraxot/dev
 
 ## Metodo (codice, non assunzione)
 
@@ -44,13 +60,21 @@ grep -rniE 'database.notification|DatabaseNotifications' Modules/Notify Modules/
 `Modules/Notify/app/Http/Livewire/` contiene:
 
 - `_components.json` = `[]` (nessun componente registrato);
+<<<<<<< HEAD
 - `Auth/filamentlogin.fila2` e `Auth/FilamentLogin.fila2`: **non sono file `.php`**: estensione `.fila2`, quindi fuori dall'autoload PSR-4 e mai eseguiti. Contenuto identico (8 righe di codice utile): `class FilamentLogin extends Savannabits\FilamentModules\Http\Livewire\Auth\BaseLogin` con `$context = 'filament'` e `$module = 'Notify'`: relitto del pacchetto `savannabits/filament-modules`, oggi non referenziato da nessun file (unico hit "savannabits" nel repo è un `@see` in `Modules/User/app/Filament/Resources/TenantResource.php:6`).
+=======
+- `Auth/filamentlogin.fila2` e `Auth/FilamentLogin.fila2` — **non sono file `.php`**: estensione `.fila2`, quindi fuori dall'autoload PSR-4 e mai eseguiti. Contenuto identico (8 righe di codice utile): `class FilamentLogin extends Savannabits\FilamentModules\Http\Livewire\Auth\BaseLogin` con `$context = 'filament'` e `$module = 'Notify'` — relitto del pacchetto `savannabits/filament-modules`, oggi non referenziato da nessun file (unico hit "savannabits" nel repo è un `@see` in `Modules/User/app/Filament/Resources/TenantResource.php:6`).
+>>>>>>> laraxot/dev
 
 `app/Livewire/` non esiste. Il grep `extends.*(Component|Livewire)` su tutti i `.php` del modulo non restituisce file. **Notify non possiede componenti Livewire.**
 
 ## L'unico mount Livewire reale: `DatabaseNotifications` (vendor Filament)
 
+<<<<<<< HEAD
 `Modules/Notify/app/Providers/Filament/AdminPanelProvider.php` (43 righe) è il punto in cui la nota "moved into Notify" di `Modules/User/app/Providers/Filament/AdminPanelProvider.php:41-47` **è stata davvero implementata** (a differenza del caso `terms-of-service` → Gdpr, che non è mai avvenuto: vedi inventario Gdpr):
+=======
+`Modules/Notify/app/Providers/Filament/AdminPanelProvider.php` (43 righe) è il punto in cui la nota "moved into Notify" di `Modules/User/app/Providers/Filament/AdminPanelProvider.php:41-47` **è stata davvero implementata** (a differenza del caso `terms-of-service` → Gdpr, che non è mai avvenuto — vedi inventario Gdpr):
+>>>>>>> laraxot/dev
 
 ```php
 // righe 32-39
@@ -66,11 +90,19 @@ if (! XotData::make()->disable_database_notifications) {
 
 Fatti verificati:
 
+<<<<<<< HEAD
 - Il componente montato è `Filament\Notifications\Livewire\DatabaseNotifications` (riga 7 `use`), **classe vendor Filament**, non codice del modulo. Il mount usa già l'FQCN (`DatabaseNotifications::class`, riga 37): non l'alias stringa `'database-notifications'` del vecchio hook commentato in User.
 - Il trigger custom è la vista `notify::livewire.database-notifications-trigger` → `Modules/Notify/resources/views/livewire/database-notifications-trigger.blade.php`: un `<x-filament::icon-button>` con badge `$unreadNotificationsCount` (righe 4-10 del blade; il resto del file è markup commentato).
 - Gate: `XotData::make()->disable_database_notifications`, default **`true`** in `Modules/Xot/app/Datas/XotData.php:61`: quindi il blocco è **spento di default** e la campanella appare solo se un progetto spegne il flag.
 - Polling: `60s` (riga 35); l'alternativa `30s` resta commentata (riga 34).
 - Lo stesso provider registra `SpatieTranslatablePlugin` per `MailTemplateResource` (righe 28-30): ortogonale a questa campagna.
+=======
+- Il componente montato è `Filament\Notifications\Livewire\DatabaseNotifications` (riga 7 `use`), **classe vendor Filament**, non codice del modulo. Il mount usa già l'FQCN (`DatabaseNotifications::class`, riga 37) — non l'alias stringa `'database-notifications'` del vecchio hook commentato in User.
+- Il trigger custom è la vista `notify::livewire.database-notifications-trigger` → `Modules/Notify/resources/views/livewire/database-notifications-trigger.blade.php`: un `<x-filament::icon-button>` con badge `$unreadNotificationsCount` (righe 4-10 del blade; il resto del file è markup commentato).
+- Gate: `XotData::make()->disable_database_notifications`, default **`true`** in `Modules/Xot/app/Datas/XotData.php:61` — quindi il blocco è **spento di default** e la campanella appare solo se un progetto spegne il flag.
+- Polling: `60s` (riga 35); l'alternativa `30s` resta commentata (riga 34).
+- Lo stesso provider registra `SpatieTranslatablePlugin` per `MailTemplateResource` (righe 28-30) — ortogonale a questa campagna.
+>>>>>>> laraxot/dev
 
 ## Verifica del montaggio delle viste del modulo
 
@@ -98,7 +130,11 @@ Fatti verificati:
 
 ## Verdetto
 
+<<<<<<< HEAD
 Nessuna story di conversione widget: il solo mount Livewire del modulo è il componente vendor già montato nel modo corretto (FQCN, gated, trigger custom). La story [12.1](../stories/12.1.notify-notifications-fqcn.story.md) (hook FQCN al posto dell'alias stringa) è **già soddisfatta dal codice attuale**: `AdminPanelProvider.php:37` usa `DatabaseNotifications::class`; va solo marcata done, non rilavorata. Il vecchio hook `'database-notifications'` in `Modules/User/.../AdminPanelProvider.php:41-47` resta commentato e **non va riattivato in User**.
+=======
+Nessuna story di conversione widget: il solo mount Livewire del modulo è il componente vendor già montato nel modo corretto (FQCN, gated, trigger custom). La story [12.1](../stories/12.1.notify-notifications-fqcn.story.md) (hook FQCN al posto dell'alias stringa) è **già soddisfatta dal codice attuale** — `AdminPanelProvider.php:37` usa `DatabaseNotifications::class`; va solo marcata done, non rilavorata. Il vecchio hook `'database-notifications'` in `Modules/User/.../AdminPanelProvider.php:41-47` resta commentato e **non va riattivato in User**.
+>>>>>>> laraxot/dev
 
 Rischio residuo documentato: il flag `disable_database_notifications` è `true` di default, quindi il blocco è dormiente; se un progetto lo attiva, ogni futuro rename della classe vendor impatta il user-menu di tutti i panel che ereditano questo provider.
 

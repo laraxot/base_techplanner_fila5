@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "modelli factory seeder analisi"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi Modelli, Factory e Seeder - Modulo Notify

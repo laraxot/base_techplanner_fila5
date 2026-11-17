@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "design comuni theme audit"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Design Comuni Theme Audit & Improvement Roadmap

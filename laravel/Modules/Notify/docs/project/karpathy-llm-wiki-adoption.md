@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "karpathy llm wiki adoption"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Karpathy LLM Wiki per Notify
@@ -187,7 +190,11 @@ Ma il risultato utile non deve restare solo nel notebook:
 
 ### Con QMD
 
+<<<<<<< HEAD
 Karpathy cita QMD come upgrade naturale quando il wiki cresce ([gist: Optional: CLI tools](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)). Per noi ha senso soprattutto per:
+=======
+Karpathy cita QMD come upgrade naturale quando il wiki cresce ([gist — Optional: CLI tools](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f)). Per noi ha senso soprattutto per:
+>>>>>>> laraxot/dev
 
 - ricerca rapida su `docs/`, `laravel/Modules/*/docs/`, `laravel/Themes/*/docs/`, `bashscripts/docs/`, `design-artifacts/`;
 - retrieval per agenti (CLI, **MCP** `qmd mcp`, o SDK) senza rileggere centinaia di file;

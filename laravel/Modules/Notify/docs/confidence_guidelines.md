@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "confidence guidelines"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: confidence-guidelines.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Massimizzare il livello di confidenza

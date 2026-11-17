@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "git conflicts resolution summary"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitti Git - Modulo Notify
@@ -81,4 +84,15 @@ Tutti i file risolti rispettano:
 - [Notification Channels](./notification_channels_implementation.md)
 
 ---
+<<<<<<< HEAD
+=======
+title: "git conflicts resolution summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git conflicts resolution summary"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Aggiornato automaticamente dopo risoluzione conflitti Git*

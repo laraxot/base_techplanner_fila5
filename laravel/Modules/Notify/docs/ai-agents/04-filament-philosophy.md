@@ -7,15 +7,34 @@ updated: 2026-09-26
 qmd: "04 filament philosophy"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎨 Filament Forms & Tables Philosophy
 
+<<<<<<< HEAD
 **Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
 **Related**: [03-ARCHITECTURE-ZEN.md](03-ARCHITECTURE-ZEN.md): Architecture
 
 ---
+=======
+**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
+**Related**: [03-ARCHITECTURE-ZEN.md](03-ARCHITECTURE-ZEN.md) — Architecture
+
+---
+
+title: "04 filament philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "04 filament philosophy"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🔴 Fundamental Rule
 
 **NEVER create custom forms or tables in blade.**

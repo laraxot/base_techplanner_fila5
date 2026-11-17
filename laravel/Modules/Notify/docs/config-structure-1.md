@@ -1,8 +1,23 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Struttura di Configurazione nei Moduli <nome progetto>
 =======
 # Struttura di Configurazione nei Moduli SaluteOra
 >>>>>>> 6ed19256f (.)
+=======
+---
+title: "config structure 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "config structure 1"
+issues: []
+discussions: []
+---
+
+# Struttura di Configurazione nei Moduli <nome progetto>
+>>>>>>> laraxot/dev
 
 ## Principi di Configurazione
 

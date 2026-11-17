@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "dto structure"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Regole per la Struttura dei DTO

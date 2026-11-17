@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "naming conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni di Naming
 
 ## Regole Generali
@@ -57,10 +71,14 @@ public function handleHTTPRequest(): void
 # Convenzioni di Naming per le Azioni di Notifica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema <nome progetto>, supportando la risoluzione dinamica delle classi implementata nei factory.
 =======
 Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema SaluteOra, supportando la risoluzione dinamica delle classi implementata nei factory.
 >>>>>>> 6ed19256f (.)
+=======
+Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema <nome progetto>, supportando la risoluzione dinamica delle classi implementata nei factory.
+>>>>>>> laraxot/dev
 
 ## Pattern di Naming
 

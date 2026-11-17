@@ -1,12 +1,30 @@
+<<<<<<< HEAD
+=======
+---
+title: "responsive email templates 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "responsive email templates 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Responsive Email Templates - Guida Completa
 
 ## Introduzione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di <nome progetto>, con focus su compatibilità, engagement e best practices di settore.
 =======
 Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di SaluteOra, con focus su compatibilità, engagement e best practices di settore.
 >>>>>>> 6ed19256f (.)
+=======
+Questa guida fornisce una panoramica completa sulla creazione e l'utilizzo di template email HTML responsive nel contesto di <nome progetto>, con focus su compatibilità, engagement e best practices di settore.
+>>>>>>> laraxot/dev
 
 ## Principi Fondamentali
 
@@ -79,10 +97,14 @@ Migliore esperienza su client moderni:
 ```
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per <nome progetto>, si raccomanda un **approccio ibrido**:
 =======
 Per SaluteOra, si raccomanda un **approccio ibrido**:
 >>>>>>> 6ed19256f (.)
+=======
+Per <nome progetto>, si raccomanda un **approccio ibrido**:
+>>>>>>> laraxot/dev
 - Struttura base con tabelle per massima compatibilità
 - CSS moderno con fallback per funzionalità avanzate
 
@@ -193,5 +215,10 @@ I template nella directory `mail-layouts` supportano variabili Blade:
 
 - [Guida ai Layout Email](./MAIL_LAYOUTS_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [HTML Email Compatibility](mail-templates/html_email_compatibility.md)
 - [MailPace Integration](mail-templates/mailpace_templates_integration.md)
+=======
+- [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+- [MailPace Integration](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md)
+>>>>>>> laraxot/dev

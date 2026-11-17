@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "xot base classes checklist"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: xot-base-classes-checklist.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Checklist: Verifica Classi Base Xot

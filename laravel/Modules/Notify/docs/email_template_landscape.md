@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email template landscape"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-template-landscape.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Panoramica e Analisi dei Template Email in Laravel

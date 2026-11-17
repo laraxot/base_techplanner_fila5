@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "architecture analysis"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # FIXCITY ARCHITECTURE DEEP DIVE ANALYSIS
@@ -24,6 +27,18 @@ status: draft
 **Status**: Production-Ready Foundation with Active Development
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "architecture analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture analysis"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📋 EXECUTIVE SUMMARY
 
 ### Project Overview
@@ -616,10 +631,14 @@ Themes/Sixteen/
 # ALWAYS run after ANY frontend change:
 cd Themes/Sixteen/
 npm run build          # Compile assets
+<<<<<<< HEAD
 <<<<<<< .merge_file_hUaCDd
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 =======
 >>>>>>> .merge_file_lKXEe4
+=======
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
+>>>>>>> laraxot/dev
 
 # These commands are MANDATORY for any:
 # - CSS changes
@@ -1808,11 +1827,16 @@ Monitoring:
 
 Frontend:
 [ ] Theme built (npm run build)
+<<<<<<< HEAD
 <<<<<<< .merge_file_hUaCDd
 niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 =======
 [ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
 >>>>>>> .merge_file_lKXEe4
+=======
+[ ] Assets deployed (symlink public_html/themes (npm run copy obsoleto))
+[ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
+>>>>>>> laraxot/dev
 [ ] Dark mode tested
 [ ] Responsive design tested
 [ ] Accessibility tested

@@ -1,13 +1,22 @@
 ---
+<<<<<<< HEAD
+=======
+title: "🏆 NOTIFY - PERFEZIONE RAGGIUNTA"
+>>>>>>> laraxot/dev
 title: "🏆 <nome progetto> - PERFEZIONE RAGGIUNTA"
 type: concept
 tags: [perfection, achieved]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "perfection-achieved 🏆 laraxot - perfezione raggiunta"
+>>>>>>> laraxot/dev
 qmd: "perfection-achieved 🏆 <nome progetto> - perfezione raggiunta"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -22,6 +31,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🏆 NOTIFY - PERFEZIONE RAGGIUNTA

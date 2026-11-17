@@ -7,16 +7,36 @@ updated: 2026-09-26
 qmd: "project analysis and roadmap"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # FixCity - Analisi Completa del Progetto e Roadmap
 
+<<<<<<< HEAD
 **Data Analisi**: 1 Ottobre 2025
 **Analista**: AI Assistant
 **Versione**: 1.0
 
 ---
+=======
+**Data Analisi**: 1 Ottobre 2025  
+**Analista**: AI Assistant  
+**Versione**: 1.0
+
+---
+
+title: "project analysis and roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "project analysis and roadmap"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 SCOPO DEL PROGETTO
 
 ### Cos'è FixCity?
@@ -80,8 +100,13 @@ Moduli Supporto:
 ### Architettura Modulare
 
 ```
+<<<<<<< HEAD
 /var/www/_bases/base_fixcity_fila5/
 /var/www/_bases/base_ptv_fila5/
+=======
+/var/www/_bases/base_fixcity_fila5_mono/
+/var/www/_bases/base_ptv_fila5_mono/
+>>>>>>> laraxot/dev
 ├── laravel/                    # Root Laravel
 │   ├── Modules/               # Moduli business
 │   │   ├── Fixcity/          # Core segnalazioni
@@ -314,7 +339,11 @@ Moduli Supporto:
 
 1. **Map Picker Filament** (`TicketResource.php:17`)
    ```php
+<<<<<<< HEAD
    // use Dotswan\MapPicker\Fields\Map;
+=======
+   // use Dotswan\MapPicker\Fields\Map; 
+>>>>>>> laraxot/dev
    // TODO: Install dotswan/filament-map-picker package
    ```
    **Soluzione**: Installare `dotswan/filament-map-picker` per selezione coordinate visuale
@@ -474,17 +503,30 @@ Moduli Supporto:
 
 ### Per i Cittadini
 
+<<<<<<< HEAD
 ✅ **Voce diretta** con l'amministrazione
 ✅ **Trasparenza** sullo stato segnalazioni
 ✅ **Partecipazione attiva** miglioramento città
+=======
+✅ **Voce diretta** con l'amministrazione  
+✅ **Trasparenza** sullo stato segnalazioni  
+✅ **Partecipazione attiva** miglioramento città  
+>>>>>>> laraxot/dev
 ✅ **Feedback loop** chiuso
 
 ### Per le Amministrazioni
 
+<<<<<<< HEAD
 ✅ **Efficienza** gestione segnalazioni
 ✅ **Prioritizzazione** basata su dati
 ✅ **Soddisfazione** cittadini tracciabile
 ✅ **Riduzione costi** coordinamento
+=======
+✅ **Efficienza** gestione segnalazioni  
+✅ **Prioritizzazione** basata su dati  
+✅ **Soddisfazione** cittadini tracciabile  
+✅ **Riduzione costi** coordinamento  
+>>>>>>> laraxot/dev
 ✅ **Reporting** per enti superiori
 
 ### Potenziale di Mercato
@@ -507,15 +549,26 @@ Moduli Supporto:
 
 **Conclusione**: FixCity è un progetto **solido e ben architettato** con un **core funzionale completo** (90%). Le aree di miglioramento principali sono **qualità del codice (quasi completa)**, **test coverage**, **API standardization** e **feature avanzate** (mobile, real-time, AI).
 
+<<<<<<< HEAD
 **Potenziale commerciale**: ⭐⭐⭐⭐⭐ (5/5)
 **Qualità tecnica**: ⭐⭐⭐⭐ (4/5 → 5/5 dopo PHPStan completion)
 **Completezza funzionale**: ⭐⭐⭐⭐ (4/5)
+=======
+**Potenziale commerciale**: ⭐⭐⭐⭐⭐ (5/5)  
+**Qualità tecnica**: ⭐⭐⭐⭐ (4/5 → 5/5 dopo PHPStan completion)  
+**Completezza funzionale**: ⭐⭐⭐⭐ (4/5)  
+>>>>>>> laraxot/dev
 **Scalabilità**: ⭐⭐⭐⭐⭐ (5/5)
 
 ---
 
+<<<<<<< HEAD
 **Documento creato**: 1 Ottobre 2025
 **Prossimo review**: 1 Novembre 2025
+=======
+**Documento creato**: 1 Ottobre 2025  
+**Prossimo review**: 1 Novembre 2025  
+>>>>>>> laraxot/dev
 **Maintainer**: [Team FixCity]
 
 

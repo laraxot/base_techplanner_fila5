@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email wysiwyg editor"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: email-wysiwyg-editor.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Editor WYSIWYG per Email - il progetto

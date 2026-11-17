@@ -1,9 +1,17 @@
 ---
+<<<<<<< HEAD
 title: "Notify: brainstorming"
 type: brainstorming
 tags: [notify, brainstorming, risks, open-questions, decisions, channels]
 created: 2026-09-28
 updated: 2026-10-23
+=======
+title: "Notify — brainstorming"
+type: brainstorming
+tags: [notify, brainstorming, risks, open-questions, decisions, channels]
+created: 2026-09-28
+updated: 2026-10-07
+>>>>>>> laraxot/dev
 qmd: "Notify brainstorming decisioni aperte scartate rischi canali notifica"
 related:
   - ./README.md
@@ -11,10 +19,16 @@ related:
   - ./brainstorming/module-opportunities.md
   - ./epics/module-roadmap.md
   - ./epics/notification-channels.epic.md
+<<<<<<< HEAD
 status: draft
 ---
 
 # Notify: brainstorming
+=======
+---
+
+# Notify — brainstorming
+>>>>>>> laraxot/dev
 
 > **SUMMARY**: indice dei contenuti di brainstorming per `Modules\Notify`.
 > Le domande ad alto valore, ipotesi, rischi e output attesi sono nei **shard**
@@ -38,8 +52,13 @@ status: draft
 | `NotifyTheme` usa `linkable()` MorphTo | approvata | `app/Models/NotifyTheme.php:121` |
 | Canali esterni in `app/Channels/` (SMS, Telegram, WhatsApp, Netfun) | approvati | `app/Channels/` |
 | Merge config da env in `MergesNotifyConfigFromEnv` | approvato | `app/Providers/Concerns/MergesNotifyConfigFromEnv.php` |
+<<<<<<< HEAD
 | Notifiche in coda con la Queueable Action stessa (`->onQueue()->execute(...)`), senza Job: `SendNotificationJob` rimosso (story 4.27, [regola](../../../../../bashscripts/ai/wiki/rules/no-module-jobs-queueable-action.md)) | approvato | `app/Actions/SendNotificationAction.php`, `app/Actions/SendRecordsNotificationAction.php` |
 | Push programmato: `SchedulePushNotificationAction` accoda `SendScheduledPushNotificationAction` con `ActionJob::dispatch(...)->delay(...)` | approvato | `app/Actions/Push/SchedulePushNotificationAction.php` |
+=======
+| Notifiche in coda tramite `SendNotificationJob` | approvato | `app/Jobs/SendNotificationJob.php` |
+| Push programmato in `SendScheduledPushNotification` | approvato | `app/Jobs/SendScheduledPushNotification.php` |
+>>>>>>> laraxot/dev
 | Migrazioni obsolete in `_archive_redundant/` non applicate | approvato | `database/migrations/_archive_redundant/` |
 
 ## Domande aperte
@@ -119,3 +138,13 @@ Percorsi relativi a `laravel/Modules/Notify/app`.
 - [Epic roadmap](./epics/module-roadmap.md)
 - [Epic channels](./epics/notification-channels.epic.md)
 - [Module opportunities (shard)](./brainstorming/module-opportunities.md)
+<<<<<<< HEAD
+=======
+
+## Brainstorming audit 2026-11-16
+
+- **Policy di default:** invece di una policy per modello, un controllo CI che fallisca se una Resource ha `Gate::getPolicyFor() === null` (script one-shot usato nell'audit). Costo basso, previene la regressione ovunque.
+- **Webhook:** valutare un solo endpoint per provider con firma nativa (Postmark/Mailgun) invece del token condiviso.
+- **Domanda aperta:** `NotificationLog` va conservato quanto? `CleanupNotificationLogsCommand` esiste: verificare la retention rispetto alla policy privacy dell'ente.
+- **Scartato:** riscrivere i canali in un unico driver: fuori scope, non misurato come problema.
+>>>>>>> laraxot/dev

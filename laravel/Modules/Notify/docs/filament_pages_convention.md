@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "filament pages convention"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: filament-pages-convention.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Convenzioni per le Pagine Filament

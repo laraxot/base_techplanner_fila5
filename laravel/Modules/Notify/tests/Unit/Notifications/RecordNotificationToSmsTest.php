@@ -14,7 +14,11 @@ use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 /**
+<<<<<<< HEAD
  * Story <nome progetto>-send-invite-migrate-to-record-notification.md, Difetto 17
+=======
+ * Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 17
+>>>>>>> laraxot/dev
  * (2026-09-15): un survey senza `sms_template` configurato non lanciava
  * eccezioni, ma faceva costruire un `SmsData` con corpo vuoto — che
  * `SmsChannel::send()` avrebbe spedito per davvero al gateway. Chiamato qui

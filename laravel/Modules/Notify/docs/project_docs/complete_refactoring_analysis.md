@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "complete refactoring analysis"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Complete Cyclomatic Complexity Refactoring Analysis
@@ -17,6 +20,18 @@ status: draft
 **Status:** In Progress
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "complete refactoring analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "complete refactoring analysis"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 Executive Summary
 
 ### Global Statistics (After Initial Refactoring)

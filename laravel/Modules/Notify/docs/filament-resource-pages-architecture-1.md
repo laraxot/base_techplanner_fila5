@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament resource pages architecture 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament resource pages architecture 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Architettura delle Pagine di Risorse Filament
 
 ## Regola Fondamentale
@@ -108,18 +122,26 @@ Per verificare che tutte le pagine di risorse seguano questo pattern:
 
 ```bash
 <<<<<<< HEAD
+<<<<<<< HEAD
 find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
 =======
 find /var/www/html/saluteora/laravel/Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
 >>>>>>> 6ed19256f (.)
+=======
+find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
+>>>>>>> laraxot/dev
 ```
 
 ## Riferimenti
 
 - [Filament Resources Documentation](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
 =======
 - [SaluteOra XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
 >>>>>>> 6ed19256f (.)
+=======
+- [<nome progetto> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
+>>>>>>> laraxot/dev
 - [Pattern Architetturali in Laravel](https://laravel.com/docs/architecture)

@@ -1,7 +1,11 @@
 ---
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "MailTemplate slug: preventOverwrite obbligatorio"
+=======
+title: "MailTemplate slug — preventOverwrite obbligatorio"
+>>>>>>> laraxot/dev
 type: concept
 status: canonical
 module: Notify
@@ -11,7 +15,11 @@ tags: [mail-template, slug, sluggable, spatie-email, gotcha]
 qmd: "mail template slug preventOverwrite hasSlug regenerate subject spatieemail counter update missingmailtemplate"
 related:
   - ./one-migration-consolidamento-wave2.md
+<<<<<<< HEAD
   - ../../../../<nome progetto>/docs/stories/<nome progetto>-send-invite-migrate-to-record-notification.md
+=======
+  - ../../../../Quaeris/docs/stories/quaeris-send-invite-migrate-to-record-notification.md
+>>>>>>> laraxot/dev
 ---
 
 # `MailTemplate::getSlugOptions()` deve avere `->preventOverwrite()`
@@ -29,16 +37,26 @@ public function getSlugOptions(): SlugOptions
 ```
 
 Senza `preventOverwrite()`, `Spatie\Sluggable\HasSlug` rigenera lo `slug` da
+<<<<<<< HEAD
 `subject` ad **ogni** `save()`/`update()` con eventi attivi: non solo alla
+=======
+`subject` ad **ogni** `save()`/`update()` con eventi attivi — non solo alla
+>>>>>>> laraxot/dev
 creazione.
 
 ## Perché è un problema concreto
 
 `Modules\Notify\Emails\SpatieEmail::__construct()`, ad **ogni istanziazione**,
 fa `firstOrCreate(...)` seguito da `$tpl->update(['counter' => $tpl->counter + 1])`.
+<<<<<<< HEAD
 Quell'`update()` fa scattare `HasSlug`: uno slug impostato a mano: dalla scheda
 "Inviti" (`ManageMailTemplates`, convenzione `survey-pdf-<id>-<nome>`) o dallo
 script `notify:migrate-themes-to-mail-templates`: viene riscritto col
+=======
+Quell'`update()` fa scattare `HasSlug`: uno slug impostato a mano — dalla scheda
+"Inviti" (`ManageMailTemplates`, convenzione `survey-pdf-<id>-<nome>`) o dallo
+script `notify:migrate-themes-to-mail-templates` — viene riscritto col
+>>>>>>> laraxot/dev
 subject-slug. Il lookup successivo `getMailTemplate()` → `findForMailable()`
 cerca lo slug originale, non lo trova, e lancia
 `Spatie\MailTemplates\Exceptions\MissingMailTemplate`.
@@ -48,7 +66,11 @@ valore già presente sopravvive a qualunque save.
 
 ## Storia
 
+<<<<<<< HEAD
 - Il comando di migrazione (story `<nome progetto>-send-invite-migrate-to-record-notification.md`,
+=======
+- Il comando di migrazione (story `quaeris-send-invite-migrate-to-record-notification.md`,
+>>>>>>> laraxot/dev
   Task 4) avvolgeva le scritture in `MailTemplate::withoutEvents(...)` proprio per
   aggirare questo (Difetto 6). Sintomo curato lì, causa non rimossa.
 - Difetto 10 (2026-09-10): l'impatto sul flusso di invio reale è emerso solo

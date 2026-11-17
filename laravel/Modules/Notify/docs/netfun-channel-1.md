@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "netfun channel 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "netfun channel 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Implementazione Canale Netfun
 
 ## 1. Struttura Base
@@ -469,6 +483,9 @@ SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
@@ -501,6 +518,7 @@ SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
+<<<<<<< HEAD
 =======
 SMS_FROM_NAME=SaluteOra
 SMS_FROM_NAME=SaluteOra
@@ -562,10 +580,45 @@ SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=SaluteOra
 SMS_FROM_NAME=SaluteOra
 >>>>>>> 6ed19256f (.)
+=======
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+>>>>>>> laraxot/dev
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+<<<<<<< HEAD
 <<<<<<< HEAD
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
@@ -577,11 +630,22 @@ SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=SaluteOra
 >>>>>>> 6ed19256f (.)
+=======
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+>>>>>>> laraxot/dev
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
@@ -604,6 +668,7 @@ SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
+<<<<<<< HEAD
 =======
 SMS_FROM_NAME=SaluteOra
 SMS_FROM_NAME=SaluteOra
@@ -649,14 +714,81 @@ SMS_FROM_NAME=SaluteOra
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=SaluteOra
 >>>>>>> 6ed19256f (.)
+=======
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+>>>>>>> laraxot/dev
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 SMS_FROM_NAME=SaluteOra
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
+SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
@@ -717,42 +849,6 @@ SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=<nome progetto>
 =======
 SMS_FROM_NAME=SaluteOra
 SMS_FROM_NAME=SaluteOra
@@ -797,6 +893,8 @@ SMS_FROM_NAME=SaluteOra
 >>>>>>> 6ed19256f (.)
 SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NAME=<nome progetto>
+=======
+>>>>>>> laraxot/dev
 SMS_FROM_NUMBER=+393331234567
 SMS_DEBUG=false
 

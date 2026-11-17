@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "crud template email filament"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Proposta Architetturale: CRUD Template Email in Notify (Filament)
@@ -16,6 +19,18 @@ status: draft
 Consentire la gestione runtime (CRUD) dei template email direttamente dal backend Filament, con fallback su file statici. Garantire robustezza, versioning, localizzazione e coerenza con le regole <nome progetto>.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "crud template email filament"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "crud template email filament"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 1. Struttura Database (Esempio Migration)
 ```php
 Schema::create('email_templates', function (Blueprint $table) {

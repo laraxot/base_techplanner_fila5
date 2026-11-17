@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email analytics"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: email-analytics.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analytics Email - il progetto

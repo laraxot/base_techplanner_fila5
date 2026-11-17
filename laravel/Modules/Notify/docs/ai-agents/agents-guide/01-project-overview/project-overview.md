@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "project overview"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Project Overview
@@ -66,5 +69,17 @@ Modules/{ModuleName}/
 ```
 
 ---
+<<<<<<< HEAD
 [Back to index](../index.md) | [Guidelines](guidelines.md) | [Links](links.md)
 [Back to index](../../../index.md) | [Guidelines](guidelines.md) | [Links](links.md)
+=======
+title: "project overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "project overview"
+issues: []
+discussions: []
+[Back to index](../index.md) | [Guidelines](guidelines.md) | [Links](links.md)
+>>>>>>> laraxot/dev

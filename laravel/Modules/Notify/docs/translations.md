@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "translations"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Traduzioni del Modulo Notify
@@ -121,7 +124,10 @@ Notification::make()
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
+<<<<<<< HEAD
 * [translations.md](../../Gdpr/docs/translations.md)
+=======
+>>>>>>> laraxot/dev
 * [translations.md](../../../Notify/docs/translations.md)
 * [translations.md](../../../Xot/docs/roadmap/lang/translations.md)
 * [translations.md](../../../Xot/docs/translations.md)
@@ -134,6 +140,7 @@ Notification::make()
 * [translations.md](../../../Media/docs/translations.md)
 * [translations.md](../../../Tenant/docs/translations.md)
 * [translations.md](../../../Activity/docs/translations.md)
+<<<<<<< HEAD
 * [translations.md](../../User/docs/translations.md)
 * [translations.md](../../../UI/docs/translations.md)
 * [translations.md](../../Lang/docs/packages/translations.md)
@@ -142,7 +149,20 @@ Notification::make()
 * [translations.md](../../Media/docs/translations.md)
 * [translations.md](../../Tenant/docs/translations.md)
 * [translations.md](../../Activity/docs/translations.md)
+=======
+>>>>>>> laraxot/dev
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
 
 ---
+<<<<<<< HEAD
+=======
+title: "translations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

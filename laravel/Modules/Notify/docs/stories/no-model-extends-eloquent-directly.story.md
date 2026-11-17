@@ -22,7 +22,11 @@ metadata:
 
 "`laravel/Modules/Comment/app/Models/CommentNotificationSubscription.php`
 non deve estendere `Illuminate\Database\Eloquent\Model`, nessun modello
+<<<<<<< HEAD
 deve estendere direttamente `Illuminate\Database\Eloquent\Model`": con
+=======
+deve estendere direttamente `Illuminate\Database\Eloquent\Model`" — con
+>>>>>>> laraxot/dev
 richiesta di applicare la regola a tutto il repo, non solo al file
 segnalato, e di capire il perche'.
 
@@ -35,7 +39,11 @@ il trait `Updater` (popolamento automatico `created_by`/`updated_by`/
 `deleted_by`), `HasXotFactory` (risoluzione factory via
 `GetFactoryAction`), `RelationX`, `getClassName()` per la risoluzione
 modulo-agnostica del namespace concreto. Un model che estende `Model`
+<<<<<<< HEAD
 direttamente perde TUTTO questo silenziosamente: nessun errore, nessun
+=======
+direttamente perde TUTTO questo silenziosamente — nessun errore, nessun
+>>>>>>> laraxot/dev
 warning, solo comportamento mancante (es. audit fields sempre `null`).
 
 ## Controllo altri agenti + ricerca per regola, non per sintomo
@@ -53,11 +61,16 @@ dall'utente:
 - `Modules/Comment/app/Models/CommentNotificationOptOut.php`
 - `Modules/Comment/app/Models/CommentNotificationSubscription.php`
   (quest'ultimo gia' preso in carico da un'altra sessione con lock attivo
+<<<<<<< HEAD
   al momento dell'indagine: vedi
+=======
+  al momento dell'indagine — vedi
+>>>>>>> laraxot/dev
   `docs/chat/commentnotificationsubscription-morphto-covariance-standdown.md`)
 
 Due file esclusi dopo revisione, non modificati:
 
+<<<<<<< HEAD
 - `Modules/Activity/app/Models/TestModel.php`: modello di test dedicato
   con migration/factory/seeder propri, usato per verificare che il
   sistema di Activity logging funzioni contro un model Eloquent generico
@@ -68,6 +81,18 @@ Due file esclusi dopo revisione, non modificati:
   e' configurabile via `Sanctum::usePersonalAccessTokenModel()`, ma
   cambiare la classe base tocca un pacchetto di terze parti con
   aspettative proprie sul modello token): segnalato, non toccato qui.
+=======
+- `Modules/Activity/app/Models/TestModel.php` — modello di test dedicato
+  con migration/factory/seeder propri, usato per verificare che il
+  sistema di Activity logging funzioni contro un model Eloquent generico
+  (non-XotBase). Probabile scelta deliberata per isolare il test dal
+  comportamento XotBase — non toccato senza conferma owner.
+- `Modules/User/app/Models/PersonalAccessToken.php` — punto di
+  integrazione Laravel Sanctum, richiede valutazione separata (il modello
+  e' configurabile via `Sanctum::usePersonalAccessTokenModel()`, ma
+  cambiare la classe base tocca un pacchetto di terze parti con
+  aspettative proprie sul modello token) — segnalato, non toccato qui.
+>>>>>>> laraxot/dev
 
 ## Fix applicato (questo modulo)
 

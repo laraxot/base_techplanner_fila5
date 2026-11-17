@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "migration changes"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Modifiche alla Migrazione Mail Templates

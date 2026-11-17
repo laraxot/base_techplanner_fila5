@@ -2,16 +2,26 @@
 qmd: "dto consolidated"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "dto: Consolidated Documentation"
+=======
+title: "dto — Consolidated Documentation"
+>>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
 ---
 
 # dto: Consolidated Documentation
+=======
+---
+
+# dto — Consolidated Documentation
+>>>>>>> laraxot/dev
 
 Consolidated from **11** individual files.
 
@@ -33,7 +43,11 @@ Consolidated from **11** individual files.
 
 ## dto-structure-conventions-1
 
+<<<<<<< HEAD
 *Consolidated from: `dto-structure-conventions.md`*
+=======
+*Consolidated from: `dto-structure-conventions-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Convenzioni per la Struttura dei DTO nel Modulo Notify"
 type: concept
@@ -44,6 +58,7 @@ qmd: "dto-structure-conventions-1 convenzioni per la struttura dei dto nel modul
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -55,6 +70,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -396,7 +419,11 @@ Prima di creare un nuovo DTO, verificare che:
 
 ## dto-structure-rules-1
 
+<<<<<<< HEAD
 *Consolidated from: `dto-structure-rules.md`*
+=======
+*Consolidated from: `dto-structure-rules-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Regole per la Struttura dei DTO"
 type: rule
@@ -407,6 +434,7 @@ qmd: "dto-structure-rules-1 regole per la struttura dei dto"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -418,6 +446,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -787,7 +823,11 @@ related:
 
 ## dto-vs-factory-analysis-1
 
+<<<<<<< HEAD
 *Consolidated from: `dto-vs-factory-analysis.md`*
+=======
+*Consolidated from: `dto-vs-factory-analysis-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Analisi: Logica di Selezione del Driver nel DTO vs Factory vs Canale"
 type: concept
@@ -798,6 +838,7 @@ qmd: "dto-vs-factory-analysis-1 analisi: logica di selezione del driver nel dto 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -809,6 +850,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---

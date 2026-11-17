@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "analysis dettagliata 3"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis dettagliata 3"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi Dettagliata del Modulo Notify - Parte 3: Servizi Core
 
 ## 3. Servizi Core
@@ -643,7 +657,11 @@ protected function updateAnalytics(string $messageId, string $event): void
     ]);
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 ``` 
 =======
 ```
 >>>>>>> 6ed19256f (.)
+=======
+``` 
+>>>>>>> laraxot/dev

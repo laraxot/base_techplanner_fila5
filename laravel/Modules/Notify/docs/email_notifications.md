@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email notifications"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-notifications.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema Notifiche Email - il progetto

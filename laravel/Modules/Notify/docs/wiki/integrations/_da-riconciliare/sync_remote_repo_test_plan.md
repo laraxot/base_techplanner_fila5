@@ -8,8 +8,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: sync-remote-repo-test-plan.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sync Remote Repo - Test Plan

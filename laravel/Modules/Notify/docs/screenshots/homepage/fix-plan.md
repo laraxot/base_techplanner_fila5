@@ -11,7 +11,10 @@ related:
   - "./analisi-colori-header-footer.md"
   - "./analisi-visiva.md"
   - "./screenshot-analysis.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🚀 Fix Homepage Bootstrap Italia - Piano Esecutivo
@@ -159,8 +162,12 @@ Allineare la homepage FixCity (`/it/tests/homepage`) al design Bootstrap Italia 
 
 ### Documentazione
 - [Bootstrap Italia Docs](https://italia.github.io/design-web-toolkit/)
+<<<<<<< HEAD
 - [Analisi Visiva](analisi-visiva.md)
 - [Analisi Visiva](analisi-visiva.md)
+=======
+- [Analisi Visiva](docs/screenshots/homepage/analisi-visiva.md)
+>>>>>>> laraxot/dev
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
 
 ### File Correlati

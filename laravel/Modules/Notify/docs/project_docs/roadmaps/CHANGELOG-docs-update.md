@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "CHANGELOG docs update 2025 10 01"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: changelog-docs-update-summary.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 📚 Docs Update Changelog – 2025-10-01

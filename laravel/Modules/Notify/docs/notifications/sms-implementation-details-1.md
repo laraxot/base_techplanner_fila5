@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "sms implementation details 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms implementation details 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Implementazione SMS : Guida Dettagliata
 
 Questa documentazione fornisce una guida dettagliata all'implementazione delle notifiche SMS , con confronto tra diversi provider e best practices specifiche per il contesto italiano.
@@ -789,6 +803,7 @@ class ConsentLog extends Model
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
@@ -799,3 +814,9 @@ class ConsentLog extends Model
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](telegram_notifications_guide.md)
 >>>>>>> 6ed19256f (.)
+=======
+- [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
+- [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+>>>>>>> laraxot/dev

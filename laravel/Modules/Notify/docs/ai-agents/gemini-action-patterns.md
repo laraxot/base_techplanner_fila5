@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "gemini action patterns"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # GEMINI Action Patterns
@@ -15,6 +18,18 @@ status: draft
 Action Execution Rules - Spatie Queueable Actions.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "gemini action patterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gemini action patterns"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Regola 1: Il Metodo Pubblico è SEMPRE `execute()`
 
 ### ❌ SBAGLIATO
@@ -136,5 +151,8 @@ Alcune eccezioni sono pragmaticamente accettabili:
 - [Indice GEMINI](./gemini-split-index.md)
 - [queueable-actions.md](./queueable-actions.md)
 - [GEMINI.md originale](../../GEMINI.md)
+<<<<<<< HEAD
 - [GEMINI.md originale](../GEMINI.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

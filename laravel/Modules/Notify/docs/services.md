@@ -1,6 +1,7 @@
 ---
 title: "services"
 type: note
+<<<<<<< HEAD
 tags: [documentation, notify, debt]
 created: 2026-09-26
 updated: 2026-11-17
@@ -27,6 +28,14 @@ a Job/test legacy; la religione del repo è **Actions + QueueableAction**.
 Vedi [notify-services-support-to-actions](./wiki/concepts/notify-services-support-to-actions.md)
 e [phpstan-merge-bootstrap.story.md](./stories/phpstan-merge-bootstrap.story.md).
 
+=======
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "services"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ---
 
 # Queueable Actions del Modulo Notify

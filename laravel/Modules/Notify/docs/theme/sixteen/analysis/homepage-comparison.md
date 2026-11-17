@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "homepage comparison"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Homepage Comparison Analysis
@@ -187,6 +190,7 @@ This document analyzes the HTML structure differences between:
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # Build CSS/JS
+<<<<<<< HEAD
 <<<<<<< .merge_file_dgugEt
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 =======
@@ -194,5 +198,20 @@ npm run build    # Build CSS/JS
 ```
 
 ---
+=======
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
+```
+
+---
+
+title: "homepage comparison"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "homepage comparison"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Generated: 2026-04-07*
 *Last Updated: 2026-04-07*

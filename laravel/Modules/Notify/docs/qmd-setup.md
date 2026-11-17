@@ -2,15 +2,22 @@
 qmd: "qmd setup"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "QMD Setup: Module Notify"
+=======
+title: "QMD Setup — Module Notify"
+>>>>>>> laraxot/dev
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [qmd, search, docs, performance]
 related:
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+<<<<<<< HEAD
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # QMD Setup per Module **Notify**
@@ -38,7 +45,11 @@ qmd search "<topic>"
 ### Cache Location
 
 - **Cache path**: ${HOME}/.cache/qmd-cache/
+<<<<<<< HEAD
 - **Fuori dal repo**: ✅ OK: non committata
+=======
+- **Fuori dal repo**: ✅ OK — non committata
+>>>>>>> laraxot/dev
 - **Pulizia cache**: `rm -rf ~/.cache/qmd-cache/`
 
 ### Performance Tips
@@ -53,7 +64,11 @@ qmd index rebuild --force
 qmd search "form" -c notify  # Solo questo modulo
 \`\`\`
 
+<<<<<<< HEAD
 3. **Evita query troppo generiche**: più specifico = risultati migliori
+=======
+3. **Evita query troppo generiche** — più specifico = risultati migliori
+>>>>>>> laraxot/dev
 
 ## Integrazione con l'On-Demand Pattern
 
@@ -69,7 +84,10 @@ qmd search "form" -c notify  # Solo questo modulo
 
 - [Global QMD Config](../qmd.md) (root docs)
 - [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+<<<<<<< HEAD
 - [Operational Discipline](../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
+=======
+>>>>>>> laraxot/dev
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 
 ---

@@ -1,9 +1,17 @@
 ---
+<<<<<<< HEAD
+=======
+title: "📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia"
+>>>>>>> laraxot/dev
 title: "📸 Analisi Visiva Header & Footer - Notify vs Bootstrap Italia"
 type: concept
 tags: [analisi, colori, header, footer]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "analisi-colori-header-footer 📸 analisi visiva header & footer - fixcity vs bootstrap italia"
+>>>>>>> laraxot/dev
 qmd: "analisi-colori-header-footer 📸 analisi visiva header & footer - laraxot vs bootstrap italia"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -11,7 +19,10 @@ related:
   - "./analisi-visiva.md"
   - "./fix-plan.md"
   - "./screenshot-analysis.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia

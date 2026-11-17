@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "strategies"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Strategie di Gestione delle Traduzioni
@@ -262,11 +265,26 @@ php artisan translation:extract
 
 - [Best Practices](./best-practices.md)
 - [Filament Translations](../filament/translations.md)
+<<<<<<< HEAD
 - [Best Practices](../../../best-practices.md)
 - [Filament Translations](../../../translations.md)
+=======
+>>>>>>> laraxot/dev
 - [Troubleshooting Translations](../../troubleshooting/errors/translation-errors.md)
 - [Module Translations](../../modules/lang/)
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "strategies"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "strategies"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: Agosto 2025*
 *Fonte: laravel/Modules/Lang/docs/TRANSLATION_STRATEGIES.md* 

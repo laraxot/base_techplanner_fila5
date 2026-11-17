@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email migrations"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-migrations.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema Migrazione Email 

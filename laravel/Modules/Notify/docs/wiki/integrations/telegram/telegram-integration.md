@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "telegram integration"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: ../../../telegram-integration.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Integrazione Telegram 

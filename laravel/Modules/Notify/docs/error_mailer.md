@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "error mailer"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/error-mailer.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Error Mailer System

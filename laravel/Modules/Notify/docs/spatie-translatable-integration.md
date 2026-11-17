@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "spatie translatable integration"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Integrazione Spatie Translatable nel Modulo Notify
@@ -273,10 +276,25 @@ Schema::table('mail_templates', function (Blueprint $table) {
 ### Documentazione Interna
 - [Errore Plugin Not Registered](./errori/plugin-spatie-translatable-not-registered.md)
 - [Lang Module README](../../lang/docs/readme.md)
+<<<<<<< HEAD
 - [Lang Module README](../../Lang/docs/readme.md)
 - [Filament Panels Configuration](../../xot/docs/filament/panel-configuration.md)
 
 ---
+=======
+- [Filament Panels Configuration](../../xot/docs/filament/panel-configuration.md)
+
+---
+
+title: "spatie translatable integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie translatable integration"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Status**: ✅ PLUGIN REGISTRATO  
 **Compatibilità**: Filament 4.x

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "agents testing standards"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # AGENTS Testing Standards
@@ -24,6 +27,18 @@ tests/
 ```
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "agents testing standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents testing standards"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Pest Testing Format
 
 ```php
@@ -93,6 +108,9 @@ Prima di ogni commit:
 - [pest-testing.md](./pest-testing.md) - Guida Pest
 - [AGENTS.md originale](../../AGENTS.md)
 - [agents.md originale](../../agents.md)
+<<<<<<< HEAD
 - [AGENTS.md originale](../AGENTS.md)
 - [agents.md originale](../agents.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

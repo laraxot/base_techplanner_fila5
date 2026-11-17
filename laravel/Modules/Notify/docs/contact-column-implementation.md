@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "contact column implementation"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # ContactColumn - Implementazione DRY/KISS Centralizzata

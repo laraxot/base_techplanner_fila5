@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "migration plan"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Documentation Agnostic Migration Plan
@@ -19,6 +22,18 @@ status: draft
 **Solution**: Implement governance rules, rename files, and replace content with generic placeholders.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "migration plan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration plan"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Impact Analysis
 
 ### Scope
@@ -295,7 +310,18 @@ Access at: `[YOUR_DOMAIN]/blog`
 
 ### Rollback Plan
 
+<<<<<<< HEAD
 If issues are found, git is forward-only: fix the affected files in `laravel/Modules/Cms/docs/` and record the correction with a new commit. Never use `git checkout`, `git restore`, `git reset`, `git revert`, `git stash` or `git rebase` to roll back.
+=======
+If issues are found:
+```bash
+# Git makes rollback easy
+git checkout HEAD -- laravel/Modules/Cms/docs/
+
+# Or revert specific commits
+git revert <commit-hash>
+```
+>>>>>>> laraxot/dev
 
 ---
 

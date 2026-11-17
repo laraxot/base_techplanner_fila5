@@ -7,10 +7,16 @@ updated: 2026-09-26
 qmd: "packages laravel core"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
 ---
 
 # Laravel 12 + Qualita Codice: Pacchetti Core
+=======
+---
+
+# Laravel 12 + Qualita Codice — Pacchetti Core
+>>>>>>> laraxot/dev
 
 Riferimento per Laravel 12, Pest 4, PHPStan 2, Pint, Rector, Pulse, Pennant, MCP.
 
@@ -34,7 +40,20 @@ Riferimento per Laravel 12, Pest 4, PHPStan 2, Pint, Rector, Pulse, Pennant, MCP
 | laravel/mcp | 0.5.9 |
 
 ---
+<<<<<<< HEAD
 ## Laravel 12: Principali novita
+=======
+
+title: "packages laravel core"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "packages laravel core"
+issues: []
+discussions: []
+## Laravel 12 — Principali novita
+>>>>>>> laraxot/dev
 
 - PHP 8.2+ minimo, pieno supporto PHP 8.4
 - `Concurrency` namespace per pattern lottery/feature-flag
@@ -64,7 +83,11 @@ class Task extends BaseModel
 
 ---
 
+<<<<<<< HEAD
 ## Pest 4.4.1: Testing
+=======
+## Pest 4.4.1 — Testing
+>>>>>>> laraxot/dev
 
 ### Regola CRITICA: mai RefreshDatabase
 
@@ -151,14 +174,22 @@ XDEBUG_MODE=off ./vendor/bin/pest --coverage         # con coverage
 XDEBUG_MODE=off ./vendor/bin/pest --coverage --min=80
 
 # Modulo specifico
+<<<<<<< HEAD
 XDEBUG_MODE=off ./vendor/bin/pest Modules/<nome progetto>/tests
+=======
+XDEBUG_MODE=off ./vendor/bin/pest Modules/Quaeris/tests
+>>>>>>> laraxot/dev
 XDEBUG_MODE=off ./vendor/bin/pest Modules/App/tests
 
 # Via composer
 composer coverage
 ```
 
+<<<<<<< HEAD
 ### PCOV: driver coverage
+=======
+### PCOV — driver coverage
+>>>>>>> laraxot/dev
 
 `pcov.enabled` e `xdebug.mode` sono `PHP_INI_SYSTEM`: NON modificabili con `ini_set()`.
 Usare sempre `XDEBUG_MODE=off` come variabile d'ambiente.
@@ -237,6 +268,7 @@ cd laravel
 ```
 
 **Configurazione in** `laravel/rector.php`:
+<<<<<<< HEAD
 - `InlineConstructorDefaultToPropertyRector`: constructor promotion
 - `TypedPropertyFromStrictConstructorRector`: typed properties
 - `LevelSetList::UP_TO_PHP_81`: PHP 8.1 compat
@@ -245,6 +277,16 @@ cd laravel
 ---
 
 ## Laravel Pennant 1.20.0: Feature Flags
+=======
+- `InlineConstructorDefaultToPropertyRector` — constructor promotion
+- `TypedPropertyFromStrictConstructorRector` — typed properties
+- `LevelSetList::UP_TO_PHP_81` — PHP 8.1 compat
+- `SetList::TYPE_DECLARATION` — aggiunge type declarations
+
+---
+
+## Laravel Pennant 1.20.0 — Feature Flags
+>>>>>>> laraxot/dev
 
 ```php
 // Definizione flag
@@ -270,7 +312,11 @@ Feature::for($tenant)->toggle('premium-features');
 
 ---
 
+<<<<<<< HEAD
 ## Laravel Pulse 1.6.0: Monitoring
+=======
+## Laravel Pulse 1.6.0 — Monitoring
+>>>>>>> laraxot/dev
 
 Dashboard real-time su `/pulse`. Monitora:
 - Slow queries (> 1000ms)
@@ -292,14 +338,22 @@ Pulse::measure('survey.pdf.generation', function () {
 
 ---
 
+<<<<<<< HEAD
 ## Laravel MCP 0.5.9: Model Context Protocol
+=======
+## Laravel MCP 0.5.9 — Model Context Protocol
+>>>>>>> laraxot/dev
 
 Espone l'applicazione all'AI (Claude, ecc.) tramite MCP protocol.
 
 ```php
 use Laravel\Mcp\Server;
 
+<<<<<<< HEAD
 $server = new Server('<nome progetto>-surveys');
+=======
+$server = new Server('quaeris-surveys');
+>>>>>>> laraxot/dev
 $server = new Server('this-project-surveys');
 
 // Resources (dati che l'AI puo leggere)

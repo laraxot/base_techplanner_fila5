@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "netfun action updates"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Aggiornamenti a SendNetfunSMSAction
@@ -328,4 +331,16 @@ Questi miglioramenti garantiscono:
 5. Configurazione standardizzata e coerente
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "netfun action updates"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "netfun action updates"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2023-05-12*

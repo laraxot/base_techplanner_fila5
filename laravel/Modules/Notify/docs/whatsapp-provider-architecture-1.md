@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Architettura WhatsApp Provider per <nome progetto>
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider WhatsApp nel modulo Notify di <nome progetto>, mantenendo coerenza con le architetture esistenti per SMS ed email.
@@ -7,6 +8,22 @@ Questo documento definisce l'architettura e gli standard per l'implementazione d
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider WhatsApp nel modulo Notify di SaluteOra, mantenendo coerenza con le architetture esistenti per SMS ed email.
 >>>>>>> 6ed19256f (.)
+=======
+---
+title: "whatsapp provider architecture 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "whatsapp provider architecture 1"
+issues: []
+discussions: []
+---
+
+# Architettura WhatsApp Provider per <nome progetto>
+
+Questo documento definisce l'architettura e gli standard per l'implementazione dei provider WhatsApp nel modulo Notify di <nome progetto>, mantenendo coerenza con le architetture esistenti per SMS ed email.
+>>>>>>> laraxot/dev
 
 ## Principi Architetturali Fondamentali
 
@@ -21,10 +38,14 @@ L'architettura dei provider WhatsApp segue gli stessi principi dei provider SMS 
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/Notify/
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/
+>>>>>>> laraxot/dev
 ├── app/
 │   ├── Actions/
 │   │   └── WhatsApp/

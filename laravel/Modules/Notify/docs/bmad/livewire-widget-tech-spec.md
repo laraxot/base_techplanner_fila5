@@ -5,13 +5,20 @@ updated: 2026-09-26
 qmd: "livewire widget tech spec"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Tech spec: Notify FQCN"
+=======
+title: "Tech spec — Notify FQCN"
+>>>>>>> laraxot/dev
 type: tech-spec
 module: Notify
 related:
   - ./livewire-inventory.md
   - ./livewire-widget-prd.md
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Tech spec Notify

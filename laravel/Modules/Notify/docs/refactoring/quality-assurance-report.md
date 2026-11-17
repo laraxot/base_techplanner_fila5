@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "quality assurance report"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Quality Assurance Report: SendRecordNotificationAction Refactoring
@@ -144,6 +147,18 @@ The refactoring of `SendRecordNotificationAction.php` successfully achieved:
 All quality assurance checks passed, confirming the successful implementation of clean code principles.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "quality assurance report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality assurance report"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Verified by**: iFlow CLI  
 **Quality Status**: ✅ All gates passed  
 **Deployment Ready**: ✅ Approved

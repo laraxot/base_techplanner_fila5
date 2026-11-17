@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "conflict resolution sendsmspage"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitti SendSmsPage.php

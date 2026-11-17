@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "basemodel"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # BaseModel: Regola obbligatoria e motivazione
@@ -39,4 +42,15 @@ class NotificationTemplate extends BaseModel {}
 - Regola "evita override inutili" nei prompt e docs root.
 
 ---
+<<<<<<< HEAD
+=======
+title: "basemodel"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "basemodel"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Nota:** Se trovi un model che estende Model invece di BaseModel, correggi subito e segnala l’errore nella PR.

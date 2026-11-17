@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "translation conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni per le Traduzioni del Modulo Notify
 
 ## Regole Fondamentali
@@ -212,10 +226,14 @@ Per verificare se le traduzioni sono applicate correttamente:
 ## Riferimenti
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 - [<nome progetto> Translation System](../../../../.cursor/rules/translations.rule)
 =======
 - [SaluteOra Translation System](../../../../.cursor/rules/translations.rule)
 >>>>>>> 6ed19256f (.)
+=======
+- [<nome progetto> Translation System](../../../../.cursor/rules/translations.rule)
+>>>>>>> laraxot/dev
 - [Filament Translations](../../../../.cursor/rules/filament-translations.rule)
 - [Laravel Localization](https://laravel.com/docs/10.x/localization)
 

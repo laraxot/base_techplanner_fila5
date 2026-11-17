@@ -15,7 +15,11 @@ related:
   - ../../../../Xot/docs/bmad/stories/cleanup-all-modules.story.md
 ---
 
+<<<<<<< HEAD
 # Notify: marker committati in PHP (git status pulito)
+=======
+# Notify — marker committati in PHP (git status pulito)
+>>>>>>> laraxot/dev
 
 **Perché.** HEAD compilava a metà: `SendNetfunSMSAction.php` aveva marker tra import HEAD (solo QueueableAction) e laraxot/dev (Safe `json_decode` + check `error` nel JSON). Netfun risponde HTTP 200 anche in errore; loggare sempre il body con `api_token` in chiaro è un leak.
 

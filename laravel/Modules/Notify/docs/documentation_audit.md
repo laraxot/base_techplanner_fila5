@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "documentation audit"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Documentation Audit Report
@@ -17,6 +20,18 @@ status: draft
 **Scope:** All modules, themes, and project documentation
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "documentation audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation audit"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Executive Summary
 
 ### Key Findings
@@ -235,7 +250,11 @@ Xot/docs/README.md
 
 **Same pattern documented multiple times:**
 - `naming-conventions.md` / `naming_conventions.md` / `naming-rules.md`
+<<<<<<< HEAD
 - `phpstan-fixes.md` / `phpstan-fixes-.md` / `phpstan-fixes-gennaio.md`
+=======
+- `phpstan-fixes.md` / `phpstan-fixes-.md` / `phpstan-fixes-early-cycle.md`
+>>>>>>> laraxot/dev
 - `conflict-resolution.md` appears in 10+ modules with identical content
 
 ---
@@ -288,8 +307,12 @@ docs/master/
 - `kebab-case.md` (e.g., `phpstan-fixes.md`)
 - `PascalCase.md` (e.g., `PHPStanFixes.md`)
 - `UPPERCASE.md` (e.g., `README.md`)
+<<<<<<< HEAD
 - Mixed with suffixes: `phpstan-fixes-.md`, `phpstan-fixes.md`
 - Mixed with suffixes: `phpstan-fixes-.md`, `phpstan-fixes-documentation-themes.md`
+=======
+- Mixed with suffixes: `phpstan-fixes-.md`, `phpstan-fixes-1.md`
+>>>>>>> laraxot/dev
 
 **Recommended Standard:**
 - Lowercase kebab-case: `topic-subtopic.md`
@@ -301,8 +324,11 @@ docs/master/
 **Examples:**
 - `phpstan-analysis-2026-03-02.md`
 - `documentation-improvement-summary-2026-03-13.md`
+<<<<<<< HEAD
 - `phpstan-analysis-level-report.md`
 - `documentation-improvement-summary-executive.md`
+=======
+>>>>>>> laraxot/dev
 - `bugfix-report-2025-01-14.md`
 
 **Problem:** Dates in filenames become stale immediately.

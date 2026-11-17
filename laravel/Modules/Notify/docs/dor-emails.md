@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Email per i Dottori
@@ -182,7 +185,10 @@ try {
 ## Collegamenti Correlati
 
 - [Documentazione Root](../../../../../docs/readme.md)
+<<<<<<< HEAD
 - [Documentazione Root](../../../../docs/README.md)
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Modulo Notify](./readme.md)
 - [Documentazione Template Email](./email_templates.md)
 - [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)

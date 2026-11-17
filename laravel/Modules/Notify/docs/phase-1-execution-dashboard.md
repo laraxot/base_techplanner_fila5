@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "phase 1 execution dashboard"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎯 PHASE 1 EXECUTION DASHBOARD
@@ -19,6 +22,18 @@ status: draft
 **Scope**: segnalazioni-elenco → 90% HTML Parity
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "phase 1 execution dashboard"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phase 1 execution dashboard"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🚨 CURRENT STATUS
 
 | Component | Status | Progress | ETA |
@@ -70,10 +85,17 @@ laravel/Themes/Sixteen/docs/body-structure-comparison/segnalazioni-elenco/
 **Status**: 🟢 ACTIVE (Coordination phase)
 
 **Current Tasks**:
+<<<<<<< HEAD
 - ✅ Created phase-1-findings-template.md
 - ✅ Created SUBTASK-2-ANALYSIS-WORKFLOW.md
 - ✅ Created EXECUTOR-2-SUBTASKS-3-4.md
 - ✅ Created phase-1-execution-status.md
+=======
+- ✅ Created PHASE-1-FINDINGS-TEMPLATE.md
+- ✅ Created SUBTASK-2-ANALYSIS-WORKFLOW.md
+- ✅ Created EXECUTOR-2-SUBTASKS-3-4.md
+- ✅ Created PHASE-1-EXECUTION-STATUS.md
+>>>>>>> laraxot/dev
 - ⏳ Monitoring Subtask 1 progress
 - ⏳ Preparing analysis framework
 
@@ -120,8 +142,13 @@ laravel/Themes/Sixteen/docs/body-structure-comparison/segnalazioni-elenco/
 - Duration: 15-20 minutes
 
 **Preparation Checklist**:
+<<<<<<< HEAD
 - [ ] Read phase-1-strategy.md
 - [ ] Read gsd-phase-1-execution.md
+=======
+- [ ] Read PHASE-1-STRATEGY.md
+- [ ] Read GSD-PHASE-1-EXECUTION.md
+>>>>>>> laraxot/dev
 - [ ] Read EXECUTOR-2-SUBTASKS-3-4.md
 - [ ] Understand translation pattern: `fixcity::segnalazione.fields.title.label`
 - [ ] Know NOT to create separate segnalazioni-elenco.blade.php
@@ -339,11 +366,19 @@ Phase 2 planning can begin
 
 **Quick Start** (5 min read):
 - PHASE-1-RESEARCH-COMPLETE.md
+<<<<<<< HEAD
 - phase-1-execution-status.md
 
 **In-Depth** (20-30 min read):
 - phase-1-strategy.md (strategy & analysis)
 - gsd-phase-1-execution.md (execution plan)
+=======
+- PHASE-1-EXECUTION-STATUS.md
+
+**In-Depth** (20-30 min read):
+- PHASE-1-STRATEGY.md (strategy & analysis)
+- GSD-PHASE-1-EXECUTION.md (execution plan)
+>>>>>>> laraxot/dev
 
 **Task-Specific** (10-15 min per task):
 - SUBTASK-2-ANALYSIS-WORKFLOW.md (for Researcher)

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "base templates"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Template Email di Base
@@ -254,8 +257,11 @@ Ogni template accetta le seguenti variabili comuni:
 - [Documentazione MailPace](https://github.com/mailpace/templates)
 - [Struttura Template](./MAIL_TEMPLATES_STRUCTURE.md)
 - [Best Practices](./EMAIL_HTML_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Struttura Template](./mail_templates_structure.md)
 - [Best Practices](./email_html_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Supporto
 

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "00 index"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 📋 quick reference Index
@@ -17,6 +20,18 @@ status: draft
 **Status**: ✅ Auto-generated
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "00 index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 index"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 Statistics
 
 | Metric | Count |

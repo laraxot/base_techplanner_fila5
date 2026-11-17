@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "performance optimization"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi e Ottimizzazione delle Performance

@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "database directory naming fix"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: database-directory-naming-fix.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Database Directory Naming Convention Fix

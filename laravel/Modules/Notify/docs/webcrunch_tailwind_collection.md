@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "webcrunch tailwind collection"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: webcrunch-tailwind-collection.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi collezione Tailwind CSS (Webcrunch)

@@ -8,8 +8,11 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: ui-ux-pro-max-skills-integration.divergenza.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Divergenza: `ui-ux-pro-max-skills-integration.md`

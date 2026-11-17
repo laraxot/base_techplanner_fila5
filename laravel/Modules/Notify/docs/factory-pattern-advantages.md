@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "factory pattern advantages"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi del Pattern Factory per la Selezione dei Provider SMS

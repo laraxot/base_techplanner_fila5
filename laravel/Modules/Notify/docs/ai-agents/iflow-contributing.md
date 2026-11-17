@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "iflow contributing"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # IFLOW Contributing
@@ -21,6 +24,18 @@ status: draft
 Come contribuire al progetto.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "iflow contributing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "iflow contributing"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🤝 Come Contribuire
 
 > Anche se è la tua prima volta, il tuo contributo è benvenuto!

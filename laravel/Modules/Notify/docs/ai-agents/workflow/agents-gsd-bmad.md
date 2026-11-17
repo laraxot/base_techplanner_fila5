@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "agents gsd bmad"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🚀 GSD + BMAD Workflow
@@ -17,6 +20,18 @@ status: draft
 **Stato**: ✅ IMPLEMENTATO
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "agents gsd bmad"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents gsd bmad"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 GSD (Get Shit Done)
 
 ### Comandi Principali

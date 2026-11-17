@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "email best practices"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per Email Transazionali
@@ -127,6 +130,7 @@ $mailTemplate->send($user->email, [
 ## Riferimenti
 
 - [Guida Layout Email](../MAIL_LAYOUTS_GUIDE.md)
+<<<<<<< HEAD
 - [Integrazione MailPace](mailpace_templates_integration.md)
 - [HTML Email Compatibility](html_email_compatibility.md)
 - [Spatie Email Usage Guide](../SPATIE_EMAIL_USAGE_GUIDE.md)
@@ -134,3 +138,8 @@ $mailTemplate->send($user->email, [
 - [Integrazione MailPace](./mailpace_templates_integration.md)
 - [HTML Email Compatibility](./html_email_compatibility.md)
 - [Spatie Email Usage Guide](../spatie_email_usage_guide.md)
+=======
+- [Integrazione MailPace](./MAILPACE_TEMPLATES_INTEGRATION.md)
+- [HTML Email Compatibility](./HTML_EMAIL_COMPATIBILITY.md)
+- [Spatie Email Usage Guide](../SPATIE_EMAIL_USAGE_GUIDE.md)
+>>>>>>> laraxot/dev

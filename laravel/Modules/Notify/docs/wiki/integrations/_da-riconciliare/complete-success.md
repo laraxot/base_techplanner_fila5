@@ -1,13 +1,22 @@
 ---
+<<<<<<< HEAD
+=======
+title: "🏆 NOTIFY - COMPLETE SUCCESS"
+>>>>>>> laraxot/dev
 title: "🏆 <nome progetto> - COMPLETE SUCCESS"
 type: concept
 tags: [complete, success]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "complete-success 🏆 laraxot - complete success"
+>>>>>>> laraxot/dev
 qmd: "complete-success 🏆 <nome progetto> - complete success"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -22,6 +31,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🏆 NOTIFY - COMPLETE SUCCESS

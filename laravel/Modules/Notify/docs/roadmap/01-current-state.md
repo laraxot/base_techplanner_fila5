@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "01 current state"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: current-state.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Current State - Notify

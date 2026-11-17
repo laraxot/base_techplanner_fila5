@@ -10,7 +10,10 @@ created: {{date}}
 updated: {{date}}
 tags: [article, paper, documentation]
 related: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # {{title}}

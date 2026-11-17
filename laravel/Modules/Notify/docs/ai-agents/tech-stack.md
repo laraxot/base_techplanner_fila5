@@ -7,13 +7,21 @@ updated: 2026-09-26
 qmd: "tech stack"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Technology Stack
 
+<<<<<<< HEAD
 Stack tecnologico completo di <nome progetto> fila5 - Laravel 12 + Filament 5 + PHP 8.3
 Stack tecnologico completo di App fila5 - Laravel 12 + Filament 5 + PHP 8.3
+=======
+Stack tecnologico completo di Quaeris Fila5 Mono - Laravel 12 + Filament 5 + PHP 8.3
+Stack tecnologico completo di App Fila5 Mono - Laravel 12 + Filament 5 + PHP 8.3
+>>>>>>> laraxot/dev
 
 ## Core Technologies
 

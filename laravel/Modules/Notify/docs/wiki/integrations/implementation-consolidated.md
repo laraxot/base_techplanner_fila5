@@ -2,16 +2,26 @@
 qmd: "implementation consolidated"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "implementation: Consolidated Documentation"
+=======
+title: "implementation — Consolidated Documentation"
+>>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
 ---
 
 # implementation: Consolidated Documentation
+=======
+---
+
+# implementation — Consolidated Documentation
+>>>>>>> laraxot/dev
 
 Consolidated from **10** individual files.
 
@@ -32,8 +42,12 @@ Consolidated from **10** individual files.
 
 ## implementation-guide-1
 
+<<<<<<< HEAD
 *Consolidated from: `implementation-guide.md`*
 *Consolidated from: `implementation-guide-gdpr-consent.md`*
+=======
+*Consolidated from: `implementation-guide-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Guida all'Implementazione dei Template Email"
 type: guide
@@ -44,6 +58,7 @@ qmd: "implementation-guide-1 guida all'implementazione dei template email"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -55,6 +70,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1337,6 +1360,7 @@ updated: 2026-07-14
 qmd: "implementation_summary_2025-01-27.deprecated deprecated"
 status: deprecated
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -1348,6 +1372,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1358,7 +1390,11 @@ related:
 
 ## implementation-summary-1
 
+<<<<<<< HEAD
 *Consolidated from: `implementation-summary.md`*
+=======
+*Consolidated from: `implementation-summary-1.md`*
+>>>>>>> laraxot/dev
 
 title: "IMPLEMENTATION_SUMMARY_2025-01-27"
 type: concept
@@ -1368,6 +1404,7 @@ updated: 2026-07-14
 qmd: "implementation_summary_2025-01-27 deprecated"
 status: deprecated
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -1379,17 +1416,33 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
 
+<<<<<<< HEAD
 > Questo file è stato rinominato in [implementation-summary-1.md](implementation-summary.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+=======
+> Questo file è stato rinominato in [implementation-summary-1.md](implementation-summary-1.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> laraxot/dev
 
 ---
 
 ## implementation-summary-2
 
+<<<<<<< HEAD
 *Consolidated from: `implementation-summary-gennaio.md`*
+=======
+*Consolidated from: `implementation-summary-2.md`*
+>>>>>>> laraxot/dev
 
 title: "🚀 IMPLEMENTATION SUMMARY - 27 Gennaio 2025"
 type: concept
@@ -1400,6 +1453,7 @@ qmd: "implementation-summary-2025-01-27.deprecated 🚀 implementation summary -
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -1411,6 +1465,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1692,6 +1754,7 @@ qmd: "implementation-summary riepilogo implementazione design comuni"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -1703,6 +1766,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2437,6 +2508,7 @@ qmd: "implementations-completed ✅ <nome progetto> - implementazioni completate
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -2448,6 +2520,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2504,7 +2584,11 @@ Analizzato lo scopo del progetto, identificate le features mancanti e implementa
 8. ✅ **documentation-index.md**
 9. ✅ **quick-start.md**
 10. ✅ **project-completion-status.md**
+<<<<<<< HEAD
 11. ✅ **excellence-2025.md**
+=======
+11. ✅ **excellence-year-note-snake.md**
+>>>>>>> laraxot/dev
 12. ✅ **final-summary.md**
 
 ### 📖 Guide Complete (3 - da sessione precedente)
@@ -2859,7 +2943,11 @@ Modules/<nome progetto>/
 ├── implementations-completed.md             ✅ NEW (questo file)
 ├── documentation-index.md                   ✅ EXISTING
 ├── quick-start.md                           ✅ EXISTING
+<<<<<<< HEAD
 ├── excellence-2025.md                       ✅ EXISTING
+=======
+├── excellence-year-note-snake.md                       ✅ EXISTING
+>>>>>>> laraxot/dev
 └── final-summary.md                         ✅ EXISTING
 ```
 

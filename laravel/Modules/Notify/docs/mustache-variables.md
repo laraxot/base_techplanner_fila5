@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "mustache variables"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Mustache Variables - SpatieEmail Template System
@@ -21,6 +24,18 @@ status: draft
 I template email utilizzano il motore di rendering **Mustache** per sostituire variabili dinamiche nel contenuto HTML. Questo documento elenca tutte le variabili disponibili automaticamente e come aggiungerne di personalizzate.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "mustache variables"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mustache variables"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Variabili Automatiche (Sempre Disponibili)
 
 Queste variabili sono automaticamente popolate da `SpatieEmail` durante la costruzione dell'email.
@@ -354,7 +369,10 @@ $email->mergeData([
 - [Mustache Manual](https://mustache.github.io/mustache.5.html)
 - [Spatie Laravel Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 - [Modules/Notify/app/Emails/SpatieEmail.php](../../app/Emails/SpatieEmail.php)
+<<<<<<< HEAD
 - [Modules/Notify/app/Emails/SpatieEmail.php](../app/Emails/SpatieEmail.php)
+=======
+>>>>>>> laraxot/dev
 - [Seasonal Email Templates](./seasonal-email-templates.md)
 
 ---

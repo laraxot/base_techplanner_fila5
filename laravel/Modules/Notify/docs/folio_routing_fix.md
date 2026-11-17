@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 qmd: "folio routing fix"
+=======
+qmd: "FOLIO ROUTING FIX"
+>>>>>>> laraxot/dev
 issues: []
 discussions: []
 title: "Fix Routing Folio per Login Page"
@@ -8,8 +12,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: folio-routing-fix.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🔧 Fix Routing Folio per Login Page

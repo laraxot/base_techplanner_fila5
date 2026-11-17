@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Linee Guida per la Riusabilità del Modulo Notify
@@ -28,9 +31,15 @@ $this->app['config']->set('database.connections.<nome progetto>_test', [
 $user = \Modules\App\Models\User::factory()->create();
 'database' => 'app_test',
 $this->app['config']->set('database.connections.app_test', [
+<<<<<<< HEAD
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
+=======
+$user = \Modules\Quaeris\Models\User::factory()->create();
+'database' => 'Quaeris_test',
+$this->app['config']->set('database.connections.Quaeris_test', [
+>>>>>>> laraxot/dev
 ```
 
 ✅ **SEMPRE utilizzare pattern riutilizzabili:**
@@ -49,7 +58,11 @@ use Modules\Xot\Datas\XotData;
 
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\App\Models\User::class
+<<<<<<< HEAD
 // Invece di: \Modules\<nome progetto>\Models\User::class
+=======
+// Invece di: \Modules\Quaeris\Models\User::class
+>>>>>>> laraxot/dev
 $userClass = XotData::make()->getUserClass();
 $user = $userClass::factory()->create();
 ```
@@ -60,7 +73,11 @@ Per i test che richiedono configurazioni database specifiche:
 ```php
 // Invece di: '<nome progetto>_test'
 // Invece di: 'app_test'
+<<<<<<< HEAD
 // Invece di: '<nome progetto>_test'
+=======
+// Invece di: 'Quaeris_test'
+>>>>>>> laraxot/dev
 $testDatabase = config('database.default') . '_test';
 $this->app['config']->set("database.connections.{$testDatabase}", [
     // configurazione
@@ -89,10 +106,17 @@ use Modules\App\Models\User;
 use Modules\App\Models\Patient;
 'database' => 'app_test'
 $this->artisan('migrate', ['--database' => 'app_test']);
+<<<<<<< HEAD
 use Modules\<nome progetto>\Models\User;
 use Modules\<nome progetto>\Models\Patient;
 'database' => '<nome progetto>_test'
 $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
+=======
+use Modules\Quaeris\Models\User;
+use Modules\Quaeris\Models\Patient;
+'database' => 'Quaeris_test'
+$this->artisan('migrate', ['--database' => 'Quaeris_test']);
+>>>>>>> laraxot/dev
 ```
 
 ### ❌ Configurazioni Project-Specific
@@ -102,8 +126,13 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => 'App',
 'tenant_model' => \Modules\App\Models\Studio::class,
+<<<<<<< HEAD
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
+=======
+'app_name' => 'Quaeris',
+'tenant_model' => \Modules\Quaeris\Models\Studio::class,
+>>>>>>> laraxot/dev
 ```
 
 ## Pattern Corretti per Riusabilità
@@ -122,10 +151,17 @@ $userClass = XotData::make()->getUserClass();
 public function setUp(): void
 {
     parent::setUp();
+<<<<<<< HEAD
 
     $this->userClass = XotData::make()->getUserClass();
     $this->testDatabase = config('database.default') . '_test';
 
+=======
+    
+    $this->userClass = XotData::make()->getUserClass();
+    $this->testDatabase = config('database.default') . '_test';
+    
+>>>>>>> laraxot/dev
     // Configurazione dynamic
     $this->app['config']->set("database.connections.{$this->testDatabase}", [
         'driver' => 'sqlite',
@@ -153,7 +189,11 @@ Prima di committare modifiche al modulo Notify:
 
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "App" o altri nomi di progetti
+<<<<<<< HEAD
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
+=======
+- [ ] Nessun riferimento hardcoded a "Quaeris" o altri nomi di progetti
+>>>>>>> laraxot/dev
 - [ ] Utilizzo di `XotData::make()->getUserClass()` per la classe User
 - [ ] Configurazioni database dinamiche nei test
 - [ ] Nessun import diretto di modelli da altri progetti
@@ -169,7 +209,11 @@ Per verificare che il modulo sia veramente riutilizzabile:
 # Cerca hardcoding di nomi progetti
 grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "App\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
+<<<<<<< HEAD
 grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
+=======
+grep -r -i "Quaeris\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
+>>>>>>> laraxot/dev
 
 # Cerca import diretti da altri moduli
 grep -r "use Modules\\\\[^N][^o][^t][^i][^f][^y]" Modules/Notify/
@@ -177,7 +221,11 @@ grep -r "use Modules\\\\[^N][^o][^t][^i][^f][^y]" Modules/Notify/
 # Cerca configurazioni hardcoded
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*App\|app.*App" Modules/Notify/
+<<<<<<< HEAD
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
+=======
+grep -r "database.*Quaeris\|app.*Quaeris" Modules/Notify/
+>>>>>>> laraxot/dev
 ```
 
 ## Benefici della Riusabilità

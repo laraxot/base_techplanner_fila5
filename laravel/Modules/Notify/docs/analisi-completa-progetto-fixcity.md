@@ -7,13 +7,28 @@ updated: 2026-09-26
 qmd: "analisi completa progetto fixcity"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 📊 ANALISI COMPLETA PROGETTO FIXCITY
 ## Data: 1 Ottobre 2025
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "analisi completa progetto fixcity"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi completa progetto fixcity"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 EXECUTIVE SUMMARY
 
 **FixCity** è una piattaforma di segnalazione cittadina **enterprise-ready** con:
@@ -427,6 +442,7 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 
 ### 🎨 Theme Roadmaps
 - [Sixteen - Frontend Theme](../Themes/Sixteen/docs/roadmap-and-issues.md) - Performance
+<<<<<<< HEAD
 - [User - Auth & Profiles](../../User/docs/roadmap-and-issues.md) - 95 errori, 6h fix
 - [Fixcity - Business Logic](../Modules/Fixcity/docs/roadmap-and-issues.md) - N+1 queries, features
 - [AI - Artificial Intelligence](../../AI/docs/roadmap-and-issues.md) - Auto-categorization
@@ -442,6 +458,12 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 ### 📖 Main Docs
 - [Index Principale](./index.md)
 - [PHPStan Analysis](phpstan.md)
+=======
+
+### 📖 Main Docs
+- [Index Principale](./index.md)
+- [PHPStan Analysis](./phpstan/phpstan.md)
+>>>>>>> laraxot/dev
 
 ---
 

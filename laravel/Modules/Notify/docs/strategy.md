@@ -8,7 +8,10 @@ type: product
 tags: [product, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Product Strategy: Notify Module

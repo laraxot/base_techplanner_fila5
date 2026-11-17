@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "database mail system tests"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Test del Sistema di Gestione Email - il progetto

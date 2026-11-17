@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "claude architecture rules"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # CLAUDE Architecture Rules
@@ -38,6 +41,7 @@ cd laravel/Themes/Meetup
 composer update -W
 npm install
 npm run build
+<<<<<<< HEAD
 <<<<<<< .merge_file_Z4UoV3
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 =======
@@ -45,6 +49,21 @@ npm run build
 ```
 
 ---
+=======
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
+```
+
+---
+
+title: "claude architecture rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "claude architecture rules"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 2. BelongsToMany - CRITICAL
 
 **NEVER use `$this->belongsToMany()` for many-to-many. ALWAYS use `$this->belongsToManyX()`.**
@@ -176,5 +195,8 @@ class MeetupServiceProvider extends XotBaseServiceProvider
 - [Indice CLAUDE](./claude-split-index.md)
 - [critical-rules.md](./critical-rules.md)
 - [CLAUDE.md originale](../../CLAUDE.md)
+<<<<<<< HEAD
 - [CLAUDE.md originale](../CLAUDE.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

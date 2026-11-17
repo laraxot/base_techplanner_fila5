@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "filament blade components"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Standard <nome progetto>: Componenti Blade Filament

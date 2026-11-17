@@ -10,8 +10,11 @@ created: {{date}}
 updated: {{date}}
 tags: [article, paper, documentation]
 related: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: ../../llm-wiki/_templates/source.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # {{title}}

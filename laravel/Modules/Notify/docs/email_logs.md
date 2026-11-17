@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email logs"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/email-logs.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema Log Email 

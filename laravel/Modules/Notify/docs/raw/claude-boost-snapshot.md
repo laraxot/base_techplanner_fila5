@@ -19,8 +19,13 @@ discussions: []
 
 Codebase and user instructions are shown below. Be sure to adhere to these instructions. IMPORTANT: These instructions OVERRIDE any default behavior and you MUST follow them exactly as written.
 
+<<<<<<< HEAD
 Contents of /var/www/html/_bases/base_fixcity_fila5/laravel/CLAUDE.md (project instructions, checked into the codebase):
 Contents of /var/www/html/_bases/base_ptvx_fila5/laravel/CLAUDE.md (project instructions, checked into the codebase):
+=======
+Contents of /var/www/html/_bases/base_fixcity_fila5_mono/laravel/CLAUDE.md (project instructions, checked into the codebase):
+Contents of /var/www/html/_bases/base_ptvx_fila5_mono/laravel/CLAUDE.md (project instructions, checked into the codebase):
+>>>>>>> laraxot/dev
 
 <laravel-boost-guidelines>
 === foundation rules ===
@@ -695,6 +700,7 @@ it('has emails', function (string $email) {
 
 ### Required Commands (ALWAYS):
 ```bash
+<<<<<<< HEAD
 cd /var/www/html/_bases/base_fixcity_fila5/laravel/Themes/Sixteen
 cd /var/www/html/_bases/base_ptvx_fila5/laravel/Themes/Sixteen
 npm run build
@@ -702,11 +708,21 @@ npm run build
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 =======
 >>>>>>> .merge_file_zAYeP8
+=======
+cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
+cd /var/www/html/_bases/base_ptvx_fila5_mono/laravel/Themes/Sixteen
+npm run build
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
+>>>>>>> laraxot/dev
 ```
 
 ### When to Run:
 - After modifying `tailwind.config.js`
+<<<<<<< HEAD
 - After modifying `resources/css/app.css`
+=======
+- After modifying `resources/css/app.css` 
+>>>>>>> laraxot/dev
 - After modifying any JavaScript files
 - After adding new Tailwind classes to Blade files
 - After ANY frontend changes
@@ -714,11 +730,17 @@ npm run build
 ### Why This Is Critical:
 - The Laravel application reads compiled assets from the theme's `resources/dist/` directory
 - Without `npm run build`, Tailwind won't compile new classes or changes
+<<<<<<< HEAD
 <<<<<<< .merge_file_KHMlzV
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 =======
 - Without `symlink public_html/themes (npm run copy obsoleto)`, the changes won't be available to the main Laravel application
 >>>>>>> .merge_file_zAYeP8
+=======
+- niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+- Without `symlink public_html/themes (npm run copy obsoleto)`, the changes won't be available to the main Laravel application
+>>>>>>> laraxot/dev
 - Users will NOT see any frontend changes without these steps
 
 ### Remember:
@@ -804,7 +826,11 @@ Ticket (core entity):
 /laravel/routes/web.php    → EMPTY (only declare statement)
 /laravel/routes/api.php    → DOES NOT EXIST
 
+<<<<<<< HEAD
 // MODULE routes are EMPTY
+=======
+// MODULE routes are EMPTY  
+>>>>>>> laraxot/dev
 /Modules/*/routes/web.php  → EMPTY
 /Modules/*/routes/api.php  → EMPTY (some have minimal API)
 
@@ -860,5 +886,10 @@ NEVER create files unless they're absolutely necessary for achieving your goal.
 ALWAYS prefer editing an existing file to creating a new one.
 NEVER proactively create documentation files (*.md) or README files. Only create documentation files if explicitly requested by the User.
 
+<<<<<<< HEAD
 
       IMPORTANT: this context may or may not be relevant to your tasks. You should not respond to this context unless it is highly relevant to your task.
+=======
+      
+      IMPORTANT: this context may or may not be relevant to your tasks. You should not respond to this context unless it is highly relevant to your task.
+>>>>>>> laraxot/dev

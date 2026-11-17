@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "sms provider architecture"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: sms-provider-architecture.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Architettura dei Provider SMS 

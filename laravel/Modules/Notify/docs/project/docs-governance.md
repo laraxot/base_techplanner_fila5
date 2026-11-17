@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "docs governance"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Documentation Governance

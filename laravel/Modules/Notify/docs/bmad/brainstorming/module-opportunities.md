@@ -1,14 +1,23 @@
 ---
+<<<<<<< HEAD
 title: "Notify: brainstorming BMAD"
+=======
+title: "Notify — brainstorming BMAD"
+>>>>>>> laraxot/dev
 type: brainstorming
 status: active
 module: Notify
 created: 2026-09-28
 updated: 2026-09-28
 qmd: "Notify brainstorming rischi opportunità domande aperte"
+<<<<<<< HEAD
 tags: [docs, notify, bmad]
 ---
 # Notify: brainstorming
+=======
+---
+# Notify — brainstorming
+>>>>>>> laraxot/dev
 
 ## Punto di partenza
 

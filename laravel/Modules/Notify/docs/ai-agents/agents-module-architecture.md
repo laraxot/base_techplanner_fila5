@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "agents module architecture"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # AGENTS Module Architecture
@@ -33,6 +36,18 @@ $userClass::query()->count()
 Questo permette al modulo di funzionare in qualsiasi progetto senza dipendere da moduli specifici.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "agents module architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents module architecture"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Module Directory Structure
 
 Ogni modulo segue questa struttura:
@@ -147,6 +162,9 @@ git rm path/to/submodule
 - [git-submodules.md](./git-submodules.md) - Dettagli git
 - [AGENTS.md originale](../../AGENTS.md)
 - [agents.md originale](../../agents.md)
+<<<<<<< HEAD
 - [AGENTS.md originale](../AGENTS.md)
 - [agents.md originale](../agents.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

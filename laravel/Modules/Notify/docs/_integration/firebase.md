@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "firebase"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: ../-integration/firebase.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # firebase

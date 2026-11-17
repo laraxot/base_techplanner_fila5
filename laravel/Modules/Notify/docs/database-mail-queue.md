@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "database mail queue"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema di Code per Email - il progetto

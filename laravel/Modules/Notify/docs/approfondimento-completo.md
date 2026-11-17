@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "approfondimento completo"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Approfondimento Completo Modulo Notify

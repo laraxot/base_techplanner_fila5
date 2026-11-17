@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "conflict resolution recordnotification"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitti RecordNotification.php

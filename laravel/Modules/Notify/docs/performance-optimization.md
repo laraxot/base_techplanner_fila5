@@ -2,18 +2,28 @@
 qmd: "performance optimization"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Performance Optimization: Module Notify"
+=======
+title: "Performance Optimization — Module Notify"
+>>>>>>> laraxot/dev
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [performance, optimization, tokens, context]
 related:
   - ../../docs/wiki/concepts/llm-wiki-operational-discipline.md
+<<<<<<< HEAD
   - ../../../../docs/wiki/concepts/llm-wiki-operational-discipline.md
 status: draft
 ---
 
 # Performance Optimization: Module **Notify**
+=======
+---
+
+# Performance Optimization — Module **Notify**
+>>>>>>> laraxot/dev
 
 ## Ottimizzazioni Applicate
 
@@ -24,7 +34,11 @@ status: draft
 
 \`\`\`diff
 - 150+ rules embeddate in AGENTS.md
+<<<<<<< HEAD
 + 0 rules embeddate: tutte on-demand
+=======
++ 0 rules embeddate — tutte on-demand
+>>>>>>> laraxot/dev
 \`\`\`
 
 ### 2. Cache Esterna al Repo
@@ -80,10 +94,17 @@ if trigger in trigger_map:
 ### Query QMD Efficienti
 
 \`\`\`bash
+<<<<<<< HEAD
 # ❌ Troppo generico: risultati enormi
 qmd search "form"
 
 # ✅ Specifico: risultati precisi
+=======
+# ❌ Troppo generico — risultati enormi
+qmd search "form"
+
+# ✅ Specifico — risultati precisi
+>>>>>>> laraxot/dev
 qmd search "filament form schema conventions"
 \`\`\`
 
@@ -99,10 +120,17 @@ qmd search "global validation rules"
 
 ## Prossimi Miglioramenti (TODO)
 
+<<<<<<< HEAD
 1. **Auto-index rebuild**: Dopo 500 file changes, `qmd index rebuild`
 2. **Hooks pre-task**: Auto-memory sync
 3. **Context-mode batch**: Convertire script in batch exec
 4. **Permissions allowlist**: .claude/settings.json
+=======
+1. **Auto-index rebuild** — Dopo 500 file changes, `qmd index rebuild`
+2. **Hooks pre-task** — Auto-memory sync
+3. **Context-mode batch** — Convertire script in batch exec
+4. **Permissions allowlist** — .claude/settings.json
+>>>>>>> laraxot/dev
 
 ## Monitoring
 

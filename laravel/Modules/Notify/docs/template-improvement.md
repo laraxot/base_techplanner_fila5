@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "template improvement"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Roadmap Implementazione Sistema Avanzato di Template Email

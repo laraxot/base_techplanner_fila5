@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "implementazione builders report"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎉 IMPLEMENTAZIONE BUILDERS & ANALISI PIVOT - REPORT FINALE
@@ -17,6 +20,18 @@ status: draft
 **Status**: ✅ BUILDERS IMPLEMENTATI | ⚠️ PIVOT DA REFACTORARE
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "implementazione builders report"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementazione builders report"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 RISULTATI IMPLEMENTAZIONE
 
 ### ✅ Builders Creati (3 file)

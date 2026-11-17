@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "enum standards"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Enum Standards - Notify Module

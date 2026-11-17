@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "template management"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Template Management

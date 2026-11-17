@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "SUMMARY"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: summary.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Bug Fixes Summary

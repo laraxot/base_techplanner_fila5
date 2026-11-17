@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "agents"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # LLM Wiki Agent Instructions

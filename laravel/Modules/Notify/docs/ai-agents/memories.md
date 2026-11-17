@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "memories"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Agent Memory Updates
@@ -32,7 +35,11 @@ Vedi [index](index.md) per navigazione completa.
 
 ## 2026-04-14
 
+<<<<<<< HEAD
 ### Filament Placeholder policy: semantica prima del namespace
+=======
+### Filament Placeholder policy — semantica prima del namespace
+>>>>>>> laraxot/dev
 - `Filament\\Forms\\Components\\Placeholder` va trattato come legacy/deprecated.
 - La domanda corretta non e` "con cosa lo sostituisco a priori?" ma "che tipo di contenuto sto rendendo?".
 - Regola canonica:
@@ -55,7 +62,11 @@ Vedi [index](index.md) per navigazione completa.
 
 ## 2026-03-10
 
+<<<<<<< HEAD
 ### Spatie QueueableAction: regola corretta dopo studio approfondito del package
+=======
+### Spatie QueueableAction — regola corretta dopo studio approfondito del package
+>>>>>>> laraxot/dev
 - `spatie/laravel-queueable-action` **supporta** constructor DI; non va piu` ripetuta la regola assoluta "mai constructor DI".
 - Il vincolo corretto e`: una queued action viene rieseguita tramite `app(ActionClass::class)` dentro `ActionJob`, quindi deve restare **container-instantiable**.
 - Anti-pattern critico: action con `QueueableAction` + costruttore privato/singleton statico. Funziona magari in sync, ma fallisce appena la action viene risolta via container o tramite job wrapper.
@@ -63,8 +74,13 @@ Vedi [index](index.md) per navigazione completa.
 - Per chaining queued usare `new ActionJob(AnotherAction::class, $args)`.
 - Per test queued usare `Queue::fake()` + `Spatie\QueueableAction\Testing\QueueableActionFake`.
 
+<<<<<<< HEAD
 ### <nome progetto> question-chart pipeline: prima lint, poi app boot
 ### App question-chart pipeline: prima lint, poi app boot
+=======
+### Quaeris question-chart pipeline — prima lint, poi app boot
+### App question-chart pipeline — prima lint, poi app boot
+>>>>>>> laraxot/dev
 - Nei flussi `ViewQuestionChart` il primo blocker puo` essere sintattico e non applicativo.
 - Prima di inseguire Livewire/Filament o query runtime, lintare l'intera catena caricata subito:
   - `QuestionChartChartData`
@@ -73,8 +89,13 @@ Vedi [index](index.md) per navigazione completa.
   - blade custom della pagina
 - Se lo stack trace dell'utente punta a una riga che sul disco non corrisponde piu`, trattarlo come possibile errore stale e verificare il file attuale con `php -l` + `nl -ba`.
 
+<<<<<<< HEAD
 ### QuestionChart root ancestor: distinguere metodo assente da runtime stale
 - `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo <nome progetto>.
+=======
+### QuestionChart root ancestor — distinguere metodo assente da runtime stale
+- `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo Quaeris.
+>>>>>>> laraxot/dev
 - `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo App.
 - Se l'errore utente dice "undefined method" ma:
   - il metodo esiste sul file corrente
@@ -103,18 +124,30 @@ Vedi [index](index.md) per navigazione completa.
           // ...
       ];
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> laraxot/dev
   // ListCharts.php
   public function getTableColumns(): array
   {
       return static::$resource::getTableColumnsSchema();
   }
   ```
+<<<<<<< HEAD
 - **MAI** usare `app(ListCharts::class)->getTableColumns()`: crea nuova istanza inutile
 - Le colonne condivise devono risiedere nel Resource, non nelle Pages
 
 ### Nested resource Edit page: form vuoto, diagnosi corretta (2026-02-26)
 - **DIAGNOSI PRECEDENTE ERRATA**: "Le rotte nested non trovano le pagine Edit/View": quella e la causa del pulsante mancante, NON del form vuoto.
+=======
+- **MAI** usare `app(ListCharts::class)->getTableColumns()` — crea nuova istanza inutile
+- Le colonne condivise devono risiedere nel Resource, non nelle Pages
+
+### Nested resource Edit page — form vuoto, diagnosi corretta (2026-02-26)
+- **DIAGNOSI PRECEDENTE ERRATA**: "Le rotte nested non trovano le pagine Edit/View" — quella e la causa del pulsante mancante, NON del form vuoto.
+>>>>>>> laraxot/dev
 - **SINTOMO REALE**: La pagina `/survey-pdfs/{id}/question-charts/{id}/edit` si carica ma il form non ha campi.
 - **CAUSA ROOT CORRETTA**:
   1. `QuestionChartResource::getFormSchema()` ritorna `[]` (placeholder mai implementato)
@@ -122,12 +155,21 @@ Vedi [index](index.md) per navigazione completa.
   3. `XotBaseEditRecord::getFormSchema()` ritorna `[]` per default
   4. Zero campi = form visivamente vuoto senza alcun errore
 - **PERCHE ManageQuestionCharts FUNZIONA**: ha `$this->record` = SurveyPdf (padre) → accede a `$this->record->survey_id` direttamente
+<<<<<<< HEAD
 - **PERCHE EditQuestionChart NON FUNZIONA**: ha `$this->record` = QuestionChart (figlio) → deve navigare `$this->record->surveyPdf->survey_id`: metodo mai implementato
 - **REGOLA**: se lo schema dipende dal padre, la Edit page DEVE sovrascrivere `getFormSchema()` come metodo istanza
 - **DOC**: `laravel/Modules/<nome progetto>/docs/nested-resource-form-trap.md` (analisi completa)
 - **DOC**: `laravel/Modules/App/docs/nested-resource-form-trap.md` (analisi completa)
 
 ### Filament Resources Overview: allineamento Laraxot
+=======
+- **PERCHE EditQuestionChart NON FUNZIONA**: ha `$this->record` = QuestionChart (figlio) → deve navigare `$this->record->surveyPdf->survey_id` — metodo mai implementato
+- **REGOLA**: se lo schema dipende dal padre, la Edit page DEVE sovrascrivere `getFormSchema()` come metodo istanza
+- **DOC**: `laravel/Modules/Quaeris/docs/nested-resource-form-trap.md` (analisi completa)
+- **DOC**: `laravel/Modules/App/docs/nested-resource-form-trap.md` (analisi completa)
+
+### Filament Resources Overview — allineamento Laraxot
+>>>>>>> laraxot/dev
 - L’overview ufficiale Filament (`resources/overview`) definisce `Resource::form(Schema)` e `Resource::table(Table)` come entry point unici per form e tabelle.
 - In Laraxot questi entry point sono incapsulati in `XotBaseResource::getFormSchema()` e nei metodi `getTable*()` (HasXotTable): **mai** override diretto di `form()`/`table()` nelle risorse concrete.
 - Per le nested resources il routing segue `getPages()` di Filament (`/parent/{parent}/children/{record}/edit`), mentre il nome del parametro parent deriva da `ParentResourceRegistration::getParentRouteParameterName()`; quando servono ID/attributi del parent (es. `survey_id`) vanno letti da `getParentRecord()` o dalla route, non “indovinati” dalla URL.
@@ -161,27 +203,46 @@ Vedi [index](index.md) per navigazione completa.
 - FIX: `return $actions;` invece di `return array_values($actions);`
 - File corretto: `LangBaseListRecords::getHeaderActions()` → `return $actions;`
 
+<<<<<<< HEAD
 ### getTableColumns(): chiavi string OBBLIGATORIE
 - `getTableColumns()` **DEVE SEMPRE** restituire `array<string, Column>`: chiavi string, mai indici numerici
+=======
+### getTableColumns() — chiavi string OBBLIGATORIE
+- `getTableColumns()` **DEVE SEMPRE** restituire `array<string, Column>` — chiavi string, mai indici numerici
+>>>>>>> laraxot/dev
 - `return ['name' => TextColumn::make('name'), ...]` ✅
 - `return [TextColumn::make('name'), ...]` ❌
 - Vedi `.cursor/rules/gettablecolumns-string-keys.mdc`
 
+<<<<<<< HEAD
 ### NO table() override: CRITICO in Filament 5
+=======
+### NO table() override — CRITICO in Filament 5
+>>>>>>> laraxot/dev
 - In Filament 5 il metodo `table()` è `final` in `InteractsWithTable`
 - **NON overridare `table()`** in nessuna classe
 - Errore: `Cannot override final method ...::table()`
 - Classi che avevano `table()` e devono essere corrette:
   - `LocationMapTableWidget` (Geo)
+<<<<<<< HEAD
   - `OptOutWidget` (<nome progetto>)
+=======
+  - `OptOutWidget` (Quaeris)
+>>>>>>> laraxot/dev
   - `OptOutWidget` (App)
   - `ManageRolePermissions` (User)
   - `GoogleDriveFileListPage` (CloudStorage)
 - Usare invece: `getTableColumns()`, `getTableHeaderActions()`, `getTableActions()`, `getTableBulkActions()`, `getTableFilters()`
 
+<<<<<<< HEAD
 ### ManageRelatedRecords: NO table() override
 - ManagePdfStyle, ManageCharts, ManageContacts: **NON** implementare `table()` che delega a `Resource::table()`
 - `table()` in HasXotTable è `final`: override impossibile/vietato
+=======
+### ManageRelatedRecords — NO table() override
+- ManagePdfStyle, ManageCharts, ManageContacts: **NON** implementare `table()` che delega a `Resource::table()`
+- `table()` in HasXotTable è `final` — override impossibile/vietato
+>>>>>>> laraxot/dev
 - Override `getTableColumns()` e restituisci colonne (es. `PdfStyleResource::getTableColumnsSchema()`)
 - Pattern: aggiungere `getTableColumnsSchema()` al Resource per condividere colonne tra List e Manage
 
@@ -190,6 +251,7 @@ Vedi [index](index.md) per navigazione completa.
 - Aggiungere `use Illuminate\Contracts\Support\Htmlable;` in tutti i widget che lo overridano
 
 ### Coverage PCOV/Xdebug
+<<<<<<< HEAD
 - `pcov.enabled` e `xdebug.mode` sono `PHP_INI_SYSTEM`: non modificabili via `ini_set()`
 - Usare `XDEBUG_MODE=off` come env var quando si esegue con copertura PCOV
 - Non usare `<ini name="pcov.enabled">` in phpunit.xml: silently fails → 0% coverage
@@ -199,6 +261,17 @@ Vedi [index](index.md) per navigazione completa.
 ### HasFactory/HasXotFactory: NON aggiungere se ereditato
 - Modelli che estendono `BaseModel` del modulo hanno già la factory via: `BaseModel → XotBaseModel → HasXotFactory` (che usa `EloquentHasFactory`)
 - **NON** aggiungere `use HasFactory` o `use HasXotFactory` a modelli tipo `Team extends BaseTeam`: è ridondante
+=======
+- `pcov.enabled` e `xdebug.mode` sono `PHP_INI_SYSTEM` — non modificabili via `ini_set()`
+- Usare `XDEBUG_MODE=off` come env var quando si esegue con copertura PCOV
+- Non usare `<ini name="pcov.enabled">` in phpunit.xml — silently fails → 0% coverage
+
+## 2026-02-24 (HasFactory ridondante)
+
+### HasFactory/HasXotFactory — NON aggiungere se ereditato
+- Modelli che estendono `BaseModel` del modulo hanno già la factory via: `BaseModel → XotBaseModel → HasXotFactory` (che usa `EloquentHasFactory`)
+- **NON** aggiungere `use HasFactory` o `use HasXotFactory` a modelli tipo `Team extends BaseTeam` — è ridondante
+>>>>>>> laraxot/dev
 - Catena: `Team → BaseTeam → BaseModel → XotBaseModel` (usa HasXotFactory)
 - Vedi: `laravel/Modules/Xot/docs/traits/hasxotfactory.md`, `.cursor/rules/model-extension-rules.mdc`
 
@@ -216,7 +289,11 @@ Vedi [index](index.md) per navigazione completa.
 - `table()` in `HasXotTable` trait DEVE restare `final`
 - Non va mai rimosso o reso non-final
 - Le classi figlie si adattano implementando `getTableColumns()`, `getTableHeaderActions()`, `getTableActions()`, `getTableBulkActions()`, `getTableFilters()`
+<<<<<<< HEAD
 - MAI fare override di `table()`: genera errore PHP "Cannot override final method"
+=======
+- MAI fare override di `table()` — genera errore PHP "Cannot override final method"
+>>>>>>> laraxot/dev
 - Vedi: `laravel/Modules/Xot/app/Filament/Traits/HasXotTable.php`
 
 ## 2026-01-29
@@ -244,7 +321,11 @@ Vedi [index](index.md) per navigazione completa.
 ### Form vuoto su Edit nested resource (QuestionCharts)
 - URL tipo `.../survey-pdfs/16/question-charts/230/edit` può mostrare la pagina Edit ma **form vuoto**.
 - **Causa**: la Edit usa `Resource::form()` → `Resource::getFormSchema()`. Se la nested resource (es. QuestionChartResource) ha `getFormSchema()` vuoto e i campi veri in un altro metodo (es. `getFormSchemaBySurveyId($survey_id)`), il form resta vuoto perché quel secondo metodo non viene mai chiamato nel flusso Edit/Create.
+<<<<<<< HEAD
 - **Regola**: per nested resource con form dipendente dal parent, lo schema effettivo deve essere restituito da `getFormSchema()` (o dalla pagina che override), eventualmente recuperando il parent dal contesto. Documentazione: `laravel/Modules/<nome progetto>/docs/edit-question-chart-form-empty-cause.md`, rule `filament-nested-resources.mdc` e `filament-form-schema.mdc`.
+=======
+- **Regola**: per nested resource con form dipendente dal parent, lo schema effettivo deve essere restituito da `getFormSchema()` (o dalla pagina che override), eventualmente recuperando il parent dal contesto. Documentazione: `laravel/Modules/Quaeris/docs/edit-question-chart-form-empty-cause.md`, rule `filament-nested-resources.mdc` e `filament-form-schema.mdc`.
+>>>>>>> laraxot/dev
 - **Regola**: per nested resource con form dipendente dal parent, lo schema effettivo deve essere restituito da `getFormSchema()` (o dalla pagina che override), eventualmente recuperando il parent dal contesto. Documentazione: `laravel/Modules/App/docs/edit-question-chart-form-empty-cause.md`, rule `filament-nested-resources.mdc` e `filament-form-schema.mdc`.
 
 ### HasXotTable / XotBaseManageRelatedRecords pattern (ManageCharts)

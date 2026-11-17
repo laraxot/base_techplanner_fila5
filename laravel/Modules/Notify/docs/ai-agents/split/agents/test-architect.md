@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "test architect"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 ### Test Architect & Quality Advisor (id: qa)
@@ -96,6 +99,7 @@ dependencies:
 
 
 ---
+<<<<<<< HEAD
 ## Cross-References
 
 - ← [Agents Index](index.md): All 10 BMad agents
@@ -105,4 +109,21 @@ dependencies:
 - ← [Tasks Index](../tasks/index.md): 22 reusable tasks
 - ← [Main AI Docs Index](../index.md): Master index
 - ← [../../../../agents.md](../../../../../../../AGENTS.md): Original source
+=======
+
+title: "test architect"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "test architect"
+issues: []
+discussions: []
+## Cross-References
+
+- ← [Agents Index](index.md) — All 10 BMad agents
+- ← [Tasks Index](../../tasks/index.md) — 22 reusable tasks
+- ← [Main AI Docs Index](../index.md) — Master index
+- ← [../../../../agents.md](../../../../../../../../agents.md) — Original source
+>>>>>>> laraxot/dev
 

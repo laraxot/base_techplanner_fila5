@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "iflow stack"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # IFLOW Tech Stack
@@ -15,6 +18,18 @@ status: draft
 Stack tecnologico del progetto.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "iflow stack"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "iflow stack"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Backend
 
 | Tecnologia | Descrizione |

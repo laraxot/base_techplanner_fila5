@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "agents coding standards"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # AGENTS Coding Standards
@@ -30,6 +33,18 @@ Standard di codifica PHP e naming conventions.
 - Use **PHPDoc blocks** for class documentation (avoid inline comments)
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "agents coding standards"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents coding standards"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Naming Conventions
 
 | Element | Convention | Example |
@@ -180,8 +195,11 @@ enum Status: string implements HasLabel, HasColor {
 - [critical-rules.md](./critical-rules.md) - Regole critiche
 - [AGENTS.md originale](../../AGENTS.md)
 - [agents.md originale](../../agents.md)
+<<<<<<< HEAD
 - [AGENTS.md originale](../AGENTS.md)
 - [agents.md originale](../agents.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)
 
 ## Miglioramenti vs Originale

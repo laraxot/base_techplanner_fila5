@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "translation standards progress"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Progresso Standardizzazione Traduzioni
@@ -65,6 +68,7 @@ status: draft
    - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
    - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
    - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+<<<<<<< HEAD
    - [Regole Generali per le Traduzioni](../../Lang/docs/translation_keys_rules.md)
    - [Best Practices per le Traduzioni](../../Lang/docs/translation_keys_best_practices.md)
 
@@ -72,6 +76,8 @@ status: draft
    - [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)
    - [Regole di Naming per i File di Traduzione](./translation_file_naming_rules.md)
    - [Guida alla Struttura dei File di Traduzione](./translation_file_structure_guide.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Appendice: Elenco Completo dei File Non Conformi
 

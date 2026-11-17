@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "netfun sms implementation"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: archive/netfun-sms-implementation.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Implementazione Netfun SMS 

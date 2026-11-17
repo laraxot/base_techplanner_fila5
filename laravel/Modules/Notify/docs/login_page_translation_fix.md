@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 qmd: "login page translation fix"
+=======
+qmd: "LOGIN PAGE TRANSLATION FIX"
+>>>>>>> laraxot/dev
 issues: []
 discussions: []
 title: "Fix Traduzioni Pagina Login"
@@ -8,8 +12,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: login-page-translation-fix.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🔧 Fix Traduzioni Pagina Login

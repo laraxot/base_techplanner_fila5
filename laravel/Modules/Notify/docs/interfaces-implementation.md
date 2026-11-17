@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "interfaces implementation"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Guida all'Implementazione delle Interfacce nel Modulo Notify

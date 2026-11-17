@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "sms provider configuration best practices 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms provider configuration best practices 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Best Practices per la Configurazione dei Provider SMS
 
 ## Struttura Corretta della Configurazione
@@ -74,10 +88,14 @@ Per parametri critici come `sender`, non utilizzare valori predefiniti:
 ```php
 // ❌ ERRATO
 <<<<<<< HEAD
+<<<<<<< HEAD
 'sender' => env('NETFUN_SENDER', '<nome progetto>'),
 =======
 'sender' => env('NETFUN_SENDER', 'SaluteOra'),
 >>>>>>> 6ed19256f (.)
+=======
+'sender' => env('NETFUN_SENDER', '<nome progetto>'),
+>>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 'sender' => env('NETFUN_SENDER'),

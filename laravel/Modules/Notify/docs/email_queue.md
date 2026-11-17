@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email queue"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-queue.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema Code Email - il progetto

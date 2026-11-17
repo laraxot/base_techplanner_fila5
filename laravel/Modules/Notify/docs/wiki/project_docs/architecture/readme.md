@@ -16,11 +16,14 @@ related:
   - ../../notifications/readme.md
   - ../../integrations/readme.md
   - ../../templates/readme.md
+<<<<<<< HEAD
   - ../../index.md
   - ../../../notifications/readme.md
   - ../../../integrations/readme.md
   - ../../../templates/readme.md
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 # Architettura del Sistema
 
@@ -64,8 +67,11 @@ Standard e convenzioni architetturali.
 - [Standard e Convenzioni](./standards/)
 - [Guida Sviluppo](../development/)
 - [Troubleshooting](../troubleshooting/)
+<<<<<<< HEAD
 - [Guida Sviluppo](../../../development)
 - [Troubleshooting](../../troubleshooting)
+=======
+>>>>>>> laraxot/dev
 
 ---
 

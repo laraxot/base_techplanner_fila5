@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "best practices 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "best practices 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Best Practices Implementazione
 
 ## Template Email
@@ -204,6 +218,7 @@ class MailtrapService
 
 ## Contribuire
 <<<<<<< HEAD
+<<<<<<< HEAD
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
@@ -214,3 +229,9 @@ Per contribuire alla documentazione, seguire le [Linee Guida](../../../docs/line
 ## Collegamenti Completi
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../docs/README_links.md).
 >>>>>>> 6ed19256f (.)
+=======
+Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/regole_collegamenti_documentazione.md).
+
+## Collegamenti Completi
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/README_links.md).
+>>>>>>> laraxot/dev

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "gemini split index"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # GEMINI.md Split Index
@@ -27,5 +30,8 @@ status: draft
 ## 🔗 Collegamento
 
 - [GEMINI.md originale](../../GEMINI.md)
+<<<<<<< HEAD
 - [GEMINI.md originale](../GEMINI.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

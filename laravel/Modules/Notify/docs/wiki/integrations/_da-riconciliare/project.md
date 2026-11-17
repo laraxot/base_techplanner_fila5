@@ -1,9 +1,14 @@
 ---
+<<<<<<< HEAD
 title: "Base <nome progetto> Fila5: project.md"
+=======
+title: "Base <nome progetto> Fila5 — project.md"
+>>>>>>> laraxot/dev
 type: concept
 tags: [project]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
 qmd: "project base <nome progetto> fila5: project.md"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
@@ -25,6 +30,23 @@ status: draft
 ---
 
 # Base <nome progetto> Fila5: project.md
+=======
+qmd: "project base <nome progetto> fila5 — project.md"
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+---
+
+# Base <nome progetto> Fila5 — project.md
+>>>>>>> laraxot/dev
 
 ## Context
 Laravel + Filament v5 modular monolith (Laraxot architecture).
@@ -32,7 +54,11 @@ Theme: Sixteen (Bootstrap Italia → Tailwind parity).
 Frontend wizard: Ticket creation wizard via `CreateTicketWizardWidget` (Filament v5 Schemas).
 
 ## Current Milestone
+<<<<<<< HEAD
 **M0: <nome progetto> Ticket Wizard: Visual & HTML Parity** ✅ DONE
+=======
+**M0: <nome progetto> Ticket Wizard — Visual & HTML Parity** ✅ DONE
+>>>>>>> laraxot/dev
 
 Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segnalazione-02-dati.html`
 
@@ -49,8 +75,13 @@ Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segn
   - 3 sections: Luogo, Disservizio, Autore
   - Grid 3-col for author data (name, fiscal code, phone)
   - TextEntry with icons for read-only author info
+<<<<<<< HEAD
 - **Phase 4**: Responsive parity: pending
 - **Phase 5**: Multilingual verification: IT/EN translations verified
+=======
+- **Phase 4**: Responsive parity — pending
+- **Phase 5**: Multilingual verification — IT/EN translations verified
+>>>>>>> laraxot/dev
 
 ## Rules
 - Filament Schemas = unified system (v5). Forms + Infolists coexist.
@@ -62,8 +93,13 @@ Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segn
 
 <!-- Merged from PROJECT.md, which collided with this file on case-insensitive filesystems. -->
 
+<<<<<<< HEAD
 # Base App Fila5: PROJECT.md
 # Base <nome progetto> Fila5: PROJECT.md
+=======
+# Base App Fila5 — PROJECT.md
+# Base <nome progetto> Fila5 — PROJECT.md
+>>>>>>> laraxot/dev
 
 ## Context
 Laravel + Filament v5 modular monolith (Laraxot architecture).
@@ -71,8 +107,13 @@ Theme: Sixteen (Bootstrap Italia → Tailwind parity).
 Frontend wizard: Ticket creation wizard via `CreateTicketWizardWidget` (Filament v5 Schemas).
 
 ## Current Milestone
+<<<<<<< HEAD
 **M0: App Ticket Wizard: Visual & HTML Parity** ✅ DONE
 **M0: <nome progetto> Ticket Wizard: Visual & HTML Parity** ✅ DONE
+=======
+**M0: App Ticket Wizard — Visual & HTML Parity** ✅ DONE
+**M0: <nome progetto> Ticket Wizard — Visual & HTML Parity** ✅ DONE
+>>>>>>> laraxot/dev
 
 Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segnalazione-02-dati.html`
 
@@ -89,8 +130,13 @@ Target: `segnalazione-crea` wizard page → 90%+ parity with Design Comuni `segn
   - 3 sections: Luogo, Disservizio, Autore
   - Grid 3-col for author data (name, fiscal code, phone)
   - TextEntry with icons for read-only author info
+<<<<<<< HEAD
 - **Phase 4**: Responsive parity: pending
 - **Phase 5**: Multilingual verification: IT/EN translations verified
+=======
+- **Phase 4**: Responsive parity — pending
+- **Phase 5**: Multilingual verification — IT/EN translations verified
+>>>>>>> laraxot/dev
 
 ## Rules
 - Filament Schemas = unified system (v5). Forms + Infolists coexist.

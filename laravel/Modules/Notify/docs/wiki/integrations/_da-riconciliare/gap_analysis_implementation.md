@@ -8,8 +8,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: gap-analysis-implementation.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🔍 NOTIFY - GAP ANALYSIS & IMPLEMENTATION PLAN

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "componenti chiave"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Componenti Chiave

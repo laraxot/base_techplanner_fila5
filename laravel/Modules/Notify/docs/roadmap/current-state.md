@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "current state"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Current State - Notify

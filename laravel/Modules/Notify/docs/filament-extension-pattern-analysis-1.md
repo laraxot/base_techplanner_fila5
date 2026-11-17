@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "filament extension pattern analysis 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament extension pattern analysis 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi del Pattern di Estensione per Componenti Filament
 
 ## Comprensione dell'Errore
@@ -17,10 +31,14 @@ L'errore si manifesta in due forme principali:
 ### 1. Architettura a Strati
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il progetto <nome progetto> utilizza un'architettura a strati per i componenti Filament:
 =======
 Il progetto SaluteOra utilizza un'architettura a strati per i componenti Filament:
 >>>>>>> 6ed19256f (.)
+=======
+Il progetto <nome progetto> utilizza un'architettura a strati per i componenti Filament:
+>>>>>>> laraxot/dev
 
 ```
 Filament Core Classes (vendor)
@@ -35,10 +53,14 @@ Saltare il livello intermedio (XotBase) rompe questa architettura e crea inconsi
 ### 2. Personalizzazioni Centralizzate
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Le classi XotBase contengono personalizzazioni specifiche per il progetto <nome progetto>:
 =======
 Le classi XotBase contengono personalizzazioni specifiche per il progetto SaluteOra:
 >>>>>>> 6ed19256f (.)
+=======
+Le classi XotBase contengono personalizzazioni specifiche per il progetto <nome progetto>:
+>>>>>>> laraxot/dev
 - Gestione multilingua
 - Integrazione con il sistema di permessi
 - Logging e auditing
@@ -101,7 +123,11 @@ L'adozione coerente del pattern di estensione XotBase offre vantaggi significati
 ## Conclusione
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Il pattern di estensione XotBase è un aspetto fondamentale dell'architettura di <nome progetto>. Seguire questo pattern garantisce coerenza, manutenibilità e estensibilità del codice. È essenziale comprendere non solo come implementare questo pattern, ma anche perché è importante per il successo a lungo termine del progetto.
 =======
 Il pattern di estensione XotBase è un aspetto fondamentale dell'architettura di SaluteOra. Seguire questo pattern garantisce coerenza, manutenibilità e estensibilità del codice. È essenziale comprendere non solo come implementare questo pattern, ma anche perché è importante per il successo a lungo termine del progetto.
 >>>>>>> 6ed19256f (.)
+=======
+Il pattern di estensione XotBase è un aspetto fondamentale dell'architettura di <nome progetto>. Seguire questo pattern garantisce coerenza, manutenibilità e estensibilità del codice. È essenziale comprendere non solo come implementare questo pattern, ma anche perché è importante per il successo a lungo termine del progetto.
+>>>>>>> laraxot/dev

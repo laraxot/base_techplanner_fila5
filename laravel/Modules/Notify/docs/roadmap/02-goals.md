@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "02 goals"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: goals.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Goals - Notify

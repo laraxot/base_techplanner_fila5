@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "record notification zen constructor"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🧘 RecordNotification Zen Delegation Strategy

@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🤖 Multi-Agent Collaboration Guide
@@ -443,8 +446,11 @@ ralph-loop stop \
 
 - [Zen of Documentation](docs/ZEN_OF_DOCUMENTATION.md)
 - [Documentation Governance](docs/DOCUMENTATION_GOVERNANCE.md)
+<<<<<<< HEAD
 - [Zen of Documentation](ZEN_OF_DOCUMENTATION.md)
 - [Documentation Governance](DOCUMENTATION_GOVERNANCE.md)
+=======
+>>>>>>> laraxot/dev
 - [OpenViking Context](.qwen/openviking-context.md)
 - [BMAD Thread]( _bmad/threads/zen-documentation.md)
 - [GSD Phases](.planning/phases/)

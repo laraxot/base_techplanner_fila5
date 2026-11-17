@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "sms best practices"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per l'Invio SMS

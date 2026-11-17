@@ -8,6 +8,7 @@ qmd: "login-timeout-issue 🚨 problema timeout pagina login - diagnosi e soluzi
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -25,12 +26,27 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # 🚨 Problema Timeout Pagina Login - Diagnosi e Soluzione
 
+<<<<<<< HEAD
 **Data**: 14 Ottobre 2025
 **Severity**: 🔴 **CRITICO**
+=======
+**Data**: 14 Ottobre 2025  
+**Severity**: 🔴 **CRITICO**  
+>>>>>>> laraxot/dev
 **URL Affetto**: http://127.0.0.1:8000/it/auth/login
 
 ---
@@ -42,7 +58,11 @@ status: draft
 [2025-10-14 18:28:51] local.ERROR: Maximum execution time of 30 seconds exceeded
 Location: vendor/mobiledetect/mobiledetectlib/Mobile_Detect.php:1465
 
+<<<<<<< HEAD
 [2025-10-14 18:29:53] local.ERROR: Maximum execution time of 30 seconds exceeded
+=======
+[2025-10-14 18:29:53] local.ERROR: Maximum execution time of 30 seconds exceeded  
+>>>>>>> laraxot/dev
 Location: vendor/laravel/framework/src/Illuminate/View/FileViewFinder.php:138
 ```
 
@@ -91,8 +111,13 @@ protected string $view = 'pub_theme::filament.widgets.auth.login';
 
 ```bash
 # Verificare configurazione tema
+<<<<<<< HEAD
 cd /var/www/_bases/base_fixcity_fila5/laravel
 cd /var/www/_bases/base_ptv_fila5/laravel
+=======
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> laraxot/dev
 php artisan config:cache
 php artisan view:cache
 ```
@@ -141,8 +166,13 @@ public function mount(): void
 ### Soluzione 5: Cache Viste
 
 ```bash
+<<<<<<< HEAD
 cd /var/www/_bases/base_fixcity_fila5/laravel
 cd /var/www/_bases/base_ptv_fila5/laravel
+=======
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> laraxot/dev
 
 # Clear tutti i cache
 php artisan cache:clear
@@ -164,8 +194,13 @@ php artisan view:cache
 
 ```bash
 # Verificare che esista
+<<<<<<< HEAD
 ls -la /var/www/_bases/base_fixcity_fila5/laravel/Themes/Sixteen/resources/views/filament/widgets/auth/login.blade.php
 ls -la /var/www/_bases/base_ptv_fila5/laravel/Themes/Sixteen/resources/views/filament/widgets/auth/login.blade.php
+=======
+ls -la /var/www/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen/resources/views/filament/widgets/auth/login.blade.php
+ls -la /var/www/_bases/base_ptv_fila5_mono/laravel/Themes/Sixteen/resources/views/filament/widgets/auth/login.blade.php
+>>>>>>> laraxot/dev
 ```
 
 ✅ **File esiste**: Abbiamo verificato che c'è
@@ -174,8 +209,13 @@ ls -la /var/www/_bases/base_ptv_fila5/laravel/Themes/Sixteen/resources/views/fil
 
 ```bash
 # Cercare dove è definito pub_theme
+<<<<<<< HEAD
 cd /var/www/_bases/base_fixcity_fila5/laravel
 cd /var/www/_bases/base_ptv_fila5/laravel
+=======
+cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+cd /var/www/_bases/base_ptv_fila5_mono/laravel
+>>>>>>> laraxot/dev
 grep -r "pub_theme" config/ app/Providers/
 ```
 
@@ -202,7 +242,11 @@ class LoginWidget extends XotBaseWidget
 
     // TEMPORANEO: usa path diretto senza namespace
     protected string $view = 'filament.widgets.auth.login';
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     // Oppure prova con tema esplicito:
     // protected string $view = 'theme-sixteen::filament.widgets.auth.login';
 
@@ -249,7 +293,11 @@ class LoginWidget extends XotBaseWidget
 # 1. Clear cache
 php artisan optimize:clear
 
+<<<<<<< HEAD
 # 2. Restart server
+=======
+# 2. Restart server  
+>>>>>>> laraxot/dev
 pkill -f "php artisan serve"
 php artisan serve --host=127.0.0.1 --port=8000 &
 
@@ -273,7 +321,11 @@ public function mount(): void
         'view' => $this->view,
         'view_exists' => view()->exists($this->view),
     ]);
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> laraxot/dev
     $this->form->fill();
 }
 ```
@@ -353,13 +405,22 @@ Fammi sapere il messaggio esatto e posso dare una soluzione mirata.
 
 ---
 
+<<<<<<< HEAD
 **Status**: 🔴 **IN INVESTIGAZIONE**
 **Priority**: **MASSIMA**
+=======
+**Status**: 🔴 **IN INVESTIGAZIONE**  
+**Priority**: **MASSIMA**  
+>>>>>>> laraxot/dev
 **ETA Fix**: < 30 minuti con informazioni da browser
 
 ---
 
+<<<<<<< HEAD
 **Preparato da**: Super Mucca Debugging Team 🐄
+=======
+**Preparato da**: Super Mucca Debugging Team 🐄  
+>>>>>>> laraxot/dev
 **Confidence**: 95% sulla diagnosi
 
 

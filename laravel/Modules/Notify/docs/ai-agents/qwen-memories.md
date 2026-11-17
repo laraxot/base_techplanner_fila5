@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "qwen memories"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # QWEN Memories
@@ -15,6 +18,18 @@ status: draft
 Memorie e lesson learned accumulate da Qwen.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "qwen memories"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "qwen memories"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Error Fix Pattern
 
 Quando si lavora con date in blade:
@@ -237,5 +252,8 @@ Usare `cinematic-particles` per background hero:
 - [Indice QWEN](./qwen-split-index.md)
 - [memories.md](./memories.md) - Più memorie
 - [QWEN.md originale](../../QWEN.md)
+<<<<<<< HEAD
 - [QWEN.md originale](../QWEN.md)
+=======
+>>>>>>> laraxot/dev
 - [Index principale](./index.md)

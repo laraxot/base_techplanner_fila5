@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "mail layouts"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: mail-layouts.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Layout delle Email

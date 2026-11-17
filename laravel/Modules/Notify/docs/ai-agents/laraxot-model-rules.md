@@ -7,13 +7,19 @@ updated: 2026-09-26
 qmd: "laraxot model rules"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Laraxot model rules
 
 > Source: [IFLOW.md](../../bashscripts/ai/IFLOW.md)
+<<<<<<< HEAD
 > Source: [IFLOW.md](../../../../../bashscripts/ai/IFLOW.md)
+=======
+>>>>>>> laraxot/dev
 > Back: [index](index.md) | [critical-rules.md](critical-rules.md)
 
 ## NEVER use property_exists() on Eloquent models

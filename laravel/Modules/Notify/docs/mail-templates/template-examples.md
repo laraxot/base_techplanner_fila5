@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "template examples"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Esempi di Template Email

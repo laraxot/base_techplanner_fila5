@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "test smtp"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: test-smtp.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # test_smtp

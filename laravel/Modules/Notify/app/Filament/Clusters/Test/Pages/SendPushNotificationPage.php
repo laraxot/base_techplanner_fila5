@@ -125,7 +125,11 @@ class SendPushNotificationPage extends XotBasePage
         if ($deviceToken === '') {
             Notification::make()
                 ->danger()
+<<<<<<< HEAD
                 ->title('Errore')
+=======
+                ->title('Error')
+>>>>>>> laraxot/dev
                 ->body('Token del dispositivo non valido')
                 ->send();
 

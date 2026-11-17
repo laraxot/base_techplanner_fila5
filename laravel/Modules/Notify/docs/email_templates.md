@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "email templates"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema di Email Template
@@ -324,7 +327,10 @@ php artisan tinker
 ### **Documentazione Tecnica**
 - [Documentazione Spatie Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 - [Gestione Traduzioni](../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Gestione Traduzioni](../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 - [Configurazione Email](../../../docs/email-configuration.md)
 - [SaluteOra: Missing Mail Template Error](../../SaluteOra/project_docs/errori/missing-mail-template-spatiemail.md) - **URGENT**
 - [Configurazione Email](../../../docs/email-configuration.md)- [SaluteOra: Missing Mail Template Error](../../SaluteOra/project_docs/errori/missing-mail-template-spatiemail.md) - **URGENT**
@@ -342,6 +348,7 @@ php artisan tinker
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
+<<<<<<< HEAD
 - [Proposta Slug Template](./email_template_slug_proposal.md)
 - [Notify Module Index](./index.md)
 - [Architecture Overview](./architecture.md)
@@ -350,6 +357,19 @@ php artisan tinker
 - [Troubleshooting](./troubleshooting.md)
 
 ---
+=======
+
+---
+
+title: "email templates"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "email templates"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 26 Giugno 2025  
 **Status**: Aggiornato per errore critico MissingMailTemplate  
 **Priorità**: URGENT - Fix sistema registrazione

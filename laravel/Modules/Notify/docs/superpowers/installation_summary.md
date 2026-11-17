@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "installation summary"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🦸 Superpowers Installation Summary
@@ -18,6 +21,18 @@ status: draft
 > **Platform**: Cursor
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "installation summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "installation summary"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📋 Overview
 
 Successfully installed and configured the **Superpowers** agentic skills framework for the FixCity platform.
@@ -294,17 +309,24 @@ Agent: [Systematic debugging]
 ### Internal
 
 - [Main README](docs/superpowers/README.md)
+<<<<<<< HEAD
 - [Installation Guide](installation.md)
+=======
+- [Installation Guide](docs/superpowers/installation.md)
+>>>>>>> laraxot/dev
 - [Workflow Guide](docs/superpowers/workflow.md)
 - [Skills Reference](docs/superpowers/skills-reference.md)
 - [Quick Index](docs/superpowers/INDEX.md)
 - [Quick Index](docs/superpowers/index.md)
+<<<<<<< HEAD
 - [Main README](README.md)
 - [Installation Guide](installation.md)
 - [Workflow Guide](workflow.md)
 - [Skills Reference](skills-reference.md)
 - [Quick Index](INDEX.md)
 - [Quick Index](index.md)
+=======
+>>>>>>> laraxot/dev
 - [Laravel Integration](laravel/Modules/docs/superpowers.md)
 
 ### External

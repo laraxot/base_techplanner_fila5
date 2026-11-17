@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "channel enum implementation update"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # ChannelEnum Implementation Update
@@ -128,6 +131,18 @@ Channel-specific logic can be extended by adding methods to ChannelEnum:
 - Channel-specific processing rules
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "channel enum implementation update"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "channel enum implementation update"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Implemented by**: iFlow CLI  
 **Pattern**: Enum-driven architecture  
 **Compliance**: DRY + KISS + Type Safety

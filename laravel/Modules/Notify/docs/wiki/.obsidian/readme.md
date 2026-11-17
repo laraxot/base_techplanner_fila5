@@ -16,11 +16,14 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
+<<<<<<< HEAD
   - ../index.md
   - ../../notifications/readme.md
   - ../../integrations/readme.md
   - ../../templates/readme.md
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 # Obsidian Setup Guide
 
@@ -197,6 +200,9 @@ LIMIT 10
 - [LLM Wiki Integration Guide](../wiki/README.md)
 - [Agent Instructions](../wiki/AGENTS.md)
 - [Wiki Overview](../wiki/overview.md)
+<<<<<<< HEAD
 - [LLM Wiki Integration Guide](../README.md)
 - [Agent Instructions](../AGENTS.md)
 - [Wiki Overview](../overview.md)
+=======
+>>>>>>> laraxot/dev

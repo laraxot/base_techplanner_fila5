@@ -1,9 +1,24 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+---
+title: "laravel path conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel path conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Convenzioni dei Path in Laravel e <nome progetto>
 
 ## Regole Fondamentali per i Path di Cartelle
 
 In Laravel e <nome progetto>, i nomi delle cartelle principali (come definite nella struttura standard di Laravel) **DEVONO** rispettare il caso specifico definito dalle convenzioni di Laravel.
+<<<<<<< HEAD
 =======
 # Convenzioni dei Path in Laravel e SaluteOra
 
@@ -11,6 +26,8 @@ In Laravel e <nome progetto>, i nomi delle cartelle principali (come definite ne
 
 In Laravel e SaluteOra, i nomi delle cartelle principali (come definite nella struttura standard di Laravel) **DEVONO** rispettare il caso specifico definito dalle convenzioni di Laravel.
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 
 ## Cartelle Standard di Laravel e loro Casing Corretto
 
@@ -33,20 +50,28 @@ Le viste in Laravel devono essere collocate nella cartella `resources/views` (lo
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/Notify/resources/views/
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/resources/views/
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/resources/views/
+>>>>>>> laraxot/dev
 ```
 
 **NON** in:
 
 ```
 <<<<<<< HEAD
+<<<<<<< HEAD
 Modules/Notify/Resources/views/
 =======
 /var/www/html/saluteora/laravel/Modules/Notify/Resources/views/
 >>>>>>> 6ed19256f (.)
+=======
+Modules/Notify/Resources/views/
+>>>>>>> laraxot/dev
 ```
 
 ## Perché è Importante
@@ -66,10 +91,14 @@ protected static string $view = 'notify::filament.pages.send-sms';
 
 // Il path fisico corrispondente sarà:
 <<<<<<< HEAD
+<<<<<<< HEAD
 // Modules/Notify/resources/views/filament/pages/send-sms.blade.php
 =======
 // /var/www/html/saluteora/laravel/Modules/Notify/resources/views/filament/pages/send-sms.blade.php
 >>>>>>> 6ed19256f (.)
+=======
+// Modules/Notify/resources/views/filament/pages/send-sms.blade.php
+>>>>>>> laraxot/dev
 ```
 
 ## Verifica e Correzione

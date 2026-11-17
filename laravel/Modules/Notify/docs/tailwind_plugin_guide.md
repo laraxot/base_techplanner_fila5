@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "tailwind plugin guide"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: tailwind-plugin.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Guida: Creazione di Plugin Tailwind Custom per <nome progetto>

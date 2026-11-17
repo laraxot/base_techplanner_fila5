@@ -15,7 +15,10 @@ related:
   - "./issue-multi-agent-collaboration.md"
   - "./issue-subtree-sync-test.md"
   - "./sync-remote-repo-docs-summary.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sync Remote Repo - Test Plan

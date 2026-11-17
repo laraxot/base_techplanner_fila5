@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "package risk matrix"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Package Risk Matrix (2026-03-02)

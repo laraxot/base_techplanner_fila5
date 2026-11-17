@@ -13,10 +13,16 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
+<<<<<<< HEAD
   - ../notifications/README.md
   - readme.md
   - ../templates/README.md
 status: draft
+=======
+  - ../notifications/readme.md
+  - readme.md
+  - ../templates/readme.md
+>>>>>>> laraxot/dev
 ---
 # Integrazioni
 

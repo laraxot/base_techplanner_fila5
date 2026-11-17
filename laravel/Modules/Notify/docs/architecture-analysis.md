@@ -4,6 +4,10 @@ type: concept
 tags: [architecture, analysis]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
+=======
+qmd: "architecture-analysis fixcity architecture deep dive analysis"
+>>>>>>> laraxot/dev
 qmd: "architecture-analysis ptv architecture deep dive analysis"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -19,9 +23,15 @@ related:
   - "./00-index-documentation.md"
   - "./00-index-2.md"
   - "./00-index.md"
+<<<<<<< HEAD
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
@@ -634,10 +644,14 @@ Themes/Sixteen/
 # ALWAYS run after ANY frontend change:
 cd Themes/Sixteen/
 npm run build          # Compile assets
+<<<<<<< HEAD
 <<<<<<< .merge_file_gMzCpB
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 =======
 >>>>>>> .merge_file_xcn4PO
+=======
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
+>>>>>>> laraxot/dev
 
 # These commands are MANDATORY for any:
 # - CSS changes
@@ -1647,7 +1661,11 @@ Tasks:
 ```
 ✅ Exists:
 - claude.md (AI assistant instructions)
+<<<<<<< HEAD
 - project-roadmap.md (high-level vision)
+=======
+- project-roadmap-1.md (high-level vision)
+>>>>>>> laraxot/dev
 - README.md (basic setup)
 - This document (architecture-analysis.md)
 
@@ -1825,11 +1843,16 @@ Monitoring:
 
 Frontend:
 [ ] Theme built (npm run build)
+<<<<<<< HEAD
 <<<<<<< .merge_file_gMzCpB
 niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 =======
 [ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
 >>>>>>> .merge_file_xcn4PO
+=======
+[ ] Assets deployed (symlink public_html/themes (npm run copy obsoleto))
+[ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
+>>>>>>> laraxot/dev
 [ ] Dark mode tested
 [ ] Responsive design tested
 [ ] Accessibility tested

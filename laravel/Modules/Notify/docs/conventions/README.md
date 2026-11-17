@@ -13,10 +13,16 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
+<<<<<<< HEAD
   - ../notifications/README.md
   - ../integrations/README.md
   - ../templates/README.md
 status: draft
+=======
+  - ../notifications/readme.md
+  - ../integrations/readme.md
+  - ../templates/readme.md
+>>>>>>> laraxot/dev
 ---
 # 📏 Coding Conventions
 
@@ -330,7 +336,11 @@ Modules/ModuleName/
 
 **Links**: Use relative paths for internal
 ```markdown
+<<<<<<< HEAD
 ✅ [See Guide](../ai-agents/setup.md)
+=======
+✅ [See Guide](./guides/setup.md)
+>>>>>>> laraxot/dev
 ✅ [Architecture](../architecture/overview.md)
 ❌ [Guide](/var/www/.../guide.md)
 ```

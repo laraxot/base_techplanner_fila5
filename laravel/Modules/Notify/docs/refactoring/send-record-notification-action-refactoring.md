@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "send record notification action refactoring"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Refactoring Report: SendRecordNotificationAction
@@ -178,8 +181,11 @@ private function sendNotification(Model $record, string $templateSlug, ChannelEn
 
 - [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
 - [DRY Composition Pattern](./dry-composition-pattern.md)
+<<<<<<< HEAD
 - [Actions Calling Actions Pattern](../actions-calling-actions-pattern.md)
 - [DRY Composition Pattern](../dry-composition-pattern.md)
+=======
+>>>>>>> laraxot/dev
 - [SendNotificationBulkAction Implementation](./send-notification-bulk-action.md)
 
 ## Review Checklist
@@ -195,6 +201,18 @@ private function sendNotification(Model $record, string $templateSlug, ChannelEn
 - [x] Test compatibility preserved
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "send record notification action refactoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "send record notification action refactoring"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Refactored by**: iFlow CLI  
 **Compliance**: 100% DRY + KISS + Clean Code  
 **Status**: Ready for production deployment

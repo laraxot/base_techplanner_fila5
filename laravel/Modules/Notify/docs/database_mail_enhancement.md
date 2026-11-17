@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "database mail enhancement"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: database-mail-enhancement.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Database Mail Enhancement (Open Source)

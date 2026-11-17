@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "sistema notifiche"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema Notifiche

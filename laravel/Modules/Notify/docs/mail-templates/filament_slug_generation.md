@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "filament slug generation"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: filament-slug-generation.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Generazione di Slug in Filament

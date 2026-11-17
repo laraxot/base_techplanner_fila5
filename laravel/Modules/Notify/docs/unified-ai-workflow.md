@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "unified ai workflow"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Unified AI Workflow: OpenViking + BMAD + GSD + Ralph Loop
@@ -584,8 +587,11 @@ cat .ralph/iteration-log.md
 - [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
 - [AGENTS.md](../AGENTS.md)
 - [agents.md](../agents.md)
+<<<<<<< HEAD
 - [AGENTS.md](../../../AGENTS.md)
 - [agents.md](../../../AGENTS.md)
+=======
+>>>>>>> laraxot/dev
 
 ### Scripts
 - OpenViking Init: `bashscripts/ai/openviking-init.sh`
@@ -652,6 +658,18 @@ After each feature, ask:
 Document answers in retrospectives and store in OpenViking.
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "unified ai workflow"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "unified ai workflow"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 **Version**: 1.0.0  
 **Last Updated**: 2026-03-30  
 **Status**: Initial Implementation  

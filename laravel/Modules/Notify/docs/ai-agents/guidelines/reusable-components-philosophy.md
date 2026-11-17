@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "reusable components philosophy"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🧩 Componenti Riutilizzabili - Filosofia Zen
@@ -17,6 +20,18 @@ status: draft
 **Status**: ✅ PHILOSOPHY DEFINED
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "reusable components philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "reusable components philosophy"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 The Zen of Reusable Components
 
 > "Un componente, infiniti usi. Scrivi una volta, usa ovunque."
@@ -50,19 +65,31 @@ status: draft
 ### Principle 1: Single Responsibility
 
 ```blade
+<<<<<<< HEAD
 {{-- ✅ CORRETTO: Un componente = una responsabilità -}}
+=======
+{{-- ✅ CORRETTO: Un componente = una responsabilità —}}
+>>>>>>> laraxot/dev
 <x-forecast-view.outcomes-grid :outcomes="$outcomes" />
 <x-forecast-view.stats-bar :stats="$stats" />
 <x-forecast-view.order-book :orderBook="$orderBook" />
 
+<<<<<<< HEAD
 {{-- ❌ SBAGLIATO: Componente "god" che fa tutto -}}
+=======
+{{-- ❌ SBAGLIATO: Componente "god" che fa tutto —}}
+>>>>>>> laraxot/dev
 <x-forecast-view.everything :data="$everything" />
 ```
 
 ### Principle 2: Composability
 
 ```blade
+<<<<<<< HEAD
 {{-- Componenti piccoli si combinano -}}
+=======
+{{-- Componenti piccoli si combinano —}}
+>>>>>>> laraxot/dev
 @livewire('view-predict-widget')
 @livewire('view-forecast-widget')
     ├── header.blade.php
@@ -95,20 +122,32 @@ if ($isBinary) {
     $stats = $stats ?? [];
 @endphp
 
+<<<<<<< HEAD
 {{-- ❌ SBAGLIATO: Variabili globali implicite -}}
+=======
+{{-- ❌ SBAGLIATO: Variabili globali implicite —}}
+>>>>>>> laraxot/dev
 {{ $outcomes[0]['title'] }} {{-- Da dove viene? --}}
 ```
 
 ### Principle 5: Minimal Logic
 
 ```blade
+<<<<<<< HEAD
 {{-- ✅ CORRETTO: Logica nelle Action classes -}}
+=======
+{{-- ✅ CORRETTO: Logica nelle Action classes —}}
+>>>>>>> laraxot/dev
 @php
     $orderBook = BuildOrderBookAction::make()->execute($forecast);
 @endphp
 <x-forecast-view.order-book :orderBook="$orderBook" />
 
+<<<<<<< HEAD
 {{-- ❌ SBAGLIATO: Logica complessa nel blade -}}
+=======
+{{-- ❌ SBAGLIATO: Logica complessa nel blade —}}
+>>>>>>> laraxot/dev
 @php
     // 100 righe di logica...
 @endphp
@@ -207,12 +246,20 @@ if ($isBinary) {
 ### 1. Lazy Loading
 
 ```blade
+<<<<<<< HEAD
 {{-- Load heavy components last -}}
+=======
+{{-- Load heavy components last —}}
+>>>>>>> laraxot/dev
 <x-predict-view.outcomes-grid :outcomes="$outcomes" />
 <x-predict-view.order-book :orderBook="$orderBook" />
 <x-forecast-view.outcomes-grid :outcomes="$outcomes" />
 <x-forecast-view.order-book :orderBook="$orderBook" />
+<<<<<<< HEAD
 @livewire('comments-widget') {{-- Lazy via Livewire -}}
+=======
+@livewire('comments-widget') {{-- Lazy via Livewire —}}
+>>>>>>> laraxot/dev
 ```
 
 ### 2. Minimize Queries

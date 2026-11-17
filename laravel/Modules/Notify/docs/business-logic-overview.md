@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "business logic overview"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - Business Logic Overview

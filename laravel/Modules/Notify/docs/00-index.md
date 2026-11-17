@@ -1,13 +1,23 @@
 ---
+<<<<<<< HEAD
 title: "00 index"
+=======
+title: "00 INDEX"
+>>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
+<<<<<<< HEAD
 qmd: "00 index"
 issues: []
 discussions: []
 status: draft
+=======
+qmd: "00 INDEX"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ---
 
 # 📚 **Indice Documentazione Modulo Notify**
@@ -16,7 +26,11 @@ status: draft
 **Module Version**: 2.1.0
 
 ## 🎯 **Lettura Essenziale**
+<<<<<<< HEAD
 1. [README.md](./README.md) - Panoramica completa e Quick Start.
+=======
+1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+>>>>>>> laraxot/dev
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Multi-channel API e AI Templates.
 3. [philosophy.md](./philosophy.md) - "Essere Connessi": filosofia delle notifiche in tempo reale.
 
@@ -35,10 +49,16 @@ status: draft
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Analysis](./phpstan-fixes.md)** - Report di conformità Level 10.
+<<<<<<< HEAD
 - 🚨 **[PHPStan Cluster 2026-03-10](./phpstan-cluster.md)** - Modelli canonici mancanti per log/canali e impatto su factory/controller.
 - 🧭 **[No Orphan Http Controllers](./no-orphan-http-controllers.md)** - I controller web senza route o boundary chiaro non devono restare nel modulo.
 - 🚫 **[No NotificationTrackingController](./no-notification-tracking-controller.md)** - Il tracking notifiche non deve vivere in un controller HTTP legacy.
 - 🔐 **[Cluster Test riservato al super-admin](./stories/test-cluster-authorization.story.md)** - Le pagine di invio di prova sono accessibili solo al super-admin (story in review).
+=======
+- 🚨 **[PHPStan Cluster 2026-03-10](./phpstan-cluster-2026-03-10.md)** - Modelli canonici mancanti per log/canali e impatto su factory/controller.
+- 🧭 **[No Orphan Http Controllers](./no-orphan-http-controllers.md)** - I controller web senza route o boundary chiaro non devono restare nel modulo.
+- 🚫 **[No NotificationTrackingController](./no-notification-tracking-controller.md)** - Il tracking notifiche non deve vivere in un controller HTTP legacy.
+>>>>>>> laraxot/dev
 - 🔬 **[Testing Guidelines](./testing.md)** - Mocking dei canali e verifica invio.
 - 📘 **[Docs-First Workflow](./docs-first-workflow.md)** - Sequenza obbligatoria docs -> codice -> tracking GitHub.
 - 🧪 **PSR-4 Test Helpers** - Nei file Pest usare helper anonimi o support file dedicati; evitare classi top-level extra che rompono `composer dump-autoload`.
@@ -48,11 +68,15 @@ status: draft
 - 🧾 **[SMS Actions consolidation decision](./wiki/decisions/sms-actions-consolidation.md)** - Cosa è stato consolidato in `.bak`, cosa resta attivo (netfun/smsfactor raggiungibili da Filament `SendSmsPage`) e perché.
 
 ## 🧹 **Manutenzione**
+<<<<<<< HEAD
 - 🔄 **[Services → Actions debt](./wiki/concepts/notify-services-support-to-actions.md)** · [services.md](./services.md) · [merge bootstrap story](./stories/phpstan-merge-bootstrap.story.md)
+=======
+>>>>>>> laraxot/dev
 - 🗑️ **[Cleanup Plan](./translation-cleanup-plan.md)** - Rimozione dei 500+ file obsoleti accumulati.
 - 🛡️ **[Security Analysis](./security-analysis.md)** - Protezione dei webhook dei provider (es. WhatsApp).
 
 ## 🔗 **Moduli Correlati**
+<<<<<<< HEAD
 - [Xot](../../Xot/docs/README.md) - Dispatcher centrale.
 - [User](../../User/docs/README.md) - Definizione dei destinatari e preferenze.
 
@@ -64,3 +88,32 @@ Scopo e confini del modulo: [scopo.md](./scopo.md).
 ## Cosa manca per completare
 
 [completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).
+=======
+- [Xot](../../xot/docs/readme.md) - Dispatcher centrale.
+- [User](../../user/docs/readme.md) - Definizione dei destinatari e preferenze.
+
+---
+title: "00 INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 INDEX"
+issues: []
+discussions: []
+*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
+
+## Documentazione BMAD del modulo
+
+Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versioni composte, non scelte a un lato).
+
+- [Brainstorming](bmad/brainstorming.md): decisioni, questioni aperte, opzioni scartate.
+- [Architecture](bmad/architecture.md)
+- [Quick reference](bmad/quick-reference.md)
+- [Setup guide](bmad/setup-guide.md)
+- Story: cartella [bmad/stories/](bmad/stories/).
+
+## Dependency Intelligence
+
+- [Dependency intelligence](dependency-intelligence.md)
+>>>>>>> laraxot/dev

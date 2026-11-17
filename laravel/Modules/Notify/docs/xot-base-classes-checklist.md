@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "xot base classes checklist"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Checklist: Verifica Classi Base Xot

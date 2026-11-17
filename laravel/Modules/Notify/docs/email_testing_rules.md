@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "email testing rules"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Regole per il Testing delle Email

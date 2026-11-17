@@ -2,12 +2,17 @@
 qmd: "project structure"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "Project Structure: Module Notify"
+=======
+title: "Project Structure — Module Notify"
+>>>>>>> laraxot/dev
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -25,6 +30,19 @@ status: draft
 ---
 
 # Project Structure: Module **Notify**
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+---
+
+# Project Structure — Module **Notify**
+>>>>>>> laraxot/dev
 
 ## Directory Structure
 
@@ -36,7 +54,11 @@ status: draft
 │   ├── concepts/                 # Topic/theme pages
 │   ├── entities/                 # Organization/person pages
 │   ├── rules/                    # ⚠️ 151+ regole progettuali
+<<<<<<< HEAD
 │   │   ├── 00-index.md          # Indice regole
+=======
+│   │   ├── 00-index-1.md          # Indice regole
+>>>>>>> laraxot/dev
 │   │   ├── 00-TRIGGER_MAP.md    # Trigger map (link a globale)
 │   │   └── *.md                 # Regole specifiche modulo
 │   ├── skills/                   # Skill progettuali
@@ -50,9 +72,15 @@ status: draft
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
+<<<<<<< HEAD
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE: Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization-module-notify.md    # Metriche e best practice
+=======
+├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
+├── qmd-setup.md                  # Configurazione QMD
+├── performance-optimization-1.md    # Metriche e best practice
+>>>>>>> laraxot/dev
 ├── architecture.md               # (opzionale) Architettura modulo
 └── README.md                     # (opzionale) Overview modulo
 \`\`\`
@@ -65,7 +93,11 @@ status: draft
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
+<<<<<<< HEAD
 | `on-demand-pattern.md` | **Leggi prima**: pattern da seguire |
+=======
+| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+>>>>>>> laraxot/dev
 
 ## Convenzioni
 
@@ -117,11 +149,14 @@ graph TD
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
+<<<<<<< HEAD
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)
 - [Global Commands](../../commands)
 - [Global Memories](../../memories)
+=======
+>>>>>>> laraxot/dev
 
 ## Setup Iniziale (per nuovi moduli)
 
@@ -149,8 +184,19 @@ git commit -m "docs: add wiki structure for Notify"
 <!-- Merged from PROJECT-STRUCTURE.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
+<<<<<<< HEAD
 
 # Project Structure: Module **Notify**
+=======
+title: "Project Structure — Module Notify"
+type: documentation
+created: 2026-05-11
+updated: 2026-05-11
+tags: [structure, architecture, module]
+---
+
+# Project Structure — Module **Notify**
+>>>>>>> laraxot/dev
 
 ## Directory Structure
 
@@ -176,7 +222,11 @@ git commit -m "docs: add wiki structure for Notify"
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
+<<<<<<< HEAD
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE: Pattern on-demand
+=======
+├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
+>>>>>>> laraxot/dev
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
@@ -191,7 +241,11 @@ git commit -m "docs: add wiki structure for Notify"
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
+<<<<<<< HEAD
 | `ON-DEMAND-PATTERN.md` | **Leggi prima**: pattern da seguire |
+=======
+| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
+>>>>>>> laraxot/dev
 
 ## Convenzioni
 
@@ -243,11 +297,14 @@ graph TD
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
+<<<<<<< HEAD
 - [Project Wiki Root](../..)
 - [Global Rules](../../rules)
 - [Global Skills](../../skills)
 - [Global Commands](../../commands)
 - [Global Memories](../../memories)
+=======
+>>>>>>> laraxot/dev
 
 ## Setup Iniziale (per nuovi moduli)
 

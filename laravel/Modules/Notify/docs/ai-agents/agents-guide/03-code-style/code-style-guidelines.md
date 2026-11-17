@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "code style guidelines"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 3. Code Style Guidelines
@@ -76,3 +79,15 @@ protected function casts(): array
 - Never suppress errors with `@`
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "code style guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code style guidelines"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev

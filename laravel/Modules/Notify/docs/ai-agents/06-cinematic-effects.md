@@ -7,15 +7,34 @@ updated: 2026-09-26
 qmd: "06 cinematic effects"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎨 Cinematic Effects & Particles
 
+<<<<<<< HEAD
 **Part of**: [00-INDEX.md](00-INDEX.md): AI Agents Coordination  
 **Related**: [06-CINEMATIC-EFFECTS.md](06-CINEMATIC-EFFECTS.md): Full guide
 
 ---
+=======
+**Part of**: [00-INDEX.md](00-INDEX.md) — AI Agents Coordination  
+**Related**: [06-CINEMATIC-EFFECTS.md](06-CINEMATIC-EFFECTS.md) — Full guide
+
+---
+
+title: "06 cinematic effects"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "06 cinematic effects"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📋 Quick Reference
 
 ### CSS-only Particles (Recommended)

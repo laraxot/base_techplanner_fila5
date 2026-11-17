@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "ottimizzazioni correzioni"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - Ottimizzazioni e Correzioni

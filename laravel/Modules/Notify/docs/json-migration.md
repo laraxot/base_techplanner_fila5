@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "json migration"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Errore di Migrazione JSON e Soluzione

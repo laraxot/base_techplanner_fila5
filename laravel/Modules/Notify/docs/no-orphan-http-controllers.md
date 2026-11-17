@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "no orphan http controllers"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # No Orphan Http Controllers

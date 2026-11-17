@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "communication systems architecture"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - Communication Systems Architecture

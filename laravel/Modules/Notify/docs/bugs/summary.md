@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "summary"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Bug Fixes Summary
@@ -52,6 +55,18 @@ php artisan tinker --execute="
 ✅ **RISOLTO** - Testato e verificato funzionante
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "summary"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## Prossimi Bug da Analizzare
 
 Nessuno al momento.

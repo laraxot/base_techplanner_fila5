@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "documentation ecosystem"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # FixCity Documentation Ecosystem - Visual Map
@@ -15,6 +18,18 @@ status: draft
 **📍 Complete Bidirectional Links & Cross-References**
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "documentation ecosystem"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "documentation ecosystem"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🗺️ Documentation Ecosystem Overview
 
 ```
@@ -267,6 +282,7 @@ Xot (Core) ◄──────────────────────
 | Track changes | [Activity Docs](../laravel/Modules/Activity/docs/) | [Audit Trail](../laravel/Modules/Activity/docs/guides/) | Examples |
 | Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
 | Architecture | [Architecture](ARCHITECTURE-DIAGRAMS.md) | [Design Comuni](../laravel/Themes/Sixteen/docs/design-comuni/) | Deep dive |
+<<<<<<< HEAD
 | Quick start | [Copilot Inst.](../.github/copilot-instructions.md) | [Architecture](ARCHITECTURE-DIAGRAMS.md) | Your task |
 | Module overview | [Module Index](MODULE_DOCS_INDEX.md) | `Modules/{Name}/docs/00-INDEX.md` | Details |
 | Theme overview | [Theme Index](THEMES_DOCUMENTATION_INDEX.md) | `Themes/{Name}/docs/00-INDEX.md` | Details |
@@ -278,6 +294,8 @@ Xot (Core) ◄──────────────────────
 | Track changes | [Activity Docs](../../Activity/docs) | [Audit Trail](../../Activity/docs/guides) | Examples |
 | Code standards | [CLAUDE.md](../../../CLAUDE.md) | [Copilot Inst.](../.github/copilot-instructions.md) | Review |
 | Architecture | [Architecture](ARCHITECTURE-DIAGRAMS.md) | [Design Comuni](../../../Themes/Sixteen/docs/design-comuni) | Deep dive |
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -450,8 +468,11 @@ laravel/Themes/
 - **Code Quality** → [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
 - **Framework Rules** → [laravel/CLAUDE.md](../laravel/CLAUDE.md)
 - **Copilot Usage** → [.github/copilot-instructions.md](../../.github/copilot-instructions.md)
+<<<<<<< HEAD
 - **Framework Rules** → [laravel/CLAUDE.md](../../../CLAUDE.md)
 - **Copilot Usage** → [.github/copilot-instructions.md](../.github/copilot-instructions.md)
+=======
+>>>>>>> laraxot/dev
 - **Design Comuni** → Search for `DESIGN_COMUNI_` files
 
 ### By Use Case
@@ -554,7 +575,10 @@ Connected Via:
 ### For Developers
 
 1. Start: [Copilot Instructions](../../.github/copilot-instructions.md)
+<<<<<<< HEAD
 1. Start: [Copilot Instructions](../.github/copilot-instructions.md)
+=======
+>>>>>>> laraxot/dev
 2. Understand: [Architecture Diagrams](ARCHITECTURE-DIAGRAMS.md)
 3. Explore: [Module Index](MODULE_DOCS_INDEX.md) or [Theme Index](THEMES_DOCUMENTATION_INDEX.md)
 4. Deep Dive: Relevant module/theme 00-INDEX.md
@@ -572,7 +596,10 @@ Connected Via:
 ### For New Project Members
 
 1. Read: [Copilot Instructions](../../.github/copilot-instructions.md)
+<<<<<<< HEAD
 1. Read: [Copilot Instructions](../.github/copilot-instructions.md)
+=======
+>>>>>>> laraxot/dev
 2. Watch: Architecture diagrams in this file
 3. Explore: Master indexes for your area
 4. Ask: Use GitHub discussions for questions

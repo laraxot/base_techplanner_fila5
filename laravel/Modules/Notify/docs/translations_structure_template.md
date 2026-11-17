@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "translations structure template"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: translations-structure-template.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Template di Struttura per le Traduzioni

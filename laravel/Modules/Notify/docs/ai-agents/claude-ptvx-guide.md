@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "claude ptvx guide"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Utilizzo di Claude con il Progetto PTVX

@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "roadmap 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # 🔔 NOTIFY MODULE - ROADMAP 2025
 
 **Modulo**: Notify (Notification System & Communication)
@@ -8,6 +22,17 @@
 
 ---
 
+<<<<<<< HEAD
+=======
+title: "roadmap 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 MODULE OVERVIEW
 
 Il modulo **Notify** gestisce tutto il sistema di notifiche della piattaforma FixCity, inclusa la gestione delle notifiche in-app, email, SMS, push notifications e l'integrazione con servizi di terze parti.

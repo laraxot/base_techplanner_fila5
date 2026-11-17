@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "sync remote repo test plan"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sync Remote Repo - Test Plan
@@ -18,6 +21,18 @@ status: draft
 > **Date**: 2026-03-13
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "sync remote repo test plan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sync remote repo test plan"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 Test Objectives
 
 ### Primary Goal

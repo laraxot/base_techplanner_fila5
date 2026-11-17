@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "quality dashboard"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 📊 Quality Dashboard - FixCity Project
@@ -17,6 +20,18 @@ status: draft
 **Status:** 🟢 Excellent
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "quality dashboard"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality dashboard"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 Overall Quality Score: **94.5%** (A+)
 
 ```

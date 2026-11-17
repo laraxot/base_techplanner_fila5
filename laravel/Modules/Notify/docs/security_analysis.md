@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "security analysis"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi della Sicurezza

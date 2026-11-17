@@ -16,7 +16,10 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 # 📦 Moduli del Sistema
 
@@ -29,7 +32,10 @@ status: draft
 **Responsabilità**: Pattern base, service providers, trait condivisi  
 **Status**: ✅ Attivo - Base del sistema  
 **Docs**: [📖 Xot Docs](../../Modules/Xot/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 Xot Docs](../../../Xot/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - `XotBaseModel` - Modello base per tutti i moduli
 - `XotBaseServiceProvider` - Provider base estendibile  
@@ -41,7 +47,10 @@ status: draft
 **Responsabilità**: Core della piattaforma di segnalazioni  
 **Status**: ✅ Attivo - Modulo principale  
 **Docs**: [📖 Fixcity Docs](../../Modules/Fixcity/docs/links.md)
+<<<<<<< HEAD
 **Docs**: [📖 Fixcity Docs](../../../Fixcity/docs/links.md)
+=======
+>>>>>>> laraxot/dev
 
 - Gestione segnalazioni cittadini
 - Workflow amministrativo
@@ -53,7 +62,10 @@ status: draft
 **Responsabilità**: Autenticazione, profili, permessi  
 **Status**: ✅ Attivo - Sistema utenti  
 **Docs**: [📖 User Docs](../../Modules/User/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 User Docs](../../../User/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Autenticazione Laravel
 - Profili utente cittadini/staff
@@ -67,7 +79,10 @@ status: draft
 **Responsabilità**: Componenti UI riutilizzabili  
 **Status**: ✅ Attivo - Componenti base  
 **Docs**: [📖 UI Docs](../../Modules/UI/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 UI Docs](../../../UI/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Componenti Livewire condivisi
 - [DarkModeSwitcher](../../Modules/UI/docs/components.md#darkmodeswitcher) - Toggle modalità scuro
@@ -79,7 +94,10 @@ status: draft
 **Responsabilità**: Sistema CMS, pagine statiche  
 **Status**: ✅ Attivo - Content management  
 **Docs**: [📖 CMS Docs](../../Modules/Cms/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 CMS Docs](../../../Cms/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Gestione pagine JSON
 - Homepage builder
@@ -114,7 +132,10 @@ status: draft
 **Responsabilità**: Log attività, cronologia  
 **Status**: ✅ Attivo - Audit system  
 **Docs**: [📖 Activity Docs](../../Modules/Activity/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 Activity Docs](../../../Activity/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Event sourcing pattern
 - Log attività utenti
@@ -138,7 +159,10 @@ status: draft
 **Responsabilità**: Integrazione AI/ML  
 **Status**: ✅ Attivo - AI services  
 **Docs**: [📖 AI Docs](../../Modules/AI/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 AI Docs](../../../AI/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Classificazione automatica segnalazioni
 - Chatbot assistenza
@@ -182,7 +206,10 @@ status: draft
 **Responsabilità**: Valutazioni e feedback  
 **Status**: ✅ Attivo - Rating system  
 **Docs**: [📖 Rating Docs](../../Modules/Rating/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 Rating Docs](../../../Rating/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - User ratings
 - Feedback collection
@@ -218,7 +245,10 @@ status: draft
 **Responsabilità**: Pubblicazione contenuti blog  
 **Status**: ✅ Attivo - Content publishing  
 **Docs**: [📖 Blog Docs](../../Modules/Blog/docs/README.md)
+<<<<<<< HEAD
 **Docs**: [📖 Blog Docs](../../../Blog/docs/README.md)
+=======
+>>>>>>> laraxot/dev
 
 - Post management
 - Categories/tags

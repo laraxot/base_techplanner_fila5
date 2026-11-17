@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "sqlite permission fix"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # ✅ SQLite Database Permission Fix - COMPLETE
@@ -23,6 +26,18 @@ status: draft
 **Error**: `SQLSTATE[HY000]: General error: 8 attempt to write a readonly database`
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "sqlite permission fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sqlite permission fix"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🚨 Error Details
 
 ### Original Error

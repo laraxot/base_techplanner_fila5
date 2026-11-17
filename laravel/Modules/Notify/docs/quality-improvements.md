@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "quality improvements"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Miglioramenti Qualità Codice - Modulo Notify

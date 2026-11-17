@@ -4,7 +4,11 @@ title: "Notify Services/Support -> Actions migration"
 type: concept
 tags: [notify, actions, queueable-action, services, refactor]
 created: 2026-07-13
+<<<<<<< HEAD
 updated: 2026-11-17
+=======
+updated: 2026-10-08
+>>>>>>> laraxot/dev
 qmd: "Notify app Services Support converted to QueueableAction migration mapping"
 issues:
 related:
@@ -16,11 +20,15 @@ related:
   - "./llm-wiki-governance.md"
   - "./method-name-homonyms.md"
   - "./module-root-uppercase-folders-archive.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify `app/Services` -> `app/Actions` migration
 
+<<<<<<< HEAD
 ## Stato (post-merge 2026-11)
 
 Un merge ha **riesumato** `app/Services/*` con marker di conflitto. Priorità:
@@ -44,6 +52,14 @@ va rifatta dopo zero caller.
 `Modules/Notify/app/Services` non conteneva piu` codice autoloadabile attivo al
 momento della migrazione: ogni logica era gia` stata spostata in `app/Actions`
 da un passaggio precedente.
+=======
+## Stato
+
+`Modules/Notify/app/Services` non conteneva piu` codice autoloadabile attivo al
+momento della migrazione: ogni logica era gia` stata spostata in `app/Actions`
+da un passaggio precedente. `Modules/Notify/app/Support` era gia` vuoto
+(eliminato monorepo-wide, vedi `no-app-support-queueable-actions.md`).
+>>>>>>> laraxot/dev
 
 ## Mapping
 
@@ -63,11 +79,18 @@ Il 2026-07-13 i residui non autoloadabili erano stati archiviati con suffisso `.
 originali sono tornati). Stato definitivo al 2026-10-08: **`app/Services` non esiste piu'** (file cancellati, recuperabili
 da HEAD del repo del modulo; nessun `.gitkeep` a preservare la cartella). Dettaglio nella story
 `stories/2026-10-08-services-to-actions-notify.story.md`.
+<<<<<<< HEAD
 `stories/services-to-actions-notify.story.md`.
 
 Callers repo-wide di `Modules\Notify\Services\*`: 0.
 
 ## Aggiornamento 2026-07-16: pulizia residui
+=======
+
+Callers repo-wide di `Modules\Notify\Services\*`: 0.
+
+## Aggiornamento 2026-07-16 — pulizia residui
+>>>>>>> laraxot/dev
 
 Verifica finale monorepo-wide (`laravel/Modules/*`, `laravel/Themes/*`,
 `laravel/app/`): l'unico riferimento a codice `Modules\Notify\Services\*`

@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Documentation Ecosystem - Visual Map
@@ -261,7 +264,10 @@ Xot (Core) ◄──────────────────────
 | I Need... | Start Here | Then Go To | Then Go To |
 |-----------|-----------|-----------|-----------|
 | Quick start | [Copilot Inst.](../../.github/copilot-instructions.md) | [Architecture](ARCHITECTURE-DIAGRAMS.md) | Your task |
+<<<<<<< HEAD
 | Quick start | [Copilot Inst.](../../../../.github/copilot-instructions.md) | [Architecture](ARCHITECTURE-DIAGRAMS.md) | Your task |
+=======
+>>>>>>> laraxot/dev
 | Module overview | [Module Index](MODULE_DOCS_INDEX.md) | `Modules/{Name}/docs/00-index.md` | Details |
 | Theme overview | [Theme Index](THEMES_DOCUMENTATION_INDEX.md) | `Themes/{Name}/docs/00-index.md` | Details |
 | Create content | [Cms Docs](../laravel/Modules/Cms/docs/) | [Block Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md) | Examples |
@@ -271,7 +277,10 @@ Xot (Core) ◄──────────────────────
 | Send notifications | [Notify Docs](../laravel/Modules/Notify/docs/) | [Channels](../laravel/Modules/Notify/docs/guides/) | Examples |
 | Track changes | [Activity Docs](../laravel/Modules/Activity/docs/) | [Audit Trail](../laravel/Modules/Activity/docs/guides/) | Examples |
 | Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
+<<<<<<< HEAD
 | Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../../../.github/copilot-instructions.md) | Review |
+=======
+>>>>>>> laraxot/dev
 | Architecture | [Architecture](ARCHITECTURE-DIAGRAMS.md) | [Design Comuni](../laravel/Themes/Sixteen/docs/design-comuni/) | Deep dive |
 
 ---
@@ -438,7 +447,10 @@ laravel/Themes/
 - **Code Quality** → [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
 - **Framework Rules** → [laravel/CLAUDE.md](../laravel/CLAUDE.md)
 - **Copilot Usage** → [.github/copilot-instructions.md](../../.github/copilot-instructions.md)
+<<<<<<< HEAD
 - **Copilot Usage** → [.github/copilot-instructions.md](../../../../.github/copilot-instructions.md)
+=======
+>>>>>>> laraxot/dev
 - **Design Comuni** → Search for `DESIGN_COMUNI_` files
 
 ### By Use Case
@@ -539,7 +551,10 @@ Connected Via:
 ### For Developers
 
 1. Start: [Copilot Instructions](../../.github/copilot-instructions.md)
+<<<<<<< HEAD
 1. Start: [Copilot Instructions](../../../../.github/copilot-instructions.md)
+=======
+>>>>>>> laraxot/dev
 2. Understand: [Architecture Diagrams](ARCHITECTURE-DIAGRAMS.md)
 3. Explore: [Module Index](MODULE_DOCS_INDEX.md) or [Theme Index](THEMES_DOCUMENTATION_INDEX.md)
 4. Deep Dive: Relevant module/theme 00-index.md
@@ -557,7 +572,10 @@ Connected Via:
 ### For New Project Members
 
 1. Read: [Copilot Instructions](../../.github/copilot-instructions.md)
+<<<<<<< HEAD
 1. Read: [Copilot Instructions](../../../../.github/copilot-instructions.md)
+=======
+>>>>>>> laraxot/dev
 2. Watch: Architecture diagrams in this file
 3. Explore: Master indexes for your area
 4. Ask: Use GitHub discussions for questions

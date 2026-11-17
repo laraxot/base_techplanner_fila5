@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "improved email templates"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: improved-email-templates.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Versione Migliorata: Filament Email Templates In-House

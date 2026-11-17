@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "agents overview"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🎯 AI Agents Overview
@@ -17,6 +20,18 @@ status: draft
 **Stato**: ✅ OPERATIONAL
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "agents overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents overview"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 📊 Project Stack
 
 ### Core Technology
@@ -234,10 +249,15 @@ vendor/bin/pest --coverage
 ## 📖 Quick Links
 
 ### Getting Started
+<<<<<<< HEAD
 - [Coding Standards](../agents-coding-standards.md)
 - [Module Architecture](../agents-module-architecture.md)
 - [Coding Standards](../agents-coding-standards.md)
 - [Module Architecture](../agents-module-architecture.md)
+=======
+- [Coding Standards](../standards/agents-coding-standards.md)
+- [Module Architecture](../architecture/agents-module-architecture.md)
+>>>>>>> laraxot/dev
 - [Quality Gate](../workflow/agents-quality-gate.md)
 
 ### Critical Rules

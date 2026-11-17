@@ -4,12 +4,16 @@ type: documentation
 tags: [module, documentation]
 created: 2026-06-05
 updated: 2026-08-02
+<<<<<<< HEAD
 status: draft
 qmd: "documentation notify"
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Documentation
 
+<<<<<<< HEAD
 ## Kit BMAD owner (canonico)
 
 - [BMAD Planning](bmad-planning.md)
@@ -18,6 +22,8 @@ qmd: "documentation notify"
 - [Project context](./project-context.md)
 - [Decision log](./decision-log.md)
 
+=======
+>>>>>>> laraxot/dev
 This directory contains documentation for the Notify module.
 
 ## Structure
@@ -62,16 +68,28 @@ Modules\Notify\Models\NotificationTemplateVersion
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [Xot Base](../../../Xot/docs) - Core framework
 - [User Module](../../../User/docs) - User management integration
+=======
+- [Xot Base](../Xot/docs/) - Core framework
+- [User Module](../User/docs/) - User management integration
+>>>>>>> laraxot/dev
 
 ## Risorse
 
 - [PHPStan Config](./phpstan/) - Type checking configuration
+<<<<<<< HEAD
 - [On-Demand Pattern](./on-demand-pattern.md): Pattern per caricamento efficiente
 - [QMD Setup](./qmd-setup.md): Configurazione ricerca locale
 - [Performance](./performance-optimization.md): Metriche e best practice
 - [Project Structure](./project-structure.md): Directory layout
+=======
+- [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
+- [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
+- [Performance](./performance-optimization.md) — Metriche e best practice
+- [Project Structure](./project-structure.md) — Directory layout
+>>>>>>> laraxot/dev
 
 ---
 
@@ -137,6 +155,7 @@ Supporta template dinamici, allegati binari, multi-canale e integrazione complet
 ### Guide Complete
 
 #### Email System
+<<<<<<< HEAD
 - **[Email Attachments Usage](../email-sending/attachments_usage.md)** ⭐  
   Guida completa agli allegati email (path e binary data)
 
@@ -155,6 +174,26 @@ Supporta template dinamici, allegati binari, multi-canale e integrazione complet
 
 #### SMS & WhatsApp
 - **[WhatsApp Provider Architecture](../whatsapp_provider_architecture.md)**  
+=======
+- **[Email Attachments Usage](./email-sending/attachments_usage.md)** ⭐  
+  Guida completa agli allegati email (path e binary data)
+
+- **[Spatie Mail Templates Deep Dive](./spatie-database-mail-templates-deep-dive.md)**  
+  Sistema template email database
+
+- **[Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)**  
+  Best practices layout email
+
+#### Notifications
+- **[Notifications Implementation Guide](./notifications/notifications_implementation_guide.md)**  
+  Come implementare notifiche custom
+
+- **[RecordNotification Usage](./notifications/record-notification.md)**  
+  Notifiche basate su record Eloquent
+
+#### SMS & WhatsApp
+- **[WhatsApp Provider Architecture](./whatsapp_provider_architecture.md)**  
+>>>>>>> laraxot/dev
   Architettura provider WhatsApp
 
 ---
@@ -334,7 +373,11 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 **Versione**: 1.1  
 **Stato**: PSR-4 compliant, test business logic completati (95% copertura)  
 **Prossimi passi**: Completamento test modelli base  
+<<<<<<< HEAD
 **Changelog**: [changelog.md](./CHANGELOG.MD)
+=======
+**Changelog**: [changelog.md](./CHANGELOG.md)
+>>>>>>> laraxot/dev
 
 ## 🔗 Collegamenti
 
@@ -351,18 +394,31 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 - **[GetPdfContentByRecordAction](../../Xot/docs/actions/pdf-content-generation-technical.md)**  
   Generazione PDF binario da record
 
+<<<<<<< HEAD
 - **[PDF Actions](../../../Xot/app/Actions/Pdf)**  
+=======
+- **[PDF Actions](../../Xot/app/Actions/Pdf/)**  
+>>>>>>> laraxot/dev
   Actions per gestione PDF
 
 ### Documentazione Interna
 
 #### Email System
+<<<<<<< HEAD
 - [Email Layouts Best Practices](../mail-templates/email_layouts_best_practices.md)
 - [Spatie Mail Templates Structure](../mail-templates/spatie_mail_templates_structure.md)
 - [Email Troubleshooting](../email-sending/email_troubleshooting.md)
 
 #### Notifications
 - [Notifications Implementation Guide](../notifications/notifications_implementation_guide.md)
+=======
+- [Email Layouts Best Practices](./mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
+- [Spatie Mail Templates Structure](./mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
+- [Email Troubleshooting](./email-sending/EMAIL_TROUBLESHOOTING.md)
+
+#### Notifications
+- [Notifications Implementation Guide](./notifications/notifications_implementation_guide.md)
+>>>>>>> laraxot/dev
 - [Notification Management Business Logic](./notifications/notification-management-business-logic.md)
 
 ---
@@ -507,4 +563,8 @@ Log::channel('email')->info('Email sent', [
 **Ultimo aggiornamento:** 2025-01-22  
 **Versione:** 2.1.0  
 **Stato:** ✅ Production Ready  
+<<<<<<< HEAD
 **PHPStan Level:** 10
+=======
+**PHPStan Level:** 10
+>>>>>>> laraxot/dev

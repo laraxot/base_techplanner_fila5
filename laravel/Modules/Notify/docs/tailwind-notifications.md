@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "tailwind notifications"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Sistema di Notifiche con Filament Components
@@ -289,4 +292,8 @@ class NotificationListTest extends TestCase
 - [Documentazione Form](tailwind_forms.md)
 - [Documentazione Layout](tailwind_layouts.md)
 - [Documentazione Componenti](tailwind_components.md)
+<<<<<<< HEAD
 - [Architettura](ARCHITECTURE.md)
+=======
+- [Architettura](architecture.md)
+>>>>>>> laraxot/dev

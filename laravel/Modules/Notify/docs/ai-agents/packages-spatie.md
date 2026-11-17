@@ -7,13 +7,21 @@ updated: 2026-09-26
 qmd: "packages spatie"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Spatie Packages Reference
 
+<<<<<<< HEAD
 Pacchetti Spatie installati in <nome progetto> fila5.
 Pacchetti Spatie installati in App fila5.
+=======
+Pacchetti Spatie installati in Quaeris Fila5 Mono.
+Pacchetti Spatie installati in App Fila5 Mono.
+>>>>>>> laraxot/dev
 
 ## Versioni installate
 
@@ -38,6 +46,18 @@ Pacchetti Spatie installati in App fila5.
 | spatie/laravel-model-status | 1.20.0 | Status tracking model |
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "packages spatie"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "packages spatie"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## spatie/laravel-data 4.19.1
 
 **Uso**: DTOs tipizzati per validazione, API response, TypeScript generation.
@@ -130,8 +150,13 @@ Vedi il riferimento operativo completo: [`spatie-queueable-action.md`](./spatie-
 Usato nel modulo Activity.
 
 **Modelli del progetto**:
+<<<<<<< HEAD
 - `Modules/Activity/app/Models/StoredEvent.php`: estende `SpatieStoredEvent`
 - `Modules/Activity/app/Models/Snapshot.php`: estende `SpatieSnapshot`
+=======
+- `Modules/Activity/app/Models/StoredEvent.php` — estende `SpatieStoredEvent`
+- `Modules/Activity/app/Models/Snapshot.php` — estende `SpatieSnapshot`
+>>>>>>> laraxot/dev
 
 ```php
 // Evento

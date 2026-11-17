@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "module architecture"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Module Architecture
@@ -76,6 +79,9 @@ class User extends Illuminate\Database\Eloquent\Model
 - [CLAUDE.md - Architecture Section](../../CLAUDE.md)
 - [AGENTS.md - Module Architecture Section](../../AGENTS.md)
 - [agents.md - Module Architecture Section](../../agents.md)
+<<<<<<< HEAD
 - [CLAUDE.md - Architecture Section](../CLAUDE.md)
 - [AGENTS.md - Module Architecture Section](../AGENTS.md)
 - [agents.md - Module Architecture Section](../agents.md)
+=======
+>>>>>>> laraxot/dev

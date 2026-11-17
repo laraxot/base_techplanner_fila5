@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "filament resources"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Risorse Filament del Modulo Notify
@@ -270,8 +273,13 @@ public static function getTableActions(): array
 - [Gestione Notifiche](../../../../../docs/architecture/notifications.md)
 
 ### Collegamenti ai Moduli
+<<<<<<< HEAD
 - [XotBaseResource](../../Xot/docs/xotbaseresource.md)
 - [Gestione Template](template-management.md)
+=======
+- [XotBaseResource](../../Xot/docs/XotBaseResource.md)
+- [Gestione Template](../template-management.md)
+>>>>>>> laraxot/dev
 
 ## Note Importanti
 

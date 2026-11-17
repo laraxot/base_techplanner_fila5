@@ -16,7 +16,10 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 # Indice Documentazione Template Email
 
@@ -27,8 +30,11 @@ status: draft
 - [Template Email](../email_templates.md)
 - [Documentazione Generale ](../../../../../../docs/readme.md)
 - [Documentazione Generale <nome progetto>](../../../../../../docs/readme.md)
+<<<<<<< HEAD
 - [Documentazione Generale ](../../../../../docs/README.md)
 - [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
+=======
+>>>>>>> laraxot/dev
 - [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
 
 ## Struttura e Architettura

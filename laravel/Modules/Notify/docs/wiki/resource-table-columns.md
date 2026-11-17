@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "resource table columns"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Resource table columns

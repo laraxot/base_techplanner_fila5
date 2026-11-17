@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "mail template ui improvements"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Miglioramenti UI/UX per MailTemplateResource

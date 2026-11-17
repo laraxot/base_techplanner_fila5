@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "ai rules critical"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🤖 AI Agent Rules - CRITICAL UPDATE
@@ -17,6 +20,18 @@ status: draft
 > **Version**: 4.0
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "ai rules critical"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai rules critical"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🚨 CRITICAL RULE #1: GIT COMMIT & PUSH
 
 ### Rule Statement

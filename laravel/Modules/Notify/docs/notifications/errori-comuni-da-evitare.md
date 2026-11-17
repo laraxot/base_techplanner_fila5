@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "errori comuni da evitare"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Errori Comuni da Evitare nelle Implementazioni di Moduli

@@ -7,7 +7,10 @@ namespace Modules\Notify\Console\Commands;
 use Illuminate\Console\Command;
 use Illuminate\Mail\Message;
 use Illuminate\Support\Facades\Mail;
+<<<<<<< HEAD
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
+=======
+>>>>>>> laraxot/dev
 use Throwable;
 
 /**
@@ -28,8 +31,13 @@ class TestSendmail extends Command
 
     public function handle(): int
     {
+<<<<<<< HEAD
         $to = SafeStringCastAction::cast($this->argument('to'));
         $mailer = SafeStringCastAction::cast($this->option('mailer'));
+=======
+        $to = (string) $this->argument('to');
+        $mailer = (string) $this->option('mailer');
+>>>>>>> laraxot/dev
 
         if (filter_var($to, FILTER_VALIDATE_EMAIL) === false) {
             $this->error("Indirizzo non valido: {$to}");

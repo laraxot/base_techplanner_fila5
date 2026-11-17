@@ -1,9 +1,14 @@
 ---
+<<<<<<< HEAD
 title: "da Support a Actions: Filosofia"
+=======
+title: "da Support a Actions — Filosofia"
+>>>>>>> laraxot/dev
 type: concept
 tags: [support, actions, philosophy]
 created: 2026-07-14
 updated: 2026-07-14
+<<<<<<< HEAD
 qmd: "support-to-actions-philosophy da support a actions: filosofia"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
@@ -28,6 +33,25 @@ status: draft
 
 > **Aggiornato 2026-07-12:** `app/Support/` è **eliminato** nel modulo Notify. Canonico: [wiki/concepts/no-app-support-queueable-actions.md](../../concepts/no-app-support-queueable-actions.md).
 > **Aggiornato 2026-07-12:** `app/Support/` è **eliminato** nel modulo Notify. Canonico: [wiki/concepts/no-app-support-queueable-actions.md](../../concepts/no-app-support-queueable-actions.md).
+=======
+qmd: "support-to-actions-philosophy da support a actions — filosofia"
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+---
+
+# da Support a Actions — Filosofia
+
+> **Aggiornato 2026-07-12:** `app/Support/` è **eliminato** nel modulo Notify. Canonico: [wiki/concepts/no-app-support-queueable-actions.md](wiki/concepts/no-app-support-queueable-actions.md).
+>>>>>>> laraxot/dev
 
 ## Principio (post-migrazione)
 
@@ -66,9 +90,14 @@ Tutte le classi in `app/Actions/` DEVONO:
 
 ## Collegamenti
 
+<<<<<<< HEAD
 - [no-app-support-queueable-actions](../../concepts/no-app-support-queueable-actions.md)
 - [claude-audit-static](../../concepts/claude-audit-static.md)
 - [no-app-support-queueable-actions](../../concepts/no-app-support-queueable-actions.md)
 - [claude-audit-static](../../concepts/claude-audit-static.md)
+=======
+- [no-app-support-queueable-actions](wiki/concepts/no-app-support-queueable-actions.md)
+- [claude-audit-static](wiki/concepts/claude-audit-static.md)
+>>>>>>> laraxot/dev
 - Issue [#372](https://github.com/laraxot/platform/issues/372) · Discussion [#273](https://github.com/laraxot/platform/discussions/273)
 - Issue [#372](https://github.com/laraxot/<nome repitory>/issues/372) · Discussion [#273](https://github.com/laraxot/<nome repitory>/discussions/273)

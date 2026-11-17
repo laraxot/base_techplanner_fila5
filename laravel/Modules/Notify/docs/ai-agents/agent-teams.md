@@ -7,13 +7,19 @@ updated: 2026-09-26
 qmd: "agent teams"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Agent teams (Experimental - Opus 4.6)
 
 > Source: [CLAUDE.md](../../CLAUDE.md)
+<<<<<<< HEAD
 > Source: [CLAUDE.md](../CLAUDE.md)
+=======
+>>>>>>> laraxot/dev
 > Back: [index](index.md)
 
 Agent Teams coordinate multiple Claude Code instances working together. One session acts as the **team lead** (coordinates, assigns tasks, synthesizes results) while **teammates** work independently in their own context windows.

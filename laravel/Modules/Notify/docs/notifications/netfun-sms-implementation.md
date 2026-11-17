@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "netfun sms implementation"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Implementazione Netfun SMS 

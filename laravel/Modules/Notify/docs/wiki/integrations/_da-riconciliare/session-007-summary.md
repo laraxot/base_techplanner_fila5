@@ -8,6 +8,7 @@ qmd: "session-007-summary session 007 - phase 1 execution orchestration"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -22,6 +23,16 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+  - "./acronym-naming-conventions.md"
+  - "./action-plan-immediate.md"
+>>>>>>> laraxot/dev
 ---
 
 # SESSION 007 - PHASE 1 EXECUTION ORCHESTRATION
@@ -47,7 +58,11 @@ status: draft
 ### 2. DOCUMENTATION CREATED FOR EXECUTION (8 NEW DOCUMENTS)
 
 #### Analysis & Coordination
+<<<<<<< HEAD
 1. **phase-1-execution-status.md** (real-time progress tracking)
+=======
+1. **PHASE-1-EXECUTION-STATUS.md** (real-time progress tracking)
+>>>>>>> laraxot/dev
    - Detailed execution status
    - Agent assignments table
    - Dependency graph
@@ -79,7 +94,11 @@ status: draft
    - Testing guidance
 
 #### Templates & Planning
+<<<<<<< HEAD
 6. **phase-1-findings-template.md** (gap analysis template)
+=======
+6. **PHASE-1-FINDINGS-TEMPLATE.md** (gap analysis template)
+>>>>>>> laraxot/dev
    - Metrics section
    - Gap categorization structure
    - Implementation plan template
@@ -118,9 +137,15 @@ Root Directory:
 └─ session-007-summary.md              (this file)
 
 laravel/Themes/Sixteen/docs/:
+<<<<<<< HEAD
 ├─ phase-1-execution-status.md         (progress tracking)
 └─ prompts/segnalazione_disservizio/:
    ├─ phase-1-findings-template.md      (gap analysis template)
+=======
+├─ PHASE-1-EXECUTION-STATUS.md         (progress tracking)
+└─ prompts/segnalazione_disservizio/:
+   ├─ PHASE-1-FINDINGS-TEMPLATE.md      (gap analysis template)
+>>>>>>> laraxot/dev
    ├─ EXECUTOR-2-SUBTASKS-3-4.md        (implementation guide)
    ├─ SUBTASK-2-ANALYSIS-WORKFLOW.md    (researcher workflow)
    └─ [OUTPUT DIR STRUCTURE READY]
@@ -198,23 +223,39 @@ laravel/Themes/Sixteen/docs/00-index-1.md
 ### Phase 0 (Strategy & Planning) - COMPLETE ✅
 Total Documents: 5 (created Session 006)
 Total Characters: ~63,000
+<<<<<<< HEAD
 - phase-1-strategy.md (22,938 chars)
 - gsd-phase-1-execution.md (19,499 chars)
 - bashscripts/docs/html/index.md (8,531 chars)
 - bashscripts/html/extract-body-html.py (4,156 chars)
 - 00-index.md (12,926 chars)
+=======
+- PHASE-1-STRATEGY.md (22,938 chars)
+- GSD-PHASE-1-EXECUTION.md (19,499 chars)
+- bashscripts/docs/html/index.md (8,531 chars)
+- bashscripts/html/extract-body-html.py (4,156 chars)
+- 00-index-1.md (12,926 chars)
+>>>>>>> laraxot/dev
 
 ### Phase 1 (Execution) - IN PROGRESS 🟠
 Documents Created This Session: 8
 Additional Characters: ~110,000
 - phase-1-research-complete.md
+<<<<<<< HEAD
 - phase-1-execution-status.md
+=======
+- PHASE-1-EXECUTION-STATUS.md
+>>>>>>> laraxot/dev
 - phase-1-execution-dashboard.md
 - readme-phase-1-execution.md
 - session-007-summary.md
 - SUBTASK-2-ANALYSIS-WORKFLOW.md
 - EXECUTOR-2-SUBTASKS-3-4.md
+<<<<<<< HEAD
 - phase-1-findings-template.md
+=======
+- PHASE-1-FINDINGS-TEMPLATE.md
+>>>>>>> laraxot/dev
 
 ### Total Phase 1 Documentation
 - Strategy & Planning Docs: 5
@@ -349,7 +390,11 @@ Must achieve ALL criteria:
 - Dashboard update: After each subtask
 
 ### Status Update Locations
+<<<<<<< HEAD
 1. phase-1-execution-status.md (primary)
+=======
+1. PHASE-1-EXECUTION-STATUS.md (primary)
+>>>>>>> laraxot/dev
 2. phase-1-execution-dashboard.md (detailed)
 3. readme-phase-1-execution.md (for new arrivals)
 4. SQL todos table (tracking)
@@ -383,11 +428,19 @@ Must achieve ALL criteria:
 **Quick Navigation**:
 - readme-phase-1-execution.md (START HERE for all)
 - phase-1-execution-dashboard.md (coordination board)
+<<<<<<< HEAD
 - phase-1-execution-status.md (progress tracking)
 
 **Strategy Docs**:
 - phase-1-strategy.md (reference analysis)
 - gsd-phase-1-execution.md (execution plan)
+=======
+- PHASE-1-EXECUTION-STATUS.md (progress tracking)
+
+**Strategy Docs**:
+- PHASE-1-STRATEGY.md (reference analysis)
+- GSD-PHASE-1-EXECUTION.md (execution plan)
+>>>>>>> laraxot/dev
 
 **Task Workflows**:
 - SUBTASK-2-ANALYSIS-WORKFLOW.md (for Researcher)
@@ -499,7 +552,11 @@ Must achieve ALL criteria:
 ### 2. DOCUMENTATION CREATED FOR EXECUTION (8 NEW DOCUMENTS)
 
 #### Analysis & Coordination
+<<<<<<< HEAD
 1. **phase-1-execution-status.md** (real-time progress tracking)
+=======
+1. **PHASE-1-EXECUTION-STATUS.md** (real-time progress tracking)
+>>>>>>> laraxot/dev
    - Detailed execution status
    - Agent assignments table
    - Dependency graph
@@ -531,7 +588,11 @@ Must achieve ALL criteria:
    - Testing guidance
 
 #### Templates & Planning
+<<<<<<< HEAD
 6. **phase-1-findings-template.md** (gap analysis template)
+=======
+6. **PHASE-1-FINDINGS-TEMPLATE.md** (gap analysis template)
+>>>>>>> laraxot/dev
    - Metrics section
    - Gap categorization structure
    - Implementation plan template
@@ -570,9 +631,15 @@ Root Directory:
 └─ SESSION-007-SUMMARY.md              (this file)
 
 laravel/Themes/Sixteen/docs/:
+<<<<<<< HEAD
 ├─ phase-1-execution-status.md         (progress tracking)
 └─ prompts/segnalazione_disservizio/:
    ├─ phase-1-findings-template.md      (gap analysis template)
+=======
+├─ PHASE-1-EXECUTION-STATUS.md         (progress tracking)
+└─ prompts/segnalazione_disservizio/:
+   ├─ PHASE-1-FINDINGS-TEMPLATE.md      (gap analysis template)
+>>>>>>> laraxot/dev
    ├─ EXECUTOR-2-SUBTASKS-3-4.md        (implementation guide)
    ├─ SUBTASK-2-ANALYSIS-WORKFLOW.md    (researcher workflow)
    └─ [OUTPUT DIR STRUCTURE READY]
@@ -650,8 +717,13 @@ laravel/Themes/Sixteen/docs/00-index.md
 ### Phase 0 (Strategy & Planning) - COMPLETE ✅
 Total Documents: 5 (created Session 006)
 Total Characters: ~63,000
+<<<<<<< HEAD
 - phase-1-strategy.md (22,938 chars)
 - gsd-phase-1-execution.md (19,499 chars)
+=======
+- PHASE-1-STRATEGY.md (22,938 chars)
+- GSD-PHASE-1-EXECUTION.md (19,499 chars)
+>>>>>>> laraxot/dev
 - bashscripts/docs/html/index.md (8,531 chars)
 - bashscripts/html/extract-body-html.py (4,156 chars)
 - 00-index.md (12,926 chars)
@@ -660,13 +732,21 @@ Total Characters: ~63,000
 Documents Created This Session: 8
 Additional Characters: ~110,000
 - PHASE-1-RESEARCH-COMPLETE.md
+<<<<<<< HEAD
 - phase-1-execution-status.md
+=======
+- PHASE-1-EXECUTION-STATUS.md
+>>>>>>> laraxot/dev
 - PHASE-1-EXECUTION-DASHBOARD.md
 - README-PHASE-1-EXECUTION.md
 - SESSION-007-SUMMARY.md
 - SUBTASK-2-ANALYSIS-WORKFLOW.md
 - EXECUTOR-2-SUBTASKS-3-4.md
+<<<<<<< HEAD
 - phase-1-findings-template.md
+=======
+- PHASE-1-FINDINGS-TEMPLATE.md
+>>>>>>> laraxot/dev
 
 ### Total Phase 1 Documentation
 - Strategy & Planning Docs: 5
@@ -802,7 +882,11 @@ Must achieve ALL criteria:
 - Dashboard update: After each subtask
 
 ### Status Update Locations
+<<<<<<< HEAD
 1. phase-1-execution-status.md (primary)
+=======
+1. PHASE-1-EXECUTION-STATUS.md (primary)
+>>>>>>> laraxot/dev
 2. PHASE-1-EXECUTION-DASHBOARD.md (detailed)
 3. README-PHASE-1-EXECUTION.md (for new arrivals)
 4. SQL todos table (tracking)
@@ -836,11 +920,19 @@ Must achieve ALL criteria:
 **Quick Navigation**:
 - README-PHASE-1-EXECUTION.md (START HERE for all)
 - PHASE-1-EXECUTION-DASHBOARD.md (coordination board)
+<<<<<<< HEAD
 - phase-1-execution-status.md (progress tracking)
 
 **Strategy Docs**:
 - phase-1-strategy.md (reference analysis)
 - gsd-phase-1-execution.md (execution plan)
+=======
+- PHASE-1-EXECUTION-STATUS.md (progress tracking)
+
+**Strategy Docs**:
+- PHASE-1-STRATEGY.md (reference analysis)
+- GSD-PHASE-1-EXECUTION.md (execution plan)
+>>>>>>> laraxot/dev
 
 **Task Workflows**:
 - SUBTASK-2-ANALYSIS-WORKFLOW.md (for Researcher)

@@ -1,5 +1,9 @@
 ---
+<<<<<<< HEAD
 qmd: "user research"
+=======
+qmd: "USER RESEARCH"
+>>>>>>> laraxot/dev
 issues: []
 discussions: []
 title: "Notify Module - User Research"
@@ -8,8 +12,11 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/user-research.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Notify Module - User Research

@@ -14,7 +14,11 @@ use function Safe\mb_convert_encoding;
 use function Safe\preg_replace;
 
 /**
+<<<<<<< HEAD
  * Story <nome progetto>-send-invite-migrate-to-record-notification.md, Task 4.
+=======
+ * Story quaeris-send-invite-migrate-to-record-notification.md, Task 4.
+>>>>>>> laraxot/dev
  *
  * Migra il contenuto già scritto in `notify_themes` (email e sms, per ogni
  * `post_id`) verso `MailTemplate`, con lo slug nella stessa convenzione già usata
@@ -70,12 +74,20 @@ class MigrateNotifyThemesToMailTemplateCommand extends Command
                 ->where('type', 'sms')
                 ->first();
 
+<<<<<<< HEAD
             // Story <nome progetto>-send-invite-migrate-to-record-notification.md, Difetto 1:
+=======
+            // Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 1:
+>>>>>>> laraxot/dev
             // le righe auto-generate mai configurate a mano hanno il subject rotto
             // (chiave di traduzione letterale) — non c'è nulla di reale da migrare.
             if ($emailTheme !== null
                 && $emailTheme->theme === 'ark'
+<<<<<<< HEAD
                 && $emailTheme->subject === '<nome progetto>::email.survey_pdf.subject'
+=======
+                && $emailTheme->subject === 'quaeris::email.survey_pdf.subject'
+>>>>>>> laraxot/dev
             ) {
                 $emailTheme = null;
             }
@@ -102,7 +114,11 @@ class MigrateNotifyThemesToMailTemplateCommand extends Command
             if ($smsTheme !== null) {
                 $data['sms_template'] = $this->convertPlaceholders($this->decodeRichText((string) $smsTheme->body));
 
+<<<<<<< HEAD
                 // Difetto 9 punto 5 (<nome progetto>-send-invite-migrate-to-record-notification.md):
+=======
+                // Difetto 9 punto 5 (quaeris-send-invite-migrate-to-record-notification.md):
+>>>>>>> laraxot/dev
                 // rinviato inizialmente per decisione dell'utente ("i mittenti li
                 // imposta l'utente a mano via il form Inviti") — ripreso il
                 // 2026-09-17 in vista del go-live: 76 righe su 81 di notify_themes

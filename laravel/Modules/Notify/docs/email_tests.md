@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "email tests"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-tests.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Test Sistema Email - il progetto

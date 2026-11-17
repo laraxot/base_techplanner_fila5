@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Best Practices per Proprietà Modelli Eloquent - Modulo Notify
@@ -171,7 +174,11 @@ Prima di ogni commit nel modulo Notify, verificare:
 ## Riferimenti
 
 - [Regola Cursor](../.cursor/rules/eloquent-properties.md)
+<<<<<<< HEAD
 - [Memoria Cursor](../../../../.cursor/memories)
+=======
+- [Memoria Cursor](../.cursor/memories)
+>>>>>>> laraxot/dev
 - [Linee Guida AI](../../.ai/guidelines/core.md)
 - [File Corretto](../app/Notifications/GenericNotification.php)
 

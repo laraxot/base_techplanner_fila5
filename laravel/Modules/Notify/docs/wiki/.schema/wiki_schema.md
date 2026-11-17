@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ---
 title: "LLM Wiki Schema"
 type: note
@@ -6,6 +7,8 @@ updated: 2026-10-08
 tags: [docs, notify, wiki]
 qmd: "llm wiki schema notify"
 ---
+=======
+>>>>>>> laraxot/dev
 # LLM Wiki Schema
 
 Questo documento istruisce l'LLM su come costruire e mantenere la Wiki Knowledge Base secondo il pattern Karpathy.

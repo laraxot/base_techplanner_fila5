@@ -1,12 +1,30 @@
+<<<<<<< HEAD
+=======
+---
+title: "whatsapp integration 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "whatsapp integration 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Integrazione WhatsApp
 
 ## Panoramica
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di <nome progetto>, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
 =======
 Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di SaluteOra, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
 >>>>>>> 6ed19256f (.)
+=======
+Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di <nome progetto>, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
+>>>>>>> laraxot/dev
 
 ## Architettura
 
@@ -404,10 +422,14 @@ $action = app(SendTwilioWhatsAppAction::class);
 $whatsAppData = new WhatsAppData(
     to: '+393401234567',
 <<<<<<< HEAD
+<<<<<<< HEAD
     body: 'Questo è un messaggio di test da <nome progetto>',
 =======
     body: 'Questo è un messaggio di test da SaluteOra',
 >>>>>>> 6ed19256f (.)
+=======
+    body: 'Questo è un messaggio di test da <nome progetto>',
+>>>>>>> laraxot/dev
 );
 
 $result = $action->execute($whatsAppData);
@@ -541,6 +563,7 @@ L'integrazione WhatsApp  segue gli stessi pattern e standard utilizzati per l'in
 4. **Testabilità**: Le azioni sono facilmente testabili grazie all'interfaccia comune
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di <nome progetto>, mantenendo la coerenza con le altre modalità di comunicazione.
 =======
 Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di SaluteOra, mantenendo la coerenza con le altre modalità di comunicazione.
@@ -548,4 +571,18 @@ Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente
 
 ---
 
+=======
+Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di <nome progetto>, mantenendo la coerenza con le altre modalità di comunicazione.
+
+---
+
+title: "whatsapp integration 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "whatsapp integration 1"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2023-05-12*

@@ -7,8 +7,11 @@ updated: 2026-09-26
 qmd: "telegram sending standard"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: superseded
 superseded_by: telegram-sending-standard.md
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Standard per Invio Messaggi Telegram nel Modulo Notify

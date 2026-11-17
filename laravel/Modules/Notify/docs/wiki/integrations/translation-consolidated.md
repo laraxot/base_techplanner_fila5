@@ -2,16 +2,26 @@
 qmd: "translation consolidated"
 issues: []
 discussions: []
+<<<<<<< HEAD
 title: "translation: Consolidated Documentation"
+=======
+title: "translation — Consolidated Documentation"
+>>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
 ---
 
 # translation: Consolidated Documentation
+=======
+---
+
+# translation — Consolidated Documentation
+>>>>>>> laraxot/dev
 
 Consolidated from **51** individual files.
 
@@ -44,7 +54,11 @@ Consolidated from **51** individual files.
 - [---](#translation-keys-rules-1)
 - [---](#translation-keys-rules)
 - [---](#translation-keys)
+<<<<<<< HEAD
 - [Translation Namespace Philosophy: La Religione del Dominio](#translation-namespace-religion)
+=======
+- [Translation Namespace Philosophy — La Religione del Dominio](#translation-namespace-religion)
+>>>>>>> laraxot/dev
 - [Standard per le Traduzioni](#translation-standards-1)
 - [---](#translation-standards-2)
 - [Progresso Standardizzazione Traduzioni](#translation-standards-progress-1)
@@ -73,7 +87,11 @@ Consolidated from **51** individual files.
 
 ## translation-cleanup-plan-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-cleanup-plan.md`*
+=======
+*Consolidated from: `translation-cleanup-plan-1.md`*
+>>>>>>> laraxot/dev
 
 
 Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di <nome progetto>.
@@ -177,7 +195,11 @@ L'implementazione di questo piano garantirà che le traduzioni nel modulo Notify
 
 ## translation-cleanup-plan-2
 
+<<<<<<< HEAD
 *Consolidated from: `translation-cleanup-plan.md`*
+=======
+*Consolidated from: `translation-cleanup-plan-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Translation Cleanup Plan"
 type: concept
@@ -188,6 +210,7 @@ qmd: "translation-cleanup-plan-2 translation cleanup plan"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -199,6 +222,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -218,11 +249,19 @@ Questo documento descrive il piano di pulizia e standardizzazione delle traduzio
 ## Analisi della Situazione Attuale
 
 Dall'analisi dei file di traduzione nella cartella `/var/www/_bases/<nome repository>/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
+<<<<<<< HEAD
 Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di <nome progetto>.
 
 ## Analisi della Situazione Attuale
 
 Dall'analisi dei file di traduzione nella cartella `/var/www/html/<nome progetto>/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
+=======
+Questo documento descrive il piano di pulizia e standardizzazione delle traduzioni italiane nel modulo Notify di Quaeris.
+
+## Analisi della Situazione Attuale
+
+Dall'analisi dei file di traduzione nella cartella `/var/www/html/Quaeris/laravel/Modules/Notify/lang/it`, sono stati identificati i seguenti problemi:
+>>>>>>> laraxot/dev
 
 ### 1. File con Nomi Errati
 - `send_s_m_s.php` invece di `send_sms.php`
@@ -319,7 +358,11 @@ L'implementazione di questo piano garantirà che le traduzioni nel modulo Notify
 
 ## translation-conventions-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-conventions.md`*
+=======
+*Consolidated from: `translation-conventions-1.md`*
+>>>>>>> laraxot/dev
 
 
 ## Regole Fondamentali
@@ -560,7 +603,11 @@ La traduzione perfetta è quella che non si nota: è naturale, fluida, non distr
 
 ## translation-conventions-2
 
+<<<<<<< HEAD
 *Consolidated from: `translation-conventions.md`*
+=======
+*Consolidated from: `translation-conventions-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Translation Conventions"
 type: concept
@@ -571,6 +618,7 @@ qmd: "translation-conventions-2 translation conventions"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -582,6 +630,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -593,7 +649,11 @@ Conventions for naming and structure of translation keys.
 
 ## translation-conventions-clarification-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-conventions-clarification.md`*
+=======
+*Consolidated from: `translation-conventions-clarification-1.md`*
+>>>>>>> laraxot/dev
 
 
 ## Identificazione di Convenzioni Contrastanti
@@ -684,15 +744,22 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 - [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](../../translation_conventions.md)
 - [Regole per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
 ## translation-conventions-clarification-2
 
+<<<<<<< HEAD
 *Consolidated from: `translation-conventions-clarification.md`*
+=======
+*Consolidated from: `translation-conventions-clarification-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify"
 type: concept
@@ -703,6 +770,7 @@ qmd: "translation-conventions-clarification-2 chiarimento sulle convenzioni di t
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -714,6 +782,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -804,16 +880,25 @@ return [
 - [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Convenzioni Specifiche del Modulo Notify](./translation-conventions.md)
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](./translation-conventions.md)
 - [Regole per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono correttamente le convenzioni specifiche del modulo. Non è necessario modificare questi file per conformarsi alle convenzioni generali di App, poiché rappresentano un'eccezione documentata.
 
 ## Riferimenti
 
+<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../lang/docs/translation-keys-rules.md)
 - [Convenzioni Specifiche del Modulo Notify](./translation-conventions.md)
 - [Regole per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
+=======
+- [Convenzioni Generali di Traduzione](../../lang/docs/translation-keys-rules-1.md)
+- [Convenzioni Specifiche del Modulo Notify](./translation-conventions-2.md)
+- [Regole per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices-1.md)
+>>>>>>> laraxot/dev
 ---
 
 ## translation-conventions-clarification
@@ -911,9 +996,12 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 - [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](../../translation_conventions.md)
 - [Regole per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 # Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify
 
 ## Identificazione di Convenzioni Contrastanti
@@ -1004,9 +1092,12 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 - [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](../../translation_conventions.md)
 - [Regole per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -1254,8 +1345,12 @@ La traduzione perfetta è quella che non si nota: è naturale, fluida, non distr
 
 ## translation-file-correction-guide-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-file-correction-guide.md`*
 *Consolidated from: `translation-file-correction-guide-deprecated.md`*
+=======
+*Consolidated from: `translation-file-correction-guide-1.md`*
+>>>>>>> laraxot/dev
 
 
 This file is deprecated.
@@ -1263,13 +1358,20 @@ This file is deprecated.
 Use:
 
 - [translation-file-correction-guide](./translation-file-correction-guide.md)
+<<<<<<< HEAD
 - [translation-file-correction-guide](../../translation-file-correction-guide.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
 ## translation-file-correction-guide-2
 
+<<<<<<< HEAD
 *Consolidated from: `translation-file-correction-guide.md`*
+=======
+*Consolidated from: `translation-file-correction-guide-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Guida alla Correzione dei File di Traduzione"
 type: guide
@@ -1280,6 +1382,7 @@ qmd: "translation-file-correction-guide-2 guida alla correzione dei file di trad
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -1291,6 +1394,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1462,12 +1573,15 @@ return [
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](./translation-standards-progress.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](../../translation-standards-progress.md)
 - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](../../translation-standards-progress.md)
+=======
+>>>>>>> laraxot/dev
 ---
 
 ## translation-file-correction-guide
@@ -1629,9 +1743,12 @@ return [
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Progresso della Standardizzazione](./TRANSLATION_STANDARDS_PROGRESS.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
 - [Guida alla Struttura dei File di Traduzione](../../translation_file_structure_guide.md)
 - [Progresso della Standardizzazione](../../translation_standards_progress.md)
+=======
+>>>>>>> laraxot/dev
 # Guida alla Correzione dei File di Traduzione
 
 ## Procedura Sistematica per la Standardizzazione
@@ -1779,9 +1896,12 @@ declare(strict_types=1);
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Progresso della Standardizzazione](./TRANSLATION_STANDARDS_PROGRESS.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
 - [Guida alla Struttura dei File di Traduzione](../../translation_file_structure_guide.md)
 - [Progresso della Standardizzazione](../../translation_standards_progress.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -1944,9 +2064,12 @@ return [
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](./translation_standards_progress.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](../../translation_standards_progress.md)
+=======
+>>>>>>> laraxot/dev
 # Guida alla Correzione dei File di Traduzione
 
 ## Procedura Sistematica per la Standardizzazione
@@ -2094,15 +2217,22 @@ declare(strict_types=1);
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](./translation_standards_progress.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
 - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 - [Progresso della Standardizzazione](../../translation_standards_progress.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
 ## translation-file-naming-rules-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-file-naming-rules.md`*
+=======
+*Consolidated from: `translation-file-naming-rules-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Regole di Naming per i File di Traduzione"
 type: rule
@@ -2113,6 +2243,7 @@ qmd: "translation-file-naming-rules-1 regole di naming per i file di traduzione"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -2124,6 +2255,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2169,11 +2308,14 @@ Se si identifica un file con naming non conforme:
 - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
 ---
 
@@ -2219,9 +2361,12 @@ Se si identifica un file con naming non conforme:
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
+<<<<<<< HEAD
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -2267,15 +2412,22 @@ Se si identifica un file con naming non conforme:
 - [Regole Generali per le Traduzioni](../../lang/docs/translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../lang/docs/translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)
+<<<<<<< HEAD
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../../../Lang/docs/translation-keys-best-practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
 ## translation-file-structure-guide-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-file-structure-guide.md`*
+=======
+*Consolidated from: `translation-file-structure-guide-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Guida alla Struttura dei File di Traduzione"
 type: guide
@@ -2286,6 +2438,7 @@ qmd: "translation-file-structure-guide-1 guida alla struttura dei file di traduz
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -2297,6 +2450,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2455,10 +2616,13 @@ return [
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
 - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
+=======
+>>>>>>> laraxot/dev
 ---
 
 ## translation-file-structure-guide
@@ -2616,8 +2780,11 @@ return [
 ## Riferimenti
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -2776,15 +2943,22 @@ return [
 ## Riferimenti
 - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
 - [Regole Generali per le Traduzioni](../../lang/docs/translation_keys_rules.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
 ## translation-implementation-plan-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-implementation-plan.md`*
 *Consolidated from: `translation-implementation-plan-deprecated.md`*
+=======
+*Consolidated from: `translation-implementation-plan-1.md`*
+>>>>>>> laraxot/dev
 
 
 This file is deprecated.
@@ -2792,13 +2966,20 @@ This file is deprecated.
 Use:
 
 - [translation-implementation-plan](./translation-implementation-plan.md)
+<<<<<<< HEAD
 - [translation-implementation-plan](../../translation-implementation-plan.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
 ## translation-implementation-plan-2
 
+<<<<<<< HEAD
 *Consolidated from: `translation-implementation-plan.md`*
+=======
+*Consolidated from: `translation-implementation-plan-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Piano di Implementazione per la Standardizzazione delle Traduzioni"
 type: concept
@@ -2809,6 +2990,7 @@ qmd: "translation-implementation-plan-2 piano di implementazione per la standard
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -2820,6 +3002,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -3243,7 +3433,11 @@ L'implementazione di questo piano garantirà che le traduzioni nel modulo Notify
 
 ## translation-keys-best-practices-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-keys-best-practices.md`*
+=======
+*Consolidated from: `translation-keys-best-practices-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Best Practices per le Chiavi di Traduzione"
 type: concept
@@ -3254,6 +3448,7 @@ qmd: "translation-keys-best-practices-1 best practices per le chiavi di traduzio
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -3265,6 +3460,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -3284,7 +3487,11 @@ Il sistema di traduzioni è laico e neutrale rispetto a ogni credo. Non sono amm
 Le chiavi di traduzione devono essere oneste, non ingannevoli, non manipolatorie e non offensive. L'etica del progetto impone di evitare ogni forma di linguaggio discriminatorio, sessista, razzista o che possa ledere la dignità della persona.
 
 ## Zen
+<<<<<<< HEAD
 La chiave di traduzione perfetta è quella che non si nota: è naturale, fluida, non distrae e non crea attrito. Ogni parola superflua va eliminata, ogni concetto va reso con la massima semplicità e armonia.
+=======
+La chiave di traduzione perfetta è quella che non si nota: è naturale, fluida, non distrae e non crea attrito. Ogni parola superflua va eliminata, ogni concetto va reso con la massima semplicità e armonia. 
+>>>>>>> laraxot/dev
 
 ---
 
@@ -3306,13 +3513,21 @@ Il sistema di traduzioni è laico e neutrale rispetto a ogni credo. Non sono amm
 Le chiavi di traduzione devono essere oneste, non ingannevoli, non manipolatorie e non offensive. L'etica del progetto impone di evitare ogni forma di linguaggio discriminatorio, sessista, razzista o che possa ledere la dignità della persona.
 
 ## Zen
+<<<<<<< HEAD
 La chiave di traduzione perfetta è quella che non si nota: è naturale, fluida, non distrae e non crea attrito. Ogni parola superflua va eliminata, ogni concetto va reso con la massima semplicità e armonia.
+=======
+La chiave di traduzione perfetta è quella che non si nota: è naturale, fluida, non distrae e non crea attrito. Ogni parola superflua va eliminata, ogni concetto va reso con la massima semplicità e armonia. 
+>>>>>>> laraxot/dev
 
 ---
 
 ## translation-keys-rules-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-keys-rules.md`*
+=======
+*Consolidated from: `translation-keys-rules-1.md`*
+>>>>>>> laraxot/dev
 
 title: "Translation Keys Rules 1"
 type: rule
@@ -3323,6 +3538,7 @@ qmd: "translation-keys-rules-1 translation keys rules 1"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -3334,6 +3550,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -3387,12 +3611,18 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation-keys-rules.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation_keys_best_practices.md)
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation-keys-rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
+- [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation-keys-rules-1.md)
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices-1.md) 
+>>>>>>> laraxot/dev
 ---
 
 ## translation-keys-rules
@@ -3447,9 +3677,13 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
+>>>>>>> laraxot/dev
 ---
 
 ## translation-keys
@@ -3504,9 +3738,13 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation_keys_rules.md)
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation-keys-best-practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices.md) 
+>>>>>>> laraxot/dev
 ---
 
 ## translation-namespace-religion
@@ -3514,10 +3752,17 @@ return [
 *Consolidated from: `translation-namespace-religion.md`*
 
 
+<<<<<<< HEAD
 **Status**: Active
 **Created**: 2026-04-14
 **Last Updated**: 2026-04-14
 **Category**: Architecture / Religion / i18n
+=======
+**Status**: Active  
+**Created**: 2026-04-14  
+**Last Updated**: 2026-04-14  
+**Category**: Architecture / Religion / i18n  
+>>>>>>> laraxot/dev
 **Audience**: All developers + AI agents
 
 ---
@@ -3526,7 +3771,11 @@ return [
 
 **Le traduzioni sono organizzate per DOMINIO, non per componente UI.**
 
+<<<<<<< HEAD
 **DOMINIO** = `ticket`, `user`, `order` (cosa fa il business)
+=======
+**DOMINIO** = `ticket`, `user`, `order` (cosa fa il business)  
+>>>>>>> laraxot/dev
 **NON COMPONENTE** = `create_ticket_wizard`, `edit_form`, `list_view` (come lo mostri)
 
 ---
@@ -3773,7 +4022,11 @@ Section::make(__('<nome progetto>::ticket.sections.images.label'))
 
 #### 1. Dominio, Non UI
 
+<<<<<<< HEAD
 **Dominio** = cosa fa il business (ticket, user, order)
+=======
+**Dominio** = cosa fa il business (ticket, user, order)  
+>>>>>>> laraxot/dev
 **UI** = come lo mostri (wizard, form, page)
 
 **Regola**: Namespace segue dominio, NON UI.
@@ -3782,7 +4035,11 @@ Section::make(__('<nome progetto>::ticket.sections.images.label'))
 
 #### 2. Unica Fonte di Verita
 
+<<<<<<< HEAD
 Ogni concetto ha UNA traduzione nel file dominio.
+=======
+Ogni concetto ha UNA traduzione nel file dominio.  
+>>>>>>> laraxot/dev
 Niente duplicati, niente incoerenze.
 
 ---
@@ -3801,14 +4058,22 @@ Sotto il dominio, usa categorie che hanno senso:
 
 #### 4. Scalabilita
 
+<<<<<<< HEAD
 Aggiungere nuovo widget?
+=======
+Aggiungere nuovo widget?  
+>>>>>>> laraxot/dev
 → Usa chiavi dominio esistenti, NON crearne di nuove.
 
 ---
 
 #### 5. Manutenzione
 
+<<<<<<< HEAD
 Cambio traduzione?
+=======
+Cambio traduzione?  
+>>>>>>> laraxot/dev
 → 1 file, 1 modifica, tutti i widget aggiornano.
 
 ---
@@ -3817,8 +4082,13 @@ Cambio traduzione?
 
 ### Il Credo
 
+<<<<<<< HEAD
 > "Dominio e il namespace, UI e solo il consumatore.
 > Una traduzione per concetto, mai duplicati.
+=======
+> "Dominio e il namespace, UI e solo il consumatore.  
+> Una traduzione per concetto, mai duplicati.  
+>>>>>>> laraxot/dev
 > Regole nel dominio, non nel widget."
 
 ### La Preghiera
@@ -3838,8 +4108,12 @@ Amen.
 - [ticket.php (dominio corretto)](../../Modules/App/lang/it/ticket.php)
 - [ticket.php (dominio corretto)](../../Modules/<nome progetto>/lang/it/ticket.php)
 - [Laravel Localization](https://laravel.com/docs/localization)
+<<<<<<< HEAD
 - [No Hardcoded Language Religion](../../no-hardcoded-language-religion.md)
 - [No Hardcoded Language Religion](../../no-hardcoded-language-religion.md)
+=======
+- [No Hardcoded Language Religion](../../docs/no-hardcoded-language-religion.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -3851,7 +4125,11 @@ Amen.
 
 ## translation-standards-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-standards.md`*
+=======
+*Consolidated from: `translation-standards-1.md`*
+>>>>>>> laraxot/dev
 
 
 Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di <nome progetto>, con particolare attenzione al modulo Notify.
@@ -3987,7 +4265,11 @@ protected static ?string $navigationLabel = 'Invio SMS'; // Hardcoded
 
 ## translation-standards-2
 
+<<<<<<< HEAD
 *Consolidated from: `translation-standards.md`*
+=======
+*Consolidated from: `translation-standards-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Standard per le Traduzioni"
 type: rule
@@ -3998,6 +4280,7 @@ qmd: "translation-standards-2 standard per le traduzioni"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -4009,6 +4292,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -4148,7 +4439,11 @@ protected static ?string $navigationLabel = 'Invio SMS'; // Hardcoded
 
 ## translation-standards-progress-1
 
+<<<<<<< HEAD
 *Consolidated from: `translation-standards-progress.md`*
+=======
+*Consolidated from: `translation-standards-progress-1.md`*
+>>>>>>> laraxot/dev
 
 
 ## Stato Attuale - 12/05/2025
@@ -4204,6 +4499,7 @@ protected static ?string $navigationLabel = 'Invio SMS'; // Hardcoded
    - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
    - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
    - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+<<<<<<< HEAD
    - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
    - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 
@@ -4211,6 +4507,8 @@ protected static ?string $navigationLabel = 'Invio SMS'; // Hardcoded
    - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
    - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
    - [Guida alla Struttura dei File di Traduzione](../../translation_file_structure_guide.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Appendice: Elenco Completo dei File Non Conformi
 
@@ -4241,7 +4539,11 @@ Modules/Notify/lang/it/create_mail_template.php
 
 ## translation-standards-progress-2
 
+<<<<<<< HEAD
 *Consolidated from: `translation-standards-progress.md`*
+=======
+*Consolidated from: `translation-standards-progress-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Progresso Standardizzazione Traduzioni"
 type: rule
@@ -4252,6 +4554,7 @@ qmd: "translation-standards-progress-2 progresso standardizzazione traduzioni"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -4263,6 +4566,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -4315,6 +4626,7 @@ related:
 ## Documentazione di Riferimento
 
 1. **Standard di Traduzione**
+<<<<<<< HEAD
    - [Regole Generali per le Traduzioni](../../lang/docs/translation-keys-rules.md)
    - [Best Practices per le Traduzioni](../../lang/docs/translation-keys-best-practices.md)
 
@@ -4322,18 +4634,30 @@ related:
    - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
    - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
    - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
+=======
+   - [Regole Generali per le Traduzioni](../../lang/docs/translation-keys-rules-1.md)
+   - [Best Practices per le Traduzioni](../../lang/docs/translation-keys-best-practices-1.md)
+
+2. **Guide Specifiche per Notify**
+   - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions-2.md)
+   - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules-1.md)
+   - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide-1.md)
+>>>>>>> laraxot/dev
    - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
    - [Best Practices per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 
 2. **Guide Specifiche per Notify**
    - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
    - [Regole di Naming per i File di Traduzione](./translation-file-naming-rules.md)
+<<<<<<< HEAD
    - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
    - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 
 2. **Guide Specifiche per Notify**
    - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
    - [Regole di Naming per i File di Traduzione](../../translation-file-naming-rules.md)
+=======
+>>>>>>> laraxot/dev
    - [Guida alla Struttura dei File di Traduzione](./translation-file-structure-guide.md)
 
 ## Appendice: Elenco Completo dei File Non Conformi
@@ -4437,6 +4761,7 @@ related:
    - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
    - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
    - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+<<<<<<< HEAD
    - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
    - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 
@@ -4444,6 +4769,8 @@ related:
    - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
    - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
    - [Guida alla Struttura dei File di Traduzione](../../translation_file_structure_guide.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Appendice: Elenco Completo dei File Non Conformi
 
@@ -4544,6 +4871,7 @@ Modules/Notify/lang/it/create_mail_template.php
    - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
    - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
    - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+<<<<<<< HEAD
    - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
    - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 
@@ -4551,6 +4879,8 @@ Modules/Notify/lang/it/create_mail_template.php
    - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
    - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
    - [Guida alla Struttura dei File di Traduzione](../../translation_file_structure_guide.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Appendice: Elenco Completo dei File Non Conformi
 
@@ -4585,7 +4915,11 @@ Modules/Notify/lang/it/create_mail_template.php
 
 
 Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di App, con particolare attenzione al modulo Notify.
+<<<<<<< HEAD
 Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di <nome progetto>, con particolare attenzione al modulo Notify.
+=======
+Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di Quaeris, con particolare attenzione al modulo Notify.
+>>>>>>> laraxot/dev
 
 ## Struttura delle Cartelle
 
@@ -4610,9 +4944,15 @@ Le traduzioni devono essere organizzate nelle seguenti cartelle:
 
 ### Esempi Corretti
 
+<<<<<<< HEAD
 ✅ `send_sms.php` (non `send_s_m_s.php`)
 ✅ `send_aws_email.php` (non `send_a_w_s_email.php`)
 ✅ `send_whatsapp.php` (non `send_whats_app.php`)
+=======
+✅ `send_sms.php` (non `send_s_m_s.php`)  
+✅ `send_aws_email.php` (non `send_a_w_s_email.php`)  
+✅ `send_whatsapp.php` (non `send_whats_app.php`)  
+>>>>>>> laraxot/dev
 
 ## Struttura dei File di Traduzione
 
@@ -5162,9 +5502,12 @@ Il file `send_whats_app.php` e altri file simili nel modulo Notify seguono corre
 - [Convenzioni Generali di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Convenzioni Specifiche del Modulo Notify](./TRANSLATION_CONVENTIONS.md)
 - [Regole per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni Generali di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Convenzioni Specifiche del Modulo Notify](../../translation_conventions.md)
 - [Regole per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -5196,7 +5539,11 @@ touch /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/it/nome_corretto
 touch [project-root]/laravel/Modules/Notify/lang/it/nome_corretto.php
 touch /var/www/_bases/<nome repository>/laravel/Modules/Notify/lang/it/nome_corretto.php
 touch /var/www/html/saluteora/laravel/Modules/Notify/lang/it/nome_corretto.php
+<<<<<<< HEAD
 touch /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/nome_corretto.php
+=======
+touch /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/nome_corretto.php
+>>>>>>> laraxot/dev
 
 # 2. Copiare e correggere il contenuto
 
@@ -5219,10 +5566,17 @@ grep -r "nome_errato" /var/www/html/saluteora/laravel/Modules/Notify
 
 # 4. Rimuovere il file con naming errato
 rm /var/www/html/saluteora/laravel/Modules/Notify/lang/it/nome_errato.php
+<<<<<<< HEAD
 grep -r "nome_errato" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify
 
 # 4. Rimuovere il file con naming errato
 rm /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/nome_errato.php
+=======
+grep -r "nome_errato" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify
+
+# 4. Rimuovere il file con naming errato
+rm /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/nome_errato.php
+>>>>>>> laraxot/dev
 ```
 
 ## Passo 3: Correzione della Struttura del File
@@ -5273,7 +5627,11 @@ ls /var/www/html/<nome progetto>/laravel/Modules/Notify/lang/en/nome_file.php
 ls [project-root]/laravel/Modules/Notify/lang/en/nome_file.php
 ls /var/www/_bases/<nome repository>/laravel/Modules/Notify/lang/en/nome_file.php
 ls /var/www/html/saluteora/laravel/Modules/Notify/lang/en/nome_file.php
+<<<<<<< HEAD
 ls /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/en/nome_file.php
+=======
+ls /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/en/nome_file.php
+>>>>>>> laraxot/dev
 
 # 2. Se esiste, aggiornarlo con la stessa struttura
 
@@ -5347,9 +5705,12 @@ return [
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
 - [Progresso della Standardizzazione](./TRANSLATION_STANDARDS_PROGRESS.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
 - [Guida alla Struttura dei File di Traduzione](../../translation_file_structure_guide.md)
 - [Progresso della Standardizzazione](../../translation_standards_progress.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -5395,9 +5756,12 @@ Se si identifica un file con naming non conforme:
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
+<<<<<<< HEAD
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -5556,8 +5920,11 @@ return [
 ## Riferimenti
 - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
 - [Regole Generali per le Traduzioni](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
 - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -5665,6 +6032,7 @@ rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_s_m_s.php
 rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_a_w_s_email.php
 rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_whats_app.php
 rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_netfun_s_m_s.php
+<<<<<<< HEAD
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/.php
 
 # Rimozione dei file con nomi errati dopo aver verificato che esistano le versioni corrette
@@ -5672,6 +6040,15 @@ rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/send_a_w_s_email.php
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/send_whats_app.php
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/send_netfun_s_m_s.php
+=======
+rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/.php
+
+# Rimozione dei file con nomi errati dopo aver verificato che esistano le versioni corrette
+rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_s_m_s.php
+rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_a_w_s_email.php
+rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_whats_app.php
+rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_netfun_s_m_s.php
+>>>>>>> laraxot/dev
 ```
 
 ### Template Standard per i File di Traduzione
@@ -5738,7 +6115,11 @@ Il sistema di traduzioni è laico e neutrale rispetto a ogni credo. Non sono amm
 Le chiavi di traduzione devono essere oneste, non ingannevoli, non manipolatorie e non offensive. L'etica del progetto impone di evitare ogni forma di linguaggio discriminatorio, sessista, razzista o che possa ledere la dignità della persona.
 
 ## Zen
+<<<<<<< HEAD
 La chiave di traduzione perfetta è quella che non si nota: è naturale, fluida, non distrae e non crea attrito. Ogni parola superflua va eliminata, ogni concetto va reso con la massima semplicità e armonia.
+=======
+La chiave di traduzione perfetta è quella che non si nota: è naturale, fluida, non distrae e non crea attrito. Ogni parola superflua va eliminata, ogni concetto va reso con la massima semplicità e armonia. 
+>>>>>>> laraxot/dev
 
 ---
 
@@ -5794,9 +6175,13 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
+<<<<<<< HEAD
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
+>>>>>>> laraxot/dev
 
 ---
 
@@ -5807,7 +6192,11 @@ return [
 # Standard per le Traduzioni
 
 Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di <nome progetto>, con particolare attenzione al modulo Notify.
+<<<<<<< HEAD
 # Standard per le Traduzioni
+=======
+# Standard per le Traduzioni 
+>>>>>>> laraxot/dev
 
 Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di SaluteOra, con particolare attenzione al modulo Notify.
 
@@ -5837,9 +6226,15 @@ Le traduzioni devono essere organizzate nelle seguenti cartelle:
 ✅ `send_sms.php` (non `send_s_m_s.php`)
 ✅ `send_aws_email.php` (non `send_a_w_s_email.php`)
 ✅ `send_whatsapp.php` (non `send_whats_app.php`)
+<<<<<<< HEAD
 ✅ `send_sms.php` (non `send_s_m_s.php`)
 ✅ `send_aws_email.php` (non `send_a_w_s_email.php`)
 ✅ `send_whatsapp.php` (non `send_whats_app.php`)
+=======
+✅ `send_sms.php` (non `send_s_m_s.php`)  
+✅ `send_aws_email.php` (non `send_a_w_s_email.php`)  
+✅ `send_whatsapp.php` (non `send_whats_app.php`)  
+>>>>>>> laraxot/dev
 
 ## Struttura dei File di Traduzione
 
@@ -6018,6 +6413,7 @@ protected static ?string $navigationLabel = 'Invio SMS'; // Hardcoded
    - [Convenzioni di Traduzione nel Modulo Notify](./TRANSLATION_CONVENTIONS.md)
    - [Regole di Naming per i File di Traduzione](./TRANSLATION_FILE_NAMING_RULES.md)
    - [Guida alla Struttura dei File di Traduzione](./TRANSLATION_FILE_STRUCTURE_GUIDE.md)
+<<<<<<< HEAD
    - [Regole Generali per le Traduzioni](../../../../Lang/docs/translation_keys_rules.md)
    - [Best Practices per le Traduzioni](../../../../Lang/docs/translation_keys_best_practices.md)
 
@@ -6025,6 +6421,8 @@ protected static ?string $navigationLabel = 'Invio SMS'; // Hardcoded
    - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
    - [Regole di Naming per i File di Traduzione](../../translation_file_naming_rules.md)
    - [Guida alla Struttura dei File di Traduzione](../../translation_file_structure_guide.md)
+=======
+>>>>>>> laraxot/dev
 
 ## Appendice: Elenco Completo dei File Non Conformi
 
@@ -6075,7 +6473,11 @@ protected static ?string $navigationLabel = 'Invio SMS'; // Hardcoded
 
 ## translations-implementation-status-1
 
+<<<<<<< HEAD
 *Consolidated from: `translations-implementation-status.md`*
+=======
+*Consolidated from: `translations-implementation-status-1.md`*
+>>>>>>> laraxot/dev
 
 
 ## Panoramica
@@ -6202,16 +6604,23 @@ Per garantire la coerenza futura, si raccomanda di:
 - [Chiarimento sulle Convenzioni di Traduzione](./TRANSLATION_CONVENTIONS_CLARIFICATION.md)
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
 - [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
 - [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
 ## translations-implementation-status-2
 
+<<<<<<< HEAD
 *Consolidated from: `translations-implementation-status.md`*
+=======
+*Consolidated from: `translations-implementation-status-2.md`*
+>>>>>>> laraxot/dev
 
 title: "Translations Implementation Status"
 type: concept
@@ -6222,6 +6631,7 @@ qmd: "translations-implementation-status-2 translations implementation status"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
+<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -6233,6 +6643,14 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
+=======
+  - "./00-index-1.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
+>>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -6241,8 +6659,11 @@ related:
 - [Chiarimento sulle Convenzioni di Traduzione](./translation-conventions-clarification.md)
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 # Translations Implementation Status
 
 Current status of translation implementation across the module.
@@ -6379,10 +6800,13 @@ Per garantire la coerenza futura, si raccomanda di:
 - [Chiarimento sulle Convenzioni di Traduzione](./TRANSLATION_CONVENTIONS_CLARIFICATION.md)
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
 - [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
 - [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -6517,10 +6941,13 @@ Per garantire la coerenza futura, si raccomanda di:
 - [Chiarimento sulle Convenzioni di Traduzione](./translation_conventions_clarification.md)
 - [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
 - [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
+<<<<<<< HEAD
 - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
 - [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
 - [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation-keys-best-practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -6650,6 +7077,7 @@ Notification::make()
 * [translations.md](../../../Media/docs/translations.md)
 * [translations.md](../../../Tenant/docs/translations.md)
 * [translations.md](../../../Activity/docs/translations.md)
+<<<<<<< HEAD
 * [translations.md](../../../../Gdpr/docs/translations.md)
 * [translations.md](../../translations.md)
 * [translations.md](../../../Xot/docs/roadmap/lang/translations.md)
@@ -6663,6 +7091,8 @@ Notification::make()
 * [translations.md](../../../../Media/docs/translations.md)
 * [translations.md](../../../../Tenant/docs/translations.md)
 * [translations.md](../../../../Activity/docs/translations.md)
+=======
+>>>>>>> laraxot/dev
 * [translations.md](../../../Patient/docs/translations.md)
 * [translations.md](../../../Cms/docs/translations.md)
 
@@ -6799,10 +7229,13 @@ Per garantire la coerenza futura, si raccomanda di:
 - [Chiarimento sulle Convenzioni di Traduzione](./TRANSLATION_CONVENTIONS_CLARIFICATION.md)
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
+<<<<<<< HEAD
 - [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
 - [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
 - [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
 - [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 

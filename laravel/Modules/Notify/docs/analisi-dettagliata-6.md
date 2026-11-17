@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "analisi dettagliata 6"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi dettagliata 6"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi Dettagliata del Modulo Notify - Parte 6: Monitoraggio e Analytics
 
 ## 6. Monitoraggio e Analytics
@@ -615,6 +629,7 @@ class AnalyticsExporter
         return $path;
     }
 }
+<<<<<<< HEAD
 <<<<<<< HEAD
 ``` 
 =======
@@ -1238,3 +1253,6 @@ class AnalyticsExporter
 }
 ```
 >>>>>>> 6ed19256f (.)
+=======
+``` 
+>>>>>>> laraxot/dev

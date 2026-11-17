@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "key documentation references"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Key Documentation References

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "filament pages convention"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Convenzioni per le Pagine Filament

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "firebase"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Firebase Push Notifications

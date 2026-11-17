@@ -8,7 +8,10 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Cyclomatic Complexity - Project Summary Report
@@ -158,6 +161,7 @@ Keep nesting levels below 3-4 levels.
 - [Seo](../Modules/Seo/docs/cyclomatic-complexity-report.md)
 - [Tenant](../Modules/Tenant/docs/cyclomatic-complexity-report.md)
 - [UI](../Modules/UI/docs/cyclomatic-complexity-report.md)
+<<<<<<< HEAD
 - [Xot](../../../cyclomatic-complexity-report.md)
 - [User](../../../cyclomatic-complexity-report.md)
 - [Blog](../../../cyclomatic-complexity-report.md)
@@ -177,6 +181,8 @@ Keep nesting levels below 3-4 levels.
 - [Seo](../../../cyclomatic-complexity-report.md)
 - [Tenant](../../../cyclomatic-complexity-report.md)
 - [UI](../../../cyclomatic-complexity-report.md)
+=======
+>>>>>>> laraxot/dev
 
 ---
 

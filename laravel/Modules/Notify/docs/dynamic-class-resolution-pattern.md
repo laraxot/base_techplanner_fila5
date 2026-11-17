@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "dynamic class resolution pattern"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Pattern di Risoluzione Dinamica delle Classi vs Pattern Match

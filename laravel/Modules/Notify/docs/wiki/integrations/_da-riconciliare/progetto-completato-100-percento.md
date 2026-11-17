@@ -21,7 +21,10 @@ related:
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # 🏆 PROGETTO <nome progetto> - 100% COMPLETATO!
@@ -354,8 +357,12 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 **[→ ANALISI COMPLETA](./analisi-completa.md)** - Executive Summary del progetto
 
 ### 🗺️ ROADMAP
+<<<<<<< HEAD
 **[→ Master Roadmap Index](../../../roadmap-master-index.md)** - Indice completo roadmap moduli
 **[→ Master Roadmap Index](../../../roadmap-master-index.md)** - Indice completo roadmap moduli
+=======
+**[→ Master Roadmap Index](./roadmap-master-index.md)** - Indice completo roadmap moduli
+>>>>>>> laraxot/dev
 
 ### 📊 TECHNICAL
 **[→ Session Summary](./phpstan/session-summary-.md.md)** - Dettagli tecnici sessione
@@ -379,6 +386,7 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 
 ### 🎨 THEMES
 - [Sixteen](../Themes/Sixteen/docs/roadmap-and-issues.md) - Frontend cittadini
+<<<<<<< HEAD
 - [Xot](../../../roadmap-and-issues.md) - Framework base
 - [User](../../../roadmap-and-issues.md) - Authentication
 
@@ -394,6 +402,8 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 
 ### 🎨 THEMES
 - [Sixteen](../../../roadmap-and-issues.md) - Frontend cittadini
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -574,8 +584,12 @@ php artisan queue:work --queue=high,notifications,default
 ## 🔗 LINK FINALI
 
 - [← Torna all'Indice](./index.md)
+<<<<<<< HEAD
 - [← Master Roadmap](../../../roadmap-master-index.md)
 - [← Master Roadmap](../../../roadmap-master-index.md)
+=======
+- [← Master Roadmap](./roadmap-master-index.md)
+>>>>>>> laraxot/dev
 - [← Analisi Completa](./analisi-completa.md)
 
 ---
@@ -760,6 +774,7 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 
 ✅ **Root Docs** (9):
 1. PROGETTO-COMPLETATO-100-PERCENTO.md (questo!)
+<<<<<<< HEAD
 2. COMPLETAMENTO-PROGETTO.md
 3. ANALISI-COMPLETA.md
 4. LEGGI-QUI-DOMANI.md
@@ -767,6 +782,15 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 6. project-analysis-and-roadmap.md
 7. phpstan/session-summary.md
 8. phpstan/final-report-session.md
+=======
+2. COMPLETAMENTO-PROGETTO-2025-10-01.md
+3. ANALISI-COMPLETA-2025-10-01.md
+4. LEGGI-QUI-DOMANI.md
+5. roadmap-master-index.md
+6. project-analysis-and-roadmap.md
+7. phpstan/session-summary-2025-10-01.md
+8. phpstan/final-report-session-2025-10-01.md
+>>>>>>> laraxot/dev
 9. phpstan/filament-v4-fixes-session.md
 
 ✅ **Module Roadmaps** (9):
@@ -935,6 +959,7 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 ## 📚 GUIDA RAPIDA ALLA DOCUMENTAZIONE
 
 ### 🌟 START HERE
+<<<<<<< HEAD
 **[→ ANALISI COMPLETA](./ANALISI-COMPLETA.md)** - Executive Summary del progetto
 
 ### 🗺️ ROADMAP
@@ -946,6 +971,15 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 
 ### 📊 TECHNICAL
 **[→ Session Summary](./phpstan/session-summary.md)** - Dettagli tecnici sessione
+=======
+**[→ ANALISI COMPLETA](./ANALISI-COMPLETA-2025-10-01.md)** - Executive Summary del progetto
+
+### 🗺️ ROADMAP
+**[→ Master Roadmap Index](./roadmap-master-index.md)** - Indice completo roadmap moduli
+
+### 📊 TECHNICAL
+**[→ Session Summary](./phpstan/session-summary-2025-10-01.md)** - Dettagli tecnici sessione
+>>>>>>> laraxot/dev
 
 ### 🎯 MODULES (Dettagli per ogni modulo)
 
@@ -967,6 +1001,7 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 
 ### 🎨 THEMES
 - [Sixteen](../Themes/Sixteen/docs/roadmap-and-issues.md) - Frontend cittadini
+<<<<<<< HEAD
 - [App](../../../roadmap-and-issues.md) - Core business + Performance fixes
 - [<nome progetto>](../Modules/<nome progetto>/docs/roadmap-and-issues.md) - Core business + Performance fixes
 - [Xot](../../../roadmap-and-issues.md) - Framework base
@@ -984,6 +1019,8 @@ Result: {"totals":{"errors":0,"file_errors":0}}
 
 ### 🎨 THEMES
 - [Sixteen](../../../roadmap-and-issues.md) - Frontend cittadini
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -1165,10 +1202,15 @@ php artisan queue:work --queue=high,notifications,default
 ## 🔗 LINK FINALI
 
 - [← Torna all'Indice](./index.md)
+<<<<<<< HEAD
 - [← Master Roadmap](../../../roadmap-master-index.md)
 - [← Analisi Completa](./ANALISI-COMPLETA.md)
 - [← Master Roadmap](../../../roadmap-master-index.md)
 - [← Analisi Completa](../../../analisi-completa-ottobre-data.md)
+=======
+- [← Master Roadmap](./roadmap-master-index.md)
+- [← Analisi Completa](./ANALISI-COMPLETA-2025-10-01.md)
+>>>>>>> laraxot/dev
 
 ---
 

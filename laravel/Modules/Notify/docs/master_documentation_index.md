@@ -1,13 +1,23 @@
 ---
+<<<<<<< HEAD
 title: "master documentation index"
+=======
+title: "MASTER DOCUMENTATION INDEX"
+>>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
+<<<<<<< HEAD
 qmd: "master documentation index"
 issues: []
 discussions: []
 status: draft
+=======
+qmd: "MASTER DOCUMENTATION INDEX"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ---
 
 # 📚 Master Documentation Index
@@ -17,6 +27,18 @@ status: draft
 **Owner**: Multi-Agent Team
 
 ---
+<<<<<<< HEAD
+=======
+
+title: "MASTER DOCUMENTATION INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "MASTER DOCUMENTATION INDEX"
+issues: []
+discussions: []
+>>>>>>> laraxot/dev
 ## 🎯 Quick Navigation
 
 ### Per Nuovi Arrivati
@@ -30,7 +52,11 @@ status: draft
 - [Coding Standards](./conventions/README.md)
 
 ### Per AI Agents
+<<<<<<< HEAD
 - [Project Context](./project/PROJECT.md)
+=======
+- [Project Context](./project/project.md)
+>>>>>>> laraxot/dev
 - [Agent Coordination](./MULTI_AGENT_COLLABORATION.md)
 - [OpenViking Context](../bashscripts/ai/openviking.md)
 
@@ -65,8 +91,12 @@ status: draft
 
 ### 📊 Reports
 - [Status Reports](./reports/README.md)
+<<<<<<< HEAD
 - [Quality Reports](roadmap/quality.md)
 - [Quality Reports](./roadmap/quality.md)
+=======
+- [Quality Reports](./reports/quality.md)
+>>>>>>> laraxot/dev
 - [Performance Reports](./reports/performance.md)
 
 ---
@@ -85,6 +115,7 @@ status: draft
 | **Geo** | [Modules/Geo/docs/](../laravel/Modules/Geo/docs/) | ✅ Good |
 | **AI** | [Modules/AI/docs/](../laravel/Modules/AI/docs/) | ✅ Good |
 | **Fixcity** | [Modules/Fixcity/docs/](../laravel/Modules/Fixcity/docs/) | ✅ Good |
+<<<<<<< HEAD
 | **Xot** | [Modules/Xot/docs/](../../Xot/docs) | ⚠️ Needs cleanup |
 | **Cms** | [Modules/Cms/docs/](../../Cms/docs) | ⚠️ Needs cleanup |
 | **UI** | [Modules/UI/docs/](../../UI/docs) | ⚠️ Needs cleanup |
@@ -95,6 +126,8 @@ status: draft
 | **Geo** | [Modules/Geo/docs/](../../Geo/docs) | ✅ Good |
 | **AI** | [Modules/AI/docs/](../../AI/docs) | ✅ Good |
 | **Fixcity** | [Modules/Fixcity/docs/](../../Fixcity/docs) | ✅ Good |
+=======
+>>>>>>> laraxot/dev
 
 ---
 
@@ -104,8 +137,11 @@ status: draft
 |-------|------|--------|
 | **Sixteen** | [Themes/Sixteen/docs/](../laravel/Themes/Sixteen/docs/) | ✅ AGID Compliant |
 | **TwentyOne** | [Themes/TwentyOne/docs/](../laravel/Themes/TwentyOne/docs/) | ✅ Filament 5 |
+<<<<<<< HEAD
 | **Sixteen** | [Themes/Sixteen/docs/](../../../Themes/Sixteen/docs) | ✅ AGID Compliant |
 | **TwentyOne** | [Themes/TwentyOne/docs/](../../../Themes/TwentyOne/docs) | ✅ Filament 5 |
+=======
+>>>>>>> laraxot/dev
 | **One** | [Themes/One/docs/](../laravel/Themes/One/docs/) | ✅ Base Theme |
 
 ---

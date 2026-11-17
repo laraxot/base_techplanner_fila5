@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+=======
+---
+title: "modelli factory seeder analisi 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modelli factory seeder analisi 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> laraxot/dev
 # Analisi Modelli, Factory e Seeder - Modulo Notify
 
 ## Panoramica
@@ -214,6 +228,9 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 #### <nome progetto> Integration
 #### <nome progetto> Integration
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 #### <nome progetto> Integration
 #### <nome progetto> Integration
 #### <nome progetto> Integration
@@ -223,6 +240,7 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 #### <nome progetto> Integration
 #### <nome progetto> Integration
 #### <nome progetto> Integration
+<<<<<<< HEAD
 =======
 #### SaluteOra Integration
 #### <nome progetto> Integration
@@ -234,6 +252,8 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 #### <nome progetto> Integration
 #### SaluteOra Integration
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 - **Appointment Reminders**: Promemoria appuntamenti
 - **Report Notifications**: Notifiche nuovi referti
 - **Emergency Alerts**: Allerte mediche urgenti
@@ -286,6 +306,9 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> laraxot/dev
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../../../docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
@@ -295,6 +318,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
+<<<<<<< HEAD
 =======
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
@@ -306,6 +330,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 - [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
 >>>>>>> 6ed19256f (.)
+=======
+>>>>>>> laraxot/dev
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
 - [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
 - [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
@@ -319,7 +345,11 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
 <<<<<<< HEAD
+<<<<<<< HEAD
 *Sistema notifiche multi-canale completo*
 =======
 *Sistema notifiche multi-canale completo*
 >>>>>>> 6ed19256f (.)
+=======
+*Sistema notifiche multi-canale completo*
+>>>>>>> laraxot/dev

@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "doctor emails"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Email per i Dottori
@@ -184,6 +187,9 @@ try {
 - [Documentazione Modulo Notify](./README.md)
 - [Documentazione Template Email](./EMAIL_TEMPLATES.md)
 - [Guida all'utilizzo di SpatieEmail](./SPATIE_EMAIL_USAGE_GUIDE.md)
+<<<<<<< HEAD
 - [Documentazione Template Email](./email_templates.md)
 - [Guida all'utilizzo di SpatieEmail](./spatie_email_usage_guide.md)
+=======
+>>>>>>> laraxot/dev
 - [Documentazione Filament Resources](./filament-resources.md)

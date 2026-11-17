@@ -7,14 +7,21 @@ updated: 2026-09-26
 qmd: "ui ux enhancements"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # UI/UX Enhancements per i Campi `name` e `slug` in MailTemplateResource
 
 ## Introduzione
 
+<<<<<<< HEAD
 Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto <nome progetto>, mantenendo la coerenza visiva e migliorando l'usabilità.
+=======
+Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto Quaeris, mantenendo la coerenza visiva e migliorando l'usabilità.
+>>>>>>> laraxot/dev
 Questo documento esplora i componenti Filament che possono migliorare l'esperienza utente per i campi `name` e `slug` nel form di gestione dei template email. I miglioramenti proposti seguono le convenzioni del progetto App, mantenendo la coerenza visiva e migliorando l'usabilità.
 
 ## Componenti per il Campo `name`
@@ -81,7 +88,11 @@ Questo documento esplora i componenti Filament che possono migliorare l'esperien
     ->required()
     ->unique(ignoreRecord: true)
     ->maxLength(255)
+<<<<<<< HEAD
     ->afterStateUpdated(fn (string $context, $state, callable $set) =>
+=======
+    ->afterStateUpdated(fn (string $context, $state, callable $set) => 
+>>>>>>> laraxot/dev
         $context === 'create' ? $set('slug', Str::slug($state)) : null)
     ->helperText('Identificatore unico utilizzato nel codice')
     ->prefixIcon('heroicon-o-link')
@@ -119,7 +130,11 @@ Questo documento esplora i componenti Filament che possono migliorare l'esperien
         Forms\Components\Actions\Action::make('regenerateSlug')
             ->icon('heroicon-o-arrow-path')
             ->tooltip('Rigenera dallo slug dal nome')
+<<<<<<< HEAD
             ->action(fn (Forms\Get $get, Forms\Set $set) =>
+=======
+            ->action(fn (Forms\Get $get, Forms\Set $set) => 
+>>>>>>> laraxot/dev
                 $set('slug', Str::slug($get('name'))))
     ),
 ```
@@ -143,7 +158,11 @@ Forms\Components\Group::make([
                 $set('slug', Str::slug($state));
             }
         }),
+<<<<<<< HEAD
 
+=======
+        
+>>>>>>> laraxot/dev
     Forms\Components\Grid::make(2)
         ->schema([
             'generateSlug' => Forms\Components\Toggle::make('generateSlug')
@@ -155,7 +174,11 @@ Forms\Components\Group::make([
                         $set('slug', Str::slug($get('name')));
                     }
                 }),
+<<<<<<< HEAD
 
+=======
+                
+>>>>>>> laraxot/dev
             'slug' => Forms\Components\TextInput::make('slug')
                 ->required()
                 ->unique(ignoreRecord: true)
@@ -226,7 +249,11 @@ return [
 ];
 ```
 
+<<<<<<< HEAD
 ## Conformità con gli Standard <nome progetto>
+=======
+## Conformità con gli Standard Quaeris
+>>>>>>> laraxot/dev
 ## Conformità con gli Standard App
 
 Tutti i componenti proposti:
@@ -243,7 +270,11 @@ I miglioramenti UI/UX proposti per i campi `name` e `slug` si concentrano su:
 3. **Azioni contestuali** che facilitano operazioni comuni
 4. **Relazioni intuitive** tra campi correlati
 
+<<<<<<< HEAD
 L'implementazione di questi miglioramenti rispetta le convenzioni del progetto <nome progetto> mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
+=======
+L'implementazione di questi miglioramenti rispetta le convenzioni del progetto Quaeris mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
+>>>>>>> laraxot/dev
 L'implementazione di questi miglioramenti rispetta le convenzioni del progetto App mentre offre un'esperienza utente significativamente migliorata nella gestione dei template email.
 
 ## Riferimenti

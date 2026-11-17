@@ -7,7 +7,10 @@ updated: 2026-09-26
 qmd: "sms driver selection analysis"
 issues: []
 discussions: []
+<<<<<<< HEAD
 status: draft
+=======
+>>>>>>> laraxot/dev
 ---
 
 # Analisi: Spostamento Logica Selezione Driver in SmsData
