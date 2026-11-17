@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "contracts architecture 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "contracts architecture 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Architettura delle Interfacce (Contracts) in Notify
 
 ## Principi Architetturali Fondamentali
@@ -23,22 +9,11 @@ Le interfacce **DEVONO** essere posizionate nella directory `app/Contracts/`, **
 ```
 ✅ CORRETTO:
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 Modules/Notify/app/Contracts/SmsProviderActionInterface.php
 
 ❌ ERRATO:
 Modules/Notify/app/Actions/SMS/SmsActionInterface.php
 Modules/Notify/app/Contracts/SMS/SmsActionInterface.php (sottocartella non corretta)
-<<<<<<< HEAD
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SmsProviderActionInterface.php
-
-❌ ERRATO:
-/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/SmsActionInterface.php
-/var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionInterface.php (sottocartella non corretta)
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 ```
@@ -82,11 +57,7 @@ SendSmsInterface
 
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 Modules/Notify/
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/
->>>>>>> 6ed19256f (.)
 =======
 Modules/Notify/
 >>>>>>> laraxot/dev

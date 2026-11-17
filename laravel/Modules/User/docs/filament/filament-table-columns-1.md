@@ -35,9 +35,9 @@ public function getTableColumns(): array
 - [Regola Generale - Modulo Xot](../../../xot/docs/filament_table_columns.md)
 - [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
 =======
-- [Regola Generale - Modulo Xot](../../../Xot/docs/FILAMENT_TABLE_COLUMNS.md)
-- [Regola Globale - Root Docs](../../../../docs/filament-table-columns.md)
->>>>>>> 6ed19256f (.)
+- [Regola Generale - Modulo Xot](../../../xot/docs/filament-table-columns-2.md)
+- [Regola Globale - Root Docs](../../../../../docs/filament-table-columns.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -47,4 +47,4 @@ public function getTableColumns(): array
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.
 =======
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev

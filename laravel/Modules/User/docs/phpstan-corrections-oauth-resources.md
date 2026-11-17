@@ -106,7 +106,8 @@ TextColumn::make('name')
 <<<<<<< HEAD
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
 =======
->>>>>>> 6ed19256f (.)
+- [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
+>>>>>>> laraxot/dev
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 
@@ -115,5 +116,4 @@ TextColumn::make('name')
 <<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-22*
 =======
-*Ultimo aggiornamento: 2025-01-22*
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev

@@ -8,10 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # NOTIFY ARCHITECTURE DEEP DIVE ANALYSIS
@@ -634,11 +631,8 @@ Themes/Sixteen/
 # ALWAYS run after ANY frontend change:
 cd Themes/Sixteen/
 npm run build          # Compile assets
-<<<<<<< HEAD
 <<<<<<< .merge_file_0A8pdU
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_GcLaKS
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev
@@ -1838,12 +1832,8 @@ Monitoring:
 
 Frontend:
 [ ] Theme built (npm run build)
-<<<<<<< HEAD
 <<<<<<< .merge_file_0A8pdU
 niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-=======
-[ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
->>>>>>> .merge_file_GcLaKS
 =======
 [ ] Assets deployed (symlink public_html/themes (npm run copy obsoleto))
 [ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)

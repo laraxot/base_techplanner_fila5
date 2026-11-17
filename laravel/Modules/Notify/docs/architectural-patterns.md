@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "architectural patterns"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: architecturals.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Pattern Architetturali per le Notifiche

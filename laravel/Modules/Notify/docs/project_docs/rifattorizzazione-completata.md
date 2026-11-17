@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "rifattorizzazione completata"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Rifattorizzazione Completa delle Cartelle Docs

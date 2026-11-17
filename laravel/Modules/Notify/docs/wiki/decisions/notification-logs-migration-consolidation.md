@@ -9,10 +9,7 @@ issues: []
 discussions: []
 related:
   - ../migrations/notifications_table.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Consolidamento migrazioni `notification_logs`
@@ -23,15 +20,9 @@ Esistevano **due migrazioni distinte** che creavano la stessa tabella `notificat
 entrambe ancora su `Illuminate\Database\Migrations\Migration` (violazione dello standard
 `XotBaseMigration` del modulo) e con **schemi tra loro incompatibili**:
 
-<<<<<<< HEAD
 1. `2025_03_31_000001_create_notification_logs_table.php`: schema "vecchio":
    `title`, `content`, `channels` (json), `data` (json nullable), `sent_at`, `status`, `error`.
 2. `2025_07_01_000000_create_notification_logs_table.php`: schema "intermedio":
-=======
-1. `2025_03_31_000001_create_notification_logs_table.php` — schema "vecchio":
-   `title`, `content`, `channels` (json), `data` (json nullable), `sent_at`, `status`, `error`.
-2. `2025_07_01_000000_create_notification_logs_table.php` — schema "intermedio":
->>>>>>> laraxot/dev
    `type`, `channel`, `recipient`, `subject`, `message`, `status`, `sent_at`, `read_at`,
    `error_message`, `metadata` (json). Guardava con `if (! Schema::hasTable(...))`, quindi se
    la migrazione #1 girava per prima, le colonne di questo file **non venivano mai create**
@@ -47,7 +38,6 @@ Ho verificato le tre fonti indipendenti nel modulo che usano davvero le colonne:
 - **Model** `NotificationLog` (`$table = 'notification_logs'`, `$fillable`): `template_id`,
   `notifiable_type`, `notifiable_id`, `channel`, `status`, `status_message`, `data`,
   `metadata`, `sent_at`, `delivered_at`, `failed_at`, `opened_at`, `clicked_at`, `tenant_id`.
-<<<<<<< HEAD
 - **`NotificationLogStatusEnum`**: `pending|sent|delivered|failed|opened|clicked`: coerente
   coi metodi `markAsOpened()`/`markAsClicked()` e le costanti `STATUS_*` del model.
 - **`app/Traits/HasTenantNotifications.php`**: usa `tenant_id` e la relazione `template()`.
@@ -56,16 +46,6 @@ Ho verificato le tre fonti indipendenti nel modulo che usano davvero le colonne:
 
 Contro-evidenza nota: `database/factories/NotificationLogFactory.php` usa ancora lo schema
 **vecchio** (`title`, `content`, `channels`, `error`): è l'unico file del modulo rimasto
-=======
-- **`NotificationLogStatusEnum`**: `pending|sent|delivered|failed|opened|clicked` — coerente
-  coi metodi `markAsOpened()`/`markAsClicked()` e le costanti `STATUS_*` del model.
-- **`app/Traits/HasTenantNotifications.php`**: usa `tenant_id` e la relazione `template()`.
-- **`app/Actions/NotificationManager.php`** (ex `app/Services/NotificationManager.php`):
-  riferimenti a `STATUS_SENT/DELIVERED/FAILED/OPENED/CLICKED` — schema nuovo.
-
-Contro-evidenza nota: `database/factories/NotificationLogFactory.php` usa ancora lo schema
-**vecchio** (`title`, `content`, `channels`, `error`) — è l'unico file del modulo rimasto
->>>>>>> laraxot/dev
 disallineato. Non è stato modificato in questo intervento (fuori scope: qui si consolidano
 le migrazioni, non si riscrivono le factory), ma è una **discrepanza nota da correggere** in
 un prossimo intervento, altrimenti `NotificationLogFactory::new()->create()` fallirebbe

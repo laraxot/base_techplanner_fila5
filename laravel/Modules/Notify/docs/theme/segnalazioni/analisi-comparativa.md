@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "analisi comparativa"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Comparativa: Pagine Segnalazioni

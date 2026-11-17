@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 qmd: "zen of app"
-=======
-qmd: "ZEN OF APP"
->>>>>>> laraxot/dev
 issues: []
 discussions: []
 title: "Zen of Notify - Complete Philosophy"
@@ -12,10 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🧘 Zen of Notify - Complete Philosophy
@@ -34,20 +27,14 @@ status: draft
 > **Non si torna mai indietro. Si studia il passato per migliorare.**
 
 **Principi**:
-<<<<<<< HEAD
 - ✅ Git forward-only: un cambiamento si corregge scrivendo un nuovo commit in avanti
 - ✅ Mai `git reset`, `git revert`, `git checkout`/`git restore`, `git stash`, `git rebase`
-=======
-- ✅ `git rebase` invece di `git reset`
-- ✅ `git revert` invece di `git checkout <old-commit>`
->>>>>>> laraxot/dev
 - ✅ Studiare commit history per capire decisioni
 - ✅ Documentare lezioni apprese
 - ✅ Mai force-push su branch condivisi
 
 **Comandi**:
 ```bash
-<<<<<<< HEAD
 # ✅ CORRETTO: correggi il file e registra la correzione con un nuovo commit
 git commit -m "fix: correggi il comportamento"
 
@@ -55,12 +42,6 @@ git commit -m "fix: correggi il comportamento"
 git rebase -i HEAD~5
 
 # ❌ SBAGLIATO: annulla con un commit inverso
-=======
-# ✅ CORRETTO: Rebase per pulire history
-git rebase -i HEAD~5
-
-# ✅ CORRETTO: Revert per annullare cambiamenti
->>>>>>> laraxot/dev
 git revert <commit-hash>
 
 # ❌ SBAGLIATO: Reset che distrugge history

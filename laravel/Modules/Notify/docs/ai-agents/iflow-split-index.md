@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "iflow split index"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # IFLOW.md Split Index

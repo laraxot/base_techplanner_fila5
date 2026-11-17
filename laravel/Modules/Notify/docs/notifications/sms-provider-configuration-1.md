@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "sms provider configuration 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sms provider configuration 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Configurazione Provider SMS per le Notifiche
 
 Questa documentazione descrive le opzioni disponibili per l'integrazione di servizi SMS nei sistemi di notifica di <nome progetto>, con focus sui diversi provider e sulla loro configurazione.
@@ -482,15 +468,9 @@ Log::info('SMS sent', [
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
-=======
-- [MULTI_CHANNEL_NOTIFICATIONS.md](multi_channel_notifications.md)
-- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](notifications_implementation_guide.md)
-- [TELEGRAM_NOTIFICATIONS_GUIDE.md](telegram_notifications_guide.md)
->>>>>>> 6ed19256f (.)
 =======
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "action plan immediate"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🎯 PIANO D'AZIONE IMMEDIATO - FixCity Platform
@@ -24,18 +21,6 @@ Questo documento identifica le **azioni immediate** da intraprendere per portare
 **Target**: Q2 2025 (Aprile-Giugno)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "action plan immediate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "action plan immediate"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🚨 Priorità CRITICHE (Settimana 1-2)
 
 ### 1. ✅ Correzioni Tecniche Base (COMPLETATE)

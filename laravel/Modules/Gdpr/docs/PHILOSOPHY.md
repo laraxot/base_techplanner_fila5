@@ -1,10 +1,7 @@
 ---
-<<<<<<< .merge_file_rdDOoy
 qmd: "PHILOSOPHY"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_9jn9tf
 title: "GDPR Module Philosophy"
 description: "Core principles, architecture, and compliance philosophy of the FixCity GDPR module"
 type: philosophy

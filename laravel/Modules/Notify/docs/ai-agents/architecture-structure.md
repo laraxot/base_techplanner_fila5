@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "architecture structure"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura e Struttura (Claude Context)

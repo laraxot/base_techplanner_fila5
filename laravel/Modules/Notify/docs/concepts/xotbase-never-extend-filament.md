@@ -1,11 +1,7 @@
 ---
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: 'Notify: mai Filament*, sempre XotBase*'
-=======
-title: "Notify — mai Filament\*, sempre XotBase*"
->>>>>>> laraxot/dev
 type: concept
 module: Notify
 tags: [notify, filament, xotbase, architecture]
@@ -16,7 +12,6 @@ related:
   - ../../../../docs/wiki/rules/xotbase-critical-rules.md
   - ../../../../docs/wiki/rules/xot-base-filament-widgets.md
   - ../../../../docs/wiki/memories/xotbase-never-extend-filament.md
-<<<<<<< HEAD
   - ../../../../../docs/wiki/rules/xotbase-critical-rules.md
   - ../../../../../docs/wiki/rules/xot-base-filament-widgets.md
   - ../../../../../docs/wiki/memories/xotbase-never-extend-filament.md
@@ -27,13 +22,6 @@ status: draft
 
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../docs/wiki/rules/xotbase-critical-rules.md).
 Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../../docs/wiki/rules/xotbase-critical-rules.md).
-=======
----
-
-# Mai `Filament\*` — sempre `Modules\Xot\Filament\...\XotBase*`
-
-Bridge on-demand. Contenuto canonico: [docs/wiki/rules/xotbase-critical-rules.md](../../../../docs/wiki/rules/xotbase-critical-rules.md).
->>>>>>> laraxot/dev
 
 ## Zen (riassunto)
 

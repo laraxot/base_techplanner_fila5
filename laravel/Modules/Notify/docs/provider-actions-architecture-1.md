@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "provider actions architecture 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "provider actions architecture 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Architettura delle Azioni dei Provider in Notify
 
 ## Struttura e Principi Fondamentali
@@ -35,11 +21,7 @@ Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza m
 
 Le azioni specifiche dei provider SMS si trovano nella directory:
 <<<<<<< HEAD
-<<<<<<< HEAD
 - `Modules/Notify/app/Actions/SMS/`
-=======
-- `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/`
->>>>>>> 6ed19256f (.)
 =======
 - `Modules/Notify/app/Actions/SMS/`
 >>>>>>> laraxot/dev

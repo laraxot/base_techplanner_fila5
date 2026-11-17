@@ -2,26 +2,16 @@
 qmd: "dry consolidated"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "dry: Consolidated Documentation"
-=======
-title: "dry — Consolidated Documentation"
->>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
 ---
 
 # dry: Consolidated Documentation
-=======
----
-
-# dry — Consolidated Documentation
->>>>>>> laraxot/dev
 
 Consolidated from **12** individual files.
 
@@ -246,12 +236,9 @@ Prima di creare una bulk action:
 - [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md) - Pattern per chiamare Actions con `app()`
 - [SendNotificationBulkAction](./send-notification-bulk-action.md) - Implementazione completa
 - [Geo Module Architectural Philosophy](../geo/docs/architectural-philosophy.md) - Filosofia architetturale modulare
-<<<<<<< HEAD
 - [Actions Calling Actions Pattern](../../actions-calling-actions-pattern.md) - Pattern per chiamare Actions con `app()`
 - [SendNotificationBulkAction](./send-notification-bulk-action.md) - Implementazione completa
 - [Geo Module Architectural Philosophy](../../../../Geo/docs/architectural-philosophy.md) - Filosofia architetturale modulare
-=======
->>>>>>> laraxot/dev
 
 ---
 
@@ -304,12 +291,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 
 ## dry-kiss-analysis-1
 
-<<<<<<< HEAD
 *Consolidated from: `dry-kiss-analysis.md`*
 *Consolidated from: `dry-kiss-analysis-modulo-user.md`*
-=======
-*Consolidated from: `dry-kiss-analysis-1.md`*
->>>>>>> laraxot/dev
 
 title: "dry-kiss-analysis-2025-10-15"
 type: concept
@@ -319,7 +302,6 @@ updated: 2026-07-14
 qmd: "dry-kiss-analysis-2025-10-15 deprecated"
 status: deprecated
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -331,34 +313,18 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
 
-<<<<<<< HEAD
 > Questo file è stato rinominato in [dry-kiss-analysis-1.md](dry-kiss-analysis.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 > Questo file è stato rinominato in [dry-kiss-analysis-1.md](dry-kiss-analysis-modulo-user.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
-=======
-> Questo file è stato rinominato in [dry-kiss-analysis-1.md](dry-kiss-analysis-1.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
->>>>>>> laraxot/dev
 
 ---
 
 ## dry-kiss-analysis-2
 
-<<<<<<< HEAD
 *Consolidated from: `dry-kiss-analysis.md`*
-=======
-*Consolidated from: `dry-kiss-analysis-2.md`*
->>>>>>> laraxot/dev
 
 title: "DRY & KISS Analysis - Modulo Notify"
 type: concept
@@ -369,7 +335,6 @@ qmd: "dry-kiss-analysis-2025-10-15.deprecated dry & kiss analysis - modulo notif
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -381,14 +346,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -486,7 +443,6 @@ qmd: "dry-kiss-analysis-master 🐄✨ dry & kiss master analysis - progetto com
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -498,14 +454,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1169,11 +1117,7 @@ Themes/
 ```
 docs/
 ├── dry-kiss-analysis-master.md (questo file)
-<<<<<<< HEAD
 ├── analisi-metodi-duplicati-master.md
-=======
-├── analisi-metodi-duplicati-master-1.md
->>>>>>> laraxot/dev
 ├── analisi-metodi-duplicati-index.md
 ├── implementazione-refactoring-basemodel.md
 ├── refactoring-completato.md
@@ -2213,7 +2157,6 @@ qmd: "drytraitmethods dry principle for trait methods"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -2225,14 +2168,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "documentation analysis and improvement plan"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Documentation Analysis and Improvement Plan
@@ -20,18 +17,6 @@ status: draft
 **Owner**: Architecture Team
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "documentation analysis and improvement plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentation analysis and improvement plan"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📊 Executive Summary
 
 ### Current State
@@ -422,10 +407,7 @@ echo "  snake_case: $(find laravel/Modules/*/docs/ -name '*_*.md' | wc -l)"
 - [DOCUMENTATION_GOVERNANCE.md](DOCUMENTATION_GOVERNANCE.md) - Governance framework
 - [AGENTS.md](../../../AGENTS.md) - Agent guidelines
 - [agents.md](../../../agents.md) - Agent guidelines
-<<<<<<< HEAD
 - [agents.md](../../../AGENTS.md) - Agent guidelines
-=======
->>>>>>> laraxot/dev
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 
 ---

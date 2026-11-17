@@ -194,11 +194,8 @@ cd laravel/Themes/Sixteen
 npm run build
 
 # Copy to public
-<<<<<<< HEAD
 <<<<<<< .merge_file_0umcmp
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_5Gksck
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev
@@ -244,11 +241,8 @@ gh issue list --repo laraxot/base_fixcity_fila5 --label "priority:critical"
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # ~2 seconds
-<<<<<<< HEAD
 <<<<<<< .merge_file_0umcmp
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_5Gksck
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev

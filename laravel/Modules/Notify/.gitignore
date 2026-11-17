@@ -114,7 +114,6 @@ notify.code-workspace
 
 # module-root-hygiene (story module-root-hygiene)
 /.github/skills/
-<<<<<<< HEAD
 /.github/ISSUE_CONTENT/
 /.github/agents/
 docs/graphify
@@ -128,9 +127,3 @@ resources/lang
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
-=======
-docs/graphify
-resources/lang
-.github/ISSUE_CONTENT/
-.github/agents/
->>>>>>> laraxot/dev

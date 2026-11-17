@@ -7,20 +7,12 @@ updated: 2026-09-26
 qmd: "telegram notifications guide"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
 # Notifiche Telegram
 
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di <nome progetto>.
-=======
----
-
-# Notifiche Telegram 
-
-Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di Quaeris.
->>>>>>> laraxot/dev
 Questa documentazione descrive come implementare notifiche Telegram nel modulo Notify di App.
 
 ## Indice
@@ -36,11 +28,7 @@ Questa documentazione descrive come implementare notifiche Telegram nel modulo N
 
 ## Introduzione
 
-<<<<<<< HEAD
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. <nome progetto> integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
-=======
-Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. Quaeris integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
->>>>>>> laraxot/dev
 Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua API per bot. App integra Telegram per inviare notifiche relative ad appuntamenti, promemoria e altre comunicazioni importanti.
 
 ## Setup del Bot Telegram
@@ -54,28 +42,17 @@ Telegram offre un'ottima piattaforma per notifiche istantanee grazie alla sua AP
 
 ### Funzionalità del Bot
 
-<<<<<<< HEAD
 Il bot di <nome progetto> deve avere:
 - Privacy Mode disattivata (per leggere messaggi nei gruppi)
 - Comandi personalizzati configurati
 - Immagine del profilo con logo <nome progetto>
-=======
-Il bot di Quaeris deve avere:
-- Privacy Mode disattivata (per leggere messaggi nei gruppi)
-- Comandi personalizzati configurati
-- Immagine del profilo con logo Quaeris
->>>>>>> laraxot/dev
 
 ### Comandi Consigliati
 
 Configura i seguenti comandi per il tuo bot:
 ```
 start - Inizia l'interazione con il bot
-<<<<<<< HEAD
 register - Collega il tuo account Telegram a <nome progetto>
-=======
-register - Collega il tuo account Telegram a Quaeris
->>>>>>> laraxot/dev
 register - Collega il tuo account Telegram a App
 unregister - Scollega il tuo account Telegram
 settings - Gestisci le tue preferenze di notifica
@@ -120,37 +97,21 @@ use NotificationChannels\Telegram\TelegramMessage;
 class AppointmentNotification extends Notification
 {
     protected $appointment;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function via($notifiable)
     {
         return [TelegramChannel::class];
     }
-<<<<<<< HEAD
 
     public function toTelegram($notifiable)
     {
         $url = url("/appointments/{$this->appointment->id}");
 
-=======
-    
-    public function toTelegram($notifiable)
-    {
-        $url = url("/appointments/{$this->appointment->id}");
-        
->>>>>>> laraxot/dev
         return TelegramMessage::create()
             ->content("**Promemoria Appuntamento**\n\nHai un appuntamento il {$this->appointment->formatted_date} alle {$this->appointment->formatted_time} con il Dr. {$this->appointment->doctor->name}.")
             ->button('Visualizza Dettagli', $url)
@@ -189,11 +150,7 @@ public function toTelegram($notifiable)
 public function toTelegram($notifiable)
 {
     $appointmentId = $this->appointment->id;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return TelegramMessage::create()
         ->content("Confermi l'appuntamento del {$this->appointment->formatted_date}?")
         ->buttonWithCallback('Conferma', "confirm_appointment_{$appointmentId}")
@@ -217,17 +174,10 @@ public function toTelegram($notifiable)
 
 ### Collegamento Account Telegram
 
-<<<<<<< HEAD
 Per collegare un account Telegram a un utente <nome progetto>:
 
 1. Implementa un comando `/register` nel bot che generi un token univoco.
 2. L'utente inserisce questo token nel proprio profilo nell'app <nome progetto>.
-=======
-Per collegare un account Telegram a un utente Quaeris:
-
-1. Implementa un comando `/register` nel bot che generi un token univoco.
-2. L'utente inserisce questo token nel proprio profilo nell'app Quaeris.
->>>>>>> laraxot/dev
 3. Salva il `chat_id` Telegram dell'utente nel database.
 
 ```php
@@ -240,39 +190,23 @@ use Modules\Notify\Models\TelegramToken;
 class RegisterCommand extends Command
 {
     protected $name = 'register';
-<<<<<<< HEAD
 protected $description = 'Collega il tuo account Telegram a <nome progetto>';
 protected $description = 'Collega il tuo account Telegram a App';
 
-=======
-protected $description = 'Collega il tuo account Telegram a Quaeris';
-protected $description = 'Collega il tuo account Telegram a App';
-    
->>>>>>> laraxot/dev
     public function handle()
     {
         $chatId = $this->update->getMessage()->getChat()->getId();
         $token = Str::random(8);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         // Salva il token temporaneo
         TelegramToken::create([
             'token' => $token,
             'chat_id' => $chatId,
             'expires_at' => now()->addHours(1),
         ]);
-<<<<<<< HEAD
 
         $this->replyWithMessage([
 'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo <nome progetto> per completare il collegamento."
-=======
-        
-        $this->replyWithMessage([
-'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo Quaeris per completare il collegamento."
->>>>>>> laraxot/dev
 'text' => "Il tuo codice di collegamento è: {$token}\n\nInseriscilo nel tuo profilo App per completare il collegamento."
         ]);
     }
@@ -293,16 +227,11 @@ class VerifyTelegramToken
     public function handle(Request $request, Closure $next)
     {
         $token = $request->input('token');
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         $telegramToken = TelegramToken::where('token', $token)
             ->where('expires_at', '>', now())
             ->whereNull('user_id')
             ->first();
-<<<<<<< HEAD
 
         if (!$telegramToken) {
             return response()->json(['error' => 'Token non valido o scaduto'], 400);
@@ -310,15 +239,6 @@ class VerifyTelegramToken
 
         $request->merge(['telegram_token' => $telegramToken]);
 
-=======
-        
-        if (!$telegramToken) {
-            return response()->json(['error' => 'Token non valido o scaduto'], 400);
-        }
-        
-        $request->merge(['telegram_token' => $telegramToken]);
-        
->>>>>>> laraxot/dev
         return $next($request);
     }
 }
@@ -345,28 +265,16 @@ class TelegramNotificationTest extends TestCase
     {
         $user = User::factory()->create(['telegram_chat_id' => '123456789']);
         $appointment = Appointment::factory()->create();
-<<<<<<< HEAD
 
         $notification = new AppointmentNotification($appointment);
 
         $telegramMessage = $notification->toTelegram($user);
 
-=======
-        
-        $notification = new AppointmentNotification($appointment);
-        
-        $telegramMessage = $notification->toTelegram($user);
-        
->>>>>>> laraxot/dev
         $this->assertStringContainsString(
             $appointment->formatted_date,
             $telegramMessage->content
         );
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         $this->assertCount(2, $telegramMessage->buttons);
     }
 }

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "optimization analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: optimization.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi di Ottimizzazione - Modulo Notify

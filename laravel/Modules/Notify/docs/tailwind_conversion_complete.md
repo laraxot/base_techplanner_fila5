@@ -1,23 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "tailwind conversion complete"
-=======
-title: "TAILWIND CONVERSION COMPLETE"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "tailwind conversion complete"
 issues: []
 discussions: []
 status: draft
-=======
-qmd: "TAILWIND CONVERSION COMPLETE"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # 🎨 TAILWIND CONVERSION COMPLETE - Design Comuni
@@ -27,18 +17,6 @@ discussions: []
 **Status**: ✅ HOMEPAGE COMPLETA  
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "TAILWIND CONVERSION COMPLETE"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "TAILWIND CONVERSION COMPLETE"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 OBIETTIVO RAGGIUNTO
 
 Convertito il design Bootstrap Italia dei Comuni in **Tailwind CSS puro**!

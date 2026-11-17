@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "screenshot analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📸 Screenshot Analysis - Homepage FixCity
@@ -40,18 +37,6 @@ URL: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html
 - Hover: `#0052A3`
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "screenshot analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "screenshot analysis"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ### 2. Hero Section
 ```
 Screenshot: hero_bootstrap_italia.png

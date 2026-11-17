@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "database patterns"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Database patterns
@@ -64,19 +61,11 @@ $rating->save();
 
 ## Rating module (agnostic pattern)
 
-<<<<<<< HEAD
 The Rating module is agnostic: it serves multiple modules (IndennitaResponsabilita, Performance, Progressioni).
 
 - Each module has its own Rating model extending `BaseRating` with only `$connection` override
 - `rule` column (singular) is cast to `RuleEnum`: access via `$rating->rule?->value`
 - `$rating->rules` (plural) does NOT exist: common bug to avoid
-=======
-The Rating module is agnostic — it serves multiple modules (IndennitaResponsabilita, Performance, Progressioni).
-
-- Each module has its own Rating model extending `BaseRating` with only `$connection` override
-- `rule` column (singular) is cast to `RuleEnum` — access via `$rating->rule?->value`
-- `$rating->rules` (plural) does NOT exist — common bug to avoid
->>>>>>> laraxot/dev
 - `extra_attributes->anno` stores year, NOT pivot column
 
 ### RuleEnum pattern

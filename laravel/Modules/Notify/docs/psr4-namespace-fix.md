@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "psr4 namespace fix"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Fix Namespace PSR-4 - Modulo Notify

@@ -13,10 +13,7 @@ related:
   - "./skills-reference.md"
   - "./superpowers.md"
   - "./workflow.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🦸 Superpowers Installation Summary
@@ -304,24 +301,17 @@ Agent: [Systematic debugging]
 ### Internal
 
 - [Main README](docs/superpowers/README.md)
-<<<<<<< HEAD
 - [Installation Guide](installation.md)
-=======
-- [Installation Guide](docs/superpowers/installation.md)
->>>>>>> laraxot/dev
 - [Workflow Guide](docs/superpowers/workflow.md)
 - [Skills Reference](docs/superpowers/skills-reference.md)
 - [Quick Index](docs/superpowers/INDEX.md)
 - [Quick Index](docs/superpowers/index.md)
-<<<<<<< HEAD
 - [Main README](README.md)
 - [Installation Guide](installation.md)
 - [Workflow Guide](workflow.md)
 - [Skills Reference](skills-reference.md)
 - [Quick Index](INDEX.md)
 - [Quick Index](index.md)
-=======
->>>>>>> laraxot/dev
 - [Laravel Integration](laravel/Modules/docs/superpowers.md)
 
 ### External

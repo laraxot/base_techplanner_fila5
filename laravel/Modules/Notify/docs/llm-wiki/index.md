@@ -16,10 +16,7 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Notify Module Wiki Index
 
@@ -67,10 +64,7 @@ _No troubleshooting pages created yet_
 
 - [Laraxot Architecture](../../docs/wiki/concepts/laraxot-architecture.md)
 - [Actions Over Services](../../docs/wiki/concepts/actions-over-services.md)
-<<<<<<< HEAD
 - [Actions Over Services](../../../../../docs/wiki/concepts/actions-over-services.md)
-=======
->>>>>>> laraxot/dev
 - [PHPStan Level 10](../../docs/wiki/concepts/phpstan-level10.md)
 
 ## Module's Role in Project

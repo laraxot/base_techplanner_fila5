@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "risks"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Risks and dependencies (Module Notify)

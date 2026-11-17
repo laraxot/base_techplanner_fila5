@@ -16,11 +16,8 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - naming-conventions.md
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../inheritance-conventions.md
-=======
->>>>>>> laraxot/dev
 ---
 # Convenzioni di Ereditarietà
 

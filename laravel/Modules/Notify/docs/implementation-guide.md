@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "implementation guide"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Guida all'Implementazione dei Template Email

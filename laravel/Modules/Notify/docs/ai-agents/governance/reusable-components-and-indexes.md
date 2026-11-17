@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "reusable components and indexes"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Reusable Components And Indexes

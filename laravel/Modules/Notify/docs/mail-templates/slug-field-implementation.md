@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "slug field implementation"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Implementazione del Campo `slug` in MailTemplate

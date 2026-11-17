@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "packages"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Pacchetti del Modulo Notify
@@ -21,10 +18,7 @@ status: draft
 - [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
 - [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
 - [laraxot/module_tenant_fila5](../tenant/docs/packages.md) - Gestione multi-tenant
-<<<<<<< HEAD
 - [laraxot/module_tenant_fila5](../../Tenant/docs/packages.md) - Gestione multi-tenant
-=======
->>>>>>> laraxot/dev
 
 ### Notifiche
 - [filament/notifications](https://filamentphp.com/docs/notifications) - Sistema notifiche Filament
@@ -84,7 +78,6 @@ status: draft
 * [packages.md](../../../job/docs/packages.md)
 * [packages.md](../../../media/docs/packages.md)
 * [packages.md](../../../tenant/docs/packages.md)
-<<<<<<< HEAD
 * [packages.md](../../Gdpr/docs/packages.md)
 * [packages.md](../../../notify/docs/packages.md)
 * [packages.md](../../../xot/docs/packages.md)
@@ -94,23 +87,9 @@ status: draft
 * [packages.md](../../Job/docs/packages.md)
 * [packages.md](../../Media/docs/packages.md)
 * [packages.md](../../Tenant/docs/packages.md)
-=======
->>>>>>> laraxot/dev
 
 
 ### Versione Incoming
 
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "packages"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "packages"
-issues: []
-discussions: []
->>>>>>> laraxot/dev

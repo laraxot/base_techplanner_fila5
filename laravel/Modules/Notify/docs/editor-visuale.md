@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "editor visuale"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Editor Visuale Template

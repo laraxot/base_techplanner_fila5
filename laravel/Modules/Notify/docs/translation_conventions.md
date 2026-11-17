@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "translation conventions"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Convenzioni per le Traduzioni del Modulo Notify

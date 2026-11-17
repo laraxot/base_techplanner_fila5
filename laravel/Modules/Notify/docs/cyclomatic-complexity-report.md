@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "cyclomatic complexity report"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Cyclomatic Complexity Report - Module: Notify
@@ -19,18 +16,6 @@ status: draft
 **Analyzer:** Super Mucca 🐮
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "cyclomatic complexity report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cyclomatic complexity report"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📊 Summary Statistics
 
 | Metric | Value |

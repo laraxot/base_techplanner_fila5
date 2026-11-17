@@ -121,22 +121,14 @@ class SendSmsPage extends XotBasePage
 
             FilamentNotification::make()
                 ->success()
-<<<<<<< HEAD
                 ->title('SMS inviato con successo')
-=======
-                ->title('SMS sent successfully')
->>>>>>> laraxot/dev
                 ->send();
         } catch (Exception $e) {
             // Log::error('Errore nell\'invio SMS: ' . $e->getMessage());
 
             FilamentNotification::make()
                 ->danger()
-<<<<<<< HEAD
                 ->title('Errore nell\'invio SMS')
-=======
-                ->title('Error sending SMS')
->>>>>>> laraxot/dev
                 ->body($e->getMessage())
                 ->persistent()
                 ->send();

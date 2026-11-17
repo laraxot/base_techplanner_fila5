@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "provider actions architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura delle Azioni dei Provider in Notify

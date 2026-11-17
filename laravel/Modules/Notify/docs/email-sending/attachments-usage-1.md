@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "attachments usage 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "attachments usage 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Utilizzo Corretto degli Allegati nelle Email Spatie
 
 Questa documentazione descrive come utilizzare correttamente il metodo `addAttachments()` nella classe `SpatieEmail` del modulo Notify.
@@ -31,11 +17,7 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 $attachments = [
     [
 <<<<<<< HEAD
-<<<<<<< HEAD
         'path' => 'public_html/images/avatars/default-3.svg',
-=======
-        'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default-3.svg',
->>>>>>> 6ed19256f (.)
 =======
         'path' => 'public_html/images/avatars/default-3.svg',
 >>>>>>> laraxot/dev
@@ -45,11 +27,7 @@ $attachments = [
     // Eventualmente altri allegati...
     [
 <<<<<<< HEAD
-<<<<<<< HEAD
         'path' => 'public_html/documents/terms.pdf',
-=======
-        'path' => '/var/www/html/<nome progetto>/public_html/documents/terms.pdf',
->>>>>>> 6ed19256f (.)
 =======
         'path' => 'public_html/documents/terms.pdf',
 >>>>>>> laraxot/dev
@@ -239,11 +217,7 @@ Ogni allegato può utilizzare **due formati** a seconda della fonte:
 ### Esempio: Email con PDF di Scheda Valutazione
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Vedi [Email PDF Attachments](../../../ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
-=======
-Vedi [Email PDF Attachments](../../../Ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
->>>>>>> 6ed19256f (.)
 =======
 Vedi [Email PDF Attachments](../../../ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
 >>>>>>> laraxot/dev
@@ -325,22 +299,11 @@ foreach ($records as $record) {
 
 ### Documentazione Interna
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Ptv - Complete PDF Email Guide](../../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Xot - PDF Generation Technical](../../../xot/docs/actions/pdf-content-generation-technical.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 - [EMAIL_TROUBLESHOOTING.md](./email_troubleshooting.md)
-<<<<<<< HEAD
-=======
-- [Ptv - Complete PDF Email Guide](../../../Ptv/docs/pdf-email-attachments-complete-guide.md)
-- [Xot - PDF Generation Technical](../../../Xot/docs/actions/pdf-content-generation-technical.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-- [EMAIL_TROUBLESHOOTING.md](email_troubleshooting.md)
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 
@@ -348,11 +311,7 @@ foreach ($records as $record) {
 - `Modules/Notify/app/Emails/SpatieEmail.php` - Gestione allegati
 - `Modules/Notify/app/Notifications/RecordNotification.php` - Notifiche con allegati
 <<<<<<< HEAD
-<<<<<<< HEAD
 - `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
-=======
-- `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
->>>>>>> 6ed19256f (.)
 =======
 - `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
 >>>>>>> laraxot/dev

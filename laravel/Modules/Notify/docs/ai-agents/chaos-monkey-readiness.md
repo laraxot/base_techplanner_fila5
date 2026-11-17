@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "chaos monkey readiness"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Chaos Monkey Readiness - LaravelPizza
@@ -49,8 +46,5 @@ bashscripts/ai/chaos-readiness-check.sh
 
 ## Package Intelligence
 - Global package risk map: `./package-risk-matrix-2026-03-02.md`
-<<<<<<< HEAD
 - Global package risk map: `./package-risk-matrix.md`
-=======
->>>>>>> laraxot/dev
 - Full package inventory: `laravel/Modules/Xot/docs/composer-packages-deep-study-2026-03-02.md`

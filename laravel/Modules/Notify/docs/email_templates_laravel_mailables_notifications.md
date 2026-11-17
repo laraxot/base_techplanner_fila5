@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "email templates laravel mailables notifications"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: email-templates-laravel-mailables-notifications.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Approfondimento: Mailables & Notifications Laravel

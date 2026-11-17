@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "no notification tracking controller"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify: no NotificationTrackingController

@@ -1,23 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "ui ux pro max skills integration"
-=======
-title: "UI UX PRO MAX SKILLS INTEGRATION"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "ui ux pro max skills integration"
 issues: []
 discussions: []
 status: draft
-=======
-qmd: "UI UX PRO MAX SKILLS INTEGRATION"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # 🎨 UI/UX Pro Max Skills - Integration Guide
@@ -258,17 +248,5 @@ Build a landing page with:
 12. Community contribution
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "UI UX PRO MAX SKILLS INTEGRATION"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "UI UX PRO MAX SKILLS INTEGRATION"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Stato**: ✅ **SKILLS INSTALLATE E CONFIGURATE**  
 **Prossimo**: 🧪 Testing e creazione esempi

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "current work status 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "current work status 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Stato Attuale del Lavoro - 12 Maggio 2025
 
 ## Problematiche Identificate
@@ -27,11 +13,7 @@ Durante il lavoro di oggi sono state identificate due problematiche principali n
 ### 2. Problemi con le Traduzioni
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 - **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di <nome progetto>
-=======
-- **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di SaluteOra
->>>>>>> 6ed19256f (.)
 =======
 - **Errore**: File di traduzione come `send_whats_app.php` utilizzano convenzioni che differiscono dalle convenzioni generali di <nome progetto>
 >>>>>>> laraxot/dev
@@ -84,11 +66,7 @@ Durante il lavoro di oggi sono state identificate due problematiche principali n
 ## Note Aggiuntive
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 - È importante rispettare le convenzioni specifiche del modulo Notify, anche se differiscono dalle convenzioni generali di <nome progetto>
-=======
-- È importante rispettare le convenzioni specifiche del modulo Notify, anche se differiscono dalle convenzioni generali di SaluteOra
->>>>>>> 6ed19256f (.)
 =======
 - È importante rispettare le convenzioni specifiche del modulo Notify, anche se differiscono dalle convenzioni generali di <nome progetto>
 >>>>>>> laraxot/dev

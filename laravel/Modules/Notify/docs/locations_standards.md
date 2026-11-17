@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "locations standards"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Standard di Posizionamento dei File in Notify

@@ -11,10 +11,7 @@ name: git-lfs-push-missing-objects
 description: 29 local commits blocked pushing to laraxot with GH008 LFS error; fixed by copying LFS objects from provtv (which already had them) instead of rewriting history
 metadata:
   type: troubleshooting
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Git LFS Push Missing Objects (Notify)
@@ -36,10 +33,7 @@ this module's history.
 
 Unlike the `Modules/User` case (see
 [../../../User/docs/wiki/troubleshooting/git-lfs-orphan-pointer-svg-fix.md](../../../User/docs/wiki/troubleshooting/git-lfs-orphan-pointer-svg-fix.md)),
-<<<<<<< HEAD
 [../../../User/docs/wiki/troubleshooting/git-lfs-orphan-pointer-svg-fix.md](../../../../User/docs/wiki/troubleshooting/git-lfs-orphan-pointer-svg-fix.md)),
-=======
->>>>>>> laraxot/dev
 here the LFS objects were **not** actually lost:
 
 ```bash
@@ -48,11 +42,7 @@ git lfs fetch provtv --all
 ```
 
 `provtv` remote already had the real LFS objects (registered even though
-<<<<<<< HEAD
 `.gitattributes` has no explicit `*.svg filter=lfs` rule: only
-=======
-`.gitattributes` has no explicit `*.svg filter=lfs` rule — only
->>>>>>> laraxot/dev
 `*.psd`/`*.zip`/`*.db` are declared). `laraxot` simply never received them.
 
 ## Fix (no history rewrite)
@@ -81,13 +71,7 @@ squashing unpublished local commits) if no remote has the LFS objects at all.
 
 ## Related
 
-<<<<<<< HEAD
 - `Modules/User`: same symptom, different root cause (real content lost,
   required restoration): `git-lfs-orphan-pointer-svg-fix.md`
 - `docs/multi-org-sync-laraxot-provtv.md` (this module): shared multi-org
-=======
-- `Modules/User` — same symptom, different root cause (real content lost,
-  required restoration): `git-lfs-orphan-pointer-svg-fix.md`
-- `docs/multi-org-sync-laraxot-provtv.md` (this module) — shared multi-org
->>>>>>> laraxot/dev
   coordination note, updated with cross-module LFS troubleshooting pointers

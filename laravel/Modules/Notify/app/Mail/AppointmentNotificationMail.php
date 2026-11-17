@@ -71,10 +71,7 @@ class AppointmentNotificationMail extends Mailable implements ShouldQueue
         $type = $this->notificationData['type'];
 
         // Determina il template da utilizzare in base al tipo di notifica
-<<<<<<< HEAD
         /** @var view-string $view */
-=======
->>>>>>> laraxot/dev
         $view = match ($type) {
             'confirmed' => 'notify::emails.appointments.confirmed',
             'reminder' => 'notify::emails.appointments.reminder',

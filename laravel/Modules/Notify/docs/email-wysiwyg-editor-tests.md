@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email wysiwyg editor tests"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Test Editor WYSIWYG Email - il progetto

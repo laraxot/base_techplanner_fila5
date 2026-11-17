@@ -7,21 +7,14 @@ updated: 2026-09-26
 qmd: "html email compatibility"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Guida alla Compatibilità HTML per Email
 
 ## Introduzione
 
-<<<<<<< HEAD
 Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di <nome progetto> con i diversi client email.
-=======
-Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di Quaeris con i diversi client email.
->>>>>>> laraxot/dev
 Questo documento fornisce linee guida dettagliate per garantire la massima compatibilità dei template email utilizzati nel modulo Notify di App con i diversi client email.
 
 ## Compatibilità Client Email

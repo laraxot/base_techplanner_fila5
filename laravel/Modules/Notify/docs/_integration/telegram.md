@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "telegram"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../-integration/telegram.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # telegram

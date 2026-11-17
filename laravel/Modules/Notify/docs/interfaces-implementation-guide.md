@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "interfaces implementation guide"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Guida all'Implementazione delle Interfacce nel Modulo Notify
@@ -115,12 +112,9 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-<<<<<<< HEAD
 - [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
 - [Architettura dei Contratti](./contracts_architecture.md)
-=======
->>>>>>> laraxot/dev
 # Guida all'Implementazione delle Interfacce nel Modulo Notify
 
 ## Struttura delle Interfacce
@@ -219,9 +213,6 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-<<<<<<< HEAD
 - [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
 - [Architettura dei Contratti](./contracts_architecture.md)
-=======
->>>>>>> laraxot/dev

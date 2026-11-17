@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_B1uwAk
 ---
 title: "consents"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_pocbL9
 https://packagist.org/packages/dialect/laravel-gdpr-compliance
 
 https://github.com/papertank/origami-consent

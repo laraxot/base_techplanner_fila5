@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email notifications"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistema Notifiche Email - il progetto

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Filament (Claude)
@@ -63,9 +60,5 @@ When working with protected Filament files:
 ## Links
 
 - [Claude docs index](./context.md)
-<<<<<<< HEAD
 - [Filament rules prompt](../../../../../bashscripts/tools/prompts/filament-rules.md)
-=======
-- [Filament rules prompt](../../bashscripts/tools/prompts/filament-rules.md)
->>>>>>> laraxot/dev
 - [General docs](../../docs/README.md)

@@ -6,7 +6,6 @@ canonical: ../../../Themes/docs/shared-components/phpstan-corrections-summary-Mo
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-corrections-summary-Modules.md
-=======
 # Riepilogo Correzioni PHPStan - Modulo User
 
 **Data**: 2025-01-22

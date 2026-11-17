@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "notify send email translations improvements"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistemazione e Miglioramenti File Traduzione send_email.php - Modulo Notify

@@ -1,15 +1,16 @@
 ---
 title: "[STORY] PHPStan zero errori: modulo User"
 type: story
-status: done
+status: in-progress
 priority: high
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-11-17
 tags: [phpstan, user, typecoverage, seeder, pest, bmad, swarm]
 related:
   - "./7.4.phpstan-paramtype-coverage.story.md"
   - "./phpstan-zero-errors-user.dev.md"
   - "../../../../../docs/stories/all-modules-phpstan-zero-errors.story.md"
+  - "../phpstan-fixes.md"
 ---
 
 # Story: PHPStan zero errori: modulo User

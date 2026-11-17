@@ -3,11 +3,7 @@ tags: [documentation]
 qmd: "notify pest suite database resolver broken.story"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "Modules/Notify: la suite Pest non riesce a interrogare il database in modo affidabile: la maggior parte dei file di test fallisce per il bootstrap, non per la logica"
-=======
-title: "Modules/Notify: la suite Pest non riesce a interrogare il database in modo affidabile — la maggior parte dei file di test fallisce per il bootstrap, non per la logica"
->>>>>>> laraxot/dev
 type: story
 module: Notify
 epic: null
@@ -28,11 +24,7 @@ owned_scope:
   - "laravel/Modules/Notify/tests/TestCase.php"
   - "laravel/Modules/Xot/tests/XotBaseTestCase.php"
 related:
-<<<<<<< HEAD
   - "../../<nome progetto>/docs/stories/<nome progetto>-send-invite-migrate-to-record-notification.md"
-=======
-  - "../../Quaeris/docs/stories/quaeris-send-invite-migrate-to-record-notification.md"
->>>>>>> laraxot/dev
   - "../testing-testcaseatabase-connection.md"
   - "../testing-testcase-database-connection-fix.md"
 ---
@@ -42,11 +34,7 @@ related:
 ## Contesto
 
 Scoperto il 2026-09-15 facendo il Task 8 (AC12) della story
-<<<<<<< HEAD
 `<nome progetto>-send-invite-migrate-to-record-notification.md` (`module_<nome progetto>_fila5#38`):
-=======
-`quaeris-send-invite-migrate-to-record-notification.md` (`module_quaeris_fila5#38`):
->>>>>>> laraxot/dev
 una passata Pest completa, file per file, per verificare che le modifiche di
 quella story non avessero introdotto regressioni in `Modules/Notify`.
 
@@ -58,29 +46,17 @@ test: **risultati identici, file per file**, prima e dopo le modifiche.
 ## Scala del problema
 
 Eseguendo ogni file di test di `Modules/Notify` singolarmente (137 file totali
-<<<<<<< HEAD
 tra Notify e <nome progetto>, per evitare l'inquinamento tra file di cui sotto):
-=======
-tra Notify e Quaeris, per evitare l'inquinamento tra file di cui sotto):
->>>>>>> laraxot/dev
 **~75 file su ~90 in `Modules/Notify` hanno almeno un test fallito.**
 
 Due sintomi diversi, probabilmente la stessa causa radice:
 1. Alcuni file falliscono dal primo test che tocca davvero il database, con
    `Error: Call to a member function connection() on null` (in
-<<<<<<< HEAD
    `Illuminate\Database\Eloquent\Model::resolveConnection()` -
    `static::$resolver` è `null`).
 2. Altri file hanno i primi test (di solito reflection pura, nessun accesso al
    DB) verdi, poi il primo che tocca davvero il database fallisce con
    `BindingResolutionException: Target class [config] does not exist`: e da
-=======
-   `Illuminate\Database\Eloquent\Model::resolveConnection()` —
-   `static::$resolver` è `null`).
-2. Altri file hanno i primi test (di solito reflection pura, nessun accesso al
-   DB) verdi, poi il primo che tocca davvero il database fallisce con
-   `BindingResolutionException: Target class [config] does not exist` — e da
->>>>>>> laraxot/dev
    quel punto in poi, nello stesso file, ogni test successivo fallisce a
    cascata con lo stesso errore (il container Laravel risulta svuotato di
    binding di base come `'config'`).
@@ -98,11 +74,7 @@ it('can count mail templates', function (): void {
 ```
 
 Fallisce identico sia in `Modules/Notify/tests/Unit/Emails/` sia in
-<<<<<<< HEAD
 `Modules/Notify/tests/Unit/Models/` (cartelle diverse, stesso risultato): non
-=======
-`Modules/Notify/tests/Unit/Models/` (cartelle diverse, stesso risultato) — non
->>>>>>> laraxot/dev
 è una questione di dove si trova il file, è la prima query reale a
 `MailTemplate` (connessione `notify`) in un processo Pest pulito a fallire.
 
@@ -132,17 +104,10 @@ esatto in cui questo metodo gira (es. perché la config del modulo Notify non è
 ancora stata mergiata, o perché in questo ambiente la connessione resta
 `mysql` per qualche altro motivo), `notify` **non entra in questo meccanismo**
 e resta affidata al comportamento normale di Testbench per la connessione
-<<<<<<< HEAD
 reale: che in questo ambiente, per qualche motivo non ancora isolato, non
 basta a inizializzare `Model::$resolver` in modo affidabile.
 
 ## Nota storica: un fix diverso per un problema simile, oggi non più presente
-=======
-reale — che in questo ambiente, per qualche motivo non ancora isolato, non
-basta a inizializzare `Model::$resolver` in modo affidabile.
-
-## Nota storica — un fix diverso per un problema simile, oggi non più presente
->>>>>>> laraxot/dev
 
 Due documenti esistenti in questo stesso modulo, entrambi marcati
 **"Status: Completed"** (gennaio 2025):
@@ -154,29 +119,17 @@ descrivono un problema quasi identico nel sintomo
 (`InvalidArgumentException: Database connection [notify] not configured`) e un
 fix **diverso**: configurare esplicitamente ogni connessione (incluso
 `notify`) a sqlite in-memory dentro `setUp()`, poi lanciare
-<<<<<<< HEAD
 `php artisan module:migrate` per Xot/User/Notify nello stesso metodo: nessuna
-=======
-`php artisan module:migrate` per Xot/User/Notify nello stesso metodo — nessuna
->>>>>>> laraxot/dev
 dipendenza da un file sqlite pre-costruito esternamente.
 
 Quel pattern **non è più nel codice attuale**: è stato sostituito da
 `prepareSharedSqliteForTesting()`/`xot:build-test-sqlite` (probabilmente per
-<<<<<<< HEAD
 velocità: un file condiviso invece di ricostruire lo schema per ogni
-=======
-velocità — un file condiviso invece di ricostruire lo schema per ogni
->>>>>>> laraxot/dev
 processo). Non è chiaro, senza indagare oltre, se questa sostituzione abbia
 reintrodotto lo stesso problema del 2025 in una forma diversa, o se sia un
 problema distinto introdotto dal nuovo meccanismo.
 
-<<<<<<< HEAD
 ## Impatto concreto sulla story `module_<nome progetto>_fila5#38`
-=======
-## Impatto concreto sulla story `module_quaeris_fila5#38`
->>>>>>> laraxot/dev
 
 Il Task 7 di quella story (test Pest per `SendInviteAction`) non è impattato:
 usa `Notification::fake()`, che non tocca mai il database per davvero.
@@ -184,11 +137,7 @@ usa `Notification::fake()`, che non tocca mai il database per davvero.
 Ma per proteggere con un test reale il Difetto 16 (`SpatieEmail` non
 valorizzava `html_layout_path` sui template auto-creati) e la prima metà del
 Difetto 17 (`RecordNotification::toSms()` doveva ritornare `null` a corpo
-<<<<<<< HEAD
 vuoto) serve davvero interrogare `MailTemplate`: e questo problema lo
-=======
-vuoto) serve davvero interrogare `MailTemplate` — e questo problema lo
->>>>>>> laraxot/dev
 impedisce. Due file di test sono stati scritti e sono corretti (verificato che
 la stessa identica cosa, banale e priva di qualunque logica di dominio, fallisce
 allo stesso modo), ma restano rossi per questa causa esterna:
@@ -204,11 +153,7 @@ tocca il database:
 ## Cosa NON è stato fatto, deliberatamente
 
 Nessun tentativo di modificare `prepareSharedSqliteForTesting()`,
-<<<<<<< HEAD
 `XotBaseTestCase.php`, o `Notify/tests/TestCase.php`: su richiesta esplicita
-=======
-`XotBaseTestCase.php`, o `Notify/tests/TestCase.php` — su richiesta esplicita
->>>>>>> laraxot/dev
 dell'utente di capire meglio il problema prima di decidere come affrontarlo.
 Questa story è analisi/tracciamento, non un fix.
 
@@ -224,15 +169,9 @@ Questa story è analisi/tracciamento, non un fix.
    richiesta non rientra nel meccanismo shared-sqlite, o se il problema è
    altrove (es. ordine dei service provider, cache di boot).
 4. Verificare se il problema è specifico di questa macchina/ambiente locale o
-<<<<<<< HEAD
    riproducibile anche in CI: cambia molto la priorità.
 
 ## Acceptance Criteria (per una futura story di fix: non questa)
-=======
-   riproducibile anche in CI — cambia molto la priorità.
-
-## Acceptance Criteria (per una futura story di fix — non questa)
->>>>>>> laraxot/dev
 
 1. Un test Pest nuovo, minimo, che interroga `Modules\Notify\Models\MailTemplate`
    come prima operazione del file, passa in modo affidabile e ripetibile.

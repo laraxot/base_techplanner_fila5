@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "class inheritance principles"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Principi di Ereditarietà nelle Classi

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "channel enum refactoring"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Refactoring: Replace CHANNEL_CONFIG with Smart Enum

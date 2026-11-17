@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "tailwind email system"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistema Email con Tailwind CSS nel Modulo Notify

@@ -1,27 +1,9 @@
-<<<<<<< HEAD
-=======
----
-title: "modern email design patterns 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modern email design patterns 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Pattern di Design per Email Moderne
 
 ## Introduzione
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Questo documento esplora i pattern di design più efficaci per le email moderne, basati sull'analisi di numerosi framework e risorse specializzate nel settore. L'obiettivo è fornire linee guida per creare email che massimizzino l'engagement mantenendo compatibilità cross-client e aderenza alle best practices di <nome progetto>.
-=======
-Questo documento esplora i pattern di design più efficaci per le email moderne, basati sull'analisi di numerosi framework e risorse specializzate nel settore. L'obiettivo è fornire linee guida per creare email che massimizzino l'engagement mantenendo compatibilità cross-client e aderenza alle best practices di SaluteOra.
->>>>>>> 6ed19256f (.)
 =======
 Questo documento esplora i pattern di design più efficaci per le email moderne, basati sull'analisi di numerosi framework e risorse specializzate nel settore. L'obiettivo è fornire linee guida per creare email che massimizzino l'engagement mantenendo compatibilità cross-client e aderenza alle best practices di <nome progetto>.
 >>>>>>> laraxot/dev
@@ -369,9 +351,5 @@ return [
 
 - [Responsive Email Templates](./RESPONSIVE_EMAIL_TEMPLATES.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
-<<<<<<< HEAD
 - [HTML Email Compatibility](mail-templates/html_email_compatibility.md)
-=======
-- [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
->>>>>>> laraxot/dev
 - [Spatie Email Integration](./SPATIE_EMAIL_USAGE_GUIDE.md)

@@ -16,18 +16,12 @@ related:
   - ../../../notifications/readme.md
   - ../../../integrations/readme.md
   - ../../../templates/readme.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Laravel Boost Guidelines (../../../../docs/CLAUDE.md) Index
 
 **Source**: [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/CLAUDE.md) (833 lines)  
-<<<<<<< HEAD
 **Source**: [`docs/../../../../docs/CLAUDE.md`](../../../../../../../docs/CLAUDE.md) (833 lines)  
-=======
->>>>>>> laraxot/dev
 **Split Into**: 20 focused files  
 **Last Updated**: 2026-04-11  
 
@@ -99,38 +93,25 @@ status: draft
 ## Cross-References
 
 ### Related Documentation
-<<<<<<< HEAD
 - ← [BMad Agents Index](../../agents/index.md): 10 agent definitions
 - ← [BMad Agents Index](../agents/index.md): 10 agent definitions
 - ← [BMad Tasks Index](../tasks/index.md): 22 reusable tasks
 - ← [GEMINI Index](../gemini/index.md): Gemini-specific rules
 - ← [Main AI Docs Index](../index.md): Master index
-=======
-- ← [BMad Agents Index](../../agents/index.md) — 10 agent definitions
-- ← [BMad Tasks Index](../tasks/index.md) — 22 reusable tasks
-- ← [GEMINI Index](../gemini/index.md) — Gemini-specific rules
-- ← [Main AI Docs Index](../index.md) — Master index
->>>>>>> laraxot/dev
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
 - ← Back to [../../../../docs/CLAUDE.md](../../../../../../docs/../../../../docs/CLAUDE.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
-<<<<<<< HEAD
 - ← Back to [../../../../docs/CLAUDE.md](../../../../../../../docs/CLAUDE.md) (original source)
 - ← Back to [Project Docs](../../../README.md)
-=======
->>>>>>> laraxot/dev
 
 ---
 
 ## Usage
 
 These guidelines are automatically loaded by Claude/Laravel Boost MCP. For manual reference, see the original [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/CLAUDE.md).
-<<<<<<< HEAD
 These guidelines are automatically loaded by Claude/Laravel Boost MCP. For manual reference, see the original [`docs/../../../../docs/CLAUDE.md`](../../../../../../../docs/CLAUDE.md).
-=======
->>>>>>> laraxot/dev
 
 ---
 

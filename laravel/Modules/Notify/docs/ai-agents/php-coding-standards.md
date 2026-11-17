@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "php coding standards"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # PHP coding standards (strict)

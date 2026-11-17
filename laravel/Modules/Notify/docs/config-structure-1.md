@@ -1,9 +1,5 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 # Struttura di Configurazione nei Moduli <nome progetto>
-=======
-# Struttura di Configurazione nei Moduli SaluteOra
->>>>>>> 6ed19256f (.)
 =======
 ---
 title: "config structure 1"

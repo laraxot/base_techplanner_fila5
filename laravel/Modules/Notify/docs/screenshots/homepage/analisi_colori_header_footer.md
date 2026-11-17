@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "analisi colori header footer"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📸 Analisi Visiva Header & Footer - FixCity vs Bootstrap Italia
@@ -19,18 +16,6 @@ status: draft
 ## Data: {{ date('Y-m-d H:i:s') }}
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "analisi colori header footer"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi colori header footer"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Problema Identificato
 
 **URL Reference**: https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html  

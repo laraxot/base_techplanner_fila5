@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "00 index"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📖 Guidelines Index
@@ -21,18 +18,6 @@ status: draft
 **Files**: 2 guidelines
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Purpose
 
 Guidelines sono **best practices** e **raccomandazioni** per AI agents.  

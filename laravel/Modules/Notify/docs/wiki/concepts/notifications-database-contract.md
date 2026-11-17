@@ -1,26 +1,16 @@
 ---
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "notifications: schema Notify, runtime User"
-=======
-title: "notifications — schema Notify, runtime User"
->>>>>>> laraxot/dev
 type: concept
 tags: [notify, notifications, migration, database, user-connection, xotbasemigration]
 created: 2026-06-10
 updated: 2026-06-10
 qmd: notifications database notify owner xotbasemigration user forbidden
-<<<<<<< HEAD
 status: draft
 ---
 
 # notifications: schema Notify, runtime User
-=======
----
-
-# notifications — schema Notify, runtime User
->>>>>>> laraxot/dev
 
 ## Religione (boundary)
 
@@ -70,23 +60,16 @@ php artisan migrate
 
 ## Runtime guard
 
-<<<<<<< HEAD
 `Modules\User\Support\NotificationSchema::isReadable()`: header FO e widget non queryano pre-migrate.
-=======
-`Modules\User\Support\NotificationSchema::isReadable()` — header FO e widget non queryano pre-migrate.
->>>>>>> laraxot/dev
 
 ## Collegamenti
 
 - [no-notifications-migration-in-user-module](../../User/docs/wiki/rules/no-notifications-migration-in-user-module.md)
 - [notifications-runtime-model](../../User/docs/wiki/concepts/notifications-runtime-model.md)
 - [one-migration-per-model](../../../../../docs/wiki/memories/one-migration-per-model-bump-timestamp.md)
-<<<<<<< HEAD
 - [no-notifications-migration-in-user-module](../../../../User/docs/wiki/rules/no-notifications-migration-in-user-module.md)
 - [notifications-runtime-model](../../../../User/docs/wiki/concepts/notifications-runtime-model.md)
 - [one-migration-per-model](../../../../../../docs/wiki/memories/one-migration-per-model-bump-timestamp.md)
-=======
->>>>>>> laraxot/dev
 
 
 ## Pagina FO collegata (User + Sixteen)
@@ -102,8 +85,5 @@ La migrazione Notify abilita il DB; la **pagina** e il **link header** sono altr
 
 - [notifications-folio-page.md](../../User/docs/wiki/concepts/notifications-folio-page.md)
 - [folio-list-vs-route-list.md](../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md)
-<<<<<<< HEAD
 - [notifications-folio-page.md](../../../../User/docs/wiki/concepts/notifications-folio-page.md)
 - [folio-list-vs-route-list.md](../../../../Cms/docs/wiki/concepts/folio-list-vs-route-list.md)
-=======
->>>>>>> laraxot/dev

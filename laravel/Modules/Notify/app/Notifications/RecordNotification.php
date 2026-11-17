@@ -128,11 +128,7 @@ class RecordNotification extends Notification implements ShouldQueue
         // Build SMS content using SpatieEmail (which handles template resolution and placeholder replacement)
         $smsBody = $email->buildSms();
 
-<<<<<<< HEAD
         // Story <nome progetto>-send-invite-migrate-to-record-notification.md, Difetto 17
-=======
-        // Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 17
->>>>>>> laraxot/dev
         // (AC7, 2026-09-15): un survey senza sms_template configurato non lancia
         // nessuna eccezione qui — buildSms() ritorna semplicemente stringa vuota
         // (Mustache::render('', ...)). Senza questo controllo, un SMS reale con
@@ -142,11 +138,7 @@ class RecordNotification extends Notification implements ShouldQueue
             return null;
         }
 
-<<<<<<< HEAD
         // Story <nome progetto>-send-invite-migrate-to-record-notification.md, Difetto 9:
-=======
-        // Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 9:
->>>>>>> laraxot/dev
         // il mittente era il letterale 'Xot'. Ora SpatieEmail lo risolve dal
         // MailTemplate (colonna sms_from), con fallback a config('sms.from').
         $smsFrom = $email->buildSmsFrom();

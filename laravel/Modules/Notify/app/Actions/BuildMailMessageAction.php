@@ -34,10 +34,7 @@ class BuildMailMessageAction
 
         /** @var NotifyThemeData $theme */
         $theme = app(Get::class)->execute($name, $type, $view_params);
-<<<<<<< HEAD
         /** @var view-string $view_html */
-=======
->>>>>>> laraxot/dev
         $view_html = 'notify::email';
         // dddx([$theme, $view_params]);
         /** @var string $fromAddress */

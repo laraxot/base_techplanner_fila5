@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "file naming rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Regole di Naming per File

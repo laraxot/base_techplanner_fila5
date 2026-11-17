@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "analisi dettagliata"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Dettagliata del Modulo Notify

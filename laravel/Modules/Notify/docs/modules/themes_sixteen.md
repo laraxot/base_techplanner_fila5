@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "themes sixteen"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Gestione asset Vite per il tema Sixteen
@@ -31,15 +28,12 @@ Segui questi passaggi per risolvere:
 
 1. Vai nella cartella del tema:
    ```bash
-<<<<<<< HEAD
    cd /var/www/html/_bases/base_fixcity_fila5/laravel/Themes/Sixteen
    ```
 2. Esegui il comando:
    ```bash
 <<<<<<< .merge_file_jhyFIG
    # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_ymDu11
 =======
    cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
    ```
@@ -52,23 +46,9 @@ Segui questi passaggi per risolvere:
 Questo comando pubblica gli asset necessari e risolve l'errore.
 
 ---
-<<<<<<< HEAD
 ## Collegamenti
 - [Documentazione asset Vite nel tema](../../Themes/Sixteen/docs/assets.md)
 - [Documentazione asset Vite nel tema](../../../../Themes/Sixteen/docs/assets.md)
-=======
-
-title: "themes sixteen"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "themes sixteen"
-issues: []
-discussions: []
-## Collegamenti
-- [Documentazione asset Vite nel tema](../../Themes/Sixteen/docs/assets.md)
->>>>>>> laraxot/dev
 - [Indice gestione temi e asset](../temi_asset.md) *(creare se non esiste)*
 
 ---

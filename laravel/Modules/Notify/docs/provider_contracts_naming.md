@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "provider contracts naming"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Convenzioni di Naming per i Contracts 

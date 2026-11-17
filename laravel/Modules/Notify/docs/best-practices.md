@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "best practices"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Best Practices e Raccomandazioni

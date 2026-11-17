@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "notification behavior"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: notification-behavior.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notification System Behavior

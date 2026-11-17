@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 # Standard per le Traduzioni
 
 <<<<<<< HEAD
 Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di <nome progetto>, con particolare attenzione al modulo Notify.
-=======
-Questo documento definisce gli standard e le best practices per la gestione delle traduzioni all'interno dei moduli di SaluteOra, con particolare attenzione al modulo Notify.
->>>>>>> 6ed19256f (.)
 =======
 ---
 title: "translation standards 1"

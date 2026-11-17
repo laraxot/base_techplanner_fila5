@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sms factorata implementation"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # SmsFactorData Implementation Summary

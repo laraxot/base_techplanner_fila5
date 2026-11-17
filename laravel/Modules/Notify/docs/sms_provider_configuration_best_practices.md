@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sms provider configuration best practices"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Best Practices per la Configurazione dei Provider SMS
@@ -130,10 +127,7 @@ $token = config('services.netfun.token');
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [SMS Best Practices](./SMS_BEST_PRACTICES.md)
 - [Netfun Authentication Methods](./NETFUN_AUTHENTICATION_METHODS.md)
-<<<<<<< HEAD
 - [SMS Provider Architecture](./sms_provider_architecture.md)
 - [SMS Implementation](./sms_implementation.md)
 - [SMS Best Practices](./sms_best_practices.md)
 - [Netfun Authentication Methods](./netfun_authentication_methods.md)
-=======
->>>>>>> laraxot/dev

@@ -11,10 +11,7 @@ updated: 2026-06-10
 tags: [migration, notifications, module-owner, notify, user]
 related:
   - ../../../../wiki/rules/one-migration-per-model.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notifications Migration Ownership

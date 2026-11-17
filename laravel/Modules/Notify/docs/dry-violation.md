@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "dry violation"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # ✅ DRY Violation Analysis - Risoluzione delle Cagatas Seasonal
@@ -19,18 +16,6 @@ status: draft
 **Approccio**: **DRY + KISS applicati correttamente**
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "dry violation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dry violation"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📋 Successo: "Fare GetSeasonalEmailLayoutAction e DetermineSeasonalLayoutPathAction era una cagata!"
 
 ### Problema Identificato e Risolto

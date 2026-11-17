@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "modular documentation refactoring"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📚 MODULAR DOCUMENTATION REFACTORING REPORT
@@ -20,18 +17,6 @@ status: draft
 **Principio**: "Boy Scout Rule - Lascia i file migliori di come li hai trovati"
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "modular documentation refactoring"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modular documentation refactoring"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 OBIETTIVO
 
 Organizzare la documentazione AI agents in file modulari più piccoli e gestibili, con collegamenti bidirezionali.
@@ -126,11 +111,7 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 |---------|------|
 | Panoramica | [.agents/docs/overview/agents-overview.md](./.agents/docs/overview/agents-overview.md) |
 | Workflow | [.agents/docs/workflow/agents-gsd-bmad.md](./.agents/docs/workflow/agents-gsd-bmad.md) |
-<<<<<<< HEAD
 | Architecture | [.agents/docs/architecture/agents-module-architecture.md](agents-module-architecture.md) |
-=======
-| Architecture | [.agents/docs/architecture/agents-module-architecture.md](./.agents/docs/architecture/agents-module-architecture.md) |
->>>>>>> laraxot/dev
 ```
 
 ### Da Moduli a File Originali
@@ -146,11 +127,7 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 ```markdown
 # .agents/docs/architecture/agents-filament-widgets.md
 ## Riferimenti
-<<<<<<< HEAD
 - [Coding Standards](agents-coding-standards.md)
-=======
-- [Coding Standards](../standards/agents-coding-standards.md)
->>>>>>> laraxot/dev
 - [Module Architecture](./agents-module-architecture.md)
 - [Quality Gate](../workflow/agents-quality-gate.md)
 ```

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "project roadmap"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # ROADMAP PRINCIPALE - Progetto Fixcity
@@ -168,11 +165,7 @@ Creare una piattaforma digitale che connetta cittadini, amministrazioni pubblich
 ## Risorse e Documentazione
 
 ### Documentazione Tecnica
-<<<<<<< HEAD
 - [Architecture Guide](./ARCHITECTURE.md)
-=======
-- [Architecture Guide](./architecture.md)
->>>>>>> laraxot/dev
 - [API Documentation](./api-docs.md)
 - [Database Schema](./database-schema.md)
 - [Deployment Guide](./deployment.md)

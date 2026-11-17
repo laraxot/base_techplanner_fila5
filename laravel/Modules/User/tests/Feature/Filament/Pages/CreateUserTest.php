@@ -12,6 +12,8 @@ use PHPUnit\Framework\Assert;
 /**
  * Verifica che CreateUser esponga il contratto Filament atteso
  * (resource, model, form) senza dipendere dal tenant di rotta.
+ *
+ * Usa TestCase::$createUserPage (tipizzato) — non $this->page mistyped.
  */
 uses(TestCase::class);
 
@@ -41,7 +43,7 @@ test('create user page has correct breadcrumbs structure', function (): void {
     try {
         $breadcrumbs = $page->getBreadcrumbs();
     } catch (Exception) {
-        test()->markTestSkipped('Breadcrumbs need route parameters not available in multi-tenant setup.');
+        $this->markTestSkipped('Breadcrumbs need route parameters not available in multi-tenant setup.');
     }
 
     // Filament aggiunge sempre almeno il breadcrumb della pagina corrente.

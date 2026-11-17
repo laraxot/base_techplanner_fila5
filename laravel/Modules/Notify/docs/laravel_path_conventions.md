@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "laravel path conventions"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Convenzioni dei Path in Laravel e SaluteOra

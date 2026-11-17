@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "queueable actions"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: queueable-actions.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Queueable Actions con Spatie in Notify

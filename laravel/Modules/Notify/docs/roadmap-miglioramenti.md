@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "roadmap miglioramenti"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
@@ -19,18 +18,6 @@ status: draft
 > questo documento: 823 test e quasi nessuna riga toccata. Non è "manca
 > copertura", è che 800 e passa test probabilmente ripetono lo stesso
 > percorso o non arrivano mai al codice vero: capire perché viene prima di
-=======
----
-
-# Roadmap — Notify, il modulo che parla con sei canali e con sé stesso 4533 volte
-
-> Numeri misurati: [`docs/cosa-migliorare.md`](cosa-migliorare.md) (80,
-> 2026-09-01) — PHPStan 0, PHPMD app/ 191, Code 91.8, Arch 85.7, **823 casi
-> test, coverage 6,3% ⚠**. Questo è il dato che conta più di ogni altro in
-> questo documento: 823 test e quasi nessuna riga toccata. Non è "manca
-> copertura", è che 800 e passa test probabilmente ripetono lo stesso
-> percorso o non arrivano mai al codice vero — capire perché viene prima di
->>>>>>> laraxot/dev
 > scriverne un ottocentoquattresimo.
 
 Prima il numero, perché va detto una volta sola e forte: **4533 file
@@ -38,12 +25,8 @@ markdown in `docs/`**, contro 233 file PHP in `app/`. Un rapporto di quasi 20
 documenti per ogni file di codice. Questo non è un modulo ben documentato, è
 un modulo che ha smesso di distinguere fra scrivere e ricordare. Prova
 diretta, senza bisogno di aprirli: nella sola root di `docs/` convivono
-<<<<<<< HEAD
 `00-index.md`, `00-index.md`, `00-index-2.md` e `00-INDEX.md`: quattro
 `00-index.md`, `00-index-documentation.md`, `00-index-2.md` e `00-INDEX.md`: quattro
-=======
-`00-index.md`, `00-index-1.md`, `00-index-2.md` e `00-INDEX.md` — quattro
->>>>>>> laraxot/dev
 indici per un unico modulo, nessuno dei quattro probabilmente aggiornato
 dopo la nascita degli altri tre. E poi `absolute-completion.md` insieme ad
 `ABSOLUTE_COMPLETION_100.md`: un modulo che si certifica "completo al 100%"
@@ -57,11 +40,7 @@ scritto da chi lo usa davvero: `aws/aws-sdk-php`, `irazasyed/telegram-bot-sdk`,
 `kreait/laravel-firebase`, `laravel-notification-channels/fcm`,
 `laravel-notification-channels/telegram`,
 `spatie/laravel-database-mail-templates`, `symfony/postmark-mailer`. Email,
-<<<<<<< HEAD
 SMS, WhatsApp, Telegram, FCM push: sei canali di comunicazione con il mondo
-=======
-SMS, WhatsApp, Telegram, FCM push — sei canali di comunicazione con il mondo
->>>>>>> laraxot/dev
 esterno, ciascuno con la propria superficie di errore (rate limit, token
 scaduti, webhook malformati). E poi, come tutti gli altri: `require-dev: []`.
 Il modulo con più integrazioni esterne del lotto è anche quello con zero
@@ -70,11 +49,7 @@ se ne accorga un utente che non ha ricevuto la notifica.
 
 ## Le pipeline che esistono già e non sono mai partite
 
-<<<<<<< HEAD
 `.github/workflows/` non è vuoto: contiene `module-release.yml_test`,
-=======
-`.github/workflows/` non è vuoto — contiene `module-release.yml_test`,
->>>>>>> laraxot/dev
 `sync-remote-repo.yml_test`, `sync-subtrees.yml_test`: tre file da 4-10 KB
 ciascuno, con l'estensione `.yml_test` invece di `.yml`, che li rende inerti
 per GitHub Actions (non vengono mai eseguiti, sono solo lì). Qualcuno ha
@@ -87,22 +62,14 @@ che serve, solo bloccato da un'estensione sbagliata.
 
 ## 28 marcatori, e i canali mancanti sono elencati da soli
 
-<<<<<<< HEAD
 28 occorrenze TODO/FIXME/@phpstan-ignore in `app/`: il numero più alto dei
-=======
-28 occorrenze TODO/FIXME/@phpstan-ignore in `app/` — il numero più alto dei
->>>>>>> laraxot/dev
 cinque moduli. Non sono rumore generico: `WhatsAppNotification.php:65` dice
 letteralmente "TODO: Implementare WhatsAppChannel quando disponibile",
 `TelegramChannel.php:26` e `:34` elencano due metodi non ancora scritti
 (`toTelegram`, più `BotTelegramAction`/`TelegramMessageData` mancanti). Il
 modulo dichiara nel proprio `composer.json` di supportare Telegram e
 WhatsApp, ma il codice sotto dice "non ancora". C'è anche
-<<<<<<< HEAD
 `HasNotificationRateLimiting.php` marcato `@phpstan-ignore trait.unused` -
-=======
-`HasNotificationRateLimiting.php` marcato `@phpstan-ignore trait.unused` —
->>>>>>> laraxot/dev
 un rate limiter dichiarato ma mai collegato, in un modulo che parla con AWS,
 Firebase e Telegram senza, a quanto pare, nulla che lo freni se un job va in
 loop.
@@ -110,7 +77,6 @@ loop.
 ## Priorità concrete
 
 1. Rinominare (o cancellare, dopo lettura) i tre `.yml_test` in `.yml` reali
-<<<<<<< HEAD
   : è la scorciatoia più veloce verso una CI funzionante che questo modulo
    abbia mai avuto a un rename di distanza.
 2. `require-dev` con larastan/pest: con sei integrazioni esterne, phpstan è
@@ -118,15 +84,6 @@ loop.
    prima del deploy.
 3. Chiudere davvero i tre TODO su WhatsApp/Telegram o rimuovere le classi
    stub dal namespace pubblico: un canale "supportato" a metà è peggio di
-=======
-   — è la scorciatoia più veloce verso una CI funzionante che questo modulo
-   abbia mai avuto a un rename di distanza.
-2. `require-dev` con larastan/pest — con sei integrazioni esterne, phpstan è
-   l'unico modo economico di sapere se un cambio di SDK ha rotto un canale
-   prima del deploy.
-3. Chiudere davvero i tre TODO su WhatsApp/Telegram o rimuovere le classi
-   stub dal namespace pubblico — un canale "supportato" a metà è peggio di
->>>>>>> laraxot/dev
    un canale assente, perché qualcuno ci proverà.
 4. Un solo indice (`00-index.md`), i tre fratelli cancellati dopo aver
    verificato cosa contenevano di unico; stesso trattamento per i due
@@ -137,10 +94,6 @@ loop.
    moltiplicate. Un report `--coverage` con la lista dei file a 0% è il
    punto di partenza, non un'altra sessione di scrittura test alla cieca.
 
-<<<<<<< HEAD
 Notify ha l'ambizione giusta: sei canali reali, non promesse: e la
-=======
-Notify ha l'ambizione giusta — sei canali reali, non promesse — e la
->>>>>>> laraxot/dev
 disciplina sbagliata: ogni volta che qualcosa non torna, invece di
 sistemarlo scrive un altro documento che dice che è a posto.

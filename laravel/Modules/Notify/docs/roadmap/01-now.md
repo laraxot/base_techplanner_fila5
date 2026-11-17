@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "01 now"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: now.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Now (Module Notify)

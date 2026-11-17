@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "mail template ui improvements"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Miglioramenti UI/UX per MailTemplateResource
@@ -174,10 +171,7 @@ Section::make('Informazioni Template')
 
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices UI/UX](./BEST-PRACTICES.md)
-<<<<<<< HEAD
 - [Best Practices UI/UX](./best-practices.md)
-=======
->>>>>>> laraxot/dev
 - [Componenti Filament](./FILAMENT_COMPONENTS.md)
 
 ## Note Importanti

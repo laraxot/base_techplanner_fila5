@@ -2,26 +2,16 @@
 qmd: "module consolidated"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "module: Consolidated Documentation"
-=======
-title: "module — Consolidated Documentation"
->>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
 ---
 
 # module: Consolidated Documentation
-=======
----
-
-# module — Consolidated Documentation
->>>>>>> laraxot/dev
 
 Consolidated from **6** individual files.
 
@@ -89,11 +79,7 @@ Il modulo Notify è il sistema di gestione notifiche e comunicazioni riutilizzab
 
 ### 1. **Notification - Gestione Notifiche**
 - **Responsabilità**: Gestire notifiche del sistema
-<<<<<<< HEAD
 - **Business Logic**:
-=======
-- **Business Logic**: 
->>>>>>> laraxot/dev
   - Gestione stato notifiche
   - Gestione destinatari notifiche
   - Gestione contenuti notifiche
@@ -314,21 +300,12 @@ Il modulo Notify è il sistema di gestione notifiche e comunicazioni riutilizzab
 
 
 ## Module Overview
-<<<<<<< HEAD
 **Module Name**: Notify
 **Type**: Notification & Communication Module
 **Status**: ✅ Active
 **Framework**: Laravel 12.x + Filament 4.x
 **Notification Channels**: Email, SMS, Database, Push
 **Language**: Multi-language (IT/EN/DE)
-=======
-**Module Name**: Notify  
-**Type**: Notification & Communication Module  
-**Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
-**Notification Channels**: Email, SMS, Database, Push  
-**Language**: Multi-language (IT/EN/DE)  
->>>>>>> laraxot/dev
 
 ## Purpose
 The Notify module provides comprehensive notification and communication functionality:
@@ -427,7 +404,6 @@ qmd: "module-docs-index master documentation index - <nome progetto> fila5"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -439,21 +415,12 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
 
 # Master Documentation Index - Notify Fila5
 
-<<<<<<< HEAD
 **Project:** Notify Fila5
 # Master Documentation Index - <nome progetto> Fila5
 
@@ -461,15 +428,6 @@ related:
 **Date:** 2026-04-01
 **Status:** ✅ **Active**
 **Total Docs:** 7,137+ markdown files
-=======
-**Project:** Notify Fila5  
-# Master Documentation Index - <nome progetto> Fila5
-
-**Project:** <nome progetto> Fila5  
-**Date:** 2026-04-01  
-**Status:** ✅ **Active**  
-**Total Docs:** 7,137+ markdown files  
->>>>>>> laraxot/dev
 
 ---
 
@@ -533,11 +491,7 @@ Notify Fila5 Documentation
 │
 ├── 📁 Themes (laravel/Themes/*/docs/)
 │   ├── Sixteen - 325+ files
-<<<<<<< HEAD
 │   │   ├── design-comuni-team-guide.md - Complete team guide for replication
-=======
-│   │   ├── DESIGN_COMUNI_TEAM_GUIDE.md - Complete team guide for replication
->>>>>>> laraxot/dev
 │   │   ├── DESIGN_COMUNI_PROJECT_summary.md - Project summary and status
 │   │   ├── COMPONENT_CATALOG.md - All 47 components (TO BE CREATED)
 │   │   ├── BLOCK_TYPES.md - All block types (TO BE CREATED)
@@ -650,28 +604,16 @@ Notify Fila5 Documentation
 
 ### Sixteen Theme
 
-<<<<<<< HEAD
 **Location:** `laravel/Themes/Sixteen/docs/`
 **Files:** 325
-=======
-**Location:** `laravel/Themes/Sixteen/docs/`  
-**Files:** 325  
->>>>>>> laraxot/dev
 **Index:** [README.md](Themes/Sixteen/docs/README.md)
 
 **Key Documents:**
 - [Layout Architecture](Themes/Sixteen/docs/layout-architecture.md)
-<<<<<<< HEAD
 - [LAYOUT_ARCHITECTURE_MAP.md](Themes/Sixteen/docs/layout-architecture-map.md)
 - [LAYOUT_FIX_COMPLETE_BMAD.md](Themes/Sixteen/docs/layout-fix-complete-bmad.md)
 - [VITE_MANIFEST_FIX_COMPLETE.md](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md)
 - [PHPSTAN_LAYOUT_FIX_COMPLETE.md](Themes/Sixteen/docs/phpstan-layout-fix-complete.md)
-=======
-- [LAYOUT_ARCHITECTURE_MAP.md](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_MAP.md)
-- [LAYOUT_FIX_COMPLETE_BMAD.md](Themes/Sixteen/docs/LAYOUT_FIX_COMPLETE_BMAD.md)
-- [VITE_MANIFEST_FIX_COMPLETE.md](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md)
-- [PHPSTAN_LAYOUT_FIX_COMPLETE.md](Themes/Sixteen/docs/PHPSTAN_LAYOUT_FIX_COMPLETE.md)
->>>>>>> laraxot/dev
 
 **Categories:**
 - Architecture (10 files)
@@ -688,13 +630,8 @@ Notify Fila5 Documentation
 
 ## 📁 BMad Documentation
 
-<<<<<<< HEAD
 **Location:** `_bmad-output/`
 **Files:** 9
-=======
-**Location:** `_bmad-output/`  
-**Files:** 9  
->>>>>>> laraxot/dev
 **Status:** ✅ Complete
 
 | Document | File | Lines | Purpose |
@@ -805,11 +742,7 @@ Modules/
 Themes/Sixteen/docs/
 ├── README.md (START HERE)
 ├── layout-architecture.md
-<<<<<<< HEAD
 ├── layout-architecture-map.md
-=======
-├── LAYOUT_ARCHITECTURE_MAP.md
->>>>>>> laraxot/dev
 ├── components/
 ├── guides/
 └── ...
@@ -880,17 +813,10 @@ Themes/Sixteen/docs/
 ```markdown
 # Document Title
 
-<<<<<<< HEAD
 **Created:** YYYY-MM-DD
 **Updated:** YYYY-MM-DD
 **Status:** Draft | Active | Archived
 **Type:** Guide | Reference | ADR | Fix Report
-=======
-**Created:** YYYY-MM-DD  
-**Updated:** YYYY-MM-DD  
-**Status:** Draft | Active | Archived  
-**Type:** Guide | Reference | ADR | Fix Report  
->>>>>>> laraxot/dev
 
 ---
 
@@ -914,13 +840,8 @@ Main content here.
 
 ---
 
-<<<<<<< HEAD
 **Last Updated:** YYYY-MM-DD
 **Author:** Name
-=======
-**Last Updated:** YYYY-MM-DD  
-**Author:** Name  
->>>>>>> laraxot/dev
 **Review Date:** YYYY-MM-DD
 ```
 
@@ -953,15 +874,9 @@ Main content here.
 
 ---
 
-<<<<<<< HEAD
 **Last Updated:** 2026-04-01
 **Next Review:** 2026-04-08
 **Owner:** Documentation Team
-=======
-**Last Updated:** 2026-04-01  
-**Next Review:** 2026-04-08  
-**Owner:** Documentation Team  
->>>>>>> laraxot/dev
 **Status:** ✅ **Active**
 
 🐮 **Master Documentation Index Complete!**
@@ -1093,11 +1008,7 @@ composer format        # Formatta il codice
 ## Changelog
 ### Versione HEAD
 
-<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
-=======
-Le modifiche vengono tracciate nel repository GitHub. 
->>>>>>> laraxot/dev
 ## Collegamenti tra versioni di module_notify.md
 * [module_notify.md](docs/module_notify.md)
 * [module_notify.md](../../../notify/docs/module_notify.md)
@@ -1105,11 +1016,7 @@ Le modifiche vengono tracciate nel repository GitHub.
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
-=======
-Le modifiche vengono tracciate nel repository GitHub. 
->>>>>>> laraxot/dev
 
 ---
 
@@ -1119,21 +1026,12 @@ Le modifiche vengono tracciate nel repository GitHub.
 
 
 ## Module Overview
-<<<<<<< HEAD
 **Module Name**: Notify
 **Type**: Notification & Communication Module
 **Status**: ✅ Active
 **Framework**: Laravel 12.x + Filament 4.x
 **Notification Channels**: Email, SMS, Database, Push
 **Language**: Multi-language (IT/EN/DE)
-=======
-**Module Name**: Notify  
-**Type**: Notification & Communication Module  
-**Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
-**Notification Channels**: Email, SMS, Database, Push  
-**Language**: Multi-language (IT/EN/DE)  
->>>>>>> laraxot/dev
 
 ## Purpose
 The Notify module provides comprehensive notification and communication functionality:
@@ -1184,11 +1082,7 @@ The Notify module provides comprehensive notification and communication function
 ## Integration with Other Modules
 - **User**: Communication with system users
 - **App**: Survey participant notifications
-<<<<<<< HEAD
 - **<nome progetto>**: Survey participant notifications
-=======
-- **Quaeris**: Survey participant notifications
->>>>>>> laraxot/dev
 - **Limesurvey**: Survey response notifications
 - **Xot**: Base notification infrastructure
 - **Filament**: Management interface

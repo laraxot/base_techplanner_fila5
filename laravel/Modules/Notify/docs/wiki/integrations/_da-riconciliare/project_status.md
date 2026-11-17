@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: project-status.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Platform - Project Status Report

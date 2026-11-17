@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "php quality tools"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🔧 STRUMENTI QUALITÀ CODICE PHP - FIXCITY PLATFORM
@@ -473,18 +470,6 @@ return (new PhpCsFixer\Config())
 - [ ] Documentation update
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "php quality tools"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "php quality tools"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **🔄 Ultimo Aggiornamento**: Gennaio 2025  
 **📊 Status**: Sistema in sviluppo  
 **🎯 Prossimo Milestone**: Setup Base (Settimana 1)  

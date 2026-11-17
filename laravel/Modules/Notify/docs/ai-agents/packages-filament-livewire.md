@@ -7,16 +7,10 @@ updated: 2026-09-26
 qmd: "packages filament livewire"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
 # Filament 5 + Livewire 4: API Reference
-=======
----
-
-# Filament 5 + Livewire 4 — API Reference
->>>>>>> laraxot/dev
 
 Riferimento completo per Filament 5.2.2, Livewire 4.1.4 e pacchetti correlati nel progetto Laraxot.
 
@@ -37,18 +31,6 @@ Riferimento completo per Filament 5.2.2, Livewire 4.1.4 e pacchetti correlati ne
 | livewire/volt | 1.10.3 |
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "packages filament livewire"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "packages filament livewire"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Regole critiche Filament 5 in Laraxot
 
 ### Regola 1: sempre XotBase (MAI Filament diretto)
@@ -79,11 +61,7 @@ return array_values($columns); // ← Fatal: Filament cerca colonne per chiave s
 
 // SBAGLIATO: chiavi numeriche
 return [
-<<<<<<< HEAD
     TextColumn::make('id'),  // chiave 0 (int): sbagliato
-=======
-    TextColumn::make('id'),  // chiave 0 (int) — sbagliato
->>>>>>> laraxot/dev
 ];
 ```
 
@@ -149,11 +127,7 @@ public function getFormSchema(): array { return [...]; }
 protected function getFormSchema(): array { return [...]; }
 ```
 
-<<<<<<< HEAD
 ### Regola 6: getTableHeading(): return type corretto Filament 5
-=======
-### Regola 6: getTableHeading() — return type corretto Filament 5
->>>>>>> laraxot/dev
 
 ```php
 use Illuminate\Contracts\Support\Htmlable;
@@ -167,11 +141,7 @@ public function getTableHeading(): ?string { ... }
 
 ---
 
-<<<<<<< HEAD
 ## Filament 5: Novita rispetto a Filament 4
-=======
-## Filament 5 — Novita rispetto a Filament 4
->>>>>>> laraxot/dev
 
 ### 1. Pacchetto Schemas (nuovo)
 
@@ -192,11 +162,7 @@ RuleBuilder::make('rules')
     ])
 ```
 
-<<<<<<< HEAD
 ### 3. getOptions(): firma ufficiale
-=======
-### 3. getOptions() — firma ufficiale
->>>>>>> laraxot/dev
 
 ```php
 // Firma ufficiale Filament 5 ChartWidget
@@ -209,11 +175,7 @@ In Filament 4 erano accettate anche chiavi numeriche. In Filament 5 le chiavi st
 
 ---
 
-<<<<<<< HEAD
 ## ChartWidget: Firma completa
-=======
-## ChartWidget — Firma completa
->>>>>>> laraxot/dev
 
 ```php
 abstract class XotBaseChartWidget extends FilamentChartWidget
@@ -230,11 +192,7 @@ abstract class XotBaseChartWidget extends FilamentChartWidget
     protected function getMaxHeight(): ?string { } // 'px-300'
 
     // NON toccare
-<<<<<<< HEAD
     protected static ?bool $isLazyLoaded = true;
-=======
-    protected static bool $isLazy = true;
->>>>>>> laraxot/dev
     protected ?string $pollingInterval = null;
 }
 ```
@@ -278,11 +236,7 @@ class SalesChartWidget extends XotBaseChartWidget
 
 ---
 
-<<<<<<< HEAD
 ## ListRecords: Pattern tabella
-=======
-## ListRecords — Pattern tabella
->>>>>>> laraxot/dev
 
 ```php
 class ListSurveys extends XotBaseListRecords
@@ -326,11 +280,7 @@ class ListSurveys extends XotBaseListRecords
 
 ---
 
-<<<<<<< HEAD
 ## Infolist: Display read-only
-=======
-## Infolist — Display read-only
->>>>>>> laraxot/dev
 
 ```php
 use Filament\Infolists\Infolist;
@@ -356,11 +306,7 @@ public function infolist(Infolist $infolist): Infolist
 
 ---
 
-<<<<<<< HEAD
 ## Actions: Pattern header e table
-=======
-## Actions — Pattern header e table
->>>>>>> laraxot/dev
 
 ```php
 // Header actions (string keys obbligatorie)
@@ -393,11 +339,7 @@ protected function getTableActions(): array
 
 ---
 
-<<<<<<< HEAD
 ## Form Schema: Campi comuni
-=======
-## Form Schema — Campi comuni
->>>>>>> laraxot/dev
 
 ```php
 public function getFormSchema(): array
@@ -436,11 +378,7 @@ public function getFormSchema(): array
 
 ---
 
-<<<<<<< HEAD
 ## Livewire 4: Attributi principali
-=======
-## Livewire 4 — Attributi principali
->>>>>>> laraxot/dev
 
 ```php
 #[Reactive]
@@ -490,11 +428,7 @@ Libreria UI per Livewire (sidebar, navbar, breadcrumb, card, badge, button, dial
 
 ---
 
-<<<<<<< HEAD
 ## Volt: Componenti single-file
-=======
-## Volt — Componenti single-file
->>>>>>> laraxot/dev
 
 ```php
 // resources/views/livewire/survey-form.php
@@ -524,11 +458,7 @@ new class extends Component {
 
 ```php
 use Livewire\Livewire;
-<<<<<<< HEAD
 use Modules\<nome progetto>\Filament\Widgets\SalesChartWidget;
-=======
-use Modules\Quaeris\Filament\Widgets\SalesChartWidget;
->>>>>>> laraxot/dev
 use Modules\App\Filament\Widgets\SalesChartWidget;
 
 it('renders chart widget', function (): void {

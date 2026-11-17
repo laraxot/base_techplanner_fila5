@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "whatsapp provider architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura WhatsApp Provider per

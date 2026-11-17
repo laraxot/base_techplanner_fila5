@@ -7,17 +7,11 @@ updated: 2026-09-26
 qmd: "duplicate methods"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/duplicate-methods.md
 ---
 
 # Metodi duplicati: Notify
-=======
----
-
-# Metodi duplicati — Notify
->>>>>>> laraxot/dev
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.
 

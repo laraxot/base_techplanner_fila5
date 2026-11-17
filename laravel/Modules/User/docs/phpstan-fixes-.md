@@ -214,7 +214,10 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 - [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../../docs/index.md)
 =======
->>>>>>> 6ed19256f (.)
+- [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
+- [← Final Report](../../../docs/phpstan/final-report-session-2025-10-01.md)
+- [← Root Documentation](../../../../docs/index.md)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -625,8 +628,6 @@ public string $currentState = 'default';
 - [PHPStan Usage](../../xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
-=======
->>>>>>> 6ed19256f (.)
 - [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
 - [PHPStan Usage](../../Xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../Xot/docs/filament/xot-base-resource.md)
@@ -658,8 +659,12 @@ public static function getFormSchema(): array
 ### Verifica
 - PHPStan Level 10: PASS
 - PHPMD: PASS
-<<<<<<< HEAD
 - PHP Insights: PASS
 =======
-- PHP Insights: PASS
->>>>>>> 6ed19256f (.)
+**Status**: ⚠️ IN PROGRESS  
+**PHPStan Level**: 9  
+**Prossima sessione**: 2 Ottobre 2025  
+**Obiettivo**: 0 errori User + Xot
+
+
+>>>>>>> laraxot/dev

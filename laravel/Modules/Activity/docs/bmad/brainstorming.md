@@ -1,12 +1,9 @@
 ---
-<<<<<<< .merge_file_MCdyeU
 title: Brainstorming
 module: Activity
 ---
 
 ---
-=======
->>>>>>> .merge_file_7CXgoL
 title: "Activity — brainstorming BMAD"
 type: concept
 tags: [brainstorming, activity, decisioni, debito-tecnico, event-sourcing]

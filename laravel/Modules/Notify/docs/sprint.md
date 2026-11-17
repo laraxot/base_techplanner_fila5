@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sprint"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sprint Planning Meeting - FixCity Platform

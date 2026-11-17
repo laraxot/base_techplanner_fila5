@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email templates spatie"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Approfondimento: spatie/laravel-database-mail-templates

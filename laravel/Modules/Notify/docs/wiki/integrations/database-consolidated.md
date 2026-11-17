@@ -2,26 +2,16 @@
 qmd: "database consolidated"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "database: Consolidated Documentation"
-=======
-title: "database — Consolidated Documentation"
->>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
 ---
 
 # database: Consolidated Documentation
-=======
----
-
-# database — Consolidated Documentation
->>>>>>> laraxot/dev
 
 Consolidated from **15** individual files.
 
@@ -47,12 +37,8 @@ Consolidated from **15** individual files.
 
 ## database-mail-1
 
-<<<<<<< HEAD
 *Consolidated from: `database-mail.md`*
 *Consolidated from: `database-mail-deprecated.md`*
-=======
-*Consolidated from: `database-mail-1.md`*
->>>>>>> laraxot/dev
 
 
 This file is deprecated.
@@ -60,20 +46,13 @@ This file is deprecated.
 Use:
 
 - [database-mail](./database-mail.md)
-<<<<<<< HEAD
 - [database-mail](../../database-mail.md)
-=======
->>>>>>> laraxot/dev
 
 ---
 
 ## database-mail-2
 
-<<<<<<< HEAD
 *Consolidated from: `database-mail.md`*
-=======
-*Consolidated from: `database-mail-2.md`*
->>>>>>> laraxot/dev
 
 title: "Database Mail System"
 type: concept
@@ -84,7 +63,6 @@ qmd: "database-mail-2 database mail system"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -96,14 +74,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -120,20 +90,14 @@ Il file `routes/web.php` del modulo Notify **deve rimanere vuoto**.
 **Vedi anche:**
 - [structure.md](structure.md#regola-sulle-rotte)
 - [grapesjs-filament.md](grapesjs-filament.md#regola-sulle-rotte)
-<<<<<<< HEAD
 - [grapesjs-filament.md](../../grapesjs-filament.md#regola-sulle-rotte)
-=======
->>>>>>> laraxot/dev
 
 ---
 
 ## Collegamenti correlati
 - [Regola sulle rotte vuote in structure.md](structure.md#regola-sulle-rotte)
 - [Regola sulle rotte vuote in grapesjs-filament.md](grapesjs-filament.md#regola-sulle-rotte)
-<<<<<<< HEAD
 - [Regola sulle rotte vuote in grapesjs-filament.md](../../grapesjs-filament.md#regola-sulle-rotte)
-=======
->>>>>>> laraxot/dev
 
 ## Panoramica
 
@@ -558,11 +522,7 @@ Cordiali saluti,<br>
 
 ## database-mail-enhancement-1
 
-<<<<<<< HEAD
 *Consolidated from: `database-mail-enhancement.md`*
-=======
-*Consolidated from: `database-mail-enhancement-1.md`*
->>>>>>> laraxot/dev
 
 title: "Database Mail Enhancement (Open Source)"
 type: concept
@@ -573,7 +533,6 @@ qmd: "database-mail-enhancement-1 database mail enhancement (open source)"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -585,14 +544,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -798,12 +749,8 @@ testable class SendEmailTemplateAction {
 
 ## database-mail-queue-1
 
-<<<<<<< HEAD
 *Consolidated from: `database-mail-queue.md`*
 *Consolidated from: `database-mail-queue-deprecated.md`*
-=======
-*Consolidated from: `database-mail-queue-1.md`*
->>>>>>> laraxot/dev
 
 
 This file is deprecated.
@@ -811,20 +758,13 @@ This file is deprecated.
 Use:
 
 - [database-mail-queue](./database-mail-queue.md)
-<<<<<<< HEAD
 - [database-mail-queue](../../database-mail-queue.md)
-=======
->>>>>>> laraxot/dev
 
 ---
 
 ## database-mail-queue-2
 
-<<<<<<< HEAD
 *Consolidated from: `database-mail-queue.md`*
-=======
-*Consolidated from: `database-mail-queue-2.md`*
->>>>>>> laraxot/dev
 
 title: "Sistema di Code per Email - il progetto"
 type: concept
@@ -835,7 +775,6 @@ qmd: "database-mail-queue-2 sistema di code per email - il progetto"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -847,14 +786,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1264,10 +1195,7 @@ php artisan queue:restart
 
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
-<<<<<<< HEAD
 - [Database Mail System](../../database-mail-system.md)
-=======
->>>>>>> laraxot/dev
 - [Mail Templates](database-mail-templates.md)
 - [Queue Configuration](../../../../docs/queue-configuration.md)
 
@@ -2043,10 +1971,7 @@ php artisan queue:restart
 
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
-<<<<<<< HEAD
 - [Database Mail System](../../database-mail-system.md)
-=======
->>>>>>> laraxot/dev
 - [Mail Templates](database-mail-templates.md)
 - [Queue Configuration](../../../../docs/queue-configuration.md)
 
@@ -2063,11 +1988,7 @@ php artisan queue:restart
 
 ## database-mail-system-1
 
-<<<<<<< HEAD
 *Consolidated from: `database-mail-system.md`*
-=======
-*Consolidated from: `database-mail-system-1.md`*
->>>>>>> laraxot/dev
 
 
 ## Panoramica
@@ -2449,10 +2370,7 @@ php artisan notify:mail-template:test
 ## Collegamenti
 - [Notify Module](../README.md)
 - [Email Templates](email-templates.md)
-<<<<<<< HEAD
 - [Email Templates](../../email-templates.md)
-=======
->>>>>>> laraxot/dev
 - [Mail Queue](mail-queue.md)
 
 ## Vedi Anche
@@ -2817,11 +2735,7 @@ php artisan notify:mail-template:test
 
 ## database-mail-system-2
 
-<<<<<<< HEAD
 *Consolidated from: `database-mail-system.md`*
-=======
-*Consolidated from: `database-mail-system-2.md`*
->>>>>>> laraxot/dev
 
 title: "Sistema di Gestione Email Basato su Database - il progetto"
 type: concept
@@ -2832,7 +2746,6 @@ qmd: "database-mail-system-2 sistema di gestione email basato su database - il p
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -2844,14 +2757,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -3162,10 +3067,7 @@ php artisan notify:mail-template:test
 - [Notify Module](../README.md)
 - [Notify Module](../readme.md)
 - [Email Templates](email-templates.md)
-<<<<<<< HEAD
 - [Email Templates](../../email-templates.md)
-=======
->>>>>>> laraxot/dev
 - [Mail Queue](mail-queue.md)
 
 ## Vedi Anche
@@ -3483,10 +3385,7 @@ php artisan notify:mail-template:test
 ## Collegamenti
 - [Notify Module](../readme.md)
 - [Email Templates](email-templates.md)
-<<<<<<< HEAD
 - [Email Templates](../../email-templates.md)
-=======
->>>>>>> laraxot/dev
 - [Mail Queue](mail-queue.md)
 
 ## Vedi Anche
@@ -3511,20 +3410,14 @@ Il file `routes/web.php` del modulo Notify **deve rimanere vuoto**.
 **Vedi anche:**
 - [structure.md](structure.md#regola-sulle-rotte)
 - [grapesjs-filament.md](grapesjs-filament.md#regola-sulle-rotte)
-<<<<<<< HEAD
 - [grapesjs-filament.md](../../grapesjs-filament.md#regola-sulle-rotte)
-=======
->>>>>>> laraxot/dev
 
 ---
 
 ## Collegamenti correlati
 - [Regola sulle rotte vuote in structure.md](structure.md#regola-sulle-rotte)
 - [Regola sulle rotte vuote in grapesjs-filament.md](grapesjs-filament.md#regola-sulle-rotte)
-<<<<<<< HEAD
 - [Regola sulle rotte vuote in grapesjs-filament.md](../../grapesjs-filament.md#regola-sulle-rotte)
-=======
->>>>>>> laraxot/dev
 
 ## Panoramica
 
@@ -3963,20 +3856,14 @@ Il file `routes/web.php` del modulo Notify **deve rimanere vuoto**.
 **Vedi anche:**
 - [structure.md](structure.md#regola-sulle-rotte)
 - [grapesjs-filament.md](grapesjs-filament.md#regola-sulle-rotte)
-<<<<<<< HEAD
 - [grapesjs-filament.md](../../grapesjs-filament.md#regola-sulle-rotte)
-=======
->>>>>>> laraxot/dev
 
 ---
 
 ## Collegamenti correlati
 - [Regola sulle rotte vuote in structure.md](structure.md#regola-sulle-rotte)
 - [Regola sulle rotte vuote in grapesjs-filament.md](grapesjs-filament.md#regola-sulle-rotte)
-<<<<<<< HEAD
 - [Regola sulle rotte vuote in grapesjs-filament.md](../../grapesjs-filament.md#regola-sulle-rotte)
-=======
->>>>>>> laraxot/dev
 
 ## Panoramica
 
@@ -4908,10 +4795,7 @@ php artisan queue:restart
 
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
-<<<<<<< HEAD
 - [Database Mail System](../../database-mail-system.md)
-=======
->>>>>>> laraxot/dev
 - [Mail Templates](database-mail-templates.md)
 - [Queue Configuration](../../../docs/queue-configuration.md)
 
@@ -5230,10 +5114,7 @@ php artisan notify:mail-template:test
 ## Collegamenti
 - [Notify Module](../README.md)
 - [Email Templates](email-templates.md)
-<<<<<<< HEAD
 - [Email Templates](../../email-templates.md)
-=======
->>>>>>> laraxot/dev
 - [Mail Queue](mail-queue.md)
 
 ## Vedi Anche

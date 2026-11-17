@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sms provider configuration"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Configurazione Corretta dei Provider SMS

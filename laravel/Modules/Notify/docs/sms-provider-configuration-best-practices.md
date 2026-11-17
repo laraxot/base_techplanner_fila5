@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sms provider configuration best practices"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Best Practices per la Configurazione dei Provider SMS
@@ -27,41 +24,25 @@ status: draft
 return [
     // Driver predefinito
     'default' => env('SMS_DRIVER', 'netfun'),
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Configurazioni generiche applicabili a tutti i driver
     'from' => env('SMS_FROM'),
     'timeout' => (int) env('SMS_TIMEOUT', 30),
     'debug' => (bool) env('SMS_DEBUG', false),
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Configurazione per retry e circuit breaker
     'retry' => [
         'attempts' => (int) env('SMS_RETRY_ATTEMPTS', 3),
         'delay' => (int) env('SMS_RETRY_DELAY', 60),
     ],
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Configurazione per rate limiting
     'rate_limit' => [
         'enabled' => (bool) env('SMS_RATE_LIMIT_ENABLED', true),
         'max_attempts' => (int) env('SMS_RATE_LIMIT_MAX_ATTEMPTS', 60),
         'decay_minutes' => (int) env('SMS_RATE_LIMIT_DECAY_MINUTES', 1),
     ],
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Configurazioni specifiche per driver
     'drivers' => [
         'netfun' => [
@@ -71,22 +52,14 @@ return [
             'sender' => env('NETFUN_SENDER'),
             'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
         ],
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         'twilio' => [
             // Solo parametri specifici per Twilio
             'account_sid' => env('TWILIO_ACCOUNT_SID'),
             'auth_token' => env('TWILIO_AUTH_TOKEN'),
             'from' => env('TWILIO_FROM'),
         ],
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         // Altri provider...
     ],
 ];
@@ -101,11 +74,7 @@ return [
   - MAI includere retry, rate limiting, circuit breaker, timeout, debug flags
 
 - **Configurazione Generica** (sezioni separate):
-<<<<<<< HEAD
   - Sezione `retry` per tentativi di ripetizione
-=======
-  - Sezione `retry` per tentativi di ripetizione 
->>>>>>> laraxot/dev
   - Sezione `rate_limit` per limitazione delle richieste
   - Sezione `timeout` per timeout globale
   - Sezione `debug` per flag di debug
@@ -116,11 +85,7 @@ Per parametri critici come `sender`, non utilizzare valori predefiniti:
 
 ```php
 // ❌ ERRATO
-<<<<<<< HEAD
 'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-=======
-'sender' => env('NETFUN_SENDER', 'Quaeris'),
->>>>>>> laraxot/dev
 
 // ✅ CORRETTO
 'sender' => env('NETFUN_SENDER'),
@@ -162,10 +127,7 @@ $token = config('services.netfun.token');
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [SMS Best Practices](./SMS_BEST_PRACTICES.md)
 - [Netfun Authentication Methods](./NETFUN_AUTHENTICATION_METHODS.md)
-<<<<<<< HEAD
 - [SMS Provider Architecture](./sms_provider_architecture.md)
 - [SMS Implementation](./sms_implementation.md)
 - [SMS Best Practices](./sms_best_practices.md)
 - [Netfun Authentication Methods](./netfun_authentication_methods.md)
-=======
->>>>>>> laraxot/dev

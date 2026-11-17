@@ -13,16 +13,10 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
-<<<<<<< HEAD
   - ../notifications/README.md
   - ../integrations/README.md
   - ../templates/README.md
 status: draft
-=======
-  - ../notifications/readme.md
-  - ../integrations/readme.md
-  - ../templates/readme.md
->>>>>>> laraxot/dev
 ---
 # MCP (Model Context Protocol) Configuration
 

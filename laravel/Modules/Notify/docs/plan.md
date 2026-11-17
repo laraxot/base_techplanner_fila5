@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "plan"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Appointment Field Naming Correction Plan

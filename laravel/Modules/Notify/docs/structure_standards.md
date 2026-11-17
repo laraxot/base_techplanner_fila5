@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "structure standards"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Standard di Struttura nel Modulo Notify
@@ -97,18 +94,6 @@ Tutte le classi nella cartella `app/Filament/Clusters/*/Pages` **devono terminar
 - Non usare mai nomi generici o ambigui (es. `SendNetfunSMS`), ma sempre `SendNetfunSMSPage`.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "structure standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "structure standards"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Esempio
 
 - File: `SendNetfunSMS.php` → `SendNetfunSMSPage.php`

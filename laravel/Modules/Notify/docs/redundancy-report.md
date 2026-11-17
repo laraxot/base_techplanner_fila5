@@ -7,16 +7,10 @@ updated: 2026-09-26
 qmd: "redundancy report"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
 # Redundancy Report: Modulo Notify
-=======
----
-
-# Redundancy Report — Modulo Notify
->>>>>>> laraxot/dev
 
 > Generato: 2026-05-21 | Analisi automatica deep-scan
 
@@ -35,11 +29,7 @@ abstract class BaseModel extends Model implements HasMedia
     use Updater;
 }
 
-<<<<<<< HEAD
 // CORRETTO: richiede verifica su XotBaseModel + HasMedia
-=======
-// CORRETTO — richiede verifica su XotBaseModel + HasMedia
->>>>>>> laraxot/dev
 abstract class BaseModel extends XotBaseModel implements HasMedia
 {
     use InteractsWithMedia;
@@ -78,11 +68,7 @@ abstract class BaseMorphPivot extends MorphPivot
 abstract class BaseMorphPivot extends XotBaseMorphPivot {}
 ```
 
-<<<<<<< HEAD
 ### 4. 🟡 EventServiceProvider: Non usa XotBaseEventServiceProvider
-=======
-### 4. 🟡 EventServiceProvider — Non usa XotBaseEventServiceProvider
->>>>>>> laraxot/dev
 
 **File**: `app/Providers/EventServiceProvider.php`
 

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "translation implementation plan"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Piano di Implementazione per la Standardizzazione delle Traduzioni
@@ -100,7 +97,6 @@ rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_s_m_s.php
 rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_a_w_s_email.php
 rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_whats_app.php
 rm -f /var/www/html/saluteora/laravel/Modules/Notify/lang/it/send_netfun_s_m_s.php
-<<<<<<< HEAD
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/.php
 
 # Rimozione dei file con nomi errati dopo aver verificato che esistano le versioni corrette
@@ -108,15 +104,6 @@ rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/send_a_w_s_email.php
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/send_whats_app.php
 rm -f /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/lang/it/send_netfun_s_m_s.php
-=======
-rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/.php
-
-# Rimozione dei file con nomi errati dopo aver verificato che esistano le versioni corrette
-rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_s_m_s.php
-rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_a_w_s_email.php
-rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_whats_app.php
-rm -f /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/lang/it/send_netfun_s_m_s.php
->>>>>>> laraxot/dev
 ```
 
 ### Template Standard per i File di Traduzione

@@ -1,22 +1,13 @@
 ---
-<<<<<<< HEAD
-=======
-title: "Pagine Create - Notify Sixteen Theme"
->>>>>>> laraxot/dev
 title: "Pagine Create - <nome progetto> Sixteen Theme"
 type: concept
 tags: [pagine, create]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
-=======
-qmd: "pagine-create pagine create - laraxot sixteen theme"
->>>>>>> laraxot/dev
 qmd: "pagine-create pagine create - <nome progetto> sixteen theme"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -31,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # Pagine Create - Notify Sixteen Theme

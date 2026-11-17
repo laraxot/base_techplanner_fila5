@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "theme system dynamic"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🎨 Theme System - Dynamic Theme Registration
@@ -20,18 +17,6 @@ status: draft
 **Principle**: Theme is a "vestito" (outfit) - configurable and swappable!
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "theme system dynamic"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "theme system dynamic"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 How It Works
 
 ### 1. Theme Configuration

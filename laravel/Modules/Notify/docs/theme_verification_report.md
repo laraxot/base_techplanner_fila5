@@ -1,23 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "theme verification report"
-=======
-title: "THEME VERIFICATION REPORT"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "theme verification report"
 issues: []
 discussions: []
 status: draft
-=======
-qmd: "THEME VERIFICATION REPORT"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # ✅ Theme Architecture Verification - CORRECT!
@@ -162,18 +152,6 @@ Il tema Sixteen è:
 **Concetto**: ✅ **"Il Tema è un Vestito" - IMPLEMENTATO CORRETTAMENTE**
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "THEME VERIFICATION REPORT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "THEME VERIFICATION REPORT"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Stato**: ✅ **VERIFICATO E CORRETTO**  
 **Tema**: **Sixteen (auto-registrato)**  
 **Architettura**: **Configurabile (NON hardcoded)**  

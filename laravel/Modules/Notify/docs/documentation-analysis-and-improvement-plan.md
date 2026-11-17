@@ -8,7 +8,6 @@ qmd: "documentation-analysis-and-improvement-plan documentation analysis and imp
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -23,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # Documentation Analysis and Improvement Plan
@@ -83,12 +72,8 @@ The FixCity platform has extensive documentation across modules and themes, but 
 ❌ **Problems**:
 - 15 files with temporal strings ("Last Updated: March 12, 2026")
 - Duplicate files: `prd.md`, `PRD.md`, `prd.json`
-<<<<<<< HEAD
 - Inconsistent naming: `product-strategy.md` vs `product-strategy.md`
 - Inconsistent naming: `product-strategy.md` vs `product-strategy-documentation-themes.md`
-=======
-- Inconsistent naming: `product-strategy.md` vs `product-strategy-1.md`
->>>>>>> laraxot/dev
 - Orphaned files: `to-study.md`, `blocks-react.md`
 
 #### Recommended Actions
@@ -438,10 +423,7 @@ echo "  snake_case: $(find laravel/Modules/*/docs/ -name '*_*.md' | wc -l)"
 - [documentation-governance.md](documentation-governance.md) - Governance framework
 - [AGENTS.md](../../../AGENTS.md) - Agent guidelines
 - [agents.md](../../../agents.md) - Agent guidelines
-<<<<<<< HEAD
 - [agents.md](../../../AGENTS.md) - Agent guidelines
-=======
->>>>>>> laraxot/dev
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 
 ---

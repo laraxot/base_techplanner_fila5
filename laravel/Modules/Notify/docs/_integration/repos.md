@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "repos"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../-integration/repos.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # _repos

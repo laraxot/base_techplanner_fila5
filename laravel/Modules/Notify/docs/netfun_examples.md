@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "netfun examples"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Esempi Pratici Netfun

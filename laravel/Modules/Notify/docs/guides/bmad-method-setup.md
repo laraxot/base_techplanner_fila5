@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "bmad method setup"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # BMAD Method - Guida Installazione e Configurazione
@@ -21,18 +18,6 @@ status: draft
 **Progetto:** Notify Fila5 (Laraxot)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "bmad method setup"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bmad method setup"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## documentazione canonica (naming stabile)
 
 - [setup e configurazione](../bmad/setup-guide.md)
@@ -46,15 +31,9 @@ Un framework open-source (MIT) per lo sviluppo software guidato da AI che fornis
 
 - **12+ agenti specializzati** (PM, Architect, Developer, UX, QA, Scrum Master, etc.)
 - **Workflow strutturati** basati su best practice agili
-<<<<<<< HEAD
 - **Scale-Domain-Adaptive**: si adatta alla complessità del progetto
 - **Party Mode**: collaborazione multi-agente in una sessione
 - **Lifecycle completo**: dal brainstorming al deployment
-=======
-- **Scale-Domain-Adaptive** — si adatta alla complessità del progetto
-- **Party Mode** — collaborazione multi-agente in una sessione
-- **Lifecycle completo** — dal brainstorming al deployment
->>>>>>> laraxot/dev
 
 ### Sito e Risorse
 
@@ -221,11 +200,7 @@ output_folder: '{project-root}/_bmad-output'
 
 ### IDE Configurati
 
-<<<<<<< HEAD
 - **Windsurf** (`.windsurf/skills/`: 110 skills)
-=======
-- **Windsurf** (`.windsurf/skills/` — 110 skills)
->>>>>>> laraxot/dev
 - **OpenCode** (legacy, mantenuto per compatibilità)
 
 ---
@@ -259,11 +234,7 @@ Invoca un agente per conversazione diretta:
 
 ### 3. Workflow Principali (BMM)
 
-<<<<<<< HEAD
 #### Fase 1: Analisi (opzionale)
-=======
-#### Fase 1 — Analisi (opzionale)
->>>>>>> laraxot/dev
 
 | Skill | Scopo |
 |-------|-------|
@@ -272,11 +243,7 @@ Invoca un agente per conversazione diretta:
 | `bmad-market-research` | Analisi competitiva |
 | `bmad-technical-research` | Ricerca tecnica |
 
-<<<<<<< HEAD
 #### Fase 2: Pianificazione (richiesta)
-=======
-#### Fase 2 — Pianificazione (richiesta)
->>>>>>> laraxot/dev
 
 | Skill | Scopo |
 |-------|-------|
@@ -284,11 +251,7 @@ Invoca un agente per conversazione diretta:
 | `bmad-create-ux-design` | Spec UX/UI |
 | `bmad-create-epics-and-stories` | Epiche e storie |
 
-<<<<<<< HEAD
 #### Fase 3: Solutioning
-=======
-#### Fase 3 — Solutioning
->>>>>>> laraxot/dev
 
 | Skill | Scopo |
 |-------|-------|
@@ -296,11 +259,7 @@ Invoca un agente per conversazione diretta:
 | `bmad-generate-project-context` | Contesto progetto |
 | `bmad-check-implementation-readiness` | Verifica readiness |
 
-<<<<<<< HEAD
 #### Fase 4: Implementazione
-=======
-#### Fase 4 — Implementazione
->>>>>>> laraxot/dev
 
 | Skill | Scopo |
 |-------|-------|

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "conflicts"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitti - Notify

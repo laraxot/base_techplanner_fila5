@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_BI6r9j
 ---
 title: "cookie consent 1"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_4JC9Qw
 https://github.com/whitecube/laravel-cookie-consent
 
 https://devpeel.com/how-to-add-gdpr-cookie-consent-in-laravel/#google_vignette

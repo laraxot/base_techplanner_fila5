@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "launch"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Product Launch Plan - FixCity Platform

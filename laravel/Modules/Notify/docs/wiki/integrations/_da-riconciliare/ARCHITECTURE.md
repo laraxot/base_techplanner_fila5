@@ -7,17 +7,11 @@ type: architecture
 tags: [module, architecture, notifications]
 created: 2026-07-28
 updated: 2026-07-28
-<<<<<<< HEAD
 status: superseded
 superseded_by: architecture.md
 ---
 
 # Notify Module: Architecture
-=======
----
-
-# Notify Module — Architecture
->>>>>>> laraxot/dev
 
 ## Purpose
 Manages notifications and messaging via Laravel Notifications and Mailable. Supports email, Slack, SMS, in-app notifications.

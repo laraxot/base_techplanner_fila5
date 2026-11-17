@@ -7,21 +7,14 @@ updated: 2026-09-26
 qmd: "title with slug component"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi del Componente TitleWithSlugInput per Filament
 
 ## Introduzione
 
-<<<<<<< HEAD
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di <nome progetto>, in particolare per la gestione dei template email.
-=======
-Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di Quaeris, in particolare per la gestione dei template email.
->>>>>>> laraxot/dev
 Il pacchetto `filament-title-with-slug` di Camya fornisce un componente specializzato per la gestione combinata di titoli e slug nei form Filament. Questo documento analizza le funzionalità del componente e la sua potenziale integrazione nel modulo Notify di App, in particolare per la gestione dei template email.
 
 ## Panoramica del Pacchetto
@@ -36,15 +29,9 @@ Il pacchetto `filament-title-with-slug` di Camya fornisce un componente speciali
 - **Supporto Dark Mode**: Compatibilità con il tema scuro di Filament
 - **Validazione Avanzata**: Regole di validazione personalizzabili
 
-<<<<<<< HEAD
 ### Compatibilità con <nome progetto>
 
 Il componente è compatibile con l'architettura di <nome progetto> e può essere integrato seguendo le convenzioni del progetto:
-=======
-### Compatibilità con Quaeris
-
-Il componente è compatibile con l'architettura di Quaeris e può essere integrato seguendo le convenzioni del progetto:
->>>>>>> laraxot/dev
 ### Compatibilità con App
 
 Il componente è compatibile con l'architettura di App e può essere integrato seguendo le convenzioni del progetto:
@@ -52,11 +39,7 @@ Il componente è compatibile con l'architettura di App e può essere integrato s
 - Non utilizza componenti UI personalizzati
 - Può essere configurato per restituire array associativi con chiavi stringhe
 - Supporta la localizzazione attraverso file di traduzione
-<<<<<<< HEAD
 - Si integra con il pattern di form di Filament utilizzato
-=======
-- Si integra con il pattern di form di Filament utilizzato 
->>>>>>> laraxot/dev
 
 ## Installazione
 
@@ -76,11 +59,7 @@ php artisan vendor:publish --tag="filament-title-with-slug-config"
 
 ### Configurazione Base
 
-<<<<<<< HEAD
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di <nome progetto>:
-=======
-Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di Quaeris:
->>>>>>> laraxot/dev
 Ecco come il componente potrebbe essere implementato in `MailTemplateResource` seguendo le convenzioni di App:
 
 ```php
@@ -94,28 +73,16 @@ public static function getFormSchema(): array
             fieldSlug: 'slug',
         )
         ->columnSpanFull(),
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         // Altri campi del form
         'subject' => Forms\Components\TextInput::make('subject')
             ->required()
             ->maxLength(255),
-<<<<<<< HEAD
 
         'html_template' => Forms\Components\RichEditor::make('html_template')
             ->required()
             ->columnSpanFull(),
 
-=======
-            
-        'html_template' => Forms\Components\RichEditor::make('html_template')
-            ->required()
-            ->columnSpanFull(),
-            
->>>>>>> laraxot/dev
         'text_template' => Forms\Components\Textarea::make('text_template')
             ->maxLength(65535)
             ->columnSpanFull(),
@@ -125,11 +92,7 @@ public static function getFormSchema(): array
 
 ### Personalizzazione Avanzata
 
-<<<<<<< HEAD
 Per adattare il componente alle esigenze specifiche di <nome progetto>:
-=======
-Per adattare il componente alle esigenze specifiche di Quaeris:
->>>>>>> laraxot/dev
 Per adattare il componente alle esigenze specifiche di App:
 
 ```php
@@ -167,11 +130,7 @@ Il componente mostra un'anteprima dell'URL completo, personalizzabile attraverso
 
 ```php
 ->urlPath('/mail-templates/')
-<<<<<<< HEAD
 ->urlHost('https://<nome progetto>.example.com')
-=======
-->urlHost('https://Quaeris.example.com')
->>>>>>> laraxot/dev
 ->urlHost('https://app.example.test')
 ->urlHostVisible(true)
 ```
@@ -202,20 +161,12 @@ Per la validazione dell'unicità, il componente offre parametri specifici:
 Il componente può generare un link per visualizzare direttamente la risorsa:
 
 ```php
-<<<<<<< HEAD
 ->urlVisitLinkRoute(fn(?Model $record) => $record?->slug
-=======
-->urlVisitLinkRoute(fn(?Model $record) => $record?->slug 
->>>>>>> laraxot/dev
     ? route('notify.mail-templates.view', ['slug' => $record->slug])
     : null)
 ```
 
-<<<<<<< HEAD
 ## Vantaggi per <nome progetto>
-=======
-## Vantaggi per Quaeris
->>>>>>> laraxot/dev
 ## Vantaggi per App
 
 L'integrazione di questo componente nel modulo Notify offrirebbe:
@@ -228,19 +179,11 @@ L'integrazione di questo componente nel modulo Notify offrirebbe:
 
 ## Considerazioni per l'Implementazione
 
-<<<<<<< HEAD
 ### Conformità con le Convenzioni di <nome progetto>
 
 Per rispettare le convenzioni del progetto, è necessario:
 
 1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di <nome progetto> anziché testi hardcoded
-=======
-### Conformità con le Convenzioni di Quaeris
-
-Per rispettare le convenzioni del progetto, è necessario:
-
-1. **Traduzione**: Configurare le etichette per utilizzare il sistema di traduzione di Quaeris anziché testi hardcoded
->>>>>>> laraxot/dev
 2. **Array Associativo**: Utilizzare chiavi stringhe nell'array di schema del form
 3. **Nomenclatura**: Seguire le convenzioni di nomenclatura del progetto
 
@@ -261,11 +204,7 @@ public static function getFormSchema(): array
             if (!$record?->slug) return null;
             return route('notify.mail-templates.view', ['slug' => $record->slug]);
         }),
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         // Altri campi...
     ];
 }
@@ -276,32 +215,20 @@ public static function getFormSchema(): array
 ### Potenziali Limitazioni
 
 1. **Dipendenza Esterna**: Introduce una dipendenza aggiuntiva nel progetto
-<<<<<<< HEAD
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di <nome progetto>
-=======
-2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di Quaeris
->>>>>>> laraxot/dev
 2. **Personalizzazione Visiva**: Potrebbe richiedere adattamenti per integrarsi perfettamente con il tema di App
 3. **Modifiche Future**: Come ogni dipendenza, è soggetto a cambiamenti nelle versioni future
 
 ### Alternative
 
-<<<<<<< HEAD
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di <nome progetto>
-=======
-1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di Quaeris
->>>>>>> laraxot/dev
 1. **Soluzione Custom**: Sviluppare un componente su misura basato sulle esigenze specifiche di App
 2. **Approccio Modulare**: Utilizzare i componenti nativi di Filament con logica personalizzata
 3. **Altri Pacchetti**: Valutare pacchetti alternativi con funzionalità simili
 
 ## Conclusioni
 
-<<<<<<< HEAD
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di <nome progetto> potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
-=======
-Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di Quaeris potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
->>>>>>> laraxot/dev
 Il componente `TitleWithSlugInput` offre una soluzione elegante e completa per la gestione combinata di titoli e slug nei form Filament. La sua integrazione nel modulo Notify di App potrebbe migliorare significativamente l'esperienza utente nella gestione dei template email, semplificando il processo di creazione e modifica.
 
 L'implementazione dovrebbe seguire le convenzioni del progetto, con particolare attenzione alla localizzazione e alla struttura del form schema.

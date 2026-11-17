@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "filament extension rules 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament extension rules 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Regole di Estensione delle Classi Filament
 
 ## Regola Fondamentale
@@ -72,11 +58,7 @@ Per verificare che tutte le classi seguano questa regola:
 
 ```bash
 <<<<<<< HEAD
-<<<<<<< HEAD
 find Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
-=======
-find /var/www/html/saluteora/laravel/Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
->>>>>>> 6ed19256f (.)
 =======
 find Modules -path "*/Filament/*/*.php" -type f -exec grep -l "extends.*Filament" {} \;
 >>>>>>> laraxot/dev

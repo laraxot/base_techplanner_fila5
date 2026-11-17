@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "qwen competitors"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # QWEN Competitor Analysis
@@ -19,18 +16,6 @@ Analisi dei competitor di prediction market.
 Analisi dei competitor di forecast market.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "qwen competitors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen competitors"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Competitor Analysis
 
 ### Polymarket (Leader)
@@ -106,8 +91,5 @@ discussions: []
 
 - [Indice QWEN](./qwen-split-index.md)
 - [QWEN.md originale](../../QWEN.md)
-<<<<<<< HEAD
 - [QWEN.md originale](../QWEN.md)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md)

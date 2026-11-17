@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "working with claude"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Working with Claude

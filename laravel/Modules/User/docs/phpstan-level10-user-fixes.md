@@ -6,9 +6,9 @@
 **Data**: 17 Novembre 2025
 **Modulo**: User
 =======
-**Data**: 17 Novembre 2025
-**Modulo**: User
->>>>>>> 6ed19256f (.)
+**Data**: 17 Novembre 2025  
+**Modulo**: User  
+>>>>>>> laraxot/dev
 **Esito**: ✅ **0 ERRORI** - PHPStan Level 10 completato con successo
 
 ## 🔧 Correzioni Applicate
@@ -18,8 +18,8 @@
 <<<<<<< HEAD
 **File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`
 =======
-**File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`
->>>>>>> 6ed19256f (.)
+**File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`  
+>>>>>>> laraxot/dev
 **Errori risolti**: 2
 
 #### Problemi
@@ -45,8 +45,8 @@ Auth::guard()->login($user);
 <<<<<<< HEAD
 **File**: `app/Filament/Widgets/RegistrationWidget.php`
 =======
-**File**: `app/Filament/Widgets/RegistrationWidget.php`
->>>>>>> 6ed19256f (.)
+**File**: `app/Filament/Widgets/RegistrationWidget.php`  
+>>>>>>> laraxot/dev
 **Errori risolti**: 5
 
 #### Problemi
@@ -114,8 +114,8 @@ class RegistrationWidget extends XotBaseWidget
 <<<<<<< HEAD
 **Pattern applicato**:
 =======
-**Pattern applicato**:
->>>>>>> 6ed19256f (.)
+**Pattern applicato**: 
+>>>>>>> laraxot/dev
 1. Property nullable con inizializzazione a null
 2. Type assertion espliciti con Assert::isArray()
 3. Return types specifici con fully qualified class names
@@ -126,8 +126,8 @@ class RegistrationWidget extends XotBaseWidget
 <<<<<<< HEAD
 **File**: `app/Models/Traits/HasTeams.php`
 =======
-**File**: `app/Models/Traits/HasTeams.php`
->>>>>>> 6ed19256f (.)
+**File**: `app/Models/Traits/HasTeams.php`  
+>>>>>>> laraxot/dev
 **Errori risolti**: 2
 
 #### Problemi
@@ -175,8 +175,8 @@ public function teamPermissions(TeamContract $team): array
 <<<<<<< HEAD
 **Pattern applicato**:
 =======
-**Pattern applicato**:
->>>>>>> 6ed19256f (.)
+**Pattern applicato**: 
+>>>>>>> laraxot/dev
 1. BelongsToMany con template types completi e specifici
 2. Type assertion per risultati di pluck()->values()->toArray()
 
@@ -185,8 +185,8 @@ public function teamPermissions(TeamContract $team): array
 <<<<<<< HEAD
 **File**: `app/Models/Traits/HasTenants.php`
 =======
-**File**: `app/Models/Traits/HasTenants.php`
->>>>>>> 6ed19256f (.)
+**File**: `app/Models/Traits/HasTenants.php`  
+>>>>>>> laraxot/dev
 **Errori risolti**: 1
 
 #### Problema
@@ -217,8 +217,8 @@ public function getTenants(Panel $_panel): array|Collection
 <<<<<<< HEAD
 **File**: `app/Notifications/Auth/ResetPassword.php`
 =======
-**File**: `app/Notifications/Auth/ResetPassword.php`
->>>>>>> 6ed19256f (.)
+**File**: `app/Notifications/Auth/ResetPassword.php`  
+>>>>>>> laraxot/dev
 **Errori risolti**: 1
 
 #### Problema
@@ -352,7 +352,7 @@ Il modulo User è ora **completamente compliant** con PHPStan Level 10. I patter
 
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
 =======
-- **<nome progetto> Module**: Vedi `Modules/<nome progetto>/docs/phpstan-level10-<nome progetto>-fixes.md` per pattern simili
+- **ExternalProject Module**: Vedi `Modules/ExternalProject/docs/phpstan-level10-app-fixes.md` per pattern simili
 
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev

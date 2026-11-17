@@ -16,18 +16,12 @@ related:
   - ../../../notifications/readme.md
   - ../../../integrations/readme.md
   - ../../../templates/readme.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Gemini AI Guidelines (../../../../laravel/GEMINI.md) Index
 
 **Source**: [`laravel/../../../../laravel/GEMINI.md`](../../../../../../laravel/../../../../laravel/GEMINI.md) (581 lines)  
-<<<<<<< HEAD
 **Source**: [`laravel/../../../../laravel/GEMINI.md`](../../../../../../GEMINI.md) (581 lines)  
-=======
->>>>>>> laraxot/dev
 **Split Into**: 13 focused files  
 **Last Updated**: 2026-04-11  
 
@@ -81,38 +75,25 @@ status: draft
 ## Cross-References
 
 ### Related Documentation
-<<<<<<< HEAD
 - ← [BMad Agents Index](../../agents/index.md): 10 agent definitions
 - ← [BMad Agents Index](../agents/index.md): 10 agent definitions
 - ← [BMad Tasks Index](../tasks/index.md): 22 reusable tasks
 - ← [CLAUDE Index](../claude/index.md): Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md): Master index
-=======
-- ← [BMad Agents Index](../../agents/index.md) — 10 agent definitions
-- ← [BMad Tasks Index](../tasks/index.md) — 22 reusable tasks
-- ← [CLAUDE Index](../claude/index.md) — Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
->>>>>>> laraxot/dev
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
 - ← Back to [../../../../laravel/GEMINI.md](../../../../../../laravel/../../../../laravel/GEMINI.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
-<<<<<<< HEAD
 - ← Back to [../../../../laravel/GEMINI.md](../../../../../../GEMINI.md) (original source)
 - ← Back to [Project Docs](../../../README.md)
-=======
->>>>>>> laraxot/dev
 
 ---
 
 ## Usage
 
 These guidelines are loaded by Gemini AI for Laravel development context. For manual reference, see the original [`laravel/../../../../laravel/GEMINI.md`](../../../../../../laravel/../../../../laravel/GEMINI.md).
-<<<<<<< HEAD
 These guidelines are loaded by Gemini AI for Laravel development context. For manual reference, see the original [`laravel/../../../../laravel/GEMINI.md`](../../../../../../GEMINI.md).
-=======
->>>>>>> laraxot/dev
 
 ---
 

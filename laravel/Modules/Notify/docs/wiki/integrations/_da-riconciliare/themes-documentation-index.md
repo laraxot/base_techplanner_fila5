@@ -8,7 +8,6 @@ qmd: "themes-documentation-index theme documentation master index"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -23,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # Theme Documentation Master Index
@@ -54,10 +43,7 @@ Connects all theme docs with bidirectional links and visual architecture.
 
 **Core Documentation:**
 - [00-index-1.md](../laravel/Themes/Sixteen/docs/00-index-1.md) - Start here
-<<<<<<< HEAD
 - [00-index-1.md](../../../00-index-documentation.md) - Start here
-=======
->>>>>>> laraxot/dev
 - [Design Comuni Integration](../laravel/Themes/Sixteen/docs/design-comuni-integration.md)
 - [Component Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md)
 - [Layout Architecture](../laravel/Themes/Sixteen/docs/layout-hierarchy.md)
@@ -66,11 +52,7 @@ Connects all theme docs with bidirectional links and visual architecture.
 ```
 Sixteen/
 ├── docs/                          ← 200+ documentation files
-<<<<<<< HEAD
 │   ├── 00-index.md               ← MASTER INDEX
-=======
-│   ├── 00-index-1.md               ← MASTER INDEX
->>>>>>> laraxot/dev
 │   ├── architecture/             ← Diagrams & architecture
 │   ├── design-comuni/            ← Design Comuni project
 │   ├── components/               ← Component docs
@@ -380,11 +362,7 @@ Typography:
 
 | File | Purpose | View |
 |------|---------|------|
-<<<<<<< HEAD
 | `guides/getting-started.md` | Theme setup | [View](../../../getting-started.md) |
-=======
-| `guides/getting-started.md` | Theme setup | [View](../laravel/Themes/Sixteen/docs/guides/getting-started.md) |
->>>>>>> laraxot/dev
 | `guides/adding-components.md` | Create new component | [View](../laravel/Themes/Sixteen/docs/guides/adding-components.md) |
 | `guides/styling-guide.md` | Styling best practices | [View](../laravel/Themes/Sixteen/docs/guides/styling-guide.md) |
 | `guides/responsive-design.md` | Mobile-first approach | [View](../laravel/Themes/Sixteen/docs/guides/responsive-design.md) |
@@ -498,10 +476,7 @@ public_html/assets/
 - **Architecture Diagrams:** [architecture-diagrams.md](architecture-diagrams.md)
 - **Module Docs Index:** [module-docs-index.md](module-docs-index.md)
 - **Master Index:** [00-index-1.md](../laravel/Themes/Sixteen/docs/00-index-1.md)
-<<<<<<< HEAD
 - **Master Index:** [00-index-1.md](../../../00-index-documentation.md)
-=======
->>>>>>> laraxot/dev
 - **Code Quality:** [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
 - **Framework Rules:** [../laravel/claude.md](../laravel/claude.md)
 

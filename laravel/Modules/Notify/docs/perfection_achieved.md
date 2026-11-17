@@ -1,23 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "perfection achieved"
-=======
-title: "PERFECTION ACHIEVED"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "perfection achieved"
 issues: []
 discussions: []
 status: draft
-=======
-qmd: "PERFECTION ACHIEVED"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # 🏆 FIXCITY - PERFEZIONE RAGGIUNTA
@@ -27,18 +17,6 @@ discussions: []
 **Status**: ✅ PERFEZIONE IN CORSO  
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "PERFECTION ACHIEVED"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "PERFECTION ACHIEVED"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 OBIETTIVO PERFEZIONE
 
 Implementare OGNI feature mancante con:

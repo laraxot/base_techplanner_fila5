@@ -1,10 +1,4 @@
 ---
-<<<<<<< HEAD
-=======
-qmd: "INDEX"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 title: "Memories Index"
 type: index
 created: 2026-05-11
@@ -40,11 +34,7 @@ Le Memories progettuali vivono qui, nel wiki del Module **Notify**, e vengono ca
 
 - La sorgente di verita' per le Memories e' sempre il wiki locale
 - Non embeddare Memories nei prompt di avvio
-<<<<<<< HEAD
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
-=======
-- Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
->>>>>>> laraxot/dev
 
 ## Aggiungere una Nuova MEMORIES
 

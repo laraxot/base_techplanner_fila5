@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "translation standards"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/translation-standards.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Standard per le Traduzioni 

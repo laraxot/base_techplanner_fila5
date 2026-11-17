@@ -4,25 +4,15 @@ created: 2026-09-26
 qmd: "agent edit discipline"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: agent edit discipline: puntatore
 type: reference
 updated: 2026-05-19
 status: draft
-=======
-title: agent edit discipline — puntatore
-type: reference
-updated: 2026-05-19
->>>>>>> laraxot/dev
 ---
 
 # Disciplina edit e qualità (puntatore)
 
-<<<<<<< HEAD
 Stub **DRY**: policy nella wiki di progetto; discussione e ragionamenti in GitHub issue [#124](https://github.com/provtv/base_ptv_fila5/issues/124).
-=======
-Stub **DRY**: policy nella wiki di progetto; discussione e ragionamenti in GitHub issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124).
->>>>>>> laraxot/dev
 
 ## Link operativi (relativi al repo)
 

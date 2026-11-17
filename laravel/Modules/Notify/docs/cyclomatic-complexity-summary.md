@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "cyclomatic complexity summary"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Cyclomatic Complexity - Project Summary Report
@@ -19,18 +16,6 @@ status: draft
 **Analyzer:** Super Mucca 🐮
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "cyclomatic complexity summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cyclomatic complexity summary"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📊 Global Statistics
 
 | Metric | Value |
@@ -168,7 +153,6 @@ Keep nesting levels below 3-4 levels.
 - [Rating](../Modules/Rating/docs/cyclomatic-complexity-report.md)
 - [Seo](../Modules/Seo/docs/cyclomatic-complexity-report.md)
 - [Tenant](../Modules/Tenant/docs/cyclomatic-complexity-report.md)
-<<<<<<< HEAD
 - [User](../../User/docs/cyclomatic-complexity-report.md)
 - [Blog](../../Blog/docs/cyclomatic-complexity-report.md)
 - [Geo](../../Geo/docs/cyclomatic-complexity-report.md)
@@ -185,8 +169,6 @@ Keep nesting levels below 3-4 levels.
 - [Rating](../../Rating/docs/cyclomatic-complexity-report.md)
 - [Seo](../../Seo/docs/cyclomatic-complexity-report.md)
 - [Tenant](../../Tenant/docs/cyclomatic-complexity-report.md)
-=======
->>>>>>> laraxot/dev
 - [UI](../Modules/UI/docs/cyclomatic-complexity-report.md)
 
 ---

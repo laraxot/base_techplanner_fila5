@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "one migration per model"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🔴 ONE MIGRATION PER MODEL - CRITICAL RULE
@@ -21,18 +18,6 @@ status: draft
 **Priority**: BLOCKER
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "one migration per model"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "one migration per model"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 The Rule
 
 > **SEMPRE** 1 MIGRAZIONE PER 1 MODELLO.
@@ -216,12 +201,8 @@ Tutto il resto è **RUMORE**.
 ### AI Agents Docs
 - **[Rules Index](00-INDEX.md)** - All rules
 - **[Rules Index](00-index.md)** - All rules
-<<<<<<< HEAD
 - **[DRY Principle](../../dry-kiss.md)** - DRY + KISS
 - **[DRY Principle](../../dry-kiss.md)** - DRY + KISS
-=======
-- **[DRY Principle](../guidelines/dry-kiss.md)** - DRY + KISS
->>>>>>> laraxot/dev
 - **[Translation Structure](translation-structure-5-levels.md)** - 5 levels rule
 
 ### Module Docs

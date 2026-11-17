@@ -16,10 +16,7 @@ related:
   - "./05-front-office-audit.md"
   - "./06-cinematic-effects.md"
   - "./07-mcp-tailwind-ui.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # GitHub Issues - CORRECT WORKFLOW

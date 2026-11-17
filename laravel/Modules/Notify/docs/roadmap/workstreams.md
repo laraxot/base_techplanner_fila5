@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "workstreams"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Workstreams - Notify

@@ -79,19 +79,11 @@ class SendWhatsAppPage extends XotBasePage
             'recipient' => TextInput::make('recipient')
                 ->tel()
                 ->required()
-<<<<<<< HEAD
                 ->helperText('Inserisci il numero di telefono con prefisso internazionale (es. +39)'),
             'message' => TextInput::make('message')
                 ->required()
                 ->maxLength(4096)
                 ->helperText('Il messaggio non può superare i 4096 caratteri'),
-=======
-                ->helperText('Enter the phone number with international prefix (e.g. +39)'),
-            'message' => TextInput::make('message')
-                ->required()
-                ->maxLength(4096)
-                ->helperText('The message cannot exceed 4096 characters'),
->>>>>>> laraxot/dev
             'driver' => Select::make('driver')
                 ->options(WhatsAppDriverEnum::options())
                 ->default(WhatsAppDriverEnum::getDefault()->value)
@@ -128,22 +120,14 @@ class SendWhatsAppPage extends XotBasePage
 
             FilamentNotification::make()
                 ->success()
-<<<<<<< HEAD
                 ->title('Messaggio WhatsApp inviato con successo')
-=======
-                ->title('WhatsApp message sent successfully')
->>>>>>> laraxot/dev
                 ->send();
         } catch (Exception $e) {
             Log::error('Errore nell\'invio WhatsApp: '.$e->getMessage());
 
             FilamentNotification::make()
                 ->danger()
-<<<<<<< HEAD
                 ->title('Errore nell\'invio WhatsApp')
-=======
-                ->title('Error sending WhatsApp message')
->>>>>>> laraxot/dev
                 ->body($e->getMessage())
                 ->send();
         }

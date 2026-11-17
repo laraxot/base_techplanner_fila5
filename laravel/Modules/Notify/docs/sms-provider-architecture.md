@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sms provider architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura dei Provider SMS 

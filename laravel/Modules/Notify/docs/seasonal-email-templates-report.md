@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "seasonal email templates report"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Seasonal Email Templates Implementation Report

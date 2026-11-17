@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "slug solutions analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Soluzioni per Slug in Filament
@@ -192,10 +189,7 @@ TextInput::make('slug')
 - [Articolo Laravel News](https://laravel-news.com/generating-slugs-from-a-title-in-filament)
 - [Documentazione Filament](https://filamentphp.com/docs)
 - [Best Practices UI/UX](./BEST-PRACTICES.md)
-<<<<<<< HEAD
 - [Best Practices UI/UX](./best-practices.md)
-=======
->>>>>>> laraxot/dev
 
 ## Note Importanti
 

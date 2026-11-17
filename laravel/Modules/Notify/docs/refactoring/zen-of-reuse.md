@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "zen of reuse"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🧘 The Zen of Reuse (Filament Components)

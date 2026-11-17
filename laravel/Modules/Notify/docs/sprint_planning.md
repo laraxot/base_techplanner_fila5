@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 qmd: "sprint planning"
-=======
-qmd: "SPRINT PLANNING"
->>>>>>> laraxot/dev
 issues: []
 discussions: []
 title: "Notify Module - Sprint Planning"
@@ -12,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/sprint-planning.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Module - Sprint Planning

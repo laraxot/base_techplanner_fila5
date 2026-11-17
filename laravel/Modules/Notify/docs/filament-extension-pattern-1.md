@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 # Pattern di Estensione per Componenti Filament
 
 <<<<<<< HEAD
 Questo documento definisce il pattern di estensione standardizzato per i componenti Filament nel sistema <nome progetto>, con particolare attenzione al principio di non estendere mai direttamente le classi Filament.
-=======
-Questo documento definisce il pattern di estensione standardizzato per i componenti Filament nel sistema SaluteOra, con particolare attenzione al principio di non estendere mai direttamente le classi Filament.
->>>>>>> 6ed19256f (.)
 =======
 ---
 title: "filament extension pattern 1"
@@ -42,11 +38,7 @@ Questo documento definisce il pattern di estensione standardizzato per i compone
 ## Motivazione
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 1. **Personalizzazione Centralizzata**: Le classi XotBase forniscono funzionalità e comportamenti personalizzati specifici per <nome progetto>, mantenendo la coerenza in tutta l'applicazione.
-=======
-1. **Personalizzazione Centralizzata**: Le classi XotBase forniscono funzionalità e comportamenti personalizzati specifici per SaluteOra, mantenendo la coerenza in tutta l'applicazione.
->>>>>>> 6ed19256f (.)
 =======
 1. **Personalizzazione Centralizzata**: Le classi XotBase forniscono funzionalità e comportamenti personalizzati specifici per <nome progetto>, mantenendo la coerenza in tutta l'applicazione.
 >>>>>>> laraxot/dev
@@ -120,11 +112,7 @@ class SendSmsPage extends Page implements HasForms // ❌ ERRORE
 ### 1. Personalizzazione Centralizzata
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Le classi XotBase possono implementare comportamenti specifici per <nome progetto>, come:
-=======
-Le classi XotBase possono implementare comportamenti specifici per SaluteOra, come:
->>>>>>> 6ed19256f (.)
 =======
 Le classi XotBase possono implementare comportamenti specifici per <nome progetto>, come:
 >>>>>>> laraxot/dev

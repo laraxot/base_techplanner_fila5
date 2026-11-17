@@ -16,14 +16,11 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
-<<<<<<< HEAD
   - ../../conventions/README.md
   - ../../rules/README.md
   - ../../best-practices/naming-conventions.md
 status: superseded
 superseded_by: ../../architecture/dto-structure-conventions.md
-=======
->>>>>>> laraxot/dev
 ---
 # Convenzioni per la Struttura dei DTO nel Modulo Notify
 

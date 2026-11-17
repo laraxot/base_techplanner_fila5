@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "queueable action"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Spatie Laravel Queueable Action

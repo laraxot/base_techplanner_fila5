@@ -2,27 +2,16 @@
 qmd: "graphify map"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "Notify Module: Mappa Graphify"
-=======
-title: "Notify Module — Mappa Graphify"
->>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
-<<<<<<< HEAD
 updated: 2026-10-23
 status: draft
 ---
 
 # Notify Module: Mappa Graphify
-=======
-updated: 2026-08-24
----
-
-# Notify Module — Mappa Graphify
->>>>>>> laraxot/dev
 
 **Versione:** 1.0.0 | **Modulo:** Notify | **Data:** 2026-08-02
 
@@ -59,15 +48,10 @@ Il modulo **Notify** gestisce:
 | **Action** | `SendPushToDeviceAction` | `app/Actions/Push/SendPushToDeviceAction.php` |
 | **Action** | `SendPushWithTemplateAction` | `app/Actions/Push/SendPushWithTemplateAction.php` |
 | **Action** | `FormatSmsMessageAction` | `app/Actions/SMS/FormatSmsMessageAction.php` |
-<<<<<<< HEAD
 | **Action** (coda) | `SendScheduledPushNotificationAction` | `app/Actions/Push/SendScheduledPushNotificationAction.php` |
 | **Action** (coda) | `SchedulePushNotificationAction` | `app/Actions/Push/SchedulePushNotificationAction.php` |
 
 Notify non ha `app/Jobs/`: la coda la eseguono le Queueable Actions (`->onQueue()->execute(...)`, oppure `ActionJob::dispatch($action, [$args])->delay(...)` per il ritardo). Vedi la [regola](../../../../bashscripts/ai/wiki/rules/no-module-jobs-queueable-action.md).
-=======
-| **Job** | `SendNotificationJob` | `app/Jobs/SendNotificationJob.php` |
-| **Job** | `SendScheduledPushNotification` | `app/Jobs/SendScheduledPushNotification.php` |
->>>>>>> laraxot/dev
 | **Filament** | `NotificationResource` | `app/Filament/Resources/NotificationResource.php` |
 | **Filament** | `NotificationTemplateResource` | `app/Filament/Resources/NotificationTemplateResource.php` |
 | **Filament** | `MailTemplateResource` | `app/Filament/Resources/MailTemplateResource.php` |
@@ -77,7 +61,6 @@ Notify non ha `app/Jobs/`: la coda la eseguono le Queueable Actions (`->onQueue(
 ### Canali (Channels)
 
 **Email Providers:**
-<<<<<<< HEAD
 - `SmtpMailSendAction`: standard SMTP
 - `SendMailtrapMailAction`: Mailtrap testing
 - `SendDuocircleMailAction`: Duocircle provider
@@ -110,40 +93,6 @@ Notify non ha `app/Jobs/`: la coda la eseguono le Queueable Actions (`->onQueue(
 - `SendOfficialTelegramAction`: Bot Telegram ufficiale
 - `SendBotmanTelegramAction`: Botman integration
 - `SendNutgramTelegramAction`: Nutgram framework
-=======
-- `SmtpMailSendAction` — standard SMTP
-- `SendMailtrapMailAction` — Mailtrap testing
-- `SendDuocircleMailAction` — Duocircle provider
-- Mail layout resolver
-
-**SMS Providers:**
-- `SendTwilioSMSAction` — Twilio
-- `SendNexmoSMSAction` — Nexmo/Vonage
-- `SendNetfunSMSAction` — Netfun
-- `SendPlivoSMSAction` — Plivo
-- `SendAgiletelecomSMSAction` — Agiletelecom
-- `FormatSmsMessageAction` — validazione e troncamento
-
-**Push Notifications:**
-- `SendPushToDeviceAction` — singolo dispositivo
-- `SendPushToDevicesAction` — multipli dispositivi
-- `SendPushToPlatformAction` — per piattaforma (iOS/Android)
-- `SendPushToTopicAction` — per topic Firebase
-- `SendPushWithTemplateAction` — con template predefinito
-- `SendPushToAllUsersAction` — broadcast globale
-- `SchedulePushNotificationAction` — invio programmato
-
-**WhatsApp Providers:**
-- `SendTwilioWhatsAppAction` — Twilio
-- `Send360dialogWhatsAppAction` — 360dialog
-- `SendFacebookWhatsAppAction` — Facebook Business
-- `SendVonageWhatsAppAction` — Vonage
-
-**Telegram Providers:**
-- `SendOfficialTelegramAction` — Bot Telegram ufficiale
-- `SendBotmanTelegramAction` — Botman integration
-- `SendNutgramTelegramAction` — Nutgram framework
->>>>>>> laraxot/dev
 
 ### Dependencies (Incoming)
 
@@ -351,22 +300,14 @@ graphify query "Notify push notification Firebase device targeting SendPushToDev
    - `SendPushToPlatformAction` (iOS/Android)
    - `SendPushToTopicAction` (subscribers)
    - `SchedulePushNotificationAction` (ritardato)
-<<<<<<< HEAD
 5. `SchedulePushNotificationAction` accoda `SendScheduledPushNotificationAction` con `ActionJob::dispatch(...)->delay(...)`, che processa gli invii programmati
-=======
-5. Job `SendScheduledPushNotification` processa invii programmati
->>>>>>> laraxot/dev
 
 **File critici:**
 - `config/notify.php` (firebase config)
 - `app/Actions/Push/SendPushToDeviceAction.php`
 - `app/Actions/Push/SendPushToPlatformAction.php`
-<<<<<<< HEAD
 - `app/Actions/Push/SchedulePushNotificationAction.php`
 - `app/Actions/Push/SendScheduledPushNotificationAction.php`
-=======
-- `app/Jobs/SendScheduledPushNotification.php`
->>>>>>> laraxot/dev
 - `app/Models/Contact.php` (push_token storage)
 
 ---
@@ -429,13 +370,8 @@ graphify query "Notify bulk send SendRecordsNotificationAction SendRecordsNotifi
 1. Selezionare multiple records in Filament table
 2. Azione bulk: `SendRecordsNotificationBulkAction`
 3. Scegliere template e canali
-<<<<<<< HEAD
 4. Enqueue in coda: `app(SendRecordsNotificationAction::class)->onQueue('notifications')->execute($records, 'template-slug', ['mail'])`
 5. La stessa `SendRecordsNotificationAction` processa il batch in coda (nessun Job separato)
-=======
-4. Enqueue in queue (background job)
-5. Job `SendNotificationJob` processa in batch
->>>>>>> laraxot/dev
 6. Log ogni invio in `NotificationLog` con status
 7. Admin dashboard mostra delivery metrics
 
@@ -443,10 +379,6 @@ graphify query "Notify bulk send SendRecordsNotificationAction SendRecordsNotifi
 - `app/Actions/SendRecordsNotificationAction.php`
 - `app/Actions/SendRecordNotificationAction.php`
 - `app/Filament/Actions/SendRecordsNotificationBulkAction.php`
-<<<<<<< HEAD
-=======
-- `app/Jobs/SendNotificationJob.php`
->>>>>>> laraxot/dev
 - Queue config (`.env` → QUEUE_CONNECTION)
 
 ---
@@ -514,7 +446,6 @@ graphify query "Notify SendNotificationAction SendMailAction SendPushAction Send
 ## 🔗 Integrazioni Esterne
 
 ### Email Providers
-<<<<<<< HEAD
 - **Mailtrap**: testing/staging
 - **Duocircle**: enterprise SMTP
 - **AWS SES**: scalable mail
@@ -543,36 +474,6 @@ graphify query "Notify SendNotificationAction SendMailAction SendPushAction Send
 - **Official Bot API**: standard
 - **Botman**: framework wrapper
 - **Nutgram**: PHP framework moderno
-=======
-- **Mailtrap** — testing/staging
-- **Duocircle** — enterprise SMTP
-- **AWS SES** — scalable mail
-- **Mailgun** — transactional email
-
-### SMS Providers
-- **Twilio** — SMS + WhatsApp + Voice
-- **Nexmo/Vonage** — SMS + OTP
-- **Netfun** — SMS locale Italia
-- **Plivo** — SMS + Voice
-- **Agiletelecom** — SMS Europa
-- **Gammu** — SMS gateway locale
-
-### Push Notifications
-- **Firebase Cloud Messaging (FCM)** — Android
-- **Apple Push Notification (APN)** — iOS
-- **OneSignal** — multi-platform orchestration
-
-### WhatsApp
-- **Twilio** — managed service
-- **360dialog** — WhatsApp Business API
-- **Facebook Business** — ufficiale Meta
-- **Vonage** — multi-channel
-
-### Telegram
-- **Official Bot API** — standard
-- **Botman** — framework wrapper
-- **Nutgram** — PHP framework moderno
->>>>>>> laraxot/dev
 
 ---
 
@@ -590,17 +491,10 @@ graphify query "Notify module test coverage pest phpunit"
 - [ ] `app/Actions/SMS/SendTwilioSMSAction.php` → test SMS provider
 - [ ] `app/Models/NotificationTemplate.php::compile()` → test template rendering
 - [ ] `app/Models/Contact.php` → test validazione email/phone/whatsapp
-<<<<<<< HEAD
 - [ ] `app/Actions/SendRecordsNotificationAction.php` → test `onQueue()->execute()` (coda) e `execute()` (sync)
 - [ ] `app/Filament/Resources/NotificationTemplateResource.php` → test admin CRUD
 - [ ] Bulk action → test `SendRecordsNotificationBulkAction`
 - [ ] Scheduled push → test `SendScheduledPushNotificationAction::execute()`
-=======
-- [ ] `app/Jobs/SendNotificationJob.php` → test job dispatch
-- [ ] `app/Filament/Resources/NotificationTemplateResource.php` → test admin CRUD
-- [ ] Bulk action → test `SendRecordsNotificationBulkAction`
-- [ ] Scheduled push → test `SendScheduledPushNotification` job
->>>>>>> laraxot/dev
 
 ---
 
@@ -629,11 +523,7 @@ graphify query "Notify test coverage pest"
 graphify query "Notify third-party integrations Twilio Firebase Mailtrap"
 
 # Performance
-<<<<<<< HEAD
 graphify query "Notify queue async onQueue QueueableAction ActionJob"
-=======
-graphify query "Notify queue jobs async SendNotificationJob"
->>>>>>> laraxot/dev
 ```
 
 ---

@@ -1,39 +1,22 @@
 ---
-<<<<<<< HEAD
-=======
-title: "📊 Quality Dashboard - FixCity Project"
->>>>>>> laraxot/dev
 title: "📊 Quality Dashboard - Notify Project"
 type: concept
 tags: [quality, dashboard]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
-=======
-qmd: "quality-dashboard 📊 quality dashboard - fixcity project"
->>>>>>> laraxot/dev
 qmd: "quality-dashboard 📊 quality dashboard - laraxot project"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./2025-excellence-achievement.md"
   - "./agid-implementation-guide.md"
   - "./ARCHITECTURE.md"
-=======
-  - "./excellence-achievement.md"
-  - "./agid-implementation-guide.md"
-  - "./architecture.md"
->>>>>>> laraxot/dev
   - "./complete-refactoring-analysis.md"
   - "./documentation-status.md"
   - "./final-implementation-report-.md"
   - "./final-implementation-report-1.md"
   - "./final-implementation-report.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📊 Quality Dashboard - FixCity Project
@@ -316,11 +299,7 @@ Overall Progress: ████████████████████�
 
 ## 🔗 Related Resources
 
-<<<<<<< HEAD
 - [Architecture Documentation](./ARCHITECTURE.md)
-=======
-- [Architecture Documentation](./architecture.md)
->>>>>>> laraxot/dev
 - [Contributing Guidelines](../contributing.md)
 - [Testing Strategy](../Modules/Xot/docs/testing/testing-strategy.md)
 - [Refactoring Reports](./final-refactoring-report.md)

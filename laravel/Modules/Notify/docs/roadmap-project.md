@@ -4,15 +4,10 @@ type: concept
 tags: [roadmap, project]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
-=======
-qmd: "roadmap-project 🚀 roadmap generale - fixcity platform"
->>>>>>> laraxot/dev
 qmd: "roadmap-project 🚀 roadmap generale - ptv platform"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -27,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # 🚀 ROADMAP GENERALE - FixCity Platform
@@ -375,15 +360,12 @@ status: draft
 - [Modulo Geo](../Modules/Geo/docs/README.md)
 - [Modulo Notify](../Modules/Notify/docs/README.md)
 - [Theme Sixteen](../Themes/Sixteen/docs/README.md)
-<<<<<<< HEAD
 - [Modulo Fixcity](../../Fixcity/docs/README.md)
 - [Modulo User](../../User/docs/README.md)
 - [Modulo Cms](../../Cms/docs/README.md)
 - [Modulo Geo](../../Geo/docs/README.md)
 - [Modulo Notify](README.md)
 - [Theme Sixteen](../../../Themes/Sixteen/docs/README.md)
-=======
->>>>>>> laraxot/dev
 
 ### External Resources
 - [Laravel Documentation](https://laravel.com/docs)

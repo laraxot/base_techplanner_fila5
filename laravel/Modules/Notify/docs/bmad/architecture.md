@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "Notify: architecture"
-=======
-title: "Notify — architecture"
->>>>>>> laraxot/dev
 type: architecture
 tags: [notify, architecture, module-boundary, models, resources, channels]
 created: 2026-09-28
@@ -15,16 +11,10 @@ related:
   - ./brainstorming.md
   - ./epics/module-roadmap.md
   - ./epics/notification-channels.epic.md
-<<<<<<< HEAD
 status: draft
 ---
 
 # Notify: architecture
-=======
----
-
-# Notify — architecture
->>>>>>> laraxot/dev
 
 > **SUMMARY**: indice della documentazione architetturale per
 > `Modules\Notify`. Il dettaglio del confine modulare, inventario `app()`/`tests()`
@@ -59,22 +49,13 @@ status: draft
 | `NotificationLog` | `app/Models/NotificationLog.php` | `BaseModel` | `notification_logs` |
 | `MailTemplate` | `app/Models/MailTemplate.php` | `SpatieMailTemplate`, `MailTemplateInterface` | `mail_templates` |
 | `MailTemplateVersion` | `app/Models/MailTemplateVersion.php` | `BaseModel` | `mail_template_versions` |
-<<<<<<< HEAD
 | `MailTemplateLog` | `app/Models/MailTemplateLog.php` | `BaseModel` |: |
-=======
-| `MailTemplateLog` | `app/Models/MailTemplateLog.php` | `BaseModel` | — |
->>>>>>> laraxot/dev
 | `Contact` | `app/Models/Contact.php` | `BaseModel` | `notify_contacts` |
 | `NotifyTheme` | `app/Models/NotifyTheme.php` | `BaseModel` | `notify_themes` |
 | `NotificationType` | `app/Models/NotificationType.php` | `Model` | `notification_types` |
 | `NotifyThemeable` | `app/Models/NotifyThemeable.php` | `BaseModel` | `notify_themeables` |
-<<<<<<< HEAD
 | `Theme` | `app/Models/Theme.php` |: |: |
 | `BaseModel` | `app/Models/BaseModel.php` | `XotBaseModel` |: |
-=======
-| `Theme` | `app/Models/Theme.php` | — | — |
-| `BaseModel` | `app/Models/BaseModel.php` | `XotBaseModel` | — |
->>>>>>> laraxot/dev
 
 ## Relazioni verificate
 
@@ -126,21 +107,12 @@ status: draft
 | `TicketAssignedNotification` | `app/Notifications/TicketAssignedNotification.php` |
 | `TicketStatusChangedNotification` | `app/Notifications/TicketStatusChangedNotification.php` |
 
-<<<<<<< HEAD
 ## Esecuzione in coda
 
 | Caso d'uso | Action canonica | Dispatch |
 |---|---|---|
 | Invio notifica | `app/Actions/SendNotificationAction.php` | sincrono o `QueueableAction` |
 | Push programmato | `app/Actions/Push/SendScheduledPushNotificationAction.php` | `ActionJob::dispatch(...)->delay(...)` |
-=======
-## Jobs
-
-| Job | File |
-|---|---|
-| `SendNotificationJob` | `app/Jobs/SendNotificationJob.php` |
-| `SendScheduledPushNotification` | `app/Jobs/SendScheduledPushNotification.php` |
->>>>>>> laraxot/dev
 
 ## Action orchestrative
 
@@ -208,13 +180,8 @@ status: draft
 | Area | Path | Note |
 |---|---|---|
 | Migrations | `database/migrations/` | ~20 file attivi; obsoleti in `_archive_redundant/` e `_bak/` |
-<<<<<<< HEAD
 | Factories | `database/factories/` |: |
 | Seeders | `database/seeders/` |: |
-=======
-| Factories | `database/factories/` | — |
-| Seeders | `database/seeders/` | — |
->>>>>>> laraxot/dev
 
 ## Test
 
@@ -222,7 +189,6 @@ status: draft
 |---|---|---|
 | Unit/Actions | `tests/Unit/Actions/` | ~30 file |
 | Unit/Models | `tests/Unit/Models/` | ~20 file |
-<<<<<<< HEAD
 | Unit/Notifications | `tests/Unit/Notifications/` |: |
 | Unit/Channels | `tests/Unit/Channels/` | 4 file |
 | Unit/Enums | `tests/Unit/Enums/` | 9 file |
@@ -232,17 +198,6 @@ status: draft
 | Unit/Datas | `tests/Unit/Datas/` |: |
 | Unit/Factories | `tests/Unit/Factories/` |: |
 | Unit/Traits | `tests/Unit/Traits/` |: |
-=======
-| Unit/Notifications | `tests/Unit/Notifications/` | — |
-| Unit/Channels | `tests/Unit/Channels/` | 4 file |
-| Unit/Enums | `tests/Unit/Enums/` | 9 file |
-| Unit/Console | `tests/Unit/Console/` | — |
-| Unit/Filament | `tests/Unit/Filament/` | — |
-| Unit/Providers | `tests/Unit/Providers/` | 3 file |
-| Unit/Datas | `tests/Unit/Datas/` | — |
-| Unit/Factories | `tests/Unit/Factories/` | — |
-| Unit/Traits | `tests/Unit/Traits/` | — |
->>>>>>> laraxot/dev
 | Unit/Architecture | `tests/Unit/Architecture/` | 1 file |
 | Feature | `tests/Feature/` | ~15 file |
 | Fixtures | `tests/Fixtures/` | ~15 file |
@@ -267,30 +222,4 @@ status: draft
 - [Epic channels](./epics/notification-channels.epic.md)
 - [Quick reference](./quick-reference.md)
 - [Setup guide](./setup-guide.md)
-<<<<<<< HEAD
 - [BMAD method (Xot)](../wiki/bmad-method.md)
-=======
-- [BMAD method (Xot)](../../Xot/docs/bmad-method.md)
-
-## Evidenza audit 2026-11-16
-
-Misure da [audit approfondito](./audits/notify-audit.md): 254 PHP, 53 Action, 0 Service,
-11 Policy (tutte `NotifyBasePolicy → UserBasePolicy`), 6 Resource, 39 pagine (15 nel
-cluster `Test`, tutte `SuperAdminOnlyTrait`).
-
-| Confine | Regola verificata | Eccezione |
-|---|---|---|
-| Autorizzazione | policy per ogni Resource | `NotificationLogResource` senza policy (P1-1) |
-| Ingresso esterno | un solo webhook `POST /api/inbound/{provider}/{token}` | token nel path, no firma provider (P1-2) |
-| Canali | `Channels/` (4) + `Notifications/` (13) | Telegram/WhatsApp/Twilio/Firebase con TODO (P1-3) |
-
-### Matrice capability canali (da completare con story P1-3)
-
-| Canale | Stato nel sorgente |
-|---|---|
-| mail (SMTP/AWS/Spatie) | implementato (`SmtpMailSendAction`, `BuildMailMessageAction`) |
-| SMS (Netfun/Esendex) | implementato (`NetfunSendAction`, `EsendexSendAction`) |
-| Telegram | parziale: `TelegramChannel.php:26,34` TODO |
-| WhatsApp | parziale: `WhatsAppNotification.php:66` TODO |
-| Push Firebase | parziale: pagina test `SendFirebasePushNotificationPage.php:112` TODO |
->>>>>>> laraxot/dev

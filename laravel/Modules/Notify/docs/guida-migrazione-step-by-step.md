@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "guida migrazione step by step"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Guida Migrazione Step-by-Step: Modulo Notify - Filament 4

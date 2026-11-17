@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "ollama mcp rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📜 Ollama MCP Rules - Regole Condivise per Agenti AI
@@ -21,18 +18,6 @@ status: draft
 **Status**: Active
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "ollama mcp rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ollama mcp rules"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🚨 Regole Critiche
 
 ### 1. MCP-First Approach

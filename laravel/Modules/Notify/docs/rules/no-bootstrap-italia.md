@@ -16,10 +16,7 @@ related:
   - ../conventions/README.md
   - README.md
   - ../best-practices/naming-conventions.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # No Bootstrap Italia Rule
 
@@ -46,13 +43,8 @@ This project replicates the Design Comuni design system using **Tailwind CSS + A
 The project's core purpose is to **replicate Bootstrap Italia's visual design using Tailwind CSS**, not to use Bootstrap itself. This keeps the bundle size small, avoids CSS conflicts, and maintains full control over the design system.
 
 ## Exceptions
-<<<<<<< HEAD
 - SVG sprite paths containing `bootstrap-italia/dist/svg/sprites.svg`: these are icon files only
 - CSS class names that match Bootstrap Italia conventions (e.g., `btn-primary`, `container`, `row`): these are replicated via Tailwind `@apply`
-=======
-- SVG sprite paths containing `bootstrap-italia/dist/svg/sprites.svg` — these are icon files only
-- CSS class names that match Bootstrap Italia conventions (e.g., `btn-primary`, `container`, `row`) — these are replicated via Tailwind `@apply`
->>>>>>> laraxot/dev
 
 ## Related
 - See: `docs/html-structure-comparison.md` for project bridge docs

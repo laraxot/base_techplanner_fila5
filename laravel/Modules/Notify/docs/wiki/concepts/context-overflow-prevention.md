@@ -4,19 +4,12 @@ created: 2026-09-26
 qmd: "context overflow prevention"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "context-overflow-prevention: puntatore"
-=======
-title: "context-overflow-prevention — puntatore"
->>>>>>> laraxot/dev
 type: reference
 updated: 2026-05-21
 related:
   - "../../../../Xot/docs/wiki/concepts/context-overflow-prevention.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # context overflow prevention

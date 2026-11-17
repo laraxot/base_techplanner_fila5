@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: AGENTS.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Project Agents (Modular)
@@ -71,12 +68,9 @@ docs/
 - [Schema Wiki](./docs/.schema/wiki-schema.md) - Istruzioni per l'LLM
 - [Index Globale](./docs/wiki/index.md) - Catalogo di tutte le wiki
 - [Log](./docs/log.md) - Cronologia delle operazioni
-<<<<<<< HEAD
 - [Schema Wiki](../../../.schema/wiki-schema.md) - Istruzioni per l'LLM
 - [Index Globale](../../index.md) - Catalogo di tutte le wiki
 - [Log](../../../log.md) - Cronologia delle operazioni
-=======
->>>>>>> laraxot/dev
 
 ### Workflow
 

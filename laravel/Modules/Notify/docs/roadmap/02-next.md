@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "02 next"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: next.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Next (Module Notify)

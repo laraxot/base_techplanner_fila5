@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "configuration architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura delle Configurazioni nei Moduli Laravel

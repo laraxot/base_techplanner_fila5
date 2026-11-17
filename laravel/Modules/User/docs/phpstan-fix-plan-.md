@@ -6,7 +6,6 @@ canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
-=======
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status

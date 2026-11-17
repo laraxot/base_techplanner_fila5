@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sprint planning meeting"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify - Sprint Planning Meeting

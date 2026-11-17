@@ -298,11 +298,7 @@ class SpatieEmail extends TemplateMailable
     /**
      * Mittente dell'SMS per questo template.
      *
-<<<<<<< HEAD
      * Story <nome progetto>-send-invite-migrate-to-record-notification.md, Difetto 9:
-=======
-     * Story quaeris-send-invite-migrate-to-record-notification.md, Difetto 9:
->>>>>>> laraxot/dev
      * prima `RecordNotification::toSms()` scriveva il letterale 'Xot'. Catena:
      * `MailTemplate.sms_from` (per-survey, es. "VIVASERVIZI") → `config('sms.from')`
      * (globale) → `null` (il gateway usa il default del suo account).

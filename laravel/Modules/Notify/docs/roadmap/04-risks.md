@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "04 risks"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: risks.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Risks and dependencies (Module Notify)

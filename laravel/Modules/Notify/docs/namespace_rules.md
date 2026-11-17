@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "namespace rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Regole Namespace PSR-4 per il Modulo Notify
@@ -44,18 +41,6 @@ namespace Modules\Notify\Console\Commands;
 - Collegamento alla documentazione generale: [Regole Namespace Moduli - Root Docs](../../../docs/namespace-moduli.md)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "namespace rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "namespace rules"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento:** 2025-05-13
 
 **Link bidirezionale:** Aggiornare anche la root docs e la docs di Xot per riferimenti e cross-link.

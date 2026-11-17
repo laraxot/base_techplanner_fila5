@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "markdown linking conventions 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "markdown linking conventions 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -24,15 +10,9 @@ discussions: []
 
 ```markdown
 <<<<<<< HEAD
-<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
-=======
-[Convenzioni di Naming per le Interfacce](/var/www/html/saluteora/laravel/Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
-[Chiarimento sulla Struttura delle Interfacce](/var/www/html/saluteora/laravel/Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
-[Architettura dei Contratti](/var/www/html/saluteora/laravel/Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
->>>>>>> 6ed19256f (.)
 =======
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
@@ -61,11 +41,7 @@ Per collegamenti a documenti in altre directory:
 2. **Compatibilità tra ambienti**: I percorsi assoluti potrebbero non funzionare in ambienti diversi
 3. **Manutenibilità**: I percorsi relativi sono più facili da mantenere quando la struttura del progetto cambia
 <<<<<<< HEAD
-<<<<<<< HEAD
 4. **Standard del progetto**: <nome progetto> segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
-=======
-4. **Standard del progetto**: SaluteOra segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
->>>>>>> 6ed19256f (.)
 =======
 4. **Standard del progetto**: <nome progetto> segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
 >>>>>>> laraxot/dev
@@ -88,13 +64,8 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 ## Collegamenti Correlati
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
 - [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
-=======
-- [Convenzioni di Documentazione](../../../docs/documentation-conventions.md)
-- [Markdown Best Practices](../../../docs/markdown-best-practices.md)
->>>>>>> 6ed19256f (.)
 =======
 - [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
 - [Markdown Best Practices](../../../../docs/markdown-best-practices.md)

@@ -3,7 +3,6 @@ title: "whatsapp integration"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< HEAD
 updated: 2026-10-23
 qmd: "whatsapp integration"
 issues: []
@@ -16,19 +15,6 @@ status: draft
 ## Panoramica
 
 Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di <nome progetto>, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
-=======
-updated: 2026-09-26
-qmd: "whatsapp integration"
-issues: []
-discussions: []
----
-
-# Integrazione WhatsApp 
-
-## Panoramica
-
-Questo documento descrive l'architettura e l'implementazione dell'integrazione WhatsApp nel modulo Notify di Quaeris, seguendo gli stessi standard e pattern utilizzati per l'invio di email e SMS.
->>>>>>> laraxot/dev
 
 ## Architettura
 
@@ -54,11 +40,7 @@ use Modules\Notify\Datas\WhatsAppData;
 
 /**
  * Interface per tutte le azioni di invio WhatsApp.
-<<<<<<< HEAD
  *
-=======
- * 
->>>>>>> laraxot/dev
  * Tutte le implementazioni di provider WhatsApp devono implementare questa interfaccia
  * per garantire una coerenza nel modo in cui vengono gestiti i messaggi WhatsApp
  * indipendentemente dal provider specifico utilizzato.
@@ -131,32 +113,20 @@ return [
             'auth_token' => env('TWILIO_AUTH_TOKEN'),
             'from' => env('TWILIO_WHATSAPP_FROM'),
         ],
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         'vonage' => [
             'api_key' => env('VONAGE_KEY'),
             'api_secret' => env('VONAGE_SECRET'),
             'from' => env('VONAGE_WHATSAPP_FROM'),
         ],
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         'facebook' => [
             'app_id' => env('FACEBOOK_APP_ID'),
             'app_secret' => env('FACEBOOK_APP_SECRET'),
             'access_token' => env('FACEBOOK_ACCESS_TOKEN'),
             'phone_number_id' => env('FACEBOOK_PHONE_NUMBER_ID'),
         ],
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         '360dialog' => [
             'api_key' => env('360DIALOG_API_KEY'),
             'phone_number_id' => env('360DIALOG_PHONE_NUMBER_ID'),
@@ -239,11 +209,7 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
 
     private string $accountSid;
     private string $authToken;
-<<<<<<< HEAD
     private string $baseUrl = 'https://api.twilio.com/2010-04-01';
-=======
-    private string $baseUrl = 'https://api.twilio.com/[DATE]';
->>>>>>> laraxot/dev
     private array $vars = [];
     protected bool $debug;
     protected int $timeout;
@@ -273,58 +239,33 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
     {
         $from = 'whatsapp:' . ($whatsAppData->from ?? $this->defaultSender);
         $to = 'whatsapp:' . $whatsAppData->to;
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         $client = new Client([
             'timeout' => $this->timeout,
             'auth' => [$this->accountSid, $this->authToken]
         ]);
-<<<<<<< HEAD
 
         $endpoint = $this->baseUrl . '/Accounts/' . $this->accountSid . '/Messages.json';
 
-=======
-        
-        $endpoint = $this->baseUrl . '/Accounts/' . $this->accountSid . '/Messages.json';
-        
->>>>>>> laraxot/dev
         $payload = [
             'To' => $to,
             'From' => $from,
             'Body' => $whatsAppData->body,
         ];
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         // Aggiungi media se presente
         if (!empty($whatsAppData->media)) {
             $payload['MediaUrl'] = $whatsAppData->media[0];
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         try {
             $response = $client->post($endpoint, [
                 'form_params' => $payload
             ]);
-<<<<<<< HEAD
 
             $this->vars['status_code'] = $response->getStatusCode();
             $this->vars['status_txt'] = $response->getBody()->getContents();
 
-=======
-            
-            $this->vars['status_code'] = $response->getStatusCode();
-            $this->vars['status_txt'] = $response->getBody()->getContents();
-            
->>>>>>> laraxot/dev
             return [
                 'success' => true,
                 'message_id' => json_decode($this->vars['status_txt'], true)['sid'] ?? null,
@@ -397,25 +338,15 @@ final class SendFacebookWhatsAppAction implements WhatsAppProviderActionInterfac
                 'Content-Type' => 'application/json',
             ]
         ]);
-<<<<<<< HEAD
 
         $endpoint = $this->baseUrl . '/' . $this->phoneNumberId . '/messages';
 
-=======
-        
-        $endpoint = $this->baseUrl . '/' . $this->phoneNumberId . '/messages';
-        
->>>>>>> laraxot/dev
         $payload = [
             'messaging_product' => 'whatsapp',
             'recipient_type' => 'individual',
             'to' => $whatsAppData->to,
         ];
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         // Gestione diversi tipi di messaggi
         if ($whatsAppData->type === 'text') {
             $payload['type'] = 'text';
@@ -432,30 +363,17 @@ final class SendFacebookWhatsAppAction implements WhatsAppProviderActionInterfac
                 'link' => $whatsAppData->media[0],
             ];
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         try {
             $response = $client->post($endpoint, [
                 'json' => $payload
             ]);
-<<<<<<< HEAD
 
             $this->vars['status_code'] = $response->getStatusCode();
             $this->vars['status_txt'] = $response->getBody()->getContents();
 
             $responseData = json_decode($this->vars['status_txt'], true);
 
-=======
-            
-            $this->vars['status_code'] = $response->getStatusCode();
-            $this->vars['status_txt'] = $response->getBody()->getContents();
-            
-            $responseData = json_decode($this->vars['status_txt'], true);
-            
->>>>>>> laraxot/dev
             return [
                 'success' => true,
                 'message_id' => $responseData['messages'][0]['id'] ?? null,
@@ -493,11 +411,7 @@ $action = app(SendTwilioWhatsAppAction::class);
 
 $whatsAppData = new WhatsAppData(
     to: '+393401234567',
-<<<<<<< HEAD
 body: 'Questo è un messaggio di test da <nome progetto>',
-=======
-body: 'Questo è un messaggio di test da Quaeris',
->>>>>>> laraxot/dev
 );
 
 $result = $action->execute($whatsAppData);
@@ -565,15 +479,9 @@ class WhatsAppChannel
         }
 
         $whatsAppData = $notification->toWhatsApp($notifiable);
-<<<<<<< HEAD
 
         $driver = Config::get('whatsapp.default', 'twilio');
 
-=======
-        
-        $driver = Config::get('whatsapp.default', 'twilio');
-        
->>>>>>> laraxot/dev
         $action = match ($driver) {
             'twilio' => app(SendTwilioWhatsAppAction::class),
             'facebook' => app(SendFacebookWhatsAppAction::class),
@@ -581,11 +489,7 @@ class WhatsAppChannel
             '360dialog' => app(Send360dialogWhatsAppAction::class),
             default => throw new \Exception("Unsupported WhatsApp driver: {$driver}"),
         };
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         return $action->execute($whatsAppData);
     }
 }
@@ -621,11 +525,7 @@ final class SendLogWhatsAppAction implements WhatsAppProviderActionInterface
             'template' => $whatsAppData->template,
             'type' => $whatsAppData->type,
         ]);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         return [
             'success' => true,
             'message_id' => 'log-' . uniqid(),
@@ -644,21 +544,6 @@ L'integrazione WhatsApp  segue gli stessi pattern e standard utilizzati per l'in
 3. **Estensibilità**: È facile aggiungere nuovi provider WhatsApp
 4. **Testabilità**: Le azioni sono facilmente testabili grazie all'interfaccia comune
 
-<<<<<<< HEAD
 Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di <nome progetto>, mantenendo la coerenza con le altre modalità di comunicazione.
 
 ---
-=======
-Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di Quaeris, mantenendo la coerenza con le altre modalità di comunicazione.
-
----
-
-title: "whatsapp integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "whatsapp integration"
-issues: []
-discussions: []
->>>>>>> laraxot/dev

@@ -1,19 +1,11 @@
 ---
-<<<<<<< HEAD
 title: "Raw Sources: Notify"
-=======
-title: "Raw Sources — Notify"
->>>>>>> laraxot/dev
 type: index
 tags: [notify, docs, raw]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-<<<<<<< HEAD
 qmd: "notify documentazione raw index raw sources: notify index readme frontmatter qmd search"
-=======
-qmd: "notify documentazione raw index raw sources — notify index readme frontmatter qmd search"
->>>>>>> laraxot/dev
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
 discussions:
@@ -25,11 +17,7 @@ related:
   - ../integrations/readme.md
   - ../templates/readme.md
 ---
-<<<<<<< HEAD
 # Raw Sources: Notify
-=======
-# Raw Sources — Notify
->>>>>>> laraxot/dev
 
 Questo layer contiene le fonti grezze: documenti immutabili che l'LLM legge ma non modifica.
 
@@ -52,15 +40,9 @@ Il layer raw per questo modulo/tema è **l'intera cartella `docs/`** (esclusa `d
 
 ## Dove va la sintesi
 
-<<<<<<< HEAD
 → `docs/wiki/index.md`: catalogo dei nodi di conoscenza
 → `docs/wiki/log.md`: log append-only degli ingest
 → `docs/wiki/concepts/`, `entities/`, `summaries/`: pagine wiki tematiche
-=======
-→ `docs/wiki/index.md` — catalogo dei nodi di conoscenza
-→ `docs/wiki/log.md` — log append-only degli ingest
-→ `docs/wiki/concepts/`, `entities/`, `summaries/` — pagine wiki tematiche
->>>>>>> laraxot/dev
 
 ## Schema di riferimento
 

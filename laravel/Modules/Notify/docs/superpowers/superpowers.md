@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "superpowers"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Superpowers - Documentazione Installazione e Utilizzo
@@ -37,18 +34,6 @@ Il sistema impone metodologie rigorose:
 - **Code review automatica** - Verifica rispetto al piano
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "superpowers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "superpowers"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Installazione Effettuata
 
 ### Metodo usato: Claude Code Plugin via Marketplace GitHub

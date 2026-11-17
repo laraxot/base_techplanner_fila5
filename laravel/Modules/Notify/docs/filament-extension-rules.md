@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament extension rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Filament Class Extension Rules
@@ -248,18 +245,6 @@ app(CreateUserAction::class)->execute($data);
 ```
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "filament extension rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament extension rules"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Philosophy**: DRY + KISS - Do not duplicate, do not complicate, always use base classes.
 # Regole di Estensione delle Classi Filament
 

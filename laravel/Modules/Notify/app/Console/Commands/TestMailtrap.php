@@ -9,11 +9,6 @@ use Mailtrap\Helper\ResponseHelper;
 use Mailtrap\MailtrapClient;
 use Mailtrap\Mime\MailtrapEmail;
 use Symfony\Component\Mime\Address;
-<<<<<<< HEAD
-=======
-use Throwable;
-use Webmozart\Assert\Assert;
->>>>>>> laraxot/dev
 
 class TestMailtrap extends Command
 {
@@ -37,27 +32,16 @@ class TestMailtrap extends Command
 
         if (! is_string($apiKey) || $apiKey === '') {
             $this->error('MAILTRAP_API_KEY is not configured');
-<<<<<<< HEAD
             return Command::FAILURE;
-=======
-
-            return self::FAILURE;
->>>>>>> laraxot/dev
         }
 
         if (! is_string($recipient) || $recipient === '') {
             $this->error('MAILTRAP_TEST_RECIPIENT is not configured');
-<<<<<<< HEAD
             return Command::FAILURE;
-=======
-
-            return self::FAILURE;
->>>>>>> laraxot/dev
         }
 
         $fromAddress = config('mail.from.address', 'noreply@fixcity.eu');
         $fromName = config('mail.from.name', 'FixCity');
-<<<<<<< HEAD
         if (! is_string($fromAddress) || $fromAddress === '') {
             $fromAddress = 'noreply@fixcity.eu';
         }
@@ -67,17 +51,10 @@ class TestMailtrap extends Command
 
         // Create the email using the Mailtrap SDK
         $email = (new MailtrapEmail())
-=======
-        Assert::string($fromAddress);
-        Assert::string($fromName);
-
-        $email = (new MailtrapEmail)
->>>>>>> laraxot/dev
             ->from(new Address($fromAddress, $fromName))
             ->to(new Address($recipient))
             ->subject('You are awesome!')
             ->category('Integration Test')
-<<<<<<< HEAD
             ->text('Congrats for sending test email with Mailtrap!')
         ;
 
@@ -96,25 +73,6 @@ class TestMailtrap extends Command
             $this->error('Error sending test email: ' . $e->getMessage());
             $this->error('Trace: ' . $e->getTraceAsString());
             return Command::FAILURE;
-=======
-            ->text('Congrats for sending test email with Mailtrap!');
-
-        try {
-            $response = MailtrapClient::initSendingEmails(
-                apiKey: $apiKey,
-                isBulk: false,
-            )->send($email);
-
-            $this->info('Test email sent successfully!');
-            $this->line(print_r(ResponseHelper::toArray($response), true));
-
-            return self::SUCCESS;
-        } catch (Throwable $e) {
-            report($e);
-            $this->error('Error sending test email. Check the application log for details.');
-
-            return self::FAILURE;
->>>>>>> laraxot/dev
         }
     }
 }

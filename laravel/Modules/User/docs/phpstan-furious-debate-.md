@@ -167,7 +167,7 @@ Ogni modulo corretto è un traguardo.
 - [DRY/KISS Principles](../../../../docs/architecture/dry-kiss-principles.md)
 =======
 - [DRY/KISS Principles](../../../docs/architecture/dry-kiss-principles.md)
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -177,4 +177,4 @@ Ogni modulo corretto è un traguardo.
 **Il Purista ha vinto. La type safety è sacra. Non profanarla mai.**
 =======
 **Il Purista ha vinto. La type safety è sacra. Non profanarla mai.**
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev

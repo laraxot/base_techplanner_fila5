@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "visual comparison"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Homepage Visual Comparison - CSS Fixes Required

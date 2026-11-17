@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "later"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Later (Module Notify)

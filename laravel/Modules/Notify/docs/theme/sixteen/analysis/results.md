@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "results"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Homepage Visual Comparison - RESULTS
@@ -47,11 +44,8 @@ status: draft
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # ✓
-<<<<<<< HEAD
 <<<<<<< .merge_file_CaAgDs
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_v7a3Hj
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev
@@ -65,17 +59,5 @@ npm run build    # ✓
 - Structure is functionally identical
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "results"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "results"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Last Updated: 2026-04-07*
 *Status: COMPLETED*

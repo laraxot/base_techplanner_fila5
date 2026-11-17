@@ -4,28 +4,16 @@ created: 2026-09-26
 qmd: "laravel"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "html2pdf laravel: puntatore"
-=======
-title: "html2pdf laravel — puntatore"
->>>>>>> laraxot/dev
 type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/laravel.md"
-<<<<<<< HEAD
 status: draft
 ---
 
 # Html2Pdf: laravel
 
 Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5/issues/124)).
-=======
----
-
-# Html2Pdf — laravel
-
-Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
->>>>>>> laraxot/dev
 
 → [laravel.md](../../../Media/docs/html2pdf/laravel.md)

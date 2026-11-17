@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "agents performance"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # AGENTS Performance Optimization
@@ -25,18 +22,6 @@ Best practices per l'ottimizzazione delle performance.
 - Use Laravel's query builder for complex operations
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "agents performance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents performance"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Frontend Optimization
 
 - **Minify** CSS/JS assets
@@ -71,9 +56,6 @@ discussions: []
 - [website-checklist.md](./website-checklist.md) - Checklist completa
 - [AGENTS.md originale](../../AGENTS.md)
 - [agents.md originale](../../agents.md)
-<<<<<<< HEAD
 - [AGENTS.md originale](../AGENTS.md)
 - [agents.md originale](../agents.md)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md)

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "approfondimento tailwind"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Approfondimento Implementazione Tailwind CSS nel Modulo Notify

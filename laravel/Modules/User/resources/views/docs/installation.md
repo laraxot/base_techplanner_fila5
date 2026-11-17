@@ -81,15 +81,13 @@ npm run build
 
 <<<<<<< .merge_file_IYOSsE
 Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
-=======
-<<<<<<< .merge_file_jbmQWk
-```bash
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-```
-=======
-Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
->>>>>>> .merge_file_2zFDIQ
 >>>>>>> .merge_file_r9MKXG
+=======
+Copia gli assets compilati nella directory pubblica:
+
+```bash
+```
+>>>>>>> laraxot/dev
 
 ## Configurazione
 

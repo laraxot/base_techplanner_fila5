@@ -1,29 +1,16 @@
 ---
-<<<<<<< HEAD
 qmd: "project structure"
 issues: []
 discussions: []
 title: "Project Structure: Module Notify"
-=======
-qmd: "PROJECT STRUCTURE"
-issues: []
-discussions: []
-title: "Project Structure — Module Notify"
->>>>>>> laraxot/dev
 type: documentation
 created: 2026-05-11
 updated: 2026-05-11
 tags: [structure, architecture, module]
-<<<<<<< HEAD
 status: draft
 ---
 
 # Project Structure: Module **Notify**
-=======
----
-
-# Project Structure — Module **Notify**
->>>>>>> laraxot/dev
 
 ## Directory Structure
 
@@ -49,11 +36,7 @@ status: draft
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-<<<<<<< HEAD
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE: Pattern on-demand
-=======
-├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
->>>>>>> laraxot/dev
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
@@ -68,11 +51,7 @@ status: draft
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-<<<<<<< HEAD
 | `ON-DEMAND-PATTERN.md` | **Leggi prima**: pattern da seguire |
-=======
-| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
->>>>>>> laraxot/dev
 
 ## Convenzioni
 
@@ -124,13 +103,10 @@ graph TD
 - [Global Skills](../../docs/wiki/skills/)
 - [Global Commands](../../docs/wiki/commands/)
 - [Global Memories](../../docs/wiki/memories/)
-<<<<<<< HEAD
 - [Global Rules](wiki/rules)
 - [Global Skills](wiki/skills)
 - [Global Commands](wiki/commands)
 - [Global Memories](wiki/memories)
-=======
->>>>>>> laraxot/dev
 
 ## Setup Iniziale (per nuovi moduli)
 

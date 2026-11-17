@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "sms configuration access pattern 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sms configuration access pattern 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Pattern di Accesso alla Configurazione SMS
 
 ## Problema Identificato
@@ -19,11 +5,7 @@ discussions: []
 È stato identificato un errore comune nell'implementazione delle azioni SMS: l'utilizzo di `config('services.*.token')` invece di `config('sms.drivers.*.token')`.
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Questo errore viola i principi di modularità e coerenza dell'architettura di <nome progetto>, dove ogni modulo gestisce le proprie configurazioni in file dedicati.
-=======
-Questo errore viola i principi di modularità e coerenza dell'architettura di SaluteOra, dove ogni modulo gestisce le proprie configurazioni in file dedicati.
->>>>>>> 6ed19256f (.)
 =======
 Questo errore viola i principi di modularità e coerenza dell'architettura di <nome progetto>, dove ogni modulo gestisce le proprie configurazioni in file dedicati.
 >>>>>>> laraxot/dev

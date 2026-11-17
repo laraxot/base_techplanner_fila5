@@ -8,7 +8,6 @@ qmd: "sessione-analisi-homepage ✅ sessione completata - homepage analysis & do
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -23,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # ✅ Sessione Completata - Homepage Analysis & Documentation
@@ -217,18 +206,12 @@ Themes/Sixteen/resources/views/
 ## 📚 Risorse
 
 ### Documentazione
-<<<<<<< HEAD
 - [Analisi Visiva](screenshots/homepage/analisi-visiva.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
 - [Fix Plan](screenshots/homepage/fix-plan.md)
 - [Analisi Visiva](screenshots/homepage/analisi-visiva.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
 - [Fix Plan](screenshots/homepage/fix-plan.md)
-=======
-- [Analisi Visiva](docs/screenshots/homepage/analisi-visiva.md)
-- [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
-- [Fix Plan](docs/screenshots/homepage/fix-plan.md)
->>>>>>> laraxot/dev
 - [OpenViking Context](.openvikings/homepage_alignment_context.md)
 
 ### Link Esterni

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "send email translation fix 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "send email translation fix 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Fix Traduzioni File send_email.php - Modulo Notify
 
 ## Problemi Identificati
@@ -140,22 +126,11 @@ Ogni campo ora ha la struttura espansa completa:
 ## Collegamenti
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Documentazione Root](../../docs/translation_standards_links.md)
 - [Regole Helper Text](../../docs/translation-helper-text-standards.md)
 - [Best Practices Filament](../../docs/filament_translation_best_practices.md)
 - [Documentazione Root](../project_docs/translation_standards_links.md)
 - [Best Practices Filament](../../docs/filament_translation_best_practices.md)- [Documentazione Root](../project_docs/translation_standards_links.md)
-<<<<<<< HEAD
-=======
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../project_docs/translation_standards_links.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)- [Documentazione Root](../project_docs/translation_standards_links.md)
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 - [Documentazione Root](../project_docs/translation_standards_links.md)
@@ -163,9 +138,6 @@ Ogni campo ora ha la struttura espansa completa:
 - [Regole Helper Text](../project_docs/translation-helper-text-standards.md)
 - [Best Practices Filament](../project_docs/filament_translation_best_practices.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [Documentazione Root](../../docs/translation_standards_links.md)
 - [Regole Helper Text](../../docs/translation-helper-text-standards.md)
 - [Best Practices Filament](../../docs/filament_translation_best_practices.md)
@@ -315,158 +287,6 @@ Ogni campo ora ha la struttura espansa completa:
 - [Best Practices Filament](../../docs/filament_translation_best_practices.md)
 - [Documentazione Root](../project_docs/translation_standards_links.md)
 - [Best Practices Filament](../../docs/filament_translation_best_practices.md)- [Documentazione Root](../project_docs/translation_standards_links.md)
-<<<<<<< HEAD
-=======
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../docs/translation_standards_links.md)
-- [Regole Helper Text](../docs/translation-helper-text-standards.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)
-- [Documentazione Root](../project_docs/translation_standards_links.md)
-- [Best Practices Filament](../docs/filament_translation_best_practices.md)- [Documentazione Root](../project_docs/translation_standards_links.md)
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 - [Documentazione Root](../project_docs/translation_standards_links.md)
@@ -560,11 +380,7 @@ Ogni campo ora ha la struttura espansa completa:
 *Ultimo aggiornamento: 2025-01-06*
 *Ultimo aggiornamento: 2025-01-06*
 <<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)
 =======
 *Ultimo aggiornamento: 2025-01-06*
 >>>>>>> laraxot/dev

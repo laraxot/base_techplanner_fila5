@@ -3,11 +3,7 @@ created: 2026-09-26
 qmd: "module root uppercase folders archive"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "Archivio Modules.bak: modulo Notify"
-=======
-title: "Archivio Modules.bak — modulo Notify"
->>>>>>> laraxot/dev
 type: concept
 module: Notify
 status: active
@@ -18,11 +14,7 @@ related:
   - ../../../../../Xot/docs/wiki/concepts/module-root-uppercase-folders-archive.md
 ---
 
-<<<<<<< HEAD
 # Archivio `Modules.bak/`: Notify
-=======
-# Archivio `Modules.bak/` — Notify
->>>>>>> laraxot/dev
 
 ## Situazione
 

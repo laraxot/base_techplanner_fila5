@@ -1,27 +1,9 @@
-<<<<<<< HEAD
-=======
----
-title: "translations implementation status 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translations implementation status 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Stato dell'Implementazione delle Traduzioni nel Modulo Notify
 
 ## Panoramica
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Questo documento fornisce una panoramica completa dello stato attuale dell'implementazione delle traduzioni nel modulo Notify, identificando le convenzioni in uso, le discrepanze con le convenzioni generali di <nome progetto> e le azioni necessarie per garantire la coerenza.
-=======
-Questo documento fornisce una panoramica completa dello stato attuale dell'implementazione delle traduzioni nel modulo Notify, identificando le convenzioni in uso, le discrepanze con le convenzioni generali di SaluteOra e le azioni necessarie per garantire la coerenza.
->>>>>>> 6ed19256f (.)
 =======
 Questo documento fornisce una panoramica completa dello stato attuale dell'implementazione delle traduzioni nel modulo Notify, identificando le convenzioni in uso, le discrepanze con le convenzioni generali di <nome progetto> e le azioni necessarie per garantire la coerenza.
 >>>>>>> laraxot/dev
@@ -66,11 +48,7 @@ return [
 ## Discrepanza con le Convenzioni Generali
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Esiste una discrepanza tra le convenzioni utilizzate nel modulo Notify e le convenzioni generali di <nome progetto>:
-=======
-Esiste una discrepanza tra le convenzioni utilizzate nel modulo Notify e le convenzioni generali di SaluteOra:
->>>>>>> 6ed19256f (.)
 =======
 Esiste una discrepanza tra le convenzioni utilizzate nel modulo Notify e le convenzioni generali di <nome progetto>:
 >>>>>>> laraxot/dev

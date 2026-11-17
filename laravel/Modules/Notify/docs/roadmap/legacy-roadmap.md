@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "legacy roadmap"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Module Roadmap

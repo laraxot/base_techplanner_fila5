@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "boost skill installation error"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: boost-skill-installation-error.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Boost Skill Installation Error Analysis

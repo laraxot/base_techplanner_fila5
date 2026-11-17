@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "channel vs dto provider selection"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Architetturale: Selezione Provider nei Canali vs Data Transfer Objects

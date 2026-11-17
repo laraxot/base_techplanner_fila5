@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "verification report"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: verification-report.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Verification Report - Compliance and XotBase Refactoring

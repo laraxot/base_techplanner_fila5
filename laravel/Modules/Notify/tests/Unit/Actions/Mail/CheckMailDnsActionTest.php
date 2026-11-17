@@ -21,12 +21,9 @@ function fakeDnsResolver(array $records): \Closure
     return static fn (string $name, string $type): array => $records[$type.' '.$name] ?? [];
 }
 
-<<<<<<< HEAD
 /**
  * @var array<string, string>
  */
-=======
->>>>>>> laraxot/dev
 const MAIL_DNS_EXPECTED_CNAMES = [
     'mt78' => 'smtp.mailtrap.live',
     'rwmt1._domainkey' => 'rwmt1.dkim.smtp.mailtrap.live',

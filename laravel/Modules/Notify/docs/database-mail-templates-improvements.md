@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "database mail templates improvements"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Database Mail Templates Integration Ideas

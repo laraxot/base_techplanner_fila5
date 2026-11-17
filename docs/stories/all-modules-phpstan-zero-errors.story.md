@@ -159,3 +159,21 @@ Tutti i moduli/temi hanno i file obbligatori + `_module_*_fila5.code-workspace` 
 | `phpstan-module*` | [11-phpstan](../../bashscripts/docs/prompts/11-phpstan.md) |
 | `start-optimized` | [00-start](../../bashscripts/docs/prompts/00-start.md) |
 | `llm-wiki*` / `docs*` | [57-second-brain](../../bashscripts/docs/prompts/57-second-brain.md) |
+
+## Sessione ripresa (handoff → continuo)
+
+Host spesso saturo (`pgrep phpstan` >> 6): **non** rilanciare `analyse Modules` finché ≤6. Lavoro da baseline593 + fix purpose-first.
+
+### Fix applicati in questa ripresa
+- **User** `lang/it/recent_logins.php`: chiavi `label` duplicate (IT umano sovrascritto dalla chiave) → tenuta sola label utente
+- **User** `Team/Change`: `list<array<…>>` su `$teams` + `view-string` su render (cambio team Livewire)
+- **User** `Passwords/Reset`: rimosso `@phpstan-ignore`; `Assert::string` su status + `trans()`
+- **User** `CreateUserTest`: allineato a `TestCase::$createUserPage` / `requireCreateUserPage()` + `Assert` (prima `$this->page` mistyped → `method.nonObject`)
+- **Rating** `HasRating::ratings()`: MorphToMany a 4 template params con `RatingMorph` (allineato al contratto)
+- **Xot** `FeatureFlagsTest`: `expect()` → `Assert::*` (evita `argument.templateType` Pest)
+- **Xot** `AppMiddlewareTest`: narrow `hosts()` a `list<string>` prima di `assertCount`
+
+### Docs / swarm
+- Lane Employee + consolidamento docs Rating/User in background
+- User/docs: enorme ridondanza `phpstan*.md` (100+ file) — consolidare su story canonica `phpstan-zero-errors-user.story.md`, non creare altri file
+- Rating: canonico [phpstan-fixes.md](../../laravel/Modules/Rating/docs/phpstan-fixes.md) + [morphtomany troubleshooting](../../laravel/Modules/Rating/docs/wiki/troubleshooting/phpstan-generic-limitation-morphtomany.md)

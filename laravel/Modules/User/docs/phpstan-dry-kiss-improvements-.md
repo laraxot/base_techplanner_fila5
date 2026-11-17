@@ -233,7 +233,7 @@ When creating new models in User module:
 - [PHPStan Level 10 Full Analysis (Xot Module)](../../xot/docs/phpstan-level-10-dry-kiss-analysis-2025-10-17.md)
 - [DRY/KISS Model Refactoring 2025-10-15](../../xot/docs/dry-kiss-model-refactoring-2025-10-15.md)
 =======
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev
 
 ---
 
@@ -242,4 +242,4 @@ When creating new models in User module:
 *Status: ✅ PHPStan Level 10 Compliant*
 =======
 *Status: ✅ PHPStan Level 10 Compliant*
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev

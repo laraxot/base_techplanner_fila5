@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "token efficiency"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Token Efficiency

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "appointment notifications"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/appointment-notifications.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistema di Notifica Appuntamenti - il progetto

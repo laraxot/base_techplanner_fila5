@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_VshGGG
 ---
 title: "cloudflare"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_q1a7tO
 https://coderflex.com/blog/mastering-filament-turnstile-enhancing-web-security-with-cloudflare-integration
 https://github.com/coderflexx/filament-turnstile
 

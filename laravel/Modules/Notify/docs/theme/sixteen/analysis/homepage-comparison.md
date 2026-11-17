@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "homepage comparison"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Homepage Comparison Analysis
@@ -190,11 +187,8 @@ This document analyzes the HTML structure differences between:
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # Build CSS/JS
-<<<<<<< HEAD
 <<<<<<< .merge_file_dgugEt
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_KOi4bA
 ```
 
 ---

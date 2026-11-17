@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament extension rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Regole di Estensione delle Classi Filament

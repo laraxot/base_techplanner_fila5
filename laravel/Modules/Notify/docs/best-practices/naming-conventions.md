@@ -16,11 +16,8 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../README.md
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../naming-conventions.md
-=======
->>>>>>> laraxot/dev
 ---
 # Convenzioni di Naming
 

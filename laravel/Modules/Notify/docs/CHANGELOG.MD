@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 title: "Changelog - Modulo Notify"
 type: note
@@ -7,8 +6,6 @@ updated: 2026-10-07
 tags: [docs, notify]
 qmd: "changelog - modulo notify notify"
 ---
-=======
->>>>>>> laraxot/dev
 # Changelog - Modulo Notify
 
 Tutte le modifiche significative al modulo Notify saranno documentate in questo file.

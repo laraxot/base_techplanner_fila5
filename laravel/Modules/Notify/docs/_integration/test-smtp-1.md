@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "test smtp 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "test smtp 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # test_smtp
 
 <!-- Contenuto migrato da _docs/test_smtp.txt -->

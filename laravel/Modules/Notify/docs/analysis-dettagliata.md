@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "analysis dettagliata"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: analysisettagliata.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Dettagliata del Modulo Notify

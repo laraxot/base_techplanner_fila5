@@ -7,16 +7,10 @@ updated: 2026-09-26
 qmd: "notifications implementation guide"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
 # Guida all'Implementazione delle Notifiche
-=======
----
-
-# Guida all'Implementazione delle Notifiche 
->>>>>>> laraxot/dev
 
 Questa documentazione descrive come implementare correttamente le notifiche utilizzando Laravel Notifications nel modulo Notify.
 
@@ -36,17 +30,10 @@ use Illuminate\Database\Eloquent\Model;
 class RecordNotification extends Notification implements ShouldQueue
 {
     use Queueable;
-<<<<<<< HEAD
 
     protected Model $record;
     protected string $templateSlug;
 
-=======
-    
-    protected Model $record;
-    protected string $templateSlug;
-    
->>>>>>> laraxot/dev
     /**
      * Create a new notification instance.
      */
@@ -55,11 +42,7 @@ class RecordNotification extends Notification implements ShouldQueue
         $this->record = $record;
         $this->templateSlug = $templateSlug;
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     /**
      * Get the notification's delivery channels.
      */
@@ -67,22 +50,14 @@ class RecordNotification extends Notification implements ShouldQueue
     {
         return ['mail'];
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     /**
      * Get the mail representation of the notification.
      */
     public function toMail(object $notifiable): MailMessage
     {
         return (new MailMessage)
-<<<<<<< HEAD
 ->subject('Notifica da <nome progetto>')
-=======
-->subject('Notifica da Quaeris')
->>>>>>> laraxot/dev
 ->subject('Notifica da App')
             ->greeting('Ciao ' . $this->record->name)
             ->line('Contenuto della notifica...')
@@ -103,20 +78,12 @@ Per utilizzare la classe SpatieEmail all'interno di una notifica, implementa il 
 public function toMail(object $notifiable): \Illuminate\Mail\Mailable
 {
     $email = new SpatieEmail($this->record, $this->templateSlug);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Aggiungi eventuali allegati
     if ($this->attachments) {
         $email->addAttachments($this->attachments);
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return $email;
 }
 ```
@@ -176,20 +143,12 @@ $user->notify($notification);
 public function toMail(object $notifiable): \Illuminate\Mail\Mailable
 {
     $email = new SpatieEmail($this->record, $this->templateSlug);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Imposta esplicitamente il destinatario
     // Questo non è necessario se si usa $notifiable->routeNotificationFor('mail')
     // ma è una buona pratica per la chiarezza
     $email->to($notifiable->email);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return $email;
 }
 ```

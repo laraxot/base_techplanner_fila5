@@ -99,17 +99,10 @@ discussions: []
 ## 📂 Documentation
 
 ### Main Resources
-<<<<<<< HEAD
 - [🗂️ Master Index](./laravel/Themes/Sixteen/docs/design-comuni-replication-index.md)
 - [📋 Strategy & Phases](./laravel/Themes/Sixteen/docs/implementation/strategy.md)
 - [👥 Team Coordination](./laravel/Themes/Sixteen/docs/implementation/team-coordination.md)
 - [📊 Reference Analysis](./laravel/Themes/Sixteen/docs/analysis/reference-design-analysis.md)
-=======
-- [🗂️ Master Index](./laravel/Themes/Sixteen/docs/DESIGN_COMUNI_REPLICATION_INDEX.md)
-- [📋 Strategy & Phases](./laravel/Themes/Sixteen/docs/implementation/STRATEGY.md)
-- [👥 Team Coordination](./laravel/Themes/Sixteen/docs/implementation/TEAM_COORDINATION.md)
-- [📊 Reference Analysis](./laravel/Themes/Sixteen/docs/analysis/REFERENCE_DESIGN_ANALYSIS.md)
->>>>>>> laraxot/dev
 
 ### Per-Page Issues
 Each page has a dedicated GitHub issue:
@@ -152,14 +145,7 @@ npm install
 npm run build
 
 # Copy assets to public_html
-<<<<<<< HEAD
-<<<<<<< .merge_file_ztGBCe
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_2vWxrx
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
->>>>>>> laraxot/dev
 
 # Test in browser
 open http://127.0.0.1:8000/it/tests/
@@ -206,11 +192,7 @@ npm run test
 ### Communication
 - **GitHub Issues**: Per-page coordination
 - **GitHub Discussions**: Real-time team coordination
-<<<<<<< HEAD
 - **Docs**: [TEAM_COORDINATION.md](./laravel/Themes/Sixteen/docs/implementation/team-coordination.md)
-=======
-- **Docs**: [TEAM_COORDINATION.md](./laravel/Themes/Sixteen/docs/implementation/TEAM_COORDINATION.md)
->>>>>>> laraxot/dev
 
 ### Daily Standup
 Teams post status in issue comments:

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "tailwind blade components"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Esempi Pratici: Blade Components Tailwind per <nome progetto>
@@ -18,18 +15,6 @@ status: draft
 Questa guida mostra come creare Blade component riutilizzabili, accessibili e responsive usando pattern Tailwind CSS, secondo le best practice Webcrunch e le regole <nome progetto>.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "tailwind blade components"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "tailwind blade components"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 1. Button Component
 
 **resources/views/components/button.blade.php**

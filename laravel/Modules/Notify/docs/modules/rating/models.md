@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "models"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Rating Module Models Documentation

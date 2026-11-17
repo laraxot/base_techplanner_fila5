@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "correzioni phpstan completate"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: correzioni-phpstan-completate.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # ✅ CORREZIONI PHPSTAN COMPLETATE - Modulo Notify

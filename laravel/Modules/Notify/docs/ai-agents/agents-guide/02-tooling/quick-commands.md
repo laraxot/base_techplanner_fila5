@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "quick commands"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Quick Commands
@@ -55,17 +52,5 @@ composer go
 ```
 
 ---
-<<<<<<< HEAD
 [Back to index](../index.md)
 [Back to index](../../../index.md)
-=======
-title: "quick commands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quick commands"
-issues: []
-discussions: []
-[Back to index](../index.md)
->>>>>>> laraxot/dev

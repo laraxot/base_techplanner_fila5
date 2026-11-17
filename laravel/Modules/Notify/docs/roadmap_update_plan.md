@@ -1,24 +1,14 @@
 ---
-<<<<<<< HEAD
 title: "roadmap update plan"
-=======
-title: "ROADMAP UPDATE PLAN"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "roadmap update plan"
 issues: []
 discussions: []
 status: superseded
 superseded_by: roadmap-update-plan.md
-=======
-qmd: "ROADMAP UPDATE PLAN"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # Roadmap Update Plan - All Modules

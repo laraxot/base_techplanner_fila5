@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "translation keys best practices"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: translation-keys-best-practices.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Best Practices per le Chiavi di Traduzione

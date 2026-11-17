@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_Aun8MC
 ---
 title: "links"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_EpEaw6
 https://github.com/maize-tech/laravel-legal-consent
 https://github.com/foothing/laravel-gdpr-consent
 

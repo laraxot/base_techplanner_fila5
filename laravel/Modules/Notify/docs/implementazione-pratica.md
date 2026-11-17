@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "implementazione pratica"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Implementazione Pratica del Modulo Notify

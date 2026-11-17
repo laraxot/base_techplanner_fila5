@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "form schema conventions 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "form schema conventions 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Convenzioni per i Form Schema
 
 ## Regola Fondamentale per Array di Schema
@@ -110,11 +96,7 @@ Per verificare che tutti i metodi schema rispettino questa convenzione:
 
 ```bash
 <<<<<<< HEAD
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
-=======
-find /var/www/html/saluteora/laravel/Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
->>>>>>> 6ed19256f (.)
 =======
 find Modules -type f -name "*.php" -exec grep -l "get.*FormSchema" {} \; | xargs grep -l "return \["
 >>>>>>> laraxot/dev

@@ -10,10 +10,7 @@ created: {{date}}
 updated: {{date}}
 tags: [person, organization, module]
 related: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # {{title}}

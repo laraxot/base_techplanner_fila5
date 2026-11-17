@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "issue multi agent collaboration"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Multi-Agent Collaboration: Sync Remote Repo Documentation
@@ -20,18 +17,6 @@ status: draft
 > **Status**: ✅ Documentation Created, Pending bashscripts Subtree Sync
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "issue multi agent collaboration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "issue multi agent collaboration"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Mission
 
 Create comprehensive documentation for `bashscripts/git/subtrees/sync_remote_repo.sh` that:

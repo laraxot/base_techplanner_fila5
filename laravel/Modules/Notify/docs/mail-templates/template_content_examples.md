@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "template content examples"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: template-content-examples.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Esempi di Contenuto per Template Email

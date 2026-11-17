@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "testing testcase database connection fix"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Fix: Notify TestCase - Database Connection Configuration
@@ -103,17 +100,5 @@ protected function setUp(): void
 - [Media TestCase Fix](../../Media/docs/testing-testcase-database-connection-fix.md)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "testing testcase database connection fix"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing testcase database connection fix"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Status**: Completed
 **Risultato**: Test Notify ora configurano correttamente le connessioni database

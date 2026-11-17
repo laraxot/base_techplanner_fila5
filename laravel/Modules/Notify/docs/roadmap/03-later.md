@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "03 later"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: later.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Later (Module Notify)

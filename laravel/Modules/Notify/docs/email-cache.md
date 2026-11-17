@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email cache"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistema Cache Email 

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "migration json conversion"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: migration-json-conversion.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Gestione Conversioni JSON nelle Migrazioni

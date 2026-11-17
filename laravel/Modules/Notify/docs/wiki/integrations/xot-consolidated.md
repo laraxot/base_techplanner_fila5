@@ -2,26 +2,16 @@
 qmd: "xot consolidated"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "xot: Consolidated Documentation"
-=======
-title: "xot — Consolidated Documentation"
->>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
 ---
 
 # xot: Consolidated Documentation
-=======
----
-
-# xot — Consolidated Documentation
->>>>>>> laraxot/dev
 
 Consolidated from **11** individual files.
 
@@ -43,11 +33,7 @@ Consolidated from **11** individual files.
 
 ## xot-base-classes-analysis-1
 
-<<<<<<< HEAD
 *Consolidated from: `xot-base-classes-analysis.md`*
-=======
-*Consolidated from: `xot-base-classes-analysis-1.md`*
->>>>>>> laraxot/dev
 
 title: "Analisi: Utilizzo delle Classi Base Xot"
 type: concept
@@ -58,7 +44,6 @@ qmd: "xot-base-classes-analysis-1 analisi: utilizzo delle classi base xot"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -70,14 +55,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -405,11 +382,7 @@ Questa convenzione dovrebbe essere seguita rigorosamente in tutto il progetto pe
 
 ## xot-base-classes-checklist-1
 
-<<<<<<< HEAD
 *Consolidated from: `xot-base-classes-checklist.md`*
-=======
-*Consolidated from: `xot-base-classes-checklist-1.md`*
->>>>>>> laraxot/dev
 
 title: "Checklist: Verifica Classi Base Xot"
 type: concept
@@ -420,7 +393,6 @@ qmd: "xot-base-classes-checklist-1 checklist: verifica classi base xot"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -432,14 +404,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -613,11 +577,7 @@ Per correggere automaticamente i file che non seguono queste convenzioni:
 
 ## xot-base-classes-convention-1
 
-<<<<<<< HEAD
 *Consolidated from: `xot-base-classes-convention.md`*
-=======
-*Consolidated from: `xot-base-classes-convention-1.md`*
->>>>>>> laraxot/dev
 
 title: "Convenzioni per le Classi Base Xot"
 type: concept
@@ -628,7 +588,6 @@ qmd: "xot-base-classes-convention-1 convenzioni per le classi base xot"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -640,14 +599,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1372,7 +1323,6 @@ qmd: "xotbasepivot-executive-summary xotbasepivot - executive summary"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -1384,14 +1334,6 @@ related:
   - "./absolute-completion-completamento-assoluto.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> laraxot/dev
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1543,11 +1485,7 @@ related:
    - Vantaggi/svantaggi dettagliati
    - Alternative considerate
    
-<<<<<<< HEAD
 4. **[Strategia Implementazione](../../architecture/xotbasepivot-strategy.md)** (3.500+ parole)
-=======
-4. **[Strategia Implementazione](./architecture/xotbasepivot-strategy.md)** (3.500+ parole)
->>>>>>> laraxot/dev
    - Step-by-step guide
    - Script automatici
    - Testing strategy
@@ -1589,11 +1527,7 @@ related:
 ### Implementation (3-4 ore)
 
 4. **[ ] Execute Migration**
-<<<<<<< HEAD
    - Seguire [strategia implementazione](../../architecture/xotbasepivot-strategy.md)
-=======
-   - Seguire [strategia implementazione](./architecture/xotbasepivot-strategy.md)
->>>>>>> laraxot/dev
    - Testing continuo
    - Progress updates
 
@@ -1700,11 +1634,7 @@ Se hai domande prima dell'approvazione:
 
 ### During Implementation
 
-<<<<<<< HEAD
 Seguire [Strategia Implementazione](../../architecture/xotbasepivot-strategy.md) step-by-step.
-=======
-Seguire [Strategia Implementazione](./architecture/xotbasepivot-strategy.md) step-by-step.
->>>>>>> laraxot/dev
 
 ### After Implementation
 

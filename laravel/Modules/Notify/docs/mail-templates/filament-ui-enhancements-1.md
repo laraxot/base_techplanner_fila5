@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "filament ui enhancements 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament ui enhancements 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Miglioramenti UI/UX per MailTemplateResource
 
 ## Componenti Filament Consigliati

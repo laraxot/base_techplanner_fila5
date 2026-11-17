@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament resource pages architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura delle Pagine di Risorse Filament 
@@ -129,8 +126,5 @@ find /var/www/html/saluteora/laravel/Modules -type f -name "*.php" -path "*/Fila
 
 - [Filament Resources Documentation](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
 - [SaluteOra XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-<<<<<<< HEAD
 - [SaluteOra XotBase Architecture](./filament_xot_architecture.md)
-=======
->>>>>>> laraxot/dev
 - [Pattern Architetturali in Laravel](https://laravel.com/docs/architecture)

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "json migration error"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: json-migration-error.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Errore di Migrazione JSON e Soluzione
@@ -162,11 +159,8 @@ if ($validRecords !== $totalRecords) {
 
 - [Documentazione Migrazioni](./MIGRATION_RULES.md)
 - [Best Practices JSON](./JSON_BEST_PRACTICES.md)
-<<<<<<< HEAD
 - [Documentazione Migrazioni](./migration_rules.md)
 - [Best Practices JSON](./json_best_practices.md)
-=======
->>>>>>> laraxot/dev
 - [Gestione Errori](./ERROR_HANDLING.md)
 
 ## Note Importanti

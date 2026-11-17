@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "whatsapp"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../-integration/whatsapp.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # whatsapp

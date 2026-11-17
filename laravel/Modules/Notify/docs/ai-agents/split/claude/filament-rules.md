@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 === filament/core rules ===
@@ -98,7 +95,6 @@ Forms\Components\Select::make('user_id')
 
 
 ---
-<<<<<<< HEAD
 ## Cross-References
 
 - ← [CLAUDE Index](INDEX.md): All Laravel Boost guidelines
@@ -106,22 +102,4 @@ Forms\Components\Select::make('user_id')
 - ← [CLAUDE Index](index.md): All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md): Master index
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md): Original source
-=======
-
-title: "filament rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [CLAUDE Index](INDEX.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../INDEX.md) — Master index
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
->>>>>>> laraxot/dev
 

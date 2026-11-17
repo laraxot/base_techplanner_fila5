@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "email backup"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-backup.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistema Backup Email 

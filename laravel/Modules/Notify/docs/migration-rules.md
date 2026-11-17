@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "migration rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Regole per le Migrazioni nel Modulo Notify
@@ -197,10 +194,7 @@ return new class () extends XotBaseMigration {
 ## Collegamenti Correlati
 
 - [Documentazione XotBaseMigration](../../Xot/docs/rules/LARAXOT-RULES.md)
-<<<<<<< HEAD
 - [Documentazione XotBaseMigration](../../Xot/docs/rules/laraxot-rules.md)
-=======
->>>>>>> laraxot/dev
 - [Standard Migrazioni](../../../docs/regole/standard_migrazioni.md)
 - [Best Practices Database](../../../docs/best-practices/database.md)
 - [Gestione Errori](./ERROR_HANDLING.md)

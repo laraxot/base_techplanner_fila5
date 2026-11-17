@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "08 verified commit governance"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Verified Commit Governance

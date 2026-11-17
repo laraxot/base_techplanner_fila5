@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "interface structure clarification"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Chiarimento sulla Struttura delle Interfacce 

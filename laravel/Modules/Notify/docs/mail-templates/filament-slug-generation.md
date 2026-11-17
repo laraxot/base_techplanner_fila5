@@ -3,18 +3,11 @@ title: "filament slug generation"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< HEAD
 updated: 2026-10-23
 qmd: "filament slug generation"
 issues: []
 discussions: []
 status: draft
-=======
-updated: 2026-09-26
-qmd: "filament slug generation"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # Generazione di Slug in Filament
@@ -133,11 +126,7 @@ TextInput::make('name')
 
 ### 1. Form Resource
 ```php
-<<<<<<< HEAD
 public static function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
-=======
-public static function form(Form $form): Form
->>>>>>> laraxot/dev
 {
     return $form
         ->schema([

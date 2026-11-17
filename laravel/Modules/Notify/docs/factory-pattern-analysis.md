@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "factory pattern analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi del Pattern Factory per le Notifiche

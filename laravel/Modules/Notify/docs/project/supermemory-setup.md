@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "supermemory setup"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Supermemory Configuration
@@ -60,15 +57,9 @@ supermemory tags
 ```
 
 ### OpenCode Commands
-<<<<<<< HEAD
 - `/supermemory-init`: Explore and memorize codebase
 - `/supermemory-login`: Authenticate with Supermemory
 - `/supermemory-logout`: Clear credentials
-=======
-- `/supermemory-init` — Explore and memorize codebase
-- `/supermemory-login` — Authenticate with Supermemory
-- `/supermemory-logout` — Clear credentials
->>>>>>> laraxot/dev
 
 ### Config File
 `~/.config/opencode/supermemory.jsonc`:

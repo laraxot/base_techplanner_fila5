@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament naming conventions"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Convenzioni di Naming per Filament 

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "analysisettagliata 7"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analysisettagliata 7"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Analisi Dettagliata del Modulo Notify - Parte 7: Manutenzione e Backup
 
 ## 7. Manutenzione e Backup

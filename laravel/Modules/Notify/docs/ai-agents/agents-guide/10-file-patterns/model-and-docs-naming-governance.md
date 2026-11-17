@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "model and docs naming governance"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Model And Docs Naming Governance

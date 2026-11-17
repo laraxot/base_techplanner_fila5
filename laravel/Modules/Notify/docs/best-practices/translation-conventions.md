@@ -16,11 +16,8 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - naming-conventions.md
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../translation-conventions.md
-=======
->>>>>>> laraxot/dev
 ---
 # Convenzioni per le Traduzioni del Modulo Notify
 

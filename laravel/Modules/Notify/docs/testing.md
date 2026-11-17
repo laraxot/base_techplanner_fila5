@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Testing Rules Summary
@@ -75,13 +72,10 @@ Ogni modulo può avere il proprio `Pest.php` con:
 - Helper functions
 - Custom expectations
 
-<<<<<<< HEAD
 In Notify `tests/Pest.php` contiene solo il bind `pest()->extend(TestCase::class)->in('Feature', 'Unit')`. Gli helper di test non sono funzioni globali (nella run full-suite Pest carica il `Pest.php` di ogni modulo nello stesso processo: due funzioni con lo stesso nome sono un fatal `cannot redeclare`) ma metodi statici:
 - `Modules\Notify\Tests\TestCase`: `assertNotifyArray`, `notifyArrayGet`, `notifyReflectionSource`, `notifyReflectionPropertyNames`
 - `Modules\Xot\Tests\XotBasePest` (condiviso, per autoload): `assertFreshModel`, `assertFirstModel`, `assertTableHas`, `assertArray`, `assertString`, `assertReflectionTypeName`
 
-=======
->>>>>>> laraxot/dev
 ## Comandi Importanti
 
 ### PHPStan
@@ -209,11 +203,7 @@ Configure Notify-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Configure Notify module
     config(['notify.default_channel' => 'email']);
     config(['notify.queue_enabled' => false);
@@ -232,11 +222,7 @@ test('notification can be created', function () {
         'type' => 'info',
         'channel' => 'email',
     ]);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     expect($notification)->toBeInstanceOf(\Modules\Notify\Models\Notification::class);
     expect($notification->title)->toBe('Test Notification');
 });
@@ -247,11 +233,7 @@ test('notification can be created', function () {
 ```php
 test('notify configuration is loaded', function () {
     $notifyConfig = config('notify');
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     expect($notifyConfig['default_channel'])->toBe('email');
     expect($notifyConfig['queue_enabled'])->toBe(false);
 });
@@ -262,11 +244,7 @@ test('notify configuration is loaded', function () {
 ```php
 test('notify service provider is registered', function () {
     $app = app();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     expect($app->bound(\Modules\Notify\Providers\NotifyServiceProvider::class))->toBeTrue();
 });
 ```
@@ -311,11 +289,7 @@ test('notify service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     config(['notify.default_channel' => 'email']);
     config(['notify.queue_enabled' => false);
 }
@@ -331,19 +305,11 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
-<<<<<<< HEAD
 
     $app['config']->set([
         'database.connections.notify.database' => '<nome progetto>_data_test',
     ]);
 
-=======
-    
-    $app['config']->set([
-        'database.connections.notify.database' => 'quaeris_data_test',
-    ]);
-    
->>>>>>> laraxot/dev
     return $app;
 }
 ```
@@ -430,10 +396,7 @@ protected function createApplication()
 - [Testing Setup Guide](../../docs/testing-setup.md)
 - [Testing Best Practices](../../docs/testing-best-practices.md)
 - [Troubleshooting Guide](../../docs/troubleshooting.md)
-<<<<<<< HEAD
 - [Troubleshooting Guide](troubleshooting.md)
-=======
->>>>>>> laraxot/dev
 
 ## Testing Examples
 
@@ -449,11 +412,7 @@ test('notification can be created', function () {
         'recipient' => 'test@example.com',
         'status' => 'pending',
     ]);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     expect($notification)->toBeInstanceOf(\Modules\Notify\Models\Notification::class);
     expect($notification->title)->toBe('Test Notification');
     expect($notification->message)->toBe('Test message');
@@ -469,11 +428,7 @@ test('notification can be created', function () {
 ```php
 test('notify service can send notification', function () {
     $service = new \Modules\Notify\Services\NotifyService();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     $notification = $service->sendNotification([
         'title' => 'Test Notification',
         'message' => 'Test message',
@@ -481,11 +436,7 @@ test('notify service can send notification', function () {
         'channel' => 'email',
         'recipient' => 'test@example.com',
     ]);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     expect($notification)->toBeInstanceOf(\Modules\Notify\Models\Notification::class);
     expect($notification->status)->toBe('sent');
 });
@@ -502,11 +453,7 @@ test('notify api can create notification', function () {
         'channel' => 'email',
         'recipient' => 'test@example.com',
     ];
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     $response = $this->post('/api/notify/notifications', $notificationData);
     $response->assertStatus(201);
     $response->assertJson([
@@ -560,18 +507,6 @@ Following these guidelines will ensure your Notify module tests are:
 Remember: Good tests are the foundation of reliable software development.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "testing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Last updated: January 2025*
 
 ---
@@ -585,11 +520,7 @@ tags: [notify, testing, pest]
 created: 2026-07-28
 ---
 
-<<<<<<< HEAD
 # Notify Module: Testing
-=======
-# Notify Module — Testing
->>>>>>> laraxot/dev
 
 ```php
 test('sends welcome notification', function () {

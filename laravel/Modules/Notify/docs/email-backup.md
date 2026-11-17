@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email backup"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistema Backup Email 

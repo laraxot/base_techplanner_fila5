@@ -9,10 +9,7 @@ created: "2026-07-21"
 updated: "2026-07-23"
 related:
   - "../../../bashscripts/tools/prompts/02-gitmodules-sync.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sincronizzazione multi-organizzazione (laraxot + provtv)
@@ -58,19 +55,12 @@ Niente reset/squash/force per aggirare LFS.
 
 `module_user_fila5`: `laraxot` tip `3ea7273a` (`0 0`); `provtv` **merge-base vuoto** → STOP (no merge/force).
 Canon: [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
-<<<<<<< HEAD
 Canon: [../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md](../../User/docs/wiki/troubleshooting/git-push-dual-remote-unrelated.md).
-=======
->>>>>>> laraxot/dev
 
 ### Caso Notify 2026-07-23 (già allineato, nessuna azione)
 
 Working tree pulito, nessun merge/rebase in corso. Fetch `laraxot` + `provtv`:
-<<<<<<< HEAD
 entrambi **`0 0`** (merge-base presente, storie correlate: la risoluzione
-=======
-entrambi **`0 0`** (merge-base presente, storie correlate — la risoluzione
->>>>>>> laraxot/dev
 "unrelated" del 2026-07-21 sopra è rimasta stabile stavolta, a differenza di
 `Xot`). Nessun commit da fare, nessun push necessario.
 

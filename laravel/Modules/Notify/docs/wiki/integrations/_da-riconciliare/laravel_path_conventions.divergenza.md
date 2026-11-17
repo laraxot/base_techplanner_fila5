@@ -8,11 +8,8 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: laravel-path-conventions.divergenza.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Divergenza: `laravel_path_conventions.md`

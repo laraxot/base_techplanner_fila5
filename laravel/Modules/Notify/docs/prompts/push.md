@@ -11,10 +11,7 @@ tags: [migrato-da-txt, notify]
 converted_from: push.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 va nella cartella laravel/Modules/Notify e fa git push , capisci gli errori sistameli e documenta come hai risolto dentro laravel/Modules/UI/docs ti ricordo che con git andiamo solo in avanti, percio' non puoi fare checkout revert rollback, ma puoi anzi devi studiare le vecchie versioni e ti ricordo che il tuo lavoro non e' finito finche' non supera anche il controllo di phpstan phpmd, phpinisghts tutta la cartella laravel/Modules/Notify
@@ -60,30 +57,18 @@ Output finale richiesto:
 - verifiche 0 0;
 - stato clean.
 
-<<<<<<< HEAD
 Risultato reale 2026-07-29: AGGIORNATO (sessione corrente post-quality-gates):
 
 **Stato git attuale (git status --short --branch):**
 - Branch dev...provtv/dev [ahead 1229] (1229 commit davanti a provtv, vs. presunto 6 prima)
 - Working tree: ❌ DIRTY: 1000+ file modified/deleted (archivi docs rimossi, test duplicati rimossi)
-=======
-Risultato reale 2026-07-29 — AGGIORNATO (sessione corrente post-quality-gates):
-
-**Stato git attuale (git status --short --branch):**
-- Branch dev...provtv/dev [ahead 1229] (1229 commit davanti a provtv, vs. presunto 6 prima)
-- Working tree: ❌ DIRTY — 1000+ file modified/deleted (archivi docs rimossi, test duplicati rimossi)
->>>>>>> laraxot/dev
 - Merge laraxot/dev: ✅ integrata (commit 0ba629c "Merge remote-tracking branch 'laraxot/dev'")
 
 **Sync history (attività precedente 2026-07-29):**
 - Fetch da tutti i remote: laraxot/dev raggiungibile (28 commit indietro)
 - Merge forward-only: laraxot/dev integrato in HEAD (28 commit + 1 merge commit, risolti conflitti HEAD-first)
 - Push git: ✅ OK verso provtv (7eae7708, 0 0 sync achieved)
-<<<<<<< HEAD
 - Push git: ❌ FAILED verso laraxot (error: "did not receive expected object": laraxot repo corrupted)
-=======
-- Push git: ❌ FAILED verso laraxot (error: "did not receive expected object" — laraxot repo corrupted)
->>>>>>> laraxot/dev
 
 **Commit history (ultimi 5):**
 - 0ba629c: Merge remote-tracking branch 'laraxot/dev' into dev
@@ -91,21 +76,13 @@ Risultato reale 2026-07-29 — AGGIORNATO (sessione corrente post-quality-gates)
 - e24f4e9: Remove deprecated documentation archives and duplicate test files; refactor translation handling
 - (precedenti: PHPInsights/PHPStan fixes)
 
-<<<<<<< HEAD
 **Quality gates 2026-07-29 (sessione corrente): RETTIFICA rispetto report precedente:**
-=======
-**Quality gates 2026-07-29 (sessione corrente) — RETTIFICA rispetto report precedente:**
->>>>>>> laraxot/dev
 
 ❌ **SCOPERTA: PHPStan report precedente era IMPRECISO**
 - PHPStan Notify/app (scope: Modules/Notify/app): ✅ [OK] No errors (0 errori, NON 1000+)
 - PHPStan Modules global (scope: tutti i Modules): ⏸️ TIMEOUT @ 120s
   - Root cause: Larastan bootstrap circolare (dipendenze cross-modulo, XotBaseServiceProvider riga 144 Livewire registration troppo aggressiva)
-<<<<<<< HEAD
   - Non è colpa di Notify: è un blocco architetturale globale che affetta TUTTI i moduli
-=======
-  - Non è colpa di Notify — è un blocco architetturale globale che affetta TUTTI i moduli
->>>>>>> laraxot/dev
 - Pest Notify (scope: Modules/Notify/tests): ⏸️ TIMEOUT @ 60s
   - Cascata da Laravel application bootstrap (stesso Larastan issue)
 - PHPMD: ⏸️ N/A (bloccato da Larastan bootstrap timeout)
@@ -113,30 +90,18 @@ Risultato reale 2026-07-29 — AGGIORNATO (sessione corrente post-quality-gates)
 
 **Preflight (PASS):**
 - ✅ No merge markers in dirty PHP files
-<<<<<<< HEAD
 - ✅ PHP -l syntax check on dirty files (sample): OK
-=======
-- ✅ PHP -l syntax check on dirty files (sample) — OK
->>>>>>> laraxot/dev
 - ✅ No Blade file edits
 - ✅ Pint --dirty: 1 file fixed (Activity module, not Notify)
 
 **STATO FINALE 2026-07-29 POST-LARAXOT MERGE (aggiornato sessione corrente):**
 - provtv/dev: ✅ Sincronizzato (42 commit ahead, 0 behind → push precedente successful 6ed7375..3e0dee2)
-<<<<<<< HEAD
 - laraxot/dev: ⚠️ Merge completato localmente (12 commit ahead); push fallisce → repository corrotto (error: "did not receive expected object": richiede GitHub admin recovery)
-=======
-- laraxot/dev: ⚠️ Merge completato localmente (12 commit ahead); push fallisce → repository corrotto (error: "did not receive expected object" — richiede GitHub admin recovery)
->>>>>>> laraxot/dev
 - Working tree: ✅ CLEAN (git status --short pulito, nessun file non staged)
 - Merge laraxot/dev: ✅ Risolti 35 file deleted-by-them (UD strategy HEAD-first); 50+ conflitti risolti
 - Commit merge: f59fed4 "Merge remote-tracking branch 'laraxot/dev' into dev" + 93c0ab0 (NationalFlagSelect state)
 - Notify/app quality gate: ✅ PHPStan [OK] (0 errors, scope-specific check passed; global bootstrap is separate issue)
-<<<<<<< HEAD
 - Notify global quality gate: ⏸️ BLOCKED (Larastan bootstrap timeout: affects all Modules, not Notify-specific)
-=======
-- Notify global quality gate: ⏸️ BLOCKED (Larastan bootstrap timeout — affects all Modules, not Notify-specific)
->>>>>>> laraxot/dev
 - Forward-only discipline: ✅ Fully respected (merge-only, no reset/revert/checkout/switch, zero destructive ops)
 
 
@@ -153,11 +118,7 @@ Lezioni apprese (2026-07-29 RETTIFICATE):
    ⚠️ **Azione richiesta:** Comunicare con amministratore GitHub laraxot per recovery del repository.
 
 4. **PHPStan L10 scope vs. global bootstrap (RETTIFICA CRITICA):**
-<<<<<<< HEAD
    - Presupposto precedente: "Notify ha 1000+ errori a L10": ❌ FALSO
-=======
-   - Presupposto precedente: "Notify ha 1000+ errori a L10" — ❌ FALSO
->>>>>>> laraxot/dev
    - Scoperta attuale: Notify/app è PULITO (PHPStan analyse Modules/Notify/app = [OK] 0 errors)
    - Root problem: Larastan global bootstrap (XotBaseServiceProvider Livewire registration) timeout @ 120s
    - Impatto: TUTTI i Modules sono bloccati su bootstrap globale, NON è specifico a Notify
@@ -177,11 +138,7 @@ Lezioni apprese (2026-07-29 RETTIFICATE):
 
 Raccomandazioni prossimi step (CORRETTO):
 - ✅ provtv sync completato e verificato (7eae7708 pushed, 0 0 sync)
-<<<<<<< HEAD
 - ⚠️ laraxot repository corrupted: contact GitHub admins for recovery (push failed "did not receive expected object")
-=======
-- ⚠️ laraxot repository corrupted — contact GitHub admins for recovery (push failed "did not receive expected object")
->>>>>>> laraxot/dev
 - ⏸️ Notify/app qualità-gate: ✅ PASS (PHPStan [OK] 0 errors)
 - ⏸️ Modules global bootstrap: BLOCKED (Larastan timeout, architetturale, not Notify-specific)
 - 🔴 Decide: commit dirty tree archivi+test cleanup? (forward-only approach) o stashare?
@@ -191,11 +148,7 @@ Progresso complessivo: SYNC provtv ✅, laraxot ❌, Notify qualità-gate ✅ (s
 
 ---
 
-<<<<<<< HEAD
 ## AGGIORNAMENTO SESSIONE CORRENTE 2026-07-30 (Final execution: continuation 2):
-=======
-## AGGIORNAMENTO SESSIONE CORRENTE 2026-07-30 (Final execution — continuation 2):
->>>>>>> laraxot/dev
 
 **Passo 1-10 push.txt eseguiti:**
 1. ✅ git remote -v → laraxot + provtv configurati
@@ -232,21 +185,13 @@ Progresso complessivo: SYNC provtv ✅, laraxot ❌, Notify qualità-gate ✅ (s
 5. ✅ Conflitti risolti: 35 file AA (both added) → risolti HEAD-first con --ours
 6. ✅ Merge committed: 46c61f5 "Merge remote-tracking branch 'laraxot/dev' into dev"
 7. ✅ Post-merge sync: provtv [53 ahead 0 behind], laraxot [6 ahead 0 behind]
-<<<<<<< HEAD
 9. ❌ Push laraxot/dev: FAILED: Repository corrupted ("did not receive expected object e4886d212...")
-=======
-9. ❌ Push laraxot/dev: FAILED — Repository corrupted ("did not receive expected object e4886d212...")
->>>>>>> laraxot/dev
 
 **Stato finale Notify 2026-07-29:**
 - Branch dev: 53 commits ahead di provtv/dev, 6 ahead di laraxot/dev
 - Working tree: ✅ CLEAN
 - Merge laraxot: ✅ Completato (35 conflitti AA risolti)
-<<<<<<< HEAD
 - Push laraxot: ❌ BLOCKED (Repository corrupted: same as Lang module)
-=======
-- Push laraxot: ❌ BLOCKED (Repository corrupted — same as Lang module)
->>>>>>> laraxot/dev
 
 **Root cause analisi (VERIFICATO SESSIONE 2026-07-29 CONTINUAZIONE):**
 
@@ -262,11 +207,7 @@ Progresso complessivo: SYNC provtv ✅, laraxot ❌, Notify qualità-gate ✅ (s
 **Azioni richieste (ONLY GitHub Admin Can Resolve):**
 - **Laraxot/module_notify_fila5:** Database recovery (missing git object e4886d21...)
 **Root cause analisi:**
-<<<<<<< HEAD
 1. **Laraxot repository corrupted:** Uguale a Lang module: oggetto git mancante (e4886d21...) nel database remoto
-=======
-1. **Laraxot repository corrupted:** Uguale a Lang module — oggetto git mancante (e4886d21...) nel database remoto
->>>>>>> laraxot/dev
    - Richiede GitHub admin recovery (non risolvibile da client side)
    - Fetch da laraxot restituisce 404 (oggetti non esistono nemmeno lì)
 
@@ -315,11 +256,7 @@ git push laraxot dev
 **Conclusione sessione 2026-07-30:**
 - Working tree: ✅ CLEAN (nessun file modificato dopo fetch)
 - Branch sync: ✅ VERIFIED (58 ahead di provtv, 11 ahead di laraxot)
-<<<<<<< HEAD
 - Push capability: ❌ BLOCKED: Infrastruttura GitHub
-=======
-- Push capability: ❌ BLOCKED — Infrastruttura GitHub
->>>>>>> laraxot/dev
   - Laraxot: Database corrupted (git object corrupted e4886d21...)
 - Forward-only discipline: ✅ Mantenuta (fetch-only, zero modification, zero reset)
 

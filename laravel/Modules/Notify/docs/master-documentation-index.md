@@ -8,7 +8,6 @@ qmd: "master-documentation-index 📚 master documentation index"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -23,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # 📚 Master Documentation Index
@@ -91,12 +80,8 @@ status: draft
 
 ### 📊 Reports
 - [Status Reports](./reports/README.md)
-<<<<<<< HEAD
 - [Quality Reports](roadmap/quality.md)
 - [Quality Reports](./roadmap/quality.md)
-=======
-- [Quality Reports](./reports/quality.md)
->>>>>>> laraxot/dev
 - [Performance Reports](./reports/performance.md)
 
 ---
@@ -115,7 +100,6 @@ status: draft
 | **Geo** | [Modules/Geo/docs/](../laravel/Modules/Geo/docs/) | ✅ Good |
 | **AI** | [Modules/AI/docs/](../laravel/Modules/AI/docs/) | ✅ Good |
 | **Fixcity** | [Modules/Fixcity/docs/](../laravel/Modules/Fixcity/docs/) | ✅ Good |
-<<<<<<< HEAD
 | **Xot** | [Modules/Xot/docs/](../../Xot/docs) | ⚠️ Needs cleanup |
 | **Cms** | [Modules/Cms/docs/](../../Cms/docs) | ⚠️ Needs cleanup |
 | **UI** | [Modules/UI/docs/](../../UI/docs) | ⚠️ Needs cleanup |
@@ -126,8 +110,6 @@ status: draft
 | **Geo** | [Modules/Geo/docs/](../../Geo/docs) | ✅ Good |
 | **AI** | [Modules/AI/docs/](../../AI/docs) | ✅ Good |
 | **Fixcity** | [Modules/Fixcity/docs/](../../Fixcity/docs) | ✅ Good |
-=======
->>>>>>> laraxot/dev
 
 ---
 
@@ -137,11 +119,8 @@ status: draft
 |-------|------|--------|
 | **Sixteen** | [Themes/Sixteen/docs/](../laravel/Themes/Sixteen/docs/) | ✅ AGID Compliant |
 | **TwentyOne** | [Themes/TwentyOne/docs/](../laravel/Themes/TwentyOne/docs/) | ✅ Filament 5 |
-<<<<<<< HEAD
 | **Sixteen** | [Themes/Sixteen/docs/](../../../Themes/Sixteen/docs) | ✅ AGID Compliant |
 | **TwentyOne** | [Themes/TwentyOne/docs/](../../../Themes/TwentyOne/docs) | ✅ Filament 5 |
-=======
->>>>>>> laraxot/dev
 | **One** | [Themes/One/docs/](../laravel/Themes/One/docs/) | ✅ Base Theme |
 
 ---

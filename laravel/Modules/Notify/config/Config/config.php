@@ -8,7 +8,6 @@ return [
     'icon' => 'heroicon-o-bell',
     'navigation' => [
         'enabled' => true,
-<<<<<<< HEAD
         'sort' => 70,
     ],
     'routes' => [
@@ -19,11 +18,3 @@ return [
         'Modules\\Notify\\Providers\\NotifyServiceProvider',
     ],
 ];
-=======
-        'sort' => 70],
-    'routes' => [
-        'enabled' => true,
-        'middleware' => ['web', 'auth']],
-    'providers' => [
-        'Modules\\Notify\\Providers\\NotifyServiceProvider']];
->>>>>>> laraxot/dev

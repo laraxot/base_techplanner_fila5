@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "testing guidelines"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 8. Testing Guidelines
@@ -21,15 +18,3 @@ status: draft
 - Feature tests for user flows
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "testing guidelines"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "testing guidelines"
-issues: []
-discussions: []
->>>>>>> laraxot/dev

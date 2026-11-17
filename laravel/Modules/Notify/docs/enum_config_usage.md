@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "enum config usage"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Utilizzo di Enum e Config 

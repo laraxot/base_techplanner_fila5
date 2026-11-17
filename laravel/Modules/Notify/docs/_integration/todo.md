@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "todo"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: ../-integration/todo.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # _todo

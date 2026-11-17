@@ -1,23 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "error analysis report"
-=======
-title: "ERROR ANALYSIS REPORT"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "error analysis report"
 issues: []
 discussions: []
 status: draft
-=======
-qmd: "ERROR ANALYSIS REPORT"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # 🐛 ERROR ANALYSIS REPORT - FIXCITY
@@ -27,18 +17,6 @@ discussions: []
 **Causa**: Violazione regole XotBase + Filament 4  
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "ERROR ANALYSIS REPORT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ERROR ANALYSIS REPORT"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🔴 ERRORE PRINCIPALE
 
 ```

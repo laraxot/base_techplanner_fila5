@@ -16,10 +16,7 @@ related:
   - "./queueable-action-pattern.md"
   - "./sms-config-structure.md"
   - "./standardized-sms-config-structure.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Document Root Architecture

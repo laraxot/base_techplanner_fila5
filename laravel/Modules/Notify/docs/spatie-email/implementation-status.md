@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "implementation status"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Stato Implementazione SpatieEmail
@@ -80,7 +77,6 @@ Potrebbero esserci altri modelli nel modulo Notify che utilizzano ancora la sint
 2. [Gestione Traduzioni Mancanti](modules/lang/docs/translatable/gestione-traduzioni-mancanti.md)
 3. [Implementazione nel Progetto](modules/lang/docs/translatable/implementazione-nel-progetto.md)
 4. [Best Practices](modules/lang/docs/translatable/best-practices.md)
-<<<<<<< HEAD
 1. [Documentazione Laravel Translatable](../../../Lang/docs/translatable/index.md)
 2. [Gestione Traduzioni Mancanti](../../../Lang/docs/translatable/gestione-traduzioni-mancanti.md)
 3. [Implementazione nel Progetto](../../../Lang/docs/translatable/implementazione-nel-progetto.md)
@@ -89,8 +85,6 @@ Potrebbero esserci altri modelli nel modulo Notify che utilizzano ancora la sint
 2. [Gestione Traduzioni Mancanti](modules/lang/docs/translatable/gestione-traduzioni-mancanti.md)
 3. [Implementazione nel Progetto](modules/lang/docs/translatable/implementazione-nel-progetto.md)
 4. [Best Practices](../best-practices.md)
-=======
->>>>>>> laraxot/dev
 
 ## Timeline
 

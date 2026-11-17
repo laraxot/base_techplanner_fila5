@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "params badges feature"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Visualizzazione Parametri come Badge - Mail Templates
@@ -183,18 +180,6 @@ Badge: [user_name] [reset_link] [expiry_time]
 - [Email Templates Guide](./email_templates_guide.md)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "params badges feature"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "params badges feature"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: Gennaio 2025  
 **Versione**: 1.0  
 **Compatibilità**: Filament 3.x, Laravel 10+ 

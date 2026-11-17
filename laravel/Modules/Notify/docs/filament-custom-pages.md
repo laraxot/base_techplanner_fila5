@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament custom pages"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Filament Custom Pages - Documentazione Modulo Notify

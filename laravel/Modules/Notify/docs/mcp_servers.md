@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "mcp servers"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # MCP Servers - Master Index
@@ -46,12 +43,8 @@ MCP (Model Context Protocol) servers provide AI assistants with persistent memor
 - **Type**: Laravel-specific
 - **Command**: `php artisan boost:mcp`
 - **Use**: Laravel 12, Filament, Livewire documentation and best practices
-<<<<<<< HEAD
 - **Module Docs**: [Xot MCP Guide](../Modules/Xot/docs/MCP_SERVERS.md) | [Theme MCP Guide](../Themes/Sixteen/docs/mcp-servers.md)
 - **Module Docs**: [Xot MCP Guide](../Modules/Xot/docs/MCP_SERVERS.md) | [Theme MCP Guide](../../../Themes/Sixteen/docs/mcp-servers.md)
-=======
-- **Module Docs**: [Xot MCP Guide](../Modules/Xot/docs/MCP_SERVERS.md) | [Theme MCP Guide](../Themes/Sixteen/docs/MCP_SERVERS.md)
->>>>>>> laraxot/dev
 
 ### fetch
 - **Type**: Web content
@@ -152,10 +145,7 @@ Main config: `laravel/.mcp.json`
 ### Editor Configuration
 - **Cursor**: Uses `.mcp.json` automatically
 - **Windsurf**: Import from [Xot Windsurf Config](../Modules/Xot/docs/windsurf-mcp-config.json)
-<<<<<<< HEAD
 - **Windsurf**: Import from [Xot Windsurf Config](../../Xot/docs/windsurf-mcp-config.json)
-=======
->>>>>>> laraxot/dev
 - **Claude Desktop**: Copy config to `claude_desktop_config.json`
 
 ### Environment Variables
@@ -208,12 +198,8 @@ Each module has specific MCP usage guidelines. See module-specific docs:
 
 ## Theme-Specific Usage
 
-<<<<<<< HEAD
 - **Sixteen**: [Theme MCP Servers](../Themes/Sixteen/docs/mcp-servers.md)
 - **Sixteen**: [Theme MCP Servers](../../../Themes/Sixteen/docs/mcp-servers.md)
-=======
-- **Sixteen**: [Theme MCP Servers](../Themes/Sixteen/docs/MCP_SERVERS.md)
->>>>>>> laraxot/dev
   - Frontoffice page testing
   - Visual parity verification
   - CSS/JS build process
@@ -237,16 +223,4 @@ Each module has specific MCP usage guidelines. See module-specific docs:
 - [Theme Index](themes/index.md)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "mcp servers"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp servers"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *This document follows DRY+KISS principles. For questions or updates, edit this file and update cross-references.*

@@ -8,7 +8,6 @@ qmd: "missione-super-mucca-completata 🐄✨ missione super mucca - completamen
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -26,16 +25,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # 🐄✨ MISSIONE SUPER MUCCA - COMPLETAMENTO TOTALE ✨🐄
@@ -226,11 +215,7 @@ Durante l'analisi ho anche **IMPLEMENTATO** tutto quello che era stato documenta
 - Elimina ~200 LOC future
 
 ✅ **Documentazione Aggiornata:**
-<<<<<<< HEAD
 - 18 metodi-duplicati-analisi.md aggiornati
-=======
-- 18 metodi-duplicati-analisi-1.md aggiornati
->>>>>>> laraxot/dev
 - 10+ documenti master creati
 - 35+ files totali
 
@@ -275,15 +260,9 @@ Durante l'analisi ho anche **IMPLEMENTATO** tutto quello che era stato documenta
 
 **FASE 1: Analisi Metodi Duplicati**
 1. docs/analisi-metodi-duplicati.md
-<<<<<<< HEAD
 2. docs/analisi-metodi-duplicati-master.md (100+ pagine)
 3. docs/analisi-metodi-duplicati-index.md
 4. 18× metodi-duplicati-analisi.md aggiornati
-=======
-2. docs/analisi-metodi-duplicati-master-1.md (100+ pagine)
-3. docs/analisi-metodi-duplicati-index.md
-4. 18× metodi-duplicati-analisi-1.md aggiornati
->>>>>>> laraxot/dev
 5. 4× analisi-metodi-duplicati.md per moduli chiave
 6. 2× analisi-metodi-duplicati.md per temi
 
@@ -340,11 +319,7 @@ Durante l'analisi ho anche **IMPLEMENTATO** tutto quello che era stato documenta
 cat Modules/User/docs/dry-kiss-analysis.md
 
 # Analisi metodi duplicati
-<<<<<<< HEAD
 cat Modules/User/docs/metodi-duplicati-analisi.md
-=======
-cat Modules/User/docs/metodi-duplicati-analisi-1.md
->>>>>>> laraxot/dev
 
 # Overview completa
 cat Modules/User/docs/analisi-metodi-duplicati.md
@@ -357,11 +332,7 @@ cat Modules/User/docs/analisi-metodi-duplicati.md
 cat docs/dry-kiss-analysis-master.md
 
 # Master analysis duplicati
-<<<<<<< HEAD
 cat docs/analisi-metodi-duplicati-master.md
-=======
-cat docs/analisi-metodi-duplicati-master-1.md
->>>>>>> laraxot/dev
 
 # Index navigabile
 cat docs/analisi-metodi-duplicati-index.md

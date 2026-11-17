@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "REQUIREMENTS"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # REQUIREMENTS: FixCity Platform

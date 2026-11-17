@@ -16,10 +16,7 @@ related:
   - ../../../notifications/readme.md
   - ../../../integrations/readme.md
   - ../../../templates/readme.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Filament Development Guide
 
@@ -117,13 +114,10 @@ Widget personalizzati in Filament.
 - [Form Components](./form-components.md)
 - [Form Validation](./form-validation.md)
 - [Translations](./translations.md)
-<<<<<<< HEAD
 - [Best Practices](../../../best-practices.md)
 - [Form Components](./form-components.md)
 - [Form Validation](./form-validation.md)
 - [Translations](../../../translations.md)
-=======
->>>>>>> laraxot/dev
 - [Actions](./actions.md)
 - [Widgets](./widgets.md)
 - [PHPStan](../phpstan/)

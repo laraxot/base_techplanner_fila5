@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "custom chart implementation report"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Custom Chart Implementation Report - 2026-03-17
@@ -20,28 +17,12 @@ status: draft
 Implementazione completa delle funzionalità di grafici custom da Fila4 a Fila5, con ottimizzazioni per SurveyResponse e pattern moderni.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "custom chart implementation report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "custom chart implementation report"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 1. Analisi Fila4 vs Fila5
 
 ### Fila4 Features Studiate
 
 **Directory Analizzate**:
-<<<<<<< HEAD
 - `./laravel/Modules/<nome progetto>/app/Actions/QuestionChart/`
-=======
-- `./laravel/Modules/Quaeris/app/Actions/QuestionChart/`
->>>>>>> laraxot/dev
 - `./laravel/Modules/App/app/Actions/QuestionChart/`
 - `./laravel/Modules/Chart/app/Actions/`
 
@@ -97,11 +78,7 @@ foreach ($charts as $chart) {
 ### 2.2 Actions Implementate ✅
 
 #### GetAnswersByQuestionChart
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
 
 **Features**:
@@ -121,11 +98,7 @@ foreach ($charts as $chart) {
 - `processResults()` - Result processing
 
 #### GetChartsDataByQuestionChart
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
 
 **Features**:
@@ -192,24 +165,15 @@ foreach ($charts as $chart) {
 3. `Modules/Chart/app/Datas/AnswersChartData.php`
 
 #### Actions (4)
-<<<<<<< HEAD
 4. `Modules/<nome progetto>/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
 5. `Modules/<nome progetto>/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
-=======
-4. `Modules/Quaeris/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
-5. `Modules/Quaeris/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
->>>>>>> laraxot/dev
 4. `Modules/App/app/Actions/QuestionChart/GetAnswersByQuestionChart.php`
 5. `Modules/App/app/Actions/QuestionChart/GetChartsDataByQuestionChart.php`
 6. `Modules/Chart/app/Actions/ExportChartToSvgAction.php`
 7. `Modules/Chart/app/Actions/ExportChartToPngAction.php`
 
 #### Documentation (3)
-<<<<<<< HEAD
 8. `Modules/<nome progetto>/docs/custom-chart-implementation.md`
-=======
-8. `Modules/Quaeris/docs/custom-chart-implementation.md`
->>>>>>> laraxot/dev
 8. `Modules/App/docs/custom-chart-implementation.md`
 9. `.kilo/docs/custom-chart-implementation-report.md` (this file)
 10. `.github/ISSUE_TEMPLATE/custom-chart-implementation.md`
@@ -226,11 +190,7 @@ foreach ($charts as $chart) {
 ### Basic Usage
 
 ```php
-<<<<<<< HEAD
 use Modules\<nome progetto>\Actions\QuestionChart\GetChartsDataByQuestionChart;
-=======
-use Modules\Quaeris\Actions\QuestionChart\GetChartsDataByQuestionChart;
->>>>>>> laraxot/dev
 use Modules\App\Actions\QuestionChart\GetChartsDataByQuestionChart;
 use Modules\Chart\Actions\ExportChartToSvgAction;
 use Modules\Chart\Actions\ExportChartToPngAction;
@@ -248,11 +208,7 @@ foreach ($chartsData as $chartData) {
     $svg = app(ExportChartToSvgAction::class)->executeFromChartData(
         $chartData->toArray()
     );
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // Export PNG
     $png = app(ExportChartToPngAction::class)->executeFromChartData(
         $chartData->toArray(),
@@ -273,13 +229,8 @@ class QuestionChartAnswersCompositeWidget extends Widget
             $this->getResponsesQuery(),
             $this->filters
         );
-<<<<<<< HEAD
 
         return view('<nome progetto>::filament.widgets.question-chart-answers-composite-widget', [
-=======
-        
-        return view('quaeris::filament.widgets.question-chart-answers-composite-widget', [
->>>>>>> laraxot/dev
         return view('this-project::filament.widgets.question-chart-answers-composite-widget', [
             'chartsData' => $chartsData,
         ]);
@@ -297,33 +248,19 @@ class QuestionChartAnswersCompositeWidget extends Widget
 it('can get answers by question chart', function () {
     $questionChart = QuestionChart::factory()->create();
     $responses = SurveyResponse::getResponsesForSurvey($questionChart->survey_id);
-<<<<<<< HEAD
 
     $answersData = app(GetAnswersByQuestionChart::class)->execute(
         $questionChart, null, null, null, $responses
     );
 
-=======
-    
-    $answersData = app(GetAnswersByQuestionChart::class)->execute(
-        $questionChart, null, null, null, $responses
-    );
-    
->>>>>>> laraxot/dev
     expect($answersData)->toBeInstanceOf(AnswersChartData::class);
 });
 
 it('can export chart to svg', function () {
     $chartData = ['labels' => ['Yes', 'No'], 'datasets' => [...]];
-<<<<<<< HEAD
 
     $result = app(ExportChartToSvgAction::class)->executeFromChartData($chartData);
 
-=======
-    
-    $result = app(ExportChartToSvgAction::class)->executeFromChartData($chartData);
-    
->>>>>>> laraxot/dev
     expect($result['mime_type'])->toBe('image/svg+xml');
 });
 ```
@@ -335,15 +272,9 @@ it('can handle custom question types', function () {
     $questionChart = QuestionChart::factory()->create([
         'question' => 'custom:root_grouped_bf'
     ]);
-<<<<<<< HEAD
 
     $answersData = app(GetAnswersByQuestionChart::class)->execute($questionChart, ...);
 
-=======
-    
-    $answersData = app(GetAnswersByQuestionChart::class)->execute($questionChart, ...);
-    
->>>>>>> laraxot/dev
     expect($answersData->answers)->not->toBeEmpty();
 });
 ```
@@ -491,15 +422,9 @@ $sort_by_expr = 'DATE_FORMAT(sms_sent_at, "%Y-%m")';
 ## 12. References
 
 ### Internal Documentation
-<<<<<<< HEAD
 - [Custom Chart Implementation Guide](Modules/<nome progetto>/docs/custom-chart-implementation.md)
 - [GitHub Issue Template](.github/ISSUE_TEMPLATE/custom-chart-implementation.md)
 - [Fila4 Source Code](file://./laravel/Modules/<nome progetto>/app/Actions/QuestionChart/)
-=======
-- [Custom Chart Implementation Guide](Modules/Quaeris/docs/custom-chart-implementation.md)
-- [GitHub Issue Template](.github/ISSUE_TEMPLATE/custom-chart-implementation.md)
-- [Fila4 Source Code](file://./laravel/Modules/Quaeris/app/Actions/QuestionChart/)
->>>>>>> laraxot/dev
 
 ### External Resources
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
@@ -508,13 +433,7 @@ $sort_by_expr = 'DATE_FORMAT(sms_sent_at, "%Y-%m")';
 
 ---
 
-<<<<<<< HEAD
 **Date**: 2026-03-17
 **Status**: ✅ Core Implementation Complete
 **Next Phase**: Testing & Integration
-=======
-**Date**: 2026-03-17  
-**Status**: ✅ Core Implementation Complete  
-**Next Phase**: Testing & Integration  
->>>>>>> laraxot/dev
 **Version**: 1.0.0

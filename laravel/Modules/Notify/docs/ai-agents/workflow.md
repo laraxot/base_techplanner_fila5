@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "workflow"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Workflow (Claude)
@@ -55,7 +52,4 @@ When file access is restricted:
 - [Claude docs index](./context.md)
 - [PHPStan workflow prompt](../../../tools/prompts/05-phpstan-patterns.md)
 - [General docs](../../../../docs/index.md)
-<<<<<<< HEAD
 - [General docs](../../../../../docs/index.md)
-=======
->>>>>>> laraxot/dev

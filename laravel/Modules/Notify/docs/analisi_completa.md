@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "analisi completa"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: analisi-completa.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Completa del Modulo Notify

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "technology stack"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Technology Stack

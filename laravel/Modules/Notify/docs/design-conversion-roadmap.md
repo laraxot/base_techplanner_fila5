@@ -1,23 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "design conversion roadmap"
-=======
-title: "DESIGN CONVERSION ROADMAP"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "design conversion roadmap"
 issues: []
 discussions: []
 status: draft
-=======
-qmd: "DESIGN CONVERSION ROADMAP"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # Design Comuni Conversion Roadmap
@@ -33,18 +23,6 @@ discussions: []
 **Target**: Make all 54 test pages visually identical to Design Comuni reference using Tailwind CSS + Alpine.js
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "DESIGN CONVERSION ROADMAP"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DESIGN CONVERSION ROADMAP"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📊 Executive Summary
 
 ### Current State
@@ -150,13 +128,8 @@ discussions: []
 ### For Every Page (Automated)
 ```
 laravel/Themes/Sixteen/docs/pages/<page-name>/
-<<<<<<< HEAD
 ├── detailed-analysis.md           # Metrics and recommendations
 ├── html-structure-diff.md         # Element comparison
-=======
-├── DETAILED-ANALYSIS.md           # Metrics and recommendations
-├── HTML-STRUCTURE-DIFF.md         # Element comparison
->>>>>>> laraxot/dev
 ├── VISUAL-COMPARISON.md           # Screenshots
 ├── local-full.png                 # Full page local
 ├── reference-full.png             # Full page reference
@@ -170,19 +143,11 @@ laravel/Themes/Sixteen/docs/pages/<page-name>/
 ```
 laravel/Themes/Sixteen/docs/
 ├── INDEX.md                                    # Main index
-<<<<<<< HEAD
 ├── complete-visual-parity-report.md          # All 54 pages
 ├── PRIORITY-MATRIX.json                       # Workload planning
 ├── visual-parity-data.json                    # Machine-readable data
 ├── container-width-resolution.md              # Technical docs
 ├── section-structure-diff.md                  # Historical
-=======
-├── COMPLETE-VISUAL-PARITY-REPORT.md          # All 54 pages
-├── PRIORITY-MATRIX.json                       # Workload planning
-├── visual-parity-data.json                    # Machine-readable data
-├── CONTAINER-WIDTH-RESOLUTION.md              # Technical docs
-├── SECTION-STRUCTURE-DIFF.md                  # Historical
->>>>>>> laraxot/dev
 └── GITHUB-ISSUES-MAPPING.json                 # Issue tracking
 ```
 
@@ -219,11 +184,8 @@ cd laravel/Themes/Sixteen
 npm run build
 
 # Copy to public
-<<<<<<< HEAD
 <<<<<<< .merge_file_uDKzAG
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_YZG2U4
 
 # View reports
 cat laravel/Themes/Sixteen/docs/complete-visual-parity-report.md
@@ -272,11 +234,8 @@ gh issue list --repo laraxot/base_fixcity_fila5 --label "priority:critical"
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # ~2 seconds
-<<<<<<< HEAD
 <<<<<<< .merge_file_uDKzAG
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_YZG2U4
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev
@@ -314,11 +273,7 @@ npm run build    # ~2 seconds
 ```bash
 # 1. Review the analysis
 cd /var/www/_bases/base_fixcity_fila5
-<<<<<<< HEAD
 cat laravel/Themes/Sixteen/docs/complete-visual-parity-report.md
-=======
-cat laravel/Themes/Sixteen/docs/COMPLETE-VISUAL-PARITY-REPORT.md
->>>>>>> laraxot/dev
 
 # 2. Create GitHub issues
 node bashscripts/github/create-design-issues.mjs
@@ -381,11 +336,7 @@ open laravel/Themes/Sixteen/docs/pages/persona/DETAILED-ANALYSIS.md
 ### Real-Time Metrics
 ```bash
 # Current status
-<<<<<<< HEAD
 cat laravel/Themes/Sixteen/docs/complete-visual-parity-report.md | grep "Parity"
-=======
-cat laravel/Themes/Sixteen/docs/COMPLETE-VISUAL-PARITY-REPORT.md | grep "Parity"
->>>>>>> laraxot/dev
 
 # JSON for dashboards
 cat laravel/Themes/Sixteen/docs/visual-parity-data.json

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "github issue 97 git error comment"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 ## 🔧 Git Error Resolved: "Does Not Have Our Version"
@@ -153,16 +150,4 @@ During work:
 **Status**: ✅ **DOCUMENTATION EXCELLENCE ACHIEVED**
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "github issue 97 git error comment"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "github issue 97 git error comment"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 Ready for tomorrow's real data testing! 🚀

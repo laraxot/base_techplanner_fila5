@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_4q2RV8
 ---
 title: "lang link 1"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_AfkbFb
 # Collegamento alle Traduzioni del Modulo Gdpr
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

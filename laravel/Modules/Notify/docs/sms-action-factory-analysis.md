@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sms action factory analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi: Sostituzione Match con Formula nel SmsActionFactory

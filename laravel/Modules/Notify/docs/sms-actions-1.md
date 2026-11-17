@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "sms actions 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sms actions 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Azioni SMS
 
 ## Interfaccia
@@ -58,11 +44,7 @@ $smsData = new SmsData(
     to: '+393331234567',
     body: 'Il tuo codice OTP è: 123456',
 <<<<<<< HEAD
-<<<<<<< HEAD
     from: '<nome progetto>'
-=======
-    from: 'SaluteOra'
->>>>>>> 6ed19256f (.)
 =======
     from: '<nome progetto>'
 >>>>>>> laraxot/dev

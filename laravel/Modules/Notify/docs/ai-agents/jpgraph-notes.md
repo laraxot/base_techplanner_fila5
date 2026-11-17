@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "jpgraph notes"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # JpGraph notes

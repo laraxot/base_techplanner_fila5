@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament resource pages architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura delle Pagine di Risorse Filament
@@ -132,11 +129,8 @@ find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec 
 - [Filament Resources Documentation](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
 - [ XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
 - [<nome progetto> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-<<<<<<< HEAD
 - [ XotBase Architecture](./filament_xot_architecture.md)
 - [<nome progetto> XotBase Architecture](./filament_xot_architecture.md)
-=======
->>>>>>> laraxot/dev
 - [Pattern Architetturali in Laravel](https://laravel.com/docs/architecture)
 # Architettura delle Pagine di Risorse Filament
 
@@ -254,8 +248,5 @@ find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec 
 
 - [Filament Resources Documentation](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
 - [<main module> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-<<<<<<< HEAD
 - [<main module> XotBase Architecture](./filament_xot_architecture.md)
-=======
->>>>>>> laraxot/dev
 - [Pattern Architetturali in Laravel](https://laravel.com/docs/architecture)

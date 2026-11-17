@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "bmad method"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # BMAD Method v6.3 operativo nel progetto

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "xot base classes convention"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: xot-base-classes-convention.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Convenzioni per le Classi Base Xot

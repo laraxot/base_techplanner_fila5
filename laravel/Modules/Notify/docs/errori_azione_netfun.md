@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "errori azione netfun"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: errori-azione-netfun.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi degli Errori in SendNetfunSMSAction

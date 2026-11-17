@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "seasonal email system implementation report"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Report di Revisione Sistema Email Stagionali - Dicembre 2025

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "sms config structure 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sms config structure 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Struttura della Configurazione SMS
 
 ## Introduzione
@@ -71,11 +57,7 @@ Le configurazioni specifiche per provider sono definite all'interno della sezion
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
 <<<<<<< HEAD
-<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-=======
-        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
->>>>>>> 6ed19256f (.)
 =======
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
 >>>>>>> laraxot/dev
@@ -136,11 +118,7 @@ Le configurazioni specifiche per provider sono definite all'interno della sezion
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
 <<<<<<< HEAD
-<<<<<<< HEAD
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-=======
-        'sender' => env('NETFUN_SENDER', 'SaluteOra'),
->>>>>>> 6ed19256f (.)
 =======
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
 >>>>>>> laraxot/dev
@@ -184,15 +162,4 @@ $retryDelay = $config['drivers'][$driver]['retry_delay'] ?? $config['retry']['de
 
 ---
 
-<<<<<<< HEAD
-=======
-title: "sms config structure 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sms config structure 1"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-05-12*

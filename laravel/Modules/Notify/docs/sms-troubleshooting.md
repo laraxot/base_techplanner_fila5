@@ -3,18 +3,11 @@ title: "sms troubleshooting"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< HEAD
 updated: 2026-10-23
 qmd: "sms troubleshooting"
 issues: []
 discussions: []
 status: draft
-=======
-updated: 2026-09-26
-qmd: "sms troubleshooting"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # Troubleshooting SMS
@@ -96,11 +89,7 @@ discussions: []
 ### 1. Struttura Log
 ```json
 {
-<<<<<<< HEAD
     "timestamp": "2024-03-20 10:00:00",
-=======
-    "timestamp": "[DATE] 10:00:00",
->>>>>>> laraxot/dev
     "level": "error",
     "message": "SMS sending failed",
     "context": {

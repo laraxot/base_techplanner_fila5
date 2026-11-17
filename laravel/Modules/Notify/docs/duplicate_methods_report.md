@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "duplicate methods report"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Report: Metodi con nome duplicato nei moduli e nei temi

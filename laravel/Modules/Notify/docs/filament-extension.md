@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament extension"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Pattern di Estensione per Componenti Filament 

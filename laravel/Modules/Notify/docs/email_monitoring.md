@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "email monitoring"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-monitoring.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Sistema Monitoraggio Email 

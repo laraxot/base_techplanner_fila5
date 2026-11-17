@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "path and interface rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: path-and-interface.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Regole di Percorso e Interfacce nel Modulo Notify

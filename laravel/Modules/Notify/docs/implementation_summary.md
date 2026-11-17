@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "implementation summary"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: implementation-summary.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Riepilogo Implementazione Design Comuni

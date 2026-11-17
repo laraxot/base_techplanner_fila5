@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "database and models"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 5. Database & Models
@@ -62,19 +59,11 @@ APP_URL=http://127.0.0.1  # WRONG! Must match .env
 # ❌ WRONG - Inventing new variables that don't exist in .env
 NOTIFY_DB_DATABASE=laravelpizza_data_test
 NOTIFY_DB_USERNAME=marco
-<<<<<<< HEAD
 NOTIFY_DB_PASSWORD=[segreto locale, non nel repo]
 
 GEO_DB_DATABASE=laravelpizza_data_test
 GEO_DB_USERNAME=marco
 GEO_DB_PASSWORD=[segreto locale, non nel repo]
-=======
-NOTIFY_DB_PASSWORD=marco
-
-GEO_DB_DATABASE=laravelpizza_data_test
-GEO_DB_USERNAME=marco
-GEO_DB_PASSWORD=marco
->>>>>>> laraxot/dev
 
 # ... etc for all modules
 ```
@@ -87,11 +76,7 @@ DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=laravelpizza_data_test  # ← Only add _test here
 DB_USERNAME=marco
-<<<<<<< HEAD
 DB_PASSWORD=[segreto locale, non nel repo]
-=======
-DB_PASSWORD=marco
->>>>>>> laraxot/dev
 
 # If DB_DATABASE_USER exists in .env, also add _test
 DB_DATABASE_USER=laravelpizza_user_test  # ← Only if it exists in .env
@@ -111,15 +96,3 @@ This ensures APP_URL and all other variables remain identical to .env.
 **CRITICAL RULE FOR TestCase:** NEVER duplicate database connection configuration in setUp() because CreatesApplication already handles it automatically.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "database and models"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "database and models"
-issues: []
-discussions: []
->>>>>>> laraxot/dev

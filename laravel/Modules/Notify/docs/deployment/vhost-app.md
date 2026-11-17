@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "vhost app"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Apache VirtualHost - laraxot.local
@@ -20,18 +17,6 @@ status: draft
 **Server**: Apache 2.4.64 (Ubuntu)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "vhost app"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "vhost app"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Configuration Summary
 
 | Parametro | Valore |

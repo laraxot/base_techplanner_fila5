@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "nestedset migration best practices"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # NestedSet Migration Best Practices - Notify Module

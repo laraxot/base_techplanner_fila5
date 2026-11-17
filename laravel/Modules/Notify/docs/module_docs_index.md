@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "module docs index"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Master Documentation Index - FixCity Fila5
@@ -21,18 +18,6 @@ status: draft
 **Total Docs:** 7,137+ markdown files  
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "module docs index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "module docs index"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Purpose
 
 Questo documento crea un **sistema di indicizzazione centrale** con collegamenti bidirezionali tra:
@@ -91,13 +76,8 @@ FixCity Fila5 Documentation
 │
 ├── 📁 Themes (laravel/Themes/*/docs/)
 │   ├── Sixteen - 325+ files
-<<<<<<< HEAD
 │   │   ├── design-comuni-team-guide.md - Complete team guide for replication
 │   │   ├── design-comuni-project-summary.md - Project summary and status
-=======
-│   │   ├── DESIGN_COMUNI_TEAM_GUIDE.md - Complete team guide for replication
-│   │   ├── DESIGN_COMUNI_PROJECT_SUMMARY.md - Project summary and status
->>>>>>> laraxot/dev
 │   │   ├── COMPONENT_CATALOG.md - All 47 components (TO BE CREATED)
 │   │   ├── BLOCK_TYPES.md - All block types (TO BE CREATED)
 │   │   ├── JSON_STRUCTURE.md - JSON schema (TO BE CREATED)
@@ -214,17 +194,10 @@ FixCity Fila5 Documentation
 
 **Key Documents:**
 - [Layout Architecture](Themes/Sixteen/docs/layout-architecture.md)
-<<<<<<< HEAD
 - [LAYOUT_ARCHITECTURE_MAP.md](Themes/Sixteen/docs/layout-architecture-map.md)
 - [LAYOUT_FIX_COMPLETE_BMAD.md](Themes/Sixteen/docs/layout-fix-complete-bmad.md)
 - [VITE_MANIFEST_FIX_COMPLETE.md](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md)
 - [PHPSTAN_LAYOUT_FIX_COMPLETE.md](Themes/Sixteen/docs/phpstan-layout-fix-complete.md)
-=======
-- [LAYOUT_ARCHITECTURE_MAP.md](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_MAP.md)
-- [LAYOUT_FIX_COMPLETE_BMAD.md](Themes/Sixteen/docs/LAYOUT_FIX_COMPLETE_BMAD.md)
-- [VITE_MANIFEST_FIX_COMPLETE.md](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md)
-- [PHPSTAN_LAYOUT_FIX_COMPLETE.md](Themes/Sixteen/docs/PHPSTAN_LAYOUT_FIX_COMPLETE.md)
->>>>>>> laraxot/dev
 
 **Categories:**
 - Architecture (10 files)
@@ -308,11 +281,7 @@ FixCity Fila5 Documentation
 - → [PRD](_bmad-output/design-comuni-prd.md) - Requirements
 - → [Architecture](_bmad-output/design-comuni-architecture.md) - System design
 - → [UI Spec](_bmad-output/design-comuni-ui-spec.md) - Component specs
-<<<<<<< HEAD
 - → [Replication Master Plan](laravel/Themes/Sixteen/docs/design-comuni/replication-master-plan.md) - Technical guide
-=======
-- → [Replication Master Plan](laravel/Themes/Sixteen/docs/design-comuni/REPLICATION_MASTER_PLAN.md) - Technical guide
->>>>>>> laraxot/dev
 - → [Theme Docs Index](laravel/Themes/Sixteen/docs/00-index.md) - Theme documentation
 
 ---
@@ -356,11 +325,7 @@ Modules/
 Themes/Sixteen/docs/
 ├── README.md (START HERE)
 ├── layout-architecture.md
-<<<<<<< HEAD
 ├── layout-architecture-map.md
-=======
-├── LAYOUT_ARCHITECTURE_MAP.md
->>>>>>> laraxot/dev
 ├── components/
 ├── guides/
 └── ...

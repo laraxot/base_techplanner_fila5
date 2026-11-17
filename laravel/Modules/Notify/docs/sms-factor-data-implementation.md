@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "sms factor data implementation"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: sms-factorata-implementation.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # SmsFactorData Implementation Summary

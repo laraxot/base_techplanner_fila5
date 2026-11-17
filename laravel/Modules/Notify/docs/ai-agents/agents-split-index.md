@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "agents split index"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # agents.md Split Index
@@ -36,11 +33,8 @@ status: draft
 
 - [AGENTS.md originale](../../AGENTS.md) - File completo (deprecato)
 - [agents.md originale](../../agents.md) - File completo (deprecato)
-<<<<<<< HEAD
 - [AGENTS.md originale](../AGENTS.md) - File completo (deprecato)
 - [agents.md originale](../agents.md) - File completo (deprecato)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md) - Torna all'indice
 
 ## 📝 Note

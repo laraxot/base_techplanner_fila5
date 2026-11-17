@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "email plugins analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/email-plugins-analysis.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Plugin Email per Filament - il progetto

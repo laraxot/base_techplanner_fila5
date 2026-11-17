@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "sms action factory resolution"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: sms-action-factory-resolution.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Risoluzione dinamica vs match esplicito in SmsActionFactory

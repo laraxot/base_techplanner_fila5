@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "use models not db table"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🔴 USE MODELS, NOT DB::TABLE() - CRITICAL RULE
@@ -21,18 +18,6 @@ status: draft
 **Priority**: BLOCKER
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "use models not db table"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "use models not db table"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 The Rule
 
 > **MAI** usare `DB::table()` quando esiste un **MODELLO**.

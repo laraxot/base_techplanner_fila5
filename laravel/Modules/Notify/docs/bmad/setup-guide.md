@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "setup guide"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # bmad method: setup e configurazione (fixcity)

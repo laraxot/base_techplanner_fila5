@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "logging best practices"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Logging Best Practices - Performance Critical
@@ -22,18 +19,6 @@ status: draft
 **Action Required:** Remove all routine logging. Use only for errors/warnings.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "logging best practices"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "logging best practices"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## The Problem
 
 ### Performance Impact

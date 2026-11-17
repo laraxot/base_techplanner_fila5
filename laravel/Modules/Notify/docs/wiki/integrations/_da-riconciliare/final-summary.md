@@ -1,22 +1,13 @@
 ---
-<<<<<<< HEAD
-=======
-title: "📊 NOTIFY - RIEPILOGO FINALE COMPLETAMENTO"
->>>>>>> laraxot/dev
 title: "📊 <nome progetto> - RIEPILOGO FINALE COMPLETAMENTO"
 type: concept
 tags: [final, summary]
 created: 2026-07-14
 updated: 2026-07-14
-<<<<<<< HEAD
-=======
-qmd: "final-summary 📊 laraxot - riepilogo finale completamento"
->>>>>>> laraxot/dev
 qmd: "final-summary 📊 <nome progetto> - riepilogo finale completamento"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -31,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # 📊 NOTIFY - RIEPILOGO FINALE COMPLETAMENTO
@@ -67,11 +48,7 @@ di eccellenza 2025 per la gestione delle segnalazioni urbane in Italia.
 2. ✅ **documentation-index.md** - Indice navigabile completo (400+ pagine referenziate)
 3. ✅ **quick-start.md** - Guida rapida sviluppatori con regole Laraxot
 4. ✅ **project-completion-status.md** - Tracking avanzamento progetto
-<<<<<<< HEAD
 5. ✅ **excellence-2025.md** - Visione eccellenza e obiettivi
-=======
-5. ✅ **excellence-year-note-snake.md** - Visione eccellenza e obiettivi
->>>>>>> laraxot/dev
 6. ✅ **WORK-COMPLETED-.md.md** - Riepilogo tecnico aggiornamenti
 
 ### 🎫 Modulo App (4)
@@ -160,11 +137,7 @@ di eccellenza 2025 per la gestione delle segnalazioni urbane in Italia.
 │   ├── documentation-index.md          ✅ Indice generale
 │   ├── quick-start.md                  ✅ Guida rapida
 │   ├── roadmap-status-summary.md       ✅ Status master
-<<<<<<< HEAD
 │   ├── excellence-2025.md              ✅ Visione eccellenza
-=======
-│   ├── excellence-year-note-snake.md              ✅ Visione eccellenza
->>>>>>> laraxot/dev
 │   ├── project-completion-status.md    ✅ Tracking progetto
 │   ├── final-summary.md                ✅ Questo file
 │   └── WORK-COMPLETED-.md.md    ✅ Riepilogo tecnico
@@ -381,11 +354,7 @@ Il progetto <nome progetto> ha raggiunto un livello di documentazione e organizz
 - [x] documentation-status.md creato
 - [x] documentation-index.md creato
 - [x] quick-start.md creato
-<<<<<<< HEAD
 - [x] excellence-2025.md creato
-=======
-- [x] excellence-year-note-snake.md creato
->>>>>>> laraxot/dev
 - [x] project-completion-status.md creato
 
 ### Modulo App

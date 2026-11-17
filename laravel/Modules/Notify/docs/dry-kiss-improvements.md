@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "dry kiss improvements"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Module - DRY + KISS Improvements

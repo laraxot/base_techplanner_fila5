@@ -1,23 +1,14 @@
 ---
-<<<<<<< HEAD
 title: "Notify Module: Document"
 type: docs/bmad
-=======
-title: "Notify Module — Document"
-type: docs/bmad
-status: active
->>>>>>> laraxot/dev
 module: Notify
 scope: documentation
 bmad_version: 1.0
 updated: 2026-10-06
-<<<<<<< HEAD
 tags: [docs, notify, wiki]
 qmd: "links notify"
 status: superseded
 superseded_by: ../../-integration/links.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # links

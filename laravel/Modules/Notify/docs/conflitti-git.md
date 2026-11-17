@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "conflitti git"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitti Git - Modulo Notify

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "reusability guidelines 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "reusability guidelines 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Linee Guida per la Riusabilità del Modulo Notify
 
 ## Principio Fondamentale
@@ -33,15 +19,9 @@ $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
 <<<<<<< HEAD
-<<<<<<< HEAD
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
-=======
-$user = \Modules\SaluteOra\Models\User::factory()->create();
-'database' => 'saluteora_test',
-$this->app['config']->set('database.connections.saluteora_test', [
->>>>>>> 6ed19256f (.)
 =======
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
@@ -54,9 +34,6 @@ $user = \Modules\<nome modulo>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
@@ -75,27 +52,6 @@ $this->app['config']->set('database.connections.<nome progetto>_test', [
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
-<<<<<<< HEAD
-=======
-$user = \Modules\SaluteOra\Models\User::factory()->create();
-'database' => 'saluteora_test',
-$this->app['config']->set('database.connections.saluteora_test', [
-$user = \Modules\SaluteOra\Models\User::factory()->create();
-'database' => 'saluteora_test',
-$this->app['config']->set('database.connections.saluteora_test', [
-$user = \Modules\SaluteOra\Models\User::factory()->create();
-'database' => 'saluteora_test',
-$this->app['config']->set('database.connections.saluteora_test', [
-$user = \Modules\SaluteOra\Models\User::factory()->create();
-'database' => 'saluteora_test',
-$this->app['config']->set('database.connections.saluteora_test', [
-$user = \Modules\<nome progetto>\Models\User::factory()->create();
-'database' => '<nome progetto>_test',
-$this->app['config']->set('database.connections.<nome progetto>_test', [
-$user = \Modules\SaluteOra\Models\User::factory()->create();
-'database' => 'saluteora_test',
-$this->app['config']->set('database.connections.saluteora_test', [
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 ```
@@ -118,9 +74,6 @@ use Modules\Xot\Datas\XotData;
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome modulo>\Models\User::class
@@ -130,18 +83,6 @@ use Modules\Xot\Datas\XotData;
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
-<<<<<<< HEAD
-=======
-// Invece di: \Modules\SaluteOra\Models\User::class
-// Invece di: \Modules\<nome progetto>\Models\User::class
-// Invece di: \Modules\<nome modulo>\Models\User::class
-// Invece di: \Modules\SaluteOra\Models\User::class
-// Invece di: \Modules\SaluteOra\Models\User::class
-// Invece di: \Modules\SaluteOra\Models\User::class
-// Invece di: \Modules\SaluteOra\Models\User::class
-// Invece di: \Modules\<nome progetto>\Models\User::class
-// Invece di: \Modules\SaluteOra\Models\User::class
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 $userClass = XotData::make()->getUserClass();
@@ -156,9 +97,6 @@ Per i test che richiedono configurazioni database specifiche:
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
@@ -168,18 +106,6 @@ Per i test che richiedono configurazioni database specifiche:
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
-<<<<<<< HEAD
-=======
-// Invece di: 'saluteora_test'
-// Invece di: '<nome progetto>_test'
-// Invece di: '<nome progetto>_test'
-// Invece di: 'saluteora_test'
-// Invece di: 'saluteora_test'
-// Invece di: 'saluteora_test'
-// Invece di: 'saluteora_test'
-// Invece di: '<nome progetto>_test'
-// Invece di: 'saluteora_test'
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 $testDatabase = config('database.default') . '_test';
@@ -207,20 +133,10 @@ use Modules\<nome progetto>\Models\Patient;
 'database' => '<nome progetto>_test'
 $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 use Modules\<nome progetto>\Models\User;
 use Modules\<nome progetto>\Models\Patient;
 'database' => '<nome progetto>_test'
 $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
-<<<<<<< HEAD
-=======
-use Modules\SaluteOra\Models\User;
-use Modules\SaluteOra\Models\Patient;
-'database' => 'saluteora_test'
-$this->artisan('migrate', ['--database' => 'saluteora_test']);
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 use Modules\<nome progetto>\Models\User;
@@ -243,13 +159,8 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 <<<<<<< HEAD
-<<<<<<< HEAD
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
-=======
-'app_name' => 'SaluteOra',
-'tenant_model' => \Modules\SaluteOra\Models\Studio::class,
->>>>>>> 6ed19256f (.)
 =======
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
@@ -259,9 +170,6 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome modulo>\Models\Studio::class,
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => '<nome progetto>',
@@ -274,21 +182,6 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
-<<<<<<< HEAD
-=======
-'app_name' => 'SaluteOra',
-'tenant_model' => \Modules\SaluteOra\Models\Studio::class,
-'app_name' => 'SaluteOra',
-'tenant_model' => \Modules\SaluteOra\Models\Studio::class,
-'app_name' => 'SaluteOra',
-'tenant_model' => \Modules\SaluteOra\Models\Studio::class,
-'app_name' => 'SaluteOra',
-'tenant_model' => \Modules\SaluteOra\Models\Studio::class,
-'app_name' => '<nome progetto>',
-'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
-'app_name' => 'SaluteOra',
-'tenant_model' => \Modules\SaluteOra\Models\Studio::class,
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 ```
@@ -342,9 +235,6 @@ Prima di committare modifiche al modulo Notify:
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
@@ -354,18 +244,6 @@ Prima di committare modifiche al modulo Notify:
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-<<<<<<< HEAD
-=======
-- [ ] Nessun riferimento hardcoded a "saluteora" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "saluteora" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "saluteora" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "saluteora" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "saluteora" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-- [ ] Nessun riferimento hardcoded a "saluteora" o altri nomi di progetti
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 - [ ] Utilizzo di `XotData::make()->getUserClass()` per la classe User
@@ -382,9 +260,6 @@ Per verificare che il modulo sia veramente riutilizzabile:
 ```bash
 # Cerca hardcoding di nomi progetti
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
@@ -397,21 +272,6 @@ grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclu
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-<<<<<<< HEAD
-=======
-grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "saluteora\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "saluteora\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "saluteora\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "saluteora\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "saluteora\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "<nome progetto>\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-grep -r -i "saluteora\|salutemo\|dentalpro" Modules/Notify/ --exclude-dir=vendor
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 
@@ -423,9 +283,6 @@ grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
@@ -435,18 +292,6 @@ grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-<<<<<<< HEAD
-=======
-grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
-grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
-grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
-grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
-grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
-grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 ```
@@ -462,22 +307,11 @@ grep -r "database.*saluteora\|app.*saluteora" Modules/Notify/
 ## Collegamenti
 
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - [../../../../docs/module_reusability_guidelines.md](../../../../docs/module_reusability_guidelines.md)
 - [../../Xot/docs/xotdata_usage.md](../../Xot/docs/xotdata_usage.md)
 - [testing_best_practices.md](testing_best_practices.md)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
-=======
-- [../../../docs/module_reusability_guidelines.md](../../../docs/module_reusability_guidelines.md)
-- [../../Xot/docs/xotdata_usage.md](../../Xot/docs/xotdata_usage.md)
-- [testing_best_practices.md](testing_best_practices.md)
-
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)
 =======
 *Ultimo aggiornamento: gennaio 2025*
 >>>>>>> laraxot/dev

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "spatie email usage guide"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Guida all'utilizzo di SpatieEmail
@@ -27,14 +24,11 @@ Questa guida illustra come utilizzare la classe `SpatieEmail` per inviare email 
 - [Implementazione Database Mail](./database-mail.md)
 - [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
 - [Modulo Xot](../../../Xot/docs/README.md)
-<<<<<<< HEAD
 - [Documentazione Email Templates](./email_templates.md)
 - [Email Specifiche per Dottori](./doctor_emails.md)
 - [Implementazione Database Mail](./database-mail.md)
 - [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
 - [Modulo Xot](../../Xot/docs/README.md)
-=======
->>>>>>> laraxot/dev
 
 ## Implementazione attuale
 

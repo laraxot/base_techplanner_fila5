@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "bulk notification action"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Bulk Notification Action
@@ -144,16 +141,4 @@ Full multi-language support with:
 - Polish (pl)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "bulk notification action"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bulk notification action"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

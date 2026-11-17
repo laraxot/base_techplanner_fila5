@@ -214,8 +214,8 @@ $subject = Lang::get('user::email.password_reset_subject');
 <<<<<<< HEAD
 - [README.md Modulo User](./readme.md)
 =======
-- [README.md Modulo User](./README.md)
->>>>>>> 6ed19256f (.)
+- [README.md Modulo User](./readme.md)
+>>>>>>> laraxot/dev
 - [Authentication Guide](./authentication.md)
 - [Best Practices](./best-practices.md)
 
@@ -235,4 +235,5 @@ $subject = Lang::get('user::email.password_reset_subject');
 **✨ Test Coverage**: 85% ✅
 =======
 **✨ Test Coverage**: 85% ✅
->>>>>>> 6ed19256f (.)
+**✨ Test Coverage**: 85% ✅
+>>>>>>> laraxot/dev

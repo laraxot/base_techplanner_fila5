@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "commands"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🔧 Console Commands FixCity
@@ -48,18 +45,9 @@ php artisan view:cache
 
 ### Moduli (Nwidart)
 ```bash
-<<<<<<< HEAD
 # Lista moduli e stato (Enabled/Disabled)
 php artisan module:list
 
-=======
-# Lista moduli
-php artisan module:list
-
-# Stato moduli
-php artisan module:status
-
->>>>>>> laraxot/dev
 # Attiva/disattiva modulo
 php artisan module:enable {nome}
 php artisan module:disable {nome}
@@ -311,29 +299,14 @@ dev:reset-demo
 ```
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "commands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "commands"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🚨 REGOLA CRITICA - Frontend
 
 **MAI dimenticare dopo modifiche CSS/JS**:
 ```bash
 cd Themes/Sixteen/
 npm run build
-<<<<<<< HEAD
 <<<<<<< .merge_file_mymQHb
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_fJ5F4i
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev

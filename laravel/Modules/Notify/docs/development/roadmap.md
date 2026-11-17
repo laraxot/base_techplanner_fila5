@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "roadmap"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Module Roadmap
@@ -110,7 +107,6 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../activity/docs/roadmap.md)
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
-<<<<<<< HEAD
 * [roadmap.md](../roadmap.md)
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../roadmap.md)
@@ -125,8 +121,6 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../Activity/docs/roadmap.md)
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../Cms/docs/roadmap.md)
-=======
->>>>>>> laraxot/dev
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)

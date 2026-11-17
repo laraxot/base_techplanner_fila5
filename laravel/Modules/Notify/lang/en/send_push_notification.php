@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'resource' => [
-<<<<<<< HEAD
         'name' => 'Invio Notifica Push',
     ],
     'navigation' => [
@@ -15,18 +14,6 @@ return [
             'description' => 'Funzionalità per l\'invio di notifiche push tramite Firebase',
         ],
         'label' => 'Invio Notifiche Push',
-=======
-        'name' => 'Send Push Notification',
-    ],
-    'navigation' => [
-        'name' => 'Send Push Notification',
-        'plural' => 'Send Push Notifications',
-        'group' => [
-            'name' => 'Sistema',
-            'description' => 'Send push notifications via Firebase',
-        ],
-        'label' => 'Send Push Notifications',
->>>>>>> laraxot/dev
         'icon' => 'notify-push-animated',
         'sort' => '51',
     ],
@@ -40,11 +27,7 @@ return [
         'type' => [
             'label' => 'Tipo',
             'options' => [
-<<<<<<< HEAD
                 'notification' => 'Notifica',
-=======
-                'notification' => 'Notification',
->>>>>>> laraxot/dev
                 'data' => 'Dati',
                 'both' => 'Entrambi',
             ],
@@ -66,26 +49,16 @@ return [
         ],
         'data' => [
             'label' => 'Dati Aggiuntivi',
-<<<<<<< HEAD
             'description' => 'Dati in formato JSON da inviare con la notifica',
-=======
-            'description' => 'JSON data to send with the notification',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'helper_text' => '',
         ],
     ],
     'actions' => [
         'send' => [
-<<<<<<< HEAD
             'label' => 'Invia Notifica',
             'success' => 'Notifica push inviata con successo',
             'error' => 'Errore durante l\'invio della notifica push',
-=======
-            'label' => 'Send Notification',
-            'success' => 'Push notification sent successfully',
-            'error' => 'Error while sending the push notification',
->>>>>>> laraxot/dev
         ],
         'preview' => [
             'label' => 'Anteprima',

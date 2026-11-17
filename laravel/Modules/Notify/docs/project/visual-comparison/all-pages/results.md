@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "results"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # All Pages Visual Comparison Results

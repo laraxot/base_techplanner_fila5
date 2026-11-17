@@ -7,16 +7,10 @@ updated: 2026-09-26
 qmd: "qmd local docs search"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
 # QMD: ricerca locale su documentazione e note
-=======
----
-
-# QMD — ricerca locale su documentazione e note
->>>>>>> laraxot/dev
 
 **Riferimento upstream**: [github.com/tobi/qmd](https://github.com/tobi/qmd) (MIT). Documentazione dettagliata: [README](https://github.com/tobi/qmd/blob/main/README.md), [CHANGELOG](https://github.com/tobi/qmd/blob/main/changelog.md), sintassi query: [docs/SYNTAX.md](https://github.com/tobi/qmd/blob/main/docs/SYNTAX.md) (se presente nel tag che usi).
 
@@ -28,11 +22,7 @@ Pipeline tipica (da upstream):
 
 - **BM25** full-text (SQLite FTS5);
 - **ricerca vettoriale** (embedding locali);
-<<<<<<< HEAD
 - **fusione** dei risultati (es. RRF: Reciprocal Rank Fusion);
-=======
-- **fusione** dei risultati (es. RRF — Reciprocal Rank Fusion);
->>>>>>> laraxot/dev
 - opzionale **reranking** via LLM locale (**node-llama-cpp** + modelli **GGUF**).
 
 Output pensati per **flussi agentici** (CLI con `--json` / `--files`, **SDK** `@tobilu/qmd`, server **MCP**).
@@ -51,11 +41,7 @@ QMD risolve il problema “**in quale file era scritto X?**” a scala grande. I
 
 - Indicizzare `docs/`, `laravel/Modules/*/docs/`, `laravel/Themes/*/docs/` senza inviare il corpus a servizi esterni.
 - Dare agli agenti **query** e **retrieve** allineati alla policy “docs come memoria”.
-<<<<<<< HEAD
 - Opzionale: server **MCP** (`qmd mcp`) con strumenti orientati al retrieval (vedi [README upstream: MCP](https://github.com/tobi/qmd#mcp-server)).
-=======
-- Opzionale: server **MCP** (`qmd mcp`) con strumenti orientati al retrieval (vedi [README upstream — MCP](https://github.com/tobi/qmd#mcp-server)).
->>>>>>> laraxot/dev
 
 ## Requisiti e versioni
 
@@ -109,11 +95,7 @@ qmd embed
 
 # Ricerca: preferire il comando unificato hybrid dove disponibile (nomi esatti dipendono dalla versione)
 qmd query "filament wizard ticket"
-<<<<<<< HEAD
 # Alcune versioni espongono anche ricerca lessicale / vettoriale separata: consultare `qmd --help`
-=======
-# Alcune versioni espongono anche ricerca lessicale / vettoriale separata — consultare `qmd --help`
->>>>>>> laraxot/dev
 
 # Recupero documento per path
 qmd get "docs/project/karpathy-llm-wiki-adoption.md" --full
@@ -132,11 +114,7 @@ Avvio server **stdio** (default integrazione Cursor/Claude):
 qmd mcp
 ```
 
-<<<<<<< HEAD
 **HTTP** (porta default **8181**; mantiene modelli caldi tra le richieste: utile per latenza):
-=======
-**HTTP** (porta default **8181**; mantiene modelli caldi tra le richieste — utile per latenza):
->>>>>>> laraxot/dev
 
 ```bash
 qmd mcp --http
@@ -145,7 +123,6 @@ qmd mcp --http
 
 Strumenti tipici esposti (naming esatto dipende dalla versione; in v2.x il tool unificato è spesso **`query`** per ricerca hybrid + **`get`** / **`multi_get`** per retrieval):
 
-<<<<<<< HEAD
 - **`query`**: ricerca con sotto-query tipizzate e combinazione risultati;
 - **`get`**: contenuto per path o docid;
 - **`status`**: stato indice.
@@ -153,15 +130,6 @@ Strumenti tipici esposti (naming esatto dipende dalla versione; in v2.x il tool 
 Configurazione client: [sezione MCP del README QMD](https://github.com/tobi/qmd#mcp-server). Indice MCP del progetto: [docs/mcp/index.md](../mcp/index.md).
 
 **Plugin Claude Code** (opzionale): upstream menziona marketplace `tobi/qmd`: utile se lavori in quell’ecosistema.
-=======
-- **`query`** — ricerca con sotto-query tipizzate e combinazione risultati;
-- **`get`** — contenuto per path o docid;
-- **`status`** — stato indice.
-
-Configurazione client: [sezione MCP del README QMD](https://github.com/tobi/qmd#mcp-server). Indice MCP del progetto: [docs/mcp/index.md](../mcp/index.md).
-
-**Plugin Claude Code** (opzionale): upstream menziona marketplace `tobi/qmd` — utile se lavori in quell’ecosistema.
->>>>>>> laraxot/dev
 
 ## SDK (Node/Bun)
 
@@ -177,11 +145,7 @@ Da **v1.1.6+** / **v2.0+**: `import { createStore } from '@tobilu/qmd'` con `dbP
 
 1. **Aggiornare** `@tobilu/qmd` periodicamente e rieseguire `qmd update && qmd embed` dopo grandi merge su `docs/`.
 2. **Una collezione per area** (root `docs/`, `Modules`, `Themes`) per filtrare le query e ridurre rumore.
-<<<<<<< HEAD
 3. **Dopo ingest importante** nel senso Karpathy, aggiornare [`../wiki/log.md`](../wiki/log.md) e, se serve, [`../wiki/index.md`](../wiki/index.md): QMD non sostituisce il catalogo manuale.
-=======
-3. **Dopo ingest importante** nel senso Karpathy, aggiornare [`../wiki/log.md`](../wiki/log.md) e, se serve, [`../wiki/index.md`](../wiki/index.md) — QMD non sostituisce il catalogo manuale.
->>>>>>> laraxot/dev
 4. **Lint wiki** (periodicità definita in adozione Karpathy): QMD può aiutare a trovare file correlati, ma la coerenza semantica resta un compito guidato.
 
 ## Collegamenti

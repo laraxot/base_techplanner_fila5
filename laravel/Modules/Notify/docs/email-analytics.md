@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email analytics"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analytics Email - il progetto

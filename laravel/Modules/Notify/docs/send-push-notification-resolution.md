@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "send push notification resolution"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Risoluzione conflitto git su SendPushNotification.php

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "telegram channel"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: telegram-channel.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Implementazione Canale Telegram

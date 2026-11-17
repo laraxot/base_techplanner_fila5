@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "xotbase table method"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🔴 XotBaseTableWidget - NO table() Method Rule
@@ -21,18 +18,6 @@ status: draft
 **Priority**: BLOCKER
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "xotbase table method"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase table method"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 The Rule
 
 > **MAI** definire il metodo `table()` in classi che estendono `XotBaseTableWidget`.

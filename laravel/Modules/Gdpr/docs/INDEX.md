@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_uYZSKY
 ---
 title: "INDEX"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_HXV5pl
 # Documentation Index
 
 Modulo: Gdpr

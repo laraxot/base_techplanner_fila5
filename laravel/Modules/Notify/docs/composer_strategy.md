@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "composer strategy"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🎯 Laravel-Modules Composer Strategy
@@ -282,18 +279,6 @@ Composer vede:
 - [MODULES_ARCHITECTURE.md](MODULES_ARCHITECTURE.md) - Architettura moduli
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "composer strategy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "composer strategy"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Stato**: ✅ **CONFIGURATO - Composer minimale con merge-plugin**  
 **Principio**: **Root minimale, moduli specifici**  
 **Merge Plugin**: **wikimedia/composer-merge-plugin**

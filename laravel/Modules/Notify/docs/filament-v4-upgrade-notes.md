@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament v4 upgrade notes"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Module - Filament v4 Upgrade Notes

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "docs first workflow"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Docs-First Workflow (Notify)

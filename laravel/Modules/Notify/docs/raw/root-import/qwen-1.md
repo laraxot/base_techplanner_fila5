@@ -11,12 +11,8 @@ discussions: []
 
 ## Qwen Added Memories
 
-<<<<<<< HEAD
 <<<<<<< .merge_file_JzFXuw
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-=======
-- **Documentation System:** Master index at docs/MODULE_DOCS_INDEX.md with 7,305+ files (6,812 module docs, 325 theme docs, 15+ BMad docs, 153 project docs). All docs must have bidirectional links (min 3 cross-references). Vite config outDir: './public' is CORRECT - builds to local public/, then symlink public_html/themes (npm run copy obsoleto) copies to public_html/themes/Sixteen/.
->>>>>>> .merge_file_7KnIRl
 =======
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 
@@ -33,12 +29,8 @@ discussions: []
 
 - **Theme Detection:** APP_URL from .env → remove protocol → remove www → explode by "." → reverse array → join with "/" → config path. Example: http://fixcity.local → local/fixcity → laravel/config/local/fixcity/xra.php → pub_theme = "Sixteen" → Theme folder: laravel/Themes/Sixteen/
 
-<<<<<<< HEAD
 <<<<<<< .merge_file_JzFXuw
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-=======
-- **Vite Build for Themes:** outDir: './public' in vite.config.js, build in laravel/Themes/Sixteen/, copy to public_html/themes/Sixteen/ via symlink public_html/themes (npm run copy obsoleto). Use @vite(['resources/css/app.css'], 'themes/Sixteen') with theme parameter. Bootstrap Italia replicated with Tailwind @apply in style-apply.css, NOT @import.
->>>>>>> .merge_file_7KnIRl
 =======
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "service provider"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Service Provider del Modulo Notify

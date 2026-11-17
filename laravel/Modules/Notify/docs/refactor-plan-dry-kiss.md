@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "refactor plan dry kiss"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Piano di Refactor DRY/KISS - Documentazione Modulo Notify
@@ -91,11 +88,7 @@ Applicare convenzioni consistenti:
 - **Gerarchici**: Struttura cartelle logica
 
 #### Esempi Trasformazioni
-<<<<<<< HEAD
 - `analisi-dettagliata-architettura-struttura.md` → `architecture/detailed-analysis.md`
-=======
-- `analisi-dettagliata-1.md` → `architecture/detailed-analysis.md`
->>>>>>> laraxot/dev
 - `email-templates-spatie.md` → `integrations/spatie-email.md`
 - `sms_netfun_channel.md` → `sms/netfun-provider.md`
 
@@ -164,18 +157,6 @@ Creare sistema di navigazione coerente:
 - Onboarding sviluppatori semplificato
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "refactor plan dry kiss"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "refactor plan dry kiss"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Stato**: In corso  
 **Priorità**: Alta  
 **Responsabile**: Sistema automatico  

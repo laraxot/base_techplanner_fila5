@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: sessione-analisi-homepage.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # ✅ Sessione Completata - Homepage Analysis & Documentation
@@ -200,12 +197,9 @@ Themes/Sixteen/resources/views/
 - [Analisi Visiva](docs/screenshots/homepage/ANALISI_VISIVA.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_ANALYSIS.md)
 - [Fix Plan](docs/screenshots/homepage/FIX_PLAN.md)
-<<<<<<< HEAD
 - [Analisi Visiva](../../../screenshots/homepage/ANALISI_VISIVA.md)
 - [Screenshot Analysis](../../../screenshots/homepage/SCREENSHOT_ANALYSIS.md)
 - [Fix Plan](../../../screenshots/homepage/FIX_PLAN.md)
-=======
->>>>>>> laraxot/dev
 - [OpenViking Context](.openvikings/homepage_alignment_context.md)
 
 ### Link Esterni

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "00 overview"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: overview.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Roadmap overview (Module Notify)

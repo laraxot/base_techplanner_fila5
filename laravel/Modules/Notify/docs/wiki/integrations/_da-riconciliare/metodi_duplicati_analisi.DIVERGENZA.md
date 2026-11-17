@@ -8,11 +8,8 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: metodi_duplicati_analisi.divergenza.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Divergenza: `metodi_duplicati_analisi.md`

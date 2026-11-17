@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "Notify: scopo del modulo e come raggiungerlo meglio"
-=======
-title: "Notify — scopo del modulo e come raggiungerlo meglio"
->>>>>>> laraxot/dev
 type: concept
 status: active
 created: 2026-09-02
@@ -11,7 +7,6 @@ tags: [notify, purpose, notifiche, template, canali, comunicazione]
 qmd: "notify scopo modulo notifiche template canali email sms comunicazione tracciabilita"
 updated: 2026-09-02
 issues:
-<<<<<<< HEAD
   # DA CREARE: `gh` non autenticato: mai numeri inventati.
   # gh issue create --repo provtv/module_notify_fila5 --title "<argomento del file>"
   - "https://github.com/provtv/module_notify_fila5/issues/"
@@ -21,17 +16,6 @@ discussions:
 ---
 
 # Notify: perche' esiste
-=======
-  # DA CREARE — `gh` non autenticato: mai numeri inventati.
-  # gh issue create --repo provtv/module_notify_fila5 --title "<argomento del file>"
-  - "https://github.com/provtv/module_notify_fila5/issues/"
-discussions:
-  # DA CREARE — vedi sopra.
-  - "https://github.com/provtv/module_notify_fila5/discussions/"
----
-
-# Notify — perche' esiste
->>>>>>> laraxot/dev
 
 ## Lo scopo in una frase
 
@@ -71,11 +55,7 @@ contenzioso.
 ### 2. Un invio fallito deve essere visibile a chi ha deciso
 
 Le code assorbono i fallimenti: il messaggio va in `failed_jobs` e la persona che ha
-<<<<<<< HEAD
 firmato non lo sa. Il caso peggiore e' silenzioso: nessuno si accorge che la
-=======
-firmato non lo sa. Il caso peggiore e' silenzioso — nessuno si accorge che la
->>>>>>> laraxot/dev
 comunicazione non e' partita.
 
 **Azione:** stato dell'invio (in coda / inviato / fallito / rimbalzato) leggibile
@@ -110,11 +90,7 @@ si cambiano venti punti.
 **Azione:** il dominio dichiara l'**evento** ("scheda approvata"), Notify decide i
 canali in base alla configurazione e alle preferenze del destinatario.
 
-<<<<<<< HEAD
 ## Confini: cosa **non** appartiene a Notify
-=======
-## Confini — cosa **non** appartiene a Notify
->>>>>>> laraxot/dev
 
 - La **decisione** che genera la comunicazione: modulo di dominio.
 - **Chi** e' il destinatario come identita': User.
@@ -122,15 +98,5 @@ canali in base alla configurazione e alle preferenze del destinatario.
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - `laravel/Modules/Job/docs/purpose.md`: code e fallimenti
 - `laravel/Modules/User/docs/purpose.md`: destinatari e preferenze
-=======
-- `laravel/Modules/Job/docs/purpose.md` — code e fallimenti
-- `laravel/Modules/User/docs/purpose.md` — destinatari e preferenze
-
-## Documentazione correlata
-
-- [Audit BMAD](./bmad/audit.md)
-- [ECC](./ecc/notify-ecc-audit.md)
->>>>>>> laraxot/dev

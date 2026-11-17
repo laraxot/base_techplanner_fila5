@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "fix plan"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🚀 Fix Homepage Bootstrap Italia - Piano Esecutivo
@@ -22,18 +19,6 @@ Allineare la homepage FixCity (`/it/tests/homepage`) al design Bootstrap Italia 
 **Target**: http://fixcity.local/it/tests/homepage
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "fix plan"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fix plan"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Fase 1: Header & Hero (Settimana 1)
 
 ### Task 1.1: Header Slim Component
@@ -171,11 +156,8 @@ discussions: []
 - [Bootstrap Italia Docs](https://italia.github.io/design-web-toolkit/)
 - [Analisi Visiva](docs/screenshots/homepage/ANALISI_VISIVA.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_ANALYSIS.md)
-<<<<<<< HEAD
 - [Analisi Visiva](ANALISI_VISIVA.md)
 - [Screenshot Analysis](SCREENSHOT_ANALYSIS.md)
-=======
->>>>>>> laraxot/dev
 
 ### File Correlati
 - `Themes/Sixteen/resources/css/bootstrap-italia.css`

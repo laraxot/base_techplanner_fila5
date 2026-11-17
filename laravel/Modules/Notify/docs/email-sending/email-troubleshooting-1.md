@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "email troubleshooting 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "email troubleshooting 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Risoluzione dei Problemi nelle Email
 
 Questa documentazione fornisce soluzioni per i problemi comuni che possono verificarsi durante l'invio di email nel modulo Notify.
@@ -29,15 +15,9 @@ La classe `SpatieEmail` ora utilizza l'API moderna di Laravel per gli allegati t
 $attachments = [
     [
 <<<<<<< HEAD
-<<<<<<< HEAD
         'path' => 'public_html/images/avatars/default.svg',
         'path' => 'public_html/images/avatars/default.svg',
         'path' => 'public_html/images/avatars/default.svg',
-=======
-        'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/_bases/base_techplanner_fila5/public_html/images/avatars/default.svg',
->>>>>>> 6ed19256f (.)
 =======
         'path' => 'public_html/images/avatars/default.svg',
         'path' => 'public_html/images/avatars/default.svg',
@@ -72,11 +52,7 @@ L'implementazione attuale include:
 4. **Documentazione PHPDoc completa**: Miglior supporto IDE e type hints
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./attachments_usage.md).
-=======
-Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](attachments_usage.md).
->>>>>>> 6ed19256f (.)
 =======
 Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./attachments_usage.md).
 >>>>>>> laraxot/dev
@@ -239,15 +215,9 @@ public function test_can_send_email_with_attachments()
 ## Collegamenti alla Documentazione Correlata
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [ATTACHMENTS_USAGE.md](./attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-=======
-- [ATTACHMENTS_USAGE.md](attachments_usage.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
->>>>>>> 6ed19256f (.)
 =======
 - [ATTACHMENTS_USAGE.md](./attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)

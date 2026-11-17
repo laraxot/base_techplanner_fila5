@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "sms troubleshooting"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/sms-troubleshooting.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Troubleshooting SMS

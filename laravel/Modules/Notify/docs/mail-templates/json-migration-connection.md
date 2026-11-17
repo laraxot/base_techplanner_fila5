@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "json migration connection"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Connessione Database nelle Migrazioni JSON

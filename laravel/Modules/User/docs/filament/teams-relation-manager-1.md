@@ -187,9 +187,4 @@ public function getTableActions(): array
 
 *Ultimo aggiornamento: 3 Giugno 2025*
 =======
-- [XotBaseRelationManager](/laravel/Modules/Xot/docs/filament/relation_managers.md)
-- [HasXotTable Trait](/laravel/Modules/Xot/docs/filament/xot_table.md)
-- [Regole di Traduzione per Filament](/laravel/Modules/Xot/docs/translation_rules.md)
-
-*Ultimo aggiornamento: 3 Giugno 2025*
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev

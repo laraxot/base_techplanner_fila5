@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "implementation summary fixcity geocode"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🚀 IMPLEMENTATION SUMMARY - 27 Gennaio 2025
@@ -18,18 +15,6 @@ status: draft
 > **Sessione di implementazione priorità critiche Fixcity Module**
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "implementation summary fixcity geocode"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "implementation summary fixcity geocode"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## ✅ COMPLETED TASKS
 
 ### 🎯 Task #1: GeocodeTicketAddressJob + Migration (CRITICAL)

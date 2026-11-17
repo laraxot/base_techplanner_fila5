@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 # Guida Completa ai Provider di Notifiche
 
 <<<<<<< HEAD
 Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di <nome progetto>.
-=======
-Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di SaluteOra.
->>>>>>> 6ed19256f (.)
 =======
 ---
 title: "notification providers guide 1"

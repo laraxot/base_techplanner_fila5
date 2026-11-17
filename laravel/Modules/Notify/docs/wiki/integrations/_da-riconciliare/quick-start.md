@@ -8,7 +8,6 @@ qmd: "quick-start 🚀 <nome progetto> - guida rapida sviluppatori"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
@@ -23,16 +22,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 status: draft
-=======
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # 🚀 <nome progetto> - GUIDA RAPIDA SVILUPPATORI
@@ -513,15 +502,10 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 
 ### Documentazione
 - **[Indice Documentazione](./documentation-index.md)**
-<<<<<<< HEAD
 - **[Roadmap Status](../../../roadmap-status-summary.md)**
 - **[Documentation Status](../../../project_docs/documentation-status.md)**
 - **[Roadmap Status](../../../roadmap-status-summary.md)**
 - **[Documentation Status](../../../project_docs/documentation-status.md)**
-=======
-- **[Roadmap Status](./roadmap-status-summary.md)**
-- **[Documentation Status](./project_docs/documentation-status.md)**
->>>>>>> laraxot/dev
 
 ### Framework
 - **[Laravel Docs](https://laravel.com/docs/11.x)**
@@ -530,12 +514,8 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 
 ### Regole Progetto
 - **[Laraxot Rules](./.windsurf/rules/user_15338591596331277449.md)**
-<<<<<<< HEAD
 - **[Code Quality](../../../ai-agents/code-quality.md)**
 - **[Code Quality](../../../ai-agents/code-quality.md)**
-=======
-- **[Code Quality](./.windsurf/rules/code-quality.md)**
->>>>>>> laraxot/dev
 - **[Project Rules](./.windsurf/rules/project-rules.md)**
 
 ---
@@ -590,11 +570,7 @@ created: 2026-07-28
 updated: 2026-07-28
 ---
 
-<<<<<<< HEAD
 # Notify Module: Quick Start
-=======
-# Notify Module — Quick Start
->>>>>>> laraxot/dev
 
 ## Send Notification
 

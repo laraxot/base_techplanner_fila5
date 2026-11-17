@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "xotbasemigration best practices"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # XotBaseMigration: Best Practices
@@ -72,11 +69,7 @@ if ($this->hasColumn('subject') && !$this->isColumnType('subject', 'json')) {
     if (!$this->hasColumn('subject_json')) {
         $table->json('subject_json')->nullable()->after('subject');
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // 2. Migra i dati solo se la colonna temporanea esiste
     if ($this->hasColumn('subject_json')) {
         DB::table('mail_templates')->chunkById(100, function ($records) {
@@ -91,11 +84,7 @@ if ($this->hasColumn('subject') && !$this->isColumnType('subject', 'json')) {
             }
         });
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // 3. Rimuovi e rinomina
     $table->dropColumn('subject');
     $table->renameColumn('subject_json', 'subject');
@@ -119,41 +108,24 @@ Quando si utilizza `Schema::hasColumn()` direttamente, si bypassa tutta questa l
 
 ## Come evitare errori
 
-<<<<<<< HEAD
 1. **Verifica esistenza colonna**:
-=======
-1. **Verifica esistenza colonna**: 
->>>>>>> laraxot/dev
    ```php
    $this->hasColumn('column_name')
    ```
 
-<<<<<<< HEAD
 2. **Verifica tipo colonna**:
-=======
-2. **Verifica tipo colonna**: 
->>>>>>> laraxot/dev
    ```php
    $this->isColumnType('column_name', 'expected_type')
    ```
 
-<<<<<<< HEAD
 3. **Ottieni tipo colonna**:
-=======
-3. **Ottieni tipo colonna**: 
->>>>>>> laraxot/dev
    ```php
    $this->getColumnType('column_name')
    ```
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [Xot Module Documentation](/var/www/html/<nome progetto>/laravel/modules/xot/docs/migrations.md)
 - [JSON Migration Best Practices](/var/www/html/<nome progetto>/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)
-=======
-- [Xot Module Documentation](/var/www/html/Quaeris/laravel/modules/xot/docs/migrations.md)
-- [JSON Migration Best Practices](/var/www/html/Quaeris/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)
->>>>>>> laraxot/dev
 - [Xot Module Documentation](/var/www/_bases/base_ptvx_fila5/laravel/modules/xot/docs/migrations.md)
 - [JSON Migration Best Practices](/var/www/_bases/base_ptvx_fila5/laravel/modules/notify/docs/mail-templates/json_migration_fixes.md)

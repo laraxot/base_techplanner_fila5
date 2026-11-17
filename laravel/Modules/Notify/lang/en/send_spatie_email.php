@@ -27,12 +27,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-<<<<<<< HEAD
-=======
-    'actions' => [
-        'emailFormActions' => [
-            'label' => 'emailFormActions',
-        ],
-    ],
->>>>>>> laraxot/dev
 ];

@@ -1,18 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
-title: "MCP Server Index - FixCity Project"
->>>>>>> laraxot/dev
 title: "MCP Server Index - Notify Project"
 type: index
 tags: [notify, docs, mcp]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-<<<<<<< HEAD
-=======
-qmd: "notify documentazione mcp index mcp server index - fixcity project index readme frontmatter qmd search"
->>>>>>> laraxot/dev
 qmd: "notify documentazione mcp index mcp server index - laraxot project index readme frontmatter qmd search"
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
@@ -24,10 +16,7 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # MCP Server Index - FixCity Project
 # MCP Server Index - Notify Project
@@ -43,17 +32,11 @@ status: draft
 |----------|----------|---------|
 | **QMD (local docs search)** | [docs/project/qmd-local-docs-search.md](../project/qmd-local-docs-search.md) | Indice Markdown locale; server MCP opzionale (`qmd mcp`) |
 | **MCP Master Index** | [docs/mcp/README.md](../mcp/README.md) | Complete MCP server documentation |
-<<<<<<< HEAD
 | **Supermemory Guide** | [Themes/Sixteen/docs/supermemory-setup.md](../project/supermemory-setup.md) | Supermemory integration guide |
 | **Visual Parity Tool** | [Themes/Sixteen/scripts/visual-parity.mjs](../../laravel/Themes/Sixteen/scripts/visual-parity.mjs) | Playwright-based visual analysis |
 | **Supermemory Script** | [Themes/Sixteen/scripts/supermemory-context.js](../../laravel/Themes/Sixteen/scripts/supermemory-context.js) | AI context indexing |
 | **Visual Parity Tool** | [Themes/Sixteen/scripts/visual-parity.mjs](../../../../Themes/Sixteen/scripts/visual-parity.mjs) | Playwright-based visual analysis |
 | **Supermemory Script** | [Themes/Sixteen/scripts/supermemory-context.js](../../../../Themes/Sixteen/scripts/supermemory-context.js) | AI context indexing |
-=======
-| **Supermemory Guide** | [Themes/Sixteen/docs/supermemory-setup.md](../../laravel/Themes/Sixteen/docs/supermemory-setup.md) | Supermemory integration guide |
-| **Visual Parity Tool** | [Themes/Sixteen/scripts/visual-parity.mjs](../../laravel/Themes/Sixteen/scripts/visual-parity.mjs) | Playwright-based visual analysis |
-| **Supermemory Script** | [Themes/Sixteen/scripts/supermemory-context.js](../../laravel/Themes/Sixteen/scripts/supermemory-context.js) | AI context indexing |
->>>>>>> laraxot/dev
 
 ---
 

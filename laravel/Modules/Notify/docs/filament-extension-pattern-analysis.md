@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament extension pattern analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi del Pattern di Estensione per Componenti Filament

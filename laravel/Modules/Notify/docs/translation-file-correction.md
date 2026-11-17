@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "translation file correction"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Guida alla Correzione dei File di Traduzione

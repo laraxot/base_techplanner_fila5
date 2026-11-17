@@ -1,16 +1,7 @@
 ---
-<<<<<<< .merge_file_QEWGdF
 bmad_status: active
 scope: ui-docs
 updated: 2026-10-06
-=======
-title: "Epic e story — UI"
-type: epics
-status: review
-updated: 2026-11-16
-module: UI
-qmd: "epic story BMAD UI audit P0 P1 policy"
->>>>>>> .merge_file_xWtwNJ
 ---
 
 # Epic e story — UI

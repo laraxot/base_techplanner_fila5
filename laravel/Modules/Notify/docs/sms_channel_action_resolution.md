@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "sms channel action resolution"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: sms-channel-action-resolution.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Dove posizionare la logica di risoluzione dell'action SMS?

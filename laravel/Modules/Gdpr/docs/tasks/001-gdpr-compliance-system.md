@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_AboR3C
 ---
 title: "001 gdpr compliance system"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_FC89u9
 # Task 001: Implement Complete GDPR Compliance System
 
 ## Description
@@ -308,7 +305,6 @@ The Gdpr module needs full GDPR compliance features including user consent track
 
 ---
 
-<<<<<<< .merge_file_AboR3C
 title: "001 gdpr compliance system"
 type: note
 tags: [documentation]
@@ -317,7 +313,5 @@ updated: 2026-09-26
 qmd: "001 gdpr compliance system"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_FC89u9
 **Status**: Pending
 **Assignee**: TBD

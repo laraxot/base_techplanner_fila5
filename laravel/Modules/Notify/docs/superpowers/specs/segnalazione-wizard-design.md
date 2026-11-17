@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "segnalazione wizard design"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Design: Ticket Wizard Widget (Filament)

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "duplicate methods global analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi Globale Metodi Duplicati - FixCity
@@ -69,7 +66,6 @@ Questa analisi identifica opportunità di refactoring cross-module per ridurre l
 | Gdpr | 3 | [Visualizza](Modules/Gdpr/docs/duplicate-methods-analysis.md) |
 | UI | 2 | [Visualizza](Modules/UI/docs/duplicate-methods-analysis.md) |
 | Seo | 1 | [Visualizza](Modules/Seo/docs/duplicate-methods-analysis.md) |
-<<<<<<< HEAD
 | Fixcity | 76 | [Visualizza](duplicate-methods-analysis.md) |
 | User | 55 | [Visualizza](duplicate-methods-analysis.md) |
 | Geo | 46 | [Visualizza](duplicate-methods-analysis.md) |
@@ -88,8 +84,6 @@ Questa analisi identifica opportunità di refactoring cross-module per ridurre l
 | Gdpr | 3 | [Visualizza](duplicate-methods-analysis.md) |
 | UI | 2 | [Visualizza](duplicate-methods-analysis.md) |
 | Seo | 1 | [Visualizza](duplicate-methods-analysis.md) |
-=======
->>>>>>> laraxot/dev
 
 ## Prossimi Passi
 

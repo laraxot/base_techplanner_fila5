@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "mail layouts theme integration"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Mail Layouts - Integrazione con Sistema Temi
@@ -357,10 +354,7 @@ class EmailLayoutResource extends XotBaseResource
 ### Documentazione Interna
 - [Spatie Database Mail Templates Deep Dive](./spatie-database-mail-templates-deep-dive.md)
 - [Mail Layouts README](../resources/mail-layouts/readme.md)
-<<<<<<< HEAD
 - [Mail Layouts README](../resources/mail-layouts/README.md)
-=======
->>>>>>> laraxot/dev
 - [SpatieEmail Class](../app/Emails/SpatieEmail.php)
 
 ### Esempi Layout
@@ -369,18 +363,6 @@ class EmailLayoutResource extends XotBaseResource
 - [Responsive Layout](../resources/mail-layouts/base/responsive.html)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "mail layouts theme integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mail layouts theme integration"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Pattern**: Layout per tema con fallback chain  
 **Status**: ✅ IMPLEMENTATO

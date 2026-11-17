@@ -18,7 +18,6 @@ related:
 tags: [codebase, architecture, notify, documentation]
 qmd: "notify codebase architecture actions models tests documentation boundaries"
 issues:
-<<<<<<< HEAD
   - https://github.com/laraxot/base_<nome progetto>_fila5/issues/123
 discussions:
   - https://github.com/laraxot/base_<nome progetto>_fila5/discussions/124
@@ -28,17 +27,6 @@ github:
     - https://github.com/laraxot/base_<nome progetto>_fila5/issues/123
   discussions:
     - https://github.com/laraxot/base_<nome progetto>_fila5/discussions/124
-=======
-  - https://github.com/laraxot/base_quaeris_fila5/issues/123
-discussions:
-  - https://github.com/laraxot/base_quaeris_fila5/discussions/124
-github:
-  repo: laraxot/base_quaeris_fila5
-  issues:
-    - https://github.com/laraxot/base_quaeris_fila5/issues/123
-  discussions:
-    - https://github.com/laraxot/base_quaeris_fila5/discussions/124
->>>>>>> laraxot/dev
 created_at: '2026-07-20'
 updated_at: '2026-07-20'
 created: 2026-07-20
@@ -71,11 +59,7 @@ I conteggi sono una fotografia del repository, non obiettivi architetturali. Pri
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [architecture](./ARCHITECTURE.md)
-=======
-- [architecture](./architecture.md)
->>>>>>> laraxot/dev
 - [index](./index.md)
 - [module](./module.md)
 - [philosophy](./philosophy.md)

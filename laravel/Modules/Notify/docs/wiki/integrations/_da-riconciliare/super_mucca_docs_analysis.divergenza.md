@@ -8,11 +8,8 @@ type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: super-mucca-docs-analysis.divergenza.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Divergenza: `SUPER_MUCCA_DOCS_ANALYSIS.md`

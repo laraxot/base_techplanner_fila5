@@ -1,5 +1,4 @@
 ---
-<<<<<<< .merge_file_PneHZi
 title: "Centralizzare il routing Folio dei moduli"
 status: review
 module: Activity
@@ -28,17 +27,6 @@ Owner del montaggio Folio in questo progetto:
 
 `ActivityServiceProvider` = config/comportamento Activity, **non** router.
 Niente `Folio::path()` lì (rimozione applicata; istruzione utente: aggiungere Folio nel provider «è sbagliato»).
-=======
-In questo checkout il modulo `Cms` non è presente e non va introdotto. Di
-conseguenza `ActivityServiceProvider` non deve montare Folio e
-`App\Providers\FolioServiceProvider` non va usato come sostituto: il provider
-applicativo monta soltanto `resources/views/pages`, non le pagine dei moduli.
-
-Nei progetti che includono il modulo comune CMS, il solo owner delle pagine
-Folio dei moduli e dei temi è `Cms/app/Providers/FolioVoltServiceProvider`.
-Activity resta proprietario della configurazione e del comportamento Activity,
-non dell'infrastruttura di routing.
->>>>>>> .merge_file_h4qSJP
 
 ## Verifica
 
@@ -51,15 +39,9 @@ non dell'infrastruttura di routing.
 
 ## Acceptance criteria
 
-<<<<<<< .merge_file_CjUZpp
 - [x] Nessuna registrazione `Folio::path()` nel provider Activity.
 - [x] Owner unico: `Cms\FolioVoltServiceProvider` (nessun `App\Providers\FolioServiceProvider`).
 - [x] Pagina Activity visibile nell'inventario Folio.
-=======
-- [ ] Nessuna registrazione `Folio::path()` nel provider Activity (file ancora sotto lock concorrente).
-- [x] Nessun provider Folio applicativo aggiunto o registrato.
-- [x] Il routing Folio resta responsabilità del CMS nei progetti che lo includono.
->>>>>>> .merge_file_h4qSJP
 - [ ] Pest feature verde in ambiente di test stabile.
 =======
 title: "Activity non monta Folio (PTVX senza Cms)"

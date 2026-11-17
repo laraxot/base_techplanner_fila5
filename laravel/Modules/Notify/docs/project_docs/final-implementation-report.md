@@ -9,15 +9,9 @@ updated: 2026-07-14
 qmd: "final_implementation_report_2025-10-02 deprecated"
 status: deprecated
 related:
-<<<<<<< HEAD
   - "./2025-excellence-achievement.md"
   - "./agid-implementation-guide.md"
   - "./ARCHITECTURE.md"
-=======
-  - "./excellence-achievement.md"
-  - "./agid-implementation-guide.md"
-  - "./architecture.md"
->>>>>>> laraxot/dev
   - "./complete-refactoring-analysis.md"
   - "./documentation-status.md"
   - "./final-implementation-report-.md"

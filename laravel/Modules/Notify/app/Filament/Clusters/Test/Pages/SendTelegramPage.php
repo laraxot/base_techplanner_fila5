@@ -57,19 +57,11 @@ class SendTelegramPage extends XotBasePage
     public function getTelegramFormSchema(): array
     {
         return [
-<<<<<<< HEAD
             'chat_id' => TextInput::make('chat_id')->required()->helperText('ID della chat o username del canale'),
             'text' => TextInput::make('text')
                 ->required()
                 ->maxLength(4096)
                 ->helperText('Il messaggio non può superare i 4096 caratteri'),
-=======
-            'chat_id' => TextInput::make('chat_id')->required()->helperText('Chat ID or channel username'),
-            'text' => TextInput::make('text')
-                ->required()
-                ->maxLength(4096)
-                ->helperText('The message cannot exceed 4096 characters'),
->>>>>>> laraxot/dev
             'driver' => Select::make('driver')
                 ->options([
                     'bot' => 'Bot API',
@@ -83,11 +75,7 @@ class SendTelegramPage extends XotBasePage
                     'MarkdownV2' => 'MarkdownV2'])
                 ->helperText('Formato del testo (opzionale)'),
             'disable_web_page_preview' => Toggle::make('disable_web_page_preview')->helperText('Disabilita l\'anteprima dei link'),
-<<<<<<< HEAD
             'disable_notification' => Toggle::make('disable_notification')->helperText('Invia il messaggio silenziosamente'),
-=======
-            'disable_notification' => Toggle::make('disable_notification')->helperText('Send the message silently'),
->>>>>>> laraxot/dev
             'reply_to_message_id' => TextInput::make('reply_to_message_id')
                 ->numeric()
                 ->helperText('ID del messaggio a cui rispondere'),
@@ -124,22 +112,14 @@ class SendTelegramPage extends XotBasePage
 
             FilamentNotification::make()
                 ->success()
-<<<<<<< HEAD
                 ->title('Messaggio Telegram inviato con successo')
-=======
-                ->title('Telegram message sent successfully')
->>>>>>> laraxot/dev
                 ->send();
         } catch (Exception $e) {
             Log::error('Errore nell\'invio Telegram: '.$e->getMessage());
 
             FilamentNotification::make()
                 ->danger()
-<<<<<<< HEAD
                 ->title('Errore nell\'invio Telegram')
-=======
-                ->title('Error sending Telegram message')
->>>>>>> laraxot/dev
                 ->body($e->getMessage())
                 ->send();
         }

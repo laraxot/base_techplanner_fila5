@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "schema conventions"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Schema Conventions in Notify Module

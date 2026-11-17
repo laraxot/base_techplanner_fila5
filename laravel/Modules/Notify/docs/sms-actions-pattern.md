@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "sms actions pattern"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Pattern per le Azioni SMS 
@@ -265,16 +262,4 @@ Seguire questo pattern garantisce:
 4. **Testabilità**: Le azioni sono facilmente testabili grazie all'interfaccia comune
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "sms actions pattern"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "sms actions pattern"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: [DATE]*

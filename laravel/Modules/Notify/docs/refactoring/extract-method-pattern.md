@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "extract method pattern"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🧘 Pattern: Extract Method (Clean Code)
@@ -458,24 +455,10 @@ Prima di estrarre metodi:
 - [SendRecordsNotificationBulkAction](../../app/Filament/Actions/SendRecordsNotificationBulkAction.php) - Implementazione esempio
 - [DRY Composition Pattern](./dry-composition-pattern.md) - Pattern composizione Actions
 - [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md) - Pattern per chiamate Actions
-<<<<<<< HEAD
 - [DRY Composition Pattern](../dry-composition-pattern.md) - Pattern composizione Actions
 - [Actions Calling Actions Pattern](../actions-calling-actions-pattern.md) - Pattern per chiamate Actions
 
 ---
-=======
-
----
-
-title: "extract method pattern"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "extract method pattern"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Small methods, clear names, single responsibility - the path to maintainable code"*  
 **Pattern**: Extract Method (Clean Code Refactoring)

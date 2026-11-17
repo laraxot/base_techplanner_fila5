@@ -8,10 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Module Rules Index
@@ -43,11 +40,7 @@ This file documents the rules and standards specific to the Notify module.
 - Test each notification channel separately
 - Mock external services in unit tests
 
-<<<<<<< HEAD
 ## Architectural Violations: Do Not Repeat
-=======
-## Architectural Violations — Do Not Repeat
->>>>>>> laraxot/dev
 
 ### No HTTP controllers
 Controllers are forbidden in all modules. Architecture = Folio + Volt + Filament only.
@@ -56,10 +49,6 @@ as a Folio page + Action, not a controller.
 See: [no-http-controllers.md](./no-http-controllers.md)
 
 ## Related Documentation
-<<<<<<< HEAD
 - [README](./README.md)
-=======
-- [README](./readme.md)
->>>>>>> laraxot/dev
 - [phpstan](./phpstan.md)
 - [No HTTP controllers](./no-http-controllers.md)

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "code quality commands"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Code quality commands

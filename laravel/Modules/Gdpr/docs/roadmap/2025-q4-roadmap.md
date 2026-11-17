@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_Lz8Lmb
 ---
 title: "2025 q4 roadmap"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_FoxM4G
 # GDPR Module Roadmap (2025 Q4)
 
 ## Vision & Scope

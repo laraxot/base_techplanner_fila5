@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "interfaces implementation guide 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "interfaces implementation guide 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Guida all'Implementazione delle Interfacce nel Modulo Notify
 
 ## Struttura delle Interfacce
@@ -25,11 +11,7 @@ Le interfacce sono organizzate in due livelli:
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
 <<<<<<< HEAD
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SmsActionContract.php
-=======
-   /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SmsActionContract.php
->>>>>>> 6ed19256f (.)
 =======
    Modules/Notify/app/Contracts/SmsActionContract.php
 >>>>>>> laraxot/dev
@@ -38,11 +20,7 @@ Le interfacce sono organizzate in due livelli:
 2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
    ```
 <<<<<<< HEAD
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-=======
-   /var/www/html/saluteora/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
->>>>>>> 6ed19256f (.)
 =======
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 >>>>>>> laraxot/dev

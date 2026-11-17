@@ -18,11 +18,7 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'helper_text' => 'Identificativo univoco del template',
-=======
-            'helper_text' => 'Unique template identifier',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -32,10 +28,6 @@ return [
             'help' => 'The PHP class that handles email sending',
             'helper_text' => 'Classe PHP che gestisce l\'invio dell\'email',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'description' => 'mailable',
->>>>>>> laraxot/dev
         ],
         'subject' => [
             'label' => 'Subject',
@@ -43,10 +35,6 @@ return [
             'help' => 'The subject that will appear in the email',
             'helper_text' => 'Oggetto dell\'email',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'description' => 'subject',
->>>>>>> laraxot/dev
         ],
         'html_template' => [
             'label' => 'HTML Content',
@@ -54,10 +42,6 @@ return [
             'help' => 'The email content in HTML format',
             'helper_text' => 'Contenuto HTML del template email',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'description' => 'html_template',
->>>>>>> laraxot/dev
         ],
         'text_template' => [
             'label' => 'Text Content',
@@ -65,10 +49,6 @@ return [
             'help' => 'Text version of the email for clients that don\'t support HTML',
             'helper_text' => 'Versione testuale del template email',
             'tooltip' => '',
-<<<<<<< HEAD
-=======
-            'description' => 'text_template',
->>>>>>> laraxot/dev
         ],
         'version' => [
             'label' => 'Version',
@@ -79,77 +59,46 @@ return [
         ],
         'created_at' => [
             'label' => 'Created At',
-<<<<<<< HEAD
             'helper_text' => 'Data di creazione del template',
-=======
-            'helper_text' => 'Template creation date',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
         'updated_at' => [
             'label' => 'Last Modified',
-<<<<<<< HEAD
             'helper_text' => 'Data dell\'ultima modifica del template',
-=======
-            'helper_text' => 'Template last modified date',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
         'from_email' => [
             'label' => 'Email mittente',
-<<<<<<< HEAD
             'helper_text' => 'Indirizzo email del mittente',
-=======
-            'helper_text' => 'Sender email address',
->>>>>>> laraxot/dev
             'placeholder' => 'noreply@example.com',
             'tooltip' => '',
             'description' => '',
         ],
         'from_name' => [
-<<<<<<< HEAD
             'label' => 'Nome mittente',
             'helper_text' => 'Nome visualizzato del mittente',
             'placeholder' => 'Nome Azienda',
-=======
-            'label' => 'Sender name',
-            'helper_text' => 'Sender display name',
-            'placeholder' => 'Company Name',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
         'variables' => [
             'label' => 'Variabili disponibili',
-<<<<<<< HEAD
             'helper_text' => 'Elenco delle variabili che possono essere utilizzate nel template',
-=======
-            'helper_text' => 'List of variables that can be used in the template',
->>>>>>> laraxot/dev
             'placeholder' => 'es: {{name}}, {{email}}',
             'tooltip' => '',
             'description' => '',
         ],
         'is_markdown' => [
             'label' => 'Usa Markdown',
-<<<<<<< HEAD
             'helper_text' => 'Indica se il template utilizza la sintassi Markdown',
-=======
-            'helper_text' => 'Whether the template uses Markdown syntax',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
         'status' => [
-<<<<<<< HEAD
             'label' => 'Stato',
             'helper_text' => 'Stato attuale del template',
-=======
-            'label' => 'Status',
-            'helper_text' => 'Current template status',
->>>>>>> laraxot/dev
             'tooltip' => '',
             'description' => '',
         ],
@@ -187,24 +136,15 @@ return [
             'tooltip' => '',
         ],
         'name' => [
-<<<<<<< HEAD
             'description' => 'Nome del template',
             'helper_text' => 'Nome descrittivo per identificare il template',
-=======
-            'description' => 'Template name',
-            'helper_text' => 'Descriptive name to identify the template',
->>>>>>> laraxot/dev
             'placeholder' => 'Es: Benvenuto, Conferma ordine, Reset password',
             'label' => 'Nome Template',
             'tooltip' => '',
         ],
         'params' => [
             'label' => 'Parametri',
-<<<<<<< HEAD
             'helper_text' => 'Inserisci i parametri separati da virgola che possono essere utilizzati nel template',
-=======
-            'helper_text' => 'Enter comma-separated parameters that can be used in the template',
->>>>>>> laraxot/dev
             'placeholder' => 'name, email, date, company',
             'description' => 'Parametri disponibili per il template email',
             'tooltip' => '',
@@ -330,11 +270,7 @@ return [
         'plural' => 'Template Email',
     ],
     'status' => [
-<<<<<<< HEAD
         'sent' => 'Inviata',
-=======
-        'sent' => 'Sent',
->>>>>>> laraxot/dev
         'delivered' => 'Consegnata',
         'failed' => 'Fallita',
         'opened' => 'Aperta',

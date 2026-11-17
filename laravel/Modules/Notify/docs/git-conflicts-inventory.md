@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "git conflicts inventory"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Inventario Conflitti Git - Notify Module

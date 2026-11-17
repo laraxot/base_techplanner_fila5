@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "03 workstreams"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: workstreams.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Workstreams - Notify

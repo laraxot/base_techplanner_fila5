@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_aOKupC
 ---
 title: "repo"
 type: note
@@ -10,6 +9,4 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_LBrPrd
 https://github.com/aymanalhattami/filament-page-with-sidebar

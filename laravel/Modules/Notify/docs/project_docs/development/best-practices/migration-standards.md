@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "migration standards"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Standard per le Migrazioni
@@ -224,25 +221,10 @@ protected ?string $connection = 'user'; // Stessa connessione del modello
 
 - [Database Guidelines](./database-guidelines.md)
 - [PHPStan Best Practices](../phpstan/best-practices.md)
-<<<<<<< HEAD
 - [PHPStan Best Practices](../../../best-practices.md)
-=======
->>>>>>> laraxot/dev
 - [Troubleshooting Migrations](../../troubleshooting/errors/migration-errors.md)
 - [Architecture Standards](../../architecture/standards/)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "migration standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "migration standards"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: Agosto 2025*
 *Fonte: laravel/Modules/Xot/docs/MIGRATION_STANDARDS.md* 

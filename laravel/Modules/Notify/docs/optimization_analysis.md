@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "optimization analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # notify module documentation optimization analysis

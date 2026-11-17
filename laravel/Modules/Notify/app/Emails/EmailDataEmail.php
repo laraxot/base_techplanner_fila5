@@ -48,7 +48,6 @@ class EmailDataEmail extends Mailable
      */
     public function content(): Content
     {
-<<<<<<< HEAD
         /** @var view-string $htmlView */
         $htmlView = 'notify::emails.html';
         /** @var view-string $textView */
@@ -57,11 +56,6 @@ class EmailDataEmail extends Mailable
         return new Content(
             html: $htmlView,
             text: $textView,
-=======
-        return new Content(
-            html: 'notify::emails.html',
-            text: 'notify::emails.text',
->>>>>>> laraxot/dev
             with: [
                 'email_data' => $this->email_data,
             ],

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "PROJECT"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # PROJECT: FixCity Platform

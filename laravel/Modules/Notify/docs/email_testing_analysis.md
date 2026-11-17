@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email testing analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi delle Pagine di Test Email

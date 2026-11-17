@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "optimization recommendations 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "optimization recommendations 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Raccomandazioni di Ottimizzazione - Modulo Notify
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -23,9 +9,6 @@ discussions: []
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
@@ -35,18 +18,6 @@ discussions: []
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
 - **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
-<<<<<<< HEAD
-=======
-- **336+ occorrenze hardcoded** di "saluteora" in test e documentazione
-- **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
-- **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
-- **336+ occorrenze hardcoded** di "saluteora" in test e documentazione
-- **336+ occorrenze hardcoded** di "saluteora" in test e documentazione
-- **336+ occorrenze hardcoded** di "saluteora" in test e documentazione
-- **336+ occorrenze hardcoded** di "saluteora" in test e documentazione
-- **336+ occorrenze hardcoded** di "<nome progetto>" in test e documentazione
-- **336+ occorrenze hardcoded** di "saluteora" in test e documentazione
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 - **Import diretti** da moduli project-specific
@@ -66,9 +37,6 @@ discussions: []
 - Riferimenti diretti a modelli <nome progetto>
 - Riferimenti diretti a modelli <nome progetto>
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 - Riferimenti diretti a modelli <nome progetto>
 - Riferimenti diretti a modelli <nome progetto>
 - Riferimenti diretti a modelli <nome progetto>
@@ -78,18 +46,6 @@ discussions: []
 - Riferimenti diretti a modelli <nome progetto>
 - Riferimenti diretti a modelli <nome progetto>
 - Riferimenti diretti a modelli <nome progetto>
-<<<<<<< HEAD
-=======
-- Riferimenti diretti a modelli SaluteOra
-- Riferimenti diretti a modelli <nome progetto>
-- Riferimenti diretti a modelli <nome progetto>
-- Riferimenti diretti a modelli SaluteOra
-- Riferimenti diretti a modelli SaluteOra
-- Riferimenti diretti a modelli SaluteOra
-- Riferimenti diretti a modelli SaluteOra
-- Riferimenti diretti a modelli <nome progetto>
-- Riferimenti diretti a modelli SaluteOra
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 
@@ -100,9 +56,6 @@ discussions: []
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
@@ -112,18 +65,6 @@ discussions: []
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
 1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
-<<<<<<< HEAD
-=======
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "SaluteOra"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "SaluteOra"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "SaluteOra"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "SaluteOra"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "SaluteOra"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "<nome progetto>"
-1. **NotificationManagementBusinessLogicTest.php**: Rimosso hardcoding "SaluteOra"
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 2. **NotifyThemeableFactory.php**: Implementato `getProjectNamespace()` dinamico
@@ -143,9 +84,6 @@ $user = User::factory()->create();
 'database' => '<nome progetto>_test'
 'database' => '<nome progetto>_test'
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 'database' => '<nome progetto>_test'
 'database' => '<nome progetto>_test'
 'database' => '<nome progetto>_test'
@@ -155,18 +93,6 @@ $user = User::factory()->create();
 'database' => '<nome progetto>_test'
 'database' => '<nome progetto>_test'
 'database' => '<nome progetto>_test'
-<<<<<<< HEAD
-=======
-'database' => 'saluteora_test'
-'database' => '<nome progetto>_test'
-'database' => '<nome progetto>_test'
-'database' => 'saluteora_test'
-'database' => 'saluteora_test'
-'database' => 'saluteora_test'
-'database' => 'saluteora_test'
-'database' => '<nome progetto>_test'
-'database' => 'saluteora_test'
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 
@@ -353,17 +279,10 @@ php artisan notify:benchmark
 
 - [Linee Guida Riusabilità](reusability_guidelines.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
 *Ultimo aggiornamento: gennaio 2025*
-=======
-- [Piano Implementazione](../../../docs/module_reusability_implementation_plan.md)
-- [Script Controllo](../../../bashscripts/check_module_reusability.sh)
-
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)
 =======
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)

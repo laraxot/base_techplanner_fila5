@@ -12,10 +12,7 @@ related:
   - "./database-directory-naming-fix.md"
   - "./database-naming-fix-summary.md"
   - "./database-naming-verification-report.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # ✅ SQLite Database Permission Fix - COMPLETE

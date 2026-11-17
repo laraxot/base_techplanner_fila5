@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "multi channel notifications"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
@@ -15,14 +14,6 @@ status: draft
 
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
-=======
----
-
-# Implementazione di Notifiche Multi-Canale 
-
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di <nome progetto>.
-Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di Quaeris.
->>>>>>> laraxot/dev
 Questa documentazione descrive come implementare correttamente notifiche multi-canale (email, SMS, Telegram) nel modulo Notify di App.
 
 ## Indice
@@ -39,11 +30,7 @@ Questa documentazione descrive come implementare correttamente notifiche multi-c
 ## Introduzione
 
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-<<<<<<< HEAD
 <nome progetto> utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
-=======
-Quaeris utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
->>>>>>> laraxot/dev
 App utilizza il sistema di notifiche di Laravel per inviare comunicazioni attraverso diversi canali. Ogni canale richiede un'implementazione specifica per garantire la corretta consegna dei messaggi.
 
 ## Architettura delle Notifiche
@@ -88,20 +75,12 @@ Quando si utilizza `SpatieEmail` con le notifiche, è **fondamentale** impostare
 public function toMail($notifiable): SpatieEmail
 {
     $email = new SpatieEmail($this->record, $this->slug);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // IMPORTANTE: garantisci che ci sia sempre un destinatario
     if (method_exists($notifiable, 'routeNotificationFor')) {
         $email->to($notifiable->routeNotificationFor('mail'));
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return $email;
 }
 ```
@@ -122,11 +101,7 @@ public function toMail($notifiable): SpatieEmail
 ### Configurazione Provider SMS
 
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
-<<<<<<< HEAD
 <nome progetto> supporta diversi provider SMS. La configurazione di base prevede:
-=======
-Quaeris supporta diversi provider SMS. La configurazione di base prevede:
->>>>>>> laraxot/dev
 App supporta diversi provider SMS. La configurazione di base prevede:
 
 1. Installazione del provider scelto:
@@ -232,26 +207,17 @@ class AppointmentNotification extends Notification
 {
     protected $record;
     protected $slug;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function __construct($record, $slug)
     {
         $this->record = $record;
         $this->slug = $slug;
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function via($notifiable)
     {
         // Determina dinamicamente i canali basandosi sulle preferenze dell'utente
         $channels = ['mail'];
-<<<<<<< HEAD
 
         if ($notifiable->sms_notifications_enabled) {
             $channels[] = TwilioChannel::class;
@@ -268,49 +234,20 @@ class AppointmentNotification extends Notification
     {
         $email = new SpatieEmail($this->record, $this->slug);
 
-=======
-        
-        if ($notifiable->sms_notifications_enabled) {
-            $channels[] = TwilioChannel::class;
-        }
-        
-        if ($notifiable->telegram_notifications_enabled) {
-            $channels[] = TelegramChannel::class;
-        }
-        
-        return $channels;
-    }
-    
-    public function toMail($notifiable)
-    {
-        $email = new SpatieEmail($this->record, $this->slug);
-        
->>>>>>> laraxot/dev
         // IMPORTANTE: imposta esplicitamente il destinatario
         if (method_exists($notifiable, 'routeNotificationFor')) {
             $email->to($notifiable->routeNotificationFor('mail'));
         }
-<<<<<<< HEAD
 
         return $email;
     }
 
-=======
-        
-        return $email;
-    }
-    
->>>>>>> laraxot/dev
     public function toTwilio($notifiable)
     {
         return (new TwilioSmsMessage())
             ->content("Notifica: {$this->record->title}");
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function toTelegram($notifiable)
     {
         return TelegramMessage::create()
@@ -322,11 +259,7 @@ class AppointmentNotification extends Notification
 ## Implementazione Netfun SMS
 
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-<<<<<<< HEAD
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di <nome progetto>, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
-=======
-Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di Quaeris, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
->>>>>>> laraxot/dev
 Netfun è un provider di SMS italiano che offre API per l'invio di messaggi SMS. Seguendo l'architettura di App, implementeremo l'integrazione con Netfun utilizzando Spatie Queueable Actions.
 
 ### 1. Configurazione
@@ -337,20 +270,12 @@ Per prima cosa, aggiungiamo la configurazione nel file `config/sms.php`:
 // config/sms.php
 return [
     // Altre configurazioni...
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     'netfun' => [
         'username' => env('NETFUN_USERNAME'),
         'password' => env('NETFUN_PASSWORD'),
         'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-<<<<<<< HEAD
 'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-=======
-'sender' => env('NETFUN_SENDER', 'Quaeris'),
->>>>>>> laraxot/dev
 'sender' => env('NETFUN_SENDER', 'App'),
         'api_url' => env('NETFUN_API_URL', 'https://api.netfun.it/sms/v1/'),
     ],
@@ -363,11 +288,7 @@ Assicurati di aggiungere le corrispondenti variabili al tuo file `.env`:
 NETFUN_USERNAME=your_username
 NETFUN_PASSWORD=your_password
 NETFUN_SENDER=<nome progetto>
-<<<<<<< HEAD
 NETFUN_SENDER=<nome progetto>
-=======
-NETFUN_SENDER=Quaeris
->>>>>>> laraxot/dev
 NETFUN_SENDER=App
 ```
 
@@ -388,20 +309,12 @@ use Illuminate\Support\Str;
 class SendNetfunSMSAction
 {
     use QueueableAction;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     protected string $username;
     protected string $password;
     protected string $sender;
     protected string $apiUrl;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function __construct()
     {
         $this->username = config('sms.netfun.username');
@@ -409,26 +322,15 @@ class SendNetfunSMSAction
         $this->sender = config('sms.netfun.sender');
         $this->apiUrl = config('sms.netfun.api_url');
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function execute(string $to, string $message, array $options = [])
     {
         // Normalizza il numero di telefono (formato E.164)
         $to = $this->normalizePhoneNumber($to);
-<<<<<<< HEAD
 
         // Genera un ID di riferimento univoco per il messaggio
         $reference = $options['reference'] ?? (string) Str::uuid();
 
-=======
-        
-        // Genera un ID di riferimento univoco per il messaggio
-        $reference = $options['reference'] ?? (string) Str::uuid();
-        
->>>>>>> laraxot/dev
         try {
             $response = Http::post($this->apiUrl, [
                 'username' => $this->username,
@@ -440,27 +342,16 @@ class SendNetfunSMSAction
                 // Altri parametri opzionali
                 'date' => $options['scheduled_date'] ?? null, // Data pianificata di invio
             ]);
-<<<<<<< HEAD
 
             if ($response->successful()) {
                 $responseData = $response->json();
 
-=======
-            
-            if ($response->successful()) {
-                $responseData = $response->json();
-                
->>>>>>> laraxot/dev
                 Log::info('SMS Netfun inviato con successo', [
                     'to' => $to,
                     'reference' => $reference,
                     'message_id' => $responseData['message_id'] ?? null,
                 ]);
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> laraxot/dev
                 return [
                     'success' => true,
                     'message_id' => $responseData['message_id'] ?? null,
@@ -473,11 +364,7 @@ class SendNetfunSMSAction
                     'status' => $response->status(),
                     'response' => $response->json(),
                 ]);
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> laraxot/dev
                 return [
                     'success' => false,
                     'error' => $response->json()['message'] ?? 'Errore sconosciuto',
@@ -490,7 +377,6 @@ class SendNetfunSMSAction
                 'reference' => $reference,
                 'error' => $e->getMessage(),
             ]);
-<<<<<<< HEAD
 
             throw $e;
         }
@@ -499,16 +385,6 @@ class SendNetfunSMSAction
     /**
      * Normalizza il numero di telefono nel formato E.164
      *
-=======
-            
-            throw $e;
-        }
-    }
-    
-    /**
-     * Normalizza il numero di telefono nel formato E.164
-     * 
->>>>>>> laraxot/dev
      * @param string $phoneNumber
      * @return string
      */
@@ -516,32 +392,20 @@ class SendNetfunSMSAction
     {
         // Rimuovi tutti i caratteri non numerici
         $digits = preg_replace('/[^0-9]/', '', $phoneNumber);
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         // Se il numero non inizia con '+' e non ha un prefisso internazionale,
         // aggiungi il prefisso italiano per default
         if (!Str::startsWith($phoneNumber, '+')) {
             // Se il numero inizia con '00', sostituisci con '+'
             if (Str::startsWith($digits, '00')) {
                 $digits = '+' . substr($digits, 2);
-<<<<<<< HEAD
             }
-=======
-            } 
->>>>>>> laraxot/dev
             // Se il numero inizia con '3' (cellulare italiano), aggiungi prefisso italiano
             elseif (Str::startsWith($digits, '3')) {
                 $digits = '+39' . $digits;
             }
         }
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         return $digits;
     }
 }
@@ -562,17 +426,10 @@ class NetfunSMSMessage
     public ?string $sender = null;
     public ?string $reference = null;
     public ?string $scheduledDate = null;
-<<<<<<< HEAD
 
     /**
      * Imposta il contenuto del messaggio
      *
-=======
-    
-    /**
-     * Imposta il contenuto del messaggio
-     * 
->>>>>>> laraxot/dev
      * @param string $content
      * @return $this
      */
@@ -581,17 +438,10 @@ class NetfunSMSMessage
         $this->content = $content;
         return $this;
     }
-<<<<<<< HEAD
 
     /**
      * Imposta il mittente del messaggio
      *
-=======
-    
-    /**
-     * Imposta il mittente del messaggio
-     * 
->>>>>>> laraxot/dev
      * @param string $sender
      * @return $this
      */
@@ -600,17 +450,10 @@ class NetfunSMSMessage
         $this->sender = $sender;
         return $this;
     }
-<<<<<<< HEAD
 
     /**
      * Imposta un riferimento personalizzato
      *
-=======
-    
-    /**
-     * Imposta un riferimento personalizzato
-     * 
->>>>>>> laraxot/dev
      * @param string $reference
      * @return $this
      */
@@ -619,17 +462,10 @@ class NetfunSMSMessage
         $this->reference = $reference;
         return $this;
     }
-<<<<<<< HEAD
 
     /**
      * Pianifica l'invio del messaggio
      *
-=======
-    
-    /**
-     * Pianifica l'invio del messaggio
-     * 
->>>>>>> laraxot/dev
      * @param string $date Formato: 'Y-m-d H:i:s'
      * @return $this
      */
@@ -638,17 +474,10 @@ class NetfunSMSMessage
         $this->scheduledDate = $date;
         return $this;
     }
-<<<<<<< HEAD
 
     /**
      * Converte l'oggetto in array di opzioni
      *
-=======
-    
-    /**
-     * Converte l'oggetto in array di opzioni
-     * 
->>>>>>> laraxot/dev
      * @return array
      */
     public function toArray(): array
@@ -678,26 +507,15 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class NetfunChannel
 {
     protected SendNetfunSMSAction $sendSMSAction;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function __construct(SendNetfunSMSAction $sendSMSAction)
     {
         $this->sendSMSAction = $sendSMSAction;
     }
-<<<<<<< HEAD
 
     /**
      * Invia la notifica tramite Netfun SMS
      *
-=======
-    
-    /**
-     * Invia la notifica tramite Netfun SMS
-     * 
->>>>>>> laraxot/dev
      * @param mixed $notifiable
      * @param \Illuminate\Notifications\Notification $notification
      * @return array|null
@@ -708,7 +526,6 @@ class NetfunChannel
         if (!$to = $notifiable->routeNotificationForNetfun($notification)) {
             return null;
         }
-<<<<<<< HEAD
 
         // Ottieni il messaggio dalla notifica
         $message = $notification->toNetfun($notifiable);
@@ -717,16 +534,6 @@ class NetfunChannel
             throw new \Exception('Il metodo toNetfun() deve restituire un\'istanza di NetfunSMSMessage');
         }
 
-=======
-        
-        // Ottieni il messaggio dalla notifica
-        $message = $notification->toNetfun($notifiable);
-        
-        if (!$message instanceof NetfunSMSMessage) {
-            throw new \Exception('Il metodo toNetfun() deve restituire un\'istanza di NetfunSMSMessage');
-        }
-        
->>>>>>> laraxot/dev
         // Esegui l'invio tramite la Queueable Action
         // L'esecuzione avverrà in modo asincrono (in background)
         return $this->sendSMSAction
@@ -753,21 +560,12 @@ use Illuminate\Notifications\Notifiable;
 class User extends Authenticatable
 {
     use Notifiable;
-<<<<<<< HEAD
 
     // ... altri metodi e proprietà
 
     /**
      * Restituisce il numero di telefono per invio notifiche Netfun
      *
-=======
-    
-    // ... altri metodi e proprietà
-    
-    /**
-     * Restituisce il numero di telefono per invio notifiche Netfun
-     * 
->>>>>>> laraxot/dev
      * @param \Illuminate\Notifications\Notification $notification
      * @return string|null
      */
@@ -794,26 +592,15 @@ use Modules\Notify\Datas\NetfunSMSMessage;
 class AppointmentReminder extends Notification
 {
     protected $appointment;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function __construct($appointment)
     {
         $this->appointment = $appointment;
     }
-<<<<<<< HEAD
 
     /**
      * Definisci i canali su cui inviare la notifica
      *
-=======
-    
-    /**
-     * Definisci i canali su cui inviare la notifica
-     * 
->>>>>>> laraxot/dev
      * @param mixed $notifiable
      * @return array
      */
@@ -821,24 +608,16 @@ class AppointmentReminder extends Notification
     {
         return ['mail', NetfunChannel::class];
     }
-<<<<<<< HEAD
 
     /**
      * Formatta il messaggio per il canale Netfun
      *
-=======
-    
-    /**
-     * Formatta il messaggio per il canale Netfun
-     * 
->>>>>>> laraxot/dev
      * @param mixed $notifiable
      * @return \Modules\Notify\Datas\NetfunSMSMessage
      */
     public function toNetfun($notifiable)
     {
         $date = $this->appointment->date->format('d/m/Y H:i');
-<<<<<<< HEAD
 
         return (new NetfunSMSMessage())
             ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
@@ -847,16 +626,6 @@ class AppointmentReminder extends Notification
             ->reference('app_' . $this->appointment->id);
     }
 
-=======
-        
-        return (new NetfunSMSMessage())
-            ->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. <nome progetto>.")
-->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. Quaeris.")
-->content("Gentile {$notifiable->first_name}, le ricordiamo il suo appuntamento del {$date}. App.")
-            ->reference('app_' . $this->appointment->id);
-    }
-    
->>>>>>> laraxot/dev
     // Altri metodi per altri canali (mail, ecc.)
 }
 ```
@@ -880,11 +649,7 @@ use Illuminate\Support\Facades\Http;
 class NetfunSMSTest extends TestCase
 {
     use DatabaseTransactions;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     public function testSendSMS()
     {
         // Mock della risposta HTTP
@@ -894,7 +659,6 @@ class NetfunSMSTest extends TestCase
                 'message_id' => '123456789',
             ], 200),
         ]);
-<<<<<<< HEAD
 
         $user = User::factory()->create([
             'phone_number' => '+393401234567',
@@ -908,31 +672,12 @@ class NetfunSMSTest extends TestCase
 ->content('Test SMS da App')
             ->reference('test_123');
 
-=======
-        
-        $user = User::factory()->create([
-            'phone_number' => '+393401234567',
-        ]);
-        
-        $action = app(SendNetfunSMSAction::class);
-        
-        $message = (new NetfunSMSMessage())
-            ->content('Test SMS da <nome progetto>')
-->content('Test SMS da Quaeris')
-->content('Test SMS da App')
-            ->reference('test_123');
-        
->>>>>>> laraxot/dev
         $result = $action->execute(
             $user->phone_number,
             $message->content,
             $message->toArray()
         );
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         $this->assertTrue($result['success']);
         $this->assertEquals('123456789', $result['message_id']);
     }
@@ -958,7 +703,6 @@ class AppointmentReminderController extends Controller
     public function sendReminder(Request $request, Appointment $appointment)
     {
         $sendSMSAction = app(SendNetfunSMSAction::class);
-<<<<<<< HEAD
 
         $message = (new NetfunSMSMessage())
             ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
@@ -966,15 +710,6 @@ class AppointmentReminderController extends Controller
 ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. App.")
             ->reference('app_' . $appointment->id);
 
-=======
-        
-        $message = (new NetfunSMSMessage())
-            ->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. <nome progetto>.")
-->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. Quaeris.")
-->content("Gentile {$appointment->patient->first_name}, le ricordiamo il suo appuntamento del {$appointment->date->format('d/m/Y H:i')}. App.")
-            ->reference('app_' . $appointment->id);
-        
->>>>>>> laraxot/dev
         // Esecuzione asincrona
         $sendSMSAction->onQueue('sms')
             ->execute(
@@ -982,11 +717,7 @@ class AppointmentReminderController extends Controller
                 $message->content,
                 $message->toArray()
             );
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> laraxot/dev
         return response()->json([
             'message' => 'Promemoria inviato con successo',
         ]);

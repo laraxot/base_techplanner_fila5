@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "xotbasepivot executive summary"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # XotBasePivot - Executive Summary
@@ -23,18 +20,6 @@ status: draft
 **Raccomandazione:** ✅ **IMPLEMENTARE IMMEDIATAMENTE**
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "xotbasepivot executive summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbasepivot executive summary"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📊 The Bottom Line
 
 ### Problema
@@ -178,19 +163,13 @@ discussions: []
    - Rollback plan
 
 5. **[User Module Guide](../Modules/User/docs/models/xotbasepivot-migration.md)** (2.500+ parole)
-<<<<<<< HEAD
 5. **[User Module Guide](../../User/docs/models/xotbasepivot-migration.md)** (2.500+ parole)
-=======
->>>>>>> laraxot/dev
    - 7 Pivot concreti
    - Permission system
    - Teams & Devices
 
 6. **[Blog Module Guide](../Modules/Blog/docs/models/xotbasepivot-migration.md)** (2.500+ parole)
-<<<<<<< HEAD
 6. **[Blog Module Guide](../../Blog/docs/models/xotbasepivot-migration.md)** (2.500+ parole)
-=======
->>>>>>> laraxot/dev
    - Caso speciale SoftDeletes
    - Pattern a 3 livelli
    - Best practices

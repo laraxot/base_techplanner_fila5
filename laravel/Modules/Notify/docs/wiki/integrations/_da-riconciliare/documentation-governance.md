@@ -8,10 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Documentation Governance Framework
@@ -443,10 +440,7 @@ jobs:
 - [agents.md](../../../AGENTS.md) - Agent guidelines
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 - [DOCUMENTATION_INDEX.md](../../../docs/DOCUMENTATION_INDEX.md) - Master index
-<<<<<<< HEAD
 - [DOCUMENTATION_INDEX.md](../../../DOCUMENTATION_INDEX.md) - Master index
-=======
->>>>>>> laraxot/dev
 
 ---
 

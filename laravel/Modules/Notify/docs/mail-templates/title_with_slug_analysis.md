@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "title with slug analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: title-with-slug-analysis.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi del Pacchetto Filament Title With Slug

@@ -1,22 +1,15 @@
 {
     "name": "Notify",
     "alias": "notify",
-<<<<<<< HEAD
     "description": "Gestione delle notifiche multicanale (email, SMS, WhatsApp, Telegram, FCM push): template, log, contatti e temi.",
     "keywords": [],
     "priority": 0,
     "active": 1,
     "order": 0,
-=======
-    "description": "",
-    "keywords": [],
-    "priority": 0,
->>>>>>> laraxot/dev
     "providers": [
         "Modules\\Notify\\Providers\\NotifyServiceProvider",
         "Modules\\Notify\\Providers\\Filament\\AdminPanelProvider"
     ],
-<<<<<<< HEAD
     "aliases": {},
     "files": [],
     "requires": [
@@ -29,9 +22,3 @@
     ],
     "phpVersion": "^8.3"
 }
-=======
-    "aliases": [],
-    "files": [],
-    "requires": []
-}
->>>>>>> laraxot/dev

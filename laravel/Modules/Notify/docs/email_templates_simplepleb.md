@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "email templates simplepleb"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: email-templates-simplepleb.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Approfondimento: simplepleb/laravel-email-templates

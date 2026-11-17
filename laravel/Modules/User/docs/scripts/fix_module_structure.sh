@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: fix_module_structure
@@ -6,7 +5,6 @@ canonical: ../../../../Themes/docs/shared-components/fix-module-structure.sh
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/fix-module-structure.sh
-=======
 #!/bin/bash
 
 # Configurazione
@@ -148,4 +146,3 @@ main() {
 
 # Esegui lo script
 main 
->>>>>>> 6ed19256f (.)

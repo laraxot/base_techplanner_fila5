@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "claude theme dev"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # CLAUDE Theme Development
@@ -38,18 +35,6 @@ Il Meetup theme è una **VERSIONE MIGLIORATA** di laravelpizza.com usando Tailwi
 Il tema deve far dire "WOW!" ai visitatori.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "claude theme dev"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "claude theme dev"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Setup & Build
 
 ```bash
@@ -60,11 +45,8 @@ npm run dev
 
 # Production build
 npm run build
-<<<<<<< HEAD
 <<<<<<< .merge_file_20p8Vb
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_RJQYYB
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev
@@ -115,8 +97,5 @@ ForecastController@index   ← FORBIDDEN!
 
 - [Indice CLAUDE](./claude-split-index.md)
 - [CLAUDE.md originale](../../CLAUDE.md)
-<<<<<<< HEAD
 - [CLAUDE.md originale](../CLAUDE.md)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md)

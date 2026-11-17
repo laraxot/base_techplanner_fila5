@@ -16,10 +16,7 @@ related:
   - "./commit-message.md"
   - "./configuration.md"
   - "./design-comuni-bmad-master-plan.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Theme Detection System - Notify Fila5
@@ -269,11 +266,8 @@ npm install
 npm run build
 
 # 4. Copy to public_html
-<<<<<<< HEAD
 <<<<<<< .merge_file_v3pPQR
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_miOH3I
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev
@@ -420,18 +414,11 @@ new class extends Component {
 
 ### Internal Documents
 
-<<<<<<< HEAD
 - → [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md) - Layout hierarchy
 - → [Page Component Architecture](Modules/Cms/docs/PAGE_COMPONENT_architecture.md) - Page component
 - → [Vite Build System](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md) - Build process
 - → [Master Index](docs/module-docs-index.md) - Central navigation
 - → [Master Index](../module-docs-index.md) - Central navigation
-=======
-- → [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md) - Layout hierarchy
-- → [Page Component Architecture](Modules/Cms/docs/PAGE_COMPONENT_architecture.md) - Page component
-- → [Vite Build System](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md) - Build process
-- → [Master Index](docs/module-docs-index.md) - Central navigation
->>>>>>> laraxot/dev
 
 ### External Resources
 
@@ -513,12 +500,8 @@ pages/tests/amministrazione.blade.php # SBAGLIATO
 - [ ] `composer update -W` executed
 - [ ] `npm install` executed
 - [ ] `npm run build` executed
-<<<<<<< HEAD
 <<<<<<< .merge_file_v3pPQR
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-=======
-- [ ] `public_html/themes/<Tema>` e' un symlink a `laravel/Themes/<Tema>/public` (`npm run copy` dismesso)
->>>>>>> .merge_file_miOH3I
 =======
 - [ ] `symlink public_html/themes (npm run copy obsoleto)` executed
 - [ ] `public_html/themes/<Tema>` e' un symlink a `laravel/Themes/<Tema>/public` (`npm run copy` dismesso)

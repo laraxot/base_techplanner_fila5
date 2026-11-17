@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "correzioni phpstan completate 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "correzioni phpstan completate 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Correzioni PHPStan Completate - Modulo Notify
 
 ## 1. Introduzione
@@ -61,11 +47,7 @@ Configurazione dell'IDE per evidenziare i marker di conflitto Git.
 - Tutti i conflitti Git risolti
 - PHPStan livello 0 senza errori di sintassi
 <<<<<<< HEAD
-<<<<<<< HEAD
 - Migliorata qualità del codice
-=======
-- Migliorata qualità del codice
->>>>>>> 6ed19256f (.)
 =======
 - Migliorata qualità del codice
 >>>>>>> laraxot/dev

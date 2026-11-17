@@ -16,10 +16,7 @@ related:
   - "./configuration.md"
   - "./design-comuni-bmad-master-plan.md"
   - "./docs-governance.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # ✅ AI Skills & Plugins - COMPLETE

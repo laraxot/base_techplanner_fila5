@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "spatie mail templates structure"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: spatie-mail-templates-structure.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Spatie Mail Templates: Struttura Corretta

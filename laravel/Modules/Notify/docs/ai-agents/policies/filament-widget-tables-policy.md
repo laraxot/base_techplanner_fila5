@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament widget tables policy"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Filament Widget Tables Policy

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "configuration architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: configuration-architecture.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura delle Configurazioni nei Moduli Laravel

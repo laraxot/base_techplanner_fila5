@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_FScpYe
 ---
 title: "COMMANDS"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_gWwJLt
 # GSD (Get Shit Done) - Command Reference
 
 **Version**: 1.0.0
@@ -20,7 +17,6 @@ discussions: []
 
 ---
 
-<<<<<<< .merge_file_FScpYe
 title: "COMMANDS"
 type: note
 tags: [documentation]
@@ -29,8 +25,6 @@ updated: 2026-09-26
 qmd: "COMMANDS"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_gWwJLt
 ## 🚀 Essential Commands
 
 ### Project Initialization

@@ -2,11 +2,7 @@
 qmd: "xotbase table columns enforcement"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "XotBaseResourceTable Columns Enforcement: Notify Module"
-=======
-title: "XotBaseResourceTable Columns Enforcement — Notify Module"
->>>>>>> laraxot/dev
 type: concept
 sources: []
 confidence: high
@@ -15,10 +11,7 @@ updated: 2026-05-07
 tags: [xotbase, filament, tables, enforcement]
 related:
   - ../../../../../../docs/wiki/concepts/xotbase-table-columns-enforcement.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notify Module: XotBaseResourceTable Columns

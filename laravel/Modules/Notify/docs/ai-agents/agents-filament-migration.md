@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "agents filament migration"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # AGENTS Filament Migration
@@ -27,18 +24,6 @@ Guida alla migrazione da Filament v3/v4 a v5.
 | Tailwind CSS v4.0+ | ❌ v3 - DA AGGIORNARE | ✅ |
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "agents filament migration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents filament migration"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Migration Process
 
 ```bash
@@ -93,9 +78,6 @@ composer remove filament/upgrade --dev
 - [filament-patterns.md](./filament-patterns.md) - Pattern Filament
 - [AGENTS.md originale](../../AGENTS.md)
 - [agents.md originale](../../agents.md)
-<<<<<<< HEAD
 - [AGENTS.md originale](../AGENTS.md)
 - [agents.md originale](../agents.md)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md)

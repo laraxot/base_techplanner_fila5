@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "path conventions 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "path conventions 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Convenzioni sui Percorsi
 
 ## Regole Fondamentali
@@ -22,9 +8,6 @@ discussions: []
 
 2. **Struttura Directory Principale**
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
    - `Modules/Notify/app/` (CORRETTO)
    - `Modules/Notify/App/` (ERRATO)
 
@@ -35,19 +18,6 @@ discussions: []
 4. **Struttura Directory Datas**
    - `Modules/Notify/app/Datas/` (CORRETTO)
    - `Modules/Notify/App/Datas/` (ERRATO)
-<<<<<<< HEAD
-=======
-   - `/var/www/html/saluteora/laravel/Modules/Notify/app/` (CORRETTO)
-   - `/var/www/html/saluteora/laravel/Modules/Notify/App/` (ERRATO)
-
-3. **Struttura Directory Actions**
-   - `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/` (CORRETTO)
-   - `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/` (ERRATO)
-
-4. **Struttura Directory Datas**
-   - `/var/www/html/saluteora/laravel/Modules/Notify/app/Datas/` (CORRETTO)
-   - `/var/www/html/saluteora/laravel/Modules/Notify/App/Datas/` (ERRATO)
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 
@@ -64,13 +34,8 @@ discussions: []
 
 1. **Mai utilizzare la "A" maiuscola nel percorso fisico della directory app**
 <<<<<<< HEAD
-<<<<<<< HEAD
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
-=======
-   - ✅ CORRETTO: `/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/`
-   - ❌ ERRATO: `/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/`
->>>>>>> 6ed19256f (.)
 =======
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`

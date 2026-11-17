@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "appointment field naming issues"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Appointment Field Naming Issues

@@ -8,16 +8,10 @@ type: report
 module: Notify
 updated: 2026-09-01
 qmd: "cosa migliorare notify phpstan phpmd phpinsights coverage debito priorita"
-<<<<<<< HEAD
 status: draft
 ---
 
 # Cosa migliorare: modulo Notify
-=======
----
-
-# Cosa migliorare — modulo Notify
->>>>>>> laraxot/dev
 
 Ogni affermazione qui sotto viene da un comando eseguito il 1 settembre 2026, dopo il
 ripristino di `vendor/` a 330 pacchetti. Le misure precedenti a quella data giravano su
@@ -29,15 +23,9 @@ un autoloader dimezzato e non valgono.
 |---|---:|
 | Errori PHPStan (modulo isolato) | 0 |
 | Rilievi PHPMD su `app/` | 191 |
-<<<<<<< HEAD
 | PHPInsights: Code | 91.8 % |
 | PHPInsights: Architecture | 85.7 % |
 | PHPInsights: Style | 87.7 % |
-=======
-| PHPInsights — Code | 91.8 % |
-| PHPInsights — Architecture | 85.7 % |
-| PHPInsights — Style | 87.7 % |
->>>>>>> laraxot/dev
 | File PHP | 703 |
 | Casi di test | 823 |
 | Casi di test per file | 1.17 |
@@ -48,11 +36,7 @@ un autoloader dimezzato e non valgono.
 
 ## Il quadro
 
-<<<<<<< HEAD
 Notify ha **823 casi di test**: il secondo numero più alto del progetto: e una
-=======
-Notify ha **823 casi di test** — il secondo numero più alto del progetto — e una
->>>>>>> laraxot/dev
 coverage del **6,3 %**.
 
 Questo è il paradosso più interessante del repo, e vale la pena capirlo prima di
@@ -87,8 +71,5 @@ php -r 'echo count(require "vendor/composer/autoload_classmap.php");'   # ~25358
 ```
 
 Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](../../../../docs/quality-audit.md).
-<<<<<<< HEAD
 Quadro comparativo di tutte le unità: [`docs/quality-audit.md`](quality-audit.md).
-=======
->>>>>>> laraxot/dev
 

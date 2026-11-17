@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "netfun config requirements"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Requisiti di Configurazione per Netfun SMS
@@ -100,29 +97,14 @@ NETFUN_API_URL=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 
 - [Struttura Standardizzata della Configurazione SMS](./STANDARDIZED_SMS_CONFIG_STRUCTURE.md)
 - [Canale SMS Netfun](./SMS_NETFUN_CHANNEL.md)
-<<<<<<< HEAD
 - [Struttura Standardizzata della Configurazione SMS](./standardized_sms_config_structure.md)
 - [Canale SMS Netfun](./sms_netfun_channel.md)
-=======
->>>>>>> laraxot/dev
 
 ## Supporto
 
 Per problemi di configurazione o domande sull'integrazione con Netfun, consultare la documentazione ufficiale di Netfun o contattare il team di supporto.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "netfun config requirements"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "netfun config requirements"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Ultimo aggiornamento: 2025-05-12*
 
 ## 2. Esempio di .env
@@ -172,11 +154,8 @@ NETFUN_ENDPOINT=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 
 - [Documentazione Completa Netfun Channel](./SMS_NETFUN_CHANNEL.md)
 - [Esempi di Utilizzo Netfun](./NETFUN_EXAMPLES.md)
-<<<<<<< HEAD
 - [Documentazione Completa Netfun Channel](./sms_netfun_channel.md)
 - [Esempi di Utilizzo Netfun](./netfun_examples.md)
-=======
->>>>>>> laraxot/dev
 - [Risoluzione Conflitti Netfun](./netfunchannel_conflict_resolution.md)
 
 ---

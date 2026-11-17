@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "conflict resolution smsdriverenum"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Risoluzione Conflitto SmsDriverEnum
@@ -233,12 +230,9 @@ enum SmsDriverEnum: string implements HasLabel, HasIcon, HasColor
 - [Notify Module](../readme.md)
 - [SMS Configuration](../sms-configuration.md)
 - [Translation Standards](../../lang/docs/translation-standards.md)
-<<<<<<< HEAD
 - [Notify Module](../README.md)
 - [SMS Configuration](../sms-configuration.md)
 - [Translation Standards](../../Lang/docs/translation-standards.md)
-=======
->>>>>>> laraxot/dev
 - [Filament Integration](../../xot/docs/filament-translations.md)
 
 ## Note per Sviluppatori Futuri

@@ -7,38 +7,17 @@ updated: 2026-09-26
 qmd: "custom charts troubleshooting"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Custom Charts Troubleshooting Guide
 
-<<<<<<< HEAD
 **Version**: 1.0.0
 **Last Updated**: 2026-03-17
 **Status**: ✅ Active
 **Complexity**: All Levels
 
 ---
-=======
-**Version**: 1.0.0  
-**Last Updated**: 2026-03-17  
-**Status**: ✅ Active  
-**Complexity**: All Levels
-
----
-
-title: "custom charts troubleshooting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "custom charts troubleshooting"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Quick Reference
 
 | Error | Severity | Quick Fix |
@@ -71,11 +50,7 @@ CRITICAL ❗
 ```
 #0 vendor/spatie/laravel-data/src/DataPipes/CastPropertiesDataPipe.php:113
 #1 vendor/spatie/laravel-data/src/Resolvers/DataFromArrayResolver.php:97
-<<<<<<< HEAD
 #2 Modules/<nome progetto>/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
-=======
-#2 Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
->>>>>>> laraxot/dev
 #2 Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
 ```
 
@@ -102,11 +77,7 @@ return new AnswersChartData(
 ### Verification
 ```bash
 # Check for ChartData objects
-<<<<<<< HEAD
 grep -r "new ChartData" Modules/<nome progetto>/app/Actions/QuestionChart/Custom/
-=======
-grep -r "new ChartData" Modules/Quaeris/app/Actions/QuestionChart/Custom/
->>>>>>> laraxot/dev
 grep -r "new ChartData" Modules/App/app/Actions/QuestionChart/Custom/
 
 # Should return: (empty)
@@ -123,11 +94,7 @@ grep -r "new ChartData" Modules/App/app/Actions/QuestionChart/Custom/
 ### Error Message
 ```
 SQLSTATE[42S02]: Base table or view not found: 1146
-<<<<<<< HEAD
 Table '<nome progetto>_survey.contacts' doesn't exist
-=======
-Table 'quaeris_survey.contacts' doesn't exist
->>>>>>> laraxot/dev
 Table 'app_survey.contacts' doesn't exist
 ```
 
@@ -140,11 +107,7 @@ CRITICAL ❗
 
 ### Database Map
 ```
-<<<<<<< HEAD
 <nome progetto>_data (Connection: '<nome progetto>')
-=======
-quaeris_data (Connection: 'quaeris')
->>>>>>> laraxot/dev
 app_data (Connection: 'this-project')
 ├── contacts          ← This table
 ├── survey_pdfs
@@ -157,11 +120,7 @@ limesurvey (Connection: 'limesurvey')
 ```
 
 ### Root Cause
-<<<<<<< HEAD
 Query uses `limesurvey` connection, but `contacts` table is in `<nome progetto>_data`
-=======
-Query uses `limesurvey` connection, but `contacts` table is in `quaeris_data`
->>>>>>> laraxot/dev
 Query uses `limesurvey` connection, but `contacts` table is in `app_data`
 
 ### Solution
@@ -178,11 +137,7 @@ public function getSmsAnswers(...) {
     $answers = Contact::where('survey_pdf_id', $questionChart->survey_pdf_id)
         ->where('sms_count', '!=', 0)
         ->get();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return AnswerData::collect($answers->toArray(), DataCollection::class);
 }
 ```
@@ -190,11 +145,7 @@ public function getSmsAnswers(...) {
 ### Verification
 ```bash
 # Check for cross-database joins
-<<<<<<< HEAD
 grep -r "getConnection()->getDatabaseName()" Modules/<nome progetto>/app/Actions/QuestionChart/Custom/
-=======
-grep -r "getConnection()->getDatabaseName()" Modules/Quaeris/app/Actions/QuestionChart/Custom/
->>>>>>> laraxot/dev
 grep -r "getConnection()->getDatabaseName()" Modules/App/app/Actions/QuestionChart/Custom/
 
 # Should return: (empty)
@@ -213,11 +164,7 @@ grep -r "getConnection()->getDatabaseName()" Modules/App/app/Actions/QuestionCha
 ```
 SQLSTATE[42000]: Syntax error or access violation: 1055
 Expression #2 of SELECT list is not in GROUP BY clause
-<<<<<<< HEAD
 and contains nonaggregated column '<nome progetto>_data.contacts.sms_sent_at'
-=======
-and contains nonaggregated column 'quaeris_data.contacts.sms_sent_at'
->>>>>>> laraxot/dev
 and contains nonaggregated column 'app_data.contacts.sms_sent_at'
 which is not functionally dependent on columns in GROUP BY clause;
 this is incompatible with sql_mode=only_full_group_by
@@ -236,11 +183,7 @@ MySQL `only_full_group_by` mode requires all SELECT columns in GROUP BY
 ### SQL Analysis
 ```sql
 -- Problematic Query
-<<<<<<< HEAD
 SELECT
-=======
-SELECT 
->>>>>>> laraxot/dev
     DATE_FORMAT(sms_sent_at, '%Y-%b') as label,  -- Expression #1 ✅
     DATE_FORMAT(sms_sent_at, '%Y-%m') as _sort,  -- Expression #2 ❌ NOT IN GROUP BY
     COUNT(*) as value                             -- Aggregated ✅
@@ -248,20 +191,12 @@ FROM contacts
 GROUP BY DATE_FORMAT(sms_sent_at, '%Y-%b')        -- Missing Expression #2!
 
 -- Fixed Query
-<<<<<<< HEAD
 SELECT
-=======
-SELECT 
->>>>>>> laraxot/dev
     DATE_FORMAT(sms_sent_at, '%Y-%b') as label,
     DATE_FORMAT(sms_sent_at, '%Y-%m') as _sort,
     COUNT(*) as value
 FROM contacts
-<<<<<<< HEAD
 GROUP BY
-=======
-GROUP BY 
->>>>>>> laraxot/dev
     DATE_FORMAT(sms_sent_at, '%Y-%b'),            -- ✅ Expression #1
     DATE_FORMAT(sms_sent_at, '%Y-%m')             -- ✅ Expression #2
 ```
@@ -278,11 +213,7 @@ GROUP BY
 ### Verification
 ```bash
 # Check groupByRaw usage
-<<<<<<< HEAD
 grep -n "groupByRaw" Modules/<nome progetto>/app/Actions/QuestionChart/Custom/SmsResponseRate.php
-=======
-grep -n "groupByRaw" Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php
->>>>>>> laraxot/dev
 grep -n "groupByRaw" Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php
 
 # Should show both expressions included
@@ -320,13 +251,8 @@ HIGH ⚠️
 return new AnswersChartData(answers: $data);
 
 // AFTER
-<<<<<<< HEAD
 $answersArray = $data instanceof DataCollection
     ? $data->toArray()
-=======
-$answersArray = $data instanceof DataCollection 
-    ? $data->toArray() 
->>>>>>> laraxot/dev
     : (is_array($data) ? $data : []);
 
 return new AnswersChartData(answers: $answersArray);
@@ -335,11 +261,7 @@ return new AnswersChartData(answers: $answersArray);
 ### Verification
 ```bash
 # Check for DataCollection usage
-<<<<<<< HEAD
 grep -n "AnswersChartData::from" Modules/<nome progetto>/app/Actions/QuestionChart/Custom/*.php
-=======
-grep -n "AnswersChartData::from" Modules/Quaeris/app/Actions/QuestionChart/Custom/*.php
->>>>>>> laraxot/dev
 grep -n "AnswersChartData::from" Modules/App/app/Actions/QuestionChart/Custom/*.php
 
 # All should use ->toArray()
@@ -429,11 +351,7 @@ php artisan view:clear
 #### Step 4: Check Database
 ```sql
 -- Verify data exists
-<<<<<<< HEAD
 SELECT COUNT(*) FROM contacts
-=======
-SELECT COUNT(*) FROM contacts 
->>>>>>> laraxot/dev
 WHERE survey_pdf_id = 16 AND sms_count != 0;
 ```
 
@@ -562,11 +480,7 @@ Contact::query()->chunk(100, function ($contacts) {
 ### Run All Tests
 ```bash
 cd laravel
-<<<<<<< HEAD
 ./vendor/bin/pest Modules/<nome progetto>/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
-=======
-./vendor/bin/pest Modules/Quaeris/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
->>>>>>> laraxot/dev
 ./vendor/bin/pest Modules/App/tests/Unit/Actions/QuestionChart/CustomQuestionTypesTest.php
 ```
 
@@ -578,7 +492,6 @@ cd laravel
 ### Check Code Quality
 ```bash
 # PHPStan
-<<<<<<< HEAD
 ./vendor/bin/phpstan analyse Modules/<nome progetto>/app/Actions/QuestionChart/Custom/
 
 # Pint (formatting)
@@ -592,21 +505,6 @@ XDEBUG_MODE=off ./vendor/bin/pest --coverage Modules/<nome progetto>/tests/
 
 # Tests with coverage
 XDEBUG_MODE=off ./vendor/bin/pest --coverage Modules/<nome progetto>/tests/
-=======
-./vendor/bin/phpstan analyse Modules/Quaeris/app/Actions/QuestionChart/Custom/
-
-# Pint (formatting)
-./vendor/bin/pint Modules/Quaeris/app/Actions/QuestionChart/Custom/
-
-# Tests with coverage
-XDEBUG_MODE=off ./vendor/bin/pest --coverage Modules/Quaeris/tests/
-
-# Pint (formatting)
-./vendor/bin/pint Modules/Quaeris/app/Actions/QuestionChart/Custom/
-
-# Tests with coverage
-XDEBUG_MODE=off ./vendor/bin/pest --coverage Modules/Quaeris/tests/
->>>>>>> laraxot/dev
 ```
 
 ### Manual Testing URLs
@@ -635,11 +533,7 @@ echo "✅ All caches cleared"
 ### Check File Sizes
 ```bash
 #!/bin/bash
-<<<<<<< HEAD
 for file in Modules/<nome progetto>/app/Actions/QuestionChart/Custom/*.php; do
-=======
-for file in Modules/Quaeris/app/Actions/QuestionChart/Custom/*.php; do
->>>>>>> laraxot/dev
 for file in Modules/App/app/Actions/QuestionChart/Custom/*.php; do
     lines=$(wc -l < "$file")
     if [ $lines -gt 200 ]; then
@@ -653,11 +547,7 @@ done
 ### Find ChartData Objects
 ```bash
 #!/bin/bash
-<<<<<<< HEAD
 grep -r "new ChartData" Modules/<nome progetto>/app/Actions/QuestionChart/Custom/
-=======
-grep -r "new ChartData" Modules/Quaeris/app/Actions/QuestionChart/Custom/
->>>>>>> laraxot/dev
 grep -r "new ChartData" Modules/App/app/Actions/QuestionChart/Custom/
 if [ $? -eq 0 ]; then
     echo "❌ Found ChartData objects - replace with arrays!"
@@ -676,13 +566,8 @@ fi
 - Session Memory: `.kilo/memories/session-2026-03-17-custom-charts-deep.md`
 
 ### GitHub
-<<<<<<< HEAD
 - Issue #97: https://github.com/laraxot/base_<nome progetto>_fila5/issues/97
 - Issue #97: https://github.com/laraxot/base_ptvx_fila5/issues/97
-=======
-- Issue #97: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
-- Issue #97: https://github.com/laraxot/base_ptvx_fila5_mono/issues/97
->>>>>>> laraxot/dev
 - All 8 comments with fixes
 
 ### Team Contacts
@@ -692,13 +577,7 @@ fi
 
 ---
 
-<<<<<<< HEAD
 **Last Review**: 2026-03-17
 **Next Review**: 2026-03-24
 **Maintainer**: Development Team
-=======
-**Last Review**: 2026-03-17  
-**Next Review**: 2026-03-24  
-**Maintainer**: Development Team  
->>>>>>> laraxot/dev
 **Status**: ✅ Active and Complete

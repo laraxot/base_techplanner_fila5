@@ -8,11 +8,7 @@ qmd: "final-refactoring-report 🐮 super mucca - final refactoring report"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
   - "./2025-excellence-achievement.md"
-=======
-  - "./excellence-achievement.md"
->>>>>>> laraxot/dev
   - "./agid-implementation-guide.md"
   - "./architecture.md"
   - "./complete-refactoring-analysis.md"
@@ -20,25 +16,15 @@ related:
   - "./final-implementation-report-.md"
   - "./final-implementation-report-1.md"
   - "./final-implementation-report.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🐮 Super Mucca - Final Refactoring Report
 
-<<<<<<< HEAD
 **Project:** base_fixcity_fila5
 **Project:** base_ptvx_fila5
 **Date:** 2025-10-01
 **Analyzer:** Super Mucca 🐮
-=======
-**Project:** base_fixcity_fila5_mono  
-**Project:** base_ptvx_fila5_mono  
-**Date:** 2025-10-01  
-**Analyzer:** Super Mucca 🐮  
->>>>>>> laraxot/dev
 **Status:** ✅ **SUCCESSFULLY COMPLETED**
 
 ---
@@ -570,10 +556,7 @@ Successfully analyzed and refactored the entire codebase, reducing cyclomatic co
 - [Xot Module Refactoring Plan](../Modules/Xot/docs/refactoring/cyclomatic-complexity-refactoring-plan.md)
 - [Xot Module Refactoring Report](../Modules/Xot/docs/refactoring/artisan-service-refactoring-report.md)
 - [Cyclomatic Complexity Summary](../docs/cyclomatic-complexity-summary.md)
-<<<<<<< HEAD
 - [Cyclomatic Complexity Summary](../cyclomatic-complexity-summary.md)
-=======
->>>>>>> laraxot/dev
 
 ### Tools
 
@@ -607,15 +590,9 @@ The codebase is now **more maintainable**, **more testable**, and **more extensi
 
 ## 📝 Sign-Off
 
-<<<<<<< HEAD
 **Prepared by:** Super Mucca 🐮
 **Date:** 2025-10-01
 **Status:** ✅ COMPLETED
-=======
-**Prepared by:** Super Mucca 🐮  
-**Date:** 2025-10-01  
-**Status:** ✅ COMPLETED  
->>>>>>> laraxot/dev
 **Next Review:** 2025-10-08
 
 **Approved by:**

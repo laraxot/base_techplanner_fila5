@@ -8,10 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Setup strumenti qualità codice
@@ -20,11 +17,7 @@ status: draft
 
 **NON modificare mai** `laravel/phpstan.neon`. Le correzioni vanno fatte solo nel codice sorgente.
 
-<<<<<<< HEAD
 ## PHPMD e PHPInsights: SOLO formato .phar
-=======
-## PHPMD e PHPInsights — SOLO formato .phar
->>>>>>> laraxot/dev
 
 **Regola**: PHPMD e PHPInsights **NON** vanno installati con Composer. Si usano in formato **.phar** e si invocano con php phpmd.phar e php phpinsights.phar.
 
@@ -43,11 +36,7 @@ status: draft
 
 ### PHPInsights
 
-<<<<<<< HEAD
 - **Installazione**: Build locale con box: vedi [phpinsights-phar-build](phpinsights-phar-build.md)
-=======
-- **Installazione**: Build locale con box — vedi [phpinsights-phar-build](phpinsights-phar-build.md)
->>>>>>> laraxot/dev
 - **Build**: `cd laravel/tools/build-phpinsights && ./build.sh`
 - **Comando**: `cd laravel && php tools/phpinsights.phar analyse Modules --no-interaction`
 

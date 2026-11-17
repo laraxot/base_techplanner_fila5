@@ -8,10 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Mixed (tipo di dato) - Solo come Ultima Spiaggia
@@ -32,7 +29,4 @@ status: draft
 - [filament-array-typing.mdc](../.cursor/rules/filament-array-typing.mdc)
 - [critical-rules-and-memories](../laravel/Modules/Xot/docs/critical-rules-and-memories.md)
 - [agents.md](../agents.md)
-<<<<<<< HEAD
 - [agents.md](../../agents.md)
-=======
->>>>>>> laraxot/dev

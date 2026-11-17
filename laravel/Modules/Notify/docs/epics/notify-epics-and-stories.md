@@ -7,10 +7,7 @@ type: user_stories
 tags: [user stories, epics, notify]
 created: 2026-08-04
 updated: 2026-08-04
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Notify Epics and User Stories
 

@@ -10,20 +10,14 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Media\Models\Media;
-<<<<<<< HEAD
 use Modules\Notify\Database\Factories\MailTemplateLogFactory;
-=======
->>>>>>> laraxot/dev
 use Modules\Notify\Models\Traits\MailTemplateLogRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
 
 /**
-<<<<<<< HEAD
  * @method static MailTemplateLogFactory factory($count = null, $state = [])
  *
-=======
->>>>>>> laraxot/dev
  * @property int|null $template_id
  * @property string|null $mailable_type
  * @property int|string|null $mailable_id
@@ -53,10 +47,7 @@ class MailTemplateLog extends BaseModel
 {
     use MailTemplateLogRelations;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> laraxot/dev
     protected $fillable = [
         'template_id',
         'mailable_type',

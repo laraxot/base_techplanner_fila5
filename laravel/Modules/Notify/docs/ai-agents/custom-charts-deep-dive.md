@@ -7,15 +7,11 @@ updated: 2026-09-26
 qmd: "custom charts deep dive"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Custom Question Types - Deep Dive Technical Guide
 
-<<<<<<< HEAD
 **Version**: 1.0.0
 **Last Updated**: 2026-03-17
 **Status**: ✅ Production Ready
@@ -23,24 +19,6 @@ status: draft
 **Prerequisites**: Laravel 12, Filament 5, Spatie Laravel Data, MySQL 8.0+
 
 ---
-=======
-**Version**: 1.0.0  
-**Last Updated**: 2026-03-17  
-**Status**: ✅ Production Ready  
-**Complexity**: Advanced  
-**Prerequisites**: Laravel 12, Filament 5, Spatie Laravel Data, MySQL 8.0+
-
----
-
-title: "custom charts deep dive"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "custom charts deep dive"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Table of Contents
 
 1. [Executive Summary](#executive-summary)
@@ -61,11 +39,7 @@ discussions: []
 
 ### What Are Custom Question Types?
 
-<<<<<<< HEAD
 Custom question types are specialized data processing actions for <nome progetto> survey analytics that handle complex business logic not covered by standard LimeSurvey queries. They enable:
-=======
-Custom question types are specialized data processing actions for Quaeris survey analytics that handle complex business logic not covered by standard LimeSurvey queries. They enable:
->>>>>>> laraxot/dev
 Custom question types are specialized data processing actions for App survey analytics that handle complex business logic not covered by standard LimeSurvey queries. They enable:
 
 - **Response rate calculations** (email, SMS)
@@ -76,11 +50,7 @@ Custom question types are specialized data processing actions for App survey ana
 ### Why Custom Implementation?
 
 Standard LimeSurvey queries cannot handle:
-<<<<<<< HEAD
 - Cross-database operations (contacts in `<nome progetto>_data`, surveys in `limesurvey`)
-=======
-- Cross-database operations (contacts in `quaeris_data`, surveys in `limesurvey`)
->>>>>>> laraxot/dev
 - Cross-database operations (contacts in `app_data`, surveys in `limesurvey`)
 - Complex business logic (response rate calculations)
 - Custom grouping and aggregation
@@ -162,11 +132,7 @@ Standard LimeSurvey queries cannot handle:
 **Database Operations**:
 ```sql
 -- Query per question group
-<<<<<<< HEAD
 SELECT
-=======
-SELECT 
->>>>>>> laraxot/dev
     gid,
     COUNT(CASE WHEN answer < 6 THEN 1 END) as low_ratings,
     COUNT(CASE WHEN answer >= 6 THEN 1 END) as high_ratings
@@ -175,22 +141,14 @@ WHERE parent_qid != 0
 GROUP BY gid
 ```
 
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/RootGroupedBf.php`
 
 **Lines**: 125
 
 **Complexity**: Medium
 
-<<<<<<< HEAD
 **Test URL**: `/<nome progetto>/admin/ats/survey-pdfs/16/question-charts/234`
-=======
-**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/234`
->>>>>>> laraxot/dev
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/234`
 
 ---
@@ -215,22 +173,14 @@ WHERE submitdate IS NOT NULL
 AND sent != 'N'
 ```
 
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/MailResponseRate.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php`
 
 **Lines**: 173
 
 **Complexity**: High
 
-<<<<<<< HEAD
 **Test URL**: `/<nome progetto>/admin/ats/survey-pdfs/16/question-charts/192`
-=======
-**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/192`
->>>>>>> laraxot/dev
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/192`
 
 **Footer Output**:
@@ -248,47 +198,29 @@ Totale Invitati: 100 - Rispondenti: 75 - Percentuale di risposta: 75.00%
 
 **Database Operations**:
 ```sql
-<<<<<<< HEAD
 -- Uses Contact model (<nome progetto>_data database)
 -- Uses Contact model (app_data database)
 SELECT
-=======
--- Uses Contact model (quaeris_data database)
--- Uses Contact model (app_data database)
-SELECT 
->>>>>>> laraxot/dev
     DATE_FORMAT(sms_sent_at, '%Y-%b') as label,
     DATE_FORMAT(sms_sent_at, '%Y-%m') as _sort,
     COUNT(*) as value
 FROM contacts
 WHERE survey_pdf_id = 16
 AND sms_count != 0
-<<<<<<< HEAD
 GROUP BY
-=======
-GROUP BY 
->>>>>>> laraxot/dev
     DATE_FORMAT(sms_sent_at, '%Y-%b'),
     DATE_FORMAT(sms_sent_at, '%Y-%m')
 ORDER BY DATE_FORMAT(sms_sent_at, '%Y-%m')
 ```
 
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/SmsResponseRate.php`
 
 **Lines**: 150 (optimized from 473)
 
 **Complexity**: High
 
-<<<<<<< HEAD
 **Test URL**: `/<nome progetto>/admin/ats/survey-pdfs/16/question-charts/191`
-=======
-**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/191`
->>>>>>> laraxot/dev
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/191`
 
 **Key Optimization**: No cross-database joins, uses Contact model directly
@@ -303,35 +235,22 @@ ORDER BY DATE_FORMAT(sms_sent_at, '%Y-%m')
 
 **Implementation**: Combines MailResponseRate + SmsResponseRate
 
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted.php`
 
 **Lines**: 122
 
 **Complexity**: Medium
 
-<<<<<<< HEAD
 **Test URL**: `/<nome progetto>/admin/ats/survey-pdfs/16/question-charts/190`
-=======
-**Test URL**: `/quaeris/admin/ats/survey-pdfs/16/question-charts/190`
->>>>>>> laraxot/dev
 **Test URL**: `/this-project/admin/ats/survey-pdfs/16/question-charts/190`
 
 **Calculation**:
 ```php
 $totalInvited = $mail->totalInvited + $sms->totalInvited;
 $totalResponded = $mail->totalAnswered + $sms->totalAnswered;
-<<<<<<< HEAD
 $responsePercentage = $totalInvited !== 0
     ? $totalResponded * 100 / $totalInvited
-=======
-$responsePercentage = $totalInvited !== 0 
-    ? $totalResponded * 100 / $totalInvited 
->>>>>>> laraxot/dev
     : 100;
 ```
 
@@ -343,11 +262,7 @@ $responsePercentage = $totalInvited !== 0
 
 **Pattern**: `custom:contacts_completed_2`
 
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/ContactsCompleted2.php`
 
 **Lines**: 128
@@ -362,11 +277,7 @@ $responsePercentage = $totalInvited !== 0
 
 **Pattern**: `custom:avg_group_2`
 
-<<<<<<< HEAD
 **File**: `Modules/<nome progetto>/app/Actions/QuestionChart/Custom/AvgGroup2.php`
-=======
-**File**: `Modules/Quaeris/app/Actions/QuestionChart/Custom/AvgGroup2.php`
->>>>>>> laraxot/dev
 **File**: `Modules/App/app/Actions/QuestionChart/Custom/AvgGroup2.php`
 
 **Lines**: 107
@@ -393,11 +304,7 @@ public function execute(
     if (Str::startsWith((string) $q->question, 'custom:')) {
         return $this->handleCustomQuestionType($q, $group_by, $sort_by, $filter);
     }
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     // ... standard processing
 }
 ```
@@ -417,11 +324,7 @@ private function handleCustomQuestionType(...): AnswersChartData
     ];
 
     $customKey = Str::after(strtolower($q->question), 'custom:');
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     foreach ($customActionMap as $key => $actionClass) {
         if (str_contains($customKey, $key)) {
             return app($actionClass)->execute($q, $group_by, $sort_by, $filter);
@@ -471,11 +374,7 @@ Argument #1 ($dataClass) must be of type string, null given
 **Stack Trace**:
 ```
 #0 vendor/spatie/laravel-data/src/DataPipes/CastPropertiesDataPipe.php:113
-<<<<<<< HEAD
 #1 Modules/<nome progetto>/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
-=======
-#1 Modules/Quaeris/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
->>>>>>> laraxot/dev
 #1 Modules/App/app/Actions/QuestionChart/Custom/MailResponseRate.php:50
 ```
 
@@ -516,11 +415,7 @@ Expression #2 of SELECT list is not in GROUP BY clause
 
 **Problematic Query**:
 ```sql
-<<<<<<< HEAD
 SELECT
-=======
-SELECT 
->>>>>>> laraxot/dev
     DATE_FORMAT(col, '%Y-%b') as label,
     DATE_FORMAT(col, '%Y-%m') as _sort,  -- ❌ Not in GROUP BY
     COUNT(*) as value
@@ -530,20 +425,12 @@ GROUP BY DATE_FORMAT(col, '%Y-%b')  -- ❌ Missing _sort
 
 **Fix**:
 ```sql
-<<<<<<< HEAD
 SELECT
-=======
-SELECT 
->>>>>>> laraxot/dev
     DATE_FORMAT(col, '%Y-%b') as label,
     DATE_FORMAT(col, '%Y-%m') as _sort,  -- ✅ Now in GROUP BY
     COUNT(*) as value
 FROM table
-<<<<<<< HEAD
 GROUP BY
-=======
-GROUP BY 
->>>>>>> laraxot/dev
     DATE_FORMAT(col, '%Y-%b'),
     DATE_FORMAT(col, '%Y-%m')  -- ✅ Both expressions
 ```
@@ -580,13 +467,8 @@ Spatie\LaravelData\DataCollection given
 return new AnswersChartData(answers: $data);
 
 // AFTER
-<<<<<<< HEAD
 $answersArray = $data instanceof DataCollection
     ? $data->toArray()
-=======
-$answersArray = $data instanceof DataCollection 
-    ? $data->toArray() 
->>>>>>> laraxot/dev
     : (is_array($data) ? $data : []);
 
 return new AnswersChartData(answers: $answersArray);
@@ -619,21 +501,12 @@ return new AnswersChartData(answers: $answersArray);
 **Error Message**:
 ```
 SQLSTATE[42S02]: Base table or view not found: 1146
-<<<<<<< HEAD
 Table '<nome progetto>_survey.contacts' doesn't exist
 ```
 
 **Root Cause**:
 - `contacts` table exists in `<nome progetto>_data` database
 - Query was using `limesurvey` connection (aka `<nome progetto>_survey`)
-=======
-Table 'quaeris_survey.contacts' doesn't exist
-```
-
-**Root Cause**: 
-- `contacts` table exists in `quaeris_data` database
-- Query was using `limesurvey` connection (aka `quaeris_survey`)
->>>>>>> laraxot/dev
 - Cross-database joins not supported without special config
 
 **Problematic Code**:
@@ -642,11 +515,7 @@ public function withContacts(Builder $builder, string $survey_id): Builder
 {
     $contacts_db = app(Contact::class)->getConnection()->getDatabaseName();
     $survey_table = 'lime_survey_'.$survey_id;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return $builder->join($contacts_db.'.contacts as B', function($join) {
         $join->on('B.token', '=', $survey_table.'.token');
     }); // ❌ Cross-database join
@@ -661,11 +530,7 @@ public function getSmsAnswers(...) {
         ->where('sms_count', '!=', 0)
         ->where('sms_sent_at', '>=', $dateFrom)
         ->where('sms_sent_at', '<=', $dateTo);
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return AnswerData::collect($answers->get()->toArray(), DataCollection::class);
 }
 ```
@@ -734,21 +599,12 @@ public function execute(...): AnswersChartData
 {
     // Process data
     $data = $this->processData();
-<<<<<<< HEAD
 
     // Convert to array
     $answersArray = $data instanceof DataCollection
         ? $data->toArray()
         : ($data ?? []);
 
-=======
-    
-    // Convert to array
-    $answersArray = $data instanceof DataCollection 
-        ? $data->toArray() 
-        : ($data ?? []);
-    
->>>>>>> laraxot/dev
     // Create DTO with array
     return new AnswersChartData(
         chart: [
@@ -781,11 +637,7 @@ public function getSmsAnswers(...): DataCollection
             $q->where('sms_sent_at', '<=', $dateTo);
         })
         ->get();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return AnswerData::collect($answers->toArray(), DataCollection::class);
 }
 ```
@@ -800,31 +652,19 @@ public function getSmsInvited(...): DataCollection
 {
     $group_by_expr = 'DATE_FORMAT(sms_sent_at, "%Y-%b")';
     $sort_by_expr = 'DATE_FORMAT(sms_sent_at, "%Y-%m")';
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     $select = [
         $group_by_expr.' as label',
         $sort_by_expr.' as _sort',
         'count(*) as value',
     ];
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     $rows = $invited
         ->selectRaw(implode(',', $select))
         ->groupByRaw($group_by_expr.', '.$sort_by_expr) // ✅ Both!
         ->orderByRaw($sort_by_expr)
         ->get();
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> laraxot/dev
     return AnswerData::collect($rows->toArray(), DataCollection::class);
 }
 ```
@@ -835,13 +675,8 @@ public function getSmsInvited(...): DataCollection
 /**
  * Safe percentage calculation with division by zero protection
  */
-<<<<<<< HEAD
 $risp_perc = $this->invited_count !== 0
     ? $this->answers_count * 100 / $this->invited_count
-=======
-$risp_perc = $this->invited_count !== 0 
-    ? $this->answers_count * 100 / $this->invited_count 
->>>>>>> laraxot/dev
     : 100;
 
 $footer = sprintf(
@@ -860,11 +695,7 @@ $footer = sprintf(
 
 ```
 ┌─────────────────────┐     ┌─────────────────────┐
-<<<<<<< HEAD
 │   <nome progetto>_data      │     │     limesurvey      │
-=======
-│   quaeris_data      │     │     limesurvey      │
->>>>>>> laraxot/dev
 │   app_data      │     │     limesurvey      │
 │   (MySQL)           │     │     (MySQL)         │
 ├─────────────────────┤     ├─────────────────────┤
@@ -892,17 +723,10 @@ $footer = sprintf(
         'host' => '127.0.0.1',
         // ...
     ],
-<<<<<<< HEAD
 
     'limesurvey' => [
         'driver' => 'mysql',
         'database' => '<nome progetto>_survey', // aka limesurvey
-=======
-    
-    'limesurvey' => [
-        'driver' => 'mysql',
-        'database' => 'quaeris_survey', // aka limesurvey
->>>>>>> laraxot/dev
         'database' => 'app_survey', // aka limesurvey
         'host' => '127.0.0.1',
         // ...
@@ -1090,13 +914,8 @@ it('calculates mail response rate correctly', function (): void {
 - `.kilo/memories/session-2026-03-17-custom-charts.md`
 
 ### GitHub
-<<<<<<< HEAD
 - Issue #97: https://github.com/laraxot/base_<nome progetto>_fila5/issues/97
 - Issue #97: https://github.com/laraxot/base_ptvx_fila5/issues/97
-=======
-- Issue #97: https://github.com/laraxot/base_quaeris_fila5_mono/issues/97
-- Issue #97: https://github.com/laraxot/base_ptvx_fila5_mono/issues/97
->>>>>>> laraxot/dev
 
 ### External Resources
 - [Spatie Laravel Data](https://spatie.be/docs/laravel-data)
@@ -1105,13 +924,7 @@ it('calculates mail response rate correctly', function (): void {
 
 ---
 
-<<<<<<< HEAD
 **Document Version**: 1.0.0
 **Last Review**: 2026-03-17
 **Next Review**: 2026-03-24
-=======
-**Document Version**: 1.0.0  
-**Last Review**: 2026-03-17  
-**Next Review**: 2026-03-24  
->>>>>>> laraxot/dev
 **Maintainer**: Development Team

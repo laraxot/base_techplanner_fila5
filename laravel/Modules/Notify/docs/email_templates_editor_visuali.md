@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "email templates editor visuali"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: email-templates-editor-visuali.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Approfondimento: Editor Visuali ed Esterni (Mailgun, MJML, BeeFree, Stripo, ecc.)

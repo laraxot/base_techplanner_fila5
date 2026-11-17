@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "qwen overview"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # QWEN Overview
@@ -35,18 +32,6 @@ Panoramica e stato attuale del progetto Base Forecast Fila5.
 | Incident Composer | 2026-03-19 | ✅ RISOLTO |
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "qwen overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen overview"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Obiettivo Principale
 
 **Creare la MIGLIORE predict platform di TUTTI i competitors**
@@ -91,8 +76,5 @@ Never: git revert (only forward!)
 
 - [Indice QWEN](./qwen-split-index.md)
 - [QWEN.md originale](../../QWEN.md)
-<<<<<<< HEAD
 - [QWEN.md originale](../QWEN.md)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md)

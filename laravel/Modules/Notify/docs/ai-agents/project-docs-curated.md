@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "project docs curated"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Project Docs Curated Map (Codex)
@@ -22,7 +19,6 @@ Questa mappa e una vista operativa "figlia" della documentazione ufficiale del p
 - `.agents/docs/index.md`
 - `.agents/docs/filament-patterns.md`
 - `.agents/docs/critical-rules.md`
-<<<<<<< HEAD
 - `laravel/Modules/<nome progetto>/docs/index.md`
 - `laravel/Modules/Xot/docs/README.md`
 
@@ -38,32 +34,11 @@ Questa mappa e una vista operativa "figlia" della documentazione ufficiale del p
 - `laravel/Modules/<nome progetto>/docs/livewire-filament-widget-parameters.md`
 - `laravel/Modules/<nome progetto>/docs/widget-property-initialization-pattern.md`
 - `laravel/Modules/<nome progetto>/docs/filament-4-implementation-guide.md`
-=======
-- `laravel/Modules/Quaeris/docs/index.md`
-- `laravel/Modules/Xot/docs/README.md`
-
-## Area chart/question chart (Quaeris)
-
-- `laravel/Modules/Quaeris/docs/question-chart-answers-chart-widget.md`
-- `laravel/Modules/Quaeris/docs/question-chart-answers-triple-chart-widget.md`
-- `laravel/Modules/Quaeris/docs/question-chart-aggregations-guide.md`
-- `laravel/Modules/Quaeris/docs/viewquestionchart-filter-implementation.md`
-
-## Area filtri/dashboard
-
-- `laravel/Modules/Quaeris/docs/livewire-filament-widget-parameters.md`
-- `laravel/Modules/Quaeris/docs/widget-property-initialization-pattern.md`
-- `laravel/Modules/Quaeris/docs/filament-4-implementation-guide.md`
->>>>>>> laraxot/dev
 
 ## Area chart plugin/frontend
 
 - `laravel/Modules/Chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md`
-<<<<<<< HEAD
 - `laravel/Modules/<nome progetto>/docs/chartjs-datalabels-dual-label-fix.md`
-=======
-- `laravel/Modules/Quaeris/docs/chartjs-datalabels-dual-label-fix.md`
->>>>>>> laraxot/dev
 
 ## Note operative Codex
 

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "ROADMAP"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: roadmap.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Project Roadmap

@@ -8,7 +8,6 @@ qmd: "zen-of-documentation 🧘 zen of documentation - complete philosophy"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-<<<<<<< HEAD
    - "./00-index.md"
    - "./00-index-2.md"
    - "./00-index.md"
@@ -26,16 +25,6 @@ related:
    - "./acronym-naming-conventions.md"
    - "./action-plan-immediate.md"
 status: draft
-=======
-   - "./00-index-1.md"
-   - "./00-index-2.md"
-   - "./00-index.md"
-   - "./absolute-completion-100.md"
-   - "./acronym-naming-conventions-1.md"
-   - "./acronym-naming-conventions-2.md"
-   - "./acronym-naming-conventions.md"
-   - "./action-plan-immediate.md"
->>>>>>> laraxot/dev
 ---
 
 # 🧘 Zen of Documentation - Complete Philosophy
@@ -54,20 +43,14 @@ status: draft
 > **Non si torna mai indietro. Si studia il passato per migliorare.**
 
 **Principi**:
-<<<<<<< HEAD
 - ✅ Git forward-only: un cambiamento si corregge scrivendo un nuovo commit in avanti
 - ✅ Mai `git reset`, `git revert`, `git checkout`/`git restore`, `git stash`, `git rebase`
-=======
-- ✅ `git rebase` invece di `git reset`
-- ✅ `git revert` invece di `git checkout <old-commit>`
->>>>>>> laraxot/dev
 - ✅ Studiare commit history per capire decisioni
 - ✅ Documentare lezioni apprese
 - ✅ Mai force-push su branch condivisi
 
 **Comandi**:
 ```bash
-<<<<<<< HEAD
 # ✅ CORRETTO: correggi il file e registra la correzione con un nuovo commit
 git commit -m "fix: correggi il comportamento"
 
@@ -75,12 +58,6 @@ git commit -m "fix: correggi il comportamento"
 git rebase -i HEAD~5
 
 # ❌ SBAGLIATO: annulla con un commit inverso
-=======
-# ✅ CORRETTO: Rebase per pulire history
-git rebase -i HEAD~5
-
-# ✅ CORRETTO: Revert per annullare cambiamenti
->>>>>>> laraxot/dev
 git revert <commit-hash>
 
 # ❌ SBAGLIATO: Reset che distrugge history
@@ -434,20 +411,14 @@ _bmad/threads/zen-documentation.md
 > **Non si torna mai indietro. Si studia il passato per migliorare.**
 
 **Principi**:
-<<<<<<< HEAD
 - ✅ Git forward-only: un cambiamento si corregge scrivendo un nuovo commit in avanti
 - ✅ Mai `git reset`, `git revert`, `git checkout`/`git restore`, `git stash`, `git rebase`
-=======
-- ✅ `git rebase` invece di `git reset`
-- ✅ `git revert` invece di `git checkout <old-commit>`
->>>>>>> laraxot/dev
 - ✅ Studiare commit history per capire decisioni
 - ✅ Documentare lezioni apprese
 - ✅ Mai force-push su branch condivisi
 
 **Comandi**:
 ```bash
-<<<<<<< HEAD
 # ✅ CORRETTO: correggi il file e registra la correzione con un nuovo commit
 git commit -m "fix: correggi il comportamento"
 
@@ -455,12 +426,6 @@ git commit -m "fix: correggi il comportamento"
 git rebase -i HEAD~5
 
 # ❌ SBAGLIATO: annulla con un commit inverso
-=======
-# ✅ CORRETTO: Rebase per pulire history
-git rebase -i HEAD~5
-
-# ✅ CORRETTO: Revert per annullare cambiamenti
->>>>>>> laraxot/dev
 git revert <commit-hash>
 
 # ❌ SBAGLIATO: Reset che distrugge history

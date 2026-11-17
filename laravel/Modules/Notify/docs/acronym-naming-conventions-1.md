@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "acronym naming conventions 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "acronym naming conventions 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Convenzioni di Naming per Acronimi
 
 ## Regola Fondamentale
@@ -97,11 +83,7 @@ Per identificare i file che non rispettano questa convenzione, è possibile util
 
 ```bash
 <<<<<<< HEAD
-<<<<<<< HEAD
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-=======
-find /var/www/html/saluteora/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
->>>>>>> 6ed19256f (.)
 =======
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
 >>>>>>> laraxot/dev

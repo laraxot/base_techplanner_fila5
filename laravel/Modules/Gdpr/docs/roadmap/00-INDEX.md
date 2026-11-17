@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_0e36gf
 ---
 title: "00 INDEX"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_Bo4ic2
 # Roadmap Index - Gdpr
 
 ## Scope

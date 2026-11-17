@@ -5,10 +5,32 @@
 **Versione PHPStan**: 1.12.x  
 **Livello**: max  
 =======
-**Data**: 2025-01-11
-**Versione PHPStan**: 1.12.x
-**Livello**: max
->>>>>>> 6ed19256f (.)
+---
+title: "PHPStan Syntax Fixes - Modulo User"
+type: concept
+tags: [phpstan, syntax, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-syntax-fixes phpstan syntax fixes - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# PHPStan Syntax Fixes - Modulo User
+
+**Data**: 2025-01-11  
+**Versione PHPStan**: 1.12.x  
+**Livello**: max  
+>>>>>>> laraxot/dev
 **Status**: ✅ NAMESPACE ORDERING FIXATO
 
 ## 🔧 Correzione Implementata
@@ -78,8 +100,8 @@ use function Safe\something;      // 4. Function imports
 <<<<<<< HEAD
 use const SOME_CONSTANT;          // 5. Constant imports  
 =======
-use const SOME_CONSTANT;          // 5. Constant imports
->>>>>>> 6ed19256f (.)
+use const SOME_CONSTANT;          // 5. Constant imports  
+>>>>>>> laraxot/dev
 use Some\Class;                    // 6. Class imports
 
 // Blank line
@@ -158,10 +180,10 @@ use App\Models\User;
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../claude.md)
 =======
-- [Analisi Generale PHPStan](../../../project_docs/quality/phpstan-analysis.md)
+- [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../CLAUDE.md)
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev
 
 ## 📝 Note Tecniche
 
@@ -193,8 +215,8 @@ namespace App;
 <<<<<<< HEAD
 // ❌ ERRORE 2: Class import prima del namespace  
 =======
-// ❌ ERRORE 2: Class import prima del namespace
->>>>>>> 6ed19256f (.)
+// ❌ ERRORE 2: Class import prima del namespace  
+>>>>>>> laraxot/dev
 use App\Model;
 namespace App;
 
@@ -217,8 +239,4 @@ use App\Model;
 **Impact**: MEDIO (Bloccava analisi test User)  
 **Standard**: PSR-12 Compliant ✅
 =======
-**Fix Completato**: 2025-01-11
-**Priority**: ALTA
-**Impact**: MEDIO (Bloccava analisi test User)
-**Standard**: PSR-12 Compliant ✅
->>>>>>> 6ed19256f (.)
+>>>>>>> laraxot/dev

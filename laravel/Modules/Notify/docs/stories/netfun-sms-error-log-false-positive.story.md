@@ -17,11 +17,7 @@ metadata:
   updated: 2026-09-22
   repository: "git@github.com:laraxot/module_notify_fila5.git"
   github_issue: "https://github.com/laraxot/module_notify_fila5/issues/76"
-<<<<<<< HEAD
   github_discussion: "https://github.com/laraxot/base_<nome progetto>_fila5/discussions/207"
-=======
-  github_discussion: "https://github.com/laraxot/base_quaeris_fila5/discussions/207"
->>>>>>> laraxot/dev
 ---
 
 # Story: log Netfun SMS a error() anche sugli invii riusciti
@@ -44,70 +40,44 @@ log.
 ## Diagnosi
 
 `Modules/Notify/app/Actions/SMS/SendNetfunSMSAction.php` (creato il
-<<<<<<< HEAD
 2026-07-20, mai toccato su questo punto da allora: non una
-=======
-2026-07-20, mai toccato su questo punto da allora — non una
->>>>>>> laraxot/dev
 regressione, difetto di design presente fin dall'origine del file):
 dopo aver ricevuto la risposta HTTP, il metodo `execute()` chiamava
 incondizionatamente `Log::channel('daily')->error('Netfun SMS
 response', [...])`, senza mai controllare `status_code` né decodificare
 `status_txt`. Netfun risponde sempre con HTTP 200 su richiesta accettata
 async: l'esito reale (successo/errore) è nel campo `error` del body
-<<<<<<< HEAD
 JSON, non nello status HTTP: quindi ogni invio riuscito finiva loggato
-=======
-JSON, non nello status HTTP — quindi ogni invio riuscito finiva loggato
->>>>>>> laraxot/dev
 come errore, e i veri fallimenti HTTP (4xx) non passavano nemmeno da lì
 (finiscono in un'`Exception` rilanciata dal blocco `catch
 (ClientException)` sopra).
 
 In più, il payload loggato includeva `'request' => $body`, con
-<<<<<<< HEAD
 `api_token` (il token Netfun) in chiaro: visibile anche nel log
-=======
-`api_token` (il token Netfun) in chiaro — visibile anche nel log
->>>>>>> laraxot/dev
 incollato dall'utente (troncato lì solo per condividerlo in chat).
 
 Verificato che non fosse un comportamento già discusso/voluto: nessuna
 story, issue o discussion esistente (in `module_notify_fila5`,
-<<<<<<< HEAD
 `module_<nome progetto>_fila5`, `base_<nome progetto>_fila5`) parla del livello di log
 sbagliato: solo di problemi di configurazione ormai risolti (token,
-=======
-`module_quaeris_fila5`, `base_quaeris_fila5`) parla del livello di log
-sbagliato — solo di problemi di configurazione ormai risolti (token,
->>>>>>> laraxot/dev
 driver, sender) o del refactor delle factory SMS/Telegram/WhatsApp
 (discussion [module_notify_fila5#50](https://github.com/laraxot/module_notify_fila5/discussions/50),
 non pertinente a questo punto).
 
 Il pattern corretto esisteva già nel modulo per altri provider (es.
 `Send360dialogWhatsAppAction.php`: `debug()`/`info()` sul successo,
-<<<<<<< HEAD
 `warning()`/`error()` sul fallimento con body decodificato) -
-=======
-`warning()`/`error()` sul fallimento con body decodificato) —
->>>>>>> laraxot/dev
 `SendNetfunSMSAction` era l'eccezione.
 
 ## Fix applicato
 
 In `execute()`:
 - Nuovo metodo privato `isSuccessfulResponse(int $statusCode, string
-<<<<<<< HEAD
   $statusTxt): bool`: successo solo se `status_code` è 2xx **e** il
-=======
-  $statusTxt): bool` — successo solo se `status_code` è 2xx **e** il
->>>>>>> laraxot/dev
   campo `error` del body JSON è `0`/assente (usa `Safe\json_decode`,
   cattura `JsonException` sul body malformato → trattato come
   fallimento).
 - Il log (`Log::channel('daily')->error(...)`) parte **solo** se
-<<<<<<< HEAD
   `isSuccessfulResponse()` è `false`: nessuna riga scritta sui successi
   (né a `debug()` né a `info()`: il progetto vieta `Log::debug()`
  : [[no-log-debug]]: e l'utente ha esplicitamente chiesto zero rumore
@@ -115,53 +85,28 @@ In `execute()`:
 - Nel payload loggato, `api_token` è sostituito con `'***redacted***'`
   prima di finire nel log (`$redactedRequest`, copia di `$body` non
   usata per la chiamata HTTP reale: il token vero resta intatto in
-=======
-  `isSuccessfulResponse()` è `false` — nessuna riga scritta sui successi
-  (né a `debug()` né a `info()`: il progetto vieta `Log::debug()`
-  — [[no-log-debug]] — e l'utente ha esplicitamente chiesto zero rumore
-  sui successi, non solo di scendere a `info()`).
-- Nel payload loggato, `api_token` è sostituito con `'***redacted***'`
-  prima di finire nel log (`$redactedRequest`, copia di `$body` non
-  usata per la chiamata HTTP reale — il token vero resta intatto in
->>>>>>> laraxot/dev
   `$body`).
 
 ## Verifica
 
 Il framework Pest non è risultato eseguibile in questa sessione (fallisce
-<<<<<<< HEAD
 identico anche su un file di test esistente e invariato: problema di
-=======
-identico anche su un file di test esistente e invariato — problema di
->>>>>>> laraxot/dev
 ambiente/DB di test, non di questa modifica). Verificato quindi in altro
 modo:
 - `php -l` pulito su entrambi i file toccati.
 - `phpstan analyse` (livello `max`, config centrale del progetto) pulito
-<<<<<<< HEAD
   su entrambi i file: inclusi i due giri di fix richiesti dal linter
-=======
-  su entrambi i file — inclusi i due giri di fix richiesti dal linter
->>>>>>> laraxot/dev
   stesso (`Safe\json_decode`/`Safe\json_encode` al posto delle funzioni
   native, come da regola `thecodingmachine/safe` già in uso nel resto
   del modulo, es. `Send360dialogWhatsAppAction.php`).
 - Logica di `isSuccessfulResponse()` verificata via reflection (PHP
   diretto, bypassando Pest) contro 4 casi: il payload reale di
   produzione (successo), un payload con `error` valorizzato, uno status
-<<<<<<< HEAD
   HTTP 500, un body JSON malformato: tutti col risultato atteso.
 - Aggiunti gli stessi 4 casi come test Pest in
   `tests/Unit/Actions/SMS/SendNetfunSMSActionTest.php` (il file esisteva
   già ma copriva solo il contratto pubblico via reflection, zero
   comportamento): da far girare in un ambiente dove Pest/DB
-=======
-  HTTP 500, un body JSON malformato — tutti col risultato atteso.
-- Aggiunti gli stessi 4 casi come test Pest in
-  `tests/Unit/Actions/SMS/SendNetfunSMSActionTest.php` (il file esisteva
-  già ma copriva solo il contratto pubblico via reflection, zero
-  comportamento) — da far girare in un ambiente dove Pest/DB
->>>>>>> laraxot/dev
   funzionano, prima di considerare il fix definitivamente confermato
   dalla suite.
 - Redazione del token verificata a mano (l'array originale usato per la
@@ -172,9 +117,5 @@ modo:
 2 file modificati in `module_notify_fila5`
 (`app/Actions/SMS/SendNetfunSMSAction.php`,
 `tests/Unit/Actions/SMS/SendNetfunSMSActionTest.php`), non ancora
-<<<<<<< HEAD
 committati al momento della creazione di questa story: commit su
-=======
-committati al momento della creazione di questa story — commit su
->>>>>>> laraxot/dev
 richiesta esplicita dell'utente, come da [[feedback-confirm-before-implementing]].

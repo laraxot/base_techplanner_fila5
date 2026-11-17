@@ -7,21 +7,13 @@ updated: 2026-09-26
 qmd: "collegamenti"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Collegamenti Documentazione Notify
 
-<<<<<<< HEAD
 - [README Notify](README.md)
 - [Architettura del modulo](ARCHITECTURE.md)
-=======
-- [README Notify](readme.md)
-- [Architettura del modulo](architecture.md)
->>>>>>> laraxot/dev
 - [CRUD Template Email Filament](crud-template-email-filament.md)
 - [Panoramica Template Email](email-template-landscape.md)
 - [Deep Dive Template Email](email-templates-deep-dive.md)

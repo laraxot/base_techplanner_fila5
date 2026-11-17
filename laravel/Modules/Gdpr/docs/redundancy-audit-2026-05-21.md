@@ -1,11 +1,8 @@
 ---
-<<<<<<< .merge_file_ZEJEEH
 updated: 2026-09-26
 qmd: "redundancy audit 2026 05 21"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_8F7I30
 title: "Gdpr redundancy audit 2026-05-21"
 type: audit
 module: Gdpr

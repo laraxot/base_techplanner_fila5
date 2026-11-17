@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "models"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Modelli e Relazioni del Modulo Notify

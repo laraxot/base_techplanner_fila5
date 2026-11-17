@@ -8,10 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Modulo Notify
@@ -451,10 +448,7 @@ tests/Unit
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
 * [structure.md](../../../Gdpr/docs/structure.md)
-<<<<<<< HEAD
 * [structure.md](../../Gdpr/docs/structure.md)
-=======
->>>>>>> laraxot/dev
 * [structure.md](../../../Notify/docs/structure.md)
 * [structure.md](../../../Xot/docs/structure.md)
 * [structure.md](../../../Xot/docs/base/structure.md)
@@ -469,7 +463,6 @@ tests/Unit
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../../Cms/docs/themes/structure.md)
 * [structure.md](../../../Cms/docs/components/structure.md)
-<<<<<<< HEAD
 * [structure.md](../../User/docs/structure.md)
 * [structure.md](../../../UI/docs/structure.md)
 * [structure.md](../../Lang/docs/structure.md)
@@ -480,7 +473,5 @@ tests/Unit
 * [structure.md](../../../Cms/docs/structure.md)
 * [structure.md](../../Cms/docs/themes/structure.md)
 * [structure.md](../../Cms/docs/components/structure.md)
-=======
->>>>>>> laraxot/dev
 
 ---

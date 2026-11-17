@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "qwen split index"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # QWEN.md Split Index
@@ -30,10 +27,7 @@ status: draft
 ## 🔗 Collegamento
 
 - [QWEN.md originale](../../QWEN.md)
-<<<<<<< HEAD
 - [QWEN.md originale](../QWEN.md)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md)
 
 ## Note

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "smtp testing analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Analisi del Sistema di Test SMTP

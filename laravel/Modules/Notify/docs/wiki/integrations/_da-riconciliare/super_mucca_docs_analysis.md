@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: super-mucca-docs-analysis.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🐄 SUPER MUCCA - Analisi Completa Documentazione

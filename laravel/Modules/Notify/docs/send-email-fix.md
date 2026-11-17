@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "send email fix"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: send-email.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Guida alla Correzione di SendEmail.php

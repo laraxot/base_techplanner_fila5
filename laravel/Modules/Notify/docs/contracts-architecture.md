@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "contracts architecture"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Architettura delle Interfacce (Contracts) in Notify

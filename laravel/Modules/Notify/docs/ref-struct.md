@@ -11,10 +11,7 @@ tags: [migrato-da-txt, notify]
 converted_from: ref_struct.txt
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 <body>

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "phase 1 research complete"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # ✅ PHASE 1 - RICERCA COMPLETATA
@@ -20,27 +17,11 @@ status: draft
 **Status**: 🟢 **RICERCA E PIANIFICAZIONE COMPLETE** → Pronto per ESECUZIONE
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "phase 1 research complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phase 1 research complete"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📊 CONSUNTIVO LAVORO SVOLTO
 
 ### Documenti Creati (5 principali)
 
-<<<<<<< HEAD
 1. **phase-1-strategy.md** (22.938 caratteri)
-=======
-1. **PHASE-1-STRATEGY.md** (22.938 caratteri)
->>>>>>> laraxot/dev
    - Analisi architettura Design Comuni
    - Breakdown pagina segnalazioni-elenco
    - Assessment stato FixCity attuale
@@ -49,11 +30,7 @@ discussions: []
    - Pattern traduzioni (corretto: `fixcity::segnalazione.fields.title.label`)
    - Criteri successo e checklist
 
-<<<<<<< HEAD
 2. **gsd-phase-1-execution.md** (19.499 caratteri)
-=======
-2. **GSD-PHASE-1-EXECUTION.md** (19.499 caratteri)
->>>>>>> laraxot/dev
    - 6 subtask con assegnazione owner
    - Istruzioni step-by-step per ogni subtask
    - Expected inputs/outputs
@@ -262,26 +239,16 @@ return [
 **Leggi in questo ordine**:
 
 1. **[00-INDEX.md](laravel/Themes/Sixteen/docs/00-INDEX.md)** - Master index (sei qui, ma online)
-<<<<<<< HEAD
 2. **[PHASE-1-STRATEGY.md](laravel/Themes/Sixteen/docs/phase-1-strategy.md)** - Strategia completa (22k chars)
 3. **[GSD-PHASE-1-EXECUTION.md](laravel/Themes/Sixteen/docs/gsd-phase-1-execution.md)** - Piano esecuzione (19k chars)
-=======
-2. **[PHASE-1-STRATEGY.md](laravel/Themes/Sixteen/docs/PHASE-1-STRATEGY.md)** - Strategia completa (22k chars)
-3. **[GSD-PHASE-1-EXECUTION.md](laravel/Themes/Sixteen/docs/GSD-PHASE-1-EXECUTION.md)** - Piano esecuzione (19k chars)
->>>>>>> laraxot/dev
 4. **[bashscripts/docs/html/INDEX.md](bashscripts/docs/html/INDEX.md)** - Documentazione strumenti
 
 ---
 
 ## ✅ CHECKLIST: PRIMA DI INIZIARE ESECUZIONE
 
-<<<<<<< HEAD
 - [ ] Hai letto phase-1-strategy.md (almeno Executive Summary)
 - [ ] Hai letto gsd-phase-1-execution.md (overview + subtask 1)
-=======
-- [ ] Hai letto PHASE-1-STRATEGY.md (almeno Executive Summary)
-- [ ] Hai letto GSD-PHASE-1-EXECUTION.md (overview + subtask 1)
->>>>>>> laraxot/dev
 - [ ] Sai come avviare Laravel dev server
 - [ ] Sai dove trovano i file (blade, JSON)
 - [ ] Capisci il pattern traduzioni

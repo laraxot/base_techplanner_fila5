@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "quality"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Checklist qualità - Notify Module

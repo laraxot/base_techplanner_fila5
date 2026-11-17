@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "leggi qui domani"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📖 LEGGI QUI DOMANI MATTINA - 2 Ottobre 2025
@@ -18,18 +15,6 @@ status: draft
 Buongiorno! Ecco tutto quello che abbiamo fatto ieri e cosa fare oggi.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "leggi qui domani"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "leggi qui domani"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## ✅ COSA ABBIAMO FATTO IERI (1 Ottobre)
 
 ### 🎉 SUCCESSO STRAORDINARIO: 83% COMPLETATO!
@@ -69,11 +54,7 @@ discussions: []
 
 **Comando verifica**:
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_fixcity_fila5/laravel
-=======
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
->>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse Modules/Xot --memory-limit=-1
 ```
 
@@ -87,11 +68,7 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 # Deve mostrare: [OK] No errors
 ```
 
-<<<<<<< HEAD
 **Se OK**: ✅ Xot completato!
-=======
-**Se OK**: ✅ Xot completato!  
->>>>>>> laraxot/dev
 **Se errori**: Debug e fix
 
 ---
@@ -105,11 +82,7 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 
 **Step 2**: Categorizza errori
 - Property access issues
-<<<<<<< HEAD
 - Type safety issues
-=======
-- Type safety issues  
->>>>>>> laraxot/dev
 - Method calls
 
 **Step 3**: Correggi Models (priorità alta)
@@ -118,10 +91,7 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 - Relations return types
 
 **Guida**: [User Roadmap](../Modules/User/docs/roadmap-and-issues.md)
-<<<<<<< HEAD
 **Guida**: [User Roadmap](../../User/docs/roadmap-and-issues.md)
-=======
->>>>>>> laraxot/dev
 
 ---
 
@@ -153,21 +123,13 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 
 **Verifica Completa**:
 ```bash
-<<<<<<< HEAD
 cd /var/www/_bases/base_fixcity_fila5/laravel
-=======
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
->>>>>>> laraxot/dev
 ./vendor/bin/phpstan analyse Modules --memory-limit=-1
 ```
 
 **Target**: `[OK] No errors` su TUTTI i 18 moduli!
 
-<<<<<<< HEAD
 **Se OK**:
-=======
-**Se OK**: 
->>>>>>> laraxot/dev
 - ✅ Update documentazione finale
 - ✅ Commit tutto
 - ✅ Celebrate! 🎊
@@ -177,11 +139,7 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 ## 📂 DOCUMENTI IMPORTANTI DA LEGGERE
 
 ### Prima di Iniziare (5 minuti)
-<<<<<<< HEAD
 1. **[Session Summary](./phpstan/session-summary.md)** - Recap ieri
-=======
-1. **[Session Summary](./phpstan/session-summary-2025-10-01.md)** - Recap ieri
->>>>>>> laraxot/dev
 
 ### Durante il Lavoro (reference)
 2. **[Xot Roadmap](../Modules/Xot/docs/roadmap-and-issues.md)** - Errori dettagliati Xot
@@ -189,16 +147,12 @@ cd /var/www/_bases/base_fixcity_fila5_mono/laravel
 
 ### Fine Giornata (update)
 4. **[Master Roadmap](./roadmap-master-index.md)** - Aggiornare status
-<<<<<<< HEAD
 5. **[Analisi Completa](./ANALISI-COMPLETA.md)** - Executive summary
 3. **[User Roadmap](../../User/docs/roadmap-and-issues.md)** - Errori dettagliati User
 
 ### Fine Giornata (update)
 4. **[Master Roadmap](./roadmap-master-index.md)** - Aggiornare status
 5. **[Analisi Completa](./analisi-completa-ottobre-data.md)** - Executive summary
-=======
-5. **[Analisi Completa](./ANALISI-COMPLETA-2025-10-01.md)** - Executive summary
->>>>>>> laraxot/dev
 
 ---
 
@@ -248,11 +202,7 @@ php artisan test --filter=BaseUserTest
 - ❌ Non usare `->label()`, `->placeholder()`, `->tooltip()`
 
 ### ✅ Sempre Fare
-<<<<<<< HEAD
 - ✅ Eseguire da `/var/www/_bases/base_fixcity_fila5/laravel/`
-=======
-- ✅ Eseguire da `/var/www/_bases/base_fixcity_fila5_mono/laravel/`
->>>>>>> laraxot/dev
 - ✅ Verificare ogni fix con PHPStan
 - ✅ Usare sempre classi XotBase
 - ✅ Aggiornare docs dopo ogni correzione
@@ -269,15 +219,9 @@ php artisan test --filter=BaseUserTest
 ╚════════════════════════════════════════╝
 ```
 
-<<<<<<< HEAD
 **Da**: 15/18 (83%)
 **A**: 18/18 (100%)
 **Effort**: ~8 ore
-=======
-**Da**: 15/18 (83%)  
-**A**: 18/18 (100%)  
-**Effort**: ~8 ore  
->>>>>>> laraxot/dev
 **Difficulty**: Media (errori già identificati)
 
 ---
@@ -291,11 +235,7 @@ php artisan test --filter=BaseUserTest
 **Soluzione**: Leggi la roadmap del modulo, ha esempi e soluzioni
 
 ### Problem: Non sai come fixare
-<<<<<<< HEAD
 **Soluzione**:
-=======
-**Soluzione**: 
->>>>>>> laraxot/dev
 1. Leggi l'errore completo di PHPStan
 2. Controlla roadmap modulo per pattern simili
 3. Cerca in docs Filament/Laravel
@@ -304,17 +244,10 @@ php artisan test --filter=BaseUserTest
 
 ## 🎉 MOTIVAZIONE
 
-<<<<<<< HEAD
 Ieri abbiamo fatto **83% del lavoro**!
 Oggi facciamo solo il **17% rimanente**.
 
 **Xot**: 9 errori = facile!
-=======
-Ieri abbiamo fatto **83% del lavoro**!  
-Oggi facciamo solo il **17% rimanente**.
-
-**Xot**: 9 errori = facile!  
->>>>>>> laraxot/dev
 **User**: 95 errori = sistematico ma fattibile!
 
 **Ce la facciamo! 💪**
@@ -327,13 +260,8 @@ Ricorda: **Qualità del codice = Qualità del servizio ai cittadini** 🏙️
 
 ---
 
-<<<<<<< HEAD
 **Start**: ore 09:00
 **Target End**: ore 18:00
-=======
-**Start**: ore 09:00  
-**Target End**: ore 18:00  
->>>>>>> laraxot/dev
 **Goal**: 100% PHPStan Compliance
 
 **Let's do this! 🚀**

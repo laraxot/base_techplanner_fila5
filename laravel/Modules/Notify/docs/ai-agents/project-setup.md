@@ -7,19 +7,13 @@ updated: 2026-09-26
 qmd: "project setup"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Project setup and running
 
 > Source: [IFLOW.md](../../bashscripts/ai/IFLOW.md)
-<<<<<<< HEAD
 > Source: [IFLOW.md](../../../../../bashscripts/ai/IFLOW.md)
-=======
->>>>>>> laraxot/dev
 > Back: [index](index.md)
 
 ## Prerequisites

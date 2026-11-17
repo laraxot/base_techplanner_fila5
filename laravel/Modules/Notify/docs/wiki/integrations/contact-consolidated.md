@@ -2,26 +2,16 @@
 qmd: "contact consolidated"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "contact: Consolidated Documentation"
-=======
-title: "contact — Consolidated Documentation"
->>>>>>> laraxot/dev
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: draft
 ---
 
 # contact: Consolidated Documentation
-=======
----
-
-# contact — Consolidated Documentation
->>>>>>> laraxot/dev
 
 Consolidated from **7** individual files.
 
@@ -507,11 +497,8 @@ La sintassi `@svg()` utilizzata nella view Blade non è compatibile con il siste
 ### **Documentazione Correlata**
 - [contact-column-implementation.md](./contact-column-implementation.md)
 - [contactcolumn-errors-and-antipatterns.md](./contactcolumn-errors-and-antipatterns.md)
-<<<<<<< HEAD
 - [contact-column-implementation.md](../../contact-column-implementation.md)
 - [contactcolumn-errors-and-antipatterns.md](../../contactcolumn-errors-and-antipatterns.md)
-=======
->>>>>>> laraxot/dev
 - [Filament Icons Documentation](https://filamentphp.com/docs/3.x/support/icons)
 
 ### **File Coinvolti**
@@ -549,10 +536,7 @@ Implementare `ContactColumn.php` come colonna Filament riutilizzabile che utiliz
 ## 🚨 **PROBLEMA CRITICO IDENTIFICATO** (2025-08-01)
 **ICONE NON VISIBILI**: La sintassi `@svg()` nel template Blade non è compatibile con Filament 3.x
 - 📋 **Analisi Completa**: [contact-column-icon-issue-analysis.md](./contact-column-icon-issue-analysis.md)
-<<<<<<< HEAD
 - 📋 **Analisi Completa**: [contact-column-icon-issue-analysis.md](../../contact-column-icon-issue-analysis.md)
-=======
->>>>>>> laraxot/dev
 - 🛠️ **Soluzione**: Sostituire `@svg()` con `<x-filament::icon>`
 - ⚡ **Priorità**: ALTA (Funzionalità core non funzionante)
 
@@ -1750,11 +1734,8 @@ Utilizzo:
 
 - [DRY Composition Pattern](./dry-composition-pattern.md) - Pattern composizione Actions
 - [SendRecordNotificationAction](../../app/Actions/SendRecordNotificationAction.php) - Implementazione completa
-<<<<<<< HEAD
 - [DRY Composition Pattern](../../dry-composition-pattern.md) - Pattern composizione Actions
 - [SendRecordNotificationAction](../../../app/Actions/SendRecordNotificationAction.php) - Implementazione completa
-=======
->>>>>>> laraxot/dev
 - [SendNotificationBulkAction](./send-notification-bulk-action.md) - Azione bulk che usa SendRecordNotificationAction
 
 ---

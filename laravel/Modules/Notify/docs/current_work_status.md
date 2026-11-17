@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "current work status"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Stato Attuale del Lavoro - 12 Maggio 2025

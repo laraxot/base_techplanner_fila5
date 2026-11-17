@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "telegram"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 https://dev.to/millykhamroev/laravel-package-to-integrate-telegram-bot-api-3l6e

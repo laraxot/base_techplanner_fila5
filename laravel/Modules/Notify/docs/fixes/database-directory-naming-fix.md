@@ -12,10 +12,7 @@ related:
   - "./database-naming-fix-summary.md"
   - "./database-naming-verification-report.md"
   - "./sqlite-permission-fix.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Database Directory Naming Convention Fix

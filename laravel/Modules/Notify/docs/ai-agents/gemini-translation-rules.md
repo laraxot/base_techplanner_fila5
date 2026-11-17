@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "gemini translation rules"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # GEMINI Translation Rules
@@ -18,18 +15,6 @@ status: draft
 Regole gestione traduzioni.
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "gemini translation rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gemini translation rules"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## Regola Critica
 
 Tutti i file di traduzione per i moduli Laraxot (`Modules/{ModuleName}/lang/{locale}/{resource}.php`) DEVONO contenere le seguenti chiavi di primo livello:
@@ -102,8 +87,5 @@ namespace::context.collection.element.type
 - [Indice GEMINI](./gemini-split-index.md)
 - [translation-management skill available](../../.opencode/skills/translation-management/SKILL.md)
 - [GEMINI.md originale](../../GEMINI.md)
-<<<<<<< HEAD
 - [GEMINI.md originale](../GEMINI.md)
-=======
->>>>>>> laraxot/dev
 - [Index principale](./index.md)

@@ -16,13 +16,10 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
-<<<<<<< HEAD
   - ../../conventions/README.md
   - ../../rules/README.md
   - ../../best-practices/naming-conventions.md
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Regole per la Struttura dei DTO
 

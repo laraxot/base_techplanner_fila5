@@ -10,10 +10,7 @@ created: {{date}}
 updated: {{date}}
 tags: [comparison, analysis]
 related: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # {{title}}

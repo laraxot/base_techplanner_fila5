@@ -1,20 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "Notify Module: Document"
-=======
-title: "Notify Module — Document"
->>>>>>> laraxot/dev
 type: docs/bmad
 status: active
 module: Notify
 scope: documentation
 bmad_version: 1.0
 updated: 2026-10-06
-<<<<<<< HEAD
 tags: [docs, notify, wiki]
 qmd: "homepage css/js fix - status notify"
-=======
->>>>>>> laraxot/dev
 ---
 
 # Homepage CSS/JS Fix - Status
@@ -34,11 +27,8 @@ qmd: "homepage css/js fix - status notify"
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # ✓ Completato
-<<<<<<< HEAD
 <<<<<<< .merge_file_F5DYbs
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
->>>>>>> .merge_file_HTYpNJ
 =======
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 >>>>>>> laraxot/dev

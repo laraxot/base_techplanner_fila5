@@ -3,11 +3,6 @@ title: "QueueableAction Pattern Guide"
 type: concept
 tags: [notify, docs, architecture, queueable, action, pattern]
 module: Notify
-<<<<<<< HEAD
-=======
-created: 2026-07-20
-updated: 2026-07-20
->>>>>>> laraxot/dev
 qmd: "notify documentazione architecture queueable action pattern queueableaction pattern guide frontmatter qmd search"
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
@@ -19,11 +14,8 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
-<<<<<<< HEAD
 status: active
 updated: 2026-10-23
-=======
->>>>>>> laraxot/dev
 ---
 # QueueableAction Pattern Guide
 
@@ -66,11 +58,7 @@ class SendNotificationAction
      *
      * @throws Exception
      */
-<<<<<<< HEAD
     public function execute(
-=======
-    public function handle(
->>>>>>> laraxot/dev
         Model $recipient,
         string $templateCode,
         array $data = [],
@@ -84,19 +72,11 @@ class SendNotificationAction
 
 ## 🔧 **Metodi Principali**
 
-<<<<<<< HEAD
 ### `execute()` - Metodo Principale
 Il metodo `execute()` è il cuore dell'azione. È l'entrypoint tipizzato comune a esecuzione sincrona e asincrona.
 
 ```php
 public function execute(
-=======
-### `handle()` - Metodo Principale
-Il metodo `handle()` è il cuore dell'azione. È il metodo che viene chiamato quando l'azione viene eseguita.
-
-```php
-public function handle(
->>>>>>> laraxot/dev
     Model $recipient,
     string $templateCode,
     array $data = [],
@@ -137,11 +117,7 @@ public function queue(
  *
  * @return NotificationModel|null
  */
-<<<<<<< HEAD
     public function execute(
-=======
-public function handle(
->>>>>>> laraxot/dev
     Model $recipient,
     string $templateCode,
     array $data = [],
@@ -178,11 +154,7 @@ Log::info('Invio notifica', [
 ### Sincrono
 ```php
 $notificationAction = app(SendNotificationAction::class);
-<<<<<<< HEAD
     $notification = $notificationAction->execute(
-=======
-$notification = $notificationAction->handle(
->>>>>>> laraxot/dev
     $recipient,
     'welcome_email',
     ['name' => $recipient->name],
@@ -209,20 +181,10 @@ $notificationAction
 ### 2. **Directory Structure**
 ```
 Modules/ModuleName/
-<<<<<<< HEAD
 └── app/
     ├── Actions/
     │   └── SendNotificationAction.php
     └── Datas/
-=======
-├── app/
-│   ├── Actions/
-│   │   └── SendNotificationAction.php
-│   ├── Jobs/
-│   │   └── SendNotificationJob.php
-│   └── Services/
-│       └── NotificationManager.php
->>>>>>> laraxot/dev
 ```
 
 ### 3. **Test Coverage**
@@ -246,11 +208,7 @@ Log::debug('Debug info', [
 it('invia notifica correttamente', function () {
     $recipient = User::factory()->create();
     
-<<<<<<< HEAD
     $notification = app(SendNotificationAction::class)->execute(
-=======
-    $notification = app(SendNotificationAction::class)->handle(
->>>>>>> laraxot/dev
         $recipient,
         'welcome_email',
         ['name' => $recipient->name]
@@ -267,8 +225,3 @@ it('invia notifica correttamente', function () {
 - [PHPStan Level 10 Guide](../phpstan-level10-guide.md)
 
 ---
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Marzo 2026*
-*Versione: 1.0.0*
->>>>>>> laraxot/dev

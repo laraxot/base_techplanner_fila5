@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "markdown linking conventions"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Convenzioni per i Collegamenti nei File Markdown

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "contactcolumns and antipatterns"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # ContactColumn.php - Errori Critici e Anti-Pattern (Modulo Notify)
@@ -231,18 +228,6 @@ Implementare ContactColumn che:
 - [Accessibilità WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "contactcolumns and antipatterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "contactcolumns and antipatterns"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 *Audit completato: [DATE]*  
 *Gravità: CRITICA*  
 *Stato: REFACTOR RICHIESTO*  

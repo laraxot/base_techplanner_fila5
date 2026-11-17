@@ -4,28 +4,16 @@ created: 2026-09-26
 qmd: "styling"
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "html2pdf styling: puntatore"
-=======
-title: "html2pdf styling — puntatore"
->>>>>>> laraxot/dev
 type: reference
 updated: 2026-05-21
 related:
   - "../../../Media/docs/html2pdf/styling.md"
-<<<<<<< HEAD
 status: draft
 ---
 
 # Html2Pdf: styling
 
 Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5/issues/124)).
-=======
----
-
-# Html2Pdf — styling
-
-Stub **DRY**. Documentazione canonica nel modulo **Media** (issue [#124](https://github.com/provtv/base_ptv_fila5_mono/issues/124)).
->>>>>>> laraxot/dev
 
 → [styling.md](../../../Media/docs/html2pdf/styling.md)

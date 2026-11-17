@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "contact column error fix"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Correzione Errori ContactColumn - Modulo Notify

@@ -16,10 +16,7 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - naming-conventions.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Schema Conventions in Notify Module
 
@@ -79,10 +76,7 @@ Here's a complete example of a properly formatted schema:
 ```
 ## Collegamenti tra versioni di schema-conventions.md
 * [schema-conventions.md](docs/schema-conventions.md)
-<<<<<<< HEAD
 * [schema-conventions.md](../schema-conventions.md)
-=======
->>>>>>> laraxot/dev
 * [schema-conventions.md](../../../Notify/docs/schema-conventions.md)
 
 

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "documentation governance"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Documentation Governance Framework
@@ -20,18 +17,6 @@ status: draft
 **Applies to**: All modules and themes
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "documentation governance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentation governance"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🎯 Purpose
 
 This document establishes the governance framework for all documentation in the FixCity platform, ensuring consistency, quality, and maintainability across all modules and themes.
@@ -454,12 +439,9 @@ jobs:
 - [agents.md](../../../agents.md) - Agent guidelines
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 - [DOCUMENTATION_INDEX.md](../../../docs/DOCUMENTATION_INDEX.md) - Master index
-<<<<<<< HEAD
 - [agents.md](../../../AGENTS.md) - Agent guidelines
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 - [DOCUMENTATION_INDEX.md](../../../../docs/DOCUMENTATION_INDEX.md) - Master index
-=======
->>>>>>> laraxot/dev
 
 ---
 

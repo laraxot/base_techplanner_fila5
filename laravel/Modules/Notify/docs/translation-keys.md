@@ -10,11 +10,7 @@ issues: []
 discussions: []
 ---
 
-<<<<<<< HEAD
 ## [2024-07-07] Aggiornamento regole e best practice traduzioni modulo Notify
-=======
-## [[DATE]] Aggiornamento regole e best practice traduzioni modulo Notify
->>>>>>> laraxot/dev
 
 ### Errori riscontrati
 - Chiavi di traduzione non strutturate gerarchicamente
@@ -60,11 +56,5 @@ return [
 ```
 
 ### Riferimenti
-<<<<<<< HEAD
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/translation-keys-rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/translation-keys-best-practices.md)
-=======
-- [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation_keys_rules.md)
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation_keys_best_practices.md) 
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices.md) 
->>>>>>> laraxot/dev

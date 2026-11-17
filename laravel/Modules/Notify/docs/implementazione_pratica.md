@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "implementazione pratica"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: implementazione-pratica.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Implementazione Pratica del Modulo Notify

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "model changes"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Modifiche al Modello MailTemplate
@@ -135,12 +132,9 @@ public static function generateUniqueSlug(string $subject): string
 - [Proposta Slug](./SPATIE_EMAIL_SLUG_PROPOSAL.md)
 - [Changelog Migrazioni](./MIGRATIONS_CHANGELOG.md)
 - [Best Practices Email](./EMAIL_BEST_PRACTICES.md)
-<<<<<<< HEAD
 - [Proposta Slug](./spatie_email_slug_proposal.md)
 - [Changelog Migrazioni](./migrations_changelog.md)
 - [Best Practices Email](./email_best_practices.md)
-=======
->>>>>>> laraxot/dev
 
 ## Note di Implementazione
 

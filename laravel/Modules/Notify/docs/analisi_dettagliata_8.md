@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "analisi dettagliata 8"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi dettagliata 8"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Analisi Dettagliata del Modulo Notify - Parte 8: Note Finali
 
 ## 8. Note Finali

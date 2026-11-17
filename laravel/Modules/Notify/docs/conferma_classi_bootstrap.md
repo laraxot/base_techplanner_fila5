@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "conferma classi bootstrap"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: conferma-classi-bootstrap.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # ✅ Conferma: Classi Bootstrap Italia Corrette

@@ -7,16 +7,10 @@ updated: 2026-09-26
 qmd: "filament version"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
 ---
 
 # Filament Version Declaration: Notify
-=======
----
-
-# Filament Version Declaration — Notify
->>>>>>> laraxot/dev
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)
 
@@ -32,8 +26,4 @@ All resources, forms, tables, infolists, widgets and actions must follow the v5 
 
 **Last verified**: 2026-05-21
 
-<<<<<<< HEAD
 **Firmato:** Cursor Agent (Composer): template propagato ai package `docs/`
-=======
-**Firmato:** Cursor Agent (Composer) — template propagato ai package `docs/`
->>>>>>> laraxot/dev

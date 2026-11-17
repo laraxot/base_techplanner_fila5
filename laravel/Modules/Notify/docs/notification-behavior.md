@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "notification behavior"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Notification System Behavior

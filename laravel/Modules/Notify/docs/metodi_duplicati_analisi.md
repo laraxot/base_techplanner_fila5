@@ -10,16 +10,10 @@ module: Notify
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
 canonical: ../../../Themes/One/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-<<<<<<< HEAD
 status: stub
 ---
 
 # Metodi Duplicati: Analisi Notify
-=======
----
-
-# Metodi Duplicati — Analisi Notify
->>>>>>> laraxot/dev
 
 Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modulo **Notify**, estratti dal report globale generato da `/tmp/metodi_duplicati_domain_report.md`.
 
@@ -40,11 +34,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Notifications/TicketStatusChangedNotification.php`
 - `./laravel/Modules/Notify/app/Notifications/WhatsAppNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -67,11 +57,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendWhatsAppPage.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/TestSmtpPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -83,11 +69,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Contracts/CanThemeNotificationContract.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -99,11 +81,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Filament/Pages/SettingPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -115,11 +93,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Enums/SmsDriverEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -131,11 +105,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Helpers/ConfigHelper.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -152,11 +122,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Notifications/TicketAssignedNotification.php`
 - `./laravel/Modules/Notify/app/Notifications/TicketStatusChangedNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -169,11 +135,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Jobs/SendNotificationJob.php`
 - `./laravel/Modules/Notify/app/Jobs/SendScheduledPushNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -188,11 +150,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Mail/AppointmentNotificationMail.php`
 - `./laravel/Modules/Notify/app/Mail/ChristmasGreetingMailable.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -207,11 +165,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Mail/AppointmentNotificationMail.php`
 - `./laravel/Modules/Notify/app/Mail/ChristmasGreetingMailable.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -228,11 +182,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendTelegram.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/TestSmtpPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -246,11 +196,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Enums/TelegramDriverEnum.php`
 - `./laravel/Modules/Notify/app/Enums/WhatsAppDriverEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -264,11 +210,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Mail/AppointmentNotificationMail.php`
 - `./laravel/Modules/Notify/app/Mail/ChristmasGreetingMailable.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 5 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 5 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -284,11 +226,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendWhatsAppPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -301,11 +239,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Services/MailEngines/MailtrapEngine.php`
 - `./laravel/Modules/Notify/app/Services/SmsService.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -322,11 +256,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendTelegram.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/TestSmtpPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -343,11 +273,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendTelegram.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/TestSmtpPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -363,11 +289,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Datas/SMS/SmsFactorData.php`
 - `./laravel/Modules/Notify/app/Datas/SMS/TwilioData.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -383,11 +305,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Datas/SMS/SmsFactorData.php`
 - `./laravel/Modules/Notify/app/Datas/SMS/TwilioData.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -399,11 +317,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/database/factories/NotifyThemeableFactory.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -418,11 +332,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Models/NotificationLog.php`
 - `./laravel/Modules/Notify/app/Models/NotificationTemplateVersion.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -434,11 +344,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Actions/SendNotificationAction.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -450,11 +356,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Models/NotificationTemplate.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 4 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 4 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -467,11 +369,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Enums/NotificationLogStatusEnum.php`
 - `./laravel/Modules/Notify/app/Enums/NotificationTypeEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -484,11 +382,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Enums/NotificationLogStatusEnum.php`
 - `./laravel/Modules/Notify/app/Enums/NotificationTypeEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -500,11 +394,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Filament/Resources/NotificationTemplateResource/Pages/PreviewNotificationTemplate.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -516,11 +406,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Models/MailTemplate.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -532,11 +418,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Datas/SMS/GammuData.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -551,11 +433,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Enums/TelegramDriverEnum.php`
 - `./laravel/Modules/Notify/app/Enums/WhatsAppDriverEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -569,11 +447,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Notifications/SmsNotification.php`
 - `./laravel/Modules/Notify/app/Notifications/WhatsAppNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -588,11 +462,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Datas/SMS/SmsFactorData.php`
 - `./laravel/Modules/Notify/app/Datas/SMS/TwilioData.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -605,11 +475,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Enums/NotificationLogStatusEnum.php`
 - `./laravel/Modules/Notify/app/Enums/NotificationTypeEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -623,11 +489,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Notifications/SmsNotification.php`
 - `./laravel/Modules/Notify/app/Notifications/ThemeNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -640,11 +502,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotification.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotificationPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -656,11 +514,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Actions/EsendexSendAction.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -672,11 +526,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Models/NotifyTheme.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 3 moduli diversi: forte candidato per refactoring in trait/modulo Xot o helper condiviso]
-=======
-[Riflessione: Presente in 3 moduli diversi — forte candidato per refactoring in trait/modulo Xot o helper condiviso]
->>>>>>> laraxot/dev
 
 ---
 
@@ -690,11 +540,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Enums/TelegramDriverEnum.php`
 - `./laravel/Modules/Notify/app/Enums/WhatsAppDriverEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -708,11 +554,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Enums/TelegramDriverEnum.php`
 - `./laravel/Modules/Notify/app/Enums/WhatsAppDriverEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -726,11 +568,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendEmailPage.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendSpatieEmailPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -742,11 +580,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Datas/EmailAttachmentData.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -758,11 +592,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/database/factories/NotificationChannelFactory.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -774,11 +604,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Services/MailEngines/MailtrapEngine.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -791,11 +617,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Contracts/MobilePushNotification.php`
 - `./laravel/Modules/Notify/app/Notifications/FirebaseAndroidNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -808,11 +630,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendNetfunSmsPage.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -825,11 +643,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Services/MailEngines/MailtrapEngine.php`
 - `./laravel/Modules/Notify/app/Services/SmsService.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -842,11 +656,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Actions/SendNotificationAction.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendNetfunSmsPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -858,11 +668,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Contracts/CanThemeNotificationContract.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -875,11 +681,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Models/NotificationLog.php`
 - `./laravel/Modules/Notify/app/Models/NotificationTemplate.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -891,11 +693,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Traits/HasTenantNotifications.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -908,11 +706,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotification.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotificationPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -925,11 +719,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Emails/SpatieEmail.php`
 - `./laravel/Modules/Notify/app/Notifications/RecordNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -941,11 +731,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Contracts/CanThemeNotificationContract.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -958,11 +744,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Services/NotificationManager.php`
 - `./laravel/Modules/Notify/app/Services/PushNotificationService.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -975,11 +757,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendNetfunSmsPage.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -992,11 +770,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendNetfunSmsPage.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendSmsPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1009,11 +783,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Notifications/SmsNotification.php`
 - `./laravel/Modules/Notify/app/Notifications/WhatsAppNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1026,11 +796,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotification.php`
 - `./laravel/Modules/Notify/app/Filament/Clusters/Test/Pages/SendPushNotificationPage.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1042,11 +808,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Contracts/CanThemeNotificationContract.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1058,11 +820,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Contracts/CanReceivePushNotifications.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1074,11 +832,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Contracts/CanReceivePushNotifications.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1090,11 +844,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Actions/DetermineSeasonalContentViewPathAction.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1106,11 +856,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Enums/ContactTypeEnum.php`
 
-<<<<<<< HEAD
 [Riflessione: Metodo getter/setter: possibile trait o interfaccia condivisa]
-=======
-[Riflessione: Metodo getter/setter — possibile trait o interfaccia condivisa]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1122,11 +868,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/app/Datas/SmsData.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1139,11 +881,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Filament/Resources/NotifyThemeResource.php`
 - `./laravel/Modules/Notify/app/Filament/Resources/NotifyThemeResource/Schemas/NotifyThemeForm.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1155,11 +893,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 
 - `./laravel/Modules/Notify/database/factories/NotificationChannelFactory.php`
 
-<<<<<<< HEAD
 [Riflessione: Presente in 2 moduli: valutare se la logica è identica (refactoring) o volutamente diversa (override)]
-=======
-[Riflessione: Presente in 2 moduli — valutare se la logica è identica (refactoring) o volutamente diversa (override)]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1172,11 +906,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Actions/WhatsApp/Send360dialogWhatsAppAction.php`
 - `./laravel/Modules/Notify/app/Actions/WhatsApp/SendVonageWhatsAppAction.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1189,11 +919,7 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - `./laravel/Modules/Notify/app/Emails/SpatieEmail.php`
 - `./laravel/Modules/Notify/app/Notifications/RecordNotification.php`
 
-<<<<<<< HEAD
 [Riflessione: Duplicato interno al modulo Notify: valutare estrazione in trait di modulo o classe base]
-=======
-[Riflessione: Duplicato interno al modulo Notify — valutare estrazione in trait di modulo o classe base]
->>>>>>> laraxot/dev
 
 ---
 
@@ -1222,8 +948,4 @@ Elenco dei metodi duplicati (cross-file e cross-modulo) che coinvolgono il modul
 - **Performance:** 5 metodi in comune
 
 ---
-<<<<<<< HEAD
 _Report generato automaticamente: fonte: `/tmp/metodi_duplicati_domain_report.md`_
-=======
-_Report generato automaticamente — fonte: `/tmp/metodi_duplicati_domain_report.md`_
->>>>>>> laraxot/dev

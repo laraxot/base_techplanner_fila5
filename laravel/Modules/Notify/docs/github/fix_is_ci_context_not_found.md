@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "fix is ci context not found"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Fix Risolto: Errore `is_ci_context: command not found`
@@ -21,18 +18,6 @@ status: draft
 > **Priorità**: Critica
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "fix is ci context not found"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fix is ci context not found"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🚨 Problema
 
 ### Errori Segnalati

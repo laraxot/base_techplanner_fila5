@@ -1,18 +1,10 @@
 ---
-<<<<<<< HEAD
-=======
-title: "📚 Documentation Index - FixCity Project"
->>>>>>> laraxot/dev
 title: "📚 Documentation Index - Notify Project"
 type: index
 tags: [notify, docs, project_docs]
 module: Notify
 created: 2026-07-20
 updated: 2026-07-20
-<<<<<<< HEAD
-=======
-qmd: "notify documentazione project_docs index 📚 documentation index - fixcity project index readme frontmatter qmd search"
->>>>>>> laraxot/dev
 qmd: "notify documentazione project_docs index 📚 documentation index - laraxot project index readme frontmatter qmd search"
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
@@ -24,10 +16,7 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # 📚 Documentation Index - FixCity Project
 # 📚 Documentation Index - Notify Project
@@ -51,11 +40,7 @@ status: draft
 
 5. [**MISSION_ACCOMPLISHED.md**](./MISSION_ACCOMPLISHED.md) - ⭐ Mission completion
 6. [**PROJECT_COMPLETION_CERTIFICATE.md**](./PROJECT_COMPLETION_CERTIFICATE.md) - Official certificate
-<<<<<<< HEAD
 7. [**2025_EXCELLENCE_ACHIEVEMENT.md**](./2025_EXCELLENCE_ACHIEVEMENT.md) - Achievement report
-=======
-7. [**excellence-achievement-caps.md**](./excellence-achievement-caps.md) - Achievement report
->>>>>>> laraxot/dev
 8. [**FINAL_REFACTORING_REPORT.md**](./FINAL_REFACTORING_REPORT.md) - Refactoring summary
 9. [**COMPLETE_REFACTORING_ANALYSIS.md**](./COMPLETE_REFACTORING_ANALYSIS.md) - Detailed analysis
 
@@ -130,11 +115,7 @@ status: draft
 - Skills demonstrated
 - Recognition
 
-<<<<<<< HEAD
 ### 7. 2025_EXCELLENCE_ACHIEVEMENT.md
-=======
-### 7. excellence-achievement-caps.md
->>>>>>> laraxot/dev
 **Purpose:** Excellence achievement report  
 **Audience:** Team, management  
 **Content:**
@@ -177,10 +158,7 @@ Each module has a `docs/` directory containing:
 
 #### Xot Module
 - [Cyclomatic Complexity Report](../Modules/Xot/docs/cyclomatic-complexity-report.md)
-<<<<<<< HEAD
 - [Cyclomatic Complexity Report](../cyclomatic-complexity-report.md)
-=======
->>>>>>> laraxot/dev
 - [Refactoring Plan](../Modules/Xot/docs/refactoring/cyclomatic-complexity-refactoring-plan.md)
 - [Refactoring Report](../Modules/Xot/docs/refactoring/artisan-service-refactoring-report.md)
 
@@ -190,14 +168,11 @@ Each module has a `docs/` directory containing:
 #### User Module
 - [Cyclomatic Complexity Report](../Modules/User/docs/cyclomatic-complexity-report.md)
 - [Extensive documentation](../Modules/User/docs/)
-<<<<<<< HEAD
 - [Cyclomatic Complexity Report](../../../Tenant/docs/cyclomatic-complexity-report.md)
 
 #### User Module
 - [Cyclomatic Complexity Report](../../../User/docs/cyclomatic-complexity-report.md)
 - [Extensive documentation](../../../User/docs)
-=======
->>>>>>> laraxot/dev
 
 #### Other Modules
 - AI, Activity, Blog, Cms, Comment, Fixcity, Gdpr, Geo, Job, Lang, Media, Notify, Rating, Seo, UI
@@ -214,7 +189,6 @@ Each module has a `docs/` directory containing:
 - [Roadmap 2025](../Themes/Sixteen/docs/ROADMAP_2025.md)
 
 ### TwentyOne Theme
-<<<<<<< HEAD
 - [Code Quality Analysis](../Themes/TwentyOne/docs/code-quality-analysis.md)
 - [Code Quality Analysis](../../../../Themes/Sixteen/docs/CODE_QUALITY_ANALYSIS.md)
 - [README](../../../../Themes/Sixteen/docs/README.md)
@@ -222,9 +196,6 @@ Each module has a `docs/` directory containing:
 
 ### TwentyOne Theme
 - [Code Quality Analysis](../../../../Themes/TwentyOne/docs/code-quality-analysis.md)
-=======
-- [Code Quality Analysis](../Themes/TwentyOne/docs/CODE_QUALITY_ANALYSIS.md)
->>>>>>> laraxot/dev
 
 ---
 
@@ -239,12 +210,9 @@ Each module has a `docs/` directory containing:
 - [Package.json](../package.json) - NPM scripts
 - [PHPStan Config](../phpstan.neon) - Static analysis
 - [Composer](../composer.json) - PHP dependencies
-<<<<<<< HEAD
 - [Package.json](../../package.json) - NPM scripts
 - [PHPStan Config](../../../../phpstan.neon) - Static analysis
 - [Composer](../../composer.json) - PHP dependencies
-=======
->>>>>>> laraxot/dev
 
 ### Analysis Tools
 - [Complexity Analyzer](../analyze_complexity.php)
@@ -285,11 +253,7 @@ Each module has a `docs/` directory containing:
 ### For Management
 - MISSION_ACCOMPLISHED.md
 - PROJECT_COMPLETION_CERTIFICATE.md
-<<<<<<< HEAD
 - 2025_EXCELLENCE_ACHIEVEMENT.md
-=======
-- excellence-achievement-caps.md
->>>>>>> laraxot/dev
 - QUALITY_DASHBOARD.md
 
 ### For Quality Team
@@ -475,11 +439,7 @@ All documents include:
 - ✅ Created ARCHITECTURE.md
 - ✅ Created architecture.md
 - ✅ Created QUALITY_DASHBOARD.md
-<<<<<<< HEAD
 - ✅ Created 2025_EXCELLENCE_ACHIEVEMENT.md
-=======
-- ✅ Created excellence-achievement-caps.md
->>>>>>> laraxot/dev
 
 ---
 

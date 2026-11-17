@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: header-fix-analysis.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # 📸 Header Notify vs Bootstrap Italia - Analisi e Fix

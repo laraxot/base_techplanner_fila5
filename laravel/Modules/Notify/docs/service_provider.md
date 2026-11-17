@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "service provider"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: bmad/architecture/service-provider.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Service Provider del Modulo Notify

@@ -56,10 +56,5 @@ return [
 ```
 
 ### Riferimenti
-<<<<<<< HEAD
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/translation-keys-rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/translation-keys-best-practices.md)
-=======
-- [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
->>>>>>> laraxot/dev

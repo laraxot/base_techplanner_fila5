@@ -16,14 +16,11 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
-<<<<<<< HEAD
   - ../../conventions/README.md
   - ../../rules/README.md
   - ../../best-practices/naming-conventions.md
 status: superseded
 superseded_by: ../../architecture/structure-standards.md
-=======
->>>>>>> laraxot/dev
 ---
 # Standard di Struttura nel Modulo Notify
 

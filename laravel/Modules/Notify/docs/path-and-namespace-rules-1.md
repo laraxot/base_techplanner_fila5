@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "path and namespace rules 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "path and namespace rules 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Regole per Path e Namespace nel Modulo Notify
 
 > **ATTENZIONE:** In nessun caso il namespace deve contenere il segmento `App`, anche se il file si trova nella cartella `app/`. Questa è una regola fondamentale e ogni violazione può causare errori di autoloading, incompatibilità con PSR-4 e problemi di coerenza nel progetto. Consulta sempre questa sezione prima di creare nuovi file o correggere errori di namespace.
@@ -22,22 +8,11 @@ discussions: []
 
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 Modules/Notify/app/Actions/SMS
 Modules/Notify/app/Http/Controllers
 Modules/Notify/app/Providers
 Modules/Notify/app/Models
 Modules/Notify/app/Filament
-<<<<<<< HEAD
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS
-/var/www/html/saluteora/laravel/Modules/Notify/app/Http/Controllers
-/var/www/html/saluteora/laravel/Modules/Notify/app/Providers
-/var/www/html/saluteora/laravel/Modules/Notify/app/Models
-/var/www/html/saluteora/laravel/Modules/Notify/app/Filament
->>>>>>> 6ed19256f (.)
 =======
 >>>>>>> laraxot/dev
 ```
@@ -46,15 +21,9 @@ Modules/Notify/app/Filament
 
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 Modules/Notify/App/Actions/SMS
 Modules/Notify/App/Http/Controllers
 Modules/Notify/App/Providers
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/App/Actions/SMS
-/var/www/html/saluteora/laravel/Modules/Notify/App/Http/Controllers
-/var/www/html/saluteora/laravel/Modules/Notify/App/Providers
->>>>>>> 6ed19256f (.)
 =======
 Modules/Notify/App/Actions/SMS
 Modules/Notify/App/Http/Controllers
@@ -95,11 +64,7 @@ namespace Modules\Notify\App\Datas;
 **Path fisico corretto:**
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
->>>>>>> 6ed19256f (.)
 =======
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
 >>>>>>> laraxot/dev
@@ -115,11 +80,7 @@ namespace Modules\Notify\Actions\SMS;
 **Path fisico corretto:**
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 Modules/Notify/app/Http/Controllers/NotificationController.php
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/app/Http/Controllers/NotificationController.php
->>>>>>> 6ed19256f (.)
 =======
 Modules/Notify/app/Http/Controllers/NotificationController.php
 >>>>>>> laraxot/dev
@@ -135,11 +96,7 @@ namespace Modules\Notify\Http\Controllers;
 **Path fisico corretto:**
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 Modules/Notify/app/Providers/NotifyServiceProvider.php
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/app/Providers/NotifyServiceProvider.php
->>>>>>> 6ed19256f (.)
 =======
 Modules/Notify/app/Providers/NotifyServiceProvider.php
 >>>>>>> laraxot/dev
@@ -155,11 +112,7 @@ namespace Modules\Notify\Providers;
 **Path fisico corretto:**
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 Modules/Notify/app/Datas/NetfunSMSMessage.php
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/app/Datas/NetfunSMSMessage.php
->>>>>>> 6ed19256f (.)
 =======
 Modules/Notify/app/Datas/NetfunSMSMessage.php
 >>>>>>> laraxot/dev
@@ -180,11 +133,7 @@ namespace Modules\Notify\App\Datas;
 ## Motivo di questa Regola
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto <nome progetto>.
-=======
-Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto SaluteOra.
->>>>>>> 6ed19256f (.)
 =======
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto <nome progetto>.
 >>>>>>> laraxot/dev
@@ -214,11 +163,7 @@ Per le regole generali e condivise tra tutti i moduli, consulta anche:
 - [Convenzioni di Codice](/laravel/Modules/Xot/docs/CODE-CONVENTIONS.md)
 - [Struttura dei Moduli](/laravel/Modules/Xot/docs/MODULE-STRUCTURE.md)
 <<<<<<< HEAD
-<<<<<<< HEAD
 - [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
-=======
-- [Collegamento Bidirezionale: Documentazione Root](../../../../docs/links.md)
->>>>>>> 6ed19256f (.)
 =======
 - [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
 >>>>>>> laraxot/dev
@@ -228,11 +173,7 @@ Per le regole generali e condivise tra tutti i moduli, consulta anche:
 **Path fisico corretto:**
 ```
 <<<<<<< HEAD
-<<<<<<< HEAD
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
-=======
-/var/www/html/saluteora/laravel/Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
->>>>>>> 6ed19256f (.)
 =======
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
 >>>>>>> laraxot/dev
@@ -253,11 +194,7 @@ namespace Modules\Notify\App\Console\Commands;
 ---
 
 <<<<<<< HEAD
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-05-12*
-=======
-*Ultimo aggiornamento: 2025-05-12*
->>>>>>> 6ed19256f (.)
 =======
 title: "path and namespace rules 1"
 type: note

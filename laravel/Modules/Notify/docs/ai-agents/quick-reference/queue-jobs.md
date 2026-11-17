@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "queue jobs"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Quick Reference - Queue / Jobs

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "email translations"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Integrazione Traduzioni Email - il progetto

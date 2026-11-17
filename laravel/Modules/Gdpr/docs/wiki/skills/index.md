@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_dCiLZ4
 ---
 title: "index"
 type: note
@@ -10,8 +9,6 @@ issues: []
 discussions: []
 ---
 
-=======
->>>>>>> .merge_file_oclwfw
 # Gdpr Module - skills Index
 
 ## Purpose
@@ -28,7 +25,6 @@ qmd search "Gdpr skills" --limit 5
 - [Root Wiki](../../../docs/wiki/)
 
 ---
-<<<<<<< .merge_file_dCiLZ4
 title: "index"
 type: note
 tags: [documentation]
@@ -37,6 +33,4 @@ updated: 2026-09-26
 qmd: "index"
 issues: []
 discussions: []
-=======
->>>>>>> .merge_file_oclwfw
 *Updated: 2026-05-11*

@@ -7,11 +7,8 @@ updated: 2026-09-26
 qmd: "04 milestones"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: superseded
 superseded_by: milestones.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Milestones - Notify

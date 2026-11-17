@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "agents filament widgets"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🏛 Filament Widgets Architecture
@@ -20,18 +17,6 @@ status: draft
 **Stato**: ✅ CRITICAL RULE
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "agents filament widgets"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents filament widgets"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 🔴 REGOLA FONDAMENTALE
 
 > **SEMPRE usare Filament Table Widgets per le liste**  

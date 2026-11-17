@@ -1,23 +1,13 @@
 ---
-<<<<<<< HEAD
 title: "master implementation plan"
-=======
-title: "MASTER IMPLEMENTATION PLAN"
->>>>>>> laraxot/dev
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< HEAD
 qmd: "master implementation plan"
 issues: []
 discussions: []
 status: draft
-=======
-qmd: "MASTER IMPLEMENTATION PLAN"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ---
 
 # 🎯 FIXCITY - MASTER IMPLEMENTATION PLAN
@@ -27,18 +17,6 @@ discussions: []
 **Obiettivo**: Completare il progetto FixCity al 100%
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "MASTER IMPLEMENTATION PLAN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MASTER IMPLEMENTATION PLAN"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📊 STATO ATTUALE
 
 ### Completamento Generale
@@ -59,8 +37,4 @@ Modules:
 PHPStan Level 9: 0 errori ✅
 Test Coverage: 27 tests esistenti
 Code Quality: ✅ Eccellente
-<<<<<<< HEAD
-=======
-
->>>>>>> laraxot/dev
 ```

@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: sessione-100-percent.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🎉 Sessione 100% Completata - Homepage Bootstrap Italia

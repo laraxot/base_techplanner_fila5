@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "mcp autonomous agents"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 12. MCP (Model Context Protocol) for Autonomous AI Agents
@@ -79,11 +76,7 @@ MySQL MCP server uses:
 - Host: `127.0.0.1`
 - Port: `3306`
 - User: `marco`
-<<<<<<< HEAD
 - Password: [segreto locale, non nel repo]
-=======
-- Password: `marco`
->>>>>>> laraxot/dev
 - Database: `laravelpizza_data` (production) or `laravelpizza_data_test` (testing)
 
 ### MCP Security Rules
@@ -108,15 +101,3 @@ With MCP, AI agents can:
 - **Integrate with GitHub** for issue/PR management
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "mcp autonomous agents"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "mcp autonomous agents"
-issues: []
-discussions: []
->>>>>>> laraxot/dev

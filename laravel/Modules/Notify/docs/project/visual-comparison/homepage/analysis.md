@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "analysis"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Homepage Visual Comparison Analysis
@@ -86,12 +83,8 @@ Make the local homepage (`http://127.0.0.1:8000/it/tests/homepage`) visually ide
 1. [ ] Analyze existing CSS files in Sixteen/resources/css
 2. [ ] Create/fix homepage-specific CSS overrides
 3. [ ] Run npm run build
-<<<<<<< HEAD
 <<<<<<< .merge_file_viityT
 4. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-=======
-4. [ ] Run npm run copy (dismesso: symlink public_html/themes/<Tema>)  
->>>>>>> .merge_file_xXNEeA
 =======
 4. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 

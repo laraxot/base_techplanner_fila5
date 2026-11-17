@@ -16,13 +16,10 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
-<<<<<<< HEAD
   - ../../conventions/README.md
   - ../../rules/README.md
   - ../../best-practices/naming-conventions.md
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 # Struttura Standardizzata della Configurazione SMS
 
@@ -183,10 +180,7 @@ $debug = $config['drivers'][$driver]['debug'] ?? $config['debug'];
 ## Collegamenti
 
 - [Configurazione Netfun](./netfun_config_requirements.md)
-<<<<<<< HEAD
 - [Configurazione Netfun](../../netfun_config_requirements.md)
-=======
->>>>>>> laraxot/dev
 - [Provider SMS Supportati](./notifications/sms_provider_configuration.md)
 
 ---

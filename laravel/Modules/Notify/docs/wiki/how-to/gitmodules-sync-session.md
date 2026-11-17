@@ -1,9 +1,5 @@
 ---
-<<<<<<< HEAD
 title: "Gitmodules sync session: note modulo/tema"
-=======
-title: "Gitmodules sync session — note modulo/tema"
->>>>>>> laraxot/dev
 type: how-to
 tags: [git, gitmodules, sync, quality-gates, merge-conflict]
 created: 2026-07-21
@@ -16,10 +12,7 @@ related:
   - "../../../../../../docs/wiki/memories/no-git-submodules-module-repos.md"
   - "../../../../../../docs/wiki/rules/gitmodules-ini-paths-only.md"
   - "../../../../../../docs/wiki/how-to/per-module-git-sync-verification.md"
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Gitmodules sync session
@@ -30,11 +23,7 @@ Mai Shell `working_directory`. Git solo avanti: fetch + merge (no rebase, no res
 
 ## Cosa fare su questo owner
 
-<<<<<<< HEAD
 1. `git -C laravel/Modules/Notify remote -v`: verità runtime (`laraxot/module_notify_fila5`).
-=======
-1. `git -C laravel/Modules/Notify remote -v` — verità runtime (`laraxot/module_notify_fila5`).
->>>>>>> laraxot/dev
 2. `git -C laravel/Modules/Notify fetch laraxot` poi merge `laraxot/dev` se behind; push se ahead.
 3. Quality gates da `laravel/`: phpstan → phpmd → phpinsights. Mai `phpunit.xml` in root modulo.
 4. Marker Git: risoluzione manuale forward-only.

@@ -1,11 +1,7 @@
 ---
 issues: []
 discussions: []
-<<<<<<< HEAD
 title: "Notify: copertura dei test"
-=======
-title: "Notify — copertura dei test"
->>>>>>> laraxot/dev
 module: notify
 type: reference
 status: active
@@ -15,21 +11,12 @@ updated: 2026-09-11
 qmd: "notify coverage pest unit 6.3 percento misurato xdebug db irraggiungibile; notificationlogresource completato 2026-09-11"
 ---
 
-<<<<<<< HEAD
 # Notify: copertura dei test
 
 ## Aggiornamento 2026-09-11: NotificationLogResource completato
 
 Contesto: `NotificationLogResource` era orfano (solo file `.test`/`.php.test`, mai caricati
 dall'autoloader: vedi `docs/stories/xotbaseresourcetable-model-audit-notify-batch.story.md`).
-=======
-# Notify — copertura dei test
-
-## Aggiornamento 2026-09-11 — NotificationLogResource completato
-
-Contesto: `NotificationLogResource` era orfano (solo file `.test`/`.php.test`, mai caricati
-dall'autoloader — vedi `docs/stories/xotbaseresourcetable-model-audit-notify-batch.story.md`).
->>>>>>> laraxot/dev
 Completato in questo turno: Resource + 4 Pages + Form/Infolist Schema con campi reali
 (`channel`, `status`, `notifiable_type`, `notifiable_id`, `status_message`, `data`, `metadata`,
 `tenant_id`, `sent_at`/`delivered_at`/`failed_at`/`opened_at`/`clicked_at`), lang IT reali al
@@ -41,11 +28,7 @@ qualunque modifica di questo turno (verificato spostando temporaneamente i file 
 rilanciando la stessa suite: stesso conteggio, 400 falliti). Causa: errori di bootstrap
 pre-esistenti e non correlati (`Call to undefined method Container::basePath()`,
 `BindingResolutionException: Target class [config]/[translator] does not exist`, `A facade
-<<<<<<< HEAD
 root has not been set`), non qualcosa introdotto qui: non in scope per questo item.
-=======
-root has not been set`), non qualcosa introdotto qui — non in scope per questo item.
->>>>>>> laraxot/dev
 
 Verifica mirata (isolata dal rumore del baseline rotto), in
 `tests/Unit/Filament/Resources/NotifyFilamentResourcesCoverageTest.php`:
@@ -95,11 +78,7 @@ misura quindi la sola parte Unit eseguibile senza DB, non la copertura reale del
 Prima di rimisurare: `nc -z -w3 10.100.200.53 3306`.
 
 **`xdebug.mode=coverage` è obbligatorio sulla riga di comando.** Senza, Pest esce con
-<<<<<<< HEAD
 `Unable to get coverage using Xdebug`: xdebug è caricato ma non in modalità coverage.
-=======
-`Unable to get coverage using Xdebug` — xdebug è caricato ma non in modalità coverage.
->>>>>>> laraxot/dev
 
 ## Dove la copertura c'è
 

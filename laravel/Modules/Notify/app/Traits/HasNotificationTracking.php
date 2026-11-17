@@ -13,11 +13,8 @@ use function Safe\preg_replace_callback;
  * Trait HasNotificationTracking.
  *
  * Fornisce funzionalità per la gestione del tracking delle notifiche.
-<<<<<<< HEAD
  *
  * Usato da test/unit helpers (es. NotifyTrackingDummy); non ignorare trait.unused.
-=======
->>>>>>> laraxot/dev
  */
 trait HasNotificationTracking
 {

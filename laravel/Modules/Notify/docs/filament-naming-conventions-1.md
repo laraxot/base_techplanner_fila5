@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 # Convenzioni di Naming per Filament
 
 <<<<<<< HEAD
 Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema <nome progetto>, con particolare attenzione alle pagine e alle risorse.
-=======
-Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema SaluteOra, con particolare attenzione alle pagine e alle risorse.
->>>>>>> 6ed19256f (.)
 =======
 ---
 title: "filament naming conventions 1"

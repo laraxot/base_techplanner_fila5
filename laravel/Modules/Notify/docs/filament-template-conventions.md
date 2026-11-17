@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "filament template conventions"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Convenzioni per Template Blade di Filament

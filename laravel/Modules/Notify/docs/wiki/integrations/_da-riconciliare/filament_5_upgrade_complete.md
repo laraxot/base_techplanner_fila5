@@ -8,11 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-<<<<<<< HEAD
 status: superseded
 superseded_by: filament-5-upgrade-complete.md
-=======
->>>>>>> laraxot/dev
 ---
 
 # Filament 5 Upgrade - COMPLETO ✅

@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-=======
----
-title: "netfun examples 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "netfun examples 1"
-issues: []
-discussions: []
----
-
->>>>>>> laraxot/dev
 # Esempi Pratici Netfun
 
 ## 1. Invio SMS OTP
@@ -49,11 +35,7 @@ class OtpSmsNotification extends NetfunSmsNotification
         parent::__construct(
             message: "Il tuo codice OTP è: {$otp}. Valido fino alle {$this->expiresAt->format('H:i')}.",
 <<<<<<< HEAD
-<<<<<<< HEAD
             sender: '<nome progetto>'
-=======
-            sender: 'SALUTEORA'
->>>>>>> 6ed19256f (.)
 =======
             sender: '<nome progetto>'
 >>>>>>> laraxot/dev
@@ -223,11 +205,7 @@ class AppointmentReminderNotification extends NetfunSmsNotification
         parent::__construct(
             message: $message,
 <<<<<<< HEAD
-<<<<<<< HEAD
             sender: '<nome progetto>'
-=======
-            sender: 'SALUTEORA'
->>>>>>> 6ed19256f (.)
 =======
             sender: '<nome progetto>'
 >>>>>>> laraxot/dev
@@ -472,11 +450,7 @@ public function sendBulkSms(Request $request)
             users: $users,
             message: $request->message,
 <<<<<<< HEAD
-<<<<<<< HEAD
             sender: '<nome progetto>',
-=======
-            sender: 'SALUTEORA',
->>>>>>> 6ed19256f (.)
 =======
             sender: '<nome progetto>',
 >>>>>>> laraxot/dev

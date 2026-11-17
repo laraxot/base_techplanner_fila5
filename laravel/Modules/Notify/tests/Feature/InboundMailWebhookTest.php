@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 use Modules\Notify\Models\InboundEmail;
 use Modules\Notify\Tests\TestCase;
-<<<<<<< HEAD
-=======
-use PHPUnit\Framework\Assert;
->>>>>>> laraxot/dev
 
 uses(TestCase::class);
 
@@ -53,13 +49,9 @@ test('inbound webhook stores postmark payload', function (): void {
         ->where('message_id', 'msg-123@postmarkapp.com')
         ->first();
 
-<<<<<<< HEAD
     expect($email)->toBeInstanceOf(InboundEmail::class);
     assert($email instanceof InboundEmail);
 
-=======
-    Assert::assertInstanceOf(InboundEmail::class, $email);
->>>>>>> laraxot/dev
     expect($email->from_email)->toBe('mario@example.com')
         ->and($email->from_name)->toBe('Mario Rossi')
         ->and($email->to_email)->toBe('noreply@fixcity.eu')

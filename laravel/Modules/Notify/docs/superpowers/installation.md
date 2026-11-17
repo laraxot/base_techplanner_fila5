@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "installation"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # 🦸 Superpowers Installation Guide
@@ -21,18 +18,6 @@ status: draft
 > **Version**: v5.0.6
 
 ---
-<<<<<<< HEAD
-=======
-
-title: "installation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "installation"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 📋 Prerequisites
 
 ### Required

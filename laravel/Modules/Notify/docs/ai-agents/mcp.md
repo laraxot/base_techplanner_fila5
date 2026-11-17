@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "mcp"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Model Context Protocol

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "migration structure"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Struttura della Migrazione MailTemplate

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "overview"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # Roadmap overview (Module Notify)

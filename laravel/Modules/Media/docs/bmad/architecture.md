@@ -1,21 +1,9 @@
 ---
 title: "Architettura — Media"
 type: architecture
-<<<<<<< .merge_file_Rv58PQ
 tags: [architecture, structure]
 created: 2026-07-14
 updated: 2026-08-04
-=======
-status: review
-updated: 2026-11-16
-module: Media
-qmd: "architettura Media spatie medialibrary Media MediaConvert TemporaryUpload Filament Resource Actions S3 CloudFront MediaConvert FFmpeg MediaBasePolicy verificata sul codice"
-related:
-  - ./purpose.md
-  - ./audits/media-audit.md
-  - ./decision-log.md
-  - ../purpose.md
->>>>>>> .merge_file_DbcVV2
 ---
 
 # Architettura — Media
@@ -58,7 +46,6 @@ Logica in Spatie Queueable Action, nessun Service, estensione di `XotBaseResourc
 
 ## Decisioni collegate
 
-<<<<<<< .merge_file_Rv58PQ
 - **`tests/`** - Test suite (Pest)
   - `Feature/` - Test funzionali
   - `Unit/` - Test unitari
@@ -177,6 +164,3 @@ Media module provides file handling, storage, and processing infrastructure for 
 ## Quality Gates
 - **PHPStan L10**: Pending verification
 - **Storage**: Tested with local/S3 drivers
-=======
-[decision-log.md](./decision-log.md): D-1 (prune), D-2 (cast `id`), D-3 (allegati-prova), D-4 (guard diagnostica), D-5 (codice morto).
->>>>>>> .merge_file_DbcVV2

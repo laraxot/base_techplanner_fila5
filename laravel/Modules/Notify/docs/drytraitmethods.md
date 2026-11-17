@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "drytraitmethods"
 issues: []
 discussions: []
-<<<<<<< HEAD
 status: draft
-=======
->>>>>>> laraxot/dev
 ---
 
 # DRY Principle for Trait Methods
