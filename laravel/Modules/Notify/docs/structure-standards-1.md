@@ -16,13 +16,10 @@
 Questo è lo standard stabilito nel modulo Notify per tutti i DTOs:
 
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Datas/NetfunSmsData.php
 Modules/Notify/app/Datas/NetfunSmsRequestData.php
 Modules/Notify/app/Datas/NetfunSmsResponseData.php
 Modules/Notify/app/Datas/SmsData.php
-=======
->>>>>>> laraxot/dev
 ```
 
 ### ❌ ERRATO: ALTERNATIVE COMUNI MA ERRATE
@@ -46,22 +43,13 @@ Modules/Notify/app/Datas/SmsData.php
 ### Verificare Sempre le Directory Esistenti
 
 ```bash
-<<<<<<< HEAD
 find Modules/Notify/app -type d -name "Data*"
-=======
-find Modules/Notify/app -type d -name "Data*"
->>>>>>> laraxot/dev
 ```
 
 Questo restituirà:
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Datas
 Modules/Notify/app/Datas/SMS
-=======
-Modules/Notify/app/Datas
-Modules/Notify/app/Datas/SMS
->>>>>>> laraxot/dev
 ```
 
 ## Esempi di Importazioni Corrette

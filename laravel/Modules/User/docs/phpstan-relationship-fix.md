@@ -2,11 +2,7 @@
 
 ## 🚨 Errore PHPStan Risolto
 
-<<<<<<< HEAD
 **File**: `User/app/Models/Traits/HasAuthenticationLogTrait.php`  
-=======
-**File**: `User/app/Models/Traits/HasAuthenticationLogTrait.php`  
->>>>>>> laraxot/dev
 **Errore**: Type mismatch per relazioni MorphMany/MorphOne
 
 ### Problema
@@ -50,11 +46,7 @@ public function latestAuthentication(): MorphOne
 @return MorphOne<RelatedModel, $this>
 ```
 
-<<<<<<< HEAD
 ### HasMany/HasOne  
-=======
-### HasMany/HasOne  
->>>>>>> laraxot/dev
 ```php
 // ✅ CORRETTO
 @return HasMany<RelatedModel>
@@ -63,11 +55,7 @@ public function latestAuthentication(): MorphOne
 
 ### BelongsTo
 ```php
-<<<<<<< HEAD
 // ✅ CORRETTO  
-=======
-// ✅ CORRETTO  
->>>>>>> laraxot/dev
 @return BelongsTo<RelatedModel, $this>
 ```
 
@@ -89,9 +77,4 @@ Per **tutte le relazioni Eloquent** in trait e modelli:
 - [PHPStan Template Covariance](https://phpstan.org/blog/whats-up-with-template-covariant)
 - [Eloquent Relationships](https://laravel.com/project_docs/12.x/eloquent-relationships)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> laraxot/dev

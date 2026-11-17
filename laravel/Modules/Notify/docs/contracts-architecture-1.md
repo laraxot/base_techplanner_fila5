@@ -8,14 +8,11 @@ Le interfacce **DEVONO** essere posizionate nella directory `app/Contracts/`, **
 
 ```
 ✅ CORRETTO:
-<<<<<<< HEAD
 Modules/Notify/app/Contracts/SmsProviderActionInterface.php
 
 ❌ ERRATO:
 Modules/Notify/app/Actions/SMS/SmsActionInterface.php
 Modules/Notify/app/Contracts/SMS/SmsActionInterface.php (sottocartella non corretta)
-=======
->>>>>>> laraxot/dev
 ```
 
 ### 2. Namespace Unificati per le Interfacce
@@ -56,11 +53,7 @@ SendSmsInterface
 ## Struttura di Directory Corretta
 
 ```
-<<<<<<< HEAD
 Modules/Notify/
-=======
-Modules/Notify/
->>>>>>> laraxot/dev
 ├── app/
 │   ├── Actions/
 │   │   ├── Email/

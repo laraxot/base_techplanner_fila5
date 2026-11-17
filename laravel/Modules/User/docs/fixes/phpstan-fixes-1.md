@@ -31,25 +31,13 @@ Il modello `Team` accede direttamente a proprietà che potrebbero non essere dis
 3. Implementare controlli di tipo più robusti
 
 ### Collegamenti Bidirezionali
-<<<<<<< HEAD
 - [Documentazione Generale PHPStan](/docs/phpstan/phpstan_level10_linee_guida.md)
-=======
-- [Documentazione Generale PHPStan](/docs/phpstan/phpstan_level10_linee_guida.md)
->>>>>>> laraxot/dev
 - [Contratti del Modulo User](/docs/modules/user/contracts.md)
 - [Best Practices per i Modelli](/docs/modules/user/models.md)
 - [Interfacce e Contratti](/docs/modules/xot/contracts.md)
 
 ## Collegamenti tra versioni di phpstan_fixes.md
-<<<<<<< HEAD
 * [phpstan_fixes.md](../../../xot/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../user/docs/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../user/docs/fixes/phpstan_fixes.md)
 * [phpstan_fixes.md](../../../activity/docs/phpstan_fixes.md)
-=======
-## Collegamenti tra versioni di phpstan-fixes-8.md
-* [phpstan-fixes-8.md](../../../xot/docs/phpstan-fixes-8.md)
-* [phpstan-fixes-8.md](../phpstan-fixes-8.md)
-* [phpstan-fixes-8.md](../../../user/docs/fixes/phpstan-fixes-8.md)
-* [phpstan-fixes-8.md](../../../activity/docs/phpstan-fixes-8.md)
->>>>>>> laraxot/dev

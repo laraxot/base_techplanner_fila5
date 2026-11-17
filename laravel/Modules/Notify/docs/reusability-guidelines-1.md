@@ -18,22 +18,15 @@ $this->app['config']->set('database.connections.<nome progetto>_test', [
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
-<<<<<<< HEAD
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
-=======
-$user = \Modules\<nome progetto>\Models\User::factory()->create();
-'database' => '<nome progetto>_test',
-$this->app['config']->set('database.connections.<nome progetto>_test', [
->>>>>>> laraxot/dev
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
 $user = \Modules\<nome modulo>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
-<<<<<<< HEAD
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
@@ -52,8 +45,6 @@ $this->app['config']->set('database.connections.<nome progetto>_test', [
 $user = \Modules\<nome progetto>\Models\User::factory()->create();
 'database' => '<nome progetto>_test',
 $this->app['config']->set('database.connections.<nome progetto>_test', [
-=======
->>>>>>> laraxot/dev
 ```
 
 ✅ **SEMPRE utilizzare pattern riutilizzabili:**
@@ -73,7 +64,6 @@ use Modules\Xot\Datas\XotData;
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
-<<<<<<< HEAD
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome modulo>\Models\User::class
@@ -83,8 +73,6 @@ use Modules\Xot\Datas\XotData;
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
 // Invece di: \Modules\<nome progetto>\Models\User::class
-=======
->>>>>>> laraxot/dev
 $userClass = XotData::make()->getUserClass();
 $user = $userClass::factory()->create();
 ```
@@ -96,7 +84,6 @@ Per i test che richiedono configurazioni database specifiche:
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
-<<<<<<< HEAD
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
@@ -106,8 +93,6 @@ Per i test che richiedono configurazioni database specifiche:
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
 // Invece di: '<nome progetto>_test'
-=======
->>>>>>> laraxot/dev
 $testDatabase = config('database.default') . '_test';
 $this->app['config']->set("database.connections.{$testDatabase}", [
     // configurazione
@@ -132,13 +117,10 @@ use Modules\<nome progetto>\Models\User;
 use Modules\<nome progetto>\Models\Patient;
 'database' => '<nome progetto>_test'
 $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
-<<<<<<< HEAD
 use Modules\<nome progetto>\Models\User;
 use Modules\<nome progetto>\Models\Patient;
 'database' => '<nome progetto>_test'
 $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
-=======
->>>>>>> laraxot/dev
 use Modules\<nome progetto>\Models\User;
 use Modules\<nome progetto>\Models\Patient;
 'database' => '<nome progetto>_test'
@@ -158,18 +140,12 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
-<<<<<<< HEAD
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
-=======
-'app_name' => '<nome progetto>',
-'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
->>>>>>> laraxot/dev
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome modulo>\Models\Studio::class,
-<<<<<<< HEAD
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => '<nome progetto>',
@@ -182,8 +158,6 @@ $this->artisan('migrate', ['--database' => '<nome progetto>_test']);
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
 'app_name' => '<nome progetto>',
 'tenant_model' => \Modules\<nome progetto>\Models\Studio::class,
-=======
->>>>>>> laraxot/dev
 ```
 
 ## Pattern Corretti per Riusabilità
@@ -234,7 +208,6 @@ Prima di committare modifiche al modulo Notify:
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-<<<<<<< HEAD
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
@@ -244,8 +217,6 @@ Prima di committare modifiche al modulo Notify:
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
 - [ ] Nessun riferimento hardcoded a "<nome progetto>" o altri nomi di progetti
-=======
->>>>>>> laraxot/dev
 - [ ] Utilizzo di `XotData::make()->getUserClass()` per la classe User
 - [ ] Configurazioni database dinamiche nei test
 - [ ] Nessun import diretto di modelli da altri progetti
@@ -259,7 +230,6 @@ Per verificare che il modulo sia veramente riutilizzabile:
 
 ```bash
 # Cerca hardcoding di nomi progetti
-<<<<<<< HEAD
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
@@ -272,8 +242,6 @@ grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclu
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
 grep -r -i "<nome progetto>\|<nome progetto>\|dentalpro" Modules/Notify/ --exclude-dir=vendor
-=======
->>>>>>> laraxot/dev
 
 # Cerca import diretti da altri moduli
 grep -r "use Modules\\\\[^N][^o][^t][^i][^f][^y]" Modules/Notify/
@@ -282,7 +250,6 @@ grep -r "use Modules\\\\[^N][^o][^t][^i][^f][^y]" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-<<<<<<< HEAD
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
@@ -292,8 +259,6 @@ grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
-=======
->>>>>>> laraxot/dev
 ```
 
 ## Benefici della Riusabilità
@@ -306,12 +271,8 @@ grep -r "database.*<nome progetto>\|app.*<nome progetto>" Modules/Notify/
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [../../../../docs/module_reusability_guidelines.md](../../../../docs/module_reusability_guidelines.md)
 - [../../Xot/docs/xotdata_usage.md](../../Xot/docs/xotdata_usage.md)
 - [testing_best_practices.md](testing_best_practices.md)
 
 *Ultimo aggiornamento: gennaio 2025*
-=======
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> laraxot/dev

@@ -1,23 +1,6 @@
 # Pattern di Estensione per Componenti Filament
 
-<<<<<<< HEAD
 Questo documento definisce il pattern di estensione standardizzato per i componenti Filament nel sistema <nome progetto>, con particolare attenzione al principio di non estendere mai direttamente le classi Filament.
-=======
----
-title: "filament extension pattern 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament extension pattern 1"
-issues: []
-discussions: []
----
-
-# Pattern di Estensione per Componenti Filament
-
-Questo documento definisce il pattern di estensione standardizzato per i componenti Filament nel sistema <nome progetto>, con particolare attenzione al principio di non estendere mai direttamente le classi Filament.
->>>>>>> laraxot/dev
 
 ## Regola Fondamentale
 
@@ -37,11 +20,7 @@ Questo documento definisce il pattern di estensione standardizzato per i compone
 
 ## Motivazione
 
-<<<<<<< HEAD
 1. **Personalizzazione Centralizzata**: Le classi XotBase forniscono funzionalità e comportamenti personalizzati specifici per <nome progetto>, mantenendo la coerenza in tutta l'applicazione.
-=======
-1. **Personalizzazione Centralizzata**: Le classi XotBase forniscono funzionalità e comportamenti personalizzati specifici per <nome progetto>, mantenendo la coerenza in tutta l'applicazione.
->>>>>>> laraxot/dev
 
 2. **Aggiornamenti Semplificati**: Quando Filament viene aggiornato, è possibile adattare solo le classi XotBase senza dover modificare tutte le implementazioni concrete.
 
@@ -111,11 +90,7 @@ class SendSmsPage extends Page implements HasForms // ❌ ERRORE
 
 ### 1. Personalizzazione Centralizzata
 
-<<<<<<< HEAD
 Le classi XotBase possono implementare comportamenti specifici per <nome progetto>, come:
-=======
-Le classi XotBase possono implementare comportamenti specifici per <nome progetto>, come:
->>>>>>> laraxot/dev
 - Gestione multilingua avanzata
 - Integrazione con il sistema di permessi personalizzato
 - Logging e auditing specifici

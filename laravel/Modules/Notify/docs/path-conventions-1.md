@@ -7,7 +7,6 @@
    - I namespace possono essere in PascalCase ma devono mappare correttamente alle directory lowercase
 
 2. **Struttura Directory Principale**
-<<<<<<< HEAD
    - `Modules/Notify/app/` (CORRETTO)
    - `Modules/Notify/App/` (ERRATO)
 
@@ -18,8 +17,6 @@
 4. **Struttura Directory Datas**
    - `Modules/Notify/app/Datas/` (CORRETTO)
    - `Modules/Notify/App/Datas/` (ERRATO)
-=======
->>>>>>> laraxot/dev
 
 ## Namespace vs Directory
 
@@ -33,13 +30,8 @@
 ## Errori Comuni da Evitare
 
 1. **Mai utilizzare la "A" maiuscola nel percorso fisico della directory app**
-<<<<<<< HEAD
    - ✅ CORRETTO: `Modules/Notify/app/Actions/`
    - ❌ ERRATO: `Modules/Notify/App/Actions/`
-=======
-   - ✅ CORRETTO: `Modules/Notify/app/Actions/`
-   - ❌ ERRATO: `Modules/Notify/App/Actions/`
->>>>>>> laraxot/dev
 
 2. **Mai aggiungere "App" nel namespace se non definito nel composer.json del modulo**
    - ✅ CORRETTO: `namespace Modules\Notify\Actions;`

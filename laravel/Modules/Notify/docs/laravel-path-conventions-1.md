@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 # Convenzioni dei Path in Laravel e <nome progetto>
 
 ## Regole Fondamentali per i Path di Cartelle
 
 In Laravel e <nome progetto>, i nomi delle cartelle principali (come definite nella struttura standard di Laravel) **DEVONO** rispettare il caso specifico definito dalle convenzioni di Laravel.
-=======
->>>>>>> laraxot/dev
 
 ## Cartelle Standard di Laravel e loro Casing Corretto
 
@@ -27,21 +24,13 @@ In Laravel e <nome progetto>, i nomi delle cartelle principali (come definite ne
 Le viste in Laravel devono essere collocate nella cartella `resources/views` (lowercase):
 
 ```
-<<<<<<< HEAD
 Modules/Notify/resources/views/
-=======
-Modules/Notify/resources/views/
->>>>>>> laraxot/dev
 ```
 
 **NON** in:
 
 ```
-<<<<<<< HEAD
 Modules/Notify/Resources/views/
-=======
-Modules/Notify/Resources/views/
->>>>>>> laraxot/dev
 ```
 
 ## Perché è Importante
@@ -60,11 +49,7 @@ Quando si fa riferimento a viste nei file PHP:
 protected static string $view = 'notify::filament.pages.send-sms';
 
 // Il path fisico corrispondente sarà:
-<<<<<<< HEAD
 // Modules/Notify/resources/views/filament/pages/send-sms.blade.php
-=======
-// Modules/Notify/resources/views/filament/pages/send-sms.blade.php
->>>>>>> laraxot/dev
 ```
 
 ## Verifica e Correzione

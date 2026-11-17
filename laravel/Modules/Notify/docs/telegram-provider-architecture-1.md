@@ -1,23 +1,6 @@
-<<<<<<< HEAD
 # Architettura Telegram Provider per <nome progetto>
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider Telegram nel modulo Notify di <nome progetto>, mantenendo coerenza con le architetture esistenti per SMS, email e WhatsApp.
-=======
----
-title: "telegram provider architecture 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "telegram provider architecture 1"
-issues: []
-discussions: []
----
-
-# Architettura Telegram Provider per <nome progetto>
-
-Questo documento definisce l'architettura e gli standard per l'implementazione dei provider Telegram nel modulo Notify di <nome progetto>, mantenendo coerenza con le architetture esistenti per SMS, email e WhatsApp.
->>>>>>> laraxot/dev
 
 ## Principi Architetturali Fondamentali
 
@@ -31,11 +14,7 @@ L'architettura dei provider Telegram segue gli stessi principi dei provider SMS,
 ## Struttura Directory e Namespace
 
 ```
-<<<<<<< HEAD
 Modules/Notify/
-=======
-Modules/Notify/
->>>>>>> laraxot/dev
 ├── app/
 │   ├── Actions/
 │   │   └── Telegram/

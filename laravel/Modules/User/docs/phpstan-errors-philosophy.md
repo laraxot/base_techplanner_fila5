@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 - [Filament 4 Migration Guide](../../Xot/docs/filament-4-migration-guide.md)
 - [Type Safety Best Practices](../../Xot/docs/type-safety-best-practices.md)
 
@@ -12,17 +11,3 @@ canonical: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
-=======
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-philosophy.md
->>>>>>> laraxot/dev

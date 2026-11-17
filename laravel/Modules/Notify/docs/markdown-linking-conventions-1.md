@@ -9,15 +9,9 @@
 ### ❌ ERRATO: Percorsi Assoluti
 
 ```markdown
-<<<<<<< HEAD
 [Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
 [Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
 [Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
-=======
-[Convenzioni di Naming per le Interfacce](Modules/Notify/docs/INTERFACE_NAMING_CONVENTION.md)
-[Chiarimento sulla Struttura delle Interfacce](Modules/Notify/docs/INTERFACE_STRUCTURE_CLARIFICATION.md)
-[Architettura dei Contratti](Modules/Notify/docs/CONTRACTS_ARCHITECTURE.md)
->>>>>>> laraxot/dev
 ```
 
 ### ✅ CORRETTO: Percorsi Relativi
@@ -40,11 +34,7 @@ Per collegamenti a documenti in altre directory:
 1. **Portabilità**: I percorsi relativi funzionano indipendentemente dalla posizione di installazione del progetto
 2. **Compatibilità tra ambienti**: I percorsi assoluti potrebbero non funzionare in ambienti diversi
 3. **Manutenibilità**: I percorsi relativi sono più facili da mantenere quando la struttura del progetto cambia
-<<<<<<< HEAD
 4. **Standard del progetto**: <nome progetto> segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
-=======
-4. **Standard del progetto**: <nome progetto> segue lo standard di utilizzare percorsi relativi in tutti i documenti Markdown
->>>>>>> laraxot/dev
 
 ## Regole per i Collegamenti Relativi
 
@@ -63,10 +53,5 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 
 ## Collegamenti Correlati
 
-<<<<<<< HEAD
 - [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
 - [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
-=======
-- [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
-- [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
->>>>>>> laraxot/dev

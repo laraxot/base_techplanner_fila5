@@ -376,25 +376,15 @@ php artisan test --coverage --filter=MailTemplate
 ## Collegamenti
 - [Database Mail System](database-mail-system.md)
 
-<<<<<<< HEAD
 - [Testing Guide](../../../../docs/testing-guide.md)
 - [CI/CD Pipeline](../../../../docs/ci-cd.md)
-=======
-- [Testing Guide](../../../../docs/testing-guide.md)
-- [CI/CD Pipeline](../../../../docs/ci-cd.md)
->>>>>>> laraxot/dev
 
 ## Vedi Anche
 - [Laravel Testing](https://laravel.com/docs/testing)
 - [PHPUnit Documentation](https://phpunit.de/documentation.html)
 
-<<<<<<< HEAD
 - [Testing Guide](../../../../docs/project/testing-guide.md)
 - [CI/CD Pipeline](../../../../docs/project/ci-cd.md)
-=======
-- [Testing Guide](../../../../docs/project/testing-guide.md)
-- [CI/CD Pipeline](../../../../docs/project/ci-cd.md)
->>>>>>> laraxot/dev
 
 ## Vedi Anche
 - [Laravel Testing](https://laravel.com/project_docs/testing)
@@ -498,8 +488,4 @@ php artisan test --coverage --filter=MailTemplate
 
 - [Pest PHP](https://pestphp.com/docs)
 
-<<<<<<< HEAD
 - [Pest PHP](https://pestphp.com/docs)
-=======
-- [Pest PHP](https://pestphp.com/docs)
->>>>>>> laraxot/dev

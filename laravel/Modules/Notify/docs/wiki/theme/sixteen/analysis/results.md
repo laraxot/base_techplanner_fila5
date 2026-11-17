@@ -44,11 +44,7 @@ qmd: "homepage visual comparison - results notify"
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # ✓
-<<<<<<< .merge_file_odVQ0g
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
->>>>>>> laraxot/dev
 ```
 
 ### Remaining Differences (Acceptable):

@@ -10,20 +10,12 @@ Le interfacce sono organizzate in due livelli:
 
 1. **Interfacce Generiche**: Posizionate direttamente nella directory `app/Contracts/`
    ```
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SmsActionContract.php
-=======
-   Modules/Notify/app/Contracts/SmsActionContract.php
->>>>>>> laraxot/dev
    ```
 
 2. **Interfacce Specifiche per Canale**: Posizionate in sottodirectory dedicate
    ```
-<<<<<<< HEAD
    Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-=======
-   Modules/Notify/app/Contracts/SMS/SmsActionContract.php
->>>>>>> laraxot/dev
    ```
 
 ### Convenzioni di Naming

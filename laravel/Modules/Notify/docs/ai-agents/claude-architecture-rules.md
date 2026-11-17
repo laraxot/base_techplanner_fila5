@@ -38,26 +38,10 @@ cd laravel/Themes/Meetup
 composer update -W
 npm install
 npm run build
-<<<<<<< .merge_file_Z4UoV3
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
 
 ---
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-```
-
----
-
-title: "claude architecture rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "claude architecture rules"
-issues: []
-discussions: []
->>>>>>> laraxot/dev
 ## 2. BelongsToMany - CRITICAL
 
 **NEVER use `$this->belongsToMany()` for many-to-many. ALWAYS use `$this->belongsToManyX()`.**

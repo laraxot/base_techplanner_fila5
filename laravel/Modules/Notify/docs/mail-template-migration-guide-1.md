@@ -8,11 +8,7 @@ Questo documento descrive l'implementazione del campo `slug` nella tabella `mail
 
 Il file di migrazione principale per la tabella `mail_templates` è:
 ```
-<<<<<<< HEAD
 Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
-=======
-Modules/Notify/database/migrations/2018_10_10_000002_create_mail_templates_table.php
->>>>>>> laraxot/dev
 ```
 
 Questo file è implementato usando `XotBaseMigration`, che utilizza un pattern evolutivo che differisce dalle migrazioni standard di Laravel.

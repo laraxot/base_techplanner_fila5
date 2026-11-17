@@ -184,17 +184,10 @@ cd laravel/Themes/Sixteen
 npm run build
 
 # Copy to public
-<<<<<<< .merge_file_uDKzAG
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 
 # View reports
 cat laravel/Themes/Sixteen/docs/complete-visual-parity-report.md
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-
-# View reports
-cat laravel/Themes/Sixteen/docs/COMPLETE-VISUAL-PARITY-REPORT.md
->>>>>>> laraxot/dev
 cat laravel/Themes/Sixteen/docs/visual-parity-data.json
 ```
 
@@ -234,11 +227,7 @@ gh issue list --repo laraxot/base_fixcity_fila5 --label "priority:critical"
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # ~2 seconds
-<<<<<<< .merge_file_uDKzAG
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
->>>>>>> laraxot/dev
 # New CSS hash appears in output (e.g., app-DCbieyUp.css)
 ```
 

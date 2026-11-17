@@ -252,7 +252,6 @@ return [
 
 ### 1. Controllo Sintassi PHP
 ```bash
-<<<<<<< HEAD
 cd laravel
 cd laravel
 cd laravel
@@ -730,8 +729,6 @@ cd laravel
 cd laravel
 cd laravel
 cd laravel
-=======
->>>>>>> laraxot/dev
 php -l Modules/Notify/lang/it/send_email.php
 
 # Output: No syntax errors detected
@@ -755,7 +752,6 @@ php -l Modules/Notify/lang/it/send_email.php
 ## 🔗 Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
@@ -858,8 +854,6 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
-=======
->>>>>>> laraxot/dev
 - [Struttura Modulo Notify](./README.md)
 
 ### File Modificati
@@ -1201,17 +1195,4 @@ php -l Modules/Notify/lang/it/send_email.php
 ---
 
 **Ultimo aggiornamento**: Gennaio 2025
-<<<<<<< HEAD
 **Autore**: Sistema di miglioramento automatico
-=======
-title: "send email translation improvement 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "send email translation improvement 1"
-issues: []
-discussions: []
-**Ultimo aggiornamento**: Gennaio 2025
-**Autore**: Sistema di miglioramento automatico
->>>>>>> laraxot/dev

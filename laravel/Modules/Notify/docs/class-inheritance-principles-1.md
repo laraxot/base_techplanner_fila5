@@ -93,7 +93,6 @@
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-<<<<<<< HEAD
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
@@ -126,7 +125,6 @@
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-=======
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
@@ -159,28 +157,23 @@
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
->>>>>>> laraxot/dev
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-<<<<<<< HEAD
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-=======
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
->>>>>>> laraxot/dev
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-<<<<<<< HEAD
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
@@ -203,7 +196,6 @@
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-=======
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
@@ -226,19 +218,14 @@
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
->>>>>>> laraxot/dev
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-<<<<<<< HEAD
-=======
->>>>>>> laraxot/dev
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-<<<<<<< HEAD
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
@@ -272,68 +259,6 @@
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
 # Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-# Principi di Ereditarietà nelle Classi <nome progetto>
-=======
->>>>>>> laraxot/dev
 
 ## Regola Fondamentale: No Duplicate Declarations
 
@@ -409,7 +334,6 @@ Per identificare dichiarazioni duplicate, usare:
 ```bash
 
 # Trova classi che estendono XotBasePage e implementano HasForms
-<<<<<<< HEAD
 grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
@@ -935,8 +859,6 @@ grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
 grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
-=======
->>>>>>> laraxot/dev
 ```
 
 ## Riferimenti

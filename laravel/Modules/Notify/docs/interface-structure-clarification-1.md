@@ -5,11 +5,7 @@
 , le interfacce per le azioni SMS seguono questa struttura:
 
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Contracts/SMS/SmsActionContract.php
-=======
-Modules/Notify/app/Contracts/SMS/SmsActionContract.php
->>>>>>> laraxot/dev
 ```
 
 Con il namespace corrispondente:

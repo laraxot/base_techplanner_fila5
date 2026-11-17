@@ -53,11 +53,7 @@ Le pagine con nomi non conformi potrebbero:
 Eseguire il seguente comando per trovare pagine non conformi:
 
 ```bash
-<<<<<<< HEAD
 find Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
-=======
-find Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
->>>>>>> laraxot/dev
 ```
 
 ## Riferimenti

@@ -14,42 +14,33 @@
    - Le strutture gerarchiche sono spesso incomplete (mancano elementi come icon, sort, plural in navigation)
 
 3. **File Problematici Identificati**
-<<<<<<< HEAD
    - `Modules/Notify/lang/it/send_aws_email.php`
    - `Modules/Notify/lang/it/setting.php`
    - `Modules/Notify/lang/it/edit_mail_template.php`
    - `Modules/Notify/lang/it/send_netfun_sms.php`
    - `Modules/Notify/lang/it/notification_template.php`
-=======
->>>>>>> laraxot/dev
    - E altri 15 file (elenco completo in appendice)
 
 ### Correzioni Implementate
 
 1. **Documentazione Standard**
-<<<<<<< HEAD
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_NAMING_RULES.md`
    - Creato `Modules/Notify/docs/TRANSLATION_FILE_STRUCTURE_GUIDE.md`
 
 2. **File Corretti**
    - Creato `Modules/Notify/lang/it/send_whatsapp.php` con struttura corretta
    - Aggiornato `Modules/Notify/lang/it/send_netfun_sms.php` con struttura completa
-=======
->>>>>>> laraxot/dev
    - Rimosso il file con naming errato `send_whats_app.php`
 
 ### Prossime Correzioni da Implementare
 
 1. **File da Correggere Prioritariamente**
-<<<<<<< HEAD
    - `Modules/Notify/lang/it/send_email.php`
    - `Modules/Notify/lang/it/send_sms.php`
    - `Modules/Notify/lang/it/send_telegram.php`
 
 2. **Verifiche da Eseguire**
    - Analisi della cartella `Modules/Notify/lang/en/` per identificare problemi simili
-=======
->>>>>>> laraxot/dev
    - Controllo dei riferimenti nel codice che potrebbero puntare ai vecchi file
 
 ## Documentazione di Riferimento
@@ -66,7 +57,6 @@
 ## Appendice: Elenco Completo dei File Non Conformi
 
 ```
-<<<<<<< HEAD
 Modules/Notify/lang/it/send_aws_email.php
 Modules/Notify/lang/it/setting.php
 Modules/Notify/lang/it/edit_mail_template.php
@@ -87,6 +77,4 @@ Modules/Notify/lang/it/send_firebase_push_notification.php
 Modules/Notify/lang/it/send_email.php
 Modules/Notify/lang/it/send_spatie_email.php
 Modules/Notify/lang/it/create_mail_template.php
-=======
->>>>>>> laraxot/dev
 ```

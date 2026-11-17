@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # PHPStan Level 10 Errors Resolution Roadmap - User Module
 
 **Data**: 2025-01-27  
@@ -203,5 +202,3 @@ Tutti gli errori sono stati corretti:
     - Aggiunto `@SuppressWarnings` per `StaticAccess` e `CouplingBetweenObjects` in `PassportServiceProvider`.
 
 *Ultimo aggiornamento: 2025-01-27*
-=======
->>>>>>> laraxot/dev

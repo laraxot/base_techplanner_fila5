@@ -615,8 +615,4 @@ class AnalyticsExporter
         return $path;
     }
 }
-<<<<<<< HEAD
 ``` 
-=======
-``` 
->>>>>>> laraxot/dev

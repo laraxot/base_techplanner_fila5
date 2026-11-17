@@ -156,11 +156,7 @@ cd laravel/Themes/Sixteen
 npm run build
 
 # Copy assets
-<<<<<<< .merge_file_bKMjEM
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
->>>>>>> laraxot/dev
 
 # Clear cache
 php artisan optimize:clear
@@ -479,11 +475,7 @@ cd laravel/Themes/Sixteen
 npm run build
 
 # Copy assets
-<<<<<<< .merge_file_bKMjEM
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
->>>>>>> laraxot/dev
 
 # Clear cache
 php artisan optimize:clear

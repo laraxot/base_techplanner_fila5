@@ -634,11 +634,7 @@ Themes/Sixteen/
 # ALWAYS run after ANY frontend change:
 cd Themes/Sixteen/
 npm run build          # Compile assets
-<<<<<<< .merge_file_gMzCpB
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
->>>>>>> laraxot/dev
 
 # These commands are MANDATORY for any:
 # - CSS changes
@@ -1826,12 +1822,7 @@ Monitoring:
 
 Frontend:
 [ ] Theme built (npm run build)
-<<<<<<< .merge_file_gMzCpB
 niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-=======
-[ ] Assets deployed (symlink public_html/themes (npm run copy obsoleto))
-[ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
->>>>>>> laraxot/dev
 [ ] Dark mode tested
 [ ] Responsive design tested
 [ ] Accessibility tested

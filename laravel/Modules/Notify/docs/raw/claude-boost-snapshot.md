@@ -698,14 +698,7 @@ it('has emails', function (string $email) {
 cd /var/www/html/_bases/base_fixcity_fila5/laravel/Themes/Sixteen
 cd /var/www/html/_bases/base_ptvx_fila5/laravel/Themes/Sixteen
 npm run build
-<<<<<<< .merge_file_KHMlzV
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-=======
-cd /var/www/html/_bases/base_fixcity_fila5_mono/laravel/Themes/Sixteen
-cd /var/www/html/_bases/base_ptvx_fila5_mono/laravel/Themes/Sixteen
-npm run build
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
->>>>>>> laraxot/dev
 ```
 
 ### When to Run:
@@ -718,13 +711,7 @@ npm run build
 ### Why This Is Critical:
 - The Laravel application reads compiled assets from the theme's `resources/dist/` directory
 - Without `npm run build`, Tailwind won't compile new classes or changes
-<<<<<<< .merge_file_KHMlzV
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-=======
-- niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-
-- Without `symlink public_html/themes (npm run copy obsoleto)`, the changes won't be available to the main Laravel application
->>>>>>> laraxot/dev
 - Users will NOT see any frontend changes without these steps
 
 ### Remember:

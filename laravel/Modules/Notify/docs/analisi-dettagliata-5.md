@@ -811,8 +811,4 @@ class WebhookControllerTest extends TestCase
         $response->assertStatus(401);
     }
 }
-<<<<<<< HEAD
 ``` 
-=======
-``` 
->>>>>>> laraxot/dev

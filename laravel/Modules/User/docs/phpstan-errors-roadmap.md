@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 - [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
 - [PHPStan Code Quality Guide](../../Xot/docs/phpstan-code-quality-guide.md)
 - [Property Exists vs Isset](../../Xot/docs/phpstan-code-quality-guide.md#5-property-access-su-mixed-eloquent---regola-critica)
@@ -17,17 +16,3 @@ canonical: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
-=======
-related:
-  - "./00-index-1.md"
-  - "./00-index.md"
-  - "./2fa-guide.md"
-  - "./2fa.md"
-  - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention-1.md"
-  - "./actions-path-convention-2.md"
-  - "./actions-path-convention.md"
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/phpstan-errors-roadmap.md
->>>>>>> laraxot/dev

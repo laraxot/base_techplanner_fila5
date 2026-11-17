@@ -1,23 +1,6 @@
 # Convenzioni di Naming per Filament
 
-<<<<<<< HEAD
 Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema <nome progetto>, con particolare attenzione alle pagine e alle risorse.
-=======
----
-title: "filament naming conventions 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament naming conventions 1"
-issues: []
-discussions: []
----
-
-# Convenzioni di Naming per Filament
-
-Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema <nome progetto>, con particolare attenzione alle pagine e alle risorse.
->>>>>>> laraxot/dev
 
 ## Convenzioni di Naming per Pagine Filament
 

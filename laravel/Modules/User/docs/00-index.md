@@ -1,12 +1,12 @@
-# 📚 **Indice Documentazione Modulo User**
+# Indice documentazione — Modulo User
 
-**Status**: ✅ PHPStan Level 10 Compliant
-**Module Version**: 2.5.0
+**Scopo del modulo:** identità (auth, RBAC Spatie, team/tenant, Passport/SSO, widget login Filament).  
+**Navigazione canonica:** [README.md](./README.md) (non `readme.md` — eliminato come duplicato case).
 
-## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
-2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
-3. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
+## Lettura essenziale
+1. [README.md](./README.md) — panorama identità e mappa PHPStan
+2. [roadmap.md](./roadmap.md) — evoluzione prodotto
+3. [philosophy.md](./philosophy.md) — “essere unici” / identità digitale
 
 ## 🏗️ **Architettura & Auth**
 - 🔐 **[Authentication Flow](./authentication.md)** - Dettagli sul ciclo di vita della sessione.

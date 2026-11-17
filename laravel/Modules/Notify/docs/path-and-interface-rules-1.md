@@ -16,11 +16,7 @@
 
 ### Directory Fisiche (path su disco)
 ```
-<<<<<<< HEAD
 Modules/Notify/
-=======
-Modules/Notify/
->>>>>>> laraxot/dev
 ├── app/                           # Directory fisica con app minuscolo
 │   ├── Actions/
 │   │   ├── Email/                # Azioni per email

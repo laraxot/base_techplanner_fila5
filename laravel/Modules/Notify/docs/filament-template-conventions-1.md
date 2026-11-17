@@ -67,13 +67,8 @@ Non seguire queste convenzioni può portare a:
 Per verificare che tutti i template seguano queste convenzioni:
 
 ```bash
-<<<<<<< HEAD
 grep -L "name=\"description\"" Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"footer\"" Modules/*/resources/views/filament/pages/*.blade.php
-=======
-grep -L "name=\"description\"" Modules/*/resources/views/filament/pages/*.blade.php
-grep -L "name=\"footer\"" Modules/*/resources/views/filament/pages/*.blade.php
->>>>>>> laraxot/dev
 ```
 
 ## Riferimenti

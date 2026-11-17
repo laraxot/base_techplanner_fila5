@@ -16,21 +16,13 @@ Il metodo `addAttachments()` supporta **due formati** per gli allegati:
 // Formato corretto - allegato da file su filesystem
 $attachments = [
     [
-<<<<<<< HEAD
         'path' => 'public_html/images/avatars/default-3.svg',
-=======
-        'path' => 'public_html/images/avatars/default-3.svg',
->>>>>>> laraxot/dev
         'as' => 'logo.svg',  // Opzionale: nome del file da mostrare nell'email
         'mime' => 'image/svg+xml',  // Opzionale: MIME type del file
     ],
     // Eventualmente altri allegati...
     [
-<<<<<<< HEAD
         'path' => 'public_html/documents/terms.pdf',
-=======
-        'path' => 'public_html/documents/terms.pdf',
->>>>>>> laraxot/dev
         'as' => 'termini.pdf',
         'mime' => 'application/pdf',
     ],
@@ -216,11 +208,7 @@ Ogni allegato può utilizzare **due formati** a seconda della fonte:
 
 ### Esempio: Email con PDF di Scheda Valutazione
 
-<<<<<<< HEAD
 Vedi [Email PDF Attachments](../../../ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
-=======
-Vedi [Email PDF Attachments](../../../ptv/docs/email-pdf-attachments.md) per un esempio completo di generazione e invio PDF come allegato email.
->>>>>>> laraxot/dev
 
 ## Esempi Completi
 
@@ -298,20 +286,13 @@ foreach ($records as $record) {
 ## Collegamenti alla Documentazione Correlata
 
 ### Documentazione Interna
-<<<<<<< HEAD
 - [Ptv - Complete PDF Email Guide](../../../ptv/docs/pdf-email-attachments-complete-guide.md)
 - [Xot - PDF Generation Technical](../../../xot/docs/actions/pdf-content-generation-technical.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 - [EMAIL_TROUBLESHOOTING.md](./email_troubleshooting.md)
-=======
->>>>>>> laraxot/dev
 
 ### File Correlati
 - `Modules/Notify/app/Emails/SpatieEmail.php` - Gestione allegati
 - `Modules/Notify/app/Notifications/RecordNotification.php` - Notifiche con allegati
-<<<<<<< HEAD
 - `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
-=======
-- `Modules/Xot/app/Actions/Pdf/GetPdfContentByRecordAction.php` - Generazione PDF
->>>>>>> laraxot/dev

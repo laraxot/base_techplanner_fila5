@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: phpstan-fix-plan-

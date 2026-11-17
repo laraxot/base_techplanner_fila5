@@ -7,28 +7,19 @@
 ### ✅ Path Corretti
 
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Actions/SMS
 Modules/Notify/app/Http/Controllers
 Modules/Notify/app/Providers
 Modules/Notify/app/Models
 Modules/Notify/app/Filament
-=======
->>>>>>> laraxot/dev
 ```
 
 ### ❌ Path Errati
 
 ```
-<<<<<<< HEAD
 Modules/Notify/App/Actions/SMS
 Modules/Notify/App/Http/Controllers
 Modules/Notify/App/Providers
-=======
-Modules/Notify/App/Actions/SMS
-Modules/Notify/App/Http/Controllers
-Modules/Notify/App/Providers
->>>>>>> laraxot/dev
 ```
 
 ## Struttura Corretta dei Namespace
@@ -63,11 +54,7 @@ namespace Modules\Notify\App\Datas;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
-=======
-Modules/Notify/app/Actions/SMS/SendNetfunSmsAction.php
->>>>>>> laraxot/dev
 ```
 
 **Namespace corretto:**
@@ -79,11 +66,7 @@ namespace Modules\Notify\Actions\SMS;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Http/Controllers/NotificationController.php
-=======
-Modules/Notify/app/Http/Controllers/NotificationController.php
->>>>>>> laraxot/dev
 ```
 
 **Namespace corretto:**
@@ -95,11 +78,7 @@ namespace Modules\Notify\Http\Controllers;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Providers/NotifyServiceProvider.php
-=======
-Modules/Notify/app/Providers/NotifyServiceProvider.php
->>>>>>> laraxot/dev
 ```
 
 **Namespace corretto:**
@@ -111,11 +90,7 @@ namespace Modules\Notify\Providers;
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Datas/NetfunSMSMessage.php
-=======
-Modules/Notify/app/Datas/NetfunSMSMessage.php
->>>>>>> laraxot/dev
 ```
 
 **Namespace corretto:**
@@ -132,11 +107,7 @@ namespace Modules\Notify\App\Datas;
 
 ## Motivo di questa Regola
 
-<<<<<<< HEAD
 Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto <nome progetto>.
-=======
-Questa struttura di namespace mantiene compatibilità con la convenzione di Laravel e il sistema di moduli Nwidart, anche se i file sono fisicamente organizzati in modo diverso. Questo approccio è stato adottato per standardizzare i namespace in tutto il progetto <nome progetto>.
->>>>>>> laraxot/dev
 
 ## Esempio per Datas
 
@@ -162,21 +133,13 @@ Per le regole generali e condivise tra tutti i moduli, consulta anche:
 - [Regole Generali per i Namespace](/laravel/Modules/Xot/docs/NAMESPACE-RULES.md)
 - [Convenzioni di Codice](/laravel/Modules/Xot/docs/CODE-CONVENTIONS.md)
 - [Struttura dei Moduli](/laravel/Modules/Xot/docs/MODULE-STRUCTURE.md)
-<<<<<<< HEAD
 - [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
-=======
-- [Collegamento Bidirezionale: Documentazione Root](../../../../../docs/links.md)
->>>>>>> laraxot/dev
 
 ### Esempio 5: Console Command
 
 **Path fisico corretto:**
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
-=======
-Modules/Notify/app/Console/Commands/AnalyzeTranslationFiles.php
->>>>>>> laraxot/dev
 ```
 
 **Namespace corretto:**
@@ -193,16 +156,4 @@ namespace Modules\Notify\App\Console\Commands;
 
 ---
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-05-12*
-=======
-title: "path and namespace rules 1"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "path and namespace rules 1"
-issues: []
-discussions: []
-*Ultimo aggiornamento: 2025-05-12*
->>>>>>> laraxot/dev

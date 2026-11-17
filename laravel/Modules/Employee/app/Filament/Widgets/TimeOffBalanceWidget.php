@@ -7,7 +7,6 @@ namespace Modules\Employee\Filament\Widgets;
 use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Override;
-use Webmozart\Assert\Assert;
 
 /**
  * TimeOffBalanceWidget - Leave Balance Display Widget
@@ -126,12 +125,6 @@ class TimeOffBalanceWidget extends XotBaseSchemaWidget
         if ($minutes > 0) {
             $formatted .= ($wholeHours > 0 ? ' ' : '').$minutes.'m';
         }
-
-        Assert::notEq(
-            $formatted,
-            '',
-            __FILE__.':'.__LINE__.' - '.class_basename(__CLASS__).' - non-zero minutes must format to at least hours or minutes'
-        );
 
         return ($isNegative ? '-' : '').$formatted;
     }

@@ -17,11 +17,7 @@ Le interfacce devono sempre essere collocate nella directory `/app/Contracts/`, 
 ### Corretta Organizzazione delle Interfacce
 
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Contracts/
-=======
-Modules/Notify/app/Contracts/
->>>>>>> laraxot/dev
 ├── SmsProviderActionInterface.php   ✅ CORRETTO
 ├── NotificationChannelInterface.php ✅ CORRETTO
 └── ...
@@ -30,11 +26,7 @@ Modules/Notify/app/Contracts/
 ### Errori da Evitare
 
 ```
-<<<<<<< HEAD
 Modules/Notify/app/Actions/SMS/
-=======
-Modules/Notify/app/Actions/SMS/
->>>>>>> laraxot/dev
 ├── SmsActionInterface.php           ❌ ERRATO
 └── ...
 ```

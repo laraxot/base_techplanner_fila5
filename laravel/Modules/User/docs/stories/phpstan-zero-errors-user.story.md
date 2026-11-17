@@ -64,3 +64,7 @@ Scelte sui tipi (nessun `mixed` di comodo):
 - TODO (`gh` non installato su questa macchina)
 ### Discussions
 - TODO
+
+## Ripresa 2026-11-17
+
+Riaperta: residuali da baseline593 (lang duplicate keys, Livewire tipizzazione, CreateUserTest mistyped `$page`, Reset `@phpstan-ignore`). Fix purpose-first applicati; rimisurare `Modules/User` quando host `pgrep phpstan` ≤6. Docs: canonico [phpstan-fixes.md](../phpstan-fixes.md) — non aggiungere altri file phpstan*.
