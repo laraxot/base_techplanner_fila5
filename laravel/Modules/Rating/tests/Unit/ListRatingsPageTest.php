@@ -18,19 +18,19 @@ describe('ListRatings page config', function (): void {
         $page = $this->page;
         Assert::assertInstanceOf(ListRatings::class, $page);
         $columns = $page->getTableColumns();
-        ensure(array_keys($columns))->toEqual(['id', 'title', 'rule', 'is_disabled', 'is_readonly']);
+        ratingEnsure(array_keys($columns))->toEqual(['id', 'title', 'rule', 'is_disabled', 'is_readonly']);
     });
 
     it('defines default empty filters and header actions', function (): void {
         /** @var TestCase $this */
         $page = $this->page;
         Assert::assertInstanceOf(ListRatings::class, $page);
-        ensure($page->getTableFilters())->toBeEmpty();
+        ratingEnsure($page->getTableFilters())->toBeEmpty();
 
         $method = new ReflectionMethod(ListRatings::class, 'getTableHeaderActions');
         $method->setAccessible(true);
 
-        ensure($method->invoke($page))->toBeEmpty();
+        ratingEnsure($method->invoke($page))->toBeEmpty();
     });
 
     it('defines view/edit/delete actions and bulk delete', function (): void {
@@ -38,9 +38,9 @@ describe('ListRatings page config', function (): void {
         $page = $this->page;
         Assert::assertInstanceOf(ListRatings::class, $page);
         $actions = $page->getTableActions();
-        ensure($actions)->toHaveKeys(['view', 'edit', 'delete']);
+        ratingEnsure($actions)->toHaveKeys(['view', 'edit', 'delete']);
 
         $bulk = $page->getTableBulkActions();
-        ensure($bulk)->toHaveKey('delete');
+        ratingEnsure($bulk)->toHaveKey('delete');
     });
 });

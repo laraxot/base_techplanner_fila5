@@ -14,7 +14,7 @@
     "Chart": false,
     "Cms": true,
     "DbForge": true,
-    "FormBuilder": true,
+    "FormBuilder": false,
     "Employee": true,
     "AI": true,
     "Blog": true,

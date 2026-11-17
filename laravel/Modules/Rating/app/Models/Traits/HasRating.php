@@ -19,7 +19,9 @@ use Modules\Rating\Models\RatingMorph;
 trait HasRating
 {
     /**
-     * @return MorphToMany<Rating, $this>
+     * Pivot tipizzato: RatingMorph collega host morphable e Rating (scommesse/UI).
+     *
+     * @return MorphToMany<Rating, $this, RatingMorph, 'pivot'>
      */
     public function ratings(): MorphToMany
     {

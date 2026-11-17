@@ -22,6 +22,7 @@ class Change extends Component
 {
     // use HasUserProperty;
 
+    /** @var list<array<string, mixed>> */
     public array $teams = [];
 
     public XotData $xot;
@@ -74,11 +75,13 @@ class Change extends Component
 
     public function render(): View
     {
+        /** @var view-string $view */
         $view = 'user::livewire.team.change';
         $view_params = [
             'view' => $view,
         ];
         if ([] === $this->teams) {
+            /** @var view-string $view */
             $view = 'ui::livewire.empty';
         }
 

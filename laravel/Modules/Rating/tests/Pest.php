@@ -7,7 +7,7 @@ use Modules\Rating\Tests\TestCase;
 
 uses(TestCase::class)->in('Feature', 'Unit');
 
-function ensure(mixed $value): Ensure
+function ratingEnsure(mixed $value): Ensure
 {
     return new Ensure($value);
 }
