@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_Cu38Ou
+=======
+<<<<<<< .merge_file_b4BHO5
+>>>>>>> .merge_file_b1d5ra
 ---
 title: "best practices"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_Cu38Ou
+=======
+=======
+>>>>>>> .merge_file_wMEeHQ
+>>>>>>> .merge_file_b1d5ra
 # Best Practices – Geo Module
 
 ## Principi DRY/KISS

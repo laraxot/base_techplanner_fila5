@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "missing features"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Analisi Funzionalità Mancanti - Modulo Notify
@@ -245,4 +244,13 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 - [Notify README](./readme.md)
 
 ---
+
+title: "missing features"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "missing features"
+issues: []
+discussions: []
 **Prossima Revisione**: [DATE]

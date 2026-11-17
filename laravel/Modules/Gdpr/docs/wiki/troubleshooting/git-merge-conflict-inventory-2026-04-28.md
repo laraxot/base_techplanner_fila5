@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_yM1iaf
+=======
+<<<<<<< .merge_file_2Ef7Ae
+>>>>>>> .merge_file_CuDAVJ
 ---
 title: "git merge conflict inventory 2026 04 28"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_yM1iaf
+=======
+=======
+>>>>>>> .merge_file_Ra3034
+>>>>>>> .merge_file_CuDAVJ
 # Git Conflict Inventory
 
 - Date: 2026-04-28

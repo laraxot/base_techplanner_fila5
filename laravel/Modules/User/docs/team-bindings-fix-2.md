@@ -1,3 +1,26 @@
+<<<<<<< .merge_file_ZlvmUN
+=======
+---
+title: "Fix Binding Team Models nel Modulo User"
+type: concept
+tags: [team, bindings, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "team-bindings-fix-2 fix binding team models nel modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_9Xnk2v
 # Fix Binding Team Models nel Modulo User
 
 ## Panoramica
@@ -105,7 +128,11 @@ public function teamUsers(): HasMany
 
 ### Funzionalità Ripristinate
 - ✅ Creazione e gestione team
+<<<<<<< .merge_file_ZlvmUN
 - ✅ Inviti ai team
+=======
+- ✅ Inviti ai team  
+>>>>>>> .merge_file_9Xnk2v
 - ✅ Relazioni User-Team
 - ✅ Controllo permessi team-based
 - ✅ Switch tra team multipli
@@ -165,6 +192,7 @@ $this->assertTrue($user->belongsToTeam($team));
 - [TeamUser Model](../app/Models/TeamUser.php)
 - [TeamInvitation Model](../app/Models/TeamInvitation.php)
 - [UserServiceProvider](../app/Providers/UserServiceProvider.php)
+<<<<<<< .merge_file_ZlvmUN
 - [Critical Errors Documentation](../../<nome progetto>/docs/critical-errors-resolved.md)
 
 ---
@@ -172,3 +200,12 @@ $this->assertTrue($user->belongsToTeam($team));
 **Autore**: AI Assistant
 **Data**: Gennaio 2025
 **Versione**: 1.0
+=======
+- [Critical Errors Documentation](../../Quaeris/docs/critical-errors-resolved.md)
+
+---
+
+**Autore**: AI Assistant  
+**Data**: Gennaio 2025  
+**Versione**: 1.0  
+>>>>>>> .merge_file_9Xnk2v

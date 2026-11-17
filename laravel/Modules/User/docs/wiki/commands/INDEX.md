@@ -34,6 +34,11 @@ Le Commands progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 
 - La sorgente di verita' per le Commands e' sempre il wiki locale
 - Non embeddare Commands nei prompt di avvio
+<<<<<<< .merge_file_5OGmFT
+=======
+- Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/index.md)
+
+>>>>>>> .merge_file_LULggl
 - Per Commands globali, consulta il [wiki root](../../docs/wiki/commands/INDEX.md)
 
 ## Aggiungere una Nuova COMMANDS
@@ -43,3 +48,10 @@ Le Commands progettuali vivono qui, nel wiki del Module **User**, e vengono cari
 3. Aggiorna questo indice se la Commands e' ricorrente
 4. Committa: `docs: add commands <nome>`
 
+<<<<<<< .merge_file_5OGmFT
+=======
+
+## Console User (2026-06-10)
+
+- [user-super-admin.md](user-super-admin.md) — `--email`, argomento, interattivo; no Prompts WSL
+>>>>>>> .merge_file_LULggl

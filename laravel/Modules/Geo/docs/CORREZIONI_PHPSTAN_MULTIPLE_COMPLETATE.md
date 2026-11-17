@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_wDVOpG
+<<<<<<< .merge_file_ebAtka
+=======
+<<<<<<< .merge_file_G4soSx
+>>>>>>> .merge_file_fRp4qz
+=======
+<<<<<<< .merge_file_G4soSx
+>>>>>>> .merge_file_tRxPxs
 ---
 title: "CORREZIONI PHPSTAN MULTIPLE COMPLETATE"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_wDVOpG
+<<<<<<< .merge_file_ebAtka
+=======
+=======
+>>>>>>> .merge_file_bs1LwK
+>>>>>>> .merge_file_fRp4qz
+=======
+=======
+>>>>>>> .merge_file_bs1LwK
+>>>>>>> .merge_file_tRxPxs
 # ✅ CORREZIONI PHPStan MULTIPLE COMPLETATE
 
 ## 🎯 Sessione di Bug Fixing Completata
@@ -154,6 +172,14 @@ array_merge(
 
 ---
 
+<<<<<<< .merge_file_wDVOpG
+<<<<<<< .merge_file_ebAtka
+=======
+<<<<<<< .merge_file_G4soSx
+>>>>>>> .merge_file_fRp4qz
+=======
+<<<<<<< .merge_file_G4soSx
+>>>>>>> .merge_file_tRxPxs
 title: "CORREZIONI PHPSTAN MULTIPLE COMPLETATE"
 type: note
 tags: [documentation]
@@ -162,6 +188,16 @@ updated: 2026-09-26
 qmd: "CORREZIONI PHPSTAN MULTIPLE COMPLETATE"
 issues: []
 discussions: []
+<<<<<<< .merge_file_wDVOpG
+<<<<<<< .merge_file_ebAtka
+=======
+=======
+>>>>>>> .merge_file_bs1LwK
+>>>>>>> .merge_file_fRp4qz
+=======
+=======
+>>>>>>> .merge_file_bs1LwK
+>>>>>>> .merge_file_tRxPxs
 ## ✅ SESSIONE BUG FIXING COMPLETATA
 
 **17 errori PHPStan risolti** attraverso 3 moduli con implementazione di:

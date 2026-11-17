@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_hVYypF
+=======
+<<<<<<< .merge_file_T1HkEc
+>>>>>>> .merge_file_gxVnX2
 ---
 title: "RESEARCH"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_hVYypF
+=======
+=======
+>>>>>>> .merge_file_0Z6YFY
+>>>>>>> .merge_file_gxVnX2
 # Research: Laravel 13 Upgrade for Modular Project
 
 ## Overview

@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_3cJkfO
+=======
+<<<<<<< .merge_file_fxJ8Mz
+>>>>>>> .merge_file_h8XnGZ
 ---
 title: "STORY 1116 map marker fix"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_3cJkfO
+=======
+=======
+>>>>>>> .merge_file_u1UQA5
+>>>>>>> .merge_file_h8XnGZ
 # 📌 DEVE STORY-1116: FIX MAP CLUSTER MARKERS DISAPPEARANCE
 
 ## CONTESTO

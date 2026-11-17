@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_1bKv49
+=======
+<<<<<<< .merge_file_MxU2cA
+>>>>>>> .merge_file_ooyDiS
 ---
 title: "quality gate closure 2026 09 04.story"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_1bKv49
+=======
+=======
+>>>>>>> .merge_file_Uwi0YT
+>>>>>>> .merge_file_ooyDiS
 # Story: Quality-gate closure — Modules/Geo (2026-09-04)
 
 ## BMAD phase

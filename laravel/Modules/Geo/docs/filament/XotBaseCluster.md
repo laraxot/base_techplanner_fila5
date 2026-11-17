@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_DYO2c8
+=======
+<<<<<<< .merge_file_zIPWB5
+>>>>>>> .merge_file_Ntiw6m
 ---
 title: "XotBaseCluster"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_DYO2c8
+=======
+=======
+>>>>>>> .merge_file_3LwGW7
+>>>>>>> .merge_file_Ntiw6m
 # XotBaseCluster
 
 ## Descrizione

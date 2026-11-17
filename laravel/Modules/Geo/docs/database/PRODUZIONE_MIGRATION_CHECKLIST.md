@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_hFCO0E
+=======
+<<<<<<< .merge_file_5bt6GC
+>>>>>>> .merge_file_fvT3hv
 ---
 title: "PRODUZIONE MIGRATION CHECKLIST"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_hFCO0E
+=======
+=======
+>>>>>>> .merge_file_rKSkf3
+>>>>>>> .merge_file_fvT3hv
 # 📋 Produzione Migration Checklist
 
 ## Prima di Eseguire Migration in Produzione
@@ -27,6 +36,10 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_hFCO0E
+=======
+<<<<<<< .merge_file_5bt6GC
+>>>>>>> .merge_file_fvT3hv
 title: "PRODUZIONE MIGRATION CHECKLIST"
 type: note
 tags: [documentation]
@@ -35,6 +48,11 @@ updated: 2026-09-26
 qmd: "PRODUZIONE MIGRATION CHECKLIST"
 issues: []
 discussions: []
+<<<<<<< .merge_file_hFCO0E
+=======
+=======
+>>>>>>> .merge_file_rKSkf3
+>>>>>>> .merge_file_fvT3hv
 ## Procedura Step-by-Step
 
 ### Step 1: Test in Locale

@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_BOR6Ov
+=======
+<<<<<<< .merge_file_WXGOav
+>>>>>>> .merge_file_zB2Fud
 ---
 title: "migration naming pattern 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_BOR6Ov
+=======
+=======
+>>>>>>> .merge_file_FdsoBe
+>>>>>>> .merge_file_zB2Fud
 # Convenzione di Naming e Gestione delle Migrazioni
 
 ## Pattern del Progetto <main module>

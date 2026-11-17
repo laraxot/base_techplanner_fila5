@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_HbuFib
+<<<<<<< .merge_file_F2ULxz
+=======
+<<<<<<< .merge_file_RPf70p
+>>>>>>> .merge_file_e6oY3V
+=======
+<<<<<<< .merge_file_RPf70p
+>>>>>>> .merge_file_xPSnid
 ---
 title: "PHPSTAN FIXES"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_HbuFib
+<<<<<<< .merge_file_F2ULxz
+=======
+=======
+>>>>>>> .merge_file_0vIjZJ
+>>>>>>> .merge_file_e6oY3V
+=======
+=======
+>>>>>>> .merge_file_0vIjZJ
+>>>>>>> .merge_file_xPSnid
 # PHPStan Fixes for Geo Module
 
 This document outlines the PHPStan-related fixes and improvements made to the Geo module to ensure type safety and code quality at PHPStan level 9.

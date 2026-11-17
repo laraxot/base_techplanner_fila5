@@ -13,7 +13,6 @@ related:
   - "./cms.md"
   - "./index.md"
   - "./ui.md"
-status: draft
 ---
 
 # Gestione asset Vite per il tema Sixteen
@@ -48,7 +47,6 @@ Questo comando pubblica gli asset necessari e risolve l'errore.
 
 ## Collegamenti
 - [Documentazione asset Vite nel tema](../../Themes/Sixteen/docs/assets.md)
-- [Documentazione asset Vite nel tema](../../../../Themes/Sixteen/docs/assets.md)
 - [Indice gestione temi e asset](../temi_asset.md) *(creare se non esiste)*
 
 ---

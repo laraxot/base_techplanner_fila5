@@ -13,7 +13,11 @@
 - [profile.md](./-integration/profile.md)
 - [repos.md](./-integration/repos.md)
 - [socialite.md](./-integration/socialite.md)
+<<<<<<< .merge_file_XlDcXo
 - [spatie-permissions-1.md](spatie-permissions-1.md)
+=======
+- [spatie-permissions-1.md](./-integration/spatie-permissions-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [spatie-permissions-2.md](./-integration/spatie-permissions-2.md)
 - [spatie-permissions.md](./-integration/spatie-permissions.md)
 - [sso.md](./-integration/sso.md)
@@ -78,7 +82,11 @@
 - [avatar-implementation-1.md](./archive/avatar-implementation-1.md)
 - [avatar-implementation.md](./archive/avatar-implementation.md)
 - [baseuser-refactoring-completed-.md](./archive/baseuser-refactoring-completed-.md)
+<<<<<<< .merge_file_XlDcXo
 - [baseuser-refactoring-completed-1.md](baseuser-refactoring-completed-1.md)
+=======
+- [baseuser-refactoring-completed-1.md](./archive/baseuser-refactoring-completed-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./archive/baseuser-refactoring-completed-2025-10-15.deprecated.md)
 - [baseuser-refactoring-completed.md](./archive/baseuser-refactoring-completed.md)
 - [baseuser-refactoring.md](./archive/baseuser-refactoring.md)
@@ -87,7 +95,11 @@
 - [business-logic-deep-dive.md](./archive/business-logic-deep-dive.md)
 - [cms-link-1.md](./archive/cms-link-1.md)
 - [cms-link.md](./archive/cms-link.md)
+<<<<<<< .merge_file_XlDcXo
 - [code-conventions.md](code-conventions.md)
+=======
+- [code-conventions.md](./archive/code-conventions.md)
+>>>>>>> .merge_file_TbRRz9
 - [code-optimization-analysis.md](./archive/code-optimization-analysis.md)
 - [code-quality-analysis.md](./archive/code-quality-analysis.md)
 - [component-verification-rules-1.md](./archive/component-verification-rules-1.md)
@@ -122,7 +134,11 @@
 - [fullcalendar-scheduler-documentation-summary-1.md](./archive/fullcalendar-scheduler-documentation-summary-1.md)
 - [fullcalendar-scheduler-documentation-summary.md](./archive/fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1.md](./archive/fullcalendar-scheduler-license-1.md)
+<<<<<<< .merge_file_XlDcXo
 - [fullcalendar-scheduler-license-key-invalid.md](fullcalendar-scheduler-license-key-invalid.md)
+=======
+- [fullcalendar-scheduler-license-key-invalid.md](./archive/fullcalendar-scheduler-license-key-invalid.md)
+>>>>>>> .merge_file_TbRRz9
 - [fullcalendar-scheduler-license-troubleshooting-1.md](./archive/fullcalendar-scheduler-license-troubleshooting-1.md)
 - [fullcalendar-scheduler-license-troubleshooting.md](./archive/fullcalendar-scheduler-license-troubleshooting.md)
 - [fullcalendar-scheduler-license.md](./archive/fullcalendar-scheduler-license.md)
@@ -132,15 +148,26 @@
 - [generic-user-moderation-strategy.md](./archive/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./archive/git-conflict-resolution.md)
 - [git-conflicts-resolution-.md](./archive/git-conflicts-resolution-.md)
+<<<<<<< .merge_file_XlDcXo
 - [git-conflicts-resolution-1.md](git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./archive/git-conflicts-resolution-2025-01-27.deprecated.md)
 - [git-conflicts-resolution-3.md](git-conflicts-resolution-3.md)
+=======
+- [git-conflicts-resolution-1.md](./archive/git-conflicts-resolution-1.md)
+- [git-conflicts-resolution-2.md](./archive/git-conflicts-resolution-2.md)
+- [git-conflicts-resolution-2025-01-27.deprecated.md](./archive/git-conflicts-resolution-2025-01-27.deprecated.md)
+- [git-conflicts-resolution-3.md](./archive/git-conflicts-resolution-3.md)
+>>>>>>> .merge_file_TbRRz9
 - [git-conflicts-resolution.md](./archive/git-conflicts-resolution.md)
 - [hasteams-currentteam-method-choice-1.md](./archive/hasteams-currentteam-method-choice-1.md)
 - [hasteams-currentteam-method-choice.md](./archive/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./archive/hasteams-trait-analysis.md)
+<<<<<<< .merge_file_XlDcXo
 - [hasteams-trait-duplicate-methods-1.md](hasteams-trait-duplicate-methods-1.md)
+=======
+- [hasteams-trait-duplicate-methods-1.md](./archive/hasteams-trait-duplicate-methods-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [hasteams-trait-duplicate-methods.md](./archive/hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-filosofia-e-correzione-completa-1.md](./archive/hasteams-trait-filosofia-e-correzione-completa-1.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./archive/hasteams-trait-filosofia-e-correzione-completa.md)
@@ -229,7 +256,11 @@
 - [phpstan-level-10-fixes.md](./archive/phpstan-level-10-fixes.md)
 - [phpstan-relationship-fix.md](./archive/phpstan-relationship-fix.md)
 - [phpstan-roadmap.md](./archive/phpstan-roadmap.md)
+<<<<<<< .merge_file_XlDcXo
 - [profile-management.md](profile-management.md)
+=======
+- [profile-management.md](./archive/profile-management.md)
+>>>>>>> .merge_file_TbRRz9
 - [quality-status-11.md](./archive/quality-status-11.md)
 - [quality-status-2025-11.md](./archive/quality-status-2025-11.md)
 - [query-optimization-analysis.md](./archive/query-optimization-analysis.md)
@@ -260,7 +291,11 @@
 - [traits-hasteams-analisi-corretta.md](./archive/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./archive/translation-best-practices.md)
 - [translation-city-field-refactor-.md](./archive/translation-city-field-refactor-.md)
+<<<<<<< .merge_file_XlDcXo
 - [translation-city-field-refactor-1.md](translation-city-field-refactor-1.md)
+=======
+- [translation-city-field-refactor-1.md](./archive/translation-city-field-refactor-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./archive/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor.md](./archive/translation-city-field-refactor.md)
 - [translation-keys-rules.md](./archive/translation-keys-rules.md)
@@ -271,9 +306,15 @@
 - [user-factory-complete-ecosystem-integration.md](./archive/user-factory-complete-ecosystem-integration.md)
 - [user-factory-integration-1.md](./archive/user-factory-integration-1.md)
 - [user-factory-integration.md](./archive/user-factory-integration.md)
+<<<<<<< .merge_file_XlDcXo
 - [user-invitation.md](user-invitation.md)
 - [user-moderation-strategy-1.md](./archive/user-moderation-strategy-1.md)
 - [user-moderation-strategy.md](user-moderation-strategy.md)
+=======
+- [user-invitation.md](./archive/user-invitation.md)
+- [user-moderation-strategy-1.md](./archive/user-moderation-strategy-1.md)
+- [user-moderation-strategy.md](./archive/user-moderation-strategy.md)
+>>>>>>> .merge_file_TbRRz9
 - [userfactory-advanced-implementation-complete.md](./archive/userfactory-advanced-implementation-complete.md)
 - [volt-blade-implementation-1.md](./archive/volt-blade-implementation-1.md)
 - [volt-blade-implementation-error-1.md](./archive/volt-blade-implementation-error-1.md)
@@ -712,7 +753,11 @@
 - [traits-hasteams-analysis-corretta.md](./archive/historical/traits-hasteams-analysis-corretta.md)
 - [translation-architecture.md](./archive/historical/translation-architecture.md)
 - [translation-best-practices.md](./archive/historical/translation-best-practices.md)
+<<<<<<< .merge_file_XlDcXo
 - [translation-city-field-refactor-1.md](translation-city-field-refactor-1.md)
+=======
+- [translation-city-field-refactor-1.md](./archive/historical/translation-city-field-refactor-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./archive/historical/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor-conflict.md](./archive/historical/translation-city-field-refactor-conflict.md)
 - [translation-city-field-refactor.md](./archive/historical/translation-city-field-refactor.md)
@@ -849,14 +894,22 @@
 ## bug-fixes/archive
 
 - [parse-error-orphan-methods-.md](./bug-fixes/archive/parse-error-orphan-methods-.md)
+<<<<<<< .merge_file_XlDcXo
 - [parse-error-orphan-methods-1.md](bug-fixes/parse-error-orphan-methods-1.md)
+=======
+- [parse-error-orphan-methods-1.md](./bug-fixes/archive/parse-error-orphan-methods-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/archive/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods.md](./bug-fixes/archive/parse-error-orphan-methods.md)
 
 ## bug-fixes/legacy
 
 - [parse-error-orphan-methods-.md](./bug-fixes/legacy/parse-error-orphan-methods-.md)
+<<<<<<< .merge_file_XlDcXo
 - [parse-error-orphan-methods-1.md](bug-fixes/parse-error-orphan-methods-1.md)
+=======
+- [parse-error-orphan-methods-1.md](./bug-fixes/legacy/parse-error-orphan-methods-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [parse-error-orphan-methods-2025-01-27.deprecated.md](./bug-fixes/legacy/parse-error-orphan-methods-2025-01-27.deprecated.md)
 - [parse-error-orphan-methods-archive-1.md](./bug-fixes/legacy/parse-error-orphan-methods-archive-1.md)
 - [parse-error-orphan-methods.md](./bug-fixes/legacy/parse-error-orphan-methods.md)
@@ -909,7 +962,11 @@
 - [change-password-command.md](./console_commands/change-password-command.md)
 - [console-commands-philosophy-1-1.md](./console_commands/console-commands-philosophy-1-1.md)
 - [console-commands-philosophy-1.md](./console_commands/console-commands-philosophy-1.md)
+<<<<<<< .merge_file_XlDcXo
 - [console-commands-philosophy-2.md](console-commands-philosophy-2.md)
+=======
+- [console-commands-philosophy-2.md](./console_commands/console-commands-philosophy-2.md)
+>>>>>>> .merge_file_TbRRz9
 - [console-commands-philosophy.md](./console_commands/console-commands-philosophy.md)
 - [console-commands.md](./console_commands/console-commands.md)
 - [readme.md](./console_commands/readme.md)
@@ -993,7 +1050,11 @@
 - [filament-table-columns-2.md](./filament/archive/filament-table-columns-2.md)
 - [filament-table-columns.md](./filament/archive/filament-table-columns.md)
 - [teams-relation-manager-1.md](./filament/archive/teams-relation-manager-1.md)
+<<<<<<< .merge_file_XlDcXo
 - [teams-relation-manager-2.md](filament/teams-relation-manager-2.md)
+=======
+- [teams-relation-manager-2.md](./filament/archive/teams-relation-manager-2.md)
+>>>>>>> .merge_file_TbRRz9
 - [teams-relation-manager.md](./filament/archive/teams-relation-manager.md)
 
 ## filament/errors
@@ -1006,7 +1067,11 @@
 - [filament-table-columns-2.md](./filament/legacy/filament-table-columns-2.md)
 - [filament-table-columns.md](./filament/legacy/filament-table-columns.md)
 - [teams-relation-manager-1.md](./filament/legacy/teams-relation-manager-1.md)
+<<<<<<< .merge_file_XlDcXo
 - [teams-relation-manager-2.md](filament/teams-relation-manager-2.md)
+=======
+- [teams-relation-manager-2.md](./filament/legacy/teams-relation-manager-2.md)
+>>>>>>> .merge_file_TbRRz9
 - [teams-relation-manager.md](./filament/legacy/teams-relation-manager.md)
 
 ## filament/widgets
@@ -1032,14 +1097,22 @@
 ## fixes/archive
 
 - [base-classes-corrections-.md](./fixes/archive/base-classes-corrections-.md)
+<<<<<<< .merge_file_XlDcXo
 - [base-classes-corrections-1.md](fixes/base-classes-corrections-1.md)
+=======
+- [base-classes-corrections-1.md](./fixes/archive/base-classes-corrections-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/archive/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections.md](./fixes/archive/base-classes-corrections.md)
 
 ## fixes/legacy
 
 - [base-classes-corrections-.md](./fixes/legacy/base-classes-corrections-.md)
+<<<<<<< .merge_file_XlDcXo
 - [base-classes-corrections-1.md](fixes/base-classes-corrections-1.md)
+=======
+- [base-classes-corrections-1.md](./fixes/legacy/base-classes-corrections-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [base-classes-corrections-2025-10-15.deprecated.md](./fixes/legacy/base-classes-corrections-2025-10-15.deprecated.md)
 - [base-classes-corrections-archive-1.md](./fixes/legacy/base-classes-corrections-archive-1.md)
 - [base-classes-corrections.md](./fixes/legacy/base-classes-corrections.md)
@@ -1090,7 +1163,11 @@
 - [avatar-implementation-1.md](./legacy/avatar-implementation-1.md)
 - [avatar-implementation.md](./legacy/avatar-implementation.md)
 - [baseuser-refactoring-completed-.md](./legacy/baseuser-refactoring-completed-.md)
+<<<<<<< .merge_file_XlDcXo
 - [baseuser-refactoring-completed-1.md](baseuser-refactoring-completed-1.md)
+=======
+- [baseuser-refactoring-completed-1.md](./legacy/baseuser-refactoring-completed-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [baseuser-refactoring-completed-2025-10-15.deprecated.md](./legacy/baseuser-refactoring-completed-2025-10-15.deprecated.md)
 - [baseuser-refactoring-completed.md](./legacy/baseuser-refactoring-completed.md)
 - [baseuser-refactoring.md](./legacy/baseuser-refactoring.md)
@@ -1099,7 +1176,11 @@
 - [business-logic-deep-dive.md](./legacy/business-logic-deep-dive.md)
 - [cms-link-1.md](./legacy/cms-link-1.md)
 - [cms-link.md](./legacy/cms-link.md)
+<<<<<<< .merge_file_XlDcXo
 - [code-conventions.md](code-conventions.md)
+=======
+- [code-conventions.md](./legacy/code-conventions.md)
+>>>>>>> .merge_file_TbRRz9
 - [code-optimization-analysis.md](./legacy/code-optimization-analysis.md)
 - [code-quality-analysis.md](./legacy/code-quality-analysis.md)
 - [component-verification-rules-1.md](./legacy/component-verification-rules-1.md)
@@ -1134,7 +1215,11 @@
 - [fullcalendar-scheduler-documentation-summary-1.md](./legacy/fullcalendar-scheduler-documentation-summary-1.md)
 - [fullcalendar-scheduler-documentation-summary.md](./legacy/fullcalendar-scheduler-documentation-summary.md)
 - [fullcalendar-scheduler-license-1.md](./legacy/fullcalendar-scheduler-license-1.md)
+<<<<<<< .merge_file_XlDcXo
 - [fullcalendar-scheduler-license-key-invalid.md](fullcalendar-scheduler-license-key-invalid.md)
+=======
+- [fullcalendar-scheduler-license-key-invalid.md](./legacy/fullcalendar-scheduler-license-key-invalid.md)
+>>>>>>> .merge_file_TbRRz9
 - [fullcalendar-scheduler-license-troubleshooting-1.md](./legacy/fullcalendar-scheduler-license-troubleshooting-1.md)
 - [fullcalendar-scheduler-license-troubleshooting.md](./legacy/fullcalendar-scheduler-license-troubleshooting.md)
 - [fullcalendar-scheduler-license.md](./legacy/fullcalendar-scheduler-license.md)
@@ -1144,15 +1229,26 @@
 - [generic-user-moderation-strategy.md](./legacy/generic-user-moderation-strategy.md)
 - [git-conflict-resolution.md](./legacy/git-conflict-resolution.md)
 - [git-conflicts-resolution-.md](./legacy/git-conflicts-resolution-.md)
+<<<<<<< .merge_file_XlDcXo
 - [git-conflicts-resolution-1.md](git-conflicts-resolution-1.md)
 - [git-conflicts-resolution-2.md](git-conflicts-resolution-2.md)
 - [git-conflicts-resolution-2025-01-27.deprecated.md](./legacy/git-conflicts-resolution-2025-01-27.deprecated.md)
 - [git-conflicts-resolution-3.md](git-conflicts-resolution-3.md)
+=======
+- [git-conflicts-resolution-1.md](./legacy/git-conflicts-resolution-1.md)
+- [git-conflicts-resolution-2.md](./legacy/git-conflicts-resolution-2.md)
+- [git-conflicts-resolution-2025-01-27.deprecated.md](./legacy/git-conflicts-resolution-2025-01-27.deprecated.md)
+- [git-conflicts-resolution-3.md](./legacy/git-conflicts-resolution-3.md)
+>>>>>>> .merge_file_TbRRz9
 - [git-conflicts-resolution.md](./legacy/git-conflicts-resolution.md)
 - [hasteams-currentteam-method-choice-1.md](./legacy/hasteams-currentteam-method-choice-1.md)
 - [hasteams-currentteam-method-choice.md](./legacy/hasteams-currentteam-method-choice.md)
 - [hasteams-trait-analysis.md](./legacy/hasteams-trait-analysis.md)
+<<<<<<< .merge_file_XlDcXo
 - [hasteams-trait-duplicate-methods-1.md](hasteams-trait-duplicate-methods-1.md)
+=======
+- [hasteams-trait-duplicate-methods-1.md](./legacy/hasteams-trait-duplicate-methods-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [hasteams-trait-duplicate-methods.md](./legacy/hasteams-trait-duplicate-methods.md)
 - [hasteams-trait-filosofia-e-correzione-completa-1.md](./legacy/hasteams-trait-filosofia-e-correzione-completa-1.md)
 - [hasteams-trait-filosofia-e-correzione-completa.md](./legacy/hasteams-trait-filosofia-e-correzione-completa.md)
@@ -1241,7 +1337,11 @@
 - [phpstan-level-10-fixes.md](./legacy/phpstan-level-10-fixes.md)
 - [phpstan-relationship-fix.md](./legacy/phpstan-relationship-fix.md)
 - [phpstan-roadmap.md](./legacy/phpstan-roadmap.md)
+<<<<<<< .merge_file_XlDcXo
 - [profile-management.md](profile-management.md)
+=======
+- [profile-management.md](./legacy/profile-management.md)
+>>>>>>> .merge_file_TbRRz9
 - [quality-status-11.md](./legacy/quality-status-11.md)
 - [quality-status-2025-11.md](./legacy/quality-status-2025-11.md)
 - [query-optimization-analysis.md](./legacy/query-optimization-analysis.md)
@@ -1272,7 +1372,11 @@
 - [traits-hasteams-analisi-corretta.md](./legacy/traits-hasteams-analisi-corretta.md)
 - [translation-best-practices.md](./legacy/translation-best-practices.md)
 - [translation-city-field-refactor-.md](./legacy/translation-city-field-refactor-.md)
+<<<<<<< .merge_file_XlDcXo
 - [translation-city-field-refactor-1.md](translation-city-field-refactor-1.md)
+=======
+- [translation-city-field-refactor-1.md](./legacy/translation-city-field-refactor-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./legacy/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor.md](./legacy/translation-city-field-refactor.md)
 - [translation-keys-rules.md](./legacy/translation-keys-rules.md)
@@ -1283,9 +1387,15 @@
 - [user-factory-complete-ecosystem-integration.md](./legacy/user-factory-complete-ecosystem-integration.md)
 - [user-factory-integration-1.md](./legacy/user-factory-integration-1.md)
 - [user-factory-integration.md](./legacy/user-factory-integration.md)
+<<<<<<< .merge_file_XlDcXo
 - [user-invitation.md](user-invitation.md)
 - [user-moderation-strategy-1.md](./legacy/user-moderation-strategy-1.md)
 - [user-moderation-strategy.md](user-moderation-strategy.md)
+=======
+- [user-invitation.md](./legacy/user-invitation.md)
+- [user-moderation-strategy-1.md](./legacy/user-moderation-strategy-1.md)
+- [user-moderation-strategy.md](./legacy/user-moderation-strategy.md)
+>>>>>>> .merge_file_TbRRz9
 - [userfactory-advanced-implementation-complete.md](./legacy/userfactory-advanced-implementation-complete.md)
 - [volt-blade-implementation-1.md](./legacy/volt-blade-implementation-1.md)
 - [volt-blade-implementation-error-1.md](./legacy/volt-blade-implementation-error-1.md)
@@ -1724,7 +1834,11 @@
 - [traits-hasteams-analysis-corretta.md](./legacy/historical/traits-hasteams-analysis-corretta.md)
 - [translation-architecture.md](./legacy/historical/translation-architecture.md)
 - [translation-best-practices.md](./legacy/historical/translation-best-practices.md)
+<<<<<<< .merge_file_XlDcXo
 - [translation-city-field-refactor-1.md](translation-city-field-refactor-1.md)
+=======
+- [translation-city-field-refactor-1.md](./legacy/historical/translation-city-field-refactor-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [translation-city-field-refactor-2025-08-08.deprecated.md](./legacy/historical/translation-city-field-refactor-2025-08-08.deprecated.md)
 - [translation-city-field-refactor-conflict.md](./legacy/historical/translation-city-field-refactor-conflict.md)
 - [translation-city-field-refactor.md](./legacy/historical/translation-city-field-refactor.md)
@@ -1895,14 +2009,22 @@
 ## performance/archive
 
 - [authentication-performance-optimization-1.md](./performance/archive/authentication-performance-optimization-1.md)
+<<<<<<< .merge_file_XlDcXo
 - [authentication-performance-optimization-2.md](performance/authentication-performance-optimization-2.md)
+=======
+- [authentication-performance-optimization-2.md](./performance/archive/authentication-performance-optimization-2.md)
+>>>>>>> .merge_file_TbRRz9
 - [authentication-performance-optimization-3.md](./performance/archive/authentication-performance-optimization-3.md)
 - [authentication-performance-optimization.md](./performance/archive/authentication-performance-optimization.md)
 
 ## performance/legacy
 
 - [authentication-performance-optimization-1.md](./performance/legacy/authentication-performance-optimization-1.md)
+<<<<<<< .merge_file_XlDcXo
 - [authentication-performance-optimization-2.md](performance/authentication-performance-optimization-2.md)
+=======
+- [authentication-performance-optimization-2.md](./performance/legacy/authentication-performance-optimization-2.md)
+>>>>>>> .merge_file_TbRRz9
 - [authentication-performance-optimization-3.md](./performance/legacy/authentication-performance-optimization-3.md)
 - [authentication-performance-optimization.md](./performance/legacy/authentication-performance-optimization.md)
 
@@ -1935,7 +2057,11 @@
 
 ## roadmap
 
+<<<<<<< .merge_file_XlDcXo
 - [00-index-1.md](00-index-1.md)
+=======
+- [00-index-1.md](./roadmap/00-index-1.md)
+>>>>>>> .merge_file_TbRRz9
 - [00-index.md](./roadmap/00-index.md)
 - [00-overview.md](./roadmap/00-overview.md)
 - [01-current-state.md](./roadmap/01-current-state.md)

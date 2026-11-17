@@ -1141,7 +1141,11 @@ test('user can switch teams', function () {
 - [User Model Architecture](./architecture/user-model.md) - User model design
 - [Permission System](./architecture/permission-system.md) - RBAC architecture
 - [Multi-Tenancy](./architecture/multi-tenancy.md) - Tenant isolation
+<<<<<<< .merge_file_3psiMp
 - [Team System](teams.md) - Team collaboration
+=======
+- [Team System](./architecture/teams.md) - Team collaboration
+>>>>>>> .merge_file_v8gj6R
 
 ### Authentication
 - [Authentication Flow](./auth/authentication-flow.md) - Login/logout process
@@ -2235,7 +2239,11 @@ test('user can switch teams', function () {
 - [User Model Architecture](./architecture/user-model.md) - User model design
 - [Permission System](./architecture/permission-system.md) - RBAC architecture
 - [Multi-Tenancy](./architecture/multi-tenancy.md) - Tenant isolation
+<<<<<<< .merge_file_3psiMp
 - [Team System](teams.md) - Team collaboration
+=======
+- [Team System](./architecture/teams.md) - Team collaboration
+>>>>>>> .merge_file_v8gj6R
 
 ### Authentication
 - [Authentication Flow](./auth/authentication-flow.md) - Login/logout process

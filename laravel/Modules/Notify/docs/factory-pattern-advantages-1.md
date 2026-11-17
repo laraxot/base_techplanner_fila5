@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_mp8Fgt
+=======
+---
+title: "factory pattern advantages 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "factory pattern advantages 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_aPY5ZH
 # Analisi del Pattern Factory per la Selezione dei Provider SMS
 
 Questo documento analizza il pattern Factory attualmente implementato  per la selezione dei provider SMS, confrontandolo con l'alternativa di integrare la selezione nel DTO `SmsData`.

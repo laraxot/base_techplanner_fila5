@@ -1,4 +1,10 @@
 ---
+<<<<<<< .merge_file_d32r0P
+=======
+qmd: "INDEX"
+issues: []
+discussions: []
+>>>>>>> .merge_file_LR9OYb
 title: "Memories Index"
 type: index
 created: 2026-05-11
@@ -34,7 +40,11 @@ Le Memories progettuali vivono qui, nel wiki del Module **Notify**, e vengono ca
 
 - La sorgente di verita' per le Memories e' sempre il wiki locale
 - Non embeddare Memories nei prompt di avvio
+<<<<<<< .merge_file_d32r0P
 - Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/INDEX.md)
+=======
+- Per Memories globali, consulta il [wiki root](../../docs/wiki/memories/index.md)
+>>>>>>> .merge_file_LR9OYb
 
 ## Aggiungere una Nuova MEMORIES
 

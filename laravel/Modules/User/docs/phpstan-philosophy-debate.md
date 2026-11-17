@@ -2,6 +2,18 @@
 module: theme
 topic: phpstan-philosophy-debate
 canonical: ../../../Themes/docs/shared-components/phpstan-philosophy-debate.md
+<<<<<<< .merge_file_EVPXME
+=======
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+>>>>>>> .merge_file_QMtr7S
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-philosophy-debate.md

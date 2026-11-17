@@ -1,16 +1,48 @@
+<<<<<<< .merge_file_xIyTwo
+=======
+---
+title: "PHPStan Level 10 Fixes - User Module"
+type: concept
+tags: [phpstan, level10, user, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level10-user-fixes phpstan level 10 fixes - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_8V7iaS
 # PHPStan Level 10 Fixes - User Module
 
 ## 📋 Riepilogo Intervento
 
+<<<<<<< .merge_file_xIyTwo
 **Data**: 17 Novembre 2025
 **Modulo**: User
+=======
+**Data**: 17 Novembre 2025  
+**Modulo**: User  
+>>>>>>> .merge_file_8V7iaS
 **Esito**: ✅ **0 ERRORI** - PHPStan Level 10 completato con successo
 
 ## 🔧 Correzioni Applicate
 
 ### 1. PasswordResetConfirmWidget.php
 
+<<<<<<< .merge_file_xIyTwo
 **File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`
+=======
+**File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`  
+>>>>>>> .merge_file_8V7iaS
 **Errori risolti**: 2
 
 #### Problemi
@@ -33,7 +65,11 @@ Auth::guard()->login($user);
 
 ### 2. RegistrationWidget.php
 
+<<<<<<< .merge_file_xIyTwo
 **File**: `app/Filament/Widgets/RegistrationWidget.php`
+=======
+**File**: `app/Filament/Widgets/RegistrationWidget.php`  
+>>>>>>> .merge_file_8V7iaS
 **Errori risolti**: 5
 
 #### Problemi
@@ -98,7 +134,11 @@ class RegistrationWidget extends XotBaseWidget
 }
 ```
 
+<<<<<<< .merge_file_xIyTwo
 **Pattern applicato**:
+=======
+**Pattern applicato**: 
+>>>>>>> .merge_file_8V7iaS
 1. Property nullable con inizializzazione a null
 2. Type assertion espliciti con Assert::isArray()
 3. Return types specifici con fully qualified class names
@@ -106,7 +146,11 @@ class RegistrationWidget extends XotBaseWidget
 
 ### 3. HasTeams.php
 
+<<<<<<< .merge_file_xIyTwo
 **File**: `app/Models/Traits/HasTeams.php`
+=======
+**File**: `app/Models/Traits/HasTeams.php`  
+>>>>>>> .merge_file_8V7iaS
 **Errori risolti**: 2
 
 #### Problemi
@@ -151,13 +195,21 @@ public function teamPermissions(TeamContract $team): array
 }
 ```
 
+<<<<<<< .merge_file_xIyTwo
 **Pattern applicato**:
+=======
+**Pattern applicato**: 
+>>>>>>> .merge_file_8V7iaS
 1. BelongsToMany con template types completi e specifici
 2. Type assertion per risultati di pluck()->values()->toArray()
 
 ### 4. HasTenants.php
 
+<<<<<<< .merge_file_xIyTwo
 **File**: `app/Models/Traits/HasTenants.php`
+=======
+**File**: `app/Models/Traits/HasTenants.php`  
+>>>>>>> .merge_file_8V7iaS
 **Errori risolti**: 1
 
 #### Problema
@@ -185,7 +237,11 @@ public function getTenants(Panel $_panel): array|Collection
 
 ### 5. ResetPassword.php
 
+<<<<<<< .merge_file_xIyTwo
 **File**: `app/Notifications/Auth/ResetPassword.php`
+=======
+**File**: `app/Notifications/Auth/ResetPassword.php`  
+>>>>>>> .merge_file_8V7iaS
 **Errori risolti**: 1
 
 #### Problema
@@ -316,4 +372,8 @@ Il modulo User è ora **completamente compliant** con PHPStan Level 10. I patter
 - **Xot Module**: Vedi `Modules/Xot/docs/phpstan-level10-xot-fixes.md` per pattern di base
 - **ExternalProject Module**: Vedi `Modules/ExternalProject/docs/phpstan-level10-app-fixes.md` per pattern simili
 
+<<<<<<< .merge_file_xIyTwo
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
+=======
+**Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
+>>>>>>> .merge_file_8V7iaS

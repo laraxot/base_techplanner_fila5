@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_g0XoAD
+=======
+---
+title: "analisiettagliata 7"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisiettagliata 7"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_SS4EP2
 # Analisi Dettagliata del Modulo Notify - Parte 7: Manutenzione e Backup
 
 ## 7. Manutenzione e Backup

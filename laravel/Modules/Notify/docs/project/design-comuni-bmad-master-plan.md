@@ -16,7 +16,6 @@ related:
   - "./commit-message.md"
   - "./configuration.md"
   - "./docs-governance.md"
-status: draft
 ---
 
 # Design Comuni Italia - BMad Master Plan
@@ -308,10 +307,10 @@ laravel/Modules/Cms/docs/
 ```
 laravel/Themes/Sixteen/docs/
 ├── README.md
-├── layout-architecture-and-namespace.md  ← Layout hierarchy
+├── LAYOUT_ARCHITECTURE_AND_NAMESPACE.md  ← Layout hierarchy
 ├── theme-detection-system.md             ← Theme detection
 ├── VITE_BUILD_SYSTEM.md                  ← Vite build process
-├── design-comuni-html-replication.md     ← HTML analysis
+├── DESIGN_COMUNI_HTML_REPLICATION.md     ← HTML analysis
 ├── DESIGN_COMUNI_AMMINISTRAZIONE_analysis.md
 └── prompts/
     └── replikate.txt                     ← Replication prompt
@@ -362,7 +361,7 @@ _bmad-output/
 
 - → [Master Index](../../../docs/project/module-docs-index.md)
 - → [Theme Detection](../../../docs/project/theme-detection-system.md)
-- → [Layout Architecture](layout-architecture-and-namespace.md)
+- → [Layout Architecture](LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
 ```
 
 ### Link Pattern 3: Master Index → Module/Theme
@@ -376,9 +375,15 @@ _bmad-output/
 - **Files:** 221
 - **Index:** [Sixteen Docs Index](Themes/Sixteen/docs/00-index.md)
 - **Key Topics:**
+<<<<<<< .merge_file_wDegIR
   - [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
   - [Theme Detection](theme-detection-system.md)
   - [Design Comuni Replication](Themes/Sixteen/docs/design-comuni-html-replication.md)
+=======
+  - [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
+  - [Theme Detection](docs/project/theme-detection-system.md)
+  - [Design Comuni Replication](Themes/Sixteen/docs/DESIGN_COMUNI_HTML_REPLICATION.md)
+>>>>>>> .merge_file_hWCUED
 ```
 
 ---
@@ -596,9 +601,14 @@ pages/tests/argomenti.blade.php     # NO
 ### Key Documents
 
 - [Master Index](docs/project/module-docs-index.md)
+<<<<<<< .merge_file_wDegIR
 - [Theme Detection](theme-detection-system.md)
 - [Theme Detection](theme-detection-system.md)
 - [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
+=======
+- [Theme Detection](docs/project/theme-detection-system.md)
+- [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
+>>>>>>> .merge_file_hWCUED
 - [Page Component](Modules/Cms/docs/PAGE_COMPONENT_architecture.md)
 
 ### External Resources

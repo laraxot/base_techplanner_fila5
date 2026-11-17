@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_d3Nzcu
+<<<<<<< .merge_file_nZX5iy
+=======
+<<<<<<< .merge_file_I7e9h4
+>>>>>>> .merge_file_3y4VTc
+=======
+<<<<<<< .merge_file_I7e9h4
+>>>>>>> .merge_file_cSeV5B
 ---
 title: "LICENSE"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_d3Nzcu
+<<<<<<< .merge_file_nZX5iy
+=======
+=======
+>>>>>>> .merge_file_XfpwHW
+>>>>>>> .merge_file_3y4VTc
+=======
+=======
+>>>>>>> .merge_file_XfpwHW
+>>>>>>> .merge_file_cSeV5B
 The MIT License (MIT)
 
 Copyright (c) :vendor_name <author@domain.com>

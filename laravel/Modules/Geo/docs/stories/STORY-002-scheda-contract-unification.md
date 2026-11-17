@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_WiykAM
+=======
+<<<<<<< .merge_file_vLj7MV
+>>>>>>> .merge_file_xZZWae
 ---
 title: "STORY 002 scheda contract unification"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_WiykAM
+=======
+=======
+>>>>>>> .merge_file_MoisV2
+>>>>>>> .merge_file_xZZWae
 # STORY-002: Unificazione SchedaContract e gerarchia BaseScheda
 
 **Epic:** Architecture — Module Inheritance & DRY  
@@ -20,6 +29,10 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_WiykAM
+=======
+<<<<<<< .merge_file_vLj7MV
+>>>>>>> .merge_file_xZZWae
 title: "STORY 002 scheda contract unification"
 type: note
 tags: [documentation]
@@ -28,6 +41,11 @@ updated: 2026-09-26
 qmd: "STORY 002 scheda contract unification"
 issues: []
 discussions: []
+<<<<<<< .merge_file_WiykAM
+=======
+=======
+>>>>>>> .merge_file_MoisV2
+>>>>>>> .merge_file_xZZWae
 ## User Story
 
 **As a** architetto Laraxot  

@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_NxQ2kS
+=======
+<<<<<<< .merge_file_325pMC
+>>>>>>> .merge_file_GNZNLo
 ---
 title: "STATUS"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_NxQ2kS
+=======
+=======
+>>>>>>> .merge_file_HjLUVo
+>>>>>>> .merge_file_GNZNLo
 # Laravel 13 Upgrade Status - Root Project 🐄✨
 
 ## Overview
@@ -34,6 +43,10 @@ This document tracks the overall progress of the Laravel 13 upgrade for the enti
 4. Run full test suite.
 
 ---
+<<<<<<< .merge_file_NxQ2kS
+=======
+<<<<<<< .merge_file_325pMC
+>>>>>>> .merge_file_GNZNLo
 title: "STATUS"
 type: note
 tags: [documentation]
@@ -42,4 +55,9 @@ updated: 2026-09-26
 qmd: "STATUS"
 issues: []
 discussions: []
+<<<<<<< .merge_file_NxQ2kS
+=======
+=======
+>>>>>>> .merge_file_HjLUVo
+>>>>>>> .merge_file_GNZNLo
 **Status**: Ready for final verification.

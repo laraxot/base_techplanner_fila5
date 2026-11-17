@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_atoIJe
+=======
+<<<<<<< .merge_file_dBuIrP
+>>>>>>> .merge_file_SRLiLn
 ---
 title: "TECHNICAL"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_atoIJe
+=======
+=======
+>>>>>>> .merge_file_Rtf2dG
+>>>>>>> .merge_file_SRLiLn
 
 # Documentazione Tecnica Modulo Geo
 

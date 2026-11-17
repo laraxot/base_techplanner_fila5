@@ -4,13 +4,29 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Job
+<<<<<<< .merge_file_01mTDN
 qmd: "ECC audit Job verification security testing laravel"
+=======
+<<<<<<< .merge_file_8Sop25
+qmd: "ECC audit Job verification security testing laravel"
+=======
+qmd: "ECC audit Job checklist security-review clean-code verification-loop inventario misurato finding scheduler policy"
+related:
+  - ./00-index.md
+  - ../bmad/audits/job-audit.md
+  - ../bmad/audit.md
+>>>>>>> .merge_file_QoyUvn
+>>>>>>> .merge_file_y6kgwZ
 ---
 
 # ECC audit operativo — Job
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_01mTDN
+=======
+<<<<<<< .merge_file_8Sop25
+>>>>>>> .merge_file_y6kgwZ
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -25,10 +41,35 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
 
 ## Input misurato (2026-11-16)
+<<<<<<< .merge_file_01mTDN
+=======
+=======
+ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa,
+PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/job-audit.md).
+
+## Checklist (stato misurato 2026-11-16)
+
+| Skill ECC | Stato | Evidenza |
+|---|---|---|
+| `clean-code` | **aperto** | 1 Service morto (`ScheduleService`), 2 coppie di Action duplicate, junk `.aaa`/`.pid`/`.backup`, `Config/` vs `config/` |
+| `security-review` | **P0-1 chiuso; resta P0-2 + P1** | E1: deny-default + JobResource senza create; Livewire Status allowlist; scheduler D-2 e widget guard aperti |
+| `laravel-verification` | **aperto** | scheduler non cablato (`JobServiceProvider.php:38,48-66`); `ExecuteTaskAction.php:18` stub |
+| `verification-loop` | PHPStan: 0 errori — Pest: parziale (17 pass su `JobStatusAuthorizationTest`) | |
+| `tdd-workflow` | **aperto** | 0 `Livewire::test`; `migrate:fresh` non mockato in `ScheduleStatusWidgetTest.php:14` |
+| `documentation-sync` | **fatto in questo giro** | gap-fill purpose/architecture/decision-log/epics/brainstorming; 101/625 `.md` senza frontmatter |
+| `context-engineering` | ok | story 12.1 riaperta dal decision-log (D-4) |
+
+## Inventario misurato
+>>>>>>> .merge_file_QoyUvn
+>>>>>>> .merge_file_y6kgwZ
 
 | Voce | N |
 |---|---:|
 | app PHP | 176 |
+<<<<<<< .merge_file_01mTDN
+=======
+<<<<<<< .merge_file_8Sop25
+>>>>>>> .merge_file_y6kgwZ
 | test | 84 |
 | resources | 9 |
 | actions | 16 |
@@ -47,6 +88,28 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - migrate:fresh / RefreshDatabase / --force
 - docs con date nel nome file
 - comportamento o screenshot inventati
+<<<<<<< .merge_file_01mTDN
+=======
+=======
+| test PHP / `*Test.php` / casi Pest | 55 / 49 / 369 |
+| Models / Policy / Resource | 17 / 16 / 9 |
+| Pagine standalone / pagine Resource / Widget | 4 / 26 / 8 |
+| Actions / Services | 16 / 1 |
+| Migration | 14 |
+| Lang IT | 57 |
+| `return true` in Policy | 5 (2 `before()`, 3 `create()`) |
+| Marker conflitto | 0 |
+
+## Gate osservati
+
+- PHPStan `Modules/Job` (`--no-progress`): **0 errori**.
+- Pest `Modules/Job/tests` su scratch DB: **parziale** — `JobStatusAuthorizationTest` 17 pass; suite completa non eseguita per carico macchina.
+
+## Anti-pattern vietati (stato)
+
+`migrate:fresh` in produzione/CI: 0; in test: 6 occorrenze, 5 negative con mock, **1 non mockata** (P1-3). `RefreshDatabase`: 0. Baseline/`@phpstan-ignore`: 0. `dd()`: 1 (legacy).
+>>>>>>> .merge_file_QoyUvn
+>>>>>>> .merge_file_y6kgwZ
 
 ## Riferimenti
 

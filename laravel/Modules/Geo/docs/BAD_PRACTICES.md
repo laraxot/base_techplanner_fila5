@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_b0R5XY
+<<<<<<< .merge_file_hmpelL
+=======
+<<<<<<< .merge_file_NruGEs
+>>>>>>> .merge_file_XlaTEl
+=======
+<<<<<<< .merge_file_NruGEs
+>>>>>>> .merge_file_TK3NAR
 ---
 title: "BAD PRACTICES"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_b0R5XY
+<<<<<<< .merge_file_hmpelL
+=======
+=======
+>>>>>>> .merge_file_NKgK6K
+>>>>>>> .merge_file_XlaTEl
+=======
+=======
+>>>>>>> .merge_file_NKgK6K
+>>>>>>> .merge_file_TK3NAR
 # Bad Practices – Geo Module
 
 - ❌ **Evita** `L.Icon.Default` o URL CDN per marker (legge `map-marker-custom-asset.md`)

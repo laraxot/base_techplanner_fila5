@@ -1,7 +1,16 @@
 ---
+<<<<<<< .merge_file_wEsUuu
 qmd: "session phpstan random analysis 2026 06 15"
 issues: []
 discussions: []
+=======
+<<<<<<< .merge_file_OyS0gZ
+qmd: "session phpstan random analysis 2026 06 15"
+issues: []
+discussions: []
+=======
+>>>>>>> .merge_file_Co2jBy
+>>>>>>> .merge_file_ZTBlHJ
 title: "Sessione analisi casuale PHPStan — 2026-06-15 14:09 UTC"
 type: chat
 tags: [phpstan, swarm, session, random-analysis]

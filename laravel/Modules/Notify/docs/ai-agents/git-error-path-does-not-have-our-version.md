@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "git error path does not have our version"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Git Error: "path does not have our version"
@@ -18,6 +17,15 @@ status: draft
 **Status**: ✅ Resolved
 
 ---
+
+title: "git error path does not have our version"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "git error path does not have our version"
+issues: []
+discussions: []
 ## Error Message
 
 ```
@@ -509,7 +517,13 @@ git rebase --continue
 
 ---
 
+<<<<<<< .merge_file_25Pghd
 **Last Review**: 2026-03-17
 **Next Review**: As needed
 **Maintainer**: Development Team
+=======
+**Last Review**: 2026-03-17  
+**Next Review**: As needed  
+**Maintainer**: Development Team  
+>>>>>>> .merge_file_ULdPYh
 **Status**: ✅ Complete Reference

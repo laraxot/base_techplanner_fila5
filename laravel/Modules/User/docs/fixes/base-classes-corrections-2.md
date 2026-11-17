@@ -1,8 +1,35 @@
+<<<<<<< .merge_file_2uZD6o
 # Correzione Estensioni Classi Base - Modulo User
 
 **Data:** 15 Ottobre 2025
 **Tipo:** Bug Fix / Refactoring Architetturale
 **Severità:** Alta
+=======
+---
+title: "Correzione Estensioni Classi Base - Modulo User"
+type: concept
+tags: [base, classes, corrections]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "base-classes-corrections-2 correzione estensioni classi base - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./base-classes-corrections-.md"
+  - "./base-classes-corrections-1.md"
+  - "./base-classes-corrections-3.md"
+  - "./base-classes-corrections.md"
+  - "./phpstan-fixes-1.md"
+  - "./phpstan-fixes.md"
+  - "./phpstanes.md"
+---
+
+# Correzione Estensioni Classi Base - Modulo User
+
+**Data:** 15 Ottobre 2025  
+**Tipo:** Bug Fix / Refactoring Architetturale  
+**Severità:** Alta  
+>>>>>>> .merge_file_NCP3L6
 **Stato:** ✅ Completato
 
 ## Problema Identificato
@@ -125,7 +152,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Tenant extends Model
 {
     use HasXotFactory;
+<<<<<<< .merge_file_2uZD6o
 
+=======
+    
+>>>>>>> .merge_file_NCP3L6
     protected $connection = 'user';  // Ridondante
     protected $table = 'tenants';
 }
@@ -224,7 +255,11 @@ php artisan test --filter=ModelTest
    - Esempi pratici
    - Checklist per nuovi modelli
 
+<<<<<<< .merge_file_2uZD6o
 2. **`docs/fixes/base-classes-corrections-2025-10-15.md`** (QUESTO FILE)
+=======
+2. **`docs/fixes/base-classes-corrections-.md.md`** (QUESTO FILE)
+>>>>>>> .merge_file_NCP3L6
    - Riepilogo correzioni
    - Motivazioni tecniche
    - Before/After comparisons
@@ -293,7 +328,11 @@ e
 ## Applicazione ad Altri Moduli
 
 Questo pattern di correzione può essere applicato a:
+<<<<<<< .merge_file_2uZD6o
 - **Modulo <nome progetto>**: Verificare QuestionChart, SurveyPdf, Contact
+=======
+- **Modulo Quaeris**: Verificare QuestionChart, SurveyPdf, Contact
+>>>>>>> .merge_file_NCP3L6
 - **Modulo Blog**: Verificare Post, Category, Tag
 - **Modulo Dental**: Verificare Visit, Treatment, Patient
 - **Tutti gli altri moduli**: Audit sistematico
@@ -314,8 +353,14 @@ grep -r "extends Model" laravel/Modules/*/app/Models/*.php | grep -v "BaseModel\
 
 ---
 
+<<<<<<< .merge_file_2uZD6o
 **Autore:** AI Assistant
 **Review:** Team Laraxot
 **Deploy:** ✅ Ready for Production
+=======
+**Autore:** AI Assistant  
+**Review:** Team Laraxot  
+**Deploy:** ✅ Ready for Production  
+>>>>>>> .merge_file_NCP3L6
 **Breaking Changes:** Nessuna (backward compatible)
 

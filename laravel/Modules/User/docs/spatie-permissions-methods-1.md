@@ -1,7 +1,23 @@
 ---
 module: theme
 topic: spatie-permissions-methods-1
+<<<<<<< .merge_file_bMBpCv
 canonical: ../../../Themes/docs/shared-components/spatie_permissions_methods.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/spatie_permissions_methods.md
+=======
+canonical: ../../../Themes/docs/shared-components/spatie-permissions-methods-5.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/spatie-permissions-methods-5.md
+>>>>>>> .merge_file_EVXoN0

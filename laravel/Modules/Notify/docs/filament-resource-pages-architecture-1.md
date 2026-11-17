@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_MFRCxw
+=======
+---
+title: "filament resource pages architecture 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament resource pages architecture 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_1TWlTo
 # Architettura delle Pagine di Risorse Filament
 
 ## Regola Fondamentale

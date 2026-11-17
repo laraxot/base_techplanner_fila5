@@ -1,25 +1,20 @@
 ---
-title: "Correzioni Ridondanze - Gennaio 2026"
-type: concept
-tags: [redundancy, fixes, january, 2026]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "redundancy-fixes-january-2026 correzioni ridondanze - gennaio 2026"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+module: theme
+topic: redundancy-fixes
+canonical: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-status: draft
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/redundancy-fixes-january.md
+<<<<<<< .merge_file_zDHW9Y
   - "./actions-path-convention.md"
   - "./actions-path-convention-convenzione-percorsi.md"
   - "./actions-path-convention.md"
@@ -147,3 +142,5 @@ Prima di committare, verifica:
 - [XotBaseRelationManager Documentation](../../Xot/docs/filament/relation-managers.md)
 
 *Ultimo aggiornamento: Gennaio 2026*
+=======
+>>>>>>> .merge_file_hn39JE

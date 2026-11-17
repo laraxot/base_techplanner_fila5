@@ -13,6 +13,15 @@ qmd: "indice BMAD UI audit purpose piano stories"
 - [Audit](./audit.md)
 - [Audit dettagliato](./audits/ui-audit.md)
 - [Piano di miglioramento](./piano-miglioramento.md)
+<<<<<<< .merge_file_VCUSvh
+=======
+<<<<<<< .merge_file_QlSByo
+=======
+- [Epic e story](./epics.md)
+- [Decision log](./decision-log.md)
+- [Brainstorming](./brainstorming.md)
+>>>>>>> .merge_file_1L5zhb
+>>>>>>> .merge_file_D2yWfd
 - [Story audit modulo](./stories/module-bmad-audit.story.md)
 - [ECC](../ecc/00-index.md)
 - [Purpose root](../purpose.md)

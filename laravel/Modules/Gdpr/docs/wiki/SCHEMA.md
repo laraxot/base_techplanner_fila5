@@ -1,9 +1,18 @@
 ---
+<<<<<<< .merge_file_c9LJVT
+=======
+<<<<<<< .merge_file_ram14K
+>>>>>>> .merge_file_2sNTWO
 type: note
 updated: 2026-09-26
 qmd: "SCHEMA"
 issues: []
 discussions: []
+<<<<<<< .merge_file_c9LJVT
+=======
+=======
+>>>>>>> .merge_file_CF52wG
+>>>>>>> .merge_file_2sNTWO
 title: Wiki Schema
 description: Schema e convenzioni per la manutenzione della wiki
 tags:

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_mtixOz
+=======
+---
+title: "translations implementation status 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translations implementation status 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_2aw38e
 # Stato dell'Implementazione delle Traduzioni nel Modulo Notify
 
 ## Panoramica

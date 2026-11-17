@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_le05US
+=======
+<<<<<<< .merge_file_GFuv8m
+>>>>>>> .merge_file_TrHhtD
 ---
 title: "bmad workflow catalog"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_le05US
+=======
+=======
+>>>>>>> .merge_file_G61hiP
+>>>>>>> .merge_file_TrHhtD
 # BMAD Workflow Catalog — PTVX Edition
 
 > **Versione**: 6.2.0 | **Progetto**: Laraxot PTVX  
@@ -17,6 +26,10 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_le05US
+=======
+<<<<<<< .merge_file_GFuv8m
+>>>>>>> .merge_file_TrHhtD
 title: "bmad workflow catalog"
 type: note
 tags: [documentation]
@@ -25,6 +38,11 @@ updated: 2026-09-26
 qmd: "bmad workflow catalog"
 issues: []
 discussions: []
+<<<<<<< .merge_file_le05US
+=======
+=======
+>>>>>>> .merge_file_G61hiP
+>>>>>>> .merge_file_TrHhtD
 ## 📑 Indice
 
 - [Phase 1: Analysis](#phase-1-analysis)

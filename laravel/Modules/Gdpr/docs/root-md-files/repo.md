@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_cHFmnf
+=======
+<<<<<<< .merge_file_aOKupC
+>>>>>>> .merge_file_Wlt6fV
 ---
 title: "repo"
 type: note
@@ -9,4 +13,9 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_cHFmnf
+=======
+=======
+>>>>>>> .merge_file_LBrPrd
+>>>>>>> .merge_file_Wlt6fV
 https://github.com/aymanalhattami/filament-page-with-sidebar

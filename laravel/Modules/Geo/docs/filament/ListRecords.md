@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_jKmpzN
+=======
+<<<<<<< .merge_file_mlRoT5
+>>>>>>> .merge_file_q5VV1b
 ---
 title: "ListRecords"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_jKmpzN
+=======
+=======
+>>>>>>> .merge_file_k6vpbL
+>>>>>>> .merge_file_q5VV1b
 # List Records in Filament
 
 ## Estensione Corretta

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_acXlWO
+=======
+---
+title: "filament xot architecture 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament xot architecture 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_TMXCVt
 # Architettura Filament : Pattern XotBase
 
 ## Introduzione

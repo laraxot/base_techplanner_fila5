@@ -1,3 +1,4 @@
+<<<<<<< .merge_file_fCqpBD
 ---
 module: theme
 topic: phpstan-fix-plan-
@@ -5,6 +6,8 @@ canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
+=======
+>>>>>>> .merge_file_zy8gKb
 # PHPStan Analysis - User Module (Jan 2026)
 
 ## Current Status
@@ -38,4 +41,23 @@ This confirms that the project is using a version of Filament where Forms seem t
 ## Implementation
 - Search for `Grid.php`.
 - Update `OauthClientResource` imports.
+<<<<<<< .merge_file_fCqpBD
 >>>>>>> 6ed19256f (.)
+=======
+---
+module: theme
+topic: phpstan-fix-plan-
+canonical: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fix-plan-.md
+>>>>>>> .merge_file_zy8gKb

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_1yERP7
+=======
+---
+title: "analysis dettagliata 4"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis dettagliata 4"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_UZslQJ
 # Analisi Dettagliata del Modulo Notify - Parte 4: Integrazione con Filament
 
 ## 4. Integrazione con Filament

@@ -2,16 +2,15 @@
 qmd: "spatie consolidated"
 issues: []
 discussions: []
-title: "spatie: Consolidated Documentation"
+title: "spatie — Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
-# spatie: Consolidated Documentation
+# spatie — Consolidated Documentation
 
 Consolidated from **8** individual files.
 
@@ -30,7 +29,7 @@ Consolidated from **8** individual files.
 
 ## spatie-email-slug-proposal-1
 
-*Consolidated from: `spatie-email-slug-proposal.md`*
+*Consolidated from: `spatie-email-slug-proposal-1.md`*
 
 title: "Proposta: Aggiunta Slug a SpatieEmail e MailTemplate"
 type: concept
@@ -41,17 +40,12 @@ qmd: "spatie-email-slug-proposal-1 proposta: aggiunta slug a spatieemail e mailt
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -305,13 +299,8 @@ Nonostante i potenziali svantaggi, i benefici superano i costi di implementazion
 - [Sistema di Template Email](./email-templates.md)
 - [Email per i Dottori](./doctor-emails.md)
 - [Sistema di Template Email](./email-templates.md)
-- [Email per i Dottori](./doctor-emails.md)
+- [Email per i Dottori](./doctor-emails-1.md)
 - [Filament Resources](./filament-resources.md)
-- [Sistema di Template Email](../../email-templates.md)
-- [Email per i Dottori](../../doctor-emails.md)
-- [Sistema di Template Email](../../email-templates.md)
-- [Email per i Dottori](./doctor-emails.md)
-- [Filament Resources](../../filament-resources.md)
 
 ## Implementazione Migrazione
 
@@ -599,9 +588,6 @@ Nonostante i potenziali svantaggi, i benefici superano i costi di implementazion
 - [Sistema di Template Email](./EMAIL_TEMPLATES.md)
 - [Email per i Dottori](./DOCTOR_EMAILS.md)
 - [Filament Resources](./filament-resources.md)
-- [Sistema di Template Email](../../email_templates.md)
-- [Email per i Dottori](../../doctor_emails.md)
-- [Filament Resources](../../filament-resources.md)
 
 ## Implementazione Migrazione
 
@@ -640,7 +626,7 @@ $this->tableUpdate(
 
 ## spatie-email-usage-guide-1
 
-*Consolidated from: `spatie-email-usage-guide.md`*
+*Consolidated from: `spatie-email-usage-guide-1.md`*
 
 title: "Guida all'utilizzo di SpatieEmail"
 type: guide
@@ -651,17 +637,12 @@ qmd: "spatie-email-usage-guide-1 guida all'utilizzo di spatieemail"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -680,11 +661,6 @@ Questa guida illustra come utilizzare la classe `SpatieEmail` per inviare email 
 - [Implementazione Database Mail](./database-mail.md)
 - [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
 - [Modulo Xot](../../../Xot/docs/README.md)
-- [Documentazione Email Templates](../../email-templates.md)
-- [Email Specifiche per Dottori](../../doctor-emails.md)
-- [Implementazione Database Mail](../../database-mail.md)
-- [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
-- [Modulo Xot](../../../../Xot/docs/README.md)
 
 ## Implementazione attuale
 
@@ -958,11 +934,6 @@ Questa guida illustra come utilizzare la classe `SpatieEmail` per inviare email 
 - [Implementazione Database Mail](./database-mail.md)
 - [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
 - [Modulo Xot](../../../Xot/docs/README.md)
-- [Documentazione Email Templates](../../email_templates.md)
-- [Email Specifiche per Dottori](../../doctor_emails.md)
-- [Implementazione Database Mail](../../database-mail.md)
-- [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
-- [Modulo Xot](../../../../Xot/docs/README.md)
 
 ## Implementazione attuale
 
@@ -1237,11 +1208,6 @@ Questa guida illustra come utilizzare la classe `SpatieEmail` per inviare email 
 - [Implementazione Database Mail](./database-mail.md)
 - [Documentazione Centrale](../../../../../docs/collegamenti-documentazione.md)
 - [Modulo Xot](../../../xot/docs/readme.md)
-- [Documentazione Email Templates](../../email_templates.md)
-- [Email Specifiche per Dottori](../../doctor-emails.md)
-- [Implementazione Database Mail](../../database-mail.md)
-- [Documentazione Centrale](../../../../../docs/collegamenti-documentazione.md)
-- [Modulo Xot](../../../../Xot/docs/README.md)
 
 ## Implementazione attuale
 
@@ -1639,8 +1605,12 @@ Nel form di edit/create:
 ### Errore: Plugin Not Registered
 
 **Causa**: Plugin non registrato nel panel  
+<<<<<<< .merge_file_BgFak7
 **Soluzione**: Vedere [plugin-spatie-translatable-not-registered.md](../../errori/plugin-spatie-translatable-not-registered.md)
 **Soluzione**: Vedere [plugin-spatie-translatable-not-registered.md](../../errori/plugin-spatie-translatable-not-registered.md)
+=======
+**Soluzione**: Vedere [plugin-spatie-translatable-not-registered.md](./errori/plugin-spatie-translatable-not-registered.md)
+>>>>>>> .merge_file_oLUtz8
 
 ### Errore: Undefined Method `getTranslation()`
 
@@ -1766,8 +1736,6 @@ Schema::table('mail_templates', function (Blueprint $table) {
 ### Documentazione Interna
 - [Errore Plugin Not Registered](../../errori/plugin-spatie-translatable-not-registered.md)
 - [Lang Module README](../../lang/docs/readme.md)
-- [Errore Plugin Not Registered](../../errori/plugin-spatie-translatable-not-registered.md)
-- [Lang Module README](../../../../Lang/docs/readme.md)
 - [Filament Panels Configuration](../../xot/docs/filament/panel-configuration.md)
 
 ---
@@ -2032,9 +2000,6 @@ Nonostante i potenziali svantaggi, i benefici superano i costi di implementazion
 - [Sistema di Template Email](./EMAIL_TEMPLATES.md)
 - [Email per i Dottori](./DOCTOR_EMAILS.md)
 - [Filament Resources](./filament-resources.md)
-- [Sistema di Template Email](../../email_templates.md)
-- [Email per i Dottori](../../doctor_emails.md)
-- [Filament Resources](../../filament-resources.md)
 
 ## Implementazione Migrazione
 
@@ -2088,11 +2053,6 @@ Questa guida illustra come utilizzare la classe `SpatieEmail` per inviare email 
 - [Implementazione Database Mail](./database-mail.md)
 - [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
 - [Modulo Xot](../../../Xot/docs/README.md)
-- [Documentazione Email Templates](../../email_templates.md)
-- [Email Specifiche per Dottori](../../doctor_emails.md)
-- [Implementazione Database Mail](../../database-mail.md)
-- [Documentazione Centrale](../../../../docs/collegamenti-documentazione.md)
-- [Modulo Xot](../../../../Xot/docs/README.md)
 
 ## Implementazione attuale
 

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_ze6oia
+=======
+---
+title: "mail template migration guide 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mail template migration guide 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_4SnZhv
 # Guida alla Migrazione di MailTemplate
 
 ## Panoramica
@@ -125,8 +139,13 @@ if (!$this->hasColumn('nuovo_campo')) {
 
 Per una comprensione completa, consultare anche:
 
+<<<<<<< .merge_file_ze6oia
 - [Struttura della Migrazione](mail-templates/migration_structure.md) - Dettagli sulla struttura di migrazione
 - [Implementazione del Campo Slug](mail-templates/slug_field_implementation.md) - Guida completa all'implementazione e utilizzo del campo slug
+=======
+- [Struttura della Migrazione](./mail-templates/MIGRATION_STRUCTURE.md) - Dettagli sulla struttura di migrazione
+- [Implementazione del Campo Slug](./mail-templates/SLUG_FIELD_IMPLEMENTATION.md) - Guida completa all'implementazione e utilizzo del campo slug
+>>>>>>> .merge_file_4SnZhv
 - [Spatie Email Usage Guide](./SPATIE_EMAIL_USAGE_GUIDE.md) - Come utilizzare SpatieEmail con i template
 
 ## Vantaggi del Pattern XotBaseMigration

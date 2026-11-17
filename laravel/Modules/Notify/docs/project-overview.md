@@ -4,6 +4,7 @@ type: concept
 tags: [project, overview]
 created: 2026-07-14
 updated: 2026-07-14
+qmd: "project-overview 🏛️ fixcity - civic engagement platform"
 qmd: "project-overview 🏛️ ptv - civic engagement platform"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
@@ -24,7 +25,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
-status: draft
 ---
 
 # 🏛️ FIXCITY - Civic Engagement Platform

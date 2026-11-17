@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_1LEm4E
+=======
+---
+title: "modelli factory seeder analisi 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modelli factory seeder analisi 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_bTqimS
 # Analisi Modelli, Factory e Seeder - Modulo Notify
 
 ## Panoramica
@@ -294,4 +308,8 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 *Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
+<<<<<<< .merge_file_1LEm4E
 *Sistema notifiche multi-canale completo*
+=======
+*Sistema notifiche multi-canale completo*
+>>>>>>> .merge_file_bTqimS

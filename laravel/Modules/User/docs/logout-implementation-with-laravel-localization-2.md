@@ -18,7 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_rbgrNS
 # Implementazione del Logout con LaravelLocalization
+=======
+# Implementazione del Logout con LaravelLocalization 
+>>>>>>> .merge_file_184fFR
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
@@ -62,16 +66,28 @@ mount(function() {
     if (Auth::check()) {
         // Dispatch dell'evento prima del logout
         Event::dispatch('auth.logout.attempting', [Auth::user()]);
+<<<<<<< .merge_file_rbgrNS
 
+=======
+        
+>>>>>>> .merge_file_184fFR
         // Esegui il logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
+<<<<<<< .merge_file_rbgrNS
 
         // Dispatch dell'evento dopo il logout
         Event::dispatch('auth.logout.successful');
     }
 
+=======
+        
+        // Dispatch dell'evento dopo il logout
+        Event::dispatch('auth.logout.successful');
+    }
+    
+>>>>>>> .merge_file_184fFR
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -79,7 +95,11 @@ mount(function() {
 
 ## Utilizzo Corretto di LaravelLocalization
 
+<<<<<<< .merge_file_rbgrNS
 Per garantire la compatibilità con il sistema di localizzazione di <nome progetto>, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+=======
+Per garantire la compatibilità con il sistema di localizzazione di Quaeris, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+>>>>>>> .merge_file_184fFR
 
 ```php
 // ERRATO
@@ -91,7 +111,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< .merge_file_rbgrNS
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
+>>>>>>> .merge_file_184fFR
 
 ## Template Blade con Componenti Filament
 
@@ -123,7 +147,11 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
+<<<<<<< .merge_file_rbgrNS
 5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di <nome progetto> per la localizzazione
+=======
+5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di Quaeris per la localizzazione
+>>>>>>> .merge_file_184fFR
 
 ## Chiavi di Traduzione per il Logout
 

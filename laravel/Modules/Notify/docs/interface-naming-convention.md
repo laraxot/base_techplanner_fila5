@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "interface naming convention"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Convenzione di Naming per le Interfacce
@@ -74,12 +73,16 @@ grep -r "interface.*Contract" --include="*.php" Modules
 - [Modulo Xot Contracts](laravel/Modules/Xot/app/Contracts/)
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
+<<<<<<< .merge_file_XFF1m3
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
 - [PTVX Code Quality Guidelines](ai-agents/code-quality.md)
 - [Modulo Xot Contracts](laravel/Modules/Xot/app/Contracts/)
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
+=======
+- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)
+>>>>>>> .merge_file_PqzdoG
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
 # Convenzione di Naming per le Interfacce
 
@@ -158,6 +161,7 @@ grep -r "interface.*Contract" --include="*.php" Modules
 - [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
+<<<<<<< .merge_file_XFF1m3
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
 - [PTVX Code Quality Guidelines](ai-agents/code-quality.md)
 - [Modulo Xot Contracts](laravel/Modules/Xot/app/Contracts/)
@@ -177,3 +181,6 @@ grep -r "interface.*Contract" --include="*.php" Modules
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
 - [<nome progetto> Code Quality Guidelines](ai-agents/code-quality.md)
+=======
+- [<nome progetto> Code Quality Guidelines](project_docs/code-quality.md)
+>>>>>>> .merge_file_PqzdoG

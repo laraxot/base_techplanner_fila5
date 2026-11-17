@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_Y65U7X
+=======
+---
+title: "analysis dettagliata 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysis dettagliata 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_QGQHpf
 # Analisi Dettagliata del Modulo Notify - Parte 1: Architettura e Struttura
 
 ## 1. Architettura del Sistema

@@ -1,9 +1,18 @@
 ---
+<<<<<<< .merge_file_TLJA5K
+=======
+<<<<<<< .merge_file_F3vgoW
+>>>>>>> .merge_file_WhgjNv
 tags: [documentation]
 updated: 2026-09-26
 qmd: "phpstan swarm 2026 06 15"
 issues: []
 discussions: []
+<<<<<<< .merge_file_TLJA5K
+=======
+=======
+>>>>>>> .merge_file_l9SEam
+>>>>>>> .merge_file_WhgjNv
 title: "PHPStan swarm — run parallelo 2026-06-15"
 type: chat-handoff
 created: 2026-06-15

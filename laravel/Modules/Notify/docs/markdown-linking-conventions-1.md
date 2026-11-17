@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_WkSuCb
+=======
+---
+title: "markdown linking conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "markdown linking conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_FlNclX
 # Convenzioni per i Collegamenti nei File Markdown
 
 ## Regola Fondamentale
@@ -54,4 +68,8 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 ## Collegamenti Correlati
 
 - [Convenzioni di Documentazione](../../../../docs/documentation-conventions.md)
+<<<<<<< .merge_file_WkSuCb
 - [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
+=======
+- [Markdown Best Practices](../../../../docs/markdown-best-practices.md)
+>>>>>>> .merge_file_FlNclX

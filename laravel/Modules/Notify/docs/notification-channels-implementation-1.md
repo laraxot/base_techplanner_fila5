@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_Q5EHwL
+=======
+---
+title: "notification channels implementation 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "notification channels implementation 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_hNSBrf
 # Implementazione dei Canali di Notifica
 
 Questo documento descrive l'architettura e l'implementazione dei canali di notifica nel progetto <nome progetto>, con particolare attenzione al pattern Factory utilizzato.

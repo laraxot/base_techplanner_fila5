@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_ANUEVL
+=======
+<<<<<<< .merge_file_AboR3C
+>>>>>>> .merge_file_JyvReI
 ---
 title: "001 gdpr compliance system"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_ANUEVL
+=======
+=======
+>>>>>>> .merge_file_FC89u9
+>>>>>>> .merge_file_JyvReI
 # Task 001: Implement Complete GDPR Compliance System
 
 ## Description
@@ -305,6 +314,10 @@ The Gdpr module needs full GDPR compliance features including user consent track
 
 ---
 
+<<<<<<< .merge_file_ANUEVL
+=======
+<<<<<<< .merge_file_AboR3C
+>>>>>>> .merge_file_JyvReI
 title: "001 gdpr compliance system"
 type: note
 tags: [documentation]
@@ -313,5 +326,10 @@ updated: 2026-09-26
 qmd: "001 gdpr compliance system"
 issues: []
 discussions: []
+<<<<<<< .merge_file_ANUEVL
+=======
+=======
+>>>>>>> .merge_file_FC89u9
+>>>>>>> .merge_file_JyvReI
 **Status**: Pending
 **Assignee**: TBD

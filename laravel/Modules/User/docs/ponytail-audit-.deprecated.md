@@ -1,24 +1,23 @@
 ---
-title: "Ponytail-audit 2026-07-02: User module findings"
+title: "ponytail-audit-2026-07-02.deprecated"
 type: concept
-tags: [ponytail, audit, 2026, 02.deprecated]
+tags: [deprecated]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "ponytail-audit-2026-07-02.deprecated ponytail-audit 2026-07-02: user module findings"
-issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
-discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+qmd: "ponytail-audit-2026-07-02.deprecated deprecated"
+status: deprecated
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-status: draft
 ---
 
+<<<<<<< .merge_file_LRn7gl
 # Ponytail-audit 2026-07-02: User module findings
 
 Source: repo-wide ponytail-audit follow-up, published in module_user_fila5 discussion
@@ -85,3 +84,6 @@ real `UserContract.php` is untouched.
   an archive-as-`.bak` rename.
 - `Modules/Xot/docs/ponytail-audit-.md.md`, `Modules/Notify/docs/ponytail-audit-.md.md`:
   sibling module findings from the same repo-wide audit pass.
+=======
+> Questo file è stato rinominato in [ponytail-audit-.deprecated.md](ponytail-audit-.deprecated.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+>>>>>>> .merge_file_pRMeeL

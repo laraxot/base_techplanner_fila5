@@ -8,20 +8,14 @@ qmd: "documentation-system-update-complete documentation system update - complet
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
-status: draft
 ---
 
 # Documentation System Update - Complete
@@ -125,10 +119,10 @@ FixCity Fila5 Documentation (7,299 files)
 │   ├── Sixteen/docs/ (325 files)
 │   │   ├── README.md
 │   │   ├── layout-architecture.md
-│   │   ├── layout-architecture-map.md
-│   │   ├── layout-fix-complete-bmad.md
-│   │   ├── vite-manifest-fix-complete.md
-│   │   ├── phpstan-layout-fix-complete.md
+│   │   ├── LAYOUT_ARCHITECTURE_MAP.md
+│   │   ├── LAYOUT_FIX_COMPLETE_BMAD.md
+│   │   ├── VITE_MANIFEST_FIX_COMPLETE.md
+│   │   ├── PHPSTAN_LAYOUT_FIX_COMPLETE.md
 │   │   ├── components/
 │   │   ├── guides/
 │   │   └── ...
@@ -204,10 +198,10 @@ FixCity Fila5 Documentation (7,299 files)
 | File | Purpose | Lines |
 |------|---------|-------|
 | `docs/module-docs-index.md` | Master documentation index | 400+ |
-| `Themes/Sixteen/docs/layout-architecture-map.md` | Layout navigation map | 350+ |
-| `Themes/Sixteen/docs/layout-fix-complete-bmad.md` | Layout fix summary | 400+ |
+| `Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_MAP.md` | Layout navigation map | 350+ |
+| `Themes/Sixteen/docs/LAYOUT_FIX_COMPLETE_BMAD.md` | Layout fix summary | 400+ |
 | `Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md` | Vite build fix | 300+ |
-| `Themes/Sixteen/docs/phpstan-layout-fix-complete.md` | PHPStan + layout summary | 250+ |
+| `Themes/Sixteen/docs/PHPSTAN_LAYOUT_FIX_COMPLETE.md` | PHPStan + layout summary | 250+ |
 
 ### Updated Documents
 
@@ -240,13 +234,23 @@ export default defineConfig({
 **Why This is Correct:**
 
 1. **Build Target:** `./public` (local theme public folder)
+<<<<<<< .merge_file_nuQVZy
 2. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+=======
+2. **Copy Step:** `symlink public_html/themes (npm run copy obsoleto)` copies to `../../public_html/themes/Sixteen/`
+2. **Nessuna copia:** `public_html/themes/Sixteen` e' un symlink a `laravel/Themes/Sixteen/public` (`npm run copy` obsoleto)
+>>>>>>> .merge_file_nD234a
 3. **Manifest Location:** Both locations have manifest.json after build
 4. **Laravel Vite:** Reads from `public_html/themes/Sixteen/manifest.json`
 
 **Build Flow:**
 ```
+<<<<<<< .merge_file_nuQVZy
 niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+=======
+resources/ → Vite Build → public/ → symlink public_html/themes (npm run copy obsoleto) → public_html/themes/Sixteen/
+resources/ → Vite Build → public/ ← symlink ← public_html/themes/Sixteen
+>>>>>>> .merge_file_nD234a
 ```
 
 ---
@@ -412,7 +416,6 @@ Start at theme index:
 ### Finding Documentation
 
 1. **Start Here:** [docs/module-docs-index.md](docs/module-docs-index.md)
-1. **Start Here:** [docs/module-docs-index.md](module-docs-index.md)
 2. **Navigate to:** Module or theme category
 3. **Use Search:** Ctrl+F for keywords
 4. **Follow Links:** Cross-references guide you
@@ -437,11 +440,10 @@ Start at theme index:
 ## 📋 Related Documents
 
 - [Master Index](docs/module-docs-index.md) - Central navigation
-- [Master Index](module-docs-index.md) - Central navigation
 - [BMad Workflow](_bmad-output/BMAD-WORKFLOW-COMPLETE.md) - BMad summary
 - [Layout Architecture](Themes/Sixteen/docs/layout-architecture.md) - Theme layouts
 - [Vite Manifest Fix](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md) - Build fix
-- [PHPStan + Layout](Themes/Sixteen/docs/phpstan-layout-fix-complete.md) - Combined summary
+- [PHPStan + Layout](Themes/Sixteen/docs/PHPSTAN_LAYOUT_FIX_COMPLETE.md) - Combined summary
 
 ---
 

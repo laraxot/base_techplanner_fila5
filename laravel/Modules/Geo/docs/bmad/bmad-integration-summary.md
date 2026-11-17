@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_dimK1i
+=======
+<<<<<<< .merge_file_fx6TKA
+>>>>>>> .merge_file_TwAGbM
 ---
 title: "bmad integration summary"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_dimK1i
+=======
+=======
+>>>>>>> .merge_file_jKm619
+>>>>>>> .merge_file_TwAGbM
 # bmad integration summary
 
 ## Scopo

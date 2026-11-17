@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_fcDun6
+=======
+<<<<<<< .merge_file_vucpwT
+>>>>>>> .merge_file_qJeMEd
 ---
 title: "phpstan errors roadmap 2026 01 12"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_fcDun6
+=======
+=======
+>>>>>>> .merge_file_3GrF6V
+>>>>>>> .merge_file_qJeMEd
 # PHPStan Level Max Errors Roadmap - Geo Module
 
 **Data**: 2026-01-12
@@ -18,6 +27,10 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_fcDun6
+=======
+<<<<<<< .merge_file_vucpwT
+>>>>>>> .merge_file_qJeMEd
 title: "phpstan errors roadmap 2026 01 12"
 type: note
 tags: [documentation]
@@ -26,6 +39,11 @@ updated: 2026-09-26
 qmd: "phpstan errors roadmap 2026 01 12"
 issues: []
 discussions: []
+<<<<<<< .merge_file_fcDun6
+=======
+=======
+>>>>>>> .merge_file_3GrF6V
+>>>>>>> .merge_file_qJeMEd
 ## 📊 Errori Identificati
 
 ### Totale Errori: 8

@@ -1,4 +1,8 @@
 ---
+<<<<<<< .merge_file_xJyNCC
+=======
+<<<<<<< .merge_file_fWTQnE
+>>>>>>> .merge_file_zikFGD
 title: "story 001"
 type: note
 tags: [documentation]
@@ -7,6 +11,11 @@ updated: 2026-09-26
 qmd: "story 001"
 issues: []
 discussions: []
+<<<<<<< .merge_file_xJyNCC
+=======
+=======
+>>>>>>> .merge_file_q45ftk
+>>>>>>> .merge_file_zikFGD
 scope: module:Geo
 ---
 

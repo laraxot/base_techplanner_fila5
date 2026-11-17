@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_d1IW0o
+=======
+---
+title: "analysisettagliata 3"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysisettagliata 3"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_Y0Q29T
 # Analisi Dettagliata del Modulo Notify - Parte 3: Servizi Core
 
 ## 3. Servizi Core

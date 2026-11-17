@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_FLCYL2
+=======
+<<<<<<< .merge_file_ucf4Q6
+>>>>>>> .merge_file_wIgxaY
 ---
 title: "filament resources 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_FLCYL2
+=======
+=======
+>>>>>>> .merge_file_iy3YFP
+>>>>>>> .merge_file_wIgxaY
 # Filament Resources - Modulo GDPR
 
 ## Panoramica

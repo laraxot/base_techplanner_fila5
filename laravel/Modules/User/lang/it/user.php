@@ -315,6 +315,12 @@ return [
         'startDate' => [
             'tooltip' => '',
         ],
+<<<<<<< .merge_file_JVBmwC
+=======
+        'user' => [
+            'label' => 'Utente',
+        ],
+>>>>>>> .merge_file_avNFY6
         'matr' => [
             'description' => 'matr',
             'label' => 'matr',
@@ -329,9 +335,6 @@ return [
         ],
         'state' => [
             'label' => 'Stato',
-        ],
-        'user' => [
-            'label' => 'Utente',
         ],
         'device' => [
             'label' => 'Dispositivo',

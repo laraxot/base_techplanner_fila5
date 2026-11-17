@@ -18,7 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_QsvB7L
 # Actions Structure
+=======
+# Actions Structure 
+>>>>>>> .merge_file_uhGGEv
 
 ## Directory Structure
 
@@ -59,7 +63,11 @@ Questa differenza è definita nel file `composer.json` di ogni modulo, che mappa
 
 ## Pattern di Implementazione
 
+<<<<<<< .merge_file_QsvB7L
 <nome progetto> utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+=======
+Quaeris utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
+>>>>>>> .merge_file_uhGGEv
 
 ```php
 <?php

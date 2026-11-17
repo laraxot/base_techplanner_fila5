@@ -15,7 +15,6 @@ related:
   - "./issue-subtree-sync-test.md"
   - "./sync-remote-repo-docs-summary.md"
   - "./sync-remote-repo-test-plan.md"
-status: draft
 ---
 
 # 🤖 AI Agent Work Summary - GitHub Actions & Documentation
@@ -189,8 +188,6 @@ ssh-keygen -t ed25519 -C "actions@github.com"
 - [GitHub Action Setup Guide](github-action-setup-required.md)
 - [AI Lessons Learned](../project/ai-agent-lessons-learned.md)
 - [Critical AI Rules](docs/ai-rules-critical.md)
-- [AI Lessons Learned](../project/ai-agent-lessons-learned.md)
-- [Critical AI Rules](../ai-rules-critical.md)
 - [Sync Subtrees Docs](bashscripts/docs/github/actions/sync-subtrees.md)
 
 ### GitHub Links

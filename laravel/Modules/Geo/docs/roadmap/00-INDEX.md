@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_dAFSEX
+=======
+<<<<<<< .merge_file_536TDc
+>>>>>>> .merge_file_uBQY7N
 ---
 title: "00 INDEX"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_dAFSEX
+=======
+=======
+>>>>>>> .merge_file_ZJy7YX
+>>>>>>> .merge_file_uBQY7N
 # Geo Module - Roadmap
 
 > Geolocalizzazione: indirizzi, coordinate, mappe, geocoding, provider agnostici.

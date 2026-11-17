@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_USOQTY
+=======
+---
+title: "path and namespace rules 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "path and namespace rules 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_aY2WpV
 # Regole per Path e Namespace nel Modulo Notify
 
 > **ATTENZIONE:** In nessun caso il namespace deve contenere il segmento `App`, anche se il file si trova nella cartella `app/`. Questa è una regola fondamentale e ogni violazione può causare errori di autoloading, incompatibilità con PSR-4 e problemi di coerenza nel progetto. Consulta sempre questa sezione prima di creare nuovi file o correggere errori di namespace.
@@ -156,4 +170,16 @@ namespace Modules\Notify\App\Console\Commands;
 
 ---
 
+<<<<<<< .merge_file_USOQTY
 *Ultimo aggiornamento: 2025-05-12*
+=======
+title: "path and namespace rules 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "path and namespace rules 1"
+issues: []
+discussions: []
+*Ultimo aggiornamento: 2025-05-12*
+>>>>>>> .merge_file_aY2WpV

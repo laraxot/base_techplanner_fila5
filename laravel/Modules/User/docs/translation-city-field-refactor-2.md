@@ -2,6 +2,18 @@
 module: theme
 topic: translation-city-field-refactor-2
 canonical: ../../../Themes/docs/shared-components/translation-city-field-refactor-.md
+<<<<<<< .merge_file_CmXFtC
+=======
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+>>>>>>> .merge_file_Ib5iwT
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-city-field-refactor-.md

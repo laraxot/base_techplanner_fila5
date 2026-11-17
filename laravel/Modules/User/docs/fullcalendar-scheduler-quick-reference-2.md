@@ -110,7 +110,11 @@ return [
 private function getFullCalendarPlugin(): FilamentFullCalendarPlugin
 {
     $licenseKey = config('fullcalendar.scheduler_license_key');
+<<<<<<< .merge_file_Us7BTH
 
+=======
+    
+>>>>>>> .merge_file_jYaJl6
     $plugin = FilamentFullCalendarPlugin::make()
         ->selectable()
         ->editable();
@@ -201,7 +205,11 @@ if (app()->environment('local') && empty($licenseKey)) {
 - [ ] Banner rosso rimosso
 - [ ] Funzionalità premium attive
 
+<<<<<<< .merge_file_Us7BTH
 ## 🚀 <nome progetto> Specifico
+=======
+## 🚀 Quaeris Specifico
+>>>>>>> .merge_file_jYaJl6
 
 ### Business Hours Sanitarie
 ```javascript
@@ -230,4 +238,8 @@ $plugin->config([
 selectConstraint: 'businessHours',
 eventConstraint: 'businessHours',
 slotDuration: '00:30:00', // 30 min slots
+<<<<<<< .merge_file_Us7BTH
 ```
+=======
+``` 
+>>>>>>> .merge_file_jYaJl6

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_KtF8bH
+=======
+---
+title: "enum config usage 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "enum config usage 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_kHtNE0
 # Utilizzo di Enum e Config
 
 Questo documento definisce le best practices per l'utilizzo di Enum e file di configurazione nel sistema <nome progetto>, con particolare attenzione alla gestione delle opzioni nei componenti Filament.

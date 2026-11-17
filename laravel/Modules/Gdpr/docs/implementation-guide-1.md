@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_TOUMPj
+=======
+<<<<<<< .merge_file_dxJAYe
+>>>>>>> .merge_file_fPEtQF
 ---
 title: "implementation guide 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_TOUMPj
+=======
+=======
+>>>>>>> .merge_file_A0PfjH
+>>>>>>> .merge_file_fPEtQF
 # GDPR Consent Implementation Guide
 
 ## Overview

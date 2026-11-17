@@ -379,9 +379,9 @@ npm run build
 
 ## 📖 Related Documentation
 
-- [MASTER_IMPLEMENTATION_PLAN.md](../../laravel/Themes/Sixteen/docs/design-comuni/master-implementation-plan.md)
-- [ARCHITECTURAL_DECISIONS.md](../../laravel/Themes/Sixteen/docs/design-comuni/architectural-decisions.md)
-- [HTML_PARITY_VERIFICATION_REPORT.md](../../laravel/Themes/Sixteen/docs/design-comuni/html-parity-verification-report.md)
+- [MASTER_IMPLEMENTATION_PLAN.md](../../laravel/Themes/Sixteen/docs/design-comuni/MASTER_IMPLEMENTATION_PLAN.md)
+- [ARCHITECTURAL_DECISIONS.md](../../laravel/Themes/Sixteen/docs/design-comuni/ARCHITECTURAL_DECISIONS.md)
+- [HTML_PARITY_VERIFICATION_REPORT.md](../../laravel/Themes/Sixteen/docs/design-comuni/HTML_PARITY_VERIFICATION_REPORT.md)
 - [QWEN.md](../../QWEN.md)
 
 ---

@@ -1,4 +1,10 @@
 ---
+<<<<<<< .merge_file_6Ji0Ao
+=======
+qmd: "INDEX"
+issues: []
+discussions: []
+>>>>>>> .merge_file_bZB9gQ
 title: "Rules Index"
 type: index
 created: 2026-05-11
@@ -34,7 +40,11 @@ Le Rules progettuali vivono qui, nel wiki del Module **Notify**, e vengono caric
 
 - La sorgente di verita' per le Rules e' sempre il wiki locale
 - Non embeddare Rules nei prompt di avvio
+<<<<<<< .merge_file_6Ji0Ao
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
+=======
+- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
+>>>>>>> .merge_file_bZB9gQ
 
 ## Aggiungere una Nuova RULES
 

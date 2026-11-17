@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_8w4tXR
+=======
+---
+title: "analisiettagliata 6"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisiettagliata 6"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_aMajM9
 # Analisi Dettagliata del Modulo Notify - Parte 6: Monitoraggio e Analytics
 
 ## 6. Monitoraggio e Analytics

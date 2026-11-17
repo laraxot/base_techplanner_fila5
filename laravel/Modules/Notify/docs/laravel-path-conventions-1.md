@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_31CKue
+=======
+---
+title: "laravel path conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "laravel path conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_G9qiir
 # Convenzioni dei Path in Laravel e <nome progetto>
 
 ## Regole Fondamentali per i Path di Cartelle

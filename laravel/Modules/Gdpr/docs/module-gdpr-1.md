@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_fMqPoO
+=======
+<<<<<<< .merge_file_5w7WBG
+>>>>>>> .merge_file_qFik0y
 ---
 title: "module gdpr 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_fMqPoO
+=======
+=======
+>>>>>>> .merge_file_1pD8sq
+>>>>>>> .merge_file_qFik0y
 # Modulo GDPR
 
 ## Informazioni Generali

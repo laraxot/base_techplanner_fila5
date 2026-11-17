@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_nttXqD
+=======
+<<<<<<< .merge_file_NkjAAt
+>>>>>>> .merge_file_HVkBHb
 ---
 title: "phpstan xot user analysis 2026 06 15"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_nttXqD
+=======
+=======
+>>>>>>> .merge_file_A8w6Fq
+>>>>>>> .merge_file_HVkBHb
 # PHPStan Analysis: Xot + User — 2026-06-15
 
 ## Esecuzione
@@ -36,6 +45,10 @@ Entrambi i moduli sono **CLEAN** a PHPStan `level=max`. Nessun lavoro richiesto.
 
 ---
 
+<<<<<<< .merge_file_nttXqD
+=======
+<<<<<<< .merge_file_NkjAAt
+>>>>>>> .merge_file_HVkBHb
 title: "phpstan xot user analysis 2026 06 15"
 type: note
 tags: [documentation]
@@ -44,4 +57,9 @@ updated: 2026-09-26
 qmd: "phpstan xot user analysis 2026 06 15"
 issues: []
 discussions: []
+<<<<<<< .merge_file_nttXqD
+=======
+=======
+>>>>>>> .merge_file_A8w6Fq
+>>>>>>> .merge_file_HVkBHb
 *Analisi: 2026-06-15 · Memory: 2GB · Tempo: ~2min per modulo*

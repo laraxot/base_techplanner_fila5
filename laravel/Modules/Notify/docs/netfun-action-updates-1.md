@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_S1URxy
+=======
+---
+title: "netfun action updates 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "netfun action updates 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_1H8vjM
 # Aggiornamenti a SendNetfunSMSAction
 
 ## Panoramica delle Modifiche
@@ -317,4 +331,15 @@ Questi miglioramenti garantiscono:
 
 ---
 
+<<<<<<< .merge_file_S1URxy
+=======
+title: "netfun action updates 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "netfun action updates 1"
+issues: []
+discussions: []
+>>>>>>> .merge_file_1H8vjM
 *Ultimo aggiornamento: 2023-05-12*

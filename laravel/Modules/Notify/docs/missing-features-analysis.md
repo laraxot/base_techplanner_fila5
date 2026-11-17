@@ -7,8 +7,6 @@ updated: 2026-09-26
 qmd: "missing features analysis"
 issues: []
 discussions: []
-status: superseded
-superseded_by: missing-features.md
 ---
 
 # Analisi Funzionalità Mancanti - Modulo Notify

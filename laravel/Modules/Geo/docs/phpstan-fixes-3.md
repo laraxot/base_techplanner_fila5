@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_NQMpo2
+=======
+<<<<<<< .merge_file_w0fhep
+>>>>>>> .merge_file_6b4qL3
 ---
 title: "phpstan fixes 3"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_NQMpo2
+=======
+=======
+>>>>>>> .merge_file_mvnWft
+>>>>>>> .merge_file_6b4qL3
 # Correzioni PHPStan Modulo Geo - [DATE]
 
 **Versione PHPStan**: 1.12.x

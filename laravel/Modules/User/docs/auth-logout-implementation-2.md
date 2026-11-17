@@ -18,7 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_oh1yne
 # Implementazione del Logout
+=======
+# Implementazione del Logout 
+>>>>>>> .merge_file_hwUgzc
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -54,16 +58,28 @@ mount(function() {
     if (Auth::check()) {
         // Dispatch dell'evento prima del logout
         Event::dispatch('auth.logout.attempting', [Auth::user()]);
+<<<<<<< .merge_file_oh1yne
 
+=======
+        
+>>>>>>> .merge_file_hwUgzc
         // Esegui il logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
+<<<<<<< .merge_file_oh1yne
 
         // Dispatch dell'evento dopo il logout
         Event::dispatch('auth.logout.successful');
     }
 
+=======
+        
+        // Dispatch dell'evento dopo il logout
+        Event::dispatch('auth.logout.successful');
+    }
+    
+>>>>>>> .merge_file_hwUgzc
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -83,7 +99,11 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
+<<<<<<< .merge_file_oh1yne
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
+=======
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
+>>>>>>> .merge_file_hwUgzc
 
 ## Componenti Filament
 
@@ -111,7 +131,11 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 
 ## Chiavi di Traduzione
 
+<<<<<<< .merge_file_oh1yne
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
+=======
+Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di Quaeris:
+>>>>>>> .merge_file_hwUgzc
 
 ```php
 'logout' => [
@@ -168,7 +192,11 @@ mount(function() {
     Auth::logout();
     session()->invalidate();
     session()->regenerateToken();
+<<<<<<< .merge_file_oh1yne
 
+=======
+    
+>>>>>>> .merge_file_hwUgzc
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>
@@ -210,19 +238,34 @@ name('logout');
 mount(function() {
     if (Auth::check()) {
         $user = Auth::user();
+<<<<<<< .merge_file_oh1yne
 
         // Evento pre-logout
         Event::dispatch('auth.logout.attempting', [$user]);
 
+=======
+        
+        // Evento pre-logout
+        Event::dispatch('auth.logout.attempting', [$user]);
+        
+>>>>>>> .merge_file_hwUgzc
         // Logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
+<<<<<<< .merge_file_oh1yne
 
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
     }
 
+=======
+        
+        // Evento post-logout
+        Event::dispatch('auth.logout.successful');
+    }
+    
+>>>>>>> .merge_file_hwUgzc
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
 ?>

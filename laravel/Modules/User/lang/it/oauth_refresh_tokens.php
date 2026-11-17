@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_YWRqvA
     'fields' => [
         'id' => ['label' => 'ID'],
         'access_token_id' => ['label' => 'access_token_id'],
@@ -11,6 +12,8 @@ return [
         'created_at' => ['label' => 'Creato il'],
         'updated_at' => ['label' => 'Modificato il'],
     ],
+=======
+>>>>>>> .merge_file_jtF3fC
     'actions' => [
         'create' => [
             'icon' => 'create',
@@ -26,6 +29,26 @@ return [
         ],
         'edit' => [
             'icon' => 'edit',
+        ],
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'ID',
+        ],
+        'access_token_id' => [
+            'label' => 'access_token_id',
+        ],
+        'revoked' => [
+            'label' => 'Revocato',
+        ],
+        'expires_at' => [
+            'label' => 'Scade il',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+        'updated_at' => [
+            'label' => 'Modificato il',
         ],
     ],
 ];

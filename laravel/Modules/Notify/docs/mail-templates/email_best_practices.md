@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "email best practices"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Best Practices per Email Transazionali
@@ -130,7 +129,3 @@ $mailTemplate->send($user->email, [
 - [Integrazione MailPace](mailpace_templates_integration.md)
 - [HTML Email Compatibility](html_email_compatibility.md)
 - [Spatie Email Usage Guide](../SPATIE_EMAIL_USAGE_GUIDE.md)
-- [Guida Layout Email](../mail_layouts_guide.md)
-- [Integrazione MailPace](./mailpace_templates_integration.md)
-- [HTML Email Compatibility](./html_email_compatibility.md)
-- [Spatie Email Usage Guide](../spatie_email_usage_guide.md)

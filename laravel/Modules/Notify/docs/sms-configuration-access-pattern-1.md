@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_dwJ4vn
+=======
+---
+title: "sms configuration access pattern 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms configuration access pattern 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_vHfVTO
 # Pattern di Accesso alla Configurazione SMS
 
 ## Problema Identificato

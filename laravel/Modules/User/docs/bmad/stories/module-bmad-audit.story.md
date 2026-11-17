@@ -1,37 +1,70 @@
 ---
-id: User/module-bmad-audit-20260928
-title: "User: baseline BMAD e analisi completa"
-status: ready-for-dev
+title: "Module BMAD audit — User"
+<<<<<<< .merge_file_eHIIt5
+status: review
+updated: 2026-11-16
 module: User
-epic: module-governance
-priority: P1
-created: 2026-09-28
-references:
-  - ../architecture/module-boundary.md
-  - ../brainstorming/module-opportunities.md
-  - ../epics/module-roadmap.md
-type: story
-updated: 2026-10-07
-tags: [docs, user, bmad]
-qmd: "story   user: baseline bmad user"
+bmad: true
+qmd: "story BMAD audit modulo User inventario gate"
 ---
-# Story: User: baseline BMAD
 
-Come manutentore del modulo User, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
+# Story: audit BMAD del modulo User
 
-## Acceptance criteria
+## Acceptance
 
-- [ ] Confermare API pubblica e confini con riferimenti a codice reale.
-- [ ] Inventariare i flussi critici e collegarli a test Pest.
-- [ ] Misurare PHPStan/Pest nel contesto stabile del modulo.
-- [ ] Registrare dipendenze, rischi e decisioni nel modulo.
-- [ ] Aggiornare lo stato reale in `docs/sprint-status.yaml`.
+- [x] Inventario source-first (2026-11-16).
+- [x] Audit + piano in `docs/bmad/`.
+- [x] Pack ECC in `docs/ecc/`.
+- [ ] Pest modulo eseguito in ambiente testing stabile.
+- [ ] Finding P0/P1 chiusi con regressione.
 
-## Task
+## Riferimenti
 
-- [ ] Revisione architettura.
-- [ ] Brainstorming con stakeholder.
-- [ ] Decomposizione epic in story più piccole.
-- [ ] Quality gate e second-brain write-back.
+- [audit](../audit.md)
+- [piano](../piano-miglioramento.md)
+- [ECC](../../ecc/user-ecc-audit.md)
 
+## Esito
+
+Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
+=======
+type: story
+status: review
+updated: 2026-11-16
+module: User
+qmd: "story BMAD audit modulo User inventario gate finding P0 P1"
+---
+
+# Story: audit BMAD ed ECC del modulo User
+
+## Perché
+
+Rendere verificabile lo stato di User: chi è chi e cosa può fare: utenti, ruoli, permessi, team, OAuth, accesso ai pannelli. Senza baseline misurata ogni fix successivo è ad hoc.
+
+## Acceptance
+
+- [x] Inventario source-first misurato (2026-11-16).
+- [x] Audit approfondito con finding P0/P1/P2 e path: [audits/user-audit.md](../audits/user-audit.md).
+- [x] Pack: [audit](../audit.md), [decision-log](../decision-log.md), [epics](../epics.md), [brainstorming](../brainstorming.md), [ECC](../../ecc/user-ecc-audit.md).
+- [x] PHPStan `Modules/User`: 0 errori.
+- [ ] Pest modulo eseguito su DB `*_test` raggiungibile (oggi: skip documentato).
+- [ ] Finding P0-U1, P0-U2 chiusi con regressione Pest.
+- [x] Finding P1 «Cms phantom imports User FO pages» chiuso (2026-11-16): niente `Modules\Cms` nelle Folio pages; rimossa `pages/pages/`; Pest `NoCmsPhantomFolioImportsTest`. Vedi [decision-log](../decision-log.md).
+- [x] Finding P1 «Cms phantom imports User FO pages» chiuso (2026-11-16): niente `Modules\Cms` nelle Folio pages; rimossa `pages/pages/`; Pest `NoCmsPhantomFolioImportsTest`. Vedi [decision-log](../decision-log.md).
+
+## Story figlie (da creare, vedi [epics](../epics.md))
+
+- `user-policy-role-permission-super-admin-only`
+- `user-permissionpolicy-deny-all`
+- `user-seed-permissions-no-runtime-create`
+- `user-admin-roles-config`
+- `user-remove-dead-policy-and-labels`
+
+## Esito (2026-11-16)
+
+<<<<<<< .merge_file_DJh0JS
 >>>>>>> laraxot/dev
+=======
+Baseline aggiornata, nessun codice applicativo modificato. Fix e Pest restano aperti (gate DB test).
+>>>>>>> .merge_file_z8yLvy
+>>>>>>> .merge_file_tWQVda

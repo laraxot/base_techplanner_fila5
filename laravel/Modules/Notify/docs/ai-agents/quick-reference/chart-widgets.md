@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "chart widgets"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Quick Reference - Chart Widgets

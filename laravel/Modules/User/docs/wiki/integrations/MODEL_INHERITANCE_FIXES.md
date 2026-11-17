@@ -5,9 +5,6 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-qmd: "correzioni ereditarietà modelli - modulo user user"
-status: superseded
-superseded_by: model_inheritance_fixes.md
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User
@@ -204,6 +201,9 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
+<<<<<<< .merge_file_CejIgw
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
+=======
+>>>>>>> .merge_file_3jUgkB

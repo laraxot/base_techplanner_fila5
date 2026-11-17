@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_8i4Eyn
+=======
+<<<<<<< .merge_file_cuR6WI
+>>>>>>> .merge_file_7PVQea
 ---
 title: "handoff phpstan modules zero 2026 07 07"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_8i4Eyn
+=======
+=======
+>>>>>>> .merge_file_SDHDpD
+>>>>>>> .merge_file_7PVQea
 # Handoff — PHPStan Modules zero errori
 
 **Data**: 2026-07-07

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_zN25Nd
+=======
+---
+title: "modern email design patterns 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modern email design patterns 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_MYLcbw
 # Pattern di Design per Email Moderne
 
 ## Introduzione
@@ -347,5 +361,9 @@ return [
 
 - [Responsive Email Templates](./RESPONSIVE_EMAIL_TEMPLATES.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+<<<<<<< .merge_file_zN25Nd
 - [HTML Email Compatibility](mail-templates/html_email_compatibility.md)
+=======
+- [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+>>>>>>> .merge_file_MYLcbw
 - [Spatie Email Integration](./SPATIE_EMAIL_USAGE_GUIDE.md)

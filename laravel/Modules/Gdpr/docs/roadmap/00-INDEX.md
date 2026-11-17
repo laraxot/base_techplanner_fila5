@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_7P624n
+=======
+<<<<<<< .merge_file_0e36gf
+>>>>>>> .merge_file_4KPYNE
 ---
 title: "00 INDEX"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_7P624n
+=======
+=======
+>>>>>>> .merge_file_Bo4ic2
+>>>>>>> .merge_file_4KPYNE
 # Roadmap Index - Gdpr
 
 ## Scope

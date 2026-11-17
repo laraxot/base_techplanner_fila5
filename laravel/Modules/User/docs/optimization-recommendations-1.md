@@ -1,3 +1,26 @@
+<<<<<<< .merge_file_YUc7gO
+=======
+---
+title: "Raccomandazioni di Ottimizzazione - Modulo User"
+type: concept
+tags: [optimization, recommendations]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "optimization-recommendations-1 raccomandazioni di ottimizzazione - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_14dO9w
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -10,8 +33,13 @@
 - **Collegamenti**: 500+ link nel README (confusione)
 - **Struttura**: Informazioni sparse senza organizzazione logica
 
+<<<<<<< .merge_file_YUc7gO
 #### 2. Riusabilità Compromessa
 - **141+ occorrenze hardcoded** di "<nome progetto>"
+=======
+#### 2. Riusabilità Compromessa  
+- **141+ occorrenze hardcoded** di "Quaeris"
+>>>>>>> .merge_file_14dO9w
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
 - **Path hardcoded** in documentazione
@@ -47,7 +75,11 @@ Modulo riutilizzabile per gestione utenti, autenticazione e autorizzazione in pr
 
 ## Funzionalità Core
 - Single Table Inheritance (STI) con tighten/parental
+<<<<<<< .merge_file_YUc7gO
 - OAuth2 con Laravel Passport
+=======
+- OAuth2 con Laravel Passport  
+>>>>>>> .merge_file_14dO9w
 - Social login con Socialite
 - Spatie Permission per ruoli/permessi
 - Filament widgets per admin panel
@@ -125,7 +157,11 @@ User/docs/
 #### Pattern di Correzione per Test
 ```php
 // ❌ PROBLEMI ATTUALI
+<<<<<<< .merge_file_YUc7gO
 use Modules\<nome progetto>\Models\User;
+=======
+use Modules\Quaeris\Models\User;
+>>>>>>> .merge_file_14dO9w
 $user = User::factory()->create();
 
 // ✅ SOLUZIONI RICHIESTE
@@ -144,7 +180,11 @@ protected function createTestUser(): mixed
 #### File Prioritari da Correggere
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
+<<<<<<< .merge_file_YUc7gO
 3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/<nome progetto>/`
+=======
+3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/Quaeris/`
+>>>>>>> .merge_file_14dO9w
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
 
@@ -153,12 +193,20 @@ protected function createTestUser(): mixed
 // Documentazione trait migliorata
 /**
  * Trait HasTeams - Gestione team per utenti
+<<<<<<< .merge_file_YUc7gO
  *
+=======
+ * 
+>>>>>>> .merge_file_14dO9w
  * REQUISITI:
  * - Modello deve estendere Authenticatable
  * - Tabella teams con colonna owner_id (uuid, nullable)
  * - Tabella pivot team_user
+<<<<<<< .merge_file_YUc7gO
  *
+=======
+ * 
+>>>>>>> .merge_file_14dO9w
  * @property-read Collection<int, Team> $teams
  * @property-read Collection<int, Team> $ownedTeams
  */
@@ -187,7 +235,11 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function boot(): void
     {
         parent::boot();
+<<<<<<< .merge_file_YUc7gO
 
+=======
+        
+>>>>>>> .merge_file_14dO9w
         // Solo configurazioni specifiche del modulo
         $this->configurePassport();
         $this->configureSocialite();
@@ -196,7 +248,11 @@ class UserServiceProvider extends XotBaseServiceProvider
     public function register(): void
     {
         parent::register();
+<<<<<<< .merge_file_YUc7gO
 
+=======
+        
+>>>>>>> .merge_file_14dO9w
         // Solo binding specifici non gestiti da XotBase
         $this->registerUserContracts();
     }
@@ -212,7 +268,11 @@ class UserServiceProvider extends XotBaseServiceProvider
 - [ ] **Collegamenti** ridotti a essenziali (max 20)
 
 ### Riusabilità
+<<<<<<< .merge_file_YUc7gO
 - [ ] **0 occorrenze** hardcoded "<nome progetto>"
+=======
+- [ ] **0 occorrenze** hardcoded "Quaeris"
+>>>>>>> .merge_file_14dO9w
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
 - [ ] **Script check** passa senza errori
@@ -229,7 +289,11 @@ class UserServiceProvider extends XotBaseServiceProvider
 - **Pomeriggio**: Organizzare file per categorie
 - **Sera**: Eliminare duplicazioni
 
+<<<<<<< .merge_file_YUc7gO
 ### Giorno 2: Riusabilità
+=======
+### Giorno 2: Riusabilità  
+>>>>>>> .merge_file_14dO9w
 - **Mattina**: Correggere widget auth
 - **Pomeriggio**: Aggiornare test files
 - **Sera**: Verificare script check
@@ -247,7 +311,11 @@ class UserServiceProvider extends XotBaseServiceProvider
 find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
+<<<<<<< .merge_file_YUc7gO
 grep -r -i "<nome progetto>" Modules/User/ --include="*.php" | wc -l
+=======
+grep -r -i "Quaeris" Modules/User/ --include="*.php" | wc -l
+>>>>>>> .merge_file_14dO9w
 ```
 
 ### Post-Implementazione
@@ -265,7 +333,11 @@ php artisan user:benchmark  # Target: < 100ms
 ## 🎯 PRIORITÀ
 
 1. **CRITICO**: Ristrutturazione documentazione (blocca manutenibilità)
+<<<<<<< .merge_file_YUc7gO
 2. **CRITICO**: Correzione riusabilità (blocca altri progetti)
+=======
+2. **CRITICO**: Correzione riusabilità (blocca altri progetti)  
+>>>>>>> .merge_file_14dO9w
 3. **IMPORTANTE**: Ottimizzazione trait (migliora DX)
 4. **NORMALE**: Performance optimization (migliora UX)
 

@@ -65,3 +65,50 @@ Il runtime e' 8.4: serve alzare a `^8.3`/`^8.4` (file fuori scope User, tocca tu
 
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
+<<<<<<< .merge_file_VASbZO
+
+## Ripresa 2026-11-17 — baseline 8 errori, 4 in User
+
+`phpstan analyse Modules` (cache pulita, via `heavy-slot.sh`): 8 errori in 5 file. Quattro in User, quattro nel trait `Rating/HasRating` (vedi sotto).
+
+| File | Scopo del codice | Cosa diceva l'errore davvero | Esito |
+|------|------------------|------------------------------|-------|
+| `Http/Livewire/Team/Change.php:45` | Componente legacy del selettore team (sostituito da `TeamChangeWidget`, nessun importatore): popola `$teams` per la view | `$teams` e' `list<...>` perche' Livewire deve serializzare un array JSON, non un oggetto; `->values()->all()` e' una lista solo a runtime, PHPStan non la vede | `array_values(...)`: la normalizzazione esiste davvero e il tipo dichiarato resta stretto |
+| `tests/Feature/Filament/Pages/CreateUserTest.php` etichetta/titolo | Garantire che la pagina di creazione abbia un'etichetta e un titolo | `assertNotNull` su `string\|Htmlable` e' sempre vero: il test non provava nulla | Verifica testo non vuoto (Htmlable → `toHtml()`) |
+| idem, "basic form functionality" | Garantire che la pagina abbia un form che funziona | `method_exists($page,'form')` e' vero per ereditarieta': nessuna protezione dal rischio reale (Form vuoto = pagina vuota senza errori) | `UserResource::getFormClass()` e' un `XotBaseResourceForm` con `getFormSchema()` non vuoto |
+
+Verifica: `php -l` OK; PHPStan sui 2 file `[OK]`; a cache pulita **0 errori in User**; Pest (scratch DB): 18 passati incl. i 3 test riscritti.
+Pint (preset `laravel`) riscriveva stile Yoda e `new X;` fuori dal perimetro del fix: ripristinato a mano. **Non lanciare `pint` sui file senza controllare il diff**: il codebase usa Yoda.
+
+### Difetti trovati (non erano segnalazioni PHPStan)
+
+1. **`tests/TestCase.php::connectionsToTransact()`**: `'fixcity'` nella lista condivisa tra i progetti del monorepo; dove il modulo Fixcity non e' attivo `connection('fixcity')` lanciava *not configured* e **nessun test User partiva** (198 file). Stesso bug gia' risolto in `Notify/tests/TestCase.php` togliendo il nome; qui si saltano i nomi senza configurazione (resta valido dove `fixcity` esiste). Zero effetto sulle connessioni configurate.
+2. **`bashscripts/tools/pest-scratch-db.sh`** non esporta `DB_USERNAME_USER`/`DB_PASSWORD_USER` (vuoti in `.env`, letti senza fallback da `config/database.php:97`): la connessione `user` fallisce con `Access denied for user ''`. Workaround usato: esportarli da `DB_USERNAME`/`DB_PASSWORD` per quella sola esecuzione. Da sistemare nel tool.
+3. Il `migrate --force` nel `setUp` di `TestCase` (solo su DB scratch) inciampa in `Class "CreatePostViewsTable" not found`: una migrazione con classe nominata non risolvibile; il primo test di ogni processo ne paga il costo. Da trovare (modulo owner probabile: Blog/Cms).
+4. **`Feature/Filament/Resources/UserResourceTest.php`**: 8 test leggono `section01`/`section02`, ma `UserForm` ora e' `main → Grid → UserSection`. Test rimasti indietro rispetto al refactor del form: vanno riscritti sullo schema vero, non adattati alla cieca.
+
+### Rating / Xot: pivot tipizzato di `morphToManyX` (chiuso a fine sessione)
+
+Un altro agente (sessione concorrente, nessun lock) aveva iniziato a tipizzare `Xot/RelationX::morphToManyX()` con `@template TPivot` + parametro `pivotClass:` e a passare `RatingMorph::class` da `Rating/HasRating`. Si e' fermato a meta' (file immobili da 10+ minuti): la modifica spostava gli errori (6 `return.type` a `RelationX.php:120` + 1 `method.childReturnType` su `Blog\Article::ratings()`). Completata da questa sessione, senza riscrivere il suo lavoro:
+
+| Punto | Scopo | Causa dell'errore | Correzione |
+|-------|-------|-------------------|------------|
+| `RelationX::morphToManyX()` `@return` | Relazione morph N:M col pivot **dedotto** per convenzione, oppure **esplicito** (`RatingMorph` ha `user_id`/`points`) | Nel ramo `pivotClass === null` il pivot e' `MorphPivot`, non `TPivot`: PHPStan non puo' unificarli | `($pivotClass is null ? MorphPivot : TPivot)`: provato prima in un file di prova fuori dal repo, poi applicato (solo docblock) |
+| `HasRatingContract::ratings()` | Contratto degli host con rating | `$this` non e' ammesso come `TDeclaringModel` in un'interfaccia e `Model` e' invariante: l'implementazione `$this` risultava incompatibile | `covariant Model` (stesso schema di `UserNotificationsContract`) |
+
+Chiamanti di `morphToManyX`: `HasRating` (esplicito) e `XotRelationManageStatesCoverageTest` (dedotto), entrambi coperti.
+Nuovo test `Rating/tests/Unit/HasRatingPivotTest.php`: `ratings()` usa `RatingMorph` come pivot (1 passato, senza DB). Nota: una versione in stile funzionale con `uses(TestCase::class)` era rossa/ridondante perche' `Modules/Rating/tests/Pest.php` non viene caricato quando Pest parte da `laravel/` mentre la regola PHPStan lo da' per applicato: i test del modulo restano a classe, come i fratelli.
+
+**Esito:** `phpstan analyse Modules` a cache pulita = **0 errori** (8 → 0).
+
+### Strumenti condivisi: la radice puntava a un altro progetto
+
+`bashscripts` e' un symlink a `../base_ptvx_fila5/bashscripts/`; `md-filenames.py` e `claims-open.py` calcolavano la radice con `Path(__file__).resolve()` (segue il symlink): da techplanner elencavano 1674 `.md` e lock/claim **di ptvx**, e un `apply` avrebbe rinominato file di un altro progetto. Ora la radice e' il git toplevel del cwd (`MD_FILENAMES_ROOT` per forzarla). Misurato: techplanner 2127 violazioni di nome `.md` (User 772, Notify 410, Themes/docs 283, UI 147, Lang 119, Cms 93, Geo 61…), ptvx invariato a 1674. Altri 4 script Python (`docs-organizer.py`, `fix-module-root-hygiene.py`, `release/go-live-gate.py`, `worklog/worklog.py`) usano lo stesso schema: da verificare prima di usarli qui.
+
+### Aperto (non eseguito di proposito)
+
+- Rinomina di massa dei `.md` e miglioramento dei prompt in `bashscripts/docs/prompts`: altri agenti li stavano gia' modificando in massa (126 file prompt toccati in 30 minuti; commit Activity di 1189 file; 783 modifiche non committate): un `apply` ora collide e salterebbe quasi tutto come «sporco». Da fare quando il repo e' quieto: `python3 -I bashscripts/tools/docs/md-filenames.py plan` poi `apply --only <modulo>` un modulo alla volta.
+- 9 lock di sessioni vecchie (~11 giorni) in `Themes/Two`, `config`, `Seo`: stantii, non rimossi (decide l'utente).
+- Difetti 2, 3, 4 sopra (tool scratch, migrazione `CreatePostViewsTable`, `UserResourceTest`).
+=======
+>>>>>>> .merge_file_hFYxqc

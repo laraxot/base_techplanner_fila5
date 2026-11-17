@@ -30,6 +30,21 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+<<<<<<< .merge_file_hHH5J7
+=======
+        'name' => [
+            'label' => 'Nome',
+        ],
+        'display_name' => [
+            'label' => 'Nome visualizzato',
+        ],
+        'type' => [
+            'label' => 'Tipo',
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
+        ],
+>>>>>>> .merge_file_RI75kJ
     ],
     'actions' => [
         'create' => [

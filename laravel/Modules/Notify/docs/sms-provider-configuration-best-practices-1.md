@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_o80dm5
+=======
+---
+title: "sms provider configuration best practices 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms provider configuration best practices 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_ByRLVq
 # Best Practices per la Configurazione dei Provider SMS
 
 ## Struttura Corretta della Configurazione

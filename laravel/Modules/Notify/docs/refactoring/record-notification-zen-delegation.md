@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "record notification zen delegation"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Refactoring RecordNotification - Zen Delegation Pattern
@@ -267,9 +266,22 @@ $client->notify($notification); // via() determina canali da routeNotificationFo
 - [RECORD_NOTIFICATION_ZEN_CONSTRUCTOR.md](./record_notification_zen_constructor.md) - Filosofia Zen Delegation
 - [record-notification.md](../notifications/record-notification.md) - Documentazione completa RecordNotification
 - [record-notification-constructor-slug.md](./record-notification-constructor-slug.md) - Refactoring precedente (Lazy Resolution, ora superato)
+<<<<<<< .merge_file_inTBWo
 - [send-record-notification-action.md](send-record-notification-action.md) - Documentazione SendRecordNotificationAction
 - [send-record-notification-action.md](send-record-notification-action.md) - Documentazione SendRecordNotificationAction
+=======
+- [send-record-notification-action.md](../actions/send-record-notification-action.md) - Documentazione SendRecordNotificationAction
+>>>>>>> .merge_file_LV4FFG
 
 ---
+
+title: "record notification zen delegation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "record notification zen delegation"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Delegation over duplication, bridge over God Object, simplicity over complexity"*

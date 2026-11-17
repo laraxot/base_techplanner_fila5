@@ -16,7 +16,6 @@ related:
   - "./commit-message.md"
   - "./configuration.md"
   - "./design-comuni-bmad-master-plan.md"
-status: draft
 ---
 
 # Theme Detection System - Notify Fila5
@@ -410,11 +409,10 @@ new class extends Component {
 
 ### Internal Documents
 
-- → [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md) - Layout hierarchy
+- → [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md) - Layout hierarchy
 - → [Page Component Architecture](Modules/Cms/docs/PAGE_COMPONENT_architecture.md) - Page component
 - → [Vite Build System](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md) - Build process
 - → [Master Index](docs/module-docs-index.md) - Central navigation
-- → [Master Index](../module-docs-index.md) - Central navigation
 
 ### External Resources
 
@@ -496,7 +494,12 @@ pages/tests/amministrazione.blade.php # SBAGLIATO
 - [ ] `composer update -W` executed
 - [ ] `npm install` executed
 - [ ] `npm run build` executed
+<<<<<<< .merge_file_IL02X8
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+=======
+- [ ] `symlink public_html/themes (npm run copy obsoleto)` executed
+- [ ] `public_html/themes/<Tema>` e' un symlink a `laravel/Themes/<Tema>/public` (`npm run copy` dismesso)
+>>>>>>> .merge_file_a8iBQS
 - [ ] Manifest exists: `public_html/themes/{theme}/manifest.json`
 
 ### Blade Components

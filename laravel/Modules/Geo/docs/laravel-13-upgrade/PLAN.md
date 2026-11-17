@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_UkfsG8
+=======
+<<<<<<< .merge_file_2IaGH4
+>>>>>>> .merge_file_sKzX8g
 ---
 title: "PLAN"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_UkfsG8
+=======
+=======
+>>>>>>> .merge_file_bSFKmh
+>>>>>>> .merge_file_sKzX8g
 # Plan: Laravel 13 Upgrade
 
 ## Phase 1: Global Documentation

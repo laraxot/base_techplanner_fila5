@@ -2,12 +2,20 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_W8pSB3
+use Illuminate\Contracts\Support\Htmlable;
+=======
+>>>>>>> .merge_file_oV9Md8
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+<<<<<<< .merge_file_W8pSB3
+use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use PHPUnit\Framework\Assert;
+=======
+>>>>>>> .merge_file_oV9Md8
 
 /**
  * Verifica che CreateUser esponga il contratto Filament atteso
@@ -18,7 +26,11 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
+<<<<<<< .merge_file_W8pSB3
     TestCase::$createUserPage = new CreateUser;
+=======
+    $this->page = new CreateUser();
+>>>>>>> .merge_file_oV9Md8
 });
 
 test('create user page has correct resource', function (): void {
@@ -27,13 +39,13 @@ test('create user page has correct resource', function (): void {
 });
 
 test('create user page has correct navigation label', function (): void {
-    $page = TestCase::requireCreateUserPage();
-    Assert::assertNotNull($page->getNavigationLabel());
+    $label = TestCase::requireCreateUserPage()->getNavigationLabel();
+    Assert::assertNotSame('', $label instanceof Htmlable ? $label->toHtml() : $label);
 });
 
 test('create user page has correct title', function (): void {
-    $page = TestCase::requireCreateUserPage();
-    Assert::assertNotNull($page->getTitle());
+    $title = TestCase::requireCreateUserPage()->getTitle();
+    Assert::assertNotSame('', $title instanceof Htmlable ? $title->toHtml() : $title);
 });
 
 test('create user page has correct breadcrumbs structure', function (): void {
@@ -83,9 +95,12 @@ test('create user page handles form submission structure', function (): void {
 });
 
 test('create user page has basic form functionality', function (): void {
-    $page = TestCase::requireCreateUserPage();
-    // Filament 5: form -> schema; il modello si verifica con getModel().
-    Assert::assertTrue(method_exists($page, 'form'));
+    // Lo schema vive in Schemas\UserForm (UserResource::getFormClass()); uno schema vuoto
+    // svuota la pagina di creazione senza errori ne' log.
+    Assert::assertSame(UserResource::class, TestCase::requireCreateUserPage()->getResource());
+    $form = app(UserResource::getFormClass());
+    Assert::assertInstanceOf(XotBaseResourceForm::class, $form);
+    Assert::assertNotEmpty($form->getFormSchema());
 });
 
 test('create user page follows filament conventions', function (): void {

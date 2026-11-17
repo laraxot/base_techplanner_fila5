@@ -1,8 +1,34 @@
+<<<<<<< .merge_file_t9i1dk
+=======
+---
+title: "PHPStan Compliance - User Module"
+type: concept
+tags: [phpstan, compliance]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-compliance phpstan compliance - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_xSUBaF
 # PHPStan Compliance - User Module
 
 ## Status: ✅ FULLY COMPLIANT
 
+<<<<<<< .merge_file_t9i1dk
 **Analysis Date:** September 22, 2025
+=======
+>>>>>>> .merge_file_xSUBaF
 **PHPStan Level:** 9 (Maximum)
 **Files Analyzed:** 772
 **Errors Found:** 0
@@ -57,4 +83,8 @@ The module maintains:
 - Strict type declarations
 - Comprehensive type hints
 - Authentication security best practices
+<<<<<<< .merge_file_t9i1dk
 - Modern PHP 8.2+ feature utilization
+=======
+- Modern PHP 8.2+ feature utilization
+>>>>>>> .merge_file_xSUBaF

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_F6QeDY
+=======
+---
+title: "analisi dettagliata 7"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi dettagliata 7"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_V4sX27
 # Analisi Dettagliata del Modulo Notify - Parte 7: Manutenzione e Backup
 
 ## 7. Manutenzione e Backup
@@ -641,3 +655,8 @@ class MaintainTemplatesCommand extends Command
         return 0;
     }
 } 
+<<<<<<< .merge_file_F6QeDY
+=======
+
+```
+>>>>>>> .merge_file_V4sX27

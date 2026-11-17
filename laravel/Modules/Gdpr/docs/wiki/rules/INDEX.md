@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_Su6xOe
+=======
+<<<<<<< .merge_file_nb3Ng3
+>>>>>>> .merge_file_JwiMNI
 ---
 title: "INDEX"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_Su6xOe
+=======
+=======
+>>>>>>> .merge_file_B2kEoW
+>>>>>>> .merge_file_JwiMNI
 # Gdpr Module - rules Index
 
 ## Purpose
@@ -25,6 +34,10 @@ qmd search "Gdpr rules" --limit 5
 - [Root Wiki](../../../docs/wiki/)
 
 ---
+<<<<<<< .merge_file_Su6xOe
+=======
+<<<<<<< .merge_file_nb3Ng3
+>>>>>>> .merge_file_JwiMNI
 title: "INDEX"
 type: note
 tags: [documentation]
@@ -33,4 +46,9 @@ updated: 2026-09-26
 qmd: "INDEX"
 issues: []
 discussions: []
+<<<<<<< .merge_file_Su6xOe
+=======
+=======
+>>>>>>> .merge_file_B2kEoW
+>>>>>>> .merge_file_JwiMNI
 *Updated: 2026-05-11*

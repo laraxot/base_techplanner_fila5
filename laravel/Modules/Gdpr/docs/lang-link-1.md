@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_60xuLQ
+=======
+<<<<<<< .merge_file_4q2RV8
+>>>>>>> .merge_file_bdttwO
 ---
 title: "lang link 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_60xuLQ
+=======
+=======
+>>>>>>> .merge_file_AfkbFb
+>>>>>>> .merge_file_bdttwO
 # Collegamento alle Traduzioni del Modulo Gdpr
 
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).

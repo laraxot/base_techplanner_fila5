@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_9GmgdJ
+<<<<<<< .merge_file_wUEdKd
+=======
+<<<<<<< .merge_file_nvmORK
+>>>>>>> .merge_file_Pc56Ed
+=======
+<<<<<<< .merge_file_nvmORK
+>>>>>>> .merge_file_E7Oagy
 ---
 title: "FALSE FRIENDS"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_9GmgdJ
+<<<<<<< .merge_file_wUEdKd
+=======
+=======
+>>>>>>> .merge_file_iwZdjc
+>>>>>>> .merge_file_Pc56Ed
+=======
+=======
+>>>>>>> .merge_file_iwZdjc
+>>>>>>> .merge_file_E7Oagy
 # False Friends – Geo Module
 
 | Concetto | Interpretazione errata | Corretto |

@@ -89,10 +89,14 @@ return [
             'description' => '',
         ],
         'photo' => [
+<<<<<<< .merge_file_HUPoXS
             'label' => 'Foto',
+=======
+>>>>>>> .merge_file_XIVBoC
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Foto',
         ],
         'user' => [
             'name' => [

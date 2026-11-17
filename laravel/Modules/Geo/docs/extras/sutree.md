@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_JOrA4w
+=======
+<<<<<<< .merge_file_ePIEfc
+>>>>>>> .merge_file_O3ULHD
 ---
 title: "sutree"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_JOrA4w
+=======
+=======
+>>>>>>> .merge_file_truJ8V
+>>>>>>> .merge_file_O3ULHD
 # Sutree
 
 git subtree pull -P bashscripts git@github.com:aurmich/bashscripts_fila5.git dev

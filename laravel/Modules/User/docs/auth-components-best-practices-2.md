@@ -18,7 +18,11 @@ related:
   - "./actions-path-convention.md"
 ---
 
+<<<<<<< .merge_file_0hxFCg
 # Best Practices per i Componenti di Autenticazione
+=======
+# Best Practices per i Componenti di Autenticazione 
+>>>>>>> .merge_file_K9uw0g
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
@@ -169,7 +173,11 @@ Prima di utilizzare una chiave di traduzione, assicurarsi che i file di traduzio
 - `/laravel/Modules/Lang/lang/it/auth.php`
 - `/laravel/Modules/Lang/lang/en/auth.php`
 
+<<<<<<< .merge_file_0hxFCg
 ## Componenti di Autenticazione
+=======
+## Componenti di Autenticazione 
+>>>>>>> .merge_file_K9uw0g
 
 ### 1. Pagine di Autenticazione
 
@@ -203,7 +211,11 @@ Prima di implementare nuovi componenti di autenticazione o modificare quelli esi
 
 1. Che tutte le chiavi di traduzione siano definite in tutti i file di lingua supportati
 2. Che i componenti funzionino correttamente con la localizzazione delle URL
+<<<<<<< .merge_file_0hxFCg
 3. Che i componenti rispettino le best practices di <nome progetto> per le chiavi di traduzione
+=======
+3. Che i componenti rispettino le best practices di Quaeris per le chiavi di traduzione
+>>>>>>> .merge_file_K9uw0g
 
 ## Riferimenti
 

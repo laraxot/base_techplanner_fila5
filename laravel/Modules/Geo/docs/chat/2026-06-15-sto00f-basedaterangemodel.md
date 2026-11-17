@@ -1,4 +1,8 @@
 ---
+<<<<<<< .merge_file_t5eFg9
+=======
+<<<<<<< .merge_file_xCYbus
+>>>>>>> .merge_file_cTEbt5
 title: "2026 06 15 sto00f basedaterangemodel"
 tags: [documentation]
 created: 2026-09-26
@@ -6,6 +10,11 @@ updated: 2026-09-26
 qmd: "2026 06 15 sto00f basedaterangemodel"
 issues: []
 discussions: []
+<<<<<<< .merge_file_t5eFg9
+=======
+=======
+>>>>>>> .merge_file_2sCQGx
+>>>>>>> .merge_file_cTEbt5
 agent: opencode
 type: session-summary
 module: Sigma

@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_qbBlKC
+<<<<<<< .merge_file_YbKkJY
+=======
+<<<<<<< .merge_file_hNwkIo
+>>>>>>> .merge_file_NMD9d5
+=======
+<<<<<<< .merge_file_hNwkIo
+>>>>>>> .merge_file_4mtP4Q
 ---
 title: "best practices 1"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_qbBlKC
+<<<<<<< .merge_file_YbKkJY
+=======
+=======
+>>>>>>> .merge_file_pnTrXR
+>>>>>>> .merge_file_NMD9d5
+=======
+=======
+>>>>>>> .merge_file_pnTrXR
+>>>>>>> .merge_file_4mtP4Q
 # GDPR Best Practices
 
 ## Table of Contents

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_TLo2Tg
+=======
+---
+title: "correzioni phpstan completate 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "correzioni phpstan completate 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_JuQFMr
 # Correzioni PHPStan Completate - Modulo Notify
 
 ## 1. Introduzione
@@ -46,4 +60,8 @@ Configurazione dell'IDE per evidenziare i marker di conflitto Git.
 ## 6. Risultati
 - Tutti i conflitti Git risolti
 - PHPStan livello 0 senza errori di sintassi
+<<<<<<< .merge_file_TLo2Tg
 - Migliorata qualità del codice
+=======
+- Migliorata qualità del codice
+>>>>>>> .merge_file_JuQFMr

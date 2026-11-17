@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_aCBMnb
+=======
+---
+title: "mail layouts guide 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mail layouts guide 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_o7tbof
 # Guida ai Layout Email nel Modulo Notify
 
 ## Introduzione
@@ -129,11 +143,19 @@ I CSS sono definiti inline all'interno di ciascun layout per massimizzare la com
 
 ## Integrazione con MailPace
 
+<<<<<<< .merge_file_aCBMnb
 I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](mail-templates/mailpace_templates_integration.md) per dettagli sull'integrazione.
+=======
+I layout attuali sono compatibili con l'approccio utilizzato da [mailpace/templates](https://github.com/mailpace/templates). Vedere [MAILPACE_TEMPLATES_INTEGRATION.md](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md) per dettagli sull'integrazione.
+>>>>>>> .merge_file_o7tbof
 
 ## Riferimenti
 
 - [Laravel Mail Documentation](https://laravel.com/docs/mail)
 - [Spatie Email Documentation](./SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+<<<<<<< .merge_file_aCBMnb
 - [HTML Email Compatibility Guide](mail-templates/html_email_compatibility.md)
+=======
+- [HTML Email Compatibility Guide](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+>>>>>>> .merge_file_o7tbof

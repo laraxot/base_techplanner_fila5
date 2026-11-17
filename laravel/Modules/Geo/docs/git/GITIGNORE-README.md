@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_JgFRIk
+=======
+<<<<<<< .merge_file_d1uNof
+>>>>>>> .merge_file_Sy6aPC
 ---
 title: "GITIGNORE README"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_JgFRIk
+=======
+=======
+>>>>>>> .merge_file_gWAaPp
+>>>>>>> .merge_file_Sy6aPC
 # Gestione File .gitignore nei Moduli
 
 ## Introduzione

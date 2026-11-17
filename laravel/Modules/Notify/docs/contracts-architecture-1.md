@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_WGJL9A
+=======
+---
+title: "contracts architecture 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contracts architecture 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_q9SWLc
 # Architettura delle Interfacce (Contracts) in Notify
 
 ## Principi Architetturali Fondamentali

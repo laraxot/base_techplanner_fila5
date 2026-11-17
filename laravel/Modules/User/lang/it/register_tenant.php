@@ -186,8 +186,12 @@ return [
             'error' => 'Errore durante il caricamento dei documenti',
         ],
         'register' => [
+<<<<<<< .merge_file_ZDf4ki
             'label' => 'Registrati',
+=======
+>>>>>>> .merge_file_trMSwK
             'icon' => 'register',
+            'label' => 'Registrati',
         ],
         'profile' => [
             'icon' => 'profile',

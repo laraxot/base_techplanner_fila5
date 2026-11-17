@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_G5QjNF
+=======
+---
+title: "filament template conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament template conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_htQLgL
 # Convenzioni per Template Blade di Filament
 
 ## Struttura Standard dei Template di Pagina

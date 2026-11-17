@@ -2,16 +2,15 @@
 qmd: "class consolidated"
 issues: []
 discussions: []
-title: "class: Consolidated Documentation"
+title: "class — Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
-# class: Consolidated Documentation
+# class — Consolidated Documentation
 
 Consolidated from **8** individual files.
 
@@ -30,7 +29,7 @@ Consolidated from **8** individual files.
 
 ## class-inheritance-best-practices-1
 
-*Consolidated from: `class-inheritance-best-practices.md`*
+*Consolidated from: `class-inheritance-best-practices-1.md`*
 
 
 Questo documento definisce le best practices per l'ereditarietà delle classi nel sistema <nome progetto>, con particolare attenzione alle classi che estendono `XotBasePage`.
@@ -116,7 +115,7 @@ Seguire queste best practices garantisce un codice più pulito, manutenibile e m
 
 ## class-inheritance-best-practices-2
 
-*Consolidated from: `class-inheritance-best-practices.md`*
+*Consolidated from: `class-inheritance-best-practices-2.md`*
 
 title: "Best Practices per l'Ereditarietà delle Classi"
 type: concept
@@ -127,17 +126,12 @@ qmd: "class-inheritance-best-practices-2 best practices per l'ereditarietà dell
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -313,7 +307,7 @@ Seguire queste best practices garantisce un codice più pulito, manutenibile e m
 
 ## class-inheritance-principles-1
 
-*Consolidated from: `class-inheritance-principles.md`*
+*Consolidated from: `class-inheritance-principles-1.md`*
 
 # Principi di Ereditarietà nelle Classi <nome progetto>
 
@@ -405,7 +399,7 @@ grep -r --include="*.php" "extends XotBasePage implements HasForms" Modules/
 
 ## class-inheritance-principles-2
 
-*Consolidated from: `class-inheritance-principles.md`*
+*Consolidated from: `class-inheritance-principles-2.md`*
 
 title: "Principi di Ereditarietà nelle Classi <nome progetto>"
 type: concept
@@ -416,17 +410,12 @@ qmd: "class-inheritance-principles-2 principi di ereditarietà nelle classi <nom
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---

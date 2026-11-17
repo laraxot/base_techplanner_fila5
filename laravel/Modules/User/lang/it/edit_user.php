@@ -22,22 +22,34 @@ return [
     ],
     'fields' => [
         'password' => [
+<<<<<<< .merge_file_8dzebi
             'label' => 'Password',
+=======
+>>>>>>> .merge_file_HQZkaQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Password',
         ],
         'email' => [
+<<<<<<< .merge_file_8dzebi
             'label' => 'E-mail',
+=======
+>>>>>>> .merge_file_HQZkaQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'E-mail',
         ],
         'name' => [
+<<<<<<< .merge_file_8dzebi
             'label' => 'Nome',
+=======
+>>>>>>> .merge_file_HQZkaQ
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Nome',
         ],
     ],
     'navigation' => [

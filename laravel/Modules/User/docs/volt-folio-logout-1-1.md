@@ -1,9 +1,37 @@
+<<<<<<< .merge_file_SxmB6R
+=======
+---
+title: "Implementazione Corretta del Logout con Volt e Folio"
+type: concept
+tags: [volt, folio, logout]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-folio-logout-1-1 implementazione corretta del logout con volt e folio"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_s9LCSG
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
 - [README modulo User](./README.md)
+<<<<<<< .merge_file_SxmB6R
 - [Convenzioni Path](./PATH_CONVENTIONS.md)
 - [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
+=======
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
+>>>>>>> .merge_file_s9LCSG
 - [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
 
 ## Panoramica

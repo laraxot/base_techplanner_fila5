@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_24fBk5
+=======
+---
+title: "analisiettagliata 8"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisiettagliata 8"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_t0OPAF
 # Analisi Dettagliata del Modulo Notify - Parte 8: Note Finali
 
 ## 8. Note Finali

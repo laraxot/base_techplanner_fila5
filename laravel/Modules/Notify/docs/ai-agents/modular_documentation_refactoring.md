@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "modular documentation refactoring"
 issues: []
 discussions: []
-status: draft
 ---
 
 # 📚 MODULAR DOCUMENTATION REFACTORING REPORT
@@ -17,6 +16,15 @@ status: draft
 **Principio**: "Boy Scout Rule - Lascia i file migliori di come li hai trovati"
 
 ---
+
+title: "modular documentation refactoring"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modular documentation refactoring"
+issues: []
+discussions: []
 ## 🎯 OBIETTIVO
 
 Organizzare la documentazione AI agents in file modulari più piccoli e gestibili, con collegamenti bidirezionali.

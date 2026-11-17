@@ -3,12 +3,15 @@
 declare(strict_types=1);
 
 return [
+<<<<<<< .merge_file_EzUBcj
     'sections' => [
         'empty' => [
             'label' => '',
             'heading' => '',
         ],
     ],
+=======
+>>>>>>> .merge_file_WQ4Xkm
     'fields' => [
         'first_name' => [
             'label' => 'First Name',

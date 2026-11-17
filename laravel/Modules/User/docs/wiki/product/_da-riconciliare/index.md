@@ -1,15 +1,13 @@
 ---
-title: "user: product"
+title: "user — product"
 module: user
 type: product
 tags: [product, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
-qmd: "user   product user"
 ---
 
-# user: product
+# user — product
 
 Documentation for `user` module categorized as **product**.
 
@@ -18,6 +16,7 @@ Documentation for `user` module categorized as **product**.
 - [`INDEX.md`](./index.md)
 - [`generic-user-moderation-strategy.md`](./generic-user-moderation-strategy.md)
 - [`generic_user_moderation_strategy.md`](./generic_user_moderation_strategy.md)
+<<<<<<< .merge_file_6AxT93
 - [`product-strategy.md`](../../../product-strategy.md)
 - [`strategy.md`](../../../strategy.md)
 - [`user-moderation-strategy.md`](../../../user-moderation-strategy.md)
@@ -26,6 +25,12 @@ Documentation for `user` module categorized as **product**.
 - [`strategy.md`](../../../strategy.md)
 - [`user-moderation-strategy-documentation-themes.md`](../../../user-moderation-strategy-documentation-themes.md)
 - [`user-moderation-strategy.md`](../../../user-moderation-strategy.md)
+=======
+- [`product-strategy.md`](./product-strategy.md)
+- [`strategy.md`](./strategy.md)
+- [`user-moderation-strategy-3.md`](./user-moderation-strategy-3.md)
+- [`user-moderation-strategy.md`](./user-moderation-strategy.md)
+>>>>>>> .merge_file_pmpxoK
 - [`user_moderation_strategy.md`](./user_moderation_strategy.md)
 
 ---

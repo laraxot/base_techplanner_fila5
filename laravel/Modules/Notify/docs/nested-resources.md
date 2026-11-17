@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "nested resources"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Notify Module - Nested Resource Implementation Guide

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_klTar7
+=======
+---
+title: "analysisettagliata 7"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysisettagliata 7"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_szQ16g
 # Analisi Dettagliata del Modulo Notify - Parte 7: Manutenzione e Backup
 
 ## 7. Manutenzione e Backup

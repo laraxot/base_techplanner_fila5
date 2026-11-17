@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_LCQ0CN
+=======
+---
+title: "analysisettagliata 8"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysisettagliata 8"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_BSmKCR
 # Analisi Dettagliata del Modulo Notify - Parte 8: Note Finali
 
 ## 8. Note Finali

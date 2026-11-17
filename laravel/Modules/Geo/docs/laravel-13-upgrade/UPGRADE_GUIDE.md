@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_E51eU4
+=======
+<<<<<<< .merge_file_j68PFi
+>>>>>>> .merge_file_zuGSRp
 ---
 title: "UPGRADE GUIDE"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_E51eU4
+=======
+=======
+>>>>>>> .merge_file_08nxrE
+>>>>>>> .merge_file_zuGSRp
 # Guida all'Upgrade Laravel 13
 
 ## Introduzione

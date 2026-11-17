@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_WBzpHb
+=======
+<<<<<<< .merge_file_FScpYe
+>>>>>>> .merge_file_Tu6Vdu
 ---
 title: "COMMANDS"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_WBzpHb
+=======
+=======
+>>>>>>> .merge_file_gWwJLt
+>>>>>>> .merge_file_Tu6Vdu
 # GSD (Get Shit Done) - Command Reference
 
 **Version**: 1.0.0
@@ -17,6 +26,10 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_WBzpHb
+=======
+<<<<<<< .merge_file_FScpYe
+>>>>>>> .merge_file_Tu6Vdu
 title: "COMMANDS"
 type: note
 tags: [documentation]
@@ -25,6 +38,11 @@ updated: 2026-09-26
 qmd: "COMMANDS"
 issues: []
 discussions: []
+<<<<<<< .merge_file_WBzpHb
+=======
+=======
+>>>>>>> .merge_file_gWwJLt
+>>>>>>> .merge_file_Tu6Vdu
 ## 🚀 Essential Commands
 
 ### Project Initialization

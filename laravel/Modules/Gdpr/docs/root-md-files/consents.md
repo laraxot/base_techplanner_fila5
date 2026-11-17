@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_GNYave
+=======
+<<<<<<< .merge_file_B1uwAk
+>>>>>>> .merge_file_dvIQAN
 ---
 title: "consents"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_GNYave
+=======
+=======
+>>>>>>> .merge_file_pocbL9
+>>>>>>> .merge_file_dvIQAN
 https://packagist.org/packages/dialect/laravel-gdpr-compliance
 
 https://github.com/papertank/origami-consent

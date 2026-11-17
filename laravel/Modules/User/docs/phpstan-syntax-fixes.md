@@ -1,3 +1,26 @@
+<<<<<<< .merge_file_2IktQw
+=======
+---
+title: "PHPStan Syntax Fixes - Modulo User"
+type: concept
+tags: [phpstan, syntax, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-syntax-fixes phpstan syntax fixes - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_AX2IzU
 # PHPStan Syntax Fixes - Modulo User
 
 **Data**: 2025-01-11  
@@ -142,10 +165,16 @@ use App\Models\User;
 
 ## 🔗 Collegamenti
 
+<<<<<<< .merge_file_2IktQw
 - [CLAUDE.md - Quality Guidelines](../../../CLAUDE.md)
 - [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
 - [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
 - [CLAUDE.md - Quality Guidelines](../../../claude.md)
+=======
+- [Analisi Generale PHPStan](../../../../docs/project/quality/phpstan-analysis.md)
+- [PSR-12 Extended Coding Style](https://www.php-fig.org/psr/psr-12/)
+- [CLAUDE.md - Quality Guidelines](../../../CLAUDE.md)
+>>>>>>> .merge_file_AX2IzU
 
 ## 📝 Note Tecniche
 

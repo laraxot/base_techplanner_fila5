@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_R9szX8
+=======
+---
+title: "appointment field naming issues 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "appointment field naming issues 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_lExTNP
 # Appointment Field Naming Issues
 
 ## Overview

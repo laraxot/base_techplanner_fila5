@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_bXCxTd
+=======
+---
+title: "database mail system 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database mail system 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_zE3ikS
 # Sistema di Gestione Email Basato su Database - il progetto
 
 ## Panoramica

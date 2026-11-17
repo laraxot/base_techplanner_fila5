@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_KFuu17
+=======
+---
+title: "sms netfun channel 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms netfun channel 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_RZCTdf
 # Integrazione Netfun SMS Channel in Laravel
 
 ## Introduzione
@@ -7,6 +21,17 @@ Questa guida spiega come integrare il provider Netfun come canale custom per l'i
 
 ---
 
+<<<<<<< .merge_file_KFuu17
+=======
+title: "sms netfun channel 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "sms netfun channel 1"
+issues: []
+discussions: []
+>>>>>>> .merge_file_RZCTdf
 ## 1. Creazione del Channel Netfun
 
 ### 1.1. Struttura del Channel

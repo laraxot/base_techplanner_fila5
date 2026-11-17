@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "quick start"
 issues: []
 discussions: []
-status: draft
 ---
 
 # 🚀 FIXCITY - GUIDA RAPIDA SVILUPPATORI
@@ -17,6 +16,15 @@ status: draft
 **Target**: Sviluppatori che iniziano a lavorare su FixCity
 
 ---
+
+title: "quick start"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quick start"
+issues: []
+discussions: []
 ## 📋 PREREQUISITI
 
 ### Software Richiesto
@@ -501,8 +509,12 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 
 ### Regole Progetto
 - **[Laraxot Rules](./.windsurf/rules/user_15338591596331277449.md)**
+<<<<<<< .merge_file_y7LObo
 - **[Code Quality](ai-agents/code-quality.md)**
 - **[Code Quality](./ai-agents/code-quality.md)**
+=======
+- **[Code Quality](./.windsurf/rules/code-quality.md)**
+>>>>>>> .merge_file_t21REi
 - **[Project Rules](./.windsurf/rules/project-rules.md)**
 
 ---

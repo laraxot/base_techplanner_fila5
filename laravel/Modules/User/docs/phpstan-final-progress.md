@@ -1,3 +1,26 @@
+<<<<<<< .merge_file_5hlfSn
+=======
+---
+title: "PHPStan Level 10 - Progresso Finale"
+type: concept
+tags: [phpstan, final, progress]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-final-progress phpstan level 10 - progresso finale"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_dnc5Dr
 # PHPStan Level 10 - Progresso Finale
 
 **Data**: 2025-01-22
@@ -52,5 +75,8 @@ Da identificare e correggere sistematicamente.
 - [OAuth Resources Corrections](./phpstan-corrections-oauth-resources.md)
 
 ---
+<<<<<<< .merge_file_5hlfSn
 
 *Ultimo aggiornamento: 2025-01-22*
+=======
+>>>>>>> .merge_file_dnc5Dr

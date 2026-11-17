@@ -1,3 +1,26 @@
+<<<<<<< .merge_file_zScxe4
+=======
+---
+title: "🔧 PHPStan Fixes - Modulo User - Gennaio 2025"
+type: concept
+tags: [phpstan, fixes, gennaio]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-fixes-gennaio-1 🔧 phpstan fixes - modulo user - gennaio 2025"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_NwIIjt
 # 🔧 PHPStan Fixes - Modulo User - Gennaio 2025
 
 **Data**: 27 Gennaio 2025
@@ -228,3 +251,7 @@ $subject = Lang::get('user::email.password_reset_subject');
 **🌐 Translation Standards**: IT/EN complete ✅
 **🚀 Performance**: 95/100 score
 **✨ Test Coverage**: 85% ✅
+<<<<<<< .merge_file_zScxe4
+=======
+**✨ Test Coverage**: 85% ✅
+>>>>>>> .merge_file_NwIIjt

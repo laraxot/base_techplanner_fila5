@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "mailpace templates analysis"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Analisi Mailpace Templates
@@ -220,6 +219,10 @@ return [
 ## Collegamenti
 - [Mailpace Templates](https://github.com/mailpace/templates)
 - [Email Best Practices](./EMAIL_BEST_PRACTICES.md)
+<<<<<<< .merge_file_Vgg6qw
 - [Template Management](../template-management.md) 
 - [Email Best Practices](./email_best_practices.md)
 - [Template Management](../template-management.md) 
+=======
+- [Template Management](./template-management.md) 
+>>>>>>> .merge_file_UoR14A

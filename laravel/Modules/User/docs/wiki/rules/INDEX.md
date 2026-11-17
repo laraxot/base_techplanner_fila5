@@ -2,7 +2,11 @@
 title: "Rules Index"
 type: index
 created: 2026-05-11
+<<<<<<< .merge_file_llrVg1
 updated: 2026-05-11
+=======
+updated: 2026-07-08
+>>>>>>> .merge_file_nNzku5
 tags: [rules, index, on-demand]
 related:
   - ../rules/00-TRIGGER_MAP.md
@@ -34,8 +38,21 @@ Le Rules progettuali vivono qui, nel wiki del Module **User**, e vengono caricat
 
 - La sorgente di verita' per le Rules e' sempre il wiki locale
 - Non embeddare Rules nei prompt di avvio
+<<<<<<< .merge_file_llrVg1
 - Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
 
+=======
+- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/index.md)
+
+- Per Rules globali, consulta il [wiki root](../../docs/wiki/rules/INDEX.md)
+
+## Rules ricorrenti
+
+| Rule | Scopo |
+|------|-------|
+| [module-commit-push-after-change](module-commit-push-after-change.md) | Commit e push dal repo modulo dopo ogni modifica |
+
+>>>>>>> .merge_file_nNzku5
 ## Aggiungere una Nuova RULES
 
 1. Crea `../rules/<nome>.md` con contenuto completo

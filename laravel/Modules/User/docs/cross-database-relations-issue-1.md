@@ -22,9 +22,15 @@ related:
 
 ## Problema Identificato
 
+<<<<<<< .merge_file_zc25uO
 **Errore**: `SQLSTATE[HY000]: General error: 1 no such table: <nome progetto>_data.customer_user`
 
 **Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (<nome progetto>_user) e Customer (<nome progetto>_data).
+=======
+**Errore**: `SQLSTATE[HY000]: General error: 1 no such table: Quaeris_data.customer_user`
+
+**Contesto**: Il trait `HasTenants` utilizza `belongsToManyX` per creare relazioni cross-database tra User (Quaeris_user) e Customer (Quaeris_data).
+>>>>>>> .merge_file_AmqtI1
 
 ## Analisi del Trait HasTenants
 
@@ -36,16 +42,27 @@ return $this->belongsToManyX($tenant_class);
 
 ### Flusso di Esecuzione
 1. `User::tenants()` chiama `belongsToManyX(Customer::class)`
+<<<<<<< .merge_file_zc25uO
 2. `belongsToManyX` rileva che User è in `<nome progetto>_user` e Customer è in `<nome progetto>_data`
 3. Cerca la tabella pivot `CustomerUser` nel database `<nome progetto>_data`
 4. Aggiunge il prefisso database: `<nome progetto>_data.customer_user`
+=======
+2. `belongsToManyX` rileva che User è in `Quaeris_user` e Customer è in `Quaeris_data`
+3. Cerca la tabella pivot `CustomerUser` nel database `Quaeris_data`
+4. Aggiunge il prefisso database: `Quaeris_data.customer_user`
+>>>>>>> .merge_file_AmqtI1
 5. SQLite non riconosce questa sintassi e fallisce
 
 ## Architettura Multi-Tenant
 
 ### Separazione Database
+<<<<<<< .merge_file_zc25uO
 - **User Database**: `<nome progetto>_user` - Gestione utenti e autenticazione
 - **Tenant Databases**: `<nome progetto>_data` - Dati specifici per customer/tenant
+=======
+- **User Database**: `Quaeris_user` - Gestione utenti e autenticazione
+- **Tenant Databases**: `Quaeris_data` - Dati specifici per customer/tenant
+>>>>>>> .merge_file_AmqtI1
 - **Pivot Tables**: Nel database del tenant per isolamento dati
 
 ### Filosofia Laraxot
@@ -76,7 +93,11 @@ Sostituire `belongsToManyX` con relazioni `belongsToMany` esplicite per cross-da
 
 ### Moduli Affetti
 - **User Module**: Trait HasTenants
+<<<<<<< .merge_file_zc25uO
 - **<nome progetto> Module**: Customer-User relationships
+=======
+- **Quaeris Module**: Customer-User relationships
+>>>>>>> .merge_file_AmqtI1
 - **Altri Moduli**: Qualsiasi relazione cross-database
 
 ### Funzionalità Compromesse
@@ -96,14 +117,22 @@ $tenants = $user->tenants; // Dovrebbe funzionare senza errori
 ### Test 2: Verifica Cross-Database Query
 ```php
 use Modules\User\Models\User;
+<<<<<<< .merge_file_zc25uO
 use Modules\<nome progetto>\Models\Customer;
+=======
+use Modules\Quaeris\Models\Customer;
+>>>>>>> .merge_file_AmqtI1
 $user = User::with('tenants')->find('0199690d-481a-7101-ac17-7518b3959314');
 // Verifica che la query sia corretta
 ```
 
 ## Riferimenti Correlati
 
+<<<<<<< .merge_file_zc25uO
 - [<nome progetto> Customer User Table Issue](../../<nome progetto>/docs/customer_user_table_issue.md)
+=======
+- [Quaeris Customer User Table Issue](../../Quaeris/docs/customer_user_table_issue.md)
+>>>>>>> .merge_file_AmqtI1
 - [Traits Complete Guide](./traits-complete-guide.md)
 - [Jetstream vs Laraxot Philosophy](./jetstream-vs-laraxot-philosophy.md)
 - [Database Errors](./database-errors.md)
@@ -138,7 +167,11 @@ echo 'HasTenants works! Count: ' . \$tenants->count();
 php artisan tinker --execute="
 use Modules\User\Models\User;
 \$user = User::find('0199690d-481a-7101-ac17-7518b3959314');
+<<<<<<< .merge_file_zc25uO
 \$tenants = \$user->getTenants(app('filament')->getPanel('<nome progetto>::admin'));
+=======
+\$tenants = \$user->getTenants(app('filament')->getPanel('Quaeris::admin'));
+>>>>>>> .merge_file_AmqtI1
 echo 'getTenants works! Count: ' . count(\$tenants); // ✅ Funziona
 "
 ```

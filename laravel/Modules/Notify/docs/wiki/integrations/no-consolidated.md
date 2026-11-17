@@ -2,23 +2,22 @@
 qmd: "no consolidated"
 issues: []
 discussions: []
-title: "no: Consolidated Documentation"
+title: "no — Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
-# no: Consolidated Documentation
+# no — Consolidated Documentation
 
 Consolidated from **35** individual files.
 
 ## Table of Contents
 
 - [---](#no-ai-tool-scaffold-dirs)
-- [NO Hardcoded Language: La Religione i18n](#no-hardcoded-language-religion)
+- [NO Hardcoded Language — La Religione i18n](#no-hardcoded-language-religion)
 - [No HTTP controllers in any module](#no-http-controllers)
 - [Notify Rule: No NotificationTrackingController](#no-notification-tracking-controller-rule)
 - [Notify: no NotificationTrackingController](#no-notification-tracking-controller)
@@ -64,12 +63,11 @@ title: No AI/tool scaffold directories in module tree
 
 # Perché queste cartelle non devono esistere qui
 
-Regola canonica: [module-theme-root-cleanup.md: Rule 5](../../../../docs/wiki/rules/module-theme-root-cleanup.md).
-Regola canonica: [module-theme-root-cleanup.md: Rule 5](../../../../../../docs/wiki/rules/module-theme-root-cleanup.md).
+Regola canonica: [module-theme-root-cleanup.md — Rule 5](../../../../docs/wiki/rules/module-theme-root-cleanup.md).
 
 Rimosse in questo modulo: `_docs/`, `scripts/`, `bashscripts/`, `docs/archive|archived|legacy|workbench/`, `.circleci/`, `.claude-audit/`, `tests/.claude-audit/`, `_bmad-output/`, `test-results/`, `.devcontainer/`, `.kilocode/`, `.kiro/`, `.ralph/` (dove presenti) e aggiunte al `.gitignore` di questo modulo.
 
-**Perché**: questo modulo vive anche come repo Git indipendente (multi-repo); ogni agente/tool AI o pipeline CI che gira in quella root scrive lì la propria cache/scaffold locale (skill `.kiro/`, output `_bmad-output/`, stato `.ralph/`, audit `.claude-audit/`, log `test-results/`), ignorando che quella root è in realtà un sotto-albero del monorepo con le proprie convenzioni: `docs/` unica per la conoscenza riusabile, `bashscripts/` unica alla root del monorepo, `build/` unico per gli artefatti generati. Un secondo posto per la stessa categoria di contenuto è entropia, non struttura: se il tool lo rigenera, il `.gitignore` aggiornato lo tiene fuori dal tracking invece di doverlo ripulire ogni sessione.
+**Perché**: questo modulo vive anche come repo Git indipendente (multi-repo); ogni agente/tool AI o pipeline CI che gira in quella root scrive lì la propria cache/scaffold locale (skill `.kiro/`, output `_bmad-output/`, stato `.ralph/`, audit `.claude-audit/`, log `test-results/`), ignorando che quella root è in realtà un sotto-albero del monorepo con le proprie convenzioni: `docs/` unica per la conoscenza riusabile, `bashscripts/` unica alla root del monorepo, `build/` unico per gli artefatti generati. Un secondo posto per la stessa categoria di contenuto è entropia, non struttura — se il tool lo rigenera, il `.gitignore` aggiornato lo tiene fuori dal tracking invece di doverlo ripulire ogni sessione.
 
 ---
 
@@ -626,7 +624,7 @@ There is no slot for a traditional controller.
 - They create implicit routing that bypasses the Folio/Localization middleware stack
 - They cannot use `LaravelLocalization::localizeUrl()` for redirects correctly
 - They bypass the `pub_theme::` namespace resolution
-- They undermine the CMS-driven page model: the page has no JSON definition
+- They undermine the CMS-driven page model — the page has no JSON definition
 - They introduce a parallel routing system that conflicts with Folio's file-based routing
 
 ### The Notify module specifically
@@ -669,7 +667,7 @@ This keeps the HTTP surface in Folio (the correct location) while the business l
 ## Related
 
 - CLAUDE.md rule 1: "NEVER use traditional controllers or routes in web.php/api.php for front office"
-- `laravel/CLAUDE.md` rule 2: Architecture frontend: NO Controller, NO Routes in web.php
+- `laravel/CLAUDE.md` rule 2: Architecture frontend — NO Controller, NO Routes in web.php
 - Folio routing docs: `Themes/Meetup/docs/folio-pages-json-only-rule.md`
 
 ---
@@ -759,17 +757,12 @@ qmd: "notebooklm-installation-summary notebooklm skill - installation & integrat
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1153,17 +1146,12 @@ qmd: "notebooklm-integration notebooklm integration"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1474,7 +1462,7 @@ L'utilizzo di Queueable Actions e componenti Blade di Filament garantisce:
 
 ## notification-behavior-1
 
-*Consolidated from: `notification-behavior.md`*
+*Consolidated from: `notification-behavior-1.md`*
 
 title: "Notification System Behavior"
 type: concept
@@ -1485,17 +1473,12 @@ qmd: "notification-behavior-1 notification system behavior"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1582,7 +1565,6 @@ public function via($notifiable)
 - [Laravel Notification Channels](https://laravel.com/docs/notifications#specifying-delivery-channels)
 - [Laravel Notification Routing](https://laravel.com/docs/notifications#routing-notifications)
 - [Notification Best Practices](best-practices.md)
-- [Notification Best Practices](../../best-practices.md)
 
 ---
 
@@ -1671,7 +1653,6 @@ public function via($notifiable)
 - [Laravel Notification Channels](https://laravel.com/docs/notifications#specifying-delivery-channels)
 - [Laravel Notification Routing](https://laravel.com/docs/notifications#routing-notifications)
 - [Notification Best Practices](best-practices.md)
-- [Notification Best Practices](../../best-practices.md)
 
 ---
 
@@ -1823,7 +1804,7 @@ After implementation, users can:
 
 ## notification-channels-implementation-1
 
-*Consolidated from: `notification-channels-implementation.md`*
+*Consolidated from: `notification-channels-implementation-1.md`*
 
 
 Questo documento descrive l'architettura e l'implementazione dei canali di notifica nel progetto <nome progetto>, con particolare attenzione al pattern Factory utilizzato.
@@ -1977,15 +1958,13 @@ L'implementazione dei canali di notifica  segue un'architettura coerente e ben s
 - [Panoramica dell'Architettura](./ARCHITECTURE.md)
 - [Modelli di Email](./EMAIL_TEMPLATES.md)
 - [Implementazione SMS](./SMS_IMPLEMENTATION.md)
-- [Modelli di Email](../../email_templates.md)
-- [Implementazione SMS](../../sms_implementation.md)
 - [Risoluzione dei Problemi](./TROUBLESHOOTING.md)
 
 ---
 
 ## notification-channels-implementation-2
 
-*Consolidated from: `notification-channels-implementation.md`*
+*Consolidated from: `notification-channels-implementation-2.md`*
 
 title: "Implementazione dei Canali di Notifica"
 type: concept
@@ -1996,17 +1975,12 @@ qmd: "notification-channels-implementation-2 implementazione dei canali di notif
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2164,15 +2138,12 @@ L'implementazione dei canali di notifica  segue un'architettura coerente e ben s
 - [Modulo di Notifica](./index.md)
 - [Panoramica dell'Architettura](./architecture.md)
 - [Modelli di Email](./email-templates.md)
-- [Modelli di Email](../../email-templates.md)
-- [Implementazione SMS](./sms-implementation.md)
+- [Implementazione SMS](./sms-implementation-1.md)
 - [Risoluzione dei Problemi](./troubleshooting.md)
 - [Modulo di Notifica](./index.md)
 - [Panoramica dell'Architettura](./architecture.md)
 - [Modelli di Email](./email-templates.md)
 - [Implementazione SMS](./sms-implementation.md)
-- [Modelli di Email](../../email-templates.md)
-- [Implementazione SMS](../../sms-implementation.md)
 - [Risoluzione dei Problemi](./troubleshooting.md)
 ---
 
@@ -2334,8 +2305,6 @@ L'implementazione dei canali di notifica  segue un'architettura coerente e ben s
 - [Panoramica dell'Architettura](./architecture.md)
 - [Modelli di Email](./email_templates.md)
 - [Implementazione SMS](./sms_implementation.md)
-- [Modelli di Email](../../email_templates.md)
-- [Implementazione SMS](../../sms_implementation.md)
 - [Risoluzione dei Problemi](./troubleshooting.md)
 
 
@@ -2343,7 +2312,7 @@ L'implementazione dei canali di notifica  segue un'architettura coerente e ben s
 
 ## notification-errors-1
 
-*Consolidated from: `notification-errors.md`*
+*Consolidated from: `notification-errors-1.md`*
 
 title: "Errori Comuni nelle Notifiche"
 type: concept
@@ -2354,17 +2323,12 @@ qmd: "notification-errors-1 errori comuni nelle notifiche"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2747,7 +2711,6 @@ Customer List -> Bulk Action -> Modal (Select Template + Channels) -> Submit -> 
     - **Reasoning**: Applies DRY and KISS. The logic to send to *one* record exists in `SendRecordNotificationAction`. The Bulk action should only care about iteration and result aggregation, not the sending implementation details.
 
 Vedi: [DRY Composition Pattern](./dry-composition-pattern.md)
-Vedi: [DRY Composition Pattern](../../dry-composition-pattern.md)
 
 ### Estrazione Attributi Contatti (DRY Pattern)
 
@@ -2759,7 +2722,6 @@ Vedi: [DRY Composition Pattern](../../dry-composition-pattern.md)
     - **Reasoning**: DRY + KISS. Logica di estrazione centralizzata in un metodo, wrapper mantengono semantica chiara.
 
 Vedi: [Contact Extraction Pattern](./contact-extraction-pattern.md)
-Vedi: [Contact Extraction Pattern](../../contact-extraction-pattern.md)
 
 ### Dependency Resolution (Runtime Service Resolution)
 
@@ -2768,14 +2730,13 @@ Vedi: [Contact Extraction Pattern](../../contact-extraction-pattern.md)
     - **Philosophy**: Keep Actions simple, stateless, and serialization-friendly.
 
 Vedi: [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
-Vedi: [Actions Calling Actions Pattern](../../actions-calling-actions-pattern.md)
 
 
 ---
 
 ## notification-providers-guide-1
 
-*Consolidated from: `notification-providers-guide.md`*
+*Consolidated from: `notification-providers-guide-1.md`*
 
 
 Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di <nome progetto>.
@@ -2912,15 +2873,12 @@ Per implementazioni specifiche, vedere i documenti:
 - [PROVIDER_ACTIONS_ARCHITECTURE.md](./PROVIDER_ACTIONS_ARCHITECTURE.md)
 - [SMS_ACTIONS_PATTERN.md](./SMS_ACTIONS_PATTERN.md)
 - [WHATSAPP_PROVIDER_ARCHITECTURE.md](./WHATSAPP_PROVIDER_ARCHITECTURE.md)
-- [PROVIDER_ACTIONS_ARCHITECTURE.md](../../provider_actions_architecture.md)
-- [SMS_ACTIONS_PATTERN.md](../../sms_actions_pattern.md)
-- [WHATSAPP_PROVIDER_ARCHITECTURE.md](../../whatsapp_provider_architecture.md)
 
 ---
 
 ## notification-providers-guide-2
 
-*Consolidated from: `notification-providers-guide.md`*
+*Consolidated from: `notification-providers-guide-2.md`*
 
 title: "Guida Completa ai Provider di Notifiche"
 type: guide
@@ -2931,17 +2889,12 @@ qmd: "notification-providers-guide-2 guida completa ai provider di notifiche"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -3085,12 +3038,6 @@ Per implementazioni specifiche, vedere i documenti:
 - [PROVIDER_ACTIONS_architecture.md](./provider-actions-architecture.md)
 - [SMS_ACTIONS_PATTERN.md](./sms-actions-pattern.md)
 - [WHATSAPP_PROVIDER_architecture.md](./whatsapp-provider-architecture.md)
-- [PROVIDER_ACTIONS_architecture.md](../../provider-actions-architecture.md)
-- [SMS_ACTIONS_PATTERN.md](../../sms-actions-pattern.md)
-- [WHATSAPP_PROVIDER_architecture.md](../../whatsapp-provider-architecture.md)
-- [PROVIDER_ACTIONS_architecture.md](../../provider-actions-architecture.md)
-- [SMS_ACTIONS_PATTERN.md](../../sms-actions-pattern.md)
-- [WHATSAPP_PROVIDER_architecture.md](../../whatsapp-provider-architecture.md)
 
 ---
 
@@ -3234,9 +3181,6 @@ Per implementazioni specifiche, vedere i documenti:
 - [PROVIDER_ACTIONS_ARCHITECTURE.md](./PROVIDER_ACTIONS_ARCHITECTURE.md)
 - [SMS_ACTIONS_PATTERN.md](./SMS_ACTIONS_PATTERN.md)
 - [WHATSAPP_PROVIDER_ARCHITECTURE.md](./WHATSAPP_PROVIDER_ARCHITECTURE.md)
-- [PROVIDER_ACTIONS_ARCHITECTURE.md](../../provider_actions_architecture.md)
-- [SMS_ACTIONS_PATTERN.md](../../sms_actions_pattern.md)
-- [WHATSAPP_PROVIDER_ARCHITECTURE.md](../../whatsapp_provider_architecture.md)
 
 ---
 
@@ -3380,9 +3324,6 @@ Per implementazioni specifiche, vedere i documenti:
 - [PROVIDER_ACTIONS_ARCHITECTURE.md](./provider_actions_architecture.md)
 - [SMS_ACTIONS_PATTERN.md](./sms_actions_pattern.md)
 - [WHATSAPP_PROVIDER_ARCHITECTURE.md](./whatsapp_provider_architecture.md)
-- [PROVIDER_ACTIONS_ARCHITECTURE.md](../../provider_actions_architecture.md)
-- [SMS_ACTIONS_PATTERN.md](../../sms_actions_pattern.md)
-- [WHATSAPP_PROVIDER_ARCHITECTURE.md](../../whatsapp_provider_architecture.md)
 
 ---
 
@@ -3478,7 +3419,6 @@ public function via($notifiable)
 - [Laravel Notification Channels](https://laravel.com/docs/notifications#specifying-delivery-channels)
 - [Laravel Notification Routing](https://laravel.com/docs/notifications#routing-notifications)
 - [Notification Best Practices](best-practices.md)
-- [Notification Best Practices](../../best-practices.md)
 
 ---
 
@@ -3645,8 +3585,6 @@ L'implementazione dei canali di notifica  segue un'architettura coerente e ben s
 - [Panoramica dell'Architettura](./ARCHITECTURE.md)
 - [Modelli di Email](./EMAIL_TEMPLATES.md)
 - [Implementazione SMS](./SMS_IMPLEMENTATION.md)
-- [Modelli di Email](../../email_templates.md)
-- [Implementazione SMS](../../sms_implementation.md)
 - [Risoluzione dei Problemi](./TROUBLESHOOTING.md)
 
 
@@ -3969,9 +3907,6 @@ Per implementazioni specifiche, vedere i documenti:
 - [PROVIDER_ACTIONS_ARCHITECTURE.md](./PROVIDER_ACTIONS_ARCHITECTURE.md)
 - [SMS_ACTIONS_PATTERN.md](./SMS_ACTIONS_PATTERN.md)
 - [WHATSAPP_PROVIDER_ARCHITECTURE.md](./WHATSAPP_PROVIDER_ARCHITECTURE.md)
-- [PROVIDER_ACTIONS_ARCHITECTURE.md](../../provider_actions_architecture.md)
-- [SMS_ACTIONS_PATTERN.md](../../sms_actions_pattern.md)
-- [WHATSAPP_PROVIDER_ARCHITECTURE.md](../../whatsapp_provider_architecture.md)
 
 ---
 
@@ -4115,7 +4050,6 @@ return [
 ## Collegamenti
 - [Documentazione API](./api.md)
 - [Template Email](./templates.md)
-- [Template Email](../../templates.md)
 - [Guida Contribuzione](./contributing.md)
 
 ## Note
@@ -4395,7 +4329,7 @@ La sistemazione del file `send_email.php` ha risolto problemi critici e implemen
 
 ## notify-translation-guide-1
 
-*Consolidated from: `notify-translation-guide.md`*
+*Consolidated from: `notify-translation-guide-1.md`*
 
 
 ## Introduzione
@@ -4572,17 +4506,12 @@ Questo comando verificherà che tutte le chiavi di traduzione necessarie siano p
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Standard per le Traduzioni ](./TRANSLATION_STANDARDS.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
-- [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
-- [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
-- [Standard per le Traduzioni ](../../translation_standards.md)
 
 ---
 
 ## notify-translation-guide-2
 
-*Consolidated from: `notify-translation-guide.md`*
+*Consolidated from: `notify-translation-guide-2.md`*
 
 title: "Guida alle Traduzioni nel Modulo Notify"
 type: guide
@@ -4593,17 +4522,12 @@ qmd: "notify-translation-guide-2 guida alle traduzioni nel modulo notify"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -4779,19 +4703,16 @@ Questo comando verificherà che tutte le chiavi di traduzione necessarie siano p
 
 ## Collegamenti Correlati
 
-- [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
-- [Chiarimento sulle Convenzioni di Traduzione](./translation-conventions-clarification.md)
-- [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation-keys-rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
-- [Standard per le Traduzioni ](./translation-standards.md)
+- [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions-2.md)
+- [Chiarimento sulle Convenzioni di Traduzione](./translation-conventions-clarification-2.md)
+- [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation-keys-rules-1.md)
+- [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices-1.md)
+- [Standard per le Traduzioni ](./translation-standards-2.md)
 - [Convenzioni di Traduzione nel Modulo Notify](./translation-conventions.md)
 - [Chiarimento sulle Convenzioni di Traduzione](./translation-conventions-clarification.md)
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Standard per le Traduzioni ](./translation-standards.md)
-- [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
-- [Standard per le Traduzioni ](../../translation-standards.md)
 ---
 
 ## notify-translation-guide
@@ -4975,11 +4896,6 @@ Questo comando verificherà che tutte le chiavi di traduzione necessarie siano p
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Standard per le Traduzioni ](./TRANSLATION_STANDARDS.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
-- [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
-- [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
-- [Standard per le Traduzioni ](../../translation_standards.md)
 
 ---
 
@@ -5164,11 +5080,6 @@ Questo comando verificherà che tutte le chiavi di traduzione necessarie siano p
 - [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
 - [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
 - [Standard per le Traduzioni ](./translation_standards.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
-- [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
-- [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation-keys-best-practices.md)
-- [Standard per le Traduzioni ](../../translation_standards.md)
 
 ---
 
@@ -5353,11 +5264,6 @@ Questo comando verificherà che tutte le chiavi di traduzione necessarie siano p
 - [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
 - [Best Practices per le Chiavi di Traduzione](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Standard per le Traduzioni ](./TRANSLATION_STANDARDS.md)
-- [Convenzioni di Traduzione nel Modulo Notify](../../translation_conventions.md)
-- [Chiarimento sulle Convenzioni di Traduzione](../../translation_conventions_clarification.md)
-- [Regole Generali per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../../../Lang/docs/translation_keys_best_practices.md)
-- [Standard per le Traduzioni ](../../translation_standards.md)
 
 ---
 

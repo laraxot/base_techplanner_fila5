@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_dQfFme
+=======
+<<<<<<< .merge_file_ierWk4
+>>>>>>> .merge_file_d4bnBB
 ---
 title: "google analytics 1"
 type: note
@@ -9,4 +13,9 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_dQfFme
+=======
+=======
+>>>>>>> .merge_file_lrxi3P
+>>>>>>> .merge_file_d4bnBB
 https://plausible.io/

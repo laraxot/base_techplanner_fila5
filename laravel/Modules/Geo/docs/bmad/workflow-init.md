@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_qkQGjI
+=======
+<<<<<<< .merge_file_lWhXjP
+>>>>>>> .merge_file_x8u0Pd
 ---
 title: "workflow init"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_qkQGjI
+=======
+=======
+>>>>>>> .merge_file_S41Rs6
+>>>>>>> .merge_file_x8u0Pd
 # BMAD Workflow Init — Guida alla Configurazione
 
 > **Versione**: 6.2.0 | **Progetto**: Laraxot PTVX  
@@ -16,6 +25,10 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_qkQGjI
+=======
+<<<<<<< .merge_file_lWhXjP
+>>>>>>> .merge_file_x8u0Pd
 title: "workflow init"
 type: note
 tags: [documentation]
@@ -24,6 +37,11 @@ updated: 2026-09-26
 qmd: "workflow init"
 issues: []
 discussions: []
+<<<<<<< .merge_file_qkQGjI
+=======
+=======
+>>>>>>> .merge_file_S41Rs6
+>>>>>>> .merge_file_x8u0Pd
 ## 🎯 Obiettivo
 
 Questa guida configura **workflow-init** per integrare BMAD Method con il tuo IDE (Claude Code, Cursor, Windsurf).

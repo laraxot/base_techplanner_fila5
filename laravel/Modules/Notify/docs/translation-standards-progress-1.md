@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_ZBmSed
+=======
+---
+title: "translation standards progress 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "translation standards progress 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_5Qe8Dp
 # Progresso Standardizzazione Traduzioni
 
 ## Stato Attuale - 12/05/2025

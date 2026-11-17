@@ -1,9 +1,11 @@
 ---
+title: "🏛️ NOTIFY - Civic Engagement Platform"
 title: "🏛️ <nome progetto> - Civic Engagement Platform"
 type: concept
 tags: [project, overview]
 created: 2026-07-14
 updated: 2026-07-14
+qmd: "project-overview 🏛️ laraxot - civic engagement platform"
 qmd: "project-overview 🏛️ <nome progetto> - civic engagement platform"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
@@ -21,7 +23,6 @@ related:
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
-status: draft
 ---
 
 # 🏛️ NOTIFY - Civic Engagement Platform

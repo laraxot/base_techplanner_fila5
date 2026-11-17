@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_Y6YG7Q
+<<<<<<< .merge_file_fDLRO9
+=======
+<<<<<<< .merge_file_rZaQer
+>>>>>>> .merge_file_Wmz7g7
+=======
+<<<<<<< .merge_file_rZaQer
+>>>>>>> .merge_file_crQ6fq
 ---
 title: "CHANGELOG"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_Y6YG7Q
+<<<<<<< .merge_file_fDLRO9
+=======
+=======
+>>>>>>> .merge_file_23uc5y
+>>>>>>> .merge_file_Wmz7g7
+=======
+=======
+>>>>>>> .merge_file_23uc5y
+>>>>>>> .merge_file_crQ6fq
 # Changelog
 
 All notable changes to `:package_name` will be documented in this file.

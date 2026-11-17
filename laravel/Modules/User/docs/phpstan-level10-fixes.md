@@ -1,3 +1,26 @@
+<<<<<<< .merge_file_Q9Lhxy
+=======
+---
+title: "Correzioni PHPStan Livello 10 - Modulo User"
+type: concept
+tags: [phpstan, level10, fixes]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-level10-fixes correzioni phpstan livello 10 - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_paYfPU
 # Correzioni PHPStan Livello 10 - Modulo User
 
 Questo documento traccia gli errori PHPStan di livello 10 identificati nel modulo User e le relative soluzioni implementate.
@@ -254,4 +277,8 @@ public function handle(Failed $event): void
 1. Continua l'utilizzo di queste pratiche in tutto il modulo User e in altri moduli.
 2. Considera l'uso di generics (come `@template`) per migliorare ulteriormente la tipizzazione delle classi che gestiscono diverse tipologie di dati.
 3. Mantieni aggiornata la documentazione quando vengono modificati metodi o proprietà.
+<<<<<<< .merge_file_Q9Lhxy
 4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
+=======
+4. Utilizza strumenti di analisi automatica come PHPStan regolarmente per verificare che il codice rimanga conforme. 
+>>>>>>> .merge_file_paYfPU

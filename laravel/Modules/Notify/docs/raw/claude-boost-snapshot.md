@@ -712,6 +712,11 @@ npm run build
 - The Laravel application reads compiled assets from the theme's `resources/dist/` directory
 - Without `npm run build`, Tailwind won't compile new classes or changes
 - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+<<<<<<< .merge_file_0O5xov
+=======
+
+- Without `symlink public_html/themes (npm run copy obsoleto)`, the changes won't be available to the main Laravel application
+>>>>>>> .merge_file_o7ebGw
 - Users will NOT see any frontend changes without these steps
 
 ### Remember:

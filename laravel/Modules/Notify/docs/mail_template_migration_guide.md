@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "mail template migration guide"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Guida alla Migrazione di MailTemplate
@@ -140,9 +139,6 @@ Per una comprensione completa, consultare anche:
 - [Struttura della Migrazione](mail-templates/migration_structure.md) - Dettagli sulla struttura di migrazione
 - [Implementazione del Campo Slug](mail-templates/slug_field_implementation.md) - Guida completa all'implementazione e utilizzo del campo slug
 - [Spatie Email Usage Guide](./SPATIE_EMAIL_USAGE_GUIDE.md) - Come utilizzare SpatieEmail con i template
-- [Struttura della Migrazione](./mail-templates/migration_structure.md) - Dettagli sulla struttura di migrazione
-- [Implementazione del Campo Slug](./mail-templates/slug_field_implementation.md) - Guida completa all'implementazione e utilizzo del campo slug
-- [Spatie Email Usage Guide](./spatie_email_usage_guide.md) - Come utilizzare SpatieEmail con i template
 
 ## Vantaggi del Pattern XotBaseMigration
 

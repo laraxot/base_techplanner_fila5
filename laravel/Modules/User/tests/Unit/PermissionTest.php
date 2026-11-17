@@ -2,9 +2,15 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_C9xq3o
 use Modules\User\Tests\TestCase;
 use Modules\User\Models\Permission;
 use Modules\User\Models\Role;
+=======
+use Modules\User\Models\Permission;
+use Modules\User\Models\Role;
+use Modules\User\Tests\TestCase;
+>>>>>>> .merge_file_SnlfaE
 
 uses(TestCase::class);
 

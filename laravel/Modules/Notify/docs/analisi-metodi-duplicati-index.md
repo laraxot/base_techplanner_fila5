@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "analisi metodi duplicati index"
 issues: []
 discussions: []
-status: draft
 ---
 
 # 📚 INDICE COMPLETO - Analisi Metodi Duplicati
@@ -15,6 +14,15 @@ status: draft
 > 🐄✨ **Navigazione Completa dei Documenti di Analisi**
 
 ---
+
+title: "analisi metodi duplicati index"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analisi metodi duplicati index"
+issues: []
+discussions: []
 ## 🎯 Documenti Principali (START HERE!)
 
 ### 1. 🏆 MASTER EDITION - Il Documento Definitivo
@@ -63,8 +71,12 @@ status: draft
 ### Moduli Business Logic
 
 #### User (Autenticazione & Autorizzazione)
+<<<<<<< .merge_file_7bsJIn
 📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](analisi-metodi-duplicati.md)  
 📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../../User/docs/analisi-metodi-duplicati.md)  
+=======
+📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../Modules/User/docs/analisi-metodi-duplicati.md)  
+>>>>>>> .merge_file_I31tdE
 📊 **Dati:** 9 proprietà duplicate, 74 LOC, 87% riduzione  
 🎯 **Priorità:** ALTA - Modulo critico  
 ⚠️ **Note:** Testing intensivo necessario (auth)
@@ -81,10 +93,6 @@ status: draft
 📊 **Dati:** 8 proprietà duplicate, 70 LOC, 86% riduzione  
 🎯 **Priorità:** MEDIA - Gestisce temi  
 📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../Modules/Cms/docs/METODI_DUPLICATI_ANALISI.md)
-📄 **File:** [../Modules/Cms/docs/analisi-metodi-duplicati.md](../../Cms/docs/analisi-metodi-duplicati.md)  
-📊 **Dati:** 8 proprietà duplicate, 70 LOC, 86% riduzione  
-🎯 **Priorità:** MEDIA - Gestisce temi  
-📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../../Cms/docs/metodi-duplicati-analisi.md)
 
 ---
 
@@ -96,7 +104,6 @@ status: draft
 🎯 **Priorità:** BASSA - Semplice  
 ✅ **Candidato:** Primo per migration test  
 📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../Modules/Activity/docs/METODI_DUPLICATI_ANALISI.md)
-📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../../Activity/docs/METODI_DUPLICATI_ANALISI.md)
 
 #### Comment (Commenti)
 📄 **File:** (da creare)  
@@ -104,7 +111,6 @@ status: draft
 🎯 **Priorità:** BASSA - Più semplice  
 ✅ **Candidato:** PRIMO per migration (meno rischi)  
 📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../Modules/Comment/docs/METODI_DUPLICATI_ANALISI.md)
-📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../../Comment/docs/METODI_DUPLICATI_ANALISI.md)
 
 #### Blog (Blog Engine)
 📄 **File:** (da creare)  
@@ -118,7 +124,6 @@ status: draft
 📊 **Dati:** TBD  
 🎯 **Priorità:** BASSA  
 📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../Modules/AI/docs/METODI_DUPLICATI_ANALISI.md)
-📝 **Alternative:** [METODI_DUPLICATI_ANALISI.md](../../AI/docs/METODI_DUPLICATI_ANALISI.md)
 
 ---
 
@@ -142,15 +147,23 @@ status: draft
 ## 🎨 Documenti per Tema
 
 ### Theme Sixteen (AGID Compliant)
+<<<<<<< .merge_file_7bsJIn
 📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](analisi-metodi-duplicati.md)  
 📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../../../Themes/Sixteen/docs/analisi-metodi-duplicati.md)  
+=======
+📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../Themes/Sixteen/docs/analisi-metodi-duplicati.md)  
+>>>>>>> .merge_file_I31tdE
 ⭐ **Valutazione:** ⭐⭐⭐⭐⭐ ECCELLENTE  
 🎯 **Priorità:** BASSA (già ottimizzato)  
 📝 **Focus:** Testing e documentazione, NO refactoring necessario
 
 ### Theme TwentyOne (Semplice)
+<<<<<<< .merge_file_7bsJIn
 📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](analisi-metodi-duplicati.md)  
 📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../../../Themes/TwentyOne/docs/analisi-metodi-duplicati.md)  
+=======
+📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../Themes/TwentyOne/docs/analisi-metodi-duplicati.md)  
+>>>>>>> .merge_file_I31tdE
 ⭐ **Valutazione:** ⭐⭐⭐ BUONO  
 🎯 **Priorità:** MEDIA (opzionale ServiceProvider)  
 📝 **Focus:** Valutare se aggiungere ServiceProvider leggero
@@ -163,7 +176,6 @@ status: draft
 1. 📖 [MASTER EDITION](./analisi-metodi-duplicati-MASTER.md) - Leggere TUTTO (2-3 ore)
 2. 📖 [Xot Module](analisi-metodi-duplicati.md) - Capire modulo base
 3. 📖 [Comment Module - METODI_DUPLICATI_ANALISI](../Modules/Comment/docs/METODI_DUPLICATI_ANALISI.md) - Primo test migration
-3. 📖 [Comment Module - METODI_DUPLICATI_ANALISI](../../Comment/docs/METODI_DUPLICATI_ANALISI.md) - Primo test migration
 4. 🚀 Iniziare implementazione seguendo MASTER guide
 
 ### Per Project Manager / Stakeholder

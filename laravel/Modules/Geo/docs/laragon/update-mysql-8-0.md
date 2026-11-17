@@ -1,4 +1,8 @@
 ---
+<<<<<<< .merge_file_l2eOTQ
+=======
+<<<<<<< .merge_file_OEE864
+>>>>>>> .merge_file_CZDndL
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -6,6 +10,11 @@ updated: 2026-09-26
 qmd: "update mysql 8 0"
 issues: []
 discussions: []
+<<<<<<< .merge_file_l2eOTQ
+=======
+=======
+>>>>>>> .merge_file_e7vYo0
+>>>>>>> .merge_file_CZDndL
 title: Aggiornare Mysql a 8.0
 description: Aggiornare Mysql a 8.0
 extends: _layouts.documentation

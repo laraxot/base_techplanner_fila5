@@ -2,16 +2,15 @@
 qmd: "send consolidated"
 issues: []
 discussions: []
-title: "send: Consolidated Documentation"
+title: "send — Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
-# send: Consolidated Documentation
+# send — Consolidated Documentation
 
 Consolidated from **20** individual files.
 
@@ -42,7 +41,7 @@ Consolidated from **20** individual files.
 
 ## send-email-fix-1
 
-*Consolidated from: `send-email-fix.md`*
+*Consolidated from: `send-email-fix-1.md`*
 
 title: "Guida alla Correzione di SendEmail.php"
 type: concept
@@ -53,17 +52,12 @@ qmd: "send-email-fix-1 guida alla correzione di sendemail.php"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -545,7 +539,6 @@ class SmtpData extends Data
 ## send-email-translation-fix-1
 
 *Consolidated from: `send-email-translation-fix-1.md`*
-*Consolidated from: `send-email-translation-fix.md`*
 
 
 ## Problemi Identificati
@@ -860,7 +853,7 @@ Ogni campo ora ha la struttura espansa completa:
 
 ## send-email-translation-fix-2
 
-*Consolidated from: `send-email-translation-fix.md`*
+*Consolidated from: `send-email-translation-fix-2.md`*
 
 title: "Fix Traduzioni File send_email.php - Modulo Notify"
 type: concept
@@ -871,17 +864,12 @@ qmd: "send-email-translation-fix-2 fix traduzioni file send_email.php - modulo n
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1212,7 +1200,7 @@ Ogni campo ora ha la struttura espansa completa:
 
 ## send-email-translation-improvement-1
 
-*Consolidated from: `send-email-translation-improvement.md`*
+*Consolidated from: `send-email-translation-improvement-1.md`*
 
 
 ## 🔍 Analisi del Problema
@@ -1492,7 +1480,6 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ### Documentazione Correlata
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
@@ -1553,68 +1540,12 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
-- [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
-- [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
-- [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
@@ -1626,7 +1557,6 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
@@ -1638,7 +1568,6 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
@@ -1959,7 +1888,7 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ## send-email-translation-improvement-2
 
-*Consolidated from: `send-email-translation-improvement.md`*
+*Consolidated from: `send-email-translation-improvement-2.md`*
 
 title: "Miglioramento File Traduzione send_email.php"
 type: concept
@@ -1970,17 +1899,12 @@ qmd: "send-email-translation-improvement-2 miglioramento file traduzione send_em
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2271,7 +2195,6 @@ php -l Modules/Notify/lang/it/send_email.php
 - [Best Practice Filament](../../../project_docs/FILAMENT-BEST-PRACTICES.md)
 - [Struttura Modulo Notify](./README.md)
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
@@ -2280,9 +2203,9 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ### File Modificati
 - `laravel/Modules/Notify/lang/it/send_email.php` - File principale migliorato
-- `laravel/Modules/Notify/docs/send-email-translation-improvement.md` - Questa documentazione
-- `laravel/Modules/Notify/project_docs/send-email-translation-improvement.md` - Questa documentazione
-- `laravel/Modules/Notify/docs/send-email-translation-improvement.md` - Questa documentazione- `laravel/Modules/Notify/project_docs/send-email-translation-improvement.md` - Questa documentazione
+- `laravel/Modules/Notify/docs/send-email-translation-improvement-2.md` - Questa documentazione
+- `laravel/Modules/Notify/project_docs/send-email-translation-improvement-2.md` - Questa documentazione
+- `laravel/Modules/Notify/docs/send-email-translation-improvement-2.md` - Questa documentazione- `laravel/Modules/Notify/project_docs/send-email-translation-improvement-2.md` - Questa documentazione
 
 ## 📝 Note di Implementazione
 
@@ -2588,7 +2511,6 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ### Documentazione Correlata
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
@@ -2871,7 +2793,6 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ### Documentazione Correlata
 - [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
-- [Regole Traduzioni Laraxot](../../translation-standards.md)
 - [Best Practice Filament](../../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../../docs/project/translation-standards.md)
 - [Best Practice Filament](../../../../docs/project/FILAMENT-BEST-PRACTICES.md)
@@ -3412,14 +3333,12 @@ public function execute(
 - Phone: Cerca attributi `mobile`, `phone`, `telephone`, `contact_phone`
 - WhatsApp: Cerca attributo `whatsapp`, con fallback su phone
 - Vedi: [Contact Extraction Pattern](./contact-extraction-pattern.md) per dettagli implementazione DRY
-- Vedi: [Contact Extraction Pattern](../../contact-extraction-pattern.md) per dettagli implementazione DRY
 
 **Pattern DRY - Composizione**:
 - **Questa bulk action compone** `SendRecordNotificationAction` per ogni record
 - **Zero duplicazione**: La logica di estrazione contatti e invio è solo in `SendRecordNotificationAction`
 - Pattern `app()`: Usa `app(SendRecordNotificationAction::class)->execute()` dentro `execute()`
 - Vedi: [DRY Composition Pattern](./dry-composition-pattern.md)
-- Vedi: [DRY Composition Pattern](../../dry-composition-pattern.md)
 
 ### 2. SendNotificationBulkAction (Filament BulkAction)
 
@@ -3636,6 +3555,7 @@ Vedi: [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
 - [RecordNotification Class](../../app/Notifications/RecordNotification.php)
 - [App Client Management](../App/docs/README.md#client-management)
 - [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
+<<<<<<< .merge_file_QJwg6t
 - [Geo Module Reusable Components Philosophy](../../ai-agents/guidelines/reusable-components-philosophy.md)
 Vedi: [Actions Calling Actions Pattern](../../actions-calling-actions-pattern.md)
 
@@ -3648,6 +3568,9 @@ Vedi: [Actions Calling Actions Pattern](../../actions-calling-actions-pattern.md
 - [App Client Management](../App/docs/README.md#client-management)
 - [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
 - [Geo Module Reusable Components Philosophy](../../../../Geo/docs/reusable-components-philosophy.md)
+=======
+- [Geo Module Reusable Components Philosophy](../geo/docs/reusable-components-philosophy.md)
+>>>>>>> .merge_file_9Nfukc
 - [Xot Filament Class Extension Rules](../xot/docs/filament-class-extension-rules.md)
 
 ---
@@ -4492,7 +4415,7 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ## sendemail-troubleshooting-1
 
-*Consolidated from: `sendemail-troubleshooting.md`*
+*Consolidated from: `sendemail-troubleshooting-1.md`*
 
 title: "Troubleshooting SendEmail"
 type: concept
@@ -4503,17 +4426,12 @@ qmd: "sendemail-troubleshooting-1 troubleshooting sendemail"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---

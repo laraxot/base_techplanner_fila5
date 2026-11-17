@@ -26,17 +26,28 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
+<<<<<<< .merge_file_jmJPDl
 /var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+=======
+/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+>>>>>>> .merge_file_2dWtl0
 ```
 
 ### 2. Implementazione Corretta
 ```blade
 @php
     use Illuminate\Support\Facades\Auth;
+<<<<<<< .merge_file_jmJPDl
 
     // Esegui il logout
     Auth::logout();
 
+=======
+    
+    // Esegui il logout
+    Auth::logout();
+    
+>>>>>>> .merge_file_2dWtl0
     // Invalida e rigenera la sessione
     session()->invalidate();
     session()->regenerateToken();
@@ -59,7 +70,11 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
             </div>
 
             <div class="mt-8">
+<<<<<<< .merge_file_jmJPDl
                 <a href="{{ route('home') }}"
+=======
+                <a href="{{ route('home') }}" 
+>>>>>>> .merge_file_2dWtl0
                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     {{ __('Torna alla Home') }}
                 </a>
@@ -121,4 +136,8 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 ## Collegamenti Correlati
 - [Best Practices Folio](./routing-best-practices-2.md)
 - [Gestione Sessione](./session-management-2.md)
+<<<<<<< .merge_file_jmJPDl
 - [Tema One Documentation](../../themes/one/docs/readme.md)
+=======
+- [Tema One Documentation](../../themes/one/docs/readme.md) 
+>>>>>>> .merge_file_2dWtl0

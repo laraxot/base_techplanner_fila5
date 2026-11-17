@@ -35,7 +35,11 @@ test('the users provider is the one that excludes deleted accounts', function ()
 
 test('the users provider remains usable while a legacy users table lacks deleted_at', function (): void {
     $provider = Auth::createUserProvider('users');
+<<<<<<< .merge_file_87ebzW
     Assert::assertNotNull($provider);
+=======
+>>>>>>> .merge_file_7GblWc
+    Assert::assertInstanceOf(EloquentUserProvider::class, $provider);
     $callback = $provider->getQueryCallback();
     Assert::assertNotNull($callback);
 

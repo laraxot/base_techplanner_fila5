@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_x3BqoZ
+=======
+<<<<<<< .merge_file_rIBEDJ
+>>>>>>> .merge_file_XbtYrH
 ---
 title: "squire integration 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_x3BqoZ
+=======
+=======
+>>>>>>> .merge_file_eajPgR
+>>>>>>> .merge_file_XbtYrH
 # Integrazione con Squire per dati geografici
 
 ## Contesto

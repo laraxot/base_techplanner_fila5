@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_Fu5GRp
+=======
+<<<<<<< .merge_file_qGOs1Q
+>>>>>>> .merge_file_NYzlYa
 ---
 title: "tutorial"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_Fu5GRp
+=======
+=======
+>>>>>>> .merge_file_CrRNQD
+>>>>>>> .merge_file_NYzlYa
 https://fly.io/laravel-bytes/console-applications-with-laravel-zero/
 
 # Comandi Console in Moduli Laraxot

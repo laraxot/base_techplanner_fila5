@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_cxw4wg
+=======
+---
+title: "filament ui enhancements 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament ui enhancements 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_eI9dEU
 # Miglioramenti UI/UX per MailTemplateResource
 
 ## Componenti Filament Consigliati

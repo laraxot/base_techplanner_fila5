@@ -14,10 +14,10 @@ module: Notify
 date: 2026-09-22
 ---
 
-# Story: Layout mail condivisi tra modulo Notify e tema attivo
+# Story — Layout mail condivisi tra modulo Notify e tema attivo
 
 ## Fase BMAD
-Plan (proposta di design, non ancora implementata: nessun file `.php` toccato).
+Plan (proposta di design, non ancora implementata — nessun file `.php` toccato).
 
 ## Contesto
 
@@ -76,7 +76,7 @@ legge.
 ## Impatto se non risolto
 
 Il layout "pulito" resta inutilizzabile da admin, nonostante esista e sia
-pronto: per ottenerlo oggi l'unica via visibile è copiare il file dentro il
+pronto — per ottenerlo oggi l'unica via visibile è copiare il file dentro il
 tema, cosa che il richiedente ha esplicitamente rifiutato di fare per non
 duplicare contenuto.
 
@@ -99,7 +99,7 @@ scansionate da `HtmlLayoutPathSelect` (simulazione diretta della sua logica via
 tinker: `base.html`, `christmas-professional.html`, `clean.html`).
 
 Da provare dal vivo: `notify/admin/test/send-spatie-email-page` (pagina Test
-del modulo Notify): permette di scegliere/creare un `MailTemplate` con
+del modulo Notify) — permette di scegliere/creare un `MailTemplate` con
 `html_layout_path = clean.html` e inviare una mail di prova per vedere
 l'invio reale senza header/footer.
 
@@ -107,7 +107,7 @@ l'invio reale senza header/footer.
 
 Il team ha risposto sulla discussion: **duplicazione consentita** in questo
 caso specifico, perché si tratta di un file HTML statico (nessuna logica,
-nessun comportamento programmato): non ricade nel principio DRY nello stesso
+nessun comportamento programmato) — non ricade nel principio DRY nello stesso
 modo di codice duplicato. `clean.html` resta quindi definitivo, non un
 workaround temporaneo: **non va rimosso**, e l'opzione 3 (ricerca su più
 cartelle) non verrà implementata per questo caso.
@@ -116,12 +116,12 @@ Story chiusa. Issue e discussion collegate chiuse di conseguenza.
 
 ## Prossimi passi (storico, non più attivi)
 
-- [x] Decidere l'opzione: deciso: duplicazione, vedi sopra
-- [ ] ~~Se opzione 3: modificare 3 file...~~: non applicabile, opzione 3 scartata
+- [x] Decidere l'opzione — deciso: duplicazione, vedi sopra
+- [ ] ~~Se opzione 3: modificare 3 file...~~ — non applicabile, opzione 3 scartata
 - [ ] Verifica manuale via `notify/admin/test/send-spatie-email-page` con
-      `html_layout_path = clean.html`: resta valida come verifica funzionale,
+      `html_layout_path = clean.html` — resta valida come verifica funzionale,
       indipendente dalla decisione
-- [ ] ~~Aggiungere test: select mostra `default.html`...~~: non applicabile,
+- [ ] ~~Aggiungere test: select mostra `default.html`...~~ — non applicabile,
       `default.html` resta solo il sorgente di riferimento in Notify, non
       un'opzione da esporre in select
 

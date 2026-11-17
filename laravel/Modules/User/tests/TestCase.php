@@ -34,6 +34,8 @@ use Modules\User\Models\User;
 use Modules\User\Providers\Filament\AdminPanelProvider;
 use Modules\User\Providers\UserServiceProvider;
 use Modules\Xot\Tests\XotBaseTestCase;
+use Mockery\CompositeExpectation;
+use Mockery\Expectation;
 use PHPUnit\Framework\Assert;
 use PragmaRX\Google2FA\Google2FA;
 
@@ -74,6 +76,28 @@ abstract class TestCase extends XotBaseTestCase
      * Le migration girano una volta per processo, come in `Tests\TestCase`.
      */
     public static bool $userSchemaMigrated = false;
+
+    /**
+     * Mockery 1.6 returns a CompositeExpectation from shouldReceive()/allows(), which forwards
+     * once()/with()/andReturn() via __call and so is opaque to PHPStan. The composite holds no
+     * public accessor, so its single Expectation is read once here to keep chained calls typed.
+     *
+     * Sta qui e non in tests/Helpers.php: Pest carica `Pest.php`/`Helpers.php` solo dal
+     * `--test-directory` della run (laravel/tests), quindi in una run scoped sul modulo le
+     * funzioni globali dichiarate li' non esistono. Stessa scelta di Modules\Activity\Tests\TestCase.
+     */
+    public static function mockeryExpect(object $expectation): Expectation
+    {
+        if ($expectation instanceof CompositeExpectation) {
+            $expectations = (fn (): array => $this->_expectations)->call($expectation);
+            \assert(count($expectations) === 1, 'mockeryExpect() supports a single expected method');
+            $expectation = reset($expectations);
+        }
+
+        \assert($expectation instanceof Expectation);
+
+        return $expectation;
+    }
 
     /**
      * Su MariaDB (CI e sviluppo) lo schema del database `*_test` non viene costruito da
@@ -635,6 +659,9 @@ abstract class TestCase extends XotBaseTestCase
      * Effetto in CI su MariaDB: nessuna notifica di approvazione, scarto o chiusura (TicketLifecycleNotificationTest, area personale).
      * Lo skip del manager conta i nomi restituiti qui, quindi ogni nome deve corrispondere a una sola transazione aperta.
      *
+     * I nomi senza configurazione si saltano: la lista e' condivisa tra i progetti del monorepo e `fixcity` esiste solo
+     * dove il modulo Fixcity e' attivo; altrove `connection('fixcity')` lanciava «not configured» e nessun test partiva.
+     *
      * @return list<string>
      */
     protected function connectionsToTransact()
@@ -647,6 +674,10 @@ abstract class TestCase extends XotBaseTestCase
         $names = [];
         $seen = [];
         foreach ($this->connectionsToTransact as $name) {
+            if (null === config('database.connections.'.$name)) {
+                continue;
+            }
+
             $id = spl_object_id($database->connection($name));
             if (isset($seen[$id])) {
                 continue;

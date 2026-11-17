@@ -1,12 +1,23 @@
+<<<<<<< .merge_file_rtvoby
 # Indice documentazione — Modulo User
+=======
+# 📚 **Indice Documentazione Modulo User**
+>>>>>>> .merge_file_lCCUV4
 
 **Scopo del modulo:** identità (auth, RBAC Spatie, team/tenant, Passport/SSO, widget login Filament).  
 **Navigazione canonica:** [README.md](./README.md) (non `readme.md` — eliminato come duplicato case).
 
+<<<<<<< .merge_file_rtvoby
 ## Lettura essenziale
 1. [README.md](./README.md) — panorama identità e mappa PHPStan
 2. [roadmap.md](./roadmap.md) — evoluzione prodotto
 3. [philosophy.md](./philosophy.md) — “essere unici” / identità digitale
+=======
+## 🎯 **Lettura Essenziale**
+1. [README.md](./readme.md) - Panoramica completa del sistema di identità.
+2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Biometric Auth & AI Moderation.
+3. [philosophy.md](./philosophy.md) - "Essere Unici": la gestione dell'identità digitale.
+>>>>>>> .merge_file_lCCUV4
 
 ## 🏗️ **Architettura & Auth**
 - 🔐 **[Authentication Flow](./authentication.md)** - Dettagli sul ciclo di vita della sessione.
@@ -30,6 +41,7 @@
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
 
+<<<<<<< .merge_file_rtvoby
 ## Qualità e sviluppo (PHPStan)
 
 | Ruolo | File |
@@ -43,6 +55,15 @@ Altri:
 - [Testing Identity](./testing.md) — Pest auth
 - [Model Inheritance](./model-inheritance-rules.md)
 - PSR-4 test helpers: anonymous class / fixture sotto `tests/`
+=======
+## 🧪 **Qualità e Sviluppo**
+- ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
+- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers-2026-03-10.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
+- 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave-2026-03-10.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
+- 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
+- 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
+- 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
+>>>>>>> .merge_file_lCCUV4
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.

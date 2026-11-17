@@ -1,11 +1,3 @@
----
-title: "TeamContract Usage Reasoning"
-type: note
-status: draft
-updated: 2026-10-26
-tags: [docs, user]
-qmd: "teamcontract usage reasoning user"
----
 # TeamContract Usage Reasoning
 
 ## Overview
@@ -32,34 +24,19 @@ The shift to using `TeamContract` over `Team` in the `HasTeams` trait aligns wit
 ---
 module: theme
 topic: team-contract-usage-reasoning
-canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
+canonical: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning.md
----
-title: "TeamContract: perché il contratto (e la nullability)"
-type: concept
-module: User
-status: active
-updated: 2026-10-20
-tags: [docs, user, teams, teamcontract]
-qmd: "teamcontract usage reasoning hasteams nullability personalTeam test tipizzazione"
-related:
-  - ./contracts/teamcontract.md
-  - ./scopo.md
-  - ./00-INDEX.md
-  - ./stories/phpstan-test-wave-user-b.story.md
----
-
+<<<<<<< .merge_file_UaDpmn
 # TeamContract: perché il contratto (e la nullability)
 
 Indice: [00-INDEX.md](./00-index.md) · API: [contracts/teamcontract.md](./contracts/teamcontract.md) · scopo: [scopo.md](./scopo.md).
@@ -83,3 +60,6 @@ Evidence lane: [stories/phpstan-test-wave-user-b.story.md](./stories/phpstan-tes
 ## Variante underscore
 
 `team_contract_usage_reasoning.md` è superseded: usa questo file.
+=======
+See canonical documentation: ../../../Themes/docs/shared-components/team-contract-usage-reasoning-2.md
+>>>>>>> .merge_file_nvlXIr

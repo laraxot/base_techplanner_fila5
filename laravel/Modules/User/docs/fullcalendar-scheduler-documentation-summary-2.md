@@ -22,7 +22,11 @@ related:
 
 ## Panoramica
 
+<<<<<<< .merge_file_GDTD9V
 Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto <nome progetto>, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
+=======
+Questa documentazione fornisce una guida completa per la gestione delle licenze FullCalendar Scheduler nel progetto Quaeris, basata sulla ricerca approfondita della documentazione ufficiale e dei problemi comuni riscontrati nella community.
+>>>>>>> .merge_file_OuedPc
 
 ## Documenti Disponibili
 
@@ -33,7 +37,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 - Tipi di licenza disponibili (Commerciale, Non-Profit, GPLv3)
 - Problemi comuni e soluzioni dettagliate
 - Configurazione completa per Laravel/Filament
+<<<<<<< .merge_file_GDTD9V
 - Best practices per <nome progetto>
+=======
+- Best practices per Quaeris
+>>>>>>> .merge_file_OuedPc
 - Testing e debugging avanzato
 - Sicurezza e gestione ambienti
 
@@ -49,7 +57,11 @@ Questa documentazione fornisce una guida completa per la gestione delle licenze 
 #### 3. [FullCalendar Scheduler License](./fullcalendar-scheduler-license.md)
 Documentazione base esistente per:
 - Panoramica generale licenze
+<<<<<<< .merge_file_GDTD9V
 - Configurazione di base in <nome progetto>
+=======
+- Configurazione di base in Quaeris
+>>>>>>> .merge_file_OuedPc
 - Problemi comuni basilari
 
 #### 4. [Scheduler License Key](./scheduler-license-key-2.md)
@@ -82,7 +94,11 @@ La documentazione è basata su ricerca approfondita di:
    - Problema: BASE_OPTION_DEFAULTS non esportato
    - Soluzione: Workaround con ignore directives
 
+<<<<<<< .merge_file_GDTD9V
 ### 🎯 Soluzioni Specifiche <nome progetto>
+=======
+### 🎯 Soluzioni Specifiche Quaeris
+>>>>>>> .merge_file_OuedPc
 
 La documentazione include configurazioni specifiche per:
 - **Multi-tenancy**: Isolamento dati per studio
@@ -96,7 +112,11 @@ La documentazione include configurazioni specifiche per:
 ### 🏗️ Architettura
 
 ```
+<<<<<<< .merge_file_GDTD9V
 <nome progetto> FullCalendar Implementation
+=======
+Quaeris FullCalendar Implementation
+>>>>>>> .merge_file_OuedPc
 ├── AdminPanelProvider.php (Configurazione centrale)
 ├── config/fullcalendar.php (Configurazioni avanzate)
 ├── .env (Variabili licenza)
@@ -143,21 +163,33 @@ La documentazione è aggiornata per:
 - **FullCalendar v6.1.17** (latest)
 - **Filament v3.x**
 - **Laravel 11.x/12.x**
+<<<<<<< .merge_file_GDTD9V
 - **<nome progetto> current architecture**
+=======
+- **Quaeris current architecture**
+>>>>>>> .merge_file_OuedPc
 
 ### 🔄 Aggiornamenti Futuri
 
 Quando aggiornare la documentazione:
 - Nuove versioni FullCalendar con breaking changes
 - Nuovi bug noti nella community
+<<<<<<< .merge_file_GDTD9V
 - Modifiche architettura <nome progetto>
+=======
+- Modifiche architettura Quaeris
+>>>>>>> .merge_file_OuedPc
 - Nuovi requisiti sanitari/legali
 
 ### 📝 Contributi
 
 Per aggiornare la documentazione:
 1. Verificare issue GitHub FullCalendar
+<<<<<<< .merge_file_GDTD9V
 2. Testare soluzioni in ambiente <nome progetto>
+=======
+2. Testare soluzioni in ambiente Quaeris
+>>>>>>> .merge_file_OuedPc
 3. Aggiornare documenti pertinenti
 4. Aggiornare questo summary
 
@@ -180,7 +212,11 @@ Per aggiornare la documentazione:
 
 ## Conclusioni
 
+<<<<<<< .merge_file_GDTD9V
 Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in <nome progetto>, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
+=======
+Questa documentazione fornisce una copertura completa per tutti gli aspetti delle licenze FullCalendar Scheduler in Quaeris, dalla configurazione iniziale al troubleshooting avanzato. La combinazione di guida dettagliata e riferimento rapido garantisce supporto sia per sviluppatori esperti che per nuovi team members.
+>>>>>>> .merge_file_OuedPc
 
 **Documenti chiave da consultare:**
 1. **Setup iniziale**: Quick Reference
@@ -188,4 +224,8 @@ Questa documentazione fornisce una copertura completa per tutti gli aspetti dell
 3. **Riferimento quotidiano**: Quick Reference checklist
 4. **Configurazione produzione**: Best practices nel troubleshooting
 
+<<<<<<< .merge_file_GDTD9V
 La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di <nome progetto>.
+=======
+La documentazione è progettata per essere autosufficiente e ridurre la necessità di ricerche esterne, fornendo tutte le informazioni necessarie per una gestione efficace delle licenze FullCalendar Scheduler nel contesto sanitario di Quaeris.
+>>>>>>> .merge_file_OuedPc

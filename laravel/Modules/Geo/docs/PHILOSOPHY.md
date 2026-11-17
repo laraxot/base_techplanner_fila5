@@ -1,3 +1,11 @@
+<<<<<<< .merge_file_lXFyJy
+<<<<<<< .merge_file_hqdoYY
+=======
+<<<<<<< .merge_file_oFRyKB
+>>>>>>> .merge_file_BX2JS1
+=======
+<<<<<<< .merge_file_oFRyKB
+>>>>>>> .merge_file_oyX0zZ
 ---
 title: "PHILOSOPHY"
 type: note
@@ -9,6 +17,16 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_lXFyJy
+<<<<<<< .merge_file_hqdoYY
+=======
+=======
+>>>>>>> .merge_file_855vHx
+>>>>>>> .merge_file_BX2JS1
+=======
+=======
+>>>>>>> .merge_file_855vHx
+>>>>>>> .merge_file_oyX0zZ
 # Geo Module Philosophy
 
 **Platform**: FixCity  
@@ -18,6 +36,14 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_lXFyJy
+<<<<<<< .merge_file_hqdoYY
+=======
+<<<<<<< .merge_file_oFRyKB
+>>>>>>> .merge_file_BX2JS1
+=======
+<<<<<<< .merge_file_oFRyKB
+>>>>>>> .merge_file_oyX0zZ
 title: "PHILOSOPHY"
 type: note
 tags: [documentation]
@@ -26,6 +52,16 @@ updated: 2026-09-26
 qmd: "PHILOSOPHY"
 issues: []
 discussions: []
+<<<<<<< .merge_file_lXFyJy
+<<<<<<< .merge_file_hqdoYY
+=======
+=======
+>>>>>>> .merge_file_855vHx
+>>>>>>> .merge_file_BX2JS1
+=======
+=======
+>>>>>>> .merge_file_855vHx
+>>>>>>> .merge_file_oyX0zZ
 ## RELIGIONE
 
 The Geo module is built on three unshakeable dogmas:

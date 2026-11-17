@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_bqAaCX
+=======
+---
+title: "optimization recommendations 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "optimization recommendations 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_AH3peE
 # Raccomandazioni di Ottimizzazione - Modulo Notify
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -269,4 +283,8 @@ php artisan notify:benchmark
 - [Piano Implementazione](../../../../docs/module_reusability_implementation_plan.md)
 - [Script Controllo](../../../bashscripts/check_module_reusability.sh)
 
+<<<<<<< .merge_file_bqAaCX
 *Ultimo aggiornamento: gennaio 2025*
+=======
+*Ultimo aggiornamento: gennaio 2025*
+>>>>>>> .merge_file_AH3peE

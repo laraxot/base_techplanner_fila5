@@ -1,10 +1,19 @@
 ---
+<<<<<<< .merge_file_bQQvVQ
+=======
+<<<<<<< .merge_file_9UUqeU
+>>>>>>> .merge_file_lgjVMg
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "continuation 2026 09 11.story"
 issues: []
 discussions: []
+<<<<<<< .merge_file_bQQvVQ
+=======
+=======
+>>>>>>> .merge_file_g2fNOI
+>>>>>>> .merge_file_lgjVMg
 id: story-continuation-gdpr-module
 title: "Gdpr Module — Table Audit and $model Property"
 type: continuation

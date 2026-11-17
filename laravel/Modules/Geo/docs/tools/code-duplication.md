@@ -1,4 +1,8 @@
 ---
+<<<<<<< .merge_file_M4r30h
+=======
+<<<<<<< .merge_file_bA10Cg
+>>>>>>> .merge_file_lBio4a
 type: note
 tags: [documentation]
 created: 2026-09-26
@@ -6,6 +10,11 @@ updated: 2026-09-26
 qmd: "code duplication"
 issues: []
 discussions: []
+<<<<<<< .merge_file_M4r30h
+=======
+=======
+>>>>>>> .merge_file_hcKXV9
+>>>>>>> .merge_file_lBio4a
 title: Duplicazione del codice
 description: Duplicazione del codice
 extends: _layouts.documentation

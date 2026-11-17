@@ -1,10 +1,19 @@
 ---
+<<<<<<< .merge_file_7dIHsu
+=======
+<<<<<<< .merge_file_ZsT0Mw
+>>>>>>> .merge_file_zhsTIY
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
 qmd: "continuation 2026 09 11.story"
 issues: []
 discussions: []
+<<<<<<< .merge_file_7dIHsu
+=======
+=======
+>>>>>>> .merge_file_6eLs5K
+>>>>>>> .merge_file_zhsTIY
 id: story-continuation-geo-module
 title: "Geo Module — Table Audit and $model Property"
 type: continuation

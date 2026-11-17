@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_h9X0Yw
+=======
+<<<<<<< .merge_file_Ghy9yK
+>>>>>>> .merge_file_OtFIgC
 ---
 title: "json usage 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_h9X0Yw
+=======
+=======
+>>>>>>> .merge_file_7t5Nfz
+>>>>>>> .merge_file_OtFIgC
 # Utilizzo del file JSON dei comuni
 
 ## Contesto

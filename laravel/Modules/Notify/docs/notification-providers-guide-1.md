@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_UViPpM
+=======
+---
+title: "notification providers guide 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "notification providers guide 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_im49oA
 # Guida Completa ai Provider di Notifiche
 
 Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di <nome progetto>.

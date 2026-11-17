@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_UXDQcz
+=======
+---
+title: "whatsapp integration 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "whatsapp integration 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_OqREdM
 # Integrazione WhatsApp
 
 ## Panoramica
@@ -536,4 +550,15 @@ Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente
 
 ---
 
+<<<<<<< .merge_file_UXDQcz
+=======
+title: "whatsapp integration 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "whatsapp integration 1"
+issues: []
+discussions: []
+>>>>>>> .merge_file_OqREdM
 *Ultimo aggiornamento: 2023-05-12*

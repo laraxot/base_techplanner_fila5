@@ -1,7 +1,23 @@
 ---
 module: theme
 topic: phpstan-relationship-fix-1
+<<<<<<< .merge_file_9RPudf
 canonical: ../../../Themes/docs/shared-components/phpstan_relationship_fix.md
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/phpstan_relationship_fix.md
+=======
+canonical: ../../../Themes/docs/shared-components/phpstan-relationship-fix-2.md
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-relationship-fix-2.md
+>>>>>>> .merge_file_Jjauq9

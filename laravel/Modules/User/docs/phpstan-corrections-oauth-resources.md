@@ -1,3 +1,26 @@
+<<<<<<< .merge_file_4MDKYw
+=======
+---
+title: "PHPStan Corrections - OAuth Resources"
+type: concept
+tags: [phpstan, corrections, oauth, resources]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan-corrections-oauth-resources phpstan corrections - oauth resources"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+>>>>>>> .merge_file_2N510U
 # PHPStan Corrections - OAuth Resources
 
 **Data**: 2025-01-22
@@ -102,11 +125,17 @@ TextColumn::make('name')
 
 ## 📚 Riferimenti
 
+<<<<<<< .merge_file_4MDKYw
 - [Filament 4 Migration Guide](../../Xot/docs/filament-4-migration-guide.md)
+=======
+>>>>>>> .merge_file_2N510U
 - [Filament 4 Migration Guide](../../xot/docs/filament-4-migration-guide.md)
 - [PHPStan Errors Philosophy](./phpstan-errors-philosophy.md)
 - [Filament 4 Actions Namespace](./filament-4-actions-namespace.md)
 
 ---
+<<<<<<< .merge_file_4MDKYw
 
 *Ultimo aggiornamento: 2025-01-22*
+=======
+>>>>>>> .merge_file_2N510U

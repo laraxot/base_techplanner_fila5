@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_sbFQB3
+=======
+---
+title: "tailwind implementation 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "tailwind implementation 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_P3Rjlf
 # Implementazione Tailwind CSS nel Modulo Notify
 
 ## 1. Configurazione Base
@@ -349,4 +363,8 @@ Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/p
 Per contribuire alla documentazione, seguire le [Linee Guida](../../../../docs/project/linee-guida-documentazione.md) e le [Regole dei Collegamenti](../../../../docs/project/regole_collegamenti_documentazione.md).
 
 ## Collegamenti Completi
+<<<<<<< .merge_file_sbFQB3
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/project/README_links.md).
+=======
+Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../docs/project/README_links.md).
+>>>>>>> .merge_file_P3Rjlf

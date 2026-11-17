@@ -1,8 +1,17 @@
 ---
+<<<<<<< .merge_file_XxjaZM
+=======
+<<<<<<< .merge_file_sPKXQk
+>>>>>>> .merge_file_3zAh0V
 created: 2026-09-26
 qmd: "handoff phpstan session 2026 07 08"
 issues: []
 discussions: []
+<<<<<<< .merge_file_XxjaZM
+=======
+=======
+>>>>>>> .merge_file_CJNQDr
+>>>>>>> .merge_file_3zAh0V
 title: handoff sessione PHPStan 2026-07-08
 type: chat
 tags: [phpstan, session, lang, job, marker-git, blade-component]

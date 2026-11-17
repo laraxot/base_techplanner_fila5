@@ -2,16 +2,15 @@
 qmd: "sms consolidated"
 issues: []
 discussions: []
-title: "sms: Consolidated Documentation"
+title: "sms — Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
-# sms: Consolidated Documentation
+# sms — Consolidated Documentation
 
 Consolidated from **63** individual files.
 
@@ -85,7 +84,7 @@ Consolidated from **63** individual files.
 
 ## sms-action-factory-analysis-1
 
-*Consolidated from: `sms-action-factory-analysis.md`*
+*Consolidated from: `sms-action-factory-analysis-1.md`*
 
 title: "Analisi: Sostituzione Match con Formula nel SmsActionFactory"
 type: concept
@@ -96,17 +95,12 @@ qmd: "sms-action-factory-analysis-1 analisi: sostituzione match con formula nel 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -342,7 +336,7 @@ Si consiglia di implementare la soluzione ibrida per ottenere i vantaggi di entr
 
 ## sms-action-factory-resolution-1
 
-*Consolidated from: `sms-action-factory-resolution.md`*
+*Consolidated from: `sms-action-factory-resolution-1.md`*
 
 title: "Risoluzione dinamica vs match esplicito in SmsActionFactory"
 type: concept
@@ -353,17 +347,12 @@ qmd: "sms-action-factory-resolution-1 risoluzione dinamica vs match esplicito in
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -657,7 +646,7 @@ Si consiglia di implementare la soluzione ibrida per ottenere i vantaggi di entr
 
 ## sms-actions-1
 
-*Consolidated from: `sms-actions.md`*
+*Consolidated from: `sms-actions-1.md`*
 
 
 ## Interfaccia
@@ -736,7 +725,7 @@ $result = $action->execute($smsData);
 
 ## sms-actions-2
 
-*Consolidated from: `sms-actions.md`*
+*Consolidated from: `sms-actions-2.md`*
 
 title: "Azioni SMS"
 type: concept
@@ -747,17 +736,12 @@ qmd: "sms-actions-2 azioni sms"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -919,7 +903,7 @@ $result = $action->execute($smsData);
 
 ## sms-best-practices-1
 
-*Consolidated from: `sms-best-practices.md`*
+*Consolidated from: `sms-best-practices-1.md`*
 
 title: "Best Practices per l'Invio SMS"
 type: concept
@@ -930,17 +914,12 @@ qmd: "sms-best-practices-1 best practices per l'invio sms"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1456,7 +1435,7 @@ try {
 
 ## sms-channel-action-resolution-1
 
-*Consolidated from: `sms-channel-action-resolution.md`*
+*Consolidated from: `sms-channel-action-resolution-1.md`*
 
 title: "Dove posizionare la logica di risoluzione dell'action SMS?"
 type: concept
@@ -1467,17 +1446,12 @@ qmd: "sms-channel-action-resolution-1 dove posizionare la logica di risoluzione 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1657,8 +1631,7 @@ $action = match ($driver) {
 
 ## sms-config-structure-1
 
-*Consolidated from: `sms-config-structure.md`*
-*Consolidated from: `sms-config-structure-struttura-configurazione.md`*
+*Consolidated from: `sms-config-structure-1.md`*
 
 
 ## Introduzione
@@ -1811,7 +1784,6 @@ $retryDelay = $config['drivers'][$driver]['retry_delay'] ?? $config['retry']['de
 ## Collegamenti
 
 - [Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
-- [Configurazione Netfun](../../netfun_config_requirements.md)
 - [Provider SMS Supportati](./notifications/SMS_PROVIDER_CONFIGURATION.md)
 
 ---
@@ -1822,7 +1794,7 @@ $retryDelay = $config['drivers'][$driver]['retry_delay'] ?? $config['retry']['de
 
 ## sms-config-structure-2
 
-*Consolidated from: `sms-config-structure.md`*
+*Consolidated from: `sms-config-structure-2.md`*
 
 title: "Struttura della Configurazione SMS"
 type: concept
@@ -1833,17 +1805,12 @@ qmd: "sms-config-structure-2 struttura della configurazione sms"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -1999,13 +1966,12 @@ $retryDelay = $config['drivers'][$driver]['retry_delay'] ?? $config['retry']['de
 
 ## Collegamenti
 
-- [Configurazione Netfun](./netfun-config-requirements.md)
-- [Provider SMS Supportati](./notifications/sms-provider-configuration.md)
+- [Configurazione Netfun](./netfun-config-requirements-1.md)
+- [Provider SMS Supportati](./notifications/sms-provider-configuration-2.md)
 
 ---
 
 - [Configurazione Netfun](./netfun-config-requirements.md)
-- [Configurazione Netfun](../../netfun-config-requirements.md)
 - [Provider SMS Supportati](./notifications/SMS_PROVIDER_CONFIGURATION.md)
 
 ---
@@ -2170,7 +2136,6 @@ $retryDelay = $config['drivers'][$driver]['retry_delay'] ?? $config['retry']['de
 ## Collegamenti
 
 - [Configurazione Netfun](./netfun_config_requirements.md)
-- [Configurazione Netfun](../../netfun_config_requirements.md)
 - [Provider SMS Supportati](./notifications/sms_provider_configuration.md)
 
 ---
@@ -2225,7 +2190,6 @@ $timeout = (int) config('sms.timeout', 30);
 2. **Modularità**: Ogni modulo gestisce le proprie configurazioni
 3. **Manutenibilità**: Facilita la manutenzione avendo un'unica fonte di verità per le configurazioni
 4. **Standardizzazione**: Segue la struttura standardizzata documentata in [SMS_CONFIG_STRUCTURE.md](./sms_config_structure.md)
-4. **Standardizzazione**: Segue la struttura standardizzata documentata in [SMS_CONFIG_STRUCTURE.md](../../sms_config_structure.md)
 
 ## Checklist di Verifica
 
@@ -2242,15 +2206,12 @@ Per ogni azione SMS, verificare che:
 - [Struttura della Configurazione SMS](./sms_config_structure.md)
 - [Requisiti di Configurazione Netfun](./netfun_config_requirements.md)
 - [Pattern Factory per SMS](./sms-action-factory-analysis.md)
-- [Struttura della Configurazione SMS](../../sms_config_structure.md)
-- [Requisiti di Configurazione Netfun](../../netfun_config_requirements.md)
-- [Pattern Factory per SMS](../../sms-action-factory-analysis.md)
 
 ---
 
 ## sms-driver-enum-translations-1
 
-*Consolidated from: `sms-driver-enum-translations.md`*
+*Consolidated from: `sms-driver-enum-translations-1.md`*
 
 
 ## Panoramica
@@ -2464,39 +2425,7 @@ php -l laravel/Modules/Notify/lang/de/sms_driver_enum.php
 - [Documentazione Traduzioni](../../Lang/docs/)
 - [Documentazione Traduzioni](../../Lang/project_docs/)
 - [Documentazione Traduzioni](../../Lang/docs/)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [SmsDriverEnum](../../../app/Enums/SmsDriverEnum.php)
-- [TransTrait](../../Xot/app/Traits/TransTrait.php)
-- [Configurazione SMS](../../../config/sms.php)
-- [Documentazione Traduzioni](../../../../Lang/docs)
 - [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
 
 ---
 
@@ -2827,339 +2756,12 @@ php -l laravel/Modules/Notify/lang/de/sms_driver_enum.php
 - [Documentazione Traduzioni](../../Lang/docs/)
 - [Documentazione Traduzioni](../../Lang/project_docs/)
 - [Documentazione Traduzioni](../../Lang/docs/)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-
----
-
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
 
 ---
 
 ## sms-driver-enum-translations-2
 
-*Consolidated from: `sms-driver-enum-translations.md`*
+*Consolidated from: `sms-driver-enum-translations-2.md`*
 
 title: "Traduzioni SmsDriverEnum - Modulo Notify"
 type: concept
@@ -3170,17 +2772,12 @@ qmd: "sms-driver-enum-translations-2 traduzioni smsdriverenum - modulo notify"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -3372,12 +2969,6 @@ php -l laravel/Modules/Notify/lang/de/sms_driver_enum.php
 - [Documentazione Traduzioni](../../Lang/docs/)
 - [Documentazione Traduzioni](../../Lang/project_docs/)
 - [Documentazione Traduzioni](../../Lang/docs/)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [SmsDriverEnum](../../../app/Enums/SmsDriverEnum.php)
-- [TransTrait](../../Xot/app/Traits/TransTrait.php)
-- [Configurazione SMS](../../../config/sms.php)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
 
 ---
 
@@ -3572,19 +3163,12 @@ php -l laravel/Modules/Notify/lang/de/sms_driver_enum.php
 - [Documentazione Traduzioni](../../Lang/docs/)
 - [Documentazione Traduzioni](../../Lang/project_docs/)
 - [Documentazione Traduzioni](../../Lang/docs/)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [SmsDriverEnum](../../../app/Enums/SmsDriverEnum.php)
-- [TransTrait](../../Xot/app/Traits/TransTrait.php)
-- [Configurazione SMS](../../../config/sms.php)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
 
 ---
 
 ## sms-driver-selection-analysis-1
 
-*Consolidated from: `sms-driver-selection-analysis.md`*
+*Consolidated from: `sms-driver-selection-analysis-1.md`*
 
 title: "Analisi: Spostamento Logica Selezione Driver in SmsData"
 type: concept
@@ -3595,17 +3179,12 @@ qmd: "sms-driver-selection-analysis-1 analisi: spostamento logica selezione driv
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -3867,7 +3446,7 @@ Questa soluzione:
 
 ## sms-driver-selection-specific-analysis-1
 
-*Consolidated from: `sms-driver-selection-specific-analysis.md`*
+*Consolidated from: `sms-driver-selection-specific-analysis-1.md`*
 
 title: "Analisi Specifica: Validazione e Selezione Driver in SmsData"
 type: concept
@@ -3878,17 +3457,12 @@ qmd: "sms-driver-selection-specific-analysis-1 analisi specifica: validazione e 
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -4108,7 +3682,7 @@ Questa soluzione:
 
 ## sms-factor-data-implementation-1
 
-*Consolidated from: `sms-factor-data-implementation.md`*
+*Consolidated from: `sms-factor-data-implementation-1.md`*
 
 title: "SmsFactorData Implementation Summary"
 type: concept
@@ -4119,17 +3693,12 @@ qmd: "sms-factor-data-implementation-1 smsfactordata implementation summary"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -4209,7 +3778,7 @@ public function __construct()
 
 **Files Created/Updated**:
 - `/Modules/Notify/project_docs/sms/drivers/smsfactor/data-class.md`: Comprehensive documentation for `SmsFactorData`
-- `/Modules/Notify/project_docs/sms-implementation.md`: Updated to include data class information
+- `/Modules/Notify/project_docs/sms-implementation-1.md`: Updated to include data class information
 
 **Documentation Includes**:
 - Complete class structure and properties
@@ -4312,7 +3881,7 @@ $this->assertEquals('Bearer test_token', $headers['Authorization']);
 - `/Modules/Notify/app/Datas/SMS/AgiletelecomData.php`: Similar implementation for Agiletelecom
 - `/Modules/Notify/app/Actions/SMS/SendSmsFactorSMSAction.php`: Refactored action class
 - `/Modules/Notify/config/sms.php`: SMS configuration file
-- `/Modules/Notify/project_docs/sms-implementation.md`: General SMS implementation documentation
+- `/Modules/Notify/project_docs/sms-implementation-1.md`: General SMS implementation documentation
 
 ## Conclusion
 
@@ -4706,7 +4275,7 @@ The implementation of `SmsFactorData` and the refactoring of `SendSmsFactorSMSAc
 
 ## sms-global-vs-specific-params-1
 
-*Consolidated from: `sms-global-vs-specific-params.md`*
+*Consolidated from: `sms-global-vs-specific-params-1.md`*
 
 title: "Parametri a Livello di Root vs Specifici per Provider nella Configurazione SMS"
 type: concept
@@ -4717,17 +4286,12 @@ qmd: "sms-global-vs-specific-params-1 parametri a livello di root vs specifici p
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -4907,9 +4471,8 @@ Prima di modificare la configurazione SMS, verificare che:
 
 - [Struttura Standardizzata della Configurazione SMS](./standardized-sms-config-structure.md)
 - [Configurazione Netfun](./netfun-config-requirements.md)
-- [Configurazione Netfun](../../netfun-config-requirements.md)
 - [Struttura Standardizzata della Configurazione SMS](./standardized-sms-config-structure.md)
-- [Configurazione Netfun](./netfun-config-requirements.md)
+- [Configurazione Netfun](./netfun-config-requirements-1.md)
 - [Laravel Configuration Best Practices](https://laravel.com/docs/configuration)
 
 ---
@@ -5095,8 +4658,6 @@ Prima di modificare la configurazione SMS, verificare che:
 
 - [Struttura Standardizzata della Configurazione SMS](./standardized_sms_config_structure.md)
 - [Configurazione Netfun](./netfun_config_requirements.md)
-- [Struttura Standardizzata della Configurazione SMS](../../standardized_sms_config_structure.md)
-- [Configurazione Netfun](../../netfun_config_requirements.md)
 - [Laravel Configuration Best Practices](https://laravel.com/docs/configuration)
 
 ---
@@ -5107,7 +4668,7 @@ Prima di modificare la configurazione SMS, verificare che:
 
 ## sms-implementation-1
 
-*Consolidated from: `sms-implementation.md`*
+*Consolidated from: `sms-implementation-1.md`*
 
 title: "Implementazione SMS in Laravel"
 type: concept
@@ -5118,17 +4679,12 @@ qmd: "sms-implementation-1 implementazione sms in laravel"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -5891,15 +5447,13 @@ SMSFACTOR_SENDER=YourApp
 
 ## sms-netfun-channel-1
 
-*Consolidated from: `sms-netfun-channel.md`*
-*Consolidated from: `sms-netfun-channel-integrazione-laravel.md`*
+*Consolidated from: `sms-netfun-channel-1.md`*
 
 
 ## Introduzione
 Questa guida spiega come integrare il provider Netfun come canale custom per l'invio di SMS in Laravel, seguendo le best practice del framework e sfruttando il pacchetto [`spatie/laravel-queueable-action`](https://github.com/spatie/laravel-queueable-action) per la gestione asincrona.
 
 > **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./NETFUN_CONFIG_REQUIREMENTS.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
-> **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](../../netfun_config_requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
 
 ---
 
@@ -5994,7 +5548,6 @@ $response = Http::post($endpoint, $payload);
 ### 1.2. Configurazione
 
 **IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./NETFUN_AUTHENTICATION_METHODS.md).
-**IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](../../netfun_authentication_methods.md).
 
 Configurazione con API key in `config/sms.php` (documentata ma non implementata nel modulo):
 
@@ -6429,7 +5982,7 @@ class NetfunSMSTest extends TestCase
 
 ## sms-netfun-channel-2
 
-*Consolidated from: `sms-netfun-channel.md`*
+*Consolidated from: `sms-netfun-channel-2.md`*
 
 title: "Integrazione Netfun SMS Channel in Laravel"
 type: concept
@@ -6440,17 +5993,12 @@ qmd: "sms-netfun-channel-2 integrazione netfun sms channel in laravel"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -6461,8 +6009,7 @@ related:
 Questa guida spiega come integrare il provider Netfun come canale custom per l'invio di SMS in Laravel, seguendo le best practice del framework e sfruttando il pacchetto [`spatie/laravel-queueable-action`](https://github.com/spatie/laravel-queueable-action) per la gestione asincrona.
 
 > **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./netfun-config-requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
-> **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](../../netfun-config-requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
-> **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./netfun-config-requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
+> **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./netfun-config-requirements-1.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
 
 ---
 
@@ -6557,8 +6104,7 @@ $response = Http::post($endpoint, $payload);
 ### 1.2. Configurazione
 
 **IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./netfun-authentication-methods.md).
-**IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](../../netfun-authentication-methods.md).
-**IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./netfun-authentication-methods.md).
+**IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./netfun-authentication-methods-1.md).
 
 Configurazione con API key in `config/sms.php` (documentata ma non implementata nel modulo):
 
@@ -7001,7 +6547,6 @@ class NetfunSMSTest extends TestCase
 Questa guida spiega come integrare il provider Netfun come canale custom per l'invio di SMS in Laravel, seguendo le best practice del framework e sfruttando il pacchetto [`spatie/laravel-queueable-action`](https://github.com/spatie/laravel-queueable-action) per la gestione asincrona.
 
 > **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./netfun_config_requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
-> **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](../../netfun_config_requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
 
 ---
 
@@ -7096,7 +6641,6 @@ $response = Http::post($endpoint, $payload);
 ### 1.2. Configurazione
 
 **IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./netfun_authentication_methods.md).
-**IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](../../netfun_authentication_methods.md).
 
 Configurazione con API key in `config/sms.php` (documentata ma non implementata nel modulo):
 
@@ -7534,7 +7078,7 @@ class NetfunSMSTest extends TestCase
 
 ## sms-provider-configuration-1
 
-*Consolidated from: `sms-provider-configuration.md`*
+*Consolidated from: `sms-provider-configuration-1.md`*
 
 
 This file is deprecated.
@@ -7547,7 +7091,7 @@ Use:
 
 ## sms-provider-configuration-2
 
-*Consolidated from: `sms-provider-configuration.md`*
+*Consolidated from: `sms-provider-configuration-2.md`*
 
 title: "Configurazione Corretta dei Provider SMS"
 type: concept
@@ -7558,17 +7102,12 @@ qmd: "sms-provider-configuration-2 configurazione corretta dei provider sms"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -7693,7 +7232,7 @@ TWILIO_AUTH_TOKEN=your_auth_token_here
 
 ## sms-provider-configuration-best-practices-1
 
-*Consolidated from: `sms-provider-configuration-best-practices.md`*
+*Consolidated from: `sms-provider-configuration-best-practices-1.md`*
 
 
 ## Struttura Corretta della Configurazione
@@ -7811,16 +7350,12 @@ $token = config('services.netfun.token');
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [SMS Best Practices](./SMS_BEST_PRACTICES.md)
 - [Netfun Authentication Methods](./NETFUN_AUTHENTICATION_METHODS.md)
-- [SMS Provider Architecture](../../sms_provider_architecture.md)
-- [SMS Implementation](../../sms_implementation.md)
-- [SMS Best Practices](../../sms_best_practices.md)
-- [Netfun Authentication Methods](../../netfun_authentication_methods.md)
 
 ---
 
 ## sms-provider-configuration-best-practices-2
 
-*Consolidated from: `sms-provider-configuration-best-practices.md`*
+*Consolidated from: `sms-provider-configuration-best-practices-2.md`*
 
 title: "Best Practices per la Configurazione dei Provider SMS"
 type: concept
@@ -7831,17 +7366,12 @@ qmd: "sms-provider-configuration-best-practices-2 best practices per la configur
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -7959,18 +7489,14 @@ $token = config('services.netfun.token');
 
 ## Documentazione Correlata
 
+- [SMS Provider Architecture](./sms-provider-architecture-1.md)
+- [SMS Implementation](./sms-implementation-1.md)
+- [SMS Best Practices](./sms-best-practices-1.md)
+- [Netfun Authentication Methods](./netfun-authentication-methods-1.md)
 - [SMS Provider Architecture](./sms-provider-architecture.md)
 - [SMS Implementation](./sms-implementation.md)
 - [SMS Best Practices](./sms-best-practices.md)
 - [Netfun Authentication Methods](./netfun-authentication-methods.md)
-- [SMS Provider Architecture](./sms-provider-architecture.md)
-- [SMS Implementation](./sms-implementation.md)
-- [SMS Best Practices](./sms-best-practices.md)
-- [Netfun Authentication Methods](./netfun-authentication-methods.md)
-- [SMS Provider Architecture](../../sms-provider-architecture.md)
-- [SMS Implementation](../../sms-implementation.md)
-- [SMS Best Practices](../../sms-best-practices.md)
-- [Netfun Authentication Methods](../../netfun-authentication-methods.md)
 ---
 
 ## sms-provider-configuration-best-practices
@@ -8094,10 +7620,6 @@ $token = config('services.netfun.token');
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [SMS Best Practices](./SMS_BEST_PRACTICES.md)
 - [Netfun Authentication Methods](./NETFUN_AUTHENTICATION_METHODS.md)
-- [SMS Provider Architecture](../../sms_provider_architecture.md)
-- [SMS Implementation](../../sms_implementation.md)
-- [SMS Best Practices](../../sms_best_practices.md)
-- [Netfun Authentication Methods](../../netfun_authentication_methods.md)
 
 ---
 
@@ -8334,7 +7856,7 @@ TWILIO_AUTH_TOKEN=your_auth_token_here
 
 ## sms-troubleshooting-1
 
-*Consolidated from: `sms-troubleshooting.md`*
+*Consolidated from: `sms-troubleshooting-1.md`*
 
 
 ## Errori Comuni e Soluzioni
@@ -8554,7 +8076,7 @@ Log::debug('SMS Debug', [
 
 ## sms-troubleshooting-2
 
-*Consolidated from: `sms-troubleshooting.md`*
+*Consolidated from: `sms-troubleshooting-2.md`*
 
 title: "Troubleshooting SMS"
 type: concept
@@ -8565,17 +8087,12 @@ qmd: "sms-troubleshooting-2 troubleshooting sms"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -9785,7 +9302,6 @@ $retryDelay = $config['drivers'][$driver]['retry_delay'] ?? $config['retry']['de
 ## Collegamenti
 
 - [Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
-- [Configurazione Netfun](../../netfun_config_requirements.md)
 - [Provider SMS Supportati](./notifications/SMS_PROVIDER_CONFIGURATION.md)
 
 ---
@@ -9984,12 +9500,6 @@ php -l laravel/Modules/Notify/lang/de/sms_driver_enum.php
 - [Documentazione Traduzioni](../../Lang/docs/)
 - [Documentazione Traduzioni](../../Lang/project_docs/)
 - [Documentazione Traduzioni](../../Lang/docs/)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [SmsDriverEnum](../../../app/Enums/SmsDriverEnum.php)
-- [TransTrait](../../Xot/app/Traits/TransTrait.php)
-- [Configurazione SMS](../../../config/sms.php)
-- [Documentazione Traduzioni](../../../../Lang/docs)
-- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
 
 ---
 
@@ -10597,8 +10107,6 @@ Prima di modificare la configurazione SMS, verificare che:
 
 - [Struttura Standardizzata della Configurazione SMS](./STANDARDIZED_SMS_CONFIG_STRUCTURE.md)
 - [Configurazione Netfun](./NETFUN_CONFIG_REQUIREMENTS.md)
-- [Struttura Standardizzata della Configurazione SMS](../../standardized_sms_config_structure.md)
-- [Configurazione Netfun](../../netfun_config_requirements.md)
 - [Laravel Configuration Best Practices](https://laravel.com/docs/configuration)
 
 ---
@@ -10992,7 +10500,6 @@ SMSFACTOR_SENDER=YourApp
 Questa guida spiega come integrare il provider Netfun come canale custom per l'invio di SMS in Laravel, seguendo le best practice del framework e sfruttando il pacchetto [`spatie/laravel-queueable-action`](https://github.com/spatie/laravel-queueable-action) per la gestione asincrona.
 
 > **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](./NETFUN_CONFIG_REQUIREMENTS.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
-> **IMPORTANTE**: Prima di procedere, assicurati che la [configurazione richiesta per Netfun](../../netfun_config_requirements.md) sia stata completata correttamente nel file `config/sms.php` del modulo Notify.
 
 ---
 
@@ -11087,7 +10594,6 @@ $response = Http::post($endpoint, $payload);
 ### 1.2. Configurazione
 
 **IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](./NETFUN_AUTHENTICATION_METHODS.md).
-**IMPORTANTE**: Il modulo Notify attualmente utilizza l'autenticazione username/password per Netfun, non l'autenticazione API key descritta qui. Per dettagli sui metodi di autenticazione supportati, consultare la [documentazione sui metodi di autenticazione Netfun](../../netfun_authentication_methods.md).
 
 Configurazione con API key in `config/sms.php` (documentata ma non implementata nel modulo):
 
@@ -11778,10 +11284,6 @@ $token = config('services.netfun.token');
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
 - [SMS Best Practices](./SMS_BEST_PRACTICES.md)
 - [Netfun Authentication Methods](./NETFUN_AUTHENTICATION_METHODS.md)
-- [SMS Provider Architecture](../../sms_provider_architecture.md)
-- [SMS Implementation](../../sms_implementation.md)
-- [SMS Best Practices](../../sms_best_practices.md)
-- [Netfun Authentication Methods](../../netfun_authentication_methods.md)
 
 ---
 
@@ -12179,11 +11681,6 @@ php -l laravel/Modules/Notify/lang/de/sms_driver_enum.php
 - [Configurazione SMS](../config/sms.php)
 - [Documentazione Traduzioni](../../Lang/docs/)- [Documentazione Traduzioni](../../Lang/project_docs/)
 - [Documentazione Traduzioni](../../Lang/docs/)
-- [SmsDriverEnum](../../../app/Enums/SmsDriverEnum.php)
-- [TransTrait](../../Xot/app/Traits/TransTrait.php)
-- [Configurazione SMS](../../../config/sms.php)
-- [Documentazione Traduzioni](../../../../Lang/docs)- [Documentazione Traduzioni](../../Lang/project_docs/)
-- [Documentazione Traduzioni](../../../../Lang/docs)
 
 ---
 

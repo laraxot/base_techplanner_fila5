@@ -79,8 +79,15 @@ npm run build
 
 ### 8. Assets pubblici
 
+<<<<<<< .merge_file_QDZGZu
 Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
 >>>>>>> .merge_file_r9MKXG
+=======
+Copia gli assets compilati nella directory pubblica:
+
+```bash
+```
+>>>>>>> .merge_file_TTiAFz
 
 ## Configurazione
 

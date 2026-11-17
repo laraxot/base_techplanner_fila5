@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "development commands"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Common Development Commands

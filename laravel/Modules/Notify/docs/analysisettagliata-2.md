@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_5RKlYP
+=======
+---
+title: "analysisettagliata 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "analysisettagliata 2"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_hMyPkO
 # Analisi Dettagliata del Modulo Notify - Parte 2: Modelli e Relazioni
 
 ## 2. Modelli e Relazioni

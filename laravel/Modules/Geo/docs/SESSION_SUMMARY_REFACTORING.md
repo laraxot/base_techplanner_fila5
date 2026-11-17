@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_i777ld
+=======
+<<<<<<< .merge_file_j7lTsW
+>>>>>>> .merge_file_T1wSea
 ---
 title: "SESSION SUMMARY REFACTORING"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_i777ld
+=======
+=======
+>>>>>>> .merge_file_fNwH0j
+>>>>>>> .merge_file_T1wSea
 # SESSION SUMMARY — Refactoring Module Inheritance
 
 ## Completato

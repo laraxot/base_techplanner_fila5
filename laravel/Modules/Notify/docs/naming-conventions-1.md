@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_H6HLr2
+=======
+---
+title: "naming conventions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "naming conventions 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_TdXuCZ
 # Convenzioni di Naming
 
 ## Regole Generali

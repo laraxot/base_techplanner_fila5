@@ -110,6 +110,18 @@ return [
             'helper_text' => 'Apre il pannello dei filtri',
             'description' => 'Apre il pannello dei filtri',
         ],
+<<<<<<< .merge_file_EyexeA
+=======
+        'type' => [
+            'label' => 'Tipo',
+        ],
+        'active' => [
+            'label' => 'Attivo',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
+>>>>>>> .merge_file_9qkD5p
     ],
     'actions' => [
         'import' => [

@@ -2,14 +2,21 @@
 
 declare(strict_types=1);
 
+<<<<<<< .merge_file_bVpDij
 use Modules\User\Tests\TestCase;
 use Modules\User\Models\BaseTenant;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+=======
+>>>>>>> .merge_file_zFCvMZ
 use Filament\Models\Contracts\HasAvatar;
 use Modules\User\Contracts\TenantContract;
 use Modules\User\Models\Tenant;
 use Modules\User\Models\User;
 use Spatie\MediaLibrary\HasMedia;
+<<<<<<< .merge_file_bVpDij
+=======
+use Modules\User\Tests\TestCase;
+>>>>>>> .merge_file_zFCvMZ
 
 uses(TestCase::class);
 

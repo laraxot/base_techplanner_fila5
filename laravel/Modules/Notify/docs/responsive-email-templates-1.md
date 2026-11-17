@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_gIgQ9u
+=======
+---
+title: "responsive email templates 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "responsive email templates 1"
+issues: []
+discussions: []
+---
+
+>>>>>>> .merge_file_vuPM2E
 # Responsive Email Templates - Guida Completa
 
 ## Introduzione
@@ -185,5 +199,10 @@ I template nella directory `mail-layouts` supportano variabili Blade:
 
 - [Guida ai Layout Email](./MAIL_LAYOUTS_GUIDE.md)
 - [Email Best Practices](./mail-templates/EMAIL_BEST_PRACTICES.md)
+<<<<<<< .merge_file_gIgQ9u
 - [HTML Email Compatibility](mail-templates/html_email_compatibility.md)
 - [MailPace Integration](mail-templates/mailpace_templates_integration.md)
+=======
+- [HTML Email Compatibility](./mail-templates/HTML_EMAIL_COMPATIBILITY.md)
+- [MailPace Integration](./mail-templates/MAILPACE_TEMPLATES_INTEGRATION.md)
+>>>>>>> .merge_file_vuPM2E

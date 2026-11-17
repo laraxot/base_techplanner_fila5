@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_cXV2ke
+=======
+<<<<<<< .merge_file_b0y3LU
+>>>>>>> .merge_file_LWoOCb
 ---
 title: "README"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_cXV2ke
+=======
+=======
+>>>>>>> .merge_file_LHrgfc
+>>>>>>> .merge_file_LWoOCb
 # bmad method
 
 ## Scopo (business logic)

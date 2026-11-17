@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_Chxucr
+=======
+<<<<<<< .merge_file_rTLJGw
+>>>>>>> .merge_file_eIQ3tX
 ---
 title: "filament"
 type: note
@@ -9,5 +13,10 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_Chxucr
+=======
+=======
+>>>>>>> .merge_file_n14zhs
+>>>>>>> .merge_file_eIQ3tX
 https://github.com/andrewdwallo/filament-companies
 

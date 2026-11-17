@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "custom charts complete guide"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Custom Question Types Implementation - Complete Guide
@@ -17,6 +16,15 @@ status: draft
 **Author**: Development Team
 
 ---
+
+title: "custom charts complete guide"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "custom charts complete guide"
+issues: []
+discussions: []
 ## Overview
 
 Implementazione completa delle custom question types per <nome progetto> Fila5, basata sul pattern di Fila4 ma con ottimizzazioni moderne.

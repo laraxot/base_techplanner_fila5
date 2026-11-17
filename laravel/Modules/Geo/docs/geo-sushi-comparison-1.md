@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_3myMYb
+=======
+<<<<<<< .merge_file_GsQGNz
+>>>>>>> .merge_file_GyO7Ps
 ---
 title: "geo sushi comparison 1"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_3myMYb
+=======
+=======
+>>>>>>> .merge_file_emy0Zf
+>>>>>>> .merge_file_GyO7Ps
 # Confronto: GeoJsonModel (readonly JSON) vs Laravel Sushi
 
 ## 1. Descrizione degli approcci
@@ -27,6 +36,10 @@ discussions: []
 
 ---
 
+<<<<<<< .merge_file_3myMYb
+=======
+<<<<<<< .merge_file_GsQGNz
+>>>>>>> .merge_file_GyO7Ps
 title: "geo sushi comparison 1"
 type: note
 tags: [documentation]
@@ -35,6 +48,11 @@ updated: 2026-09-26
 qmd: "geo sushi comparison 1"
 issues: []
 discussions: []
+<<<<<<< .merge_file_3myMYb
+=======
+=======
+>>>>>>> .merge_file_emy0Zf
+>>>>>>> .merge_file_GyO7Ps
 ## 2. Vantaggi e svantaggi
 
 ### GeoJsonModel

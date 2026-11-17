@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "tenant config"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Quick Reference - Tenant Config

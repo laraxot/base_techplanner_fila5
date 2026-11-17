@@ -1,3 +1,7 @@
+<<<<<<< .merge_file_A5XmJJ
+=======
+<<<<<<< .merge_file_EkDSbR
+>>>>>>> .merge_file_7SydxT
 ---
 title: "INFOLIST SCHEMA GUIDELINES"
 type: note
@@ -9,6 +13,11 @@ issues: []
 discussions: []
 ---
 
+<<<<<<< .merge_file_A5XmJJ
+=======
+=======
+>>>>>>> .merge_file_gz90pW
+>>>>>>> .merge_file_7SydxT
 # Linee Guida per l'Implementazione di getInfolistSchema
 
 ## Requisiti Fondamentali

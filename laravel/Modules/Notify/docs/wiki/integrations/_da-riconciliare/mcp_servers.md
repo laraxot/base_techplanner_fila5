@@ -8,7 +8,6 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
 # MCP Servers - Master Index
@@ -45,7 +44,7 @@ MCP (Model Context Protocol) servers provide AI assistants with persistent memor
 - **Type**: Laravel-specific
 - **Command**: `php artisan boost:mcp`
 - **Use**: Laravel 12, Filament, Livewire documentation and best practices
-- **Module Docs**: [Xot MCP Guide](../Modules/Xot/docs/MCP_SERVERS.md) | [Theme MCP Guide](../Themes/Sixteen/docs/mcp-servers.md)
+- **Module Docs**: [Xot MCP Guide](../Modules/Xot/docs/MCP_SERVERS.md) | [Theme MCP Guide](../Themes/Sixteen/docs/MCP_SERVERS.md)
 
 ### fetch
 - **Type**: Web content
@@ -141,8 +140,12 @@ MCP (Model Context Protocol) servers provide AI assistants with persistent memor
   - `qmd update` - Re-index collections
   - `qmd embed` - Generate vector embeddings
 - **MCP**: `qmd mcp` (stdio transport)
+<<<<<<< .merge_file_zHqlwK
 - **Docs**: [qmd-local-docs-search.md](../../../project/qmd-local-docs-search.md)
 - **Docs**: [qmd-local-docs-search.md](../../../project/qmd-local-docs-search.md)
+=======
+- **Docs**: [qmd-local-docs-search.md](./project/qmd-local-docs-search.md)
+>>>>>>> .merge_file_cyjniB
 
 ## Configuration
 
@@ -205,7 +208,7 @@ Each module has specific MCP usage guidelines. See module-specific docs:
 
 ## Theme-Specific Usage
 
-- **Sixteen**: [Theme MCP Servers](../Themes/Sixteen/docs/mcp-servers.md)
+- **Sixteen**: [Theme MCP Servers](../Themes/Sixteen/docs/MCP_SERVERS.md)
   - Frontoffice page testing
   - Visual parity verification
   - CSS/JS build process

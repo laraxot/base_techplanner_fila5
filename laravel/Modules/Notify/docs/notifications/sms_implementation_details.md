@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "sms implementation details"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Implementazione SMS : Guida Dettagliata
@@ -804,9 +803,14 @@ class ConsentLog extends Model
 
 - [MULTI_CHANNEL_NOTIFICATIONS.md](multi_channel_notifications.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./SMS_PROVIDER_CONFIGURATION.md)
+<<<<<<< .merge_file_vvxBNz
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](telegram_notifications_guide.md)
 - [MULTI_CHANNEL_NOTIFICATIONS.md](./multi_channel_notifications.md)
 - [SMS_PROVIDER_CONFIGURATION.md](./sms_provider_configuration.md)
 - [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./notifications_implementation_guide.md)
 - [TELEGRAM_NOTIFICATIONS_GUIDE.md](./telegram_notifications_guide.md)
+=======
+- [NOTIFICATIONS_IMPLEMENTATION_GUIDE.md](./NOTIFICATIONS_IMPLEMENTATION_GUIDE.md)
+- [TELEGRAM_NOTIFICATIONS_GUIDE.md](./TELEGRAM_NOTIFICATIONS_GUIDE.md)
+>>>>>>> .merge_file_SxRRZr

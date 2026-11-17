@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "xotbasemigration best practices"
 issues: []
 discussions: []
-status: draft
 ---
 
 # XotBaseMigration: Best Practices
@@ -126,5 +125,9 @@ Quando si utilizza `Schema::hasColumn()` direttamente, si bypassa tutta questa l
 ## Riferimenti
 
 - [Xot Module Documentation]([project-root]/laravel/Modules/Xot/docs/MIGRATIONS.md)
+<<<<<<< .merge_file_4xEwRo
 - [JSON Migration Best Practices](json_migration_fixes.md)
 - [JSON Migration Best Practices](json_migration_fixes.md)
+=======
+- [JSON Migration Best Practices]([project-root]/laravel/Modules/Notify/docs/mail-templates/JSON_MIGRATION_FIXES.md)
+>>>>>>> .merge_file_27CQEt

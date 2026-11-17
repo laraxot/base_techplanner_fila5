@@ -2,10 +2,19 @@
 title: "Epics BMAD — Tenant"
 type: epics
 status: active
+<<<<<<< .merge_file_KgwJYV
 module: "Tenant"
 tags: [docs, tenant, bmad]
 created: 2026-10-06
 updated: 2026-10-06
+<<<<<<< .merge_file_Snk4Cx
+=======
+=======
+updated: 2026-11-16
+module: Tenant
+qmd: "epics Tenant TrustHosts tenant admin perimetro DatabaseConfig encrypted pulizia sushi docs collisioni maiuscole"
+>>>>>>> .merge_file_WO6eG0
+>>>>>>> .merge_file_Mu1Qr1
 ---
 
 # Epics — Tenant
