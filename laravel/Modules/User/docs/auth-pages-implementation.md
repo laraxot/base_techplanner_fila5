@@ -1,31 +1,37 @@
+---
+title: "Implementazione Corretta delle Pagine Auth"
+type: concept
+tags: [auth, pages, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-pages-implementation implementazione corretta delle pagine auth"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione Corretta delle Pagine Auth
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](../../../../docs/readme.md)
+- [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Volt Logout Action](./volt_logout_action.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Documentazione centrale](../../../docs/README.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Volt Errors](./volt-errors-2.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Volt Logout Action](./volt-logout-action-2.md)
 
 ## Introduzione
 
-<<<<<<< HEAD
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
-=======
-Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
->>>>>>> 6ed19256f (.)
 
 ## Struttura delle Directory
 
@@ -478,31 +484,17 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 # Implementazione Corretta delle Pagine Auth
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [Documentazione centrale](../../../../docs/readme.md)
+- [Documentazione centrale](../../../../docs/README.md)
 - [Collegamenti documentazione](../../../../docs/collegamenti-documentazione.md)
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Errors](./volt_errors.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Volt Logout Action](./volt_logout_action.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Documentazione centrale](../../../docs/README.md)
-- [Collegamenti documentazione](../../../docs/collegamenti-documentazione.md)
-- [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Volt Errors](./VOLT_ERRORS.md)
-- [Volt Folio Logout](./VOLT_FOLIO_LOGOUT.md)
-- [Volt Logout Action](./VOLT_LOGOUT_ACTION.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Volt Errors](./volt-errors-2.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Volt Logout Action](./volt-logout-action-2.md)
 
 ## Introduzione
 
-<<<<<<< HEAD
 Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di <nome progetto>, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
-=======
-Questo documento descrive l'implementazione corretta delle pagine di autenticazione nel tema One di SaluteOra, utilizzando Laravel Folio, Livewire Volt e seguendo le convenzioni del progetto.
->>>>>>> 6ed19256f (.)
 
 ## Struttura delle Directory
 
@@ -951,8 +943,4 @@ Utilizzare sempre la funzione `__()` per le stringhe visualizzate all'utente:
 
 - [Documentazione ufficiale Volt](https://livewire.laravel.com/docs/volt)
 - [Documentazione Laravel Folio](https://laravel.com/docs/10.x/folio)
-<<<<<<< HEAD
 - [Componenti Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
-=======
-- [Componenti Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
->>>>>>> 6ed19256f (.)

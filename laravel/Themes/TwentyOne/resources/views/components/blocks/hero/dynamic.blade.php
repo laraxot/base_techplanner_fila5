@@ -32,7 +32,7 @@
             
             @if($trending_markets->isNotEmpty())
                 <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6 max-w-2xl mx-auto">
-                    <h3 class="text-lg font-semibold mb-4">🔥 Trending Right Now</h3>
+                    <h3 class="text-lg font-semibold mb-4">🔥 {{ __('pub_theme::blocks_hero.dynamic.trending.title') }}</h3>
                     <div class="flex flex-wrap justify-center gap-4">
                         @foreach($market_data as $market)
                             <a href="/markets/{{ $market['slug'] }}" class="bg-white/5 hover:bg-white/20 transition-colors px-4 py-2 rounded-full flex items-center gap-2">

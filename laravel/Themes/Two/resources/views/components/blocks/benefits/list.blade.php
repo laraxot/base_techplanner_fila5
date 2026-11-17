@@ -1,10 +1,10 @@
-@props(['benefits' => [], 'title' => 'Perché Sceglierci'])
+@props(['benefits' => [], 'title' => __('pub_theme::blocks.sections.benefits.title')])
 
 <section class="py-20 bg-[#f8fafc]">
     <div class="container mx-auto px-4">
         <div class="text-center max-w-3xl mx-auto mb-16">
             <h2 class="text-3xl font-bold mb-4 text-gray-900">{{ $title }}</h2>
-            <p class="text-lg text-gray-600">I vantaggi concreti di affidarsi alla nostra esperienza.</p>
+            <p class="text-lg text-gray-600">{{ __('pub_theme::blocks.sections.benefits.description') }}</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

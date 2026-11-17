@@ -1,3 +1,10 @@
+---
+title: "Design Comuni - Componenti UI per FAQ"
+qmd: "ui design comuni faq components md"
+type: note
+tags: [documentation]
+---
+
 # Design Comuni - Componenti UI per FAQ
 
 ## Panoramica
@@ -403,7 +410,7 @@ Screenshots: `Themes/Sixteen/docs/design-comuni/screenshots/`
 ### UI Module
 - [Blocks System](blocks-system.md)
 - [Design System](design-system.md)
-- [Components Guide](components-guide.md)
+- [Components Guide](archive/components-guide.md)
 
 ### Scripts
 - [Screenshot Script](../../../bashscripts/design-comuni/capture-faq-screenshots.js)

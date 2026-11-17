@@ -1,3 +1,15 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # HTML Structure Comparison Results
 
 > **Purpose**: Stores comparison output between Design Comuni reference pages and the Sixteen theme implementation.
@@ -7,7 +19,7 @@
 
 | Page | Parity Score | Date | Report |
 |------|-------------|------|--------|
-| [segnalazioni-elenco](segnalazioni-elenco/segnalazioni-elenco-comparison-summary.md) | 4.52% | 2026-04-08 | [Summary](segnalazioni-elenco/segnalazioni-elenco-comparison-summary.md) |
+| [ticket-list](ticket-list/ticket-list-comparison-summary.md) | 4.52% | 2026-04-08 | [Summary](ticket-list/ticket-list-comparison-summary.md) |
 
 ## How to Run a New Comparison
 
@@ -43,4 +55,12 @@ docs/html-structure-comparison/          ← This directory (theme-specific outp
 
 Target: **≥90% parity score** for all Design Comuni pages before production deployment.
 
-Current status: **4.52%** (segnalazioni-elenco) — significant work needed.
+Current status: **4.52%** (ticket-list) — significant work needed.
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

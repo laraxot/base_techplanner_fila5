@@ -1,18 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 /*
  * use Illuminate\Support\Facades\Route;
  * use Themes\One\Http\Controllers\PagesController;
  *
  * Route::middleware(['web'])
  * ->group(function () {
-<<<<<<< HEAD
  * Route::get('/it/about', [PagesController::class, 'about'])
-=======
- * Route::get('/it/pages/about', [PagesController::class, 'about'])
->>>>>>> 6ed19256f (.)
  * ->name('one.pages.about');
  * });
  */

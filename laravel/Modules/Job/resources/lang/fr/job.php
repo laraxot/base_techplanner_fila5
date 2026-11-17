@@ -22,7 +22,6 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'Modifier',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -68,29 +67,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'payload' => [
-            'label' => 'Contenu',
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'queue' => [
-            'label' => 'File d\'attente',
-        ],
-        'attempts' => [
-            'label' => 'Tentatives',
-        ],
-        'reserved_at' => [
-            'label' => 'Réservé le',
-        ],
-        'available_at' => [
-            'label' => 'Disponible le',
-        ],
-        'created_at' => [
-            'label' => 'Créé le',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -101,8 +77,4 @@ return [
     ],
     'label' => 'Tâche',
     'plural_label' => 'Tâches',
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

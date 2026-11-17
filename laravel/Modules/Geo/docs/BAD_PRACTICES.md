@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_NruGEs
+---
+title: "BAD PRACTICES"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "BAD PRACTICES"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_NKgK6K
 # Bad Practices – Geo Module
 
 - ❌ **Evita** `L.Icon.Default` o URL CDN per marker (legge `map-marker-custom-asset.md`)

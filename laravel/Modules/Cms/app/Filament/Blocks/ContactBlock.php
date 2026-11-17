@@ -10,7 +10,6 @@ use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 final class ContactBlock extends XotBaseBlock
 {
-    #[\Override]
     public static function getBlockSchema(): array
     {
         return [
@@ -31,10 +30,6 @@ final class ContactBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
-<<<<<<< HEAD
-        return \trans_string('cms::blocks.contact.label');
-=======
-        return \trans_string('cms::blocks.contact.label') ?? 'Contact';
->>>>>>> 6ed19256f (.)
+        return \trans_string('cms::blocks.contact.label') ?: 'Contact Block';
     }
 }

@@ -1,3 +1,10 @@
+---
+title: "LLM Wiki (module)"
+qmd: "ui wiki readme md"
+type: note
+tags: [documentation]
+---
+
 # LLM Wiki (module)
 
 Questa cartella contiene la wiki curata del modulo per uso LLM.

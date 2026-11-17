@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -84,41 +83,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'host' => [
-            'label' => 'Host',
-        ],
-        'port' => [
-            'label' => 'Porta',
-        ],
-        'username' => [
-            'label' => 'Nome utente',
-        ],
-        'password' => [
-            'label' => 'Password',
-        ],
-        'encryption' => [
-            'label' => 'Crittografia',
-        ],
-        'from_address' => [
-            'label' => 'Indirizzo mittente',
-        ],
-        'from_name' => [
-            'label' => 'Nome mittente',
-        ],
-        'status' => [
-            'label' => 'Stato',
-        ],
-        'last_tested_at' => [
-            'label' => 'Ultimo test il',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -127,6 +91,9 @@ return [
         ],
         'test_connection' => [
             'label' => 'Test connessione',
+        ],
+        'save' => [
+            'icon' => 'save',
         ],
     ],
 ];

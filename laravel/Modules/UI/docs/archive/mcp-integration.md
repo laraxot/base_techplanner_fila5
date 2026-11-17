@@ -1,3 +1,10 @@
+---
+title: "Integrazione dei Server MCP con il Modulo UI"
+qmd: "ui archive mcp integration md"
+type: note
+tags: [documentation]
+---
+
 # Integrazione dei Server MCP con il Modulo UI
 
 ## Panoramica

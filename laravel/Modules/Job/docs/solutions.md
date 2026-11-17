@@ -1,3 +1,14 @@
+---
+title: "solutions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "solutions"
+issues: []
+discussions: []
+---
+
 # Soluzioni Tecniche - Modulo Job
 
 ## Problemi Identificati e Soluzioni
@@ -349,15 +360,9 @@ class RetryTest extends TestCase {
 
    - Aggiornamento strategie retry
 ## Collegamenti tra versioni di solutions.md
-* [solutions.md](../../../Gdpr/docs/solutions.md)
-* [solutions.md](../../../Xot/docs/solutions.md)
-* [solutions.md](../../../Job/docs/solutions.md)
-<<<<<<< HEAD
 * [solutions.md](../../../gdpr/docs/solutions.md)
 * [solutions.md](../../../xot/docs/solutions.md)
 * [solutions.md](../../../job/docs/solutions.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Versione Incoming
 
@@ -365,12 +370,16 @@ class RetryTest extends TestCase {
 
 ---
 
+title: "solutions"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "solutions"
+issues: []
+discussions: []
 ### Versione Incoming
 
    - Aggiornamento strategie retry
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

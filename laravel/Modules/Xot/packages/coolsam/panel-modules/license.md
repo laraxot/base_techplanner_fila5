@@ -1,3 +1,14 @@
+---
+title: "license"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "license"
+issues: []
+discussions: []
+---
+
 The MIT License (MIT)
 
 Copyright (c) coolsam <smaosa@savannabits.com>
@@ -39,8 +50,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-<<<<<<< HEAD
 THE SOFTWARE.
-=======
-THE SOFTWARE.
->>>>>>> 6ed19256f (.)

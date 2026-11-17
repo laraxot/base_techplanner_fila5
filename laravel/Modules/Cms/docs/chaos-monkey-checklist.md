@@ -1,3 +1,14 @@
+---
+title: "chaos monkey checklist"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chaos monkey checklist"
+issues: []
+discussions: []
+---
+
 # Chaos monkey checklist (cms)
 
 ## Scopo
@@ -88,7 +99,7 @@ Questa checklist è basata sul runtime attuale (fail-fast su view mancanti, JSON
   - 404 o Folio non matcha il file atteso
 
 - **Diagnosi rapida**
-  - Verifica `App\Providers\FolioServiceProvider` e path `laravel/Themes/{theme}/resources/views/pages`
+  - Verifica `Modules/Cms/app/Providers/FolioVoltServiceProvider.php` e path `laravel/Themes/{theme}/resources/views/pages`
 
   - Verifica che la directory esista
 

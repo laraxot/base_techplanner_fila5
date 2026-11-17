@@ -1,3 +1,15 @@
+---
+title: "design comuni html parity plan"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "design comuni html parity plan"
+issues: []
+discussions: []
+status: draft
+---
+
 # Piano di Replicazione Design Comuni - HTML Parity
 
 ## Obiettivo
@@ -101,7 +113,7 @@ Dopo aver raggiunto HTML parity, si procederà con:
 27-28. assistenza-01-dati, assistenza-02-conferma
 
 ### Segnalazione Disservizio (7)
-29-35. segnalazione-dettaglio → segnalazioni-elenco
+29-35. segnalazione-dettaglio → ticket-list
 
 ## Workflow di Implementazione
 

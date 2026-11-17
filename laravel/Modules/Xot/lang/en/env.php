@@ -8,39 +8,33 @@ return [
         'plural' => 'Ambiente',
         'group' => [
             'name' => 'Sistema',
-            'description' => 'Gestione delle variabili d\'ambiente e configurazione del sistema',
+            'description' => 'Environment variable and system configuration management',
         ],
-        'label' => 'env',
+        'label' => 'Environment',
         'sort' => '12',
         'icon' => 'xot-env',
     ],
     'fields' => [
         'key' => [
             'label' => 'Chiave',
-            'placeholder' => 'Inserisci la chiave (es. APP_NAME)',
-            'help' => 'Nome della variabile d\'ambiente in maiuscolo',
-<<<<<<< HEAD
+            'placeholder' => 'Enter the key (e.g. APP_NAME)',
+            'help' => 'Environment variable name in uppercase',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'value' => [
-            'label' => 'Valore',
-            'placeholder' => 'Inserisci il valore',
-            'help' => 'Valore della variabile d\'ambiente',
-<<<<<<< HEAD
+            'label' => 'Value',
+            'placeholder' => 'Enter the value',
+            'help' => 'Environment variable value',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
-            'placeholder' => 'Seleziona il tipo di variabile',
-            'help' => 'Tipo di dato della variabile',
+            'placeholder' => 'Select the variable type',
+            'help' => 'Variable data type',
             'options' => [
                 'string' => 'Testo',
                 'integer' => 'Numero intero',
@@ -49,56 +43,44 @@ return [
                 'array' => 'Array',
                 'null' => 'Nullo',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'environment' => [
             'label' => 'Ambiente',
-            'placeholder' => 'Seleziona l\'ambiente di applicazione',
-            'help' => 'Ambiente in cui la variabile è attiva',
+            'placeholder' => 'Select the target environment',
+            'help' => 'Environment in which the variable is active',
             'options' => [
                 'local' => 'Sviluppo locale',
                 'testing' => 'Test',
                 'staging' => 'Pre-produzione',
                 'production' => 'Produzione',
-                'all' => 'Tutti gli ambienti',
+                'all' => 'All environments',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_sensitive' => [
             'label' => 'Dato Sensibile',
-            'help' => 'Indica se il valore contiene dati sensibili da mascherare',
-<<<<<<< HEAD
+            'help' => 'Whether the value contains sensitive data to mask',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
-            'label' => 'Descrizione',
-            'placeholder' => 'Inserisci una descrizione',
-            'help' => 'Descrizione dettagliata dello scopo della variabile',
-<<<<<<< HEAD
+            'label' => 'Description',
+            'placeholder' => 'Enter a description',
+            'help' => 'Detailed description of the variable\'s purpose',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'group' => [
             'label' => 'Gruppo',
-            'placeholder' => 'Seleziona il gruppo',
-            'help' => 'Gruppo funzionale della variabile',
+            'placeholder' => 'Select the group',
+            'help' => 'Functional group of the variable',
             'options' => [
                 'app' => 'Applicazione',
                 'database' => 'Database',
@@ -108,88 +90,78 @@ return [
                 'services' => 'Servizi',
                 'other' => 'Altro',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'telegram_bot_token' => [
-            'description' => 'telegram_bot_token',
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-=======
-        ],
-        'telegram_bot_token' => [
-            'description' => 'telegram_bot_token',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'create' => [
-            'label' => 'Nuova Variabile',
-            'success' => 'Variabile d\'ambiente creata con successo',
-            'error' => 'Errore durante la creazione della variabile',
+            'label' => 'New Variable',
+            'success' => 'Environment variable created successfully',
+            'error' => 'Error while creating the variable',
         ],
         'edit' => [
-            'label' => 'Modifica',
-            'success' => 'Variabile d\'ambiente aggiornata con successo',
-            'error' => 'Errore durante l\'aggiornamento della variabile',
+            'label' => 'Edit',
+            'success' => 'Environment variable updated successfully',
+            'error' => 'Error while updating the variable',
         ],
         'delete' => [
-            'label' => 'Elimina',
-            'success' => 'Variabile d\'ambiente eliminata con successo',
-            'error' => 'Errore durante l\'eliminazione della variabile',
+            'label' => 'Delete',
+            'success' => 'Environment variable deleted successfully',
+            'error' => 'Error while deleting the variable',
         ],
         'backup' => [
             'label' => 'Backup',
-            'success' => 'Backup del file .env creato con successo',
-            'error' => 'Errore durante la creazione del backup',
+            'success' => '.env file backup created successfully',
+            'error' => 'Error while creating the backup',
         ],
         'restore' => [
             'label' => 'Ripristina',
-            'success' => 'File .env ripristinato con successo',
-            'error' => 'Errore durante il ripristino del file',
+            'success' => '.env file restored successfully',
+            'error' => 'Error while restoring the file',
         ],
         'encrypt' => [
             'label' => 'Cripta',
-            'success' => 'Valore criptato con successo',
-            'error' => 'Errore durante la criptazione',
+            'success' => 'Value encrypted successfully',
+            'error' => 'Error while encrypting',
         ],
     ],
     'messages' => [
         'validation' => [
             'key' => [
-                'required' => 'La chiave è obbligatoria',
-                'unique' => 'Questa chiave è già in uso',
-                'regex' => 'La chiave può contenere solo lettere maiuscole, numeri e underscore',
-                'reserved' => 'Questa chiave è riservata dal sistema',
+                'required' => 'The key is required',
+                'unique' => 'This key is already in use',
+                'regex' => 'The key may only contain uppercase letters, numbers and underscores',
+                'reserved' => 'This key is reserved by the system',
             ],
             'value' => [
                 'required' => 'The value is required',
-                'type' => 'Il valore deve essere del tipo :type',
+                'type' => 'The value must be of type :type',
             ],
             'environment' => [
                 'required' => 'The environment is required',
-                'exists' => 'L\'ambiente selezionato non è valido',
+                'exists' => 'The selected environment is not valid',
             ],
         ],
         'warnings' => [
             'production_edit' => 'Attenzione: stai modificando variabili d\'ambiente in produzione',
-            'backup_recommended' => 'Si consiglia di effettuare un backup prima di procedere',
-            'sensitive_data' => 'Attenzione: questo valore contiene dati sensibili',
-            'restart_required' => 'Potrebbe essere necessario riavviare l\'applicazione',
+            'backup_recommended' => 'We recommend making a backup before proceeding',
+            'sensitive_data' => 'Warning: this value contains sensitive data',
+            'restart_required' => 'You may need to restart the application',
         ],
         'info' => [
             'env_loaded' => 'File .env caricato correttamente',
             'backup_created' => 'Backup creato in :path',
-            'changes_saved' => 'Modifiche salvate nel file .env',
+            'changes_saved' => 'Changes saved to the .env file',
         ],
     ],
-    'title' => 'env',
-<<<<<<< HEAD
+    'title' => 'Environment',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

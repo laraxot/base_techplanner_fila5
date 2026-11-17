@@ -4,14 +4,13 @@ declare(strict_types=1);
 
 return [
     'location' => [
-        'title' => 'Selezione Località',
-        'submit' => 'Seleziona',
+        'title' => 'Location Selection',
+        'submit' => 'Select',
         'messages' => [
-            'success' => 'Località selezionata con successo',
-            'error' => 'Errore durante la selezione della località',
+            'success' => 'Location selected successfully',
+            'error' => 'Error while selecting the location',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -21,10 +20,12 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
+    'base_map' => [
+        'aria_label' => 'Interactive map',
+        'fullscreen' => 'Fullscreen',
+        'fullscreen_exit' => 'Exit fullscreen',
+        'locate' => 'Center on my location',
+        'layer_satellite' => 'Satellite',
+        'markers_shown' => 'Showing :count markers',
     ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

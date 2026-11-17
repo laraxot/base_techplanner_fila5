@@ -1,3 +1,17 @@
+---
+title: "Bug: Infinite Loop in make:filament-user Command"
+type: concept
+tags: [make, filament, user, infinite]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "make-filament-user-infinite-loop bug: infinite loop in make:filament-user command"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./testing.md"
+status: draft
+---
+
 # Bug: Infinite Loop in make:filament-user Command
 
 ## Problema Identificato
@@ -133,11 +147,7 @@ public function initializeCurrentTeam(): void
     }
 
     $personalTeam = $this->personalTeam();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     if ($personalTeam !== null) {
         $this->switchTeam($personalTeam);
     } elseif ($this->allTeams()->isNotEmpty()) {
@@ -191,11 +201,7 @@ class UserObserver
 public function boot(): void
 {
     parent::boot();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Register observer only if personal team creation is enabled
     if (config('user.create_personal_team', false)) {
         User::observe(UserObserver::class);
@@ -228,20 +234,12 @@ Aggiungere al file di configurazione `config/user.php`:
 ```php
 return [
     // ...
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Automatically create a personal team for new users
      */
     'create_personal_team' => env('USER_CREATE_PERSONAL_TEAM', false),
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Automatically set current team after user creation
      */
@@ -314,14 +312,6 @@ Dovrebbe completare senza errori o loop infiniti.
 
 ## Data Analisi
 
-<<<<<<< HEAD
-**Data**: 2025-01-14  
 **Analista**: Cascade AI  
 **Priorità**: ALTA  
 **Stato**: Identificato - In attesa di implementazione
-=======
-**Data**: 2025-01-14
-**Analista**: Cascade AI
-**Priorità**: ALTA
-**Stato**: Identificato - In attesa di implementazione
->>>>>>> 6ed19256f (.)

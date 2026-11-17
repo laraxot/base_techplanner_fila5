@@ -1,14 +1,16 @@
 # PHPStan Compliance - Blog Module
 
+> Wave corrente: [phpstan-wave-zero.story.md](./phpstan-wave-zero.story.md) — baseline 224 → **0** (generics/iterableValue + Filament deprecations).
+
 ## Status: ✅ FULLY COMPLIANT
 
-**Analysis Date:** October 10, 2025  
-**PHPStan Level:** 10 (Maximum)  
-**Files Analyzed:** 259  
-**Errors Found:** 0 ✅  
-**Errori Iniziali:** 13  
-**Errori Corretti:** 13  
-**Tempo di Correzione:** ~30 minuti  
+**Analysis Date:** October 10, 2025
+**PHPStan Level:** 10 (Maximum)
+**Files Analyzed:** 259
+**Errors Found:** 0 ✅
+**Errori Iniziali:** 13
+**Errori Corretti:** 13
+**Tempo di Correzione:** ~30 minuti
 
 ## Compliance Summary
 
@@ -47,7 +49,7 @@ All Filament components in this module have been verified to be compatible with 
 
 ```bash
 # Verifica PHPStan
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+cd /var/www/_bases/base_fixcity_fila5/laravel
 ./vendor/bin/phpstan analyse Modules/Blog
 
 # Output atteso:

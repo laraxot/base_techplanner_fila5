@@ -1,3 +1,9 @@
+---
+title: "Employee - IMPLEMENTATION_PLAN"
+module: Employee
+bmad: true
+status: active
+---
 # Piano di Implementazione - Modulo Employee
 
 ## Panoramica
@@ -73,7 +79,7 @@ class EmployeeResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-users';
     protected static ?string $navigationGroup = 'Gestione Dipendenti';
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'matricola' => Forms\Components\TextInput::make('matricola')
@@ -226,7 +232,7 @@ class DepartmentResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-building-office';
     protected static ?string $navigationGroup = 'Organizzazione';
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'nome' => Forms\Components\TextInput::make('nome')
@@ -254,7 +260,7 @@ class AttendanceResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-clock';
     protected static ?string $navigationGroup = 'Presenze';
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'employee_id' => Forms\Components\Select::make('employee_id')
@@ -386,7 +392,7 @@ class DocumentResource extends XotBaseResource
     protected static ?string $navigationIcon = 'heroicon-o-document';
     protected static ?string $navigationGroup = 'Documenti';
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'employee_id' => Forms\Components\Select::make('employee_id')

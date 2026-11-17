@@ -1,15 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
+use Modules\User\Models\TeamPermission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
-    /**
-     * Nome della tabella gestita dalla migrazione.
-     */
-    protected string $table_name = 'team_permissions';
+return new class extends XotBaseMigration
+{
+    protected ?string $model_class = TeamPermission::class;
 
     /**
      * Esegue la migrazione.
@@ -36,14 +34,7 @@ return new class extends XotBaseMigration {
                 $table->string('name')->nullable();
             }
 
-<<<<<<< HEAD
             $this->updateTimestamps(table: $table, hasSoftDeletes: true);
-=======
-            $this->updateTimestamps(
-                table: $table,
-                hasSoftDeletes: true,
-            );
->>>>>>> 6ed19256f (.)
         });
     }
 };

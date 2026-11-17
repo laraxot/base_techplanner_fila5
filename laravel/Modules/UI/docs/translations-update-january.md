@@ -1,3 +1,10 @@
+---
+title: "Aggiornamento Traduzioni Modulo UI - Gennaio 2026"
+qmd: "ui translations update january md"
+type: note
+tags: [documentation]
+---
+
 # Aggiornamento Traduzioni Modulo UI - Gennaio 2026
 
 ## Data Intervento
@@ -140,9 +147,6 @@ Tutte le traduzioni seguono la struttura espansa:
 
 ## Collegamenti
 
-- [Laraxot Translation Philosophy](../../Xot/docs/translation-philosophy.md)
-- [Translation Standards](../../Xot/docs/translation-standards.md)
-- [UI Module Documentation](../README.md)
 - [Laraxot Translation Philosophy](../../xot/docs/translation-philosophy.md)
 - [Translation Standards](../../xot/docs/translation-standards.md)
 - [UI Module Documentation](../readme.md)

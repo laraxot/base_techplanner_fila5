@@ -1,3 +1,29 @@
+---
+title: "Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe"
+type: concept
+tags: [parse, error, orphan, methods]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "parse-error-orphan-methods- bug fix: parseerror - metodi orfani fuori dalla classe"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./make-filament-user-crash-loop.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods-documentation-themes.md"
+  - "./parse-error-orphan-methods-stato-rinominato.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-orphan-methods.md"
+status: draft
+---
+
 # Bug Fix: ParseError - Metodi Orfani Fuori dalla Classe
 
 ## Data
@@ -128,12 +154,8 @@ protected function orphanMethod(): array
 
 ## Collegamenti
 - [Widget Auth Best Practices](../filament/widgets/registration-widget.md)
-- [Git Conflicts Resolution](../git-conflicts-resolution-2025-01-27.md)
-<<<<<<< HEAD
+- [Git Conflicts Resolution](../git-conflicts-resolution-.md.md)
 - [Bug Fix Guidelines](../../../../../docs/bug-fixing-guidelines.md)
-=======
-- [Bug Fix Guidelines](../../../../docs/bug-fixing-guidelines.md)
->>>>>>> 6ed19256f (.)
 
 ## Status
 ✅ **RISOLTO** - RegisterWidget funziona correttamente con tutte le migliorie di qualità implementate
@@ -145,8 +167,4 @@ Questo bug fix ha permesso di completare il miglioramento della qualità del cod
 - Logging di sicurezza
 - Transazioni database
 - Notifiche utente
-<<<<<<< HEAD
 - Verifica email
-=======
-- Verifica email
->>>>>>> 6ed19256f (.)

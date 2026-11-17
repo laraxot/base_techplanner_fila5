@@ -1,3 +1,10 @@
+---
+title: "custom_theme"
+qmd: "ui integration custom theme md"
+type: note
+tags: [documentation]
+---
+
 # custom_theme
 
 <!-- Contenuto migrato da _docs/custom_theme.txt -->

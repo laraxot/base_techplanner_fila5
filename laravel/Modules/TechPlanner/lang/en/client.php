@@ -21,6 +21,7 @@ return [
         ],
         'populateCoordinates' => [
             'label' => 'Update Coordinates',
+            'modal' => ['heading' => 'Update Coordinates', 'description' => 'Update coordinates for all clients from their addresses?', 'submit_label' => 'Yes, update all'],
         ],
         'updateCoordinates' => [
             'label' => 'Update Coordinates',
@@ -65,6 +66,21 @@ return [
         ],
         'distance_km' => [
             'label' => 'km',
+        ],
+        'last_rx_control_date' => [
+            'label' => 'Last X-ray check',
+        ],
+        'last_intraoral_control_date' => [
+            'label' => 'Last intraoral check',
+        ],
+        'last_electromedical_control_date' => [
+            'label' => 'Last electromedical check',
+        ],
+        'last_appointment' => [
+            'label' => 'Last appointment',
+        ],
+        'last_health_authorization_date' => [
+            'label' => 'Last health authorization',
         ],
         'is_active' => [
             'label' => 'Active',
@@ -283,7 +299,19 @@ return [
             'label' => 'Activity',
         ],
     ],
+    'filters' => [
+        'has_controls' => ['label' => 'Has recorded controls'],
+        'controls_expiring' => ['label' => 'Controls expiring (30 days)'],
+        'last_appointment_type' => ['label' => 'Last appointment by type', 'none' => 'No appointment'],
+        'never_controlled_type' => ['label' => 'Never controlled by type'],
+        'has_rx_control' => ['label' => 'RX control'],
+        'has_electromedical_control' => ['label' => 'Electromedical control'],
+        'has_health_authorization' => ['label' => 'Health authorization'],
+    ],
     'messages' => [
+        'coordinates_batch_summary' => 'Processed :processed clients. Successfully updated :success coordinates.',
+        'coordinates_batch_warning' => 'Coordinate update completed with errors',
+        'coordinates_batch_success' => 'Coordinates updated successfully',
         'coordinates_updated' => 'Coordinates updated successfully',
         'coordinates_update_failed' => 'Coordinate update failed',
         'import_success' => 'Import completed successfully',
@@ -293,10 +321,12 @@ return [
         'label' => 'Client',
         'plural' => 'Clients',
     ],
-    'sections' => [
-        'contacts' => [
-            'heading' => 'contacts',
-            'label' => 'contacts',
+    'sections' => [        'contacts' => [
+            'heading' => 'Contacts',
+            'label' => 'Contacts',
+        ],
+        'address_info' => [
+            'label' => 'Address',
         ],
         'address' => [
             'heading' => 'address',

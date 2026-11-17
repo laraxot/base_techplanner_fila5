@@ -4,16 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Tests\Unit\Models;
 
-<<<<<<< HEAD
-uses(TestCase::class);
-
 use Illuminate\Database\Eloquent\Model;
 use Modules\Tenant\Models\BaseModel;
-use Modules\Tenant\Tests\TestCase;
-=======
-use Illuminate\Database\Eloquent\Model;
-use Modules\Tenant\Models\BaseModel;
->>>>>>> 6ed19256f (.)
 
 /**
  * @property BaseModel $baseModel
@@ -26,7 +18,7 @@ beforeEach(function () {
 });
 
 test('base model extends eloquent model', function () {
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    expect(is_a($this->baseModel, Model::class))->toBeTrue();
 });
 
 test('base model has correct table name', function () {
@@ -34,12 +26,12 @@ test('base model has correct table name', function () {
 });
 
 test('base model can be instantiated', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
+    expect(is_a($this->baseModel, BaseModel::class))->toBeTrue();
 });
 
 test('base model has proper inheritance chain', function () {
-    expect($this->baseModel)->toBeInstanceOf(BaseModel::class);
-    expect($this->baseModel)->toBeInstanceOf(Model::class);
+    expect(is_a($this->baseModel, BaseModel::class))->toBeTrue();
+    expect(is_a($this->baseModel, Model::class))->toBeTrue();
 });
 
 test('base model has timestamps enabled', function () {

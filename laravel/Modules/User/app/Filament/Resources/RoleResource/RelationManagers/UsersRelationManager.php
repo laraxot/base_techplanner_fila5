@@ -49,7 +49,6 @@ final class UsersRelationManager extends XotBaseRelationManager
     public function getTableColumns(): array
     {
         return [
-<<<<<<< HEAD
             'name' => TextColumn::make('name')
                 ->searchable()
                 ->sortable()
@@ -63,21 +62,6 @@ final class UsersRelationManager extends XotBaseRelationManager
                 ->sortable()
                 ->toggleable(),
             'updated_at' => TextColumn::make('updated_at')
-=======
-            TextColumn::make('name')
-                ->searchable()
-                ->sortable()
-                ->copyable(),
-            TextColumn::make('email')
-                ->searchable()
-                ->sortable()
-                ->copyable(),
-            TextColumn::make('created_at')
-                ->dateTime()
-                ->sortable()
-                ->toggleable(),
-            TextColumn::make('updated_at')
->>>>>>> 6ed19256f (.)
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
@@ -95,16 +79,16 @@ final class UsersRelationManager extends XotBaseRelationManager
         return [
             Filter::make('active')->query(fn (Builder $query): Builder => $query->where('is_active', true))->toggle(),
             Filter::make('created_at')
-                ->schema([
+                ->form([
                     DatePicker::make('created_from'),
                     DatePicker::make('created_until'),
                 ])
                 ->query(function (Builder $query, array $data): Builder {
-                    if (isset($data['created_from']) && is_string($data['created_from']) && '' !== $data['created_from']) {
+                    if (isset($data['created_from']) && is_string($data['created_from']) && $data['created_from'] !== '') {
                         $query->whereDate('created_at', '>=', $data['created_from']);
                     }
 
-                    if (isset($data['created_until']) && is_string($data['created_until']) && '' !== $data['created_until']) {
+                    if (isset($data['created_until']) && is_string($data['created_until']) && $data['created_until'] !== '') {
                         $query->whereDate('created_at', '<=', $data['created_until']);
                     }
 

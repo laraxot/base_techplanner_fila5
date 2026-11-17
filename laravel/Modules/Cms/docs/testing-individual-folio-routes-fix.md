@@ -1,6 +1,16 @@
+---
+title: "testing individual folio routes fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing individual folio routes fix"
+issues: []
+discussions: []
+---
+
 # Fix: IndividualFolioRoutesTest - Path Corrections
 
-**Data**: 2025-01-22
 **Problema**: Test fallisce con path errati per file JSON
 **Principio**: Il sito funziona, quindi il test deve essere corretto per riflettere il comportamento reale
 
@@ -45,7 +55,6 @@ if (! file_exists($homepageJsonPath)) {
 - Il path reale è `config/local/laravelpizza/`
 - In test environment, il file potrebbe non esistere, quindi skip è accettabile
 
-<<<<<<< HEAD
 ### Folio routes: 404 non è sempre un bug
 
 Per alcune pagine Folio il routing è guidato da configurazione/contenuti/tema: in queste installazioni una rotta può essere assente e rispondere `404` senza che il sito sia “rotto”.
@@ -56,8 +65,6 @@ Nei test sotto `Modules/Cms/tests/Feature/Frontoffice/FolioRoutes/*` quindi adot
 - **Skip su `5xx`** perché indica errore server/ambiente non risolvibile dai test.
 - **Asserzioni sul markup solo se `200`**.
 
-=======
->>>>>>> 6ed19256f (.)
 ## 🔗 Collegamenti
 
 - [Testing Rules](testing-rules.md)
@@ -66,9 +73,13 @@ Nei test sotto `Modules/Cms/tests/Feature/Frontoffice/FolioRoutes/*` quindi adot
 
 ---
 
+title: "testing individual folio routes fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing individual folio routes fix"
+issues: []
+discussions: []
 **Status**: In Progress
-<<<<<<< HEAD
 **Prossimo step**: Correggere tutti i test che usano `<nome progetto>` placeholder
-=======
-**Prossimo step**: Correggere tutti i test che usano `<nome progetto>` placeholder
->>>>>>> 6ed19256f (.)

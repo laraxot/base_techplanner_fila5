@@ -8,14 +8,15 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\KeyValue;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class StoredEventForm extends XotBaseResourceForm
 {
     /**
-     * @return array<string, \Filament\Schemas\Components\Component>
+     * @return array<string, Component>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'event_class' => TextInput::make('event_class')->required()->maxLength(255),

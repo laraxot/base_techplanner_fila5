@@ -2,6 +2,15 @@
 description:
 globs:
 alwaysApply: false
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
 # Regola Cursor: Migrazioni XotBaseMigration
 
@@ -33,3 +42,4 @@ if (! $this->hasColumn('state')) {
 - [Linee guida Actions](mdc:actions.mdc)
 - [Linee guida Activitylog](mdc:activitylog.mdc)
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
+

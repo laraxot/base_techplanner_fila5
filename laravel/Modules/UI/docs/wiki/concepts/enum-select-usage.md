@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki concepts enum select usage md"
 title: EnumSelect Usage
 ---
 

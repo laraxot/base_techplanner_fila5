@@ -7,19 +7,23 @@ namespace Modules\Geo\Actions\GoogleMaps;
 use GuzzleHttp\Promise\PromiseInterface;
 use Illuminate\Http\Client\Response;
 use Illuminate\Support\Facades\Http;
-use Modules\Geo\Datas\AddressData;
+use Modules\Geo\Datas\Geocoding\AddressData;
 use Modules\Geo\Datas\GoogleMaps\GoogleMapAddressComponentData;
 use Modules\Geo\Datas\GoogleMaps\GoogleMapResponseData;
 use Modules\Geo\Datas\GoogleMaps\GoogleMapResultData;
 use Modules\Geo\Exceptions\GoogleMaps\GoogleMapsApiException;
+use Modules\Geo\Infrastructure\Config\GeoApiEndpoints;
 use Spatie\LaravelData\DataCollection;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Gestisce le richieste e l'elaborazione delle risposte dell'API di geocodifica di Google Maps.
  */
 final class GetAddressFromGoogleMapsAction
 {
-    private const BASE_URL = 'https://maps.googleapis.com/maps/api/geocode/json';
+    use QueueableAction;
+
+    private const string BASE_URL = GeoApiEndpoints::GOOGLE_GEOCODING;
 
     /**
      * @throws GoogleMapsApiException Se la richiesta fallisce o i dati non sono validi
@@ -60,7 +64,7 @@ final class GetAddressFromGoogleMapsAction
 
         /** @var Response $response */
         if (! $response->successful()) {
-            throw GoogleMapsApiException::requestFailed((string) $response->status());
+            throw GoogleMapsApiException::requestFailed('Richiesta a Google Maps fallita: HTTP '.$response->status());
         }
 
         return $response;
@@ -71,7 +75,7 @@ final class GetAddressFromGoogleMapsAction
         /** @var GoogleMapResponseData $responseData */
         $responseData = GoogleMapResponseData::from($response->json());
 
-        if (0 === $responseData->results->count()) {
+        if ($responseData->results->count() === 0) {
             throw GoogleMapsApiException::noResultsFound();
         }
 
@@ -83,13 +87,9 @@ final class GetAddressFromGoogleMapsAction
      */
     private function getFirstResult(GoogleMapResponseData $responseData): GoogleMapResultData
     {
-        $firstResult = $responseData->results->first();
+        $firstResult = $responseData->results->toCollection()->first();
 
-<<<<<<< HEAD
         if (! $firstResult instanceof GoogleMapResultData) {
-=======
-        if (! ($firstResult instanceof GoogleMapResultData)) {
->>>>>>> 6ed19256f (.)
             throw GoogleMapsApiException::noResultsFound();
         }
 
@@ -115,31 +115,18 @@ final class GetAddressFromGoogleMapsAction
     }
 
     /**
-     * @param DataCollection<GoogleMapAddressComponentData> $components
-     * @param array<string>                                 $types
+     * @param  DataCollection<int, GoogleMapAddressComponentData>  $components
+     * @param  array<string>  $types
      */
     private function getComponent(DataCollection $components, array $types, bool $short = false): ?string
     {
         /** @var GoogleMapAddressComponentData|null $component */
         $component = $components
             ->toCollection()
-            ->first(function ($component) use ($types) {
-<<<<<<< HEAD
-                if (! $component instanceof GoogleMapAddressComponentData) {
-=======
-                if (! ($component instanceof GoogleMapAddressComponentData)) {
->>>>>>> 6ed19256f (.)
-                    return false;
-                }
+            ->first(static fn (GoogleMapAddressComponentData $component): bool => ! empty($component->types)
+                && count(array_intersect($component->types, $types)) > 0);
 
-                return ! empty($component->types) && count(array_intersect($component->types, $types)) > 0;
-            });
-
-<<<<<<< HEAD
         if (! $component instanceof GoogleMapAddressComponentData) {
-=======
-        if (! ($component instanceof GoogleMapAddressComponentData)) {
->>>>>>> 6ed19256f (.)
             return null;
         }
 

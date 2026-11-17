@@ -1,16 +1,34 @@
+---
+title: "User Module - Roadmap, Issues & Optimization"
+type: concept
+tags: [roadmap, issues]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "roadmap-and-issues user module - roadmap, issues & optimization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # User Module - Roadmap, Issues & Optimization
 
-<<<<<<< HEAD
 **Modulo**: User (Authentication, Authorization, Profiles)  
 **Data Analisi**: 1 Ottobre 2025  
 **Maintainer**: Team FixCity  
 **Status PHPStan**: ⚠️ 95 errori (Level 10)
-=======
-**Modulo**: User (Authentication, Authorization, Profiles)
-**Data Analisi**: 1 Ottobre 2025
-**Maintainer**: Team FixCity
-**Status PHPStan**: ⚠️ 95 errori (Level 9)
->>>>>>> 6ed19256f (.)
 
 ---
 
@@ -30,11 +48,7 @@
 
 ---
 
-<<<<<<< HEAD
 ## 🔴 COMPLETED PHPSTAN DA CORREGGERE (95)
-=======
-## 🔴 ERRORI PHPSTAN DA CORREGGERE (95)
->>>>>>> 6ed19256f (.)
 
 ### Categorizzazione Errori
 
@@ -47,25 +61,15 @@
 ### Errore Critico Risolto ✅
 
 #### BaseUser.php - Syntax Error (RISOLTO)
-<<<<<<< HEAD
 **File**: `app/Models/BaseUser.php:377-419`  
 **Problema**: Blocchi di codice orfani causavano 7 errori sintassi  
 **Soluzione**: Rimosso codice orfano  
-=======
-**File**: `app/Models/BaseUser.php:377-419`
-**Problema**: Blocchi di codice orfani causavano 7 errori sintassi
-**Soluzione**: Rimosso codice orfano
->>>>>>> 6ed19256f (.)
 **Impatto**: Sbloccata tutta l'analisi PHPStan
 
 ### Miglioramento Implementato ✅
 
 #### BaseUser.php - Teams & Tenants Support
-<<<<<<< HEAD
 **File**: `app/Models/BaseUser.php`  
-=======
-**File**: `app/Models/BaseUser.php`
->>>>>>> 6ed19256f (.)
 **Aggiunto**:
 - `teams()`: BelongsToMany relationship
 - `currentTeam()`: BelongsTo relationship
@@ -95,11 +99,7 @@ use Modules\Xot\Actions\Model\SafeAttributeCastAction;
 $name = SafeAttributeCastAction::getString($user, 'name', 'Guest');
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 3-4 ore  
-=======
-**Tempo Fix**: 3-4 ore
->>>>>>> 6ed19256f (.)
 **Priorità**: ALTA
 
 ---
@@ -119,11 +119,7 @@ public function getRole(): ?Role
 }
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 2-3 ore  
-=======
-**Tempo Fix**: 2-3 ore
->>>>>>> 6ed19256f (.)
 **Priorità**: ALTA
 
 ---
@@ -141,11 +137,7 @@ if ($user instanceof HasTeamsContract) {
 }
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 1-2 ore  
-=======
-**Tempo Fix**: 1-2 ore
->>>>>>> 6ed19256f (.)
 **Priorità**: MEDIA
 
 ---
@@ -172,11 +164,7 @@ DB::table('users')->where('email', $email)->first();
 User::query()->where('email', $email)->first();
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 2-3 ore  
-=======
-**Tempo Fix**: 2-3 ore
->>>>>>> 6ed19256f (.)
 **Gain**: Type safety + Events + Caching
 
 ---
@@ -210,21 +198,13 @@ public function setPasswordAttribute(?string $value): void
     if ($value === null || $value === '') {
         return;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Skip if already hashed (bcrypt/argon2 length)
     if (Str::startsWith($value, ['$2y$', '$2a$', '$argon'])) {
         $this->attributes['password'] = $value;
         return;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $this->attributes['password'] = Hash::make($value);
 }
 ```
@@ -291,13 +271,8 @@ php artisan queue:prune-failed --hours=48
 - [ ] Fix method existence checks (1h)
 - [ ] Cleanup PHPStan suppressions
 
-<<<<<<< HEAD
 **Totale**: ~6 ore  
 **Risultato**: ✅ 0 errori PHPStan Level 10
-=======
-**Totale**: ~6 ore
-**Risultato**: ✅ 0 errori PHPStan Level 9
->>>>>>> 6ed19256f (.)
 
 ---
 
@@ -363,11 +338,7 @@ php artisan queue:prune-failed --hours=48
 - [ ] **User Analytics**
   - Activity metrics
   - Engagement tracking
-<<<<<<< HEAD
   - Churn <nome progetto>ion
-=======
-  - Churn prediction
->>>>>>> 6ed19256f (.)
 
 ---
 
@@ -424,24 +395,17 @@ php artisan queue:prune-failed --hours=48
 ## 🔗 Collegamenti
 
 - [← User Module README](./README.md)
-<<<<<<< HEAD
-- [← User Module README](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [← PHPStan Fixes 2025-10-01](./phpstan-fixes-2025-10-01.md)
+- [← PHPStan Fixes 2025-10-01](./phpstan-fixes.md)
 - [← Project Roadmap](../../../docs/project-analysis-and-roadmap.md)
-- [← Root Documentation](../../../docs/index.md)
+- [← Root Documentation](../../../../docs/index.md)
+- [← Project Roadmap](../../../../docs/project-analysis-and-roadmap.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
-<<<<<<< HEAD
 **Status**: ⚠️ 95 COMPLETED DA CORREGGERE  
 **Priorità**: 🟡 ALTA  
 **Timeline**: 2 Ottobre 2025  
 **Effort**: ~6 ore → 100% CLEAN
-=======
-**Status**: ⚠️ 95 ERRORI DA CORREGGERE
-**Priorità**: 🟡 ALTA
-**Timeline**: 2 Ottobre 2025
-**Effort**: ~6 ore → 100% CLEAN
->>>>>>> 6ed19256f (.)
+
+

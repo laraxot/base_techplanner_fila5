@@ -1,14 +1,27 @@
-## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
-
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
-- GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
-
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
 title: "Media Wiki Activity Log"
 module: "Media"
 ---
 
 # Media - Wiki Activity Log
+
+## [2026-11-16] phpstan | intervention image v4
+
+- Gate Media: 27 errori (soprattutto `class.notFound` su `Intervention\Image\*`) → 0.
+- Causa: mismatch layout vendor v2 vs autoload v4.4.1; azioni Image allineate ad API v4.
+- Story: [intervention-image-phpstan.md](../stories/intervention-image-phpstan.md).
+
+## [2026-05-27] lint | phpstan zero
+
+- `./vendor/bin/phpstan analyse Modules/Media` → 0 errori (135 file).
+- Commento provtv/module_media_fila5#3; inventario mono corretto (ex 33 errori stale).
 
 ## [2026-05-21] governance | owner html2pdf canonico
 
@@ -23,8 +36,8 @@ module: "Media"
 - Created module index.md
 - Ready for on-demand loading via QMD
 
-## [2026-05-21] Troubleshooting — class redeclaration across `_bases`
+## [2026-09-25] phpstan | Pest helper invocations
 
-- Aggiunta [multibase-class-redeclare-runtime.md](troubleshooting/multibase-class-redeclare-runtime.md) per FatalError `Cannot redeclare class` quando nello stack compaiono due percorsi `base_*_fila5` nello stesso processo PHP.
-- Aggiornato [wiki/index.md](index.md) con sezione Troubleshooting.
-
+- I test Media invocano i metodi di `Tests\TestCase` come helper globali; usare `$this->` per gli helper d'istanza e `TestCase::` per quelli statici.
+- Le firme PHPDoc dei builder payload preservano `array<string, mixed>` e l'inferenza dei dati passati a Eloquent `create()`.
+- Verifica eseguita: `php -l` sui due file di test aggiornati. Analisi PHPStan e test non eseguiti in questa correzione.

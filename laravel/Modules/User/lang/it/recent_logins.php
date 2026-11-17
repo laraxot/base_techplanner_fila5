@@ -3,156 +3,130 @@
 declare(strict_types=1);
 
 return [
+    'heading' => 'Accessi Recenti',
+    'columns' => [
+        'user' => 'Utente',
+        'login_at' => 'Ora Accesso',
+        'ip_address' => 'Indirizzo IP',
+        'user_agent' => 'User Agent',
+    ],
     'fields' => [
         'authenticatable' => [
             'name' => [
                 'label' => 'authenticatable.name',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'login_at' => [
-            'label' => 'login_at',
+            'label' => 'Accesso il',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'login_at',
         ],
         'ip_address' => [
-            'label' => 'ip_address',
+            'label' => 'Indirizzo IP',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'ip_address',
         ],
         'user_agent' => [
-            'label' => 'user_agent',
+            'label' => 'Browser (user agent)',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'user_agent',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'user' => [
-            'label' => 'user',
+            'label' => 'Utente',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'login_at' => [
-            'label' => 'login_at',
-        ],
-        'ip_address' => [
-            'label' => 'ip_address',
-        ],
-        'user_agent' => [
-            'label' => 'user_agent',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'user' => [
             'label' => 'user',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'reorderRecords' => [
             'icon' => 'reorderRecords',
             'label' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'openColumnManager' => [
             'icon' => 'openColumnManager',
             'label' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
             'icon' => 'applyTableColumnManager',
             'label' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
             'icon' => 'resetFilters',
             'label' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyFilters' => [
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
             'label' => 'applyFilters',
         ],
         'openFilters' => [
-            'tooltip' => 'openFilters',
             'icon' => 'openFilters',
             'label' => 'openFilters',
         ],
-<<<<<<< HEAD
         'resetColumnManager' => [
-            'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
             'label' => 'resetColumnManager',
         ],
+        'delete' => [
+            'icon' => 'delete',
+            'label' => 'delete',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+            'label' => 'layout',
+        ],
+        'create' => [
+            'icon' => 'create',
+            'label' => 'create',
+        ],
     ],
     'navigation' => [
-        'name' => 'Recent Logins',
-        'plural' => 'Recent Logins',
+        'name' => 'Accessi Recenti',
+        'plural' => 'Accessi Recenti',
         'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
+            'name' => 'Generale',
+            'description' => 'Impostazioni Generali',
         ],
-        'label' => 'Recent Logins',
+        'label' => 'Accessi Recenti',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-    'label' => 'Recent Logins',
-    'plural_label' => 'Recent Logins (Plurale)',
-=======
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
+    'label' => 'Accessi Recenti',
+    'plural_label' => 'Accessi Recenti (Plurale)',
 ];

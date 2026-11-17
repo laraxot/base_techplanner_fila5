@@ -1,10 +1,22 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # 📊 Analysis Folder
 
 > Structural and technical analysis of HTML, CSS, and component differences between reference and local homepage
 
 **Status**: In Progress  
 **Last Updated**: 2026-04-02  
-**Related**: [← Master Index](../00-HOMEPAGE-REPLICATION-INDEX.md)
+**Related**: [← Master Index](../00-homepage-replication-index.md)
 
 ---
 
@@ -93,7 +105,7 @@ Analyzes each major section:
 ---
 
 **Navigation**: 
-- [← Back to Master Index](../00-HOMEPAGE-REPLICATION-INDEX.md)
+- [← Back to Master Index](../00-homepage-replication-index.md)
 - [Next: Screenshots →](../screenshots/README.md)
 
 
@@ -110,7 +122,7 @@ Analyzes each major section:
 - Element differences inventory
 - Recommendation: Proceed to CSS/JS phase
 
-🔗 [Read](./FAQ-STRUCTURE-ANALYSIS.md) | [← Back](#-documents-in-this-folder)
+🔗 [Read](faq-structure-analysis.md) | [← Back](#-documents-in-this-folder)
 
 ---
 
@@ -123,7 +135,7 @@ Analyzes each major section:
 - Expected Tailwind CSS classes
 - Implementation roadmap
 
-🔗 [Read](./FAQ-VISUAL-ANALYSIS.md) | [← Back](#-documents-in-this-folder)
+🔗 [Read](faq-visual-analysis.md) | [← Back](#-documents-in-this-folder)
 
 ---
 
@@ -133,3 +145,11 @@ Analyzes each major section:
 - Mobile: `domande-frequenti-reference-mobile.png` vs `domande-frequenti-local-mobile.png`
 - Tablet: `domande-frequenti-reference-tablet.png` vs `domande-frequenti-local-tablet.png`
 
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

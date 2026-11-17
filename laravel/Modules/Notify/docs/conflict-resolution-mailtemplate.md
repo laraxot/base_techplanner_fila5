@@ -1,11 +1,19 @@
+---
+title: "conflict resolution mailtemplate"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution mailtemplate"
+issues: []
+discussions: []
+status: draft
+---
+
 # Risoluzione Conflitti MailTemplate.php
 
 ## Contesto del Conflitto
-<<<<<<< HEAD
 **File**: `Modules/Notify/app/Models/MailTemplate.php`
-=======
-**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Models/MailTemplate.php`
->>>>>>> 6ed19256f (.)
 **Linee**: 75-79
 **Tipo**: Conflitto di proprietà translatable
 
@@ -69,14 +77,6 @@ Verificare che:
 - Le traduzioni includano le chiavi per `sms_template`
 
 ## Collegamenti
-- [Notify Module Documentation](README.md)
-- [SMS Implementation Guide](sms_implementation.md)
-- [Mail Templates Structure](mail_templates_structure.md)
-- [Translation Standards](translation_standards.md)
-- [Root Conflict Resolution Guidelines](../../../docs/conflict-resolution-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
-<<<<<<< HEAD
 - [Notify Module Documentation](README.md)
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
@@ -88,12 +88,6 @@ Verificare che:
 
 ## Contesto del Conflitto
 **File**: `Modules/Notify/app/Models/MailTemplate.php`
-=======
-# Risoluzione Conflitti MailTemplate.php
-
-## Contesto del Conflitto
-**File**: `/var/www/html/ptvx/laravel/Modules/Notify/app/Models/MailTemplate.php`
->>>>>>> 6ed19256f (.)
 **Linee**: 75-79
 **Tipo**: Conflitto di proprietà translatable
 
@@ -161,16 +155,6 @@ Verificare che:
 - [SMS Implementation Guide](sms_implementation.md)
 - [Mail Templates Structure](mail_templates_structure.md)
 - [Translation Standards](translation_standards.md)
-- [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
-
-*Ultimo aggiornamento: giugno 2025*
-<<<<<<< HEAD
-- [Notify Module Documentation](README.md)
-- [SMS Implementation Guide](sms_implementation.md)
-- [Mail Templates Structure](mail_templates_structure.md)
-- [Translation Standards](translation_standards.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-=======
->>>>>>> 6ed19256f (.)

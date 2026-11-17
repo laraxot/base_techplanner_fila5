@@ -1,4 +1,5 @@
 ---
+qmd: "ui archive custom 404 page 1 md"
 title: Custom 404 Page
 description: Custom 404 pages with Jigsaw docs starter template
 extends: _layouts.documentation

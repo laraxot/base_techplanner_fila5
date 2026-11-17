@@ -6,7 +6,6 @@ namespace Modules\Lang\Providers;
 
 use Filament\Actions\Action;
 use Filament\Forms\Components\Field;
-use Filament\Forms\Components\Placeholder;
 use Filament\Forms\Components\Select;
 use Filament\Infolists\Components\Entry;
 use Filament\Schemas\Components\Section;
@@ -16,7 +15,7 @@ use Filament\Tables\Columns\Column;
 use Filament\Tables\Filters\BaseFilter;
 use Illuminate\Container\Container;
 use Modules\Lang\Actions\Filament\AutoLabelAction;
-use Modules\Lang\Services\TranslatorService;
+use Modules\Lang\Adapters\TranslatorAdapter;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 use Webmozart\Assert\Assert;
 
@@ -49,20 +48,18 @@ class LangServiceProvider extends XotBaseServiceProvider
     public function registerFilamentLabel(): void
     {
         Select::configureUsing(function (Select $component) {
-            $component->placeholder(__('filament-forms::components.select.placeholder'));
+            // __() puo' restituire array|string; placeholder Filament vuole string|Closure|null.
+            $placeholder = __('filament-forms::components.select.placeholder');
+            $component->placeholder(is_string($placeholder) ? $placeholder : null);
 
             return $component;
         });
         Field::configureUsing(function (Field $component) {
-<<<<<<< HEAD
             $component = app(AutoLabelAction::class)->execute($component, 'label');
-=======
-            $component = app(AutoLabelAction::class)->execute($component);
->>>>>>> 6ed19256f (.)
             Assert::isInstanceOf($component, Field::class);
 
             $validationMessages = __('user::validation');
-            if (is_array($validationMessages) && [] !== $validationMessages) {
+            if (is_array($validationMessages) && $validationMessages !== []) {
                 /** @var array<string, string> $typedMessages */
                 $typedMessages = [];
                 foreach ($validationMessages as $key => $value) {
@@ -71,7 +68,7 @@ class LangServiceProvider extends XotBaseServiceProvider
                     }
                 }
 
-                if ([] !== $typedMessages) {
+                if ($typedMessages !== []) {
                     $component->validationMessages($typedMessages);
                 }
             }
@@ -82,18 +79,13 @@ class LangServiceProvider extends XotBaseServiceProvider
             return app(AutoLabelAction::class)->execute($component, 'description');
         });
 
-<<<<<<< HEAD
         Entry::configureUsing(function (Entry $component) {
-            $component = app(AutoLabelAction::class)->execute($component, 'label');
-
-            return $component;
+            return app(AutoLabelAction::class)->execute($component, 'label');
         });
 
-=======
->>>>>>> 6ed19256f (.)
+        // Solo l'intestazione: in Filament 5 la `label` di una Section si disegna sopra il riquadro
+        // (`fi-sc-section-label`), quindi ogni sezione mostrava il titolo due volte.
         Section::configureUsing(function (Section $component) {
-            $component = app(AutoLabelAction::class)->execute($component);
-
             return app(AutoLabelAction::class)->execute($component, 'heading');
         });
 
@@ -129,7 +121,7 @@ class LangServiceProvider extends XotBaseServiceProvider
             'getRecord' => $component->getRecord(),
             ]);
             */
-            if (method_exists($component, 'getRecord') && null === $component->getRecord()) {
+            if (method_exists($component, 'getRecord') && $component->getRecord() === null) {
                 if (method_exists($component, 'button')) {
                     $component->button();
                 }
@@ -156,16 +148,22 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     public function registerTranslator(): void
     {
-        $this->app->singleton('translator', function (Container $app): TranslatorService {
-            $loader = $app['translation.loader'];
+        $this->app->singleton('translator', function (Container $app): TranslatorAdapter {
+            $loader = $app->make('translation.loader');
+            Assert::isInstanceOf($loader, \Illuminate\Contracts\Translation\Loader::class);
 
             // When registering the translator component, we'll need to set the default
             // locale as well as the fallback locale. So, we'll grab the application
             // configuration so we can easily get both of these values from there.
-            Assert::string($locale = $app['config']['app.locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
-            Assert::string($fallback_locale = $app['config']['app.fallback_locale'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+            $config = $app->make('config');
+            Assert::isInstanceOf($config, \Illuminate\Contracts\Config\Repository::class);
 
-            $translatorService = new TranslatorService($loader, $locale);
+            $locale = $config->get('app.locale');
+            $fallback_locale = $config->get('app.fallback_locale');
+            Assert::string($locale, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+            Assert::string($fallback_locale, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
+
+            $translatorService = new TranslatorAdapter($loader, $locale);
 
             $translatorService->setFallback($fallback_locale);
 
@@ -180,17 +178,14 @@ class LangServiceProvider extends XotBaseServiceProvider
 
     protected function translatableComponents(): void
     {
-        $components = [Field::class, BaseFilter::class, Placeholder::class, Column::class, Entry::class];
+        // `Placeholder` e' deprecata in favore di `TextEntry`, che estende `Entry`:
+        // la voce era anche ridondante, non solo deprecata.
+        $components = [Field::class, BaseFilter::class, Column::class, Entry::class];
         foreach ($components as $component) {
             $component::configureUsing(function (Component $translatable): void {
-<<<<<<< HEAD
                 if (method_exists($translatable, 'translateLabel')) {
                     $translatable->translateLabel();
                 }
-=======
-                /* @phpstan-ignore method.notFound */
-                $translatable->translateLabel();
->>>>>>> 6ed19256f (.)
             });
         }
     }

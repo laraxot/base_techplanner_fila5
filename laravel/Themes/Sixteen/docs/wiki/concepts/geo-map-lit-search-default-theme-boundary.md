@@ -1,3 +1,15 @@
+---
+title: "geo map lit search default theme boundary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geo map lit search default theme boundary"
+issues: []
+discussions: []
+status: draft
+---
+
 # GeoMapLit Search Default Theme Boundary
 
 ## Decisione
@@ -22,7 +34,7 @@ Il tema non decide se la search esiste: evita varianti inutili e drift tra pagin
 
 ## Verifica
 
-Quando si modifica `/it/tests/segnalazioni-elenco`:
+Quando si modifica `/it/tests/ticket-list`:
 
 - controllare desktop, tablet e mobile;
 - verificare che la search sia visibile;

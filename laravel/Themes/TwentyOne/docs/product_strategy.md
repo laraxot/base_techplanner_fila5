@@ -614,9 +614,9 @@ Theme TwentyOne occupies a unique position as the "developer-first" theme in the
 
 ### Related Documents
 - [Product Requirements Document](prd.md)
-- [Product Roadmap](product_roadmap.md)
-- [Product Launch Plan](product_launch_plan.md)
-- [User Research](user_research.md)
+- [Product Roadmap](product-roadmap.md)
+- [Product Launch Plan](product-launch-plan.md)
+- [User Research](user-research.md)
 
 ### References
 - Vite Documentation: https://vitejs.dev/

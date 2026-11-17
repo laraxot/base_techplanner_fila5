@@ -1,3 +1,10 @@
+---
+title: "Filament 4.x Upgrade - Modulo UI"
+qmd: "ui filament 4x upgrade md"
+type: note
+tags: [documentation]
+---
+
 # Filament 4.x Upgrade - Modulo UI
 
 **Data**: 2025-09-30

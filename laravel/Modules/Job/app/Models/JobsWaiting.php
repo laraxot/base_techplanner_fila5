@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/mooxphp/jobs/tree/main
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
@@ -26,10 +25,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $created_by
  * @property string|null $updated_by
  * @property Carbon|null $updated_at
-<<<<<<< HEAD
-=======
- *
->>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
  * @property-read string|null $display_name
  * @property-read string $status
@@ -50,16 +45,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|JobsWaiting whereUpdatedAt($value)
  * @method static Builder<static>|JobsWaiting whereUpdatedBy($value)
  *
- * @mixin IdeHelperJobsWaiting
- *
  * @property-read ProfileContract|null $deleter
  *
  * @mixin \Eloquent
  */
-<<<<<<< HEAD
 class JobsWaiting extends Job {}
-=======
-class JobsWaiting extends Job
-{
-}
->>>>>>> 6ed19256f (.)

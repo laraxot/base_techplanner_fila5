@@ -1,3 +1,10 @@
+---
+title: "Struttura Themes e Folio in Quaeris"
+qmd: "ui archive struttura themes folio md"
+type: note
+tags: [documentation]
+---
+
 # Struttura Themes e Folio in Quaeris
 
 ## ⚠️ ATTENZIONE CRITICA

@@ -1,3 +1,10 @@
+---
+title: "Errore: No hint path defined for [activity]"
+qmd: "activity errori no hint path defined md"
+type: note
+tags: [documentation]
+---
+
 # Errore: No hint path defined for [activity]
 
 ## Descrizione dell'Errore
@@ -469,7 +476,6 @@ docker-compose restart app
 ## Collegamenti
 
 ### Documentazione Correlata
-<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [XotBaseServiceProvider Architecture](../../xot/docs/service-provider-architecture.md)
 - [Xot Module - README](../../xot/docs/readme.md)
@@ -479,8 +485,6 @@ docker-compose restart app
 
 ### Sistema Architecture
 - [Service Provider Architecture](../../xot/docs/service-provider-architecture.md) - Architettura completa del sistema ServiceProvider
-=======
->>>>>>> 6ed19256f (.)
 - [Activity Module - README](../README.md)
 - [XotBaseServiceProvider Architecture](../../Xot/docs/service-provider-architecture.md)
 - [Xot Module - README](../../Xot/docs/README.md)
@@ -491,18 +495,6 @@ docker-compose restart app
 ### Sistema Architecture
 - [Service Provider Architecture](../../Xot/docs/service-provider-architecture.md) - Architettura completa del sistema ServiceProvider
 - [Laraxot Conventions](../../../docs/laraxot-conventions.md) - Convenzioni generali
-<<<<<<< HEAD
 - [Laraxot Conventions](../../../../docs/laraxot-conventions.md) - Convenzioni generali
-=======
->>>>>>> 6ed19256f (.)
 
 ---
-
-**Ultimo aggiornamento**: 27 Ottobre 2025
-**Versione Laravel**: 12.35.1
-**Errore Code**: `InvalidArgumentException`
-<<<<<<< HEAD
-**Severità**: Alta (blocca funzionalità Activity Log)
-=======
-**Severità**: Alta (blocca funzionalità Activity Log)
->>>>>>> 6ed19256f (.)

@@ -16,7 +16,7 @@ class TenantForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'main' => Section::make()
@@ -28,49 +28,49 @@ class TenantForm extends XotBaseResourceForm
                             ignoreRecord: true,
                         )
                         ->live(onBlur: true)
-                        ->afterStateUpdated(function (callable $set, $state): void {
+                        ->afterStateUpdated(function (callable $set, ?string $state): void {
                             if (is_string($state)) {
                                 $set('slug', Str::slug($state));
                                 $set('domain', Str::slug($state));
                             }
                         })
                         ->columnSpanFull()
-                        ->placeholder('Nome del tenant')
-                        ->helperText('Inserisci il nome del tenant'),
+                        ->placeholder('Tenant name')
+                        ->helperText('Enter the tenant name'),
                     TextInput::make('slug')
                         ->required()
-                        ->disabled(fn ($context) => 'create' !== $context)
+                        ->disabled(fn (string $context) => $context !== 'create')
                         ->unique(
                             table: 'tenants',
                             ignoreRecord: true,
                         )
-                        ->helperText('Lo slug verrà generato automaticamente dal nome'),
+                        ->helperText('The slug is generated automatically from the name'),
                     TextInput::make('domain')
                         ->required()
-                        ->visible(fn ($context) => 'create' === $context)
+                        ->visible(fn (string $context) => $context === 'create')
                         ->unique(
                             table: 'domains',
                             ignoreRecord: true,
                         )
                         ->prefix('https://')
                         ->suffix('.'.request()->getHost())
-                        ->placeholder('dominio')
-                        ->helperText('Il dominio del tenant'),
+                        ->placeholder('Domain')
+                        ->helperText('The tenant domain'),
                     TextInput::make('email_address')
                         ->email()
                         ->placeholder('email@example.com')
-                        ->helperText('Indirizzo email del tenant'),
+                        ->helperText('The tenant email address'),
                     TextInput::make('phone')
                         ->tel()
-                        ->placeholder('Telefono')
-                        ->helperText('Numero di telefono del tenant'),
+                        ->placeholder('Phone')
+                        ->helperText('The tenant phone number'),
                     TextInput::make('mobile')
                         ->tel()
-                        ->placeholder('Cellulare')
-                        ->helperText('Numero di cellulare del tenant'),
-                    TextInput::make('address')->placeholder('Indirizzo')->helperText('Indirizzo del tenant'),
-                    ColorPicker::make('primary_color')->helperText('Colore primario del tenant'),
-                    ColorPicker::make('secondary_color')->helperText('Colore secondario del tenant'),
+                        ->placeholder('Mobile')
+                        ->helperText('The tenant mobile number'),
+                    TextInput::make('address')->placeholder('Address')->helperText('The tenant address'),
+                    ColorPicker::make('primary_color')->helperText('The tenant primary color'),
+                    ColorPicker::make('secondary_color')->helperText('The tenant secondary color'),
                 ])
                 ->columns(2),
         ];

@@ -1,3 +1,15 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # segnalazione-02-dati
 
 Cartella di lavoro per la fase HTML parity di `segnalazione-02-dati`.
@@ -30,3 +42,14 @@ bashscripts/html/html-structure-compare.sh \
 - `body-structure-comparison/diff.txt`
 - `body-structure-comparison/reference-body.html`
 - `body-structure-comparison/local-body.html`
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

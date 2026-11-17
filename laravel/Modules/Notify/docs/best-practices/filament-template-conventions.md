@@ -1,8 +1,24 @@
-<<<<<<< HEAD
+---
+title: "Convenzioni per Template Blade di Filament"
+type: concept
+tags: [notify, docs, best-practices, filament, template, conventions]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione best practices filament template conventions convenzioni per template blade di filament frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../architecture/README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - naming-conventions.md
+status: draft
+---
 # Convenzioni per Template Blade di Filament 
-=======
-# Convenzioni per Template Blade di Filament
->>>>>>> 6ed19256f (.)
 
 ## Struttura Standard dei Template di Pagina
 
@@ -71,21 +87,12 @@ Non seguire queste convenzioni può portare a:
 Per verificare che tutti i template seguano queste convenzioni:
 
 ```bash
-<<<<<<< HEAD
 grep -L "name=\"description\"" Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"footer\"" Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"description\"" Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"footer\"" Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"description\"" Modules/*/resources/views/filament/pages/*.blade.php
 grep -L "name=\"footer\"" Modules/*/resources/views/filament/pages/*.blade.php
-=======
-grep -L "name=\"description\"" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/*/resources/views/filament/pages/*.blade.php
-grep -L "name=\"footer\"" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/*/resources/views/filament/pages/*.blade.php
-grep -L "name=\"description\"" /var/www/html/saluteora/laravel/Modules/*/resources/views/filament/pages/*.blade.php
-grep -L "name=\"footer\"" /var/www/html/saluteora/laravel/Modules/*/resources/views/filament/pages/*.blade.php
-grep -L "name=\"description\"" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/*/resources/views/filament/pages/*.blade.php
-grep -L "name=\"footer\"" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/*/resources/views/filament/pages/*.blade.php
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti

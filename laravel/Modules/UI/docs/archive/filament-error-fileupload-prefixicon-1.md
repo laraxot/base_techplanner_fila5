@@ -1,3 +1,10 @@
+---
+title: "Errore UI: Uso di `prefixIcon` su FileUpload di Filament"
+qmd: "ui archive filament error fileupload prefixicon 1 md"
+type: note
+tags: [documentation]
+---
+
 # Errore UI: Uso di `prefixIcon` su FileUpload di Filament
 
 ## Descrizione

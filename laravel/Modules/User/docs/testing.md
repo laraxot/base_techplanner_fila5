@@ -1,4 +1,28 @@
-<<<<<<< HEAD
+---
+title: "Testing Rules Summary"
+type: concept
+tags: [testing]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing testing rules summary"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Testing Rules Summary
 
 ## Regole Fondamentali dei Test
@@ -102,8 +126,6 @@ Ogni modulo e tema deve documentare:
 4. Errori comuni da evitare
 
 I file di documentazione vanno nelle cartelle `docs/` dentro ogni modulo/tema.
-=======
->>>>>>> 6ed19256f (.)
 # User Module Testing
 
 ## Overview
@@ -119,11 +141,7 @@ Testing standards and patterns for the User module, covering authentication, aut
 
 ### Coverage Goals
 - 100% coverage for authentication logic
-<<<<<<< HEAD
 - 90%+ coverage for authorization system  
-=======
-- 90%+ coverage for authorization system
->>>>>>> 6ed19256f (.)
 - 85%+ coverage for profile management
 - 80%+ coverage for team features
 
@@ -146,29 +164,17 @@ abstract class UserBaseTestCase extends XotBaseTestCase
     {
         return User::factory()->create($attributes);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected function createAdminUser(): User
     {
         return User::factory()->admin()->create();
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected function assertUserHasRole(User $user, string $role): void
     {
         $this->assertTrue($user->hasRole($role));
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected function assertUserHasPermission(User $user, string $permission): void
     {
         $this->assertTrue($user->can($permission));
@@ -188,11 +194,7 @@ public function test_user_registration()
         'password' => 'password',
         'password_confirmation' => 'password',
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response->assertStatus(201);
     $this->assertDatabaseHas('users', ['email' => 'test@example.com']);
 }
@@ -200,20 +202,12 @@ public function test_user_registration()
 public function test_user_login()
 {
     $user = User::factory()->create(['password' => Hash::make('password')]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response = $this->postJson('/login', [
         'email' => $user->email,
         'password' => 'password',
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response->assertStatus(200);
     $response->assertJson(['token' => true]);
 }
@@ -225,20 +219,12 @@ public function test_role_based_access()
 {
     $admin = User::factory()->admin()->create();
     $user = User::factory()->create();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Admin should have access
     $this->actingAs($admin);
     $response = $this->getJson('/admin/users');
     $response->assertStatus(200);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Regular user should be denied
     $this->actingAs($user);
     $response = $this->getJson('/admin/users');
@@ -249,11 +235,7 @@ public function test_permission_checks()
 {
     $user = User::factory()->create();
     $user->givePermissionTo('edit-posts');
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $this->assertTrue($user->can('edit-posts'));
     $this->assertFalse($user->can('delete-users'));
 }
@@ -264,21 +246,13 @@ public function test_permission_checks()
 public function test_profile_management()
 {
     $user = User::factory()->create();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response = $this->actingAs($user)
         ->putJson('/api/profile', [
             'name' => 'Updated Name',
             'email' => 'updated@example.com',
         ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response->assertStatus(200);
     $this->assertDatabaseHas('users', [
         'id' => $user->id,
@@ -293,20 +267,12 @@ public function test_profile_management()
 public function test_team_creation()
 {
     $user = User::factory()->create();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response = $this->actingAs($user)
         ->postJson('/api/teams', [
             'name' => 'Development Team',
         ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response->assertStatus(201);
     $this->assertDatabaseHas('teams', ['name' => 'Development Team']);
     $this->assertTrue($user->fresh()->isOwnerOf(Team::first()));
@@ -327,11 +293,7 @@ use Modules\User\Models\User;
 class UserFactory extends XotBaseFactory
 {
     protected $model = User::class;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function definition(): array
     {
         return [
@@ -341,22 +303,14 @@ class UserFactory extends XotBaseFactory
             'email_verified_at' => now(),
         ];
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function admin(): static
     {
         return $this->afterCreating(function (User $user) {
             $user->assignRole('admin');
         });
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function unverified(): static
     {
         return $this->state(['email_verified_at' => null]);
@@ -376,11 +330,7 @@ use Modules\User\Models\Team;
 class TeamFactory extends XotBaseFactory
 {
     protected $model = Team::class;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function definition(): array
     {
         return [
@@ -398,11 +348,7 @@ class TeamFactory extends XotBaseFactory
 public function test_brute_force_protection()
 {
     $user = User::factory()->create(['password' => Hash::make('password')]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Multiple failed attempts
     for ($i = 0; $i < 5; $i++) {
         $response = $this->postJson('/login', [
@@ -410,11 +356,7 @@ public function test_brute_force_protection()
             'password' => 'wrong-password',
         ]);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Should be rate limited
     $response->assertStatus(429);
 }
@@ -427,11 +369,7 @@ public function test_password_complexity()
         'password' => 'simple', // Too simple
         'password_confirmation' => 'simple',
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response->assertStatus(422);
     $response->assertJsonValidationErrors(['password']);
 }
@@ -442,19 +380,11 @@ public function test_password_complexity()
 public function test_permission_escalation()
 {
     $user = User::factory()->create();
-<<<<<<< HEAD
     
     // Attempt to assign admin role without permission
     $response = $this->actingAs($user)
         ->postJson('/api/users/1/roles', ['role' => 'admin']);
     
-=======
-
-    // Attempt to assign admin role without permission
-    $response = $this->actingAs($user)
-        ->postJson('/api/users/1/roles', ['role' => 'admin']);
-
->>>>>>> 6ed19256f (.)
     $response->assertStatus(403);
 }
 ```
@@ -467,20 +397,12 @@ public function test_multiple_users_performance()
 {
     // Create 1000 users
     User::factory()->count(1000)->create();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Test user listing performance
     $start = microtime(true);
     $response = $this->getJson('/api/users');
     $duration = microtime(true) - $start;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response->assertStatus(200);
     $this->assertLessThan(2.0, $duration); // Should complete in under 2 seconds
 }
@@ -519,11 +441,7 @@ on: [push, pull_request]
 jobs:
   test-user-module:
     runs-on: ubuntu-latest
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     services:
       mysql:
         image: mysql:8.0
@@ -535,49 +453,28 @@ jobs:
           --health-interval=10s
           --health-timeout=5s
           --health-retries=3
-<<<<<<< HEAD
     
     steps:
     - uses: actions/checkout@v3
     
-=======
-
-    steps:
-    - uses: actions/checkout@v3
-
->>>>>>> 6ed19256f (.)
     - name: Setup PHP
       uses: shivammathur/setup-php@v2
       with:
         php-version: '8.4'
         extensions: mbstring, xml, ctype, json, tokenizer, pdo_mysql
         coverage: xdebug
-<<<<<<< HEAD
     
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
     
-=======
-
-    - name: Install dependencies
-      run: composer install --prefer-dist --no-progress
-
->>>>>>> 6ed19256f (.)
     - name: Setup environment
       run: |
         cp .env.testing .env
         php artisan key:generate
-<<<<<<< HEAD
     
     - name: Run migrations
       run: php artisan migrate --env=testing
     
-=======
-
-    - name: Run migrations
-      run: php artisan migrate --env=testing
-
->>>>>>> 6ed19256f (.)
     - name: Run tests
       run: php artisan test --testsuite=Feature --group=user --coverage --min=85
 ```
@@ -585,8 +482,4 @@ jobs:
 ---
 
 *User Module Testing - Ensuring reliable and secure user management functionality*
-<<<<<<< HEAD
 *Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
-=======
-*Testing del Modulo User: DRY + KISS + SOLID + ROBUST + LARAXOT*
->>>>>>> 6ed19256f (.)

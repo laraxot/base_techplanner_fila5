@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -54,26 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'job_id' => [
-            'label' => 'ID de Trabajo',
-        ],
-        'importable_type' => [
-            'label' => 'Tipo Importable',
-        ],
-        'file_path' => [
-            'label' => 'Ruta del Archivo',
-        ],
-        'status' => [
-            'label' => 'Estado',
-        ],
-        'created_at' => [
-            'label' => 'Creado En',
-        ],
-        'completed_at' => [
-            'label' => 'Completado En',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

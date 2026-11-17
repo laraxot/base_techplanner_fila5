@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki concepts ui operating model md"
 title: "UI Operating Model"
 module: "UI"
 type: concept

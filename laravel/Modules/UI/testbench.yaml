@@ -1,4 +1,4 @@
 providers:
   - Modules\UI\Providers\UIServiceProvider
+  - Modules\UI\Providers\Filament\AdminPanelProvider
   - Nwidart\Modules\LaravelModulesServiceProvider
-

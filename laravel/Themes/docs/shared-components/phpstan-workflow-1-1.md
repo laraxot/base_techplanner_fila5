@@ -60,7 +60,7 @@
      ```
    - IMPORTANTE: Per regole significative, aggiornare anche:
      ```
-     base_predict_fila3_mono/
+     base_predict_fila5/
      ├── .cursor/
      │   └── rules/        # Regole per Cursor AI
      └── .windsurfrules    # Regole per Windsurf
@@ -165,7 +165,7 @@ class MyModel extends BaseModel
      - Docs del modulo specifico
      - .cursor/rules per Cursor AI
      - .windsurfrules per Windsurf
-   - Mantenere coerenza tra le diverse documentazioni 
+   - Mantenere coerenza tra le diverse documentazioni
 ## Collegamenti tra versioni di PHPSTAN_WORKFLOW.md
 * [PHPSTAN_WORKFLOW.md](../../../Xot/project_docs/phpstan/PHPSTAN_WORKFLOW.md)
 * [PHPSTAN_WORKFLOW.md](../../../Xot/project_docs/PHPSTAN_WORKFLOW.md)

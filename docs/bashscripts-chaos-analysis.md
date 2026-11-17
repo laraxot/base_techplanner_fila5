@@ -48,7 +48,7 @@ bashscripts/
 ├── fix_git_conflicts_docs_old_final.sh
 ├── fix_git_conflicts_improved.sh
 ├── fix_git_conflicts_robust.sh
-├── fix_git_conflicts_quaeris.sh
+├── fix_git_conflicts_<nome progetto>.sh
 ├── fix_git_conflicts_fixcity.sh
 ├── fix_git_conflicts_php_only.sh
 └── ... (altre 82 script)
@@ -71,7 +71,7 @@ Categoria: Git Conflicts
 ├── fix_conflicts.sh
 ├── fix_conflicts_simple.sh
 ├── fix_conflicts_robust.sh
-├── fix_conflicts_quaeris.sh
+├── fix_conflicts_<nome progetto>.sh
 ├── fix_git_conflicts_* (15 varianti!)
 ├── resolve_conflicts.sh
 ├── resolve_git_conflicts.sh
@@ -199,11 +199,11 @@ git_prune.sh, reset_subtrees.sh, sync_submodules.sh
 
 #### 2. Git Conflict Resolution (20 script)
 ```bash
-fix_conflicts.sh, fix_conflicts_simple.sh, fix_conflicts_robust.sh, fix_conflicts_quaeris.sh
+fix_conflicts.sh, fix_conflicts_simple.sh, fix_conflicts_robust.sh, fix_conflicts_<nome progetto>.sh
 fix_all_conflicts.sh, fix_all_merge_conflicts.sh, fix_all_merge_conflicts_v2.sh, fix_all_merge_conflicts_v3.sh, fix_all_merge_conflicts_v4.sh
 fix_git_conflicts_simple.sh, fix_git_conflicts_final.sh, fix_git_conflicts_enhanced.sh, fix_git_conflicts_current_change.sh, fix_git_conflicts_current_change_v2.sh
 fix_git_conflicts_docs_old.sh, fix_git_conflicts_docs_old_v2.sh, fix_git_conflicts_docs_old_v3.sh, fix_git_conflicts_docs_old_final.sh
-fix_git_conflicts_improved.sh, fix_git_conflicts_robust.sh, fix_git_conflicts_quaeris.sh, fix_git_conflicts_fixcity.sh, fix_git_conflicts_php_only.sh
+fix_git_conflicts_improved.sh, fix_git_conflicts_robust.sh, fix_git_conflicts_<nome progetto>.sh, fix_git_conflicts_fixcity.sh, fix_git_conflicts_php_only.sh
 resolve_conflicts.sh, resolve_git_conflicts.sh, resolve_git_conflict.sh
 fix_xot_merge_conflicts.sh, fix_remaining_conflicts.sh, fix_merge_conflicts_simple.sh
 ```
@@ -484,7 +484,7 @@ bashscripts/
 git/conflict-resolution/fix_conflicts.sh (logica da tutti i "final", "improved")
 
 # DELETE:
-fix_conflicts_simple.sh, fix_conflicts_robust.sh, fix_conflicts_quaeris.sh
+fix_conflicts_simple.sh, fix_conflicts_robust.sh, fix_conflicts_<nome progetto>.sh
 fix_all_merge_conflicts*.sh (tutte le versioni)
 fix_git_conflicts_*.sh (tutte le 15 varianti)
 resolve_*.sh (ridondanti)

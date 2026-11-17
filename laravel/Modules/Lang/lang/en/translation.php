@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'navigation' => [
         'name' => 'Traduzione',
@@ -11,47 +9,46 @@ return [
         ],
     ],
     'pages' => [
-        'create' => 'Nuovo Tecnico',
-        'edit' => 'Modifica Tecnico',
+        'create' => 'New Technician',
+        'edit' => 'Edit Technician',
         'view' => 'Tecnico',
         'list_technicians' => [
             'navigation' => [
                 'name' => 'Tecnici',
                 'plural' => 'Tecnici',
                 'group' => [
-                    'name' => 'Gestione Utenti',
+                    'name' => 'User Management',
                 ],
             ],
             'fields' => [
-                'user_name' => 'Nome Utente',
-                'name' => 'Nome Utente',
-                'first_name' => 'Nome',
-                'last_name' => 'Cognome',
+                'user_name' => 'Username',
+                'name' => 'Username',
+                'first_name' => 'Name',
+                'last_name' => 'Last name',
                 'email' => 'Email',
-                'is_active' => 'Stato account',
+                'is_active' => 'Account status',
                 'color' => 'Colore',
                 'asset_id_root' => 'Abitazione',
                 'asset_id' => 'Asset',
-                'type' => 'Tipo',
+                'type' => 'Type',
             ],
         ],
     ],
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'lang' => [
-            'label' => 'Lingua',
+            'label' => 'Language',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'value' => [
-            'label' => 'Valore',
+            'label' => 'Value',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -81,19 +78,19 @@ return [
             'description' => '',
         ],
         'name' => [
-            'label' => 'Nome Utente',
+            'label' => 'Username',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'first_name' => [
-            'label' => 'Nome',
+            'label' => 'Name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'last_name' => [
-            'label' => 'Cognome',
+            'label' => 'Last name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -105,7 +102,7 @@ return [
             'description' => '',
         ],
         'is_active' => [
-            'label' => 'Stato account',
+            'label' => 'Account status',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -129,54 +126,23 @@ return [
             'description' => '',
         ],
         'type' => [
-            'label' => 'tipo',
+            'label' => 'type',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'user_name' => [
-            'label' => 'nome utente',
+            'label' => 'username',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        ],
-        'lang' => [
-            'label' => 'Lingua',
-        ],
-        'value' => [
-            'label' => 'Valore',
-        ],
-        'key' => [
-            'label' => 'Chiave',
-        ],
-        'namespace' => [
-            'label' => 'Namespace',
-        ],
-        'group' => [
-            'label' => 'Gruppo',
-        ],
-        'item' => [
-            'label' => 'Elemento',
-        ],
-        'name' => 'Nome Utente',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'email' => 'Email',
-        'is_active' => 'Stato account',
-        'color' => 'Colore',
-        'asset_id_root' => 'Abitazione',
-        'asset_id' => 'Asset',
-        'type' => 'tipo',
-        'user_name' => 'nome utente',
->>>>>>> 6ed19256f (.)
     ],
     'filters' => [
         'is_active' => [
-            'all' => 'Tutti i tecnici',
-            'active' => 'Solo attivi',
-            'inactive' => 'Solo inattivi',
+            'all' => 'All technicians',
+            'active' => 'Active only',
+            'inactive' => 'Inactive only',
         ],
     ],
     'actions' => [
@@ -196,9 +162,6 @@ return [
     'act' => [
         'publish_item_trans' => 'pubblica modifiche riga',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

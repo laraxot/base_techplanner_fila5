@@ -1,16 +1,27 @@
+---
+title: "assets"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "assets"
+issues: []
+discussions: []
+---
+
 # Gestione degli Assets dei Temi
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Documentazione Dettagliata
 
-- [Tema One - Gestione Assets](../../../Themes/One/docs/theme-assets.md)
-- [Tema One - Processo di Build](../../../Themes/One/docs/build-process.md)
-- [Tema One - Assets](../../../Themes/One/docs/ASSETS.md)
-<<<<<<< HEAD
 - [Tema One - Gestione Assets](../../../themes/one/docs/theme-assets.md)
 - [Tema One - Processo di Build](../../../themes/one/docs/build-process.md)
 - [Tema One - Assets](../../../themes/one/docs/assets.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Punti Critici
 
@@ -32,12 +43,16 @@
 ## Best Practices
 
 1. **Sviluppo**
-   - Utilizzare `npm run dev` seguito da `npm run copy`
+   - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+   - Utilizzare `npm run dev`
    - Verificare il corretto caricamento degli assets
    - Mantenere la documentazione aggiornata
 
 2. **Produzione**
-   - Eseguire `npm run build` seguito da `npm run copy`
+   - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+   - Eseguire `npm run build` (servito via symlink, niente copy)
    - Verificare la presenza e l'accessibilità degli assets
    - Testare il funzionamento completo del tema
 
@@ -98,12 +113,6 @@
    - Verificare i timestamp dei file
 
 ## Collegamenti tra versioni di assets.md
-* [assets.md](laravel/Modules/Xot/docs/assets.md)
-* [assets.md](laravel/Modules/Cms/docs/themes/assets.md)
-* [assets.md](laravel/Themes/One/docs/assets.md)
-<<<<<<< HEAD
-* [assets.md](laravel/modules/xot/docs/assets.md)
-* [assets.md](laravel/modules/cms/docs/themes/assets.md)
-* [assets.md](laravel/themes/one/docs/assets.md)
-=======
->>>>>>> 6ed19256f (.)
+* [assets.md](assets.md)
+* [assets.md](assets.md)
+* [assets.md](assets.md)

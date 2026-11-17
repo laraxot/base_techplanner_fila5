@@ -5,21 +5,9 @@ declare(strict_types=1);
 return [
     'fields' => [
         'level' => [
-            'label' => 'level',
-            'description' => 'level',
-            'helper_text' => 'level',
-            'placeholder' => 'level',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'content' => [
-            'label' => 'content',
-            'description' => 'content',
-            'helper_text' => 'content',
-            'placeholder' => 'content',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -34,7 +22,7 @@ return [
         ],
         'label' => 'Heading',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -45,8 +33,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Heading',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

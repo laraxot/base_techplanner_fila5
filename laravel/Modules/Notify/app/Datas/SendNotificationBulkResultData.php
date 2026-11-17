@@ -14,6 +14,7 @@ class SendNotificationBulkResultData extends Data
 {
     /**
      * @param  Collection<int, array{record: string, channel: string, error: string}>  $errors
+     * @return void
      */
     public function __construct(
         public readonly int $successCount,
@@ -21,10 +22,5 @@ class SendNotificationBulkResultData extends Data
         /** @var Collection<int, array{record: string, channel: string, error: string}> */
         public readonly Collection $errors,
         public readonly int $totalProcessed,
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 }

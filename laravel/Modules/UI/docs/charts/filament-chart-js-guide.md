@@ -1,3 +1,10 @@
+---
+title: "Filament Chart.js Guide"
+qmd: "ui charts filament chart js guide md"
+type: note
+tags: [documentation]
+---
+
 # Filament Chart.js Guide
 
 > **Why this guide?**: To standardize how we use Chart.js in Filament, especially regarding advanced features like plugins (Zoom, Annotations) which are not enabled by default.
@@ -93,13 +100,11 @@ protected function getOptions(): array
 
 ## 3. Best Practices
 
-<<<<<<< HEAD
 -   **Data Loading**: Use `polling` sparingly to avoid server load.
 
 ## 4. Professional Configuration (Standards 2026)
 
 To achieve a premium "SaaS" look, configure your `getOptions()` to control fonts, layouts, and tooltips.
-See the **[LimeSurvey Professional Charts Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)** for the detailed specification on:
 See the **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)** for the detailed specification on:
 -   Font consistency (Inter/Roboto).
 -   Legend positioning.
@@ -108,7 +113,7 @@ See the **[LimeSurvey Professional Charts Guide](../../../limesurvey/docs/profes
 ## 5. PDF Reporting Strategy
 
 **Do NOT** use `dompdf` or client-side canvas capture for charts.
-The architectural standard for Quaeris is **Spatie Laravel PDF** (a wrapper around Browsershot).
+The architectural standard for <nome progetto> is **Spatie Laravel PDF** (a wrapper around Browsershot).
 
 **Pattern:** "Shadow Report Views"
 1.  Create a dedicated Blade view for the report (linear layout).
@@ -118,15 +123,5 @@ The architectural standard for Quaeris is **Spatie Laravel PDF** (a wrapper arou
 
 ---
 **See Also**:
--   [Dashboard Best Practices](../../../Limesurvey/docs/dashboard-best-practices.md)
--   [Professional Charts & PDF Guide](../../../Limesurvey/docs/professional-charts-and-pdfs.md)
 -   [Dashboard Best Practices](../../../limesurvey/docs/dashboard-best-practices.md)
 -   [Professional Charts & PDF Guide](../../../limesurvey/docs/professional-charts-and-pdfs.md)
-=======
--   **Lazy Loading**: Enabled by default in Filament. Keep it.
--   **Colors**: Use Filament's color system or CSS variables rather than hardcoded hex codes to support Dark Mode.
--   **Data Loading**: Use `polling` sparingly to avoid server load.
-
----
-**See Also**: [Export Strategy](./export-strategy.md)
->>>>>>> 6ed19256f (.)

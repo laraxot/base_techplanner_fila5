@@ -23,23 +23,23 @@ class GeoDataService
     /**
      * Chiavi di cache.
      */
-    private const CACHE_KEY_REGIONS = 'geo.regions';
+    private const string CACHE_KEY_REGIONS = 'geo.regions';
 
-    private const CACHE_KEY_PROVINCES = 'geo.provinces.%s';
+    private const string CACHE_KEY_PROVINCES = 'geo.provinces.%s';
 
-    private const CACHE_KEY_CITIES = 'geo.cities.%s';
+    private const string CACHE_KEY_CITIES = 'geo.cities.%s';
 
-    private const CACHE_KEY_CAP = 'geo.cap.%s.%s';
+    private const string CACHE_KEY_CAP = 'geo.cap.%s.%s';
 
     /**
      * Tempo di cache in secondi (24 ore).
      */
-    private const CACHE_TTL = 86400;
+    private const int CACHE_TTL = 86400;
 
     /**
      * Percorso del file JSON.
      */
-    private const JSON_PATH = 'Modules/Geo/resources/json/comuni.json';
+    private const string JSON_PATH = 'Modules/Geo/resources/json/comuni.json';
 
     /**
      * Validatore dei dati.
@@ -107,8 +107,8 @@ class GeoDataService
                     $code = $province['code'] ?? '';
 
                     return [
-                        'name' => \is_string($name) ? $name : (string) $name,
-                        'code' => \is_string($code) ? $code : (string) $code,
+                        'name' => \is_scalar($name) ? (string) $name : '',
+                        'code' => \is_scalar($code) ? (string) $code : '',
                     ];
                 })
                 ->values();
@@ -120,38 +120,18 @@ class GeoDataService
     }
 
     /**
-     * Ottiene le città di una provincia.
+     * Ottiene le città di una provincia come mappa codice => nome.
      *
      * @param string $provinceCode Codice della provincia
      *
-     * @return Collection<int, array{name: string, code: string}>
+     * @return Collection<string, string>
      */
     public function getCities(string $provinceCode): Collection
     {
         $cacheKey = \sprintf(self::CACHE_KEY_CITIES, $provinceCode);
 
-        /** @var Collection<int, array{name: string, code: string}> $result */
-        $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinceCode): Collection {
-            /** @var array<string, mixed>|null $province */
-            $province = $this->loadData()->flatMap(static fn (array $region): array => \is_array($region['provinces'] ?? null)
-                ? $region['provinces']
-                : [])->firstWhere('code', $provinceCode);
-
-            if (! $province || ! \is_array($province) || ! isset($province['cities']) || ! \is_array($province['cities'])) {
-                return new Collection();
-            }
-
-            /** @var array<int, array<string, mixed>> $cities */
-            $cities = $province['cities'];
-
-            /** @var Collection<int, array<string, mixed>> $citiesCollection */
-            $citiesCollection = new Collection($cities);
-
-            /** @var Collection<string, string> $cityResult */
-            $cityResult = $citiesCollection->pluck('name', 'code');
-
-            return $cityResult;
-        });
+        /** @var Collection<string, string> $result */
+        $result = Cache::remember($cacheKey, self::CACHE_TTL, fn (): Collection => $this->loadCities($provinceCode));
 
         return $result;
     }
@@ -167,7 +147,7 @@ class GeoDataService
         $cacheKey = \sprintf(self::CACHE_KEY_CAP, $provinceCode, $cityCode);
 
         /** @var string|null $result */
-        $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinceCode, $cityCode): null|string {
+        $result = Cache::remember($cacheKey, self::CACHE_TTL, function () use ($provinceCode, $cityCode): ?string {
             /** @var array<string, mixed>|null $province */
             $province = $this->loadData()->flatMap(static fn (array $region): array => \is_array($region['provinces'] ?? null)
                 ? $region['provinces']
@@ -201,6 +181,31 @@ class GeoDataService
 
         // Nota: forgetPattern non esiste in Laravel Cache, usiamo forget per le chiavi specifiche
         // In un'implementazione reale, dovremmo mantenere traccia delle chiavi create
+    }
+
+    /**
+     * Carica le città di una provincia come mappa codice => nome.
+     *
+     * @return Collection<string, string>
+     */
+    private function loadCities(string $provinceCode): Collection
+    {
+        /** @var array<string, mixed>|null $province */
+        $province = $this->loadData()->flatMap(static fn (array $region): array => \is_array($region['provinces'] ?? null)
+            ? $region['provinces']
+            : [])->firstWhere('code', $provinceCode);
+
+        if (! $province || ! \is_array($province) || ! isset($province['cities']) || ! \is_array($province['cities'])) {
+            return new Collection();
+        }
+
+        /** @var array<int, array<string, mixed>> $cities */
+        $cities = $province['cities'];
+
+        /** @var Collection<string, string> $cityResult */
+        $cityResult = (new Collection($cities))->pluck('name', 'code');
+
+        return $cityResult;
     }
 
     /**

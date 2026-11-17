@@ -1,152 +1,119 @@
 <?php
 
-declare(strict_types=1);
-
 return [
     'fields' => [
         'stabilimento' => [
-            'label' => 'Nome Stabilimento',
-            'placeholder' => 'Inserisci il nome dello stabilimento',
-            'help' => 'Nome identificativo dello stabilimento',
-<<<<<<< HEAD
+            'label' => 'Facility Name',
+            'placeholder' => 'Enter the facility name',
+            'help' => 'Facility identifier name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'codice' => [
-            'label' => 'Codice',
-            'placeholder' => 'Inserisci il codice stabilimento',
-            'help' => 'Codice univoco dello stabilimento',
-<<<<<<< HEAD
+            'label' => 'Code',
+            'placeholder' => 'Enter the facility code',
+            'help' => 'Unique facility code',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'tipo' => [
             'label' => 'Tipologia',
-            'placeholder' => 'Seleziona la tipologia',
-            'help' => 'Tipo di stabilimento',
-<<<<<<< HEAD
+            'placeholder' => 'Select the category',
+            'help' => 'Facility type',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'totale' => [
-            'label' => 'Totale Performance',
-            'placeholder' => 'Inserisci il totale',
-            'help' => 'Punteggio totale delle performance',
-<<<<<<< HEAD
+            'label' => 'Total Performance',
+            'placeholder' => 'Enter the total',
+            'help' => 'Total performance score',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'media' => [
             'label' => 'Media Performance',
-            'help' => 'Media delle performance individuali',
-<<<<<<< HEAD
+            'help' => 'Average of individual performances',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'periodo' => [
             'label' => 'Periodo',
-            'placeholder' => 'Seleziona il periodo',
-            'help' => 'Periodo di riferimento',
-<<<<<<< HEAD
+            'placeholder' => 'Select the period',
+            'help' => 'Reference period',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'numero' => [
-            'label' => 'Numero Dipendenti',
-            'help' => 'Totale dipendenti dello stabilimento',
-<<<<<<< HEAD
+            'label' => 'Number of Employees',
+            'help' => 'Total employees of the facility',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'valutati' => [
             'label' => 'Dipendenti Valutati',
-            'help' => 'Numero di dipendenti con valutazione',
-<<<<<<< HEAD
+            'help' => 'Number of employees with a rating',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'da_valutare' => [
             'label' => 'Da Valutare',
-            'help' => 'Dipendenti in attesa di valutazione',
-<<<<<<< HEAD
+            'help' => 'Employees awaiting evaluation',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
-            'label' => 'Data Creazione',
-            'help' => 'Data di creazione del record',
-<<<<<<< HEAD
+            'label' => 'Created at',
+            'help' => 'Record creation date',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
-            'label' => 'Ultimo Aggiornamento',
-            'help' => 'Data dell\'ultima modifica',
-<<<<<<< HEAD
+            'label' => 'Last Updated',
+            'help' => 'Date of last modification',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'calculate' => [
             'label' => 'Calcola Totali',
-            'success' => 'Totali calcolati con successo',
-            'error' => 'Errore durante il calcolo dei totali',
+            'success' => 'Totals calculated successfully',
+            'error' => 'Error while calculating totals',
         ],
         'export' => [
-            'label' => 'Esporta Report',
-            'success' => 'Report esportato con successo',
-            'error' => 'Errore durante l\'esportazione',
+            'label' => 'Export Report',
+            'success' => 'Report exported successfully',
+            'error' => 'Error during export',
         ],
         'refresh' => [
             'label' => 'Aggiorna',
-            'success' => 'Dati aggiornati con successo',
-            'error' => 'Errore durante l\'aggiornamento',
+            'success' => 'Data updated successfully',
+            'error' => 'Error during update',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
+        'name' => 'Individuale Tot Stabi',
+        'plural' => 'Individuale Tot Stabi',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

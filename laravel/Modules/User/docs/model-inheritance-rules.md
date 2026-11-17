@@ -1,3 +1,28 @@
+---
+title: "Regole di Ereditarietà dei Modelli - Modulo User"
+type: rule
+tags: [model, inheritance, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "model-inheritance-rules regole di ereditarietà dei modelli - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Regole di Ereditarietà dei Modelli - Modulo User
 
 **Data**: 2025-10-15
@@ -202,11 +227,7 @@ Prima di creare un nuovo modello, verifica:
 
 - [Documentazione Xot BaseModel](../../Xot/docs/model-inheritance-rules.md)
 - [Documentazione Geo Model Pattern](../../Geo/docs/model-inheritance-pattern.md)
-<<<<<<< HEAD
-- [Documentazione Xot BaseModel](../../xot/docs/model-inheritance-rules.md)
-- [Documentazione Geo Model Pattern](../../geo/docs/model-inheritance-pattern.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Documentazione Geo Model Pattern](../../Geo/docs/model-inheritance-pattern.md)
 - [Laravel Eloquent Documentation](https://laravel.com/docs/eloquent)
 
 ## Note Tecniche
@@ -260,15 +281,11 @@ Il comando dovrebbe restituire solo:
 
 ---
 
-*Ultimo aggiornamento: 15 ottobre 2025*
 *Autore: Refactoring automatico con Claude Code*
 
 ## Aggiornamento 2025-11
 
 - `Modules\User\Models\Extra` usa ora `getConnectionName()` pubblico per forzare la connection `user` senza violare le proprietà @final ereditate.
 - PHPStan L10 ✅, PHPMD ✅, PHPInsights ✅ (nessun avviso dopo refactor).
-<<<<<<< HEAD
 - Regola: quando serve una connection custom, override tramite metodo, mai riscrivere `$connection` nelle sottoclassi.
-=======
-- Regola: quando serve una connection custom, override tramite metodo, mai riscrivere `$connection` nelle sottoclassi.
->>>>>>> 6ed19256f (.)
+

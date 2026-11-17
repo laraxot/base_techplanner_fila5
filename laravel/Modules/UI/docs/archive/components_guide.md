@@ -1,3 +1,10 @@
+---
+title: "Guida ai Componenti UI"
+qmd: "ui archive components guide md"
+type: note
+tags: [documentation]
+---
+
 # Guida ai Componenti UI
 
 ## Layout

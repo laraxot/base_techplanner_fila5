@@ -2,128 +2,100 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-use Modules\Gdpr\Models\GdprConsent;
-use Modules\User\Models\User;
+namespace Modules\Gdpr\Tests\Unit\Models;
 
-describe('GDPR Consent Business Logic', function () {
->>>>>>> 6ed19256f (.)
-    it('records consent with required metadata', function () {
-        $user = User::factory()->create();
+use Modules\Gdpr\Database\Factories\ConsentFactory;
+use Modules\Gdpr\Database\Factories\TreatmentFactory;
+use Modules\Gdpr\Models\Consent;
+use Modules\Gdpr\Models\Treatment;
+use Modules\Gdpr\Tests\TestCase;
+use Modules\Xot\Datas\XotData;
+use PHPUnit\Framework\Assert;
 
-        $consent = GdprConsent::create([
-            'user_id' => $user->id,
-            'purpose' => 'marketing_emails',
-            'consent_given' => true,
-            'consent_date' => now(),
-            'ip_address' => '192.168.1.1',
-            'user_agent' => 'Mozilla/5.0',
-            'legal_basis' => 'consent',
-        ]);
+/**
+ * Business logic del model Consent (tracciamento consensi GDPR).
+ */
+final class GdprConsentBusinessLogicTest extends TestCase
+{
+    public function test_declares_audit_and_lifecycle_fields_as_fillable(): void
+    {
+        $consent = new Consent;
 
-        expect($consent)
-            ->toBeInstanceOf(GdprConsent::class)
-            ->and($consent->user_id)
-            ->toBe($user->id)
-            ->and($consent->purpose)
-            ->toBe('marketing_emails')
-            ->and($consent->consent_given)
-            ->toBeTrue()
-            ->and($consent->legal_basis)
-            ->toBe('consent');
-    });
-
-    it('allows consent withdrawal', function () {
-        $consent = GdprConsent::factory()->create([
-            'consent_given' => true,
-        ]);
-
-        $consent->withdraw();
-
-        expect($consent->fresh()->consent_given)->toBeFalse()->and($consent->fresh()->withdrawal_date)->not->toBeNull();
-    });
-
-    it('validates legal basis for processing', function () {
-        $validBases = [
-            'consent',
-            'contract',
-            'legal_obligation',
-            'vital_interests',
-            'public_task',
-            'legitimate_interests',
-        ];
-
-        foreach ($validBases as $basis) {
-            $consent = GdprConsent::factory()->create([
-                'legal_basis' => $basis,
-            ]);
-
-            expect($consent->legal_basis)->toBe($basis);
+        foreach ([
+            'user_id',
+            'user_type',
+            'type',
+            'accepted_at',
+            'ip_address',
+            'user_agent',
+            'metadata',
+            'revoked_at',
+            'revoked_ip_address',
+            'treatment_id',
+        ] as $field) {
+            Assert::assertContains($field, $consent->getFillable());
         }
-    });
+    }
 
-    it('requires parental consent for minors', function () {
-        $minor = User::factory()->create([
-            'date_of_birth' => now()->subYears(14),
+    public function test_casts_consent_metadata_and_timestamps(): void
+    {
+        $casts = (new Consent)->getCasts();
+
+        Assert::assertSame('array', $casts['metadata'] ?? null);
+        Assert::assertSame('datetime', $casts['accepted_at'] ?? null);
+        Assert::assertSame('datetime', $casts['revoked_at'] ?? null);
+    }
+
+    public function test_associates_consent_with_a_treatment_definition(): void
+    {
+        $consent = new Consent;
+
+        Assert::assertSame('treatment_id', $consent->treatment()->getForeignKeyName());
+    }
+
+    public function test_defaults_user_type_to_configured_user_class_when_missing(): void
+    {
+        $consent = (new ConsentFactory)->createOne([
+            'user_type' => '',
         ]);
 
-        $consent = GdprConsent::factory()->create([
-            'user_id' => $minor->id,
-            'purpose' => 'service_provision',
+        Assert::assertSame(XotData::make()->getUserClass(), $consent->user_type);
+    }
+
+    public function test_persists_acceptance_metadata_from_factory_defaults(): void
+    {
+        $consent = (new ConsentFactory)->createOne([
+            'type' => 'marketing_emails',
+            'ip_address' => '192.168.1.1',
         ]);
 
-        expect($consent->requiresParentalConsent())->toBeTrue();
-    });
+        Assert::assertInstanceOf(Consent::class, $consent);
+        Assert::assertSame('marketing_emails', $consent->type);
+        Assert::assertSame('192.168.1.1', $consent->ip_address);
+        Assert::assertNotNull($consent->accepted_at);
+    }
 
-    it('tracks consent history', function () {
-        $user = User::factory()->create();
-
-        // Initial consent
-        $consent1 = GdprConsent::create([
-            'user_id' => $user->id,
-            'purpose' => 'analytics',
-            'consent_given' => true,
-            'consent_date' => now()->subDays(10),
+    public function test_supports_revocation_via_revoked_at(): void
+    {
+        $consent = (new ConsentFactory)->createOne([
+            'revoked_at' => null,
         ]);
 
-        // Consent withdrawal
-        $consent2 = GdprConsent::create([
-            'user_id' => $user->id,
-            'purpose' => 'analytics',
-            'consent_given' => false,
-            'consent_date' => now()->subDays(5),
+        $consent->update(['revoked_at' => now()]);
+
+        $fresh = $consent->fresh();
+        Assert::assertInstanceOf(Consent::class, $fresh);
+        Assert::assertNotNull($fresh->getAttributes()['revoked_at'] ?? null);
+    }
+
+    public function test_links_consent_rows_to_treatment_records(): void
+    {
+        $treatment = (new TreatmentFactory)->createOne();
+        $consent = (new ConsentFactory)->createOne([
+            'treatment_id' => $treatment->id,
         ]);
 
-        // New consent
-        $consent3 = GdprConsent::create([
-            'user_id' => $user->id,
-            'purpose' => 'analytics',
-            'consent_given' => true,
-            'consent_date' => now(),
-        ]);
-
-        $history = GdprConsent::getConsentHistory($user->id, 'analytics');
-
-        expect($history)
-            ->toHaveCount(3)
-            ->and($history->first()->consent_given)
-            ->toBeTrue()
-            ->and($history->get(1)->consent_given)
-            ->toBeFalse();
-    });
-
-    it('validates consent expiration', function () {
-        $expiredConsent = GdprConsent::factory()->create([
-            'consent_date' => now()->subYears(2),
-            'expires_at' => now()->subYear(),
-        ]);
-
-        $validConsent = GdprConsent::factory()->create([
-            'consent_date' => now()->subMonths(6),
-            'expires_at' => now()->addYear(),
-        ]);
-
-        expect($expiredConsent->isExpired())->toBeTrue()->and($validConsent->isExpired())->toBeFalse();
-    });
-});
+        Assert::assertInstanceOf(Treatment::class, $consent->treatment);
+        Assert::assertSame($treatment->id, $consent->treatment_id);
+    }
+}

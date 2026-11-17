@@ -7,10 +7,7 @@ namespace Modules\Geo\Tests;
 use Modules\Xot\Tests\XotBaseTestCase;
 
 /**
- * Lightweight application test case for facade/container tests that do not need DB transactions.
- *
- * Extends XotBaseTestCase (DRY + KISS + Laraxot).
+ * LightTestCase - Base test class for Geo module.
+ * Extends XotBaseTestCase for common test functionality.
  */
-abstract class LightTestCase extends XotBaseTestCase
-{
-}
+abstract class LightTestCase extends XotBaseTestCase {}

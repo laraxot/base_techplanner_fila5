@@ -1,3 +1,15 @@
+---
+title: "data class"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "data class"
+issues: []
+discussions: []
+status: draft
+---
+
 # SmsFactorData Class Documentation
 
 ## Overview
@@ -116,11 +128,7 @@ class SendSmsFactorSMSAction implements SmsActionContract
     public function __construct()
     {
         $this->smsFactorData = SmsFactorData::make();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         if (!$this->smsFactorData->token) {
             throw new Exception('Token SMSFactor non configurato in sms.php');
         }
@@ -133,15 +141,9 @@ class SendSmsFactorSMSAction implements SmsActionContract
             'timeout' => $this->smsFactorData->getTimeout(),
             'headers' => $headers
         ]);
-<<<<<<< HEAD
         
         $response = $client->post(
             $this->smsFactorData->getBaseUrl() . '/messages', 
-=======
-
-        $response = $client->post(
-            $this->smsFactorData->getBaseUrl() . '/messages',
->>>>>>> 6ed19256f (.)
             ['json' => $body]
         );
     }

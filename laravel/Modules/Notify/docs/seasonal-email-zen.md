@@ -1,10 +1,18 @@
+---
+title: "seasonal email zen"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "seasonal email zen"
+issues: []
+discussions: []
+status: draft
+---
+
 # The Zen of Seasonal Emails
 
 **Date**: 2025-12-19
-<<<<<<< HEAD
-**Date**: 2025-12-19
-=======
->>>>>>> 6ed19256f (.)
 **By**: Antigravity
 
 ## Philosophy
@@ -43,7 +51,7 @@ Data must flow transparently to the view.
 ### The "Elegant" Variant
 
 We introduced `christmas-elegant.html` to serve a specific need: **Professional Festivity**.
-Not all brands want red/green and cartoons. Some want "Silent Night" — deep blues, gold, serif fonts.
+Not all brands want red/green and cartoons. Some want "Silent Night": deep blues, gold, serif fonts.
 This demonstrates the flexibility of the system: multiple "skins" for the same context.
 
 ## Reflections & Future
@@ -52,8 +60,4 @@ This demonstrates the flexibility of the system: multiple "skins" for the same c
 - **Improvement**: We could add a "Preview" feature in the backend to see how `base.html` transforms contextually.
 - **Verification**: Static analysis tools (PHPStan/PHPMD) ensure the *plumbing* is leak-proof, but only the *human eye* can verify the *feeling* of the template.
 
-<<<<<<< HEAD
 *"Code is temporary, the feeling you give the user is permanent."*
-=======
-*"Code is temporary, the feeling you give the user is permanent."*
->>>>>>> 6ed19256f (.)

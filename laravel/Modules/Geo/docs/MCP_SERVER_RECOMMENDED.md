@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_u8XKXd
+---
+title: "MCP SERVER RECOMMENDED"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "MCP SERVER RECOMMENDED"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_cEai5d
 # MCP Server Consigliati per il Modulo Geo
 
 ## Scopo del Modulo

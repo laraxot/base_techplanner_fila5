@@ -1,3 +1,10 @@
+---
+title: "custom theme"
+qmd: "ui custom theme md"
+type: note
+tags: [documentation]
+---
+
 https://blog.jpat.dev/build-custom-components-inside-a-filament-v3-panel-with-livewire-and-tailwindcss
 
 

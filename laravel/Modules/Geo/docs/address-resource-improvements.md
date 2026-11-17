@@ -1,6 +1,16 @@
+---
+title: "address resource improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "address resource improvements"
+issues: []
+discussions: []
+---
+
 # Suggerimenti di Miglioramento per AddressResource.php
 
-**Data**: 2025-07-30
 **File**: `/laravel/Modules/Geo/app/Filament/Resources/AddressResource.php`
 **Priorità**: Alta (per performance e manutenibilità)
 
@@ -248,8 +258,4 @@ public static function getSearchStep(): array
 - [ ] Configurazione Google Maps API
 - [ ] Preparazione dati di test geografici
 - [ ] Review architetturale con team
-<<<<<<< HEAD
 - [ ] Pianificazione rollback strategy
-=======
-- [ ] Pianificazione rollback strategy
->>>>>>> 6ed19256f (.)

@@ -1,7 +1,7 @@
 ---
-module: theme
-topic: test
-canonical: ../../../Themes/docs/shared-components/.gitkeep-Modules
+title: "test"
+qmd: "ui test md"
+type: note
+tags: [documentation]
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep-Modules

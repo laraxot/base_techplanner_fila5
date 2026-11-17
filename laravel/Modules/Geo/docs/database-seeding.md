@@ -1,3 +1,14 @@
+---
+title: "database seeding"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database seeding"
+issues: []
+discussions: []
+---
+
 # Database Seeding - Moduli <nome modulo> e <nome progetto>
 
 ## Panoramica
@@ -222,13 +233,8 @@ php bashscripts/database/seeding/<nome progetto>-1000-records.php
 
 ## Collegamenti e Riferimenti
 
-- [README BashScripts](../bashscripts/README.md)
-- [Quick Start Seeding](../bashscripts/database/seeding/QUICK_START.md)
-<<<<<<< HEAD
 - [README BashScripts](../bashscripts/readme.md)
-- [Quick Start Seeding](../bashscripts/database/seeding/quick_start.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Quick Start Seeding](database/seeding/quick_start.md)
 - [Documentazione Modulo <nome progetto>](../laravel/Modules/<nome progetto>/docs/)
 - [Documentazione Modulo <nome modulo>](../laravel/Modules/<nome modulo>/docs/)
 - [Documentazione Modulo <nome progetto>](../laravel/Modules/<nome progetto>/docs/)
@@ -236,11 +242,14 @@ php bashscripts/database/seeding/<nome progetto>-1000-records.php
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025
+title: "database seeding"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "database seeding"
+issues: []
+discussions: []
 **Versione**: 2.0
 **Compatibilità**: Laravel 10+, Moduli <nome progetto>/<nome modulo>
-<<<<<<< HEAD
 **Compatibilità**: Laravel 10+, Moduli <nome progetto>/<nome progetto>
-=======
-**Compatibilità**: Laravel 10+, Moduli <nome progetto>/<nome progetto>
->>>>>>> 6ed19256f (.)

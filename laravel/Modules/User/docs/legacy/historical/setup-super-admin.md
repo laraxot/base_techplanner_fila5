@@ -382,7 +382,7 @@ php artisan view:cache
 ### Documentazione Locale
 - [User Module README](../readme.md)
 - [Roles & Permissions](./roles-permissions.md)
-- [Authentication](./authentication.md)
+- [Authentication](../../authentication.md)
 
 ### Migrazioni Correlate
 - [Create Roles Table](../database/migrations/2024_01_01_000011_create_roles_table.php)

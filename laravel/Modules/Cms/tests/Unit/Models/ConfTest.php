@@ -2,33 +2,33 @@
 
 declare(strict_types=1);
 
-
 use Modules\Cms\Models\Conf;
+use PHPUnit\Framework\Assert;
 
 test('Conf model can be instantiated', function () {
-    $conf = new Conf();
+    Assert::assertSame(Conf::class, (new Conf)::class);
 
-    expect($conf)->toBeInstanceOf(Conf::class);
 });
 
 test('Conf model has expected fillable fields', function () {
-    $conf = new Conf();
+    $conf = new Conf;
 
     $fillable = $conf->getFillable();
 
-    expect($fillable)->toContain('id')
-        ->and($fillable)->toContain('name');
+    Assert::assertContains('id', $fillable);
+
+    Assert::assertContains('name', $fillable);
 });
 
 test('Conf model has name as route key', function () {
-    $conf = new Conf();
+    $conf = new Conf;
 
-    expect($conf->getRouteKeyName())->toBe('name');
+    Assert::assertSame('name', $conf->getRouteKeyName());
 });
 
 test('Conf model uses Sushi trait', function () {
     $reflection = new ReflectionClass(Conf::class);
     $traits = $reflection->getTraitNames();
 
-    expect(in_array(Sushi\Sushi::class, $traits))->toBeTrue();
+    Assert::assertTrue(in_array(Sushi\Sushi::class, $traits));
 });

@@ -1,3 +1,10 @@
+---
+title: "Task: UI Filament v5 \\u0026 Tailwind v4 Alignment"
+qmd: "ui tasks ui filament v5 md"
+type: note
+tags: [documentation]
+---
+
 # Task: UI Filament v5 \u0026 Tailwind v4 Alignment
 
 ## 📋 Obiettivo

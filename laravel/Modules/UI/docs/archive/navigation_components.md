@@ -1,3 +1,10 @@
+---
+title: "Componenti di Navigazione"
+qmd: "ui archive navigation components md"
+type: note
+tags: [documentation]
+---
+
 # Componenti di Navigazione 
 
 ## Indice
@@ -68,7 +75,8 @@ I componenti di navigazione devono utilizzare sempre le funzioni di localizzazio
 
 ### Traduzioni Necessarie
 
-Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/ptvx/laravel/lang/{locale}/auth.php`:
+Assicurarsi che le seguenti chiavi di traduzione siano definite in `/var/www/html/saluteora/laravel/lang/{locale}/auth.php`:
+
 ```php
 return [
     'login' => [

@@ -1,3 +1,28 @@
+---
+title: "Ottimizzazioni Super DRY + KISS - Modulo User"
+type: concept
+tags: [ottimizzazioni, super, dry, kiss]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni-super-dry-kiss ottimizzazioni super dry + kiss - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Ottimizzazioni Super DRY + KISS - Modulo User
 
 ## 🎯 Panoramica
@@ -350,25 +375,16 @@ class User extends Model
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Core](../../../../docs/core/)
+- [Documentazione Core](core)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
-=======
-- [Documentazione Core](../../../docs/core/)
-- [Best Practices Filament](../../../docs/core/filament-best-practices.md)
-- [Convenzioni Sistema](../../../docs/core/conventions.md)
-- [Template Modulo](../../../docs/templates/module-template.md)
->>>>>>> 6ed19256f (.)
 
 ---
 
 **Responsabile:** Team User
 **Data:** 2025-01-XX
 **Stato:** In Analisi
-<<<<<<< HEAD
 **Priorità:** CRITICA
-=======
 **Priorità:** CRITICA
->>>>>>> 6ed19256f (.)

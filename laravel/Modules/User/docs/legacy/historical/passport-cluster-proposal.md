@@ -1,6 +1,6 @@
 # Proposta: Implementazione di Laravel Passport in un Filament Cluster
 
-**Status**: ✅ **IMPLEMENTATO** - Vedi [passport-cluster-summary.md](./passport-cluster-summary.md)
+**Status**: ✅ **IMPLEMENTATO** - Vedi [passport-cluster-summary.md](../../passport-cluster-summary.md)
 
 ## Riepilogo
 
@@ -52,7 +52,7 @@ protected static ?string $cluster = Passport::class;
 3. ✅ **Manutenibilità**: Più facile trovare e gestire le risorse OAuth
 4. ✅ **Conformità Laravel**: Segue le best practices di Laravel Filament
 
-**Documentazione completa**: Vedi [passport-cluster-summary.md](./passport-cluster-summary.md)
+**Documentazione completa**: Vedi [passport-cluster-summary.md](../../passport-cluster-summary.md)
 
 ## Schema.org: Campi e Modelli Proposti
 

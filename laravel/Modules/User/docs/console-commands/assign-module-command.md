@@ -1,3 +1,20 @@
+---
+title: "AssignModuleCommand - Gestione Moduli Utente"
+type: concept
+tags: [assign, module, command]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "assign-module-command assignmodulecommand - gestione moduli utente"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./change-password-command.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./README.md"
+status: draft
+---
+
 # AssignModuleCommand - Gestione Moduli Utente
 
 ## Descrizione
@@ -34,11 +51,7 @@ Current modules for admin@example.com: User, Xot, UI
 
 Select modules (checked = assigned, unchecked = will be revoked):
  ◉ User
-<<<<<<< HEAD
  ◉ Xot  
-=======
- ◉ Xot
->>>>>>> 6ed19256f (.)
  ◉ UI
  ◯ Performance
  ◯ Patient
@@ -60,20 +73,12 @@ class AssignModuleCommand extends Command
 {
     protected $name = 'user:assign-module';
     protected $description = 'Assign or revoke modules to/from user';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function handle(): void
     {
         // Implementazione del flusso
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     private function getUserModuleRoles(UserContract $user): array
     {
         // Estrazione ruoli modulo dell'utente
@@ -84,11 +89,7 @@ class AssignModuleCommand extends Command
 ### Logica di Assegnazione
 1. **Recupero Moduli Disponibili**: `Module::all()` per tutti i moduli
 2. **Estrazione Ruoli Correnti**: Filtra ruoli con pattern `{module}::admin`
-<<<<<<< HEAD
 3. **Calcolo Differenze**: 
-=======
-3. **Calcolo Differenze**:
->>>>>>> 6ed19256f (.)
    - `$modulesToAssign = array_diff($selectedModules, $currentModules)`
    - `$modulesToRevoke = array_diff($currentModules, $selectedModules)`
 4. **Assegnazione**: `$user->assignRole($role)` per nuovi moduli
@@ -108,11 +109,7 @@ class AssignModuleCommand extends Command
 
 ### Messaggi di Feedback
 - **Info**: Operazioni di assegnazione completate
-<<<<<<< HEAD
 - **Warn**: Operazioni di revoca completate  
-=======
-- **Warn**: Operazioni di revoca completate
->>>>>>> 6ed19256f (.)
 - **Error**: Errori critici (utente non trovato)
 
 ## Best Practices
@@ -159,11 +156,7 @@ Result: ✓ Assigned Performance, ✓ Assigned Patient
 
 ### Scenario 2: Revoca Moduli
 ```
-<<<<<<< HEAD
 Input: admin@example.com  
-=======
-Input: admin@example.com
->>>>>>> 6ed19256f (.)
 Current: User, Xot, Performance, Patient
 Selected: User, Xot
 Result: ✗ Revoked Performance, ✗ Revoked Patient
@@ -178,16 +171,10 @@ Result: No changes made to user modules.
 ```
 
 ## Collegamenti
-- [Console Commands Philosophy](console_commands_philosophy.md)
-- [User Models](models/README.md)
-- [Role Management](models/role-management.md)
-- [README.md](../README.md)
-<<<<<<< HEAD
+- [Console Commands Philosophy](console-commands-philosophy.md)
 - [User Models](models/readme.md)
 - [Role Management](models/role-management.md)
-- [README.md](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [README.md](../README.md)
 
 ## Aggiornamenti
 
@@ -197,9 +184,3 @@ Result: No changes made to user modules.
 - ✅ **Feedback Migliorato**: Messaggi chiari per assegnazioni e revoche
 - ✅ **Gestione Errori**: Controlli preventivi per utenti non trovati
 - ✅ **Documentazione**: Documentazione completa con esempi
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27* 
-=======
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)

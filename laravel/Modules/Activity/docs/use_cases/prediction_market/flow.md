@@ -1,8 +1,11 @@
-<<<<<<< HEAD
+---
+title: "Flusso degli Eventi - <nome progetto>ion Market"
+qmd: "activity use cases prediction market flow md"
+type: note
+tags: [documentation]
+---
+
 # Flusso degli Eventi - <nome progetto>ion Market
-=======
-# Flusso degli Eventi - Prediction Market
->>>>>>> 6ed19256f (.)
 
 ## 1. Creazione Mercato
 ```mermaid
@@ -39,8 +42,4 @@ sequenceDiagram
 
 ## 4. Audit Trail e Rollback
 - Tutti gli eventi sono persistiti e possono essere rigiocati per ricostruire lo stato
-<<<<<<< HEAD
 - Possibilità di rollback tramite snapshot e replay
-=======
-- Possibilità di rollback tramite snapshot e replay
->>>>>>> 6ed19256f (.)

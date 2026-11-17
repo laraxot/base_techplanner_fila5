@@ -1,3 +1,10 @@
+---
+title: "Data Handling in Blade Components"
+qmd: "ui archive blade data handling 1 md"
+type: note
+tags: [documentation]
+---
+
 # Data Handling in Blade Components
 
 This document outlines best practices for data handling in Blade components, particularly in theme blocks used for content sections.

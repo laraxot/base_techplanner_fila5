@@ -1,11 +1,17 @@
 ---
+title: "geo module"
+tags: [documentation]
+created: 2026-09-26
+qmd: "geo module"
+issues: []
+discussions: []
 type: overview
 module: Geo
 sources:
-  - ../../../architecture.md
-  - ../../../business-logic-overview.md
-  - ../../../address-implementation.md
-  - ../../../structure.md
+  - ../../architecture.md
+  - ../../business-logic-overview.md
+  - ../../address-implementation.md
+  - ../../structure.md
 confidence: high
 updated: 2026-04-15
 ---

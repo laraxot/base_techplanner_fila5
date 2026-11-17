@@ -4,38 +4,30 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'cache lock',
+        'name' => 'Blocco cache',
         'plural' => 'cache locks',
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'Lock Cache',
+        'icon' => 'heroicon-o-shield-exclamation',
+        'sort' => 95,
     ],
     'pages' => [
         'health_check_results' => [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
-<<<<<<< HEAD
             'heading' => 'Application Health',
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Cache Lock',
     'plural_label' => 'Cache Lock (Plurale)',
     'fields' => [
@@ -61,14 +53,24 @@ return [
     'actions' => [
         'create' => [
             'label' => 'Crea Cache Lock',
+            'icon' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Cache Lock',
+            'icon' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Cache Lock',
+            'icon' => 'delete',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'view' => [
+            'icon' => 'view',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,10 @@
+---
+title: "UI Module - Roadmap"
+qmd: "ui roadmap 00 index md"
+type: note
+tags: [documentation]
+---
+
 # UI Module - Roadmap
 
 > Ecosistema UI Headless-first: Tailwind v4, Flux, Design Tokens.

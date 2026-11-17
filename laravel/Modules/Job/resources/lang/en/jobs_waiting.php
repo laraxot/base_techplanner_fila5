@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -72,35 +71,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'connection' => [
-            'label' => 'Connection',
-        ],
-        'queue' => [
-            'label' => 'Queue',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-        ],
-        'attempts' => [
-            'label' => 'Attempts',
-        ],
-        'status' => [
-            'label' => 'Status',
-        ],
-        'display_name' => [
-            'label' => 'Display Name',
-        ],
-        'reserved_at' => [
-            'label' => 'Reserved At',
-        ],
-        'available_at' => [
-            'label' => 'Available At',
-        ],
-        'created_at' => [
-            'label' => 'Created At',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

@@ -14,7 +14,6 @@ return [
     'updated_by' => 'updated_by',
     'deleted_at' => 'deleted_at',
     'deleted_by' => 'deleted_by',
-<<<<<<< HEAD
     'label' => 'Xls Action',
     'plural_label' => 'Xls Action (Plurale)',
     'navigation' => [
@@ -26,7 +25,7 @@ return [
         ],
         'label' => 'Xls Action',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'xot-files.xls',
     ],
     'fields' => [
         'id' => [
@@ -59,6 +58,4 @@ return [
             'label' => 'Elimina Xls Action',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

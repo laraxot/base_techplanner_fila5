@@ -10,12 +10,11 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei team e delle loro autorizzazioni',
         ],
-        'label' => 'team',
+        'label' => 'Team',
         'sort' => '18',
         'icon' => 'user-team',
     ],
     'fields' => [
-<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -29,172 +28,89 @@ return [
             'description' => '',
         ],
         'detach' => [
-            'label' => 'detach',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'create' => [
-            'label' => 'create',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'attach' => [
-            'label' => 'attach',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'view' => [
-            'label' => 'view',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'updated_at' => [
-            'label' => 'updated_at',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'created_at' => [
-            'label' => 'created_at',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'users_count' => [
-            'label' => 'users_count',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'updated_at' => [
-            'label' => 'updated_at',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'users_count' => [
-            'label' => 'users_count',
-        ],
-        'name' => [
-            'label' => 'name',
->>>>>>> 6ed19256f (.)
         ],
         'recordId' => [
-            'label' => 'recordId',
-            'description' => 'recordId',
-            'helper_text' => 'recordId',
-            'placeholder' => 'recordId',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         'personal_team' => [
-            'label' => 'personal_team',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'personal_team' => [
-            'label' => 'personal_team',
->>>>>>> 6ed19256f (.)
         ],
         'role' => [
-            'label' => 'role',
-            'description' => 'role',
-            'helper_text' => 'role',
-            'placeholder' => 'role',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
-            'description' => 'description',
-            'helper_text' => 'description',
-            'placeholder' => 'description',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -210,9 +126,6 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
-        'create' => [
-            'label' => 'create',
-        ],
     ],
     'plural' => [
         'model' => [
@@ -222,9 +135,6 @@ return [
     'model' => [
         'label' => 'team.model',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

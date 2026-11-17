@@ -7,18 +7,17 @@ namespace Modules\UI\Tests\Unit\Widgets;
 use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Components\Component;
-use Modules\UI\Filament\Widgets\BaseCalendarWidget;
+use Modules\UI\Tests\Unit\Widgets\Fixtures\BaseCalendarWidgetStub;
 
 /**
  * Widget di supporto per i test del BaseCalendarWidget.
  */
-class MockCalendarWidget extends BaseCalendarWidget
+class MockCalendarWidget extends BaseCalendarWidgetStub
 {
     public string $model = MockEventModel::class;
 
     /**
-     * @param array<string, mixed> $fetchInfo
-     *
+     * @param  array<string, mixed>  $fetchInfo
      * @return array<int, array{id:int, title:string, start:string, end:string, color:string}>
      */
     public function fetchEvents(array $fetchInfo): array

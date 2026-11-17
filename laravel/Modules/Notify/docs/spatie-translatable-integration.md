@@ -1,3 +1,15 @@
+---
+title: "spatie translatable integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "spatie translatable integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Integrazione Spatie Translatable nel Modulo Notify
 
 ## Overview
@@ -27,11 +39,7 @@ public function panel(Panel $panel): Panel
         SpatieTranslatablePlugin::make()
             ->defaultLocales(['it', 'en']),
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     return parent::panel($panel);
 }
 ```
@@ -86,11 +94,7 @@ use Spatie\Translatable\HasTranslations;
 class MailTemplate extends BaseModel
 {
     use HasTranslations;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Campi traducibili.
      *
@@ -142,29 +146,17 @@ Nel form di edit/create:
 
 ### Errore: Plugin Not Registered
 
-<<<<<<< HEAD
 **Causa**: Plugin non registrato nel panel  
-=======
-**Causa**: Plugin non registrato nel panel
->>>>>>> 6ed19256f (.)
 **Soluzione**: Vedere [plugin-spatie-translatable-not-registered.md](./errori/plugin-spatie-translatable-not-registered.md)
 
 ### Errore: Undefined Method `getTranslation()`
 
-<<<<<<< HEAD
 **Causa**: Modello non ha trait `HasTranslations`  
-=======
-**Causa**: Modello non ha trait `HasTranslations`
->>>>>>> 6ed19256f (.)
 **Soluzione**: Aggiungere trait e proprietà `$translatable`
 
 ### Switcher Non Visibile
 
-<<<<<<< HEAD
 **Causa**: Page non usa trait `Translatable`  
-=======
-**Causa**: Page non usa trait `Translatable`
->>>>>>> 6ed19256f (.)
 **Soluzione**: Verificare che Page estenda `LangBaseListRecords`
 
 ## Pattern Architetturale
@@ -211,11 +203,7 @@ use Spatie\Translatable\HasTranslations;
 class MyModel extends BaseModel
 {
     use HasTranslations;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public array $translatable = ['field1', 'field2'];
 }
 ```
@@ -228,11 +216,7 @@ use LaraZeus\SpatieTranslatable\Resources\Concerns\Translatable;
 class MyResource extends LangBaseResource
 {
     use Translatable;  // Solo se il modello è traducibile!
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public static function getTranslatableLocales(): array
     {
         return ['it', 'en'];
@@ -259,11 +243,7 @@ test('can switch locale', function () {
     Livewire::test(ListMailTemplates::class)
         ->callAction('locale_switcher', data: ['locale' => 'en'])
         ->assertSuccessful();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
     expect(app()->getLocale())->toBe('en');
 });
 ```
@@ -292,22 +272,13 @@ Schema::table('mail_templates', function (Blueprint $table) {
 
 ### Documentazione Interna
 - [Errore Plugin Not Registered](./errori/plugin-spatie-translatable-not-registered.md)
-- [Lang Module README](../../Lang/docs/README.md)
-- [Filament Panels Configuration](../../Xot/docs/filament/panel-configuration.md)
-<<<<<<< HEAD
 - [Lang Module README](../../lang/docs/readme.md)
+- [Lang Module README](../../Lang/docs/readme.md)
 - [Filament Panels Configuration](../../xot/docs/filament/panel-configuration.md)
 
 ---
-
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Status**: ✅ PLUGIN REGISTRATO  
 **Compatibilità**: Filament 4.x
-=======
 
----
 
-**Ultimo aggiornamento**: 27 Ottobre 2025
-**Status**: ✅ PLUGIN REGISTRATO
-**Compatibilità**: Filament 4.x
->>>>>>> 6ed19256f (.)

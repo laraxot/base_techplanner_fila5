@@ -5,11 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Tokens de Acceso OAuth',
-<<<<<<< HEAD
-        'group' => '',
-=======
         'group' => 'OAuth',
->>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-key',
         'sort' => 33,
     ],
@@ -18,47 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'user_id' => [
-            'label' => 'Usuario',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'client_id' => [
-            'label' => 'Cliente',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'name' => [
-            'label' => 'Nombre',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'scopes' => [
-            'label' => 'Ámbitos',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'revoked' => [
-            'label' => 'Revocado',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'expires_at' => [
-            'label' => 'Expira en',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
         ],
         'user_id' => [
             'label' => 'Usuario',
@@ -77,7 +32,6 @@ return [
         ],
         'expires_at' => [
             'label' => 'Expira en',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

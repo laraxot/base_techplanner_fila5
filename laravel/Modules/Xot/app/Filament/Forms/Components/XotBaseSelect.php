@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Filament\Forms\Components;
 
-<<<<<<< HEAD
 use Filament\Forms\Components\Select as FilamentSelect;
-=======
-use Filament\Forms\Components\Select;
->>>>>>> 6ed19256f (.)
 
 /**
  * Base class for custom Select components following Laraxot philosophy.
@@ -18,13 +14,9 @@ use Filament\Forms\Components\Select;
  * This ensures consistency with the framework's architecture and provides
  * a foundation for common Select functionality across the application.
  *
- * @method static static make(string $name) Create a new instance of the component
+ * @method static static make(?string $name = null) Create a new instance of the component
  */
-<<<<<<< HEAD
 abstract class XotBaseSelect extends FilamentSelect
-=======
-abstract class XotBaseSelect extends Select
->>>>>>> 6ed19256f (.)
 {
     protected function setUp(): void
     {

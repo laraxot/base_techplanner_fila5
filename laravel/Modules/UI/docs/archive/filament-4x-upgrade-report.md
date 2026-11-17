@@ -1,3 +1,10 @@
+---
+title: "Rapporto Aggiornamento Filament 4.x - Modulo UI"
+qmd: "ui archive filament 4x upgrade report md"
+type: note
+tags: [documentation]
+---
+
 # Rapporto Aggiornamento Filament 4.x - Modulo UI
 
 **Status**: ✅ COMPLETATO

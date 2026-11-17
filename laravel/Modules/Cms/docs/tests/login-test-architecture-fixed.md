@@ -1,3 +1,14 @@
+---
+title: "login test architecture fixed"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "login test architecture fixed"
+issues: []
+discussions: []
+---
+
 # Login Test Architecture - PROBLEMA RISOLTO ✅
 
 ## 🎯 Executive Summary
@@ -132,23 +143,20 @@ test('any user type can login successfully', function (): void {
 
 ## 📖 **Collegamenti**
 
-- [XotData Architecture](../../Modules/Xot/docs/best-practices.md)
-- [UserContract Interface](../../Modules/Xot/Contracts/UserContract.php)
-- [Modular Testing Guide](../../docs/testing/modular-independence.md)
-<<<<<<< HEAD
-- [XotData Architecture](../../modules/xot/docs/best-practices.md)
+- [XotData Architecture](../best-practices.md)
 - [UserContract Interface](../../Modules/Xot/Contracts/UserContract.php)
 - [Modular Testing Guide](../../../docs/testing/modular-independence.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ---
 
+title: "login test architecture fixed"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "login test architecture fixed"
+issues: []
+discussions: []
 **Status**: ✅ COMPLETATO
 **Priorità**: 🚨 P0 - CRITICO (ora risolto)
-**Ultimo Aggiornamento**: 2025-01-16
-<<<<<<< HEAD
 **Validato**: Test in passing ✅
-=======
-**Validato**: Test in passing ✅
->>>>>>> 6ed19256f (.)

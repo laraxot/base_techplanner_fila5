@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://github.com/barryvdh/laravel-translation-manager/blob/master/src/Models/Translation.php
  */
@@ -9,42 +8,48 @@ declare(strict_types=1);
 namespace Modules\Lang\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Arr;
-use Illuminate\Support\Facades\File;
-use Modules\Lang\Actions\GetAllTranslationAction;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Log;
 use Modules\Lang\Database\Factories\TranslationFileFactory;
+use Modules\Lang\Models\Traits\TranslationFileRowLoader;
 use Modules\Xot\Contracts\ProfileContract;
-
-use function Safe\json_encode;
-
 use Sushi\Sushi;
 
 /**
- * @property string|null                  $key
- * @property string|null                  $path
- * @property string|null                  $id
- * @property string|null                  $name
+ * @property string|null $key
+ * @property string|null $path
+ * @property string|null $id
+ * @property string|null $name
  * @property array<array-key, mixed>|null $content
- * @property ProfileContract|null         $creator
- * @property ProfileContract|null         $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
- * @method static TranslationFileFactory          factory($count = null, $state = [])
- * @method static Builder<static>|TranslationFile newModelQuery()
- * @method static Builder<static>|TranslationFile newQuery()
- * @method static Builder<static>|TranslationFile query()
- * @method static Builder<static>|TranslationFile whereContent($value)
- * @method static Builder<static>|TranslationFile whereId($value)
- * @method static Builder<static>|TranslationFile whereKey($value)
- * @method static Builder<static>|TranslationFile whereName($value)
- * @method static Builder<static>|TranslationFile wherePath($value)
+ * @method static TranslationFileFactory factory($count = null, $state = [])
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static Builder<static> whereContent($value)
+ * @method static Builder<static> whereId($value)
+ * @method static Builder<static> whereKey($value)
+ * @method static Builder<static> whereName($value)
+ * @method static Builder<static> wherePath($value)
  *
  * @property ProfileContract|null $deleter
  *
- * @mixin \Eloquent
+ * @mixin Model
  */
 class TranslationFile extends BaseModel
 {
     use Sushi;
+    use TranslationFileRowLoader;
+
+    /**
+     * La chiave è il nome del file (`xot::yes_no_enum`): senza keyType string ogni id
+     * diventava 0, l'elenco ripeteva la stessa riga e "Modifica" apriva `/translation-files/0` (404).
+     */
+    protected $keyType = 'string';
+
+    public $incrementing = false;
 
     protected $fillable = [
         'id',
@@ -53,6 +58,7 @@ class TranslationFile extends BaseModel
         'content',
     ];
 
+    /** @var array<string, string> */
     protected array $form = [
         'key' => 'string',
         'path' => 'string',
@@ -61,46 +67,26 @@ class TranslationFile extends BaseModel
         'content' => 'json',
     ];
 
+    /**
+     * @return array<int, array<string, mixed>>
+     */
     public function getRows(): array
     {
-        $files = app(GetAllTranslationAction::class)->execute();
+        if ($this->isRunningIdeHelper()) {
+            return [];
+        }
 
-        return Arr::map($files, function ($item) {
-            if (! is_array($item)) {
-                return [];
-            }
+        try {
+            return $this->loadTranslationDataWithErrorHandling();
+        } catch (\Throwable $e) {
+            Log::warning('TranslationFile::getRows failed', [
+                'error' => $e->getMessage(),
+                'file' => $e->getFile(),
+                'line' => $e->getLine(),
+            ]);
 
-            $item['id'] = isset($item['key']) ? (string) $item['key'] : '';
-            $item['name'] = isset($item['path']) ? basename((string) $item['path'], '.php') : '';
-
-            if (isset($item['path'])) {
-                $path = (string) $item['path'];
-                if (File::exists($path)) {
-                    try {
-                        $content = File::getRequire($path);
-                        $item['content'] = json_encode($content);
-                    } catch (\Exception $e) {
-                        $item['content'] = '';
-                    }
-                } else {
-                    $item['content'] = '';
-                }
-            } else {
-                $item['content'] = '';
-            }
-
-            /*
-             * // Carica il contenuto del file
-             * try {
-             * $readAction = app(ReadTranslationFileAction::class);
-             * $item['content'] = $readAction->execute($item['path']);
-             * } catch (\Exception $e) {
-             * $item['content'] = [];
-             * }
-             */
-            // dddx($item);
-            return $item;
-        });
+            return [];
+        }
     }
 
     /**

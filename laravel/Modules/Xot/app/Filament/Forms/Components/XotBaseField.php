@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\Xot\Filament\Forms\Components;
 
 use Filament\Forms\Components\Field;
-<<<<<<< HEAD
 use Modules\Xot\Actions\View\GetViewByClassAction;
-=======
->>>>>>> 6ed19256f (.)
 
 /**
  * Base class for form components.
@@ -17,7 +14,6 @@ use Modules\Xot\Actions\View\GetViewByClassAction;
  */
 abstract class XotBaseField extends Field
 {
-<<<<<<< HEAD
     /**
      * Laraxot rule: subclasses must NOT declare a protected $view property.
      * The view is resolved at runtime and can be overridden by the active theme.
@@ -34,6 +30,4 @@ abstract class XotBaseField extends Field
 
         return app(GetViewByClassAction::class)->execute($class);
     }
-=======
->>>>>>> 6ed19256f (.)
 }

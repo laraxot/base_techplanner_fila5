@@ -91,7 +91,7 @@ class ListArticles extends XotBaseListRecords
                         ->label('')
                         // ->acceptedFileTypes(['application/json', 'json'])
                         ->imagePreviewHeight('250')
-                        ->reactive()
+                        ->live()
                         ->afterStateUpdated(static function (callable $set, TemporaryUploadedFile $state): void {
                             $set('fileContent', File::get($state->getRealPath()));
                         }),
@@ -100,7 +100,11 @@ class ListArticles extends XotBaseListRecords
                 ->label('')
                 ->tooltip('Import')
                 ->icon('heroicon-o-folder-open')
-                ->action(static fn (array $data) => app(ImportArticlesFromByJsonTextAction::class)->execute((string) $data['fileContent'])),
+                ->action(static function (array $data): void {
+                    $content = $data['fileContent'] ?? '';
+                    $fileContent = is_string($content) ? $content : (is_scalar($content) ? (string) $content : '');
+                    app(ImportArticlesFromByJsonTextAction::class)->execute($fileContent);
+                }),
         ];
     }
 }

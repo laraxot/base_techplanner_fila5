@@ -1,6 +1,16 @@
+---
+title: "bulk coordinate updates"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bulk coordinate updates"
+issues: []
+discussions: []
+---
+
 # Bulk Coordinate Updates
 
-**Last Update**: 18 Dicembre 2025
 **Status**: ✅ Implementation Complete
 **Module**: Geo
 
@@ -92,8 +102,12 @@ public function getTableBulkActions(): array
 
 ---
 
-<<<<<<< HEAD
+title: "bulk coordinate updates"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "bulk coordinate updates"
+issues: []
+discussions: []
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-=======
-*Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
->>>>>>> 6ed19256f (.)

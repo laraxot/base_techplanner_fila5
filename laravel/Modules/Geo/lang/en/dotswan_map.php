@@ -9,8 +9,6 @@ return [
     ],
     'fields' => [
         'location' => [
-            'label' => 'location',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -18,10 +16,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

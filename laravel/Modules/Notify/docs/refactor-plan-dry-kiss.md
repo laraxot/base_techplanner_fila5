@@ -1,3 +1,15 @@
+---
+title: "refactor plan dry kiss"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "refactor plan dry kiss"
+issues: []
+discussions: []
+status: draft
+---
+
 # Piano di Refactor DRY/KISS - Documentazione Modulo Notify
 
 ## Problema Identificato
@@ -76,7 +88,7 @@ Applicare convenzioni consistenti:
 - **Gerarchici**: Struttura cartelle logica
 
 #### Esempi Trasformazioni
-- `analisi-dettagliata-1.md` → `architecture/detailed-analysis.md`
+- `analisi-dettagliata-architettura-struttura.md` → `architecture/detailed-analysis.md`
 - `email-templates-spatie.md` → `integrations/spatie-email.md`
 - `sms_netfun_channel.md` → `sms/netfun-provider.md`
 
@@ -145,14 +157,7 @@ Creare sistema di navigazione coerente:
 - Onboarding sviluppatori semplificato
 
 ---
-
-<<<<<<< HEAD
 **Stato**: In corso  
 **Priorità**: Alta  
 **Responsabile**: Sistema automatico  
-=======
-**Stato**: In corso
-**Priorità**: Alta
-**Responsabile**: Sistema automatico
->>>>>>> 6ed19256f (.)
 **Deadline**: Immediata

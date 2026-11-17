@@ -4,7 +4,7 @@
 
 set -e
 
-MODULES_DIR="/var/www/_bases/base_quaeris_fila4_mono/laravel/Modules"
+MODULES_DIR="/var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules"
 
 echo "🔍 Correzione Naming Conventions - Tutti i Moduli"
 echo "================================================"
@@ -15,18 +15,18 @@ convert_filename() {
     local file="$1"
     local basename=$(basename "$file")
     local dirname=$(dirname "$file")
-    
+
     # Skip README.md (unica eccezione)
     if [ "$basename" = "README.md" ]; then
         return 0
     fi
-    
+
     # Converti in lowercase e sostituisci underscore con trattino
     local newname=$(echo "$basename" | tr '[:upper:]' '[:lower:]' | sed 's/_/-/g')
-    
+
     # Rimuovi date (pattern YYYY-MM-DD)
     newname=$(echo "$newname" | sed -E 's/-[0-9]{4}-[0-9]{2}-[0-9]{2}//g')
-    
+
     # Se il nome è cambiato, rinomina
     if [ "$basename" != "$newname" ]; then
         local newpath="$dirname/$newname"
@@ -51,18 +51,18 @@ tar -czf "$BACKUP_FILE" */docs/ 2>/dev/null || true
 echo ""
 
 # Processa ogni modulo
-for module in Activity AI Blog Chart CloudStorage Cms Comment DbForge Fixcity Gdpr Geo Job Lang Limesurvey Media Notify Quaeris Rating Seo Tenant UI User Xot; do
+for module in Activity AI Blog Chart CloudStorage Cms Comment DbForge Fixcity Gdpr Geo Job Lang Limesurvey Media Notify <nome progetto> Rating Seo Tenant UI User Xot; do
     if [ ! -d "$MODULES_DIR/$module/docs" ]; then
         continue
     fi
-    
+
     echo "📁 Modulo: $module"
-    
+
     # Trova tutti i .md (eccetto archive/)
     find "$MODULES_DIR/$module/docs" -type f -name "*.md" ! -path "*/archive/*" | while read file; do
         convert_filename "$file"
     done
-    
+
     echo ""
 done
 

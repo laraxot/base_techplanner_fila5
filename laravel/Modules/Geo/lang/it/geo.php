@@ -19,11 +19,7 @@ return [
                 'name' => 'Mappa',
                 'group' => 'Geo',
                 'sort' => 10,
-<<<<<<< HEAD
                 'icon' => 'ui-geo-map',
-=======
-                'icon' => 'ui-geo-map', // Questo è già corretto
->>>>>>> 6ed19256f (.)
                 'badge' => [
                     'color' => 'info',
                     'label' => 'Interattiva',
@@ -48,11 +44,7 @@ return [
                 'name' => 'Posizioni',
                 'group' => 'Geo',
                 'sort' => 20,
-<<<<<<< HEAD
                 'icon' => 'ui-geo-location',
-=======
-                'icon' => 'ui-geo-location', // Questo è già corretto
->>>>>>> 6ed19256f (.)
                 'badge' => [
                     'color' => 'warning',
                     'label' => 'Da Verificare',
@@ -110,7 +102,6 @@ return [
             'date_range' => 'Periodo',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Geo',
     'plural_label' => 'Geo (Plurale)',
     'fields' => [
@@ -173,6 +164,4 @@ return [
         'no_results' => 'Nessun risultato',
         'coordinates_set' => 'Coordinate impostate',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,10 @@
+---
+title: "custom_firm_fields"
+qmd: "ui integration custom firm fields md"
+type: note
+tags: [documentation]
+---
+
 # custom_firm_fields
 
 <!-- Contenuto migrato da _docs/custom_firm_fields.txt -->

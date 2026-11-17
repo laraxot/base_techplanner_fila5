@@ -20,7 +20,6 @@ return [
             'profile' => 'Profile',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Navs',
     'plural_label' => 'Navs (Plurale)',
     'navigation' => [
@@ -65,6 +64,4 @@ return [
             'label' => 'Elimina Navs',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

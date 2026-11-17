@@ -17,252 +17,179 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-            'tooltip' => 'Identificativo unico del Job Manager',
-            'placeholder' => 'ID del Manager',
-<<<<<<< HEAD
+            'tooltip' => 'Unique Job Manager identifier',
+            'placeholder' => 'Manager ID',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'Name',
             'tooltip' => 'Name of the Job Manager',
             'placeholder' => 'Enter name',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Description',
             'tooltip' => 'Brief description of the job manager',
             'placeholder' => 'Job Manager description',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Status',
             'tooltip' => 'Current status of the Job Manager',
             'placeholder' => 'Select status',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Type',
             'tooltip' => 'Type of Job Manager',
             'placeholder' => 'Select type',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'priority' => [
             'label' => 'Priority',
             'tooltip' => 'Execution priority of the job manager',
             'placeholder' => 'Select priority',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'max_attempts' => [
             'label' => 'Max Attempts',
             'tooltip' => 'Maximum number of attempts to run the job manager',
             'placeholder' => 'Max attempts',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'timeout' => [
             'label' => 'Timeout',
             'tooltip' => 'Maximum execution time for the job manager',
             'placeholder' => 'Timeout',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Created At',
             'tooltip' => 'Creation date of the Job Manager',
             'placeholder' => 'Creation date',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Updated At',
             'tooltip' => 'Date of last update',
             'placeholder' => 'Update date',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_run' => [
             'label' => 'Last Run',
             'tooltip' => 'Date and time of last execution',
             'placeholder' => 'Last run',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'next_run' => [
             'label' => 'Next Run',
             'tooltip' => 'Date and time of next execution',
             'placeholder' => 'Next run',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'cron_expression' => [
             'label' => 'Cron Expression',
             'tooltip' => 'Cron expression for job scheduling',
             'placeholder' => 'Enter cron expression',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'output' => [
             'label' => 'Output',
             'tooltip' => 'Job execution output',
             'placeholder' => 'Output',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'error' => [
             'label' => 'Error',
             'tooltip' => 'Error message if the job fails',
             'placeholder' => 'Error',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard',
             'tooltip' => 'Guard associated with the Job Manager',
             'placeholder' => 'Select Guard',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Permissions',
             'tooltip' => 'Permissions associated with the Job Manager',
             'placeholder' => 'Select permissions',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'first_name' => [
-            'label' => 'Nome',
-            'tooltip' => 'Nome dell\'utente associato',
-            'placeholder' => 'Inserisci nome',
-<<<<<<< HEAD
+            'label' => 'Name',
+            'tooltip' => 'Name of the associated user',
+            'placeholder' => 'Enter name',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
-            'label' => 'Cognome',
-            'tooltip' => 'Cognome dell\'utente associato',
-            'placeholder' => 'Inserisci cognome',
-<<<<<<< HEAD
+            'label' => 'Last name',
+            'tooltip' => 'Last name of the associated user',
+            'placeholder' => 'Enter last name',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'import' => [
-            'label' => 'Importa',
+            'label' => 'Import',
             'modal' => [
-                'heading' => 'Importa Job Manager',
-                'description' => 'Seleziona un file XLS o CSV da caricare per importare il Job Manager',
+                'heading' => 'Import Job Manager',
+                'description' => 'Select an XLS or CSV file to upload to import the Job Manager',
             ],
             'messages' => [
-                'success' => 'Importazione del Job Manager avviata con successo',
+                'success' => 'Job Manager import started successfully',
             ],
             'icon' => 'upload',
             'color' => 'primary',
         ],
         'export' => [
-            'label' => 'Esporta',
+            'label' => 'Export',
             'modal' => [
-                'heading' => 'Esporta Job Manager',
-                'description' => 'Esporta i dati del Job Manager in un file',
+                'heading' => 'Export Job Manager',
+                'description' => 'Export the Job Manager data to a file',
             ],
             'messages' => [
-                'success' => 'Job Manager esportato con successo',
+                'success' => 'Job Manager exported successfully',
             ],
             'icon' => 'download',
             'color' => 'success',
@@ -270,65 +197,65 @@ return [
         'run' => [
             'label' => 'Esegui',
             'modal' => [
-                'heading' => 'Esegui Job Manager',
-                'description' => 'Vuoi eseguire questo Job Manager?',
+                'heading' => 'Run Job Manager',
+                'description' => 'Do you want to run this Job Manager?',
             ],
             'messages' => [
-                'success' => 'Job Manager avviato con successo',
+                'success' => 'Job Manager started successfully',
             ],
             'icon' => 'play',
             'color' => 'primary',
         ],
         'pause' => [
-            'label' => 'Pausa',
+            'label' => 'Pause',
             'modal' => [
                 'heading' => 'Metti in Pausa',
-                'description' => 'Vuoi mettere in pausa questo Job Manager?',
+                'description' => 'Do you want to pause this Job Manager?',
             ],
             'messages' => [
-                'success' => 'Job Manager messo in pausa con successo',
+                'success' => 'Job Manager paused successfully',
             ],
             'icon' => 'pause',
             'color' => 'warning',
         ],
         'resume' => [
-            'label' => 'Riprendi',
+            'label' => 'Resume',
             'modal' => [
-                'heading' => 'Riprendi Esecuzione',
-                'description' => 'Vuoi riprendere l\'esecuzione di questo Job Manager?',
+                'heading' => 'Resume Execution',
+                'description' => 'Do you want to resume this Job Manager?',
             ],
             'messages' => [
-                'success' => 'Job Manager ripreso con successo',
+                'success' => 'Job Manager resumed successfully',
             ],
             'icon' => 'redo',
             'color' => 'success',
         ],
         'delete' => [
-            'label' => 'Elimina',
+            'label' => 'Delete',
             'modal' => [
-                'heading' => 'Elimina Job Manager',
-                'description' => 'Sei sicuro di voler eliminare questo Job Manager?',
+                'heading' => 'Delete Job Manager',
+                'description' => 'Are you sure you want to delete this Job Manager?',
             ],
             'messages' => [
-                'success' => 'Job Manager eliminato con successo',
+                'success' => 'Job Manager deleted successfully',
             ],
             'icon' => 'trash',
             'color' => 'danger',
         ],
     ],
     'messages' => [
-        'no_jobs' => 'Nessun Job Manager presente',
-        'manager_started' => 'Job Manager avviato',
-        'manager_paused' => 'Job Manager in pausa',
-        'manager_resumed' => 'Job Manager ripreso',
-        'manager_completed' => 'Job Manager completato',
-        'manager_failed' => 'Job Manager fallito',
+        'no_jobs' => 'No Job Managers found',
+        'manager_started' => 'Job Manager started',
+        'manager_paused' => 'Job Manager paused',
+        'manager_resumed' => 'Job Manager resumed',
+        'manager_completed' => 'Job Manager completed',
+        'manager_failed' => 'Job Manager failed',
     ],
     'statuses' => [
         'active' => 'Attivo',
         'paused' => 'In Pausa',
-        'completed' => 'Completato',
-        'failed' => 'Fallito',
+        'completed' => 'Completed',
+        'failed' => 'Failed',
     ],
     'types' => [
         'scheduler' => 'Schedulatore',
@@ -342,9 +269,6 @@ return [
         'high' => 'Alta',
         'urgent' => 'Urgente',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,13 +1,19 @@
+---
+title: "contact extraction pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contact extraction pattern"
+issues: []
+discussions: []
+status: draft
+---
+
 # Pattern DRY: Estrazione Attributi Contatti da Modelli
 
-<<<<<<< HEAD
-**Data**: 2025-01-18  
 **Data**: 2025-01-18  
 **Modulo**: Notify  
-=======
-**Data**: 2025-01-18
-**Modulo**: Notify
->>>>>>> 6ed19256f (.)
 **Status**: ✅ Pattern consolidato
 
 ## Problema Identificato
@@ -206,16 +212,10 @@ Utilizzo:
 
 - [DRY Composition Pattern](./dry-composition-pattern.md) - Pattern composizione Actions
 - [SendRecordNotificationAction](../../app/Actions/SendRecordNotificationAction.php) - Implementazione completa
+- [SendRecordNotificationAction](../app/Actions/SendRecordNotificationAction.php) - Implementazione completa
 - [SendNotificationBulkAction](./send-notification-bulk-action.md) - Azione bulk che usa SendRecordNotificationAction
 
 ---
-
-<<<<<<< HEAD
 **Filosofia**: "Estrai una volta, usa ovunque" - DRY Principle  
 **Pattern**: Metodo generico + wrapper specifici  
 **Beneficio**: ~30 righe duplicate eliminate, codice più manutenibile
-=======
-**Filosofia**: "Estrai una volta, usa ovunque" - DRY Principle
-**Pattern**: Metodo generico + wrapper specifici
-**Beneficio**: ~30 righe duplicate eliminate, codice più manutenibile
->>>>>>> 6ed19256f (.)

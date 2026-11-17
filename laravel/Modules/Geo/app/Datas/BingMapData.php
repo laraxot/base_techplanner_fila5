@@ -24,19 +24,14 @@ class BingMapData extends Data
      *         postalCode: ?string,
      *         addressLine: ?string,
      *         countryRegionIso2: ?string,
-<<<<<<< HEAD
      *         neighborhood: ?string,
-     *         houseNumber?: ?string
-=======
-     *         neighborhood: ?string
->>>>>>> 6ed19256f (.)
+     *         houseNumber: ?string
      *     }
      * } $data
      */
     public function __construct(
         private readonly array $data,
-    ) {
-    }
+    ) {}
 
     /**
      * Converte i dati in un array.
@@ -53,12 +48,8 @@ class BingMapData extends Data
      *         postalCode: ?string,
      *         addressLine: ?string,
      *         countryRegionIso2: ?string,
-<<<<<<< HEAD
      *         neighborhood: ?string,
-     *         houseNumber?: ?string
-=======
-     *         neighborhood: ?string
->>>>>>> 6ed19256f (.)
+     *         houseNumber: ?string
      *     }
      * }
      */

@@ -18,6 +18,9 @@ class ScheduleOptions extends TextColumn
         return $this;
     }
 
+    /**
+     * @return array<int|string, string>
+     */
     public function getTags(): array
     {
         if ($this->record === null) {
@@ -27,10 +30,7 @@ class ScheduleOptions extends TextColumn
         if ($this->withValue && \is_object($this->record) && method_exists($this->record, 'getOptions')) {
             $options = $this->record->getOptions();
             Assert::isArray($options);
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
             /** @var array<int|string, string> $options */
             return $options;
         }

@@ -26,7 +26,6 @@ return [
         'finished' => 'Το πρόγραμμά σας εγκαταστάθηκε με επιτυχία.',
         'exit' => 'Πατήστε εδώ για έξοδο.',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -36,10 +35,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

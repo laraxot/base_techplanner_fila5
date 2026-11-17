@@ -2,16 +2,20 @@
 
 declare(strict_types=1);
 
+use Modules\Activity\Actions\LogUserLogoutAction;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
 uses(\Modules\Activity\Tests\TestCase::class);
 
-use Modules\Activity\Actions\LogUserLogoutAction;
-use Modules\User\Models\User;
+test('LogUserLogoutAction can execute for a user', function (): void {
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(User::class, $user);
 
-test('LogUserLogoutAction can be instantiated', function () {
-    $user = User::factory()->make();
+    $action = new LogUserLogoutAction;
+    $activity = $action->execute($user);
 
-    $action = new LogUserLogoutAction($user);
-
-    expect($action)->toBeObject()
-        ->and($action->user)->toBe($user);
+    Assert::assertSame($user->getKey(), $activity->causer_id);
 });

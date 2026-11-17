@@ -6,34 +6,34 @@ namespace Modules\TechPlanner\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 
 /**
  * Class LegalRepresentative.
  *
+ * @property-read Client|null $client
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ *
+ * @method static Builder<static>|LegalRepresentative newModelQuery()
+ * @method static Builder<static>|LegalRepresentative newQuery()
+ * @method static Builder<static>|LegalRepresentative query()
+ *
  * @property int $id
+ * @property int $client_id
  * @property string $name
- * @property string|null $identification_number
+ * @property string|null $fiscal_code
  * @property string|null $phone
  * @property string|null $email
- * @property int $client_id
- * @property string|null $fiscal_code
+ * @property string|null $notes
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $updated_by
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- * @property-read Client $client
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
- * @method static Builder<static>|LegalRepresentative newModelQuery()
- * @method static Builder<static>|LegalRepresentative newQuery()
- * @method static Builder<static>|LegalRepresentative query()
  * @method static Builder<static>|LegalRepresentative whereClientId($value)
  * @method static Builder<static>|LegalRepresentative whereCreatedAt($value)
  * @method static Builder<static>|LegalRepresentative whereCreatedBy($value)
@@ -43,29 +43,24 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|LegalRepresentative whereFiscalCode($value)
  * @method static Builder<static>|LegalRepresentative whereId($value)
  * @method static Builder<static>|LegalRepresentative whereName($value)
+ * @method static Builder<static>|LegalRepresentative whereNotes($value)
  * @method static Builder<static>|LegalRepresentative wherePhone($value)
  * @method static Builder<static>|LegalRepresentative whereUpdatedAt($value)
  * @method static Builder<static>|LegalRepresentative whereUpdatedBy($value)
-<<<<<<< HEAD
  *
- * @property-read Profile|null $deleter
- *
-=======
- * @property-read Profile|null $deleter
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class LegalRepresentative extends BaseModel
 {
-    protected $fillable = [
-        'name',
-        'identification_number',
-        'phone',
-        'email',
-    ];
+    use SoftDeletes;
+
+    /** Le colonne della tabella (2026-11-10: prima mancavano client_id e altre, e ce n'erano di inesistenti). */
+    protected $fillable = ['client_id', 'name', 'fiscal_code', 'phone', 'email', 'notes'];
 
     /**
      * Get the client that owns the legal representative.
+     *
+     * @return BelongsTo<Client, $this>
      */
     public function client(): BelongsTo
     {

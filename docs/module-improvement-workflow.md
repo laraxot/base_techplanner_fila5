@@ -90,13 +90,8 @@ Migliorare sistematicamente tutti i moduli utilizzando PHPStan livello 10, PHPMD
 
 ## Collegamenti
 
-- [Complete Tools Analysis](./complete-tools-analysis-2025-01-06.md)
-- [Git Conflicts Resolution](./git-conflicts-resolution-2025-01-06.md)
-- [Module Analysis Report](./module-analysis-report-2025-01-06.md)
+- [Complete Tools Analysis](./complete-tools-analysis.md)
+- [Git Conflicts Resolution](./git-conflicts-resolution.md)
+- [Module Analysis Report](./module-analysis-report.md)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
-
->>>>>>> 6ed19256f (.)

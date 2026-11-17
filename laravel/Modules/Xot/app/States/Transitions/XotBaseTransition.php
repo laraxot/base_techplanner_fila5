@@ -4,34 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Xot\States\Transitions;
 
-<<<<<<< HEAD
-=======
-use BackedEnum;
->>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\Notify\Datas\RecordNotificationData;
 use Modules\Notify\Notifications\RecordNotification;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\UserContract;
-<<<<<<< HEAD
 use Webmozart\Assert\InvalidArgumentException;
 
 abstract class XotBaseTransition
-=======
-use Spatie\ModelStates\Transition;
-use TypeError;
-use Webmozart\Assert\InvalidArgumentException;
-
-abstract class XotBaseTransition extends Transition
->>>>>>> 6ed19256f (.)
 {
     public function __construct(
         public Model $record,
         public ?string $message = '',
-    ) {
-    }
+    ) {}
 
     public function handle(): Model
     {
@@ -42,12 +30,7 @@ abstract class XotBaseTransition extends Transition
         $stateClassName = Str::of($class)->afterLast('To')->toString();
         $newStateClass = $stateNamespace.'\\'.$stateClassName;
 
-<<<<<<< HEAD
         $this->record->setAttribute('state', new $newStateClass($this->record));
-=======
-        /* @phpstan-ignore-next-line */
-        $this->record->state = new $newStateClass($this->record);
->>>>>>> 6ed19256f (.)
         $this->record->save();
 
         return $this->record;
@@ -80,7 +63,7 @@ abstract class XotBaseTransition extends Transition
     /**
      * Get notification attachments.
      *
-     * @return array<int, array<string, string>>
+     * @return array<int, array{path?: string, data?: mixed, as?: string|null, mime?: string|null}>
      */
     public function getNotificationAttachments(): array
     {
@@ -90,11 +73,7 @@ abstract class XotBaseTransition extends Transition
     public function getNotificationSlug(UserContract $recipient): string
     {
         $typeEnum = $recipient->type;
-<<<<<<< HEAD
-        $type = $typeEnum instanceof \BackedEnum ? (string) $typeEnum->value : 'unknown';
-=======
-        $type = $typeEnum instanceof BackedEnum ? (string) $typeEnum->value : 'unknown';
->>>>>>> 6ed19256f (.)
+        $type = $typeEnum instanceof \BackedEnum ? SafeStringCastAction::cast($typeEnum->value) : 'unknown';
 
         $slug =
             class_basename($this->record).
@@ -108,11 +87,7 @@ abstract class XotBaseTransition extends Transition
     }
 
     /**
-<<<<<<< HEAD
-     * @param array<string, mixed> $data
-=======
      * @param  array<string, mixed>  $data
->>>>>>> 6ed19256f (.)
      */
     public function sendRecipientNotification(RecordNotificationData $recipient, array $data): void
     {
@@ -135,11 +110,7 @@ abstract class XotBaseTransition extends Transition
 
         try {
             Notification::route($recipient->getChannel(), $recipient->getRoute())->notify($notify);
-<<<<<<< HEAD
         } catch (\TypeError|InvalidArgumentException $e) {
-=======
-        } catch (TypeError|InvalidArgumentException $e) {
->>>>>>> 6ed19256f (.)
             $message = 'channel :['.$recipient->getChannel().'] error: ['.$e->getMessage().']';
             FilamentNotification::make()
                 ->title('Error')

@@ -1,3 +1,10 @@
+---
+title: "effetcts"
+qmd: "ui effetcts md"
+type: note
+tags: [documentation]
+---
+
 https://mridul2820.github.io/css-js/
 
 https://github.com/Mridul2820/css-js

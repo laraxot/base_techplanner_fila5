@@ -1,11 +1,29 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+---
+
 # 📊 GDPR Charts - Privacy & Compliance Reporting
 
 **Modulo**: GDPR
-**Data**: 2025-12-09
 **Status**: ✅ Production Ready
 
 ---
 
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
 ## 📋 Overview
 
 Chart widgets per monitoraggio conformità GDPR, richieste privacy e metriche compliance.
@@ -292,8 +310,3 @@ class ComplianceHeatmapChart extends HeatmapChartWidget
 ---
 
 **Autore**: PTVX Development Team
-<<<<<<< HEAD
-**Ultimo Aggiornamento**: 2025-12-09
-=======
-**Ultimo Aggiornamento**: 2025-12-09
->>>>>>> 6ed19256f (.)

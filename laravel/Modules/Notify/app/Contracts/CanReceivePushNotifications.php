@@ -12,20 +12,16 @@ use Illuminate\Support\Collection;
 interface CanReceivePushNotifications
 {
     /**
-     * @return Collection<string>
+     * @return Collection<int, string>
      */
     public function getMobileDeviceTokens(): Collection;
 
     /**
-     * Get the value of the model's primary key.
-     * non si puo usare mixed che cs lo cancella.
-<<<<<<< HEAD
-     */
-    public function getKey(): string|int|null;
-=======
+     * Chiave primaria del modello notificabile (come Model::getKey()).
+     * Senza tipo di ritorno: Model::getKey() non lo dichiara e un tipo qui renderebbe
+     * incompatibile (fatal) ogni modello che implementa il contratto.
      *
-     * @return string|int|null
+     * @return int|string|null
      */
     public function getKey();
->>>>>>> 6ed19256f (.)
 }

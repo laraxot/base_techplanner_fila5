@@ -3,69 +3,35 @@
 declare(strict_types=1);
 
 return [
-    'actions' => [
-        'create' => [
-            'label' => 'create',
-        ],
-        'lang' => [
-            'label' => 'lang',
-        ],
-    ],
     'fields' => [
         'edit' => [
-            'label' => 'edit',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
         ],
         'content' => [
-            'description' => 'content',
-            'helper_text' => 'content',
-            'placeholder' => 'content',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> 6ed19256f (.)
         ],
         'snapshots' => [
             'fields' => [
@@ -83,31 +49,20 @@ return [
                     ],
                 ],
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'key' => [
-            'label' => 'key',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'key' => [
-            'label' => 'key',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -119,9 +74,6 @@ return [
     'model' => [
         'label' => 'translation file.model',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

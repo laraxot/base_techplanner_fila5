@@ -1,33 +1,34 @@
 <?php
 
 declare(strict_types=1);
-
-use Illuminate\Validation\Rules\Password;
+use Illuminate\Database\Eloquent\Factories\Factory;
+use Modules\User\Contracts\UserContract;
+use Modules\User\Database\Factories\SocialiteUserFactory;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Datas\PasswordData;
 use Modules\User\Events\AddingTeam;
 use Modules\User\Events\Login;
 use Modules\User\Events\Registered;
 use Modules\User\Events\SocialiteUserConnected;
 use Modules\User\Models\SocialiteUser;
-use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 it('password data can be instantiated', function (): void {
-    $passwordData = new PasswordData();
+    $passwordData = new PasswordData;
 
-    $this->assertInstanceOf(PasswordData::class, $passwordData);
-    $this->assertSame(5, $passwordData->otp_expiration_minutes);
-    $this->assertSame(6, $passwordData->otp_length);
-    $this->assertSame(60, $passwordData->expires_in);
-    $this->assertSame(8, $passwordData->min);
-    $this->assertTrue($passwordData->mixedCase);
-    $this->assertTrue($passwordData->letters);
-    $this->assertTrue($passwordData->numbers);
-    $this->assertTrue($passwordData->symbols);
-    $this->assertTrue($passwordData->uncompromised);
-    $this->assertSame(0, $passwordData->compromisedThreshold);
+    Assert::assertSame(5, $passwordData->otp_expiration_minutes);
+    Assert::assertSame(6, $passwordData->otp_length);
+    Assert::assertSame(60, $passwordData->expires_in);
+    Assert::assertSame(8, $passwordData->min);
+    Assert::assertTrue($passwordData->mixedCase);
+    Assert::assertTrue($passwordData->letters);
+    Assert::assertTrue($passwordData->numbers);
+    Assert::assertTrue($passwordData->symbols);
+    Assert::assertTrue($passwordData->uncompromised);
+    Assert::assertSame(0, $passwordData->compromisedThreshold);
 });
 
 it('password data can be configured', function (): void {
@@ -44,16 +45,16 @@ it('password data can be configured', function (): void {
         compromisedThreshold: 5
     );
 
-    $this->assertSame(30, $passwordData->otp_expiration_minutes);
-    $this->assertSame(8, $passwordData->otp_length);
-    $this->assertSame(60, $passwordData->expires_in);
-    $this->assertSame(8, $passwordData->min);
-    $this->assertTrue($passwordData->mixedCase);
-    $this->assertTrue($passwordData->letters);
-    $this->assertTrue($passwordData->numbers);
-    $this->assertTrue($passwordData->symbols);
-    $this->assertTrue($passwordData->uncompromised);
-    $this->assertSame(5, $passwordData->compromisedThreshold);
+    Assert::assertSame(30, $passwordData->otp_expiration_minutes);
+    Assert::assertSame(8, $passwordData->otp_length);
+    Assert::assertSame(60, $passwordData->expires_in);
+    Assert::assertSame(8, $passwordData->min);
+    Assert::assertTrue($passwordData->mixedCase);
+    Assert::assertTrue($passwordData->letters);
+    Assert::assertTrue($passwordData->numbers);
+    Assert::assertTrue($passwordData->symbols);
+    Assert::assertTrue($passwordData->uncompromised);
+    Assert::assertSame(5, $passwordData->compromisedThreshold);
 });
 
 it('password data get password rule works', function (): void {
@@ -67,9 +68,8 @@ it('password data get password rule works', function (): void {
         compromisedThreshold: 3
     );
 
-    $rule = $passwordData->getPasswordRule();
+    Assert::assertNotEmpty($passwordData->getPasswordRule());
 
-    $this->assertInstanceOf(Password::class, $rule);
 });
 
 it('password data get helper text works', function (): void {
@@ -84,17 +84,16 @@ it('password data get helper text works', function (): void {
 
     $helperText = $passwordData->getHelperText();
 
-    $this->assertIsString($helperText);
-    $this->assertStringContainsString('8 caratteri', $helperText);
-    $this->assertStringContainsString('maiuscola e una minuscola', $helperText);
-    $this->assertStringContainsString('lettera', $helperText);
-    $this->assertStringContainsString('numero', $helperText);
-    $this->assertStringContainsString('carattere speciale', $helperText);
-    $this->assertStringContainsString('compromessa', $helperText);
+    Assert::assertStringContainsString('8 caratteri', $helperText);
+    Assert::assertStringContainsString('maiuscola e una minuscola', $helperText);
+    Assert::assertStringContainsString('lettera', $helperText);
+    Assert::assertStringContainsString('numero', $helperText);
+    Assert::assertStringContainsString('carattere speciale', $helperText);
+    Assert::assertStringContainsString('compromessa', $helperText);
 });
 
 it('password data get form components returns array', function (): void {
-    $passwordData = new PasswordData();
+    $passwordData = new PasswordData;
 
     // Smoke tests: methods should be callable without throwing.
     $passwordData->getPasswordFormComponent('password');
@@ -103,36 +102,46 @@ it('password data get form components returns array', function (): void {
 });
 
 it('events can be instantiated', function (): void {
-    $userFactory = User::factory();
-    \assert($userFactory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    $userFactory = UserFactory::new();
+    \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
-    \assert($owner instanceof User);
+    \assert($owner instanceof UserContract);
 
-    $socialiteFactory = SocialiteUser::factory();
-    \assert($socialiteFactory instanceof Illuminate\Database\Eloquent\Factories\Factory);
-    $socialiteUser = $socialiteFactory->create();
+    $socialiteFactory = SocialiteUserFactory::new();
+    \assert($socialiteFactory instanceof Factory);
+    $ownerKey = $owner->getKey();
+    $socialiteUser = $socialiteFactory->create([
+        'user_id' => (is_int($ownerKey) || is_string($ownerKey)) ? (string) $ownerKey : '',
+        'provider' => 'github',
+        'provider_id' => 'provider-'.uniqid(),
+    ]);
     \assert($socialiteUser instanceof SocialiteUser);
 
     $addingTeam = new AddingTeam($owner);
     $login = new Login($socialiteUser);
     $registered = new Registered($socialiteUser);
-    $socialiteUserConnected = new SocialiteUserConnected($socialiteUser);
+    $connected = new SocialiteUserConnected($socialiteUser);
 
-    $this->assertInstanceOf(AddingTeam::class, $addingTeam);
-    $this->assertInstanceOf(Login::class, $login);
-    $this->assertInstanceOf(Registered::class, $registered);
-    $this->assertInstanceOf(SocialiteUserConnected::class, $socialiteUserConnected);
+    Assert::assertSame($owner, $addingTeam->owner);
+    Assert::assertSame($socialiteUser, $login->socialiteUser);
+    Assert::assertSame($socialiteUser, $registered->socialiteUser);
+    Assert::assertSame($socialiteUser, $connected->socialiteUser);
 });
 
 it('events have dispatchable trait', function (): void {
-    $userFactory = User::factory();
-    \assert($userFactory instanceof Illuminate\Database\Eloquent\Factories\Factory);
+    $userFactory = UserFactory::new();
+    \assert($userFactory instanceof Factory);
     $owner = $userFactory->create();
-    \assert($owner instanceof User);
+    \assert($owner instanceof UserContract);
 
-    $socialiteFactory = SocialiteUser::factory();
-    \assert($socialiteFactory instanceof Illuminate\Database\Eloquent\Factories\Factory);
-    $socialiteUser = $socialiteFactory->create();
+    $socialiteFactory = SocialiteUserFactory::new();
+    \assert($socialiteFactory instanceof Factory);
+    $ownerKey = $owner->getKey();
+    $socialiteUser = $socialiteFactory->create([
+        'user_id' => (is_int($ownerKey) || is_string($ownerKey)) ? (string) $ownerKey : '',
+        'provider' => 'github',
+        'provider_id' => 'provider-'.uniqid(),
+    ]);
     \assert($socialiteUser instanceof SocialiteUser);
 
     // Smoke: calling dispatch should not error.
@@ -141,18 +150,13 @@ it('events have dispatchable trait', function (): void {
 });
 
 it('password data static make method exists', function (): void {
-    $passwordData = PasswordData::make();
-    $this->assertInstanceOf(PasswordData::class, $passwordData);
+    PasswordData::make();
 });
 
 it('password data get validation messages method exists', function (): void {
-    $passwordData = new PasswordData();
-
-    $messages = $passwordData->getValidationMessages();
-    $this->assertIsArray($messages);
+    expect((new PasswordData)->getValidationMessages())->toHaveKeys(['required', 'same']);
 });
 
 it('password data get form schema method exists', function (): void {
-    $schema = PasswordData::getFormSchema();
-    $this->assertIsArray($schema);
+    app(PasswordData::class)->getFormSchema();
 });

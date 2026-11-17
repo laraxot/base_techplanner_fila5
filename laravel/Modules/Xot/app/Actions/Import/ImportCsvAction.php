@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Import;
 
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Support\Facades\DB;
@@ -15,15 +11,10 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\ColumnData;
-<<<<<<< HEAD
-
-use function Safe\ini_set;
-
-=======
-use function Safe\ini_set;
->>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
+
+use function Safe\ini_set;
 
 class ImportCsvAction
 {
@@ -32,21 +23,12 @@ class ImportCsvAction
     /**
      * Import a CSV file into a database table.
      *
-<<<<<<< HEAD
-     * @param string $disk     the storage disk where the file is located
-     * @param string $filename the name of the file to import
-     * @param string $db       the database connection name
-     * @param string $tbl      the table name where data will be imported
-     *
-     * @throws \Exception
-=======
      * @param  string  $disk  the storage disk where the file is located
      * @param  string  $filename  the name of the file to import
      * @param  string  $db  the database connection name
      * @param  string  $tbl  the table name where data will be imported
      *
-     * @throws Exception
->>>>>>> 6ed19256f (.)
+     * @throws \Exception
      */
     public function execute(string $disk, string $filename, string $db, string $tbl): void
     {
@@ -89,7 +71,7 @@ class ImportCsvAction
     /**
      * Get table columns excluding certain fields.
      *
-     * @return array<ColumnData>
+     * @return array<int, ColumnData>
      */
     private function getTableColumns(Builder $conn, string $tbl): array
     {
@@ -97,12 +79,7 @@ class ImportCsvAction
         $excludedColumns = ['id'];
 
         return array_map(
-<<<<<<< HEAD
-            function ($column) use ($conn, $tbl) {
-                /** @var string $column */
-=======
             function (string $column) use ($conn, $tbl) {
->>>>>>> 6ed19256f (.)
                 $type = $conn->getColumnType($tbl, $column);
 
                 return new ColumnData(
@@ -117,22 +94,13 @@ class ImportCsvAction
     /**
      * Prepare fields for the SQL query.
      *
-<<<<<<< HEAD
-     * @param array<ColumnData> $columns
-=======
-     * @param  array<ColumnData>  $columns
->>>>>>> 6ed19256f (.)
-     *
+     * @param  array<int, ColumnData>  $columns
      * @return array<string>
      */
     private function prepareFields(array $columns): array
     {
         return array_map(
-<<<<<<< HEAD
-            fn (ColumnData $column) => 'decimal' === $column->type ? '@'.$column->name : $column->name,
-=======
             fn (ColumnData $column) => $column->type === 'decimal' ? '@'.$column->name : $column->name,
->>>>>>> 6ed19256f (.)
             $columns,
         );
     }
@@ -140,11 +108,7 @@ class ImportCsvAction
     /**
      * Build the SQL query for importing data.
      *
-<<<<<<< HEAD
-     * @param array<ColumnData> $columns
-=======
-     * @param  array<ColumnData>  $columns
->>>>>>> 6ed19256f (.)
+     * @param  array<int, ColumnData>  $columns
      */
     private function buildSql(string $path, string $db, string $tbl, string $fieldsUpList, array $columns): string
     {
@@ -161,11 +125,7 @@ class ImportCsvAction
 
         $sqlReplace = [];
         foreach ($columns as $column) {
-<<<<<<< HEAD
-            if ('decimal' === $column->type) {
-=======
             if ($column->type === 'decimal') {
->>>>>>> 6ed19256f (.)
                 $sqlReplace[] = "{$column->name} = REPLACE(@{$column->name}, ',', '.')";
             }
         }
@@ -175,37 +135,5 @@ class ImportCsvAction
         }
 
         return $sql;
-    }
-
-    /**
-     * Transform columns into ColumnData objects.
-     *
-<<<<<<< HEAD
-     * @param array<string> $columns
-     *
-     * @return array<ColumnData>
-     *
-     * @deprecated this method is currently unused but kept for future expansion
-=======
-     * @param  array<string>  $columns
-     *
-     * @return array<ColumnData>
-     *
-     * @deprecated This method is currently unused but kept for future expansion.
->>>>>>> 6ed19256f (.)
-     *
-     * @phpstan-ignore method.unused
-     */
-    private function transformColumnsToColumnData(array $columns): array
-    {
-        return array_map(
-            function (string $column): ColumnData {
-                return new ColumnData(
-                    name: $column,
-                    type: 'string', // Default type, modify if necessary
-                );
-            },
-            $columns,
-        );
     }
 }

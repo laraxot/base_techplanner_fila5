@@ -2,6 +2,15 @@
 description:
 globs:
 alwaysApply: false
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
 ---
 # Linee guida per l'uso di Spatie Queueable Action
 
@@ -54,3 +63,4 @@ QueueableActionFake::assertPushed(ApproveUserAction::class);
 - [Filament Best Practices](mdc:filament-best-practices.md)
 - [Testing](mdc:testing.md)
 - [Documentazione centrale](mdc:../../../../../docs/index.md)
+

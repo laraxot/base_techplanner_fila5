@@ -29,6 +29,17 @@ return [
         'confirm_password' => 'Conferma Password',
         'save' => 'Salva',
         'update' => 'Aggiorna',
+        'services' => 'I miei servizi',
+        'practices' => 'Le mie pratiche',
+        'notifications' => 'Notifiche',
+        'logout' => 'Esci',
+        'password_requirements' => [
+            'title' => 'Requisiti della password',
+            'min_length' => 'Almeno 8 caratteri',
+            'uppercase' => 'Almeno una lettera maiuscola',
+            'number' => 'Almeno un numero',
+            'special' => 'Almeno un carattere speciale',
+        ],
     ],
     'user_dropdown' => [
         'manage_account' => 'Gestione Account',
@@ -38,16 +49,6 @@ return [
         'login_link' => 'Accedi',
         'register_link' => 'Registrati',
     ],
-<<<<<<< HEAD
-    'user_menu_profile' => [
-        'services' => 'I miei servizi',
-        'practices' => 'Le mie pratiche',
-        'notifications' => 'Notifiche',
-        'settings' => 'Impostazioni',
-        'logout' => 'Esci',
-    ],
-=======
->>>>>>> 6ed19256f (.)
     'logout' => [
         'title' => 'Logout',
         'confirm_message' => 'Sei sicuro di voler effettuare il logout?',
@@ -65,12 +66,13 @@ return [
         'close_menu' => 'Chiudi menu principale',
         'home' => 'Home',
         'dashboard' => 'Dashboard',
+        'primary' => 'Navigazione principale',
+        'learn_more' => 'Scopri di più',
         'profile' => 'Profilo',
         'settings' => 'Impostazioni',
     ],
     'failed' => 'Le credenziali non corrispondono ai nostri record.',
     'throttle' => 'Troppi tentativi di accesso. Riprova tra :seconds secondi.',
-<<<<<<< HEAD
     'label' => 'Auth',
     'plural_label' => 'Auth (Plurale)',
     'fields' => [
@@ -104,6 +106,4 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

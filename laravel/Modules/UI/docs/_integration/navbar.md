@@ -1,3 +1,10 @@
+---
+title: "navbar"
+qmd: "ui integration navbar md"
+type: note
+tags: [documentation]
+---
+
 # navbar
 
 <!-- Contenuto migrato da _docs/navbar.txt -->

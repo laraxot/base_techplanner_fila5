@@ -1,11 +1,9 @@
 <?php
 
 declare(strict_types=1);
-
 ?>
 @props(['widget'])
 <div>
-<<<<<<< HEAD
     @php
         $canRenderWidget = is_string($widget)
             && $widget !== ''
@@ -26,11 +24,4 @@ declare(strict_types=1);
     @if ($canRenderWidget)
         @livewire($widget, $livewireParams)
     @endif
-=======
-    {{--  
-    <x-dynamic-component :component="$widget" />
-    --}}
-    
-    @livewire($widget, $block->data)
->>>>>>> 6ed19256f (.)
 </div>

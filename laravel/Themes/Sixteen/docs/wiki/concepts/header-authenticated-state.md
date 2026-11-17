@@ -1,4 +1,7 @@
 ---
+created: 2026-09-26
+qmd: "header authenticated state"
+discussions: []
 title: "Header slim — stato autenticazione (Design Comuni)"
 type: concept
 confidence: high
@@ -14,9 +17,12 @@ related:
 sources:
   - ../../../resources/views/components/sections/header/v1.blade.php
   - ../../../lang/it/ui.php
-  - ../../../Main_files/five/segnalazione-area-personale.html
+  - ../../Main_files/five/segnalazione-area-personale.html
   - https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazione-area-personale.html
+status: draft
 ---
+
+> **Correzione 2026-10-30.** Gli esempi `route('notifications')` e `pages/notifications/` di questo documento sono superati: le pagine CMS (area personale, ticket, FAQ) si linkano con `route('container0.view', ['container0' => 'area-personale', 'slug0' => 'notifiche'])` e `route('container0.index', ['container0' => '...'])` (nome generico, valori nei parametri). Vedi `docs/wiki/memories/translation-protocol-memory-aid.md` §2 e `docs/wiki/rules/folio-named-routes-route-helper.md` nel repo root.
 
 # Header slim — stato autenticazione (Design Comuni)
 
@@ -29,7 +35,7 @@ HTML (`cmp-header.hbs`) + visual (screenshot / computed CSS) vs [DC area persona
 | Stato | Cosa deve comparire nella `it-header-slim-right-zone` (zona destra della barra slim) |
 |--------|----------------------------------------------------------------------------------------|
 | **Non connesso** | Un solo pulsante primario: `pub_theme::header.guest.cta.label`, link `route('login')` (Folio auth). |
-| **Connesso** | Blocco utente slim: **nome leggibile protagonista**, **avatar secondario**, **dropdown** con voci `pub_theme::header.user.dropdown.*.label` e link `route('services.categories')`, `route('dashboard')`, `route('area-personale.notifiche')`, `route('profile.edit')`, **Esci** via `route('logout')` (pagina Folio GET). |
+| **Connesso** | Blocco utente slim: **nome leggibile protagonista**, **avatar secondario**, **dropdown** con voci `pub_theme::header.user.dropdown.*.label` e link `route('services.categories')`, `route('dashboard')`, `route('notifications')`, `route('profile.edit')`, **Esci** via `route('logout')` (pagina Folio GET). |
 
 Non mostrare il pulsante «Accedi all'area personale» a utente già autenticato.
 
@@ -102,7 +108,7 @@ SSoT: [fo-folio-named-routes-header.md](fo-folio-named-routes-header.md) — ver
 |-----------|-----------|
 | I miei servizi | `services.categories` |
 | Le mie pratiche | `dashboard` |
-| Notifiche | `area-personale.notifiche` |
+| Notifiche | `notifications` |
 | Impostazioni | `profile.edit` |
 | Esci | `logout` |
 | Accedi (guest) | `login` |

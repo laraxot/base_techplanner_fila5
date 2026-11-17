@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -60,29 +59,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'client_id' => [
-            'label' => 'Client ID',
-        ],
-        'client_secret' => [
-            'label' => 'Client Secret',
-        ],
-        'redirect' => [
-            'label' => 'Reindirizza',
-        ],
-        'personal_access_client' => [
-            'label' => 'Client per accesso personale',
-        ],
-        'password_client' => [
-            'label' => 'Client per accesso con password',
-        ],
-        'revoked' => [
-            'label' => 'Revocato',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -92,7 +68,6 @@ return [
         'revoke' => [
             'label' => 'Revoca',
         ],
-<<<<<<< HEAD
         'install' => [
             'label' => 'Installa Passport',
             'modal_description' => 'Verrà eseguito passport:install --uuids. Verranno generate le chiavi e creati i client predefiniti.',
@@ -126,7 +101,5 @@ return [
         'private_key' => 'Chiave Privata',
         'present' => 'Presente',
         'missing' => 'Mancante',
-=======
->>>>>>> 6ed19256f (.)
     ],
 ];

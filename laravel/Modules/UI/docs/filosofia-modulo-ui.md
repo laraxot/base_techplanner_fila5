@@ -1,10 +1,13 @@
+---
+title: "Analisi Approfondita del Modulo UI"
+qmd: "ui filosofia modulo ui md"
+type: note
+tags: [documentation]
+---
+
 # Analisi Approfondita del Modulo UI
 
-> **Generato**: 2025-12-24
-<<<<<<< HEAD
 > **Generato**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 > **Scopo**: Documentare la filosofia, logica, business logic e architettura del modulo UI
 
 ---
@@ -680,10 +683,6 @@ Laravel risolve automaticamente override temi con view namespace precedence.
 ## Collegamenti Utili
 
 - [Never Use Label Rule](./never-use-label-rule.md)
-- [Components Guide](./components-guide.md)
+- [Components Guide](archive/components-guide.md)
 - [Filament 4 Migration Guide](./filament/filament-4-migration-guide.md)
-<<<<<<< HEAD
 - [Architecture Documentation](./architecture.md)
-=======
-- [Architecture Documentation](./architecture.md)
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,16 @@
+---
+title: "path and interface rules"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "path and interface rules"
+issues: []
+discussions: []
+status: superseded
+superseded_by: path-and-interface.md
+---
+
 # Regole di Percorso e Interfacce nel Modulo Notify
 
 ## Principi Fondamentali
@@ -16,15 +29,9 @@
 
 ### Directory Fisiche (path su disco)
 ```
-<<<<<<< HEAD
 Modules/Notify/
 Modules/Notify/
 Modules/Notify/
-=======
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/
-/var/www/html/saluteora/laravel/Modules/Notify/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/
->>>>>>> 6ed19256f (.)
 ├── app/                           # Directory fisica con app minuscolo
 │   ├── Actions/
 │   │   ├── Email/                # Azioni per email
@@ -116,11 +123,7 @@ Questa struttura garantisce:
 
 ### Directory Fisiche (path su disco)
 ```
-<<<<<<< HEAD
 Modules/Notify/
-=======
-/var/www/html/<directory progetto>/laravel/Modules/Notify/
->>>>>>> 6ed19256f (.)
 ├── app/                           # Directory fisica con app minuscolo
 │   ├── Actions/
 │   │   ├── Email/                # Azioni per email
@@ -193,8 +196,4 @@ Questa struttura garantisce:
 2. **Inversione delle Dipendenze**: Dependency Injection basato su interfacce
 3. **Coerenza**: Pattern coerenti in tutto il modulo
 4. **Manutenibilità**: Facile trovare e comprendere il codice
-<<<<<<< HEAD
 5. **Estendibilità**: Aggiungere nuovi provider senza modificare l'architettura
-=======
-5. **Estendibilità**: Aggiungere nuovi provider senza modificare l'architettura
->>>>>>> 6ed19256f (.)

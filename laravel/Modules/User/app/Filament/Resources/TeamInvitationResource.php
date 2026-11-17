@@ -4,15 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\User\Filament\Resources;
 
-use Filament\Forms\Components\Select;
-use Filament\Forms\Components\TextInput;
 use Filament\Resources\Pages\PageRegistration;
-use Filament\Support\Components\Component;
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Carbon;
->>>>>>> 6ed19256f (.)
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\EditTeamInvitations;
 use Modules\User\Filament\Resources\TeamInvitationResource\Pages\ListTeamInvitations;
 use Modules\User\Models\TeamInvitation;
@@ -24,39 +17,6 @@ use Modules\Xot\Filament\Resources\XotBaseResource;
 class TeamInvitationResource extends XotBaseResource
 {
     protected static ?string $model = TeamInvitation::class;
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
-    /**
-     * Get the form schema for the resource.
-     *
-     * @return array<string, Component>
-     */
-    #[\Override]
-    public static function getFormSchema(): array
-    {
-        return [
-            'team_id' => Select::make('team_id')
-                ->relationship('team', 'name')
-                ->searchable()
-                ->required(),
-            'email' => TextInput::make('email')
-                ->email()
-                ->required()
-                ->maxLength(255),
-            'role' => Select::make('role')
-                ->options([
-                    'admin' => 'Admin',
-                    'member' => 'Member',
-                    'viewer' => 'Viewer',
-                    // Add other roles as defined in your application
-                ])
-                ->searchable()
-                ->required(),
-        ];
-    }
 
     /**
      * Get the pages available for the resource.
@@ -80,8 +40,4 @@ class TeamInvitationResource extends XotBaseResource
     {
         return parent::getEloquentQuery()->with(['team']);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,10 @@
+---
+title: "Sprint Planning: UI Kit Polish"
+qmd: "ui sprint planning md"
+type: note
+tags: [documentation]
+---
+
 # Sprint Planning: UI Kit Polish
 
 ## 🏁 Sprint Goal

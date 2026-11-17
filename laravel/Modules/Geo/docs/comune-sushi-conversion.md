@@ -1,3 +1,14 @@
+---
+title: "comune sushi conversion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comune sushi conversion"
+issues: []
+discussions: []
+---
+
 # Analisi: Conversione del Modello Comune a Laravel Sushi
 
 ## Stato Attuale
@@ -52,22 +63,12 @@ use Sushi\Sushi;
 class Comune extends Model
 {
     use Sushi;
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Indica a Sushi di non utilizzare timestamps
      */
     public $timestamps = false;
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Definisce le colonne del modello
      */
@@ -77,12 +78,7 @@ class Comune extends Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Carica i dati dal file JSON
      */
@@ -90,22 +86,12 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
-<<<<<<< HEAD
         
-        
-=======
-
->>>>>>> 6ed19256f (.)
         return cache()->rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Scope per filtrare per regione
      */
@@ -114,12 +100,7 @@ class Comune extends Model
         return $query->where('regione->codice', $regionCode)
                      ->orderBy('nome');
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Scope per filtrare per provincia
      */
@@ -128,12 +109,7 @@ class Comune extends Model
         return $query->where('provincia->codice', $provinceCode)
                      ->orderBy('nome');
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Scope per cercare per nome
      */
@@ -142,12 +118,7 @@ class Comune extends Model
         return $query->where('nome', 'like', '%' . $name . '%')
                      ->orderBy('nome');
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Scope per filtrare per CAP
      */
@@ -157,12 +128,7 @@ class Comune extends Model
         // Richiede una soluzione personalizzata o un'estensione
         return $query->whereRaw("JSON_CONTAINS(cap, '\"$cap\"')");
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Verifica se il CAP è valido
      */
@@ -170,12 +136,7 @@ class Comune extends Model
     {
         return self::byCap($cap)->exists();
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Relazione con la regione
      */
@@ -183,12 +144,7 @@ class Comune extends Model
     {
         // Implementazione della relazione se necessario
     }
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Relazione con la provincia
      */
@@ -234,19 +190,11 @@ public static function byProvince(string $provinceCode): Collection
 public static function searchByName(string $name, int $limit = 0): Collection
 {
     $query = static::query()->searchByName($name);
-<<<<<<< HEAD
     
     if ($limit > 0) {
         $query->limit($limit);
     }
     
-=======
->>>>>>> 6ed19256f (.)
-
-    if ($limit > 0) {
-        $query->limit($limit);
-    }
-
     return $query->get();
 }
 ```
@@ -368,25 +316,14 @@ use Sushi\Sushi;
 class Comune extends Model
 {
     use Sushi;
-
-    public $timestamps = false;
-
-<<<<<<< HEAD
     
     public $timestamps = false;
     
-=======
->>>>>>> 6ed19256f (.)
     /**
      * Durata della cache in secondi (1 settimana)
      */
     protected const CACHE_TTL = 604800;
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Definisce le colonne del modello
      */
@@ -396,12 +333,7 @@ class Comune extends Model
         'cap' => 'array',
         'popolazione' => 'integer',
     ];
-<<<<<<< HEAD
     
-    
-=======
-
->>>>>>> 6ed19256f (.)
     /**
      * Ottiene i dati dal file JSON con caching
      */
@@ -409,29 +341,16 @@ class Comune extends Model
     {
         $path = module_path('Geo', 'resources/json/comuni.json');
         $cacheKey = 'geo_comuni_json_' . md5($path);
-<<<<<<< HEAD
         
-        
-=======
-
->>>>>>> 6ed19256f (.)
         return Cache::rememberForever($cacheKey, function () use ($path) {
             return json_decode(file_get_contents($path), true);
         });
     }
-<<<<<<< HEAD
     
     // Scopes Eloquent per query comuni
     
     // + implementazione dei metodi attuali per compatibilità
     
-=======
->>>>>>> 6ed19256f (.)
-
-    // Scopes Eloquent per query comuni
-
-    // + implementazione dei metodi attuali per compatibilità
-
     /**
      * Pulisce tutta la cache
      */
@@ -480,8 +399,12 @@ L'implementazione ibrida rappresenta il miglior compromesso tra funzionalità El
 
 ---
 
-<<<<<<< HEAD
+title: "comune sushi conversion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "comune sushi conversion"
+issues: []
+discussions: []
 *Documento creato il: 28/05/2025*
-=======
-*Documento creato il: 28/05/2025*
->>>>>>> 6ed19256f (.)

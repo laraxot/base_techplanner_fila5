@@ -1,6 +1,7 @@
 <?php
 
 declare(strict_types=1);
+use Illuminate\Support\Env;
 
 return [
     /*
@@ -21,8 +22,8 @@ return [
      * |
      */
     'cache' => [
-        'enabled' => env('SUSHI_CACHE_ENABLED', true),
-        'duration' => env('SUSHI_CACHE_DURATION', 60 * 24 * 7), // 7 giorni
+        'enabled' => Env::get('SUSHI_CACHE_ENABLED', true),
+        'duration' => Env::get('SUSHI_CACHE_DURATION', 60 * 24 * 7), // 7 giorni
     ],
     /*
      * |--------------------------------------------------------------------------
@@ -33,13 +34,8 @@ return [
      * |
      */
     'database' => [
-<<<<<<< HEAD
-        'connection' => env('SUSHI_DB_CONNECTION', 'mysql'),
-        'database' => env('SUSHI_DB_DATABASE', 'quaeris_data_test'),
-=======
-        'connection' => env('SUSHI_DB_CONNECTION', 'sqlite'),
-        'database' => env('SUSHI_DB_DATABASE', ':memory:'),
->>>>>>> 6ed19256f (.)
+        'connection' => Env::get('SUSHI_DB_CONNECTION', 'mysql'),
+        'database' => Env::get('SUSHI_DB_DATABASE', '<nome progetto>_data_test'),
     ],
     /*
      * |--------------------------------------------------------------------------

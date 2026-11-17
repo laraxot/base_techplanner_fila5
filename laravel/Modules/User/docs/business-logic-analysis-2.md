@@ -1,7 +1,27 @@
+---
+title: "User Module - Business Logic Analysis"
+type: concept
+tags: [business, logic, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "business-logic-analysis-2 user module - business logic analysis"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # User Module - Business Logic Analysis
 
 ## Overview
-The User module provides comprehensive user management, authentication, authorization, and team-based access control for the Quaeris platform. It serves as the foundation for all user-related operations across the entire application.
+The User module provides comprehensive user management, authentication, authorization, and team-based access control for the <nome progetto> platform. It serves as the foundation for all user-related operations across the entire application.
 
 ## Business Purpose
 - **Authentication**: Secure user authentication with multiple options

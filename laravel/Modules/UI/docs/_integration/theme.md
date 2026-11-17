@@ -1,3 +1,10 @@
+---
+title: "theme"
+qmd: "ui integration theme md"
+type: note
+tags: [documentation]
+---
+
 # theme
 
 <!-- Contenuto migrato da _docs/theme.txt -->

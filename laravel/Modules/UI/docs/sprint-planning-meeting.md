@@ -1,3 +1,10 @@
+---
+title: "UI - Sprint Planning Meeting"
+qmd: "ui sprint planning meeting md"
+type: note
+tags: [documentation]
+---
+
 # UI - Sprint Planning Meeting
 
 > Documento operativo per sprint planning. Modulo.

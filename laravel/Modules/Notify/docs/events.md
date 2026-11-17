@@ -1,3 +1,15 @@
+---
+title: "events"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "events"
+issues: []
+discussions: []
+status: draft
+---
+
 # Email Events
 
 ## Panoramica
@@ -266,8 +278,4 @@ class EventValidator
 
 - [Laravel Events](https://laravel.com/docs/events)
 - [Database Mail](database-mail.md)
-<<<<<<< HEAD
 - [Email Templates](templates.md) 
-=======
-- [Email Templates](templates.md)
->>>>>>> 6ed19256f (.)

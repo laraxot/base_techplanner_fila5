@@ -4,7 +4,7 @@ Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../L
 
 Consulta la documentazione delle traduzioni:
 - [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
+- [Struttura delle Traduzioni](../structure.md)
 - [Gestione dei File di Lingua](../../Lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale

@@ -4,9 +4,9 @@ declare(strict_types=1);
 @props([
     'title' => '',
     'subtitle' => '',
-    'primary_cta_label' => 'Esplora gli Articoli',
+    'primary_cta_label' => __('pub_theme::block_defaults.blog_hero.primary.label'),
     'primary_cta_url' => '#articles',
-    'secondary_cta_label' => 'Contatta un Esperto',
+    'secondary_cta_label' => __('pub_theme::block_defaults.blog_hero.secondary.label'),
     'secondary_cta_url' => '/contatti',
     'image' => '',
     'overlay_opacity' => 0.7,

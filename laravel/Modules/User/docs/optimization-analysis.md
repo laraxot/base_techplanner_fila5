@@ -1,3 +1,28 @@
+---
+title: "Analisi di Ottimizzazione - Modulo User"
+type: concept
+tags: [optimization, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "optimization-analysis analisi di ottimizzazione - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Analisi di Ottimizzazione - Modulo User
 
 ## 🎯 Principi Applicati: DRY + KISS + SOLID + ROBUST + Laraxot
@@ -30,11 +55,7 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
 }
 ```
 
-<<<<<<< HEAD
 Il modulo User ha un enum generico che non rispecchia il dominio sanitario di <nome progetto>.
-=======
-Il modulo User ha un enum generico che non rispecchia il dominio sanitario di SaluteOra.
->>>>>>> 6ed19256f (.)
 
 **✅ Soluzione DOMAIN-DRIVEN + DRY:**
 ```php
@@ -46,13 +67,8 @@ enum UserType: string implements HasColor, HasIcon, HasLabel
     case SYSTEM = 'system';
 }
 
-<<<<<<< HEAD
 // Nel modulo <nome progetto> - enum specifico del dominio
 enum <nome progetto>UserType: string implements HasColor, HasIcon, HasLabel
-=======
-// Nel modulo SaluteOra - enum specifico del dominio
-enum SaluteOraUserType: string implements HasColor, HasIcon, HasLabel
->>>>>>> 6ed19256f (.)
 {
     case ADMIN = 'admin';
     case DOCTOR = 'doctor';
@@ -69,16 +85,11 @@ interface UserContract extends Authenticatable
 {
     // Authentication methods
     public function getKey(): mixed;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Team management
     public function currentTeam(): BelongsTo;
     public function teams(): BelongsToMany;
     public function ownsTeam(TeamContract $team): bool;
-<<<<<<< HEAD
     
     // Permissions
     public function teamPermissions(TeamContract $team): array;
@@ -92,21 +103,6 @@ interface UserContract extends Authenticatable
     public function getJWTIdentifier(): mixed;
     public function getJWTCustomClaims(): array;
     
-=======
-
-    // Permissions
-    public function teamPermissions(TeamContract $team): array;
-    public function hasTeamPermission(TeamContract $team, string $permission): bool;
-
-    // Two Factor Auth
-    public function recoveryCodes(): array;
-    public function replaceRecoveryCode(string $code): void;
-
-    // JWT
-    public function getJWTIdentifier(): mixed;
-    public function getJWTCustomClaims(): array;
-
->>>>>>> 6ed19256f (.)
     // Roles
     public function roles(): BelongsToMany;
 }
@@ -148,11 +144,7 @@ interface JwtAuthContract
 }
 
 // Composizione finale
-<<<<<<< HEAD
 interface UserContract extends 
-=======
-interface UserContract extends
->>>>>>> 6ed19256f (.)
     AuthenticatableUserContract,
     TeamMemberContract,
     HasPermissionsContract,
@@ -254,11 +246,7 @@ class BaseUser extends Authenticatable
     {
         return $query->with(['roles:id,name', 'currentTeam:id,name']);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function scopeWithFullRelations(Builder $query): Builder
     {
         return $query->with([
@@ -268,11 +256,7 @@ class BaseUser extends Authenticatable
             'permissions:id,name',
         ]);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function scopeForApi(Builder $query): Builder
     {
         return $query->select(['id', 'name', 'email', 'type', 'is_active'])
@@ -298,11 +282,7 @@ trait HasCachedPermissions
             fn() => $this->getAllPermissions()
         );
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function getCachedRoles(): Collection
     {
         return Cache::remember(
@@ -311,21 +291,13 @@ trait HasCachedPermissions
             fn() => $this->roles()->get()
         );
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function flushPermissionCache(): void
     {
         Cache::forget("user_permissions_{$this->id}");
         Cache::forget("user_roles_{$this->id}");
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected static function bootHasCachedPermissions(): void
     {
         static::saved(fn($user) => $user->flushPermissionCache());
@@ -346,11 +318,7 @@ public function up(): void
         $table->index(['email', 'type']);     // Per login multi-tipo
         $table->index('current_team_id');     // Per team queries
         $table->index('created_at');          // Per ordinamenti temporali
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Indice composito per query frequenti
         $table->index(['type', 'is_active', 'created_at'], 'users_type_active_created_idx');
     });
@@ -370,44 +338,25 @@ class AuthenticationRateLimiter
         private RateLimiter $limiter,
         private EventDispatcher $events
     ) {}
-<<<<<<< HEAD
     
     public function tooManyAttempts(Request $request): bool
     {
         $key = $this->throttleKey($request);
         
-=======
-
-    public function tooManyAttempts(Request $request): bool
-    {
-        $key = $this->throttleKey($request);
-
->>>>>>> 6ed19256f (.)
         if ($this->limiter->tooManyAttempts($key, 5)) {
             $this->events->dispatch(new TooManyLoginAttempts($request));
             return true;
         }
-<<<<<<< HEAD
         
         return false;
     }
     
-=======
-
-        return false;
-    }
-
->>>>>>> 6ed19256f (.)
     public function hit(Request $request): void
     {
         $key = $this->throttleKey($request);
         $this->limiter->hit($key, 300); // 5 minutes
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     private function throttleKey(Request $request): string
     {
         return Str::lower($request->input('email')).'|'.$request->ip();
@@ -426,7 +375,6 @@ trait HasSecurePassword
         if (!$this->isPasswordStrong($value)) {
             throw new WeakPasswordException('Password does not meet security requirements');
         }
-<<<<<<< HEAD
         
         $this->attributes['password'] = Hash::make($value);
         $this->attributes['password_expires_at'] = now()->addMonths(3);
@@ -435,26 +383,12 @@ trait HasSecurePassword
     private function isPasswordStrong(string $password): bool
     {
         return strlen($password) >= 8 
-=======
-
-        $this->attributes['password'] = Hash::make($value);
-        $this->attributes['password_expires_at'] = now()->addMonths(3);
-    }
-
-    private function isPasswordStrong(string $password): bool
-    {
-        return strlen($password) >= 8
->>>>>>> 6ed19256f (.)
             && preg_match('/[A-Z]/', $password)
             && preg_match('/[a-z]/', $password)
             && preg_match('/[0-9]/', $password)
             && preg_match('/[^A-Za-z0-9]/', $password);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function isPasswordExpired(): bool
     {
         return $this->password_expires_at && $this->password_expires_at->isPast();
@@ -471,21 +405,13 @@ class SecureSessionManager
     {
         // Rigenera session ID per prevenire session fixation
         request()->session()->regenerate();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Log dell'evento di sicurezza
         activity('security')
             ->causedBy($user)
             ->log('Session rotated for security');
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function invalidateOtherSessions(User $user): void
     {
         // Invalida tutte le altre sessioni dell'utente
@@ -493,11 +419,7 @@ class SecureSessionManager
             ->where('user_id', $user->id)
             ->where('id', '!=', request()->session()->getId())
             ->delete();
-<<<<<<< HEAD
             
-=======
-
->>>>>>> 6ed19256f (.)
         activity('security')
             ->causedBy($user)
             ->log('Other sessions invalidated');
@@ -530,11 +452,7 @@ class CreateUserHandler
         private UserRepositoryInterface $repository,
         private EventDispatcher $events
     ) {}
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function handle(CreateUserCommand $command): User
     {
         $user = $this->repository->create([
@@ -543,15 +461,9 @@ class CreateUserHandler
             'type' => $command->type->value,
             ...$command->attributes,
         ]);
-<<<<<<< HEAD
         
         $this->events->dispatch(new UserCreated($user));
         
-=======
-
-        $this->events->dispatch(new UserCreated($user));
-
->>>>>>> 6ed19256f (.)
         return $user;
     }
 }
@@ -574,11 +486,7 @@ class EmailPasswordStrategy implements AuthenticationStrategyInterface
                   ->where('is_active', true)
                   ->first();
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function supports(array $credentials): bool
     {
         return isset($credentials['email'], $credentials['password']);
@@ -591,11 +499,7 @@ class TwoFactorStrategy implements AuthenticationStrategyInterface
     {
         // Implementazione 2FA
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function supports(array $credentials): bool
     {
         return isset($credentials['email'], $credentials['otp']);
@@ -607,20 +511,12 @@ class AuthenticationManager
 {
     /** @var AuthenticationStrategyInterface[] */
     private array $strategies = [];
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function addStrategy(AuthenticationStrategyInterface $strategy): void
     {
         $this->strategies[] = $strategy;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function authenticate(array $credentials): ?User
     {
         foreach ($this->strategies as $strategy) {
@@ -628,11 +524,7 @@ class AuthenticationManager
                 return $strategy->authenticate($credentials);
             }
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         return null;
     }
 }
@@ -657,33 +549,21 @@ class UserTypeFactory implements UserFactoryInterface
             default => throw new InvalidUserTypeException("Unsupported user type: {$type->value}")
         };
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     private function createAdmin(array $attributes): Admin
     {
         $admin = Admin::create($attributes);
         $admin->assignRole('admin');
         return $admin;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     private function createDoctor(array $attributes): Doctor
     {
         $doctor = Doctor::create($attributes);
         $doctor->assignRole('doctor');
         return $doctor;
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     private function createPatient(array $attributes): Patient
     {
         $patient = Patient::create($attributes);
@@ -710,30 +590,18 @@ class AuthenticationTest extends TestCase
             'password' => Hash::make('password123'),
             'is_active' => true,
         ]);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Act
         $result = Auth::attempt([
             'email' => 'test@example.com',
             'password' => 'password123',
         ]);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Assert
         $this->assertTrue($result);
         $this->assertAuthenticatedAs($user);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function test_inactive_user_cannot_authenticate(): void
     {
         // Arrange
@@ -742,21 +610,13 @@ class AuthenticationTest extends TestCase
             'password' => Hash::make('password123'),
             'is_active' => false,
         ]);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Act
         $result = Auth::attempt([
             'email' => 'test@example.com',
             'password' => 'password123',
         ]);
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // Assert
         $this->assertFalse($result);
         $this->assertGuest();
@@ -775,17 +635,10 @@ class UserPermissionsTest extends TestCase
         $user = User::factory()->create();
         $role = Role::create(['name' => 'doctor', 'guard_name' => 'web']);
         $permission = Permission::create(['name' => 'view appointments', 'guard_name' => 'web']);
-<<<<<<< HEAD
         
         $role->givePermissionTo($permission);
         $user->assignRole($role);
         
-=======
-
-        $role->givePermissionTo($permission);
-        $user->assignRole($role);
-
->>>>>>> 6ed19256f (.)
         // Act & Assert
         $this->assertTrue($user->hasPermissionTo('view appointments'));
         $this->assertTrue($user->hasRole('doctor'));
@@ -808,35 +661,21 @@ class AuthenticationMetrics
             'successful' => $successful ? 'true' : 'false',
             'user_type' => $this->getUserType($email),
         ];
-<<<<<<< HEAD
         
         Metrics::increment('auth.login_attempts', 1, $tags);
         
-=======
-
-        Metrics::increment('auth.login_attempts', 1, $tags);
-
->>>>>>> 6ed19256f (.)
         if (!$successful) {
             Metrics::increment('auth.failed_attempts', 1, $tags);
         }
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function recordPasswordReset(string $email): void
     {
         Metrics::increment('auth.password_resets', 1, [
             'user_type' => $this->getUserType($email),
         ]);
     }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     private function getUserType(string $email): string
     {
         $user = User::where('email', $email)->first();
@@ -854,11 +693,7 @@ class SecurityAlertService
         private NotificationService $notifications,
         private Logger $logger
     ) {}
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function handleSuspiciousActivity(User $user, string $activity): void
     {
         $this->logger->warning('Suspicious activity detected', [
@@ -867,17 +702,10 @@ class SecurityAlertService
             'ip' => request()->ip(),
             'user_agent' => request()->userAgent(),
         ]);
-<<<<<<< HEAD
         
         // Notifica amministratori
         $admins = User::whereHas('roles', fn($q) => $q->where('name', 'admin'))->get();
         
-=======
-
-        // Notifica amministratori
-        $admins = User::whereHas('roles', fn($q) => $q->where('name', 'admin'))->get();
-
->>>>>>> 6ed19256f (.)
         foreach ($admins as $admin) {
             $this->notifications->send(
                 $admin,
@@ -922,7 +750,6 @@ class SecurityAlertService
 
 - [Spatie Permission Documentation](https://spatie.be/project_docs/laravel-permission)
 - [Laravel Authentication](https://laravel.com/project_docs/authentication)
-<<<<<<< HEAD
 - [Multi-tenancy Best Practices](../../../../docs/project/multi-tenancy-best-practices.md)
 - [Security Guidelines](../../../../docs/project/security-guidelines.md)
 
@@ -931,110 +758,4 @@ class SecurityAlertService
 *Documento creato: Gennaio 2025*  
 *Principi: DRY + KISS + SOLID + ROBUST + Laraxot*  
 *Stato: 🟡 Necessita Refactoring Interface e Performance*
-=======
-- [Multi-tenancy Best Practices](../../../project_docs/multi-tenancy-best-practices.md)
-- [Security Guidelines](../../../project_docs/security-guidelines.md)
 
----
-
-*Documento creato: Gennaio 2025*
-*Principi: DRY + KISS + SOLID + ROBUST + Laraxot*
-*Stato: 🟡 Necessita Refactoring Interface e Performance*
-# user module documentation optimization analysis
-
-## current state analysis
-- **total md files**: 390
-- **extreme duplication**: multiple files for same topics with underscore/hyphen variations
-- **structural chaos**: deeply nested directories with redundant content
-- **dry violations**: repeated content across authentication, logout, filament topics
-- **mixed content**: configuration files, php files mixed with documentation
-
-## major problems identified
-
-### 1. massive duplication
-- authentication: `auth-login-implementation.md` + `auth_login_implementation.md`
-- logout: 18+ files covering same logout functionality
-- filament: multiple duplicate filament documentation files
-
-### 2. structural issues
-- excessive nesting: `models/models/models/models/team.md`
-- mixed file types: `.php`, `.json`, config files in docs directory
-- inconsistent organization
-
-### 3. content redundancy
-- phpstan documentation duplicated across multiple files
-- authentication patterns repeated instead of centralized
-- best practices scattered instead of consolidated
-
-## optimization strategy
-
-### 1. file consolidation plan
-```
-# before: 390+ files
-# after: ~60 files (85% reduction)
-
-# merge these categories:
-authentication/ → 5 comprehensive files
-logout/ → 2 files (implementation + troubleshooting)
-filament/ → 8 files (organized by component type)
-phpstan/ → 3 files (guide, configuration, troubleshooting)
-user_management/ → 6 files
-moderation/ → 4 files
-teams/ → 3 files
-```
-
-### 2. structural reorganization
-```
-docs/
-├── guides/
-│   ├── authentication.md
-│   ├── user_management.md
-│   ├── filament_integration.md
-│   ├── phpstan_implementation.md
-│   └── moderation_system.md
-├── reference/
-│   ├── api_endpoints.md
-│   ├── configuration.md
-│   ├── database_schema.md
-│   └── best_practices.md
-├── components/
-│   ├── authentication_components.md
-│   ├── filament_components.md
-│   └── livewire_components.md
-├── troubleshooting/
-│   ├── common_errors.md
-│   ├── filament_errors.md
-│   └── phpstan_errors.md
-└── integrations/
-    ├── spatie_permissions.md
-    ├── socialite_integration.md
-    └── passport_integration.md
-```
-
-### 3. dry implementation
-- **remove all duplicates**: eliminate underscore/hyphen file pairs
-- **centralize configuration**: move `.php`, `.json` files to `_config/` directory
-- **shared templates**: create reusable documentation patterns
-- **cross-references**: link to common documentation instead of duplicating
-
-### 4. kiss principles
-- **single responsibility**: each file covers one specific domain
-- **flat structure**: maximum 2 directory levels
-- **consistent naming**: snake_case only, no uppercase
-- **minimal content**: remove redundant examples and repetitions
-
-## action plan
-1. identify and remove all duplicate files (underscore/hyphen pairs)
-2. consolidate authentication documentation into comprehensive guide
-3. reorganize filament documentation by component type
-4. create centralized phpstan reference
-5. move non-documentation files to appropriate directories
-6. implement consistent cross-module linking
-
-## expected benefits
-- **reduction**: 390 files → ~60 files (85% reduction)
-- **maintainability**: clear structure, no duplication
-- **navigation**: logical grouping and clear hierarchy
-- **performance**: faster search and access
-- **consistency**: uniform documentation standards
->>>>>>> 6ed19256f (.)

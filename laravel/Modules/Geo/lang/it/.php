@@ -2,7 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
 return array (
   'navigation' => 
   array (
@@ -30,23 +29,3 @@ return array (
   array (
   ),
 );
-=======
-return [
-    'navigation' => [
-        'name' => 'Geo',
-        'plural' => 'Geo',
-        'group' => [
-            'name' => 'Geo',
-            'description' => 'Gestione dati geografici',
-        ],
-        'label' => 'Geo',
-        'sort' => 90,
-        'icon' => 'heroicon-o-map',
-    ],
-    'actions' => [
-        'logout' => [
-            'tooltip' => 'logout',
-        ],
-    ],
-];
->>>>>>> 6ed19256f (.)

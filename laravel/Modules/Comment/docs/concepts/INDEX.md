@@ -25,7 +25,7 @@ Workflow: `/internalize-spatie-comments` (`.claude/commands/bmad/`)
 ### Consumer
 - Fixcity `Ticket` + `HasComments`
 - Blog `Article`
-- User `CanComment` via `InteractsWithSpatieComments`
+- User `CanComment` via `InteractsWithComments` (alias Spatie rimosso; stub test `CanCommentStub`)
 
 ## Integration Points
 

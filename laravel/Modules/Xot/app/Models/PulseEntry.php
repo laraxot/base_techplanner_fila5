@@ -9,30 +9,16 @@ use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Database\Factories\PulseEntryFactory;
 
 /**
-<<<<<<< HEAD
- * @property string               $id
- * @property int                  $timestamp
- * @property string               $type
- * @property string               $key
- * @property string|null          $key_hash
- * @property int|null             $value
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- *
- * @method static PulseEntryFactory          factory($count = null, $state = [])
-=======
  * @property string $id
  * @property int $timestamp
  * @property string $type
  * @property string $key
  * @property string|null $key_hash
  * @property int|null $value
- *
- * @property-read ProfileContract|null $creator
- * @property-read ProfileContract|null $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
  * @method static PulseEntryFactory factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|PulseEntry newModelQuery()
  * @method static Builder<static>|PulseEntry newQuery()
  * @method static Builder<static>|PulseEntry query()
@@ -43,11 +29,7 @@ use Modules\Xot\Database\Factories\PulseEntryFactory;
  * @method static Builder<static>|PulseEntry whereType($value)
  * @method static Builder<static>|PulseEntry whereValue($value)
  *
-<<<<<<< HEAD
  * @property ProfileContract|null $deleter
-=======
- * @property-read ProfileContract|null $deleter
->>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */

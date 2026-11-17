@@ -8,190 +8,146 @@ return [
         'plural' => 'Cache',
         'group' => [
             'name' => 'Sistema',
-            'description' => 'Gestione della cache del sistema',
+            'description' => 'System cache management',
         ],
-        'label' => 'cache',
+        'label' => 'Cache',
         'sort' => '29',
         'icon' => 'xot-cache',
     ],
     'fields' => [
         'key' => [
             'label' => 'Chiave',
-            'placeholder' => 'Inserisci la chiave',
-            'help' => 'Chiave identificativa della cache',
-<<<<<<< HEAD
+            'placeholder' => 'Enter the key',
+            'help' => 'Cache identifier key',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'value' => [
-            'label' => 'Valore',
-            'placeholder' => 'Inserisci il valore',
-            'help' => 'Valore memorizzato nella cache',
-<<<<<<< HEAD
+            'label' => 'Value',
+            'placeholder' => 'Enter the value',
+            'help' => 'Value stored in the cache',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'ttl' => [
-            'label' => 'Tempo di Vita',
-            'placeholder' => 'Inserisci il TTL in minuti',
+            'label' => 'Time to Live',
+            'placeholder' => 'Enter the TTL in minutes',
             'help' => 'Tempo di permanenza in cache (in minuti)',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'tags' => [
             'label' => 'Tag',
-            'placeholder' => 'Seleziona i tag',
-            'help' => 'Tag per raggruppare elementi della cache',
-<<<<<<< HEAD
+            'placeholder' => 'Select tags',
+            'help' => 'Tags to group cache items',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'size' => [
             'label' => 'Dimensione',
             'help' => 'Dimensione occupata in memoria',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'driver' => [
             'label' => 'Driver',
-            'help' => 'Driver di cache utilizzato',
+            'help' => 'Cache driver in use',
             'options' => [
                 'file' => 'File System',
                 'redis' => 'Redis',
                 'memcached' => 'Memcached',
                 'array' => 'Array',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data di inserimento in cache',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'expires_at' => [
             'label' => 'Data Scadenza',
-            'help' => 'Data di scadenza della cache',
-<<<<<<< HEAD
+            'help' => 'Cache expiration date',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'clear' => [
             'label' => 'Svuota Cache',
-            'success' => 'Cache svuotata con successo',
-            'error' => 'Errore durante lo svuotamento della cache',
+            'success' => 'Cache cleared successfully',
+            'error' => 'Error while clearing the cache',
         ],
         'refresh' => [
-            'label' => 'Aggiorna',
-            'success' => 'Cache aggiornata con successo',
-            'error' => 'Errore durante l\'aggiornamento della cache',
+            'label' => 'Refresh',
+            'success' => 'Cache refreshed successfully',
+            'error' => 'Error while refreshing the cache',
         ],
         'optimize' => [
             'label' => 'Ottimizza',
-            'success' => 'Cache ottimizzata con successo',
-            'error' => 'Errore durante l\'ottimizzazione della cache',
+            'success' => 'Cache optimized successfully',
+            'error' => 'Error while optimizing the cache',
         ],
         'warm' => [
             'label' => 'Preriscalda',
-            'success' => 'Cache preriscaldata con successo',
-            'error' => 'Errore durante il preriscaldamento della cache',
+            'success' => 'Cache warmed up successfully',
+            'error' => 'Error while warming up the cache',
         ],
     ],
     'messages' => [
         'validation' => [
             'key' => [
-                'required' => 'La chiave è obbligatoria',
-                'unique' => 'Questa chiave è già presente in cache',
+                'required' => 'The key is required',
+                'unique' => 'This key already exists in the cache',
             ],
             'ttl' => [
-                'numeric' => 'Il TTL deve essere un numero',
-                'min' => 'Il TTL deve essere maggiore di zero',
+                'numeric' => 'The TTL must be a number',
+                'min' => 'The TTL must be greater than zero',
             ],
         ],
         'errors' => [
-            'driver_not_supported' => 'Driver di cache non supportato',
-            'key_not_found' => 'Chiave non trovata in cache',
+            'driver_not_supported' => 'Unsupported cache driver',
+            'key_not_found' => 'Key not found in the cache',
             'storage_full' => 'Spazio cache esaurito',
             'connection_failed' => 'Connessione al server cache fallita',
         ],
         'info' => [
-            'auto_cleanup' => 'Gli elementi scaduti verranno rimossi automaticamente',
+            'auto_cleanup' => 'Expired items will be removed automatically',
             'memory_usage' => 'Utilizzo memoria cache: :usage',
             'hit_ratio' => 'Rapporto hit/miss: :ratio',
         ],
@@ -199,21 +155,18 @@ return [
     'pages' => [
         'health_check_results' => [
             'buttons' => [
-                'refresh' => 'Aggiorna',
+                'refresh' => 'Refresh',
             ],
-            'heading' => 'Stato del Sistema',
+            'heading' => 'System Status',
             'navigation' => [
-                'group' => 'Impostazioni',
-                'label' => 'Stato del Sistema',
+                'group' => 'Settings',
+                'label' => 'System Status',
             ],
             'notifications' => [
-                'check_results' => 'Risultati verifica da',
+                'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

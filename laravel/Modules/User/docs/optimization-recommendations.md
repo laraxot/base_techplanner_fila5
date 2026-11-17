@@ -1,3 +1,28 @@
+---
+title: "Raccomandazioni di Ottimizzazione - Modulo User"
+type: concept
+tags: [optimization, recommendations]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "optimization-recommendations raccomandazioni di ottimizzazione - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -11,11 +36,7 @@
 - **Struttura**: Informazioni sparse senza organizzazione logica
 
 #### 2. Riusabilità Compromessa
-<<<<<<< HEAD
 - **141+ occorrenze hardcoded** di "<nome progetto>"
-=======
-- **141+ occorrenze hardcoded** di "saluteora"
->>>>>>> 6ed19256f (.)
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
 - **Path hardcoded** in documentazione
@@ -129,11 +150,7 @@ User/project_docs/
 #### Pattern di Correzione per Test
 ```php
 // ❌ PROBLEMI ATTUALI
-<<<<<<< HEAD
 use Modules\<nome progetto>\Models\User;
-=======
-use Modules\SaluteOra\Models\User;
->>>>>>> 6ed19256f (.)
 $user = User::factory()->create();
 
 // ✅ SOLUZIONI RICHIESTE
@@ -152,11 +169,7 @@ protected function createTestUser(): mixed
 #### File Prioritari da Correggere
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
-<<<<<<< HEAD
 3. **Documentation**: Rimuovere path hardcoded tipo ``
-=======
-3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/saluteora/`
->>>>>>> 6ed19256f (.)
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
 
@@ -224,11 +237,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 - [ ] **Collegamenti** ridotti a essenziali (max 20)
 
 ### Riusabilità
-<<<<<<< HEAD
 - [ ] **0 occorrenze** hardcoded "<nome progetto>"
-=======
-- [ ] **0 occorrenze** hardcoded "saluteora"
->>>>>>> 6ed19256f (.)
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
 - [ ] **Script check** passa senza errori
@@ -263,11 +272,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
-<<<<<<< HEAD
 grep -r -i "<nome progetto>" Modules/User/ --include="*.php" | wc -l
-=======
-grep -r -i "saluteora" Modules/User/ --include="*.php" | wc -l
->>>>>>> 6ed19256f (.)
 ```
 
 ### Post-Implementazione
@@ -291,19 +296,10 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/project/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/project/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
 
-=======
-- [Analisi Moduli Globale](../../../project_docs/modules_analysis_and_optimization.md)
-- [Linee Guida Riusabilità](../../../project_docs/module_reusability_guidelines.md)
-- [Best Practices User](best-practices/)
-
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)
 # Raccomandazioni di Ottimizzazione - Modulo User
 
 ## 🎯 Stato Attuale e Problemi Critici
@@ -317,11 +313,7 @@ php artisan user:benchmark  # Target: < 100ms
 - **Struttura**: Informazioni sparse senza organizzazione logica
 
 #### 2. Riusabilità Compromessa
-<<<<<<< HEAD
 - **141+ occorrenze hardcoded** di "<nome progetto>"
-=======
-- **141+ occorrenze hardcoded** di "saluteora"
->>>>>>> 6ed19256f (.)
 - **210+ occorrenze** di `User::` senza XotData
 - **Import diretti** da moduli project-specific
 - **Path hardcoded** in documentazione
@@ -435,11 +427,7 @@ User/docs/
 #### Pattern di Correzione per Test
 ```php
 // ❌ PROBLEMI ATTUALI
-<<<<<<< HEAD
 use Modules\<nome progetto>\Models\User;
-=======
-use Modules\SaluteOra\Models\User;
->>>>>>> 6ed19256f (.)
 $user = User::factory()->create();
 
 // ✅ SOLUZIONI RICHIESTE
@@ -458,11 +446,7 @@ protected function createTestUser(): mixed
 #### File Prioritari da Correggere
 1. **Widget Auth**: Tutti i widget in `app/Filament/Widgets/Auth/`
 2. **Test Files**: Tutti i test che usano User diretto
-<<<<<<< HEAD
 3. **Documentation**: Rimuovere path hardcoded tipo ``
-=======
-3. **Documentation**: Rimuovere path hardcoded tipo `/var/www/html/saluteora/`
->>>>>>> 6ed19256f (.)
 
 ### 3. Trait e STI Optimization (IMPORTANTE - 1 giorno)
 
@@ -530,11 +514,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 - [ ] **Collegamenti** ridotti a essenziali (max 20)
 
 ### Riusabilità
-<<<<<<< HEAD
 - [ ] **0 occorrenze** hardcoded "<nome progetto>"
-=======
-- [ ] **0 occorrenze** hardcoded "saluteora"
->>>>>>> 6ed19256f (.)
 - [ ] **0 utilizzi** User:: senza XotData
 - [ ] **100% pattern** dinamici nei test
 - [ ] **Script check** passa senza errori
@@ -569,11 +549,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 find Modules/User/docs -name "*.md" | wc -l
 
 # Verifica riusabilità
-<<<<<<< HEAD
 grep -r -i "<nome progetto>" Modules/User/ --include="*.php" | wc -l
-=======
-grep -r -i "saluteora" Modules/User/ --include="*.php" | wc -l
->>>>>>> 6ed19256f (.)
 ```
 
 ### Post-Implementazione
@@ -597,15 +573,6 @@ php artisan user:benchmark  # Target: < 100ms
 
 ## Collegamenti
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: gennaio 2025*
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Linee Guida Riusabilità](../../../../docs/module_reusability_guidelines.md)
 - [Best Practices User](best-practices/)
-=======
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
-- [Linee Guida Riusabilità](../../../docs/module_reusability_guidelines.md)
-- [Best Practices User](best-practices/)
-
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,10 @@
+---
+title: "Correzioni PHPStan Livello 7 - Modulo UI"
+qmd: "ui phpstan fixes 1 md"
+type: note
+tags: [documentation]
+---
+
 # Correzioni PHPStan Livello 7 - Modulo UI
 
 Questo documento traccia gli errori PHPStan di livello 7 identificati nel modulo UI e le relative soluzioni implementate.

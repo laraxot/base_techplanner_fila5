@@ -7,16 +7,15 @@ return [
     'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
-        'name' => 'dashboard',
-        'plural' => 'dashboard',
+        'name' => 'Dashboard',
+        'plural' => 'Dashboard',
         'group' => [
             'name' => '',
         ],
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
-            'label' => 'Nome',
+            'label' => 'Name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -34,13 +33,13 @@ return [
             'description' => '',
         ],
         'updated_at' => [
-            'label' => 'Aggiornato il',
+            'label' => 'Updated at',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'first_name' => [
-            'label' => 'Nome',
+            'label' => 'Name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -52,42 +51,28 @@ return [
             'description' => '',
         ],
         'select_all' => [
-            'name' => 'Seleziona Tutti',
+            'name' => 'Select All',
             'message' => '',
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'import' => [
             'fields' => [
-                'import_file' => 'Seleziona un file XLS o CSV da caricare',
+                'import_file' => 'Select an XLS or CSV file to upload',
             ],
         ],
         'export' => [
             'filename_prefix' => 'Aree al',
             'columns' => [
-                'name' => 'Nome area',
-                'parent_name' => 'Nome area livello superiore',
+                'name' => 'Area name',
+                'parent_name' => 'Parent area name',
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,14 @@
+---
+title: "registration widget test strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "registration widget test strategy"
+issues: []
+discussions: []
+---
+
 # RegistrationWidget Test Strategy - Modulo Cms ✅ IMPLEMENTATO
 
 ## 🎯 Overview Strategico
@@ -229,23 +240,12 @@ $resourceClass = XotData::make()->getUserResourceClassByType($type);
 - [Register Type Test Implementation](./register-type-test-implementation.md)
 
 ### **Documentazione Root**
-<<<<<<< HEAD
-- [User Module: RegistrationWidget](../../../User/docs/widgets/registration-widget.md)
-- [Xot Module: Testing Infrastructure](../../../Xot/docs/testing/infrastructure.md)
 - [Testing Organization](../../../../../docs/testing-organization.md)
 - [PestPHP Best Practices](../../../../../docs/testing/pestphp-best-practices.md)
 
 ### **Documentazione Moduli Correlati**
 - [User Module: RegistrationWidget](../../../user/docs/widgets/registration-widget.md)
 - [Xot Module: Testing Infrastructure](../../../xot/docs/testing/infrastructure.md)
-=======
-- [Testing Organization](../../../../docs/testing-organization.md)
-- [PestPHP Best Practices](../../../../docs/testing/pestphp-best-practices.md)
-
-### **Documentazione Moduli Correlati**
-- [User Module: RegistrationWidget](../../../User/docs/widgets/registration-widget.md)
-- [Xot Module: Testing Infrastructure](../../../Xot/docs/testing/infrastructure.md)
->>>>>>> 6ed19256f (.)
 
 ## 🎉 Conclusioni
 
@@ -261,10 +261,14 @@ L'implementazione del `RegisterTypeWidgetTest` è stata **completata con success
 Il modulo Cms ora ha una **strategia di testing solida** e **replicabile** per altri widget Filament.
 
 ---
+title: "registration widget test strategy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "registration widget test strategy"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: Gennaio 2025
 **Status**: ✅ PRODUCTION READY
-<<<<<<< HEAD
 **Performance**: 9 test / 4.44s / 100% pass rate
-=======
-**Performance**: 9 test / 4.44s / 100% pass rate
->>>>>>> 6ed19256f (.)

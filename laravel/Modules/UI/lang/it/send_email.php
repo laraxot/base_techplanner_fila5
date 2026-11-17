@@ -5,42 +5,15 @@ declare(strict_types=1);
 return [
     'fields' => [
         'to' => [
-            'label' => 'to',
-            'placeholder' => 'to',
-            'helper_text' => 'to',
-            'description' => 'to',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'subject' => [
-            'label' => 'subject',
-            'placeholder' => 'subject',
-            'helper_text' => 'subject',
-            'description' => 'subject',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
-            'label' => 'body_html',
-            'placeholder' => 'body_html',
-            'helper_text' => 'body_html',
-            'description' => 'body_html',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
-    'actions' => [
-        'emailFormActions' => [
-            'label' => 'emailFormActions',
-        ],
-    ],
-<<<<<<< HEAD
     'label' => 'Send Email',
     'plural_label' => 'Send Email (Plurale)',
     'navigation' => [
@@ -52,8 +25,6 @@ return [
         ],
         'label' => 'Send Email',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

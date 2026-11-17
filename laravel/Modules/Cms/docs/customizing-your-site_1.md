@@ -1,4 +1,11 @@
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "customizing your site 1"
+issues: []
+discussions: []
 title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
@@ -88,8 +95,8 @@ class Foo extends bar
 
 
 ---
-* [customizing-your-site.md](laravel/Modules/Gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](laravel/Modules/Xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](laravel/Modules/UI/docs/customizing-your-site.md)
-* [customizing-your-site.md](laravel/Modules/Tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](laravel/Modules/Cms/docs/customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)

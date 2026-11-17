@@ -1,3 +1,10 @@
+---
+title: "Utilizzo dei Componenti Blade di Filament"
+qmd: "ui filament blade components usage 1 md"
+type: note
+tags: [documentation]
+---
+
 # Utilizzo dei Componenti Blade di Filament
 
 ## Indice
@@ -39,11 +46,7 @@ Filament fornisce una serie di componenti Blade pronti all'uso che dovrebbero es
 
 ⚠️ **ATTENZIONE**: I seguenti layout **NON esistono** in Filament e non devono essere utilizzati:
 
-<<<<<<< HEAD
 - ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di <nome progetto>
-=======
-- ❌ `<x-filament::layouts.app>` - Non esiste, utilizzare invece `<x-layouts.app>` di SaluteOra
->>>>>>> 6ed19256f (.)
 - ❌ `<x-filament::layouts.card>` - Non esiste, utilizzare invece una combinazione di `<x-filament::card>` e altri componenti
 - ❌ `<x-filament::layouts.base>` - Non esiste
 
@@ -195,11 +198,7 @@ I dropdown di Filament hanno una struttura specifica che deve essere rispettata.
    - Folio gestisce automaticamente le rotte del frontend
 
 2. **Per le pagine frontend**:
-<<<<<<< HEAD
    - Creare file Blade in `Themes/One/resources/views/pages/`
-=======
-   - Creare file Blade in `/var/www/html/saluteora/laravel/Themes/One/resources/views/pages/`
->>>>>>> 6ed19256f (.)
    - Utilizzare Folio per il routing automatico
    - Esempio: `/profile/index.blade.php` sarà accessibile come `/it/profile`
 

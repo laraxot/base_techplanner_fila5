@@ -8,11 +8,7 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Modules\Xot\Models\InformationSchemaTable;
 
 /**
-<<<<<<< HEAD
  * InformationSchemaTable Factory.
-=======
- * InformationSchemaTable Factory
->>>>>>> 6ed19256f (.)
  *
  * @extends Factory<InformationSchemaTable>
  */
@@ -20,6 +16,9 @@ class InformationSchemaTableFactory extends Factory
 {
     protected $model = InformationSchemaTable::class;
 
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         /** @var string $tableName */

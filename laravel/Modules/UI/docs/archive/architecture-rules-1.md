@@ -1,3 +1,10 @@
+---
+title: "Architectural Rules & Guidelines"
+qmd: "ui archive architecture rules 1 md"
+type: note
+tags: [documentation]
+---
+
 # Architectural Rules & Guidelines
 
 This module adheres to the **Laraxot Architecture** and **Super Cow Methodology**.

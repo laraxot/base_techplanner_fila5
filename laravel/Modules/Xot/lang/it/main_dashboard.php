@@ -5,33 +5,22 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
-<<<<<<< HEAD
             'label' => 'Vuoto',
             'heading' => 'Nessun Dato',
-=======
-            'label' => '',
-            'heading' => '',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'logout' => [
             'icon' => 'logout',
             'label' => 'logout',
-            'tooltip' => 'logout',
         ],
         'profile' => [
             'icon' => 'profile',
-            'label' => 'profile',
-            'tooltip' => 'profile',
         ],
         'il-mio-profilo' => [
             'icon' => 'il-mio-profilo',
-            'label' => 'il-mio-profilo',
-            'tooltip' => 'il-mio-profilo',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Main Dashboard',
     'plural_label' => 'Main Dashboard (Plurale)',
     'navigation' => [
@@ -65,6 +54,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

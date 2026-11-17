@@ -1,3 +1,10 @@
+---
+title: "Filament 4.x Upgrade - Modulo UI"
+qmd: "ui archive filament 4x upgrade md"
+type: note
+tags: [documentation]
+---
+
 # Filament 4.x Upgrade - Modulo UI
 
 **Status**: ✅ COMPLETATO

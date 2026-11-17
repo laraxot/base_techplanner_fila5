@@ -15,7 +15,6 @@ return [
     'test_iam_credentials' => 'Test Credenziali IAM',
     'test_iam_policies' => 'Test Policy IAM',
     'run_full_diagnostic' => 'Esegui Diagnostica Completa',
-<<<<<<< HEAD
     'label' => 'Aws Test',
     'plural_label' => 'Aws Test (Plurale)',
     'fields' => [
@@ -49,6 +48,4 @@ return [
             'label' => 'Elimina Aws Test',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

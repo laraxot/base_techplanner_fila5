@@ -10,30 +10,43 @@ use Illuminate\Support\Facades\URL;
 use Modules\Comment\Enums\NotificationSubscriptionType;
 use Modules\Comment\Support\CommentConfig;
 use Modules\Comment\Support\CommentatorProperties;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
  * CanComment senza RoutesNotifications — BaseUser usa già Notifiable.
  */
 trait InteractsWithComments
 {
+    /** @return MorphMany<\Modules\Comment\Models\Comment, Model> */
     public function commentatorComments(): MorphMany
     {
-        return $this->morphMany(CommentConfig::commentModelClass(), 'commentator');
+        /** @var MorphMany<\Modules\Comment\Models\Comment, Model> $relation */
+        $relation = $this->morphMany(CommentConfig::commentModelClass(), 'commentator');
+
+        return $relation;
     }
 
+    /** @return MorphMany<\Modules\Comment\Models\CommentNotificationSubscription, Model> */
     public function subscriberNotificationSubscriptions(): MorphMany
     {
-        return $this->morphMany(CommentConfig::commentNotificationSubscriptionModelClass(), 'subscriber');
+        /** @var MorphMany<\Modules\Comment\Models\CommentNotificationSubscription, Model> $relation */
+        $relation = $this->morphMany(CommentConfig::commentNotificationSubscriptionModelClass(), 'subscriber');
+
+        return $relation;
     }
 
+    /** @return MorphMany<\Modules\Comment\Models\Reaction, Model> */
     public function reactions(): MorphMany
     {
-        return $this->morphMany(CommentConfig::reactionModelClass(), 'commentator');
+        /** @var MorphMany<\Modules\Comment\Models\Reaction, Model> $relation */
+        $relation = $this->morphMany(CommentConfig::reactionModelClass(), 'commentator');
+
+        return $relation;
     }
 
     public function commentatorProperties(): CommentatorProperties
     {
-        $email = (string) ($this->email ?? '');
+        $email = SafeStringCastAction::cast($this->email ?? '');
         $segment = md5(strtolower($email));
         $defaultImage = CommentConfig::gravatarDefaultImage();
         $nameField = CommentConfig::commentatorModelNameField();

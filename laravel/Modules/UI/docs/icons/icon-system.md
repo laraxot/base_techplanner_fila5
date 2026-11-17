@@ -1,3 +1,10 @@
+---
+title: "UI Module Icon System"
+qmd: "ui icons icon system md"
+type: note
+tags: [documentation]
+---
+
 # UI Module Icon System
 
 ## How It Works

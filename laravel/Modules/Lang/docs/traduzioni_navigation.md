@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Traduzioni con '.navigation' - Audit Completo 2025"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Traduzioni con ".navigation" - Audit Completo 2025
 
 ## Riepilogo Problema
@@ -97,7 +110,7 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 
 ## Collegamenti Correlati
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](../correzioni_errori_sintassi_2025.md)
+- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
 - [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*

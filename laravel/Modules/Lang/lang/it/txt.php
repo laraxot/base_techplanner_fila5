@@ -8,8 +8,7 @@ return [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
             'tooltip' => 'Usa un indirizzo email valido',
-            'icon' => 'heroicon-o-mail',
-            'description' => 'email',
+            'icon' => 'heroicon-o-envelope',
             'helper_text' => '',
         ],
         'password' => [
@@ -17,42 +16,27 @@ return [
             'placeholder' => 'Inserisci la tua password',
             'tooltip' => 'La password deve contenere almeno 8 caratteri',
             'icon' => 'heroicon-o-lock-closed',
-            'description' => 'password',
             'helper_text' => '',
         ],
         'remember' => [
             'label' => 'Ricordami',
             'tooltip' => 'Mantieni l\'accesso attivo su questo dispositivo',
-            'description' => 'remember',
             'helper_text' => '',
-            'placeholder' => 'remember',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
         ],
         'options' => [
             'prefix-icon-color' => [
@@ -239,409 +223,184 @@ return [
                 'helper_text' => 'options.prefix',
                 'description' => 'options.prefix',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
->>>>>>> 6ed19256f (.)
         ],
         'value' => [
-            'description' => 'value',
             'helper_text' => '',
-            'placeholder' => 'value',
-            'label' => 'value',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'values-list' => [
-            'description' => 'values-list',
             'helper_text' => '',
-            'placeholder' => 'values-list',
-            'label' => 'values-list',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'user_id' => [
-            'label' => 'user_id',
-            'placeholder' => 'user_id',
             'helper_text' => '',
-            'description' => 'user_id',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
-            'label' => 'name',
-            'placeholder' => 'name',
             'helper_text' => '',
-            'description' => 'name',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'slug' => [
-            'label' => 'slug',
-            'placeholder' => 'slug',
             'helper_text' => '',
-            'description' => 'slug',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'category_id' => [
-            'label' => 'category_id',
-            'placeholder' => 'category_id',
             'helper_text' => '',
-            'description' => 'category_id',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
-            'label' => 'description',
-            'placeholder' => 'description',
             'helper_text' => '',
-            'description' => 'description',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'details' => [
-            'label' => 'details',
-            'placeholder' => 'details',
             'helper_text' => '',
-            'description' => 'details',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
-            'label' => 'is_active',
-            'placeholder' => 'is_active',
             'helper_text' => '',
-            'description' => 'is_active',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'ordering' => [
-            'label' => 'ordering',
-            'placeholder' => 'ordering',
             'helper_text' => '',
-            'description' => 'ordering',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'start_date' => [
-            'label' => 'start_date',
-            'placeholder' => 'start_date',
             'helper_text' => '',
-            'description' => 'start_date',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'end_date' => [
-            'label' => 'end_date',
-            'placeholder' => 'end_date',
             'helper_text' => '',
-            'description' => 'end_date',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'extensions' => [
-            'label' => 'extensions',
-            'placeholder' => 'extensions',
             'helper_text' => '',
-            'description' => 'extensions',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'sections' => [
-            'label' => 'sections',
-            'placeholder' => 'sections',
             'helper_text' => '',
-            'description' => 'sections',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'fields' => [
-            'label' => 'fields',
-            'placeholder' => 'fields',
             'helper_text' => '',
-            'description' => 'fields',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
-            'label' => 'type',
-            'placeholder' => 'type',
             'helper_text' => '',
-            'description' => 'type',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'compact' => [
-            'label' => 'compact',
-            'placeholder' => 'compact',
             'helper_text' => '',
-            'description' => 'compact',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'aside' => [
-            'label' => 'aside',
-            'placeholder' => 'aside',
             'helper_text' => '',
-            'description' => 'aside',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'borderless' => [
-            'label' => 'borderless',
-            'placeholder' => 'borderless',
             'helper_text' => '',
-            'description' => 'borderless',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'icon' => [
-            'label' => 'icon',
-            'placeholder' => 'icon',
             'helper_text' => '',
-            'description' => 'icon',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'columns' => [
-            'label' => 'columns',
-            'placeholder' => 'columns',
             'helper_text' => '',
-            'description' => 'columns',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'itemIsDefault' => [
-            'description' => 'itemIsDefault',
             'helper_text' => '',
-            'placeholder' => 'itemIsDefault',
-            'label' => 'itemIsDefault',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         'delete' => [
-            'label' => 'delete',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'edit' => [
-            'label' => 'edit',
->>>>>>> 6ed19256f (.)
         ],
         'isActive' => [
-            'description' => 'isActive',
             'helper_text' => '',
-            'placeholder' => 'isActive',
-            'label' => 'isActive',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         'status' => [
-            'label' => 'status',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'notes' => [
-            'description' => 'notes',
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-=======
-        ],
-        'status' => [
-            'label' => 'status',
-        ],
-        'notes' => [
-            'description' => 'notes',
->>>>>>> 6ed19256f (.)
         ],
         'responses_count' => [
-            'description' => 'responses_count',
             'helper_text' => '',
-            'placeholder' => 'responses_count',
-            'label' => 'responses_count',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'itemKey' => [
-            'description' => 'itemKey',
             'helper_text' => '',
-            'placeholder' => 'itemKey',
-            'label' => 'itemKey',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'forms_count' => [
-            'description' => 'forms_count',
             'helper_text' => '',
-            'placeholder' => 'forms_count',
-            'label' => 'forms_count',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'responses_exists' => [
-            'description' => 'responses_exists',
             'helper_text' => '',
-            'placeholder' => 'responses_exists',
-            'label' => 'responses_exists',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'logo' => [
-            'description' => 'logo',
             'helper_text' => '',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'category' => [
             'name' => [
                 'description' => 'category.name',
                 'helper_text' => '',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'test_date' => [
-            'label' => 'test_date',
-            'placeholder' => 'test_date',
-            'helper_text' => 'test_date',
-            'description' => 'test_date',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'test' => [
-            'label' => 'test',
-            'placeholder' => 'test',
-            'helper_text' => 'test',
-            'description' => 'test',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'view' => [
-            'label' => 'view',
-            'placeholder' => 'view',
-            'helper_text' => 'view',
-            'description' => 'view',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         'address' => [
             'label' => 'address2',
-            'placeholder' => 'address',
-            'helper_text' => 'address',
-            'description' => 'address',
             'tooltip' => '',
         ],
-        'display_name' => [
-            'label' => 'display_name',
-        ],
         'location' => [
-            'label' => 'location',
-            'placeholder' => 'location',
-            'helper_text' => 'location',
-            'description' => 'location',
-        ],
-        'coordinates' => [
-            'label' => 'coordinates',
-            'placeholder' => 'coordinates',
-            'helper_text' => 'coordinates',
-            'description' => 'coordinates',
+            'address' => [
+                'label' => 'location.address',
+                'placeholder' => 'location.address',
+                'helper_text' => 'location.address',
+                'description' => 'location.address',
+            ],
         ],
         'file1' => [
             'jpg' => [
@@ -651,25 +410,72 @@ return [
                 'description' => 'file1.jpg',
             ],
         ],
-        'id' => [
-            'label' => 'id',
+        'dal' => [
+            'helper_text' => '',
         ],
-        'created_at' => [
-            'label' => 'created_at',
+        'al' => [
+            'helper_text' => '',
         ],
-        'updated_at' => [
-            'label' => 'updated_at',
+        'anno' => [
+            'helper_text' => '',
         ],
-        'appointment_date' => [
-            'label' => 'appointment_date',
-            'placeholder' => 'appointment_date',
-            'helper_text' => 'appointment_date',
-            'description' => 'appointment_date',
+        'valutatore_id' => [
+            'helper_text' => '',
         ],
-        'contact' => [
-            'label' => 'contact',
-=======
->>>>>>> 6ed19256f (.)
+        'nome_diri' => [
+            'helper_text' => '',
+        ],
+        'txt' => [
+            'label' => 'Testo',
+            'placeholder' => 'Testo',
+            'helper_text' => 'Testo',
+            'description' => 'Testo',
+        ],
+        'note' => [
+            'helper_text' => '',
+        ],
+        'extra_attributes' => [
+            'type' => [
+                'label' => 'extra_attributes.type',
+                'placeholder' => 'extra_attributes.type',
+                'helper_text' => 'extra_attributes.type',
+                'description' => 'extra_attributes.type',
+            ],
+            'anno' => [
+                'label' => 'extra_attributes.anno',
+                'placeholder' => 'extra_attributes.anno',
+                'helper_text' => 'extra_attributes.anno',
+                'description' => 'extra_attributes.anno',
+            ],
+        ],
+        'user' => [
+            'name' => [
+                'label' => 'user.name',
+                'placeholder' => 'user.name',
+                'helper_text' => 'user.name',
+                'description' => 'user.name',
+            ],
+        ],
+        'quadrimestre' => [
+            'helper_text' => '',
+        ],
+        'ratings' => [
+            1 => [
+                'pivot' => [
+                    'value' => [
+                        'label' => 'ratings.1.pivot.value',
+                        'placeholder' => 'ratings.1.pivot.value',
+                        'helper_text' => 'ratings.1.pivot.value',
+                        'description' => 'ratings.1.pivot.value',
+                    ],
+                    'note' => [
+                        'label' => 'ratings.1.pivot.note',
+                        'placeholder' => 'ratings.1.pivot.note',
+                        'helper_text' => 'ratings.1.pivot.note',
+                        'description' => 'ratings.1.pivot.note',
+                    ],
+                ],
+            ],
         ],
     ],
     'actions' => [
@@ -686,74 +492,116 @@ return [
             'color' => 'success',
         ],
         'request' => [
-            'label' => 'request',
-            'tooltip' => 'request',
             'icon' => 'request',
-        ],
-        'cancel' => [
-            'label' => 'cancel',
-        ],
-        'save' => [
-            'label' => 'save',
-        ],
-        'activeLocale' => [
-            'label' => 'activeLocale',
-        ],
-        'open' => [
-            'label' => 'open',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'createAnother' => [
-            'label' => 'createAnother',
+            'label' => 'request',
         ],
         'hidePassword' => [
             'icon' => 'hidePassword',
             'label' => 'hidePassword',
-            'tooltip' => 'hidePassword',
         ],
         'showPassword' => [
             'icon' => 'ui-showPassword',
             'label' => 'showPassword',
-            'tooltip' => 'showPassword',
         ],
         'list_log_activities' => [
-            'label' => 'list_log_activities',
             'icon' => 'list_log_activities',
-            'tooltip' => 'list_log_activities',
         ],
-<<<<<<< HEAD
         'table_layout_toggle' => [
-            'label' => 'table_layout_toggle',
             'icon' => 'table_layout_toggle',
-            'tooltip' => 'table_layout_toggle',
         ],
         'update_coordinates' => [
-            'label' => 'update_coordinates',
             'icon' => 'update_coordinates',
-            'tooltip' => 'update_coordinates',
         ],
         'edit' => [
-            'label' => 'edit',
             'icon' => 'edit',
-            'tooltip' => 'edit',
         ],
         'delete' => [
-            'label' => 'delete',
             'icon' => 'delete',
-            'tooltip' => 'delete',
         ],
         'SendRecordsNotificationBulkAction' => [
-            'label' => 'SendRecordsNotificationBulkAction',
             'icon' => 'SendRecordsNotificationBulkAction',
-            'tooltip' => 'SendRecordsNotificationBulkAction',
+        ],
+        'changePassword' => [
+            'icon' => 'changePassword',
+        ],
+        'test' => [
+            'icon' => 'test',
+        ],
+        'register' => [
+            'icon' => 'register',
+        ],
+        'refresh' => [
+            'icon' => 'refresh',
+        ],
+        'gg_presenza_dalal' => [
+            'icon' => 'gg_presenza_dalal',
+        ],
+        'gg_assenza_dalal' => [
+            'icon' => 'gg_assenza_dalal',
+        ],
+        'hh_assenza_dalal' => [
+            'icon' => 'hh_assenza_dalal',
+        ],
+        'stabi' => [
+            'icon' => 'stabi',
+        ],
+        'repar' => [
+            'icon' => 'repar',
+        ],
+        'nome_stabi' => [
+            'icon' => 'nome_stabi',
+        ],
+        'logout' => [
+            'icon' => 'logout',
+        ],
+        'profile' => [
+            'icon' => 'profile',
+            'label' => 'profile',
+        ],
+        'convert' => [
+            'icon' => 'convert',
+        ],
+        'field' => [
+            'icon' => 'field',
+        ],
+        'bet_action' => [
+            'icon' => 'bet_action',
+        ],
+        'export_xls_lazy_cov' => [
+            'icon' => 'export_xls_lazy_cov',
+        ],
+        'export_xls_cov' => [
+            'icon' => 'export_xls_cov',
+        ],
+        'title' => [
+            'icon' => 'title',
+        ],
+        'export_pdf' => [
+            'icon' => 'export_pdf',
+        ],
+        'export_flusso' => [
+            'icon' => 'export_flusso',
+        ],
+        'ImportAction' => [
+            'icon' => 'ImportAction',
+        ],
+        'next' => [
+            'icon' => 'next',
+        ],
+        'previous' => [
+            'icon' => 'previous',
+        ],
+        'billing' => [
+            'icon' => 'billing',
+        ],
+        'view' => [
+            'icon' => 'view',
         ],
     ],
     'sections' => [
-        'address' => [
-            'label' => 'address',
-            'heading' => 'address',
+        'empty' => [
+            'label' => '',
+            'heading' => '',
         ],
     ],
     'label' => 'Txt',
@@ -766,14 +614,7 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Txt',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'steps' => [
-        'test' => [
-            'label' => 'test',
-        ],
-=======
->>>>>>> 6ed19256f (.)
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
 ];

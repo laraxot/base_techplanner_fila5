@@ -22,7 +22,6 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'Editar',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -68,29 +67,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'payload' => [
-            'label' => 'Contenido',
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'queue' => [
-            'label' => 'Cola',
-        ],
-        'attempts' => [
-            'label' => 'Intentos',
-        ],
-        'reserved_at' => [
-            'label' => 'Reservado en',
-        ],
-        'available_at' => [
-            'label' => 'Disponible en',
-        ],
-        'created_at' => [
-            'label' => 'Creado en',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -101,8 +77,4 @@ return [
     ],
     'label' => 'Trabajo',
     'plural_label' => 'Trabajos',
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

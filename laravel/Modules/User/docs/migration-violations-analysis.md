@@ -1,3 +1,28 @@
+---
+title: "Migration Violations Analysis - User Module"
+type: concept
+tags: [migration, violations, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration-violations-analysis migration violations analysis - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Migration Violations Analysis - User Module
 
 ## Executive Summary
@@ -135,17 +160,10 @@ The User module contains multiple violations of the Laraxot migration philosophy
 
 These violations directly contravene the Laraxot migration philosophy:
 - ❌ Single source of truth principle
-<<<<<<< HEAD
 - ❌ <nome progetto>able migration order
-=======
-- ❌ Predictable migration order
->>>>>>> 6ed19256f (.)
 - ❌ DRY principle
 - ❌ Maintenance simplicity
 - ❌ Clear schema definition
 
-<<<<<<< HEAD
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
-=======
 The violations demonstrate a clear gap in understanding and implementation of the core Laraxot migration philosophy that emphasizes: **ONE TABLE, ONE MIGRATION, ONE MODULE**.
->>>>>>> 6ed19256f (.)

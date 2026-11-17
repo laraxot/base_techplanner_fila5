@@ -1,21 +1,29 @@
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
 ---
 module: theme
 topic: translation-fixes
 canonical: ../../../Themes/docs/shared-components/translation-fixes.md
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "translation fixes"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "translation fixes user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/translation-fixes.md
-=======
-# Correzioni File di Traduzione User Module
-
-## Problemi Identificati e Risolti
-
-### 1. Conflitti di Merge Git
-**Problema**: Il file `Modules/User/lang/it/user.php` conteneva marcatori di conflitto Git non risolti:
-- `=======`
-- `>>>>>>> 42fc572 (.)`
 - `>>>>>>> 199538c (.)`
 
 **Soluzione**: Rimossi tutti i marcatori di conflitto e mantenuto solo il contenuto corretto.
@@ -108,4 +116,3 @@ Il file ora segue la struttura espansa obbligatoria per le regole Laraxot:
 ---
 
 *Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

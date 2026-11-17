@@ -5,7 +5,7 @@
 set -e
 
 DOCS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PROJECT_ROOT="/var/www/_bases/base_quaeris_fila4_mono"
+PROJECT_ROOT="/var/www/_bases/base_<nome progetto>_fila4_mono"
 
 echo "🔍 Analisi link assoluti in: $DOCS_DIR"
 echo ""
@@ -15,15 +15,15 @@ convert_to_relative() {
     local absolute_path="$1"
     local from_file="$2"
     local from_dir=$(dirname "$from_file")
-    
+
     # Rimuovi project root dal path
     local relative_from_project="${absolute_path#$PROJECT_ROOT/}"
     local relative_from_project="${relative_from_project#laravel/}"
-    
+
     # Calcola path relativo da $from_dir
     # Se from_dir è Modules/Xot/docs e target è Modules/User/docs/file.md
     # risultato dovrebbe essere ../../User/docs/file.md
-    
+
     python3 -c "import os; print(os.path.relpath('$absolute_path', '$from_dir'))"
 }
 

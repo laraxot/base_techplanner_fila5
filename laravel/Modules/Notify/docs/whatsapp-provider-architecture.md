@@ -1,15 +1,21 @@
+---
+title: "whatsapp provider architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "whatsapp provider architecture"
+issues: []
+discussions: []
+status: draft
+---
+
 # Architettura WhatsApp Provider per
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider WhatsApp nel modulo Notify di , mantenendo coerenza con le architetture esistenti per SMS ed email.
-<<<<<<< HEAD
 # Architettura WhatsApp Provider per <nome progetto>
 
 Questo documento definisce l'architettura e gli standard per l'implementazione dei provider WhatsApp nel modulo Notify di <nome progetto>, mantenendo coerenza con le architetture esistenti per SMS ed email.
-=======
-# Architettura WhatsApp Provider per SaluteOra
-
-Questo documento definisce l'architettura e gli standard per l'implementazione dei provider WhatsApp nel modulo Notify di SaluteOra, mantenendo coerenza con le architetture esistenti per SMS ed email.
->>>>>>> 6ed19256f (.)
 
 ## Principi Architetturali Fondamentali
 
@@ -23,15 +29,9 @@ L'architettura dei provider WhatsApp segue gli stessi principi dei provider SMS 
 ## Struttura Directory e Namespace
 
 ```
-<<<<<<< HEAD
 Modules/Notify/
 Modules/Notify/
 Modules/Notify/
-=======
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/
-/var/www/html/saluteora/laravel/Modules/Notify/
-/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/
->>>>>>> 6ed19256f (.)
 ├── app/
 │   ├── Actions/
 │   │   └── WhatsApp/
@@ -225,10 +225,6 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
         // Crea il client Twilio
         $client = new Client([
             'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
-<<<<<<< HEAD
-            'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
-=======
->>>>>>> 6ed19256f (.)
             'auth' => [$this->accountSid, $this->authToken],
             'timeout' => $this->timeout,
             'http_errors' => false,
@@ -500,10 +496,6 @@ Per integrare con Twilio:
 2. Acquisire un numero WhatsApp Business o configurare un Sandbox
 3. Configurare Account SID e Auth Token
 4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
-<<<<<<< HEAD
-4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
-=======
->>>>>>> 6ed19256f (.)
 
 ### Vonage API per WhatsApp
 
@@ -586,11 +578,7 @@ L'architettura dei provider WhatsApp segue gli stessi principi dei provider SMS 
 ## Struttura Directory e Namespace
 
 ```
-<<<<<<< HEAD
 Modules/Notify/
-=======
-/var/www/html/<directory progetto>/laravel/Modules/Notify/
->>>>>>> 6ed19256f (.)
 ├── app/
 │   ├── Actions/
 │   │   └── WhatsApp/
@@ -784,10 +772,6 @@ final class SendTwilioWhatsAppAction implements WhatsAppProviderActionInterface
         // Crea il client Twilio
         $client = new Client([
             'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
-<<<<<<< HEAD
-            'base_uri' => "https://api.{$this->edge}.twilio.com/2010-04-01/",
-=======
->>>>>>> 6ed19256f (.)
             'auth' => [$this->accountSid, $this->authToken],
             'timeout' => $this->timeout,
             'http_errors' => false,
@@ -1059,10 +1043,6 @@ Per integrare con Twilio:
 2. Acquisire un numero WhatsApp Business o configurare un Sandbox
 3. Configurare Account SID e Auth Token
 4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
-<<<<<<< HEAD
-4. Utilizzare l'endpoint REST `/2010-04-01/Accounts/{AccountSid}/Messages.json`
-=======
->>>>>>> 6ed19256f (.)
 
 ### Vonage API per WhatsApp
 
@@ -1128,8 +1108,4 @@ Per sviluppo e test:
 1. Utilizzare sandbox WhatsApp quando disponibili
 2. Implementare mock per test unitari
 3. Utilizzare numeri di test autorizzati durante lo sviluppo
-<<<<<<< HEAD
 4. Implementare logging dettagliato in ambiente di sviluppo
-=======
-4. Implementare logging dettagliato in ambiente di sviluppo
->>>>>>> 6ed19256f (.)

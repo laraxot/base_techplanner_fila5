@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki concepts enumselect filament api collisions md"
 title: EnumSelect - Filament API collisions (make/enum/getLabel)
 type: concept
 updated: 2026-04-23

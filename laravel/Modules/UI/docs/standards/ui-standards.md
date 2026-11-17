@@ -1,3 +1,10 @@
+---
+title: "Standard UI"
+qmd: "ui standards ui standards md"
+type: note
+tags: [documentation]
+---
+
 # Standard UI
 
 ## 🎨 Design System

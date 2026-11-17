@@ -3,7 +3,9 @@
 
     $config = include 'config.php';
     
-    if (isset($_GET['pass']) && $_GET['pass'] == $config['admin_pass']){
+    // Confronto a tempo costante; la password d'esempio o vuota non apre nulla (RC3, 2026-11-10).
+    $adminPass = is_array($config) && isset($config['admin_pass']) && is_string($config['admin_pass']) ? $config['admin_pass'] : '';
+    if (isset($_GET['pass']) && is_string($_GET['pass']) && ! in_array($adminPass, ['', 'CHANGE'], true) && hash_equals($adminPass, $_GET['pass'])){
         $_SESSION['logged'] = 'ok';
         @header('Location: index.php');
     }
@@ -70,10 +72,10 @@
         <table width='100%'>
             <tr><td width='50%'>
                 Logs - <a href='?del=log1'>Clear This Logs</a><br />
-                <pre class='log'><?php echo $exp1; ?></pre>
+                <pre class='log'><?php echo htmlspecialchars($exp1, ENT_QUOTES); ?></pre>
             </td><td width='50%'>
                 Payload -   <a href='?del=log2'>Clear This Logs</a><br />
-                <pre class='log'><?php echo $exp2; ?></pre>
+                <pre class='log'><?php echo htmlspecialchars($exp2, ENT_QUOTES); ?></pre>
             </td></tr>
         </table>
         

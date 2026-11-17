@@ -1,4 +1,7 @@
 # SEO & Multilingual Implementation Guide for TechPlanner
+
+> Rule correction: the `Controller`, `Route::get(...)` and `App/Services/*Service` samples below are superseded. Pages are served by Folio (no Controllers, no content routes) and logic belongs in Actions (QueueableAction), never Services. See [architecture-data-driven-pages.md](./architecture-data-driven-pages.md).
+
 ## Comprehensive SEO Strategy for SaaS Platforms
 
 **Date**: February 6, 2026

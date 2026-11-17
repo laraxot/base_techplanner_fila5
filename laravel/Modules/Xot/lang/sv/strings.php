@@ -98,7 +98,6 @@ Denna boilerplate kommer med fullt funktionerande <em>Access Control Library</em
         ],
         'welcome_to' => 'Välkommen till :place',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -108,10 +107,4 @@ Denna boilerplate kommer med fullt funktionerande <em>Access Control Library</em
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

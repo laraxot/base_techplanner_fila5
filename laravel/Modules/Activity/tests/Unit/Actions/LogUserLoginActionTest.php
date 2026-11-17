@@ -2,16 +2,20 @@
 
 declare(strict_types=1);
 
+use Modules\Activity\Actions\LogUserLoginAction;
+use Modules\Activity\Tests\TestCase;
+use Modules\User\Database\Factories\UserFactory;
+use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
+
 uses(\Modules\Activity\Tests\TestCase::class);
 
-use Modules\Activity\Actions\LogUserLoginAction;
-use Modules\User\Models\User;
+test('LogUserLoginAction can execute for a user', function (): void {
+    $user = UserFactory::new()->createOne();
+    Assert::assertInstanceOf(User::class, $user);
 
-test('LogUserLoginAction can be instantiated', function () {
-    $user = User::factory()->make();
+    $action = new LogUserLoginAction;
+    $activity = $action->execute($user);
 
-    $action = new LogUserLoginAction($user);
-
-    expect($action)->toBeObject()
-        ->and($action->user)->toBe($user);
+    Assert::assertSame($user->getKey(), $activity->causer_id);
 });

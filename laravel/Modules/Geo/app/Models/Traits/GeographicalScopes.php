@@ -5,57 +5,32 @@ declare(strict_types=1);
 namespace Modules\Geo\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
-<<<<<<< HEAD
-=======
 use Illuminate\Database\Query\Expression;
->>>>>>> 6ed19256f (.)
 
+/** @phpstan-ignore trait.unused */
 trait GeographicalScopes
 {
     /**
      * Scope per calcolare la distanza tra due punti.
+     *
+     * @phpstan-ignore-next-line
      */
     public function scopeWithDistance(Builder $query, float $latitude, float $longitude): Builder
     {
-<<<<<<< HEAD
-        return $query->select('*')->selectRaw(
-            $this->getDistanceSql(withAlias: true),
-            [$latitude, $longitude, $latitude],
-        );
-=======
         return $query->select('*', $this->getDistanceExpression($latitude, $longitude, 'distance'));
->>>>>>> 6ed19256f (.)
     }
 
     /**
      * Scope per ordinare i risultati per distanza.
+     *
+     * @phpstan-ignore-next-line
      */
     public function scopeOrderByDistance(Builder $query, float $latitude, float $longitude): Builder
     {
-<<<<<<< HEAD
-        return $query->orderByRaw(
-            $this->getDistanceSql(),
-            [$latitude, $longitude, $latitude],
-        );
-    }
-
-    private function getDistanceSql(bool $withAlias = false): string
-    {
-        $sql = '
-            (6371 * acos(
-                cos(radians(?)) *
-                cos(radians(latitude)) *
-                cos(radians(longitude) - radians(?)) +
-                sin(radians(?)) *
-                sin(radians(latitude))
-            ))
-        ';
-
-        return $withAlias ? $sql.' AS distance' : $sql;
-=======
         return $query->orderBy($this->getDistanceExpression($latitude, $longitude));
     }
 
+    /** @phpstan-ignore-next-line */
     public function getDistanceExpression(
         float $latitude,
         float $longitude,
@@ -74,9 +49,7 @@ trait GeographicalScopes
             $sql .= " AS {$alias}";
         }
 
+        // @phpstan-ignore-next-line
         return new Expression($sql);
-
-        // AS distance
->>>>>>> 6ed19256f (.)
     }
 }

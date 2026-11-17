@@ -4,8 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Collection;
 
-// use Modules\Xot\Services\ArrayService;
-
 use Illuminate\Support\Collection;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Spatie\QueueableAction\QueueableAction;
@@ -22,21 +20,12 @@ class TransCollectionAction
     /**
      * Esegue la traduzione di una collezione.
      *
-<<<<<<< HEAD
-     * @param Collection<int|string, mixed> $collection
-=======
      * @param  Collection<int|string, mixed>  $collection
->>>>>>> 6ed19256f (.)
-     *
      * @return Collection<int|string, string>
      */
     public function execute(Collection $collection, ?string $transKey): Collection
     {
-<<<<<<< HEAD
-        if (null === $transKey) {
-=======
         if ($transKey === null) {
->>>>>>> 6ed19256f (.)
             return $collection->map(SafeStringCastAction::cast(...));
         }
 
@@ -48,12 +37,7 @@ class TransCollectionAction
     /**
      * Traduce un singolo elemento.
      *
-<<<<<<< HEAD
-     * @param mixed $item L'elemento da tradurre
-=======
      * @param  mixed  $item  L'elemento da tradurre
->>>>>>> 6ed19256f (.)
-     *
      * @return string L'elemento tradotto o l'elemento originale se la traduzione non esiste
      */
     public function trans(mixed $item): string
@@ -63,11 +47,7 @@ class TransCollectionAction
             $item = SafeStringCastAction::cast($item);
         }
 
-<<<<<<< HEAD
-        if (empty($item) || null === $this->transKey) {
-=======
         if (empty($item) || $this->transKey === null) {
->>>>>>> 6ed19256f (.)
             return $item;
         }
 

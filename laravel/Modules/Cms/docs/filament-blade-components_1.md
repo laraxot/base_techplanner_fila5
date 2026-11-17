@@ -1,3 +1,14 @@
+---
+title: "filament blade components 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament blade components 1"
+issues: []
+discussions: []
+---
+
 # Filament Blade Components Usage (CMS)
 
 ## Collegamenti
@@ -30,6 +41,6 @@ Per le best practice di **Filament** (https://filamentphp.com/docs/3.x/support/b
 ```
 
 ## Collegamenti tra versioni di filament-blade-components.md
-* [filament-blade-components.md](laravel/Modules/Cms/docs/filament-blade-components.md)
-* [filament-blade-components.md](laravel/Themes/One/docs/filament-blade-components.md)
+* [filament-blade-components.md](filament-blade-components.md)
+* [filament-blade-components.md](filament-blade-components.md)
 

@@ -1,8 +1,14 @@
-<<<<<<< HEAD
-=======
-# Regole Generali del Progetto SaluteOra
+---
+title: "Regole Generali del Progetto <nome progetto>"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "regole generali del progetto <nome progetto> xot"
+---
+# Regole Generali del Progetto <nome progetto>
 
-Questo documento contiene le regole generali che devono essere seguite in tutto il progetto SaluteOra per garantire coerenza e qualità del codice.
+Questo documento contiene le regole generali che devono essere seguite in tutto il progetto <nome progetto> per garantire coerenza e qualità del codice.
 
 ## Struttura dei Namespace
 - **Modelli**: Utilizzare il namespace `Modules\<nome modulo>\Models` per tutti i modelli.
@@ -22,18 +28,7 @@ Questo documento contiene le regole generali che devono essere seguite in tutto 
 
 ## Collegamenti Bidirezionali
 - Questo documento è collegato alle documentazioni dei seguenti moduli:
->>>>>>> 6ed19256f (.)
   - [Patient Module Documentation](../../../Patient/docs/doctor-model-update.md)
   - [User Module Documentation](../../../User/docs/user-model-guidelines.md)
 
 Queste regole devono essere seguite per garantire che il codice passi i controlli di qualità futuri e aderisca ai principi DRY (Don't Repeat Yourself) e KISS (Keep It Simple, Stupid). Considerare sempre le implicazioni di politica, filosofia, religione e zen nelle soluzioni implementate.
-<<<<<<< HEAD
----
-module: theme
-topic: general-rules
-canonical: ../../../Themes/docs/shared-components/general-rules-1.md
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/general-rules-1.md
-=======
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,14 @@
+---
+title: "phpstan class references fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan class references fix"
+issues: []
+discussions: []
+---
+
 # PHPStan Class References Fix - Geo Module
 
 ## Overview
@@ -250,8 +261,3 @@ cd /var/www/html/_bases/<directory progetto>/laravel
 - [Geo Module Architecture](./architecture.md)
 - [Google Maps Service Documentation](./services/)
 
-<<<<<<< HEAD
-*Ultimo aggiornamento: Luglio 2025*
-=======
-*Ultimo aggiornamento: Luglio 2025*
->>>>>>> 6ed19256f (.)

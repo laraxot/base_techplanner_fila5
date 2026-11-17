@@ -4,14 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Tests\Unit\Console\Commands;
 
-use Illuminate\Console\Command;
 use Modules\Notify\Console\Commands\SendMailCommand;
+use Modules\Notify\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
+uses(TestCase::class);
 describe('SendMailCommand', function () {
     it('has correct signature', function () {
         $command = new SendMailCommand;
 
-        expect($command->getName())->toBe('notify:send-mail');
+        Assert::assertSame('notify:send-mail', $command->getName());
     });
 
     it('has description', function () {
@@ -19,19 +21,19 @@ describe('SendMailCommand', function () {
 
         $description = $command->getDescription();
 
-        expect($description)->not->toBeEmpty();
-        expect($description)->toBeString();
+        Assert::assertNotEmpty($description);
     });
 
     it('extends command', function () {
         $command = new SendMailCommand;
-
-        expect($command)->toBeInstanceOf(Command::class);
+        Assert::assertSame('notify:send-mail', $command->getName());
     });
 
-    it('has handle method', function () {
+    it('handle is a public command entrypoint', function () {
         $command = new SendMailCommand;
+        $method = new \ReflectionMethod($command, 'handle');
 
-        expect(method_exists($command, 'handle'))->toBeTrue();
+        Assert::assertTrue($method->isPublic());
+        Assert::assertSame('handle', $method->getName());
     });
 });

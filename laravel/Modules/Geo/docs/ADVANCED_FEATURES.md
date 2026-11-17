@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_gp2ku7
+---
+title: "ADVANCED FEATURES"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ADVANCED FEATURES"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_9fPEHb
 # Funzionalità Avanzate del Modulo Geo
 
 ## Ottimizzazione Percorsi

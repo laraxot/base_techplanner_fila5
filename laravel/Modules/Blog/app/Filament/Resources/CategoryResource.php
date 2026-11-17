@@ -30,67 +30,14 @@ class CategoryResource extends XotBaseResource
 
     // protected static ?string $navigationGroup = 'Content';
 
+    /**
+     * @return array<int, string>
+     */
     public static function getTranslatableLocales(): array
     {
         return ['it', 'en'];
     }
 
-    /**
-     * @return array<int|string, Component>
-     */
-    public static function getFormFields(): array
-    {
-        return [
-            TextInput::make('title')
-                ->required()
-                ->maxLength(2048)
-                ->reactive()
-                ->unique()
-                ->afterStateUpdated(function (Set $set, $state): void {
-                    $set('slug', Str::slug((string) $state));
-                }),
-            TextInput::make('slug')
-                ->required()
-                ->maxLength(2048),
-            Select::make('parent_id')
-                ->label('Categoria Padre')
-                ->options(static function (): array {
-                    return SafeArrayCastAction::cast(Category::getTreeCategoryOptions());
-                })
-                ->searchable(),
-            TextInput::make('description')
-                ->maxLength(2048),
-            SpatieMediaLibraryFileUpload::make('image')
-                // ->image()
-                // ->maxSize(5000)
-                // ->multiple()
-                // ->enableReordering()
-                ->enableOpen()
-                ->enableDownload()
-                ->columnSpanFull()
-                ->collection('category')
-                // ->conversion('thumbnail')
-                ->disk('uploads')
-                ->directory('photos'),
-            IconPicker::make('icon')
-                ->helperText('Visualizza le icone disponibili di https://heroicons.com/')
-                ->columnSpanFull()
-            // ->layout(\Guava\FilamentIconPicker\Layout::ON_TOP)
-            ,
-        ];
-    }
-
-    /**
-     * @return array<string|int, Component>
-     */
-    public static function getFormSchema(): array
-    {
-        /** @var array<string|int, Component> $fields */
-        $fields = static::getFormFields();
-        Assert::isArray($fields, 'getFormFields must return array');
-
-        return $fields;
-    }
 
     public static function getPages(): array
     {

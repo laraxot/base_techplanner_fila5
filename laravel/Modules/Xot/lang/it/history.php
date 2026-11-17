@@ -24,7 +24,6 @@ return [
             'restored' => 'restored user',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'History',
     'plural_label' => 'History (Plurale)',
     'navigation' => [
@@ -69,6 +68,4 @@ return [
             'label' => 'Elimina History',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

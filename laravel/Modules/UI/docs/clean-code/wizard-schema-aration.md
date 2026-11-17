@@ -1,3 +1,10 @@
+---
+title: "Separazione dello Schema dagli Step nei Wizard Filament"
+qmd: "ui clean code wizard schema aration md"
+type: note
+tags: [documentation]
+---
+
 # Separazione dello Schema dagli Step nei Wizard Filament
 
 ## Regola Fondamentale

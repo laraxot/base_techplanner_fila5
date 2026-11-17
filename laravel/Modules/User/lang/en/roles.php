@@ -5,20 +5,16 @@ declare(strict_types=1);
 return [
     'fields' => [
         'id' => [
-            'label' => 'id',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'team_id' => [
-            'label' => 'team_id',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -33,16 +29,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'team_id' => [
-            'label' => 'team_id',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

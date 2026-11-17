@@ -5,49 +5,32 @@ declare(strict_types=1);
 return [
     'fields' => [
         'name' => [
-            'label' => 'name',
-<<<<<<< HEAD
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'email' => [
-            'label' => 'email',
+            'label' => 'E-mail',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'password' => [
-            'label' => 'password',
+            'label' => 'Password',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'password' => [
-            'label' => 'password',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
-        'create' => [
-            'label' => 'create',
-        ],
-        'createAnother' => [
-            'label' => 'createAnother',
-        ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'cancel',
         ],
         'logout' => [
             'icon' => 'logout',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'name' => 'Create User',
         'plural' => 'Create User',
@@ -61,9 +44,4 @@ return [
     ],
     'label' => 'Create User',
     'plural_label' => 'Create User (Plurale)',
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

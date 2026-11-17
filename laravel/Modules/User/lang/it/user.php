@@ -20,10 +20,7 @@ return [
             'help' => 'Identificativo univoco dell\'utente',
             'tooltip' => 'ID utente',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'label' => 'Nome',
@@ -31,7 +28,6 @@ return [
             'help' => 'Nome completo dell\'utente',
             'tooltip' => 'Nome e cognome dell\'utente',
             'helper_text' => '',
-            'description' => 'name',
         ],
         'first_name' => [
             'label' => 'Nome',
@@ -39,10 +35,7 @@ return [
             'help' => 'Nome dell\'utente',
             'tooltip' => 'Nome dell\'utente',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
@@ -50,10 +43,7 @@ return [
             'help' => 'Cognome dell\'utente',
             'tooltip' => 'Cognome dell\'utente',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
@@ -61,7 +51,6 @@ return [
             'help' => 'Indirizzo email dell\'utente',
             'tooltip' => 'Email per l\'accesso e le comunicazioni',
             'helper_text' => '',
-            'description' => 'email',
         ],
         'password' => [
             'label' => 'Password',
@@ -69,7 +58,6 @@ return [
             'help' => 'Password per l\'accesso al sistema',
             'tooltip' => 'Password di accesso',
             'helper_text' => '',
-            'description' => 'password',
         ],
         'password_confirmation' => [
             'label' => 'Conferma Password',
@@ -77,10 +65,7 @@ return [
             'help' => 'Ripeti la password per conferma',
             'tooltip' => 'Conferma della password',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'current_password' => [
             'label' => 'Password Attuale',
@@ -88,10 +73,7 @@ return [
             'help' => 'Password corrente per la verifica',
             'tooltip' => 'Password attuale',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'new_password' => [
             'label' => 'Nuova Password',
@@ -99,10 +81,7 @@ return [
             'help' => 'Nuova password desiderata',
             'tooltip' => 'Nuova password',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'role' => [
             'label' => 'Ruolo',
@@ -110,10 +89,7 @@ return [
             'help' => 'Ruolo dell\'utente nel sistema',
             'tooltip' => 'Ruolo e permessi',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'roles' => [
             'label' => 'Ruoli',
@@ -121,10 +97,7 @@ return [
             'help' => 'Ruoli assegnati all\'utente',
             'tooltip' => 'Ruoli multipli',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'permissions' => [
             'label' => 'Permessi',
@@ -132,10 +105,7 @@ return [
             'help' => 'Permessi specifici dell\'utente',
             'tooltip' => 'Permessi diretti',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -150,10 +120,7 @@ return [
                 'pending' => 'In Attesa',
                 'suspended' => 'Sospeso',
             ],
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -168,40 +135,28 @@ return [
                 'patient' => 'Paziente',
                 'staff' => 'Personale',
             ],
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_login' => [
             'label' => 'Ultimo Accesso',
             'help' => 'Data e ora dell\'ultimo accesso',
             'tooltip' => 'Ultimo login',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data di creazione dell\'account',
             'tooltip' => 'Quando è stato creato',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'help' => 'Data dell\'ultimo aggiornamento',
             'tooltip' => 'Ultimo aggiornamento',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'avatar' => [
             'label' => 'Avatar',
@@ -209,10 +164,7 @@ return [
             'help' => 'Immagine del profilo',
             'tooltip' => 'Foto profilo',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'language' => [
             'label' => 'Lingua',
@@ -227,10 +179,7 @@ return [
                 'fr' => 'Français',
                 'de' => 'Deutsch',
             ],
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'timezone' => [
             'label' => 'Fuso Orario',
@@ -238,64 +187,43 @@ return [
             'help' => 'Fuso orario dell\'utente',
             'tooltip' => 'Zona oraria',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password_expires_at' => [
             'label' => 'Scadenza Password',
             'help' => 'Data di scadenza della password',
             'tooltip' => 'Scadenza password',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'verified' => [
             'label' => 'Verificato',
             'help' => 'Indica se l\'email è verificata',
             'tooltip' => 'Email verificata',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'unverified' => [
             'label' => 'Non Verificato',
             'help' => 'Indica se l\'email non è verificata',
             'tooltip' => 'Email non verificata',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'email_verified_at' => [
             'label' => 'Email Verificata il',
             'help' => 'Data di verifica dell\'email',
             'tooltip' => 'Data verifica email',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'provider' => [
             'label' => 'Provider',
             'placeholder' => 'Inserisci il nome del provider',
-<<<<<<< HEAD
             'help' => 'Provider di autenticazione (es. Google, Facebook]',
             'tooltip' => 'Provider OAuth',
             'helper_text' => '',
             'description' => '',
-=======
-            'help' => 'Provider di autenticazione (es. Google, Facebook)',
-            'tooltip' => 'Provider OAuth',
-            'helper_text' => '',
->>>>>>> 6ed19256f (.)
         ],
         'provider_id' => [
             'label' => 'ID Provider',
@@ -303,10 +231,7 @@ return [
             'help' => 'ID utente nel provider esterno',
             'tooltip' => 'ID provider esterno',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'provider_name' => [
             'label' => 'Nome Provider',
@@ -314,10 +239,7 @@ return [
             'help' => 'Nome dell\'utente nel provider',
             'tooltip' => 'Nome nel provider',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'provider_email' => [
             'label' => 'Email Provider',
@@ -325,10 +247,7 @@ return [
             'help' => 'Email associata al provider',
             'tooltip' => 'Email nel provider',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'provider_avatar' => [
             'label' => 'Avatar Provider',
@@ -336,30 +255,21 @@ return [
             'help' => 'URL dell\'immagine profilo del provider',
             'tooltip' => 'Avatar del provider',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'uuid' => [
             'label' => 'UUID',
             'help' => 'Identificativo univoco universale',
             'tooltip' => 'UUID dispositivo',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'mobile_id' => [
             'label' => 'Mobile ID',
             'help' => 'Identificativo del dispositivo mobile',
             'tooltip' => 'ID dispositivo mobile',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'languages' => [
             'label' => 'Lingue',
@@ -367,74 +277,42 @@ return [
             'help' => 'Lingue supportate dal dispositivo',
             'tooltip' => 'Lingue dispositivo',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'guard_name' => [
             'label' => 'Guard Name',
             'help' => 'Nome del guard di autenticazione',
             'tooltip' => 'Guard autenticazione',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'active' => [
             'label' => 'Attivo',
             'help' => 'Indica se il record è attivo',
             'tooltip' => 'Stato attivo',
             'helper_text' => '',
-<<<<<<< HEAD
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'layout' => [
-            'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 6ed19256f (.)
         ],
         'endDate' => [
-            'description' => 'endDate',
             'helper_text' => 'endDate1',
-            'placeholder' => 'endDate',
-            'label' => 'endDate',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'startDate' => [
-            'description' => 'startDate',
-            'helper_text' => 'startDate',
-            'placeholder' => 'startDate',
-            'label' => 'startDate',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         'matr' => [
@@ -448,8 +326,30 @@ return [
             'placeholder' => 'ente',
             'helper_text' => 'ente',
             'description' => 'ente',
-=======
->>>>>>> 6ed19256f (.)
+        ],
+        'state' => [
+            'label' => 'Stato',
+        ],
+        'user' => [
+            'label' => 'Utente',
+        ],
+        'device' => [
+            'label' => 'Dispositivo',
+            'placeholder' => 'device',
+            'helper_text' => 'device',
+            'description' => 'device',
+        ],
+        'created_from' => [
+            'label' => 'Creato dal',
+            'placeholder' => 'created_from',
+            'helper_text' => 'created_from',
+            'description' => 'created_from',
+        ],
+        'created_until' => [
+            'label' => 'Creato fino al',
+            'placeholder' => 'created_until',
+            'helper_text' => 'created_until',
+            'description' => 'created_until',
         ],
     ],
     'actions' => [
@@ -508,6 +408,11 @@ return [
             'icon' => 'heroicon-o-link',
             'tooltip' => 'Collega record',
         ],
+        'attach_role' => [
+            'label' => 'Assegna Ruolo',
+            'icon' => 'heroicon-o-link',
+            'tooltip' => 'Assegna un ruolo all\'utente',
+        ],
         'detach' => [
             'label' => 'Scollega',
             'icon' => 'heroicon-o-link-slash',
@@ -524,86 +429,58 @@ return [
             'tooltip' => 'Disattiva l\'utente',
         ],
         'logout' => [
-            'label' => 'logout',
             'icon' => 'logout',
-            'tooltip' => 'logout',
         ],
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
-            'tooltip' => 'profile',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'openColumnManager' => [
-            'label' => 'openColumnManager',
             'icon' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'export' => [
             'icon' => 'export',
-            'label' => 'export',
+            'label' => 'Esporta',
             'tooltip' => 'export',
         ],
         'changePassword' => [
             'icon' => 'changePassword',
-            'label' => 'changePassword',
-            'tooltip' => 'changePassword',
         ],
         'layout' => [
             'icon' => 'layout',
-            'label' => 'layout',
-            'tooltip' => 'layout',
         ],
         'export_xls' => [
             'icon' => 'export_xls',
-            'label' => 'export_xls',
-            'tooltip' => 'export_xls',
         ],
         'cancel' => [
             'icon' => 'cancel',
-            'label' => 'cancel',
-            'tooltip' => 'cancel',
         ],
         'save' => [
             'icon' => 'save',
-            'label' => 'save',
-            'tooltip' => 'save',
         ],
-        'submit' => [
-            'tooltip' => 'submit',
-        ],
-<<<<<<< HEAD
         'createAnother' => [
-            'tooltip' => 'createAnother',
             'icon' => 'createAnother',
-            'label' => 'createAnother',
         ],
-=======
->>>>>>> 6ed19256f (.)
+        'resetColumnManager' => [
+            'icon' => 'resetColumnManager',
+        ],
+        'removeAllFilters' => [
+            'icon' => 'removeAllFilters',
+        ],
     ],
     'messages' => [
         'created' => 'Utente creato con successo',
@@ -685,7 +562,6 @@ return [
             ],
         ],
         'register' => [
-<<<<<<< HEAD
             'title' => [
                 'text' => 'Registrati',
             ],
@@ -721,11 +597,6 @@ return [
                     'text' => 'Guida e assistenza',
                 ],
             ],
-=======
-            'title' => 'Registrati',
-            'subtitle' => 'Crea un nuovo account',
-            'button' => 'Registrati',
->>>>>>> 6ed19256f (.)
             'fields' => [
                 'first_name' => 'Nome',
                 'last_name' => 'Cognome',
@@ -885,21 +756,14 @@ return [
         'error' => 'Si è verificato un errore',
     ],
     'search_placeholder' => 'Cerca per nome, email o ruolo...',
-    'label' => 'user',
-    'sections' => [
-        'empty' => [
-            'heading' => 'empty',
-            'label' => 'empty',
+    'relation_groups' => [
+        'security' => [
+            'label' => 'Sicurezza',
         ],
-<<<<<<< HEAD
-        'worker' => [
-            'label' => 'worker',
-            'heading' => 'worker',
+        'organization' => [
+            'label' => 'Organizzazione',
         ],
     ],
+    'label' => 'Utente',
     'plural_label' => 'User (Plurale)',
-=======
-    ],
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

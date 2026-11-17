@@ -18,73 +18,54 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome',
             'help' => 'Nome dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_name' => [
             'label' => 'Cognome',
             'placeholder' => 'Inserisci il cognome',
             'help' => 'Cognome dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'email' => [
             'label' => 'Email',
             'placeholder' => 'Inserisci l\'email',
             'help' => 'Indirizzo email dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'phone' => [
             'label' => 'Telefono',
             'placeholder' => 'Inserisci il numero di telefono',
             'help' => 'Numero di telefono dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'birth_date' => [
             'label' => 'Data di Nascita',
             'placeholder' => 'Seleziona la data di nascita',
             'help' => 'Data di nascita dell\'utente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'gender' => [
             'label' => 'Genere',
             'male' => 'Maschio',
             'female' => 'Femmina',
             'other' => 'Altro',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'help' => 'Stato attivo del profilo',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -108,24 +89,57 @@ return [
             'description' => '',
         ],
         'photo' => [
-            'label' => 'photo',
+            'label' => 'Foto',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
         ],
-        'id' => [
-            'label' => 'ID',
+        'user' => [
+            'name' => [
+                'label' => 'Utente',
+            ],
         ],
-        'ente' => [
-            'label' => 'Ente',
+        'created_at' => [
+            'label' => 'Creato il',
         ],
-        'matr' => [
-            'label' => 'Matricola',
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'name',
+            'helper_text' => 'name',
+            'description' => 'name',
         ],
-        'photo' => [
-            'label' => 'photo',
->>>>>>> 6ed19256f (.)
+        'password' => [
+            'label' => 'Password',
+            'placeholder' => 'password',
+            'helper_text' => 'password',
+            'description' => 'password',
+        ],
+        'passwordConfirmation' => [
+            'label' => 'passwordConfirmation',
+            'placeholder' => 'passwordConfirmation',
+            'helper_text' => 'passwordConfirmation',
+            'description' => 'passwordConfirmation',
+        ],
+        'currentPassword' => [
+            'label' => 'currentPassword',
+            'placeholder' => 'currentPassword',
+            'helper_text' => 'currentPassword',
+            'description' => 'currentPassword',
+        ],
+        'email_verified_at' => [
+            'label' => 'E-mail verificata il',
+            'placeholder' => 'email_verified_at',
+            'helper_text' => 'email_verified_at',
+            'description' => 'email_verified_at',
+        ],
+        'password_confirmation' => [
+            'label' => 'Conferma password',
+            'placeholder' => 'password_confirmation',
+            'helper_text' => 'password_confirmation',
+            'description' => 'password_confirmation',
+        ],
+        'updated_at' => [
+            'label' => 'Modificato il',
         ],
     ],
     'actions' => [
@@ -133,34 +147,87 @@ return [
             'label' => 'Modifica',
             'success' => 'Profilo aggiornato con successo!',
             'error' => 'Errore durante l\'aggiornamento del profilo',
+            'icon' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina',
             'success' => 'Profilo eliminato con successo!',
             'error' => 'Errore durante l\'eliminazione del profilo',
-            'tooltip' => 'delete',
             'icon' => 'delete',
         ],
         'layout' => [
-            'tooltip' => 'layout',
             'icon' => 'layout',
-            'label' => 'layout',
         ],
         'create' => [
-            'tooltip' => 'create',
             'icon' => 'create',
-            'label' => 'create',
+        ],
+        'showPassword' => [
+            'icon' => 'showPassword',
+        ],
+        'hidePassword' => [
+            'icon' => 'hidePassword',
+        ],
+        'attach' => [
+            'icon' => 'attach',
+        ],
+        'detach' => [
+            'icon' => 'detach',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'back' => [
+            'icon' => 'back',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+        'applyFilters' => [
+            'icon' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'icon' => 'openFilters',
+        ],
+        'resetFilters' => [
+            'icon' => 'resetFilters',
+        ],
+        'applyTableColumnManager' => [
+            'icon' => 'applyTableColumnManager',
+        ],
+        'openColumnManager' => [
+            'icon' => 'openColumnManager',
+        ],
+        'resetColumnManager' => [
+            'icon' => 'resetColumnManager',
+        ],
+        'reorderRecords' => [
+            'icon' => 'reorderRecords',
+        ],
+        'submit' => [
+            'icon' => 'submit',
+        ],
+        'cancel' => [
+            'icon' => 'cancel',
         ],
     ],
     'messages' => [
         'update_success' => 'Profilo aggiornato con successo!',
         'no_permission' => 'Non hai i permessi per modificare questo profilo.',
     ],
-<<<<<<< HEAD
+    'privacy_policy' => [
+        'title' => 'Informativa sulla privacy',
+        'description' => 'Come trattiamo i tuoi dati personali.',
+    ],
     'label' => 'Profile',
     'plural_label' => 'Profile (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
+    'delete_account' => [
+        'title' => 'Elimina account',
+        'description' => 'Una volta eliminato l\'account, tutte le sue risorse e i suoi dati verranno eliminati definitivamente. Prima di procedere, scarica i dati che desideri conservare.',
+        'password_confirmation' => 'Conferma la tua password',
+        'button' => 'Elimina account',
+        'delete' => 'Elimina account',
+    ],
 ];

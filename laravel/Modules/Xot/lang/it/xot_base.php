@@ -5,8 +5,6 @@ declare(strict_types=1);
 return [
     'fields' => [
         'view' => [
-            'label' => 'view',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -34,8 +32,10 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Xot Base',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
+    'plural' => [
+        'label' => 'xot base.plural',
+    ],
+    'title' => 'xot base',
 ];

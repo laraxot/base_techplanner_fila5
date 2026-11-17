@@ -5,12 +5,12 @@ declare(strict_types=1);
 return [
     'actions' => [
         'list_log_activities' => [
-            'label' => 'list_log_activities',
             'icon' => 'list_log_activities',
-            'tooltip' => 'list_log_activities',
+        ],
+        'test' => [
+            'icon' => 'test',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Log Activities Action Test',
     'plural_label' => 'Log Activities Action Test (Plurale)',
     'navigation' => [
@@ -44,6 +44,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

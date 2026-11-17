@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Bugfix: `inAdmin()` undefined during `package:discover`"
+module: "Tenant"
+type: concept
+tags: [inadmin, helper, autoload]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "inadmin helper autoload"
+related:
+  - "./phpstan-corrections-january.md"
+---
 # Bugfix: `inAdmin()` undefined during `package:discover`
 
 ## Symptom
@@ -33,11 +46,7 @@ As a result, calling `inAdmin()` directly can break Composer automation.
 
 ## Solution Details
 
-<<<<<<< HEAD
 **Problem**: Helper functions (`getModuleModels()`) are loaded via `"files": ["helpers/Helper.php"]` in `composer.json`, but during `package:discover`, the autoload order is not guaranteed.
-=======
-**Problem**: Helper functions (`getModuleModels()`) are loaded via `"files": ["Helpers/Helper.php"]` in `composer.json`, but during `package:discover`, the autoload order is not guaranteed.
->>>>>>> 6ed19256f (.)
 
 **Solution**: Use actions directly instead of helper functions in critical bootstrap paths:
 
@@ -60,8 +69,4 @@ This follows the existing architecture documented in `Modules/Xot/docs/helpers-a
 - Helper functions are convenience wrappers
 - Services contain the real logic
 
-<<<<<<< HEAD
 In critical bootstrap paths (Composer scripts, service providers, config resolution), prefer the service method instead of relying on helper autoload order.
-=======
-In critical bootstrap paths (Composer scripts, service providers, config resolution), prefer the service method instead of relying on helper autoload order.
->>>>>>> 6ed19256f (.)

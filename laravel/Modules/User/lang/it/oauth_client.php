@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
         'label' => 'Client OAuth',
         'plural_label' => 'Client OAuth',
         'group' => 'OAuth',
@@ -81,23 +80,4 @@ return [
         'updated' => 'Client aggiornato con successo',
         'deleted' => 'Client eliminato con successo',
     ],
-=======
-        'label' => 'OAuth Clients',
-        'group' => 'API',
-        'icon' => 'heroicon-o-key',
-        'sort' => 89,
-    ],
-    'actions' => [
-        'logout' => [
-            'tooltip' => 'logout',
-        ],
-    ],
-    'fields' => [
-        'password_client' => [
-            'description' => 'password_client',
-        ],
-    ],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

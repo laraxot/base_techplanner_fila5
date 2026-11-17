@@ -1,3 +1,10 @@
+---
+title: "IconStateSplitColumn Implementation"
+qmd: "ui iconstatesplitcolumn implementation 1 md"
+type: note
+tags: [documentation]
+---
+
 # IconStateSplitColumn Implementation
 
 ## Overview
@@ -36,13 +43,8 @@ The `IconStateSplitColumn` is a custom Filament table column component designed 
 
 ```php
 use Modules\UI\Filament\Tables\Columns\IconStateSplitColumn;
-<<<<<<< HEAD
 use Modules\<nome progetto>\States\Appointment\AppointmentState;
 use Modules\<nome progetto>\Models\Appointment;
-=======
-use Modules\SaluteOra\States\Appointment\AppointmentState;
-use Modules\SaluteOra\Models\Appointment;
->>>>>>> 6ed19256f (.)
 
 // In your Filament resource table configuration
 'states' => IconStateSplitColumn::make()

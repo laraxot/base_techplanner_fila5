@@ -1,3 +1,14 @@
+---
+title: "readme en"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme en"
+issues: []
+discussions: []
+---
+
 # 🔒 Gdpr — English presentation
 
 [![Domain-GDPR](https://img.shields.io/badge/Domain-GDPR%20Compliance-37474F.svg)](#)
@@ -14,6 +25,14 @@
 
 ---
 
+title: "readme en"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme en"
+issues: []
+discussions: []
 ## Why it exists
 
 Mandatory for digital public services and citizen trust.

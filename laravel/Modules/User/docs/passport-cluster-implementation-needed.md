@@ -1,3 +1,28 @@
+---
+title: "Passport Cluster - Implementazione Necessaria"
+type: concept
+tags: [passport, cluster, implementation, needed]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-cluster-implementation-needed passport cluster - implementazione necessaria"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Passport Cluster - Implementazione Necessaria
 
 **Data**: 2025-01-22
@@ -190,18 +215,10 @@ class ListOauthClients extends XotBaseListRecords
 
 - [Passport Cluster Resources Pattern](./passport-cluster-resources-pattern.md)
 - [Passport Cluster Summary](./passport-cluster-summary.md)
-- [Filament Class Extension Rules](../../Xot/docs/filament-class-extension-rules.md)
-<<<<<<< HEAD
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
-<<<<<<< HEAD
 **Status**: 🔴 DA IMPLEMENTARE
-=======
-**Status**: 🔴 DA IMPLEMENTARE
->>>>>>> 6ed19256f (.)

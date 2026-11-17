@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Risoluzione Conflitto WriteTranslationFileAction"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Risoluzione Conflitto WriteTranslationFileAction
 
 ## Problema Identificato
@@ -87,9 +100,9 @@ Il file `Modules/Lang/app/Actions/WriteTranslationFileAction.php` presenta confl
 ## Collegamenti Correlati
 
 - [Translation File Management](../translation-file-management.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 

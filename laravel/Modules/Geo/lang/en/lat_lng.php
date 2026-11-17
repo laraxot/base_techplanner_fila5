@@ -5,12 +5,11 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Coordinate GPS',
-        'group' => 'Gestione Territorio',
+        'group' => 'Territory Management',
         'icon' => 'heroicon-o-map-pin',
         'sort' => '30',
     ],
     'fields' => [
-<<<<<<< HEAD
         'latitude' => [
             'label' => 'Latitudine',
             'tooltip' => '',
@@ -23,22 +22,35 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'latitude' => 'Latitudine',
-        'longitude' => 'Longitudine',
->>>>>>> 6ed19256f (.)
     ],
     'actions' => [
-        'select_position' => 'Seleziona Posizione',
+        'select_position' => 'Select Position',
         'update_coordinates' => 'Aggiorna Coordinate',
     ],
     'messages' => [
-        'coordinates_updated' => 'Coordinate aggiornate con successo',
-        'invalid_coordinates' => 'Coordinate non valide',
+        'coordinates_updated' => 'Coordinates updated successfully',
+        'invalid_coordinates' => 'Invalid coordinates',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'widget' => [
+        'locating' => [
+            'label' => 'Getting your location...',
+        ],
+        'heading' => [
+            'title' => 'Lat-lng',
+        ],
+        'latitude' => [
+            'label' => 'lat',
+        ],
+        'longitude' => [
+            'label' => 'lng',
+        ],
+        'error_code' => [
+            'label' => 'Error code',
+        ],
+        'error_message' => [
+            'label' => 'Error message',
+        ],
+    ],
 ];

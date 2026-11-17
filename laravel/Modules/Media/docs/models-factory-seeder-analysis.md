@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Analisi Modelli, Factory e Seeder - Modulo Media"
+module: "Media"
+type: concept
+tags: [models, factory, seeder, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "models factory seeder analysis"
+related:
+  - "./webm.md"
+---
 # Analisi Modelli, Factory e Seeder - Modulo Media
 
 ## Riepilogo Modelli
@@ -31,8 +44,3 @@
 ## Stato Generale: ✅ COMPLETO
 
 ---
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-06*
-=======
-*Ultimo aggiornamento: 2025-01-06*
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Traduzioni"
+module: "Lang"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Traduzioni
 
 ## Pacchetti Utilizzati
@@ -93,7 +106,6 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 ### Versione HEAD
 
 ## Collegamenti tra versioni di translations.md
-<<<<<<< HEAD
 * [translations.md](../../../chart/docs/translations.md)
 * [translations.md](../../../reporting/docs/translations.md)
 * [translations.md](../../../gdpr/docs/translations.md)
@@ -111,8 +123,6 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 * [translations.md](../../../activity/docs/translations.md)
 * [translations.md](../../../patient/docs/translations.md)
 * [translations.md](../../../cms/docs/translations.md)
-=======
->>>>>>> 6ed19256f (.)
 * [translations.md](../../../Chart/docs/translations.md)
 * [translations.md](../../../Reporting/docs/translations.md)
 * [translations.md](../../../Gdpr/docs/translations.md)
@@ -133,8 +143,4 @@ echo $post->getTranslation('title', 'it'); // Ciao Mondo
 
 ### Versione Incoming
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,10 @@
+---
+title: "Analisi Qualità - Modulo Activity"
+qmd: "activity quality analysis activity module quality report md"
+type: note
+tags: [documentation]
+---
+
 # Analisi Qualità - Modulo Activity
 
 **Data Analisi**: 2025-01-22  
@@ -53,7 +60,7 @@
 ## 🔗 Collegamenti
 
 - [Activity Code Quality Analysis](./code_quality_analysis.md)
-- [Xot Quality Analysis](../../xot/docs/quality-analysis/current-status.md)
+- [Xot Quality Analysis](../current-status.md)
 
 ## 📝 Note
 

@@ -11,12 +11,12 @@ class RatingApiTest extends TestCase
 {
     public function testCanListRatings(): void
     {
-        Rating::create([
-            'name' => 'Test Rating 1',
+        Rating::query()->create([
+            'title' => 'Test Rating 1',
         ]);
 
-        Rating::create([
-            'name' => 'Test Rating 2',
+        Rating::query()->create([
+            'title' => 'Test Rating 2',
         ]);
 
         $response = $this->getJson('/api/ratings');
@@ -38,7 +38,7 @@ class RatingApiTest extends TestCase
     public function testCanCreateRating(): void
     {
         $data = [
-            'name' => 'New Rating',
+            'title' => 'New Rating',
             'color' => '#00FF00',
         ];
 
@@ -47,19 +47,19 @@ class RatingApiTest extends TestCase
         $response->assertStatus(201)
             ->assertJson([
                 'data' => [
-                    'name' => 'New Rating',
+                    'title' => 'New Rating',
                 ],
             ]);
     }
 
     public function testCanUpdateRating(): void
     {
-        $rating = Rating::create([
-            'name' => 'Test Rating',
+        $rating = Rating::query()->create([
+            'title' => 'Test Rating',
         ]);
 
         $data = [
-            'name' => 'Updated Rating',
+            'title' => 'Updated Rating',
         ];
 
         $response = $this->putJson("/api/ratings/{$rating->id}", $data);
@@ -67,15 +67,15 @@ class RatingApiTest extends TestCase
         $response->assertStatus(200)
             ->assertJson([
                 'data' => [
-                    'name' => 'Updated Rating',
+                    'title' => 'Updated Rating',
                 ],
             ]);
     }
 
     public function testCanDeleteRating(): void
     {
-        $rating = Rating::create([
-            'name' => 'Test Rating',
+        $rating = Rating::query()->create([
+            'title' => 'Test Rating',
         ]);
 
         $response = $this->deleteJson("/api/ratings/{$rating->id}");
@@ -86,8 +86,8 @@ class RatingApiTest extends TestCase
 
     public function testCanRateModel(): void
     {
-        $rating = Rating::create([
-            'name' => 'Test Rating',
+        $rating = Rating::query()->create([
+            'title' => 'Test Rating',
         ]);
 
         $data = [

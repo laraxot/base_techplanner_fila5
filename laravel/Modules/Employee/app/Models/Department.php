@@ -4,20 +4,12 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Models;
 
-<<<<<<< HEAD
-=======
-use Modules\TechPlanner\Models\Profile;
-use Modules\Employee\Database\Factories\DepartmentFactory;
->>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
 use Modules\Employee\Database\Factories\DepartmentFactory;
-use Modules\TechPlanner\Models\Profile;
-=======
->>>>>>> 6ed19256f (.)
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Class Department.
@@ -31,21 +23,15 @@ use Modules\TechPlanner\Models\Profile;
  * @property Carbon|null $updated_at
  * @property-read Collection<int, Employee> $employees
  * @property-read int|null $employees_count
- * @property-read Profile|null $creator
- * @property-read Profile|null $deleter
- * @property-read Profile|null $updater
-<<<<<<< HEAD
+ * @property-read ProfileContract|null $creator
+ * @property-read ProfileContract|null $deleter
+ * @property-read ProfileContract|null $updater
  *
-=======
->>>>>>> 6ed19256f (.)
  * @method static DepartmentFactory factory($count = null, $state = [])
  * @method static Builder<static>|Department newModelQuery()
  * @method static Builder<static>|Department newQuery()
  * @method static Builder<static>|Department query()
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Department extends BaseModel
@@ -78,6 +64,8 @@ class Department extends BaseModel
 
     /**
      * Get the employees for the department.
+     *
+     * @return HasMany<Employee, $this>
      */
     public function employees(): HasMany
     {

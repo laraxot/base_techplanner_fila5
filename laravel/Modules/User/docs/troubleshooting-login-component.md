@@ -1,6 +1,30 @@
+---
+title: "Troubleshooting: Login Component Not Found"
+type: concept
+tags: [troubleshooting, login, component]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "troubleshooting-login-component troubleshooting: login component not found"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Troubleshooting: Login Component Not Found
 
-<<<<<<< HEAD
 ## Regola architetturale
 **I form di autenticazione (login, register, reset password) si gestiscono solo con Filament widget** (LoginWidget, RegisterWidget, ecc.). Vietato usare form HTML tradizionali (`<form method="POST" action="{{ route('login') }}">` con @csrf e input raw) nelle pagine tema. Vedere `.cursor/rules/filament-login-widget.mdc`.
 
@@ -14,7 +38,7 @@ Unable to find component: [user::filament.widgets.auth.login-widget] su GET /it/
 **Soluzione:** Usare `Livewire::addComponent($class)` invece di `Livewire::component($alias, $class)`. Il metodo `addComponent` usa hash deterministico (`lw<crc32>`) come nome, compatibile con `@livewire(ClassName::class)`.
 
 ```php
-// ❌ SBAGLIATO — alias :: non funziona in Livewire v4
+// ❌ SBAGLIATO: alias :: non funziona in Livewire v4
 Livewire::component(‘user::filament.widgets.auth.login-widget’, LoginWidget::class);
 
 // ✅ CORRETTO
@@ -35,8 +59,8 @@ The POST method is not supported for route it/auth/login. Supported methods: GET
 **Soluzione (Volt + Folio + Laraxot):** Non si aggiungono rotte in `web.php`. Il progetto usa Volt + Folio + Laraxot: niente rotte custom, niente controller per frontend/auth. Il form di login deve essere solo il Filament LoginWidget; il submit avviene via Livewire (wire:submit.prevent). Verificare che in pagina non ci sia un form HTML con `action="{{ route('login') }}"` e usare solo `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`.
 
 ## Problema Originario
-=======
->>>>>>> 6ed19256f (.)
+# Troubleshooting: Login Component Not Found
+
 ## Problema
 **Errore:** `Livewire\Exceptions\ComponentNotFoundException: Unable to find component: [filament.auth.pages.login]`
 
@@ -136,7 +160,6 @@ Nel modulo User esistono diversi componenti per la gestione del login:
 
 ### 2. Widget Filament
 - **Path:** `Modules/User/app/Filament/Widgets/Auth/LoginWidget.php`
-<<<<<<< HEAD
 - **Uso:** Widget riutilizzabile per embedding in pagine Folio/Blade (es. `/it/auth/login`)
 - **View:** `user::filament.widgets.auth.login` (definita nel widget; non usare il lookup automatico che cerca `login-widget`)
 
@@ -144,11 +167,9 @@ Nel modulo User esistono diversi componenti per la gestione del login:
 ```blade
 @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
 ```
-NON usare `<livewire:user::filament.widgets.auth.login-widget />` né `@livewire(‘user::...’)` — in Livewire v4 la risoluzione via namespace `::` non funziona con `addComponent`/`component` standard.
+NON usare `<livewire:user::filament.widgets.auth.login-widget />` né `@livewire(‘user::...’)`: in Livewire v4 la risoluzione via namespace `::` non funziona con `addComponent`/`component` standard.
 
 La registrazione in `UserServiceProvider::registerLivewireAuthWidgets()` usa `Livewire::addComponent($class)` (hash-based) che è compatibile con `::class`.
-=======
->>>>>>> 6ed19256f (.)
 - **Uso:** Widget riutilizzabile per embedding
 - **View:** `pub_theme::filament.widgets.auth.login`
 
@@ -171,11 +192,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         $panel = parent::panel($panel);
 
         // Render hooks per socialite, team selector, etc.
-<<<<<<< HEAD
         FilamentView::registerRenderHook('panels::auth.login.form.after', 
-=======
-        FilamentView::registerRenderHook('panels::auth.login.form.after',
->>>>>>> 6ed19256f (.)
             static fn(): string => Blade::render("@livewire('socialite.buttons')"));
 
         return $panel;
@@ -233,11 +250,7 @@ php artisan config:cache  # Solo in produzione
 
 ### ServiceProvider
 - `app/Providers/Filament/AdminPanelProvider.php` - Panel principale
-- `Modules/User/Providers/UserServiceProvider.php` - ServiceProvider modulo User
-<<<<<<< HEAD
 - `Modules/User/Providers/UserServiceProvider.php` - ServiceProvider modulo User; registra i widget auth Livewire (`registerLivewireAuthWidgets()`) per risolvere gli alias `user::filament.widgets.auth.*`
-=======
->>>>>>> 6ed19256f (.)
 - `Modules/User/Providers/Filament/AdminPanelProvider.php` - Panel User
 - `Modules/Xot/Providers/Filament/XotBaseMainPanelProvider.php` - Base panel provider
 
@@ -256,22 +269,11 @@ php artisan config:cache  # Solo in produzione
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Modulo User README](../readme.md)
-- [Modulo Xot Service Provider Architecture](../xot/docs/service-provider-architecture.md)
-- [Filament Filters and Widgets](./filament-filters-and-widgets.md)
-- [Theme Two – Pagina login](../../Themes/Two/docs/auth-login-page.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Modulo User README](../README.md)
 - [Modulo User README](../README.md)
 - [Modulo Xot Service Provider Architecture](../xot/docs/service-provider-architecture.md)
 - [Filament Filters and Widgets](./filament-filters-and-widgets.md)
+- [Theme Two – Pagina login](../../Themes/Two/docs/auth-login-page.md)
 
 ## Risolto Da
 Autore: Sistema di documentazione automatica
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: Sistema di documentazione automatica*
-=======
-*Ultimo aggiornamento: Sistema di documentazione automatica*
->>>>>>> 6ed19256f (.)

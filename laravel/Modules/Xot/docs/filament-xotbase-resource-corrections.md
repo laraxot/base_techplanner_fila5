@@ -1,3 +1,15 @@
+---
+title: "filament xotbase resource corrections"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament xotbase resource corrections"
+issues: []
+discussions: []
+status: draft
+---
+
 # Correzioni Implementate - Regola Critica XotBaseResource
 
 ## 🚨 Regola Critica Violata
@@ -85,11 +97,7 @@ protected static ?string $navigationGroup = "Geo";
 ```
 
 ### 4. AdminResource.php
-<<<<<<< HEAD
 **File**: `laravel/Modules/<nome progetto>/app/Filament/Resources/AdminResource.php`
-=======
-**File**: `laravel/Modules/SaluteOra/app/Filament/Resources/AdminResource.php`
->>>>>>> 6ed19256f (.)
 
 **Violazione**: Metodo `table()` presente
 ```php
@@ -170,7 +178,17 @@ use Filament\Forms\Components\TextInput;
 
 class ExampleResource extends XotBaseResource
 {
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
+---
+title: "filament xotbase resource corrections"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament xotbase resource corrections"
+issues: []
+discussions: []
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('name')->required(),
@@ -200,8 +218,4 @@ class ExampleResource extends XotBaseResource
 *Ultimo aggiornamento: 2025-08-04*
 *Modulo: Xot*
 *Categoria: Filament*
-<<<<<<< HEAD
 *Status: ✅ Correzioni Implementate*
-=======
-*Status: ✅ Correzioni Implementate*
->>>>>>> 6ed19256f (.)

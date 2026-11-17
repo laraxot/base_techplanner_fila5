@@ -1,8 +1,26 @@
-<<<<<<< HEAD
 ---
 description:
 globs:
 alwaysApply: false
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "Relazione utenti-team: tabella pivot `doctor_team`"
+type: note
+status: draft
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "relazione utenti-team: tabella pivot `doctor_team` user"
 ---
 # Relazione utenti-team: tabella pivot `doctor_team`
 
@@ -32,7 +50,3 @@ La migrazione estende `XotBaseMigration` e utilizza i metodi helper per garantir
 
 **Collegamento bidirezionale:** Aggiornare anche la documentazione generale per puntare a questo file.
 
-# Gestione dei Teams
-=======
-# Gestione dei Teams
->>>>>>> 6ed19256f (.)

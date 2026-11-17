@@ -6,19 +6,21 @@ namespace Modules\Geo\Models;
 
 use Filament\Schemas\Components\Utilities\Get;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\File;
+use Modules\Geo\Actions\GeoData\GetItalianMunicipalitiesPathAction;
 use Modules\Geo\Database\Factories\LocalityFactory;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
 
 /**
- * @property int|null                     $region_id
- * @property int|null                     $province_id
- * @property string|null                  $name
- * @property int                          $id
+ * @property int|null $region_id
+ * @property int|null $province_id
+ * @property string|null $name
+ * @property int $id
  * @property array<array-key, mixed>|null $postal_code
- * @property ProfileContract|null         $creator
- * @property ProfileContract|null         $updater
+ * @property ProfileContract|null $creator
+ * @property ProfileContract|null $updater
  *
  * @method static Builder<static>|Locality newModelQuery()
  * @method static Builder<static>|Locality newQuery()
@@ -39,6 +41,7 @@ class Locality extends BaseModel
 {
     use Sushi;
 
+    /** @var array<string, string> */
     protected array $schema = [
         'region_id' => 'integer',
         'province_id' => 'integer',
@@ -47,27 +50,86 @@ class Locality extends BaseModel
         'postal_code' => 'json',
     ];
 
-    public function getRows(): array
+    /**
+     * Cache su file della tabella Sushi: senza, ogni richiesta che usa il modello rileggeva il JSON dei
+     * comuni (1,9 MB) e reinseriva le righe in un database in memoria (salvataggio di un indirizzo > 10 s).
+     * La cache si rigenera quando cambia il file dei comuni.
+     */
+    protected function sushiShouldCache(): bool
     {
-        $rows = Comune::select(
-            'regione->codice as region_id',
-            'provincia->codice as province_id',
-            'nome as name',
-            'codice as id',
-            'cap as postal_code',
-        )
-            ->distinct()
-            ->orderBy('nome')
-            ->get()
-            ->map(static fn ($row) => $row);
-
-<<<<<<< HEAD
-        /* @var array<int, array<string, mixed>> */
-=======
->>>>>>> 6ed19256f (.)
-        return $rows->toArray();
+        return true;
     }
 
+    protected function sushiCacheReferencePath(): string
+    {
+        return app(GetItalianMunicipalitiesPathAction::class)->execute();
+    }
+
+    /**
+     * @return array<int, array<string, mixed>>
+     */
+    public function getRows(): array
+    {
+        $path = app(GetItalianMunicipalitiesPathAction::class)->execute();
+        if (! file_exists($path)) {
+            return [];
+        }
+
+        $items = File::json($path);
+        if (! is_array($items)) {
+            return [];
+        }
+
+        /** @var array<string, array{region_id: mixed, province_id: mixed, id: mixed, name: string, postal_code: mixed}> $unique */
+        $unique = [];
+
+        foreach ($items as $item) {
+            if (! is_array($item)) {
+                continue;
+            }
+
+            $regione = $item['regione'] ?? null;
+            $provincia = $item['provincia'] ?? null;
+            if (! is_array($regione) || ! is_array($provincia)) {
+                continue;
+            }
+
+            $regionId = $regione['codice'] ?? null;
+            $provinceId = $provincia['codice'] ?? null;
+            $id = $item['codice'] ?? $item['id'] ?? null;
+            $name = $item['nome'] ?? null;
+            if ($regionId === null || $provinceId === null || $id === null || $name === null) {
+                continue;
+            }
+
+            $key = SafeStringCastAction::cast($id);
+            if (! isset($unique[$key])) {
+                $unique[$key] = [
+                    'region_id' => $regionId,
+                    'province_id' => $provinceId,
+                    'id' => $id,
+                    'name' => SafeStringCastAction::cast($name),
+                    // Sushi inserisce valori scalari: la lista dei CAP va salvata come JSON (cast `array` in lettura).
+                    'postal_code' => isset($item['cap']) ? json_encode(\is_array($item['cap']) ? array_values($item['cap']) : [$item['cap']], JSON_THROW_ON_ERROR) : null,
+                ];
+            }
+        }
+
+        $rows = array_values($unique);
+        usort(
+            $rows,
+            static fn (array $a, array $b): int => strcmp(
+                SafeStringCastAction::cast($a['name'] ?? ''),
+                SafeStringCastAction::cast($b['name'] ?? ''),
+            ),
+        );
+
+        return $rows;
+    }
+
+    /**
+     * @return array<string, string>
+     */
     public static function getOptions(Get $get): array
     {
         $region = $get('administrative_area_level_1') ?? $get('region');
@@ -79,14 +141,24 @@ class Locality extends BaseModel
             return [];
         }
 
-        $city = $get('locality');
+        $keys = [];
+        $values = [];
 
-        return self::where('region_id', $region)
-            ->where('province_id', $province)
-            ->pluck('name', 'id')
-            ->toArray();
+        foreach (
+            self::where('region_id', $region)
+                ->where('province_id', $province)
+                ->get() as $item
+        ) {
+            $keys[] = SafeStringCastAction::cast($item->id);
+            $values[] = SafeStringCastAction::cast($item->name ?? '');
+        }
+
+        return array_combine($keys, $values) ?: [];
     }
 
+    /**
+     * @return array<string, string>
+     */
     public static function getPostalCodeOptions(Get $get): array
     {
         $region = $get('administrative_area_level_1') ?? $get('region');
@@ -101,28 +173,30 @@ class Locality extends BaseModel
         $city = $get('locality');
         $res = self::where('region_id', $region)
             ->where('province_id', $province)
-            ->when(null !== $city, static fn ($query) => $query->where('id', $city))
+            ->when($city !== null, static fn (Builder $query) => $query->where('id', $city))
             ->select('postal_code')
             ->distinct()
             ->orderBy('postal_code')
             ->get(); // ->pluck('postal_code', 'postal_code')
         // ->toArray()
-        /** @var array<int, array<string, mixed>> $arr */
-        $arr = $res->toArray();
-        $arr = Arr::mapWithKeys($arr, static function (array $item) {
-            if (! isset($item['postal_code']) || ! \is_array($item['postal_code'])) {
-                return [];
+        /** @var array<string, string> $options */
+        $options = [];
+
+        foreach ($res as $item) {
+            $postalCode = $item->postal_code ?? null;
+            if (! \is_array($postalCode)) {
+                continue;
             }
-            /** @var array<int, string> $postalCodes */
-            $postalCodes = array_values((array) $item['postal_code']);
 
-            $result = array_combine($postalCodes, $postalCodes);
+            foreach ($postalCode as $code) {
+                if (\is_string($code) || is_numeric($code)) {
+                    $codeString = SafeStringCastAction::cast($code);
+                    $options[$codeString] = $codeString;
+                }
+            }
+        }
 
-            /* @var array<string, string> $result */
-            return $result;
-        });
-
-        return $arr ?? [];
+        return $options;
     }
 
     /**

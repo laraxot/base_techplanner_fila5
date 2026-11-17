@@ -1,3 +1,10 @@
+---
+title: "blocks"
+qmd: "ui integration blocks md"
+type: note
+tags: [documentation]
+---
+
 # blocks
 
 <!-- Contenuto migrato da _docs/blocks.txt -->

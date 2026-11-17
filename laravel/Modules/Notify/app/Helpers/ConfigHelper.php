@@ -17,10 +17,6 @@ class ConfigHelper
      * Sostituisce le variabili template nei dati di configurazione.
      *
      * @param  array<string, mixed>  $data
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     public static function replaceTemplateVariables(array $data): array
@@ -40,6 +36,10 @@ class ConfigHelper
 
     /**
      * Ottiene un valore di configurazione con sostituzione delle variabili template.
+     *
+     * `mixed` voluto: specchia `Config::get()` — chiavi config eterogenee.
+     *
+     * @param  mixed  $default  Valore di fallback eterogeneo
      */
     public static function get(string $key, mixed $default = null): mixed
     {
@@ -136,10 +136,6 @@ class ConfigHelper
      *
      * @param  array<string, mixed>  $data
      * @param  array<string, mixed>  $variables
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return array<string, mixed>
      */
     private static function recursiveReplace(array $data, array $variables): array
@@ -169,7 +165,8 @@ class ConfigHelper
     {
         foreach ($variables as $variable => $value) {
             $placeholder = '{{'.$variable.'}}';
-            $string = str_replace($placeholder, (string) $value, $string);
+            $replacement = is_scalar($value) ? (string) $value : '';
+            $string = str_replace($placeholder, $replacement, $string);
         }
 
         return $string;

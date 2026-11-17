@@ -5,7 +5,6 @@ declare(strict_types=1);
 return [
     'name' => 'name',
     'value' => 'value',
-<<<<<<< HEAD
     'label' => 'Xot Base Job',
     'plural_label' => 'Xot Base Job (Plurale)',
     'navigation' => [
@@ -50,6 +49,4 @@ return [
             'label' => 'Elimina Xot Base Job',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

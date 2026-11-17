@@ -6,7 +6,6 @@ use Rector\Config\RectorConfig;
 
 return RectorConfig::configure()
     ->withPaths([
-<<<<<<< HEAD
         __DIR__.'/Modules',
         __DIR__.'/Themes',
         __DIR__.'/app',
@@ -17,8 +16,6 @@ return RectorConfig::configure()
         __DIR__.'/resources',
         __DIR__.'/routes',
         __DIR__.'/tests',
-=======
->>>>>>> 6ed19256f (.)
         __DIR__ . '/Modules',
         __DIR__ . '/Themes',
         __DIR__ . '/app',
@@ -35,9 +32,6 @@ return RectorConfig::configure()
     ->withTypeCoverageLevel(0)
     ->withDeadCodeLevel(0)
     ->withCodeQualityLevel(0);
-<<<<<<< HEAD
 
 
 
-=======
->>>>>>> 6ed19256f (.)

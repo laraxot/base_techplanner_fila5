@@ -1,3 +1,24 @@
+---
+title: "Autorizzazione"
+type: concept
+tags: [autorizzazione]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "autorizzazione autorizzazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./audit-logging.md"
+  - "./autenticazione.md"
+  - "./gestione-teams.md"
+  - "./gestione-utenti.md"
+  - "./legacy-code-cleanup.md"
+  - "./user-analytics.md"
+  - "./user-traits.md"
+status: superseded
+superseded_by: ../../../roadmap/features/autorizzazione.md
+---
+
 # Autorizzazione
 
 ## Overview
@@ -74,8 +95,4 @@ Sistema di autorizzazione basato su ruoli e permessi, con supporto per politiche
 
 ## Related Features
 - [Gestione Utenti](./gestione-utenti.md)
-<<<<<<< HEAD
 - [Autenticazione](./autenticazione.md) 
-=======
-- [Autenticazione](./autenticazione.md)
->>>>>>> 6ed19256f (.)

@@ -5,11 +5,6 @@ declare(strict_types=1);
 return [
     'fields' => [
         'channels' => [
-            'label' => 'channels',
-            'placeholder' => 'channels',
-            'helper_text' => 'channels',
-            'description' => 'channels',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -35,8 +30,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Channel Checkbox List',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

@@ -12,21 +12,8 @@ class Webm extends ImageGenerator
 {
     public function convert(string $file, ?Conversion $conversion = null): string
     {
-        $pathToImageFile = pathinfo($file, PATHINFO_DIRNAME).'/'.pathinfo($file, PATHINFO_FILENAME).'.webmXXX';
-        dddx([
-            'file' => $file,
-            '$pathToImageFile' => ${$pathToImageFile},
-            'conversion' => $conversion,
-        ]);
-
-        /*
-         * $image = imagecreatefromwebp($file);
-         *
-         * imagepng($image, $pathToImageFile, 9);
-         *
-         * imagedestroy($image);
-         */
-        return $pathToImageFile;
+        // Generatore mai completato e non registrato in config/media-library.php ('image_generators').
+        throw new \LogicException('Webm::convert() non implementato');
     }
 
     public function requirementsAreInstalled(): bool
@@ -47,6 +34,9 @@ class Webm extends ImageGenerator
         return true;
     }
 
+    /**
+     * @return Collection<int, string>
+     */
     public function supportedExtensions(): Collection
     {
         return collect([
@@ -56,6 +46,9 @@ class Webm extends ImageGenerator
         ]);
     }
 
+    /**
+     * @return Collection<int, string>
+     */
     public function supportedMimeTypes(): Collection
     {
         return collect([

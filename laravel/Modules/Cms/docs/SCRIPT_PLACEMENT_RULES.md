@@ -1,3 +1,14 @@
+---
+title: "SCRIPT PLACEMENT RULES"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "SCRIPT PLACEMENT RULES"
+issues: []
+discussions: []
+---
+
 # Script Placement Rules
 
 ## Rule: Standalone Operational Scripts Location
@@ -57,7 +68,7 @@ ModuleName/
 ### Reference Projects
 
 - `base_laravelpizza`: Fully PHPStan compliant (0 errors)
-- `base_quaeris_fila5_mono`: Follows same pattern
+- `base_<nome progetto>_fila5_mono`: Follows same pattern
 
 ### Update History
 

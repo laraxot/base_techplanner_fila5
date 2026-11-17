@@ -9,7 +9,11 @@ return [
         'light_mode' => 'Light theme',
         'dark_mode' => 'Dark theme',
     ],
-<<<<<<< HEAD
+    'user-calendar' => [
+        'title' => 'User calendar',
+        'description' => 'View and manage the user\'s calendar events.',
+        'implementation_pending' => 'This feature is still being implemented.',
+    ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -19,10 +23,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

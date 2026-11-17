@@ -1,20 +1,15 @@
-<<<<<<< HEAD
 ---
+title: "conflicts analysis 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflicts analysis 1"
+issues: []
+discussions: []
 module: theme
 topic: conflicts-analysis-1
-canonical: ../../../Themes/docs/shared-components/conflicts-analysis.md
+canonical: ../../../../Themes/docs/shared-components/conflicts-analysis.md
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/conflicts-analysis.md
-=======
-# Analisi Conflitti - README.md
-
-## Obiettivi Funzionali
-
-## Decisioni Architetturali
-
-## Impatto
-
-## Collegamenti correlati
-- [[conflicts_overview]]
->>>>>>> 6ed19256f (.)
+See canonical documentation: ../../../../Themes/docs/shared-components/conflicts-analysis.md

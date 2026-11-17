@@ -1,0 +1,11 @@
+# Pagespeed frontoffice urls
+
+https://sottana.net/it
+https://sottana.net/it/contatti
+https://sottana.net/it/chi-siamo
+https://sottana.net/it/servizi
+https://sottana.net/it/blog
+https://sottana.net/it/faq
+https://sottana.net/it/privacy
+https://sottana.net/it/terms
+https://sottana.net/it/cookie

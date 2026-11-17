@@ -1,9 +1,34 @@
+<<<<<<< .merge_file_LTf2Sr
+---
+title: "consent packages research 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "consent packages research 1"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_30lX61
 # Research: GDPR & Legal Consent Packages
 
 This document analyzes two popular Laravel consent packages, capturing technical logic and deeper philosophical considerations.
 
 ---
 
+<<<<<<< .merge_file_LTf2Sr
+title: "consent packages research 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "consent packages research 1"
+issues: []
+discussions: []
+=======
+>>>>>>> .merge_file_30lX61
 ## 1. MaizeTech Laravel Legal Consent
 
 ### Overview

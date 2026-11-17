@@ -9,30 +9,21 @@ return [
             'label' => 'Email',
             'placeholder' => 'Inserisci la tua email',
             'helper_text' => 'Indirizzo email per accedere',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'password' => [
             'label' => 'Password',
             'placeholder' => 'Inserisci la tua password',
             'helper_text' => 'Password di accesso',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'remember' => [
             'label' => 'Ricordami',
             'helper_text' => 'Mantieni la sessione attiva',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -59,23 +50,4 @@ return [
             'too_many_attempts' => 'Troppi tentativi, riprova più tardi',
         ],
     ],
-<<<<<<< HEAD
-    'navigation' => [
-        'name' => 'Login Widget',
-        'plural' => 'Login Widget',
-        'group' => [
-            'name' => 'General',
-            'description' => 'General Settings',
-        ],
-        'label' => 'Login Widget',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
-    'label' => 'Login Widget',
-    'plural_label' => 'Login Widget (Plurale)',
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,10 @@
+---
+title: "Standard Form nei Temi"
+qmd: "ui standards form standards md"
+type: note
+tags: [documentation]
+---
+
 # Standard Form nei Temi
 
 ## Principi Generali

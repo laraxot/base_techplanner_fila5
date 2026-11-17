@@ -1,24 +1,40 @@
+---
+title: "Implementazione Corretta del Logout con Volt e Folio"
+type: concept
+tags: [volt, folio, logout]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "volt-folio-logout implementazione corretta del logout con volt e folio"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi Logout Blade](./logout_blade_analysis.md)
-- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-=======
->>>>>>> 6ed19256f (.)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
-- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
+- [Convenzioni Path](./path-conventions-user.md)
+- [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
+- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
-<<<<<<< HEAD
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
-=======
-Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di SaluteOra.
->>>>>>> 6ed19256f (.)
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -28,11 +44,7 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 
 ## Approcci Raccomandati
 
-<<<<<<< HEAD
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
-=======
-In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
->>>>>>> 6ed19256f (.)
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -178,11 +190,7 @@ mount(function() {
 
 ## Implementazione con Componenti Filament
 
-<<<<<<< HEAD
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
-=======
-Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:
->>>>>>> 6ed19256f (.)
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">
@@ -204,24 +212,15 @@ Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . 
 # Implementazione Corretta del Logout con Volt e Folio
 
 ## Collegamenti correlati
-<<<<<<< HEAD
-- [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Analisi Logout Blade](./logout_blade_analysis.md)
-- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
-=======
->>>>>>> 6ed19256f (.)
 - [README modulo User](./README.md)
-- [Convenzioni Path](./PATH_CONVENTIONS.md)
-- [Analisi Logout Blade](./LOGOUT_BLADE_ANALYSIS.md)
-- [Best Practices Volt e Folio](../../Xot/docs/VOLT_FOLIO_BEST_PRACTICES.md)
+- [Convenzioni Path](./path-conventions.md)
+- [Analisi Logout Blade](./logout-blade-analysis.md)
+- [Convenzioni Path](./path-conventions-user.md)
+- [Analisi Logout Blade](./logout-blade-analysis-panoramica.md)
+- [Best Practices Volt e Folio](../../xot/docs/volt_folio_best_practices.md)
 
 ## Panoramica
-<<<<<<< HEAD
 Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di <nome progetto>.
-=======
-Questo documento descrive l'implementazione corretta del logout utilizzando Laravel Folio e Volt, seguendo le convenzioni di SaluteOra.
->>>>>>> 6ed19256f (.)
 
 ## Percorso Corretto
 Il file di logout deve essere posizionato in:
@@ -231,11 +230,7 @@ Themes/One/resources/views/pages/auth/logout.blade.php
 
 ## Approcci Raccomandati
 
-<<<<<<< HEAD
 In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto <nome progetto>, si raccomandano i seguenti approcci per l'implementazione del logout.
-=======
-In base all'analisi dettagliata del file logout.blade.php e alle convenzioni del progetto SaluteOra, si raccomandano i seguenti approcci per l'implementazione del logout.
->>>>>>> 6ed19256f (.)
 
 ### 1. Approccio Folio con PHP puro (Raccomandato)
 
@@ -381,11 +376,7 @@ mount(function() {
 
 ## Implementazione con Componenti Filament
 
-<<<<<<< HEAD
 Per seguire le best practices di <nome progetto>, utilizzare sempre i componenti Blade nativi di Filament:
-=======
-Per seguire le best practices di SaluteOra, utilizzare sempre i componenti Blade nativi di Filament:
->>>>>>> 6ed19256f (.)
 
 ```php
 <x-filament::button tag="a" href="{{ url('/' . $locale) }}" color="primary" class="w-full">
@@ -403,8 +394,4 @@ invece di:
 
 ## Conclusione
 
-<<<<<<< HEAD
 Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . Assicurarsi di includere sempre la localizzazione negli URL e di utilizzare i componenti Filament per la UI.
-=======
-Seguire l'approccio Folio con Volt è raccomandato per la gestione del logout . Assicurarsi di includere sempre la localizzazione negli URL e di utilizzare i componenti Filament per la UI.
->>>>>>> 6ed19256f (.)

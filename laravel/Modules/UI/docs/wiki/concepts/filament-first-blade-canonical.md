@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki concepts filament first blade canonical md"
 title: "UI — Filament Blade canonical (modulo UI)"
 type: concept
 status: active

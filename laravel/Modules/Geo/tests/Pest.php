@@ -2,63 +2,57 @@
 
 declare(strict_types=1);
 
-use Modules\Geo\Models\City;
-use Modules\Geo\Models\Country;
+use Mockery\CompositeExpectation;
+use Mockery\Expectation;
+use Modules\Geo\Database\Factories\ComuneFactory;
+use Modules\Geo\Database\Factories\RegionFactory;
+use Modules\Geo\Models\Comune;
 use Modules\Geo\Models\Region;
-use Modules\Geo\Tests\TestCase;
 
 /*
- * |--------------------------------------------------------------------------
- * | Test Case
- * |--------------------------------------------------------------------------
- * |
- * | The closure you provide to your test functions is always bound to a specific PHPUnit test
- * | case class. By default, that class is "PHPUnit\Framework\TestCase". Of course, you may
- * | need to change it using the "pest()" function to bind a different classes or traits.
- * |
+ * Bootstrap Pest — modulo Geo.
+ * Ogni file test dichiara uses(\Modules\Geo\Tests\TestCase::class) o LightTestCase/UnitTestCase FQCN.
+ * Vietato uses()->in() qui (PHPStan method.internalClass).
  */
-
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
-
-/*
- * |--------------------------------------------------------------------------
- * | Expectations
- * |--------------------------------------------------------------------------
- * |
- * | When you're writing tests, you often need to check that values meet certain conditions. The
- * | "expect()" function gives you access to a set of "expectations" methods that you can use
- * | to assert different things. Of course, you may extend the Expectation API at any time.
- * |
- */
-
-expect()->extend('toBeCountry', fn () => $this->toBeInstanceOf(Country::class));
-
-expect()->extend('toBeRegion', fn () => $this->toBeInstanceOf(Region::class));
-
-expect()->extend('toBeCity', fn () => $this->toBeInstanceOf(City::class));
 
 /*
  * |--------------------------------------------------------------------------
  * | Functions
  * |--------------------------------------------------------------------------
- * |
- * | While Pest is very powerful out-of-the-box, you may have some testing code specific to your
- * | project that you don't want to repeat in every file. Here you can also expose helpers as
- * | global functions to help you to reduce the number of lines of code in your test files.
- * |
  */
 
-function createCountry(array $attributes = []): Country
-{
-    return Country::factory()->create($attributes);
-}
-
+/**
+ * @param  array<string, mixed>  $attributes
+ */
 function createRegion(array $attributes = []): Region
 {
-    return Region::factory()->create($attributes);
+    return RegionFactory::new()->createOne($attributes);
 }
 
-function createCity(array $attributes = []): City
+/**
+ * @param  array<string, mixed>  $attributes
+ */
+function createComune(array $attributes = []): Comune
 {
-    return City::factory()->create($attributes);
+    return ComuneFactory::new()->createOne($attributes);
+}
+
+/*
+ * Mockery 1.6 returns a CompositeExpectation from shouldReceive()/allows(), which forwards
+ * once()/with()/andReturn() via __call and so is opaque to PHPStan. The composite holds no
+ * public accessor, so its single Expectation is read once here to keep chained calls typed.
+ */
+if (! function_exists('geo_mockery_expect')) {
+    function geo_mockery_expect(object $expectation): Expectation
+    {
+        if ($expectation instanceof CompositeExpectation) {
+            $expectations = (fn (): array => $this->_expectations)->call($expectation);
+            assert(count($expectations) === 1, 'geo_mockery_expect() supports a single expected method');
+            $expectation = reset($expectations);
+        }
+
+        assert($expectation instanceof Expectation);
+
+        return $expectation;
+    }
 }

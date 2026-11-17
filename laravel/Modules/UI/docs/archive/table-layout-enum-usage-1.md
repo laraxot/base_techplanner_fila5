@@ -1,3 +1,10 @@
+---
+title: "TableLayoutEnum Usage Guide"
+qmd: "ui archive table layout enum usage 1 md"
+type: note
+tags: [documentation]
+---
+
 # TableLayoutEnum Usage Guide
 
 ## Nuovo Approccio (Corretto)

@@ -1,3 +1,10 @@
+---
+title: "Workstreams - UI"
+qmd: "ui roadmap 03 workstreams md"
+type: note
+tags: [documentation]
+---
+
 # Workstreams - UI
 
 ## WS1 Architecture

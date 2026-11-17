@@ -1,16 +1,25 @@
+---
+issues: []
+discussions: []
+title: "Modulo Media"
+module: "Media"
+type: concept
+tags: [module, media, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module media 1"
+related:
+  - "./webm.md"
+---
 # Modulo Media
 
-<<<<<<< HEAD
 > **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../../docs/git_conflict_resolution.md).
-=======
-> **Collegamento globale:** Per le strategie generali e le best practices sulla risoluzione dei conflitti git, vedi [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
->>>>>>> 6ed19256f (.)
 
 ## Informazioni Generali
-- **Nome**: `laraxot/module_media_fila3`
+- **Nome**: `laraxot/module_media_fila5`
 - **Descrizione**: Modulo dedicato alla gestione di immagini e video
 - **Namespace**: `Modules\Media`
-- **Repository**: https://github.com/laraxot/module_media_fila3.git
+- **Repository**: https://github.com/laraxot/module_media_fila5.git
 
 ## Service Providers
 1. `Modules\Media\Providers\MediaServiceProvider`
@@ -41,11 +50,7 @@ Sono stati risolti importanti conflitti di merge in diversi file critici del mod
 
 La risoluzione ha puntato a mantenere la coerenza del codice, evitando duplicazioni e garantendo il corretto funzionamento delle funzionalità di gestione media e del sistema di registrazione componenti.
 
-<<<<<<< HEAD
 Per maggiori dettagli, consultare la [documentazione locale sulla risoluzione dei conflitti](./conflitti_merge_risolti.md) e la [documentazione globale](../../../../../docs/git_conflict_resolution.md).
-=======
-Per maggiori dettagli, consultare la [documentazione locale sulla risoluzione dei conflitti](./conflitti_merge_risolti.md) e la [documentazione globale](../../../../docs/git_conflict_resolution.md).
->>>>>>> 6ed19256f (.)
 
 ## Dipendenze
 ### Pacchetti Required
@@ -131,8 +136,4 @@ Le modifiche vengono tracciate nel repository GitHub.
 
 ---
 
-<<<<<<< HEAD
 > **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../../docs/git_conflict_resolution.md).
-=======
-> **Collegamento globale:** Questa documentazione locale dettaglia i casi concreti e le decisioni architetturali adottate nel modulo Media. Per le strategie generali e le best practices, consulta sempre anche la documentazione globale in [docs/git_conflict_resolution.md](../../../../docs/git_conflict_resolution.md).
->>>>>>> 6ed19256f (.)

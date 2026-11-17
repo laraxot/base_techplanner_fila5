@@ -8,21 +8,13 @@ use Exception;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use InvalidArgumentException;
-use Modules\Tenant\Services\TenantService;
-<<<<<<< HEAD
+use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
 use Sushi\Sushi;
 use Throwable;
 
 use function Safe\file_get_contents;
 use function Safe\json_decode;
 use function Safe\json_encode;
-=======
-use function Safe\file_get_contents;
-use function Safe\json_decode;
-use function Safe\json_encode;
-use Sushi\Sushi;
-use Throwable;
->>>>>>> 6ed19256f (.)
 
 /**
  * Trait SushiToJson.
@@ -50,7 +42,33 @@ trait SushiToJson
             throw new InvalidArgumentException(__FILE__.':'.__LINE__.' - '.class_basename(self::class).': Table name must be string');
         }
 
-        return TenantService::filePath('database/content/'.$tbl.'.json');
+        return app(GetTenantFilePathAction::class)->execute('database/content/'.$tbl.'.json');
+    }
+
+    /**
+     * Schema delle colonne della tabella in-memory (Sushi).
+     * Override tipizzato di Sushi::getSchema() — il vendor non dichiara il tipo di ritorno.
+     *
+     * @return array<string, string>
+     */
+    public function getSchema()
+    {
+        $schema = $this->schema ?? [];
+        if (! \is_array($schema)) {
+            return [];
+        }
+
+        /** @var array<string, string> $typedSchema */
+        $typedSchema = [];
+        foreach ($schema as $key => $type) {
+            if (! \is_string($key)) {
+                continue;
+            }
+
+            $typedSchema[$key] = \is_string($type) ? $type : 'string';
+        }
+
+        return $typedSchema;
     }
 
     /**
@@ -173,10 +191,6 @@ trait SushiToJson
      * Utilizza JSON_PRETTY_PRINT e JSON_UNESCAPED_UNICODE per leggibilità.
      *
      * @param  array<int, array<string, mixed>>  $data  Array di record da salvare
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return bool True se il salvataggio è riuscito, false in caso di errore
      */
     public function saveToJson(array $data): bool
@@ -218,7 +232,7 @@ trait SushiToJson
      *
      * @return int ID successivo disponibile
      */
-    protected function getNextId(): int
+    public function getNextId(): int
     {
         $existingData = $this->loadExistingData();
 
@@ -305,7 +319,8 @@ trait SushiToJson
 
             // Update existing record
             $existingData = $modelWithTrait->loadExistingData();
-            $id = (int) ($modelWithTrait->getAttribute('id') ?? 0);
+            $rawId = $modelWithTrait->getAttribute('id');
+            $id = is_numeric($rawId) ? ((int) $rawId) : 0;
 
             if ($id > 0) {
                 $index = $modelWithTrait->findRowIndexById($existingData, $id);
@@ -322,7 +337,8 @@ trait SushiToJson
         static::deleting(function ($model): void {
             /** @var static $modelWithTrait */
             $modelWithTrait = $model;
-            $id = (int) ($modelWithTrait->getAttribute('id') ?? 0);
+            $rawId = $modelWithTrait->getAttribute('id');
+            $id = is_numeric($rawId) ? ((int) $rawId) : 0;
 
             if ($id > 0) {
                 $existingData = $modelWithTrait->loadExistingData();
@@ -341,16 +357,17 @@ trait SushiToJson
      * Trova l'indice del record nell'array dato un id.
      *
      * @param  array<int, array<string, mixed>>  $rows
-<<<<<<< HEAD
-=======
-     *
->>>>>>> 6ed19256f (.)
      * @return int|null Indice se trovato, altrimenti null
      */
     protected function findRowIndexById(array $rows, int $id): ?int
     {
         foreach ($rows as $index => $row) {
-            if (is_array($row) && ((int) ($row['id'] ?? 0)) === $id) {
+            if (! is_array($row)) {
+                continue;
+            }
+
+            $rawId = $row['id'] ?? null;
+            if (is_numeric($rawId) && ((int) $rawId) === $id) {
                 return (int) $index;
             }
         }
@@ -361,7 +378,7 @@ trait SushiToJson
     /**
      * Ottiene l'ID dell'utente autenticato per i campi di audit.
      */
-    protected function authId(): int|string|null
+    public function authId(): int|string|null
     {
         if (\function_exists('authId')) {
             return authId();

@@ -1,3 +1,10 @@
+---
+title: "Componenti Filament per Location e Studio Selection"
+qmd: "ui filament components location studio 1 md"
+type: note
+tags: [documentation]
+---
+
 # Componenti Filament per Location e Studio Selection
 
 ## Overview

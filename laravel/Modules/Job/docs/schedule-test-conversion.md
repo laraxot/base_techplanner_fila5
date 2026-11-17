@@ -1,3 +1,14 @@
+---
+title: "schedule test conversion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule test conversion"
+issues: []
+discussions: []
+---
+
 # ScheduleBusinessLogicTest Conversion - PHPUnit to Pest
 
 ## Problem
@@ -76,10 +87,13 @@ Total: 12 tests, 10 converted from PHPUnit to Pest
 
 ---
 
-**Date**: 2026-01-09
-<<<<<<< HEAD
+title: "schedule test conversion"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "schedule test conversion"
+issues: []
+discussions: []
 **Date**: [DATE]
 **Status**: Complete
-=======
-**Status**: Complete
->>>>>>> 6ed19256f (.)

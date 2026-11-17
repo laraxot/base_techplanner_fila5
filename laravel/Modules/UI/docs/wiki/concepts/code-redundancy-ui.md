@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki concepts code redundancy ui md"
 title: "ridondanza codice — modulo UI"
 module: UI
 type: concept

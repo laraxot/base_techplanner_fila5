@@ -1,3 +1,23 @@
+---
+title: "Actions Structure"
+type: concept
+tags: [actions, structure]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "actions-structure-1 actions structure"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Actions Structure
 
 ## Directory Structure
@@ -39,11 +59,7 @@ Questa differenza è definita nel file `composer.json` di ogni modulo, che mappa
 
 ## Pattern di Implementazione
 
-<<<<<<< HEAD
 <nome progetto> utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
-=======
-SaluteOra utilizza il package `spatie/laravel-queueable-action` per le Actions, NON il pattern Service:
->>>>>>> 6ed19256f (.)
 
 ```php
 <?php
@@ -75,14 +91,7 @@ class DeleteUserAction
 
 ## Documentazione Correlata
 
-<<<<<<< HEAD
-- [Path Conventions](./path_conventions.md)
-- [Directory Structure Checklist](./directory_structure_checklist.md)
-- [Module Structure](./module_structure.md)
+- [Path Conventions](./path-conventions-2.md)
+- [Directory Structure Checklist](./directory-structure-checklist.md)
+- [Module Structure](./module-structure-2.md)
 - [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
-=======
-- [Path Conventions](./PATH_CONVENTIONS.md)
-- [Directory Structure Checklist](./DIRECTORY_STRUCTURE_CHECKLIST.md)
-- [Module Structure](./MODULE_STRUCTURE.md)
-- [Queueable Actions Best Practices](./best-practices/queueable-actions.md)
->>>>>>> 6ed19256f (.)

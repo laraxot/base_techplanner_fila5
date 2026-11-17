@@ -1,7 +1,13 @@
+---
+title: "🗺️ GUIDA INTEGRAZIONE MAPPA INTERATTIVA"
+qmd: "ui map integration guide md"
+type: note
+tags: [documentation]
+---
+
 # 🗺️ GUIDA INTEGRAZIONE MAPPA INTERATTIVA
 
 **Modulo**: UI (User Interface)
-**Data**: 2025-01-27
 **Versione**: 1.0
 **Stato**: 🚧 IN SVILUPPO
 
@@ -44,11 +50,7 @@ Modules/UI/
 │   │   │   ├── map-markers.js
 │   │   │   └── map-popup.js
 │   │   └── components/
-<<<<<<< HEAD
 │   │       ├── location-picker-lit.js
-=======
-│   │       ├── location-picker.js
->>>>>>> 6ed19256f (.)
 │   │       └── address-autocomplete.js
 │   ├── css/
 │   │   ├── map/
@@ -589,30 +591,17 @@ class GeocodingService
 - [Livewire Components](https://laravel-livewire.com/docs/2.x/quickstart)
 
 ### 📖 Documentazione Correlata
-- [Farmshops.eu Analysis](../Geo/docs/farmshops-analysis.md)
-<<<<<<< HEAD
 - [Farmshops.eu Analysis](../geo/docs/farmshops-analysis.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Geo Module Documentation](../Geo/docs/)
 - [UI Component API](component-api.md)
 - [Styling Guide](styling-guide.md)
 
 ---
 
-**Last Updated**: 2025-01-27
-**Next Review**: 2025-02-27
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 **Status**: 🚧 IN SVILUPPO
 **Confidence Level**: 90%
 
 ---
 
-<<<<<<< HEAD
 *Questa guida fornisce le basi per implementare funzionalità mappa interattiva nel modulo UI, migliorando significativamente l'esperienza utente con visualizzazioni geografiche avanzate.*
-=======
-*Questa guida fornisce le basi per implementare funzionalità mappa interattiva nel modulo UI, migliorando significativamente l'esperienza utente con visualizzazioni geografiche avanzate.*
->>>>>>> 6ed19256f (.)

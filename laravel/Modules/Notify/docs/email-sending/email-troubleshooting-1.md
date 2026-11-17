@@ -21,7 +21,7 @@ $attachments = [
 =======
         'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
         'path' => '/var/www/html/<nome progetto>/public_html/images/avatars/default.svg',
-        'path' => '/var/www/html/_bases/base_techplanner_fila3_mono/public_html/images/avatars/default.svg',
+        'path' => '/var/www/html/_bases/base_techplanner_fila5/public_html/images/avatars/default.svg',
 >>>>>>> 6ed19256f (.)
         'as' => 'logo.svg',
         'mime' => 'image/svg+xml',
@@ -54,7 +54,7 @@ L'implementazione attuale include:
 <<<<<<< HEAD
 Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./attachments_usage.md).
 =======
-Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](./ATTACHMENTS_USAGE.md).
+Per maggiori dettagli, consultare [ATTACHMENTS_USAGE.md](attachments_usage.md).
 >>>>>>> 6ed19256f (.)
 
 ### 2. Errore: "View [notify::emails.template-name] not found"
@@ -219,7 +219,7 @@ public function test_can_send_email_with_attachments()
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 =======
-- [ATTACHMENTS_USAGE.md](./ATTACHMENTS_USAGE.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
+- [ATTACHMENTS_USAGE.md](attachments_usage.md)
+- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
+- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
 >>>>>>> 6ed19256f (.)

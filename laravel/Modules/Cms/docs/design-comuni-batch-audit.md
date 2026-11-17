@@ -1,3 +1,14 @@
+---
+title: "design comuni batch audit"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "design comuni batch audit"
+issues: []
+discussions: []
+---
+
 # Design Comuni Batch CMS Audit
 
 Questo report riassume quali pagine `tests.<slug>` sono pronte per parity visuale e quali sono bloccate a livello di struttura CMS/rendering.
@@ -50,7 +61,7 @@ Questo report riassume quali pagine `tests.<slug>` sono pronte per parity visual
 - assistenza-02-conferma: json=yes, runtime=ok, overall=13%, gate=BLOCK
 - segnalazione-disservizio: json=no, runtime=ok, overall=70%, gate=BLOCK
 - segnalazione-dettaglio: json=yes, runtime=ok, overall=10%, gate=BLOCK
-- segnalazioni-elenco: json=yes, runtime=ok, overall=11%, gate=BLOCK
+- ticket-list: json=yes, runtime=ok, overall=11%, gate=BLOCK
 - segnalazione-01-privacy: json=yes, runtime=ok, overall=27%, gate=BLOCK
 - segnalazione-02-dati: json=yes, runtime=ok, overall=11%, gate=BLOCK
 - segnalazione-03-riepilogo: json=yes, runtime=ok, overall=11%, gate=BLOCK

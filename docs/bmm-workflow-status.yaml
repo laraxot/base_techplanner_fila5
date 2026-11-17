@@ -1,6 +1,6 @@
 workflow:
-  status: "initialized"
-  last_updated: "2026-06-06T13:00:00Z"
+  status: "active"
+  last_updated: "2026-07-17T00:00:00+02:00"
   project:
     name: "base_techplanner_fila5"
     type: "web-app"
@@ -15,4 +15,10 @@ workflow:
     architecture:
       status: "required"
       completed: false
-  stories: []
+  stories:
+    - id: "STORY-001"
+      title: "Code Quality per moduli e temi"
+      status: "defined"
+      points: 8
+      priority: "must-have"
+      document: "docs/stories/STORY-001-code-quality-moduli-temi.md"

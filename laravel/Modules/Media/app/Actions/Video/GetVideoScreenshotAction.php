@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/protonemedia/laravel-ffmpeg
  */
-
-declare(strict_types=1);
 
 namespace Modules\Media\Actions\Video;
 
@@ -19,9 +18,5 @@ class GetVideoScreenshotAction
      *
      * @var array<int>|int
      */
-<<<<<<< HEAD
-    public array|int $backoff = 3;
-=======
     public $backoff = 3;
->>>>>>> 6ed19256f (.)
 }

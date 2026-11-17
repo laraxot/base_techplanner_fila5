@@ -5,11 +5,6 @@ declare(strict_types=1);
 return [
     'fields' => [
         'locale' => [
-            'label' => 'locale',
-            'placeholder' => 'locale',
-            'helper_text' => 'locale',
-            'description' => 'locale',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -23,8 +18,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Locale Switcher Refresh',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -35,8 +30,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Locale Switcher Refresh',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

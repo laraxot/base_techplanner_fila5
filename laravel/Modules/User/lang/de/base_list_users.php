@@ -5,32 +5,26 @@ declare(strict_types=1);
 return [
     'fields' => [
         'deactivate' => [
-            'label' => 'deactivate',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'unverified' => [
-            'label' => 'unverified',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'verified' => [
-            'label' => 'verified',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'email' => [
-            'label' => 'email',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -45,22 +39,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
-        ],
-        'unverified' => [
-            'label' => 'unverified',
-        ],
-        'verified' => [
-            'label' => 'verified',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

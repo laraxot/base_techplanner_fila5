@@ -4,38 +4,30 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'extra',
+        'name' => 'Extra',
         'plural' => 'estras',
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'Extra',
+        'icon' => 'heroicon-o-plus',
+        'sort' => 38,
     ],
     'pages' => [
         'health_check_results' => [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
-<<<<<<< HEAD
             'heading' => 'Application Health',
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Extra',
     'plural_label' => 'Extra (Plurale)',
     'fields' => [
@@ -57,18 +49,28 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'value' => [
+            'helper_text' => '',
+        ],
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Extra',
+            'icon' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Extra',
+            'icon' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Extra',
+            'icon' => 'delete',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+        'save' => [
+            'icon' => 'save',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

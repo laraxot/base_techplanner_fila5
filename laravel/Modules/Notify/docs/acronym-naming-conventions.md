@@ -1,8 +1,17 @@
+---
+qmd: "acronym naming conventions"
+issues: []
+discussions: []
+title: "Convenzioni di Naming per Acronimi"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+---
+
 # Convenzioni di Naming per Acronimi
-<<<<<<< HEAD
-# Convenzioni di Naming per Acronimi
-=======
->>>>>>> 6ed19256f (.)
 
 ## Regola Fondamentale
 
@@ -86,15 +95,9 @@ Non ci sono eccezioni a questa regola. Tutti gli acronimi, indipendentemente dal
 Per identificare i file che non rispettano questa convenzione, è possibile utilizzare il seguente comando:
 
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-=======
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-find /var/www/html/saluteora/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti
@@ -186,19 +189,11 @@ Non ci sono eccezioni a questa regola. Tutti gli acronimi, indipendentemente dal
 Per identificare i file che non rispettano questa convenzione, è possibile utilizzare il seguente comando:
 
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-=======
-find /var/www/html/<directory progetto>/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti
 
 - [PSR-1: Basic Coding Standard](https://www.php-fig.org/psr/psr-1/)
 - [Laravel Documentation - Coding Style](https://laravel.com/docs/10.x/contributions#coding-style)
-<<<<<<< HEAD
 - [PHP-FIG Naming Conventions](https://www.php-fig.org/bylaws/psr-naming-conventions/)
-=======
-- [PHP-FIG Naming Conventions](https://www.php-fig.org/bylaws/psr-naming-conventions/)
->>>>>>> 6ed19256f (.)

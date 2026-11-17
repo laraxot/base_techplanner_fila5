@@ -11,60 +11,43 @@ return [
     ],
     'actions' => [
         'reorderRecords' => [
-            'tooltip' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'label' => 'reorderRecords',
         ],
-<<<<<<< HEAD
         'openColumnManager' => [
-            'tooltip' => 'openColumnManager',
-            'label' => 'openColumnManager',
             'icon' => 'openColumnManager',
         ],
         'edit' => [
-            'label' => 'edit',
             'icon' => 'edit',
-            'tooltip' => 'edit',
         ],
         'delete' => [
-            'label' => 'delete',
             'icon' => 'delete',
-            'tooltip' => 'delete',
         ],
         'detach' => [
-            'label' => 'detach',
             'icon' => 'detach',
-            'tooltip' => 'detach',
         ],
         'attach' => [
-            'label' => 'attach',
             'icon' => 'attach',
-            'tooltip' => 'attach',
         ],
         'create' => [
-            'label' => 'create',
             'icon' => 'create',
-            'tooltip' => 'create',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
+        ],
+        'resetColumnManager' => [
+            'icon' => 'resetColumnManager',
+        ],
+        'save' => [
+            'icon' => 'save',
         ],
     ],
     'label' => 'Authentication Log',
@@ -89,28 +72,22 @@ return [
             'description' => '',
         ],
         'ip_address' => [
-            'label' => 'ip_address',
+            'label' => 'Indirizzo IP',
         ],
         'user_agent' => [
-            'label' => 'user_agent',
+            'label' => 'Browser (user agent)',
         ],
         'login_successful' => [
-            'label' => 'login_successful',
+            'label' => 'Accesso riuscito',
         ],
         'login_at' => [
-            'label' => 'login_at',
+            'label' => 'Accesso il',
         ],
         'logout_at' => [
-            'label' => 'logout_at',
+            'label' => 'Uscita il',
         ],
         'location' => [
-            'label' => 'location',
+            'label' => 'Luogo',
         ],
     ],
-=======
-    ],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
->>>>>>> 6ed19256f (.)
 ];

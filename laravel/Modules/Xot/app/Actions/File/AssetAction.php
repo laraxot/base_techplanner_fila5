@@ -8,31 +8,22 @@ use Exception;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
 use Modules\Xot\Datas\XotData;
-use Spatie\QueueableAction\QueueableAction;
+use Spatie\QueueableAction\QueueableAction as QueueableActionTrait;
 use Webmozart\Assert\Assert;
 
 class AssetAction
 {
-    use QueueableAction;
+    use QueueableActionTrait;
 
     private XotData $xot;
 
     /**
-     * Gestisce i percorsi degli asset, copiandoli nella directory pubblica se necessario.
+     * Risolve il percorso pubblico di un asset (servito dal symlink verso la cartella `public` del modulo/tema).
      *
-<<<<<<< HEAD
-     * @param string $path Il percorso dell'asset
-     *
-     * @throws \Exception Se il file sorgente non esiste o non può essere copiato
-     *
-     * @return string Il percorso pubblico dell'asset
-=======
      * @param  string  $path  Il percorso dell'asset
-     *
      * @return string Il percorso pubblico dell'asset
      *
-     * @throws Exception Se il file sorgente non esiste o non può essere copiato
->>>>>>> 6ed19256f (.)
+     * @throws Exception Se l'asset del modulo non esiste né in `public/` né in `resources/`
      */
     public function execute(string $path): string
     {
@@ -86,18 +77,7 @@ class AssetAction
         $theme = $this->xot->{$ns};
         Assert::string($theme, 'Il tema deve essere una stringa');
 
-        $themeResourcePath = 'Themes/'.$theme.'/resources/'.$ns_after;
-        $filename_from = app(FixPathAction::class)->execute(base_path($themeResourcePath));
-
-        $themeAssetPath = 'themes/'.$theme.'/'.$ns_after;
-        $filename_to = app(FixPathAction::class)->execute(public_path($themeAssetPath));
-
-        $this->copyAsset($filename_from, $filename_to, $themeAssetPath);
-
-        $asset = Str::replace(url(''), '', asset($themeAssetPath));
-        Assert::string($asset, '['.__LINE__.']['.class_basename(static::class).']');
-
-        return $asset;
+        return $this->publicUrl('themes/'.$theme.'/'.$ns_after);
     }
 
     /**
@@ -111,88 +91,39 @@ class AssetAction
             $module_path = Str::beforeLast($module_path, '/');
         }
 
+        // Asset statici del modulo in Modules/<Modulo>/public: serviti dal symlink
+        // public_html/assets/<modulo> -> ../../laravel/Modules/<Modulo>/public
+        // (deploy.sh / xot:module-link). Niente copia.
+        $filename_public = app(FixPathAction::class)->execute($module_path.'/public/'.$ns_after);
+        if (File::exists($filename_public)) {
+            // Link e URL sempre minuscoli (su Linux assets/Xot ≠ assets/xot).
+            return $this->publicUrl('assets/'.Str::lower($ns).'/'.$ns_after);
+        }
+
+        // Ripiego storico: file in resources/ — URL ancora via symlink assets/<modulo>.
         $filename_from = app(FixPathAction::class)->execute($module_path.'/resources/'.$ns_after);
 
         if (! File::exists($filename_from)) {
             if (isRunningTestBench()) {
                 return $originalPath;
             }
-<<<<<<< HEAD
-            throw new \Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
-=======
-            throw new Exception('file ['.$filename_from.'] not Exists , path ['.$originalPath.']');
->>>>>>> 6ed19256f (.)
+            throw new Exception('file ['.$filename_public.'] not Exists , path ['.$originalPath.']');
         }
 
-        $assetPath = 'assets/'.$ns.'/'.$ns_after;
-        $filename_to = app(FixPathAction::class)->execute(public_path($assetPath));
+        return $this->publicUrl('assets/'.Str::lower($ns).'/'.$ns_after);
+    }
 
-<<<<<<< HEAD
-        $forceCopy = 'production' !== app()->environment();
-=======
-        $forceCopy = app()->environment() !== 'production';
->>>>>>> 6ed19256f (.)
-        $this->copyAsset($filename_from, $filename_to, $assetPath, $forceCopy);
-
+    /**
+     * Nothing is copied: public_html/assets/<module> and public_html/themes/<Theme> are symlinks
+     * (deploy.sh / xot:module-link, xot:theme-link) to the module/theme `public` folder, so the URL is
+     * served straight from there. The old per-request copy wrote through the symlink and failed
+     * with "Failed to open stream" whenever the link was missing or broken.
+     */
+    private function publicUrl(string $assetPath): string
+    {
         $asset = Str::replace(url(''), '', asset($assetPath));
         Assert::string($asset, '['.__LINE__.']['.class_basename(static::class).']');
 
         return $asset;
-    }
-
-    /**
-     * Copies an asset file if it doesn't exist or if forced.
-     */
-    private function copyAsset(string $from, string $to, string $path, bool $force = false): void
-    {
-        if (! File::exists($to) || $force) {
-            $this->ensureDirectoryExists(\dirname($to));
-
-            try {
-                File::copy($from, $to);
-<<<<<<< HEAD
-            } catch (\Exception $e) {
-=======
-            } catch (Exception $e) {
->>>>>>> 6ed19256f (.)
-                $this->throwCopyException($e, $path, $from, $to);
-            }
-        }
-    }
-
-    /**
-     * Ensures the given directory exists.
-     */
-    private function ensureDirectoryExists(string $directory): void
-    {
-        if (! File::exists($directory)) {
-            File::makeDirectory($directory, 0o755, true, true);
-        }
-    }
-
-    /**
-     * Throws a formatted exception for a file copy error.
-     */
-<<<<<<< HEAD
-    private function throwCopyException(\Exception $e, string $path, string $from, string $to): void
-    {
-        throw new \Exception('message:['.$e->getMessage().']
-            public_path ['.public_path().']
-            path ['.$path.']
-            file from ['.$from.']
-            file to ['.$to.']', $e->getCode(), $e, );
-=======
-    private function throwCopyException(Exception $e, string $path, string $from, string $to): void
-    {
-        throw new Exception(
-            'message:['.$e->getMessage().']
-            public_path ['.public_path().']
-            path ['.$path.']
-            file from ['.$from.']
-            file to ['.$to.']',
-            $e->getCode(),
-            $e,
-        );
->>>>>>> 6ed19256f (.)
     }
 }

@@ -1,11 +1,18 @@
+---
+title: "merge conflicts resolution"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "merge conflicts resolution"
+issues: []
+discussions: []
+---
+
 # Risoluzione Conflitti di Merge - Modulo Geo
 
 ## Panoramica
-Data: 2025-07-30
-<<<<<<< HEAD
 Data: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 Conflitti identificati: 34 file
 Strategia: DRY, KISS, analisi contestuale
 
@@ -13,11 +20,7 @@ Strategia: DRY, KISS, analisi contestuale
 
 ### Modelli (8 file)
 - `app/Models/Address.php`
-- `app/Models/County.php`
-<<<<<<< HEAD
 - `app/Models/County.php` 
-=======
->>>>>>> 6ed19256f (.)
 - `app/Models/GeoNamesCap.php`
 - `app/Models/Location.php`
 - `app/Models/Place.php`
@@ -77,11 +80,7 @@ Strategia: DRY, KISS, analisi contestuale
 
 ## Status Risoluzione
 - [ ] Modelli (3/8) - ✅ Address.php, County.php, GeographicalScopes.php risolti
-- [ ] Actions (0/12)
-<<<<<<< HEAD
 - [ ] Actions (0/12) 
-=======
->>>>>>> 6ed19256f (.)
 - [ ] Filament (0/5)
 - [ ] Data Objects (0/2)
 - [ ] Services (0/2)
@@ -102,11 +101,7 @@ Strategia: DRY, KISS, analisi contestuale
 ### GeographicalScopes.php ✅
 - **Conflitto**: Già risolto correttamente
 - **Stato**: Utilizza correttamente `GetDistanceExpressionAction` centralizzata
-- **Implementazione**:
-<<<<<<< HEAD
 - **Implementazione**: 
-=======
->>>>>>> 6ed19256f (.)
   - Scope `scopeWithDistance` per calcolo distanza
   - Scope `scopeOrderByDistance` per ordinamento geografico
   - Metodo `getDistanceExpression` che delega all'action
@@ -122,8 +117,4 @@ Strategia: DRY, KISS, analisi contestuale
 - [Geo Module Architecture](architecture.md)
 - [Geo Models Documentation](models/)
 - [Geo Actions Documentation](../app/Actions/)
-<<<<<<< HEAD
 - [Merge Conflict Best Practices](../../Xot/project_docs/conflicts/)
-=======
-- [Merge Conflict Best Practices](../../Xot/project_docs/conflicts/)
->>>>>>> 6ed19256f (.)

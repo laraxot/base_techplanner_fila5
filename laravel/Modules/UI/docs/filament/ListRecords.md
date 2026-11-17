@@ -1,3 +1,10 @@
+---
+title: "List Records in Filament"
+qmd: "ui filament listrecords md"
+type: note
+tags: [documentation]
+---
+
 # List Records in Filament
 
 ## Estensione Corretta

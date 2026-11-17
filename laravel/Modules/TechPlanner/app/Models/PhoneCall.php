@@ -5,12 +5,21 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 use Override;
 
 /**
+ * @property-read Profile|null $creator
+ * @property-read Profile|null $updater
+ *
+ * @method static Builder<static>|PhoneCall newModelQuery()
+ * @method static Builder<static>|PhoneCall newQuery()
+ * @method static Builder<static>|PhoneCall query()
+ *
  * @property int $id
- * @property int $client_id
+ * @property int|null $client_id
  * @property Carbon $date
  * @property int|null $duration
  * @property string|null $notes
@@ -21,15 +30,7 @@ use Override;
  * @property string|null $created_by
  * @property string|null $deleted_at
  * @property string|null $deleted_by
- * @property-read Profile|null $creator
- * @property-read Profile|null $updater
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
- * @method static Builder<static>|PhoneCall newModelQuery()
- * @method static Builder<static>|PhoneCall newQuery()
- * @method static Builder<static>|PhoneCall query()
  * @method static Builder<static>|PhoneCall whereCallType($value)
  * @method static Builder<static>|PhoneCall whereClientId($value)
  * @method static Builder<static>|PhoneCall whereCreatedAt($value)
@@ -42,17 +43,13 @@ use Override;
  * @method static Builder<static>|PhoneCall whereNotes($value)
  * @method static Builder<static>|PhoneCall whereUpdatedAt($value)
  * @method static Builder<static>|PhoneCall whereUpdatedBy($value)
-<<<<<<< HEAD
  *
- * @property-read Profile|null $deleter
- *
-=======
- * @property-read Profile|null $deleter
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class PhoneCall extends BaseModel
 {
+    use SoftDeletes;
+
     protected $fillable = [
         'client_id',
         'date',
@@ -62,9 +59,15 @@ class PhoneCall extends BaseModel
     ];
 
     /**
+     * @return BelongsTo<Client, $this>
+     */
+    public function client(): BelongsTo
+    {
+        return $this->belongsTo(Client::class);
+    }
+
+    /**
      * Get the attributes that should be cast.
-     *
-     * @return array<string, string>
      */
     #[Override]
     protected function casts(): array

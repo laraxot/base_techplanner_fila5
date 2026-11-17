@@ -9,52 +9,32 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
-=======
-use InvalidArgumentException;
-use RuntimeException;
->>>>>>> 6ed19256f (.)
 use Spatie\QueueableAction\QueueableAction;
 
 class FakeSeederAction
 {
     use QueueableAction;
 
-    private const MAX_RECORDS = 200;
+    private const int MAX_RECORDS = 200;
 
-    private const CHUNK_SIZE = 50;
+    private const int CHUNK_SIZE = 50;
 
     /**
      * Execute the fake data seeding process.
      *
-<<<<<<< HEAD
-     * @param class-string<Model> $modelClass The fully qualified model class name
-     * @param int<1, max>         $qty        Number of records to generate
-     *
-     * @throws \InvalidArgumentException When model class is invalid
-=======
      * @param  class-string<Model>  $modelClass  The fully qualified model class name
      * @param  int<1, max>  $qty  Number of records to generate
      *
-     * @throws InvalidArgumentException When model class is invalid
->>>>>>> 6ed19256f (.)
+     * @throws \InvalidArgumentException When model class is invalid
      */
     public function execute(string $modelClass, int $qty): void
     {
         if (
-<<<<<<< HEAD
             ! class_exists($modelClass)
                 || ! is_subclass_of($modelClass, Model::class)
                 || ! in_array(HasFactory::class, class_uses_recursive($modelClass), strict: true)
         ) {
             throw new \InvalidArgumentException("Invalid model class or missing HasFactory trait: {$modelClass}");
-=======
-            ! class_exists($modelClass) ||
-                ! is_subclass_of($modelClass, Model::class) ||
-                ! in_array(HasFactory::class, class_uses_recursive($modelClass), strict: true)
-        ) {
-            throw new InvalidArgumentException("Invalid model class or missing HasFactory trait: {$modelClass}");
->>>>>>> 6ed19256f (.)
         }
 
         $qtyToDo = min($qty, self::MAX_RECORDS);
@@ -63,16 +43,11 @@ class FakeSeederAction
         /** @var Collection<int, Model> $rows */
         $rows = $factory->count($qtyToDo)->make();
 
-        /** @var Collection<int, Collection> $chunks */
+        /** @var Collection<int, Collection<int, Model>> $chunks */
         $chunks = $rows->chunk(self::CHUNK_SIZE);
 
         $chunks->each(function (Collection $chunk) use ($modelClass): void {
-            /** @var array<int, array<string, mixed>> $data */
-            $data = $chunk->map(function ($item) {
-                assert($item instanceof Model);
-
-                return $item->getAttributes();
-            })->all();
+            $data = $chunk->map(fn (Model $item) => $item->getAttributes())->all();
             $modelClass::insert($data);
         });
 
@@ -86,39 +61,29 @@ class FakeSeederAction
     /**
      * Get the model factory.
      *
-<<<<<<< HEAD
-     * @param class-string<Model> $modelClass
+     * @param  class-string<Model>  $modelClass
+     * @return Factory<Model>
+     * @return Factory<Model>
      *
      * @throws \RuntimeException
-=======
-     * @param  class-string<Model>  $modelClass
-     *
-     * @throws RuntimeException
->>>>>>> 6ed19256f (.)
      */
     private function getModelFactory(string $modelClass): Factory
     {
         if (method_exists($modelClass, 'factory')) {
-            return $modelClass::factory();
+            /** @var Factory<Model> $factory */
+            $factory = $modelClass::factory();
+
+            return $factory;
         }
 
-<<<<<<< HEAD
         throw new \RuntimeException("Unable to create factory for model: {$modelClass}");
-=======
-        throw new RuntimeException("Unable to create factory for model: {$modelClass}");
->>>>>>> 6ed19256f (.)
     }
 
     /**
      * Send a notification about the seeding completion.
      *
-<<<<<<< HEAD
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $count
-=======
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $count
->>>>>>> 6ed19256f (.)
      */
     private function sendNotification(string $modelClass, int $count): void
     {
@@ -132,13 +97,8 @@ class FakeSeederAction
     /**
      * Queue remaining records for processing.
      *
-<<<<<<< HEAD
-     * @param class-string<Model> $modelClass
-     * @param int<1, max>         $qty
-=======
      * @param  class-string<Model>  $modelClass
      * @param  int<1, max>  $qty
->>>>>>> 6ed19256f (.)
      */
     private function queueRemainingRecords(string $modelClass, int $qty): void
     {

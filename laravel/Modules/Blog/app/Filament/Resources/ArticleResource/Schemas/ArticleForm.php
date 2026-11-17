@@ -17,7 +17,7 @@ use Illuminate\Support\Str;
 use Modules\Blog\Filament\Fields\ArticleContent;
 use Modules\Blog\Filament\Fields\ArticleFooter;
 use Modules\Blog\Filament\Fields\ArticleSidebar;
-use Modules\Blog\Filament\Resources\CategoryResource;
+use Modules\Blog\Filament\Resources\CategoryResource\Schemas\CategoryForm;
 use Modules\Blog\Models\Category;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use Webmozart\Assert\Assert;
@@ -27,14 +27,14 @@ class ArticleForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             Grid::make()->columns(2)->schema([
                 TextInput::make('title')
                     ->columnSpan(1)
                     ->required()
-                    ->lazy()
+                    ->live(onBlur: true)
                     ->afterStateUpdated(static function ($set, $get, $state): void {
                         Assert::isCallable($set, 'set must be callable');
                         Assert::isCallable($get, 'get must be callable');
@@ -42,7 +42,7 @@ class ArticleForm extends XotBaseResourceForm
                         if ($get('slug')) {
                             return;
                         }
-                        $set('slug', Str::slug((string) $state));
+                        $set('slug', Str::slug(is_string($state) ? $state : (is_scalar($state) ? (string) $state : '')));
                     }),
 
                 TextInput::make('slug')
@@ -81,7 +81,7 @@ class ArticleForm extends XotBaseResourceForm
                         return Category::getTreeCategoryOptions();
                     })
                     ->createOptionForm(function () {
-                        return CategoryResource::getFormFields();
+                        return (new CategoryForm())->getFormSchema();
                     })
                     ->createOptionUsing(function (array $data) {
                         // Cast to the expected type

@@ -14,13 +14,13 @@
     <form wire:submit.prevent="login" class="space-y-4">
         {{ $this->form }}
         <button type="submit" class="w-full py-3 rounded bg-[#FF5F7E] text-white font-bold">
-            {{ __('Accedi') }}
+            {{ __('pub_theme::widgets_auth.login.submit.label') }}
             <x-filament::loading-indicator class="h-5 w-5" wire:loading/>
         </button>
     </form>
     <div class="text-center text-sm text-gray-500 mt-2">
         @if (Route::has('password.request'))
-            <a href="{{ route('password.request') }}" class="underline hover:text-blue-700">{{ __('Password dimenticata?') }}</a>
+            <a href="{{ route('password.request') }}" class="underline hover:text-blue-700">{{ __('pub_theme::widgets_auth.login.forgot_password.label') }}</a>
         @endif
     </div>
 </div>

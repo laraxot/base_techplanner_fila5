@@ -1,12 +1,16 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: media-relation-manager
-canonical: ../../../../Themes/docs/shared-components/media-relation-manager-1.md
+issues: []
+discussions: []
+title: "MediaRelationManager"
+module: "Media"
+type: concept
+tags: [media, relation, manager]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "media relation manager"
+related:
+  - "./webm.md"
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/media-relation-manager-1.md
-=======
 # MediaRelationManager
 
 ## Descrizione
@@ -38,4 +42,3 @@ Le azioni sono implementate seguendo le convenzioni documentate in `filament_tab
 - Mantenere la coerenza con le convenzioni di naming
 - Assicurarsi che tutte le azioni abbiano chiavi stringa
 - Mantenere la documentazione PHPDoc aggiornata
->>>>>>> 6ed19256f (.)

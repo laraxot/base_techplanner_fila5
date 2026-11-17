@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Risoluzione Conflitto ReadTranslationFileAction"
+module: "Lang"
+type: concept
+tags: [migration, filament]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Risoluzione Conflitto ReadTranslationFileAction
 
 ## Problema Identificato
@@ -167,9 +180,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 
@@ -354,9 +367,9 @@ Il file `Modules/Lang/app/Actions/ReadTranslationFileAction.php` presenta confli
 ## Collegamenti Correlati
 
 - [Translation Standards](../translation-standards.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 - [Translation File Management](../translation-file-management.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 

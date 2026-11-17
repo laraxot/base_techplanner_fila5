@@ -1,3 +1,10 @@
+---
+title: "UI Module Documentation"
+qmd: "ui ui module md"
+type: note
+tags: [documentation]
+---
+
 # UI Module Documentation
 
 ## Overview

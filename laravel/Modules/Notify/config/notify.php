@@ -2,32 +2,27 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Env;
+
 return [
-    /*
-     * |--------------------------------------------------------------------------
-     * | Company Configuration
-     * |--------------------------------------------------------------------------
-     * |
-     * | Configuration for company-specific information that can be customized
-     * | per project without modifying the module code.
-     * |
-     */
-    'company' => [
-        'name' => env('COMPANY_NAME', 'Default Company'),
-        'team' => env('COMPANY_TEAM', 'Default Team'),
-        'webhook_base' => env('WEBHOOK_BASE_URL', 'https://api.example.com'),
-        'clinic_name' => env('CLINIC_NAME', 'Default Clinic'),
-        'repository_url' => env('REPOSITORY_URL', 'https://github.com/example/repo'),
+    // Module config is not in app `config/`; Env::get keeps cache-safe semantics without larastan env() false positive.
+    'inbound_token' => Env::get('MAIL_INBOUND_TOKEN'),
+    // Records the mail provider asks for; read as config('notify.notify.mail_dns'), checked by `php artisan notify:check-dns` (CheckMailDnsAction).
+    'mail_dns' => [
+        'domain' => Env::get('MAIL_DNS_DOMAIN', 'fixcity.eu'),
+        'cnames' => [
+            'mt78' => 'smtp.mailtrap.live',
+            'rwmt1._domainkey' => 'rwmt1.dkim.smtp.mailtrap.live',
+            'rwmt2._domainkey' => 'rwmt2.dkim.smtp.mailtrap.live',
+            'mt-link' => 't.mailtrap.live',
+        ],
     ],
-    /*
-     * |--------------------------------------------------------------------------
-     * | Default Test Data
-     * |--------------------------------------------------------------------------
-     * |
-     * | Default values for test data that should be generic and reusable
-     * | across different projects.
-     * |
-     */
+    'company' => [
+        'name' => 'Default Company',
+        'team' => 'Default Team',
+        'webhook_base' => 'https://api.example.com',
+        'clinic_name' => 'Default Clinic',
+        'repository_url' => 'https://github.com/example/repo'],
     'test_data' => [
         'default_subject' => 'Benvenuto su {{company_name}}',
         'default_content' => 'Grazie per esserti registrato al nostro servizio.',
@@ -37,55 +32,19 @@ return [
         'default_theme_name' => '{{company_name}} Professional',
         'default_theme_description' => 'Tema professionale per {{company_name}}',
         'default_author' => '{{team_name}}',
-        'default_repository' => '{{repository_url}}',
-    ],
-    /*
-     * |--------------------------------------------------------------------------
-     * | Webhook Configuration
-     * |--------------------------------------------------------------------------
-     * |
-     * | Default webhook endpoints that can be customized per project.
-     * |
-     */
+        'default_repository' => '{{repository_url}}'],
     'webhooks' => [
         'notification_delivered' => '{{webhook_base}}/webhooks/notification-delivered',
         'notification_bounced' => '{{webhook_base}}/webhooks/notification-bounced',
-        'notification_clicked' => '{{webhook_base}}/webhooks/notification-clicked',
-    ],
-    /*
-     * |--------------------------------------------------------------------------
-     * | Email Configuration
-     * |--------------------------------------------------------------------------
-     * |
-     * | Default email settings that can be customized per project.
-     * |
-     */
+        'notification_clicked' => '{{webhook_base}}/webhooks/notification-clicked'],
     'email' => [
-        'default_from_address' => env('MAIL_FROM_ADDRESS', 'noreply@example.com'),
-        'default_from_name' => env('MAIL_FROM_NAME', '{{company_name}}'),
-        'default_admin_email' => env('ADMIN_EMAIL', 'admin@{{company_name}}.com'),
-        'default_developer_email' => env('DEVELOPER_EMAIL', 'developer@{{company_name}}.com'),
-    ],
-    /*
-     * |--------------------------------------------------------------------------
-     * | Path Configuration
-     * |--------------------------------------------------------------------------
-     * |
-     * | Default paths that can be customized per project.
-     * |
-     */
+        'default_from_address' => 'noreply@fixcity.eu',
+        'default_from_name' => '{{company_name}}',
+        'default_admin_email' => 'admin@{{company_name}}.com',
+        'default_developer_email' => 'developer@{{company_name}}.com'],
     'paths' => [
-        'default_avatar_path' => env('DEFAULT_AVATAR_PATH', '/images/avatars/default.svg'),
-        'default_image_path' => env('DEFAULT_IMAGE_PATH', '/images/default.jpg'),
-    ],
-    /*
-     * |--------------------------------------------------------------------------
-     * | Template Variables
-     * |--------------------------------------------------------------------------
-     * |
-     * | Available template variables that can be used in notification templates.
-     * |
-     */
+        'default_avatar_path' => '/images/avatars/default.svg',
+        'default_image_path' => '/images/default.jpg'],
     'template_variables' => [
         'company_name' => '{{company_name}}',
         'team_name' => '{{team_name}}',
@@ -94,6 +53,4 @@ return [
         'repository_url' => '{{repository_url}}',
         'user_name' => '{{user_name}}',
         'appointment_date' => '{{appointment_date}}',
-        'appointment_time' => '{{appointment_time}}',
-    ],
-];
+        'appointment_time' => '{{appointment_time}}']];

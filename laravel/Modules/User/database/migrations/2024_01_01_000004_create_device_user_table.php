@@ -1,13 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Device;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     /**
      * Run the migrations.
      */
@@ -35,12 +35,8 @@ return new class extends XotBaseMigration {
             if ($this->hasColumn('device_id')) {
                 $table->string('device_id', 36)->nullable()->change();
             }
-<<<<<<< HEAD
             // dddx($getColumnType('device_id');//varchar)
-=======
-            // dddx($this->getColumnType('device_id'));//varchar
->>>>>>> 6ed19256f (.)
-            if ('uuid' === $this->getColumnType('user_id')) {
+            if ($this->getColumnType('user_id') === 'uuid') {
                 $table->string('user_id', 36)->nullable()->change();
             }
 

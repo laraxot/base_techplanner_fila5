@@ -1,3 +1,14 @@
+---
+title: "register page layout system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "register page layout system"
+issues: []
+discussions: []
+---
+
 # Register Page Layout System
 
 ## Overview

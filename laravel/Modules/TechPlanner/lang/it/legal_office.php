@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'label' => 'Studio Legale',
-        'group' => 'TechPlanner',
+        'group' => 'Referenti dei clienti',
+        'label' => 'Sedi legali',
+        'plural_label' => 'Sedi legali',
         'icon' => 'heroicon-o-building-office',
-        'sort' => 9,
+        'sort' => 70,
     ],
     'resource' => [
         'label' => 'Studio Legale',
@@ -43,10 +44,82 @@ return [
             'tooltip' => 'Visualizza studio legale',
         ],
         'reorderRecords' => [
-            'tooltip' => 'reorderRecords',
+            'tooltip' => '',
+            'label' => 'reorderRecords',
+            'icon' => 'reorderRecords',
         ],
         'detach' => [
-            'tooltip' => 'detach',
+            'tooltip' => '',
+        ],
+        'attach' => [
+            'label' => 'attach',
+            'icon' => 'attach',
+            'tooltip' => '',
+        ],
+        'applyFilters' => [
+            'label' => 'applyFilters',
+            'icon' => 'applyFilters',
+            'tooltip' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'resetFilters',
+            'icon' => 'resetFilters',
+            'tooltip' => '',
+        ],
+        'openFilters' => [
+            'label' => 'openFilters',
+            'icon' => 'openFilters',
+            'tooltip' => '',
+        ],
+        'applyTableColumnManager' => [
+            'label' => 'applyTableColumnManager',
+            'icon' => 'applyTableColumnManager',
+            'tooltip' => '',
+        ],
+        'openColumnManager' => [
+            'label' => 'openColumnManager',
+            'icon' => 'openColumnManager',
+            'tooltip' => '',
+        ],
+        'resetColumnManager' => [
+            'label' => 'resetColumnManager',
+            'icon' => 'resetColumnManager',
+            'tooltip' => '',
+        ],
+        'submit' => [
+            'label' => 'submit',
+            'icon' => 'submit',
+            'tooltip' => '',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+            'icon' => 'createAnother',
+            'tooltip' => '',
+        ],
+        'cancel' => [
+            'label' => 'cancel',
+            'icon' => 'cancel',
+            'tooltip' => '',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => '',
+        ],
+        'logout' => [
+            'label' => 'logout',
+            'icon' => 'logout',
+            'tooltip' => '',
+        ],
+        'back' => [
+            'label' => 'back',
+            'icon' => 'back',
+            'tooltip' => '',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => '',
         ],
     ],
     'fields' => [
@@ -89,6 +162,12 @@ return [
             'label' => 'Attivo',
             'help' => 'Se lo studio legale è attivo',
         ],
+        'value' => [
+            'label' => 'Valore',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
     ],
     'filters' => [
         'is_active' => [
@@ -110,4 +189,6 @@ return [
         'not_found' => 'Studio legale non trovato',
         'validation_error' => 'Errore di validazione nei dati inseriti',
     ],
+    'label' => 'Sede legale',
+    'plural_label' => 'Sedi legali',
 ];

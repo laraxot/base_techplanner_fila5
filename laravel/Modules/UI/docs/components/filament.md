@@ -1,3 +1,10 @@
+---
+title: "Filament Components"
+qmd: "ui components filament md"
+type: note
+tags: [documentation]
+---
+
 # Filament Components
 
 ## Resources

@@ -2,6 +2,12 @@
 
 declare(strict_types=1);
 
-use Modules\Comment\Tests\TestCase;
-
-pest()->extend(TestCase::class)->in('Feature', 'Unit');
+/*
+|--------------------------------------------------------------------------
+| Comment Pest bootstrap
+|--------------------------------------------------------------------------
+|
+| Binding TestCase per-file: pest()->extend()/uses()->in() sono @internal
+| e PHPStan L10 bleedingEdge segnala method.internalClass.
+|
+*/

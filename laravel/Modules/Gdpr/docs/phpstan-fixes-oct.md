@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes oct"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes oct"
+issues: []
+discussions: []
+---
+
 # PHPStan Fixes - Gdpr Module - 2025-10-13
 
 ## Summary
@@ -152,6 +163,14 @@ expect($consent->property)->toBe($value);
 
 ---
 
+title: "phpstan fixes oct"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes oct"
+issues: []
+discussions: []
 *Last Updated: 2025-10-13*
 *Progress: 68% complete (18 errors remaining)*
 *Module Status: Substantial progress - main model issues resolved*

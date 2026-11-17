@@ -3,23 +3,24 @@
 declare(strict_types=1);
 
 return [
-    'list' => [
-        'label' => 'Lista',
-        'color' => 'primary',
-        'icon' => 'heroicon-o-list-bullet',
-        'description' => 'Layout a lista tradizionale con righe di tabella',
-        'tooltip' => 'Visualizza i dati in formato tabella strutturata',
-        'helper_text' => 'Ideale per visualizzare molti dati in modo organizzato',
+    'values' => [
+        'list' => [
+            'label' => 'Lista',
+            'color' => 'primary',
+            'icon' => 'heroicon-o-list-bullet',
+            'description' => 'Layout a lista tradizionale con righe di tabella',
+            'tooltip' => 'Visualizza i dati in formato tabella strutturata',
+            'helper_text' => 'Ideale per visualizzare molti dati in modo organizzato',
+        ],
+        'grid' => [
+            'label' => 'Griglia',
+            'color' => 'secondary',
+            'icon' => 'heroicon-o-squares-2x2',
+            'description' => 'Layout a griglia responsive con card',
+            'tooltip' => 'Visualizza i dati in formato card responsive',
+            'helper_text' => 'Ideale per visualizzare pochi dati con focus visivo',
+        ],
     ],
-    'grid' => [
-        'label' => 'Griglia',
-        'color' => 'secondary',
-        'icon' => 'heroicon-o-squares-2x2',
-        'description' => 'Layout a griglia responsive con card',
-        'tooltip' => 'Visualizza i dati in formato card responsive',
-        'helper_text' => 'Ideale per visualizzare pochi dati con focus visivo',
-    ],
-<<<<<<< HEAD
     'label' => 'Table Layout Enum',
     'plural_label' => 'Table Layout Enum (Plurale)',
     'navigation' => [
@@ -31,7 +32,7 @@ return [
         ],
         'label' => 'Table Layout Enum',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -64,6 +65,4 @@ return [
             'label' => 'Elimina Table Layout Enum',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

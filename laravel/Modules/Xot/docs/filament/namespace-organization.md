@@ -1,15 +1,13 @@
-<<<<<<< HEAD
-- [Documentazione Filament](../Xot/docs/filament/filament_best_practices.md)
-- [XotBasePage](../Xot/docs/filament/pages/xotbasepage.md)
-- [Linee Guida per l'Ereditarietà](../Xot/docs/filament/filament_inheritance_guidelines.md)
 ---
-module: theme
-topic: namespace-organization
-canonical: ../../../../Themes/docs/shared-components/namespace-organization-1.md
+title: "Organizzazione dei Namespace Filament nel Modulo Xot"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "Organizzazione dei Namespace Filament nel Modulo Xot"
 ---
-
-See canonical documentation: ../../../../Themes/docs/shared-components/namespace-organization-1.md
-=======
 # Organizzazione dei Namespace Filament nel Modulo Xot
 
 ## Problema Identificato: Duplicazione di Classi Base
@@ -78,4 +76,3 @@ Questo errore indica che un metodo è stato erroneamente definito come statico q
 - [Documentazione Filament](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/filament_best_practices.md)
 - [XotBasePage](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/pages/xotbasepage.md)
 - [Linee Guida per l'Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/filament_inheritance_guidelines.md)
->>>>>>> 6ed19256f (.)

@@ -1,14 +1,21 @@
+---
+title: "phpstan analysis geo"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis geo"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis - Geo Module
 
 ## 📊 Status
 
 **PHPStan Level 10**: ⚠️ **ANALYSIS ISSUE** - Cannot complete analysis
 
-**Last Analysis**: 2025-11-05
-<<<<<<< HEAD
 **Last Analysis**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## 🎯 Module Overview
 
@@ -87,16 +94,16 @@ PHPStan analysis on the Geo module consistently times out or hangs, preventing c
 
 ---
 
-**Analysis Date**: 2025-11-05
-<<<<<<< HEAD
+title: "phpstan analysis geo"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis geo"
+issues: []
+discussions: []
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ⚠️ Analysis Blocked - Requires Investigation
 **Documentation Status**: ⚠️ Basic - Analysis issues need resolution
-=======
-**PHPStan Version**: 2.1.2
-**Laravel Version**: 12.31.1
-**Status**: ⚠️ Analysis Blocked - Requires Investigation
-**Documentation Status**: ⚠️ Basic - Analysis issues need resolution
->>>>>>> 6ed19256f (.)

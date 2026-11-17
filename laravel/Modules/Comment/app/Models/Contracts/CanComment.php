@@ -19,8 +19,10 @@ use Modules\Comment\Support\CommentatorProperties;
  */
 interface CanComment
 {
+    /** @return MorphMany<\Modules\Comment\Models\Comment, Model> */
     public function commentatorComments(): MorphMany;
 
+    /** @return MorphMany<\Modules\Comment\Models\Reaction, Model> */
     public function reactions(): MorphMany;
 
     public function commentatorProperties(): CommentatorProperties;

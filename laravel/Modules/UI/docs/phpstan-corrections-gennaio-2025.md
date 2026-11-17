@@ -1,3 +1,10 @@
+---
+title: "PHPStan Corrections - Gennaio 2025"
+qmd: "ui phpstan corrections gennaio 2025 md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Corrections - Gennaio 2025
 
 ## Riepilogo

@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Risoluzione Conflitto AutoLabelAction"
+module: "Lang"
+type: concept
+tags: [links]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "links"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Risoluzione Conflitto AutoLabelAction
 
 ## Problema Identificato
@@ -242,8 +255,8 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Best Practices](translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 
 ## Note per Sviluppatori Futuri
 
@@ -503,8 +516,8 @@ Il file `Modules/Lang/app/Actions/Filament/AutoLabelAction.php` presenta conflit
 
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
-- [PHPStan Level 10 Fixes](../phpstan-level10-fixes.md)
+- [Best Practices](translation-keys-best-practices.md)
+- [PHPStan Level 10 Fixes](archive/historical/phpstan-level10-fixes.md)
 
 ## Note per Sviluppatori Futuri
 

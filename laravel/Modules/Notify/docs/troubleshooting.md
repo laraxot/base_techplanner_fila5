@@ -1,3 +1,16 @@
+---
+qmd: "troubleshooting"
+issues: []
+discussions: []
+title: "Troubleshooting Notification Issues in Laravel Modules"
+module: notify
+type: integration
+tags: [integrations, modules, notify]
+created: 2026-08-24
+updated: 2026-08-24
+status: draft
+---
+
 # Troubleshooting Notification Issues in Laravel Modules
 
 ## Overview
@@ -42,20 +55,8 @@ This document provides guidance on diagnosing and resolving common issues encoun
 - Update this document if new issues or resolution strategies are identified.
 
 ## Links to Related Documentation
-<<<<<<< HEAD
 - [Notify Module Index](./index.md)
-- [Architecture Overview](./architecture.md)
+- [Architecture Overview](./ARCHITECTURE.md)
 - [Notification Channels Implementation](./notification_channels_implementation.md)
 - [Email Templates](./email_templates.md)
 - [SMS Implementation](./sms_implementation.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Notify Module Index](./INDEX.md)
-- [Architecture Overview](./ARCHITECTURE.md)
-- [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
-- [Email Templates](./EMAIL_TEMPLATES.md)
-<<<<<<< HEAD
-- [SMS Implementation](./SMS_IMPLEMENTATION.md)
-=======
-- [SMS Implementation](./SMS_IMPLEMENTATION.md)
->>>>>>> 6ed19256f (.)

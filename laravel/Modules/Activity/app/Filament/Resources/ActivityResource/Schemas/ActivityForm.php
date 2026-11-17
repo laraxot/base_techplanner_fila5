@@ -11,10 +11,10 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 class ActivityForm extends XotBaseResourceForm
 {
-/**
-      * @return array<string, SchemaComponent>
-      */
-    public static function getFormSchema(): array
+    /**
+     * @return array<string, SchemaComponent>
+     */
+    public function getFormSchema(): array
     {
         return [
             'log_name' => TextInput::make('log_name')

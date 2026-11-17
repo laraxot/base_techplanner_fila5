@@ -98,13 +98,13 @@ Quando si usa `updateTimestamps()` di XotBaseMigration, non chiamare anche `$tab
 - `docs/phpstan-level10-fixes.md` - Correzioni PHPStan
 
 ### Root Docs
-- `docs/phpstan-level10-fixes-2025-01-06.md` - Riepilogo generale
-- `docs/server-setup-and-fixes-2025-01-06.md` - Questo documento
+- `docs/phpstan-level10-fixes.md` - Riepilogo generale
+- `docs/server-setup-and-fixes.md` - Questo documento
 
 ## Collegamenti
 
 - [Notify Module PHPStan Analysis](../Modules/Notify/docs/phpstan-level10-analysis.md)
 - [Xot Module PHPStan Fixes](../Modules/Xot/docs/phpstan-level10-fixes.md)
-- [PHPStan Level 10 Fixes](./phpstan-level10-fixes-2025-01-06.md)
+- [PHPStan Level 10 Fixes](./phpstan-level10-fixes.md)
 
 

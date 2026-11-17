@@ -1,12 +1,15 @@
+---
+title: "Activity Module - Roadmap & Optimization"
+qmd: "activity roadmap and issues md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Roadmap & Optimization
 
 **Modulo**: Activity (Audit Trail & Activity Logging)
 **Data Analisi**: 1 Ottobre 2025
-<<<<<<< HEAD
-**Status PHPStan**: ✅ 0 errori (Level 10)
-=======
 **Status PHPStan**: ✅ 0 errori (Level 9)
->>>>>>> 6ed19256f (.)
 **Status Generale**: ✅ ECCELLENTE
 
 ---
@@ -54,17 +57,10 @@
 ## 🔗 Collegamenti
 
 - [← Activity Module README](../README.md)
-<<<<<<< HEAD
-- [← Activity Module README](../readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [← Root Documentation](../../../docs/index.md)
+- [← Activity Module README](../README.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
 **Status**: ✅ COMPLETO
-<<<<<<< HEAD
 **Maintenance**: Routine
-=======
-**Maintenance**: Routine
->>>>>>> 6ed19256f (.)

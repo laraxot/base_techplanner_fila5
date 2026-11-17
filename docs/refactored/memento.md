@@ -1,4 +1,4 @@
-# Memento - Base TechPlanner Fila3
+# Memento - Base TechPlanner fila5
 
 Ultimo aggiornamento: 2025-01-13
 
@@ -23,8 +23,8 @@ Ultimo aggiornamento: 2025-01-13
 - Server Name: techplanner.local
 - SSL abilitato con certificati self-signed
 - Log files:
-  - Error log: `/var/www/html/_bases/base_techplanner_fila3/error.log`
-  - Access log: `/var/www/html/_bases/base_techplanner_fila3/access.log`
+  - Error log: `/var/www/html/_bases/base_techplanner_fila5/error.log`
+  - Access log: `/var/www/html/_bases/base_techplanner_fila5/access.log`
 
 ## 💡 Funzionalità Principali
 - Sistema basato su Laravel

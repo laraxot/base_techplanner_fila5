@@ -8,6 +8,7 @@ use Filament\Forms\Components\Builder\Block;
 use Filament\Forms\Components\Radio;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\TextInput;
+use Filament\Schemas\Components\Component;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 
 final class Slider
@@ -22,7 +23,7 @@ final class Slider
         // dddx($options);
         return Block::make($name)
             ->schema([
-                TextInput::make('method')->hint('Inserisci il nome del metodo da richiamare nel tema')->required(),
+                TextInput::make('method')->hint('Enter the name of the method to call in the theme')->required(),
                 // Select::make('_tpl')
                 //     ->label('layout')
                 //     ->options($options),
@@ -33,6 +34,9 @@ final class Slider
             ->columns(1);
     }
 
+    /**
+     * @return array<int|string, Component>
+     */
     public static function getFormSchema(): array
     {
         return [

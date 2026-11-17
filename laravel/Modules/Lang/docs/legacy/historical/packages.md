@@ -54,10 +54,10 @@
 
 ## Documentazione Collegata
 
-- [Localizzazione](packages/localization.md)
+- [Localizzazione](../../packages/localization.md)
 - [Traduzioni](packages/translations.md)
-- [SEO](packages/seo.md)
-- [Performance](packages/performance.md)
+- [SEO](../../packages/seo.md)
+- [Performance](../../packages/performance.md)
 - [Composer merge plugin](composer-merge-plugin.md)
 ### Versione HEAD
 

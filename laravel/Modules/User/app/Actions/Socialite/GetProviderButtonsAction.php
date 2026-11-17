@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
 
@@ -16,6 +15,8 @@ class GetProviderButtonsAction
 
     /**
      * Execute the action.
+     *
+     * @return array<int, never>
      */
     public function execute(): array
     {

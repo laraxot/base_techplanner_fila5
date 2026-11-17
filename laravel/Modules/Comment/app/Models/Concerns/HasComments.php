@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
 use Modules\Comment\Models\Contracts\CanComment;
 use Modules\Comment\Enums\NotificationSubscriptionType;
 use Modules\Comment\Exceptions\CannotCreateComment;
@@ -18,16 +19,25 @@ use Modules\Comment\Support\CommentConfig;
 
 trait HasComments
 {
+    /** @return MorphMany<Comment, Model> */
     public function comments(): MorphMany
     {
-        return $this->morphMany(CommentConfig::commentModelClass(), 'commentable');
+        /** @var MorphMany<Comment, Model> $relation */
+        $relation = $this->morphMany(CommentConfig::commentModelClass(), 'commentable');
+
+        return $relation;
     }
 
+    /** @return MorphMany<CommentNotificationSubscription, Model> */
     public function notificationSubscriptions(): MorphMany
     {
-        return $this->morphMany(CommentConfig::commentNotificationSubscriptionModelClass(), 'commentable');
+        /** @var MorphMany<CommentNotificationSubscription, Model> $relation */
+        $relation = $this->morphMany(CommentConfig::commentNotificationSubscriptionModelClass(), 'commentable');
+
+        return $relation;
     }
 
+    /** @return Collection<int, Model> */
     public function subscribers(?NotificationSubscriptionType $type = null): Collection
     {
         $subscriptions = $this
@@ -53,7 +63,8 @@ trait HasComments
 
     public function comment(string $text, ?CanComment $commentator = null): Comment
     {
-        $commentator ??= auth()->user();
+        $user = Auth::user();
+        $commentator ??= $user instanceof CanComment ? $user : null;
 
         if (! CommentConfig::allowAnonymousComments()) {
             if (! $commentator) {
@@ -67,8 +78,8 @@ trait HasComments
 
         /** @var Comment $comment */
         $comment = $this->comments()->create([
-            'commentator_id' => $commentator?->getKey() ?? null,
-            'commentator_type' => $commentator?->getMorphClass() ?? null,
+            'commentator_id' => $commentator?->getKey(),
+            'commentator_type' => $commentator?->getMorphClass(),
             'original_text' => $text,
             'parent_id' => $parentId,
         ]);

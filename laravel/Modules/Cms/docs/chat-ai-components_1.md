@@ -1,3 +1,14 @@
+---
+title: "chat ai components 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "chat ai components 1"
+issues: []
+discussions: []
+---
+
 # Componenti Chat AI
 
 Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tailkit](https://tailkit.com/templates#chatai). Non si implementano qui, ma si documentano le componenti proposte e i motivi per cui sono utili.
@@ -42,4 +53,4 @@ Questo documento descrive le componenti UI ispirate al template "ChatAI" di [Tai
 
 - [Template Tailkit ChatAI](https://tailkit.com/templates#chatai)  
 - [Blocchi di Contenuto](blocks.md)  
-- [Documentazione Root](../../../docs/README.md)
+- [Documentazione Root](../../../../docs/README.md)

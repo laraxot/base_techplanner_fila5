@@ -1,3 +1,10 @@
+---
+title: "Filament 5.x compatibility - modulo UI"
+qmd: "ui filament 5x compatibility md"
+type: note
+tags: [documentation]
+---
+
 # Filament 5.x compatibility - modulo UI
 
 **Versione Filament:** v5.2.1

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_WXGOav
+---
+title: "migration naming pattern 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migration naming pattern 1"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_FdsoBe
 # Convenzione di Naming e Gestione delle Migrazioni
 
 ## Pattern del Progetto <main module>
@@ -80,8 +94,4 @@ $this->tableUpdate(
 
 - [XotBaseMigration](../../../Xot/database/migrations/XotBaseMigration.php)
 - [Documentazione Laravel sulle Migrazioni](https://laravel.com/project_docs/migrations)
-<<<<<<< HEAD
 - [Xot Module Documentation Standards](../../../xot/project_docs/documentation-standards.md)
-=======
-- [Xot Module Documentation Standards](../../../Xot/project_docs/documentation-standards.md)
->>>>>>> 6ed19256f (.)

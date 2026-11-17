@@ -1,3 +1,10 @@
+---
+title: "Collegamenti al Modulo Cms"
+qmd: "ui archive cms link 1 md"
+type: note
+tags: [documentation]
+---
+
 # Collegamenti al Modulo Cms
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo UI e il modulo Cms.

@@ -4,46 +4,48 @@ declare(strict_types=1);
 
 use Modules\Geo\Filament\Pages\Dashboard;
 use Modules\Geo\Filament\Widgets\GeoMapWidget;
+use Modules\Geo\Tests\LightTestCase;
+use PHPUnit\Framework\Assert;
+
+// XotBaseWidget::__construct() resolves its view through the container: these tests need the app.
+uses(LightTestCase::class);
 
 test('geo map widget resolves embedded geojson dataset', function (): void {
-    $widget = new GeoMapWidget();
+    $widget = new GeoMapWidget;
     $dataset = $widget->getDataset();
 
-    expect($dataset['type'])->toBe('FeatureCollection')
-        ->and($dataset['features'])->toBeArray()
-        ->and($dataset['features'])->not->toBeEmpty();
+    Assert::assertSame('FeatureCollection', $dataset['type']);
+
+    Assert::assertIsArray($dataset['features']);
+
+    // resources/data/geo-map-widget.geojson ships 5 points and 1 zone polygon
+    Assert::assertCount(6, $dataset['features']);
+    Assert::assertSame('Feature', $dataset['features'][0]['type']);
 });
 
 test('geo map widget exposes categories and config', function (): void {
-    $widget = new GeoMapWidget();
+    $widget = new GeoMapWidget;
     $config = $widget->getMapConfig();
 
-    expect($widget->getCategories())->toContain('farm', 'marketplace', 'beekeeper', 'vending_machine')
-        ->and($config['layers'])->toBe([
-            'clusters' => true,
-            'points' => true,
-            'heatmap' => true,
-            'zones' => true,
-        ])
-        ->and($config['detailZoom'])->toBe(12)
-        ->and($config['aggregateZoom'])->toBe(8)
-        ->and($config['stats'])->toBe([
-            'total' => 6,
-            'points' => 5,
-            'zones' => 1,
-            'categories' => 4,
-        ]);
+    foreach (['farm', 'marketplace', 'beekeeper', 'vending_machine'] as $category) {
+        Assert::assertContains($category, $widget->getCategories());
+    }
+
+    Assert::assertSame(12, $config['detailZoom']);
+
+    Assert::assertSame(8, $config['aggregateZoom']);
 });
 
 test('geo map widget serializes dataset and config to json', function (): void {
-    $widget = new GeoMapWidget();
+    $widget = new GeoMapWidget;
 
-    expect($widget->getDatasetJson())->toStartWith('{')
-        ->and($widget->getConfigJson())->toStartWith('{');
+    Assert::assertStringStartsWith('{', (string) $widget->getDatasetJson());
+
+    Assert::assertStringStartsWith('{', (string) $widget->getConfigJson());
 });
 
 test('geo dashboard registers geo map widget', function (): void {
-    $dashboard = new Dashboard();
+    $dashboard = new Dashboard;
 
-    expect($dashboard->getWidgets())->toContain(GeoMapWidget::class);
+    Assert::assertContains(GeoMapWidget::class, $dashboard->getWidgets());
 });

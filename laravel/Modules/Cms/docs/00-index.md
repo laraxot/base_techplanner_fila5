@@ -1,10 +1,26 @@
-<<<<<<< HEAD
+---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 index"
+title: "Cms — indice della documentazione"
+description: "Documentazione del modulo Cms: gestione contenuti e pagine."
+module: Cms
+tags: [cms, documentazione, modulo, laraxot]
+status: active
+repository: https://github.com/laraxot/module_cms_fila5
+related:
+  - ./00-index.md
+  - ./index.md
+  - ../../../../docs/wiki/audits/docs-redundancy-audit.md
+issues: https://github.com/laraxot/module_cms_fila5/issues
+discussions: https://github.com/laraxot/module_cms_fila5/discussions
+---
+
 # Cms Module Documentation
 
 ## Overview
 
-=======
->>>>>>> 6ed19256f (.)
 # Cms Module Documentation Index
 
 ## Core Concepts
@@ -47,7 +63,6 @@
 ## Missing Features & Gaps
 - [Missing Features](../Meetup/docs/missing-features.md) - Identified missing functionality
 - [Gap Analysis](../Meetup/docs/gap-analysis.md) - Gap analysis between current and desired state
-<<<<<<< HEAD
 Il modulo Cms gestisce contenuti, composizione pagina e rendering CMS-driven dei blocchi. Nel lavoro corrente sulla parity Design Comuni, il Cms governa la struttura della homepage di test, mentre la resa visuale viene rifinita nel tema Sixteen.
 
 ## 📚 Design Comuni - Index Completo
@@ -69,11 +84,11 @@ Il modulo Cms gestisce contenuti, composizione pagina e rendering CMS-driven dei
 
 ## Theme cross links
 
-- [../../../Themes/Sixteen/docs/00-index.md](../../../Themes/Sixteen/docs/00-index.md) - Indice docs del tema
+- [../../../Themes/Sixteen/docs/00-index.md](../../../Themes/Sixteen/docs/00-INDEX.md) - Indice docs del tema
 - [../../../Themes/Sixteen/docs/design-comuni/00-index.md](../../../Themes/Sixteen/docs/design-comuni/00-index.md) - Workspace attivo parity homepage
 - [../../../Themes/Sixteen/docs/design-comuni/ALL_PAGES_ANALYSIS.md](../../../Themes/Sixteen/docs/design-comuni/ALL_PAGES_ANALYSIS.md) - Analisi 54 pagine
 - [../../../Themes/Sixteen/docs/design-comuni/PROGRESS_REPORT.md](../../../Themes/Sixteen/docs/design-comuni/PROGRESS_REPORT.md) - Report progresso
-- [../../../docs/design-comuni/MASTER_INDEX.md](../../../docs/design-comuni/MASTER_INDEX.md) - Master Index globale
+- [../../../docs/design-comuni/MASTER_INDEX.md](../../../../docs/design-comuni/MASTER_INDEX.md) - Master Index globale
 
 ## Runtime architecture
 
@@ -87,5 +102,3 @@ Il modulo Cms gestisce contenuti, composizione pagina e rendering CMS-driven dei
 - Se il problema e' strutturale, verificare prima Cms JSON + routing.
 - Se il problema e' visivo, lavorare nel tema e documentare i risultati anche qui.
 - Mantenere collegamenti bidirezionali tra docs di modulo e docs di tema.
-=======
->>>>>>> 6ed19256f (.)

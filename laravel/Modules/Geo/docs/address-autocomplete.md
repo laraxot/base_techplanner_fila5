@@ -1,3 +1,14 @@
+---
+title: "address autocomplete"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "address autocomplete"
+issues: []
+discussions: []
+---
+
 https://developers.google.com/maps/documentation/javascript/examples/places-autocomplete-addressform?hl=it#maps_places_autocomplete_addressform-css
 https://developers.google.com/maps/documentation/javascript/places-autocomplete
 
@@ -8,7 +19,6 @@ https://www.jqueryscript.net/tags.php?/Place%20Autocomplete/
 
 https://www.aspsnippets.com/questions/135714/Force-user-to-select-Address-from-Google-Map-API-Autocomplete-result-in-jQuery/
 
-<<<<<<< HEAD
 
 https://www.studentstutorial.com/jquery/google_places_autocomplete
 
@@ -18,21 +28,18 @@ https://github.com/tmentink/jquery.geocomplete
 
 https://stackoverflow.com/questions/65873447/googles-place-autocomplete-address-form-typescript-error-on-indexing-geocoder
 
-
-=======
->>>>>>> 6ed19256f (.)
-https://www.studentstutorial.com/jquery/google_places_autocomplete
-
-https://github.com/tmentink/jquery.geocomplete
-
-https://stackoverflow.com/questions/65873447/googles-place-autocomplete-address-form-typescript-error-on-indexing-geocoder
 
 https://www.npmjs.com/package/use-places-autocomplete
 
 https://github.com/wellyshen/use-places-autocomplete
 
-<<<<<<< HEAD
 https://www.w3docs.com/learn-javascript/places-autocomplete.html
-=======
-https://www.w3docs.com/learn-javascript/places-autocomplete.html
->>>>>>> 6ed19256f (.)
+
+
+
+
+
+
+
+
+

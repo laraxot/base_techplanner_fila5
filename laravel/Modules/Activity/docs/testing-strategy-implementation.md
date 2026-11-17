@@ -1,3 +1,10 @@
+---
+title: "Testing Strategy Implementation - Activity Module"
+qmd: "activity testing strategy implementation md"
+type: note
+tags: [documentation]
+---
+
 # Testing Strategy Implementation - Activity Module
 
 ## Status
@@ -144,11 +151,7 @@ git checkout --theirs {file}  # Usa versione incoming
 ### 1. Risoluzione Conflitti Git (URGENTE)
 
 ```bash
-<<<<<<< HEAD
 cd laravel
-=======
-cd /var/www/html/ptvx/laravel
->>>>>>> 6ed19256f (.)
 
 # Risolvi tutti i conflitti
 
@@ -188,10 +191,7 @@ Applicare pattern NO RefreshDatabase a tutti i test Activity:
 - [No RefreshDatabase Policy](./testing/no-refresh-database-policy.md) - **Policy ufficiale**
 - [Snapshot Testing Patterns](./testing/snapshot-testing-patterns.md) - **Best practices**
 - [Xot Testing Strategy](../../Xot/docs/testing-strategy.md) - **Strategia globale**
-<<<<<<< HEAD
 - [Xot Testing Strategy](../../xot/docs/testing-strategy.md) - **Strategia globale**
-=======
->>>>>>> 6ed19256f (.)
 
 ### Codice
 - [SnapshotBusinessLogicTest](../tests/Feature/SnapshotBusinessLogicTest.php) - **Implementazione**
@@ -202,8 +202,4 @@ Applicare pattern NO RefreshDatabase a tutti i test Activity:
 **Status**: ⚠️  COMPLETATO ma esecuzione test bloccata da conflitti Git
 **Pattern**: ✅ Manual Cleanup con UUID Isolation
 **Documentazione**: ✅ COMPLETA
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 6ed19256f (.)

@@ -12,11 +12,6 @@ return new class() extends XotBaseMigration
 {
     /**
      * db up.
-<<<<<<< HEAD
-=======
-     *
-     * @return void
->>>>>>> 6ed19256f (.)
      */
     public function up(): void
     {
@@ -45,7 +40,7 @@ return new class() extends XotBaseMigration
                         ->references('id')
                         ->on('clients')
                         ->onDelete('cascade');
-                } catch (\Exception $e) {
+                } catch (Exception $e) {
                     // Foreign key potrebbe esistere già, ignora l'errore
                     // Questo può accadere se la migrazione viene eseguita più volte
                 }

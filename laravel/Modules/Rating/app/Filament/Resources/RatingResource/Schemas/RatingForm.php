@@ -19,7 +19,7 @@ class RatingForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             'extra_attributes.type' => TextInput::make('extra_attributes.type'),

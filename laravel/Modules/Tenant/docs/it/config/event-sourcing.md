@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Event Sourcing"
+module: "Tenant"
+type: concept
+tags: [event, sourcing]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "event sourcing"
+related:
+  - "./phpstan-corrections-january.md"
+---
 <?php
 
 return [
@@ -130,18 +143,9 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di event-sourcing.md
-* [event-sourcing.md](../../../Xot/docs/activity/event-sourcing.md)
-* [event-sourcing.md](../../../Tenant/docs/it/config/event-sourcing.md)
-<<<<<<< HEAD
 * [event-sourcing.md](../../../xot/docs/activity/event-sourcing.md)
 * [event-sourcing.md](../../../tenant/docs/it/config/event-sourcing.md)
 
 ### Versione Incoming
 
 ---
-=======
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)

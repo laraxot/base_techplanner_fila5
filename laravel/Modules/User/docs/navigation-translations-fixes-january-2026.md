@@ -1,3 +1,25 @@
+---
+title: "Correzioni Traduzioni Navigation - Gennaio 2026"
+type: concept
+tags: [navigation, translations, fixes, january]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "navigation-translations-fixes-january-2026 correzioni traduzioni navigation - gennaio 2026"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+status: superseded
+superseded_by: navigation-translations-fixes-january.md
+---
+
 # Correzioni Traduzioni Navigation - Gennaio 2026
 
 ## Data Intervento
@@ -186,12 +208,9 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - [Filosofia Traduzioni Laraxot](../../Xot/docs/translation-philosophy.md)
 - [Standard Traduzioni](../../Xot/docs/translation-standards.md)
 - [Documentazione Modulo User](./README.md)
-<<<<<<< HEAD
 - [Filosofia Traduzioni Laraxot](../../xot/docs/translation-philosophy.md)
-- [Standard Traduzioni](../../xot/docs/translation-standards.md)
-- [Documentazione Modulo User](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Standard Traduzioni](../../Xot/docs/translation-standards.md)
+- [Documentazione Modulo User](./README.md)
 
 ## Note Tecniche
 
@@ -202,8 +221,5 @@ Tutte le traduzioni seguono ora la struttura espansa completa:
 - Sort order allineato con i Resource corrispondenti
 
 *Intervento completato il: 2026-01-22*
-<<<<<<< HEAD
 *Conforme alle regole DRY + KISS*
-=======
 *Conforme alle regole DRY + KISS*
->>>>>>> 6ed19256f (.)

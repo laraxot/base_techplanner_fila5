@@ -1,17 +1,17 @@
 <?php
 
+declare(strict_types=1);
 /**
  * Classe per la gestione delle configurazioni delle password.
  */
-
-declare(strict_types=1);
 
 namespace Modules\User\Datas;
 
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\TextInput as FormsTextInput;
 use Illuminate\Validation\Rules\Password;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+use Modules\User\Traits\PasswordValidationRules;
 use Spatie\LaravelData\Data;
 
 /**
@@ -19,6 +19,8 @@ use Spatie\LaravelData\Data;
  */
 class PasswordData extends Data
 {
+    use PasswordValidationRules;
+
     private static ?self $instance = null;
 
     public function __construct(
@@ -34,8 +36,7 @@ class PasswordData extends Data
         public int $compromisedThreshold = 0,
         public ?string $failMessage = null,
         private ?string $field_name = null,
-    ) {
-    }
+    ) {}
 
     /**
      * Crea un'istanza della classe PasswordData.
@@ -43,8 +44,7 @@ class PasswordData extends Data
     public static function make(): self
     {
         if (! self::$instance) {
-            /** @var array<string, mixed> $data */
-            $data = TenantService::getConfig('password');
+            $data = app(GetTenantConfigArrayAction::class)->execute('password');
             self::$instance = self::from($data);
         }
 
@@ -95,26 +95,26 @@ class PasswordData extends Data
      */
     public function getHelperText(): string
     {
-        $msg = 'La password deve essere composta da minimo '.$this->min.' caratteri';
+        $msg = 'The password must be at least '.$this->min.' characters long';
 
         if ($this->mixedCase) {
-            $msg .= ', contenere almeno una lettera maiuscola e una minuscola';
+            $msg .= ', contain at least one uppercase and one lowercase letter';
         }
 
         if ($this->letters) {
-            $msg .= ', contenere almeno una lettera';
+            $msg .= ', contain at least one letter';
         }
 
         if ($this->numbers) {
-            $msg .= ', contenere almeno un numero';
+            $msg .= ', contain at least one number';
         }
 
         if ($this->symbols) {
-            $msg .= ', contenere almeno un carattere speciale';
+            $msg .= ', contain at least one special character';
         }
 
         if ($this->uncompromised) {
-            $msg .= ', non essere stata compromessa in precedenti violazioni di dati';
+            $msg .= ', not have been compromised in previous data breaches';
         }
 
         return $msg;
@@ -147,7 +147,7 @@ class PasswordData extends Data
      */
     public function getPasswordConfirmationFormComponent(): FormsTextInput
     {
-        if (null === $this->field_name) {
+        if ($this->field_name === null) {
             throw new \RuntimeException('Il nome del campo password non è stato impostato. Utilizzare setFieldName() prima di chiamare questo metodo.');
         }
 
@@ -177,7 +177,10 @@ class PasswordData extends Data
         ];
     }
 
-    public static function getFormSchema(): array
+    /**
+     * @return array<string, FormsTextInput>
+     */
+    public function getFormSchema(): array
     {
         return [
             'password' => FormsTextInput::make('password')

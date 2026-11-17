@@ -1,3 +1,10 @@
+---
+title: "PRD: UI Module"
+qmd: "ui prd md"
+type: note
+tags: [documentation]
+---
+
 # PRD: UI Module
 
 ## 📋 Overview

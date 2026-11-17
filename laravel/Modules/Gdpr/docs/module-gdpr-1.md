@@ -1,17 +1,24 @@
+<<<<<<< .merge_file_5w7WBG
+---
+title: "module gdpr 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module gdpr 1"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_1pD8sq
 # Modulo GDPR
 
 ## Informazioni Generali
-<<<<<<< HEAD
 - **Nome**: `laraxot/module_gdpr_fila5`
 - **Descrizione**: Modulo per la gestione della conformità GDPR e privacy
 - **Namespace**: `Modules\Gdpr`
 - **Repository**: https://github.com/laraxot/module_gdpr_fila5.git
-=======
-- **Nome**: `laraxot/module_gdpr_fila3`
-- **Descrizione**: Modulo per la gestione della conformità GDPR e privacy
-- **Namespace**: `Modules\Gdpr`
-- **Repository**: https://github.com/laraxot/module_gdpr_fila3.git
->>>>>>> 6ed19256f (.)
 
 ## Service Providers
 1. `Modules\Gdpr\Providers\GdprServiceProvider`
@@ -135,8 +142,4 @@ composer format        # Formatta il codice
 - Trasferimenti
 
 ## Changelog
-<<<<<<< HEAD
 Le modifiche vengono tracciate nel repository GitHub.
-=======
-Le modifiche vengono tracciate nel repository GitHub.
->>>>>>> 6ed19256f (.)

@@ -19,11 +19,7 @@ use Webmozart\Assert\Assert;
 /**
  * Summary of TokenComponent.
  *
-<<<<<<< HEAD
  * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/auth/password/%5Btoken%5D.blade.php
-=======
- * @see https://github.com/thedevdojo/genesis/blob/main/stubs/class/resources/views/pages/auth/password/%5Btoken%5D.blade.php
->>>>>>> 6ed19256f (.)
  */
 class TokenComponent extends Component
 {
@@ -71,7 +67,7 @@ class TokenComponent extends Component
         );
         Assert::string($response, __FILE__.':'.__LINE__.' - '.class_basename(self::class));
         Assert::string($trans = trans($response));
-        if (Password::PASSWORD_RESET === $response) {
+        if ($response === Password::PASSWORD_RESET) {
             session()->flash($trans);
 
             return redirect('/');

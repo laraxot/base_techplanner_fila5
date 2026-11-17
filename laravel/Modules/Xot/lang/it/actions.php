@@ -3,8 +3,10 @@
 declare(strict_types=1);
 
 return [
+    'back' => [
+        'label' => 'Torna all\'elenco',
+    ],
     'export_xls' => 'Esporta Dati',
-<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -49,6 +51,4 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

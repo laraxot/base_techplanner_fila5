@@ -24,25 +24,20 @@ use Modules\Notify\Filament\Clusters\Test;
 use Modules\Notify\Models\MailTemplate;
 use Modules\Notify\Notifications\RecordNotification;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Override;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 use Webmozart\Assert\Assert;
 
 /**
-<<<<<<< HEAD
  * @property Schema $emailForm
-=======
- * @property \Filament\Schemas\Schema $emailForm
->>>>>>> 6ed19256f (.)
  */
 class SendSpatieEmailPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
+    /** @var array<string, mixed>|null */
     public ?array $emailData = [];
 
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
->>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 
@@ -56,8 +51,7 @@ class SendSpatieEmailPage extends XotBasePage
     protected function getForms(): array
     {
         return [
-            'emailForm',
-        ];
+            'emailForm'];
     }
 
     protected function fillForms(): void
@@ -74,11 +68,7 @@ class SendSpatieEmailPage extends XotBasePage
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, TextInput|Select|RichEditor>
-=======
-     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\Select|\Filament\Forms\Components\RichEditor>
->>>>>>> 6ed19256f (.)
      */
     public function getEmailFormSchema(): array
     {
@@ -91,12 +81,13 @@ class SendSpatieEmailPage extends XotBasePage
             'mail_template_slug' => Select::make('mail_template_slug')
                 ->options(MailTemplate::all()->pluck('slug', 'slug'))
                 ->required(),
-            'body_html' => RichEditor::make('body_html')->required(),
-        ];
+            'body_html' => RichEditor::make('body_html')->required()];
     }
 
     public function sendEmail(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->emailForm->getState();
         /*
          * $email_data = EmailData::from($data);
@@ -105,21 +96,8 @@ class SendSpatieEmailPage extends XotBasePage
          * new EmailDataEmail($email_data)
          * );
          *
-         *
          */
         $user = $this->getUser();
-        $attachments = [
-            [
-                'path' => public_path('images/avatars/default-3.svg'),
-                'as' => 'logo.png',
-                'mime' => 'image/png',
-            ],
-            [
-                'path' => public_path('images/avatars/default-3.svg'),
-                'as' => 'logo.png',
-                'mime' => 'image/png',
-            ],
-        ];
         // Mail::to($data['recipient'])->locale('it')->send((new SpatieEmail($user,'due'))->addAttachments($attachments));
         /*
          * // Create and send the email
@@ -147,14 +125,13 @@ class SendSpatieEmailPage extends XotBasePage
             ->send();
     }
 
+    /** @return array<string, Action> */
     protected function getEmailFormActions(): array
     {
         return [
-            Action::make('emailFormActions')->submit('emailFormActions'),
-        ];
+            'submit' => Action::make('emailFormActions')->submit('emailFormActions')];
     }
 
-    #[Override]
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();

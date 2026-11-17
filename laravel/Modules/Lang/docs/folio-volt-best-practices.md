@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Laravel Folio + Volt - Best Practices and Patterns Analysis"
+module: "Lang"
+type: concept
+tags: [phpstan, level10, fixes, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "phpstan level10 fixes 1"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview
@@ -101,7 +114,10 @@ middleware(['auth', 'verified']);
 
 ## Date
 2025-11-29
-<<<<<<< HEAD
 2025-11-29
-=======
->>>>>>> 6ed19256f (.)
+[DATE]
+[DATE]
+[DATE]
+[DATE]
+2025-11-29
+2025-11-29

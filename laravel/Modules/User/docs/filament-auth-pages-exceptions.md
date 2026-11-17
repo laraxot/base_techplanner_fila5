@@ -1,3 +1,23 @@
+---
+title: "Eccezioni Regola XotBase - Pagine Autenticazione"
+type: concept
+tags: [filament, auth, pages, exceptions]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament-auth-pages-exceptions eccezioni regola xotbase - pagine autenticazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Eccezioni Regola XotBase - Pagine Autenticazione
 
 ## Scopo
@@ -57,11 +77,7 @@ namespace Modules\User\Filament\Pages\Auth;
 class EditProfile extends \Filament\Auth\Pages\EditProfile
 {
     public static ?string $title = 'Profilo Utente';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public function getFormSchema(): array
     {
         return [
@@ -88,11 +104,7 @@ class PasswordExpired extends \Filament\Pages\Page implements HasForms
     use InteractsWithFormActions;
     use InteractsWithForms;
     use NavigationPageLabelTrait; // Solo trait per traduzioni
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     protected static bool $shouldRegisterNavigation = false;
     protected string $view = 'user::filament.auth.pages.password-expired';
 }
@@ -104,6 +116,21 @@ class PasswordExpired extends \Filament\Pages\Page implements HasForms
 - Usa solo `NavigationPageLabelTrait` per traduzioni (non tutto XotBasePage)
 - Logica business specifica per gestione password scaduta
 - Non necessita funzionalità aggiuntive XotBase (rilevamento modello, autorizzazioni avanzate, etc.)
+
+#### 5. Reset password (policy unica)
+
+I due schemi del reset, `UserForm::getResetPasswordFormSchema()` (con token) e `UserForm::getPasswordResetConfirmFormSchema()` (conferma), applicano
+alla password **la stessa policy della registrazione**: `->rule(Password::default())`, cioe' `Password::defaults()` impostato da `PasswordData`
+(minimo 8, maiuscole e minuscole, lettere, numeri, simboli, `uncompromised`).
+
+**Perche'**: fino al 2026-11-11 il reset aveva solo `minLength(8)` e accettava `12345678` e `aaaaaaaa` (audit front office, E-01): chi resetta
+poteva scegliere una password piu' debole di quella con cui si era registrato. Una regola nuova sulla policy si cambia in `PasswordData`, mai nei
+singoli schemi.
+
+**Guardia**: `tests/Unit/Filament/Schemas/PasswordResetUsesPasswordPolicyTest.php` (entrambi gli schemi: rifiuta `12345678`, `aaaaaaaa`, `abc`;
+accetta una password forte). `uncompromised` fa una chiamata a HIBP: nei test serve `Http::fake()`, altrimenti l'esito dipende dalla rete e da quanto
+e' nota la password di prova. Le regole si leggono per reflection sulla proprieta' `rules` del campo, perche' `getValidationRules()` chiede il
+container del form (per `same()`) e fuori da un form montato non e' inizializzato.
 
 ## Pattern Comune
 
@@ -133,17 +160,9 @@ Estendere `Filament\Pages\Page` direttamente solo per:
 ## Documentazione Correlata
 
 - [Regole XotBase](../../../bashscripts/docs/xotbase_critical_rules.md)
-- [XotBasePage Implementation](../../../Xot/docs/xotbasepage_implementation.md)
-<<<<<<< HEAD
 - [XotBasePage Implementation](../../../xot/docs/xotbasepage_implementation.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Filament Namespace Rules](./filament-namespace-rules.md)
 
 ---
 
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 2025-12-17
-=======
-**Ultimo aggiornamento**: 2025-12-17
->>>>>>> 6ed19256f (.)

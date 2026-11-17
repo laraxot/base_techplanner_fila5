@@ -1,3 +1,10 @@
+---
+title: "Bugfix: IconColumn Estende Direttamente Filament Column"
+qmd: "ui bugfix iconcolumn extends filament column md"
+type: note
+tags: [documentation]
+---
+
 # Bugfix: IconColumn Estende Direttamente Filament Column
 
 **Data Fix**: 11 Novembre 2025

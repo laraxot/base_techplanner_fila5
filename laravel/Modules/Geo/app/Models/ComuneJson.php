@@ -7,10 +7,6 @@ namespace Modules\Geo\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
-<<<<<<< HEAD
-=======
-use Webmozart\Assert\Assert;
->>>>>>> 6ed19256f (.)
 
 /**
  * Modello unico readonly per i comuni italiani (Facade pattern).
@@ -26,14 +22,14 @@ use Webmozart\Assert\Assert;
  * @see docs/geo-json-model.md Documentazione tecnica del modello base
  */
 /**
- * @mixin Builder
+ * @mixin Builder<*>
  */
 class ComuneJson extends GeoJsonModel
 {
     /**
      * Cache duration in seconds (1 week).
      */
-    protected const CACHE_TTL = 604800;
+    protected const int CACHE_TTL = 604800;
 
     /**
      * Get all comuni with their complete data.
@@ -140,9 +136,8 @@ class ComuneJson extends GeoJsonModel
     /**
      * Get all comuni by name (case insensitive partial match).
      *
-     * @param string $name  Nome parziale del comune da cercare
-     * @param int    $limit Numero massimo di risultati (0 = nessun limite)
-     *
+     * @param  string  $name  Nome parziale del comune da cercare
+     * @param  int  $limit  Numero massimo di risultati (0 = nessun limite)
      * @return Collection<int, array{
      *     nome: string,
      *     codice: string,
@@ -155,11 +150,7 @@ class ComuneJson extends GeoJsonModel
      */
     public static function searchByName(string $name, int $limit = 0): Collection
     {
-<<<<<<< HEAD
         $name = mb_strtolower((string) $name);
-=======
-        $name = mb_strtolower($name);
->>>>>>> 6ed19256f (.)
         $cacheKey = 'geo_search_'.md5($name).'_'.$limit;
 
         /** @var Collection<int, array{
@@ -173,12 +164,7 @@ class ComuneJson extends GeoJsonModel
          * }> $result */
         $result = Cache::remember($cacheKey, self::CACHE_TTL, static function () use ($name, $limit) {
             $results = static::all()
-<<<<<<< HEAD
                 ->filter(static fn (array $item): bool => str_contains(mb_strtolower(self::getComuneName($item)), $name))
-=======
-                /* @phpstan-ignore nullCoalesce.offset */
-                ->filter(static fn ($item) => str_contains(mb_strtolower($item['nome'] ?? ''), $name))
->>>>>>> 6ed19256f (.)
                 ->sortBy('nome');
 
             return $limit > 0 ? $results->take($limit)->values() : $results->values();
@@ -212,12 +198,7 @@ class ComuneJson extends GeoJsonModel
          *     popolazione: int
          * }> $filtered */
         $filtered = static::all()
-<<<<<<< HEAD
             ->filter(static fn (array $item): bool => \in_array($cap, self::getCapList($item), true))
-=======
-            /* @phpstan-ignore nullCoalesce.offset */
-            ->filter(static fn ($item) => \in_array($cap, $item['cap'] ?? [], true))
->>>>>>> 6ed19256f (.)
             ->sortBy('nome')
             ->values();
 
@@ -225,8 +206,7 @@ class ComuneJson extends GeoJsonModel
     }
 
     /**
-<<<<<<< HEAD
-     * @param array<string, mixed> $item
+     * @param  array<string, mixed>  $item
      */
     private static function getComuneName(array $item): string
     {
@@ -236,8 +216,7 @@ class ComuneJson extends GeoJsonModel
     }
 
     /**
-     * @param array<string, mixed> $item
-     *
+     * @param  array<string, mixed>  $item
      * @return array<int, string>
      */
     private static function getCapList(array $item): array
@@ -252,8 +231,6 @@ class ComuneJson extends GeoJsonModel
     }
 
     /**
-=======
->>>>>>> 6ed19256f (.)
      * Get all regions with their codes and names.
      *
      * @return Collection<string, string> [code => name]
@@ -326,8 +303,7 @@ class ComuneJson extends GeoJsonModel
     /**
      * Clear all cached data.
      *
-     * @param bool $verbose Se true, restituisce la lista delle chiavi di cache eliminate
-     *
+     * @param  bool  $verbose  Se true, restituisce la lista delle chiavi di cache eliminate
      * @return array<int, string>|null Lista delle chiavi di cache eliminate se $verbose è true
      */
     public static function clearCache(bool $verbose = false): ?array
@@ -342,8 +318,8 @@ class ComuneJson extends GeoJsonModel
         }
 
         // Chiavi specifiche per regione
-        static::allRegions()
-            ->each(static function ($_nome, $code) use (&$clearedKeys): void {
+        static::allRegions()->keys()
+            ->each(static function (string $code) use (&$clearedKeys): void {
                 $keys = ["geo_region_{$code}", "geo_region_{$code}_provinces"];
                 foreach ($keys as $key) {
                     Cache::forget($key);
@@ -352,8 +328,8 @@ class ComuneJson extends GeoJsonModel
             });
 
         // Chiavi specifiche per provincia
-        static::allProvinces()
-            ->each(static function ($_nome, $code) use (&$clearedKeys): void {
+        static::allProvinces()->keys()
+            ->each(static function (string $code) use (&$clearedKeys): void {
                 $key = "geo_province_{$code}";
                 Cache::forget($key);
                 $clearedKeys[] = $key;
@@ -369,7 +345,7 @@ class ComuneJson extends GeoJsonModel
 
         // Puliamo alcune chiavi di ricerca comuni per essere sicuri
         foreach ($searchPatterns as $pattern) {
-            for ($i = 0; $i < 10; ++$i) {
+            for ($i = 0; $i < 10; $i++) {
                 $testKey = $pattern.md5((string) $i);
                 Cache::forget($testKey);
             }
@@ -381,8 +357,7 @@ class ComuneJson extends GeoJsonModel
     /**
      * Verifica se il CAP esiste nel database.
      *
-     * @param string $cap CAP da verificare
-     *
+     * @param  string  $cap  CAP da verificare
      * @return bool True se il CAP esiste, false altrimenti
      */
     public static function isValidCap(string $cap): bool
@@ -398,8 +373,7 @@ class ComuneJson extends GeoJsonModel
     /**
      * Ottiene la gerarchia completa per un comune (regione, provincia, comune, cap).
      *
-     * @param string $comuneNome Nome esatto del comune
-     *
+     * @param  string  $comuneNome  Nome esatto del comune
      * @return array{
      *     regione: array{codice: string, nome: string}|null,
      *     provincia: array{codice: string, nome: string}|null,
@@ -440,21 +414,17 @@ class ComuneJson extends GeoJsonModel
             $comune = static::searchByName($comuneNome, 1)->first();
 
             if (! $comune) {
-<<<<<<< HEAD
                 return;
-=======
-                return null;
->>>>>>> 6ed19256f (.)
             }
 
             return [
-                'regione' => $comune['regione'] ?? null,
-                'provincia' => $comune['provincia'] ?? null,
+                'regione' => $comune['regione'],
+                'provincia' => $comune['provincia'],
                 'comune' => [
                     'nome' => $comune['nome'],
-                    'codice' => $comune['codice'] ?? null,
-                    'codiceCatastale' => $comune['codiceCatastale'] ?? null,
-                    'popolazione' => $comune['popolazione'] ?? null,
+                    'codice' => $comune['codice'],
+                    'codiceCatastale' => $comune['codiceCatastale'],
+                    'popolazione' => $comune['popolazione'],
                 ],
                 'cap' => $comune['cap'] ?? [],
             ];
@@ -466,8 +436,7 @@ class ComuneJson extends GeoJsonModel
     /**
      * Restituisce regole di validazione Laravel per form geografici.
      *
-     * @param bool $required Se true, tutti i campi sono obbligatori
-     *
+     * @param  bool  $required  Se true, tutti i campi sono obbligatori
      * @return array<string, array<int, mixed>> Regole di validazione
      */
     public static function getValidationRules(bool $required = true): array
@@ -478,14 +447,8 @@ class ComuneJson extends GeoJsonModel
             'regione_codice' => [
                 $requiredRule,
                 'string',
-<<<<<<< HEAD
                 static function (string $_attribute, mixed $value, \Closure $fail): void {
                     if (\is_string($value) && ! static::allRegions()->has($value)) {
-=======
-                static function ($_attribute, $value, $fail): void {
-                    if (\is_string($value) && ! static::allRegions()->has($value)) {
-                        /* @phpstan-ignore callable.nonCallable */
->>>>>>> 6ed19256f (.)
                         $fail('La regione selezionata non è valida.');
                     }
                 },
@@ -493,14 +456,8 @@ class ComuneJson extends GeoJsonModel
             'provincia_codice' => [
                 $requiredRule,
                 'string',
-<<<<<<< HEAD
                 static function (string $_attribute, mixed $value, \Closure $fail): void {
                     if (\is_string($value) && ! static::allProvinces()->has($value)) {
-=======
-                static function ($_attribute, $value, $fail): void {
-                    if (\is_string($value) && ! static::allProvinces()->has($value)) {
-                        /* @phpstan-ignore callable.nonCallable */
->>>>>>> 6ed19256f (.)
                         $fail('La provincia selezionata non è valida.');
                     }
                 },
@@ -508,14 +465,8 @@ class ComuneJson extends GeoJsonModel
             'comune_nome' => [
                 $requiredRule,
                 'string',
-<<<<<<< HEAD
                 static function (string $_attribute, mixed $value, \Closure $fail): void {
                     if (\is_string($value) && ! empty($value) && static::searchByName($value, 1)->isEmpty()) {
-=======
-                static function ($_attribute, $value, $fail): void {
-                    if (\is_string($value) && ! empty($value) && static::searchByName($value, 1)->isEmpty()) {
-                        /* @phpstan-ignore callable.nonCallable */
->>>>>>> 6ed19256f (.)
                         $fail('Il comune selezionato non è valido.');
                     }
                 },
@@ -523,14 +474,8 @@ class ComuneJson extends GeoJsonModel
             'cap' => [
                 $requiredRule,
                 'string',
-<<<<<<< HEAD
                 static function (string $_attribute, mixed $value, \Closure $fail): void {
                     if (\is_string($value) && ! empty($value) && ! static::isValidCap($value)) {
-=======
-                static function ($_attribute, $value, $fail): void {
-                    if (\is_string($value) && ! empty($value) && ! static::isValidCap($value)) {
-                        /* @phpstan-ignore callable.nonCallable */
->>>>>>> 6ed19256f (.)
                         $fail('Il CAP inserito non è valido.');
                     }
                 },

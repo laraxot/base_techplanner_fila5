@@ -7,7 +7,6 @@ return [
         'label' => 'Navigation Label',
         'group' => 'Geo',
     ],
-<<<<<<< HEAD
     'label' => 'O S M Map',
     'plural_label' => 'O S M Map (Plurale)',
     'fields' => [
@@ -41,6 +40,4 @@ return [
             'label' => 'Elimina O S M Map',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

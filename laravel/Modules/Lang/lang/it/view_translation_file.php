@@ -3,12 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'actions' => [
-        'edit' => [
-            'label' => 'edit',
-        ],
-    ],
-<<<<<<< HEAD
     'label' => 'View Translation File',
     'plural_label' => 'View Translation File (Plurale)',
     'navigation' => [
@@ -19,8 +13,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'View Translation File',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -42,6 +36,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -18,12 +18,9 @@
 
 **Related Documentation**:
 - [User Module Overview](../index.md)
-- [Team Management](./team_management.md)
-- [BaseUser Model](./baseuser.md)
-- [Database Structure](../database_structure.md)
+
 - [User Module Overview](../INDEX.md)
 - [Team Management](./TEAM_MANAGEMENT.md)
-- [BaseUser Model](./BaseUser.md)
+- [BaseUser Model](./baseuser.md)
 - [Database Structure](../DATABASE_STRUCTURE.md)
 - [Migration Guidelines](../../../../docs/collegamenti-documentazione.md)
-- [Migration Guidelines](../../../../../docs/collegamenti-documentazione.md)

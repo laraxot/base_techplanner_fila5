@@ -1,3 +1,10 @@
+---
+title: "Marketing Components Implementation - UI Module"
+qmd: "ui keting components implementation md"
+type: note
+tags: [documentation]
+---
+
 # Marketing Components Implementation - UI Module
 
 **Date**: February 6, 2026

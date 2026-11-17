@@ -4,19 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Tests\Unit\Actions;
 
-uses(TestCase::class);
-
 use Modules\Gdpr\Actions\Registration\HandleRegistrationErrorAction;
-use Modules\Gdpr\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use ReflectionMethod;
 
-test('HandleRegistrationErrorAction can be instantiated', function () {
-    $action = new HandleRegistrationErrorAction();
-    $action = new HandleRegistrationErrorAction();
-    expect($action)->toBeInstanceOf(HandleRegistrationErrorAction::class);
-});
+test('HandleRegistrationErrorAction exposes execute for registration failure handling', function (): void {
+    $action = new HandleRegistrationErrorAction;
+    $method = new ReflectionMethod($action, 'execute');
 
-test('HandleRegistrationErrorAction execute method exists', function () {
-    $action = new HandleRegistrationErrorAction();
-    $action = new HandleRegistrationErrorAction();
-    expect(method_exists($action, 'execute'))->toBeTrue();
+    Assert::assertSame(HandleRegistrationErrorAction::class, $action::class);
+    Assert::assertTrue($method->isPublic());
+    Assert::assertSame(2, $method->getNumberOfParameters());
 });

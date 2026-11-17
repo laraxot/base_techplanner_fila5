@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 // ----- bases ----
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -9,12 +8,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateMailTemplatesTable.
  */
-<<<<<<< HEAD
 return new class extends XotBaseMigration
 {
-=======
-return new class extends XotBaseMigration {
->>>>>>> 6ed19256f (.)
     /**
      * Run the migrations.
      */

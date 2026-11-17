@@ -1,3 +1,10 @@
+---
+title: "Task: Consolidare Documentazione - UI"
+qmd: "ui task consolidare documentazione md"
+type: note
+tags: [documentation]
+---
+
 # Task: Consolidare Documentazione - UI
 
 **Modulo**: UI

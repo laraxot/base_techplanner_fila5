@@ -37,12 +37,9 @@ return [
                 'help' => 'Роль пользователя в системе',
                 'validation' => 'required|string',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'action' => [
             'label' => 'Действие',
@@ -91,12 +88,9 @@ return [
                     'color' => 'gray',
                 ],
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Объект',
@@ -120,48 +114,36 @@ return [
                 'help' => 'Описательное имя объекта',
                 'validation' => 'nullable|string|max:255',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Описание',
             'placeholder' => 'Введите описание',
             'help' => 'Подробное описание активности',
             'validation' => 'nullable|string|max:1000',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'ip_address' => [
             'label' => 'IP-адрес',
             'placeholder' => 'Например, 192.168.1.1',
             'help' => 'IP-адрес, с которого было выполнено действие',
             'validation' => 'nullable|ip',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'user_agent' => [
             'label' => 'User Agent',
             'placeholder' => 'Браузер и операционная система',
             'help' => 'Информация о браузере и системе пользователя',
             'validation' => 'nullable|string|max:500',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Дата',
@@ -169,12 +151,9 @@ return [
             'help' => 'Дата и время создания активности',
             'validation' => 'required|date',
             'format' => 'd/m/Y H:i:s',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'properties' => [
             'label' => 'Свойства',
@@ -190,27 +169,20 @@ return [
                 'placeholder' => 'Текущее значение',
                 'help' => 'Значение после изменения',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'toggleColumns' => [
             'label' => 'Показать/Скрыть столбцы',
             'help' => 'Настроить видимость столбцов',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'reorderRecords' => [
             'label' => 'Переупорядочить записи',
             'help' => 'Переупорядочить записи в таблице',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -226,14 +198,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'resetFilters' => [
-            'label' => 'Сбросить фильтры',
-        ],
-        'applyFilters' => [
-            'label' => 'Применить фильтры',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -337,13 +301,13 @@ return [
                 'label' => 'Excel',
                 'mime_type' => 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
                 'extension' => 'xlsx',
-                'icon' => 'heroicon-o-table-cells',
+                'icon' => 'xot-files.xlsx',
             ],
             'pdf' => [
                 'label' => 'PDF',
                 'mime_type' => 'application/pdf',
                 'extension' => 'pdf',
-                'icon' => 'heroicon-o-document',
+                'icon' => 'xot-files.pdf',
             ],
         ],
         'columns' => [
@@ -387,33 +351,19 @@ return [
     'pagination' => [
         'per_page' => '25',
         'options' => [
-<<<<<<< HEAD
             0 => '10',
             1 => '25',
             2 => '50',
             3 => '100',
-=======
-            '0' => '10',
-            '1' => '25',
-            '2' => '50',
-            '3' => '100',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'cache' => [
         'ttl' => '300',
         'tags' => [
-<<<<<<< HEAD
             0 => 'activities',
             1 => 'monitoring',
         ],
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-            '0' => 'activities',
-            '1' => 'monitoring',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

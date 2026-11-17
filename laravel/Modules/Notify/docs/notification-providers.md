@@ -1,6 +1,18 @@
-# Guida Completa ai Provider di Notifiche 
+---
+title: "notification providers"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "notification providers"
+issues: []
+discussions: []
+status: draft
+---
 
-Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di Quaeris.
+# Guida Completa ai Provider di Notifiche
+
+Questo documento fornisce una panoramica completa dell'architettura standardizzata per tutti i provider di notifiche supportati nel modulo Notify di <nome progetto>.
 
 ## Principi Architetturali per Tutti i Provider
 
@@ -58,9 +70,9 @@ use Spatie\QueueableAction\QueueableAction;
 final class Send{Provider}{Type}Action implements {Type}ProviderActionInterface
 {
     use QueueableAction;
-    
+
     // Costruttore con configurazione
-    
+
     // Metodo execute standardizzato
     public function execute({Type}Data $data): array
     {
@@ -75,7 +87,7 @@ final class Send{Provider}{Type}Action implements {Type}ProviderActionInterface
 // config/{type}.php
 return [
     'default' => env('{TYPE}_PROVIDER', 'default_provider'),
-    
+
     'providers' => [
         'provider1' => [
             // Configurazione specifica
@@ -84,7 +96,7 @@ return [
             // Configurazione specifica
         ],
     ],
-    
+
     // Parametri globali
     'from' => env('{TYPE}_FROM'),
     'debug' => (bool) env('{TYPE}_DEBUG', false),

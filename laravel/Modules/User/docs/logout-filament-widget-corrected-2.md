@@ -1,17 +1,37 @@
+---
+title: "Implementazione Corretta del Logout con Widget Filament"
+type: concept
+tags: [logout, filament, widget, corrected]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-filament-widget-corrected-2 implementazione corretta del logout con widget filament"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione Corretta del Logout con Widget Filament
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Errore Logout](logout_blade_error_analysis.md)
-- [Struttura Widget](widgets_structure.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation-2.md)
+- [Analisi Errore Logout](logout-blade-error-analysis-3.md)
+- [Struttura Widget](widgets-structure-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Introduzione
 
-Questo documento descrive l'implementazione corretta del logout utilizzando un widget Filament, rispettando le convenzioni di Quaeris e la struttura di `XotBaseWidget`. L'approccio con widget Filament è particolarmente utile quando si desidera mantenere una pagina di conferma per il logout.
+Questo documento descrive l'implementazione corretta del logout utilizzando un widget Filament, rispettando le convenzioni di <nome progetto> e la struttura di `XotBaseWidget`. L'approccio con widget Filament è particolarmente utile quando si desidera mantenere una pagina di conferma per il logout.
 
 ## Errore Comune da Evitare
 
@@ -87,7 +107,7 @@ class LogoutWidget extends XotBaseWidget
 
             // Ottieni l'utente prima del logout per il logging
             $user = Auth::user();
-            
+
             // Evento pre-logout
             Event::dispatch('auth.logout.attempting', [$user]);
 
@@ -160,7 +180,7 @@ class LogoutWidget extends XotBaseWidget
                 {{ $this->form }}
 
                 <div class="mt-6 flex flex-col gap-3">
-                    <x-filament::button 
+                    <x-filament::button
                         type="submit"
                         color="danger"
                         size="lg"
@@ -169,8 +189,8 @@ class LogoutWidget extends XotBaseWidget
                         {{ __('Conferma Logout') }}
                     </x-filament::button>
 
-                    <x-filament::button 
-                        tag="a" 
+                    <x-filament::button
+                        tag="a"
                         :href="'/' . app()->getLocale()"
                         color="gray"
                         size="lg"
@@ -230,7 +250,7 @@ name('logout');
    - Implementare il metodo astratto `getFormSchema()` invece di tentare di sovrascrivere `form()`
    - Utilizzare correttamente i componenti Filament
 
-2. **Convenzioni di Quaeris per i Widget**:
+2. **Convenzioni di <nome progetto> per i Widget**:
    - Namespace corretto: `Modules\User\Filament\Widgets`
    - Path della vista: `filament.widgets.auth.logout` (senza namespace del modulo per l'utilizzo diretto nelle Blade)
    - Due copie della vista: una con namespace del modulo e una senza
@@ -249,8 +269,8 @@ name('logout');
 2. **Coerenza UI**: Utilizza i componenti UI nativi di Filament, garantendo coerenza visiva.
 3. **Manutenibilità**: Separa chiaramente la logica dalla presentazione.
 4. **Estensibilità**: Facilmente estensibile per aggiungere funzionalità aggiuntive.
-5. **Conformità alle convenzioni**: Segue le convenzioni di Quaeris per i widget Filament.
+5. **Conformità alle convenzioni**: Segue le convenzioni di <nome progetto> per i widget Filament.
 
 ## Alternativa: Logout Immediato
 
-Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout_blade_implementation.md), che esegue il logout immediatamente senza richiedere conferma.
+Se non è necessaria una conferma per il logout, è preferibile utilizzare l'approccio "Folio con PHP puro" come descritto in [LOGOUT_BLADE_IMPLEMENTATION.md](logout-blade-implementation-2.md), che esegue il logout immediatamente senza richiedere conferma.

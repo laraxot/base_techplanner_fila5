@@ -4,117 +4,96 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'label' => 'Contatti',
-        'group' => 'Gestione Contenuti',
+        'label' => 'Contacts',
+        'group' => 'Content Management',
         'icon' => 'heroicon-o-phone',
         'color' => 'primary',
         'sort' => '10',
     ],
     'model' => [
-        'label' => 'Contatto',
-        'plural' => 'Contatti',
-        'description' => 'Gestione informazioni di contatto dello studio',
+        'label' => 'Contact',
+        'plural' => 'Contacts',
+        'description' => 'Manage the studio contact information',
     ],
     'fields' => [
         'title' => [
-            'label' => 'Titolo Contatto',
-            'placeholder' => 'Inserisci il titolo (es. Studio Dentistico)',
-            'help' => 'Nome o titolo principale per identificare il contatto',
-<<<<<<< HEAD
+            'label' => 'Contact Title',
+            'placeholder' => 'Enter the title (e.g. Dental Practice)',
+            'help' => 'Main name or title to identify the contact',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
-            'label' => 'Descrizione',
-            'placeholder' => 'Descrivi brevemente l\'attività dello studio',
-            'help' => 'Breve descrizione delle attività e servizi offerti',
-<<<<<<< HEAD
+            'label' => 'Description',
+            'placeholder' => 'Briefly describe the studio\'s business',
+            'help' => 'Short description of the activities and services offered',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'email' => [
-            'label' => 'Email di Contatto',
-            'placeholder' => 'inserisci@email.it',
-            'help' => 'Indirizzo email principale per le comunicazioni',
-<<<<<<< HEAD
+            'label' => 'Contact Email',
+            'placeholder' => 'name@example.com',
+            'help' => 'Main email address for communications',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'phone' => [
-            'label' => 'Numero di Telefono',
+            'label' => 'Phone Number',
             'placeholder' => '+39 06 1234567',
-            'help' => 'Numero di telefono principale dello studio',
-<<<<<<< HEAD
+            'help' => 'Studio main phone number',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'address' => [
-            'label' => 'Indirizzo Completo',
-            'placeholder' => 'Via Roma, 123 - 00100 Roma',
-            'help' => 'Indirizzo fisico completo dello studio',
-<<<<<<< HEAD
+            'label' => 'Full Address',
+            'placeholder' => '123 Main Street - 10001 New York',
+            'help' => 'Full physical address of the studio',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'map_url' => [
             'label' => 'Link Mappa',
             'placeholder' => 'https://maps.google.com/...',
-            'help' => 'URL per aprire la posizione su Google Maps o servizi simili',
-<<<<<<< HEAD
+            'help' => 'URL to open the location on Google Maps or similar services',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'create' => [
-            'label' => 'Nuovo Contatto',
-            'modal_heading' => 'Aggiungi nuovo contatto',
-            'modal_description' => 'Inserisci le informazioni di contatto',
-            'success' => 'Contatto creato con successo',
-            'error' => 'Errore durante la creazione del contatto',
+            'label' => 'New Contact',
+            'modal_heading' => 'Add new contact',
+            'modal_description' => 'Enter the contact information',
+            'success' => 'Contact created successfully',
+            'error' => 'Error while creating the contact',
         ],
         'edit' => [
-            'label' => 'Modifica',
-            'modal_heading' => 'Modifica contatto',
-            'modal_description' => 'Aggiorna le informazioni di contatto',
-            'success' => 'Contatto aggiornato con successo',
-            'error' => 'Errore durante l\'aggiornamento',
+            'label' => 'Edit',
+            'modal_heading' => 'Edit contact',
+            'modal_description' => 'Update the contact information',
+            'success' => 'Contact updated successfully',
+            'error' => 'Error while updating',
         ],
         'delete' => [
-            'label' => 'Elimina',
-            'modal_heading' => 'Elimina contatto',
-            'modal_description' => 'Sei sicuro di voler eliminare questo contatto?',
-            'success' => 'Contatto eliminato con successo',
-            'error' => 'Errore durante l\'eliminazione',
-            'confirmation' => 'Questa azione è irreversibile',
+            'label' => 'Delete',
+            'modal_heading' => 'Delete contact',
+            'modal_description' => 'Are you sure you want to delete this contact?',
+            'success' => 'Contact deleted successfully',
+            'error' => 'Error while deleting',
+            'confirmation' => 'This action cannot be undone',
         ],
     ],
     'messages' => [
-        'empty_state' => 'Nessun contatto configurato',
-        'loading' => 'Caricamento contatti in corso...',
-        'saved' => 'Modifiche salvate correttamente',
+        'empty_state' => 'No contacts configured',
+        'loading' => 'Loading contacts...',
+        'saved' => 'Changes saved successfully',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

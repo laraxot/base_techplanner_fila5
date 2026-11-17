@@ -4,26 +4,24 @@ declare(strict_types=1);
 
 namespace Modules\Cms\Tests\Feature\Auth;
 
-use Modules\Xot\Tests\TestCase;
-
-<<<<<<< HEAD
-=======
+use function Pest\Laravel\actingAs;
 use function Pest\Laravel\get;
 
-uses(TestCase::class);
-
-// NOTE: Helper functions moved to Modules\Xot\Tests\TestCase for DRY pattern
+// Helper (createTestUser, generateUniqueEmail, getUserClass) su Modules\Cms\Tests\TestCase, legato da tests/Pest.php.
 // Use $this->createTestUser()
 
-describe('Register Page', function () {
-    test('register page renders for guest', function () {
+describe('Register Page', function (): void {
+    test('register page renders for guest', function (): void {
         $locale = app()->getLocale();
         $response = get('/'.$locale.'/auth/register');
-        $this->assertSame(200, $response->status());
+        $response->assertStatus(200);
     });
 
-    test('authenticated user is redirected away from register page', function () {
-        $this->assertTrue(true);
->>>>>>> 6ed19256f (.)
+    test('authenticated user is redirected away from register page', function (): void {
+        $user = $this->createTestUser();
+        actingAs($user);
+        $locale = app()->getLocale();
+        $response = get('/'.$locale.'/auth/register');
+        $response->assertRedirect('/');
     });
 });

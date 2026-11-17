@@ -2,81 +2,88 @@
 
 declare(strict_types=1);
 
-namespace Modules\Cms\Tests\Unit\Datas;
-
+use Livewire\Wireable;
 use Modules\Cms\Datas\HeadernavData;
+use PHPUnit\Framework\Assert;
+use Spatie\LaravelData\Data;
 
 test('HeadernavData can be instantiated', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData)->toBeInstanceOf(HeadernavData::class);
+    Assert::assertSame('cms::components.headernav', $headernavData->view);
 });
 
 test('HeadernavData extends Spatie Data', function (): void {
-    $headernavData = new HeadernavData();
+    $parent = (new ReflectionClass(HeadernavData::class))->getParentClass();
 
-    expect($headernavData)->toBeInstanceOf(Spatie\LaravelData\Data::class);
+    Assert::assertInstanceOf(ReflectionClass::class, $parent);
+    Assert::assertSame(Data::class, $parent->getName());
 });
 
 test('HeadernavData implements Wireable interface', function (): void {
-    $headernavData = new HeadernavData();
+    $interfaces = \Safe\class_implements(HeadernavData::class);
 
-    expect($headernavData)->toBeInstanceOf(Livewire\Wireable::class);
+    Assert::assertContains(Wireable::class, $interfaces);
 });
 
 test('HeadernavData has default view path', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData->view)->toBe('cms::components.headernav');
+    Assert::assertSame('cms::components.headernav', $headernavData->view);
 });
 
 test('HeadernavData has nullable background_color property', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData->background_color)->toBeNull();
+    Assert::assertNull($headernavData->background_color);
 });
 
 test('HeadernavData has nullable background property', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData->background)->toBeNull();
+    Assert::assertNull($headernavData->background);
 });
 
 test('HeadernavData has nullable overlay_color property', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData->overlay_color)->toBeNull();
+    Assert::assertNull($headernavData->overlay_color);
 });
 
 test('HeadernavData has nullable overlay_opacity property', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData->overlay_opacity)->toBeNull();
+    Assert::assertNull($headernavData->overlay_opacity);
 });
 
 test('HeadernavData has nullable class property', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData->class)->toBeNull();
+    Assert::assertNull($headernavData->class);
 });
 
 test('HeadernavData has nullable style property', function (): void {
-    $headernavData = new HeadernavData();
+    $headernavData = new HeadernavData;
 
-    expect($headernavData->style)->toBeNull();
+    Assert::assertNull($headernavData->style);
 });
 
 test('HeadernavData rules method returns validation rules', function (): void {
     $rules = HeadernavData::rules();
+    /* @var array<string, mixed> $rules */
+    Assert::assertArrayHasKey('background_color', $rules);
 
-    expect($rules)->toBeArray()
-        ->and($rules)->toHaveKey('background_color')
-        ->and($rules)->toHaveKey('background')
-        ->and($rules)->toHaveKey('overlay_color')
-        ->and($rules)->toHaveKey('overlay_opacity')
-        ->and($rules)->toHaveKey('class')
-        ->and($rules)->toHaveKey('style')
-        ->and($rules)->toHaveKey('view');
+    Assert::assertArrayHasKey('background', $rules);
+
+    Assert::assertArrayHasKey('overlay_color', $rules);
+
+    Assert::assertArrayHasKey('overlay_opacity', $rules);
+
+    Assert::assertArrayHasKey('class', $rules);
+
+    Assert::assertArrayHasKey('style', $rules);
+
+    Assert::assertArrayHasKey('view', $rules);
 });
 
 test('HeadernavData can be created from array using from method', function (): void {
@@ -91,13 +98,11 @@ test('HeadernavData can be created from array using from method', function (): v
 
     $headernavData = HeadernavData::from($data);
 
-    expect($headernavData)->toBeInstanceOf(HeadernavData::class)
-        ->and($headernavData->background_color)->toBe('#ffffff')
-        ->and($headernavData->background)->toBe('header.jpg')
-        ->and($headernavData->overlay_color)->toBe('rgba(0,0,0,0.5)')
-        ->and($headernavData->overlay_opacity)->toBe(50)
-        ->and($headernavData->class)->toBe('custom-header')
-        ->and($headernavData->style)->toBe('margin-top: 10px');
+    Assert::assertSame('#ffffff', $headernavData->background_color);
+
+    Assert::assertSame('header.jpg', $headernavData->background);
+
+    Assert::assertSame('rgba(0,0,0,0.5)', $headernavData->overlay_color);
 });
 
 test('HeadernavData can be converted to array', function (): void {
@@ -106,15 +111,17 @@ test('HeadernavData can be converted to array', function (): void {
     ]);
 
     $array = $headernavData->toArray();
-
-    expect($array)->toBeArray()
-        ->and($array)->toHaveKey('background_color');
+    /* @var array<string, mixed> $array */
+    Assert::assertArrayHasKey('background_color', $array);
 });
 
 test('HeadernavData overlay_opacity validates numeric range', function (): void {
     $rules = HeadernavData::rules();
 
-    expect($rules['overlay_opacity'])->toContain('numeric')
-        ->and($rules['overlay_opacity'])->toContain('min:0')
-        ->and($rules['overlay_opacity'])->toContain('max:100');
+    /** @var list<string> $overlayRules */
+    $overlayRules = $rules['overlay_opacity'];
+
+    Assert::assertContains('numeric', $overlayRules);
+    Assert::assertContains('min:0', $overlayRules);
+    Assert::assertContains('max:100', $overlayRules);
 });

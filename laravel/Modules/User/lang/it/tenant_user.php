@@ -14,44 +14,39 @@ return [
         'sort' => 87,
         'icon' => 'heroicon-o-building-office',
     ],
-<<<<<<< HEAD
     'label' => 'Tenant User',
     'plural_label' => 'Tenant User (Plurale)',
     'fields' => [
-        'id' => [
-            'label' => 'Identificativo',
-            'tooltip' => 'Identificativo univoco del record',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'created_at' => [
-            'label' => 'Data Creazione',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'updated_at' => [
-            'label' => 'Ultima Modifica',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-    ],
-    'actions' => [
-        'create' => [
-            'label' => 'Crea Tenant User',
-        ],
         'edit' => [
             'label' => 'Modifica Tenant User',
         ],
         'delete' => [
             'label' => 'Elimina Tenant User',
+            'icon' => 'delete',
+        ],
+        'resetColumnManager' => [
+            'icon' => 'resetColumnManager',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'applyFilters' => [
+            'icon' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'icon' => 'openFilters',
+        ],
+        'resetFilters' => [
+            'icon' => 'resetFilters',
+        ],
+        'applyTableColumnManager' => [
+            'icon' => 'applyTableColumnManager',
+        ],
+        'openColumnManager' => [
+            'icon' => 'openColumnManager',
         ],
     ],
-=======
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
->>>>>>> 6ed19256f (.)
 ];

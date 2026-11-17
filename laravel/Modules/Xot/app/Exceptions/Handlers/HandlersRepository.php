@@ -4,14 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Exceptions\Handlers;
 
-<<<<<<< HEAD
-=======
-use Closure;
-use ReflectionClass;
-use ReflectionFunction;
-use Throwable;
-
->>>>>>> 6ed19256f (.)
 /**
  * The handlers repository.
  */
@@ -19,16 +11,22 @@ class HandlersRepository
 {
     /**
      * The custom handlers reporting exceptions.
+     *
+     * @var array<int, callable>
      */
     protected array $reporters = [];
 
     /**
      * The custom handlers rendering exceptions.
+     *
+     * @var array<int, callable>
      */
     protected array $renderers = [];
 
     /**
      * The custom handlers rendering exceptions in console.
+     *
+     * @var array<int, callable>
      */
     protected array $consoleRenderers = [];
 
@@ -58,77 +56,67 @@ class HandlersRepository
 
     /**
      * Retrieve all reporters handling the given exception.
+     *
+     * @return array<int, callable>
      */
-<<<<<<< HEAD
     public function getReportersByException(\Throwable $e): array
-=======
-    public function getReportersByException(Throwable $e): array
->>>>>>> 6ed19256f (.)
     {
         return array_filter(
             $this->reporters,
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
         );
     }
 
     /**
      * Retrieve all renderers handling the given exception.
+     *
+     * @return array<int, callable>
      */
-<<<<<<< HEAD
     public function getRenderersByException(\Throwable $e): array
-=======
-    public function getRenderersByException(Throwable $e): array
->>>>>>> 6ed19256f (.)
     {
         return array_filter(
             $this->renderers,
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
         );
     }
 
     /**
      * Retrieve all console renderers handling the given exception.
+     *
+     * @return array<int, callable>
      */
-<<<<<<< HEAD
     public function getConsoleRenderersByException(\Throwable $e): array
-=======
-    public function getConsoleRenderersByException(Throwable $e): array
->>>>>>> 6ed19256f (.)
     {
         return array_filter(
             $this->consoleRenderers,
-            fn (mixed $handler) => is_callable($handler) && $this->handlesException($handler, $e),
+            fn (callable $handler): bool => $this->handlesException($handler, $e),
         );
     }
 
     /**
      * Determine whether the given handler can handle the provided exception.
      */
-<<<<<<< HEAD
     protected function handlesException(callable $handler, \Throwable $e): bool
     {
         if ($handler instanceof \Closure) {
             $reflection = new \ReflectionFunction($handler);
         } else {
             $reflection = new \ReflectionFunction(\Closure::fromCallable($handler));
-=======
-    protected function handlesException(callable $handler, Throwable $e): bool
-    {
-        if ($handler instanceof Closure) {
-            $reflection = new ReflectionFunction($handler);
-        } else {
-            $reflection = new ReflectionFunction(Closure::fromCallable($handler));
->>>>>>> 6ed19256f (.)
         }
 
         if (! ($params = $reflection->getParameters())) {
             return false;
         }
 
-<<<<<<< HEAD
-        return $params[0]->getClass() instanceof \ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
-=======
-        return $params[0]->getClass() instanceof ReflectionClass ? $params[0]->getClass()->isInstance($e) : true;
->>>>>>> 6ed19256f (.)
+        $type = $params[0]->getType();
+
+        if (! $type instanceof \ReflectionNamedType || $type->isBuiltin()) {
+            return true;
+        }
+
+        $className = $type->getName();
+
+        return (class_exists($className) || interface_exists($className))
+            && (new \ReflectionClass($className))->isInstance($e);
     }
 }

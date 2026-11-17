@@ -5,54 +5,26 @@ declare(strict_types=1);
 return [
     'fields' => [
         'mailable' => [
-            'label' => 'mailable',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'subject' => [
-            'label' => 'subject',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'html_template' => [
-            'label' => 'html_template',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'text_template' => [
-            'label' => 'text_template',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'subject' => [
-            'label' => 'subject',
-        ],
-        'html_template' => [
-            'label' => 'html_template',
-        ],
-        'text_template' => [
-            'label' => 'text_template',
->>>>>>> 6ed19256f (.)
         ],
     ],
-    'actions' => [
-        'create' => [
-            'label' => 'create',
-        ],
-        'createAnother' => [
-            'label' => 'createAnother',
-        ],
-        'cancel' => [
-            'label' => 'cancel',
-        ],
-    ],
-<<<<<<< HEAD
     'label' => 'Create Mail Template',
     'plural_label' => 'Create Mail Template (Plurale)',
     'navigation' => [
@@ -66,6 +38,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

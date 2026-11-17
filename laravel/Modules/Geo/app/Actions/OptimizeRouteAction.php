@@ -5,31 +5,25 @@ declare(strict_types=1);
 namespace Modules\Geo\Actions;
 
 use Illuminate\Support\Collection;
-<<<<<<< HEAD
 use Modules\Geo\Contracts\CalculateDistanceActionContract;
-=======
->>>>>>> 6ed19256f (.)
 use Modules\Geo\Datas\LocationData;
+use Spatie\QueueableAction\QueueableAction;
 
 /**
  * Action per ottimizzare l'ordine di un percorso minimizzando la distanza totale.
  */
-readonly class OptimizeRouteAction
+class OptimizeRouteAction
 {
+    use QueueableAction;
+
     public function __construct(
-<<<<<<< HEAD
-        private CalculateDistanceActionContract $calculateDistance,
-=======
-        private CalculateDistanceAction $calculateDistance,
->>>>>>> 6ed19256f (.)
-    ) {
-    }
+        private readonly CalculateDistanceActionContract $calculateDistance,
+    ) {}
 
     /**
      * Ottimizza l'ordine dei punti minimizzando la distanza totale.
      *
-     * @param Collection<int, LocationData> $locations
-     *
+     * @param  Collection<int, LocationData>  $locations
      * @return Collection<int, LocationData>
      */
     public function execute(Collection $locations): Collection
@@ -48,7 +42,7 @@ readonly class OptimizeRouteAction
             $currentLocation = $optimizedLocations->last();
             $nearestLocation = $this->findNearestLocation($currentLocation, $remainingLocations);
 
-            if (null === $nearestLocation) {
+            if ($nearestLocation === null) {
                 break;
             }
 
@@ -64,7 +58,7 @@ readonly class OptimizeRouteAction
     /**
      * Trova il punto più vicino a quello corrente.
      *
-     * @param Collection<int, LocationData> $locations
+     * @param  Collection<int, LocationData>  $locations
      */
     private function findNearestLocation(LocationData $currentLocation, Collection $locations): ?LocationData
     {

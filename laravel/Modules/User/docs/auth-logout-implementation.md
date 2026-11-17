@@ -1,4 +1,25 @@
+---
+title: "Implementazione del Logout"
+type: concept
+tags: [auth, logout, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth-logout-implementation implementazione del logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione del Logout
+# Implementazione del Logout 
 
 ## Indice
 - [Panoramica](#panoramica)
@@ -63,11 +84,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
-<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
-=======
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
->>>>>>> 6ed19256f (.)
 
 ## Componenti Filament
 
@@ -95,11 +112,7 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 
 ## Chiavi di Traduzione
 
-<<<<<<< HEAD
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
-=======
-Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
->>>>>>> 6ed19256f (.)
 
 ```php
 'logout' => [
@@ -210,6 +223,11 @@ mount(function() {
         // Evento post-logout
         Event::dispatch('auth.logout.successful');
     }
+        
+        // Evento post-logout
+        Event::dispatch('auth.logout.successful');
+    }
+    
 
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -298,11 +316,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
-<<<<<<< HEAD
 Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
-=======
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di SaluteOra per la gestione della localizzazione.
->>>>>>> 6ed19256f (.)
 
 ## Componenti Filament
 
@@ -330,11 +344,7 @@ Il template Blade per il logout deve utilizzare i componenti Filament per garant
 
 ## Chiavi di Traduzione
 
-<<<<<<< HEAD
 Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di <nome progetto>:
-=======
-Le chiavi di traduzione per il logout devono seguire la struttura gerarchica definita nelle best practices di SaluteOra:
->>>>>>> 6ed19256f (.)
 
 ```php
 'logout' => [

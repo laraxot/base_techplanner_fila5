@@ -23,21 +23,15 @@ return [
             'label' => 'Destinatario',
             'placeholder' => 'Inserisci il numero',
             'helper_text' => 'Numero di telefono del destinatario',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
             'placeholder' => 'Scrivi il messaggio',
             'helper_text' => 'Contenuto del messaggio WhatsApp',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -53,9 +47,12 @@ return [
         'error' => 'Si è verificato un errore durante l\'invio del messaggio WhatsApp',
         'confirmation' => 'Sei sicuro di voler inviare questo messaggio WhatsApp?',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'sections' => [
+        'page' => [
+            'title' => 'WhatsApp Sending Test',
+            'description' => 'Use this form to test sending WhatsApp messages through different providers.',
+        ],
+    ],
 ];

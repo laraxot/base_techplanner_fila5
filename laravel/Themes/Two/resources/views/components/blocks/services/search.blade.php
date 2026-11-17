@@ -15,7 +15,7 @@
 --}}
 
 @props([
-    'placeholder' => 'Cerca servizi...',
+    'placeholder' => __('pub_theme::services.grid_search.field.placeholder'),
     'categories' => [],
     'filters' => [],
     'showAdvanced' => false,
@@ -58,7 +58,7 @@
                     type="button" 
                     id="clear-search-{{ $searchId }}"
                     class="absolute right-12 top-1/2 transform -translate-y-1/2 text-gray-400 hover:text-gray-600 transition-colors hidden focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md"
-                    aria-label="Cancella testo di ricerca"
+                    aria-label="{{ __('pub_theme::services.search_box.clear.label') }}"
                 >
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -68,23 +68,23 @@
                 {{-- Search Button --}}
                 <button 
                     type="submit"
-                    aria-label="Esegui ricerca servizi"
+                    aria-label="{{ __('pub_theme::services.search_box.submit_description.label') }}"
                     class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary-600 text-white px-4 py-2 rounded-md hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]"
                 >
-                    Cerca
+                    {{ __('pub_theme::common.actions.search.label') }}
                 </button>
             </div>
             
             {{-- Help Text --}}
             <div id="search-help-{{ $searchId }}" class="sr-only">
-                Inserisci il nome del servizio o parole chiave per trovare quello che cerchi
+                {{ __('pub_theme::services.search_box.hint.help') }}
             </div>
         </div>
         
         {{-- Quick Filters --}}
         @if($categories)
         <div class="quick-filters mt-4">
-            <p class="text-sm font-medium text-gray-700 mb-2">Categorie popolari:</p>
+            <p class="text-sm font-medium text-gray-700 mb-2">{{ __('pub_theme::services.search_box.popular.title') }}</p>
             <div class="flex flex-wrap gap-2">
                 @foreach($categories as $category)
                 <button 
@@ -106,12 +106,12 @@
                     class="mt-4 text-primary-600 hover:text-primary-700 text-sm font-medium flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-2 py-1"
                     aria-expanded="{{ $filtersOpen ? 'true' : 'false' }}"
                     aria-controls="advanced-filters-{{ $searchId }}"
-                    aria-label="Mostra/Nascondi filtri avanzati di ricerca"
+                    aria-label="{{ __('pub_theme::services.search_box.toggle.label') }}"
                 >
                         <svg class="w-4 h-4 transform transition-transform {{ $filtersOpen ? 'rotate-180' : '' }}" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
                         </svg>
-            Filtri avanzati
+            {{ __('pub_theme::services.advanced.title.title') }}
         </button>
     </div>
     
@@ -120,13 +120,13 @@
         id="advanced-filters-{{ $searchId }}" 
         class="advanced-filters mt-4 bg-gray-50 rounded-lg p-4 border border-gray-200 {{ $filtersOpen ? '' : 'hidden' }}"
     >
-        <h3 class="text-lg font-semibold text-gray-900 mb-4">Filtri avanzati</h3>
+        <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('pub_theme::services.advanced.title.title') }}</h3>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {{-- Category Filter --}}
             <div class="filter-group">
                 <label for="category-filter-{{ $searchId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                    Categoria
+                    {{ __('pub_theme::common.filters.category.label') }}
                 </label>
                 <select 
                     id="category-filter-{{ $searchId }}"
@@ -135,7 +135,7 @@
                     aria-describedby="category-filter-help-{{ $searchId }}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
-                    <option value="">Tutte le categorie</option>
+                    <option value="">{{ __('pub_theme::common.filters.all_categories.label') }}</option>
                     @foreach($categories as $category)
                     <option value="{{ $category['id'] ?? $category }}">
                         {{ $category['name'] ?? $category }}
@@ -147,7 +147,7 @@
             {{-- Status Filter --}}
             <div class="filter-group">
                 <label for="status-filter-{{ $searchId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                    Stato del servizio
+                    {{ __('pub_theme::services.advanced_status.field.label') }}
                 </label>
                 <select 
                     id="status-filter-{{ $searchId }}"
@@ -156,10 +156,10 @@
                     aria-describedby="status-filter-help-{{ $searchId }}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
-                    <option value="">Tutti gli stati</option>
-                    <option value="active">Attivo</option>
-                    <option value="maintenance">In manutenzione</option>
-                    <option value="coming-soon">Prossimamente</option>
+                    <option value="">{{ __('pub_theme::services.advanced_status.all.label') }}</option>
+                    <option value="active">{{ __('pub_theme::services.advanced_status.active.label') }}</option>
+                    <option value="maintenance">{{ __('pub_theme::services.advanced_status.maintenance.label') }}</option>
+                    <option value="coming-soon">{{ __('pub_theme::services.advanced_status.coming_soon.label') }}</option>
                 </select>
             </div>
             
@@ -167,7 +167,7 @@
             <div class="filter-group">
                 <fieldset>
                     <legend class="block text-sm font-medium text-gray-700 mb-2">
-                        Autenticazione richiesta
+                        {{ __('pub_theme::services.auth.required.label') }}
                     </legend>
                     <div class="space-y-2" role="radiogroup" aria-labelledby="auth-legend-{{ $searchId }}">
                         <label class="flex items-center">
@@ -177,7 +177,7 @@
                                    value="all" 
                                    checked 
                                    class="mr-2 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]">
-                            <span class="text-sm">Tutti</span>
+                            <span class="text-sm">{{ __('pub_theme::common.filters.all.label') }}</span>
                         </label>
                         <label class="flex items-center">
                             <input type="radio" 
@@ -185,7 +185,7 @@
                                    name="auth" 
                                    value="required" 
                                    class="mr-2 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]">
-                            <span class="text-sm">Con autenticazione</span>
+                            <span class="text-sm">{{ __('pub_theme::services.auth.with.label') }}</span>
                         </label>
                         <label class="flex items-center">
                             <input type="radio" 
@@ -193,7 +193,7 @@
                                    name="auth" 
                                    value="optional" 
                                    class="mr-2 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]">
-                            <span class="text-sm">Senza autenticazione</span>
+                            <span class="text-sm">{{ __('pub_theme::services.auth.without.label') }}</span>
                         </label>
                     </div>
                 </fieldset>
@@ -202,7 +202,7 @@
             {{-- Availability Filter --}}
             <div class="filter-group">
                 <label for="availability-filter-{{ $searchId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                    Disponibilità
+                    {{ __('pub_theme::services.advanced_availability.field.label') }}
                 </label>
                 <select 
                     id="availability-filter-{{ $searchId }}"
@@ -211,17 +211,17 @@
                     aria-describedby="availability-filter-help-{{ $searchId }}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
-                    <option value="">Tutte le disponibilità</option>
+                    <option value="">{{ __('pub_theme::services.advanced_availability.all.label') }}</option>
                     <option value="24-7">24/7</option>
-                    <option value="business-hours">Orari lavorativi</option>
-                    <option value="appointment">Su appuntamento</option>
+                    <option value="business-hours">{{ __('pub_theme::services.advanced_availability.business_hours.label') }}</option>
+                    <option value="appointment">{{ __('pub_theme::services.advanced_availability.appointment.label') }}</option>
                 </select>
             </div>
             
             {{-- Target Audience Filter --}}
             <div class="filter-group">
                 <label for="audience-filter-{{ $searchId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                    Destinatari
+                    {{ __('pub_theme::services.advanced_audience.field.label') }}
                 </label>
                 <select 
                     id="audience-filter-{{ $searchId }}"
@@ -230,18 +230,18 @@
                     aria-describedby="audience-filter-help-{{ $searchId }}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
-                    <option value="">Tutti</option>
-                    <option value="citizens">Cittadini</option>
-                    <option value="business">Imprese</option>
-                    <option value="associations">Associazioni</option>
-                    <option value="professionals">Professionisti</option>
+                    <option value="">{{ __('pub_theme::common.filters.all.label') }}</option>
+                    <option value="citizens">{{ __('pub_theme::services.advanced_audience.citizens.label') }}</option>
+                    <option value="business">{{ __('pub_theme::services.advanced_audience.businesses.label') }}</option>
+                    <option value="associations">{{ __('pub_theme::services.advanced_audience.associations.label') }}</option>
+                    <option value="professionals">{{ __('pub_theme::services.advanced_audience.professionals.label') }}</option>
                 </select>
             </div>
             
             {{-- Priority Filter --}}
             <div class="filter-group">
                 <label for="priority-filter-{{ $searchId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                    Priorità
+                    {{ __('pub_theme::services.advanced_priority.field.label') }}
                 </label>
                 <select 
                     id="priority-filter-{{ $searchId }}"
@@ -250,10 +250,10 @@
                     aria-describedby="priority-filter-help-{{ $searchId }}"
                     class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#1E5A96] focus:border-transparent"
                 >
-                    <option value="">Tutte le priorità</option>
-                    <option value="high">Alta</option>
-                    <option value="medium">Media</option>
-                    <option value="low">Bassa</option>
+                    <option value="">{{ __('pub_theme::services.advanced_priority.all.label') }}</option>
+                    <option value="high">{{ __('pub_theme::services.advanced_priority.high.label') }}</option>
+                    <option value="medium">{{ __('pub_theme::services.advanced_priority.medium.label') }}</option>
+                    <option value="low">{{ __('pub_theme::services.advanced_priority.low.label') }}</option>
                 </select>
             </div>
         </div>
@@ -263,18 +263,18 @@
             <button 
                 type="button"
                 id="reset-filters-{{ $searchId }}"
-                aria-label="Ripristina tutti i filtri ai valori predefiniti"
+                aria-label="{{ __('pub_theme::services.advanced_actions.reset_description.label') }}"
                 class="text-gray-600 hover:text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-[#1E5A96] rounded-md px-2 py-1"
             >
-                Resetta filtri
+                {{ __('pub_theme::services.advanced_actions.reset.label') }}
             </button>
             
             <button 
                 type="submit"
-                aria-label="Applica i filtri selezionati"
+                aria-label="{{ __('pub_theme::services.advanced_actions.apply_description.label') }}"
                 class="bg-primary-600 text-white px-6 py-2 rounded-md hover:bg-primary-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1E5A96]"
             >
-                Applica filtri
+                {{ __('pub_theme::services.advanced_actions.apply.label') }}
             </button>
         </div>
     </div>
@@ -290,7 +290,7 @@
     <div id="search-results-{{ $searchId }}" class="search-results mt-6 hidden">
         <div class="results-header flex justify-between items-center mb-4">
             <h3 class="text-lg font-semibold text-gray-900">
-                Risultati della ricerca
+                {{ __('pub_theme::services.results.title.title') }}
             </h3>
             <div class="results-count text-sm text-gray-600">
                 <!-- Result count will be updated by JavaScript -->
@@ -395,7 +395,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Show loading state
         showSuggestions([
-            { type: 'loading', text: 'Ricerca in corso...' }
+            { type: 'loading', text: @js(__('pub_theme::services.js_results.loading.message')) }
         ]);
         
         // Simulate API call (replace with actual implementation)
@@ -406,7 +406,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 showResults(results);
             } else {
                 showSuggestions([
-                    { type: 'no-results', text: 'Nessun risultato trovato' }
+                    { type: 'no-results', text: @js(__('pub_theme::services.js_results.empty.message')) }
                 ]);
                 hideResults();
             }
@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const resultsCount = searchResults.querySelector('.results-count');
         const resultsGrid = searchResults.querySelector('.results-grid');
         
-        resultsCount.textContent = `${results.length} risultati trovati`;
+        resultsCount.textContent = results.length + ' ' + @js(__('pub_theme::services.js_results.count.label'));
         
         resultsGrid.innerHTML = results.map(result => `
             <div class="service-card bg-white border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow">
@@ -488,7 +488,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h4 class="font-semibold text-gray-900 mb-2">${result.title}</h4>
                 <p class="text-sm text-gray-600 mb-3">${result.description}</p>
                 <a href="/servizi/${result.id}" class="inline-flex items-center text-primary-600 hover:text-primary-700 text-sm font-medium">
-                    Accedi al servizio
+                    ${@js(__('pub_theme::services.js_results.access.label'))}
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                     </svg>

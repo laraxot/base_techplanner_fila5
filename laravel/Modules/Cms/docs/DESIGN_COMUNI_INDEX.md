@@ -1,3 +1,14 @@
+---
+title: "DESIGN COMUNI INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "DESIGN COMUNI INDEX"
+issues: []
+discussions: []
+---
+
 # Design Comuni - Cms Module Documentation Index
 
 ## Panoramica
@@ -19,7 +30,7 @@ Documentazione del modulo Cms per il progetto Design Comuni Italia.
 | **Argomenti** | [design-comuni-argomenti.md](./design-comuni-argomenti.md) | Pagina argomenti |
 | **Argomento** | [design-comuni-argomento.md](./design-comuni-argomento.md) | Dettaglio argomento |
 | **Risultati Ricerca** | [design-comuni-risultati-ricerca.md](./design-comuni-risultati-ricerca.md) | Pagina risultati ricerca |
-| **Segnalazioni Elenco** | [design-comuni-segnalazioni-elenco.md](./design-comuni-segnalazioni-elenco.md) | Pagina segnalazioni elenco |
+| **Segnalazioni Elenco** | [design-comuni-ticket-list.md](./design-comuni-ticket-list.md) | Pagina segnalazioni elenco |
 | **Services Implementation** | [design-comuni-services-implementation.md](./design-comuni-services-implementation.md) | Implementazione servizi |
 | **Page Census** | [design-comuni-page-census.md](./design-comuni-page-census.md) | Censimento pagine |
 
@@ -36,21 +47,21 @@ Documentazione del modulo Cms per il progetto Design Comuni Italia.
 
 | Documento | File | Descrizione |
 |-----------|------|-------------|
-| **All Pages Analysis** | [ALL_PAGES_ANALYSIS.md](../../Themes/Sixteen/docs/design-comuni/ALL_PAGES_ANALYSIS.md) | Analisi 54 pagine |
-| **Progress Report** | [PROGRESS_REPORT.md](../../Themes/Sixteen/docs/design-comuni/PROGRESS_REPORT.md) | Report progresso |
-| **Fail Pages Analysis** | [FAIL_PAGES_ANALYSIS.md](../../Themes/Sixteen/docs/design-comuni/FAIL_PAGES_ANALYSIS.md) | Analisi pagine fail |
-| **Argomenti Analisi** | [ARGOMENTI_ANALISI.md](../../Themes/Sixteen/docs/design-comuni/ARGOMENTI_ANALISI.md) | Analisi argomenti |
-| **Argomenti Report** | [ARGOMENTI_REPORT_AGGIORNATO.md](../../Themes/Sixteen/docs/design-comuni/ARGOMENTI_REPORT_AGGIORNATO.md) | Report argomenti |
-| **Risultati Ricerca** | [RISULTATI_RICERCA_ANALISI.md](../../Themes/Sixteen/docs/design-comuni/RISULTATI_RICERCA_ANALISI.md) | Analisi ricerca |
-| **FAQ HTML Analysis** | [DOMANDE_FREQUENTI_HTML_ANALYSIS.md](../../Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_HTML_ANALYSIS.md) | Analisi HTML FAQ |
-| **FAQ Implementazione** | [DOMANDE_FREQUENTI_IMPLEMENTAZIONE.md](../../Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_IMPLEMENTAZIONE.md) | Implementazione FAQ |
-| **Master Index** | [MASTER_INDEX.md](../../../docs/design-comuni/MASTER_INDEX.md) | Index globale |
+| **All Pages Analysis** | [ALL_PAGES_ANALYSIS.md](../../../Themes/Sixteen/docs/design-comuni/ALL_PAGES_ANALYSIS.md) | Analisi 54 pagine |
+| **Progress Report** | [PROGRESS_REPORT.md](../../../Themes/Sixteen/docs/design-comuni/PROGRESS_REPORT.md) | Report progresso |
+| **Fail Pages Analysis** | [FAIL_PAGES_ANALYSIS.md](../../../Themes/Sixteen/docs/design-comuni/FAIL_PAGES_ANALYSIS.md) | Analisi pagine fail |
+| **Argomenti Analisi** | [ARGOMENTI_ANALISI.md](../../../Themes/Sixteen/docs/design-comuni/ARGOMENTI_ANALISI.md) | Analisi argomenti |
+| **Argomenti Report** | [ARGOMENTI_REPORT_AGGIORNATO.md](../../../Themes/Sixteen/docs/design-comuni/ARGOMENTI_REPORT_AGGIORNATO.md) | Report argomenti |
+| **Risultati Ricerca** | [RISULTATI_RICERCA_ANALISI.md](../../../Themes/Sixteen/docs/design-comuni/RISULTATI_RICERCA_ANALISI.md) | Analisi ricerca |
+| **FAQ HTML Analysis** | [DOMANDE_FREQUENTI_HTML_ANALYSIS.md](../../../Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_HTML_ANALYSIS.md) | Analisi HTML FAQ |
+| **FAQ Implementazione** | [DOMANDE_FREQUENTI_IMPLEMENTAZIONE.md](../../../Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_IMPLEMENTAZIONE.md) | Implementazione FAQ |
+| **Master Index** | [MASTER_INDEX.md](../../../../docs/design-comuni/MASTER_INDEX.md) | Index globale |
 
 ### Screenshots Tema Sixteen
 
 | Directory | Descrizione |
 |-----------|-------------|
-| [screenshots/](../../Themes/Sixteen/docs/design-comuni/screenshots/) | Screenshots FAQ (150+ files) |
+| [screenshots/](../../../Themes/Sixteen/docs/design-comuni/screenshots) | Screenshots FAQ (150+ files) |
 | [screenshots/argomenti/](../../Themes/Sixteen/docs/design-comuni/screenshots/argomenti/) | Screenshots argomenti |
 | [screenshots/risultati-ricerca/](../../Themes/Sixteen/docs/design-comuni/screenshots/risultati-ricerca/) | Screenshots ricerca |
 | [screenshots/all-pages/](../../Themes/Sixteen/docs/design-comuni/screenshots/all-pages/) | Screenshots 54 pagine |
@@ -91,6 +102,14 @@ Documentazione del modulo Cms per il progetto Design Comuni Italia.
 
 ---
 
+title: "DESIGN COMUNI INDEX"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "DESIGN COMUNI INDEX"
+issues: []
+discussions: []
 **Data**: 2026-04-03  
 **Stato**: ✅ 63.0% OK  
 **Modulo**: Cms - Content Management System

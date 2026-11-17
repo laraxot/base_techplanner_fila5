@@ -11,7 +11,7 @@ use function Safe\file_get_contents;
  * @phpstan-type GeoFeature array{
  *     type: string,
  *     properties: GeoProperties,
- *     geometry: array{type: string, coordinates: array}
+ *     geometry: array{type: string, coordinates: array<mixed>}
  * }
  * @phpstan-type GeoDataset array{type: string, features: list<GeoFeature>}
  * @phpstan-type GeoDatasetStats array{
@@ -52,7 +52,7 @@ final class GeoMapDataset
         $categories = [];
 
         foreach ($this->getFeatures() as $feature) {
-            if (($feature['geometry']['type'] ?? null) !== 'Point') {
+            if ($feature['geometry']['type'] !== 'Point') {
                 continue;
             }
 
@@ -78,7 +78,7 @@ final class GeoMapDataset
         $zones = 0;
 
         foreach ($this->getFeatures() as $feature) {
-            $geometryType = $feature['geometry']['type'] ?? null;
+            $geometryType = $feature['geometry']['type'];
 
             if ('Point' === $geometryType) {
                 ++$points;

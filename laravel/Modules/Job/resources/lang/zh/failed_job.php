@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -48,23 +47,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'connection' => [
-            'label' => '连接',
-        ],
-        'queue' => [
-            'label' => '队列',
-        ],
-        'payload' => [
-            'label' => '内容',
-        ],
-        'exception' => [
-            'label' => '异常',
-        ],
-        'failed_at' => [
-            'label' => '失败时间',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -75,8 +57,4 @@ return [
             'label' => '删除',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

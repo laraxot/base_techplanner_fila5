@@ -36,44 +36,44 @@
     $social = $footerBlock['social'] ?? [];
     
     $normative = $footerBlock['normative'] ?? [
-        'title' => 'Normative & Certificazioni',
+        'title' => __('pub_theme::footer_section.normative.title.title'),
         'items' => []
     ];
     
     $services = $footerBlock['services'] ?? [
-        'title' => 'Servizi',
+        'title' => __('pub_theme::footer_section.services.title.title'),
         'items' => []
     ];
     
     $contact = $footerBlock['contact'] ?? [
-        'title' => 'Contatti',
+        'title' => __('pub_theme::footer_section.contact.title.title'),
         'items' => [],
         'piva' => null,
         'rea' => null
     ];
     
     $certifications = $footerBlock['certifications'] ?? [
-        'title' => 'Certificazioni',
+        'title' => __('pub_theme::footer_section.certifications.title.title'),
         'items' => []
     ];
     
     $testimonials = $footerBlock['testimonials'] ?? [
-        'title' => 'Dicono di Noi',
+        'title' => __('pub_theme::footer_section.testimonials.title.title'),
         'items' => []
     ];
     
     $quickActions = $footerBlock['quick_actions'] ?? [];
     
     $legal = $footerBlock['legal'] ?? [
-        'copyright' => '© 2026 Marco Sottana - Consulenza Sicurezza. Tutti i diritti riservati.',
+        'copyright' => __('pub_theme::block_defaults.footer_v2.copyright_default.label'),
         'links' => []
     ];
 
     // Helper for Newsletter (default since not in JSON)
     $newsletter = [
-        'title' => 'Rimani aggiornato',
-        'description' => 'Ricevi novità su normative, sicurezza e consulenza tecnica',
-        'button' => 'Iscriviti'
+        'title' => __('pub_theme::block_defaults.footer_v2.newsletter_title.title'),
+        'description' => __('pub_theme::block_defaults.footer_v2.newsletter_description.message'),
+        'button' => __('pub_theme::block_defaults.newsletter_block.submit.label')
     ];
 @endphp
 
@@ -88,7 +88,7 @@
             <div class="space-y-6">
                 <div>
                     <h2 class="text-3xl font-bold tracking-tight text-white mb-2">{{ $brand['name'] ?? 'Marco Sottana' }}</h2>
-                    <p class="text-blue-400 font-semibold uppercase text-xs tracking-widest">{{ $brand['subtitle'] ?? 'Consulenza Sicurezza' }}</p>
+                    <p class="text-blue-400 font-semibold uppercase text-xs tracking-widest">{{ $brand['subtitle'] ?? __('pub_theme::footer_section.brand.subtitle.label') }}</p>
                 </div>
                 
                 <p class="text-blue-100/80 text-sm leading-relaxed max-w-sm">
@@ -125,7 +125,7 @@
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
                     </svg>
-                    {{ $normative['title'] ?? 'Normative' }}
+                    {{ $normative['title'] ?? __('pub_theme::block_defaults.footer_v2.normative_short.title') }}
                 </h3>
                 <div class="space-y-6">
                     @foreach($normative['items'] ?? [] as $item)
@@ -151,7 +151,7 @@
                     <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                     </svg>
-                    {{ $services['title'] ?? 'Servizi' }}
+                    {{ $services['title'] ?? __('pub_theme::footer_section.services.title.title') }}
                 </h3>
                 <ul class="space-y-4">
                     @foreach($services['items'] ?? [] as $item)
@@ -170,7 +170,7 @@
                         <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
                         </svg>
-                        {{ $contact['title'] ?? 'Contatti' }}
+                        {{ $contact['title'] ?? __('pub_theme::footer_section.contact.title.title') }}
                     </h3>
                     <ul class="space-y-4">
                         @foreach($contact['items'] ?? [] as $item)
@@ -225,7 +225,7 @@
         {{-- Row 2: Certifications Badge Wall --}}
         @if(!empty($certifications['items']))
         <div class="mt-16 pt-12 border-t border-white/5">
-            <h4 class="text-center text-blue-100/90 uppercase text-xs tracking-[0.2em] mb-10 font-bold">{{ $certifications['title'] ?? 'Certificazioni' }}</h4>
+            <h4 class="text-center text-blue-100/90 uppercase text-xs tracking-[0.2em] mb-10 font-bold">{{ $certifications['title'] ?? __('pub_theme::footer_section.certifications.title.title') }}</h4>
             <div class="flex flex-wrap justify-center gap-8 md:gap-16 opacity-60 hover:opacity-100 transition-opacity duration-500">
                 @foreach($certifications['items'] as $cert)
                 <div class="flex flex-col items-center gap-3 group">
@@ -276,10 +276,10 @@
                     <p class="text-blue-100 text-sm">{{ $newsletter['description'] }}</p>
                 </div>
                 <form class="flex w-full lg:w-auto max-w-md gap-3" x-data="{ sub: false }" @submit.prevent="sub = true; setTimeout(() => sub = false, 3000)">
-                    <input type="email" placeholder="La tua email" required class="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/20 transition-all">
+                    <input type="email" placeholder="{{ __('pub_theme::footer_section.newsletter.email.placeholder') }}" required class="flex-1 px-4 py-3 bg-white/10 border border-white/20 rounded-xl text-white placeholder-blue-200 focus:outline-none focus:ring-2 focus:ring-white/50 focus:bg-white/20 transition-all">
                     <button type="submit" class="px-6 py-3 bg-white text-blue-600 rounded-xl font-bold hover:bg-blue-50 transition-colors shadow-lg active:scale-95 duration-200">
                         <span x-show="!sub">{{ $newsletter['button'] }}</span>
-                        <span x-show="sub" class="flex items-center gap-2"><svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> Iscritto</span>
+                        <span x-show="sub" class="flex items-center gap-2"><svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> {{ __('pub_theme::footer_section.newsletter.subscribed.label') }}</span>
                     </button>
                 </form>
             </div>
@@ -293,8 +293,8 @@
                 <div class="text-blue-100/70 text-xs text-center md:text-left">
                     <p class="mb-2">{{ $legal['copyright'] ?? '' }}</p>
                     <p class="flex gap-4 justify-center md:justify-start">
-                        @if(!empty($contact['piva']))<span>P.IVA: {{ $contact['piva'] }}</span>@endif
-                        @if(!empty($contact['rea']))<span>REA: {{ $contact['rea'] }}</span>@endif
+                        @if(!empty($contact['piva']))<span>{{ __('pub_theme::footer_section.contact.vat.label') }} {{ $contact['piva'] }}</span>@endif
+                        @if(!empty($contact['rea']))<span>{{ __('pub_theme::footer_section.contact.rea.label') }} {{ $contact['rea'] }}</span>@endif
                     </p>
                 </div>
                 
@@ -305,7 +305,7 @@
                 </div>
                 
                 {{-- Back to Top --}}
-                <button @click="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all group border border-white/10" aria-label="Top">
+                <button @click="window.scrollTo({top: 0, behavior: 'smooth'})" class="w-10 h-10 rounded-full bg-white/5 hover:bg-white/10 flex items-center justify-center transition-all group border border-white/10" aria-label="{{ __('pub_theme::footer_section.back_to_top.button.label') }}">
                     <svg class="w-4 h-4 text-blue-100/70 group-hover:text-white group-hover:-translate-y-1 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"/></svg>
                 </button>
             </div>

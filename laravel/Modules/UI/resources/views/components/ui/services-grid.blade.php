@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 ?>
 {{--
     Services Grid Component - Griglia di servizi comunali/aziendali
@@ -14,8 +13,8 @@ declare(strict_types=1);
     Utilizzo:
     <x-ui.services-grid 
         :services="[
-            ['title' => 'Servizio 1', 'description' => 'Descrizione', 'category' => 'anagrafe', 'status' => 'active'],
-            ['title' => 'Servizio 2', 'description' => 'Descrizione', 'category' => 'tributi', 'status' => 'active'],
+            ['title' => 'Service 1', 'description' => 'Description', 'category' => 'anagrafe', 'status' => 'active'],
+            ['title' => 'Service 2', 'description' => 'Description', 'category' => 'tributi', 'status' => 'active'],
         ]"
         :columns="2"
         gap="md"
@@ -49,7 +48,7 @@ declare(strict_types=1);
     <div @class(['grid', $gridCols, $gapSize])>
         @foreach($services as $service)
             <x-ui.service-card
-                :title="$service['title'] ?? 'Servizio'"
+                :title="$service['title'] ?? __('ui::services.grid.default.title')"
                 :description="$service['description'] ?? ''"
                 :icon="$service['icon'] ?? 'heroicon-o-document'"
                 :url="$service['url'] ?? '#'"
@@ -64,7 +63,7 @@ declare(strict_types=1);
     {{-- Empty State --}}
     <div class="text-center py-12 bg-gray-50 rounded-lg border-2 border-dashed border-gray-300">
         <x-heroicon-o-document-magnifying-glass class="w-12 h-12 text-gray-400 mx-auto mb-4" />
-        <h3 class="text-lg font-medium text-gray-900 mb-2">Nessun servizio disponibile</h3>
-        <p class="text-sm text-gray-600">Non sono presenti servizi in questa categoria.</p>
+        <h3 class="text-lg font-medium text-gray-900 mb-2">{{ __('ui::services.grid.empty.title') }}</h3>
+        <p class="text-sm text-gray-600">{{ __('ui::services.grid.empty.description') }}</p>
     </div>
 @endif

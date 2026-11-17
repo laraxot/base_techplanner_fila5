@@ -5,17 +5,12 @@ declare(strict_types=1);
 return [
     'actions' => [
         'submit' => [
-            'label' => 'submit',
             'icon' => 'submit',
-            'tooltip' => 'submit',
         ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'cancel',
-            'tooltip' => 'cancel',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Send Records Notification Bulk',
     'plural_label' => 'Send Records Notification Bulk (Plurale)',
     'navigation' => [
@@ -49,6 +44,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

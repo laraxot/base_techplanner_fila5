@@ -10,6 +10,15 @@ tags: [structure, architecture, module]
 
 ## Directory Structure
 
+### ❌ Forbidden Root Folders
+
+At module root level, these folders MUST NOT exist:
+- ❌ `Actions/` (move to `app/Actions/`)
+- ❌ `Application/` (move to `app/Application/`)
+- ❌ `Events/` (move to `app/Events/`)
+- ❌ `Listeners/` (move to `app/Listeners/`)
+- ❌ `Database/` (rename to lowercase `database/`)
+
 \`\`\`
 ./laravel/Modules/User/docs/
 ├── wiki/                          # Knowledge base locale (LLM Wiki)
@@ -95,10 +104,10 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
+- [Global Rules](wiki/rules)
+- [Global Skills](wiki/skills)
+- [Global Commands](wiki/commands)
+- [Global Memories](wiki/memories)
 
 ## Setup Iniziale (per nuovi moduli)
 

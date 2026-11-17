@@ -1,3 +1,23 @@
+---
+title: "Implementazione della Pagina di Logout nel Tema One"
+type: concept
+tags: [logout, page, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-page-implementation-2 implementazione della pagina di logout nel tema one"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione della Pagina di Logout nel Tema One
 
 ## Struttura Corretta
@@ -6,17 +26,17 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 
 ### 1. Posizione del File
 ```
-/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
+/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php
 ```
 
 ### 2. Implementazione Corretta
 ```blade
 @php
     use Illuminate\Support\Facades\Auth;
-    
+
     // Esegui il logout
     Auth::logout();
-    
+
     // Invalida e rigenera la sessione
     session()->invalidate();
     session()->regenerateToken();
@@ -39,7 +59,7 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
             </div>
 
             <div class="mt-8">
-                <a href="{{ route('home') }}" 
+                <a href="{{ route('home') }}"
                    class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                     {{ __('Torna alla Home') }}
                 </a>
@@ -99,6 +119,6 @@ Il file `logout.blade.php` deve essere implementato come una pagina Folio static
 4. **Mantieni la logica** semplice e diretta
 
 ## Collegamenti Correlati
-- [Best Practices Folio](./routing_best_practices.md)
-- [Gestione Sessione](./session_management.md)
-- [Tema One Documentation](../../themes/one/docs/readme.md) 
+- [Best Practices Folio](./routing-best-practices-2.md)
+- [Gestione Sessione](./session-management-2.md)
+- [Tema One Documentation](../../themes/one/docs/readme.md)

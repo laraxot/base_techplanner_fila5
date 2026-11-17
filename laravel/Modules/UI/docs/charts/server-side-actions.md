@@ -1,3 +1,10 @@
+---
+title: "Server-Side Chart Generation Actions"
+qmd: "ui charts server side actions md"
+type: note
+tags: [documentation]
+---
+
 # Server-Side Chart Generation Actions
 
 > **Purpose**: Generate chart images (PNG/SVG) in background jobs (Queueable Actions) for email attachments or PDF reports.

@@ -1,3 +1,13 @@
+---
+title: "Filament 4 + Laraxot Rules - Xot Module"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Filament 4 + Laraxot Rules - Xot Module"
+---
 # Filament 4 + Laraxot Rules - Xot Module
 
 ## 🎯 Regole Fondamentali
@@ -20,10 +30,10 @@ class MyPage extends XotBaseViewRecord
 ### 2. **Struttura Namespace Corretta**
 ```php
 // ✅ CORRETTO
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 // ❌ SBAGLIATO
-namespace Modules\healthcare_app\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+namespace Modules\<nome progetto>\App\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 ```
 
 ### 3. **Uso di Schema invece di Form**
@@ -69,7 +79,7 @@ class MyWidget extends Widget implements HasForms
 
 declare(strict_types=1);
 
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
 
@@ -92,7 +102,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\<nome progetto>\Filament\Widgets;
 
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
@@ -157,10 +167,10 @@ public function getFormSchema(): array
 ### 3. **Namespace Errati**
 ```php
 // ❌ SBAGLIATO
-namespace Modules\healthcare_app\App\Filament\Widgets;
+namespace Modules\<nome progetto>\App\Filament\Widgets;
 
 // ✅ CORRETTO
-namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\<nome progetto>\Filament\Widgets;
 ```
 
 ## 🔧 Implementazione Corretta
@@ -171,12 +181,12 @@ namespace Modules\healthcare_app\Filament\Widgets;
 
 declare(strict_types=1);
 
-namespace Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
+namespace Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\DeleteAction;
 use Modules\Xot\Filament\Resources\Pages\XotBaseViewRecord;
-use Modules\healthcare_app\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
+use Modules\<nome progetto>\Filament\Resources\SurveyPdfResource\Resources\QuestionCharts\QuestionChartResource;
 
 class ViewQuestionChart extends XotBaseViewRecord
 {
@@ -189,12 +199,12 @@ class ViewQuestionChart extends XotBaseViewRecord
                 ->label('Edit Chart')
                 ->icon('heroicon-o-pencil')
                 ->url(fn () => static::getResource()::getUrl('edit', ['record' => $this->record])),
-            
+
             Action::make('generate')
                 ->label('Generate Chart')
                 ->icon('heroicon-o-chart-bar')
                 ->action('generateChart'),
-            
+
             DeleteAction::make()
                 ->requiresConfirmation(),
         ];
@@ -220,7 +230,7 @@ class ViewQuestionChart extends XotBaseViewRecord
 
 declare(strict_types=1);
 
-namespace Modules\healthcare_app\Filament\Widgets;
+namespace Modules\<nome progetto>\Filament\Widgets;
 
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
@@ -239,12 +249,12 @@ class QuestionChartFilterWidget extends XotBaseWidget
                 ->label('From Date')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
-            
+
             DatePicker::make('dateTo')
                 ->label('To Date')
                 ->live()
                 ->afterStateUpdated(fn () => $this->updateFilters()),
-            
+
             Select::make('answerFilter')
                 ->label('Answer Filter')
                 ->options([

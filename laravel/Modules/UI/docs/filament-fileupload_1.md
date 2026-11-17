@@ -1,3 +1,10 @@
+---
+title: "FileUpload Component in Filament"
+qmd: "ui filament fileupload 1 md"
+type: note
+tags: [documentation]
+---
+
 # FileUpload Component in Filament
 
 ## Metodi Disponibili

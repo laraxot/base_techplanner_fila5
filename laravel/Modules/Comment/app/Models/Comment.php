@@ -13,6 +13,7 @@ use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\URL;
@@ -23,6 +24,7 @@ use Modules\Comment\Models\Concerns\HasComments;
 use Modules\Comment\Models\Contracts\CanComment;
 use Modules\Comment\Models\Contracts\Commentable;
 use Modules\Comment\Support\CommentConfig;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Comment\Support\CommentatorProperties;
 use Modules\Xot\Models\Traits\HasXotFactory;
 use Spatie\Comments\Notifications\PendingCommentNotification;
@@ -45,11 +47,11 @@ use Spatie\Comments\Notifications\PendingCommentNotification;
  * @property-read Model|null $commentator
  *
  * @method static CommentFactory factory($count = null, $state = [])
- * @method static Builder|static newModelQuery()
- * @method static Builder|static newQuery()
- * @method static Builder|static query()
- * @method static Builder|static approved()
- * @method static Builder|static pending()
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static Builder<static> approved()
+ * @method static Builder<static> pending()
  */
 class Comment extends Model implements Commentable
 {
@@ -98,21 +100,25 @@ class Comment extends Model implements Commentable
         });
     }
 
+    /** @return MorphTo<Model, $this> */
     public function commentable(): MorphTo
     {
         return $this->morphTo();
     }
 
+    /** @return MorphTo<Model, $this> */
     public function commentator(): MorphTo
     {
         return $this->morphTo();
     }
 
+    /** @return BelongsTo<Comment, $this> */
     public function parentComment(): BelongsTo
     {
         return $this->belongsTo(CommentConfig::commentModelClass(), 'parent_id');
     }
 
+    /** @return HasMany<Comment, $this> */
     public function nestedComments(): HasMany
     {
         return $this->hasMany(CommentConfig::commentModelClass(), 'parent_id');
@@ -140,21 +146,25 @@ class Comment extends Model implements Commentable
         return $this->parent_id === null;
     }
 
+    /** @param Builder<static> $builder */
     public function scopeTopLevel(Builder $builder): void
     {
         $builder->whereNull('parent_id');
     }
 
+    /** @param Builder<static> $query */
     public function scopePending(Builder $query): void
     {
         $query->whereNull('approved_at');
     }
 
+    /** @param Builder<static> $query */
     public function scopeApproved(Builder $query): void
     {
         $query->whereNotNull('approved_at');
     }
 
+    /** @return HasMany<Reaction, $this> */
     public function reactions(): HasMany
     {
         return $this->hasMany(CommentConfig::reactionModelClass());
@@ -162,7 +172,8 @@ class Comment extends Model implements Commentable
 
     public function findReaction(string $reaction, ?CanComment $commentator = null): ?Reaction
     {
-        $commentator ??= auth()->user();
+        $user = Auth::user();
+        $commentator ??= $user instanceof CanComment ? $user : null;
 
         if (! $commentator instanceof CanComment) {
             return null;
@@ -177,11 +188,17 @@ class Comment extends Model implements Commentable
         return $found instanceof Reaction ? $found : null;
     }
 
-    public function unsortedReactionCounts(): HasMany
+    /**
+     * @return Builder<Reaction>
+     */
+    public function unsortedReactionCounts(): Builder
     {
-        return $this->reactions()
+        /** @var Builder<Reaction> $query */
+        $query = $this->reactions()
             ->select('reaction', DB::raw('count(*) as count'))
             ->groupBy('reaction');
+
+        return $query;
     }
 
     /** @return list<array{reaction: string, count: int}> */
@@ -214,7 +231,8 @@ class Comment extends Model implements Commentable
 
     public function react(string $reaction, ?CanComment $commentator = null): self
     {
-        $commentator ??= auth()->user();
+        $user = Auth::user();
+        $commentator ??= $user instanceof CanComment ? $user : null;
 
         $this->reactions()->firstOrCreate([
             'commentator_id' => $commentator?->getKey(),
@@ -227,7 +245,8 @@ class Comment extends Model implements Commentable
 
     public function deleteReaction(string $reaction, ?CanComment $commentator = null): self
     {
-        $commentator ??= auth()->user();
+        $user = Auth::user();
+        $commentator ??= $user instanceof CanComment ? $user : null;
 
         if (! $commentator instanceof CanComment) {
             return $this;
@@ -256,8 +275,12 @@ class Comment extends Model implements Commentable
             return $empty;
         }
 
-        $comments = self::query()
-            ->distinct('commentator_id', 'commentator_type')
+        /** @var Builder<static> $query */
+        $query = self::query();
+        /** @var \Illuminate\Database\Eloquent\Collection<int, Comment> $comments */
+        $comments = $query
+            ->distinct()
+            ->select(['commentator_id', 'commentator_type'])
             ->where('commentable_id', $commentable->getKey())
             ->where('commentable_type', $commentable->getMorphClass())
             ->approved()
@@ -314,7 +337,7 @@ class Comment extends Model implements Commentable
         $commentable = $top->commentable;
         $base = '';
         if (is_object($commentable) && method_exists($commentable, 'commentUrl')) {
-            $base = (string) $commentable->commentUrl();
+            $base = SafeStringCastAction::cast($commentable->commentUrl());
         }
 
         return $base."#comment-{$this->id}";
@@ -395,6 +418,7 @@ class Comment extends Model implements Commentable
         return CommentConfig::automaticallyApproveAllComments();
     }
 
+    /** @return Collection<int, object> */
     public function getApprovingUsers(): Collection
     {
         $sendToClosure = PendingCommentNotification::$sendTo;
@@ -415,7 +439,7 @@ class Comment extends Model implements Commentable
                 $notifiableUsers[] = $user;
             }
 
-            /** @var Collection<int, Model> $result */
+            /** @var Collection<int, object> $result */
             $result = collect($notifiableUsers);
 
             return $result;
@@ -432,11 +456,13 @@ class Comment extends Model implements Commentable
         throw CannotSendPendingCommentNotification::doesNotImplementNotifiable();
     }
 
+    /** @return Collection<int, Model> */
     public function getMentionees(): Collection
     {
+        $matches = [];
         preg_match_all('/data-mention="([^"]+)"/', $this->original_text, $matches);
-        $mentioneeIds = $matches[1];
-        if ($mentioneeIds === []) {
+        $mentioneeIds = $matches[1] ?? [];
+        if (! is_array($mentioneeIds) || $mentioneeIds === []) {
             return collect();
         }
 
@@ -445,9 +471,15 @@ class Comment extends Model implements Commentable
             return collect();
         }
 
-        return $modelClass::query()
-            ->whereIn((new $modelClass)->getKeyName(), $mentioneeIds)
-            ->get();
+        /** @var Collection<int, Model> $result */
+        $result = collect(
+            $modelClass::query()
+                ->whereIn((new $modelClass)->getKeyName(), $mentioneeIds)
+                ->get()
+                ->all()
+        );
+
+        return $result;
     }
 
     protected static function implementsNotifiable(object $object): bool

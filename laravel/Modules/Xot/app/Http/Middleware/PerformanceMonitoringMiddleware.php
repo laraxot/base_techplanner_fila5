@@ -4,22 +4,13 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
-<<<<<<< HEAD
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
-
-use function Safe\sys_getloadavg;
-
-=======
-use Closure;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Cache;
-use Illuminate\Support\Facades\DB;
-use function Safe\sys_getloadavg;
->>>>>>> 6ed19256f (.)
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
+
+use function Safe\sys_getloadavg;
 
 /**
  * Middleware per il monitoring delle performance.
@@ -29,18 +20,12 @@ use Webmozart\Assert\Assert;
  */
 class PerformanceMonitoringMiddleware
 {
-    public function __construct()
-    {
-    }
+    public function __construct() {}
 
     /**
      * Handle an incoming request.
      */
-<<<<<<< HEAD
     public function handle(Request $request, \Closure $next): Response
-=======
-    public function handle(Request $request, Closure $next): Response
->>>>>>> 6ed19256f (.)
     {
         $startTime = microtime(true);
         $startMemory = memory_get_usage(true);
@@ -61,12 +46,7 @@ class PerformanceMonitoringMiddleware
         // Registra la richiesta
         Assert::isInstanceOf($response, Response::class);
         $statusCode = $response->getStatusCode();
-        $this->recordRequest(
-            $request->method(),
-            $request->path(),
-            $responseTime,
-            $statusCode
-        );
+        $this->recordRequest($responseTime, $statusCode);
 
         // Registra utilizzo memoria finale
         $this->recordMemoryUsage();
@@ -116,7 +96,7 @@ class PerformanceMonitoringMiddleware
     /**
      * Registra richiesta.
      */
-    private function recordRequest(string $method, string $path, float $responseTime, int $statusCode): void
+    private function recordRequest(float $responseTime, int $statusCode): void
     {
         Cache::increment('total_requests');
         Cache::increment('requests_per_minute');

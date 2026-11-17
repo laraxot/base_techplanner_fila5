@@ -1,12 +1,52 @@
 ---
-title: "Seo Module Documentation"
-type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: stale
 ---
 
-# Seo Module
+> Nota 2026-10-08 (docs-audit): e' la concatenazione di due README con badge incoerenti (Laravel 13 e 12.x, Filament 5 e 4.x, PHPStan 9 e 10) e link scritti dalla radice del modulo. Contenuto non riscritto, verificare prima di usarlo.
+
+# Seo
+
+[![Module](https://img.shields.io/badge/Module-Seo-8B0000.svg)]()
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
+]()
+
+> **Core module for the FixCity Platform.**
+
+## Perché esiste
+
+Core module for the FixCity Platform.
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](./readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](.) |
+
+---
+**Modulo** `Seo` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
+---
+# 🎯 SEO Module - Search Engine Optimization
 
 [![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
 [![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
@@ -14,6 +54,8 @@ updated: 2026-06-05
 [![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN-green.svg)](https://laravel.com/docs/localization)
 
 The **Seo Module** provides a comprehensive search engine optimization toolkit for Laravel applications, integrating advanced metadata management, sitemaps, structured data, and AI-powered content analysis.
+
+**Metatag facade (canone):** `MetatagFacadeAdapter` + `MetatagState` + Actions — vedi [conflict-resolution.md](./conflict-resolution.md) e [metatag-data-contract.md](./wiki/concepts/metatag-data-contract.md).
 
 ## 🚀 Features
 
@@ -38,6 +80,21 @@ composer require laraxot/module-seo
 php artisan module:enable Seo
 php artisan migrate
 ```
+
+> **🚀 Modulo SEO**: Sistema completo per ottimizzazione motori di ricerca, gestione meta tags, sitemap e structured data.
+
+## 📋 **Panoramica**
+
+Il modulo **SEO** fornisce strumenti avanzati per l'ottimizzazione SEO:
+
+- 🎯 **Meta Tags** - Gestione meta tags dinamici
+- 🗺️ **Sitemap** - Generazione sitemap automatica
+- 📊 **Structured Data** - Schema.org markup
+- 🔍 **Robots.txt** - Configurazione robots.txt
+- 🎨 **Open Graph** - Meta tags social media
+- 🌐 **Multi-lingua** - SEO multilingua
+
+## ⚡ **Funzionalità Core**
 
 ### 🎯 **Meta Tags Management**
 ```php
@@ -95,12 +152,12 @@ SEO::addStructuredData([
 
 ### 🏗️ **Architettura**
 - [Struttura Modulo](structure.md) - Architettura SEO
-- [Best Practices](best-practices.md) - Best practices SEO
+- [Best Practices](best-practices.md) _(target mancante, verificato 2026-10-08)_ - Best practices SEO
 
 ### 🎨 **Components**
-- [Meta Tags](meta-tags.md) - Gestione meta tags
+- [Meta Tags](meta-tags.md) _(target mancante, verificato 2026-10-08)_ - Gestione meta tags
 - [Sitemap](sitemap.md) - Configurazione sitemap
-- [Structured Data](structured-data.md) - Schema.org
+- [Structured Data](structured-data.md) _(target mancante, verificato 2026-10-08)_ - Schema.org
 
 ### 🔧 **Development**
 - [Configuration](configuration.md) - Configurazione modulo
@@ -286,6 +343,7 @@ php artisan seo:validate-schema
 
 
 
+Developers are encouraged to contribute to this documentation to keep it accurate and up-to-date.
 ## ⚙️ Configuration
 
 Publish the configuration file to set up API keys (e.g., OpenAI) and defaults:
@@ -318,17 +376,4 @@ For Filament resources, use the provided SEO trait to add configuration fields t
 Please verify all changes with:
 - `phpstan analyse Modules/Seo` (Level 10)
 - `pest` (Test Suite)
-
-
-## Standard Rules & Workflow
-
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
-
-## Documentation
-
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout

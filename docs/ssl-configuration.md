@@ -1,6 +1,5 @@
 # SSL Configuration for Laravel Application
 
-<<<<<<< HEAD
 ## Configurazione SSL per sottana.net
 
 Quando l'applicazione viene eseguita con SSL/HTTPS, è necessario aggiornare il file `.env` per riflettere l'URL sicuro:
@@ -51,8 +50,6 @@ curl -I https://sottana.net
 
 - [Installazione Certificato SSL](./ssl-certificate-installation.md)
 - [Documentazione Nginx](https://nginx.org/en/docs/)
-=======
->>>>>>> 6ed19256f (.)
 When running the application with SSL/HTTPS, you may need to update your .env file to reflect the secure URL:
 
 ```
@@ -74,9 +71,5 @@ To access the application securely after SSL setup:
 2. Update your APP_URL in .env to use https://techplanner.local
 3. Access the application at: https://techplanner.local
 
-<<<<<<< HEAD
 Note: You may need to accept the self-signed certificate warning in your browser.
 - [Documentazione Certbot](https://certbot.eff.org/docs/)
-=======
-Note: You may need to accept the self-signed certificate warning in your browser.
->>>>>>> 6ed19256f (.)

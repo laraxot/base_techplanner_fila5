@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\User\Actions\User;
 
-<<<<<<< HEAD
 use Illuminate\Contracts\Hashing\Hasher;
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Eloquent\Model;
@@ -13,22 +12,6 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Psr\Log\LoggerInterface;
 use Spatie\QueueableAction\QueueableAction;
 
-=======
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Log;
-use Illuminate\Validation\ValidationException;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
-use Spatie\QueueableAction\QueueableAction;
-
-/**
- * UpdateUserAction: Action generica per l'aggiornamento dei dati utente.
- *
- * Questa action gestisce l'aggiornamento dei dati di base dell'utente.
- * Può essere estesa dai moduli specifici per aggiungere logica personalizzata.
- */
->>>>>>> 6ed19256f (.)
 class UpdateUserAction
 {
     use QueueableAction;
@@ -36,16 +19,14 @@ class UpdateUserAction
     /**
      * Esegue l'aggiornamento dell'utente.
      *
-     * @param Model                $user L'utente da aggiornare
-     * @param array<string, mixed> $data I dati da aggiornare
+     * @param  Model  $user  L'utente da aggiornare
+     * @param  array<string, mixed>  $data  I dati da aggiornare
+     * @return Model L'utente aggiornato
      *
      * @throws \Exception Se l'aggiornamento fallisce
-     *
-     * @return Model L'utente aggiornato
      */
     public function execute(Model $user, array $data): Model
     {
-<<<<<<< HEAD
         $dbManager = \app(DatabaseManager::class);
         $logger = \app(LoggerInterface::class);
         $hasher = \app(Hasher::class);
@@ -60,16 +41,6 @@ class UpdateUserAction
 
             // Valida i dati specifici per l'aggiornamento
             $this->validateUpdateData($user, $updateData, $validationException);
-=======
-        try {
-            DB::beginTransaction();
-
-            // Prepara i dati per l'aggiornamento
-            $updateData = $this->prepareUpdateData($data);
-
-            // Valida i dati specifici per l'aggiornamento
-            $this->validateUpdateData($user, $updateData);
->>>>>>> 6ed19256f (.)
 
             // Aggiorna l'utente
             $user->fill($updateData);
@@ -78,39 +49,23 @@ class UpdateUserAction
             // Esegue operazioni post-aggiornamento se necessarie
             $this->afterUpdate($user, $updateData);
 
-<<<<<<< HEAD
             $dbManager->commit();
 
             $logger->info('Utente aggiornato con successo', [
-=======
-            DB::commit();
-
-            Log::info('Utente aggiornato con successo', [
->>>>>>> 6ed19256f (.)
                 'user_id' => $user->getKey(),
                 'updated_fields' => array_keys($updateData),
             ]);
 
             $updatedUser = $user->fresh();
-<<<<<<< HEAD
             if (! $updatedUser instanceof Model) {
-=======
-            if (! ($updatedUser instanceof Model)) {
->>>>>>> 6ed19256f (.)
                 throw new \Exception('Failed to refresh user model after update');
             }
 
             return $updatedUser;
         } catch (\Exception $e) {
-<<<<<<< HEAD
             $dbManager->rollBack();
 
             $logger->error("Errore nell'aggiornamento utente", [
-=======
-            DB::rollBack();
-
-            Log::error("Errore nell'aggiornamento utente", [
->>>>>>> 6ed19256f (.)
                 'user_id' => $user->getKey(),
                 'error' => $e->getMessage(),
                 'data' => $updateData ?? [],
@@ -123,15 +78,10 @@ class UpdateUserAction
     /**
      * Prepara i dati per l'aggiornamento rimuovendo campi non aggiornabili.
      *
-     * @param array<string, mixed> $data
-     *
+     * @param  array<string, mixed>  $data
      * @return array<string, mixed>
      */
-<<<<<<< HEAD
     protected function prepareUpdateData(array $data, Hasher $hasher, SafeStringCastAction $safeStringCast): array
-=======
-    protected function prepareUpdateData(array $data): array
->>>>>>> 6ed19256f (.)
     {
         // Rimuovi campi che non dovrebbero essere aggiornati direttamente
         $excludeFields = [
@@ -149,26 +99,16 @@ class UpdateUserAction
             if (empty($updateData['password'])) {
                 // Se la password è vuota, rimuovila dai dati di aggiornamento
                 unset($updateData['password']);
-<<<<<<< HEAD
             }
             // Hash della password se presente, e se non è stata rimossa perché vuota
             if (isset($updateData['password'])) {
                 $updateData['password'] = $hasher->make($safeStringCast->execute($updateData['password']));
-=======
-            } else {
-                // Hash della password se presente
-                $updateData['password'] = Hash::make(SafeStringCastAction::cast($updateData['password']));
->>>>>>> 6ed19256f (.)
             }
         }
 
         // Gestione dell'email per evitare duplicati
         if (isset($updateData['email'])) {
-<<<<<<< HEAD
             $email = $safeStringCast->execute($updateData['email']);
-=======
-            $email = SafeStringCastAction::cast($updateData['email']);
->>>>>>> 6ed19256f (.)
             $updateData['email'] = strtolower($email);
         }
 
@@ -178,15 +118,11 @@ class UpdateUserAction
     /**
      * Valida i dati di aggiornamento.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      *
      * @throws ValidationException
      */
-<<<<<<< HEAD
     protected function validateUpdateData(Model $user, array $data, ValidationException $validationException): void
-=======
-    protected function validateUpdateData(Model $user, array $data): void
->>>>>>> 6ed19256f (.)
     {
         // Validazione email univoca
         if (isset($data['email'])) {
@@ -197,11 +133,7 @@ class UpdateUserAction
                 ->first();
 
             if ($existingUser) {
-<<<<<<< HEAD
                 throw $validationException->withMessages(['email' => __('user::validation.email_already_taken')]);
-=======
-                throw ValidationException::withMessages(['email' => __('user::validation.email_already_taken')]);
->>>>>>> 6ed19256f (.)
             }
         }
 
@@ -213,7 +145,7 @@ class UpdateUserAction
      * Operazioni da eseguire dopo l'aggiornamento.
      * Può essere sovrascritto dalle classi che estendono questa action.
      *
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function afterUpdate(Model $user, array $data): void
     {
@@ -223,10 +155,7 @@ class UpdateUserAction
         // - Aggiornare cache
         // - Registrare log di audit
         // - Gestire relazioni
-<<<<<<< HEAD
         // Mark parameters as unused to satisfy PHPMD
         unset($user, $data);
-=======
->>>>>>> 6ed19256f (.)
     }
 }

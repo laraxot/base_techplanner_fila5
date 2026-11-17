@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Console/Commands/PhpUnitTestJobCommand.php
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Console\Commands;
 
@@ -14,21 +13,11 @@ class PhpUnitTestJobCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $signature = 'phpunit:test {argument} {argumentWithDefault=Default value} {optionalArgument?}';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $description = 'Command for testing the phpunit feature.';
 

@@ -1,3 +1,10 @@
+---
+title: "Case-Insensitive File Conflicts"
+qmd: "ui case conflicts md"
+type: note
+tags: [documentation]
+---
+
 # Case-Insensitive File Conflicts
 
 File duplicati rilevati nel modulo `UI`:

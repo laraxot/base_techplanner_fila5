@@ -1,13 +1,19 @@
+---
+title: "removal getseasonalemaillayoutaction"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "removal getseasonalemaillayoutaction"
+issues: []
+discussions: []
+status: draft
+---
+
 # Rimozione GetSeasonalEmailLayoutAction - Report Completo
 
-<<<<<<< HEAD
-**Data**: 19 Dicembre 2025  
 **Data**: 19 Dicembre 2025  
 **Stato**: ✅ Completato  
-=======
-**Data**: 19 Dicembre 2025
-**Stato**: ✅ Completato
->>>>>>> 6ed19256f (.)
 **Filosofia**: DRY + KISS + Clean Code
 
 ## 🎯 Motivazione Rimozione
@@ -36,11 +42,7 @@
 ### Architettura Finale (DRY + KISS)
 
 ```
-<<<<<<< HEAD
 GetThemeContextAction (Xot) 
-=======
-GetThemeContextAction (Xot)
->>>>>>> 6ed19256f (.)
     ↓ Determina contesto stagionale (christmas, easter, etc.)
 GetMailLayoutAction (Notify)
     ↓ Cerca layout nel tema in base al contesto
@@ -62,17 +64,10 @@ public function getHtmlLayout(): string
 public function execute(string $baseName = 'base'): string
 {
     $context = app(GetThemeContextAction::class)->execute(); // Single Source of Truth
-<<<<<<< HEAD
     
     // Cerca layout in ordine di priorità:
     // 1. base_christmas.html
     // 2. christmas.html  
-=======
-
-    // Cerca layout in ordine di priorità:
-    // 1. base_christmas.html
-    // 2. christmas.html
->>>>>>> 6ed19256f (.)
     // 3. base.html (fallback)
     // ...
 }
@@ -95,10 +90,6 @@ public function execute(string $baseName = 'base'): string
 
 ### File Aggiornati (Documentazione)
 - `Modules/Notify/docs/phpstan-fixes-2025-12-19.md` - Aggiornato con motivazione rimozione
-<<<<<<< HEAD
-- `Modules/Notify/docs/phpstan-fixes-2025-12-19.md` - Aggiornato con motivazione rimozione
-=======
->>>>>>> 6ed19256f (.)
 - `Modules/Notify/docs/seasonal-email-templates.md` - Aggiornato pattern corretto
 - `Modules/Notify/docs/seasonal-email-system-recommendations.md` - Corretti esempi
 - `Modules/Notify/docs/00-index.md` - Aggiornate statistiche
@@ -135,11 +126,5 @@ Delega semplice invece di azione complessa separata.
 4. **Separazione responsabilità**: La logica di contesto stagionale appartiene al modulo core (Xot), non al modulo specifico (Notify)
 
 ---
-
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Type safety first, simplicity second, DRY always"*
-=======
-**Ultimo aggiornamento**: 19 Dicembre 2025
-**Filosofia**: *"Type safety first, simplicity second, DRY always"*
->>>>>>> 6ed19256f (.)

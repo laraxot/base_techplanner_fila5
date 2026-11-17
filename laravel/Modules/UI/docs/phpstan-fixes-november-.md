@@ -190,7 +190,7 @@ Quando serve fare type narrowing di una variabile usata più volte, estrarre il 
 - [UI Module README](readme.md)
 =======
 >>>>>>> 6ed19256f (.)
-- [Architecture Rules](architecture_rules.md)
+- [Architecture Rules](archive/architecture_rules.md)
 
 ---
 

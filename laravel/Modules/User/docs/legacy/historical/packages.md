@@ -42,9 +42,9 @@
 - [laravel/telescope](https://github.com/laravel/telescope) - Non per production
 - [laravel/horizon](https://github.com/laravel/horizon) - Non necessario per base
 ## Documentazione Collegata
-- [Autenticazione](packages/authentication.md)
-- [Permessi](packages/permissions.md)
-- [Sicurezza](packages/security.md)
+- [Autenticazione](../../authentication.md)
+- [Permessi](../../permissions.md)
+- [Sicurezza](../../html2pdf/security.md)
 - [Performance](packages/performance.md)
 ### Versione HEAD
 ## Collegamenti tra versioni di packages.md

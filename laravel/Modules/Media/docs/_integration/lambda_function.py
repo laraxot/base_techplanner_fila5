@@ -1,12 +1,3 @@
-<<<<<<< HEAD
----
-module: theme
-topic: lambda_function
-canonical: ../../../../Themes/docs/shared-components/lambda_function.py
----
-
-See canonical documentation: ../../../../Themes/docs/shared-components/lambda_function.py
-=======
 # Copyright Amazon.com, Inc. or its affiliates. All Rights Reserved.
 # SPDX-License-Identifier: MIT-0 (https://spdx.org/licenses/MIT-0.html)
 
@@ -51,4 +42,3 @@ def lambda_handler(event, context):
         'statusCode': 200,
         'body': json.dumps('Processing complete successfully')
     }
->>>>>>> 6ed19256f (.)

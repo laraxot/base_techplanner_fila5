@@ -1,3 +1,14 @@
+---
+title: "phpstan fixes january"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes january"
+issues: []
+discussions: []
+---
+
 # Correzioni PHPStan - Gennaio 2025
 
 ## Panoramica
@@ -133,6 +144,6 @@ $rows = $this->getSushiRows();
 - Migliore gestione degli errori
 
 ## Collegamenti Correlati
-- [Architettura Modulo Cms](./architecture.md)
+- [Architettura Modulo Cms](frontoffice/architecture.md)
 - [Middleware System](./middleware-system.md)
 - [Model Management](./model-management.md)

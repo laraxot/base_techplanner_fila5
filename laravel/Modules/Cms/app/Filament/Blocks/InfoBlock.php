@@ -11,7 +11,6 @@ use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 final class InfoBlock extends XotBaseBlock
 {
-    #[\Override]
     public static function getBlockSchema(): array
     {
         return [
@@ -27,10 +26,6 @@ final class InfoBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
-<<<<<<< HEAD
-        return \trans_string('cms::blocks.info.label');
-=======
-        return \trans_string('cms::blocks.info.label') ?? 'Info';
->>>>>>> 6ed19256f (.)
+        return \trans_string('cms::blocks.info.label') ?: 'Info Block';
     }
 }

@@ -1,3 +1,10 @@
+---
+title: "Inventario Conflitti Git - UI Module"
+qmd: "ui git conflicts inventory md"
+type: note
+tags: [documentation]
+---
+
 # Inventario Conflitti Git - UI Module
 
 ## File con conflitti di merge non risolti
@@ -27,10 +34,5 @@
 
 ## Stato
 - ❌ Conflitti da risolvere
-- 📅 Data rilevamento: 2025-11-12
-<<<<<<< HEAD
 - 📅 Data rilevamento: [DATE]
 - 🔄 Priorità: ALTA - Componenti UI critici
-=======
-- 🔄 Priorità: ALTA - Componenti UI critici
->>>>>>> 6ed19256f (.)

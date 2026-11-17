@@ -39,7 +39,7 @@
                             <a href="{{ $resource['url'] }}"
                                class="inline-flex items-center justify-center gap-2 w-full px-6 py-3.5 bg-orange-500 hover:bg-orange-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg hover:shadow-orange-500/30">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"/></svg>
-                                {{ $resource['button_label'] ?? 'Scarica Guida PDF' }}
+                                {{ $resource['button_label'] ?? __('pub_theme::block_fallbacks.downloads.button.label') }}
                             </a>
                         @endif
                     </div>

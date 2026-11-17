@@ -1,3 +1,11 @@
+---
+title: "Risoluzione Conflitti Git - 6 Gennaio 2025"
+type: note
+status: draft
+updated: 2026-10-22
+tags: [docs, xot]
+qmd: "risoluzione conflitti git - 6 gennaio 2025 xot"
+---
 # Risoluzione Conflitti Git - 6 Gennaio 2025
 
 ## Data: 2025-01-06
@@ -126,13 +134,14 @@ php artisan lang:check
 ## Documentazione Aggiornata
 
 ### Modulo Geo
-- [Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
+- [Conflict Resolution](archive/git/conflict-resolution.md)
 
 ### Modulo User
 - [Theme Translation Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 
 ### Modulo Xot
-- [Git Conflicts Resolution](laravel/Modules/Xot/project_docs/git-conflicts-resolution-2025-01-06.md)
+- [Git Conflicts Resolution](archive/git-conflicts-resolution.md)
+- [Git Conflicts Resolution](archive/git-conflicts-resolution.md)
 
 ## Best Practices Applicate
 
@@ -187,7 +196,7 @@ php artisan lang:check
 ## Collegamenti Correlati
 
 ### Documentazione Moduli
-- [Geo Conflict Resolution](laravel/Modules/Geo/project_docs/conflict-resolution.md)
+- [Geo Conflict Resolution](archive/git/conflict-resolution.md)
 - [User Theme Conflicts](laravel/Modules/User/project_docs/theme-translation-conflicts-resolution.md)
 
 ### Documentazione Generale

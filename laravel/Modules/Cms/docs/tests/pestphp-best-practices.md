@@ -1,3 +1,14 @@
+---
+title: "pestphp best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pestphp best practices"
+issues: []
+discussions: []
+---
+
 # PestPHP Best Practices - Modulo Cms
 
 ## 🎯 Overview
@@ -328,18 +339,18 @@ Applicando questi pattern abbiamo ottenuto:
 - [Registration Widget Test Strategy](./registration-widget-test-strategy.md)
 
 ### **Root Documentation**
-<<<<<<< HEAD
 - [Testing Organization](../../../../../docs/testing-organization.md)
-=======
-- [Testing Organization](../../../../docs/testing-organization.md)
->>>>>>> 6ed19256f (.)
 - [<nome progetto> Testing Architecture](../../../<nome progetto>/docs/testing.md)
 
 ---
+title: "pestphp best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "pestphp best practices"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: Gennaio 2025
 **Status**: ✅ PRODUCTION READY
-<<<<<<< HEAD
 **Verified**: 9 test / 4.44s / 100% pass rate
-=======
-**Verified**: 9 test / 4.44s / 100% pass rate
->>>>>>> 6ed19256f (.)

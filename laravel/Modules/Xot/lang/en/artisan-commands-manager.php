@@ -14,19 +14,19 @@ return [
             'label' => 'Migrazione Database',
         ],
         'filament_upgrade' => [
-            'label' => 'Aggiorna Filament',
+            'label' => 'Update Filament',
         ],
         'filament_optimize' => [
             'label' => 'Ottimizza Filament',
         ],
         'view_cache' => [
-            'label' => 'Cache delle View',
+            'label' => 'View cache',
         ],
         'config_cache' => [
-            'label' => 'Cache della Configurazione',
+            'label' => 'Config cache',
         ],
         'route_cache' => [
-            'label' => 'Cache delle Route',
+            'label' => 'Route cache',
         ],
         'event_cache' => [
             'label' => 'Cache degli Eventi',
@@ -34,33 +34,37 @@ return [
         'queue_restart' => [
             'label' => 'Riavvia Code',
         ],
+        'composer_dump_autoload' => [
+            'label' => 'Composer Dump Autoload',
+        ],
+        'notify_migrate_themes_to_mail_templates' => [
+            'label' => 'Import Legacy Email/SMS Templates',
+            'modal_description' => 'Copies email/SMS content from the legacy notify_themes table into mail_templates (the new invite sending system). Idempotent: re-running it updates already-migrated templates instead of duplicating them, overwriting any manual edits made after the last run.',
+        ],
     ],
     'status' => [
-        'completed' => 'Completato',
-        'failed' => 'Fallito',
-        'waiting' => 'In attesa dell\'output...',
-        'running' => 'In esecuzione...',
+        'completed' => 'Completed',
+        'failed' => 'Failed',
+        'waiting' => 'Waiting for output...',
+        'running' => 'Running...',
     ],
     'messages' => [
-        'command_started' => 'Comando Avviato',
-        'command_started_desc' => 'Il comando :command è stato avviato. L\'output apparirà in tempo reale.',
-        'command_completed' => 'Comando Completato',
-        'command_completed_desc' => 'Il comando :command è stato completato con successo',
-        'command_failed' => 'Comando Fallito',
-        'command_failed_desc' => 'Il comando :command è fallito. Controlla l\'output per i dettagli.',
+        'command_started' => 'Command started',
+        'command_started_desc' => 'The :command command has started. Output will appear in real time.',
+        'command_completed' => 'Command completed',
+        'command_completed_desc' => 'The :command command completed successfully',
+        'command_failed' => 'Command failed',
+        'command_failed_desc' => 'The :command command failed. Check the output for details.',
+        'running_command' => [
+            'message' => 'Running command: :command',
+        ],
     ],
     'hints' => [
-        'running' => 'Il comando è in esecuzione. L\'output apparirà in tempo reale.',
-        'disabled' => 'Non è possibile eseguire altri comandi mentre un comando è in esecuzione.',
-        'scroll' => 'L\'output si aggiorna automaticamente e scorre verso il basso.',
+        'running' => 'The command is running. The output will appear in real time.',
+        'disabled' => 'Other commands cannot be run while a command is running.',
+        'scroll' => 'The output updates automatically and scrolls down.',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
+    'select_command' => 'Select a command from the header to begin.',
 ];

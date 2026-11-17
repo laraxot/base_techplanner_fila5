@@ -80,7 +80,7 @@ class ArticleContent
 }
 ```
 
-## [Esempio di Blocchi](docs/blocks.md)
+## [Esempio di Blocchi](blocks.md)
 
 ## Visualizzare i blocchi in una blade
 

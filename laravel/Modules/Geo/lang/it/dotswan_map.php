@@ -9,8 +9,6 @@ return [
     ],
     'fields' => [
         'location' => [
-            'label' => 'location',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -27,8 +25,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Dotswan Map',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

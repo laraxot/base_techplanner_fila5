@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 @props([
-    'title' => 'Articoli in Evidenza',
+    'title' => __('pub_theme::blog.featured.title.title'),
     'articles' => [
         [
             'id' => 1,
@@ -11,7 +11,7 @@ declare(strict_types=1);
             'author' => ['name' => 'Dr. Marco Rossi', 'avatar' => 'https://i.pravatar.cc/150?img=1'],
             'date' => '15 Gennaio 2025',
             'category' => ['name' => 'Normativa', 'slug' => 'normativa', 'color' => 'blue'],
-            'image' => 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&q=80',
+            'image' => '/images/stock/unsplash-1576091160399-112ba8d25d1d-800.jpg',
             'reading_time' => '8 min',
             'views' => 1245,
             'likes' => 89,
@@ -26,7 +26,7 @@ declare(strict_types=1);
             'author' => ['name' => 'Ing. Laura Bianchi', 'avatar' => 'https://i.pravatar.cc/150?img=2'],
             'date' => '10 Gennaio 2025',
             'category' => ['name' => 'Elettromedicali', 'slug' => 'elettromedicali', 'color' => 'green'],
-            'image' => 'https://images.unsplash.com/photo-1579154204601-01588f351e67?w=800&q=80',
+            'image' => '/images/stock/unsplash-1579154204601-01588f351e67-800.jpg',
             'reading_time' => '6 min',
             'views' => 987,
             'likes' => 67,
@@ -41,7 +41,7 @@ declare(strict_types=1);
             'author' => ['name' => 'Dr. Sara Verdi', 'avatar' => 'https://i.pravatar.cc/150?img=3'],
             'date' => '5 Gennaio 2025',
             'category' => ['name' => 'Veterinaria', 'slug' => 'veterinaria', 'color' => 'orange'],
-            'image' => 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80',
+            'image' => '/images/stock/unsplash-1548199973-03cce0bbc87b-800.jpg',
             'reading_time' => '10 min',
             'views' => 756,
             'likes' => 54,
@@ -62,7 +62,7 @@ declare(strict_types=1);
                 {{ $title }}
             </h2>
             <p class="text-lg text-gray-600 max-w-2xl mx-auto">
-                I nostri articoli più letti e condivisi dalla community
+                {{ __('pub_theme::blog.featured.subtitle.message') }}
             </p>
         </div>
         
@@ -99,7 +99,7 @@ declare(strict_types=1);
                     <div class="p-6">
                         {{-- Title --}}
                         <h3 class="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-600 transition-colors duration-300">
-                            <a href="/it/blog/{{ $article['id'] }}">
+                            <a href="{{ route('blog.show', $article['id']) }}">
                                 {{ $article['title'] }}
                             </a>
                         </h3>
@@ -153,9 +153,9 @@ declare(strict_types=1);
                                 </span>
                             </div>
                             
-                            <a href="/it/blog/{{ $article['id'] }}" 
+                            <a href="{{ route('blog.show', $article['id']) }}" 
                                class="text-blue-600 font-semibold text-sm hover:text-blue-800 transition-colors duration-200">
-                                Leggi di più →
+                                {{ __('pub_theme::blog.featured.read_more.label') }}
                             </a>
                         </div>
                     </div>

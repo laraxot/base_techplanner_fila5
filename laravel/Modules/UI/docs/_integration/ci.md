@@ -1,3 +1,10 @@
+---
+title: "ci"
+qmd: "ui integration ci md"
+type: note
+tags: [documentation]
+---
+
 # ci
 
 <!-- Contenuto migrato da _docs/ci.txt -->

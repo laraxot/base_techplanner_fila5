@@ -7,24 +7,11 @@ return [
         'title' => 'Password cambiata con successo!',
         'message' => 'La tua password è stata aggiornata.',
     ],
+    'settings_saved' => [
+        'title' => 'Einstellungen gespeichert',
+    ],
     'table_missing' => [
         'title' => 'Tabella Mancante',
         'body' => 'Tabella Mancante',
     ],
-<<<<<<< HEAD
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

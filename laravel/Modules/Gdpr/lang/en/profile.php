@@ -4,20 +4,19 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'Profili Privacy',
-        'plural' => 'Profili Privacy',
+        'name' => 'Privacy Profiles',
+        'plural' => 'Privacy Profiles',
         'group' => [
             'name' => 'GDPR',
-            'description' => 'Gestione dei profili di privacy degli utenti',
+            'description' => 'Manage user privacy profiles',
         ],
-        'label' => 'Profili Privacy',
+        'label' => 'Privacy Profiles',
         'sort' => '22',
         'icon' => 'gdpr-profile',
     ],
     'fields' => [
-<<<<<<< HEAD
         'user' => [
-            'label' => 'Utente',
+            'label' => 'User',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -29,65 +28,45 @@ return [
             'description' => '',
         ],
         'marketing_consent' => [
-            'label' => 'Consenso Marketing',
+            'label' => 'Marketing Consent',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'analytics_consent' => [
-            'label' => 'Consenso Analytics',
+            'label' => 'Analytics Consent',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'third_party_consent' => [
-            'label' => 'Consenso Terze Parti',
+            'label' => 'Third-party Consent',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'last_updated' => [
-            'label' => 'Ultimo Aggiornamento',
+            'label' => 'Last Updated',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'user' => 'Utente',
-        'preferences' => 'Preferenze',
-        'marketing_consent' => 'Consenso Marketing',
-        'analytics_consent' => 'Consenso Analytics',
-        'third_party_consent' => 'Consenso Terze Parti',
-        'last_updated' => 'Ultimo Aggiornamento',
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'preferences' => [
         'communication' => 'Preferenze Comunicazione',
-        'data_retention' => 'Conservazione Dati',
-        'data_sharing' => 'Condivisione Dati',
+        'data_retention' => 'Data Retention',
+        'data_sharing' => 'Data Sharing',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

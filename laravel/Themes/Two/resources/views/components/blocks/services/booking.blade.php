@@ -15,7 +15,7 @@
 --}}
 
 @props([
-    'serviceTitle' => 'Servizio',
+    'serviceTitle' => __('pub_theme::booking.defaults.service.label'),
     'availableDates' => [],
     'timeSlots' => [],
     'bookingForm' => [],
@@ -32,8 +32,8 @@
 <div class="service-booking bg-white rounded-lg shadow-lg border border-gray-200" id="{{ $bookingId }}">
     <!-- Booking Header -->
     <div class="bg-primary-600 text-white px-6 py-4 rounded-t-lg">
-        <h2 class="text-xl font-semibold">Prenota {{ $serviceTitle }}</h2>
-        <p class="text-primary-100 text-sm mt-1">Scegli data e ora per il tuo appuntamento</p>
+        <h2 class="text-xl font-semibold">{{ __('pub_theme::booking.header.title.title', ['service' => $serviceTitle]) }}</h2>
+        <p class="text-primary-100 text-sm mt-1">{{ __('pub_theme::booking.header.subtitle.message') }}</p>
     </div>
     
     <!-- Booking Form -->
@@ -56,9 +56,9 @@
                 </div>
             </div>
             <div class="flex justify-between mt-2 text-xs text-gray-600">
-                <span>Scegli data e ora</span>
-                <span>Dati personali</span>
-                <span>Conferma</span>
+                <span>{{ __('pub_theme::booking.steps.date_time.label') }}</span>
+                <span>{{ __('pub_theme::booking.steps.personal_data.label') }}</span>
+                <span>{{ __('pub_theme::booking.steps.confirm.label') }}</span>
             </div>
         </div>
         
@@ -68,7 +68,7 @@
                 <!-- Date Selection -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-3">
-                        Seleziona la data
+                        {{ __('pub_theme::booking.date.select.label') }}
                     </label>
                     <div class="grid grid-cols-3 gap-2" id="date-grid-{{ $bookingId }}">
                         @foreach($availableDates as $date)
@@ -88,7 +88,7 @@
                 <!-- Time Slot Selection -->
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-3">
-                        Seleziona l'orario
+                        {{ __('pub_theme::booking.time.select.label') }}
                     </label>
                     <div class="grid grid-cols-3 gap-2" id="time-grid-{{ $bookingId }}">
                         @foreach($timeSlots as $slot)
@@ -100,7 +100,7 @@
                         >
                             <div class="text-sm font-medium">{{ $slot['time'] }}</div>
                             @if(!$slot['available'])
-                            <div class="text-xs text-red-600">Non disp.</div>
+                            <div class="text-xs text-red-600">{{ __('pub_theme::booking.time.unavailable.label') }}</div>
                             @endif
                         </button>
                         @endforeach
@@ -110,9 +110,9 @@
             
             <!-- Selected Appointment Summary -->
             <div id="appointment-summary-{{ $bookingId }}" class="hidden mt-6 p-4 bg-blue-50 border border-blue-200 rounded-lg">
-                <h4 class="font-medium text-blue-900 mb-2">Appuntamento selezionato:</h4>
+                <h4 class="font-medium text-blue-900 mb-2">{{ __('pub_theme::booking.summary.selected.title') }}</h4>
                 <div class="text-sm text-blue-800">
-                    <span id="selected-date-{{ $bookingId }}"></span> alle <span id="selected-time-{{ $bookingId }}"></span>
+                    <span id="selected-date-{{ $bookingId }}"></span> {{ __('pub_theme::booking.summary.at.label') }} <span id="selected-time-{{ $bookingId }}"></span>
                 </div>
             </div>
             
@@ -124,7 +124,7 @@
                     id="step-1-next-{{ $bookingId }}"
                     disabled
                 >
-                    Continua
+                    {{ __('pub_theme::common.actions.next.label') }}
                 </button>
             </div>
         </div>
@@ -134,7 +134,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div>
                     <label for="first-name-{{ $bookingId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                        Nome *
+                        {{ __('pub_theme::booking.form.first_name.label') }}
                     </label>
                     <input 
                         type="text" 
@@ -147,7 +147,7 @@
                 
                 <div>
                     <label for="last-name-{{ $bookingId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                        Cognome *
+                        {{ __('pub_theme::booking.form.last_name.label') }}
                     </label>
                     <input 
                         type="text" 
@@ -160,7 +160,7 @@
                 
                 <div>
                     <label for="email-{{ $bookingId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                        Email *
+                        {{ __('pub_theme::booking.form.email.label') }}
                     </label>
                     <input 
                         type="email" 
@@ -173,7 +173,7 @@
                 
                 <div>
                     <label for="phone-{{ $bookingId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                        Telefono *
+                        {{ __('pub_theme::booking.form.phone.label') }}
                     </label>
                     <input 
                         type="tel" 
@@ -186,7 +186,7 @@
                 
                 <div class="md:col-span-2">
                     <label for="fiscal-code-{{ $bookingId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                        Codice Fiscale
+                        {{ __('pub_theme::booking.form.fiscal_code.label') }}
                     </label>
                     <input 
                         type="text" 
@@ -200,14 +200,14 @@
                 
                 <div class="md:col-span-2">
                     <label for="notes-{{ $bookingId }}" class="block text-sm font-medium text-gray-700 mb-2">
-                        Note aggiuntive
+                        {{ __('pub_theme::booking.form.notes.label') }}
                     </label>
                     <textarea 
                         id="notes-{{ $bookingId }}" 
                         name="notes"
                         rows="3"
                         class="w-full px-3 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-primary-500 focus:border-primary-500"
-                        placeholder="Inserisci eventuali note o richieste specifiche..."
+                        placeholder="{{ __('pub_theme::booking.form.notes.placeholder') }}"
                     ></textarea>
                 </div>
             </div>
@@ -218,14 +218,14 @@
                     onclick="goToStep('{{ $bookingId }}', 1)"
                     class="bg-gray-200 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-300 transition-colors"
                 >
-                    Indietro
+                    {{ __('pub_theme::common.actions.back.label') }}
                 </button>
                 <button 
                     type="button"
                     onclick="goToStep('{{ $bookingId }}', 3)"
                     class="bg-primary-600 text-white px-6 py-2 rounded-md hover:bg-primary-700 transition-colors"
                 >
-                    Continua
+                    {{ __('pub_theme::common.actions.next.label') }}
                 </button>
             </div>
         </div>
@@ -233,21 +233,21 @@
         <!-- Step 3: Confirmation -->
         <div id="step-3-content-{{ $bookingId }}" class="booking-step hidden">
             <div class="bg-gray-50 rounded-lg p-6">
-                <h3 class="text-lg font-semibold text-gray-900 mb-4">Riepilogo prenotazione</h3>
+                <h3 class="text-lg font-semibold text-gray-900 mb-4">{{ __('pub_theme::booking.recap.title.title') }}</h3>
                 
                 <!-- Appointment Details -->
                 <div class="mb-6">
-                    <h4 class="font-medium text-gray-900 mb-2">Dettagli appuntamento</h4>
+                    <h4 class="font-medium text-gray-900 mb-2">{{ __('pub_theme::booking.recap.appointment.title') }}</h4>
                     <div class="bg-white rounded-lg p-4 border border-gray-200">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <span class="text-sm text-gray-600">Servizio:</span>
+                                <span class="text-sm text-gray-600">{{ __('pub_theme::booking.recap.service.label') }}</span>
                                 <div class="font-medium">{{ $serviceTitle }}</div>
                             </div>
                             <div>
-                                <span class="text-sm text-gray-600">Data e ora:</span>
+                                <span class="text-sm text-gray-600">{{ __('pub_theme::booking.recap.datetime.label') }}</span>
                                 <div class="font-medium">
-                                    <span id="confirm-date-{{ $bookingId }}"></span> alle <span id="confirm-time-{{ $bookingId }}"></span>
+                                    <span id="confirm-date-{{ $bookingId }}"></span> {{ __('pub_theme::booking.summary.at.label') }} <span id="confirm-time-{{ $bookingId }}"></span>
                                 </div>
                             </div>
                         </div>
@@ -256,24 +256,24 @@
                 
                 <!-- Personal Information -->
                 <div class="mb-6">
-                    <h4 class="font-medium text-gray-900 mb-2">Dati personali</h4>
+                    <h4 class="font-medium text-gray-900 mb-2">{{ __('pub_theme::booking.steps.personal_data.label') }}</h4>
                     <div class="bg-white rounded-lg p-4 border border-gray-200">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <div>
-                                <span class="text-sm text-gray-600">Nome:</span>
+                                <span class="text-sm text-gray-600">{{ __('pub_theme::booking.recap.name.label') }}</span>
                                 <div class="font-medium" id="confirm-name-{{ $bookingId }}"></div>
                             </div>
                             <div>
-                                <span class="text-sm text-gray-600">Email:</span>
+                                <span class="text-sm text-gray-600">{{ __('pub_theme::booking.recap.email.label') }}</span>
                                 <div class="font-medium" id="confirm-email-{{ $bookingId }}"></div>
                             </div>
                             <div>
-                                <span class="text-sm text-gray-600">Telefono:</span>
+                                <span class="text-sm text-gray-600">{{ __('pub_theme::booking.recap.phone.label') }}</span>
                                 <div class="font-medium" id="confirm-phone-{{ $bookingId }}"></div>
                             </div>
                             @if($requiresPayment)
                             <div>
-                                <span class="text-sm text-gray-600">Costo:</span>
+                                <span class="text-sm text-gray-600">{{ __('pub_theme::booking.recap.cost.label') }}</span>
                                 <div class="font-medium text-primary-600">€25.00</div>
                             </div>
                             @endif
@@ -292,7 +292,7 @@
                             class="mt-1 mr-3"
                         />
                         <span class="text-sm text-gray-600">
-                            Accetto i <a href="/termini-servizio" class="text-primary-600 hover:text-primary-700">termini di servizio</a> e l'<a href="/privacy" class="text-primary-600 hover:text-primary-700">informativa sulla privacy</a> *
+                            {{ __('pub_theme::booking.consent.prefix.label') }} <a href="/termini-servizio" class="text-primary-600 hover:text-primary-700">{{ __('pub_theme::booking.consent.terms.label') }}</a> {{ __('pub_theme::booking.consent.conjunction.label') }}<a href="/privacy" class="text-primary-600 hover:text-primary-700">{{ __('pub_theme::booking.consent.privacy.label') }}</a> *
                         </span>
                     </label>
                 </div>
@@ -304,7 +304,7 @@
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                         <div class="text-sm text-blue-800">
-                            <strong>Nota:</strong> Riceverai una conferma via email e SMS. Puoi cancellare la prenotazione fino a 24 ore prima dell'appuntamento.
+                            <strong>{{ __('pub_theme::booking.notice.note.label') }}</strong> {{ __('pub_theme::booking.notice.confirmation.message') }}
                         </div>
                     </div>
                 </div>
@@ -316,7 +316,7 @@
                     onclick="goToStep('{{ $bookingId }}', 2)"
                     class="bg-gray-200 text-gray-700 px-6 py-2 rounded-md hover:bg-gray-300 transition-colors"
                 >
-                    Indietro
+                    {{ __('pub_theme::common.actions.back.label') }}
                 </button>
                 <button 
                     type="submit"
@@ -325,7 +325,7 @@
                     <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                     </svg>
-                    Conferma prenotazione
+                    {{ __('pub_theme::booking.actions.confirm.label') }}
                 </button>
             </div>
         </div>
@@ -335,8 +335,8 @@
     <div id="loading-{{ $bookingId }}" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
         <div class="bg-white rounded-lg p-6 text-center">
             <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mx-auto mb-4"></div>
-            <h3 class="text-lg font-semibold text-gray-900 mb-2">Prenotazione in corso...</h3>
-            <p class="text-gray-600">Stiamo elaborando la tua richiesta</p>
+            <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ __('pub_theme::booking.loading.progress.title') }}</h3>
+            <p class="text-gray-600">{{ __('pub_theme::booking.loading.progress.message') }}</p>
         </div>
     </div>
     
@@ -348,13 +348,13 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
                 </svg>
             </div>
-            <h3 class="text-xl font-semibold text-gray-900 mb-2">Prenotazione confermata!</h3>
-            <p class="text-gray-600 mb-6">Ti abbiamo inviato una email con tutti i dettagli dell'appuntamento.</p>
+            <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ __('pub_theme::booking.success.confirmed.title') }}</h3>
+            <p class="text-gray-600 mb-6">{{ __('pub_theme::booking.success.confirmed.message') }}</p>
             <button 
                 onclick="closeSuccessModal('{{ $bookingId }}')"
                 class="bg-primary-600 text-white px-6 py-2 rounded-md hover:bg-primary-700 transition-colors"
             >
-                Chiudi
+                {{ __('pub_theme::common.actions.close.label') }}
             </button>
         </div>
     </div>
@@ -546,7 +546,7 @@ document.addEventListener('input', function(e) {
         // Basic email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailRegex.test(e.target.value)) {
-            e.target.setCustomValidity('Inserisci un\'email valida');
+            e.target.setCustomValidity(@js(__('pub_theme::booking.validation.email.message')));
         } else {
             e.target.setCustomValidity('');
         }
@@ -556,7 +556,7 @@ document.addEventListener('input', function(e) {
         if (e.target.value.length === 16) {
             e.target.setCustomValidity('');
         } else {
-            e.target.setCustomValidity('Il codice fiscale deve avere 16 caratteri');
+            e.target.setCustomValidity(@js(__('pub_theme::booking.validation.fiscal_code.message')));
         }
     }
 });

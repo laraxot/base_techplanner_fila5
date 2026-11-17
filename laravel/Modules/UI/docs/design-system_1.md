@@ -1,3 +1,10 @@
+---
+title: "Design System"
+qmd: "ui design system 1 md"
+type: note
+tags: [documentation]
+---
+
 # Design System
 
 ## Panoramica

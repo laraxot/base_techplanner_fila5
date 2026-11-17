@@ -1,3 +1,10 @@
+---
+title: "Chart Export Strategy (PNG/SVG)"
+qmd: "ui charts export strategy md"
+type: note
+tags: [documentation]
+---
+
 # Chart Export Strategy (PNG/SVG)
 
 > **Goal**: Allow users to download Filament charts as images (PNG) or vectors (SVG) for reports.

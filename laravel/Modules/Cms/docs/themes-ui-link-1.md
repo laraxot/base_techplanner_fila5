@@ -1,3 +1,14 @@
+---
+title: "themes ui link 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "themes ui link 1"
+issues: []
+discussions: []
+---
+
 # Collegamenti ai Temi e UI
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo Cms e il modulo UI per quanto riguarda i temi.
@@ -11,15 +22,9 @@ Secondo le regole di organizzazione della documentazione:
 
 ## Collegamenti ai Temi nel Modulo UI
 
-<<<<<<< HEAD
-- [Componenti UI](../../ui/docs/readme.md) - Panoramica dei componenti UI disponibili
+- [Componenti UI](../../UI/docs/README.md) - Panoramica dei componenti UI disponibili
 - [Layout e Temi](../../ui/docs/layouts-and-themes.md) - Documentazione sui layout e temi
 - [Componenti Blade](../../ui/docs/blade-components.md) - Componenti Blade riutilizzabili
-=======
-- [Componenti UI](../../UI/docs/README.md) - Panoramica dei componenti UI disponibili
-- [Layout e Temi](../../UI/docs/layouts-and-themes.md) - Documentazione sui layout e temi
-- [Componenti Blade](../../UI/docs/blade-components.md) - Componenti Blade riutilizzabili
->>>>>>> 6ed19256f (.)
 
 ## Collegamenti ai Temi nel Modulo Cms
 
@@ -29,7 +34,6 @@ Secondo le regole di organizzazione della documentazione:
 
 ## Collegamenti ai Temi nella Root
 
-<<<<<<< HEAD
 - [Compilazione Temi](../../../../docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
 - [Theme Links](../../../../docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
 
@@ -38,13 +42,3 @@ Secondo le regole di organizzazione della documentazione:
 Questo documento è collegato bidirezionalmente con [cms-themes-link.md](../../ui/docs/cms-themes-link.md) nel modulo UI.
 
 > Aggiorna entrambi i riferimenti se modifichi la documentazione dei temi o aggiungi nuove sezioni.
-=======
-- [Compilazione Temi](../../../docs/compilazione_temi.md) - Collegamento nella root alla documentazione sulla compilazione dei temi
-- [Theme Links](../../../docs/theme-links.md) - Collegamenti nella root alla documentazione sui temi
-
-## Collegamento Bidirezionale
-
-Questo documento è collegato bidirezionalmente con [cms-themes-link.md](../../UI/docs/cms-themes-link.md) nel modulo UI.
-
-> Aggiorna entrambi i riferimenti se modifichi la documentazione dei temi o aggiungi nuove sezioni.
->>>>>>> 6ed19256f (.)

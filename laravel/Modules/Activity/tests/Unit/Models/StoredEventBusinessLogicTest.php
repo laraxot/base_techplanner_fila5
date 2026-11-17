@@ -1,84 +1,47 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
 
-uses(\Modules\Activity\Tests\TestCase::class);
-use Modules\Activity\Models\StoredEvent;
-use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
+namespace Modules\Activity\Tests\Unit\Models;
 
-describe('StoredEvent Business Logic', function (): void {
-    test('stored event has correct connection configured', function (): void {
-        $storedEvent = new StoredEvent;
-=======
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Activity\Models\StoredEvent;
-use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEvent;
+use Modules\Activity\Tests\TestCase;
+use Modules\Xot\Models\Traits\HasXotFactory;
+use PHPUnit\Framework\Assert;
+use Spatie\EventSourcing\StoredEvents\Models\EloquentStoredEventQueryBuilder;
 
 use function Safe\class_uses;
 
-describe('StoredEvent Business Logic', function (): void {
-    test('stored event has correct connection configured', function (): void {
-        $storedEvent = new StoredEvent();
->>>>>>> 6ed19256f (.)
+uses(TestCase::class);
 
-        expect($storedEvent->getConnectionName())->toBe('activity');
-    });
+test('stored event uses the default connection in testing and the stored_events table', function (): void {
+    $storedEvent = new StoredEvent;
 
-    test('stored event has correct table configured', function (): void {
-<<<<<<< HEAD
-        $storedEvent = new StoredEvent;
-=======
-        $storedEvent = new StoredEvent();
->>>>>>> 6ed19256f (.)
+    Assert::assertSame(config('database.default'), $storedEvent->getConnectionName());
+    Assert::assertSame('stored_events', $storedEvent->getTable());
+});
 
-        expect($storedEvent->getTable())->toBe('stored_events');
-    });
+test('stored event exposes the event sourcing fillable attributes', function (): void {
+    $expected = [
+        'id',
+        'aggregate_uuid',
+        'aggregate_version',
+        'event_version',
+        'event_class',
+        'event_properties',
+        'meta_data',
+        'created_at',
+        'updated_by',
+        'created_by',
+    ];
 
-    test('stored event has expected fillable fields for event sourcing', function (): void {
-<<<<<<< HEAD
-        $storedEvent = new StoredEvent;
-=======
-        $storedEvent = new StoredEvent();
->>>>>>> 6ed19256f (.)
-        $expectedFillable = [
-            'id',
-            'aggregate_uuid',
-            'aggregate_version',
-            'event_version',
-            'event_class',
-            'event_properties',
-            'meta_data',
-            'created_at',
-            'updated_by',
-            'created_by',
-        ];
+    Assert::assertSame($expected, (new StoredEvent)->getFillable());
+});
 
-        expect($storedEvent->getFillable())->toEqual($expectedFillable);
-    });
+test('stored event uses the Xot factory trait', function (): void {
+    Assert::assertArrayHasKey(HasXotFactory::class, class_uses(StoredEvent::class));
+});
 
-    test('stored event extends eloquent stored event for event sourcing', function (): void {
-        // @phpstan-ignore-next-line - is_subclass_of with class strings is always true for existing inheritance
-        expect(is_subclass_of(
-            StoredEvent::class,
-            EloquentStoredEvent::class,
-        ))->toBeTrue();
-    });
-
-    test('stored event has query builder methods documented', function (): void {
-        // Verify query builder methods are available through @method annotations in PHPDoc
-        // These are provided by Spatie's EloquentStoredEventQueryBuilder:
-        // - afterVersion(int $version)
-        // - whereAggregateRoot(string $uuid)
-        // - whereEvent(string ...$eventClasses)
-
-        $reflection = new \ReflectionClass(StoredEvent::class);
-        $docComment = $reflection->getDocComment();
-
-        // Verify @method annotations exist for query builder methods
-        expect($docComment)->toContain('@method');
-        expect($docComment)->toContain('afterVersion');
-        expect($docComment)->toContain('whereAggregateRoot');
-        expect($docComment)->toContain('whereEvent');
-    });
+test('stored event exposes the event sourcing query builder', function (): void {
+    Assert::assertInstanceOf(EloquentStoredEventQueryBuilder::class, StoredEvent::query());
 });

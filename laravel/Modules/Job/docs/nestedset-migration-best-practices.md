@@ -1,3 +1,14 @@
+---
+title: "nestedset migration best practices"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "nestedset migration best practices"
+issues: []
+discussions: []
+---
+
 # NestedSet Migration Best Practices - Job Module
 
 ## Overview
@@ -454,7 +465,6 @@ return new class extends XotBaseMigration
 - [Documentazione principale](/docs/migration/nestedset-best-practices.md)
 - [Job Module Architecture](/docs/architecture/job-module.md)
 - [AddressItemEnum Integration](/docs/address-item-enum-integration.md)
-<<<<<<< HEAD
 # NestedSet Migration Best Practices — DOCUMENTO LEGACY
 
 > **ATTENZIONE**: Questo documento è **legacy**. Il progetto ha completato la migrazione
@@ -492,5 +502,3 @@ class MyTreeModel extends BaseTreeModel
 - **2026-03**: Rimozione completa di `kalnoy/nestedset`
 
 *Ultimo aggiornamento: marzo 2026*
-=======
->>>>>>> 6ed19256f (.)

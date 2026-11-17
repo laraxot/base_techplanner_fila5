@@ -5,11 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth-Autorisierungscode',
-<<<<<<< HEAD
         'group' => '',
-=======
-        'group' => 'OAuth',
->>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-key',
         'sort' => 32,
     ],
@@ -18,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -58,26 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'user_id' => [
-            'label' => 'Benutzer',
-        ],
-        'client_id' => [
-            'label' => 'Client',
-        ],
-        'name' => [
-            'label' => 'Name',
-        ],
-        'scopes' => [
-            'label' => 'Bereiche',
-        ],
-        'revoked' => [
-            'label' => 'Widerrufen',
-        ],
-        'expires_at' => [
-            'label' => 'Läuft Ab Am',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

@@ -1,10 +1,22 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🚀 Phases Folder
 
 > Execution work breakdown and implementation plans for each project phase
 
 **Status**: Planning  
 **Last Updated**: 2026-04-02  
-**Related**: [← Master Index](../00-HOMEPAGE-REPLICATION-INDEX.md)
+**Related**: [← Master Index](../00-homepage-replication-index.md)
 
 ---
 
@@ -45,7 +57,7 @@ Phase E (Day 3-4)     Polish & Testing         ⏳ → 🎯
 **Inputs**: Reference + local URLs  
 **Outputs**: Analysis docs + screenshots  
 
-🔗 [Read Full Plan](./01-PHASE-A-DISCOVERY.md)
+🔗 [Read Full Plan](01-phase-a-discovery.md)
 
 ---
 
@@ -232,7 +244,7 @@ Analysis (A)
    - Archive phase → proceed to next
 
 ### 5. **Update Master Index**
-   - Confirm phase status in [Master Index](../00-HOMEPAGE-REPLICATION-INDEX.md)
+   - Confirm phase status in [Master Index](../00-homepage-replication-index.md)
    - Update roadmap progress
 
 ---
@@ -301,7 +313,15 @@ Each phase document includes "Lessons Learned" section for future reference.
 ---
 
 **Navigation**: 
-- [← Back to Master Index](../00-HOMEPAGE-REPLICATION-INDEX.md)
+- [← Back to Master Index](../00-homepage-replication-index.md)
 - [← Previous: Mappings](../mappings/README.md)
-- [First Phase →](./01-PHASE-A-DISCOVERY.md)
+- [First Phase →](01-phase-a-discovery.md)
 
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

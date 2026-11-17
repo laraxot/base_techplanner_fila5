@@ -1,4 +1,21 @@
+---
+title: "vite errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "vite errors"
+issues: []
+discussions: []
+---
+
 # Gestione Errori Vite nei Temi
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Perché
 I temi sono una componente fondamentale del modulo CMS e la loro corretta compilazione attraverso Vite è essenziale per il funzionamento dell'interfaccia utente. Gli errori di compilazione Vite possono bloccare la visualizzazione del tema e devono essere gestiti in modo sistematico.
@@ -35,11 +52,7 @@ ThemeName/
 
 ### 1. Verifica Preliminare
 ```bash
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
-=======
-cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/[NomeTema]
->>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Processo di Compilazione
@@ -48,7 +61,7 @@ cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/[NomeTema]
 npm install
 
 # Compilazione tema
-npm run copy
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
 
 ### 3. Verifica Post-Compilazione
@@ -73,15 +86,9 @@ ls -la dist/
 - Verifica dell'integrità dei file compilati
 
 ## Collegamenti Correlati
-- [Documentazione Generale Errori](/project_docs/errors/README.md)
-- [Gestione Temi CMS](../themes/README.md)
-- [Processo di Deploy](../../project_docs/deployment/THEMES.md)
-<<<<<<< HEAD
 - [Documentazione Generale Errori](/project_docs/errors/readme.md)
 - [Gestione Temi CMS](../themes/readme.md)
-- [Processo di Deploy](../../project_docs/deployment/themes.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Processo di Deploy](../frontoffice/themes.md)
 
 ## Note Tecniche
 - La compilazione deve essere eseguita per ogni tema individualmente
@@ -118,14 +125,12 @@ npm cache clean --force
 
 # Ricompilazione forzata
 rm -rf dist/ node_modules/
-npm install && npm run copy
+npm install
+
+npm install && npm run build
 ```
 
 ## Manutenzione
 - Aggiornare regolarmente le dipendenze npm
 - Verificare la compatibilità con le versioni Laravel
-- Mantenere backup dei file di configurazione
-<<<<<<< HEAD
 - Mantenere backup dei file di configurazione 
-=======
->>>>>>> 6ed19256f (.)

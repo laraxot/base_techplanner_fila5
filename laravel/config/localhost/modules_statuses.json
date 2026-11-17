@@ -15,7 +15,7 @@
     "Tag": true,
     "Trade": true,
     "Media": true,
-    "Quaeris": true,
+    "<nome progetto>": true,
     "Smarty": true,
     "Lang": true,
     "Notify": true,
@@ -34,6 +34,6 @@
     "Shop": true,
     "RealEstate": true,
     "AI": true,
-    "Employee":true,
+    "Employee": true,
     "TechPlanner": true
 }

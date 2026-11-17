@@ -1,3 +1,10 @@
+---
+title: "Task: Cleanup Redundant Files (UI Module)"
+qmd: "ui tasks cleanup redundant files md"
+type: note
+tags: [documentation]
+---
+
 # Task: Cleanup Redundant Files (UI Module)
 
 ## 📋 Obiettivo

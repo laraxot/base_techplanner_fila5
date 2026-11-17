@@ -1,12 +1,19 @@
+---
+title: "UI Module - Comprehensive Analysis"
+qmd: "ui module analysis md"
+type: note
+tags: [documentation]
+---
+
 # UI Module - Comprehensive Analysis
 
 ## Module Overview
-**Module Name**: UI  
-**Type**: User Interface & Component Library Module  
-**Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x + Tailwind CSS  
-**Component Library**: Custom UI components and styles  
-**Language**: Multi-language (IT/EN/DE)  
+**Module Name**: UI
+**Type**: User Interface & Component Library Module
+**Status**: ✅ Active
+**Framework**: Laravel 12.x + Filament 4.x + Tailwind CSS
+**Component Library**: Custom UI components and styles
+**Language**: Multi-language (IT/EN/DE)
 
 ## Purpose
 The UI module provides comprehensive user interface components and styling:
@@ -60,7 +67,7 @@ The UI module provides comprehensive user interface components and styling:
 ## Integration with Other Modules
 - **User**: Authentication interface components
 - **Cms**: Content display components
-- **Quaeris**: Dashboard UI components
+- **<nome progetto>**: Dashboard UI components
 - **Xot**: Base UI infrastructure
 - **Filament**: Component compatibility
 

@@ -1,3 +1,10 @@
+---
+title: "Task: UI Docs Cleanup"
+qmd: "ui tasks ui cleanup docs md"
+type: note
+tags: [documentation]
+---
+
 # Task: UI Docs Cleanup
 
 ## 📋 Obiettivo

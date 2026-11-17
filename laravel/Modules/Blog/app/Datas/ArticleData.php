@@ -8,6 +8,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Collection;
 use Modules\Blog\Actions\Category\GetBloodline;
 use Modules\Blog\Models\Article;
+use Modules\Blog\Models\Category;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
 
@@ -15,6 +16,15 @@ class ArticleData extends Data implements \Stringable
 {
     public string $title;
 
+    /**
+     * @param array<string, string>|string $title
+     * @param array<int|string, mixed>|null $content_blocks
+     * @param array<int|string, mixed>|null $sidebar_blocks
+     * @param array<int|string, mixed>|null $footer_blocks
+     * @param Collection<int, Category>|null $categories
+     * @param array<int|string, array<string, mixed>>|null $ratings
+     * @param Collection<int, mixed>|null $tags
+     */
     public function __construct(
         public string $id,
         public string $uuid,
@@ -56,7 +66,8 @@ class ArticleData extends Data implements \Stringable
 
         Assert::notNull($article = Article::where('uuid', $this->uuid)->first(), '['.__LINE__.']['.__FILE__.']');
         // $this->betting_users = $article->getBettingUsers();
-        $this->ratings = $article->getArrayRatingsWithImage();
+        $ratings = $article->getArrayRatingsWithImage();
+        $this->ratings = is_array($ratings) ? array_values($ratings) : null;
         $this->time_left_for_humans = $article->getTimeLeftForHumans();
         // $this->volume_credit = $article->getVolumeCredit();
         $this->tags = $article->tags->map(fn ($tag) => $tag->name ?? '');
@@ -77,6 +88,9 @@ class ArticleData extends Data implements \Stringable
         return '['.__LINE__.']['.__FILE__.']';
     }
 
+    /**
+     * @return Collection<int, Category>
+     */
     public function getCategories(): Collection
     {
         return app(GetBloodline::class)->execute($this->category_id);

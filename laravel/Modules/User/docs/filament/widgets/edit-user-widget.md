@@ -1,3 +1,20 @@
+---
+title: "EditUserWidget: Widget generico per la modifica dati utente"
+type: concept
+tags: [edit, user, widget]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "edit-user-widget edituserwidget: widget generico per la modifica dati utente"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./dashboard-filters-integration.md"
+  - "./registration-widget-fileupload-fix.md"
+  - "./registration-widget-fileupload.md"
+  - "./registration-widget.md"
+status: draft
+---
+
 # EditUserWidget: Widget generico per la modifica dati utente
 
 ## Scopo e filosofia
@@ -26,13 +43,8 @@ Se l'utente non ha i permessi, viene mostrato un messaggio di errore invece del 
 Ogni modulo che implementa un tipo di utente deve fornire la propria Action di aggiornamento, ad esempio:
 - `Modules\<nome modulo>\Actions\Doctor\UpdateUserAction`
 - `Modules\<nome modulo>\Actions\Patient\UpdateUserAction`
-<<<<<<< HEAD
 - `Modules\<nome progetto>\Actions\Doctor\UpdateUserAction`
 - `Modules\<nome progetto>\Actions\Patient\UpdateUserAction`
-=======
-- `Modules\SaluteOra\Actions\Doctor\UpdateUserAction`
-- `Modules\SaluteOra\Actions\Patient\UpdateUserAction`
->>>>>>> 6ed19256f (.)
 Queste Action devono occuparsi di:
 - Validare i dati ricevuti
 - Aggiornare il modello corretto (Doctor, Patient, ...)
@@ -98,39 +110,21 @@ __('user::profile.no_permission')
 - [UpdateUserAction.php](../../app/Actions/User/UpdateUserAction.php)
 - [View Template](../../../../Themes/One/resources/views/filament/widgets/edit-user.blade.php)
 - [Documentazione RegistrationWidget](./registration-widget.md)
-- [Documentazione Xot sulla proprietà $data](../../../Xot/docs/filament/widgets/data-property.md)
-- [Documentazione Xot sulla proprietà $data](../../../Xot/project_docs/filament/widgets/data-property.md)
-<<<<<<< HEAD
 - [Documentazione Xot sulla proprietà $data](../../../xot/docs/filament/widgets/data-property.md)
 - [Documentazione Xot sulla proprietà $data](../../../xot/project_docs/filament/widgets/data-property.md)
 ## Esempi di implementazione specifica
 ### Action per Doctor
 namespace Modules\<nome modulo>\Actions\Doctor;
 namespace Modules\<nome progetto>\Actions\Doctor;
-=======
-## Esempi di implementazione specifica
-### Action per Doctor
-namespace Modules\<nome modulo>\Actions\Doctor;
-namespace Modules\SaluteOra\Actions\Doctor;
->>>>>>> 6ed19256f (.)
 class UpdateUserAction extends \Modules\User\Actions\User\UpdateUserAction
     protected function afterUpdate(Model $user, array $data): void
         // Logica specifica per dottori
         // es. aggiornamento specializzazioni, studi, ecc.
 ### Action per Patient
 namespace Modules\<nome modulo>\Actions\Patient;
-<<<<<<< HEAD
 namespace Modules\<nome progetto>\Actions\Patient;
-=======
-namespace Modules\SaluteOra\Actions\Patient;
->>>>>>> 6ed19256f (.)
         // Logica specifica per pazienti
         // es. aggiornamento dati medici, preferenze, ecc.
 ---
 **Nota:**
 Se vuoi estendere la logica di aggiornamento per un nuovo tipo di utente, crea una nuova Action seguendo la convenzione e aggiorna la documentazione del modulo specifico. La documentazione generale delle regole e delle convenzioni si trova nel modulo Xot e va sempre collegata da qui.
-<<<<<<< HEAD
-*Ultimo aggiornamento: dicembre 2024*
-=======
-*Ultimo aggiornamento: dicembre 2024*
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,10 @@
+---
+title: "qrcode"
+qmd: "ui integration qrcode md"
+type: note
+tags: [documentation]
+---
+
 # qrcode
 
 <!-- Contenuto migrato da _docs/qrcode.txt -->

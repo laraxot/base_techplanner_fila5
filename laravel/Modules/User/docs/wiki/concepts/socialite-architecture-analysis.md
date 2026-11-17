@@ -6,15 +6,17 @@ created: 2026-04-20
 updated: 2026-04-20
 tags: [socialite, oauth, google, github, authentication, architecture, social-login]
 sources:
-  - https://developers.google.com/identity/protocols/oauth2/web-server
-  - https://filamentphp.com/plugins/chrisreedio-socialment
-  - https://filamentphp.com/plugins/dododedodonl-socialite
-  - laravel/Modules/User/app/Models/SocialiteUser.php
-  - laravel/Modules/User/app/Models/SocialProvider.php
-  - laravel/Modules/User/config/socialite.php
 related:
-  - ./socialite-admin-configuration.md
-  - ../../../../docs/wiki/concepts/oauth-security.md
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
+status: draft
+qmd: "socialite architecture analysis user"
 ---
 
 # Socialite Architecture Analysis
@@ -101,7 +103,7 @@ public function user(): BelongsTo
 }
 ```
 
-**Migration**: `2023_01_01_000003_create_socialite_user_table.php`
+**Migration**: `2026_11_12_120002_create_socialite_users_table.php` (connessione `user`)
 
 ---
 

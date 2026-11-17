@@ -1,3 +1,10 @@
+---
+title: "Struttura delle Filament Resources"
+qmd: "ui archive filament resources structure 1 md"
+type: note
+tags: [documentation]
+---
+
 # Struttura delle Filament Resources
 
 ## Panoramica

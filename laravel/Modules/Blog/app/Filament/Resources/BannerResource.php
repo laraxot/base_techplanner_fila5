@@ -29,13 +29,6 @@ class BannerResource extends XotBaseResource
     // {
     //     return ['it', 'en'];
     // }
-    /**
-     * @return array<string|int, Component>
-     */
-    public static function getFormSchema(): array
-    {
-        return static::getFormFields();
-    }
 
     /**
      * Ritorna i campi del form (compatibilità con XotBaseResource).

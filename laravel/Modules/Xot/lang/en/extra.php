@@ -8,38 +8,32 @@ return [
         'plural' => 'Extra',
         'group' => [
             'name' => 'Sistema',
-            'description' => 'Gestione delle funzionalità aggiuntive del sistema',
+            'description' => 'Management of additional system features',
         ],
-        'label' => 'extra',
+        'label' => 'Extra',
         'sort' => '13',
         'icon' => 'xot-extra',
     ],
     'fields' => [
         'name' => [
-            'label' => 'Nome',
-            'placeholder' => 'Inserisci il nome dell\'extra',
-            'help' => 'Nome identificativo dell\'extra',
-<<<<<<< HEAD
+            'label' => 'Name',
+            'placeholder' => 'Enter the extra name',
+            'help' => 'Extra identifier name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
-            'label' => 'Descrizione',
-            'placeholder' => 'Inserisci una descrizione dettagliata',
-            'help' => 'Descrizione completa delle funzionalità dell\'extra',
-<<<<<<< HEAD
+            'label' => 'Description',
+            'placeholder' => 'Enter a detailed description',
+            'help' => 'Full description of the extra\'s features',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
-            'placeholder' => 'Seleziona il tipo di extra',
+            'placeholder' => 'Select the extra type',
             'help' => 'Categoria funzionale dell\'extra',
             'options' => [
                 'config' => 'Configurazione',
@@ -49,277 +43,206 @@ return [
                 'widget' => 'Widget',
                 'service' => 'Servizio',
                 'integration' => 'Integrazione',
-                'utility' => 'Utilità',
+                'utility' => 'Utility',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
-            'label' => 'Stato',
-            'help' => 'Stato attuale dell\'extra',
+            'label' => 'Status',
+            'help' => 'Current status of the extra',
             'options' => [
-                'active' => 'Attivo',
+                'active' => 'Active',
                 'inactive' => 'Inattivo',
                 'pending' => 'In attesa',
-                'error' => 'Errore',
+                'error' => 'Error',
                 'updating' => 'In aggiornamento',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Versione',
-            'placeholder' => 'Inserisci la versione (es. 1.0.0)',
+            'placeholder' => 'Enter the version (e.g. 1.0.0)',
             'help' => 'Versione semantica dell\'extra',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'dependencies' => [
             'label' => 'Dipendenze',
-            'placeholder' => 'Seleziona le dipendenze richieste',
+            'placeholder' => 'Select the required dependencies',
             'help' => 'Altri extra o componenti necessari',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'priority' => [
-            'label' => 'Priorità',
-            'placeholder' => 'Seleziona la priorità',
-            'help' => 'Priorità di caricamento dell\'extra',
+            'label' => 'Priority',
+            'placeholder' => 'Select the priority',
+            'help' => 'Load priority of the extra',
             'options' => [
                 'high' => 'Alta',
                 'medium' => 'Media',
                 'low' => 'Bassa',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'settings' => [
-            'label' => 'Impostazioni',
-            'placeholder' => 'Configura le impostazioni',
+            'label' => 'Settings',
+            'placeholder' => 'Configure settings',
             'help' => 'Configurazioni specifiche dell\'extra',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
-            'help' => 'Data e ora di creazione dell\'extra',
-<<<<<<< HEAD
+            'help' => 'Date and time the extra was created',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
-            'label' => 'Ultimo Aggiornamento',
-            'help' => 'Data e ora dell\'ultima modifica',
-<<<<<<< HEAD
+            'label' => 'Last Updated',
+            'help' => 'Date and time of the last modification',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'id' => [
-            'label' => 'id',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'model_type' => [
-            'label' => 'model_type',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'model_id' => [
-            'label' => 'model_id',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'extra_attributes' => [
-            'label' => 'extra_attributes',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'create' => [
-            'label' => 'create',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'id' => [
-            'label' => 'id',
-        ],
-        'model_type' => [
-            'label' => 'model_type',
-        ],
-        'model_id' => [
-            'label' => 'model_id',
-        ],
-        'extra_attributes' => [
-            'label' => 'extra_attributes',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'install' => [
             'label' => 'Installa',
-            'success' => 'Extra installato con successo',
-            'error' => 'Errore durante l\'installazione',
+            'success' => 'Extra installed successfully',
+            'error' => 'Error during installation',
         ],
         'uninstall' => [
             'label' => 'Disinstalla',
-            'success' => 'Extra disinstallato con successo',
-            'error' => 'Errore durante la disinstallazione',
+            'success' => 'Extra uninstalled successfully',
+            'error' => 'Error during uninstallation',
         ],
         'activate' => [
-            'label' => 'Attiva',
-            'success' => 'Extra attivato con successo',
-            'error' => 'Errore durante l\'attivazione',
+            'label' => 'Activate',
+            'success' => 'Extra activated successfully',
+            'error' => 'Error during activation',
         ],
         'deactivate' => [
             'label' => 'Disattiva',
-            'success' => 'Extra disattivato con successo',
-            'error' => 'Errore durante la disattivazione',
+            'success' => 'Extra deactivated successfully',
+            'error' => 'Error during deactivation',
         ],
         'update' => [
-            'label' => 'Aggiorna',
-            'success' => 'Extra aggiornato con successo',
-            'error' => 'Errore durante l\'aggiornamento',
+            'label' => 'Refresh',
+            'success' => 'Extra updated successfully',
+            'error' => 'Error during update',
         ],
         'configure' => [
             'label' => 'Configura',
-            'success' => 'Configurazione salvata con successo',
-            'error' => 'Errore durante il salvataggio della configurazione',
+            'success' => 'Configuration saved successfully',
+            'error' => 'Error while saving the configuration',
         ],
     ],
     'messages' => [
         'validation' => [
             'name' => [
                 'required' => 'The name is required',
-                'unique' => 'Questo nome è già in uso',
-                'regex' => 'Il nome può contenere solo lettere, numeri e trattini',
+                'unique' => 'This name is already in use',
+                'regex' => 'The name may only contain letters, numbers and dashes',
             ],
             'type' => [
                 'required' => 'The type is required',
-                'in' => 'Il tipo selezionato non è valido',
+                'in' => 'The selected type is not valid',
             ],
             'version' => [
-                'required' => 'La versione è obbligatoria',
-                'regex' => 'Il formato della versione deve essere X.Y.Z',
+                'required' => 'The version is required',
+                'regex' => 'The version format must be X.Y.Z',
             ],
             'priority' => [
-                'required' => 'La priorità è obbligatoria',
-                'in' => 'La priorità selezionata non è valida',
+                'required' => 'The priority is required',
+                'in' => 'The selected priority is not valid',
             ],
         ],
         'errors' => [
             'dependency_missing' => 'Dipendenza mancante: :name',
             'incompatible_version' => 'Versione incompatibile: :name richiede :version',
             'installation_failed' => 'Installazione fallita: :reason',
-            'configuration_invalid' => 'Configurazione non valida: :reason',
+            'configuration_invalid' => 'Invalid configuration: :reason',
             'system_incompatible' => 'Sistema incompatibile: richiede :requirement',
         ],
         'warnings' => [
-            'update_available' => 'È disponibile un aggiornamento alla versione :version',
-            'dependency_update' => 'La dipendenza :name richiede un aggiornamento',
-            'backup_recommended' => 'Si consiglia di effettuare un backup prima di procedere',
+            'update_available' => 'An update to version :version is available',
+            'dependency_update' => 'The :name dependency requires an update',
+            'backup_recommended' => 'We recommend making a backup before proceeding',
         ],
         'info' => [
-            'dependencies_ok' => 'Tutte le dipendenze sono soddisfatte',
-            'configuration_valid' => 'La configurazione è valida',
-            'system_compatible' => 'Il sistema è compatibile',
+            'dependencies_ok' => 'All dependencies are satisfied',
+            'configuration_valid' => 'The configuration is valid',
+            'system_compatible' => 'The system is compatible',
         ],
     ],
     'model' => [
         'label' => 'extra.model',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

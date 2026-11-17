@@ -1,4 +1,21 @@
+---
+title: "assets troubleshooting"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "assets troubleshooting"
+issues: []
+discussions: []
+---
+
 # Risoluzione Problemi con Assets dei Temi
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 > [!NOTE]
 > Questo documento è collegato alla documentazione principale in `/docs/VITE_ASSETS_TROUBLESHOOTING.md`
@@ -11,11 +28,7 @@ Illuminate\Foundation\ViteException
 Unable to locate file in Vite manifest: resources/css/app.css.
 ```
 
-Questo errore è uno dei più comuni nella gestione dei temi. Per la risoluzione dettagliata, consultare la [documentazione principale sulla risoluzione problemi Vite](/docs/VITE_ASSETS_TROUBLESHOOTING.md).
-<<<<<<< HEAD
 Questo errore è uno dei più comuni nella gestione dei temi. Per la risoluzione dettagliata, consultare la [documentazione principale sulla risoluzione problemi Vite](/docs/vite_assets_troubleshooting.md).
-=======
->>>>>>> 6ed19256f (.)
 
 ## Perché documentare qui?
 
@@ -25,13 +38,9 @@ Questo errore è uno dei più comuni nella gestione dei temi. Per la risoluzione
 
 ## Collegamenti Rilevanti
 
-- [Processo di Build dei Temi](theme-build-process.md)
+- [Processo di Build dei Temi](../theme-build-process.md)
 - [Compilazione dei Temi](theme_compilation.md)
-- [Documentazione Principale Vite](/docs/VITE_ASSETS_TROUBLESHOOTING.md)
-<<<<<<< HEAD
 - [Documentazione Principale Vite](/docs/vite_assets_troubleshooting.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Comandi Utili
 
@@ -59,10 +68,8 @@ Per maggiori dettagli sul funzionamento interno, consultare:
 
 3. **Ambiente di Sviluppo**
    - In sviluppo: utilizzare `npm run dev`
-   - In produzione: utilizzare `npm run copy`
+   - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
 
-Per una guida completa sulla risoluzione dei problemi, consultare la [documentazione principale](/docs/VITE_ASSETS_TROUBLESHOOTING.md).
-<<<<<<< HEAD
+   - In produzione: utilizzare `npm run copy` (dismesso: `public_html/themes/<Tema>` e' un symlink a `laravel/Themes/<Tema>/public`)
+
 Per una guida completa sulla risoluzione dei problemi, consultare la [documentazione principale](/docs/vite_assets_troubleshooting.md).
-=======
->>>>>>> 6ed19256f (.)

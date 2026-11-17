@@ -10,8 +10,21 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 
 /**
+ * @property-read Appointment|null $appointment
+ * @property-read Client|null $client
+ * @property-read Profile|null $creator
+ * @property-read DeviceVerification|null $latest_verification
+ * @property-read bool $needs_verification
+ * @property-read Profile|null $updater
+ * @property-read Collection<int, DeviceVerification> $verifications
+ * @property-read int|null $verifications_count
+ *
+ * @method static Builder<static>|Machine newModelQuery()
+ * @method static Builder<static>|Machine newQuery()
+ * @method static Builder<static>|Machine query()
+ *
  * @property int $id
- * @property int|null $appointment_id
+ * @property int $appointment_id
  * @property string|null $name
  * @property string|null $status
  * @property string|null $notes
@@ -27,28 +40,14 @@ use Illuminate\Support\Carbon;
  * @property string|null $model
  * @property string|null $headset_serial
  * @property string|null $tube_serial
- * @property string|null $kv
- * @property string|null $ma
+ * @property numeric|null $kv
+ * @property numeric|null $ma
  * @property string|null $serial_number
  * @property string|null $inventory_number
  * @property string|null $purchase_date
  * @property Carbon|null $first_verification_date
  * @property string|null $warranty_expiration
- * @property-read Appointment|null $appointment
- * @property-read Client|null $client
- * @property-read Profile|null $creator
- * @property-read DeviceVerification|null $latest_verification
- * @property-read bool $needs_verification
- * @property-read Profile|null $updater
- * @property-read Collection<int, DeviceVerification> $verifications
- * @property-read int|null $verifications_count
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
- * @method static Builder<static>|Machine newModelQuery()
- * @method static Builder<static>|Machine newQuery()
- * @method static Builder<static>|Machine query()
  * @method static Builder<static>|Machine whereAppointmentId($value)
  * @method static Builder<static>|Machine whereBrand($value)
  * @method static Builder<static>|Machine whereClientId($value)
@@ -73,19 +72,15 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Machine whereUpdatedAt($value)
  * @method static Builder<static>|Machine whereUpdatedBy($value)
  * @method static Builder<static>|Machine whereWarrantyExpiration($value)
-<<<<<<< HEAD
  *
- * @property-read Profile|null $deleter
- *
-=======
- * @property-read Profile|null $deleter
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Machine extends Device
 {
     /**
-     * Relazione con l'appuntamento.
+     * Relazione con l appuntamento.
+     *
+     * @return BelongsTo<Appointment, $this>
      */
     public function appointment(): BelongsTo
     {

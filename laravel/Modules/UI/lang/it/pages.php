@@ -48,7 +48,6 @@ return [
             'email_sent_error' => 'Errore durante l\'invio dell\'email',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Pages',
     'plural_label' => 'Pages (Plurale)',
     'navigation' => [
@@ -60,7 +59,7 @@ return [
         ],
         'label' => 'Pages',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -93,6 +92,4 @@ return [
             'label' => 'Elimina Pages',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

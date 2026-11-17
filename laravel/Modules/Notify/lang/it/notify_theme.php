@@ -16,22 +16,16 @@ return [
             'tooltip' => 'Nome del tema',
             'placeholder' => 'es: Tema Aziendale',
             'help' => 'Inserisci un nome descrittivo per il tema',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'tooltip' => 'Descrizione del tema',
             'placeholder' => 'es: Tema standard per le comunicazioni aziendali',
             'help' => 'Breve descrizione dello scopo del tema',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'colors' => [
             'label' => 'Colori',
@@ -54,11 +48,8 @@ return [
                     'placeholder' => 'es: #F5A623',
                 ],
             ],
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'typography' => [
             'label' => 'Tipografia',
@@ -76,11 +67,8 @@ return [
                     'placeholder' => 'es: Helvetica, Arial, sans-serif',
                 ],
             ],
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'layout' => [
             'label' => 'Layout',
@@ -96,11 +84,8 @@ return [
                     'tooltip' => 'Stile del piè di pagina',
                 ],
             ],
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'assets' => [
             'label' => 'Risorse',
@@ -116,31 +101,22 @@ return [
                     'tooltip' => 'Immagine di sfondo',
                 ],
             ],
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_default' => [
             'label' => 'Predefinito',
             'tooltip' => 'Imposta come tema predefinito',
             'help' => 'Il tema predefinito verrà utilizzato per tutte le notifiche senza tema specifico',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_active' => [
             'label' => 'Attivo',
             'tooltip' => 'Stato di attivazione del tema',
             'help' => 'Solo i temi attivi possono essere utilizzati',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -174,12 +150,24 @@ return [
                 'cancel' => 'No, annulla',
             ],
         ],
-<<<<<<< HEAD
         'delete' => [
-            'tooltip' => 'delete',
+            'icon' => 'delete',
         ],
-=======
->>>>>>> 6ed19256f (.)
+        'create' => [
+            'icon' => 'create',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+        ],
     ],
     'messages' => [
         'created' => [
@@ -210,9 +198,6 @@ return [
     'model' => [
         'label' => 'Tema Notifica',
     ],
-<<<<<<< HEAD
     'label' => 'Notify Theme',
     'plural_label' => 'Notify Theme (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -16,12 +16,6 @@ class RatingMorphResource extends XotBaseResource
 
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function getFormSchema(): array
-    {
-        return [
-            // Campi del form
-        ];
-    }
 
     public static function getRelations(): array
     {

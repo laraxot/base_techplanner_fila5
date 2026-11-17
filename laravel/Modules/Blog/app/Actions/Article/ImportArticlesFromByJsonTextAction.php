@@ -21,11 +21,11 @@ class ImportArticlesFromByJsonTextAction
 
     public function execute(string $json_text): void
     {
-        /** @var array $json */
+        /** @var array<string, mixed> $json */
         $json = json_decode($json_text, true);
         Assert::isArray($json, '['.__LINE__.']['.__FILE__.']');
 
-        /** @var array $j */
+        /** @var array<string, mixed> $j */
         foreach ($json as $j) {
             Assert::isArray($j, 'Each element must be an array');
 
@@ -43,11 +43,11 @@ class ImportArticlesFromByJsonTextAction
             }
 
             $parent_category_id = null;
-            /** @var array $categories */
+            /** @var array<int, array<string, mixed>> $categories */
             $categories = $j['category'] ?? [];
             Assert::isArray($categories, 'Category must be an array');
 
-            /** @var array $cat */
+            /** @var array<string, mixed> $cat */
             foreach ($categories as $cat) {
                 // dddx($category);
                 Assert::isArray($cat, 'Category item must be an array');
@@ -96,9 +96,9 @@ class ImportArticlesFromByJsonTextAction
 
             $article = Article::firstOrCreate($article_where, $article_data);
 
-            /** @var array $outcomes */
+            /** @var array<int, mixed> $outcomes */
             $outcomes = $j['outcomes'];
-            /** @var array $rating */
+            /** @var array<string, mixed> $rating */
             foreach ($outcomes as $rating) {
                 $rating_where = [
                     'title' => $rating['title'] ?? '',

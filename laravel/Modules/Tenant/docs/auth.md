@@ -1,7 +1,14 @@
 ---
-module: theme
-topic: auth
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Auth"
+module: "Tenant"
+type: concept
+tags: [auth]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "auth"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep

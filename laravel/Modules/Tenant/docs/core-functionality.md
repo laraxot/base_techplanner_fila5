@@ -1,11 +1,14 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: core-functionality
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Core Functionality"
+module: "Tenant"
+type: concept
+tags: [core, functionality]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "core functionality"
+related:
+  - "./phpstan-corrections-january.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)

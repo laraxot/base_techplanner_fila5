@@ -1,7 +1,7 @@
 ---
-module: theme
-topic: bad-practices
-canonical: ../../../Themes/docs/shared-components/BAD_PRACTICES.md
+title: "bad practices"
+qmd: "activity bad practices md"
+type: note
+tags: [documentation]
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/BAD_PRACTICES.md

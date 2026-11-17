@@ -27,16 +27,12 @@ return [
     'digits' => ':attribute deve avere :digits cifre.',
     'digits_between' => ':attribute deve avere tra :min e :max cifre.',
     'dimensions' => 'The :attribute has invalid image dimensions.',
-    'distinct' => 'The :attribute field has a duplicate value.',
+    'distinct' => ':attribute ha un valore duplicato.',
     'email' => ':attribute deve essere un indirizzo email valido.',
     'exists' => 'La selezione per :attribute non è valida.',
-    'file' => 'The :attribute must be a file.',
+    'file' => ':attribute deve essere un file.',
     'filled' => ':attribute è obbligatorio.',
-<<<<<<< HEAD
     'image' => ':attribute deve essere un\'immagine.',
-=======
-    'image' => ":attribute deve essere un'immagine.",
->>>>>>> 6ed19256f (.)
     'in' => 'La selezione per :attribute non è valida.',
     'in_array' => 'The :attribute field does not exist in :other.',
     'integer' => ':attribute deve essere un numero intero.',
@@ -49,6 +45,7 @@ return [
         'array' => ':attribute non può avere più di :max elementi.',
     ],
     'mimes' => ':attribute deve essere un file di questo formato: :values.',
+    'mimetypes' => ':attribute deve essere un file di questo tipo: :values.',
     'min' => [
         'numeric' => ':attribute deve essere almeno :min.',
         'file' => ':attribute deve essere di almeno :min kilobytes.',
@@ -83,6 +80,8 @@ return [
     'string' => ':attribute deve essere una stringa.',
     'timezone' => ':attribute deve essere un fuso orario valido.',
     'unique' => ':attribute è già stato utilizzato.',
+    // Senza :attribute: Livewire passa il nome interno del campo (`data.images.f…`), che non si traduce. Frase intera, nessuna chiave grezza.
+    'uploaded' => 'Caricamento non riuscito: il file potrebbe essere troppo grande. Riprova con un file più piccolo.',
     'url' => 'Il formato di :attribute non è valido.',
     'custom' => [
         'attribute-name' => [
@@ -132,7 +131,6 @@ return [
             'new_password_confirmation' => 'Conferma nuova password',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Validation',
     'plural_label' => 'Validation (Plurale)',
     'navigation' => [
@@ -177,6 +175,4 @@ return [
             'label' => 'Elimina Validation',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

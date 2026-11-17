@@ -1,3 +1,28 @@
+---
+title: "Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport"
+type: rule
+tags: [passport, cluster, resources, only]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "passport-cluster-resources-only-rule regola critica: cluster passport - solo risorse oauth/passport"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Regola Critica: Cluster Passport - Solo Risorse OAuth/Passport
 
 **Data**: 2025-01-22
@@ -101,18 +126,10 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 - [Passport Cluster Summary](./passport-cluster-summary.md)
 - [Passport Cluster Implementation](./passport-cluster-implementation-completed.md)
-- [Filament Clusters Documentation](../../Xot/docs/filament-class-extension-rules.md)
-<<<<<<< HEAD
 - [Filament Clusters Documentation](../../xot/docs/filament-class-extension-rules.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ---
 
 **Ultimo aggiornamento**: 2025-01-22
 **Versione**: 1.0.0
-<<<<<<< HEAD
 **Status**: ✅ Regola Critica OBBLIGATORIA
-=======
-**Status**: ✅ Regola Critica OBBLIGATORIA
->>>>>>> 6ed19256f (.)

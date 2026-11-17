@@ -1,11 +1,18 @@
+---
+title: "navigation translations fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "navigation translations fixes"
+issues: []
+discussions: []
+---
+
 # Correzioni Traduzioni Navigation - Modulo Geo
 
 ## Data Intervento
-**2025-08-07** - Sistemazione traduzioni secondo regole DRY + KISS
-<<<<<<< HEAD
 **[DATE]** - Sistemazione traduzioni secondo regole DRY + KISS
-=======
->>>>>>> 6ed19256f (.)
 
 ## Problema Critico Identificato
 
@@ -78,20 +85,10 @@
 
 ## Collegamenti
 
-<<<<<<< HEAD
-- [Documentazione Modulo Geo](README.md)
-- [Struttura Geo](structure.md)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
-- [Documentazione Modulo Geo](readme.md)
+- [Documentazione Modulo Geo](README.md)
 - [Struttura Geo](structure.md)
 - [Regole Traduzioni Laraxot](../xot/docs/translation-rules.md)
-=======
-- [Audit Generale Traduzioni Navigation](../../docs/navigation-translations-audit.md)
-- [Documentazione Modulo Geo](README.md)
-- [Struttura Geo](structure.md)
-- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
->>>>>>> 6ed19256f (.)
 
 ## Note Tecniche
 
@@ -106,10 +103,5 @@
 - Validare contenuto traduzioni prima del commit
 - Utilizzare linting per file PHP malformati
 
-*Intervento completato il: 2025-08-07*
-<<<<<<< HEAD
 *Intervento completato il: [DATE]*
 *Conforme alle regole DRY + KISS*
-=======
-*Conforme alle regole DRY + KISS*
->>>>>>> 6ed19256f (.)

@@ -47,11 +47,7 @@ return [
             'label' => 'Tipo',
             'placeholder' => 'Tipo di menu',
             'tooltip' => 'Categoria del menu',
-<<<<<<< HEAD
             'description' => 'Tipologia di menu (principale, footer, sidebar]',
-=======
-            'description' => 'Tipologia di menu (principale, footer, sidebar)',
->>>>>>> 6ed19256f (.)
             'helper_text' => '',
             'options' => [
                 'main' => 'Principale',
@@ -63,11 +59,7 @@ return [
             'label' => 'Stato',
             'placeholder' => 'Stato del menu',
             'tooltip' => 'Stato di pubblicazione del menu',
-<<<<<<< HEAD
             'description' => 'Stato corrente del menu (attivo, inattivo, bozza]',
-=======
-            'description' => 'Stato corrente del menu (attivo, inattivo, bozza)',
->>>>>>> 6ed19256f (.)
             'helper_text' => '',
             'options' => [
                 'active' => 'Attivo',
@@ -131,37 +123,34 @@ return [
             'description' => 'Titolo principale del menu',
             'helper_text' => '',
         ],
-<<<<<<< HEAD
         'items' => [
-            'label' => 'items',
-            'placeholder' => 'items',
-            'helper_text' => 'items',
-            'description' => 'items',
+            'label' => 'Voci',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => '',
             'tooltip' => '',
         ],
         'url' => [
-            'label' => 'url',
-            'placeholder' => 'url',
-            'helper_text' => 'url',
-            'description' => 'url',
+            'label' => 'Link',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => '',
             'tooltip' => '',
         ],
         'target' => [
-            'label' => 'target',
-            'placeholder' => 'target',
-            'helper_text' => 'target',
-            'description' => 'target',
+            'label' => 'Apri in',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => '',
             'tooltip' => '',
         ],
         'icon' => [
-            'label' => 'icon',
-            'placeholder' => 'icon',
-            'helper_text' => 'icon',
-            'description' => 'icon',
+            'label' => 'Icona',
+            'placeholder' => '',
+            'helper_text' => '',
+            'description' => '',
             'tooltip' => '',
         ],
-=======
->>>>>>> 6ed19256f (.)
     ],
     'actions' => [
         'create' => 'Crea Menu',
@@ -169,6 +158,10 @@ return [
         'delete' => 'Elimina Menu',
         'sort' => 'Ordina Voci',
         'add_item' => 'Aggiungi Voce',
+        'logout' => [
+            'tooltip' => '',
+            'icon' => 'logout',
+        ],
     ],
     'messages' => [
         'created' => 'Menu creato con successo',
@@ -187,9 +180,6 @@ return [
         'tooltip' => 'Modello dati del menu',
         'description' => 'Rappresentazione del modello del menu nel sistema',
     ],
-<<<<<<< HEAD
     'label' => 'Menu',
     'plural_label' => 'Menu (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

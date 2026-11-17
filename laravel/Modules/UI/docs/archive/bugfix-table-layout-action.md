@@ -1,3 +1,8 @@
+---
+qmd: "ui archive bugfix table layout action md"
+created_at: '2025-01-27'
+---
+
 # Bug Fix: TableLayoutToggleTableAction Access Level Error - 27 Gennaio 2025
 
 ## Problema Identificato
@@ -140,7 +145,7 @@ php -l Modules/UI/app/Filament/Actions/Table/TableLayoutToggleTableAction.php
 php artisan tinker --execute="TableLayoutToggleTableAction::make('test');"
 
 # Testare l'URL che causava l'errore
-curl -I http://127.0.0.1:8001/healthcare_app/admin/gaia/survey-pdfs
+curl -I http://127.0.0.1:8001/quaeris/admin/gaia/survey-pdfs
 ```
 
 ### Risultati Test

@@ -14,12 +14,12 @@ abstract class GdprBasePolicy
 
     public function before(UserContract $user, string $_ability): ?bool
     {
-<<<<<<< HEAD
         if (XotData::make()->super_admin === $user->email) {
-=======
-        $xotData = XotData::make();
-        if ($user->hasRole('super-admin')) {
->>>>>>> 6ed19256f (.)
+            return true;
+        }
+
+        // Il ruolo che apre il pannello del modulo gestisce tutto il modulo (ADR Xot module-admin-role-policy-bypass).
+        if ($user->hasRole(['super-admin', 'gdpr::admin'])) {
             return true;
         }
 

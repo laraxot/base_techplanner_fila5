@@ -1,3 +1,10 @@
+---
+title: "Task: Incremento Test Coverage (Pest) - UI"
+qmd: "ui tasks increase test coverage md"
+type: note
+tags: [documentation]
+---
+
 # Task: Incremento Test Coverage (Pest) - UI
 
 **Modulo**: UI  

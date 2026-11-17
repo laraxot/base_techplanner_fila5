@@ -457,7 +457,7 @@ class ContactRequest extends FormRequest
 ## Riferimenti
 
 - [AddressItemEnum Pattern](../geo/docs/addressitemenum-migration-pattern.md)
-- [XotBaseMigration Documentation](../../xot/docs/migration-patterns.md)
+- [XotBaseMigration Documentation](../../ai-agents/migration-patterns.md)
 - [Filament Integration](../../../docs/filament-integration.md)
 - [Laravel Migration Best Practices](https://laravel.com/docs/migrations)
 

@@ -4,22 +4,15 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Http\Middleware;
 
-<<<<<<< HEAD
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-
-use function Safe\json_encode;
-use function Safe\preg_match;
-
-=======
-use Closure;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;
-use function Safe\json_encode;
-use function Safe\preg_match;
->>>>>>> 6ed19256f (.)
+use Illuminate\Support\Facades\RateLimiter;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\HttpFoundation\Response;
 use Webmozart\Assert\Assert;
+
+use function Safe\json_encode;
+use function Safe\preg_match;
 
 /**
  * Middleware di sicurezza avanzato.
@@ -29,184 +22,117 @@ use Webmozart\Assert\Assert;
  */
 class SecurityMiddleware
 {
+    /** Richieste al minuto per IP (pagine, Livewire, API). */
+    private const int DEFAULT_LIMIT = 300;
+
+    /** Invii al minuto per IP verso indirizzi sensibili. */
+    private const array STRICT_LIMITS = [
+        'api/tickets/create' => 20,
+        'api/tickets/search' => 50,
+        'api/tickets' => 100,
+        'auth/login' => 10,
+        'auth/register' => 5,
+        'password/reset' => 5,
+    ];
+
     /**
      * Handle an incoming request.
      */
-<<<<<<< HEAD
     public function handle(Request $request, \Closure $next): Response
-=======
-    public function handle(Request $request, Closure $next): Response
->>>>>>> 6ed19256f (.)
     {
         // 1. Rate Limiting avanzato
         $this->applyAdvancedRateLimiting($request);
 
-        // 2. Headers di sicurezza
+        // 2. Validazione input e CSRF PRIMA di eseguire la richiesta.
+        // Eseguiti dopo $next() erano inutili come protezione (l'azione era già avvenuta)
+        // e rompevano il login: Filament rigenera sessione e token CSRF all'accesso,
+        // quindi il confronto a posteriori falliva sempre con 419 "Page Expired".
+        // NON spostarli dopo $next(): vedi Modules/Xot/docs/wiki/decisions/security-middleware-csrf-order.md
+        $this->validateInputs($request);
+        $this->enhanceCSRFProtection($request);
+
+        // 3. Headers di sicurezza
         $response = $next($request);
         Assert::isInstanceOf($response, Response::class);
-<<<<<<< HEAD
+        $this->addSecurityHeaders($response, $request);
 
-        // Skip security headers for Debugbar routes in local environment
-        // to allow Debugbar to function properly
-        if (! $this->isDebugbarRoute($request) || ! app()->environment('local')) {
-            $this->addSecurityHeaders($response);
-        }
-=======
-        $this->addSecurityHeaders($response);
->>>>>>> 6ed19256f (.)
-
-        // 3. Logging sicurezza
+        // 4. Logging sicurezza
         $this->logSecurityEvents($request, $response);
-
-        // 4. Validazione input avanzata
-        $this->validateInputs($request);
-
-        // 5. Protezione CSRF avanzata
-        $this->enhanceCSRFProtection($request);
 
         return $response;
     }
 
     /**
-<<<<<<< HEAD
-     * Check if the request is for Debugbar routes.
-     */
-    private function isDebugbarRoute(Request $request): bool
-    {
-        $debugbarPrefix = (string) config('debugbar.route_prefix', '_debugbar');
-
-        return str_starts_with($request->path(), $debugbarPrefix)
-            || str_starts_with($request->path(), 'vendor/debugbar')
-            || str_contains($request->path(), '_debugbar');
-    }
-
-    /**
-=======
->>>>>>> 6ed19256f (.)
-     * Applica rate limiting avanzato.
+     * Rate limiting per IP e per gruppo di indirizzi (finestra fissa di 60 secondi).
+     *
+     * Prima c'erano tre contatori che bloccavano il sito intero (ADR security-middleware-rate-limit):
+     * - per IP su tutte le pagine, ma con il limite dell'indirizzo richiesto: dopo 5 pagine
+     *   qualsiasi, la pagina di accesso (limite 5) rispondeva 429;
+     * - per User-Agent e per indirizzo, condivisi tra tutti i visitatori: 5 accessi al minuto
+     *   in tutto il mondo bastavano a bloccare il login per chiunque;
+     * - `cache()->put(+1, 60)` rinnovava la scadenza a ogni richiesta: il blocco non finiva mai.
      */
     private function applyAdvancedRateLimiting(Request $request): void
     {
-        $ip = $request->ip() ?? 'unknown';
-        $userAgent = $request->userAgent() ?? 'unknown';
-        $endpoint = $request->path();
-
-        // Rate limiting per IP
-        $this->checkIPRateLimit($ip, $endpoint);
-
-        // Rate limiting per User Agent
-        $this->checkUserAgentRateLimit($userAgent, $endpoint);
-
-        // Rate limiting per endpoint specifici
-        $this->checkEndpointRateLimit($endpoint, $ip);
+        $this->checkIPRateLimit($request->ip() ?? 'unknown', $request->path(), $request->isMethodSafe());
     }
 
     /**
-     * Controlla rate limit per IP.
+     * Controlla rate limit per IP sul gruppo dell'indirizzo (login, registrazione, … o "default").
+     * I limiti stretti valgono solo per gli invii (POST, PUT, …): aprire la pagina non conta.
      */
-    private function checkIPRateLimit(string $ip, string $endpoint): void
+    private function checkIPRateLimit(string $ip, string $endpoint, bool $safeMethod = true): void
     {
-        $key = "rate_limit:ip:{$ip}";
-        $limit = $this->getRateLimitForEndpoint($endpoint);
+        [$bucket, $limit] = $this->getRateLimitBucket($endpoint, $safeMethod);
+        $key = "security:rate_limit:{$bucket}:{$ip}";
 
-        $current = (int) cache()->get($key, 0);
-
-        if ($current >= $limit) {
+        if (RateLimiter::tooManyAttempts($key, $limit)) {
             Log::warning('Rate limit exceeded for IP', [
                 'ip' => $ip,
                 'endpoint' => $endpoint,
-                'current' => $current,
+                'bucket' => $bucket,
                 'limit' => $limit,
             ]);
 
             abort(429, 'Too Many Requests');
         }
 
-        cache()->put($key, $current + 1, 60); // 1 minuto
+        RateLimiter::hit($key, 60);
     }
 
     /**
-     * Controlla rate limit per User Agent.
+     * @return array{0: string, 1: int} gruppo e limite al minuto
      */
-    private function checkUserAgentRateLimit(string $userAgent, string $endpoint): void
+    private function getRateLimitBucket(string $endpoint, bool $safeMethod): array
     {
-        $key = 'rate_limit:ua:'.md5($userAgent);
-        $limit = $this->getRateLimitForEndpoint($endpoint);
-
-        $current = (int) cache()->get($key, 0);
-
-        if ($current >= $limit) {
-            Log::warning('Rate limit exceeded for User Agent', [
-                'user_agent' => $userAgent,
-                'endpoint' => $endpoint,
-                'current' => $current,
-                'limit' => $limit,
-            ]);
-
-            abort(429, 'Too Many Requests');
-        }
-
-        cache()->put($key, $current + 1, 60);
-    }
-
-    /**
-     * Controlla rate limit per endpoint.
-     */
-    private function checkEndpointRateLimit(string $endpoint, string $ip): void
-    {
-        $key = "rate_limit:endpoint:{$endpoint}";
-        $limit = $this->getRateLimitForEndpoint($endpoint);
-
-        $current = (int) cache()->get($key, 0);
-
-        if ($current >= $limit) {
-            Log::warning('Rate limit exceeded for endpoint', [
-                'endpoint' => $endpoint,
-                'ip' => $ip,
-                'current' => $current,
-                'limit' => $limit,
-            ]);
-
-            abort(429, 'Too Many Requests');
-        }
-
-        cache()->put($key, $current + 1, 60);
-    }
-
-    /**
-     * Ottieni rate limit per endpoint.
-     */
-    private function getRateLimitForEndpoint(string $endpoint): int
-    {
-        $limits = [
-            'api/tickets' => 100,
-            'api/tickets/create' => 20,
-            'api/tickets/search' => 50,
-            'auth/login' => 5,
-            'auth/register' => 3,
-            'password/reset' => 2,
-        ];
-
-        foreach ($limits as $pattern => $limit) {
-            if (str_contains($endpoint, $pattern)) {
-                return $limit;
+        if (! $safeMethod) {
+            foreach (self::STRICT_LIMITS as $pattern => $limit) {
+                if (str_contains($endpoint, $pattern)) {
+                    return [$pattern, $limit];
+                }
             }
         }
 
-        return 60; // Default limit
+        return ['default', self::DEFAULT_LIMIT];
     }
 
     /**
      * Aggiungi header di sicurezza.
      */
-    private function addSecurityHeaders(Response $response): void
+    private function addSecurityHeaders(Response $response, Request $request): void
     {
+        $secure = $request->secure();
+
         // Content Security Policy
-        $csp = $this->buildCSP();
+        $csp = $this->buildCSP($secure);
         $response->headers->set('Content-Security-Policy', $csp);
 
-        // Strict Transport Security
-        $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        // Strict Transport Security — solo su connessioni HTTPS: su HTTP il browser
+        // lo ignorerebbe, ma in ambienti proxy/browser aggressivi puo' comunque
+        // influenzare l'upgrade forzato delle richieste.
+        if ($secure) {
+            $response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains; preload');
+        }
 
         // X-Frame-Options
         $response->headers->set('X-Frame-Options', 'DENY');
@@ -233,7 +159,7 @@ class SecurityMiddleware
     /**
      * Costruisci Content Security Policy.
      */
-    private function buildCSP(): string
+    private function buildCSP(bool $secure = false): string
     {
         $csp = [
             "default-src 'self'",
@@ -248,9 +174,15 @@ class SecurityMiddleware
             "base-uri 'self'",
             "form-action 'self'",
             "frame-ancestors 'none'",
-            'upgrade-insecure-requests',
-            'block-all-mixed-content',
         ];
+
+        // Solo quando la risposta e' servita in HTTPS: altrimenti il browser
+        // aggiornerebbe le sotto-risorse a https:// e il server HTTP locale
+        // risponderebbe con connessione chiusa (ERR_CONNECTION_CLOSED).
+        if ($secure) {
+            $csp[] = 'upgrade-insecure-requests';
+            $csp[] = 'block-all-mixed-content';
+        }
 
         return implode('; ', $csp);
     }
@@ -269,20 +201,12 @@ class SecurityMiddleware
             'magnetometer=()',
             'gyroscope=()',
             'accelerometer=()',
-            'ambient-light-sensor=()',
             'autoplay=()',
-            'battery=()',
-            'bluetooth=()',
             'display-capture=()',
             'fullscreen=(self)',
             'gamepad=()',
             'midi=()',
-            'notifications=(self)',
-            'persistent-storage=(self)',
-            'push=()',
             'screen-wake-lock=()',
-            'speaker=()',
-            'web-share=()',
             'xr-spatial-tracking=()',
         ];
 
@@ -309,16 +233,12 @@ class SecurityMiddleware
         ];
 
         // Log solo eventi sospetti
-        if ($this->isSuspiciousRequest($request, $response)) {
+        if ($this->isSuspiciousRequest($request)) {
             Log::warning('Suspicious request detected', $securityData);
         }
 
         // Log tentativi di accesso falliti
-<<<<<<< HEAD
-        if (401 === $response->getStatusCode() || 403 === $response->getStatusCode()) {
-=======
         if ($response->getStatusCode() === 401 || $response->getStatusCode() === 403) {
->>>>>>> 6ed19256f (.)
             Log::warning('Failed access attempt', $securityData);
         }
 
@@ -331,7 +251,7 @@ class SecurityMiddleware
     /**
      * Verifica se la richiesta è sospetta.
      */
-    private function isSuspiciousRequest(Request $request, Response $response): bool
+    private function isSuspiciousRequest(Request $request): bool
     {
         // Pattern sospetti negli URL
         $suspiciousPatterns = [
@@ -371,11 +291,7 @@ class SecurityMiddleware
         ];
 
         foreach ($suspiciousUserAgents as $suspicious) {
-<<<<<<< HEAD
-            if (null !== $userAgent && false !== stripos($userAgent, $suspicious)) {
-=======
             if ($userAgent !== null && stripos($userAgent, $suspicious) !== false) {
->>>>>>> 6ed19256f (.)
                 return true;
             }
         }
@@ -391,11 +307,7 @@ class SecurityMiddleware
         $inputs = $request->all();
 
         foreach ($inputs as $key => $value) {
-<<<<<<< HEAD
-            if (null !== $value && is_string($value)) {
-=======
             if ($value !== null && is_string($value)) {
->>>>>>> 6ed19256f (.)
                 $this->validateStringInput($key, $value);
             } elseif (is_array($value)) {
                 $this->validateArrayInput($key, $value);
@@ -435,6 +347,8 @@ class SecurityMiddleware
 
     /**
      * Valida input array.
+     *
+     * @param  array<array-key, mixed>  $value
      */
     private function validateArrayInput(string $key, array $value): void
     {
@@ -459,6 +373,8 @@ class SecurityMiddleware
 
     /**
      * Ottieni profondità array.
+     *
+     * @param  array<array-key, mixed>  $array
      */
     private function getArrayDepth(array $array): int
     {
@@ -485,7 +401,7 @@ class SecurityMiddleware
         if (in_array($request->method(), ['POST', 'PUT', 'DELETE', 'PATCH'])) {
             $token = $request->header('X-CSRF-TOKEN') ?: $request->input('_token');
 
-            if (! $token || ! hash_equals(session()->token(), (string) $token)) {
+            if (! $token || ! hash_equals(session()->token(), SafeStringCastAction::cast($token))) {
                 Log::warning('CSRF token mismatch', [
                     'ip' => $request->ip(),
                     'method' => $request->method(),

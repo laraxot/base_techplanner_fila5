@@ -1,3 +1,10 @@
+---
+title: "Laravel Folio + Volt - Best Practices and Patterns Analysis"
+qmd: "ui folio volt best practices md"
+type: note
+tags: [documentation]
+---
+
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview
@@ -22,7 +29,6 @@ Example of a Volt component in a Folio page:
 ```blade
 <?php
 use App\Models\Event;
-<<<<<<< HEAD
 use Livewire\Volt\Component;
 
 new class extends Component {
@@ -34,11 +40,6 @@ new class extends Component {
         $this->events = Event::upcoming()->get()->all();
     }
 };
-=======
-use function Livewire\Volt\{computed, mount};
-
-$events = computed(fn () => Event::upcoming()->get());
->>>>>>> 6ed19256f (.)
 ?>
 
 <x-layout>
@@ -67,14 +68,8 @@ $events = computed(fn () => Event::upcoming()->get());
 - Implement a consistent navigation component that can be included across pages
 
 ### 5. Data Handling
-<<<<<<< HEAD
 - In class-based components, keep state in `public` properties and initialize in `mount()`
 - For derived values, prefer methods/getters in the class (functional `computed()` / `state()` is legacy/mantenimento)
-=======
-- Use `computed()` for data that should be cached until dependencies change
-- Use `state()` for reactive properties
-- Use `mount()` for initialization logic when component loads
->>>>>>> 6ed19256f (.)
 - Sushi package can be used for dummy data in development
 
 ### 6. Middleware Application
@@ -119,8 +114,4 @@ middleware(['auth', 'verified']);
 - Genesis Starter Kit: https://github.com/thedevdojo/genesis
 
 ## Date
-2025-11-29
-<<<<<<< HEAD
 [DATE]
-=======
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,10 @@
+---
+title: "UI {{TYPE^}} LLM Wiki Agent Instructions"
+qmd: "ui llm wiki agents md"
+type: note
+tags: [documentation]
+---
+
 # UI {{TYPE^}} LLM Wiki Agent Instructions
 
 > **Module/Theme:** UI

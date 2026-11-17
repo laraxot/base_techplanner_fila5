@@ -1,8 +1,19 @@
+---
+title: "header language avatar implementation 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "header language avatar implementation 1"
+issues: []
+discussions: []
+---
+
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
 - [README modulo Cms](./README.md)
-- [Documentazione User](../../User/docs/HEADER_LANGUAGE_AVATAR_IMPLEMENTATION.md)
+- [Documentazione User](../../../User/docs/header_language_avatar_implementation.md)
 - [Documentazione Sezioni](./SECTIONS_STRUCTURE.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

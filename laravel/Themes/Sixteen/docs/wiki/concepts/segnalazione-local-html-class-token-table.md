@@ -1,4 +1,7 @@
 ---
+qmd: "segnalazione local html class token table"
+issues: []
+discussions: []
 title: "Tabella token class= — 7 HTML locali (.planning/research)"
 type: concept
 sources:
@@ -8,7 +11,7 @@ sources:
   - "../../../../../../.planning/research/local-segnalazione-03-riepilogo.html"
   - "../../../../../../.planning/research/local-segnalazione-04-conferma.html"
   - "../../../../../../.planning/research/local-segnalazione-area-personale.html"
-  - "../../../../../../.planning/research/local-segnalazioni-elenco.html"
+  - "../../../../../../.planning/research/local-ticket-list.html"
 confidence: high
 created: 2026-05-04
 updated: 2026-05-04
@@ -17,6 +20,8 @@ related:
   - "./segnalazione-html-samples-class-token-extraction.md"
   - "../entities/bootstrap-italia-class-inventory.md"
   - "../../../../../../_bmad-output/implementation-artifacts/7-105-design-comuni-segnalazione-static-pages-bootstrap-to-tailwind-class-map.md"
+status: superseded
+superseded_by: ticket-local-html-class-token-table.md
 ---
 
 # Tabella token `class=` (rigenerabile)

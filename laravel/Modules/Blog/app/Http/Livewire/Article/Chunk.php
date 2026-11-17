@@ -11,6 +11,7 @@ use Modules\Xot\Actions\GetViewAction;
 
 class Chunk extends Component
 {
+    /** @var array<int, string|int> */
     public array $postIds;
 
     public string $tpl = 'v1';
@@ -33,6 +34,9 @@ class Chunk extends Component
         return view((string) $view, $view_params);
     }
 
+    /**
+     * @param array<string, mixed> $params
+     */
     public function url(string $name, array $params): string
     {
         return '#';

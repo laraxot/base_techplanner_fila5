@@ -9,6 +9,7 @@ use Exception;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Modules\Geo\Models\Traits\GeoTrait;
 // --- traits ---
 use Modules\TechPlanner\Contracts\WorkerContract;
@@ -73,10 +74,7 @@ use Override;
  * @property-read Collection<int, Device> $devices
  * @property-read int|null $devices_count
  * @property-read Profile|null $updater
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Worker newModelQuery()
  * @method static Builder<static>|Worker newQuery()
  * @method static Builder<static>|Worker ofInPolygon(string $polygon_field, float $lat, float $lng)
@@ -135,32 +133,24 @@ use Override;
  * @method static Builder<static>|Worker whereWebsite($value)
  * @method static Builder<static>|Worker withDistance(float $lat, float $lng)
  * @method static Builder<static>|Worker withDistanceCustomField(string $lat_field, string $lng_field, float $lat, float $lng)
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @property string|null $googleplace_url
  * @property string|null $googleplace_url_short
  * @property string|null $campground
  * @property string|null $campground_short
  * @property-read Profile|null $deleter
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|Worker whereCampground($value)
  * @method static Builder<static>|Worker whereCampgroundShort($value)
  * @method static Builder<static>|Worker whereGoogleplaceUrl($value)
  * @method static Builder<static>|Worker whereGoogleplaceUrlShort($value)
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Worker extends BaseModel implements WorkerContract
 {
     use GeoTrait;
+    use SoftDeletes;
 
     // protected $connection = 'customer'; // this will use the specified database conneciton
 
@@ -197,6 +187,8 @@ class Worker extends BaseModel implements WorkerContract
 
     /**
      * Get devices associated with this worker.
+     *
+     * @return HasMany<Device, $this>
      */
     public function devices(): HasMany
     {

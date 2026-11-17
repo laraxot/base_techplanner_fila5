@@ -9,11 +9,6 @@ use Filament\Actions\Action;
 use Filament\Facades\Filament;
 use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\TextInput;
-<<<<<<< HEAD
-=======
-use Filament\Forms\Concerns\InteractsWithForms;
-use Filament\Forms\Contracts\HasForms;
->>>>>>> 6ed19256f (.)
 use Filament\Notifications\Notification;
 use Filament\Schemas\Components\Section;
 use Filament\Schemas\Schema;
@@ -25,32 +20,21 @@ use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Modules\Xot\Filament\Traits\NavigationLabelTrait;
-<<<<<<< HEAD
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
  * @property Schema $emailForm
  */
 class SendEmail extends XotBasePage
 {
-=======
- 
-/**
- * @property \Filament\Schemas\Schema $emailForm
- */
-class SendEmail extends XotBasePage implements HasForms
-{
-    use InteractsWithForms;
+    use SuperAdminOnlyTrait;
 
->>>>>>> 6ed19256f (.)
     // use NavigationLabelTrait;
 
+    /** @var array<string, mixed>|null */
     public ?array $emailData = [];
 
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-paper-airplane';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-paper-airplane';
->>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 
@@ -73,15 +57,15 @@ class SendEmail extends XotBasePage implements HasForms
                             ->email()
                             ->required(),
                         TextInput::make('subject')->required(),
-                        RichEditor::make('body_html')->required(),
-                    ]),
-            ])
+                        RichEditor::make('body_html')->required()])])
             ->model($this->getUser())
             ->statePath('emailData');
     }
 
     public function sendEmail(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->emailForm->getState();
         $email_data = EmailData::from($data);
         // $from_address = config('mail.from.address');
@@ -98,15 +82,14 @@ class SendEmail extends XotBasePage implements HasForms
     protected function getForms(): array
     {
         return [
-            'emailForm',
-        ];
+            'emailForm'];
     }
 
+    /** @return array<string, Action> */
     protected function getEmailFormActions(): array
     {
         return [
-            Action::make('emailFormActions')->submit('emailFormActions'),
-        ];
+            'submit' => Action::make('emailFormActions')->submit('emailFormActions')];
     }
 
     protected function getUser(): Authenticatable&Model

@@ -8,139 +8,97 @@ return [
         'plural' => 'Esportazioni',
         'group' => [
             'name' => 'Sistema',
-            'description' => 'Gestione delle esportazioni di dati',
+            'description' => 'Manage data exports',
         ],
-        'label' => 'Esportazione Dati',
+        'label' => 'Data Export',
         'sort' => '97',
         'icon' => 'job-export',
     ],
     'fields' => [
         'name' => [
-            'label' => 'Nome',
-            'tooltip' => 'Inserisci il nome dell\'esportazione',
-            'placeholder' => 'Esporta i tuoi dati',
-<<<<<<< HEAD
+            'label' => 'Name',
+            'tooltip' => 'Enter the export name',
+            'placeholder' => 'Export your data',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'format' => [
-            'label' => 'Formato',
-            'tooltip' => 'Scegli il formato di esportazione (CSV, Excel, etc.)',
-            'placeholder' => 'Seleziona formato',
-<<<<<<< HEAD
+            'label' => 'Format',
+            'tooltip' => 'Choose the export format (CSV, Excel, etc.)',
+            'placeholder' => 'Select format',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'filters' => [
-            'label' => 'Filtri',
-            'tooltip' => 'Applica filtri per selezionare i dati da esportare',
-            'placeholder' => 'Filtra i dati',
-<<<<<<< HEAD
+            'label' => 'Filters',
+            'tooltip' => 'Apply filters to select the data to export',
+            'placeholder' => 'Filter data',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'columns' => [
             'label' => 'Colonne',
-            'tooltip' => 'Seleziona le colonne da includere nell\'esportazione',
-            'placeholder' => 'Seleziona colonne',
-<<<<<<< HEAD
+            'tooltip' => 'Select the columns to include in the export',
+            'placeholder' => 'Select columns',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'total_records' => [
-            'label' => 'Totale Record',
-            'tooltip' => 'Numero totale di record da esportare',
-            'placeholder' => 'Totale',
-<<<<<<< HEAD
+            'label' => 'Total Records',
+            'tooltip' => 'Total number of records to export',
+            'placeholder' => 'Total',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
-            'label' => 'Stato',
-            'tooltip' => 'Stato dell\'esportazione',
-            'placeholder' => 'Stato in corso',
-<<<<<<< HEAD
+            'label' => 'Status',
+            'tooltip' => 'Export status',
+            'placeholder' => 'In progress',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
-            'label' => 'Creato il',
-            'tooltip' => 'Data di creazione dell\'esportazione',
-            'placeholder' => 'Data di creazione',
-<<<<<<< HEAD
+            'label' => 'Created at',
+            'tooltip' => 'Export creation date',
+            'placeholder' => 'Creation date',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'completed_at' => [
-            'label' => 'Completato il',
-            'tooltip' => 'Data di completamento dell\'esportazione',
-            'placeholder' => 'Data di completamento',
-<<<<<<< HEAD
+            'label' => 'Completed at',
+            'tooltip' => 'Export completion date',
+            'placeholder' => 'Completion date',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'download_url' => [
             'label' => 'URL Download',
-            'tooltip' => 'URL per scaricare il file esportato',
-            'placeholder' => 'URL del file',
-<<<<<<< HEAD
+            'tooltip' => 'URL to download the exported file',
+            'placeholder' => 'File URL',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'source' => [
-            'label' => 'Sorgente',
-            'tooltip' => 'Origine dei dati per l\'esportazione',
-            'placeholder' => 'Seleziona la sorgente',
-<<<<<<< HEAD
+            'label' => 'Source',
+            'tooltip' => 'Data source for the export',
+            'placeholder' => 'Select the source',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'formats' => [
@@ -158,33 +116,33 @@ return [
         'include_headers' => 'Includi intestazioni',
         'delimiter' => 'Delimitatore',
         'encoding' => 'Codifica',
-        'worksheet_name' => 'Nome foglio di lavoro',
+        'worksheet_name' => 'Worksheet name',
         'chunk_size' => 'Dimensione chunk',
     ],
     'actions' => [
         'create' => [
-            'label' => 'Nuova Esportazione',
+            'label' => 'New Export',
             'icon' => 'plus',
             'color' => 'success',
-            'tooltip' => 'Crea una nuova esportazione di dati',
+            'tooltip' => 'Create a new data export',
         ],
         'download' => [
-            'label' => 'Scarica',
+            'label' => 'Download',
             'icon' => 'download',
             'color' => 'primary',
-            'tooltip' => 'Scarica il file esportato',
+            'tooltip' => 'Download the exported file',
         ],
         'cancel' => [
-            'label' => 'Annulla',
+            'label' => 'Cancel',
             'icon' => 'times',
             'color' => 'danger',
-            'tooltip' => 'Annulla l\'operazione corrente',
+            'tooltip' => 'Cancel the current operation',
         ],
         'delete' => [
-            'label' => 'Elimina',
+            'label' => 'Delete',
             'icon' => 'trash',
             'color' => 'danger',
-            'tooltip' => 'Elimina l\'esportazione selezionata',
+            'tooltip' => 'Delete the selected export',
         ],
     ],
     'messages' => [
@@ -193,15 +151,15 @@ return [
         'export_completed' => 'Esportazione completata',
         'export_failed' => 'Esportazione fallita',
         'export_started' => 'Esportazione avviata',
-        'no_exports' => 'Nessuna esportazione presente',
-        'file_not_found' => 'File non trovato',
-        'invalid_format' => 'Formato non valido',
+        'no_exports' => 'No exports found',
+        'file_not_found' => 'File not found',
+        'invalid_format' => 'Invalid format',
     ],
     'statuses' => [
         'pending' => 'In Attesa',
         'processing' => 'In Elaborazione',
-        'completed' => 'Completato',
-        'failed' => 'Fallito',
+        'completed' => 'Completed',
+        'failed' => 'Failed',
         'downloaded' => 'Scaricato',
     ],
     'types' => [
@@ -211,9 +169,6 @@ return [
         'xml' => 'XML',
         'pdf' => 'PDF',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

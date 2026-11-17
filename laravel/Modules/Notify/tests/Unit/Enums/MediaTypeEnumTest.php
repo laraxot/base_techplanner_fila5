@@ -7,6 +7,7 @@ namespace Modules\Notify\Tests\Unit\Enums;
 use Modules\Notify\Enums\MediaTypeEnum;
 use PHPUnit\Framework\TestCase;
 
+uses(\Modules\Notify\Tests\TestCase::class);
 class MediaTypeEnumTest extends TestCase
 {
     /** @test */
@@ -25,7 +26,6 @@ class MediaTypeEnumTest extends TestCase
     {
         $options = MediaTypeEnum::options();
 
-        $this->assertIsArray($options);
         $this->assertCount(4, $options);
         $this->assertEquals('Image', $options['image']);
         $this->assertEquals('Video', $options['video']);
@@ -38,7 +38,6 @@ class MediaTypeEnumTest extends TestCase
     {
         $labels = MediaTypeEnum::labels();
 
-        $this->assertIsArray($labels);
         $this->assertCount(4, $labels);
         $this->assertArrayHasKey('image', $labels);
         $this->assertArrayHasKey('video', $labels);
@@ -69,7 +68,6 @@ class MediaTypeEnumTest extends TestCase
     {
         $default = MediaTypeEnum::getDefault();
 
-        $this->assertInstanceOf(MediaTypeEnum::class, $default);
         $this->assertEquals(MediaTypeEnum::IMAGE, $default);
         $this->assertEquals('image', $default->value);
     }
@@ -77,7 +75,7 @@ class MediaTypeEnumTest extends TestCase
     /** @test */
     public function each_case_has_unique_value(): void
     {
-        $values = array_map(fn ($case) => $case->value, MediaTypeEnum::cases());
+        $values = array_map(fn (MediaTypeEnum $case) => $case->value, MediaTypeEnum::cases());
         $uniqueValues = array_unique($values);
 
         $this->assertCount(count($values), $uniqueValues, 'All enum cases should have unique values');
@@ -88,11 +86,10 @@ class MediaTypeEnumTest extends TestCase
     {
         $cases = MediaTypeEnum::cases();
 
-        $this->assertIsArray($cases);
         $this->assertCount(4, $cases);
-
-        foreach ($cases as $case) {
-            $this->assertInstanceOf(MediaTypeEnum::class, $case);
-        }
+        $this->assertSame(
+            ['image', 'video', 'document', 'audio'],
+            array_map(static fn (MediaTypeEnum $case): string => $case->value, $cases),
+        );
     }
 }

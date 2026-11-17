@@ -25,7 +25,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -97,47 +96,14 @@ return [
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'uuid' => [
-            'label' => 'UUID',
-        ],
-        'connection' => [
-            'label' => 'Connessione',
-        ],
-        'queue' => [
-            'label' => 'Coda',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-        ],
-        'exception' => [
-            'label' => 'Eccezione',
-        ],
-        'failed_at' => [
-            'label' => 'Fallito il',
-        ],
-        'attempts' => 'Tentativi',
-        'max_attempts' => 'Tentativi Massimi',
-        'status' => 'Stato',
-        'created_at' => 'Creato il',
-        'updated_at' => 'Aggiornato il',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -192,27 +158,18 @@ return [
             ],
         ],
         'logout' => [
-            'tooltip' => 'logout',
             'icon' => 'logout',
-            'label' => 'logout',
         ],
         'reorderRecords' => [
-            'tooltip' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'label' => 'reorderRecords',
         ],
         'cancel' => [
-            'tooltip' => 'cancel',
             'icon' => 'cancel',
-            'label' => 'cancel',
         ],
         'openColumnManager' => [
-            'tooltip' => 'openColumnManager',
             'icon' => 'openColumnManager',
-            'label' => 'openColumnManager',
         ],
         'submit' => [
-            'tooltip' => 'submit',
             'icon' => 'submit',
         ],
     ],
@@ -246,15 +203,12 @@ return [
     ],
     'plural' => [
         'model' => [
-            'label' => 'failed job.plural.model',
+            'label' => 'Jobs Falliti',
         ],
         'label' => 'Jobs Falliti',
         'sort' => 93,
         'icon' => 'job-failed-job',
     ],
-    'label' => 'failed job',
-<<<<<<< HEAD
-    'plural_label' => 'Failed Job (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
+    'label' => 'Job fallito',
+    'plural_label' => 'Jobs Falliti',
 ];

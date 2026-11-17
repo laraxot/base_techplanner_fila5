@@ -12,12 +12,11 @@ return [
             'name' => 'System',
             'description' => 'Multimedia-Dateiverwaltung',
         ],
-        'label' => 'media',
+        'label' => 'Medien',
         'sort' => '20',
         'icon' => 'media-main-animated',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Name',
             'tooltip' => '',
@@ -99,26 +98,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Name',
-        'guard_name' => 'Guard',
-        'collection_name' => 'Sammlung',
-        'filename' => 'Dateiname',
-        'mime_type' => 'Typ',
-        'human_readable_size' => 'Größe',
-        'permissions' => 'Berechtigungen',
-        'updated_at' => 'Aktualisiert am',
-        'first_name' => 'Vorname',
-        'last_name' => 'Nachname',
-        'select_all' => [
-            'name' => 'Alle auswählen',
-            'message' => '',
-        ],
-        'creator' => [
-            'name' => 'Ersteller',
-        ],
-        'uploaded_at' => 'Hochgeladen am',
->>>>>>> 6ed19256f (.)
     ],
     'actions' => [
         'import' => [
@@ -134,9 +113,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

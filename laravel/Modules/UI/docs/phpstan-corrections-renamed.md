@@ -1,3 +1,10 @@
+---
+title: "PHPStan Corrections - UI Module - Gennaio 2026"
+qmd: "ui phpstan corrections renamed md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Corrections - UI Module - Gennaio 2026
 
 **Status**: ✅ COMPLETATO

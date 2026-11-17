@@ -1,11 +1,31 @@
-# Implementazione del Logout con LaravelLocalization 
+---
+title: "Implementazione del Logout con LaravelLocalization"
+type: concept
+tags: [logout, implementation, laravel, localization]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-implementation-with-laravel-localization-2 implementazione del logout con laravellocalization"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
+# Implementazione del Logout con LaravelLocalization
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Best Practices Componenti di Autenticazione](./auth_components_best_practices.md)
+- [Best Practices Componenti di Autenticazione](./auth-components-best-practices.md)
 - [Utilizzo di Laravel Localization](/laravel/modules/lang/docs/laravel_localization_usage.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
-- [Regole Traduzioni](/laravel/modules/lang/docs/translation_keys_rules.md)
+- [Regole Traduzioni](/laravel/modules/lang/docs/translation-keys-rules-2.md)
 - [Componenti Filament](/docs/rules/filament-components.md)
 
 ## Panoramica
@@ -42,16 +62,16 @@ mount(function() {
     if (Auth::check()) {
         // Dispatch dell'evento prima del logout
         Event::dispatch('auth.logout.attempting', [Auth::user()]);
-        
+
         // Esegui il logout
         Auth::logout();
         session()->invalidate();
         session()->regenerateToken();
-        
+
         // Dispatch dell'evento dopo il logout
         Event::dispatch('auth.logout.successful');
     }
-    
+
     // Reindirizza l'utente alla home page localizzata
     $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 });
@@ -59,7 +79,7 @@ mount(function() {
 
 ## Utilizzo Corretto di LaravelLocalization
 
-Per garantire la compatibilità con il sistema di localizzazione di Quaeris, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
+Per garantire la compatibilità con il sistema di localizzazione di <nome progetto>, è importante utilizzare le funzioni del pacchetto `mcamara/laravel-localization` invece di `app()->getLocale()`:
 
 ```php
 // ERRATO
@@ -71,7 +91,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 $this->redirect(LaravelLocalization::getLocalizedURL(LaravelLocalization::getCurrentLocale(), route('home')));
 ```
 
-Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di Quaeris per la gestione della localizzazione.
+Questo garantisce che l'utente venga reindirizzato alla versione localizzata della home page dopo il logout, rispettando le convenzioni di <nome progetto> per la gestione della localizzazione.
 
 ## Template Blade con Componenti Filament
 
@@ -103,7 +123,7 @@ Il template Blade per il logout dovrebbe utilizzare i componenti Filament e most
 2. **Feedback Visivo**: L'utente riceve un feedback chiaro durante il processo di logout
 3. **Gestione Errori Robusta**: Gli errori vengono catturati e gestiti appropriatamente
 4. **Esperienza Utente Migliorata**: L'interfaccia è più intuitiva e reattiva
-5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di Quaeris per la localizzazione
+5. **Localizzazione Corretta**: Gli URL generati rispettano le convenzioni di <nome progetto> per la localizzazione
 
 ## Chiavi di Traduzione per il Logout
 

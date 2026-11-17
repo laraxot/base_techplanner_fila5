@@ -24,19 +24,25 @@ class Crud extends Component
 
     /**
      * Return available frequencies.
+     *
+     * @return array<string, mixed>
      */
     public static function getFrequencies(): array
     {
         $res = config('totem.frequencies');
         if (is_array($res)) {
-            return $res;
+            $frequencies = [];
+            foreach ($res as $key => $value) {
+                if (! is_string($key)) {
+                    continue;
+                }
+                $frequencies[$key] = $value;
+            }
+
+            return $frequencies;
         }
 
-<<<<<<< HEAD
         throw new Exception('['.__LINE__.']['.class_basename(self::class).']');
-=======
-        throw new Exception('[' . __LINE__ . '][' . class_basename(self::class) . ']');
->>>>>>> 6ed19256f (.)
     }
 
     public function render(): Renderable
@@ -63,6 +69,8 @@ class Crud extends Component
 
     /**
      * Return collection of Artisan commands filtered if needed.
+     *
+     * @return Collection<string, Command>
      */
     public function getCommands(): Collection
     {
@@ -89,21 +97,11 @@ class Crud extends Component
          */
 
         return $all_commands->sortBy(
-<<<<<<< HEAD
-=======
-            /**
-             * @param  Command  $command
-             */
->>>>>>> 6ed19256f (.)
             static function (Command $command): string {
                 Assert::string($name = $command->getName());
 
                 if (mb_strpos($name, ':') === false) {
-<<<<<<< HEAD
                     return ':'.$name;
-=======
-                    return ':' . $name;
->>>>>>> 6ed19256f (.)
                 }
 
                 return $name;
@@ -115,10 +113,6 @@ class Crud extends Component
     {
         app(ExecuteTaskAction::class)->execute($task_id);
 
-<<<<<<< HEAD
         session()->flash('message', 'task ['.$task_id.'] executed at '.now());
-=======
-        session()->flash('message', 'task [' . $task_id . '] executed at ' . now());
->>>>>>> 6ed19256f (.)
     }
 }

@@ -393,7 +393,7 @@ fn (ModelType $item): ReturnType => ...
 
 ## 🔗 Collegamenti
 
-- [PHPStan Level 10 Fixes Precedenti](phpstan-level10-fixes.md)
+- [PHPStan Level 10 Fixes Precedenti](../phpstan-level10-fixes.md)
 - [Business Logic Overview](business-logic-overview.md)
 - [Best Practices](best-practices.md)
 

@@ -1,12 +1,19 @@
+---
+title: "Guida Completa: Multiple Labels con chartjs-plugin-datalabels in Filament 5.x (Modulo UI)"
+qmd: "ui charts chartjs datalabels multiple labels complete guide md"
+type: note
+tags: [documentation]
+---
+
 # Guida Completa: Multiple Labels con chartjs-plugin-datalabels in Filament 5.x (Modulo UI)
 
-**Versione:** 1.0  
-**Data:** Gennaio 2026  
-**Target:** Filament 5.x, Laravel 12.x, Modulo UI  
+**Versione:** 1.0
+**Data:** Gennaio 2026
+**Target:** Filament 5.x, Laravel 12.x, Modulo UI
 **Livello:** Guida "a prova di stupido" - passo dopo passo
 
-> **Riferimento Ufficiale:** [chartjs-plugin-datalabels - Multiple Labels Sample](https://chartjs-plugin-datalabels.netlify.app/samples/advanced/multiple-labels.html)  
-> **Guida Generale:** [Guida Completa Chart Module](../../chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+> **Riferimento Ufficiale:** [chartjs-plugin-datalabels - Multiple Labels Sample](https://chartjs-plugin-datalabels.netlify.app/samples/advanced/multiple-labels.html)
+> **Guida Generale:** [Guida Completa Chart Module](chartjs-datalabels-multiple-labels-complete-guide.md)
 
 ---
 
@@ -32,7 +39,7 @@ Questa guida è specifica per l'uso di **multiple labels** con `chartjs-plugin-d
 - Le configurazioni devono rispettare le linee guida AGID (se applicabili)
 
 **Per la guida completa generale, vedere:**
-- [Guida Completa Chart Module](../../chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](chartjs-datalabels-multiple-labels-complete-guide.md)
 
 ---
 
@@ -98,7 +105,7 @@ cd ./laravel/Modules/UI
    ```
    ```javascript
    import ChartDataLabels from 'chartjs-plugin-datalabels';
-   
+
    window.filamentChartJsPlugins ??= [];
    window.filamentChartJsPlugins.push(ChartDataLabels);
    ```
@@ -482,7 +489,7 @@ protected function getOptions(): array
 
     // Rileva tema attivo (esempio)
     $theme = config('filament.theme', 'zero');
-    
+
     // Colori basati su tema
     $colors = match($theme) {
         'zero' => [
@@ -540,7 +547,7 @@ protected function getOptions(): array
    ```php
    // ✅ CORRETTO
    namespace Modules\UI\Filament\Widgets;
-   
+
    // ❌ ERRATO
    namespace App\Filament\Widgets;
    ```
@@ -556,7 +563,7 @@ protected function getOptions(): array
    // ✅ CORRETTO: Colori UI standard
    'color' => '#1f2937',  // Testo UI
    'backgroundColor' => '#ffffff',  // Sfondo UI
-   
+
    // ❌ ERRATO: Colori hardcoded non UI
    'color' => '#ff0000',  // Rosso generico
    ```
@@ -578,9 +585,9 @@ protected function getOptions(): array
 
 ### Documentazione Generale
 
-- [Guida Completa Chart Module](../../chart/docs/chartjs-datalabels-multiple-labels-complete-guide.md)
+- [Guida Completa Chart Module](chartjs-datalabels-multiple-labels-complete-guide.md)
 - [Filament 5.x Installation Guide](../../chart/docs/filament-5-installation-guide.md)
-- [SimpleChartWidget con Sfondi](../../Quaeris/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
+- [SimpleChartWidget con Sfondi](../../<nome progetto>/docs/simplechartwidget-labels-backgrounds.md) - ⭐ Esempio completo con sfondi ottimizzati per UI/UX
 
 ### Documentazione Ufficiale
 
@@ -589,6 +596,6 @@ protected function getOptions(): array
 
 ---
 
-**Versione:** 1.0  
-**Ultimo Aggiornamento:** Gennaio 2026  
-**Mantenuto da:** Quaeris Development Team
+**Versione:** 1.0
+**Ultimo Aggiornamento:** Gennaio 2026
+**Mantenuto da:** <nome progetto> Development Team

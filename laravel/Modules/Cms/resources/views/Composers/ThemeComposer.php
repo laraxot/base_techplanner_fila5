@@ -37,9 +37,12 @@ class ThemeComposer
         return $normalized;
     }
 
+    /**
+     * @param  array<string, mixed>  $menu
+     */
     public function getMenuUrl(array $menu): string
     {
-        if ([] === $menu) {
+        if ($menu === []) {
             return '#';
         }
         $lang = app()->getLocale();
@@ -51,13 +54,13 @@ class ThemeComposer
             return '#';
         }
 
-        if ('internal' === $type) {
+        if ($type === 'internal') {
             return route('page_slug.view', ['lang' => $lang, 'slug' => $url]);
         }
-        if ('external' === $type) {
+        if ($type === 'external') {
             return $url;
         }
-        if ('route_name' === $type) {
+        if ($type === 'route_name') {
             return route($url, ['lang' => $lang]);
         }
 
@@ -108,7 +111,10 @@ class ThemeComposer
 
         $blocks = $page->blocks;
         if (! is_array($blocks)) {
-            return view('ui::empty');
+            /** @phpstan-var view-string */
+            $emptyView = 'ui::empty';
+
+            return view($emptyView);
         }
 
         $blocksComponent = new Blocks(
@@ -120,6 +126,9 @@ class ThemeComposer
         return $blocksComponent->render();
     }
 
+    /**
+     * @return Collection<int, Page>
+     */
     public function getPages(): Collection
     {
         return Page::all();

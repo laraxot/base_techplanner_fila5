@@ -1,3 +1,10 @@
+---
+title: "Indice task - Modulo UI"
+qmd: "ui tasks tasks index md"
+type: note
+tags: [documentation]
+---
+
 # Indice task - Modulo UI
 
 Lista dei task del modulo con link ai file .md separati. Ogni task è un file nella cartella `tasks/`. Dettagli dalla [roadmap](../roadmap.md).

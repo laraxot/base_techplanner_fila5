@@ -5,11 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth Access Token',
-<<<<<<< HEAD
         'group' => '',
-=======
-        'group' => 'OAuth',
->>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-key',
         'sort' => 33,
     ],
@@ -18,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -58,26 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'user_id' => [
-            'label' => 'User',
-        ],
-        'client_id' => [
-            'label' => 'Client',
-        ],
-        'name' => [
-            'label' => 'Name',
-        ],
-        'scopes' => [
-            'label' => 'Scopes',
-        ],
-        'revoked' => [
-            'label' => 'Revoked',
-        ],
-        'expires_at' => [
-            'label' => 'Expires At',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

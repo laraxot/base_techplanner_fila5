@@ -17,8 +17,6 @@ use Illuminate\Support\Carbon;
  *
  * @phpstan-require-extends Model
  *
- * @mixin \Eloquent
+ * @mixin Model
  */
-interface UpdaterContract
-{
-}
+interface UpdaterContract {}

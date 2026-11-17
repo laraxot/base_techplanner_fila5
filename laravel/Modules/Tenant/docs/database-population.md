@@ -1,10 +1,19 @@
+---
+issues: []
+discussions: []
+title: "Popolamento Database - Modulo Tenant"
+module: "Tenant"
+type: concept
+tags: [database, population]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "database population"
+related:
+  - "./phpstan-corrections-january.md"
+---
 # Popolamento Database - Modulo Tenant
 
-## Aggiornamento 2025-11-11 – Test Sushi Seeder
-<<<<<<< HEAD
 ## Aggiornamento [DATE] – Test Sushi Seeder
-=======
->>>>>>> 6ed19256f (.)
 
 - Rafforzata la type safety del seeder `TestSushiSeeder` utilizzando `Webmozart\Assert` per evitare errori PHPStan (`method.nonObject`) su `create()` e `count()`.
 - Ogni invocazione di `TestSushiModel::factory()` viene validata con `Assert::isInstanceOf` prima di usare i metodi fluenti.
@@ -300,11 +309,7 @@ private function generateRealisticDomain(string $tenantName, string $sector): st
 
 ## Collegamenti
 
-- [README Modulo Tenant](./README.md)
-<<<<<<< HEAD
-- [README Modulo Tenant](./readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [README Modulo Tenant](README.md)
 - [Multi-Tenancy Architecture](./multi-tenancy.md)
 - [Database Schema](./database-schema.md)
 - [Testing Guidelines](./testing.md)
@@ -313,8 +318,4 @@ private function generateRealisticDomain(string $tenantName, string $sector): st
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Versione**: 1.0
-<<<<<<< HEAD
 **Autore**: Sistema Laraxot
-=======
-**Autore**: Sistema Laraxot
->>>>>>> 6ed19256f (.)

@@ -2,19 +2,20 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Activity\Tests\TestCase::class);
-
 use Modules\Activity\Listeners\LoginListener;
 use Modules\Activity\Listeners\LogoutListener;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
+use ReflectionClass;
 
-test('LoginListener can be instantiated', function () {
+uses(TestCase::class);
+
+test('LoginListener can be instantiated', function (): void {
     $listener = new LoginListener;
-
-    expect($listener)->toBeObject();
+    Assert::assertTrue((new ReflectionClass($listener))->hasMethod('handle'));
 });
 
-test('LogoutListener can be instantiated', function () {
+test('LogoutListener can be instantiated', function (): void {
     $listener = new LogoutListener;
-
-    expect($listener)->toBeObject();
+    Assert::assertTrue((new ReflectionClass($listener))->hasMethod('handle'));
 });

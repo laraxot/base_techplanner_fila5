@@ -1,3 +1,10 @@
+---
+title: "page_builder"
+qmd: "ui integration page builder md"
+type: note
+tags: [documentation]
+---
+
 # page_builder
 
 <!-- Contenuto migrato da _docs/page_builder.txt -->

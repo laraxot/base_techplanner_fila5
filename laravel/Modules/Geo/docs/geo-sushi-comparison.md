@@ -1,3 +1,14 @@
+---
+title: "geo sushi comparison"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geo sushi comparison"
+issues: []
+discussions: []
+---
+
 # Confronto: GeoJsonModel (readonly JSON) vs Laravel Sushi
 
 ## 1. Descrizione degli approcci
@@ -16,6 +27,14 @@
 
 ---
 
+title: "geo sushi comparison"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "geo sushi comparison"
+issues: []
+discussions: []
 ## 2. Vantaggi e svantaggi
 
 ### GeoJsonModel
@@ -72,7 +91,6 @@
 ---
 
 ## 5. Collegamenti e approfondimenti
-<<<<<<< HEAD
 - [Geo/project_docs/geo-json-model.md](geo-json-model.md)
 - [Sushi - usesushi.dev](https://usesushi.dev/)
 - [Squire PHP](https://github.com/squirephp/squire)
@@ -82,19 +100,3 @@
 ---
 
 Responsabile: Cascade AI 
-=======
->>>>>>> 6ed19256f (.)
-- [geo-json-model.md](geo-json-model.md)
-- [Sushi - usesushi.dev](https://usesushi.dev/)
-- [Squire PHP](https://github.com/squirephp/squire)
-- [Xot/docs/module-structure.md](../../Xot/docs/module-structure.md)
-- [<main module>/docs/geo-integration.md](../../<main module>/docs/geo-integration.md)
-
----
-
-**Ultimo aggiornamento:** 2025-01-15
-<<<<<<< HEAD
-Responsabile: Antigravity
-=======
-Responsabile: Antigravity
->>>>>>> 6ed19256f (.)

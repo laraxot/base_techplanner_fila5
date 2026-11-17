@@ -5,21 +5,14 @@ declare(strict_types=1);
 namespace Modules\Xot\Exceptions\Formatters;
 
 use Illuminate\Support\Facades\Auth;
-<<<<<<< HEAD
-=======
-use Throwable;
->>>>>>> 6ed19256f (.)
+
+use function Safe\json_encode;
 
 class WebhookErrorFormatter
 {
     public function __construct(
-<<<<<<< HEAD
         private \Throwable $exception,
-=======
-        private Throwable $exception,
->>>>>>> 6ed19256f (.)
-    ) {
-    }
+    ) {}
 
     /**
      * @return array<string, mixed>

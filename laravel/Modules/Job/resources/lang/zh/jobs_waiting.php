@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -60,29 +59,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'connection' => [
-            'label' => '连接',
-        ],
-        'queue' => [
-            'label' => '队列',
-        ],
-        'payload' => [
-            'label' => '内容',
-        ],
-        'attempts' => [
-            'label' => '尝试次数',
-        ],
-        'reserved_at' => [
-            'label' => '保留时间',
-        ],
-        'available_at' => [
-            'label' => '可用时间',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -93,8 +69,4 @@ return [
             'label' => '重试',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

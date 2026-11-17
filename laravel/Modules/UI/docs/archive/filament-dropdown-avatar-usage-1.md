@@ -1,3 +1,10 @@
+---
+title: "Utilizzo dei Componenti Filament Dropdown e Avatar"
+qmd: "ui archive filament dropdown avatar usage 1 md"
+type: note
+tags: [documentation]
+---
+
 # Utilizzo dei Componenti Filament Dropdown e Avatar
 
 ## Collegamenti correlati

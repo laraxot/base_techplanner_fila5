@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
         'label' => 'Codici Autorizzazione OAuth',
         'plural_label' => 'Codici Autorizzazione OAuth',
         'group' => 'OAuth',
@@ -54,6 +53,17 @@ return [
             'helper_text' => 'Data e ora di scadenza del codice',
             'description' => 'Data di scadenza',
         ],
+        'user' => [
+            'name' => [
+                'label' => 'user.name',
+            ],
+        ],
+        'client' => [
+            'name' => [
+                'label' => 'client.name',
+            ],
+        ],
+        'created_at' => ['label' => 'Creato il'],
     ],
     'actions' => [
         'revoke' => [
@@ -63,23 +73,14 @@ return [
             'description' => 'Azione per revocare il codice',
             'success' => 'Codice di autorizzazione revocato con successo',
         ],
+        'create' => [
+            'icon' => 'create',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
     ],
     'messages' => [
         'revoked' => 'Codice revocato con successo',
     ],
-=======
-        'label' => 'OAuth Authorization Codes',
-        'group' => 'API',
-        'icon' => 'heroicon-o-code-bracket',
-        'sort' => 31,
-    ],
-    'actions' => [
-        'logout' => [
-            'tooltip' => 'logout',
-        ],
-    ],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
->>>>>>> 6ed19256f (.)
 ];

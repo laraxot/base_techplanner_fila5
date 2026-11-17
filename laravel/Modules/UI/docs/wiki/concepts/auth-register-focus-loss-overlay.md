@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki concepts auth register focus loss overlay md"
 title: "Auth register focus loss caused by mobile header overlay"
 type: concept
 tags: [ui, auth, register, focus, overlay, alpine]

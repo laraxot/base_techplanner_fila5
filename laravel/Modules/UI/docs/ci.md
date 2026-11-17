@@ -1,3 +1,10 @@
+---
+title: "ci"
+qmd: "ui ci md"
+type: note
+tags: [documentation]
+---
+
 ---------------------------------------------------------------------------------------------------
 Automatic Code formatting for Apps with Laravel Code Style
 https://codebrisk.com/blog/automatic-code-formatting-for-apps-with-laravel-code-style

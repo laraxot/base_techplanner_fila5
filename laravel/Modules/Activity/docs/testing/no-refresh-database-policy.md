@@ -1,3 +1,10 @@
+---
+title: "Policy: MAI Usare RefreshDatabase nei Test"
+qmd: "activity testing no refresh database policy md"
+type: note
+tags: [documentation]
+---
+
 # Policy: MAI Usare RefreshDatabase nei Test
 
 ## Regola Fondamentale
@@ -466,12 +473,9 @@ fi
 - [Testing Strategy](../../Xot/docs/testing-strategy.md) - **Strategia testing approvata**
 - [Testing Best Practices](../../Xot/docs/testing-best-practices.md)
 - [Real Data vs Mock Testing](../../Xot/docs/archive/testing/real-data-vs-mock-testing-strategy.md)
-<<<<<<< HEAD
 - [Testing Strategy](../../xot/docs/testing-strategy.md) - **Strategia testing approvata**
 - [Testing Best Practices](../../xot/docs/testing-best-practices.md)
 - [Real Data vs Mock Testing](../../xot/docs/testing/real-data-vs-mock-testing-strategy.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Test Esempi
 - [SnapshotBusinessLogicTest](../tests/Feature/SnapshotBusinessLogicTest.php) - Esempio corretto
@@ -481,8 +485,4 @@ fi
 
 **Policy Status**: 🔴 OBBLIGATORIA
 **Eccezioni**: Nessuna per modulo Activity (Event Sourcing)
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
->>>>>>> 6ed19256f (.)

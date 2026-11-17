@@ -8,8 +8,7 @@ return [
             'label' => 'E-Mail',
             'placeholder' => 'Geben Sie Ihre E-Mail ein',
             'tooltip' => 'Verwenden Sie eine gültige E-Mail-Adresse',
-            'icon' => 'heroicon-o-mail',
-            'description' => 'email',
+            'icon' => 'heroicon-o-envelope',
             'helper_text' => '',
         ],
         'password' => [
@@ -17,15 +16,12 @@ return [
             'placeholder' => 'Geben Sie Ihr Passwort ein',
             'tooltip' => 'Das Passwort muss mindestens 8 Zeichen enthalten',
             'icon' => 'heroicon-o-lock-closed',
-            'description' => 'password',
             'helper_text' => '',
         ],
         'remember' => [
             'label' => 'Angemeldet bleiben',
             'tooltip' => 'Halten Sie mich auf diesem Gerät angemeldet',
-            'description' => 'remember',
             'helper_text' => '',
-            'placeholder' => 'remember',
         ],
     ],
     'actions' => [
@@ -41,20 +37,14 @@ return [
             'icon' => 'heroicon-o-key',
             'color' => 'success',
         ],
-        'request' => [
-            'label' => 'request',
-        ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

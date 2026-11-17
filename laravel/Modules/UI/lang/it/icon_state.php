@@ -10,10 +10,7 @@ return [
             'help' => 'Nome identificativo dell\'elemento',
             'description' => 'Nome dell\'oggetto',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'edit-name' => [
             'label' => 'Modifica nome',
@@ -21,10 +18,7 @@ return [
             'help' => 'Modifica il nome esistente',
             'description' => 'Azione per modificare il nome',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'change-state' => [
             'label' => 'Cambia stato',
@@ -32,10 +26,7 @@ return [
             'help' => 'Modifica lo stato corrente',
             'description' => 'Azione per cambiare lo stato',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'state' => [
             'label' => 'Stato',
@@ -43,10 +34,7 @@ return [
             'help' => 'Stato attuale dell\'elemento',
             'description' => 'Condizione corrente del sistema',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'message' => [
             'label' => 'Messaggio',
@@ -54,17 +42,12 @@ return [
             'help' => 'Messaggio informativo',
             'description' => 'Testo del messaggio',
             'helper_text' => '',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'change-state' => [
-            'label' => 'change-state',
             'icon' => 'change-state',
-            'tooltip' => 'change-state',
         ],
     ],
     'messages' => [
@@ -78,7 +61,6 @@ return [
             'title' => 'Errore durante la transizione',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Icon State',
     'plural_label' => 'Icon State (Plurale)',
     'navigation' => [
@@ -90,8 +72,6 @@ return [
         ],
         'label' => 'Icon State',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

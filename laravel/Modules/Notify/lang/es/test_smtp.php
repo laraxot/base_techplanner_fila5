@@ -7,149 +7,88 @@ return [
         'label' => 'Prueba SMTP',
         'group' => 'Notificaciones',
         'icon' => 'heroicon-o-envelope-open',
-        'sort' => 47,
-    ],
+        'sort' => 47],
     'label' => 'Prueba SMTP',
     'plural_label' => 'Pruebas SMTP',
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'name' => [
             'label' => 'Nombre',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'host' => [
             'label' => 'Host',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'port' => [
             'label' => 'Puerto',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'username' => [
             'label' => 'Nombre de Usuario',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'password' => [
             'label' => 'Contraseña',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'encryption' => [
             'label' => 'Cifrado',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'from_address' => [
             'label' => 'Dirección Remitente',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'from_name' => [
             'label' => 'Nombre Remitente',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'status' => [
             'label' => 'Estado',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'last_tested_at' => [
             'label' => 'Última Prueba En',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'created_at' => [
             'label' => 'Creado En',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => 'Nombre',
-        ],
-        'host' => [
-            'label' => 'Host',
-        ],
-        'port' => [
-            'label' => 'Puerto',
-        ],
-        'username' => [
-            'label' => 'Nombre de Usuario',
-        ],
-        'password' => [
-            'label' => 'Contraseña',
-        ],
-        'encryption' => [
-            'label' => 'Cifrado',
-        ],
-        'from_address' => [
-            'label' => 'Dirección Remitente',
-        ],
-        'from_name' => [
-            'label' => 'Nombre Remitente',
-        ],
-        'status' => [
-            'label' => 'Estado',
-        ],
-        'last_tested_at' => [
-            'label' => 'Última Prueba En',
-        ],
-        'created_at' => [
-            'label' => 'Creado En',
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'body_html' => [
             'description' => 'Cuerpo HTML',
             'helper_text' => 'Contenido HTML del correo',
-<<<<<<< HEAD
             'label' => '',
-            'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'tooltip' => '']],
     'actions' => [
         'logout' => [
             'tooltip' => 'Cerrar sesión',
             'icon' => 'logout',
-            'label' => 'Cerrar sesión',
-        ],
+            'label' => 'Cerrar sesión'],
         'emailFormActions' => [
             'tooltip' => 'Acciones del Formulario de Correo',
             'icon' => 'emailFormActions',
-            'label' => 'Acciones del Formulario de Correo',
-        ],
+            'label' => 'Acciones del Formulario de Correo'],
         'profile' => [
             'tooltip' => 'Perfil',
-            'icon' => 'profile',
-        ],
+            'icon' => 'profile'],
         'send_test_email' => [
-            'label' => 'Enviar Correo de Prueba',
-        ],
+            'label' => 'Enviar Correo de Prueba'],
         'test_connection' => [
-            'label' => 'Probar Conexión',
-        ],
-    ],
-];
+            'label' => 'Probar Conexión']]];

@@ -23,8 +23,13 @@ class EmailData extends Data
 
     public string $body = '';
 
+    /** @var list<string> */
     public array $attachments = [];
 
+    /**
+     * @param  list<string>  $attachments
+     * @return void
+     */
     public function __construct(
         string $recipient,
         string $subject,
@@ -41,7 +46,7 @@ class EmailData extends Data
         }
         $this->from = $from;
         if (! is_string($from_email)) {
-            Assert::string($from_email = config('mail.from.address', 'default@example.com'));
+            Assert::string($from_email = config('mail.from.address', 'noreply@fixcity.eu'));
         }
         $this->from_email = $from_email;
 
@@ -60,7 +65,7 @@ class EmailData extends Data
             $this->from = $from;
         }
         if (! isset($this->from_email)) {
-            Assert::string($from_email = config('mail.from.address', 'default@example.com'));
+            Assert::string($from_email = config('mail.from.address', 'noreply@fixcity.eu'));
             $this->from_email = $from_email;
         }
 
@@ -73,11 +78,7 @@ class EmailData extends Data
             $this->body = strip_tags($this->body_html);
         }
 
-<<<<<<< HEAD
         $email = (new MimeEmail)
-=======
-        $email = (new MimeEmail())
->>>>>>> 6ed19256f (.)
             ->from($this->getFrom())
             ->to($this->recipient)
             ->subject(strip_tags($this->subject))

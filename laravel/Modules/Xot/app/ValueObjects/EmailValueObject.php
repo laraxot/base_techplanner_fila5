@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /*
  * Value Objects
  * The part of the model are Value Objects.
@@ -12,11 +11,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\ValueObjects;
 
-<<<<<<< HEAD
-=======
-use InvalidArgumentException;
-
->>>>>>> 6ed19256f (.)
 class EmailValueObject
 {
     public function __construct(
@@ -24,11 +18,7 @@ class EmailValueObject
         public string $email,
     ) {
         if (! filter_var($email, FILTER_VALIDATE_EMAIL)) {
-<<<<<<< HEAD
             throw new \InvalidArgumentException(sprintf('Email address %s is considered valid.', $email));
-=======
-            throw new InvalidArgumentException(sprintf('Email address %s is considered valid.', $email));
->>>>>>> 6ed19256f (.)
         }
     }
 }

@@ -20,16 +20,16 @@ class CategoryForm extends XotBaseResourceForm
     /**
      * @return array<int|string, SchemaComponent>
      */
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return [
             TextInput::make('title')
                 ->required()
                 ->maxLength(2048)
-                ->reactive()
+                ->live()
                 ->unique()
                 ->afterStateUpdated(function (Set $set, $state): void {
-                    $set('slug', Str::slug((string) $state));
+                    $set('slug', Str::slug(is_string($state) ? $state : (is_scalar($state) ? (string) $state : '')));
                 }),
             TextInput::make('slug')
                 ->required()
@@ -47,8 +47,8 @@ class CategoryForm extends XotBaseResourceForm
                 // ->maxSize(5000)
                 // ->multiple()
                 // ->enableReordering()
-                ->enableOpen()
-                ->enableDownload()
+                ->openable()
+                ->downloadable()
                 ->columnSpanFull()
                 ->collection('category')
                 // ->conversion('thumbnail')

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_fxJ8Mz
+---
+title: "STORY 1116 map marker fix"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "STORY 1116 map marker fix"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_u1UQA5
 # 📌 DEVE STORY-1116: FIX MAP CLUSTER MARKERS DISAPPEARANCE
 
 ## CONTESTO

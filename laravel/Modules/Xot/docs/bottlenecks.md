@@ -1,3 +1,11 @@
+---
+title: "Colli di Bottiglia e Soluzioni - Modulo Xot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "colli di bottiglia e soluzioni - modulo xot xot"
+---
 # Colli di Bottiglia e Soluzioni - Modulo Xot
 
 ## Panoramica
@@ -628,21 +636,13 @@ public function generateReport(Request $request)
 # Aggiungere al Supervisor
 [program:laravel-worker]
 process_name=%(program_name)s_%(process_num)02d
-<<<<<<< HEAD
 command=php artisan queue:work database --sleep=3 --tries=3 --max-time=3600
-=======
-command=php /var/www/html/base_<nome progetto>/laravel/artisan queue:work database --sleep=3 --tries=3 --max-time=3600
->>>>>>> 6ed19256f (.)
 autostart=true
 autorestart=true
 user=www-data
 numprocs=8
 redirect_stderr=true
-<<<<<<< HEAD
 stdout_logfile=storage/logs/worker.log
-=======
-stdout_logfile=/var/www/html/base_<nome progetto>/laravel/storage/logs/worker.log
->>>>>>> 6ed19256f (.)
 ```
 
 5. **Implementare Notifiche di Completamento**
@@ -691,15 +691,11 @@ Implementando queste soluzioni, il modulo Xot potrà superare i principali colli
 
 ## Collegamenti
 - [Roadmap Principale](./roadmap.md)
-- [Best Practices Performance](./BEST-PRACTICES.md#performance)
+- [Best Practices Performance](best-practices.md#performance)
 - [Struttura Moduli](./MODULE_STRUCTURE.md)
 
 ## Collegamenti tra versioni di BOTTLENECKS.md
 * [BOTTLENECKS.md](../../../Xot/docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../User/docs/BOTTLENECKS.md)
 * [BOTTLENECKS.md](../../../Media/docs/BOTTLENECKS.md)
-<<<<<<< HEAD
 * [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
-=======
-* [BOTTLENECKS.md](../../../Cms/docs/BOTTLENECKS.md)
->>>>>>> 6ed19256f (.)

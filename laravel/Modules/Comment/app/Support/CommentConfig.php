@@ -14,6 +14,8 @@ use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\CommentNotificationSubscription;
 use Modules\Comment\Models\Reaction;
 use Modules\Comment\Transformers\CommentTransformer;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Webmozart\Assert\Assert;
 
 /**
@@ -59,12 +61,12 @@ class CommentConfig
 
     public static function commentatorModelNameField(): string
     {
-        return (string) config('comments.models.name', 'name');
+        return SafeStringCastAction::cast(config('comments.models.name', 'name'));
     }
 
     public static function commentatorModelAvatarField(): string
     {
-        return (string) config('comments.models.avatar', 'avatar');
+        return SafeStringCastAction::cast(config('comments.models.avatar', 'avatar'));
     }
 
     /** @return class-string<Comment> */
@@ -89,7 +91,7 @@ class CommentConfig
 
     public static function gravatarDefaultImage(): string
     {
-        return (string) config('comments.gravatar.default_image', 'mp');
+        return SafeStringCastAction::cast(config('comments.gravatar.default_image', 'mp'));
     }
 
     /** @return class-string<Reaction> */
@@ -220,12 +222,12 @@ class CommentConfig
 
     public static function notificationMailFromAddress(): string
     {
-        return (string) config('comments.notifications.mail.from.address', config('mail.from.address', ''));
+        return SafeStringCastAction::cast(config('comments.notifications.mail.from.address', config('mail.from.address', '')));
     }
 
     public static function notificationMailFromName(): string
     {
-        return (string) config('comments.notifications.mail.from.name', config('mail.from.name', ''));
+        return SafeStringCastAction::cast(config('comments.notifications.mail.from.name', config('mail.from.name', '')));
     }
 
     public static function mentionsEnabled(): bool
@@ -245,7 +247,7 @@ class CommentConfig
 
     public static function editor(): string
     {
-        return (string) config('comments.ui.editor', 'comments::editors.easymde');
+        return SafeStringCastAction::cast(config('comments.ui.editor', 'comments::editors.easymde'));
     }
 
     /** @return class-string */
@@ -273,17 +275,17 @@ class CommentConfig
 
     public static function paginationCount(): int
     {
-        return (int) config('comments.pagination.results', 10_000);
+        return SafeIntCastAction::cast(config('comments.pagination.results', 10_000));
     }
 
     public static function paginationPageName(): string
     {
-        return (string) config('comments.pagination.page_name', 'page');
+        return SafeStringCastAction::cast(config('comments.pagination.page_name', 'page'));
     }
 
     public static function paginationTheme(): string
     {
-        return (string) config('comments.pagination.theme', 'tailwind');
+        return SafeStringCastAction::cast(config('comments.pagination.theme', 'tailwind'));
     }
 
     /**

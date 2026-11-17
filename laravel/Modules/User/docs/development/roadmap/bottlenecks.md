@@ -1,3 +1,17 @@
+---
+title: "Colli di Bottiglia - Modulo User"
+type: concept
+tags: [bottlenecks]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "bottlenecks colli di bottiglia - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./2fa.md"
+status: draft
+---
+
 # Colli di Bottiglia - Modulo User
 
 ## 1. Autenticazione 2FA [70%]
@@ -38,17 +52,10 @@
            $codes = collect(range(1, 8))->map(function() {
                return Str::random(10);
            })->all();
-<<<<<<< HEAD
            
            $this->user->recovery_codes = encrypt($codes);
            $this->user->save();
            
-=======
-
-           $this->user->recovery_codes = encrypt($codes);
-           $this->user->save();
-
->>>>>>> 6ed19256f (.)
            return $codes;
        }
    }
@@ -186,11 +193,7 @@
        public function handle($request, $next)
        {
            $key = $request->user()?->id ?? $request->ip();
-<<<<<<< HEAD
            
-=======
-
->>>>>>> 6ed19256f (.)
            return Redis::throttle("api:{$key}")
                ->allow(60)
                ->every(60)
@@ -256,7 +259,6 @@
 - Documentazione aggiornata
 
 ## Collegamenti tra versioni di bottlenecks.md
-<<<<<<< HEAD
 * [bottlenecks.md](../../../gdpr/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/project_docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/project_docs/performance/bottlenecks.md)
@@ -267,19 +269,4 @@
 * [bottlenecks.md](../../../job/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/project_docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../patient/project_docs/roadmap/bottlenecks.md)
-=======
->>>>>>> 6ed19256f (.)
-* [bottlenecks.md](../../../Gdpr/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Xot/project_docs/bottlenecks.md)
-* [bottlenecks.md](../../../Xot/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Xot/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../User/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../UI/project_docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../Lang/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Job/project_docs/performance/bottlenecks.md)
-* [bottlenecks.md](../../../Media/project_docs/performance/bottlenecks.md)
-<<<<<<< HEAD
-* [bottlenecks.md](../../../Patient/project_docs/roadmap/bottlenecks.md)
-=======
-* [bottlenecks.md](../../../Patient/project_docs/roadmap/bottlenecks.md)
->>>>>>> 6ed19256f (.)
+

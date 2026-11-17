@@ -79,11 +79,7 @@ return [
         ],
         '2fa' => [
             'title' => 'Autenticazione a due Fattori',
-<<<<<<< HEAD
             'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato].',
-=======
-            'description' => 'Gestisci l\'autenticazione a due fattori per il tuo account (raccomandato).',
->>>>>>> 6ed19256f (.)
             'actions' => [
                 'enable' => 'Abilita',
                 'regenerate_codes' => 'Rigenera Codici',
@@ -141,7 +137,6 @@ return [
         'tooltip' => 'Copiato!',
     ],
     'fields' => [
-<<<<<<< HEAD
         'avatar' => [
             'label' => 'Avatar',
             'tooltip' => '',
@@ -259,28 +254,4 @@ return [
             'label' => 'Elimina Default',
         ],
     ],
-=======
-        'avatar' => 'Avatar',
-        'email' => 'Email',
-        'login' => 'Login',
-        'name' => 'Nome',
-        'password' => 'Password',
-        'password_confirm' => 'Conferma password',
-        'new_password' => 'Nuova password',
-        'new_password_confirmation' => 'Conferma nuova password',
-        'token_name' => 'Nome del Token',
-        'token_expiry' => 'Scadenza del Token',
-        'abilities' => 'Abilità',
-        '2fa_code' => 'Codice',
-        '2fa_recovery_code' => 'Codice di Ripristino',
-        'created' => 'Creato',
-        'expires' => 'Scade',
-    ],
-    'or' => 'O',
-    'cancel' => 'Annulla',
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
-    'actions' => [],
->>>>>>> 6ed19256f (.)
 ];

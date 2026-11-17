@@ -24,14 +24,10 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string $domain
  * @property string $database
  * @property string $slug
- * @property array|null $settings
+ * @property array<string, mixed>|null $settings
  * @property bool $is_active
  * @property string|null $logo
-<<<<<<< HEAD
  * @property \Carbon\Carbon|null $last_activity_at
-=======
- *
->>>>>>> 6ed19256f (.)
  * @property-read string $url
  * @property-read Collection<int, User> $users
  * @property-read int|null $users_count
@@ -42,8 +38,8 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Tenant query()
  * @method static Tenant|null first()
  * @method static Collection<int, Tenant> get()
- * @method static Tenant create(array $attributes = [])
- * @method static Tenant firstOrCreate(array $attributes = [], array $values = [])
+ * @method static Tenant create(array<string, mixed> $attributes = [])
+ * @method static Tenant firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  * @method static Builder<static>|Tenant where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  * @method static Builder<static>|Tenant whereNotNull((string|Expression) $columns)
  * @method static int count(string $columns = '*')
@@ -65,10 +61,7 @@ use Modules\Xot\Contracts\ProfileContract;
  * @method static Builder<static>|Tenant whereName($value)
  * @method static Builder<static>|Tenant whereSlug($value)
  * @method static Builder<static>|Tenant whereUpdatedAt($value)
-<<<<<<< HEAD
  * @method static Builder<static>|Tenant whereSettings($value)
-=======
->>>>>>> 6ed19256f (.)
  *
  * @mixin \Eloquent
  */
@@ -96,18 +89,20 @@ class Tenant extends BaseModel
         'country',
         'tax_code',
         'vat_number',
-<<<<<<< HEAD
         'last_activity_at',
-=======
->>>>>>> 6ed19256f (.)
     ];
 
     /**
      * Relazione con gli utenti associati al tenant.
+     *
+     * @return HasMany<User, $this>
      */
     public function users(): HasMany
     {
-        return $this->hasMany(User::class);
+        /** @var HasMany<User, $this> $relation */
+        $relation = $this->hasMany(User::class);
+
+        return $relation;
     }
 
     // Commented out - Patient and Dental modules not available
@@ -169,10 +164,7 @@ class Tenant extends BaseModel
         return [
             'settings' => 'array',
             'is_active' => 'boolean',
-<<<<<<< HEAD
             'last_activity_at' => 'datetime',
-=======
->>>>>>> 6ed19256f (.)
         ];
     }
 }

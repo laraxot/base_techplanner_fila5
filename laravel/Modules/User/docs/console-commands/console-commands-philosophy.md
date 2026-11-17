@@ -1,3 +1,20 @@
+---
+title: "Filosofia dei Comandi Console - Modulo User"
+type: concept
+tags: [console, commands, philosophy]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "console-commands-philosophy filosofia dei comandi console - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./assign-module-command.md"
+  - "./change-password-command.md"
+  - "./console-commands.md"
+  - "./README.md"
+status: draft
+---
+
 # Filosofia dei Comandi Console - Modulo User
 
 ## Principi Fondamentali
@@ -55,16 +72,11 @@ public function handle(): int
             $this->error('Email non fornita.');
             return Command::FAILURE;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->error('Email non valida: ' . $email);
             return Command::FAILURE;
         }
-<<<<<<< HEAD
         
         // Logica principale
         $result = $this->processCommand();
@@ -72,15 +84,6 @@ public function handle(): int
         $this->info('Operazione completata con successo!');
         return Command::SUCCESS;
         
-=======
-
-        // Logica principale
-        $result = $this->processCommand();
-
-        $this->info('Operazione completata con successo!');
-        return Command::SUCCESS;
-
->>>>>>> 6ed19256f (.)
     } catch (\Exception $e) {
         $this->error('Errore durante l\'esecuzione: ' . $e->getMessage());
         return Command::FAILURE;
@@ -107,11 +110,7 @@ class ChangePasswordCommand extends Command
 {
     // Metodo principale - coordinamento
     public function handle(): int { /* ... */ }
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Metodi privati - responsabilità specifiche
     private function getUserEmail(): string { /* ... */ }
     private function getUserByEmail(string $email): ?User { /* ... */ }
@@ -217,11 +216,7 @@ $email = text('Inserisci l\'email dell\'utente:')
 
 // Con validazione in tempo reale
 $email = text('Inserisci l\'email dell\'utente:')
-<<<<<<< HEAD
     ->validate(fn (string $value): string|bool => 
-=======
-    ->validate(fn (string $value): string|bool =>
->>>>>>> 6ed19256f (.)
         filter_var($value, FILTER_VALIDATE_EMAIL) ? true : 'Email non valida'
     );
 
@@ -350,20 +345,12 @@ public function it_changes_user_password_successfully(): void
 {
     // Arrange
     $user = User::factory()->create();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Act
     $result = $this->artisan('user:change-password', [
         '--email' => $user->email
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Assert
     $result->assertExitCode(Command::SUCCESS);
     $this->assertDatabaseHas('users', [
@@ -385,11 +372,7 @@ public function it_handles_nonexistent_user_gracefully(): void
     $result = $this->artisan('user:change-password', [
         '--email' => 'nonexistent@example.com'
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Assert
     $result->assertExitCode(Command::FAILURE);
     $result->expectsOutput('Utente con email \'nonexistent@example.com\' non trovato.');
@@ -406,7 +389,6 @@ public function it_handles_large_datasets_efficiently(): void
 {
     // Arrange
     User::factory()->count(1000)->create();
-<<<<<<< HEAD
     
     // Act & Assert
     $startTime = microtime(true);
@@ -416,17 +398,6 @@ public function it_handles_large_datasets_efficiently(): void
     $endTime = microtime(true);
     $executionTime = $endTime - $startTime;
     
-=======
-
-    // Act & Assert
-    $startTime = microtime(true);
-
-    $result = $this->artisan('user:list');
-
-    $endTime = microtime(true);
-    $executionTime = $endTime - $startTime;
-
->>>>>>> 6ed19256f (.)
     $this->assertLessThan(5.0, $executionTime, 'Comando troppo lento');
     $result->assertExitCode(Command::SUCCESS);
 }
@@ -440,11 +411,7 @@ Mantenere **versioning chiaro** per ogni comando:
 ```php
 /**
  * ChangePasswordCommand
-<<<<<<< HEAD
  * 
-=======
- *
->>>>>>> 6ed19256f (.)
  * @version 2.0
  * @since 2025-01-27
  * @author Laraxot Team
@@ -490,10 +457,6 @@ private function getPasswordLegacy(): string
 
 ## Collegamenti
 - [README Comandi Console](README.md)
-<<<<<<< HEAD
-- [README Comandi Console](readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [ChangePasswordCommand](change-password-command.md)
 - [AssignModuleCommand](assign-module-command.md)
 - [Testing Strategy](../testing/console-commands-testing.md)
@@ -508,9 +471,3 @@ private function getPasswordLegacy(): string
 - ✅ **Security Framework**: Validazione, audit trail e controlli accesso
 - ✅ **Testing Strategy**: Test unitari, integrazione e performance
 - ✅ **Maintenance Policy**: Versioning, changelog e deprecation
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27*
-=======
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,10 @@
+---
+title: "api"
+qmd: "ui integration api md"
+type: note
+tags: [documentation]
+---
+
 # api
 
 <!-- Contenuto migrato da _docs/api.txt -->

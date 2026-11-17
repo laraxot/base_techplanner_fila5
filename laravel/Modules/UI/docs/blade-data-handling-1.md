@@ -1,3 +1,10 @@
+---
+title: "Data Handling in Blade Components"
+qmd: "ui blade data handling 1 md"
+type: note
+tags: [documentation]
+---
+
 # Data Handling in Blade Components
 
 This document outlines best practices for data handling in Blade components, particularly in theme blocks used for content sections.
@@ -94,11 +101,7 @@ Components should never rely on variables that haven't been explicitly defined a
 
 ```blade
 <!-- INCORRECT: Hard-coded project references -->
-<<<<<<< HEAD
 <div class="title">Welcome to <nome progetto></div>
-=======
-<div class="title">Welcome to SaluteOra</div>
->>>>>>> 6ed19256f (.)
 
 <!-- CORRECT: Dynamic configuration -->
 <div class="title">Welcome to {{ config('app.name') }}</div>

@@ -1,12 +1,12 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\OauthClient;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     public function up(): void
     {
         $this->tableCreate(static function (Blueprint $table): void {
@@ -18,11 +18,7 @@ return new class extends XotBaseMigration {
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
             // if (! $this->hasColumn('uuid'))
-=======
-            // if (! $this->hasColumn('uuid')) {
->>>>>>> 6ed19256f (.)
             //    $table->uuid('uuid')->nullable();
             // }
 

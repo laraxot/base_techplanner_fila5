@@ -1,12 +1,10 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: architecture
-canonical: ../../../../../Themes/docs/shared-components/architecture.md
+qmd: "xot consolidated architecture architecture md"
+title: "Xot - architecture.md"
+module: Xot
+bmad: true
+status: active
 ---
-
-See canonical documentation: ../../../../../Themes/docs/shared-components/architecture.md
-=======
 # 🏗️ **Architettura Modulo Xot**
 
 ## 📋 **Panoramica Architetturale**
@@ -106,7 +104,7 @@ abstract class XotBaseResource extends Resource
 {
     use HasXotTable;
 
-    public static function getFormSchema(): array
+    public function getFormSchema(): array
     {
         return static::getFormSchemaImplementation();
     }
@@ -403,4 +401,3 @@ test('all models extend base model', function () {
 ---
 
 *Ultimo aggiornamento: giugno 2025 - Versione 2.0.0*
->>>>>>> 6ed19256f (.)

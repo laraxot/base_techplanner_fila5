@@ -5,6 +5,8 @@ declare(strict_types=1);
 namespace Modules\TechPlanner\Models;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Carbon;
 
 /**
@@ -35,10 +37,7 @@ use Illuminate\Support\Carbon;
  * @property string|null $deleted_by
  * @property-read Profile|null $creator
  * @property-read Profile|null $updater
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @method static Builder<static>|MedicalDirector newModelQuery()
  * @method static Builder<static>|MedicalDirector newQuery()
  * @method static Builder<static>|MedicalDirector query()
@@ -68,18 +67,16 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|MedicalDirector selectRaw(string $expression)
  * @method static Builder<static>|MedicalDirector distinct()
  * @method static mixed pluck($column, $key = null)
- * @method static array toArray()
-<<<<<<< HEAD
+ * @method static array<string, mixed> toArray()
  *
  * @property-read Profile|null $deleter
  *
-=======
- * @property-read Profile|null $deleter
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class MedicalDirector extends BaseModel
 {
+    use SoftDeletes;
+
     protected $fillable = [
         'client_id', // IDCliente
         'last_name', // Cognome
@@ -92,5 +89,24 @@ class MedicalDirector extends BaseModel
         'birth_date', // Data nascita
         'start_date', // Data inizio
         'end_date', // Data fine
+        // Colonne usate dal form del pannello.
+        'name',
+        'fiscal_code',
+        'phone',
+        'email',
+        'notes',
+        'license_number',
+        'specialization',
+        'license_expiry',
     ];
+
+    /**
+     * Il cliente a cui appartiene.
+     *
+     * @return BelongsTo<Client, $this>
+     */
+    public function client(): BelongsTo
+    {
+        return $this->belongsTo(Client::class);
+    }
 }

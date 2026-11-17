@@ -23,6 +23,9 @@ class NotifyThemeFactory extends Factory
     /**
      * Define the model's default state.
      */
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
@@ -32,7 +35,6 @@ class NotifyThemeFactory extends Factory
             'subject' => fake()->word,
             'body' => fake()->text,
             'body_html' => fake()->text,
-            'from' => fake()->word,
-        ];
+            'from' => fake()->word];
     }
 }

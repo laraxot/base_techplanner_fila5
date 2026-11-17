@@ -1,3 +1,10 @@
+---
+title: "filament"
+qmd: "ui integration filament md"
+type: note
+tags: [documentation]
+---
+
 # filament
 
 <!-- Contenuto migrato da _docs/filament.txt -->

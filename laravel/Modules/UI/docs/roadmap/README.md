@@ -1,3 +1,10 @@
+---
+title: "UI Module Roadmap"
+qmd: "ui roadmap readme md"
+type: note
+tags: [documentation]
+---
+
 # UI Module Roadmap
 
 > "UI components and design system for the Laraxot ecosystem with reusable components and design tokens."

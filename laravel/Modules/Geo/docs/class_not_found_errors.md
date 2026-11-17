@@ -1,3 +1,14 @@
+---
+title: "class not found errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "class not found errors"
+issues: []
+discussions: []
+---
+
 # PHPStan Class Not Found Errors - Legacy Module References
 
 ## Problema
@@ -249,7 +260,7 @@ Includere controlli PHPStan nella pipeline:
 
 - [PHPStan Class Discovery](https://phpstan.org/user-guide/discovering-symbols)
 - [Laravel Autoloading](https://laravel.com/project_docs/structure#autoloading)
-- [Modules/Geo/project_docs/README.md](./readme.md)
+- [Modules/Geo/project_docs/README.md](./README.md)
 
 ## Backlink
 

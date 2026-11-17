@@ -23,7 +23,6 @@ return [
             'placeholder' => 'Seleziona tipo di layout',
             'tooltip' => 'Scegli tra vista a elenco e vista a griglia',
             'help' => 'Scegli il tipo di layout più adatto per visualizzare i dati',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -39,10 +38,6 @@ return [
         ],
         'label' => 'Table Layout Toggle Table',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

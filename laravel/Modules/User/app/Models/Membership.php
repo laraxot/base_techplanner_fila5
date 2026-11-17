@@ -6,13 +6,7 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
 use Modules\Xot\Contracts\ProfileContract;
-=======
-use Modules\User\Database\Factories\MembershipFactory;
-use Modules\Xot\Contracts\ProfileContract;
-use Modules\Xot\Models\Traits\HasXotFactory;
->>>>>>> 6ed19256f (.)
 
 /**
  * Modules\User\Models\Membership.
@@ -23,7 +17,7 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  * @method static Builder|Membership newQuery()
  * @method static Builder|Membership query()
  *
- * @property int         $id
+ * @property int $id
  * @property string|null $team_id
  * @property string|null $user_id
  * @property Carbon|null $created_at
@@ -49,16 +43,12 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
- * @mixin IdeHelperMembership
- *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
  * @method static Builder<static>|Membership whereId($value)
  *
  * @property array<array-key, mixed>|null $permissions
- * @property string|null                  $joined_at
+ * @property string|null $joined_at
  *
  * @method static Builder<static>|Membership whereJoinedAt($value)
  * @method static Builder<static>|Membership wherePermissions($value)
@@ -67,35 +57,16 @@ use Modules\Xot\Models\Traits\HasXotFactory;
  *
  * @method static Builder<static>|Membership whereUuid($value)
  *
-=======
- * @method static MembershipFactory          factory($count = null, $state = [])
- * @method static Builder<static>|Membership whereId($value)
- *
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Membership extends BasePivot
 {
-<<<<<<< HEAD
     protected $connection = 'user';
 
-=======
-    use HasXotFactory;
-
-    /** @var string */
-    protected $connection = 'user';
-
-    /** @var string */
->>>>>>> 6ed19256f (.)
     protected $table = 'team_user';
 
     /**
      * The "type" of the primary key ID.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $keyType = 'int';
 

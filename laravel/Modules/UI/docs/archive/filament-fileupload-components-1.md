@@ -1,3 +1,10 @@
+---
+title: "Componenti FileUpload in Filament"
+qmd: "ui archive filament fileupload components 1 md"
+type: note
+tags: [documentation]
+---
+
 # Componenti FileUpload in Filament
 
 ## Errore Comune: prefixIcon

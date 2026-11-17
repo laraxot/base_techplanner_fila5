@@ -16,60 +16,60 @@ use Modules\Xot\Contracts\ProfileContract;
 use function Safe\json_encode;
 
 /**
- * @property Address|null         $address
+ * @property Address|null $address
  * @property ProfileContract|null $creator
- * @property string               $formatted_address
- * @property float|null           $latitude
- * @property float|null           $longitude
- * @property Model|\Eloquent      $linked
- * @property PlaceType|null       $placeType
+ * @property string $formatted_address
+ * @property float|null $latitude
+ * @property float|null $longitude
+ * @property Model|\Eloquent $linked
+ * @property PlaceType|null $placeType
  * @property ProfileContract|null $updater
  *
  * @method static Builder<static>|Place newModelQuery()
  * @method static Builder<static>|Place newQuery()
  * @method static Builder<static>|Place query()
  *
- * @property int                  $id
- * @property string|null          $model_type
- * @property int|null             $model_id
- * @property string|null          $premise
- * @property string|null          $premise_short
- * @property string|null          $locality
- * @property string|null          $locality_short
- * @property string|null          $postal_town
- * @property string|null          $postal_town_short
- * @property string|null          $administrative_area_level_3
- * @property string|null          $administrative_area_level_3_short
- * @property string|null          $administrative_area_level_2
- * @property string|null          $administrative_area_level_2_short
- * @property string|null          $administrative_area_level_1
- * @property string|null          $administrative_area_level_1_short
- * @property string|null          $country
- * @property string|null          $country_short
- * @property string|null          $street_number
- * @property string|null          $street_number_short
- * @property string|null          $route
- * @property string|null          $route_short
- * @property string|null          $postal_code
- * @property string|null          $postal_code_short
- * @property string|null          $googleplace_url
- * @property string|null          $googleplace_url_short
- * @property string|null          $point_of_interest
- * @property string|null          $point_of_interest_short
- * @property string|null          $political
- * @property string|null          $political_short
- * @property string|null          $campground
- * @property string|null          $campground_short
- * @property string|null          $nearest_street
- * @property string|null          $created_by
- * @property string|null          $updated_by
- * @property string|null          $deleted_by
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string|null          $post_type
+ * @property int $id
+ * @property string|null $model_type
+ * @property int|null $model_id
+ * @property string|null $premise
+ * @property string|null $premise_short
+ * @property string|null $locality
+ * @property string|null $locality_short
+ * @property string|null $postal_town
+ * @property string|null $postal_town_short
+ * @property string|null $administrative_area_level_3
+ * @property string|null $administrative_area_level_3_short
+ * @property string|null $administrative_area_level_2
+ * @property string|null $administrative_area_level_2_short
+ * @property string|null $administrative_area_level_1
+ * @property string|null $administrative_area_level_1_short
+ * @property string|null $country
+ * @property string|null $country_short
+ * @property string|null $street_number
+ * @property string|null $street_number_short
+ * @property string|null $route
+ * @property string|null $route_short
+ * @property string|null $postal_code
+ * @property string|null $postal_code_short
+ * @property string|null $googleplace_url
+ * @property string|null $googleplace_url_short
+ * @property string|null $point_of_interest
+ * @property string|null $point_of_interest_short
+ * @property string|null $political
+ * @property string|null $political_short
+ * @property string|null $campground
+ * @property string|null $campground_short
+ * @property string|null $nearest_street
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property string|null $deleted_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $post_type
  * @property ProfileContract|null $deleter
  *
- * @method static PlaceFactory          factory($count = null, $state = [])
+ * @method static PlaceFactory factory($count = null, $state = [])
  * @method static Builder<static>|Place whereAddress($value)
  * @method static Builder<static>|Place whereAdministrativeAreaLevel1($value)
  * @method static Builder<static>|Place whereAdministrativeAreaLevel1Short($value)
@@ -113,19 +113,16 @@ use function Safe\json_encode;
  * @method static Builder<static>|Place whereUpdatedAt($value)
  * @method static Builder<static>|Place whereUpdatedBy($value)
  *
-<<<<<<< HEAD
  * @property string|null $name
  * @property string|null $slug
  * @property string|null $description
- * @property int|null    $place_type_id
+ * @property int|null $place_type_id
  *
  * @method static Builder<static>|Place whereDescription($value)
  * @method static Builder<static>|Place whereName($value)
  * @method static Builder<static>|Place wherePlaceTypeId($value)
  * @method static Builder<static>|Place whereSlug($value)
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Place extends BaseModel implements HasGeolocation
@@ -185,6 +182,9 @@ class Place extends BaseModel implements HasGeolocation
     /**
      * Get the linked model.
      */
+    /**
+     * @return MorphTo<Model, $this>
+     */
     public function linked(): MorphTo
     {
         return $this->morphTo('post');
@@ -193,6 +193,9 @@ class Place extends BaseModel implements HasGeolocation
     /**
      * Get the place type.
      */
+    /**
+     * @return BelongsTo<PlaceType, $this>
+     */
     public function placeType(): BelongsTo
     {
         return $this->belongsTo(PlaceType::class, 'type_id');
@@ -200,6 +203,9 @@ class Place extends BaseModel implements HasGeolocation
 
     /**
      * Get the address.
+     */
+    /**
+     * @return BelongsTo<Address, $this>
      */
     public function address(): BelongsTo
     {
@@ -266,8 +272,8 @@ class Place extends BaseModel implements HasGeolocation
     #[\Override]
     public function hasValidCoordinates(): bool
     {
-        return null !== $this->latitude
-            && null !== $this->longitude
+        return $this->latitude !== null
+            && $this->longitude !== null
             && $this->latitude >= -90
             && $this->latitude <= 90
             && $this->longitude >= -180

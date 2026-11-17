@@ -5,41 +5,15 @@ declare(strict_types=1);
 return [
     'fields' => [
         'title' => [
-            'label' => 'title',
-            'placeholder' => 'title',
-            'helper_text' => 'title',
-            'description' => 'title',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
-            'label' => 'description',
-            'placeholder' => 'description',
-            'helper_text' => 'description',
-            'description' => 'description',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'logo' => [
-            'label' => 'logo',
-            'placeholder' => 'logo',
-            'helper_text' => 'logo',
-            'description' => 'logo',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'copyright' => [
-            'label' => 'copyright',
-            'placeholder' => 'copyright',
-            'helper_text' => 'copyright',
-            'description' => 'copyright',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -54,7 +28,7 @@ return [
         ],
         'label' => 'Info',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -65,8 +39,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Info',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

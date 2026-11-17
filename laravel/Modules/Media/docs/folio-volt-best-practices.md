@@ -1,13 +1,16 @@
-<<<<<<< HEAD
-2025-11-29
 ---
-module: theme
-topic: folio-volt-best-practices
-canonical: ../../../Themes/docs/shared-components/folio-volt-best-practices.md
+issues: []
+discussions: []
+title: "Laravel Folio + Volt - Best Practices and Patterns Analysis"
+module: "Media"
+type: concept
+tags: [folio, volt, best, practices]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "folio volt best practices"
+related:
+  - "./webm.md"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/folio-volt-best-practices.md
-=======
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview
@@ -110,5 +113,4 @@ middleware(['auth', 'verified']);
 - Genesis Starter Kit: https://github.com/thedevdojo/genesis
 
 ## Date
-2025-11-29
->>>>>>> 6ed19256f (.)
+[DATE]

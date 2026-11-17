@@ -1,12 +1,32 @@
+---
+title: "Analisi dell'Errore negli Eventi di Logout"
+type: concept
+tags: [logout, event, error]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-event-error-1-1 analisi dell'errore negli eventi di logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Analisi dell'Errore negli Eventi di Logout
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/README.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](AUTH_PAGES_IMPLEMENTATION.md)
-- [Implementazione Logout](LOGOUT_BLADE_IMPLEMENTATION.md)
-- [Analisi Errore Logout](LOGOUT_BLADE_ERROR_ANALYSIS.md)
-- [Widget Filament Corretto](LOGOUT_FILAMENT_WIDGET_CORRECTED.md)
+- [Implementazione Auth Pages](auth_pages_implementation.md)
+- [Implementazione Logout](logout_blade_implementation.md)
+- [Analisi Errore Logout](logout_blade_error_analysis.md)
+- [Widget Filament Corretto](logout_filament_widget_corrected.md)
 - [Documentazione Auth Tema One](/laravel/Themes/One/docs/AUTH.md)
 
 ## Errore Identificato

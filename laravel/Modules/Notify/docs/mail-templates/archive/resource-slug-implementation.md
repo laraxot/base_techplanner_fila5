@@ -163,8 +163,8 @@ return [
 
 ## Riferimenti
 
-- [Implementazione del Modello](./model_slug_implementation.md)
-- [Struttura della Migrazione](./migration_structure.md)
+- [Implementazione del Modello](../model_slug_implementation.md)
+- [Struttura della Migrazione](../migration_structure.md)
 - [Guida alla Migrazione](../mail_template_migration_guide.md)
 - [Convenzioni Filament](../../../../docs/filament_conventions.md)
 - [Regole per Filament](../../../../docs/filament_rules.md)

@@ -1,11 +1,26 @@
-<<<<<<< HEAD
 ---
 module: theme
 topic: passport
 canonical: ../../../Themes/docs/shared-components/passport-Modules.md
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "passport"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "passport user"
 ---
 
 See canonical documentation: ../../../Themes/docs/shared-components/passport-Modules.md
-=======
-https://medium.com/@mrcyna/laravel-passport-and-microservice-architecture-ef6be7fcc79f
->>>>>>> 6ed19256f (.)

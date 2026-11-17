@@ -1,3 +1,14 @@
+---
+title: "task export dati utente"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task export dati utente"
+issues: []
+discussions: []
+---
+
 # Task: Completare Export Dati Utente - Gdpr
 
 **Modulo**: Gdpr
@@ -6,6 +17,14 @@
 
 ---
 
+title: "task export dati utente"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "task export dati utente"
+issues: []
+discussions: []
 ## Funzionalita'
 
 - [x] Action base per export dati

@@ -23,7 +23,6 @@ return [
             'placeholder' => 'Выбрать тип макета',
             'tooltip' => 'Выбрать между списочным и сеточным представлением',
             'help' => 'Выберите подходящий тип макета для отображения данных',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +36,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

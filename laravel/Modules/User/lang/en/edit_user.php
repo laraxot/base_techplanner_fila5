@@ -3,33 +3,18 @@
 declare(strict_types=1);
 
 return [
-    'actions' => [
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'cancel' => [
-            'label' => 'cancel',
-        ],
-        'save' => [
-            'label' => 'save',
-        ],
-    ],
     'fields' => [
         'password' => [
-            'label' => 'password',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'email' => [
-            'label' => 'email',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -44,14 +29,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

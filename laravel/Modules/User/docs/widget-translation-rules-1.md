@@ -195,7 +195,7 @@ protected static string $view = 'user::widgets.edit-user';
 - [User Module Widget Structure](../Modules/User/docs/widgets_structure.md)
 - [EditUserWidget Documentation](../Modules/User/docs/widgets/edit-user-widget.md)
 - [Widget Translation Guidelines](../Modules/User/docs/widgets/translation-guidelines.md)
-- [Filament Widget Conventions](../Modules/Xot/docs/filament-widgets.md)
+- [Filament Widget Conventions](best-practices/filament-widgets.md)
 
 ## Memory Integration
 

@@ -1,3 +1,10 @@
+---
+title: "PHPStan Fixes - November 2025"
+qmd: "ui phpstan fixes november 2025 md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Fixes - November 2025
 
 **Data:** 11 Novembre 2025  
@@ -186,7 +193,7 @@ Quando serve fare type narrowing di una variabile usata più volte, estrarre il 
 - [PHPStan Level 10 Documentation](https://phpstan.org/user-guide/rule-levels)
 - [PHPStan Compliance Report](phpstan-compliance.md)
 - [UI Module README](README.md)
-- [Architecture Rules](architecture_rules.md)
+- [Architecture Rules](archive/architecture_rules.md)
 
 ---
 

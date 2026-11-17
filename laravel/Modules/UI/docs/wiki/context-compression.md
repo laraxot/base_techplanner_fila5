@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki context compression md"
 title: "Context Compression Setup"
 module: "UI"
 type: concept

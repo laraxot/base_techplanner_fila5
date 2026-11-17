@@ -1,3 +1,14 @@
+---
+title: "quality improvements"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "quality improvements"
+issues: []
+discussions: []
+---
+
 # Quality Improvements - Geo Module
 
 ## Overview
@@ -96,14 +107,7 @@ private function extractBingCoordinates(array $data): ?array
 - Update any related documentation
 
 ## Date
-2025-11-23
-<<<<<<< HEAD
 [DATE]
 
 ## Version
 1.0.0
-=======
-
-## Version
-1.0.0
->>>>>>> 6ed19256f (.)

@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -48,23 +47,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'connection' => [
-            'label' => 'Connection',
-        ],
-        'queue' => [
-            'label' => 'Queue',
-        ],
-        'payload' => [
-            'label' => 'Payload',
-        ],
-        'exception' => [
-            'label' => 'Exception',
-        ],
-        'failed_at' => [
-            'label' => 'Failed At',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

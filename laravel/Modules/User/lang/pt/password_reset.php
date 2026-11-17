@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -36,17 +35,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'email' => [
-            'label' => 'Email',
-        ],
-        'token' => [
-            'label' => 'Token',
-        ],
-        'created_at' => [
-            'label' => 'Criado Em',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

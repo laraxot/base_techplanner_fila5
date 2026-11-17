@@ -1,3 +1,10 @@
+---
+title: "Task 001: Implement Design System and Reusable Components"
+qmd: "ui tasks 001 design system components md"
+type: note
+tags: [documentation]
+---
+
 # Task 001: Implement Design System and Reusable Components
 
 ## Description

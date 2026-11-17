@@ -17,18 +17,14 @@ return [
     'fields' => [
         'name' => [
             'label' => 'Nome',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'user' => [
             'email' => [
                 'label' => 'Proprietario',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
@@ -87,63 +83,19 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'create' => [
-            'label' => 'Crea',
-        ],
-        'edit' => [
-            'label' => 'Modifica',
-        ],
-        'delete' => [
-            'label' => 'Elimina',
-        ],
-        'toggleColumns' => [
-            'label' => 'Gestisci Colonne',
-        ],
-        'reorderRecords' => [
-            'label' => 'Riordina Record',
-        ],
-        'resetFilters' => [
-            'label' => 'Reimposta Filtri',
-        ],
-        'applyFilters' => [
-            'label' => 'Applica Filtri',
-        ],
-        'openFilters' => [
-            'label' => 'Apri Filtri',
-        ],
-        'recordId' => [
-            'label' => 'ID Record',
->>>>>>> 6ed19256f (.)
         ],
         'client_id' => [
-            'description' => 'client_id',
-            'helper_text' => 'client_id',
-            'placeholder' => 'client_id',
-            'label' => 'client_id',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
         'secret' => [
-            'label' => 'secret',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'id' => [
-            'label' => 'id',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'secret' => [
-            'label' => 'secret',
-        ],
-        'id' => [
-            'label' => 'id',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'plural' => [
@@ -154,105 +106,68 @@ return [
     'actions' => [
         'reorderRecords' => [
             'icon' => 'reorderRecords',
-            'label' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'openColumnManager' => [
             'icon' => 'openColumnManager',
-            'label' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
             'icon' => 'applyTableColumnManager',
-            'label' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
             'icon' => 'resetFilters',
-            'label' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyFilters' => [
             'icon' => 'applyFilters',
-            'label' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
             'icon' => 'openFilters',
-            'label' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'delete' => [
             'icon' => 'delete',
-            'label' => 'delete',
-            'tooltip' => 'delete',
         ],
         'edit' => [
             'icon' => 'edit',
-            'label' => 'edit',
-            'tooltip' => 'edit',
         ],
         'create' => [
             'icon' => 'create',
-            'label' => 'create',
-            'tooltip' => 'create',
         ],
         'attach' => [
             'icon' => 'attach',
-            'label' => 'attach',
-            'tooltip' => 'attach',
         ],
         'detach' => [
             'icon' => 'detach',
-            'label' => 'detach',
-            'tooltip' => 'detach',
         ],
         'cancel' => [
-            'tooltip' => 'cancel',
             'icon' => 'cancel',
-            'label' => 'cancel',
         ],
         'logout' => [
-            'tooltip' => 'logout',
             'icon' => 'logout',
-            'label' => 'logout',
         ],
         'createAnother' => [
-            'tooltip' => 'createAnother',
-        ],
-        'attachAnother' => [
-            'tooltip' => 'attachAnother',
+            'icon' => 'createAnother',
         ],
         'profile' => [
-            'tooltip' => 'profile',
             'icon' => 'profile',
-            'label' => 'profile',
         ],
         'view' => [
-            'tooltip' => 'view',
             'icon' => 'view',
         ],
         'submit' => [
-            'tooltip' => 'submit',
             'icon' => 'submit',
-            'label' => 'submit',
         ],
         'associateExistingClient' => [
-            'tooltip' => 'associateExistingClient',
             'icon' => 'associateExistingClient',
-            'label' => 'associateExistingClient',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'resetColumnManager' => [
+            'icon' => 'resetColumnManager',
+        ],
+        'dissociateClient' => [
+            'icon' => 'dissociateClient',
         ],
     ],
-    'sections' => [
-        'empty' => [
-            'heading' => 'empty',
-        ],
-    ],
-<<<<<<< HEAD
     'label' => 'Client',
     'plural_label' => 'Client (Plurale)',
-=======
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

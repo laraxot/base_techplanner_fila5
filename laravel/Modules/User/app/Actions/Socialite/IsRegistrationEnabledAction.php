@@ -1,15 +1,13 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/DutchCodingCompany/filament-socialite
  */
 
-declare(strict_types=1);
-
 namespace Modules\User\Actions\Socialite;
 
 use Spatie\QueueableAction\QueueableAction;
-use Webmozart\Assert\Assert;
 
 class IsRegistrationEnabledAction
 {
@@ -20,8 +18,9 @@ class IsRegistrationEnabledAction
      */
     public function execute(): bool
     {
-        Assert::boolean($res = config('filament-socialite.registration'));
+        // Chiave assente o valorizzata a null (es. env non impostata): vale il default, registrazione attiva.
+        $registration = config('socialite.registration');
 
-        return $res;
+        return $registration === null ? true : (bool) $registration;
     }
 }

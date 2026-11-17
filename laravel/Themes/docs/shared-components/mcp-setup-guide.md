@@ -38,7 +38,7 @@ The MCP system is configured in the `mcp.json` file located in the Laravel root 
       "args": [
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/var/www/_bases/base_healthcare_app_fila5_mono/laravel"
+        "/var/www/_bases/base_healthcare_app_fila5/laravel"
       ]
     },
     "git": {

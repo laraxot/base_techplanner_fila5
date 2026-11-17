@@ -1,8 +1,11 @@
-<<<<<<< HEAD
+---
+title: "Flusso Utente <nome progetto>ion Market"
+qmd: "activity use cases prediction market 03 flusso utente md"
+type: note
+tags: [documentation]
+---
+
 # Flusso Utente <nome progetto>ion Market
-=======
-# Flusso Utente Prediction Market
->>>>>>> 6ed19256f (.)
 
 1. **Creazione Mercato**: un utente crea un mercato (es. “Vincerà il candidato X?”).
    - Comando console: `market:create "Vincerà il candidato X?"`
@@ -27,8 +30,4 @@
 
 ## Zen
 - "Ogni comando console è un test vivente del dominio."
-<<<<<<< HEAD
 - "La semplicità favorisce la testabilità e la comprensione."
-=======
-- "La semplicità favorisce la testabilità e la comprensione."
->>>>>>> 6ed19256f (.)

@@ -1,0 +1,248 @@
+- generic [active] [ref=e1]:
+  - link "Vai al contenuto principale" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - region "Gestione dei cookie" [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]:
+        - paragraph [ref=e6]: Cookie
+        - paragraph [ref=e7]:
+          - text: "Questo sito usa solo cookie tecnici, necessari al suo funzionamento: non richiedono il tuo consenso. Non usiamo cookie di profilazione né di analisi."
+          - link "Maggiori informazioni (Cookie policy)" [ref=e8] [cursor=pointer]:
+            - /url: http://127.0.0.1:8011/it/cookies
+            - text: Maggiori informazioni
+            - generic [ref=e9]: (Cookie policy)
+      - button "Ho capito" [ref=e11] [cursor=pointer]
+  - banner [ref=e12]:
+    - generic [ref=e14]:
+      - link "Sottana Service - Home" [ref=e15] [cursor=pointer]:
+        - /url: http://127.0.0.1:8011/it
+        - generic [ref=e28]: Sottana Service
+      - navigation "Menu principale" [ref=e29]:
+        - link "Home" [ref=e30] [cursor=pointer]:
+          - /url: /it
+        - link "Chi Siamo" [ref=e32] [cursor=pointer]:
+          - /url: /it/about
+        - link "Servizi" [ref=e34] [cursor=pointer]:
+          - /url: /it/services
+        - link "Blog" [ref=e36] [cursor=pointer]:
+          - /url: /it/blog
+        - link "FAQ" [ref=e38] [cursor=pointer]:
+          - /url: /it/faqs
+        - link "Contatti" [ref=e40] [cursor=pointer]:
+          - /url: /it/contacts
+      - generic [ref=e42]:
+        - 'button "Cambia lingua (attuale: it)" [ref=e44] [cursor=pointer]':
+          - generic [ref=e45]: it
+        - link "Accedi" [ref=e48] [cursor=pointer]:
+          - /url: http://127.0.0.1:8011/it/auth/login
+        - link "Richiedi Consulenza - Vai ai contatti" [ref=e49] [cursor=pointer]:
+          - /url: /it/contatti
+          - text: Richiedi Consulenza
+  - main [ref=e52]:
+    - generic [ref=e53]:
+      - text: "|---LINE:28---|"
+      - generic [ref=e59]:
+        - heading "Chi Siamo" [level=1] [ref=e60]
+        - paragraph [ref=e61]: Sottana Service. Sicurezza ed igiene per i tuoi studi professionali.
+        - link "Contattaci" [ref=e63] [cursor=pointer]:
+          - /url: /contacts
+      - generic [ref=e68]:
+        - generic [ref=e69]:
+          - heading "La Nostra Storia" [level=2] [ref=e70]
+          - generic [ref=e71]:
+            - paragraph [ref=e72]: "Sottana Service nasce con una missione chiara: garantire la massima sicurezza e conformità negli studi professionali."
+            - paragraph [ref=e73]: Forniamo supporto ai professionisti che cercano un partner affidabile per la gestione della sicurezza, igiene e radioprotezione nei loro studi.
+            - paragraph [ref=e74]: "La nostra filosofia si basa su tre pilastri: competenza tecnica senza compromessi, supporto completo al cliente e conformità garantita secondo le normative vigenti."
+        - img "La Nostra Storia" [ref=e77]
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - heading "Missione e Valori" [level=2] [ref=e81]
+          - paragraph [ref=e82]: I principi che guidano ogni nostro intervento e ci rendono partner affidabili per la tua attività
+        - generic [ref=e83]:
+          - generic [ref=e88]:
+            - heading "Missione" [level=3] [ref=e89]
+            - paragraph [ref=e90]: Garantire la massima sicurezza radiologica ed elettrica attraverso controlli precisi e consulenza specializzata.
+          - generic [ref=e95]:
+            - heading "Competenza" [level=3] [ref=e96]
+            - paragraph [ref=e97]: Aggiornamento costante su normative e tecnologie, certificazioni riconosciute e esperienza decennale.
+          - generic [ref=e102]:
+            - heading "Innovazione" [level=3] [ref=e103]
+            - paragraph [ref=e104]: Utilizzo di tecnologie all'avanguardia e approcci innovativi per semplificare la conformità.
+          - generic [ref=e109]:
+            - heading "Integrità" [level=3] [ref=e110]
+            - paragraph [ref=e111]: Trasparenza totale nei processi e approccio etico. La fiducia dei clienti è il nostro asset più prezioso.
+          - generic [ref=e116]:
+            - heading "Orientamento al Cliente" [level=3] [ref=e117]
+            - paragraph [ref=e118]: Ascolto attento delle esigenze, soluzioni personalizzate e supporto continuo.
+          - generic [ref=e123]:
+            - heading "Responsabilità" [level=3] [ref=e124]
+            - paragraph [ref=e125]: Impegno costante per la protezione della salute e della sicurezza nel settore sanitario.
+      - generic [ref=e127]:
+        - generic [ref=e128]:
+          - heading "Dati Aziendali" [level=2] [ref=e129]
+          - paragraph [ref=e130]: Informazioni legali e di contatto
+        - generic [ref=e133]:
+          - generic [ref=e138]:
+            - generic [ref=e139]: Partita IVA
+            - generic [ref=e140]: "05532540266"
+          - generic [ref=e145]:
+            - generic [ref=e146]: REA
+            - generic [ref=e147]: TV - 451911
+          - generic [ref=e153]:
+            - generic [ref=e154]: Sede
+            - generic [ref=e155]: Via Vanzo 86, 31021 Mogliano Veneto TV
+      - generic [ref=e157]:
+        - generic [ref=e158]:
+          - heading "Perché Sceglierci" [level=2] [ref=e159]
+          - paragraph [ref=e160]: I vantaggi che fanno la differenza per il tuo studio
+        - generic [ref=e161]:
+          - generic [ref=e162]:
+            - heading "Specializzazione Dentistico/Veterinario" [level=3] [ref=e166]
+            - paragraph [ref=e167]: Ci concentriamo esclusivamente su studi dentistici e cliniche veterinarie, garantendo competenza specifica.
+            - list [ref=e168]:
+              - listitem [ref=e169]: Controlli RX endorali
+              - listitem [ref=e172]: Ortopantomografia OPT
+              - listitem [ref=e175]: CBCT e TC Cone Beam
+              - listitem [ref=e178]: Radiologia veterinaria
+          - generic [ref=e181]:
+            - heading "Esperienza" [level=3] [ref=e185]
+            - paragraph [ref=e186]: Anni di attività nel campo dei controlli periodici e della consulenza radioprotezione.
+            - list [ref=e187]:
+              - listitem [ref=e188]: Controlli periodici
+              - listitem [ref=e191]: Consulenza specifica
+              - listitem [ref=e194]: Aggiornamento costante
+          - generic [ref=e197]:
+            - heading "Conformità Normativa Garantita" [level=3] [ref=e201]
+            - paragraph [ref=e202]: Tutti i controlli secondo D.Lgs 101/2020 e Direttiva 2013/59/Euratom, senza eccezioni.
+            - list [ref=e203]:
+              - listitem [ref=e204]: D.Lgs 101/2020
+              - listitem [ref=e207]: Direttiva Euratom 2013/59
+              - listitem [ref=e210]: Documentazione completa
+              - listitem [ref=e213]: Registri aggiornati
+          - generic [ref=e216]:
+            - heading "Supporto Completo" [level=3] [ref=e220]
+            - paragraph [ref=e221]: Non solo controlli, ma consulenza completa per la gestione della radioprotezione nel tuo studio.
+            - list [ref=e222]:
+              - listitem [ref=e223]: Consulenza telefonica
+              - listitem [ref=e226]: Supporto documentazione
+              - listitem [ref=e229]: Formazione personale
+              - listitem [ref=e232]: Assistenza rapida
+          - generic [ref=e235]:
+            - heading "Prezzi Competitivi" [level=3] [ref=e239]
+            - paragraph [ref=e240]: Tariffe chiare e competitive senza sacrificare la qualità dei controlli e della consulenza.
+            - list [ref=e241]:
+              - listitem [ref=e242]: Preventivo gratuito
+              - listitem [ref=e245]: Nessun costo nascosto
+              - listitem [ref=e248]: Pagamenti dilazionati
+              - listitem [ref=e251]: Rapporto qualità/prezzo
+          - generic [ref=e254]:
+            - heading "Risultati Certificati" [level=3] [ref=e258]
+            - paragraph [ref=e259]: Rilascio di certificati e documentazione valida per gli organi di controllo.
+            - list [ref=e260]:
+              - listitem [ref=e261]: Certificati ufficiali
+              - listitem [ref=e264]: Documentazione ASL
+              - listitem [ref=e267]: Registri conformi
+              - listitem [ref=e270]: Tracciabilità completa
+        - link "Parliamo del Tuo Studio" [ref=e274] [cursor=pointer]:
+          - /url: /contacts
+    - text: "|---LINE:30---|"
+  - contentinfo [ref=e277]:
+    - generic [ref=e279]:
+      - generic [ref=e280]:
+        - heading "Sottana Service" [level=2] [ref=e281]
+        - paragraph [ref=e282]: Consulenza Sicurezza e Radioprotezione
+        - paragraph [ref=e283]: Specialisti in radioprotezione e sicurezza per studi dentistici e cliniche veterinarie. Partner di fiducia per la conformità normativa.
+        - generic [ref=e284]:
+          - link "Seguici su LinkedIn (si apre in una nuova finestra)" [ref=e285] [cursor=pointer]:
+            - /url: https://linkedin.com/in/marcosottana
+            - generic [ref=e286]: LinkedIn
+          - link "Seguici su Facebook (si apre in una nuova finestra)" [ref=e289] [cursor=pointer]:
+            - /url: https://facebook.com/marcosottana
+            - generic [ref=e290]: Facebook
+          - link "Seguici su Instagram (si apre in una nuova finestra)" [ref=e293] [cursor=pointer]:
+            - /url: https://instagram.com/marcosottana
+            - generic [ref=e294]: Instagram
+      - generic [ref=e297]:
+        - heading "Normative & Certificazioni" [level=3] [ref=e298]
+        - generic [ref=e301]:
+          - generic [ref=e302]:
+            - heading "D.Lgs 101/2020" [level=4] [ref=e303]
+            - paragraph [ref=e304]: Attuazione della direttiva 2013/59/Euratom per la sicurezza radiologica.
+          - generic [ref=e305]:
+            - heading "Esperti di Radioprotezione" [level=4] [ref=e306]
+            - paragraph [ref=e307]: Professionisti iscritti negli elenchi nominativi autorizzati.
+          - generic [ref=e308]:
+            - heading "IEC 62353" [level=4] [ref=e309]
+            - paragraph [ref=e310]: Verifiche periodiche di sicurezza elettrica per apparecchi elettromedicali.
+      - generic [ref=e311]:
+        - heading "Servizi di Consulenza" [level=3] [ref=e312]
+        - list [ref=e313]:
+          - listitem [ref=e314]:
+            - generic [ref=e316]: Autorizzazioni Sanitarie
+          - listitem [ref=e317]:
+            - generic [ref=e319]: Controllo Apparecchi RX ed Elettromedicali
+          - listitem [ref=e320]:
+            - generic [ref=e322]: Documenti di Valutazione del Rischio
+      - generic [ref=e323]:
+        - heading "Contatti" [level=3] [ref=e324]
+        - list [ref=e325]:
+          - listitem [ref=e326]:
+            - generic [ref=e330]: Via Vanzo 86, 31021 Mogliano Veneto TV
+          - listitem [ref=e332]:
+            - link "studio@sottana.com" [ref=e337] [cursor=pointer]:
+              - /url: mailto:studio@sottana.com
+          - listitem [ref=e338]:
+            - link "+39 041 455552" [ref=e343] [cursor=pointer]:
+              - /url: tel:+39041455552
+          - listitem [ref=e344]:
+            - link "+39 347 58 96 127" [ref=e349] [cursor=pointer]:
+              - /url: tel:+393475896127
+        - generic [ref=e350]:
+          - paragraph [ref=e351]: "P.IVA: 05532540266"
+          - paragraph [ref=e352]: "REA: TV - 451911"
+        - generic [ref=e353]:
+          - 'link "Mappa posizione: Via Vanzo 86, Mogliano Veneto Vedi su Google Maps (si apre in una nuova finestra)" [ref=e354] [cursor=pointer]':
+            - /url: https://www.google.com/maps/search/?api=1&query=Via+Vanzo+86,+Mogliano+Veneto+TV
+            - 'img "Mappa posizione: Via Vanzo 86, Mogliano Veneto" [ref=e355]'
+            - generic [ref=e357]:
+              - text: Vedi su Google Maps
+              - generic [ref=e358]: (si apre in una nuova finestra)
+          - paragraph [ref=e359]: Clicca per aprire la mappa
+    - generic [ref=e362]:
+      - paragraph [ref=e363]: © 2026 Sottana Service - Consulenza Sicurezza e Radioprotezione. Tutti i diritti riservati.
+      - generic [ref=e364]:
+        - link "Privacy Policy" [ref=e365] [cursor=pointer]:
+          - /url: /it/privacy
+        - link "Termini e Condizioni" [ref=e366] [cursor=pointer]:
+          - /url: /it/terms
+      - button "Torna all'inizio della pagina" [ref=e367] [cursor=pointer]
+  - generic [ref=e372]:
+    - generic [ref=e373] [cursor=pointer]
+    - generic [ref=e374]:
+      - generic [ref=e375] [cursor=pointer]: Request
+      - generic [ref=e376] [cursor=pointer]: Timeline
+      - generic [ref=e377] [cursor=pointer]:
+        - generic: Views
+        - generic [ref=e378]: "29"
+      - generic [ref=e379] [cursor=pointer]: Route
+      - generic [ref=e380] [cursor=pointer]:
+        - generic: Queries
+        - generic [ref=e381]: "2"
+      - generic [ref=e382] [cursor=pointer]:
+        - generic: Models
+        - generic [ref=e383]: "5"
+      - generic [ref=e384] [cursor=pointer]:
+        - generic: Livewire
+        - generic [ref=e385]: "1"
+      - generic [ref=e386] [cursor=pointer]: Auth
+      - generic [ref=e387] [cursor=pointer]: Session
+    - generic [ref=e388]:
+      - generic [ref=e389] [cursor=pointer]
+      - generic [ref=e390] [cursor=pointer]
+      - generic [ref=e391] [cursor=pointer]
+      - generic [ref=e393] [cursor=pointer]
+      - generic [ref=e394]: GET /it/about
+      - generic [ref=e397] [cursor=pointer]: 8.4.27
+      - generic [ref=e399] [cursor=pointer]: 493ms
+      - generic [ref=e401] [cursor=pointer]: 10MB
+      - generic [ref=e403] [cursor=pointer]

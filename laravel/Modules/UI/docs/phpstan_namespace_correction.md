@@ -1,3 +1,10 @@
+---
+title: "Correzione Namespace nel Modulo UI"
+qmd: "ui phpstan namespace correction md"
+type: note
+tags: [documentation]
+---
+
 # Correzione Namespace nel Modulo UI
 
 ## Problema Identificato

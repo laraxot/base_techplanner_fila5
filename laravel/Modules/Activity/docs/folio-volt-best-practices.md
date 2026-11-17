@@ -1,3 +1,10 @@
+---
+title: "Laravel Folio + Volt - Best Practices and Patterns Analysis"
+qmd: "activity folio volt best practices md"
+type: note
+tags: [documentation]
+---
+
 # Laravel Folio + Volt - Best Practices and Patterns Analysis
 
 ## Overview
@@ -101,7 +108,4 @@ middleware(['auth', 'verified']);
 
 ## Date
 2025-11-29
-<<<<<<< HEAD
 [DATE]
-=======
->>>>>>> 6ed19256f (.)

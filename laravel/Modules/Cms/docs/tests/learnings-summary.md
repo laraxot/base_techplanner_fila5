@@ -1,3 +1,14 @@
+---
+title: "learnings summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "learnings summary"
+issues: []
+discussions: []
+---
+
 # Learnings Summary - Implementation Test Registrazione ✅ RISOLTO
 
 ## 🎯 Mission Accomplished
@@ -107,7 +118,6 @@ $email = $this->generateUniqueEmail();
 1. ✅ `registration-widget-test-strategy.md` - Strategia completa implementazione
 2. ✅ `pestphp-best-practices.md` - Pattern PestPHP identificati
 3. ✅ `learnings-summary.md` - Riepilogo completo learnings ← **QUESTO DOCUMENTO**
-4. ✅ `testing.md` - Aggiornato sezione Widget Testing e Helper Functions
 
 ### **Root Documentation**
 5. ✅ `testing-organization.md` - Aggiunta sezione "PestPHP Pattern Identificati"
@@ -183,10 +193,13 @@ Il sistema di test è ora **pronto per produzione** con:
 
 ---
 
-*Ultimo aggiornamento: Dicembre 2024*
+title: "learnings summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "learnings summary"
+issues: []
+discussions: []
 *Versione: 2.0 - Helper Functions Centralized*
-<<<<<<< HEAD
 *Compatibilità: <nome progetto>, PestPHP 2.x, Laravel 10+*
-=======
-*Compatibilità: <nome progetto>, PestPHP 2.x, Laravel 10+*
->>>>>>> 6ed19256f (.)

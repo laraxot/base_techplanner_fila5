@@ -5,14 +5,11 @@ declare(strict_types=1);
 return [
     'fields' => [
         'login_at' => [
-            'label' => 'login_at',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'logout_at' => [
-            'label' => 'logout_at',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -27,13 +24,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
-        ],
-        'logout_at' => [
-            'label' => 'logout_at',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

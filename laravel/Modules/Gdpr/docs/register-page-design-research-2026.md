@@ -1,3 +1,14 @@
+---
+title: "register page design research 2026"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "register page design research 2026"
+issues: []
+discussions: []
+---
+
 # Register Page Design Research 2026
 
 This document compiles the latest design patterns, UX best practices, and modern trends for registration/signup pages based on comprehensive research from top design resources.
@@ -306,6 +317,14 @@ This document compiles the latest design patterns, UX best practices, and modern
 
 ---
 
+title: "register page design research 2026"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "register page design research 2026"
+issues: []
+discussions: []
 ## References
 
 - Dribbble Register Page Examples: https://dribbble.com/tags/register-page

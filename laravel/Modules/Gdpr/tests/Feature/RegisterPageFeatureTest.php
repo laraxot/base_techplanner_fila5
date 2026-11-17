@@ -4,12 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Tests\Feature;
 
-use Modules\Gdpr\Tests\TestCase;
-
-uses(TestCase::class);
+use PHPUnit\Framework\Assert;
 
 it('renders the English register page with hero and form texts', function (): void {
-    $response = $this->get('/en/auth/register');
+    $response = gdprGet('/en/auth/register');
 
     $response->assertStatus(200);
     $response->assertSee(__('gdpr::register.title'), false);
@@ -20,7 +18,7 @@ it('renders the English register page with hero and form texts', function (): vo
 });
 
 it('uses the localized login link on the register page', function (): void {
-    $response = $this->get('/en/auth/register');
+    $response = gdprGet('/en/auth/register');
 
     $response->assertStatus(200);
     $response->assertSee('/en/auth/login', false);
@@ -49,6 +47,6 @@ it('has all required translation keys used by the register page', function (): v
 
     foreach ($requiredKeys as $key) {
         $translated = __($key);
-        expect($translated)->not->toBe($key, "Translation key [{$key}] is missing or returns raw key");
+        Assert::assertNotSame($key, $translated, "Translation key [{$key}] is missing or returns raw key");
     }
 });

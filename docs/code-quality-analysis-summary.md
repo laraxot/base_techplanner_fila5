@@ -146,7 +146,7 @@
 - ✅ `docs/filament_integration.md` - Integrazione Filament
 
 ### Global
-- ✅ `docs/code-quality-analysis-summary-2025-11-24.md` - Questo report
+- ✅ `docs/code-quality-analysis-summary.md` - Questo report
 - ✅ `.cursor/rules/code-quality-continuous-analysis.mdc` - Regola analisi continua
 
 ---

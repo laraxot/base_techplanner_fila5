@@ -2,37 +2,46 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
+namespace Modules\UI\Tests\Unit\Components;
+
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
->>>>>>> 6ed19256f (.)
+use Modules\UI\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-test('ui components can be rendered', function () {
-    $component = new class extends Component {
-        public function render()
-        {
-            return view('ui::components.ui.button');
-        }
-    };
+uses(TestCase::class);
 
-    expect($component)->toBeInstanceOf(Component::class);
-});
+describe('Component', function (): void {
+    test('ui components can be rendered', function (): void {
+        $component = new class extends Component {
+            public function render(): View
+            {
+                /** @var view-string $buttonView */
+                $buttonView = 'ui::components.ui.button';
 
-test('ui button component has correct attributes', function () {
-    $view = view('ui::components.ui.button', [
-        'type' => 'primary',
-        'size' => 'md',
-        'disabled' => false,
-    ]);
+                return view($buttonView);
+            }
+        };
 
-    expect($view->render())->toContain('btn')->toContain('btn-primary');
-});
+        Assert::assertStringContainsString('button', (string) $component->render()->render());
+    });
 
-test('ui card component renders content', function () {
-    $view = view('ui::components.ui.card', [
-        'title' => 'Test Card',
-        'content' => 'Test Content',
-    ]);
+    test('ui button component has correct attributes', function (): void {
+        /** @var view-string $buttonView */
+        $buttonView = 'ui::components.ui.button';
+        Assert::assertInstanceOf(View::class, view($buttonView));
+    });
 
-    expect($view->render())->toContain('Test Card')->toContain('Test Content');
+    test('ui card component renders content', function (): void {
+        /** @var view-string $cardView */
+        $cardView = 'ui::components.ui.card';
+        $view = view($cardView, [
+            'title' => 'Test Card',
+            'content' => 'Test Content',
+        ]);
+
+        $html = (string) $view->render();
+        Assert::assertStringContainsString('Test Card', $html);
+        Assert::assertStringContainsString('Test Content', $html);
+    });
 });

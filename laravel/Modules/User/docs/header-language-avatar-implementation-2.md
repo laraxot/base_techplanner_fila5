@@ -1,22 +1,42 @@
+---
+title: "Implementazione del Selettore di Lingua e Avatar Utente nell'Header"
+type: concept
+tags: [header, language, avatar, implementation]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "header-language-avatar-implementation-2 implementazione del selettore di lingua e avatar utente nell'header"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Implementazione del Selettore di Lingua e Avatar Utente nell'Header
 
 ## Collegamenti correlati
 - [README modulo User](./readme.md)
-- [Convenzioni Path](./path_conventions.md)
-- [Volt Folio Logout](./volt_folio_logout.md)
-- [Implementazione Logout](./logout_blade_implementation.md)
+- [Convenzioni Path](./path-conventions-2.md)
+- [Volt Folio Logout](./volt-folio-logout-2.md)
+- [Implementazione Logout](./logout-blade-implementation-2.md)
 
 ## Panoramica
 
-Questo documento descrive come implementare nell'header di Quaeris:
+Questo documento descrive come implementare nell'header di <nome progetto>:
 1. Un selettore di lingua
 2. Un dropdown con l'avatar dell'utente contenente il link di logout
 
 ## Struttura Attuale dell'Header
 
-L'header di Quaeris è gestito tramite:
+L'header di <nome progetto> è gestito tramite:
 - **Componente Blade**: `/Themes/One/resources/views/components/sections/header.blade.php`
-- **Configurazione JSON**: `/config/local/Quaeris/database/content/sections/1.json`
+- **Configurazione JSON**: `/config/local/<nome progetto>/database/content/sections/1.json`
 
 Il componente header legge i blocchi dal file JSON e li renderizza in base alla lingua corrente. Attualmente l'header contiene:
 - Un logo
@@ -44,7 +64,7 @@ Creare un nuovo componente per il selettore di lingua:
             <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
         </svg>
     </button>
-    
+
     <div
         x-show="open"
         x-transition:enter="transition ease-out duration-100"
@@ -118,7 +138,7 @@ Creare un nuovo componente per l'avatar utente con dropdown:
                 @endif
             </button>
         </div>
-        
+
         <div
             x-show="open"
             x-transition:enter="transition ease-out duration-100"
@@ -133,15 +153,15 @@ Creare un nuovo componente per l'avatar utente con dropdown:
                 <div class="font-medium">{{ $user->first_name }} {{ $user->last_name }}</div>
                 <div class="text-gray-500 truncate">{{ $user->email }}</div>
             </div>
-            
+
             <a href="{{ '/' . app()->getLocale() . '/profile' }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ __('user.profile.link') }}
             </a>
-            
+
             <a href="{{ '/' . app()->getLocale() . '/dashboard' }}" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">
                 {{ __('user.dashboard.link') }}
             </a>
-            
+
             <form action="{{ '/' . app()->getLocale() . '/auth/logout' }}" method="post" class="border-t">
                 @csrf
                 <button type="submit" class="w-full text-left px-4 py-2 text-sm text-red-600 hover:bg-gray-100">
@@ -206,7 +226,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-"alt": "Logo Quaeris",
+"alt": "Logo <nome progetto>",
                     "width": 150,
                     "height": 32
                 }
@@ -280,7 +300,7 @@ Ecco come dovrebbe apparire il file JSON completo dell'header dopo le modifiche:
                 "data": {
                     "view": "pub_theme::components.blocks.logo",
                     "src": "patient::images/logo.svg",
-"alt": "Quaeris Logo",
+"alt": "<nome progetto> Logo",
                     "width": 150,
                     "height": 32
                 }

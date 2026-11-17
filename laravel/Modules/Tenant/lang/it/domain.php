@@ -8,14 +8,13 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
-        'label' => 'domain',
+        'label' => 'Dominio',
         'sort' => 6,
         'icon' => 'tenant-domain-animated',
     ],
     'fields' => [
         'domain' => [
             'label' => 'Dominio',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -57,51 +56,19 @@ return [
             'description' => '',
         ],
         'rating' => [
-            'label' => 'rating',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'domains' => [
-            'label' => 'Domini',
-        ],
-        'list' => [
-            'label' => 'Lista Domini',
-        ],
-        'create' => [
-            'label' => 'Crea Dominio',
-        ],
-        'edit' => [
-            'label' => 'Modifica Dominio',
-        ],
-        'destroy' => [
-            'label' => 'Elimina Dominio',
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'rating' => [
-            'label' => 'rating',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -116,7 +83,6 @@ return [
         'set_primary' => 'Imposta come Principale',
         'domain_set_primary' => 'Dominio impostato come principale con successo',
         'logout' => [
-            'tooltip' => 'logout',
             'icon' => 'logout',
         ],
     ],
@@ -128,9 +94,6 @@ return [
             'label' => 'domain.plural.model',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Domain',
     'plural_label' => 'Domain (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

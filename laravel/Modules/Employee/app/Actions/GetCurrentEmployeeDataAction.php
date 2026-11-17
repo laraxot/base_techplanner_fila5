@@ -20,9 +20,9 @@ class GetCurrentEmployeeDataAction
     /**
      * Execute employee data retrieval.
      *
-     * @return array{id: int, name: string, email: string, status: string, employeeNumber?: string, hireDate?: string, department?: array{id: int, name: string}, position?: array{id: int, name: string}}
+     * @return array{id: int|string, name: string, email: string, status: string, employeeNumber?: string, hireDate?: string, department?: array{id: int, name: string}, position?: array{id: int, name: string}}
      */
-    public function execute(int $userId): array
+    public function execute(int|string $userId): array
     {
         /** @var User|null $user */
         $user = User::find($userId);
@@ -61,11 +61,7 @@ class GetCurrentEmployeeDataAction
                     $data['status'] = is_string($statusValue) ? $statusValue : 'active';
                 } elseif (is_string($employee->status)) {
                     $data['status'] = $employee->status;
-                } else {
-                    $data['status'] = 'active';
                 }
-            } else {
-                $data['status'] = 'active';
             }
 
             // Hire date from work_data array

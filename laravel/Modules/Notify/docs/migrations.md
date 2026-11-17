@@ -1,3 +1,15 @@
+---
+title: "migrations"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "migrations"
+issues: []
+discussions: []
+status: draft
+---
+
 # Database Migrations
 
 ## Email Templates
@@ -224,12 +236,5 @@ public function template(): BelongsTo
 ## Collegamenti tra versioni di migrations.md
 * [migrations.md](../../Gdpr/docs/migrations.md)
 * [migrations.md](../../Activity/docs/database/migrations.md)
-<<<<<<< HEAD
-* [migrations.md](../../Gdpr/docs/migrations.md)
-* [migrations.md](../../Activity/docs/database/migrations.md)
 
 ---
-=======
-
----
->>>>>>> 6ed19256f (.)

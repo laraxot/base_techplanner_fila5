@@ -23,7 +23,6 @@ return [
             'placeholder' => 'Selecionar tipo de layout',
             'tooltip' => 'Escolher entre visualização em lista e em grade',
             'help' => 'Escolha o tipo de layout mais adequado para visualizar os dados',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +36,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

@@ -6,28 +6,20 @@ namespace Modules\User\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Modules\User\Database\Factories\PasswordResetFactory;
->>>>>>> 6ed19256f (.)
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * Modules\User\Models\PasswordReset.
  *
- * @property int         $id
- * @property string      $email
- * @property string      $token
+ * @property int $id
+ * @property string $email
+ * @property string $token
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
  * @property string|null $user_id
  * @property string|null $updated_by
  * @property string|null $created_by
  *
-<<<<<<< HEAD
-=======
- * @method static PasswordResetFactory  factory($count = null, $state = [])
->>>>>>> 6ed19256f (.)
  * @method static Builder|PasswordReset newModelQuery()
  * @method static Builder|PasswordReset newQuery()
  * @method static Builder|PasswordReset query()
@@ -42,19 +34,14 @@ use Modules\Xot\Contracts\ProfileContract;
  *
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- * @property string|null          $uuid
+ * @property string|null $uuid
  *
  * @method static Builder<static>|PasswordReset whereUuid($value)
  *
- * @mixin IdeHelperPasswordReset
- *
  * @property ProfileContract|null $deleter
  *
-<<<<<<< HEAD
  * @method static \Modules\User\Database\Factories\PasswordResetFactory factory($count = null, $state = [])
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class PasswordReset extends BaseModel
@@ -68,11 +55,6 @@ class PasswordReset extends BaseModel
 
     /**
      * The table associated with the model.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $table = 'password_resets';
 }

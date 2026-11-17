@@ -1,0 +1,171 @@
+- generic [active] [ref=f1e1]:
+  - region "Gestione dei cookie" [ref=f1e2]:
+    - generic [ref=f1e3]:
+      - generic [ref=f1e4]:
+        - paragraph [ref=f1e5]: Cookie
+        - paragraph [ref=f1e6]:
+          - text: "Questo sito usa solo cookie tecnici, necessari al suo funzionamento: non richiedono il tuo consenso. Non usiamo cookie di profilazione né di analisi."
+          - link "Maggiori informazioni (Cookie policy)" [ref=f1e7] [cursor=pointer]:
+            - /url: http://127.0.0.1:8000/it/cookie-policy
+            - text: Maggiori informazioni
+            - generic [ref=f1e8]: (Cookie policy)
+      - button "Ho capito" [ref=f1e10] [cursor=pointer]
+  - generic:
+    - link "Vai ai contenuti" [ref=f1e11] [cursor=pointer]:
+      - /url: "#main-container"
+    - link "Vai al footer" [ref=f1e12] [cursor=pointer]:
+      - /url: "#footer"
+  - banner [ref=f1e13]:
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]: Demo
+      - navigation [ref=f1e20]:
+        - 'button "Lingua attiva: ITA" [ref=f1e22] [cursor=pointer]':
+          - generic [ref=f1e23]: "Lingua attiva:"
+          - generic [ref=f1e24]: ITA
+        - link "Accedi all'area personale" [ref=f1e27] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/it/auth/login
+    - generic [ref=f1e31]:
+      - generic [ref=f1e36]:
+        - link "FixCity" [ref=f1e38] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/it
+        - button "Cerca nel sito" [ref=f1e45] [cursor=pointer]
+      - button "Mostra/Nascondi la navigazione" [ref=f1e48] [cursor=pointer]
+  - main [ref=f1e51]:
+    - generic [ref=f1e52]:
+      - region [ref=f1e53]:
+        - generic [ref=f1e54]:
+          - generic [ref=f1e55]:
+            - paragraph [ref=f1e56]: SERVIZI DIGITALI DEL COMUNE
+            - heading "Segnalazioni e servizi per la tua comunità" [level=1] [ref=f1e57]
+            - paragraph [ref=f1e58]: Racconta cosa non funziona, indica dove e segui gli aggiornamenti in modo semplice e trasparente.
+            - generic [ref=f1e59]:
+              - link "Invia una segnalazione" [ref=f1e60] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/tickets/create
+              - link "Vedi le segnalazioni" [ref=f1e61] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/tickets
+          - complementary "IMPEGNO CIVICO" [ref=f1e62]:
+            - paragraph [ref=f1e64]: IMPEGNO CIVICO
+            - paragraph [ref=f1e65]: La tua voce conta
+            - paragraph [ref=f1e66]: Ogni segnalazione aiuta il Comune a capire le priorità e a rendere visibili gli interventi.
+      - region [ref=f1e68]:
+        - generic [ref=f1e69]:
+          - generic [ref=f1e70]:
+            - generic [ref=f1e71]:
+              - paragraph [ref=f1e72]: Mappa della comunità
+              - heading "Segnalazioni pubbliche sul territorio" [level=2] [ref=f1e73]
+            - paragraph [ref=f1e74]: Consulta la mappa per conoscere i problemi già segnalati e gli interventi in corso.
+          - generic [ref=f1e75]:
+            - region "Mappa della comunità" [ref=f1e76]:
+              - generic [ref=f1e77]:
+                - generic [ref=f1e78]:
+                  - generic:
+                    - generic: 100 km
+                    - link "Leaflet" [ref=f1e82] [cursor=pointer]:
+                      - /url: https://leafletjs.com
+                - generic:
+                  - button "Cerca" [ref=f1e87] [cursor=pointer]
+                  - button "Schermo intero" [ref=f1e91] [cursor=pointer]
+                  - button "Usa la mia posizione" [ref=f1e94] [cursor=pointer]
+                  - button "Cambia layer" [ref=f1e98] [cursor=pointer]
+                  - button "Aumenta zoom" [ref=f1e103] [cursor=pointer]
+                  - button "Diminuisci zoom" [ref=f1e105] [cursor=pointer]
+                  - status
+            - generic [ref=f1e109]: Segnalazioni pubbliche
+          - generic [ref=f1e110]:
+            - link "Segnala un disservizio" [ref=f1e111] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/it/tickets/create
+            - link "Vedi tutte le segnalazioni" [ref=f1e112] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/it/tickets
+      - region [ref=f1e113]:
+        - generic [ref=f1e114]:
+          - generic [ref=f1e115]:
+            - heading "Come funziona" [level=2] [ref=f1e116]
+            - paragraph [ref=f1e117]: Descrivi il problema, indica dove si trova e segui gli aggiornamenti dall’area personale.
+          - list "I tre passaggi per inviare una segnalazione" [ref=f1e118]:
+            - listitem [ref=f1e119]:
+              - generic [aria-hidden] [ref=f1e120]: "1"
+              - heading "Descrivi il problema" [level=3] [ref=f1e124]
+              - paragraph [ref=f1e125]: Racconta che cosa è successo e scegli la categoria più adatta.
+            - listitem [ref=f1e126]:
+              - generic [aria-hidden] [ref=f1e127]: "2"
+              - heading "Indica il luogo" [level=3] [ref=f1e132]
+              - paragraph [ref=f1e133]: Indica il punto sulla mappa e aggiungi le informazioni utili.
+            - listitem [ref=f1e134]:
+              - generic [aria-hidden] [ref=f1e135]: "3"
+              - heading "Segui gli aggiornamenti" [level=3] [ref=f1e140]
+              - paragraph [ref=f1e141]: Controlla lo stato della segnalazione dalla tua area personale.
+      - region [ref=f1e142]:
+        - generic [ref=f1e144]:
+          - generic [ref=f1e145]:
+            - paragraph [ref=f1e146]: Hai già inviato una segnalazione?
+            - heading "Segui la tua segnalazione" [level=2] [ref=f1e147]
+            - paragraph [ref=f1e148]: Inserisci il codice ricevuto per conoscere lo stato della pratica.
+          - group "Segui la tua segnalazione" [ref=f1e150]:
+            - link "Traccia una segnalazione" [ref=f1e151] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/it/tickets/track
+            - link "Invia una segnalazione" [ref=f1e154] [cursor=pointer]:
+              - /url: http://127.0.0.1:8000/it/tickets/create
+  - contentinfo [ref=f1e157]:
+    - generic [ref=f1e159]:
+      - link [ref=f1e163] [cursor=pointer]:
+        - /url: http://127.0.0.1:8000/it
+        - generic [ref=f1e166]:
+          - heading "FixCity" [level=2] [ref=f1e167]
+          - paragraph [ref=f1e168]: Segnala e segui i problemi della tua città
+      - generic [ref=f1e169]:
+        - generic [ref=f1e170]:
+          - heading "Segnalazioni" [level=4] [ref=f1e171]
+          - list [ref=f1e172]:
+            - listitem [ref=f1e173]:
+              - link "Elenco segnalazioni" [ref=f1e174] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/tickets
+            - listitem [ref=f1e175]:
+              - link "Invia segnalazione" [ref=f1e176] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/tickets/create
+            - listitem [ref=f1e177]:
+              - link "Traccia segnalazione" [ref=f1e178] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/tickets/track
+        - generic [ref=f1e179]:
+          - heading "Informazioni" [level=4] [ref=f1e180]
+          - list [ref=f1e181]:
+            - listitem [ref=f1e182]:
+              - link "Domande frequenti" [ref=f1e183] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/domande-frequenti
+            - listitem [ref=f1e184]:
+              - link "Novità" [ref=f1e185] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/blog
+            - listitem [ref=f1e186]:
+              - link "Eventi" [ref=f1e187] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/events
+            - listitem [ref=f1e188]:
+              - link "Mappa del sito" [ref=f1e189] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/mappa-sito
+        - generic [ref=f1e191]:
+          - list [ref=f1e193]:
+            - listitem [ref=f1e194]:
+              - link "Leggi le FAQ" [ref=f1e195] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/domande-frequenti
+            - listitem [ref=f1e196]:
+              - link "Segnalazione disservizio" [ref=f1e197] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/tickets/create
+          - list [ref=f1e199]:
+            - listitem [ref=f1e200]:
+              - link "Informativa privacy" [ref=f1e201] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/privacy
+            - listitem [ref=f1e202]:
+              - link "Note legali" [ref=f1e203] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/note-legali
+            - listitem [ref=f1e204]:
+              - link "Dichiarazione di accessibilità" [ref=f1e205] [cursor=pointer]:
+                - /url: http://127.0.0.1:8000/it/accessibilita
+      - generic [ref=f1e208]:
+        - link "Media policy" [ref=f1e209] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/it/media-policy
+        - link "Mappa del sito" [ref=f1e210] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/it/mappa-sito
+        - link "Cookie policy" [ref=f1e211] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/it/cookie-policy
+        - link "Gestisci cookie" [ref=f1e212] [cursor=pointer]:
+          - /url: http://127.0.0.1:8000/it/cookie-policy
+    - list [ref=f1e215]:
+      - listitem [ref=f1e216]: © 2026 FixCity. Tutti i diritti riservati.

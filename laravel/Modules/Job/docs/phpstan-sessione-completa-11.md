@@ -1,9 +1,5 @@
 # Sessione PHPStan Completa - Tutti i Moduli
 **Data**: 2025-11-05
-<<<<<<< HEAD
-**Data**: 2025-11-05
-=======
->>>>>>> 6ed19256f (.)
 **Obiettivo**: Portare tutti i moduli a PHPStan Level 10 (0 errori)
 **Status**: ⏳ IN CORSO
 
@@ -185,8 +181,4 @@ $media = $record->getFirstMedia($attachment);
 
 ---
 
-<<<<<<< HEAD
 **Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
-=======
-**Prossimi passi**: Completare UI (98), User (120), Xot (76) con approccio pattern-based batch.
->>>>>>> 6ed19256f (.)

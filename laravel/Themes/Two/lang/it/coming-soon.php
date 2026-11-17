@@ -28,4 +28,22 @@ return [
     // Errors
     'Something went wrong. Please try again.' => 'Qualcosa è andato storto. Riprova.',
     'Network error. Please try again.' => 'Errore di rete. Riprova.',
+
+    // Chiavi strutturate usate dalle Blade del tema (le frasi-chiave sopra non sono risolvibili da __())
+    'title' => 'Prossimamente',
+    'description' => 'Stiamo lavorando sodo per lanciare il nostro fantastico sito web. Rimanete sintonizzati per qualcosa di speciale!',
+    'expected_launch' => 'Lancio previsto:',
+    'follow_us' => 'Seguici per aggiornamenti',
+    'countdown' => [
+        'days' => 'Giorni',
+        'hours' => 'Ore',
+        'minutes' => 'Minuti',
+        'seconds' => 'Secondi',
+    ],
+    'footer' => [
+        'all_rights_reserved' => 'Tutti i diritti riservati.',
+        'privacy' => 'Privacy',
+        'terms' => 'Termini',
+        'contact' => 'Contatto',
+    ],
 ];

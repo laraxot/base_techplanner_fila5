@@ -32,10 +32,10 @@ use Spatie\Sluggable\SlugOptions;
  * @property \Spatie\SchemalessAttributes\SchemalessAttributes $extra_attributes
  * @property RuleEnum                                          $rule
  *
- * @method static Builder|BaseRating newModelQuery()
- * @method static Builder|BaseRating newQuery()
- * @method static Builder|BaseRating query()
- * @method static Builder|BaseRating withExtraAttributes(array|string $attributes = [], mixed $value = null)
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static Builder<static> withExtraAttributes(array<string, mixed>|string $attributes = [], mixed $value = null)
  *
  * @property int             $id
  * @property int             $user_id
@@ -56,22 +56,22 @@ use Spatie\Sluggable\SlugOptions;
  * @property int|null        $order_column
  * @property Model|\Eloquent $linkedTo
  *
- * @method static Builder|BaseRating whereColor($value)
- * @method static Builder|BaseRating whereCreatedAt($value)
- * @method static Builder|BaseRating whereCreatedBy($value)
- * @method static Builder|BaseRating whereDeletedBy($value)
- * @method static Builder|BaseRating whereIcon($value)
- * @method static Builder|BaseRating whereId($value)
- * @method static Builder|BaseRating whereIsDisabled($value)
- * @method static Builder|BaseRating whereIsReadonly($value)
- * @method static Builder|BaseRating whereOrderColumn($value)
- * @method static Builder|BaseRating wherePostId($value)
- * @method static Builder|BaseRating whereRelatedType($value)
- * @method static Builder|BaseRating whereRule($value)
- * @method static Builder|BaseRating whereTitle($value)
- * @method static Builder|BaseRating whereTxt($value)
- * @method static Builder|BaseRating whereUpdatedAt($value)
- * @method static Builder|BaseRating whereUpdatedBy($value)
+ * @method static Builder<static> whereColor($value)
+ * @method static Builder<static> whereCreatedAt($value)
+ * @method static Builder<static> whereCreatedBy($value)
+ * @method static Builder<static> whereDeletedBy($value)
+ * @method static Builder<static> whereIcon($value)
+ * @method static Builder<static> whereId($value)
+ * @method static Builder<static> whereIsDisabled($value)
+ * @method static Builder<static> whereIsReadonly($value)
+ * @method static Builder<static> whereOrderColumn($value)
+ * @method static Builder<static> wherePostId($value)
+ * @method static Builder<static> whereRelatedType($value)
+ * @method static Builder<static> whereRule($value)
+ * @method static Builder<static> whereTitle($value)
+ * @method static Builder<static> whereTxt($value)
+ * @method static Builder<static> whereUpdatedAt($value)
+ * @method static Builder<static> whereUpdatedBy($value)
  *
  * @property MediaCollection<int, \Modules\Media\Models\Media> $media
  * @property int|null                                          $media_count
@@ -136,6 +136,9 @@ abstract class BaseRating extends BaseModel implements HasMedia
         return $query;
     }
 
+    /**
+     * @return MorphTo<Model, $this>
+     */
     public function linkedTo(): MorphTo
     {
         return $this->morphTo('model');

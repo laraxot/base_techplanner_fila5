@@ -1,3 +1,11 @@
+---
+title: "Linee Guida per i Database in Laraxot"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "linee guida per i database in laraxot xot"
+---
 # Linee Guida per i Database in Laraxot
 
 Questo documento definisce le best practices per la gestione dei database nel framework Laraxot, inclusa la documentazione, la creazione di modelli e le migrazioni.
@@ -268,11 +276,6 @@ return new class extends XotBaseMigration {
 **Collegamenti:**
 - [Regola Performance](../../Performance/project_docs/database_migrations.md)
 - [Regole globali root](../../../project_docs/database_migrations.md)
-<<<<<<< HEAD
-- [Regola Performance](../../performance/project_docs/database_migrations.md)
-- [Regole globali root](../../../../docs/project/database_migrations.md)
-=======
->>>>>>> 6ed19256f (.)
 
     /**
      * Ottiene la sezione associata al socio.
@@ -487,8 +490,4 @@ php artisan db:analyze-usage --connection=nome_connessione
 - Analizzare le query lente con EXPLAIN
 - Verificare che ci siano indici appropriati
 - Controllare che i tipi di dati siano ottimali per l'uso previsto
-<<<<<<< HEAD
 - Utilizzare query builder o raw queries per query complesse
-=======
-- Utilizzare query builder o raw queries per query complesse
->>>>>>> 6ed19256f (.)

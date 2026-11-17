@@ -1,39 +1,31 @@
-<<<<<<< HEAD
-=======
-# PHPStan Fixes - Modulo Gdpr
+---
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+---
 
-## ✅ Status: 90 Errori Rimanenti (94 → 90)
+# GDPR Module — PHPStan
 
->>>>>>> 6ed19256f (.)
-**Data**: 11 Ottobre 2025
-**Errori Risolti**: 4 ✅
+## 2026-06-10 — STORY-306 · L10 · 0 errori codice
+
+`./vendor/bin/phpstan analyse Modules/Gdpr` — 728→0 (test Assert, TestCase wrappers). Issue [#334](https://github.com/laraxot/base_fixcity_fila5/issues/334).
 
 ---
 
-## 📊 Correzioni Implementate
-
-### 1. Rimozione Generic Type da BaseModel ✅
-**File**: `app/Models/BaseModel.php:22`
-
-### 2. Rimozione Generic Type da BaseMorphPivot ✅
-**File**: `app/Models/BaseMorphPivot.php:18`
-
----
-
-## 🚨 Errori Rimanenti (90)
-
-**Problema Principale**: Test files riferiscono classi non esistenti:
-- `Modules\Gdpr\Models\GdprConsent` (non esiste)
-- `Modules\Gdpr\Models\GdprRequest` (non esiste)
-
-**Soluzione**: Implementare i modelli mancanti o rimuovere i test.
-
----
-
-**Status**: ✅ BaseModel corretti
-**Prossimo**: Lang (185 errori)
-<<<<<<< HEAD
-# GDPR Module - PHPStan Fixes Session 2025-10-01
+title: "phpstan fixes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes"
+issues: []
+discussions: []
+## Storico — Session 2025-10-01 · Level 9
 
 ## ✅ Stato: ZERO ERRORI - PHPStan Level 9 Compliance
 
@@ -164,5 +156,5 @@ Il modulo GDPR gestisce:
 **Status**: ✅ COMPLETATO  
 **PHPStan Level**: 9  
 **Maintenance**: Nessuna azione richiesta
-=======
->>>>>>> 6ed19256f (.)
+
+

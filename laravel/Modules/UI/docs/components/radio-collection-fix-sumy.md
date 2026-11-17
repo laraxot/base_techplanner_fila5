@@ -1,3 +1,10 @@
+---
+title: "RadioCollection: Riassunto Correzione & Risultati FINALI"
+qmd: "ui components radio collection fix sumy md"
+type: note
+tags: [documentation]
+---
+
 # RadioCollection: Riassunto Correzione & Risultati FINALI
 
 ## 🎯 Problema Identificato

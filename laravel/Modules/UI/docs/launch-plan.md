@@ -1,3 +1,10 @@
+---
+title: "Product Launch Plan: UI Module v1.0"
+qmd: "ui launch plan md"
+type: note
+tags: [documentation]
+---
+
 # Product Launch Plan: UI Module v1.0
 
 ## 🚀 Launch Overview

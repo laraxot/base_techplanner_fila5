@@ -8,7 +8,7 @@
 >
 > **Soluzione:** Seguire SEMPRE la regola documentata qui sotto e aggiornata anche in README.md e nella root docs/links.md.
 
-# Gestione dei Percorsi e degli Asset 
+# Gestione dei Percorsi e degli Asset
 
 ## Collegamenti correlati
 - [README modulo UI](/laravel/Modules/UI/docs/README.md)
@@ -22,7 +22,7 @@
 , è fondamentale rispettare la struttura corretta delle directory per gli asset pubblici:
 
 ```
-/var/www/html/Quaeris/
+/var/www/html/<nome progetto>/
 ├── laravel/                 # Applicazione Laravel (codice sorgente)
 │   ├── Modules/             # Moduli dell'applicazione
 │   ├── resources/           # Risorse non compilate
@@ -40,10 +40,10 @@
 
 | Tipo di Asset | ✅ Percorso Corretto | ❌ Percorso Errato |
 |---------------|---------------------|-------------------|
-| Immagini | `/var/www/html/Quaeris/public_html/images/` | `/var/www/html/Quaeris/laravel/public/images/` |
-| CSS | `/var/www/html/Quaeris/public_html/css/` | `/var/www/html/Quaeris/laravel/public/css/` |
-| JavaScript | `/var/www/html/Quaeris/public_html/js/` | `/var/www/html/Quaeris/laravel/public/js/` |
-| SVG | `/var/www/html/Quaeris/public_html/images/` | `/var/www/html/Quaeris/laravel/public/images/` |
+| Immagini | `/var/www/html/<nome progetto>/public_html/images/` | `/var/www/html/<nome progetto>/laravel/public/images/` |
+| CSS | `/var/www/html/<nome progetto>/public_html/css/` | `/var/www/html/<nome progetto>/laravel/public/css/` |
+| JavaScript | `/var/www/html/<nome progetto>/public_html/js/` | `/var/www/html/<nome progetto>/laravel/public/js/` |
+| SVG | `/var/www/html/<nome progetto>/public_html/images/` | `/var/www/html/<nome progetto>/laravel/public/images/` |
 
 ## Utilizzo degli Asset nei Componenti Blade
 
@@ -60,7 +60,7 @@ Quando si fa riferimento agli asset nei componenti Blade, utilizzare sempre l'he
 Per garantire una buona esperienza utente, implementare sempre un fallback per le immagini che potrebbero non essere disponibili:
 
 ```php
-<img 
+<img
     src="{{ asset('images/avatars/default-' . $avatarNumber . '.svg') }}"
     alt="{{ $user->name ?? 'User' }}"
     onerror="this.src='{{ asset('images/default-avatar.svg') }}'"
@@ -74,7 +74,7 @@ Per garantire una buona esperienza utente, implementare sempre un fallback per l
 Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati come componenti Blade in:
 
 ```
-/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/
+/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/components/ui/
 ```
 
 ### SVG come Asset Pubblici
@@ -82,7 +82,7 @@ Gli SVG utilizzati come icone o componenti UI dovrebbero essere implementati com
 Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizionati in:
 
 ```
-/var/www/html/Quaeris/public_html/images/
+/var/www/html/<nome progetto>/public_html/images/
 ```
 
 ## Gestione dei Componenti UI
@@ -92,13 +92,13 @@ Gli SVG utilizzati come immagini (avatar, loghi, ecc.) dovrebbero essere posizio
 Il componente avatar è implementato in:
 
 ```
-/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
+/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/components/ui/avatar.blade.php
 ```
 
 E utilizza gli avatar SVG dalla directory pubblica:
 
 ```
-/var/www/html/Quaeris/public_html/images/avatars/
+/var/www/html/<nome progetto>/public_html/images/avatars/
 ```
 
 ### Componente Icon
@@ -106,7 +106,7 @@ E utilizza gli avatar SVG dalla directory pubblica:
 Il componente icon è implementato in:
 
 ```
-/var/www/html/Quaeris/laravel/Themes/One/resources/views/components/ui/icon.blade.php
+/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/components/ui/icon.blade.php
 ```
 
 E include le definizioni SVG direttamente nel componente.
@@ -147,7 +147,7 @@ E include le definizioni SVG direttamente nel componente.
 
 ## Errori Comuni
 
-1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/Quaeris/laravel/public/` invece di `/var/www/html/Quaeris/public_html/`
+1. **Utilizzo del percorso Laravel public**: Utilizzare `/var/www/html/<nome progetto>/laravel/public/` invece di `/var/www/html/<nome progetto>/public_html/`
 2. **Riferimenti diretti ai file**: Utilizzare percorsi assoluti invece dell'helper `asset()`
 3. **Mancanza di fallback**: Non fornire alternative quando un'immagine non è disponibile
 4. **Inconsistenza nei nomi dei file**: Utilizzare convenzioni di naming diverse per file simili

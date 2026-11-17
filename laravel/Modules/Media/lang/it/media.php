@@ -12,12 +12,11 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione dei file multimediali',
         ],
-        'label' => 'media',
+        'label' => 'Media',
         'sort' => 20,
         'icon' => 'media-main-animated',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -81,14 +80,14 @@ return [
         'select_all' => [
             'name' => 'Seleziona Tutti',
             'message' => '',
-            'label' => '',
+            'label' => 'Seleziona tutto',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'creator' => [
             'name' => 'Creatore',
-            'label' => '',
+            'label' => 'Autore',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -99,26 +98,30 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Nome',
-        'guard_name' => 'Guard',
-        'collection_name' => 'Collezione',
-        'filename' => 'Nome File',
-        'mime_type' => 'Tipo',
-        'human_readable_size' => 'Dimensione',
-        'permissions' => 'Permessi',
-        'updated_at' => 'Aggiornato il',
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'select_all' => [
-            'name' => 'Seleziona Tutti',
-            'message' => '',
+        'id' => [
+            'label' => 'ID',
         ],
-        'creator' => [
-            'name' => 'Creatore',
+        'file_name' => [
+            'label' => 'Nome del file',
         ],
-        'uploaded_at' => 'Caricato il',
->>>>>>> 6ed19256f (.)
+        'disk' => [
+            'label' => 'Disco',
+        ],
+        'size' => [
+            'label' => 'Dimensione',
+        ],
+        'order_column' => [
+            'label' => 'Ordine',
+        ],
+        'model_type' => [
+            'label' => 'Tipo di oggetto',
+        ],
+        'model_id' => [
+            'label' => 'Oggetto',
+        ],
+        'created_at' => [
+            'label' => 'Creato il',
+        ],
     ],
     'actions' => [
         'import' => [
@@ -133,13 +136,14 @@ return [
                 'parent_name' => 'Nome area livello superiore',
             ],
         ],
+        'delete' => [
+            'tooltip' => '',
+            'icon' => 'delete',
+        ],
     ],
     'model' => [
         'label' => 'media.model',
     ],
-<<<<<<< HEAD
     'label' => 'Media',
     'plural_label' => 'Media (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

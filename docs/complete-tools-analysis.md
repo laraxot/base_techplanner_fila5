@@ -148,9 +148,9 @@ cd /var/www/_bases/base_techplanner_fila4_mono/laravel
 
 ## Collegamenti
 
-- [Tools Analysis Report](./tools-analysis-report-2025-01-06.md)
-- [Module Analysis Report](./module-analysis-report-2025-01-06.md)
-- [Final PHPStan Corrections](./final-phpstan-corrections-2025-01-06.md)
+- [Tools Analysis Report](./tools-analysis-report.md)
+- [Module Analysis Report](./module-analysis-report.md)
+- [Final PHPStan Corrections](./final-phpstan-corrections.md)
 - [Complete Analysis Summary](./complete-analysis-summary.md)
 
 

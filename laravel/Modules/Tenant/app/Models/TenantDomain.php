@@ -4,32 +4,22 @@ declare(strict_types=1);
 
 namespace Modules\Tenant\Models;
 
-<<<<<<< HEAD
 use Carbon\Carbon;
-=======
->>>>>>> 6ed19256f (.)
 use Illuminate\Database\Eloquent\Builder;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
-use Modules\Tenant\Database\Factories\DomainFactory;
+use Modules\Tenant\Database\Factories\TenantDomainFactory;
 use Modules\Xot\Contracts\ProfileContract;
 use Sushi\Sushi;
 
 /**
  * @property int|null $id
-<<<<<<< HEAD
  * @property string|int|null $tenant_id
-=======
->>>>>>> 6ed19256f (.)
  * @property string|null $name
  * @property string|null $domain
  * @property bool|null $is_primary
  * @property string|null $status
  * @property string|null $verification_token
-<<<<<<< HEAD
  * @property Carbon|null $verified_at
-=======
- * @property string|null $verified_at
->>>>>>> 6ed19256f (.)
  *
  * @method static Builder|TenantDomain newModelQuery()
  * @method static Builder|TenantDomain newQuery()
@@ -46,7 +36,7 @@ use Sushi\Sushi;
  * @property ProfileContract|null $updater
  * @property ProfileContract|null $deleter
  *
- * @method static DomainFactory factory($count = null, $state = [])
+ * @method static TenantDomainFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent
  */
@@ -55,10 +45,7 @@ class TenantDomain extends BaseModel
     use Sushi;
 
     protected $fillable = [
-<<<<<<< HEAD
         'tenant_id',
-=======
->>>>>>> 6ed19256f (.)
         'name',
         'domain',
         'is_primary',
@@ -69,6 +56,8 @@ class TenantDomain extends BaseModel
 
     /**
      * Model Rows.
+     *
+     * @return array<int, array<string, mixed>>
      */
     public function getRows(): array
     {

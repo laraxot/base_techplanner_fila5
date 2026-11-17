@@ -6,7 +6,6 @@ return [
     // These are sorted by the native name, which is the order you might show them in a language selector.
     // Regional languages are sorted by their base language, so "British English" sorts as "English, British"
     'supportedLocales' => [
-<<<<<<< HEAD
         // 'ace'         => ['name' => 'Achinese',               'script' => 'Latn', 'native' => 'Aceh', 'regional' => ''],
         // 'af'          => ['name' => 'Afrikaans',              'script' => 'Latn', 'native' => 'Afrikaans', 'regional' => 'af_ZA'],
         // 'agq'         => ['name' => 'Aghem',                  'script' => 'Latn', 'native' => 'Aghem', 'regional' => ''],
@@ -36,7 +35,9 @@ return [
         // 'cy'          => ['name' => 'Welsh',                  'script' => 'Latn', 'native' => 'Cymraeg', 'regional' => 'cy_GB'],
         // 'da'          => ['name' => 'Danish',                 'script' => 'Latn', 'native' => 'dansk', 'regional' => 'da_DK'],
         // 'se'          => ['name' => 'Northern Sami',          'script' => 'Latn', 'native' => 'davvisámegiella', 'regional' => 'se_NO'],
-        'de' => ['name' => 'German',                 'script' => 'Latn', 'native' => 'Deutsch', 'regional' => 'de_DE'],
+        // Lingua ritirata (de, es): le pagine non hanno ancora un contenuto tedesco/spagnolo e uscivano in italiano con lang="de|es" (WCAG 3.1.1).
+        // Per riattivarla ripristinare le due righe 'de' e le due righe 'es' (qui e piu' sotto) solo quando i contenuti esistono davvero.
+        // 'de' => ['name' => 'German',                 'script' => 'Latn', 'native' => 'Deutsch', 'regional' => 'de_DE'],
         // 'luo'         => ['name' => 'Luo',                    'script' => 'Latn', 'native' => 'Dholuo', 'regional' => ''],
         // 'nv'          => ['name' => 'Navajo',                 'script' => 'Latn', 'native' => 'Diné bizaad', 'regional' => ''],
         // 'dua'         => ['name' => 'Duala',                  'script' => 'Latn', 'native' => 'duálá', 'regional' => ''],
@@ -48,7 +49,7 @@ return [
         // 'en-GB'       => ['name' => 'British English',        'script' => 'Latn', 'native' => 'British English', 'regional' => 'en_GB'],
         // 'en-CA'       => ['name' => 'Canadian English',       'script' => 'Latn', 'native' => 'Canadian English', 'regional' => 'en_CA'],
         // 'en-US'       => ['name' => 'U.S. English',           'script' => 'Latn', 'native' => 'U.S. English', 'regional' => 'en_US'],
-        'es' => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
+        // 'es' => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
         // 'eo'          => ['name' => 'Esperanto',              'script' => 'Latn', 'native' => 'esperanto', 'regional' => ''],
         // 'eu'          => ['name' => 'Basque',                 'script' => 'Latn', 'native' => 'euskara', 'regional' => 'eu_ES'],
         // 'ewo'         => ['name' => 'Ewondo',                 'script' => 'Latn', 'native' => 'ewondo', 'regional' => ''],
@@ -297,8 +298,6 @@ return [
         // 'vai'         => ['name' => 'Vai (Vai)',              'script' => 'Vaii', 'native' => 'ꕙꔤ', 'regional' => ''],
         // 'jv-Java'     => ['name' => 'Javanese (Javanese)',    'script' => 'Java', 'native' => 'ꦧꦱꦗꦮ', 'regional' => ''],
         // 'ko'          => ['name' => 'Korean',                 'script' => 'Hang', 'native' => '한국어', 'regional' => 'ko_KR'],
-=======
->>>>>>> 6ed19256f (.)
         //'ace'         => ['name' => 'Achinese',               'script' => 'Latn', 'native' => 'Aceh', 'regional' => ''],
         //'af'          => ['name' => 'Afrikaans',              'script' => 'Latn', 'native' => 'Afrikaans', 'regional' => 'af_ZA'],
         //'agq'         => ['name' => 'Aghem',                  'script' => 'Latn', 'native' => 'Aghem', 'regional' => ''],
@@ -328,7 +327,7 @@ return [
         //'cy'          => ['name' => 'Welsh',                  'script' => 'Latn', 'native' => 'Cymraeg', 'regional' => 'cy_GB'],
         //'da'          => ['name' => 'Danish',                 'script' => 'Latn', 'native' => 'dansk', 'regional' => 'da_DK'],
         //'se'          => ['name' => 'Northern Sami',          'script' => 'Latn', 'native' => 'davvisámegiella', 'regional' => 'se_NO'],
-        'de'          => ['name' => 'German',                 'script' => 'Latn', 'native' => 'Deutsch', 'regional' => 'de_DE'],
+        //'de'          => ['name' => 'German',                 'script' => 'Latn', 'native' => 'Deutsch', 'regional' => 'de_DE'],
         //'luo'         => ['name' => 'Luo',                    'script' => 'Latn', 'native' => 'Dholuo', 'regional' => ''],
         //'nv'          => ['name' => 'Navajo',                 'script' => 'Latn', 'native' => 'Diné bizaad', 'regional' => ''],
         //'dua'         => ['name' => 'Duala',                  'script' => 'Latn', 'native' => 'duálá', 'regional' => ''],
@@ -340,7 +339,7 @@ return [
         //'en-GB'       => ['name' => 'British English',        'script' => 'Latn', 'native' => 'British English', 'regional' => 'en_GB'],
         //'en-CA'       => ['name' => 'Canadian English',       'script' => 'Latn', 'native' => 'Canadian English', 'regional' => 'en_CA'],
         //'en-US'       => ['name' => 'U.S. English',           'script' => 'Latn', 'native' => 'U.S. English', 'regional' => 'en_US'],
-        'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
+        //'es'          => ['name' => 'Spanish',                'script' => 'Latn', 'native' => 'español', 'regional' => 'es_ES'],
         //'eo'          => ['name' => 'Esperanto',              'script' => 'Latn', 'native' => 'esperanto', 'regional' => ''],
         //'eu'          => ['name' => 'Basque',                 'script' => 'Latn', 'native' => 'euskara', 'regional' => 'eu_ES'],
         //'ewo'         => ['name' => 'Ewondo',                 'script' => 'Latn', 'native' => 'ewondo', 'regional' => ''],
@@ -622,17 +621,12 @@ return [
     'hideDefaultLocaleInURL' => false,
 
     // If you want to display the locales in particular order in the language selector you should write the order here.
-<<<<<<< HEAD
     // CAUTION: Please consider using the appropriate locale code otherwise it will not work
     // Example: 'localesOrder' => ['es','en'],
     //CAUTION: Please consider using the appropriate locale code otherwise it will not work
     //Example: 'localesOrder' => ['es','en'],
     // CAUTION: Please consider using the appropriate locale code otherwise it will not work
     // Example: 'localesOrder' => ['es','en'],
-=======
-    //CAUTION: Please consider using the appropriate locale code otherwise it will not work
-    //Example: 'localesOrder' => ['es','en'],
->>>>>>> 6ed19256f (.)
     'localesOrder' => [],
 
     // If you want to use custom language URL segments like 'at' instead of 'de-AT', you can map them to allow the

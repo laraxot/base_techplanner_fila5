@@ -21,6 +21,7 @@ return [
         ],
         'populateCoordinates' => [
             'label' => 'Koordinaten aktualisieren',
+            'modal' => ['heading' => 'Koordinaten aktualisieren', 'description' => 'Koordinaten aller Kunden anhand ihrer Adressen aktualisieren?', 'submit_label' => 'Ja, alle aktualisieren'],
         ],
         'updateCoordinates' => [
             'label' => 'Koordinaten aktualisieren',
@@ -65,6 +66,21 @@ return [
         ],
         'distance_km' => [
             'label' => 'km',
+        ],
+        'last_rx_control_date' => [
+            'label' => 'Letzte Röntgenkontrolle',
+        ],
+        'last_intraoral_control_date' => [
+            'label' => 'Letzte intraorale Kontrolle',
+        ],
+        'last_electromedical_control_date' => [
+            'label' => 'Letzte elektromedizinische Kontrolle',
+        ],
+        'last_appointment' => [
+            'label' => 'Letzter Termin',
+        ],
+        'last_health_authorization_date' => [
+            'label' => 'Letzte Gesundheitszulassung',
         ],
         'is_active' => [
             'label' => 'Aktiv',
@@ -283,7 +299,19 @@ return [
             'label' => 'Aktivität',
         ],
     ],
+    'filters' => [
+        'has_controls' => ['label' => 'Hat erfasste Kontrollen'],
+        'controls_expiring' => ['label' => 'Kontrollen laufen ab (30 Tage)'],
+        'last_appointment_type' => ['label' => 'Letzter Termin nach Typ', 'none' => 'Kein Termin'],
+        'never_controlled_type' => ['label' => 'Nach Typ nie kontrolliert'],
+        'has_rx_control' => ['label' => 'Röntgenkontrolle'],
+        'has_electromedical_control' => ['label' => 'Elektromedizinische Kontrolle'],
+        'has_health_authorization' => ['label' => 'Gesundheitszulassung'],
+    ],
     'messages' => [
+        'coordinates_batch_summary' => ':processed Kunden verarbeitet. Koordinaten für :success aktualisiert.',
+        'coordinates_batch_warning' => 'Koordinatenaktualisierung mit Fehlern abgeschlossen',
+        'coordinates_batch_success' => 'Koordinaten erfolgreich aktualisiert',
         'coordinates_updated' => 'Koordinaten erfolgreich aktualisiert',
         'coordinates_update_failed' => 'Koordinatenaktualisierung fehlgeschlagen',
         'import_success' => 'Import erfolgreich abgeschlossen',
@@ -293,10 +321,12 @@ return [
         'label' => 'Kunde',
         'plural' => 'Kunden',
     ],
-    'sections' => [
-        'contacts' => [
-            'heading' => 'contacts',
-            'label' => 'contacts',
+    'sections' => [        'contacts' => [
+            'heading' => 'Kontakte',
+            'label' => 'Kontakte',
+        ],
+        'address_info' => [
+            'label' => 'Adresse',
         ],
         'address' => [
             'heading' => 'address',

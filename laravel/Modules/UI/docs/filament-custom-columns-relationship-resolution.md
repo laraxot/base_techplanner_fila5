@@ -1,3 +1,10 @@
+---
+title: "Filament Custom Columns - Relationship Resolution Ultimate Guide"
+qmd: "ui filament custom columns relationship resolution md"
+type: note
+tags: [documentation]
+---
+
 # Filament Custom Columns - Relationship Resolution Ultimate Guide
 
 ## Executive Summary

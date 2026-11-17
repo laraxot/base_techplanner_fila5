@@ -9,33 +9,25 @@ return [
         'group' => [
             'name' => 'Admin',
         ],
+        'label' => 'Sessione',
+        'icon' => 'heroicon-o-user',
+        'sort' => 21,
     ],
     'pages' => [
         'health_check_results' => [
             'buttons' => [
                 'refresh' => 'Refresh',
             ],
-<<<<<<< HEAD
             'heading' => 'Application Health',
-=======
-
-            'heading' => 'Application Health',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Settings',
                 'label' => 'Application Health',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Check results from',
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Session',
     'plural_label' => 'Session (Plurale)',
     'fields' => [
@@ -61,14 +53,24 @@ return [
     'actions' => [
         'create' => [
             'label' => 'Crea Session',
+            'icon' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Session',
+            'icon' => 'edit',
         ],
         'delete' => [
             'label' => 'Elimina Session',
+            'icon' => 'delete',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'view' => [
+            'icon' => 'view',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

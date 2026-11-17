@@ -1,5 +1,5 @@
 @php
-    $placeholder = $placeholder ?? 'Cerca articoli...';
+    $placeholder = $placeholder ?? __('blog.search.placeholder');
     $showSuggestions = $showSuggestions ?? true;
     $debounceMs = $debounceMs ?? 300;
     $maxSuggestions = $maxSuggestions ?? 5;
@@ -94,8 +94,8 @@
             <svg class="w-12 h-12 text-gray-300 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
             </svg>
-            <p class="text-gray-500">Nessun articolo trovato per "<span x-text="query"></span>"</p>
-            <p class="text-sm text-gray-400 mt-2">Prova con altri termini di ricerca</p>
+            <p class="text-gray-500">{!! __('blog.search.no_results', ['query' => '<span x-text="query"></span>']) !!}</p>
+            <p class="text-sm text-gray-400 mt-2">{{ __('blog.search.no_results_hint') }}</p>
         </div>
         
         {{-- View All Results --}}
@@ -105,7 +105,7 @@
                 class="text-sm text-blue-600 hover:text-blue-700 font-medium flex items-center justify-center"
                 @click="showResults = false"
             >
-                Vedi tutti i risultati per "<span x-text="query"></span>"
+                {!! __('blog.search.view_all', ['query' => '<span x-text="query"></span>']) !!}
                 <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
                 </svg>
@@ -122,13 +122,13 @@
             <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/>
             </svg>
-            Ricerca avanzata
+            {{ __('blog.search.advanced') }}
         </button>
         
         {{-- Search Stats --}}
         <div x-show="query.length > 0" class="text-xs text-gray-500">
-            <span x-show="!loading" x-text="`${results.length} risultati`"></span>
-            <span x-show="loading">Ricerca in corso...</span>
+            <span x-show="!loading" x-text="@js(__('blog.search.results_count')).replace(':count', results.length)"></span>
+            <span x-show="loading">{{ __('blog.search.searching') }}</span>
         </div>
     </div>
     
@@ -141,41 +141,41 @@
         class="mt-4 p-4 bg-gray-50 rounded-lg border border-gray-200"
         style="display: none;"
     >
-        <h4 class="font-medium text-gray-900 mb-3">Filtri di ricerca avanzata</h4>
+        <h4 class="font-medium text-gray-900 mb-3">{{ __('blog.search.filters_title') }}</h4>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
             {{-- Category Filter --}}
             <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Categoria</label>
+                <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('blog.search.category') }}</label>
                 <select x-model="advancedFilters.category" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    <option value="">Tutte le categorie</option>
-                    <option value="radioprotezione">Radioprotezione</option>
-                    <option value="normativa">Normativa</option>
-                    <option value="elettromedicali">Elettromedicali</option>
-                    <option value="guide-pratiche">Guide Pratiche</option>
+                    <option value="">{{ __('blog.categories.all_categories') }}</option>
+                    <option value="radioprotezione">{{ __('blog.categories.radioprotezione') }}</option>
+                    <option value="normativa">{{ __('blog.categories.normativa') }}</option>
+                    <option value="elettromedicali">{{ __('blog.categories.elettromedicali') }}</option>
+                    <option value="guide-pratiche">{{ __('blog.categories.guide_pratiche') }}</option>
                 </select>
             </div>
             
             {{-- Date Range --}}
             <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Periodo</label>
+                <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('blog.search.period') }}</label>
                 <select x-model="advancedFilters.dateRange" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    <option value="">Qualsiasi periodo</option>
-                    <option value="today">Oggi</option>
-                    <option value="week">Ultima settimana</option>
-                    <option value="month">Ultimo mese</option>
-                    <option value="year">Ultimo anno</option>
+                    <option value="">{{ __('blog.search.any_period') }}</option>
+                    <option value="today">{{ __('blog.search.today') }}</option>
+                    <option value="week">{{ __('blog.search.last_week') }}</option>
+                    <option value="month">{{ __('blog.search.last_month') }}</option>
+                    <option value="year">{{ __('blog.search.last_year') }}</option>
                 </select>
             </div>
             
             {{-- Sort By --}}
             <div>
-                <label class="block text-sm font-medium text-gray-700 mb-1">Ordina per</label>
+                <label class="block text-sm font-medium text-gray-700 mb-1">{{ __('blog.search.sort_by') }}</label>
                 <select x-model="advancedFilters.sortBy" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                    <option value="relevance">Rilevanza</option>
-                    <option value="date">Data (più recente)</option>
-                    <option value="date_asc">Data (più vecchio)</option>
-                    <option value="title">Titolo (A-Z)</option>
+                    <option value="relevance">{{ __('blog.search.relevance') }}</option>
+                    <option value="date">{{ __('blog.search.date_desc') }}</option>
+                    <option value="date_asc">{{ __('blog.search.date_asc') }}</option>
+                    <option value="title">{{ __('blog.search.title_asc') }}</option>
                 </select>
             </div>
         </div>
@@ -185,13 +185,13 @@
                 @click="resetAdvancedFilters()"
                 class="px-4 py-2 text-gray-600 hover:text-gray-700 font-medium"
             >
-                Resetta filtri
+                {{ __('blog.search.reset_filters') }}
             </button>
             <button 
                 @click="applyAdvancedFilters()"
                 class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 font-medium"
             >
-                Applica filtri
+                {{ __('blog.search.apply_filters') }}
             </button>
         </div>
     </div>

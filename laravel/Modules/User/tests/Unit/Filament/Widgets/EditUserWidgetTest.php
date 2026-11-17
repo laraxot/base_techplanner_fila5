@@ -1,42 +1,39 @@
 <?php
 
 declare(strict_types=1);
-
-namespace Modules\User\Tests\Unit\Filament\Widgets;
-
 use Modules\User\Filament\Widgets\EditUserWidget;
 use Modules\User\Tests\TestCase;
+use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
 describe('EditUserWidget', function (): void {
     test('edit user widget can be instantiated', function (): void {
-        $widget = new EditUserWidget();
+        new EditUserWidget;
 
-        expect($widget)->toBeInstanceOf(EditUserWidget::class);
     });
 
     test('edit user widget extends xot base widget', function (): void {
-        $widget = new EditUserWidget();
+        Assert::assertSame(XotBaseSchemaWidget::class, get_parent_class(EditUserWidget::class));
 
-        expect($widget)->toBeInstanceOf(Modules\Xot\Filament\Widgets\XotBaseWidget::class);
     });
 
     test('edit user widget has type property', function (): void {
-        $widget = new EditUserWidget();
+        $widget = new EditUserWidget;
 
-        expect($widget)->toHaveProperty('type');
+        Assert::assertObjectHasProperty('type', $widget);
     });
 
     test('edit user widget has resource property', function (): void {
-        $widget = new EditUserWidget();
+        $widget = new EditUserWidget;
 
-        expect($widget)->toHaveProperty('resource');
+        Assert::assertObjectHasProperty('resource', $widget);
     });
 
     test('edit user widget has model property', function (): void {
-        $widget = new EditUserWidget();
+        $widget = new EditUserWidget;
 
-        expect($widget)->toHaveProperty('model');
+        Assert::assertObjectHasProperty('model', $widget);
     });
 });

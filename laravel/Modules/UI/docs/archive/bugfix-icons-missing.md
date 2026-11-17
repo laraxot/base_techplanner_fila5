@@ -92,7 +92,7 @@ php artisan config:clear
 
 ## Riferimenti
 
-- [Sistema Icone UI](../icon-system.md)
+- [Sistema Icone UI](../icons/icon-system.md)
 - [Blade Icons Documentation](../blade-icons.md)
 - [XotBaseServiceProvider](../XotBaseServiceProvider.md)
 

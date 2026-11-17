@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -54,26 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => '名称',
-        ],
-        'queue' => [
-            'label' => '队列',
-        ],
-        'status' => [
-            'label' => '状态',
-        ],
-        'last_heartbeat' => [
-            'label' => '最后心跳',
-        ],
-        'created_at' => [
-            'label' => '创建时间',
-        ],
-        'updated_at' => [
-            'label' => '更新时间',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -87,8 +66,4 @@ return [
             'label' => '恢复',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

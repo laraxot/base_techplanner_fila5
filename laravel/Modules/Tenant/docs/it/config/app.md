@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "App"
+module: "Tenant"
+type: concept
+tags: [app]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "app"
+related:
+  - "./phpstan-corrections-january.md"
+---
 ~~~php
 return [
     'timezone' => 'Europe/Rome',
@@ -11,18 +24,9 @@ return [
 ### Versione HEAD
 
 ## Collegamenti tra versioni di app.md
-* [app.md](../../../Xot/docs/install/app.md)
-* [app.md](../../../Tenant/docs/it/config/app.md)
-<<<<<<< HEAD
 * [app.md](../../../xot/docs/install/app.md)
 * [app.md](../../../tenant/docs/it/config/app.md)
 
 ### Versione Incoming
 
 ---
-=======
-
-### Versione Incoming
-
----
->>>>>>> 6ed19256f (.)

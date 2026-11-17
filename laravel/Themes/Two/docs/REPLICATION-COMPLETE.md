@@ -1,3 +1,8 @@
+---
+status: superseded
+superseded_by: replication-complete.md
+---
+
 # 🎉 网站复制任务完成报告
 
 **Data**: 6 Febbraio 2026

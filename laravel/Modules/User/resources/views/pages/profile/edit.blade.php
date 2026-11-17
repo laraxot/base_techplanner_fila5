@@ -1,14 +1,10 @@
 <?php
 
 declare(strict_types=1);
-
-<<<<<<< HEAD
 /**
  * ---.
  */
 
-=======
->>>>>>> 6ed19256f (.)
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -21,25 +17,19 @@ use Illuminate\Validation\Rule;
 use Livewire\Attributes\Locked;
 use Livewire\Attributes\Validate;
 use Livewire\Volt\Component;
+use Modules\Xot\Contracts\UserContract;
 use Modules\User\Models\User;
 use Webmozart\Assert\Assert;
 
-<<<<<<< HEAD
 use function Livewire\Volt\layout;
-=======
->>>>>>> 6ed19256f (.)
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 name('profile.edit');
-<<<<<<< HEAD
 layout('x-layouts.app');
 middleware(['auth', 'verified']);
 // middleware(['web']); // redundant if auth is used, but safe to add if needed.
 // Actually, FolioVoltServiceProvider adds web to everything now.
-=======
-middleware(['auth', 'verified']);
->>>>>>> 6ed19256f (.)
 
 /**
  * Profile edit component for managing user profile, password updates, and account deletion.
@@ -80,17 +70,10 @@ $component = new class extends Component {
     /**
      * User ID (locked to prevent tampering).
      *
-<<<<<<< HEAD
      * @var string
      */
     #[Locked]
     public string $user_id = '';
-=======
-     * @var int
-     */
-    #[Locked]
-    public int $user_id = 0;
->>>>>>> 6ed19256f (.)
 
     /**
      * Current password for verification.
@@ -131,32 +114,21 @@ $component = new class extends Component {
     public function mount(): void
     {
         try {
-<<<<<<< HEAD
             /** @var User|null $user */
-=======
->>>>>>> 6ed19256f (.)
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+            Assert::isInstanceOf($user, UserContract::class);
 
             // Type-safe property initialization
             $this->first_name = (string) ($user->first_name ?? '');
             $this->last_name = (string) ($user->last_name ?? '');
             $this->email = (string) ($user->email ?? '');
-<<<<<<< HEAD
             $this->user_id = (string) ($user->id ?? '');
-=======
-            $this->user_id = (int) ($user->id ?? 0);
->>>>>>> 6ed19256f (.)
 
             Assert::stringNotEmpty($this->first_name, 'User first name cannot be empty');
             Assert::stringNotEmpty($this->last_name, 'User last name cannot be empty');
             Assert::stringNotEmpty($this->email, 'User email cannot be empty');
-<<<<<<< HEAD
             Assert::stringNotEmpty($this->user_id, 'User ID cannot be empty');
-=======
-            Assert::greaterThan($this->user_id, 0, 'User ID must be positive');
->>>>>>> 6ed19256f (.)
 
             // Validate email format
             Assert::true(filter_var($this->email, FILTER_VALIDATE_EMAIL) !== false, 'User email must be valid');
@@ -209,12 +181,8 @@ $component = new class extends Component {
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for profile update');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
-<<<<<<< HEAD
+            Assert::isInstanceOf($user, UserContract::class);
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
-=======
-            Assert::same($this->user_id, (int) $user->id, 'User ID mismatch detected');
->>>>>>> 6ed19256f (.)
 
             // Check if email has changed for additional validation
             $emailChanged = $user->email !== $validated['email'];
@@ -228,32 +196,21 @@ $component = new class extends Component {
             }
 
             // Update user data with type casting
-<<<<<<< HEAD
             /** @var User $user */
-=======
->>>>>>> 6ed19256f (.)
             $user->fill([
                 'first_name' => trim($validated['first_name']),
                 'last_name' => trim($validated['last_name']),
                 'email' => strtolower(trim($validated['email'])),
             ]);
 
-<<<<<<< HEAD
             // Reset email verification
             /** @var User $user */
-=======
-            // Reset email verification if email changed
->>>>>>> 6ed19256f (.)
             if ($emailChanged && $user->hasVerifiedEmail()) {
                 $user->email_verified_at = null;
             }
 
             // Log before saving to capture original values
-<<<<<<< HEAD
             Log::debug('Updating user profile', [
-=======
-            Log::info('Updating user profile', [
->>>>>>> 6ed19256f (.)
                 'user_id' => $user->id,
                 'old_first_name' => $user->first_name,
                 'new_first_name' => $validated['first_name'],
@@ -266,26 +223,17 @@ $component = new class extends Component {
                 'user_agent' => request()->userAgent(),
             ]);
 
-<<<<<<< HEAD
             /** @var User $user */
-=======
->>>>>>> 6ed19256f (.)
             $success = $user->save();
             Assert::true($success, 'Failed to save user profile');
 
             // Log successful profile update for audit trail
-<<<<<<< HEAD
             /** @var array<string, mixed> $changes */
             $changes = $user->getChanges();
 
             Log::debug('Profile updated', [
                 'user_id' => $user->id,
                 'changes' => $changes,
-=======
-            Log::info('User profile updated successfully', [
-                'user_id' => $user->id,
-                'changes' => $user->getChanges(),
->>>>>>> 6ed19256f (.)
                 'ip_address' => request()->ip(),
                 'user_agent' => request()->userAgent(),
             ]);
@@ -301,11 +249,7 @@ $component = new class extends Component {
             session()->flash('status', $message);
 
             // Send email verification if email changed
-<<<<<<< HEAD
             if ($emailChanged && null === $user->email_verified_at && $user instanceof \Illuminate\Contracts\Auth\MustVerifyEmail) {
-=======
-            if ($emailChanged) {
->>>>>>> 6ed19256f (.)
                 $user->sendEmailVerificationNotification();
             }
         } catch (\Illuminate\Validation\ValidationException $e) {
@@ -353,18 +297,11 @@ $component = new class extends Component {
                 'password_confirmation' => ['required'],
             ]);
 
-<<<<<<< HEAD
             /** @var User $user */
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for password update');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
+            Assert::isInstanceOf($user, UserContract::class);
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
-=======
-            $user = Auth::user();
-            Assert::notNull($user, 'User must be authenticated for password update');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
-            Assert::same($this->user_id, (int) $user->id, 'User ID mismatch detected');
->>>>>>> 6ed19256f (.)
 
             // Validate password strength and format
             Assert::stringNotEmpty($this->current_password, 'Current password cannot be empty');
@@ -392,11 +329,7 @@ $component = new class extends Component {
             event(new PasswordReset($user));
 
             // Log successful password update for audit trail
-<<<<<<< HEAD
             Log::debug('User password updated successfully', [
-=======
-            Log::info('User password updated successfully', [
->>>>>>> 6ed19256f (.)
                 'user_id' => $user->id,
                 'email' => $user->email,
                 'ip_address' => request()->ip(),
@@ -457,12 +390,8 @@ $component = new class extends Component {
 
             $user = Auth::user();
             Assert::notNull($user, 'User must be authenticated for account deletion');
-            Assert::isInstanceOf($user, User::class, 'User must be an instance of User model');
-<<<<<<< HEAD
+            Assert::isInstanceOf($user, UserContract::class);
             Assert::same($this->user_id, (string) $user->id, 'User ID mismatch detected');
-=======
-            Assert::same($this->user_id, (int) $user->id, 'User ID mismatch detected');
->>>>>>> 6ed19256f (.)
 
             // Validate deletion password
             Assert::stringNotEmpty($this->delete_password, 'Password cannot be empty for account deletion');
@@ -483,11 +412,7 @@ $component = new class extends Component {
             ];
 
             // Log account deletion for audit trail (before deletion)
-<<<<<<< HEAD
             Log::debug('User account deletion initiated', $userData);
-=======
-            Log::info('User account deletion initiated', $userData);
->>>>>>> 6ed19256f (.)
 
             // Logout user before deletion
             Auth::logout();
@@ -497,19 +422,12 @@ $component = new class extends Component {
             request()->session()->regenerateToken();
 
             // Delete the user account
-<<<<<<< HEAD
             /** @var User $user */
-=======
->>>>>>> 6ed19256f (.)
             $deleted = $user->delete();
             Assert::true($deleted, 'Failed to delete user account');
 
             // Log successful deletion
-<<<<<<< HEAD
             Log::debug('User account deleted successfully', $userData);
-=======
-            Log::info('User account deleted successfully', $userData);
->>>>>>> 6ed19256f (.)
 
             // Redirect to home with success message
             return Redirect::to('/')->with('status', 'Your account has been deleted successfully.');
@@ -613,7 +531,7 @@ $component = new class extends Component {
 <x-layouts.app>
     <x-slot name="header">
         <h2 class="text-lg font-semibold leading-tight text-gray-800 dark:text-gray-200">
-            {{ __('Profile') }}
+            {{ __('user::common.nav.profile.label') }}
         </h2>
     </x-slot>
 
@@ -626,17 +544,17 @@ $component = new class extends Component {
                     <div class="max-w-xl">
                         <header>
                             <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-                                {{ __('Profile Information') }}
+                                {{ __('user::profile_edit.sections.profile_information.title') }}
                             </h2>
                             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                                {{ __("Update your account's profile information and email address.") }}
+                                {{ __('user::profile_edit.sections.profile_information.description') }}
                             </p>
                         </header>
 
                         <form wire:submit="updateProfile" class="mt-6 space-y-6">
                             <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
                                 <x-ui.input 
-                                    :label="__('First Name')" 
+                                    :label="__('user::profile_edit.fields.first_name.label')" 
                                     type="text" 
                                     id="first_name" 
                                     name="first_name" 
@@ -648,7 +566,7 @@ $component = new class extends Component {
                                     autocomplete="given-name"
                                 />
                                 <x-ui.input 
-                                    :label="__('Last Name')" 
+                                    :label="__('user::profile_edit.fields.last_name.label')" 
                                     type="text" 
                                     id="last_name" 
                                     name="last_name" 
@@ -661,7 +579,7 @@ $component = new class extends Component {
                             </div>
                             
                             <x-ui.input 
-                                label="Email address" 
+                                :label="__('user::user_form.fields.email.label')" 
                                 type="email" 
                                 id="email" 
                                 name="email"
@@ -672,7 +590,7 @@ $component = new class extends Component {
                             
                             <div class="flex items-start">
                                 <x-ui.button type="primary" submit="true">
-                                    {{ __('Update Profile') }}
+                                    {{ __('user::profile_edit.actions.update_profile.label') }}
                                 </x-ui.button>
                             </div>
                         </form>
@@ -684,16 +602,16 @@ $component = new class extends Component {
                     <div class="max-w-xl">
                         <header>
                             <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-                                {{ __('Update Password') }}
+                                {{ __('user::profile_edit.actions.update_password.label') }}
                             </h2>
                             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                                {{ __('Ensure your account is using a long, random password to stay secure.') }}
+                                {{ __('user::profile_edit.sections.update_password.description') }}
                             </p>
                         </header>
 
                         <form wire:submit="updatePassword" class="mt-6 space-y-6">
                             <x-ui.input 
-                                label="Current Password" 
+                                :label="__('user::profile_edit.fields.current_password.label')" 
                                 type="password" 
                                 id="current_password"
                                 name="current_password" 
@@ -703,7 +621,7 @@ $component = new class extends Component {
                             />
                             
                             <x-ui.input 
-                                label="New Password" 
+                                :label="__('user::profile_edit.fields.new_password.label')" 
                                 type="password" 
                                 id="password" 
                                 name="password"
@@ -714,7 +632,7 @@ $component = new class extends Component {
                             />
                             
                             <x-ui.input 
-                                label="Confirm New Password" 
+                                :label="__('user::profile_edit.fields.confirm_new_password.label')" 
                                 type="password" 
                                 id="password_confirmation"
                                 name="password_confirmation" 
@@ -726,7 +644,7 @@ $component = new class extends Component {
 
                             <div class="flex items-start">
                                 <x-ui.button type="primary" submit="true">
-                                    {{ __('Update Password') }}
+                                    {{ __('user::profile_edit.actions.update_password.label') }}
                                 </x-ui.button>
                             </div>
                         </form>
@@ -738,10 +656,10 @@ $component = new class extends Component {
                     <div class="max-w-xl">
                         <header>
                             <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-                                {{ __('Delete Account') }}
+                                {{ __('user::profile_edit.actions.delete_account.label') }}
                             </h2>
                             <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">
-                                {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Before deleting your account, please download any data or information that you wish to retain.') }}
+                                {{ __('user::profile_edit.sections.delete_account.description') }}
                             </p>
                         </header>
 
@@ -751,7 +669,7 @@ $component = new class extends Component {
                                 x-data
                                 @click.prevent="$dispatch('open-modal', 'confirm-user-deletion')"
                             >
-                                {{ __('Delete Account') }}
+                                {{ __('user::profile_edit.actions.delete_account.label') }}
                             </x-ui.button>
                         </div>
 
@@ -759,31 +677,31 @@ $component = new class extends Component {
                         <x-ui.modal name="confirm-user-deletion" maxWidth="lg" :show="$errors->userDeletion->isNotEmpty()" focusable>
                             <form wire:submit="deleteAccount" class="p-6">
                                 <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">
-                                    {{ __('Are you sure you want to delete your account?') }}
+                                    {{ __('user::profile_edit.modal.delete_confirmation.title') }}
                                 </h2>
                                 
                                 <p class="mt-1 mb-6 text-sm text-gray-600 dark:text-gray-400">
-                                    {{ __('Once your account is deleted, all of its resources and data will be permanently deleted. Please enter your password to confirm you would like to permanently delete your account.') }}
+                                    {{ __('user::profile_edit.modal.delete_confirmation.message') }}
                                 </p>
 
                                 <x-ui.input 
-                                    label="Password" 
+                                    :label="__('user::login.fields.password.label')" 
                                     type="password" 
                                     id="delete_password"
                                     name="delete_password" 
                                     wire:model="delete_password"
                                     required
                                     autocomplete="current-password"
-                                    placeholder="{{ __('Enter your password to confirm deletion') }}"
+                                    placeholder="{{ __('user::profile_edit.modal.delete_confirmation.placeholder') }}"
                                 />
 
                                 <div class="flex justify-end mt-6 space-x-3">
                                     <x-ui.button type="secondary" x-on:click="$dispatch('close')">
-                                        {{ __('Cancel') }}
+                                        {{ __('user::common.actions.cancel.label') }}
                                     </x-ui.button>
 
                                     <x-ui.button type="danger" submit="true">
-                                        {{ __('Delete Account') }}
+                                        {{ __('user::profile_edit.actions.delete_account.label') }}
                                     </x-ui.button>
                                 </div>
                             </form>

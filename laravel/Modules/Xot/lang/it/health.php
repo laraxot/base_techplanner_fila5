@@ -27,13 +27,18 @@ return [
     ],
     'actions' => [
         'refresh' => [
-            'label' => 'refresh',
-<<<<<<< HEAD
-            'tooltip' => 'refresh',
+            'label' => 'Aggiorna',
+            'tooltip' => '',
             'icon' => 'refresh',
         ],
         'logout' => [
-            'tooltip' => 'logout',
+            'tooltip' => '',
+            'icon' => 'logout',
+        ],
+        'save' => [
+            'label' => 'Salva',
+            'icon' => 'save',
+            'tooltip' => '',
         ],
     ],
     'label' => 'Health',
@@ -56,8 +61,11 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
+        ],
+    ],
+    'page' => [
+        'last_check' => [
+            'label' => 'Ultimo controllo',
         ],
     ],
 ];

@@ -1,3 +1,14 @@
+---
+title: "architecture xotdata pattern 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "architecture xotdata pattern 1"
+issues: []
+discussions: []
+---
+
 # Architettura XotData Pattern - Errore Critico Risolto e Analisi Approfondita
 
 ## 🚨 **Errore Grave Identificato e Risolto**
@@ -149,26 +160,16 @@ function createTestUser(array $attributes = []): UserContract
 ## 📖 **Documentazione di Riferimento**
 
 ### **Pattern XotData**
-<<<<<<< HEAD
 - [docs/xotdata-architecture-critical-error-fix.md](../../../../docs/xotdata-architecture-critical-error-fix.md)
 - [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../../xot/docs/architecture-violations-and-fixes.md)
-=======
-- [docs/xotdata-architecture-critical-error-fix.md](../../../docs/xotdata-architecture-critical-error-fix.md)
-- [laravel/Modules/Xot/docs/architecture-violations-and-fixes.md](../../Xot/docs/architecture-violations-and-fixes.md)
->>>>>>> 6ed19256f (.)
 
 ### **Struttura Testing**
 - [laravel/Modules/User/tests/Feature/Filament/Widgets/LoginWidgetTest.php](../../User/tests/Feature/Filament/Widgets/LoginWidgetTest.php)
 - [laravel/Modules/Cms/tests/Feature/Auth/AuthenticationTest.php](../tests/Feature/Auth/AuthenticationTest.php)
 
 ### **Sistema Folio/Volt**
-<<<<<<< HEAD
 - [laravel/Themes/One/docs/folio-pages.md](../../../themes/one/docs/folio-pages.md)
 - [laravel/Themes/One/docs/routing_with_folio_volt.md](../../../themes/one/docs/routing_with_folio_volt.md)
-=======
-- [laravel/Themes/One/docs/folio-pages.md](../../../Themes/One/docs/folio-pages.md)
-- [laravel/Themes/One/docs/routing_with_folio_volt.md](../../../Themes/One/docs/routing_with_folio_volt.md)
->>>>>>> 6ed19256f (.)
 
 ## 🎯 **Obiettivo Finale**
 
@@ -187,8 +188,4 @@ LoginWidgetTest.php → Widget Livewire
 └── Interazioni specifiche
 ```
 
-<<<<<<< HEAD
 *
-=======
-*Ultimo aggiornamento: Dicembre 2024 - Analisi completa e correzione pattern*
->>>>>>> 6ed19256f (.)

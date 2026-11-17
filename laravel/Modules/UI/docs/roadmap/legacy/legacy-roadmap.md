@@ -1,3 +1,10 @@
+---
+title: "UI Module - Complete Roadmap 2026"
+qmd: "ui roadmap legacy legacy roadmap md"
+type: note
+tags: [documentation]
+---
+
 # UI Module - Complete Roadmap 2026
 
 **Generated**: 2026-01-02

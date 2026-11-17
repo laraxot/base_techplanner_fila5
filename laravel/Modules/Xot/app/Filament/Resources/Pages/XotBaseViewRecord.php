@@ -6,33 +6,13 @@ namespace Modules\Xot\Filament\Resources\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\ActionGroup;
-<<<<<<< HEAD
 use Filament\Pages\Dashboard\Concerns\HasFiltersForm;
-=======
->>>>>>> 6ed19256f (.)
 use Filament\Resources\Pages\ViewRecord as FilamentViewRecord;
-use Filament\Schemas\Components\Component;
-use Filament\Schemas\Schema;
+use Modules\Xot\Filament\Links\RecordAnchor;
 
 abstract class XotBaseViewRecord extends FilamentViewRecord
 {
-<<<<<<< HEAD
     use HasFiltersForm;
-
-=======
->>>>>>> 6ed19256f (.)
-    final public function infolist(Schema $schema): Schema
-    {
-        return $schema->components($this->getInfolistSchema());
-    }
-
-    /**
-     * Restituisce lo schema dell'infolist per la visualizzazione dei dettagli del record.
-     * Questo metodo deve sempre restituire un array con chiavi di tipo stringa.
-     *
-     * @return array<string, Component>
-     */
-    abstract protected function getInfolistSchema(): array;
 
     /**
      * Get the header actions.
@@ -41,6 +21,25 @@ abstract class XotBaseViewRecord extends FilamentViewRecord
      */
     protected function getHeaderActions(): array
     {
-        return [];
+        return [
+            'back' => Action::make('back')
+                // Filament non ha una traduzione per il ritorno all'elenco: la chiave filament-panels::...back.label
+                // compariva grezza sulla pagina. `xot::buttons.back` e' tradotta in it/en/de.
+                ->label(__('xot::buttons.back'))
+                ->icon('heroicon-o-arrow-left')
+                ->url(function (): string {
+                    $record = $this->getRecord();
+                    $returnTo = request()->query(RecordAnchor::RETURN_TO_PARAMETER);
+                    $key = $record->getKey();
+
+                    if (! is_string($returnTo) || (! is_int($key) && ! is_string($key))) {
+                        return $this->getResourceUrl();
+                    }
+
+                    $returnTo = RecordAnchor::resolveReturnTo($returnTo, $key);
+
+                    return $returnTo ?? $this->getResourceUrl();
+                }),
+        ];
     }
 }

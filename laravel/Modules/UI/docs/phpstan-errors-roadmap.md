@@ -1,6 +1,12 @@
+---
+title: "PHPStan Level 10 Errors Roadmap - UI Module"
+qmd: "ui phpstan errors roadmap md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Level 10 Errors Roadmap - UI Module
 
-**Data**: 2026-01-09  
 **Modulo**: UI  
 **Livello PHPStan**: 10  
 **Status**: 🧘 **IN ANALISI**
@@ -113,8 +119,4 @@
 
 **Status**: 🧘 **IN ANALISI**
 
-**Ultimo aggiornamento**: 2026-01-09
-<<<<<<< HEAD
 **Ultimo aggiornamento**: [DATE]
-=======
->>>>>>> 6ed19256f (.)

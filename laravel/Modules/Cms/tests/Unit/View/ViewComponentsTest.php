@@ -2,23 +2,22 @@
 
 declare(strict_types=1);
 
-namespace Modules\Cms\Tests\Unit\View;
-
 use Modules\Cms\View\Components\AppLayout;
 use Modules\Cms\View\Components\GuestLayout;
 use Modules\Cms\View\Components\Metatags;
+use PHPUnit\Framework\Assert;
 
 test('AppLayout component can be instantiated', function () {
-    $component = new AppLayout();
-    expect($component)->toBeInstanceOf(AppLayout::class);
+    $component = new AppLayout;
+    Assert::assertSame(AppLayout::class, $component::class);
 });
 
 test('GuestLayout component can be instantiated', function () {
-    $component = new GuestLayout();
-    expect($component)->toBeInstanceOf(GuestLayout::class);
+    $component = new GuestLayout;
+    Assert::assertSame(GuestLayout::class, $component::class);
 });
 
 test('Metatags component can be instantiated', function () {
-    $component = new Metatags();
-    expect($component)->toBeInstanceOf(Metatags::class);
+    $component = new Metatags;
+    Assert::assertSame(Metatags::class, $component::class);
 });

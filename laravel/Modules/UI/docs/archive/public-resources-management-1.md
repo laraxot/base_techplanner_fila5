@@ -1,3 +1,10 @@
+---
+title: "Gestione delle Risorse Pubbliche"
+qmd: "ui archive public resources management 1 md"
+type: note
+tags: [documentation]
+---
+
 # Gestione delle Risorse Pubbliche
 
 ## Indice

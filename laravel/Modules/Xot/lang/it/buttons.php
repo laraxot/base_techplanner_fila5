@@ -38,7 +38,6 @@ return [
     'close' => 'Chiudi',
     'back' => 'Indietro',
     'confirm' => 'Conferma',
-<<<<<<< HEAD
     'label' => 'Buttons',
     'plural_label' => 'Buttons (Plurale)',
     'navigation' => [
@@ -83,6 +82,4 @@ return [
             'label' => 'Elimina Buttons',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,10 @@
+---
+title: "flip_cards"
+qmd: "ui integration flip cards md"
+type: note
+tags: [documentation]
+---
+
 # flip_cards
 
 <!-- Contenuto migrato da _docs/flip_cards.txt -->

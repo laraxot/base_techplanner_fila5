@@ -1,3 +1,10 @@
+---
+title: "Filament Version Declaration — UI"
+qmd: "ui filament version md"
+type: note
+tags: [documentation]
+---
+
 # Filament Version Declaration — UI
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

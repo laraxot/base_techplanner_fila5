@@ -1,3 +1,15 @@
+---
+title: "email queue"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "email queue"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sistema Code Email - il progetto
 
 ## Panoramica
@@ -168,11 +180,7 @@ return [
 ```ini
 [program:laravel-mail-worker]
 process_name=%(program_name)s_%(process_num)02d
-<<<<<<< HEAD
 command=php artisan queue:work redis --queue=mail-high,mail-default --tries=3 --timeout=60
-=======
-command=php /var/www/html/base_<nome progetto>/laravel/artisan queue:work redis --queue=mail-high,mail-default --tries=3 --timeout=60
->>>>>>> 6ed19256f (.)
 autostart=true
 autorestart=true
 user=www-data
@@ -580,11 +588,7 @@ return [
 ```ini
 [program:laravel-mail-worker]
 process_name=%(program_name)s_%(process_num)02d
-<<<<<<< HEAD
 command=php artisan queue:work redis --queue=mail-high,mail-default --tries=3 --timeout=60
-=======
-command=php /var/www/html/base_<nome progetto>/laravel/artisan queue:work redis --queue=mail-high,mail-default --tries=3 --timeout=60
->>>>>>> 6ed19256f (.)
 autostart=true
 autorestart=true
 user=www-data

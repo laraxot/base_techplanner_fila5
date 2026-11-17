@@ -1,14 +1,29 @@
+---
+title: "dry kiss analysis conflict"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dry kiss analysis conflict"
+issues: []
+discussions: []
+---
+
 # 🐄✨ DRY & KISS Analysis - Modulo Gdpr
 
-**Data Analisi:** 2025-12-02
-<<<<<<< HEAD
 **Data Analisi:** [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Status:** ✅ REFACTORING COMPLETATO (Parziale)
 
 ---
 
+title: "dry kiss analysis conflict"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "dry kiss analysis conflict"
+issues: []
+discussions: []
 ## 📊 Struttura Modulo
 
 | Categoria | Quantità | Note |
@@ -30,11 +45,7 @@
 
 ---
 
-## ✅ AZIONI COMPLETATE (2025-12-02)
-<<<<<<< HEAD
 ## ✅ AZIONI COMPLETATE ([DATE])
-=======
->>>>>>> 6ed19256f (.)
 
 ### 1. Refactoring Base Models
 I seguenti file sono stati refactorati per estendere le classi base di `Modules\Xot` e rimuovere codice duplicato (~150 LOC rimosse):
@@ -68,8 +79,4 @@ I seguenti file sono stati refactorati per estendere le classi base di `Modules\
 - [x] BasePivot refactoring
 - [x] BaseModel connection fix
 - [ ] Resources audit
-<<<<<<< HEAD
 - [ ] Pages audit
-=======
-- [ ] Pages audit
->>>>>>> 6ed19256f (.)

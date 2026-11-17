@@ -96,7 +96,6 @@ return [
             'back' => 'Indietro',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Components',
     'plural_label' => 'Components (Plurale)',
     'navigation' => [
@@ -108,7 +107,7 @@ return [
         ],
         'label' => 'Components',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -141,6 +140,4 @@ return [
             'label' => 'Elimina Components',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

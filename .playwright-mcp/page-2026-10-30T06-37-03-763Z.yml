@@ -1,0 +1,328 @@
+- generic [active] [ref=e1]:
+  - region "Gestione dei cookie" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - paragraph [ref=e5]: Cookie
+        - paragraph [ref=e6]:
+          - text: "Questo sito usa solo cookie tecnici, necessari al suo funzionamento: non richiedono il tuo consenso. Non usiamo cookie di profilazione né di analisi."
+          - link "Maggiori informazioni (Cookie policy)" [ref=e7] [cursor=pointer]:
+            - /url: http://127.0.0.1:8081/it/cookie-policy
+            - text: Maggiori informazioni
+            - generic [ref=e8]: (Cookie policy)
+      - button "Ho capito" [ref=e10] [cursor=pointer]
+  - generic:
+    - link "Vai ai contenuti" [ref=e11] [cursor=pointer]:
+      - /url: "#main-container"
+    - link "Vai al footer" [ref=e12] [cursor=pointer]:
+      - /url: "#footer"
+  - banner [ref=e13]:
+    - generic [ref=e18]:
+      - generic [ref=e19]: Demo
+      - navigation [ref=e20]:
+        - 'button "Lingua attiva: ITA" [ref=e22] [cursor=pointer]':
+          - generic [ref=e23]: "Lingua attiva:"
+          - generic [ref=e24]: ITA
+        - link "Accedi all'area personale" [ref=e27] [cursor=pointer]:
+          - /url: http://127.0.0.1:8081/it/auth/login
+    - generic [ref=e32]:
+      - generic [ref=e37]:
+        - link "FixCity Segnala e segui i problemi della tua città" [ref=e39] [cursor=pointer]:
+          - /url: http://127.0.0.1:8081/it
+          - generic [ref=e42]:
+            - generic [ref=e43]: FixCity
+            - generic [ref=e44]: Segnala e segui i problemi della tua città
+        - generic [ref=e46]:
+          - generic [ref=e47]: Cerca
+          - button "Cerca nel sito" [ref=e48] [cursor=pointer]
+      - navigation "Principale" [ref=e58]:
+        - list [ref=e59]:
+          - listitem [ref=e60]:
+            - link "Segnalazioni" [ref=e61] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/tickets
+          - listitem [ref=e63]:
+            - link "Segnala" [ref=e64] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/tickets/create
+          - listitem [ref=e66]:
+            - link "Traccia" [ref=e67] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/tickets/track
+          - listitem [ref=e69]:
+            - link "Novità" [ref=e70] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/blog
+          - listitem [ref=e72]:
+            - link "Eventi" [ref=e73] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/events
+          - listitem [ref=e75]:
+            - link "Domande frequenti" [ref=e76] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/domande-frequenti
+  - main [ref=e78]:
+    - generic [ref=e79]:
+      - region [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]:
+            - paragraph [ref=e83]: SERVIZI DIGITALI DEL COMUNE
+            - heading "Segnalazioni e servizi per la tua comunità" [level=1] [ref=e84]
+            - paragraph [ref=e85]: Racconta cosa non funziona, indica dove e segui gli aggiornamenti in modo semplice e trasparente.
+            - generic [ref=e86]:
+              - link "Invia una segnalazione" [ref=e87] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/tickets/create
+              - link "Vedi le segnalazioni" [ref=e88] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/tickets
+          - complementary "IMPEGNO CIVICO" [ref=e89]:
+            - paragraph [ref=e91]: IMPEGNO CIVICO
+            - paragraph [ref=e92]: La tua voce conta
+            - paragraph [ref=e93]: Ogni segnalazione aiuta il Comune a capire le priorità e a rendere visibili gli interventi.
+      - region [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]:
+            - generic [ref=e98]:
+              - paragraph [ref=e99]: Mappa della comunità
+              - heading "Segnalazioni pubbliche sul territorio" [level=2] [ref=e100]
+            - paragraph [ref=e101]: Consulta la mappa per conoscere i problemi già segnalati e gli interventi in corso.
+          - generic [ref=e102]:
+            - region "Mappa della comunità" [ref=e103]:
+              - generic [ref=e104]:
+                - generic [ref=e105]:
+                  - generic:
+                    - generic: 100 km
+                    - link "Leaflet" [ref=e109] [cursor=pointer]:
+                      - /url: https://leafletjs.com
+                - generic:
+                  - button "Cerca" [ref=e114] [cursor=pointer]
+                  - button "Schermo intero" [ref=e118] [cursor=pointer]
+                  - button "Usa la mia posizione" [ref=e121] [cursor=pointer]
+                  - button "Cambia layer" [ref=e125] [cursor=pointer]
+                  - button "Aumenta zoom" [ref=e130] [cursor=pointer]
+                  - button "Diminuisci zoom" [ref=e132] [cursor=pointer]
+                  - status
+            - generic [ref=e136]: Segnalazioni pubbliche
+          - generic [ref=e137]:
+            - link "Segnala un disservizio" [ref=e138] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/tickets/create
+            - link "Vedi tutte le segnalazioni" [ref=e139] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/tickets
+      - region [ref=e140]:
+        - generic [ref=e141]:
+          - generic [ref=e142]:
+            - heading "Come funziona" [level=2] [ref=e143]
+            - paragraph [ref=e144]: Descrivi il problema, indica dove si trova e segui gli aggiornamenti dall’area personale.
+          - list "I tre passaggi per inviare una segnalazione" [ref=e145]:
+            - listitem [ref=e146]:
+              - generic [aria-hidden] [ref=e147]: "1"
+              - heading "Descrivi il problema" [level=3] [ref=e151]
+              - paragraph [ref=e152]: Racconta che cosa è successo e scegli la categoria più adatta.
+            - listitem [ref=e153]:
+              - generic [aria-hidden] [ref=e154]: "2"
+              - heading "Indica il luogo" [level=3] [ref=e159]
+              - paragraph [ref=e160]: Indica il punto sulla mappa e aggiungi le informazioni utili.
+            - listitem [ref=e161]:
+              - generic [aria-hidden] [ref=e162]: "3"
+              - heading "Segui gli aggiornamenti" [level=3] [ref=e167]
+              - paragraph [ref=e168]: Controlla lo stato della segnalazione dalla tua area personale.
+      - region [ref=e169]:
+        - generic [ref=e170]:
+          - generic [ref=e172]:
+            - heading "Novità" [level=2] [ref=e173]
+            - link "Vedi tutte le novità" [ref=e174] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/blog
+              - generic [ref=e175]: Vedi tutte
+          - generic [ref=e178]:
+            - generic [ref=e181]:
+              - figure [ref=e184]:
+                - 'img "Piano asfaltature d''autunno: 14 strade rinnovate" [ref=e185]'
+              - generic [ref=e186]:
+                - generic [ref=e187]:
+                  - link "NOTIZIE" [ref=e188] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8081/it/blog
+                  - generic [ref=e189]: — 24 OTT 2026
+                - link [ref=e190] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8081/it/blog/piano-asfaltature-autunno
+                  - 'heading "Piano asfaltature d''autunno: 14 strade rinnovate" [level=3] [ref=e191]'
+                - paragraph [ref=e192]: Da lunedì partono i lavori su 14 strade indicate dalle segnalazioni dei cittadini, con chiusure a fasce orarie.
+            - generic [ref=e195]:
+              - figure [ref=e198]:
+                - img "In biblioteca tornano i Dialoghi d'autore" [ref=e199]
+              - generic [ref=e200]:
+                - generic [ref=e201]:
+                  - link "NOTIZIE" [ref=e202] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8081/it/blog
+                  - generic [ref=e203]: — 21 OTT 2026
+                - link [ref=e204] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8081/it/blog/biblioteca-dialoghi-dautore
+                  - heading "In biblioteca tornano i Dialoghi d'autore" [level=3] [ref=e205]
+                - paragraph [ref=e206]: Sei incontri gratuiti con scrittori e scrittrici, il giovedì sera, con prenotazione online.
+            - generic [ref=e209]:
+              - figure [ref=e212]:
+                - img "Attraversamenti più sicuri davanti alle scuole" [ref=e213]
+              - generic [ref=e214]:
+                - generic [ref=e215]:
+                  - link "NOTIZIE" [ref=e216] [cursor=pointer]:
+                    - /url: http://127.0.0.1:8081/it/blog
+                  - generic [ref=e217]: — 11 OTT 2026
+                - link [ref=e218] [cursor=pointer]:
+                  - /url: http://127.0.0.1:8081/it/blog/sicurezza-attraversamenti-scuole
+                  - heading "Attraversamenti più sicuri davanti alle scuole" [level=3] [ref=e219]
+                - paragraph [ref=e220]: Nuove strisce rialzate e lampeggianti in 9 plessi, scelti con i comitati dei genitori.
+      - region [ref=e221]:
+        - generic [ref=e223]:
+          - generic [ref=e225]:
+            - heading "Eventi" [level=2] [ref=e226]
+            - link "Vedi tutti gli eventi" [ref=e227] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/events
+              - generic [ref=e228]: Vedi tutti
+          - generic [ref=e232]:
+            - heading "Novembre 2026" [level=3] [ref=e235]
+            - list [ref=e236]:
+              - listitem [ref=e237]:
+                - generic [ref=e241]:
+                  - heading "domenica 1 novembre 2026" [level=4] [ref=e242]:
+                    - generic [aria-hidden] [ref=e243]:
+                      - text: "1"
+                      - generic [ref=e244]: dom
+                  - paragraph [ref=e246]:
+                    - link "Festa delle associazioni" [ref=e247] [cursor=pointer]:
+                      - /url: http://127.0.0.1:8081/it/events/festa-delle-associazioni
+              - listitem [ref=e248]:
+                - generic [ref=e252]:
+                  - heading "giovedì 5 novembre 2026" [level=4] [ref=e253]:
+                    - generic [aria-hidden] [ref=e254]:
+                      - text: "5"
+                      - generic [ref=e255]: gio
+                  - paragraph [ref=e257]:
+                    - link "La biblioteca nel parco" [ref=e258] [cursor=pointer]:
+                      - /url: http://127.0.0.1:8081/it/events/biblioteca-nel-parco
+              - listitem [ref=e259]:
+                - generic [ref=e263]:
+                  - heading "sabato 7 novembre 2026" [level=4] [ref=e264]:
+                    - generic [aria-hidden] [ref=e265]:
+                      - text: "7"
+                      - generic [ref=e266]: sab
+                  - paragraph [ref=e268]:
+                    - link "Passeggiata “Quartiere senza ostacoli”" [ref=e269] [cursor=pointer]:
+                      - /url: http://127.0.0.1:8081/it/events/passeggiata-quartiere-senza-ostacoli
+              - listitem [ref=e270]:
+                - generic [ref=e274]:
+                  - heading "venerdì 13 novembre 2026" [level=4] [ref=e275]:
+                    - generic [aria-hidden] [ref=e276]:
+                      - text: "13"
+                      - generic [ref=e277]: ven
+                  - paragraph [ref=e279]:
+                    - link "Celluloide Festival del cinema indipendente" [ref=e280] [cursor=pointer]:
+                      - /url: http://127.0.0.1:8081/it/events/celluloide-festival
+              - listitem [ref=e281]:
+                - generic [ref=e285]:
+                  - heading "sabato 14 novembre 2026" [level=4] [ref=e286]:
+                    - generic [aria-hidden] [ref=e287]:
+                      - text: "14"
+                      - generic [ref=e288]: sab
+                  - paragraph [ref=e290]:
+                    - 'link "Laboratorio: una buona segnalazione in cinque minuti" [ref=e291] [cursor=pointer]':
+                      - /url: http://127.0.0.1:8081/it/events/laboratorio-una-buona-segnalazione
+              - listitem [ref=e292]:
+                - generic [ref=e296]:
+                  - heading "venerdì 20 novembre 2026" [level=4] [ref=e297]:
+                    - generic [aria-hidden] [ref=e298]:
+                      - text: "20"
+                      - generic [ref=e299]: ven
+                  - paragraph [ref=e301]:
+                    - link "Street art nei sottopassi" [ref=e302] [cursor=pointer]:
+                      - /url: http://127.0.0.1:8081/it/events/street-art-sottopassi
+      - region [ref=e303]:
+        - generic [ref=e305]:
+          - generic [ref=e306]:
+            - paragraph [ref=e307]: Hai già inviato una segnalazione?
+            - heading "Segui la tua segnalazione" [level=2] [ref=e308]
+            - paragraph [ref=e309]: Inserisci il codice ricevuto per conoscere lo stato della pratica.
+          - group "Segui la tua segnalazione" [ref=e311]:
+            - link "Traccia una segnalazione" [ref=e312] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/tickets/track
+            - link "Invia una segnalazione" [ref=e315] [cursor=pointer]:
+              - /url: http://127.0.0.1:8081/it/tickets/create
+  - contentinfo [ref=e318]:
+    - generic [ref=e320]:
+      - link [ref=e324] [cursor=pointer]:
+        - /url: http://127.0.0.1:8081/it
+        - generic [ref=e327]:
+          - heading "FixCity" [level=2] [ref=e328]
+          - paragraph [ref=e329]: Segnala e segui i problemi della tua città
+      - generic [ref=e330]:
+        - generic [ref=e331]:
+          - heading "Segnalazioni" [level=4] [ref=e332]
+          - list [ref=e333]:
+            - listitem [ref=e334]:
+              - link "Elenco segnalazioni" [ref=e335] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/tickets
+            - listitem [ref=e336]:
+              - link "Invia segnalazione" [ref=e337] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/tickets/create
+            - listitem [ref=e338]:
+              - link "Traccia segnalazione" [ref=e339] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/tickets/track
+        - generic [ref=e340]:
+          - heading "Informazioni" [level=4] [ref=e341]
+          - list [ref=e342]:
+            - listitem [ref=e343]:
+              - link "Domande frequenti" [ref=e344] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/domande-frequenti
+            - listitem [ref=e345]:
+              - link "Novità" [ref=e346] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/blog
+            - listitem [ref=e347]:
+              - link "Eventi" [ref=e348] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/events
+            - listitem [ref=e349]:
+              - link "Mappa del sito" [ref=e350] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/mappa-sito
+        - generic [ref=e352]:
+          - list [ref=e354]:
+            - listitem [ref=e355]:
+              - link "Leggi le FAQ" [ref=e356] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/domande-frequenti
+            - listitem [ref=e357]:
+              - link "Segnalazione disservizio" [ref=e358] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/tickets/create
+          - list [ref=e360]:
+            - listitem [ref=e361]:
+              - link "Informativa privacy" [ref=e362] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/privacy
+            - listitem [ref=e363]:
+              - link "Note legali" [ref=e364] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/note-legali
+            - listitem [ref=e365]:
+              - link "Dichiarazione di accessibilità" [ref=e366] [cursor=pointer]:
+                - /url: http://127.0.0.1:8081/it/accessibilita
+      - generic [ref=e369]:
+        - link "Media policy" [ref=e370] [cursor=pointer]:
+          - /url: http://127.0.0.1:8081/it/media-policy
+        - link "Mappa del sito" [ref=e371] [cursor=pointer]:
+          - /url: http://127.0.0.1:8081/it/mappa-sito
+        - link "Cookie policy" [ref=e372] [cursor=pointer]:
+          - /url: http://127.0.0.1:8081/it/cookie-policy
+        - link "Gestisci cookie" [ref=e373] [cursor=pointer]:
+          - /url: http://127.0.0.1:8081/it/cookie-policy
+    - list [ref=e376]:
+      - listitem [ref=e377]: © 2026 FixCity. Tutti i diritti riservati.
+  - generic [ref=e380]:
+    - generic [ref=e381] [cursor=pointer]
+    - generic [ref=e382]:
+      - generic [ref=e383] [cursor=pointer]
+      - generic [ref=e385] [cursor=pointer]: "0"
+      - generic [ref=e387] [cursor=pointer]: "0"
+      - generic [ref=e389] [cursor=pointer]
+      - generic [ref=e391] [cursor=pointer]: "37"
+      - generic [ref=e393] [cursor=pointer]
+      - generic [ref=e395] [cursor=pointer]: "2"
+      - generic [ref=e397] [cursor=pointer]: "17"
+      - generic [ref=e399] [cursor=pointer]: "1"
+      - generic [ref=e401] [cursor=pointer]: "0"
+      - generic [ref=e403] [cursor=pointer]: "0"
+      - generic [ref=e405] [cursor=pointer]
+      - generic [ref=e407] [cursor=pointer]: "0"
+    - generic [ref=e409]:
+      - generic [ref=e410] [cursor=pointer]
+      - generic [ref=e411] [cursor=pointer]
+      - generic [ref=e412] [cursor=pointer]
+      - generic [ref=e414] [cursor=pointer]
+      - generic [ref=e415]: GET /it
+      - generic [ref=e418] [cursor=pointer]: 8.4.27
+      - generic [ref=e420] [cursor=pointer]: 595ms
+      - generic [ref=e422] [cursor=pointer]: 17MB

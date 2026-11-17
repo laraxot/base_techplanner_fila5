@@ -15,50 +15,35 @@ return [
             'placeholder' => 'Inserisci email destinatario',
             'helper_text' => '',
             'description' => 'Indirizzo email del destinatario',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Oggetto',
             'placeholder' => 'Inserisci oggetto email',
             'helper_text' => '',
             'description' => 'Oggetto dell\'email di test',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'body_html' => [
             'label' => 'Corpo HTML',
             'placeholder' => 'Inserisci contenuto HTML',
             'helper_text' => '',
             'description' => 'Contenuto HTML dell\'email',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'attachment' => [
             'description' => 'Allegato per il test S3',
             'helper_text' => '',
             'placeholder' => 'Seleziona file da allegare',
             'label' => 'Allegato',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'debug_output' => [
             'description' => 'Output di debug per i test',
             'helper_text' => '',
             'placeholder' => 'Output debug',
             'label' => 'Debug Output',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -115,9 +100,6 @@ return [
             'tooltip' => 'Testa operazioni sui file S3',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'S3 Test',
     'plural_label' => 'S3 Test (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

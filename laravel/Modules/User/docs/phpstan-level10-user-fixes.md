@@ -3,8 +3,8 @@
 ## 📋 Riepilogo Intervento
 
 <<<<<<< HEAD
-**Data**: 17 Novembre 2025  
-**Modulo**: User  
+**Data**: 17 Novembre 2025
+**Modulo**: User
 =======
 **Data**: 17 Novembre 2025
 **Modulo**: User
@@ -16,7 +16,7 @@
 ### 1. PasswordResetConfirmWidget.php
 
 <<<<<<< HEAD
-**File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`  
+**File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`
 =======
 **File**: `app/Filament/Widgets/Auth/PasswordResetConfirmWidget.php`
 >>>>>>> 6ed19256f (.)
@@ -43,7 +43,7 @@ Auth::guard()->login($user);
 ### 2. RegistrationWidget.php
 
 <<<<<<< HEAD
-**File**: `app/Filament/Widgets/RegistrationWidget.php`  
+**File**: `app/Filament/Widgets/RegistrationWidget.php`
 =======
 **File**: `app/Filament/Widgets/RegistrationWidget.php`
 >>>>>>> 6ed19256f (.)
@@ -112,7 +112,7 @@ class RegistrationWidget extends XotBaseWidget
 ```
 
 <<<<<<< HEAD
-**Pattern applicato**: 
+**Pattern applicato**:
 =======
 **Pattern applicato**:
 >>>>>>> 6ed19256f (.)
@@ -124,7 +124,7 @@ class RegistrationWidget extends XotBaseWidget
 ### 3. HasTeams.php
 
 <<<<<<< HEAD
-**File**: `app/Models/Traits/HasTeams.php`  
+**File**: `app/Models/Traits/HasTeams.php`
 =======
 **File**: `app/Models/Traits/HasTeams.php`
 >>>>>>> 6ed19256f (.)
@@ -173,7 +173,7 @@ public function teamPermissions(TeamContract $team): array
 ```
 
 <<<<<<< HEAD
-**Pattern applicato**: 
+**Pattern applicato**:
 =======
 **Pattern applicato**:
 >>>>>>> 6ed19256f (.)
@@ -183,7 +183,7 @@ public function teamPermissions(TeamContract $team): array
 ### 4. HasTenants.php
 
 <<<<<<< HEAD
-**File**: `app/Models/Traits/HasTenants.php`  
+**File**: `app/Models/Traits/HasTenants.php`
 =======
 **File**: `app/Models/Traits/HasTenants.php`
 >>>>>>> 6ed19256f (.)
@@ -215,7 +215,7 @@ public function getTenants(Panel $_panel): array|Collection
 ### 5. ResetPassword.php
 
 <<<<<<< HEAD
-**File**: `app/Notifications/Auth/ResetPassword.php`  
+**File**: `app/Notifications/Auth/ResetPassword.php`
 =======
 **File**: `app/Notifications/Auth/ResetPassword.php`
 >>>>>>> 6ed19256f (.)
@@ -352,7 +352,7 @@ Il modulo User è ora **completamente compliant** con PHPStan Level 10. I patter
 
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
 =======
-- **Quaeris Module**: Vedi `Modules/Quaeris/docs/phpstan-level10-quaeris-fixes.md` per pattern simili
+- **<nome progetto> Module**: Vedi `Modules/<nome progetto>/docs/phpstan-level10-<nome progetto>-fixes.md` per pattern simili
 
 **Status**: ✅ **COMPLETATO** - Pronto per production con type safety massima.
 >>>>>>> 6ed19256f (.)

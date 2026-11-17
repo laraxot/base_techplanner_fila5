@@ -1,3 +1,10 @@
+---
+title: "UI Module - Roadmap, Issues & Optimization"
+qmd: "ui roadmap legacy legacy roadmap and issues md"
+type: note
+tags: [documentation]
+---
+
 # UI Module - Roadmap, Issues & Optimization
 
 **Modulo**: UI (User Interface Components)

@@ -96,4 +96,4 @@ Tutti i widget senza modello devono:
 
 - [Xot Widgets Initialization](../../xot/docs/widgets-initialization.md)
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
-- [Login Widget Fix](./login-widget-fix.md)
+- [Login Widget Fix](../../login-widget-fix.md)

@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace Modules\Xot\Actions\Mail;
 
 use Illuminate\Database\Eloquent\Model;
-<<<<<<< HEAD
-=======
-use InvalidArgumentException;
->>>>>>> 6ed19256f (.)
 use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Datas\SmtpData;
 use Modules\Xot\Actions\Export\PdfByModelAction;
@@ -22,13 +18,8 @@ class SendMailByRecordAction
     /**
      * Invia una mail utilizzando un record come dati.
      *
-<<<<<<< HEAD
-     * @param Model  $record    Il record da utilizzare come dati per la mail
-     * @param string $mailClass La classe Mailable da utilizzare
-=======
      * @param  Model  $record  Il record da utilizzare come dati per la mail
      * @param  string  $mailClass  La classe Mailable da utilizzare
->>>>>>> 6ed19256f (.)
      */
     public function execute(Model $record, string $mailClass): void
     {
@@ -46,12 +37,7 @@ class SendMailByRecordAction
 
         // Verifica che il model abbia le proprietà/metodi necessari
         if (($record->email ?? null) === null || empty($record->email)) {
-<<<<<<< HEAD
             throw new \InvalidArgumentException('Model must have email property');
-        }
-
-        if (! method_exists($record, 'option')) {
-            throw new \InvalidArgumentException('Model must implement option method');
         }
 
         if (! method_exists($record, 'myLogs')) {
@@ -60,29 +46,21 @@ class SendMailByRecordAction
 
         $to = $record->email;
         // $to = 'marco.sottana@gmail.com'; //4 debug non cancellare
-=======
-            throw new InvalidArgumentException('Model must have email property');
+        // Le schede (SchedaContract) espongono i testi con msg(); option() esiste solo in
+        // Performance. Prima si chiedeva sempre option(): l'invio mail falliva per ogni scheda
+        // di Progressioni/Ptv/IR ("Model must implement option method").
+        if (method_exists($record, 'msg')) {
+            $subject = $record->msg('mail_oggetto');
+            $bodyHtml = $record->msg('mail_testo');
+        } elseif (method_exists($record, 'option')) {
+            $subject = $record->option('mail_oggetto');
+            $bodyHtml = $record->option('mail_testo');
+        } else {
+            throw new \InvalidArgumentException('Model must implement msg or option method');
         }
-
-        if (! method_exists($record, 'option')) {
-            throw new InvalidArgumentException('Model must implement option method');
-        }
-
-        if (! method_exists($record, 'myLogs')) {
-            throw new InvalidArgumentException('Model must implement myLogs method');
-        }
-
-        $to = $record->email;
->>>>>>> 6ed19256f (.)
-        $subject = $record->option('mail_oggetto');
-        $bodyHtml = $record->option('mail_testo');
 
         if (! is_string($to)) {
-<<<<<<< HEAD
             throw new \InvalidArgumentException('Email must be a string');
-=======
-            throw new InvalidArgumentException('Email must be a string');
->>>>>>> 6ed19256f (.)
         }
         if (! is_string($subject)) {
             $subject = '';
@@ -91,31 +69,29 @@ class SendMailByRecordAction
             $bodyHtml = '';
         }
 
+        $pdfPath = app(PdfByModelAction::class)->execute(
+            model: $record,
+            out: 'path',
+        );
+        if (! is_string($pdfPath)) {
+            throw new \InvalidArgumentException('PDF attachment path must be a string');
+        }
+
         $emailData = new EmailData(
             recipient: $to,
             subject: $subject,
             body_html: $bodyHtml,
-            attachments: [
-                app(PdfByModelAction::class)->execute(
-                    model: $record,
-                    out: 'path',
-                ),
-            ],
+            attachments: [$pdfPath],
         );
         SmtpData::make()->send($emailData);
 
         // myLogs è sempre disponibile su BaseModel
-<<<<<<< HEAD
         $logs = $record->myLogs();
         if (! is_object($logs) || ! method_exists($logs, 'create')) {
             throw new \InvalidArgumentException('Model ['.$record::class.'] myLogs relation is invalid');
         }
 
         $logs->create([
-=======
-        /* @phpstan-ignore-next-line - Dynamic relationship method */
-        $record->myLogs()->create([
->>>>>>> 6ed19256f (.)
             'act' => 'sendMail',
             'handle' => authId(),
         ]);

@@ -1,3 +1,10 @@
+---
+status: superseded
+superseded_by: comparative-analysis.md
+---
+
+> Copia identica di [comparative-analysis.md](./comparative-analysis.md) (fonte canonica, nome senza data).
+
 # 📋 Analisi Comparativa - TechPlanner vs Target
 
 ## 🎯 Stato Attuale: Analisi Comparativa

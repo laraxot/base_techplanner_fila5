@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Ottimizzazioni e Correzioni"
+qmd: "activity ottimizzazioni correzioni md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Ottimizzazioni e Correzioni
 
 ## Panoramica
@@ -14,11 +21,7 @@ Il modulo Activity gestisce il logging delle attività utilizzando Spatie Activi
 **Correzioni consigliate:**
 ```bash
 # Rimuovere file duplicati
-<<<<<<< HEAD
 rm -rf Modules/Activity/docs/archived/duplicates/
-=======
-rm -rf Modules/Activity/docs/archive/duplicates/
->>>>>>> 6ed19256f (.)
 rm -f Modules/Activity/docs/*-duplicate.md
 
 # Pulire directory test duplicata
@@ -249,8 +252,4 @@ class ActivityService
 
 ## 💡 Conclusioni
 
-<<<<<<< HEAD
 Il modulo Activity è funzionale ma necessita di pulizia e ottimizzazioni. Le correzioni prioritarie riguardano sicurezza e pulizia codebase, mentre le ottimizzazioni performance possono essere implementate gradualmente.
-=======
-Il modulo Activity è funzionale ma necessita di pulizia e ottimizzazioni. Le correzioni prioritarie riguardano sicurezza e pulizia codebase, mentre le ottimizzazioni performance possono essere implementate gradualmente.
->>>>>>> 6ed19256f (.)

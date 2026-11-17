@@ -1,10 +1,9 @@
 <?php
 
+declare(strict_types=1);
 /**
  * ---.
  */
-
-declare(strict_types=1);
 
 namespace Modules\Job\Models;
 
@@ -31,10 +30,6 @@ use Illuminate\Support\Carbon;
  * @property string|null $deleted_at
  * @property string|null $deleted_by
  * @property string|null $user_type
-<<<<<<< HEAD
-=======
- *
->>>>>>> 6ed19256f (.)
  * @property-read Model|Eloquent|null $user
  *
  * @method static Builder<static>|Export newModelQuery()
@@ -57,33 +52,10 @@ use Illuminate\Support\Carbon;
  * @method static Builder<static>|Export whereUserId($value)
  * @method static Builder<static>|Export whereUserType($value)
  *
- * @mixin IdeHelperExport
- * @mixin IdeHelperExport
- * @mixin IdeHelperExport
- * @mixin IdeHelperExport
- * @mixin IdeHelperExport
-<<<<<<< HEAD
- * @mixin IdeHelperExport
- * @mixin IdeHelperExport
- * @mixin IdeHelperExport
-=======
- * @mixin Eloquent
- * @mixin IdeHelperExport
- * @mixin Eloquent
- * @mixin IdeHelperExport
- * @mixin Eloquent
- * @mixin IdeHelperExport
- * @mixin Eloquent
->>>>>>> 6ed19256f (.)
- * @mixin IdeHelperExport
  * @mixin Eloquent
  */
 class Export extends BaseExport
 {
-<<<<<<< HEAD
-=======
-    /** @var string */
->>>>>>> 6ed19256f (.)
     protected $connection = 'job';
 
     protected $fillable = [

@@ -1,3 +1,18 @@
+---
+title: "Trait HasTeams"
+type: concept
+tags: [has, teams]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "has-teams trait hasteams"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./has-authentication-log.md"
+  - "./has-tenants.md"
+status: draft
+---
+
 # Trait HasTeams
 
 ## Descrizione
@@ -55,11 +70,7 @@ use Modules\User\Models\Traits\HasTeams;
 class User extends Authenticatable
 {
     use HasTeams;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // ... resto del codice
 }
 ```
@@ -67,8 +78,4 @@ class User extends Authenticatable
 ## Note
 - Il trait richiede che il modello utilizzi anche il trait `HasRoles` per la gestione dei ruoli
 - È necessario avere una tabella pivot `team_user` con le colonne `user_id`, `team_id`, `role` e `timestamps`
-<<<<<<< HEAD
 - La tabella dei team deve avere le colonne `id`, `name`, `personal_team`, `owner_id` e `timestamps` 
-=======
-- La tabella dei team deve avere le colonne `id`, `name`, `personal_team`, `owner_id` e `timestamps`
->>>>>>> 6ed19256f (.)

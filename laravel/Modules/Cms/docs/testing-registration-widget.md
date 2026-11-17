@@ -1,4 +1,12 @@
 ---
+title: "testing registration widget"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing registration widget"
+issues: []
+discussions: []
 description: Testing strategy for RegistrationWidget
 ---
 
@@ -85,12 +93,7 @@ All tests should be **green** without hitting the database schema-refresh.
            // Test code...
        });
    });
-<<<<<<< HEAD
    
-   
-=======
-
->>>>>>> 6ed19256f (.)
    // Piuttosto che questo (può causare problemi)
    describe('RegistrationWidget', function () {
        describe('Form Interaction', function () {
@@ -169,17 +172,10 @@ All tests should be **green** without hitting the database schema-refresh.
         test('widget handles different types with different behaviors', function () {
             // Patient widget
             $patientWidget = Livewire::test(RegistrationWidget::class, ['type' => 'patient']);
-<<<<<<< HEAD
             
             // Doctor widget
             $doctorWidget = Livewire::test(RegistrationWidget::class, ['type' => 'doctor']);
             
-=======
->>>>>>> 6ed19256f (.)
-
-            // Doctor widget
-            $doctorWidget = Livewire::test(RegistrationWidget::class, ['type' => 'doctor']);
-
             expect($patientWidget)->not()->toBeNull()
                 ->and($doctorWidget)->not()->toBeNull();
         });
@@ -236,8 +232,4 @@ After implementare le migliorie descritte sopra, tutti i test passano con succes
 5. **Test Isolation** - Consider restructuring tests to increase isolation and reduce interdependence between test cases.
 
 ---
-Last update: 2025-07-06
-<<<<<<< HEAD
 Last update: [DATE]
-=======
->>>>>>> 6ed19256f (.)

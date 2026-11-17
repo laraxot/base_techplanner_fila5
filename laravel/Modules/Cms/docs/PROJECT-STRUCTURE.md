@@ -1,4 +1,7 @@
 ---
+qmd: "PROJECT STRUCTURE"
+issues: []
+discussions: []
 title: "Project Structure — Module Cms"
 type: documentation
 created: 2026-05-11
@@ -75,7 +78,7 @@ related:
 
 ### Link Rules
 
-- **Interno modulo**: `[[concepts/page]]` o `[link](./concepts/page.md)`
+- **Interno modulo**: `[[concepts/page]]` o `[link](components/page.md)`
 - **Modulo altro**: `[[../../OtherModule/docs/wiki/concepts/page]]`
 - **Project wiki**: `[Global rule](../../docs/wiki/rules/rule.md)`
 
@@ -95,10 +98,10 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
+- [Global Rules](wiki/rules)
+- [Global Skills](wiki/skills)
+- [Global Commands](wiki/commands)
+- [Global Memories](wiki/memories)
 
 ## Setup Initiale (per nuovi moduli)
 

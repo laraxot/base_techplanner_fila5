@@ -1,15 +1,13 @@
-<<<<<<< HEAD
-- [Pattern di Estensione](../Xot/docs/filament/filament_best_practices.md)
-- [Principi di Ereditarietà](../Xot/docs/class_inheritance_principles.md)
-- [Architettura Filament-Xot](../Xot/docs/filament_xot_architecture.md)
 ---
-module: theme
-topic: xotbasepage
-canonical: ../../../../../Themes/docs/shared-components/xotbaage.md
+title: "XotBasePage - Classe Base per le Pagine Filament"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, filament]
+qmd: "XotBasePage - Classe Base per le Pagine Filament"
 ---
-
-See canonical documentation: ../../../../../Themes/docs/shared-components/xotbaage.md
-=======
 # XotBasePage - Classe Base per le Pagine Filament
 
 ## Descrizione
@@ -49,7 +47,7 @@ public static function getNavigationLabel(): string
     return static::transFunc(__FUNCTION__);
 }
 
-public function getTitle(): string
+public function getTitle(): string 
 {
     return static::transTitle();
 }
@@ -58,7 +56,7 @@ public function getTitle(): string
 ### Form Standardizzato
 
 ```php
-public function form(Form $form): Form
+public function form(\Filament\Schemas\Schema $form): \Filament\Schemas\Schema
 {
     return $form
         ->schema($this->getFormSchema())
@@ -86,7 +84,7 @@ use Modules\Xot\Filament\Resources\Pages\XotBasePage;
 class MyCustomPage extends XotBasePage
 {
     protected static ?string $navigationIcon = 'heroicon-o-document';
-
+    
     protected function getFormSchema(): array
     {
         return [
@@ -135,7 +133,7 @@ class MyCustomPage extends Page // ⚠️ ERRATO!
 class MyPage extends XotBasePage implements HasForms  // ⚠️ ERRATO!
 {
     use InteractsWithForms;  // ⚠️ ERRATO!
-
+    
     // ...
 }
 ```
@@ -147,7 +145,7 @@ class MyPage extends XotBasePage implements HasForms  // ⚠️ ERRATO!
 class MyPage extends XotBasePage
 {
     // Nessuna ridichiarazione di trait/interfacce già presenti
-
+    
     protected function getFormSchema(): array
     {
         return [
@@ -185,4 +183,3 @@ La classe è progettata per essere compatibile con Filament v3+ e garantisce il 
 - [Pattern di Estensione](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament/filament_best_practices.md)
 - [Principi di Ereditarietà](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/class_inheritance_principles.md)
 - [Architettura Filament-Xot](/var/www/html/base_saluteora/laravel/Modules/Xot/docs/filament_xot_architecture.md)
->>>>>>> 6ed19256f (.)

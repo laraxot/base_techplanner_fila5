@@ -2,20 +2,10 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-
-test('default database connection is configured', function () {
-    expect(config('database.default'))->not->toBeEmpty();
-});
-
-test('database configuration has required connections', function () {
-    $connections = config('database.connections');
-
-    expect($connections)->toBeArray()
-        ->and($connections)->toHaveKey('mysql');
-=======
-use Modules\Job\Tests\TestCase;
 use Illuminate\Support\Facades\DB;
+use Modules\Job\Tests\TestCase;
+
+uses(TestCase::class);
 
 test('database connection works', function () {
     // Simple test to verify database connection
@@ -38,5 +28,4 @@ test('can create a simple database record without model', function () {
     $user = DB::table('users')->where('email', 'test@example.com')->first();
     expect($user)->not->toBeNull();
     expect($user?->name)->toBe('Test User');
->>>>>>> 6ed19256f (.)
 });

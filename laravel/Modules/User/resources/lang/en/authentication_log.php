@@ -13,68 +13,6 @@ return [
     'label' => 'Authentication Log',
     'plural_label' => 'Authentication Logs',
     'fields' => [
-<<<<<<< HEAD
-        'id' => [
-            'label' => 'ID',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'authenticatable_type' => [
-            'label' => 'Authenticatable Type',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'authenticatable.name' => [
-            'label' => 'User',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'ip_address' => [
-            'label' => 'IP Address',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'user_agent' => [
-            'label' => 'User Agent',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login_successful' => [
-            'label' => 'Success',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login_at' => [
-            'label' => 'Login Time',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'logout_at' => [
-            'label' => 'Logout Time',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'cleared_by_user' => [
-            'label' => 'Cleared by User',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'authenticatable_id' => [
-            'label' => 'Authenticatable ID',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-=======
         'id' => ['label' => 'ID'],
         'authenticatable_type' => ['label' => 'Authenticatable Type'],
         'authenticatable.name' => ['label' => 'User'],
@@ -85,7 +23,6 @@ return [
         'logout_at' => ['label' => 'Logout Time'],
         'cleared_by_user' => ['label' => 'Cleared by User'],
         'authenticatable_id' => ['label' => 'Authenticatable ID'],
->>>>>>> 6ed19256f (.)
     ],
     'actions' => [
         'view_user' => [

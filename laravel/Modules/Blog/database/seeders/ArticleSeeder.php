@@ -15,6 +15,7 @@ use Webmozart\Assert\Assert;
 
 class ArticleSeeder extends Seeder
 {
+    /** @var list<array{name: string, image: string}> */
     private array $categories = [
         ['name' => 'Animals', 'image' => 'https://picsum.photos/id/219/800/600'],
         ['name' => 'Mountains', 'image' => 'https://picsum.photos/id/353/800/600'],
@@ -54,6 +55,7 @@ class ArticleSeeder extends Seeder
     }
 
     /**
+     * @param array<string, mixed> $data
      * @return Collection<int, Article>
      */
     private function createArticle(array $data = []): Collection

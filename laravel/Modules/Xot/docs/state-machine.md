@@ -1,12 +1,13 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: state-machine
-canonical: ../../../Themes/docs/shared-components/state-machine-1.md
+title: "Regole Generali sulle State Machine"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Regole Generali sulle State Machine"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/state-machine-1.md
-=======
 # Regole Generali sulle State Machine
 
 ## Transizioni
@@ -21,4 +22,3 @@ See canonical documentation: ../../../Themes/docs/shared-components/state-machin
 - [../../saluteora/docs/state-machine.md](../../saluteora/docs/state-machine.md)
 - [../../.windsurf/rules/filament-state-transitions.mdc](../../.windsurf/rules/filament-state-transitions.mdc)
 - [../../.cursor/rules/filament-state-transitions.mdc](../../.cursor/rules/filament-state-transitions.mdc)
->>>>>>> 6ed19256f (.)

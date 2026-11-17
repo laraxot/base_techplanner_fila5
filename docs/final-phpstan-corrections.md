@@ -118,8 +118,8 @@ $errorMessages->push($errorMessage);
 
 ## Collegamenti
 
-- [Final PHPStan Fixes](./final-phpstan-fixes-2025-01-06.md)
-- [Module Analysis Report](./module-analysis-report-2025-01-06.md)
+- [Final PHPStan Fixes](./final-phpstan-fixes.md)
+- [Module Analysis Report](./module-analysis-report.md)
 - [Complete Analysis Summary](./complete-analysis-summary.md)
 
 

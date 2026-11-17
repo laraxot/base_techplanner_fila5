@@ -1,3 +1,10 @@
+---
+title: "custom firm fields"
+qmd: "ui custom firm fields md"
+type: note
+tags: [documentation]
+---
+
 https://github.com/tanthammar/filament-extras
 
 

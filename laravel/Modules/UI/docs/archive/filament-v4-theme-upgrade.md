@@ -1,3 +1,10 @@
+---
+title: "Filament v4 Theme Upgrade Guide - Modulo UI"
+qmd: "ui archive filament v4 theme upgrade md"
+type: note
+tags: [documentation]
+---
+
 # Filament v4 Theme Upgrade Guide - Modulo UI
 **Modulo**: UI (Theme Components)
 **Versione**: 4.0

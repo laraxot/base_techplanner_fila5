@@ -1,45 +1,45 @@
 <?php
 
 declare(strict_types=1);
-
-uses(\Modules\Activity\Tests\TestCase::class);
-
 use Modules\Activity\Models\BaseModel;
 use Modules\Activity\Models\Snapshot;
 use Modules\Activity\Models\StoredEvent;
+use Modules\Activity\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
-test('Snapshot model can be instantiated', function () {
+uses(TestCase::class);
+
+test('Snapshot model can be instantiated', function (): void {
     $snapshot = new Snapshot;
-
-    expect($snapshot)->toBeInstanceOf(Snapshot::class);
+    Assert::assertSame('snapshots', $snapshot->getTable());
 });
 
-test('StoredEvent model can be instantiated', function () {
-    $storedEvent = new StoredEvent;
+test('BaseModel model can be instantiated', function (): void {
+    $baseModel = new class() extends BaseModel
+    {
+        protected $table = 'activity_base_models';
+    };
 
-    expect($storedEvent)->toBeInstanceOf(StoredEvent::class);
+    Assert::assertSame('activity_base_models', $baseModel->getTable());
 });
 
-test('BaseModel model can be instantiated', function () {
-    $baseModel = new BaseModel;
+test('Snapshot model has correct connection', function (): void {
+    $snapshot = new Snapshot();
 
-    expect($baseModel)->toBeInstanceOf(BaseModel::class);
+    Assert::assertIsString($snapshot->getConnectionName());
 });
 
-test('Snapshot model has correct connection', function () {
-    $snapshot = new Snapshot;
+test('StoredEvent model has correct connection', function (): void {
+    $storedEvent = new StoredEvent();
 
-    expect($snapshot->getConnectionName())->toBeString();
+    Assert::assertIsString($storedEvent->getConnectionName());
 });
 
-test('StoredEvent model has correct connection', function () {
-    $storedEvent = new StoredEvent;
+test('BaseModel model has correct connection', function (): void {
+    $baseModel = new class() extends BaseModel
+    {
+        protected $table = 'activity_base_models';
+    };
 
-    expect($storedEvent->getConnectionName())->toBeString();
-});
-
-test('BaseModel model has correct connection', function () {
-    $baseModel = new BaseModel;
-
-    expect($baseModel->getConnectionName())->toBeString();
+    Assert::assertIsString($baseModel->getConnectionName());
 });

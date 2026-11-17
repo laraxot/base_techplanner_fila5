@@ -28,6 +28,7 @@ class Profile extends Page implements HasForms
     public string $tpl = 'v1';
 
     // public string $user_id;
+    /** @var array<string, mixed> */
     public array $data = [];
 
     public BlogProfile $model;
@@ -81,6 +82,9 @@ class Profile extends Page implements HasForms
         return view((string) $view, $view_params);
     }
 
+    /**
+     * @param array<string, mixed> $params
+     */
     public function url(string $name, array $params): string
     {
         return '#';
@@ -130,6 +134,9 @@ class Profile extends Page implements HasForms
         // }
     }
 
+    /**
+     * @return array<int|string, mixed>
+     */
     protected function getFormActions(): array
     {
         return [

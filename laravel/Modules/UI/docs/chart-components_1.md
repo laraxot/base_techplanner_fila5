@@ -1,3 +1,10 @@
+---
+title: "Componenti Chart"
+qmd: "ui chart components 1 md"
+type: note
+tags: [documentation]
+---
+
 # Componenti Chart
 
 ## Introduzione

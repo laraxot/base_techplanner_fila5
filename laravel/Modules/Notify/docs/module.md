@@ -1,12 +1,24 @@
+---
+title: "module"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "module"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notify Module - Comprehensive Analysis
 
 ## Module Overview
-**Module Name**: Notify  
-**Type**: Notification & Communication Module  
-**Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
-**Notification Channels**: Email, SMS, Database, Push  
-**Language**: Multi-language (IT/EN/DE)  
+**Module Name**: Notify
+**Type**: Notification & Communication Module
+**Status**: ✅ Active
+**Framework**: Laravel 12.x + Filament 4.x
+**Notification Channels**: Email, SMS, Database, Push
+**Language**: Multi-language (IT/EN/DE)
 
 ## Purpose
 The Notify module provides comprehensive notification and communication functionality:
@@ -56,7 +68,7 @@ The Notify module provides comprehensive notification and communication function
 
 ## Integration with Other Modules
 - **User**: Communication with system users
-- **Quaeris**: Survey participant notifications
+- **<nome progetto>**: Survey participant notifications
 - **Limesurvey**: Survey response notifications
 - **Xot**: Base notification infrastructure
 - **Filament**: Management interface

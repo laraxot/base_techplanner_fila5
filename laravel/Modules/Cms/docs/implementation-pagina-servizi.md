@@ -1,3 +1,14 @@
+---
+title: "implementation pagina servizi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementation pagina servizi"
+issues: []
+discussions: []
+---
+
 # Implementazione Pagina Servizi - <main module>
 
 *Documentazione completa dell'implementazione della pagina servizi seguendo la filosofia e architettura <main module>*
@@ -166,19 +177,6 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ### Strategici
 - [Strategia Contenuti CMS](pages-content-strategy.md)
-- [Componenti Servizi](../../Themes/One/docs/components/services-blocks.md)
-- [Content Strategy Frontend](../../../docs/frontend/content-strategy.md)
-
-### Tecnici
-- [Blocks Architecture](blocks.md)
-- [Component System](../../Themes/One/docs/components.md)
-- [Content Management](content-management.md)
-
-### Filosofici
-- [Architettura Sistema](../../../docs/architettura_sistema.md)
-- [Rules](../../../docs/rules.md)
-- [README Principale](../../../docs/README.md)
-<<<<<<< HEAD
 - [Componenti Servizi](../../themes/one/docs/components/services-blocks.md)
 - [Content Strategy Frontend](../../../../docs/frontend/content-strategy.md)
 
@@ -190,9 +188,7 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 ### Filosofici
 - [Architettura Sistema](../../../../docs/architettura_sistema.md)
 - [Rules](../../../../docs/rules.md)
-- [README Principale](../../../../docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [README Principale](../../../../docs/README.md)
 
 ## ✅ Checklist Completamento
 
@@ -267,13 +263,17 @@ L'implementazione riflette una comprensione profonda delle implicazioni:
 
 ---
 
+title: "implementation pagina servizi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "implementation pagina servizi"
+issues: []
+discussions: []
 **Data Implementazione**: 15 Gennaio 2025
 **Versione Documentazione**: 1.0.0
 **Maintainer**: Team <main module>
 **Review**: Approvazione stakeholder medici, tecnici, UX
 
-<<<<<<< HEAD
 *Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
-=======
-*Implementazione completata seguendo rigorosamente la filosofia <main module>: democratizzazione dell'accesso alla <slogan> attraverso tecnologia umana, competente e inclusiva.*
->>>>>>> 6ed19256f (.)

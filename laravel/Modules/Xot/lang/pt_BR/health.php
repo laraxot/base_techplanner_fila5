@@ -8,18 +8,11 @@ return [
             'buttons' => [
                 'refresh' => 'Recarregar',
             ],
-<<<<<<< HEAD
             'heading' => 'Saúde da aplicação',
-=======
-
-            'heading' => 'Saúde da aplicação',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Configurações',
                 'label' => 'Saúde da aplicação',
             ],
-<<<<<<< HEAD
             'notifications' => [
                 'check_results' => 'Verificar resultados de',
             ],
@@ -34,16 +27,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
-
-            'notifications' => [
-                'check_results' => 'Ver resultados de verificação',
-            ],
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

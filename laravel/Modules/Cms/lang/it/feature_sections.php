@@ -5,41 +5,15 @@ declare(strict_types=1);
 return [
     'fields' => [
         'title' => [
-            'label' => 'title',
-            'placeholder' => 'title',
-            'helper_text' => 'title',
-            'description' => 'title',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'sections' => [
-            'label' => 'sections',
-            'placeholder' => 'sections',
-            'helper_text' => 'sections',
-            'description' => 'sections',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
-            'label' => 'description',
-            'placeholder' => 'description',
-            'helper_text' => 'description',
-            'description' => 'description',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'icon' => [
-            'label' => 'icon',
-            'placeholder' => 'icon',
-            'helper_text' => 'icon',
-            'description' => 'icon',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -52,7 +26,7 @@ return [
         ],
         'label' => 'Feature Sections',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'label' => 'Feature Sections',
     'plural_label' => 'Feature Sections (Plurale)',
@@ -65,8 +39,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Feature Sections',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

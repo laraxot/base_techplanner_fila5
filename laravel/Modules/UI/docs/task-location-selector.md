@@ -1,3 +1,10 @@
+---
+title: "Task: Migliorare LocationSelector Type Safety - UI"
+qmd: "ui task location selector md"
+type: note
+tags: [documentation]
+---
+
 # Task: Migliorare LocationSelector Type Safety - UI
 
 **Modulo**: UI

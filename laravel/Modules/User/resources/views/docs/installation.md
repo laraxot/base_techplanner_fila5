@@ -1,5 +1,11 @@
 # Installazione del Tema One
 
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
+
 ## Requisiti
 
 - PHP 8.1+
@@ -18,11 +24,7 @@ Aggiungi il tema al tuo `composer.json`:
 {
     "require": {
         "<nome progetto>/theme-one": "^1.0"
-<<<<<<< HEAD
         "<nome progetto>/theme-one": "^1.0"
-=======
-        "saluteora/theme-one": "^1.0"
->>>>>>> 6ed19256f (.)
     }
 }
 ```
@@ -75,13 +77,19 @@ Compila gli assets con il comando seguente:
 npm run build
 ```
 
-### 8. Copia gli Assets Compilati
+### 8. Assets pubblici
 
-Copia gli assets compilati nella directory pubblica:
-
+<<<<<<< .merge_file_IYOSsE
+Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
+=======
+<<<<<<< .merge_file_jbmQWk
 ```bash
-npm run copy
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
+=======
+Nessuna copia: gli asset sono serviti tramite symlink da `public_html/` (`php artisan xot:theme-link`): `npm run copy` non serve più.
+>>>>>>> .merge_file_2zFDIQ
+>>>>>>> .merge_file_r9MKXG
 
 ## Configurazione
 
@@ -104,11 +112,7 @@ Personalizza la configurazione del tema in `config/theme.php`:
 return [
     'name' => 'One',
     'description' => 'Tema predefinito per ',
-<<<<<<< HEAD
     'description' => 'Tema predefinito per <nome progetto>',
-=======
-    'description' => 'Tema predefinito per SaluteOra',
->>>>>>> 6ed19256f (.)
     'version' => '1.0.0',
     // ...
 ];

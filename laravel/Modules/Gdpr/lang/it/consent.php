@@ -15,7 +15,6 @@ return [
         'icon' => 'gdpr-consent',
     ],
     'fields' => [
-<<<<<<< HEAD
         'user' => [
             'label' => 'Utente',
             'tooltip' => '',
@@ -53,38 +52,22 @@ return [
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
+            'label' => 'Colonne',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
+            'label' => 'Riordina',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
+            'label' => 'Azzera filtri',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'user' => 'Utente',
-        'type' => 'Tipo Consenso',
-        'status' => 'Stato',
-        'date' => 'Data',
-        'ip_address' => 'Indirizzo IP',
-        'notes' => 'Note',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'statuses' => [
@@ -98,10 +81,11 @@ return [
         'deny' => 'Nega',
         'withdraw' => 'Revoca',
         'renew' => 'Rinnova',
+        'logout' => [
+            'tooltip' => '',
+            'icon' => 'logout',
+        ],
     ],
-<<<<<<< HEAD
     'label' => 'Consent',
     'plural_label' => 'Consent (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

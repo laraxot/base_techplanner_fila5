@@ -1,7 +1,16 @@
-# Documentation Index
+---
+title: "Indice documentazione — Media"
+type: index
+status: active
+updated: 2026-11-16
+module: Media
+qmd: "indice docs modulo Media BMAD ECC purpose"
+---
 
-Modulo: Media
+# Indice — Media
 
-## File disponibili
-
-<!-- auto-generato: elencare i file .md presenti -->
+- [Purpose](./purpose.md)
+- [BMAD](./bmad/00-index.md)
+- [ECC](./ecc/00-index.md)
+- [Audit](./bmad/audit.md)
+- [Piano di miglioramento](./bmad/piano-miglioramento.md)

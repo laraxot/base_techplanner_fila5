@@ -1,3 +1,10 @@
+---
+title: "TableLayoutToggleTableAction"
+qmd: "ui actions table layout toggle md"
+type: note
+tags: [documentation]
+---
+
 # TableLayoutToggleTableAction
 
 ## Panoramica

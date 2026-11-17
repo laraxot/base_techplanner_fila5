@@ -3,6 +3,50 @@
 declare(strict_types=1);
 
 return [
+    'values' => [
+        1 => [
+            'label' => 'Lunedì',
+            'icon' => 'heroicon-o-calendar-days',
+            'color' => 'primary',
+            'description' => 'Primo giorno lavorativo della settimana',
+        ],
+        2 => [
+            'label' => 'Martedì',
+            'icon' => 'heroicon-o-calendar-days',
+            'color' => 'primary',
+            'description' => 'Secondo giorno della settimana',
+        ],
+        3 => [
+            'label' => 'Mercoledì',
+            'icon' => 'heroicon-o-calendar-days',
+            'color' => 'primary',
+            'description' => 'Giorno centrale della settimana',
+        ],
+        4 => [
+            'label' => 'Giovedì',
+            'icon' => 'heroicon-o-calendar-days',
+            'color' => 'primary',
+            'description' => 'Quarto giorno della settimana',
+        ],
+        5 => [
+            'label' => 'Venerdì',
+            'icon' => 'heroicon-o-calendar-days',
+            'color' => 'primary',
+            'description' => 'Ultimo giorno lavorativo della settimana',
+        ],
+        6 => [
+            'label' => 'Sabato',
+            'icon' => 'heroicon-o-calendar-days',
+            'color' => 'warning',
+            'description' => 'Primo giorno del weekend',
+        ],
+        7 => [
+            'label' => 'Domenica',
+            'icon' => 'heroicon-o-calendar-days',
+            'color' => 'warning',
+            'description' => 'Giorno di riposo settimanale',
+        ],
+    ],
     'label' => 'Giorno della Settimana',
     'options' => [
         1 => 'Lunedì',
@@ -21,7 +65,7 @@ return [
             'name' => 'General',
             'description' => 'General Settings',
         ],
-        'label' => 'Day Of Week',
+        'label' => 'Giorno della Settimana',
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],

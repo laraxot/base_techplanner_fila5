@@ -31,7 +31,7 @@
         @if($href && !$clickable) <!-- If not clickable title but has href, show button/link at bottom -->
              <div class="mt-auto pt-4">
                 <a href="{{ $href }}" class="inline-flex items-center text-primary-600 font-semibold hover:text-primary-700 hover:underline">
-                    Approfondisci <span aria-hidden="true">&rarr;</span>
+                    {{ __('pub_theme::ui.actions.read_more.label') }} <span aria-hidden="true">&rarr;</span>
                 </a>
              </div>
         @endif

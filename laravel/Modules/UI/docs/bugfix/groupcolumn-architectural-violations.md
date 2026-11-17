@@ -1,3 +1,10 @@
+---
+title: "Bugfix: GroupColumn Architectural Violations"
+qmd: "ui bugfix groupcolumn architectural violations md"
+type: note
+tags: [documentation]
+---
+
 # Bugfix: GroupColumn Architectural Violations
 
 **Data Fix**: 11 Novembre 2025
@@ -313,12 +320,8 @@ Column (Filament - DO NOT REFERENCE)
 
 ## Riferimenti
 
-- [Laraxot Architectural Rules](../../architecture_rules.md)
-- [Never Use Label Rule](../never_use_label_rule.md)
+- [Laraxot Architectural Rules](../archive/architecture_rules.md)
+- [Never Use Label Rule](../archive/never_use_label_rule.md)
 - [XotBaseColumn](../../../../Xot/app/Filament/Tables/Columns/XotBaseColumn.php)
 - [Translation Pattern](../../translations/)
-<<<<<<< HEAD
 - [docs/blade-components.md](../../../../docs/blade-components.md)
-=======
-- [docs/blade-components.md](../../../docs/blade-components.md)
->>>>>>> 6ed19256f (.)

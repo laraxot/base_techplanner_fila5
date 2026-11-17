@@ -1,3 +1,10 @@
+---
+title: "Filament VSCode Extension"
+qmd: "ui archive filament vscode 1 md"
+type: note
+tags: [documentation]
+---
+
 # Filament VSCode Extension
 
 ## Panoramica

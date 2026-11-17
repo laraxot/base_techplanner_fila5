@@ -52,20 +52,20 @@ Pagine Resource estendevano direttamente classi Filament invece di XotBase.
 
 #### Soluzione
 
-- **`ViewLocation` (Geo)**: 
+- **`ViewLocation` (Geo)**:
   - Cambiato da `ViewRecord` a `XotBaseViewRecord`
   - Implementato metodo `getInfolistSchema()` richiesto
-- **`EditUser` (User)**: 
+- **`EditUser` (User)**:
   - Cambiato da `EditRecord` a `XotBaseEditRecord`
   - Aggiunto import corretto
-- **`CreateQuestionChart` (<nome progetto>)**: 
+- **`CreateQuestionChart` (<nome progetto>)**:
   - Cambiato da `CreateRecord` a `XotBaseCreateRecord`
 - **`EditQuestionChart` (<nome progetto>)**:
-- **`CreateQuestionChart` (Quaeris)**:
+- **`CreateQuestionChart` (<nome progetto>)**:
   - Cambiato da `CreateRecord` a `XotBaseCreateRecord`
-- **`EditQuestionChart` (Quaeris)**:
+- **`EditQuestionChart` (<nome progetto>)**:
   - Cambiato da `EditRecord` a `XotBaseEditRecord`
-- **`ViewPageContent` (Cms)**: 
+- **`ViewPageContent` (Cms)**:
   - Cambiato da `ViewRecord` a `XotBaseViewRecord`
   - Implementato metodo `getInfolistSchema()` richiesto
 
@@ -76,7 +76,7 @@ Query dinamiche su modelli non riconosciute correttamente da PHPStan.
 
 #### Soluzione
 
-- **`LocationSelector`**: 
+- **`LocationSelector`**:
   - Aggiunti type assertions per query builder dinamiche
   - Aggiunto controllo `is_array()` prima di usare risultati query
   - Aggiunto PHPDoc `@var \Illuminate\Database\Eloquent\Builder` per query builder
@@ -88,7 +88,7 @@ Chiamate a metodi privati con `static::` invece di `self::`.
 
 #### Soluzione
 
-- **`QuestionChartResource`**: 
+- **`QuestionChartResource`**:
   - Cambiato `static::` in `self::` per chiamate a metodi privati
   - Risolto errore `staticClassAccess.privateMethod`
 
@@ -207,7 +207,7 @@ class ViewLocation extends XotBaseViewRecord
 - `app/Filament/Forms/Components/LocationSelector.php`
 
 ### Modulo <nome progetto>
-### Modulo Quaeris
+### Modulo <nome progetto>
 - `app/Filament/Resources/QuestionChartResource.php`
 - `app/Filament/Resources/SurveyPdfResource/Resources/QuestionCharts/Pages/CreateQuestionChart.php`
 - `app/Filament/Resources/SurveyPdfResource/Resources/QuestionCharts/Pages/EditQuestionChart.php`

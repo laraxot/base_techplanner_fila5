@@ -13,22 +13,16 @@ return [
         'google_maps_api_key' => [
             'label' => 'Google Maps API Key',
             'helper' => 'Chiave API per l\'integrazione con Google Maps',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'debugbar_enabled' => [
             'label' => 'Debug Bar',
             'helper' => 'Abilita/Disabilita la barra di debug',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -39,9 +33,6 @@ return [
         'saved' => 'Impostazioni salvate con successo',
         'error' => 'Errore durante il salvataggio delle impostazioni',
     ],
-<<<<<<< HEAD
     'label' => 'Setting Page',
     'plural_label' => 'Setting Page (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

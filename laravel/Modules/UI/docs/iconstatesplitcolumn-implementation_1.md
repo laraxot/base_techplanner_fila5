@@ -1,3 +1,10 @@
+---
+title: "IconStateSplitColumn Implementation"
+qmd: "ui iconstatesplitcolumn implementation 1 md"
+type: note
+tags: [documentation]
+---
+
 # IconStateSplitColumn Implementation
 
 ## Overview

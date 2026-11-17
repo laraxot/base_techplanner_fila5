@@ -1,4 +1,10 @@
 ---
+<<<<<<< .merge_file_F8ElnB
+qmd: "INDEX"
+issues: []
+discussions: []
+=======
+>>>>>>> .merge_file_W4RF1g
 title: "concepts index — Gdpr"
 type: index
 tags: [concepts, Gdpr]

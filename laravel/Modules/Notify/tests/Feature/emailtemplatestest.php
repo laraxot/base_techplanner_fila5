@@ -3,9 +3,6 @@
 declare(strict_types=1);
 
 use Illuminate\Support\Facades\File;
-use Modules\Notify\Tests\TestCase;
-
-uses(TestCase::class);
 
 test('html template contains optional function', function (): void {
     // Percorso del file

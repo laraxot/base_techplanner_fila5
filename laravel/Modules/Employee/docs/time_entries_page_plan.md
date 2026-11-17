@@ -1,3 +1,9 @@
+---
+title: "Employee - TIME_ENTRIES_PAGE_PLAN"
+module: Employee
+bmad: true
+status: active
+---
 ## time entries page – implementation plan
 
 ### objectives
@@ -27,10 +33,4 @@
 2. Add page class and blade view (no hardcoded strings).
 3. Add translations (en/it).
 4. Run PHPStan level 10 and fix issues.
-<<<<<<< HEAD
 5. Update docs links from README to this plan and analysis.
-=======
-5. Update docs links from README to this plan and analysis.
-
-
->>>>>>> 6ed19256f (.)

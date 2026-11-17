@@ -13,24 +13,24 @@ class RatingTest extends TestCase
 {
     public function testCanCreateRating(): void
     {
-        $rating = Rating::create([
-            'name' => 'Test Rating',
+        $rating = Rating::query()->create([
+            'title' => 'Test Rating',
             'color' => '#FF0000',
         ]);
 
         $this->assertDatabaseHas('ratings', [
             'id' => $rating->id,
-            'name' => 'Test Rating',
+            'title' => 'Test Rating',
         ]);
     }
 
     public function testCanCreateRatingMorph(): void
     {
-        $rating = Rating::create([
-            'name' => 'Test Rating',
+        $rating = Rating::query()->create([
+            'title' => 'Test Rating',
         ]);
 
-        $ratingMorph = RatingMorph::create([
+        $ratingMorph = RatingMorph::query()->create([
             'rating_id' => $rating->id,
             'model_type' => 'test_model',
             'model_id' => 1,
@@ -51,7 +51,7 @@ class RatingTest extends TestCase
         $locale = SupportedLocale::IT;
 
         $this->assertEquals('it', $locale->value);
-        $this->assertEquals('Italiano', $locale->label());
+        $this->assertEquals('Italiano', $locale->getLabel());
 
         $localeFromString = SupportedLocale::fromString('en');
         $this->assertEquals(SupportedLocale::EN, $localeFromString);

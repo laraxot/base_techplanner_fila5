@@ -1,3 +1,11 @@
+---
+title: "Teams Migration - Laraxot Compliance Fix"
+type: note
+status: draft
+updated: 2026-10-07
+tags: [docs, user]
+qmd: "teams migration - laraxot compliance fix user"
+---
 # Teams Migration - Laraxot Compliance Fix
 
 ## Data
@@ -5,11 +13,7 @@
 
 ## Problema Segnalato dall'Utente
 
-<<<<<<< HEAD
 > "Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php non rispetta la politica, filosofia, religione laraxot !!"
-=======
-> "/var/www/_bases/base_laravelpizza/laravel/Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php non rispetta la politica, filosofia, religione laraxot !!"
->>>>>>> 6ed19256f (.)
 
 ## File Coinvolti
 
@@ -219,11 +223,7 @@ Le violazioni delle convenzioni laraxot rendono:
 
 ## Problema Segnalato dall'Utente
 
-<<<<<<< HEAD
 > "Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php non rispetta la politica, filosofia, religione laraxot !!"
-=======
-> "/var/www/_bases/base_laravelpizza/laravel/Modules/User/database/migrations/2025_05_16_221811_add_owner_id_to_teams_table.php non rispetta la politica, filosofia, religione laraxot !!"
->>>>>>> 6ed19256f (.)
 
 ## File Coinvolti
 

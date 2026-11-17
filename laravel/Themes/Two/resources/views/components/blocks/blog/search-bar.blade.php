@@ -1,7 +1,7 @@
 @props([
     'title' => '',
     'subtitle' => '',
-    'placeholder' => 'Cerca articoli...',
+    'placeholder' => __('pub_theme::block_defaults.blog_search.field.placeholder'),
     'show_advanced' => false,
     'show_suggestions' => false,
 ])
@@ -17,6 +17,7 @@
                     </svg>
                     <input
                         type="text"
+                        aria-label="{{ $placeholder }}"
                         placeholder="{{ $placeholder }}"
                         class="w-full pl-12 pr-4 py-3 rounded-lg border border-gray-200 bg-gray-50 text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1E5A96]/30 focus:border-[#1E5A96] transition-all"
                     >

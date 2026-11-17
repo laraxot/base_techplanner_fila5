@@ -1,3 +1,10 @@
+---
+title: "effetcts"
+qmd: "ui integration effetcts md"
+type: note
+tags: [documentation]
+---
+
 # effetcts
 
 <!-- Contenuto migrato da _docs/effetcts.txt -->

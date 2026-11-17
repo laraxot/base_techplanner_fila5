@@ -7,11 +7,10 @@ return [
         'name' => 'Interfaccia',
         'plural' => 'Interfacce',
         'group' => 'Sistema',
-        'label' => 'ui',
+        'label' => 'Interfaccia',
         'sort' => 70,
         'icon' => 'heroicon-o-squares-2x2',
     ],
-<<<<<<< HEAD
     'label' => 'Ui',
     'plural_label' => 'Ui (Plurale)',
     'fields' => [
@@ -45,6 +44,4 @@ return [
             'label' => 'Elimina Ui',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

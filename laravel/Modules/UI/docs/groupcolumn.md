@@ -1,3 +1,10 @@
+---
+title: "GroupColumn Documentation"
+qmd: "ui groupcolumn md"
+type: note
+tags: [documentation]
+---
+
 # GroupColumn Documentation
 
 ## Overview

@@ -1,3 +1,23 @@
+---
+title: "LoginWidget Form Data Binding Fix"
+type: concept
+tags: [login, widget, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "login-widget-fix loginwidget form data binding fix"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # LoginWidget Form Data Binding Fix
 
 ## Problema
@@ -41,15 +61,9 @@ public function mount(): void
 
 Per `LoginWidget`, che non ha un modello associato (`getFormModel()` restituisce `null`), `getFormFill()` restituisce un array vuoto `[]`, che è il comportamento corretto per un form vuoto.
 
-### 2. Schema con chiavi stringa
-
-Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament):
-<<<<<<< HEAD
 ### 2. Schema con chiavi stringa e NO label/placeholder
 
 Corretto lo schema per usare array associativo con chiavi stringa (conforme alle regole Filament). **MAI usare `->label()`, `->placeholder()` o `->helperText()`**: il LangServiceProvider risolve automaticamente da `user::login_widget.fields.*` (file `lang/it/login_widget.php`).
-=======
->>>>>>> 6ed19256f (.)
 
 ```php
 #[\Override]
@@ -150,10 +164,6 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 ## Riferimenti
 
 - [XotBaseWidget Documentation](../../Xot/docs/README.md)
-<<<<<<< HEAD
-- [XotBaseWidget Documentation](../../xot/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Filament Form State Management](https://filamentphp.com/docs/3.x/forms/fields#state-management)
 - [RegisterWidget Implementation](../app/Filament/Widgets/Auth/RegisterWidget.php) - Esempio corretto
 
@@ -174,9 +184,3 @@ Tutti i widget Filament che estendono `XotBaseWidget` e usano `statePath('data')
 - [x] Documentazione aggiornata
 
 ---
-
-<<<<<<< HEAD
-*Ultimo aggiornamento: Dicembre 2024*
-=======
-*Ultimo aggiornamento: Dicembre 2024*
->>>>>>> 6ed19256f (.)

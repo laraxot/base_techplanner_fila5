@@ -1,0 +1,72 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'article' => [
+        'read_more' => 'Leggi tutto',
+        'comments_count' => ':count commenti',
+        'share_on' => 'Condividi su :network',
+    ],
+    'filters' => [
+        'all' => 'Tutti',
+        'latest' => 'Più Recenti',
+        'popular' => 'Più Popolari',
+        'featured' => 'In Evidenza',
+    ],
+    'categories' => [
+        'all' => 'Tutti gli Articoli',
+        'all_categories' => 'Tutte le categorie',
+        'radioprotezione' => 'Radioprotezione',
+        'normativa' => 'Normativa',
+        'elettromedicali' => 'Elettromedicali',
+        'veterinaria' => 'Veterinaria',
+        'guide_pratiche' => 'Guide Pratiche',
+        'novita' => 'Novità',
+    ],
+    'category_filter' => [
+        'articles_found' => ':count articoli trovati in questa categoria.',
+    ],
+    'tags' => [
+        'articles_count' => ':count articoli',
+    ],
+    'pagination' => [
+        'aria_label' => 'Navigazione articoli',
+        'pages_aria_label' => 'Paginazione',
+        'first_page' => 'Prima pagina',
+        'previous_page' => 'Pagina precedente',
+        'next_page' => 'Pagina successiva',
+        'last_page' => 'Ultima pagina',
+        'showing_results' => 'Mostrando :from a :to di :total risultati',
+        'articles_range' => 'Articoli da :from a :to di :total',
+        'previous' => 'Precedente',
+        'next' => 'Successivo',
+        'go_to_page' => 'Vai alla pagina:',
+        'go' => 'Vai',
+        'of_pages' => 'di :total',
+    ],
+    'search' => [
+        'placeholder' => 'Cerca articoli...',
+        'no_results' => 'Nessun articolo trovato per ":query"',
+        'no_results_hint' => 'Prova con altri termini di ricerca',
+        'view_all' => 'Vedi tutti i risultati per ":query"',
+        'advanced' => 'Ricerca avanzata',
+        'results_count' => ':count risultati',
+        'searching' => 'Ricerca in corso...',
+        'filters_title' => 'Filtri di ricerca avanzata',
+        'category' => 'Categoria',
+        'period' => 'Periodo',
+        'any_period' => 'Qualsiasi periodo',
+        'today' => 'Oggi',
+        'last_week' => 'Ultima settimana',
+        'last_month' => 'Ultimo mese',
+        'last_year' => 'Ultimo anno',
+        'sort_by' => 'Ordina per',
+        'relevance' => 'Rilevanza',
+        'date_desc' => 'Data (più recente)',
+        'date_asc' => 'Data (più vecchio)',
+        'title_asc' => 'Titolo (A-Z)',
+        'reset_filters' => 'Resetta filtri',
+        'apply_filters' => 'Applica filtri',
+    ],
+];

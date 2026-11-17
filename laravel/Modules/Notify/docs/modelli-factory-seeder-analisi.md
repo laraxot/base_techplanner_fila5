@@ -1,3 +1,15 @@
+---
+title: "modelli factory seeder analisi"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "modelli factory seeder analisi"
+issues: []
+discussions: []
+status: draft
+---
+
 # Analisi Modelli, Factory e Seeder - Modulo Notify
 
 ## Panoramica
@@ -263,12 +275,6 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
 - [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
 - [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
-<<<<<<< HEAD
-- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
-- [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
-- [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
-=======
->>>>>>> 6ed19256f (.)
 
 ### Servizi Esterni
 - [Mailgun](https://www.mailgun.com/) - Email delivery service
@@ -277,10 +283,6 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Firebase](https://firebase.google.com/) - Push notifications
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
-*Ultimo aggiornamento: Gennaio 2025*
-=======
->>>>>>> 6ed19256f (.)
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
 *Sistema notifiche multi-canale completo*
 # Analisi Modelli, Factory e Seeder - Modulo Notify
@@ -496,11 +498,7 @@ Tutti i modelli attivi hanno le factory corrispondenti.
 ### Integrazione Business Logic
 
 #### <nome progetto> Integration
-<<<<<<< HEAD
 #### <nome progetto> Integration
-=======
-#### SaluteOra Integration
->>>>>>> 6ed19256f (.)
 - **Appointment Reminders**: Promemoria appuntamenti
 - **Report Notifications**: Notifiche nuovi referti
 - **Emergency Alerts**: Allerte mediche urgenti
@@ -550,14 +548,7 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 
 ### Moduli Collegati
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
-<<<<<<< HEAD
 - [<nome progetto> Module](../../<nome progetto>/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
-- [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
-- [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
-- [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
-=======
-- [SaluteOra Module](../../SaluteOra/docs/modelli_factory_seeder_analisi.md) - Notifiche mediche
->>>>>>> 6ed19256f (.)
 - [User Module](../../User/docs/modelli_factory_seeder_analisi.md) - Notifiche utente
 - [Media Module](../../Media/docs/modelli_factory_seeder_analisi.md) - Allegati notifiche
 - [Lang Module](../../Lang/docs/modelli_factory_seeder_analisi.md) - Localizzazione
@@ -569,11 +560,5 @@ Tutti i file factory devono essere validati con PHPStan livello 9:
 - [Firebase](https://firebase.google.com/) - Push notifications
 
 *Ultimo aggiornamento: Gennaio 2025*
-<<<<<<< HEAD
-*Ultimo aggiornamento: Gennaio 2025*
 *Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
 *Sistema notifiche multi-canale completo*
-=======
-*Analisi completa di 10 modelli attivi, 4 file backup da rimuovere*
-*Sistema notifiche multi-canale completo*
->>>>>>> 6ed19256f (.)

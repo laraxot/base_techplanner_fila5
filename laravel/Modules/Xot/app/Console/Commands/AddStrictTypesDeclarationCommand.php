@@ -4,17 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Console\Commands;
 
-<<<<<<< HEAD
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\File;
 use Modules\Xot\Actions\File\AddStrictTypesDeclarationAction;
-=======
-use Exception;
-use Illuminate\Console\Command;
-use Illuminate\Support\Facades\File;
-use Modules\Xot\Actions\File\AddStrictTypesDeclarationAction;
-use SplFileInfo;
->>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
 
 class AddStrictTypesDeclarationCommand extends Command
@@ -56,18 +48,7 @@ class AddStrictTypesDeclarationCommand extends Command
         $count = 0;
 
         foreach ($files as $file) {
-<<<<<<< HEAD
             Assert::isInstanceOf($file, \SplFileInfo::class);
-            if ($this->shouldProcessFile($file)) {
-                if ($dryRun) {
-                    $fileName = $file->getRealPath();
-                    if (false === $fileName) {
-                        $fileName = $file->getPathname();
-                    }
-                    $this->info("Verrebbe processato: {$fileName}");
-                    ++$count;
-=======
-            Assert::isInstanceOf($file, SplFileInfo::class);
             if ($this->shouldProcessFile($file)) {
                 if ($dryRun) {
                     $fileName = $file->getRealPath();
@@ -76,33 +57,20 @@ class AddStrictTypesDeclarationCommand extends Command
                     }
                     $this->info("Verrebbe processato: {$fileName}");
                     $count++;
->>>>>>> 6ed19256f (.)
 
                     continue;
                 }
 
                 $path = $file->getRealPath();
-<<<<<<< HEAD
-                if (false === $path) {
-=======
                 if ($path === false) {
->>>>>>> 6ed19256f (.)
                     continue;
                 }
-
-                // PHPStan hint: at this point $path is definitely a string
-                assert(is_string($path));
 
                 try {
                     $action->execute($path);
                     $this->info("Aggiunta dichiarazione strict_types a: {$path}");
-<<<<<<< HEAD
-                    ++$count;
-                } catch (\Exception $e) {
-=======
                     $count++;
-                } catch (Exception $e) {
->>>>>>> 6ed19256f (.)
+                } catch (\Exception $e) {
                     $this->error("Errore nel processare {$path}: ".$e->getMessage());
                 }
             }
@@ -115,22 +83,14 @@ class AddStrictTypesDeclarationCommand extends Command
     }
 
     /**
-<<<<<<< HEAD
      * @return array<\SplFileInfo>
-=======
-     * @return array<SplFileInfo>
->>>>>>> 6ed19256f (.)
      */
     private function findPhpFiles(string $path): array
     {
         return File::allFiles($path);
     }
 
-<<<<<<< HEAD
     private function shouldProcessFile(\SplFileInfo $file): bool
-=======
-    private function shouldProcessFile(SplFileInfo $file): bool
->>>>>>> 6ed19256f (.)
     {
         // Verifica l'estensione
         if (! str_ends_with($file->getFilename(), '.php')) {
@@ -138,11 +98,7 @@ class AddStrictTypesDeclarationCommand extends Command
         }
 
         $path = $file->getRealPath();
-<<<<<<< HEAD
-        if (false === $path) {
-=======
         if ($path === false) {
->>>>>>> 6ed19256f (.)
             return false;
         }
 

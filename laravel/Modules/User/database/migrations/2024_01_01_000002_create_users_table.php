@@ -10,11 +10,6 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  * Class CreateLiveuserUsersTable.
  */
 return new class extends XotBaseMigration {
-<<<<<<< HEAD
-    protected $connection = 'user';
-
-=======
->>>>>>> 6ed19256f (.)
     /**
      * Run the migrations.
      */
@@ -24,11 +19,7 @@ return new class extends XotBaseMigration {
         $this->tableCreate(static function (Blueprint $table): void {
             // $table->uuid('id')->primary();
             $table->string('id', 36)->primary();
-<<<<<<< HEAD
             $table->string('name')->nullable();
-=======
-            $table->string('name');
->>>>>>> 6ed19256f (.)
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('email')->unique();
@@ -40,15 +31,12 @@ return new class extends XotBaseMigration {
             $table->rememberToken();
             $table->foreignId('current_team_id')->nullable();
             $table->string('profile_photo_path', 2048)->nullable();
-<<<<<<< HEAD
             $table->string('lang', 3)->nullable();
             $table->string('type')->index()->nullable();
             $table->string('state')->index()->nullable();
             $table->boolean('is_active')->default(true);
             $table->boolean('is_otp')->default(false);
             $table->timestamp('password_expires_at')->nullable();
-=======
->>>>>>> 6ed19256f (.)
             $table->softDeletes();
         });
         // -- UPDATE --
@@ -81,13 +69,10 @@ return new class extends XotBaseMigration {
                 $table->string('type')->index()->nullable();
             }
 
-<<<<<<< HEAD
             if (! $this->hasColumn('state')) {
                 $table->string('state')->index()->nullable();
             }
 
-=======
->>>>>>> 6ed19256f (.)
             if (! $this->hasColumn('is_active')) {
                 $table->boolean('is_active')->default(true);
             }

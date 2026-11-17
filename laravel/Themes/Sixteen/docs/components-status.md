@@ -1,3 +1,15 @@
+---
+title: "components status"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "components status"
+issues: []
+discussions: []
+status: draft
+---
+
 # 📊 Stato Componenti Bootstrap Italia - Tema Sixteen
 
 ## 🎯 Panoramica Implementazione
@@ -280,11 +292,6 @@ The `tailwind.config.js` file includes:
 - [Form Components](components/form-components.md)
 
 ---
-
-<<<<<<< HEAD
-=======
-**Last Updated**: September 8, 2025  
->>>>>>> 6ed19256f (.)
 **Document Version**: 2.0.0  
 **Status**: Active Development  
 **Maintained by**: Sixteen Team

@@ -47,10 +47,4 @@ return [
         'no_show' => 'Non presentato',
         'rescheduled' => 'Riprogrammato',
     ],
-<<<<<<< HEAD
 ];
-
-
-=======
-];
->>>>>>> 6ed19256f (.)

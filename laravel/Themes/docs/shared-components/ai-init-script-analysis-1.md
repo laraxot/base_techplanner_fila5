@@ -2,11 +2,11 @@
 
 ## Situazione Attuale
 
-Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_quaeris_fila4_mono/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
+Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_<nome progetto>_fila4_mono/bashscripts/ai/ai_init.sh`, ho scoperto quanto segue:
 
 ### Cartelle Presenti in bashscripts/ai/
 - `.ai` - esiste
-- `.cursor` - esiste  
+- `.cursor` - esiste
 - `.claude` - esiste
 - `.gemini` - esiste
 - `.windsurf` - esiste
@@ -15,7 +15,7 @@ Dopo aver analizzato il funzionamento dello script `/var/www/_bases/base_quaeris
 ### Collegamenti Simbolici Nella Root del Progetto
 - `.ai` - ✅ Collegamento simbolico presente e corretto
 - `.cursor` - ❌ Cartella reale esistente, non collegamento simbolico
-- `.claude` - ❌ Cartella reale esistente, non collegamento simbolico  
+- `.claude` - ❌ Cartella reale esistente, non collegamento simbolico
 - `.gemini` - ✅ Collegamento simbolico presente e corretto (creato manualmente in precedenza)
 - `.windsurf` - ❌ Cartella reale esistente, non collegamento simbolico
 

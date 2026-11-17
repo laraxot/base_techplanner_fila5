@@ -6,9 +6,7 @@ return [
     'title' => 'Attachments',
     'label' => 'Upload attachment',
     'fields' => [
-<<<<<<< HEAD
         'file' => [
-            'label' => 'file',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -33,19 +31,11 @@ return [
         ],
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
+        'label' => 'Upload attachment',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-=======
-        'file' => 'file',
-        'file_hint' => '',
-        'name' => 'Name',
-        'name_hint' => 'file name',
->>>>>>> 6ed19256f (.)
-    ],
 ];

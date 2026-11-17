@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -54,26 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'job_id' => [
-            'label' => 'Auftrags-ID',
-        ],
-        'importable_type' => [
-            'label' => 'Importierbarer Typ',
-        ],
-        'file_path' => [
-            'label' => 'Dateipfad',
-        ],
-        'status' => [
-            'label' => 'Status',
-        ],
-        'created_at' => [
-            'label' => 'Erstellt Am',
-        ],
-        'completed_at' => [
-            'label' => 'Abgeschlossen Am',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

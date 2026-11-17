@@ -1,3 +1,10 @@
+---
+title: "megamenu"
+qmd: "ui integration megamenu md"
+type: note
+tags: [documentation]
+---
+
 # megamenu
 
 <!-- Contenuto migrato da _docs/megamenu.txt -->

@@ -1,10 +1,14 @@
+---
+title: "Activity Module - PHPStan Testing Progress"
+qmd: "activity testing phpstan progress md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - PHPStan Testing Progress
 
 **Date**: 2025-12-15
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Objective**: Fix PHPStan errors in test files
 
 ---
@@ -97,8 +101,4 @@ parameters:
 **Philosophy Reminder**:
 > "The site works. If tests fail, the tests are wrong, not the code."
 
-<<<<<<< HEAD
 🤖 Generated with [Claude Code](https://claude.com/claude-code)
-=======
-🤖 Generated with [Claude Code](https://claude.com/claude-code)
->>>>>>> 6ed19256f (.)

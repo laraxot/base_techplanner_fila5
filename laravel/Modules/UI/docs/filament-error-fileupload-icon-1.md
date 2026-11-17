@@ -1,3 +1,10 @@
+---
+title: "Errore: Metodo `icon()` su FileUpload di Filament"
+qmd: "ui filament error fileupload icon 1 md"
+type: note
+tags: [documentation]
+---
+
 # Errore: Metodo `icon()` su FileUpload di Filament
 
 ## Descrizione

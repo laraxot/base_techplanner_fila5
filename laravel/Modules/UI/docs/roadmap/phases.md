@@ -1,3 +1,10 @@
+---
+title: "Fasi di sviluppo - UI Module"
+qmd: "ui roadmap phases md"
+type: note
+tags: [documentation]
+---
+
 # Fasi di sviluppo - UI Module
 
 ## Fase 1: Modernization (In Progress)

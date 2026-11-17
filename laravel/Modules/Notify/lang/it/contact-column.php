@@ -2,21 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-/**
- * Traduzioni per ContactColumn - Colonna Filament per contatti
- *
- * File di traduzione per la colonna riutilizzabile ContactColumn
- * che utilizza ContactTypeEnum per il rendering centralizzato.
- *
- * @author Laraxot Team
- *
- * @version 1.0
- *
- * @since 2025-08-01
- */
->>>>>>> 6ed19256f (.)
 return [
     'label' => 'Contatti',
     'no_contacts' => 'Nessun contatto disponibile',
@@ -26,57 +11,41 @@ return [
         'email' => 'Clicca per inviare email',
         'pec' => 'Clicca per inviare PEC',
         'whatsapp' => 'Clicca per aprire WhatsApp',
-        'fax' => 'Numero fax',
-    ],
+        'fax' => 'Numero fax'],
     'aria_labels' => [
         'contact_list' => 'Lista contatti',
         'contact_link' => 'Collegamento contatto',
-        'no_contacts' => 'Nessun contatto disponibile',
-    ],
-<<<<<<< HEAD
+        'no_contacts' => 'Nessun contatto disponibile'],
     'plural_label' => 'Contact Column (Plurale)',
     'navigation' => [
         'name' => 'Contact Column',
         'plural' => 'Contact Column',
         'group' => [
             'name' => 'General',
-            'description' => 'General Settings',
-        ],
+            'description' => 'General Settings'],
         'label' => 'Contact Column',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
-    ],
+        'icon' => 'heroicon-o-collection'],
     'fields' => [
         'id' => [
             'label' => 'Identificativo',
             'tooltip' => 'Identificativo univoco del record',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'created_at' => [
             'label' => 'Data Creazione',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
+            'description' => ''],
         'updated_at' => [
             'label' => 'Ultima Modifica',
             'tooltip' => '',
             'helper_text' => '',
-            'description' => '',
-        ],
-    ],
+            'description' => '']],
     'actions' => [
         'create' => [
-            'label' => 'Crea Contact Column',
-        ],
+            'label' => 'Crea Contact Column'],
         'edit' => [
-            'label' => 'Modifica Contact Column',
-        ],
+            'label' => 'Modifica Contact Column'],
         'delete' => [
-            'label' => 'Elimina Contact Column',
-        ],
-    ],
-=======
->>>>>>> 6ed19256f (.)
-];
+            'label' => 'Elimina Contact Column']]];

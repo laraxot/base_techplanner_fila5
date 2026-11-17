@@ -6,9 +6,11 @@ namespace Modules\Comment\Http\Livewire;
 
 use Illuminate\Contracts\Pagination\LengthAwarePaginator;
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Livewire\Attributes\Computed;
 use Livewire\Component;
@@ -65,7 +67,7 @@ class CommentsComponent extends Component
         $this->showNotificationOptions = ! $hideNotificationOptions;
         $this->showAvatars = $hideAvatars !== null ? ! $hideAvatars : CommentConfig::showAvatars();
 
-        $user = auth()->user();
+        $user = Auth::user();
         if ($user instanceof CanComment && $this->model instanceof Commentable) {
             $notificationType = $user->notificationSubscriptionType($this->model);
         $this->selectedNotificationSubscriptionType = $notificationType !== null
@@ -107,7 +109,7 @@ class CommentsComponent extends Component
             return;
         }
 
-        $currentUser = auth()->user();
+        $currentUser = Auth::user();
         if (! $currentUser instanceof CanComment) {
             return;
         }
@@ -123,6 +125,9 @@ class CommentsComponent extends Component
         $currentUser->subscribeToCommentNotifications($this->model, $type);
     }
 
+    /**
+     * @return LengthAwarePaginator<int, \Modules\Comment\Models\Comment>
+     */
     #[Computed]
     public function comments(): LengthAwarePaginator
     {
@@ -169,10 +174,12 @@ class CommentsComponent extends Component
 
     public function render(): View
     {
-        /** @var view-string $viewName */
+        /**
+         * @phpstan-var view-string
+         */
         $viewName = 'comment::livewire.comments';
 
-        return view($viewName, $this->getViewData());
+        return ViewFacade::make($viewName, $this->getViewData());
     }
 
     /**

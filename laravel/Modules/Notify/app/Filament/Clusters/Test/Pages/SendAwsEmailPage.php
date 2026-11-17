@@ -21,24 +21,19 @@ use Modules\Notify\Datas\EmailData;
 use Modules\Notify\Emails\EmailDataEmail;
 use Modules\Notify\Filament\Clusters\Test;
 use Modules\Xot\Filament\Pages\XotBasePage;
-use Override;
+use Modules\Xot\Filament\Traits\SuperAdminOnlyTrait;
 
 /**
-<<<<<<< HEAD
  * @property Schema $emailForm
-=======
- * @property \Filament\Schemas\Schema $emailForm
->>>>>>> 6ed19256f (.)
  */
 class SendAwsEmailPage extends XotBasePage
 {
+    use SuperAdminOnlyTrait;
+
+    /** @var array<string, mixed>|null */
     public ?array $emailData = [];
 
-<<<<<<< HEAD
     protected static string|\BackedEnum|null $navigationIcon = 'heroicon-o-envelope';
-=======
-    protected static string | \BackedEnum | null $navigationIcon = 'heroicon-o-envelope';
->>>>>>> 6ed19256f (.)
 
     protected string $view = 'notify::filament.pages.send-email';
 
@@ -62,8 +57,7 @@ class SendAwsEmailPage extends XotBasePage
     protected function getForms(): array
     {
         return [
-            'emailForm',
-        ];
+            'emailForm'];
     }
 
     protected function fillForms(): void
@@ -77,11 +71,7 @@ class SendAwsEmailPage extends XotBasePage
     }
 
     /**
-<<<<<<< HEAD
      * @return array<string, TextInput|RichEditor|Select|Toggle>
-=======
-     * @return array<string, \Filament\Forms\Components\TextInput|\Filament\Forms\Components\RichEditor|\Filament\Forms\Components\Select|\Filament\Forms\Components\Toggle>
->>>>>>> 6ed19256f (.)
      */
     public function getEmailFormSchema(): array
     {
@@ -107,20 +97,20 @@ class SendAwsEmailPage extends XotBasePage
                     'aws-default' => 'AWS Default',
                     'aws-notification' => 'AWS Notification',
                     'aws-receipt' => 'AWS Receipt',
-                    'aws-alert' => 'AWS Alert',
-                ])
+                    'aws-alert' => 'AWS Alert'])
                 ->default('aws-default')
                 ->required()
                 ->helperText(__('notify::email.form.template.helper')),
             'add_attachments' => Toggle::make('add_attachments')
                 ->label(__('notify::email.form.add_attachments.label'))
                 ->default(false)
-                ->helperText(__('notify::email.form.add_attachments.helper')),
-        ];
+                ->helperText(__('notify::email.form.add_attachments.helper'))];
     }
 
     public function sendEmail(): void
     {
+        abort_unless(static::canAccess(), 403);
+
         $data = $this->emailForm->getState();
 
         try {
@@ -150,14 +140,13 @@ class SendAwsEmailPage extends XotBasePage
         }
     }
 
+    /** @return array<string, Action> */
     protected function getEmailFormActions(): array
     {
         return [
-            Action::make('sendEmail')->label(__('notify::email.actions.send'))->submit('sendEmail'),
-        ];
+            'submit' => Action::make('sendEmail')->label(__('notify::email.actions.send'))->submit('sendEmail')];
     }
 
-    #[Override]
     protected function getUser(): Authenticatable&Model
     {
         $user = Filament::auth()->user();

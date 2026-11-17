@@ -8,7 +8,6 @@ return [
     'sent' => 'We hebben uw wachtwoord reset link ge-e-maild!',
     'token' => 'Dit wachtwoord reset token is ongeldig.',
     'user' => 'We kunnen geen gebruiker met dat e-mailadres vinden',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -18,10 +17,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

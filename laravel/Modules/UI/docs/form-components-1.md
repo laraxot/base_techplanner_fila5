@@ -1,3 +1,10 @@
+---
+title: "Componenti Form"
+qmd: "ui form components 1 md"
+type: note
+tags: [documentation]
+---
+
 # Componenti Form
 
 ## Introduzione

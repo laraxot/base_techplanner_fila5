@@ -74,6 +74,12 @@ Non sostituire il widget con un form HTML classico:
 - Vietato: `<form method="POST" action="{{ route('login') }}">` con @csrf e input email/password/remember.
 - Motivo: architettura unica (Filament widget), validazione e UX coerenti, registrazione Livewire necessaria.
 
+## Traduzioni del login
+
+I gruppi `user::auth.login.title`, `welcome_back` e `welcome_message` sono array di metadati, non stringhe. Nel Blade usare `user::auth.login.title.label`, `user::auth.login.welcome_back.text` e `user::auth.login.welcome_message.text`. Il sottotitolo usa `user::auth.login.subtitle.text`.
+
+Stampare direttamente uno di questi gruppi con `{{ __() }}` provoca `htmlspecialchars(): Argument #1 ($string) must be of type string, array given`. Verificare che i valori siano stringhe nei cataloghi `it`, `en`, `de`, `es` e controllare il rendering di `/{locale}/auth/login` per le lingue abilitate dal tenant.
+
 ## Collegamenti
 
 - [particles-component](particles-component.md)

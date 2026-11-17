@@ -19,34 +19,25 @@ return [
             'label' => 'Chiave',
             'placeholder' => 'Inserisci la chiave del lock',
             'help' => 'Chiave univoca identificativa del lock',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'owner' => [
             'label' => 'Proprietario',
             'placeholder' => 'Inserisci il proprietario del lock',
             'help' => 'Processo o utente proprietario del lock',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'expiration' => [
             'label' => 'Scadenza',
             'placeholder' => 'Seleziona la data e ora di scadenza',
             'help' => 'Momento in cui il lock scadrà automaticamente',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -58,43 +49,31 @@ return [
                 'pending' => 'In Attesa',
                 'error' => 'Errore',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Data Creazione',
             'help' => 'Data e ora di creazione del lock',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Ultimo Aggiornamento',
             'help' => 'Data e ora dell\'ultima modifica del lock',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'description' => [
             'label' => 'Descrizione',
             'placeholder' => 'Inserisci una descrizione',
             'help' => 'Descrizione opzionale del lock',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo Lock',
@@ -106,93 +85,54 @@ return [
                 'resource' => 'Risorsa',
                 'custom' => 'Personalizzato',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'create' => [
-            'label' => 'create',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'view' => [
-            'label' => 'view',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'delete' => [
-            'label' => 'delete',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'delete' => [
-            'label' => 'delete',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -260,9 +200,6 @@ return [
     'model' => [
         'label' => 'cache lock.model',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

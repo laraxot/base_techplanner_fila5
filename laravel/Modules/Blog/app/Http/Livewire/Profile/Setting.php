@@ -35,6 +35,7 @@ class Setting extends Component implements HasActions, HasForms
 
     public Profile $model;
 
+    /** @var array<string, mixed> */
     public array $data = [];
 
     protected static \BackedEnum|string|null $navigationIcon = 'heroicon-o-document-text';

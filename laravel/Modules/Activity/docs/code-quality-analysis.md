@@ -1,3 +1,10 @@
+---
+title: "Code Quality Analysis - Activity Module"
+qmd: "activity code quality analysis md"
+type: note
+tags: [documentation]
+---
+
 # Code Quality Analysis - Activity Module
 
 ## 🚨 Critical Issues Identified
@@ -482,12 +489,9 @@ private function processActivityChunk($activities)
 public function searchActivities($searchTerm, $filters = [])
 {
     $cacheKey = "activity_search_" . md5($searchTerm . serialize($filters));
-<<<<<<< HEAD
     
     
-=======
-
->>>>>>> 6ed19256f (.)
+    
     return Cache::remember($cacheKey, 300, function() use ($searchTerm, $filters) {
         $query = ActivityLog::with(['causer', 'subject'])
             ->where(function($q) use ($searchTerm) {
@@ -809,7 +813,6 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 
 ## 📚 Related Documentation
 
-<<<<<<< HEAD
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/activity_log_optimization.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./query_optimization_analysis.md)
 - [bottlenecks.md](./bottlenecks.md)
@@ -817,14 +820,8 @@ $defaultRecordsPerPageSelectOption → $defaultPerPageOption
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
 
 
-=======
->>>>>>> 6ed19256f (.)
 - [ACTIVITY_LOG_OPTIMIZATION.md](./performance/ACTIVITY_LOG_OPTIMIZATION.md)
 - [QUERY_OPTIMIZATION_ANALYSIS.md](./QUERY_OPTIMIZATION_ANALYSIS.md)
 - [bottlenecks.md](./bottlenecks.md)
 
-<<<<<<< HEAD
 This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
-=======
-This analysis provides a comprehensive roadmap for improving code quality in the Activity module while maintaining data integrity and performance.
->>>>>>> 6ed19256f (.)

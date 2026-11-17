@@ -1,5 +1,7 @@
 # Blog Enhancement Plan - TechPlanner
 
+> Rule correction: the "Controller Enhancement" / `BlogController` section is superseded. The blog is served by Folio (`resources/views/pages/blog/`), without Controllers; see [architecture-data-driven-pages.md](./architecture-data-driven-pages.md).
+
 ## Executive Summary
 
 This document outlines the comprehensive enhancement of the TechPlanner blog system, transforming it from a basic blog into a modern, feature-rich thought leadership platform for municipal services and radioprotection.

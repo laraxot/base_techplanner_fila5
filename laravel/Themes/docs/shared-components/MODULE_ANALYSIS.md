@@ -134,7 +134,7 @@ Event Store ← Snapshot ← Aggregate ← Event Sourcing
 - **User**: Activity的主体 (user actions)
 - **Limesurvey**: Survey lifecycle tracking
 - **Tenant**: Multi-tenancy isolation
-- **Quaeris**: Dashboard activity tracking
+- **<nome progetto>**: Dashboard activity tracking
 
 ## Lacune e Funzionalità Mancanti
 
@@ -316,6 +316,6 @@ activity()->withProperties([
 
 ---
 
-**Ultimo Aggiornamento**: 2026-01-23  
-**Versione**: v2.5.0-beta  
+**Ultimo Aggiornamento**: 2026-01-23
+**Versione**: v2.5.0-beta
 **Stato**: Production Ready with Compliance Enhancement

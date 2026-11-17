@@ -1,3 +1,10 @@
+---
+title: "Collegamenti ai Temi nel Modulo Cms"
+qmd: "ui cms themes link 1 md"
+type: note
+tags: [documentation]
+---
+
 # Collegamenti ai Temi nel Modulo Cms
 
 Questo documento fornisce collegamenti bidirezionali tra il modulo UI e il modulo Cms per quanto riguarda i temi.

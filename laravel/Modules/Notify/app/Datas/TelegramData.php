@@ -21,9 +21,10 @@ class TelegramData extends Data
      * @param  bool  $disableWebPagePreview  Se disabilitare l'anteprima dei link nel messaggio
      * @param  bool  $disableNotification  Se inviare il messaggio silenziosamente
      * @param  int|null  $replyToMessageId  ID del messaggio a cui rispondere
-     * @param  array|null  $replyMarkup  Markup per tastiere inline, tastiere personalizzate, ecc.
-     * @param  array|null  $media  Array di media da allegare al messaggio (immagini, video, documenti)
+     * @param  array<string, mixed>|null  $replyMarkup
+     * @param  list<string>|null  $media
      * @param  string  $type  Tipo di messaggio: 'text', 'photo', 'video', 'document', 'audio', 'animation'
+     * @return void
      */
     public function __construct(
         public string $chatId,
@@ -35,10 +36,5 @@ class TelegramData extends Data
         public ?array $replyMarkup = null,
         public ?array $media = null,
         public string $type = 'text',
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 }

@@ -1,3 +1,10 @@
+---
+title: "User Research: UI Module"
+qmd: "ui user research md"
+type: note
+tags: [documentation]
+---
+
 # User Research: UI Module
 
 ## 🔬 Research Goals

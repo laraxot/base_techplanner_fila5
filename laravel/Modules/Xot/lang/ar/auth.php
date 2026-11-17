@@ -10,7 +10,6 @@ return [
     ],
     'throttle' => 'ثانية من محاولات تسجيل الدخول الفاشلة، برجاء المحاولة مرة أخرى بعد :seconds seconds.',
     'unknown' => 'لقد حدث خطأ غير معروف.',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -20,10 +19,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

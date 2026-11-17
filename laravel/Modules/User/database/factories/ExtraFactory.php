@@ -4,38 +4,18 @@ declare(strict_types=1);
 
 namespace Modules\User\Database\Factories;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
-=======
-use Illuminate\Database\Eloquent\Model;
->>>>>>> 6ed19256f (.)
 use Modules\User\Models\Extra;
+use Modules\Xot\Database\Factories\BaseExtraFactory;
 
-class ExtraFactory extends Factory
+/**
+ * La forma del dato sta in {@see BaseExtraFactory}, nel modulo che possiede il
+ * concetto. Qui si dichiara **solo** il modello: e' quello che porta con se' la
+ * connection di questo modulo.
+ *
+ * @extends BaseExtraFactory<Extra>
+ */
+class ExtraFactory extends BaseExtraFactory
 {
-    /**
-     * The name of the factory's corresponding model.
-<<<<<<< HEAD
-=======
-     *
-     * @var class-string<Model>
->>>>>>> 6ed19256f (.)
-     */
+    /** @var class-string<Extra> */
     protected $model = Extra::class;
-
-    /**
-     * Define the model's default state.
-     */
-    public function definition(): array
-    {
-<<<<<<< HEAD
-        return [];
-=======
-        return [
-            // 'user_id' => $this->faker->randomNumber(5),
-            'name' => $this->faker->name,
-            'personal_team' => $this->faker->boolean,
-        ];
->>>>>>> 6ed19256f (.)
-    }
 }

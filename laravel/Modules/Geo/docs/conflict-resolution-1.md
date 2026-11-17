@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_LXSQuG
+---
+title: "conflict resolution 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution 1"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_qsbPDx
 # Risoluzione Conflitti Git - Modulo Geo
 
 ## Data: 2025-01-06
@@ -130,11 +144,7 @@ php artisan lang:check
 - [Address Implementation](address-implementation.md)
 - [Locality Model](models/locality.md)
 - [Filament Integration](filament-integration.md)
-<<<<<<< HEAD
 - [Translation Guidelines](../../../../docs/project/translation-standards.md)
-=======
-- [Translation Guidelines](../../../project_docs/translation-standards.md)
->>>>>>> 6ed19256f (.)
 
 ### Note per Sviluppatori
 1. **Sempre** usare `declare(strict_types=1);` nei file di traduzione
@@ -155,10 +165,17 @@ php artisan lang:check
 
 ---
 
+<<<<<<< .merge_file_LXSQuG
+title: "conflict resolution 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "conflict resolution 1"
+issues: []
+discussions: []
+=======
+>>>>>>> .merge_file_qsbPDx
 **Ultimo aggiornamento**: 2025-01-06
 **Autore**: Sistema di correzione automatica
-<<<<<<< HEAD
 **Stato**: ✅ Completato
-=======
-**Stato**: ✅ Completato
->>>>>>> 6ed19256f (.)

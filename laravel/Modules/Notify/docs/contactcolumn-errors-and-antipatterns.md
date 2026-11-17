@@ -1,12 +1,20 @@
+---
+title: "contactcolumn errors and antipatterns"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "contactcolumn errors and antipatterns"
+issues: []
+discussions: []
+status: draft
+---
+
 # ContactColumn.php - Errori Critici e Anti-Pattern (Modulo Notify)
 
 ## 🚨 **AUDIT CRITICO - ERRORI GRAVI IDENTIFICATI**
 
 ### **Data Audit**: 2025-08-01
-<<<<<<< HEAD
-### **Data Audit**: 2025-08-01
-=======
->>>>>>> 6ed19256f (.)
 ### **File**: `/Modules/Notify/app/Filament/Tables/Columns/ContactColumn.php`
 ### **Gravità**: CRITICA - REFACTOR COMPLETO RICHIESTO
 
@@ -81,11 +89,7 @@ use Filament\Tables\Columns\ViewColumn;
 class ContactColumn extends ViewColumn
 {
     protected string $view = 'notify::filament.tables.columns.contact-column';
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public static function make(string $name = 'contacts'): static
     {
         return parent::make($name)
@@ -139,15 +143,9 @@ public function getContactsForColumn(): array
 ### **1. HTML Hardcoded in PHP**
 ```php
 // ❌ MAI FARE QUESTO
-<<<<<<< HEAD
 return '<div class="flex items-center">' . 
        '<i class="heroicon-o-envelope"></i>' . 
        '<span>' . $value . '</span>' . 
-=======
-return '<div class="flex items-center">' .
-       '<i class="heroicon-o-envelope"></i>' .
-       '<span>' . $value . '</span>' .
->>>>>>> 6ed19256f (.)
        '</div>';
 ```
 
@@ -230,16 +228,7 @@ Implementare ContactColumn che:
 - [Accessibilità WCAG 2.1](https://www.w3.org/WAI/WCAG21/quickref/)
 
 ---
-
-<<<<<<< HEAD
-*Audit completato: 2025-08-01*  
 *Audit completato: 2025-08-01*  
 *Gravità: CRITICA*  
 *Stato: REFACTOR RICHIESTO*  
 *Responsabile: Laraxot Team*
-=======
-*Audit completato: 2025-08-01*
-*Gravità: CRITICA*
-*Stato: REFACTOR RICHIESTO*
-*Responsabile: Laraxot Team*
->>>>>>> 6ed19256f (.)

@@ -8,35 +8,35 @@ $locale = app()->getLocale();
 
 // Home is always first
 $breadcrumbs[] = [
-    'label' => 'Home',
+    'label' => __('navigation.breadcrumb.home'),
     'url' => route('home')
 ];
 
 // Determine current page and add appropriate breadcrumbs
 if (str_contains($currentPath, 'services')) {
-    $breadcrumbs[] = ['label' => 'Servizi', 'url' => '/services'];
+    $breadcrumbs[] = ['label' => __('navigation.links.services'), 'url' => '/services'];
     if (str_contains($currentPath, 'services/')) {
         // Service detail page - would extract slug from route parameter
-        $breadcrumbs[] = ['label' => 'Dettaglio Servizio', 'url' => null];
+        $breadcrumbs[] = ['label' => __('navigation.breadcrumb.service_detail'), 'url' => null];
     }
 } elseif (str_contains($currentPath, 'about')) {
-    $breadcrumbs[] = ['label' => 'Chi Siamo', 'url' => '/about'];
+    $breadcrumbs[] = ['label' => __('navigation.links.about'), 'url' => '/about'];
 } elseif (str_contains($currentPath, 'blog')) {
-    $breadcrumbs[] = ['label' => 'Blog', 'url' => '/blog'];
+    $breadcrumbs[] = ['label' => __('navigation.links.blog'), 'url' => '/blog'];
     if (str_contains($currentPath, 'blog/')) {
-        $breadcrumbs[] = ['label' => 'Articolo', 'url' => null];
+        $breadcrumbs[] = ['label' => __('navigation.breadcrumb.article'), 'url' => null];
     }
 } elseif (str_contains($currentPath, 'faq')) {
-    $breadcrumbs[] = ['label' => 'FAQ', 'url' => '/faq'];
+    $breadcrumbs[] = ['label' => __('navigation.links.faq'), 'url' => '/faq'];
 } elseif (str_contains($currentPath, 'contacts')) {
-    $breadcrumbs[] = ['label' => 'Contatti', 'url' => '/contacts'];
+    $breadcrumbs[] = ['label' => __('navigation.links.contacts'), 'url' => '/contacts'];
 } elseif (str_contains($currentPath, 'admin')) {
-    $breadcrumbs[] = ['label' => 'Area Admin', 'url' => '/admin'];
+    $breadcrumbs[] = ['label' => __('navigation.breadcrumb.admin_area'), 'url' => '/admin'];
 }
 @endphp
 
 @if (count($breadcrumbs) > 1)
-<nav class="bg-gray-50 border-b" aria-label="Breadcrumb">
+<nav class="bg-gray-50 border-b" aria-label="{{ __('navigation.breadcrumb.aria_label') }}">
     <div class="container mx-auto px-4 py-3">
         <ol class="flex items-center space-x-2 text-sm">
             @foreach ($breadcrumbs as $index => $breadcrumb)

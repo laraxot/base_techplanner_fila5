@@ -94,7 +94,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Cms',
     'plural_label' => 'Cms (Plurale)',
     'navigation' => [
@@ -106,7 +105,7 @@ return [
         ],
         'label' => 'Cms',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -139,6 +138,4 @@ return [
             'label' => 'Elimina Cms',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

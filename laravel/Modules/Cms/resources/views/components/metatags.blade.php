@@ -1,35 +1,12 @@
 <head>
-    <title>{{ $meta->getTitle() }}</title>
+    <title>{{ $title }}</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<<<<<<< HEAD
-=======
-    {{-- Content Security Policy --}}
-    <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self';
-        script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://kit.fontawesome.com;
-        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://cdnjs.cloudflare.com https://unpkg.com https://kit.fontawesome.com;
-        font-src 'self' https://fonts.gstatic.com https://fonts.googleapis.com https://kit.fontawesome.com data:;
-        img-src 'self' data: https: blob:;
-        connect-src 'self' https://www.google-analytics.com;
-        media-src 'self';
-        object-src 'none';
-        frame-ancestors 'self';
-        form-action 'self';
-        base-uri 'self';
-        manifest-src 'self';
-        worker-src 'self' blob:;
-        child-src 'self' blob:;
-
-        upgrade-insecure-requests;
-    ">
-
->>>>>>> 6ed19256f (.)
     {{-- SEO Basics --}}
-    <meta name="title" content="{{ $meta->getTitle() }}">
-    <meta name="description" content="{{ $meta->getDescription(limit: 160) }}">
+    <meta name="title" content="{{ $title }}">
+    <meta name="description" content="{{ $description }}">
     <meta name="keywords" content="{{ $meta->getKeywords() }}">
     <meta name="author" content="{{ $meta->getAuthor() }}">
     <meta name="robots" content="{{ $meta->getRobots() }}">
@@ -37,9 +14,8 @@
 
     {{-- Open Graph / Facebook --}}
     <meta property="og:type" content="{{ $meta->getType() }}">
-    <meta property="og:site_name" content="{{ $meta->getSitename() }}">
-    <meta property="og:title" content="{{ $meta->getTitle() }}">
-    <meta property="og:description" content="{{ $meta->getDescription(limit: 160) }}">
+    <meta property="og:title" content="{{ $title }}">
+    <meta property="og:description" content="{{ $description }}">
     <meta property="og:url" content="{{ $meta->getCanonical() }}">
     <meta property="og:image" content="{{ $meta->getImage() }}">
     <meta property="og:site_name" content="{{ $meta->getSitename() }}">
@@ -48,14 +24,11 @@
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="{{ $meta->getCurrentUrl() }}">
-    <meta name="twitter:title" content="{{ $meta->getTitle() }}">
-    <meta name="twitter:description" content="{{ $meta->getDescription(limit: 160) }}">
+    <meta name="twitter:title" content="{{ $title }}">
+    <meta name="twitter:description" content="{{ $description }}">
     <meta name="twitter:image" content="{{ $meta->getImage() }}">
 
-    <!-- Preload critical resources -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="dns-prefetch" href="//www.google-analytics.com">
+    {{-- Nessun preconnect verso Google Fonts o Analytics: aprire la connessione invia l'IP del visitatore a terzi prima del consenso --}}
 
     {{-- Favicon (multi-size) --}}
     <link rel="icon" type="image/x-icon" href="{{ $meta->getPubThemeAsset('favicon.ico') }}">
@@ -70,13 +43,10 @@
     <meta name="theme-color" content="#ffffff">
     --}}
 
-<<<<<<< HEAD
     @if(isset($pageSchema) && is_array($pageSchema) && $pageSchema !== [])
-        <script type="application/ld+json">{!! json_encode($pageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE) !!}</script>
+        <script type="application/ld+json">{!! json_encode($pageSchema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT | JSON_THROW_ON_ERROR) !!}</script>
     @endif
 
-=======
->>>>>>> 6ed19256f (.)
     {{ $slot }}
     @filamentStyles
     @vite(['resources/css/app.css', 'resources/js/app.js'], 'themes/' . $meta->getPubTheme())

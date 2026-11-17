@@ -1,3 +1,10 @@
+---
+title: "Guida all'utilizzo di GroupColumn e Colonne Custom"
+qmd: "ui filament groupcolumn and custom columns md"
+type: note
+tags: [documentation]
+---
+
 # Guida all'utilizzo di GroupColumn e Colonne Custom
 
 > **REGOLA IMPORTANTE**: Quando esiste una colonna personalizzata come `WorkerColumn`, `ValutatoreColumn`, ecc., USARLA invece di creare TextColumns separati. Le colonne personalizzate encapsulano la logica e mantengono DRY.

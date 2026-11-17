@@ -3,10 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< HEAD
-=======
-    // Europa
->>>>>>> 6ed19256f (.)
     'it' => 'Italiana',
     'fr' => 'Francese',
     'de' => 'Tedesca',
@@ -51,10 +47,6 @@ return [
     'ge' => 'Georgiana',
     'am' => 'Armena',
     'az' => 'Azerbaigiana',
-<<<<<<< HEAD
-=======
-    // Americhe
->>>>>>> 6ed19256f (.)
     'us' => 'Statunitense',
     'ca' => 'Canadese',
     'mx' => 'Messicana',
@@ -97,10 +89,6 @@ return [
     'kn' => 'Kittitiana',
     'dm' => 'Dominicana',
     'bs' => 'Bahamense',
-<<<<<<< HEAD
-=======
-    // Asia
->>>>>>> 6ed19256f (.)
     'cn' => 'Cinese',
     'jp' => 'Giapponese',
     'kr' => 'Sudcoreana',
@@ -145,10 +133,6 @@ return [
     'kg' => 'Kirghisa',
     'tj' => 'Tagika',
     'tm' => 'Turkmena',
-<<<<<<< HEAD
-=======
-    // Africa
->>>>>>> 6ed19256f (.)
     'eg' => 'Egiziana',
     'ly' => 'Libica',
     'tn' => 'Tunisina',
@@ -196,21 +180,13 @@ return [
     'cm' => 'Camerunese',
     'cf' => 'Centrafricana',
     'cg' => 'Congolese',
-<<<<<<< HEAD
     'cd' => 'Congolese (RDC]',
-=======
-    'cd' => 'Congolese (RDC)',
->>>>>>> 6ed19256f (.)
     'ga' => 'Gabonese',
     'gq' => 'Guineana Equatoriale',
     'st' => 'Sao Tomé e Principe',
     'ao' => 'Angolana',
     'aq' => 'Antartica',
     'zr' => 'Zairese',
-<<<<<<< HEAD
-=======
-    // Oceania
->>>>>>> 6ed19256f (.)
     'au' => 'Australiana',
     'ax' => 'Alandese',
     'nz' => 'Neozelandese',
@@ -228,10 +204,6 @@ return [
     'pw' => 'Palau',
     'fm' => 'Micronesiana',
     'mh' => 'Marshallese',
-<<<<<<< HEAD
-=======
-    // Altri
->>>>>>> 6ed19256f (.)
     'xk' => 'Kosovara',
     'va' => 'Vaticana',
     'sm' => 'Sanmarinese',
@@ -284,7 +256,6 @@ return [
     'mp' => 'Isolano delle Marianne Settentrionali',
     'um' => 'Isole Minori degli Stati Uniti',
     'eh' => 'Saharawi',
-<<<<<<< HEAD
     'label' => 'Nationalities',
     'plural_label' => 'Nationalities (Plurale)',
     'navigation' => [
@@ -295,8 +266,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Nationalities',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -329,6 +300,4 @@ return [
             'label' => 'Elimina Nationalities',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

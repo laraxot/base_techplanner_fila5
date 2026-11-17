@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Filament Version Declaration — Media"
+module: "Media"
+type: concept
+tags: [filament, version]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "filament version"
+related:
+  - "./webm.md"
+---
 # Filament Version Declaration — Media
 
 **Current Version**: Filament v5 (Livewire v4 + Schemas)

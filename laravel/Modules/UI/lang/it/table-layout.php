@@ -24,7 +24,6 @@ return [
         'tooltip' => 'Alterna tra visualizzazione lista e griglia',
         'helper_text' => 'Cambia il tipo di visualizzazione',
     ],
-<<<<<<< HEAD
     'label' => 'Table Layout',
     'plural_label' => 'Table Layout (Plurale)',
     'navigation' => [
@@ -36,7 +35,7 @@ return [
         ],
         'label' => 'Table Layout',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -69,6 +68,4 @@ return [
             'label' => 'Elimina Table Layout',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,10 @@
+---
+title: "Componenti Table"
+qmd: "ui table components 1 md"
+type: note
+tags: [documentation]
+---
+
 # Componenti Table
 
 ## Introduzione

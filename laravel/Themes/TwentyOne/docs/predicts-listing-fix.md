@@ -60,5 +60,5 @@ La pagina http://predict.local/it/predicts appariva scarna e con link errati.
 - [homepage-governance](homepage-governance.md)
 - [route-names-philosophy](route-names-philosophy.md)
 - [Predict routing-and-filters-fix](../../Modules/Predict/docs/routing-and-filters-fix.md)
-- [no-predict-specific-pages](NO_PREDICT_SPECIFIC_PAGES.md)
+- [no-predict-specific-pages](no-predict-specific-pages.md)
 - [container0-routing-philosophy](../../../../docs/project/CONTAINER0_ROUTING_PHILOSOPHY.md)

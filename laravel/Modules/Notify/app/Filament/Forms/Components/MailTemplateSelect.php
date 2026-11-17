@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Notify\Filament\Forms\Components;
 
-use Filament\Forms\Components\Select;
 use Modules\Notify\Models\MailTemplate;
+use Modules\Xot\Filament\Forms\Components\XotBaseSelect;
 
-class MailTemplateSelect extends Select
+class MailTemplateSelect extends XotBaseSelect
 {
     protected function setUp(): void
     {
@@ -27,21 +27,12 @@ class MailTemplateSelect extends Select
     /**
      * Create a new MailTemplateSelect instance.
      *
-<<<<<<< HEAD
      * @param  string|null  $name  Field name (default: 'mail_template_slug')
-=======
-     * @param string|null $name Field name (default: 'mail_template_slug')
-     *
-     * @return static
->>>>>>> 6ed19256f (.)
      */
     public static function make(?string $name = null): static
     {
         $name = $name ?? 'mail_template_slug';
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
         return parent::make($name);
     }
 }

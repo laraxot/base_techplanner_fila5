@@ -1,6 +1,12 @@
+---
+title: "PHPStan Roadmap - UI Module"
+qmd: "ui phpstan roadmap md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Roadmap - UI Module
 
-> **Date**: 2026-01-14
 > **Date**: [DATE]
 > **Status**: ✅ Fully Compliant (Level 10)
 > **Errors**: 0

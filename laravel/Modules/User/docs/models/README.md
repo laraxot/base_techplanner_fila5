@@ -1,3 +1,22 @@
+---
+title: "User Module - Model Documentation"
+type: concept
+tags: [readme]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "readme user module - model documentation"
+issues: ["https://github.com/provtv/<nome repository>/issues/124"]
+discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
+related:
+  - "./base-classes-hierarchy.md"
+  - "./baseuser.md"
+  - "./team.md"
+  - "./teampermission.md"
+  - "./xotbaivot-migration.md"
+  - "./xotbasepivot-migration.md"
+status: draft
+---
+
 # User Module - Model Documentation
 
 **Modulo**: User
@@ -10,11 +29,7 @@ Il modulo User gestisce l'autenticazione, l'autorizzazione, e la gestione multi-
 
 ## Architettura Base
 
-Tutti i modelli in questo modulo seguono la [gerarchia a tre livelli](../../../Xot/docs/models/MODEL_ARCHITECTURE.md) standard:
-<<<<<<< HEAD
 Tutti i modelli in questo modulo seguono la [gerarchia a tre livelli](../../../xot/docs/models/model_architecture.md) standard:
-=======
->>>>>>> 6ed19256f (.)
 
 ```
 XotBaseModel (Xot)
@@ -36,11 +51,7 @@ if (property_exists($user, 'email')) { ... }
 if (isset($user->email)) { ... }
 ```
 
-Vedi [Magic Properties Documentation](../../../Xot/docs/models/magic-properties.md) per dettagli completi.
-<<<<<<< HEAD
 Vedi [Magic Properties Documentation](../../../xot/docs/models/magic-properties.md) per dettagli completi.
-=======
->>>>>>> 6ed19256f (.)
 
 ## Base Classes
 
@@ -620,18 +631,11 @@ La connection `user` gestisce queste tabelle principali:
 
 ## Riferimenti
 
-<<<<<<< HEAD
 - [Model Architecture](../../../xot/docs/models/model_architecture.md) - Guida completa architettura modelli
 - [DRY-KISS Analysis](../../../xot/docs/models/dry-kiss-analysis.md) - Analisi duplicazioni
 - [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
 - [BaseModel](../../app/Models/BaseModel.php) - Base class User module
-- [CLAUDE.md](../../../../claude.md) - Convenzioni progetto
-=======
->>>>>>> 6ed19256f (.)
-- [Model Architecture](../../../Xot/docs/models/MODEL_ARCHITECTURE.md) - Guida completa architettura modelli
-- [DRY-KISS Analysis](../../../Xot/docs/models/DRY-KISS-ANALYSIS.md) - Analisi duplicazioni
-- [XotBaseModel](../../../Xot/app/Models/XotBaseModel.php) - Base class livello 1
-- [BaseModel](../../app/Models/BaseModel.php) - Base class User module
+- [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
 - [CLAUDE.md](../../../../CLAUDE.md) - Convenzioni progetto
 
 ## Changelog
@@ -647,8 +651,4 @@ La connection `user` gestisce queste tabelle principali:
 ---
 
 **Ultima revisione**: 2025-10-16
-<<<<<<< HEAD
 **Prossima revisione**: Dopo implementazione auto-discovery
-=======
-**Prossima revisione**: Dopo implementazione auto-discovery
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "mail layouts theme integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "mail layouts theme integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # Mail Layouts - Integrazione con Sistema Temi
 
 ## Overview
@@ -21,11 +33,7 @@ Il sistema email di PTVX supporta **layout personalizzati per tema**, permettend
 ### File System Structure
 
 ```
-<<<<<<< HEAD
 
-=======
-/var/www/html/ptvx/
->>>>>>> 6ed19256f (.)
 │
 ├─ laravel/
 │  ├─ Modules/Notify/resources/mail-layouts/  ← Default fallback
@@ -79,11 +87,7 @@ Il tema **Zero** implementa un layout email basato sul **Design System Italiano*
 - ✅ TailwindCSS-inspired spacing e colori
 - ✅ Integrazione completa con spatie/laravel-database-mail-templates
 
-**Documentazione**: [Themes/Zero/docs/mail-layouts.md](../../../../Themes/Zero/docs/mail-layouts.md)
-<<<<<<< HEAD
 **Documentazione**: [Themes/Zero/docs/mail-layouts.md](../../../../themes/zero/docs/mail-layouts.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Implementazione getHtmlLayout()
 
@@ -96,17 +100,10 @@ public function getHtmlLayout(): string
 {
     $xot = XotData::make();
     $pub_theme = $xot->pub_theme;  // Legge da config
-<<<<<<< HEAD
     
     $pubThemePath = base_path('Themes/'.$pub_theme);
     $pathToLayout = $pubThemePath.'/resources/mail-layouts/base.html';
     
-=======
-
-    $pubThemePath = base_path('Themes/'.$pub_theme);
-    $pathToLayout = $pubThemePath.'/resources/mail-layouts/base.html';
-
->>>>>>> 6ed19256f (.)
     return file_get_contents($pathToLayout);
 }
 ```
@@ -118,7 +115,6 @@ public function getHtmlLayout(): string
 {
     $xot = XotData::make();
     $pub_theme = $xot->pub_theme;
-<<<<<<< HEAD
     
     // 1. Prova layout tema-specifico
     $themePath = base_path("Themes/{$pub_theme}/resources/mail-layouts/base.html");
@@ -137,26 +133,6 @@ public function getHtmlLayout(): string
     // 3. Fallback a layout base semplice
     $basePath = module_path('Notify', 'resources/mail-layouts/base.html');
     
-=======
-
-    // 1. Prova layout tema-specifico
-    $themePath = base_path("Themes/{$pub_theme}/resources/mail-layouts/base.html");
-
-    if (file_exists($themePath)) {
-        return file_get_contents($themePath);
-    }
-
-    // 2. Fallback a layout default Notify responsive
-    $responsivePath = module_path('Notify', 'resources/mail-layouts/base/responsive.html');
-
-    if (file_exists($responsivePath)) {
-        return file_get_contents($responsivePath);
-    }
-
-    // 3. Fallback a layout base semplice
-    $basePath = module_path('Notify', 'resources/mail-layouts/base.html');
-
->>>>>>> 6ed19256f (.)
     return file_get_contents($basePath);
 }
 ```
@@ -194,30 +170,18 @@ cp laravel/Modules/Notify/resources/mail-layouts/base.html \
             --brand-secondary: #00AA66;
             --brand-accent: #FF6600;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         body {
             font-family: 'Brand Font', Arial, sans-serif;
             background-color: #F5F5F5;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         .email-header {
             background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
             padding: 30px;
             text-align: center;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         .email-button {
             background-color: var(--brand-accent);
             color: #FFFFFF;
@@ -240,22 +204,14 @@ cp laravel/Modules/Notify/resources/mail-layouts/base.html \
                             <p style="color: #FFFFFF; margin: 10px 0 0 0;">{{ company_tagline }}</p>
                         </td>
                     </tr>
-<<<<<<< HEAD
                     
-=======
-
->>>>>>> 6ed19256f (.)
                     <!-- Content -->
                     <tr>
                         <td style="padding: 40px; background-color: #FFFFFF;">
                             {{{ body }}}
                         </td>
                     </tr>
-<<<<<<< HEAD
                     
-=======
-
->>>>>>> 6ed19256f (.)
                     <!-- Footer Brand Custom -->
                     <tr>
                         <td style="padding: 30px; background-color: #E5E5E5; text-align: center;">
@@ -272,13 +228,8 @@ cp laravel/Modules/Notify/resources/mail-layouts/base.html \
                                 © {{ year }} {{ company_name }} - {{ company_address }}
                             </p>
                             <p style="font-size: 11px; color: #999;">
-<<<<<<< HEAD
                                 <a href="{{ privacy_url }}" style="color: #999;">Privacy Policy</a> | 
                                 <a href="{{ terms_url }}" style="color: #999;">Termini di Servizio</a> | 
-=======
-                                <a href="{{ privacy_url }}" style="color: #999;">Privacy Policy</a> |
-                                <a href="{{ terms_url }}" style="color: #999;">Termini di Servizio</a> |
->>>>>>> 6ed19256f (.)
                                 <a href="{{ unsubscribe_url }}" style="color: #999;">Annulla iscrizione</a>
                             </p>
                         </td>
@@ -329,11 +280,7 @@ echo $email->getHtmlLayout();
 
 ## Logo vettoriale 2025
 
-<<<<<<< HEAD
 > **Aggiornamento 18 novembre 2025**  
-=======
-> **Aggiornamento 18 novembre 2025**
->>>>>>> 6ed19256f (.)
 > `Modules/Notify/resources/svg/logo.svg` racconta ora il *Notification Communication Hub* con tre canali (email, SMS, push) e palette coerente con il Design System Italiano.
 
 - palette istituzionale: Blu Italia `#0066CC`, Verde `#00AA66`, accento `#00C7B1`
@@ -355,7 +302,6 @@ class TenantAwareSpatieEmail extends SpatieEmail
     public function getHtmlLayout(): string
     {
         $tenant = Filament::getTenant();  // Tenant corrente
-<<<<<<< HEAD
         
         // Layout specifico tenant
         $tenantPath = storage_path("tenants/{$tenant->id}/mail-layouts/base.html");
@@ -364,16 +310,6 @@ class TenantAwareSpatieEmail extends SpatieEmail
             return file_get_contents($tenantPath);
         }
         
-=======
-
-        // Layout specifico tenant
-        $tenantPath = storage_path("tenants/{$tenant->id}/mail-layouts/base.html");
-
-        if (file_exists($tenantPath)) {
-            return file_get_contents($tenantPath);
-        }
-
->>>>>>> 6ed19256f (.)
         // Fallback a layout tema
         return parent::getHtmlLayout();
     }
@@ -392,11 +328,7 @@ class TenantAwareSpatieEmail extends SpatieEmail
 class EmailLayoutResource extends XotBaseResource
 {
     protected static ?string $model = EmailLayout::class;
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     public static function getFormSchema(): array
     {
         return [
@@ -421,11 +353,8 @@ class EmailLayoutResource extends XotBaseResource
 
 ### Documentazione Interna
 - [Spatie Database Mail Templates Deep Dive](./spatie-database-mail-templates-deep-dive.md)
-- [Mail Layouts README](../resources/mail-layouts/README.md)
-<<<<<<< HEAD
 - [Mail Layouts README](../resources/mail-layouts/readme.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Mail Layouts README](../resources/mail-layouts/README.md)
 - [SpatieEmail Class](../app/Emails/SpatieEmail.php)
 
 ### Esempi Layout
@@ -434,13 +363,7 @@ class EmailLayoutResource extends XotBaseResource
 - [Responsive Layout](../resources/mail-layouts/base/responsive.html)
 
 ---
-
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 27 Ottobre 2025  
 **Pattern**: Layout per tema con fallback chain  
 **Status**: ✅ IMPLEMENTATO
-=======
-**Ultimo aggiornamento**: 27 Ottobre 2025
-**Pattern**: Layout per tema con fallback chain
-**Status**: ✅ IMPLEMENTATO
->>>>>>> 6ed19256f (.)
+

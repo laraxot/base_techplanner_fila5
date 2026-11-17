@@ -1,12 +1,5 @@
 <?php
 
-<<<<<<< HEAD
-=======
-/**
- * @see https://github.com/DutchCodingCompany/filament-socialite
- */
-
->>>>>>> 6ed19256f (.)
 declare(strict_types=1);
 
 namespace Modules\User\Actions\Socialite;
@@ -18,23 +11,14 @@ class ValidateProviderAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
-    public function execute(string $provider): void
-    {
-        $hasConfig = config()->has('services.'.$provider);
-        if (! $hasConfig) {
-            $ex = new ProviderNotConfigured();
-            throw $ex->make($provider);
-=======
     /**
-     * Execute the action.
+     * @throws ProviderNotConfigured se mancano client_id, client_secret o redirect (o sono segnaposto)
      */
     public function execute(string $provider): void
     {
-        $res = config()->has('services.'.$provider);
-        if (! $res) {
-            throw ProviderNotConfigured::make($provider);
->>>>>>> 6ed19256f (.)
+        $missing = app(GetMissingProviderSettingsAction::class)->execute($provider);
+        if ($missing !== []) {
+            throw ProviderNotConfigured::make($provider, $missing);
         }
     }
 }

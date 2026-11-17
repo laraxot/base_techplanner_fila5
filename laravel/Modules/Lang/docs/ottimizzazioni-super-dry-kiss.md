@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Ottimizzazioni Super DRY + KISS - Modulo Lang"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Ottimizzazioni Super DRY + KISS - Modulo Lang
 
 ## 🎯 Panoramica
@@ -306,25 +319,22 @@ class Language extends Model
 
 ## 🔗 Collegamenti
 
-<<<<<<< HEAD
 - [Documentazione Core](../../../../docs/core/)
 - [Best Practices Filament](../../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../../docs/core/conventions.md)
 - [Template Modulo](../../../../docs/templates/module-template.md)
-=======
 - [Documentazione Core](../../../docs/core/)
 - [Best Practices Filament](../../../docs/core/filament-best-practices.md)
 - [Convenzioni Sistema](../../../docs/core/conventions.md)
 - [Template Modulo](../../../docs/templates/module-template.md)
->>>>>>> 6ed19256f (.)
 
 ---
 
 **Responsabile:** Team Lang
 **Data:** 2025-01-XX
 **Stato:** In Analisi
-<<<<<<< HEAD
 **Priorità:** ALTA
-=======
 **Priorità:** ALTA
->>>>>>> 6ed19256f (.)
+**Priorità:** ALTA
+**Priorità:** ALTA
+**Priorità:** ALTA

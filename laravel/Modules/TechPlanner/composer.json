@@ -1,7 +1,7 @@
 {
-    "name": "laraxot/module_techplanner_fila3",
+    "name": "laraxot/module_techplanner_fila5",
     "description": "TechPlanner module for managing technical planning",
-    "homepage": "https://github.com/laraxot/module_techplanner_fila3",
+    "homepage": "https://github.com/laraxot/module_techplanner_fila5",
     "license": "MIT",
     "authors": [
         {
@@ -30,7 +30,9 @@
             "Modules\\TechPlanner\\Tests\\": "tests/"
         }
     },
-    "require": {},
+    "require": {
+        "tightenco/parental": "^1.6"
+    },
     "require-dev": {},
     "repositories": [
         {
@@ -75,6 +77,4 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
-    
 }
-

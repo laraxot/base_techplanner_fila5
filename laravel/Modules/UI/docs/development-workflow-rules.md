@@ -1,10 +1,13 @@
+---
+title: "Development Workflow Rules - UI Module"
+qmd: "ui development workflow rules md"
+type: note
+tags: [documentation]
+---
+
 # Development Workflow Rules - UI Module
 
-**Date**: 2025-12-15
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **Status**: Active
 **Purpose**: Document the mandatory development workflow for UI module
 
@@ -150,17 +153,10 @@
 
 ## 📚 Related Documentation
 
-- [Xot Philosophy](../Xot/docs/philosophy-complete.md)
-- [PSR-4 Autoloading Error Analysis](./psr4-autoloading-error-analysis.md)
-- [Development Guidelines](../../../docs/development/README.md)
-- [Git Workflow](../../../docs/git-conflict-resolution/README.md)
-<<<<<<< HEAD
 - [Xot Philosophy](../xot/docs/philosophy-complete.md)
 - [PSR-4 Autoloading Error Analysis](./psr4-autoloading-error-analysis.md)
 - [Development Guidelines](../../../../docs/development/readme.md)
 - [Git Workflow](../../../../docs/git-conflict-resolution/readme.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## ⚠️ Consequences of Skipping Steps
 
@@ -198,8 +194,4 @@
 
 ---
 
-<<<<<<< HEAD
 **Remember**: This workflow is NOT optional. It is the foundation of quality software development in the Laraxot/PTVX ecosystem. Every change must go through this complete cycle to ensure maintainability, quality, and knowledge preservation.
-=======
-**Remember**: This workflow is NOT optional. It is the foundation of quality software development in the Laraxot/PTVX ecosystem. Every change must go through this complete cycle to ensure maintainability, quality, and knowledge preservation.
->>>>>>> 6ed19256f (.)

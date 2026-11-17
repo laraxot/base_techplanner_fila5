@@ -5,59 +5,37 @@ declare(strict_types=1);
 return [
     'actions' => [
         'edit' => [
-            'label' => 'edit',
             'icon' => 'edit',
-            'tooltip' => 'edit',
         ],
         'delete' => [
-            'label' => 'delete',
             'icon' => 'delete',
-            'tooltip' => 'delete',
         ],
         'detach' => [
-            'label' => 'detach',
             'icon' => 'detach',
-            'tooltip' => 'detach',
         ],
         'attach' => [
-            'label' => 'attach',
             'icon' => 'attach',
-            'tooltip' => 'attach',
         ],
         'create' => [
-            'label' => 'create',
             'icon' => 'create',
-            'tooltip' => 'create',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'icon' => 'openFilters',
-            'tooltip' => 'openFilters',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'icon' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyTableColumnManager' => [
-            'label' => 'applyTableColumnManager',
             'icon' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'openColumnManager' => [
-            'label' => 'openColumnManager',
             'icon' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'icon' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
     ],
     'fields' => [
@@ -65,38 +43,37 @@ return [
             'name' => [
                 'label' => 'client.name',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'scopes' => [
-            'label' => 'scopes',
+            'label' => 'Ambiti',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'revoked' => [
-            'label' => 'revoked',
+            'label' => 'Revocato',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'created_at' => [
-            'label' => 'created_at',
+            'label' => 'Creato il',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'expires_at' => [
-            'label' => 'expires_at',
+            'label' => 'Scade il',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -115,26 +92,4 @@ return [
     ],
     'label' => 'Oauth Token',
     'plural_label' => 'Oauth Token (Plurale)',
-=======
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'scopes' => [
-            'label' => 'scopes',
-        ],
-        'revoked' => [
-            'label' => 'revoked',
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'expires_at' => [
-            'label' => 'expires_at',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

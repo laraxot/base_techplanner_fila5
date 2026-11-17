@@ -1,306 +1,229 @@
-<<<<<<< HEAD
-# 🎨 UI
+---
+id: module-ui-readme
+title: "UI - componenti visuali condivisi"
+type: module-readme
+category: module-documentation
+module: UI
+status: active
+tags: [ui, components, filament, module, blade, livewire, accessibility]
+created: 2026-09-14
+updated: 2026-10-07
+qmd: "ui blade livewire filament components accessibility module documentation"
+issues:
+  - "https://github.com/laraxot/module_ui_fila5/issues/33"
+discussions:
+  - "https://github.com/laraxot/module_ui_fila5/discussions/34"
+related:
+  - "./docs/"
+sources: []
+---
+
+# UI
 
 [![Domain-UI](https://img.shields.io/badge/Domain-UI%20Kit-7B1FA2.svg)](#)
-[![Laravel 12](https://img.shields.io/badge/Laravel-12-red.svg)](https://laravel.com/)
+[![Laravel 13](https://img.shields.io/badge/Laravel-13-red.svg)](https://laravel.com/)
 [![Filament 5](https://img.shields.io/badge/Filament-5-ffab00.svg)](https://filamentphp.com/)
-[![PHP 8.4+](https://img.shields.io/badge/PHP-8.4+-777BB4.svg)](https://php.net/)
+[![PHP 8.3+](https://img.shields.io/badge/PHP-8.3+-777BB4.svg)](https://php.net/)
+[![Stars](https://img.shields.io/github/stars/laraxot/module_ui_fila5?style=plastic&color=yellow)]()
+[![Forks](https://img.shields.io/github/forks/laraxot/module_ui_fila5?style=plastic&color=green)]()
+[![Issues](https://img.shields.io/github/issues/laraxot/module_ui_fila5?style=plastic&color=red)]()
+[![License](https://img.shields.io/github/license/laraxot/module_ui_fila5?style=plastic&color=blue)]()
+[![Last Commit](https://img.shields.io/github/last-commit/laraxot/module_ui_fila5?style=plastic&color=purple)]()
+[![Release](https://img.shields.io/github/v/release/laraxot/module_ui_fila5?style=plastic&color=orange&display_name=release)]()
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=plastic)]()
 [![PHPStan Level 10](https://img.shields.io/badge/PHPStan-Level%2010-brightgreen.svg)](https://phpstan.org/)
 [![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue.svg)](https://www.php-fig.org/psr/psr-12/)
 [![Strict Types](https://img.shields.io/badge/PHP-strict__types-1-informational.svg)](#)
-[![Laraxot Modules](https://img.shields.io/badge/Architecture-Modular-purple.svg)](#)
-[![FixCity Platform](https://img.shields.io/badge/Platform-FixCity-008758.svg)](#)
 
-> **Componenti che non reinventano la ruota.** Design system condiviso tra moduli e tema.
-
----
+> **Componenti UI riutilizzabili e design system**
+> Componenti UI, layout, temi e pattern di design per Filament v5, senza logica di dominio.
 
 ## Perché esiste
+## 🎯 La Visione
 
-Coerenza visiva e DRY su Blade/Livewire/Filament.
+Crediamo che il software debba essere **chiaro, modulare e potente**. Ogni modulo è stato pensato per risolvere problemi reali con soluzioni eleganti.
+
+## Perché esiste questo modulo?
+
+**Componenti UI, layout, temi e pattern di design per Filament v5.**
+
+In un mondo dove la complessità è l'avere, abbiamo scritto codice semplice. Questo modulo non è solo una libreria: è una **promessa di qualità** mantenuta.
+
+## Cosa offre
+
+- **Blade/Livewire** — componenti riusabili
+- **Filament XotBase** — base per admin
+- **Accessibilità** — a11y conforme
+- **Tailwind/DaisyUI** — design system
+
+## Confini architetturali
+
+Questo modulo pubblica contratti usabili da altri moduli. La logica vive nelle `Actions`; la UI admin segue Laraxot/XotBase. Nessuna logica di dominio: quella resta nei moduli che la possiedono (vedi [docs/purpose.md](./docs/purpose.md)).
+
+## 🧘 I Principi Zen (e la nostra filosofia)
+
+## 🎯 La Visione
+## La visione
+## La visione
+
+Crediamo che il software debba essere **chiaro, modulare e potente**. Ogni modulo è stato pensato per risolvere problemi reali con soluzioni eleganti.
+
+## Perché esiste questo modulo
+
+**Componenti UI, layout, temi e pattern di design per Filament v5.**
+
+In un mondo dove la complessità è l'avere, abbiamo scritto codice semplice. Questo modulo non è solo una libreria: è una **promessa di qualità** mantenuta.
+
+## Cosa offre
+
+- **Blade/Livewire**: componenti riusabili
+- **Filament XotBase**: base per admin
+- **Accessibilità**: a11y conforme
+- **Tailwind/DaisyUI**: design system
+
+## Confini architetturali
+
+Questo modulo pubblica contratti usabili da altri moduli. La logica vive nelle `Actions`; la UI admin segue Laraxot/XotBase. Nessuna logica di dominio: quella resta nei moduli che la possiedono (vedi [docs/purpose.md](./docs/purpose.md)).
+
+## I principi zen e la nostra filosofia
+
+1. **Semplicità vince sulla complessità** - Il codice chiaro è più potente di mille righe di commenti.
+2. **Modulare è dare vita** - Ogni pezzo può vivere da solo, ma insieme diventa un universo.
+3. **Documentare è onniscienza** - La mancanza di documentazione è la paura del futuro.
+4. **Testare è fidarsi** - Non fidarsi del proprio codice è fidarsi del caos.
+5. **Rifattorizzare è crescere** - Lentamente, incrementalmente, diventiamo migliori.
 
 ## Superpoteri
 
-- Component library riusabile
-- Token e pattern documentati
-- Integrazione Tailwind/DaisyUI
-- Filament custom components
+- **Architettura modulare** - Separazione netta tra logica di business e presentazione
+- **PHPStan Level 10** - Massima sicurezza tipizzazione
+- **PSR-12** - Codice che parla lo stesso linguaggio del mondo
+- **Filament 5** - Admin panel d'eccellenza
+- **XotBase** - Pattern consolidati che funzionano
 
-## Certificazioni
+## Quick start
 
-| Certificazione | Stato |
-|----------------|-------|
-| PHPStan livello 10 | Target progetto |
-| `declare(strict_types=1)` | Su nuovo codice PHP |
-| Filament 5 + XotBase | Admin enterprise |
-| Test PHPUnit / Pest | Suite modulo |
-| Documentazione wiki | Cartella `docs/` |
+```bash
+# Installazione modulo
+php artisan module:enable UI
+php artisan module:list
+php artisan migrate
 
-## Vuoi entrare nel team?
+# Sviluppo locale
+cd laravel
+composer dev
+./vendor/bin/pest Modules/UI/tests
+./vendor/bin/phpstan analyse Modules/UI --memory-limit=-1
+```
 
-UI **consistente** = brand PA forte.
+Configuration is in `config/config.php`. Adjust as needed.
 
-Stack frontoffice: **Tailwind · Alpine · Lit · DaisyUI · Flowbite · Filament v5** — vedi [STORY-133](../../../docs/stories/STORY-133-frontend-stack-religion-tailwind-alpine-lit.md).
+## Contributing
 
----
+Esegui i comandi di sviluppo locale del Quick start, poi:
+
+**Before submitting:**
+- [ ] Tests pass
+- [ ] PHPStan L10 passes
+- [ ] Code style (Pint) applied
+- [ ] Documentation updated
+
+See [docs/architecture.md](./docs/architecture.md) for design decisions.
 
 ## Documentazione
 
-=======
->>>>>>> 6ed19256f (.)
-# 🎨 UI Module - Eleva la Tua Interfaccia al Livello Successivo! 🚀
-
-![GitHub issues](https://img.shields.io/github/issues/laraxot/module_ui_fila3)
-![GitHub forks](https://img.shields.io/github/forks/laraxot/module_ui_fila3)
-![GitHub stars](https://img.shields.io/github/stars/laraxot/module_ui_fila3)
-![License](https://img.shields.io/badge/license-MIT-green)
-
-Welcome to the **Fila3 UI Module**! This comprehensive user interface toolkit is designed to streamline the development of visually stunning and user-friendly applications. With a rich set of components and styles, you can create a polished and consistent look for your projects in no time!
-
-## 📦 What’s Inside?
-
-The Fila3 UI Module provides a wide array of features, including:
-
-- **Pre-built UI Components**: A library of ready-to-use components such as buttons, modals, and forms.
-- **Responsive Design**: Ensure your application looks great on any device with a mobile-first approach.
-- **Customizable Themes**: Easily switch between light and dark themes or create your own to match your branding.
-- **Accessibility Support**: Built with accessibility in mind to cater to all users.
-
-## 🌟 Key Features
-
-- **Component-Based Architecture**: Easily manage and reuse UI components across your application.
-- **State Management Integration**: Effortlessly connect UI components to your application's state management.
-- **Dynamic Layouts**: Create flexible layouts that adapt to different screen sizes and orientations.
-- **Animations & Transitions**: Enhance user experience with smooth animations and transitions.
-- **Form Validation**: Simplify user input handling with built-in form validation features.
-- **Localization Support**: Easily implement multiple languages and regional settings.
-- **🎨 Icon System**: Complete SVG icon system with automatic registration and Filament integration.
-
-## 🚀 Why Choose Fila3 UI?
-
-- **Fast & Efficient**: Built for performance, ensuring quick load times and smooth interactions.
-- **Developer-Friendly**: Intuitive APIs and documentation make integration a breeze.
-- **Community Driven**: Join a thriving community of developers for support and collaboration.
-
-## 🎨 Icon System
-
-The UI Module includes a comprehensive SVG icon system that integrates seamlessly with Blade Icons and Filament:
-
-### Quick Start
-```blade
-{{-- Use any icon with the ui- prefix --}}
-@svg('ui-login')
-@svg('ui-user')
-@svg('ui-settings')
-```
-
-### In Filament Components
-```php
-// Form components
-Forms\Components\TextInput::make('email')
-    ->prefixIcon('ui-login')
-
-// Table columns
-Tables\Columns\TextColumn::make('name')
-    ->icon('ui-user')
-
-// Actions
-Actions\Action::make('delete')
-    ->icon('ui-trash')
-```
-
-### Available Icons
-- `ui-login` - Login/authentication icon
-- `ui-user` - User profile icon
-- `ui-settings` - Settings icon
-- `ui-trash` - Delete/trash icon
-- `ui-edit` - Edit icon
-- And many more...
-
-📚 **Full Documentation**: [Icon System Guide](docs/icon-system.md)
-
-## 🔧 Installation
-
-Getting started with the Fila3 UI Module is straightforward! Follow these steps:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/laraxot/module_ui_fila3.git
-
-Navigate to the project directory:
-bash
-Copia codice
-cd module_ui_fila3
-Install dependencies:
-bash
-Copia codice
-npm install
-Import the UI components in your application:
-javascript
-Copia codice
-import { Button, Modal } from 'fila3-ui';
-Start your application and bring your UI to life!
-📜 Usage Examples
-Here are a few snippets to demonstrate how to use the Fila3 UI Module in your application:
-
-Creating a Button
-javascript
-Copia codice
-<Button onClick={() => alert("Button clicked!")}>
-  Click Me!
-</Button>
-Displaying a Modal
-javascript
-Copia codice
-<Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)}>
-  <h2>Modal Title</h2>
-  <p>Your content goes here.</p>
-  <Button onClick={() => setModalOpen(false)}>Close</Button>
-</Modal>
-🤝 Contributing
-We welcome contributions! If you have ideas, bug fixes, or enhancements, check out the contributing guidelines to get started.
-
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-👤 Author
-Marco Sottana
-Discover more of my work at marco76tv!
-
-### Versione HEAD
-
-### Versione Incoming
-
-# 🎨 UI Module - Componenti Interfaccia
-
-[![PHP Version](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
-[![Laravel Version](https://img.shields.io/badge/Laravel-11.x-orange.svg)](https://laravel.com)
-[![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
-[![Code Quality](https://img.shields.io/badge/code%20quality-A+-brightgreen.svg)](.codeclimate.yml)
-[![Test Coverage](https://img.shields.io/badge/coverage-95%25-success.svg)](phpunit.xml.dist)
-[![UI Components](https://img.shields.io/badge/components-50+-brightgreen.svg)](docs/module_ui.md)
-[![Filament Version](https://img.shields.io/badge/Filament-3.x-purple.svg)](https://filamentphp.com)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/laraxot/module_ui)
-[![Downloads](https://img.shields.io/badge/downloads-1k+-blue.svg)](https://packagist.org/packages/laraxot/module_ui)
-[![Stars](https://img.shields.io/badge/stars-100+-yellow.svg)](https://github.com/laraxot/module_ui)
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/laraxot/module_ui/main/docs/assets/ui-banner.png" alt="UI Module Banner" width="800">
-</div>
-
-## 🇮🇹 Italiano
-
-### 📝 Descrizione
-Il modulo UI fornisce un set completo di componenti di interfaccia utente riutilizzabili per applicazioni Laravel, basati su Filament e Blade.
-
-### ✨ Caratteristiche Principali
-- ✅ Componenti Blade riutilizzabili
-- ✅ Layouts predefiniti
-- ✅ Temi personalizzabili
-- ✅ Supporto multi-lingua
-- ✅ Componenti Filament
-- ✅ Widgets dashboard
-- ✅ Form personalizzati
-- ✅ InlineDatePicker con date selettive
-- ✅ Stili CSS moderni
-
-### 🚀 Installazione
-```bash
-composer require modules/ui
-php artisan module:enable UI
-php artisan ui:install
-```
-
-### 📚 Documentazione
-Consulta la [documentazione completa](docs/module_ui.md) per:
-- [Componenti](docs/components.md)
-- [Layouts](docs/layouts.md)
-- [Temi](docs/themes.md)
-
-## 🇬🇧 English
-
-### 📝 Description
-The UI module provides a complete set of reusable user interface components for Laravel applications, based on Filament and Blade.
-
-### ✨ Key Features
-- ✅ Reusable Blade components
-- ✅ Predefined layouts
-- ✅ Customizable themes
-- ✅ Multi-language support
-- ✅ Filament components
-- ✅ Dashboard widgets
-- ✅ Custom forms
-- ✅ InlineDatePicker with selective dates
-- ✅ Modern CSS styles
-
-### 🚀 Installation
-```bash
-composer require modules/ui
-php artisan module:enable UI
-php artisan ui:install
-```
-
-### 📚 Documentation
-Check out the [complete documentation](docs/module_ui.md) for:
-- [Components](docs/components.md)
-- [Layouts](docs/layouts.md)
-- [Themes](docs/themes.md)
-
-## 🇪🇸 Español
-
-### 📝 Descripción
-El módulo UI proporciona un conjunto completo de componentes de interfaz de usuario reutilizables para aplicaciones Laravel, basados en Filament y Blade.
-
-### ✨ Características Principales
-- ✅ Componentes Blade reutilizables
-- ✅ Layouts predefinidos
-- ✅ Temas personalizables
-- ✅ Soporte multi-idioma
-- ✅ Componentes Filament
-- ✅ Widgets de dashboard
-- ✅ Formularios personalizados
-- ✅ InlineDatePicker con fechas selectivas
-- ✅ Estilos CSS modernos
-
-### 🚀 Instalación
-```bash
-composer require modules/ui
-php artisan module:enable UI
-php artisan ui:install
-```
-
-### 📚 Documentación
-Consulta la [documentación completa](docs/module_ui.md) para:
-- [Componentes](docs/components.md)
-- [Layouts](docs/layouts.md)
-- [Temas](docs/themes.md)
-
-## 🤝 Contribuire / Contributing / Contribuir
-
-Siamo aperti a contribuzioni! Consulta le nostre [linee guida per i contributori](.github/CONTRIBUTING.md).
-
-We are open to contributions! Check out our [contributor guidelines](.github/CONTRIBUTING.md).
-
-¡Estamos abiertos a contribuciones! Consulta nuestras [pautas para contribuidores](.github/CONTRIBUTING.md).
-
-## 📄 Licenza / License / Licencia
-
-Questo progetto è distribuito sotto la licenza MIT. Vedi il file [LICENSE](LICENSE) per maggiori dettagli.
-
-This project is distributed under the MIT license. See the [LICENSE](LICENSE) file for more details.
-
-Este proyecto está distribuido bajo la licencia MIT. Ver el archivo [LICENSE](LICENSE) para más detalles.
-
----
-<<<<<<< HEAD
-| Lingua | Link |
+| Tipo | Link |
 |--------|------|
 | 🇮🇹 Presentazione | Questo file (`README.md`) |
 | 🇬🇧 Business card | [docs/readme-en.md](./docs/readme-en.md) |
-| 📚 Wiki tecnica | [./docs/wiki/](./docs/) |
+| 📚 Wiki tecnica | [./docs/](./docs/) |
+| 🗺️ Mappa tecnica docs | [docs/README.md](./docs/README.md) |
+| 🎯 Esempi | [docs/examples/](./docs/examples/) |
+| 📋 Story BMAD | [docs/stories/](./docs/stories/) |
+| 🏗️ Architettura | [docs/architecture.md](./docs/architecture.md) |
+| 🧪 Testing | [docs/testing.md](./docs/testing.md) |
+| 📜 Changelog | [CHANGELOG.md](./CHANGELOG.md) |
+| 📐 Regole del progetto | [../../../docs/wiki/](../../../docs/wiki/) |
+| 🏠 README del progetto | [../../../README.md](../../../README.md) |
+
+## 🔧 Tecnologie chiave
+| Presentazione (IT) | Questo file (`README.md`) |
+| Business card (EN) | [docs/readme-en.md](./docs/readme-en.md) |
+| Wiki tecnica | [./docs/](./docs/) |
+| Mappa tecnica docs | [docs/README.md](./docs/README.md) |
+| Esempi | [docs/examples/](./docs/examples/) |
+| Story BMAD | [docs/stories/](./docs/stories/) |
+| Architettura | [docs/architecture.md](./docs/architecture.md) |
+| Testing | [docs/testing.md](./docs/testing.md) |
+| Changelog | [CHANGELOG.md](./CHANGELOG.md) |
+| Regole del progetto | [../../../docs/wiki/](../../../docs/wiki/) |
+| README del progetto | [../../../README.md](../../../README.md) |
+
+## Tecnologie chiave
+
+**Stack principale:** Laravel 13, Filament 5, XotBase
+
+**Keywords:** UI, Components, Design System
+
+## Qualità e manutenzione
+
+Mantenere `declare(strict_types=1);` in PHP, aderire alla configurazione PHPStan del progetto e aggiornare i docs quando i contratti evolvono.
 
 ---
 
-**Modulo** `ui` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5
-=======
->>>>>>> 6ed19256f (.)
+**Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+
+## Scheda tecnica verificata (2026-10-07)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `UI` |
+| Namespace | `Modules\UI\` |
+| File PHP (escluso vendor) | 747 |
+| File PHP di test | 81 |
+| Aree `app/` rilevate | Actions, Adapters, Console, Contracts, Data, Datas, Enums, Filament, Forms, Http, Livewire, Models, Providers, Rules, Services, Traits, View |
+| Migrazioni PHP | 3 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/UI
+./vendor/bin/pest Modules/UI
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.
+**Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+**Modulo** `UI` · **Laraxot ecosystem** · **Project-agnostic** · PHPStan 10 · Filament 5
+
+## Scheda tecnica verificata (2026-10-07)
+
+| Voce | Valore |
+|---|---|
+| Nome dichiarato | `UI` |
+| Namespace | `Modules\UI\` |
+| File PHP (escluso vendor) | 747 |
+| File PHP di test | 81 |
+| Aree `app/` rilevate | Actions, Adapters, Console, Contracts, Data, Datas, Enums, Filament, Forms, Http, Livewire, Models, Providers, Rules, Services, Traits, View |
+| Migrazioni PHP | 3 |
+| SSoT locale | [`docs/`](docs/) e [`docs/bmad/`](docs/bmad/) |
+
+Questa scheda è un inventario statico, non una dichiarazione di qualità. Per ogni
+modifica eseguire i gate dal progetto Laravel:
+
+```bash
+cd laravel
+php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/UI
+./vendor/bin/pest Modules/UI
+```
+
+La responsabilità del modulo, le decisioni architetturali e le opportunità sono
+documentate negli artefatti BMAD sotto [`docs/bmad/`](docs/bmad/). I numeri vanno
+rigenerati quando il modulo cambia; non copiarli in badge non verificati.

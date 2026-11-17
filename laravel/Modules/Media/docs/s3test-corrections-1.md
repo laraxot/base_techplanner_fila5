@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Correzioni S3Test.php - Modulo Media"
+module: "Media"
+type: concept
+tags: [s3test, corrections, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "s3test corrections 1"
+related:
+  - "./webm.md"
+---
 # Correzioni S3Test.php - Modulo Media
 
 ## Problemi Identificati e Risolti
@@ -244,24 +257,15 @@ private function getSolutionForError(?string $errorCode): string
 
 ## Collegamenti
 
-- [Documentazione Generale Media](../README.md)
-- [Best Practice Traduzioni](../../../docs/translation-standards.md)
-- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
-<<<<<<< HEAD
-||||||| parent of 53258b2 (.)
 - [Documentazione Generale Media](../readme.md)
-- [Best Practice Traduzioni](../../../docs/translation-standards.md)
-- [Convenzioni Laraxot](../../../docs/laraxot_conventions.md)
-=======
->>>>>>> 6ed19256f (.)
-- [PHPStan Level 10 Fixes](./phpstan_level10_fixes.md)
+---
+- [Documentazione Generale Media](README.md)
+- [Best Practice Traduzioni](../../../../docs/translation-standards.md)
+- [Convenzioni Laraxot](../../../../docs/laraxot_conventions.md)
+- [PHPStan Level 10 Fixes](archive/phpstan_level10_fixes.md)
 
 ---
 
 **Ultimo aggiornamento**: Gennaio 2025
 **Autore**: Sistema di correzione automatica
-<<<<<<< HEAD
 **Stato**: ✅ Completato e verificato
-=======
-**Stato**: ✅ Completato e verificato
->>>>>>> 6ed19256f (.)

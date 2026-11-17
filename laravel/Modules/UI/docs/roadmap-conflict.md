@@ -1,3 +1,10 @@
+---
+title: "🎨 UI MODULE - ROADMAP 2025"
+qmd: "ui roadmap conflict md"
+type: note
+tags: [documentation]
+---
+
 # 🎨 UI MODULE - ROADMAP 2025
 
 **Modulo**: UI (User Interface Components & Design System)
@@ -289,19 +296,10 @@ UI Module
 
 ---
 
-**Last Updated**: 2025-10-01
-**Next Review**: 2025-11-01
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 **Status**: 🚧 ACTIVE DEVELOPMENT
 **Confidence Level**: 90%
 
 ---
 
-<<<<<<< HEAD
 *Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
-=======
-*Questa roadmap è specifica per il modulo UI e viene aggiornata regolarmente in base ai progressi e alle nuove esigenze.*
->>>>>>> 6ed19256f (.)

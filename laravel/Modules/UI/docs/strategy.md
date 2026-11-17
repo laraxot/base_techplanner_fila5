@@ -1,3 +1,10 @@
+---
+title: "Product Strategy: UI Module"
+qmd: "ui strategy md"
+type: note
+tags: [documentation]
+---
+
 # Product Strategy: UI Module
 
 ## 🌍 Market Context

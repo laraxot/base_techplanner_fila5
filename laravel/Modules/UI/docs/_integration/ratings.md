@@ -1,3 +1,10 @@
+---
+title: "ratings"
+qmd: "ui integration ratings md"
+type: note
+tags: [documentation]
+---
+
 # ratings
 
 <!-- Contenuto migrato da _docs/ratings.txt -->

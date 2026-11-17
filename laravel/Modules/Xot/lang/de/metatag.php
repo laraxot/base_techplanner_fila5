@@ -10,7 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Gestione dei meta tag e SEO del sito',
         ],
-        'label' => 'metatag',
+        'label' => 'Metatag',
         'sort' => '16',
         'icon' => 'xot-metatag',
     ],
@@ -46,12 +46,9 @@ return [
                 'placeholder' => 'Inserisci l\'URL canonico',
                 'help' => 'URL canonico per evitare contenuti duplicati',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'social' => [
             'og_title' => [
@@ -79,13 +76,10 @@ return [
                     'player' => 'Card per contenuti multimediali',
                 ],
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'site' => [
             'sitename' => [
@@ -108,13 +102,10 @@ return [
                 'placeholder' => 'Inserisci il copyright',
                 'help' => 'Informazioni sul copyright del sito',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'appearance' => [
             'logo_header' => [
@@ -145,13 +136,10 @@ return [
                     'help' => 'Codice colore esadecimale',
                 ],
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'contact' => [
             'email' => [
@@ -169,13 +157,10 @@ return [
                 'placeholder' => 'Inserisci l\'indirizzo',
                 'help' => 'Indirizzo fisico dell\'attività',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -238,9 +223,6 @@ return [
             'oversized_image' => 'Immagine social troppo grande',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -4,29 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Filament;
 
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> 6ed19256f (.)
 use Filament\Navigation\NavigationItem;
 use Illuminate\Contracts\Auth\Authenticatable;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Str;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Modules\GetTenantModulesAction;
+use Modules\Xot\Actions\Cast\SafeIntCastAction;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Actions\Module\GetModulePathByGeneratorAction;
-<<<<<<< HEAD
-
-use function Safe\json_encode;
-
 use Spatie\QueueableAction\QueueableAction;
-=======
-use function Safe\json_encode;
-use Spatie\QueueableAction\QueueableAction;
-use Throwable;
->>>>>>> 6ed19256f (.)
 use Webmozart\Assert\Assert;
+
+use function Safe\json_encode;
 
 /**
  * Classe per gestire gli elementi di navigazione per i moduli.
@@ -45,15 +36,7 @@ class GetModulesNavigationItems
     {
         $navs = [];
 
-        $modules = TenantService::allModules();
-        // TenantService::allModules() restituisce sempre array
-        // Pre-load user roles to avoid N+1 queries
-        /** @var Authenticatable|null $user */
-        $user = Auth::user();
-
-        /** @var array<int, string> $userRoles */
-        $userRoles = [];
-        // Se serve re-introdurre un preload ruoli, farlo solo se il metodo è disponibile e tipizzato nel modello.
+        $modules = app(GetTenantModulesAction::class)->execute();
 
         foreach ($modules as $module) {
             Assert::string($module, 'Il nome del modulo deve essere una stringa');
@@ -64,11 +47,7 @@ class GetModulesNavigationItems
             // Tolleranza: durante comandi CLI alcuni moduli possono non avere ancora struttura completa
             try {
                 $configPath = app(GetModulePathByGeneratorAction::class)->execute($module, 'config');
-<<<<<<< HEAD
             } catch (\Throwable $e) {
-=======
-            } catch (Throwable $e) {
->>>>>>> 6ed19256f (.)
                 // Skip modulo non pronto/senza generator path config
                 continue;
             }
@@ -84,11 +63,7 @@ class GetModulesNavigationItems
                 /** @var array<string, mixed> $config */
                 $config = File::getRequire($configFilePath);
                 Assert::isArray($config, 'Il file di configurazione deve restituire un array');
-<<<<<<< HEAD
             } catch (\Exception $e) {
-=======
-            } catch (Exception $e) {
->>>>>>> 6ed19256f (.)
                 continue;
             }
 
@@ -103,24 +78,7 @@ class GetModulesNavigationItems
             Assert::integerish($navigation_sort, 'navigation_sort deve essere un intero');
             $navigation_sort = (int) $navigation_sort;
 
-            // Check role using pre-loaded roles instead of hasRole() method
-            /*
-             $hasRole = in_array($role, $userRoles, true);
-
-             // Only create NavigationItem if user has the role (memory optimization)
-             if ($hasRole) {
-                 $nav = NavigationItem::make($module)
-                     ->url('/'.$module_low.'/admin')
-                     ->icon($icon)
-                     ->group('Modules')
-                     ->sort($navigation_sort)
-                     ->visible(true); // Already checked above
-
-                 $navs[] = $nav;
-             }
-             */
-
-            // Creiamo l'elemento di navigazione
+            // Il ruolo viene verificato lazy in visible(), per utente corrente
             $nav = NavigationItem::make($module)
                 ->url('/'.$module_low.'/admin')
                 ->icon($icon)
@@ -131,11 +89,7 @@ class GetModulesNavigationItems
                      * @var Authenticatable|null $user
                      */
                     $user = Auth::user();
-<<<<<<< HEAD
-                    if (null === $user) {
-=======
                     if ($user === null) {
->>>>>>> 6ed19256f (.)
                         return false;
                     }
 
@@ -144,10 +98,6 @@ class GetModulesNavigationItems
                         return false;
                     }
 
-<<<<<<< HEAD
-=======
-                    /** @phpstan-ignore-next-line */
->>>>>>> 6ed19256f (.)
                     return (bool) $user->hasRole($role);
                 });
 
@@ -165,8 +115,7 @@ class GetModulesNavigationItems
      */
     public function getCachedModuleConfigs(): array
     {
-        $modules = TenantService::allModules();
-        // TenantService::allModules() restituisce sempre array
+        $modules = app(GetTenantModulesAction::class)->execute();
 
         $cacheKey = 'xot:navigation:modules:'.md5((string) json_encode($modules));
 
@@ -193,19 +142,15 @@ class GetModulesNavigationItems
                     /** @var array<string, mixed> $config */
                     $config = File::getRequire($configFilePath);
                     Assert::isArray($config);
-<<<<<<< HEAD
                 } catch (\Exception $e) {
-=======
-                } catch (Exception $e) {
->>>>>>> 6ed19256f (.)
                     continue;
                 }
                 $icon = $config['icon'] ?? 'heroicon-o-cube';
-                $navigation_sort = (int) ($config['navigation_sort'] ?? 1);
+                $navigation_sort = SafeIntCastAction::cast($config['navigation_sort'] ?? 1);
                 $out[] = [
                     'module' => $module,
                     'module_low' => $module_low,
-                    'icon' => (string) $icon,
+                    'icon' => SafeStringCastAction::cast($icon),
                     'sort' => $navigation_sort,
                 ];
             }
@@ -226,11 +171,7 @@ class GetModulesNavigationItems
             Assert::integer($item['sort']);
         }
 
-<<<<<<< HEAD
         /* @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
-=======
-        /** @var array<int, array{module: string, module_low: string, icon: string, sort: int}> $result */
->>>>>>> 6ed19256f (.)
         return $result;
     }
 }

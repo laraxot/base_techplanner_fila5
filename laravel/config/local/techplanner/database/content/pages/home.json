@@ -1,12 +1,8 @@
 {
     "id": "1",
     "title": {
-<<<<<<< HEAD
         "it": "Consulenza Sicurezza Studi Professionali | Sottana Service",
         "en": "Safety Consulting for Professional Studios | Sottana Service"
-=======
-        "it": "TechPlanner - Sistema di Gestione Tecnica"
->>>>>>> 6ed19256f (.)
     },
     "slug": "home",
     "middleware": null,
@@ -17,15 +13,14 @@
                 "type": "hero",
                 "slug": "hero-section",
                 "data": {
-<<<<<<< HEAD
                     "view": "pub_theme::components.blocks.hero.simple",
                     "title": "Consulenza Sicurezza e Conformità per Studi Professionali",
-                    "subtitle": "Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie. Conformità D.Lgs 101/2020 e massima tutela di pazienti e operatori.",
+                    "subtitle": "Specialisti in radioprotezione, elettromedicali e sicurezza per studi dentistici e cliniche veterinarie. Consulenza per la conformità al D.Lgs 101/2020 e per la tutela di pazienti e operatori.",
                     "primary_cta_label": "Richiedi Consulenza",
-                    "primary_cta_url": "/it/contatti",
+                    "primary_cta_url": "{{ route('container0.index',['container0'=>'contacts']) }}",
                     "secondary_cta_label": "Scopri i Servizi",
-                    "secondary_cta_url": "/it/servizi",
-                    "image": "/images/hero-bg.jpg"
+                    "secondary_cta_url": "{{ route('container0.index',['container0'=>'services']) }}",
+                    "image": "/images/hero-bg-2000.jpg"
                 }
             },
             {
@@ -41,96 +36,27 @@
                             "title": "Autorizzazioni Sanitarie",
                             "description": "Supporto completo per ottenere e mantenere le autorizzazioni sanitarie necessarie per studi dentistici e cliniche veterinarie con apparecchiature radiologiche.",
                             "icon": "heroicon-o-shield-check",
-                            "url": "/it/servizi",
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}",
                             "cta": "Scopri di più"
                         },
                         {
                             "title": "Controllo Apparecchi RX ed Elettromedicali",
                             "description": "Verifiche periodiche di sicurezza e funzionalità su apparecchiature radiologiche (RX, OPT, CBCT) e dispositivi elettromedicali (IEC 62353).",
                             "icon": "heroicon-o-wrench-screwdriver",
-                            "url": "/it/servizi",
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}",
                             "cta": "Scopri di più"
                         },
                         {
                             "title": "Documenti di Valutazione del Rischio",
                             "description": "Redazione e aggiornamento di tutti i documenti obbligatori: DVR, relazioni tecniche, nomine degli esperti di radioprotezione e registri di controllo.",
                             "icon": "heroicon-o-clipboard-document",
-                            "url": "/it/servizi",
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}",
                             "cta": "Scopri di più"
-=======
-                    "view": "pub_theme::components.blocks.hero.main",
-                    "title": "Benvenuto in TechPlanner",
-                    "subtitle": "Sistema avanzato di gestione tecnica e pianificazione aziendale",
-                    "description": "Gestisci dipendenti, progetti e risorse in modo efficiente con il nostro sistema integrato.",
-                    "background_image": "/images/hero-bg.jpg",
-                    "cta_primary": {
-                        "label": "Inizia Ora",
-                        "url": "/admin",
-                        "style": "primary"
-                    },
-                    "cta_secondary": {
-                        "label": "Scopri di Più",
-                        "url": "#features",
-                        "style": "secondary"
-                    }
-                }
-            },
-            {
-                "type": "features",
-                "slug": "features-grid",
-                "data": {
-                    "view": "pub_theme::components.blocks.features.grid",
-                    "title": "Funzionalità Principali",
-                    "description": "Tutto quello che ti serve per gestire la tua azienda",
-                    "features": [
-                        {
-                            "icon": "heroicon-o-users",
-                            "title": "Gestione Dipendenti",
-                            "description": "Gestisci il personale, presenze e performance in un unico posto",
-                            "url": "/employee/admin",
-                            "color": "blue"
-                        },
-                        {
-                            "icon": "heroicon-o-chart-bar",
-                            "title": "Analytics & Report",
-                            "description": "Visualizza statistiche dettagliate e genera report personalizzati",
-                            "url": "/chart/admin",
-                            "color": "green"
-                        },
-                        {
-                            "icon": "heroicon-o-cog-6-tooth",
-                            "title": "Configurazione",
-                            "description": "Personalizza il sistema secondo le tue esigenze aziendali",
-                            "url": "/admin/settings",
-                            "color": "purple"
-                        },
-                        {
-                            "icon": "heroicon-o-calendar",
-                            "title": "Pianificazione",
-                            "description": "Organizza progetti, scadenze e milestone importanti",
-                            "url": "/admin/planning",
-                            "color": "orange"
-                        },
-                        {
-                            "icon": "heroicon-o-shield-check",
-                            "title": "Sicurezza",
-                            "description": "Controllo accessi avanzato e audit trail completo",
-                            "url": "/admin/security",
-                            "color": "red"
-                        },
-                        {
-                            "icon": "heroicon-o-document-text",
-                            "title": "Documentazione",
-                            "description": "Guide complete e documentazione tecnica sempre aggiornata",
-                            "url": "/docs",
-                            "color": "indigo"
->>>>>>> 6ed19256f (.)
                         }
                     ]
                 }
             },
             {
-<<<<<<< HEAD
                 "type": "why-critical",
                 "slug": "why-critical-section",
                 "data": {
@@ -138,7 +64,7 @@
                     "title": "Perché la Radioprotezione è Critica?",
                     "subtitle": "Non è solo burocrazia: è la base per operare in sicurezza e legalità nel settore sanitario.",
                     "id": "perche-critico",
-                    "cards": [
+                    "points": [
                         {
                             "title": "Rischi e Sanzioni",
                             "description": "La mancata conformità comporta sanzioni penali e amministrative pesanti, oltre al rischio di sospensione dell'attività.",
@@ -180,7 +106,8 @@
                                 "Ortopantomografia (OPT) - Controllo qualità e sicurezza per panoramiche dentali",
                                 "CBCT (Cone Beam) - Protocolli avanzati per tomografia computerizzata a fascio conico"
                             ],
-                            "image": "/images/medical-equipment.jpg"
+                            "image": "/themes/Two/images/service-patient-safety.jpg",
+                            "image_alt": "Sala di uno studio odontoiatrico con poltrona del paziente, riunito e panca azzurra"
                         },
                         {
                             "title": "Medicina Veterinaria",
@@ -189,7 +116,8 @@
                             "use_cases": [
                                 "Radiologia Digitale e Analogica - Controlli su sistemi RX fissi e portatili per animali"
                             ],
-                            "image": "/images/veterinary-radiology.jpg"
+                            "image": "/themes/Two/images/veterinary-radiology.jpg",
+                            "image_alt": "Sala medica d'epoca con una radiografia del torace su un negatoscopio e una scrivania con un telefono"
                         }
                     ]
                 }
@@ -200,7 +128,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.what-we-do.checklist",
                     "title": "Cosa Controlliamo?",
-                    "subtitle": "Il nostro protocollo di verifica copre ogni aspetto della sicurezza radiologica. Dall'efficienza delle macchine alla protezione strutturale, nulla viene lasciato al caso per garantire la totale conformità al D.Lgs 101/2020.",
+                    "subtitle": "Le verifiche riguardano gli aspetti della sicurezza radiologica elencati di seguito, dall'efficienza delle macchine alla protezione strutturale.",
                     "intro": "Un controllo accurato previene guasti, sovraesposizioni e sanzioni, proteggendo il tuo investimento e la tua reputazione professionale.",
                     "id": "controlli",
                     "checklist": [
@@ -228,80 +156,6 @@
                             "title": "Documentazione e Registri",
                             "description": "Audit sulla corretta tenuta della documentazione obbligatoria.",
                             "icon": "heroicono-document-check"
-=======
-                "type": "stats",
-                "slug": "stats-section",
-                "data": {
-                    "view": "pub_theme::components.blocks.stats.overview",
-                    "title": "TechPlanner in Numeri",
-                    "background_color": "bg-gray-50",
-                    "stats": [
-                        {
-                            "number": "500+",
-                            "label": "Aziende Attive",
-                            "description": "Utilizzano TechPlanner quotidianamente"
-                        },
-                        {
-                            "number": "15.000+",
-                            "label": "Dipendenti Gestiti",
-                            "description": "Attraverso la nostra piattaforma"
-                        },
-                        {
-                            "number": "99.9%",
-                            "label": "Uptime",
-                            "description": "Affidabilità garantita 24/7"
-                        },
-                        {
-                            "number": "50+",
-                            "label": "Integrazioni",
-                            "description": "Con i principali software aziendali"
->>>>>>> 6ed19256f (.)
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "testimonials",
-<<<<<<< HEAD
-                "slug": "testimonials-section",
-                "data": {
-                    "view": "ui::empty",
-                    "view_2": "pub_theme::components.blocks.testimonials.slider",
-                    "title": "Dicono di Noi",
-                    "subtitle": "La tranquillità di chi ha scelto la sicurezza certificata",
-                    "id": "testimonials",
-                    "testimonials": [
-                        {
-                            "name": "Dr. Roberto Magni",
-                            "role": "Centro Odontoiatrico Magni",
-                            "location": "Padova, PD",
-                            "image": "/themes/Two/images/testimonial-1.jpg",
-                            "content": "La gestione della radioprotezione era un incubo burocratico. Con Marco abbiamo non solo messo tutto in regola secondo il D.Lgs 101/2020, ma dormiamo sonni tranquilli sapendo che i controlli sono precisi e puntuali.",
-                            "date": "15 gennaio 2026"
-                        },
-                        {
-                            "name": "Dr.ssa Elena Visentin",
-                            "role": "Clinica Veterinaria San Marco",
-                            "location": "Mestre, VE",
-                            "image": "/themes/Two/images/testimonial-2.jpg",
-                            "content": "Professionalità assoluta nel controllo delle nostre apparecchiature radiologiche. Le verifiche sono meticolose e le spiegazioni chiare. Un partner indispensabile per la sicurezza del nostro staff e dei pazienti animali.",
-                            "date": "20 novembre 2025"
-                        },
-                        {
-                            "name": "Dr. Paolo Verdi",
-                            "role": "Studio Odontoiatrico Verdi",
-                            "location": "Treviso, TV",
-                            "image": "/themes/Two/images/testimonial-3.jpg",
-                            "content": "Ho richiesto un audit completo sugli elettromedicali e la radioprotezione. Servizio eccellente, report dettagliati e piena disponibilità. La competenza tecnica di Marco è evidente.",
-                            "date": "5 dicembre 2025"
-                        },
-                        {
-                            "name": "Dr.ssa Giulia Bianchi",
-                            "role": "VetLife Ambulatorio",
-                            "location": "Vicenza, VI",
-                            "image": "/themes/Two/images/testimonial-4.jpg",
-                            "content": "Finalmente qualcuno che conosce le specificità della radiologia veterinaria. I consigli sulle schermature e le procedure di sicurezza hanno migliorato notevolmente il nostro flusso di lavoro.",
-                            "date": "1 febbraio 2026"
                         }
                     ]
                 }
@@ -316,58 +170,13 @@
                     "title": "Radiation Protection and Safety for Dental and Veterinary Studios",
                     "subtitle": "Specialized consulting for dental and veterinary studios. Periodic checks, electromedical verifications and compliance with D.Lgs 101/2020.",
                     "primary_cta_label": "Request Consultation",
-                    "primary_cta_url": "/en/contacts",
+                    "primary_cta_url": "{{ route('container0.index',['container0'=>'contacts']) }}",
                     "secondary_cta_label": "Discover Services",
-                    "secondary_cta_url": "/en/services",
-                    "image": "https://images.unsplash.com/photo-1613186267015-46dc938f2b8f?w=1920&q=80",
-                    "stats": [
-                        {
-                            "label": "D.Lgs 101/2020 Compliance",
-                            "value": "100%"
-                        },
-                        {
-                            "label": "Radiation Protection Experts",
-                            "value": "Certified"
-                        },
-                        {
-                            "label": "Intervention in 24/48h",
-                            "value": "Fast"
-=======
-                "slug": "testimonials",
-                "data": {
-                    "view": "pub_theme::components.blocks.testimonials.carousel",
-                    "title": "Cosa Dicono i Nostri Clienti",
-                    "testimonials": [
-                        {
-                            "content": "TechPlanner ha rivoluzionato la gestione del nostro personale. Ora tutto è più efficiente e organizzato.",
-                            "author": "Marco Rossi",
-                            "role": "CEO",
-                            "company": "Innovazione S.r.l.",
-                            "avatar": "/images/testimonial-1.jpg",
-                            "rating": 5
-                        },
-                        {
-                            "content": "L'interfaccia è intuitiva e le funzionalità sono esattamente quello che cercavamo per la nostra PMI.",
-                            "author": "Laura Bianchi",
-                            "role": "HR Manager",
-                            "company": "Tech Solutions",
-                            "avatar": "/images/testimonial-2.jpg",
-                            "rating": 5
-                        },
-                        {
-                            "content": "Il supporto tecnico è eccezionale e l'implementazione è stata rapida e senza problemi.",
-                            "author": "Giuseppe Verdi",
-                            "role": "IT Director",
-                            "company": "Manifattura Italiana",
-                            "avatar": "/images/testimonial-3.jpg",
-                            "rating": 5
->>>>>>> 6ed19256f (.)
-                        }
-                    ]
+                    "secondary_cta_url": "{{ route('container0.index',['container0'=>'services']) }}",
+                    "image": "/images/stock/unsplash-1613186267015-46dc938f2b8f-1920.jpg"
                 }
             },
             {
-<<<<<<< HEAD
                 "type": "services-grid",
                 "slug": "main-services",
                 "data": {
@@ -378,80 +187,46 @@
                     "services": [
                         {
                             "title": "Radiation Protection Control",
-                            "description": "Periodic and extraordinary checks for radiological equipment in dental and veterinary fields. D.Lgs 101/2020 compliance guarantee.",
+                            "description": "Periodic and extraordinary checks for radiological equipment in dental and veterinary fields, for D.Lgs 101/2020 compliance.",
                             "icon": "heroicon-o-shield-check",
-                            "url": "/en/services"
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}"
                         },
                         {
                             "title": "Electromedical Checks",
                             "description": "Preventive maintenance and electrical safety checks on all medical devices (IEC 62353), ensuring functionality and safety.",
                             "icon": "heroicon-o-wrench-screwdriver",
-                            "url": "/en/services"
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}"
                         },
                         {
                             "title": "Veterinary Biosafety",
                             "description": "Specific biosafety protocols for veterinary clinics, staff training and management of healthcare waste.",
                             "icon": "heroicon-o-heart",
-                            "url": "/en/services"
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}"
                         },
                         {
                             "title": "Staff Training",
                             "description": "Training courses for doctors, dentists, technicians and healthcare staff on radiation protection and safety.",
                             "icon": "heroicon-o-academic-cap",
-                            "url": "/en/services"
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}"
                         },
                         {
                             "title": "Document Management",
                             "description": "Support in managing mandatory documentation, registers, technical reports and communications to competent authorities.",
                             "icon": "heroicon-o-clipboard-document",
-                            "url": "/en/services"
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}"
                         },
                         {
                             "title": "Technical Consulting",
                             "description": "Personalized consulting for workplace compliance, risk assessment and safety plans.",
                             "icon": "heroicon-o-user-group",
-                            "url": "/en/services"
+                            "url": "{{ route('container0.index',['container0'=>'services']) }}"
                         }
                     ]
-                }
-            },
-            {
-                "type": "newsletter",
-                "slug": "newsletter-section",
-                "data": {
-                    "view": "pub_theme::components.blocks.newsletter.simple",
-                    "title": "Stay Updated",
-                    "description": "Subscribe to our newsletter to receive regulatory updates, practical tips and exclusive offers for your studio.",
-                    "placeholder": "Your email",
-                    "button_label": "Subscribe",
-                    "privacy_text": "No spam, only quality content. You can unsubscribe anytime.",
-                    "bg_color": "brand-blue"
-=======
-                "type": "cta",
-                "slug": "final-cta",
-                "data": {
-                    "view": "pub_theme::components.blocks.cta.banner",
-                    "title": "Pronto a Iniziare?",
-                    "description": "Unisciti alle centinaia di aziende che hanno già scelto TechPlanner per gestire il loro business.",
-                    "background_color": "bg-blue-600",
-                    "text_color": "text-white",
-                    "cta_primary": {
-                        "label": "Accedi al Sistema",
-                        "url": "/admin",
-                        "style": "white"
-                    },
-                    "cta_secondary": {
-                        "label": "Richiedi Demo",
-                        "url": "/contact",
-                        "style": "outline-white"
-                    }
->>>>>>> 6ed19256f (.)
                 }
             }
         ]
     },
     "sidebar_blocks": {
-<<<<<<< HEAD
         "it": [],
         "en": []
     },
@@ -461,72 +236,6 @@
     },
     "created_at": "2025-07-08T09:02:57.000000Z",
     "updated_at": "2026-02-06T18:00:00.000000Z",
-=======
-        "it": [
-            {
-                "type": "quick-links",
-                "slug": "quick-links",
-                "data": {
-                    "view": "pub_theme::components.blocks.sidebar.quick-links",
-                    "title": "Accesso Rapido",
-                    "links": [
-                        {
-                            "label": "Dashboard Admin",
-                            "url": "/admin",
-                            "icon": "heroicon-o-squares-2x2"
-                        },
-                        {
-                            "label": "Gestione Dipendenti",
-                            "url": "/employee/admin",
-                            "icon": "heroicon-o-users"
-                        },
-                        {
-                            "label": "Report e Analytics",
-                            "url": "/chart/admin",
-                            "icon": "heroicon-o-chart-bar"
-                        },
-                        {
-                            "label": "Documentazione",
-                            "url": "/docs",
-                            "icon": "heroicon-o-document-text"
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "system-info",
-                "slug": "system-info",
-                "data": {
-                    "view": "pub_theme::components.blocks.sidebar.system-info",
-                    "title": "Informazioni Sistema",
-                    "info": [
-                        {
-                            "label": "Versione",
-                            "value": "{{ app()->version() }}"
-                        },
-                        {
-                            "label": "Ambiente",
-                            "value": "{{ app()->environment() }}"
-                        },
-                        {
-                            "label": "Lingua",
-                            "value": "{{ app()->getLocale() }}"
-                        },
-                        {
-                            "label": "Tema",
-                            "value": "Sixteen"
-                        }
-                    ]
-                }
-            }
-        ]
-    },
-    "footer_blocks": {
-        "it": []
-    },
-    "created_at": "2025-07-08T09:02:57.000000Z",
-    "updated_at": "2025-01-06T15:30:00.000000Z",
->>>>>>> 6ed19256f (.)
     "created_by": null,
     "updated_by": "01985ae8-8039-71ea-88c7-54ebce6295b0"
 }

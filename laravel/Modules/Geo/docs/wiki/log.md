@@ -1,9 +1,39 @@
+---
+title: "log"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
+---
+
+## [2026-06-30] ponytail-audit | Phase 3 Finding 2 — BaseGeoService inlined into GoogleMapsService
+
+- **BaseGeoService eliminated** ✅
+  - Abstract class (143 lines) + single implementation (GoogleMapsService)
+  - Methods inlined into GoogleMapsService as private: getApiKey, makeRequest, buildHttpClient, getCacheKey, getServiceName
+  - File marked `.bak` (not deleted, per Ponytail methodology)
+  - PHPStan Level 10: ✅ PASS (0 errors)
+  - Pest: Tests failed due to DB infrastructure (not code-related)
+  - Net: -143 lines, -1 file dependency
+
+- Linked GitHub Issue: #237 — Ponytail Audit Phase 3 Architectural Review
+
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
 - Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
 title: "Geo Wiki Activity Log"
 module: "Geo"
 ---
@@ -79,3 +109,9 @@ module: "Geo"
 - Created INDEX.md for each section
 - Created module index.md
 - Ready for on-demand loading via QMD
+
+## [2026-10-14] DCP-152 marker e pulsanti del picker
+
+- `coordinate-picker-lit` include `markerCardStylesText` e accetta `marker-icon-url`, `marker-color`, `marker-label` (dettaglio ticket: tipo e stato noti).
+- Pulsanti `.ctrl-btn` protetti dal reset `button` delle pagine `data-dc` (`.map-container .ctrl-btn.ctrl-btn`).
+- Concept: `concepts/picker-marker-and-controls-on-host-pages.md`; story `stories/2026-10-14-dcp-152-...story.md`.

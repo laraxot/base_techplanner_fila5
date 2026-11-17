@@ -1,11 +1,14 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: migration-filament-4
-canonical: ../../../Themes/docs/shared-components/.gitkeep
+issues: []
+discussions: []
+title: "Migration Filament 4"
+module: "Media"
+type: concept
+tags: [migration, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migration filament 4"
+related:
+  - "./webm.md"
 ---
 
-See canonical documentation: ../../../Themes/docs/shared-components/.gitkeep
-=======
-
->>>>>>> 6ed19256f (.)

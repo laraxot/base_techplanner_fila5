@@ -5,11 +5,6 @@ declare(strict_types=1);
 return [
     'fields' => [
         'fields' => [
-            'label' => 'fields',
-            'placeholder' => 'fields',
-            'helper_text' => 'fields',
-            'description' => 'fields',
-<<<<<<< HEAD
             'tooltip' => '',
         ],
     ],
@@ -23,8 +18,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Translation Editor',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -35,8 +30,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Translation Editor',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

@@ -23,7 +23,6 @@ return [
             'placeholder' => 'Layout-Typ auswählen',
             'tooltip' => 'Zwischen Listen- und Rasteransicht wählen',
             'help' => 'Wählen Sie den am besten geeigneten Layout-Typ zur Anzeige der Daten',
-<<<<<<< HEAD
             'helper_text' => '',
             'description' => '',
         ],
@@ -37,8 +36,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

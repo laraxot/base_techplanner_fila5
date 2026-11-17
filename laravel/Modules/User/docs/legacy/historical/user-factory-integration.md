@@ -347,7 +347,7 @@ public function test_bulk_sti_creation()
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
 - [Traits Complete Guide](../user/docs/traits_complete_guide.md)
-- [Authentication Framework](../user/docs/authentication.md)
+- [Authentication Framework](../../authentication.md)
 
 ---
 
@@ -703,7 +703,7 @@ public function test_bulk_sti_creation()
 ### User Module
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
 - [Traits Complete Guide](../user/docs/traits_complete_guide.md)
-- [Authentication Framework](../user/docs/authentication.md)
+- [Authentication Framework](../../authentication.md)
 
 ---
 

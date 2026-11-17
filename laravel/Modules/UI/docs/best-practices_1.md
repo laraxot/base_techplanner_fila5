@@ -1,3 +1,10 @@
+---
+title: "Best Practices UI"
+qmd: "ui best practices 1 md"
+type: note
+tags: [documentation]
+---
+
 # Best Practices UI
 
 ## Principi Generali

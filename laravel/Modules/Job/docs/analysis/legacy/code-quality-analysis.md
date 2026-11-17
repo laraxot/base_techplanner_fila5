@@ -1,3 +1,14 @@
+---
+title: "code quality analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality analysis"
+issues: []
+discussions: []
+---
+
 # ⚙️ Job Module - Code Quality Analysis Report
 
 **Date**: 2025-11-11
@@ -80,5 +91,13 @@ The current analysis is incomplete and only shows partial results from PHPMD bef
 
 ---
 
+title: "code quality analysis"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "code quality analysis"
+issues: []
+discussions: []
 **Report Generated**: 2025-11-11
 **Target Completion**: 2025-11-15

@@ -4,20 +4,19 @@ declare(strict_types=1);
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Str;
+use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
-
-use function Pest\Laravel\get;
-use function Pest\Laravel\post;
+use PHPUnit\Framework\Assert;
 
 it('renders the registration page successfully', function () {
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('Create Your FREE Account')
         ->assertSee('No credit card required - 100% FREE forever!');
 });
 
 it('displays all required form fields', function () {
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('First Name')
         ->assertSee('Last Name')
@@ -29,20 +28,20 @@ it('displays all required form fields', function () {
 });
 
 it('displays all required consent checkboxes', function () {
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('I have read and understood the Privacy Policy')
         ->assertSee('I have read and accept the Terms and Conditions');
 });
 
 it('displays optional marketing consent', function () {
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('I want to receive pizza tips and meetup invitations (optional)');
 });
 
 it('requires first name to be filled', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'last_name' => 'Doe',
         'email' => 'john@example.com',
         'password' => 'Password123!',
@@ -55,7 +54,7 @@ it('requires first name to be filled', function () {
 });
 
 it('requires last name to be filled', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'email' => 'john@example.com',
         'password' => 'Password123!',
@@ -68,7 +67,7 @@ it('requires last name to be filled', function () {
 });
 
 it('requires email to be filled', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'password' => 'Password123!',
@@ -81,7 +80,7 @@ it('requires email to be filled', function () {
 });
 
 it('requires email to be valid format', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'invalid-email',
@@ -95,9 +94,9 @@ it('requires email to be valid format', function () {
 });
 
 it('requires email to be unique', function () {
-    User::factory()->create(['email' => 'john@example.com']);
+    UserFactory::new()->createOne(['email' => 'john@example.com']);
 
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -111,7 +110,7 @@ it('requires email to be unique', function () {
 });
 
 it('requires password to be filled', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -124,7 +123,7 @@ it('requires password to be filled', function () {
 });
 
 it('requires password confirmation to match', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -138,7 +137,7 @@ it('requires password confirmation to match', function () {
 });
 
 it('requires password to be at least 12 characters', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -152,7 +151,7 @@ it('requires password to be at least 12 characters', function () {
 });
 
 it('requires password to contain uppercase letter', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -166,7 +165,7 @@ it('requires password to contain uppercase letter', function () {
 });
 
 it('requires password to contain lowercase letter', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -180,7 +179,7 @@ it('requires password to contain lowercase letter', function () {
 });
 
 it('requires password to contain number', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -194,7 +193,7 @@ it('requires password to contain number', function () {
 });
 
 it('requires password to contain special character', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -208,7 +207,7 @@ it('requires password to contain special character', function () {
 });
 
 it('requires privacy policy consent to be accepted', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -221,7 +220,7 @@ it('requires privacy policy consent to be accepted', function () {
 });
 
 it('requires terms consent to be accepted', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john@example.com',
@@ -234,7 +233,7 @@ it('requires terms consent to be accepted', function () {
 });
 
 it('allows registration with all required fields and consents', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => 'john.doe@example.com',
@@ -247,11 +246,11 @@ it('allows registration with all required fields and consents', function () {
         ->assertStatus(302);
 
     // Verify user was created
-    expect(User::where('email', 'john.doe@example.com')->exists())->toBeTrue();
+    Assert::assertTrue(User::where('email', 'john.doe@example.com')->exists());
 });
 
 it('allows registration with optional marketing consent', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'Jane',
         'last_name' => 'Smith',
         'email' => 'jane.smith@example.com',
@@ -264,11 +263,11 @@ it('allows registration with optional marketing consent', function () {
         ->assertStatus(302);
 
     // Verify user was created
-    expect(User::where('email', 'jane.smith@example.com')->exists())->toBeTrue();
+    Assert::assertTrue(User::where('email', 'jane.smith@example.com')->exists());
 });
 
 it('stores user data correctly after successful registration', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'Alice',
         'last_name' => 'Johnson',
         'email' => 'alice@example.com',
@@ -281,17 +280,17 @@ it('stores user data correctly after successful registration', function () {
 
     $user = User::where('email', 'alice@example.com')->first();
 
-    expect($user)->not->toBeNull();
-    expect($user->first_name)->toBe('Alice');
-    expect($user->last_name)->toBe('Johnson');
-    expect($user->email)->toBe('alice@example.com');
-    expect($user->is_active)->toBeTrue();
+    Assert::assertNotNull($user);
+    Assert::assertSame('Alice', $user->first_name);
+    Assert::assertSame('Johnson', $user->last_name);
+    Assert::assertSame('alice@example.com', $user->email);
+    Assert::assertTrue($user->is_active);
 });
 
 it('hashes the password after registration', function () {
-    $plainPassword = 'MySecurePassword123!';
+    $plainPassword = config('app.test_password', 'test-password-123');
 
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'Bob',
         'last_name' => 'Wilson',
         'email' => 'bob@example.com',
@@ -303,13 +302,14 @@ it('hashes the password after registration', function () {
         ->assertStatus(302);
 
     $user = User::where('email', 'bob@example.com')->first();
+    Assert::assertNotNull($user);
 
-    expect($user->password)->not->toBe($plainPassword);
-    expect($user->password)->not->toBeEmpty();
+    Assert::assertNotSame($plainPassword, $user->password);
+    Assert::assertNotEmpty($user->password);
 });
 
 it('redirects after successful registration', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'Charlie',
         'last_name' => 'Brown',
         'email' => 'charlie@example.com',
@@ -323,7 +323,7 @@ it('redirects after successful registration', function () {
 });
 
 it('trims whitespace from input fields', function () {
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => '  John  ',
         'last_name' => '  Doe  ',
         'email' => '  john@example.com  ',
@@ -335,25 +335,26 @@ it('trims whitespace from input fields', function () {
         ->assertStatus(302);
 
     $user = User::where('email', 'john@example.com')->first();
+    Assert::assertNotNull($user);
 
-    expect($user->first_name)->toBe('John');
-    expect($user->last_name)->toBe('Doe');
-    expect($user->email)->toBe('john@example.com');
+    Assert::assertSame('John', $user->first_name);
+    Assert::assertSame('Doe', $user->last_name);
+    Assert::assertSame('john@example.com', $user->email);
 });
 
 it('prevents registration when already logged in', function () {
-    $user = User::factory()->create();
+    $user = UserFactory::new()->createOne();
 
     Auth::login($user);
 
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertRedirect();
 });
 
 it('handles very long input names correctly', function () {
     $longName = Str::random(250);
 
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => $longName,
         'last_name' => 'Doe',
         'email' => 'longname@example.com',
@@ -369,7 +370,7 @@ it('handles very long input names correctly', function () {
 it('handles very long email correctly', function () {
     $longEmail = Str::random(200).'@example.com';
 
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => $longEmail,
@@ -385,7 +386,7 @@ it('handles very long email correctly', function () {
 it('prevents SQL injection attempts in email', function () {
     $maliciousEmail = "john@example.com'; DROP TABLE users; --";
 
-    post('/en/auth/register', [
+    gdprPost('/en/auth/register', [
         'first_name' => 'John',
         'last_name' => 'Doe',
         'email' => $maliciousEmail,
@@ -399,21 +400,21 @@ it('prevents SQL injection attempts in email', function () {
 });
 
 it('displays login link on registration page', function () {
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('Already have an account?')
         ->assertSee('Login now');
 });
 
 it('contains proper SEO meta tags', function () {
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('<title>', false)
         ->assertSee('<nome progetto> Community');
 });
 
 it('has proper accessibility attributes', function () {
-    get('/en/auth/register')
+    gdprGet('/en/auth/register')
         ->assertStatus(200)
         ->assertSee('aria-label');
 });

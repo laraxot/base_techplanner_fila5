@@ -1,3 +1,10 @@
+---
+title: "Errori Comuni nei Componenti Filament UI"
+qmd: "ui filament components errors 1 md"
+type: note
+tags: [documentation]
+---
+
 # Errori Comuni nei Componenti Filament UI
 
 ## ⚠️ Errori di Metodi Non Supportati

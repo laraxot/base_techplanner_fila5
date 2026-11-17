@@ -8,7 +8,6 @@ return [
     'sent' => 'Nós enviamos um link de recuperação de senha por e-mail.',
     'token' => 'Este código de recuperação de senha é inválido.',
     'user' => 'Não conseguimos encontrar nenhum usuário com o endereço de e-mail especificado.',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -18,10 +17,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

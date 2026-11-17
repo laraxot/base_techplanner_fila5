@@ -1,3 +1,10 @@
+---
+title: "MCP Servers per UI/UX - Modulo UI"
+qmd: "ui mcp ui ux md"
+type: note
+tags: [documentation]
+---
+
 # MCP Servers per UI/UX - Modulo UI
 
 

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 <footer class="bg-white" role="contentinfo">
-=======
-<footer class="bg-white">
->>>>>>> 6ed19256f (.)
     <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Informazioni -->
@@ -22,17 +18,17 @@
                 </h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="{{ route('privacy') }}" class="text-gray-600 hover:text-gray-900">
+                        <a href="{{ route('container0.index', ['container0' => 'privacy']) }}" class="text-gray-600 hover:text-gray-900">
                             {{ __('theme::footer.links.privacy') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('terms') }}" class="text-gray-600 hover:text-gray-900">
+                        <a href="{{ route('container0.index', ['container0' => 'terms']) }}" class="text-gray-600 hover:text-gray-900">
                             {{ __('theme::footer.links.terms') }}
                         </a>
                     </li>
                     <li>
-                        <a href="{{ route('contact') }}" class="text-gray-600 hover:text-gray-900">
+                        <a href="{{ route('container0.index', ['container0' => 'contacts']) }}" class="text-gray-600 hover:text-gray-900">
                             {{ __('theme::footer.links.contact') }}
                         </a>
                     </li>
@@ -46,19 +42,11 @@
                 </h3>
                 <ul class="space-y-2">
                     <li class="text-gray-600">
-<<<<<<< HEAD
                         <i class="fas fa-envelope mr-2" aria-hidden="true"></i>
                         {{ config('mail.from.address') }}
                     </li>
                     <li class="text-gray-600">
                         <i class="fas fa-phone mr-2" aria-hidden="true"></i>
-=======
->>>>>>> 6ed19256f (.)
-                        <i class="fas fa-envelope mr-2"></i>
-                        {{ config('mail.from.address') }}
-                    </li>
-                    <li class="text-gray-600">
-                        <i class="fas fa-phone mr-2"></i>
                         {{ config('app.phone') }}
                     </li>
                 </ul>
@@ -73,9 +61,3 @@
         </div>
     </div>
 </footer>
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> 6ed19256f (.)

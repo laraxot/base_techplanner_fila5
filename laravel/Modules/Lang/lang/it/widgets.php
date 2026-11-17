@@ -11,7 +11,6 @@ return [
         'english' => 'Inglese',
         'german' => 'Tedesco',
     ],
-<<<<<<< HEAD
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',
     'navigation' => [
@@ -22,8 +21,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Widgets',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -56,6 +55,4 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

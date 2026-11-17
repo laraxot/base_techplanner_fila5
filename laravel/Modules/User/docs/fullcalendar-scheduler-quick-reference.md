@@ -1,3 +1,23 @@
+---
+title: "FullCalendar Scheduler - Riferimento Rapido"
+type: concept
+tags: [fullcalendar, scheduler, quick, reference]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "fullcalendar-scheduler-quick-reference fullcalendar scheduler - riferimento rapido"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # FullCalendar Scheduler - Riferimento Rapido
 
 ## 🚨 Problemi Comuni e Soluzioni Immediate
@@ -116,11 +136,7 @@ if (app()->environment('local') && empty($licenseKey)) {
 - [ ] Banner rosso rimosso
 - [ ] Funzionalità premium attive
 ## 🚀  Specifico
-<<<<<<< HEAD
 ## 🚀 <nome progetto> Specifico
-=======
-## 🚀 SaluteOra Specifico
->>>>>>> 6ed19256f (.)
 ### Business Hours Sanitarie
 businessHours: {
   daysOfWeek: [1, 2, 3, 4, 5, 6], // Lun-Sab
@@ -323,11 +339,7 @@ if (app()->environment('local') && empty($licenseKey)) {
 - [ ] Banner rosso rimosso
 - [ ] Funzionalità premium attive
 
-<<<<<<< HEAD
 ## 🚀 <nome progetto> Specifico
-=======
-## 🚀 SaluteOra Specifico
->>>>>>> 6ed19256f (.)
 
 ### Business Hours Sanitarie
 ```javascript

@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Roadmap Modulo Lang"
+module: "Lang"
+type: concept
+tags: [lang, service, helper, text]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "lang service helper text fix"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Roadmap Modulo Lang
 
 ## 📊 Progress Overview
@@ -24,10 +37,7 @@
 - [x] API endpoints
 - [x] Cache system
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./PHILOSOPHY.md))
-<<<<<<< HEAD
 - [x] Compliance con la filosofia Xot: **nessuna registrazione manuale dei comandi console** nei provider (vedi [lang-service-provider.md](./lang-service-provider.md), [PHILOSOPHY.md](./philosophy.md))
-=======
->>>>>>> 6ed19256f (.)
 
 ### In Progress (50%)
 - [ ] Performance optimization
@@ -46,7 +56,7 @@
 ## Analisi di Sistema
 
 ### Performance
-- [Analisi Performance](roadmap/performance.md)
+- [Analisi Performance](../packages/performance.md)
   - Translation speed
   - Cache efficiency
   - API response
@@ -159,11 +169,7 @@ I risultati completi sono disponibili nella cartella [docs/phpstan](phpstan/).
 
 ### Obiettivi di Qualità
 
-<<<<<<< HEAD
 Secondo le "Regole Windsurf per base_<nome progetto>_fila5_mono", gli obiettivi per l'analisi PHPStan sono:
-=======
-Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'analisi PHPStan sono:
->>>>>>> 6ed19256f (.)
 
 - Iniziare dal livello 1 per i nuovi moduli
 - Assicurarsi che tutto il codice passi almeno il livello 5
@@ -337,10 +343,7 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 ### Collegamenti Interni
 - [Bottlenecks](bottlenecks.md)
 - [Best Practices](BEST-PRACTICES.md)
-<<<<<<< HEAD
 - [Best Practices](best-practices.md)
-=======
->>>>>>> 6ed19256f (.)
 - [Testing](testing.md)
 
 ### Versione HEAD
@@ -350,7 +353,6 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
-<<<<<<< HEAD
 * [roadmap.md](../../../gdpr/docs/roadmap.md)
 * [roadmap.md](../../../notify/docs/roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)
@@ -365,8 +367,6 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
 * [roadmap.md](../../../../themes/one/docs/roadmap.md)
-=======
->>>>>>> 6ed19256f (.)
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../../../Notify/docs/roadmap.md)
 * [roadmap.md](../../../Xot/docs/roadmap.md)
@@ -382,8 +382,4 @@ Secondo le "Regole Windsurf per base_predict_fila3_mono", gli obiettivi per l'an
 * [roadmap.md](../../../Cms/docs/roadmap.md)
 * [roadmap.md](../../../../Themes/One/docs/roadmap.md)
 
-<<<<<<< HEAD
 ---
-=======
----
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,10 @@
+---
+title: "BaseModel Activity: Perché $connection = 'activity' e NON null"
+qmd: "activity basemodel connection why activity not null md"
+type: note
+tags: [documentation]
+---
+
 # BaseModel Activity: Perché $connection = 'activity' e NON null
 
 ## Risposta diretta
@@ -45,6 +52,9 @@ protected $connection = null;
 
 ## Collegamenti
 
+- [basemodel-connection-religion (canon Xot)](../../Xot/docs/wiki/concepts/basemodel-connection-religion.md)
 - [fix01](prompts/fix01.txt)
+
+- [basemodel-connection-religion (canon Xot)](../../Xot/docs/wiki/concepts/basemodel-connection-religion.md)- [fix01](prompts/fix01.txt)
 - [database-connections](database-connections.md)
 - [testing-testcase-database-connection-fix](testing-testcase-database-connection-fix.md)

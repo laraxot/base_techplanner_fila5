@@ -15,7 +15,7 @@ use Illuminate\Support\Arr;
 use Modules\Cms\Actions\SaveFooterConfigAction;
 use Modules\Cms\Datas\FooterData;
 use Modules\Cms\Filament\Clusters\Appearance;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\ResolveTenantConfigValueAction;
 use Modules\Xot\Actions\Filament\Block\GetViewBlocksOptionsByTypeAction;
 use Modules\Xot\Filament\Pages\XotBasePage;
 use Webmozart\Assert\Assert;
@@ -28,7 +28,6 @@ use Webmozart\Assert\Assert;
 class Footer extends XotBasePage
 {
     /**
-<<<<<<< HEAD
      * Dati dominio footer (tenant config), separati dallo stato form Livewire.
      */
     public ?FooterData $footerData = null;
@@ -36,12 +35,6 @@ class Footer extends XotBasePage
     /**
      * @var array<string, mixed>
      */
-=======
-     * @var FooterData|null the form data
-     */
-    public ?FooterData $footerData = null;
-
->>>>>>> 6ed19256f (.)
     public array $data = [];
 
     protected string $view = 'cms::filament.clusters.appearance.pages.headernav';
@@ -111,7 +104,7 @@ class Footer extends XotBasePage
      */
     protected function fillForms(): void
     {
-        $appearanceConfig = TenantService::config('appearance');
+        $appearanceConfig = app(ResolveTenantConfigValueAction::class)->execute('appearance');
         Assert::isArray($appearanceConfig);
 
         $footerConfig = Arr::get($appearanceConfig, 'footer', []);

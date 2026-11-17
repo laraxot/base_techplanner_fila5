@@ -1,3 +1,10 @@
+---
+title: "Schemaless Attributes Guide for UI Themes"
+qmd: "ui themes schemaless attributes guide md"
+type: note
+tags: [documentation]
+---
+
 # Schemaless Attributes Guide for UI Themes
 
 [![Laravel 12.47.0](https://img.shields.io/badge/Laravel-12.47.0-red.svg)](https://laravel.com/)

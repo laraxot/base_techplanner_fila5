@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 📚 **Indice Documentazione Modulo Job**
 
 **Status**: ✅ PHPStan Level 10 Compliant
@@ -34,11 +33,7 @@
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
-# Documentation Index
 
 ## Dependency Intelligence
 
 - [Dependency intelligence](dependency-intelligence.md)
-=======
-# Documentation Index
->>>>>>> 6ed19256f (.)

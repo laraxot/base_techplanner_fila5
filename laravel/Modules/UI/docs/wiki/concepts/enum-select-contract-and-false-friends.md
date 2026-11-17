@@ -1,3 +1,10 @@
+---
+title: "EnumSelect Contract And False Friends"
+qmd: "ui wiki concepts enum select contract and false friends md"
+type: note
+tags: [documentation]
+---
+
 # EnumSelect Contract And False Friends
 
 ## Context

@@ -2,10 +2,10 @@
 
 ## 📋 **SITUAZIONE CRITICA**
 
-**Data Rilevamento**: 01 Agosto 2025  
-**Gravità**: 🔴 **CRITICA - AZIONE IMMEDIATA RICHIESTA**  
-**Impatto**: **20+ modelli** con proprietà `$casts` deprecata  
-**Rischio**: **Rottura completa** con Laravel 12+  
+**Data Rilevamento**: 01 Agosto 2025
+**Gravità**: 🔴 **CRITICA - AZIONE IMMEDIATA RICHIESTA**
+**Impatto**: **20+ modelli** con proprietà `$casts` deprecata
+**Rischio**: **Rottura completa** con Laravel 12+
 
 ## ⚠️ **PERCHÉ È COSÌ GRAVE**
 
@@ -79,7 +79,7 @@ protected function casts(): array
 /Modules/FormBuilder/app/Models/FormField.php:34
 /Modules/FormBuilder/app/Models/FormTemplate.php:33
 
-# Notify Module  
+# Notify Module
 /Modules/Notify/app/Models/NotificationTemplate.php:87
 /Modules/Notify/app/Models/MailTemplateVersion.php:74
 /Modules/Notify/app/Models/MailTemplateLog.php:40
@@ -196,7 +196,7 @@ class AdvancedModel extends BaseModel
             'updated_at' => 'datetime',
             'is_active' => 'boolean',
             'price' => 'decimal:2',
-            
+
             // Cast avanzati (SOLO con metodo casts())
             'status' => StatusEnum::class,
             'options' => AsEnumCollection::of(OptionEnum::class),
@@ -243,10 +243,10 @@ abstract class BaseModel extends XotBaseModel
 # check_casts_deprecation.sh
 
 echo "🔍 Cercando proprietà \$casts deprecate..."
-grep -r "protected \$casts" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/ --include="*.php"
+grep -r "protected \$casts" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/ --include="*.php"
 
 echo "🔍 Cercando metodi casts() esistenti..."
-grep -r "protected function casts()" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/ --include="*.php"
+grep -r "protected function casts()" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/ --include="*.php"
 
 echo "✅ Controllo completato"
 ```
@@ -256,8 +256,8 @@ echo "✅ Controllo completato"
 #!/bin/bash
 # validate_casts_migration.sh
 
-DEPRECATED_COUNT=$(grep -r "protected \$casts" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/ --include="*.php" | wc -l)
-METHOD_COUNT=$(grep -r "protected function casts()" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/ --include="*.php" | wc -l)
+DEPRECATED_COUNT=$(grep -r "protected \$casts" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/ --include="*.php" | wc -l)
+METHOD_COUNT=$(grep -r "protected function casts()" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules/ --include="*.php" | wc -l)
 
 echo "📊 Risultati migrazione:"
 echo "❌ Proprietà \$casts rimaste: $DEPRECATED_COUNT"
@@ -328,6 +328,6 @@ Questa migrazione è **CRITICA** e **NON PROCRASTINABILE**:
 
 ---
 
-*Documento creato il 01 Agosto 2025 - Priorità CRITICA*  
-*Autore: Sistema Audit Laraxot*  
+*Documento creato il 01 Agosto 2025 - Priorità CRITICA*
+*Autore: Sistema Audit Laraxot*
 *Versione: 1.0 - EMERGENZA*

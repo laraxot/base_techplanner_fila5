@@ -1,8 +1,13 @@
 <?php
 
 declare(strict_types=1);
-
 ?>
+{{--
+  Contratto Filament 5.x — Configuring your layout:
+  https://filamentphp.com/docs/5.x/introduction/installation#configuring-your-layout
+
+  PTVX: niente cms::head/foot. Owner = UI. Styles in head, Scripts a fine body.
+--}}
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
@@ -20,6 +25,7 @@ declare(strict_types=1);
             }
         </style>
 
+        {{-- OBBLIGATORIO in <head> --}}
         @filamentStyles
         @vite('resources/css/app.css')
     </head>
@@ -27,6 +33,9 @@ declare(strict_types=1);
     <body class="antialiased">
         {{ $slot }}
 
+        @livewire('notifications')
+
+        {{-- OBBLIGATORIO a fine <body> --}}
         @filamentScripts
         @vite('resources/js/app.js')
     </body>

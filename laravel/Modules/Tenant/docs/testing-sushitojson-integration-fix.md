@@ -1,6 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Fix: SushiToJsonIntegrationTest - Database Connection Configuration"
+module: "Tenant"
+type: concept
+tags: [testing, sushitojson, integration, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "testing sushitojson integration fix"
+related:
+  - "./phpstan-corrections-january.md"
+---
 # Fix: SushiToJsonIntegrationTest - Database Connection Configuration
 
-**Data**: 2025-01-22
 **Problema**: Test fallisce con "Database connection [tenant] not configured"
 **Principio**: Il sito funziona, quindi il test deve essere corretto per riflettere il comportamento reale
 
@@ -118,8 +130,4 @@ $this->artisan('module:migrate', ['module' => 'Tenant', '--force' => true]);
 ### Prossimi Step
 1. Verificare se il modello `Modules\Tenant\Models\Tenant` può usare connessione 'user' durante i test
 2. Oppure modificare la migrazione per creare la tabella anche sulla connessione 'tenant'
-<<<<<<< HEAD
 3. Oppure usare un approccio diverso per i test (es: usare `Modules\User\Models\Tenant` nel test)
-=======
-3. Oppure usare un approccio diverso per i test (es: usare `Modules\User\Models\Tenant` nel test)
->>>>>>> 6ed19256f (.)

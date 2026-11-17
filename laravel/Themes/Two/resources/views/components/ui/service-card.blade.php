@@ -66,9 +66,9 @@
     }
     
     $statusLabels = [
-        'active' => 'Attivo',
-        'inactive' => 'Non disponibile',
-        'maintenance' => 'In manutenzione'
+        'active' => __('pub_theme::blocks.service_card.status.active'),
+        'inactive' => __('pub_theme::blocks.service_card.status.inactive'),
+        'maintenance' => __('pub_theme::blocks.service_card.status.maintenance')
     ];
     
     $statusIcons = [
@@ -98,7 +98,7 @@
             
             @if($featured)
                 <span class="service-card-featured-badge badge bg-warning text-dark mb-2">
-                    In evidenza
+                    {{ __('pub_theme::blocks.service_card.featured.label') }}
                 </span>
             @endif
             
@@ -139,9 +139,9 @@
                 <a 
                     href="{{ $url }}" 
                     class="service-card-link btn btn-outline-primary btn-sm"
-                    aria-label="Accedi al servizio: {{ $title }}"
+                    aria-label="{{ __('pub_theme::blocks.service_card.access.aria_label', ['title' => $title]) }}"
                 >
-                    Accedi
+                    {{ __('pub_theme::blocks.service_card.access.label') }}
                     <svg class="icon icon-sm ms-1">
                         <use href="#it-arrow-right"></use>
                     </svg>

@@ -22,7 +22,6 @@ return [
     'fields' => [
         'edit' => [
             'label' => 'Edit',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -68,29 +67,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'payload' => [
-            'label' => 'Payload',
-        ],
-        'id' => [
-            'label' => 'ID',
-        ],
-        'queue' => [
-            'label' => 'Queue',
-        ],
-        'attempts' => [
-            'label' => 'Attempts',
-        ],
-        'reserved_at' => [
-            'label' => 'Reserved At',
-        ],
-        'available_at' => [
-            'label' => 'Available At',
-        ],
-        'created_at' => [
-            'label' => 'Created At',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'navigation' => [
@@ -101,8 +77,4 @@ return [
     ],
     'label' => 'Job',
     'plural_label' => 'Jobs',
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

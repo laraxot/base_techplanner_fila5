@@ -5,21 +5,9 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
 use Modules\User\Models\TenantUser;
 
 /**
-=======
-use Modules\User\Models\Tenant;
-use Modules\User\Models\TenantUser;
-use Modules\User\Models\User;
-
-/**
- * TenantUser Factory.
- *
- * Factory for creating TenantUser model instances for testing and seeding.
- *
->>>>>>> 6ed19256f (.)
  * @extends Factory<TenantUser>
  */
 class TenantUserFactory extends Factory
@@ -36,38 +24,11 @@ class TenantUserFactory extends Factory
      *
      * @return array<string, mixed>
      */
+    #[\Override]
     public function definition(): array
     {
         return [
-<<<<<<< HEAD
-            'tenant_id' => fake()->uuid(),
-            'user_id' => fake()->uuid(),
+            // TODO: add default state fields
         ];
     }
-=======
-            'tenant_id' => Tenant::factory(),
-            'user_id' => User::factory(),
-        ];
-    }
-
-    /**
-     * Create tenant-user relationship for a specific tenant.
-     */
-    public function forTenant(Tenant $tenant): static
-    {
-        return $this->state(fn (array $_attributes): array => [
-            'tenant_id' => $tenant->id,
-        ]);
-    }
-
-    /**
-     * Create tenant-user relationship for a specific user.
-     */
-    public function forUser(User $user): static
-    {
-        return $this->state(fn (array $_attributes): array => [
-            'user_id' => $user->id,
-        ]);
-    }
->>>>>>> 6ed19256f (.)
 }

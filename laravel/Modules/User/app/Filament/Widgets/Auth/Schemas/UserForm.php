@@ -29,6 +29,19 @@ use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 class UserForm extends XotBaseResourceForm
 {
     /**
+     * Contratto XotBaseResourceForm: i widget FO usano i metodi specializzati
+     * (getLoginFormSchema, getRegisterFormSchema, …). Questo metodo soddisfa
+     * l'astratto e resta deliberatamente vuoto per non mischiare i flussi.
+     *
+     * @return array<string, \Filament\Schemas\Components\Component>
+     */
+    public function getFormSchema(): array
+    {
+        return [];
+    }
+
+
+    /**
      * FO auth login — SSoT campi per `LoginWidget`.
      *
      * @return array<string, \Filament\Schemas\Components\Component>

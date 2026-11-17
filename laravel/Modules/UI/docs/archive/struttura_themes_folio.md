@@ -1,4 +1,12 @@
-# Struttura Themes e Folio in Laraxot
+---
+title: "Struttura Themes e Folio in SaluteOra"
+qmd: "ui archive struttura themes folio md"
+type: note
+tags: [documentation]
+---
+
+# Struttura Themes e Folio in SaluteOra
+
 ## ⚠️ ATTENZIONE CRITICA
 
 **NON CREARE MAI FILE IN**: `/laravel/resources/views/pages/`
@@ -7,7 +15,8 @@
 
 ## Struttura del Progetto
 
-Il progetto Laraxot utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+Il progetto SaluteOra utilizza un sistema di **Themes** che modifica la struttura standard di Laravel Folio:
+
 ```
 /laravel/
 ├── resources/views/pages/          # ❌ NON USARE MAI

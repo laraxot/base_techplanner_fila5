@@ -13,6 +13,9 @@ class GetBloodline
 {
     use QueueableAction;
 
+    /**
+     * @return Collection<int, \Modules\Blog\Models\Category>
+     */
     public function execute(?int $category_id): Collection
     {
         if (null === $category_id) {

@@ -237,9 +237,9 @@ php docs/obbligatorio-audit-script.php
 - [Geo Module - Helper Text Fix](../Modules/Geo/docs/helper-text-normalization-fix.md)
 
 ### Script e Tool
-- [Helper Text Audit Script](helper-text-audit-script.php)
-- [Italian Text Validation Script](italian-text-validation-refined.php)
-- [Obbligatorio Audit Script](obbligatorio-audit-script.php)
+- [Helper Text Audit Script](../../helper-text-audit-script.php)
+- [Italian Text Validation Script](../../italian-text-validation-refined.php)
+- [Obbligatorio Audit Script](../../obbligatorio-audit-script.php)
 
 ---
 

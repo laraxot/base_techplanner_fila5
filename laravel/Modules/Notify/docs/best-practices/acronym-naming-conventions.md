@@ -1,8 +1,24 @@
-<<<<<<< HEAD
+---
+title: "Convenzioni di Naming per Acronimi"
+type: concept
+tags: [notify, docs, best-practices, acronym, naming, conventions]
+module: Notify
+created: 2026-07-20
+updated: 2026-07-20
+qmd: "notify documentazione best practices acronym naming conventions convenzioni di naming per acronimi frontmatter qmd search"
+issues:
+  - "https://github.com/laraxot/module_notify_fila5/issues/56"
+discussions:
+  - "https://github.com/laraxot/module_notify_fila5/discussions/57"
+related:
+  - ../README.md
+  - ../architecture/README.md
+  - ../conventions/README.md
+  - ../rules/README.md
+  - naming-conventions.md
+status: draft
+---
 # Convenzioni di Naming per Acronimi 
-=======
-# Convenzioni di Naming per Acronimi
->>>>>>> 6ed19256f (.)
 
 ## Regola Fondamentale
 
@@ -86,15 +102,9 @@ Non ci sono eccezioni a questa regola. Tutti gli acronimi, indipendentemente dal
 Per identificare i file che non rispettano questa convenzione, è possibile utilizzare il seguente comando:
 
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
 find Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-=======
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-find /var/www/html/saluteora/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*[A-Z][A-Z]*.php" | grep -v "Test\\.php$" | grep -v "HTML\\.php$"
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti

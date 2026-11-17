@@ -59,11 +59,7 @@ return [
                     'no_deactivated' => 'Nessun utente disattivato',
                     'no_deleted' => 'Nessun utente eliminato',
                     'roles' => 'Ruoli',
-<<<<<<< HEAD
                     'total' => 'utente(i] totali',
-=======
-                    'total' => 'utente(i) totali',
->>>>>>> 6ed19256f (.)
                 ],
                 'tabs' => [
                     'titles' => [
@@ -138,7 +134,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Labels',
     'plural_label' => 'Labels (Plurale)',
     'navigation' => [
@@ -183,6 +178,4 @@ return [
             'label' => 'Elimina Labels',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,10 @@
+---
+title: "flip cards"
+qmd: "ui flip cards md"
+type: note
+tags: [documentation]
+---
+
 https://github.com/Mridul2820/css-js/tree/master/CSS-Projects/3d-responsive-flip-card-effect
 
 

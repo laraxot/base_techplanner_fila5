@@ -1,3 +1,10 @@
+---
+title: "MCP Server Configuration - UI Module"
+qmd: "ui mcp configuration md"
+type: note
+tags: [documentation]
+---
+
 # MCP Server Configuration - UI Module
 
 

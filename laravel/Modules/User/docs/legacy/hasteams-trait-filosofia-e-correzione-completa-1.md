@@ -257,7 +257,7 @@ Creare test per verificare:
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
-- [Modules/User/docs/traits.md](traits.md)
+- [Modules/User/docs/traits.md](../traits.md)
 - File .mdc per Cursor e Windsurf
 
 ## 🎯 **RISULTATO FINALE**
@@ -280,8 +280,8 @@ Il trait `HasTeams` ora è:
 - [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
 
 ### **📁 Documentazione Modulo User**
-- [traits.md](traits.md) - Documentazione completa trait modulo User
-- [authentication.md](authentication.md) - Sistema autenticazione User
+- [traits.md](../traits.md) - Documentazione completa trait modulo User
+- [authentication.md](../authentication.md) - Sistema autenticazione User
 - [index.md](index.md) - Indice generale modulo User
 
 ### **⚙️ File .mdc (Cursor/Windsurf)**

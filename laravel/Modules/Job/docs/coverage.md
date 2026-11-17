@@ -1,6 +1,16 @@
+---
+title: "coverage"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "coverage"
+issues: []
+discussions: []
+---
+
 # Code Coverage: Job
 
-**Date:** 2026-01-17
 **Lines Coverage:** N/A (Failed to parse)
 **Test Exit Code:** 2
 

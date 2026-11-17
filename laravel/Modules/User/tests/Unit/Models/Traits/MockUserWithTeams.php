@@ -6,6 +6,8 @@ namespace Modules\User\Tests\Unit\Models\Traits;
 
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Models\Traits\RelationX;
+use Spatie\Permission\Contracts\Permission;
 
 /**
  * Modello di supporto per i test del trait HasTeams.
@@ -13,6 +15,7 @@ use Modules\User\Models\Traits\HasTeams;
 class MockUserWithTeams extends Model
 {
     use HasTeams;
+    use RelationX;
 
     protected $table = 'users';
 
@@ -21,5 +24,10 @@ class MockUserWithTeams extends Model
     public function getKey(): int
     {
         return 1;
+    }
+
+    public function hasPermissionTo(string|int|Permission $permission, ?string $guardName = null): bool
+    {
+        return false;
     }
 }

@@ -1,3 +1,10 @@
+---
+title: "Redundancy Report — Modulo UI"
+qmd: "ui redundancy report md"
+type: note
+tags: [documentation]
+---
+
 # Redundancy Report — Modulo UI
 
 > Generato: 2026-05-21 | Analisi automatica deep-scan

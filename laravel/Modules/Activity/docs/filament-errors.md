@@ -1,3 +1,10 @@
+---
+title: "Errori Comuni Filament nel Modulo Activity"
+qmd: "activity filament errors md"
+type: note
+tags: [documentation]
+---
+
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici
@@ -162,7 +169,9 @@ class ListSnapshots extends ListRecords
 - [ ] Testare il funzionamento delle liste dopo le modifiche
 - [ ] Aggiornare i test unitari se presenti
 - [ ] Documentare le modifiche nel CHANGELOG
+- [ ] Eseguire PHPStan per verificare altri possibili errori 
 - [ ] Eseguire PHPStan per verificare altri possibili errori
+- [ ] Eseguire PHPStan per verificare altri possibili errori - [ ] Eseguire PHPStan per verificare altri possibili errori
 # Errori Comuni Filament nel Modulo Activity
 
 ## Errori di Metodi Statici

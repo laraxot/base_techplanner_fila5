@@ -1,3 +1,10 @@
+---
+title: "Plugin VSCode per Filament"
+qmd: "ui archive vscode filament plugin 1 md"
+type: note
+tags: [documentation]
+---
+
 # Plugin VSCode per Filament
 
 ## Overview

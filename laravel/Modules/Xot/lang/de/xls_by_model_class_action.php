@@ -13,20 +13,13 @@ return [
     'created_at' => 'created_at',
     'updated_at' => 'updated_at',
     'deleted_at' => 'deleted_at',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
+        'icon' => 'xot-files.xls',
         'sort' => 100,
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

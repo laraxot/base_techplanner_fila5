@@ -4,10 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Actions\Panel;
 
-<<<<<<< HEAD
-=======
-use Exception;
->>>>>>> 6ed19256f (.)
 use Filament\Panel;
 use Illuminate\Support\Facades\Log;
 use Modules\Xot\Datas\MetatagData;
@@ -23,22 +19,13 @@ class ApplyMetatagToPanelAction
             $metatag = MetatagData::make();
 
             return $panel
-<<<<<<< HEAD
-                ->colors($metatag->getAllColors())
-=======
-                // @phpstan-ignore argument.type
-                ->colors($metatag->getColors())
->>>>>>> 6ed19256f (.)
+                ->colors($metatag->getFilamentColors())
                 ->brandLogo($metatag->getBrandLogo())
                 ->brandName($metatag->getBrandName())
                 ->darkModeBrandLogo($metatag->getDarkModeBrandLogo())
                 ->brandLogoHeight($metatag->getBrandLogoHeight())
                 ->favicon($metatag->getFavicon());
-<<<<<<< HEAD
         } catch (\Exception $e) {
-=======
-        } catch (Exception $e) {
->>>>>>> 6ed19256f (.)
             // Log l'errore ma non bloccare l'applicazione
             Log::error('Error applying metatag to panel: '.$e->getMessage());
 

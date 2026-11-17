@@ -5,85 +5,73 @@ declare(strict_types=1);
 return [
     'actions' => [
         'create' => [
-            'label' => 'create',
+            'label' => 'Nuovo',
+        ],
+        'logout' => [
+            'tooltip' => '',
+            'icon' => 'logout',
         ],
     ],
     'fields' => [
         'collection_name' => [
-            'label' => 'collection_name',
-<<<<<<< HEAD
+            'label' => 'Raccolta',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'mime_type' => [
-            'label' => 'mime_type',
+            'label' => 'Tipo di file',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'preview' => [
-            'label' => 'preview',
+            'label' => 'Preview',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'human_readable_size' => [
-            'label' => 'human_readable_size',
+            'label' => 'Human readable size',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'mime_type' => [
-            'label' => 'mime_type',
-        ],
-        'preview' => [
-            'label' => 'preview',
-        ],
-        'human_readable_size' => [
-            'label' => 'human_readable_size',
->>>>>>> 6ed19256f (.)
         ],
         'creator' => [
             'name' => [
-                'label' => 'creator.name',
+                'label' => 'Nome',
             ],
-<<<<<<< HEAD
-            'label' => '',
+            'label' => 'Autore',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'created_at' => [
-            'label' => 'created_at',
+            'label' => 'Creato il',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
+            'label' => 'Applica filtri',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
+            'label' => 'Colonne',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
+            'label' => 'Riordina',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -102,20 +90,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-=======
-        ],
-        'created_at' => [
-            'label' => 'created_at',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

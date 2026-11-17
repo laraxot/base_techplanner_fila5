@@ -1,3 +1,10 @@
+---
+title: "Sistema di Blocchi"
+qmd: "ui archive blocks system 1 md"
+type: note
+tags: [documentation]
+---
+
 # Sistema di Blocchi
 
 ## Introduzione

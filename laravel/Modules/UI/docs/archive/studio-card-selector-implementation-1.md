@@ -1,3 +1,10 @@
+---
+title: "StudioCardSelector Component - Modulo UI"
+qmd: "ui archive studio card selector implementation 1 md"
+type: note
+tags: [documentation]
+---
+
 # StudioCardSelector Component - Modulo UI
 
 ## 🎯 **Panoramica**

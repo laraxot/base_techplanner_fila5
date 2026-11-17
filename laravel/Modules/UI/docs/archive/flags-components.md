@@ -1,3 +1,10 @@
+---
+title: "Componenti SVG Bandiere nel Modulo UI"
+qmd: "ui archive flags components md"
+type: note
+tags: [documentation]
+---
+
 # Componenti SVG Bandiere nel Modulo UI
 
 ## Collegamenti correlati

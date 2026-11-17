@@ -1,3 +1,10 @@
+---
+title: "Visione - UI Module"
+qmd: "ui roadmap vision md"
+type: note
+tags: [documentation]
+---
+
 # Visione - UI Module
 
 Creare un ecosistema UI Headless-first:

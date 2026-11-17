@@ -1,3 +1,9 @@
+---
+title: "Employee - TIME_TRACKING"
+module: Employee
+bmad: true
+status: active
+---
 # Time Tracking Business Logic - Actions Implementation
 
 ## 📚 Overview
@@ -755,8 +761,4 @@ class ProcessTimeEntryAction
 
 *Documento creato: 2025-01-06*  
 *Pattern: Spatie QueueableActions*  
-<<<<<<< HEAD
 *Compliance: Laraxot conventions*
-=======
-*Compliance: Laraxot conventions*
->>>>>>> 6ed19256f (.)

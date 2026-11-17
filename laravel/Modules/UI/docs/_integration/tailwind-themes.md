@@ -1,3 +1,10 @@
+---
+title: "tailwind_themes"
+qmd: "ui integration tailwind themes md"
+type: note
+tags: [documentation]
+---
+
 # tailwind_themes
 
 <!-- Contenuto migrato da _docs/tailwind_themes.txt -->

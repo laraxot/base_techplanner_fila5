@@ -5,8 +5,6 @@ declare(strict_types=1);
 return [
     'fields' => [
         'sidebar_blocks' => [
-            'label' => 'sidebar_blocks',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -23,7 +21,7 @@ return [
         ],
         'label' => 'Left Sidebar Content',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -34,8 +32,6 @@ return [
         ],
         'delete' => [
             'label' => 'Elimina Left Sidebar Content',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
 ];

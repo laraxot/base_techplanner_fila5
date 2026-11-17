@@ -1,8 +1,11 @@
-<<<<<<< HEAD
+---
+title: "🛠️ Guida allo Sviluppo del Modulo <nome progetto>ion Market"
+qmd: "activity use cases prediction market development md"
+type: note
+tags: [documentation]
+---
+
 # 🛠️ Guida allo Sviluppo del Modulo <nome progetto>ion Market
-=======
-# 🛠️ Guida allo Sviluppo del Modulo Prediction Market
->>>>>>> 6ed19256f (.)
 
 ## 📋 Prerequisiti
 
@@ -41,11 +44,7 @@ Configura le variabili d'ambiente nel file `.env`:
 DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
-<<<<<<< HEAD
 DB_DATABASE=<nome progetto>ion_market
-=======
-DB_DATABASE=prediction_market
->>>>>>> 6ed19256f (.)
 DB_USERNAME=root
 DB_PASSWORD=
 
@@ -80,11 +79,7 @@ app/
       Bet/              # Comandi Artisan per la gestione delle scommesse
 
   Domain/
-<<<<<<< HEAD
     <nome progetto>ionMarket/
-=======
-    PredictionMarket/
->>>>>>> 6ed19256f (.)
       Models/          # Modelli Eloquent
       Events/           # Eventi di dominio
       Commands/         # Comandi CQRS
@@ -101,11 +96,7 @@ app/
     Resources/          # API Resources
 
 config/
-<<<<<<< HEAD
   <nome progetto>ion-market.php  # Configurazione del modulo
-=======
-  prediction-market.php  # Configurazione del modulo
->>>>>>> 6ed19256f (.)
 
 database/
   migrations/          # Migrazioni del database
@@ -310,30 +301,18 @@ php artisan view:cache
 Configura un gestore di processi come Supervisor per gestire i worker:
 
 ```ini
-<<<<<<< HEAD
 [program:<nome progetto>ion-market-worker]
 process_name=%(program_name)s_%(process_num)02d
 command=php /var/www/<nome progetto>ion-market/artisan queue:work --sleep=3 --tries=3 --max-time=3600
-=======
-[program:prediction-market-worker]
-process_name=%(program_name)s_%(process_num)02d
-command=php /var/www/prediction-market/artisan queue:work --sleep=3 --tries=3 --max-time=3600
->>>>>>> 6ed19256f (.)
 autostart=true
 autorestart=true
 stopasgroup=true
 killasgroup=true
 user=www-data
 numprocs=8
-<<<<<<< HEAD
 directory=/var/www/<nome progetto>ion-market
 redirect_stderr=true
 stdout_logfile=/var/log/supervisor/<nome progetto>ion-market-worker.log
-=======
-directory=/var/www/prediction-market
-redirect_stderr=true
-stdout_logfile=/var/log/supervisor/prediction-market-worker.log
->>>>>>> 6ed19256f (.)
 stopwaitsecs=3600
 ```
 
@@ -369,8 +348,4 @@ Configura strumenti di monitoraggio come:
 
 ## 📄 Licenza
 
-<<<<<<< HEAD
 Questo progetto è open-source con licenza [MIT](LICENSE).
-=======
-Questo progetto è open-source con licenza [MIT](LICENSE).
->>>>>>> 6ed19256f (.)

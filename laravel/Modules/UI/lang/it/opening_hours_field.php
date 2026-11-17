@@ -16,41 +16,25 @@ return [
                 'helper_text' => 'Orario di apertura del lunedì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'monday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'monday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'monday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'monday.afternoon_to',
@@ -65,13 +49,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del lunedì',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'tuesday' => [
             'morning' => [
@@ -85,41 +66,25 @@ return [
                 'helper_text' => 'Orario di apertura del martedì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'tuesday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'tuesday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'tuesday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'tuesday.afternoon_to',
@@ -134,13 +99,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del martedì',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'wednesday' => [
             'morning' => [
@@ -154,41 +116,25 @@ return [
                 'helper_text' => 'Orario di apertura del mercoledì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'wednesday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'wednesday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'wednesday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'wednesday.afternoon_to',
@@ -203,13 +149,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del mercoledì',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'thursday' => [
             'morning' => [
@@ -223,41 +166,25 @@ return [
                 'helper_text' => 'Orario di apertura del giovedì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'thursday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'thursday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'thursday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'thursday.afternoon_to',
@@ -272,13 +199,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del giovedì',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'friday' => [
             'morning' => [
@@ -292,41 +216,25 @@ return [
                 'helper_text' => 'Orario di apertura del venerdì pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'friday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'friday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'friday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'friday.afternoon_to',
@@ -341,13 +249,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del venerdì',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'saturday' => [
             'morning' => [
@@ -361,41 +266,25 @@ return [
                 'helper_text' => 'Orario di apertura del sabato pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '08:00',
                 'helper_text' => '',
                 'description' => 'saturday.morning_from',
             ],
             'morning_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '12:00',
                 'helper_text' => '',
                 'description' => 'saturday.morning_to',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '14:00',
                 'helper_text' => '',
                 'description' => 'saturday.afternoon_from',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '18:00',
                 'helper_text' => '',
                 'description' => 'saturday.afternoon_to',
@@ -410,13 +299,10 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane del sabato',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'sunday' => [
             'morning' => [
@@ -430,38 +316,22 @@ return [
                 'helper_text' => 'Orario di apertura della domenica pomeriggio',
             ],
             'morning_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '08:00',
                 'helper_text' => '',
             ],
             'morning_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '12:00',
                 'helper_text' => '',
             ],
             'afternoon_from' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '14:00',
                 'helper_text' => '',
             ],
             'afternoon_to' => [
-<<<<<<< HEAD
                 'label' => 'Orario',
-=======
-                'label' => '',
->>>>>>> 6ed19256f (.)
                 'placeholder' => '18:00',
                 'helper_text' => '',
             ],
@@ -475,33 +345,45 @@ return [
                 'placeholder' => 'es. Consulenze',
                 'helper_text' => 'Descrizione attività pomeridiane della domenica',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'schedule' => [
             'label' => 'Programma Orari',
             'placeholder' => 'Configura gli orari di apertura',
             'helper_text' => 'Gestione completa degli orari di disponibilità',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'availability' => [
             'label' => 'Disponibilità',
             'placeholder' => 'Imposta la tua disponibilità',
             'helper_text' => 'Configura quando sei disponibile per appuntamenti',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
+        ],
+        'monday_label' => [
+            'label' => 'Lunedì',
+        ],
+        'tuesday_label' => [
+            'label' => 'Martedì',
+        ],
+        'wednesday_label' => [
+            'label' => 'Mercoledì',
+        ],
+        'thursday_label' => [
+            'label' => 'Giovedì',
+        ],
+        'friday_label' => [
+            'label' => 'Venerdì',
+        ],
+        'saturday_label' => [
+            'label' => 'Sabato',
+        ],
+        'sunday_label' => [
+            'label' => 'Domenica',
         ],
     ],
     'sections' => [
@@ -530,32 +412,6 @@ return [
         'no_availability' => 'Nessuna disponibilità configurata',
         'schedule_saved' => 'Orari salvati correttamente',
         'invalid_time_range' => 'Orario non valido: l\'ora di fine deve essere successiva all\'ora di inizio',
-    ],
-    'steps' => [
-        'Afternoon to' => [
-            'description' => 'Afternoon to',
-            'helper_text' => 'Afternoon to',
-            'placeholder' => 'Afternoon to',
-            'label' => 'Afternoon to',
-        ],
-        'Morning from' => [
-            'label' => 'Morning from',
-            'placeholder' => 'Morning from',
-            'helper_text' => 'Morning from',
-            'description' => 'Morning from',
-        ],
-        'Morning to' => [
-            'label' => 'Morning to',
-            'placeholder' => 'Morning to',
-            'helper_text' => 'Morning to',
-            'description' => 'Morning to',
-        ],
-        'Afternoon from' => [
-            'label' => 'Afternoon from',
-            'placeholder' => 'Afternoon from',
-            'helper_text' => 'Afternoon from',
-            'description' => 'Afternoon from',
-        ],
     ],
     'time_pickers' => [
         'saturday' => [
@@ -715,7 +571,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Opening Hours Field',
     'plural_label' => 'Opening Hours Field (Plurale)',
     'navigation' => [
@@ -727,8 +582,6 @@ return [
         ],
         'label' => 'Opening Hours Field',
         'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

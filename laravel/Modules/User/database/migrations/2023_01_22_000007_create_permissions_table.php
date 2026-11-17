@@ -1,33 +1,21 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Contracts\Cache\Factory;
 use Illuminate\Database\Schema\Blueprint;
-// ---- models ---
-<<<<<<< HEAD
-use Illuminate\Support\Facades\Schema;
+use Modules\User\Models\Permission;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Datas\XotData;
-=======
-use Modules\Xot\Database\Migrations\XotBaseMigration;
->>>>>>> 6ed19256f (.)
 
 /*
  * Class CreatePermissionsTable.
  */
-return new class extends XotBaseMigration {
-    /**
-<<<<<<< HEAD
-     * Run the migrations.
-=======
-     * Nome della tabella gestita dalla migrazione.
-     */
-    protected string $table_name = 'permissions';
+return new class extends XotBaseMigration
+{
+    protected ?string $model_class = Permission::class;
 
     /**
-     * Esegue la migrazione.
->>>>>>> 6ed19256f (.)
+     * Run the migrations.
      */
     public function up(): void
     {
@@ -37,9 +25,7 @@ return new class extends XotBaseMigration {
                 $cache = app(Factory::class);
                 $cache_store = config('permission.cache.store');
                 $cache_key = config('permission.cache.key');
-                /** @var string|null $store */
-                $store = 'default' !== $cache_store ? $cache_store : null;
-                /** @var string $cache_key */
+                $store = is_string($cache_store) && $cache_store !== 'default' ? $cache_store : null;
                 if (is_string($cache_key)) {
                     $cache->store($store)->forget($cache_key);
                 }
@@ -56,35 +42,18 @@ return new class extends XotBaseMigration {
         });
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-            // Usa Schema::hasColumn direttamente per verificare esistenza
-            $tableName = 'permissions';
-<<<<<<< HEAD
             if (
-                ! Schema::connection('user')->hasColumn($tableName, 'created_at')
-                && ! Schema::connection('user')->hasColumn($tableName, 'updated_at')
+                ! $this->hasColumn('created_at')
+                && ! $this->hasColumn('updated_at')
             ) {
                 $this->updateTimestamps($table);
             } else {
-                // Se i timestamp esistono già, aggiungi solo i campi user se mancanti
                 $xot = XotData::make();
                 $userClass = $xot->getUserClass();
-                if (! Schema::connection('user')->hasColumn($tableName, 'updated_by')) {
+                if (! $this->hasColumn('updated_by')) {
                     $table->foreignIdFor($userClass, 'updated_by')->nullable();
                 }
-                if (! Schema::connection('user')->hasColumn($tableName, 'created_by')) {
-=======
-            if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'created_at')
-                && ! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'updated_at')) {
-                $this->updateTimestamps($table);
-            } else {
-                // Se i timestamp esistono già, aggiungi solo i campi user se mancanti
-                $xot = Modules\Xot\Datas\XotData::make();
-                $userClass = $xot->getUserClass();
-                if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'updated_by')) {
-                    $table->foreignIdFor($userClass, 'updated_by')->nullable();
-                }
-                if (! Illuminate\Support\Facades\Schema::connection('user')->hasColumn($tableName, 'created_by')) {
->>>>>>> 6ed19256f (.)
+                if (! $this->hasColumn('created_by')) {
                     $table->foreignIdFor($userClass, 'created_by')->nullable();
                 }
             }

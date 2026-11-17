@@ -5,7 +5,6 @@ declare(strict_types=1);
 return [
     'name' => 'name',
     'value' => 'value',
-<<<<<<< HEAD
     'label' => 'Update Job',
     'plural_label' => 'Update Job (Plurale)',
     'navigation' => [
@@ -50,6 +49,4 @@ return [
             'label' => 'Elimina Update Job',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

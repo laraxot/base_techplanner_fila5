@@ -1,3 +1,10 @@
+---
+title: "Task: Test Componenti Livewire - UI"
+qmd: "ui task test livewire components md"
+type: note
+tags: [documentation]
+---
+
 # Task: Test Componenti Livewire - UI
 
 **Modulo**: UI

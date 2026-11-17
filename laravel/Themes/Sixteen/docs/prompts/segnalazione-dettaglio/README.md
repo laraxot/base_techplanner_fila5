@@ -1,3 +1,15 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # HTML Parity Analysis: `segnalazione-dettaglio`
 
 - Reference: `https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazione-dettaglio.html`
@@ -38,3 +50,14 @@ Questa fase serve prima di tutto a rendere affidabile il comparatore HTML:
 - [`body-structure-comparison/`](./body-structure-comparison/)
 - [`docs/html-structure-comparison.md`](../../../../../docs/html-structure-comparison.md)
 - [`bashscripts/docs/HTML-COMPARISON.md`](../../../../../bashscripts/docs/HTML-COMPARISON.md)
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

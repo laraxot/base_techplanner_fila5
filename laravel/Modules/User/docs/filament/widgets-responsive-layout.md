@@ -1,3 +1,32 @@
+---
+title: "Widget Responsivi per Form di Registrazione"
+type: concept
+tags: [widgets, responsive, layout]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "widgets-responsive-layout widget responsivi per form di registrazione"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./filament-table-columns-1.md"
+  - "./filament-table-columns.md"
+  - "./filament-table-columns.md"
+  - "./filament-table-columns.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager-3.md"
+  - "./teams-relation-manager.md"
+  - "./filament-table-columns-convenzione-metodo.md"
+  - "./filament-table-columns.md"
+  - "./filament-table-columns-convenzione-metodo.md"
+  - "./filament-table-columns.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager-documentation-themes.md"
+  - "./teams-relation-manager.md"
+  - "./teams-relation-manager.md"
+status: draft
+---
+
 # Widget Responsivi per Form di Registrazione
 
 > **NOTA IMPORTANTE**: Questo documento è un riferimento specifico per il modulo User.
@@ -31,20 +60,8 @@ I form Filament complessi, in particolare quelli di registrazione e wizard multi
 - Wizard con layout a griglia complessi: Nessuna limitazione di larghezza
 ## Documentazione Correlata
 - [Layout Responsivo dei Widget Filament](../../../UI/docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
-<<<<<<< HEAD
 - [Best Practices per i Form Filament](../../../ui/docs/filament/form-best-practices.md)
 - [Implementazione Corretta dei Widget](../../../xot/docs/filament-widgets.md)
 - [Layout Responsivo dei Widget Filament](../../../UI/project_docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
 - [Best Practices per i Form Filament](../../../ui/project_docs/filament/form-best-practices.md)
 - [Implementazione Corretta dei Widget](../../../xot/project_docs/filament-widgets.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Best Practices per i Form Filament](../../../UI/docs/filament/form-best-practices.md)
-- [Implementazione Corretta dei Widget](../../../Xot/docs/filament-widgets.md)
-- [Layout Responsivo dei Widget Filament](../../../UI/project_docs/blocks/filament-component-integration.md#layout-responsivo-dei-widget-filament)
-- [Best Practices per i Form Filament](../../../UI/project_docs/filament/form-best-practices.md)
-<<<<<<< HEAD
-- [Implementazione Corretta dei Widget](../../../Xot/project_docs/filament-widgets.md)
-=======
-- [Implementazione Corretta dei Widget](../../../Xot/project_docs/filament-widgets.md)
->>>>>>> 6ed19256f (.)

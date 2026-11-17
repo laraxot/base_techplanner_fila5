@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Third-Party Model Patterns"
+qmd: "activity third party model patterns md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Third-Party Model Patterns
 
 ## Spatie Package Integration
@@ -64,6 +71,7 @@ class Activity extends SpatieActivity
 }
 ```
 
+**Importante**: non ridefinire `$table` nel modello Activity. Il nome della tabella è gestito da Spatie tramite `config('activitylog.table_name')` (vedi `config/activitylog.php` e `config/local/<tenant>/activitylog.php`). Se serve cambiare tabella, farlo via configurazione, non nel modello.
 ### StoredEvent Model
 
 **File**: `Modules/Activity/app/Models/StoredEvent.php`
@@ -259,7 +267,7 @@ public function test_event_storage(): void
 
 ### Laraxot Philosophy
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
-- [Event Sourcing Patterns](../xot/docs/event-sourcing-patterns.md)
+- [Event Sourcing Patterns](wiki/concepts/event-sourcing-patterns.md)
 
 ---
 

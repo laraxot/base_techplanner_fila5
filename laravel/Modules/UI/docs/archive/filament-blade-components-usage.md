@@ -1,3 +1,10 @@
+---
+title: "Utilizzo dei Componenti Blade di Filament"
+qmd: "ui archive filament blade components usage md"
+type: note
+tags: [documentation]
+---
+
 # Utilizzo dei Componenti Blade di Filament 
 
 ## Indice

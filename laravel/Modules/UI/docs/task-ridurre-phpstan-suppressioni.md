@@ -1,3 +1,10 @@
+---
+title: "Task: Ridurre Suppressioni PHPStan Inline - UI"
+qmd: "ui task ridurre phpstan suppressioni md"
+type: note
+tags: [documentation]
+---
+
 # Task: Ridurre Suppressioni PHPStan Inline - UI
 
 **Modulo**: UI

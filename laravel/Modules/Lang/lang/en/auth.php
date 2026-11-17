@@ -1,22 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
 return [
-<<<<<<< HEAD
-=======
-    /*
-     * |--------------------------------------------------------------------------
-     * | Authentication Language Lines
-     * |--------------------------------------------------------------------------
-     * |
-     * | The following language lines are used during authentication for various
-     * | messages that we need to display to the user. You are free to modify
-     * | these language lines according to your application's requirements.
-     * |
-     */
-
->>>>>>> 6ed19256f (.)
     'failed' => 'These credentials do not match our records.',
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
@@ -84,20 +68,49 @@ return [
         'settings' => 'Settings',
         'logout' => 'Logout',
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
+        'name' => 'Auth',
+        'plural' => 'Auth',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
+        'id' => [
+            'label' => 'Identifier',
+            'tooltip' => 'Unique record identifier',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Created at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Last modified',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
     ],
     'actions' => [
+        'create' => [
+            'label' => 'Create Auth',
+        ],
+        'edit' => [
+            'label' => 'Edit Auth',
+        ],
+        'delete' => [
+            'label' => 'Delete Auth',
+        ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -1,0 +1,62 @@
+- generic [active] [ref=f6e1]:
+  - region "Gestione dei cookie" [ref=f6e2]:
+    - generic [ref=f6e3]:
+      - generic [ref=f6e4]:
+        - paragraph [ref=f6e5]: Cookie
+        - paragraph [ref=f6e6]:
+          - text: "Questo sito usa solo cookie tecnici, necessari al suo funzionamento: non richiedono il tuo consenso. Non usiamo cookie di profilazione né di analisi."
+          - link "Maggiori informazioni (Cookie policy)" [ref=f6e7] [cursor=pointer]:
+            - /url: http://127.0.0.1:8012/it/cookies
+            - text: Maggiori informazioni
+            - generic [ref=f6e8]: (Cookie policy)
+      - button "Ho capito" [ref=f6e10] [cursor=pointer]
+  - generic [ref=f6e13]:
+    - link [ref=f6e15] [cursor=pointer]:
+      - /url: http://127.0.0.1:8012/it
+      - img "Sottana Service" [ref=f6e16]
+    - generic [ref=f6e19]:
+      - heading "Accedi al tuo account" [level=2] [ref=f6e20]
+      - paragraph [ref=f6e21]: Inserisci le tue credenziali per accedere
+      - generic [ref=f6e23]:
+        - generic [ref=f6e25]:
+          - generic [ref=f6e28]:
+            - generic [ref=f6e32]:
+              - text: Indirizzo email
+              - superscript [ref=f6e33]: "*"
+            - textbox "Indirizzo email*" [ref=f6e37]
+          - generic [ref=f6e40]:
+            - generic [ref=f6e44]:
+              - text: Password
+              - superscript [ref=f6e45]: "*"
+            - generic [ref=f6e47]:
+              - textbox "Password*" [ref=f6e49]
+              - button "Mostra password" [ref=f6e52] [cursor=pointer]
+          - generic [ref=f6e61]:
+            - checkbox "Ricordami" [ref=f6e62]
+            - generic [ref=f6e63]: Ricordami
+        - button "Accedi" [ref=f6e64] [cursor=pointer]
+      - link "Torna alla home" [ref=f6e70] [cursor=pointer]:
+        - /url: http://127.0.0.1:8012/it
+  - generic:
+    - status
+  - generic [ref=f6e75]:
+    - generic [ref=f6e76] [cursor=pointer]
+    - generic [ref=f6e77]:
+      - generic [ref=f6e78] [cursor=pointer]
+      - generic [ref=f6e80] [cursor=pointer]
+      - generic [ref=f6e82] [cursor=pointer]: "16"
+      - generic [ref=f6e85] [cursor=pointer]
+      - generic [ref=f6e87] [cursor=pointer]: "2"
+      - generic [ref=f6e90] [cursor=pointer]: "2"
+      - generic [ref=f6e93] [cursor=pointer]
+      - generic [ref=f6e95] [cursor=pointer]
+    - generic [ref=f6e97]:
+      - generic [ref=f6e98] [cursor=pointer]
+      - generic [ref=f6e99] [cursor=pointer]
+      - generic [ref=f6e100] [cursor=pointer]
+      - generic [ref=f6e102] [cursor=pointer]
+      - generic [ref=f6e103]: GET /it/auth/login
+      - generic [ref=f6e106] [cursor=pointer]: 8.4.27
+      - generic [ref=f6e108] [cursor=pointer]: 497ms
+      - generic [ref=f6e110] [cursor=pointer]: 10MB
+      - generic [ref=f6e112] [cursor=pointer]

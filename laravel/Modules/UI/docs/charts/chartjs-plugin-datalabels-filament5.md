@@ -1,3 +1,10 @@
+---
+title: "chartjs-plugin-datalabels with Filament 5 ChartWidget (multiple labels)"
+qmd: "ui charts chartjs plugin datalabels filament5 md"
+type: note
+tags: [documentation]
+---
+
 # chartjs-plugin-datalabels with Filament 5 ChartWidget (multiple labels)
 
 ## Goal

@@ -5,7 +5,7 @@ component: geo-map-lit
 created: 2026-04-30
 updated: 2026-04-30
 stories:
-  - 8-78-segnalazioni-elenco-polish
+  - 8-78-ticket-list-polish
   - 8-79-geo-map-controls-unification
   - 8-80-geo-map-lit-shared-modules
 ---
@@ -228,8 +228,8 @@ playwright test geo-map-lit.spec.js   # specifico
 
 ### Verifica Parity
 ```bash
-# 1. Apri segnalazioni-elenco
-curl http://127.0.0.1:8000/it/tests/segnalazioni-elenco | grep 'data-url'
+# 1. Apri ticket-list
+curl http://127.0.0.1:8000/it/tests/ticket-list | grep 'data-url'
 
 # 2. Controlla presenza controlli
 grep -r 'ctrl-btn' laravel/Modules/Geo/resources/js/components/
@@ -262,14 +262,14 @@ grep -r 'map-controls' laravel/Modules/Geo/resources/js/
 ## Best Practice
 
 1. **Non modificare** direttamente i moduli condivisi senza aggiornare entrambi i componenti
-2. **Verificare** su entrambe le pagine (`segnalazioni-elenco` e `segnalazione-crea`)
+2. **Verificare** su entrambe le pagine (`ticket-list` e `segnalazione-crea`)
 3. **Mantenere** lo stesso order di import per coerenza
 4. **Aggiornare** la documentazione in caso di cambiamenti API
 
 ## Referenze
 
 - [geo-map-lit](./entities/geo-map-lit.md) — Entità componente
-- [geo-map-controls-unification-rule](./concepts/geo-map-controls-unification-rule.md) — Regola parity
+- [geo-map-controls-unification-rule](geo-map-controls-unification-rule.md) — Regola parity
 - [coordinate-picker-lit](./entities/coordinate-picker-lit.md) — Componente input form
 - [map-controls](./concepts/map-controls.md) — Dettagli moduli condivisi
 

@@ -19,215 +19,135 @@ return [
         'id' => [
             'label' => 'ID',
             'helper_text' => 'Уникальный идентификатор шаблона',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'mailable' => [
             'label' => 'Класс Mailable',
             'placeholder' => 'Введите имя класса Mailable',
             'help' => 'PHP класс, который обрабатывает отправку email',
             'helper_text' => 'PHP класс, управляющий отправкой email',
-            'description' => 'mailable',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'subject' => [
             'label' => 'Тема',
             'placeholder' => 'Введите тему письма',
             'help' => 'Тема, которая появится в письме',
             'helper_text' => 'Тема письма',
-            'description' => 'subject',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'html_template' => [
             'label' => 'HTML содержимое',
             'placeholder' => 'Введите HTML содержимое письма',
             'help' => 'Содержимое письма в формате HTML',
             'helper_text' => 'HTML содержимое email шаблона',
-            'description' => 'html_template',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'text_template' => [
             'label' => 'Текстовое содержимое',
             'placeholder' => 'Введите текстовое содержимое письма',
             'help' => 'Текстовая версия письма для клиентов, не поддерживающих HTML',
             'helper_text' => 'Текстовая версия email шаблона',
-            'description' => 'text_template',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'version' => [
             'label' => 'Версия',
             'help' => 'Номер версии шаблона',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'created_at' => [
             'label' => 'Создано',
             'helper_text' => 'Дата создания шаблона',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'updated_at' => [
             'label' => 'Последнее изменение',
             'helper_text' => 'Дата последнего изменения шаблона',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'from_email' => [
             'label' => 'Email отправителя',
             'helper_text' => 'Адрес электронной почты отправителя',
             'placeholder' => 'noreply@example.com',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'from_name' => [
             'label' => 'Имя отправителя',
             'helper_text' => 'Отображаемое имя отправителя',
             'placeholder' => 'Название компании',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'variables' => [
             'label' => 'Доступные переменные',
             'helper_text' => 'Список переменных, которые можно использовать в шаблоне',
             'placeholder' => 'напр: {{name}}, {{email}}',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_markdown' => [
             'label' => 'Использовать Markdown',
             'helper_text' => 'Указывает, использует ли шаблон синтаксис Markdown',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Статус',
             'helper_text' => 'Текущий статус шаблона',
-<<<<<<< HEAD
             'tooltip' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'layout' => [
-            'label' => 'layout',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'layout' => [
-            'label' => 'layout',
->>>>>>> 6ed19256f (.)
         ],
         'slug' => [
-            'label' => 'slug',
-            'description' => 'slug',
-            'helper_text' => 'slug',
-            'placeholder' => 'slug',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
             'description' => 'Название шаблона',
             'helper_text' => 'Описательное имя для идентификации шаблона',
             'placeholder' => 'Напр: Добро пожаловать, Подтверждение заказа, Сброс пароля',
             'label' => 'Название шаблона',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'params' => [
             'label' => 'Параметры',
             'helper_text' => 'Введите параметры, разделенные запятыми, которые можно использовать в шаблоне',
             'placeholder' => 'name, email, date, company',
             'description' => 'Доступные параметры для email шаблона',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'filters' => [
@@ -357,9 +277,6 @@ return [
     'model' => [
         'label' => 'email шаблон',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

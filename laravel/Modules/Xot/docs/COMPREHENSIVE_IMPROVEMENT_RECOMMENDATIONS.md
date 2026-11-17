@@ -1,3 +1,13 @@
+---
+title: "Comprehensive Improvement Recommendations"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Comprehensive Improvement Recommendations"
+---
 # Comprehensive Improvement Recommendations
 ## DRY + KISS + SOLID + Robust + Filament 4 + Laravel 12 + PHP 8.3
 
@@ -54,7 +64,7 @@ class ConnectionManagerService
     public static function getConnectionForModule(string $module): string
     {
         return match($module) {
-            'healthcare_app' => 'healthcare_app',
+            '<nome progetto>' => '<nome progetto>',
             'User' => 'user',
             'Notify' => 'notify',
             default => 'mysql'
@@ -137,14 +147,14 @@ class ContactValidationService
 **Solution**: Strategy pattern con interfaces
 
 ```php
-// Modules/healthcare_app/Contracts/ChartRendererContract.php
+// Modules/<nome progetto>/Contracts/ChartRendererContract.php
 interface ChartRendererContract
 {
     public function supports(string $type): bool;
     public function render(array $data, array $config): string;
 }
 
-// Modules/healthcare_app/Services/Chart/Renderers/PieChartRenderer.php
+// Modules/<nome progetto>/Services/Chart/Renderers/PieChartRenderer.php
 class PieChartRenderer implements ChartRendererContract
 {
     public function supports(string $type): bool
@@ -310,7 +320,7 @@ $contacts = Contact::forContext('dashboard')->get(); // Optimized loading
 **Solution**: Chunking e memory management
 
 ```php
-// Modules/healthcare_app/Services/BulkProcessingService.php
+// Modules/<nome progetto>/Services/BulkProcessingService.php
 class BulkProcessingService
 {
     public function processLargeDataset(\Closure $processor, Builder $query, int $chunkSize = 1000): void

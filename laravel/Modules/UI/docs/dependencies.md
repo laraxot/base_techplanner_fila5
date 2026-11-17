@@ -1,3 +1,10 @@
+---
+title: "Dependencies (Module UI)"
+qmd: "ui dependencies md"
+type: note
+tags: [documentation]
+---
+
 # Dependencies (Module UI)
 
 Canonical dependency map:

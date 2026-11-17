@@ -1,3 +1,14 @@
+---
+title: "login test implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "login test implementation"
+issues: []
+discussions: []
+---
+
 # Login Test Implementation - Modulo Cms
 
 ## 🎯 Overview
@@ -274,13 +285,8 @@ expect($schema)->toHaveCount(3)
 ## 📚 Related Documentation
 
 ### Internal Links
-- [UserFactory Implementation](../../<nome progetto>/docs/factories/UserFactory-implementation-final.md)
-- [LoginWidget Documentation](../../User/docs/widgets/login-widget.md)
-<<<<<<< HEAD
 - [UserFactory Implementation](../../<nome progetto>/docs/factories/userfactory-implementation-final.md)
 - [LoginWidget Documentation](../../user/docs/widgets/login-widget.md)
-=======
->>>>>>> 6ed19256f (.)
 - [STI Architecture](../../<nome progetto>/docs/models/sti-architecture.md)
 
 ### External References
@@ -290,11 +296,14 @@ expect($schema)->toHaveCount(3)
 
 ---
 
-**Created**: Gennaio 2025
+title: "login test implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "login test implementation"
+issues: []
+discussions: []
 **Status**: ✅ PRODUCTION READY
 **Test Coverage**: 🎯 100% Login Functionality
-<<<<<<< HEAD
 **Maintainer**: Modulo Cms Testing Team
-=======
-**Maintainer**: Modulo Cms Testing Team
->>>>>>> 6ed19256f (.)

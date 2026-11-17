@@ -14,12 +14,13 @@ use Modules\Xot\Actions\GetViewAction;
 
 class Lists extends Component
 {
-    public const ITEMS_PER_PAGE = 10;
+    public const int ITEMS_PER_PAGE = 10;
 
     // All categories
     /**
      * @var Collection<Category>
      */
+    /** @var Collection<int, \Modules\Blog\Models\Category> */
     public Collection $categories;
 
     // Variables keeping track of the current post query
@@ -93,6 +94,9 @@ class Lists extends Component
 
     /**
      * Summary of getArticleQuery.
+     */
+    /**
+     * @return \Illuminate\Database\Eloquent\Builder<\Modules\Blog\Models\Article>
      */
     private function getArticleQuery(): EloquentBuilder
     {

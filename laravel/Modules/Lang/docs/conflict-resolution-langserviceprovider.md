@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Risoluzione Conflitto LangServiceProvider"
+module: "Lang"
+type: concept
+tags: [ottimizzazioni, correzioni]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "ottimizzazioni correzioni"
+related:
+  - "./italian-text-refined-audit-report.md"
+---
 # Risoluzione Conflitto LangServiceProvider
 
 ## Problema Identificato
@@ -91,7 +104,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 
@@ -199,7 +212,7 @@ Il file `Modules/Lang/app/Providers/LangServiceProvider.php` presenta conflitti 
 - [Lang Service Provider](../lang-service-provider.md)
 - [Filament Translations](../filament-translations.md)
 - [Translation Standards](../translation-standards.md)
-- [Best Practices](../translation-keys-best-practices.md)
+- [Best Practices](translation-keys-best-practices.md)
 
 ## Note per Sviluppatori Futuri
 

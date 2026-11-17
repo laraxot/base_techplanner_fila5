@@ -18,7 +18,7 @@ class BetTableAction extends Action
         parent::setUp();
         $this->translateLabel();
         $this->label('')
-            ->tooltip(trans('rating:txt.bet'))
+            ->tooltip(is_string($tooltip = trans('rating:txt.bet')) ? $tooltip : null)
             ->modalWidth('xl')
             ->schema(fn (Action $action): array => [
                 TextInput::make('aa'),

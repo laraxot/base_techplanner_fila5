@@ -49,7 +49,6 @@ return [
         'warning' => 'Attenzione',
         'critical' => 'Critico',
     ],
-<<<<<<< HEAD
     'label' => 'Dashboard',
     'plural_label' => 'Dashboard (Plurale)',
     'fields' => [
@@ -83,6 +82,4 @@ return [
             'label' => 'Elimina Dashboard',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

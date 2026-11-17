@@ -111,9 +111,6 @@ return [
             'rule-name' => 'custom-message',
         ],
     ],
-<<<<<<< HEAD
-    'attributes' => [
-    ],
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -123,11 +120,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
-    'attributes' => [],
->>>>>>> 6ed19256f (.)
 ];

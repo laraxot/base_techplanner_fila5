@@ -5,9 +5,8 @@ declare(strict_types=1);
 namespace Modules\Seo\Filament\Widgets;
 
 use Filament\Schemas\Components\Component;
-use Illuminate\Contracts\View\View;
 use Modules\Seo\Actions\GenerateSocialShareLinksAction;
-use Modules\Seo\Data\SocialShareData;
+use Modules\Seo\Datas\SocialShareData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 
 /**
@@ -22,12 +21,15 @@ class SocialShareWidget extends XotBaseSchemaWidget
      */
     public ?array $data = [];
 
-    public function render(): View
+    public function __construct()
     {
-        /** @var view-string $view */
+        /**
+         * @phpstan-var view-string
+         */
         $view = 'seo::filament.widgets.social-share';
+        $this->view = $view;
 
-        return view($view, $this->getViewData());
+        parent::__construct();
     }
 
     /**
@@ -44,6 +46,8 @@ class SocialShareWidget extends XotBaseSchemaWidget
      * Get the data for the view.
      *
      * @return array<string, mixed>
+     *
+     * @SuppressWarnings("PHPMD.StaticAccess")
      */
     protected function getViewData(): array
     {

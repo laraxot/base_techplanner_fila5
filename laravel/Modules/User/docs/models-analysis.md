@@ -1,3 +1,28 @@
+---
+title: "Models Analysis - User Module"
+type: concept
+tags: [models, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "models-analysis models analysis - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Models Analysis - User Module
 
 ## Factory e Seeder Status
@@ -7,11 +32,7 @@ Core business models have factories. Missing factories are mainly abstract base 
 
 ### Models senza Factory ❌ (23/56) - Correctly Missing
 - All `Base*` classes (abstract infrastructure)
-<<<<<<< HEAD
 - All `*Policy` classes (authorization logic) 
-=======
-- All `*Policy` classes (authorization logic)
->>>>>>> 6ed19256f (.)
 - `UserBasePolicy` (base authorization)
 - Infrastructure models that don't need testing
 
@@ -62,8 +83,4 @@ All business models have factories. Infrastructure correctly excluded.
 - **Comprehensive**: Covers all user management aspects
 - **Security Focused**: Authentication, authorization, devices
 - **Modern Architecture**: Multi-tenancy, teams, social auth
-<<<<<<< HEAD
 - **Healthcare Ready**: Role-based access for medical data
-=======
-- **Healthcare Ready**: Role-based access for medical data
->>>>>>> 6ed19256f (.)

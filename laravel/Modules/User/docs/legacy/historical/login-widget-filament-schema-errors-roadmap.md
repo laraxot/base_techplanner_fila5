@@ -157,7 +157,7 @@ private function getDefaultFormData(): array
 ## 🔗 Riferimenti
 
 - [Widgets Initialization](./../xot/docs/widgets-initialization.md)
-- [Login Widget Fix](./login-widget-fix.md)
+- [Login Widget Fix](../../login-widget-fix.md)
 - [Filament 4 Widget Rendering Guide](./filament-4-widget-rendering-guide.md)
 
 ---

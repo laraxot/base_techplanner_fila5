@@ -8,62 +8,22 @@ use Filament\Support\Colors\Color;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Str;
 use Livewire\Wireable;
-use Modules\Tenant\Services\TenantService;
+use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
+use Modules\Tenant\Actions\Translations\TranslateTenantKeyAction;
 use Modules\Xot\Actions\File\AssetAction;
 use Modules\Xot\Actions\File\AssetPathAction;
+use Modules\Xot\Actions\PaDesignColorsAction;
 use Modules\Xot\Datas\Transformers\AssetTransformer;
-<<<<<<< HEAD
-use Modules\Xot\Support\PaDesignColors;
-
-use function Safe\file_get_contents;
-
 use Spatie\LaravelData\Attributes\WithTransformer;
 use Spatie\LaravelData\Concerns\WireableData;
 use Spatie\LaravelData\Data;
+
+use function Safe\file_get_contents;
 
 /**
  * Class MetatagData.
- *
- * @property string                                                          $title
- * @property string                                                          $sitename
- * @property string                                                          $subtitle
- * @property string|null                                                     $generator
- * @property string                                                          $charset
- * @property string|null                                                     $author
- * @property string|null                                                     $description
- * @property string|null                                                     $keywords
- * @property string                                                          $nome_regione
- * @property string                                                          $nome_comune
- * @property string                                                          $site_title
- * @property string                                                          $logo
- * @property string                                                          $logo_square
- * @property string                                                          $logo_header
- * @property string                                                          $logo_header_dark
- * @property string                                                          $logo_height
- * @property string                                                          $logo_footer
- * @property string                                                          $logo_alt
- * @property string                                                          $hide_megamenu
- * @property string                                                          $hero_type
- * @property string                                                          $facebook_href
- * @property string                                                          $twitter_href
- * @property string                                                          $youtube_href
- * @property string                                                          $fastlink
- * @property string                                                          $color_primary
- * @property string                                                          $color_title
- * @property string                                                          $color_megamenu
- * @property string                                                          $color_hamburger
- * @property string                                                          $color_banner
- * @property string                                                          $favicon
-=======
-use function Safe\file_get_contents;
-use Spatie\LaravelData\Attributes\WithTransformer;
-use Spatie\LaravelData\Concerns\WireableData;
-use Spatie\LaravelData\Data;
-use Throwable;
-
-/**
- * Class MetatagData
  *
  * @property string $title
  * @property string $sitename
@@ -95,7 +55,6 @@ use Throwable;
  * @property string $color_hamburger
  * @property string $color_banner
  * @property string $favicon
->>>>>>> 6ed19256f (.)
  * @property array<string, array{key?: string, color: string, hex?: string}> $colors
  *
  * @method string getBrandLogoBase64() Get the brand logo as base64 data URI for inline embedding
@@ -182,8 +141,8 @@ class MetatagData extends Data implements Wireable
     {
         if (! self::$instance) {
             /** @var array<string, mixed> $data */
-            $data = TenantService::getConfig('metatag');
-            $data['description'] = TenantService::trans('metatag.description');
+            $data = app(GetTenantConfigArrayAction::class)->execute('metatag');
+            $data['description'] = app(TranslateTenantKeyAction::class)->execute('metatag.description');
             self::$instance = self::from($data);
         }
 
@@ -211,13 +170,9 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header);
 
-            return asset($path);
-<<<<<<< HEAD
+            return $this->normalizeBrandLogoUrl($path);
         } catch (\Throwable $e) {
-=======
-        } catch (Throwable $e) {
->>>>>>> 6ed19256f (.)
-            return asset($this->logo_header);
+            return $this->fallbackPublicAssetUrl($this->logo_header);
         }
     }
 
@@ -236,14 +191,45 @@ class MetatagData extends Data implements Wireable
             /** @var string $path */
             $path = app(AssetAction::class)->execute($this->logo_header_dark);
 
-            return asset($path);
-<<<<<<< HEAD
+            return $this->normalizeBrandLogoUrl($path);
         } catch (\Throwable $e) {
-=======
-        } catch (Throwable $e) {
->>>>>>> 6ed19256f (.)
-            return asset($this->logo_header_dark);
+            return $this->fallbackPublicAssetUrl($this->logo_header_dark);
         }
+    }
+
+    /**
+     * Never turn `module::img/x.png` into an HTTP path: browsers 404 on it.
+     * If AssetAction already copied the file, reuse the public relative path.
+     */
+    private function fallbackPublicAssetUrl(string $logoHeader): string
+    {
+        if (! str_contains($logoHeader, '::')) {
+            return asset($logoHeader);
+        }
+
+        $parts = explode('::', $logoHeader, 2);
+        if (! isset($parts[0], $parts[1]) || $parts[0] === '' || $parts[1] === '') {
+            return '';
+        }
+
+        $relative = 'assets/'.$parts[0].'/'.$parts[1];
+
+        if (File::exists(public_path($relative))) {
+            return asset($relative);
+        }
+
+        return '';
+    }
+
+    private function normalizeBrandLogoUrl(string $path): string
+    {
+        if (Str::startsWith($path, ['http://', 'https://'])) {
+            return Str::startsWith($path, url('/'))
+                ? '/'.ltrim(Str::after($path, url('/')), '/')
+                : $path;
+        }
+
+        return '/'.ltrim($path, '/');
     }
 
     /**
@@ -288,11 +274,7 @@ class MetatagData extends Data implements Wireable
 
             // Return as data URI
             return "data:{$mimeType};base64,{$base64Content}";
-<<<<<<< HEAD
         } catch (\Throwable $e) {
-=======
-        } catch (Throwable $e) {
->>>>>>> 6ed19256f (.)
             // Fallback: try with the raw logo_header path
             try {
                 $fallbackPath = public_path($this->logo_header);
@@ -303,11 +285,7 @@ class MetatagData extends Data implements Wireable
 
                     return "data:{$mimeType};base64,{$base64Content}";
                 }
-<<<<<<< HEAD
             } catch (\Throwable $fallbackException) {
-=======
-            } catch (Throwable $fallbackException) {
->>>>>>> 6ed19256f (.)
                 // Log the error but don't break the application
                 Log::warning('Could not generate base64 logo', [
                     'original_error' => $e->getMessage(),
@@ -321,10 +299,6 @@ class MetatagData extends Data implements Wireable
     }
 
     /**
-     * Get the theme colors.
-     * This method reflects the semantic purpose of getting theme colors,
-     * rather than exposing the raw color data structure.
-     *
      * @return array<string, string>
      */
     public function getThemeColors(): array
@@ -426,11 +400,7 @@ class MetatagData extends Data implements Wireable
     {
         try {
             return app(AssetAction::class)->execute($this->favicon);
-<<<<<<< HEAD
         } catch (\Throwable $e) {
-=======
-        } catch (Throwable $e) {
->>>>>>> 6ed19256f (.)
             return asset($this->favicon);
         }
     }
@@ -446,6 +416,8 @@ class MetatagData extends Data implements Wireable
 
     /**
      * @deprecated Use getThemeColors() instead as it better reflects the semantic purpose
+     *
+     * @return array<string, array{key?: string, color: string, hex?: string}>
      */
     public function getColors(): array
     {
@@ -457,26 +429,11 @@ class MetatagData extends Data implements Wireable
     /**
      * Get the default Filament colors configuration.
      *
-<<<<<<< HEAD
      * @return array<string, array<int, string>|string>
      */
     public function getFilamentColors(): array
     {
-        return PaDesignColors::filamentPalette();
-=======
-     * @return array<string, array<int, string>>
-     */
-    public function getFilamentColors(): array
-    {
-        return [
-            'danger' => Color::Red,
-            'gray' => Color::Zinc,
-            'info' => Color::Blue,
-            'primary' => Color::Amber,
-            'success' => Color::Green,
-            'warning' => Color::Amber,
-        ];
->>>>>>> 6ed19256f (.)
+        return app(PaDesignColorsAction::class)->filamentPalette();
     }
 
     /**
@@ -489,7 +446,6 @@ class MetatagData extends Data implements Wireable
     {
         $filamentColors = $this->getFilamentColors();
         $customColors = [];
-<<<<<<< HEAD
         $normalizedFilamentColors = [];
 
         foreach ($filamentColors as $key => $value) {
@@ -498,13 +454,12 @@ class MetatagData extends Data implements Wireable
                     static fn (mixed $color): string => (string) $color,
                     $value,
                 ));
+
                 continue;
             }
 
             $normalizedFilamentColors[$key] = [(string) $value];
         }
-=======
->>>>>>> 6ed19256f (.)
 
         // Convert custom color format to Filament color format
         foreach ($this->colors as $key => $value) {
@@ -515,11 +470,7 @@ class MetatagData extends Data implements Wireable
             }
         }
 
-<<<<<<< HEAD
         return array_merge($normalizedFilamentColors, $customColors);
-=======
-        return array_merge($filamentColors, $customColors);
->>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -663,6 +614,11 @@ class MetatagData extends Data implements Wireable
         $xot = XotData::make();
         $path = base_path('Modules/'.$xot->main_module.'/resources/svg/logo.svg');
 
+        // Il modulo principale puo' non avere un logo.svg: chi costruisce l'email non deve fallire (come getBrandLogoBase64()).
+        if (! File::exists($path)) {
+            return '';
+        }
+
         return file_get_contents($path);
     }
 
@@ -673,17 +629,17 @@ class MetatagData extends Data implements Wireable
 
     public function getKeywords(): string
     {
-        return TenantService::trans('metatag.keywords');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.keywords');
     }
 
     public function getAuthor(): string
     {
-        return TenantService::trans('metatag.author');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.author');
     }
 
     public function getSitename(): string
     {
-        return TenantService::trans('metatag.sitename');
+        return app(TranslateTenantKeyAction::class)->execute('metatag.sitename');
     }
 
     public function getRobots(): string
@@ -743,11 +699,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a title to the existing title.
      * This method allows adding page-specific titles to the base site title.
      *
-<<<<<<< HEAD
-     * @param string|null $title The title to concatenate
-=======
      * @param  string|null  $title  The title to concatenate
->>>>>>> 6ed19256f (.)
      */
     public function concatTitle(?string $title): self
     {
@@ -769,11 +721,7 @@ class MetatagData extends Data implements Wireable
      * Concatenate a description to the existing description.
      * This method allows adding page-specific descriptions to the base site description.
      *
-<<<<<<< HEAD
-     * @param string|null $description The description to concatenate
-=======
      * @param  string|null  $description  The description to concatenate
->>>>>>> 6ed19256f (.)
      */
     public function concatDescription(?string $description): self
     {

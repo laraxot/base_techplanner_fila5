@@ -5,32 +5,26 @@ declare(strict_types=1);
 return [
     'fields' => [
         'provider' => [
-            'label' => 'provider',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'provider_id' => [
-            'label' => 'provider_id',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'email' => [
-            'label' => 'email',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'avatar' => [
-            'label' => 'avatar',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -45,22 +39,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
-        ],
-        'provider_id' => [
-            'label' => 'provider_id',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'avatar' => [
-            'label' => 'avatar',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

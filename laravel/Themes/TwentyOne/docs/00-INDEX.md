@@ -12,30 +12,30 @@
 ### Architettura
 | File | Scopo |
 |------|-------|
-| ARCHITECTURE_UX_IMPROVEMENTS.md | Architecture & UX |
-| HOMEPAGE_ARCHITECTURE.md | Homepage architecture |
-| HEADERNAV_CMS_ARCHITECTURE.md | Header/Nav CMS |
-| FOOTER_ARCHITECTURE.md | Footer architecture |
+| architecture-ux-improvements.md | Architecture & UX |
+| homepage-architecture.md | Homepage architecture |
+| headernav-cms-architecture.md | Header/Nav CMS |
+| footer-architecture.md | Footer architecture |
 
 ### Filament
 | File | Scopo |
 |------|-------|
-| FILAMENT_5_IMPLEMENTATION.md | Filament v5 setup |
-| FILAMENT_TABLES_SETUP.md | Tables setup |
+| filament-5-implementation.md | Filament v5 setup |
+| filament-tables-setup.md | Tables setup |
 
 ### GSAP & Animations
 | File | Scopo |
 |------|-------|
-| GSAP_ANIMATIONS_GUIDE.md | GSAP guide |
-| GSAP_SCROLLTRIGGER_CONFIGURATION.md | ScrollTrigger config |
+| gsap-animations-guide.md | GSAP guide |
+| gsap-scrolltrigger-configuration.md | ScrollTrigger config |
 
 ### Frontend
 | File | Scopo |
 |------|-------|
-| BUILD_PROCESS.md | Build process |
-| CODE_QUALITY_ANALYSIS.md | Code quality |
-| PREDICT_DETAIL_AGNOSTIC_CONTRACT.md | Contratto del detail page agnostico per container0/slug0 |
-| ORDER_BOOK_MULTI_OUTCOME_CONTRACT.md | Contratto UI: l'order book itera outcome, non tipi yes/no |
+| build-process.md | Build process |
+| code-quality-analysis.md | Code quality |
+| predict-detail-agnostic-contract.md | Contratto del detail page agnostico per container0/slug0 |
+| order-book-multi-outcome-contract.md | Contratto UI: l'order book itera outcome, non tipi yes/no |
 
 ## 🔗 Riferimenti
 

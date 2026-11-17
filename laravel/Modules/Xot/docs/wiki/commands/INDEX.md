@@ -1,3 +1,14 @@
+---
+qmd: "INDEX"
+issues: []
+discussions: []
+title: "Index"
+type: reference
+tags: [wiki, no-frontmatter-fix]
+created: 2026-08-24
+updated: 2026-08-24
+---
+
 # Xot Module - commands Index
 
 ## Purpose
@@ -10,7 +21,7 @@ qmd search "Xot commands" --limit 5
 ```
 
 ## See Also
-- [Root Trigger Map](../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
+- [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)
 - [Root Wiki](../../../docs/wiki/)
 
 ---

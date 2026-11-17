@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki concepts index md"
 title: "concepts index — UI"
 type: index
 tags: [concepts, UI]

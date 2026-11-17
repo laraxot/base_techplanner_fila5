@@ -1,3 +1,14 @@
+---
+title: "optimization recommendations 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "optimization recommendations 1"
+issues: []
+discussions: []
+---
+
 # Raccomandazioni di Ottimizzazione - Modulo Cms
 
 ## 🎯 Stato Attuale e Analisi
@@ -318,16 +329,8 @@ php artisan cms:seo-audit
 
 ## Collegamenti
 
-<<<<<<< HEAD
 - [Analisi Moduli Globale](../../../../docs/modules_analysis_and_optimization.md)
 - [Content Management Guide](content-management/)
 - [SEO Best Practices](seo/)
 
 *
-=======
-- [Analisi Moduli Globale](../../../docs/modules_analysis_and_optimization.md)
-- [Content Management Guide](content-management/)
-- [SEO Best Practices](seo/)
-
-*Ultimo aggiornamento: gennaio 2025*
->>>>>>> 6ed19256f (.)

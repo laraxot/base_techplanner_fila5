@@ -358,7 +358,7 @@ docs/archive/roadmaps/
 - **Central Hub**: [`/docs/ROADMAP.md`](../ROADMAP.md)
 - **Migration Guide**: [`MIGRATION_GUIDE.md`](./MIGRATION_GUIDE.md)
 - **Analysis Report**: [`ANALYSIS.md`](./ANALYSIS.md)
-- **Phase Index**: [`phase-planning/PHASES.md`](./phase-planning/PHASES.md)
+- **Phase Index**: [`phase-planning/PHASES.md`](../../roadmap/phases.md)
 
 ---
 

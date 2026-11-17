@@ -1,3 +1,10 @@
+---
+title: "PHPStan Corrections - UI Module - Gennaio 2026"
+qmd: "ui phpstan corrections january md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Corrections - UI Module - Gennaio 2026
 
 **Data**: 2026-01-02
@@ -155,10 +162,5 @@ if ($color !== '') {  // Non serve is_string()
 
 ## Collegamenti
 
-- [PHPStan Code Quality Guide](../../Xot/docs/phpstan-code-quality-guide.md)
-<<<<<<< HEAD
 - [PHPStan Code Quality Guide](../../xot/docs/phpstan-code-quality-guide.md)
 - [Correzioni Precedenti](./phpstan-corrections.md)
-=======
-- [Correzioni Precedenti](./phpstan-corrections.md)
->>>>>>> 6ed19256f (.)

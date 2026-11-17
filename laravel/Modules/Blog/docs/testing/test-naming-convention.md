@@ -27,7 +27,7 @@ TagTest.php
 ## 📚 Riferimenti
 
 - [Regola Critica Progetto](../../../../docs/regole-critiche/test-naming-pascalcase.md)
-- [PHPStan Best Practices](../phpstan/best-practices.md)
+- [PHPStan Best Practices](../filament/best-practices.md)
 
 ---
 

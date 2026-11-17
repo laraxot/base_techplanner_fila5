@@ -1,3 +1,28 @@
+---
+title: "Service Provider Architecture - Module Pattern"
+type: concept
+tags: [service, provider, architecture]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "service-provider-architecture service provider architecture - module pattern"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Service Provider Architecture - Module Pattern
 
 > **Generato**: 2026-01-07
@@ -198,11 +223,7 @@ class UserServiceProvider extends XotBaseServiceProvider
 
 ```json
 {
-<<<<<<< HEAD
     "name": "laraxot/module_user_fila5",
-=======
-    "name": "laraxot/module_user_fila3",
->>>>>>> 6ed19256f (.)
     "extra": {
         "laravel": {
             "providers": [
@@ -370,15 +391,9 @@ test('user service provider only configures, not registers dependencies', functi
 ## 📚 Collegamenti
 
 ### Documentazione Correlata
-- [PASSPORT_INTEGRATION.md](./PASSPORT_INTEGRATION.md) - Passport integration completa
-- [FILOSOFIA_MODULO_USER.md](./FILOSOFIA_MODULO_USER.md) - Filosofia generale modulo
+- [PASSPORT_INTEGRATION.md](./passport-integration.md) - Passport integration completa
+- [FILOSOFIA_MODULO_USER.md](./filosofia-modulo-user.md) - Filosofia generale modulo
 - [README.md](./README.md) - Overview modulo
-<<<<<<< HEAD
-- [PASSPORT_INTEGRATION.md](./passport_integration.md) - Passport integration completa
-- [FILOSOFIA_MODULO_USER.md](./filosofia_modulo_user.md) - Filosofia generale modulo
-- [README.md](./readme.md) - Overview modulo
-=======
->>>>>>> 6ed19256f (.)
 
 ### Documentazione Esterna
 - [Laravel Modules Documentation](https://nwidart.com/laravel-modules)
@@ -402,8 +417,4 @@ test('user service provider only configures, not registers dependencies', functi
 
 ---
 
-<<<<<<< HEAD
 **Conclusione**: Il Module Pattern richiede che `module.json` sia la fonte di verità per la registrazione dei providers. UserServiceProvider deve occuparsi SOLO della configurazione specifica del modulo, NON della registrazione di dipendenze già dichiarate nel manifest. Questo garantisce DRY, maintainability e aderenza agli standard Laravel Modules.
-=======
-**Conclusione**: Il Module Pattern richiede che `module.json` sia la fonte di verità per la registrazione dei providers. UserServiceProvider deve occuparsi SOLO della configurazione specifica del modulo, NON della registrazione di dipendenze già dichiarate nel manifest. Questo garantisce DRY, maintainability e aderenza agli standard Laravel Modules.
->>>>>>> 6ed19256f (.)

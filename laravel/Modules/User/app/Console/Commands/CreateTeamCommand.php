@@ -6,31 +6,20 @@ namespace Modules\User\Console\Commands;
 
 use Illuminate\Console\Command;
 use Illuminate\Database\Eloquent\Model;
-
-use function Laravel\Prompts\text;
-
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+
+use function Laravel\Prompts\text;
 
 class CreateTeamCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $signature = 'user:team-create';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $description = 'Create a team';
 

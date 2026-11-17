@@ -7,14 +7,13 @@ namespace Modules\User\Console\Commands;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Console\Command;
 use Illuminate\Contracts\Support\Htmlable;
-
-use function Laravel\Prompts\select;
-use function Laravel\Prompts\text;
-
 use Modules\Xot\Actions\Cast\SafeObjectCastAction;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Datas\XotData;
 use Webmozart\Assert\Assert;
+
+use function Laravel\Prompts\select;
+use function Laravel\Prompts\text;
 
 /**
  * Command to change user type based on project configuration.
@@ -26,21 +25,11 @@ class ChangeTypeCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $name = 'user:change-type';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $description = 'Change user type based on project configuration';
 
@@ -82,7 +71,7 @@ class ChangeTypeCommand extends Command
                 $typeLabel = $label;
             } elseif ($label instanceof Htmlable) {
                 $typeLabel = $label->toHtml();
-            } else {
+            } elseif (\is_scalar($label) || $label instanceof \Stringable) {
                 $typeLabel = (string) $label;
             }
         }
@@ -101,7 +90,8 @@ class ChangeTypeCommand extends Command
             ) {
                 $value = app(SafeObjectCastAction::class)
                     ->getStringProperty($item, 'value', '');
-                $options[$value] = (string) $item->getLabel();
+                $label = $item->getLabel();
+                $options[$value] = \is_scalar($label) || $label instanceof \Stringable ? (string) $label : 'Unknown';
             } else {
                 $options[(string) $key] = 'Unknown';
             }
@@ -110,13 +100,9 @@ class ChangeTypeCommand extends Command
         $newType = select('Select new user type:', $options);
 
         $newTypeEnum = $typeClass::tryFrom($newType);
-<<<<<<< HEAD
-        if (null === $newTypeEnum) {
+        if ($newTypeEnum === null) {
             throw new \InvalidArgumentException('Invalid user type selected.');
         }
-=======
-        Assert::notNull($newTypeEnum);
->>>>>>> 6ed19256f (.)
         Assert::isInstanceOf($newTypeEnum, HasLabel::class);
         Assert::isInstanceOf($newTypeEnum, \BackedEnum::class);
 
@@ -124,15 +110,8 @@ class ChangeTypeCommand extends Command
         $user->type = (string) $newTypeEnum->value;
         $user->save();
 
-        $label = $newTypeEnum->getLabel();
-        $labelString = '';
-        if (\is_string($label)) {
-            $labelString = $label;
-        } elseif ($label instanceof Htmlable) {
-            $labelString = $label->toHtml();
-        } else {
-            $labelString = (string) $label;
-        }
+        $label = $newTypeEnum->getLabel() ?? (string) $newTypeEnum->value;
+        $labelString = $label instanceof Htmlable ? $label->toHtml() : $label;
         $this->info("User type changed to '{$labelString}' for {$email}");
     }
 }

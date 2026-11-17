@@ -5,11 +5,7 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'OAuth访问令牌',
-<<<<<<< HEAD
         'group' => '',
-=======
-        'group' => 'OAuth',
->>>>>>> 6ed19256f (.)
         'icon' => 'heroicon-o-key',
         'sort' => 33,
     ],
@@ -18,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -58,26 +53,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'user_id' => [
-            'label' => '用户',
-        ],
-        'client_id' => [
-            'label' => '客户端',
-        ],
-        'name' => [
-            'label' => '名称',
-        ],
-        'scopes' => [
-            'label' => '范围',
-        ],
-        'revoked' => [
-            'label' => '已撤销',
-        ],
-        'expires_at' => [
-            'label' => '过期时间',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

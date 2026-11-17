@@ -5,10 +5,7 @@ declare(strict_types=1);
 namespace Modules\User\Actions\Socialite\Utils;
 
 use Illuminate\Support\Str;
-<<<<<<< HEAD
 use InvalidArgumentException;
-=======
->>>>>>> 6ed19256f (.)
 use Laravel\Socialite\Contracts\User;
 
 final class EmailDomainAnalyzer
@@ -19,18 +16,14 @@ final class EmailDomainAnalyzer
         private readonly string $ssoProvider,
     ) {
         if (empty($ssoProvider)) {
-            throw new \InvalidArgumentException('Il provider SSO non può essere vuoto');
+            throw new InvalidArgumentException('Il provider SSO non può essere vuoto');
         }
     }
 
     public function setUser(User $ssoUser): self
     {
         // if ($ssoUser === null) {
-<<<<<<< HEAD
         //    throw new InvalidArgumentException('L\'utente SSO non può essere null');
-=======
-        //    throw new \InvalidArgumentException('L\'utente SSO non può essere null');
->>>>>>> 6ed19256f (.)
         // }
         $this->ssoUser = $ssoUser;
 
@@ -54,7 +47,7 @@ final class EmailDomainAnalyzer
         }
 
         $domain = $this->firstPartyDomain();
-        if (null === $domain || empty($domain)) {
+        if ($domain === null || empty($domain)) {
             return false;
         }
 
@@ -76,7 +69,7 @@ final class EmailDomainAnalyzer
         }
 
         $clientEmailDomain = $this->clientDomain();
-        if (null === $clientEmailDomain || empty($clientEmailDomain)) {
+        if ($clientEmailDomain === null || empty($clientEmailDomain)) {
             return false;
         }
 
@@ -89,7 +82,7 @@ final class EmailDomainAnalyzer
     private function firstPartyDomain(): ?string
     {
         $res = config(sprintf('services.%s.email_domains.first_party.tld', $this->ssoProvider));
-        if (! is_string($res) && null !== $res) {
+        if (! is_string($res) && $res !== null) {
             return null;
         }
 
@@ -99,7 +92,7 @@ final class EmailDomainAnalyzer
     private function clientDomain(): ?string
     {
         $domain = config(sprintf('services.%s.email_domains.client.tld', $this->ssoProvider));
-        if (! is_string($domain) && null !== $domain) {
+        if (! is_string($domain) && $domain !== null) {
             return null;
         }
 

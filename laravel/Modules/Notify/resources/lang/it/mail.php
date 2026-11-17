@@ -47,29 +47,11 @@ return [
                 'placeholder' => 'Seleziona i canali',
                 'tooltip' => 'Canali di invio disponibili',
                 'options' => [
-<<<<<<< HEAD
-                    'email' => [
-                        'label' => 'Email',
-                    ],
-                    'sms' => [
-                        'label' => 'SMS',
-                    ],
-                    'push' => [
-                        'label' => 'Push Notification',
-                    ],
-                    'whatsapp' => [
-                        'label' => 'WhatsApp',
-                    ],
-                    'telegram' => [
-                        'label' => 'Telegram',
-                    ],
-=======
                     'email' => ['label' => 'Email'],
                     'sms' => ['label' => 'SMS'],
                     'push' => ['label' => 'Push Notification'],
                     'whatsapp' => ['label' => 'WhatsApp'],
                     'telegram' => ['label' => 'Telegram'],
->>>>>>> 6ed19256f (.)
                 ],
             ],
             'variables' => [
@@ -101,37 +83,16 @@ return [
             'category' => [
                 'label' => 'Categoria',
                 'options' => [
-<<<<<<< HEAD
-                    'welcome' => [
-                        'label' => 'Benvenuto',
-                    ],
-                    'reminder' => [
-                        'label' => 'Promemoria',
-                    ],
-                    'notification' => [
-                        'label' => 'Notifica',
-                    ],
-=======
                     'welcome' => ['label' => 'Benvenuto'],
                     'reminder' => ['label' => 'Promemoria'],
                     'notification' => ['label' => 'Notifica'],
->>>>>>> 6ed19256f (.)
                 ],
             ],
             'is_active' => [
                 'label' => 'Stato',
                 'options' => [
-<<<<<<< HEAD
-                    'active' => [
-                        'label' => 'Attivo',
-                    ],
-                    'inactive' => [
-                        'label' => 'Inattivo',
-                    ],
-=======
                     'active' => ['label' => 'Attivo'],
                     'inactive' => ['label' => 'Inattivo'],
->>>>>>> 6ed19256f (.)
                 ],
             ],
         ],
@@ -167,20 +128,4 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
-    'navigation' => [
-        'label' => 'Missing Navigation Label',
-        'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
-        'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
-    ],
-    'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

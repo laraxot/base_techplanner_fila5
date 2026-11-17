@@ -1,7 +1,13 @@
+---
+title: "Factory Coverage Report - Activity Module"
+qmd: "activity factory coverage report md"
+type: note
+tags: [documentation]
+---
+
 # Factory Coverage Report - Activity Module
 
 ## 📊 Status Report
-**Date:** 2025-08-22
 **Module:** Activity
 
 ## ✅ Factory Coverage Complete
@@ -55,8 +61,4 @@ All factories have been tested and:
 - ✅ Support model relationships where applicable
 
 ---
-<<<<<<< HEAD
 *Report generated automatically - Factory coverage: 100%*
-=======
-*Report generated automatically - Factory coverage: 100%*
->>>>>>> 6ed19256f (.)

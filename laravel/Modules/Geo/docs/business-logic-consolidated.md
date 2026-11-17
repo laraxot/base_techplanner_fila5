@@ -1,3 +1,14 @@
+---
+title: "business logic consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "business logic consolidated"
+issues: []
+discussions: []
+---
+
 # 🏥 Business Logic Consolidata - Progetto <nome progetto>
 
 ## 📋 Panoramica del Sistema
@@ -238,37 +249,30 @@ User (base)
 ## 🔗 Collegamenti Documentazione
 
 ### Documentazione Moduli
-<<<<<<< HEAD
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
 - [<nome progetto>](../modules/<nome progetto>/docs/readme.md)
-- [User](../modules/user/docs/readme.md)
-- [Geo](../modules/geo/docs/readme.md)
-- [Media](../modules/media/docs/readme.md)
-- [UI](../modules/ui/docs/readme.md)
-- [Xot](../modules/xot/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
-- [<nome progetto>](../Modules/<nome progetto>/docs/README.md)
-- [User](../Modules/User/docs/README.md)
-- [Geo](../Modules/Geo/docs/README.md)
-- [Media](../Modules/Media/docs/README.md)
-- [UI](../Modules/UI/docs/README.md)
-- [Xot](../Modules/Xot/docs/README.md)
+- [User](../../User/docs/readme.md)
+- [Geo](README.md)
+- [Media](../../Media/docs/readme.md)
+- [UI](../../UI/docs/README.md)
+- [Xot](../../Xot/docs/README.md)
 
 ### Documentazione Tecnica
-- [Architettura](../laraxot-architecture-principles.md)
+- [Architettura](laraxot-architecture-principles.md)
 - [Testing](../testing-supreme-index.md)
 - [PHPStan](../phpstan-critical-rule.md)
-- [Factory e Seeder](../factory-best-practices.md)
+- [Factory e Seeder](factory-best-practices.md)
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025
+title: "business logic consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "business logic consolidated"
+issues: []
+discussions: []
 **Versione**: 2.0
 **Autore**: AI Assistant
-<<<<<<< HEAD
 **Stato**: Consolidata e Rifattorizzata
-=======
-**Stato**: Consolidata e Rifattorizzata
->>>>>>> 6ed19256f (.)

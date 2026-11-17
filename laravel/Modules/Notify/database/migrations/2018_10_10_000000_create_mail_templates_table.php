@@ -1,12 +1,10 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 // ----- bases ----
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-<<<<<<< HEAD
 /**
  * Class CreateMailTemplatesTable.
  *
@@ -14,21 +12,12 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
  */
 return new class extends XotBaseMigration
 {
-=======
-/*
- * Class CreateThemesTable.
- */
-return new class extends XotBaseMigration
-{
-    // use XotBaseMigrationTrait;
->>>>>>> 6ed19256f (.)
     /**
      * Run the migrations.
      */
     public function up(): void
     {
         // -- CREATE --
-<<<<<<< HEAD
         if (! $this->tableExists()) {
             $this->getConn()->create($this->getTable(), function (Blueprint $table): void {
                 $table->increments('id');
@@ -66,18 +55,6 @@ return new class extends XotBaseMigration
                 $table->string('version')->default('1.0.0');
             }
 
-=======
-        $this->tableCreate(function (Blueprint $table): void {
-            $table->increments('id');
-            $table->string('mailable');
-            $table->text('subject')->nullable();
-            $table->longText('html_template');
-            $table->longText('text_template')->nullable();
-        });
-
-        // -- UPDATE --
-        $this->tableUpdate(function (Blueprint $table): void {
->>>>>>> 6ed19256f (.)
             $this->updateTimestamps(
                 table: $table,
                 hasSoftDeletes: true,

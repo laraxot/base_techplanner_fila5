@@ -11,7 +11,6 @@ use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 class LogoBlock extends XotBaseBlock
 {
-    #[\Override]
     public static function getBlockSchema(): array
     {
         return [
@@ -34,10 +33,6 @@ class LogoBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
-<<<<<<< HEAD
-        return \trans_string('cms::blocks.logo.label');
-=======
-        return \trans_string('cms::blocks.logo.label') ?? 'Logo';
->>>>>>> 6ed19256f (.)
+        return \trans_string('cms::blocks.logo.label') ?: 'Logo Block';
     }
 }

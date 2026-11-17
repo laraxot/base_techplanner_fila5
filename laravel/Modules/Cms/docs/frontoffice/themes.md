@@ -1,4 +1,21 @@
+---
+title: "themes"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "themes"
+issues: []
+discussions: []
+---
+
 # Gestione Temi - Linee Guida e Riflessioni
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Introduzione
 
@@ -36,7 +53,7 @@ laravel/Themes/One/
 npm run build
 
 # Pubblicazione
-npm run copy
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
 
 ## Riflessioni e Linee Guida
@@ -117,7 +134,7 @@ npm run copy
    ls -la public/themes/One
 
    # Forza copia
-   npm run copy -- --force
+   # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
    ```
 
 3. **Problemi di Cache**
@@ -153,11 +170,6 @@ npm run copy
 - [Laravel Mix](https://laravel-mix.com/)
 
 ## Collegamenti tra versioni di themes.md
-* [themes.md](docs/rules/themes.md)
-* [themes.md](laravel/Modules/Xot/docs/themes.md)
-* [themes.md](laravel/Modules/Cms/docs/frontoffice/themes.md)
-<<<<<<< HEAD
-* [themes.md](laravel/modules/xot/docs/themes.md)
-* [themes.md](laravel/modules/cms/docs/frontoffice/themes.md)
-=======
->>>>>>> 6ed19256f (.)
+* [themes.md](themes.md)
+* [themes.md](themes.md)
+* [themes.md](themes.md)

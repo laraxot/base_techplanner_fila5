@@ -5,10 +5,14 @@ declare(strict_types=1);
 namespace Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Schemas;
 
 use Filament\Infolists\Components\TextEntry;
+use Filament\Schemas\Components\Component;
 
 class ProfileInfolist
 {
-    public static function getInfolistSchema(): array
+    /**
+     * @return array<string, Component>
+     */
+    public function getInfolistSchema(): array
     {
         return [
             'id' => TextEntry::make('id'),

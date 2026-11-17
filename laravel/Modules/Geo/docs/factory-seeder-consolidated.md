@@ -1,3 +1,14 @@
+---
+title: "factory seeder consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "factory seeder consolidated"
+issues: []
+discussions: []
+---
+
 # 🏭 Factory e Seeder Consolidati - Progetto <nome progetto>
 
 ## 📋 Panoramica
@@ -311,33 +322,28 @@ Ho creato uno script intelligente (`smart_populate_models.php`) che:
 ## 🔗 Collegamenti Documentazione
 
 ### Documentazione Moduli
-<<<<<<< HEAD
 - [<nome progetto> Factory](../modules/<nome progetto>/docs/factory-issues-analysis.md)
 - [<nome progetto> Factory](../modules/<nome progetto>/docs/factory-issues-analysis.md)
-- [User Factory](../modules/user/docs/factory-audit-lessons-learned.md)
-- [Geo Factory](../modules/geo/docs/factory-creation-geo-module.md)
-- [Media Factory](../modules/media/docs/readme.md)
-=======
->>>>>>> 6ed19256f (.)
-- [<nome progetto> Factory](../Modules/<nome progetto>/docs/factory-issues-analysis.md)
-- [<nome progetto> Factory](../Modules/<nome progetto>/docs/factory-issues-analysis.md)
-- [User Factory](../Modules/User/docs/factory-audit-lessons-learned.md)
-- [Geo Factory](../Modules/Geo/docs/factory-creation-geo-module.md)
-- [Media Factory](../Modules/Media/docs/README.md)
+- [User Factory](../../User/docs/factory-audit-lessons-learned.md)
+- [Geo Factory](factory-creation-geo-module.md)
+- [Media Factory](../../Media/docs/readme.md)
 
 ### Documentazione Tecnica
-- [Business Logic](../business-logic-consolidated.md)
-- [Factory Best Practices](../factory-best-practices.md)
+- [Business Logic](business-logic-consolidated.md)
+- [Factory Best Practices](factory-best-practices.md)
 - [Testing Strategy](../testing-strategy-modules.md)
 - [PHPStan Analysis](../phpstan-analysis-business-logic.md)
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025
+title: "factory seeder consolidated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "factory seeder consolidated"
+issues: []
+discussions: []
 **Versione**: 2.0
 **Autore**: AI Assistant
-<<<<<<< HEAD
 **Stato**: Consolidata e Completa
-=======
-**Stato**: Consolidata e Completa
->>>>>>> 6ed19256f (.)

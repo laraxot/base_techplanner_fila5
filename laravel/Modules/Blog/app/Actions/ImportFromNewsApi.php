@@ -21,7 +21,7 @@ class ImportFromNewsApi
         Assert::string($app_key = config('services.newsapi.app_key'));
         $url = 'https://newsapi.org/v2/everything?q=cripto&sortBy=popularity&apiKey='.$app_key;
         $response = Http::get($url);
-        Assert::isArray($res = $response->json(), '['.__LINE__.']['.__FILE__.']');
+        Assert::isArray($response->json(), '['.__LINE__.']['.__FILE__.']');
         /* --- from POST to ARTICLE
         foreach ($posts as $post) {
             $res = Post::create([

@@ -1,3 +1,10 @@
+---
+title: "UI Activity Log"
+qmd: "ui llm wiki log md"
+type: note
+tags: [documentation]
+---
+
 # UI Activity Log
 
 > **Module**: UI

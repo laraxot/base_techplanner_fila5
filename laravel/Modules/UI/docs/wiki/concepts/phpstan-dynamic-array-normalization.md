@@ -1,3 +1,10 @@
+---
+title: "PHPStan Dynamic Array Normalization"
+qmd: "ui wiki concepts phpstan dynamic array normalization md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Dynamic Array Normalization
 
 ## Scopo

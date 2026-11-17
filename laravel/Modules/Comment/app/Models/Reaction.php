@@ -4,15 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\Comment\Models;
 
-use Closure;
-use Illuminate\Contracts\Database\Query\Expression;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Comment\Database\Factories\ReactionFactory;
 use Modules\Xot\Contracts\ProfileContract;
-use Spatie\Comments\Models\Collections\ReactionCollection;
 use Spatie\Comments\Models\Reaction as BaseReaction;
 
 /**
@@ -29,35 +25,15 @@ use Spatie\Comments\Models\Reaction as BaseReaction;
  * @property string|null $deleted_by
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
- * @method static ReactionFactory factory($count = null, $state = [])
- * @method static Builder|Reaction newModelQuery()
- * @method static Builder|Reaction newQuery()
- * @method static Builder|Reaction query()
- * @method static Builder|Reaction whereCommentId($value)
- * @method static Builder|Reaction whereCommentatorId($value)
- * @method static Builder|Reaction whereCommentatorType($value)
- * @method static Builder|Reaction whereCreatedAt($value)
- * @method static Builder|Reaction whereCreatedBy($value)
- * @method static Builder|Reaction whereDeletedAt($value)
- * @method static Builder|Reaction whereDeletedBy($value)
- * @method static Builder|Reaction whereId($value)
- * @method static Builder|Reaction whereReaction($value)
- * @method static Builder|Reaction whereUpdatedAt($value)
- * @method static Builder|Reaction whereUpdatedBy($value)
- *
  * @property-read Comment|null $comment
  * @property-read Model|\Eloquent $commentator
  *
- * @method static ReactionCollection<int, static> all($columns = ['*'])
- * @method static ReactionCollection<int, static> get($columns = ['*'])
- * @method static Reaction|null first()
- * @method static Collection<int, Reaction> get()
- * @method static Reaction create(array $attributes = [])
- * @method static Reaction firstOrCreate(array $attributes = [], array $values = [])
- * @method static Builder<static>|Reaction where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
- * @method static Builder<static>|Reaction whereNotNull((string|Expression) $columns)
- * @method static int count(string $columns = '*')
+ * @method static ReactionFactory factory($count = null, $state = [])
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static Reaction create(array<string, mixed> $attributes = [])
+ * @method static Reaction firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  *
  * @mixin \Eloquent
  */

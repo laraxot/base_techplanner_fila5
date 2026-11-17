@@ -1,3 +1,10 @@
+---
+title: "SelectStateColumn - Aggiunta Modal di Conferma"
+qmd: "ui archive selectstatecolumn confirmation modal 1 md"
+type: note
+tags: [documentation]
+---
+
 # SelectStateColumn - Aggiunta Modal di Conferma
 
 ## Panoramica

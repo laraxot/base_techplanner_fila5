@@ -1,70 +1,84 @@
-# Node.js
+# Dependencies
 node_modules/
-npm-debug.log
-yarn-error.log
+vendor/
+
+# Lockfiles (managed at monorepo root)
 package-lock.json
 yarn.lock
 
-# Vendor (per PHP, Composer, ecc.)
-vendor/
-
-# Build outputs (per progetti frontend, React, Angular, Vue, ecc.)
+# Build outputs
 build/
 dist/
+# The stable Design Comuni sprite is a source input for Vite, not build output.
+!resources/static/
+!resources/static/design-comuni/
+!resources/static/design-comuni/assets/
+!resources/static/design-comuni/assets/bootstrap-italia/
+!resources/static/design-comuni/assets/bootstrap-italia/dist/
+!resources/static/design-comuni/assets/bootstrap-italia/dist/svg/
+!resources/static/design-comuni/assets/bootstrap-italia/dist/svg/sprites.svg
+!resources/scripts/
+!resources/scripts/prepare-static-assets.mjs
+# Lo sprite in public/ NON si ignora: deploy.sh non esegue il build del tema e serve public/ cosi' com'e' nel repository.
+# Ignorarlo (come prima) lasciava un checkout pulito senza icone e senza errori (404 su ogni pagina). Vedi DesignComuniIconSpriteIsDeployableTest.
+# `dist/` (sopra) esclude la cartella: git non rientra in una cartella esclusa, quindi si riaprono tutti i livelli fino al file.
+!public/design-comuni/
+!public/design-comuni/assets/
+!public/design-comuni/assets/bootstrap-italia/
+!public/design-comuni/assets/bootstrap-italia/dist/
+!public/design-comuni/assets/bootstrap-italia/dist/svg/
+!public/design-comuni/assets/bootstrap-italia/dist/svg/sprites.svg
+test-results/
 
-
-# Cache e temporary files
+# Cache / temp
 .cache/
 tmp/
 temp/
-
-# IDEs e editor (Visual Studio Code, JetBrains, ecc.)
-.vscode/
-.idea/
-
-# Sistema operativo (macOS, Windows, Linux)
-.DS_Store
-Thumbs.db
-*.bak
-
-# Log files
-*.log
-
-# Environment files
-.env
-.env.local
-.env.*.local
-
-# Documentation Cache (siti generati da strumenti come Jekyll, Hugo, ecc.)
 docs/cache/
 
-# Git-specific
-.git-blame-ignore-revs
+# Environment
+.env
+.env.*
+!.env.example
 
-# Standard ignores (auto)
+# Logs
+*.log
+npm-debug.log
+yarn-error.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editors / AI tool workspaces
+.vscode/
+.idea/
+.cursor/
+.windsurf/
+.claude-flow
+.supermemory
+agentdb.rvf
+ruvector.db
+
+# Stray browser-saved-page dump (not theme source, keep out of history)
+Main_files/
+
+# Backups / stray artifacts
+*.bak
 *.old
 *.old1
+*.backup
+*.backup.*
 *.bakcup
-*.backup
-*.backup.*
-*.backup
-*.backup
-*.backup.*
-*.backup
-*.backup.*
-<<<<<<< HEAD
-_docs/
 
-# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
-docs/archive/
-# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+# Merge/rebase leftovers — never commit
 *~HEAD
 *~BASE
 *~LOCAL
 *~REMOTE
+*~head
 *.orig
 *.rej
-*~head
 
 .c*
 .claude-flow
@@ -74,7 +88,66 @@ Main_files
 test-results
 laravel
 .supermemory
-components
-layouts
-=======
->>>>>>> 6ed19256f (.)
+# Ancorate alla radice del tema: senza slash iniziale ignoravano anche resources/views/components e resources/views/layouts,
+# e le viste nuove sparivano da git (sync 6cb55f0d: pagine in 500, nessun file da committare).
+/components
+/layouts
+
+!/docs/bmad/
+/docs/bmad/*
+!/docs/bmad/front-office-readiness-brainstorming.md
+!/docs/bmad/front-office-production-readiness-plan.md
+agentdb.rvf
+ruvector.db
+# AI/TOOL SCAFFOLD — must never exist in module/theme tree (see docs/wiki/rules/module-theme-root-cleanup.md, Rule 5)
+# Reports/audit artifacts belong under the monorepo build/, not inside the theme tree.
+_docs/
+/scripts/
+bashscripts/
+!resources/scripts/
+!resources/scripts/prepare-static-assets.mjs
+docs/archive/
+docs/archived/
+docs/legacy/
+docs/workbench/
+.circleci/
+.claude-audit/
+tests/.claude-audit/
+_bmad-output/
+.devcontainer/
+.kilocode/
+.kiro/
+.ralph/
+tests/AuditCoverage/
+
+# Git internals
+.git-blame-ignore-revs
+
+# Laraxot — IDE folders forbidden at module/theme root (see module-theme-root-hygiene)
+# Artefatti di strumenti AI locali
+.claude-flow
+.supermemory
+test-results
+agentdb.rvf
+ruvector.db
+.cursor/
+.devcontainer/
+.vscode/
+.windsurf/
+
+# Laraxot — quality tool configs forbidden in module/theme root (use laravel/phpinsights.php, laravel/rector.php)
+phpinsights.php
+rector.php
+storage/
+# graphify-out: generated AST/knowledge graph — never commit (no git-lfs; rebuild with graphify update)
+graphify-out/
+*.lock
+# Strumenti locali/IDE (wiki module-theme-root-hygiene)
+.agents/
+.codex/
+.opencode/
+.qwen/
+audit-coverage/
+.php-cs-fixer.php
+.php-cs-fixer.dist.php
+*.lock

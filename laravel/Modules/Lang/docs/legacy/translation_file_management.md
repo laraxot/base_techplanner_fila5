@@ -241,7 +241,7 @@ php artisan lang:export
 
 - [Translation Standards](./translation-standards.md)
 - [Translation System](./translation-system.md)
-- [Best Practices](./translation-keys-best-practices.md)
+- [Best Practices](../translation-keys-best-practices.md)
 - [Laravel Localization](https://laravel.com/docs/localization)
 
 ## Note per lo Sviluppo

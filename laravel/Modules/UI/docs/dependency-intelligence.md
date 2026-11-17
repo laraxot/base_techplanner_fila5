@@ -1,3 +1,10 @@
+---
+title: "Dependency Intelligence - Module UI"
+qmd: "ui dependency intelligence md"
+type: note
+tags: [documentation]
+---
+
 # Dependency Intelligence - Module UI
 
 Aggiornato da `composer show` il 2026-03-02.

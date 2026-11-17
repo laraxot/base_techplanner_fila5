@@ -6,16 +6,10 @@ namespace Modules\Xot\Filament\Resources\CacheResource\Pages;
 
 use Filament\Actions\Action;
 use Filament\Actions\CreateAction;
-use Filament\Tables\Columns\Layout\Stack;
-use Filament\Tables\Columns\TextColumn;
 use Modules\UI\Enums\TableLayoutEnum;
 use Modules\Xot\Filament\Actions\Header\ArtisanHeaderAction;
 use Modules\Xot\Filament\Resources\CacheResource;
 use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
-<<<<<<< HEAD
-=======
-use Override;
->>>>>>> 6ed19256f (.)
 
 /**
  * @see CacheResource
@@ -33,50 +27,10 @@ class ListCaches extends XotBaseListRecords
         ];
     }
 
-<<<<<<< HEAD
-    #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
-    public function getTableColumns(): array
-    {
-        return [
-            'key' => TextColumn::make('key')
-                ->searchable()
-                ->sortable()
-                ->wrap()
-                ->label('Key'),
-            'value' => TextColumn::make('value')
-                ->searchable()
-                ->wrap()
-                ->label('Value'),
-            'expiration' => TextColumn::make('expiration')
-                ->dateTime()
-                ->sortable()
-                ->label('Expiration'),
-        ];
-    }
-
-<<<<<<< HEAD
-    #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
-    public function getGridTableColumns(): array
-    {
-        return [
-            Stack::make($this->getTableColumns()),
-        ];
-    }
-
     /**
      * @return array<string, Action>
      */
-<<<<<<< HEAD
     #[\Override]
-=======
-    #[Override]
->>>>>>> 6ed19256f (.)
     protected function getHeaderActions(): array
     {
         return [

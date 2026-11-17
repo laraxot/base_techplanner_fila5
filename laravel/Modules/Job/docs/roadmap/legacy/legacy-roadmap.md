@@ -1,3 +1,14 @@
+---
+title: "legacy roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "legacy roadmap"
+issues: []
+discussions: []
+---
+
 # Job Module Roadmap 2026
 
 ## ⚙️ Sacred Philosophy: "Automation is Liberation"
@@ -14,6 +25,14 @@ Transform task management from a technical burden into an **automation superpowe
 
 ---
 
+title: "legacy roadmap"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "legacy roadmap"
+issues: []
+discussions: []
 ## 📊 Current Architecture Assessment
 
 ### ✅ Architectural Strengths

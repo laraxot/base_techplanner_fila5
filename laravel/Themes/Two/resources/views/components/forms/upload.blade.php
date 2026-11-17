@@ -40,18 +40,18 @@
         </div>
         
         <p class="text-sm text-gray-600 mb-2">
-            {{ __('Trascina i file qui o') }}
+            {{ __('pub_theme::ui.upload.drag_drop.label') }}
             <span class="text-primary-600 font-medium">
-                {{ __('clicca per selezionare') }}
+                {{ __('pub_theme::ui.upload.click_select.label') }}
             </span>
         </p>
         
         <p class="text-xs text-gray-400">
-            {{ __('Dimensione massima') }}: {{ number_format($maxSize) }} KB
+            {{ __('pub_theme::ui.upload.max_size.label') }}: {{ number_format($maxSize) }} KB
             @if(!$multiple)
-                ({{ __('1 file') }})
+                ({{ __('pub_theme::ui.upload.one_file.label') }})
             @else
-                ({{ __('File multipli') }})
+                ({{ __('pub_theme::ui.upload.multiple.label') }})
             @endif
         </p>
     </div>

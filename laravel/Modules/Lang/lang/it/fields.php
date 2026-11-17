@@ -60,7 +60,6 @@ return [
         'placeholder' => 'Inserisci le sezioni',
     ],
     'fields' => [
-<<<<<<< HEAD
         'label' => [
             'label' => 'Campi',
             'tooltip' => '',
@@ -73,10 +72,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'label' => 'Campi',
-        'placeholder' => 'Inserisci i campi',
->>>>>>> 6ed19256f (.)
     ],
     'type' => [
         'label' => 'Tipo',
@@ -150,7 +145,6 @@ return [
         'placeholder' => 'Inserisci valore test',
         'help' => 'Campo per test del sistema',
     ],
-<<<<<<< HEAD
     'label' => 'Fields',
     'plural_label' => 'Fields (Plurale)',
     'navigation' => [
@@ -161,8 +155,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Fields',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'actions' => [
         'create' => [
@@ -175,6 +169,4 @@ return [
             'label' => 'Elimina Fields',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

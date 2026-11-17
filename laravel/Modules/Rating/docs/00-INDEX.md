@@ -22,7 +22,7 @@
 
 ## 🔗 Riferimenti
 
-- [Xot Module](../Xot/docs/00-index.md) - Base classes
+- [Xot Module](00-INDEX.md) - Base classes
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 
 ---

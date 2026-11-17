@@ -1,3 +1,10 @@
+---
+title: "Utilizzo dei Componenti Filament"
+qmd: "ui filament components usage 1 md"
+type: note
+tags: [documentation]
+---
+
 # Utilizzo dei Componenti Filament 
 
 ## Collegamenti correlati

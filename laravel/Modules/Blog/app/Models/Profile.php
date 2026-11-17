@@ -112,8 +112,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @method static \Illuminate\Database\Eloquent\Builder|Profile          whereOauthEnable($value)
  * @method static Profile|null                                           first()
  * @method static \Illuminate\Database\Eloquent\Collection<int, Profile> get()
- * @method static Profile                                                create(array $attributes = [])
- * @method static Profile                                                firstOrCreate(array $attributes = [], array $values = [])
+ * @method static Profile                                                create(array<string, mixed> $attributes = [])
+ * @method static Profile                                                firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile  where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
  * @method static \Illuminate\Database\Eloquent\Builder<static>|Profile  whereNotNull((string|Expression) $columns)
  * @method static int                                                    count(string $columns = '*')
@@ -122,8 +122,8 @@ use Spatie\SchemalessAttributes\SchemalessAttributes;
  * @property \Modules\Xot\Contracts\ProfileContract|null $deleter
  *
  * @method static \Illuminate\Database\Eloquent\Builder<static> byUuid(string $uuid)
- * @method static \Illuminate\Database\Eloquent\Builder<static> childrenWith(array $relations)
- * @method static \Illuminate\Database\Eloquent\Builder<static> childrenWithCount(array $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> childrenWith(array<int|string, mixed> $relations)
+ * @method static \Illuminate\Database\Eloquent\Builder<static> childrenWithCount(array<int|string, mixed> $relations)
  *
  * @mixin \Eloquent
  */
@@ -144,6 +144,7 @@ class Profile extends BaseProfile
         'extra',
     ];
 
+    /** @var list<string> */
     protected array $schemalessAttributes = [
         'extra',
     ];
@@ -174,24 +175,9 @@ class Profile extends BaseProfile
         return $url;
     }
 
-    /*
-    public function rating111s(): HasManyThrough
-    {
-        $firstKey = 'user_id';
-        $secondKey = 'id';
-        $localKey = 'user_id';
-        $secondLocalKey = 'rating_id';
-
-        return $this->hasManyThrough(Rating::class, RatingMorph::class, $firstKey, $secondKey, $localKey, $secondLocalKey);
-        // ->withPivot(['value'])
-    }
-
-    public function ratingMorphs(): HasMany
-    {
-        return $this->hasMany(RatingMorph::class, 'user_id', 'user_id');
-    }
-    */
-    // : int
+    /**
+     * @return Collection<int, mixed>
+     */
     public function getArticleTraded(): Collection
     {
         // ->get()

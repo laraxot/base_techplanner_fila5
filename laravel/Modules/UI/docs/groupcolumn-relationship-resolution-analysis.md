@@ -1,3 +1,10 @@
+---
+title: "GroupColumn Relationship Resolution - Analisi Tecnica Dettagliata"
+qmd: "ui groupcolumn relationship resolution analysis md"
+type: note
+tags: [documentation]
+---
+
 # GroupColumn Relationship Resolution - Analisi Tecnica Dettagliata
 
 ## Problema Identificato

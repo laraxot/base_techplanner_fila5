@@ -5,6 +5,8 @@ declare(strict_types=1);
 return [
     'model' => [
         'label' => 'translation file.model',
+        'placeholder' => 'Seleziona file traduzione',
+        'helper_text' => 'File di traduzione per la gestione delle lingue',
     ],
     'navigation' => [
         'label' => 'Navigation Label',
@@ -14,59 +16,41 @@ return [
     ],
     'fields' => [
         'toggleColumns' => [
-            'label' => 'toggleColumns',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Mostra/Nascondi Colonne',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Riordina Record',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Modifica',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
->>>>>>> 6ed19256f (.)
+            'label' => 'Reset Filtri',
         ],
         'content' => [
-            'description' => 'content',
-            'helper_text' => 'content',
-            'placeholder' => 'content',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
+            'description' => 'Contenuto del file di traduzione',
+            'helper_text' => '',
+            'placeholder' => 'Inserisci contenuto traduzione',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> 6ed19256f (.)
+            'label' => 'Applica Filtri',
         ],
         'snapshots' => [
             'fields' => [
@@ -81,47 +65,106 @@ return [
                         'description' => 'snapshots.fields.updated_at.label',
                         'helper_text' => 'snapshots.fields.updated_at.label',
                         'placeholder' => 'snapshots.fields.updated_at.label',
+                        'label' => 'Etichetta Data',
                     ],
                 ],
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
+            'label' => 'Apri Filtri',
         ],
         'key' => [
-            'label' => 'key',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
+            'placeholder' => 'Inserisci chiave traduzione',
+            'help' => 'Chiave identificativa della traduzione',
+            'label' => 'Chiave',
         ],
-        'openFilters' => [
-            'label' => 'openFilters',
-        ],
-        'key' => [
-            'label' => 'key',
->>>>>>> 6ed19256f (.)
+        'delete' => [
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+            'label' => 'Elimina',
         ],
     ],
     'actions' => [
         'create' => [
-            'label' => 'create',
+            'tooltip' => 'Crea nuovo file di traduzione',
+            'success' => 'File di traduzione creato con successo',
+            'label' => 'Crea',
+            'icon' => 'create',
         ],
         'lang' => [
-            'label' => 'lang',
+            'tooltip' => 'Seleziona lingua',
+            'label' => 'Lingua',
+            'icon' => 'lang',
+        ],
+        'logout' => [
+            'tooltip' => '',
+            'icon' => 'logout',
+            'label' => 'Esci',
+        ],
+        'applyFilters' => [
+            'label' => 'Applica filtri',
+            'icon' => 'applyFilters',
+            'tooltip' => '',
+        ],
+        'openFilters' => [
+            'label' => 'Filtri',
+            'icon' => 'openFilters',
+            'tooltip' => '',
+        ],
+        'resetFilters' => [
+            'label' => 'Azzera filtri',
+            'icon' => 'resetFilters',
+            'tooltip' => '',
+        ],
+        'applyTableColumnManager' => [
+            'label' => 'Applica colonne',
+            'icon' => 'applyTableColumnManager',
+            'tooltip' => '',
+        ],
+        'openColumnManager' => [
+            'label' => 'Scegli colonne',
+            'icon' => 'openColumnManager',
+            'tooltip' => '',
+        ],
+        'resetColumnManager' => [
+            'label' => 'Ripristina colonne',
+            'icon' => 'resetColumnManager',
+            'tooltip' => '',
+        ],
+        'reorderRecords' => [
+            'label' => 'Riordina',
+            'icon' => 'reorderRecords',
+            'tooltip' => '',
+        ],
+        'removeAllFilters' => [
+            'label' => 'Rimuovi tutti i filtri',
+            'icon' => 'removeAllFilters',
+            'tooltip' => '',
+        ],
+        'profile' => [
+            'tooltip' => '',
+            'icon' => 'profile',
+            'label' => 'Profile',
+        ],
+        'cancel' => [
+            'tooltip' => '',
+            'icon' => 'cancel',
+        ],
+        'save' => [
+            'icon' => 'save',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

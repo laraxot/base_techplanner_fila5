@@ -1,3 +1,10 @@
+---
+title: "Shared Hosting Chart Strategy (No NPM/Node)"
+qmd: "ui charts shared hosting strategy md"
+type: note
+tags: [documentation]
+---
+
 # Shared Hosting Chart Strategy (No NPM/Node)
 
 > **Purpose**: Generate chart images in background jobs on **Shared Hosting environments** where you cannot install Node.js/Puppeteer (`browsershot` is not an option).

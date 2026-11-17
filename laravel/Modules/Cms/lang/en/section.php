@@ -12,7 +12,6 @@ return [
     'fields' => [
         'image' => [
             'label' => 'Image',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -222,190 +221,64 @@ return [
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'Mostra/Nascondi Colonne',
+            'label' => 'Show/Hide Columns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'Reimposta Filtri',
+            'label' => 'Reset Filters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'Riordina Record',
+            'label' => 'Reorder Records',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'Applica Filtri',
+            'label' => 'Apply Filters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'Apri Filtri',
+            'label' => 'Open Filters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'logo' => [
-            'label' => 'Logo',
-        ],
-        'alt' => [
-            'label' => 'Alt text',
-        ],
-        'width' => [
-            'label' => 'Width',
-        ],
-        'height' => [
-            'label' => 'Height',
-        ],
-        'icon' => [
-            'label' => 'Icon',
-        ],
-        'size' => [
-            'label' => 'Size',
-        ],
-        'url' => [
-            'label' => 'URL',
-        ],
-        'title' => [
-            'label' => 'Title',
-        ],
-        'description' => [
-            'label' => 'Description',
-        ],
-        'delete' => [
-            'label' => 'Delete',
-        ],
-        'edit' => [
-            'label' => 'Edit',
-        ],
-        'view' => [
-            'label' => 'View',
-        ],
-        'message' => [
-            'label' => 'Message',
-        ],
-        'create' => [
-            'label' => 'Create',
-        ],
-        'caption' => [
-            'label' => 'Caption',
-        ],
-        'items' => [
-            'label' => 'Items',
-        ],
-        'label' => [
-            'label' => 'Label',
-        ],
-        'style' => [
-            'label' => 'Style',
-        ],
-        'alignment' => [
-            'label' => 'Alignment',
-        ],
-        'gap' => [
-            'label' => 'Gap',
-        ],
-        'email' => [
-            'label' => 'Email',
-        ],
-        'phone' => [
-            'label' => 'Phone',
-        ],
-        'address' => [
-            'label' => 'Address',
-        ],
-        'map_url' => [
-            'label' => 'Map URL',
-        ],
-        'button_text' => [
-            'label' => 'Button Text',
-        ],
-        'button_link' => [
-            'label' => 'Button Link',
-        ],
-        'sections' => [
-            'label' => 'Sections',
-        ],
-        'subtitle' => [
-            'label' => 'Subtitle',
-        ],
-        'cta_text' => [
-            'label' => 'CTA Text',
-        ],
-        'cta_link' => [
-            'label' => 'CTA Link',
-        ],
-        'background_color' => [
-            'label' => 'Background Color',
-        ],
-        'text_color' => [
-            'label' => 'Text Color',
-        ],
-        'cta_color' => [
-            'label' => 'CTA Color',
-        ],
-        'children' => [
-            'label' => 'Children',
-        ],
-        'toggleColumns' => [
-            'label' => 'Mostra/Nascondi Colonne',
-        ],
-        'resetFilters' => [
-            'label' => 'Reimposta Filtri',
-        ],
-        'reorderRecords' => [
-            'label' => 'Riordina Record',
-        ],
-        'applyFilters' => [
-            'label' => 'Applica Filtri',
-        ],
-        'openFilters' => [
-            'label' => 'Apri Filtri',
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
-            'label' => 'Nome',
-            'placeholder' => 'Inserisci il nome della sezione',
-<<<<<<< HEAD
+            'label' => 'Name',
+            'placeholder' => 'Enter the section name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'slug' => [
             'label' => 'Slug',
-            'placeholder' => 'Inserisci lo slug della sezione',
-<<<<<<< HEAD
+            'placeholder' => 'Enter the section slug',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'blocks' => [
-            'label' => 'Blocchi',
-            'placeholder' => 'Aggiungi blocchi alla sezione',
-<<<<<<< HEAD
+            'label' => 'Blocks',
+            'placeholder' => 'Add blocks to the section',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'created_at' => [
-            'label' => 'Data di Creazione',
+            'label' => 'Creation Date',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'updated_at' => [
-            'label' => 'Data di Aggiornamento',
+            'label' => 'Update Date',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -423,282 +296,166 @@ return [
             'description' => '',
         ],
         'text' => [
-            'label' => 'Testo',
+            'label' => 'Text',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'type' => [
-            'label' => 'Tipo',
+            'label' => 'Type',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'orientation' => [
-            'label' => 'orientation',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'placeholder' => [
-            'label' => 'placeholder',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'success_message' => [
-            'label' => 'success_message',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'error_message' => [
-            'label' => 'error_message',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'content' => [
-            'label' => 'content',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'target' => [
-            'label' => 'target',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'social_links' => [
-            'label' => 'social_links',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'platform' => [
-            'label' => 'platform',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'stats' => [
-            'label' => 'stats',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'number' => [
-            'label' => 'number',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'level' => [
-            'label' => 'level',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'background' => [
-            'label' => 'background',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'buttons' => [
-            'label' => 'buttons',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'class' => [
-            'label' => 'class',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'link' => [
-            'label' => 'link',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'ratio' => [
-            'label' => 'ratio',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'img_uuid' => [
-            'label' => 'img_uuid',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'gallery' => [
-            'label' => 'gallery',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'version' => [
-            'label' => 'version',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'method' => [
-            'label' => 'method',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'video' => [
-            'label' => 'video',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'created_at' => [
-            'label' => 'Data di Creazione',
-        ],
-        'updated_at' => [
-            'label' => 'Data di Aggiornamento',
-        ],
-        'copyright' => [
-            'label' => 'Copyright',
-        ],
-        'links' => [
-            'label' => 'Link',
-        ],
-        'text' => [
-            'label' => 'Testo',
-        ],
-        'type' => [
-            'label' => 'Tipo',
-        ],
-        'orientation' => [
-            'label' => 'orientation',
-        ],
-        'placeholder' => [
-            'label' => 'placeholder',
-        ],
-        'success_message' => [
-            'label' => 'success_message',
-        ],
-        'error_message' => [
-            'label' => 'error_message',
-        ],
-        'content' => [
-            'label' => 'content',
-        ],
-        'target' => [
-            'label' => 'target',
-        ],
-        'social_links' => [
-            'label' => 'social_links',
-        ],
-        'platform' => [
-            'label' => 'platform',
-        ],
-        'stats' => [
-            'label' => 'stats',
-        ],
-        'number' => [
-            'label' => 'number',
-        ],
-        'level' => [
-            'label' => 'level',
-        ],
-        'background' => [
-            'label' => 'background',
-        ],
-        'buttons' => [
-            'label' => 'buttons',
-        ],
-        'class' => [
-            'label' => 'class',
-        ],
-        'link' => [
-            'label' => 'link',
-        ],
-        'ratio' => [
-            'label' => 'ratio',
-        ],
-        'img_uuid' => [
-            'label' => 'img_uuid',
-        ],
-        'gallery' => [
-            'label' => 'gallery',
-        ],
-        'version' => [
-            'label' => 'version',
-        ],
-        'method' => [
-            'label' => 'method',
-        ],
-        'video' => [
-            'label' => 'video',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'model' => [
-        'label' => 'Sezione',
-        'plural' => 'Sezioni',
+        'label' => 'Section',
+        'plural' => 'Sections',
     ],
     'actions' => [
         'create' => [
-            'label' => 'Crea Sezione',
+            'label' => 'Create Section',
             'modal' => [
-                'heading' => 'Crea Nuova Sezione',
-                'submit' => 'Crea',
-                'cancel' => 'Annulla',
+                'heading' => 'Create New Section',
+                'submit' => 'Create',
+                'cancel' => 'Cancel',
             ],
         ],
         'edit' => [
-            'label' => 'Modifica Sezione',
+            'label' => 'Edit Section',
             'modal' => [
-                'heading' => 'Modifica Sezione',
-                'submit' => 'Salva',
-                'cancel' => 'Annulla',
+                'heading' => 'Edit Section',
+                'submit' => 'Save',
+                'cancel' => 'Cancel',
             ],
         ],
         'delete' => [
-            'label' => 'Elimina Sezione',
+            'label' => 'Delete Section',
             'modal' => [
-                'heading' => 'Elimina Sezione',
-                'description' => 'Sei sicuro di voler eliminare questa sezione?',
-                'submit' => 'Elimina',
-                'cancel' => 'Annulla',
+                'heading' => 'Delete Section',
+                'description' => 'Are you sure you want to delete this section?',
+                'submit' => 'Delete',
+                'cancel' => 'Cancel',
             ],
         ],
         'view' => [
-            'label' => 'Visualizza Sezione',
+            'label' => 'View Section',
         ],
         'activeLocale' => [
-            'label' => 'Lingua Attiva',
-        ],
-        'cancel' => [
-            'label' => 'cancel',
-        ],
-        'save' => [
-            'label' => 'save',
-        ],
-        'preview' => [
-            'label' => 'preview',
+            'label' => 'Active Language',
         ],
     ],
     'messages' => [
-        'created' => 'Sezione creata con successo',
-        'updated' => 'Sezione aggiornata con successo',
-        'deleted' => 'Sezione eliminata con successo',
-        'bulk_deleted' => 'Sezioni eliminate con successo',
+        'created' => 'Section created successfully',
+        'updated' => 'Section updated successfully',
+        'deleted' => 'Section deleted successfully',
+        'bulk_deleted' => 'Sections deleted successfully',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

@@ -15,7 +15,7 @@ Questo errore si manifesta tipicamente quando:
 - I file statici non sono stati copiati dalla sorgente locale del tema alla destinazione runtime prevista.
 
 ## Perché succede
-**Motivazione architetturale:**  
+**Motivazione architetturale:**
 Nel nostro sistema, ogni tema (es. `TwentyOne`) gestisce le proprie risorse statiche (CSS, JS, immagini) tramite Vite e NPM. La pipeline corretta del tema e':
 - `npm install` per allineare le dipendenze
 - `npm run build` per generare `public/manifest.json`
@@ -24,7 +24,7 @@ Nel nostro sistema, ogni tema (es. `TwentyOne`) gestisce le proprie risorse stat
 Se questa pipeline non viene eseguita dopo modifiche o dopo il primo deploy, Laravel non trova i file richiesti nel manifest runtime e l'applicazione va in errore.
 
 ## Cosa significa "pubblicare il tema"
-**Pubblicare il tema** significa assicurarsi che tutte le risorse siano compilate e disponibili nel path runtime `public_html/themes/TwentyOne`, e che il manifest di Vite sia aggiornato.  
+**Pubblicare il tema** significa assicurarsi che tutte le risorse siano compilate e disponibili nel path runtime `public_html/themes/TwentyOne`, e che il manifest di Vite sia aggiornato.
 Questo è fondamentale per:
 - Visualizzare correttamente lo stile e le funzionalità del tema
 - Evitare errori di caricamento delle risorse
@@ -36,12 +36,12 @@ Questo è fondamentale per:
 - Nel log degli errori Laravel si trova la traccia della chiamata a `@vite()`.
 
 ## Soluzione operativa (da documentare, NON da eseguire automaticamente)
-1. **Entrare nella cartella del tema**  
-   Esempio:  
+1. **Entrare nella cartella del tema**
+   Esempio:
    ```
-   cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/TwentyOne
+   cd /var/www/html/_bases/base_predict_fila5/laravel/Themes/TwentyOne
    ```
-2. **Eseguire la pipeline del tema**  
+2. **Eseguire la pipeline del tema**
    ```
    npm install
    npm run build
@@ -52,7 +52,7 @@ Questo è fondamentale per:
    - Compila le risorse con Vite
    - Aggiorna il manifest locale
    - Copia i file nella cartella runtime letta da Laravel
-3. **Verificare che la cartella runtime contenga i file e il manifest aggiornato**  
+3. **Verificare che la cartella runtime contenga i file e il manifest aggiornato**
    - Deve essere presente `public_html/themes/TwentyOne/manifest.json`
    - Devono essere presenti gli asset compilati
 

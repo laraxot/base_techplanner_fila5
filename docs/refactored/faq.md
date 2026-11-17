@@ -30,7 +30,7 @@ Il tema One è un tema frontend moderno e riusabile basato su:
 ```json
 {
     "require": {
-        "laraxot/theme_one_fila3": "^1.0"
+        "laraxot/theme_one_fila5": "^1.0"
     }
 }
 ```
@@ -268,4 +268,4 @@ npm install
 - [Laravel Documentation](https://laravel.com/docs)
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Vite Documentation](https://vitejs.dev/guide)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)

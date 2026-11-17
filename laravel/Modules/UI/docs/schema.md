@@ -1,4 +1,5 @@
 ---
+qmd: "ui schema md"
 title: "Module Schema"
 module: "UI"
 created: "2026-04-15T08:28:51Z"

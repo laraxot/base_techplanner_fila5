@@ -93,8 +93,4 @@
 
 ---
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: Gennaio 2025*
-=======
-*Ultimo aggiornamento: Gennaio 2025*
->>>>>>> 6ed19256f (.)

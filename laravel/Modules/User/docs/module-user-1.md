@@ -10,10 +10,10 @@ See canonical documentation: ../../../Themes/docs/shared-components/module-user-
 # Modulo User
 
 ## Informazioni Generali
-- **Nome**: `laraxot/module_user_fila3`
+- **Nome**: `laraxot/module_user_fila5`
 - **Descrizione**: Modulo per la gestione degli utenti
 - **Namespace**: `Modules\User`
-- **Repository**: https://github.com/laraxot/module_user_fila3
+- **Repository**: https://github.com/laraxot/module_user_fila5
 
 ## Service Providers
 1. `Livewire\LivewireServiceProvider`

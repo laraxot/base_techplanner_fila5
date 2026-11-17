@@ -3,30 +3,44 @@
 declare(strict_types=1);
 
 use Modules\Rating\Filament\Resources\RatingResource\Pages\ListRatings;
-
-// Business-logic oriented assertions on methods that build table config
+use Modules\Rating\Tests\Support\Ensure;
+use Modules\Rating\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 describe('ListRatings page config', function (): void {
     beforeEach(function (): void {
-        $this->page = new ListRatings();
+        /** @var TestCase $this */
+        $this->page = new ListRatings;
     });
 
     it('defines expected table columns without labels', function (): void {
-        $columns = $this->page->getTableColumns();
-        expect($columns)->toBeArray();
-        expect(array_keys($columns))->toEqual(['id', 'title', 'rule', 'is_disabled', 'is_readonly']);
+        /** @var TestCase $this */
+        $page = $this->page;
+        Assert::assertInstanceOf(ListRatings::class, $page);
+        $columns = $page->getTableColumns();
+        ensure(array_keys($columns))->toEqual(['id', 'title', 'rule', 'is_disabled', 'is_readonly']);
     });
 
     it('defines default empty filters and header actions', function (): void {
-        expect($this->page->getTableFilters())->toBeArray()->toBeEmpty();
-        expect($this->page->getTableHeaderActions())->toBeArray()->toBeEmpty();
+        /** @var TestCase $this */
+        $page = $this->page;
+        Assert::assertInstanceOf(ListRatings::class, $page);
+        ensure($page->getTableFilters())->toBeEmpty();
+
+        $method = new ReflectionMethod(ListRatings::class, 'getTableHeaderActions');
+        $method->setAccessible(true);
+
+        ensure($method->invoke($page))->toBeEmpty();
     });
 
     it('defines view/edit/delete actions and bulk delete', function (): void {
-        $actions = $this->page->getTableActions();
-        expect($actions)->toHaveKeys(['view', 'edit', 'delete']);
+        /** @var TestCase $this */
+        $page = $this->page;
+        Assert::assertInstanceOf(ListRatings::class, $page);
+        $actions = $page->getTableActions();
+        ensure($actions)->toHaveKeys(['view', 'edit', 'delete']);
 
-        $bulk = $this->page->getTableBulkActions();
-        expect($bulk)->toHaveKey('delete');
+        $bulk = $page->getTableBulkActions();
+        ensure($bulk)->toHaveKey('delete');
     });
 });

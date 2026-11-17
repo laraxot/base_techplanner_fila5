@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace Modules\UI\Filament\Forms\Components;
 
-use Filament\Forms\Components\Radio;
 use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
+use Modules\Xot\Filament\Forms\Components\XotBaseRadio;
 
-class RadioBadge extends Radio
+class RadioBadge extends XotBaseRadio
 {
     protected string $view = 'ui::filament.forms.components.radio-badge';
 
@@ -75,11 +75,7 @@ class RadioBadge extends Radio
     public function getIconForOption(string $value): ?string
     {
         $enum = $this->getEnumValue($value);
-<<<<<<< HEAD
         if (! $enum instanceof HasIcon) {
-=======
-        if (! ($enum instanceof HasIcon)) {
->>>>>>> 6ed19256f (.)
             return null;
         }
         $icon = $enum->getIcon();

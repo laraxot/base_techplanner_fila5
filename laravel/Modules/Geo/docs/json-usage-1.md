@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_Ghy9yK
+---
+title: "json usage 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "json usage 1"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_7t5Nfz
 # Utilizzo del file JSON dei comuni
 
 ## Contesto
@@ -210,16 +224,8 @@ class GeoDataService
    - Utilizzare un database dedicato
 
 ## Collegamenti
-<<<<<<< HEAD
 - [Documentazione Squire](../../geo/project_docs/squire-integration.md)
 - [Best Practices Filament](../../../../docs/project/filament-best-practices.md)
 - [Clean Code](../../../../docs/project/clean-code.md)
 
 **Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
-=======
-- [Documentazione Squire](../../Geo/project_docs/squire-integration.md)
-- [Best Practices Filament](../../../project_docs/filament-best-practices.md)
-- [Clean Code](../../../project_docs/clean-code.md)
-
-**Nota:** Il namespace corretto per LocationForm è `Modules\Geo\Filament\Forms\LocationForm`. Non usare mai `Modules\Geo\App\Filament\Forms\LocationForm`.
->>>>>>> 6ed19256f (.)

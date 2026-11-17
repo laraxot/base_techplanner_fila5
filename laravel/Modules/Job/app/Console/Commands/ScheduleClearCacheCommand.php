@@ -1,35 +1,24 @@
 <?php
 
+declare(strict_types=1);
 /**
  * @see https://github.com/husam-tariq/filament-database-schedule/blob/v2.0.0/src/Console/Commands/ScheduleClearCacheCommand.php
  */
 
-declare(strict_types=1);
-
 namespace Modules\Job\Console\Commands;
 
-// use HusamTariq\FilamentDatabaseSchedule\Http\Services\ScheduleService;
 use Illuminate\Console\Command;
+use Modules\Job\Actions\ClearScheduleCacheAction;
 
 class ScheduleClearCacheCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $signature = 'schedule:clear-cache';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $description = 'Clears the cache of the scheduler.';
 
@@ -38,7 +27,7 @@ class ScheduleClearCacheCommand extends Command
      */
     public function handle(): int
     {
-        // (new ScheduleService())->clearCache();  //WIP
+        app(ClearScheduleCacheAction::class)->execute();
         $this->info('Scheduling cache cleared.');
 
         return 0;

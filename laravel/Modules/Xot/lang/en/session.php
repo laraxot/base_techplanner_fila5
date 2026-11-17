@@ -8,9 +8,9 @@ return [
         'plural' => 'Sessioni',
         'group' => [
             'name' => 'Sistema',
-            'description' => 'Gestione delle sessioni utente e sicurezza',
+            'description' => 'User session and security management',
         ],
-        'label' => 'session',
+        'label' => 'Session',
         'sort' => '18',
         'icon' => 'xot-session',
     ],
@@ -18,25 +18,22 @@ return [
         'identification' => [
             'id' => [
                 'label' => 'ID Sessione',
-                'help' => 'Identificativo univoco della sessione',
+                'help' => 'Unique session identifier',
             ],
             'user_id' => [
-                'label' => 'Utente',
-                'placeholder' => 'Seleziona l\'utente',
-                'help' => 'Utente proprietario della sessione',
+                'label' => 'User',
+                'placeholder' => 'Select the user',
+                'help' => 'User who owns the session',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'connection' => [
             'ip_address' => [
                 'label' => 'Indirizzo IP',
-                'help' => 'IP di origine della connessione',
+                'help' => 'Source IP of the connection',
             ],
             'user_agent' => [
                 'label' => 'User Agent',
@@ -46,128 +43,110 @@ return [
                 'label' => 'Posizione',
                 'help' => 'Localizzazione geografica approssimativa',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'data' => [
             'payload' => [
                 'label' => 'Dati Sessione',
-                'help' => 'Contenuto della sessione (criptato)',
+                'help' => 'Session content (encrypted)',
             ],
             'size' => [
                 'label' => 'Dimensione',
                 'help' => 'Dimensione dei dati in memoria',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'timing' => [
             'created_at' => [
                 'label' => 'Data Creazione',
-                'help' => 'Momento di inizio della sessione',
+                'help' => 'When the session started',
             ],
             'last_activity' => [
-                'label' => 'Ultima Attività',
-                'help' => 'Ultimo accesso alla sessione',
+                'label' => 'Last Activity',
+                'help' => 'Last access to the session',
             ],
             'expires_at' => [
                 'label' => 'Scadenza',
-                'help' => 'Momento di scadenza previsto',
+                'help' => 'Expected expiration time',
             ],
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'view' => [
-            'label' => 'Visualizza',
+            'label' => 'View',
             'success' => 'Dettagli sessione visualizzati',
-            'error' => 'Impossibile visualizzare la sessione',
+            'error' => 'Unable to view the session',
         ],
         'delete' => [
             'label' => 'Termina',
-            'success' => 'Sessione terminata con successo',
-            'error' => 'Impossibile terminare la sessione',
-            'confirm' => 'Sei sicuro di voler terminare questa sessione?',
+            'success' => 'Session terminated successfully',
+            'error' => 'Unable to terminate the session',
+            'confirm' => 'Are you sure you want to terminate this session?',
         ],
         'delete_all' => [
-            'label' => 'Termina Tutte',
-            'success' => 'Tutte le sessioni terminate',
-            'error' => 'Impossibile terminare tutte le sessioni',
-            'confirm' => 'Sei sicuro di voler terminare tutte le sessioni?',
+            'label' => 'Terminate All',
+            'success' => 'All sessions terminated',
+            'error' => 'Unable to terminate all sessions',
+            'confirm' => 'Are you sure you want to terminate all sessions?',
         ],
         'delete_expired' => [
             'label' => 'Pulisci Scadute',
             'success' => 'Sessioni scadute rimosse',
-            'error' => 'Impossibile rimuovere le sessioni scadute',
+            'error' => 'Unable to remove expired sessions',
         ],
         'refresh' => [
-            'label' => 'Aggiorna',
-            'success' => 'Elenco sessioni aggiornato',
-            'error' => 'Impossibile aggiornare l\'elenco',
+            'label' => 'Refresh',
+            'success' => 'Session list refreshed',
+            'error' => 'Unable to refresh the list',
         ],
     ],
     'messages' => [
         'status' => [
-            'active' => 'Sessione attiva',
+            'active' => 'Active session',
             'expired' => 'Sessione scaduta',
             'idle' => 'Sessione inattiva',
             'terminated' => 'Sessione terminata',
         ],
         'errors' => [
-            'not_found' => 'Sessione non trovata',
-            'invalid' => 'Sessione non valida',
+            'not_found' => 'Session not found',
+            'invalid' => 'Invalid session',
             'expired' => 'Sessione scaduta',
             'permission' => 'Permessi insufficienti',
-            'delete_current' => 'Impossibile terminare la sessione corrente',
+            'delete_current' => 'Unable to terminate the current session',
         ],
         'warnings' => [
-            'delete_current' => 'Stai per terminare la tua sessione attuale',
-            'delete_all' => 'Tutti gli utenti verranno disconnessi',
-            'inactivity' => 'La sessione scadrà tra poco per inattività',
-            'multiple_sessions' => 'Rilevate sessioni multiple per lo stesso utente',
+            'delete_current' => 'You are about to terminate your current session',
+            'delete_all' => 'All users will be logged out',
+            'inactivity' => 'The session will expire soon due to inactivity',
+            'multiple_sessions' => 'Multiple sessions detected for the same user',
         ],
         'info' => [
             'cleanup_scheduled' => 'Pulizia automatica programmata',
             'session_extended' => 'Durata sessione estesa',
-            'activity_detected' => 'Rilevata nuova attività',
+            'activity_detected' => 'New activity detected',
         ],
     ],
     'settings' => [
         'lifetime' => [
             'label' => 'Durata Sessione',
-            'help' => 'Tempo massimo di inattività',
+            'help' => 'Maximum inactivity time',
             'options' => [
-<<<<<<< HEAD
                 120 => '2 ore',
                 240 => '4 ore',
                 480 => '8 ore',
                 720 => '12 ore',
                 1440 => '1 giorno',
                 10080 => '1 settimana',
-=======
-                '120' => '2 ore',
-                '240' => '4 ore',
-                '480' => '8 ore',
-                '720' => '12 ore',
-                '1440' => '1 giorno',
-                '10080' => '1 settimana',
->>>>>>> 6ed19256f (.)
             ],
         ],
         'security' => [
@@ -177,22 +156,22 @@ return [
             ],
             'same_site' => [
                 'label' => 'Politica Same Site',
-                'help' => 'Restrizioni di accesso ai cookie',
+                'help' => 'Cookie access restrictions',
                 'options' => [
                     'lax' => 'Lax (consigliato)',
-                    'strict' => 'Strict (più sicuro)',
-                    'none' => 'Nessuna (meno sicuro)',
+                    'strict' => 'Strict (more secure)',
+                    'none' => 'None (less secure)',
                 ],
             ],
             'http_only' => [
-                'label' => 'Solo HTTP',
+                'label' => 'HTTP only',
                 'help' => 'Previeni accesso JavaScript',
             ],
         ],
         'storage' => [
             'driver' => [
                 'label' => 'Driver',
-                'help' => 'Sistema di memorizzazione',
+                'help' => 'Storage system',
                 'options' => [
                     'file' => 'File System',
                     'redis' => 'Redis',
@@ -206,9 +185,6 @@ return [
             ],
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

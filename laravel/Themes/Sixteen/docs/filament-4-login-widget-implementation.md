@@ -1,3 +1,15 @@
+---
+title: "filament 4 login widget implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament 4 login widget implementation"
+issues: []
+discussions: []
+status: draft
+---
+
 # Implementazione Login Widget Filament 4 - Tema Sixteen
 
 **Data**: 14 Ottobre 2025  
@@ -50,20 +62,11 @@ use Override;
 
 class LoginWidget extends XotBaseWidget
 {
-<<<<<<< HEAD
     public ?array $data = [];
 
     /**
      * View path per il tema corrente.
      * IMPORTANTE: usa 'pub_theme::' per riferirsi al tema attivo
-=======
-    /**
-     * View path per il tema corrente.
-     * IMPORTANTE: usa 'pub_theme::' per riferirsi al tema attivo
-     * 
-     * NOTA: NON ridichiarare $data perché è già definito in XotBaseWidget
-     * NOTA: NON sovrascrivere mount() perché XotBaseWidget gestisce già l'inizializzazione
->>>>>>> 6ed19256f (.)
      */
     protected string $view = 'pub_theme::filament.widgets.auth.login';
 
@@ -92,22 +95,12 @@ class LoginWidget extends XotBaseWidget
             'password' => is_string($data['password'] ?? null) ? $data['password'] : '',
         ];
 
-<<<<<<< HEAD
         if (Auth::attempt($credentials, $data['remember'] ?? false)) {
-=======
-        $remember = isset($data['remember']) && true === $data['remember'];
-
-        if (Auth::attempt($credentials, $remember)) {
->>>>>>> 6ed19256f (.)
             session()->regenerate();
             redirect()->intended('/');
         }
 
-<<<<<<< HEAD
         $this->addError('email', __('auth.failed'));
-=======
-        $this->addError('data.email', __('auth.failed'));
->>>>>>> 6ed19256f (.)
     }
 }
 ```
@@ -306,7 +299,7 @@ protected string $view = 'pub_theme::filament.widgets.auth.login';
 - [Filament 4 Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
 - [AGID Design System](https://designers.italia.it/)
 - [Bootstrap Italia](https://italia.github.io/bootstrap-italia/)
-- [Laraxot Widget Rules](../../Modules/User/docs/auth_widget_rules.md)
+- [Laraxot Widget Rules](../../../Modules/User/docs/auth_widget_rules.md)
 
 ## 🎯 Prossimi Passi
 

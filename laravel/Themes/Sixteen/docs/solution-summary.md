@@ -1,3 +1,15 @@
+---
+title: "solution summary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "solution summary"
+issues: []
+discussions: []
+status: draft
+---
+
 # Riepilogo Soluzione - Problema Layout Tema Sixteen
 
 ## Problema Risolto
@@ -178,7 +190,3 @@
 - [Login Page](resources/views/pages/auth/login.blade.php)
 - [Layout Guest](resources/views/layouts/guest.blade.php)
 
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: 2025-01-06* 
->>>>>>> 6ed19256f (.)

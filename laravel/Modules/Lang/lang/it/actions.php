@@ -57,7 +57,6 @@ return [
         'icon' => 'heroicon-o-plus-circle',
         'color' => 'success',
     ],
-<<<<<<< HEAD
     'label' => 'Actions',
     'plural_label' => 'Actions (Plurale)',
     'navigation' => [
@@ -68,8 +67,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Actions',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -102,6 +101,4 @@ return [
             'label' => 'Elimina Actions',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

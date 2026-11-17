@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\ParameterFactory;
+use Modules\Job\Models\Traits\ParameterRelations;
 use Modules\Xot\Contracts\ProfileContract;
 
 /**
@@ -21,10 +22,6 @@ use Modules\Xot\Contracts\ProfileContract;
  * @property string|null $updated_by
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
-<<<<<<< HEAD
-=======
- *
->>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
  * @property-read Frequency|null $task
  * @property-read ProfileContract|null $updater
@@ -48,6 +45,8 @@ use Modules\Xot\Contracts\ProfileContract;
  */
 class Parameter extends BaseModel
 {
+    use ParameterRelations;
+
     // protected $table = 'frequency_parameters';
 
     protected $fillable = [
@@ -56,10 +55,9 @@ class Parameter extends BaseModel
         'value',
     ];
 
-    public function task(): BelongsTo
-    {
-        return $this->belongsTo(Frequency::class);
-    }
+    /**
+     * @return BelongsTo<Frequency, $this>
+     */
 
     /**
      * Get the attributes that should be cast.

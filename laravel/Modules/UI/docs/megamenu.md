@@ -1,3 +1,10 @@
+---
+title: "megamenu"
+qmd: "ui megamenu md"
+type: note
+tags: [documentation]
+---
+
 https://www.tailwindtoolbox.com/components/megamenu
 
 

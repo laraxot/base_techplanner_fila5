@@ -30,14 +30,11 @@
       "args": ["./laravel/Modules/Xot/docs/mcp-laravel-artisan-server.js"],
       "env": {
         "LARAVEL_PATH": "./laravel"
-<<<<<<< HEAD
     "laravel-boost": {
       "command": "./bashscripts/mcp/laravel-boost-wrapper.sh",
       "args": [],
       "env": {
         "LARAVEL_PROJECT_ROOT": "./laravel"
-=======
->>>>>>> 6ed19256f (.)
       }
     },
     "fetch": {
@@ -57,9 +54,4 @@
         "args": ["-y", "@assistant-ui/mcp-docs-server"]
     }
   }
-<<<<<<< HEAD
 }
-=======
-}
-
->>>>>>> 6ed19256f (.)

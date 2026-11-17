@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 use Illuminate\Database\Schema\Blueprint;
 use Modules\User\Models\Extra;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
@@ -9,7 +8,8 @@ use Modules\Xot\Database\Migrations\XotBaseMigration;
 /*
  * Class CreateExtraTable.
  */
-return new class extends XotBaseMigration {
+return new class extends XotBaseMigration
+{
     protected ?string $model_class = Extra::class;
 
     /**
@@ -21,16 +21,11 @@ return new class extends XotBaseMigration {
         $this->tableCreate(static function (Blueprint $table): void {
             $table->increments('id');
             $table->uuidMorphs('model');
-<<<<<<< HEAD
             $table->schemalessAttributes('extra_attributes');
-=======
-            $table->json('extra_attributes')->nullable();
->>>>>>> 6ed19256f (.)
         });
 
         // -- UPDATE --
         $this->tableUpdate(function (Blueprint $table): void {
-<<<<<<< HEAD
             // if (! $this->hasColumn('name'))
             //    $table->string('name')->nullable();
             // }
@@ -41,18 +36,6 @@ return new class extends XotBaseMigration {
                 if (! $this->hasIndex('model_id')) {
                     $table->index('model_id');
                 }
-=======
-            // if (! $this->hasColumn('name')) {
-            //    $table->string('name')->nullable();
-            // }
-            $this->updateTimestamps(
-                table: $table,
-                hasSoftDeletes: true,
-            );
-
-            if ($this->hasColumn('model_id') && 'bigint' === $this->getColumnType('model_id')) {
-                $table->string('model_id', 36)->index()->change();
->>>>>>> 6ed19256f (.)
             }
         });
     }

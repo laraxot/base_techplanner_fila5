@@ -1,3 +1,18 @@
+---
+issues: []
+discussions: []
+title: "Riepilogo Correzioni Traduzioni - Gennaio 2025"
+module: "Lang"
+type: concept
+tags: [migrazione, filament, 4]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "migrazione filament 4"
+related:
+  - "./italian-text-refined-audit-report.md"
+status: superseded
+superseded_by: riepilogo-correzioni-traduzioni.md
+---
 # Riepilogo Correzioni Traduzioni - Gennaio 2025
 
 ## Problemi Risolti
@@ -123,8 +138,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../Themes/One/docs/traduzioni_mancanti_appointment_2025.md)
@@ -256,8 +271,8 @@ php artisan tinker
 
 ### Documentazione Modulo Lang:
 - [Errori Comuni Traduzione](errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation 2025](traduzioni_navigation_2025.md)
+- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation 2025](archive/traduzioni_navigation_2025.md)
 
 ### Documentazione Tema:
 - [Traduzioni Mancanti Appointment 2025](../../../Themes/One/docs/traduzioni_mancanti_appointment_2025.md)

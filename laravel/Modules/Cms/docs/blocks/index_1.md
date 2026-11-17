@@ -1,3 +1,14 @@
+---
+title: "index 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index 1"
+issues: []
+discussions: []
+---
+
 # Indice della Documentazione - Blocchi CMS
 
 ## Collegamenti Correlati
@@ -16,14 +27,14 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito. Ogn
 
 ### Navigazione e Layout
 - [Header](./HEADER.md) - Blocco header con logo, navigazione e dropdown utente
-- [Footer](./FOOTER.md) - Blocco footer con copyright, link e contatti
-- [Navigation](./NAVIGATION.md) - Blocco di navigazione personalizzabile
+- [Footer](./footer.md) - Blocco footer con copyright, link e contatti
+- [Navigation](./navigation.md) - Blocco di navigazione personalizzabile
 - [Container](./CONTAINER.md) - Blocco container per strutturare il layout
 
 ### Contenuti
-- [Hero](./HERO.md) - Blocco hero per sezioni in evidenza
+- [Hero](./hero.md) - Blocco hero per sezioni in evidenza
 - [Text](./TEXT.md) - Blocco testo per contenuti testuali
-- [CTA](./CTA.md) - Blocco call-to-action per conversioni
+- [CTA](./cta.md) - Blocco call-to-action per conversioni
 - [Features](./FEATURES.md) - Blocco per elencare caratteristiche/servizi
 - [Testimonials](./TESTIMONIALS.md) - Blocco per testimonianze
 - [Team](./TEAM.md) - Blocco per presentare il team
@@ -39,7 +50,7 @@ I blocchi sono componenti riutilizzabili che compongono le sezioni del sito. Ogn
 ### Interattivi
 - [Form](./FORM.md) - Blocco per form di contatto
 - [Map](./MAP.md) - Blocco per mappe
-- [Social](./SOCIAL.md) - Blocco per link social
+- [Social](./social.md) - Blocco per link social
 - [Search](./SEARCH.md) - Blocco per ricerca
 
 ## Struttura dei Blocchi

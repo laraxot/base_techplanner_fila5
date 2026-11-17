@@ -1,3 +1,10 @@
+---
+title: "Componenti Form Avanzati"
+qmd: "ui advanced form components md"
+type: note
+tags: [documentation]
+---
+
 # Componenti Form Avanzati
 
 ## 📝 Input Avanzati

@@ -1,3 +1,15 @@
+---
+title: "testing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing"
+issues: []
+discussions: []
+status: active
+---
+
 # Testing Documentation
 
 ## Overview
@@ -71,7 +83,7 @@ Configure Seo-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     // Configure Seo module
     config(['seo.default_title' => 'Test Site']);
     config(['seo.default_description' => 'Test description']);
@@ -92,7 +104,7 @@ test('seo metadata can be created', function () {
         'keywords' => 'test,seo',
         'locale' => 'it',
     ]);
-    
+
     expect($metadata)->toBeInstanceOf(\Modules\Seo\Models\SeoMetadata::class);
     expect($metadata->title)->toBe('Test Page');
 });
@@ -103,7 +115,7 @@ test('seo metadata can be created', function () {
 ```php
 test('seo configuration is loaded', function () {
     $seoConfig = config('seo');
-    
+
     expect($seoConfig['default_title'])->toBe('Test Site');
     expect($seoConfig['default_description'])->toBe('Test description');
     expect($seoConfig['cache_enabled'])->toBe(false);
@@ -115,7 +127,7 @@ test('seo configuration is loaded', function () {
 ```php
 test('seo service provider is registered', function () {
     $app = app();
-    
+
     expect($app->bound(\Modules\Seo\Providers\SeoServiceProvider::class))->toBeTrue();
 });
 ```
@@ -160,7 +172,7 @@ test('seo service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     config(['seo.default_title' => 'Test Site']);
     config(['seo.default_description' => 'Test description']);
     config(['seo.cache_enabled' => false]);
@@ -177,11 +189,11 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
-    
+
     $app['config']->set([
-        'database.connections.seo.database' => 'quaeris_data_test',
+        'database.connections.seo.database' => '<nome progetto>_data_test',
     ]);
-    
+
     return $app;
 }
 ```
@@ -259,15 +271,17 @@ protected function createApplication()
 
 ### External Resources
 
+- [Laravel 13.x Testing Documentation](https://laravel.com/docs/12.x/testing)
+---
 - [Laravel 12.x Testing Documentation](https://laravel.com/docs/12.x/testing)
 - [Pest Installation Guide](https://pestphp.com/docs/installation)
 - [PHPStan Documentation](https://phpstan.org/user-guide/getting-started)
 
 ### Internal Resources
 
-- [Testing Setup Guide](../../../docs/testing-setup.md)
-- [Testing Best Practices](../../../docs/testing-best-practices.md)
-- [Troubleshooting Guide](../../../docs/troubleshooting.md)
+- [Testing Setup Guide](../../../docs/testing-setup.md) _(target mancante, verificato 2026-10-08)_
+- [Testing Best Practices](../../../docs/testing-best-practices.md) _(target mancante, verificato 2026-10-08)_
+- [Troubleshooting Guide](../../../../docs/troubleshooting.md)
 
 ## Testing Examples
 
@@ -289,7 +303,7 @@ test('seo metadata can be created', function () {
         'created_at' => now(),
         'updated_at' => now(),
     ]);
-    
+
     expect($metadata)->toBeInstanceOf(\Modules\Seo\Models\SeoMetadata::class);
     expect($metadata->url)->toBe('/test-page');
     expect($metadata->title)->toBe('Test Page');
@@ -333,7 +347,7 @@ test('seo api can get metadata', function () {
         'description' => 'Test description',
         'keywords' => 'test,seo',
     ]);
-    
+
     $response = $this->get('/api/seo/metadata/test-page');
     $response->assertStatus(200);
     $response->assertJson([

@@ -1,5 +1,15 @@
 # PHPStan Fixes - Modulo Rating
 
+## Wave 2026-11-17 — 172 → 0
+
+Verify: `cd laravel && ./vendor/bin/phpstan analyse Modules/Rating Modules/Lang --memory-limit=-1 --error-format=raw` → **0**.
+
+Root causes: Eloquent PHPDoc `Builder<static>` (no Larastan in neon); `::query()` for where/create; HasRating array/MorphToMany types + `RateableHost`; dead traits removed; migrations `json('extra_attributes')`; Pest `Ensure` + XotBaseTestCase.
+
+See also: [wiki/troubleshooting/phpstan-generic-limitation-morphtomany.md](wiki/troubleshooting/phpstan-generic-limitation-morphtomany.md).
+
+---
+
 ## ✅ Status: COMPLETATO - 0 Errori
 
 **Data**: 11 Ottobre 2025  

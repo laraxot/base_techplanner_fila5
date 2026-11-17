@@ -1,3 +1,23 @@
+---
+title: "HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa"
+type: concept
+tags: [hasteams, trait, filosofia, correzione]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "hasteams-trait-filosofia-e-correzione-completa-1 hasteams trait - filosofia laraxot e strategia di correzione completa"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # HasTeams Trait - Filosofia Laraxot e Strategia di Correzione Completa
 
 ## 🧠 LA FILOSOFIA LARAXOT: Perché `belongsToManyX` invece di `belongsToMany`
@@ -256,11 +276,7 @@ Creare test per verificare:
 
 ### 3. **Documentazione Collegamenti**
 Aggiornare:
-<<<<<<< HEAD
 - [docs/USER_MODULE.md](../../../../docs/user_module.md)
-=======
-- [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
->>>>>>> 6ed19256f (.)
 - [Modules/User/docs/traits.md](traits.md)
 - File .mdc per Cursor e Windsurf
 
@@ -278,17 +294,10 @@ Il trait `HasTeams` ora è:
 ## 🔗 **Collegamenti Bidirezionali**
 
 ### **📚 Documentazione Root**
-<<<<<<< HEAD
 - [docs/laraxot_conventions.md](../../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
 - [docs/USER_MODULE.md](../../../../docs/user_module.md) - Documentazione generale modulo User
-- [docs/phpstan_fixes.md](../../../../docs/phpstan_fixes.md) - Guide PHPStan
+- [docs/phpstan-fixes-8.md](phpstan-fixes-8.md) - Guide PHPStan
 - [docs/TRAIT_BEST_PRACTICES.md](../../../../docs/trait_best_practices.md) - Best practices per trait
-=======
-- [docs/laraxot_conventions.md](../../../docs/laraxot_conventions.md) - Convenzioni Laraxot generali
-- [docs/USER_MODULE.md](../../../docs/USER_MODULE.md) - Documentazione generale modulo User
-- [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md) - Guide PHPStan
-- [docs/TRAIT_BEST_PRACTICES.md](../../../docs/TRAIT_BEST_PRACTICES.md) - Best practices per trait
->>>>>>> 6ed19256f (.)
 
 ### **📁 Documentazione Modulo User**
 - [traits.md](traits.md) - Documentazione completa trait modulo User
@@ -312,8 +321,4 @@ Il trait `HasTeams` ora è:
 
 **Data correzione**: Gennaio 2025
 **Status**: ✅ **COMPLETATO**
-<<<<<<< HEAD
 **Conformità**: Laraxot PTVX Philosophy, PHPStan Level 9+, Windsurf Rules
-=======
-**Conformità**: Laraxot PTVX Philosophy, PHPStan Level 9+, Windsurf Rules
->>>>>>> 6ed19256f (.)

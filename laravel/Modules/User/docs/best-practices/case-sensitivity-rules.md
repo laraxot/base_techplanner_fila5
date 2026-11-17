@@ -1,3 +1,24 @@
+---
+title: "Case Sensitivity Rules - User Module"
+type: rule
+tags: [case, sensitivity, rules]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "case-sensitivity-rules case sensitivity rules - user module"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./auth-components-best-practices.md"
+  - "./auth-widget-rules.md"
+  - "./auth-widget.md"
+  - "./case-sensitivity.md"
+  - "./component-verification-rules.md"
+  - "./component-verification.md"
+  - "./dependency-rules.md"
+  - "./dependency.md"
+status: draft
+---
+
 # Case Sensitivity Rules - User Module
 
 ## Problema / Problem
@@ -100,7 +121,7 @@ Il modulo User aveva la struttura più complessa di duplicati:
 - 2023_01_01_000000_create_oauth_auth_codes_table.php
 - 2023_01_01_000002_create_team_invitations_table.php
 - 2023_01_01_000003_create_oauth_access_tokens_table.php
-- 2023_01_01_000003_create_socialite_user_table.php
+- 2026_11_12_120002_create_socialite_users_table.php
 - 2023_01_01_000003_create_tenant_user_table.php
 - 2023_01_01_000004_create_device_user_table.php
 - 2023_01_01_000004_create_oauth_clients_table.php
@@ -168,4 +189,5 @@ grep -r "Database/seeders" .
   - 29 factory files
   - 23 migration files
   - 5 seeder files
+  - Total: 57 duplicate files eliminated
   - Total: 57 duplicate files eliminated

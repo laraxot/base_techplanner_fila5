@@ -1,3 +1,10 @@
+---
+title: "Anti-Pattern: Environment-Specific Logic in Models"
+qmd: "activity anti pattern model env hack md"
+type: note
+tags: [documentation]
+---
+
 # Anti-Pattern: Environment-Specific Logic in Models
 
 ## Il Problema
@@ -68,11 +75,7 @@ class TestCase extends XotBaseTestCase
 <phpunit>
     <php>
         <env name="DB_CONNECTION" value="mysql"/>
-        <env name="DB_DATABASE" value="<nome progetto>_test"/>
-        <env name="DB_DATABASE" value="laravelpizza_test"/>
-        <env name="DB_DATABASE" value="<nome progetto>_test"/>
-        <env name="DB_DATABASE" value="laravelpizza_test"/>
-        <env name="DB_DATABASE" value="<nome progetto>_test"/>
+        <env name="DB_DATABASE" value="test_db"/>
     </php>
 </phpunit>
 ```

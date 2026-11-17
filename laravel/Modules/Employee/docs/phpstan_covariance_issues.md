@@ -1,3 +1,9 @@
+---
+title: "Employee - PHPSTAN_COVARIANCE_ISSUES"
+module: Employee
+bmad: true
+status: active
+---
 # PHPStan Covariance Issues - Eloquent Relationships
 
 ## Problema
@@ -149,8 +155,4 @@ Dopo aver applicato le correzioni, verificare con:
 - [Root PHPStan Rules](../../../docs/phpstan_rules.md)
 - [Employee Module Structure](./module_structure.md)
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-07-31*
-=======
-*Ultimo aggiornamento: 2025-07-31*
->>>>>>> 6ed19256f (.)

@@ -1,13 +1,13 @@
-<<<<<<< HEAD
+---
+title: "optimization"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "optimization"
+issues: []
+discussions: []
+---
+
 https://filamentphp.com/community/danharrin-fast-table-pagination
 
----
-module: theme
-topic: optimization
-canonical: ../../../Themes/docs/shared-components/optimization.txt
----
-
-See canonical documentation: ../../../Themes/docs/shared-components/optimization.txt
-=======
-
->>>>>>> 6ed19256f (.)

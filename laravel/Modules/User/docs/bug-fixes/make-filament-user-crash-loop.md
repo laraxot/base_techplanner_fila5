@@ -1,3 +1,29 @@
+---
+title: "Bug Fix: Crash durante creazione utenti con make:filament-user"
+type: concept
+tags: [make, filament, user, crash]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "make-filament-user-crash-loop bug fix: crash durante creazione utenti con make:filament-user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./parse-error-orphan-methods-.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-error-orphan-methods-documentation-themes.md"
+  - "./parse-error-orphan-methods-stato-rinominato.md"
+  - "./parse-error-orphan-methods.md"
+  - "./parse-orphan-methods.md"
+status: draft
+---
+
 # Bug Fix: Crash durante creazione utenti con make:filament-user
 
 ## 🐛 Problema Identificato
@@ -222,25 +248,15 @@ use Modules\User\Models\User;
 
 class CreateTenantUserCommand extends Command
 {
-<<<<<<< HEAD
     protected $signature = 'user:create-tenant-user 
                             {tenant : The tenant ID} 
                             {name : User name} 
-=======
-    protected $signature = 'user:create-tenant-user
-                            {tenant : The tenant ID}
-                            {name : User name}
->>>>>>> 6ed19256f (.)
                             {email : User email}';
 
     public function handle(): int
     {
         $tenantId = $this->argument('tenant');
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // ✅ Imposta manualmente tenant_id in contesto console
         $user = User::create([
             'name' => $this->argument('name'),
@@ -283,13 +299,8 @@ class CreateTenantUserCommand extends Command
 
 ### Documentazione Root Progetto
 
-- [../../../docs/modules/user/README.md](../../../docs/modules/user/README.md) - Panoramica modulo User
-- [../../../docs/architecture/multi-tenancy.md](../../../docs/architecture/multi-tenancy.md) - Architettura globale
-<<<<<<< HEAD
 - [../../../../docs/modules/user/README.md](../../../../docs/modules/user/readme.md) - Panoramica modulo User
 - [../../../../docs/architecture/multi-tenancy.md](../../../../docs/architecture/multi-tenancy.md) - Architettura globale
-=======
->>>>>>> 6ed19256f (.)
 
 ## 🎓 Lezioni Apprese
 
@@ -354,11 +365,7 @@ Monitorare log per:
 ## 👥 Contributors
 
 - **Analisi**: AI Assistant
-<<<<<<< HEAD
 - **Fix**: AI Assistant  
-=======
-- **Fix**: AI Assistant
->>>>>>> 6ed19256f (.)
 - **Testing**: Da eseguire
 - **Review**: Da assegnare
 
@@ -389,8 +396,5 @@ Monitorare log per:
 
 **File Creati**:
 - `Modules/User/tests/Feature/TenantScopeConsoleTest.php`
-<<<<<<< HEAD
 - `Modules/User/docs/bug-fixes/make-filament-user-crash-loop.md`
-=======
-- `Modules/User/docs/bug-fixes/make-filament-user-crash-loop.md`
->>>>>>> 6ed19256f (.)
+

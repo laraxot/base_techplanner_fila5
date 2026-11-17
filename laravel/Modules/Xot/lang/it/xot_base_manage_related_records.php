@@ -3,45 +3,33 @@
 declare(strict_types=1);
 
 return [
-    'actions' => [
-        'create' => [
-            'label' => 'create',
-        ],
-    ],
     'fields' => [
         'delete' => [
-            'label' => 'delete',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'edit' => [
-            'label' => 'edit',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'view' => [
-            'label' => 'view',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'attach' => [
-            'label' => 'attach',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'detach' => [
-            'label' => 'detach',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'create' => [
-            'label' => 'create',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -60,23 +48,4 @@ return [
         'sort' => 1,
         'icon' => 'heroicon-o-collection',
     ],
-=======
-        ],
-        'edit' => [
-            'label' => 'edit',
-        ],
-        'view' => [
-            'label' => 'view',
-        ],
-        'attach' => [
-            'label' => 'attach',
-        ],
-        'detach' => [
-            'label' => 'detach',
-        ],
-        'create' => [
-            'label' => 'create',
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

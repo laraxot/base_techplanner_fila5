@@ -1,6 +1,12 @@
+---
+title: "Code Coverage: UI"
+qmd: "ui coverage md"
+type: note
+tags: [documentation]
+---
+
 # Code Coverage: UI
 
-**Date:** 2026-01-17
 **Lines Coverage:** N/A (Failed to parse)
 **Test Exit Code:** 2
 

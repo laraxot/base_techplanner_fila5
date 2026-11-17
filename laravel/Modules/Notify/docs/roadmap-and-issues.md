@@ -1,16 +1,22 @@
+---
+title: "roadmap and issues"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "roadmap and issues"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notify Module - Roadmap, Issues & Optimization
 
-<<<<<<< HEAD
 **Modulo**: Notify (Multi-Channel Notifications)  
 **Data Analisi**: 1 Ottobre 2025  
-=======
-**Modulo**: Notify (Multi-Channel Notifications)
-**Data Analisi**: 1 Ottobre 2025
->>>>>>> 6ed19256f (.)
 **Status PHPStan**: ✅ 0 errori (Level 9)
 
 ---
-
 ## 📊 STATO ATTUALE
 
 ### Completezza Funzionale: 70%
@@ -61,11 +67,7 @@ Echo.private(`App.Models.User.${userId}`)
     });
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 1 settimana  
-=======
-**Tempo Fix**: 1 settimana
->>>>>>> 6ed19256f (.)
 **Priorità**: 🔴 ALTA
 
 ---
@@ -87,11 +89,7 @@ public function toPush($notifiable)
 }
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 2 settimane  
-=======
-**Tempo Fix**: 2 settimane
->>>>>>> 6ed19256f (.)
 **Priorità**: 🔴 ALTA (per mobile app)
 
 ---
@@ -114,11 +112,7 @@ if ($user->wantsNotification('ticket.created', 'email')) {
 }
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 1 settimana  
-=======
-**Tempo Fix**: 1 settimana
->>>>>>> 6ed19256f (.)
 **Priorità**: 🟡 MEDIA
 
 ---
@@ -148,11 +142,7 @@ class TicketDigest extends Notification implements ShouldQueue
 }
 ```
 
-<<<<<<< HEAD
 **Tempo Fix**: 2 ore  
-=======
-**Tempo Fix**: 2 ore
->>>>>>> 6ed19256f (.)
 **Gain**: Better queue management
 
 ---
@@ -264,21 +254,12 @@ class TicketDigest extends Notification implements ShouldQueue
 
 - [← Notify Module README](../README.md)
 - [← Fixcity Integration](../../Fixcity/docs/roadmap-and-issues.md)
-<<<<<<< HEAD
-- [← Notify Module README](../README.md)
-- [← Fixcity Integration](../../Fixcity/docs/roadmap-and-issues.md)
-=======
->>>>>>> 6ed19256f (.)
 - [← Root Documentation](../../../docs/index.md)
+- [← Root Documentation](../../../../docs/index.md)
 
 ---
 
-<<<<<<< HEAD
 **Status**: ✅ BUONO  
 **PHPStan**: ✅ 0 errori  
 **Focus**: Real-Time + Push + Preferences
-=======
-**Status**: ✅ BUONO
-**PHPStan**: ✅ 0 errori
-**Focus**: Real-Time + Push + Preferences
->>>>>>> 6ed19256f (.)
+

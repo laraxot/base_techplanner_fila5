@@ -1,3 +1,10 @@
+---
+title: "AVVISO IMPORTANTE (2025-05-13)"
+qmd: "ui archive paths and assets 1 md"
+type: note
+tags: [documentation]
+---
+
 # AVVISO IMPORTANTE (2025-05-13)
 
 > **ATTENZIONE:** Tutti i componenti UI condivisi (come `logo.blade.php`) devono essere SEMPRE posizionati in `Modules/UI/resources/views/components/ui/` e MAI in `resources/views/components/`. Qualsiasi violazione di questa regola causa errori di rendering, override errati, problemi di modularità e manutenzione.

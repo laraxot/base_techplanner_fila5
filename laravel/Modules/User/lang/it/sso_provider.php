@@ -9,7 +9,6 @@ return [
         'icon' => 'heroicon-o-identification',
         'sort' => 3,
     ],
-<<<<<<< HEAD
     'label' => 'Provider SSO',
     'plural_label' => 'Provider SSO',
     'fields' => [
@@ -43,10 +42,4 @@ return [
             'label' => 'Elimina Sso Provider',
         ],
     ],
-=======
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
->>>>>>> 6ed19256f (.)
 ];

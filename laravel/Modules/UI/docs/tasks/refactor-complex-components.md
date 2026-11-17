@@ -1,3 +1,10 @@
+---
+title: "Task: Refactoring Componenti Complessi - UI"
+qmd: "ui tasks refactor complex components md"
+type: note
+tags: [documentation]
+---
+
 # Task: Refactoring Componenti Complessi - UI
 
 **Modulo**: UI  

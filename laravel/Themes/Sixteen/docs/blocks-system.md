@@ -1,3 +1,15 @@
+---
+title: "blocks system"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "blocks system"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sixteen Theme Blocks System
 
 ## Panoramica
@@ -295,9 +307,4 @@ $testProps = [
 - Rispettare standard accessibilità
 
 ---
-
-<<<<<<< HEAD
-=======
-*Ultimo aggiornamento: Luglio 2025*
->>>>>>> 6ed19256f (.)
 *Versione Sistema Blocchi: 1.0*

@@ -1,3 +1,10 @@
+---
+title: "UI Module Wiki Index"
+qmd: "ui llm wiki index md"
+type: note
+tags: [documentation]
+---
+
 # UI Module Wiki Index
 
 > **Module**: UI

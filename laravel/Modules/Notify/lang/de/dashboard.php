@@ -87,11 +87,6 @@ return [
         'no_data' => 'Nessun dato disponibile per il periodo selezionato',
         'loading' => 'Caricamento dati in corso...',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

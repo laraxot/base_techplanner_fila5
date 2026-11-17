@@ -1,3 +1,10 @@
+---
+title: "Activity Module - Status Attuale"
+qmd: "activity current status md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Status Attuale
 
 ## ⚠️ STATO: Parzialmente Disabilitato
@@ -98,14 +105,11 @@ activity()
 - [Properties Vuote](troubleshooting/properties-vuote-activity-log.md) - Problema correlato
 
 ### Modelli
-<<<<<<< HEAD
 - [BaseScheda Activity Log](../../ptv/docs/models/base-scheda-activity-log.md) - Status disabilitato
 - [IndennitaResponsabilita Integration](../../indennitaresponsabilita/docs/activity-log-integration.md)
 
 ### Refactoring
 - [SchedaTrait Refactoring Plan](../../sigma/docs/refactoring/scheda-trait-accessor-save-issue.md) - Piano dettagliato fix definitivo
-=======
->>>>>>> 6ed19256f (.)
 - [BaseScheda Activity Log](../../Ptv/docs/models/base-scheda-activity-log.md) - Status disabilitato
 - [IndennitaResponsabilita Integration](../../IndennitaResponsabilita/docs/activity-log-integration.md)
 
@@ -122,8 +126,4 @@ activity()
 ---
 
 **Ultimo aggiornamento**: 27 Ottobre 2025
-<<<<<<< HEAD
 **Prossimo check**: Sprint Planning
-=======
-**Prossimo check**: Sprint Planning
->>>>>>> 6ed19256f (.)

@@ -1,4 +1,21 @@
+---
+title: "design comuni faq"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "design comuni faq"
+issues: []
+discussions: []
+---
+
 # Design Comuni - Domande Frequenti (FAQ)
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Panoramica
 
@@ -131,7 +148,7 @@ Universal Blocks Renderer
 ```bash
 cd laravel/Themes/Sixteen
 npm run build    # Compila CSS/JS
-npm run copy     # Copia in public_html/themes/Sixteen/
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
 
 ## Testing
@@ -208,6 +225,14 @@ Icone utilizzate:
 
 ---
 
+title: "design comuni faq"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "design comuni faq"
+issues: []
+discussions: []
 **Ultimo Aggiornamento**: 2026-04-03  
 **Stato**: ✅ 90% Completato  
 **Responsabile**: AI Agent Team

@@ -16,11 +16,7 @@ class ThemeComposer
     /**
      * Get menu items by name.
      *
-<<<<<<< HEAD
      * @return array<int|string, mixed>|null
-=======
-     * @return array<string, mixed>|null
->>>>>>> 6ed19256f (.)
      */
     public function getMenu(string $menu_name): ?array
     {
@@ -41,21 +37,24 @@ class ThemeComposer
         return $normalized;
     }
 
+    /**
+     * @param  array<string, mixed>  $menu
+     */
     public function getMenuUrl(array $menu): string
     {
-        if ([] === $menu) {
+        if ($menu === []) {
             return '#';
         }
         $lang = app()->getLocale();
-        if ('internal' === $menu['type']) {
+        if ($menu['type'] === 'internal') {
             return route('page_slug.view', ['lang' => $lang, 'slug' => $menu['url']]);
         }
-        if ('external' === $menu['type']) {
+        if ($menu['type'] === 'external') {
             Assert::string($url = $menu['url'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
             return $url;
         }
-        if ('route_name' === $menu['type']) {
+        if ($menu['type'] === 'route_name') {
             Assert::string($url = $menu['url'], __FILE__.':'.__LINE__.' - '.class_basename(self::class));
 
             return route($url, ['lang' => $lang]);
@@ -135,39 +134,24 @@ class ThemeComposer
         return $blocksComponent->render();
     }
     */
-<<<<<<< HEAD
     /**
      * @return Collection<int, Page>
      */
     public function getPages(): Collection
     {
-=======
-    public function getPages(): Collection
-    {
-        /* @var Collection<int, Page> $pages */
->>>>>>> 6ed19256f (.)
         return Page::all();
     }
 
     public function getPageModel(string $slug): ?Page
     {
-<<<<<<< HEAD
         return Page::findUniqueBySlug($slug);
-=======
-        /* @var Page|null $page */
-        return Page::where('slug', $slug)->first();
->>>>>>> 6ed19256f (.)
     }
 
     public function getUrlPage(string $slug): string
     {
         $page = $this->getPageModel($slug);
         if ($page instanceof Page) {
-<<<<<<< HEAD
             return '/'.app()->getLocale().'/'.$slug;
-=======
-            return '/'.app()->getLocale().'/pages/'.$slug;
->>>>>>> 6ed19256f (.)
         }
 
         return '#';

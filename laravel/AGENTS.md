@@ -1,10 +1,10 @@
 # AGENTS.md — Laravel On-Demand Stub
 
-SSoT: [../docs/wiki/](../docs/wiki/) · bootstrap: [agent-bootstrap-compact.md](../docs/wiki/concepts/agent-bootstrap-compact.md)
+SSoT: [../docs/wiki/](../docs/wiki/) · bootstrap: [agent-bootstrap-compact.md](../bashscripts/ai/wiki/concepts/agent-bootstrap-compact.md)
 
 ## Read First
 
-1. [Trigger Map](../docs/wiki/rules/00-TRIGGER_MAP.md)
+1. [Trigger Map](../bashscripts/ai/wiki/rules/00-TRIGGER_MAP.md)
 2. `bashscripts/docs/llm-wiki-qmd.sh search "<module> <topic>" -n 5`
 3. Modulo owner: `Modules/<Name>/docs/wiki/`
 

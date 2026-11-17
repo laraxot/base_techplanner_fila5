@@ -5,44 +5,27 @@ declare(strict_types=1);
 return [
     'fields' => [
         'recordId' => [
-            'label' => 'recordId',
-            'placeholder' => 'recordId',
-            'helper_text' => 'recordId',
-            'description' => 'recordId',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'team_id' => [
-            'label' => 'team_id',
+            'label' => 'Team',
             'placeholder' => 'team_id',
             'helper_text' => 'team_id',
             'description' => 'team_id',
-<<<<<<< HEAD
             'tooltip' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
         'submit' => [
-            'label' => 'submit',
             'icon' => 'submit',
-            'tooltip' => 'submit',
         ],
         'attachAnother' => [
-            'label' => 'attachAnother',
             'icon' => 'attachAnother',
-            'tooltip' => 'attachAnother',
         ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'cancel',
-            'tooltip' => 'cancel',
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'name' => 'Attach Role',
         'plural' => 'Attach Role',
@@ -56,9 +39,4 @@ return [
     ],
     'label' => 'Attach Role',
     'plural_label' => 'Attach Role (Plurale)',
-=======
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

@@ -16,8 +16,8 @@ Il tema Sixteen non era registrato come dipendenza nel `composer.json` principal
 
 ### Stack Trace
 ```
-View pub_theme::components.sections.footer not found 
-(View: /home/u345161458/domains/sottana.com/laravel/Themes/Sixteen/resources/views/components/layouts/app.blade.php) 
+View pub_theme::components.sections.footer not found
+(View: /home/u345161458/domains/sottana.com/laravel/Themes/Sixteen/resources/views/components/layouts/app.blade.php)
 at /home/u345161458/domains/sottana.com/laravel/Modules/Cms/app/View/Components/Section.php:65
 ```
 
@@ -44,7 +44,7 @@ protected function registerThemeSixteen(): void
 {
     // Registra le viste del tema Sixteen con il namespace pub_theme
     $this->app['view']->addNamespace('pub_theme', base_path('Themes/Sixteen/resources/views'));
-    
+
     // Registra le traduzioni del tema Sixteen
     $this->app['translator']->addNamespace('pub_theme', base_path('Themes/Sixteen/lang'));
 }
@@ -57,7 +57,7 @@ Aggiunto nel `composer.json`:
 ```json
 {
     "require": {
-        "laraxot/theme_sixteen_fila3": "*"
+        "laraxot/theme_sixteen_fila5": "*"
     },
     "repositories": [
         {
@@ -149,13 +149,8 @@ Il `ThemeServiceProvider` del tema Sixteen registra:
 
 ---
 
-**PRIORITÀ: ALTA**  
-**IMPATTO: CRITICO**  
+**PRIORITÀ: ALTA**
+**IMPATTO: CRITICO**
 **EFFORT: BASSO**
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: Settembre 2025*
-=======
-*Ultimo aggiornamento: Settembre 2025*
-
->>>>>>> 6ed19256f (.)

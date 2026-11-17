@@ -1,3 +1,11 @@
+---
+title: "Convenzioni di Naming nella Documentazione"
+type: note
+status: draft
+updated: 2026-10-18
+tags: [docs, xot]
+qmd: "convenzioni di naming nella documentazione xot"
+---
 # Convenzioni di Naming nella Documentazione
 
 ## Regola: Nome del Progetto nei Moduli
@@ -70,5 +78,5 @@ Prima di committare modifiche alla documentazione di un modulo, verificare:
 
 ## Collegamenti
 - [Struttura Moduli](module-structure.md)
-- [Convenzioni Generali](conventions.md)
+- [Convenzioni Generali](archive/conventions.md)
 - [Best Practices Documentazione](documentation-guidelines.md) 

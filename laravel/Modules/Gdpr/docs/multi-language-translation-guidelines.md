@@ -1,3 +1,14 @@
+---
+title: "multi language translation guidelines"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "multi language translation guidelines"
+issues: []
+discussions: []
+---
+
 # Multi-Language Translation Guidelines for Laravel Pizza
 
 ## Overview

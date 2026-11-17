@@ -4,44 +4,43 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'Consensi',
-        'plural' => 'Consensi',
+        'name' => 'Consents',
+        'plural' => 'Consents',
         'group' => [
             'name' => 'GDPR',
-            'description' => 'Gestione dei consensi privacy',
+            'description' => 'Manage privacy consents',
         ],
-        'label' => 'Gestione Consensi',
+        'label' => 'Consent Management',
         'sort' => '62',
         'icon' => 'gdpr-consent',
     ],
     'fields' => [
-<<<<<<< HEAD
         'user' => [
-            'label' => 'Utente',
+            'label' => 'User',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'type' => [
-            'label' => 'Tipo Consenso',
+            'label' => 'Consent Type',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'status' => [
-            'label' => 'Stato',
+            'label' => 'Status',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'date' => [
-            'label' => 'Data',
+            'label' => 'Date',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'ip_address' => [
-            'label' => 'Indirizzo IP',
+            'label' => 'IP Address',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -53,29 +52,14 @@ return [
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'user' => 'Utente',
-        'type' => 'Tipo Consenso',
-        'status' => 'Stato',
-        'date' => 'Data',
-        'ip_address' => 'Indirizzo IP',
-        'notes' => 'Note',
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'statuses' => [
@@ -90,9 +74,6 @@ return [
         'withdraw' => 'Revoca',
         'renew' => 'Rinnova',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

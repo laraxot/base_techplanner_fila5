@@ -2,21 +2,6 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-=======
-/**
- * Translations for ContactColumn - Filament column for contacts
- *
- * Translation file for the reusable ContactColumn
- * that uses ContactTypeEnum for centralized rendering.
- *
- * @author Laraxot Team
- *
- * @version 1.0
- *
- * @since 2025-08-01
- */
->>>>>>> 6ed19256f (.)
 return [
     'label' => 'Contacts',
     'no_contacts' => 'No contacts available',
@@ -33,19 +18,12 @@ return [
         'contact_link' => 'Contact link',
         'no_contacts' => 'No contacts available',
     ],
-<<<<<<< HEAD
     'navigation' => [
-        'label' => 'Missing Navigation Label',
+        'label' => 'Contacts',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

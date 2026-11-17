@@ -1,3 +1,10 @@
+---
+title: "ubuntu"
+qmd: "ui integration ubuntu md"
+type: note
+tags: [documentation]
+---
+
 # ubuntu
 
 <!-- Contenuto migrato da _docs/ubuntu.txt -->

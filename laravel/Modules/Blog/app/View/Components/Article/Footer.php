@@ -16,17 +16,26 @@ use Modules\Xot\Actions\GetViewAction;
  */
 class Footer extends Component
 {
+    /** @var array<int, array<string, mixed>> */
     public array $blocks = [];
 
+    /**
+     * @param array<int, array<string, mixed>>|string|null $blocks
+     */
     public function __construct(
         array|string|null $blocks,
         public Model $article,
         public string $tpl = 'v1',
     ) {
-        if (! \is_array($blocks)) {
-            $blocks = [];
+        $normalized = [];
+        if (is_array($blocks)) {
+            foreach ($blocks as $block) {
+                if (is_array($block)) {
+                    $normalized[] = $block;
+                }
+            }
         }
-        $this->blocks = $blocks;
+        $this->blocks = $normalized;
     }
 
     public function render(): Renderable

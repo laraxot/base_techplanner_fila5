@@ -1,3 +1,10 @@
+---
+title: "Goals - UI"
+qmd: "ui roadmap 02 goals md"
+type: note
+tags: [documentation]
+---
+
 # Goals - UI
 
 ## Short Term

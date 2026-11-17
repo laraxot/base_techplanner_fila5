@@ -1,3 +1,15 @@
+---
+title: "map lit legend theme boundary"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "map lit legend theme boundary"
+issues: []
+discussions: []
+status: draft
+---
+
 # Legenda mappa — confine tema vs modulo Geo
 
 ## Scopo
@@ -38,4 +50,4 @@ Legenda in basso a sinistra sulla mappa elenco; non sovrapposta ai controlli zoo
 ## Collegamenti
 
 - Geo: [map-lit-legend-types.md](../../../../../Modules/Geo/docs/wiki/concepts/map-lit-legend-types.md)
-- [segnalazioni-elenco-map-integration.md](./segnalazioni-elenco-map-integration.md)
+- [ticket-list-map-integration.md](./ticket-list-map-integration.md)

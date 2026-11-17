@@ -5,7 +5,9 @@ declare(strict_types=1);
 namespace Modules\Media\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Lang;
 use Modules\Media\Models\Media;
+use Webmozart\Assert\Assert;
 
 class CreateTemporaryUploadFromDirectS3UploadRequest extends FormRequest
 {
@@ -27,27 +29,18 @@ class CreateTemporaryUploadFromDirectS3UploadRequest extends FormRequest
     }
 
     /**
-     * @return array<string, array|string>
-     *
-     * @psalm-return array{'uuid.unique': array|string}
+     * @return array<string, string>
      */
     public function messages(): array
     {
         return [
-            'uuid.unique' => trans('medialibrary-pro::upload_request.uuid_not_unique'),
+            'uuid.unique' => Lang::string('medialibrary-pro::upload_request.uuid_not_unique'),
         ];
     }
 
     protected function getDatabaseConnection(): string
     {
-        $mediaModelClass = config('media-library.media_model');
-
-        /** @var Media $mediaModel */
-<<<<<<< HEAD
-        $mediaModel = new $mediaModelClass;
-=======
-        $mediaModel = new $mediaModelClass();
->>>>>>> 6ed19256f (.)
+        $mediaModel = $this->resolveMediaModel();
 
         if ($mediaModel->getConnectionName() === 'default') {
             return '';
@@ -58,15 +51,15 @@ class CreateTemporaryUploadFromDirectS3UploadRequest extends FormRequest
 
     protected function getMediaTableName(): string
     {
+        return $this->resolveMediaModel()->getTable();
+    }
+
+    private function resolveMediaModel(): Media
+    {
         $mediaModelClass = config('media-library.media_model');
+        Assert::string($mediaModelClass);
+        Assert::subclassOf($mediaModelClass, Media::class);
 
-        /** @var Media $mediaModel */
-<<<<<<< HEAD
-        $mediaModel = new $mediaModelClass;
-=======
-        $mediaModel = new $mediaModelClass();
->>>>>>> 6ed19256f (.)
-
-        return $mediaModel->getTable();
+        return new $mediaModelClass;
     }
 }

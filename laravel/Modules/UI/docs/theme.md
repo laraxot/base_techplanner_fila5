@@ -1,3 +1,10 @@
+---
+title: "theme"
+qmd: "ui theme md"
+type: note
+tags: [documentation]
+---
+
 https://dev.to/themesberg/how-to-build-a-blog-template-with-tailwind-css-and-flowbite-5e4n
 
 

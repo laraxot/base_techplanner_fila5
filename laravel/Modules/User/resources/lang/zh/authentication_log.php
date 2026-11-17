@@ -14,53 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'user_id' => [
-            'label' => '用户',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'ip_address' => [
-            'label' => 'IP地址',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'user_agent' => [
-            'label' => '用户代理',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login_at' => [
-            'label' => '登录时间',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'logout_at' => [
-            'label' => '注销时间',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login_method' => [
-            'label' => '登录方法',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'success' => [
-            'label' => '成功',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
         ],
         'user_id' => [
             'label' => '用户',
@@ -82,7 +35,6 @@ return [
         ],
         'success' => [
             'label' => '成功',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

@@ -29,7 +29,7 @@ jobs:
     outputs:
       version: ${{ steps.calculate-version.outputs.version-string }}
       release_notes: ${{ steps.build-changelog.outputs.changelog }}
-      
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -71,57 +71,57 @@ jobs:
           else
             COMMIT_RANGE="${LAST_TAG}..HEAD"
           fi
-          
+
           # Generate detailed changelog
           cat > CHANGELOG_BODY.md << 'EOF'
           ## 🚀 Release v${{ steps.calculate-version.outputs.version-string }}
-          
+
           ### 📋 Summary
-          This release includes important updates and improvements across the Quaeris Fila5 Mono platform.
-          
+          This release includes important updates and improvements across the <nome progetto> fila5 platform.
+
           ### ✨ Features
           EOF
-          
+
           # Extract features
           git log $COMMIT_RANGE --pretty=format:"%h %s" | grep -E "^.*feat.*:" | sed 's/^/ - /' >> CHANGELOG_BODY.md || echo " - No new features" >> CHANGELOG_BODY.md
-          
+
           cat >> CHANGELOG_BODY.md << 'EOF'
-          
+
           🐛 Bug Fixes
           EOF
-          
+
           # Extract fixes
           git log $COMMIT_RANGE --pretty=format:"%h %s" | grep -E "^.*fix.*:" | sed 's/^/ - /' >> CHANGELOG_BODY.md || echo " - No bug fixes" >> CHANGELOG_BODY.md
-          
+
           cat >> CHANGELOG_BODY.md << 'EOF'
-          
+
           🔧 Maintenance
           EOF
-          
+
           # Extract maintenance
           git log $COMMIT_RANGE --pretty=format:"%h %s" | grep -E "^.*chore.*:|^.*refactor.*:|^.*docs.*:" | sed 's/^/ - /' >> CHANGELOG_BODY.md || echo " - No maintenance updates" >> CHANGELOG_BODY.md
-          
+
           cat >> CHANGELOG_BODY.md << 'EOF'
-          
+
           ### 📊 Module Changes
           EOF
-          
+
           # Extract module-specific changes
-          for module in Activity Chart CloudStorage Cms DbForge Gdpr Geo Job Lang Limesurvey Media Notify Quaeris Tenant UI User Xot; do
+          for module in Activity Chart CloudStorage Cms DbForge Gdpr Geo Job Lang Limesurvey Media Notify <nome progetto> Tenant UI User Xot; do
             MODULE_CHANGES=$(git log $COMMIT_RANGE --pretty=format:"%h %s" | grep -i "$module" | wc -l)
             if [ "$MODULE_CHANGES" -gt 0 ]; then
               echo " - **$module**: $MODULE_CHANGES changes" >> CHANGELOG_BODY.md
             fi
           done
-          
+
           # Add contributors
           cat >> CHANGELOG_BODY.md << 'EOF'
-          
+
           ### 👥 Contributors
           EOF
-          
+
           git log $COMMIT_RANGE --pretty=format:"%an" | sort | uniq -c | sort -nr | sed 's/^/ - /' >> CHANGELOG_BODY.md
-          
+
           echo "changelog<<EOF" >> $GITHUB_OUTPUT
           cat CHANGELOG_BODY.md >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
@@ -147,13 +147,13 @@ jobs:
         run: |
           # Update version in package.json files if they exist
           find . -name "package.json" -not -path "./node_modules/*" -not -path "./laravel/vendor/*" -exec sed -i 's/"version": "[^"]*"/"version": "${{ steps.calculate-version.outputs.version-string }}"/g' {} \;
-          
+
           # Update version in composer.json files
           find . -name "composer.json" -not -path "./vendor/*" -exec sed -i 's/"version": "[^"]*"/"version": "${{ steps.calculate-version.outputs.version-string }}"/g' {} \;
-          
+
           # Create or update VERSION file
           echo "${{ steps.calculate-version.outputs.version-string }}" > VERSION
-          
+
           # Commit version updates back to repository
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
@@ -173,9 +173,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        module: [Activity, Chart, CloudStorage, Cms, DbForge, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, Quaeris, Tenant, UI, User, Xot]
+        module: [Activity, Chart, CloudStorage, Cms, DbForge, Gdpr, Geo, Job, Lang, Limesurvey, Media, Notify, <nome progetto>, Tenant, UI, User, Xot]
       fail-fast: false
-    
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

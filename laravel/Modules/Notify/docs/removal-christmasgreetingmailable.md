@@ -1,13 +1,19 @@
+---
+title: "removal christmasgreetingmailable"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "removal christmasgreetingmailable"
+issues: []
+discussions: []
+status: draft
+---
+
 # Rimozione ChristmasGreetingMailable - Report Completo
 
-<<<<<<< HEAD
-**Data**: 19 Dicembre 2025  
 **Data**: 19 Dicembre 2025  
 **Stato**: ✅ Già Rimosso / Mai Creato (Identificata come "Cagata")  
-=======
-**Data**: 19 Dicembre 2025
-**Stato**: ✅ Già Rimosso / Mai Creato (Identificata come "Cagata")
->>>>>>> 6ed19256f (.)
 **Filosofia**: DRY + KISS + Clean Code + Genericity
 
 ## 🎯 Motivazione: Perché È Una "Cagata"
@@ -185,19 +191,9 @@ Una sola classe (`SpatieEmail`) per tutte le email stagionali, non una per ogni 
 ## 🔗 Riferimenti
 
 - [ZEN_STRATEGY.md](./refactoring/ZEN_STRATEGY.md) - Filosofia Zen per sistema stagionale
-<<<<<<< HEAD
-- [ZEN_STRATEGY.md](./refactoring/ZEN_STRATEGY.md) - Filosofia Zen per sistema stagionale
-=======
->>>>>>> 6ed19256f (.)
 - [removal-getseasonalemaillayoutaction.md](./removal-getseasonalemaillayoutaction.md) - Rimozione GetSeasonalEmailLayoutAction
 - [seasonal-email-templates.md](./seasonal-email-templates.md) - Guida completa template stagionali
 
 ---
-
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Genericity first, simplicity second, DRY always, KISS forever"*
-=======
-**Ultimo aggiornamento**: 19 Dicembre 2025
-**Filosofia**: *"Genericity first, simplicity second, DRY always, KISS forever"*
->>>>>>> 6ed19256f (.)

@@ -2,228 +2,114 @@
 
 declare(strict_types=1);
 
-<<<<<<< HEAD
-
-test('page model can be instantiated', function (): void {
-    $page = new Page();
-    expect($page)->toBeInstanceOf(Page::class);
-});
-
-test('page extends BaseModelLang', function (): void {
-    $page = new Page();
-});
-
-test('page has expected fillable fields', function (): void {
-    $page = new Page();
-    $fillable = $page->getFillable();
-
-    // Check actual fillable fields from the model
-    expect($fillable)->toContain('title')
-        ->and($fillable)->toContain('slug')
-        ->and($fillable)->toContain('content')
-        ->and($fillable)->toContain('description')
-        ->and($fillable)->toContain('middleware')
-        ->and($fillable)->toContain('content_blocks')
-        ->and($fillable)->toContain('sidebar_blocks')
-        ->and($fillable)->toContain('footer_blocks');
-});
-
-test('page has expected casts', function (): void {
-    $page = new Page();
-    $casts = $page->getCasts();
-
-    expect($casts)->toBeArray()
-        ->and($casts)->toHaveKey('created_at')
-        ->and($casts)->toHaveKey('updated_at')
-        ->and($casts)->toHaveKey('content_blocks')
-        ->and($casts)->toHaveKey('sidebar_blocks')
-        ->and($casts)->toHaveKey('footer_blocks')
-        ->and($casts)->toHaveKey('middleware');
-});
-
-test('page has translatable fields configured', function (): void {
-    $page = new Page();
-
-    expect($page->translatable)->toBeArray()
-        ->and($page->translatable)->toContain('title')
-        ->and($page->translatable)->toContain('content_blocks')
-        ->and($page->translatable)->toContain('sidebar_blocks')
-        ->and($page->translatable)->toContain('footer_blocks');
-});
-
-test('page has SushiToJsons trait', function (): void {
-    $page = new Page();
-    $traits = class_uses_recursive($page);
-
-});
-
-test('page has getRows method for sushi functionality', function (): void {
-    $page = new Page();
-
-    expect(method_exists($page, 'getRows'))->toBeTrue();
-    expect($page->getRows())->toBeArray();
-});
-
-test('page has schema definition', function (): void {
-    $page = new Page();
-
-    $reflection = new ReflectionClass($page);
-    $schemaProperty = $reflection->getProperty('schema');
-
-    expect($schemaProperty->isProtected())->toBeTrue();
-
-    $schema = $schemaProperty->getValue($page);
-    expect($schema)->toBeArray()
-        ->and($schema)->toHaveKey('id')
-        ->and($schema)->toHaveKey('title')
-        ->and($schema)->toHaveKey('slug')
-        ->and($schema)->toHaveKey('content')
-        ->and($schema)->toHaveKey('description')
-        ->and($schema)->toHaveKey('content_blocks');
-});
-
-test('page has getMiddlewareBySlug static method', function (): void {
-    expect(method_exists(Page::class, 'getMiddlewareBySlug'))->toBeTrue();
-
-    // Test with non-existent slug returns empty array
-    $result = Page::getMiddlewareBySlug('non-existent-slug');
-    expect($result)->toBeArray();
-});
-
-test('page casts content_blocks to array', function (): void {
-    $page = new Page();
-    $casts = $page->getCasts();
-
-    expect($casts['content_blocks'])->toBe('array');
-});
-
-test('page casts middleware to array', function (): void {
-    $page = new Page();
-    $casts = $page->getCasts();
-
-    expect($casts['middleware'])->toBe('array');
-=======
 namespace Modules\Cms\Tests\Unit\Models;
 
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Modules\Cms\Models\Page;
+use Modules\Tenant\Models\Traits\SushiToJsons;
+use PHPUnit\Framework\Assert;
 
-beforeEach(function (): void {
-    $this->page = Page/* @phpstan-ignore-line */ ::factory()->create();
-});
+describe('Page', function (): void {
+    test('page model can be instantiated', function (): void {
+        $page = new Page;
+        Assert::assertSame(Page::class, $page::class);
+    });
 
-test('page can be created', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page)->toBeInstanceOf(Page::class);
-});
+    test('page extends base model lang', function (): void {
+        $page = new Page;
+        Assert::assertSame(Page::class, $page::class);
+    });
 
-test('page has fillable attributes', function (): void {
-    /** @phpstan-ignore-next-line property.notFound */
-    $fillable = $this->page->getFillable();
+    test('page has expected fillable fields', function (): void {
+        $page = new Page;
+        $fillable = $page->getFillable();
 
-    expect($fillable)->toContain('title');
-    expect($fillable)->toContain('slug');
-    expect($fillable)->toContain('status');
-    expect($fillable)->toContain('template');
-});
+        Assert::assertContains('title', $fillable);
+        Assert::assertContains('slug', $fillable);
+        Assert::assertContains('content', $fillable);
+        Assert::assertContains('description', $fillable);
+        Assert::assertContains('middleware', $fillable);
+        Assert::assertContains('content_blocks', $fillable);
+        Assert::assertContains('sidebar_blocks', $fillable);
+        Assert::assertContains('footer_blocks', $fillable);
+    });
 
-test('page has casts defined', function (): void {
-    /** @phpstan-ignore-next-line property.notFound */
-    $casts = $this->page->getCasts();
+    test('page has expected casts', function (): void {
+        $page = new Page;
+        /** @var array<string, mixed> $casts */
+        $casts = $page->getCasts();
+        Assert::assertArrayHasKey('created_at', $casts);
 
-    expect($casts)->toHaveKey('created_at');
-    expect($casts)->toHaveKey('updated_at');
-    expect($casts)->toHaveKey('published_at');
-    expect($casts)->toHaveKey('meta');
-});
+        Assert::assertArrayHasKey('updated_at', $casts);
 
-test('page has proper table name', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page->getTable())->toBe('pages');
-});
+        Assert::assertArrayHasKey('content_blocks', $casts);
 
-test('page has content relationship', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page->content())->toBeInstanceOf(HasMany::class);
-});
+        Assert::assertArrayHasKey('sidebar_blocks', $casts);
 
-test('page can be published', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    $this->page->update(['status' => 'published', 'published_at' => now()]);
+        Assert::assertArrayHasKey('footer_blocks', $casts);
 
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page->fresh()->isPublished())->toBeTrue();
-});
+        Assert::assertArrayHasKey('middleware', $casts);
+    });
 
-test('page can be draft', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    $this->page->update(['status' => 'draft']);
+    test('page has translatable fields configured', function (): void {
+        $page = new Page;
 
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page->fresh()->isDraft())->toBeTrue();
-});
+        Assert::assertContains('title', $page->translatable);
 
-test('page can be searched by title', function (): void {
-    $searchResult = Page::search('test')->get();
+        Assert::assertContains('content_blocks', $page->translatable);
 
-    expect($searchResult)->toHaveCount(1);
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($searchResult->first()->id)->toBe($this->page->id);
-});
+        Assert::assertContains('sidebar_blocks', $page->translatable);
 
-test('page can be filtered by status', function (): void {
-    /** @var Collection */
-    $publishedPage = Page/* @phpstan-ignore-line */ ::factory()->create(['status' => 'published']);
-    /** @var Collection */
-    $draftPage = Page/* @phpstan-ignore-line */ ::factory()->create(['status' => 'draft']);
+        Assert::assertContains('footer_blocks', $page->translatable);
+    });
 
-    $publishedPages = Page::published()->get();
-    $draftPages = Page::draft()->get();
+    test('page has sushi to jsons trait', function (): void {
+        $page = new Page;
+        $traits = class_uses_recursive($page);
 
-    expect($publishedPages)->toHaveCount(1);
-    expect($publishedPages->first()->id)->toBe($publishedPage->id);
+        Assert::assertContains(SushiToJsons::class, array_values($traits));
+    });
 
-    expect($draftPages)->toHaveCount(1);
-    expect($draftPages->first()->id)->toBe($draftPage->id);
-});
+    test('page has get rows method for sushi functionality', function (): void {
+        $page = new Page;
 
-test('page can be filtered by template', function (): void {
-    /** @var Collection */
-    $templatePage = Page/* @phpstan-ignore-line */ ::factory()->create(['template' => 'default']);
+        Assert::assertNotEmpty($page->getRows());
+    });
 
-    $templatePages = Page::byTemplate('default')->get();
+    test('page has schema definition', function (): void {
+        $page = new Page;
 
-    expect($templatePages)->toHaveCount(1);
-    expect($templatePages->first()->id)->toBe($templatePage->id);
-});
+        $reflection = new \ReflectionClass($page);
+        $schemaProperty = $reflection->getProperty('schema');
 
-test('page has proper relationships', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page->content())->toBeInstanceOf(HasMany::class);
-});
+        Assert::assertTrue($schemaProperty->isProtected());
 
-test('page can get url', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    $this->page->update(['slug' => 'test-page']);
+        /** @var array<string, mixed> $schema */
+        $schema = $schemaProperty->getValue($page);
+        Assert::assertArrayHasKey('id', $schema);
+        Assert::assertArrayHasKey('title', $schema);
+        Assert::assertArrayHasKey('slug', $schema);
+        Assert::assertArrayHasKey('content', $schema);
+        Assert::assertArrayHasKey('description', $schema);
+        Assert::assertArrayHasKey('content_blocks', $schema);
+    });
 
-    /** @phpstan-ignore-next-line property.notFound */
-    $url = $this->page->getUrlAttribute();
+    test('page has get middleware by slug static method', function (): void {
+        $result = Page::getMiddlewareBySlug('non-existent-slug');
 
-    expect($url)->toBe('/test-page');
-});
+        Assert::assertSame([], $result);
+    });
 
-test('page can check if is public', function (): void {
-    /* @phpstan-ignore-next-line property.notFound */
-    $this->page->update(['status' => 'published', 'published_at' => now()]);
+    test('page casts content blocks to array', function (): void {
+        $page = new Page;
+        $casts = $page->getCasts();
 
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page->fresh()->isPublic())->toBeTrue();
+        Assert::assertSame('array', $casts['content_blocks']);
+    });
 
-    /* @phpstan-ignore-next-line property.notFound */
-    $this->page->update(['status' => 'draft']);
+    test('page casts middleware to array', function (): void {
+        $page = new Page;
+        $casts = $page->getCasts();
 
-    /* @phpstan-ignore-next-line property.notFound */
-    expect($this->page->fresh()->isPublic())->toBeFalse();
->>>>>>> 6ed19256f (.)
+        Assert::assertSame('array', $casts['middleware']);
+    });
 });

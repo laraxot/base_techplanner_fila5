@@ -1,3 +1,10 @@
+---
+title: "UI Module - Architecture Guide (2025)"
+qmd: "ui architecture md"
+type: note
+tags: [documentation]
+---
+
 # UI Module - Architecture Guide (2025)
 
 > **Last Updated:** 2025-11-19

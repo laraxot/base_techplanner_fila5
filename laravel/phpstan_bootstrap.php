@@ -1,12 +1,10 @@
 <?php
 
 declare(strict_types=1);
-<<<<<<< HEAD
+
 use Illuminate\Contracts\Http\Kernel;
 use Modules\Xot\Datas\XotData;
 use Nwidart\Modules\Facades\Module;
-=======
->>>>>>> 6ed19256f (.)
 
 if (! defined('__DIR__')) {
     define('__DIR__', getcwd());
@@ -51,10 +49,6 @@ if (is_dir($modulesPath)) {
     }
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
 // Check if the application has already been bootstrapped
 if (! isset($app)) {
     // Define the path to the application bootstrap file
@@ -62,11 +56,7 @@ if (! isset($app)) {
 
     // Ensure the application bootstrap file exists
     if (! file_exists($appPath)) {
-<<<<<<< HEAD
         echo 'Laravel application bootstrap file not found.'.PHP_EOL;
-=======
-        echo "Laravel application bootstrap file not found.".PHP_EOL;
->>>>>>> 6ed19256f (.)
         exit(1);
     }
 
@@ -74,34 +64,56 @@ if (! isset($app)) {
     $app = require $appPath;
 
     // Create an instance of the HTTP kernel
-<<<<<<< HEAD
     $kernel = $app->make(Kernel::class);
-=======
-    $kernel = $app->make(Illuminate\Contracts\Http\Kernel::class);
->>>>>>> 6ed19256f (.)
 
     // Bootstrap the application for console commands
     $consoleKernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
     $consoleKernel->bootstrap();
 }
 
-<<<<<<< HEAD
 // Manually register the service providers for modules
 if (class_exists(Module::class)) {
     foreach (Module::getOrdered() as $module) {
-=======
-
-// Manually register the service providers for modules
-if (class_exists(Nwidart\Modules\Facades\Module::class)) {
-    foreach (\Nwidart\Modules\Facades\Module::getOrdered() as $module) {
->>>>>>> 6ed19256f (.)
         // Assuming the service provider follows the {ModuleName}ServiceProvider convention
         $serviceProvider = "Modules\\{$module->getName()}\\Providers\\{$module->getName()}ServiceProvider";
         if (class_exists($serviceProvider)) {
             $app->register($serviceProvider);
         }
     }
-<<<<<<< HEAD
+}
+
+/*
+|--------------------------------------------------------------------------
+| View namespaces for Larastan `view-string` checks
+|--------------------------------------------------------------------------
+|
+| Larastan validates `view-string` types by calling view()->exists() on the
+| booted container. Module/theme service providers only register their view
+| namespaces when the module is enabled, and this base enables just a subset
+| (e.g. Activity), so literals like 'xot::filament.widgets.clock' would be
+| rejected even though the blade files exist on disk. Register every
+| Modules/<Mod>/resources/views under its lowercase module name (the same
+| convention used by XotBaseServiceProvider::loadViewsFrom) and every
+| Themes/<Theme>/resources/views under its lowercase theme name, plus the
+| configured `pub_theme` namespace pointing at Themes/<xot.pub_theme>.
+|
+*/
+if (isset($app)) {
+    $viewFactory = $app->make('view');
+
+    foreach (glob(__DIR__.'/Modules/*/resources/views', GLOB_ONLYDIR) ?: [] as $moduleViewsPath) {
+        $viewFactory->addNamespace(strtolower(basename(dirname(dirname($moduleViewsPath)))), $moduleViewsPath);
+    }
+
+    foreach (glob(__DIR__.'/Themes/*/resources/views', GLOB_ONLYDIR) ?: [] as $themeViewsPath) {
+        $viewFactory->addNamespace(strtolower(basename(dirname(dirname($themeViewsPath)))), $themeViewsPath);
+    }
+
+    $pubTheme = (string) config('xot.pub_theme', '');
+    $pubThemeViewsPath = __DIR__.'/Themes/'.$pubTheme.'/resources/views';
+    if ($pubTheme !== '' && is_dir($pubThemeViewsPath)) {
+        $viewFactory->addNamespace('pub_theme', $pubThemeViewsPath);
+    }
 }
 
 /*
@@ -124,6 +136,3 @@ if (class_exists(XotData::class)) {
 
     XotData::make();
 }
-=======
-}
->>>>>>> 6ed19256f (.)

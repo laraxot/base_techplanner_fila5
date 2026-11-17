@@ -1,44 +1,88 @@
-# Trait Alias Conflict Resolution
+---
+title: "Risoluzione conflitto trait teams() su BaseUser"
+type: concept
+tags: [phpstan, user, trait, spatie-permission]
+created: 2026-06-05
+updated: 2026-10-25
+qmd: "conflitto teams HasSpatiePermission HasRoles HasTeams BaseUser Spatie standard membershipTeams"
+issues: []
+discussions: []
+related:
+  - "./ai-harness-user-discipline.md"
+  - "./baseuser-hierarchy.md"
+  - "./code-redundancy-user.md"
+  - "./context-mode-user-discipline.md"
+  - "./context-overflow-prevention.md"
+  - "./filament-langserviceprovider-governance.md"
+  - "./filament-widget-linear-crud-model-create.md"
+  - "./filament-widget-resource-form-delegation.md"
+status: active
+---
 
-## Problem
-During `composer update`, PHP 8.3 strict typing detected a duplicate `teams()` method in `BaseUser.php`. Both `HasSpatiePermission` and `HasTeams` traits define a `teams()` method, causing a fatal error.
+# Trait conflict: `teams()` Spatie vs Laraxot
 
-## Solution
-Alias the `teams()` method from `HasSpatiePermission` trait to `spatieTeams()` to avoid collision with `HasTeams::teams()`.
+`BaseUser` combina due trait che dichiarano entrambi `teams()`:
 
-## Implementation
+| Trait | `teams()` | Scopo |
+|-------|-----------|-------|
+| `HasSpatiePermission` (usa `HasRoles`) | `morphToMany` sui ruoli team-scoped del package | precedenza: vince Spatie |
+| `Modules\User\Models\Traits\HasTeams` | `belongsToManyX(Team)`: membership Laraxot | esposta come alias `membershipTeams()` |
 
-### File: `Modules/User/app/Models/BaseUser.php`
+## Forma canonica
 
 ```php
-use HasSpatiePermission {
-    teams as spatieTeams; // alias to avoid collision
-}
-use HasTeams {
-    teams as userTeams; // trait method alias
+use HasSpatiePermission, HasTeams {
+    HasSpatiePermission::teams insteadof HasTeams;
+    HasTeams::teams as membershipTeams;
 }
 ```
 
-This allows both traits to coexist while providing unique method names:
-- `$user->teams()` → uses `HasTeams::teams()` (user's teams)
-- `$user->spatieTeams()` → uses `HasSpatiePermission::teams()` (Spatie permission teams)
+Il `docblock` di `HasTeams::teams()` dice lo stesso: *«Su `BaseUser` esposto come
+`membershipTeams()`: `HasRoles::teams()` resta Spatie»*. Chi scrive la regola di
+precedenza deve quindi verificare che **entrambi** i trait dichiarino `teams()` nella
+versione installata.
 
-## Error Message
-```
-Fatal error: Modules\User\Models\BaseUser cannot use 
-Modules\User\Models\Traits\HasSpatiePermission and 
-Modules\User\Models\Traits\HasTeams - they define 
-conflicting aliased trait method teams()
-```
+## Storia delle versioni (importante)
 
-## Verification
+- `spatie/laravel-permission` **6.x**: `HasRoles` **non** dichiara `teams()` → la regola
+  `HasSpatiePermission::teams insteadof HasTeams` provocava un fatal all'avvio
+  (*"A precedence rule was defined for ...::teams but this method does not exist"*).
+- `spatie/laravel-permission` **8.x** (installata): `HasRoles::teams()` esiste e i mutatori
+  `assignRole()`, `removeRole()`, `syncRoles()` dichiarano `: static`: la forma canonica
+  qui sopra torna valida **senza wrapper**.
+
+Prima di introdurre alias o wrapper, quindi: `grep -n "function teams" vendor/spatie/laravel-permission/src/Traits/HasRoles.php`.
+Se il metodo c'e', la forma canonica basta; se manca, si documenta la versione e si
+adatta la precedenza: mai lasciare wrapper "per sicurezza" (duplicano package: pivot,
+eventi, reload relazioni).
+
+## Anti-pattern
+
+❌ Copiare `assignRole()` / `syncRoles()` / `removeRole()` in un wrapper quando il package
+li dichiara gia' `: static`: duplica la logica e diverge al primo update.
+
+❌ `use HasSpatiePermission, HasTeams;` senza `insteadof`: fatal "trait method teams has
+not been applied, because there are collisions".
+
+❌ Ridefinire `teams()` nel modello per "unire" i due significati: sono due relazioni
+diverse e i call site vanno letti (`$user->teams()` = ruoli Spatie, `$user->membershipTeams()`
+= membership Laraxot).
+
+## Migrazione call site
+
+Codice Laraxot che intendeva la membership usa `$user->membershipTeams()->attach()`;
+`$user->teams()` resta la relazione del package.
+
+## Verifica
+
 ```bash
-composer dump-autoload
-php artisan package:discover
+cd laravel
+php -l Modules/User/app/Models/BaseUser.php
+timeout 120 php artisan --version   # un fatal di trait o di firma emerge qui
+./vendor/bin/phpstan analyse Modules --no-progress
 ```
-Both commands should complete without errors.
 
-## Related
-- Laravel 12 upgrade notes
-- PHP 8.3 strict typing requirements
-- Trait method aliasing pattern
+## Collegamenti
+
+- [phpstan-relationship-fix.md](../../phpstan-relationship-fix.md)
+- [phpstan-level10.md](../../phpstan-level10.md)

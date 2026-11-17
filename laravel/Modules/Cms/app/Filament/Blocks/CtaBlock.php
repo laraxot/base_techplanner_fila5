@@ -10,12 +10,11 @@ use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 class CtaBlock extends XotBaseBlock
 {
-    #[\Override]
     public static function getBlockSchema(): array
     {
         return [
-            TextInput::make('title')->label('Titolo')->required(),
-            Textarea::make('description')->label('Descrizione')->required(),
+            TextInput::make('title')->label('Title')->required(),
+            Textarea::make('description')->label('Description')->required(),
             TextInput::make('button_text')->label('Testo Pulsante')->required(),
             TextInput::make('button_link')
                 ->label('Link Pulsante')

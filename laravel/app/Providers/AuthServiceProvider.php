@@ -5,10 +5,6 @@ declare(strict_types=1);
 namespace App\Providers;
 
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\Gate;
->>>>>>> 6ed19256f (.)
 
 /**
  * AuthServiceProvider dell'applicazione.
@@ -32,7 +28,3 @@ class AuthServiceProvider extends ServiceProvider
         //
     }
 }
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)

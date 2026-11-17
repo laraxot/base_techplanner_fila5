@@ -8,27 +8,16 @@ return [
             'buttons' => [
                 'refresh' => 'Refrescar',
             ],
-<<<<<<< HEAD
             'heading' => 'Salud de la aplicación',
-=======
-
-            'heading' => 'Salud de la aplicación',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'Configuración',
                 'label' => 'Salud de la aplicación',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'Revisar resultados desde',
             ],
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -38,10 +27,9 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
+    'page' => [
+        'last_check' => [
+            'label' => 'Última comprobación',
+        ],
     ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

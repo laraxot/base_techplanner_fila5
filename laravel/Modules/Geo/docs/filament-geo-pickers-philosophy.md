@@ -1,3 +1,14 @@
+---
+title: "filament geo pickers philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament geo pickers philosophy"
+issues: []
+discussions: []
+---
+
 # Geo Filament Pickers - Filosofia, Visione e Regole
 
 ## Il Cuore (Core Philosophy)
@@ -14,6 +25,14 @@ In pratica questo significa:
 
 ---
 
+title: "filament geo pickers philosophy"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament geo pickers philosophy"
+issues: []
+discussions: []
 ## I Componenti e la Loro Essenza
 
 ### 1. CoordinatePicker 
@@ -119,7 +138,7 @@ GeopointPicker        → geopoint-picker.blade.php         → geopoint-picker-
 ### Regole di Integrazione
 
 - **NO entangle**: usa `$wire.$set` con debounce
-- **NO client-side geocoding**: usa server-side via ExposedLivewireMethod
+- **NO client-side geocoding**: usa server-side via `#[Exposed]` (Filament >= 5.11; `ExposedLivewireMethod` e' il vecchio nome deprecato). I picker Lit oggi geocodificano dal browser: vedi [geo-exposed-attribute-filament-511](stories/geo-exposed-attribute-filament-511.story.md)
 - **NO global IDs**: usa classi locali e Shadow DOM
 
 ---

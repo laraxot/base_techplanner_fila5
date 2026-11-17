@@ -1,3 +1,15 @@
+---
+title: "notification implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "notification implementation"
+issues: []
+discussions: []
+status: draft
+---
+
 # Notification System Implementation Plan
 
 ## Overview
@@ -56,8 +68,5 @@ Vedi: [Contact Extraction Pattern](./contact-extraction-pattern.md)
     - **Philosophy**: Keep Actions simple, stateless, and serialization-friendly.
 
 Vedi: [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 6ed19256f (.)

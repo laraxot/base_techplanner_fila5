@@ -11,7 +11,6 @@ use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 final class SocialBlock extends XotBaseBlock
 {
-    #[\Override]
     public static function getBlockSchema(): array
     {
         return [
@@ -43,10 +42,6 @@ final class SocialBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
-<<<<<<< HEAD
-        return \trans_string('cms::blocks.social.label');
-=======
-        return \trans_string('cms::blocks.social.label') ?? 'Social';
->>>>>>> 6ed19256f (.)
+        return \trans_string('cms::blocks.social.label') ?: 'Social Block';
     }
 }

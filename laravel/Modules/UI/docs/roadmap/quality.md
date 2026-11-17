@@ -1,3 +1,10 @@
+---
+title: "Checklist qualità - UI Module"
+qmd: "ui roadmap quality md"
+type: note
+tags: [documentation]
+---
+
 # Checklist qualità - UI Module
 
 - [x] PHPStan Level 10

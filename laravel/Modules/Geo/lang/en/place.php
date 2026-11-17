@@ -8,34 +8,33 @@ return [
         'plural' => 'Luoghi',
         'group' => [
             'name' => 'Geo',
-            'description' => 'Gestione dei luoghi e punti di interesse',
+            'description' => 'Manage places and points of interest',
         ],
         'label' => 'Luoghi',
         'sort' => '32',
         'icon' => 'ui-geo-place',
     ],
     'fields' => [
-<<<<<<< HEAD
         'name' => [
-            'label' => 'Nome',
+            'label' => 'Name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'description' => [
-            'label' => 'Descrizione',
+            'label' => 'Description',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'category' => [
-            'label' => 'Categoria',
+            'label' => 'Category',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'location' => [
-            'label' => 'Località',
+            'label' => 'Location',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -47,7 +46,7 @@ return [
             'description' => '',
         ],
         'opening_hours' => [
-            'label' => 'Orari di Apertura',
+            'label' => 'Opening Hours',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -76,18 +75,6 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'name' => 'Nome',
-        'description' => 'Descrizione',
-        'category' => 'Categoria',
-        'location' => 'Località',
-        'rating' => 'Valutazione',
-        'opening_hours' => 'Orari di Apertura',
-        'contact_info' => 'Contatti',
-        'website' => 'Sito Web',
-        'photos' => 'Foto',
-        'amenities' => 'Servizi',
->>>>>>> 6ed19256f (.)
     ],
     'categories' => [
         'restaurant' => 'Ristorante',
@@ -98,14 +85,25 @@ return [
         'culture' => 'Cultura',
     ],
     'actions' => [
-        'add_review' => 'Aggiungi Recensione',
-        'upload_photo' => 'Carica Foto',
+        'add_review' => 'Add Review',
+        'upload_photo' => 'Upload Photo',
         'share' => 'Condividi',
-        'bookmark' => 'Salva',
+        'bookmark' => 'Save',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'card' => [
+        'like' => [
+            'label' => 'Like',
+        ],
+        'live_music' => [
+            'label' => 'Live music',
+        ],
+        'menu' => [
+            'label' => 'Menu',
+        ],
+        'photo' => [
+            'label' => 'Photo',
+        ],
+    ],
 ];

@@ -1,3 +1,10 @@
+---
+title: "enum select component"
+qmd: "ui wiki concepts enum select component md"
+type: note
+tags: [documentation]
+---
+
 ## EnumSelect Component Specification
 
 A reusable Iron Select for PHP-backed enums in Filament v5.

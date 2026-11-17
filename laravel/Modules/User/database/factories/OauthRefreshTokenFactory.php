@@ -5,11 +5,8 @@ declare(strict_types=1);
 namespace Modules\User\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
 use Modules\User\Models\OauthAccessToken;
 use Modules\User\Models\OauthClient;
-=======
->>>>>>> 6ed19256f (.)
 use Modules\User\Models\OauthRefreshToken;
 
 /**
@@ -21,25 +18,23 @@ class OauthRefreshTokenFactory extends Factory
 {
     protected $model = OauthRefreshToken::class;
 
+    /**
+     * @return array<string, mixed>
+     */
     public function definition(): array
     {
         return [
             'id' => $this->faker->sha256(),
-<<<<<<< HEAD
             'access_token_id' => fn (): string => $this->newAccessTokenId(),
-=======
-            'access_token_id' => fn (): string => $this->faker->sha256(),
->>>>>>> 6ed19256f (.)
             'revoked' => $this->faker->boolean(5),
             'expires_at' => $this->faker->dateTimeBetween('+1 month', '+6 months'),
         ];
     }
 
-<<<<<<< HEAD
     protected function newAccessTokenId(): string
     {
         /** @var OauthAccessToken $token */
-        $token = (new OauthAccessTokenFactory())->create([
+        $token = (new OauthAccessTokenFactory)->create([
             'id' => $this->faker->uuid(),
             'user_id' => null,
             'client_id' => OauthClient::factory(),
@@ -52,8 +47,6 @@ class OauthRefreshTokenFactory extends Factory
         return (string) $token->id;
     }
 
-=======
->>>>>>> 6ed19256f (.)
     public function revoked(): static
     {
         return $this->state(['revoked' => true]);
@@ -61,12 +54,8 @@ class OauthRefreshTokenFactory extends Factory
 
     public function expired(): static
     {
-<<<<<<< HEAD
         return $this->state([
             'expires_at' => $this->faker->dateTimeBetween('-1 month', 'now'),
         ]);
-=======
-        return $this->state(['expires_at' => $this->faker->dateTimeBetween('-1 month', 'now')]);
->>>>>>> 6ed19256f (.)
     }
 }

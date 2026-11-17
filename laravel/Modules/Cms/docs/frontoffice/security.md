@@ -1,3 +1,14 @@
+---
+title: "security"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "security"
+issues: []
+discussions: []
+---
+
 # Sicurezza Frontend
 
 ## Introduzione
@@ -134,12 +145,6 @@ export function validateForm(data) {
    - Testare gli input
 
 ## Collegamenti tra versioni di security.md
-* [security.md](laravel/Modules/Gdpr/docs/packages/security.md)
-* [security.md](laravel/Modules/Cms/docs/frontoffice/security.md)
-* [security.md](laravel/Themes/One/docs/security.md)
-<<<<<<< HEAD
-* [security.md](laravel/modules/gdpr/docs/packages/security.md)
-* [security.md](laravel/modules/cms/docs/frontoffice/security.md)
-* [security.md](laravel/themes/one/docs/security.md)
-=======
->>>>>>> 6ed19256f (.)
+* [security.md](security.md)
+* [security.md](security.md)
+* [security.md](security.md)

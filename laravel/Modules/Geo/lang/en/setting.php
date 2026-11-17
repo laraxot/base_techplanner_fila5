@@ -4,62 +4,49 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-        'name' => 'Impostazioni Geo',
-        'plural' => 'Impostazioni Geo',
+        'name' => 'Geo Settings',
+        'plural' => 'Geo Settings',
         'group' => [
             'name' => 'Geo',
-            'description' => 'Configurazione del modulo geografico',
+            'description' => 'Geographic module configuration',
         ],
-        'label' => 'Impostazioni',
+        'label' => 'Settings',
         'sort' => '34',
         'icon' => 'ui-settings',
     ],
     'fields' => [
-<<<<<<< HEAD
         'default_map_provider' => [
             'label' => 'Provider Mappa Predefinito',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
-=======
-        'default_map_provider' => 'Provider Mappa Predefinito',
->>>>>>> 6ed19256f (.)
         'api_keys' => [
             'google_maps' => 'API Key Google Maps',
             'mapbox' => 'API Key Mapbox',
             'here' => 'API Key HERE Maps',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'default_location' => [
             'lat' => 'Latitudine Predefinita',
             'lng' => 'Longitudine Predefinita',
             'zoom' => 'Zoom Predefinito',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'display_options' => [
-            'units' => 'Unità di Misura',
-            'language' => 'Lingua Mappe',
+            'units' => 'Measurement Units',
+            'language' => 'Map Language',
             'theme' => 'Tema Mappe',
-<<<<<<< HEAD
             'label' => '',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'providers' => [
@@ -72,11 +59,6 @@ return [
         'metric' => 'Metrico',
         'imperial' => 'Imperiale',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

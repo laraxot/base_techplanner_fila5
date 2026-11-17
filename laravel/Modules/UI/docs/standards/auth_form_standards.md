@@ -1,3 +1,10 @@
+---
+title: "Standard Form di Autenticazione"
+qmd: "ui standards auth form standards md"
+type: note
+tags: [documentation]
+---
+
 # Standard Form di Autenticazione
 
 ## Principi di Design

@@ -1,12 +1,16 @@
-<<<<<<< HEAD
 ---
-module: theme
-topic: stream-1
-canonical: ../../../Themes/docs/shared-components/stream-1.md
+issues: []
+discussions: []
+title: "Stream 1"
+module: "Media"
+type: concept
+tags: [stream, 1]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "stream 1"
+related:
+  - "./webm.md"
 ---
-
-See canonical documentation: ../../../Themes/docs/shared-components/stream-1.md
-=======
 https://laravel-news.com/temporary-directory
 
 -----------------------------------------------
@@ -29,4 +33,3 @@ Http::sink($tmpPath)->throw()->get($videoUrl->toString());
 $tmpFile->delete();
 
 ----------------------------------------------------------------------------
->>>>>>> 6ed19256f (.)

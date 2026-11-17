@@ -33,7 +33,7 @@ jobs:
           # Get all commit messages in the PR
           git fetch origin main
           COMMITS=$(git rev-list HEAD ^origin/main)
-          
+
           # Create commitlint config
           cat > .commitlintrc.js << 'EOF'
           module.exports = {
@@ -63,7 +63,7 @@ jobs:
                 'always',
                 [
                   'Activity',
-                  'Chart', 
+                  'Chart',
                   'CloudStorage',
                   'Cms',
                   'DbForge',
@@ -74,7 +74,7 @@ jobs:
                   'Limesurvey',
                   'Media',
                   'Notify',
-                  'Quaeris',
+                  '<nome progetto>',
                   'Tenant',
                   'UI',
                   'User',
@@ -114,18 +114,18 @@ jobs:
               repo: context.repo.repo,
               body: `
               ## 🔍 Commit Message Validation Failed
-              
+
               Your pull request contains commit messages that don't follow the [Conventional Commits](https://www.conventionalcommits.org/) standard.
-              
+
               ### Expected Format:
               \`\`\`
               <type>[optional scope]: <description>
-              
+
               [optional body]
-              
+
               [optional footer(s)]
               \`\`\`
-              
+
               ### Available Types:
               - \`feat\`: New feature
               - \`fix\`: Bug fix
@@ -140,16 +140,16 @@ jobs:
               - \`revert\`: Reverting changes
               - \`release\`: Release operations
               - \`module\`: Module-specific changes
-              
+
               ### Available Scopes:
-              \`Activity\`, \`Chart\`, \`CloudStorage\`, \`Cms\`, \`DbForge\`, \`Gdpr\`, \`Geo\`, \`Job\`, \`Lang\`, \`Limesurvey\`, \`Media\`, \`Notify\`, \`Quaeris\`, \`Tenant\`, \`UI\`, \`User\`, \`Xot\`, \`core\`, \`deps\`, \`config\`
-              
+              \`Activity\`, \`Chart\`, \`CloudStorage\`, \`Cms\`, \`DbForge\`, \`Gdpr\`, \`Geo\`, \`Job\`, \`Lang\`, \`Limesurvey\`, \`Media\`, \`Notify\`, \`<nome progetto>\`, \`Tenant\`, \`UI\`, \`User\`, \`Xot\`, \`core\`, \`deps\`, \`config\`
+
               ### Examples:
               - \`feat(User): add authentication API\`
               - \`fix(Limesurvey): resolve import timeout issue\`
               - \`docs: update installation guide\`
               - \`chore: update dependencies\`
-              
+
               Please fix your commit messages and push again.
               `
             });
@@ -162,10 +162,10 @@ jobs:
         with:
           script: |
             const title = context.payload.pull_request.title;
-            
+
             // Check if title follows conventional commit format
             const conventionalCommitRegex = /^(feat|fix|docs|style|refactor|perf|test|chore|build|ci|revert|release|module)(\(.+\))?: .+$/;
-            
+
             if (!conventionalCommitRegex.test(title)) {
               await github.rest.issues.createComment({
                 issue_number: context.issue.number,
@@ -173,24 +173,24 @@ jobs:
                 repo: context.repo.repo,
                 body: `
                 ## ⚠️ PR Title Format Issue
-                
+
                 Your PR title should follow the conventional commit format:
-                
+
                 \`\`\`
                 <type>[optional scope]: <description>
                 \`\`\`
-                
+
                 **Current title:** \`${title}\`
-                
+
                 **Suggested format examples:**
                 - \`feat(User): add authentication API\`
                 - \`fix(Limesurvey): resolve import timeout\`
                 - \`docs: update configuration guide\`
-                
+
                 Please update your PR title.
                 `
               });
-              
+
               // Add a label to indicate the issue
               await github.rest.issues.addLabels({
                 issue_number: context.issue.number,

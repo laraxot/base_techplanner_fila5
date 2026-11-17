@@ -5,29 +5,20 @@ declare(strict_types=1);
 return [
     'navigation' => [
         'label' => 'Send SMS',
-        'group' => 'Test',
-    ],
+        'group' => 'Test'],
     'fields' => [
         'to' => [
             'label' => 'Recipient',
             'placeholder' => 'Enter phone number',
             'helper_text' => 'Enter phone number with international prefix (e.g. +1)',
-<<<<<<< HEAD
             'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'message' => [
             'label' => 'Message',
             'placeholder' => 'Enter message text',
             'helper_text' => 'Message cannot exceed 160 characters',
-<<<<<<< HEAD
             'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
+            'description' => ''],
         'driver' => [
             'label' => 'Provider',
             'placeholder' => 'Select SMS provider',
@@ -38,28 +29,15 @@ return [
                 'nexmo' => 'Nexmo',
                 'plivo' => 'Plivo',
                 'gammu' => 'Gammu',
-                'netfun' => 'Netfun',
-            ],
-<<<<<<< HEAD
+                'netfun' => 'Netfun'],
             'tooltip' => '',
-            'description' => '',
-=======
->>>>>>> 6ed19256f (.)
-        ],
-    ],
+            'description' => '']],
     'actions' => [
         'send' => [
             'label' => 'Send SMS',
-            'tooltip' => 'Send an SMS message to the recipient',
-        ],
-    ],
+            'tooltip' => 'Send an SMS message to the recipient']],
     'messages' => [
         'success' => 'SMS sent successfully',
-        'error' => 'Error sending SMS: :error',
-    ],
-<<<<<<< HEAD
+        'error' => 'Error sending SMS: :error'],
     'label' => 'Missing Label',
-    'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
-];
+    'plural_label' => 'Missing Plural label'];

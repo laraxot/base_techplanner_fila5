@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Modules\Comment\Http\Livewire;
 
 use Illuminate\Contracts\View\View;
+use Illuminate\Support\Facades\View as ViewFacade;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Livewire\Component;
 use Modules\Comment\Models\Comment;
@@ -162,10 +163,12 @@ class CommentComponent extends Component
             blade;
         }
 
-        /** @var view-string $viewName */
+        /**
+         * @phpstan-var view-string
+         */
         $viewName = 'comment::livewire.comment';
 
-        return view($viewName, [
+        return ViewFacade::make($viewName, [
             'comment' => $this->comment,
         ]);
     }

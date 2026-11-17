@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 return [
     'title' => 'Pannello di Amministrazione',
+    'back_to_main_panel' => 'Pannello principale',
+    'sidebar_types' => [
+        'admin' => 'Amministrazione',
+        'customer' => 'Area clienti',
+    ],
     'description' => 'Gestione del pannello di amministrazione',
     'navigation' => [
         'dashboard' => 'Dashboard',
@@ -102,7 +107,6 @@ return [
         'updated_at' => 'Aggiornato il',
         'deleted_at' => 'Eliminato il',
     ],
-<<<<<<< HEAD
     'label' => 'Panel',
     'plural_label' => 'Panel (Plurale)',
     'fields' => [
@@ -125,6 +129,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

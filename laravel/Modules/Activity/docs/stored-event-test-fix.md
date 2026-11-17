@@ -1,3 +1,10 @@
+---
+title: "StoredEvent Business Logic Test Fix"
+qmd: "activity stored event test fix md"
+type: note
+tags: [documentation]
+---
+
 # StoredEvent Business Logic Test Fix
 
 ## Problema Identificato
@@ -253,11 +260,6 @@ test('stored event has query builder methods documented', function (): void {
 ---
 
 **Data:** 2026-01-10
-<<<<<<< HEAD
 **Data:** [DATE]
 **Stato:** Pronto per implementazione
 **Test Type:** Behavior > Implementation ✅
-=======
-**Stato:** Pronto per implementazione
-**Test Type:** Behavior > Implementation ✅
->>>>>>> 6ed19256f (.)

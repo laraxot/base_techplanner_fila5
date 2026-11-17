@@ -1,3 +1,10 @@
+---
+title: "Regole di Naming nei Moduli"
+qmd: "ui archive naming rules 1 md"
+type: note
+tags: [documentation]
+---
+
 # Regole di Naming nei Moduli
 
 ## Regola: No Nomi Specifici dell'Applicazione

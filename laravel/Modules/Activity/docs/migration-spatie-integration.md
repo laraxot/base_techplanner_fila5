@@ -1,3 +1,10 @@
+---
+title: "Migration Spatie Activity Log Integration"
+qmd: "activity migration spatie integration md"
+type: note
+tags: [documentation]
+---
+
 # Migration Spatie Activity Log Integration
 
 ## Gestione Tabella activity_log
@@ -126,4 +133,8 @@ Per activity_log, il nome corretto è `create_activity_log_table.php`, non `fix_
 - [Xot Migration Philosophy](../../Xot/docs/migration-philosophy.md)
 - [Root Migration Rules](../../../.windsurf/rules/migration-complete-rules.md)
 
+*
+
 *Ultimo aggiornamento: 2026-02-26*
+
+*=======

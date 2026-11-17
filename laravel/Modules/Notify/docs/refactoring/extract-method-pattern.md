@@ -1,14 +1,19 @@
+---
+title: "extract method pattern"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "extract method pattern"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🧘 Pattern: Extract Method (Clean Code)
 
-<<<<<<< HEAD
 **Status**: ✅ Pattern Consolidato  
-**Data**: 19 Dicembre 2025  
 **Modulo**: Notify  
-=======
-**Status**: ✅ Pattern Consolidato
-**Data**: 19 Dicembre 2025
-**Modulo**: Notify
->>>>>>> 6ed19256f (.)
 **Filosofia**: Clean Code, SRP, Leggibilità
 
 ## 🕉️ Filosofia
@@ -179,11 +184,7 @@ private function sendNoChannelsNotification(): void
 
 ### 1. Leggibilità Migliorata
 
-<<<<<<< HEAD
 **Prima**: Metodo di 50+ righe, difficile da seguire  
-=======
-**Prima**: Metodo di 50+ righe, difficile da seguire
->>>>>>> 6ed19256f (.)
 **Dopo**: Metodo principale di 20 righe, logica chiaramente separata
 
 ```php
@@ -224,7 +225,6 @@ Metodi piccoli e focalizzati sono più facili da testare:
 test('getChannelsFromValues converts valid channel strings to ChannelEnum', function () {
     $action = new SendRecordsNotificationBulkAction();
     $values = ['mail', 'sms', 'whatsapp'];
-<<<<<<< HEAD
     
     $reflection = new ReflectionClass($action);
     $method = $reflection->getMethod('getChannelsFromValues');
@@ -232,15 +232,6 @@ test('getChannelsFromValues converts valid channel strings to ChannelEnum', func
     
     $result = $method->invoke($action, $values);
     
-=======
-
-    $reflection = new ReflectionClass($action);
-    $method = $reflection->getMethod('getChannelsFromValues');
-    $method->setAccessible(true);
-
-    $result = $method->invoke($action, $values);
-
->>>>>>> 6ed19256f (.)
     expect($result)->toHaveCount(3);
     expect($result[0])->toBeInstanceOf(ChannelEnum::class);
 });
@@ -351,11 +342,7 @@ class MyBulkAction extends XotBaseBulkAction
     protected function setUp(): void
     {
         parent::setUp();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         $this->label(...)
             ->action(function (Collection $records, array $data): void {
                 $this->processRecords($records, $data);
@@ -468,15 +455,10 @@ Prima di estrarre metodi:
 - [SendRecordsNotificationBulkAction](../../app/Filament/Actions/SendRecordsNotificationBulkAction.php) - Implementazione esempio
 - [DRY Composition Pattern](./dry-composition-pattern.md) - Pattern composizione Actions
 - [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md) - Pattern per chiamate Actions
+- [DRY Composition Pattern](../dry-composition-pattern.md) - Pattern composizione Actions
+- [Actions Calling Actions Pattern](../actions-calling-actions-pattern.md) - Pattern per chiamate Actions
 
 ---
-
-<<<<<<< HEAD
 **Ultimo aggiornamento**: 19 Dicembre 2025  
 **Filosofia**: *"Small methods, clear names, single responsibility - the path to maintainable code"*  
 **Pattern**: Extract Method (Clean Code Refactoring)
-=======
-**Ultimo aggiornamento**: 19 Dicembre 2025
-**Filosofia**: *"Small methods, clear names, single responsibility - the path to maintainable code"*
-**Pattern**: Extract Method (Clean Code Refactoring)
->>>>>>> 6ed19256f (.)

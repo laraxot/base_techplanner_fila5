@@ -1,4 +1,5 @@
 ---
+qmd: "ui wiki commands index md"
 title: "Commands Index"
 type: index
 created: 2026-05-11

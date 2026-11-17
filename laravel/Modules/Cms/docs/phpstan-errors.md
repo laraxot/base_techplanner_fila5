@@ -1,10 +1,17 @@
+---
+title: "phpstan errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors"
+issues: []
+discussions: []
+---
+
 # PHPStan Errors - Cms Module
 
-**Date**: 2025-12-16
-<<<<<<< HEAD
 **Date**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 **PHPStan Level**: 10
 **Total Errors in Module**: ~15
 
@@ -20,6 +27,14 @@
 
 ---
 
+title: "phpstan errors"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan errors"
+issues: []
+discussions: []
 ## File: app/Http/View/Composers/XotComposer.php
 
 ### Error: Class Not Found
@@ -40,7 +55,7 @@ Code is calling `App\Models\User` but this class doesn't exist in this codebase.
 use App\Models\User;
 
 // ✅ CORRECT - Option 1: Use module User
-use Modules\User\Models\User;
+use Modules\Xot\Contracts\UserContract;
 
 // ✅ CORRECT - Option 2: Use contract
 use Modules\Xot\Contracts\UserContract;
@@ -332,20 +347,12 @@ Same as Error 1 - correct the import and add proper type hint.
 **Current**: 🔴 **15 errors** requiring fixes
 **Priority**: 🔥 **HIGH** - Core CMS functionality affected
 **Owner**: Cms Module Team
-**Last Updated**: 2025-12-16
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
 ---
 
 ## Related Documentation
 
 - [Spatie Laravel Data Documentation](https://spatie.be/docs/laravel-data)
 - [DataCollection Usage](https://spatie.be/docs/laravel-data/v3/as-a-data-transfer-object/collections)
-<<<<<<< HEAD
 - [UserContract Interface](../../Xot/Contracts/UserContract.php)
-=======
-- [UserContract Interface](../../Xot/Contracts/UserContract.php)
->>>>>>> 6ed19256f (.)

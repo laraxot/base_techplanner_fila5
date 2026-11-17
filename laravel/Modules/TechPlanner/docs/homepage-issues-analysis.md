@@ -208,7 +208,7 @@ Modules/TechPlanner/
 - [Homepage Fix Implementation](../../../../docs/homepage-fix-implementation.md)
 
 ### Module Documentation
-- [Contacts Column Implementation](./contacts-column-implementation-complete.md)
+- [Contacts Column Implementation](./filament/contacts-column-implementation-complete.md)
 
 ### Base Documentation
 - [Xot Module Structure](../../Xot/docs/structure.md)
@@ -218,8 +218,4 @@ Modules/TechPlanner/
 **Status**: ✅ Homepage completamente funzionante
 **Last Update**: 2024-12-27
 **Author**: Sistema di correzione automatica
-<<<<<<< HEAD
 **Next Steps**: Implementazione controller API e sistema di autenticazione
-=======
-**Next Steps**: Implementazione controller API e sistema di autenticazione
->>>>>>> 6ed19256f (.)

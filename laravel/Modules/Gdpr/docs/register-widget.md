@@ -1,3 +1,14 @@
+---
+title: "register widget"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "register widget"
+issues: []
+discussions: []
+---
+
 # RegisterWidget — GDPR-Compliant Registration
 
 > **Philosophy**: A high-conversion, flat-form registration logic that centralizes GDPR consent management within the `Gdpr` module, decoupled from standard `User` logic but perfectly integrated.

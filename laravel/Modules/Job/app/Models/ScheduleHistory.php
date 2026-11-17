@@ -1,7 +1,6 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see HusamTariq\FilamentDatabaseSchedule
  */
@@ -9,9 +8,9 @@ declare(strict_types=1);
 namespace Modules\Job\Models;
 
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Support\Carbon;
 use Modules\Job\Database\Factories\ScheduleHistoryFactory;
+use Modules\Job\Models\Traits\ScheduleHistoryRelations;
 use Modules\Xot\Contracts\ProfileContract;
 use Override;
 
@@ -30,10 +29,6 @@ use Override;
  * @property string|null $created_by
  * @property Carbon|null $deleted_at
  * @property string|null $deleted_by
-<<<<<<< HEAD
-=======
- *
->>>>>>> 6ed19256f (.)
  * @property-read ProfileContract|null $creator
  * @property-read ProfileContract|null $updater
  *
@@ -60,6 +55,8 @@ use Override;
  */
 class ScheduleHistory extends BaseModel
 {
+    use ScheduleHistoryRelations;
+
     /*
      * The database table used by the model.
      *
@@ -90,11 +87,9 @@ class ScheduleHistory extends BaseModel
      *
      */
 
-    public function command(): BelongsTo
-    {
-        return $this->belongsTo(Schedule::class, 'schedule_id', 'id');
-    }
-
+    /**
+     * @return array<string, string>
+     */
     #[Override]
     protected function casts(): array
     {

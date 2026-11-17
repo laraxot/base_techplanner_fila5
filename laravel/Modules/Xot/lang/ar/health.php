@@ -8,27 +8,16 @@ return [
             'buttons' => [
                 'refresh' => 'تحديث',
             ],
-<<<<<<< HEAD
             'heading' => 'حالة النظام',
-=======
-
-            'heading' => 'حالة النظام',
-
->>>>>>> 6ed19256f (.)
             'navigation' => [
                 'group' => 'إعدادات',
                 'label' => 'حالة النظام',
             ],
-<<<<<<< HEAD
-=======
-
->>>>>>> 6ed19256f (.)
             'notifications' => [
                 'check_results' => 'تمت عملية الفحص',
             ],
         ],
     ],
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
@@ -38,10 +27,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
->>>>>>> 6ed19256f (.)
 ];

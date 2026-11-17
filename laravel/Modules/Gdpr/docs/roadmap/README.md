@@ -1,3 +1,14 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+---
+
 # Gdpr Module Roadmap
 
 > "GDPR compliance system for the Laraxot ecosystem with data protection, consent management, and privacy features."
@@ -58,3 +69,11 @@ Provide a **complete GDPR compliance** toolkit that includes:
 
 ---
 
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []

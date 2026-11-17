@@ -1,3 +1,14 @@
+---
+title: "structure"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "structure"
+issues: []
+discussions: []
+---
+
 # Struttura del Modulo CMS
 
 ## Directory Principali
@@ -88,19 +99,14 @@ Modules/Cms/
 6. Aggiornare i riferimenti nelle routes
 
 ## Collegamenti Bidirezionali
-- [README](README.md) - Documentazione principale del modulo
-<<<<<<< HEAD
 - [README](readme.md) - Documentazione principale del modulo
-=======
->>>>>>> 6ed19256f (.)
-- [Architettura](architecture.md) - Architettura del sistema CMS
+- [Architettura](../frontoffice/architecture.md) - Architettura del sistema CMS
 - [Struttura Moduli Laravel](struttura-moduli-laravel.md) - Struttura standard dei moduli Laravel
 - [Namespace Moduli](namespace-moduli-laravel-<nome progetto>.md) - Convenzioni di namespace
 - [Struttura Route e Viste](struttura-route-e-viste.md) - Organizzazione di route e viste
 
 ## Vedi Anche
-<<<<<<< HEAD
-- [Modulo Xot](../xot/docs/readme.md) - Struttura base dei moduli
+- [Modulo Xot](../../../Xot/docs/README.md) - Struttura base dei moduli
 - [Documentazione Laravel](https://laravel.com/docs/structure.html) - Struttura standard Laravel
 ## Collegamenti tra versioni di structure.md
 * [structure.md](bashscripts/docs/structure.md)
@@ -119,28 +125,3 @@ Modules/Cms/
 * [structure.md](laravel/modules/cms/docs/structure.md)
 * [structure.md](laravel/modules/cms/docs/themes/structure.md)
 * [structure.md](laravel/modules/cms/docs/components/structure.md)
-=======
->>>>>>> 6ed19256f (.)
-- [Modulo Xot](../Xot/docs/README.md) - Struttura base dei moduli
-- [Documentazione Laravel](https://laravel.com/docs/structure.html) - Struttura standard Laravel
-## Collegamenti tra versioni di structure.md
-* [structure.md](bashscripts/docs/structure.md)
-* [structure.md](laravel/Modules/Gdpr/docs/structure.md)
-* [structure.md](laravel/Modules/Notify/docs/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/base/structure.md)
-* [structure.md](laravel/Modules/Xot/docs/config/structure.md)
-* [structure.md](laravel/Modules/User/docs/structure.md)
-* [structure.md](laravel/Modules/UI/docs/structure.md)
-* [structure.md](laravel/Modules/Lang/docs/structure.md)
-* [structure.md](laravel/Modules/Job/docs/structure.md)
-* [structure.md](laravel/Modules/Media/docs/structure.md)
-* [structure.md](laravel/Modules/Tenant/docs/structure.md)
-* [structure.md](laravel/Modules/Activity/docs/structure.md)
-* [structure.md](laravel/Modules/Cms/docs/structure.md)
-* [structure.md](laravel/Modules/Cms/docs/themes/structure.md)
-<<<<<<< HEAD
-* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
-=======
-* [structure.md](laravel/Modules/Cms/docs/components/structure.md)
->>>>>>> 6ed19256f (.)

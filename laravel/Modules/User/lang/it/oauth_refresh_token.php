@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 return [
     'navigation' => [
-<<<<<<< HEAD
         'label' => 'Refresh Token OAuth',
         'plural_label' => 'Refresh Token OAuth',
         'group' => 'OAuth',
@@ -46,6 +45,11 @@ return [
             'helper_text' => 'Data e ora di creazione del token',
             'description' => 'Timestamp di creazione',
         ],
+        'accessToken' => [
+            'id' => [
+                'label' => 'accessToken.id',
+            ],
+        ],
     ],
     'actions' => [
         'revoke' => [
@@ -54,31 +58,16 @@ return [
             'helper_text' => 'Revoca questo refresh token',
             'description' => 'Azione per revocare',
             'success' => 'Refresh token revocato con successo',
+            'icon' => 'revoke',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
+        'create' => [
+            'icon' => 'create',
         ],
     ],
     'messages' => [
         'revoked' => 'Refresh token revocato con successo',
     ],
-=======
-        'name' => 'OAuth Refresh Token',
-        'plural' => 'OAuth Refresh Tokens',
-        'label' => 'OAuth Refresh Tokens',
-        'group' => [
-            'name' => 'API',
-            'description' => 'Gestione OAuth Refresh Tokens',
-        ],
-        'icon' => 'heroicon-o-arrow-path',
-        'sort' => 27,
-    ],
-    'actions' => [
-        'logout' => [
-            'tooltip' => 'logout',
-            'icon' => 'logout',
-            'label' => 'logout',
-        ],
-    ],
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,14 @@
+---
+title: "content blocks"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "content blocks"
+issues: []
+discussions: []
+---
+
 # Blocchi di Contenuto
 
 ## Panoramica
@@ -201,10 +212,5 @@ class SocialBlock extends Block
 
 - [Documentazione Filament](../filament-resources.md)
 - [Gestione Contenuti](../content-storage.md)
-- [Best Practices UI](../../UI/docs/best-practices.md)
-- [Documentazione Blocchi](../../Xot/docs/blocks.md)
-<<<<<<< HEAD
-- [Best Practices UI](../../ui/docs/best-practices.md)
+- [Best Practices UI](../best-practices.md)
 - [Documentazione Blocchi](../../xot/docs/blocks.md)
-=======
->>>>>>> 6ed19256f (.)

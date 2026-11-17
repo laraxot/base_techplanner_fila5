@@ -1,3 +1,14 @@
+---
+title: "register type test implementation"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "register type test implementation"
+issues: []
+discussions: []
+---
+
 # Register Type Test Implementation - Modulo Cms
 
 ## 🎯 Overview
@@ -250,14 +261,7 @@ expect()->extend('toHaveDynamicHeading', function (string $type) {
 - [RegistrationWidget Documentation](../../../User/docs/filament/widgets/registration-widget.md)
 - [Folio Pages Implementation](../folio-pages.md)
 - [Login Test Implementation](./login-test-implementation.md)
-- [Test Organization Rules](../../../docs/test-organization-rules.md)
-<<<<<<< HEAD
-- [RegistrationWidget Documentation](../../../user/docs/filament/widgets/registration-widget.md)
-- [Folio Pages Implementation](../folio-pages.md)
-- [Login Test Implementation](./login-test-implementation.md)
 - [Test Organization Rules](../../../../docs/test-organization-rules.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### File Correlati
 - **Page**: `/Themes/One/resources/views/pages/auth/[type]/register.blade.php`
@@ -278,10 +282,5 @@ expect()->extend('toHaveDynamicHeading', function (string $type) {
 3. **Database Seeding**: Seed data per test realistici
 4. **Monitoring**: Metriche test in CI/CD
 
-*Ultimo aggiornamento: Gennaio 2025*
 *Versione PestPHP: 2.x*
-<<<<<<< HEAD
 *Compatibilità Laravel: 11.x*
-=======
-*Compatibilità Laravel: 11.x*
->>>>>>> 6ed19256f (.)

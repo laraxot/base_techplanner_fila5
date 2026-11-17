@@ -1,3 +1,15 @@
+---
+title: "filament resource pages architecture"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament resource pages architecture"
+issues: []
+discussions: []
+status: draft
+---
+
 # Architettura delle Pagine di Risorse Filament
 
 ## Regola Fondamentale
@@ -107,28 +119,18 @@ Le classi base XotBase già implementano la maggior parte delle funzionalità ne
 Per verificare che tutte le pagine di risorse seguano questo pattern:
 
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
 find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
 find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
-=======
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
-find /var/www/html/saluteora/laravel/Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti
 
 - [Filament Resources Documentation](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
 - [ XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-<<<<<<< HEAD
 - [<nome progetto> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-- [ XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-- [<nome progetto> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-=======
-- [SaluteOra XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
->>>>>>> 6ed19256f (.)
+- [ XotBase Architecture](./filament_xot_architecture.md)
+- [<nome progetto> XotBase Architecture](./filament_xot_architecture.md)
 - [Pattern Architetturali in Laravel](https://laravel.com/docs/architecture)
 # Architettura delle Pagine di Risorse Filament
 
@@ -239,20 +241,12 @@ Le classi base XotBase già implementano la maggior parte delle funzionalità ne
 Per verificare che tutte le pagine di risorse seguano questo pattern:
 
 ```bash
-<<<<<<< HEAD
 find Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
-=======
-find /var/www/html/<directory progetto>/laravel/Modules -type f -name "*.php" -path "*/Filament/Resources/*/Pages/*" -exec grep -l "extends.*\\\\Filament\\\\Resources\\\\Pages" {} \;
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti
 
 - [Filament Resources Documentation](https://filamentphp.com/docs/3.x/panels/resources/getting-started)
 - [<main module> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
-<<<<<<< HEAD
-- [<main module> XotBase Architecture](./FILAMENT_XOT_ARCHITECTURE.md)
+- [<main module> XotBase Architecture](./filament_xot_architecture.md)
 - [Pattern Architetturali in Laravel](https://laravel.com/docs/architecture)
-=======
-- [Pattern Architetturali in Laravel](https://laravel.com/docs/architecture)
->>>>>>> 6ed19256f (.)

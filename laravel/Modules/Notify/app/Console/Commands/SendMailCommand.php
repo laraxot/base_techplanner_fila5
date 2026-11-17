@@ -13,21 +13,11 @@ class SendMailCommand extends Command
 {
     /**
      * The name and signature of the console command.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $signature = 'notify:send-mail';
 
     /**
      * The console command description.
-<<<<<<< HEAD
-=======
-     *
-     * @var string
->>>>>>> 6ed19256f (.)
      */
     protected $description = 'Send an email using user-provided details';
 
@@ -37,7 +27,7 @@ class SendMailCommand extends Command
     public function handle(): int
     {
         Assert::string($from = config('mail.from.name', 'Default Sender'));
-        Assert::string($from_email = config('mail.from.address', 'default@example.com'));
+        Assert::string($from_email = config('mail.from.address', 'noreply@fixcity.eu'));
         $data = [];
         $data['recipient'] = $this->ask('Enter the recipient\'s email address');
         $data['subject'] = $this->ask('Enter the subject of the email');

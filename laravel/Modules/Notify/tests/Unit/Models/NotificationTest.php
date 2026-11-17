@@ -7,10 +7,11 @@ namespace Modules\Notify\Tests\Unit\Models;
 use Modules\Notify\Models\Notification;
 use Modules\Notify\Tests\TestCase;
 
+use function Safe\json_encode;
+
+uses(TestCase::class);
 class NotificationTest extends TestCase
 {
-    // DatabaseTransactions is already used in the module TestCase
-
     protected function setUp(): void
     {
         parent::setUp();
@@ -80,6 +81,7 @@ class NotificationTest extends TestCase
         $notification = new Notification;
 
         $expectedCasts = [
+            'id' => 'int',
             'read_at' => 'datetime',
             'sent_at' => 'datetime',
             'data' => 'array',
@@ -89,7 +91,7 @@ class NotificationTest extends TestCase
             'deleted_at' => 'datetime',
         ];
 
-        $this->assertEquals($expectedCasts, $notification->casts());
+        $this->assertEquals($expectedCasts, $notification->getCasts());
     }
 
     /** @test */
@@ -123,8 +125,8 @@ class NotificationTest extends TestCase
         $this->assertEquals('Welcome to our platform', $notification->data['title']);
         $this->assertEquals('Thank you for joining us!', $notification->data['body']);
         $this->assertEquals('high', $notification->data['priority']);
-        $this->assertEquals('registration', $notification->data['metadata']['source']);
-        $this->assertEquals(['welcome', 'onboarding'], $notification->data['metadata']['tags']);
+        $this->assertEquals('registration', TestCase::notifyArrayGet($notification->data, 'metadata', 'source'));
+        $this->assertEquals(['welcome', 'onboarding'], TestCase::notifyArrayGet($notification->data, 'metadata', 'tags'));
     }
 
     /** @test */
@@ -163,10 +165,10 @@ class NotificationTest extends TestCase
 
         $notification->update(['read_at' => now()]);
 
-        $this->assertNotNull($notification->fresh()->read_at);
+        $this->assertNotNull($notification->refresh()->read_at);
         $this->assertDatabaseHas('notifications', [
             'id' => $notification->id,
-            'read_at' => $notification->fresh()->read_at,
+            'read_at' => $notification->refresh()->read_at,
         ]);
     }
 
@@ -186,11 +188,11 @@ class NotificationTest extends TestCase
             'status' => 'sent',
         ]);
 
-        $this->assertNotNull($notification->fresh()->sent_at);
-        $this->assertEquals('sent', $notification->fresh()->status);
+        $this->assertNotNull($notification->refresh()->sent_at);
+        $this->assertEquals('sent', $notification->refresh()->status);
         $this->assertDatabaseHas('notifications', [
             'id' => $notification->id,
-            'sent_at' => $notification->fresh()->sent_at,
+            'sent_at' => $notification->refresh()->sent_at,
             'status' => 'sent',
         ]);
     }
@@ -218,10 +220,10 @@ class NotificationTest extends TestCase
             'status' => 'sent',
         ]);
 
-        $this->assertEquals('Updated message', $notification->fresh()->message);
-        $this->assertEquals('warning', $notification->fresh()->type);
-        $this->assertEquals('sent', $notification->fresh()->status);
-        $this->assertEquals(['updated' => true], $notification->fresh()->data);
+        $this->assertEquals('Updated message', $notification->refresh()->message);
+        $this->assertEquals('warning', $notification->refresh()->type);
+        $this->assertEquals('sent', $notification->refresh()->status);
+        $this->assertEquals(['updated' => true], $notification->refresh()->data);
     }
 
     /** @test */
@@ -249,9 +251,9 @@ class NotificationTest extends TestCase
         $this->assertCount(1, $infoNotifications);
         $this->assertCount(1, $warningNotifications);
         $this->assertCount(1, $errorNotifications);
-        $this->assertEquals('info', $infoNotifications[0]->type);
-        $this->assertEquals('warning', $warningNotifications[0]->type);
-        $this->assertEquals('error', $errorNotifications[0]->type);
+        $this->assertEquals('info', $infoNotifications->firstOrFail()->type);
+        $this->assertEquals('warning', $warningNotifications->firstOrFail()->type);
+        $this->assertEquals('error', $errorNotifications->firstOrFail()->type);
     }
 
     /** @test */
@@ -282,9 +284,9 @@ class NotificationTest extends TestCase
         $this->assertCount(1, $pendingNotifications);
         $this->assertCount(1, $sentNotifications);
         $this->assertCount(1, $failedNotifications);
-        $this->assertEquals('pending', $pendingNotifications[0]->status);
-        $this->assertEquals('sent', $sentNotifications[0]->status);
-        $this->assertEquals('failed', $failedNotifications[0]->status);
+        $this->assertEquals('pending', $pendingNotifications->firstOrFail()->status);
+        $this->assertEquals('sent', $sentNotifications->firstOrFail()->status);
+        $this->assertEquals('failed', $failedNotifications->firstOrFail()->status);
     }
 
     /** @test */
@@ -313,9 +315,9 @@ class NotificationTest extends TestCase
 
         $this->assertCount(2, $tenant1Notifications);
         $this->assertCount(1, $tenant2Notifications);
-        $this->assertEquals(1, $tenant1Notifications[0]->tenant_id);
-        $this->assertEquals(1, $tenant1Notifications[1]->tenant_id);
-        $this->assertEquals(2, $tenant2Notifications[0]->tenant_id);
+        $this->assertEquals(1, $tenant1Notifications->firstOrFail()->tenant_id);
+        $this->assertEquals(1, $tenant1Notifications->skip(1)->firstOrFail()->tenant_id);
+        $this->assertEquals(2, $tenant2Notifications->firstOrFail()->tenant_id);
     }
 
     /** @test */
@@ -344,9 +346,9 @@ class NotificationTest extends TestCase
 
         $this->assertCount(2, $user123Notifications);
         $this->assertCount(1, $user456Notifications);
-        $this->assertEquals(123, $user123Notifications[0]->user_id);
-        $this->assertEquals(123, $user123Notifications[1]->user_id);
-        $this->assertEquals(456, $user456Notifications[0]->user_id);
+        $this->assertEquals(123, $user123Notifications->firstOrFail()->user_id);
+        $this->assertEquals(123, $user123Notifications->skip(1)->firstOrFail()->user_id);
+        $this->assertEquals(456, $user456Notifications->firstOrFail()->user_id);
     }
 
     /** @test */
@@ -378,9 +380,9 @@ class NotificationTest extends TestCase
 
         $this->assertCount(2, $userSubjectNotifications);
         $this->assertCount(1, $companySubjectNotifications);
-        $this->assertEquals('App\Models\User', $userSubjectNotifications[0]->subject_type);
-        $this->assertEquals('App\Models\User', $userSubjectNotifications[1]->subject_type);
-        $this->assertEquals('App\Models\Company', $companySubjectNotifications[0]->subject_type);
+        $this->assertEquals('App\Models\User', $userSubjectNotifications->firstOrFail()->subject_type);
+        $this->assertEquals('App\Models\User', $userSubjectNotifications->skip(1)->firstOrFail()->subject_type);
+        $this->assertEquals('App\Models\Company', $companySubjectNotifications->firstOrFail()->subject_type);
     }
 
     /** @test */
@@ -448,8 +450,8 @@ class NotificationTest extends TestCase
 
         $this->assertCount(1, $highPriorityNotifications);
         $this->assertCount(1, $securityNotifications);
-        $this->assertEquals('high', $highPriorityNotifications[0]->data['priority']);
-        $this->assertEquals('security', $securityNotifications[0]->data['category']);
+        $this->assertEquals('high', $highPriorityNotifications->firstOrFail()->data['priority']);
+        $this->assertEquals('security', $securityNotifications->firstOrFail()->data['category']);
     }
 
     /** @test */
@@ -478,9 +480,9 @@ class NotificationTest extends TestCase
 
         $this->assertCount(2, $unreadNotifications);
         $this->assertCount(1, $readNotifications);
-        $this->assertNull($unreadNotifications[0]->read_at);
-        $this->assertNull($unreadNotifications[1]->read_at);
-        $this->assertNotNull($readNotifications[0]->read_at);
+        $this->assertNull($unreadNotifications->firstOrFail()->read_at);
+        $this->assertNull($unreadNotifications->skip(1)->firstOrFail()->read_at);
+        $this->assertNotNull($readNotifications->firstOrFail()->read_at);
     }
 
     /** @test */
@@ -509,9 +511,9 @@ class NotificationTest extends TestCase
 
         $this->assertCount(2, $unsentNotifications);
         $this->assertCount(1, $sentNotifications);
-        $this->assertNull($unsentNotifications[0]->sent_at);
-        $this->assertNull($unsentNotifications[1]->sent_at);
-        $this->assertNotNull($sentNotifications[0]->sent_at);
+        $this->assertNull($unsentNotifications->firstOrFail()->sent_at);
+        $this->assertNull($unsentNotifications->skip(1)->firstOrFail()->sent_at);
+        $this->assertNotNull($sentNotifications->firstOrFail()->sent_at);
     }
 
     /** @test */
@@ -544,7 +546,7 @@ class NotificationTest extends TestCase
 
         $this->assertCount(1, $todayNotifications);
         $this->assertCount(2, $recentNotifications); // yesterday and today
-        $this->assertEquals('Today notification', $todayNotifications[0]->message);
+        $this->assertEquals('Today notification', $todayNotifications->firstOrFail()->message);
     }
 
     /** @test */
@@ -589,10 +591,10 @@ class NotificationTest extends TestCase
             ->get();
 
         $this->assertCount(1, $pendingHighPriorityTenant1);
-        $this->assertEquals('High priority security alert', $pendingHighPriorityTenant1[0]->message);
-        $this->assertEquals('pending', $pendingHighPriorityTenant1[0]->status);
-        $this->assertEquals(1, $pendingHighPriorityTenant1[0]->tenant_id);
-        $this->assertEquals('high', $pendingHighPriorityTenant1[0]->data['priority']);
+        $this->assertEquals('High priority security alert', $pendingHighPriorityTenant1->firstOrFail()->message);
+        $this->assertEquals('pending', $pendingHighPriorityTenant1->firstOrFail()->status);
+        $this->assertEquals(1, $pendingHighPriorityTenant1->firstOrFail()->tenant_id);
+        $this->assertEquals('high', $pendingHighPriorityTenant1->firstOrFail()->data['priority']);
     }
 
     /** @test */

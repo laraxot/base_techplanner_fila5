@@ -5,11 +5,7 @@ declare(strict_types=1);
 namespace Modules\Tenant\Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-<<<<<<< HEAD
-use Modules\User\Models\Tenant;
-=======
 use Modules\Tenant\Models\Tenant;
->>>>>>> 6ed19256f (.)
 
 /**
  * @extends Factory<Tenant>
@@ -43,6 +39,22 @@ class TenantFactory extends Factory
             'created_at' => $this->faker->dateTimeBetween('-1 year', 'now'),
             'updated_at' => $this->faker->dateTimeBetween('-1 month', 'now'),
         ];
+    }
+
+    /**
+     * Imposta i settings del tenant (merge con quelli di default).
+     *
+     * @param  array<string, mixed>  $settings
+     */
+    public function withSettings(array $settings): static
+    {
+        return $this->state(function (array $attributes) use ($settings): array {
+            $current = \is_array($attributes['settings'] ?? null) ? $attributes['settings'] : [];
+
+            return [
+                'settings' => array_merge($current, $settings),
+            ];
+        });
     }
 
     /**

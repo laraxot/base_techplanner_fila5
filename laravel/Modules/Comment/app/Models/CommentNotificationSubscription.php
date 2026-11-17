@@ -4,10 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Comment\Models;
 
-use Closure;
-use Illuminate\Contracts\Database\Query\Expression;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\Comment\Database\Factories\CommentNotificationSubscriptionFactory;
@@ -29,34 +26,15 @@ use Spatie\Comments\Models\CommentNotificationSubscription as BaseCommentNotific
  * @property string|null $deleted_by
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
- *
- * @method static CommentNotificationSubscriptionFactory factory($count = null, $state = [])
- * @method static Builder|CommentNotificationSubscription newModelQuery()
- * @method static Builder|CommentNotificationSubscription newQuery()
- * @method static Builder|CommentNotificationSubscription query()
- * @method static Builder|CommentNotificationSubscription whereCommentableId($value)
- * @method static Builder|CommentNotificationSubscription whereCommentableType($value)
- * @method static Builder|CommentNotificationSubscription whereCreatedAt($value)
- * @method static Builder|CommentNotificationSubscription whereCreatedBy($value)
- * @method static Builder|CommentNotificationSubscription whereDeletedAt($value)
- * @method static Builder|CommentNotificationSubscription whereDeletedBy($value)
- * @method static Builder|CommentNotificationSubscription whereId($value)
- * @method static Builder|CommentNotificationSubscription whereSubscriberId($value)
- * @method static Builder|CommentNotificationSubscription whereSubscriberType($value)
- * @method static Builder|CommentNotificationSubscription whereType($value)
- * @method static Builder|CommentNotificationSubscription whereUpdatedAt($value)
- * @method static Builder|CommentNotificationSubscription whereUpdatedBy($value)
- *
  * @property-read Model|\Eloquent $commentable
  * @property-read Model|\Eloquent $subscriber
  *
- * @method static CommentNotificationSubscription|null first()
- * @method static Collection<int, CommentNotificationSubscription> get()
- * @method static CommentNotificationSubscription create(array $attributes = [])
- * @method static CommentNotificationSubscription firstOrCreate(array $attributes = [], array $values = [])
- * @method static Builder<static>|CommentNotificationSubscription where((string|Closure) $column, mixed $operator = null, mixed $value = null, string $boolean = 'and')
- * @method static Builder<static>|CommentNotificationSubscription whereNotNull((string|Expression) $columns)
- * @method static int count(string $columns = '*')
+ * @method static CommentNotificationSubscriptionFactory factory($count = null, $state = [])
+ * @method static Builder<static> newModelQuery()
+ * @method static Builder<static> newQuery()
+ * @method static Builder<static> query()
+ * @method static CommentNotificationSubscription create(array<string, mixed> $attributes = [])
+ * @method static CommentNotificationSubscription firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
  *
  * @mixin \Eloquent
  */

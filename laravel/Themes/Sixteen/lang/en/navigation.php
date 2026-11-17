@@ -4,11 +4,7 @@ declare(strict_types=1);
 
 return [
     'main' => 'Main navigation',
-<<<<<<< HEAD
-    'site_title' => 'My Municipality',
-=======
-    'site_title' => '<nome progetto>',
->>>>>>> 6ed19256f (.)
+    'site_title' => 'FixCity',
     'home' => 'Home',
     'about' => 'About',
     'contact' => 'Contact',
@@ -16,7 +12,6 @@ return [
     'portfolio' => 'Portfolio',
     'news' => 'News',
     'blog' => 'Blog',
-<<<<<<< HEAD
 
     // Homepage sections
     'homepage' => [
@@ -29,6 +24,11 @@ return [
         'all_news' => 'All news',
         'events' => 'Living in the City',
         'all_events' => 'All events',
+        'featured_events' => 'Featured events',
+        'empty_events' => 'There are no published events yet.',
+        'related_events' => 'Related events',
+        'featured_locations' => 'Featured places',
+        'all_locations' => 'All places',
         'featured_topics' => 'Featured topics',
         'other_topics' => 'Other topics',
         'show_all' => 'Show all',
@@ -56,6 +56,4 @@ return [
         'report_issue' => 'Report a problem',
         'maybe_searching' => 'Perhaps you were looking for',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

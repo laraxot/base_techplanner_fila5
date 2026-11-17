@@ -1,3 +1,10 @@
+---
+title: "Componenti Filament UI"
+qmd: "ui archive filament components 1 md"
+type: note
+tags: [documentation]
+---
+
 # Componenti Filament UI
 
 ## Collegamenti Bidirezionali

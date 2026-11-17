@@ -7,21 +7,19 @@ namespace Modules\TechPlanner\Models;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Modules\TechPlanner\Database\Factories\ParticipantFactoryFactory;
+use Modules\TechPlanner\Database\Factories\ParticipantFactory;
 
 /**
- * @method static ParticipantFactoryFactory factory($count = null, $state = [])
+ * @method static \Modules\TechPlanner\Database\Factories\ParticipantFactory factory($count = null, $state = [])
  * @method static Builder<static>|Participant newModelQuery()
  * @method static Builder<static>|Participant newQuery()
  * @method static Builder<static>|Participant query()
-<<<<<<< HEAD
  *
-=======
->>>>>>> 6ed19256f (.)
  * @mixin \Eloquent
  */
 class Participant extends Model
 {
+    /** @use HasFactory<ParticipantFactory> */
     use HasFactory;
 
     /**
@@ -33,8 +31,8 @@ class Participant extends Model
         'phone',
     ];
 
-    protected static function newFactory(): ParticipantFactoryFactory
+    protected static function newFactory(): ParticipantFactory
     {
-        return ParticipantFactoryFactory::new();
+        return ParticipantFactory::new();
     }
 }

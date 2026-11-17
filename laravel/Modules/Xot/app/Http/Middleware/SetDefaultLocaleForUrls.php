@@ -1,17 +1,12 @@
 <?php
 
 declare(strict_types=1);
-
 /**
  * @see https://laravel.com/docs/11.x/urls#default-values
  */
 
 namespace Modules\Xot\Http\Middleware;
 
-<<<<<<< HEAD
-=======
-use Closure;
->>>>>>> 6ed19256f (.)
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\URL;
 use Symfony\Component\HttpFoundation\Response;
@@ -21,23 +16,13 @@ class SetDefaultLocaleForUrls
     /**
      * Handle an incoming request.
      *
-<<<<<<< HEAD
-     * @param \Closure(Request):Response $next
+     * @param  \Closure(Request):Response  $next
      */
     public function handle(Request $request, \Closure $next): Response
     {
         $user = $request->user();
         $lang = app()->getLocale();
-        if (null !== $user) {
-=======
-     * @param  Closure(Request):Response  $next
-     */
-    public function handle(Request $request, Closure $next): Response
-    {
-        $user = $request->user();
-        $lang = app()->getLocale();
         if ($user !== null) {
->>>>>>> 6ed19256f (.)
             $lang = $user->lang ?? app()->getLocale();
         }
 

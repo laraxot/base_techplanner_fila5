@@ -1,3 +1,10 @@
+---
+title: "Task: Filament v5 Alignment (UI Module)"
+qmd: "ui tasks filament v5 alignment md"
+type: note
+tags: [documentation]
+---
+
 # Task: Filament v5 Alignment (UI Module)
 
 ## 📋 Obiettivo

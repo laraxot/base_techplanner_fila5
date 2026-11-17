@@ -1,3 +1,14 @@
+---
+title: "testing business behavior supreme rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing business behavior supreme rule"
+issues: []
+discussions: []
+---
+
 # 🎯 REGOLA SUPREMA: TESTING BUSINESS BEHAVIOR ONLY
 
 ## LA REGOLA PIÙ IMPORTANTE DA RICORDARE SEMPRE
@@ -154,12 +165,15 @@ Quando sistemo un test esistente che non funziona:
 
 ---
 
+title: "testing business behavior supreme rule"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing business behavior supreme rule"
+issues: []
+discussions: []
 **Questa regola è SUPREMA e ha precedenza su qualsiasi altra considerazione di testing.**
 
-**Ultimo aggiornamento**: Gennaio 2025
 **Status**: REGOLA ASSOLUTA E NON NEGOZIABILE
-<<<<<<< HEAD
 **Applicabilità**: UNIVERSALE - ogni test, ogni modulo, ogni scenario
-=======
-**Applicabilità**: UNIVERSALE - ogni test, ogni modulo, ogni scenario
->>>>>>> 6ed19256f (.)

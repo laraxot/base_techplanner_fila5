@@ -1,9 +1,21 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # Segnalazioni Elenco - HTML Body Comparison Report
 
 ## Latest Comparison (2026-04-08)
 
-**Reference:** https://italia.github.io/design-comuni-pagine-statiche/sito/segnalazioni-elenco.html  
-**Local:** http://127.0.0.1:8000/it/tests/segnalazioni-elenco  
+**Reference:** https://italia.github.io/design-comuni-pagine-statiche/sito/ticket-list.html  
+**Local:** http://127.0.0.1:8000/it/tests/ticket-list  
 **Parity Score:** 28.9% ❌ (Target: 90%)
 
 ### Summary
@@ -41,3 +53,14 @@
 ## Tools
 - [bashscripts/html/compare-html-body.py](../../../bashscripts/html/compare-html-body.py) - Comparison engine
 - [bashscripts/docs/index.md](../../../bashscripts/docs/index.md) - Bashscripts docs index
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

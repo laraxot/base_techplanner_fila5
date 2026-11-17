@@ -10,7 +10,7 @@ return [
             'name' => 'Gestione Utenti',
             'description' => 'Gestione dei tenant e delle loro configurazioni',
         ],
-        'label' => 'tenant',
+        'label' => 'Tenant',
         'sort' => '30',
         'icon' => 'user-user-tenant',
     ],
@@ -18,7 +18,6 @@ return [
         'heading' => 'Tenant',
     ],
     'fields' => [
-<<<<<<< HEAD
         'first_name' => [
             'label' => 'Nome',
             'tooltip' => '',
@@ -32,70 +31,39 @@ return [
             'description' => '',
         ],
         'secondary_color' => [
-            'label' => 'secondary_color',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'slug' => [
-            'label' => 'slug',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'id' => [
-            'label' => 'id',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'message' => [
-            'label' => 'message',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'first_name' => 'Nome',
-        'last_name' => 'Cognome',
-        'secondary_color' => [
-            'label' => 'secondary_color',
-        ],
-        'slug' => [
-            'label' => 'slug',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-        'id' => [
-            'label' => 'id',
-        ],
-        'message' => [
-            'label' => 'message',
-        ],
-        'resetFilters' => [
-            'label' => 'resetFilters',
-        ],
-        'applyFilters' => [
-            'label' => 'applyFilters',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -113,9 +81,6 @@ return [
         ],
         'change_password' => 'Cambio password',
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
 ];

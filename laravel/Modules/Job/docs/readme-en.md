@@ -1,3 +1,14 @@
+---
+title: "readme en"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme en"
+issues: []
+discussions: []
+---
+
 # ⚙️ Job — English presentation
 
 [![Domain-Queue](https://img.shields.io/badge/Domain-Queues%20%26%20Jobs-5D4037.svg)](#)
@@ -14,6 +25,14 @@
 
 ---
 
+title: "readme en"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "readme en"
+issues: []
+discussions: []
 ## Why it exists
 
 Geocoding, exports, bulk notifications must not block users.

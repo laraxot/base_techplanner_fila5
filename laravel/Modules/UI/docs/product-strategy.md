@@ -1,3 +1,10 @@
+---
+title: "UI - Product Strategy"
+qmd: "ui product strategy md"
+type: note
+tags: [documentation]
+---
+
 # UI - Product Strategy
 
 > Strategia prodotto. Modulo.

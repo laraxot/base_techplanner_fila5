@@ -1,3 +1,10 @@
+---
+title: "GroupColumn Fix - Risoluzione Errore \"Column not mounted to table\""
+qmd: "ui group column fix md"
+type: note
+tags: [documentation]
+---
+
 # GroupColumn Fix - Risoluzione Errore "Column not mounted to table"
 
 ## Problema
@@ -103,10 +110,5 @@ Sono stati creati test per verificare:
 - `tests/Feature/GroupColumnTest.php` (nuovo)
 
 ## Collegamenti
-- [ProgressioniResource Usage](../../Progressioni/docs/progressioni-resource.md)
-<<<<<<< HEAD
 - [ProgressioniResource Usage](../../progressioni/docs/progressioni-resource.md)
 - [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns)
-=======
-- [Filament Tables Documentation](https://filamentphp.com/docs/3.x/tables/columns)
->>>>>>> 6ed19256f (.)

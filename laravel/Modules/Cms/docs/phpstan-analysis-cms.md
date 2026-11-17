@@ -1,14 +1,21 @@
+---
+title: "phpstan analysis cms"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis cms"
+issues: []
+discussions: []
+---
+
 # PHPStan Analysis - Cms Module
 
 ## 📊 Status
 
 **PHPStan Level 10**: ✅ **PASSED** - No errors found
 
-**Last Analysis**: 2025-11-05
-<<<<<<< HEAD
 **Last Analysis**: [DATE]
-=======
->>>>>>> 6ed19256f (.)
 
 ## 🎯 Module Overview
 
@@ -22,17 +29,10 @@
 - **Initial Errors**: 45
 - **Files Modified**: 13
 - **Lines Changed**: ~150
-<<<<<<< HEAD
 - **Completion Date**: [DATE]
 - **Success Rate**: 100%
 
 ### Current Status ([DATE])
-=======
->>>>>>> 6ed19256f (.)
-- **Completion Date**: 2025-10-22
-- **Success Rate**: 100%
-
-### Current Status (2025-11-05)
 - **Current Errors**: 0
 - **Completion Percentage**: 100%
 - **Status**: ✅ Fully PHPStan Level 10 Compliant
@@ -173,16 +173,16 @@ if (!is_string($first)) {
 
 ---
 
-**Analysis Date**: 2025-11-05
-<<<<<<< HEAD
+title: "phpstan analysis cms"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan analysis cms"
+issues: []
+discussions: []
 **Analysis Date**: [DATE]
 **PHPStan Version**: 2.1.2
 **Laravel Version**: 12.31.1
 **Status**: ✅ Fully PHPStan Level 10 Compliant
 **Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
-=======
-**PHPStan Version**: 2.1.2
-**Laravel Version**: 12.31.1
-**Status**: ✅ Fully PHPStan Level 10 Compliant
-**Documentation Quality**: ⭐⭐⭐⭐⭐ Excellent
->>>>>>> 6ed19256f (.)

@@ -17,11 +17,7 @@
         <img
             class="w-full {{ $ratioClass }} object-cover object-center"
             src="{{ $src }}"
-<<<<<<< HEAD
             alt="{{ $alt ?: '' }}"
-=======
-            @if ($alt) alt="{{ $alt }}" @endif
->>>>>>> 6ed19256f (.)
         >
         <figcaption>{{ $caption }}</figcaption>
     </figure>
@@ -29,14 +25,6 @@
     <img
         class="w-full {{ $ratioClass }}"
         src="{{ $src }}"
-<<<<<<< HEAD
         alt="{{ $alt ?: '' }}"
     >
 @endif
-
-
-=======
-        @if ($alt) alt="{{ $alt }}" @endif
-    >
-@endif
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,17 @@
+<<<<<<< .merge_file_B6sr8n
+---
+title: "terms conditions 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "terms conditions 1"
+issues: []
+discussions: []
+---
+
+=======
+>>>>>>> .merge_file_rRruu2
 https://julienboyer.re/en/posts/how-to-add-terms-and-conditions-checkbox-on-filament-registration-page
 
 https://julienboyer.re/en/posts/how-to-generate-terms-and-conditions-pdf-and-send-it-to-user-after-consent
@@ -5,10 +19,5 @@ https://julienboyer.re/en/posts/how-to-generate-terms-and-conditions-pdf-and-sen
 https://julienboyer.re/plugins/filament-terms-guard/readme
 
 ## Collegamenti tra versioni di terms_conditions.md
-<<<<<<< HEAD
 * [terms_conditions.md](laravel/modules/gdpr/docs/terms_conditions.md)
 * [terms_conditions.md](laravel/modules/user/docs/terms_conditions.md)
-=======
-* [terms_conditions.md](laravel/Modules/Gdpr/docs/terms_conditions.md)
-* [terms_conditions.md](laravel/Modules/User/docs/terms_conditions.md)
->>>>>>> 6ed19256f (.)

@@ -14,53 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'user_id' => [
-            'label' => 'Utilisateur',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'ip_address' => [
-            'label' => 'Adresse IP',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'user_agent' => [
-            'label' => 'Agent Utilisateur',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login_at' => [
-            'label' => 'Connexion le',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'logout_at' => [
-            'label' => 'Déconnexion le',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'login_method' => [
-            'label' => 'Méthode de connexion',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-        ],
-        'success' => [
-            'label' => 'Succès',
-            'tooltip' => '',
-            'helper_text' => '',
-            'description' => '',
-=======
         ],
         'user_id' => [
             'label' => 'Utilisateur',
@@ -82,7 +35,6 @@ return [
         ],
         'success' => [
             'label' => 'Succès',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [

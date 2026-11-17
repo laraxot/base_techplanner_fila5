@@ -3,12 +3,6 @@
 declare(strict_types=1);
 
 return [
-    'actions' => [
-        'activeLocale' => [
-            'label' => 'activeLocale',
-        ],
-    ],
-<<<<<<< HEAD
     'label' => 'Lang Base List Records',
     'plural_label' => 'Lang Base List Records (Plurale)',
     'navigation' => [
@@ -19,8 +13,8 @@ return [
             'description' => 'General Settings',
         ],
         'label' => 'Lang Base List Records',
-        'sort' => 1,
-        'icon' => 'heroicon-o-collection',
+        'sort' => '1',
+        'icon' => 'heroicon-o-rectangle-stack',
     ],
     'fields' => [
         'id' => [
@@ -42,6 +36,4 @@ return [
             'description' => '',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

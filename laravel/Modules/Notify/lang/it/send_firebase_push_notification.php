@@ -7,7 +7,6 @@ return [
         'label' => 'Invio Push Notification',
         'group' => 'Notifiche',
     ],
-<<<<<<< HEAD
     'label' => 'Send Firebase Push Notification',
     'plural_label' => 'Send Firebase Push Notification (Plurale)',
     'fields' => [
@@ -40,7 +39,11 @@ return [
         'delete' => [
             'label' => 'Elimina Send Firebase Push Notification',
         ],
+        'sendPushNotification' => [
+            'icon' => 'sendPushNotification',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

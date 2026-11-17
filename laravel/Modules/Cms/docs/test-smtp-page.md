@@ -1,3 +1,14 @@
+---
+title: "test smtp page"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "test smtp page"
+issues: []
+discussions: []
+---
+
 # Test SMTP in il progetto
 
 ![test smtp page](test-smtp-page.jpg)
@@ -47,10 +58,6 @@ MAIL_FROM_NAME="il progetto"
 MAIL_FROM_NAME="<main module>"
 ```
 ## Collegamenti tra versioni di test-smtp-page.md
-* [test-smtp-page.md](laravel/Modules/Notify/project_docs/test-smtp-page.md)
-* [test-smtp-page.md](laravel/Modules/Cms/project_docs/test-smtp-page.md)
-<<<<<<< HEAD
-* [test-smtp-page.md](laravel/modules/notify/project_docs/test-smtp-page.md)
-* [test-smtp-page.md](laravel/modules/cms/project_docs/test-smtp-page.md)
-=======
->>>>>>> 6ed19256f (.)
+* [test-smtp-page.md](test-smtp-page.md)
+* [test-smtp-page.md](test-smtp-page.md)
+

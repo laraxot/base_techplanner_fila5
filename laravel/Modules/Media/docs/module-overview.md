@@ -1,3 +1,16 @@
+---
+issues: []
+discussions: []
+title: "Media module overview"
+module: "Media"
+type: concept
+tags: [module, overview]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "module overview"
+related:
+  - "./webm.md"
+---
 # Media module overview
 
 ## Scopo ("perché esiste")
@@ -77,21 +90,13 @@ Nel modulo sono presenti azioni e risorse che orchestrano conversioni (es. WebM)
 
 ## Osservazioni sulla documentazione esistente (da riallineare)
 
-<<<<<<< HEAD
 - Alcuni documenti sono generici o riferiti ad altri domini/progetti (es. riferimenti “<nome progetto>” in `file-management.md`).
-=======
-- Alcuni documenti sono generici o riferiti ad altri domini/progetti (es. riferimenti “SaluteOra” in `file-management.md`).
->>>>>>> 6ed19256f (.)
 - Ci sono duplicati e varianti con suffissi `_1`, file `.txt`, e copie `~head`.
 
 ## Da migliorare (DRY + KISS)
 
 - **Pulizia docs**: eliminare duplicati (`*_1.md`), file `.txt` paralleli e file `~head` (consolidare su un solo documento per argomento).
-<<<<<<< HEAD
 - **Riallineare business logic**: riscrivere i documenti che parlano di “healthcare/<nome progetto>” se non sono pertinenti al progetto corrente.
-=======
-- **Riallineare business logic**: riscrivere i documenti che parlano di “healthcare/SaluteOra” se non sono pertinenti al progetto corrente.
->>>>>>> 6ed19256f (.)
 - **Link**: sostituire link assoluti nei `.md` con link relativi (policy progetto).
 - **Filament wrappers**: audit completo del modulo per assicurare che Widgets/Pages/Resources estendano solo XotBase/UIBase.
 - **Testing**: migrare test legacy PHPUnit-style verso Pest e spezzare file troppo grandi per ridurre warning PHPMD.

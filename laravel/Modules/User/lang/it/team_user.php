@@ -14,7 +14,6 @@ return [
         'sort' => 65,
         'icon' => 'heroicon-o-user-group',
     ],
-<<<<<<< HEAD
     'label' => 'Team User',
     'plural_label' => 'Team User (Plurale)',
     'fields' => [
@@ -36,22 +35,70 @@ return [
             'helper_text' => '',
             'description' => '',
         ],
+        'team' => [
+            'name' => [
+                'label' => 'Team',
+            ],
+        ],
+        'user' => [
+            'name' => [
+                'label' => 'Utente',
+            ],
+        ],
+        'role' => [
+            'label' => 'Ruolo',
+        ],
     ],
     'actions' => [
         'create' => [
             'label' => 'Crea Team User',
+            'icon' => 'create',
         ],
         'edit' => [
             'label' => 'Modifica Team User',
         ],
         'delete' => [
             'label' => 'Elimina Team User',
+            'icon' => 'delete',
+        ],
+        'logout' => [
+            'icon' => 'logout',
+        ],
+        'createAnother' => [
+            'icon' => 'createAnother',
+        ],
+        'save' => [
+            'icon' => 'save',
+        ],
+        'applyFilters' => [
+            'icon' => 'applyFilters',
+        ],
+        'openFilters' => [
+            'icon' => 'openFilters',
+        ],
+        'resetFilters' => [
+            'icon' => 'resetFilters',
+        ],
+        'applyTableColumnManager' => [
+            'icon' => 'applyTableColumnManager',
+        ],
+        'openColumnManager' => [
+            'icon' => 'openColumnManager',
+        ],
+        'resetColumnManager' => [
+            'icon' => 'resetColumnManager',
+        ],
+        'reorderRecords' => [
+            'icon' => 'reorderRecords',
+        ],
+        'profile' => [
+            'icon' => 'profile',
         ],
     ],
-=======
-    'label' => '',
-    'plural_label' => '',
-    'fields' => [],
-    'actions' => [],
->>>>>>> 6ed19256f (.)
+    'sections' => [
+        'empty' => [
+            'label' => '',
+            'heading' => '',
+        ],
+    ],
 ];

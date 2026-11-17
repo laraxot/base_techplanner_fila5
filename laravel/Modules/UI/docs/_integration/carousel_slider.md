@@ -1,3 +1,10 @@
+---
+title: "carousel_slider"
+qmd: "ui integration carousel slider md"
+type: note
+tags: [documentation]
+---
+
 # carousel_slider
 
 <!-- Contenuto migrato da _docs/carousel_slider.txt -->

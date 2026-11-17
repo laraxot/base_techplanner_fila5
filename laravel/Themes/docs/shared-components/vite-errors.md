@@ -35,7 +35,7 @@ ThemeName/
 
 ### 1. Verifica Preliminare
 ```bash
-cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
+cd /var/www/html/_bases/base_predict_fila5/laravel/Themes/[NomeTema]
 ```
 
 ### 2. Processo di Compilazione
@@ -114,4 +114,4 @@ npm install && npm run copy
 ## Manutenzione
 - Aggiornare regolarmente le dipendenze npm
 - Verificare la compatibilità con le versioni Laravel
-- Mantenere backup dei file di configurazione 
+- Mantenere backup dei file di configurazione

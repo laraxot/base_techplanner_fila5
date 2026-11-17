@@ -1,17 +1,37 @@
+---
+title: "Analisi Approfondita dell'Errore nell'Implementazione del Logout"
+type: concept
+tags: [logout, blade, error, analysis]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "logout-blade-error-analysis-2 analisi approfondita dell'errore nell'implementazione del logout"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index-1.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
+  - "./actions-path-convention.md"
+---
+
 # Analisi Approfondita dell'Errore nell'Implementazione del Logout
 
 ## Collegamenti correlati
 - [Documentazione centrale](/docs/readme.md)
 - [Collegamenti documentazione](/docs/collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Implementazione Logout](logout_blade_implementation.md)
-- [Analisi Logout](logout_blade_analysis.md)
-- [Conclusioni Logout](logout_blade_conclusions.md)
+- [Implementazione Auth Pages](auth-pages-implementation.md)
+- [Implementazione Logout](logout-blade-implementation-2.md)
+- [Analisi Logout](logout-blade-analysis-3.md)
+- [Conclusioni Logout](logout-blade-conclusions-2.md)
 - [Documentazione Auth Tema One](/laravel/themes/one/docs/auth.md)
 
 ## Errore Fondamentale Identificato
 
-L'implementazione attuale del file `/var/www/html/Quaeris/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
+L'implementazione attuale del file `/var/www/html/<nome progetto>/laravel/Themes/One/resources/views/pages/auth/logout.blade.php` è corretta nella sua struttura di base, ma presenta alcune limitazioni:
 
 ```php
 <?php
@@ -42,7 +62,7 @@ return redirect()->route('home');
 
 2. **Mancanza di direttive Folio**: Non utilizza le direttive di Laravel Folio come `middleware()` e `name()` per definire correttamente la rotta.
 
-3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di Quaeris.
+3. **Mancanza di localizzazione URL**: Non utilizza `app()->getLocale()` per la localizzazione degli URL nel reindirizzamento, come richiesto dalle convenzioni di <nome progetto>.
 
 4. **Mancanza di gestione errori e logging**: Non include gestione degli errori o logging delle operazioni di logout.
 
@@ -109,4 +129,4 @@ L'errore fondamentale nell'analisi precedente è stato non riconoscere che:
 Questi errori evidenziano l'importanza di:
 - Analizzare attentamente il codice esistente prima di proporre modifiche
 - Comprendere a fondo le classi base e le loro restrizioni
-- Rispettare le convenzioni e le strutture del progetto Quaeris
+- Rispettare le convenzioni e le strutture del progetto <nome progetto>

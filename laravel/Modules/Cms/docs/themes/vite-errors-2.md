@@ -1,3 +1,14 @@
+---
+title: "vite errors 2"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "vite errors 2"
+issues: []
+discussions: []
+---
+
 # Gestione Errori Vite nei Temi
 
 ## Perché
@@ -35,11 +46,7 @@ ThemeName/
 
 ### 1. Verifica Preliminare
 ```bash
-<<<<<<< HEAD
 cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
-=======
-cd /var/www/html/_bases/base_predict_fila3_mono/laravel/Themes/[NomeTema]
->>>>>>> 6ed19256f (.)
 ```
 
 ### 2. Processo di Compilazione
@@ -73,15 +80,9 @@ ls -la dist/
 - Verifica dell'integrità dei file compilati
 
 ## Collegamenti Correlati
-- [Documentazione Generale Errori](/docs/errors/README.md)
-- [Gestione Temi CMS](../themes/README.md)
-- [Processo di Deploy](../../docs/deployment/THEMES.md)
-<<<<<<< HEAD
 - [Documentazione Generale Errori](/docs/errors/readme.md)
 - [Gestione Temi CMS](../themes/readme.md)
 - [Processo di Deploy](../../../docs/deployment/themes.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ## Note Tecniche
 - La compilazione deve essere eseguita per ogni tema individualmente
@@ -124,8 +125,4 @@ npm install && npm run copy
 ## Manutenzione
 - Aggiornare regolarmente le dipendenze npm
 - Verificare la compatibilità con le versioni Laravel
-<<<<<<< HEAD
 - Mantenere backup dei file di configurazione
-=======
-- Mantenere backup dei file di configurazione
->>>>>>> 6ed19256f (.)

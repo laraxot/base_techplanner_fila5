@@ -526,7 +526,7 @@ trait HasTeams
 ## Backlink e Riferimenti
 
 - [docs/USER_MODULE.md](../../../docs/USER_MODULE.md)
-- [Modules/User/docs/traits.md](traits.md)
+- [Modules/User/docs/traits.md](../traits.md)
 - [docs/phpstan_fixes.md](../../../docs/phpstan_fixes.md)
 - [Modules/Xot/docs/RELATION_X.md](../../Xot/docs/RELATION_X.md)
 

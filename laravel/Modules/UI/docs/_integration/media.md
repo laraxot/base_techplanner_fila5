@@ -1,3 +1,10 @@
+---
+title: "media"
+qmd: "ui integration media md"
+type: note
+tags: [documentation]
+---
+
 # media
 
 <!-- Contenuto migrato da _docs/media.txt -->

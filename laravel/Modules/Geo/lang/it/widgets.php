@@ -11,7 +11,6 @@ return [
             'error' => 'Errore durante la selezione della località',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Widgets',
     'plural_label' => 'Widgets (Plurale)',
     'navigation' => [
@@ -56,6 +55,12 @@ return [
             'label' => 'Elimina Widgets',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
+    'base_map' => [
+        'aria_label' => 'Mappa interattiva',
+        'fullscreen' => 'Schermo intero',
+        'fullscreen_exit' => 'Esci da schermo intero',
+        'locate' => 'Centra sulla mia posizione',
+        'layer_satellite' => 'Satellite',
+        'markers_shown' => 'Mostrati :count marker',
+    ],
 ];

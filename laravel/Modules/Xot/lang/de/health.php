@@ -10,7 +10,7 @@ return [
             'name' => 'Sistema',
             'description' => 'Monitoraggio e diagnostica del sistema',
         ],
-        'label' => 'health',
+        'label' => 'Zustand',
         'sort' => '14',
         'icon' => 'xot-health',
     ],
@@ -19,12 +19,9 @@ return [
             'label' => 'Nome',
             'placeholder' => 'Inserisci il nome del controllo',
             'help' => 'Nome identificativo del controllo di sistema',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'status' => [
             'label' => 'Stato',
@@ -36,42 +33,30 @@ return [
                 'critical' => 'Critico',
                 'unknown' => 'Sconosciuto',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'last_check' => [
             'label' => 'Ultimo Controllo',
             'help' => 'Data e ora dell\'ultimo controllo effettuato',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'next_check' => [
             'label' => 'Prossimo Controllo',
             'help' => 'Data e ora del prossimo controllo programmato',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'details' => [
             'label' => 'Dettagli',
             'help' => 'Informazioni dettagliate sullo stato del controllo',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'type' => [
             'label' => 'Tipo',
@@ -88,12 +73,9 @@ return [
                 'logs' => 'Log',
                 'network' => 'Rete',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'severity' => [
             'label' => 'Gravità',
@@ -104,12 +86,9 @@ return [
                 'high' => 'Alta',
                 'critical' => 'Critica',
             ],
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -198,10 +177,12 @@ return [
             'security_breach' => 'Rilevata potenziale violazione sicurezza',
         ],
     ],
-    'title' => 'health',
-<<<<<<< HEAD
+    'title' => 'Zustand',
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-=======
->>>>>>> 6ed19256f (.)
+    'page' => [
+        'last_check' => [
+            'label' => 'Letzte Prüfung',
+        ],
+    ],
 ];

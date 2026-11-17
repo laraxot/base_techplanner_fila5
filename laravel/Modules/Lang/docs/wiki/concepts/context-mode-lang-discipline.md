@@ -1,4 +1,7 @@
 ---
+qmd: "context mode lang discipline"
+issues: []
+discussions: []
 title: "Lang Module — Context-Mode Discipline"
 type: "rule"
 tags: [lang, context-mode, translations, governance]
@@ -16,11 +19,11 @@ updated: 2026-05-12
 laravel/Modules/Lang/docs/wiki/
 ├── index.md                              # ≤30 righe
 ├── rules/
-│   ├── INDEX.md                          # ≤20 righe
+│   ├── index.md                          # ≤20 righe
 │   ├── translation-key-governance.md     # ≤200 righe
 │   └── translation-audit.md              # ≤150 righe
 ├── skills/
-│   ├── INDEX.md                          # ≤20 righe
+│   ├── index.md                          # ≤20 righe
 │   └── translation-key-audit.md          # ≤100 righe
 └── concepts/
     └── translation-ownership.md           # ≤150 righe

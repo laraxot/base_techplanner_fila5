@@ -1,3 +1,15 @@
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
+---
+
 # Sixteen Theme - Spring Planning Meeting
 
 ## Meeting Overview
@@ -374,3 +386,11 @@ This document captures the outcomes and decisions from the Sixteen theme's Sprin
 ---
 
 *This document will be updated and maintained throughout the quarter to track progress and outcomes.*
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](../..) |
+
+---
+**Modulo** `Sixteen` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

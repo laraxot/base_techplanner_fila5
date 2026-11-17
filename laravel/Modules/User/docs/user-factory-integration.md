@@ -1,16 +1,33 @@
-<<<<<<< HEAD
+---
+title: "UserFactory Integration - Modulo User e <nome progetto>"
+type: concept
+tags: [user, factory, integration]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "user-factory-integration userfactory integration - modulo user e <nome progetto>"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # UserFactory Integration - Modulo User e <nome progetto>
 
 ## Overview
 
 Questo documento descrive l'integrazione tra la `UserFactory` del modulo <nome progetto> e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
-=======
-# UserFactory Integration - Modulo User e SaluteOra
-
-## Overview
-
-Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteOra e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
->>>>>>> 6ed19256f (.)
 
 ## Architettura STI
 
@@ -18,17 +35,10 @@ Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteO
 
 ```php
 BaseUser (Modules\User\Models\BaseUser)
-<<<<<<< HEAD
 ├── User (Modules\<nome progetto>\Models\User) - Base for STI
     ├── Patient (Modules\<nome progetto>\Models\Patient) - uses HasParent
     ├── Doctor (Modules\<nome progetto>\Models\Doctor) - uses HasParent
     └── Admin (Modules\<nome progetto>\Models\Admin) - uses HasParent
-=======
-├── User (Modules\SaluteOra\Models\User) - Base for STI
-    ├── Patient (Modules\SaluteOra\Models\Patient) - uses HasParent
-    ├── Doctor (Modules\SaluteOra\Models\Doctor) - uses HasParent
-    └── Admin (Modules\SaluteOra\Models\Admin) - uses HasParent
->>>>>>> 6ed19256f (.)
 ```
 
 ### Database Connection Strategy
@@ -37,13 +47,8 @@ BaseUser (Modules\User\Models\BaseUser)
 // BaseUser (Modulo User)
 protected $connection = 'user'; // Default connection
 
-<<<<<<< HEAD
 // User (Modulo <nome progetto>)
 protected $connection = '<nome progetto>'; // Override for healthcare domain
-=======
-// User (Modulo SaluteOra)
-protected $connection = 'salute_ora'; // Override for healthcare domain
->>>>>>> 6ed19256f (.)
 ```
 
 ## Trait Distribution
@@ -61,19 +66,11 @@ use HasRoles;            // Permission management
 use HasAuthenticationLogTrait; // Authentication logging
 ```
 
-<<<<<<< HEAD
 ### Modulo <nome progetto> (User)
 Aggiunge trait specifici per il dominio sanitario:
 
 ```php
 // In <nome progetto>\Models\User
-=======
-### Modulo SaluteOra (User)
-Aggiunge trait specifici per il dominio sanitario:
-
-```php
-// In SaluteOra\Models\User
->>>>>>> 6ed19256f (.)
 use LogsActivity;        // Spatie Activity Log
 use HasStates;           // Spatie Model States
 use HasGdpr;             // GDPR compliance
@@ -93,40 +90,22 @@ use HasParent;           // Parental STI support
 
 ### Factory Ownership
 
-<<<<<<< HEAD
 La `UserFactory` è implementata **nel modulo <nome progetto>** perché:
 
 1. **Domain Specificity**: I dati sono specifici del dominio sanitario
 2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo <nome progetto>
 3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
 4. **Connection Override**: Usa database '<nome progetto>'
-=======
-La `UserFactory` è implementata **nel modulo SaluteOra** perché:
-
-1. **Domain Specificity**: I dati sono specifici del dominio sanitario
-2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo SaluteOra
-3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
-4. **Connection Override**: Usa database 'salute_ora'
->>>>>>> 6ed19256f (.)
 
 ### Integration Pattern
 
 ```php
-<<<<<<< HEAD
 // Factory nel modulo <nome progetto>
 namespace Modules\<nome progetto>\Database\Factories;
 
 class UserFactory extends Factory
 {
     protected $model = \Modules\<nome progetto>\Models\User::class;
-=======
-// Factory nel modulo SaluteOra
-namespace Modules\SaluteOra\Database\Factories;
-
-class UserFactory extends Factory
-{
-    protected $model = \Modules\SaluteOra\Models\User::class;
->>>>>>> 6ed19256f (.)
 
     // Genera dati compatibili con tutti i modelli della gerarchia
     public function definition(): array
@@ -137,11 +116,7 @@ class UserFactory extends Factory
             'email' => $this->faker->unique()->safeEmail(),
             'password' => Hash::make('password'),
 
-<<<<<<< HEAD
             // Campi User <nome progetto> (specifici dominio)
-=======
-            // Campi User SaluteOra (specifici dominio)
->>>>>>> 6ed19256f (.)
             'type' => UserTypeEnum::PATIENT,
             'state' => Pending::class,
             'is_active' => true,
@@ -220,11 +195,7 @@ public function admin(): static
 
 ### Field Mapping
 
-<<<<<<< HEAD
 | BaseUser (User Module) | <nome progetto> User | Usage |
-=======
-| BaseUser (User Module) | SaluteOra User | Usage |
->>>>>>> 6ed19256f (.)
 |------------------------|----------------|-------|
 | `name` | `name` | Full name compatibility |
 | `email` | `email` | Authentication |
@@ -248,11 +219,7 @@ protected function casts(): array
     ];
 }
 
-<<<<<<< HEAD
 // <nome progetto> User - Domain-specific casts
-=======
-// SaluteOra User - Domain-specific casts
->>>>>>> 6ed19256f (.)
 protected function casts(): array
 {
     return array_merge(parent::casts(), [
@@ -315,20 +282,12 @@ expect($user->isActive())->toBeTrue();
 ### 1. Modular Design
 
 - **BaseUser**: Campi generici per autenticazione e autorizzazione
-<<<<<<< HEAD
 - **<nome progetto> User**: Campi specifici del dominio sanitario
-=======
-- **SaluteOra User**: Campi specifici del dominio sanitario
->>>>>>> 6ed19256f (.)
 - **STI Children**: Campi altamente specializzati per tipo
 
 ### 2. Factory Responsibility
 
-<<<<<<< HEAD
 - **UserFactory in <nome progetto>**: Genera dati completi per testing del dominio
-=======
-- **UserFactory in SaluteOra**: Genera dati completi per testing del dominio
->>>>>>> 6ed19256f (.)
 - **Compatibility**: Rispetta i vincoli del BaseUser del modulo User
 - **Extensibility**: Facilmente estendibile per nuovi tipi di utente
 
@@ -390,56 +349,32 @@ public function test_bulk_sti_creation()
 
 ### 2. Domain Separation
 - Modulo User: Generics per autenticazione/autorizzazione
-<<<<<<< HEAD
 - Modulo <nome progetto>: Specifics per dominio sanitario
-=======
-- Modulo SaluteOra: Specifics per dominio sanitario
->>>>>>> 6ed19256f (.)
 - Clear boundaries e responsibilities
 
 ### 3. Testing Flexibility
 - Test generici nel modulo User
-<<<<<<< HEAD
 - Test specifici sanitari nel modulo <nome progetto>
-=======
-- Test specifici sanitari nel modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - Factory supporta entrambi i livelli
 
 ### 4. Maintenance
 - Changes al BaseUser automaticamente ereditati
-<<<<<<< HEAD
 - Healthcare-specific changes isolati nel modulo <nome progetto>
-=======
-- Healthcare-specific changes isolati nel modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - Factory evolution indipendente
 
 ## Links to Documentation
 
-<<<<<<< HEAD
 ### <nome progetto> Module
-- [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/UserFactory-improvements-analysis.md)
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
 - [STI Implementation](../<nome progetto>/docs/model-inheritance.md)
-=======
-### SaluteOra Module
-- [UserFactory Improvements Analysis](../SaluteOra/docs/factories/UserFactory-improvements-analysis.md)
-- [Model Architecture](../SaluteOra/docs/model-architecture.md)
-- [STI Implementation](../SaluteOra/docs/model-inheritance.md)
->>>>>>> 6ed19256f (.)
 
 ### User Module
-- [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../User/docs/traits_complete_guide.md)
-- [Authentication Framework](../User/docs/authentication.md)
-<<<<<<< HEAD
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../user/docs/traits_complete_guide.md)
-- [Authentication Framework](../user/docs/authentication.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
 
 ---
 
@@ -447,19 +382,11 @@ public function test_bulk_sti_creation()
 **Purpose**: Document cross-module factory integration
 **Maintainer**: Development Team
 **Review Status**: Ready for implementation
-<<<<<<< HEAD
 # UserFactory Integration - Modulo User e <nome progetto>
 
 ## Overview
 
 Questo documento descrive l'integrazione tra la `UserFactory` del modulo <nome progetto> e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
-=======
-# UserFactory Integration - Modulo User e SaluteOra
-
-## Overview
-
-Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteOra e la base `BaseUser` del modulo User, evidenziando l'architettura Single Table Inheritance (STI) implementata con Parental.
->>>>>>> 6ed19256f (.)
 
 ## Architettura STI
 
@@ -467,17 +394,10 @@ Questo documento descrive l'integrazione tra la `UserFactory` del modulo SaluteO
 
 ```php
 BaseUser (Modules\User\Models\BaseUser)
-<<<<<<< HEAD
 ├── User (Modules\<nome progetto>\Models\User) - Base for STI
     ├── Patient (Modules\<nome progetto>\Models\Patient) - uses HasParent
     ├── Doctor (Modules\<nome progetto>\Models\Doctor) - uses HasParent
     └── Admin (Modules\<nome progetto>\Models\Admin) - uses HasParent
-=======
-├── User (Modules\SaluteOra\Models\User) - Base for STI
-    ├── Patient (Modules\SaluteOra\Models\Patient) - uses HasParent
-    ├── Doctor (Modules\SaluteOra\Models\Doctor) - uses HasParent
-    └── Admin (Modules\SaluteOra\Models\Admin) - uses HasParent
->>>>>>> 6ed19256f (.)
 ```
 
 ### Database Connection Strategy
@@ -486,13 +406,8 @@ BaseUser (Modules\User\Models\BaseUser)
 // BaseUser (Modulo User)
 protected $connection = 'user'; // Default connection
 
-<<<<<<< HEAD
 // User (Modulo <nome progetto>)
 protected $connection = '<nome progetto>'; // Override for healthcare domain
-=======
-// User (Modulo SaluteOra)
-protected $connection = 'salute_ora'; // Override for healthcare domain
->>>>>>> 6ed19256f (.)
 ```
 
 ## Trait Distribution
@@ -510,19 +425,11 @@ use HasRoles;            // Permission management
 use HasAuthenticationLogTrait; // Authentication logging
 ```
 
-<<<<<<< HEAD
 ### Modulo <nome progetto> (User)
 Aggiunge trait specifici per il dominio sanitario:
 
 ```php
 // In <nome progetto>\Models\User
-=======
-### Modulo SaluteOra (User)
-Aggiunge trait specifici per il dominio sanitario:
-
-```php
-// In SaluteOra\Models\User
->>>>>>> 6ed19256f (.)
 use LogsActivity;        // Spatie Activity Log
 use HasStates;           // Spatie Model States
 use HasGdpr;             // GDPR compliance
@@ -542,40 +449,22 @@ use HasParent;           // Parental STI support
 
 ### Factory Ownership
 
-<<<<<<< HEAD
 La `UserFactory` è implementata **nel modulo <nome progetto>** perché:
 
 1. **Domain Specificity**: I dati sono specifici del dominio sanitario
 2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo <nome progetto>
 3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
 4. **Connection Override**: Usa database '<nome progetto>'
-=======
-La `UserFactory` è implementata **nel modulo SaluteOra** perché:
-
-1. **Domain Specificity**: I dati sono specifici del dominio sanitario
-2. **Enum Integration**: Usa `UserTypeEnum` e `UserState` del modulo SaluteOra
-3. **Business Logic**: Gestisce logica sanitaria (ISEE, pregnancy, certifications)
-4. **Connection Override**: Usa database 'salute_ora'
->>>>>>> 6ed19256f (.)
 
 ### Integration Pattern
 
 ```php
-<<<<<<< HEAD
 // Factory nel modulo <nome progetto>
 namespace Modules\<nome progetto>\Database\Factories;
 
 class UserFactory extends Factory
 {
     protected $model = \Modules\<nome progetto>\Models\User::class;
-=======
-// Factory nel modulo SaluteOra
-namespace Modules\SaluteOra\Database\Factories;
-
-class UserFactory extends Factory
-{
-    protected $model = \Modules\SaluteOra\Models\User::class;
->>>>>>> 6ed19256f (.)
 
     // Genera dati compatibili con tutti i modelli della gerarchia
     public function definition(): array
@@ -586,11 +475,7 @@ class UserFactory extends Factory
             'email' => $this->faker->unique()->safeEmail(),
             'password' => Hash::make('password'),
 
-<<<<<<< HEAD
             // Campi User <nome progetto> (specifici dominio)
-=======
-            // Campi User SaluteOra (specifici dominio)
->>>>>>> 6ed19256f (.)
             'type' => UserTypeEnum::PATIENT,
             'state' => Pending::class,
             'is_active' => true,
@@ -669,11 +554,7 @@ public function admin(): static
 
 ### Field Mapping
 
-<<<<<<< HEAD
 | BaseUser (User Module) | <nome progetto> User | Usage |
-=======
-| BaseUser (User Module) | SaluteOra User | Usage |
->>>>>>> 6ed19256f (.)
 |------------------------|----------------|-------|
 | `name` | `name` | Full name compatibility |
 | `email` | `email` | Authentication |
@@ -697,11 +578,7 @@ protected function casts(): array
     ];
 }
 
-<<<<<<< HEAD
 // <nome progetto> User - Domain-specific casts
-=======
-// SaluteOra User - Domain-specific casts
->>>>>>> 6ed19256f (.)
 protected function casts(): array
 {
     return array_merge(parent::casts(), [
@@ -764,20 +641,12 @@ expect($user->isActive())->toBeTrue();
 ### 1. Modular Design
 
 - **BaseUser**: Campi generici per autenticazione e autorizzazione
-<<<<<<< HEAD
 - **<nome progetto> User**: Campi specifici del dominio sanitario
-=======
-- **SaluteOra User**: Campi specifici del dominio sanitario
->>>>>>> 6ed19256f (.)
 - **STI Children**: Campi altamente specializzati per tipo
 
 ### 2. Factory Responsibility
 
-<<<<<<< HEAD
 - **UserFactory in <nome progetto>**: Genera dati completi per testing del dominio
-=======
-- **UserFactory in SaluteOra**: Genera dati completi per testing del dominio
->>>>>>> 6ed19256f (.)
 - **Compatibility**: Rispetta i vincoli del BaseUser del modulo User
 - **Extensibility**: Facilmente estendibile per nuovi tipi di utente
 
@@ -839,64 +708,36 @@ public function test_bulk_sti_creation()
 
 ### 2. Domain Separation
 - Modulo User: Generics per autenticazione/autorizzazione
-<<<<<<< HEAD
 - Modulo <nome progetto>: Specifics per dominio sanitario
-=======
-- Modulo SaluteOra: Specifics per dominio sanitario
->>>>>>> 6ed19256f (.)
 - Clear boundaries e responsibilities
 
 ### 3. Testing Flexibility
 - Test generici nel modulo User
-<<<<<<< HEAD
 - Test specifici sanitari nel modulo <nome progetto>
-=======
-- Test specifici sanitari nel modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - Factory supporta entrambi i livelli
 
 ### 4. Maintenance
 - Changes al BaseUser automaticamente ereditati
-<<<<<<< HEAD
 - Healthcare-specific changes isolati nel modulo <nome progetto>
-=======
-- Healthcare-specific changes isolati nel modulo SaluteOra
->>>>>>> 6ed19256f (.)
 - Factory evolution indipendente
 
 ## Links to Documentation
 
-<<<<<<< HEAD
 ### <nome progetto> Module
-- [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/UserFactory-improvements-analysis.md)
 - [UserFactory Improvements Analysis](../<nome progetto>/docs/factories/userfactory-improvements-analysis.md)
 - [Model Architecture](../<nome progetto>/docs/model-architecture.md)
 - [STI Implementation](../<nome progetto>/docs/model-inheritance.md)
-=======
-### SaluteOra Module
-- [UserFactory Improvements Analysis](../SaluteOra/docs/factories/UserFactory-improvements-analysis.md)
-- [Model Architecture](../SaluteOra/docs/model-architecture.md)
-- [STI Implementation](../SaluteOra/docs/model-inheritance.md)
->>>>>>> 6ed19256f (.)
 
 ### User Module
-- [BaseUser Documentation](../User/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../User/docs/traits_complete_guide.md)
-- [Authentication Framework](../User/docs/authentication.md)
-<<<<<<< HEAD
 - [BaseUser Documentation](../user/docs/baseuser_conflicts.md)
-- [Traits Complete Guide](../user/docs/traits_complete_guide.md)
-- [Authentication Framework](../user/docs/authentication.md)
-=======
->>>>>>> 6ed19256f (.)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
+- [Traits Complete Guide](traits-complete-guide-aggiornato-post.md)
+- [Authentication Framework](authentication.md)
 
 ---
 
 **Created**: January 2025
 **Purpose**: Document cross-module factory integration
 **Maintainer**: Development Team
-<<<<<<< HEAD
 **Review Status**: Ready for implementation
-=======
-**Review Status**: Ready for implementation
->>>>>>> 6ed19256f (.)

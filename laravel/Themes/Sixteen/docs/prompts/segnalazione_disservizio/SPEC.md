@@ -1,7 +1,19 @@
+---
+title: "SPEC"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "SPEC"
+issues: []
+discussions: []
+status: draft
+---
+
 # SPEC.md - Segnalazioni Elenco HTML Parity
 
 ## Obiettivo
-Raggiungere 90% di struttura HTML identica per la pagina "segnalazioni-elenco" confrontando reference Italy Design Comuni con local.
+Raggiungere 90% di struttura HTML identica per la pagina "ticket-list" confrontando reference Italy Design Comuni con local.
 
 ## Parity Attuale: 55.3%
 

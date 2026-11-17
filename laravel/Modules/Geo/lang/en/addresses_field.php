@@ -6,31 +6,24 @@ return [
     'fields' => [
         'addresses' => [
             'label' => 'Indirizzi',
-            'placeholder' => 'Seleziona o inserisci un indirizzo',
-            'help' => 'Gestione degli indirizzi associati al record',
-<<<<<<< HEAD
+            'placeholder' => 'Select or enter an address',
+            'help' => 'Manage the addresses associated with the record',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'name' => [
-            'label' => 'Nome Indirizzo',
-            'placeholder' => 'Inserisci un nome identificativo',
-            'help' => 'Nome descrittivo per identificare facilmente l\'indirizzo (es. Casa, Ufficio, Studio)',
-<<<<<<< HEAD
+            'label' => 'Address Name',
+            'placeholder' => 'Enter an identifying name',
+            'help' => 'Descriptive name to easily identify the address (e.g. Home, Office, Studio)',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
->>>>>>> 6ed19256f (.)
         ],
         'is_primary' => [
-            'label' => 'Indirizzo Principale',
-            'placeholder' => 'Seleziona se questo è l\'indirizzo principale',
-            'help' => 'Indica se questo è l\'indirizzo principale tra tutti quelli registrati',
-<<<<<<< HEAD
+            'label' => 'Primary Address',
+            'placeholder' => 'Select whether this is the primary address',
+            'help' => 'Indicates whether this is the primary address among all registered ones',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -45,10 +38,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
-=======
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

@@ -1,3 +1,10 @@
+---
+title: "links"
+qmd: "ui integration links md"
+type: note
+tags: [documentation]
+---
+
 # links
 
 <!-- Contenuto migrato da _docs/links.txt -->

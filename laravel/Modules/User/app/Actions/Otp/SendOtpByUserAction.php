@@ -6,10 +6,6 @@ namespace Modules\User\Actions\Otp;
 
 use Filament\Notifications\Notification as FilamentNotification;
 use Illuminate\Support\Carbon;
-<<<<<<< HEAD
-=======
-use Illuminate\Support\Facades\Hash;
->>>>>>> 6ed19256f (.)
 use Illuminate\Support\Facades\Notification;
 use Illuminate\Support\Str;
 use Modules\User\Datas\PasswordData;
@@ -26,26 +22,16 @@ class SendOtpByUserAction
 {
     use QueueableAction;
 
-<<<<<<< HEAD
     public function __construct(
         private readonly PasswordData $passwordData,
         private readonly Str $stringHelper,
         private readonly Hasher $hasher,
-    ) {
-=======
-    private PasswordData $passwordData;
-
-    public function __construct()
-    {
-        // Initialize PasswordData instance, relying on dependency injection if required.
-        $this->passwordData = PasswordData::make();
->>>>>>> 6ed19256f (.)
-    }
+    ) {}
 
     /**
      * Execute the action: Generate and send an OTP to the specified user.
      *
-     * @param UserContract $user user to receive the OTP
+     * @param  UserContract  $user  user to receive the OTP
      */
     public function execute(UserContract $user): void
     {
@@ -64,11 +50,7 @@ class SendOtpByUserAction
      */
     private function generateTemporaryPassword(): string
     {
-<<<<<<< HEAD
         return $this->stringHelper->random(12);
-=======
-        return Str::random(12);
->>>>>>> 6ed19256f (.)
     }
 
     /**
@@ -84,18 +66,14 @@ class SendOtpByUserAction
     /**
      * Update user's password with a hashed temporary OTP and set expiration properties.
      *
-     * @param UserContract $user              user to update
-     * @param string       $temporaryPassword generated temporary password
-     * @param Carbon       $expirationTime    expiration time for the OTP
+     * @param  UserContract  $user  user to update
+     * @param  string  $temporaryPassword  generated temporary password
+     * @param  Carbon  $expirationTime  expiration time for the OTP
      */
     private function updateUserWithOtp(UserContract $user, string $temporaryPassword, Carbon $expirationTime): void
     {
         $user->update([
-<<<<<<< HEAD
             'password' => $this->hasher->make($temporaryPassword),
-=======
-            'password' => Hash::make($temporaryPassword),
->>>>>>> 6ed19256f (.)
             'is_otp' => true,
             'password_expires_at' => $expirationTime,
         ]);
@@ -104,8 +82,8 @@ class SendOtpByUserAction
     /**
      * Send OTP notification to user's email.
      *
-     * @param UserContract $user              user to notify
-     * @param string       $temporaryPassword temporary password to include in notification
+     * @param  UserContract  $user  user to notify
+     * @param  string  $temporaryPassword  temporary password to include in notification
      */
     private function dispatchOtpNotification(UserContract $user, string $temporaryPassword): void
     {

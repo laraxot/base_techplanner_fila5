@@ -1,3 +1,10 @@
+---
+title: "Errore: Method ::route does not exist"
+qmd: "activity errori route method does not exist md"
+type: note
+tags: [documentation]
+---
+
 # Errore: Method ::route does not exist
 
 ## Descrizione dell'Errore
@@ -313,12 +320,9 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 - [Activity Module - README](../README.md)
 - [XotBase Architecture](../../Xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../Xot/docs/filament/pages-types.md)
-<<<<<<< HEAD
 - [Activity Module - README](../readme.md)
 - [XotBase Architecture](../../xot/docs/xotbase-architecture-complete.md)
 - [Differenza Standalone vs Resource Pages](../../xot/docs/filament/pages-types.md)
-=======
->>>>>>> 6ed19256f (.)
 
 ### Fix Correlati
 - [Modulo Disabilitato](./modulo-disabilitato.md)
@@ -326,11 +330,11 @@ foreach (glob('Modules/*/app/Filament/Resources/*/Pages/*.php') as $file) {
 
 ---
 
+**
+
 **Ultimo aggiornamento**: 27 Ottobre 2025
+
+**=======
 **Versione Filament**: 4.x
 **Severità**: Alta (blocca registrazione Resource Pages)
-<<<<<<< HEAD
 **Causa**: Confusione tra Standalone Page e Resource Page
-=======
-**Causa**: Confusione tra Standalone Page e Resource Page
->>>>>>> 6ed19256f (.)

@@ -1,3 +1,15 @@
+---
+title: "design comuni integration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "design comuni integration"
+issues: []
+discussions: []
+status: draft
+---
+
 # 🏛️ DESIGN COMUNI ITALIANI - INTEGRATION GUIDE
 
 **Data**: 2025-10-02  
@@ -6,7 +18,6 @@
 **Purpose**: Integrare il design system ufficiale dei comuni italiani in FixCity  
 
 ---
-
 ## 📊 ANALISI DESIGN COMUNI
 
 ### Scopo
@@ -71,7 +82,7 @@ Template HTML ufficiali per i siti web e servizi digitali dei Comuni Italiani, c
 - Segnalazioni effettuate
 
 #### 7. Elenco Segnalazioni
-**File**: `segnalazioni-elenco.html`
+**File**: `ticket-list.html`
 - Lista completa segnalazioni
 - Mappa interattiva
 - Filtri per tipologia

@@ -1,3 +1,10 @@
+---
+title: "Correzione Errori PHPStan - RadioBadge.php"
+qmd: "ui archive phpstan radio badge fix 1 md"
+type: note
+tags: [documentation]
+---
+
 # Correzione Errori PHPStan - RadioBadge.php
 
 ## Data Aggiornamento

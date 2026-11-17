@@ -67,7 +67,7 @@ public function getUsers(): Collection
 ```
 
 ## Troubleshooting
-- [Errori Comuni](./troubleshooting.md)
+- [Errori Comuni](../../troubleshooting.md)
 - [Baseline Management](./baseline.md)
 ```
 
@@ -96,7 +96,7 @@ class LoginComponent extends Component
 ```
 
 ## Gestione Errori
-- [Errori Comuni](./troubleshooting.md)
+- [Errori Comuni](../../troubleshooting.md)
 - [Debug Guide](./debug.md)
 ```
 
@@ -127,7 +127,7 @@ class UserFactory extends Factory
 - **With Profile:** `User::factory()->withProfile()->create()`
 
 ## Integrazione Ecosystem
-- [Teams Integration](./teams.md)
+- [Teams Integration](../../teams.md)
 - [Profile Management](./profile.md)
 ```
 
@@ -174,8 +174,8 @@ docs/
 
 ## Autenticazione
 - [Implementazione](./authentication/implementation.md)
-- [Volt/Folio](./authentication/volt-folio.md)
-- [Sicurezza](./authentication/security.md)
+- [Volt/Folio](../../volt-folio.md)
+- [Sicurezza](../../html2pdf/security.md)
 
 ## Gestione Utenti
 - [Factories](./user-management/factories.md)
@@ -190,7 +190,7 @@ docs/
 ## Sviluppo
 - [Testing](./development/testing.md)
 - [PHPStan](./development/phpstan.md)
-- [Troubleshooting](./development/troubleshooting.md)
+- [Troubleshooting](../../troubleshooting.md)
 ```
 
 ### 3. Eliminazione Ridondanze (DRY)

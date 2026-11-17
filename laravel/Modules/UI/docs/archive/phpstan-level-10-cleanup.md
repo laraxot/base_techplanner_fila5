@@ -1,3 +1,10 @@
+---
+title: "PHPStan Level 10 Cleanup Session - 2025-11-06"
+qmd: "ui archive phpstan level 10 cleanup md"
+type: note
+tags: [documentation]
+---
+
 # PHPStan Level 10 Cleanup Session - 2025-11-06
 
 ## Executive Summary

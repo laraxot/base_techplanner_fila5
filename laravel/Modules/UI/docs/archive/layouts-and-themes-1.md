@@ -1,3 +1,10 @@
+---
+title: "Struttura dei Temi"
+qmd: "ui archive layouts and themes 1 md"
+type: note
+tags: [documentation]
+---
+
 ### Versione HEAD
 
 # Struttura dei Temi

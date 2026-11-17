@@ -41,5 +41,8 @@ return [
         'delete' => [
             'label' => 'Elimina Test',
         ],
+        'save' => [
+            'icon' => 'save',
+        ],
     ],
 ];

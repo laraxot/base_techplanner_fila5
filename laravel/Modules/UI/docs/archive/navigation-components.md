@@ -1,3 +1,10 @@
+---
+title: "Componenti di Navigazione"
+qmd: "ui archive navigation components md"
+type: note
+tags: [documentation]
+---
+
 # Componenti di Navigazione 
 
 ## Indice

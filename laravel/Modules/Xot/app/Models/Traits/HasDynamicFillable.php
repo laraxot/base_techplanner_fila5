@@ -4,24 +4,16 @@ declare(strict_types=1);
 
 namespace Modules\Xot\Models\Traits;
 
-<<<<<<< HEAD
-=======
-use BackedEnum;
-use UnitEnum;
-
->>>>>>> 6ed19256f (.)
-trait HasDynamicFillable
+/**
+ * @phpstan-ignore trait.unused
+ */
+trait HasDynamicFillable // @phpstan-ignore trait.unused
 {
     /**
      * Overrides the default getFillable method to include fields from specified Enums.
      *
-<<<<<<< HEAD
-     * Models using this trait can override getDynamicFillableEnums() with the
-     * fully qualified class names of Enums whose cases should be added to fillable.
-=======
      * Models using this trait should define a protected array property `$dynamicFillableEnums`
      * containing the fully qualified class names of Enums whose cases should be added to fillable.
->>>>>>> 6ed19256f (.)
      *
      * Example: protected array $dynamicFillableEnums = [AddressItemEnum::class, ContactTypeEnum::class];
      *
@@ -31,22 +23,10 @@ trait HasDynamicFillable
     {
         $fillable = array_values(parent::getFillable());
 
-<<<<<<< HEAD
         $dynamicFillableEnums = $this->getDynamicFillableEnums();
 
         foreach ($dynamicFillableEnums as $enumClass) {
-            if (! is_string($enumClass) || '' === $enumClass) {
-=======
-        $dynamicFillableEnums = $this->dynamicFillableEnums ?? null;
-
-        // Ensure the property is an array
-        if (! is_array($dynamicFillableEnums)) {
-            return $fillable;
-        }
-
-        foreach ($dynamicFillableEnums as $enumClass) {
             if (! is_string($enumClass) || $enumClass === '') {
->>>>>>> 6ed19256f (.)
                 continue;
             }
 
@@ -58,13 +38,8 @@ trait HasDynamicFillable
             // Get enum cases' values and merge
             $enumCases = $enumClass::cases();
             $enumFields = array_map(
-<<<<<<< HEAD
                 static function (\UnitEnum $item): string {
                     if ($item instanceof \BackedEnum) {
-=======
-                static function (UnitEnum $item): string {
-                    if ($item instanceof BackedEnum) {
->>>>>>> 6ed19256f (.)
                         return (string) $item->value;
                     }
 
@@ -79,15 +54,15 @@ trait HasDynamicFillable
         // Ensure unique values and reset keys for cleanliness
         return array_values(array_unique($fillable));
     }
-<<<<<<< HEAD
 
     /**
-     * @return array<int, class-string<\UnitEnum>>
+     * Models using this trait may override this to list Enum classes whose
+     * cases should be merged into `$fillable`.
+     *
+     * @return list<class-string<\UnitEnum>>
      */
     protected function getDynamicFillableEnums(): array
     {
         return [];
     }
-=======
->>>>>>> 6ed19256f (.)
 }

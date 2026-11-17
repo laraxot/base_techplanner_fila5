@@ -1,3 +1,14 @@
+---
+title: "ROADMAP"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ROADMAP"
+issues: []
+discussions: []
+---
+
 # ROADMAP - Modulo Geo
 
 ## Scopo del Progetto
@@ -95,6 +106,6 @@ Il modulo Geo gestisce tutta la geolocalizzazione del sistema, inclusi indirizzi
 ## Risorse e Documentazione
 - [API Documentation](./api-docs.md)
 - [Map Integration Guide](./maps.md)
-- [Geocoding Guide](./geocoding.md)
-- [Performance Guide](./performance.md)
-- [Deployment Guide](./deployment.md)
+- [Geocoding Guide](services/geocoding.md)
+- [Performance Guide](features/performance.md)
+- [Deployment Guide](roadmap/deployment.md)

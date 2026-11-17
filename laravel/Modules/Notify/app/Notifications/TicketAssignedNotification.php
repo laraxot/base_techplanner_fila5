@@ -13,43 +13,36 @@ class TicketAssignedNotification extends Notification
 {
     use Queueable;
 
+    /**
+     * @return void
+     */
     public function __construct(
-        public mixed $ticket, // Using mixed type since Ticket model doesn't exist
+        public object $ticket, // Object type since a dedicated Ticket model doesn't exist yet
         public User $assignedBy
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     /**
      * @return array<int, string>
      */
-    public function via(mixed $notifiable): array
+    public function via(object $notifiable): array
     {
         return ['mail', 'database'];
     }
 
-    public function toMail(mixed $notifiable): MailMessage
+    public function toMail(object $notifiable): MailMessage
     {
-<<<<<<< HEAD
         return (new MailMessage)
-=======
-        return (new MailMessage())
->>>>>>> 6ed19256f (.)
             ->subject('New Ticket Assigned')
             ->line("A new ticket has been assigned to you by {$this->assignedBy->name}")
             ->action('View Ticket', url('/'));
     }
 
     /**
-     * @return array<string, mixed>
+     * @return array{assigned_by: string}
      */
-    public function toArray(mixed $notifiable): array
+    public function toArray(object $notifiable): array
     {
         return [
-            'assigned_by' => $this->assignedBy->id,
-        ];
+            'assigned_by' => $this->assignedBy->id];
     }
 }

@@ -1,3 +1,10 @@
+---
+title: "Confronto tra Struttura a Domain e Struttura a Moduli"
+qmd: "activity use cases shop domain vs modules md"
+type: note
+tags: [documentation]
+---
+
 # Confronto tra Struttura a Domain e Struttura a Moduli
 
 ## Introduzione
@@ -32,13 +39,8 @@ Nei progetti di Spatie come `laravel-shop-main`, la logica di business è organi
 
 ### Descrizione
 
-<<<<<<< HEAD
 Il pacchetto Laravel Modules (documentazione: [https://laravelmodules.com/docs/12/getting-started/introduction](https://laravelmodules.com/docs/12/getting-started/introduction)) consente di organizzare un'applicazione Laravel in moduli separati, ognuno con la propria struttura di directory simile a un'applicazione Laravel completa. Nel nostro progetto, il modulo `Activity` si trova in `Modules/Activity`.
 Il pacchetto Laravel Modules (documentazione: [https://laravelmodules.com/docs/12/getting-started/introduction](https://laravelmodules.com/docs/12/getting-started/introduction)) consente di organizzare un'applicazione Laravel in moduli separati, ognuno con la propria struttura di directory simile a un'applicazione Laravel completa. Nel nostro progetto, il modulo `Activity` si trova in `Modules/Activity`.
-=======
-Il pacchetto Laravel Modules (documentazione: [https://laravelmodules.com/docs/12/getting-started/introduction](https://laravelmodules.com/docs/12/getting-started/introduction)) consente di organizzare un'applicazione Laravel in moduli separati, ognuno con la propria struttura di directory simile a un'applicazione Laravel completa. Nel nostro progetto, il modulo `Activity` si trova in `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Activity`.
-Il pacchetto Laravel Modules (documentazione: [https://laravelmodules.com/docs/12/getting-started/introduction](https://laravelmodules.com/docs/12/getting-started/introduction)) consente di organizzare un'applicazione Laravel in moduli separati, ognuno con la propria struttura di directory simile a un'applicazione Laravel completa. Nel nostro progetto, il modulo `Activity` si trova in `/var/www/html/<nome progetto>/laravel/Modules/Activity`.
->>>>>>> 6ed19256f (.)
 
 ### Struttura Tipica
 

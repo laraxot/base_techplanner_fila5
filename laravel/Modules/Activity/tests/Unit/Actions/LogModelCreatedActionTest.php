@@ -2,41 +2,42 @@
 
 declare(strict_types=1);
 
-uses(\Modules\Activity\Tests\TestCase::class);
-
-use Illuminate\Database\Eloquent\Model;
 use Modules\Activity\Actions\LogModelCreatedAction;
+use Modules\Activity\Tests\Fixtures\LogModelCreatedActionTestModel;
+use Modules\Activity\Tests\TestCase;
 use Modules\User\Models\User;
+use PHPUnit\Framework\Assert;
 
-test('LogModelCreatedAction can be instantiated', function () {
-    $model = new class extends Model
-    {
-        protected $table = 'test_models';
+uses(TestCase::class);
 
-        protected $fillable = ['name'];
-    };
-    $user = User::factory()->make();
+test('LogModelCreatedAction execute persiste created con subject e causer', function (): void {
+    $model = new LogModelCreatedActionTestModel;
+    $model->forceFill(['id' => 'created-1', 'name' => 'Created']);
+    $model->exists = true;
 
-    $action = new LogModelCreatedAction($model, $user);
+    $user = new User;
+    $user->forceFill([
+        'id' => 'causer-created-1',
+        'name' => 'Causer',
+        'email' => 'causer-created-1@example.test',
+    ]);
+    $user->exists = true;
 
-    expect($action)->toBeObject()
-        ->and($action->model)->toBe($model)
-        ->and($action->user)->toBe($user);
+    $activity = (new LogModelCreatedAction($model, $user))->execute();
+
+    Assert::assertSame('created', $activity->event);
+    Assert::assertSame($model::class, $activity->subject_type);
+    Assert::assertSame($model->getKey(), $activity->subject_id);
+    Assert::assertSame($user->id, $activity->causer_id);
 });
 
-test('LogModelCreatedAction can execute', function () {
-    $modelClass = get_class(new class extends Model
-    {
-        protected $table = 'test_models';
+test('LogModelCreatedAction execute accetta model passato a execute', function (): void {
+    $model = new LogModelCreatedActionTestModel;
+    $model->forceFill(['id' => 'created-2', 'name' => 'ViaExecute']);
+    $model->exists = true;
 
-        protected $fillable = ['name'];
-    });
-    $model = new $modelClass(['name' => 'Test']);
-    $user = User::factory()->create();
+    $activity = (new LogModelCreatedAction)->execute($model);
 
-    $action = new LogModelCreatedAction($model, $user);
-
-    // Siccome LogModelCreatedAction chiama LogActivityAction,
-    // testiamo che l'execute non generi errori
-    expect($action)->toBeObject();
+    Assert::assertSame('created', $activity->event);
+    Assert::assertSame($model::class, $activity->subject_type);
 });

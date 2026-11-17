@@ -8,7 +8,6 @@ use Filament\Actions\Action;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\TextInput;
 use Filament\Schemas\Schema;
-use Filament\Support\Exceptions\Halt;
 use Illuminate\Database\Eloquent\Model;
 use Modules\User\Filament\Clusters\Appearance;
 use Modules\Xot\Filament\Pages\XotBasePage;
@@ -18,6 +17,7 @@ use Modules\Xot\Filament\Pages\XotBasePage;
  */
 class Logo extends XotBasePage
 {
+    /** @var array<string, mixed>|null */
     public ?array $logoData = [];
 
     protected string $view = 'user::filament.clusters.appearance.pages.logo';
@@ -55,18 +55,13 @@ class Logo extends XotBasePage
             ->statePath('logoData');
     }
 
+    /**
+     * Persistenza non ancora implementata: meglio un errore esplicito che un falso salvataggio.
+     * Da completare salvando `$this->form->getState()` (vedi Pages\Password + SaveTenantConfigAction).
+     */
     public function updateLogo(): void
     {
-        try {
-            $data = $this->form->getState();
-            dddx($data);
-
-            // $this->handleRecordUpdate($this->getUser(), $data);
-        } catch (Halt $exception) {
-            dddx($exception->getMessage());
-
-            return;
-        }
+        throw new \LogicException('Logo::updateLogo() non implementato');
     }
 
     protected function fillForms(): void
@@ -77,6 +72,9 @@ class Logo extends XotBasePage
         $this->form->fill($data);
     }
 
+    /**
+     * @return array<Action>
+     */
     protected function getUpdateLogoFormActions(): array
     {
         return [
@@ -85,7 +83,7 @@ class Logo extends XotBasePage
     }
 
     /**
-     * @param array<string, mixed> $data
+     * @param  array<string, mixed>  $data
      */
     protected function handleRecordUpdate(Model $record, array $data): Model
     {

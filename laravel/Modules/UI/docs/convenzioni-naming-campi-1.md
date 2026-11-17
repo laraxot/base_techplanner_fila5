@@ -1,3 +1,10 @@
+---
+title: "Convenzioni di Naming dei Campi"
+qmd: "ui convenzioni naming campi 1 md"
+type: note
+tags: [documentation]
+---
+
 # Convenzioni di Naming dei Campi
 
 ## Collegamenti Bidirezionali

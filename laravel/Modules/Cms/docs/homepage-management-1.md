@@ -1,3 +1,14 @@
+---
+title: "homepage management 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "homepage management 1"
+issues: []
+discussions: []
+---
+
 # Gestione della Homepage
 
 ## Indice
@@ -76,10 +87,14 @@ Per aggiungere un nuovo tipo di blocco:
 
 ---
 
+title: "homepage management 1"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "homepage management 1"
+issues: []
+discussions: []
 **Documentazione Correlata**
 
-<<<<<<< HEAD
 - [Documentazione principale della homepage](../../../../../docs/gestione-homepage.md)
-=======
-- [Documentazione principale della homepage](../../../../docs/gestione-homepage.md)
->>>>>>> 6ed19256f (.)

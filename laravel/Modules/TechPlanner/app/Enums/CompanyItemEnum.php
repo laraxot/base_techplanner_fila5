@@ -10,8 +10,12 @@ use Filament\Support\Contracts\HasColor;
 use Filament\Support\Contracts\HasIcon;
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Database\Schema\Blueprint;
+use Modules\TechPlanner\Rules\ItalianFiscalCodeRule;
+use Modules\TechPlanner\Rules\ItalianVatNumberRule;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 use Modules\Xot\Filament\Traits\TransTrait;
+
+use function Safe\preg_replace;
 
 /**
  * Enum per i campi aziendali del dominio TechPlanner.
@@ -31,11 +35,7 @@ use Modules\Xot\Filament\Traits\TransTrait;
  * - Stato operativo (business_closed)
  * - Settore merceologico (activity)
  */
-<<<<<<< HEAD
 enum CompanyItemEnum: string implements HasColor, HasIcon, HasLabel
-=======
-enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
->>>>>>> 6ed19256f (.)
 {
     use TransTrait;
 
@@ -71,7 +71,7 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
      */
     public static function getSearchable(): array
     {
-        return array_map(fn ($item) => $item->value, self::cases());
+        return array_map(fn (self $item) => $item->value, self::cases());
     }
 
     /**
@@ -82,21 +82,13 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
         $cases = self::cases();
         /** @var array<string, TextInput|Toggle> $result */
         $result = [];
-<<<<<<< HEAD
 
-=======
-        
->>>>>>> 6ed19256f (.)
         foreach ($cases as $item) {
             $fieldName = $item->value;
             $label = $item->getLabel();
             $icon = $item->getIcon();
             $isRequired = $item === self::COMPANY_NAME;
-<<<<<<< HEAD
 
-=======
-            
->>>>>>> 6ed19256f (.)
             if ($item === self::BUSINESS_CLOSED) {
                 $result[$fieldName] = Toggle::make($fieldName)
                     ->label($label);
@@ -104,21 +96,26 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
                 $input = TextInput::make($fieldName)
                     ->label($label)
                     ->prefixIcon($icon);
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 6ed19256f (.)
                 if ($isRequired) {
                     $input->required();
                 } else {
                     $input->nullable();
                 }
-<<<<<<< HEAD
 
-=======
-                
->>>>>>> 6ed19256f (.)
+                // FUN-05: P.IVA e codici fiscali controllati con la cifra di controllo, salvati in maiuscolo senza spazi.
+                $rule = match ($item) {
+                    self::VAT_NUMBER => new ItalianVatNumberRule(),
+                    self::TAX_CODE, self::FISCAL_CODE => new ItalianFiscalCodeRule(),
+                    default => null,
+                };
+                if ($rule !== null) {
+                    $input->rule($rule)
+                        ->dehydrateStateUsing(static fn (?string $state): ?string => $state === null
+                            ? null
+                            : strtoupper((string) preg_replace('/\s+/', '', $state)));
+                }
+
                 $result[$fieldName] = $input;
             }
         }
@@ -201,7 +198,7 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
      */
     public static function getColumnNames(): array
     {
-        return array_map(fn ($item) => $item->value, self::cases());
+        return array_map(fn (self $item) => $item->value, self::cases());
     }
 
     /**
@@ -243,8 +240,4 @@ enum CompanyItemEnum: string implements HasLabel, HasIcon, HasColor
             },
         ];
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 6ed19256f (.)

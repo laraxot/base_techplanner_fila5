@@ -1,3 +1,14 @@
+---
+title: "PRD"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PRD"
+issues: []
+discussions: []
+---
+
 # Product Requirements Document (PRD) - Geo Module
 
 **Module**: Geo
@@ -7,6 +18,14 @@
 
 ---
 
+title: "PRD"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "PRD"
+issues: []
+discussions: []
 ## Document Control
 
 | Version | Date | Author | Changes |
@@ -450,7 +469,7 @@ CREATE TABLE geo_cache (
 
 ### 12.3 Related PRDs
 - [Predict Module PRD](../Predict/docs/PRD.md)
-- [User Module PRD](../User/docs/PRD.md)
+- [User Module PRD](../../User/docs/prd.md)
 - [UI Module PRD](../UI/docs/PRD.md)
 
 ---

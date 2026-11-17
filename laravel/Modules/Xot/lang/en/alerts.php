@@ -184,7 +184,6 @@ return [
             'deleted_permanently' => 'The user was deleted permanently.',
             'restored' => 'The user was successfully restored.',
             'updated' => 'The user was successfully updated.',
-<<<<<<< HEAD
             'updated_password' => 'The user\'s password was successfully updated.',
         ],
     ],
@@ -197,13 +196,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-=======
-            'updated_password' => "The user's password was successfully updated.",
-        ],
-    ],
->>>>>>> 6ed19256f (.)
 ];

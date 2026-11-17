@@ -40,7 +40,7 @@ class GetTreeOptions
                 Assert::object($collection, 'get() must return an object');
 
                 if (method_exists($collection, 'toTree')) {
-                    /** @var Collection $models */
+                    /** @var \Illuminate\Database\Eloquent\Collection<int, \Illuminate\Database\Eloquent\Model> $models */
                     $models = $collection->toTree();
                 } else {
                     // Fallback if toTree doesn't exist

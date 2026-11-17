@@ -1,3 +1,10 @@
+---
+title: "Activity Coverage Plan"
+qmd: "activity coverage plan md"
+type: note
+tags: [documentation]
+---
+
 # Activity Coverage Plan
 
 Owner: multi-agent execution thread
@@ -6,7 +13,7 @@ Owner: multi-agent execution thread
 
 - Never run `php artisan migrate:fresh`.
 - Use only `php artisan migrate --env=testing` for test DB bootstrap.
-- Never use dates in .md filenames (e.g. `coverage-2026-03-06.md` is FORBIDDEN).
+- Never use dates in .md filenames (e.g. `coverage.md` is FORBIDDEN).
 
 ## Reliable coverage command
 

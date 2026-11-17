@@ -1,3 +1,14 @@
+---
+title: "configuration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "configuration"
+issues: []
+discussions: []
+---
+
 # Configurazione
 
 Questo documento descrive le opzioni di configurazione disponibili per il modulo CMS.
@@ -156,16 +167,11 @@ if (!$result->isValid()) {
 ## Collegamenti
 
 - [Installazione](installation.md)
-- [Architettura](architecture.md)
+- [Architettura](frontoffice/architecture.md)
 - [API](api.md)
 - [Cache](cache.md)
 
 ## Collegamenti tra versioni di configuration.md
-* [configuration.md](docs/configuration.md)
-* [configuration.md](laravel/Modules/Xot/docs/configuration.md)
-* [configuration.md](laravel/Modules/Cms/docs/configuration.md)
-<<<<<<< HEAD
-* [configuration.md](laravel/modules/xot/docs/configuration.md)
-* [configuration.md](laravel/modules/cms/docs/configuration.md)
-=======
->>>>>>> 6ed19256f (.)
+* [configuration.md](configuration.md)
+* [configuration.md](configuration.md)
+* [configuration.md](configuration.md)

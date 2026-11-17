@@ -15,7 +15,6 @@ return [
         'icon' => 'gdpr-profile',
     ],
     'fields' => [
-<<<<<<< HEAD
         'user' => [
             'label' => 'Utente',
             'tooltip' => '',
@@ -53,38 +52,22 @@ return [
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
+            'label' => 'Applica filtri',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
+            'label' => 'Colonne',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
+            'label' => 'Riordina',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        'user' => 'Utente',
-        'preferences' => 'Preferenze',
-        'marketing_consent' => 'Consenso Marketing',
-        'analytics_consent' => 'Consenso Analytics',
-        'third_party_consent' => 'Consenso Terze Parti',
-        'last_updated' => 'Ultimo Aggiornamento',
-        'applyFilters' => [
-            'label' => 'applyFilters',
-        ],
-        'toggleColumns' => [
-            'label' => 'toggleColumns',
-        ],
-        'reorderRecords' => [
-            'label' => 'reorderRecords',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'preferences' => [
@@ -92,7 +75,6 @@ return [
         'data_retention' => 'Conservazione Dati',
         'data_sharing' => 'Condivisione Dati',
     ],
-<<<<<<< HEAD
     'label' => 'Profile',
     'plural_label' => 'Profile (Plurale)',
     'actions' => [
@@ -105,7 +87,9 @@ return [
         'delete' => [
             'label' => 'Elimina Profile',
         ],
+        'logout' => [
+            'tooltip' => '',
+            'icon' => 'logout',
+        ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

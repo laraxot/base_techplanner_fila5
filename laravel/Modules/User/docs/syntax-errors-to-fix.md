@@ -1,3 +1,28 @@
+---
+title: "Syntax Errors da Fixare - Modulo User"
+type: concept
+tags: [syntax, errors, fix]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "syntax-errors-to-fix syntax errors da fixare - modulo user"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # Syntax Errors da Fixare - Modulo User
 
 ## 🚨 File con Errori Attivi
@@ -26,15 +51,9 @@ $this->currentState = 'loading';
 
 try {  // ← Questo try ESISTE (linea 132)
     $data = $this->form->getState();
-<<<<<<< HEAD
     
     $response = Password::broker()->reset(...);
     
-=======
-
-    $response = Password::broker()->reset(...);
-
->>>>>>> 6ed19256f (.)
     if ($response === Password::PASSWORD_RESET) {
         // Success handling
     } else {
@@ -48,17 +67,10 @@ try {  // ← Questo try ESISTE (linea 132)
 **Analisi**:
 Il `try` esiste alla linea 132, quindi il problema NON è catch orfano.
 
-<<<<<<< HEAD
 **Ipotesi**: 
 - Duplicazioni interne al try block causano syntax error
 - Linea 126 duplicata (if statement)
 - Linea 153 duplicata (if check)  
-=======
-**Ipotesi**:
-- Duplicazioni interne al try block causano syntax error
-- Linea 126 duplicata (if statement)
-- Linea 153 duplicata (if check)
->>>>>>> 6ed19256f (.)
 - Linea 166 duplicata (Assert)
 - Linea 174 duplicata ($this->js)
 
@@ -75,11 +87,7 @@ $this->currentState = 'loading';
 
 try {
     $data = $this->form->getState();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $response = Password::broker()->reset(
         [
             'token' => $this->token,
@@ -94,36 +102,21 @@ try {
             event(new PasswordReset($user));
         },
     );
-<<<<<<< HEAD
     
     if ($response === Password::PASSWORD_RESET) {
         $this->currentState = 'success';
         
-=======
-
-    if ($response === Password::PASSWORD_RESET) {
-        $this->currentState = 'success';
-
->>>>>>> 6ed19256f (.)
         Notification::make()
             ->title(__('user::auth.password_reset.success.title'))
             ->body(__('user::auth.password_reset.success.message'))
             ->success()
             ->duration(8000)
             ->send();
-<<<<<<< HEAD
         
         Assert::string($email = $data['email'], __FILE__ . ':' . __LINE__ . ' - ' . class_basename(__CLASS__));
         $user = XotData::make()->getUserByEmail($email);
         Auth::guard()->login($user);
         
-=======
-
-        Assert::string($email = $data['email'], __FILE__ . ':' . __LINE__ . ' - ' . class_basename(__CLASS__));
-        $user = XotData::make()->getUserByEmail($email);
-        Auth::guard()->login($user);
-
->>>>>>> 6ed19256f (.)
         $this->js('setTimeout(() => { window.location.href = "' . route('login') . '"; }, 3000);');
     } else {
         $this->handleResetError($response);
@@ -137,11 +130,7 @@ try {
 
 **Priority**: P0 - CRITICO (blocca avvio applicazione)
 
-<<<<<<< HEAD
 **Azione Richiesta**: 
-=======
-**Azione Richiesta**:
->>>>>>> 6ed19256f (.)
 1. Utente finisce modifiche
 2. Rimuove duplicazioni (linee 126, 153, 166, 174)
 3. Verifica syntax con `php -l PasswordResetConfirmWidget.php`
@@ -166,13 +155,7 @@ try {
 
 ---
 
-<<<<<<< HEAD
 **Documento creato**: Gennaio 2025  
 **Pattern rilevato**: Conflitti Git risolti male mantenendo BOTH changes invece di choosing  
 **Strategia fix**: Deduplica righe consecutive identiche, mantieni versione più moderna
 
-=======
-**Documento creato**: Gennaio 2025
-**Pattern rilevato**: Conflitti Git risolti male mantenendo BOTH changes invece di choosing
-**Strategia fix**: Deduplica righe consecutive identiche, mantieni versione più moderna
->>>>>>> 6ed19256f (.)

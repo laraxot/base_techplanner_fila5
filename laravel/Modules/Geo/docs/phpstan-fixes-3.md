@@ -1,11 +1,19 @@
-# Correzioni PHPStan Modulo Geo - 2025-01-27
-
-**Data**: 2025-01-27
-<<<<<<< HEAD
-# Correzioni PHPStan Modulo Geo - [DATE]
+<<<<<<< .merge_file_w0fhep
+---
+title: "phpstan fixes 3"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "phpstan fixes 3"
+issues: []
+discussions: []
+---
 
 =======
->>>>>>> 6ed19256f (.)
+>>>>>>> .merge_file_mvnWft
+# Correzioni PHPStan Modulo Geo - [DATE]
+
 **Versione PHPStan**: 1.12.x
 **Livello**: 10
 **Status**: ✅ COMPLETATO
@@ -92,11 +100,5 @@ Il widget fa parte del piano di migrazione a Filament 4.x documentato in:
 
 - [Documentazione Compatibilità Filament 4.x](./filament_4x_compatibility.md)
 - [Documentazione Widget Disabilitati](./widgets/disabled_widgets.md)
-<<<<<<< HEAD
-*Ultimo aggiornamento: 2025-01-27*
 - [Piano Migrazione Filament](../../../docs/filament_4x_migration_plan.md)
-=======
-- [Piano Migrazione Filament](../../docs/filament_4x_migration_plan.md)
 
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)

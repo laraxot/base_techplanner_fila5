@@ -1,15 +1,22 @@
+---
+title: "Activity Module - Roadmap"
+qmd: "activity roadmap readme md"
+type: note
+tags: [documentation]
+---
+
 # Activity Module - Roadmap
 
 ## 🎯 Module Purpose
 
-The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app Fila5 Mono application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
-The Activity module provides comprehensive audit trail and event sourcing capabilities for the Quaeris Fila5 Mono application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
-The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app Fila5 Mono application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
+The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app fila5 application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
+The Activity module provides comprehensive audit trail and event sourcing capabilities for the <nome progetto> fila5 application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
+The Activity module provides comprehensive audit trail and event sourcing capabilities for the healthcare_app fila5 application. It ensures complete traceability of all user actions and system events for compliance, debugging, and analytics purposes.
 
 ## 📋 Current Status
 
-**Maturity**: Production Ready  
-**PHPStan Level**: 10 ✅  
+**Maturity**: Production Ready
+**PHPStan Level**: 10 ✅
 **Test Coverage**: 85%+
 
 ## 🗓️ Development Roadmap
@@ -34,6 +41,12 @@ The Activity module provides comprehensive audit trail and event sourcing capabi
 - [ ] Custom event types and handlers
 - [ ] Activity retention policies
 - [ ] Audit report generation
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
 
 ### Phase 4: Advanced Analytics (Q4 2026)
 - [ ] Machine learning insights

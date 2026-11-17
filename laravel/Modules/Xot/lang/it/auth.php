@@ -10,7 +10,6 @@ return [
     ],
     'throttle' => 'Troppi tentativi di login. Si prega di riprovare tra :seconds secondi.',
     'unknown' => 'Si è verificato un errore sconosciuto',
-<<<<<<< HEAD
     'label' => 'Auth',
     'plural_label' => 'Auth (Plurale)',
     'navigation' => [
@@ -55,6 +54,4 @@ return [
             'label' => 'Elimina Auth',
         ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

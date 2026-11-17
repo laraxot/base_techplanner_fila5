@@ -1,3 +1,10 @@
+---
+title: "Regole Architetturali"
+qmd: "ui archive architecture rules md"
+type: note
+tags: [documentation]
+---
+
 # Regole Architetturali
 
 ## Principi Fondamentali
@@ -145,7 +152,8 @@ class CustomMiddleware
 }
 
 // Non hardcodare percorsi delle risorse
-<img src="/var/www/html/ptvx/laravel/public/images/avatar.png">
+<img src="/var/www/html/saluteora/laravel/public/images/avatar.png">
+
 // Non duplicare la registrazione dei componenti
 Blade::component('ui::components.icon', 'ui.icon');
 
@@ -201,7 +209,7 @@ class UIServiceProvider extends XotBaseServiceProvider
 - [Documentazione Folio](https://laravel.com/docs/folio)
 - [Documentazione Laravel Localization](https://github.com/mcamara/laravel-localization)
 - [Best Practices UI](./UI_BEST_PRACTICES.md)
-- [Guida Componenti](./COMPONENTS_GUIDE.md)
+- [Guida Componenti](components_guide.md)
 - [Componenti Blade Filament](https://filamentphp.com/docs/3.x/support/blade-components/overview)
 
 ## Gestione delle Rotte

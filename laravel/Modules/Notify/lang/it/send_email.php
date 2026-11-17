@@ -39,11 +39,11 @@ return [
         ],
         'empty' => [
             'heading' => '',
-<<<<<<< HEAD
             'label' => 'empty12',
-=======
-            'label' => 'empty',
->>>>>>> 6ed19256f (.)
+        ],
+        'page' => [
+            'title' => 'Test Invio Email',
+            'description' => 'Utilizza questo form per testare l\'invio di email tramite diversi provider e configurazioni.',
         ],
     ],
     'fields' => [
@@ -58,11 +58,7 @@ return [
         'template_id' => [
             'label' => 'Template Email',
             'placeholder' => 'Seleziona il template email da utilizzare',
-<<<<<<< HEAD
             'help' => 'Template predefinito per l\'email (opzionale]',
-=======
-            'help' => 'Template predefinito per l\'email (opzionale)',
->>>>>>> 6ed19256f (.)
             'description' => 'Template email da utilizzare per il contenuto',
             'tooltip' => 'I template permettono di standardizzare il formato delle email',
             'helper_text' => '',
@@ -76,26 +72,16 @@ return [
             'helper_text' => '',
         ],
         'cc' => [
-<<<<<<< HEAD
             'label' => 'Copia Conoscenza (CC]',
             'placeholder' => 'cc@esempio.com (opzionale]',
-=======
-            'label' => 'Copia Conoscenza (CC)',
-            'placeholder' => 'cc@esempio.com (opzionale)',
->>>>>>> 6ed19256f (.)
             'help' => 'Indirizzi email in copia conoscenza, separati da virgola',
             'description' => 'Indirizzi email in copia conoscenza',
             'tooltip' => 'I destinatari in CC vedranno tutti gli altri indirizzi',
             'helper_text' => '',
         ],
         'bcc' => [
-<<<<<<< HEAD
             'label' => 'Copia Nascosta (BCC]',
             'placeholder' => 'bcc@esempio.com (opzionale]',
-=======
-            'label' => 'Copia Nascosta (BCC)',
-            'placeholder' => 'bcc@esempio.com (opzionale)',
->>>>>>> 6ed19256f (.)
             'help' => 'Indirizzi email in copia nascosta, separati da virgola',
             'description' => 'Indirizzi email in copia nascosta',
             'tooltip' => 'I destinatari in BCC non vedranno gli altri indirizzi',
@@ -104,11 +90,7 @@ return [
         'from_email' => [
             'label' => 'Email Mittente',
             'placeholder' => 'mittente@dominio.com',
-<<<<<<< HEAD
             'help' => 'Indirizzo email del mittente (se diverso dal default]',
-=======
-            'help' => 'Indirizzo email del mittente (se diverso dal default)',
->>>>>>> 6ed19256f (.)
             'description' => 'Indirizzo email del mittente personalizzato',
             'tooltip' => 'L\'email del mittente apparirà nell\'intestazione',
             'helper_text' => '',
@@ -116,11 +98,7 @@ return [
         'from_name' => [
             'label' => 'Nome Mittente',
             'placeholder' => 'Nome del mittente',
-<<<<<<< HEAD
             'help' => 'Nome visualizzato del mittente (se diverso dal default]',
-=======
-            'help' => 'Nome visualizzato del mittente (se diverso dal default)',
->>>>>>> 6ed19256f (.)
             'description' => 'Nome visualizzato del mittente personalizzato',
             'tooltip' => 'Il nome del mittente apparirà accanto all\'email',
             'helper_text' => '',
@@ -128,11 +106,7 @@ return [
         'content' => [
             'label' => 'Contenuto Testo',
             'placeholder' => 'Inserisci il contenuto testuale dell\'email',
-<<<<<<< HEAD
             'help' => 'Contenuto testuale dell\'email (versione solo testo]',
-=======
-            'help' => 'Contenuto testuale dell\'email (versione solo testo)',
->>>>>>> 6ed19256f (.)
             'description' => 'Contenuto testuale dell\'email',
             'tooltip' => 'Il contenuto testuale è la versione plain text dell\'email',
             'helper_text' => '',
@@ -140,11 +114,7 @@ return [
         'body_html' => [
             'label' => 'Contenuto HTML',
             'placeholder' => '<h1>Titolo</h1><p>Contenuto dell\'email in formato HTML</p>',
-<<<<<<< HEAD
             'help' => 'Contenuto HTML formattato dell\'email (opzionale]',
-=======
-            'help' => 'Contenuto HTML formattato dell\'email (opzionale)',
->>>>>>> 6ed19256f (.)
             'description' => 'Contenuto HTML formattato dell\'email',
             'tooltip' => 'Il contenuto HTML permette formattazione avanzata',
             'helper_text' => '',
@@ -160,11 +130,7 @@ return [
         'attachments' => [
             'label' => 'Allegati',
             'placeholder' => 'Seleziona i file da allegare',
-<<<<<<< HEAD
             'help' => 'File da allegare all\'email (opzionale, max 10MB per file]',
-=======
-            'help' => 'File da allegare all\'email (opzionale, max 10MB per file)',
->>>>>>> 6ed19256f (.)
             'description' => 'File da allegare all\'email',
             'tooltip' => 'Gli allegati verranno inviati insieme all\'email',
             'helper_text' => '',
@@ -212,6 +178,12 @@ return [
             'description' => 'Abilita il tracking per monitorare l\'engagement',
             'tooltip' => 'Il tracking permette di monitorare l\'apertura e i click',
             'helper_text' => '',
+        ],
+        'recipient' => [
+            'label' => 'recipient',
+            'placeholder' => 'recipient',
+            'helper_text' => 'recipient',
+            'description' => 'recipient',
         ],
     ],
     'actions' => [
@@ -279,9 +251,23 @@ return [
         ],
         'emailFormActions' => [
             'label' => 'emailFormActions',
+            'icon' => 'emailFormActions',
+            'tooltip' => 'emailFormActions',
         ],
         'logout' => [
             'tooltip' => 'logout',
+            'label' => 'logout',
+            'icon' => 'logout',
+        ],
+        'save' => [
+            'label' => 'save',
+            'icon' => 'save',
+            'tooltip' => 'save',
+        ],
+        'profile' => [
+            'label' => 'profile',
+            'icon' => 'profile',
+            'tooltip' => 'profile',
         ],
     ],
     'messages' => [
@@ -316,13 +302,8 @@ return [
         'from_email_valid' => 'L\'email del mittente deve essere valida',
         'from_name_max' => 'Il nome del mittente è troppo lungo',
         'content_required' => 'Il contenuto testuale dell\'email è obbligatorio',
-<<<<<<< HEAD
         'content_max' => 'Il contenuto testuale è troppo lungo (max 10000 caratteri]',
         'body_html_max' => 'Il contenuto HTML è troppo lungo (max 20000 caratteri]',
-=======
-        'content_max' => 'Il contenuto testuale è troppo lungo (max 10000 caratteri)',
-        'body_html_max' => 'Il contenuto HTML è troppo lungo (max 20000 caratteri)',
->>>>>>> 6ed19256f (.)
         'template_exists' => 'Il template selezionato non esiste',
         'parameters_required' => 'I parametri sono obbligatori quando si utilizza un template',
         'parameters_json' => 'I parametri devono essere in formato JSON valido',
@@ -388,9 +369,6 @@ return [
         'html_content' => '<h1>Titolo</h1><p>Contenuto dell\'email in formato HTML</p>',
         'text_content' => 'Contenuto testuale dell\'email in formato plain text',
     ],
-<<<<<<< HEAD
     'label' => 'Send Email',
     'plural_label' => 'Send Email (Plurale)',
-=======
->>>>>>> 6ed19256f (.)
 ];

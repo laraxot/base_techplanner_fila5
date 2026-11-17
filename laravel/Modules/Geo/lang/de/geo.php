@@ -102,15 +102,8 @@ return [
             'date_range' => 'Periodo',
         ],
     ],
-<<<<<<< HEAD
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'fields' => [
-    ],
-    'actions' => [
-    ],
-
-    // Coordinate Picker - Map Controls
     'coordinate-picker' => [
         'search_placeholder' => 'Nach einem Ort suchen...',
         'use_my_location' => 'Meinen Standort verwenden',
@@ -138,6 +131,4 @@ return [
         'no_results' => 'Keine Ergebnisse',
         'coordinates_set' => 'Koordinaten gesetzt',
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

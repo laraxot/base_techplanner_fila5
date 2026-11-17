@@ -4,30 +4,35 @@ declare(strict_types=1);
 
 namespace Modules\Media\Enums;
 
-<<<<<<< HEAD
-use Modules\Xot\Traits\EnumTrait;
-=======
->>>>>>> 6ed19256f (.)
 use Filament\Support\Contracts\HasLabel;
 use Illuminate\Support\Facades\Lang;
 
 enum AttachmentTypeEnum: string implements HasLabel
 {
-<<<<<<< HEAD
-    use EnumTrait;
-
-=======
->>>>>>> 6ed19256f (.)
     case IMAGE = 'image';
     case VIDEO = 'video';
     case DOCUMENT = 'document';
     case MANUAL = 'manual';
 
+    /**
+     * @return array<string, string>
+     */
+    /**
+     * @return array<string, string>
+     */
     public static function getTypeNoteDescriptionsByValues(): array
     {
-        return collect(self::cases())
-            ->mapWithKeys(static fn (self $case): array => [$case->value => $case->getTypeNote()])
-            ->toArray();
+        /** @var array<string, string> $descriptions */
+        $descriptions = [];
+
+        foreach (self::cases() as $case) {
+            $note = $case->getTypeNote();
+            if ($note !== null) {
+                $descriptions[$case->value] = $note;
+            }
+        }
+
+        return $descriptions;
     }
 
     /* Method Modules\Media\Enums\AttachmentTypeEnum::operationCases() never returns null so it can be removed from the return type
@@ -44,20 +49,16 @@ enum AttachmentTypeEnum: string implements HasLabel
     {
         $translationKey = sprintf('media::attachments.type_notes.%s', $this->value);
         if (Lang::has($translationKey)) {
-            return trans($translationKey);
+            return Lang::string($translationKey);
         }
 
         return null;
     }
 
-<<<<<<< HEAD
-    
-=======
     public function getLabel(): string
     {
-        return trans('media::attachments.types.'.$this->value);
+        return Lang::string('media::attachments.types.'.$this->value);
     }
->>>>>>> 6ed19256f (.)
 
     // private static function translateBaseUniquePath(): string
     // {

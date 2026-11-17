@@ -5,42 +5,36 @@ declare(strict_types=1);
 return [
     'actions' => [
         'delete' => [
-            'label' => 'delete',
             'icon' => 'delete',
         ],
         'cancel' => [
-            'label' => 'cancel',
             'icon' => 'ui-cancel',
         ],
         'save' => [
-            'label' => 'save',
             'icon' => 'ui-save',
         ],
         'logout' => [
             'icon' => 'ui-logout',
-            'label' => 'logout',
         ],
         'profile' => [
             'icon' => 'profile',
-            'label' => 'profile',
         ],
     ],
     'fields' => [
         'password' => [
-            'label' => 'password',
-<<<<<<< HEAD
+            'label' => 'Password',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'email' => [
-            'label' => 'email',
+            'label' => 'E-mail',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'name' => [
-            'label' => 'name',
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -59,17 +53,4 @@ return [
     ],
     'label' => 'Edit User',
     'plural_label' => 'Edit User (Plurale)',
-=======
-        ],
-        'email' => [
-            'label' => 'email',
-        ],
-        'name' => [
-            'label' => 'name',
-        ],
-    ],
-    'navigation' => [],
-    'label' => '',
-    'plural_label' => '',
->>>>>>> 6ed19256f (.)
 ];

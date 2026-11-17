@@ -1,3 +1,13 @@
+---
+title: "Modern Tech Stack Optimization Guide"
+type: note
+status: unverified
+created: 2026-09-24
+updated: 2026-10-20
+module: Xot
+tags: [xot, docs]
+qmd: "Modern Tech Stack Optimization Guide"
+---
 # Modern Tech Stack Optimization Guide
 ## Filament 4 + Laravel 12 + PHP 8.3 Best Practices
 
@@ -848,18 +858,18 @@ class ContactDashboard extends Dashboard
         return [
             'overview' => [
                 'label' => 'Overview',
-                'url' => route('filament.quaeris.dashboard'),
-                'isActive' => request()->routeIs('filament.quaeris.dashboard'),
+                'url' => route('filament.<nome progetto>.dashboard'),
+                'isActive' => request()->routeIs('filament.<nome progetto>.dashboard'),
             ],
             'analytics' => [
                 'label' => 'Analytics',
-                'url' => route('filament.quaeris.analytics'),
-                'isActive' => request()->routeIs('filament.quaeris.analytics'),
+                'url' => route('filament.<nome progetto>.analytics'),
+                'isActive' => request()->routeIs('filament.<nome progetto>.analytics'),
             ],
             'reports' => [
                 'label' => 'Reports',
-                'url' => route('filament.quaeris.reports'),
-                'isActive' => request()->routeIs('filament.quaeris.reports'),
+                'url' => route('filament.<nome progetto>.reports'),
+                'isActive' => request()->routeIs('filament.<nome progetto>.reports'),
             ],
         ];
     }

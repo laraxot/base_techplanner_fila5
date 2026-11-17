@@ -1,6 +1,6 @@
 @props([
-    'title' => 'Dati Aziendali',
-    'subtitle' => 'Informazioni legali e di contatto',
+    'title' => __('pub_theme::block_defaults.company_data.title.title'),
+    'subtitle' => __('pub_theme::block_defaults.company_data.subtitle.message'),
     'fields' => []
 ])
 

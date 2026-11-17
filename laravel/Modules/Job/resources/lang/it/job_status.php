@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -48,23 +47,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'name' => [
-            'label' => 'Nome',
-        ],
-        'description' => [
-            'label' => 'Descrizione',
-        ],
-        'color' => [
-            'label' => 'Colore',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
-        ],
-        'updated_at' => [
-            'label' => 'Aggiornato il',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -75,8 +57,4 @@ return [
             'label' => 'Assegna al lavoro',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

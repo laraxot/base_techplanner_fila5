@@ -1,3 +1,23 @@
+---
+title: "ChangePasswordCommand"
+type: concept
+tags: [change, password, command]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "change-password-command changepasswordcommand"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./assign-module-command.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands-philosophy.md"
+  - "./console-commands.md"
+  - "./README.md"
+status: draft
+---
+
 # ChangePasswordCommand
 
 ## Panoramica
@@ -84,38 +104,25 @@ public function handle(): int
     try {
         // 1. Recupera email utente
         $email = $this->getUserEmail();
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // 2. Valida email
         if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $this->error('Email non valida: ' . $email);
             return Command::FAILURE;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // 3. Recupera utente
         $user = $this->getUserByEmail($email);
         if ($user === null) {
             $this->error("Utente con email '{$email}' non trovato.");
             return Command::FAILURE;
         }
-<<<<<<< HEAD
         
-=======
-
->>>>>>> 6ed19256f (.)
         // 4. Verifica persistenza
         if (!$user->exists) {
             $this->error('Utente non persistente nel database.');
             return Command::FAILURE;
         }
-<<<<<<< HEAD
         
         // 5. Mostra informazioni utente
         $this->displayUserInfo($user);
@@ -124,21 +131,10 @@ public function handle(): int
         $password = $this->getNewPassword();
         $confirmPassword = $this->confirmPassword($password);
         
-=======
-
-        // 5. Mostra informazioni utente
-        $this->displayUserInfo($user);
-
-        // 6. Gestisce password
-        $password = $this->getNewPassword();
-        $confirmPassword = $this->confirmPassword($password);
-
->>>>>>> 6ed19256f (.)
         if ($confirmPassword === null) {
             $this->error('Le password non coincidono!');
             return Command::FAILURE;
         }
-<<<<<<< HEAD
         
         // 7. Aggiorna password
         $this->updateUserPassword($user, $password);
@@ -149,18 +145,6 @@ public function handle(): int
         $this->info('Password cambiata con successo!');
         return Command::SUCCESS;
         
-=======
-
-        // 7. Aggiorna password
-        $this->updateUserPassword($user, $password);
-
-        // 8. Dispatches evento
-        event(new NewPasswordSet($user));
-
-        $this->info('Password cambiata con successo!');
-        return Command::SUCCESS;
-
->>>>>>> 6ed19256f (.)
     } catch (\Exception $e) {
         $this->error('Errore durante il cambio password: ' . $e->getMessage());
         return Command::FAILURE;
@@ -174,19 +158,11 @@ Recupera l'email dall'opzione o prompt interattivo:
 private function getUserEmail(): string
 {
     $email = $this->option('email');
-<<<<<<< HEAD
     
     if (empty($email)) {
         $email = text('Inserisci l\'email dell\'utente:');
     }
     
-=======
-
-    if (empty($email)) {
-        $email = text('Inserisci l\'email dell\'utente:');
-    }
-
->>>>>>> 6ed19256f (.)
     return trim($email);
 }
 ```
@@ -249,11 +225,7 @@ private function updateUserPassword(\Modules\User\Models\User $user, string $pas
     // Recupera la configurazione password
     $passwordData = PasswordData::make();
     $passwordExpiryDateTime = now()->addDays($passwordData->expires_in);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     // Aggiorna l'utente
     $user->update([
         'password_expires_at' => $passwordExpiryDateTime,
@@ -261,11 +233,7 @@ private function updateUserPassword(\Modules\User\Models\User $user, string $pas
         'password' => Hash::make($password),
         'updated_by' => 'console-command',
     ]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $this->info('Password aggiornata nel database.');
 }
 ```
@@ -393,17 +361,10 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - `Modules\Xot\Datas\XotData`: Accesso centralizzato dati
 
 ## Collegamenti
-<<<<<<< HEAD
-- [README Comandi Console](readme.md)
+- [README Comandi Console](README.md)
 - [PasswordData](../datas/passworddata.md)
 - [NewPasswordSet Event](../events/newpasswordset.md)
 - [User Model](../models/user.md)
-=======
->>>>>>> 6ed19256f (.)
-- [README Comandi Console](README.md)
-- [PasswordData](../Datas/PasswordData.md)
-- [NewPasswordSet Event](../Events/NewPasswordSet.md)
-- [User Model](../Models/User.md)
 - [Password Management](../password.md)
 
 ## Aggiornamenti
@@ -423,8 +384,6 @@ php artisan test --filter=ChangePasswordCommandIntegrationTest
 - ✅ **Gestione Password**: Hash e scadenza
 - ✅ **Eventi**: Dispatched NewPasswordSet
 
-<<<<<<< HEAD
 *Ultimo aggiornamento: 2025-01-27*
-=======
-*Ultimo aggiornamento: 2025-01-27*
->>>>>>> 6ed19256f (.)
+
+

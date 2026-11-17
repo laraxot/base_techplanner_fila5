@@ -1,3 +1,10 @@
+---
+title: "Fix: subject_id e causer_id devono supportare UUID"
+qmd: "activity errori subject id causer id uuid migration fix md"
+type: note
+tags: [documentation]
+---
+
 # Fix: subject_id e causer_id devono supportare UUID
 
 ## Problema
@@ -40,9 +47,12 @@ Prima di eseguire i test, migrare il DB di test:
 ```bash
 # Dati sacri: mai migrate:fresh né --force
 APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate
+APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate:fresh --force
+APP_ENV=testing DB_DATABASE=laravelpizza_data_test DB_DATABASE_USER=laravelpizza_user_test php artisan migrate:fresh --force
+APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate:fresh --force (.) 9daa1718 (refactor: update project references to use `<nome progetto>` in various documentation and configuration files)APP_ENV=testing DB_DATABASE=<nome progetto>_data_test DB_DATABASE_USER=<nome progetto>_user_test php artisan migrate:fresh --force
 ```
 
 ## Riferimenti
 
-- [migration-spatie-integration.md](./migration-spatie-integration.md)
-- [errori-migrazione-activity-table-lezioni-1.md](./legacy/errori-migrazione-activity-table-lezioni-1.md)
+- [migration-spatie-integration.md](../migration-spatie-integration.md)
+- [errori-migrazione-activity-table-lezioni-1.md](../archive/errori-migrazione-activity-table-lezioni-1.md)

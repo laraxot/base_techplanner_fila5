@@ -36,12 +36,13 @@ class SmtpData extends Data
 
     public ?string $local_domain = null;
 
+    /** @var array<string, self> */
     private static array $instance = [];
 
     public static function make(string $name = 'smtp'): self
     {
         if (! isset(self::$instance[$name]) || ! (self::$instance[$name] instanceof self)) {
-            // $data = TenantService::getConfig('mail');
+            // Was: TenantService::getConfig('mail') — use GetTenantConfigArrayAction::execute('mail').
             Assert::isArray($data = config('mail'));
             $data_name = Arr::get($data, 'mailers.'.$name);
             self::$instance[$name] = self::from($data_name);
@@ -60,8 +61,7 @@ class SmtpData extends Data
             'username' => $this->username,
             'password' => $this->password,
             'timeout' => $this->timeout,
-            'local_domain' => $this->local_domain,
-        ];
+            'local_domain' => $this->local_domain];
     }
 
     public function getTransport(): EsmtpTransport
@@ -83,10 +83,7 @@ class SmtpData extends Data
         } catch (Exception $e) {
             throw new Exception('Errore durante la connessione SMTP: '.$e->getMessage());
         }
-<<<<<<< HEAD
 
-=======
->>>>>>> 6ed19256f (.)
         return new Mailer($transport);
     }
 

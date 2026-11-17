@@ -28,12 +28,7 @@ class SendScheduledPushNotification implements ShouldQueue
 
     public function __construct(
         private string $jobId
-<<<<<<< HEAD
     ) {}
-=======
-    ) {
-    }
->>>>>>> 6ed19256f (.)
 
     /**
      * Execute the job.
@@ -54,14 +49,23 @@ class SendScheduledPushNotification implements ShouldQueue
 
             Assert::isArray($notificationData, 'Notification data must be array');
 
-            $tokens = $notificationData['tokens'] ?? [];
-            Assert::isArray($tokens, 'Tokens must be array');
+            $rawTokens = $notificationData['tokens'] ?? [];
+            Assert::isArray($rawTokens, 'Tokens must be array');
+            /** @var list<string> $tokens */
+            $tokens = array_values(array_filter(
+                $rawTokens,
+                static fn (mixed $token): bool => is_string($token) && $token !== '',
+            ));
 
-            $notification = $notificationData['notification'] ?? [];
-            Assert::isArray($notification, 'Notification must be array');
+            $rawNotification = $notificationData['notification'] ?? [];
+            Assert::isArray($rawNotification, 'Notification must be array');
+            /** @var array<string, mixed> $notification */
+            $notification = $rawNotification;
 
-            $data = $notificationData['data'] ?? [];
-            Assert::isArray($data, 'Data must be array');
+            $rawData = $notificationData['data'] ?? [];
+            Assert::isArray($rawData, 'Data must be array');
+            /** @var array<string, mixed> $data */
+            $data = $rawData;
 
             // Invia notifica
             $result = $pushService->sendToDevices(
@@ -70,12 +74,8 @@ class SendScheduledPushNotification implements ShouldQueue
                 $data
             );
 
-            // Log risultato
-<<<<<<< HEAD
-            Log::debug('Scheduled push notification sent', [
-=======
+            // Log risultato (info: audit operativo di invio programmato)
             Log::info('Scheduled push notification sent', [
->>>>>>> 6ed19256f (.)
                 'job_id' => $this->jobId,
                 'result' => $result,
             ]);

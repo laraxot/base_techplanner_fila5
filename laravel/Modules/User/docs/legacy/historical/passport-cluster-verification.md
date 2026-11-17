@@ -70,7 +70,7 @@ find Modules/User/app/Filament/Clusters/Passport/Resources -name "*Resource.php"
 
 - [Passport Cluster Resources Only Rule](./passport-cluster-resources-only-rule.md) - Regola critica
 - [Passport Cluster Implementation](./passport-cluster-implementation-completed.md) - Implementazione
-- [Passport Cluster Summary](./passport-cluster-summary.md) - Riepilogo
+- [Passport Cluster Summary](../../passport-cluster-summary.md) - Riepilogo
 
 ---
 

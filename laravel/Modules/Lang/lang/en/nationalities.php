@@ -1,12 +1,6 @@
 <?php
 
-declare(strict_types=1);
-
 return [
-<<<<<<< HEAD
-=======
-    // Europe
->>>>>>> 6ed19256f (.)
     'it' => 'Italian',
     'fr' => 'French',
     'de' => 'German',
@@ -51,10 +45,6 @@ return [
     'ge' => 'Georgian',
     'am' => 'Armenian',
     'az' => 'Azerbaijani',
-<<<<<<< HEAD
-=======
-    // Americas
->>>>>>> 6ed19256f (.)
     'us' => 'American',
     'ca' => 'Canadian',
     'mx' => 'Mexican',
@@ -97,10 +87,6 @@ return [
     'kn' => 'Kittitian',
     'dm' => 'Dominican',
     'bs' => 'Bahamian',
-<<<<<<< HEAD
-=======
-    // Asia
->>>>>>> 6ed19256f (.)
     'cn' => 'Chinese',
     'jp' => 'Japanese',
     'kr' => 'South Korean',
@@ -145,10 +131,6 @@ return [
     'kg' => 'Kyrgyz',
     'tj' => 'Tajik',
     'tm' => 'Turkmen',
-<<<<<<< HEAD
-=======
-    // Africa
->>>>>>> 6ed19256f (.)
     'eg' => 'Egyptian',
     'ly' => 'Libyan',
     'tn' => 'Tunisian',
@@ -189,7 +171,7 @@ return [
     'lr' => 'Liberian',
     'tg' => 'Togolese',
     'bj' => 'Beninese',
-    'bf' => 'Burkinabé',
+    'bf' => 'Burkinabe',
     'ml' => 'Malian',
     'ne' => 'Nigerien',
     'td' => 'Chadian',
@@ -203,10 +185,6 @@ return [
     'ao' => 'Angolan',
     'aq' => 'Antarctic',
     'zr' => 'Zairian',
-<<<<<<< HEAD
-=======
-    // Oceania
->>>>>>> 6ed19256f (.)
     'au' => 'Australian',
     'ax' => 'Alandish',
     'nz' => 'New Zealander',
@@ -224,14 +202,10 @@ return [
     'pw' => 'Palauan',
     'fm' => 'Micronesian',
     'mh' => 'Marshallese',
-<<<<<<< HEAD
-=======
-    // Others
->>>>>>> 6ed19256f (.)
     'xk' => 'Kosovar',
     'va' => 'Vatican',
     'sm' => 'Sammarinese',
-    'mc' => 'Monégasque',
+    'mc' => 'Monegasque',
     'li' => 'Liechtensteiner',
     'ad' => 'Andorran',
     'gi' => 'Gibraltarian',
@@ -280,20 +254,49 @@ return [
     'mp' => 'Northern Mariana Islander',
     'um' => 'U.S. Minor Outlying Islands',
     'eh' => 'Western Sahara',
-<<<<<<< HEAD
     'navigation' => [
         'label' => 'Missing Navigation Label',
         'plural_label' => 'Missing Navigation Plural Label',
-        'group' => 'Missing Group',
+        'group' => [
+            'name' => 'General',
+            'description' => 'General Settings',
+        ],
         'icon' => 'heroicon-o-puzzle-piece',
-        'sort' => 100,
+        'sort' => '100',
+        'name' => 'Nationalities',
+        'plural' => 'Nationalities',
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
     'fields' => [
+        'id' => [
+            'label' => 'Identifier',
+            'tooltip' => 'Unique record identifier',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'created_at' => [
+            'label' => 'Created at',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
+        'updated_at' => [
+            'label' => 'Last modified',
+            'tooltip' => '',
+            'helper_text' => '',
+            'description' => '',
+        ],
     ],
     'actions' => [
+        'create' => [
+            'label' => 'Create Nationalities',
+        ],
+        'edit' => [
+            'label' => 'Edit Nationalities',
+        ],
+        'delete' => [
+            'label' => 'Delete Nationalities',
+        ],
     ],
-=======
->>>>>>> 6ed19256f (.)
 ];

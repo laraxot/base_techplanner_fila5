@@ -1,3 +1,15 @@
+---
+title: "filament page naming convention"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "filament page naming convention"
+issues: []
+discussions: []
+status: draft
+---
+
 # Convenzioni di Naming per Pagine Filament
 
 ## Regola Fondamentale
@@ -53,15 +65,9 @@ Le pagine con nomi non conformi potrebbero:
 Eseguire il seguente comando per trovare pagine non conformi:
 
 ```bash
-<<<<<<< HEAD
 find Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
 find Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
 find Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
-=======
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
-find /var/www/html/saluteora/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
-find /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti
@@ -123,11 +129,7 @@ Le pagine con nomi non conformi potrebbero:
 Eseguire il seguente comando per trovare pagine non conformi:
 
 ```bash
-<<<<<<< HEAD
 find Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
-=======
-find /var/www/html/<directory progetto>/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
->>>>>>> 6ed19256f (.)
 ```
 
 ## Riferimenti

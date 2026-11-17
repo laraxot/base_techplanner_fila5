@@ -14,7 +14,6 @@ return [
     'fields' => [
         'id' => [
             'label' => 'ID',
-<<<<<<< HEAD
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -60,29 +59,6 @@ return [
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-=======
-        ],
-        'job_id' => [
-            'label' => 'ID lavoro',
-        ],
-        'exportable_type' => [
-            'label' => 'Tipo esportabile',
-        ],
-        'file_path' => [
-            'label' => 'Percorso file',
-        ],
-        'format' => [
-            'label' => 'Formato',
-        ],
-        'status' => [
-            'label' => 'Stato',
-        ],
-        'created_at' => [
-            'label' => 'Creato il',
-        ],
-        'completed_at' => [
-            'label' => 'Completato il',
->>>>>>> 6ed19256f (.)
         ],
     ],
     'actions' => [
@@ -93,8 +69,4 @@ return [
             'label' => 'Scarica',
         ],
     ],
-<<<<<<< HEAD
 ];
-=======
-];
->>>>>>> 6ed19256f (.)

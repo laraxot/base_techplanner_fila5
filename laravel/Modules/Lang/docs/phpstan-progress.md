@@ -1,4 +1,14 @@
-# 🌍 PHPStan Progress Report - Modulo Lang
+# PHPStan Progress Report - Modulo Lang
+
+## Wave 2026-11-17 — 182 → 0
+
+Verify: `cd laravel && ./vendor/bin/phpstan analyse Modules/Rating Modules/Lang --memory-limit=-1 --error-format=raw` → **0**.
+
+Root causes: typed translator/config loader; `is_string` on `__()`; Eloquent `query()` without `|Model`; mcamara via concrete class; views via `Contracts\View\Factory`; Pest `Ensure`/`ensure()`; removed legacy `tests/unit/` duplicate.
+
+Related: [wiki/tasks/lang-phpstan-level-10.md](wiki/tasks/lang-phpstan-level-10.md) · [PHPSTAN-FIXES.md](PHPSTAN-FIXES.md)
+
+---
 
 ## Data: [DATE]
 ## Status: 🔄 IN PROGRESS (38 errori rimanenti, da 58)

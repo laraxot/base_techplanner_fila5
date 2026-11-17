@@ -11,7 +11,6 @@ use Modules\Xot\Filament\Blocks\XotBaseBlock;
 
 class SocialLinksBlock extends XotBaseBlock
 {
-    #[\Override]
     public static function getBlockSchema(): array
     {
         return [
@@ -37,10 +36,6 @@ class SocialLinksBlock extends XotBaseBlock
 
     public static function getBlockLabel(): string
     {
-<<<<<<< HEAD
-        return \trans_string('cms::filament.blocks.footer.social.label');
-=======
-        return \trans_string('cms::filament.blocks.footer.social.label') ?? 'Block';
->>>>>>> 6ed19256f (.)
+        return \trans_string('cms::filament.blocks.footer.social.label') ?: 'Footer Social Links Block';
     }
 }

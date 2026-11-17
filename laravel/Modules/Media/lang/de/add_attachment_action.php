@@ -6,7 +6,6 @@ return [
     'title' => 'Anhänge',
     'label' => 'Anhang hochladen',
     'fields' => [
-<<<<<<< HEAD
         'file' => [
             'label' => 'Datei',
             'tooltip' => '',
@@ -33,19 +32,11 @@ return [
         ],
     ],
     'navigation' => [
-        'label' => 'Missing Navigation Label',
+        'label' => 'Anhang hochladen',
         'plural_label' => 'Missing Navigation Plural Label',
         'group' => 'Missing Group',
         'icon' => 'heroicon-o-puzzle-piece',
         'sort' => 100,
     ],
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-=======
-        'file' => 'Datei',
-        'file_hint' => '',
-        'name' => 'Name',
-        'name_hint' => 'Dateiname',
->>>>>>> 6ed19256f (.)
-    ],
 ];

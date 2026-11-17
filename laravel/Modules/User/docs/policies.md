@@ -1,3 +1,28 @@
+---
+title: "User Module Policies Documentation"
+type: concept
+tags: [policies]
+created: 2026-07-14
+updated: 2026-07-14
+qmd: "policies user module policies documentation"
+issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
+discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
+related:
+  - "./00-index.md"
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+status: draft
+---
+
 # User Module Policies Documentation
 
 ## Overview
@@ -34,11 +59,7 @@ abstract class UserBasePolicy
 **Key Logic**: Users can view their own authentication records, admins can view all
 **Permissions**: `authentication.viewAny`, `authentication.view`, `authentication.create`, etc.
 
-<<<<<<< HEAD
 #### AuthenticationLogPolicy  
-=======
-#### AuthenticationLogPolicy
->>>>>>> 6ed19256f (.)
 **Purpose**: Manages authentication log access
 **Key Logic**: Users can view their own logs, system admins have full access
 **Special Considerations**: Includes relationship checking for user ownership
@@ -94,11 +115,7 @@ abstract class UserBasePolicy
 **Already Implemented**: Pre-existing policy
 
 #### PermissionPolicy
-<<<<<<< HEAD
 **Purpose**: Permission system access control  
-=======
-**Purpose**: Permission system access control
->>>>>>> 6ed19256f (.)
 **Already Implemented**: Pre-existing policy
 
 ### Additional Models with Policies
@@ -134,11 +151,7 @@ All policies follow the standard Laravel permission pattern:
 
 ```
 {model_name}.viewAny
-<<<<<<< HEAD
 {model_name}.view  
-=======
-{model_name}.view
->>>>>>> 6ed19256f (.)
 {model_name}.create
 {model_name}.update
 {model_name}.delete
@@ -262,11 +275,7 @@ public function test_user_can_view_own_profile()
 {
     $user = User::factory()->create();
     $profile = Profile::factory()->create(['user_id' => $user->id]);
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $this->assertTrue($user->can('view', $profile));
 }
 
@@ -274,11 +283,7 @@ public function test_user_cannot_view_other_profile()
 {
     $user = User::factory()->create();
     $otherProfile = Profile::factory()->create();
-<<<<<<< HEAD
     
-=======
-
->>>>>>> 6ed19256f (.)
     $this->assertFalse($user->can('view', $otherProfile));
 }
 ```
@@ -302,11 +307,7 @@ Test policy integration with Filament resources and controllers.
 
 ## Related Documentation
 
-<<<<<<< HEAD
 - [Main Policies Documentation](../../../../docs/policies_implementation.md)
-=======
-- [Main Policies Documentation](../../../docs/policies_implementation.md)
->>>>>>> 6ed19256f (.)
 - [User Authentication](./authentication.md)
 - [Permissions and Roles](./permissions.md)
 - [Team Management](./teams.md)
@@ -326,8 +327,4 @@ Test policy integration with Filament resources and controllers.
 3. Validate model ownership logic
 4. Test super admin override
 
-<<<<<<< HEAD
 *Last updated: January 2025*
-=======
-*Last updated: January 2025*
->>>>>>> 6ed19256f (.)
