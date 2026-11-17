@@ -30,13 +30,19 @@
 - ⚡ **[Auth Widgets](./login-widget-fix.md)** - Componenti di login/registrazione riutilizzabili.
 - 🔐 **[Socialite + Microsoft OAuth](./socialite-microsoft-integration.md)** - Integrazione autenticazione Microsoft (NEW)
 
-## 🧪 **Qualità e Sviluppo**
-- ✅ **[PHPStan Analysis](./phpstan-level10-user-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Syntax Blockers 2026-03-10](./phpstan-syntax-blockers-2026-03-10.md)** - Severe syntax errors e merge marker da eliminare prima dell'analisi completa.
-- 🧭 **[IDE Helper Models Wave 2026-03-10](./ide-helper-models-wave-2026-03-10.md)** - Distinzione tra errori sandbox e reali durante `php artisan ide-helper:models -W`.
-- 🔬 **[Testing Identity](./testing.md)** - Test di autenticazione e autorizzazione (Pest).
-- 🧬 **[Model Inheritance](./model-inheritance-rules.md)** - Regole per estendere il modello User.
-- 🧪 **PSR-4 Test Helpers** - Nei test trait/helper preferire anonymous classes o fixture dedicate sotto `tests/` con percorso coerente PSR-4.
+## Qualità e sviluppo (PHPStan)
+
+| Ruolo | File |
+|-------|------|
+| Procedura swarm (repo) | [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md) |
+| Story modulo zero errori | [stories/phpstan-zero-errors-user.story.md](./stories/phpstan-zero-errors-user.story.md) |
+| Snapshot compliance | [phpstan-compliance.md](./phpstan-compliance.md) |
+| Analisi storica (non SSoT) | [phpstan.md](./phpstan.md), `phpstan-fixes*.md`, `phpstan-*es.md` — **non** creare altri; aggiornare story + compliance |
+
+Altri:
+- [Testing Identity](./testing.md) — Pest auth
+- [Model Inheritance](./model-inheritance-rules.md)
+- PSR-4 test helpers: anonymous class / fixture sotto `tests/`
 
 ## 🧹 **Manutenzione**
 - 🗑️ **[Cleanup Plan](./todo.md)** - Strategia per gestire i 550+ documenti accumulati.

@@ -64,9 +64,16 @@ In compliance with the [Global Rule](../../../../docs/wiki/rules/module-root-php
 - **app/**: Home for all PHP functional code (mapped via PSR-4).
 - **database/**: Strictly lowercase for migrations/factories/seeders.
 
-### PHPStan Memory Management
-Per evitare crash dei parallel workers su analisi massive, usare sempre:
-`php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1`
+### PHPStan — dove guardare (DRY)
+
+| Ruolo | Path |
+|-------|------|
+| Procedura / saturazione host | [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md) |
+| Story zero errori User | [stories/phpstan-zero-errors-user.story.md](./stories/phpstan-zero-errors-user.story.md) |
+| Snapshot compliance | [phpstan-compliance.md](./phpstan-compliance.md) |
+| Decine di `phpstan-*.md` in docs/ | **storici** — non SSoT; non aggiungere file con date nel nome |
+
+Memoria: `php -d memory_limit=-1 ./vendor/bin/phpstan analyse [target] --memory-limit=-1` (da `laravel/`). Non lanciare `analyse Modules` se host saturo.
 
 ### Profiles migration governance (workorder)
 
