@@ -2,19 +2,15 @@
 
 declare(strict_types=1);
 
+// Etichette della tabella utenti (UsersTable / BaseUsersTable).
+
 return [
     'fields' => [
-<<<<<<< .merge_file_dUKyMz
         'id' => [
             'label' => 'ID',
         ],
-=======
->>>>>>> .merge_file_oPJ5Vj
         'name' => [
-            'label' => 'Nome e cognome',
-        ],
-        'email' => [
-            'label' => 'Email',
+            'label' => 'Nome',
         ],
         'first_name' => [
             'label' => 'Nome',
@@ -22,11 +18,14 @@ return [
         'last_name' => [
             'label' => 'Cognome',
         ],
-        'is_active' => [
-            'label' => 'Attivo',
+        'email' => [
+            'label' => 'E-mail',
         ],
         'email_verified_at' => [
-            'label' => 'Email verificata il',
+            'label' => 'E-mail verificata il',
+        ],
+        'is_active' => [
+            'label' => 'Attivo',
         ],
         'is_otp' => [
             'label' => 'Password temporanea',
@@ -35,79 +34,73 @@ return [
             'label' => 'Lingua',
         ],
         'current_team_id' => [
-            'label' => 'Team corrente',
+            'label' => 'Team attuale',
         ],
         'type' => [
             'label' => 'Tipo',
-        ],
-        'state' => [
-            'label' => 'Stato',
-        ],
-        'password_expires_at' => [
-            'label' => 'Scadenza password',
-        ],
-        'id' => [
-            'label' => 'ID',
         ],
         'created_at' => [
             'label' => 'Creato il',
         ],
         'updated_at' => [
-            'label' => 'Aggiornato il',
+            'label' => 'Modificato il',
+        ],
+        'state' => [
+            'label' => 'Stato',
+        ],
+        'password_expires_at' => [
+            'label' => 'Password scade il',
         ],
     ],
     'actions' => [
         'create' => [
-            'label' => 'Nuovo utente',
+            'label' => 'create',
             'icon' => 'create',
             'tooltip' => 'create',
         ],
-        'delete' => [
-            'label' => 'Elimina',
-            'icon' => 'delete',
-            'tooltip' => 'delete',
-        ],
-        'change_password' => [
-            'label' => 'Cambia password',
-            'tooltip' => 'Imposta una nuova password',
-        ],
-        'deactivate' => [
-            'label' => 'Disattiva',
-            'tooltip' => 'Toglie l\'accesso: l\'utente viene eliminato (ripristinabile dal cestino)',
-            'icon' => 'deactivate',
-        ],
-        'edit' => [
-            'label' => 'Modifica',
-            'tooltip' => 'edit',
-            'icon' => 'edit',
-        ],
-        'view' => [
-            'label' => 'Apri',
-            'tooltip' => 'view',
-            'icon' => 'view',
-        ],
-        'verify_email' => [
-            'label' => 'Segna email verificata',
-            'tooltip' => 'verify_email',
-            'icon' => 'verify_email',
-        ],
-        'export' => [
-            'label' => 'Esporta',
-            'icon' => 'export',
-            'tooltip' => 'export',
-        ],
-<<<<<<< .merge_file_dUKyMz
-=======
         'layout' => [
             'label' => 'layout',
             'icon' => 'layout',
             'tooltip' => 'layout',
+        ],
+        'delete' => [
+            'label' => 'delete',
+            'icon' => 'delete',
+            'tooltip' => 'delete',
         ],
         'changePassword' => [
             'label' => 'changePassword',
             'icon' => 'changePassword',
             'tooltip' => 'changePassword',
         ],
->>>>>>> .merge_file_oPJ5Vj
+        'deactivate' => [
+            'label' => 'Disattiva',
+            'icon' => 'deactivate',
+            'tooltip' => 'deactivate',
+        ],
+        'edit' => [
+            'tooltip' => 'edit',
+            'icon' => 'edit',
+            'label' => 'edit',
+        ],
+        'view' => [
+            'tooltip' => 'view',
+            'icon' => 'view',
+            'label' => 'view',
+        ],
+        'verify_email' => [
+            'tooltip' => 'verify_email',
+            'icon' => 'verify_email',
+            'label' => 'Verifica e-mail',
+        ],
+        'export' => [
+            'label' => 'Esporta',
+            'icon' => 'export',
+            'tooltip' => 'export',
+        ],
+        'change_password' => [
+            'label' => 'Cambia password',
+            'tooltip' => 'Imposta una nuova password',
+        ],
     ],
 ];

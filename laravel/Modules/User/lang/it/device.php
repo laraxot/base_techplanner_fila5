@@ -124,12 +124,9 @@ return [
             'help' => 'Indica se è uno smartphone o telefono cellulare',
             'description' => '',
         ],
-<<<<<<< .merge_file_IGN19O
-=======
         'created_at' => [
             'label' => 'Creato il',
         ],
->>>>>>> .merge_file_3bVDoC
     ],
     'actions' => [
         'create' => [

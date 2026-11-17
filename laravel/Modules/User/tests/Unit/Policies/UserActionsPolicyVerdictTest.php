@@ -9,11 +9,8 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-<<<<<<< .merge_file_KIlp7o
 uses(\Modules\User\Tests\TestCase::class);
-=======
 uses(TestCase::class);
->>>>>>> .merge_file_HZkanj
 
 /*
  * Le azioni di riga sugli utenti (cambio password, verifica email, "deactivate") chiedono al Gate `update` o `delete`:

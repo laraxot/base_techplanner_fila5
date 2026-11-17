@@ -3,39 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_7wX7QO
-    'fields' => [
-        'id' => ['label' => 'ID'],
-        'uuid' => ['label' => 'UUID'],
-        'user_id' => ['label' => 'Utente'],
-        'first_name' => ['label' => 'Nome'],
-        'last_name' => ['label' => 'Cognome'],
-        'email' => ['label' => 'E-mail'],
-        'phone' => ['label' => 'Telefono'],
-        'status' => ['label' => 'Stato'],
-        'is_active' => ['label' => 'Attivo'],
-        'created_at' => ['label' => 'Creato il'],
-        'updated_at' => ['label' => 'Modificato il'],
-    ],
-=======
->>>>>>> .merge_file_M4E9mp
-    'actions' => [
-        'create' => [
-            'icon' => 'create',
-        ],
-        'layout' => [
-            'icon' => 'layout',
-        ],
-        'delete' => [
-            'icon' => 'delete',
-        ],
-        'view' => [
-            'icon' => 'view',
-        ],
-        'edit' => [
-            'icon' => 'edit',
-        ],
-    ],
     'fields' => [
         'id' => [
             'label' => 'ID',
@@ -69,6 +36,23 @@ return [
         ],
         'updated_at' => [
             'label' => 'Modificato il',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'icon' => 'create',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
+        'edit' => [
+            'icon' => 'edit',
         ],
     ],
 ];

@@ -40,12 +40,6 @@ return [
             'helper_text' => 'Sessione prolungata su dispositivo attendibile',
             'placeholder' => 'remember',
         ],
-        'token' => [
-            'label' => 'token',
-            'description' => 'token',
-            'helper_text' => 'token',
-            'placeholder' => 'token',
-        ],
         'state' => [
             'description' => 'state',
             'label' => 'Stato',
@@ -67,15 +61,12 @@ return [
             'helper_text' => 'name',
             'description' => 'name',
         ],
-<<<<<<< .merge_file_jKKZTB
         'token' => [
             'description' => 'token',
             'helper_text' => 'token',
             'label' => 'Token',
             'placeholder' => 'token',
         ],
-=======
->>>>>>> .merge_file_ZN8uI9
     ],
     'actions' => [
         'showPassword' => [

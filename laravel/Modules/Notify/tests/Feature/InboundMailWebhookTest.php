@@ -50,13 +50,7 @@ test('inbound webhook stores postmark payload', function (): void {
         ->where('message_id', 'msg-123@postmarkapp.com')
         ->first();
 
-<<<<<<< .merge_file_vw4LYe
-    expect($email)->toBeInstanceOf(InboundEmail::class);
-    assert($email instanceof InboundEmail);
-
-=======
     Assert::assertInstanceOf(InboundEmail::class, $email);
->>>>>>> .merge_file_5AVULC
     expect($email->from_email)->toBe('mario@example.com')
         ->and($email->from_name)->toBe('Mario Rossi')
         ->and($email->to_email)->toBe('noreply@fixcity.eu')

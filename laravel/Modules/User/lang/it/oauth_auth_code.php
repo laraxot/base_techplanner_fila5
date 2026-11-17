@@ -63,13 +63,9 @@ return [
                 'label' => 'client.name',
             ],
         ],
-<<<<<<< .merge_file_sNA4Du
-        'created_at' => ['label' => 'Creato il'],
-=======
         'created_at' => [
             'label' => 'Creato il',
         ],
->>>>>>> .merge_file_XpqRT4
     ],
     'actions' => [
         'revoke' => [

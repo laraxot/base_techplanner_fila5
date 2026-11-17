@@ -16,14 +16,10 @@ return [
     ],
     'fields' => [
         'name' => [
-<<<<<<< .merge_file_41Iq28
             'label' => 'Nome',
-=======
->>>>>>> .merge_file_OrBNKN
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
-            'label' => 'Nome',
         ],
         'create' => [
             'tooltip' => '',

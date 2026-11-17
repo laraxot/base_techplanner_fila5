@@ -15,10 +15,7 @@ use Modules\User\Models\Team;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Datas\XotData;
-<<<<<<< .merge_file_6KuIcW
 use Spatie\MediaLibrary\MediaCollections\Models\Media;
-=======
->>>>>>> .merge_file_tDCev6
 
 uses(TestCase::class);
 

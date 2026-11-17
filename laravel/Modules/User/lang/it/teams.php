@@ -36,8 +36,6 @@ return [
             'description' => 'Data e ora dell\'ultima modifica al team',
             'tooltip' => '',
         ],
-<<<<<<< .merge_file_cmtxV6
-=======
         'id' => [
             'label' => 'ID',
         ],
@@ -53,7 +51,6 @@ return [
         'description' => [
             'label' => 'Descrizione',
         ],
->>>>>>> .merge_file_Bi5JWb
     ],
     'actions' => [
         'create' => [

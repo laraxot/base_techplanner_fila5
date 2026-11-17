@@ -2,20 +2,14 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_W8pSB3
 use Illuminate\Contracts\Support\Htmlable;
-=======
->>>>>>> .merge_file_oV9Md8
 use Modules\User\Enums\UserType;
 use Modules\User\Filament\Resources\UserResource;
 use Modules\User\Filament\Resources\UserResource\Pages\CreateUser;
 use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
-<<<<<<< .merge_file_W8pSB3
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 use PHPUnit\Framework\Assert;
-=======
->>>>>>> .merge_file_oV9Md8
 
 /**
  * Verifica che CreateUser esponga il contratto Filament atteso
@@ -26,11 +20,8 @@ use PHPUnit\Framework\Assert;
 uses(TestCase::class);
 
 beforeEach(function (): void {
-<<<<<<< .merge_file_W8pSB3
     TestCase::$createUserPage = new CreateUser;
-=======
     $this->page = new CreateUser();
->>>>>>> .merge_file_oV9Md8
 });
 
 test('create user page has correct resource', function (): void {

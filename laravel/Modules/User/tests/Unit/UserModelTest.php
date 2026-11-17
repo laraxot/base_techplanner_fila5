@@ -2,21 +2,14 @@
 
 declare(strict_types=1);
 
-<<<<<<< .merge_file_ga89Nw
 use Modules\User\Tests\TestCase;
 
-=======
->>>>>>> .merge_file_kc7kQY
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\User\Models\AuthenticationLog;
 use Modules\User\Models\Profile;
 use Modules\User\Models\Team;
 use Modules\User\Models\User;
-<<<<<<< .merge_file_ga89Nw
-=======
-use Modules\User\Tests\TestCase;
->>>>>>> .merge_file_kc7kQY
 
 uses(TestCase::class);
 

@@ -11,17 +11,10 @@ uses(TestCase::class);
 
 test('Mailtrap SDK bridge is registered as a Laravel mailer', function (): void {
     Assert::assertSame('mailtrap-sdk', config('mail.mailers.mailtrap-sdk.transport'));
-<<<<<<< .merge_file_NnF7Xm
     $mailtrap = config('services.mailtrap-sdk');
     Assert::assertIsArray($mailtrap);
     Assert::assertArrayHasKey('apiKey', $mailtrap);
     Assert::assertArrayHasKey('host', $mailtrap);
-=======
-    $mailtrapSdk = config('services.mailtrap-sdk');
-    Assert::assertIsArray($mailtrapSdk);
-    Assert::assertArrayHasKey('apiKey', $mailtrapSdk);
-    Assert::assertArrayHasKey('host', $mailtrapSdk);
->>>>>>> .merge_file_Z6R187
 });
 
 test('mail defaults never use the Laravel example sender', function (): void {

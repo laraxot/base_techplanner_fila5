@@ -258,11 +258,7 @@ class TenantTest extends TestCase
 
     public function test_resolve_route_binding_query_preserve_slug_per_has_slug(): void
     {
-<<<<<<< .merge_file_Q0EXfm
-        $tenant = new Tenant();
-=======
         $tenant = new Tenant;
->>>>>>> .merge_file_2EZ0CH
 
         /** @var list<array{string, string|int}> $calls */
         $calls = [];
@@ -284,11 +280,7 @@ class TenantTest extends TestCase
 
     public function test_resolve_route_binding_query_uses_id_for_non_uuid_value(): void
     {
-<<<<<<< .merge_file_Q0EXfm
-        $tenant = new Tenant();
-=======
         $tenant = new Tenant;
->>>>>>> .merge_file_2EZ0CH
 
         /** @var list<array{string, string|int}> $calls */
         $calls = [];
@@ -310,11 +302,7 @@ class TenantTest extends TestCase
 
     public function test_resolve_route_binding_query_accetta_uuid_valido_sulla_chiave_univoca(): void
     {
-<<<<<<< .merge_file_Q0EXfm
-        $tenant = new Tenant();
-=======
         $tenant = new Tenant;
->>>>>>> .merge_file_2EZ0CH
 
         $uuid = (string) Str::uuid();
 

@@ -4,13 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Employee\Tests\Unit\Models;
 
-use Illuminate\Database\Eloquent\Collection;
-use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Support\Facades\DB;
 use Modules\Employee\Models\Department;
 use Modules\Employee\Models\Employee;
 use Modules\Employee\Models\Position;
-use Webmozart\Assert\Assert;
 use RuntimeException;
 
 beforeEach(function (): void {
@@ -19,6 +16,26 @@ beforeEach(function (): void {
 
 afterEach(function (): void {
     DB::rollBack();
+});
+
+beforeEach(function (): void {
+    /** @var Employee $employee */
+    $employee = Employee::factory()->create([
+        'personal_data' => [
+            'first_name' => 'Mario',
+            'last_name' => 'Rossi',
+        ],
+        'contact_data' => [
+            'email' => 'mario.rossi@example.com',
+            'phone' => '+39 123 456 7890',
+        ],
+        'work_data' => [
+            'employee_id' => 'EMP001',
+            'hire_date' => '2024-01-01',
+        ],
+        'status' => 'attivo',
+    ]);
+    $this->employee = $employee;
 });
 
 test('employee can be created', function (): void {
@@ -63,7 +80,6 @@ test('employee belongs to department', function (): void {
     if (! $related instanceof Department) {
         throw new RuntimeException('Expected department relation');
     }
-
     expect($related->id)->toBe($department->id);
 });
 
@@ -78,7 +94,6 @@ test('employee belongs to position', function (): void {
     if (! $related instanceof Position) {
         throw new RuntimeException('Expected position relation');
     }
-
     expect($related->id)->toBe($position->id);
 });
 
@@ -93,30 +108,10 @@ test('employee can have manager', function (): void {
     if (! $related instanceof Employee) {
         throw new RuntimeException('Expected manager relation');
     }
-
     expect($related->id)->toBe($manager->id);
 });
 
 test('employee can have subordinates', function (): void {
-    expect($this->employee->hasSubordinates())->toBeFalse();
-
-    /** @var Employee $manager */
-    $manager = Employee::factory()->create();
-    $this->employee->update(['manager_id' => $manager->id]);
-});
-
-test('employee can check if has manager', function (): void {
-    expect($this->employee->hasManager())->toBeFalse();
-
-    /** @var Employee $manager */
-    $manager = Employee::factory()->create();
-    $this->employee->update(['manager_id' => $manager->id]);
-    expect($this->employee->hasManager())->toBeTrue();
-});
-
-test('employee can check if has subordinates', function (): void {
-    expect($this->employee->hasSubordinates())->toBeFalse();
-
     /** @var Employee $subordinate */
     $subordinate = Employee::factory()->create(['manager_id' => $this->employee->id]);
 
@@ -130,6 +125,43 @@ test('employee can check if has subordinates', function (): void {
     expect($first->id)->toBe($subordinate->id);
 });
 
+test('employee can get full name from personal data', function (): void {
+    expect($this->employee->full_name)->toBe('Mario Rossi');
+});
+
+test('employee can get email from contact data', function (): void {
+    expect($this->employee->email)->toBe('mario.rossi@example.com');
+});
+
+test('employee can get phone from contact data', function (): void {
+    expect($this->employee->phone)->toBe('+39 123 456 7890');
+});
+
+test('employee can check if active', function (): void {
+    expect($this->employee->isActive())->toBeTrue();
+
+    $this->employee->update(['status' => 'inattivo']);
+    expect($this->employee->isActive())->toBeFalse();
+});
+
+test('employee can check if has manager', function (): void {
+    expect($this->employee->hasManager())->toBeFalse();
+
+    /** @var Employee $manager */
+    $manager = Employee::factory()->create();
+    $this->employee->update(['manager_id' => $manager->id]);
+
+    expect($this->employee->hasManager())->toBeTrue();
+});
+
+test('employee can check if has subordinates', function (): void {
+    expect($this->employee->hasSubordinates())->toBeFalse();
+
+    Employee::factory()->create(['manager_id' => $this->employee->id]);
+
+    expect($this->employee->hasSubordinates())->toBeTrue();
+});
+
 test('employee can be filtered by status', function (): void {
     /** @var Employee $activeEmployee */
     $activeEmployee = Employee::factory()->create(['status' => 'attivo']);
@@ -139,7 +171,7 @@ test('employee can be filtered by status', function (): void {
     $activeEmployees = Employee::query()->active()->get();
     $inactiveEmployees = Employee::query()->inactive()->get();
 
-    expect($activeEmployees)->toHaveCount(2);
+    expect($activeEmployees)->toHaveCount(2); // Including the one from beforeEach
     expect($inactiveEmployees)->toHaveCount(1);
 
     expect($activeEmployees->pluck('id'))->toContain($this->employee->id);

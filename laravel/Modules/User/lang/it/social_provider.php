@@ -101,12 +101,9 @@ return [
             'helper_text' => 'Applica i filtri selezionati',
             'description' => 'Azione per applicare i filtri',
         ],
-<<<<<<< .merge_file_U7urLb
-=======
         'created_at' => [
             'label' => 'Creato il',
         ],
->>>>>>> .merge_file_tLsEvv
     ],
     'actions' => [
         'import' => [

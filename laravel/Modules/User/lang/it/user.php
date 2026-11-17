@@ -315,12 +315,9 @@ return [
         'startDate' => [
             'tooltip' => '',
         ],
-<<<<<<< .merge_file_JVBmwC
-=======
         'user' => [
             'label' => 'Utente',
         ],
->>>>>>> .merge_file_avNFY6
         'matr' => [
             'description' => 'matr',
             'label' => 'matr',

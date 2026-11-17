@@ -3,44 +3,6 @@
 declare(strict_types=1);
 
 return [
-<<<<<<< .merge_file_UquZ44
-    'fields' => [
-        'id' => ['label' => 'ID'],
-        'uuid' => ['label' => 'UUID'],
-        'team_id' => ['label' => 'Team'],
-        'email' => ['label' => 'E-mail'],
-        'role' => ['label' => 'Ruolo'],
-        'accepted_at' => ['label' => 'Accettato il'],
-        'declined_at' => ['label' => 'Rifiutato il'],
-        'created_at' => ['label' => 'Creato il'],
-        'updated_at' => ['label' => 'Modificato il'],
-        'deleted_at' => ['label' => 'Eliminato il'],
-        'updated_by' => ['label' => 'Modificato da'],
-        'created_by' => ['label' => 'Creato da'],
-        'deleted_by' => ['label' => 'Eliminato da'],
-    ],
-=======
->>>>>>> .merge_file_10Wx4R
-    'actions' => [
-        'create' => [
-            'icon' => 'create',
-        ],
-        'layout' => [
-            'icon' => 'layout',
-        ],
-        'delete' => [
-            'icon' => 'delete',
-        ],
-        'view' => [
-            'icon' => 'view',
-        ],
-        'edit' => [
-            'icon' => 'edit',
-        ],
-        'save' => [
-            'icon' => 'save',
-        ],
-    ],
     'fields' => [
         'id' => [
             'label' => 'ID',
@@ -80,6 +42,26 @@ return [
         ],
         'deleted_by' => [
             'label' => 'Eliminato da',
+        ],
+    ],
+    'actions' => [
+        'create' => [
+            'icon' => 'create',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+        ],
+        'view' => [
+            'icon' => 'view',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+        ],
+        'save' => [
+            'icon' => 'save',
         ],
     ],
 ];
