@@ -45,7 +45,7 @@ Rimozione delle cartelle di scaffold AI/tool dai tree dei moduli, aggiornamento
    sistema di lock multi-agent.
 
 4. **TechPlanner — push bloccato**: remote `laraxot/module_techplanner_fila5` NON esiste
-   su GitHub (esistono solo `_fila3`/`_fila4`). Commit fatto in locale, non pushabile.
+   su GitHub (esistono solo `_fila5`/`_fila4`). Commit fatto in locale, non pushabile.
    I file `app/Models/*` e `database/factories/*` modificati nel working tree sono lavoro
    di un altro agent: **esclusi dal mio commit** (scoping esplicito).
 

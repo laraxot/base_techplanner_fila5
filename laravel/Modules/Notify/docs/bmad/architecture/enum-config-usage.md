@@ -19,9 +19,9 @@ related:
 status: draft
 ---
 
-# Utilizzo di Enum e Config 
+# Utilizzo di Enum e Config
 
-Questo documento definisce le best practices per l'utilizzo di Enum e file di configurazione nel sistema Quaeris, con particolare attenzione alla gestione delle opzioni nei componenti Filament.
+Questo documento definisce le best practices per l'utilizzo di Enum e file di configurazione nel sistema <nome progetto>, con particolare attenzione alla gestione delle opzioni nei componenti Filament.
 
 ## Problema: Hardcoding delle Opzioni
 
@@ -71,7 +71,7 @@ enum SmsDriverEnum: string
     case PLIVO = 'plivo';
     case GAMMU = 'gammu';
     case NETFUN = 'netfun';
-    
+
     public static function options(): array
     {
         return [
@@ -83,7 +83,7 @@ enum SmsDriverEnum: string
             self::NETFUN->value => 'Netfun',
         ];
     }
-    
+
     public static function labels(): array
     {
         return [
@@ -156,7 +156,7 @@ return [
 - I valori sono specifici dell'applicazione e non del dominio
 - Hai bisogno di valori diversi in produzione, staging, test, ecc.
 
-## Implementazione 
+## Implementazione
 
 Per standardizzare l'approccio , si raccomanda di:
 
@@ -167,4 +167,4 @@ Per standardizzare l'approccio , si raccomanda di:
 
 ## Conclusione
 
-L'utilizzo di Enum e file di configurazione migliora significativamente la manutenibilità, la flessibilità e la coerenza del codice. Adottare queste pratiche in tutto il sistema Quaeris garantirà un codice più robusto e facile da mantenere.
+L'utilizzo di Enum e file di configurazione migliora significativamente la manutenibilità, la flessibilità e la coerenza del codice. Adottare queste pratiche in tutto il sistema <nome progetto> garantirà un codice più robusto e facile da mantenere.

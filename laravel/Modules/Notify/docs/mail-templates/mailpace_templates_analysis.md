@@ -7,8 +7,6 @@ updated: 2026-09-26
 qmd: "mailpace templates analysis"
 issues: []
 discussions: []
-status: superseded
-superseded_by: mailpace-templates-analysis.md
 ---
 
 # Analisi Mailpace Templates
@@ -222,5 +220,3 @@ return [
 - [Mailpace Templates](https://github.com/mailpace/templates)
 - [Email Best Practices](./EMAIL_BEST_PRACTICES.md)
 - [Template Management](./template-management.md) 
-- [Email Best Practices](./email_best_practices.md)
-- [Template Management](../template-management.md) 

@@ -1,3 +1,10 @@
+---
+title: "Zero Theme Documentation Index"
+qmd: "zero 00 index md"
+type: note
+tags: [documentation]
+---
+
 # Zero Theme Documentation Index
 
 **Path**: `laravel/Themes/Zero/docs/`  

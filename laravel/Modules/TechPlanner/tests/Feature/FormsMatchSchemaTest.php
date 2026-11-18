@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Filament\Forms\Components\Field;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Support\Facades\Schema;
@@ -22,6 +23,7 @@ use Modules\TechPlanner\Models\LegalRepresentative;
 use Modules\TechPlanner\Models\MedicalDirector;
 use Modules\TechPlanner\Models\PhoneCall;
 use Modules\TechPlanner\Tests\TestCase;
+use PHPUnit\Framework\Assert;
 
 uses(TestCase::class);
 
@@ -47,9 +49,11 @@ beforeEach(function (): void {
         '2026_11_19_000000_add_duration_minutes_to_appointments_table.php',
         '2026_11_06_000000_create_controls_table.php',
     ] as $file) {
-        $migration = require dirname(__DIR__, 2).'/database/migrations/'.$file;
-        expect($migration)->toBeInstanceOf(Migration::class);
-        $migration->up();
+        $loaded = require dirname(__DIR__, 2).'/database/migrations/'.$file;
+        if (! is_object($loaded) || ! method_exists($loaded, 'up')) {
+            throw new RuntimeException("Migrazione non valida: {$file}");
+        }
+        $loaded->up();
     }
 });
 
@@ -75,9 +79,16 @@ dataset('tp-forms', [
     'verifiche' => [static fn (): array => (new DeviceVerificationsRelationManager())->getFormSchema(), DeviceVerification::class],
 ]);
 
+/**
+ * @param  Closure(): array<int|string, mixed>  $schema
+ * @param  class-string<Model>  $modelClass
+ */
 it('asks only for columns that exist and can be saved', function (Closure $schema, string $modelClass): void {
+    /** @var Model $model */
     $model = new $modelClass();
-    $fields = tpFieldNames($schema());
+    /** @var array<int|string, mixed> $components */
+    $components = $schema();
+    $fields = tpFieldNames($components);
 
     expect($fields)->not->toBeEmpty();
     foreach ($fields as $field) {
@@ -86,17 +97,27 @@ it('asks only for columns that exist and can be saved', function (Closure $schem
     }
 })->with('tp-forms');
 
+/** @param Closure(): array<int|string, mixed> $schema */
 it('asks for the client when the record is created from the menu', function (Closure $schema): void {
-    expect(tpFieldNames($schema()))->toContain('client_id');
+    /** @var array<int|string, mixed> $components */
+    $components = $schema();
+    expect(tpFieldNames($components))->toContain('client_id');
 })->with([
     'direttori sanitari' => [static fn (): array => app(MedicalDirectorForm::class)->getFormSchema()],
     'rappresentanti legali' => [static fn (): array => app(LegalRepresentativeForm::class)->getFormSchema()],
     'sedi legali' => [static fn (): array => app(LegalOfficeForm::class)->getFormSchema()],
 ]);
 
+/**
+ * @param  class-string<Model>  $modelClass
+ */
 it('has the client relation that the client picker needs', function (string $modelClass): void {
-    $relation = (new $modelClass())->client();
+    /** @var Appointment|PhoneCall|MedicalDirector|LegalRepresentative|LegalOffice|Device $model */
+    $model = new $modelClass();
+    expect(method_exists($model, 'client'))->toBeTrue();
 
-    expect($relation)->toBeInstanceOf(BelongsTo::class)
-        ->and($relation->getRelated())->toBeInstanceOf(Client::class);
+    $relation = $model->client();
+
+    Assert::assertInstanceOf(BelongsTo::class, $relation);
+    Assert::assertInstanceOf(Client::class, $relation->getRelated());
 })->with([Appointment::class, PhoneCall::class, MedicalDirector::class, LegalRepresentative::class, LegalOffice::class, Device::class]);

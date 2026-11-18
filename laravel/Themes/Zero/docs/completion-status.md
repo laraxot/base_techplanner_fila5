@@ -1,11 +1,12 @@
 ---
+qmd: "zero completion status md"
 title: "Zero: cosa manca per completare"
 type: status
 module: Zero
 updated: 2026-10-28
-repository: "https://github.com/provtv/base_ptv_fila5_mono"
-github_issue: "https://github.com/provtv/base_ptv_fila5_mono/issues"
-github_discussion: "https://github.com/provtv/base_ptv_fila5_mono/discussions"
+repository: "https://github.com/provtv/base_ptv_fila5"
+github_issue: "https://github.com/provtv/base_ptv_fila5/issues"
+github_discussion: "https://github.com/provtv/base_ptv_fila5/discussions"
 related:
   - ../../../Modules/Xot/docs/project-completion-status.md
 ---
@@ -40,4 +41,4 @@ Problemi trasversali (valgono per tutto il progetto): vedi `project-completion-s
 
 | Stato | Story |
 |---|---|
-| ready | [Story — Zero theme: verifica dedup docs peer + frontmatter audit](docs/bmad/stories/theme-docs-dedup-frontmatter.story.md) |
+| ready | [Story — Zero theme: verifica dedup docs peer + frontmatter audit](bmad/stories/theme-docs-dedup-frontmatter.story.md) |

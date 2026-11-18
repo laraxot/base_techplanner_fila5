@@ -25,4 +25,4 @@ logic.
 - [Filament blueprint](../bmad/filament-blueprint.md)
 
 Le decisioni di dominio restano nei moduli owner (Cms per pagine e blocchi,
-Quaeris per survey e autorizzazione, Lang per autolabel e locale).
+<nome progetto> per survey e autorizzazione, Lang per autolabel e locale).

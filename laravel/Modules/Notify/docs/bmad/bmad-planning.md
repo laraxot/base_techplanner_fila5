@@ -54,7 +54,7 @@ Resource/widget di competenza:
 - MailTemplateResource
 - NotificationLogResource
 
-Dettaglio contratto: [filament-blueprint.md](./bmad/filament-blueprint.md).
+Dettaglio contratto: [filament-blueprint.md](filament-blueprint.md).
 
 ## Second brain
 

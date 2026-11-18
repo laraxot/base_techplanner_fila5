@@ -114,7 +114,7 @@ class NetfunChannel
     {
         try {
             $message = $notification->toNetfun($notifiable);
-            
+
             // Validazione base
             if (empty($notifiable->phone_number)) {
                 throw new \Exception('Numero di telefono mancante per il destinatario');
@@ -243,7 +243,7 @@ class SendNetfunSmsAction
             }
 
             $result = $response->json();
-            
+
             // Verifica lo stato della risposta
             if ($result['status'] !== 'success') {
                 $this->handleError($response, $result);
@@ -394,7 +394,7 @@ NETFUN_ENDPOINT=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 
 # Global SMS configuration
 SMS_FROM_NAME=<nome progetto>
-SMS_FROM_NAME=Quaeris
+SMS_FROM_NAME=<nome progetto>
 SMS_FROM_NUMBER=+393331234567
 SMS_DEBUG=false
 
@@ -548,7 +548,7 @@ class NetfunSmsTest extends TestCase
 
         $this->assertEquals('success', $result->status);
         $this->assertEquals('123456', $result->message_id);
-        
+
         Http::assertSent(function ($request) {
             return $request->url() == config('notify.drivers.netfun.endpoint') &&
                    $request['messages'][0]['to'] == '+393331234567' &&
@@ -699,10 +699,10 @@ Log::info('SMS inviato', [
 - [Laravel Queues](https://laravel.com/project_docs/queues)
 - [Laravel Testing](https://laravel.com/project_docs/testing)
 - [Laravel Logging](https://laravel.com/project_docs/logging)
-- [Laravel Cache](https://laravel.com/project_docs/cache) 
+- [Laravel Cache](https://laravel.com/project_docs/cache)
 - [Laravel Notifications](https://laravel.com/docs/notifications)
 - [Laravel Queues](https://laravel.com/docs/queues)
 - [Laravel Testing](https://laravel.com/docs/testing)
 - [Laravel Logging](https://laravel.com/docs/logging)
-- [Laravel Cache](https://laravel.com/docs/cache) 
-- [Laravel Cache](https://laravel.com/docs/cache) 
+- [Laravel Cache](https://laravel.com/docs/cache)
+- [Laravel Cache](https://laravel.com/docs/cache)

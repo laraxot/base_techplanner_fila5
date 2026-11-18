@@ -26,7 +26,7 @@ status: draft
 Il file `laravel/Modules/Notify/lang/it/send_email.php` presenta diversi problemi critici:
 
 ### 1. Conflitto di Merge Non Risolto
-- Presenza di marcatori 
+- Presenza di marcatori
 - Due versioni del file in conflitto
 - Sintassi PHP non valida che impedisce l'esecuzione
 
@@ -73,7 +73,7 @@ return [
 **Prima**:
 ```php
 return array (
-  'navigation' => 
+  'navigation' =>
   array (
     'label' => 'Invio Email',
     // ...
@@ -274,8 +274,8 @@ return [
 ### 1. Controllo Sintassi PHP
 ```bash
 cd /var/www/html/_bases/base_<nome progetto>/laravel
-cd /var/www/html/_bases/base_Quaeris/laravel
-cd /var/www/html/_bases/base_techplanner_fila5_mono/laravel
+cd /var/www/html/_bases/base_<nome progetto>/laravel
+cd /var/www/html/_bases/base_techplanner_fila5/laravel
 php -l Modules/Notify/lang/it/send_email.php
 
 # Output: No syntax errors detected
@@ -335,5 +335,5 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ---
 
-**Ultimo aggiornamento**: Gennaio 2025  
-**Autore**: Sistema di miglioramento automatico  
+**Ultimo aggiornamento**: Gennaio 2025
+**Autore**: Sistema di miglioramento automatico

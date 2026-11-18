@@ -7,10 +7,15 @@ updated: 2026-09-26
 qmd: "analysis"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Homepage Visual Comparison Analysis
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Goal
 Make the local homepage (`http://127.0.0.1:8000/it/tests/homepage`) visually identical to the reference (`https://italia.github.io/design-comuni-pagine-statiche/sito/homepage.html`).
@@ -77,7 +82,9 @@ Make the local homepage (`http://127.0.0.1:8000/it/tests/homepage`) visually ide
 1. [ ] Analyze existing CSS files in Sixteen/resources/css
 2. [ ] Create/fix homepage-specific CSS overrides
 3. [ ] Run npm run build
-4. [ ] Run npm run copy  
+4. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+4. [ ] Run npm run copy (dismesso: symlink public_html/themes/<Tema>)  
 5. [ ] Verify with new screenshots
 
 ## Files to Modify

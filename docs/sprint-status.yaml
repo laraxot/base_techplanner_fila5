@@ -219,7 +219,7 @@
 - **Status**: DEFERRED (requires manual conflict resolution)
 - **Action**: Next session: git merge-base analysis + manual conflict triage
 
-**PHPStan Status**: 
+**PHPStan Status**:
 - ✅ 1/5 User errors fixed (SetCurrentTeamCommand type cast)
 - ⏳ 4/5 deferred (HasXotFactory generic specs — architectural issue)
 
@@ -233,7 +233,7 @@
     - Lang Profile refs → FQCN done (LanguageLine, Post)
     - Job module scope next (lines 84, 85, 95, 106, 124, 134, 135)
   notes: |
-    Lang fix: replaced Modules\Quaeris\Models\Profile with
+    Lang fix: replaced Modules\<nome progetto>\Models\Profile with
     \Modules\Xot\Contracts\ProfileContract in @property-read PHPDoc.
     PHPStan Lang now: OK No errors.
     Job module audit deferred to next session (time constraints).
@@ -253,7 +253,7 @@ completed_stories:
     errors_before: 6
     errors_after: 0
     changes: "Profile model refs → ProfileContract FQCN"
-    
+
   - story: job-phpstan-complete
     module: Job
     errors_before: 7 (JobBatch casting)
@@ -264,7 +264,7 @@ deferred_stories:
   - story: global-phase2-audit
     errors_remaining: 111
     action: "Scan global + create per-module stories next session"
-    
+
 results:
   global_errors: 111 (was 106)
   modules_at_zero: [Xot, User, Activity, Media, Lang, Job]

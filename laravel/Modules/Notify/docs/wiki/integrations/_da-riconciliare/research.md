@@ -8,7 +8,6 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
 # User Research - Notify Platform
@@ -43,5 +42,4 @@ status: draft
 
 ## 6. References
 - [strategy.md](strategy.md)
-- [strategy.md](../../../strategy.md)
 - [prd.md](prd.md)

@@ -37,8 +37,22 @@ abstract class TestCase extends XotBaseTestCase
     /** @var list<string> */
     protected $connectionsToTransact = ['sqlite', 'lang', 'user'];
 
+    /** Fixture path for SaveTransAction feature tests. */
+    public string $targetDir = '';
+
+    /** Fixture translation file path. */
+    public string $target = '';
+
+    /** Previous app env restored in afterEach. */
+    public string $originalEnvironment = '';
+
+
     protected function setUp(): void
     {
+        // Prima di parent::setUp(): DatabaseTransactions apre le transazioni subito; senza questo la
+        // connessione `user` (mysql) va in "Connection refused" dove non c'e' MariaDB (vedi XotBaseTestCase).
+        $this->prepareSharedSqliteForTesting();
+
         parent::setUp();
 
         $database = database_path('database.sqlite');

@@ -1,6 +1,6 @@
 {{--
   Riepilogo errori dei moduli di accesso (DCP-290, FO-5-10): un solo avviso role="alert" con il conteggio e tutti i messaggi.
-  Callers: filament/widgets/auth/{login,register,forgot-password-widget,reset-password-widget}.blade.php.
+  Callers: filament/widgets/auth/{login,register,forgot-password,reset-password}.blade.php.
   Gli errori sono quelli del widget Livewire ($errors e' condiviso con i componenti anonimi durante il rendering).
   Il campo con errore e' marcato a parte (aria-invalid + aria-describedby): qui si elenca solo cosa correggere.
 --}}

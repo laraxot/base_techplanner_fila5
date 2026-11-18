@@ -1,3 +1,10 @@
+---
+title: "Sprint Planning - Theme Zero"
+qmd: "zero sprint planning md"
+type: note
+tags: [documentation]
+---
+
 # Sprint Planning - Theme Zero
 
 ## Ultra-Minimalist Theme

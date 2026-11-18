@@ -12,11 +12,11 @@ This guide establishes the strict rules for writing prompts for the Meetup theme
   - ✅ CORRECT: `laravel/Themes/Meetup/`
 
 - **Module Path**: `laravel/Modules/Meetup/`
-  - ❌ WRONG: `Modules/Meetup`, `Modules/Quaeris`
+  - ❌ WRONG: `Modules/Meetup`, `Modules/<nome progetto>`
   - ✅ CORRECT: `laravel/Modules/Meetup/`
 
 - **Config Path**: `laravel/config/local/laravelpizza/`
-  - ❌ WRONG: `config/local/laravelpizza`, `config/local/quaeris`
+  - ❌ WRONG: `config/local/laravelpizza`, `config/local/<nome progetto>`
   - ✅ CORRECT: `laravel/config/local/laravelpizza/`
 
 - **Public Assets**: `public_html/themes/Meetup/`

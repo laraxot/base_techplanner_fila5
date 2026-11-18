@@ -20,7 +20,7 @@ Audit parallelo a 4 agenti (domain code, Filament/UI, tests+docs, code quality) 
 
 ### Alti (code quality agent)
 
-- **`Modules/Lang/composer.json`**: chiavi JSON duplicate + homepage `fila3` stale — da fixare.
+- **`Modules/Lang/composer.json`**: chiavi JSON duplicate + homepage `fila5` stale — da fixare.
 - **`Notify/.../NotificationTrackingController.php`**: controller orfano contro regola esplicita del modulo + `redirect()->away($url)` = open-redirect latente.
 - **`Geo/.../Forms/LocationForm.php:39-83`**: label/placeholder passano **chiavi di traduzione come literal** (`->label('geo::fields.region.label')`) → UI mostra la chiave grezza. Bug funzionale.
 - **`Geo/.../FilterCoordinatesInRadius.php:33`**: condizione invertita sospetta (`>=` tiene punti FUORI raggio).
@@ -37,7 +37,7 @@ Audit parallelo a 4 agenti (domain code, Filament/UI, tests+docs, code quality) 
 - 3 `.navigation` self-referencing in `it` (Employee `absence_request`, Cms `themes`/`appearance`) + `en` mancante.
 - Estensioni Filament dirette fuori Xot: Job ×3 (`ScheduleOptions` dup in 2 namespace, `ScheduleArguments`), Media ×2 (`VideoEntry`, `ConvertAction` morto).
 - Controller orfani: Employee `EmployeeController`, Media `ConvertController`/`BaseController`, User `Auth/*` + `UpgradeController`.
-- ~10 file stale in `app/`: `.disabled`, `.fila3`, `.maybe_profile`, `.php-cs-fixer.dist.php` misplaced.
+- ~10 file stale in `app/`: `.disabled`, `.fila5`, `.maybe_profile`, `.php-cs-fixer.dist.php` misplaced.
 - `composer.json`: `require` vuoti (Geo/Tenant/Job), `php` in `require` (Activity), drift PHP `^8.2`/`^8.4`, junk composer.json in `Geo/docs/**` e `User/resources/views/`.
 - Geo: ~6 coppie di Action duplicate (`Bing/BingMaps`, `FilterCoordinates*`, `CalculateGeoDistance` ×2, `IsPointInPolygon` ×2, `OptimizeRoute` ×2), `GeocodingServiceInterface` duplicato byte-identico, `GeoServiceFacade` morto.
 - `mixed` in `Geo/.../PointMap.php` (7 prop constructor non tipizzate).

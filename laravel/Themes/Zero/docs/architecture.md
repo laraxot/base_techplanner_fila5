@@ -1,3 +1,10 @@
+---
+title: "Architettura del Tema Zero"
+qmd: "zero architecture md"
+type: note
+tags: [documentation]
+---
+
 # Architettura del Tema Zero
 
 ## Filosofia: "Il Tema come Vestito"

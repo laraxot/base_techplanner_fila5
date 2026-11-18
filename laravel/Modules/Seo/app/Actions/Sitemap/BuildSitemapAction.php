@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Actions\Sitemap;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Response;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -118,12 +119,15 @@ final class BuildSitemapAction
      */
     private function indexableCmsPages(): Collection
     {
-        return Page::query()->get();
+        /** @var Builder<Page> $query */
+        $query = Page::query();
+
+        return $query->get();
     }
 
     private function pathOf(string $slug): string
     {
-        $slug = preg_replace('/\.index$/', '', $slug);
+        $slug = SafeStringCastAction::cast(preg_replace('/\.index$/', '', $slug));
 
         return $slug === 'home' ? '' : str_replace('.', '/', $slug);
     }

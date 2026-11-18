@@ -1,20 +1,9 @@
----
-title: "phpstan fixes implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan fixes implementation"
-issues: []
-discussions: []
-status: draft
----
-
 # Implementazione Correzioni PHPStan - Modulo Notify
 
 ## 🎯 Errori Risolti
 
 ### ConfigHelper.php - Type Safety Enhancement
+**File**: `Modules/Notify/app/Helpers/ConfigHelper.php`
 **File**: `Modules/Notify/app/Helpers/ConfigHelper.php`
 **Errori risolti**: 11 errori di type mismatch
 
@@ -31,6 +20,7 @@ status: draft
 
 ### XotData.php - Metodo Mancante Aggiunto
 **File**: `Modules/Xot/app/Datas/XotData.php`
+**File**: `Modules/Xot/app/Datas/XotData.php`
 **Errore risolto**: Metodo `getProjectNamespace()` non esistente
 
 #### Implementazione
@@ -45,6 +35,7 @@ public function getProjectNamespace(): string
 ```
 
 ### NotifyThemeableFactory.php - Pattern Dinamico
+**File**: `Modules/Notify/database/factories/NotifyThemeableFactory.php`
 **File**: `Modules/Notify/database/factories/NotifyThemeableFactory.php`
 **Risultato**: Factory completamente riutilizzabile
 
@@ -106,6 +97,7 @@ protected function getProjectNamespace(): string
 ```bash
 # PHPStan clean
 ./vendor/bin/phpstan analyze Modules/Notify --level=9
+./vendor/bin/phpstan analyze Modules/Notify --level=9
 # Result: 0 errors found ✅
 ```
 
@@ -123,7 +115,7 @@ protected function getProjectNamespace(): string
 ### Validazione
 ```bash
 # Test PHPStan
-cd laravel
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
 ./vendor/bin/phpstan analyze Modules/Notify --level=9
 
 # Test funzionalità
@@ -140,7 +132,7 @@ Applicare gli stessi pattern di type safety agli altri moduli:
 
 - [Optimization Recommendations](optimization_recommendations.md)
 - [Reusability Guidelines](reusability_guidelines.md)
-- [PHPStan Best Practices](../../../../docs/phpstan-best-practices.md)
+- [PHPStan Best Practices](../../../docs/phpstan-best-practices.md)
 
 *Ultimo aggiornamento: gennaio 2025*
 # Implementazione Correzioni PHPStan - Modulo Notify
@@ -256,9 +248,9 @@ protected function getProjectNamespace(): string
 ### Validazione
 ```bash
 # Test PHPStan
-cd laravel
-cd laravel
-cd laravel
+cd /var/www/html/_bases/base_<nome progetto>/laravel
+cd /var/www/html/_bases/base_saluteora/laravel
+cd /var/www/html/_bases/base_techplanner_fila3_mono/laravel
 ./vendor/bin/phpstan analyze Modules/Notify --level=9
 
 # Test funzionalità
@@ -275,6 +267,6 @@ Applicare gli stessi pattern di type safety agli altri moduli:
 
 - [Optimization Recommendations](optimization_recommendations.md)
 - [Reusability Guidelines](reusability_guidelines.md)
-- [PHPStan Best Practices](../../../../docs/phpstan-best-practices.md)
+- [PHPStan Best Practices](../../../docs/phpstan-best-practices.md)
 
 *Ultimo aggiornamento: gennaio 2025*

@@ -7,10 +7,7 @@ updated: 2026-09-26
 qmd: "send notification bulk action"
 issues: []
 discussions: []
-status: stale
 ---
-
-> Nota 2026-10-14 (docs-audit): Descrive una classe SendNotificationBulkAction che non esiste in app/ ne' in tests/ (l'invio massivo reale e' SendRecordsNotificationAction). Contenuto non riscritto, verificare prima di usarlo.
 
 # SendNotificationBulkAction - Implementazione Completa
 
@@ -332,12 +329,18 @@ Vedi: [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
 - [RecordNotification Class](../../app/Notifications/RecordNotification.php)
 - [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
 - [Geo Module Reusable Components Philosophy](../geo/docs/reusable-components-philosophy.md)
-- [RecordNotification Class](../app/Notifications/RecordNotification.php)
-- [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
-- [Geo Module Reusable Components Philosophy](../../Geo/docs/reusable-components-philosophy.md)
 - [Xot Filament Class Extension Rules](../xot/docs/filament-class-extension-rules.md)
 
 ---
+
+title: "send notification bulk action"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "send notification bulk action"
+issues: []
+discussions: []
 **Ultimo aggiornamento**: [DATE]  
 **PHPStan Level**: ✅ 10  
 **Quality**: ✅ PHPMD, PHPInsights compliant

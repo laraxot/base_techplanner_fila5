@@ -609,7 +609,7 @@ npm run build
 
 - [Installazione](./docs/installation.md)
 - [Configurazione](./docs/configuration.md)
-- [Componenti](./docs/components.md)
+- [Componenti](components.md)
 - [Personalizzazione](./docs/customization.md)
 - [API Reference](./docs/api.md)
 ```

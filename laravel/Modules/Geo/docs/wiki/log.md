@@ -7,35 +7,7 @@ updated: 2026-09-26
 qmd: "log"
 issues: []
 discussions: []
-status: draft
 ---
-
-## [2026-11-19] test-infra + sushi data | fix bootstrap suite e bug production-ready
-
-- `tests/TestCase.php`: `$connectionsToTransact` reimpostata a `['sqlite','geo']` — le voci `fixcity`/`mariadb`/`user` non esistono o puntano a mysql senza credenziali in `.env.testing` e facevano fallire OGNI test del modulo in `setUp`.
-- `tests/Pest.php`: aggiunto helper `geo_mockery_expect()` (stessa tecnica di `mockeryExpect()` di Activity/User) per tipizzare le expectation Mockery 1.6 CompositeExpectation.
-- `tests/Unit/Actions/UpdateCoordinatesFromAddressActionTest.php`: nuovo test di regressione (3 casi: indirizzo vuoto, errori provider propagati, successo) — verificato il fix `$this->errors->merge()`.
-- `Modules/Tenant/app/Models/Traits/SushiToJson.php`: `getSchema()` override tipizzato `@return array<string,string>` — il vendor Sushi non dichiara il tipo e PHPStan vedeva `mixed` (4 errori in `ComuneBusinessLogicTest`).
-- `resources/json/comuni.json`: riga Bresso (id 4) normalizzata allo schema completo delle altre righe — le chiavi mancanti rompevano l'INSERT Sushi multi-riga (`all VALUES must have the same number of terms`) in OGNI query `Comune`, anche in produzione.
-- Test modelli (`Comune`/`Location`/`Province`/`Region` BusinessLogic): assertion `HasFactory` → `HasXotFactory` (trait reale del modello).
-- Stato suite `Modules/Geo/tests/Unit`: 552 passati; restano ~90 failure preesistenti non correlate (mock HTTP Bing/Google/Elevation, scritture file Sushi, schema assente in sqlite :memory:).
-
-## [2026-10-26] git + second-brain | collisioni frontoffice risolte con soluzione 3 (non current/incoming)
-
-- Studio entrambi i lati (current `0ffbcc9a` pulito ma con difetto `uses()` mancante; incoming `41c00823` con marker ma senza variabili `$schema`/`$rows`).
-- **Decisione 3 applicata:** rimuovere marker prendendo il primo lato per le variabili; aggiungere `uses(Tests\TestCase::class);` ai 5 test modelli (`Comune`, `Province`, `Region`, `Address`, `Location` BusinessLogic) — il difetto era nascostto dai marker e avrebbe rotto i test anche dopo la pulizia.
-- File modificati: `tests/Unit/Models/*BusinessLogicTest.php` (5).
-- Documentazione creata: `docs/wiki/collisioni-git-fo-decision.md` (SSoT della decisione).
-- Verifica sintassi PHP: passata (`php -l`).
-- Prossimo: PHPStan L10 + Pest sui test modificati; aggiornare `docs/wiki/index.md` con riferimento al nuovo doc.
-
-## [2026-10-20] git | marker di conflitto in quattro test, rimessi da un merge
-
-Il merge `41c00823` ha rimesso marker di conflitto (`<<<<<<<`) in `GeocodingBusinessLogicTest`, `ComuneBusinessLogicTest`, `ProvinceBusinessLogicTest`, `RegionBusinessLogicTest`, gia' tolti da `0ffbcc9a` il 2026-09-24: PHPStan non leggeva i file. Risolti in avanti con il primo lato in tutti e sei i blocchi, l'unico che definisce le variabili usate dopo (`$schema`, `$rows`). Trappola: un merge dal remoto puo' rimettere marker gia' tolti; dopo ogni pull lanciare `bash bashscripts/tools/check-conflict-markers.sh`. I test ora partono e mostrano un difetto che i marker nascondevano: i tre test dei modelli non dichiarano `uses(TestCase::class)` e girano senza applicazione (`Container::storagePath()` non esiste). Story: [conflict-markers-business-logic-tests](../stories/conflict-markers-business-logic-tests.story.md).
-
-## [2026-10-14] docs | studio degli ingressi di Geo confrontati con il codice
-
-`README.md` descriveva classi e metodi inesistenti (`app/Services/GeocodingService.php`, `provider()`, `storeCoordinates()`, `GetCoordinatesAction::execute([...])` statico, config in `laravel/config/local/geo/`): corretto con le firme vere. Fatti durevoli, tutti verificati: `routes/` e `resources/views/pages` assenti (nessuna rotta del modulo), pannello Filament su `/geo/admin`, `config/config.php` si carica sotto `geo.config`, quindi `config('geo.driver')`, `geo.api_keys`, `geo.cache`, `geo.rate_limits`, `geo.http_client` letti in `GetAddressDataFromFullAddressAction`, `GoogleMapsAction` e `GoogleMaps/GoogleMapsHttpAction` valgono `null` (solo `geo.config.map.default_view` e' letta giusta); `tests/TestCase.php` forza `xra.pub_theme = Meetup` e `Themes/Meetup` non ha `resources/views/pages`, per cui i test PHP di Geo non partono; PHPStan 0 errori; `node --test tests/js/default-view.test.mjs` 3 passati. `index.md`, `wiki/ProjectHome.md`, `wiki/projecthome.md`, `wiki/reflective.md`, `wiki/method-name-homonym-census.md` sono contenuti di altri progetti o moduli, segnati `stale`. Conflitto aperto: contratto (`00-INDEX.md` canonico) contro decisione del 2026-10-14 (`INDEX.md` ingresso unico). Story: [studio-docs-geo-ingressi-verificati](../stories/studio-docs-geo-ingressi-verificati.story.md). Memoria: `bashscripts/ai/wiki/memories/docs-fixcity-geo-studio.md`.
 
 ## [2026-06-30] ponytail-audit | Phase 3 Finding 2 — BaseGeoService inlined into GoogleMapsService
 
@@ -51,10 +23,18 @@ Il merge `41c00823` ha rimesso marker di conflitto (`<<<<<<<`) in `GeocodingBusi
 
 ## [2026-06-05] docs | HackerNoon harness — tips 001-022 in wiki locale
 
-- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), llm-wiki.txt _(target mancante, verificato 2026-10-14: `bashscripts/tools/prompts/llm-wiki.txt` non esiste)_
+- Stub/checklist: second-brain → canon Xot, ai-harness, [hackernoon map](../../../../../docs/wiki/concepts/hackernoon-ai-coding-tips-fixcity-map.md), [llm-wiki.txt](../../../../../bashscripts/tools/prompts/llm-wiki.txt)
 - GitHub: [#272](https://github.com/laraxot/base_fixcity_fila5/issues/272) / [D#273](https://github.com/laraxot/base_fixcity_fila5/discussions/273)
 
 ---
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "log"
+issues: []
+discussions: []
+title: "Geo Wiki Activity Log"
 module: "Geo"
 ---
 
@@ -63,7 +43,7 @@ module: "Geo"
 ## [2026-06-03] bmad | STORY-132 — filename JS solo inglese
 
 - [js-file-english-naming-rule.md](rules/js-file-english-naming-rule.md) · [js-file-english-naming-standing-rule.md](memories/js-file-english-naming-standing-rule.md)
-- Rename pianificato: `popup-segnalazione.js` → `popup-ticket.js` ([STORY-132](../../../../../docs/stories/STORY-132-rename-popup-ticket-js-english.md), file rinominato rispetto al link originale `...popup-segnalazione-js-english.md`)
+- Rename pianificato: `popup-segnalazione.js` → `popup-ticket.js` ([STORY-132](../../../../../docs/stories/STORY-132-rename-popup-segnalazione-js-english.md))
 
 ## [2026-06-03] docs | map-lit ricostruzione + registro correzioni
 
@@ -135,13 +115,3 @@ module: "Geo"
 - `coordinate-picker-lit` include `markerCardStylesText` e accetta `marker-icon-url`, `marker-color`, `marker-label` (dettaglio ticket: tipo e stato noti).
 - Pulsanti `.ctrl-btn` protetti dal reset `button` delle pagine `data-dc` (`.map-container .ctrl-btn.ctrl-btn`).
 - Concept: `concepts/picker-marker-and-controls-on-host-pages.md`; story `stories/2026-10-14-dcp-152-...story.md`.
-## [2026-10-14] docs | confine dati geografici e mappe
-
-- Aggiunta `concepts/geo-data-and-map-boundary.md`.
-- Documentati ordine GeoJSON, ownership geocoding e separazione da Fixcity/Sixteen.
-
-## 2026-10-26: test di modello allineati al TestCase del modulo
-
-- I 5 `*BusinessLogicTest.php` in `tests/Unit/Models` non avevano `uses(...)`; ora `uses(TestCase::class)` con `Modules\Geo\Tests\TestCase` (convenzione di 42 test del modulo).
-- Marker di merge: 0 (la prima versione di `collisioni-git-fo-decision.md` ne descriveva e citava un file `Geocoding*` che non esiste: pagina riscritta con le misure).
-- Esito identico col `Tests\TestCase` radice; restano 13 test rossi per contratto test/modello non coincidente (Address 4, Comune 6, Location 1, Province 1, Region 1), da decidere uno per uno.

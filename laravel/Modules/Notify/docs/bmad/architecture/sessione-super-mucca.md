@@ -44,7 +44,7 @@ Analizzare e documentare la necessità di creare `XotBasePivot` seguendo princip
    - ✅ Filosofia Zen e principi SOLID
    - ✅ **Raccomandazione: IMPLEMENTARE ⭐⭐⭐⭐⭐**
 
-2. **[XotBasePivot Strategy](./architecture/xotbasepivot-strategy.md)** (3.500+ parole)
+2. **[XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)** (3.500+ parole)
    - ✅ Piano step-by-step (3-4 ore totali)
    - ✅ 13 moduli impattati, 26 file da refactorare
    - ✅ Script di migration automatici
@@ -353,7 +353,7 @@ public function getConnectionName(): ?string
 
 **Passi:**
 1. Leggere [XotBasePivot Analysis](./architecture/xotbasepivot-analysis.md)
-2. Seguire [XotBasePivot Strategy](./architecture/xotbasepivot-strategy.md)
+2. Seguire [XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)
 3. Iniziare da User module (priorità alta)
 4. Testare continuamente con PHPStan Level 10
 

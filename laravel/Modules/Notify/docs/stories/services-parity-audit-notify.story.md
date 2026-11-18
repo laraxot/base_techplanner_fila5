@@ -49,7 +49,7 @@ Path verificati su disco il 2026-10-20. "Prod" = file di produzione che citano l
 | Metodo / file | Successore | Prod |
 |---|---|---|
 | `SmsService::send` e catena fluente | `app/Actions/SMS/SendSmsAction.php` (138 righe, `execute(array $vars, string $driver)`) | 0 (4 file di test) |
-| consegna SMS reale (non era del Service) | `app/Factories/SmsActionFactory.php` + `app/Channels/SmsChannel.php` + `Actions/SMS/Send{Netfun,Twilio,Nexmo,Plivo,Gammu,Agiletelecom,SmsFactor}SMSAction` | `SmsActionFactory` 2 (`SmsChannel` e se stessa nei docblock), `SmsChannel` in codice da `RecordNotification`, `SmsNotification`, `ChannelEnum`; altre 4 menzioni per nome (`SendRecordNotificationAction`, Quaeris `Contact` e un listener) non classificate |
+| consegna SMS reale (non era del Service) | `app/Factories/SmsActionFactory.php` + `app/Channels/SmsChannel.php` + `Actions/SMS/Send{Netfun,Twilio,Nexmo,Plivo,Gammu,Agiletelecom,SmsFactor}SMSAction` | `SmsActionFactory` 2 (`SmsChannel` e se stessa nei docblock), `SmsChannel` in codice da `RecordNotification`, `SmsNotification`, `ChannelEnum`; altre 4 menzioni per nome (`SendRecordNotificationAction`, <nome progetto> `Contact` e un listener) non classificate |
 | `NotificationManager::send`, `sendMultiple` e ricerche template | `app/Actions/NotificationManager.php` (188 righe, 8 metodi pubblici) | 0 (4 file di test) |
 | invio vero della notifica | `app/Actions/SendNotificationAction.php` (219 righe, metodo `handle`) | 2: `NotificationManager` e `Jobs/SendNotificationJob` |
 | `MailtrapEngine::send` | `app/Actions/Mail/SendMailtrapMailAction.php` (51 righe) | 0 (1 test) |

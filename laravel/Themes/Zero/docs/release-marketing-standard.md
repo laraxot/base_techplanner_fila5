@@ -1,4 +1,5 @@
 ---
+qmd: "zero release marketing standard md"
 title: "Release e README marketing — Zero"
 type: reference
 status: approved

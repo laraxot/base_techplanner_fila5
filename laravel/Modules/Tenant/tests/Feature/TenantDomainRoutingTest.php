@@ -7,14 +7,11 @@ namespace Modules\Tenant\Tests\Feature;
 use Mockery\MockInterface;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Models\TenantDomain;
-use Modules\Tenant\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('Tenant domain routing (sushi registry)', function (): void {
     beforeEach(function (): void {
-        TestCase::mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
+        $this->mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
             $mock->allows([
                 'execute' => [
                     ['id' => 'tenant.example.com', 'name' => 'tenant.example.com'],

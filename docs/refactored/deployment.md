@@ -127,7 +127,7 @@ git push origin v1.0.0
 1. Clona il repository:
 
 ```bash
-git clone https://github.com/laraxot/theme_one_fila3.git
+git clone https://github.com/laraxot/theme_one_fila5.git
 ```
 
 2. Installa le dipendenze:
@@ -292,4 +292,4 @@ rm -rf storage/framework/views/*
 - [Laravel Documentation](https://laravel.com/docs)
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Vite Documentation](https://vitejs.dev/guide)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)

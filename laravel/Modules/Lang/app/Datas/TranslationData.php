@@ -4,7 +4,9 @@ declare(strict_types=1);
 
 namespace Modules\Lang\Datas;
 
+use Illuminate\Contracts\Translation\Translator as TranslatorContract;
 use Illuminate\Support\Facades\File;
+use Illuminate\Translation\Translator;
 use Modules\Xot\Actions\File\FixPathAction;
 use Spatie\LaravelData\Data;
 use Webmozart\Assert\Assert;
@@ -27,12 +29,18 @@ class TranslationData extends Data
 
     public function getFilename(): string
     {
-        if (null !== $this->filename) {
+        if ($this->filename !== null) {
             return $this->filename;
         }
-        $hints = app('translator')->getLoader()->namespaces();
+
+        $translator = app('translator');
+        Assert::isInstanceOf($translator, TranslatorContract::class);
+        Assert::isInstanceOf($translator, Translator::class);
+
+        /** @var array<string, string> $hints */
+        $hints = $translator->getLoader()->namespaces();
         $path = collect($hints)->get($this->namespace);
-        if (null === $path) {
+        if ($path === null) {
             throw new \Exception('['.__LINE__.']['.class_basename($this).']');
         }
 

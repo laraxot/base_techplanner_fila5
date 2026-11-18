@@ -30,6 +30,6 @@ cittadino destinatario, operatore mittente, supervisor delivery
 
 ## Artefatti
 
-- [bmad-planning.md](../bmad-planning.md)
+- [bmad-planning.md](bmad-planning.md)
 - [bmad-brainstorming.md](../bmad-brainstorming.md)
 - [filament-blueprint.md](./filament-blueprint.md)

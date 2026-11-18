@@ -202,7 +202,7 @@ return [
         'createAnother' => [
             'label' => 'createAnother',
             'icon' => 'createAnother',
-            'tooltip' => '',
+            'tooltip' => 'createAnother',
         ],
     ],
     'messages' => [

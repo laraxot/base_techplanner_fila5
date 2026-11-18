@@ -188,17 +188,12 @@ return [
         'register' => [
             'label' => 'Registrati',
             'icon' => 'register',
-            'tooltip' => 'register',
         ],
         'profile' => [
-            'label' => 'profile',
             'icon' => 'profile',
-            'tooltip' => 'profile',
         ],
         'logout' => [
-            'label' => 'logout',
             'icon' => 'logout',
-            'tooltip' => 'logout',
         ],
     ],
     'steps' => [

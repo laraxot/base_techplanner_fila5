@@ -7,10 +7,15 @@ updated: 2026-09-26
 qmd: "claude pitfalls"
 issues: []
 discussions: []
-status: draft
 ---
 
 # CLAUDE Common Pitfalls
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 Errori comuni da evitare.
 
@@ -20,6 +25,15 @@ Errori comuni da evitare.
 **✅ CORRETTO**: Usare Folio + Volt + JSON pages
 
 ---
+
+title: "claude pitfalls"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "claude pitfalls"
+issues: []
+discussions: []
 ### 2. ❌ Connessioni Per-Modulo in Config
 **✅ CORRETTO**: Seguire Laravel 12 standard - solo driver connections
 
@@ -80,8 +94,10 @@ Errori comuni da evitare.
 
 ---
 
-### 14. ❌ Dimenticare npm run copy dopo theme build
+### 14. ❌ Dimenticare symlink public_html/themes (npm run copy obsoleto) dopo theme build
 **✅ CORRETTO**: Sempre eseguire copy per deploy assets
+### 14. ❌ Dimenticare il symlink `public_html/themes/<Tema>` dopo theme build (`npm run copy` dismesso)
+**✅ CORRETTO**: Verificare che `public_html/themes/<Tema>` sia symlink a `laravel/Themes/<Tema>/public` (`php artisan xot:theme-link`, una volta per installazione); `npm run copy` non serve più.
 
 ---
 
@@ -90,5 +106,4 @@ Errori comuni da evitare.
 - [Indice CLAUDE](./claude-split-index.md)
 - [critical-rules.md](./critical-rules.md)
 - [CLAUDE.md originale](../../CLAUDE.md)
-- [CLAUDE.md originale](../CLAUDE.md)
 - [Index principale](./index.md)

@@ -7,10 +7,8 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
-status: stale
+status: active
 ---
-
-> Nota 2026-10-14 (docs-audit): Cita \Modules\Seo\Models\SeoMetadata, classe che non esiste in app/Models. I test reali sono in tests/Unit e tests/Feature (MetatagData, MetatagFacadeAdapter, SocialShare). Contenuto non riscritto, verificare prima di usarlo.
 
 # Testing Documentation
 
@@ -85,7 +83,7 @@ Configure Seo-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     // Configure Seo module
     config(['seo.default_title' => 'Test Site']);
     config(['seo.default_description' => 'Test description']);
@@ -106,7 +104,7 @@ test('seo metadata can be created', function () {
         'keywords' => 'test,seo',
         'locale' => 'it',
     ]);
-    
+
     expect($metadata)->toBeInstanceOf(\Modules\Seo\Models\SeoMetadata::class);
     expect($metadata->title)->toBe('Test Page');
 });
@@ -117,7 +115,7 @@ test('seo metadata can be created', function () {
 ```php
 test('seo configuration is loaded', function () {
     $seoConfig = config('seo');
-    
+
     expect($seoConfig['default_title'])->toBe('Test Site');
     expect($seoConfig['default_description'])->toBe('Test description');
     expect($seoConfig['cache_enabled'])->toBe(false);
@@ -129,7 +127,7 @@ test('seo configuration is loaded', function () {
 ```php
 test('seo service provider is registered', function () {
     $app = app();
-    
+
     expect($app->bound(\Modules\Seo\Providers\SeoServiceProvider::class))->toBeTrue();
 });
 ```
@@ -174,7 +172,7 @@ test('seo service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     config(['seo.default_title' => 'Test Site']);
     config(['seo.default_description' => 'Test description']);
     config(['seo.cache_enabled' => false]);
@@ -191,11 +189,11 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
-    
+
     $app['config']->set([
-        'database.connections.seo.database' => 'quaeris_data_test',
+        'database.connections.seo.database' => '<nome progetto>_data_test',
     ]);
-    
+
     return $app;
 }
 ```
@@ -305,7 +303,7 @@ test('seo metadata can be created', function () {
         'created_at' => now(),
         'updated_at' => now(),
     ]);
-    
+
     expect($metadata)->toBeInstanceOf(\Modules\Seo\Models\SeoMetadata::class);
     expect($metadata->url)->toBe('/test-page');
     expect($metadata->title)->toBe('Test Page');
@@ -349,7 +347,7 @@ test('seo api can get metadata', function () {
         'description' => 'Test description',
         'keywords' => 'test,seo',
     ]);
-    
+
     $response = $this->get('/api/seo/metadata/test-page');
     $response->assertStatus(200);
     $response->assertJson([

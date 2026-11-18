@@ -339,8 +339,8 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 - [root-md-files/conflict-resolution-summary](./bmad/conflict-resolution-summary.md)
 
 ## Screenshots
-- [screenshots/f1-world-champion-2026-theme-analysis](./wiki/comparisons/f1-world-champion-2026-theme-analysis.md)
-- [screenshots/f1-world-champion-theme-analysis](./wiki/comparisons/f1-world-champion-theme-analysis.md)
+- [screenshots/f1-world-champion-2026-theme-analysis](./screenshots/f1-world-champion-2026-theme-analysis.md) — stub → wiki/comparisons canonico
+- [screenshots/f1-world-champion-theme-analysis](./screenshots/f1-world-champion-theme-analysis.md) — stub → [wiki/comparisons/f1-world-champion-theme-analysis.md](./wiki/comparisons/f1-world-champion-theme-analysis.md)
 
 ## Skills
 - [skills/README](./skills/readme.md)

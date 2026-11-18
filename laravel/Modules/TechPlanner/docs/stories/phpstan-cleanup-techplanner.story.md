@@ -5,7 +5,7 @@ module: TechPlanner
 status: done
 priority: medium
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-11-17
 tags: [phpstan, cleanup, bmad, techplanner]
 ---
 
@@ -46,3 +46,10 @@ Esistono gia' `app/Filament/Imports/ClientImporter.php` e `DeviceImporter.php` (
 - Discussion: TODO
 
 Dev story: [phpstan-cleanup-techplanner.dev.md](./phpstan-cleanup-techplanner.dev.md)
+
+
+## Wave 2026-11-17
+
+Inventory `/tmp/phpstan-wave/TechPlanner.tsv`: **76 → 0**.
+
+Dettaglio: [phpstan-generics-cleanup.md](../wiki/concepts/phpstan-generics-cleanup.md).

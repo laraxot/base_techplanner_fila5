@@ -1,11 +1,10 @@
 ---
 title: "Activity Module - Third-Party Model Patterns"
+qmd: "activity third party model patterns md"
 type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity]
-qmd: "activity module - third-party model patterns activity"
+tags: [documentation]
 ---
+
 # Activity Module - Third-Party Model Patterns
 
 ## Spatie Package Integration
@@ -268,7 +267,7 @@ public function test_event_storage(): void
 
 ### Laraxot Philosophy
 - [Third-Party Model Inheritance](../xot/docs/third-party-model-inheritance-philosophy.md)
-- [Event Sourcing Patterns](../xot/docs/event-sourcing-patterns.md)
+- [Event Sourcing Patterns](wiki/concepts/event-sourcing-patterns.md)
 
 ---
 

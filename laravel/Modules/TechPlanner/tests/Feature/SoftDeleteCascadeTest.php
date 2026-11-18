@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Modules\TechPlanner\Filament\Resources\ClientResource\Tables\ClientsTable;
 use Modules\TechPlanner\Models\Client;
@@ -21,11 +22,11 @@ uses(TestCase::class);
 function tpSoftMigrate(string ...$files): void
 {
     foreach ($files as $file) {
-        $migration = require dirname(__DIR__, 2).'/database/migrations/'.$file;
-        if (! $migration instanceof Migration || ! method_exists($migration, 'up')) {
+        $loaded = require dirname(__DIR__, 2).'/database/migrations/'.$file;
+        if (! is_object($loaded) || ! method_exists($loaded, 'up')) {
             throw new RuntimeException("Migrazione non valida: {$file}");
         }
-        $migration->up();
+        $loaded->up();
     }
 }
 
@@ -71,7 +72,10 @@ it('moves the client and everything it owns to the trash instead of erasing it',
 
 it('brings back the children that were trashed with the client', function (): void {
     $this->client->delete();
-    Client::withTrashed()->findOrFail($this->client->getKey())->restore();
+    $trashed = Client::onlyTrashed()->whereKey($this->client->getKey())->first();
+    expect($trashed)->toBeInstanceOf(Client::class);
+    assert($trashed instanceof Client);
+    $trashed->restore();
 
     expect(Device::query()->count())->toBe(1)
         ->and(DeviceVerification::query()->count())->toBe(1)
@@ -84,7 +88,10 @@ it('leaves trashed what had been deleted before the client', function (): void {
     $this->travelBack();
 
     $this->client->delete();
-    Client::withTrashed()->findOrFail($this->client->getKey())->restore();
+    $trashed = Client::onlyTrashed()->whereKey($this->client->getKey())->first();
+    expect($trashed)->toBeInstanceOf(Client::class);
+    assert($trashed instanceof Client);
+    $trashed->restore();
 
     expect(PhoneCall::query()->count())->toBe(0)
         ->and(Device::query()->count())->toBe(1);
@@ -99,13 +106,13 @@ it('offers the trash filter and restore actions on the client list', function ()
 });
 
 it('adds missing trash columns on an older database without touching existing ones', function (): void {
-    Schema::connection('tech_planner')->create('workers', static function ($table): void {
+    Schema::connection('tech_planner')->create('workers', static function (Blueprint $table): void {
         $table->id();
     });
 
-    $migration = require dirname(__DIR__, 2).'/database/migrations/2026_11_10_000000_ensure_soft_delete_columns_on_techplanner_tables.php';
-    $migration->up();
-    $migration->up();
+    // La migrazione e' idempotente: va eseguita due volte di fila.
+    tpSoftMigrate('2026_11_10_000000_ensure_soft_delete_columns_on_techplanner_tables.php');
+    tpSoftMigrate('2026_11_10_000000_ensure_soft_delete_columns_on_techplanner_tables.php');
 
     expect(Schema::connection('tech_planner')->hasColumns('workers', ['deleted_at', 'deleted_by']))->toBeTrue()
         ->and(Schema::connection('tech_planner')->hasColumn('clients', 'deleted_at'))->toBeTrue();

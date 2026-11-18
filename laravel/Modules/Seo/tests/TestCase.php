@@ -24,6 +24,10 @@ abstract class TestCase extends XotBaseTestCase
 
     protected function setUp(): void
     {
+        // Prima di parent::setUp(): DatabaseTransactions apre le transazioni subito; senza questo la
+        // connessione `user` (mysql) va in "Connection refused" dove non c'e' MariaDB (vedi XotBaseTestCase).
+        $this->prepareSharedSqliteForTesting();
+
         parent::setUp();
 
         $database = self::sharedSqlitePath();
@@ -35,16 +39,16 @@ abstract class TestCase extends XotBaseTestCase
             $driver = config("database.connections.{$connection}.driver");
 
             if ($driver === 'sqlite') {
-                $this->app['config']->set("database.connections.{$connection}.database", $database);
+                config()->set("database.connections.{$connection}.database", $database);
                 DB::purge($connection);
 
                 continue;
             }
 
             if ($driver === 'mysql') {
-                $this->app['config']->set("database.connections.{$connection}.driver", 'sqlite');
-                $this->app['config']->set("database.connections.{$connection}.database", $database);
-                $this->app['config']->set("database.connections.{$connection}.prefix", '');
+                config()->set("database.connections.{$connection}.driver", 'sqlite');
+                config()->set("database.connections.{$connection}.database", $database);
+                config()->set("database.connections.{$connection}.prefix", '');
                 DB::purge($connection);
             }
         }

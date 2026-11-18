@@ -1,3 +1,10 @@
+---
+title: "Libreria componenti e integrazione UI"
+qmd: "zero roadmap component library md"
+type: note
+tags: [documentation]
+---
+
 # Libreria componenti e integrazione UI
 
 ## Obiettivo

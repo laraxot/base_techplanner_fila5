@@ -57,7 +57,7 @@ class AppointmentsTable extends TechPlannerBaseTable
                 ->searchable()
                 ->preload(),
             'date_range' => Filter::make('date_range')
-                ->schema([
+                ->form([
                     DatePicker::make('from'),
                     DatePicker::make('until'),
                 ])

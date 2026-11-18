@@ -22,7 +22,7 @@ Regole, skill e memorie vivono solo in `docs/wiki/`. Caricamento on-demand via Q
 - Mai `RefreshDatabase` — `.env.testing` SQLite
 - Committa e pusha su `dev` da solo, senza aspettare la richiesta, quando un blocco di lavoro è verificato (test verdi). Mai segreti, `.env` o file locali/demo nel commit
 - Test solo nella cartella `tests/` del modulo (`laravel/Modules/<Modulo>/tests`): mai in `laravel/tests/`
-- `public_html` è la document root (non si cancella). Asset solo via symlink relativi: `public_html/themes/<Tema>` → `../../laravel/Themes/<Tema>/public`, `public_html/assets/<modulo minuscolo>` → `../../laravel/Modules/<Modulo>/public`; `.gitignore` accanto con `<nome>/` (tiene il link, ignora le copie). Niente `npm run copy`. Dettagli: `laravel/Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md`
+- `public_html` è la document root (non si cancella). Asset solo via symlink relativi: `public_html/themes/<Tema>` → `../../laravel/Themes/<Tema>/public`, `public_html/assets/<modulo minuscolo>` → `../../laravel/Modules/<Modulo>/public`; link creati con `php artisan xot:module-link` / `xot:theme-link` (o da `deploy.sh`) e versionati con `git add -f`; `.gitignore` accanto con `<nome>/` (ignora le copie vere) e `<nome>`. `AssetAction` non copia: i file vanno in `Modules/<Modulo>/public`. Niente `npm run copy`. Dettagli: `laravel/Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md`
 - Stesso task multi-agente → una BMAD story canonica nell'owner corretto (`docs/stories/`, `Modules/*/docs/stories/` o `Themes/*/docs/stories/`) + lock + issue GitHub (`git remote -v`). `docs/chat/` è solo storico legacy.
 
 *Stub ≤50 righe — SSoT: docs/wiki/*

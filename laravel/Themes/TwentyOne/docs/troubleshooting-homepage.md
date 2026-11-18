@@ -139,4 +139,4 @@ curl -I http://predict.local/themes/TwentyOne/assets/app-D5P4IeE3.css
 ## Risorse
 - [Laravel Vite Documentation](https://laravel.com/docs/vite)
 - [Vite Manifest Format](https://vitejs.dev/guide/backend-integration.html)
-- [Laravel Themes Integration](https://github.com/laraxot/theme-twentyone-fila3)
+- [Laravel Themes Integration](https://github.com/laraxot/theme-twentyone-fila5)

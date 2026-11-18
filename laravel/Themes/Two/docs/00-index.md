@@ -1,6 +1,6 @@
 # Two Theme - Documentation Index
 
-> Indice storico, superato: l'indice canonico e' [index.md](./index.md) (ingresso: [README.md](./README.md)). `00-INDEX.md` e' il gemello con la sola maiuscola diversa.
+> Indice storico, superato: l'indice canonico e' [index.md](wiki/index.md) (ingresso: [README.md](./README.md)). `00-INDEX.md` e' il gemello con la sola maiuscola diversa.
 
 **Theme Version**: 2.0
 

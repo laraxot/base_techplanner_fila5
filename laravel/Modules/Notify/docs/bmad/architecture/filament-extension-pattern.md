@@ -19,9 +19,9 @@ related:
 status: draft
 ---
 
-# Pattern di Estensione per Componenti Filament 
+# Pattern di Estensione per Componenti Filament
 
-Questo documento definisce il pattern di estensione standardizzato per i componenti Filament nel sistema Quaeris, con particolare attenzione al principio di non estendere mai direttamente le classi Filament.
+Questo documento definisce il pattern di estensione standardizzato per i componenti Filament nel sistema <nome progetto>, con particolare attenzione al principio di non estendere mai direttamente le classi Filament.
 
 ## Regola Fondamentale
 
@@ -41,7 +41,7 @@ Questo documento definisce il pattern di estensione standardizzato per i compone
 
 ## Motivazione
 
-1. **Personalizzazione Centralizzata**: Le classi XotBase forniscono funzionalità e comportamenti personalizzati specifici per Quaeris, mantenendo la coerenza in tutta l'applicazione.
+1. **Personalizzazione Centralizzata**: Le classi XotBase forniscono funzionalità e comportamenti personalizzati specifici per <nome progetto>, mantenendo la coerenza in tutta l'applicazione.
 
 2. **Aggiornamenti Semplificati**: Quando Filament viene aggiornato, è possibile adattare solo le classi XotBase senza dover modificare tutte le implementazioni concrete.
 
@@ -84,7 +84,7 @@ use Filament\Forms\Concerns\InteractsWithForms;
 class SendSmsPage extends XotBasePage implements HasForms
 {
     use InteractsWithForms;
-    
+
     // Implementazione...
 }
 ```
@@ -103,7 +103,7 @@ use Filament\Forms\Concerns\InteractsWithForms;
 class SendSmsPage extends Page implements HasForms // ❌ ERRORE
 {
     use InteractsWithForms;
-    
+
     // Implementazione...
 }
 ```
@@ -112,7 +112,7 @@ class SendSmsPage extends Page implements HasForms // ❌ ERRORE
 
 ### 1. Personalizzazione Centralizzata
 
-Le classi XotBase possono implementare comportamenti specifici per Quaeris, come:
+Le classi XotBase possono implementare comportamenti specifici per <nome progetto>, come:
 - Gestione multilingua avanzata
 - Integrazione con il sistema di permessi personalizzato
 - Logging e auditing specifici

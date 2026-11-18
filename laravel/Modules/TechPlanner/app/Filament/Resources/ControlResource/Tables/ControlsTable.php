@@ -55,7 +55,7 @@ class ControlsTable extends TechPlannerBaseTable
                 ->preload(),
             'schedule_status' => Filter::make('schedule_status')
                 ->label(__('techplanner::control.filters.schedule_status.label'))
-                ->schema([
+                ->form([
                     Select::make('value')
                         ->label(__('techplanner::control.filters.schedule_status.value'))
                         ->options([

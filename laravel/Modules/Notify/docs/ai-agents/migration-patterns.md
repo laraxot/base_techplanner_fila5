@@ -7,13 +7,11 @@ updated: 2026-09-26
 qmd: "migration patterns"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Migration patterns
 
 > Source: [AGENT_MEMORY.md](../../AGENT_MEMORY.md) | [IFLOW.md](../../bashscripts/ai/IFLOW.md)
-> Source: [AGENT_MEMORY.md](../../AGENT_MEMORY.md) | [IFLOW.md](../../../../../bashscripts/ai/IFLOW.md)
 > Back: [index](index.md) | [laraxot-philosophy.md](laraxot-philosophy.md)
 
 ## XotBaseMigration standard
@@ -118,13 +116,13 @@ Modules/{ModuleName}/database/
 └── seeders/       ← minuscolo
 ```
 
-**WRONG**: `database/Migrations/` (maiuscola): Linux filesystem is case-sensitive!
+**WRONG**: `database/Migrations/` (maiuscola) — Linux filesystem is case-sensitive!
 - Both `Migrations/` and `migrations/` can coexist silently
 - Laravel/nwidart loads ONLY `database/migrations/` (lowercase)
 - Files in `database/Migrations/` (uppercase) are **silently ignored**
 - Always verify with `ls -la database/` before placing migration files
 
-Issue: https://github.com/provtv/base_ptv_fila5_mono/issues/71
+Issue: https://github.com/provtv/base_ptv_fila5/issues/71
 
 ## Cross-module impact
 

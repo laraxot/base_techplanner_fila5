@@ -26,11 +26,11 @@ uses(TestCase::class);
 function tpMigrate(string ...$files): void
 {
     foreach ($files as $file) {
-        $migration = require dirname(__DIR__, 2).'/database/migrations/'.$file;
-        if (! $migration instanceof Migration || ! method_exists($migration, 'up')) {
+        $loaded = require dirname(__DIR__, 2).'/database/migrations/'.$file;
+        if (! is_object($loaded) || ! method_exists($loaded, 'up')) {
             throw new RuntimeException("Migrazione non valida: {$file}");
         }
-        $migration->up();
+        $loaded->up();
     }
 }
 
@@ -105,9 +105,10 @@ it('shows filters, sort by distance and bulk actions on the client list', functi
 it('gives the client phone calls tab real columns', function (): void {
     $manager = new PhoneCallsRelationManager();
     $columns = (new ReflectionMethod($manager, 'getTableColumns'))->invoke($manager);
+    expect($columns)->toBeArray()->not->toBeEmpty();
+    assert(is_array($columns));
 
-    expect($columns)->toBeArray()->not->toBeEmpty()
-        ->and(array_keys($columns))->toContain('date', 'call_type');
+    expect(array_keys($columns))->toContain('date', 'call_type');
 });
 
 it('resolves contact icons instead of failing the client list', function (): void {

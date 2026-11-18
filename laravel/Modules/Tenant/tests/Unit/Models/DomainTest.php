@@ -8,14 +8,11 @@ use Mockery\MockInterface;
 use Modules\Tenant\Actions\Domains\GetDomainsArrayAction;
 use Modules\Tenant\Models\Domain;
 use Modules\Tenant\Models\TenantDomain;
-use Modules\Tenant\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('Domain sushi models', function (): void {
     test('domain model exposes rows from GetDomainsArrayAction', function (): void {
-        TestCase::mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
+        $this->mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
             $mock->allows([
                 'execute' => [
                     ['id' => 'tenant.example.com', 'name' => 'tenant.example.com'],
@@ -30,7 +27,7 @@ describe('Domain sushi models', function (): void {
     });
 
     test('tenant domain model mirrors domain registry rows', function (): void {
-        TestCase::mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
+        $this->mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
             $mock->allows([
                 'execute' => [
                     ['id' => 'primary.example.com', 'name' => 'primary.example.com'],
@@ -46,7 +43,7 @@ describe('Domain sushi models', function (): void {
     });
 
     test('tenant domain sushi query resolves host by name column', function (): void {
-        TestCase::mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
+        $this->mockAppService(GetDomainsArrayAction::class, static function (MockInterface $mock): void {
             $mock->allows([
                 'execute' => [
                     ['id' => 'secure.example.com', 'name' => 'secure.example.com'],

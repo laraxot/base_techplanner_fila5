@@ -1,15 +1,15 @@
 {
-  "../../node_modules/leaflet/dist/images/layers-2x.png": {
+  "node_modules/leaflet/dist/images/layers-2x.png": {
     "file": "assets/layers-2x.png",
-    "src": "../../node_modules/leaflet/dist/images/layers-2x.png"
+    "src": "node_modules/leaflet/dist/images/layers-2x.png"
   },
-  "../../node_modules/leaflet/dist/images/layers.png": {
+  "node_modules/leaflet/dist/images/layers.png": {
     "file": "assets/layers.png",
-    "src": "../../node_modules/leaflet/dist/images/layers.png"
+    "src": "node_modules/leaflet/dist/images/layers.png"
   },
-  "../../node_modules/leaflet/dist/images/marker-icon.png": {
+  "node_modules/leaflet/dist/images/marker-icon.png": {
     "file": "assets/marker-icon.png",
-    "src": "../../node_modules/leaflet/dist/images/marker-icon.png"
+    "src": "node_modules/leaflet/dist/images/marker-icon.png"
   },
   "resources/css/app.css": {
     "file": "assets/app.css",

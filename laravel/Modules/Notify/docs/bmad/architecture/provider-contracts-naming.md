@@ -19,11 +19,11 @@ related:
 status: draft
 ---
 
-# Convenzioni di Naming per i Contracts 
+# Convenzioni di Naming per i Contracts
 
 ## Regola Fondamentale
 
-Nel sistema Quaeris, tutte le interfacce (interfaces) devono seguire queste convenzioni di naming:
+Nel sistema <nome progetto>, tutte le interfacce (interfaces) devono seguire queste convenzioni di naming:
 
 1. **Suffisso `Contract` e non `Interface`**:
    - ✅ CORRETTO: `SmsProviderContract`

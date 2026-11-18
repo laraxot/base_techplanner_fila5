@@ -1,3 +1,10 @@
+---
+title: "Funzionalita avanzate (dark mode, export)"
+qmd: "zero roadmap advanced features md"
+type: note
+tags: [documentation]
+---
+
 # Funzionalita avanzate (dark mode, export)
 
 ## Obiettivo

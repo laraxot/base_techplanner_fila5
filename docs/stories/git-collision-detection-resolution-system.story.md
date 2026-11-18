@@ -31,8 +31,8 @@ Attualmente le collisioni Git vengono gestite in modo non sistematico:
 
 ## User Story
 
-**As a** developer  
-**I want** un sistema automatizzato per rilevare e risolvere le collisioni Git  
+**As a** developer
+**I want** un sistema automatizzato per rilevare e risolvere le collisioni Git
 **So that** posso mantenere l'integrità del repository e seguire la disciplina forward-only
 
 ## Acceptance Criteria
@@ -217,8 +217,8 @@ docs/wiki/rules/git-collision-detection-resolution.md
 
 ---
 
-**Generated with Devin**  
-**BMAD Story Approach**  
+**Generated with Devin**
+**BMAD Story Approach**
 **Visionary Eccentric Programmer Mode: ON**
 
 ## Incidente 2026-10-28: marker committati da rebase aperti
@@ -255,7 +255,7 @@ Un'altra sessione ha tolto i marker alle 16:34, spesso tenendo il lato upstream.
    - `mixed`: `00-master-prompt.md`, `25-services-to-actions.md` e il README dicono «ultima spiaggia» (come l'utente); valgono i prompt, il brief che diceva «mai» era sbagliato.
    - `@phpstan-ignore`: 80 nel codice di `Modules/*/app` contro la regola il 2026-10-28, 7 il 2026-10-30; il debito residuo e' in [all-modules-phpstan-zero-errors](./all-modules-phpstan-zero-errors.story.md).
    - Duplicati esatti: Employee 66 gruppi (68 copie), Geo 41 gruppi (88 file), 43 coppie `.md`/`.txt` nei prompt. Trasformarli in rimandi di 1-2 righe richiede di decidere quale copia e' canonica.
-   - Docs di altri progetti dentro i moduli: User cita Fixcity (58 file), SaluteOra (86), Patient (82); Geo e Sixteen citano Fixcity; Zero, Cms e Quaeris.
+   - Docs di altri progetti dentro i moduli: User cita Fixcity (58 file), SaluteOra (86), Patient (82); Geo e Sixteen citano Fixcity; Zero, Cms e <nome progetto>.
    - Issue e URL: una issue di `base_fixcity_fila5` citata da un file di Activity; User ha 792 `issues:` boilerplate verso `provtv/base_ptv_fila5#124` e 403 `canonical:` verso `Themes/docs/shared-components/`, che non esiste.
    - Migrazioni nei test: `Modules/Xot/tests/TestCase.php` dice di migrare a mano, `XotBaseTestCase::createApplication()` non migra; `Activity/tests/TestCase.php` ha `$connectionsToTransact = ['sqlite','activity','user']` mentre la sua doc dice `mysql`; User ha 5 migrazioni che creano `model_has_roles`/`model_has_role`, contro «una migrazione per modello».
 5. `bashscripts/lib/deploy.sh` ha operazioni distruttive e di permessi: leggerlo prima di lanciarlo. Non committare `composer.lock` (983 righe aggiunte e 1508 tolte, Filament 5.10 -> 5.11 e altri) senza rieseguire PHPStan e Pest.

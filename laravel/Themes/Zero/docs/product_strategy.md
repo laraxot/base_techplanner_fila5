@@ -1,3 +1,10 @@
+---
+title: "Product Strategy - Theme Zero"
+qmd: "zero product strategy md"
+type: note
+tags: [documentation]
+---
+
 # Product Strategy - Theme Zero
 
 ## Ultra-Minimalist Theme

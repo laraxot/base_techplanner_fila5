@@ -77,7 +77,7 @@ public function handleHTTPRequest(): void
 
 # Convenzioni di Naming per le Azioni di Notifica
 
-Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema Quaeris, supportando la risoluzione dinamica delle classi implementata nei factory.
+Questo documento definisce le convenzioni di naming standardizzate per le azioni di notifica nel sistema <nome progetto>, supportando la risoluzione dinamica delle classi implementata nei factory.
 
 ## Pattern di Naming
 
@@ -153,7 +153,7 @@ final class SendNewProviderSMSAction implements SmsActionInterface
     public function execute(SmsData $smsData): array
     {
         // Implementazione...
-        
+
         return [
             'success' => true,
             // Altri dati...

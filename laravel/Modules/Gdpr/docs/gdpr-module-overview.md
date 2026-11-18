@@ -1,3 +1,14 @@
+---
+title: "gdpr module overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gdpr module overview"
+issues: []
+discussions: []
+---
+
 # GDPR Module - Overview e Business Logic
 
 **Status**: PHPStan Level 10 ✅ (82 files, 0 errori)
@@ -5,6 +16,14 @@
 
 ---
 
+title: "gdpr module overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "gdpr module overview"
+issues: []
+discussions: []
 ## 🎯 Scopo Business
 
 Il modulo **GDPR** fornisce gestione completa della conformità al Regolamento Generale sulla Protezione dei Dati (GDPR/RGPD).
@@ -202,7 +221,6 @@ $consent->delete();
 
 ### Guide Principali
 
-- [README.md](./README.md) - Overview modulo
 - [README.md](./readme.md) - Overview modulo
 - [implementation-guide.md](./implementation-guide.md) - Guida implementazione
 - [api.md](./api.md) - API reference

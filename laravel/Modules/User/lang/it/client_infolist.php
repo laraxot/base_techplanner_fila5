@@ -15,10 +15,7 @@ return [
         'created_at' => ['label' => 'Creato il'],
         'updated_at' => ['label' => 'Modificato il'],
         'user' => [
-            'name' => ['label' => 'Utente'],
+            'name' => ['label' => 'user.name'],
         ],
-    ],
-    'sections' => [
-        'OAuth Client Information' => ['label' => 'OAuth Client Information', 'heading' => 'OAuth Client Information'],
     ],
 ];

@@ -14,14 +14,14 @@ use UnexpectedValueException;
 use Webmozart\Assert\Assert;
 
 /**
- * .
+ * Blade component that renders a CMS block.
  */
 class Block extends Component
 {
     public ?string $view = null;
 
     /**
-     * @param  array<string, mixed>  $block
+     * @param array<string, mixed> $block
      */
     public function __construct(
         public array $block,
@@ -39,7 +39,10 @@ class Block extends Component
     public function render(): ViewFactory|View
     {
         if (! isset($this->block['type'])) {
-            return view('ui::empty');
+            /** @var view-string $emptyView */
+            $emptyView = 'ui::empty';
+
+            return view($emptyView);
         }
 
         $view = $this->view;
@@ -49,8 +52,10 @@ class Block extends Component
                 'title' => 'deprecated',
                 'message' => $message,
             ];
+            /** @var view-string $alertView */
+            $alertView = 'ui::alert';
 
-            return view('ui::alert', $viewParams);
+            return view($alertView, $viewParams);
         }
         $rawData = $this->block['data'] ?? [];
         $viewParams = \is_array($rawData) ? $this->normalizeViewData($rawData) : [];

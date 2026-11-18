@@ -68,3 +68,14 @@ _docs/
 .cursor/
 .windsurf/
 tests/AuditCoverage
+# Strumenti locali/IDE (wiki module-theme-root-hygiene)
+.agents/
+.codex/
+.opencode/
+.qwen/
+audit-coverage/
+rector.php
+phpinsights.php
+.php-cs-fixer.php
+.php-cs-fixer.dist.php
+*.lock

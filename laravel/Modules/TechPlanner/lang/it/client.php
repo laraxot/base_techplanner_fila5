@@ -215,7 +215,22 @@ return [
             'label' => 'Distanza',
         ],
         'distance_km' => [
-            'label' => 'Km',
+            'label' => 'km',
+        ],
+        'last_rx_control_date' => [
+            'label' => 'Ultimo controllo RX',
+        ],
+        'last_intraoral_control_date' => [
+            'label' => 'Ultimo controllo endorale',
+        ],
+        'last_electromedical_control_date' => [
+            'label' => 'Ultimo controllo elettromedicali',
+        ],
+        'last_appointment' => [
+            'label' => 'Ultimo appuntamento',
+        ],
+        'last_health_authorization_date' => [
+            'label' => 'Ultima autorizzazione sanitaria',
         ],
         'is_active' => [
             'label' => 'Attivo',
@@ -397,18 +412,6 @@ return [
         'contact' => [
             'label' => 'Contatto',
         ],
-        'last_rx_control_date' => [
-            'label' => 'Ultimo controllo RX',
-        ],
-        'last_intraoral_control_date' => [
-            'label' => 'Ultimo controllo endorale',
-        ],
-        'last_electromedical_control_date' => [
-            'label' => 'Ultimo controllo elettromedicali',
-        ],
-        'last_health_authorization_date' => [
-            'label' => 'Ultima autorizzazione sanitaria',
-        ],
         'isActive' => [
             'description' => 'isActive',
             'helper_text' => '',
@@ -516,6 +519,10 @@ return [
         'controls_expiring' => [
             'label' => 'Controlli in scadenza (30 gg)',
         ],
+        'last_appointment_type' => [
+            'label' => 'Ultimo appuntamento per tipo',
+            'none' => 'Nessun appuntamento',
+        ],
         'never_controlled_type' => [
             'label' => 'Mai controllato per tipo',
         ],
@@ -556,3 +563,4 @@ return [
         'missing' => 'Coordinate non disponibili. Completa l’indirizzo e usa “Aggiorna da indirizzo” nella sezione Coordinate.',
     ],
 ];
+

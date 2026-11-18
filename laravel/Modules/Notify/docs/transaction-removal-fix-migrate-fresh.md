@@ -12,9 +12,9 @@ status: draft
 
 # Fix Transaction Model - Migrate Fresh Error
 
-**Data**: 15 Ottobre 2025  
-**Stato**: ✅ Completato  
-**Comando**: `php artisan migrate:fresh`  
+**Data**: 15 Ottobre 2025
+**Stato**: ✅ Completato
+**Comando**: `php artisan migrate:fresh`
 **Modulo**: Blog
 
 ## Problema
@@ -22,9 +22,9 @@ status: draft
 Durante l'esecuzione di `php artisan migrate:fresh`, il sistema tentava di caricare automaticamente il modello `Transaction` che non esisteva più, causando un errore fatale:
 
 ```
-ErrorException 
-include(/var/www/_bases/base_fixcity_fila5_mono/laravel/vendor/composer/
-../../Modules/Blog/app/Models/Transaction.php): 
+ErrorException
+include(/var/www/_bases/base_fixcity_fila5/laravel/vendor/composer/
+../../Modules/Blog/app/Models/Transaction.php):
 Failed to open stream: No such file or directory
 
 at vendor/composer/ClassLoader.php:576
@@ -92,7 +92,7 @@ Il modello gestiva un sistema di crediti/transazioni per utenti:
 class Transaction extends BaseModel
 {
     protected $connection = 'blog';
-    
+
     protected $fillable = [
         'date',           // Data transazione
         'model_type',     // Tipo modello (polimorfico)
@@ -181,7 +181,7 @@ Modules/Wallet/
     └── WalletService.php
 ```
 
-**Pro**: Separazione concerns, riutilizzabile  
+**Pro**: Separazione concerns, riutilizzabile
 **Contro**: Overhead iniziale
 
 ### Opzione 2: Pacchetto Esterno
@@ -189,7 +189,7 @@ Modules/Wallet/
 composer require bavix/laravel-wallet
 ```
 
-**Pro**: Testato, documentato, manutenuto  
+**Pro**: Testato, documentato, manutenuto
 **Contro**: Dipendenza esterna, learning curve
 
 ### Opzione 3: Event-Driven
@@ -199,7 +199,7 @@ Event::listen(UserEarnedCredits::class, function($event) {
 });
 ```
 
-**Pro**: Flessibile, leggero  
+**Pro**: Flessibile, leggero
 **Contro**: Meno strutturato
 
 ## Best Practices Applicate [[memory:2884993]]
@@ -213,13 +213,13 @@ Event::listen(UserEarnedCredits::class, function($event) {
 
 ## Filosofia Implementata
 
-> **"Il codice che non serve è codice che confonde"**  
+> **"Il codice che non serve è codice che confonde"**
 > Rimosso dall'autoload ma preservato per la storia
 
-> **"La documentazione è memoria, la memoria è saggezza"**  
+> **"La documentazione è memoria, la memoria è saggezza"**
 > Decisione documentata per future generazioni di sviluppatori
 
-> **"Mantieni ciò che potrebbe servire, nascondi ciò che ora non serve"**  
+> **"Mantieni ciò che potrebbe servire, nascondi ciò che ora non serve"**
 > File `.disabled` invece di eliminazione definitiva
 
 ## Correlazione con Altri Fix
@@ -231,7 +231,7 @@ Questa è la seconda implementazione della giornata:
 - Risolto errore view:cache
 - **Documentazione**: [view-cache-components-fix-2025-10-15.md](./view-cache-components-fix-componenti-mancanti.md)
 
-### Sessione 2: Transaction Model (Pomeriggio)  
+### Sessione 2: Transaction Model (Pomeriggio)
 - Disabilitate TransactionFactory
 - Risolto errore migrate:fresh
 - **Documentazione**: Questo file

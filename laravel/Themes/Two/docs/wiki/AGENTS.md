@@ -147,4 +147,4 @@ Related:
 ## Related Documentation
 
 - [Project Wiki](../../../../../docs/wiki/index.md)
-- [Theme Documentation](../index.md)
+- [Theme Documentation](index.md)

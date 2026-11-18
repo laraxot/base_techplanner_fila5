@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Gate;
 use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Models\Device;
@@ -23,66 +24,84 @@ uses(TestCase::class);
 /** @param list<string> $roles */
 function tpUser(array $roles): UserContract
 {
+    /** @var UserContract&Mockery\MockInterface $user */
     $user = Mockery::mock(UserContract::class);
     $user->shouldReceive('hasRole')->andReturnUsing(
-        static fn (string|array $wanted): bool => array_intersect((array) $wanted, $roles) !== [],
+        static function (string|array $wanted) use ($roles): bool {
+            if (is_string($wanted)) {
+                return in_array($wanted, $roles, true);
+            }
+
+            foreach ($wanted as $role) {
+                if (is_string($role) && in_array($role, $roles, true)) {
+                    return true;
+                }
+            }
+
+            return false;
+        },
     );
 
     return $user;
 }
 
-dataset('tp-policies', [
-    'clienti' => [ClientPolicy::class, Client::class],
-    'apparecchi' => [DevicePolicy::class, Device::class],
-    'verifiche' => [DeviceVerificationPolicy::class, DeviceVerification::class],
-]);
+/**
+ * @return list<array{0: TechPlannerBasePolicy, 1: Model}>
+ */
+function tpPolicyCases(): array
+{
+    return [
+        [new ClientPolicy(), new Client()],
+        [new DevicePolicy(), new Device()],
+        [new DeviceVerificationPolicy(), new DeviceVerification()],
+    ];
+}
 
-it('lets the admin role do everything', function (string $policyClass, string $modelClass): void {
-    $policy = new $policyClass();
+it('lets the admin role do everything', function (): void {
     $user = tpUser([TechPlannerBasePolicy::ROLE_ADMIN]);
-    $record = new $modelClass();
+    foreach (tpPolicyCases() as [$policy, $record]) {
+        expect($policy->viewAny($user))->toBeTrue();
+        expect($policy->view($user, $record))->toBeTrue();
+        expect($policy->create($user))->toBeTrue();
+        expect($policy->update($user, $record))->toBeTrue();
+        expect($policy->delete($user, $record))->toBeTrue();
+        expect($policy->deleteAny($user))->toBeTrue();
+        expect($policy->forceDelete($user, $record))->toBeTrue();
+    }
+});
 
-    expect($policy->viewAny($user))->toBeTrue()
-        ->and($policy->view($user, $record))->toBeTrue()
-        ->and($policy->create($user))->toBeTrue()
-        ->and($policy->update($user, $record))->toBeTrue()
-        ->and($policy->delete($user, $record))->toBeTrue()
-        ->and($policy->deleteAny($user))->toBeTrue()
-        ->and($policy->forceDelete($user, $record))->toBeTrue();
-})->with('tp-policies');
-
-it('lets the operator work but not delete', function (string $policyClass, string $modelClass): void {
-    $policy = new $policyClass();
+it('lets the operator work but not delete', function (): void {
     $user = tpUser([TechPlannerBasePolicy::ROLE_OPERATOR]);
-    $record = new $modelClass();
+    foreach (tpPolicyCases() as [$policy, $record]) {
+        expect($policy->viewAny($user))->toBeTrue();
+        expect($policy->view($user, $record))->toBeTrue();
+        expect($policy->create($user))->toBeTrue();
+        expect($policy->update($user, $record))->toBeTrue();
+        expect($policy->delete($user, $record))->toBeFalse();
+        expect($policy->deleteAny($user))->toBeFalse();
+        expect($policy->restore($user, $record))->toBeFalse();
+        expect($policy->forceDelete($user, $record))->toBeFalse();
+    }
+});
 
-    expect($policy->viewAny($user))->toBeTrue()
-        ->and($policy->view($user, $record))->toBeTrue()
-        ->and($policy->create($user))->toBeTrue()
-        ->and($policy->update($user, $record))->toBeTrue()
-        ->and($policy->delete($user, $record))->toBeFalse()
-        ->and($policy->deleteAny($user))->toBeFalse()
-        ->and($policy->restore($user, $record))->toBeFalse()
-        ->and($policy->forceDelete($user, $record))->toBeFalse();
-})->with('tp-policies');
-
-it('denies users without a TechPlanner role', function (string $policyClass, string $modelClass): void {
-    $policy = new $policyClass();
+it('denies users without a TechPlanner role', function (): void {
     $user = tpUser(['user::admin']);
-    $record = new $modelClass();
-
-    expect($policy->viewAny($user))->toBeFalse()
-        ->and($policy->view($user, $record))->toBeFalse()
-        ->and($policy->create($user))->toBeFalse()
-        ->and($policy->update($user, $record))->toBeFalse()
-        ->and($policy->delete($user, $record))->toBeFalse();
-})->with('tp-policies');
+    foreach (tpPolicyCases() as [$policy, $record]) {
+        expect($policy->viewAny($user))->toBeFalse();
+        expect($policy->view($user, $record))->toBeFalse();
+        expect($policy->create($user))->toBeFalse();
+        expect($policy->update($user, $record))->toBeFalse();
+        expect($policy->delete($user, $record))->toBeFalse();
+    }
+});
 
 it('lets the super-admin through before any ability', function (): void {
     expect((new ClientPolicy())->before(tpUser(['super-admin']), 'delete'))->toBeTrue()
         ->and((new ClientPolicy())->before(tpUser([TechPlannerBasePolicy::ROLE_OPERATOR]), 'delete'))->toBeNull();
 });
 
-it('is discovered by the gate for every panel model', function (string $policyClass, string $modelClass): void {
-    expect(Gate::getPolicyFor($modelClass))->toBeInstanceOf($policyClass);
-})->with('tp-policies');
+it('is discovered by the gate for every panel model', function (): void {
+    expect(Gate::getPolicyFor(Client::class))->toBeInstanceOf(ClientPolicy::class);
+    expect(Gate::getPolicyFor(Device::class))->toBeInstanceOf(DevicePolicy::class);
+    expect(Gate::getPolicyFor(DeviceVerification::class))->toBeInstanceOf(DeviceVerificationPolicy::class);
+});

@@ -37,9 +37,9 @@ status: draft
 
 ### Directory Fisiche (path su disco)
 ```
-/var/www/html/Quaeris/laravel/Modules/Notify/
+/var/www/html/<nome progetto>/laravel/Modules/Notify/
 ├── app/                           # Directory fisica con app minuscolo
-│   ├── Actions/                  
+│   ├── Actions/
 │   │   ├── Email/                # Azioni per email
 │   │   ├── SMS/                  # Azioni per SMS
 │   │   └── WhatsApp/             # Azioni per WhatsApp

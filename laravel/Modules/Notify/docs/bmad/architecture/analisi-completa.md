@@ -418,8 +418,8 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 ## 📚 TUTTA LA DOCUMENTAZIONE
 
 ### 📊 Reports & Analysis
-- **[Master Roadmap Index](./roadmap-master-index.md)** ⭐ START HERE
-- **[Project Analysis & Roadmap](./project-analysis-and-roadmap.md)** ⭐ BUSINESS VIEW
+- **[Master Roadmap Index](../../roadmap-master-index.md)** ⭐ START HERE
+- **[Project Analysis & Roadmap](../../project-analysis-and-roadmap.md)** ⭐ BUSINESS VIEW
 - **[Session Summary 2025-10-01](./phpstan/session-summary-.md.md)** ⭐ TECHNICAL
 - **[Final Report 2025-10-01](./phpstan/final-report-session-.md.md)**
 - **[Questo Documento](./analisi-completa.md)** ⭐ EXECUTIVE
@@ -440,7 +440,7 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 
 ### 📖 Main Docs
 - [Index Principale](./index.md)
-- [PHPStan Analysis](./phpstan/phpstan.md)
+- [PHPStan Analysis](../../phpstan.md)
 
 ---
 

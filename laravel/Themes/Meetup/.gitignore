@@ -83,3 +83,16 @@ dist-ssr
 *.sln
 *.sw?
 
+# Strumenti locali/IDE (wiki module-theme-root-hygiene)
+.agents/
+.codex/
+.cursor/
+.opencode/
+.qwen/
+audit-coverage/
+rector.php
+phpinsights.php
+.php-cs-fixer.php
+.php-cs-fixer.dist.php
+*.lock
+.windsurf/

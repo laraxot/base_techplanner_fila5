@@ -55,7 +55,7 @@ Nota importante: il remote dei sottomoduli è `laraxot`, **non** `origin`. Push:
   l'equivalente vivo.
 - **Reperto**: `docs/scripts/cleanup-docs.sh` era la causa meccanica del ripresentarsi di
   `docs/archive/` — creava `docs/archive/{historical,duplicates,uppercase}/` e ci spostava
-  dentro file datati/duplicati/UPPERCASE (con path hardcoded a `base_ptvx_fila5_mono`).
+  dentro file datati/duplicati/UPPERCASE (con path hardcoded a `base_ptvx_fila5`).
   Rimosso, non migrato: la deduplica corretta è `git mv`/`git rm`, non un cimitero `archive/`.
 - `.gitignore` riscritto (fix anche della riga corrotta `*~headagentdb.rvf`); doc base
   extra-esteso `docs/no-ai-tool-scaffold-dirs.md` (tabella "una fonte di verità per categoria").

@@ -1,10 +1,29 @@
+---
+type: note
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "00 index"
+title: "Gdpr — indice della documentazione"
+description: "Documentazione del modulo Gdpr: funzionalita del modulo."
+module: Gdpr
+tags: [gdpr, documentazione, modulo, laraxot]
+status: active
+repository: https://github.com/laraxot/module_gdpr_fila5
+related:
+  - ./00-index.md
+  - ./index.md
+  - ../../../../docs/wiki/audits/docs-redundancy-audit.md
+issues: https://github.com/laraxot/module_gdpr_fila5/issues
+discussions: https://github.com/laraxot/module_gdpr_fila5/discussions
+---
+
 # 📚 **Indice Documentazione Modulo Gdpr**
 
 **Status**: ✅ PHPStan Level 10 Compliant
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa e Business Logic dei consensi.
+1. [README.md](./README.md) - Panoramica completa e Business Logic dei consensi.
 2. [roadmap.md](./roadmap.md) - Qualità del codice e obiettivi di conformità.
 3. [philosophy.md](./philosophy.md) - Privacy by Design e Commandment della compliance.
 
@@ -23,7 +42,7 @@
 - 🧹 **[PHPMD Analysis](./phpmd-report.txt)** - Risoluzione della complessità nei modelli di privacy.
 
 ## 📦 **Pacchetti Composer**
-- [Riferimento completo](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md)
+- [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md)
 - `statikbe/laravel-cookie-consent` - Banner cookie consent
 
 ## 📊 Documenti Product & Development
@@ -31,7 +50,7 @@
 ### Product
 | File | Scopo |
 |------|-------|
-| [PRD.md](./PRD.md) | Product Requirements |
+| [PRD.md](prd.md) | Product Requirements |
 | [PRODUCT_ROADMAP.md](./PRODUCT_ROADMAP.md) | Roadmap |
 | [PRODUCT_STRATEGY.md](./PRODUCT_STRATEGY.md) | Strategy |
 | [PRODUCT_LAUNCH_PLAN.md](./PRODUCT_LAUNCH_PLAN.md) | Launch Plan |
@@ -44,9 +63,9 @@
 | [USER_RESEARCH.md](./USER_RESEARCH.md) | User Research |
 
 ## 🔗 **Moduli Correlati**
-- [User](../../user/docs/readme.md) - Soggetti dei consensi.
-- [Activity](../../activity/docs/readme.md) - Log di sistema integrato.
-- [Xot](../../xot/docs/readme.md) - Base framework e trait UUID.
+- [User](../../User/docs/README.md) - Soggetti dei consensi.
+- [Activity](../../Activity/docs/README.md) - Log di sistema integrato.
+- [Xot](../../Xot/docs/README.md) - Base framework e trait UUID.
 # Documentation Index
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 

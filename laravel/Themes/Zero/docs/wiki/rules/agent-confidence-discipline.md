@@ -10,7 +10,7 @@ related:
   - "../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md"
   - "../../../laravel/Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md"
   - "../../Modules/Xot/docs/wiki/concepts/agent-confidence-discipline.md"
-issue: "https://github.com/provtv/base_ptv_fila5_mono/issues/152"
+issue: "https://github.com/provtv/base_ptv_fila5/issues/152"
 id: zero-docs-wiki-rules-agent-confidence-discipline
 slug: agent-confidence-discipline
 description: "Disciplina degli agenti per massimizzare la confidenza prima di modificare il tema."

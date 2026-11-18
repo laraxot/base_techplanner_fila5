@@ -228,3 +228,9 @@ audit-coverage/
 /.github/skills/
 .github/skills
 /docs/graphify/
+# Strumenti locali/IDE (wiki module-theme-root-hygiene)
+.codex/
+.qwen/
+.php-cs-fixer.php
+.php-cs-fixer.dist.php
+*.lock

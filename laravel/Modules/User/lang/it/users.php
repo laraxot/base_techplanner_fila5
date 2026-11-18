@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+// Etichette della tabella utenti (UsersTable / BaseUsersTable).
+
 return [
     'fields' => [
         'id' => [
@@ -95,6 +97,10 @@ return [
             'label' => 'Esporta',
             'icon' => 'export',
             'tooltip' => 'export',
+        ],
+        'change_password' => [
+            'label' => 'Cambia password',
+            'tooltip' => 'Imposta una nuova password',
         ],
     ],
 ];

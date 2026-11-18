@@ -62,6 +62,7 @@ class NationalFlagSelect extends XotBaseSelect
 
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
+            $localizedLabel = is_string($localizedLabel) ? $localizedLabel : $flagName;
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';
@@ -77,13 +78,12 @@ class NationalFlagSelect extends XotBaseSelect
     /**
      * Get filtered country options based on search query.
      *
-     * @param string $search The search query
-     *
+     * @param  string  $search  The search query
      * @return array<string, string>
      */
     protected function getFilteredCountryOptions(string $search): array
     {
-        if ('' === trim($search)) {
+        if (trim($search) === '') {
             return $this->getCountryOptions();
         }
 
@@ -145,6 +145,7 @@ class NationalFlagSelect extends XotBaseSelect
 
             $flagName = strtolower($code);
             $localizedLabel = __('lang::countries.'.$flagName);
+            $localizedLabel = is_string($localizedLabel) ? $localizedLabel : $flagName;
 
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';

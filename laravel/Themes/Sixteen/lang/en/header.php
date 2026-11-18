@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+    // Brand name for <x-cms::head> (pub_theme::header.brand.name): de/es inherit from en.
+    'brand' => [
+        'name' => 'FixCity',
+    ],
     'guest' => [
         'login' => [
             'label' => 'Sign in',
@@ -71,6 +75,8 @@ return [
     ],
 
     'slim' => [
+        // nome della zona destra della fascia alta (role=navigation): distingue i landmark di navigazione (axe landmark-unique)
+        'tools_aria' => 'Language and personal area',
         'region' => [
             'name' => [
                 'label' => 'Region name',

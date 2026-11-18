@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "translations"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Traduzioni del Modulo Gdpr
@@ -15,7 +14,7 @@ status: draft
 ## Collegamenti
 
 - [Modulo Lang](../../lang/docs/module_lang.md) - Documentazione principale sulle traduzioni
-- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Regole Generali Traduzioni](../../xot/docs/translations.md)
 
 ## Struttura
 
@@ -65,20 +64,20 @@ return [
 ];
 ```
 ## Collegamenti tra versioni di translations.md
-* [translations.md](laravel/modules/chart/docs/translations.md)
-* [translations.md](laravel/modules/reporting/docs/translations.md)
-* [translations.md](laravel/modules/gdpr/docs/translations.md)
-* [translations.md](laravel/modules/notify/docs/translations.md)
-* [translations.md](laravel/modules/xot/docs/roadmap/lang/translations.md)
-* [translations.md](laravel/modules/xot/docs/translations.md)
-* [translations.md](laravel/modules/dental/docs/translations.md)
-* [translations.md](laravel/modules/user/docs/translations.md)
-* [translations.md](laravel/modules/ui/docs/translations.md)
-* [translations.md](laravel/modules/lang/docs/packages/translations.md)
-* [translations.md](laravel/modules/lang/docs/translations.md)
-* [translations.md](laravel/modules/job/docs/translations.md)
-* [translations.md](laravel/modules/media/docs/translations.md)
-* [translations.md](laravel/modules/tenant/docs/translations.md)
-* [translations.md](laravel/modules/activity/docs/translations.md)
-* [translations.md](laravel/modules/patient/docs/translations.md)
-* [translations.md](laravel/modules/cms/docs/translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)
+* [translations.md](translations.md)

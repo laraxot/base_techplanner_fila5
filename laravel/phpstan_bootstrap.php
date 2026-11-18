@@ -84,6 +84,40 @@ if (class_exists(Module::class)) {
 
 /*
 |--------------------------------------------------------------------------
+| View namespaces for Larastan `view-string` checks
+|--------------------------------------------------------------------------
+|
+| Larastan validates `view-string` types by calling view()->exists() on the
+| booted container. Module/theme service providers only register their view
+| namespaces when the module is enabled, and this base enables just a subset
+| (e.g. Activity), so literals like 'xot::filament.widgets.clock' would be
+| rejected even though the blade files exist on disk. Register every
+| Modules/<Mod>/resources/views under its lowercase module name (the same
+| convention used by XotBaseServiceProvider::loadViewsFrom) and every
+| Themes/<Theme>/resources/views under its lowercase theme name, plus the
+| configured `pub_theme` namespace pointing at Themes/<xot.pub_theme>.
+|
+*/
+if (isset($app)) {
+    $viewFactory = $app->make('view');
+
+    foreach (glob(__DIR__.'/Modules/*/resources/views', GLOB_ONLYDIR) ?: [] as $moduleViewsPath) {
+        $viewFactory->addNamespace(strtolower(basename(dirname(dirname($moduleViewsPath)))), $moduleViewsPath);
+    }
+
+    foreach (glob(__DIR__.'/Themes/*/resources/views', GLOB_ONLYDIR) ?: [] as $themeViewsPath) {
+        $viewFactory->addNamespace(strtolower(basename(dirname(dirname($themeViewsPath)))), $themeViewsPath);
+    }
+
+    $pubTheme = (string) config('xot.pub_theme', '');
+    $pubThemeViewsPath = __DIR__.'/Themes/'.$pubTheme.'/resources/views';
+    if ($pubTheme !== '' && is_dir($pubThemeViewsPath)) {
+        $viewFactory->addNamespace('pub_theme', $pubThemeViewsPath);
+    }
+}
+
+/*
+|--------------------------------------------------------------------------
 | PHPStan analysis context: force TechPlanner main_module
 |--------------------------------------------------------------------------
 |

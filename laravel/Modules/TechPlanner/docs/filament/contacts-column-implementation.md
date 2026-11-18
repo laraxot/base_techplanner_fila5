@@ -222,7 +222,7 @@ private function formatContacts(Client $record): string
 
 ### Documentazione Correlata
 - [Filament Table Columns Best Practices](../../UI/docs/components/table-columns.md)
-- [TechPlanner Client Model](../Models/Client.md)
+- [TechPlanner Client Model](../wiki/entities/client.md)
 - [Filament Badge Usage Guide](../../../docs/filament_badge_column_usage.md)
 
 ### File Correlati

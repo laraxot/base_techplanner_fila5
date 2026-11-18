@@ -2,16 +2,15 @@
 qmd: "interface consolidated"
 issues: []
 discussions: []
-title: "interface: Consolidated Documentation"
+title: "interface — Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
-# interface: Consolidated Documentation
+# interface — Consolidated Documentation
 
 Consolidated from **13** individual files.
 
@@ -35,8 +34,7 @@ Consolidated from **13** individual files.
 
 ## interface-naming-convention-1
 
-*Consolidated from: `interface-naming-convention.md`*
-*Consolidated from: `interface-naming-convention-deprecated.md`*
+*Consolidated from: `interface-naming-convention-1.md`*
 
 
 This file is deprecated.
@@ -44,13 +42,12 @@ This file is deprecated.
 Use:
 
 - [interface-naming-convention](./interface-naming-convention.md)
-- [interface-naming-convention](../../interface-naming-convention.md)
 
 ---
 
 ## interface-naming-convention-2
 
-*Consolidated from: `interface-naming-convention.md`*
+*Consolidated from: `interface-naming-convention-2.md`*
 
 title: "Convenzione di Naming per le Interfacce"
 type: concept
@@ -61,22 +58,17 @@ qmd: "interface-naming-convention-2 convenzione di naming per le interfacce"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
 
-# Convenzione di Naming per le Interfacce 
+# Convenzione di Naming per le Interfacce
 
 ## Regola Fondamentale
 
@@ -206,16 +198,11 @@ grep -r "interface.*Contract" --include="*.php" Modules
 ## Riferimenti
 
 - [Laravel Contracts Documentation](https://laravel.com/docs/contracts)
-- [PTVX Code Quality Guidelines](laravel/docs/code-quality.md)
-- [Modulo Xot Contracts](laravel/Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)
-- [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)
 - [PTVX Code Quality Guidelines](../../ai-agents/code-quality.md)
 - [Modulo Xot Contracts](laravel/Modules/Xot/app/Contracts/)
 - [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
+- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
 # Convenzione di Naming per le Interfacce
 
@@ -276,24 +263,6 @@ grep -r "interface.*Contract" --include="*.php" Modules
 ## Riferimenti
 
 - [Laravel Contracts Documentation](https://laravel.com/docs/contracts)
-- [PTVX Code Quality Guidelines](laravel/docs/code-quality.md)
-- [Modulo Xot Contracts](laravel/Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)
-- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
-- [<nome progetto> Code Quality Guidelines](project_docs/code-quality.md)
-- [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
-- [<nome progetto> Code Quality Guidelines](project_docs/code-quality.md)
-- [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)
-- [<nome progetto> Code Quality Guidelines](project_docs/code-quality.md)
-- [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
-- [<nome progetto> Code Quality Guidelines](project_docs/code-quality.md)
-- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
-- [<nome progetto> Code Quality Guidelines](docs/code-quality.md)
-- [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](project_docs/code-quality.md)
 - [PTVX Code Quality Guidelines](../../ai-agents/code-quality.md)
 - [Modulo Xot Contracts](laravel/Modules/Xot/app/Contracts/)
 - [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
@@ -311,13 +280,13 @@ grep -r "interface.*Contract" --include="*.php" Modules
 - [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
 - [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
 - [Modulo Xot Contracts](Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
+- [<nome progetto> Code Quality Guidelines](project_docs/code-quality.md)
 
 ---
 
 ## interface-structure-clarification-1
 
-*Consolidated from: `interface-structure-clarification.md`*
+*Consolidated from: `interface-structure-clarification-1.md`*
 
 
 ## Struttura Corretta per le Interfacce SMS
@@ -379,7 +348,7 @@ if (!($instance instanceof SmsActionContract)) {
 
 ## interface-structure-clarification-2
 
-*Consolidated from: `interface-structure-clarification.md`*
+*Consolidated from: `interface-structure-clarification-2.md`*
 
 title: "Chiarimento sulla Struttura delle Interfacce"
 type: concept
@@ -390,22 +359,17 @@ qmd: "interface-structure-clarification-2 chiarimento sulla struttura delle inte
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
 
-# Chiarimento sulla Struttura delle Interfacce 
+# Chiarimento sulla Struttura delle Interfacce
 
 ## Struttura Corretta per le Interfacce SMS
 
@@ -639,18 +603,18 @@ grep -r "interface.*Interface" --include="*.php" /var/www/_bases/<nome repositor
 
 # Cerca interfacce con naming corretto
 grep -r "interface.*Contract" --include="*.php" /var/www/_bases/<nome repository>/laravel/Modules
-grep -r "interface.*Interface" --include="*.php" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules
+grep -r "interface.*Interface" --include="*.php" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules
 
 # Cerca interfacce con naming corretto
-grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules
+grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules
 grep -r "interface.*Interface" --include="*.php" /var/www/html/saluteora/laravel/Modules
 
 # Cerca interfacce con naming corretto
 grep -r "interface.*Contract" --include="*.php" /var/www/html/saluteora/laravel/Modules
-grep -r "interface.*Interface" --include="*.php" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules
+grep -r "interface.*Interface" --include="*.php" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules
 
 # Cerca interfacce con naming corretto
-grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules
+grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techplanner_fila5/laravel/Modules
 ```
 
 ## Riferimenti
@@ -658,12 +622,9 @@ grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techpl
 - [Laravel Contracts Documentation](https://laravel.com/docs/contracts)
 - [PTVX Code Quality Guidelines](/var/www/html/_bases/base_ptvx_fila5/laravel/docs/code-quality.md)
 - [Modulo Xot Contracts](/var/www/html/_bases/base_ptvx_fila5/laravel/Modules/Xot/app/Contracts/)
-- [<nome progetto> Code Quality Guidelines]([project-root]/laravel/docs/code-quality.md)
+- [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
 - [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
 - [<nome progetto> Code Quality Guidelines]([project-root]/laravel/project_docs/code-quality.md)
-- [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
-- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
-- [<nome progetto> Code Quality Guidelines](../../ai-agents/code-quality.md)
 - [Modulo Xot Contracts]([project-root]/laravel/Modules/Xot/app/Contracts/)
 - [<nome progetto> Code Quality Guidelines](/var/www/_bases/<nome repository>/laravel/docs/code-quality.md)- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
 - [<nome progetto> Code Quality Guidelines](/var/www/_bases/<nome repository>/laravel/project_docs/code-quality.md)
@@ -672,9 +633,9 @@ grep -r "interface.*Contract" --include="*.php" /var/www/html/_bases/base_techpl
 - [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
 - [SaluteOra Code Quality Guidelines](/var/www/html/saluteora/laravel/project_docs/code-quality.md)
 - [Modulo Xot Contracts](/var/www/html/saluteora/laravel/Modules/Xot/app/Contracts/)
-- [SaluteOra Code Quality Guidelines](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/docs/code-quality.md)- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
-- [SaluteOra Code Quality Guidelines](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/project_docs/code-quality.md)
-- [Modulo Xot Contracts](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Xot/app/Contracts/)
+- [SaluteOra Code Quality Guidelines](/var/www/html/_bases/base_techplanner_fila5/laravel/docs/code-quality.md)- [Laravel Contracts Documentation](https://laravel.com/project_docs/contracts)
+- [SaluteOra Code Quality Guidelines](/var/www/html/_bases/base_techplanner_fila5/laravel/project_docs/code-quality.md)
+- [Modulo Xot Contracts](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Xot/app/Contracts/)
 
 ---
 
@@ -743,7 +704,7 @@ if (!($instance instanceof SmsActionContract)) {
 
 ## interfaces-implementation-guide-1
 
-*Consolidated from: `interfaces-implementation-guide.md`*
+*Consolidated from: `interfaces-implementation-guide-1.md`*
 
 
 ## Struttura delle Interfacce
@@ -842,15 +803,12 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-- [Convenzioni di Naming per le Interfacce](../../interface_naming_convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](../../interface_structure_clarification.md)
-- [Architettura dei Contratti](../../contracts_architecture.md)
 
 ---
 
 ## interfaces-implementation-guide-2
 
-*Consolidated from: `interfaces-implementation-guide.md`*
+*Consolidated from: `interfaces-implementation-guide-2.md`*
 
 title: "Guida all'Implementazione delle Interfacce nel Modulo Notify"
 type: guide
@@ -861,17 +819,12 @@ qmd: "interfaces-implementation-guide-2 guida all'implementazione delle interfac
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -902,7 +855,7 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // ✅ CORRETTO
    interface SmsActionContract
-   
+
    // ❌ ERRATO
    interface SmsActionInterface
    ```
@@ -911,7 +864,7 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // Per interfacce nella directory principale
    namespace Modules\Notify\Contracts;
-   
+
    // Per interfacce in sottodirectory
    namespace Modules\Notify\Contracts\SMS;
    ```
@@ -943,7 +896,7 @@ use Modules\Notify\Datas\SmsData;
 final class SendNetfunSMSAction implements SmsActionContract
 {
     // Implementazione...
-    
+
     public function execute(SmsData $smsData): array
     {
         // Logica di invio SMS...
@@ -977,12 +930,6 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./interface-naming-convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface-structure-clarification.md)
 - [Architettura dei Contratti](./contracts-architecture.md)
-- [Convenzioni di Naming per le Interfacce](../../interface-naming-convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](./interface-structure-clarification.md)
-- [Architettura dei Contratti](../../contracts-architecture.md)
-- [Convenzioni di Naming per le Interfacce](../../interface-naming-convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](./interface-structure-clarification.md)
-- [Architettura dei Contratti](../../contracts-architecture.md)
 ---
 
 ## interfaces-implementation-guide
@@ -1086,9 +1033,6 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-- [Convenzioni di Naming per le Interfacce](../../interface_naming_convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](../../interface_structure_clarification.md)
-- [Architettura dei Contratti](../../contracts_architecture.md)
 # Guida all'Implementazione delle Interfacce nel Modulo Notify
 
 ## Struttura delle Interfacce
@@ -1187,9 +1131,6 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-- [Convenzioni di Naming per le Interfacce](../../interface_naming_convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](../../interface_structure_clarification.md)
-- [Architettura dei Contratti](../../contracts_architecture.md)
 
 ---
 
@@ -1294,9 +1235,6 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
 - [Architettura dei Contratti](./contracts_architecture.md)
-- [Convenzioni di Naming per le Interfacce](../../interface_naming_convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](../../interface_structure_clarification.md)
-- [Architettura dei Contratti](../../contracts_architecture.md)
 # Guida all'Implementazione delle Interfacce nel Modulo Notify
 
 ## Struttura delle Interfacce
@@ -1395,9 +1333,6 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
 - [Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
 - [Architettura dei Contratti](./contracts_architecture.md)
-- [Convenzioni di Naming per le Interfacce](../../interface_naming_convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](../../interface_structure_clarification.md)
-- [Architettura dei Contratti](../../contracts_architecture.md)
 
 ---
 
@@ -1432,7 +1367,7 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // ✅ CORRETTO
    interface SmsActionContract
-   
+
    // ❌ ERRATO
    interface SmsActionInterface
    ```
@@ -1441,7 +1376,7 @@ Le interfacce sono organizzate in due livelli:
    ```php
    // Per interfacce nella directory principale
    namespace Modules\Notify\Contracts;
-   
+
    // Per interfacce in sottodirectory
    namespace Modules\Notify\Contracts\SMS;
    ```
@@ -1473,7 +1408,7 @@ use Modules\Notify\Datas\SmsData;
 final class SendNetfunSMSAction implements SmsActionContract
 {
     // Implementazione...
-    
+
     public function execute(SmsData $smsData): array
     {
         // Logica di invio SMS...
@@ -1504,9 +1439,6 @@ Se si verifica l'errore `Interface "Modules\Notify\Contracts\SMS\SmsActionContra
 - [Convenzioni di Naming per le Interfacce](./INTERFACE_NAMING_CONVENTION.md)
 - [Chiarimento sulla Struttura delle Interfacce](./INTERFACE_STRUCTURE_CLARIFICATION.md)
 - [Architettura dei Contratti](./CONTRACTS_ARCHITECTURE.md)
-- [Convenzioni di Naming per le Interfacce](../../interface_naming_convention.md)
-- [Chiarimento sulla Struttura delle Interfacce](../../interface_structure_clarification.md)
-- [Architettura dei Contratti](../../contracts_architecture.md)
 
 ---
 

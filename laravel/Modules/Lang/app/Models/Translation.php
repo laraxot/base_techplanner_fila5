@@ -18,45 +18,47 @@ use Modules\Xot\Contracts\ProfileContract;
 /**
  * Modules\Lang\Models\Translation.
  *
- * @property string               $id
- * @property string|null          $lang
- * @property string|null          $key
- * @property string|null          $value
- * @property string|null          $created_by
- * @property string|null          $updated_by
- * @property Carbon|null          $created_at
- * @property Carbon|null          $updated_at
- * @property string               $namespace
- * @property string               $group
- * @property string|null          $item
+ * @property string $id
+ * @property string|null $lang
+ * @property string|null $key
+ * @property string|null $value
+ * @property string|null $created_by
+ * @property string|null $updated_by
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string $namespace
+ * @property string $group
+ * @property string|null $item
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
  *
- * @method static TranslationFactory                  factory($count = null, $state = [])
- * @method static EloquentBuilder<static>|Translation newModelQuery()
- * @method static EloquentBuilder<static>|Translation newQuery()
- * @method static EloquentBuilder<static>|Translation ofTranslatedGroup(string $group)
- * @method static EloquentBuilder<static>|Translation orderByGroupKeys(bool $ordered)
- * @method static EloquentBuilder<static>|Translation query()
- * @method static EloquentBuilder<static>|Translation selectDistinctGroup()
- * @method static EloquentBuilder<static>|Translation whereCreatedAt($value)
- * @method static EloquentBuilder<static>|Translation whereCreatedBy($value)
- * @method static EloquentBuilder<static>|Translation whereGroup($value)
- * @method static EloquentBuilder<static>|Translation whereId($value)
- * @method static EloquentBuilder<static>|Translation whereItem($value)
- * @method static EloquentBuilder<static>|Translation whereKey($value)
- * @method static EloquentBuilder<static>|Translation whereLang($value)
- * @method static EloquentBuilder<static>|Translation whereNamespace($value)
- * @method static EloquentBuilder<static>|Translation whereUpdatedAt($value)
- * @method static EloquentBuilder<static>|Translation whereUpdatedBy($value)
- * @method static EloquentBuilder<static>|Translation whereValue($value)
+ * @method static TranslationFactory factory($count = null, $state = [])
+ * @method static EloquentBuilder<static> newModelQuery()
+ * @method static EloquentBuilder<static> newQuery()
+ * @method static EloquentBuilder<static> ofTranslatedGroup(string $group)
+ * @method static EloquentBuilder<static> orderByGroupKeys(bool $ordered)
+ * @method static EloquentBuilder<static> query()
+ * @method static Translation create(array<string, mixed> $attributes = [])
+ * @method static Translation firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
+ * @method static EloquentBuilder<static> selectDistinctGroup()
+ * @method static EloquentBuilder<static> whereCreatedAt($value)
+ * @method static EloquentBuilder<static> whereCreatedBy($value)
+ * @method static EloquentBuilder<static> whereGroup($value)
+ * @method static EloquentBuilder<static> whereId($value)
+ * @method static EloquentBuilder<static> whereItem($value)
+ * @method static EloquentBuilder<static> whereKey($value)
+ * @method static EloquentBuilder<static> whereLang($value)
+ * @method static EloquentBuilder<static> whereNamespace($value)
+ * @method static EloquentBuilder<static> whereUpdatedAt($value)
+ * @method static EloquentBuilder<static> whereUpdatedBy($value)
+ * @method static EloquentBuilder<static> whereValue($value)
  *
  * @property ProfileContract|null $deleter
- * @property string|null          $locale
- * @property int|null             $user_id
+ * @property string|null $locale
+ * @property int|null $user_id
  *
- * @method static EloquentBuilder<static>|Translation whereLocale($value)
- * @method static EloquentBuilder<static>|Translation whereUserId($value)
+ * @method static EloquentBuilder<static> whereLocale($value)
+ * @method static EloquentBuilder<static> whereUserId($value)
  *
  * @mixin Model
  */
@@ -76,8 +78,7 @@ class Translation extends BaseModel
     protected $guarded = ['id', 'created_at', 'updated_at'];
 
     /**
-     * @param EloquentBuilder<Translation> $query
-     *
+     * @param  EloquentBuilder<Translation>  $query
      * @return EloquentBuilder<Translation>|QueryBuilder
      */
     public function scopeOfTranslatedGroup(EloquentBuilder $query, string $group): QueryBuilder|EloquentBuilder
@@ -86,8 +87,7 @@ class Translation extends BaseModel
     }
 
     /**
-     * @param EloquentBuilder<Translation> $query
-     *
+     * @param  EloquentBuilder<Translation>  $query
      * @return EloquentBuilder<Translation>
      */
     public function scopeOrderByGroupKeys(EloquentBuilder $query, bool $ordered): EloquentBuilder
@@ -100,8 +100,7 @@ class Translation extends BaseModel
     }
 
     /**
-     * @param EloquentBuilder<Translation> $query
-     *
+     * @param  EloquentBuilder<Translation>  $query
      * @return EloquentBuilder<Translation>|QueryBuilder
      */
     public function scopeSelectDistinctGroup(EloquentBuilder $query): EloquentBuilder|QueryBuilder

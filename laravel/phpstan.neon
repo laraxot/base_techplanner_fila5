@@ -1,17 +1,13 @@
 includes:
-    # - ./phpstan-baseline.neon
-    # - vendor/larastan/larastan/extension.neon
-    # - vendor/nesbot/carbon/extension.neon
+    - ./phpstan-baseline.neon
     - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
-    
 
 parameters:
     level: max
     paths:
         - ./Modules/
     phpVersion: 80400
-    ignoreErrors:
-        
+    ignoreErrors: []
     excludePaths:
         - ./*/vendor/*
         - ./*/build/*

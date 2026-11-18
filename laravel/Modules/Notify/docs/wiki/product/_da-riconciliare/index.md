@@ -2,16 +2,15 @@
 qmd: "index"
 issues: []
 discussions: []
-title: "notify: product"
+title: "notify — product"
 module: notify
 type: product
 tags: [product, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
-status: draft
 ---
 
-# notify: product
+# notify — product
 
 Documentation for `notify` module categorized as **product**.
 
@@ -21,12 +20,9 @@ Documentation for `notify` module categorized as **product**.
 - [`composer-strategy.md`](./composer-strategy.md)
 - [`inbound-keting-strategy.md`](./inbound-keting-strategy.md)
 - [`inbound-marketing-strategy.md`](./inbound-marketing-strategy.md)
-- [`product-strategy.md`](./product-strategy.md)
+- [`product-strategy-1.md`](./product-strategy-1.md)
 - [`product-strategy.md`](./product-strategy.md)
 - [`strategy.md`](./strategy.md)
-- [`product-strategy-documentation-themes.md`](./product-strategy-documentation-themes.md)
-- [`product-strategy.md`](../../../product-strategy.md)
-- [`strategy.md`](../../../strategy.md)
 - [`token-optimization-strategy.md`](./token-optimization-strategy.md)
 
 ---

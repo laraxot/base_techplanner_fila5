@@ -15,7 +15,7 @@
 ```json
 {
     "require": {
-        "laraxot/theme_one_fila3": "^1.0"
+        "laraxot/theme_one_fila5": "^1.0"
     }
 }
 ```
@@ -82,7 +82,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
     content: [
         './resources/views/**/*.blade.php',
-        './vendor/laraxot/theme_one_fila3/resources/views/**/*.blade.php',
+        './vendor/laraxot/theme_one_fila5/resources/views/**/*.blade.php',
     ],
     theme: {
         extend: {
@@ -192,4 +192,4 @@ php artisan cache:clear
 - [Laravel Documentation](https://laravel.com/docs)
 - [Filament Documentation](https://filamentphp.com/docs)
 - [Vite Documentation](https://vitejs.dev/guide)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs) 
+- [Tailwind CSS Documentation](https://tailwindcss.com/docs)

@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "attachments usage"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Utilizzo Corretto degli Allegati nelle Email Spatie
@@ -303,9 +302,6 @@ foreach ($records as $record) {
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
 - [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/SPATIE_MAIL_TEMPLATES_STRUCTURE.md)
 - [EMAIL_TROUBLESHOOTING.md](./EMAIL_TROUBLESHOOTING.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-- [SPATIE_MAIL_TEMPLATES_STRUCTURE.md](../mail-templates/spatie_mail_templates_structure.md)
-- [EMAIL_TROUBLESHOOTING.md](./email_troubleshooting.md)
 
 ### File Correlati
 - `Modules/Notify/app/Emails/SpatieEmail.php` - Gestione allegati

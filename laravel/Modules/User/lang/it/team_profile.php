@@ -4,9 +4,16 @@ declare(strict_types=1);
 
 return [
     'fields' => [
-        'name' => ['label' => 'Nome', 'placeholder' => 'name', 'helper_text' => 'name', 'description' => 'name'],
+        'name' => [
+            'label' => 'Nome',
+            'placeholder' => 'name',
+            'helper_text' => 'name',
+            'description' => 'name',
+        ],
     ],
     'actions' => [
-        'save' => ['label' => 'save', 'icon' => 'save', 'tooltip' => 'save'],
+        'save' => [
+            'icon' => 'save',
+        ],
     ],
 ];

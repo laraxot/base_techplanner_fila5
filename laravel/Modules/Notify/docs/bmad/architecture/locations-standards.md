@@ -38,7 +38,7 @@ Le interfacce devono sempre essere collocate nella directory `/app/Contracts/`, 
 ### Corretta Organizzazione delle Interfacce
 
 ```
-/var/www/html/Quaeris/laravel/Modules/Notify/app/Contracts/
+/var/www/html/<nome progetto>/laravel/Modules/Notify/app/Contracts/
 ├── SmsProviderActionInterface.php   ✅ CORRETTO
 ├── NotificationChannelInterface.php ✅ CORRETTO
 └── ...
@@ -47,7 +47,7 @@ Le interfacce devono sempre essere collocate nella directory `/app/Contracts/`, 
 ### Errori da Evitare
 
 ```
-/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/SMS/
+/var/www/html/<nome progetto>/laravel/Modules/Notify/app/Actions/SMS/
 ├── SmsActionInterface.php           ❌ ERRATO
 └── ...
 ```
@@ -87,7 +87,7 @@ final class SendNetfunSMSAction implements SmsActionInterface
 
 ## Principi Guida
 
-1. **Separazione delle Responsabilità**: 
+1. **Separazione delle Responsabilità**:
    - Le interfacce definiscono i contratti
    - Le implementazioni forniscono l'implementazione specifica
 

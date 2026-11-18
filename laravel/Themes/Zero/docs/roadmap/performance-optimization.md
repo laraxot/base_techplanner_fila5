@@ -1,3 +1,10 @@
+---
+title: "Performance e ottimizzazione asset"
+qmd: "zero roadmap performance optimization md"
+type: note
+tags: [documentation]
+---
+
 # Performance e ottimizzazione asset
 
 ## Obiettivo

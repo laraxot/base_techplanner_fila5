@@ -1,4 +1,5 @@
 ---
+qmd: "zero wiki rules index md"
 title: "Rules Index"
 type: "index"
 tags: [rules, theme, on-demand]

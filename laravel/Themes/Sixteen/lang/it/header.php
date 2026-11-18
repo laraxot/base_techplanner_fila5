@@ -8,6 +8,10 @@ return [
     | Header Translations (Design Comuni parity — Story 8-105)
     |--------------------------------------------------------------------------
     */
+    // Nome del brand per <x-cms::head> (pub_theme::header.brand.name): de/es ereditano da en.
+    'brand' => [
+        'name' => 'FixCity',
+    ],
     'guest' => [
         'login' => [
             'label' => 'Accedi',
@@ -76,6 +80,8 @@ return [
     ],
 
     'slim' => [
+        // nome della zona destra della fascia alta (role=navigation): distingue i landmark di navigazione (axe landmark-unique)
+        'tools_aria' => 'Lingua e area personale',
         'region' => [
             'name' => [
                 'label' => 'Nome della Regione',

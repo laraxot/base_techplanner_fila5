@@ -52,6 +52,6 @@ $client->legalRepresentatives; // Dovrebbe funzionare senza errori
 
 ## Documentazione Correlata
 
-- [Legal Representatives Relationship Fix](legal-representatives-relationship-fix.md)
+- [Legal Representatives Relationship Fix](../legal-representatives-relationship-fix.md)
 - [Filament RelationManager Documentation](https://filamentphp.com/docs/3.x/panels/resources/relation-managers)
 

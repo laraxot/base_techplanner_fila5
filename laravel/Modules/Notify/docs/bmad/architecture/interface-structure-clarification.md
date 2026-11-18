@@ -19,14 +19,14 @@ related:
 status: draft
 ---
 
-# Chiarimento sulla Struttura delle Interfacce 
+# Chiarimento sulla Struttura delle Interfacce
 
 ## Struttura Corretta per le Interfacce SMS
 
 , le interfacce per le azioni SMS seguono questa struttura:
 
 ```
-/var/www/html/Quaeris/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
+/var/www/html/<nome progetto>/laravel/Modules/Notify/app/Contracts/SMS/SmsActionContract.php
 ```
 
 Con il namespace corrispondente:

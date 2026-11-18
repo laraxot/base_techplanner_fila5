@@ -7,11 +7,12 @@ epic: docs-governance
 story_id: "theme-zero-docs-organization"
 track: quick-flow
 created: 2026-10-21
-updated: 2026-10-21
-tags: [docs, theme, zero, bmad, conflicts, index, frontmatter, links]
-qmd: "theme zero docs organization merge conflicts canonical index archives frontmatter qmd link audit filament blueprint"
+updated: 2026-11-17
+tags: [docs, theme, zero, bmad, conflicts, index, frontmatter, links, f1]
+qmd: "theme zero docs organization merge conflicts canonical index archives frontmatter qmd link audit filament blueprint f1 analysis unify"
 related:
   - ../theme-overview.md
+  - ../../wiki/comparisons/f1-world-champion-theme-analysis.md
   - ../../../../One/docs/bmad/stories/docs-organization.story.md
   - ../../../../Three/docs/bmad/stories/docs-organization.story.md
   - ../../../../../Modules/Xot/docs/bmad/stories/phpstan-modules-swarm-20261021.story.md
@@ -35,7 +36,7 @@ rotti.
   `wiki/AGENTS.md`/`wiki/agents.md`, `skills/README.md`/`skills/readme.md`,
   `wiki/skills/INDEX.md`/`wiki/skills/index.md`.
 - `bmad/outputs/` e `docs/archive/duplicates/` erano contenitori fuori standard.
-- Link attivi verso moduli assenti (`Quaeris`, `Cms`, `Geo`) e verso file cancellati.
+- Link attivi verso moduli assenti (`<nome progetto>`, `Cms`, `Geo`) e verso file cancellati.
 
 ## Acceptance criteria
 
@@ -90,3 +91,16 @@ docs-only. Nessun commit/push.
 
 Temi già organizzati: nessun nuovo contenuto di feature. Dominio PHPStan residuo
 documentato nei moduli (Progressioni/Sigma/Ptv/Pdnd), non qui.
+## Diario — unify F1 analysis senza date (2026-11-17)
+
+Follow-up explore `f976bdcb` / docs-guardian swarm Zero only.
+
+| Path | Azione |
+| --- | --- |
+| `wiki/comparisons/f1-world-champion-theme-analysis.md` | Canonico confermato (`status: active`) |
+| `wiki/comparisons/f1-world-champion-2026-theme-analysis.md` | Stub `status: superseded` → canonico (no delete) |
+| `screenshots/f1-world-champion-2026-theme-analysis.md` | Stub superseded → wiki/comparisons canonico |
+| `screenshots/f1-world-champion-theme-analysis.md` | Stub superseded → wiki/comparisons canonico |
+| `wiki/index.md`, `index.md`, `_archive/index-legacy.md` | Link datati ripuntati / etichettati stub |
+
+Vietato rispettato: no delete, no phpstan, no commit, altri temi non toccati.

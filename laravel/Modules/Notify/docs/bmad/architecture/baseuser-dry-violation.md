@@ -21,8 +21,8 @@ status: draft
 
 # BaseUser DRY Violation - Analisi e Refactoring
 
-**Data**: 15 Ottobre 2025  
-**File**: `Modules/User/app/Models/BaseUser.php`  
+**Data**: 15 Ottobre 2025
+**File**: `Modules/User/app/Models/BaseUser.php`
 **Problema**: Metodi duplicati con `Spatie\Permission\Traits\HasRoles`
 
 ## Problema
@@ -33,7 +33,7 @@ Il modello `BaseUser` ridefinisce metodi già forniti dal trait `HasRoles` di Sp
 class BaseUser extends Authenticatable
 {
     use HasRoles; // ✅ Trait incluso
-    
+
     // ❌ Ma poi ridefinisce suoi metodi!
     public function hasRole(...) { /* 26 linee duplicate */ }
     public function assignRoleOLD(...) { /* 26 linee obsolete */ }
@@ -45,7 +45,7 @@ class BaseUser extends Authenticatable
 
 ### 1. `hasRole()` - 29 linee duplicate
 
-**BaseUser**: Implementazione semplificata, ignora `$guard`, no eager loading  
+**BaseUser**: Implementazione semplificata, ignora `$guard`, no eager loading
 **HasRoles Trait**: Implementazione completa (58 linee) con:
 - ✅ Pipe syntax (`'admin|user'`)
 - ✅ BackedEnum support (PHP 8.1+)
@@ -58,7 +58,7 @@ class BaseUser extends Authenticatable
 
 ### 2. `assignRoleOLD()` - 26 linee obsolete
 
-Versione rinominata con suffisso `OLD` che non dovrebbe più esistere.  
+Versione rinominata con suffisso `OLD` che non dovrebbe più esistere.
 Il trait già fornisce `assignRole()` completo con:
 - ✅ Team/Tenancy support
 - ✅ Event dispatching
@@ -68,7 +68,7 @@ Il trait già fornisce `assignRole()` completo con:
 
 ### 3. `hasPermission()` - 7 linee ridondanti
 
-Versione semplificata che fa query manuali.  
+Versione semplificata che fa query manuali.
 Il trait `HasPermissions` già fornisce:
 - `hasPermissionTo($permission, $guardName = null)`
 - `checkPermissionTo($permission, $guardName = null)`
@@ -132,14 +132,14 @@ abstract class BaseUser extends Authenticatable implements ...
 {
     use HasRoles; // ✅ Trait fornisce tutto!
     // ... altri traits
-    
+
     // ❌ RIMUOVERE QUESTI 3 METODI:
     // 1. hasRole() - linee 169-195 (29 linee)
     // 2. assignRoleOLD() - linee 211-236 (26 linee)
     // 3. hasPermission() - linee 200-206 (7 linee)
-    
+
     // ✅ TOTALE: -62 righe di codice duplicato!
-    
+
     // ✅ MANTENERE:
     // - getName() - specifico Filament
     // - profile() - relazione custom
@@ -164,7 +164,7 @@ abstract class BaseUser extends Authenticatable implements ...
 
 ### Step 1: Backup
 ```bash
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+cd /var/www/_bases/base_fixcity_fila5/laravel
 
 # Backup file
 cp Modules/User/app/Models/BaseUser.php \
@@ -194,7 +194,7 @@ php artisan test --filter=SuperAdmin
 ### Step 4: Refactoring
 Rimuovere manualmente i 3 metodi dal file `BaseUser.php`:
 - Linee 169-195: `hasRole()`
-- Linee 211-236: `assignRoleOLD()`  
+- Linee 211-236: `assignRoleOLD()`
 - Linee 200-206: `hasPermission()`
 
 ### Step 5: Test Post-Refactoring
@@ -280,21 +280,21 @@ Ma probabilmente **NON necessario**!
 abstract class BaseUser extends Authenticatable
 {
     use HasRoles; // ✅ Fornisce tutto il necessario!
-    
+
     // ✅ Solo metodi specifici dell'app
     public function getName(): string { ... }
     public function profile(): HasOne { ... }
     public function canAccessPanel(\Filament\Panel $panel): bool { ... }
-    
+
     // ✅ NO metodi duplicati
     // ✅ NO codice obsoleto
     // ✅ Responsabilità chiare
 }
 ```
 
-**-62 righe di codice**  
-**+40% funzionalità**  
-**+20% performance**  
+**-62 righe di codice**
+**+40% funzionalità**
+**+20% performance**
 **-50% effort di testing**
 
 ## Test di Regressione Raccomandati
@@ -307,7 +307,7 @@ Creare questi test **prima** del refactoring:
 test('hasRole con stringa', function () {
     $user = User::factory()->create();
     $user->assignRole('admin');
-    
+
     expect($user->hasRole('admin'))->toBeTrue();
     expect($user->hasRole('user'))->toBeFalse();
 });
@@ -315,14 +315,14 @@ test('hasRole con stringa', function () {
 test('hasRole con array', function () {
     $user = User::factory()->create();
     $user->assignRole(['admin', 'editor']);
-    
+
     expect($user->hasRole(['admin', 'editor']))->toBeTrue();
 });
 
 test('hasRole con guard', function () {
     $user = User::factory()->create();
     $user->assignRole('admin');
-    
+
     // Dopo refactoring, questo funzionerà correttamente!
     expect($user->hasRole('admin', 'web'))->toBeTrue();
     expect($user->hasRole('admin', 'api'))->toBeFalse();
@@ -331,7 +331,7 @@ test('hasRole con guard', function () {
 test('hasRole con pipe syntax', function () {
     $user = User::factory()->create();
     $user->assignRole('admin');
-    
+
     // Nuova feature disponibile dopo refactoring!
     expect($user->hasRole('admin|editor'))->toBeTrue();
 });
@@ -376,20 +376,20 @@ Questa è la **quarta analisi** del 15 Ottobre 2025:
 
 **Azione**: Procedere con refactoring al più presto.
 
-**Tempo stimato**: 30 minuti  
-**Rischio**: Basso  
-**Benefici**: Alti  
+**Tempo stimato**: 30 minuti
+**Rischio**: Basso
+**Benefici**: Alti
 **ROI**: Eccellente
 
 ## Principi Zen Applicati
 
-> **"Il miglior codice è quello che non devi scrivere"**  
+> **"Il miglior codice è quello che non devi scrivere"**
 > 62 righe eliminate = 62 righe in meno da mantenere
 
-> **"Fidati degli esperti, usa le loro librerie"**  
+> **"Fidati degli esperti, usa le loro librerie"**
 > Spatie ha testato HasRoles su milioni di installazioni
 
-> **"DRY: Don't Repeat Yourself"**  
+> **"DRY: Don't Repeat Yourself"**
 > Se esiste già, non reinventarlo
 
 ## Conclusioni

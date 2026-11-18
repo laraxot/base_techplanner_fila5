@@ -22,7 +22,7 @@ discussions: []
 
 ## Available Skills
 
-- [create-filament-page](../../../../../../bashscripts/ai/wiki/skills/create-filament-page/SKILL.md) — crea correttamente page Filament usando `XotBase*`, `$resource` protetto e traduzioni automatiche
+- [filament-page-creation](../../../../../Modules/Xot/docs/wiki/skills/filament-page-creation.md) — crea correttamente page Filament usando `XotBase*`, `$resource` protetto e traduzioni automatiche
 
 ## Usage
 
@@ -32,4 +32,4 @@ qmd search "Zero theme skill filament" --limit 5
 
 ---
 
-**Upstream:** [Root Trigger Map](../../../../../../bashscripts/ai/wiki/rules/00-TRIGGER_MAP.md)
+**Upstream:** [Root Trigger Map](../../../../../../docs/wiki/rules/00-TRIGGER_MAP.md)

@@ -1,3 +1,10 @@
+---
+title: "Zero Theme - memories Index"
+qmd: "zero wiki memories index md"
+type: note
+tags: [documentation]
+---
+
 # Zero Theme - memories Index
 
 ## Purpose

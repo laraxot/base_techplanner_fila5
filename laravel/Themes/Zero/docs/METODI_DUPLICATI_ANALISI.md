@@ -1,4 +1,5 @@
 ---
+qmd: "zero metodi duplicati analisi md"
 theme: Zero
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]

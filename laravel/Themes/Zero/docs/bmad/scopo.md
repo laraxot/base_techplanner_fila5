@@ -9,7 +9,7 @@ tags: [scopo, confini, tema, pub, blade, vite, tailwind, dry, kiss]
 qmd: "scopo tema zero pub_theme frontoffice blade vite tailwind flowbite confini cms xot lang"
 id: zero-docs-bmad-scopo
 slug: scopo
-description: "Perche esiste il tema Zero in base_quaeris_fila5: guscio pubblico, confini verso Cms/Xot/Lang, stack reale."
+description: "Perche esiste il tema Zero in base_<nome progetto>_fila5: guscio pubblico, confini verso Cms/Xot/Lang, stack reale."
 document_type: concept
 category: product-planning
 issues: []
@@ -30,9 +30,9 @@ Ingresso docs: [../README.md](../README.md). Alias EN: [purpose.md](./purpose.md
 
 ## Perche esiste
 
-> **Zero e' il vestito pubblico del monorepo Quaeris: markup Blade, token di stile e pipeline Vite. Non decide cosa e' una pagina ne' quale dato mostrare.**
+> **Zero e' il vestito pubblico del monorepo <nome progetto>: markup Blade, token di stile e pipeline Vite. Non decide cosa e' una pagina ne' quale dato mostrare.**
 
-In questo checkout (`base_quaeris_fila5`) e' l'unico tema **attivo** sotto `laravel/Themes/`; One e Three sono skeleton. `theme.json` lo dichiara `type: pub`, `active: true`. Gli host Quaeris impostano `pub_theme => Zero` (es. `config/local/quaeris/xra.php`, `config/localhost/xra.php`); l'admin resta su temi/pannelli di altri stack (`adm_theme` tipicamente `AdminLTE`).
+In questo checkout (`base_<nome progetto>_fila5`) e' l'unico tema **attivo** sotto `laravel/Themes/`; One e Three sono skeleton. `theme.json` lo dichiara `type: pub`, `active: true`. Gli host <nome progetto> impostano `pub_theme => Zero` (es. `config/local/<nome progetto>/xra.php`, `config/localhost/xra.php`); l'admin resta su temi/pannelli di altri stack (`adm_theme` tipicamente `AdminLTE`).
 
 ## Evidenza dal codice (2026-10-20)
 
@@ -52,7 +52,7 @@ In questo checkout (`base_quaeris_fila5`) e' l'unico tema **attivo** sotto `lara
 | Risolvere pagina e blocchi JSON | [Cms — scopo](./scopo.md) | Inventare Page/Block service o tabelle inventate |
 | Autolabel, locale, chiavi i18n strutturali | [Lang — scopo](./scopo.md) | Hardcodare label di dominio nelle view |
 | Classi base Filament / foundation | [Xot — indice](../../../Modules/Xot/docs/00-index.md), [mai estendere Filament*](../concepts/xotbase-never-extend-filament.md) | `extends Filament\...` diretto |
-| Survey, auth di dominio, metriche Pulse | Modulo Quaeris (e altri moduli) | Copiare decisioni di dominio nelle Blade |
+| Survey, auth di dominio, metriche Pulse | Modulo <nome progetto> (e altri moduli) | Copiare decisioni di dominio nelle Blade |
 
 Filosofia in una riga: **tema = vestito; moduli = corpo; Xot = ossatura**.
 
@@ -72,4 +72,4 @@ Filosofia in una riga: **tema = vestito; moduli = corpo; Xot = ossatura**.
 - [gestionale-panels-vs-themes.md](./gestionale-panels-vs-themes.md) — pannelli admin vs tema pub
 ---
 
-*Verificato sul codice di questo repo il 2026-10-20. Testi precedenti che citavano One/Three/Meetup/restaurant.local appartenevano ad altri checkout Laraxot e non descrivono `base_quaeris_fila5`.*
+*Verificato sul codice di questo repo il 2026-10-20. Testi precedenti che citavano One/Three/Meetup/restaurant.local appartenevano ad altri checkout Laraxot e non descrivono `base_<nome progetto>_fila5`.*

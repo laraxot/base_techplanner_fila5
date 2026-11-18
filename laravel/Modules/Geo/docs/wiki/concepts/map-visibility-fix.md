@@ -1,15 +1,7 @@
 ---
-title: "map visibility fix"
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "map visibility fix"
-issues: []
-discussions: []
 name: Map Visibility Fix
 description: Fixes for map not appearing in wizard steps (FixCreateTicketWizard)
 type: concept
-status: draft
 ---
 
 # Map Visibility Fix Guide

@@ -33,6 +33,7 @@ use Modules\User\Models\Traits\HasModules;
 use Modules\User\Models\Traits\HasSocialite;
 use Modules\User\Models\Traits\HasSpatiePermission;
 use Modules\User\Models\Traits\HasTeams;
+use Modules\Xot\Actions\Model\ModelHasColumnAction;
 use Modules\Xot\Contracts\ProfileContract;
 use Modules\Xot\Contracts\UserContract;
 use Modules\Xot\Models\Traits as XotTraits;
@@ -130,7 +131,7 @@ use Spatie\Permission\Models\Permission;
  */
 abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuthentications, HasMedia, HasName, HasTeamsContract, HasTenants, MustVerifyEmail, OAuthenticatable, UserContract, UserNotificationsContract
 {
-    use BaseUserMutators, BaseUserRelations, HasSpatiePermission, HasTeams, Notifiable, HasAuthenticationLogTrait {
+    use BaseUserMutators, BaseUserRelations, HasAuthenticationLogTrait, HasSpatiePermission, HasTeams, Notifiable {
         HasSpatiePermission::teams insteadof HasTeams;
         HasTeams::teams as membershipTeams;
         BaseUserRelations::notifications insteadof Notifiable;
@@ -147,8 +148,6 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     use HasUuids;
     use HasXotFactory;
     use InteractsWithMedia;
-
-    // use SoftDeletes;
     use Traits\HasTenants;
     use XotTraits\RelationX;
 
@@ -288,15 +287,21 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
 
     public function canAccessPanel(Panel $panel): bool
     {
-        // $panel->default('admin');
-        if ($panel->getId() === 'access') {
-            return true;
+        // P0: niente bypass cieco su panel `access`.
+        $deletedAt = $this->getAttribute('deleted_at');
+        if (is_string($deletedAt) || $deletedAt instanceof \DateTimeInterface) {
+            return false;
         }
 
         // Admin e super admin entrano solo nel pannello di amministrazione del ristorante (`restaurant::admin`): il pannello principale `admin`
         // li rimanderebbe alla home del sito. Comanda, cassa, cucina, banco e HACCP restano dei rispettivi ruoli.
         if ($panel->getId() === 'restaurant::admin' && $this->hasAnyRole(['super-admin', 'admin'])) {
             return true;
+        }
+
+        // Panel `access`: richiede almeno un ruolo applicativo (niente open-door).
+        if ($panel->getId() === 'access') {
+            return $this->roles()->exists();
         }
 
         if ($panel->getId() !== 'admin') {
@@ -341,7 +346,7 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
      */
     public function treeSons(): Collection
     {
-        return $this->membershipTeams ?? new Collection();
+        return $this->membershipTeams ?? new Collection;
     }
 
     // public function authentications(): MorphMany
@@ -350,11 +355,23 @@ abstract class BaseUser extends Authenticatable implements FilamentUser, HasAuth
     // }
 
     /**
-     * Find the user instance for the given username.
+     * Utente per il password grant di Passport: un account cancellato dal titolare (`deleted_at`, SEC-05) non riceve token.
+     *
+     * Campi rilevanti: `email` (string), `deleted_at` (datetime|null). Esempio sintetico:
+     * email=`user@example.com`, deleted_at=`null` → match; deleted_at valorizzato → escluso.
      */
     public static function findForPassport(string $username): ?self
     {
-        return static::where('email', $username)->first();
+        $query = static::query()->where('email', $username);
+        $model = $query->getModel();
+
+        if (app(ModelHasColumnAction::class)->execute($model, 'deleted_at')) {
+            $query->whereNull($model->qualifyColumn('deleted_at'));
+        }
+
+        $user = $query->first();
+
+        return $user instanceof static ? $user : null;
     }
 
     /**

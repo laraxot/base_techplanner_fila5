@@ -1,10 +1,10 @@
 ---
-title: "Struttura di Configurazione nei Moduli Quaeris"
+title: "Struttura di Configurazione nei Moduli <nome progetto>"
 type: concept
 tags: [config, structure]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "config-structure-2 struttura di configurazione nei moduli quaeris"
+qmd: "config-structure-2 struttura di configurazione nei moduli <nome progetto>"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# Struttura di Configurazione nei Moduli Quaeris
+# Struttura di Configurazione nei Moduli <nome progetto>
 
 ## Principi di Configurazione
 
@@ -31,7 +31,7 @@ status: draft
    ```php
    return [
        'default' => env('SMS_DRIVER', 'default_driver'),
-       
+
        // Specifico per provider - Solo parametri di autenticazione e identificazione
        'drivers' => [
            'provider1' => [
@@ -45,19 +45,19 @@ status: draft
                // Solo parametri specifici per la connessione!
            ],
        ],
-       
+
        // Configurazione generica - Applicabile a tutti i provider
        'retry' => [
            'attempts' => env('SMS_RETRY_ATTEMPTS', 3),
            'delay' => env('SMS_RETRY_DELAY', 60),
        ],
-       
+
        'rate_limit' => [
            'enabled' => env('SMS_RATE_LIMIT_ENABLED', true),
            'max_attempts' => env('SMS_RATE_LIMIT_MAX_ATTEMPTS', 60),
            'decay_minutes' => env('SMS_RATE_LIMIT_DECAY_MINUTES', 1),
        ],
-       
+
        // Altre configurazioni generiche
    ];
    ```

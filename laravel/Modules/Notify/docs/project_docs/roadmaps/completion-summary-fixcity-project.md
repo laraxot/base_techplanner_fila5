@@ -65,7 +65,7 @@ Diventare la piattaforma civic tech leader in Italia con:
 - ✅ **Implemented** API Requests (StoreTicketRequest, UpdateTicketRequest)
 
 #### Configuration
-- ✅ **Fixed** parse error in `config/it/quaerisofficina/manager2/xra.php`
+- ✅ **Fixed** parse error in `config/it/<nome progetto>officina/manager2/xra.php`
 - ✅ **Fixed** parse error in `config/it/<nome progetto>officina/manager2/xra.php`
 - ✅ **Unblocked** PHPStan analysis across all modules
 

@@ -23,7 +23,7 @@ status: draft
 
 ## Panoramica delle Modifiche
 
-La classe `SendNetfunSMSAction` è stata completamente rivista per allinearla con le best practice del progetto Quaeris e con il pattern di configurazione standardizzato per i servizi SMS. Inoltre, è stato creato un nuovo DTO `SmsMessageData` per standardizzare la gestione dei dati SMS.
+La classe `SendNetfunSMSAction` è stata completamente rivista per allinearla con le best practice del progetto <nome progetto> e con il pattern di configurazione standardizzato per i servizi SMS. Inoltre, è stato creato un nuovo DTO `SmsMessageData` per standardizzare la gestione dei dati SMS.
 
 ## 1. Correzioni alla Configurazione
 
@@ -171,18 +171,18 @@ try {
     $statusCode = $response->getStatusCode();
     $responseContent = $response->getBody()->getContents();
     $responseData = json_decode($responseContent, true);
-    
+
     // Salva i dati della risposta nelle variabili dell'azione
     $this->vars['status_code'] = $statusCode;
     $this->vars['status_txt'] = $responseContent;
     $this->vars['response_data'] = $responseData;
-    
+
     Log::info('SMS Netfun inviato con successo', [
         'to' => $recipient,
         'reference' => $reference,
         'response_code' => $statusCode,
     ]);
-    
+
     return [
         'success' => ($statusCode >= 200 && $statusCode < 300),
         'message_id' => $responseData['id'] ?? null,
@@ -194,19 +194,19 @@ try {
     $response = $e->getResponse();
     $statusCode = $response->getStatusCode();
     $responseBody = json_decode($response->getBody()->getContents(), true);
-    
+
     // Salva i dati dell'errore nelle variabili dell'azione
     $this->vars['error_code'] = $statusCode;
     $this->vars['error_message'] = $e->getMessage();
     $this->vars['error_response'] = $responseBody;
-    
+
     Log::warning('Errore invio SMS Netfun', [
         'to' => $recipient,
         'reference' => $reference,
         'status' => $statusCode,
         'response' => $responseBody,
     ]);
-    
+
     return [
         'success' => false,
         'error' => $responseBody['message'] ?? 'Errore sconosciuto',
@@ -281,7 +281,7 @@ Log::error('Eccezione durante invio SMS Netfun', [
 ```php
 /**
  * Normalizza il numero di telefono nel formato E.164
- * 
+ *
  * @param string $phoneNumber Numero di telefono da normalizzare
  * @return string Numero di telefono normalizzato in formato E.164
  */
@@ -289,13 +289,13 @@ protected function normalizePhoneNumber(string $phoneNumber): string
 {
     // Rimuovi tutti i caratteri non numerici tranne il +
     $cleaned = preg_replace('/[^0-9+]/', '', $phoneNumber);
-    
+
     // Se il numero non inizia con '+'
     if (!Str::startsWith($cleaned, '+')) {
         // Se il numero inizia con '00', sostituisci con '+'
         if (Str::startsWith($cleaned, '00')) {
             $cleaned = '+' . substr($cleaned, 2);
-        } 
+        }
         // Se il numero inizia con '3' (cellulare italiano), aggiungi prefisso italiano
         elseif (Str::startsWith($cleaned, '3')) {
             $cleaned = '+39' . $cleaned;
@@ -305,7 +305,7 @@ protected function normalizePhoneNumber(string $phoneNumber): string
             $cleaned = '+39' . $cleaned;
         }
     }
-    
+
     // Valida il numero secondo il formato E.164
     $pattern = '/^\+[1-9]\d{1,14}$/';
     if (!preg_match($pattern, $cleaned)) {
@@ -314,7 +314,7 @@ protected function normalizePhoneNumber(string $phoneNumber): string
             'normalized' => $cleaned,
         ]);
     }
-    
+
     return $cleaned;
 }
 ```
@@ -327,7 +327,7 @@ protected function normalizePhoneNumber(string $phoneNumber): string
 
 ## 6. Conclusioni
 
-Le modifiche apportate a `SendNetfunSMSAction` e l'aggiunta del nuovo DTO `SmsMessageData` hanno migliorato significativamente la qualità e la robustezza del codice, allineandolo con le best practice del progetto Quaeris e con i pattern di configurazione standardizzati.
+Le modifiche apportate a `SendNetfunSMSAction` e l'aggiunta del nuovo DTO `SmsMessageData` hanno migliorato significativamente la qualità e la robustezza del codice, allineandolo con le best practice del progetto <nome progetto> e con i pattern di configurazione standardizzati.
 
 Questi miglioramenti garantiscono:
 1. Maggiore manutenibilità del codice

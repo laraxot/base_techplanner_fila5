@@ -199,9 +199,9 @@ php artisan tinker
 
 ## 📚 **Documentazione Correlata**
 
-- [development-workflow-css-js-changes.md](./development-workflow-css-js-changes.md)
-- [folio-volt-json-system-complete.md](./folio-volt-json-system-complete.md)
-- [laravelpizza-com-conversion-architecture.md](./laravelpizza-com-conversion-architecture.md)
+- [development-workflow-css-js-changes.md](../development-workflow-css-js-changes.md)
+- [folio-volt-json-system-complete.md](../folio-volt-json-system-complete.md)
+- [laravelpizza-com-conversion-architecture.md](../laravelpizza-com-conversion-architecture.md)
 
 ---
 

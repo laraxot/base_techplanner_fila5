@@ -21,4 +21,4 @@ Zero su runtime se il build non referenzia `Main_files/`.
 
 ## Collegamenti
 
-- [TwentyOne audit](../TwentyOne/docs/ponytail-audit-over-engineering.md)
+- [TwentyOne audit](ponytail-audit-over-engineering.md)

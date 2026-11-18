@@ -268,11 +268,11 @@ protected function getTableBulkActions(): array
 ## 🔗 Collegamenti
 
 - [Business Logic Overview](./README.md)
-- [Models and Relationships](./models-and-relationships.md)
-- [Filament Resources](./filament-resources.md)
-- [Xot Module Foundation](../../Xot/docs/philosophy-complete.md)
-- [Geo Module Integration](../../Geo/docs/philosophy.md)
-- [Notify Module Integration](../../Notify/docs/philosophy.md)
+- [Models and Relationships](../models-and-relationships.md)
+- [Filament Resources](../filament-resources.md)
+- [Xot Module Foundation](philosophy-complete.md)
+- [Geo Module Integration](philosophy.md)
+- [Notify Module Integration](philosophy.md)
 
 ---
 

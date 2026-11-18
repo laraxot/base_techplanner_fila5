@@ -41,8 +41,7 @@ Examples of content-hash collisions:
 3. Remove the duplicated copies.
 
 ## Related
-
-- Epic [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90) (main redundancy tracker)
+- Issue #90 (main redundancy tracker)
 - Previous static scan already flagged many of these files
 
 - Epic [#90](https://github.com/laraxot/base_fixcity_fila5/issues/90)

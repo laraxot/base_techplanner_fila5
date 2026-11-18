@@ -1,53 +1,56 @@
 ---
-title: "Iterazione gitmodules.ini — validazione repo 2026-07-24"
+title: "Iterazione gitmodules.ini — validazione e allineamento inventario"
 type: handoff
 tags: [gitmodules, git, multi-repo, validation, techplanner]
 created: 2026-07-24
-updated: 2026-07-24
-qmd: "gitmodules iteration validation git status remote fetch modules themes stray artifacts orphan theme dirs"
+updated: 2026-11-17
+qmd: "gitmodules iteration validation git status remote fetch modules themes stray artifacts orphan theme dirs blog comment rating dbforge"
 related:
   - ../../bashscripts/tools/prompts/17-gitmodules-path-iteration.md
+  - ../../bashscripts/ai/wiki/rules/gitmodules-ini-paths-only.md
+  - ../../bashscripts/ai/wiki/memories/no-git-submodules-module-repos.md
   - INDEX.md
 ---
 
-# Iterazione gitmodules.ini — validazione 2026-07-24
+# Iterazione gitmodules.ini — validazione e allineamento
 
-Eseguito il protocollo `17-gitmodules-path-iteration.md`: estratti i 20 `path` da
-`gitmodules.ini` (radice repo), `cd` reale in ognuno, `git status`, `git remote -v`,
-`git fetch`, confronto ahead/behind con `dev...laraxot/dev`.
+## Esito 2026-11-17 — inventario allineato
 
-## Esito
+`gitmodules.ini` elenca **27 path** (1 tool + 20 moduli + 6 temi). Ogni path ha
+`.git/` proprio con remote runtime `laraxot` → `git@github.com:laraxot/<repo>_fila5.git`
+(gli URL nel file restano solo inventario; autorità = `git remote -v`).
 
-- **20/20 repo puliti** (0 ahead, 0 behind), tutti su branch `dev`, tutti col remote
-  `laraxot` corretto (`git@github.com:laraxot/<repo>_fila5.git`).
-- **Nessuna collisione da risolvere.**
-- Unica eccezione: `bashscripts` ha 2 file locali modificati non committati
-  (`ai/.agents/acm-options-debug.json`, `ai/.agents/package-lock.json`) — artefatti
-  di tooling/dipendenze, non toccati (fuori scope, nessun conflitto, non distruttivo).
+### Aggiunti rispetto al gap 2026-07-24
 
-## Difformità trovate (solo osservazione, nessuna azione distruttiva)
+| Path | Repo GitHub | Azione |
+|------|-------------|--------|
+| `laravel/Modules/Blog` | `module_blog_fila5` (già esistente) | voce ini + `.git` collegato a `laraxot/dev` |
+| `laravel/Modules/Comment` | `module_comment_fila5` | idem |
+| `laravel/Modules/Rating` | `module_rating_fila5` | idem |
+| `laravel/Modules/DbForge` | `module_dbforge_fila5` | clone da GitHub + voce ini (`modules_statuses` già `true`) |
+| `laravel/Themes/Barthelemy` | `theme_barthelemy_fila5` | voce ini + `.git` |
+| `laravel/Themes/Meetup` | `theme_meetup_fila5` | idem |
+| `laravel/Themes/TwentyOne` | `theme_twentyone_fila5` | idem |
 
-`laravel/Modules/` contiene file che **non sono moduli**, non presenti in
-`gitmodules.ini`:
-- `agentdb.rvf`
-- `ruvector.db`
-- `Seo.lock`
+Nessun repo creato con `gh`: tutti esistevano già sotto `laraxot/*_fila5`.
 
-`laravel/Themes/` contiene cartelle **non tracciate** come submodule in
-`gitmodules.ini` e **non sono repo git**:
-- `Barthelemy/`
-- `Meetup/`
-- `TwentyOne/`
-- `docs/` (cartella di documentazione tema, non un tema)
+### Orfano statuses (non inventato)
 
-Solo `Sixteen`, `Two`, `Zero` sono submodule reali dichiarati in `gitmodules.ini`.
+- `FormBuilder`: era `true` in `modules_statuses.json` ma **né directory né**
+  `laraxot/module_formbuilder_fila5`. Impostato a `false` (come `Chart`).
+  Crearlo da zero richiede decisione di business (form dinamici TechPlanner);
+  non è scaffolding inventato in questa sessione.
 
-## Raccomandazione (non eseguita, richiede decisione umana)
+### Artefatti non-repo (invariati)
 
-Prima di rimuovere `Barthelemy/`, `Meetup/`, `TwentyOne/` o gli artefatti stray in
-`Modules/`, verificare se sono lavoro in corso non ancora promosso a submodule
-oppure scaffolding abbandonato. Non cancellare senza conferma esplicita
-(`destructive_operations_allowed: false` nel prompt sorgente).
+- `laravel/Modules/docs/`, `agentdb.rvf`, `*.lock` — non moduli.
+- `laravel/Themes/docs/` — documentazione temi, non un tema.
+
+## Esito storico 2026-07-24
+
+- **20/20 repo** allora in ini puliti su `dev` con remote `laraxot`.
+- Gap già osservato: temi `Barthelemy`/`Meetup`/`TwentyOne` e moduli
+  Blog/Comment/Rating su disco senza voce ini — **chiuso** il 2026-11-17.
 
 ## Comando riutilizzabile
 
@@ -55,7 +58,9 @@ oppure scaffolding abbandonato. Non cancellare senza conferma esplicita
 grep -E '^\s*path\s*=' gitmodules.ini | sed -E 's/^\s*path\s*=\s*//' > /tmp/paths.txt
 while IFS= read -r p; do
   [ -z "$p" ] && continue
-  git -C "$p" fetch --quiet
-  echo "$p : $(git -C "$p" rev-list --left-right --count dev...laraxot/dev)"
+  abs="$(pwd)/$p"
+  top=$(git -C "$abs" rev-parse --show-toplevel)
+  [ "$top" = "$abs" ] || echo "TOPLEVEL_MISMATCH $p -> $top"
+  echo "$p : $(git -C "$abs" remote) / $(git -C "$abs" branch --show-current)"
 done < /tmp/paths.txt
 ```

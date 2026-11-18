@@ -5,8 +5,8 @@ declare(strict_types=1);
 return [
     'sections' => [
         'empty' => [
-            'label' => 'empty',
-            'heading' => 'empty',
+            'label' => '',
+            'heading' => '',
         ],
     ],
     'fields' => [
@@ -89,6 +89,4 @@ return [
     ],
     'label' => 'Missing Label',
     'plural_label' => 'Missing Plural label',
-    'actions' => [
-    ],
 ];

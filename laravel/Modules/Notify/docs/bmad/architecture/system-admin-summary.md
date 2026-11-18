@@ -163,7 +163,7 @@ vm.dirty_background_ratio=5     # Background writeback
 ## 📝 Files Created
 
 ### Documentation
-1. **[docs/ollama-optimization-guide.md](docs/ollama-optimization-guide.md)**
+1. **[docs/ollama-optimization-guide.md](../../ollama-optimization-guide.md)**
    - Complete optimization guide
    - Model recommendations
    - Performance tips
@@ -323,7 +323,7 @@ systemctl is-active apache2 ollama
 
 ## 📚 Documentation References
 
-- [Ollama Optimization Guide](docs/ollama-optimization-guide.md)
+- [Ollama Optimization Guide](../../ollama-optimization-guide.md)
 - [Documentation Governance](docs/documentation-governance.md)
 - [Master Documentation Index](docs/MASTER_documentation-index.md)
 

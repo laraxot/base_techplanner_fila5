@@ -65,4 +65,4 @@ Come tracciare invio/retry/sollecito come eventi Fixcity senza far conoscere a N
 
 ## Prossimo step BMAD
 
-Vedi [bmad-planning.md](./bmad-planning.md): eseguire la Wave 1 e aggiornare il decision-log owner.
+Vedi [bmad-planning.md](bmad/bmad-planning.md): eseguire la Wave 1 e aggiornare il decision-log owner.

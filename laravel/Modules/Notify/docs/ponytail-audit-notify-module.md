@@ -12,7 +12,7 @@ status: draft
 
 # Ponytail-audit 2026-07-02: Notify module findings
 
-Source: repo-wide ponytail-audit, published as GitHub issues [#103](https://github.com/laraxot/base_quaeris_fila5/issues/103) and [#112](https://github.com/laraxot/base_quaeris_fila5/issues/112), summarized in discussion [#114](https://github.com/laraxot/base_quaeris_fila5/discussions/114).
+Source: repo-wide ponytail-audit, published as GitHub issues [#103](https://github.com/laraxot/base_<nome progetto>_fila5/issues/103) and [#112](https://github.com/laraxot/base_<nome progetto>_fila5/issues/112), summarized in discussion [#114](https://github.com/laraxot/base_<nome progetto>_fila5/discussions/114).
 
 ## Finding
 
@@ -20,7 +20,7 @@ Source: repo-wide ponytail-audit, published as GitHub issues [#103](https://gith
 
 ## Why this is not just a style nit
 
-Discussion [#82](https://github.com/laraxot/base_quaeris_fila5/discussions/82) / [#83](https://github.com/laraxot/base_quaeris_fila5/discussions/83) established a repository-wide architecture rule: **business logic must live in `QueueableAction` classes (`spatie/laravel-queueable-action`), never in Service classes.** `Modules/Xot/app/Services/` and `Modules/Job/app/Services/` are the only allowed exception (framework wrappers, not business logic).
+Discussion [#82](https://github.com/laraxot/base_<nome progetto>_fila5/discussions/82) / [#83](https://github.com/laraxot/base_<nome progetto>_fila5/discussions/83) established a repository-wide architecture rule: **business logic must live in `QueueableAction` classes (`spatie/laravel-queueable-action`), never in Service classes.** `Modules/Xot/app/Services/` and `Modules/Job/app/Services/` are the only allowed exception (framework wrappers, not business logic).
 
 `NotificationManager` is exactly the forbidden pattern this rule targets: a Service class sitting in front of an Action. Removing it is not just a YAGNI cleanup, it is compliance with an already-ratified architecture decision.
 

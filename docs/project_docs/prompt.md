@@ -21,4 +21,4 @@ usa due file docs/laraxot.md e docs/project.md come la tua "memoria" del progett
 
 Usa sempre la cartella 'docs' come memoria principale. Aggiorna continuamente la documentazione ogni volta che fai modifiche o risolvi problemi. Prima di fare qualsiasi cambiamento, controlla sempre cosa c'è scritto in 'docs' per evitare errori e duplicazioni. Studia regolarmente ciò che è documentato per migliorare il codice e mantenere tutto aggiornato.
 
-Pensa ad alta voce e parla a te stesso. preima di rispondere, analizza la richiesta, scomponi i concetti chiave, formula un ragionamento passo passo la tua memoria e' la cartella /var/www/html/_bases/base_techplanner_fila3/docs  , percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala
+Pensa ad alta voce e parla a te stesso. preima di rispondere, analizza la richiesta, scomponi i concetti chiave, formula un ragionamento passo passo la tua memoria e' la cartella /var/www/html/_bases/base_techplanner_fila5/docs  , percio' aggiornala di continuo e studiala di continuo e prima di fare qualsiasi cosa consultala

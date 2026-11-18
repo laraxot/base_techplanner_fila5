@@ -71,7 +71,7 @@ public function getMediaAttribute(): \Spatie\MediaLibrary\MediaCollections\Model
 **Validation**: ✅ PHPStan Level 9 - 0 errors
 
 #### Configuration Fix
-**File**: `laravel/config/it/quaerisofficina/manager2/xra.php`
+**File**: `laravel/config/it/<nome progetto>officina/manager2/xra.php`
 **File**: `laravel/config/it/<nome progetto>officina/manager2/xra.php`
 
 **Issue**: Parse error from invalid placeholder `\Modules\<nome progetto>\Models\Customer::class`
@@ -239,7 +239,7 @@ it('media attribute returns empty collection when no media attached', function (
 5. `/laravel/Modules/Fixcity/app/Http/Requests/Api/UpdateTicketRequest.php`
 6. `/laravel/Modules/Fixcity/routes/api.php`
 7. `/laravel/Modules/Fixcity/tests/Unit/Models/TicketBusinessLogicTest.php`
-8. `/laravel/config/it/quaerisofficina/manager2/xra.php`
+8. `/laravel/config/it/<nome progetto>officina/manager2/xra.php`
 8. `/laravel/config/it/<nome progetto>officina/manager2/xra.php`
 
 ### Documentation Files (7)

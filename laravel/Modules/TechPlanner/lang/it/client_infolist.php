@@ -40,11 +40,11 @@ return [
         ],
         'Indirizzo' => [
             'label' => 'Indirizzo',
-            'heading' => '',
+            'heading' => 'Indirizzo',
         ],
         'Contatti' => [
             'label' => 'Contatti',
-            'heading' => '',
+            'heading' => 'Contatti',
         ],
     ],
     'fields' => [

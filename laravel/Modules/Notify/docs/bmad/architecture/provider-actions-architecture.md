@@ -41,7 +41,7 @@ Questo assicura che qualsiasi client possa utilizzare qualsiasi provider senza m
 ### 2. Posizione delle Azioni
 
 Le azioni specifiche dei provider SMS si trovano nella directory:
-- `/var/www/html/Quaeris/laravel/Modules/Notify/app/Actions/SMS/`
+- `/var/www/html/<nome progetto>/laravel/Modules/Notify/app/Actions/SMS/`
 
 ### 3. Convenzioni di Nomenclatura
 

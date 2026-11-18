@@ -139,17 +139,14 @@
             </div>
             @endif
 
-            {{-- Sponsors / Advertising Section --}}
+            {{-- Sponsor: solo se configurati nel JSON del footer. Nessun segnaposto "Spazio in vendita" su un sito PA (PRD-13). --}}
+            @if(! empty($data['sponsors']))
             <div class="row mt-12 mb-4">
                 <div class="col-12 footer-items-wrapper sponsor-wrapper">
                     <h4 class="footer-heading-title">{{ $data['sponsor_title'] ?? __('pub_theme::footer_full.sponsor.heading.title') }}</h4>
                     <p class="sponsor-subtitle">{{ $data['sponsor_subtitle'] ?? __('pub_theme::footer_full.sponsor.subtitle.help') }}</p>
                     <div class="sponsors-grid">
-                        @foreach($data['sponsors'] ?? [
-                            ['label' => 'Spazio in vendita', 'url' => '/pubblicita', 'img' => 'themes/Sixteen/design-comuni/assets/images/adsense-leaderboard.svg', 'type' => 'leaderboard'],
-                            ['label' => 'Spazio in vendita', 'url' => '/pubblicita', 'img' => 'themes/Sixteen/design-comuni/assets/images/adsense-leaderboard.svg', 'type' => 'medium-rectangle'],
-                            ['label' => 'Spazio in vendita', 'url' => '/pubblicita', 'img' => 'themes/Sixteen/design-comuni/assets/images/adsense-leaderboard.svg', 'type' => 'skyscraper'],
-                        ] as $sponsor)
+                        @foreach($data['sponsors'] as $sponsor)
                         <div class="sponsor-card">
                             <a href="{{ $sponsor['url'] }}" class="sponsor-link" aria-label="{{ $sponsor['label'] }}">
                                 <img src="{{ asset($sponsor['img']) }}" alt="{{ $sponsor['label'] }}" class="sponsor-img" loading="lazy">
@@ -163,6 +160,7 @@
                     </div>
                 </div>
             </div>
+            @endif
         </div>
     </div>
 

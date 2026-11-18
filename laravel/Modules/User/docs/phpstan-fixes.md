@@ -1,33 +1,28 @@
 ---
-title: "Correzioni PHPStan - Modulo User"
+title: "User Module - PHPStan Fixes Session 2025-10-01"
 type: concept
-tags: [phpstan, fixes, 2025]
+tags: [phpstan, fixes]
 created: 2026-07-14
 updated: 2026-07-14
-qmd: "phpstan-fixes-2025 correzioni phpstan - modulo user"
+qmd: "phpstan-fixes- user module - phpstan fixes session 2025-10-01"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
-status: draft
 ---
 
-# User Module - PHPStan Fixes Session 2025-10-01
+# Correzioni PHPStan — Modulo User
 
-## ⚠️ Stato: IN PROGRESS - 95 errori rimanenti
+## Scopo
 
-**Data correzione**: 1 Ottobre 2025
-**Analizzati**: ~400 file
-**Errori iniziali**: ~100+ (bloccavano analisi)
-**Errori attuali**: 95
-**Errori critici risolti**: 7 (syntax errors)
+Il modulo User gestisce autenticazione, ruoli, team, tenant e OAuth. Gli errori PHPStan qui non sono "tipi da zittire": indicano contratti Filament/Livewire/lang corrotti o test che non tipizzano la pagina sotto test.
 
 ---
 
@@ -225,9 +220,9 @@ public function canAccessTenant(\Illuminate\Database\Eloquent\Model $tenant): bo
 
 ## 🔗 Collegamenti
 
-- [← User Module README](./README.md)
+- [← User Module README](./readme.md)
 - [← PHPStan Session Report](../../../../docs/phpstan/filament-v4-fixes-session.md)
-- [← Final Report](../../../../docs/phpstan/final-report-session.md)
+- [← Final Report](../../../../docs/phpstan/final-report-session-2025-10-01.md)
 - [← Root Documentation](../../../../docs/index.md)
 
 ---
@@ -395,23 +390,6 @@ public string $currentState = 'default';
 2. **Type Declarations**: Continuare a migliorare le dichiarazioni di tipo
 3. **Widget Testing**: Testare tutti i widget di autenticazione dopo modifiche di tipo
 # Correzioni PHPStan - Modulo User
-  - "./actions-path-convention.md"
-  - "./actions-path-convention-convenzione-percorsi.md"
-  - "./actions-path-convention.md"
-status: draft
----
-
-# Correzioni PHPStan - Modulo User
-
-## 2026-10-20 — wave r3 · gate modulo
-
-```bash
-cd laravel && php -d memory_limit=2048M ./vendor/bin/phpstan analyse Modules/User
-# [OK] No errors
-```
-
-- `FakeAgent::version()` normalizza a `string|false` (niente `bool|string`).
-- OAuth feature: `Safe\parse_url`, header `Location` con `Assert::assertIsString` prima del parse della query.
 
 Questo documento traccia gli errori PHPStan identificati nel modulo User e le relative soluzioni implementate.
 
@@ -461,7 +439,7 @@ protected static string $view = 'pub_theme::filament.widgets.auth.password.reset
 
 **File Affetti**:
 - `RegisterWidget.php`
-- `ResetPasswordWidget.php` 
+- `ResetPasswordWidget.php`
 - `PasswordExpiredWidget.php`
 - `UpdateUserAction.php`
 
@@ -652,7 +630,7 @@ public string $currentState = 'default';
 ## Collegamenti
 
 - [Filament Class Extension Rules](../../xot/docs/filament-class-extension-rules.md)
-- [PHPStan Usage](../../Xot/docs/phpstan-usage.md)
+- [PHPStan Usage](../../xot/docs/phpstan-usage.md)
 - [XotBaseResource Documentation](../../xot/docs/filament/xot-base-resource.md)
 
 # PHPStan Fixes - Modulo User
@@ -876,13 +854,13 @@ qmd: "phpstan-fixes phpstan compliance — user module"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index.md"
   - "./2fa-guide.md"
   - "./2fa.md"
   - "./accessor-delegation-pattern.md"
-  - "./actions-path-convention.md"
-  - "./actions-path-convention.md"
+  - "./actions-path-convention-1.md"
+  - "./actions-path-convention-2.md"
   - "./actions-path-convention.md"
 ---
 
@@ -961,26 +939,25 @@ Artisan::call('db:seed', ['--class' => UserSeeder::class, '--no-interaction' => 
 
 - `tests/Feature/DemoUserSeederTest.pest.php` — Feature test with Pest DSL
 
-## Pattern: Pest with TestCase Context
+- Story operativa: [phpstan-zero-errors-user.story.md](./stories/phpstan-zero-errors-user.story.md)
+- Gate: `cd laravel && ./vendor/bin/phpstan analyse Modules` (neon immutabile)
+- Prompt: [11-phpstan.md](../../../../bashscripts/docs/prompts/11-phpstan.md)
 
-When Pest test closures need TestCase methods:
+## Fix sessione ripresa (2026-11-17)
 
-```php
-it('test name', function (): void {
-    /** @var TestCase $this */
-    // Now $this is properly typed for PHPStan
-    $this->markTestSkipped('reason');
-});
-```
+| File | Scopo | Fix |
+|------|-------|-----|
+| `lang/it/recent_logins.php` | Label UI accessi recenti | Tolte chiavi `label` duplicate che sovrascrivevano l'italiano con il nome chiave |
+| `Http/Livewire/Team/Change.php` | Cambio team Livewire | `list<array<…>>` su `$teams`; `view-string` su render |
+| `Http/Livewire/Auth/Passwords/Reset.php` | Reset password | Rimosso `@phpstan-ignore`; `Assert::string` su status + `trans()` |
+| `tests/.../CreateUserTest.php` | Contratto pagina CreateUser | `TestCase::$createUserPage` + `Assert` (niente `$this->page` mistyped) |
 
-## Validation
+## Ridondanza docs
 
-```bash
-./vendor/bin/phpstan analyse Modules/User
-# Result: [OK] No errors
-```
+Esistono decine di `phpstan*.md` storici in questa cartella (UPPERCASE, date nei nomi, duplicati). **Non crearne altri.** Aggiorna questa pagina o la story. I legacy restano come archivio finché un lint wiki non li consolida.
 
-## Related Documentation
+## Vincoli
 
-- [Pest Scope Type Hints](../../docs/wiki/skills/pest-scope-type-hints.md)
-- [PHPStan Sacred Configuration](../../docs/wiki/rules/phpstan-neon-sacred.md)
+- Mai `@phpstan-ignore` / baseline / edit `phpstan.neon`
+- `mixed` solo ultima spiaggia
+- Pest solo con DB `*_test`

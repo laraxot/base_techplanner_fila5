@@ -41,7 +41,7 @@
             @foreach ($section['items'] ?? [] as $item)
                 <div class="accordion-item">
                     <div class="accordion-header" id="heading{{ $item['n'] ?? '' }}">
-                        <button class="accordion-button collapsed title-snall-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $item['n'] ?? '' }}" aria-expanded="true" aria-controls="collapse{{ $item['n'] ?? '' }}">
+                        <button class="accordion-button collapsed title-snall-semi-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ $item['n'] ?? '' }}" aria-expanded="false" aria-controls="collapse{{ $item['n'] ?? '' }}">
                             <div class="button-wrapper"> {{ $item['title'] ?? '' }}
                                 <div class="icon-wrapper">
                                     <img class="icon-folder" src="{{ $assets }}/images/{{ $item['status']['icon'] ?? '' }}" alt="{{ $item['status']['alt'] ?? '' }}" role="img">

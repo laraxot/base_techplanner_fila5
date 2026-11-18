@@ -1,3 +1,10 @@
+---
+title: "Accessibilita e standard cross-browser"
+qmd: "zero roadmap accessibility standards md"
+type: note
+tags: [documentation]
+---
+
 # Accessibilita e standard cross-browser
 
 ## Obiettivo

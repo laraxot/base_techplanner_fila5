@@ -19,11 +19,11 @@ uses(TestCase::class);
 function tpDueMigrate(string ...$files): void
 {
     foreach ($files as $file) {
-        $migration = require dirname(__DIR__, 2).'/database/migrations/'.$file;
-        if (! $migration instanceof Migration || ! method_exists($migration, 'up')) {
+        $loaded = require dirname(__DIR__, 2).'/database/migrations/'.$file;
+        if (! is_object($loaded) || ! method_exists($loaded, 'up')) {
             throw new RuntimeException("Migrazione non valida: {$file}");
         }
-        $migration->up();
+        $loaded->up();
     }
 }
 
@@ -31,7 +31,7 @@ function tpDevice(string $type, ?string ...$nextDates): Device
 {
     $client = Client::query()->firstOrCreate(['company_name' => 'Studio Verdi']);
     $device = Device::query()->create(['client_id' => $client->getKey(), 'type' => $type]);
-    foreach ($nextDates as $i => $next) {
+    foreach (array_values($nextDates) as $i => $next) {
         DeviceVerification::query()->create([
             'device_id' => $device->getKey(),
             'verification_date' => today()->subYears(3 - $i)->toDateString(),
@@ -66,7 +66,16 @@ afterEach(fn () => Carbon::setTestNow());
 
 it('reads the next verification date from the latest verification', function (): void {
     $dates = Device::query()->withNextVerificationDate()->get()
-        ->mapWithKeys(fn (Device $d): array => [$d->getAttribute('type') => $d->getAttribute('next_verification_date')?->toDateString()]);
+        ->mapWithKeys(static function (Device $d): array {
+            $type = $d->getAttribute('type');
+            $typeKey = is_string($type) ? $type : '';
+            $next = $d->getAttribute('next_verification_date');
+            $date = $next instanceof \Carbon\CarbonInterface
+                ? $next->toDateString()
+                : (is_string($next) ? $next : null);
+
+            return [$typeKey => $date];
+        });
 
     expect($dates->all())->toBe([
         'Scaduto' => '2026-10-01',
@@ -85,8 +94,15 @@ it('finds overdue, due-soon and never-verified devices', function (): void {
 it('ignores verifications in the trash', function (): void {
     $this->overdue->verifications()->orderByDesc('verification_date')->first()?->delete();
 
-    expect(Device::query()->withNextVerificationDate()->find($this->overdue->getKey())?->getAttribute('next_verification_date')?->toDateString())
-        ->toBe('2024-01-01');
+    $device = Device::query()->withNextVerificationDate()->find($this->overdue->getKey());
+    expect($device)->toBeInstanceOf(Device::class);
+    assert($device instanceof Device);
+    $next = $device->getAttribute('next_verification_date');
+    $date = $next instanceof \Carbon\CarbonInterface
+        ? $next->toDateString()
+        : (is_string($next) ? $next : null);
+
+    expect($date)->toBe('2024-01-01');
 });
 
 it('colours the due date red, yellow or green', function (): void {

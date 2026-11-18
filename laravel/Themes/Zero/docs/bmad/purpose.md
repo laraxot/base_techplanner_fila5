@@ -30,11 +30,11 @@ category: product-planning
 
 ## One sentence
 
-Theme Zero is the **public presentation shell** for Quaeris: Blade layouts, UI tokens, Vite/Tailwind build. It does **not** own page resolution, domain data, or Filament base classes.
+Theme Zero is the **public presentation shell** for <nome progetto>: Blade layouts, UI tokens, Vite/Tailwind build. It does **not** own page resolution, domain data, or Filament base classes.
 
 ## Why (business)
 
-- Operators need one predictable FO skin across Quaeris hosts (`pub_theme => Zero`).
+- Operators need one predictable FO skin across <nome progetto> hosts (`pub_theme => Zero`).
 - Survey/auth/domain logic stays in modules so the theme can change without rewriting business rules.
 - Cms owns *what* a page is; Zero owns *how it looks* when rendered.
 

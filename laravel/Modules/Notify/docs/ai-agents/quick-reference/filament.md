@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "filament"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Quick Reference - Filament
@@ -36,5 +35,5 @@ status: draft
 ```bash
 cd laravel
 php artisan optimize:clear
-vendor/bin/phpstan analyse Modules/Xot Modules/Quaeris
+vendor/bin/phpstan analyse Modules/Xot Modules/<nome progetto>
 ```

@@ -2,10 +2,10 @@
 title: "[STORY] PHPStan zero errori Notify: param type mancanti nei test"
 type: story
 module: Notify
-status: done-pending-commit
+status: done
 priority: medium
 created: 2026-10-28
-updated: 2026-10-28
+updated: 2026-11-17
 tags: [phpstan, typeCoverage, paramTypeCoverage, notify, tests, bmad]
 related:
   - ./notify-phpstan-zero-errors.dev.md
@@ -49,3 +49,10 @@ Fuori scope, non toccati: `NotificationStatusEnum` vs `NotificationLogStatusEnum
 
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
+
+
+## Wave 2026-11-17
+
+Inventory `/tmp/phpstan-wave/Notify.tsv`: **106 → 0** (verifica congiunta con TechPlanner).
+
+Dettaglio cause: [phpstan-compliance.md](../phpstan-compliance.md).

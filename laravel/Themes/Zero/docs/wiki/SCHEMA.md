@@ -1,3 +1,10 @@
+---
+title: "Theme Zero Wiki — Schema e Convenzioni"
+qmd: "zero wiki schema md"
+type: note
+tags: [documentation]
+---
+
 # Theme Zero Wiki — Schema e Convenzioni
 
 ## Dominio

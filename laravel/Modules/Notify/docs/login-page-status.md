@@ -8,28 +8,19 @@ qmd: "login-page-status 📊 status pagina login - verifica tecnica"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
-status: draft
 ---
 
 # 📊 Status Pagina Login - Verifica Tecnica
 
-**Data Verifica**: 14 Ottobre 2025  
+**Data Verifica**: 14 Ottobre 2025
 **URL**: http://127.0.0.1:8000/it/auth/login
 
 ---
@@ -50,12 +41,12 @@ status: draft
             <div class="text-center mb-8">
                 <h1>Accedi ai servizi</h1>
             </div>
-            
+
             <!-- LoginWidget Filament 4 -->
             <div class="bg-white shadow-xl rounded-lg">
                 @livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)
             </div>
-            
+
             <!-- Registration CTA -->
             @if (Route::has('register'))
                 <div class="registration-cta mt-8">
@@ -84,7 +75,7 @@ status: draft
 class LoginWidget extends XotBaseWidget
 {
     protected string $view = 'pub_theme::filament.widgets.auth.login';
-    
+
     public function getFormSchema(): array
     {
         return [
@@ -93,11 +84,11 @@ class LoginWidget extends XotBaseWidget
             Checkbox::make('remember'),
         ];
     }
-    
+
     public function login(): void
     {
         $data = $this->form->getState();
-        
+
         if (Auth::attempt([
             'email' => $data['email'],
             'password' => $data['password'],
@@ -105,7 +96,7 @@ class LoginWidget extends XotBaseWidget
             session()->regenerate();
             redirect()->intended('/');
         }
-        
+
         $this->addError('email', __('auth.failed'));
     }
 }
@@ -122,7 +113,7 @@ class LoginWidget extends XotBaseWidget
     <x-filament::section>
         <form wire:submit="login" class="space-y-6">
             {{ $this->form }}  <!-- Rende i campi definiti in getFormSchema() -->
-            
+
             <button type="submit" class="w-full btn-primary">
                 Accedi
             </button>
@@ -283,8 +274,8 @@ FAIL → $this->addError() + rimane su form
 ### 1. Avviare il Server
 
 ```bash
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
-cd /var/www/_bases/base_ptv_fila5_mono/laravel
+cd /var/www/_bases/base_fixcity_fila5/laravel
+cd /var/www/_bases/base_ptv_fila5/laravel
 php artisan serve --host=127.0.0.1 --port=8000
 ```
 
@@ -348,8 +339,8 @@ Password: password
 
 ---
 
-**Verificato da**: Super Mucca AI Team  
-**Data**: 14 Ottobre 2025  
+**Verificato da**: Super Mucca AI Team
+**Data**: 14 Ottobre 2025
 **Confidence**: 💯 MASSIMA
 
 

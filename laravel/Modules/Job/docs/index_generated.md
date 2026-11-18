@@ -7,8 +7,6 @@ updated: 2026-09-26
 qmd: "index generated"
 issues: []
 discussions: []
-status: superseded
-superseded_by: index-generated.md
 ---
 
 # Job Module Documentation Index (Generated)
@@ -20,6 +18,15 @@ superseded_by: index-generated.md
 **Status:** Generated with intelligent categorization and deduplication analysis
 
 ---
+
+title: "index generated"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "index generated"
+issues: []
+discussions: []
 ## Table of Contents
 
 1. [Statistics](#statistics)
@@ -68,13 +75,13 @@ superseded_by: index-generated.md
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
 - [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
 - [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
-- [architecture-rules.md](architecture-rules.md) - Architecture discipline rules
+- [architecture-rules.md](archive/architecture-rules.md) - Architecture discipline rules
 - [contracts-naming.md](contracts-naming.md) - Contract naming conventions
 
 ### Product & Strategy
-- [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
-- [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
-- [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
+- [PRODUCT_STRATEGY.md](product_strategy.md) - Product strategy document
+- [PRODUCT_ROADMAP.md](product_roadmap.md) - Development roadmap
+- [PRODUCT_LAUNCH_PLAN.md](product_launch_plan.md) - Launch planning
 - [product-roadmap.md](product-roadmap.md) - Roadmap details
 - [product-strategy.md](product-strategy.md) - Strategy overview
 - [product-launch-plan.md](product-launch-plan.md) - Launch checklist
@@ -112,7 +119,7 @@ superseded_by: index-generated.md
 - [filament-5x-compatibility.md](filament-5x-compatibility.md) - v5 compatibility (1.8KB)
 - [filament-version.md](filament-version.md) - Version tracking (862 bytes)
 - [migration-filament.md](migration-filament.md) - Filament migration
-- [migration-filament-4.md](migration-filament.md) - v4 migration
+- [migration-filament-4.md](archive/migration-filament-4.md) - v4 migration
 
 ### Migration & Database
 - [MIGRATIONS.md](MIGRATIONS.md) - Migration tracking (10.9KB)
@@ -147,7 +154,7 @@ superseded_by: index-generated.md
 ### Audits & Analysis
 - [code-redundancy-audit.md](code-redundancy-audit.md) - Redundancy audit (2.9KB)
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - Copilot audit (581 bytes)
-- [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit.md) - 2026 audit (420 bytes)
+- [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit-2026-05-25.md) - 2026 audit (420 bytes)
 - [redundancy-audit.md](redundancy-audit.md) - General redundancy (1.2KB)
 - [redundancy-report.md](redundancy-report.md) - Redundancy report (1.6KB)
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) - Method duplication (37KB - comprehensive)
@@ -292,9 +299,9 @@ superseded_by: index-generated.md
 
 **Migration:**
 - `migration-filament.md` (185 bytes)
-- `migration-filament.md` (185 bytes)
+- `migration-filament-4.md` (185 bytes)
 - `migrazione-filament.md` (186 bytes - IT)
-- `migrazione-filament.md` (186 bytes - IT)
+- `migrazione-filament-4.md` (186 bytes - IT)
 
 **Assessment:**
 - [ ] Remove underscore duplicates (`filament_4x_compatibility.md` vs `filament-4x-compatibility.md`)
@@ -352,9 +359,9 @@ superseded_by: index-generated.md
 **Redundancy audits (6 variants):**
 - `code-redundancy-audit.md` (2.9KB)
 - `redundancy-audit.md` (1.2KB)
-- `redundancy-audit-job.md` (372 bytes)
+- `redundancy-audit-2026-05-21.md` (372 bytes)
 - `copilot-redundancy-audit.md` (581 bytes)
-- `copilot-redundancy-audit.md` (420 bytes)
+- `copilot-redundancy-audit-2026-05-25.md` (420 bytes)
 - `redundancy-report.md` (1.6KB)
 
 **Method/code duplication (5 variants):**
@@ -559,9 +566,9 @@ superseded_by: index-generated.md
 
 **Archive:**
 - `redundancy-audit.md` (old)
-- `redundancy-audit-job.md` (dated)
+- `redundancy-audit-2026-05-21.md` (dated)
 - `copilot-redundancy-audit.md` (outdated)
-- `copilot-redundancy-audit.md` (dated)
+- `copilot-redundancy-audit-2026-05-25.md` (dated)
 
 **Keep:**
 1. `code-redundancy-audit.md` (2.9KB - general audit)

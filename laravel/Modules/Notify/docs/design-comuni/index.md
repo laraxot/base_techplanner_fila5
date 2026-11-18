@@ -16,7 +16,6 @@ related:
   - ../notifications/readme.md
   - ../integrations/readme.md
   - ../templates/readme.md
-status: draft
 ---
 # REPLIKATE - Design Comuni Index
 
@@ -61,9 +60,6 @@ docs/
 - [Theme Analysis](./docs/theme/sixteen/analysis/)
 - [Homepage Results](./docs/theme/sixteen/analysis/results.md)
 - [Argomenti Analysis](./docs/design-comuni/pages/argomenti.md)
-- [Theme Analysis](../theme/sixteen/analysis)
-- [Homepage Results](../theme/sixteen/analysis/results.md)
-- [Argomenti Analysis](./pages/argomenti.md)
 
 ---
 

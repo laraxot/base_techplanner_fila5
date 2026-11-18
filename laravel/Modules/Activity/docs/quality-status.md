@@ -1,11 +1,10 @@
 ---
 title: "Activity Module - Quality Status (November 2025)"
+qmd: "activity quality status md"
 type: note
-status: draft
-updated: 2026-10-23
-tags: [docs, activity]
-qmd: "activity module - quality status (november 2025) activity"
+tags: [documentation]
 ---
+
 # Activity Module - Quality Status (November 2025)
 
 ## 🎯 Overview
@@ -99,7 +98,7 @@ public function withCustomProperties(array $attributes): static
 - `/docs/analysis/` - Quality analysis files
 - `/docs/guides/` - Implementation guides
 - `/docs/phpstan/` - PHPStan specific docs
-- `/docs/archived/` - Historical records
+- `/docs/archivedd/` - Historical records
 
 ## 🎓 Documentation Structure
 

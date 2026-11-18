@@ -1,0 +1,22 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Spatie\LivewireComments\View\Components;
+
+use Illuminate\Support\HtmlString;
+use Illuminate\View\Component;
+
+use function Safe\file_get_contents;
+
+class Styles extends Component
+{
+    public function render()
+    {
+        return view('comments::components.styles', [
+            'stylesheet' => new HtmlString(
+                file_get_contents(__DIR__.'/../../../resources/css/comments.css')
+            ),
+        ]);
+    }
+}

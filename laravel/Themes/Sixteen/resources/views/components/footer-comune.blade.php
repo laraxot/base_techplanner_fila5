@@ -146,7 +146,7 @@
                 </div>
             </div>
             
-@if(config('comune.adsense.footer_enabled', true))
+@if(config('comune.adsense.footer_enabled', false))
     <div class="it-footer-sponsor-ad">
         <div class="container">
             <div class="row justify-content-center">
@@ -206,7 +206,7 @@
     @endif
 
     {{-- AdSense Script --}}
-    @if(config('comune.adsense.footer_enabled', true))
+    @if(config('comune.adsense.footer_enabled', false))
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ config('comune.adsense.client_id', 'ca-pub-XXXXXXXX') }}"
             crossorigin="anonymous"></script>
     @endif

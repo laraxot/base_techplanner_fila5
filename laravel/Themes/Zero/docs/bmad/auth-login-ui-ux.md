@@ -41,4 +41,4 @@ mobile scompare per lasciare spazio all'accesso.
 ## Verifica
 
 Verificare desktop e viewport 375px con Playwright, controllare la navigazione
-da tastiera e ricostruire gli asset del tema con `npm run build && npm run copy`.
+da tastiera e ricostruire gli asset del tema con `npm run build`.

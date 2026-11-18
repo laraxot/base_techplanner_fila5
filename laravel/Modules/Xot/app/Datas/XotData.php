@@ -368,19 +368,25 @@ class XotData extends Data implements Wireable
 
     /**
      * Layout HTML delle e-mail: prima quelli del tema pubblico, poi quelli del modulo Notify.
-     * Un tema senza `resources/mail-layouts` (es. Two) faceva fallire l'invio delle e-mail da modello
-     * e la pagina «Nuovo modello e-mail» (2026-11-10).
+     * Un tema senza `resources/mail-layouts` (es. Two) non deve far fallire l'invio
+     * (reset password, modelli e-mail, pagina «Nuovo modello e-mail»).
      */
     public function getMailHtmlLayoutPath(string $key = ''): string
     {
         $themePath = base_path('Themes/'.$this->pub_theme.'/resources/mail-layouts/'.$key);
-        if (file_exists($themePath)) {
+        $notifyPath = base_path('Modules/Notify/resources/mail-layouts/'.$key);
+
+        // Senza chiave serve la cartella (HtmlLayoutPathSelect ne elenca i file): un tema senza mail-layouts
+        // usa quella di Notify, altrimenti «Nuovo modello e-mail» va in errore leggendo una cartella inesistente.
+        if ($key === '') {
+            return is_dir($themePath) || ! is_dir($notifyPath) ? $themePath : $notifyPath;
+        }
+
+        if (is_file($themePath)) {
             return $themePath;
         }
 
-        $modulePath = base_path('Modules/Notify/resources/mail-layouts/'.$key);
-
-        return file_exists($modulePath) ? $modulePath : $themePath;
+        return is_file($notifyPath) ? $notifyPath : $themePath;
     }
 
     /**
@@ -507,6 +513,16 @@ class XotData extends Data implements Wireable
             return false;
         }
         if (isset($_SERVER['SERVER_NAME']) && $_SERVER['SERVER_NAME'] === '127.0.0.1') {
+            return false;
+        }
+        // IP privato/riservato (LAN, 192.168.x.x, 10.x, 172.16-31.x): niente TLS reale
+        // dietro `php artisan serve` — forzare https romperebbe tutti gli asset.
+        $serverName = $_SERVER['SERVER_NAME'] ?? null;
+        if (
+            \is_string($serverName)
+            && filter_var($serverName, FILTER_VALIDATE_IP) !== false
+            && filter_var($serverName, FILTER_VALIDATE_IP, FILTER_FLAG_NO_PRIV_RANGE | FILTER_FLAG_NO_RES_RANGE) === false
+        ) {
             return false;
         }
         // AWS ELB

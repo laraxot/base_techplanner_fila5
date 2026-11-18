@@ -281,12 +281,12 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 ### Root Docs
 1. ✅ [leggi-qui-domani.md](./leggi-qui-domani.md) - Piano giornaliero
 2. ✅ [ANALISI-COMPLETA-.md.md](./analisi-completa.md) - Executive summary
-3. ✅ [roadmap-master-index.md](./roadmap-master-index.md) - Master index
-4. ✅ [project-analysis-and-roadmap.md](./project-analysis-and-roadmap.md) - Business view
+3. ✅ [roadmap-master-index.md](../../roadmap-master-index.md) - Master index
+4. ✅ [project-analysis-and-roadmap.md](../../project-analysis-and-roadmap.md) - Business view
 5. ✅ [phpstan/session-summary-.md.md](./phpstan/session-summary-.md.md)
 6. ✅ [phpstan/final-report-session-.md.md](./phpstan/final-report-session-.md.md)
 7. ✅ [phpstan/filament-v4-fixes-session.md](./phpstan/filament-v4-fixes-session.md)
-8. ✅ [phpstan/phpstan.md](./phpstan/phpstan.md) - Aggiornato
+8. ✅ [phpstan/phpstan.md](../../phpstan.md) - Aggiornato
 9. ✅ [QUESTO DOCUMENTO](./completamento-progetto.md)
 
 ### Module Roadmaps (9 dettagliate)
@@ -301,8 +301,8 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 18. ✅ [Cms/docs/roadmap-and-issues.md](../Modules/Cms/docs/roadmap-and-issues.md)
 
 ### Module PHPStan Fixes (3)
-19. ✅ [Gdpr/docs/phpstan-fixes.md](../../../Gdpr/docs/phpstan-fixes.md)
-20. ✅ [AI/docs/phpstan-fixes.md](../../../AI/docs/phpstan-fixes.md)
+19. ✅ [Gdpr/docs/phpstan-fixes.md](../../phpstan-fixes.md)
+20. ✅ [AI/docs/phpstan-fixes.md](../../phpstan-fixes.md)
 21. ✅ [User/docs/phpstan-fixes-2025-10-01.md](../Modules/User/docs/phpstan-fixes-2025-10-01.md)
 
 ### Theme Docs
@@ -581,7 +581,7 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 ### Start Here
 - [🌅 Piano Domani](./leggi-qui-domani.md) - Anche se già completato!
 - [📊 Analisi Completa](./analisi-completa.md) - Executive view
-- [🗺️ Master Roadmap](./roadmap-master-index.md) - Future planning
+- [🗺️ Master Roadmap](../../roadmap-master-index.md) - Future planning
 
 ### Technical Docs
 - [PHPStan Session](./phpstan/session-summary-.md.md)

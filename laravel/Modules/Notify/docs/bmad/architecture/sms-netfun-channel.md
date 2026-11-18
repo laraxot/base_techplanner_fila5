@@ -138,7 +138,7 @@ Configurazione attuale con username/password nel modulo Notify:
 'netfun' => [
     'username' => env('NETFUN_USERNAME'),
     'password' => env('NETFUN_PASSWORD'),
-'sender' => env('NETFUN_SENDER', 'Quaeris'),
+'sender' => env('NETFUN_SENDER', '<nome progetto>'),
     'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
     // Parametri avanzati...
 ],
@@ -384,7 +384,7 @@ Notification::assertSentTo($user, OrderShipped::class);
 ## 9. Riferimenti
 - [Netfun SMS API](https://www.netfunitalia.it/)
 - [spatie/laravel-queueable-action](https://github.com/spatie/laravel-queueable-action)
-- [Laravel Notifications](https://laravel.com/docs/notifications) 
+- [Laravel Notifications](https://laravel.com/docs/notifications)
 
 ---
 
@@ -438,7 +438,7 @@ $payload = [
 - Validare i dati con regole custom (es. formato numero, lunghezza mittente)
 - Documentare ogni DTO e aggiornarlo in caso di modifiche API
 
---- 
+---
 
 # Canale SMS Netfun
 
@@ -551,4 +551,4 @@ class NetfunSMSTest extends TestCase
 }
 ```
 
---- 
+---

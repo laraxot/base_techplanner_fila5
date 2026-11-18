@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "ai"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Modulo AI – Collegamento Bidirezionale
@@ -21,6 +20,15 @@ status: draft
 [← Torna all'indice PHPStan](../phpstan.md)
 
 ---
+
+title: "ai"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "ai"
+issues: []
+discussions: []
 ## Descrizione modulo
 Modulo dedicato alle azioni di intelligenza artificiale, sentiment analysis, integrazione con transformers e strumenti correlati.
 
@@ -29,4 +37,3 @@ Modulo dedicato alle azioni di intelligenza artificiale, sentiment analysis, int
 ## Altri collegamenti
 - [Documentazione generale AI](../../Modules/AI/docs/tutorials.md)
 - [Repository AI](../../Modules/AI/docs/repositories.md)
-- [Repository AI](../../../AI/docs/repositories.md)

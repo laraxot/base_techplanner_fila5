@@ -1,11 +1,10 @@
 ---
-title: "Errore: Attempt to read property 'attributeRawValues' on null durante firstOrCreate"
+title: "Errore: Attempt to read property \"attributeRawValues\" on null durante firstOrCreate"
+qmd: "activity errori attributerawvalues null firstorcreate md"
 type: note
-status: draft
-updated: 2026-10-08
-tags: [docs, activity, errori]
-qmd: "errore: attempt to read property 'attributerawvalues' on null durante firstorcreate activity"
+tags: [documentation]
 ---
+
 # Errore: Attempt to read property "attributeRawValues" on null durante firstOrCreate
 
 ## Problema
@@ -258,11 +257,15 @@ IndennitaResponsabilita::withoutEvents(function (): void {
 - [BaseScheda Activity Log Configuration](../../ptv/docs/models/base-scheda-activity-log.md)
 - [Activity Log Troubleshooting](../troubleshooting/properties-vuote-activity-log.md)
 - [PopulateByYearAction](../../Ptv/app/Actions/PopulateByYearAction.php)
-- [Business Logic Sigma](../../Sigma/docs/business-logic.md)
+- [Business Logic Sigma](../business-logic.md)
 
 ---
 
-**=======
+**
+
 **Ultimo aggiornamento**: 19 Novembre 2025  
+
+**=======
 **Severità**: Alta (blocca operazioni batch)  
 **Soluzione**: Usare `withoutEvents()` durante `firstOrCreate()`
+

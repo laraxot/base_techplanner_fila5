@@ -1,5 +1,5 @@
 {
-    "Quaeris": true,
+    "<nome progetto>": true,
     "Tenant": true,
     "Notify": true,
     "Cms": true,
@@ -24,6 +24,6 @@
     "Media": true,
     "TechPlanner": true,
     "Shop": true,
-    "Employee":true,
+    "Employee": true,
     "Ticket": true
 }

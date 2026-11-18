@@ -9,7 +9,7 @@ updated: 2026-07-14
 qmd: "riepilogo-risoluzione-conflitti-2025-09-30 deprecated"
 status: deprecated
 related:
-  - "./2025-excellence-achievement.md"
+  - "./excellence-achievement.md"
   - "./agid-implementation-guide.md"
   - "./ARCHITECTURE.md"
   - "./complete-refactoring-analysis.md"

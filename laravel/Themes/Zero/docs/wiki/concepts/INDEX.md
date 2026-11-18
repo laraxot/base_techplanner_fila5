@@ -1,3 +1,10 @@
+---
+title: "Zero Theme - concepts Index"
+qmd: "zero wiki concepts index md"
+type: note
+tags: [documentation]
+---
+
 # Zero Theme - concepts Index
 
 ## Purpose

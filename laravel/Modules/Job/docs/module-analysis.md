@@ -7,18 +7,17 @@ updated: 2026-09-26
 qmd: "module analysis"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Job Module - Comprehensive Analysis
 
 ## Module Overview
-**Module Name**: Job  
-**Type**: Queue & Job Processing Module  
-**Status**: ✅ Active  
-**Framework**: Laravel 12.x + Filament 4.x  
-**Queue System**: Laravel Queue with multiple drivers  
-**Language**: Multi-language (IT/EN/DE)  
+**Module Name**: Job
+**Type**: Queue & Job Processing Module
+**Status**: ✅ Active
+**Framework**: Laravel 12.x + Filament 4.x
+**Queue System**: Laravel Queue with multiple drivers
+**Language**: Multi-language (IT/EN/DE)
 
 ## Purpose
 The Job module provides comprehensive queue and background job processing:
@@ -69,7 +68,7 @@ The Job module provides comprehensive queue and background job processing:
 - Advanced queue security features
 
 ## Integration with Other Modules
-- **Quaeris**: Background PDF generation and report processing
+- **<nome progetto>**: Background PDF generation and report processing
 - **Limesurvey**: Survey data processing jobs
 - **Notify**: Notification queue management
 - **Media**: Media processing jobs

@@ -148,3 +148,13 @@ public/
 .pi
 .omp
 .kilocode
+/ploi-*.sh
+laravel/composer.lock
+/public/
+
+# Residui di merge e copie di sicurezza: mai nel repo (il 2026-11-13 ne erano finiti 77, con marcatori di conflitto).
+.merge_file_*
+*.orig
+*.rej
+*.bak
+*.backup

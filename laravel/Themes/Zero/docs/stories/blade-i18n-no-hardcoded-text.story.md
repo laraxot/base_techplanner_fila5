@@ -1,4 +1,5 @@
 ---
+qmd: "zero stories blade i18n no hardcoded text story md"
 title: "Niente testi fissi nelle Blade del tema Zero (multilingua it/en/de/es)"
 type: story
 status: implemented

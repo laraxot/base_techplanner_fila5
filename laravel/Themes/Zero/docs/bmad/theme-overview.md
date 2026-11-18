@@ -154,7 +154,7 @@ i file duplicati sono stati rimossi; le segnalazioni `[dup]` e `[deprecated]` so
 - [code-quality-report.md](./code-quality-report.md): Code quality — tema Zero [marker di merge]
 - [code-redundancy-audit.md](./code-redundancy-audit.md): Code redundancy audit — Zero [marker di merge]
 - [dry-kiss-analysis.md](./dry-kiss-analysis.md): 🎨 DRY & KISS Analysis - Theme Zero [marker di merge]
-- [dry-kiss-best-practices-historic.md](./dry-kiss-best-practices-historic.md): DRY & KISS Best Practices - Tema Zero [dup] [marker di merge]
+- [dry-kiss-best-practices-historic.md](../dry-kiss-best-practices-historic.md): DRY & KISS Best Practices - Tema Zero [dup] [marker di merge]
 - [dry-kiss-best-practices.md](./dry-kiss-best-practices.md): DRY & KISS Best Practices - Tema Zero [dup] [marker di merge]
 - [duplicate-methods-report.md](./duplicate-methods-report.md): Report: Metodi con nome duplicato nei moduli e nei temi [dup] [marker di merge]
 - [duplicate-methods.md](./duplicate-methods.md): Metodi duplicati — Zero [dup] [marker di merge]
@@ -167,8 +167,8 @@ i file duplicati sono stati rimossi; le segnalazioni `[dup]` e `[deprecated]` so
 - [no-phpstan-probe-policy.md](./no-phpstan-probe-policy.md): No PHPStan probe files in themes
 - [php-quality-gates-rule.md](./php-quality-gates-rule.md): Theme Zero - PHP Quality Gates Rule [marker di merge]
 - [phpstan-compliance-status.md](./phpstan-compliance-status.md): PHPStan Level 10 Compliance Status [marker di merge]
-- [phpstan-dry-kiss-guidelines.md](./phpstan-dry-kiss-guidelines.md): PHPStan Level 10 + DRY/KISS Guidelines for Themes [dup] [marker di merge]
-- [phpstan-dry-kiss-theme-guidelines-historic.md](./phpstan-dry-kiss-theme-guidelines-historic.md): PHPStan Level 10 + DRY/KISS Guidelines for Themes [dup] [marker di merge]
+- [phpstan-dry-kiss-guidelines.md](../phpstan-dry-kiss-guidelines.md): PHPStan Level 10 + DRY/KISS Guidelines for Themes [dup] [marker di merge]
+- [phpstan-dry-kiss-theme-guidelines-historic.md](../phpstan-dry-kiss-theme-guidelines-historic.md): PHPStan Level 10 + DRY/KISS Guidelines for Themes [dup] [marker di merge]
 - [phpstan-dry-kiss-theme-guidelines.md](./phpstan-dry-kiss-theme-guidelines.md): PHPStan Level 10 + DRY/KISS Guidelines for Themes [dup] [marker di merge]
 - [phpstan-level10-analysis.md](./phpstan-level10-analysis.md): Analisi PHPStan livello 10 - tema [marker di merge]
 - [phpstan-level10-theme-compliance.md](./phpstan-level10-theme-compliance.md): PHPStan Level 10 Compliance - Theme System [marker di merge]
@@ -249,7 +249,7 @@ i file duplicati sono stati rimossi; le segnalazioni `[dup]` e `[deprecated]` so
 - [composer-modules-not-themes.md](./composer-modules-not-themes.md): Composer — moduli sì, temi no (Zero) [marker di merge]
 - [comprehensive-theme-analysis.md](./comprehensive-theme-analysis.md): Analisi Completa Tema Zero - Tema Minimalista Laravel [dup] [marker di merge]
 - [customization.md](./customization.md): Personalizzazione del Tema Zero [marker di merge]
-- [dual-label-chart-widget-implementation.md](./dual-label-chart-widget-implementation.md): SimpleChartWidget - Analisi Qualità del Codice e Best Practices [dup] [marker di merge]
+- [dual-label-chart-widget-implementation.md](../dual-label-chart-widget-implementation.md): SimpleChartWidget - Analisi Qualità del Codice e Best Practices [dup] [marker di merge]
 - [examples.md](./examples.md): Esempi di Utilizzo - Tema Zero [marker di merge]
 - [filament-5-nested-resources-complete-guide.md](./filament-5-nested-resources-complete-guide.md): 🎯 Filament 5.x Nested Resources - Guida Completa 2024 [marker di merge]
 - [filament-5-nested-resources.md](./filament-5-nested-resources.md): Filament 5.x Nested Resources Guide
@@ -304,11 +304,11 @@ i file duplicati sono stati rimossi; le segnalazioni `[dup]` e `[deprecated]` so
 - [00-INDEX.md](./00-index.md): Zero Theme Documentation Index [dup]
 - [00-index.md](./00-index.md): Zero Theme - Documentation Index [dup] [marker di merge]
 - [CHANGELOG.md](./changelog.md): Changelog [dup]
-- [README-en.md](./readme-en.md): base_healthcare_app_fila5_mono [dup]
+- [README-en.md](./readme-en.md): base_healthcare_app_fila5 [dup]
 - [changelog.md](./changelog.md): Changelog — Zero Theme [dup]
 - [docs-archive-policy.md](./docs-archive-policy.md): docs archive policy — puntatore [marker di merge]
 - [docs-deduplication.md](./docs-deduplication.md): docs deduplication — tema Zero [marker di merge]
-- [index-consolidated.md](./index-consolidated.md): Theme Zero Documentation Index [marker di merge]
+- [index-consolidated.md](../index-consolidated.md): Theme Zero Documentation Index [marker di merge]
 - [naming-conventions.md](./naming-conventions.md): Naming Conventions — Zero Theme
 - [purpose.md](./purpose.md): Zero — scopo del tema e come raggiungerlo meglio [orfano] [marker di merge]
 - [readme-en.md](./readme-en.md): Zero Theme — README (English) [dup] [marker di merge]
@@ -316,7 +316,7 @@ i file duplicati sono stati rimossi; le segnalazioni `[dup]` e `[deprecated]` so
 
 #### Altri documenti (dominio e analisi specifiche) (1)
 
-- [analisi-completa-tema.md](./analisi-completa-tema.md): Analisi Completa Tema Zero - Tema Minimalista Laravel [dup] [marker di merge]
+- [analisi-completa-tema.md](../analisi-completa-tema.md): Analisi Completa Tema Zero - Tema Minimalista Laravel [dup] [marker di merge]
 
 ### Sospetti duplicati (richiedono approvazione per il consolidamento)
 
@@ -324,10 +324,10 @@ Nessun file e' stato toccato. Proposte di destinazione nella story [swarm-phpsta
 
 - contenuto identico: [PANDOC_GUIDE.md](./pandoc-guide.md), [pandoc-guide.md](./pandoc-guide.md)
 - contenuto identico: [TECH_SPEC.md](./tech-spec.md), [tech-spec.md](./tech-spec.md)
-- contenuto identico: [analisi-completa-tema.md](./analisi-completa-tema.md), [comprehensive-theme-analysis.md](./comprehensive-theme-analysis.md)
-- contenuto identico: [dry-kiss-best-practices-historic.md](./dry-kiss-best-practices-historic.md), [dry-kiss-best-practices.md](./dry-kiss-best-practices.md)
-- contenuto identico: [dual-label-chart-widget-implementation.md](./dual-label-chart-widget-implementation.md), [simplechartwidget-quality-analysis.md](./simplechartwidget-quality-analysis.md)
-- contenuto identico: [phpstan-dry-kiss-guidelines.md](./phpstan-dry-kiss-guidelines.md), [phpstan-dry-kiss-theme-guidelines-historic.md](./phpstan-dry-kiss-theme-guidelines-historic.md)
+- contenuto identico: [analisi-completa-tema.md](../analisi-completa-tema.md), [comprehensive-theme-analysis.md](./comprehensive-theme-analysis.md)
+- contenuto identico: [dry-kiss-best-practices-historic.md](../dry-kiss-best-practices-historic.md), [dry-kiss-best-practices.md](./dry-kiss-best-practices.md)
+- contenuto identico: [dual-label-chart-widget-implementation.md](../dual-label-chart-widget-implementation.md), [simplechartwidget-quality-analysis.md](./simplechartwidget-quality-analysis.md)
+- contenuto identico: [phpstan-dry-kiss-guidelines.md](../phpstan-dry-kiss-guidelines.md), [phpstan-dry-kiss-theme-guidelines-historic.md](../phpstan-dry-kiss-theme-guidelines-historic.md)
 - stesso nome normalizzato (maiuscole, `_`/`-`, `-en`, `-report`): [00-INDEX.md](./00-index.md), [00-index.md](./00-index.md)
 - stesso nome normalizzato (maiuscole, `_`/`-`, `-en`, `-report`): [ARCHITECTURE.md](./architecture.md), [architecture.md](./architecture.md)
 - stesso nome normalizzato (maiuscole, `_`/`-`, `-en`, `-report`): [CHANGELOG.md](./changelog.md), [changelog.md](./changelog.md)
@@ -347,7 +347,7 @@ Nessun file e' stato toccato. Proposte di destinazione nella story [swarm-phpsta
 - stesso titolo: [METODI-DUPLICATI-ANALISI.md](./metodi-duplicati-analisi.md), [metodi-duplicati-analisi.md](./metodi-duplicati-analisi.md)
 - stesso titolo: [database-governance.md](./database-governance.md), [phpstan-merge-conflicts.md](./phpstan-merge-conflicts.md)
 - stesso titolo: [git-collision-audit-bashscripts.md](./git-collision-audit-bashscripts.md), [git-collisions-bashscripts-audit.md](./git-collisions-bashscripts-audit.md), [git-conflict-resolution-audit.md](./git-conflict-resolution-audit.md)
-- stesso titolo: [phpstan-dry-kiss-guidelines.md](./phpstan-dry-kiss-guidelines.md), [phpstan-dry-kiss-theme-guidelines-historic.md](./phpstan-dry-kiss-theme-guidelines-historic.md), [phpstan-dry-kiss-theme-guidelines.md](./phpstan-dry-kiss-theme-guidelines.md)
+- stesso titolo: [phpstan-dry-kiss-guidelines.md](../phpstan-dry-kiss-guidelines.md), [phpstan-dry-kiss-theme-guidelines-historic.md](../phpstan-dry-kiss-theme-guidelines-historic.md), [phpstan-dry-kiss-theme-guidelines.md](./phpstan-dry-kiss-theme-guidelines.md)
 
 ### Senza front matter (9)
 

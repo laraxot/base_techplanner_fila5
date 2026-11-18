@@ -130,7 +130,7 @@
                 type="button" 
                 class="btn-close" 
                 data-bs-dismiss="alert" 
-                aria-label="{{ __('pub_theme::ui_components.notifiche.close.label') }}"
+                aria-label="Chiudi notifica"
                 onclick="dismissNotification('{{ $notificationId }}')"
             >
                 <svg class="icon icon-sm">

@@ -18,7 +18,8 @@
 @endphp
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-theme="light">
-    @include('cms::components.head')
+    {{-- Le variabili che il componente Head passerebbe: senza, la pagina 404 andava in errore 500. --}}
+    @include('cms::components.head', ['pubTheme' => \Modules\Xot\Datas\XotData::make()->pub_theme, 'panelAssets' => true])
     <body class="antialiased font-sans bg-white text-gray-900">
         <a href="#main-content" class="skip-link sr-only">{{ __('pub_theme::navigation.actions.skip_to_main.label') }}</a>
 

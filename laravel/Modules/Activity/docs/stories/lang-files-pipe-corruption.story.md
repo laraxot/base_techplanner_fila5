@@ -1,3 +1,10 @@
+---
+title: "Story: file di lingua corrotti da una pipe prima di ogni carattere"
+qmd: "activity stories lang files pipe corruption story md"
+type: note
+tags: [documentation]
+---
+
 # Story: file di lingua corrotti da una pipe prima di ogni carattere
 
 Status: done
@@ -101,7 +108,7 @@ dove c'erano gli accenti: e' piu' piccolo perche' e' mutilato, non perche' e' pi
 | clone | file corrotti | accenti |
 |---|---:|---|
 | `base_ptvx_fila5` | 4 | persi |
-| `base_quaeris_fila5` | 4 | persi (11 `U+FFFD`): **ancora rotto** |
+| `base_<nome progetto>_fila5` | 4 | persi (11 `U+FFFD`): **ancora rotto** |
 | `base_fixcity_fila5` | 0 | righe `tooltip` cancellate |
 | `base_techplanner_fila5` | 0 | altra versione |
 | `base_laravelpizza` | 0 | **integro** |

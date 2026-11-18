@@ -26,7 +26,7 @@ discussions: []
 
 ## Posizionamento
 
-In `base_quaeris_fila5` Zero e' l'unico tema. Vale come guscio pubblico (`pub`), non come pannello gestionale. Dettaglio e misure: [scopo](../../bmad/scopo.md).
+In `base_<nome progetto>_fila5` Zero e' l'unico tema. Vale come guscio pubblico (`pub`), non come pannello gestionale. Dettaglio e misure: [scopo](../../bmad/scopo.md).
 
 ## Guardrail (KISS)
 

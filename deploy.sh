@@ -54,6 +54,8 @@ step "Symlink nella document root (temi e moduli)"
 # Gli asset restano nel tema o nel modulo (una sola copia, versionata). I .gitignore di public_html/themes e
 # public_html/assets ignorano le cartelle vere con quei nomi: una vecchia copia trovata lì non è nel repo e si
 # può rigenerare, quindi viene spostata in storage/backups (non cancellata) e sostituita dal symlink.
+# Fa lo stesso di `php artisan xot:module-link` e `xot:theme-link`, ma in bash: qui gira prima di composer install,
+# quando artisan potrebbe non partire (per esempio al primo rilascio o con dipendenze nuove).
 link_public() {
     local link=$1 target=$2
     if [ -L "$link" ]; then

@@ -4,34 +4,26 @@ type: concept
 tags: [project, completion, status]
 created: 2026-07-14
 updated: 2026-07-14
+qmd: "project-completion-status 🎯 fixcity - stato completamento progetto"
 qmd: "project-completion-status 🎯 ptv - stato completamento progetto"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
-  - "./00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-completamento-assoluto.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
-status: draft
 ---
 
 # 🎯 FIXCITY - STATO COMPLETAMENTO PROGETTO
 
-**Data**: 2025-10-01  
-**Status**: 🚧 IN CORSO - Documentazione 75% completata  
-**Fase Corrente**: Q4 2025 - Feature Expansion  
+**Data**: 2025-10-01
+**Status**: 🚧 IN CORSO - Documentazione 75% completata
+**Fase Corrente**: Q4 2025 - Feature Expansion
 
 ---
 
@@ -203,8 +195,8 @@ status: draft
 ## 🔗 STRUTTURA DOCUMENTAZIONE
 
 ```
-base_fixcity_fila5_mono/
-base_ptv_fila5_mono/
+base_fixcity_fila5/
+base_ptv_fila5/
 ├── documentation-index.md          # ✅ Indice generale
 ├── quick-start.md                  # ✅ Guida rapida
 ├── roadmap-status-summary.md       # ✅ Status master
@@ -329,8 +321,8 @@ Prima di considerare un modulo "completo":
 
 ---
 
-**Status Finale**: 🚧 Progetto al 75% di completamento documentazione  
-**Confidence Level**: 90%  
+**Status Finale**: 🚧 Progetto al 75% di completamento documentazione
+**Confidence Level**: 90%
 
 ---
 

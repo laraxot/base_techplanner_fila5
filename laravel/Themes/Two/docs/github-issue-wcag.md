@@ -64,7 +64,7 @@ Dai report di audit accessibilità (MAUVE++ e PageSpeed Insights), sono stati id
 
 ### Soluzioni Implementate
 
-Vedi documento completo: [`docs/wcag-compliance-plan.md`](docs/wcag-compliance-plan.md)
+Vedi documento completo: [`docs/wcag-compliance-plan.md`](wcag-compliance-plan.md)
 
 ### Testing Richiesto
 
@@ -79,7 +79,7 @@ Vedi documento completo: [`docs/wcag-compliance-plan.md`](docs/wcag-compliance-p
 
 - [WCAG 2.1 Quick Reference](https://www.w3.org/WAI/WCAG21/quickref/)
 - [MAUVE++ Validator](https://mauve.isti.cnr.it/)
-- [Documentazione Completa](docs/wcag-compliance-plan.md)
+- [Documentazione Completa](wcag-compliance-plan.md)
 
 ---
 

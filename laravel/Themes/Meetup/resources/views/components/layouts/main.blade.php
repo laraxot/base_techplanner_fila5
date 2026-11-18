@@ -16,5 +16,6 @@
         {{ $slot }}
 
         @livewireScripts
+        @filamentScripts(withCore: true)
     </body>
 </html>

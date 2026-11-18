@@ -1,3 +1,10 @@
+---
+title: "Sistema responsive e grid"
+qmd: "zero roadmap responsive system md"
+type: note
+tags: [documentation]
+---
+
 # Sistema responsive e grid
 
 ## Obiettivo

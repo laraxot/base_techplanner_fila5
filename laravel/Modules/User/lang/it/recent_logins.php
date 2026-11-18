@@ -39,31 +39,26 @@ return [
             'description' => '',
         ],
         'toggleColumns' => [
-            'label' => 'toggleColumns',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'reorderRecords' => [
-            'label' => 'reorderRecords',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'resetFilters' => [
-            'label' => 'resetFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'applyFilters' => [
-            'label' => 'applyFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'openFilters' => [
-            'label' => 'openFilters',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -79,50 +74,40 @@ return [
         'reorderRecords' => [
             'icon' => 'reorderRecords',
             'label' => 'reorderRecords',
-            'tooltip' => 'reorderRecords',
         ],
         'openColumnManager' => [
             'icon' => 'openColumnManager',
             'label' => 'openColumnManager',
-            'tooltip' => 'openColumnManager',
         ],
         'applyTableColumnManager' => [
             'icon' => 'applyTableColumnManager',
             'label' => 'applyTableColumnManager',
-            'tooltip' => 'applyTableColumnManager',
         ],
         'resetFilters' => [
             'icon' => 'resetFilters',
             'label' => 'resetFilters',
-            'tooltip' => 'resetFilters',
         ],
         'applyFilters' => [
             'icon' => 'applyFilters',
-            'tooltip' => 'applyFilters',
             'label' => 'applyFilters',
         ],
         'openFilters' => [
-            'tooltip' => 'openFilters',
             'icon' => 'openFilters',
             'label' => 'openFilters',
         ],
         'resetColumnManager' => [
-            'tooltip' => 'resetColumnManager',
             'icon' => 'resetColumnManager',
             'label' => 'resetColumnManager',
         ],
         'delete' => [
-            'tooltip' => 'delete',
             'icon' => 'delete',
             'label' => 'delete',
         ],
         'layout' => [
-            'tooltip' => 'layout',
             'icon' => 'layout',
             'label' => 'layout',
         ],
         'create' => [
-            'tooltip' => 'create',
             'icon' => 'create',
             'label' => 'create',
         ],

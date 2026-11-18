@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "agents overview"
 issues: []
 discussions: []
-status: draft
 ---
 
 # 🎯 AI Agents Overview
@@ -17,6 +16,15 @@ status: draft
 **Stato**: ✅ OPERATIONAL
 
 ---
+
+title: "agents overview"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents overview"
+issues: []
+discussions: []
 ## 📊 Project Stack
 
 ### Core Technology
@@ -236,8 +244,6 @@ vendor/bin/pest --coverage
 ### Getting Started
 - [Coding Standards](../standards/agents-coding-standards.md)
 - [Module Architecture](../architecture/agents-module-architecture.md)
-- [Coding Standards](../agents-coding-standards.md)
-- [Module Architecture](../agents-module-architecture.md)
 - [Quality Gate](../workflow/agents-quality-gate.md)
 
 ### Critical Rules

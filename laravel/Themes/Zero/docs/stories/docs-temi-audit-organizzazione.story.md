@@ -120,7 +120,7 @@ Ordine permanente docs continuous su `laravel/Themes/*/docs/` (unico tema: Zero)
 | Inventario temi | Solo `Themes/Zero` |
 | Indice canonico | Ingresso [`../README.md`](../README.md); BMAD [`../bmad/00-index.md`](../bmad/00-index.md) **minuscolo**. Nessun `00-INDEX.md` (HARD lowercase + anti-collisione) |
 | UPPERCASE md | `wiki/AGENTS.md` → [`../wiki/agents.md`](../wiki/agents.md); `_archive/METODI_DUPLICATI_ANALISI.md` → [`../_archive/metodi-duplicati-analisi-name-legacy.md`](../_archive/metodi-duplicati-analisi-name-legacy.md) |
-| Scopo / perche' | Riscritti [`../bmad/scopo.md`](../bmad/scopo.md), bridge [`../bmad/purpose.md`](../bmad/purpose.md), focus [`../wiki/concepts/theme-zero-operating-focus.md`](../wiki/concepts/theme-zero-operating-focus.md) sul codice reale Quaeris + link Cms/Xot/Lang |
+| Scopo / perche' | Riscritti [`../bmad/scopo.md`](../bmad/scopo.md), bridge [`../bmad/purpose.md`](../bmad/purpose.md), focus [`../wiki/concepts/theme-zero-operating-focus.md`](../wiki/concepts/theme-zero-operating-focus.md) sul codice reale <nome progetto> + link Cms/Xot/Lang |
 | Stack in indice BMAD | Allineato a TW 3.4 / Alpine / Flowbite / Vite 6 (tolto Flux/TW4 come "stack del tema") |
 
 Nessun commit. Nessuna cartella `docs/` nuova.

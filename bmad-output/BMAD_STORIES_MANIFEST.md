@@ -1,9 +1,9 @@
 # BMAD Stories Manifest — All Modules
-**Date**: 2026-09-06  
-**Status**: Planning Phase  
-**Total Modules**: 18  
-**Ready Stories**: 5  
-**In-Progress**: 2  
+**Date**: 2026-09-06
+**Status**: Planning Phase
+**Total Modules**: 18
+**Ready Stories**: 5
+**In-Progress**: 2
 
 ---
 
@@ -50,7 +50,7 @@
 
 #### **TBD: User Module — User/Profile Contract Migration**
 - **Status**: awaiting-analysis
-- **Pattern needed**: Replace Quaeris\Profile with Xot\Contracts\ProfileContract
+- **Pattern needed**: Replace <nome progetto>\Profile with Xot\Contracts\ProfileContract
 - **Scope**: TBD (need to scan for all usages)
 - **Blockers**: Lang module (Profile reference)
 
@@ -180,8 +180,8 @@ User (contains ProfileContract migration) ← Lang, potentially others
 
 ## Meta: This Document
 
-**Purpose**: Single source of truth for all pending BMAD stories across modules  
-**Updated**: 2026-09-06 20:xx UTC  
-**Format**: Markdown (version-controllable, grep-friendly)  
-**Storage**: `/bmad-output/BMAD_STORIES_MANIFEST_*.md` (archive by date)  
+**Purpose**: Single source of truth for all pending BMAD stories across modules
+**Updated**: 2026-09-06 20:xx UTC
+**Format**: Markdown (version-controllable, grep-friendly)
+**Storage**: `/bmad-output/BMAD_STORIES_MANIFEST_*.md` (archive by date)
 **Integration**: Link from each module's story index or sprint-status.yaml

@@ -19,9 +19,9 @@ related:
 status: draft
 ---
 
-# Convenzioni di Naming per Filament 
+# Convenzioni di Naming per Filament
 
-Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema Quaeris, con particolare attenzione alle pagine e alle risorse.
+Questo documento definisce le convenzioni di naming standardizzate per i componenti Filament nel sistema <nome progetto>, con particolare attenzione alle pagine e alle risorse.
 
 ## Convenzioni di Naming per Pagine Filament
 
@@ -66,7 +66,7 @@ class SendSmsPage extends XotBasePage
     protected static ?string $navigationIcon = 'heroicon-o-device-phone-mobile';
     protected static string $view = 'notify::filament.pages.send-sms';
     protected static ?string $cluster = Test::class;
-    
+
     // Resto dell'implementazione...
 }
 ```
@@ -137,7 +137,7 @@ use Filament\Clusters\Cluster;
 class Test extends Cluster
 {
     protected static ?string $navigationIcon = 'heroicon-o-beaker';
-    
+
     // Configurazione del cluster...
 }
 ```

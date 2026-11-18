@@ -367,7 +367,7 @@ _bmad-output/
 - **Index:** [Sixteen Docs Index](Themes/Sixteen/docs/00-index.md)
 - **Key Topics:**
   - [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
-  - [Theme Detection](docs/project/THEME_DETECTION_SYSTEM.md)
+  - [Theme Detection](THEME_DETECTION_SYSTEM.md)
   - [Design Comuni Replication](Themes/Sixteen/docs/design-comuni-html-replication.md)
 ```
 
@@ -586,7 +586,7 @@ pages/tests/argomenti.blade.php     # NO
 ### Key Documents
 
 - [Master Index](docs/project/MODULE_DOCS_INDEX.md)
-- [Theme Detection](docs/project/THEME_DETECTION_SYSTEM.md)
+- [Theme Detection](THEME_DETECTION_SYSTEM.md)
 - [Theme Detection](THEME_DETECTION_SYSTEM.md)
 - [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
 - [Page Component](Modules/Cms/docs/PAGE_COMPONENT_ARCHITECTURE.md)

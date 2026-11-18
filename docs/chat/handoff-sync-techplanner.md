@@ -15,7 +15,7 @@ issue #18 / discussion #19.
 - `gh api repos/laraxot/module_techplanner_fila5` returns `404 Not Found`.
 - `gh search repos techplanner --owner laraxot` confirms the repo does not
   exist under the `laraxot` org. Existing sibling repos are
-  `module_techplanner_fila3` and `module_techplanner_fila4` — there is no
+  `module_techplanner_fila5` and `module_techplanner_fila4` — there is no
   `module_techplanner_fila5`.
 - SSH auth to GitHub as `marco76tv` works fine (tested with `ssh -T
   git@github.com`), so this is not a credentials/access issue — the repo

@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "tenant config"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Quick Reference - Tenant Config
@@ -17,7 +16,7 @@ status: draft
 ```php
 config('app.url');
 app(\Modules\Tenant\Actions\GetTenantNameAction::class)->execute();
-config('it.quaeris.manager.morph_map');
+config('it.<nome progetto>.manager.morph_map');
 \Illuminate\Database\Eloquent\Relations\Relation::morphMap();
 ```
 

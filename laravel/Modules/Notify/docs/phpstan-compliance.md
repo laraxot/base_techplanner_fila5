@@ -1,68 +1,40 @@
 ---
-title: "phpstan compliance"
+title: "PHPStan compliance — Notify"
 type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan compliance"
-issues: []
-discussions: []
-status: draft
+tags: [phpstan, notify, compliance]
+created: 2025-09-22
+updated: 2026-11-17
+related:
+  - ./stories/notify-phpstan-zero-errors.story.md
+  - ./stories/phpstan-cleanup-notify.story.md
 ---
 
-# PHPStan Compliance - Notify Module
+# PHPStan compliance — Notify
 
-## Status: ✅ FULLY COMPLIANT
+## Status
 
-**Analysis Date:** September 22, 2025
-**PHPStan Level:** 9 (Maximum)
-**Files Analyzed:** 342
-**Errors Found:** 0
+**0 errori** su `Modules/Notify` (PHPStan level max / Larastan), verificato 2026-11-17:
 
-## Compliance Summary
+```bash
+cd laravel && ./vendor/bin/phpstan analyse Modules/Notify Modules/TechPlanner --memory-limit=-1 --error-format=raw
+```
 
-The Notify module is fully compliant with PHPStan level 9 analysis, demonstrating:
+Baseline inventory wave (`/tmp/phpstan-wave/Notify.tsv`): **106 → 0**.
 
-- ✅ Rigorous type hints implementation
-- ✅ Proper null handling
-- ✅ Correct array structure definitions
-- ✅ Filament 4.x compatibility
-- ✅ Safe function usage
-- ✅ Strict types declaration
+## Cause radice (wave 2026-11-17)
 
-## Module Features
+1. **Push payload senza value-type** — `PushNotificationService` espone array di piattaforma/notifica/token senza `list<>` / `array<string, mixed>`; gli stub APNs/Web Push calcolavano payload e parametri e non li usavano.
+2. **Factory tipizzate** — `MailTemplateLog` / `MailTemplateVersion` senza `@method static …Factory factory()`: `factory()->create()` restava `mixed` nei test di business logic.
+3. **SoftDeletes assente** — `MailTemplateVersion` importava SoftDeletes ma non lo usava: `trashed()` / `restore()` non esistevano per PHPStan.
+4. **Config modulo + `env()`** — Larastan non tratta `Modules/*/config` come config dir; `Env::get()` mantiene lo scopo (token inbound / DNS domain) senza false positive.
+5. **Test e job** — cast `config()` mixed, assert su return type sbagliati di `NotificationManager`, job scheduled push con array non filtrati a `list<string>`.
 
-This module provides comprehensive notification functionality including:
-- Email notifications
-- SMS messaging
-- WhatsApp integration
-- Push notifications
-- Notification templates
-- Notification logging and tracking
-- Phone number normalization
+## Vincoli rispettati
 
-## Key Components
+- Nessun `*.neon` / baseline / `@phpstan-ignore`
+- `mixed` solo dove il payload è davvero aperto (FCM data)
+- Solo modulo Notify (+ docs)
 
-- **NotificationTemplateResource**: Template management
-- **NotificationLog**: Activity tracking
-- **WhatsAppActionFactory**: WhatsApp integration
-- **NormalizePhoneNumberAction**: Phone validation
-- **Mail Templates**: Email management
+## Scopo del modulo
 
-## Filament 4.x Compatibility
-
-All Filament components verified:
-- NotificationTemplateResource follows new structure
-- Form components properly implemented
-- Table actions return correct arrays
-- Mail template previews work correctly
-- Push notification pages properly structured
-
-## Code Quality Standards
-
-The module maintains:
-- PSR-12 coding standard compliance
-- Strict type declarations
-- Comprehensive type hints
-- Notification handling best practices
-- Modern PHP 8.2+ feature utilization
+Canali di notifica (mail, SMS, push, template, inbound webhook, log di consegna) con Actions/QueueableAction e factory tipizzate coerenti con `HasXotFactory`.

@@ -74,16 +74,22 @@ describe('client import', function (): void {
             '2024_12_26_230221_create_legal_offices_table.php',
             '2026_11_06_000000_create_controls_table.php',
         ] as $file) {
-            $migration = require dirname(__DIR__, 2).'/database/migrations/'.$file;
-            expect($migration)->toBeInstanceOf(Migration::class);
-            $migration->up();
+            $loaded = require dirname(__DIR__, 2).'/database/migrations/'.$file;
+            if (! is_object($loaded) || ! method_exists($loaded, 'up')) {
+                throw new RuntimeException("Migrazione non valida: {$file}");
+            }
+            $loaded->up();
         }
     });
 
+    /** @param array<string, mixed> $row */
     function tpImporter(array $row): ClientImporter
     {
         $importer = new ClientImporter(new Import(), [], []);
-        (fn () => $this->data = $row)->call($importer);
+        (function () use ($row): void {
+            /** @var array<string, mixed> $row */
+            $this->data = $row;
+        })->call($importer);
 
         return $importer;
     }

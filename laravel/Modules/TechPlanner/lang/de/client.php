@@ -10,11 +10,6 @@ return [
         'sort' => 30,
     ],
     'actions' => [
-        'geocodeCoordinates' => [
-            'label' => 'Aus Adresse aktualisieren',
-            'failed_title' => 'Geocodierung fehlgeschlagen',
-            'success_title' => 'Koordinaten aus Adresse aktualisiert',
-        ],
         'create' => [
             'label' => 'Neuer Kunde',
         ],
@@ -80,6 +75,9 @@ return [
         ],
         'last_electromedical_control_date' => [
             'label' => 'Letzte elektromedizinische Kontrolle',
+        ],
+        'last_appointment' => [
+            'label' => 'Letzter Termin',
         ],
         'last_health_authorization_date' => [
             'label' => 'Letzte Gesundheitszulassung',
@@ -304,30 +302,11 @@ return [
     'filters' => [
         'has_controls' => ['label' => 'Hat erfasste Kontrollen'],
         'controls_expiring' => ['label' => 'Kontrollen laufen ab (30 Tage)'],
+        'last_appointment_type' => ['label' => 'Letzter Termin nach Typ', 'none' => 'Kein Termin'],
         'never_controlled_type' => ['label' => 'Nach Typ nie kontrolliert'],
         'has_rx_control' => ['label' => 'Röntgenkontrolle'],
         'has_electromedical_control' => ['label' => 'Elektromedizinische Kontrolle'],
         'has_health_authorization' => ['label' => 'Gesundheitszulassung'],
-    ],
-    'map' => [
-        'markers_shown' => ':count Kunden-Marker mit Koordinaten werden angezeigt',
-        'aria_label' => 'Kundenkarte',
-        'set_origin' => 'Als Ursprung verwenden',
-        'set_origin_tooltip' => 'Alle Kunden nach Entfernung von diesem Punkt sortieren',
-        'origin_popup' => 'Referenzpunkt für die Entfernung',
-        'origin_set' => ['title' => 'Ausgangspunkt gesetzt', 'body' => 'Die Tabelle wurde nach Entfernung zu diesem Kunden sortiert.'],
-        'origin_missing' => ['title' => 'Koordinaten fehlen', 'body' => 'Der ausgewählte Kunde hat keine verwendbaren Koordinaten.'],
-        'origin_missing_geocode_failed' => [
-            'title' => 'Geocodierung fehlgeschlagen',
-            'body' => 'Die Adresse des Kunden konnte nicht geocodiert werden. Prüfen Sie die Adresse oder verwenden Sie "Koordinaten aktualisieren", um alle fehlenden Koordinaten zu füllen.',
-        ],
-    ],
-    'location_map' => [
-        'heading' => 'Kundenstandort',
-        'aria_label' => 'Kartenansicht des Kundenstandorts',
-        'google_maps' => 'In Google Maps öffnen',
-        'viamichelin' => 'In ViaMichelin öffnen',
-        'missing' => 'Koordinaten sind nicht verfügbar. Adresse vervollständigen und „Aus Adresse aktualisieren“ im Abschnitt Koordinaten verwenden.',
     ],
     'messages' => [
         'coordinates_batch_summary' => ':processed Kunden verarbeitet. Koordinaten für :success aktualisiert.',
@@ -342,12 +321,7 @@ return [
         'label' => 'Kunde',
         'plural' => 'Kunden',
     ],
-    'sections' => [
-        'coordinates' => [
-            'label' => 'Koordinaten',
-            'description' => 'Breiten- und Längengrad des Kunden. Adresse zuerst speichern, dann hier die Koordinaten für Entfernung und Karte aktualisieren.',
-        ],
-        'contacts' => [
+    'sections' => [        'contacts' => [
             'heading' => 'Kontakte',
             'label' => 'Kontakte',
         ],

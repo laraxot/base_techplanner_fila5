@@ -3,9 +3,9 @@ title: "SettingPage di Notify: accesso libero ai segreti e nome"
 status: ready-for-dev
 module: Notify (owner)
 created: 2026-10-28
-repository: "https://github.com/provtv/base_ptv_fila5_mono"
-github_issue: "https://github.com/provtv/base_ptv_fila5_mono/issues"
-github_discussion: "https://github.com/provtv/base_ptv_fila5_mono/discussions"
+repository: "https://github.com/provtv/base_ptv_fila5"
+github_issue: "https://github.com/provtv/base_ptv_fila5/issues"
+github_discussion: "https://github.com/provtv/base_ptv_fila5/discussions"
 related:
   - ../../../Xot/docs/stories/module-setting-pages.epic.md
   - ../../../Progressioni/docs/stories/progressioni-audit.epic.md

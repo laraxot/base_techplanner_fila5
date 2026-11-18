@@ -93,7 +93,7 @@ class LoginWidget extends XotBaseWidget
 {
     // ✅ CORRETTO: namespace pub_theme
     protected static string $view = 'pub_theme::filament.widgets.auth.login';
-    
+
     // ❌ ERRATO: namespace user
     // protected static string $view = 'user::filament.widgets.auth.login';
 }
@@ -160,7 +160,7 @@ public function getFormSchema(): array
 3. Documentare le dipendenze e i parametri
 
 ### Fase 2: Conversione Sistematica
-1. Sostituire `@livewire(\Modules\User\Http\Livewire\Auth\Login::class)` 
+1. Sostituire `@livewire(\Modules\User\Http\Livewire\Auth\Login::class)`
 2. Con `@livewire(Modules\User\Filament\Widgets\Auth\LoginWidget::class)`
 3. Aggiornare parametri e props se necessario
 
@@ -194,8 +194,8 @@ public function getFormSchema(): array
 
 ## 🔗 Riferimenti
 
-- [Modules/User/docs/auth_widget_rules.md](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/User/docs/auth_widget_rules.md)
-- [Modules/User/docs/auth_widgets_view_namespaces.md](/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/User/docs/auth_widgets_view_namespaces.md)
+- [Modules/User/docs/auth_widget_rules.md](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/User/docs/auth_widget_rules.md)
+- [Modules/User/docs/auth_widgets_view_namespaces.md](/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/User/docs/auth_widgets_view_namespaces.md)
 - [Filament Widgets Documentation](https://filamentphp.com/docs/4.x/widgets)
 
 ## 📝 Note Implementative
@@ -212,8 +212,8 @@ public function getFormSchema(): array
 
 ---
 
-**PRIORITÀ: CRITICA**  
-**IMPATTO: ALTO**  
-**EFFORT: BASSO**  
+**PRIORITÀ: CRITICA**
+**IMPATTO: ALTO**
+**EFFORT: BASSO**
 
 *Ultimo aggiornamento: Agosto 2025*

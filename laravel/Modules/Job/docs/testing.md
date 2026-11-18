@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "testing"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Testing Documentation
@@ -83,7 +82,7 @@ Configure Job-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     // Configure Job module
     config(['job.default_queue' => 'default']);
     config(['job.max_attempts' => 3]);
@@ -105,7 +104,7 @@ test('job can be created', function () {
         'attempts' => 0,
         'status' => 'pending',
     ]);
-    
+
     expect($job)->toBeInstanceOf(\Modules\Job\Models\Job::class);
     expect($job->title)->toBe('Test Job');
 });
@@ -116,7 +115,7 @@ test('job can be created', function () {
 ```php
 test('job configuration is loaded', function () {
     $jobConfig = config('job');
-    
+
     expect($jobConfig['default_queue'])->toBe('default');
     expect($jobConfig['max_attempts'])->toBe(3);
     expect($jobConfig['timeout'])->toBe(60);
@@ -128,7 +127,7 @@ test('job configuration is loaded', function () {
 ```php
 test('job service provider is registered', function () {
     $app = app();
-    
+
     expect($app->bound(\Modules\Job\Providers\JobServiceProvider::class))->toBeTrue();
 });
 ```
@@ -173,7 +172,7 @@ test('job service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
-    
+
     config(['job.default_queue' => 'default']);
     config(['job.max_attempts' => 3]);
     config(['job.timeout' => 60]);
@@ -190,11 +189,11 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
-    
+
     $app['config']->set([
-'database.connections.job.database' => 'Quaeris_data_test',
+'database.connections.job.database' => '<nome progetto>_data_test',
     ]);
-    
+
     return $app;
 }
 ```
@@ -280,7 +279,7 @@ protected function createApplication()
 
 - [Testing Setup Guide](../../../docs/testing-setup.md)
 - [Testing Best Practices](../../../docs/testing-best-practices.md)
-- [Troubleshooting Guide](../../../../docs/troubleshooting.md)
+- [Troubleshooting Guide](../../../docs/troubleshooting.md)
 
 ## Testing Examples
 
@@ -298,7 +297,7 @@ test('job can be created', function () {
         'priority' => 1,
         'timeout' => 60,
     ]);
-    
+
     expect($job)->toBeInstanceOf(\Modules\Job\Models\Job::class);
     expect($job->title)->toBe('Test Job');
     expect($job->description)->toBe('Test job description');
@@ -316,14 +315,14 @@ test('job can be created', function () {
 ```php
 test('job service can dispatch job', function () {
     $service = new \Modules\Job\Services\JobService();
-    
+
     $job = $service->dispatchJob([
         'title' => 'Test Job',
         'description' => 'Test job description',
         'queue' => 'default',
         'payload' => ['key' => 'value'],
     ]);
-    
+
     expect($job)->toBeInstanceOf(\Modules\Job\Models\Job::class);
     expect($job->status)->toBe('pending');
 });
@@ -340,11 +339,11 @@ test('job can be processed', function () {
         'payload' => ['key' => 'value'],
         'status' => 'pending',
     ]);
-    
+
     // Simulate job processing
     $job->status = 'completed';
     $job->save();
-    
+
     expect($job->status)->toBe('completed');
 });
 ```
@@ -359,7 +358,7 @@ test('job api can create job', function () {
         'queue' => 'default',
         'payload' => ['key' => 'value'],
     ];
-    
+
     $response = $this->post('/api/jobs', $jobData);
     $response->assertStatus(201);
     $response->assertJson([
@@ -412,4 +411,13 @@ Following these guidelines will ensure your Job module tests are:
 Remember: Good tests are the foundation of reliable software development.
 
 ---
+
+title: "testing"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "testing"
+issues: []
+discussions: []
 *

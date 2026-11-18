@@ -2,7 +2,7 @@
 
 Tema attivo per Sottana Service: presentazione only (pagine Folio in `resources/views/pages/`, componenti Blade in `resources/views/components/`, asset Tailwind v4 + Vite). Nessun Controller: `app/` contiene solo `ThemeServiceProvider`.
 
-- Ingresso e indice di tutta la docs (per argomento): [index.md](./index.md). `00-index.md` / `00-INDEX.md` sono indici storici superati.
+- Ingresso e indice di tutta la docs (per argomento): [index.md](wiki/index.md). `00-index.md` / `00-INDEX.md` sono indici storici superati.
 - Note operative (stack, build): [theme.md](./theme.md).
 - Regole pagine Folio: [folio-page-file-rules.md](./folio-page-file-rules.md); mai estendere `Filament*`: [concepts/xotbase-never-extend-filament.md](./concepts/xotbase-never-extend-filament.md).
 - Wiki interna: [wiki/index.md](./wiki/index.md).

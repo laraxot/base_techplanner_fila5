@@ -25,8 +25,10 @@ use Modules\Geo\Filament\Tables\Columns\AddressColumn;
 use Modules\Notify\Filament\Actions\SendRecordsNotificationBulkAction;
 use Modules\Notify\Filament\Tables\Columns\ContactColumn;
 use Modules\TechPlanner\Enums\ControlTypeEnum;
+use Modules\TechPlanner\Filament\Resources\ClientResource\Pages\ListClients;
 use Modules\TechPlanner\Filament\Resources\Tables\TechPlannerBaseTable;
 use Modules\TechPlanner\Models\Client;
+use Modules\TechPlanner\Models\Control;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Tables\Actions\XotBaseBulkAction;
 
@@ -56,6 +58,40 @@ class ClientsTable extends TechPlannerBaseTable
             'last_health_authorization_date' => TextColumn::make('last_health_authorization_date')
                 ->label(__('techplanner::client.fields.last_health_authorization_date.label'))
                 ->date()->sortable()->placeholder('—'),
+            /*
+             * Ultimo appuntamento: la data da sola non dice "per cosa" si e' andati
+             * dal cliente — i `controls` di quell'appuntamento portano il
+             * `control_type` (rx, elettromedicali, ...). Senza questa informazione
+             * il tecnico non sa se la prossima chiamata e' di manutenzione RX o
+             * di verifica elettromedicale.
+             */
+            'last_appointment' => TextColumn::make('last_appointment')
+                ->label(__('techplanner::client.fields.last_appointment.label'))
+                ->state(static function (Client $record): ?string {
+                    $appointment = $record->latestAppointment;
+                    if ($appointment === null) {
+                        return null;
+                    }
+
+                    $types = $appointment->controls
+                        ->map(static function (Control $control): ?ControlTypeEnum {
+                            $type = $control->getAttribute('control_type');
+
+                            return $type instanceof ControlTypeEnum ? $type : null;
+                        })
+                        ->filter()
+                        ->unique()
+                        ->map(static fn (ControlTypeEnum $type): string => $type->getLabel())
+                        ->implode(', ');
+
+                    $date = $appointment->date?->format('d/m/Y');
+
+                    return $types === '' ? $date : $date.' — '.$types;
+                })
+                ->placeholder('—')
+                ->icon('heroicon-o-calendar-days')
+                ->iconColor('gray')
+                ->wrap(),
             'longitude' => TextColumn::make('longitude')->sortable()->toggleable(isToggledHiddenByDefault: true),
             'latitude' => TextColumn::make('latitude')->sortable()->toggleable(isToggledHiddenByDefault: true),
             'business_closed' => TextColumn::make('business_closed')->toggleable(isToggledHiddenByDefault: true),
@@ -123,6 +159,28 @@ class ClientsTable extends TechPlannerBaseTable
                     'controls',
                     static fn (Builder $controls) => $controls->whereDate('next_control_date', '<=', now()->addDays(30)),
                 )),
+            'last_appointment_type' => SelectFilter::make('last_appointment_type')
+                ->label(__('techplanner::client.filters.last_appointment_type.label'))
+                ->options(static fn (): array => collect(ControlTypeEnum::cases())
+                    ->mapWithKeys(static fn (ControlTypeEnum $type): array => [$type->value => $type->getLabel()])
+                    ->put('none', __('techplanner::client.filters.last_appointment_type.none'))
+                    ->all())
+                ->query(static function (Builder $query, array $data): Builder {
+                    $value = $data['value'] ?? null;
+                    if (! is_string($value) || $value === '') {
+                        return $query;
+                    }
+
+                    // "Nessun appuntamento" isola i clienti mai visitati.
+                    if ($value === 'none') {
+                        return $query->whereDoesntHave('appointments');
+                    }
+
+                    // whereHas su `latestAppointment` (hasOne latestOfMany) limita
+                    // il controllo ALL'ultimo appuntamento, non a qualunque storico.
+                    return $query->whereHas('latestAppointment', static fn (Builder $appointments): Builder => $appointments
+                        ->whereHas('controls', static fn (Builder $controls): Builder => $controls->where('control_type', $value)));
+                }),
             'never_controlled_type' => SelectFilter::make('never_controlled_type')
                 ->label(__('techplanner::client.filters.never_controlled_type.label'))
                 ->options(static fn (): array => collect(ControlTypeEnum::cases())
@@ -173,9 +231,9 @@ class ClientsTable extends TechPlannerBaseTable
                 ->icon('heroicon-o-map')
                 ->hidden(static fn (Client $record): bool => $record->trashed())
                 ->iconButton()
-                ->label(__('techplanner::client.map.set_origin_tooltip'))
-                ->tooltip(__('techplanner::client.map.set_origin_tooltip'))
-                ->action(static function (Client $record): void {
+                ->label(__('techplanner::client_map_widget.set_origin_tooltip'))
+                ->tooltip(__('techplanner::client_map_widget.set_origin_tooltip'))
+                ->action(static function (Client $record, ListClients $livewire): void {
                     self::ensureClientCoordinates($record);
 
                     $latitude = $record->getAttribute('latitude');
@@ -184,8 +242,8 @@ class ClientsTable extends TechPlannerBaseTable
                     if (! is_numeric($latitude) || ! is_numeric($longitude)) {
                         Notification::make()
                             ->warning()
-                            ->title(__('techplanner::client.map.origin_missing.title'))
-                            ->body(__('techplanner::client.map.origin_missing_geocode_failed.body'))
+                            ->title(__('techplanner::client_map_widget.origin_missing.title'))
+                            ->body(__('techplanner::client_map_widget.origin_missing_geocode_failed.body'))
                             ->send();
 
                         return;
@@ -196,10 +254,15 @@ class ClientsTable extends TechPlannerBaseTable
                     Cookie::queue('user_latitude', (string) $latitude, 60 * 24 * 30);
                     Cookie::queue('user_longitude', (string) $longitude, 60 * 24 * 30);
 
+                    // Le sessioni sono aggiornate: la tabella deve riqueryare
+                    // con withDistance() e il CoordinatesWidget rileggere i campini.
+                    $livewire->dispatch('coordinates-updated');
+                    $livewire->resetTable();
+
                     Notification::make()
                         ->success()
-                        ->title(__('techplanner::client.map.origin_set.title'))
-                        ->body(__('techplanner::client.map.origin_set.body'))
+                        ->title(__('techplanner::client_map_widget.origin_set.title'))
+                        ->body(__('techplanner::client_map_widget.origin_set.body'))
                         ->send();
                 }),
         ];

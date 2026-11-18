@@ -3,7 +3,7 @@
 ## BLOCCO — remote mancante (LEGGERE PER PRIMO)
 
 Il remote `laraxot/module_techplanner_fila5` **NON esiste su GitHub** (confermato:
-esistono solo `_fila3` / `_fila4`). I commit del modulo TechPlanner sono **solo locali**
+esistono solo `_fila5` / `_fila4`). I commit del modulo TechPlanner sono **solo locali**
 e **non è possibile fare push**. Serve creare il repository remoto (o correggere l'URL
 del submodule) prima di poter pubblicare il lavoro. Questo blocco riguarda solo il
 modulo TechPlanner; Xot e bashscripts hanno remote validi.

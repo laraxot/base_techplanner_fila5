@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# Convenzioni per Template Blade di Filament 
+# Convenzioni per Template Blade di Filament
 
 ## Struttura Standard dei Template di Pagina
 
@@ -88,8 +88,8 @@ Non seguire queste convenzioni può portare a:
 Per verificare che tutti i template seguano queste convenzioni:
 
 ```bash
-grep -L "name=\"description\"" /var/www/html/Quaeris/laravel/Modules/*/resources/views/filament/pages/*.blade.php
-grep -L "name=\"footer\"" /var/www/html/Quaeris/laravel/Modules/*/resources/views/filament/pages/*.blade.php
+grep -L "name=\"description\"" /var/www/html/<nome progetto>/laravel/Modules/*/resources/views/filament/pages/*.blade.php
+grep -L "name=\"footer\"" /var/www/html/<nome progetto>/laravel/Modules/*/resources/views/filament/pages/*.blade.php
 ```
 
 ## Riferimenti

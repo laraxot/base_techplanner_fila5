@@ -74,7 +74,7 @@ Le pagine con nomi non conformi potrebbero:
 Eseguire il seguente comando per trovare pagine non conformi:
 
 ```bash
-find /var/www/html/Quaeris/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
+find /var/www/html/<nome progetto>/laravel/Modules -path "*/Filament/*/Pages/*.php" | grep -v "Page.php$"
 ```
 
 ## Riferimenti

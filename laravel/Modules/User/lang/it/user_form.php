@@ -80,14 +80,4 @@ return [
             'tooltip' => 'Nascondi password',
         ],
     ],
-    'sections' => [
-        'empty' => [
-            'heading' => 'empty',
-            'label' => '',
-        ],
-        'worker' => [
-            'label' => 'Operatore',
-            'heading' => 'worker',
-        ],
-    ],
 ];

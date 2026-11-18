@@ -234,13 +234,13 @@ portandole allo stato attuale (Q4 2025) e allineandole con i progressi effettivi
 ## 🔗 DOCUMENTI PRINCIPALI
 
 ### Roadmap
-- **[roadmap-status-summary.md](./roadmap-status-summary.md)** - Status generale
-- **[master-roadmap.md](./laravel/master-roadmap.md)** - Roadmap strategica 18 mesi
-- **[roadmap-master.md](./project_docs/roadmaps/roadmap-master.md)** - Consolidamento moduli
+- **[roadmap-status-summary.md](../../roadmap-status-summary.md)** - Status generale
+- **[master-roadmap.md](../../master-roadmap.md)** - Roadmap strategica 18 mesi
+- **[roadmap-master.md](../../project_docs/roadmaps/roadmap-master.md)** - Consolidamento moduli
 
 ### Documentazione
 - **[documentation-index.md](./documentation-index.md)** - Indice completo
-- **[documentation-status.md](./project_docs/documentation-status.md)** - Stato documentazione
+- **[documentation-status.md](../../project_docs/documentation-status.md)** - Stato documentazione
 - **[quick-start.md](./quick-start.md)** - Guida rapida sviluppatori
 
 ### Moduli Principali

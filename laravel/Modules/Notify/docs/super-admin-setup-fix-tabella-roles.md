@@ -12,8 +12,8 @@ status: draft
 
 # Fix Super Admin Setup - Tabella Roles Mancante
 
-**Data**: 15 Ottobre 2025  
-**Comando**: `php artisan user:super-admin`  
+**Data**: 15 Ottobre 2025
+**Comando**: `php artisan user:super-admin`
 **Stato**: ✅ Documentato
 
 ## Problema
@@ -21,9 +21,9 @@ status: draft
 Durante l'esecuzione di `php artisan user:super-admin` si verifica un errore di tabella mancante:
 
 ```
-SQLSTATE[HY000]: General error: 1 no such table: roles 
-(Connection: sqlite, SQL: select * from "roles" where 
-("team_id" is null or "team_id" is null) and "name" = super-admin 
+SQLSTATE[HY000]: General error: 1 no such table: roles
+(Connection: sqlite, SQL: select * from "roles" where
+("team_id" is null or "team_id" is null) and "name" = super-admin
 and "guard_name" = web limit 1)
 ```
 
@@ -51,7 +51,7 @@ Il comando `user:super-admin` tenta di creare/assegnare ruoli **prima** che le m
 
 ```bash
 # 1. Esegui le migrazioni
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+cd /var/www/_bases/base_fixcity_fila5/laravel
 php artisan migrate --force
 
 # 2. Verifica che la tabella roles esista
@@ -180,7 +180,7 @@ php artisan tinker
 
 ```bash
 # 1. Naviga nella directory Laravel
-cd /var/www/_bases/base_fixcity_fila5_mono/laravel
+cd /var/www/_bases/base_fixcity_fila5/laravel
 
 # 2. Configura .env (se non già fatto)
 cp .env.example .env
@@ -366,10 +366,10 @@ Questa è la **terza implementazione** della giornata:
 
 1. **Mattina**: [View Cache Components](./view-cache-components-fix-componenti-mancanti.md)
    - Creati badge.status e badge.priority
-   
+
 2. **Pomeriggio**: [Transaction Model Removal](./transaction-removal-fix-migrate-fresh.md)
    - Disabilitate TransactionFactory
-   
+
 3. **Sera**: Super Admin Setup ✅ (questa documentazione)
    - Guida completa setup e troubleshooting
 
@@ -461,12 +461,12 @@ Il setup del super-admin è un passaggio critico per iniziare a utilizzare l'app
 
 ## Principi Zen Applicati
 
-> **"Prima le fondamenta, poi la casa"**  
+> **"Prima le fondamenta, poi la casa"**
 > Le migrazioni devono sempre precedere i comandi che usano il database
 
-> **"Documentazione è prevenzione"**  
+> **"Documentazione è prevenzione"**
 > Una guida completa previene ore di debugging
 
-> **"Automatizza ciò che ripeti"**  
+> **"Automatizza ciò che ripeti"**
 > Script di setup per velocizzare il processo
 

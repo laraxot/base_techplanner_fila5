@@ -1,7 +1,4 @@
 ---
-qmd: "schedule dup"
-issues: []
-discussions: []
 title: 'Schedule dup'
 module: Job
 type: reference

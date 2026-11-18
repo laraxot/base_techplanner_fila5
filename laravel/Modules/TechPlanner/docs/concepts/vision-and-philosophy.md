@@ -1258,7 +1258,7 @@ Simple. Transparent. Trustworthy. Compliance-first.
 - [filament-resources.md](../filament-resources.md) - UI component patterns
 - [README.md](../README.md) - Quick start and overview
 - [filosofia_modulo_techplanner.md](./filosofia-modulo-techplanner.md) - Original Italian philosophy doc
-- [philosophy-complete.md](../philosophy-complete.md) - Prior complete philosophy version
+- [philosophy-complete.md](philosophy-complete.md) - Prior complete philosophy version
 
 ---
 

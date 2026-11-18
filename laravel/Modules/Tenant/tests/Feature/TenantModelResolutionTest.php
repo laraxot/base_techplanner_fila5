@@ -8,15 +8,12 @@ use Illuminate\Support\Facades\File;
 use Mockery;
 use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Tenant\Actions\Config\GetTenantFilePathAction;
-use Modules\Tenant\Tests\TestCase;
 use PHPUnit\Framework\Assert;
-
-uses(TestCase::class);
 
 describe('Tenant model resolution via config files', function (): void {
     afterEach(function (): void {
-        if (TestCase::$testDirectory !== '' && File::exists(TestCase::$testDirectory)) {
-            File::deleteDirectory(TestCase::$testDirectory);
+        if ($this->testDirectory !== '' && File::exists($this->testDirectory)) {
+            File::deleteDirectory($this->testDirectory);
         }
         Mockery::close();
     });
@@ -25,7 +22,7 @@ describe('Tenant model resolution via config files', function (): void {
         $directory = storage_path('tests/tenant-config');
         File::deleteDirectory($directory);
         File::makeDirectory($directory, 0755, true, true);
-        TestCase::$testDirectory = $directory;
+        $this->testDirectory = $directory;
 
         $configPath = $directory.'/models.php';
         File::put($configPath, "<?php return ['user' => 'App\\\\Models\\\\CustomUser'];");

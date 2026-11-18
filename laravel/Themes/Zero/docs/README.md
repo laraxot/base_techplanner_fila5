@@ -51,7 +51,7 @@ GateGuard facts:
 | Mail | layout HTML `base`, `clean`, `christmas-professional` | `resources/mail-layouts/` |
 | Lingue | `navigation` e `ui` in it, en, de | `lang/` |
 
-Il tema non contiene logica di dominio. Survey, autorizzazione e dati Pulse appartengono al modulo Quaeris, non presente in questo repository: il contratto resta esterno. Non copiare nel tema metriche o decisioni di dominio.
+Il tema non contiene logica di dominio. Survey, autorizzazione e dati Pulse appartengono al modulo <nome progetto>, non presente in questo repository: il contratto resta esterno. Non copiare nel tema metriche o decisioni di dominio.
 
 **Confini:** Folio/Blade/asset qui; risoluzione pagina e blocchi JSON nel modulo Cms, non presente in questo repository; autolabel e locale switcher in [Lang — scopo](../../../Modules/Lang/docs/scopo.md); foundation Filament in [Xot](../../../Modules/Xot/docs/00-index.md) e [mai estendere Filament*](concepts/xotbase-never-extend-filament.md).
 

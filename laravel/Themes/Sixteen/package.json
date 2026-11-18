@@ -5,10 +5,8 @@
     "type": "module",
     "scripts": {
         "dev": "vite",
-        "build": "npm run prepare:static-assets && npm run prepare-public && vite build",
+        "build": "npm run prepare:static-assets && vite build",
         "prepare:static-assets": "node resources/scripts/prepare-static-assets.mjs",
-        "prepare-public": "mkdir -p ./public/design-comuni/assets/images ./public/css && cp -f ./docs/Main_files/five/assets/images/* ./public/design-comuni/assets/images/ && cp -f ./node_modules/leaflet.markercluster/dist/MarkerCluster.css ./node_modules/leaflet.markercluster/dist/MarkerCluster.Default.css ./public/css/",
-        "prepare:fixcity-svg": "mkdir -p ../../../public_html/assets/fixcity/svg && cp -f ../../Modules/Fixcity/resources/svg/*.svg ../../../public_html/assets/fixcity/svg/",
         "build:clear-views": "npm run build",
         "build:analyze": "vite build --mode analyze",
         "build:production": "vite build --mode production",
@@ -28,7 +26,7 @@
         "analyze:serve": "npx serve dist",
         "bundle-report": "npm run analyze && open dist/stats.html",
         "filament:dev": "npm run dev & npm run build:filament:dev",
-        "filament:build": "npm run build:filament && npm run copy:filament"
+        "filament:build": "npm run build:filament"
     },
     "devDependencies": {
         "@alpinejs/focus": "^3.17.4",
@@ -55,7 +53,6 @@
         "laravel-vite-plugin": "^3.2.0",
         "leaflet": "^1.9.4",
         "lit": "^3.3.3",
-        "mauve": "^1.1.2",
         "nodemon": "^3.1.14",
         "playwright": "^1.64.1",
         "postcss": "^8.5.31",

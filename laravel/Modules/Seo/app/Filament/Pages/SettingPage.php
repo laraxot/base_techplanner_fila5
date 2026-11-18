@@ -8,6 +8,7 @@ use Closure;
 use Filament\Forms\Components\Repeater;
 use Filament\Forms\Components\TextInput;
 use Modules\Seo\Datas\SeoConfigData;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Pages\BaseSettingPage;
 
 /**
@@ -45,7 +46,7 @@ class SettingPage extends BaseSettingPage
     protected function pathAliasesRule(string $attribute, mixed $value, Closure $fail): void
     {
         if (SeoConfigData::from(['path_aliases' => $value])->hasRejectedAliases()) {
-            $fail(__('seo::setting.errors.path_aliases'));
+            $fail(SafeStringCastAction::cast(__('seo::setting.errors.path_aliases')));
         }
     }
 }

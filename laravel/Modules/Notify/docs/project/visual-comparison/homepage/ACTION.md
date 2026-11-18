@@ -7,10 +7,15 @@ updated: 2026-09-26
 qmd: "ACTION"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Homepage Visual Parity - Action Items
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Current Status
 
@@ -60,7 +65,9 @@ status: draft
 
 - `/laravel/Themes/Sixteen/resources/css/homepage-visual-fix.css`
 - Run `npm run build` after changes
-- Run `npm run copy` after build
+- niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+- Run `npm run copy` (dismesso: `public_html/themes/<Tema>` e' un symlink a `laravel/Themes/<Tema>/public`) after build
 
 ## Last Screenshots
 

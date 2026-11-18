@@ -40,8 +40,6 @@ class JobStatusWidget extends XotBaseWidget
     #[Locked]
     public string $old_value = '';
 
-    /** @var view-string */
-    protected string $view = 'job::filament.widgets.job-status';
 
     protected int|string|array $columnSpan = 'full';
 
@@ -155,7 +153,7 @@ class JobStatusWidget extends XotBaseWidget
     protected function authorizeSuperAdmin(): void
     {
         if (! static::canAccess()) {
-            throw new AuthorizationException();
+            throw new AuthorizationException;
         }
     }
 

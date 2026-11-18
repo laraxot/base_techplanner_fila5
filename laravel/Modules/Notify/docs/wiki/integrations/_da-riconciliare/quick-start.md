@@ -8,20 +8,14 @@ qmd: "quick-start 🚀 <nome progetto> - guida rapida sviluppatori"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index.md"
+  - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion.md"
-  - "./acronym-naming-conventions.md"
-  - "../../../00-index-documentation.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-notify-completamento-assoluto.md"
-  - "../../../acronym-naming-conventions.md"
-  - "./acronym-naming-conventions.md"
+  - "./absolute-completion-100.md"
+  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
-status: draft
 ---
 
 # 🚀 <nome progetto> - GUIDA RAPIDA SVILUPPATORI
@@ -504,8 +498,6 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 - **[Indice Documentazione](./documentation-index.md)**
 - **[Roadmap Status](./roadmap-status-summary.md)**
 - **[Documentation Status](./project_docs/documentation-status.md)**
-- **[Roadmap Status](../../../roadmap-status-summary.md)**
-- **[Documentation Status](../../../project_docs/documentation-status.md)**
 
 ### Framework
 - **[Laravel Docs](https://laravel.com/docs/11.x)**
@@ -515,7 +507,6 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 ### Regole Progetto
 - **[Laraxot Rules](./.windsurf/rules/user_15338591596331277449.md)**
 - **[Code Quality](./.windsurf/rules/code-quality.md)**
-- **[Code Quality](../../../ai-agents/code-quality.md)**
 - **[Project Rules](./.windsurf/rules/project-rules.md)**
 
 ---
@@ -570,7 +561,7 @@ created: 2026-07-28
 updated: 2026-07-28
 ---
 
-# Notify Module: Quick Start
+# Notify Module — Quick Start
 
 ## Send Notification
 

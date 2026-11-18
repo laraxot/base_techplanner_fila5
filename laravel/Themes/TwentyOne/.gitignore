@@ -79,3 +79,16 @@ cache/
 *~head
 tests/AuditCoverage
 # AI/TOOL SCAFFOLD — must never exist in module tree (see docs/wiki/rules/module-theme-root-cleanup.md)
+# Strumenti locali/IDE (wiki module-theme-root-hygiene)
+.agents/
+.codex/
+.cursor/
+.opencode/
+.qwen/
+audit-coverage/
+rector.php
+phpinsights.php
+.php-cs-fixer.php
+.php-cs-fixer.dist.php
+*.lock
+.windsurf/

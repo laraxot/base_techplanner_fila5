@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "appointment field naming issues"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Appointment Field Naming Issues
@@ -23,7 +22,7 @@ The Appointment model in SaluteOra module defines both legacy field names (`star
 
 **File Path**: `/var/www/html/_bases/base_<nome progetto>/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 **File Path**: `/var/www/html/_bases/base_saluteora/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
-**File Path**: `/var/www/html/_bases/base_techplanner_fila3_mono/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
+**File Path**: `/var/www/html/_bases/base_techplanner_fila5/laravel/Modules/Notify/app/Actions/SendAppointmentNotificationAction.php.old`
 
 **Line 120**:
 ```php

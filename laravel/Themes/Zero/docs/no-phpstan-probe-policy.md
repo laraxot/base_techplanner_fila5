@@ -1,4 +1,5 @@
 ---
+qmd: "zero no phpstan probe policy md"
 description: Divieto di creare cartelle o file probe per PHPStan anche nei temi.
 ---
 

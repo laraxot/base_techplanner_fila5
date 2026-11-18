@@ -19,7 +19,7 @@ related:
 status: draft
 ---
 
-# Configurazione Corretta dei Provider SMS 
+# Configurazione Corretta dei Provider SMS
 
 ## Regola Fondamentale
 
@@ -32,7 +32,7 @@ status: draft
 return [
     // Configurazioni di base (applicate a tutti i provider)
     'from' => env('SMS_FROM', '<nome progetto>'),
-'from' => env('SMS_FROM', 'Quaeris'),
+'from' => env('SMS_FROM', '<nome progetto>'),
     'retry' => [
         'attempts' => env('SMS_RETRY_ATTEMPTS', 3),
         'delay' => env('SMS_RETRY_DELAY', 60),
@@ -42,13 +42,13 @@ return [
         'max_attempts' => env('SMS_RATE_LIMIT_MAX_ATTEMPTS', 60),
         'decay_minutes' => env('SMS_RATE_LIMIT_DECAY_MINUTES', 1),
     ],
-    
+
     // Configurazione specifiche dei provider
     'drivers' => [
         'netfun' => [
             'api_key' => env('NETFUN_API_KEY'),
             'sender' => env('NETFUN_SENDER', '<nome progetto>'),
-'sender' => env('NETFUN_SENDER', 'Quaeris'),
+'sender' => env('NETFUN_SENDER', '<nome progetto>'),
             'api_url' => env('NETFUN_API_URL', 'https://v2.smsviainternet.it/api/rest/v1/sms-batch.json'),
         ],
         'twilio' => [
@@ -78,7 +78,7 @@ public function __construct()
     if (!is_string($this->token)) {
         throw new Exception('API Key Netfun non configurata in sms.php');
     }
-    
+
     // Parametri generici a livello di root
     $this->defaultSender = config('sms.from');
     $this->timeout = config('sms.timeout', 30);
@@ -121,14 +121,14 @@ Quando configuri il file `.env`, utilizza questi nomi di variabili:
 
 # Configurazione generale SMS
 SMS_FROM=<nome progetto>
-SMS_FROM=Quaeris
+SMS_FROM=<nome progetto>
 SMS_RETRY_ATTEMPTS=3
 SMS_RETRY_DELAY=60
 
 # Netfun
 NETFUN_API_KEY=your_api_key_here
 NETFUN_SENDER=<nome progetto>
-NETFUN_SENDER=Quaeris
+NETFUN_SENDER=<nome progetto>
 NETFUN_API_URL=https://v2.smsviainternet.it/api/rest/v1/sms-batch.json
 
 # Twilio

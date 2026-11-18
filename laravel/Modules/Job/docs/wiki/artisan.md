@@ -8,8 +8,6 @@ updated: 2026-07-14
 qmd: "artisan"
 related:
   - "./phpstan-fixes-archive-2.md"
-status: superseded
-superseded_by: ../artisan.md
 ---
 https://fly.io/laravel-bytes/streaming-to-the-browser-with-livewire/
 

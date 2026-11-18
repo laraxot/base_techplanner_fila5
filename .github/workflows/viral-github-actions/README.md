@@ -1,8 +1,8 @@
-# 🚀 GitHub Actions per la Viralità del Progetto Quaeris Fila5 Mono
+# 🚀 GitHub Actions per la Viralità del Progetto <nome progetto> fila5
 
 ## 📋 Sommario delle Azioni Virali
 
-Questo documento descrive le GitHub Actions complete per promuovere il progetto Quaeris Fila5 Mono attraverso strategie di viral marketing automation.
+Questo documento descrive le GitHub Actions complete per promuovere il progetto <nome progetto> fila5 attraverso strategie di viral marketing automation.
 
 ---
 
@@ -38,18 +38,18 @@ jobs:
         with:
           type: release
           tag: ${{ github.event.release.tag_name }}
-          
+
       - name: 🐦 Tweet Announcement
         uses: ./.github/actions/twitter-post@v1
         with:
           content: generated-viral-content.md
-          hashtags: "PHP,Laravel,OpenSource,Quaeris"
-          
+          hashtags: "PHP,Laravel,OpenSource,<nome progetto>"
+
       - name: 💼 LinkedIn Professional Post
         uses: ./.github/actions/linkedin-post@v1
         with:
           content: professional-release-announcement.md
-          
+
       - name: 📱 Reddit Community Share
         uses: ./.github/actions/reddit-post@v1
         with:
@@ -72,24 +72,24 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        module: [Lang,User,Seo,Quaeris,Chart,Xot,Job,Meetup,Limesurvey,UI,Geo,Tenant,Cms,Media,Notify,Gdpr,Activity,DbForge,CloudStorage]
-        
+        module: [Lang,User,Seo,<nome progetto>,Chart,Xot,Job,Meetup,Limesurvey,UI,Geo,Tenant,Cms,Media,Notify,Gdpr,Activity,DbForge,CloudStorage]
+
     steps:
       - name: 📊 PHPStan Level 10 Check
         run: |
           cd laravel
           vendor/bin/phpstan analyse Modules/${{ matrix.module }}/ --level=10 --no-progress
-          
+
       - name: 🧪 Test Suite Execution
         run: |
           cd laravel
           php artisan test Modules/${{ matrix.module }}/tests --coverage
-          
+
       - name: 📚 Documentation Validation
         uses: ./.github/actions/validate-docs@v1
         with:
           module: ${{ matrix.module }}
-          
+
       - name: 🚨 Block on Critical Issues
         if: failure()
         run: |
@@ -115,19 +115,19 @@ jobs:
         uses: ./.github/actions/classify-content@v1
         with:
           content: ${{ github.event.issue.body || github.event.discussion.body }}
-          
+
       - name: 🤖 Generate Smart Response
         uses: ./.github/actions/smart-response@v1
         with:
           classification: ${{ steps.classify.outputs.type }}
-          context: quaeris-project
-          
+          context: <nome progetto>-project
+
       - name: 📢 Contextual Reply
         uses: ./.github/actions/contextual-reply@v1
         with:
           content: smart-response.md
           platform: github
-          
+
       - name: 🏆 Reward Quality Contributions
         uses: ./.github/actions/reward-contribution@v1
         with:
@@ -154,19 +154,19 @@ jobs:
         with:
           platforms: github,reddit,twitter,devto
           timeframe: 7d
-          
+
       - name: 📝 Generate Technical Content
         uses: ./.github/actions/generate-tech-content@v1
         with:
           topic: ${{ steps.trends.outputs.topic }}
           format: tutorial,showcase,comparison
-          
+
       - name: 🎨 Create Visual Assets
         uses: ./.github/actions/create-visuals@v1
         with:
           type: infographic,screenshot,demo
-          branding: quaeris
-          
+          branding: <nome progetto>
+
       - name: 🚀 Multi-Platform Distribution
         uses: ./.github/actions/distribute-content@v1
         with:
@@ -198,20 +198,20 @@ jobs:
         with:
           theme: Zero
           features: responsive,accessible,modern
-          
+
       - name: 📊 Performance Demo
         uses: ./.github/actions/performance-demo@v1
         with:
           theme: Zero
           metrics: lighthouse,performance
-          
+
       - name: 🎥 Create Tutorial Video
         uses: ./.github/actions/create-tutorial@v1
         with:
           topic: theme-development
           duration: 120
           format: short-form
-          
+
       - name: 📈 Update Theme Directory
         uses: ./.github/actions/update-theme-stats@v1
         with:
@@ -287,13 +287,13 @@ jobs:
         uses: ./.github/actions/collect-viral-metrics@v1
         with:
           platforms: twitter,linkedin,reddit,github
-          
+
       - name: 📋 Generate Report
         uses: ./.github/actions/generate-viral-report@v1
         with:
           metrics: collected-metrics.json
           template: executive-summary
-          
+
       - name: 📈 Update Dashboard
         uses: ./.github/actions/update-viral-dashboard@v1
         with:
@@ -318,14 +318,14 @@ gh secret set DISCORD_WEBHOOK_URL "your-discord-webhook"
 npm install -g @actions/core twitter-api-client linkedin-api-client
 
 # Setup workflow permissions
-gh api repos/quaeris/fila5-mono/actions/permissions/set \
+gh api repos/<nome progetto>/fila5-mono/actions/permissions/set \
   --add "issues:write,contents:write,pull-requests:write"
 ```
 
 ### Comandi di Setup Rapido
 ```bash
 # Clonare e installare le azioni virali
-git clone https://github.com/quaeris/fila5-mono.git
+git clone https://github.com/<nome progetto>/fila5-mono.git
 cd fila5-mono
 cp -r .github/workflows-viral/* .github/workflows/
 git add .github/workflows/
@@ -382,12 +382,12 @@ jobs:
         with:
           timeframe: 30d
           platforms: all
-          
+
       - name: 🎯 Identify Success Patterns
         uses: ./.github/actions/identify-success-patterns@v1
         with:
           data: performance-analysis.json
-          
+
       - name: 📝 Update Content Strategy
         uses: ./.github/actions/update-content-strategy@v1
         with:
@@ -419,7 +419,7 @@ jobs:
             engagement_below_2_percent: alert
             no_new_content_24h: warning
             quality_drop: critical
-          
+
       - name: 🚨 Send Alerts
         if: steps.monitor.outputs.alert_required
         uses: ./.github/actions/send-viral-alert@v1
@@ -431,4 +431,4 @@ jobs:
 
 ---
 
-**Nota:** Queste azioni sono progettate per essere **modulari e riutilizzabili**. Ogni workflow può essere eseguito indipendentemente o combinato con altri per massimizzare l'impatto virale del progetto Quaeris Fila5 Mono.
+**Nota:** Queste azioni sono progettate per essere **modulari e riutilizzabili**. Ogni workflow può essere eseguito indipendentemente o combinato con altri per massimizzare l'impatto virale del progetto <nome progetto> fila5.

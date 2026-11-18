@@ -1,11 +1,10 @@
 ---
 title: "Fix: Activity TestCase - Database Connection Configuration"
+qmd: "activity testing testcase database connection fix md"
 type: note
-status: draft
-updated: 2026-10-07
-tags: [docs, activity]
-qmd: "fix: activity testcase - database connection configuration activity"
+tags: [documentation]
 ---
+
 # Fix: Activity TestCase - Database Connection Configuration
 
 **Problema**: Test Activity falliscono con "Database connection [activity] not configured"

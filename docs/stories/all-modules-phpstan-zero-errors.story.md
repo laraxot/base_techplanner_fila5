@@ -1,10 +1,10 @@
 ---
 title: "[STORY] Full PHPStan pass on all Modules"
 type: story
-status: done
+status: in-progress
 priority: high
 created: 2026-06-06
-updated: 2026-10-30
+updated: 2026-11-17
 tags: [phpstan, quality, enum, bmad, swarm]
 ---
 # Story: Full PHPStan pass on all Modules
@@ -82,3 +82,98 @@ Restano, con il motivo:
 
 Dependencies: gdpr-sync-phpstan-complete, activity-constant-type-coverage-fix, cms-merge-conflict-resolution
 Owner: AI Agent (BMAD sprint)
+
+
+## Riverifica 2026-11-17 (sessione corrente)
+
+### Bootstrap bloccante risolto
+1. `vendor/bin/phpstan` assente → `composer update larastan/larastan phpstan/phpstan`
+2. Fatal `RelationX` import `HasMany` duplicato → un solo use
+3. Fatal override `final XotBaseResource::getFormSchema()` su Blog/Rating → rimosso dalle Resource; Form/Infolist instance methods
+4. `UserForm` abstract `getFormSchema` mancante → implementato `return []` (schema nei metodi FO specializzati)
+5. Parse `use Tests\TestCase` duplicato con `Modules\User\Tests\TestCase` → rimosso root import
+6. **Causa gonfiaggio:** `vendor/phpstan/extension-installer/src/GeneratedConfig.php` era STUB (`EXTENSIONS=[]`) → larastan/pest-plugin non caricati. Fix: `composer reinstall phpstan/extension-installer` (NON toccare `phpstan.neon`)
+
+### Baseline pre-reinstall extensions
+`analyse Modules` → **13066** file_errors (gonfiato). Inventario `/tmp/phpstan-wave/*.tsv`.
+
+### Swarm attivo
+Lane parallele su AI, Seo+Comment, Rating+Lang, UI+Gdpr (scope disgiunti). Remisurare dopo GeneratedConfig.
+
+### Debito worktree
+~21k path in stato merge (UU/UD) nel repo root: **non** risolvere in massa in questa lane; PHP Modules senza marker `<<<<<<<`.
+
+
+### Misura post-Larastan (stesso giorno)
+
+Dopo `composer reinstall phpstan/extension-installer`: **593** file_errors (da 13066 gonfiati).
+
+| Modulo | Errori |
+|--------|-------:|
+| Blog | 224 |
+| Notify | 106 |
+| TechPlanner | 76 |
+| Comment | 55 |
+| Employee | 52 |
+| Rating | 33 |
+| User | 25 |
+| Xot | 16 |
+| AI | ~0–4 (in chiusura) |
+| Job / Tenant | ~0–1 |
+
+Dominanti reali: `missingType.iterableValue` (204), `missingType.generics` (123), `argument.templateType` (47), `method.notFound` (42).
+
+Inventario lane: `/tmp/phpstan-wave/*.tsv` + `SUMMARY.tsv`.
+
+Swarm parallelo in corso: Blog; Notify+TechPlanner; Comment+Employee; (Rating/Lang/UI/Gdpr/Seo lane precedenti da remisurare sul baseline reale).
+
+
+
+## Sessione 2026-11-17 pomeriggio
+
+### Chiusi a 0 in questa sessione
+AI, Job, UI, Gdpr, Seo, Comment.
+
+### Bootstrap fix (gate prima dei tipi)
+- `RelationX`: use `HasMany` duplicato → un solo import
+- FormSchema: override su `final` / metodi instance (Blog/Rating e simili)
+- `UserForm` abstract: `getFormSchema` mancante → implementato
+- User `TestCase`: import duplicati → ripuliti
+- `GeneratedConfig` stub (`EXTENSIONS=[]`) → `composer reinstall phpstan/extension-installer` (EXT=9; Larastan + pest-plugin caricati). **Non** toccare `phpstan.neon`.
+
+### Baseline gonfiata vs reale
+Senza Larastan/extension-installer: **13066** file_errors (artefatto). Post-reinstall: **~593**, poi ulteriori riduzioni sulle lane chiuse sopra.
+
+### Saturazione host
+Non lanciare `analyse Modules` se `pgrep` phpstan **> 6**. Preferire docs/fix già diagnosticati o attendere. (Caso visto: >>6 fino a ~49 → SIGTERM/JSON vuoto.)
+
+### Focus residuo (ultimo noto; rimisurare a host libero)
+Blog, Notify, TechPlanner, Employee, Rating, User, Xot.
+
+### Igiene root
+Tutti i moduli/temi hanno i file obbligatori + `_module_*_fila5.code-workspace` (e `_theme_*_fila5` dove applicabile). Gate `audit-module-theme-root-files` → **PASS**. Concetto: [module-theme-root-hygiene](../../laravel/Modules/Xot/docs/wiki/concepts/module-theme-root-hygiene.md).
+
+### Prompt superseded → canonici
+| Legacy / alias | Canonico |
+|----------------|----------|
+| `phpstan-module*` | [11-phpstan](../../bashscripts/docs/prompts/11-phpstan.md) |
+| `start-optimized` | [00-start](../../bashscripts/docs/prompts/00-start.md) |
+| `llm-wiki*` / `docs*` | [57-second-brain](../../bashscripts/docs/prompts/57-second-brain.md) |
+
+## Sessione ripresa (handoff → continuo)
+
+Host spesso saturo (`pgrep phpstan` >> 6): **non** rilanciare `analyse Modules` finché ≤6. Lavoro da baseline593 + fix purpose-first.
+
+### Fix applicati in questa ripresa
+- **User** `lang/it/recent_logins.php`: chiavi `label` duplicate (IT umano sovrascritto dalla chiave) → tenuta sola label utente
+- **User** `Team/Change`: `list<array<…>>` su `$teams` + `view-string` su render (cambio team Livewire)
+- **User** `Passwords/Reset`: rimosso `@phpstan-ignore`; `Assert::string` su status + `trans()`
+- **User** `CreateUserTest`: allineato a `TestCase::$createUserPage` / `requireCreateUserPage()` + `Assert` (prima `$this->page` mistyped → `method.nonObject`)
+- **Rating** `HasRating::ratings()`: MorphToMany a 4 template params con `RatingMorph` (allineato al contratto)
+- **Xot** `FeatureFlagsTest`: `expect()` → `Assert::*` (evita `argument.templateType` Pest)
+- **Xot** `AppMiddlewareTest`: narrow `hosts()` a `list<string>` prima di `assertCount`
+
+### Docs / swarm
+- Lane Employee + consolidamento docs Rating/User in background
+- User/docs: enorme ridondanza `phpstan*.md` (100+ file) — consolidare su story canonica `phpstan-zero-errors-user.story.md`, non creare altri file
+- Rating: canonico [phpstan-fixes.md](../../laravel/Modules/Rating/docs/phpstan-fixes.md) + [morphtomany troubleshooting](../../laravel/Modules/Rating/docs/wiki/troubleshooting/phpstan-generic-limitation-morphtomany.md)

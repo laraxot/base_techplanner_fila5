@@ -1,3 +1,10 @@
+---
+title: "Riepilogo Risoluzione Conflitti Git - Filament 4"
+qmd: "zero conflict resolution summary md"
+type: note
+tags: [documentation]
+---
+
 # Riepilogo Risoluzione Conflitti Git - Filament 4
 
 ## Obiettivo Completato ✅

@@ -10,7 +10,6 @@ title: Customizing Your Site
 description: Customizing your Jigsaw docs site
 extends: _layouts.documentation
 section: content
-status: draft
 ---
 # Customizing Your Site {#customizing}
 
@@ -88,9 +87,9 @@ class Foo extends bar
 </div>
 
 ## Collegamenti tra versioni di customizing-your-site.md
-* [customizing-your-site.md](laravel/modules/gdpr/docs/customizing-your-site.md)
-* [customizing-your-site.md](laravel/modules/xot/docs/customizing-your-site.md)
-* [customizing-your-site.md](laravel/modules/ui/docs/customizing-your-site.md)
-* [customizing-your-site.md](laravel/modules/tenant/docs/it/customizing-your-site.md)
-* [customizing-your-site.md](laravel/modules/cms/docs/customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
+* [customizing-your-site.md](customizing-your-site.md)
 

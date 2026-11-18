@@ -1,19 +1,8 @@
----
-title: "phpstan corrections"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "phpstan corrections"
-issues: []
-discussions: []
-status: draft
----
-
 # PHPStan Corrections - Modulo Notify
 
 ## Status: ✅ COMPLETATO (0 errori)
 
+## Data: 2025-01-22
 ## Data: [DATE]
 
 ## Progresso
@@ -114,16 +103,16 @@ Problema: Accesso a offset annidati su mixed.
 ```php
 // ❌ PRIMA
 return [
-    'message_id' => isset($responseData['result']['message_id']) 
-        ? (int) $responseData['result']['message_id'] 
+    'message_id' => isset($responseData['result']['message_id'])
+        ? (int) $responseData['result']['message_id']
         : null,
 ];
 
 // ✅ DOPO
 $messageId = null;
 if (isset($responseData['result']) && is_array($responseData['result']) && isset($responseData['result']['message_id'])) {
-    $messageId = is_int($responseData['result']['message_id']) 
-        ? $responseData['result']['message_id'] 
+    $messageId = is_int($responseData['result']['message_id'])
+        ? $responseData['result']['message_id']
         : (int) $responseData['result']['message_id'];
 }
 
@@ -235,8 +224,8 @@ Problema: Check ridondanti per tipo già noto.
 // ❌ PRIMA
 $searchableResult = ContactTypeEnum::getSearchable();
 /** @var array<string>|bool|string $searchable */
-$searchable = is_array($searchableResult) || is_bool($searchableResult) || is_string($searchableResult) 
-    ? $searchableResult 
+$searchable = is_array($searchableResult) || is_bool($searchableResult) || is_string($searchableResult)
+    ? $searchableResult
     : false;
 
 // ✅ DOPO
@@ -346,7 +335,8 @@ Sistema di notifiche multi-canale (email, SMS, database, Telegram, WhatsApp) con
 **Filosofia applicata**: "Notification reliability starts with type safety."
 
 ---
+
 **Status**: ✅ COMPLETATO
-**Data completamento**: [DATE]
+**Data completamento**: 2025-01-22
 **Files corretti**: 13
 **Confidenza**: MASSIMA 🚀

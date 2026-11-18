@@ -63,8 +63,8 @@ _No entities tracked yet._
 
 ## Comparisons
 
-- [f1-world-champion-2026-theme-analysis](./comparisons/f1-world-champion-2026-theme-analysis.md) — F1 World Champion 2026 theme integration analysis
-- [f1-world-champion-theme-analysis](./comparisons/f1-world-champion-theme-analysis.md) — F1 World Champion theme integration analysis
+- [f1-world-champion-theme-analysis](./comparisons/f1-world-champion-theme-analysis.md) — F1 World Champion theme integration analysis (canonico)
+- [f1-world-champion-2026-theme-analysis](./comparisons/f1-world-champion-2026-theme-analysis.md) — stub `superseded` (nome datato) → canonico sopra
 
 ## Rules
 

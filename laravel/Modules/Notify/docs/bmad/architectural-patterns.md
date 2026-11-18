@@ -21,7 +21,7 @@ status: draft
 
 # Pattern Architetturali per le Notifiche
 
-Questo documento analizza i pattern architetturali utilizzati nel sistema di notifiche di Quaeris, con particolare attenzione alla selezione del driver e alla gestione delle dipendenze.
+Questo documento analizza i pattern architetturali utilizzati nel sistema di notifiche di <nome progetto>, con particolare attenzione alla selezione del driver e alla gestione delle dipendenze.
 
 ## Confronto tra Pattern Architetturali
 
@@ -49,7 +49,7 @@ $action = match ($driver) {
 public function getAction(): SmsActionInterface
 {
     $driver = Config::get('sms.default', 'smsfactor');
-    
+
     return match ($driver) {
         'smsfactor' => app(SendSmsFactorSMSAction::class),
         'twilio' => app(SendTwilioSMSAction::class),
@@ -108,7 +108,7 @@ class SmsActionFactory
     public function create(?string $driver = null): SmsActionInterface
     {
         $driver = $driver ?? Config::get('sms.default', 'smsfactor');
-        
+
         return match ($driver) {
             'smsfactor' => app(SendSmsFactorSMSAction::class),
             'twilio' => app(SendTwilioSMSAction::class),

@@ -14,7 +14,17 @@ use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 class CoordinatesWidget extends XotBaseWidget
 {
-    protected string $view = 'techplanner::filament.widgets.coordinates-widget';
+    /** @var view-string */
+    protected string $view;
+
+    public function __construct()
+    {
+        /** @var view-string $view */
+        $view = 'techplanner::filament.widgets.coordinates-widget';
+        $this->view = $view;
+
+        parent::__construct();
+    }
 
     public string|float|null $latitude = '0';
 

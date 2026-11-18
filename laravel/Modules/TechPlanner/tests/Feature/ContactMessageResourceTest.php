@@ -19,8 +19,17 @@ uses(TestCase::class);
 
 function tpContactUser(string $role): UserContract
 {
+    /** @var UserContract&Mockery\MockInterface $user */
     $user = Mockery::mock(UserContract::class);
-    $user->shouldReceive('hasRole')->andReturnUsing(static fn (string|array $wanted): bool => in_array($role, (array) $wanted, true));
+    $user->shouldReceive('hasRole')->andReturnUsing(
+        static function (string|array $wanted) use ($role): bool {
+            $wantedRoles = is_array($wanted)
+                ? array_values(array_map(static fn (mixed $value): string => is_scalar($value) ? (string) $value : '', $wanted))
+                : [$wanted];
+
+            return in_array($role, $wantedRoles, true);
+        },
+    );
 
     return $user;
 }

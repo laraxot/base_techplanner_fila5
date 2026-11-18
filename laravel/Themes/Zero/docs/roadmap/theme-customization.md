@@ -1,3 +1,10 @@
+---
+title: "Personalizzazione tema e varianti"
+qmd: "zero roadmap theme customization md"
+type: note
+tags: [documentation]
+---
+
 # Personalizzazione tema e varianti
 
 ## Obiettivo

@@ -1,3 +1,5 @@
 # Changelog
 
-Tutte le variazioni importanti di Zero saranno generate automaticamente da semantic-release.
+All notable changes to this project will be documented in this file.
+
+## [Unreleased]

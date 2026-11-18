@@ -1,3 +1,10 @@
+---
+title: "Metodi duplicati — Zero"
+qmd: "zero duplicate methods md"
+type: note
+tags: [documentation]
+---
+
 # Metodi duplicati — Zero
 
 Analisi sintetica dei metodi PHP con lo stesso nome all’interno di questo ambito.

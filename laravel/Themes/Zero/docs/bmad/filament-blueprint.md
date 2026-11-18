@@ -52,8 +52,8 @@ inline.
 
 Ogni query passa dal modulo owner e rispetta tenant e policy del modello. Zero non
 crea elenchi cross-tenant ne' scorciatoie per comodita' admin. Survey,
-autorizzazione e dati Pulse sono del modulo Quaeris: contratto in
-[Quaeris docs](../../../../Modules/Quaeris/docs/bmad/README.md).
+autorizzazione e dati Pulse sono del modulo <nome progetto>: contratto in
+[<nome progetto> docs](../../../../Modules/<nome progetto>/docs/bmad/README.md).
 
 ## Gate PHPStan
 

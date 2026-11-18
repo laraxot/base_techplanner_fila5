@@ -10,7 +10,6 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./index.md"
   - "./master-index.md"
-status: draft
 ---
 
 # Report Aggiornamento Documentazione Design Comuni FAQ
@@ -136,7 +135,7 @@ docs/design-comuni/master-index.md
 ├─→ laravel/Themes/Sixteen/docs/design-comuni/
 │   ├─→ 00-index.md
 │   ├─→ DOMANDE_FREQUENTI_HTML_analysis.md
-│   ├─→ domande-frequenti-implementazione.md
+│   ├─→ DOMANDE_FREQUENTI_IMPLEMENTAZIONE.md
 │   ├─→ DOMANDE_FREQUENTI_analisi-visiva.md
 │   ├─→ DOMANDE_FREQUENTI_report-finale.md
 │   └─→ screenshots/ (146 files)
@@ -165,7 +164,7 @@ docs/design-comuni/master-index.md
 | design-comuni-faq.md | 8 | 2 | 10 |
 | design-comuni-faq-components.md | 8 | 2 | 10 |
 | DOMANDE_FREQUENTI_HTML_analysis.md | 2 | 2 | 4 |
-| domande-frequenti-implementazione.md | 2 | 2 | 4 |
+| DOMANDE_FREQUENTI_IMPLEMENTAZIONE.md | 2 | 2 | 4 |
 | DOMANDE_FREQUENTI_analisi-visiva.md | 2 | 2 | 4 |
 | DOMANDE_FREQUENTI_report-finale.md | 2 | 2 | 4 |
 | DESIGN_COMUNI_SCREENSHOT_SCRIPT.md | 2 | 2 | 4 |
@@ -232,7 +231,6 @@ docs/design-comuni/master-index.md
 ### Per Sviluppatori
 
 1. **Iniziare**: [Master Index](../master-index.md)
-1. **Iniziare**: [Master Index](master-index.md)
 2. **Architettura**: [Cms FAQ Architecture](../laravel/Modules/Cms/docs/design-comuni-faq.md)
 3. **Componenti**: [UI FAQ Components](../laravel/Modules/UI/docs/design-comuni-faq-components.md)
 4. **Analisi**: [Sixteen HTML Analysis](../laravel/Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_HTML_analysis.md)
@@ -248,7 +246,6 @@ docs/design-comuni/master-index.md
 ### Per Project Managers
 
 1. **Stato**: [Master Index](../master-index.md) (sezione Stato Globale)
-1. **Stato**: [Master Index](master-index.md) (sezione Stato Globale)
 2. **Dettaglio**: [Report Finale FAQ](../laravel/Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_report-finale.md)
 3. **Visivo**: [Analisi Visiva](../laravel/Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_analisi-visiva.md)
 
@@ -303,7 +300,6 @@ docs/design-comuni/master-index.md
 ## 📞 Riferimenti
 
 - **Master Index**: [docs/design-comuni/master-index.md](../master-index.md)
-- **Master Index**: [docs/design-comuni/master-index.md](master-index.md)
 - **Tema Sixteen**: [laravel/Themes/Sixteen/docs/design-comuni/](../laravel/Themes/Sixteen/docs/design-comuni/)
 - **Modulo Cms**: [laravel/Modules/Cms/docs/](../laravel/Modules/Cms/docs/)
 - **Modulo UI**: [laravel/Modules/UI/docs/](../laravel/Modules/UI/docs/)

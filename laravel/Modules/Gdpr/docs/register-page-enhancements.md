@@ -7,7 +7,6 @@ updated: 2026-09-26
 qmd: "register page enhancements"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Register Page Enhancements: Super Clickbait Strategy
