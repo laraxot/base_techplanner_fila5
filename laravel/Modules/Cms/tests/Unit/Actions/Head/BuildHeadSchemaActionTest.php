@@ -145,7 +145,9 @@ test('business data turn the home organization into a local business', function 
     Assert::assertSame('Example', $organization['name']);
     Assert::assertSame('https://example.test/#organization', $organization['@id']);
     Assert::assertSame('+39 041 000000', $organization['telephone']);
-    Assert::assertSame('Mogliano Veneto', $organization['address']['addressLocality'] ?? null);
+    $address = $organization['address'] ?? null;
+    Assert::assertIsArray($address);
+    Assert::assertSame('Mogliano Veneto', $address['addressLocality'] ?? null);
     Assert::assertSame('https://example.test/logo.svg', $organization['image']);
     // I valori vuoti non entrano: il validatore di laravel/head li rifiuta.
     Assert::assertArrayNotHasKey('email', $organization);

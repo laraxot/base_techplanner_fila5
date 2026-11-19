@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\File;
 use Modules\Seo\Actions\Robots\BuildRobotsTxtAction;
 use Modules\Seo\Tests\TestCase;
@@ -15,7 +16,7 @@ uses(TestCase::class);
 it('writes the same robots.txt the route serves', function (): void {
     $path = sys_get_temp_dir().'/robots-'.uniqid().'.txt';
 
-    $this->artisan('seo:robots', ['--path' => $path])->assertSuccessful();
+    expect(Artisan::call('seo:robots', ['--path' => $path]))->toBe(0);
 
     expect(File::get($path))
         ->toBe(app(BuildRobotsTxtAction::class)->execute())
@@ -28,7 +29,7 @@ it('writes the same robots.txt the route serves', function (): void {
 it('only prints the content with --dry-run', function (): void {
     $path = sys_get_temp_dir().'/robots-'.uniqid().'.txt';
 
-    $this->artisan('seo:robots', ['--path' => $path, '--dry-run' => true])->assertSuccessful();
+    expect(Artisan::call('seo:robots', ['--path' => $path, '--dry-run' => true]))->toBe(0);
 
     expect(File::exists($path))->toBeFalse();
 });
