@@ -210,8 +210,8 @@ Il sito target usa Tailwind CSS v4, che deve essere configurato in:
 ### Asset Management
 Con Vite:
 - Source: `laravel/Themes/Two/resources/`
-- Output: `public_html/themes/Two/assets/`
-- Comandi: `npm run build`, `npm run copy`
+- Output: `laravel/Themes/Two/public/` (servito dal symlink `public_html/themes/Two`)
+- Comandi: `npm run build`
 
 ## Checklist Implementazione
 

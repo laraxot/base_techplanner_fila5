@@ -100,7 +100,7 @@ Questo tema non e solo codice: e una vetrina operativa. Mostra dove intervenire,
 - [Accessor Delegation Pattern](./docs/accessor-delegation-pattern.md)
 - [Ai Development Guide](./docs/ai-development-guide.md)
 - [Ai Handoff](./docs/ai-handoff.md)
-- [Analisi Completa Tema](./docs/analisi-completa-tema.md)
+- [Analisi Completa Tema](./docs/comprehensive-theme-analysis.md)
 
 ## Scopo e confini
 

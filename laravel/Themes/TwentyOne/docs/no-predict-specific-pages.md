@@ -248,7 +248,7 @@ Themes/TwentyOne/resources/views/pages/[container0]/index.blade.php
 ### Documentazione
 - `docs/project/ARCHITECTURE_ZEN.md` - Architettura base
 - `docs/project/CONTAINER_BLADE_CORRECT_ARCHITECTURE.md` - Container blade
-- `Modules/Predict/docs/NO_PREDICT_SPECIFIC_PAGES_IN_THEME.md` - Predict docs
+- `Modules/Predict/docs/no-predict-specific-pages-in-theme.md` - Predict docs
 - `Modules/Predict/docs/GENERIC_PAGE_ARCHITECTURE.md` - Generic pages
 
 ### GitHub

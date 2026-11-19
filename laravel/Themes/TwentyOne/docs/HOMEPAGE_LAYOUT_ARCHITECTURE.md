@@ -258,7 +258,7 @@ curl http://predict.local/it
 ### Related Docs
 
 - `docs/HOMEPAGE_LAYOUT_ARCHITECTURE.md` - This file
-- `docs/KINETIC_WEB_DESIGN_SPEC.md` - Kinetic design specs
+- `docs/kinetic-web-design-spec.md` - Kinetic design specs
 - `docs/CSS_ARCHITECTURE_PHILOSOPHY.md` - CSS separation
 - `docs/JS_ARCHITECTURE_PHILOSOPHY.md` - JS separation
 

@@ -336,7 +336,7 @@ const applyTheme = (theme) => {
 
 ### Interni
 - `Themes/TwentyOne/docs/THEME_PHILOSOPHY_ZEN.md` - Filosofia del tema
-- `Themes/TwentyOne/docs/THEME_ARCHITECTURE_ZEN_BLADE_NAMING.md` - Naming convention
+- `Themes/TwentyOne/docs/theme-architecture-zen-blade-naming.md` - Naming convention
 - `Modules/Predict/docs/ARCHITECTURE_PHILOSOPHY_ZEN.md` - Filosofia del modulo
 - `docs/project/CMS_JSON_ARCHITECTURE.md` - Pattern CMS JSON
 

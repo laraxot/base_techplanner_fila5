@@ -170,7 +170,7 @@ x-transition:enter-end="opacity-100 translate-y-0"
 2. ⏳ 更新Hero section以匹配目标网站
 3. ⏳ 确保所有锚点链接正确工作
 4. ⏳ 测试移动端响应式
-5. ⏳ 构建Vite资源 (`npm run build && npm run copy`)
+5. ⏳ 构建Vite资源 (`npm run build`)
 6. ⏳ 测试所有页面
 
 ## 文件位置 (File Locations)

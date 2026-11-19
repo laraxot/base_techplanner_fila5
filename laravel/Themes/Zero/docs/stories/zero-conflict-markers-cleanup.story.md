@@ -26,7 +26,7 @@ owned_scope:
   - "laravel/Themes/Zero/docs/model-usage-in-themes.md"
   - "laravel/Themes/Zero/docs/outputs/README.md"
   - "laravel/Themes/Zero/docs/phpstan-dry-kiss-guidelines.md"
-  - "laravel/Themes/Zero/docs/phpstan-dry-kiss-theme-guidelines-historic.md"
+  - "laravel/Themes/Zero/docs/phpstan-dry-kiss-guidelines.md"
   - "laravel/Themes/Zero/docs/phpstan-dry-kiss-theme-guidelines.md"
   - "laravel/Themes/Zero/docs/raw/README.md"
   - "laravel/Themes/Zero/docs/skills/README.md"
@@ -65,7 +65,7 @@ esistenza dei link prima di scegliere un lato):
   `feedback-locks-are-advisory-only`). Versione finale in HEAD (commit
   `00d112d`/`2159831`) verificata riga per riga: i link a `docs/CONFLICT_RESOLUTION_SUMMARY.md`,
   `docs/accessor-delegation-pattern.md`, `docs/ai-development-guide.md`,
-  `docs/analisi-completa-tema.md`, `docs/code-redundancy-audit.md`,
+  `docs/comprehensive-theme-analysis.md`, `docs/code-redundancy-audit.md`,
   `docs/agent-confidence-protocol.md`, `docs/agent-edit-discipline.md` esistono
   tutti. **Difetto residuo non mio**: la sezione "Release automation" referenzia
   `.github/workflows/semantic-release.yml` e `changelog.md`, **entrambi
@@ -83,7 +83,7 @@ confermati da questo fork via `git grep`, contenuto non riletto riga per riga
 in dettaglio): `docs/ai-handoff.md`, `docs/graphify/README.md`,
 `docs/headroom/README.md`, `docs/model-usage-in-themes.md`,
 `docs/phpstan-dry-kiss-guidelines.md`,
-`docs/phpstan-dry-kiss-theme-guidelines-historic.md`,
+`docs/phpstan-dry-kiss-guidelines.md`,
 `docs/phpstan-dry-kiss-theme-guidelines.md`, `docs/raw/README.md`,
 `docs/skills/README.md`. Spot-check di coda/lunghezza file su
 `graphify/README.md`, `skills/README.md`, `model-usage-in-themes.md`: contenuto

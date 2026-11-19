@@ -11,7 +11,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Themes\\Two\\ThemeServiceProvider"
+                "Themes\\Two\\Providers\\ThemeServiceProvider"
             ]
         }
     },

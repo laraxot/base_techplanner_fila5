@@ -398,7 +398,7 @@ export function initSectionAnimations() {
 - `docs/project/GSAP_V3_COMPLETE_GUIDE.md`
 - `docs/project/GSAP_SCROLLTRIGGER_ADVANCED.md`
 - `docs/project/GSAP_PERFORMANCE_ACCESSIBILITY.md`
-- `Modules/Predict/docs/GSAP_ANIMATIONS_GUIDE.md`
+- `Modules/Predict/docs/gsap-animations-guide.md`
 
 ---
 

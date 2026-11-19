@@ -124,7 +124,7 @@ $files = $this->directory->getFiles('*.blade.php');
 ## 🔗 Riferimenti
 
 - `docs/project/ARCHITECTURE_ZEN.md` - Architettura base
-- `NO_PREDICT_SPECIFIC_PAGES.md` - Regola pagine specifiche
+- `no-predict-specific-pages.md` - Regola pagine specifiche
 - `THEME_PHILOSOPHY_ZEN.md` - Filosofia theme
 
 ---

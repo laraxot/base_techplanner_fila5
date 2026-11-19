@@ -30,7 +30,7 @@ To improve the UI/UX and beauty of Theme Two, the following MCP servers are reco
 ## Workflow
 1. **Research**: Use `daisyUI` or `Flowbite` MCPs to explore component patterns.
 2. **Implement**: Apply components using Tailwind v4 utilities.
-3. **Verify**: Run `npm run build && npm run copy` within `laravel/Themes/Two` to see changes.
+3. **Verify**: Run `npm run build` within `laravel/Themes/Two` to see changes.
 
 ## Related Documentation
 - [README.md](README.md)

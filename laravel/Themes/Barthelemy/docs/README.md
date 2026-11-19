@@ -8,5 +8,5 @@ Indice minimale di `docs/` (il tema e' uno stub senza codice).
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md): pattern on-demand
 - [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md): ottimizzazione prestazioni
 - [QMD-SETUP.md](QMD-SETUP.md): setup QMD
-- [REDUNDANCY_ANALYSIS.md](REDUNDANCY_ANALYSIS.md), [redundancy-audit-2026-05-21.md](redundancy-audit-2026-05-21.md): analisi ridondanze
+- [REDUNDANCY_ANALYSIS.md](REDUNDANCY_ANALYSIS.md), [redundancy-audit.md](redundancy-audit.md): analisi ridondanze
 - [codex-error-fix.md](codex-error-fix.md): fix errore Codex

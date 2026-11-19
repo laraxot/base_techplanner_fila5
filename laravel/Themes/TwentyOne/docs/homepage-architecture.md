@@ -257,7 +257,7 @@ Dallo studio di **27 fonti specializzate**, implementiamo:
 ### Documentazione Modulo
 
 - `Modules/Predict/docs/WEB_DESIGN_STUDY.md` — Studio web design applicato
-- `Modules/Predict/docs/GSD_WORKFLOW.md` — Workflow GSD
+- `Modules/Predict/docs/gsd-workflow.md` — Workflow GSD
 - `Modules/Predict/docs/GENERIC_PAGE_ARCHITECTURE.md` — Architettura pagine
 
 ### Documentazione Tema

@@ -38,8 +38,8 @@ Themes/TwentyOne/resources/views/pages/[container0]/[slug0]/index.blade.php  ←
 ## 📚 DOCUMENTAZIONE COMPLETA
 
 Per la filosofia completa e gli esempi, vedi:
-- `docs/project/NO_PREDICT_SPECIFIC_PAGES_IN_THEME.md` - Documentazione estesa
-- `Modules/Predict/docs/NO_PREDICT_SPECIFIC_PAGES_IN_THEME.md` - Vista dal modulo
+- `docs/project/no-predict-specific-pages-in-theme.md` - Documentazione estesa
+- `Modules/Predict/docs/no-predict-specific-pages-in-theme.md` - Vista dal modulo
 
 ---
 

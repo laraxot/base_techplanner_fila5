@@ -383,7 +383,7 @@ Il banner cookie è implementato in `main.blade.php`:
 - `docs/project/CSS_ARCHITECTURE_PHILOSOPHY.md` - CSS separation
 - `docs/project/VOLT_CLASS_BASED_COMPONENTS.md` - Volt components
 - `docs/project/FILAMENT_WIDGETS_FOR_LISTS_RULE.md` - Filament widgets
-- `docs/project/KINETIC_WEB_DESIGN_SPEC.md` - Kinetic animations
+- `docs/project/kinetic-web-design-spec.md` - Kinetic animations
 
 ---
 

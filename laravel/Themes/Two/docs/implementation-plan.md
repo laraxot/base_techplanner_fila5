@@ -353,7 +353,6 @@ npm run dev
 ```bash
 cd laravel/Themes/Two
 npm run build
-npm run copy
 ```
 
 ### 8.3 Cache Clear
@@ -448,7 +447,6 @@ php artisan config:clear
 
 ### Build
 - [ ] npm run build
-- [ ] npm run copy
 - [ ] Clear cache
 - [ ] Testare sito locale
 

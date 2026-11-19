@@ -26,7 +26,7 @@ Themes/TwentyOne/
 │       └── components/
 │           └── filament-widgets.css  ← Widget styling
 └── docs/
-    └── GSAP_SCROLLTRIGGER_CONFIGURATION.md
+    └── gsap-scrolltrigger-configuration.md
 ```
 
 ---

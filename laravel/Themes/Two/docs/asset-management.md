@@ -44,7 +44,7 @@ The `laravel/Themes/Two/vite.config.js` file configures Vite for asset compilati
 **Key Configuration:**
 
 *   `input`: Defines the entry points for Vite (e.g., `resources/css/app.css`, `resources/js/app.js`).
-*   `outDir`: `../../../public/themes/Two` (public tree del repo). Il tema viene servito via symlink `public_html/themes/Two -> laravel/Themes/Two/public`; `sync-public` copia l'outDir attraverso il symlink nel theme public. Vedi `docs/wiki/concepts/public-asset-deployment.md`.
+*   `outDir`: `./public` (con `publicDir: false`). Il tema viene servito via symlink `public_html/themes/Two -> laravel/Themes/Two/public`; nessuna copia. Vedi `docs/wiki/concepts/public-asset-deployment.md`.
 *   `emptyOutDir: false`: Prevents Vite from clearing the `outDir` during each build, allowing for external asset copying.
 *   `tailwindcss()`: Enables Tailwind CSS processing.
 
@@ -119,21 +119,15 @@ To compile and deploy assets for `Theme Two`, navigate to `laravel/Themes/Two/` 
     npm run build
     ```
 
-2.  **`npm run copy`**: Copies the built assets from `laravel/Themes/Two/public/` to the final public web root `../../../public_html/themes/Two/dist/`. This step is crucial for the application to find the `manifest.json` and other assets.
-
-    ```bash
-    cd laravel/Themes/Two/
-    npm run copy
-    ```
-    *Note: The `npm run copy` script is defined in `laravel/Themes/Two/package.json` and performs the `mkdir -p ../../../public_html/themes/Two/dist && cp -rv ../../../public_html/themes/Two/build/* ../../../public_html/themes/Two/dist/` operation. This copies the files from the temporary build directory to the final serving directory.*
+2.  Non serve altro: `npm run copy` non esiste più. Nessuna copia: `npm run build` scrive in `laravel/Themes/Two/public/` (anche `images/`, via `prepare-public`), servito dal symlink `public_html/themes/Two` (vedi [public-asset-deployment](./wiki/concepts/public-asset-deployment.md)).
 
 ## 8. Troubleshooting "Vite manifest not found"
 
 If you encounter a "Vite manifest not found" error, ensure that:
 
-*   You have run both `npm run build` AND `npm run copy` from `laravel/Themes/Two/`.
+*   You have run `npm run build` from `laravel/Themes/Two/` (`public/manifest.json` deve esistere).
 *   The `outDir` in `vite.config.js` is set to `'./public'` and `emptyOutDir` is `false`.
-*   The `npm run copy` script correctly moves the assets to `../../../public_html/themes/Two/dist/`.
+*   Il symlink `public_html/themes/Two` punta a `../../laravel/Themes/Two/public`.
 *   The `APP_URL` in `laravel/.env` is correctly configured to match your local development domain (e.g., `http://techplanner.local`).
 
 ## 9. Content Management (`home.json`)

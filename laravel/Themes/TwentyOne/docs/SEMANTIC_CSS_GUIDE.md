@@ -288,7 +288,7 @@ Themes/TwentyOne/
 ### Internal
 - [THEME_PHILOSOPHY_ZEN.md](./THEME_PHILOSOPHY_ZEN.md) - Ruolo del tema
 - [PREDICT_DETAIL_AGNOSTIC_CONTRACT.md](./PREDICT_DETAIL_AGNOSTIC_CONTRACT.md) - Contratto detail
-- [NO_PREDICT_SPECIFIC_PAGES_IN_THEME.md](./NO_PREDICT_SPECIFIC_PAGES_IN_THEME.md) - Divieto pagine modulo-specific
+- [no-predict-specific-pages-in-theme.md](./no-predict-specific-pages-in-theme.md) - Divieto pagine modulo-specific
 
 ### External
 - [Semantic CSS Principles](../../../Modules/Predict/docs/SEMANTIC_CSS_PRINCIPLES.md)

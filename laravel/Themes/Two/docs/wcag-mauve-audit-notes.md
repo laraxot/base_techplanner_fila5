@@ -48,7 +48,7 @@ Riferimento: report PageSpeed (mobile) su https://sottana.net/it.
 
 ### Best practice – errori console
 - **ReferenceError $isActive**: nel menu mobile (header v1) non viene usato alcun `:class` Alpine; le classi attivo/non attivo sono solo server-side (`class="{{ $isActive ? '...' : '...' }}"`). Dopo il deploy l’errore scompare.
-- **404 immagini**: path hero e servizi/sectors aggiornati da `/themes/Two/resources/images/` e `/themes/Two/Main_files/images/` a `/themes/Two/images/`. Hero about usa `asset('themes/Two/images/hero-bg.jpg')` come default. I blocchi services/grid, content/split e sectors/split normalizzano gli URL che iniziano con `/themes/Two/` tramite `asset()` per la base corretta. **Deploy**: copiare le immagini (es. da `Main_files/images/` o `resources/images/`) in `public/themes/Two/images/` (hero-bg.jpg, medical-equipment.jpg, veterinary-radiology.jpg) perché siano servite.
+- **404 immagini**: path hero e servizi/sectors aggiornati da `/themes/Two/resources/images/` e `/themes/Two/Main_files/images/` a `/themes/Two/images/`. Hero about usa `asset('themes/Two/images/hero-bg.jpg')` come default. I blocchi services/grid, content/split e sectors/split normalizzano gli URL che iniziano con `/themes/Two/` tramite `asset()` per la base corretta. **Deploy**: le immagini (hero-bg.jpg, medical-equipment.jpg, veterinary-radiology.jpg) stanno in `resources/images/` e `npm run build` le porta in `Themes/Two/public/images/` (symlink `public_html/themes/Two`).
 
 ### Link social e intestazioni
 - Link social footer: già con `aria-label` univoci (LinkedIn, Facebook, Instagram). Contrasto footer gestito in app.css.

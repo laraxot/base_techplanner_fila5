@@ -5,39 +5,20 @@ declare(strict_types=1);
 namespace Themes\Two\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Livewire\Volt\Volt;
 
+/**
+ * Service provider del tema Two.
+ *
+ * Nota: a runtime le viste del tema sono servite dal namespace `pub_theme` (registrato da Xot/Cms),
+ * non da questo provider. Il namespace `two` resta come alias per eventuali usi espliciti.
+ * Il vecchio `Volt::mount()` su `blog-search-filters` è stato rimosso: puntava a
+ * `resource_path()` (cartella dell'app, non del tema) e il componente non era usato da nessuna pagina.
+ */
 class ThemeServiceProvider extends ServiceProvider
 {
-    /**
-     * Register services.
-     */
-    public function register(): void
-    {
-        //
-    }
-
-    /**
-     * Bootstrap services.
-     */
     public function boot(): void
     {
-        // Register view namespace using 'two' to avoid conflict with Sixteen's pub_theme
         $this->loadViewsFrom(__DIR__.'/../../resources/views', 'two');
         $this->loadTranslationsFrom(__DIR__.'/../../lang', 'two');
-
-        // Register Livewire components
-        $this->registerLivewireComponents();
-    }
-
-    /**
-     * Register Livewire components from the theme.
-     */
-    private function registerLivewireComponents(): void
-    {
-        // Register Volt components from the theme
-        Volt::mount([
-            'blog-search-filters' => resource_path('views/components/livewire/blog-search-filters.blade.php'),
-        ]);
     }
 }

@@ -425,7 +425,7 @@ Se **ALMENO UNA** è **NO** → ❌ REFACTOR PRIMA DI COMMIT
 
 | File | Descrizione |
 |------|-------------|
-| `docs/ZEN_NAKED_PAGE_PHILOSOPHY.md` | NO styling hardcoded |
+| `docs/zen-naked-page-philosophy.md` | NO styling hardcoded |
 | `docs/CONTAINER_AGNOSTICISM.md` | Container non sa cosa contiene |
 | `docs/WIDGET_BRIDGE_PATTERN.md` | Widgets come ponte Tema↔Moduli |
 | `docs/CMS_JSON_ARCHITECTURE.md` | CMS guida i blocks |

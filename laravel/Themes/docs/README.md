@@ -6,8 +6,12 @@ This directory routes to the active documentation roots for the Laravel themes i
 
 | Theme | Role | Status | Docs |
 | --- | --- | --- | --- |
-| `Sixteen` | active public-facing theme aligned with Design Comuni and Bootstrap Italia parity work | active | [README](../Sixteen/docs/README.md) |
-| `TwentyOne` | alternative theme with Vite and Tailwind-based frontoffice work | available | [README](../TwentyOne/docs/README.md) |
+| `Two` | tema del sito pubblico sottana.com (Sottana Service), `pub_theme` attivo in questo progetto | active | [README](../Two/docs/README.md) |
+| `Sixteen` | tema Design Comuni / Bootstrap Italia (nato per FixCity) | available | [README](../Sixteen/docs/README.md) |
+| `Zero` | tema minimale Tailwind | available | [README](../Zero/docs/README.md) |
+| `TwentyOne` | tema alternativo Vite + Tailwind | available | [README](../TwentyOne/docs/README.md) |
+| `Meetup` | tema eventi (nato per LaravelPizza) | available | [README](../Meetup/docs/README.md) |
+| `Barthelemy` | scaffold senza viste (solo config e docs) | scaffold | [README](../Barthelemy/docs/README.md) |
 
 ## Theme Rules
 
@@ -21,12 +25,12 @@ This directory routes to the active documentation roots for the Laravel themes i
 
 - Web document root: `public_html/`
 - Application code: `laravel/`
-- Theme assets are published under `public_html/themes/<Theme>/`
+- Theme assets: `npm run build` scrive in `laravel/Themes/<Theme>/public/`, servito dal symlink `public_html/themes/<Theme>` → `../../laravel/Themes/<Theme>/public` (nessuna copia, niente `npm run copy`)
 
 ## Fast Paths
 
-- Active theme docs: [Sixteen](../Sixteen/docs/README.md)
-- Alternative theme docs: [TwentyOne](../TwentyOne/docs/README.md)
+- Active theme docs: [Two](../Two/docs/README.md)
+- Other theme docs: [Sixteen](../Sixteen/docs/README.md), [TwentyOne](../TwentyOne/docs/README.md)
 - Module index: [laravel/Modules/docs/README.md](../../Modules/docs/README.md)
 - LLM wiki workflow: [docs/wiki/README.md](../../../docs/wiki/README.md)
 - Themes note: [llm-wiki.md](./llm-wiki.md)
