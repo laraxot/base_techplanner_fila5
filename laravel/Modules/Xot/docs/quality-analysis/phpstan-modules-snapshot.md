@@ -1,3 +1,7 @@
+---
+created: 2026-05-13
+---
+
 # PHPStan Analysis and Legacy Cleanup (2026-05-13)
 
 ## Overview

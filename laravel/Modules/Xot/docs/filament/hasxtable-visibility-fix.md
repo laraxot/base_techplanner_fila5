@@ -1,3 +1,7 @@
+---
+created: 2026-01-27
+---
+
 # Fix Visibilità Metodi HasXotTable - 2026-01-27
 
 **Data**: 2026-01-27  

@@ -1,3 +1,7 @@
+---
+created: "2026-01"  # dal vecchio nome file (gennaio 2026)
+---
+
 # Correzioni Violazioni XotBaseResource - Gennaio 2026
 
 ## Problema Identificato
