@@ -137,6 +137,8 @@ $SUDO $PHP artisan filament:optimize
 # Le route restano senza cache: alcune rotte dei moduli sono closure (route:cache fallirebbe).
 $SUDO $PHP artisan route:clear
 $SUDO $PHP artisan queue:restart
+# robots.txt come file vero: con la configurazione nginx di serie la rotta /robots.txt risponde 404 e Google lo ignora.
+$SUDO $PHP artisan seo:robots
 
 step "Permessi"
 $SUDO chown -R www-data:www-data storage bootstrap/cache

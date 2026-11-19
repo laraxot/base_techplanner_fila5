@@ -5,7 +5,7 @@
 ])
 
 @php
-    $displayAddress = $address ?: 'Via Vanzo 86/A, 31021 Mogliano Veneto TV';
+    $displayAddress = $address ?: 'Via Augusto Vanzo 86 A, 31021 Mogliano Veneto (TV)';
 
     // Link navigazione Google Maps (gratuito, non è una chiamata API)
     if (!empty($coordinates['lat']) && !empty($coordinates['lng'])) {

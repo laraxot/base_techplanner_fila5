@@ -1,8 +1,8 @@
 {
     "id": "4",
     "title": {
-        "it": "Contatti - Sottana Service",
-        "en": "Contacts - Sottana Service"
+        "it": "Contatti – Mogliano Veneto (TV)",
+        "en": "Contact Us – Mogliano Veneto (TV)"
     },
     "slug": "contacts",
     "middleware": null,
@@ -67,7 +67,7 @@
                             "type": "address",
                             "title": "Sede Operativa",
                             "description": "Visita la nostra sede",
-                            "value": "Via Vanzo 86, 31021 Mogliano Veneto (TV)",
+                            "value": "Via Augusto Vanzo 86 A, 31021 Mogliano Veneto (TV)",
                             "hours": "Su appuntamento",
                             "icon": "location",
                             "color": "cyan"
@@ -206,7 +206,7 @@
                             "type": "address",
                             "title": "Office",
                             "description": "Visit our office",
-                            "value": "Via Vanzo 86, 31021 Mogliano Veneto (TV), Italy",
+                            "value": "Via Augusto Vanzo 86 A, 31021 Mogliano Veneto (TV), Italy",
                             "hours": "By appointment",
                             "icon": "location",
                             "color": "cyan"

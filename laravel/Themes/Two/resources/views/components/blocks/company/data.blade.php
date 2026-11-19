@@ -19,7 +19,7 @@
 
             {{-- Optional Map or Image (OpenStreetMap) --}}
             <div class="h-full min-h-[400px] bg-gray-200 rounded-xl overflow-hidden relative">
-                @php $address = 'Via Vanzo 86/A, 31021 Mogliano Veneto TV'; @endphp
+                @php $address = 'Via Augusto Vanzo 86 A, 31021 Mogliano Veneto (TV)'; @endphp
                 <iframe 
                     width="100%" 
                     height="100%" 

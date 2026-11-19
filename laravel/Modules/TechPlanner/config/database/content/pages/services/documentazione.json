@@ -1,8 +1,8 @@
 {
     "id": "documentazione",
     "title": {
-        "it": "Documentazione - Sottana Service",
-        "en": "Documentation - Sottana Service"
+        "it": "Autorizzazioni Sanitarie e Documentazione per Studi Dentistici",
+        "en": "Health Authorisations and Compliance Documentation"
     },
     "slug": "documentazione",
     "content_blocks": {
@@ -13,7 +13,7 @@
                 "data": {
                     "view": "pub_theme::components.blocks.hero.internal",
                     "title": "Documentazione e Conformità",
-                    "subtitle": "Gestione semplificata di tutti gli obblighi burocratici e tecnici per la sicurezza.",
+                    "subtitle": "Autorizzazioni sanitarie (L.R. 22/2002), relazioni tecniche e scadenzari per studi dentistici e veterinari a Treviso, Venezia, Padova e in Veneto.",
                     "image": "/images/hero-bg-2000.jpg"
                 }
             },
@@ -30,6 +30,42 @@
                 }
             },
             {
+                "type": "content",
+                "slug": "service-details-seo",
+                "data": {
+                    "view": "pub_theme::components.blocks.content.simple",
+                    "content": "<h2>Autorizzazioni sanitarie e documentazione per studi dentistici e veterinari</h2>\n<p>Aprire, trasferire o modificare uno studio richiede l'autorizzazione all'esercizio prevista dalla normativa regionale: in Veneto la L.R. 16 agosto 2002 n. 22, con la domanda presentata al Comune. Prepariamo la documentazione tecnica e seguiamo la pratica a Mogliano Veneto, Treviso, Venezia, Padova e in tutto il Veneto.</p>\n<h3>Di cosa ci occupiamo</h3>\n<ul>\n<li>Pratiche di autorizzazione all'esercizio e relative variazioni.</li>\n<li>Relazioni tecniche dopo ogni verifica e archivio digitale dei verbali.</li>\n<li>Scadenzario di verifiche, controlli di qualità e formazione.</li>\n<li>Assistenza durante le ispezioni degli organi di vigilanza.</li>\n</ul>\n<p>La documentazione raccoglie i risultati delle <a href=\"{{ route('container0.view',['container0'=>'services','slug0'=>'elettromedicali']) }}\">verifiche elettromedicali</a> e dei controlli di <a href=\"{{ route('container0.view',['container0'=>'services','slug0'=>'radioprotezione']) }}\">radioprotezione</a>, così è sempre pronta per un'ispezione. <a href=\"{{ route('container0.index',['container0'=>'contacts']) }}\">Contattaci</a> per una prima consulenza.</p>"
+                }
+            },
+            {
+                "type": "faq",
+                "slug": "service-faq",
+                "data": {
+                    "view": "pub_theme::components.blocks.faq.accordion",
+                    "title": "Domande frequenti",
+                    "subtitle": "",
+                    "categories": [
+                        {
+                            "name": "Autorizzazioni Sanitarie e Documentazione per Studi Dentistici",
+                            "questions": [
+                                {
+                                    "question": "Serve l'autorizzazione sanitaria per aprire uno studio dentistico in Veneto?",
+                                    "answer": "La L.R. 22/2002 del Veneto regola l'autorizzazione all'esercizio delle strutture sanitarie. Durante la consulenza verifichiamo quali requisiti valgono per il vostro studio e prepariamo la documentazione."
+                                },
+                                {
+                                    "question": "Cosa succede in caso di ispezione?",
+                                    "answer": "Vi aiutiamo a presentare verbali, relazioni e registri dei controlli, raccolti in un unico archivio aggiornato."
+                                },
+                                {
+                                    "question": "Gestite anche le variazioni, per esempio un nuovo apparecchio radiologico?",
+                                    "answer": "Sì: un nuovo apparecchio richiede prove di accettazione e l'aggiornamento della documentazione, che seguiamo insieme alla radioprotezione."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
                 "type": "cta",
                 "slug": "contact-cta",
                 "data": {
@@ -41,5 +77,6 @@
                 }
             }
         ]
-    }
+    },
+    "updated_at": "2026-11-19T00:00:00.000000Z"
 }

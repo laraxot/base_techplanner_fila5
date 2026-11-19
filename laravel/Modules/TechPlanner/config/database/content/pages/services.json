@@ -1,8 +1,8 @@
 {
     "id": "2",
     "title": {
-        "it": "Servizi - Sottana Service",
-        "en": "Services - Sottana Service"
+        "it": "Servizi di Radioprotezione e Verifiche Elettromedicali",
+        "en": "Radiation Protection and Electromedical Testing Services"
     },
     "slug": "services",
     "middleware": null,

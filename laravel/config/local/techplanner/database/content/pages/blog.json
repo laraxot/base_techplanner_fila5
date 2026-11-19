@@ -1,8 +1,8 @@
 {
     "id": "2",
     "title": {
-        "it": "Blog e Risorse - Sottana Service",
-        "en": "Blog and Resources - Sottana Service"
+        "it": "Blog su Radioprotezione ed Elettromedicali",
+        "en": "Blog: Radiation Protection and Medical Device Safety"
     },
     "slug": "blog",
     "middleware": null,

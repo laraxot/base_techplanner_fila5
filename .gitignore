@@ -158,3 +158,6 @@ laravel/composer.lock
 *.rej
 *.bak
 *.backup
+
+# Generato da `php artisan seo:robots` a ogni rilascio (deploy.sh).
+/public_html/robots.txt

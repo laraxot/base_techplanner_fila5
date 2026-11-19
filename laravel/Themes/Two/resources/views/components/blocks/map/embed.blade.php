@@ -1,6 +1,6 @@
 @props([
     'title'       => __('pub_theme::blocks.sections.map.title'),
-    'address'     => 'Via Vanzo 86/A, 31021 Mogliano Veneto TV',
+    'address'     => 'Via Augusto Vanzo 86 A, 31021 Mogliano Veneto (TV)',
     'coordinates' => [],
     'image'       => '/assets/techplanner/images/map-via-vanzo.png',
 ])

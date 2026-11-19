@@ -59,7 +59,7 @@ return [
     ],
     'fields' => [
         'map' => [
-            'alt' => 'Mapa de la ubicación: Via Vanzo 86, Mogliano Veneto',
+            'alt' => 'Mapa de la ubicación: Via Augusto Vanzo 86 A, Mogliano Veneto',
             'helper_text' => 'Haz clic para abrir el mapa',
         ],
     ],
