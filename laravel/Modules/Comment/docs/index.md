@@ -139,10 +139,10 @@ $reply = $comment->replies()->create([
 
 ## Related Modules
 
-- [User Module](../User/docs/) - Autenticazione e profili
-- [Notify Module](../Notify/docs/) - Sistema notifiche avanzato
-- [Activity Module](../Activity/docs/) - Activity logging
-- [Xot Module](../Xot/docs/) - Base classes e patterns
+- [User Module](../../User/docs/) - Autenticazione e profili
+- [Notify Module](../../Notify/docs/) - Sistema notifiche avanzato
+- [Activity Module](../../Activity/docs/) - Activity logging
+- [Xot Module](../../Xot/docs/) - Base classes e patterns
 
 ## Troubleshooting
 
@@ -178,3 +178,15 @@ Vedi anche:
 **PHPStan Level**: Target Level 9  
 **Translation**: IT/EN ✅  
 **Last Updated**: 2026-05-13
+
+## Mappa delle cartelle
+
+Elenco generato dall'audit qualita' (issue #64): ogni cartella di `docs/` con il numero di file `.md`.
+Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escluse.
+
+| Cartella | File .md |
+|---|---|
+| [`concepts/`](concepts/INDEX.md) | 1 |
+| [`llm-wiki/`](llm-wiki/) | 1 |
+| [`roadmap/`](roadmap/README.md) | 1 |
+| [`wiki/`](wiki/index.md) | 28 |

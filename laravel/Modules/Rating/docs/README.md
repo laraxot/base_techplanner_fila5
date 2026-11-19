@@ -31,14 +31,14 @@ Rating/
 
 ## Dipendenze
 
-- [Xot Base](../Xot/docs/)
-- [User Module](../User/docs/) (se usa autenticazione)
-- [Tenant Module](../Tenant/docs/) (se multi-tenant)
+- [Xot Base](../../Xot/docs/)
+- [User Module](../../User/docs/) (se usa autenticazione)
+- [Tenant Module](../../Tenant/docs/) (se multi-tenant)
 
 ## Collegamenti
 
 - [Documentazione Root](../../../docs/RATING_MODULE.md)
-- [Regole Architecture](../Xot/docs/architecture/)
+- [Regole Architecture](../../Xot/docs/architecture/)
 
 ## Backlinks
 

@@ -37,7 +37,7 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 | `verification-loop` (PHPStan max + Pest) | PHPStan ok, Pest skip | PHPStan 0 errori; Pest: skip documentato: DB di test `10.100.200.53:3306` irraggiungibile (TCP chiuso) e `Xot/tests/Support/TestDatabaseGuard.php:63` rifiuta DB non `*_test`; i test con DB restano appesi al connect MySQL (timeout 150 s osservato). Nessun test contro il MySQL locale (dati sacri). |
 | `tdd-workflow` (regressione sui P0) | aperto | regressione da scrivere su `UiBasePolicy::before` (utente estraneo → null) |
 | `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/ui-audit.md), [epics](../bmad/epics.md), [decision-log](../bmad/decision-log.md) |
-| `context-engineering` | fatto | source-first; il perché in [purpose](../bmad/purpose.md) |
+| `context-engineering` | fatto | source-first; il perché in [purpose](../wiki/purpose.md) |
 
 ## Input misurato (2026-11-16)
 

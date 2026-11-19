@@ -59,3 +59,26 @@ Rendere verificabile lo stato di UI: vocabolario visivo condiviso (componenti, w
 ## Esito (2026-11-16)
 
 Baseline aggiornata, nessun codice applicativo modificato. Fix e Pest restano aperti (gate DB test).
+
+---
+
+## Contenuto unito da `module-bmad-audit.story.md`
+
+# Story — UI: baseline BMAD
+
+Come manutentore del modulo UI, voglio una baseline BMAD verificabile, così da poter pianificare lavoro senza confondere ipotesi, WIP e comportamento osservato.
+
+## Acceptance criteria
+
+- [ ] Confermare API pubblica e confini con riferimenti a codice reale.
+- [ ] Inventariare i flussi critici e collegarli a test Pest.
+- [ ] Misurare PHPStan/Pest nel contesto stabile del modulo.
+- [ ] Registrare dipendenze, rischi e decisioni nel modulo.
+- [ ] Aggiornare lo stato reale in `docs/sprint-status.yaml`.
+
+## Task
+
+- [ ] Revisione architettura.
+- [ ] Brainstorming con stakeholder.
+- [ ] Decomposizione epic in story più piccole.
+- [ ] Quality gate e second-brain write-back.

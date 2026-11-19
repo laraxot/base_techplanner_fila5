@@ -156,11 +156,11 @@ $distribution = Rating::where('rateable_type', Product::class)
 
 ## Related Modules
 
-- [User Module](../User/docs/) - Autori rating
+- [User Module](../../User/docs/) - Autori rating
 - [Product Module](../Product/docs/) - Prodotti (se exists)
-- [Activity Module](../Activity/docs/) - Activity logging
-- [Notify Module](../Notify/docs/) - Notifiche rating
-- [Xot Module](../Xot/docs/) - Base classes
+- [Activity Module](../../Activity/docs/) - Activity logging
+- [Notify Module](../../Notify/docs/) - Notifiche rating
+- [Xot Module](../../Xot/docs/) - Base classes
 
 ## Troubleshooting
 
@@ -194,3 +194,14 @@ Vedi anche:
 **PHPStan Level**: Target Level 9  
 **Translation**: IT/EN ✅  
 **Last Updated**: 2026-05-13
+
+## Mappa delle cartelle
+
+Elenco generato dall'audit qualita' (issue #64): ogni cartella di `docs/` con il numero di file `.md`.
+Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escluse.
+
+| Cartella | File .md |
+|---|---|
+| [`llm-wiki/`](llm-wiki/index.md) | 6 |
+| [`roadmap/`](roadmap/README.md) | 7 |
+| [`wiki/`](wiki/index.md) | 24 |

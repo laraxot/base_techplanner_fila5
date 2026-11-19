@@ -30,7 +30,7 @@ SSoT dettagliata: [audits/ui-audit.md](./audits/ui-audit.md)
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
-SSoT dettagliata: [audits/ui-audit.md](./audits/ui-audit.md) · scopo: [purpose.md](./purpose.md)
+SSoT dettagliata: [audits/ui-audit.md](./audits/ui-audit.md) · scopo: [purpose.md](../wiki/purpose.md)
 
 **In una frase:** vocabolario visivo condiviso (componenti, widget, colonne, layout tabella) consumato da tutti i moduli.
 

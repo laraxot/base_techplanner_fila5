@@ -46,11 +46,11 @@ duplicate qui — solo referenziate).
    senza contenuto storico unico):
    - `docs/ARCHITECTURE.md` (712 righe, 6 marker) — contenuto interamente riassorbito in
      `docs/architecture.md` dopo il fix del punto 2.
-   - `docs/architecture-.md` (1308 righe, nome con trattino finale, probabile artefatto)
+   - `docs/architecture.md` (1308 righe, nome con trattino finale, probabile artefatto)
      — stessa concatenazione ridondante, nessun contenuto unico.
    - `docs/ARCHITECTURE_2025.md` (29 righe) — stub redirect con marker ANCORA irrisolti,
      verso `Themes/docs/shared-components/ARCHITECTURE.md` (path inesistente).
-   - `docs/architecture-2025.md` (7 righe) — stub redirect pulito ma verso lo stesso path
+   - `docs/architecture.md` (7 righe) — stub redirect pulito ma verso lo stesso path
      inesistente; gia' elencato in `docs/.gitignore` come da rimuovere (mai completato).
    - `docs/architecture_2025.md` (11 righe) — due frontmatter concatenati, stesso path
      inesistente.
@@ -124,8 +124,8 @@ Commit: `5b5b8576` (repo `laravel/Modules/UI`, remote `laraxot/module_ui_fila5` 
 ## False friends
 
 - "4 file architecture case-duplicati" (dato dal task) non significa "solo 4": esistevano
-  anche `docs/ARCHITECTURE.md` e `docs/architecture-.md`, non elencati ma scoperti con
+  anche `docs/ARCHITECTURE.md` e `docs/architecture.md`, non elencati ma scoperti con
   `git ls-files docs | grep -i architecture`.
-- Un file senza marker `<<<<<<<` non e' automaticamente pulito: `docs/architecture-.md`
+- Un file senza marker `<<<<<<<` non e' automaticamente pulito: `docs/architecture.md`
   e `docs/architecture_2025.md` erano "risolti" per concatenazione cieca di entrambi i
   lati, non per scelta — stesso difetto del merge originale, solo senza i marker visibili.

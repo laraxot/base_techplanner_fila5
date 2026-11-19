@@ -11,7 +11,7 @@ qmd: "epic story BMAD UI audit P0 P1 policy"
 
 # Epic e story — UI
 
-Scopo del modulo: vocabolario visivo condiviso (componenti, widget, colonne, layout tabella) consumato da tutti i moduli ([purpose.md](./purpose.md)).
+Scopo del modulo: vocabolario visivo condiviso (componenti, widget, colonne, layout tabella) consumato da tutti i moduli ([purpose.md](../wiki/purpose.md)).
 
 ## Epic da audit 2026-11-16
 

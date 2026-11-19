@@ -3,6 +3,7 @@ title: "copilot redundancy audit"
 qmd: "ui copilot redundancy audit md"
 type: note
 tags: [documentation]
+created: 2026-05-25
 ---
 
 Copilot Redundancy Audit — 2026-05-25
