@@ -430,7 +430,7 @@ contro il gia'-superseded `11.1.team-change-widget.story.md`: entrambe
 
 - **Verifica:** `cd laravel && php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/User Modules/Comment Modules/Notify Modules/Activity` → exit 0, `[OK] No errors` (config unica `laravel/phpstan.neon`).
 - **Docs:** `md-filenames.py check` su `docs/` → 0 violazioni date/suffissi; legacy maiuscole in radice segnalate, nessuna rinomina (tool `name` non propone alias sicuri).
-- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../00-index.md) (misura modulo), hub [phpstan-modules-zero-gate](../../../Xot/docs/stories/phpstan-modules-zero-gate.story.md).
+- **Track:** [phpstan-fixes.md](../phpstan-fixes.md), [00-INDEX.md](../README.md) (misura modulo), hub [phpstan-modules-zero-gate](../../../Xot/docs/stories/phpstan-modules-zero-gate.story.md).
 
 ## [2026-10-26] DCP-285 policy utenti, mail di reset, verify, revoca consensi
 

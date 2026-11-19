@@ -9,7 +9,6 @@ use Modules\User\Models\User;
 use Modules\User\Tests\TestCase;
 use Modules\Xot\Contracts\UserContract;
 
-uses(\Modules\User\Tests\TestCase::class);
 uses(TestCase::class);
 
 /*

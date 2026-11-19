@@ -4575,7 +4575,7 @@ Documentazione per git_conflict_resolution nel modulo User.
 
 ## Collegamenti
 
-- [Modulo Principale](../README.md)
+- [Modulo Principale](../readme.md)
 
 
 ---

@@ -126,3 +126,23 @@ find Modules/User/lang -name "*.php" -exec php -l {} \;
 **Data**: 2025-01-15
 **Versione**: 1.0
 **Stato**: Completato
+
+
+---
+
+<!-- Contenuto unito da translation-syntax-fixes-2025.md (rimozione date dai nomi file, issue #64) -->
+
+# translation-syntax-fixes-2025 - User
+
+## Overview
+
+Documentazione per translation-syntax-fixes-2025 nel modulo User.
+
+## Dettagli
+
+[Da completare]
+
+## Collegamenti
+
+- [Modulo Principale](../README.md)
+

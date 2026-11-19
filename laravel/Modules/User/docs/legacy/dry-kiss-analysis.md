@@ -5,3 +5,10 @@ canonical: ../../../../Themes/docs/shared-components/dry-kiss-analysis-Modules.m
 ---
 
 See canonical documentation: ../../../../Themes/docs/shared-components/dry-kiss-analysis-Modules.md
+
+
+---
+
+<!-- Contenuto unito da dry-kiss-analysis-.md (rimozione date dai nomi file, issue #64) -->
+
+See canonical documentation: ../../../../Themes/docs/shared-components/dry-kiss-analysis-2025-10-15.md

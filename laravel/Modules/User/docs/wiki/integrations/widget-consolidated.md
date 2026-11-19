@@ -3299,7 +3299,7 @@ Documentazione per widgets_structure nel modulo User.
 
 ## Collegamenti
 
-- [Modulo Principale](../README.md)
+- [Modulo Principale](../readme.md)
 
 
 ---
