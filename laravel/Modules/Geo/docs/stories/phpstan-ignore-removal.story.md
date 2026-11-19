@@ -8,7 +8,7 @@ created: 2026-11-17
 updated: 2026-11-17
 tags: [phpstan, geo, phpstan-ignore, traits, bmad]
 related:
-  - ./2026-10-06-phpstan-cleanup-geo.story.md
+  - ./phpstan-cleanup-geo.story.md
   - ./01.Geo-phpstan-fix.story.md
 ---
 
