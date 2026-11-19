@@ -19,7 +19,7 @@ tags: [phpstan, cleanup, bmad, techplanner]
 ## Files to Modify
 
 - `app/Console/Commands/ImportAccessDataCommand.php`
-- `docs/testing/coverage.md` (le due voci `UnusedLocalVariable` sono ora risolte), `docs/00-index.md` (write-back)
+- `docs/testing/coverage.md` (le due voci `UnusedLocalVariable` sono ora risolte), `docs/index.md` (write-back)
 
 ## Implementation Steps
 

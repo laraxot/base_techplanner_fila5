@@ -514,7 +514,7 @@ Il modulo TechPlanner rappresenta un **dominio business complesso** gestito con 
 
 ### Documentazione Core
 - [README.md](../README.md) - Overview completo del modulo
-- [00-index.md](../00-index.md) - Indice documentazione
+- [index.md](../index.md) - Indice documentazione
 - [models-and-relationships.md](../models-and-relationships.md) - Struttura dati e relazioni
 - [filament-resources.md](../filament-resources.md) - Risorse Filament e pattern
 

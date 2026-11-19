@@ -1,7 +1,6 @@
 # TechPlanner Module Documentation
 
-**Ultima modifica**: 2025-01-23
-**Status**: ✅ Documentazione completa e aggiornata
+Panoramica di business del modulo. Indice di navigazione: [index.md](index.md); manuale d'uso: [manual/manuale-uso.md](manual/manuale-uso.md).
 ## 🎯 Business Overview
 The TechPlanner module is a comprehensive business management system designed for technical service companies, particularly those dealing with device inspection, maintenance, and compliance in regulated environments such as healthcare. It provides a complete solution for:
 - **Client Management**: Complete client lifecycle from registration to ongoing service

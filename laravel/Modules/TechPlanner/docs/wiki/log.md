@@ -176,7 +176,7 @@ related:
 
 ## 2026-10-12 — PageSpeed sottana.com + audit completo
 
-- **Audit completo** (4 subagent + diretto): report in `docs/audits/full-codebase-audit-2026-10-12.md`
+- **Audit completo** (4 subagent + diretto): report in `docs/audits/full-codebase-audit.md`
 - **Fix crash Filament**: `DeviceVerificationsRelationManager` (`deviceVerifications`→`verifications` + campi reali), `LegalRepresentatives`/`MedicalDirectors`/`LegalOffices` RM e form allineati allo schema reale (migration = SSoT), `DeviceVerification::$fillable` corretto, `LegalOfficesTable` `country`→`postal_code`, `NotifyExpiringControlsCommand` groupBy enum-safe, `Appointment*` `client.name`→`company_name`
 - **TestCase TechPlanner**: aggiunto `DatabaseTransactions` + `connectionsToTransact=['sqlite']`
 - **`{{TYPE^}}`**: risolto in 27 file wiki AGENTS (Module/Theme)

@@ -1,7 +1,9 @@
 ---
-title: "Audit completo codebase — 2026-10-12"
+title: "Audit completo codebase"
 type: audit
 status: in-progress
+created: 2026-10-12
+updated: 2026-11-19
 ---
 
 # Audit completo — Findings e fix applicati

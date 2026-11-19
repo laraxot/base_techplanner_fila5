@@ -11,6 +11,14 @@ Per la conoscenza "second brain" orientata AI (frontmatter, tag, qmd) vedi [wiki
 - [roadmap.md](roadmap.md) - piano di sviluppo e completamento
 - [changelog.md](changelog.md) - changelog del modulo
 
+## Uso e rilascio
+
+- [manual/manuale-uso.md](manual/manuale-uso.md) - manuale d'uso con screenshot, per ruolo (anche in [PDF](manual/manuale-uso.pdf))
+- [../../../../docs/audit/RELEASE.md](../../../../docs/audit/RELEASE.md) - rilascio in produzione: checklist, procedura, ritorno indietro
+- [../../../../docs/handoff/riepilogo-sessione.md](../../../../docs/handoff/riepilogo-sessione.md) - riepilogo per riprendere il lavoro
+- [stories/production-readiness.story.md](stories/production-readiness.story.md) - ruoli, cestino, scadenze, qualità dati
+- [../../../Themes/Two/docs/seo/posizionamento-google.md](../../../Themes/Two/docs/seo/posizionamento-google.md) - SEO del sito sottana.com
+
 ## Filosofia e principi
 
 - [concepts/vision-and-philosophy.md](concepts/vision-and-philosophy.md) - **canonico**: filosofia/visione v2.0 (sintetizza le precedenti)
@@ -137,7 +145,7 @@ Per la conoscenza "second brain" orientata AI (frontmatter, tag, qmd) vedi [wiki
 
 File non cancellati/rinominati (per policy) ma sovrapposti o superati da altri documenti in questa lista. Da rivedere in un task dedicato di consolidamento, non in questo audit.
 
-- [00-index.md](00-index.md) - redirect a questo `index.md` (stub)
+- [index.md](index.md) - redirect a questo `index.md` (stub)
 - `concepts/PHILOSOPHY.md` → rinominato `concepts/vision-and-philosophy.md`; `filosofia_modulo_techplanner.md` → `concepts/filosofia-modulo-techplanner.md`; `filament_v4_upgrade_notes.md` → `filament-v4-upgrade-notes.md`; 7 file `phpstan-*` → `phpstan/`; 3 report qualità → `audits/`
 - [models/dynamic-fillable-enums.md](models/dynamic-fillable-enums.md) - mantenuto; `models/dynamic_fillable_enums.md` (versione obsoleta) rimosso
 - [audits/code-quality-improvement-report.md](audits/code-quality-improvement-report.md), [audits/code-quality-report.md](audits/code-quality-report.md), [audits/quality-analysis-report.md](audits/quality-analysis-report.md) - tre report di qualità del codice sovrapposti, snapshot in date diverse (in `audits/`)
@@ -147,5 +155,5 @@ File non cancellati/rinominati (per policy) ma sovrapposti o superati da altri d
 
 ## Note
 
-- Standard filename: minuscolo, trattini, niente date nel nome. `README.md` e `CHANGELOG.md` restano maiuscoli. `00-index.md` rimane come eccezione storica. I file con `_` sono stati normalizzati.
+- Standard filename: minuscolo, trattini, niente date nel nome. `README.md` e `CHANGELOG.md` restano maiuscoli. I file con `_` sono stati normalizzati.
 - Non creare nuovi moduli/temi per la sola documentazione: le story BMAD di questo modulo vivono in `Modules/TechPlanner/docs/stories/`.

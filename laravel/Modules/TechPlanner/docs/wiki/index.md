@@ -44,7 +44,7 @@ bashscripts/docs/llm-wiki-qmd.sh search "TechPlanner client" -c tp-mod-techplann
 | [concepts/](./concepts/INDEX.md) | Business logic, pattern Filament, harness |
 | [entities/](./entities/INDEX.md) | Modelli core (Client, Device, Appointment) |
 | [audits/](../audits/) | Report audit e quality gate |
-| [../](../00-index.md) | Corpus sorgente legacy (`docs/` non-wiki) |
+| [../](../index.md) | Corpus sorgente legacy (`docs/` non-wiki) |
 
 ## Scopo operativo
 

@@ -9,13 +9,13 @@ use Filament\Forms\Components\DateTimePicker;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
-use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Schemas\Components\Component;
 use Filament\Schemas\Components\Utilities\Get;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Carbon;
 use Modules\TechPlanner\Actions\CheckAppointmentConflictAction;
 use Modules\TechPlanner\Enums\AppointmentStatusEnum;
+use Modules\TechPlanner\Filament\Support\HiddenInRelationManager;
 use Modules\TechPlanner\Models\Appointment;
 use Modules\TechPlanner\Models\Client;
 use Modules\TechPlanner\Models\Worker;
@@ -39,7 +39,7 @@ class AppointmentForm extends XotBaseResourceForm
                 ->preload()
                 ->required()
                 // Dalla scheda del cliente il cliente è già quello: il campo non serve.
-                ->hidden(static fn (mixed $livewire): bool => $livewire instanceof RelationManager),
+                ->hidden(HiddenInRelationManager::make()),
             'worker_id' => Select::make('worker_id')
                 ->relationship('worker', 'first_name')
                 ->getOptionLabelFromRecordUsing(

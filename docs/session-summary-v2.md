@@ -143,7 +143,7 @@ it('can handle successful OAuth callback', function () {
 });
 ```
 
-**`/var/www/_bases/base_techplanner_fila5/docs/session-summary-2026-02-23.md`**
+**`/var/www/_bases/base_techplanner_fila5/docs/session-summary.md`**
 - **Importanza**: Summary completo della sessione seguendo la struttura a 10 punti richiesta dall'utente. Documenta tutte le fasi, decisioni tecniche e stato del lavoro.
 - **Contenuto**: 10 sezioni dettagliate con cronologia, file modificati, errori, task pendenti e prossimi step.
 

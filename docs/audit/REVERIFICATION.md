@@ -1,3 +1,11 @@
+---
+title: "Riverifica del codice su dev"
+type: audit
+created: 2026-11-16
+updated: 2026-11-16
+tags: [audit, techplanner, riverifica]
+---
+
 # TechPlanner — Riverifica del codice su `dev` (16 novembre 2026)
 
 > Ambito: analisi statica tramite GitHub del ramo `dev`. Non sono stati eseguiti Laravel, DB, PHPStan, Pest o un browser sulla versione odierna. Gli screenshot già presenti sono stati ispezionati come file del repository, **non** riacquisiti.

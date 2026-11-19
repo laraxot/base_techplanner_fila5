@@ -19,7 +19,7 @@ use Override;
 /**
  * Modules\TechPlanner\Models\Worker.
  *
- * @property mixed $address
+ * @property array<array-key, mixed>|null $address
  * @property string $full_address
  * @property float|null $latitude
  * @property float|null $longitude
@@ -78,7 +78,6 @@ use Override;
  * @method static Builder<static>|Worker newModelQuery()
  * @method static Builder<static>|Worker newQuery()
  * @method static Builder<static>|Worker ofInPolygon(string $polygon_field, float $lat, float $lng)
- * @method static Builder<static>|Worker ofJobRoleId(int $id)
  * @method static Builder<static>|Worker query()
  * @method static Builder<static>|Worker whereAddress($value)
  * @method static Builder<static>|Worker whereAdministrativeAreaLevel1($value)
@@ -205,7 +204,7 @@ class Worker extends BaseModel implements WorkerContract
 
                 return;
             }
-            $valueString = $this->safeStringCast($value);
+            $valueString = SafeStringCastAction::cast($value);
             if ($valueString !== '') {
                 $this->attributes['birth_day'] = Carbon::createFromFormat('d/m/Y', $valueString);
             }
@@ -217,51 +216,20 @@ class Worker extends BaseModel implements WorkerContract
     public function getFullNameAttribute(string|int|float|bool|null $value): string
     {
         if ($value !== null && $value !== '') {
-            return $this->safeStringCast($value);
+            return SafeStringCastAction::cast($value);
         }
         $type = $this->getAttribute('type');
         $lastName = $this->getAttribute('last_name');
         $firstName = $this->getAttribute('first_name');
 
         // Safe string casting for all components
-        $typeStr = $this->safeStringCast(is_scalar($type) || $type === null ? $type : '');
-        $lastNameStr = $this->safeStringCast(is_scalar($lastName) || $lastName === null ? $lastName : '');
-        $firstNameStr = $this->safeStringCast(is_scalar($firstName) || $firstName === null ? $firstName : '');
+        $typeStr = SafeStringCastAction::cast(is_scalar($type) || $type === null ? $type : '');
+        $lastNameStr = SafeStringCastAction::cast(is_scalar($lastName) || $lastName === null ? $lastName : '');
+        $firstNameStr = SafeStringCastAction::cast(is_scalar($firstName) || $firstName === null ? $firstName : '');
 
         $computed = trim($typeStr.' '.$lastNameStr.' '.$firstNameStr);
 
         return $computed;
-    }
-
-    /**
-     * Converte in modo sicuro un valore in string usando l'action centralizzata.
-     *
-     * @param  string|int|float|bool|null|mixed  $value  Il valore da convertire
-     * @return string Il valore convertito in string
-     */
-    private function safeStringCast(mixed $value): string
-    {
-        return app(SafeStringCastAction::class)->execute($value);
-    }
-
-    // ------------------- scopes ------------------------
-
-    /**
-     * @param  Builder<static>  $query
-     * @return Builder<static>
-     */
-    public function scopeOfJobRoleId(Builder $query, int $id): Builder
-    {
-        // TODO: Implement jobRoles relation before using this scope
-        return $query->where('id', '>', 0); // Temporary placeholder
-
-        /*
-         * return $query->whereHas(
-         * 'jobRoles', function (Builder $query) use ($id): void {
-         * $query->where('job_role_id', $id);
-         * }
-         * );
-         */
     }
 
     public function getCodFiscAttribute(?string $value): ?string

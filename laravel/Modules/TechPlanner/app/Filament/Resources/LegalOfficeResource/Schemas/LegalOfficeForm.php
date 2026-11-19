@@ -7,8 +7,8 @@ namespace Modules\TechPlanner\Filament\Resources\LegalOfficeResource\Schemas;
 use Filament\Forms\Components\Select;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
-use Filament\Resources\RelationManagers\RelationManager;
 use Filament\Schemas\Components\Component;
+use Modules\TechPlanner\Filament\Support\HiddenInRelationManager;
 use Modules\Xot\Filament\Resources\Schemas\XotBaseResourceForm;
 
 /**
@@ -29,7 +29,7 @@ class LegalOfficeForm extends XotBaseResourceForm
                 ->preload()
                 ->required()
                 // Dalla scheda del cliente il cliente è già quello: il campo non serve.
-                ->hidden(static fn (mixed $livewire): bool => $livewire instanceof RelationManager),
+                ->hidden(HiddenInRelationManager::make()),
             'name' => TextInput::make('name')->required()->maxLength(255),
             'address' => TextInput::make('address')->maxLength(255),
             'city' => TextInput::make('city')->maxLength(255),
