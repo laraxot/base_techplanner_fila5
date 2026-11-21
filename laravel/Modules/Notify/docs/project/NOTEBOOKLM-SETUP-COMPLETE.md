@@ -130,8 +130,8 @@ notebooklm/
 ```
 Notebook Name: "Notify Documentation"
 Sources:
-  - agents.md
-  - laravel/agents.md
+  - AGENTS.md
+  - laravel/AGENTS.md
   - docs/**/*.md
   - .planning/**/*.md
   - laravel/Modules/docs/README.md
@@ -207,8 +207,8 @@ Result: Gemini connects info from multiple docs
 **Notebook 1: Notify Core**
 ```
 Sources:
-  - agents.md
-  - laravel/agents.md
+  - AGENTS.md
+  - laravel/AGENTS.md
   - .planning/PROJECT.md
   - .planning/config.json
   - NOTIFY_IMPROVEMENT_PLAN.md
@@ -425,7 +425,7 @@ claude
 "Set up NotebookLM authentication"
 
 # 4. Crea notebook su notebooklm.google.com
-#    - Upload agents.md, docs/**/*.md
+#    - Upload AGENTS.md, docs/**/*.md
 #    - Share → Copy link
 
 # 5. Aggiungi a library
@@ -463,7 +463,7 @@ claude
 - [x] Skill installato (`~/.claude/skills/notebooklm/`)
 - [ ] Autenticazione completata
 - [ ] Notebook creato su notebooklm.google.com
-- [ ] Documenti uploadati (agents.md, docs/, etc.)
+- [ ] Documenti uploadati (AGENTS.md, docs/, etc.)
 - [ ] Notebook condiviso pubblicamente
 - [ ] Link aggiunto a Claude library
 - [ ] Prima query testata

@@ -27,7 +27,7 @@ updated: 2026-08-24
 
 ```bash
 # Check coordination logs
-cat bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md
+cat bashscripts/docs/git/sync_remote_repo_coordination.md
 cat docs/DOCUMENTATION_IMPROVEMENT_PLAN_MULTI_AGENT.md
 
 # Check GitHub Issues
@@ -52,7 +52,7 @@ gh discussion list
 - ✅ Tests performed
 
 **Where**:
-- Task-specific coordination logs (e.g., `SYNC_REMOTE_REPO_COORDINATION.md`)
+- Task-specific coordination logs (e.g., `sync_remote_repo_coordination.md`)
 - GitHub Issues
 - GitHub Discussions
 - This document
@@ -426,7 +426,7 @@ labels: ['coordination', 'multi-agent']
 
 **When**: Ongoing work tracking
 
-**Location**: Task-specific files (e.g., `SYNC_REMOTE_REPO_COORDINATION.md`)
+**Location**: Task-specific files (e.g., `sync_remote_repo_coordination.md`)
 
 **Format**:
 ```markdown
@@ -580,8 +580,8 @@ title: [DECISION NEEDED] Approach for X
 
 - **Master Index**: `docs/MASTER_DOCUMENTATION_INDEX.md`
 - **Governance**: `docs/DOCUMENTATION_GOVERNANCE.md`
-- **Coordination Logs**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
-- **Test Plans**: `docs/github/SYNC_REMOTE_REPO_TEST_PLAN.md`
+- **Coordination Logs**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
+- **Test Plans**: `docs/github/sync_remote_repo_test_plan.md`
 - **Troubleshooting**: `bashscripts/docs/git/TROUBLESHOOTING.md`
 
 ### External Resources

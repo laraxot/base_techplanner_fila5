@@ -1,4 +1,5 @@
 ---
+discussions: []
 title: "Spatie Comments — integrazione FO dettaglio ticket"
 type: concept
 tags: [comment, spatie, livewire, ticket, fixcity, frontoffice]
@@ -10,10 +11,11 @@ issues:
   - "https://github.com/laraxot/module_comment_fila5/issues/6"
   - "https://github.com/laraxot/module_fixcity_fila5/issues/39"
 related:
-  - ../../../../../docs/stories/STORY-160-ticket-detail-comments-not-working.md
+  - ../../../../../../docs/stories/STORY-160-ticket-detail-comments-not-working.md
   - ../../../packages/spatie/laravel-comments/README.md
   - ../../../../Fixcity/docs/wiki/concepts/ticket-view-fo-enrichment-map-media-comments.md
-  - ../../../../../docs/stories/STORY-157-ux-design-ticket-detail-no-tabs-map-comments.md
+  - ../../../../../../docs/stories/STORY-157-ux-design-ticket-detail-no-tabs-map-comments.md
+status: draft
 ---
 
 # Spatie Comments — integrazione FO dettaglio ticket
@@ -63,7 +65,7 @@ Livewire alias: `comments` → `Spatie\LivewireComments\Livewire\CommentsCompone
 | `Comment` model | Extends `Spatie\Comments\Models\Comment`; hook `saving` colonne legacy |
 | `CommentsComponent` | `HasComments::comment()` via contratto `Commentable` |
 | Guest FO | Lista read-only + login `/it/auth/login` |
-| Test | `TicketSpatieCommentsTest` — `DatabaseTransactions` + `Fixcity\Tests\TestCase` |
+| Test | `TicketCommentsTest` — `DatabaseTransactions` + `Fixcity\Tests\TestCase` |
 
 ### Root cause risolta (schema legacy)
 
@@ -106,7 +108,7 @@ Fork Composer `spatiex/laravel-comments-livewire` — le directive `@laravelComm
 
 ## Collegamenti
 
-- [STORY-160](../../../../../docs/stories/STORY-160-ticket-detail-comments-not-working.md)
-- [STORY-157](../../../../../docs/stories/STORY-157-ux-design-ticket-detail-no-tabs-map-comments.md)
+- [STORY-160](../../../../../../docs/stories/STORY-160-ticket-detail-comments-not-working.md)
+- [STORY-157](../../../../../../docs/stories/STORY-157-ux-design-ticket-detail-no-tabs-map-comments.md)
 - [ticket-view-fo-enrichment](../../../../Fixcity/docs/wiki/concepts/ticket-view-fo-enrichment-map-media-comments.md)
 - [struttura-e-conflitti](../../struttura-e-conflitti.md)

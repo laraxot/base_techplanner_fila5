@@ -117,7 +117,7 @@ class OutcomesTableWidget extends XotBaseTableWidget
 ### Rules & Enforcement
 
 - [Semantic CSS Rule](../../rules/frontend/semantic-css-rule.md) - **MANDATORY** rule
-- [Frontend Rules Index](../../rules/frontend/00-INDEX.md) - All frontend rules
+- [Frontend Rules Index](../../rules/frontend/00-index.md) - All frontend rules
 - [Frontend Rules Index](../../rules/frontend/00-index.md) - All frontend rules
 
 ---

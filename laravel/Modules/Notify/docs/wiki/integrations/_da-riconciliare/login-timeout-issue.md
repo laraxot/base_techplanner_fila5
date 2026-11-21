@@ -1,8 +1,8 @@
 ---
-qmd: "login timeout issue"
+qmd: "Login Timeout Issue"
 issues: []
 discussions: []
-title: "Problema Timeout Pagina Login - Diagnosi e Soluzione"
+title: "Login Timeout Issue"
 module: notify
 type: integration
 tags: [integrations, modules, notify]

@@ -13,9 +13,9 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
-  - ../notifications/readme.md
-  - ../integrations/readme.md
-  - ../templates/readme.md
+  - ../notifications/README.md
+  - ../integrations/README.md
+  - ../templates/README.md
 ---
 # Raw Sources — Notify
 
@@ -46,7 +46,7 @@ Il layer raw per questo modulo/tema è **l'intera cartella `docs/`** (esclusa `d
 
 ## Schema di riferimento
 
-→ `docs/.schema/WIKI_SCHEMA.md` (root progetto)
+→ `docs/.schema/wiki_schema.md` (root progetto)
 → `docs/.schema/wiki-schema.md` (root progetto)
 → `docs/project/llm-wiki-module-adoption.md` (guida per moduli/temi)
 

@@ -48,7 +48,7 @@ Non esiste una terza opzione confortevole.
 
 ## 2. `docs/` che si documenta due volte da sola
 
-`00-index.md` e `00-INDEX.md` esistono entrambi. `actions.md` e `ACTIONS.md`
+`00-index.md` e `00-index.md` esistono entrambi. `actions.md` e `actions.md`
 pure. Su un filesystem case-insensitive (Mac, la maggior parte dei setup
 Windows) uno dei due letteralmente sovrascrive l'altro al checkout — la
 collisione non è teorica, è già in corso silenziosamente per chiunque non
@@ -92,7 +92,7 @@ ammette candidamente di non fare ancora nulla.
 
 ## In ordine di rischio/sforzo
 
-1. Rimuovere `docs/ACTIONS.md`/`00-INDEX.md` duplicati (dopo aver verificato
+1. Rimuovere `docs/actions.md`/`00-index.md` duplicati (dopo aver verificato
    quale dei due è aggiornato — non a caso, con `git log -p` su entrambi).
 2. Decidere il destino di `ExecuteTaskAction::execute()` — implementare o
    eliminare, non lasciare un TODO che mente su cosa fa il modulo.

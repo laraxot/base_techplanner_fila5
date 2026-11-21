@@ -82,7 +82,7 @@ Configure GDPR-specific settings:
 protected function setUp(): void
 {
     parent::setUp();
-
+    
     // Configure GDPR module
     config(['gdpr.default_retention_days' => 30]);
     config(['gdpr.anonymization_enabled' => true]);
@@ -101,7 +101,7 @@ test('gdpr request can be created', function () {
         'status' => 'pending',
         'data' => ['key' => 'value'],
     ]);
-
+    
     expect($request)->toBeInstanceOf(\Modules\Gdpr\Models\GdprRequest::class);
     expect($request->type)->toBe('data_deletion');
 });
@@ -112,7 +112,7 @@ test('gdpr request can be created', function () {
 ```php
 test('gdpr configuration is loaded', function () {
     $gdprConfig = config('gdpr');
-
+    
     expect($gdprConfig['default_retention_days'])->toBe(30);
     expect($gdprConfig['anonymization_enabled'])->toBe(true);
 });
@@ -123,7 +123,7 @@ test('gdpr configuration is loaded', function () {
 ```php
 test('gdpr service provider is registered', function () {
     $app = app();
-
+    
     expect($app->bound(\Modules\Gdpr\Providers\GdprServiceProvider::class))->toBeTrue();
 });
 ```
@@ -168,7 +168,7 @@ test('gdpr service provider is registered', function () {
 protected function setUp(): void
 {
     parent::setUp();
-
+    
     config(['gdpr.default_retention_days' => 30]);
     config(['gdpr.anonymization_enabled' => true]);
 }
@@ -184,11 +184,11 @@ protected function setUp(): void
 protected function createApplication()
 {
     $app = parent::createApplication();
-
+    
     $app['config']->set([
-'database.connections.gdpr.database' => '<nome progetto>_data_test',
+'database.connections.gdpr.database' => 'Quaeris_data_test',
     ]);
-
+    
     return $app;
 }
 ```
@@ -291,7 +291,7 @@ test('gdpr request can be created', function () {
         'user_agent' => 'Test Agent',
         'created_at' => now(),
     ]);
-
+    
     expect($request)->toBeInstanceOf(\Modules\Gdpr\Models\GdprRequest::class);
     expect($request->type)->toBe('data_deletion');
     expect($request->email)->toBe('test@example.com');
@@ -307,12 +307,12 @@ test('gdpr request can be created', function () {
 ```php
 test('gdpr service can process data deletion request', function () {
     $service = new \Modules\Gdpr\Services\GdprService();
-
+    
     $request = $service->processDataDeletion([
         'email' => 'test@example.com',
         'data' => ['key' => 'value'],
     ]);
-
+    
     expect($request)->toBeInstanceOf(\Modules\dpr\Models\GdprRequest::class);
     expect($request->type)->toBe('data_deletion');
     expect($request->status)->toBe('processed');
@@ -327,7 +327,7 @@ test('gdpr api can create data deletion request', function () {
         'email' => 'test@example.com',
         'data' => ['key' => 'value'],
     ];
-
+    
     $response = $this->post('/api/gdpr/data-deletion', $requestData);
     $response->assertStatus(201);
     $response->assertJson([

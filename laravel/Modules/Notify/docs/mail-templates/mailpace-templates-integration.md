@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "mailpace templates integration"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Integrazione MailPace Templates

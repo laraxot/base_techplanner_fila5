@@ -13,9 +13,9 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
-  - ../notifications/readme.md
-  - ../integrations/readme.md
-  - ../templates/readme.md
+  - ../notifications/README.md
+  - ../integrations/README.md
+  - ../templates/README.md
 ---
 # 📚 Documentation Index - Notify Project
 
@@ -29,17 +29,17 @@ related:
 ### 🏆 Main Documents
 
 1. [**README.md**](../README.md) - Project overview and quick start
-2. [**CONTRIBUTING.md**](../CONTRIBUTING.md) - How to contribute
-3. [**ARCHITECTURE.md**](./architecture.md) - System architecture
-4. [**QUALITY_DASHBOARD.md**](./QUALITY_DASHBOARD.md) - Real-time metrics
+2. [**CONTRIBUTING.md**](../contributing.md) - How to contribute
+3. [**architecture.md**](./architecture.md) - System architecture
+4. [**QUALITY_DASHBOARD.md**](./quality_dashboard.md) - Real-time metrics
 
 ### 📊 Reports & Analysis
 
-5. [**MISSION_ACCOMPLISHED.md**](./MISSION_ACCOMPLISHED.md) - ⭐ Mission completion
-6. [**PROJECT_COMPLETION_CERTIFICATE.md**](./PROJECT_COMPLETION_CERTIFICATE.md) - Official certificate
+5. [**MISSION_ACCOMPLISHED.md**](./mission_accomplished.md) - ⭐ Mission completion
+6. [**PROJECT_COMPLETION_CERTIFICATE.md**](./project_completion_certificate.md) - Official certificate
 7. [**excellence-achievement-caps.md**](./excellence-achievement-caps.md) - Achievement report
-8. [**FINAL_REFACTORING_REPORT.md**](./FINAL_REFACTORING_REPORT.md) - Refactoring summary
-9. [**COMPLETE_REFACTORING_ANALYSIS.md**](./COMPLETE_REFACTORING_ANALYSIS.md) - Detailed analysis
+8. [**FINAL_REFACTORING_REPORT.md**](./final_refactoring_report.md) - Refactoring summary
+9. [**COMPLETE_REFACTORING_ANALYSIS.md**](./complete_refactoring_analysis.md) - Detailed analysis
 
 ---
 

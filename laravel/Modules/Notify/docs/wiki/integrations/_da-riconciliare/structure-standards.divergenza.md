@@ -1,8 +1,8 @@
 ---
-qmd: "structure standards.divergenza"
+qmd: "Structure Standards.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: structure_standards.md"
+title: "Structure Standards.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

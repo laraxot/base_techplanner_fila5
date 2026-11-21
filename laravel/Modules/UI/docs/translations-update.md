@@ -3,7 +3,10 @@ title: "Aggiornamento Traduzioni Modulo UI - Gennaio 2026"
 qmd: "ui translations update january 2026 md"
 type: note
 tags: [documentation]
+<<<<<<< .merge_file_GcHO0W
 created: 2026
+=======
+>>>>>>> .merge_file_JXlC5D
 ---
 
 # Aggiornamento Traduzioni Modulo UI - Gennaio 2026

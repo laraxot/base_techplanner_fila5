@@ -29,7 +29,7 @@ Consolidated from **8** individual files.
 
 ## optimization-analysis-1
 
-*Consolidated from: `optimization-analysis-1.md`*
+*Consolidated from: `optimization-analysis-user-module-documentation.md`*
 
 title: "notify module documentation optimization analysis"
 type: concept
@@ -44,7 +44,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -487,7 +487,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"

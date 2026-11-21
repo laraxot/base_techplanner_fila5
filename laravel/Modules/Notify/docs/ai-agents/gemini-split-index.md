@@ -9,11 +9,11 @@ issues: []
 discussions: []
 ---
 
-# GEMINI.md Split Index
+# gemini.md Split Index
 
-> Documentazione GEMINI.md spezzata in file più piccoli.
+> Documentazione gemini.md spezzata in file più piccoli.
 
-## 📚 File da GEMINI.md
+## 📚 File da gemini.md
 
 | File | Contenuto |
 |------|-----------|
@@ -25,5 +25,5 @@ discussions: []
 
 ## 🔗 Collegamento
 
-- [GEMINI.md originale](../../GEMINI.md)
+- [gemini.md originale](../../gemini.md)
 - [Index principale](./index.md)

@@ -13,13 +13,14 @@ use Modules\Comment\Models\Reaction;
 class ReactionFactory extends Factory
 {
     /**
-     * @var class-string<Reaction>
+     * The name of the factory's corresponding model.
      */
     protected $model = Reaction::class;
 
     /**
-     * @return array<string, mixed>
+     * Define the model's default state.
      */
+    /** @return array<string, mixed> */
     public function definition(): array
     {
         return [];

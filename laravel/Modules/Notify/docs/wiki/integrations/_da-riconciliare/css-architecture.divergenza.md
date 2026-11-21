@@ -1,8 +1,8 @@
 ---
-qmd: "css architecture.divergenza"
+qmd: "CSS Architecture.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: CSS_ARCHITECTURE.md"
+title: "CSS Architecture.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

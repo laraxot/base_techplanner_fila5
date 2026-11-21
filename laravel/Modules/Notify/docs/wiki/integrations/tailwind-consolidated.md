@@ -64,7 +64,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -281,7 +281,7 @@ Ora i blade file usano le classi Tailwind:
 
 ## tailwind-best-practices-1
 
-*Consolidated from: `tailwind-best-practices-1.md`*
+*Consolidated from: `tailwind-best-practices-implementazione-css-modulo-notify.md`*
 
 
 ## 1. Organizzazione del Codice
@@ -618,7 +618,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1278,7 +1278,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1945,7 +1945,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -2207,7 +2207,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -2300,7 +2300,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -3248,7 +3248,7 @@ class NotificationForm extends Component implements HasForms
 
 ## tailwind-implementation-1
 
-*Consolidated from: `tailwind-implementation-1.md`*
+*Consolidated from: `tailwind-implementation-implementazione-css-modulo-notify.md`*
 
 
 ## 1. Configurazione Base
@@ -3604,7 +3604,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -4880,7 +4880,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"

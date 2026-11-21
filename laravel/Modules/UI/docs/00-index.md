@@ -16,7 +16,7 @@ tags: [documentation]
 - [wiki/concepts/ponytail-audit.md](./wiki/concepts/ponytail-audit.md)
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Design System e overview componenti.
+1. [README.md](./README.md) - Design System e overview componenti.
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Tailwind v4 e Flux UI integration.
 3. [philosophy.md](./philosophy.md) - "La Bellezza è Funzionale": filosofia del design in Laraxot.
 
@@ -47,7 +47,7 @@ tags: [documentation]
 - [Master Index Tema](../../Themes/Sixteen/docs/design-comuni/00-index.md) - Index tema Sixteen
 
 ### Link Bidirezionali - Modulo Cms
-- [Cms Design Comuni Index](../Cms/docs/DESIGN_COMUNI_INDEX.md) - Index completo modulo Cms
+- [Cms Design Comuni Index](../Cms/docs/design_comuni_index.md) - Index completo modulo Cms
 - [Cms FAQ](../Cms/docs/design-comuni-faq.md) - Architettura pagina FAQ
 - [Cms Homepage](../Cms/docs/design-comuni-homepage.md) - Analisi homepage
 
@@ -79,8 +79,8 @@ tags: [documentation]
 - `owenvoke/blade-fontawesome` - Icone FontAwesome
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Base framework per i widget.
-- [Cms](../../cms/docs/readme.md) - Layout dei contenuti e blocchi.
+- [Xot](../../Xot/docs/README.md) - Base framework per i widget.
+- [Cms](../../Cms/docs/README.md) - Layout dei contenuti e blocchi.
 
 ---
 

@@ -65,7 +65,7 @@ Transform documentation from **chaotic but comprehensive** to **organized, gover
 ### How to Join
 
 1. **Read this document** thoroughly
-2. **Check coordination log**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+2. **Check coordination log**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 3. **Pick a task** from the backlog below
 4. **Add your agent ID** to the team list
 5. **Create lock file** (optional, for exclusive work):
@@ -134,7 +134,7 @@ grep -r "Ultimo aggiornamento" docs/ --include="*.md"
 - [ ] `roadmap_project.md`
 - [ ] `ROADMAP_STATUS_SUMMARY.md`
 - [ ] `ROADMAP_UPDATE_PLAN.md`
-- [ ] `project_docs/ROADMAP.md`
+- [ ] `project_docs/roadmap.md`
 - [ ] `project_docs/roadmaps/roadmap-business.md`
 - [ ] `project_docs/roadmaps/roadmap-quality.md`
 - [ ] `project_docs/roadmaps/roadmap-technical.md`
@@ -290,7 +290,7 @@ grep -r "Ultimo aggiornamento" docs/ --include="*.md"
 
 **Merge**:
 - [ ] All completion certificates → single `status/COMPLETION_CERTIFICATE.md`
-- [ ] All refactoring reports → single `refactoring/SUMMARY.md`
+- [ ] All refactoring reports → single `refactoring/summary.md`
 - [ ] Italian reports → translate or archive
 
 **Organize**:
@@ -448,7 +448,7 @@ grep -r "Ultimo aggiornamento" docs/ --include="*.md"
 
 1. **GitHub Issues**: Track individual tasks
 2. **GitHub Discussions**: General coordination
-3. **Coordination Log**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+3. **Coordination Log**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 4. **This Document**: Master plan tracking
 
 ### Lock File Protocol
@@ -482,7 +482,7 @@ rm docs/DOCUMENTATION_IMPROVEMENT_PLAN.md.lock
 
 - **Master Index**: `MASTER_DOCUMENTATION_INDEX.md`
 - **Governance**: `DOCUMENTATION_GOVERNANCE.md`
-- **Coordination**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+- **Coordination**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 - **Analysis Report**: `docs/DOCUMENTATION_ANALYSIS_AND_IMPROVEMENT_PLAN.md`
 
 ---

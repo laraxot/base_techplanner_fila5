@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "roadmap master index"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 🗺️ FixCity - Master Roadmap Index
@@ -17,15 +18,6 @@ discussions: []
 **Completezza Funzionale**: 85%
 
 ---
-
-title: "roadmap master index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "roadmap master index"
-issues: []
-discussions: []
 ## 📋 INDICE ROADMAP MODULI
 
 ### 🔴 PRIORITÀ CRITICA - Da Completare Domani
@@ -34,6 +26,7 @@ discussions: []
 |--------|--------|--------|-------|---------|
 | **Xot** | ⚠️ In Progress | 9 | 2.5h | [→ Roadmap](../Modules/Xot/docs/roadmap-and-issues.md) |
 | **User** | ⚠️ In Progress | 95 | 6h | [→ Roadmap](../Modules/User/docs/roadmap-and-issues.md) |
+| **User** | ⚠️ In Progress | 95 | 6h | [→ Roadmap](../../User/docs/roadmap-and-issues.md) |
 
 **Totale Effort Domani**: ~8.5 ore → **100% PHPStan Level 9!**
 
@@ -50,7 +43,13 @@ discussions: []
 | **Notify** | 344 | ✅ 0 | [→ Roadmap](../Modules/Notify/docs/roadmap-and-issues.md) ⭐ |
 | **Activity** | 73 | ✅ 0 | [→ Roadmap](../Modules/Activity/docs/roadmap-and-issues.md) |
 | **Cms** | 293 | ✅ 0 | [→ Roadmap](../Modules/Cms/docs/roadmap-and-issues.md) |
-| **Gdpr** | 81 | ✅ 0 | [→ PHPStan Fixes](../Modules/Gdpr/docs/phpstan-fixes-2025-10-01.md) |
+| **Gdpr** | 81 | ✅ 0 | [→ PHPStan Fixes](../../Gdpr/docs/phpstan-fixes.md) |
+| **AI** | 19 | ✅ 0 | [→ Roadmap](../../AI/docs/roadmap-and-issues.md) ⭐ |
+| **Geo** | ~100 | ✅ 0 | [→ Roadmap](../../Geo/docs/roadmap-and-issues.md) |
+| **Notify** | 344 | ✅ 0 | [→ Roadmap](roadmap-and-issues.md) ⭐ |
+| **Activity** | 73 | ✅ 0 | [→ Roadmap](../../Activity/docs/roadmap-and-issues.md) |
+| **Cms** | 293 | ✅ 0 | [→ Roadmap](../../Cms/docs/roadmap-and-issues.md) |
+| **Gdpr** | 81 | ✅ 0 | [→ PHPStan Fixes](../Modules/Gdpr/docs/phpstan-fixes-session-user.md) |
 | **Blog** | 258 | ✅ 0 | Completo |
 | **Comment** | 26 | ✅ 0 | Completo |
 | **Job** | 206 | ✅ 0 | Completo |
@@ -69,6 +68,7 @@ discussions: []
 | Tema | Status | Roadmap |
 |------|--------|---------|
 | **Sixteen** | ✅ Attivo | [→ Roadmap](../Themes/Sixteen/docs/roadmap-and-issues.md) ⭐ |
+| **Sixteen** | ✅ Attivo | [→ Roadmap](../../../Themes/Sixteen/docs/roadmap-and-issues.md) ⭐ |
 | **TwentyOne** | ⚠️ Beta | Da documentare |
 
 ---
@@ -235,8 +235,8 @@ discussions: []
 ## 📚 DOCUMENTAZIONE CORRELATA
 
 ### Session Reports
-- [📊 Session Summary 2025-10-01](./phpstan/session-summary-2025-10-01.md)
-- [📝 Final Report 2025-10-01](./phpstan/final-report-session-2025-10-01.md)
+- [📊 Session Summary 2025-10-01](./phpstan/session-summary.md)
+- [📝 Final Report 2025-10-01](./phpstan/final-report-session.md)
 - [🛠️ Fixes Session](./phpstan/filament-v4-fixes-session.md)
 
 ### Project Overview
@@ -257,6 +257,16 @@ discussions: []
 
 ### Theme Roadmaps
 - [🎨 Sixteen Theme Roadmap](../Themes/Sixteen/docs/roadmap-and-issues.md) ⭐ ACTIVE
+- [👥 User Roadmap](../../User/docs/roadmap-and-issues.md) ⭐ AUTH
+- [🤖 AI Roadmap](../../AI/docs/roadmap-and-issues.md) ⭐ AI FEATURES
+- [📬 Notify Roadmap](roadmap-and-issues.md) ⭐ NOTIFICATIONS
+- [🗺️ Geo Roadmap](../../Geo/docs/roadmap-and-issues.md)
+- [🎨 UI Roadmap](../Modules/UI/docs/roadmap-and-issues.md)
+- [📝 Cms Roadmap](../../Cms/docs/roadmap-and-issues.md)
+- [📊 Activity Roadmap](../../Activity/docs/roadmap-and-issues.md)
+
+### Theme Roadmaps
+- [🎨 Sixteen Theme Roadmap](../../../Themes/Sixteen/docs/roadmap-and-issues.md) ⭐ ACTIVE
 
 ---
 

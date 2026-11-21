@@ -175,8 +175,8 @@ protected function setUp(): void
 
 ## Related Documentation
 
-- [Testing Guidelines](../testing-guidelines.md)
-- [Multi-Language Translation Guidelines](../multi-language-translation-guidelines.md)
+- [Testing Guidelines](./testing-guidelines.md)
+- [Multi-Language Translation Guidelines](./multi-language-translation-guidelines.md)
 - [TenantServiceProvider Architecture](../Tenant/app/Providers/TenantServiceProvider.php)
 
 ## Troubleshooting

@@ -13,13 +13,13 @@ discussions:
 related:
   - ../../../README.md
   - ../../../wiki/index.md
-  - ../../../notifications/readme.md
-  - ../../../integrations/readme.md
-  - ../../../templates/readme.md
+  - ../../../notifications/README.md
+  - ../../../integrations/README.md
+  - ../../../templates/README.md
 ---
 # BMad Agents Index
 
-**Source**: [`../../../../agents.md`](../../../../../../../../../../agents.md) (lines 40-904)  
+**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 40-904)  
 **Total Agents**: 10  
 **Last Updated**: 2026-04-11  
 
@@ -40,7 +40,7 @@ related:
 | 9 | Architect | architect | [architect.md](architect.md) | 82 | System design, architecture docs |
 | 10 | Business Analyst | analyst | [business-analyst.md](business-analyst.md) | 85 | Market research, competitive analysis |
 
-**Total Lines**: ~865 (split from ../../../../agents.md lines 40-904)
+**Total Lines**: ~865 (split from ../../../../AGENTS.md lines 40-904)
 
 ---
 
@@ -54,7 +54,7 @@ related:
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
-- ← Back to [../../../../agents.md](../../../../../../../../../../agents.md) (original source)
+- ← Back to [../../../../AGENTS.md](../../../../../../../../../../AGENTS.md) (original source)
 - ← Back to [Project Docs](../../../docs/README.md)
 
 ---
@@ -66,7 +66,7 @@ To activate an agent, mention their ID or name in your request:
 - "Use Product Manager to create a PRD..."
 - "As dev, implement the story..."
 
-For full agent definitions, see the original [`../../../../agents.md`](../../../../../../../../../../agents.md).
+For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
 
 ---
 

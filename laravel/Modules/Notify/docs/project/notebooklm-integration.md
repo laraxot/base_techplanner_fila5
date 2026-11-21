@@ -262,7 +262,7 @@ Create these NotebookLM notebooks for Notify:
    - Use: Admin panel development
 
 4. **Project Documentation**
-   - Upload: Notify docs, agents.md, .windsurfrules
+   - Upload: Notify docs, AGENTS.md, .windsurfrules
    - Topics: laraxot, project, conventions
    - Use: Project-specific queries
 

@@ -1,8 +1,8 @@
 ---
-qmd: "dynamic class resolution.divergenza"
+qmd: "Dynamic Class Resolution.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: dynamic_class_resolution.md"
+title: "Dynamic Class Resolution.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -1,8 +1,8 @@
 ---
-qmd: "architecture analysis.divergenza"
+qmd: "Architecture Analysis.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: ARCHITECTURE_ANALYSIS.md"
+title: "Architecture Analysis.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

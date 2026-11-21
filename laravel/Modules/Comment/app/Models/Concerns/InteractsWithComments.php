@@ -7,55 +7,40 @@ namespace Modules\Comment\Models\Concerns;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
 use Illuminate\Support\Facades\URL;
+use Modules\Comment\Actions\ResolveGravatarUrlAction;
+use Modules\Comment\Datas\CommentatorProperties;
+use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Enums\NotificationSubscriptionType;
-use Modules\Comment\Support\CommentConfig;
-use Modules\Comment\Support\CommentatorProperties;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
+use Modules\Comment\Models\CommentNotificationSubscription;
+use Modules\Xot\Contracts\ProfileContract;
 
 /**
  * CanComment senza RoutesNotifications — BaseUser usa già Notifiable.
  */
 trait InteractsWithComments
 {
-    /** @return MorphMany<\Modules\Comment\Models\Comment, Model> */
-    public function commentatorComments(): MorphMany
-    {
-        /** @var MorphMany<\Modules\Comment\Models\Comment, Model> $relation */
-        $relation = $this->morphMany(CommentConfig::commentModelClass(), 'commentator');
-
-        return $relation;
-    }
-
-    /** @return MorphMany<\Modules\Comment\Models\CommentNotificationSubscription, Model> */
+    /** @return MorphMany<CommentNotificationSubscription, $this> */
     public function subscriberNotificationSubscriptions(): MorphMany
     {
-        /** @var MorphMany<\Modules\Comment\Models\CommentNotificationSubscription, Model> $relation */
-        $relation = $this->morphMany(CommentConfig::commentNotificationSubscriptionModelClass(), 'subscriber');
-
-        return $relation;
-    }
-
-    /** @return MorphMany<\Modules\Comment\Models\Reaction, Model> */
-    public function reactions(): MorphMany
-    {
-        /** @var MorphMany<\Modules\Comment\Models\Reaction, Model> $relation */
-        $relation = $this->morphMany(CommentConfig::reactionModelClass(), 'commentator');
-
-        return $relation;
+        return $this->morphMany(CommentNotificationSubscription::class, 'subscriber');
     }
 
     public function commentatorProperties(): CommentatorProperties
     {
-        $email = SafeStringCastAction::cast($this->email ?? '');
-        $segment = md5(strtolower($email));
-        $defaultImage = CommentConfig::gravatarDefaultImage();
-        $nameField = CommentConfig::commentatorModelNameField();
-        $avatarField = CommentConfig::commentatorModelAvatarField();
+        // Caller: commentatorProperties() da comment-item FO + Filament comment widget.
+        // CMT-022: avatar del profilo (media o Gravatar) — supera D-03 su richiesta esplicita dell'utente.
+        $email = is_string($this->email) ? $this->email : '';
+        $config = CommentConfigData::make();
+        $nameField = (string) ($config->models['name'] ?? 'name');
+        $avatarField = (string) ($config->models['avatar'] ?? 'avatar');
         $name = is_string($this->{$nameField} ?? null) ? $this->{$nameField} : '';
-        $avatar = $this->{$avatarField} ?? null;
-        $avatarUrl = is_string($avatar) && $avatar !== ''
-            ? $avatar
-            : "https://www.gravatar.com/avatar/{$segment}?d={$defaultImage}";
+        $profile = $this->getRelationValue('profile');
+        $avatar = $profile instanceof ProfileContract ? $profile->getAvatarUrl() : ($this->{$avatarField} ?? null);
+        $avatarUrl = is_string($avatar) && $avatar !== '' ? $avatar : '';
+        // comments.gravatar.enabled = false (es. un portale della PA, ADR docs/adr/gravatar-switch.md): niente terzi, le viste mostrano le iniziali.
+        if ($avatarUrl === '' && $email !== '' && $config->gravatarEnabled()) {
+            $avatarUrl = app(ResolveGravatarUrlAction::class)->execute($email);
+        }
 
         return CommentatorProperties::email($email)
             ->name($name)
@@ -63,12 +48,12 @@ trait InteractsWithComments
     }
 
     public function subscribeToCommentNotifications(
-        Model $hasComment,
+        Model $hasComments,
         NotificationSubscriptionType $subscriptionType
     ): self {
         $this->subscriberNotificationSubscriptions()->updateOrCreate([
-            'commentable_type' => $hasComment->getMorphClass(),
-            'commentable_id' => $hasComment->getKey(),
+            'commentable_type' => $hasComments->getMorphClass(),
+            'commentable_id' => $hasComments->getKey(),
         ], [
             'type' => $subscriptionType->value,
         ]);
@@ -85,18 +70,18 @@ trait InteractsWithComments
 
     public function unsubscribeFromCommentNotificationsUrl(Model $hasComments): ?string
     {
-        $notificationSubscription = $this->subscriberNotificationSubscriptions()
+        $notifySub = $this->subscriberNotificationSubscriptions()
             ->where('commentable_type', $hasComments->getMorphClass())
             ->where('commentable_id', $hasComments->getKey())
             ->first();
 
-        if (! $notificationSubscription) {
+        if (! $notifySub instanceof CommentNotificationSubscription) {
             return null;
         }
 
         return URL::signedRoute(
-            'comments::notifications.unsubscribe',
-            [$notificationSubscription],
+            'comment::notifications.unsubscribe',
+            [$notifySub],
             now()->addWeek(),
         );
     }
@@ -111,7 +96,7 @@ trait InteractsWithComments
     public function unsubscribeFromAllCommentNotificationsUrl(): string
     {
         return URL::signedRoute(
-            'comments::notifications.unsubscribeAll',
+            'comment::notifications.unsubscribeAll',
             [static::class, $this->getKey()],
             now()->addWeek(),
         );
@@ -125,11 +110,11 @@ trait InteractsWithComments
             ->where('commentable_id', $hasComments->getKey())
             ->first();
 
-        if ($subscription === null) {
+        if (! $subscription instanceof CommentNotificationSubscription) {
             return null;
         }
 
-        $type = $subscription->getAttribute('type');
+        $type = $subscription->type;
 
         if ($type instanceof NotificationSubscriptionType) {
             return $type;

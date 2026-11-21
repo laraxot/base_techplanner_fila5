@@ -13,7 +13,7 @@ updated: "2026-10-08"
 qmd: "changelog"
 issues: []
 discussions: []
-canonical: ../changelog.md
+canonical: ../CHANGELOG.md
 ---
 
 # Changelog

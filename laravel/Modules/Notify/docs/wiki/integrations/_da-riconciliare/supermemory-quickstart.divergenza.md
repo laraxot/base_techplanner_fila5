@@ -1,8 +1,8 @@
 ---
-qmd: "supermemory quickstart.divergenza"
+qmd: "Supermemory Quickstart.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: SUPERMEMORY_QUICKSTART.md"
+title: "Supermemory Quickstart.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

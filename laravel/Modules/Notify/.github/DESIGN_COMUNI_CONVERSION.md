@@ -114,7 +114,7 @@ Each page has a dedicated GitHub issue:
 - 🎨 [Component Catalog](./laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md)
 - 🔧 [Development Guide](./laravel/Themes/Sixteen/docs/DEVELOPMENT.md)
 - 📸 [Screenshots Folder](./laravel/Themes/Sixteen/docs/screenshots/)
-- 🧪 [Testing Guide](./laravel/Themes/Sixteen/docs/TESTING.md)
+- 🧪 [Testing Guide](./laravel/Themes/Sixteen/docs/testing.md)
 
 ---
 

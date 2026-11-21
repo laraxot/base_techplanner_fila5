@@ -1,8 +1,8 @@
 ---
-qmd: "composer strategy"
+qmd: "Composer Strategy"
 issues: []
 discussions: []
-title: "Laravel-Modules Composer Strategy"
+title: "Composer Strategy"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -275,7 +275,7 @@ Composer vede:
 - [Composer Documentation](https://getcomposer.org/doc/)
 
 ### Project Documentation
-- [COMPOSER_STRATEGY.md](COMPOSER_STRATEGY.md) - Questo file
+- [COMPOSER_STRATEGY.md](composer_strategy.md) - Questo file
 - [MODULES_ARCHITECTURE.md](MODULES_ARCHITECTURE.md) - Architettura moduli
 
 ---

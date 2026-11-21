@@ -4,16 +4,17 @@ type: concept
 module: Comment
 tags: [comment, can-comment, contract, php84, eloquent]
 created: 2026-06-06
-updated: 2026-06-06
+updated: 2026-10-20
 qmd: "CanComment contract getKey mixed PHP 8.4 Eloquent Model compatible fatal error"
 issues:
   - "https://github.com/laraxot/base_fixcity_fila5/issues/291"
 discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/273"
 related:
-  - ../decisions/adr-models-contracts-vs-app-contracts.md
+  - ../../adr/models-contracts-vs-app-contracts.md
   - ../../../../../../docs/wiki/memories/models-contracts-vs-app-contracts.md
   - ../../../../../../docs/wiki/memories/module-providers-manifest-not-manual-register.md
+status: draft
 ---
 
 # `CanComment` — firme compatibili Eloquent (PHP 8.4)
@@ -60,7 +61,28 @@ cd laravel && ./vendor/bin/pest tests/Unit/Modules/Comment/CanCommentContractTes
 php artisan optimize:clear   # se opcache/serve tiene vecchia interfaccia
 ```
 
+## Owner contratto (2026-06-10)
+
+- **Canon:** `Modules\Comment\Models\Contracts\CanComment`
+- **Alias BC:** `Modules\User\Contracts\CanComment extends Comment\...\CanComment` (@deprecated)
+- In `Modules\Comment\*`: type hint solo sul contratto Comment
+
+Vedi: [can-comment-contract-owner.md](can-comment-contract-owner.md) · [comment-policy-blade-commentator.md](../../concepts/comment-policy-blade-commentator.md)
+
 ## Consumer
 
-- `BaseUser implements CanComment` + `InteractsWithComments`
-- Spatie Livewire policies ancora su `Spatie\Comments\Models\Concerns\Interfaces\CanComment` — structural typing OK se metodi matchano
+- `BaseUser implements User\Contracts\CanComment` + `InteractsWithComments`
+- `User\Models\User` eredita il contratto; consumer tenant (es. `Fixcity\Models\User`) può `implements Comment\Contracts\CanComment` per check legacy
+- Vietato `use InteractsWithComments` duplicato nel child se già su `BaseUser`
+
+## `Commentable` — covarianza `MorphMany` (2026-10-20)
+
+Il contratto `Commentable::comments()` e il trait `HasComments::comments()` condividono `@return MorphMany<Comment, Model>`: stesso secondo template sul contratto e sull'implementazione, così PHPStan non segnala `method.childReturnType` su `Article`, `Ticket` e `Comment` che implementano `Commentable`.
+
+| Livello | Firma attesa |
+|---------|----------------|
+| Interfaccia `Commentable` | `MorphMany<Comment, Model>` — capacità generica |
+| Trait `HasComments` | `MorphMany<Comment, Model>` — allineato al contratto (LSP / PHPStan) |
+| `CanComment::getKey()` | `: mixed` — allineato a `Model::getKey()` (PHP 8.4 LSP), non `: string\|int` ristretto |
+
+**Regola PHPStan:** non restringere i return type del contratto rispetto a Eloquent; tipizza i modelli concreti. Per altre relazioni morph su contratti multi-modulo, stesso schema: `covariant Model` (o template `Model`) nell'interfaccia, `$this` sull'implementazione — vedi [phpstan-relationship-fix.md](../../../../User/docs/phpstan-relationship-fix.md).

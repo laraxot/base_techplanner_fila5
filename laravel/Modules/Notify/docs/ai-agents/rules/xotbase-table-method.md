@@ -286,7 +286,7 @@ class MyWidget extends XotBaseTableWidget
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-- **[Rules Index](00-INDEX.md)** - All rules
+- **[Rules Index](00-index.md)** - All rules
 - **[Rules Index](00-index.md)** - All rules
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - Why extend XotBase
 - **[Bash Commands Auto-Allow](bash-commands-auto-allow.md)** - Bash permissions

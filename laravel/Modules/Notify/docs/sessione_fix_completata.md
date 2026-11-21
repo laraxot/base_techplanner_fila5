@@ -146,9 +146,9 @@ updated: 2026-08-24
 ## 📁 Documentazione
 
 ### File Creati
-1. `docs/screenshots/homepage/ANALISI_VISIVA.md`
-2. `docs/screenshots/homepage/SCREENSHOT_ANALYSIS.md`
-3. `docs/screenshots/homepage/FIX_PLAN.md`
+1. `docs/screenshots/homepage/analisi_visiva.md`
+2. `docs/screenshots/homepage/screenshot_analysis.md`
+3. `docs/screenshots/homepage/fix_plan.md`
 4. `docs/RALPH_LOOP_EXECUTION.md`
 5. `.openvikings/homepage_alignment_context.md`
 

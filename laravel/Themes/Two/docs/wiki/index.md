@@ -20,4 +20,8 @@ Tema **Two** — secondo tema del progetto.
 | [concepts/](./concepts/) | [mobile-navigation-contract](./concepts/mobile-navigation-contract.md), [ponytail-audit](./concepts/ponytail-audit.md), [public-asset-deployment](./concepts/public-asset-deployment.md), [theme-root-uppercase-folders](./concepts/theme-root-uppercase-folders.md) |
 | `decisions/`, `glossary/`, `how-to/`, `index/`, `reference/` | cartelle vuote (solo `.gitkeep`) |
 
+<<<<<<< .merge_file_njUCQO
 Altro: [log.md](./log.md), [AGENTS.md](./AGENTS.md) (istruzioni per chi mantiene la wiki). Indice di tutta la docs del tema: [../README.md](../README.md). Le cartelle `rules/` e `skills/` citate dal log iniziale non esistono.
+=======
+Altro: [log.md](./log.md), [AGENTS.md](./AGENTS.md) (istruzioni per chi mantiene la wiki). Indice di tutta la docs del tema: [../index.md](index.md). Le cartelle `rules/` e `skills/` citate dal log iniziale non esistono.
+>>>>>>> .merge_file_MpgkLu

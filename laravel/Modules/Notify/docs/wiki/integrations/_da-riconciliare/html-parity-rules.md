@@ -8,14 +8,20 @@ qmd: "html-parity-rules html parity analysis rules"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "../../../00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-notify-completamento-assoluto.md"
+  - "../../../acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
+status: draft
 ---
 
 # HTML Parity Analysis Rules
@@ -405,9 +411,14 @@ trans('<nome progetto>::segnalazione.heading.title.label')
 ## 🔗 Related Documentation
 
 - [Translation Conventions](./translation-conventions.md)
-- [Blade Architecture](../laravel/claude.md#blade-components)
+- [Blade Architecture](../laravel/CLAUDE.md#blade-components)
 - [Agnostic Scripts](./agnostic-documentation-rule.md)
+<<<<<<< .merge_file_f0djDb
 - [Multi-Agent Coordination](./multi-agent-coordination-rules.md)
+=======
+- [Multi-Agent Coordination](../../../multi-agent-coordination-rules.md)
+- [Multi-Agent Coordination](../../../multi-agent-coordination-rules.md)
+>>>>>>> .merge_file_dVyEHD
 
 ---
 

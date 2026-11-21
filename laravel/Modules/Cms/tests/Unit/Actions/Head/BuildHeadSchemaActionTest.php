@@ -116,6 +116,7 @@ test('the first breadcrumb falls back to the brand and an existing isPartOf is k
     Assert::assertSame(['@id' => 'https://other.test/#website'], schemaArray($schemas[0])['isPartOf']);
 });
 
+<<<<<<< .merge_file_cxEKlQ
 test('business data turn the home organization into a local business', function (): void {
     $schemas = (new BuildHeadSchemaAction())->execute(
         isHome: true,
@@ -156,6 +157,15 @@ test('business data turn the home organization into a local business', function 
 
 test('without business data the home organization stays a plain Organization', function (): void {
     $schemas = (new BuildHeadSchemaAction())->execute(
+=======
+/**
+ * @param  list<string>  $sameAs
+ * @return array<string, mixed>
+ */
+function homeOrganization(?string $description, array $sameAs): array
+{
+    return schemaArray((new BuildHeadSchemaAction)->execute(
+>>>>>>> .merge_file_0xGCQE
         isHome: true,
         brand: 'Example',
         homeUrl: 'https://example.test/it',
@@ -165,10 +175,26 @@ test('without business data the home organization stays a plain Organization', f
         logoUrl: null,
         page: [],
         rootUrl: 'https://example.test',
+<<<<<<< .merge_file_cxEKlQ
     );
 
     $organization = schemaArray($schemas[0]);
 
     Assert::assertSame('Organization', $organization['@type']);
     Assert::assertArrayNotHasKey('address', $organization);
+=======
+        description: $description,
+        sameAs: $sameAs,
+    )[0]);
+}
+
+test('home organization carries description and official profiles only when the tenant has them', function (): void {
+    $full = homeOrganization('  Segnala un disservizio al Comune.  ', ['https://www.linkedin.com/company/example', 'https://github.com/example']);
+    Assert::assertSame('Segnala un disservizio al Comune.', $full['description']);
+    Assert::assertSame(['https://www.linkedin.com/company/example', 'https://github.com/example'], $full['sameAs']);
+
+    $bare = homeOrganization(' ', []);
+    Assert::assertArrayNotHasKey('description', $bare);
+    Assert::assertArrayNotHasKey('sameAs', $bare);
+>>>>>>> .merge_file_0xGCQE
 });

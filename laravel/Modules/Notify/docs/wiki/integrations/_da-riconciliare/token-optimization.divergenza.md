@@ -1,8 +1,8 @@
 ---
-qmd: "token optimization.divergenza"
+qmd: "Token Optimization.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: token-optimization.md"
+title: "Token Optimization.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -51,7 +51,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -140,7 +140,7 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-- [Notify Module Documentation](readme.md)
+- [Notify Module Documentation](README.md)
 - [RecordNotification Implementation](notifications/record_notification.md)
 - [SpatieEmail Integration](spatie-email-usage-guide-1.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
@@ -335,7 +335,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -411,7 +411,7 @@ Verificare che:
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-- [Notify Module Documentation](readme.md)
+- [Notify Module Documentation](README.md)
 - [SMS Testing Guide](sms/testing.md)
 - [MailTemplate Integration](mail-templates-structure-1.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
@@ -582,7 +582,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -645,7 +645,7 @@ return $action->execute($smsData);
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
-- [Notify Module Documentation](readme.md)
+- [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms-channel-action-resolution-1.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
@@ -707,7 +707,7 @@ return $action->execute($smsData);
 - Solo miglioramento della leggibilità del codice
 
 ## Collegamenti
-- [Notify Module Documentation](readme.md)
+- [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms-channel-action-resolution.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
@@ -789,7 +789,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1253,7 +1253,7 @@ enum SmsDriverEnum: string implements HasLabel, HasIcon, HasColor
 
 ## Collegamenti Correlati
 
-- [Notify Module](../readme.md)
+- [Notify Module](../README.md)
 - [SMS Configuration](../sms-configuration.md)
 - [Translation Standards](../../lang/docs/translation-standards.md)
 - [Filament Integration](../../xot/docs/filament-translations.md)
@@ -1323,7 +1323,7 @@ enum SmsDriverEnum: string implements HasLabel, HasIcon, HasColor
 - docs/notifications/telegram-notifications-guide.md
 - docs/phpstan-fixes-early-cycle.md
 - docs/provider-actions-architecture.md
-- docs/readme.md
+- docs/README.md
 - docs/reusabilitylines.md
 - docs/roadmap.md
 - docs/sms-provider-configuration-best-practices.md

@@ -11,8 +11,8 @@ related:
   - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./absolute-completion-notify-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -434,7 +434,7 @@ Before starting your subtask:
 |----------|---------|-----------|
 | **PHASE-1-STRATEGY.md** | Complete research & strategy | 20 min |
 | **GSD-PHASE-1-EXECUTION.md** | Execution plan with all 6 subtasks | 15 min |
-| **00-INDEX.md** | Master documentation index | 10 min |
+| **00-index.md** | Master documentation index | 10 min |
 
 ### 🔧 TOOLS & SCRIPTS
 | Document | Purpose | Read Time |

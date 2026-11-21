@@ -35,7 +35,7 @@ Consolidated from **14** individual files.
 
 ## path-and-interface-rules-1
 
-*Consolidated from: `path-and-interface-rules-1.md`*
+*Consolidated from: `path-and-interface-rules.md`*
 
 
 ## Principi Fondamentali
@@ -148,7 +148,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -634,7 +634,7 @@ Questa struttura garantisce:
 
 ## path-and-namespace-rules-1
 
-*Consolidated from: `path-and-namespace-rules-1.md`*
+*Consolidated from: `path-and-namespace-rules.md`*
 
 
 > **ATTENZIONE:** In nessun caso il namespace deve contenere il segmento `App`, anche se il file si trova nella cartella `app/`. Questa è una regola fondamentale e ogni violazione può causare errori di autoloading, incompatibilità con PSR-4 e problemi di coerenza nel progetto. Consulta sempre questa sezione prima di creare nuovi file o correggere errori di namespace.
@@ -813,7 +813,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1743,7 +1743,7 @@ Questo significa che il namespace `Modules\Notify` mappa alla directory `app/` d
 
 ## path-conventions-2
 
-*Consolidated from: `path-conventions-2.md`*
+*Consolidated from: `path-conventions-user.md`*
 
 title: "Path Conventions"
 type: concept
@@ -1758,7 +1758,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"

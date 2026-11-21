@@ -122,5 +122,5 @@ Prima di toccare **qualsiasi** codice, devi comprendere:
 
 - [Indice GEMINI](./gemini-split-index.md)
 - [memories.md](./memories.md)
-- [GEMINI.md originale](../../GEMINI.md)
+- [gemini.md originale](../../gemini.md)
 - [Index principale](./index.md)

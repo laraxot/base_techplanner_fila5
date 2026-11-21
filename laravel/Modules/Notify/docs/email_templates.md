@@ -334,12 +334,12 @@ php artisan tinker
 - [Gestione Traduzioni](../Lang/project_docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [Configurazione Email](../../../project_docs/email-configuration.md)
 - [Documentazione Traduzioni](./translations.md)
-- [Proposta Slug Template](./EMAIL_TEMPLATE_SLUG_PROPOSAL.md)
+- [Proposta Slug Template](./email_template_slug_proposal.md)
 - [Notify Module Index](./index.md)
 - [Architecture Overview](./architecture.md)
-- [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
-- [SMS Implementation](./SMS_IMPLEMENTATION.md)
-- [Troubleshooting](./TROUBLESHOOTING.md)
+- [Notification Channels Implementation](./notification_channels_implementation.md)
+- [SMS Implementation](./sms_implementation.md)
+- [Troubleshooting](./troubleshooting.md)
 
 ---
 

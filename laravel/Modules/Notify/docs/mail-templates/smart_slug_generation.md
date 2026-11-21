@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "smart slug generation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Generazione Intelligente di Slug in Filament
@@ -178,7 +179,12 @@ public static function getFormSchema(): array
 
 ### 1. Pacchetto TitleWithSlugInput
 
+<<<<<<< .merge_file_ZIPbej
 Come documentato in [TITLE_WITH_SLUG_COMPONENT.md](./TITLE_WITH_SLUG_COMPONENT.md), il pacchetto `filament-title-with-slug` offre funzionalità simili con un'interfaccia più ricca. Tuttavia, l'approccio presentato qui può essere implementato senza dipendenze aggiuntive.
+=======
+Come documentato in [TITLE_WITH_SLUG_COMPONENT.md](title_with_slug_component.md), il pacchetto `filament-title-with-slug` offre funzionalità simili con un'interfaccia più ricca. Tuttavia, l'approccio presentato qui può essere implementato senza dipendenze aggiuntive.
+Come documentato in [TITLE_WITH_SLUG_COMPONENT.md](./title_with_slug_component.md), il pacchetto `filament-title-with-slug` offre funzionalità simili con un'interfaccia più ricca. Tuttavia, l'approccio presentato qui può essere implementato senza dipendenze aggiuntive.
+>>>>>>> .merge_file_5PqPrf
 
 ### 2. Reindirizzamenti Automatici
 
@@ -198,6 +204,15 @@ Per il modulo Notify di <nome progetto>, questa soluzione rappresenta un equilib
 
 - [Articolo Laravel News](https://laravel-news.com/generating-slugs-from-a-title-in-filament)
 - [Documentazione Filament Forms](https://filamentphp.com/docs/3.x/forms/advanced)
+<<<<<<< .merge_file_ZIPbej
 - [Implementazione Modello con Slug](./MODEL_SLUG_IMPLEMENTATION.md)
 - [Componente TitleWithSlug](./TITLE_WITH_SLUG_COMPONENT.md)
 - [Miglioramenti UI/UX per Slug](./UI_UX_ENHANCEMENTS.md)
+=======
+- [Implementazione Modello con Slug](model_slug_implementation.md)
+- [Componente TitleWithSlug](title_with_slug_component.md)
+- [Miglioramenti UI/UX per Slug](ui_ux_enhancements.md)
+- [Implementazione Modello con Slug](./model_slug_implementation.md)
+- [Componente TitleWithSlug](./title_with_slug_component.md)
+- [Miglioramenti UI/UX per Slug](./ui_ux_enhancements.md)
+>>>>>>> .merge_file_5PqPrf

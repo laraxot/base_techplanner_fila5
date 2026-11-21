@@ -236,7 +236,7 @@ bash bashscripts/fix-permissions.sh
 - [ ] Create bash script for permissions
 - [ ] Add to pre-deployment checklist
 - [ ] Document in AGENTS.md
-- [ ] Document in agents.md
+- [ ] Document in AGENTS.md
 
 ---
 

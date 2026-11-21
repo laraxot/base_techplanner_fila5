@@ -675,7 +675,7 @@ Themes/
 
 ```
 docs/
-├── DRY-KISS-ANALYSIS-MASTER.md (questo file)
+├── dry-kiss-analysis-master.md (questo file)
 ├── analisi-metodi-duplicati-MASTER.md
 ├── analisi-metodi-duplicati-INDEX.md
 ├── implementazione-refactoring-basemodel.md

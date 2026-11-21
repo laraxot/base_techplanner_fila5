@@ -8,14 +8,20 @@ qmd: "master-documentation-index 📚 master documentation index"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "../../../00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-notify-completamento-assoluto.md"
+  - "../../../acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
+status: draft
 ---
 
 # 📚 Master Documentation Index
@@ -35,12 +41,26 @@ related:
 
 ### Per Sviluppatori
 - [Architecture Overview](./architecture/README.md)
+<<<<<<< .merge_file_sgGvbU
 - [Getting Started](./GETTING_STARTED.md)
+=======
+- [Getting Started](../../../GETTING_STARTED.md)
+3. [Multi-Agent Collaboration](../../../multi-agent-collaboration.md) - Come lavorare con AI agents
+
+### Per Sviluppatori
+- [Architecture Overview](./architecture/README.md)
+- [Getting Started](../../../GETTING_STARTED.md)
+>>>>>>> .merge_file_rGUzFu
 - [Coding Standards](./conventions/README.md)
 
 ### Per AI Agents
 - [Project Context](./project/project.md)
+<<<<<<< .merge_file_sgGvbU
 - [Agent Coordination](./multi-agent-collaboration.md)
+=======
+- [Agent Coordination](../../../multi-agent-collaboration.md)
+- [Agent Coordination](../../../multi-agent-collaboration.md)
+>>>>>>> .merge_file_rGUzFu
 - [OpenViking Context](../bashscripts/ai/openviking.md)
 
 ---
@@ -66,7 +86,12 @@ related:
 - [Naming Conventions](./conventions/naming.md)
 
 ### 🤖 AI Tools
+<<<<<<< .merge_file_sgGvbU
 - [Multi-Agent Guide](./multi-agent-collaboration.md)
+=======
+- [Multi-Agent Guide](../../../multi-agent-collaboration.md)
+- [Multi-Agent Guide](../../../multi-agent-collaboration.md)
+>>>>>>> .merge_file_rGUzFu
 - [BMAD Framework](./bmad/README.md)
 - [GSD Workflow](./gsd/README.md)
 - [NotebookLM](./notebooklm/README.md)
@@ -74,7 +99,12 @@ related:
 
 ### 📊 Reports
 - [Status Reports](./reports/README.md)
+<<<<<<< .merge_file_sgGvbU
 - [Quality Reports](./reports/quality.md)
+=======
+- [Quality Reports](../../../roadmap/quality.md)
+- [Quality Reports](../../../roadmap/quality.md)
+>>>>>>> .merge_file_rGUzFu
 - [Performance Reports](./reports/performance.md)
 
 ---

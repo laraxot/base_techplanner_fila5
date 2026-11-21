@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "final summary"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 📊 FIXCITY - RIEPILOGO FINALE COMPLETAMENTO
@@ -16,15 +17,6 @@ discussions: []
 **Status**: ✅ FASE COMPLETATA CON SUCCESSO
 
 ---
-
-title: "final summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "final summary"
-issues: []
-discussions: []
 ## 🎯 OBIETTIVO RAGGIUNTO
 
 Completamento sistematico della documentazione e delle roadmap del progetto FixCity per renderlo la piattaforma
@@ -51,7 +43,7 @@ di eccellenza 2025 per la gestione delle segnalazioni urbane in Italia.
 ### 👥 Modulo User (3)
 11. ✅ **2FA_GUIDE.md** - Implementazione 2FA completa (TOTP, recovery codes, testing)
 12. ✅ **SSO_GUIDE.md** - SAML 2.0 + OIDC completo (Azure AD, Google, Okta)
-13. ✅ **ROADMAP.md** - Aggiornata Q4 2025-Q1 2026
+13. ✅ **roadmap.md** - Aggiornata Q4 2025-Q1 2026
 
 ### 🎨 Tema Sixteen (1)
 14. ✅ **ROADMAP_2025.md** - Aggiornata Q4 2025-Q2 2026
@@ -147,7 +139,7 @@ base_ptv_fila5/
     │
     ├── Modules/User/docs/              ✅ 92% COMPLETO
     │   ├── README.md                   ✅ Completo
-    │   ├── ROADMAP.md                  ✅ Aggiornato
+    │   ├── roadmap.md                  ✅ Aggiornato
     │   ├── 2FA_GUIDE.md                ✅ NEW - Implementazione completa
     │   ├── SSO_GUIDE.md                ✅ NEW - SAML + OIDC
     │   └── API.md                      📋 TODO
@@ -213,7 +205,7 @@ base_ptv_fila5/
 ### Roadmap (4 aggiornate)
 - ✅ **ROADMAP_STATUS_SUMMARY.md** - Master status
 - ✅ **Fixcity/ROADMAP_2025.md** - Timeline Q4 2025-Q2 2026
-- ✅ **User/ROADMAP.md** - Timeline Q4 2025-Q1 2026
+- ✅ **User/roadmap.md** - Timeline Q4 2025-Q1 2026
 - ✅ **Sixteen/ROADMAP_2025.md** - Timeline Q4 2025-Q2 2026
 
 ---
@@ -290,8 +282,8 @@ base_ptv_fila5/
 ## 📞 SUPPORTO E COMMUNITY
 
 ### Per Sviluppatori
-- **Quick Start**: [QUICK_START.md](./QUICK_START.md)
-- **Documentation Index**: [DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md)
+- **Quick Start**: [QUICK_START.md](./quick_start.md)
+- **Documentation Index**: [DOCUMENTATION_INDEX.md](./documentation_index.md)
 - **Slack**: #fixcity-dev
 - **Slack**: #ptv-dev
 
@@ -342,7 +334,7 @@ Il progetto FixCity ha raggiunto un livello di documentazione e organizzazione e
 ### Modulo User
 - [x] 2FA_GUIDE.md creato
 - [x] SSO_GUIDE.md creato
-- [x] ROADMAP.md aggiornato
+- [x] roadmap.md aggiornato
 - [ ] API.md da creare
 
 ### Tema Sixteen

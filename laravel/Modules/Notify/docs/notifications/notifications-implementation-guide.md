@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "notifications implementation guide"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Guida all'Implementazione delle Notifiche

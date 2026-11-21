@@ -10,12 +10,13 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./2-1-1-plan.md"
   - "./2-1-context.md"
-  - "./agents.md"
+  - "./AGENTS.md"
   - "./ai-agent-lessons-learned.md"
   - "./ai-skills-and-plugins-complete.md"
   - "./commit-message.md"
   - "./configuration.md"
   - "./design-comuni-bmad-master-plan.md"
+status: draft
 ---
 
 # Theme Detection System - Notify Fila5
@@ -409,10 +410,11 @@ new class extends Component {
 
 ### Internal Documents
 
-- → [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md) - Layout hierarchy
+- → [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md) - Layout hierarchy
 - → [Page Component Architecture](Modules/Cms/docs/PAGE_COMPONENT_architecture.md) - Page component
 - → [Vite Build System](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md) - Build process
 - → [Master Index](docs/module-docs-index.md) - Central navigation
+- → [Master Index](../module-docs-index.md) - Central navigation
 
 ### External Resources
 
@@ -494,8 +496,12 @@ pages/tests/amministrazione.blade.php # SBAGLIATO
 - [ ] `composer update -W` executed
 - [ ] `npm install` executed
 - [ ] `npm run build` executed
+<<<<<<< .merge_file_maZw3R
 - [ ] `symlink public_html/themes (npm run copy obsoleto)` executed
 - [ ] `public_html/themes/<Tema>` e' un symlink a `laravel/Themes/<Tema>/public` (`npm run copy` dismesso)
+=======
+- niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+>>>>>>> .merge_file_V1DxWp
 - [ ] Manifest exists: `public_html/themes/{theme}/manifest.json`
 
 ### Blade Components

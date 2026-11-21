@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "custom charts deep dive"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Custom Question Types - Deep Dive Technical Guide
@@ -18,15 +19,6 @@ discussions: []
 **Prerequisites**: Laravel 12, Filament 5, Spatie Laravel Data, MySQL 8.0+
 
 ---
-
-title: "custom charts deep dive"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "custom charts deep dive"
-issues: []
-discussions: []
 ## Table of Contents
 
 1. [Executive Summary](#executive-summary)

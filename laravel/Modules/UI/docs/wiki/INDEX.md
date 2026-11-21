@@ -9,7 +9,7 @@ qmd: "ui module wiki index filament second brain"
 issues:
 discussions:
 related:
-  - "./agents.md"
+  - "./AGENTS.md"
   - "./bmad-method.md"
   - "./context-compression.md"
   - "./log.md"

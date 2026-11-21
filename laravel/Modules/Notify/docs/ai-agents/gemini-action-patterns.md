@@ -143,5 +143,5 @@ Alcune eccezioni sono pragmaticamente accettabili:
 
 - [Indice GEMINI](./gemini-split-index.md)
 - [queueable-actions.md](./queueable-actions.md)
-- [GEMINI.md originale](../../GEMINI.md)
+- [gemini.md originale](../../gemini.md)
 - [Index principale](./index.md)

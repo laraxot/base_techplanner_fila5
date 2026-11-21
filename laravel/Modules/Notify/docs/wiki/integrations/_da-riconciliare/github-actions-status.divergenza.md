@@ -1,8 +1,8 @@
 ---
-qmd: "github actions status.divergenza"
+qmd: "Github Actions Status.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: GITHUB_ACTIONS_STATUS.md"
+title: "Github Actions Status.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

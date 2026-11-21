@@ -1,8 +1,8 @@
 ---
-qmd: "sync remote repo test plan"
+qmd: "Sync Remote Repo Test Plan"
 issues: []
 discussions: []
-title: "Sync Remote Repo - Test Plan"
+title: "Sync Remote Repo Test Plan"
 module: notify
 type: integration
 tags: [integrations, modules, notify]

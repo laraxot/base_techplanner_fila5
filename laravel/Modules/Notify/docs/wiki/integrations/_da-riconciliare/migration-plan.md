@@ -1,8 +1,8 @@
 ---
-qmd: "migration plan"
+qmd: "Migration Plan"
 issues: []
 discussions: []
-title: "Documentation Agnostic Migration Plan"
+title: "Migration Plan"
 module: notify
 type: integration
 tags: [integrations, modules, notify]

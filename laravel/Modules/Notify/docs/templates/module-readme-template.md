@@ -10,7 +10,7 @@ title: [Module Name]
 module: [module-slug]
 status: production
 related:
-  - "./readme.md"
+  - "./README.md"
 ---
 
 # [Module Name] Module
@@ -180,6 +180,6 @@ composer test -- Modules/[ModuleName]
 
 ---
 
-Navigation: [Project Home](../../docs/INDEX.md) | [Modules](../../docs/modules/README.md)
+Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md)
 Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md)
 

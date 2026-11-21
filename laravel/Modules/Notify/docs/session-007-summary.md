@@ -123,7 +123,7 @@ laravel/Themes/Sixteen/docs/:
 
 ### Modified Files
 ```
-laravel/Themes/Sixteen/docs/00-INDEX.md
+laravel/Themes/Sixteen/docs/00-index.md
 ├─ Added PHASE 1 EXECUTION DOCUMENTS section
 ├─ Added MULTI-AGENT WORKFLOW section
 ├─ Added CURRENT STATUS section
@@ -193,9 +193,9 @@ Total Documents: 5 (created Session 006)
 Total Characters: ~63,000
 - PHASE-1-STRATEGY.md (22,938 chars)
 - GSD-PHASE-1-EXECUTION.md (19,499 chars)
-- bashscripts/docs/html/INDEX.md (8,531 chars)
+- bashscripts/docs/html/index.md (8,531 chars)
 - bashscripts/html/extract-body-html.py (4,156 chars)
-- 00-INDEX.md (12,926 chars)
+- 00-index.md (12,926 chars)
 
 ### Phase 1 (Execution) - IN PROGRESS 🟠
 Documents Created This Session: 8
@@ -387,7 +387,7 @@ Must achieve ALL criteria:
 - EXECUTOR-2-SUBTASKS-3-4.md (for Executor #2)
 
 **Tools**:
-- bashscripts/docs/html/INDEX.md (comparison tools)
+- bashscripts/docs/html/index.md (comparison tools)
 
 ---
 

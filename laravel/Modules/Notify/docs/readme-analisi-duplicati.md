@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -51,7 +51,7 @@ Ogni modulo ha una copia in `Modules/{ModuleName}/docs/metodi-duplicati-analisi-
 - `Modules/Seo/docs/metodi-duplicati-analisi-1.md`
 - `Modules/Tenant/docs/metodi-duplicati-analisi-1.md`
 - `Modules/UI/docs/metodi-duplicati-analisi-1.md`
-- `Modules/User/docs/metodi-duplicati-analisi-1.md`
+- `Modules/User/docs/metodi-duplicati-analisi.md`
 - `Modules/Xot/docs/metodi-duplicati-analisi-1.md`
 
 ### Copie nei Temi

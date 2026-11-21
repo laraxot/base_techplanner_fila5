@@ -196,7 +196,11 @@ Tutti verificati come sottoinsiemi/duplicati del canonico kebab (0 righe uniche 
 righe stale `saluteora`/`fixcity`/`project_docs`). Refs rotte verso i file eliminati corrette
 in `architecture-patterns.md`, `svg-icons-automatic-registration.md`,
 `_archive/svg-icons-automatic-registration.md`, `filament-components-usage.md`,
+<<<<<<< .merge_file_t4u5VN
 `legacy/filament-components-usage.md`, `roadmap/q4-roadmap.md`, `conflitti_merge_risolti.md`,
+=======
+`legacy/filament-components-usage.md`, `roadmap/roadmap.md`, `conflitti_merge_risolti.md`,
+>>>>>>> .merge_file_EIwYCL
 
 `legacy/filament-components-usage.md`, `roadmap/roadmap.md`, `conflitti_merge_risolti.md`,
 `_archive/conflitti_merge_risolti.md`, `_archive/filament_components_usage.md`.

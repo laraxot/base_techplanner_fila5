@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "custom charts troubleshooting"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Custom Charts Troubleshooting Guide
@@ -17,15 +18,6 @@ discussions: []
 **Complexity**: All Levels
 
 ---
-
-title: "custom charts troubleshooting"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "custom charts troubleshooting"
-issues: []
-discussions: []
 ## Quick Reference
 
 | Error | Severity | Quick Fix |

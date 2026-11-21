@@ -19,11 +19,16 @@ use Modules\Xot\Filament\Pages\BaseSettingPage;
 class SettingPage extends BaseSettingPage
 {
     /**
-     * @return array<string, Repeater>
+     * @see Modules/Seo/docs/adr/search-engine-presence.md (indexnow_key)
+     *
+     * @return array<string, Repeater|TextInput>
      */
     protected function getFormSchema(): array
     {
         return [
+            'indexnow_key' => TextInput::make('indexnow_key')
+                ->maxLength(128)
+                ->regex('/^[A-Za-z0-9-]{8,128}$/'),
             'path_aliases' => Repeater::make('path_aliases')
                 ->schema([
                     TextInput::make('alias')

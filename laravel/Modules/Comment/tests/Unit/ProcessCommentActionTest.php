@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Modules\Comment\Actions\ProcessCommentAction;
+use Modules\Comment\Actions\Comment\ProcessCommentAction;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Tests\TestCase;
 use PHPUnit\Framework\Assert;
@@ -28,6 +28,5 @@ it('trasforma markdown in html', function (): void {
 
     app(ProcessCommentAction::class)->handle($comment);
 
-    Assert::assertIsString($comment->text);
     Assert::assertStringContainsString('<strong>grassetto</strong>', (string) $comment->text);
 });

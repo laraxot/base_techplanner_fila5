@@ -161,7 +161,7 @@ e per restare nel perimetro "basso rischio" richiesto.
 
 - `php -l` su `FailedJobsTable.php`: nessun errore di sintassi.
 - `vendor/bin/phpstan analyse <11 file elencati in owned_scope> --no-progress` da
-  `/var/www/_bases/base_<nome progetto>_fila5/laravel`: **`[OK] No errors`**.
+  `/var/www/_bases/base_quaeris_fila5/laravel`: **`[OK] No errors`**.
   Un primo tentativo è fallito con un errore di bootstrap Filament
   (`syntax error, unexpected token "<<"`) causato da un file di un altro modulo in
   edit concorrente da un'altra sessione (pattern noto, vedi memoria

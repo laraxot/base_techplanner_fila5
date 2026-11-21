@@ -71,7 +71,7 @@ discussions: []
 | `laravel/CLAUDE.md` | ~825 | Già in contesto automaticamente |
 | `sprint-status.yaml` | ~170 | `Read offset+limit` per epic specifico |
 
-## Strategia CLAUDE.md/QWEN.md ottimale
+## Strategia CLAUDE.md/qwen.md ottimale
 
 Mantenere ≤ 2,000 token (≈ 1,500 parole). Il file root `CLAUDE.md` attuale è ~200 parole: dentro il limite.
 

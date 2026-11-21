@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "module rules"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Regole Specifiche del Progetto

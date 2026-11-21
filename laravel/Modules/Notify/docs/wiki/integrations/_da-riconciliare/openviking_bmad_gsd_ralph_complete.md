@@ -8,6 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: openviking-bmad-gsd-ralph-complete.md
 ---
 
 # OpenViking + BMAD + GSD + Ralph Loop - Setup Complete Report
@@ -359,8 +361,8 @@ cat .ralph/iteration-log.md
 ls -la _bmad/
 ls -la .planning/
 
-# Review agents.md
-cat agents.md
+# Review AGENTS.md
+cat AGENTS.md
 ```
 
 ## Resources
@@ -370,7 +372,10 @@ cat agents.md
 - [BMAD-GSD-Ralph Integration](./bmad-gsd-ralph-integration.md)
 - [Unified Workflow](../../../unified-ai-workflow.md)
 - [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
-- [agents.md](../agents.md)
+- [AGENTS.md](../AGENTS.md)
+- [Unified Workflow](../../../unified-ai-workflow.md)
+- [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
+- [AGENTS.md](../../AGENTS.md)
 
 ### Scripts
 - OpenViking Init: `bashscripts/ai/openviking-init.sh`

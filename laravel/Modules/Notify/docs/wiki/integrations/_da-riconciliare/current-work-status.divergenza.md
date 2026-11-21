@@ -1,8 +1,8 @@
 ---
-qmd: "current work status.divergenza"
+qmd: "Current Work Status.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: current_work_status.md"
+title: "Current Work Status.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

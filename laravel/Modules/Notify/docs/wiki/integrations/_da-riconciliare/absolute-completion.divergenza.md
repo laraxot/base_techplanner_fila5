@@ -1,8 +1,8 @@
 ---
-qmd: "absolute completion.divergenza"
+qmd: "Absolute Completion.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: absolute-completion.md"
+title: "Absolute Completion.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

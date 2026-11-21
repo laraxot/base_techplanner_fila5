@@ -394,8 +394,8 @@ trans('ptv::segnalazione.heading.title.label')
 
 - [Translation Conventions](./translation-conventions.md)
 - [Blade Architecture](../laravel/CLAUDE.md#blade-components)
-- [Agnostic Scripts](./AGNOSTIC_DOCUMENTATION_RULE.md)
-- [Multi-Agent Coordination](./MULTI_AGENT_COORDINATION_RULES.md)
+- [Agnostic Scripts](./agnostic_documentation_rule.md)
+- [Multi-Agent Coordination](./multi_agent_coordination_rules.md)
 
 ---
 

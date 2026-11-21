@@ -9,7 +9,7 @@ issues: []
 discussions: []
 ---
 
-# Notify Platform - agents.md
+# Notify Platform - AGENTS.md
 
 This file contains comprehensive guidelines and commands for AI agents working on the Notify Laravel application.
 
@@ -122,7 +122,7 @@ This file contains comprehensive guidelines and commands for AI agents working o
   - `GITHUB_TOKEN`: Automatico (opzionale, fallback)
 - **Subtrees Synced**: 18+ (bashscripts, modules, etc.)
 - **Docs**: `bashscripts/docs/git/sync-remote-repo-guide.md`
-- **Coordination**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+- **Coordination**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 
 #### Sync Subtrees Workflow
 
@@ -168,7 +168,7 @@ bashscripts/git/subtrees/sync_remote_repo.sh laraxot
 **CRITICAL**: Multiple AI agents may work on this script simultaneously.
 
 **BEFORE Making Changes**:
-1. Read coordination log: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+1. Read coordination log: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 2. Check GitHub Issues: `gh issue list --repo laraxot/bashscripts_fila5`
 3. Add your entry to coordination log
 4. Create feature branch (never work on `dev` directly)
@@ -187,10 +187,10 @@ bashscripts/git/subtrees/sync_remote_repo.sh laraxot
 **Lock File Protocol**:
 ```bash
 # Create lock (exclusive work)
-echo "Agent-XYZ-$(date -I)" > bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md.lock
+echo "Agent-XYZ-$(date -I)" > bashscripts/docs/git/sync_remote_repo_coordination.md.lock
 
 # Remove lock
-rm bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md.lock
+rm bashscripts/docs/git/sync_remote_repo_coordination.md.lock
 ```
 
 **Agent Teams**:
@@ -199,7 +199,7 @@ rm bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md.lock
 - **Documentation**: Guides, examples
 - **Testing**: Validation, edge cases
 
-**See**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md` for complete coordination guidelines
+**See**: `bashscripts/docs/git/sync_remote_repo_coordination.md` for complete coordination guidelines
 
 ## 🚀 BUILD/LINT/TEST COMMANDS
 
@@ -1486,7 +1486,7 @@ When creating or modifying features:
 1. **Update module README**: Describe the feature and usage
 2. **Create/update roadmap**: Track progress and future work
 3. **Document error fixes**: Record how PHPStan errors were resolved
-4. **Update agents.md**: Add new patterns and best practices
+4. **Update AGENTS.md**: Add new patterns and best practices
 5. **Create examples**: Show correct usage patterns
 
 ---

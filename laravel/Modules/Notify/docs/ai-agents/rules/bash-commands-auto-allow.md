@@ -157,14 +157,14 @@ File: `.qwen-code-rules.md`
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-- **[Rules Index](00-INDEX.md)** - All rules
+- **[Rules Index](00-index.md)** - All rules
 - **[Rules Index](00-index.md)** - All rules
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - XotBase philosophy
 
 ### Project Rules
 - **[Qwen Code Rules](../../.qwen-code-rules.md)** - Project-specific rules
-- **[AGENTS.md](../../AGENTS.md)** - Project agents guide
-- **[agents.md](../../AGENTS.md)** - Project agents guide
+- **[AGENTS.md](../../agents.md)** - Project agents guide
+- **[AGENTS.md](../../agents.md)** - Project agents guide
 
 ---
 

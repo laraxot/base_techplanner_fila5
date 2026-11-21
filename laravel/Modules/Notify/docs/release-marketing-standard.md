@@ -2,7 +2,7 @@
 qmd: "release marketing standard"
 issues: []
 discussions: []
-title: "Release e README marketing — Notify"
+title: "Release e README marketing: Notify"
 type: reference
 status: approved
 tags: [release, semantic-versioning, changelog, readme, marketing]
@@ -11,7 +11,7 @@ updated: "2026-05-26"
 issue: "https://github.com/provtv/base_ptv_fila5/issues/153"
 ---
 
-# Release e README marketing — Notify
+# Release e README marketing: Notify
 
 ## Scopo
 
@@ -23,7 +23,7 @@ Ogni modulo/tema deve essere pubblicabile, comprensibile e desiderabile: workflo
 - `../.github/workflows/semantic-release.yml`
 - `../.releaserc.json`
 - `../CHANGELOG.md`
-- `../changelog.md`
+- `../CHANGELOG.md`
 
 ## Confidenza
 

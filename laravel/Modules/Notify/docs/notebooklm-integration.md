@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -101,7 +101,7 @@ Once authenticated, you can ask Claude Code to:
 Recommended notebooks to create:
 
 1. **FixCity Architecture** - AGENTS.md, docs/architecture/*
-1. **FixCity Architecture** - agents.md, docs/architecture/*
+1. **FixCity Architecture** - AGENTS.md, docs/architecture/*
 2. **FixCity Modules** - laravel/Modules/*/docs/README.md
 3. **FixCity API** - API documentation, Swagger specs
 

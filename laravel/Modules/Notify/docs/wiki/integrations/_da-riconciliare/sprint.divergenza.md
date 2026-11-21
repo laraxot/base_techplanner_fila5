@@ -1,8 +1,8 @@
 ---
-qmd: "sprint.divergenza"
+qmd: "Sprint.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: sprint.md"
+title: "Sprint.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -309,7 +309,7 @@ wire:submit="method" → Azione submit
 ### Aree di Miglioramento
 
 1. **Link Assoluti**: 335 file da correggere (automatizzabile)
-2. **Naming Consistency**: 13 file "readme.md" minuscolo da rinominare
+2. **Naming Consistency**: 13 file "README.md" minuscolo da rinominare
 3. **Documentation Coverage**: Alcuni moduli con doc minimale
 4. **Cross-References**: Migliorare collegamenti bidirezionali
 

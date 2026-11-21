@@ -1,8 +1,8 @@
 ---
-qmd: "tailwind conversion complete"
+qmd: "Tailwind Conversion Complete"
 issues: []
 discussions: []
-title: "TAILWIND CONVERSION COMPLETE - Design Comuni"
+title: "Tailwind Conversion Complete"
 module: notify
 type: integration
 tags: [integrations, modules, notify]

@@ -13,7 +13,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -46,7 +46,7 @@ related:
    │  INDEX      │  │  INDEX       │  │ Copilot      │
    │  └─ Xot     │  │  └─ Sixteen  │  │ Architecture │
    │  └─ Cms     │  │  └─ TwentyOne   │ Code Quality │
-   │  └─ Tenant  │  │              │  │ claude.md    │
+   │  └─ Tenant  │  │              │  │ CLAUDE.md    │
    │  └─ Media   │  │ Design-Comuni   │ Philosophy   │
    │  └─ User    │  │ Pages (38)   │  │              │
    │  └─ (14+)   │  │ Blocks (47)  │  │              │
@@ -275,7 +275,7 @@ Xot (Core) ◄──────────────────────
 | Handle files | [Media Docs](../laravel/Modules/Media/docs/) | [File Upload](../laravel/Modules/Media/docs/guides/) | Examples |
 | Send notifications | [Notify Docs](../laravel/Modules/Notify/docs/) | [Channels](../laravel/Modules/Notify/docs/guides/) | Examples |
 | Track changes | [Activity Docs](../laravel/Modules/Activity/docs/) | [Audit Trail](../laravel/Modules/Activity/docs/guides/) | Examples |
-| Code standards | [claude.md](../laravel/claude.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
+| Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
 | Architecture | [Architecture](architecture-diagrams.md) | [Design Comuni](../laravel/Themes/Sixteen/docs/design-comuni/) | Deep dive |
 
 ---
@@ -312,7 +312,7 @@ Code + Examples
   │ (Implementation)
   │
   ▼
-claude.md (Code Standards)
+CLAUDE.md (Code Standards)
   │ (Validation)
   │
 ▼
@@ -349,7 +349,7 @@ Theme/Template Integration
   │ (If frontend needed)
   │
   ▼
-claude.md Validation
+CLAUDE.md Validation
   │ (Follow patterns)
   │
   ▼
@@ -381,14 +381,14 @@ docs/
 ```
 .github/
 ├── copilot-instructions.md         ← Copilot guide
-├── contributing.md
+├── CONTRIBUTING.md
 ├── README.md
 └── skills/                         (GSD skills)
 
 laravel/
-├── claude.md                       ← Framework rules (38.7 KB)
+├── CLAUDE.md                       ← Framework rules (38.7 KB)
 ├── AGENTS.md
-├── agents.md
+├── AGENTS.md
 └── .windsurfrules                 ← Windsurf rules
 ```
 
@@ -441,7 +441,7 @@ laravel/Themes/
 - **Module Development** → [module-docs-index.md](module-docs-index.md)
 - **Theme Development** → [THEMES_documentation-index.md](THEMES_documentation-index.md)
 - **Code Quality** → [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
-- **Framework Rules** → [laravel/claude.md](../laravel/claude.md)
+- **Framework Rules** → [laravel/CLAUDE.md](../laravel/CLAUDE.md)
 - **Copilot Usage** → [.github/copilot-instructions.md](../../.github/copilot-instructions.md)
 - **Design Comuni** → Search for `DESIGN_COMUNI_` files
 
@@ -547,7 +547,7 @@ Connected Via:
 3. Explore: [Module Index](module-docs-index.md) or [Theme Index](THEMES_documentation-index.md)
 4. Deep Dive: Relevant module/theme 00-index-1.md
 5. Implement: Using guides and examples
-6. Validate: Against claude.md standards
+6. Validate: Against CLAUDE.md standards
 
 ### For Architects
 
@@ -555,7 +555,7 @@ Connected Via:
 2. Understand: [Module Relationships](module-docs-index.md#cross-module-communication)
 3. Design: Using module/theme structure
 4. Review: [Code Quality Standards](CODE_QUALITY_STANDARDS.md)
-5. Validate: Against framework rules in claude.md
+5. Validate: Against framework rules in CLAUDE.md
 
 ### For New Project Members
 

@@ -6,7 +6,7 @@ namespace Modules\UI\Tests\Unit;
 
 use Illuminate\Auth\GenericUser;
 use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Foundation\Auth\User;
+use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Modules\UI\Actions\GetUserDataAction;
 use Modules\UI\Tests\TestCase;

@@ -40,6 +40,8 @@ class JobStatusWidget extends XotBaseWidget
     #[Locked]
     public string $old_value = '';
 
+    /** @var view-string */
+    protected string $view = 'job::filament.widgets.job-status';
 
     protected int|string|array $columnSpan = 'full';
 

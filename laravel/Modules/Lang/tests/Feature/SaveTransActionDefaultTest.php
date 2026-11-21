@@ -10,6 +10,7 @@ use Modules\Lang\Actions\GetTransPathAction;
 use Modules\Lang\Actions\SaveTransAction;
 use Modules\Lang\Tests\TestCase;
 
+uses(TestCase::class);
 
 /*
  * C-05 (DCP-282): l'auto-writer delle chiavi mancanti scriveva nei file di lingua a runtime anche in produzione, perche' il default era

@@ -8,6 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # 📚 Indice Generale Documentazione - App
@@ -30,12 +31,12 @@ updated: 2026-08-24
 
 ### Documentazione Principale
 - [README Principale](./README.md) - Panoramica progetto completa
-- [Analisi Super Mucca](./SUPER_MUCCA_DOCS_ANALYSIS.md) - Report qualità documentazione
-- [Architecture](./ARCHITECTURE_ANALYSIS.md) - Analisi architetturale
+- [Analisi Super Mucca](./super_mucca_docs_analysis.md) - Report qualità documentazione
+- [Architecture](./architecture_analysis.md) - Analisi architetturale
 - [Roadmap](./MASTER_ROADMAP_2025.md) - Piano sviluppo 2025
 
 ### Guide Rapide
-- [Quick Start](./QUICK_START.md) - Guida avvio rapido
+- [Quick Start](./quick_start.md) - Guida avvio rapido
 - [Contributing](./CONTRIBUTING.md) - Come contribuire
 - [Troubleshooting](./troubleshooting/README.md) - Risoluzione problemi
 
@@ -45,7 +46,12 @@ updated: 2026-08-24
 
 ### Documentazione Architetturale
 - [Design Patterns](./architecture.md) - Pattern architetturali
+<<<<<<< .merge_file_BMN64h
 - [Database Schema](./database/schema.md) - Schema database
+=======
+- [Database Schema](../../schema.md) - Schema database
+- [Database Schema](../../schema.md) - Schema database
+>>>>>>> .merge_file_vDpII0
 - [API Documentation](./api/README.md) - Documentazione API
 - [Security](./security/README.md) - Sicurezza e conformità
 
@@ -208,13 +214,29 @@ updated: 2026-08-24
 
 ### Coding Guidelines
 - [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
+<<<<<<< .merge_file_BMN64h
 - [Laravel Best Practices](./standards/laravel.md) - Best practices Laravel
+=======
+- [Laravel Best Practices](../../../html2pdf/laravel.md) - Best practices Laravel
+- [Environment Setup](../../../ai-agents/setup.md) - Configurazione ambiente
+- [Docker Setup](./development/docker.md) - Configurazione Docker
+- [Database Setup](../../../ai-agents/setup.md) - Setup database
+
+### Coding Guidelines
+- [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
+- [Laravel Best Practices](../../../html2pdf/laravel.md) - Best practices Laravel
+>>>>>>> .merge_file_vDpII0
 - [Filament Guidelines](./standards/filament.md) - Linee guida Filament
 - [Blade Components](./standards/blade.md) - Componenti Blade
 
 ### Quality Assurance
 - [PHPStan Configuration](./phpstan/README.md) - Analisi statica
+<<<<<<< .merge_file_BMN64h
 - [Testing Strategy](./testing/strategy.md) - Strategia testing
+=======
+- [Testing Strategy](../../../strategy.md) - Strategia testing
+- [Testing Strategy](../../../strategy.md) - Strategia testing
+>>>>>>> .merge_file_vDpII0
 - [CI/CD Pipeline](./ci-cd/README.md) - Continuous integration
 
 ---
@@ -255,7 +277,12 @@ updated: 2026-08-24
 - [Error Tracking](./monitoring/errors.md) - Tracking errori
 
 ### Analytics
+<<<<<<< .merge_file_BMN64h
 - [Usage Analytics](./analytics/usage.md) - Analisi utilizzo
+=======
+- [Usage Analytics](../../../html2pdf/usage.md) - Analisi utilizzo
+- [Usage Analytics](../../../html2pdf/usage.md) - Analisi utilizzo
+>>>>>>> .merge_file_vDpII0
 - [Business Metrics](./analytics/business.md) - Metriche business
 
 ---
@@ -263,7 +290,12 @@ updated: 2026-08-24
 ## 🔒 Security
 
 ### Security Documentation
+<<<<<<< .merge_file_BMN64h
 - [Security Guidelines](./security/guidelines.md) - Linee guida sicurezza
+=======
+- [Security Guidelines](../../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
+- [Security Guidelines](../../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
+>>>>>>> .merge_file_vDpII0
 - [GDPR Compliance](./security/gdpr.md) - Conformità GDPR
 - [Authentication](./security/authentication.md) - Sistema autenticazione
 - [Authorization](./security/authorization.md) - Sistema autorizzazioni
@@ -273,7 +305,7 @@ updated: 2026-08-24
 ## 📝 Changelog & Versioning
 
 ### Version History
-- [Changelog](./changelog.md) - Storico modifiche
+- [Changelog](./CHANGELOG.md) - Storico modifiche
 - [Versioning Strategy](./versioning.md) - Strategia versioning
 - [Migration Guides](./migrations/README.md) - Guide migrazione
 

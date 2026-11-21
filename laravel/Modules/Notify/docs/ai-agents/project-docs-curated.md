@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "project docs curated"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Project Docs Curated Map (Codex)

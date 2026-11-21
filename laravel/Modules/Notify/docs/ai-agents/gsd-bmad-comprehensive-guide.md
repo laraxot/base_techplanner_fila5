@@ -191,12 +191,12 @@ Ogni task: Contesto fresco (200k token) → Qualità costante ✅
 .planning/
 ├── PROJECT.md           # Visione (sempre caricata)
 ├── REQUIREMENTS.md      # Requisiti v1/v2
-├── ROADMAP.md           # Fasi + dipendenze
+├── roadmap.md           # Fasi + dipendenze
 ├── STATE.md             # Decisioni, blocker, memoria
 ├── research/
 │   ├── STACK.md         # Stack tecnologico
 │   ├── FEATURES.md      # Feature research
-│   ├── ARCHITECTURE.md  # Architettura
+│   ├── architecture.md  # Architettura
 │   ├── architecture.md  # Architettura
 │   └── PITFALLS.md      # Pitfalls da evitare
 ├── phase-1-PLAN.md      # Task atomici XML
@@ -476,7 +476,7 @@ STATE.md:
 - Blocker identificati
 - Next steps chiari
 
-SUMMARY.md:
+summary.md:
 - Cosa è successo nella fase
 - Cosa è cambiato
 - Lessons learned

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "email layouts best practices"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Email Layouts Best Practices

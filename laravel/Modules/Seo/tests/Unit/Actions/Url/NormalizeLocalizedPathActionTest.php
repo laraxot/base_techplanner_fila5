@@ -13,24 +13,27 @@ function normalizedPath(string $path): ?string
     return app(NormalizeLocalizedPathAction::class)->execute($path, ['it', 'en', 'de', 'es']);
 }
 
-it('returns the canonical path for the duplicates of a localized page', function (): void {
-    $cases = [
-        ['/IT/tickets', '/it/tickets'],
-        ['/It/tickets', '/it/tickets'],
-        ['/IT', '/it'],
-        ['/it/', '/it'],
-        ['/it//tickets', '/it/tickets'],
-        ['/it///tickets//12', '/it/tickets/12'],
-        ['/it/tickets/', '/it/tickets'],
-        ['/DE//Tickets//', '/de/Tickets'],
-    ];
-    foreach ($cases as [$path, $canonical]) {
-        Assert::assertSame($canonical, normalizedPath($path));
-    }
-});
+it('returns the canonical path for the duplicates of a localized page', function (string $path, string $canonical): void {
+    Assert::assertSame($canonical, normalizedPath($path));
+})->with([
+    'upper case language' => ['/IT/tickets', '/it/tickets'],
+    'mixed case language' => ['/It/tickets', '/it/tickets'],
+    'upper case home' => ['/IT', '/it'],
+    'home with slash' => ['/it/', '/it'],
+    'double slash' => ['/it//tickets', '/it/tickets'],
+    'many slashes' => ['/it///tickets//12', '/it/tickets/12'],
+    'trailing slash' => ['/it/tickets/', '/it/tickets'],
+    'all of it' => ['/DE//Tickets//', '/de/Tickets'],
+]);
 
-it('returns null when the path is already canonical or is not a localized page', function (): void {
-    foreach (['/it', '/en/tickets', '/it/Blog', '/', '/livewire/livewire.js', '/storage/', '/fr/tickets/'] as $path) {
-        Assert::assertNull(normalizedPath($path));
-    }
-});
+it('returns null when the path is already canonical or is not a localized page', function (string $path): void {
+    Assert::assertNull(normalizedPath($path));
+})->with([
+    'home' => ['/it'],
+    'list' => ['/en/tickets'],
+    'case of the rest is kept (it is a different page)' => ['/it/Blog'],
+    'root' => ['/'],
+    'not a language' => ['/livewire/livewire.js'],
+    'not a language with a slash' => ['/storage/'],
+    'unknown two-letter segment' => ['/fr/tickets/'],
+]);

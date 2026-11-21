@@ -4,9 +4,8 @@ declare(strict_types=1);
 
 namespace Modules\Comment\Actions;
 
+use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Models\Comment;
-use Modules\Comment\Support\CommentConfig;
-use Modules\Comment\Transformers\CommentTransformer;
 use Spatie\QueueableAction\QueueableAction;
 
 class ProcessCommentAction
@@ -20,14 +19,18 @@ class ProcessCommentAction
 
     public function handle(Comment $comment): void
     {
-        CommentConfig::commentTransformers()->each(
-            fn (CommentTransformer $transformer) => $transformer->handle($comment),
-        );
+        $config = CommentConfigData::make();
+        $hasTransformer = false;
 
-        if (CommentConfig::commentTransformers()->isEmpty()) {
+        foreach ($config->commentTransformers() as $transformer) {
+            $transformer->handle($comment);
+            $hasTransformer = true;
+        }
+
+        if (! $hasTransformer) {
             $comment->text = $comment->original_text;
         }
 
-        $comment->text = CommentConfig::commentSanitizer()->sanitize($comment->text ?? '');
+        $comment->text = $config->sanitizeCommentHtml($comment->text ?? '');
     }
 }

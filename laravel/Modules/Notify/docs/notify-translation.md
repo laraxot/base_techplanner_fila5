@@ -184,7 +184,7 @@ Questo comando verificherà che tutte le chiavi di traduzione necessarie siano p
 
 - [Convenzioni di Traduzione nel Modulo Notify](./translation_conventions.md)
 - [Chiarimento sulle Convenzioni di Traduzione](./translation_conventions_clarification.md)
-- [Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-- [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-- [Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
+- [Regole Generali per le Chiavi di Traduzione](../../Lang/docs/translation_keys_rules.md)
+- [Best Practices per le Chiavi di Traduzione](../../Lang/docs/translation_keys_best_practices.md)
+- [Best Practices per le Chiavi di Traduzione](../../Lang/docs/translation-keys-best-practices.md)
 - [Standard per le Traduzioni ](./translation_standards.md)

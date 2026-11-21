@@ -1,10 +1,10 @@
 ---
-title: "architecture"
+title: "Architecture"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "architecture"
+qmd: "Architecture"
 issues: []
 discussions: []
 ---
@@ -17,12 +17,12 @@ discussions: []
 
 ---
 
-title: "architecture"
+title: "ARCHITECTURE"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "architecture"
+qmd: "ARCHITECTURE"
 issues: []
 discussions: []
 ## 📐 System Architecture

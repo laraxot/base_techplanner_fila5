@@ -17,7 +17,7 @@ related:
 Static metrics: 626 files scanned, 8 case-only groups, 26 duplicate hash groups, 0 duplicate FQCN.
 
 Findings:
-- Case-only docs: `INDEX.md`/`index.md`, `SCHEMA.md`/`schema.md`, `METODI_DUPLICATI_ANALISI.md` variants.
+- Case-only docs: `index.md`/`index.md`, `schema.md`/`schema.md`, `metodi_duplicati_analisi.md` variants.
 - Case-only test file: `ConflictResolutionTest.php`/`conflictresolutiontest.php`.
 - `cloudflare.md` exists both at module root and under `docs/`.
 - Large docs cluster has many byte-identical placeholders or duplicate pages across architecture, roadmap, packages, privacy, backup, analytics, and integration topics.

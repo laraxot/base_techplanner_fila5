@@ -24,8 +24,8 @@ Il 25° file (`custom-theme.md`) differiva dalla copia raw solo per un H1 ridond
 
 Root keepers (6, invariati salvo CHANGELOG.md):
 - `README.md`
-- `ARCHITECTURE.md`
-- `TESTING.md`
+- `architecture.md`
+- `testing.md`
 - `PHILOSOPHY.md`
 - `GETTING_STARTED.md`
 - `CHANGELOG.md`
@@ -39,7 +39,7 @@ Per gli altri 25, poiché il contenuto era già duplicato verbatim (o quasi) in 
 | api.md | docs/raw/root-import/api-1.md | docs/raw/root-import/api.md | identico |
 | blocks.md | docs/raw/root-import/blocks-1.md | docs/raw/root-import/blocks.md | identico |
 | carousel-slider.md | docs/raw/root-import/carousel-slider-1.md | docs/raw/root-import/carousel-slider.md | identico |
-| changelog.md | docs/raw/root-import/changelog-1.md | docs/raw/root-import/changelog.md | identico (+ fuso in CHANGELOG.md, vedi sotto) |
+| CHANGELOG.md | docs/raw/root-import/changelog-1.md | docs/raw/root-import/CHANGELOG.md | identico (+ fuso in CHANGELOG.md, vedi sotto) |
 | chunk.md | docs/raw/root-import/chunk-1.md | docs/raw/root-import/chunk.md | identico |
 | ci.md | docs/raw/root-import/ci-1.md | docs/raw/root-import/ci.md | identico |
 | custom-firm-fields.md | docs/raw/root-import/custom-firm-fields-1.md | docs/raw/root-import/custom-firm-fields.md | identico |
@@ -62,9 +62,9 @@ Per gli altri 25, poiché il contenuto era già duplicato verbatim (o quasi) in 
 | ubuntu.md | docs/raw/root-import/ubuntu-1.md | docs/raw/root-import/ubuntu.md | identico |
 | widgets.md | docs/raw/root-import/widgets-1.md | docs/raw/root-import/widgets.md | identico |
 
-## Fusione changelog.md → CHANGELOG.md
+## Fusione CHANGELOG.md → CHANGELOG.md
 
-`changelog.md` (root, minuscolo) conteneva solo: "Tutte le variazioni importanti di UI saranno generate automaticamente da semantic-release." Contenuto non presente in `CHANGELOG.md` (maiuscolo, keeper). Aggiunta come nota citata subito dopo il titolo di `CHANGELOG.md`, poi rimosso `changelog.md` dalla root (il contenuto originale resta comunque anche in `docs/raw/root-import/changelog-1.md`).
+`CHANGELOG.md` (root, minuscolo) conteneva solo: "Tutte le variazioni importanti di UI saranno generate automaticamente da semantic-release." Contenuto non presente in `CHANGELOG.md` (maiuscolo, keeper). Aggiunta come nota citata subito dopo il titolo di `CHANGELOG.md`, poi rimosso `CHANGELOG.md` dalla root (il contenuto originale resta comunque anche in `docs/raw/root-import/changelog-1.md`).
 
 ## Verifica finale
 
@@ -73,11 +73,11 @@ find laravel/Modules/UI -maxdepth 1 -iname '*.md' | wc -l
 # 6
 ```
 
-Root risultante: `ARCHITECTURE.md`, `CHANGELOG.md`, `GETTING_STARTED.md`, `PHILOSOPHY.md`, `README.md`, `TESTING.md`.
+Root risultante: `architecture.md`, `CHANGELOG.md`, `GETTING_STARTED.md`, `PHILOSOPHY.md`, `README.md`, `testing.md`.
 
 ## Nota fuori scope
 
-Trovati due file untracked pre-esistenti (non creati da questo task, timestamp 2026-09-06 12:37, precedenti a questa sessione): `docs/GETTING_STARTED.md` e `docs/TESTING.md`, contenuto identico ai keeper di root. Probabile residuo di un'altra sessione/tool di scaffolding. Non toccati: fuori dallo scope di questo task (igiene della ROOT del modulo, non di `docs/`) e non lockati da nessuno al momento della verifica.
+Trovati due file untracked pre-esistenti (non creati da questo task, timestamp 2026-09-06 12:37, precedenti a questa sessione): `docs/GETTING_STARTED.md` e `docs/testing.md`, contenuto identico ai keeper di root. Probabile residuo di un'altra sessione/tool di scaffolding. Non toccati: fuori dallo scope di questo task (igiene della ROOT del modulo, non di `docs/`) e non lockati da nessuno al momento della verifica.
 
 ## Vincoli rispettati
 
@@ -89,7 +89,7 @@ Trovati due file untracked pre-esistenti (non creati da questo task, timestamp 2
 ## Best practices
 
 - Prima di spostare un file duplicato, verificare sempre con `diff -q` se una copia identica esiste già altrove nell'albero `docs/` — evita di creare una terza copia in un repo che ha già centinaia di duplicati noti.
-- Escludere sempre `git add -A` quando ci sono file untracked non correlati nella working tree (qui `docs/GETTING_STARTED.md` e `docs/TESTING.md`): usare `git add <path>` esplicito.
+- Escludere sempre `git add -A` quando ci sono file untracked non correlati nella working tree (qui `docs/GETTING_STARTED.md` e `docs/testing.md`): usare `git add <path>` esplicito.
 
 ## Bad practices
 

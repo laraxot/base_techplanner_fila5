@@ -251,9 +251,3 @@ app/Application
 
 # module-root-hygiene (story module-root-hygiene)
 docs/graphify
-
-# Tooling/configurazione locale (module-theme-root-hygiene)
-.qwen/
-audit-coverage/
-.php-cs-fixer.php
-.php-cs-fixer.dist.php

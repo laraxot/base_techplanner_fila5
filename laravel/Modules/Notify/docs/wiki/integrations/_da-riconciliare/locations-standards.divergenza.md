@@ -1,8 +1,8 @@
 ---
-qmd: "locations standards.divergenza"
+qmd: "Locations Standards.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: locations_standards.md"
+title: "Locations Standards.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

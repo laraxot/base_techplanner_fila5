@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "st slug generation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Generazione Intelligente di Slug in Filament

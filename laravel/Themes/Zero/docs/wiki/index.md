@@ -93,9 +93,15 @@ _No entities tracked yet._
 
 ## Pagine di servizio della wiki
 
+<<<<<<< .merge_file_WePpNy
 - [README](./README.md) - a cosa serve la cartella `wiki/`
 - [schema](./schema.md) - schema e convenzioni della wiki del tema
 - [agents](./agents.md) - istruzioni per gli agenti che mantengono la wiki (ex `AGENTS.md`; il blocco YAML nel corpo e' un modello da copiare, non un frontmatter)
+=======
+- [README](./readme.md) - a cosa serve la cartella `wiki/`
+- [schema](./schema.md) - schema e convenzioni della wiki del tema
+- [agents](./AGENTS.md) - istruzioni per gli agenti che mantengono la wiki (ex `AGENTS.md`; il blocco YAML nel corpo e' un modello da copiare, non un frontmatter)
+>>>>>>> .merge_file_Hc7B6p
 - [log](./log.md) - registro cronologico delle attivita'
 - [raw/readme](./raw/readme.md) - cartella delle fonti grezze, sola lettura
 - Sotto-indici: [concepts/index](./concepts/index.md), [memories/index](./memories/index.md), [rules/index](./rules/index.md), [skills/index](./skills/index.md), [commands/index](./commands/index.md)

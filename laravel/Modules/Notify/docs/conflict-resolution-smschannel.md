@@ -61,7 +61,7 @@ return $action->execute($smsData);
 - Solo miglioramento della leggibilità del codice
 
 ## Collegamenti
-- [Notify Module Documentation](readme.md)
+- [Notify Module Documentation](README.md)
 - [SMS Channel Architecture](sms_channel_action_resolution.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 

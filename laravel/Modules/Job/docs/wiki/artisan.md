@@ -7,7 +7,7 @@ created: 2026-07-14
 updated: 2026-07-14
 qmd: "artisan"
 related:
-  - "./phpstan-fixes-archive-2.md"
+  - "./phpstan-fixes-archive-gennaio.md"
 ---
 https://fly.io/laravel-bytes/streaming-to-the-browser-with-livewire/
 

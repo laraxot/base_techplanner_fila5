@@ -1,8 +1,8 @@
 ---
-qmd: "sessione 100 percent.divergenza"
+qmd: "Sessione 100 Percent.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: SESSIONE_100_PERCENT.md"
+title: "Sessione 100 Percent.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

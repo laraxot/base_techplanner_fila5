@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "send email translation improvement"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Miglioramento File Traduzione send_email.php
@@ -290,6 +291,7 @@ php -l Modules/Notify/lang/it/send_email.php
 
 ### Documentazione Correlata
 - [Regole Traduzioni Laraxot](../../../docs/translation-standards.md)
+- [Regole Traduzioni Laraxot](../../../../docs/translation-standards.md)
 - [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)
 - [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
 - [Best Practice Filament](../../../docs/FILAMENT-BEST-PRACTICES.md)- [Regole Traduzioni Laraxot](../../../project_docs/translation-standards.md)
@@ -319,6 +321,7 @@ php -l Modules/Notify/lang/it/send_email.php
 4. **Deployment**: Deploy in ambiente di sviluppo per testing
 
 ---
+<<<<<<< .merge_file_G1FBly
 
 title: "send email translation improvement"
 type: note
@@ -330,3 +333,7 @@ issues: []
 discussions: []
 **Ultimo aggiornamento**: Gennaio 2025  
 **Autore**: Sistema di miglioramento automatico  
+=======
+**Ultimo aggiornamento**: Gennaio 2025
+**Autore**: Sistema di miglioramento automatico
+>>>>>>> .merge_file_0SD7go

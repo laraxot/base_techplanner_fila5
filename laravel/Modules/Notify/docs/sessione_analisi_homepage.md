@@ -23,7 +23,7 @@ discussions: []
 ### Documentazione Creata
 
 #### 1. Analisi Visiva
-**File**: `docs/screenshots/homepage/ANALISI_VISIVA.md`
+**File**: `docs/screenshots/homepage/analisi_visiva.md`
 
 **Contenuto**:
 - Confronto dettagliato sezione per sezione
@@ -52,7 +52,7 @@ qmd: "sessione analisi homepage"
 issues: []
 discussions: []
 #### 2. Screenshot Analysis
-**File**: `docs/screenshots/homepage/SCREENSHOT_ANALYSIS.md`
+**File**: `docs/screenshots/homepage/screenshot_analysis.md`
 
 **Contenuto**:
 - Descrizione dettagliata layout Bootstrap Italia
@@ -72,7 +72,7 @@ discussions: []
 ---
 
 #### 3. Fix Plan
-**File**: `docs/screenshots/homepage/FIX_PLAN.md`
+**File**: `docs/screenshots/homepage/fix_plan.md`
 
 **Contenuto**:
 - Piano esecutivo 3 settimane
@@ -98,25 +98,25 @@ La documentazione è stata copiata in:
 1. **Root Docs**
    ```
    docs/screenshots/homepage/
-   ├── ANALISI_VISIVA.md
-   ├── SCREENSHOT_ANALYSIS.md
-   └── FIX_PLAN.md
+   ├── analisi_visiva.md
+   ├── screenshot_analysis.md
+   └── fix_plan.md
    ```
 
 2. **Theme Docs (Sixteen)**
    ```
    laravel/Themes/Sixteen/docs/screenshots/homepage/
-   ├── ANALISI_VISIVA.md
-   ├── SCREENSHOT_ANALYSIS.md
-   └── FIX_PLAN.md
+   ├── analisi_visiva.md
+   ├── screenshot_analysis.md
+   └── fix_plan.md
    ```
 
 3. **Module Docs (Cms)**
    ```
    laravel/Modules/Cms/docs/screenshots/homepage/
-   ├── ANALISI_VISIVA.md
-   ├── SCREENSHOT_ANALYSIS.md
-   └── FIX_PLAN.md
+   ├── analisi_visiva.md
+   ├── screenshot_analysis.md
+   └── fix_plan.md
    ```
 
 4. **OpenViking Context**
@@ -199,9 +199,9 @@ Themes/Sixteen/resources/views/
 ## 📚 Risorse
 
 ### Documentazione
-- [Analisi Visiva](docs/screenshots/homepage/ANALISI_VISIVA.md)
-- [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_ANALYSIS.md)
-- [Fix Plan](docs/screenshots/homepage/FIX_PLAN.md)
+- [Analisi Visiva](docs/screenshots/homepage/analisi_visiva.md)
+- [Screenshot Analysis](docs/screenshots/homepage/screenshot_analysis.md)
+- [Fix Plan](docs/screenshots/homepage/fix_plan.md)
 - [OpenViking Context](.openvikings/homepage_alignment_context.md)
 
 ### Link Esterni

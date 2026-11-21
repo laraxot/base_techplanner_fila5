@@ -1,10 +1,10 @@
 ---
-title: "agid analysis implementation 2025 10 02"
+title: "Agid Analysis Implementation"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "agid analysis implementation 2025 10 02"
+qmd: "Agid Analysis Implementation"
 issues: []
 discussions: []
 ---
@@ -18,12 +18,12 @@ discussions: []
 
 ---
 
-title: "agid analysis implementation 2025 10 02"
+title: "AGID ANALYSIS IMPLEMENTATION 2025 10 02"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "agid analysis implementation 2025 10 02"
+qmd: "AGID ANALYSIS IMPLEMENTATION 2025 10 02"
 issues: []
 discussions: []
 ## 📋 Executive Summary

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "filament resources"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Risorse Filament del Modulo Notify

@@ -10,12 +10,13 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./2-1-1-plan.md"
   - "./2-1-context.md"
-  - "./agents.md"
+  - "./AGENTS.md"
   - "./ai-agent-lessons-learned.md"
   - "./ai-skills-and-plugins-complete.md"
   - "./commit-message.md"
   - "./configuration.md"
   - "./design-comuni-bmad-master-plan.md"
+status: draft
 ---
 
 # 🌐 VHost Configuration Summary
@@ -205,6 +206,13 @@ curl -I http://laraxot.local
 | **Project Index** | `docs/project/README.md` | ✅ | [Link](docs/project/README.md) |
 | **Rules Index** | `docs/rules/README.md` | ✅ | [Link](docs/rules/README.md) |
 | **Main Index** | `docs/index.md` | ✅ Updated | [Link](docs/index.md) |
+| **Project Docs** | `docs/project/vhost-configuration.md` | ✅ | [Link](vhost-configuration.md) |
+| **Modules Docs** | `laravel/Modules/docs/vhost-configuration.md` | ✅ | [Link](laravel/Modules/docs/vhost-configuration.md) |
+| **Themes Docs** | `laravel/Themes/docs/vhost-configuration.md` | ✅ | [Link](laravel/Themes/docs/vhost-configuration.md) |
+| **Governance** | `docs/rules/vhost-governance.md` | ✅ | [Link](../rules/vhost-governance.md) |
+| **Project Index** | `docs/project/README.md` | ✅ | [Link](README.md) |
+| **Rules Index** | `docs/rules/README.md` | ✅ | [Link](../rules/README.md) |
+| **Main Index** | `docs/index.md` | ✅ Updated | [Link](../index.md) |
 | **Modules Index** | `laravel/Modules/docs/README.md` | ✅ Updated | [Link](laravel/Modules/docs/README.md) |
 | **Themes Index** | `laravel/Themes/docs/README.md` | ✅ Updated | [Link](laravel/Themes/docs/README.md) |
 | **AI Memory** | `.qwen/vhost-configuration.md` | ✅ | - |
@@ -279,11 +287,18 @@ curl -I http://laraxot.local
 
 - [Complete Setup Guide](docs/project/vhost-configuration.md)
 - [Troubleshooting](docs/project/vhost-configuration.md#troubleshooting)
+- [Complete Setup Guide](vhost-configuration.md)
+- [Troubleshooting](vhost-configuration.md#troubleshooting)
 - [Quick Reference](.qwen/vhost-configuration.md)
 
 ### For DevOps
 
+<<<<<<< .merge_file_9HTp4i
 - [Governance Rules](docs/rules/vhost-governance.md)
+=======
+- [Governance Rules](../rules/vhost-governance.md)
+- [Governance Rules](../rules/vhost-governance.md)
+>>>>>>> .merge_file_5Utlgr
 - [Management Skill](.github/skills/vhost-management/SKILL.md)
 - [Configuration File](laravel/config/vhost/laraxot.local.conf)
 
@@ -292,6 +307,7 @@ curl -I http://laraxot.local
 - [Memory File](.qwen/vhost-configuration.md)
 - [Skill Definition](.github/skills/vhost-management/SKILL.md)
 - [Project Context](docs/project/README.md)
+- [Project Context](README.md)
 
 ---
 

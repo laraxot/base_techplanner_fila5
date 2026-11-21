@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "whatsapp integration"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Integrazione WhatsApp
@@ -546,12 +547,3 @@ L'integrazione WhatsApp  segue gli stessi pattern e standard utilizzati per l'in
 Seguendo questa architettura, l'integrazione WhatsApp si inserisce perfettamente nell'ecosistema di notifiche di <nome progetto>, mantenendo la coerenza con le altre modalità di comunicazione.
 
 ---
-
-title: "whatsapp integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "whatsapp integration"
-issues: []
-discussions: []

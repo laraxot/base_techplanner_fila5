@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "migration structure"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Struttura della Migrazione MailTemplate

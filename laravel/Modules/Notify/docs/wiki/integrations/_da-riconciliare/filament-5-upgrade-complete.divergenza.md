@@ -1,8 +1,8 @@
 ---
-qmd: "filament 5 upgrade complete.divergenza"
+qmd: "Filament 5 Upgrade Complete.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: FILAMENT_5_UPGRADE_COMPLETE.md"
+title: "Filament 5 Upgrade Complete.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

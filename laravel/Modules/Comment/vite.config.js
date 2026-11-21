@@ -1,16 +1,26 @@
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
-import tailwindcss from '@tailwindcss/vite';
 
 export default defineConfig({
+    build: {
+        outDir: '../../public/build-comment',
+        emptyOutDir: true,
+        manifest: true,
+    },
     plugins: [
         laravel({
+            publicDirectory: '../../public',
+            buildDirectory: 'build-comment',
             input: [
-                'resources/assets/sass/app.scss',
-                'resources/assets/js/app.js',
+                __dirname + '/resources/assets/sass/app.scss',
+                __dirname + '/resources/assets/js/app.js'
             ],
             refresh: true,
         }),
-        tailwindcss(),
     ],
 });
+
+//export const paths = [
+//    'Modules/$STUDLY_NAME$/resources/assets/sass/app.scss',
+//    'Modules/$STUDLY_NAME$/resources/assets/js/app.js',
+//];

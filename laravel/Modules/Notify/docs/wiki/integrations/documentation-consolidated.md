@@ -2,12 +2,13 @@
 qmd: "documentation consolidated"
 issues: []
 discussions: []
-title: "documentation — Consolidated Documentation"
+title: "documentation: Consolidated Documentation"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # documentation: Consolidated Documentation
@@ -47,12 +48,17 @@ qmd: "documentation-analysis-and-improvement-plan documentation analysis and imp
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -106,7 +112,8 @@ The <nome progetto> platform has extensive documentation across modules and them
 ❌ **Problems**:
 - 15 files with temporal strings ("Last Updated: March 12, 2026")
 - Duplicate files: `prd.md`, `PRD.md`, `prd.json`
-- Inconsistent naming: `product-strategy.md` vs `product-strategy-1.md`
+- Inconsistent naming: `product-strategy.md` vs `product-strategy.md`
+- Inconsistent naming: `product-strategy.md` vs `product-strategy-documentation-themes.md`
 - Orphaned files: `to-study.md`, `blocks-react.md`
 
 #### Recommended Actions
@@ -214,7 +221,7 @@ The <nome progetto> platform has extensive documentation across modules and them
 
 3. **Update Governance**
    - Finalize documentation governance
-   - Add to agents.md
+   - Add to AGENTS.md
    - Add to .windsurfrules
 
 ### Priority 3: Medium (Week 4)
@@ -302,7 +309,7 @@ done
 
 #### Day 15-16: Update Rules
 
-1. Update agents.md
+1. Update AGENTS.md
 2. Update .windsurfrules
 3. Create skills
 
@@ -452,7 +459,8 @@ echo "  snake_case: $(find laravel/Modules/*/docs/ -name '*_*.md' | wc -l)"
 ## 📚 Related Documents
 
 - [documentation-governance.md](documentation-governance.md) - Governance framework
-- [agents.md](../../../agents.md) - Agent guidelines
+- [AGENTS.md](../../../AGENTS.md) - Agent guidelines
+- [AGENTS.md](../../agents.md) - Agent guidelines
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 
 ---
@@ -523,7 +531,7 @@ related:
    │  INDEX      │  │  INDEX       │  │ Copilot      │
    │  └─ Xot     │  │  └─ Sixteen  │  │ Architecture │
    │  └─ Cms     │  │  └─ TwentyOne   │ Code Quality │
-   │  └─ Tenant  │  │              │  │ claude.md    │
+   │  └─ Tenant  │  │              │  │ CLAUDE.md    │
    │  └─ Media   │  │ Design-Comuni   │ Philosophy   │
    │  └─ User    │  │ Pages (38)   │  │              │
    │  └─ (14+)   │  │ Blocks (47)  │  │              │
@@ -585,7 +593,7 @@ related:
 ```
 Each Module/Theme has:
 
-00-index-1.md
+00-index.md
 ├─ Purpose & scope
 ├─ Key classes & files
 ├─ Dependencies
@@ -744,6 +752,7 @@ Xot (Core) ◄──────────────────────
 | I Need... | Start Here | Then Go To | Then Go To |
 |-----------|-----------|-----------|-----------|
 | Quick start | [Copilot Inst.](../../.github/copilot-instructions.md) | [Architecture](architecture-diagrams.md) | Your task |
+| Quick start | [Copilot Inst.](../../../.github/copilot-instructions.md) | [Architecture](architecture-diagrams.md) | Your task |
 | Module overview | [Module Index](module-docs-index.md) | `Modules/{Name}/docs/00-index-1.md` | Details |
 | Theme overview | [Theme Index](THEMES_documentation-index.md) | `Themes/{Name}/docs/00-index-1.md` | Details |
 | Create content | [Cms Docs](../laravel/Modules/Cms/docs/) | [Block Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md) | Examples |
@@ -752,7 +761,8 @@ Xot (Core) ◄──────────────────────
 | Handle files | [Media Docs](../laravel/Modules/Media/docs/) | [File Upload](../laravel/Modules/Media/docs/guides/) | Examples |
 | Send notifications | [Notify Docs](../laravel/Modules/Notify/docs/) | [Channels](../laravel/Modules/Notify/docs/guides/) | Examples |
 | Track changes | [Activity Docs](../laravel/Modules/Activity/docs/) | [Audit Trail](../laravel/Modules/Activity/docs/guides/) | Examples |
-| Code standards | [claude.md](../laravel/claude.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
+| Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
+| Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../../.github/copilot-instructions.md) | Review |
 | Architecture | [Architecture](architecture-diagrams.md) | [Design Comuni](../laravel/Themes/Sixteen/docs/design-comuni/) | Deep dive |
 
 ---
@@ -777,7 +787,7 @@ Relevant Master Index (MODULE or THEME)
   │ (Module Index or Theme Index)
   │
   ▼
-Module/Theme 00-index-1.md
+Module/Theme 00-index.md
   │ (Component details)
   │
   ▼
@@ -789,7 +799,7 @@ Code + Examples
   │ (Implementation)
   │
   ▼
-claude.md (Code Standards)
+CLAUDE.md (Code Standards)
   │ (Validation)
   │
 ▼
@@ -810,7 +820,7 @@ Module Documentation (module-docs-index.md)
   │ (Get module overview)
   │
   ▼
-Module 00-index-1.md
+Module 00-index.md
   │ (Dependencies, classes)
   │
   ▼
@@ -826,7 +836,7 @@ Theme/Template Integration
   │ (If frontend needed)
   │
   ▼
-claude.md Validation
+CLAUDE.md Validation
   │ (Follow patterns)
   │
   ▼
@@ -858,13 +868,13 @@ docs/
 ```
 .github/
 ├── copilot-instructions.md         ← Copilot guide
-├── contributing.md
+├── CONTRIBUTING.md
 ├── README.md
 └── skills/                         (GSD skills)
 
 laravel/
-├── claude.md                       ← Framework rules (38.7 KB)
-├── agents.md
+├── CLAUDE.md                       ← Framework rules (38.7 KB)
+├── AGENTS.md
 └── .windsurfrules                 ← Windsurf rules
 ```
 
@@ -873,13 +883,13 @@ laravel/
 ```
 laravel/Modules/
 ├── Xot/docs/
-│   ├── 00-index-1.md
+│   ├── 00-index.md
 │   ├── architecture/
 │   ├── guides/
 │   └── reference/
 │
 ├── Cms/docs/
-│   ├── 00-index-1.md
+│   ├── 00-index.md
 │   ├── architecture/
 │   ├── guides/
 │   └── reference/
@@ -892,7 +902,7 @@ laravel/Modules/
 ```
 laravel/Themes/
 ├── Sixteen/docs/
-│   ├── 00-index-1.md
+│   ├── 00-index.md
 │   ├── architecture/
 │   ├── design-comuni/
 │   ├── components/
@@ -901,7 +911,7 @@ laravel/Themes/
 │   └── screenshots/
 │
 └── TwentyOne/docs/
-    ├── 00-index-1.md
+    ├── 00-index.md
     └── (similar structure)
 ```
 
@@ -917,8 +927,9 @@ laravel/Themes/
 - **Module Development** → [module-docs-index.md](module-docs-index.md)
 - **Theme Development** → [THEMES_documentation-index.md](THEMES_documentation-index.md)
 - **Code Quality** → [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
-- **Framework Rules** → [laravel/claude.md](../laravel/claude.md)
+- **Framework Rules** → [laravel/CLAUDE.md](../laravel/CLAUDE.md)
 - **Copilot Usage** → [.github/copilot-instructions.md](../../.github/copilot-instructions.md)
+- **Copilot Usage** → [.github/copilot-instructions.md](../../../.github/copilot-instructions.md)
 - **Design Comuni** → Search for `DESIGN_COMUNI_` files
 
 ### By Use Case
@@ -955,7 +966,7 @@ laravel/Themes/
    - General? → docs/
 
 2. Follow structure:
-   - 00-index-1.md (always)
+   - 00-index.md (always)
    - architecture/ (how it works)
    - guides/ (how-to)
    - reference/ (API)
@@ -977,7 +988,7 @@ laravel/Themes/
 
 Every documentation hub should have:
 
-- [ ] **00-index-1.md** - Master index for the section
+- [ ] **00-index.md** - Master index for the section
 - [ ] **architecture/** - Diagrams and structure
 - [ ] **guides/** - How-to guides and examples
 - [ ] **reference/** - API and configuration reference
@@ -1001,7 +1012,8 @@ Master Indexes:
 ├─ module-docs-index.md (Module hub)
 ├─ THEMES_documentation-index.md (Theme hub)
 ├─ architecture-diagrams.md (System overview)
-├─ docs/00-index-1.md (Root index)
+├─ docs/00-index.md (Root index)
+├─ docs/00-index-documentation.md (Root index)
 └─ documentation-ecosystem.md (You are here)
 
 Connected Via:
@@ -1019,11 +1031,12 @@ Connected Via:
 ### For Developers
 
 1. Start: [Copilot Instructions](../../.github/copilot-instructions.md)
+1. Start: [Copilot Instructions](../../../.github/copilot-instructions.md)
 2. Understand: [Architecture Diagrams](architecture-diagrams.md)
 3. Explore: [Module Index](module-docs-index.md) or [Theme Index](THEMES_documentation-index.md)
-4. Deep Dive: Relevant module/theme 00-index-1.md
+4. Deep Dive: Relevant module/theme 00-index.md
 5. Implement: Using guides and examples
-6. Validate: Against claude.md standards
+6. Validate: Against CLAUDE.md standards
 
 ### For Architects
 
@@ -1031,11 +1044,12 @@ Connected Via:
 2. Understand: [Module Relationships](module-docs-index.md#cross-module-communication)
 3. Design: Using module/theme structure
 4. Review: [Code Quality Standards](CODE_QUALITY_STANDARDS.md)
-5. Validate: Against framework rules in claude.md
+5. Validate: Against framework rules in CLAUDE.md
 
 ### For New Project Members
 
 1. Read: [Copilot Instructions](../../.github/copilot-instructions.md)
+1. Read: [Copilot Instructions](../../../.github/copilot-instructions.md)
 2. Watch: Architecture diagrams in this file
 3. Explore: Master indexes for your area
 4. Ask: Use GitHub discussions for questions
@@ -1124,7 +1138,7 @@ Modules/ModuleName/
 ├── docs/
 │   ├── README.md                    # Module overview and quick reference
 │   ├── 00-index.md                  # Alternative index (if needed)
-│   ├── changelog.md                 # Module changelog
+│   ├── CHANGELOG.md                 # Module changelog
 │   ├── architecture/                # Architecture decisions and patterns
 │   │   ├── overview.md
 │   │   └── decisions/               # ADRs (Architectural Decision Records)
@@ -1526,7 +1540,8 @@ jobs:
 
 ## 📚 Related Documents
 
-- [agents.md](../../../agents.md) - Agent guidelines
+- [AGENTS.md](../../../AGENTS.md) - Agent guidelines
+- [AGENTS.md](../../agents.md) - Agent guidelines
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 - [documentation-index.md](../../../docs/documentation-index.md) - Master index
 
@@ -1622,7 +1637,7 @@ Transform documentation from **chaotic but comprehensive** to **organized, gover
 ### How to Join
 
 1. **Read this document** thoroughly
-2. **Check coordination log**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+2. **Check coordination log**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 3. **Pick a task** from the backlog below
 4. **Add your agent ID** to the team list
 5. **Create lock file** (optional, for exclusive work):
@@ -1684,9 +1699,9 @@ grep -r "Ultimo aggiornamento" docs/ --include="*.md"
 - [ ] `project_docs/roadmaps/roadmap-documentation.md` (this doc)
 
 **Archive** (move to `docs/archive/roadmaps/`):
-- [ ] `master-roadmap-historic.md`
+- [ ] `master-roadmap-2025.md`
 - [ ] `project-roadmap.md`
-- [ ] `project-roadmap-1.md`
+- [ ] `project-roadmap.md`
 - [ ] `roadmap.md`
 - [ ] `roadmap-project.md`
 - [ ] `roadmap-status-summary.md`
@@ -1710,6 +1725,7 @@ grep -r "Ultimo aggiornamento" docs/ --include="*.md"
 
 **Archive** (move to `docs/archive/completion-reports/`):
 - [ ] `absolute-completion-100.md`
+- [ ] `absolute-completion-completamento-assoluto.md`
 - [ ] `perfection-achieved.md`
 - [ ] `project-completion-report.md`
 - [ ] `project-completion-status.md`
@@ -2005,7 +2021,7 @@ grep -r "Ultimo aggiornamento" docs/ --include="*.md"
 
 1. **GitHub Issues**: Track individual tasks
 2. **GitHub Discussions**: General coordination
-3. **Coordination Log**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+3. **Coordination Log**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 4. **This Document**: Master plan tracking
 
 ### Lock File Protocol
@@ -2039,7 +2055,7 @@ rm docs/DOCUMENTATION_IMPROVEMENT_PLAN.md.lock
 
 - **Master Index**: `MASTER_documentation-index.md`
 - **Governance**: `documentation-governance.md`
-- **Coordination**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+- **Coordination**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 - **Analysis Report**: `docs/documentation-analysis-and-improvement-plan.md`
 
 ---
@@ -2099,12 +2115,17 @@ updated: 2026-07-14
 qmd: "documentation_improvement_summary_2026-03-13.deprecated deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2115,7 +2136,7 @@ related:
 
 ## documentation-improvement-summary-1
 
-*Consolidated from: `documentation-improvement-summary-1.md`*
+*Consolidated from: `documentation-improvement-summary.md`*
 
 title: "Documentation Improvement Summary - 2026-03-13"
 type: concept
@@ -2126,12 +2147,17 @@ qmd: "documentation-improvement-summary-2026-03-13.deprecated documentation impr
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2153,7 +2179,7 @@ Successfully implemented a comprehensive documentation governance framework and 
 ✅ **784 temporal strings removed** from 3,646 markdown files  
 ✅ **Documentation governance framework** created  
 ✅ **Master documentation index** established  
-✅ **Rules and standards** updated (agents.md, .windsurfrules)  
+✅ **Rules and standards** updated (AGENTS.md, .windsurfrules)  
 ✅ **Documentation management skill** created  
 ✅ **4 global memories** saved  
 ✅ **3 GitHub issues** created for tracking  
@@ -2178,6 +2204,7 @@ Successfully implemented a comprehensive documentation governance framework and 
 ### Core Documentation
 
 1. **[documentation-governance.md](docs/documentation-governance.md)**
+1. **[documentation-governance.md](../../documentation-governance.md)**
    - Comprehensive governance framework
    - Standards for all documentation
    - Quality metrics and KPIs
@@ -2190,6 +2217,7 @@ Successfully implemented a comprehensive documentation governance framework and 
    - Categorized by topic
 
 3. **[documentation-analysis-and-improvement-plan.md](docs/documentation-analysis-and-improvement-plan.md)**
+3. **[documentation-analysis-and-improvement-plan.md](../../documentation-analysis-and-improvement-plan.md)**
    - Detailed analysis of current state
    - Identified issues across 3,646 files
    - Implementation plan with timelines
@@ -2205,7 +2233,7 @@ Successfully implemented a comprehensive documentation governance framework and 
 
 ### Rules Updates
 
-5. **[agents.md](agents.md)** - Updated
+5. **[AGENTS.md](AGENTS.md)** - Updated
    - Added documentation governance section
    - No temporal strings rule
    - File naming conventions
@@ -2427,9 +2455,12 @@ grep -r "Last Updated" laravel/Modules/*/docs/ --include="*.md" | wc -l
 - [Governance Framework](docs/documentation-governance.md)
 - [Master Index](docs/MASTER_documentation-index.md)
 - [Improvement Plan](docs/documentation-analysis-and-improvement-plan.md)
+- [Governance Framework](../../documentation-governance.md)
+- [Master Index](docs/MASTER_documentation-index.md)
+- [Improvement Plan](../../documentation-analysis-and-improvement-plan.md)
 
 ### Rules
-- [agents.md](agents.md) - Full standards
+- [AGENTS.md](AGENTS.md) - Full standards
 - [.windsurfrules](.windsurfrules) - IDE rules
 
 ### Skills
@@ -2512,17 +2543,23 @@ updated: 2026-07-14
 qmd: "documentation_improvement_summary_2026-03-13 deprecated"
 status: deprecated
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
 
 > Questo file è stato rinominato in [documentation-improvement-summary.md](documentation-improvement-summary.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
+> Questo file è stato rinominato in [documentation-improvement-summary.md](../../documentation-improvement-summary.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
 
 ---
 
@@ -2541,12 +2578,17 @@ qmd: "documentation-index 📚 indice generale documentazione - <nome progetto>"
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2573,11 +2615,16 @@ related:
 - [README Principale](./README.md) - Panoramica progetto completa
 - [Analisi Super Mucca](./super-mucca-docs-analysis.md) - Report qualità documentazione
 - [Architecture](./architecture-analysis.md) - Analisi architetturale
+<<<<<<< .merge_file_e9BxUo
 - [Roadmap](./master-roadmap-historic.md) - Piano sviluppo 2025
+=======
+- [Roadmap](../../master-roadmap-2025.md) - Piano sviluppo 2025
+- [Roadmap](../../master-roadmap-2025.md) - Piano sviluppo 2025
+>>>>>>> .merge_file_lxcVFl
 
 ### Guide Rapide
 - [Quick Start](./quick-start.md) - Guida avvio rapido
-- [Contributing](./contributing.md) - Come contribuire
+- [Contributing](./CONTRIBUTING.md) - Come contribuire
 - [Troubleshooting](./troubleshooting/README.md) - Risoluzione problemi
 
 ---
@@ -2586,7 +2633,12 @@ related:
 
 ### Documentazione Architetturale
 - [Design Patterns](./architecture.md) - Pattern architetturali
+<<<<<<< .merge_file_e9BxUo
 - [Database Schema](./database/schema.md) - Schema database
+=======
+- [Database Schema](../schema.md) - Schema database
+- [Database Schema](../schema.md) - Schema database
+>>>>>>> .merge_file_lxcVFl
 - [API Documentation](./api/README.md) - Documentazione API
 - [Security](./security/README.md) - Sicurezza e conformità
 
@@ -2749,13 +2801,29 @@ related:
 
 ### Coding Guidelines
 - [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
+<<<<<<< .merge_file_e9BxUo
 - [Laravel Best Practices](./standards/laravel.md) - Best practices Laravel
+=======
+- [Laravel Best Practices](../../html2pdf/laravel.md) - Best practices Laravel
+- [Environment Setup](../../ai-agents/setup.md) - Configurazione ambiente
+- [Docker Setup](./development/docker.md) - Configurazione Docker
+- [Database Setup](../../ai-agents/setup.md) - Setup database
+
+### Coding Guidelines
+- [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
+- [Laravel Best Practices](../../html2pdf/laravel.md) - Best practices Laravel
+>>>>>>> .merge_file_lxcVFl
 - [Filament Guidelines](./standards/filament.md) - Linee guida Filament
 - [Blade Components](./standards/blade.md) - Componenti Blade
 
 ### Quality Assurance
 - [PHPStan Configuration](./phpstan/README.md) - Analisi statica
+<<<<<<< .merge_file_e9BxUo
 - [Testing Strategy](./testing/strategy.md) - Strategia testing
+=======
+- [Testing Strategy](../../strategy.md) - Strategia testing
+- [Testing Strategy](../../strategy.md) - Strategia testing
+>>>>>>> .merge_file_lxcVFl
 - [CI/CD Pipeline](./ci-cd/README.md) - Continuous integration
 
 ---
@@ -2796,7 +2864,12 @@ related:
 - [Error Tracking](./monitoring/errors.md) - Tracking errori
 
 ### Analytics
+<<<<<<< .merge_file_e9BxUo
 - [Usage Analytics](./analytics/usage.md) - Analisi utilizzo
+=======
+- [Usage Analytics](../../html2pdf/usage.md) - Analisi utilizzo
+- [Usage Analytics](../../html2pdf/usage.md) - Analisi utilizzo
+>>>>>>> .merge_file_lxcVFl
 - [Business Metrics](./analytics/business.md) - Metriche business
 
 ---
@@ -2804,7 +2877,12 @@ related:
 ## 🔒 Security
 
 ### Security Documentation
+<<<<<<< .merge_file_e9BxUo
 - [Security Guidelines](./security/guidelines.md) - Linee guida sicurezza
+=======
+- [Security Guidelines](../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
+- [Security Guidelines](../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
+>>>>>>> .merge_file_lxcVFl
 - [GDPR Compliance](./security/gdpr.md) - Conformità GDPR
 - [Authentication](./security/authentication.md) - Sistema autenticazione
 - [Authorization](./security/authorization.md) - Sistema autorizzazioni
@@ -2814,7 +2892,7 @@ related:
 ## 📝 Changelog & Versioning
 
 ### Version History
-- [Changelog](./changelog.md) - Storico modifiche
+- [Changelog](./CHANGELOG.md) - Storico modifiche
 - [Versioning Strategy](./versioning.md) - Strategia versioning
 - [Migration Guides](./migrations/README.md) - Guide migrazione
 
@@ -2823,7 +2901,7 @@ related:
 ## 🤝 Contributing
 
 ### Contribution Guidelines
-- [How to Contribute](./contributing.md) - Come contribuire
+- [How to Contribute](./CONTRIBUTING.md) - Come contribuire
 - [Code of Conduct](./CODE_OF_CONDUCT.md) - Codice condotta
 - [Pull Request Template](./.github/pull_request_template.md) - Template PR
 
@@ -2886,12 +2964,17 @@ qmd: "documentation-system-update-complete documentation system update - complet
 issues: ["https://github.com/provtv/<nome repository>/issues/124"]
 discussions: ["https://github.com/provtv/<nome repository>/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
 ---
@@ -2994,10 +3077,10 @@ Notify Fila5 Documentation (7,299 files)
 │   ├── Sixteen/docs/ (325 files)
 │   │   ├── README.md
 │   │   ├── layout-architecture.md
-│   │   ├── LAYOUT_ARCHITECTURE_MAP.md
-│   │   ├── LAYOUT_FIX_COMPLETE_BMAD.md
-│   │   ├── VITE_MANIFEST_FIX_COMPLETE.md
-│   │   ├── PHPSTAN_LAYOUT_FIX_COMPLETE.md
+│   │   ├── layout-architecture-map.md
+│   │   ├── layout-fix-complete-bmad.md
+│   │   ├── vite-manifest-fix-complete.md
+│   │   ├── phpstan-layout-fix-complete.md
 │   │   ├── components/
 │   │   ├── guides/
 │   │   └── ...
@@ -3073,10 +3156,10 @@ Notify Fila5 Documentation (7,299 files)
 | File | Purpose | Lines |
 |------|---------|-------|
 | `docs/module-docs-index.md` | Master documentation index | 400+ |
-| `Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_MAP.md` | Layout navigation map | 350+ |
-| `Themes/Sixteen/docs/LAYOUT_FIX_COMPLETE_BMAD.md` | Layout fix summary | 400+ |
+| `Themes/Sixteen/docs/layout-architecture-map.md` | Layout navigation map | 350+ |
+| `Themes/Sixteen/docs/layout-fix-complete-bmad.md` | Layout fix summary | 400+ |
 | `Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md` | Vite build fix | 300+ |
-| `Themes/Sixteen/docs/PHPSTAN_LAYOUT_FIX_COMPLETE.md` | PHPStan + layout summary | 250+ |
+| `Themes/Sixteen/docs/phpstan-layout-fix-complete.md` | PHPStan + layout summary | 250+ |
 
 ### Updated Documents
 
@@ -3109,15 +3192,23 @@ export default defineConfig({
 **Why This is Correct:**
 
 1. **Build Target:** `./public` (local theme public folder)
+<<<<<<< .merge_file_e9BxUo
 2. **Copy Step:** `symlink public_html/themes (npm run copy obsoleto)` copies to `../../public_html/themes/Sixteen/`
 2. **Nessuna copia:** `public_html/themes/Sixteen` e' un symlink a `laravel/Themes/Sixteen/public`
+=======
+2. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+>>>>>>> .merge_file_lxcVFl
 3. **Manifest Location:** Both locations have manifest.json after build
 4. **Laravel Vite:** Reads from `public_html/themes/Sixteen/manifest.json`
 
 **Build Flow:**
 ```
+<<<<<<< .merge_file_e9BxUo
 resources/ → Vite Build → public/ → symlink public_html/themes (npm run copy obsoleto) → public_html/themes/Sixteen/
 resources/ → Vite Build → public/ ← symlink ← public_html/themes/Sixteen
+=======
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+>>>>>>> .merge_file_lxcVFl
 ```
 
 ---
@@ -3284,6 +3375,7 @@ Start at theme index:
 ### Finding Documentation
 
 1. **Start Here:** [docs/module-docs-index.md](docs/module-docs-index.md)
+1. **Start Here:** [docs/module-docs-index.md](../../module-docs-index.md)
 2. **Navigate to:** Module or theme category
 3. **Use Search:** Ctrl+F for keywords
 4. **Follow Links:** Cross-references guide you
@@ -3308,10 +3400,11 @@ Start at theme index:
 ## 📋 Related Documents
 
 - [Master Index](docs/module-docs-index.md) - Central navigation
+- [Master Index](../../module-docs-index.md) - Central navigation
 - [BMad Workflow](_bmad-output/BMAD-WORKFLOW-COMPLETE.md) - BMad summary
 - [Layout Architecture](Themes/Sixteen/docs/layout-architecture.md) - Theme layouts
 - [Vite Manifest Fix](Themes/Sixteen/docs/VITE_MANIFEST_FIX_COMPLETE.md) - Build fix
-- [PHPStan + Layout](Themes/Sixteen/docs/PHPSTAN_LAYOUT_FIX_COMPLETE.md) - Combined summary
+- [PHPStan + Layout](Themes/Sixteen/docs/phpstan-layout-fix-complete.md) - Combined summary
 
 ---
 

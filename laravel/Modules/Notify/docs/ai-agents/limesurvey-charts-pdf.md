@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "limesurvey charts pdf"
 issues: []
 discussions: []
+status: draft
 ---
 
 # LimeSurvey Integration & Professional Charts

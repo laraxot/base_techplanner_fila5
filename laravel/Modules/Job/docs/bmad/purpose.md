@@ -39,6 +39,7 @@ Un lavoro asincrono che fallisce in silenzio è peggio di uno mai partito: chi l
 | Accorgersi del lavoro che non parte più | **non mantenuta** (dipende dal punto precedente) | `ScheduleHistory`/`Result` mai popolati dal modulo |
 | Il fallimento raggiunge chi l'ha chiesto | **non implementata** | nessun hook di coda attivo |
 | Solo chi amministra gestisce la coda | **violata** su `Job`/`FailedJob`/`JobBatch` | `JobPolicy.php:32` ([P0-1](./audits/job-audit.md#p0-1--un-utente-qualsiasi-può-creare-righe-nella-tabella-jobs)) |
+| ↳ verifica 2026-11-19 | **corretta nel codice** (E1, story in `review`) | `JobPolicy` ora deny-by-default su tutte le ability, bypass solo in `JobBasePolicy::before()` ([e1 story](./stories/e1-job-policy-create-deny.story.md)) |
 
 ## Riferimenti
 

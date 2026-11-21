@@ -227,8 +227,8 @@ Level 3: Themes
 **Output**: Analysis in `/docs/archive/roadmaps/ANALYSIS.md`
 
 #### Wave 2: Core Structure 🟡 IN PROGRESS
-- 🟡 Create central ROADMAP.md (THIS FILE)
-- [ ] Create unified INDEX.md
+- 🟡 Create central roadmap.md (THIS FILE)
+- [ ] Create unified index.md
 - [ ] Create MODULE_ROADMAPS.md
 - [ ] Create TIMELINE.md
 - [ ] Archive old roadmap variants
@@ -252,7 +252,7 @@ Level 3: Themes
 **Target Completion**: Week following Wave 3
 
 **Success Criteria**:
-- ✅ Central ROADMAP.md created with all phases
+- ✅ Central roadmap.md created with all phases
 - ✅ Old roadmap files archived (not deleted)
 - ✅ Migration guide documents old locations
 - [ ] All internal links verified (no 404s)
@@ -356,11 +356,11 @@ Each of the 18 modules has its own documentation:
 ### Central Hub (This Location)
 ```
 docs/
-├── ROADMAP.md (THIS FILE) - Central hub, all phases
-├── INDEX.md - Master navigation, updated with links
+├── roadmap.md (THIS FILE) - Central hub, all phases
+├── index.md - Master navigation, updated with links
 ├── PROJECT/ - Project metadata
 │   ├── README.md
-│   ├── ARCHITECTURE.md
+│   ├── architecture.md
 │   └── CHANGELOG.md
 └── archive/
     └── roadmaps/
@@ -436,8 +436,8 @@ Sep 2024          Q4 2025          Q1 2026          Q2 2026          2027+
 **Week of April 3, 2026**:
 
 1. **Phase 11 Wave 2**: Complete core documentation structure
-   - ✅ Create central ROADMAP.md (THIS FILE)
-   - 🟡 Update INDEX.md with navigation
+   - ✅ Create central roadmap.md (THIS FILE)
+   - 🟡 Update index.md with navigation
    - 🟡 Create MODULE_ROADMAPS.md
    - 🟡 Create TIMELINE.md
 
@@ -457,13 +457,13 @@ Sep 2024          Q4 2025          Q1 2026          Q2 2026          2027+
 
 ✅ = Complete | 🟡 = In Progress | 📅 = Pending
 
-- ✅ Central ROADMAP.md created with all phases (1-15+)
+- ✅ Central roadmap.md created with all phases (1-15+)
 - ✅ Phase 10 (Homepage) fully documented with deliverables
 - ✅ Phase 11 (Documentation) broken into 4 waves with clear tasks
 - 🟡 Phase 12+ outlined with objectives and timelines
 - 📅 Old roadmap files archived (not deleted)
 - 📅 Migration guide created for old locations
-- 📅 INDEX.md updated with roadmap link
+- 📅 index.md updated with roadmap link
 - 📅 All internal links verified (no 404s)
 - 📅 Module-specific roadmaps linked from central hub
 
@@ -471,7 +471,7 @@ Sep 2024          Q4 2025          Q1 2026          Q2 2026          2027+
 
 ## 📞 Getting Help
 
-- **Questions about phases?** → Check [ROADMAP.md](./ROADMAP.md)
+- **Questions about phases?** → Check [roadmap.md](./roadmap.md)
 - **Can't find a document?** → See [MIGRATION_GUIDE.md](./archive/roadmaps/MIGRATION_GUIDE.md)
 - **Module specific?** → See [Module-Specific Roadmaps](#-module-specific-roadmaps)
 - **Need history?** → Check [Archive Manifest](./archive/roadmaps/MANIFEST.md)

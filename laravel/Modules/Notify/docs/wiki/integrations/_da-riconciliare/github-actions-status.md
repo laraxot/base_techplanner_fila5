@@ -1,8 +1,8 @@
 ---
-qmd: "github actions status"
+qmd: "Github Actions Status"
 issues: []
 discussions: []
-title: "GitHub Actions Status & Fixes"
+title: "Github Actions Status"
 module: notify
 type: integration
 tags: [integrations, modules, notify]

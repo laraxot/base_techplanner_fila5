@@ -69,7 +69,7 @@ vale qui: un `index.md` a una schermata, un solo canonico per argomento, il rest
 collegato o marcato superseded.
 
 Questo modulo ospitava anche coppie di file che differivano **solo per maiuscole**
-(`AGENTS.md`/`agents.md`, `QUICK-REFERENCE.md`/`quick-reference.md`,
+(`AGENTS.md`/`AGENTS.md`, `quick-reference.md`/`quick-reference.md`,
 `SESSION-SUMMARY.md`/`session-summary.md`), risolte il 2026-09-02: rompevano il
 checkout su macOS e Windows.
 

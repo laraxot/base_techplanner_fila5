@@ -1,8 +1,8 @@
 ---
-qmd: "markdown linking conventions.divergenza"
+qmd: "Markdown Linking Conventions.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: markdown_linking_conventions.md"
+title: "Markdown Linking Conventions.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -62,6 +62,6 @@ When a task concerns shared interface behavior:
 
 - [[UI Architecture Sources]]
 - `../../README.md`
-- `../../ARCHITECTURE.md`
-- `../../PRODUCT_STRATEGY.md`
+- `../../architecture.md`
+- `../../product_strategy.md`
 - `../../architecture/structure.md`

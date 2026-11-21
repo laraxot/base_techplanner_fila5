@@ -11,7 +11,7 @@ discussions: []
 
 # Filament Widget Tables Policy
 
-> Indice: [./00-INDEX.md](./00-INDEX.md)
+> Indice: [./00-index.md](./00-index.md)
 > Indice: [./00-index.md](./00-index.md)
 > Regola correlata: [../../rules/filament-widget-tables-rule.md](../../rules/filament-widget-tables-rule.md)
 > Skill correlata: [../../skills/filament-widget-tables-governance/SKILL.md](../../skills/filament-widget-tables-governance/SKILL.md)

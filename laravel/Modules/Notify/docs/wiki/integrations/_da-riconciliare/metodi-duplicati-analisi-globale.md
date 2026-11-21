@@ -11,8 +11,8 @@ related:
   - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./absolute-completion-notify-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -72,7 +72,7 @@ related:
 | Lang | 20 | 180360.0% | 636 | 16h | [📄 Vedi](Modules/Lang/docs/metodi-duplicati-analisi-1.md) |
 | Tenant | 10 | 175068.1% | 299 | 14h | [📄 Vedi](Modules/Tenant/docs/metodi-duplicati-analisi-1.md) |
 | Blog | 28 | 171872.2% | 633 | 49h | [📄 Vedi](Modules/Blog/docs/metodi-duplicati-analisi-1.md) |
-| User | 54 | 166896.5% | 1173 | 69h | [📄 Vedi](Modules/User/docs/metodi-duplicati-analisi-1.md) |
+| User | 54 | 166896.5% | 1173 | 69h | [📄 Vedi](Modules/User/docs/metodi-duplicati-analisi.md) |
 | Xot | 28 | 143763.5% | 899 | 33h | [📄 Vedi](Modules/Xot/docs/metodi-duplicati-analisi-1.md) |
 | Activity | 10 | 142835.9% | 261 | 9h | [📄 Vedi](Modules/Activity/docs/metodi-duplicati-analisi-1.md) |
 | Media | 11 | 121938.0% | 278 | 20h | [📄 Vedi](Modules/Media/docs/metodi-duplicati-analisi-1.md) |

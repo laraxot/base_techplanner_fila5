@@ -46,7 +46,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -518,7 +518,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1046,7 +1046,7 @@ cp /path/to/backup/.gitattributes laravel/Modules/Blog/
 - [x] Remove all `.gitattributes` files
 - [x] Update root `.gitignore`
 - [x] Create module `.gitignore` files
-- [x] Update agents.md
+- [x] Update AGENTS.md
 - [x] Document cleanup
 - [x] Verify with git check-ignore
 
@@ -1090,7 +1090,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1240,7 +1240,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1311,10 +1311,10 @@ echo "Synced .github with bashscripts/ai/.github on $(date)" >> bashscripts/ai/.
 | Source | Destination | Purpose |
 |--------|-------------|---------|
 | `.github/workflows/*.yml` | `bashscripts/ai/.github/workflows/` | All workflows |
-| `.github/contributing.md` | `bashscripts/ai/.github/` | Contribution guide |
+| `.github/CONTRIBUTING.md` | `bashscripts/ai/.github/` | Contribution guide |
 | `.github/pull_request_template.md` | `bashscripts/ai/.github/` | PR template |
 | `.github/dependabot.yml` | `bashscripts/ai/.github/` | Dependabot config |
-| `.github/security.md` | `bashscripts/ai/.github/` | Security policy |
+| `.github/SECURITY.md` | `bashscripts/ai/.github/` | Security policy |
 
 ---
 

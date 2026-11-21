@@ -16,7 +16,7 @@ Documentation for `notify` module categorized as **product**.
 
 ## Files
 
-- [`INDEX.md`](./index.md)
+- [`index.md`](./index.md)
 - [`composer-strategy.md`](./composer-strategy.md)
 - [`inbound-keting-strategy.md`](./inbound-keting-strategy.md)
 - [`inbound-marketing-strategy.md`](./inbound-marketing-strategy.md)

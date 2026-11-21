@@ -6,11 +6,10 @@ title: analisi phpstan modulo gdpr
 type: memory
 tags: [phpstan, gdpr, fixes]
 created: 2026-05-27
-updated: 2026-11-17
+updated: 2026-05-27
 status: approved
 related:
   - ./phpstan-fixes.md
-  - ./phpstan-compliance-status.md
   - ../../../../docs/wiki/memories/phpstan-modules-inventory.md
 ---
 
@@ -21,8 +20,7 @@ related:
 ## Stato attuale
 
 - **Livello:** max (`laravel/phpstan.neon`)
-- **Errori:** **0**
-- **Wave 2026-11-17:** inventario `/tmp/phpstan-wave/Gdpr.tsv` riportava 262 errori **stale**; misura live `phpstan analyse Modules/Gdpr` = **0** (nessuna modifica codice in questo round).
+- **Errori:** **0** (129 file)
 - **Issue:** [provtv/module_gdpr_fila5#9](https://github.com/provtv/module_gdpr_fila5/issues/9) (chiusa)
 
 ## Fix applicati

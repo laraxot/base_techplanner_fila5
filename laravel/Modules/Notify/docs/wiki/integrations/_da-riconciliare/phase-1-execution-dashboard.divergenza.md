@@ -1,8 +1,8 @@
 ---
-qmd: "phase 1 execution dashboard.divergenza"
+qmd: "Phase 1 Execution Dashboard.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: phase-1-execution-dashboard.md"
+title: "Phase 1 Execution Dashboard.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

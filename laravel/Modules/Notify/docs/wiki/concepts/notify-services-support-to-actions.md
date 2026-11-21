@@ -16,6 +16,7 @@ related:
   - "./llm-wiki-governance.md"
   - "./method-name-homonyms.md"
   - "./module-root-uppercase-folders-archive.md"
+status: draft
 ---
 
 # Notify `app/Services` -> `app/Actions` migration
@@ -62,10 +63,11 @@ Il 2026-07-13 i residui non autoloadabili erano stati archiviati con suffisso `.
 originali sono tornati). Stato definitivo al 2026-10-08: **`app/Services` non esiste piu'** (file cancellati, recuperabili
 da HEAD del repo del modulo; nessun `.gitkeep` a preservare la cartella). Dettaglio nella story
 `stories/2026-10-08-services-to-actions-notify.story.md`.
+`stories/services-to-actions-notify.story.md`.
 
 Callers repo-wide di `Modules\Notify\Services\*`: 0.
 
-## Aggiornamento 2026-07-16 — pulizia residui
+## Aggiornamento 2026-07-16: pulizia residui
 
 Verifica finale monorepo-wide (`laravel/Modules/*`, `laravel/Themes/*`,
 `laravel/app/`): l'unico riferimento a codice `Modules\Notify\Services\*`

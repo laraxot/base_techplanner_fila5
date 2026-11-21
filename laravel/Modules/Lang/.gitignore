@@ -175,11 +175,3 @@ lang.code-workspace
 /.github/skills/
 docs/graphify
 resources/lang
-
-# Tooling/configurazione locale (module-theme-root-hygiene)
-.agents/
-.codex/
-.opencode/
-.qwen/
-.php-cs-fixer.php
-.php-cs-fixer.dist.php

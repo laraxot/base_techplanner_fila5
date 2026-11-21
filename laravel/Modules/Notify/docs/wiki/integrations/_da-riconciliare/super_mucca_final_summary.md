@@ -302,7 +302,7 @@ wire:submit="method" → Azione submit
 ### Aree di Miglioramento
 
 1. **Link Assoluti**: 335 file da correggere (automatizzabile)
-2. **Naming Consistency**: 13 file "readme.md" minuscolo da rinominare
+2. **Naming Consistency**: 13 file "README.md" minuscolo da rinominare
 3. **Documentation Coverage**: Alcuni moduli con doc minimale
 4. **Cross-References**: Migliorare collegamenti bidirezionali
 

@@ -442,7 +442,7 @@ docs/
 ├── README.md (✅ Project Overview)
 ├── MASTER_PLAN.md (✅ This document)
 ├── PROJECT_STATUS.md (✅ Status Report)
-├── ARCHITECTURE.md (📋 Technical Architecture)
+├── architecture.md (📋 Technical Architecture)
 ├── API_REFERENCE.md (📋 API Documentation)
 ├── DEPLOYMENT.md (📋 Deployment Guide)
 └── modules/

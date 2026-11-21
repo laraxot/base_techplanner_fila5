@@ -1,8 +1,8 @@
 ---
-qmd: "provider contracts naming.divergenza"
+qmd: "Provider Contracts Naming.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: provider_contracts_naming.md"
+title: "Provider Contracts Naming.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

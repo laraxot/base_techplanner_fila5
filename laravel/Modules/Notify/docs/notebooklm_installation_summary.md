@@ -38,7 +38,7 @@ ls -la ~/.claude/skills/notebooklm/
 # - data/ (authentication + library)
 # - requirements.txt
 # - README.md, CHANGELOG.md, LICENSE
-# - README.md, changelog.md, LICENSE
+# - README.md, CHANGELOG.md, LICENSE
 ```
 
 ## What is NotebookLM Skill?
@@ -234,7 +234,7 @@ Create these NotebookLM notebooks:
 
 ### 1. Laraxot Framework Docs
 - **Upload**: Laraxot documentation, AGENTS.md, .windsurfrules
-- **Upload**: Laraxot documentation, agents.md, .windsurfrules
+- **Upload**: Laraxot documentation, AGENTS.md, .windsurfrules
 - **Topics**: laravel, architecture, modules, filament, xot
 - **Use**: Technical research, implementation verification
 

@@ -85,7 +85,7 @@ Key settings:
 │   └── [module-slug].php
 ├── docs/
 │   ├── README.md (this file)
-│   ├── ARCHITECTURE.md
+│   ├── architecture.md
 │   ├── architecture.md
 │   ├── guides/
 │   └── api/
@@ -172,7 +172,7 @@ composer test -- Modules/[ModuleName]
 ## Related Documentation
 
 ### Within Module
-- [ARCHITECTURE.md](./ARCHITECTURE.md) - Design details
+- [architecture.md](./architecture.md) - Design details
 - [architecture.md](./architecture.md) - Design details
 - [Guides](./guides/) - How-to guides
 
@@ -181,6 +181,6 @@ composer test -- Modules/[ModuleName]
 
 ---
 
-Navigation: [Project Home](../../docs/INDEX.md) | [Modules](../../docs/modules/README.md)
+Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md)
 Navigation: [Project Home](../../docs/index.md) | [Modules](../../docs/modules/README.md)
 

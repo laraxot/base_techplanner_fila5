@@ -14,7 +14,7 @@ discussions: []
 Questo file è il "AGENTS.md" della wiki: istruzioni per l'LLM su come mantenere la wiki.
 # LLM Wiki Schema — Notify
 
-Questo file è il "agents.md" della wiki: istruzioni per l'LLM su come mantenere la wiki.
+Questo file è il "AGENTS.md" della wiki: istruzioni per l'LLM su come mantenere la wiki.
 
 ---
 

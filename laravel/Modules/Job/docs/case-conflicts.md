@@ -13,7 +13,7 @@ discussions: []
 
 File duplicati nel modulo `Job` che differiscono solo per la capitalizzazione:
 
-- `Modules/Job/.github`: `CONTRIBUTING.md`, `contributing.md`
-- `Modules/Job/.github`: `SECURITY.md`, `security.md`
+- `Modules/Job/.github`: `CONTRIBUTING.md`, `CONTRIBUTING.md`
+- `Modules/Job/.github`: `SECURITY.md`, `SECURITY.md`
 
 Uniformare i nomi (preferibilmente tutto maiuscolo come nello standard GitHub) e aggiornare eventuali riferimenti.

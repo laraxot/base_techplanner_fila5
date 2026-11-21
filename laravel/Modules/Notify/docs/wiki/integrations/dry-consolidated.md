@@ -301,7 +301,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -313,7 +313,7 @@ related:
 
 ## dry-kiss-analysis-2
 
-*Consolidated from: `dry-kiss-analysis-2.md`*
+*Consolidated from: `dry-kiss-analysis.md`*
 
 title: "DRY & KISS Analysis - Modulo Notify"
 type: concept
@@ -328,7 +328,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -368,7 +368,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 
 
 ---
@@ -410,7 +410,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
-[DRY/KISS Global](../../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+[DRY/KISS Global](../../../docs/DRY_KISS_ANALYSIS.md)
 
 ---
 
@@ -431,7 +431,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -1224,7 +1224,7 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 - 🔄 ServiceProvider: Auto-detect nome
 
 ---
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)
+[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
 
 
 ---
@@ -2140,7 +2140,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"

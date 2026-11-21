@@ -1,8 +1,8 @@
 ---
-qmd: "contributing.divergenza"
+qmd: "Contributing.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: CONTRIBUTING.md"
+title: "Contributing.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

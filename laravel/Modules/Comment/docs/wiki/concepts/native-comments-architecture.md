@@ -1,4 +1,5 @@
 ---
+discussions: []
 title: "Architettura commenti nativi — post-Spatie"
 type: concept
 module: Comment
@@ -12,9 +13,10 @@ issues:
 related:
   - spatie-package-inventory.md
   - spatie-comments-fo-ticket-integration.md
-  - ../decisions/adr-internalize-spatie-comments.md
-  - ../../../../../docs/wiki/memories/no-laravel-app-services-nwidart.md
-  - ../../../../../docs/wiki/decisions/ticket-fo-spatie-comments.md
+  - ../../adr/internalize-spatie-comments.md
+  - ../../../../../../docs/wiki/memories/no-laravel-app-services-nwidart.md
+  - ../../../../../../docs/wiki/decisions/ticket-fo-spatie-comments.md
+status: draft
 ---
 
 # Architettura commenti nativi (Modules\Comment)
@@ -194,7 +196,7 @@ Vedi workflow `/internalize-spatie-comments` e [spatie-package-inventory.md](spa
 
 - [ ] `rg 'Spatie\\Comments' laravel/` → 0 (escluso docs storici)
 - [ ] `packages/spatie` eliminata
-- [ ] `TicketSpatieCommentsTest` verde (rinominato)
+- [ ] `TicketCommentsTest` verde
 - [ ] FO `/it/tickets/{id}` commento auth + guest read-only
 - [ ] PHPStan L10 module Comment
 
@@ -204,5 +206,5 @@ Vedi workflow `/internalize-spatie-comments` e [spatie-package-inventory.md](spa
 
 - [Inventario Spatie](spatie-package-inventory.md)
 - [Integrazione FO ticket](spatie-comments-fo-ticket-integration.md)
-- [ADR](../decisions/adr-internalize-spatie-comments.md)
+- [ADR](../../adr/internalize-spatie-comments.md)
 - Workflow: `.claude/commands/bmad/internalize-spatie-comments.md`

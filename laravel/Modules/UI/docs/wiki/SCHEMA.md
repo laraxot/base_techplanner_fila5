@@ -20,7 +20,7 @@ docs/
 ├── wiki/
 │   ├── index.md           # Catalogo
 │   ├── log.md             # Registro
-│   ├── SCHEMA.md          # Questo file
+│   ├── schema.md          # Questo file
 │   ├── concepts/          # Pattern, architettura
 │   ├── entities/          # Modelli, azioni
 │   ├── sources/           # Doc esterna

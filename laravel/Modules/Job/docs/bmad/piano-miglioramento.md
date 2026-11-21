@@ -13,6 +13,7 @@ related:
 
 # Piano di miglioramento — Job
 
+<<<<<<< .merge_file_uTJfWD
 Derivato dall'[audit](./audits/job-audit.md).
 
 ## P0
@@ -47,6 +48,8 @@ Derivato dall'[audit](./audits/job-audit.md).
 - [ ] PHPStan `Modules/Job` = 0
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
+=======
+>>>>>>> .merge_file_uM21LQ
 Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./epics.md).
 
 ## P0
@@ -66,6 +69,9 @@ Derivato dall'[audit profondo](./audits/job-audit.md). Epic e AC: [epics.md](./e
 1. `ScheduleService` → Action o cancellazione; unificare le 2 coppie di Action.
 2. Junk fuori dall'albero (`.aaa`, `queue.pid`, `.backup*`, `Untitled`, `webpack.mix.js`, `psalm.xml`, `tests/feature`/`unit`).
 3. i18n dei titoli notifica.
+4. Allineare le Resource Filament a `XotBase*` e le traduzioni a Lang (zero etichette letterali).
+5. Dipendenze verso altri moduli: `TaskComment.php:11` e `Traits/TaskCommentRelations.php:9` importano `Modules\User\Models\User` concreto (usare `XotData`/`UserContract`); verificare con `rg` che non ci siano altre dipendenze inverse.
+6. Profiling N+1 sulle Resource e sui widget di stato.
 
 ## Sequenza e gate
 

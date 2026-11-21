@@ -97,7 +97,7 @@ discussions: []
 ### 3. Documentazione Professionale ✅
 
 #### **Documenti Creati: 7**
-1. ✅ ARCHITECTURE.md (architettura completa)
+1. ✅ architecture.md (architettura completa)
 1. ✅ architecture.md (architettura completa)
 2. ✅ QUALITY_DASHBOARD.md (dashboard metriche)
 3. ✅ excellence-achievement-caps.md (achievement report)

@@ -164,8 +164,8 @@ gh run list --repo laraxot/base_ptv_fila5
 
 ## 📚 Related Documentation
 
-- [Multi-Agent Collaboration Guide](MULTI_AGENT_COLLABORATION_GUIDE.md)
-- [GitHub Sync Rule](GITHUB_SYNC_RULE.md)
+- [Multi-Agent Collaboration Guide](multi_agent_collaboration_guide.md)
+- [GitHub Sync Rule](github_sync_rule.md)
 - [AI Rules](../.qwen/AI_RULES_CRITICAL.md)
 
 ---

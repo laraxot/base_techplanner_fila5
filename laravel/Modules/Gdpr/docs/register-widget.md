@@ -23,7 +23,9 @@ The `RegisterWidget` uses custom Livewire public properties for consents instead
 - `$marketing_consent`: Optional. Linked to `marketing_consent` treatment.
 
 ### Custom Component Path
-- `Themes/Meetup/resources/views/filament/widgets/auth/register.blade.php`
+- Vista del tema attivo: `pub_theme::filament.widgets.auth.register` (es. `Themes/Sixteen/resources/views/filament/widgets/auth/register.blade.php`)
+- Vista di riserva del modulo: `gdpr::filament.widgets.auth.register`
+- Contratto comune e proprieta' dei testi: [register-widget-copy-ownership.md](register-widget-copy-ownership.md)
 
 ## Integration Pattern
 

@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -273,8 +273,8 @@ This document provides an index of all module roadmaps in the Laraxot ecosystem.
 
 - [Laraxot Architecture Rules](./laravel/Modules/Xot/docs/laraxot-architecture-rules.md)
 - [Project Roadmap](./project-roadmap-1.md)
-- [AGENTS.md](./AGENTS.md)
-- [agents.md](./AGENTS.md)
+- [AGENTS.md](./agents.md)
+- [AGENTS.md](./agents.md)
 - [Getting Started](./quick-start.md)
 
 ## 🤝 Contributing

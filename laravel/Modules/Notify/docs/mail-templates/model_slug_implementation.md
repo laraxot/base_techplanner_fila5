@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "model slug implementation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Implementazione del Campo `slug` nel Modello MailTemplate
@@ -184,5 +185,8 @@ echo $uniqueSlug;
 
 - [Struttura della Migrazione](migration_structure.md)
 - [Implementazione Campo Slug nella Migrazione](slug_field_implementation.md)
-- [Guida alla Migrazione MailTemplate](../MAIL_TEMPLATE_MIGRATION_GUIDE.md)
+- [Guida alla Migrazione MailTemplate](../mail_template_migration_guide.md)
+- [Struttura della Migrazione](./migration_structure.md)
+- [Implementazione Campo Slug nella Migrazione](./slug_field_implementation.md)
+- [Guida alla Migrazione MailTemplate](../mail_template_migration_guide.md)
 - [Documentazione Spatie Sluggable](https://github.com/spatie/laravel-sluggable)

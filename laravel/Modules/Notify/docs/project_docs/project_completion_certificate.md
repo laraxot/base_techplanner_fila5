@@ -376,16 +376,16 @@ CI/CD & Automation
 
 ### Appendix A: Detailed Metrics
 
-See [Quality Dashboard](./QUALITY_DASHBOARD.md)
+See [Quality Dashboard](./quality_dashboard.md)
 
 ### Appendix B: Architecture Documentation
 
-See [Architecture](./ARCHITECTURE.md)
+See [Architecture](./architecture.md)
 See [Architecture](./architecture.md)
 
 ### Appendix C: Refactoring Report
 
-See [Final Refactoring Report](./FINAL_REFACTORING_REPORT.md)
+See [Final Refactoring Report](./final_refactoring_report.md)
 
 ### Appendix D: Test Coverage Report
 

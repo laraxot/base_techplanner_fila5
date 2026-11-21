@@ -1,8 +1,8 @@
 ---
-qmd: "seasonal email system recommendations.divergenza"
+qmd: "Seasonal Email System Recommendations.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: seasonal-email-system-recommendations.md"
+title: "Seasonal Email System Recommendations.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

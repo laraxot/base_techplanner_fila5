@@ -35,7 +35,7 @@ Successfully implemented a comprehensive documentation governance framework and 
 ✅ **Documentation governance framework** created  
 ✅ **Master documentation index** established  
 ✅ **Rules and standards** updated (AGENTS.md, .windsurfrules)  
-✅ **Rules and standards** updated (agents.md, .windsurfrules)  
+✅ **Rules and standards** updated (AGENTS.md, .windsurfrules)  
 ✅ **Documentation management skill** created  
 ✅ **4 global memories** saved  
 ✅ **3 GitHub issues** created for tracking  
@@ -87,8 +87,8 @@ Successfully implemented a comprehensive documentation governance framework and 
 
 ### Rules Updates
 
-5. **[AGENTS.md](AGENTS.md)** - Updated
-5. **[agents.md](AGENTS.md)** - Updated
+5. **[AGENTS.md](agents.md)** - Updated
+5. **[AGENTS.md](agents.md)** - Updated
    - Added documentation governance section
    - No temporal strings rule
    - File naming conventions
@@ -315,8 +315,8 @@ grep -r "Last Updated" laravel/Modules/*/docs/ --include="*.md" | wc -l
 - [Improvement Plan](docs/DOCUMENTATION_ANALYSIS_AND_IMPROVEMENT_PLAN.md)
 
 ### Rules
-- [AGENTS.md](AGENTS.md) - Full standards
-- [agents.md](AGENTS.md) - Full standards
+- [AGENTS.md](agents.md) - Full standards
+- [AGENTS.md](agents.md) - Full standards
 - [.windsurfrules](.windsurfrules) - IDE rules
 
 ### Skills

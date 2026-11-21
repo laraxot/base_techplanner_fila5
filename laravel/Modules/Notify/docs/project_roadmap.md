@@ -694,7 +694,7 @@ tests/Browser/AdminManageTicketTest.php
 ## 📚 DOCUMENTAZIONE CORRELATA
 
 ### Moduli
-- [Fixcity ROADMAP](Modules/Fixcity/docs/ROADMAP.md)
+- [Fixcity ROADMAP](Modules/Fixcity/docs/roadmap.md)
 - [Fixcity README](Modules/Fixcity/docs/README.md)
 - [Cms ROADMAP](Modules/Cms/docs/development/roadmap.md)
 
@@ -702,7 +702,7 @@ tests/Browser/AdminManageTicketTest.php
 - [Sixteen Theme Docs](Themes/Sixteen/docs/)
 
 ### Best Practices
-- [Laravel Boost Guidelines](CLAUDE.md)
+- [Laravel Boost Guidelines](claude.md)
 - [Architecture Patterns](docs/architecture/)
 
 ---

@@ -1,8 +1,8 @@
 ---
-qmd: "documentation index.divergenza"
+qmd: "Documentation Index.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: DOCUMENTATION_INDEX.md"
+title: "Documentation Index.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

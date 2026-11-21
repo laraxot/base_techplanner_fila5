@@ -7,72 +7,79 @@ namespace Modules\Comment\Models\Concerns;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany;
-use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\Auth;
-use Modules\Comment\Models\Contracts\CanComment;
+use Modules\Comment\Actions\Resolve\ResolveCommentatorModelsAction;
+use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Enums\NotificationSubscriptionType;
 use Modules\Comment\Exceptions\CannotCreateComment;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\CommentNotificationSubscription;
-use Modules\Comment\Support\CommentConfig;
+use Modules\Comment\Models\Contracts\CanComment;
+use RuntimeException;
 
 trait HasComments
 {
-    /** @return MorphMany<Comment, Model> */
+    /**
+     * Thread di commenti sul soggetto (article, ticket, comment stesso).
+     *
+     * @return MorphMany<Comment, $this>
+     */
     public function comments(): MorphMany
     {
-        /** @var MorphMany<Comment, Model> $relation */
-        $relation = $this->morphMany(CommentConfig::commentModelClass(), 'commentable');
+        /** @var class-string<Comment> $commentClass */
+        $commentClass = CommentConfigData::make()->models['comment'];
 
-        return $relation;
+        return $this->morphMany($commentClass, 'commentable');
     }
 
-    /** @return MorphMany<CommentNotificationSubscription, Model> */
+    /** @return MorphMany<CommentNotificationSubscription, $this> */
     public function notificationSubscriptions(): MorphMany
     {
-        /** @var MorphMany<CommentNotificationSubscription, Model> $relation */
-        $relation = $this->morphMany(CommentConfig::commentNotificationSubscriptionModelClass(), 'commentable');
+        /** @var class-string<CommentNotificationSubscription> $subscriptionClass */
+        $subscriptionClass = CommentConfigData::make()->models['comment_notification_subscription'];
 
-        return $relation;
+        return $this->morphMany($subscriptionClass, 'commentable');
     }
 
-    /** @return Collection<int, Model> */
+    /** @return Collection<int, CanComment> */
     public function subscribers(?NotificationSubscriptionType $type = null): Collection
     {
-        $subscriptions = $this
+        return $this
             ->notificationSubscriptions()
             ->when($type, fn (Builder $builder) => $builder->where('type', $type))
             ->with('subscriber')
-            ->get();
+            ->get()
+            ->map(fn (CommentNotificationSubscription $subscription): ?Model => $subscription->subscriber)
+            ->filter(static fn (?Model $subscriber): bool => $subscriber instanceof CanComment)
+            ->map(static function (Model $subscriber): CanComment {
+                if (! $subscriber instanceof CanComment) {
+                    throw new RuntimeException('Subscriber must implement CanComment.');
+                }
 
-        $subscribers = [];
-        foreach ($subscriptions as $subscription) {
-            if (! $subscription instanceof CommentNotificationSubscription) {
-                continue;
-            }
+                return $subscriber;
+            })
+            ->values()
+            ->pipe(static function (Collection $subscribers): Collection {
+                /** @var Collection<int, CanComment> $typed */
+                $typed = $subscribers;
 
-            $subscriber = $subscription->subscriber;
-            if ($subscriber instanceof Model) {
-                $subscribers[] = $subscriber;
-            }
-        }
-
-        return collect($subscribers);
+                return $typed;
+            });
     }
 
     public function comment(string $text, ?CanComment $commentator = null): Comment
     {
-        $user = Auth::user();
-        $commentator ??= $user instanceof CanComment ? $user : null;
+        $commentator ??= auth()->user();
 
-        if (! CommentConfig::allowAnonymousComments()) {
+        if (! CommentConfigData::make()->allowAnonymous) {
             if (! $commentator) {
                 throw CannotCreateComment::userIsRequired();
             }
         }
 
-        $parentId = $this::class === CommentConfig::commentModelClass()
+        /** @var class-string<Comment> $commentClass */
+        $commentClass = CommentConfigData::make()->models['comment'];
+        $parentId = $this::class === $commentClass
             ? $this->getKey()
             : null;
 
@@ -96,32 +103,22 @@ trait HasComments
     }
 
     /**
+     * Tutti i commentator del commentable, qualunque sia lo stato dei commenti e senza escludere nessuno
+     * (a differenza di {@see Comment::participatingCommentators()}, che parte da un commento).
+     *
      * @return Collection<int, CanComment>
      */
     public function participatingCommentators(): Collection
     {
-        return $this->comments()
+        $references = $this->comments()
             ->distinct('commentator_id', 'commentator_type')
             ->get()
-            ->map(function (Comment $comment): array {
-                return [
-                    'commentator_id' => $comment->commentator_id,
-                    'commentator_type' => $comment->commentator_type,
-                ];
-            })
-            ->filter(function (array $related): bool {
-                return $related['commentator_type'] !== null;
-            })
-            ->groupBy('commentator_type')
-            ->map(fn (Collection $related) => $related->pluck('commentator_id')->toArray())
-            ->flatMap(function (array $ids, string $class) {
-                if (! class_exists($class)) {
-                    $resolved = Relation::getMorphedModel($class);
-                    $class = is_string($resolved) ? $resolved : $class;
-                }
+            ->map(fn (Comment $comment): array => [
+                'commentator_id' => $comment->commentator_id,
+                'commentator_type' => $comment->commentator_type,
+            ]);
 
-                return $class::query()->whereIn((new $class)->getKeyName(), $ids)->get();
-            });
+        return app(ResolveCommentatorModelsAction::class)->execute($references);
     }
 
     abstract public function commentableName(): string;

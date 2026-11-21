@@ -13,13 +13,14 @@ use Modules\Comment\Models\CommentNotificationSubscription;
 class CommentNotificationSubscriptionFactory extends Factory
 {
     /**
-     * @var class-string<CommentNotificationSubscription>
+     * The name of the factory's corresponding model.
      */
     protected $model = CommentNotificationSubscription::class;
 
     /**
-     * @return array<string, mixed>
+     * Define the model's default state.
      */
+    /** @return array<string, mixed> */
     public function definition(): array
     {
         return [];

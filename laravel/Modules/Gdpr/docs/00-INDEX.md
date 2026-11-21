@@ -26,7 +26,7 @@ discussions: []
 
 ## 📊 **Filament & UI**
 - 🛡️ **[Gdpr Resources](./filament-resources-1.md)** - Gestione trattamenti e consensi nell'admin panel.
-- 🍪 **[Cookie Consent](./cookie-consent-1.md)** - Implementazione del banner e della preferenza cookie.
+- 🍪 **[Cookie Consent](./cookie-consent.md)** - Implementazione del banner e della preferenza cookie.
 
 ## 🧪 **Qualità e Sviluppo**
 - ✅ **[PHPStan Level 10](./phpstan-analysis-gdpr.md)** - Statistiche di conformità e fix.
@@ -42,22 +42,22 @@ discussions: []
 ### Product
 | File | Scopo |
 |------|-------|
-| [PRD.md](prd.md) | Product Requirements |
-| [PRODUCT_ROADMAP.md](./PRODUCT_ROADMAP.md) | Roadmap |
-| [PRODUCT_STRATEGY.md](./PRODUCT_STRATEGY.md) | Strategy |
-| [PRODUCT_LAUNCH_PLAN.md](./PRODUCT_LAUNCH_PLAN.md) | Launch Plan |
+| [prd.md](./prd.md) | Product Requirements |
+| [product_roadmap.md](./PRODUCT_ROADMAP.md) | Roadmap |
+| [product_strategy.md](./PRODUCT_STRATEGY.md) | Strategy |
+| [product_launch_plan.md](./PRODUCT_LAUNCH_PLAN.md) | Launch Plan |
 
 ### Development
 | File | Scopo |
 |------|-------|
-| [GSD_WORKFLOW.md](./GSD_WORKFLOW.md) | GSD Workflow |
-| [SPRINT_PLANNING.md](./SPRINT_PLANNING.md) | Sprint Planning |
-| [USER_RESEARCH.md](./USER_RESEARCH.md) | User Research |
+| [gsd_workflow.md](./gsd_workflow.md) | GSD Workflow |
+| [sprint_planning.md](./SPRINT_PLANNING.md) | Sprint Planning |
+| [user_research.md](./USER_RESEARCH.md) | User Research |
 
 ## 🔗 **Moduli Correlati**
-- [User](../../user/docs/readme.md) - Soggetti dei consensi.
-- [Activity](../../activity/docs/readme.md) - Log di sistema integrato.
-- [Xot](../../xot/docs/readme.md) - Base framework e trait UUID.
+- [User](../../User/docs/readme.md) - Soggetti dei consensi.
+- [Activity](../../activity/docs/README.md) - Log di sistema integrato.
+- [Xot](../../Xot/docs/README.md) - Base framework e trait UUID.
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 
 ---

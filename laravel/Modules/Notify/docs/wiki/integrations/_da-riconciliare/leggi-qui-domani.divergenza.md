@@ -1,8 +1,8 @@
 ---
-qmd: "leggi qui domani.divergenza"
+qmd: "Leggi Qui Domani.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: leggi-qui-domani.md"
+title: "Leggi Qui Domani.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

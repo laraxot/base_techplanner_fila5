@@ -58,7 +58,7 @@ This document serves as the central index for the Notify module, providing guida
 - Update this index if new features or significant changes are introduced to the Notify module.
 
 ## Links to Related Documentation
-- [Architecture Overview](./ARCHITECTURE.md)
+- [Architecture Overview](./architecture.md)
 - [Notification Channels Implementation](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Email Templates](./EMAIL_TEMPLATES.md)
 - [SMS Implementation](./SMS_IMPLEMENTATION.md)
@@ -96,7 +96,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 
 ### Architettura e Struttura
 - [README](./README.md) - Panoramica generale del modulo
-- [Architettura](./ARCHITECTURE.md) - Architettura generale del modulo
+- [Architettura](./architecture.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./models.md) - Documentazione dei modelli Eloquent
 - [Eventi](./events.md) - Eventi e listeners
@@ -136,7 +136,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 
 ### Testing e Qualità
 - [PHPStan Level 10](./PHPSTAN_LEVEL10_FIXES.md) - Correzioni per PHPStan Level 10
-- [Testing](./TESTING.md) - Strategie e approcci per il testing
+- [Testing](./testing.md) - Strategie e approcci per il testing
 
 ## Linee Guida per l'Implementazione
 
@@ -192,7 +192,7 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nella co
 - [Index](./notifications/index.md) - Indice della documentazione sulle notifiche
 
 ## Collegamenti alla Documentazione Correlata
-- [Panoramica Architettura](./ARCHITECTURE.md)
+- [Panoramica Architettura](./architecture.md)
 - [Implementazione Canali Notifica](./NOTIFICATION_CHANNELS_IMPLEMENTATION.md)
 - [Template Email](./EMAIL_TEMPLATES.md)
 - [Implementazione SMS](./SMS_IMPLEMENTATION.md)

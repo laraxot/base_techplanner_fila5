@@ -13,16 +13,23 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
-  - readme.md
-  - ../integrations/readme.md
-  - ../templates/readme.md
+  - README.md
+  - ../integrations/README.md
+  - ../templates/README.md
+status: draft
 ---
 # Indice Documentazione Notifiche
 
 ## Collegamenti Correlati
 - [Indice Documentazione Notify](../index.md)
+<<<<<<< .merge_file_OQ5uaP
 - [README Modulo Notify](../readme.md)
 - [Documentazione Generale Quaeris](../../../../../../docs/readme.md)
+=======
+- [README Modulo Notify](../README.md)
+- [Documentazione Generale <nome progetto>](../../../../../../docs/README.md)
+- [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
+>>>>>>> .merge_file_sLnj1e
 - [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
 
 ## Guida Implementazione

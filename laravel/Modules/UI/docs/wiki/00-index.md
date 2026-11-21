@@ -60,7 +60,7 @@ discussions: https://github.com/laraxot/module_ui_fila5/discussions
 
 ---
 
-<!-- Merged from 00-INDEX.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from 00-index.md, which collided with this file on case-insensitive filesystems. -->
 
 # 🧩 UI Components - Documentation Index
 
@@ -191,7 +191,7 @@ Componenti UI riutilizzabili per tutti i temi e moduli.
 **Review Cycle**: Every sprint  
 **Next Review**: 2026-04-02
 ---
-## Contenuto assorbito da `00-INDEX.md`
+## Contenuto assorbito da `00-index.md`
 # 🧩 UI Components - Documentation Index
 **Path**: `Modules/UI/docs/`  
 **Modulo**: @Modules/UI  
@@ -262,10 +262,10 @@ Componenti UI riutilizzabili per tutti i temi e moduli.
 | Da | A | Tipo |
 |----|---|------|
 | Testimonials Component | [Theme Customization](../../Themes/TwentyOne/docs/components/testimonials.md) | Integration |
-| Testimonials Component | [Predict Homepage](../../Modules/Predict/docs/02-frontend/00-INDEX.md) | Consumer |
+| Testimonials Component | [Predict Homepage](../../Modules/Predict/docs/02-frontend/00-index.md) | Consumer |
 ### Verso Questo Indice
-| [Theme Index](../../Themes/TwentyOne/docs/00-INDEX.md) | UI Components | Dependency |
-| [Predict Module Index](../../Modules/Predict/docs/00-INDEX.md) | UI Components | Reference |
+| [Theme Index](../../Themes/TwentyOne/docs/00-index.md) | UI Components | Dependency |
+| [Predict Module Index](../../Modules/Predict/docs/00-index.md) | UI Components | Reference |
 ## 📚 Riferimenti
 ### Interni
 - [Maintainable CSS - Semantics](https://maintainablecss.com/chapters/semantics/)

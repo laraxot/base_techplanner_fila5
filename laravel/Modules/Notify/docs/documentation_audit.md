@@ -108,7 +108,7 @@ DELETE: /var/www/_bases/base_ptv_fila5/laravel/Modules/Cms/docs/migrations/archi
 /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/00-index.md
 /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/00-index.md
 /var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/README.md
-/var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/readme.md
+/var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/README.md
 ```
 
 **Recommendation:** Enforce lowercase filenames with hyphens as word separators.
@@ -172,7 +172,7 @@ docs/roadmap/
 **Problem:** Each module has identical structure with minimal content differences.
 
 **Recommendation:** 
-- Create master roadmap in `docs/project/ROADMAP.md`
+- Create master roadmap in `docs/project/roadmap.md`
 - Module-specific roadmaps should only contain module-unique items
 - Use OpenViking URIs for cross-references
 
@@ -230,7 +230,7 @@ Xot/docs/
 
 **Multiple index files serving same purpose:**
 ```
-Xot/docs/00-INDEX.md
+Xot/docs/00-index.md
 Xot/docs/00-index.md
 Xot/docs/00-index.md
 Xot/docs/index.md

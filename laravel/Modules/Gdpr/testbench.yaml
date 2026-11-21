@@ -1,2 +1,0 @@
-providers:
-  - Modules\Gdpr\Providers\GdprServiceProvider

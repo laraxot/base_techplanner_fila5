@@ -16,6 +16,7 @@ related:
   - "./05-front-office-audit.md"
   - "./06-cinematic-effects.md"
   - "./07-mcp-tailwind-ui.md"
+status: draft
 ---
 
 # 📚 MODULAR DOCUMENTATION REFACTORING REPORT
@@ -38,7 +39,7 @@ Organizzare la documentazione AI agents in file modulari più piccoli e gestibil
 ```
 AGENTS.md      - 104 righe  ❌ Troppo grande
 qwen.md        - 890 righe  ❌ Enorme
-claude.md      - 592 righe  ❌ Difficile da navigare
+CLAUDE.md      - 592 righe  ❌ Difficile da navigare
 gemini.md      - 369 righe  ❌ Contenuti mischiati
 IFLOW.md       - 312 righe  ❌ Duplicazioni
 ────────────────────────────────────────────
@@ -114,7 +115,7 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 ### Da File Originali a Moduli
 ```markdown
 # AGENTS.md (compatto)
-# agents.md (compatto)
+# AGENTS.md (compatto)
 ## Contenuto Diviso
 | Sezione | File |
 |---------|------|
@@ -128,7 +129,7 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 # .agents/docs/overview/agents-overview.md
 ## Riferimenti
 - [AGENTS.md](../../AGENTS.md) - File originale compatto
-- [agents.md](../../agents.md) - File originale compatto
+- [AGENTS.md](../../AGENTS.md) - File originale compatto
 - [qwen.md](../../qwen.md) - Contesto Qwen Code
 ```
 
@@ -213,7 +214,7 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 ### File Originali (Compatti)
 - `AGENTS.md` - Link a tutti i moduli
 - `qwen.md` - Contesto Qwen Code
-- `claude.md` - Claude-specific patterns
+- `CLAUDE.md` - Claude-specific patterns
 - `gemini.md` - Gemini-specific patterns
 - `IFLOW.md` - iFlow-specific patterns
 

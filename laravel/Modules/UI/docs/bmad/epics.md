@@ -1,9 +1,14 @@
 ---
+<<<<<<< .merge_file_mOW5yd
 bmad_status: active
 scope: ui-docs
+=======
+>>>>>>> .merge_file_4A5Cdk
 title: "Epic e story — UI"
 type: epics
 status: review
+bmad_status: active
+scope: ui-docs
 updated: 2026-11-16
 module: UI
 qmd: "epic story BMAD UI audit P0 P1 policy"
@@ -31,5 +36,5 @@ lock (`bashscripts/lock/lock.sh`), Pest rosso, PHPStan max, poi `unlock.sh`. Nes
 |---|---|---|
 | `ui-personform-lang-or-delete` | PersonForm tradotto via Lang o eliminato | 0 `->label('testo')` in `app/` |
 | `ui-policy-base-xot` | UiBasePolicy → XotBasePolicy + test `before` | test Pest `ui::admin`/utente estraneo |
-| `ui-cleanup-stray-files` | Rimuovere `.disabled/.disabled2/.fila5`, `ComponentService` vuoto | file assenti, PHPStan 0 |
+| `ui-cleanup-stray-files` | Rimuovere `.disabled/.disabled2/.fila3`, `ComponentService` vuoto | file assenti, PHPStan 0 |
 

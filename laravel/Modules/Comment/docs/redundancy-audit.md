@@ -1,4 +1,11 @@
 ---
+<<<<<<< .merge_file_Qq2IZB
+=======
+updated: 2026-09-26
+qmd: "redundancy audit 2026 05 21"
+issues: []
+discussions: []
+>>>>>>> .merge_file_DaEZ6Q
 title: "Comment redundancy audit 2026-05-21"
 type: audit
 module: Comment
@@ -6,6 +13,10 @@ tags: [redundancy, duplicate-code, docs]
 created: 2026-05-21
 related:
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
+<<<<<<< .merge_file_Qq2IZB
+=======
+status: draft
+>>>>>>> .merge_file_DaEZ6Q
 ---
 
 # Comment redundancy audit 2026-05-21

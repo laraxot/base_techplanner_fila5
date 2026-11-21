@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "modular documentation refactoring"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 📚 MODULAR DOCUMENTATION REFACTORING REPORT
@@ -16,15 +17,6 @@ discussions: []
 **Principio**: "Boy Scout Rule - Lascia i file migliori di come li hai trovati"
 
 ---
-
-title: "modular documentation refactoring"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "modular documentation refactoring"
-issues: []
-discussions: []
 ## 🎯 OBIETTIVO
 
 Organizzare la documentazione AI agents in file modulari più piccoli e gestibili, con collegamenti bidirezionali.
@@ -36,9 +28,9 @@ Organizzare la documentazione AI agents in file modulari più piccoli e gestibil
 ### Prima (File Grandi)
 ```
 AGENTS.md      - 104 righe  ❌ Troppo grande
-QWEN.md        - 890 righe  ❌ Enorme
+qwen.md        - 890 righe  ❌ Enorme
 CLAUDE.md      - 592 righe  ❌ Difficile da navigare
-GEMINI.md      - 369 righe  ❌ Contenuti mischiati
+gemini.md      - 369 righe  ❌ Contenuti mischiati
 IFLOW.md       - 312 righe  ❌ Duplicazioni
 ────────────────────────────────────────────
 TOTALE:        2,267 righe  ❌ Difficile da mantenere
@@ -113,7 +105,7 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 ### Da File Originali a Moduli
 ```markdown
 # AGENTS.md (compatto)
-# agents.md (compatto)
+# AGENTS.md (compatto)
 ## Contenuto Diviso
 | Sezione | File |
 |---------|------|
@@ -127,8 +119,8 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 # .agents/docs/overview/agents-overview.md
 ## Riferimenti
 - [AGENTS.md](../../AGENTS.md) - File originale compatto
-- [agents.md](../../agents.md) - File originale compatto
-- [QWEN.md](../../QWEN.md) - Contesto Qwen Code
+- [AGENTS.md](../../AGENTS.md) - File originale compatto
+- [qwen.md](../../qwen.md) - Contesto Qwen Code
 ```
 
 ### Cross-Link tra Moduli
@@ -211,9 +203,9 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 
 ### File Originali (Compatti)
 - `AGENTS.md` - Link a tutti i moduli
-- `QWEN.md` - Contesto Qwen Code
+- `qwen.md` - Contesto Qwen Code
 - `CLAUDE.md` - Claude-specific patterns
-- `GEMINI.md` - Gemini-specific patterns
+- `gemini.md` - Gemini-specific patterns
 - `IFLOW.md` - iFlow-specific patterns
 
 ---

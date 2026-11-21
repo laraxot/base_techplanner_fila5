@@ -33,9 +33,9 @@ qmd: "GEMINI"
 issues: []
 discussions: []
 **See also:**
-- [CLAUDE.md](./CLAUDE.md)
-- [agents.md](./AGENTS.md)
-- [QWEN.md](./QWEN.md)
+- [CLAUDE.md](./claude.md)
+- [AGENTS.md](./agents.md)
+- [qwen.md](./qwen.md)
 
 *Ultimo aggiornamento: Aprile 2026*
 
@@ -57,7 +57,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -79,8 +79,8 @@ Questa documentazione è stata divisa in moduli per una gestione più efficiente
 
 ---
 **See also:**
-- [claude.md](./CLAUDE.md)
-- [agents.md](./AGENTS.md)
-- [qwen.md](./QWEN.md)
+- [CLAUDE.md](./claude.md)
+- [AGENTS.md](./agents.md)
+- [qwen.md](./qwen.md)
 
 *Ultimo aggiornamento: Aprile 2026*

@@ -16,6 +16,7 @@ related:
   - ../conventions/README.md
   - ../rules/README.md
   - ../best-practices/naming-conventions.md
+status: draft
 ---
 # XotBasePivot - Strategia di Implementazione Progetto
 
@@ -289,7 +290,7 @@ done
 2. ✅ `docs/architecture/xotbasepivot-strategy.md` (questo file)
 3. `Modules/Xot/README.md` → aggiungere sezione XotBasePivot
 4. `docs/CHANGELOG.md` → entry per breaking change
-4. `docs/changelog.md` → entry per breaking change
+4. `docs/CHANGELOG.md` → entry per breaking change
 5. Per ogni modulo: `Modules/{Module}/docs/models/pivot-migration.md`
 
 #### Esempio doc modulo:
@@ -562,7 +563,12 @@ git push origin hotfix/xotbasepivot-fix
 
 - [XotBasePivot Analysis](../Modules/Xot/docs/architecture/xotbasepivot-analysis.md)
 - [XotBaseModel Implementation](../Modules/Xot/docs/architecture/xotbasemodel.md)
+<<<<<<< .merge_file_AOo02c
 - [Project Architecture](./project-architecture.md)
+=======
+- [Project Architecture](../ai-agents/split/claude/project-architecture.md)
+- [Project Architecture](../ai-agents/split/claude/project-architecture.md)
+>>>>>>> .merge_file_gI4EY1
 - [Laravel Pivot Documentation](https://laravel.com/docs/11.x/eloquent-relationships#defining-custom-intermediate-table-models)
 
 ### Tools

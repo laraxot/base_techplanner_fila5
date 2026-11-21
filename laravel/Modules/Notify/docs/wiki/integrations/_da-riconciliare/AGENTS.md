@@ -1,8 +1,8 @@
 ---
-qmd: "AGENTS"
+qmd: "Agents"
 issues: []
 discussions: []
-title: "Project Agents (Modular)"
+title: "Agents"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -89,8 +89,8 @@ docs/
 ---
 **See also:**
 - [CLAUDE.md](./CLAUDE.md)
-- [QWEN.md](./QWEN.md)
-- [GEMINI.md](./GEMINI.md)
+- [qwen.md](./qwen.md)
+- [gemini.md](./gemini.md)
 
 *Ultimo aggiornamento: Aprile 2026*
 

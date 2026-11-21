@@ -224,7 +224,7 @@ EOF
 # 2. Create notebook
 # Go to notebooklm.google.com
 # Create: "Notify Documentation"
-# Upload: agents.md, docs/**/*.md, .planning/**/*.md
+# Upload: AGENTS.md, docs/**/*.md, .planning/**/*.md
 # Share → Copy link
 
 # 3. Add to library

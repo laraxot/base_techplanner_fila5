@@ -1,8 +1,8 @@
 ---
-qmd: "super mucca final summary.divergenza"
+qmd: "Super Mucca Final Summary.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: SUPER_MUCCA_FINAL_SUMMARY.md"
+title: "Super Mucca Final Summary.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

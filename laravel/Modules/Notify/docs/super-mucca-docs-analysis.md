@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -51,7 +51,7 @@ related:
 
 #### 4. **Naming Inconsistente**
 - **README.md**: 56 file (corretto)
-- **readme.md**: 13 file (minuscolo - errato)
+- **README.md**: 13 file (minuscolo - errato)
 - **Convenzione**: Solo README.md in maiuscolo
 - **Priorità**: **MEDIA** - Inconsistenza nelle convenzioni
 
@@ -131,7 +131,7 @@ touch laravel/Modules/Seo/docs/README.md
 
 #### 3.1 Correggere File Minuscoli
 ```bash
-# 13 file "readme.md" da rinominare in "README.md"
+# 13 file "README.md" da rinominare in "README.md"
 # Mantenere consistenza con convezioni
 ```
 

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "email templates guide"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Guida ai Template Email Responsive

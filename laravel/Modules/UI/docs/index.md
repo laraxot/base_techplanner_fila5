@@ -11,7 +11,7 @@ qmd: "ui documentazione indice naming debt kebab-case wiki bmad"
 
 Ingresso del modulo UI. Nomi: kebab-case, **senza date** nel filename
 ([55-md-conventions](../../../../bashscripts/docs/prompts/55-md-conventions.md)).
-`INDEX.md` (maiuscolo) e' stub superseded → questo file.
+`index.md` (maiuscolo) e' stub superseded → questo file.
 
 ## Orientamento
 
@@ -26,9 +26,13 @@ Ingresso del modulo UI. Nomi: kebab-case, **senza date** nel filename
 File con date/mesi nel nome ancora presenti (non cancellare; marca `superseded` +
 canonico senza data via [docs-clean.md](../../../../bashscripts/docs/prompts/docs-clean.md)):
 
-- `audits/2026-11-05-quality-gates.md`
+- `audits/quality-gates.md`
 - `bugfix-*-2025-01-27.md` (+ copie in `archive/`)
+<<<<<<< .merge_file_Zt0T0k
 - `phpstan-fixes.md` / `phpstan-fixes.md` / `phpstan-fixes.md` (+ varianti)
+=======
+- `phpstan-fixes-january.md` / `phpstan-fixes-correzioni-gennaio.md` / `phpstan-fixes-november.md` (+ varianti)
+>>>>>>> .merge_file_5sUf68
 - `translations-update.md`
 - `wiki/troubleshooting/*-2026-*.md`
 - collisione case: `ARCHITECTURE_2025.md` / `architecture.md` / `architecture_2025.md`

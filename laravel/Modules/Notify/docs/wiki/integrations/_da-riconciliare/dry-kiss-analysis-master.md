@@ -1,8 +1,8 @@
 ---
-qmd: "dry kiss analysis master"
+qmd: "Dry Kiss Analysis Master"
 issues: []
 discussions: []
-title: "DRY & KISS MASTER ANALYSIS - PROGETTO COMPLETO ✨🐄"
+title: "Dry Kiss Analysis Master"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
@@ -671,7 +671,7 @@ Themes/
 
 ```
 docs/
-├── DRY-KISS-ANALYSIS-MASTER.md (questo file)
+├── dry-kiss-analysis-master.md (questo file)
 ├── analisi-metodi-duplicati-MASTER.md
 ├── analisi-metodi-duplicati-INDEX.md
 ├── implementazione-refactoring-basemodel.md

@@ -1,8 +1,8 @@
 ---
-qmd: "architecture"
+qmd: "Architecture"
 issues: []
 discussions: []
-title: "Notify Module Architecture"
+title: "Architecture"
 type: architecture
 tags: [module, architecture, notifications]
 created: 2026-07-28

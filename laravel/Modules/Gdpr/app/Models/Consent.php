@@ -55,7 +55,6 @@ use Modules\Xot\Datas\XotData;
  * @method static Builder<static>|Consent whereUserType($value)
  * @method static Builder<static>|Consent whereIpAddress($value)
  * @method static Builder<static>|Consent whereUserAgent($value)
- *
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
  *
  * @mixin \Eloquent

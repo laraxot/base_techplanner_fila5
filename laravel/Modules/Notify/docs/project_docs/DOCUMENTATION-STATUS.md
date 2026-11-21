@@ -54,7 +54,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 #### ✅ App (Core Business) - 85% COMPLETATO
 **Documentazione Presente**:
 - [x] README.md completo
-- [x] ROADMAP.md
+- [x] roadmap.md
 - [x] ROADMAP_2025.md aggiornato
 - [x] BUSINESS_LOGIC_OVERVIEW.md
 - [x] CODE_QUALITY_TOOLS.md
@@ -73,7 +73,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 #### ✅ User (Authentication & Authorization) - 90% COMPLETATO
 **Documentazione Presente**:
 - [x] README.md completo
-- [x] ROADMAP.md aggiornato
+- [x] roadmap.md aggiornato
 - [x] Security guidelines
 - [x] Authentication flow
 - [x] Authorization system
@@ -109,7 +109,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 #### 🚧 Geo (Geolocation) - 75% COMPLETATO
 **Documentazione Presente**:
 - [x] README.md completo
-- [x] ROADMAP.md
+- [x] roadmap.md
 - [x] ROADMAP_2025.md
 - [x] Architecture documentation
 - [x] Models documentation
@@ -277,7 +277,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 #### 📋 AI (Artificial Intelligence) - 30% COMPLETATO
 **Documentazione Presente**:
 - [x] README.md base
-- [x] ROADMAP.md
+- [x] roadmap.md
 - [x] ROADMAP_2025.md
 - [x] MCP integration
 - [x] Fine-tuning guide
@@ -296,7 +296,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 
 **Documentazione Presente**:
 - [x] README.md completo
-- [x] ROADMAP.md
+- [x] roadmap.md
 - [x] ROADMAP_2025.md aggiornato
 - [x] AGID compliance guide
 - [x] Accessibility documentation
@@ -341,7 +341,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 
 ### Tipologie Documentazione
 - **README.md**: 100% (tutti i moduli)
-- **ROADMAP.md**: 95% (18/19 moduli)
+- **roadmap.md**: 95% (18/19 moduli)
 - **API Documentation**: 30% (6/18 moduli)
 - **User Guides**: 25% (4/18 moduli)
 - **Developer Guides**: 40% (7/18 moduli)
@@ -397,7 +397,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 - **OpenAPI**: API documentation (in corso)
 
 ### Standard Documentazione
-- **Struttura**: README.md + ROADMAP.md + docs/
+- **Struttura**: README.md + roadmap.md + docs/
 - **Formato**: Markdown con emoji
 - **Lingua**: Italiano (primario), Inglese (pianificato)
 - **Versioning**: Git-based
@@ -408,7 +408,7 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 
 ### Roadmap Principali
 - [Master Roadmap](../laravel/MASTER_ROADMAP.md)
-- [Roadmap Status Summary](../ROADMAP_STATUS_SUMMARY.md)
+- [Roadmap Status Summary](../roadmap_status_summary.md)
 - [Roadmap Technical](./roadmaps/roadmap-technical.md)
 - [Roadmap Quality](./roadmaps/roadmap-quality.md)
 - [Roadmap Documentation](./roadmaps/roadmap-documentation.md)
