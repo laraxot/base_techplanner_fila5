@@ -2,7 +2,7 @@
 title: "Harness: ADR e contratti verificabili in ogni modulo e tema"
 type: story
 module: Xot
-status: in-progress
+status: review
 created: 2026-11-24
 updated: 2026-11-24
 tags: [harness, adr, contracts, guard, bmad, second-brain, ecc]
@@ -39,7 +39,7 @@ Riferimento: workshop laravelday-harness (R. Gallea) + OpenAI / Böckeler / Anth
 - [x] AGENTS.md e `00-TRIGGER_MAP.md` rimandano al canon e ai comandi di verifica.
 - [x] Ogni modulo e tema (26) ha README di `adr/` e `contracts/` specifici, ADR reali con Verifica, contratti per le Action
       con effetti collaterali più importanti (lavoro in 6 lane parallele, vedi sotto).
-- [ ] Sensori verdi sull'intero checkout.
+- [x] Sensori verdi sull'intero checkout: `composer harness:check` → 42 passed (63 assertions).
 
 ## Lane (claim)
 
@@ -102,3 +102,16 @@ Riferimento: workshop laravelday-harness (R. Gallea) + OpenAI / Böckeler / Anth
 | `Modules/Geo` `GetAddressDataFromFullAddressAction` | costruisce una notifica e non chiama `send()`; `FilterCoordinatesInRadius.php` con condizione invertita ancora presente | da decidere |
 | config activitylog vs modulo Activity | scrittura su connessione di default Spatie, lettura su `activity`: su DB separati divergono | da decidere |
 | docs di Geo, Lang, Activity; `Modules/Geo/public/assets` | marcatori di conflitto residui in docs e asset compilati | da sistemare (fuori dal codice sorgente) |
+
+## Evidenza finale
+
+- `cd laravel && composer harness:check` → **42 passed** (Docs ADR/contratti + Harness guard + conflict markers), exit 0.
+- Inventario: **69 ADR, 71 contratti** in 26 pacchetti (prima ~15 ADR, 6 contratti); **160 invarianti** con group Pest
+  esistente (il sensore verifica che il group ci sia), **93** dichiarate `—` (debito visibile).
+- PHPStan sui 147 PHP toccati: 0 errori nuovi (restano solo errori pre-esistenti in `SpidAuthAction`/`CieAuthAction`).
+- Test nuovi o con group: Sixteen 21 passed, Activity redazione 3 passed (+ prova di sensibilità), Cms Head 9 passed,
+  Rating 173 passed (prima crashava), Gdpr/AI/Notify/Job/UI/Geo/Lang/TechPlanner group verdi lanciati singolarmente.
+- Ambiente (pre-esistente, non risolto qui): `composer.lock` disallineato (`cknow/laravel-money`, `laravel/mcp`, … mancanti;
+  `spatiex/laravel-comments` ancora elencato), DB sqlite di test con schema vecchio, `core.symlinks=false`.
+- Commit: il lavoro è entrato nel commit di sync `cd558c016a` (14:01, già su `laraxot/dev`), insieme a lavoro di altre
+  sessioni (pulizia di archivi docs, −446k righe, non di questa story).
