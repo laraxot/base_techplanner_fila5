@@ -4,33 +4,19 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Lang
-<<<<<<< .merge_file_IPCpvV
-<<<<<<< .merge_file_HfEZFQ
 <<<<<<< .merge_file_iyvhvB
 qmd: "audit BMAD Lang source-first qualità"
 =======
-=======
->>>>>>> .merge_file_inpugf
-=======
->>>>>>> .merge_file_awIO0J
 qmd: "audit BMAD Lang sintesi gate tracker chiavi mancanti non cablato test coverage schema user_id Post fuori scope config morta"
 related:
   - ./audits/lang-audit.md
   - ./piano-miglioramento.md
   - ../ecc/lang-ecc-audit.md
-<<<<<<< .merge_file_IPCpvV
-<<<<<<< .merge_file_HfEZFQ
 >>>>>>> .merge_file_kPnYJi
-=======
->>>>>>> .merge_file_inpugf
-=======
->>>>>>> .merge_file_awIO0J
 ---
 
 # Audit BMAD — Lang
 
-<<<<<<< .merge_file_IPCpvV
-<<<<<<< .merge_file_HfEZFQ
 <<<<<<< .merge_file_iyvhvB
 SSoT dettagliata: [audits/lang-audit.md](./audits/lang-audit.md)
 =======
@@ -38,34 +24,12 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/lang-a
 
 **Scopo in una frase:** Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua ([purpose.md](./purpose.md)).
 >>>>>>> .merge_file_kPnYJi
-=======
-=======
->>>>>>> .merge_file_awIO0J
-SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/lang-audit.md](./audits/lang-audit.md).
-
-<<<<<<< .merge_file_RTGPLE
-**Scopo in una frase:** Lang tiene fuori dal codice ogni parola che un utente legge ([purpose.md](./purpose.md)).
-=======
-**Scopo in una frase:** Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua ([purpose.md](./purpose.md)).
->>>>>>> .merge_file_mrLFNn
-<<<<<<< .merge_file_IPCpvV
->>>>>>> .merge_file_inpugf
-=======
->>>>>>> .merge_file_awIO0J
 
 ## Sintesi (2026-11-16)
 
 | Metrica | Valore |
 |---|---:|
-<<<<<<< .merge_file_IPCpvV
-<<<<<<< .merge_file_HfEZFQ
 <<<<<<< .merge_file_iyvhvB
-=======
-<<<<<<< .merge_file_RTGPLE
->>>>>>> .merge_file_inpugf
-=======
-<<<<<<< .merge_file_RTGPLE
->>>>>>> .merge_file_awIO0J
 | PHP `app/` | 72 |
 | Test | 51 |
 | Resources | 2 |
@@ -81,21 +45,8 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/lang-a
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
-<<<<<<< .merge_file_IPCpvV
-<<<<<<< .merge_file_HfEZFQ
 =======
 | PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 (ricontato 2026-11-19: 72 / 53 / 29) |
-=======
-=======
->>>>>>> .merge_file_awIO0J
-| PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 |
-=======
-| PHP `app/` / test PHP / `*Test.php` | 72 / 51 / 29 (ricontato 2026-11-19: 72 / 53 / 29) |
->>>>>>> .merge_file_mrLFNn
-<<<<<<< .merge_file_IPCpvV
->>>>>>> .merge_file_inpugf
-=======
->>>>>>> .merge_file_awIO0J
 | Models / Policy / Resource / Widget | 7 / 4 / 2 / 1 |
 | Actions / Services / Migration / Lang IT | 17 / 0 / 11 / 33 |
 | Marker conflitto / `RefreshDatabase` / `dd()` | 0 / 0 / 0 |
@@ -123,10 +74,4 @@ Nessun P0: policy corrette (`LangBasePolicy::before()` con bypass `super-admin`/
 ## Riferimenti
 
 [Piano](./piano-miglioramento.md) · [Epics](./epics.md) · [Decision log](./decision-log.md) · [ECC](../ecc/lang-ecc-audit.md) · [Story](./stories/module-bmad-audit.story.md)
-<<<<<<< .merge_file_IPCpvV
-<<<<<<< .merge_file_HfEZFQ
 >>>>>>> .merge_file_kPnYJi
-=======
->>>>>>> .merge_file_inpugf
-=======
->>>>>>> .merge_file_awIO0J

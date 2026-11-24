@@ -15,19 +15,6 @@ discussions: []
 **Modulo**: Notify  
 **Status**: 📝 **ANALISI COMPLETATA**
 
-<<<<<<< .merge_file_8CJeUb
-=======
----
-
-title: "filament spatieatabase mail templates"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament spatieatabase mail templates"
-issues: []
-discussions: []
->>>>>>> .merge_file_4Y1ZZO
 ## 📊 Executive Summary
 
 ## 🔍 Caratteristiche del Repository Analizzato

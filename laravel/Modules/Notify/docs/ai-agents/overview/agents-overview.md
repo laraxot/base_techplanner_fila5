@@ -234,21 +234,8 @@ vendor/bin/pest --coverage
 ## 📖 Quick Links
 
 ### Getting Started
-<<<<<<< .merge_file_qXG9tu
-- [Coding Standards](../standards/agents-coding-standards.md)
-- [Module Architecture](../architecture/agents-module-architecture.md)
-=======
 - [Coding Standards](../agents-coding-standards.md)
 - [Module Architecture](../agents-module-architecture.md)
-<<<<<<< .merge_file_MTGWGh
-=======
-- [Coding Standards](../agents-coding-standards.md)
-- [Module Architecture](../agents-module-architecture.md)
->>>>>>> .merge_file_rWzNve
-<<<<<<< .merge_file_1GaQdX
->>>>>>> .merge_file_g2xj9b
-=======
->>>>>>> .merge_file_mXtMHc
 - [Quality Gate](../workflow/agents-quality-gate.md)
 
 ### Critical Rules

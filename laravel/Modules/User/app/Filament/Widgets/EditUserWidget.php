@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Str;
 use Livewire\Features\SupportRedirects\Redirector;
-use Modules\User\Actions\Filament\NormalizeFormSchemaAction;
 use Modules\Xot\Datas\XotData;
 use Modules\Xot\Filament\Widgets\XotBaseSchemaWidget;
 use Webmozart\Assert\Assert;
@@ -125,7 +124,7 @@ class EditUserWidget extends XotBaseSchemaWidget
         $schema = $this->resource::getFormSchemaWidget();
         Assert::isArray($schema, 'Schema must be array');
 
-        return app(NormalizeFormSchemaAction::class)->execute($schema);
+        return self::normalizeFormSchema($schema);
     }
 
     /**
@@ -200,5 +199,23 @@ class EditUserWidget extends XotBaseSchemaWidget
         Assert::isInstanceOf($user, Model::class);
 
         return $user;
+    }
+
+    /**
+     * @param  array<int|string, mixed>  $schema
+     * @return array<int|string, Component>
+     */
+    private static function normalizeFormSchema(array $schema): array
+    {
+        $normalized = [];
+        foreach ($schema as $key => $component) {
+            if (! $component instanceof Component) {
+                return [];
+            }
+
+            $normalized[$key] = $component;
+        }
+
+        return $normalized;
     }
 }

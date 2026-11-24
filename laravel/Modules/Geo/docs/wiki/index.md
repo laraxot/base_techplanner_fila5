@@ -40,8 +40,6 @@ related:
 - [Commands](commands/index.md)
 - [Memories](memories/index.md)
 - [Concepts](concepts/index.md)
-<<<<<<< .merge_file_IKUTrl
-<<<<<<< .merge_file_dA4vBs
 - [Rules](rules/index.md)
 - [Skills](skills/index.md)
 - [Commands](commands/index.md)
@@ -52,10 +50,6 @@ related:
 - [Commands](commands/index.md)
 - [Memories](memories/index.md)
 - [Concepts](concepts/index.md)
-=======
->>>>>>> .merge_file_CSzh2P
-=======
->>>>>>> .merge_file_z2N8oY
 
 ## Nota frontoffice (tema Sixteen)
 

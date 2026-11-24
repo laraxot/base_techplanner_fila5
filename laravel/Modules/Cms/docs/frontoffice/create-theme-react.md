@@ -7,10 +7,15 @@ updated: 2026-09-26
 qmd: "create theme react"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Creazione di un Tema con React
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Introduzione
 
@@ -232,7 +237,7 @@ npm run preview
 
 3. **Copiatura degli Asset**
 ```bash
-# public_html/themes/<Tema> è un symlink a laravel/Themes/<Tema>/public: niente copia (Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md)
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
 
 ## Troubleshooting
@@ -270,19 +275,6 @@ npm run preview
 ## Alternative
 
 Se preferisci utilizzare un altro approccio, puoi consultare le guide per:
-<<<<<<< .merge_file_OoFTf0
-- [Creazione di un tema con Volt, Folio e Filament](create-theme-volt-folio-filament.md)
-- [Creazione di un tema con Vue.js](create-theme-vue.md)
-- [Creazione di un tema con Laravel](../create_theme.md)
-=======
 - [Creazione di un tema con Volt, Folio e Filament](create_theme_volt_folio_filament.md)
 - [Creazione di un tema con Vue.js](create_theme_vue.md)
 - [Creazione di un tema con Laravel](create_theme.md)
-<<<<<<< .merge_file_osaQyK
-<<<<<<< .merge_file_wScl3s
-=======
->>>>>>> .merge_file_moYd0T
->>>>>>> .merge_file_RneJID
-=======
->>>>>>> .merge_file_moYd0T
->>>>>>> .merge_file_XAg0LO

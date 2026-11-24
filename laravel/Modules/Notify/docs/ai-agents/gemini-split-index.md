@@ -25,13 +25,5 @@ discussions: []
 
 ## 🔗 Collegamento
 
-<<<<<<< .merge_file_UpFvyy
-<<<<<<< .merge_file_6SXgKN
 - [GEMINI.md originale](../../gemini.md)
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_EnUaTP
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_DcuwTT
 - [Index principale](./index.md)

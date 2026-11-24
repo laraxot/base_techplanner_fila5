@@ -1,6 +1,4 @@
 ---
-title: "Architecture — User module: stato attuale vs perfezione assoluta"
-
 title: "Architecture: User module: stato attuale vs perfezione assoluta"
 type: architecture
 module: User
@@ -11,13 +9,10 @@ related:
   - ./module-excellence-prd.md
   - ./epics.md
   - ../purpose.md
----
-
-# Architecture: User module — stato attuale vs target
-
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "architecture: user module   stato attuale vs target user"
+---
 
 # Architecture: User module: stato attuale vs target
 
@@ -26,8 +21,6 @@ fork paralleli, sola lettura) con il target implicito dal PRD
 [module-excellence-prd.md](./module-excellence-prd.md). Non propone un
 redesign: il modulo e' architetturalmente sano, il gap e' su
 documentazione, copertura test, e completezza del dominio permessi.
-
-## 1. Stato attuale — cosa e' gia' conforme
 
 ## 1. Stato attuale: cosa e' gia' conforme
 
@@ -43,8 +36,6 @@ documentazione, copertura test, e completezza del dominio permessi.
 
 ## 2. Gap architetturali verificati
 
-### 2.1 Filament Resources/Table — audit `$model` inconcludente
-
 ### 2.1 Filament Resources/Table: audit `$model` inconcludente
 
 Issue #91 dichiara l'audit XotBaseResourceTable "gia' fatto" per un lotto
@@ -53,8 +44,6 @@ non trova **nessuna** dichiarazione esplicita `protected static ?string
 $model`. Le due fonti si contraddicono: non si assume ne' l'una ne'
 l'altra come vera (regola "verifica batte doc"), si apre FR-13.1 per un
 riaudit puntuale.
-
-### 2.2 Permessi — il gap piu' grave
 
 ### 2.2 Permessi: il gap piu' grave
 
@@ -75,8 +64,6 @@ che e' sempre negata. Seeder duplicati (`PermissionSeeder` vs
 confusione su quale sia la fonte di verita'. `module.json` registra solo
 `RoleSeeder` nel ciclo standard: `PermissionSeeder` va lanciato a mano.
 
-### 2.3 Test — piramide capovolta
-
 ### 2.3 Test: piramide capovolta
 
 ```
@@ -92,8 +79,6 @@ La causa del bootstrap lento non e' stata diagnosticata in questa sessione
 (solo lettura): e' FR-13.5, prerequisito per qualunque nuova story di
 copertura test (altrimenti si aggiungono test che nessuno esegue).
 
-### 2.4 Documentazione — struttura vs rumore
-
 ### 2.4 Documentazione: struttura vs rumore
 
 ```
@@ -107,8 +92,6 @@ docs/            3377 file .md totali
 ```
 
 Il modulo ha piu' file di documentazione (3377) che file PHP applicativi
-(666): la sproporzione stessa e' un segnale architetturale — la
-
 (666): la sproporzione stessa e' un segnale architetturale: la
 governance dei doc non ha mai avuto un ciclo di consolidamento, solo
 accumulo.

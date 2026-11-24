@@ -65,6 +65,7 @@ class ChangeTypeCommand extends Command
         $typeLabel = 'None';
         if (isset($user->type) && \is_object($user->type) && method_exists($user->type, 'getLabel')) {
             $enumType = $user->type;
+            /** @var string|Htmlable|mixed */
             $label = $enumType->getLabel();
             if (\is_string($label)) {
                 $typeLabel = $label;

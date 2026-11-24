@@ -256,12 +256,10 @@ The Lang module provides a structured framework for managing lang operations wit
 | Module | Self-contained Laravel module following Laraxot conventions |
 
 ### Related Documents
-- [Architecture](architecture.md)
+- [Architecture](ARCHITECTURE.md)
 ---
-- [Architecture](architecture.md)
+- [Architecture](ARCHITECTURE.md)
 ---
-<<<<<<< .merge_file_9k9TKS
-<<<<<<< .merge_file_SQdI26
 - [Architecture](ARCHITECTURE.md)
 - [Technical Specification](TECH_SPEC.md)
 
@@ -269,10 +267,6 @@ The Lang module provides a structured framework for managing lang operations wit
 ---
 - [Architecture](architecture.md)
 ---
-=======
->>>>>>> .merge_file_gJR1kw
-=======
->>>>>>> .merge_file_Y8vCLK
 - [Architecture](architecture.md)
 - [Technical Specification](tech_spec.md)
 - [User Stories](epics/lang-epics-and-stories.md)

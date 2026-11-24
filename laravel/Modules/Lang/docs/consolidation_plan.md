@@ -252,33 +252,24 @@ rm -f \
   docs-health.md \
   coverage.md \
   redundancy_analysis.md \
-<<<<<<< .merge_file_mG4rqF
-<<<<<<< .merge_file_uqglqQ
-  00-index.md \
-  index.md
----
-  00-index.md \
-=======
->>>>>>> .merge_file_vVrmCs
-  00-index.md \
-  index.md
----
-  00-index.md \
-=======
->>>>>>> .merge_file_d7jId4
   00-index.md \
   index.md
 ---
   00-index.md \
   00-index.md \
   index.md
-<<<<<<< .merge_file_mG4rqF
 ---
   00-index.md \
   00-index.md \
   index.md
-=======
->>>>>>> .merge_file_vVrmCs
+---
+  00-index.md \
+  00-index.md \
+  index.md
+---
+  00-INDEX.md \
+  00-index.md \
+  INDEX.md
 
 # 3. Delete conflict-resolution snake_case variants
 rm -f conflict_resolution_*.md

@@ -38,32 +38,16 @@ Dei restanti 8 file: 6 a struttura piatta (un blocco per conflitto), 2
 ## Azione
 - 2 blocchi risolti automaticamente (un lato vuoto).
 - 6 blocchi divergenti risolti a mano, caso per caso: `00-index.md` → link
-<<<<<<< .merge_file_VeaIfP
-<<<<<<< .merge_file_V9byNH
   verificato al file reale (`AGENTS.md` maiuscolo esiste in root, `agents.md`
 
 verificato al file reale (`AGENTS.md` maiuscolo esiste in root, `AGENTS.md`
-=======
-  verificato al file reale (`AGENTS.md` maiuscolo esiste in root, `AGENTS.md`
->>>>>>> .merge_file_NziOk5
-=======
-  verificato al file reale (`AGENTS.md` maiuscolo esiste in root, `AGENTS.md`
->>>>>>> .merge_file_QgOXCT
   no); `README.md` → tenuto il contenuto reale HEAD, scartato lo stub
   generico DEV; `docs-archive-policy.md` → fusa la versione DEV (piu'
   aggiornata) con la frase aggiuntiva di HEAD, corretti 2 link rotti verso
   `bashscripts/ai/wiki/` (verificati via `find`, puntavano a `docs/wiki/`
-<<<<<<< .merge_file_VeaIfP
-<<<<<<< .merge_file_V9byNH
   inesistente); `wiki/INDEX.md` (2 blocchi) → tenuta denominazione generica
 
 inesistente); `wiki/index.md` (2 blocchi) → tenuta denominazione generica
-=======
-  inesistente); `wiki/index.md` (2 blocchi) → tenuta denominazione generica
->>>>>>> .merge_file_NziOk5
-=======
-  inesistente); `wiki/index.md` (2 blocchi) → tenuta denominazione generica
->>>>>>> .merge_file_QgOXCT
   "laraxot" invece del nome di progetto ospite hardcoded "base_fixcity_fila5"
   (Lang e' condiviso fra piu' progetti, `git remote -v`: `laraxot` +
   `provtv`), corretto lo slug rotto "progetto corrente" (spazio letterale)
@@ -73,17 +57,9 @@ inesistente); `wiki/index.md` (2 blocchi) → tenuta denominazione generica
   risolti a mano leggendo il contenuto reale, non con il parser piatto.
   `PRD.md`: "Laravel 12+ required" preferito a "13+" per coerenza con la
   tabella requisiti 6 righe sopra nello stesso file; "architecture.md"
-<<<<<<< .merge_file_VeaIfP
-<<<<<<< .merge_file_V9byNH
   preferito a "ARCHITECTURE.md" perche' 2 delle 3 generazioni impilate lo
 
 preferito a "architecture.md" perche' 2 delle 3 generazioni impilate lo
-=======
-  preferito a "architecture.md" perche' 2 delle 3 generazioni impilate lo
->>>>>>> .merge_file_NziOk5
-=======
-  preferito a "architecture.md" perche' 2 delle 3 generazioni impilate lo
->>>>>>> .merge_file_QgOXCT
   sceglievano.
 
 `docs/README.md`, `docs/index.md`, `docs/purpose.md` verificati coerenti ed

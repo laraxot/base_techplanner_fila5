@@ -16,32 +16,6 @@ discussions: []
 **Versione**: 1.0.0  
 **Status**: Active
 
-<<<<<<< .merge_file_AY06zq
-=======
----
-<<<<<<< .merge_file_bLj57A
-=======
-
-title: "ollama mcp rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ollama mcp rules"
-issues: []
-discussions: []
-## 🚨 Regole Critiche
->>>>>>> .merge_file_mXluYR
-
-title: "ollama mcp rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ollama mcp rules"
-issues: []
-discussions: []
->>>>>>> .merge_file_VXDGlm
 ## 🚨 Regole Critiche
 ### 1. MCP-First Approach
 ### 2. Routing Intelligence

@@ -26,20 +26,15 @@ use Modules\Xot\Datas\MetatagData;
  */
 final class Foot extends Component
 {
-<<<<<<< .merge_file_7cfwk7
-<<<<<<< .merge_file_SJqyFL
     public function __construct(public readonly bool $panelAssets = true)
     {
     }
 
-=======
->>>>>>> .merge_file_eNMiMT
-=======
->>>>>>> .merge_file_9u5Pp5
     public function render(): ViewContract
     {
         return view('cms::components.foot', [
             'pubTheme' => MetatagData::make()->getPubTheme(),
+            'panelAssets' => $this->panelAssets,
         ]);
     }
 }

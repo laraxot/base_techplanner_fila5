@@ -50,19 +50,4 @@ npm run dev && npm run build
 composer go
 ```
 
-<<<<<<< .merge_file_Gu0r7w
-=======
----
-title: "quick commands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quick commands"
-issues: []
-discussions: []
-<<<<<<< .merge_file_ZIjhgX
->>>>>>> .merge_file_lE9age
-=======
->>>>>>> .merge_file_wE2ODK
 [Back to index](../index.md)

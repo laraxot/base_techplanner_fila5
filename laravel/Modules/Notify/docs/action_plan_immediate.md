@@ -19,32 +19,6 @@ Questo documento identifica le **azioni immediate** da intraprendere per portare
 **Status Attuale**: 60% completo  
 **Target**: Q2 2025 (Aprile-Giugno)
 
-<<<<<<< .merge_file_wbUXhX
-=======
----
-<<<<<<< .merge_file_chHF8S
-=======
-
-title: "action plan immediate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "action plan immediate"
-issues: []
-discussions: []
-## 🚨 Priorità CRITICHE (Settimana 1-2)
->>>>>>> .merge_file_Nugt91
-
-title: "action plan immediate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "action plan immediate"
-issues: []
-discussions: []
->>>>>>> .merge_file_Dy7znv
 ## 🚨 Priorità CRITICHE (Settimana 1-2)
 ### 1. ✅ Correzioni Tecniche Base (COMPLETATE)
 ### 2. 🚧 Risoluzione Conflitti Git

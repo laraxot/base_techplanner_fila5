@@ -1,16 +1,4 @@
 ---
-<<<<<<< .merge_file_oIWGXC
-<<<<<<< .merge_file_GoNK2U
-=======
-<<<<<<< .merge_file_D4lwZp
-created: 2026-10-07
-=======
->>>>>>> .merge_file_OMHS2X
-=======
-<<<<<<< .merge_file_D4lwZp
-created: 2026-10-07
-=======
->>>>>>> .merge_file_brzji1
 title: "Map Popup Contrast and Fit .story"
 type: note
 tags: [documentation]
@@ -20,14 +8,6 @@ qmd: "Map Popup Contrast and Fit .story"
 date_originale_nome_file: 2026-10-07
 issues: [122]
 discussions: []
-<<<<<<< .merge_file_oIWGXC
-<<<<<<< .merge_file_GoNK2U
-=======
->>>>>>> .merge_file_DbXDE3
->>>>>>> .merge_file_OMHS2X
-=======
->>>>>>> .merge_file_DbXDE3
->>>>>>> .merge_file_brzji1
 ---
 
 # Popup dei marker: testo bianco su bianco, popup tagliato, azioni fuori vista

@@ -2,34 +2,12 @@
 title: "quality gate closure 2026 09 04.story"
 type: note
 tags: [documentation]
-<<<<<<< .merge_file_ehuntn
-<<<<<<< .merge_file_PctUOA
 created: 2026-09-26
 updated: 2026-11-23
 qmd: "quality gate closure 2026 09 04.story"
 issues: []
 discussions: []
 date_originale_nome_file: 2026-09-04
-=======
-=======
->>>>>>> .merge_file_w3oaPS
-<<<<<<< .merge_file_liitxG
-created: 2026-09-04
-=======
-created: 2026-09-26
->>>>>>> .merge_file_bKFsva
-updated: 2026-09-26
-qmd: "quality gate closure 2026 09 04.story"
-issues: []
-discussions: []
-<<<<<<< .merge_file_liitxG
-=======
-date_originale_nome_file: 2026-09-04
->>>>>>> .merge_file_bKFsva
-<<<<<<< .merge_file_ehuntn
->>>>>>> .merge_file_26Oyku
-=======
->>>>>>> .merge_file_w3oaPS
 ---
 
 # Story: Quality-gate closure — Modules/Geo (2026-09-04)
@@ -54,18 +32,12 @@ story copre il resto del gate: phpmd, phpinsights (verificato non disponibile), 
 - `Modules/Geo` stesso portava già drift di una sessione concorrente ("riduzione mixed", vedi
   `docs/coverage.md`) su 7 file mai toccati da questa sessione — non aggiunti a git, vedi sotto.
 
-<<<<<<< .merge_file_ehuntn
-<<<<<<< .merge_file_PctUOA
 ### Follow-up docs markers 2026-11-23
 
 - Sweep `Modules/Geo/docs/**/*.md`: **56** file con conflitti annidati ripuliti; grep `.md` → **0**.
 - Dominio invariato: geocoding/mappe (AddressInput, Leaflet, driver `geo.driver`) — nessuna nuova architettura.
 - Residuo atteso: script sotto `docs/git/**` e simili che *cercano* i marker (non conflitti commessi).
 
-=======
->>>>>>> .merge_file_26Oyku
-=======
->>>>>>> .merge_file_w3oaPS
 ## Cosa e' stato trovato
 - `php -l` su 545 file `.php` del modulo: nessun errore di sintassi.
 - PHPStan baseline (cache pulita, con path arg, memoria 4096M): **0 errori** confermato via
@@ -122,26 +94,8 @@ oggi assenti.
 - `app/Models/Locality.php`
 - `app/Models/Policies/GeoBasePolicy.php`
 - `docs/coverage.md`
-<<<<<<< .merge_file_ehuntn
-<<<<<<< .merge_file_PctUOA
 - `docs/stories/quality-gate-closure-.story.md` (questo file)
 - `docs/stories/quality-gate-closure.story.md` (questo file)
-=======
-=======
->>>>>>> .merge_file_w3oaPS
-<<<<<<< .merge_file_liitxG
-- `docs/stories/quality-gate-closure.story.md` (questo file)
-=======
-<<<<<<<< HEAD:laravel/Modules/Geo/docs/stories/quality-gate-closure-.story.md
-- `docs/stories/quality-gate-closure-.story.md` (questo file)
-========
-- `docs/stories/quality-gate-closure.story.md` (questo file)
->>>>>>>> 89a7b91a9c (pull moduli e sync):laravel/Modules/Geo/docs/stories/quality-gate-closure.story.md
->>>>>>> .merge_file_bKFsva
-<<<<<<< .merge_file_ehuntn
->>>>>>> .merge_file_26Oyku
-=======
->>>>>>> .merge_file_w3oaPS
 
 Non aggiunti (drift di sessioni concorrenti, non toccato da questa sessione): `app/Datas/RouteData.php`,
 `app/Datas/Routing/RouteData.php`, `app/Filament/Forms/Components/AddressInput.php`,

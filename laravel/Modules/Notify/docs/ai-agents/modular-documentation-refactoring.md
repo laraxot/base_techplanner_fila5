@@ -129,14 +129,6 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 # .agents/docs/overview/agents-overview.md
 ## Riferimenti
 - [AGENTS.md](../../AGENTS.md) - File originale compatto
-<<<<<<< .merge_file_Uguy0d
-<<<<<<< .merge_file_fO4Yhb
-=======
-- [AGENTS.md](../../AGENTS.md) - File originale compatto
->>>>>>> .merge_file_cdOxRj
-=======
-- [AGENTS.md](../../AGENTS.md) - File originale compatto
->>>>>>> .merge_file_FEtXzZ
 - [qwen.md](../../qwen.md) - Contesto Qwen Code
 ```
 

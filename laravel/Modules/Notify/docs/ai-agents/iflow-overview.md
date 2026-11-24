@@ -13,32 +13,6 @@ discussions: []
 
 Panoramica del progetto LaravelPizza.com.
 
-<<<<<<< .merge_file_4Cw5XM
-=======
----
-<<<<<<< .merge_file_TC06K5
-=======
-
-title: "iflow overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow overview"
-issues: []
-discussions: []
-## 🍕 LaravelPizza.com
->>>>>>> .merge_file_Mnu4A5
-
-title: "iflow overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow overview"
-issues: []
-discussions: []
->>>>>>> .merge_file_MjxSh6
 ## 🍕 LaravelPizza.com
 
 ## 🎯 Missione del Progetto

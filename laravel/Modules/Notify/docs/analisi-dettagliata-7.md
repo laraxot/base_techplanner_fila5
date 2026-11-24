@@ -3,15 +3,7 @@ title: "analisi dettagliata 7"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_WhWLP1
-<<<<<<< .merge_file_obi03s
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_Lav6aP
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_O3uVJg
 qmd: "analisi dettagliata 7"
 issues: []
 discussions: []

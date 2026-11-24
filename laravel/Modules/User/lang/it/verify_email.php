@@ -6,13 +6,9 @@ return [
     'actions' => [
         'submit' => [
             'icon' => 'submit',
-            'label' => 'submit',
-            'tooltip' => 'submit',
         ],
         'cancel' => [
             'icon' => 'cancel',
-            'label' => 'cancel',
-            'tooltip' => 'cancel',
         ],
     ],
 ];

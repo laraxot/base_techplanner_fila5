@@ -14,19 +14,6 @@ discussions: []
 **Generated:** 2025-10-01 19:44:12  
 **Analyzer:** Super Mucca 🐮
 
-<<<<<<< .merge_file_zwX1hk
-=======
----
-
-title: "cyclomatic complexity summary"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "cyclomatic complexity summary"
-issues: []
-discussions: []
->>>>>>> .merge_file_YiE094
 ## 📊 Global Statistics
 
 ## 📈 Global Complexity Distribution

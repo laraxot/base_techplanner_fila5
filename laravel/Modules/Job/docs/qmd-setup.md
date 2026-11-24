@@ -67,13 +67,7 @@ qmd search "form" -c job  # Solo questo modulo
 
 - [Global QMD Config](../qmd.md) (root docs)
 - [Operational Discipline](../../docs/wiki/concepts/llm-wiki-operational-discipline.md)
-<<<<<<< .merge_file_7Ymo9P
-<<<<<<< .merge_file_GYmibW
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
-=======
->>>>>>> .merge_file_Ed4afb
-=======
->>>>>>> .merge_file_mzLkkZ
 - [On-Demand Pattern](./on-demand-pattern.md)
 
 ---

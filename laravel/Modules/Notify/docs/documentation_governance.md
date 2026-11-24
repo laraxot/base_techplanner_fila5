@@ -15,19 +15,6 @@ discussions: []
 **Status**: Active  
 **Applies to**: All modules and themes
 
-<<<<<<< .merge_file_piTGbp
-=======
----
-
-title: "documentation governance"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentation governance"
-issues: []
-discussions: []
->>>>>>> .merge_file_ZLmF8x
 ## 🎯 Purpose
 
 ## 📁 Standard Directory Structure
@@ -443,10 +430,6 @@ jobs:
 ## 📚 Related Documents
 
 - [AGENTS.md](../../../AGENTS.md) - Agent guidelines
-<<<<<<< .merge_file_piTGbp
-=======
-- [AGENTS.md](../../../AGENTS.md) - Agent guidelines
->>>>>>> .merge_file_ZLmF8x
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 - [DOCUMENTATION_INDEX.md](../../../docs/DOCUMENTATION_INDEX.md) - Master index
 

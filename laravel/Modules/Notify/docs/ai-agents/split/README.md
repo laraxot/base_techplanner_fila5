@@ -111,14 +111,6 @@ Splitting improves:
 ### Bidirectional Links
 Every split file contains links back to:
 - Its section index (e.g., `agents/index.md`)
-<<<<<<< .merge_file_7dJmAd
-<<<<<<< .merge_file_Ny7SW2
-=======
-- Its section index (e.g., `agents/index.md`)
->>>>>>> .merge_file_62vpb8
-=======
-- Its section index (e.g., `agents/index.md`)
->>>>>>> .merge_file_kB9psj
 - The master index (`index.md`)
 - The original source file
 

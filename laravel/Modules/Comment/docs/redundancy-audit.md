@@ -1,26 +1,8 @@
 ---
-<<<<<<< .merge_file_XOyBtc
-<<<<<<< .merge_file_ZNNzvp
-=======
-<<<<<<< .merge_file_Qq2IZB
-=======
->>>>>>> .merge_file_pMIeOw
-=======
-<<<<<<< .merge_file_Qq2IZB
-=======
->>>>>>> .merge_file_um7xiE
 updated: 2026-09-26
 qmd: "redundancy audit 2026 05 21"
 issues: []
 discussions: []
-<<<<<<< .merge_file_XOyBtc
-<<<<<<< .merge_file_ZNNzvp
-=======
->>>>>>> .merge_file_DaEZ6Q
->>>>>>> .merge_file_pMIeOw
-=======
->>>>>>> .merge_file_DaEZ6Q
->>>>>>> .merge_file_um7xiE
 title: "Comment redundancy audit 2026-05-21"
 type: audit
 module: Comment
@@ -28,20 +10,7 @@ tags: [redundancy, duplicate-code, docs]
 created: 2026-05-21
 related:
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
-<<<<<<< .merge_file_XOyBtc
-<<<<<<< .merge_file_ZNNzvp
 status: draft
-=======
-=======
->>>>>>> .merge_file_um7xiE
-<<<<<<< .merge_file_Qq2IZB
-=======
-status: draft
->>>>>>> .merge_file_DaEZ6Q
-<<<<<<< .merge_file_XOyBtc
->>>>>>> .merge_file_pMIeOw
-=======
->>>>>>> .merge_file_um7xiE
 ---
 
 # Comment redundancy audit 2026-05-21

@@ -5,12 +5,8 @@ status: active
 module: Notify
 scope: documentation
 bmad_version: 1.0
-<<<<<<< .merge_file_EdJTog
 updated: 2026-11-23
 created: 2026-11-23
-=======
-updated: 2026-10-06
->>>>>>> .merge_file_4MY5wP
 ---
 
 # 📬 Notify — English presentation

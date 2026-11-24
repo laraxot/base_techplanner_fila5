@@ -801,13 +801,7 @@ Motivo del gruppo: scratch di prova (file di test vuoti o quasi) o nome malforma
 |---|---|---|---|---|
 | `--eloquent.md` | `wiki/_archive/duplicates/--eloquent.md` | eloquent | copia byte-identica di `__eloquent.md`; nome corrotto o sospetto; link in ingresso: 0 | proposto |
 | `__eloquent.md` | `_integration/__eloquent.md` | eloquent | DESTINAZIONE GIA OCCUPATA da un file diverso: confrontare prima di spostare; canonico delle copie byte-identiche; nome corrotto o sospetto; link in ingresso: 3 | proposto |
-<<<<<<< .merge_file_27UUId
-<<<<<<< .merge_file_r9Ut06
 | `test.md` | `wiki/_archive/unclassified/test-27.md` | test 27 02 2024 | identico anche a `raw/root-import/test-27.md`; stub (<200 caratteri); link in ingresso: 0 | proposto |
-=======
->>>>>>> .merge_file_DAnIJV
-=======
->>>>>>> .merge_file_7nRSbH
 | `test.md` | `wiki/_archive/unclassified/test-27-02.md` | test 27 02 2024 | identico anche a `raw/root-import/test-27-02.md`; stub (<200 caratteri); link in ingresso: 0 | proposto |
 | `test.md` | `wiki/_archive/unclassified/test.md` | test | identico anche a `raw/root-import/test.md`; stub (<200 caratteri); link in ingresso: 0 | proposto |
 | `test1.md` | `wiki/_archive/unclassified/test1.md` | test1 | identico anche a `raw/root-import/test1.md`; stub (<200 caratteri); link in ingresso: 0 | proposto |

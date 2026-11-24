@@ -3,15 +3,7 @@ title: "analisiettagliata 4"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_so9w1B
-<<<<<<< .merge_file_VdIUoV
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_8ewYiG
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_mQT6fc
 qmd: "analisiettagliata 4"
 issues: []
 discussions: []

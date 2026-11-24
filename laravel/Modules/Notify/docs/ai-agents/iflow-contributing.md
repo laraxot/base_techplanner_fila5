@@ -19,32 +19,6 @@ discussions: []
 
 Come contribuire al progetto.
 
-<<<<<<< .merge_file_OR6AxZ
-=======
----
-<<<<<<< .merge_file_Jrk3Fb
-=======
-
-title: "iflow contributing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow contributing"
-issues: []
-discussions: []
-## 🤝 Come Contribuire
->>>>>>> .merge_file_ahHMkk
-
-title: "iflow contributing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow contributing"
-issues: []
-discussions: []
->>>>>>> .merge_file_TAZ8kb
 ## 🤝 Come Contribuire
 
 ## Se Am i l Frontend

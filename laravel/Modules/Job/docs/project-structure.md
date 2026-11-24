@@ -35,16 +35,10 @@ tags: [structure, architecture, module]
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-<<<<<<< .merge_file_xrD7yf
-<<<<<<< .merge_file_0FoXgG
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
-=======
->>>>>>> .merge_file_UusrtX
-=======
->>>>>>> .merge_file_KkgTPz
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
@@ -60,7 +54,7 @@ tags: [structure, architecture, module]
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
+| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
 
 ## Convenzioni
 

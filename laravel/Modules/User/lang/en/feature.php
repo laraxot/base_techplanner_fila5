@@ -3,15 +3,15 @@
 declare(strict_types=1);
 
 return [
-    'resources' => 'Resources',
-    'pages' => 'Pages',
+    'resources' => 'Risorse',
+    'pages' => 'Pagine',
     'widgets' => 'Widgets',
     'navigation' => [
         'name' => 'Feature',
         'plural' => 'Features',
         'group' => [
-            'name' => 'User management',
-            'description' => 'Manage features',
+            'name' => 'Gestione Utenti',
+            'description' => 'Gestione delle feature e delle funzionalità',
         ],
         'label' => 'Feature',
         'sort' => '75',
@@ -19,7 +19,7 @@ return [
     ],
     'fields' => [
         'name' => [
-            'label' => 'Name',
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
@@ -31,31 +31,31 @@ return [
             'description' => '',
         ],
         'permissions' => [
-            'label' => 'Permissions',
+            'label' => 'Permessi',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'updated_at' => [
-            'label' => 'Updated at',
+            'label' => 'Aggiornato il',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'first_name' => [
-            'label' => 'Name',
+            'label' => 'Nome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'last_name' => [
-            'label' => 'Last name',
+            'label' => 'Cognome',
             'tooltip' => '',
             'helper_text' => '',
             'description' => '',
         ],
         'select_all' => [
-            'name' => 'Select all',
+            'name' => 'Seleziona Tutti',
             'message' => '',
             'label' => '',
             'tooltip' => '',
@@ -96,14 +96,14 @@ return [
     'actions' => [
         'import' => [
             'fields' => [
-                'import_file' => 'Select an XLS or CSV file to upload',
+                'import_file' => 'Seleziona un file XLS o CSV da caricare',
             ],
         ],
         'export' => [
-            'filename_prefix' => 'Areas as of',
+            'filename_prefix' => 'Aree al',
             'columns' => [
-                'name' => 'Area name',
-                'parent_name' => 'Parent area name',
+                'name' => 'Nome area',
+                'parent_name' => 'Nome area livello superiore',
             ],
         ],
     ],

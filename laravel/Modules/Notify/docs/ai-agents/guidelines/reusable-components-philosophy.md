@@ -15,34 +15,6 @@ discussions: []
 **Date**: 2026-03-26  
 **Status**: ✅ PHILOSOPHY DEFINED
 
-<<<<<<< .merge_file_CzaWVw
-=======
----
-<<<<<<< .merge_file_3dycEm
-=======
-
-title: "reusable components philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "reusable components philosophy"
-issues: []
-discussions: []
-## 🎯 The Zen of Reusable Components
-
-> "Un componente, infiniti usi. Scrivi una volta, usa ovunque."
->>>>>>> .merge_file_yJu0Sa
-
-title: "reusable components philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "reusable components philosophy"
-issues: []
-discussions: []
->>>>>>> .merge_file_p4hZKR
 ## 🎯 The Zen of Reusable Components
 ### Perché Componenti Riutilizzabili?
 

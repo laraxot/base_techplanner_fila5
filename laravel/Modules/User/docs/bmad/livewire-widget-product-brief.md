@@ -1,6 +1,4 @@
 ---
-title: "Product brief — solo Filament widget"
-
 title: "Product brief: solo Filament widget"
 type: product-brief
 module: User

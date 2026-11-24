@@ -25,15 +25,7 @@ discussions: []
 
 ## 🔗 Collegamento
 
-<<<<<<< .merge_file_2UuLmg
-<<<<<<< .merge_file_9MoQQ1
 - [QWEN.md originale](../../qwen.md)
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_k9Bxds
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_0lJoNp
 - [Index principale](./index.md)
 
 ## Note

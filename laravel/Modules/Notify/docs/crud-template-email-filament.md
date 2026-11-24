@@ -14,19 +14,6 @@ discussions: []
 ## Obiettivo
 Consentire la gestione runtime (CRUD) dei template email direttamente dal backend Filament, con fallback su file statici. Garantire robustezza, versioning, localizzazione e coerenza con le regole <nome progetto>.
 
-<<<<<<< .merge_file_Ftvxcp
-=======
----
-
-title: "crud template email filament"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "crud template email filament"
-issues: []
-discussions: []
->>>>>>> .merge_file_tbLbVQ
 ## 1. Struttura Database (Esempio Migration)
 
 ## 2. Model Eloquent

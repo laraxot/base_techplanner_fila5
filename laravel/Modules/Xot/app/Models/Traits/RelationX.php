@@ -91,11 +91,9 @@ trait RelationX
      * Define a polymorphic many-to-many relationship.
      *
      * @template TRelatedModel of \Illuminate\Database\Eloquent\Model
-     * @template TPivot of \Illuminate\Database\Eloquent\Relations\MorphPivot
      *
      * @param  class-string<TRelatedModel>  $related
-     * @param  class-string<TPivot>|null  $pivotClass  Concrete pivot class; inferred from convention when null
-     * @return MorphToMany<TRelatedModel, $this, ($pivotClass is null ? MorphPivot : TPivot), 'pivot'>
+     * @return MorphToMany<TRelatedModel, $this>
      */
     public function morphToManyX(
         string $related,
@@ -107,13 +105,11 @@ trait RelationX
         ?string $relatedKey = null,
         ?string $relation = null,
         bool $inverse = false,
-        ?string $pivotClass = null,
     ): MorphToMany {
         Assert::subclassOf($related, Model::class);
         Assert::isInstanceOf($related_model = app($related), Model::class);
 
-        $pivot = null !== $pivotClass ? app($pivotClass) : $this->guessMorphPivot($related);
-        Assert::isInstanceOf($pivot, MorphPivot::class);
+        $pivot = $this->guessMorphPivot($related);
         $table = $this->qualifyPivotTable($pivot, $related_model, $pivot->getTable());
         $pivotFields = $pivot->getFillable();
 

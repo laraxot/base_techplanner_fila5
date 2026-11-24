@@ -136,17 +136,4 @@ I pattern di type safety implementati possono essere applicati a:
 3. **Configuration** completamente dinamica
 4. **Testing** con classi dinamiche
 
-<<<<<<< .merge_file_yDjPJS
-=======
----
-
-title: "correzioni phpstan completate"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "correzioni phpstan completate"
-issues: []
-discussions: []
->>>>>>> .merge_file_BqjzEi
 ## ✅ MISSIONE COMPLETATA

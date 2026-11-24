@@ -3,14 +3,7 @@ title: "Status"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_8OVw3w
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_9E1ylF
->>>>>>> .merge_file_FmfyNK
-=======
->>>>>>> .merge_file_y61GjJ
 qmd: "Status"
 issues: []
 discussions: []

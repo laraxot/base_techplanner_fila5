@@ -130,8 +130,6 @@ resources/lang
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
-<<<<<<< .merge_file_VEjIvy
-<<<<<<< .merge_file_zmSpc3
 
 # PHPUnit / PHPStan / Test Coverage
 **/coverage/
@@ -140,15 +138,3 @@ resources/lang
 **/.phpunit.cache/
 **/.phpunit.result.cache
 **/phpstan-tests-output.txt
-=======
-=======
->>>>>>> .merge_file_VXhij7
-<<<<<<< .merge_file_3umjCt
-.github/ISSUE_CONTENT/
-.github/agents/
-=======
->>>>>>> .merge_file_8OfzL1
-<<<<<<< .merge_file_VEjIvy
->>>>>>> .merge_file_h6joLd
-=======
->>>>>>> .merge_file_VXhij7

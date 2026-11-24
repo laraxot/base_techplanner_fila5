@@ -1,12 +1,12 @@
 ---
 title: Quality Gates Analysis: User Module
 date: 2026-07-28
-status: superseded
-superseded_by: quality-gates.md
 type: note
-updated: 2026-10-27
+updated: 2026-10-07
 tags: [docs, user]
 qmd: "quality gates analysis   laravel/modules/user user"
+status: superseded
+superseded_by: quality-gates.md
 ---
 
 # Quality Gates Analysis: laravel/Modules/User

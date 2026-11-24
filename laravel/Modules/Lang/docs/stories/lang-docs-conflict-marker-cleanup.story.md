@@ -68,8 +68,6 @@ grep -rl '^<<<<<<< \|^=======$\|^>>>>>>> ' docs/ --include='*.md'
 ```
 
 Commit: `7402d521`.
-<<<<<<< .merge_file_au3IsA
-<<<<<<< .merge_file_13nzVw
 
 ## Wave docs 2026-11-23
 
@@ -80,7 +78,3 @@ come vincolo di dominio Lang). Dedup chirurgica su
 
 Verifica: `/bin/grep -rIln '^<<<<<<< \|^>>>>>>> \|^=\{7\}$' laravel/Modules/Lang/docs` → vuoto.
 Status: done.
-=======
->>>>>>> .merge_file_voxhZw
-=======
->>>>>>> .merge_file_gFgOww

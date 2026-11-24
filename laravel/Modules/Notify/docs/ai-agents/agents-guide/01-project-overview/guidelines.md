@@ -25,19 +25,4 @@ discussions: []
 - **Commit/push are never automatic** - do them only after real end-to-end verification and after `phpstan`, `phpmd`, `phpinsights`, and tests have been run on the scope requested by the user.
 - If those quality gates were not run, say so explicitly and do not commit or push.
 
-<<<<<<< .merge_file_1wKuaa
-=======
----
-title: "guidelines"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "guidelines"
-issues: []
-discussions: []
-<<<<<<< .merge_file_7cOr3U
->>>>>>> .merge_file_SZvBxw
-=======
->>>>>>> .merge_file_MTIcI9
 [Back to index](../index.md) | [Overview](project-overview.md) | [Links](links.md)

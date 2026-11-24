@@ -16,32 +16,6 @@ discussions: []
 **Status**: ✅ Production Ready  
 **Files**: 2 guidelines
 
-<<<<<<< .merge_file_PU7pwh
-=======
----
-<<<<<<< .merge_file_deToHo
-=======
-
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
-## 🎯 Purpose
->>>>>>> .merge_file_0bUyYg
-
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
->>>>>>> .merge_file_A3jrcr
 ## 🎯 Purpose
 
 ## 📁 Guidelines

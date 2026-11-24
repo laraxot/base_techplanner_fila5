@@ -70,25 +70,7 @@ This document outlines the architectural design of the Notify module, focusing o
 - [Email Templates](./email_templates.md)
 - [SMS Implementation](./sms_implementation.md)
 - [Troubleshooting](./troubleshooting.md)
-<<<<<<< .merge_file_pTY2YU
 
-=======
-- [Troubleshooting](./troubleshooting.md)
-
----
-
-title: "architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture"
-issues: []
-discussions: []
-<!-- Merged from architecture.md, which collided with this file on case-insensitive filesystems. -->
-
----
->>>>>>> .merge_file_4OE4Cy
 title: "Notify Module Architecture"
 type: architecture
 tags: [module, architecture, notify]

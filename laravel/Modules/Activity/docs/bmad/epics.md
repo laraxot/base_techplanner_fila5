@@ -4,27 +4,15 @@ type: epics
 status: review
 updated: 2026-11-16
 module: Activity
-<<<<<<< .merge_file_mAfehy
-<<<<<<< .merge_file_zAxBxX
 <<<<<<< .merge_file_rVHSnB
 =======
-=======
->>>>>>> .merge_file_078f0S
-=======
->>>>>>> .merge_file_s8chDY
 qmd: "epics Activity audit trail append-only redazione PII login listener test ripristino"
 related:
   - ./audits/activity-audit.md
   - ./piano-miglioramento.md
   - ./epics/module-roadmap.md
   - ./stories/module-bmad-audit.story.md
-<<<<<<< .merge_file_mAfehy
-<<<<<<< .merge_file_zAxBxX
 >>>>>>> .merge_file_70xSiv
-=======
->>>>>>> .merge_file_078f0S
-=======
->>>>>>> .merge_file_s8chDY
 ---
 
 # Epics — Activity

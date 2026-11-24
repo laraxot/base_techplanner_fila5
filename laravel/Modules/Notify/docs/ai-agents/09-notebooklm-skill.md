@@ -3,14 +3,7 @@ title: "09 Notebooklm Skill"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_PREJX3
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_GDNIQg
->>>>>>> .merge_file_PeJZQX
-=======
->>>>>>> .merge_file_85gjD4
 qmd: "09 Notebooklm Skill"
 issues: []
 discussions: []
@@ -23,36 +16,6 @@ discussions: []
 **Versione**: 1.3.0
 **Stato**: ✅ Installato (auth richiesta)
 
-<<<<<<< .merge_file_PREJX3
-=======
----
-<<<<<<< .merge_file_GDNIQg
-=======
-
-title: "09 NOTEBOOKLM SKILL"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "09 NOTEBOOKLM SKILL"
-issues: []
-discussions: []
-## Cosa fa
-
-Permette di interrogare notebook Google NotebookLM direttamente da Claude Code / Kilo Code tramite browser automation (Patchright/Chrome). Le risposte provengono **esclusivamente** dai documenti caricati sul notebook, riducendo drasticamente le allucinazioni.
-
-**Uso tipico**: documentazione progetto, ricerca, analisi codice pre-caricato su NotebookLM.
->>>>>>> .merge_file_85gjD4
-
-title: "09 NOTEBOOKLM SKILL"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "09 NOTEBOOKLM SKILL"
-issues: []
-discussions: []
->>>>>>> .merge_file_PeJZQX
 ## Cosa fa
 
 ## Setup (una tantum)

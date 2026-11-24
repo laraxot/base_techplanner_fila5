@@ -68,14 +68,8 @@ Migliorare la qualità del codice del modulo Lang utilizzando PHPStan livello 10
 ## Collegamenti
 
 - [Index Documentation](./index.md)
-<<<<<<< .merge_file_IYYzAt
-<<<<<<< .merge_file_nASvnR
 - [Best Practices](./BEST_PRACTICES.md)
 
-=======
->>>>>>> .merge_file_fkM6h8
-=======
->>>>>>> .merge_file_myurY1
 - [Best Practices](./best_practices.md)
 - [Troubleshooting](./TROUBLESHOOTING.md)
 

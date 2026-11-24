@@ -127,19 +127,10 @@ Se desideri contribuire a questa documentazione o all'implementazione del modulo
 
 ## Documentation
 
-<<<<<<< .merge_file_AC58P9
-<<<<<<< .merge_file_MdI9N8
-<<<<<<< .merge_file_tbvXu7
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
 - [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
 - [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
 - [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
-=======
->>>>>>> .merge_file_YbvLv1
-=======
->>>>>>> .merge_file_d1bqls
-=======
->>>>>>> .merge_file_8LzT7t
 - [On-Demand Pattern](./on-demand-pattern.md) — Pattern per caricamento efficiente
 - [QMD Setup](./qmd-setup.md) — Configurazione ricerca locale
 - [Performance](./performance-optimization.md) — Metriche e best practice

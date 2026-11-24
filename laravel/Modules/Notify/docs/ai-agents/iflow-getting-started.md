@@ -19,32 +19,6 @@ discussions: []
 
 Come iniziare a lavorare sul progetto.
 
-<<<<<<< .merge_file_gcUe5m
-=======
----
-<<<<<<< .merge_file_M1kamg
-=======
-
-title: "iflow getting started"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow getting started"
-issues: []
-discussions: []
-## 🚀 In 3 Passi
->>>>>>> .merge_file_eyXTxa
-
-title: "iflow getting started"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow getting started"
-issues: []
-discussions: []
->>>>>>> .merge_file_Ab2fNw
 ## 🚀 In 3 Passi
 
 ### 1. Leggi le Regole Critiche
@@ -90,14 +64,6 @@ Confronta con `https://laravelpizza.com` e trova le differenze da colmare.
 
 - **MAI** creare file .md in posizioni sbagliate
 - **MAI** usare maiuscole nei nomi .md (eccetto README.md e CHANGELOG.md)
-<<<<<<< .merge_file_M1kamg
-<<<<<<< .merge_file_gcUe5m
-=======
-- **MAI** usare maiuscole nei nomi .md (eccetto README.md e CHANGELOG.md)
->>>>>>> .merge_file_Ab2fNw
-=======
-- **MAI** usare maiuscole nei nomi .md (eccetto README.md e CHANGELOG.md)
->>>>>>> .merge_file_eyXTxa
 - **SEMPRE** usare PHPStan Level 10 dopo aver modificato un file
 - **SEMPRE** eseguire PHPMD e PHPInsights
 - **MAI** usare `property_exists()` su modelli Eloquent

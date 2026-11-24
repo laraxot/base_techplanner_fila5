@@ -3,11 +3,7 @@ title: "attachments usage"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_s1ilnr
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_XIFBly
 qmd: "attachments usage"
 issues: []
 discussions: []

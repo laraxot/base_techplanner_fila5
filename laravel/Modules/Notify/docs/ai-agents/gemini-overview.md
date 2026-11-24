@@ -17,32 +17,6 @@ Panoramica del progetto Laravel per agenti Gemini.
 
 Questo è un progetto Laravel che fornisce un tema "meetup" per Laravel meetups. Usa un'architettura modulare chiamata "Laraxot", dove le feature sono separate in moduli. Il progetto usa tecnologie moderne come Folio (file-based routing) e Volt (single-file Livewire components), e Filament per l'admin panel.
 
-<<<<<<< .merge_file_Zqs05J
-=======
----
-<<<<<<< .merge_file_NHl9jo
-=======
-
-title: "gemini overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gemini overview"
-issues: []
-discussions: []
-## Building and Running
->>>>>>> .merge_file_dXnCj9
-
-title: "gemini overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gemini overview"
-issues: []
-discussions: []
->>>>>>> .merge_file_aLbUFi
 ## Building and Running
 ### Setup
 # Dalla cartella laravel
@@ -82,13 +56,5 @@ composer run test
 ## 🔗 Link
 
 - [Indice GEMINI](./gemini-split-index.md)
-<<<<<<< .merge_file_NHl9jo
-<<<<<<< .merge_file_Zqs05J
 - [GEMINI.md originale](../../gemini.md)
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_aLbUFi
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_dXnCj9
 - [Index principale](./index.md)

@@ -14,10 +14,6 @@ related:
   - "./absolute-completion-100.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
-<<<<<<< .merge_file_ifG1dM
-=======
-  - "./acronym-naming-conventions.md"
->>>>>>> .merge_file_Bv6C6R
   - "./action-plan-immediate.md"
 ---
 

@@ -1,15 +1,12 @@
 ---
 title: "User Module - Product Strategy"
-module: user
-type: integration
-tags: [integrations, modules, user]
-created: 2026-08-24
-updated: 2026-08-24
+type: note
+updated: 2026-10-07
+tags: [docs, user]
 qmd: "user module - product strategy user"
 status: superseded
 superseded_by: product-strategy-user-module.md
 ---
-
 # User Module - Product Strategy
 
 **Module:** User  

@@ -17,9 +17,6 @@ return [
         'Modules\AI\Actions\SuggestSolutionsAction',
     ],
     // classi in un namespace Services (regola No Services, DCP-270); NoServicesTest le vede come cartelle
-<<<<<<< .merge_file_a5xAcd
-<<<<<<< .merge_file_9ab0jE
-<<<<<<< .merge_file_HVYQRy
     //
     // Vuota dal 2026-11-20 (base_quaeris_fila5#247). Quattro erano copie morte
     // senza chiamanti: il lavoro vive in `Actions/MakeAIRequestAction`,
@@ -29,23 +26,4 @@ return [
     // in `Modules/AI/docs/prompt-senza-successore.md`, perche' cancellare codice
     // morto e' una cosa e buttare sei prompt e' un'altra.
     'services' => [],
-=======
-=======
->>>>>>> .merge_file_SMxiw0
-=======
->>>>>>> .merge_file_Uq6YsU
-    'services' => [
-        'Modules\AI\Services\AIChatCompletionClient',
-        'Modules\AI\Services\AIService',
-        'Modules\AI\Services\AIServiceJsonDecoder',
-        'Modules\AI\Services\AIServicePromptBuilder',
-        'Modules\AI\Services\AIServicePromptTemplates',
-    ],
-<<<<<<< .merge_file_a5xAcd
-<<<<<<< .merge_file_9ab0jE
->>>>>>> .merge_file_P1ltOQ
-=======
->>>>>>> .merge_file_SMxiw0
-=======
->>>>>>> .merge_file_Uq6YsU
 ];

@@ -3,11 +3,7 @@ title: "email backup 1"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_Aw2qzg
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_jw9YfW
 qmd: "email backup 1"
 issues: []
 discussions: []

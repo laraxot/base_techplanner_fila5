@@ -7,16 +7,8 @@ tags: [notify, purpose, notifiche, template, canali, comunicazione]
 qmd: "notify scopo modulo notifiche template canali email sms comunicazione tracciabilita"
 updated: 2026-11-23
 issues:
-<<<<<<< .merge_file_lVHplo
   - "https://github.com/provtv/module_notify_fila5/issues/"
 discussions:
-=======
-  # DA CREARE — `gh` non autenticato: mai numeri inventati.
-  # gh issue create --repo provtv/module_notify_fila5 --title "<argomento del file>"
-  - "https://github.com/provtv/module_notify_fila5/issues/"
-discussions:
-  # DA CREARE — vedi sopra.
->>>>>>> .merge_file_WRXCAw
   - "https://github.com/provtv/module_notify_fila5/discussions/"
 ---
   # DA CREARE — `gh` non autenticato: mai numeri inventati.

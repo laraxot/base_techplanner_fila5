@@ -21,7 +21,7 @@ related:
 # Implementazione degli Avatar
 
 ## Collegamenti correlati
-- [README modulo User](./README.md)
+- [README modulo User](./readme.md)
 - [Implementazione Header con Selettore Lingua](/laravel/modules/user/docs/header-language-selector-with-flags.md)
 - [Collegamenti Documentazione](/docs/collegamenti-documentazione.md)
 

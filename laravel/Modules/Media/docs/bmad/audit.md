@@ -4,41 +4,19 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Media
-<<<<<<< .merge_file_Ysv0iB
-<<<<<<< .merge_file_4Hnvpf
 <<<<<<< .merge_file_HGb86L
 qmd: "audit BMAD Media source-first qualità"
 =======
 qmd: "audit BMAD Media source-first qualità sintesi gate AwsTest S3Test guard TemporaryUpload prunable Media id cast cancellazione fisica codice morto"
-=======
-=======
->>>>>>> .merge_file_3N4wcB
-<<<<<<< .merge_file_lb7wee
-qmd: "audit BMAD Media sintesi gate AwsTest S3Test guard TemporaryUpload prunable Media id cast cancellazione fisica codice morto"
-=======
-qmd: "audit BMAD Media source-first qualità sintesi gate AwsTest S3Test guard TemporaryUpload prunable Media id cast cancellazione fisica codice morto"
->>>>>>> .merge_file_RKyJsP
-<<<<<<< .merge_file_Ysv0iB
->>>>>>> .merge_file_uKN3ez
-=======
->>>>>>> .merge_file_3N4wcB
 related:
   - ./audits/media-audit.md
   - ./piano-miglioramento.md
   - ../ecc/media-ecc-audit.md
-<<<<<<< .merge_file_Ysv0iB
-<<<<<<< .merge_file_4Hnvpf
 >>>>>>> .merge_file_xq79dH
-=======
->>>>>>> .merge_file_uKN3ez
-=======
->>>>>>> .merge_file_3N4wcB
 ---
 
 # Audit BMAD — Media
 
-<<<<<<< .merge_file_Ysv0iB
-<<<<<<< .merge_file_4Hnvpf
 <<<<<<< .merge_file_HGb86L
 SSoT dettagliata: [audits/media-audit.md](./audits/media-audit.md)
 =======
@@ -46,34 +24,12 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/media-
 
 **Scopo in una frase:** Media custodisce i file che fanno da prova a una decisione e li rende utilizzabili nei formati che servono, senza che il dominio sappia nulla di dischi e conversioni ([purpose.md](./purpose.md)).
 >>>>>>> .merge_file_xq79dH
-=======
-=======
->>>>>>> .merge_file_3N4wcB
-SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/media-audit.md](./audits/media-audit.md).
-
-<<<<<<< .merge_file_lb7wee
-**Scopo in una frase:** Media custodisce i file che fanno da prova a una decisione e li rende utilizzabili nei formati che servono ([purpose.md](./purpose.md)).
-=======
-**Scopo in una frase:** Media custodisce i file che fanno da prova a una decisione e li rende utilizzabili nei formati che servono, senza che il dominio sappia nulla di dischi e conversioni ([purpose.md](./purpose.md)).
->>>>>>> .merge_file_RKyJsP
-<<<<<<< .merge_file_Ysv0iB
->>>>>>> .merge_file_uKN3ez
-=======
->>>>>>> .merge_file_3N4wcB
 
 ## Sintesi (2026-11-16)
 
 | Metrica | Valore |
 |---|---:|
-<<<<<<< .merge_file_Ysv0iB
-<<<<<<< .merge_file_4Hnvpf
 <<<<<<< .merge_file_HGb86L
-=======
-<<<<<<< .merge_file_lb7wee
->>>>>>> .merge_file_uKN3ez
-=======
-<<<<<<< .merge_file_lb7wee
->>>>>>> .merge_file_3N4wcB
 | PHP `app/` | 127 |
 | Test | 47 |
 | Resources | 3 |
@@ -90,14 +46,6 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/media-
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
 =======
-<<<<<<< .merge_file_Ysv0iB
-<<<<<<< .merge_file_4Hnvpf
-=======
->>>>>>> .merge_file_RKyJsP
->>>>>>> .merge_file_uKN3ez
-=======
->>>>>>> .merge_file_RKyJsP
->>>>>>> .merge_file_3N4wcB
 | PHP `app/` / test PHP / `*Test.php` | 127 / 47 / 41 |
 | Models / Policy / Resource / Widget | 4 / 4 / 3 / 1 |
 | Actions / Services / Migration / Lang IT | 51 / 0 / 5 / 24 |
@@ -128,10 +76,4 @@ Nessun P0 dimostrato. Policy corrette (`MediaBasePolicy::before()` con bypass `s
 ## Riferimenti
 
 [Piano](./piano-miglioramento.md) · [Epics](./epics.md) · [Decision log](./decision-log.md) · [ECC](../ecc/media-ecc-audit.md) · [Story](./stories/module-bmad-audit.story.md)
-<<<<<<< .merge_file_Ysv0iB
-<<<<<<< .merge_file_4Hnvpf
 >>>>>>> .merge_file_xq79dH
-=======
->>>>>>> .merge_file_uKN3ez
-=======
->>>>>>> .merge_file_3N4wcB

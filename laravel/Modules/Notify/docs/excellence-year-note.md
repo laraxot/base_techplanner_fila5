@@ -31,7 +31,7 @@ updated: 2026-11-23
 ### 👥 Modulo User - ECCELLENZA (92%)
 - ✅ **2FA_GUIDE.md** - Implementazione 2FA completa (NEW)
 - ✅ **SSO_GUIDE.md** - SAML 2.0 + OIDC completo (NEW)
-- ✅ **roadmap.md** - Timeline Q4 2025-Q1 2026
+- ✅ **ROADMAP.md** - Timeline Q4 2025-Q1 2026
 - 📋 **API.md** - Authentication API (TODO)
 
 ### 🎨 Tema Sixteen - ECCELLENZA (78%)

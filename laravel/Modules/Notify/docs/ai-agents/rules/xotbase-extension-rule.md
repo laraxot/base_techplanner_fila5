@@ -16,40 +16,6 @@ discussions: []
 **Status**: ✅ PHILOSOPHY DEFINED  
 **Priority**: BLOCKER
 
-<<<<<<< .merge_file_jAYWOL
-=======
----
-<<<<<<< .merge_file_iY913H
-=======
-
-title: "xotbase extension rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase extension rule"
-issues: []
-discussions: []
-## 🎯 The Rule
-
-> **TUTTI** i widget FILAMENT devono estendere `XotBaseWidget`
-> **TUTTI** i table widget devono estendere `XotBaseTableWidget`
-
-**Example**:
-```php
-// ✅ CORRETTO
-class OutcomesTableWidget extends XotBaseTableWidget
->>>>>>> .merge_file_sEheVG
-
-title: "xotbase extension rule"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase extension rule"
-issues: []
-discussions: []
->>>>>>> .merge_file_44Qg1G
 ## 🎯 The Rule
 
 ## 🧠 The WHY (5 Levels of Understanding)

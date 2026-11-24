@@ -1,6 +1,4 @@
 ---
-title: "Puntatore — epics campagna widget"
-
 title: "Puntatore: epics campagna widget"
 canonical: ./epics.md
 superseded: true

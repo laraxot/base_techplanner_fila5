@@ -93,7 +93,6 @@ Overall Module Completion: 60%
 ## Collegamenti tra versioni di roadmap.md
 * [roadmap.md](bashscripts/docs/roadmap.md)
 * [roadmap.md](docs/roadmap.md)
-<<<<<<< .merge_file_HOqyhT
 * [roadmap.md](../../../gdpr/docs/roadmap.md)
 * [roadmap.md](../../../notify/docs/roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)
@@ -107,8 +106,6 @@ Overall Module Completion: 60%
 * [roadmap.md](../../../activity/docs/roadmap.md)
 * [roadmap.md](../../../patient/docs/roadmap.md)
 * [roadmap.md](../../../cms/docs/roadmap.md)
-=======
->>>>>>> .merge_file_bSZbrL
 * [roadmap.md](../../../Gdpr/docs/roadmap.md)
 * [roadmap.md](../roadmap.md)
 * [roadmap.md](../../../xot/docs/roadmap.md)

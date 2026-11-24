@@ -15,19 +15,6 @@ discussions: []
 **Last Updated**: 2026-03-31  
 **Server**: Apache 2.4.64 (Ubuntu)
 
-<<<<<<< .merge_file_J355D1
-=======
----
-
-title: "vhost app"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "vhost app"
-issues: []
-discussions: []
->>>>>>> .merge_file_LROT7V
 ## Configuration Summary
 
 ## File Locations

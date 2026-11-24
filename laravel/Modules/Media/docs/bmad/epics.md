@@ -4,15 +4,9 @@ type: epics
 status: active
 tags: [media, docs]
 created: 2026-10-06
-<<<<<<< .merge_file_wsF4BY
-<<<<<<< .merge_file_MBsRWf
 <<<<<<< .merge_file_an5dQD
 updated: 2026-10-06
 =======
-=======
->>>>>>> .merge_file_TZnTzF
-=======
->>>>>>> .merge_file_YOuV8B
 updated: 2026-11-16
 bmad: true
 module: Media
@@ -21,39 +15,21 @@ related:
   - ./audits/media-audit.md
   - ./decision-log.md
   - ./piano-miglioramento.md
-<<<<<<< .merge_file_wsF4BY
-<<<<<<< .merge_file_MBsRWf
 >>>>>>> .merge_file_5Fz8oo
-=======
->>>>>>> .merge_file_TZnTzF
-=======
->>>>>>> .merge_file_YOuV8B
 ---
 
 # Epics — Media
 
-<<<<<<< .merge_file_wsF4BY
-<<<<<<< .merge_file_MBsRWf
 <<<<<<< .merge_file_an5dQD
 ## Epics
 =======
-=======
->>>>>>> .merge_file_TZnTzF
-=======
->>>>>>> .merge_file_YOuV8B
 Sostituisce il template. Ogni epic nasce da un finding dell'[audit](./audits/media-audit.md); formato: obiettivo, Acceptance (AC), task.
 
 ## E1 — Guard sulle pagine di diagnostica (P1-1, D-4)
 
 - AC1: `AwsTest` e `S3Test` usano `SuperAdminOnlyTrait` (o il cluster).
 - AC2: Pest `actingAs` utente senza ruolo → 403/non accessibile; `super-admin` → accessibile.
-<<<<<<< .merge_file_wsF4BY
-<<<<<<< .merge_file_MBsRWf
 >>>>>>> .merge_file_5Fz8oo
-=======
->>>>>>> .merge_file_TZnTzF
-=======
->>>>>>> .merge_file_YOuV8B
 
 ## E2 — Pulizia dei caricamenti temporanei (P1-2, D-1)
 
@@ -76,37 +52,15 @@ Sostituisce il template. Ogni epic nasce da un finding dell'[audit](./audits/med
 - AC1: `StreamVideoAction`, `ConvertController`, Request S3 cancellati o cablati con policy.
 - AC2: se cablato, Pest: utente non autenticato → 401/403 sullo streaming.
 
-<<<<<<< .merge_file_wsF4BY
-<<<<<<< .merge_file_MBsRWf
 <<<<<<< .merge_file_an5dQD
-=======
-<<<<<<< .merge_file_JVgku7
->>>>>>> .merge_file_TZnTzF
-=======
-<<<<<<< .merge_file_JVgku7
->>>>>>> .merge_file_YOuV8B
 **Task:**
 - [ ] Task 1
 - [ ] Task 2
 =======
-<<<<<<< .merge_file_wsF4BY
-<<<<<<< .merge_file_MBsRWf
-=======
->>>>>>> .merge_file_xsgdgO
->>>>>>> .merge_file_TZnTzF
-=======
->>>>>>> .merge_file_xsgdgO
->>>>>>> .merge_file_YOuV8B
 ## E6 — Docs e debito (P1-6, P2)
 
 - AC1: nessuna classe inesistente nelle docs (`rg 'UploadMediaAction|ProcessMediaAction|MediaCollections' docs/bmad` → solo nel decision-log/audit come «inesistenti»).
 - AC2: stringhe letterali di `AwsTest`/`ConvertAction` in `lang/it`; 2 `@phpstan-ignore` risolti.
 - AC3: junk rimosso (`BaseModel.php.backup-…`, `.to_xot`, `Commands/_components.json`); `print_r` tolto.
 - AC4: 5 file «coverage» sostituiti da test di comportamento; 2 `->todo()` chiusi.
-<<<<<<< .merge_file_wsF4BY
-<<<<<<< .merge_file_MBsRWf
 >>>>>>> .merge_file_5Fz8oo
-=======
->>>>>>> .merge_file_TZnTzF
-=======
->>>>>>> .merge_file_YOuV8B

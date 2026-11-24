@@ -312,14 +312,6 @@ jobs:
 - [Strategia di Testing Moduli](testing-strategy-modules.md) - Strategia completa
 - [Test Autenticazione](../../../../tests/Feature/Auth) - Pattern di riferimento esistenti
 - [Documentazione <nome progetto>](../modules/<nome progetto>/docs/README.md) - Funzionalità business
-<<<<<<< .merge_file_CVRGNr
-<<<<<<< .merge_file_0uSbOC
-=======
-- [Documentazione <nome progetto>](../modules/<nome progetto>/docs/README.md) - Funzionalità business
->>>>>>> .merge_file_V4YmHo
-=======
-- [Documentazione <nome progetto>](../modules/<nome progetto>/docs/README.md) - Funzionalità business
->>>>>>> .merge_file_4qWA8w
 - [Documentazione User](../../../User/docs/README.md) - Modulo core
 
 ## Stato Implementazione

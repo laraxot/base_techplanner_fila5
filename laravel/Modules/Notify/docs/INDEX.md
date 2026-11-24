@@ -1,36 +1,9 @@
-<<<<<<< .merge_file_R0mDkt
-<<<<<<< .merge_file_XklTMc
 ---
 title: "INDEX"
 created: 2026-11-23
 updated: 2026-11-23
 ---
 
-=======
-=======
->>>>>>> .merge_file_AVk84Q
-<<<<<<< .merge_file_DJbd2p
----
-title: "Indice documentazione — Notify"
-type: index
-status: active
-updated: 2026-11-16
-module: Notify
-qmd: "indice docs modulo Notify BMAD ECC purpose"
----
-
-# Indice — Notify
-
-- [Purpose](./purpose.md)
-- [BMAD](./bmad/00-index.md)
-- [ECC](./ecc/00-index.md)
-- [Audit](./bmad/audit.md)
-- [Piano di miglioramento](./bmad/piano-miglioramento.md)
-=======
-<<<<<<< .merge_file_R0mDkt
->>>>>>> .merge_file_jNqV7c
-=======
->>>>>>> .merge_file_AVk84Q
 # Notify Module Documentation
 
 ## Overview
@@ -115,16 +88,6 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 ### Architettura e Struttura
 - [README](./README.md) - Panoramica generale del modulo
 - [Architettura](./architecture.md) - Architettura generale del modulo
-<<<<<<< .merge_file_R0mDkt
-<<<<<<< .merge_file_XklTMc
-=======
-- [README](./README.md) - Panoramica generale del modulo
-- [Architettura](./architecture.md) - Architettura generale del modulo
->>>>>>> .merge_file_jNqV7c
-=======
-- [README](./README.md) - Panoramica generale del modulo
-- [Architettura](./architecture.md) - Architettura generale del modulo
->>>>>>> .merge_file_AVk84Q
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./models.md) - Documentazione dei modelli Eloquent
 - [Eventi](./events.md) - Eventi e listeners
@@ -163,14 +126,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 - [Standard Traduzioni](./translation_standards.md) - Standard per le chiavi di traduzione
 
 ### Testing e Qualità
-<<<<<<< .merge_file_XklTMc
 - [PHPStan Level 10](./phpstan_level10_fixes.md) - Correzioni per PHPStan Level 10
-=======
-- [PHPStan Level 10](./PHPSTAN_LEVEL10_FIXES.md) - Correzioni per PHPStan Level 10
-<<<<<<< .merge_file_R0mDkt
->>>>>>> .merge_file_jNqV7c
-=======
->>>>>>> .merge_file_AVk84Q
 - [Testing](./testing.md) - Strategie e approcci per il testing
 
 ## Linee Guida per l'Implementazione
@@ -209,14 +165,7 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nella co
 
 ### Mail Templates
 - [Index](./mail-templates/index.md) - Indice della documentazione sui template email
-<<<<<<< .merge_file_R0mDkt
-<<<<<<< .merge_file_XklTMc
 - [Implementazione Slug](./mail-templates/mail_template_slug_implementation.md) - Implementazione del campo slug
-=======
-=======
->>>>>>> .merge_file_AVk84Q
-- [Implementazione Slug](./mail-templates/MAIL_TEMPLATE_SLUG_IMPLEMENTATION.md) - Implementazione del campo slug
->>>>>>> .merge_file_jNqV7c
 
 ### Notifications
 - [Index](./notifications/index.md) - Indice della documentazione sulle notifiche
@@ -289,4 +238,3 @@ Ultimo aggiornamento: 14 Maggio 2025
 *Ultimo aggiornamento: Gennaio 2025*
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 *Ultimo aggiornamento: Gennaio 2025*
->>>>>>> .merge_file_LeHRke

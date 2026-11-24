@@ -1,6 +1,4 @@
 ---
-title: "LoginWidget — statePath data e XotBaseSchemaWidget"
-
 title: "LoginWidget: statePath data e XotBaseSchemaWidget"
 type: concept
 tags: [user, login, livewire, filament, xotbaseschemawidget]
@@ -13,14 +11,10 @@ discussions:
   - "https://github.com/laraxot/base_fixcity_fila5/discussions/363"
 related:
   - login-page-design-comuni.md
-  - ../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
----
-
-# LoginWidget — campi vuoti al submit
-
   - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
   - ../../../../../Themes/Sixteen/docs/wiki/concepts/folio-volt-app-pages.md
 status: draft
+---
 
 # LoginWidget: campi vuoti al submit
 
@@ -47,8 +41,6 @@ class LoginWidget extends XotBaseSchemaWidget
 ```
 
 Schema SSoT: `Filament/Resources/UserResource/Schemas/UserForm::getLoginFormSchema()`.
-
-Submit: `$this->form->getState()` — mai `validateForm()`.
 
 Submit: `$this->form->getState()`: mai `validateForm()`.
 

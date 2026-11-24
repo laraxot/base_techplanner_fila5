@@ -19,15 +19,9 @@ discussions: []
 * [performance.md](../../../xot/docs/packages/performance.md)
 * [performance.md](../../../xot/docs/roadmap/architecture/performance.md)
 * [performance.md](../../../ui/docs/standards/performance.md)
-<<<<<<< .merge_file_8Pmh3F
-<<<<<<< .merge_file_eZMLNY
 * [performance.md](../../../lang/docs/packages/performance.md)
 * [performance.md](../../../job/docs/packages/performance.md)
 * [performance.md](../../../cms/docs/frontoffice/performance.md)
-=======
->>>>>>> .merge_file_2EKA6w
-=======
->>>>>>> .merge_file_rrKJV3
 * [performance.md](../../../Lang/docs/packages/performance.md)
 * [performance.md](performance.md)
 * [performance.md](../../../Cms/docs/frontoffice/performance.md)

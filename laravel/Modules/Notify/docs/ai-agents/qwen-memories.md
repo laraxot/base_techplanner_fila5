@@ -13,41 +13,6 @@ discussions: []
 
 Memorie e lesson learned accumulate da Qwen.
 
-<<<<<<< .merge_file_ayyD4u
-=======
----
-<<<<<<< .merge_file_b0EYq2
-=======
-
-title: "qwen memories"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen memories"
-issues: []
-discussions: []
-## Error Fix Pattern
-
-Quando si lavora con date in blade:
-- **SEMPRE** usare `Carbon\Carbon::parse($date)->method()`
-- **MAI** usare `instanceof` check
-
-Errori comuni:
-- `diffForHumans()` su stringhe
-- Foreign key migration fallite
-- Traduzioni mancanti
->>>>>>> .merge_file_8lU3Wy
-
-title: "qwen memories"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen memories"
-issues: []
-discussions: []
->>>>>>> .merge_file_JHO0Gz
 ## Error Fix Pattern
 
 ## Seeder Best Practice
@@ -256,13 +221,5 @@ Usare `cinematic-particles` per background hero:
 
 - [Indice QWEN](./qwen-split-index.md)
 - [memories.md](./memories.md) - Più memorie
-<<<<<<< .merge_file_b0EYq2
-<<<<<<< .merge_file_ayyD4u
 - [QWEN.md originale](../../qwen.md)
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_JHO0Gz
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_8lU3Wy
 - [Index principale](./index.md)

@@ -148,26 +148,4 @@ When encountering errors:
 
 Laravel Boost is currently in beta and receives frequent updates. Always leverage the MCP tools for the most accurate, up-to-date Laravel development assistance.
 
-<<<<<<< .merge_file_KkUFvx
 ## Cross-References
-=======
-
----
-
-title: "boost integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "boost integration"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../laravel/gemini.md](../../../../laravel/../../../../laravel/gemini.md) — Original source
-
->>>>>>> .merge_file_7qA1HV

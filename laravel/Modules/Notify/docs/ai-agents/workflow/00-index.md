@@ -15,32 +15,6 @@ discussions: []
 **Last Updated**: 2026-03-26
 **Status**: ✅ Auto-generated
 
-<<<<<<< .merge_file_PKQ9Fm
-=======
----
-<<<<<<< .merge_file_xbj85D
-=======
-
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
-## 📊 Statistics
->>>>>>> .merge_file_aXC1HP
-
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
->>>>>>> .merge_file_XBM1LW
 ## 📊 Statistics
 
 ## 📁 Files in This Directory

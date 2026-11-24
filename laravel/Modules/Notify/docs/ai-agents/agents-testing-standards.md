@@ -22,49 +22,6 @@ tests/
 └── Modules/*/tests/   # Module-specific tests
 ```
 
-<<<<<<< .merge_file_SNkdgl
-=======
----
-<<<<<<< .merge_file_jaqqLm
-=======
-
-title: "agents testing standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents testing standards"
-issues: []
-discussions: []
-## Pest Testing Format
-
-```php
-it('creates a user', function () {
-    $user = User::factory()->create();
-    
-    expect($user)->toBeInstanceOf(User::class);
-    expect($user->email)->toBeString();
-});
-
-it('rejects invalid email', function () {
-    $response = $this->post('/users', [
-        'email' => 'invalid-email'
-    ]);
-    
-    $response->assertSessionHasErrors('email');
-});
-```
->>>>>>> .merge_file_FBw5Um
-
-title: "agents testing standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents testing standards"
-issues: []
-discussions: []
->>>>>>> .merge_file_RY7tcP
 ## Pest Testing Format
 
 ## Filament Testing
@@ -113,16 +70,6 @@ Prima di ogni commit:
 - [Indice AGENTS](./agents-split-index.md)
 - [testing.md](./testing.md) - Più dettagliato
 - [pest-testing.md](./pest-testing.md) - Guida Pest
-<<<<<<< .merge_file_jaqqLm
-<<<<<<< .merge_file_SNkdgl
 - [AGENTS.md originale](../../agents.md)
 - [agents.md originale](../../agents.md)
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_RY7tcP
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_FBw5Um
 - [Index principale](./index.md)

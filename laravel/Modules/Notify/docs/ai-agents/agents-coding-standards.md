@@ -28,32 +28,6 @@ Standard di codifica PHP e naming conventions.
 ### PHPDoc
 - Use **PHPDoc blocks** for class documentation (avoid inline comments)
 
-<<<<<<< .merge_file_R1liwF
-=======
----
-<<<<<<< .merge_file_w1GP4i
-=======
-
-title: "agents coding standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents coding standards"
-issues: []
-discussions: []
-## Naming Conventions
->>>>>>> .merge_file_upgGad
-
-title: "agents coding standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents coding standards"
-issues: []
-discussions: []
->>>>>>> .merge_file_5gjQqm
 ## Naming Conventions
 
 ## Import Organization
@@ -192,18 +166,8 @@ enum Status: string implements HasLabel, HasColor {
 - [Indice AGENTS](./agents-split-index.md)
 - [code-style.md](./code-style.md) - Più dettagliato
 - [critical-rules.md](./critical-rules.md) - Regole critiche
-<<<<<<< .merge_file_w1GP4i
-<<<<<<< .merge_file_R1liwF
 - [AGENTS.md originale](../../agents.md)
 - [agents.md originale](../../agents.md)
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_5gjQqm
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_upgGad
 - [Index principale](./index.md)
 
 ## Miglioramenti vs Originale

@@ -22,17 +22,11 @@ discussions: []
 ### Prima (File Grandi)
 ```
 AGENTS.md      - 104 righe  ❌ Troppo grande
-qwen.md        - 890 righe  ❌ Enorme
+QWEN.md        - 890 righe  ❌ Enorme
 CLAUDE.md      - 592 righe  ❌ Difficile da navigare
-<<<<<<< .merge_file_3WAdXA
-<<<<<<< .merge_file_Ld6VCg
 GEMINI.md      - 369 righe  ❌ Contenuti mischiati
 qwen.md        - 890 righe  ❌ Enorme
 CLAUDE.md      - 592 righe  ❌ Difficile da navigare
-=======
->>>>>>> .merge_file_J1bfmt
-=======
->>>>>>> .merge_file_gY1SB8
 gemini.md      - 369 righe  ❌ Contenuti mischiati
 IFLOW.md       - 312 righe  ❌ Duplicazioni
 ────────────────────────────────────────────
@@ -107,7 +101,7 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 
 ### Da File Originali a Moduli
 ```markdown
-# AGENTS.md (compatto)
+# agents.md (compatto)
 ## Contenuto Diviso
 | Sezione | File |
 |---------|------|
@@ -120,17 +114,9 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 ```markdown
 # .agents/docs/overview/agents-overview.md
 ## Riferimenti
-<<<<<<< .merge_file_3WAdXA
-<<<<<<< .merge_file_Ld6VCg
 - [agents.md](../../agents.md) - File originale compatto
 - [QWEN.md](../../qwen.md) - Contesto Qwen Code
 - [AGENTS.md](../../agents.md) - File originale compatto
-=======
-- [AGENTS.md](../../AGENTS.md) - File originale compatto
->>>>>>> .merge_file_J1bfmt
-=======
-- [AGENTS.md](../../AGENTS.md) - File originale compatto
->>>>>>> .merge_file_gY1SB8
 - [qwen.md](../../qwen.md) - Contesto Qwen Code
 ```
 
@@ -214,17 +200,11 @@ TOTALE: ~2,500 righe  ✅ Organizzate, navigabili, mantenibili
 
 ### File Originali (Compatti)
 - `AGENTS.md` - Link a tutti i moduli
-- `qwen.md` - Contesto Qwen Code
+- `QWEN.md` - Contesto Qwen Code
 - `CLAUDE.md` - Claude-specific patterns
-<<<<<<< .merge_file_3WAdXA
-<<<<<<< .merge_file_Ld6VCg
 - `GEMINI.md` - Gemini-specific patterns
 - `qwen.md` - Contesto Qwen Code
 - `CLAUDE.md` - Claude-specific patterns
-=======
->>>>>>> .merge_file_J1bfmt
-=======
->>>>>>> .merge_file_gY1SB8
 - `gemini.md` - Gemini-specific patterns
 - `IFLOW.md` - iFlow-specific patterns
 

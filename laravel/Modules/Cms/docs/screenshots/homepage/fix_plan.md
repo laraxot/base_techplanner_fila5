@@ -1,20 +1,10 @@
 ---
-title: "Fix Plan"
+title: "fix plan"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_EDcbFO
-<<<<<<< .merge_file_obyjpm
 updated: 2026-11-23
 qmd: "fix plan"
-=======
-updated: 2026-09-26
-qmd: "Fix Plan"
->>>>>>> .merge_file_DyyT6R
-=======
-updated: 2026-09-26
-qmd: "Fix Plan"
->>>>>>> .merge_file_VxFQou
 issues: []
 discussions: []
 ---
@@ -29,12 +19,12 @@ Allineare la homepage FixCity (`/it/tests/homepage`) al design Bootstrap Italia 
 
 ---
 
-title: "FIX PLAN"
+title: "fix plan"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "FIX PLAN"
+qmd: "fix plan"
 issues: []
 discussions: []
 ## Fase 1: Header & Hero (Settimana 1)

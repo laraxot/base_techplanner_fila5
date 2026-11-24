@@ -44,18 +44,6 @@ related:
 - `intervention/image` - Elaborazione immagini
 
 ## 🔗 **Moduli Correlati**
-<<<<<<< .merge_file_WQjC5n
-<<<<<<< .merge_file_VFEsay
-=======
-- [Xot](../../xot/docs/README.md) - Base framework e Trait `HasMedia`.
-- [CloudStorage](../../cloudstorage/docs/README.md) - Astrazione per provider cloud.
-- [Cms](../../cms/docs/README.md) - Integrazione media nei blocchi di contenuto.
->>>>>>> .merge_file_5TPk7q
-=======
-- [Xot](../../xot/docs/README.md) - Base framework e Trait `HasMedia`.
-- [CloudStorage](../../cloudstorage/docs/README.md) - Astrazione per provider cloud.
-- [Cms](../../cms/docs/README.md) - Integrazione media nei blocchi di contenuto.
->>>>>>> .merge_file_V3KBOb
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

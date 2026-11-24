@@ -12,11 +12,6 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-<<<<<<< .merge_file_aE8VRG
-=======
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> .merge_file_uNaYkM
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./action-plan-immediate.md"
@@ -449,10 +444,6 @@ jobs:
 ## 📚 Related Documents
 
 - [AGENTS.md](../../../AGENTS.md) - Agent guidelines
-<<<<<<< .merge_file_aE8VRG
-=======
-- [AGENTS.md](../../../AGENTS.md) - Agent guidelines
->>>>>>> .merge_file_uNaYkM
 - [.windsurfrules](../../../.windsurfrules) - IDE rules
 - [documentation-index.md](../../../docs/documentation-index.md) - Master index
 

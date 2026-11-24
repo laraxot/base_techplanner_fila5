@@ -7,10 +7,7 @@ tags: [bmad, notify, delivery]
 qmd: "Notify module product brief PRD architecture UX security epics gaps release"
 issues: ["https://github.com/laraxot/base_fixcity_fila5/issues/383"]
 discussions: ["https://github.com/laraxot/base_fixcity_fila5/discussions/392"]
-<<<<<<< .merge_file_DG76Vg
 created: 2026-11-23
-=======
->>>>>>> .merge_file_mgo7mC
 ---
 # Notify — BMAD dossier
 ## Product brief / PRD

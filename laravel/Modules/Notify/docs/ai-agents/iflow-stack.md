@@ -13,40 +13,6 @@ discussions: []
 
 Stack tecnologico del progetto.
 
-<<<<<<< .merge_file_aQHE9N
-=======
----
-<<<<<<< .merge_file_5nfsCg
-=======
-
-title: "iflow stack"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow stack"
-issues: []
-discussions: []
-## Backend
-
-| Tecnologia | Descrizione |
-|-----------|-------------|
-| PHP 8.2+ | Strict types obbligatorio |
-| Laravel 11+ | Con architettura modulare Laraxot |
-| Filament v4 | Per il backoffice |
-| PHPStan Level 10 | Per qualità codice |
-| Pest PHP | Per test unitari |
->>>>>>> .merge_file_MiLVZP
-
-title: "iflow stack"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "iflow stack"
-issues: []
-discussions: []
->>>>>>> .merge_file_odIxLN
 ## Backend
 
 ## Frontend

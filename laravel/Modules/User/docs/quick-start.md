@@ -4,9 +4,11 @@ type: guide
 tags: [user, authentication, quick-start]
 created: 2026-07-28
 updated: 2026-07-28
+status: draft
+qmd: "user module   quick start user"
 ---
 
-# User Module — Quick Start
+# User Module: Quick Start
 
 ## Installation
 
@@ -17,7 +19,7 @@ php artisan migrate --path=Modules/User/database/migrations
 ## Create First User
 
 ```php
-use Modules\Xot\Contracts\UserContract;
+use Modules\User\Models\User;
 use Illuminate\Support\Facades\Hash;
 
 $user = User::create([
@@ -59,8 +61,8 @@ $user->hasRole('admin');
 
 ## Key Files
 
-- `app/Models/User.php` — User model
-- `app/Actions/Authentication/` — Auth actions
-- `app/Filament/Resources/UserResource.php` — Admin panel
-- `database/migrations/` — Migrations
-- `config/user.php` — Config
+- `app/Models/User.php`: User model
+- `app/Actions/Authentication/`: Auth actions
+- `app/Filament/Resources/UserResource.php`: Admin panel
+- `database/migrations/`: Migrations
+- `config/user.php`: Config

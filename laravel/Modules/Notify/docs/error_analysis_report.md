@@ -3,11 +3,7 @@ title: "ERROR ANALYSIS REPORT"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_e4xlKx
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_AMjXNJ
 qmd: "ERROR ANALYSIS REPORT"
 issues: []
 discussions: []
@@ -19,19 +15,6 @@ discussions: []
 **Errore Critico**: Type mismatch in Resource classes  
 **Causa**: Violazione regole XotBase + Filament 4  
 
-<<<<<<< .merge_file_e4xlKx
-=======
----
-
-title: "ERROR ANALYSIS REPORT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ERROR ANALYSIS REPORT"
-issues: []
-discussions: []
->>>>>>> .merge_file_AMjXNJ
 ## 🔴 ERRORE PRINCIPALE
 ### Causa Root
 ### Dovrebbe Usare

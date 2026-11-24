@@ -3,11 +3,7 @@ title: "baseuser refactoring completed 2025 10 15"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_6ZMoUF
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_fMql42
 qmd: "baseuser refactoring completed 2025 10 15"
 issues: []
 discussions: []
@@ -384,30 +380,5 @@ Il refactoring di `BaseUser.php` rappresenta un **caso di studio perfetto** di c
 - 🎯 **Bug count** ridotto
 - 🎯 **Technical debt** diminuito
 
-<<<<<<< .merge_file_6ZMoUF
 *"Prima lo fai funzionare, poi lo fai giusto, poi lo fai veloce."*  
 *Oggi abbiamo fatto tutti e tre!* ✨
-=======
----
-
-title: "baseuser refactoring completed 2025 10 15"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "baseuser refactoring completed 2025 10 15"
-issues: []
-discussions: []
-**Status Finale**: ✅ **PRODUCTION READY**  
-**Risk Level**: 🟢 **LOW**  
-**Confidence**: 💯 **100%**  
-**ROI**: 🚀 **ECCELLENTE**
-
-**Il progetto è ora più pulito, più performante e più mantenibile!** 🎉
-
----
-
-*"Prima lo fai funzionare, poi lo fai giusto, poi lo fai veloce."*  
-*Oggi abbiamo fatto tutti e tre!* ✨
-
->>>>>>> .merge_file_fMql42

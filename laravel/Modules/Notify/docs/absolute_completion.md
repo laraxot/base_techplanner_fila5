@@ -15,32 +15,6 @@ discussions: []
 **Mode**: 🐄⚡ SUPER MUCCA ULTIMATE POWER  
 **Status**: ✅ 100% COMPLETATO  
 
-<<<<<<< .merge_file_xGg9Zf
-=======
----
-<<<<<<< .merge_file_RIDEcD
-=======
-
-title: "absolute completion 100"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "absolute completion 100"
-issues: []
-discussions: []
-## 🎯 MISSIONE IMPOSSIBILE → POSSIBILE
->>>>>>> .merge_file_dD7y05
-
-title: "absolute completion 100"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "absolute completion 100"
-issues: []
-discussions: []
->>>>>>> .merge_file_ABpD0T
 ## 🎯 MISSIONE IMPOSSIBILE → POSSIBILE
 
 ## 📊 TOTALE ASSOLUTO

@@ -3,11 +3,7 @@ title: "codebrisk tools analysis"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_wbhAMQ
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_L0ZZaO
 qmd: "codebrisk tools analysis"
 issues: []
 discussions: []
@@ -17,57 +13,7 @@ discussions: []
 
 Questo documento analizza in dettaglio tre risorse del blog CodeBrisk e i relativi package, con vantaggi, svantaggi, snippet di implementazione e consigli d’uso.
 
-<<<<<<< .merge_file_wbhAMQ
 ## 1. Laravel Mailator
-=======
----
-title: "codebrisk tools analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "codebrisk tools analysis"
-issues: []
-discussions: []
-## 1. Laravel Mailator
-Link: https://codebrisk.com/blog/laravel-mailator-for-configuring-email-scheduler-templates
-Package: `binarcode/laravel-mailator`
-
-**Descrizione**:
-Laravel Mailator estende il sistema nativo di scheduling di Laravel per gestire l’invio pianificato di email e l’utilizzo di template personalizzati.
-
-**Caratteristiche principali**:
-- Integrazione con il scheduler (`php artisan schedule:run`).
-- Configurazione semplificata di template via config/mailator.php.
-- Supporto ai placeholder dinamici (user, data, ecc.).
-- Comandi predefiniti per inviare batch di email.
-
-**Esempio di utilizzo**:
-```php
-// config/mailator.php
-return [
-  'templates_path' => resource_path('views/vendor/mailator'),
-  'schedule'       => 'daily',
-];
-
-// App/Console/Kernel.php
-protected function schedule(Schedule $schedule)
-{
-    $schedule->command('mailator:send')->dailyAt('08:00');
-}
-```
-
-**Vantaggi**:
-- Semplifica il batch sending via scheduler.
-- Centralizza template e programmazione.
-- Riduce boilerplate nelle Mailable.
-
-**Svantaggi**:
-- Dipendenza aggiuntiva per scheduler avanzato.
-- Complessità minima di setup e configurazione.
-
----
->>>>>>> .merge_file_L0ZZaO
 ## 2. mailspfchecker
 Link: https://codebrisk.com/blog/check-if-you-can-send-email-via-given-mail-server-in-laravel
 Package: `dietercoopman/mailspfchecker`

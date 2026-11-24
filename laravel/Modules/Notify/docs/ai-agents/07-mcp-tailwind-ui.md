@@ -3,14 +3,7 @@ title: "07 MCP Tailwind UI"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_vPaoyu
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_DIHvFz
->>>>>>> .merge_file_nAztF6
-=======
->>>>>>> .merge_file_Hg4EIr
 qmd: "07 MCP Tailwind UI"
 issues: []
 discussions: []
@@ -22,38 +15,6 @@ discussions: []
 **Stato**: ✅ OBBLIGATORIO  
 **Priorità**: CRITICAL
 
-<<<<<<< .merge_file_vPaoyu
-=======
----
-<<<<<<< .merge_file_DIHvFz
-=======
-
-title: "07 MCP TAILWIND UI"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "07 MCP TAILWIND UI"
-issues: []
-discussions: []
-## 📋 Panoramica
-
-Questo progetto utilizza **MCP (Model Context Protocol)** per integrare AI assistants con:
-- **Tailwind CSS** - Utility-first CSS framework
-- **Flowbite** - Component library basata su Tailwind
-- **shadcn/ui** - Componenti riutilizzabili
-- **Laravel Boost** - AI-driven development per Laravel
->>>>>>> .merge_file_Hg4EIr
-
-title: "07 MCP TAILWIND UI"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "07 MCP TAILWIND UI"
-issues: []
-discussions: []
->>>>>>> .merge_file_nAztF6
 ## 📋 Panoramica
 
 ## 🔧 MCP Servers Installati

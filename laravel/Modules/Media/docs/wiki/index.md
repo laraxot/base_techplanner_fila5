@@ -28,17 +28,11 @@ qmd search "Media <topic>" --limit 5
 ---
 
 <!-- Merged from index.md, which collided with this file on case-insensitive filesystems. -->
-<<<<<<< .merge_file_ukiTO8
-<<<<<<< .merge_file_oaiI5T
 
 ---
 title: "Media Wiki Index"
 module: "Media"
 ---
-=======
->>>>>>> .merge_file_4CUAvM
-=======
->>>>>>> .merge_file_1cm8bQ
 
 ---
 title: "Media Wiki Index"
@@ -49,10 +43,10 @@ module: "Media"
 
 ## Indices
 - [Rules](rules/index.md)
-- [Skills](skills/index.md)
-- [Commands](commands/index.md)
-- [Memories](memories/index.md)
-- [Concepts](concepts/index.md)
+- [Skills](skills/INDEX.md)
+- [Commands](commands/INDEX.md)
+- [Memories](memories/INDEX.md)
+- [Concepts](concepts/INDEX.md)
 
 ## On-Demand Workflow
 

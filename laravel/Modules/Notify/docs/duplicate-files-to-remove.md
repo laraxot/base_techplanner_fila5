@@ -111,21 +111,3 @@ rm Modules/Notify/resources/views/emails/templates/widgets/newfeaturestart.blade
 git add -A
 git commit -m "fix: remove lowercase duplicate files (case sensitivity compliance)"
 ```
-<<<<<<< .merge_file_cTEchy
-=======
-
----
-
-title: "duplicate files to remove"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "duplicate files to remove"
-issues: []
-discussions: []
-**Riferimenti**: 
-- [Xot File Naming Rules](../../xot/docs/file-naming-case-sensitivity.md)
-- [Bashscripts Location Policy](../../xot/docs/bashscripts-location-policy.md)
-
->>>>>>> .merge_file_vzgK7C

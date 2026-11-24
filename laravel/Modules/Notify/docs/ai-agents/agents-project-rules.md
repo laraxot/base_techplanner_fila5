@@ -37,32 +37,6 @@ Regole generali del progetto.
 - Shared project docs live under `docs/project/`
 - Module/theme docs remain local in each `docs/` directory
 
-<<<<<<< .merge_file_05uJL6
-=======
----
-<<<<<<< .merge_file_w2rlIU
-=======
-
-title: "agents project rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents project rules"
-issues: []
-discussions: []
-## JSON Page File Naming
->>>>>>> .merge_file_1VuonM
-
-title: "agents project rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents project rules"
-issues: []
-discussions: []
->>>>>>> .merge_file_VsF3xe
 ## JSON Page File Naming
 ### CRITICAL Rule
 ### Validation
@@ -116,16 +90,6 @@ discussions: []
 
 - [Indice AGENTS](./agents-split-index.md)
 - [regole-critiche.md](./regole-critiche.md) - Regole critiche
-<<<<<<< .merge_file_w2rlIU
-<<<<<<< .merge_file_05uJL6
 - [AGENTS.md originale](../../agents.md)
 - [agents.md originale](../../agents.md)
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_VsF3xe
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_1VuonM
 - [Index principale](./index.md)

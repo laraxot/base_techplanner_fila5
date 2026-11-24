@@ -22,32 +22,6 @@ Guida alla migrazione da Filament v3/v4 a v5.
 | Livewire v4.0+ | ❌ v3 - DA AGGIORNARE | ✅ |
 | Tailwind CSS v4.0+ | ❌ v3 - DA AGGIORNARE | ✅ |
 
-<<<<<<< .merge_file_0i5s1n
-=======
----
-<<<<<<< .merge_file_Jkftm3
-=======
-
-title: "agents filament migration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents filament migration"
-issues: []
-discussions: []
-## Migration Process
->>>>>>> .merge_file_ksJXpH
-
-title: "agents filament migration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents filament migration"
-issues: []
-discussions: []
->>>>>>> .merge_file_yszVqz
 ## Migration Process
 # 1. Install upgrade tool
 # 2. Run automated upgrade script
@@ -87,16 +61,6 @@ discussions: []
 
 - [Indice AGENTS](./agents-split-index.md)
 - [filament-patterns.md](./filament-patterns.md) - Pattern Filament
-<<<<<<< .merge_file_Jkftm3
-<<<<<<< .merge_file_0i5s1n
 - [AGENTS.md originale](../../agents.md)
 - [agents.md originale](../../agents.md)
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_yszVqz
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_ksJXpH
 - [Index principale](./index.md)

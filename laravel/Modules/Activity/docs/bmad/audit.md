@@ -41,31 +41,11 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/activi
 ## Gate
 
 - PHPStan `Modules/Activity`: **0 errori** (2026-11-16).
-<<<<<<< .merge_file_P25i7O
-<<<<<<< .merge_file_Bw1fJk
-<<<<<<< .merge_file_pJeRCD
 <<<<<<< .merge_file_lhpSuK
 - Pest: @@PEST_Activity_SHORT@@
 =======
 - Pest: **parziale** — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (macchina con load ≈ 50; i 40 ⨯ visti non si riproducono in isolamento). Dopo i fix della [story](./stories/module-bmad-audit.story.md), `tests/Feature` da sola: **0 failed / 181 passed / 9 skipped** (~660 s). Dettaglio in [audit § Gate](./audits/activity-audit.md#gate).
 >>>>>>> .merge_file_aSfSfG
-=======
-=======
->>>>>>> .merge_file_ba9abx
-=======
->>>>>>> .merge_file_UU1XLm
-<<<<<<< .merge_file_Dh6NI4
-- Pest: **parziale** — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (macchina con load ≈ 50; i 40 ⨯ visti non si riproducono in isolamento).
-=======
-- Pest: **parziale** — 25 pass in 2 probe (`ActivityManagementTest`, `BaseModelBusinessLogicTest`); suite completa in timeout a 900 s (macchina con load ≈ 50; i 40 ⨯ visti non si riproducono in isolamento). Dopo i fix della [story](./stories/module-bmad-audit.story.md), `tests/Feature` da sola: **0 failed / 181 passed / 9 skipped** (~660 s). Dettaglio in [audit § Gate](./audits/activity-audit.md#gate).
->>>>>>> .merge_file_CAhntc
-<<<<<<< .merge_file_P25i7O
-<<<<<<< .merge_file_Bw1fJk
->>>>>>> .merge_file_eBXlyC
-=======
->>>>>>> .merge_file_ba9abx
-=======
->>>>>>> .merge_file_UU1XLm
 - Security/runtime: le story figlie dei P1 sono in [epics.md](./epics.md).
 
 ## Riferimenti

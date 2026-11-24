@@ -5,6 +5,8 @@ type: integration
 tags: [integrations, modules, user]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
+qmd: "correzioni ereditarietà modelli - modulo user user"
 ---
 
 # Correzioni Ereditarietà Modelli - Modulo User
@@ -196,8 +198,11 @@ cd /var/www/_bases/base_<nome progetto>_fila4_mono/laravel/Modules/User
 
 ## Collegamenti
 
-- [Analisi Completa](./model-inheritance-analysis.md)
+- [Analisi Completa](./MODEL_INHERITANCE_ANALYSIS.md)
 - [Regole Qualità Codice](../../code-quality.md)
+- [BaseModel](../../../app/Models/BaseModel.php)
+- [BasePivot](../../../app/Models/BasePivot.php)
+- [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)
 - [BaseModel](../../../app/Models/BaseModel.php)
 - [BasePivot](../../../app/Models/BasePivot.php)
 - [BaseMorphPivot](../../../app/Models/BaseMorphPivot.php)

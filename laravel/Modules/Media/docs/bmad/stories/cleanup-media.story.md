@@ -1,22 +1,3 @@
-<<<<<<< .merge_file_DJOcpy
-<<<<<<< .merge_file_lEDRG5
-=======
-=======
->>>>>>> .merge_file_As1ZEp
-<<<<<<< .merge_file_oeMUsm
----
-title: "Story: Cleanup Media Module"
-qmd: "media bmad stories cleanup media story md"
-type: note
-tags: [documentation]
----
-
-=======
->>>>>>> .merge_file_4xGazI
-<<<<<<< .merge_file_DJOcpy
->>>>>>> .merge_file_ayLC2X
-=======
->>>>>>> .merge_file_As1ZEp
 # Story: Cleanup Media Module
 
 ## BMAD Method Applied

@@ -42,18 +42,4 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 - ⏸️ verified_at: Valutare se domain-specific
 - 🔄 ServiceProvider: Auto-detect nome
 
-<<<<<<< .merge_file_lwi4n6
 [DRY/KISS Global](../../docs/dry_kiss_analysis.md)
-=======
----
-title: "dry kiss analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dry kiss analysis"
-issues: []
-discussions: []
-[DRY/KISS Global](../../docs/DRY_KISS_ANALYSIS.md)
-
->>>>>>> .merge_file_TdWaxN

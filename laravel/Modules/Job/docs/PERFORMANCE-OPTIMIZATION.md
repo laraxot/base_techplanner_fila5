@@ -43,7 +43,7 @@ related:
 
 ### 4. Wiki Indici Locali
 
-Ogni modulo ha i propri `rules/skills/commands/memories/index.md`:
+Ogni modulo ha i propri `rules/skills/commands/memories/INDEX.md`:
 - Ricerca più rapida (scope limitato)
 - Context rilevante per il modulo
 - Non mischia contenuti eterogenei
@@ -114,14 +114,8 @@ context-mode ctx-stats
 ## Riferimenti
 
 - [Global Performance Guide](../../docs/wiki/concepts/performance-optimization.md)
-<<<<<<< .merge_file_GZUDSH
-<<<<<<< .merge_file_8NDqbc
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 - [QMD Setup](./QMD-SETUP.md)
-=======
->>>>>>> .merge_file_8NQBGk
-=======
->>>>>>> .merge_file_cO6TQA
 - [On-Demand Pattern](./on-demand-pattern.md)
 - [QMD Setup](./qmd-setup.md)
 

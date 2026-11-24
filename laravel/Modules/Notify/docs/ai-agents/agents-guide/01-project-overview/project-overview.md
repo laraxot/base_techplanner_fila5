@@ -64,19 +64,4 @@ Modules/{ModuleName}/
 └── composer.json
 ```
 
-<<<<<<< .merge_file_mijB8E
-=======
----
-title: "project overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "project overview"
-issues: []
-discussions: []
-<<<<<<< .merge_file_fiMEgc
->>>>>>> .merge_file_PSi8Wa
-=======
->>>>>>> .merge_file_xn1Rdc
 [Back to index](../index.md) | [Guidelines](guidelines.md) | [Links](links.md)

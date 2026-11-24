@@ -31,27 +31,4 @@ This is correct as of Boost installation, but there may be additional components
 avatar, badge, brand, breadcrumbs, button, callout, checkbox, dropdown, field, heading, icon, input, modal, navbar, profile, radio, select, separator, switch, text, textarea, tooltip
 </available-flux-components>
 
-<<<<<<< .merge_file_UsOwA7
 ## Cross-References
-=======
-
-
----
-
-title: "fluxui rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fluxui rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
-
->>>>>>> .merge_file_xXcIj0

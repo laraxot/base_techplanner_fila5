@@ -3,11 +3,7 @@ title: "database mail 1"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_DVpPCo
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_UCVb08
 qmd: "database mail 1"
 issues: []
 discussions: []

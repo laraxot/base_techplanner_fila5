@@ -3,11 +3,7 @@ title: "email troubleshooting"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_OeuveM
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_Ig4lej
 qmd: "email troubleshooting"
 issues: []
 discussions: []

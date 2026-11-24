@@ -1,16 +1,4 @@
 ---
-<<<<<<< .merge_file_Rp2VRN
-<<<<<<< .merge_file_WG5Q8F
-=======
-<<<<<<< .merge_file_pK6kYa
-created: 2026-10-07
-=======
->>>>>>> .merge_file_a28kpp
-=======
-<<<<<<< .merge_file_pK6kYa
-created: 2026-10-07
-=======
->>>>>>> .merge_file_ZKpQSi
 title: "Map Controls I18n It En De Es .story"
 type: note
 tags: [documentation]
@@ -20,14 +8,6 @@ qmd: "Map Controls I18n It En De Es .story"
 date_originale_nome_file: 2026-10-07
 issues: [122]
 discussions: []
-<<<<<<< .merge_file_Rp2VRN
-<<<<<<< .merge_file_WG5Q8F
-=======
->>>>>>> .merge_file_oaUIXM
->>>>>>> .merge_file_a28kpp
-=======
->>>>>>> .merge_file_oaUIXM
->>>>>>> .merge_file_ZKpQSi
 ---
 
 # Controlli e popup della mappa tradotti in it, en, de, es

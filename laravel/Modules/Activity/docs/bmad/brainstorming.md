@@ -1,36 +1,12 @@
 ---
-<<<<<<< .merge_file_wCQy3v
-<<<<<<< .merge_file_MNg5BI
-<<<<<<< .merge_file_itVSuL
 <<<<<<< .merge_file_Dv8S7x
-=======
-<<<<<<< .merge_file_OnWwmx
->>>>>>> .merge_file_iiYVut
-=======
-<<<<<<< .merge_file_OnWwmx
->>>>>>> .merge_file_UINaad
-=======
-<<<<<<< .merge_file_OnWwmx
->>>>>>> .merge_file_QVFbFh
 title: Brainstorming
 module: Activity
 ---
 
 ---
 =======
-<<<<<<< .merge_file_wCQy3v
-<<<<<<< .merge_file_MNg5BI
-<<<<<<< .merge_file_itVSuL
 >>>>>>> .merge_file_iU9k3d
-=======
->>>>>>> .merge_file_t4sByR
->>>>>>> .merge_file_iiYVut
-=======
->>>>>>> .merge_file_t4sByR
->>>>>>> .merge_file_UINaad
-=======
->>>>>>> .merge_file_t4sByR
->>>>>>> .merge_file_QVFbFh
 title: "Activity — brainstorming BMAD"
 type: concept
 tags: [brainstorming, activity, decisioni, debito-tecnico, event-sourcing]

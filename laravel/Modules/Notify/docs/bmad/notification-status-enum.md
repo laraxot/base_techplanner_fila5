@@ -4,11 +4,7 @@ module: Notify
 type: decision
 tags: [notify, enum, notification-log, status]
 created: 2026-10-06
-<<<<<<< .merge_file_T9UKe9
 updated: 2026-11-23
-=======
-updated: 2026-10-06
->>>>>>> .merge_file_97605g
 ---
 
 # Notification status

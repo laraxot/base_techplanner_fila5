@@ -87,21 +87,3 @@ Modules/Notify/
 * [analysis.md](../../../../themes/one/docs/analysis.md)
 
 ### Versione Incoming
-<<<<<<< .merge_file_ogHnAZ
-=======
-
-
----
-
-title: "analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analysis"
-issues: []
-discussions: []
-<<<<<<< .merge_file_Sllpr2
->>>>>>> .merge_file_PKv3Tc
-=======
->>>>>>> .merge_file_zPyBJI

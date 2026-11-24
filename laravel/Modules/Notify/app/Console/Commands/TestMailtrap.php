@@ -48,9 +48,7 @@ class TestMailtrap extends Command
         $fromName = config('mail.from.name', 'FixCity');
         Assert::string($fromAddress);
         Assert::string($fromName);
-<<<<<<< .merge_file_2foI8z
 
-<<<<<<< .merge_file_ylNKzl
         $email = new MailtrapEmail;
         $email->from(new Address($fromAddress, $fromName));
         $email->to(new Address($recipient));
@@ -64,23 +62,6 @@ class TestMailtrap extends Command
                 isBulk: false,
             );
             $response = $client->send($email);
-=======
-=======
-
->>>>>>> .merge_file_8nK1OG
-        $email = (new MailtrapEmail)
-            ->from(new Address($fromAddress, $fromName))
-            ->to(new Address($recipient))
-            ->subject('You are awesome!')
-            ->category('Integration Test')
-            ->text('Congrats for sending test email with Mailtrap!');
-
-        try {
-            $response = MailtrapClient::initSendingEmails(
-                apiKey: $apiKey,
-                isBulk: false,
-            )->send($email);
->>>>>>> .merge_file_y5xzFp
 
             $this->info('Test email sent successfully!');
             $this->line(print_r(ResponseHelper::toArray($response), true));

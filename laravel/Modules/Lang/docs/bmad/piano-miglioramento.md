@@ -4,40 +4,20 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Lang
-<<<<<<< .merge_file_gG3YDE
-<<<<<<< .merge_file_xSqI8E
 <<<<<<< .merge_file_B0jRd3
 qmd: "piano miglioramento Lang P0 P1 P2 BMAD"
 =======
-=======
->>>>>>> .merge_file_iTZZwA
-=======
->>>>>>> .merge_file_xgWnpe
 qmd: "piano miglioramento Lang P1 P2 tracker chiavi mancanti test coverage config morta Post hardcoded sequenza criteri"
 related:
   - ./audits/lang-audit.md
   - ./epics.md
   - ./decision-log.md
-<<<<<<< .merge_file_gG3YDE
-<<<<<<< .merge_file_xSqI8E
 >>>>>>> .merge_file_yBvNmY
-=======
->>>>>>> .merge_file_iTZZwA
-=======
->>>>>>> .merge_file_xgWnpe
 ---
 
 # Piano di miglioramento — Lang
 
-<<<<<<< .merge_file_gG3YDE
-<<<<<<< .merge_file_xSqI8E
 <<<<<<< .merge_file_B0jRd3
-=======
-<<<<<<< .merge_file_oSXWcx
->>>>>>> .merge_file_iTZZwA
-=======
-<<<<<<< .merge_file_oSXWcx
->>>>>>> .merge_file_xgWnpe
 Derivato dall'[audit](./audits/lang-audit.md).
 
 ## P0
@@ -73,14 +53,6 @@ Derivato dall'[audit](./audits/lang-audit.md).
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
 =======
-<<<<<<< .merge_file_gG3YDE
-<<<<<<< .merge_file_xSqI8E
-=======
->>>>>>> .merge_file_36WNOd
->>>>>>> .merge_file_iTZZwA
-=======
->>>>>>> .merge_file_36WNOd
->>>>>>> .merge_file_xgWnpe
 Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./epics.md). Nessun P0.
 
 ## P1
@@ -115,10 +87,4 @@ Derivato dall'[audit profondo](./audits/lang-audit.md). Epic e AC: [epics.md](./
 - [ ] 0 file `*CoverageTest`/`FinalGaps`
 - [ ] `rg "->label\('[A-Za-z]" app` = 0 fuori eccezioni dichiarate
 - [ ] PHPStan `Modules/Lang` = 0
-<<<<<<< .merge_file_gG3YDE
-<<<<<<< .merge_file_xSqI8E
 >>>>>>> .merge_file_yBvNmY
-=======
->>>>>>> .merge_file_iTZZwA
-=======
->>>>>>> .merge_file_xgWnpe

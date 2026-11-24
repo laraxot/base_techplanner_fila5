@@ -112,20 +112,3 @@ php artisan view:clear
 php artisan cache:clear
 php artisan filament:optimize-clear
 ```
-<<<<<<< .merge_file_rRHIHa
-=======
-
----
-
-title: "build lint test commands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "build lint test commands"
-issues: []
-discussions: []
-<<<<<<< .merge_file_HUtdQU
->>>>>>> .merge_file_0iDSB0
-=======
->>>>>>> .merge_file_aiO1Wi

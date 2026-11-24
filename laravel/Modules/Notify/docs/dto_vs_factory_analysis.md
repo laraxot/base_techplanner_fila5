@@ -3,11 +3,7 @@ title: "dto vs factory analysis"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_zAiW7Y
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_jXtjlj
 qmd: "dto vs factory analysis"
 issues: []
 discussions: []

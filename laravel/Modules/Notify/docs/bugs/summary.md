@@ -3,11 +3,7 @@ title: "Summary"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_UmpKmc
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_pqeBFO
 qmd: "Summary"
 issues: []
 discussions: []
@@ -54,17 +50,4 @@ php artisan tinker --execute="
 ### Stato
 ✅ **RISOLTO** - Testato e verificato funzionante
 
-<<<<<<< .merge_file_UmpKmc
-=======
----
-
-title: "SUMMARY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "SUMMARY"
-issues: []
-discussions: []
->>>>>>> .merge_file_pqeBFO
 ## Prossimi Bug da Analizzare

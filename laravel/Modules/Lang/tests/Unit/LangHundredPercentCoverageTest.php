@@ -265,16 +265,8 @@ describe('Lang 100% — Actions zero-coverage', function (): void {
         });
 
         try {
-<<<<<<< .merge_file_U57E7J
-<<<<<<< .merge_file_5VxYgY
             // Vedi il test precedente: la scrittura si prova da `persist()`.
             expect(fn () => app(SaveTransAction::class)->persist('lang::tmproot', 'not-array'))
-=======
-            expect(fn () => app(SaveTransAction::class)->execute('lang::tmproot', 'not-array'))
->>>>>>> .merge_file_XRDcUp
-=======
-            expect(fn () => app(SaveTransAction::class)->execute('lang::tmproot', 'not-array'))
->>>>>>> .merge_file_5Givcb
                 ->toThrow(\Exception::class);
         } finally {
             if (file_exists($file)) {

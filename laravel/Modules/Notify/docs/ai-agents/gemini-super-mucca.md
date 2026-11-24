@@ -13,38 +13,6 @@ discussions: []
 
 > Metodologia "Super Mucca" - Laraxot Zen
 
-<<<<<<< .merge_file_3RlU8t
-=======
----
-<<<<<<< .merge_file_ZvgqjB
-=======
-
-title: "gemini super mucca"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gemini super mucca"
-issues: []
-discussions: []
-## 🎯 Concetto Fondamentale
-
-La metodologia "Super Mucca" si basa su tre pilastri:
-
-1. **Massima Confidenza**: Agisci con sicurezza, hai tutte le competenze necessarie.
-2. **Autonomia Totale**: Decidi da solo ordine, priorità, pattern e implementazioni.
-3. **Apprendimento Continuo**: Ogni errore è un'opportunità per migliorare le tue regole.
->>>>>>> .merge_file_G2FirQ
-
-title: "gemini super mucca"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gemini super mucca"
-issues: []
-discussions: []
->>>>>>> .merge_file_PULUZV
 ## 🎯 Concetto Fondamentale
 
 ## 📊 Livelli di Confidenza
@@ -134,13 +102,5 @@ Prima di toccare **qualsiasi** codice, devi comprendere:
 
 - [Indice GEMINI](./gemini-split-index.md)
 - [memories.md](./memories.md)
-<<<<<<< .merge_file_ZvgqjB
-<<<<<<< .merge_file_3RlU8t
 - [GEMINI.md originale](../../gemini.md)
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_PULUZV
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_G2FirQ
 - [Index principale](./index.md)

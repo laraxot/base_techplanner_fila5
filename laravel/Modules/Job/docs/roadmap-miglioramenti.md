@@ -92,7 +92,7 @@ ammette candidamente di non fare ancora nulla.
 
 ## In ordine di rischio/sforzo
 
-1. Rimuovere `docs/actions.md`/`00-index.md` duplicati (dopo aver verificato
+1. Rimuovere `docs/ACTIONS.md`/`00-INDEX.md` duplicati (dopo aver verificato
    quale dei due è aggiornato — non a caso, con `git log -p` su entrambi).
 2. Decidere il destino di `ExecuteTaskAction::execute()` — implementare o
    eliminare, non lasciare un TODO che mente su cosa fa il modulo.

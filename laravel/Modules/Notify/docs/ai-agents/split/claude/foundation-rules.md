@@ -67,16 +67,6 @@ This application is a Laravel application and its main Laravel ecosystems packag
 ---
 ## Cross-References
 
-<<<<<<< .merge_file_AqFm8u
-<<<<<<< .merge_file_4ArtDm
-=======
-- ← [CLAUDE Index](index.md): All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md): Master index
->>>>>>> .merge_file_01uGBl
-=======
-- ← [CLAUDE Index](index.md): All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md): Master index
->>>>>>> .merge_file_dtz6ys
 - ← [CLAUDE Index](index.md): All Laravel Boost guidelines
 - ← [Main AI Docs Index](../index.md): Master index
 - ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md): Original source

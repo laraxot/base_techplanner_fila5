@@ -4,11 +4,7 @@ type: analysis
 status: active
 module: Notify
 created: 2026-11-18
-<<<<<<< .merge_file_vKc6vJ
 updated: 2026-11-23
-=======
-updated: 2026-11-18
->>>>>>> .merge_file_E93NTf
 related:
   - ./email-setup.md
   - ./DELIVERABILITY-INDEX.md

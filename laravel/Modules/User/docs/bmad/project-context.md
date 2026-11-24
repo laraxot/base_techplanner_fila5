@@ -1,6 +1,4 @@
 ---
-title: "Project context — SuperAdmin widget"
-
 title: "Project context: SuperAdmin widget"
 type: constitution
 module: User
@@ -11,13 +9,10 @@ related:
   - ./prd.md
   - ./architecture.md
   - ./tech-spec.md
----
-
-# Project context — SuperAdmin nel user menu
-
 updated: 2026-10-07
 tags: [docs, user, bmad]
 qmd: "project context   superadmin nel user menu user"
+---
 
 # Project context: SuperAdmin nel user menu
 

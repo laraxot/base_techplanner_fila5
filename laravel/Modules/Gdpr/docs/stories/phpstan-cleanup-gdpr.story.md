@@ -41,12 +41,4 @@ registrazione mappando `privacy_accepted -> privacy_policy`, `terms_accepted -> 
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
 
-<<<<<<< .merge_file_k0cf4a
-<<<<<<< .merge_file_nB03om
 Dev story: [2026-10-06-phpstan-cleanup-gdpr.dev.md](./phpstan-cleanup-gdpr.dev.md)
-=======
-Dev story: [phpstan-cleanup-gdpr.dev.md](./phpstan-cleanup-gdpr.dev.md)
->>>>>>> .merge_file_h9xYZL
-=======
-Dev story: [phpstan-cleanup-gdpr.dev.md](./phpstan-cleanup-gdpr.dev.md)
->>>>>>> .merge_file_Xakq7b

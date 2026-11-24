@@ -12,6 +12,7 @@ related:
   - "./console-commands-philosophy.md"
   - "./console-commands.md"
   - "./README.md"
+status: draft
 ---
 
 # ChangePasswordCommand

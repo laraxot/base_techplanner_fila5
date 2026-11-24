@@ -143,21 +143,3 @@ La sintassi `@svg()` utilizzata nella view Blade non è compatibile con il siste
 | **Performance** | N/A | ✅ Ottimizzata (Filament caching) |
 | **Manutenibilità** | ❌ Sintassi obsoleta | ✅ Sintassi standard |
 | **Compatibilità** | ❌ Non garantita | ✅ Filament 3.x native |
-<<<<<<< .merge_file_x35WpB
-=======
-
----
-
-title: "contact column icon"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "contact column icon"
-issues: []
-discussions: []
-**Data Analisi**: [DATE]  
-**Priorità**: 🔴 ALTA (Funzionalità core non funzionante)  
-**Tempo Stimato Fix**: 5 minuti  
-**Rischio**: 🟢 BASSO (Modifica isolata)
->>>>>>> .merge_file_Ah50Gd

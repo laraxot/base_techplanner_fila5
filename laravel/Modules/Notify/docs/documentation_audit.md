@@ -15,19 +15,6 @@ discussions: []
 **Auditor:** Documentation Quality System  
 **Scope:** All modules, themes, and project documentation
 
-<<<<<<< .merge_file_In6WAV
-=======
----
-
-title: "documentation audit"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentation audit"
-issues: []
-discussions: []
->>>>>>> .merge_file_BIq7cs
 ## Executive Summary
 ### Key Findings
 ### Critical Issues

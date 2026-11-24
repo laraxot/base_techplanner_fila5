@@ -3,14 +3,8 @@ title: "🎯 PIANO D'AZIONE IMMEDIATO - FixCity Platform"
 type: concept
 tags: [action, plan, immediate]
 created: 2026-07-14
-<<<<<<< .merge_file_Goo99d
 updated: 2026-11-23
 qmd: "action-plan-immediate 🎯 piano d'azione immediato - fixcity platform"
-=======
-updated: 2026-07-14
-qmd: "action-plan-immediate 🎯 piano d'azione immediato - fixcity platform"
-qmd: "action-plan-immediate 🎯 piano d'azione immediato - ptv platform"
->>>>>>> .merge_file_XReQdA
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -18,16 +12,6 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-<<<<<<< .merge_file_3mVOot
-<<<<<<< .merge_file_Goo99d
-=======
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> .merge_file_XReQdA
-=======
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions-2.md"
->>>>>>> .merge_file_4BFN2h
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./actions-calling-actions-pattern.md"

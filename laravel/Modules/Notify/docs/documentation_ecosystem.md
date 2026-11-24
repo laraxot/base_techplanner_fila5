@@ -13,19 +13,6 @@ discussions: []
 
 **📍 Complete Bidirectional Links & Cross-References**
 
-<<<<<<< .merge_file_hG5CkM
-=======
----
-
-title: "documentation ecosystem"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentation ecosystem"
-issues: []
-discussions: []
->>>>>>> .merge_file_mz5eoe
 ## 🗺️ Documentation Ecosystem Overview
 
 ## 📊 Documentation Hierarchy
@@ -226,21 +213,13 @@ Xot (Core) ◄──────────────────────
 | Quick start | [Copilot Inst.](../../.github/copilot-instructions.md) | [Architecture](architecture-diagrams.md) | Your task |
 | Module overview | [Module Index](module_docs_index.md) | `Modules/{Name}/docs/00-index.md` | Details |
 | Theme overview | [Theme Index](themes_documentation_index.md) | `Themes/{Name}/docs/00-index.md` | Details |
-<<<<<<< .merge_file_hG5CkM
 | Create content | [Cms Docs](../laravel/Modules/Cms/docs/) | [Block Catalog](../laravel/Themes/Sixteen/docs/component_catalog.md) | Examples |
-=======
-| Create content | [Cms Docs](../laravel/Modules/Cms/docs/) | [Block Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md) | Examples |
->>>>>>> .merge_file_mz5eoe
 | Add component | [Component Guide](../laravel/Themes/Sixteen/docs/guides/adding-components.md) | [Layout Hierarchy](../laravel/Themes/Sixteen/docs/layout-hierarchy.md) | Code |
 | Authentication | [User Docs](../laravel/Modules/User/docs/) | [Auth Guide](../laravel/Modules/User/docs/guides/) | Examples |
 | Handle files | [Media Docs](../laravel/Modules/Media/docs/) | [File Upload](../laravel/Modules/Media/docs/guides/) | Examples |
 | Send notifications | [Notify Docs](../laravel/Modules/Notify/docs/) | [Channels](../laravel/Modules/Notify/docs/guides/) | Examples |
 | Track changes | [Activity Docs](../laravel/Modules/Activity/docs/) | [Audit Trail](../laravel/Modules/Activity/docs/guides/) | Examples |
-<<<<<<< .merge_file_hG5CkM
 | Code standards | [CLAUDE.md](../laravel/claude.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
-=======
-| Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
->>>>>>> .merge_file_mz5eoe
 | Architecture | [Architecture](architecture-diagrams.md) | [Design Comuni](../laravel/Themes/Sixteen/docs/design-comuni/) | Deep dive |
 
 ---
@@ -411,13 +390,8 @@ laravel/Themes/
 - **System Architecture** → [architecture-diagrams.md](architecture-diagrams.md)
 - **Module Development** → [MODULE_DOCS_INDEX.md](module_docs_index.md)
 - **Theme Development** → [THEMES_DOCUMENTATION_INDEX.md](themes_documentation_index.md)
-<<<<<<< .merge_file_hG5CkM
 - **Code Quality** → [CODE_QUALITY_STANDARDS.md](code_quality_standards.md)
 - **Framework Rules** → [laravel/CLAUDE.md](../laravel/claude.md)
-=======
-- **Code Quality** → [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
-- **Framework Rules** → [laravel/CLAUDE.md](../laravel/CLAUDE.md)
->>>>>>> .merge_file_mz5eoe
 - **Copilot Usage** → [.github/copilot-instructions.md](../../.github/copilot-instructions.md)
 - **Design Comuni** → Search for `DESIGN_COMUNI_` files
 
@@ -455,10 +429,6 @@ laravel/Themes/
    - General? → docs/
 
 2. Follow structure:
-<<<<<<< .merge_file_hG5CkM
-=======
-   - 00-index.md (always)
->>>>>>> .merge_file_mz5eoe
    - 00-index.md (always)
    - architecture/ (how it works)
    - guides/ (how-to)
@@ -526,12 +496,9 @@ Connected Via:
 1. Start: [Copilot Instructions](../../.github/copilot-instructions.md)
 2. Understand: [Architecture Diagrams](architecture-diagrams.md)
 3. Explore: [Module Index](module_docs_index.md) or [Theme Index](themes_documentation_index.md)
-<<<<<<< .merge_file_hG5CkM
 4. Deep Dive: Relevant module/theme 00-INDEX.md
 2. Understand: [Architecture Diagrams](architecture-diagrams.md)
 3. Explore: [Module Index](module_docs_index.md) or [Theme Index](themes_documentation_index.md)
-=======
->>>>>>> .merge_file_mz5eoe
 4. Deep Dive: Relevant module/theme 00-index.md
 5. Implement: Using guides and examples
 6. Validate: Against CLAUDE.md standards

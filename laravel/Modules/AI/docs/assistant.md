@@ -4,38 +4,17 @@ type: guide
 module: AI
 tags: [ai, assistant, knowledge-base, handoff, report]
 created: 2026-11-16
-<<<<<<< .merge_file_CNccuK
-<<<<<<< .merge_file_BWsAXQ
-<<<<<<< .merge_file_m1o7kQ
 <<<<<<< .merge_file_dgAYv7
 updated: 2026-11-16
 =======
 updated: 2026-11-17
 >>>>>>> .merge_file_G1Izgz
-=======
-updated: 2026-11-17
->>>>>>> .merge_file_CZQBEq
-=======
-updated: 2026-11-17
->>>>>>> .merge_file_dS3fK6
-=======
-updated: 2026-11-17
->>>>>>> .merge_file_x3YRj5
 qmd: "assistant knowledge base handoff report"
 issues: [25, 26]
 discussions: []
 related:
   - ./stories/assistant-knowledge-base.story.md
-<<<<<<< .merge_file_CNccuK
-<<<<<<< .merge_file_BWsAXQ
-<<<<<<< .merge_file_m1o7kQ
   - ../ARCHITECTURE.md
-=======
->>>>>>> .merge_file_CZQBEq
-=======
->>>>>>> .merge_file_dS3fK6
-=======
->>>>>>> .merge_file_x3YRj5
   - ../architecture.md
 ---
 
@@ -81,27 +60,12 @@ $answer = app(AnswerQuestionAction::class)->execute(
     thread: $thread,                 // Modules\AI\Models\AiThread
     collection: 'my-project-faq',    // base di conoscenza del progetto
     question: $request->string('question')->toString(),
-<<<<<<< .merge_file_CNccuK
-<<<<<<< .merge_file_BWsAXQ
-<<<<<<< .merge_file_m1o7kQ
 <<<<<<< .merge_file_dgAYv7
     userId: auth()->id(),            // null per visitatori anonimi
 =======
     userId: auth()->id(),            // null per visitatori anonimi; intero o UUID (salvato come stringa)
     handoffKeywords: ['allerg'],     // opzionale: parole sensibili di questa chiamata (es. per attività); null = config
 >>>>>>> .merge_file_G1Izgz
-=======
-    userId: auth()->id(),            // null per visitatori anonimi; intero o UUID (salvato come stringa)
-    handoffKeywords: ['allerg'],     // opzionale: parole sensibili di questa chiamata (es. per attività); null = config
->>>>>>> .merge_file_CZQBEq
-=======
-    userId: auth()->id(),            // null per visitatori anonimi; intero o UUID (salvato come stringa)
-    handoffKeywords: ['allerg'],     // opzionale: parole sensibili di questa chiamata (es. per attività); null = config
->>>>>>> .merge_file_dS3fK6
-=======
-    userId: auth()->id(),            // null per visitatori anonimi; intero o UUID (salvato come stringa)
-    handoffKeywords: ['allerg'],     // opzionale: parole sensibili di questa chiamata (es. per attività); null = config
->>>>>>> .merge_file_x3YRj5
 );
 
 $answer->answer;        // testo da mostrare
@@ -116,27 +80,12 @@ $report = app(BuildAssistantReportAction::class)->execute('my-project-faq', now(
 ### Parole sensibili (opzionale)
 
 Di default la lista è **vuota**: il modulo AI non decide cosa è sensibile per un progetto.
-<<<<<<< .merge_file_CNccuK
-<<<<<<< .merge_file_BWsAXQ
-<<<<<<< .merge_file_m1o7kQ
 <<<<<<< .merge_file_dgAYv7
 Il progetto la imposta nella propria configurazione:
 =======
 Si possono passare per singola chiamata (`handoffKeywords`, es. diverse per ogni attività) oppure
 impostarle per tutto il progetto nella configurazione:
 >>>>>>> .merge_file_G1Izgz
-=======
-Si possono passare per singola chiamata (`handoffKeywords`, es. diverse per ogni attività) oppure
-impostarle per tutto il progetto nella configurazione:
->>>>>>> .merge_file_CZQBEq
-=======
-Si possono passare per singola chiamata (`handoffKeywords`, es. diverse per ogni attività) oppure
-impostarle per tutto il progetto nella configurazione:
->>>>>>> .merge_file_dS3fK6
-=======
-Si possono passare per singola chiamata (`handoffKeywords`, es. diverse per ogni attività) oppure
-impostarle per tutto il progetto nella configurazione:
->>>>>>> .merge_file_x3YRj5
 
 ```php
 config(['ai.assistant.handoff_keywords' => ['rimbors', 'reclam', 'avvocat', 'denunc']]);

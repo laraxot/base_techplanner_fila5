@@ -17,32 +17,6 @@ I componenti blade usano classi Tailwind ma Bootstrap Italia richiede classi spe
 ## Soluzione
 Creare componenti compatibili Bootstrap Italia.
 
-<<<<<<< .merge_file_BhLThp
-=======
----
-<<<<<<< .merge_file_lH9t8q
-=======
-
-title: "allineamento bootstrap italia"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "allineamento bootstrap italia"
-issues: []
-discussions: []
-## Componenti da Fixare
->>>>>>> .merge_file_01Z2cP
-
-title: "allineamento bootstrap italia"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "allineamento bootstrap italia"
-issues: []
-discussions: []
->>>>>>> .merge_file_0iQc4j
 ## Componenti da Fixare
 ### 1. Hero Homepage
 ### 2. Governance Cards

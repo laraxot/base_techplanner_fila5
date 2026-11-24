@@ -83,22 +83,8 @@ use Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection;
  * @method static Builder|Comment whereOriginalText($value)
  * @method static Builder|Comment whereText($value)
  *
-<<<<<<< .merge_file_5mXkZy
-<<<<<<< .merge_file_Vyzokk
  * @property ProfileContract|null $creator
  * @property ProfileContract|null $updater
-=======
-=======
->>>>>>> .merge_file_oQFOsS
-<<<<<<< .merge_file_ghwkZs
-=======
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
->>>>>>> .merge_file_taucpN
-<<<<<<< .merge_file_5mXkZy
->>>>>>> .merge_file_znBiRo
-=======
->>>>>>> .merge_file_oQFOsS
  * @property MediaCollection<int, Media> $media
  * @property int|null $media_count
  *

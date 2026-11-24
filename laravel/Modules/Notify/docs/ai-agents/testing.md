@@ -62,16 +62,6 @@ it('creates user successfully', function () {
 
 **Di ritorno:**
 - → [AGENTS.md - Testing Patterns](../../AGENTS.md#testing-patterns)
-<<<<<<< .merge_file_3YDjNZ
-<<<<<<< .merge_file_F66GZO
-=======
-- → [AGENTS.md - Testing Patterns](../../AGENTS.md#testing-patterns)
-- → [AGENTS.md - Testing Patterns](../agents.md#testing-patterns)
->>>>>>> .merge_file_Yq4xhC
-=======
-- → [AGENTS.md - Testing Patterns](../../AGENTS.md#testing-patterns)
-- → [AGENTS.md - Testing Patterns](../agents.md#testing-patterns)
->>>>>>> .merge_file_zJsrgt
 - → [AGENTS.md - Testing Patterns](../agents.md#testing-patterns)
 - → [AGENT_MEMORY.md - Testing Patterns](../../AGENT_MEMORY.md#-testing-validation-patterns)
 - → [commands.md](commands.md)

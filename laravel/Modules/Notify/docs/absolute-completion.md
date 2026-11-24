@@ -3,14 +3,8 @@ title: "🏆 FIXCITY - COMPLETAMENTO ASSOLUTO 100%"
 type: concept
 tags: [absolute, completion, 100]
 created: 2026-07-14
-<<<<<<< .merge_file_SMBOIr
 updated: 2026-11-23
 qmd: "absolute-completion-100 🏆 fixcity - completamento assoluto 100%"
-=======
-updated: 2026-07-14
-qmd: "absolute-completion-100 🏆 fixcity - completamento assoluto 100%"
-qmd: "absolute-completion-100 🏆 ptv - completamento assoluto 100%"
->>>>>>> .merge_file_OyCgv1
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
@@ -19,13 +13,6 @@ related:
   - "./00-index.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
-<<<<<<< .merge_file_tbKBl7
-<<<<<<< .merge_file_SMBOIr
-=======
-=======
->>>>>>> .merge_file_eMLWHt
-  - "./acronym-naming-conventions.md"
->>>>>>> .merge_file_OyCgv1
   - "./action-plan-immediate.md"
   - "./actions-calling-actions-pattern.md"
 ---

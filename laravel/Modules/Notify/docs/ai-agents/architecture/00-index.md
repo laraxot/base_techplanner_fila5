@@ -24,15 +24,7 @@ discussions: []
 ## Metodologia esecutiva collegata
 
 - [../../../../docs/project/gsd-and-bmad-workflow.md](../../../../docs/project/gsd-and-bmad-workflow.md) — ordine canonico BMAD -> GSD -> Ralph
-<<<<<<< .merge_file_u7y4Pa
-<<<<<<< .merge_file_aepyBB
 - [../../ralph/00-INDEX.md](../../ralph/00-index.md) — albero Ralph locale, senza duplicare template nel root del repository
-=======
-- [../../ralph/00-index.md](../../ralph/00-index.md) — albero Ralph locale, senza duplicare template nel root del repository
->>>>>>> .merge_file_CI0mrF
-=======
-- [../../ralph/00-index.md](../../ralph/00-index.md) — albero Ralph locale, senza duplicare template nel root del repository
->>>>>>> .merge_file_lL2m5P
 
 ## Quick Decision Guide
 
@@ -47,12 +39,4 @@ discussions: []
 ## Navigation
 
 - [../00-index.md](../00-index.md)
-<<<<<<< .merge_file_u7y4Pa
-<<<<<<< .merge_file_aepyBB
 - [../../../../AGENTS.md](../../../../agents.md)
-=======
-- [../../../../AGENTS.md](../../../../AGENTS.md)
->>>>>>> .merge_file_CI0mrF
-=======
-- [../../../../AGENTS.md](../../../../AGENTS.md)
->>>>>>> .merge_file_lL2m5P

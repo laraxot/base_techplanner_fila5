@@ -4,40 +4,20 @@ type: plan
 status: review
 updated: 2026-11-16
 module: Activity
-<<<<<<< .merge_file_wylQxh
-<<<<<<< .merge_file_e7CRHy
 <<<<<<< .merge_file_FUQag4
 qmd: "piano miglioramento Activity P0 P1 P2 BMAD"
 =======
-=======
->>>>>>> .merge_file_w1wt3B
-=======
->>>>>>> .merge_file_Z5LTnq
 qmd: "piano miglioramento Activity P1 P2 audit trail append-only redazione test sequenza criteri completamento"
 related:
   - ./audits/activity-audit.md
   - ./epics.md
   - ./decision-log.md
-<<<<<<< .merge_file_wylQxh
-<<<<<<< .merge_file_e7CRHy
 >>>>>>> .merge_file_JDAGIR
-=======
->>>>>>> .merge_file_w1wt3B
-=======
->>>>>>> .merge_file_Z5LTnq
 ---
 
 # Piano di miglioramento — Activity
 
-<<<<<<< .merge_file_wylQxh
-<<<<<<< .merge_file_e7CRHy
 <<<<<<< .merge_file_FUQag4
-=======
-<<<<<<< .merge_file_XpISid
->>>>>>> .merge_file_w1wt3B
-=======
-<<<<<<< .merge_file_XpISid
->>>>>>> .merge_file_Z5LTnq
 Derivato dall'[audit](./audits/activity-audit.md).
 
 ## P0
@@ -73,14 +53,6 @@ Derivato dall'[audit](./audits/activity-audit.md).
 - [ ] Pest osservabile o skip motivato
 - [ ] ECC `00-index` aggiornato con esiti
 =======
-<<<<<<< .merge_file_wylQxh
-<<<<<<< .merge_file_e7CRHy
-=======
->>>>>>> .merge_file_wpB7pV
->>>>>>> .merge_file_w1wt3B
-=======
->>>>>>> .merge_file_wpB7pV
->>>>>>> .merge_file_Z5LTnq
 Derivato dall'[audit profondo](./audits/activity-audit.md). Nessun P0 emerso dal codice; i P1 riguardano l'integrità del registro.
 Epic e AC: [epics.md](./epics.md).
 
@@ -115,18 +87,5 @@ Epic e AC: [epics.md](./epics.md).
 - [ ] Nessun segreto in `properties` (Pest su `User`)
 - [ ] PHPStan `Modules/Activity` = 0
 - [ ] ECC `00-index` aggiornato
-<<<<<<< .merge_file_wylQxh
-<<<<<<< .merge_file_e7CRHy
 - [ ] Pest osservabile o skip motivato
 >>>>>>> .merge_file_JDAGIR
-=======
-=======
->>>>>>> .merge_file_Z5LTnq
-<<<<<<< .merge_file_XpISid
-=======
-- [ ] Pest osservabile o skip motivato
->>>>>>> .merge_file_wpB7pV
-<<<<<<< .merge_file_wylQxh
->>>>>>> .merge_file_w1wt3B
-=======
->>>>>>> .merge_file_Z5LTnq

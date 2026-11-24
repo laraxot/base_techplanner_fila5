@@ -1,30 +1,13 @@
 ---
 title: "Architettura — Media"
 type: architecture
-<<<<<<< .merge_file_g6pFF2
-<<<<<<< .merge_file_Mh0cLM
 <<<<<<< .merge_file_P2iWHp
-=======
-<<<<<<< .merge_file_fG7tBd
->>>>>>> .merge_file_Sb5iMx
-=======
-<<<<<<< .merge_file_fG7tBd
->>>>>>> .merge_file_eis3ER
 tags: [architecture, structure]
-=======
-tags: [architecture, structure, module, media, storage]
->>>>>>> .merge_file_YVd6a5
 created: 2026-07-14
-<<<<<<< .merge_file_g6pFF2
-<<<<<<< .merge_file_Mh0cLM
 updated: 2026-08-04
 =======
 tags: [architecture, structure, module, media, storage]
 created: 2026-07-14
-=======
->>>>>>> .merge_file_Sb5iMx
-=======
->>>>>>> .merge_file_eis3ER
 status: review
 updated: 2026-11-16
 module: Media
@@ -34,13 +17,7 @@ related:
   - ./audits/media-audit.md
   - ./decision-log.md
   - ../purpose.md
-<<<<<<< .merge_file_g6pFF2
-<<<<<<< .merge_file_Mh0cLM
 >>>>>>> .merge_file_ySPmal
-=======
->>>>>>> .merge_file_Sb5iMx
-=======
->>>>>>> .merge_file_eis3ER
 ---
 
 # Architettura — Media
@@ -83,34 +60,17 @@ Logica in Spatie Queueable Action, nessun Service, estensione di `XotBaseResourc
 
 ## Decisioni collegate
 
-<<<<<<< .merge_file_g6pFF2
-<<<<<<< .merge_file_Mh0cLM
 <<<<<<< .merge_file_P2iWHp
 - **`tests/`** - Test suite (Pest)
   - `Feature/` - Test funzionali
   - `Unit/` - Test unitari
-=======
-[decision-log.md](./decision-log.md): D-1 (prune), D-2 (cast `id`), D-3 (allegati-prova), D-4 (guard diagnostica), D-5 (codice morto).
-<<<<<<< .merge_file_fG7tBd
-=======
->>>>>>> .merge_file_Sb5iMx
-=======
-[decision-log.md](./decision-log.md): D-1 (prune), D-2 (cast `id`), D-3 (allegati-prova), D-4 (guard diagnostica), D-5 (codice morto).
-<<<<<<< .merge_file_fG7tBd
-=======
->>>>>>> .merge_file_eis3ER
 
-## Convenzioni (dalla versione precedente, ancora valide)
+- **`config/`** - File di configurazione
 
-- Modelli al singolare (`Media`, `MediaConvert`, `TemporaryUpload`); Action `{Verb}{Noun}Action` (es. `ConvertVideoAction`).
-- Test in `tests/` (Pest, mai PHPUnit diretto), suddivisi in `Feature/` e `Unit/`; niente `RefreshDatabase`, database dedicato da `.env.testing`.
-- Dipendenze iniettate nel costruttore delle Action; binding nei Service Provider.
-- Scelta di fondo: Spatie MediaLibrary (collaudata, gestisce le trasformazioni); tabella `media` con `model_type`, `model_id`, `collection_name`, `file_name`, `mime_type`, `size`, `custom_properties`.
+- **`docs/`** - Documentazione (canonical bridge)
 
-## Affermazioni della versione precedente non riscontrate nel codice (2026-11-16)
+## Dipendenze dai Moduli Xot
 
-<<<<<<< .merge_file_g6pFF2
-<<<<<<< .merge_file_Mh0cLM
 Gerarchicamente il modulo Media dipende da:
 - **Xot** (6+ utilizzi di `XotBaseMigration`, base Filament resources)
 - **Tenant** (multi-tenancy)
@@ -219,21 +179,9 @@ Media module provides file handling, storage, and processing infrastructure for 
 - **PHPStan L10**: Pending verification
 - **Storage**: Tested with local/S3 drivers
 =======
-=======
->>>>>>> .merge_file_Sb5iMx
-=======
->>>>>>> .merge_file_eis3ER
 La vecchia architettura (fusa con `ARCHITECTURE.md`) dichiarava anche: streaming HLS/DASH, watermark automatico,
 storage con isolamento per tenant, dipendenza da Tenant e User, uso da Activity, Lang e generazione PDF, «97 file PHP».
 Nel codice: nessuna occorrenza di HLS/DASH; `Actions/Image/Merge.php` fa solo una sovrapposizione «tipo watermark»,
 non automatica; 0 `use Modules\Tenant` e 0 `use Modules\User` in `app/`; i consumatori reali sono quelli elencati in
 «Confini e dipendenze»; i file PHP in `app/` sono 127. Non vanno ripristinate senza una verifica sul codice.
-<<<<<<< .merge_file_g6pFF2
-<<<<<<< .merge_file_Mh0cLM
 >>>>>>> .merge_file_ySPmal
-=======
->>>>>>> .merge_file_YVd6a5
->>>>>>> .merge_file_Sb5iMx
-=======
->>>>>>> .merge_file_YVd6a5
->>>>>>> .merge_file_eis3ER

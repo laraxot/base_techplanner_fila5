@@ -45,42 +45,15 @@ Ingresso della documentazione del modulo. Ogni affermazione e' stata confrontata
 
 ## Limiti
 
-<<<<<<< .merge_file_IYyvGx
-<<<<<<< .merge_file_vOlZB5
-=======
-=======
->>>>>>> .merge_file_2YIZfA
-<<<<<<< .merge_file_x4ceMG
-### 🎨 **Filament Integration**
-- [MCP Server](mcp-server-recommended.md) - Server MCP consigliati
-- [Roadmap 2025](roadmap.md) - Piano sviluppo
-=======
-<<<<<<< .merge_file_IYyvGx
->>>>>>> .merge_file_XPzRf2
-=======
->>>>>>> .merge_file_2YIZfA
 1. Rotte: `routes/web.php` e `routes/api.php` sono vuoti; `php artisan route:list --json` mostra 6 rotte, tutte del pannello Filament `comment/admin`. Le viste `folio-moderation/` non sono montate da nessun file di `app/` (grep); se siano raggiunte da Folio a livello di progetto non e' verificato.
 2. Dipendenza residua da Spatie: `app/Actions/SanitizeCommentTextAction.php` importa `Spatie\Comments\Support\CommentSanitizer`; `packages/spatie/` e' ancora presente e risolto dall'autoload del progetto. La fase 4 (rimozione) dell'internalizzazione non e' fatta.
 3. Documenti in ritardo sul codice: [ticket-comments.md](./ticket-comments.md) descrive il trait Spatie sul `Ticket` (oggi e' `Modules\Comment\Models\Concerns\HasComments`); lo stato di [native-comments-engine.md](./native-comments-engine.md) e' fermo al 2026-06-06.
 4. Suite Pest non affidabile oggi: su DB usa-e-getta il 2026-10-14 3 test passano e 41 falliscono con `SQLiteDatabaseDoesNotExistException`.
-<<<<<<< .merge_file_IYyvGx
-<<<<<<< .merge_file_vOlZB5
-=======
->>>>>>> .merge_file_VQRzYQ
->>>>>>> .merge_file_XPzRf2
 
 ## Quick start
 
 Da `laravel/`:
 
-=======
->>>>>>> .merge_file_VQRzYQ
-
-## Quick start
-
-Da `laravel/`:
-
->>>>>>> .merge_file_2YIZfA
 ```bash
 # rotte del modulo (verificato il 2026-10-14: 6, tutte del pannello Filament comment/admin)
 php artisan route:list --name=comment

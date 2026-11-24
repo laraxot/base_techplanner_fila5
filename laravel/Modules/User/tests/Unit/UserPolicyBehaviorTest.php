@@ -26,15 +26,15 @@ function userBehaviorUser(
 ): UserContract {
     /** @var Mockery\MockInterface&UserContract $user */
     $user = Mockery::mock(UserContract::class);
-    TestCase::mockeryExpect($user->shouldReceive('hasRole'))
+    mockeryExpect($user->shouldReceive('hasRole'))
         ->andReturnUsing(static function (array|string $richiesti) use ($roles): bool {
             /** @var list<string> $normalizzati */
             $normalizzati = is_array($richiesti) ? $richiesti : [$richiesti];
 
             return array_intersect($normalizzati, $roles) !== [];
         });
-    TestCase::mockeryExpect($user->shouldReceive('ownsTeam'))->andReturn($ownsTeam);
-    TestCase::mockeryExpect($user->shouldReceive('belongsToTeam'))->andReturn($belongsToTeam);
+    mockeryExpect($user->shouldReceive('ownsTeam'))->andReturn($ownsTeam);
+    mockeryExpect($user->shouldReceive('belongsToTeam'))->andReturn($belongsToTeam);
 
     return $user;
 }

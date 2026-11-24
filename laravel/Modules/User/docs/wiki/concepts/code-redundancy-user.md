@@ -51,8 +51,6 @@ Risorse presenti sia in `Filament/Resources/` sia in `Filament/Clusters/Passport
 ## P1: composer.json nel tree views
 
 `resources/views/composer.json` con name `laraxot/theme-one`: **anomalia**; non appartiene al modulo User.
-**Stato 2026-11-16:** file `resources/views/composer.json` (tema One spuri) **rimosso** — SSoT resta `laravel/Themes/One/composer.json`.
-
 
 ## P2: documentazione
 
@@ -61,4 +59,4 @@ Risorse presenti sia in `Filament/Resources/` sia in `Filament/Clusters/Passport
 ## Collegamenti
 
 - [Filosofia](../../../../Xot/docs/wiki/concepts/code-redundancy-philosophy.md)
-- [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit.md)
+- [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit-2026-05-26.md)

@@ -15,19 +15,6 @@ discussions: []
 **Source**: https://github.com/CodeforKarlsruhe/farmshops.eu  
 **Status**: ✅ INTEGRATION COMPLETE  
 
-<<<<<<< .merge_file_MDXZfP
-=======
----
-
-title: "farmshops integration complete"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "farmshops integration complete"
-issues: []
-discussions: []
->>>>>>> .merge_file_bhje4N
 ## 🎯 OBIETTIVO RAGGIUNTO
 
 ## 📊 ANALISI FARMSHOPS.EU

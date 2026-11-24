@@ -15,19 +15,6 @@ discussions: []
 **Versione**: v4.0 - Luxury, Winter Wonderland & Elephant Mascot
 **Status**: ✅ Completato
 
-<<<<<<< .merge_file_2ePVz4
-=======
----
-
-title: "christmas email templates v4 implementation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "christmas email templates v4 implementation"
-issues: []
-discussions: []
->>>>>>> .merge_file_wkGzO7
 ## 📋 Sommario Esecutivo
 ### Template Creati
 

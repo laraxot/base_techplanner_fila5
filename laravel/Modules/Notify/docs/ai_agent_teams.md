@@ -15,40 +15,6 @@ discussions: []
 **Status**: Active  
 **Purpose**: Coordinate multiple AI agents working on the same codebase
 
-<<<<<<< .merge_file_TES49f
-=======
----
-<<<<<<< .merge_file_3kpQXs
-=======
-
-title: "ai agent teams"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ai agent teams"
-issues: []
-discussions: []
-## 🎯 Why Agent Teams?
-
-Multiple AI agents (Qwen, Claude, Cursor, etc.) are working on the same FixCity platform. Without coordination:
-- ❌ Duplicate work
-- ❌ Conflicting changes
-- ❌ Wasted effort
-- ❌ Confusion about who's doing what
-
-**Solution**: Organized agent teams with clear responsibilities and communication channels.
->>>>>>> .merge_file_YG5bdu
-
-title: "ai agent teams"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ai agent teams"
-issues: []
-discussions: []
->>>>>>> .merge_file_ohSO2P
 ## 🎯 Why Agent Teams?
 
 ## 👥 Current Agent Teams
@@ -98,14 +64,6 @@ discussions: []
 **Current Tasks**:
 - ✅ Update `bashscripts/docs/ai/` with sync rules
 - ✅ Update AGENTS.md with commit/push rules
-<<<<<<< .merge_file_3kpQXs
-<<<<<<< .merge_file_TES49f
-=======
-- ✅ Update AGENTS.md with commit/push rules
->>>>>>> .merge_file_ohSO2P
-=======
-- ✅ Update AGENTS.md with commit/push rules
->>>>>>> .merge_file_YG5bdu
 - ✅ Update .windsurfrules
 - ⏳ Sync `.github/` with `bashscripts/ai/.github/`
 

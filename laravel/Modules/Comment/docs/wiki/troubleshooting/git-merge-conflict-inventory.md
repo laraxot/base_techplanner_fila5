@@ -1,16 +1,4 @@
 ---
-<<<<<<< .merge_file_XDs5Ty
-<<<<<<< .merge_file_gCzfUx
-=======
-<<<<<<< .merge_file_05rkD0
-created: 2026-04-28
-=======
->>>>>>> .merge_file_2sKXtv
-=======
-<<<<<<< .merge_file_05rkD0
-created: 2026-04-28
-=======
->>>>>>> .merge_file_yWBiPg
 title: "git merge conflict inventory 2026 04 28"
 type: note
 tags: [documentation]
@@ -20,14 +8,6 @@ qmd: "git merge conflict inventory 2026 04 28"
 issues: []
 discussions: []
 status: draft
-<<<<<<< .merge_file_XDs5Ty
-<<<<<<< .merge_file_gCzfUx
-=======
->>>>>>> .merge_file_tGr7SZ
->>>>>>> .merge_file_2sKXtv
-=======
->>>>>>> .merge_file_tGr7SZ
->>>>>>> .merge_file_yWBiPg
 ---
 
 # Git Conflict Inventory

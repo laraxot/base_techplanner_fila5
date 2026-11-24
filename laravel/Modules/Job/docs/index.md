@@ -218,27 +218,11 @@ $avgTime = $jobMonitor->getAverageProcessingTime();
 6. **Monitoring**: Monitor job performance and failure rates
 
 ## Related Modules
-<<<<<<< .merge_file_yewQ2K
-- [Xot Module](../../Xot/docs/README.md) - Core base classes
-- [Activity Module](../../Activity/docs/index.md) - Activity logging
-- [Notify Module](../../Notify/docs/index.md) - Notification system
-- [User Module](../../User/docs/readme.md) - User authentication and management
-=======
 - [Xot Module](../xot/docs/index.md) - Core base classes
 - [Activity Module](../activity/docs/index.md) - Activity logging
 - [Notify Module](../notify/docs/index.md) - Notification system
-<<<<<<< .merge_file_R9OUEJ
-<<<<<<< .merge_file_srX6hb
 - [User Module](../user/docs/readme.md) - User authentication and management
 - [User Module](../user/docs/README.md) - User authentication and management
-=======
-- [User Module](../user/docs/README.md) - User authentication and management
->>>>>>> .merge_file_2Syf5q
->>>>>>> .merge_file_1SZqfE
-=======
-- [User Module](../user/docs/README.md) - User authentication and management
->>>>>>> .merge_file_2Syf5q
->>>>>>> .merge_file_tyXU2L
 
 ## Troubleshooting
 Common issues and solutions:
@@ -247,27 +231,3 @@ Common issues and solutions:
 - Database connection issues
 - Retry loop problems
 - Worker process crashes
-
-## Mappa delle cartelle
-
-Elenco generato dall'audit qualita' (issue #64): ogni cartella di `docs/` con il numero di file `.md`.
-Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escluse.
-
-| Cartella | File .md |
-|---|---|
-| [`analysis/`](analysis/) | 2 |
-| [`bmad/`](bmad/index.md) | 33 |
-| [`components/`](components/) | 1 |
-| [`concepts/`](concepts/) | 1 |
-| [`ecc/`](ecc/) | 2 |
-| [`epics/`](epics/) | 1 |
-| [`investigation/`](investigation/) | 1 |
-| [`legacy/`](legacy/) | 10 |
-| [`llm-wiki/`](llm-wiki/index.md) | 4 |
-| [`packages/`](packages/) | 4 |
-| [`performance/`](performance/) | 1 |
-| [`providers/`](providers/) | 1 |
-| [`roadmap/`](roadmap/index.md) | 27 |
-| [`stories/`](stories/) | 29 |
-| [`tasks/`](tasks/) | 4 |
-| [`wiki/`](wiki/index.md) | 54 |

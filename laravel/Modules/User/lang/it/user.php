@@ -315,9 +315,6 @@ return [
         'startDate' => [
             'tooltip' => '',
         ],
-        'user' => [
-            'label' => 'Utente',
-        ],
         'matr' => [
             'description' => 'matr',
             'label' => 'matr',
@@ -332,6 +329,9 @@ return [
         ],
         'state' => [
             'label' => 'Stato',
+        ],
+        'user' => [
+            'label' => 'Utente',
         ],
         'device' => [
             'label' => 'Dispositivo',

@@ -3,15 +3,7 @@ title: " repos"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_mRDWnm
-<<<<<<< .merge_file_mKoWca
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_BwPhkE
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_IkjZT9
 qmd: " repos"
 issues: []
 discussions: []

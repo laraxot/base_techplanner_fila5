@@ -1,20 +1,10 @@
 ---
-title: "Best Practices"
+title: "best practices"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_A0wFyO
-<<<<<<< .merge_file_co9EL8
 updated: 2026-11-23
 qmd: "best practices"
-=======
-updated: 2026-09-26
-qmd: "Best Practices"
->>>>>>> .merge_file_AYUW50
-=======
-updated: 2026-09-26
-qmd: "Best Practices"
->>>>>>> .merge_file_Ws8021
 issues: []
 discussions: []
 ---
@@ -35,5 +25,5 @@ discussions: []
 - Copri edge case per permessi pagina (draft vs published).
 
 ## Documentazione
-- Aggiorna `docs/index.md` con nuovi blocchi disponibili.
+- Aggiorna `docs/INDEX.md` con nuovi blocchi disponibili.
 - Documenta flusso approvazione contenuti.

@@ -23,19 +23,6 @@ First off, thank you for considering contributing to FixCity! 🎉
 - [Commit Guidelines](#commit-guidelines)
 - [Pull Request Process](#pull-request-process)
 
-<<<<<<< .merge_file_b6tdx6
-=======
----
-
-title: "contributing"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "contributing"
-issues: []
-discussions: []
->>>>>>> .merge_file_szCq8T
 ## 📜 Code of Conduct
 
 ## 🚀 Getting Started

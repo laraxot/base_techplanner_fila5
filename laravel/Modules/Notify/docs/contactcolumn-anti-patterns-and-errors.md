@@ -137,24 +137,3 @@ private function formatContacts(Client $record): string
 4. [ ] Refactoring ContactColumn.php con pattern corretto
 5. [ ] Testing della soluzione corretta
 6. [ ] Validazione conformità alle memorie
-<<<<<<< .merge_file_tNt1vR
-=======
-
----
-
-title: "contactcolumn anti patterns and errors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "contactcolumn anti patterns and errors"
-issues: []
-discussions: []
-**GRAVITÀ**: CRITICA  
-**IMPATTO**: Alto - Pattern sbagliato potrebbe essere copiato  
-**PRIORITÀ**: Immediata - Correggere subito  
-**LEZIONE**: SEMPRE studiare docs/memories prima di implementare  
-
-*Ultimo aggiornamento: [DATE]*  
-*Errori identificati e documentati per prevenzione futura*
->>>>>>> .merge_file_mJAEPr

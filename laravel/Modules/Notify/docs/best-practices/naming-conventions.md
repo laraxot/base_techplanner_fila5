@@ -15,10 +15,6 @@ related:
   - ../architecture/README.md
   - ../conventions/README.md
   - ../rules/README.md
-<<<<<<< .merge_file_loxun1
-=======
-  - ../README.md
->>>>>>> .merge_file_bLhq0h
 ---
 # Convenzioni di Naming
 

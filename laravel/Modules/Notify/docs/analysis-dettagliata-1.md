@@ -3,15 +3,7 @@ title: "analysis dettagliata 1"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_wtDaFF
-<<<<<<< .merge_file_MFBRAn
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_NSHWeC
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_M8LaCa
 qmd: "analysis dettagliata 1"
 issues: []
 discussions: []

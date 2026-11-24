@@ -182,14 +182,8 @@ public function __construct(string $output)
 ## 📚 **Riferimenti**
 
 ### **Documentazione Correlata**
-<<<<<<< .merge_file_jxZt4x
-<<<<<<< .merge_file_yDApar
 - [README.md Modulo Job](./readme.md)
 - [Queue Management](./queue/readme.md)
-=======
->>>>>>> .merge_file_oxVZsr
-=======
->>>>>>> .merge_file_4xkiMA
 - [README.md Modulo Job](./README.md)
 - [Queue Management](./queue/README.md)
 - [Best Practices](./best-practices.md)

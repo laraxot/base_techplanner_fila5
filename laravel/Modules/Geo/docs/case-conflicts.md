@@ -23,10 +23,8 @@ Elenco dei file nel modulo `Geo` che presentano duplicati differenziati solo dal
 - `Modules/Geo/app/Filament/Widgets`: `ImprovedLocationMapWidget.wip`, `improvedlocationmapwidget.wip`
 - `Modules/Geo/app/Http/Livewire`: `Test.test`, `test.test`
 - `Modules/Geo/app/View/Components/Card`: `Place.json`, `place.json`
-- `Modules/Geo/docs`: `phpstan_fixes.md`, `phpstan_fixes.md`
-<<<<<<< .merge_file_ejxdUN
+- `Modules/Geo/docs`: `PHPSTAN_FIXES.md`, `phpstan_fixes.md`
 - `Modules/Geo/docs`: `PROJECT.md`, `project.md`
-<<<<<<< .merge_file_oYKSqu
 - `Modules/Geo/docs`: `ADVANCED_FEATURES.md`, `advanced_features.md`
 - `Modules/Geo/docs`: `MCP_SERVER_RECOMMENDED.md`, `mcp_server_recommended.md`
 - `Modules/Geo/docs`: `COMPREHENSIVE_GUIDE.md`, `comprehensive_guide.md`
@@ -40,17 +38,6 @@ Elenco dei file nel modulo `Geo` che presentano duplicati differenziati solo dal
 - `Modules/Geo/docs`: `ADVANCED_FEATURES.md`, `advanced_features.md`
 - `Modules/Geo/docs`: `MCP_SERVER_RECOMMENDED.md`, `mcp_server_recommended.md`
 - `Modules/Geo/docs`: `COMPREHENSIVE_GUIDE.md`, `comprehensive_guide.md`
-=======
-- `Modules/Geo/docs`: `advanced_features.md`, `advanced_features.md`
-- `Modules/Geo/docs`: `mcp_server_recommended.md`, `mcp_server_recommended.md`
-- `Modules/Geo/docs`: `comprehensive_guide.md`, `comprehensive_guide.md`
->>>>>>> .merge_file_vjA5Lg
-=======
-- `Modules/Geo/docs`: `PROJECT.md`, `project.md`
-- `Modules/Geo/docs`: `advanced_features.md`, `advanced_features.md`
-- `Modules/Geo/docs`: `mcp_server_recommended.md`, `mcp_server_recommended.md`
-- `Modules/Geo/docs`: `comprehensive_guide.md`, `comprehensive_guide.md`
->>>>>>> .merge_file_j2tsjS
 - `Modules/Geo/docs`: `TECHNICAL.md`, `technical.md`
 - `Modules/Geo/resources/css`: `MarkerCluster.Default.css`, `markercluster.default.css`
 - `Modules/Geo/resources/css`: `MarkerCluster.css`, `markercluster.css`

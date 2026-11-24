@@ -2,14 +2,8 @@
 qmd: "Index"
 issues: []
 discussions: []
-<<<<<<< .merge_file_cPCE1f
-<<<<<<< .merge_file_iWeiUy
 title: "lang — integrations"
 
-=======
->>>>>>> .merge_file_CB2b7v
-=======
->>>>>>> .merge_file_6lPnI0
 title: "Index"
 module: lang
 type: integration

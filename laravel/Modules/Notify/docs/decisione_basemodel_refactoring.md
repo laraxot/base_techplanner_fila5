@@ -15,19 +15,6 @@ discussions: []
 **Domanda**: Tutti i BaseModel devono estendere XotBaseModel e rimuovere metodi/parametri duplicati?  
 **Risposta**: **SÌ, MA CON ECCEZIONI DOCUMENTATE** ✅⚠️
 
-<<<<<<< .merge_file_0W950Q
-=======
----
-
-title: "decisione basemodel refactoring"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "decisione basemodel refactoring"
-issues: []
-discussions: []
->>>>>>> .merge_file_MHMT3Y
 ## 📊 Situazione Attuale (VERIFICATA)
 ### Stato dei 18 Moduli
 

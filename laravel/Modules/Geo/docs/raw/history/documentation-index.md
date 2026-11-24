@@ -194,27 +194,9 @@ Remove exclusions progressively:
 ## Module Documentation Links
 
 ### Core Modules
-<<<<<<< .merge_file_hXcrA4
-<<<<<<< .merge_file_cjCEr3
 - [Xot Module Documentation](docs/module-xot.md) ⚠️ *Incomplete - Syntax Errors*
 - [User Module Documentation](docs/module-user.md) ⚠️ *Incomplete - Type Issues*
 - [Lang Module Documentation](docs/module-lang.md) ❌ *Blocked - Dependencies*
-=======
-=======
->>>>>>> .merge_file_jS3KrM
-<<<<<<< .merge_file_NkU6jq
-- [Xot Module Documentation](module-xot.md) ⚠️ *Incomplete - Syntax Errors*
-- User Module Documentation ⚠️ *Incomplete - Type Issues*
-- [Lang Module Documentation](module-lang.md) ❌ *Blocked - Dependencies*
-=======
-- [Xot Module Documentation](docs/module-xot.md) ⚠️ *Incomplete - Syntax Errors*
-- [User Module Documentation](docs/module-user.md) ⚠️ *Incomplete - Type Issues*
-- [Lang Module Documentation](docs/module-lang.md) ❌ *Blocked - Dependencies*
->>>>>>> .merge_file_kjFih2
-<<<<<<< .merge_file_hXcrA4
->>>>>>> .merge_file_d5wnub
-=======
->>>>>>> .merge_file_jS3KrM
 
 ### Theme Documentation
 - [Theme Zero Documentation](docs/theme-zero.md) ⚠️ *Syntax Error*

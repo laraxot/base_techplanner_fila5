@@ -14,19 +14,6 @@ discussions: []
 **Status**: ✅ **RISOLTO** - Tutte le "cagate" sistemate
 **Approccio**: **DRY + KISS applicati correttamente**
 
-<<<<<<< .merge_file_r7mZZ9
-=======
----
-
-title: "dry violation"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dry violation"
-issues: []
-discussions: []
->>>>>>> .merge_file_3aUXMd
 ## 📋 Successo: "Fare GetSeasonalEmailLayoutAction e DetermineSeasonalLayoutPathAction era una cagata!"
 ### Problema Identificato e Risolto
 

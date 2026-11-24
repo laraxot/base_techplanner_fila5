@@ -5,12 +5,8 @@ status: active
 module: Notify
 scope: documentation
 bmad_version: 1.0
-<<<<<<< .merge_file_LhLfxM
 updated: 2026-11-23
 created: 2026-11-23
-=======
-updated: 2026-10-06
->>>>>>> .merge_file_M4kS7C
 ---
 
 # 📖 README - PHASE 1 EXECUTION

@@ -7,14 +7,7 @@ module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
-<<<<<<< .merge_file_F6NUrD
 updated: 2026-11-23
-=======
-updated: 2026-08-24
-<<<<<<< .merge_file_vFwWZ1
->>>>>>> .merge_file_R3bMeM
-=======
->>>>>>> .merge_file_YEa9bf
 ---
 
 # Pattern Architetturali per le Notifiche

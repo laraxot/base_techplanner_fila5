@@ -14,32 +14,6 @@ discussions: []
 Regole critiche del progetto Base Predict.
 Regole critiche del progetto Base Forecast.
 
-<<<<<<< .merge_file_yEWWnU
-=======
----
-<<<<<<< .merge_file_8X6l3P
-=======
-
-title: "qwen critical rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen critical rules"
-issues: []
-discussions: []
-## 🔴 REGOLA 1: FILAMENT WIDGETS FOR LISTS
->>>>>>> .merge_file_tsHwzA
-
-title: "qwen critical rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen critical rules"
-issues: []
-discussions: []
->>>>>>> .merge_file_cojruM
 ## 🔴 REGOLA 1: FILAMENT WIDGETS FOR LISTS
 ### Principio Core
 ### ❌ MAI Fare
@@ -142,13 +116,5 @@ namespace::context.collection.element.type
 
 - [Indice QWEN](./qwen-split-index.md)
 - [critical-rules.md](./critical-rules.md)
-<<<<<<< .merge_file_8X6l3P
-<<<<<<< .merge_file_yEWWnU
 - [QWEN.md originale](../../qwen.md)
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_cojruM
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_tsHwzA
 - [Index principale](./index.md)

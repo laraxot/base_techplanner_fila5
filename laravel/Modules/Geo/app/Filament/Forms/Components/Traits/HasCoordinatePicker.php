@@ -6,8 +6,9 @@ namespace Modules\Geo\Filament\Forms\Components\Traits;
 
 use Filament\Support\Components\Attributes\Exposed;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Http;
 use Livewire\Attributes\Renderless;
-use Modules\Geo\Filament\Forms\Components\CoordinatePickerHelpers;
+use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
 /**
  * Trait HasCoordinatePicker - Shared logic for geographic components.
@@ -53,8 +54,8 @@ trait HasCoordinatePicker
             $record = $component->getRecord();
             if ($record instanceof Model) {
                 $component->state([
-                    'latitude' => CoordinatePickerHelpers::normalizeCoordinate($record->getAttribute($component->getLatitudeColumn())),
-                    'longitude' => CoordinatePickerHelpers::normalizeCoordinate($record->getAttribute($component->getLongitudeColumn())),
+                    'latitude' => self::normalizeCoordinate($record->getAttribute($component->getLatitudeColumn())),
+                    'longitude' => self::normalizeCoordinate($record->getAttribute($component->getLongitudeColumn())),
                 ]);
 
                 return;
@@ -177,8 +178,8 @@ trait HasCoordinatePicker
     public function getMapDefaultView(): array
     {
         $view = config('geo.config.map.default_view');
-        $lat = \is_array($view) ? CoordinatePickerHelpers::normalizeCoordinate($view['lat'] ?? null) : null;
-        $lng = \is_array($view) ? CoordinatePickerHelpers::normalizeCoordinate($view['lng'] ?? null) : null;
+        $lat = \is_array($view) ? self::normalizeCoordinate($view['lat'] ?? null) : null;
+        $lng = \is_array($view) ? self::normalizeCoordinate($view['lng'] ?? null) : null;
         $rawZoom = \is_array($view) ? ($view['zoom'] ?? null) : null;
         $zoom = is_numeric($rawZoom) ? (float) $rawZoom : null;
 
@@ -212,7 +213,7 @@ trait HasCoordinatePicker
             return null;
         }
 
-        return CoordinatePickerHelpers::normalizeCoordinate($state['latitude'] ?? null);
+        return self::normalizeCoordinate($state['latitude'] ?? null);
     }
 
     public function getLongitude(): ?float
@@ -222,12 +223,12 @@ trait HasCoordinatePicker
             return null;
         }
 
-        return CoordinatePickerHelpers::normalizeCoordinate($state['longitude'] ?? null);
+        return self::normalizeCoordinate($state['longitude'] ?? null);
     }
 
     /**
-     * Cerca indirizzi tramite Nominatim lato server (rate limit e User-Agent rispettati).
-     * Logica unica in {@see CoordinatePickerHelpers::searchAddress()}, condivisa con XotBaseCoordinateField.
+     * Searches for addresses matching the query string via Nominatim.
+     * Server-side to respect rate-limiting and User-Agent policies.
      *
      * @return list<array<string, mixed>>
      */
@@ -235,11 +236,57 @@ trait HasCoordinatePicker
     #[Renderless]
     public function searchAddress(string $query): array
     {
-        return CoordinatePickerHelpers::searchAddress($query);
+        if (\strlen(trim($query)) < 3) {
+            return [];
+        }
+
+        try {
+            $appName = SafeStringCastAction::cast(config('app.name', 'Laraxot'));
+            $appUrl = SafeStringCastAction::cast(config('app.url', 'localhost'));
+            $response = Http::withHeaders([
+                'User-Agent' => \sprintf('%s/1.0 (%s)', $appName, $appUrl),
+            ])
+                ->timeout(10)
+                ->get('https://nominatim.openstreetmap.org/search', [
+                    'q' => $query,
+                    'format' => 'json',
+                    'addressdetails' => 1,
+                    'limit' => 5,
+                ]);
+
+            if (! $response->successful()) {
+                return [];
+            }
+
+            $data = $response->json();
+
+            if (! \is_array($data)) {
+                return [];
+            }
+
+            $filtered = array_values(array_filter($data, static fn (mixed $item): bool => \is_array($item)));
+
+            /** @var list<array<string, mixed>> $results */
+            $results = [];
+            foreach ($filtered as $item) {
+                if (! \is_array($item)) {
+                    continue;
+                }
+
+                /** @var array<string, mixed> $row */
+                $row = $item;
+                $results[] = $row;
+            }
+
+            return $results;
+        } catch (\Throwable) {
+            return [];
+        }
     }
 
     /**
-     * Geocodifica inversa delle coordinate in un indirizzo strutturato.
+     * Reverse geocodes coordinates to a structured address.
+     * Returns a rich array for better form integration.
      *
      * @return array<string, mixed>|null
      */
@@ -247,7 +294,86 @@ trait HasCoordinatePicker
     #[Renderless]
     public function reverseGeocode(float $latitude, float $longitude): ?array
     {
-        return CoordinatePickerHelpers::reverseGeocode($latitude, $longitude);
+        try {
+            $response = Http::withHeaders([
+                'User-Agent' => 'Laraxot/1.0',
+            ])
+                ->get('https://nominatim.openstreetmap.org/reverse', [
+                    'lat' => $latitude,
+                    'lon' => $longitude,
+                    'format' => 'jsonv2',
+                    'addressdetails' => 1,
+                    'zoom' => 18,
+                ]);
+
+            if (! $response->successful()) {
+                return null;
+            }
+
+            $data = $response->json();
+            if (! \is_array($data)) {
+                return null;
+            }
+
+            /** @var array<string, mixed> $address */
+            $address = $data['address'] ?? [];
+            if (! \is_array($address)) {
+                $address = [];
+            }
+
+            return [
+                'display_name' => \is_string($data['display_name'] ?? null) ? $data['display_name'] : '',
+                'address' => \is_string($data['display_name'] ?? null) ? $data['display_name'] : '',
+                'provider' => 'nominatim',
+                'place_id' => $data['place_id'] ?? null,
+                'osm_type' => $data['osm_type'] ?? null,
+                'osm_id' => $data['osm_id'] ?? null,
+                'licence' => $data['licence'] ?? null,
+                'importance' => is_numeric($data['importance'] ?? null) ? (float) $data['importance'] : null,
+                'type' => $data['type'] ?? null,
+                'class' => $data['category'] ?? $data['class'] ?? null,
+                'boundingbox' => isset($data['boundingbox']) && \is_array($data['boundingbox']) ? $data['boundingbox'] : null,
+                'street' => self::firstString($address, ['road', 'pedestrian', 'footway', 'path', 'residential', 'highway']),
+                'street_number' => self::firstString($address, ['house_number', 'street_number']),
+                'zip' => self::firstString($address, ['postcode']),
+                'postcode' => self::firstString($address, ['postcode']),
+                'city' => self::firstString($address, ['city', 'town', 'village', 'municipality', 'hamlet', 'county']),
+                'suburb' => self::firstString($address, ['suburb', 'neighbourhood', 'quarter', 'city_district']),
+                'province' => self::firstString($address, ['province', 'county', 'state_district']),
+                'state' => self::firstString($address, ['state', 'region']),
+                'country' => self::firstString($address, ['country']),
+                'country_code' => self::firstString($address, ['country_code']),
+                'structured' => [
+                    'road' => self::firstString($address, ['road', 'pedestrian', 'footway', 'path', 'residential', 'highway']),
+                    'house_number' => self::firstString($address, ['house_number', 'street_number']),
+                    'city' => self::firstString($address, ['city', 'town', 'village', 'municipality', 'county']),
+                    'postcode' => self::firstString($address, ['postcode']),
+                    'state' => self::firstString($address, ['state', 'region']),
+                    'country' => self::firstString($address, ['country']),
+                    'city_district' => self::firstString($address, ['city_district', 'suburb', 'neighbourhood', 'quarter']),
+                ],
+                'address_details' => $address,
+                'raw' => $data,
+            ];
+        } catch (\Throwable) {
+            return null;
+        }
+    }
+
+    /**
+     * @param  array<string, mixed>  $data
+     * @param  array<int, string>  $keys
+     */
+    private static function firstString(array $data, array $keys): string
+    {
+        foreach ($keys as $key) {
+            $value = $data[$key] ?? null;
+            if (\is_string($value) && trim($value) !== '') {
+                return $value;
+            }
+        }
+
+        return '';
     }
 
     /**
@@ -256,6 +382,21 @@ trait HasCoordinatePicker
      */
     public static function extractCoordinates(array $data, string $field = 'coordinates', string $latColumn = 'latitude', string $lngColumn = 'longitude'): array
     {
-        return CoordinatePickerHelpers::extractCoordinates($data, $field, $latColumn, $lngColumn);
+        $coordinates = $data[$field] ?? null;
+        if (\is_array($coordinates)) {
+            $data[$latColumn] = self::normalizeCoordinate($coordinates['latitude'] ?? null);
+            $data[$lngColumn] = self::normalizeCoordinate($coordinates['longitude'] ?? null);
+        }
+
+        return $data;
+    }
+
+    private static function normalizeCoordinate(mixed $value): ?float
+    {
+        if ($value === null || $value === '') {
+            return null;
+        }
+
+        return is_numeric($value) ? (float) $value : null;
     }
 }

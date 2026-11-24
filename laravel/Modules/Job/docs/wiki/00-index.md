@@ -38,15 +38,9 @@ related:
 - [Riferimento composer packages](../../../../bashscripts/ai/wiki/memories/composer-packages-reference.md) - Nessuna dipendenza diretta; usa Xot, spipu/html2pdf (via Xot)
 
 ## 🔗 **Moduli Correlati**
-<<<<<<< .merge_file_uzzHMt
-<<<<<<< .merge_file_XDhewo
 - [Xot](../../xot/docs/readme.md) - Base framework e Page classes.
 - [Activity](../../activity/docs/readme.md) - Tracciamento log esecuzione.
 - [Notify](../../notify/docs/readme.md) - Notifiche fallimento job.
-=======
->>>>>>> .merge_file_q6e3Dp
-=======
->>>>>>> .merge_file_1mCYTx
 - [Xot](../../xot/docs/README.md) - Base framework e Page classes.
 - [Activity](../../activity/docs/README.md) - Tracciamento log esecuzione.
 - [Notify](../../notify/docs/README.md) - Notifiche fallimento job.

@@ -16,44 +16,6 @@ discussions: []
 **Status**: ✅ CRITICAL RULE  
 **Priority**: BLOCKER
 
-<<<<<<< .merge_file_k3GjO6
-=======
----
-<<<<<<< .merge_file_QY5Oo3
-=======
-
-title: "xotbase table method"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase table method"
-issues: []
-discussions: []
-## 🎯 The Rule
-
-> **MAI** definire il metodo `table()` in classi che estendono `XotBaseTableWidget`.
-> Il metodo `table()` è **GIÀ DEFINITO** in `XotBaseTableWidget`.
-
-**Example**:
-```php
-// ✅ CORRETTO
-class OutcomesTableWidget extends XotBaseTableWidget
-{
-    // NO table() method
-    // Configuration ereditata da XotBaseTableWidget
-}
->>>>>>> .merge_file_y64D9H
-
-title: "xotbase table method"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "xotbase table method"
-issues: []
-discussions: []
->>>>>>> .merge_file_kPAEGE
 ## 🎯 The Rule
 
 ## 🧠 The WHY
@@ -290,14 +252,6 @@ class MyWidget extends XotBaseTableWidget
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_QY5Oo3
-<<<<<<< .merge_file_k3GjO6
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_kPAEGE
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_y64D9H
 - **[Rules Index](00-index.md)** - All rules
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - Why extend XotBase
 - **[Bash Commands Auto-Allow](bash-commands-auto-allow.md)** - Bash permissions

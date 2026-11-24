@@ -40,37 +40,6 @@ npm run build
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
 
-<<<<<<< .merge_file_aWy85m
-=======
----
-<<<<<<< .merge_file_lyKIiu
-=======
-
-title: "claude architecture rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "claude architecture rules"
-issues: []
-discussions: []
-## 2. BelongsToMany - CRITICAL
-
-**NEVER use `$this->belongsToMany()` for many-to-many. ALWAYS use `$this->belongsToManyX()`.**
-
-- `belongsToManyX` è nel trait `RelationX` (XotBaseModel)
-- Sintassi: `$this->belongsToManyX(Related::class)` oppure con nome tabella pivot
->>>>>>> .merge_file_u6YCtJ
-
-title: "claude architecture rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "claude architecture rules"
-issues: []
-discussions: []
->>>>>>> .merge_file_b8qY6V
 ## 2. BelongsToMany - CRITICAL
 
 ## 3. Database Config - CRITICAL

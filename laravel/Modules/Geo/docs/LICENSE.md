@@ -3,14 +3,7 @@ title: "License"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_rmeExT
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_JLBpIF
->>>>>>> .merge_file_HQtNw3
-=======
->>>>>>> .merge_file_GV2bJg
 qmd: "License"
 issues: []
 discussions: []

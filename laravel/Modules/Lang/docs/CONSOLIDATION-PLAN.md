@@ -91,22 +91,17 @@ cyclomatic-complexity.md
 dependency-intelligence.md
 docs-health.md
 coverage.md
-redundancy_analysis.md
+REDUNDANCY_ANALYSIS.md
 
 # Index duplicates (consolidate into README.md)
+00-INDEX.md
 00-index.md
-<<<<<<< .merge_file_6lxlF1
-<<<<<<< .merge_file_DjFRGu
 INDEX.md
 
 redundancy_analysis.md
 
 # Index duplicates (consolidate into README.md)
 00-index.md
-=======
->>>>>>> .merge_file_oqhBZc
-=======
->>>>>>> .merge_file_THN6fH
 00-index.md
 index.md
 ```
@@ -153,15 +148,13 @@ Create subdirs and move strategy/research content (not essential to module root)
 mkdir -p wiki/strategies wiki/how-to wiki/overviews wiki/rules
 
 # Move strategy/research
-mv product_launch_plan.md wiki/strategies/
+mv PRODUCT_LAUNCH_PLAN.md wiki/strategies/
 mv TRANSLATION_STRATEGIES.md wiki/strategies/
-mv user_research.md wiki/strategies/
-mv performance-optimization.md wiki/overviews/
-mv sprint_planning.md wiki/strategies/
+mv USER_RESEARCH.md wiki/strategies/
+mv PERFORMANCE-OPTIMIZATION.md wiki/overviews/
+mv SPRINT_PLANNING.md wiki/strategies/
 
 # Move how-to guides
-<<<<<<< .merge_file_6lxlF1
-<<<<<<< .merge_file_DjFRGu
 mv QMD-SETUP.md wiki/how-to/
 
 mv product_launch_plan.md wiki/strategies/
@@ -171,10 +164,6 @@ mv performance-optimization.md wiki/overviews/
 mv sprint_planning.md wiki/strategies/
 
 # Move how-to guides
-=======
->>>>>>> .merge_file_oqhBZc
-=======
->>>>>>> .merge_file_THN6fH
 mv qmd-setup.md wiki/how-to/
 mv QUICK_REFERENCE.md wiki/how-to/
 mv best-practices.md wiki/how-to/
@@ -192,14 +181,8 @@ mv database-model-coverage.md wiki/overviews/
 mv schema.md wiki/overviews/
 
 # Move rules/patterns
-<<<<<<< .merge_file_6lxlF1
-<<<<<<< .merge_file_DjFRGu
 mv ON-DEMAND-PATTERN.md wiki/rules/
 
-=======
->>>>>>> .merge_file_oqhBZc
-=======
->>>>>>> .merge_file_THN6fH
 mv on-demand-pattern.md wiki/rules/
 mv MCAMARA_IMPLEMENTATION_GUIDE.md wiki/overviews/
 ```
@@ -213,14 +196,8 @@ laravel/Modules/Lang/docs/
 ├── README.md                         # Entry point (anchor for all docs)
 ├── PHPSTAN_L10.md                   # Technical status & fixes
 ├── MIGRATIONS.md                    # Schema/migrations
-<<<<<<< .merge_file_6lxlF1
-<<<<<<< .merge_file_DjFRGu
 ├── PRODUCT_STRATEGY.md              # Product vision (optional: move to wiki/)
 
-=======
->>>>>>> .merge_file_oqhBZc
-=======
->>>>>>> .merge_file_THN6fH
 ├── product_strategy.md              # Product vision (optional: move to wiki/)
 ├── LOCALE_MANAGEMENT.md             # Locale management basics
 │
@@ -301,17 +278,9 @@ rm -f \
   dependency-intelligence.md \
   docs-health.md \
   coverage.md \
-<<<<<<< .merge_file_6lxlF1
-<<<<<<< .merge_file_DjFRGu
   REDUNDANCY_ANALYSIS.md \
 
 redundancy_analysis.md \
-=======
-  redundancy_analysis.md \
->>>>>>> .merge_file_oqhBZc
-=======
-  redundancy_analysis.md \
->>>>>>> .merge_file_THN6fH
   00-index.md \
   index.md
 ---
@@ -319,16 +288,13 @@ redundancy_analysis.md \
   00-index.md \
   index.md
 ---
+  00-INDEX.md \
   00-index.md \
-  00-index.md \
-  index.md
-<<<<<<< .merge_file_6lxlF1
+  INDEX.md
 
 00-index.md \
   00-index.md \
   index.md
-=======
->>>>>>> .merge_file_THN6fH
 
 # 3. Delete conflict-resolution snake_case variants
 rm -f conflict_resolution_*.md
@@ -340,15 +306,13 @@ rm -f lang_service_provider.md lang_service_provider_improvements.md
 mkdir -p wiki/strategies wiki/how-to wiki/overviews wiki/rules
 
 # 6. Move strategy/research files
-mv product_launch_plan.md wiki/strategies/ 2>/dev/null || true
+mv PRODUCT_LAUNCH_PLAN.md wiki/strategies/ 2>/dev/null || true
 mv TRANSLATION_STRATEGIES.md wiki/strategies/ 2>/dev/null || true
-mv user_research.md wiki/strategies/ 2>/dev/null || true
-mv performance-optimization.md wiki/overviews/ 2>/dev/null || true
-mv sprint_planning.md wiki/strategies/ 2>/dev/null || true
+mv USER_RESEARCH.md wiki/strategies/ 2>/dev/null || true
+mv PERFORMANCE-OPTIMIZATION.md wiki/overviews/ 2>/dev/null || true
+mv SPRINT_PLANNING.md wiki/strategies/ 2>/dev/null || true
 
 # 7. Move how-to guides
-<<<<<<< .merge_file_6lxlF1
-<<<<<<< .merge_file_DjFRGu
 mv QMD-SETUP.md wiki/how-to/ 2>/dev/null || true
 
 mv product_launch_plan.md wiki/strategies/ 2>/dev/null || true
@@ -358,10 +322,6 @@ mv performance-optimization.md wiki/overviews/ 2>/dev/null || true
 mv sprint_planning.md wiki/strategies/ 2>/dev/null || true
 
 # 7. Move how-to guides
-=======
->>>>>>> .merge_file_oqhBZc
-=======
->>>>>>> .merge_file_THN6fH
 mv qmd-setup.md wiki/how-to/ 2>/dev/null || true
 mv QUICK_REFERENCE.md wiki/how-to/ 2>/dev/null || true
 mv best-practices.md wiki/how-to/ 2>/dev/null || true
@@ -380,12 +340,9 @@ mv schema.md wiki/overviews/ 2>/dev/null || true
 mv MCAMARA_IMPLEMENTATION_GUIDE.md wiki/overviews/ 2>/dev/null || true
 
 # 9. Move rules
-mv on-demand-pattern.md wiki/rules/ 2>/dev/null || true
-<<<<<<< .merge_file_6lxlF1
+mv ON-DEMAND-PATTERN.md wiki/rules/ 2>/dev/null || true
 
 mv on-demand-pattern.md wiki/rules/ 2>/dev/null || true
-=======
->>>>>>> .merge_file_THN6fH
 
 # 10. Merge PHPSTAN files (manual step — see section below)
 # (Requires reading PHPSTAN-FIXES.md + PHPSTAN_STATUS.md into PHPSTAN_L10.md)

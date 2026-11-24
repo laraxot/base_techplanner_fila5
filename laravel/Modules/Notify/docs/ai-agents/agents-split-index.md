@@ -30,18 +30,8 @@ discussions: []
 
 ## 🔗 Collegamento all'Originale
 
-<<<<<<< .merge_file_pe1W2h
-<<<<<<< .merge_file_rRCVUh
 - [AGENTS.md originale](../../agents.md) - File completo (deprecato)
 - [agents.md originale](../../agents.md) - File completo (deprecato)
-=======
-- [AGENTS.md originale](../../AGENTS.md) - File completo (deprecato)
-- [AGENTS.md originale](../../AGENTS.md) - File completo (deprecato)
->>>>>>> .merge_file_sXtdjs
-=======
-- [AGENTS.md originale](../../AGENTS.md) - File completo (deprecato)
-- [AGENTS.md originale](../../AGENTS.md) - File completo (deprecato)
->>>>>>> .merge_file_ADtkEN
 - [Index principale](./index.md) - Torna all'indice
 
 ## 📝 Note

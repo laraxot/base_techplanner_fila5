@@ -7,13 +7,13 @@ declare(strict_types=1);
 // Canon: Modules/User/docs/wiki — domain i18n only.
 // File: lang/en/user/navigation.php
 return [
-    'name' => 'Users',
-    'plural' => 'Users',
+    'name' => 'Utenti',
+    'plural' => 'Utenti',
     'group' => [
-        'name' => 'User management',
-        'description' => 'Management of users and their permissions',
+        'name' => 'Gestione Utenti',
+        'description' => 'Gestione degli utenti e dei loro permessi',
     ],
-    'label' => 'Users',
+    'label' => 'Utenti',
     'sort' => '26',
     'icon' => 'user-main',
 ];

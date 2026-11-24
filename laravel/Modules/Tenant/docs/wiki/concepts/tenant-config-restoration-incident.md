@@ -13,7 +13,7 @@ related:
   - ../../../../../../docs/wiki/concepts/sacred-artifacts-never-delete.md
   - ../../../../../../docs/project/incidents/tenant-config-accidental-delete.md
   - ../../../../../../docs/project/incidents/config-directory-mismatch.md
-  - ../configurationdistribution.md
+  - ../ConfigurationDistribution.md
   - ../../../app/Actions/GetTenantNameAction.php
 ---
 

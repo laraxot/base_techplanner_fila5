@@ -382,13 +382,7 @@ npm run build
 - [MASTER_IMPLEMENTATION_PLAN.md](../../laravel/Themes/Sixteen/docs/design-comuni/MASTER_IMPLEMENTATION_PLAN.md)
 - [ARCHITECTURAL_DECISIONS.md](../../laravel/Themes/Sixteen/docs/design-comuni/ARCHITECTURAL_DECISIONS.md)
 - [HTML_PARITY_VERIFICATION_REPORT.md](../../laravel/Themes/Sixteen/docs/design-comuni/HTML_PARITY_VERIFICATION_REPORT.md)
-<<<<<<< .merge_file_0OJFtK
-<<<<<<< .merge_file_MzFmIL
 - [QWEN.md](../../QWEN.md)
-=======
->>>>>>> .merge_file_YOb5d2
-=======
->>>>>>> .merge_file_YQTyfn
 - [qwen.md](../../qwen.md)
 
 ---

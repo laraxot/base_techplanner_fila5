@@ -3,15 +3,7 @@ title: "analisiettagliata 3"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_sfPDYw
-<<<<<<< .merge_file_ZwA5dQ
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_mGq2T9
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_EHTBIR
 qmd: "analisiettagliata 3"
 issues: []
 discussions: []

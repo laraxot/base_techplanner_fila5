@@ -9,16 +9,7 @@ qmd: "SentimentAction AnalyzeBasicSentimentAction AnalyzeTransformersSentimentAc
 issues: []
 discussions: []
 related:
-<<<<<<< .merge_file_sMF4vr
-<<<<<<< .merge_file_R5KJCu
-<<<<<<< .merge_file_8YzHnK
   - ./stories/2026-10-08-services-to-actions-ai.story.md
-=======
->>>>>>> .merge_file_nLFQ1D
-=======
->>>>>>> .merge_file_yEx68r
-=======
->>>>>>> .merge_file_65ps3p
   - ./stories/services-to-actions-ai.story.md
   - ./PHILOSOPHY.md
 ---
@@ -52,19 +43,7 @@ contratto `Contracts/SentimentAnalyzer` (`analyze(string): array`).
   stesse; nessun binding nel container (`AIServiceProvider` non li registra), nessun test.
 - **Duplicati, e vecchi**: stessa logica delle due Action, ma la basic non gestiva le negazioni
   («not a good product» contava come positivo). `SentimentAction` usa gia' le Action dal passaggio
-<<<<<<< .merge_file_sMF4vr
-<<<<<<< .merge_file_R5KJCu
-<<<<<<< .merge_file_8YzHnK
   services→actions (story `2026-10-08-services-to-actions-ai`, sezione «Aperto»).
-=======
-  services→actions (story `services-to-actions-ai`, sezione «Aperto»).
->>>>>>> .merge_file_nLFQ1D
-=======
-  services→actions (story `services-to-actions-ai`, sezione «Aperto»).
->>>>>>> .merge_file_yEx68r
-=======
-  services→actions (story `services-to-actions-ai`, sezione «Aperto»).
->>>>>>> .merge_file_65ps3p
 - **Non adattatori**: un adattatore serve se qualcuno dipende dal contratto. Nessuno ne dipendeva,
   quindi spostarli fuori da `Actions/` avrebbe conservato codice morto in un posto diverso.
 - Il contratto, rimasto senza implementazioni ne' consumatori, e' stato tolto con loro.

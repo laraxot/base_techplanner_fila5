@@ -12,8 +12,6 @@ declare(strict_types=1);
 
 return [
     // classi in un namespace Services (regola No Services, DCP-270); NoServicesTest le vede come cartelle
-<<<<<<< .merge_file_lmNESd
-<<<<<<< .merge_file_wodw1I
     //
     // Vuota dal 2026-11-20 (base_quaeris_fila5#247): logica in
     // `Actions/Schedule/GetActiveSchedulesAction` +
@@ -23,14 +21,4 @@ return [
     // `Actions/Schedule/ClearScheduleCacheAction`. Non rientra in debito: non e'
     // business logic attiva.
     'services' => [],
-=======
-    'services' => [
-        'Modules\Job\Services\ScheduleService',
-    ],
->>>>>>> .merge_file_y4rWqm
-=======
-    'services' => [
-        'Modules\Job\Services\ScheduleService',
-    ],
->>>>>>> .merge_file_Ov0KuE
 ];

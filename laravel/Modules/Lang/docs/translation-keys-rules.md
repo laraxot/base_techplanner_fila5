@@ -14,23 +14,6 @@ related:
 # Regole per le Chiavi di Traduzione
 
 ## Collegamenti correlati
-<<<<<<< .merge_file_1P3PuU
-=======
-- [Documentazione centrale](README.md)
-- [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
-- [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
-- [Documentazione Lang](README.md)
-- [Documentazione centrale](./README.md)
-- [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
-- [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
-- [Documentazione Lang](README.md)
-- [Documentazione centrale](./README.md)
-- [Collegamenti documentazione](./collegamenti-documentazione.md)
-- [Implementazione Auth Pages](auth_pages_implementation.md)
-- [Regole Traduzioni User](translation_keys_rules.md)
->>>>>>> .merge_file_EMuqvG
 - [Documentazione Lang](./README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
@@ -258,15 +241,9 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_O9f8uE
-<<<<<<< .merge_file_1P3PuU
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
 
-=======
->>>>>>> .merge_file_EMuqvG
-=======
->>>>>>> .merge_file_agfNkU
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
 - [Documentazione Lang](README.md)
@@ -489,15 +466,9 @@ Seguire queste regole per le chiavi di traduzione è fondamentale per garantire 
 ## Collegamenti correlati
 - [Documentazione centrale](README.md)
 - [Collegamenti documentazione](./collegamenti-documentazione.md)
-<<<<<<< .merge_file_O9f8uE
-<<<<<<< .merge_file_1P3PuU
 - [Implementazione Auth Pages](../../user/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../user/docs/translation_keys_rules.md)
 
-=======
->>>>>>> .merge_file_EMuqvG
-=======
->>>>>>> .merge_file_agfNkU
 - [Implementazione Auth Pages](../../User/docs/auth_pages_implementation.md)
 - [Regole Traduzioni User](../../User/docs/translation_keys_rules.md)
 - [Documentazione Lang](README.md)

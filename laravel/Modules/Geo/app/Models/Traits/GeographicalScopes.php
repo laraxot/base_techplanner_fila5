@@ -5,47 +5,51 @@ declare(strict_types=1);
 namespace Modules\Geo\Models\Traits;
 
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Query\Expression;
 
+/** @phpstan-ignore trait.unused */
 trait GeographicalScopes
 {
     /**
-     * Scope per calcolare la distanza (km, Haversine) da un punto: espone la colonna `distance`.
+     * Scope per calcolare la distanza tra due punti.
      *
-     * `*` si aggiunge solo se la query non ha gia' colonne: `*, expr` dopo altre colonne e' un syntax error
-     * su MariaDB (stessa regola di GeoTrait::scopeWithDistance).
-     *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
+     * @phpstan-ignore-next-line
      */
     public function scopeWithDistance(Builder $query, float $latitude, float $longitude): Builder
     {
-        $prefix = empty($query->getQuery()->columns) ? '*, ' : '';
-
-        return $query->selectRaw(
-            $prefix.$this->distanceSql().' AS distance',
-            [$latitude, $longitude, $latitude],
-        );
+        return $query->select('*', $this->getDistanceExpression($latitude, $longitude, 'distance'));
     }
 
     /**
-     * Scope per ordinare i risultati per distanza da un punto.
+     * Scope per ordinare i risultati per distanza.
      *
-     * @param  Builder<static>  $query
-     * @return Builder<static>
+     * @phpstan-ignore-next-line
      */
     public function scopeOrderByDistance(Builder $query, float $latitude, float $longitude): Builder
     {
-        return $query->orderByRaw($this->distanceSql(), [$latitude, $longitude, $latitude]);
+        return $query->orderBy($this->getDistanceExpression($latitude, $longitude));
     }
 
-    /**
-     * Formula di Haversine con tre segnaposto (latitudine, longitudine, latitudine): i valori vanno
-     * sempre passati come binding, mai interpolati nel testo SQL.
-     *
-     * @return literal-string
-     */
-    protected function distanceSql(): string
-    {
-        return '6371 * acos(cos(radians(?)) * cos(radians(latitude)) * cos(radians(longitude) - radians(?)) + sin(radians(?)) * sin(radians(latitude)))';
+    /** @phpstan-ignore-next-line */
+    public function getDistanceExpression(
+        float $latitude,
+        float $longitude,
+        ?string $alias = null,
+    ): Expression|\Illuminate\Contracts\Database\Query\Expression {
+        $sql = "
+            (6371 * acos(
+                cos(radians({$latitude})) *
+                cos(radians(latitude)) *
+                cos(radians(longitude) - radians({$longitude})) +
+                sin(radians({$latitude})) *
+                sin(radians(latitude))
+            ))
+        ";
+        if (null !== $alias) {
+            $sql .= " AS {$alias}";
+        }
+
+        // @phpstan-ignore-next-line
+        return new Expression($sql);
     }
 }

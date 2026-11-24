@@ -45,14 +45,11 @@ related:
 - 🗑️ **[Cleanup Plan](./docs-naming-convention-fix.md)** - Rimozione dei 260+ file obsoleti.
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../ui/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-<<<<<<< .merge_file_JdcZj6
+- [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
 
 - [Xot](../../xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-=======
->>>>>>> .merge_file_RtouZq
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -85,12 +82,9 @@ related:
 ## 🔗 **Moduli Correlati**
 - [Xot](../../Xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../UI/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-- [AGENTS.md](../../../../AGENTS.md) - Project guidelines
-<<<<<<< .merge_file_JdcZj6
+- [agents.md](../../../../agents.md) - Project guidelines
 
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
-=======
->>>>>>> .merge_file_RtouZq
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
@@ -149,14 +143,11 @@ related:
 - 📁 **[Path canonico migrazioni](./wiki/concepts/migration-path-canonical.md)** — solo `database/migrations/`; mai `Migrations/` annidata.
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
-- [UI](../../ui/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-<<<<<<< .merge_file_JdcZj6
+- [Xot](../../xot/docs/readme.md) - Base framework e classi `XotBaseChartWidget`.
+- [UI](../../ui/docs/readme.md) - Componenti Blade e Filament che consumano le traduzioni.
 
 - [Xot](../../xot/docs/README.md) - Base framework e classi `XotBaseChartWidget`.
 - [UI](../../ui/docs/README.md) - Componenti Blade e Filament che consumano le traduzioni.
-=======
->>>>>>> .merge_file_RtouZq
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

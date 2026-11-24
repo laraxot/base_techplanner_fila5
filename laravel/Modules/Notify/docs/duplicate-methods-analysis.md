@@ -62,19 +62,6 @@ public function linkable(): void
 
 **Procedere con refactoring** - Alta confidenza e bassa complessità rendono questa ottimizzazione sicura.
 
-<<<<<<< .merge_file_Wr6Saw
-=======
----
-
-title: "duplicate methods analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "duplicate methods analysis"
-issues: []
-discussions: []
->>>>>>> .merge_file_nGuqgN
 ### 2. Metodo: `make`
 #### 📊 Analisi Refactoring
 ##### ✅ Vantaggi

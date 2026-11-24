@@ -24,14 +24,6 @@ Ogni fix o nuova feature deve preferire componenti riusabili, documentazione can
 - prima estrarre il pattern riusabile, poi applicarlo alla pagina specifica
 - ogni cartella documentale significativa deve avere `00-index.md`
 - ogni documento deve linkare il proprio `00-index.md` con percorso relativo
-<<<<<<< .merge_file_zGy8Nw
-<<<<<<< .merge_file_5t42pc
-=======
-- modulo e tema aggiornano i rispettivi `docs/00-index.md` quando si tocca il loro perimetro
->>>>>>> .merge_file_ruT8Rr
-=======
-- modulo e tema aggiornano i rispettivi `docs/00-index.md` quando si tocca il loro perimetro
->>>>>>> .merge_file_jYSSU0
 - modulo e tema aggiornano i rispettivi `docs/00-index.md` quando si tocca il loro perimetro
 - `AGENTS.md`, `CLAUDE.md`, `qwen.md` devono puntare a documenti canonici, non duplicarne il contenuto
 

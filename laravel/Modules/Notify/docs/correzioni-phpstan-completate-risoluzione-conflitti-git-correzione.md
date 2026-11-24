@@ -169,10 +169,6 @@ Durante la risoluzione:
 ## Collegamenti
 
 - [Git Conflicts Guide](../../Geo/docs_project/git-conflicts-resolution-guide.md)
-<<<<<<< .merge_file_1Rpbf0
-=======
-- [Git Conflicts Guide](../../Geo/docs_project/git-conflicts-resolution-guide.md)
->>>>>>> .merge_file_GRVSfq
 - [Notify Best Practices](best-practices.md)
 - [PHPStan Configuration](../../phpstan.neon)
 - [PHPStan User Guide](https://phpstan.org/user-guide/getting-started)

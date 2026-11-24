@@ -3,14 +3,7 @@ title: "01 GSD Workflow"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_zf6g8J
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_4Qy3Ax
->>>>>>> .merge_file_aKMvNr
-=======
->>>>>>> .merge_file_ucAZFe
 qmd: "01 GSD Workflow"
 issues: []
 discussions: []
@@ -18,54 +11,9 @@ discussions: []
 
 # 🚀 GSD Workflow (Get Shit Done)
 
-<<<<<<< .merge_file_4Qy3Ax
-<<<<<<< .merge_file_zf6g8J
 **Part of**: [00-INDEX.md](00-index.md) — AI Agents Coordination  
 **Related**: [02-BMAD-WORKFLOW.md](02-bmad-workflow.md) — BMAD Method
 
-=======
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [02-bmad-workflow.md](02-bmad-workflow.md) — BMAD Method
-=======
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [02-bmad-workflow.md](02-bmad-workflow.md) — BMAD Method
-
----
-
-title: "01 GSD WORKFLOW"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "01 GSD WORKFLOW"
-issues: []
-discussions: []
-## 📋 Overview
-
-GSD is a spec-driven development system for AI coding agents.
-
-**Problem Solved**:
-- **Context Rot**: Quality degradation when AI fills context window
-- **Inconsistent Vibecoding**: Garbage code on large scale
-
-**Solution**:
-- Context engineering layer
-- Meta-prompting with XML formatting
-- Multi-agent orchestration
-- Atomic Git commits
->>>>>>> .merge_file_ucAZFe
-
----
-
-title: "01 GSD WORKFLOW"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "01 GSD WORKFLOW"
-issues: []
-discussions: []
->>>>>>> .merge_file_aKMvNr
 ## 📋 Overview
 
 ## 🔧 Installation

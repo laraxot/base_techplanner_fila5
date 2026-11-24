@@ -4,33 +4,19 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Job
-<<<<<<< .merge_file_iKfqSi
-<<<<<<< .merge_file_9IdMBk
 <<<<<<< .merge_file_1gpINJ
 qmd: "audit BMAD Job source-first qualità"
 =======
-=======
->>>>>>> .merge_file_CjSwdj
-=======
->>>>>>> .merge_file_eb2Pm8
 qmd: "audit BMAD Job sintesi gate P0 policy create payload scheduler non eseguito Livewire legacy widget senza guard"
 related:
   - ./audits/job-audit.md
   - ./piano-miglioramento.md
   - ../ecc/job-ecc-audit.md
-<<<<<<< .merge_file_iKfqSi
-<<<<<<< .merge_file_9IdMBk
 >>>>>>> .merge_file_v2fnEk
-=======
->>>>>>> .merge_file_CjSwdj
-=======
->>>>>>> .merge_file_eb2Pm8
 ---
 
 # Audit BMAD — Job
 
-<<<<<<< .merge_file_iKfqSi
-<<<<<<< .merge_file_9IdMBk
 <<<<<<< .merge_file_1gpINJ
 SSoT dettagliata: [audits/job-audit.md](./audits/job-audit.md)
 =======
@@ -38,30 +24,12 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 
 **Scopo in una frase:** Job rende visibile e governabile ciò che accade fuori dalla richiesta HTTP — code, import, export, pianificazioni — e soprattutto i loro fallimenti ([purpose.md](./purpose.md)).
 >>>>>>> .merge_file_v2fnEk
-=======
-SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-audit.md](./audits/job-audit.md).
-
-**Scopo in una frase:** Job rende visibile e governabile ciò che accade fuori dalla richiesta HTTP — code, import, export, pianificazioni — e soprattutto i loro fallimenti ([purpose.md](./purpose.md)).
->>>>>>> .merge_file_CjSwdj
-=======
-SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-audit.md](./audits/job-audit.md).
-
-**Scopo in una frase:** Job rende visibile e governabile ciò che accade fuori dalla richiesta HTTP — code, import, export, pianificazioni — e soprattutto i loro fallimenti ([purpose.md](./purpose.md)).
->>>>>>> .merge_file_eb2Pm8
 
 ## Sintesi (2026-11-16)
 
 | Metrica | Valore |
 |---|---:|
-<<<<<<< .merge_file_iKfqSi
-<<<<<<< .merge_file_9IdMBk
 <<<<<<< .merge_file_1gpINJ
-=======
-<<<<<<< .merge_file_7pzTBI
->>>>>>> .merge_file_CjSwdj
-=======
-<<<<<<< .merge_file_7pzTBI
->>>>>>> .merge_file_eb2Pm8
 | PHP `app/` | 176 |
 | Test | 84 |
 | Resources | 9 |
@@ -77,21 +45,8 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
-<<<<<<< .merge_file_iKfqSi
-<<<<<<< .merge_file_9IdMBk
 =======
 | PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 (ricontato 2026-11-19: 176 / 56 / 49; la sintesi precedente riportava «Test 84», smentita dal conteggio) |
-=======
-=======
->>>>>>> .merge_file_eb2Pm8
-| PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 |
-=======
-| PHP `app/` / test PHP / `*Test.php` | 176 / 55 / 49 (ricontato 2026-11-19: 176 / 56 / 49; la sintesi precedente riportava «Test 84», smentita dal conteggio) |
->>>>>>> .merge_file_1bLDNF
-<<<<<<< .merge_file_iKfqSi
->>>>>>> .merge_file_CjSwdj
-=======
->>>>>>> .merge_file_eb2Pm8
 | Resource / Widget / Actions / Services | 9 / 8 / 16 / 1 (morto) |
 | Policy (su `UserBasePolicy` / `JobBasePolicy`) | 3 / 13 (ricontato 2026-11-19, dopo E1: 0 / 15 + `JobBasePolicy`) |
 | Policy `return true` | 5 nella sintesi precedente; oggi 2, solo in `JobBasePolicy::before()` (bypass `super-admin` / `job::admin`) |
@@ -119,10 +74,4 @@ SSoT dettagliata (inventario, evidenze `path:line`, non-finding): [audits/job-au
 ## Riferimenti
 
 [Piano](./piano-miglioramento.md) · [Epics](./epics.md) · [Decision log](./decision-log.md) · [ECC](../ecc/job-ecc-audit.md) · [Story](./stories/module-bmad-audit.story.md)
-<<<<<<< .merge_file_iKfqSi
-<<<<<<< .merge_file_9IdMBk
 >>>>>>> .merge_file_v2fnEk
-=======
->>>>>>> .merge_file_CjSwdj
-=======
->>>>>>> .merge_file_eb2Pm8

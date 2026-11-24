@@ -3,14 +3,7 @@ title: "06 Cinematic Effects"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_c9DFAF
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_ifsLGk
->>>>>>> .merge_file_5YjTuG
-=======
->>>>>>> .merge_file_wGTqcT
 qmd: "06 Cinematic Effects"
 issues: []
 discussions: []
@@ -18,41 +11,9 @@ discussions: []
 
 # 🎨 Cinematic Effects & Particles
 
-<<<<<<< .merge_file_ifsLGk
-<<<<<<< .merge_file_c9DFAF
 **Part of**: [00-INDEX.md](00-index.md) — AI Agents Coordination  
 **Related**: [06-CINEMATIC-EFFECTS.md](06-cinematic-effects.md) — Full guide
 
-=======
-=======
->>>>>>> .merge_file_wGTqcT
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [06-cinematic-effects.md](06-cinematic-effects.md) — Full guide
-
----
-<<<<<<< .merge_file_ifsLGk
-=======
-
-title: "06 CINEMATIC EFFECTS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "06 CINEMATIC EFFECTS"
-issues: []
-discussions: []
-## 📋 Quick Reference
->>>>>>> .merge_file_wGTqcT
-
-title: "06 CINEMATIC EFFECTS"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "06 CINEMATIC EFFECTS"
-issues: []
-discussions: []
->>>>>>> .merge_file_5YjTuG
 ## 📋 Quick Reference
 ### CSS-only Particles (Recommended)
 

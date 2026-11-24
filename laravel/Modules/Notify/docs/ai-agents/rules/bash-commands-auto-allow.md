@@ -16,32 +16,6 @@ discussions: []
 **Status**: ✅ PERMANENT RULE  
 **Priority**: CRITICAL
 
-<<<<<<< .merge_file_MukZty
-=======
----
-<<<<<<< .merge_file_9rfbND
-=======
-
-title: "bash commands auto allow"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bash commands auto allow"
-issues: []
-discussions: []
-## 🎯 Rule
->>>>>>> .merge_file_hK4Fze
-
-title: "bash commands auto allow"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bash commands auto allow"
-issues: []
-discussions: []
->>>>>>> .merge_file_GfgktI
 ## 🎯 Rule
 
 ## ✅ ALWAYS ALLOW - No Confirmation Required
@@ -168,28 +142,12 @@ File: `.qwen-code-rules.md`
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_9rfbND
-<<<<<<< .merge_file_MukZty
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_GfgktI
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_hK4Fze
 - **[Rules Index](00-index.md)** - All rules
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - XotBase philosophy
 
 ### Project Rules
 - **[Qwen Code Rules](../../.qwen-code-rules.md)** - Project-specific rules
 - **[AGENTS.md](../../agents.md)** - Project agents guide
-<<<<<<< .merge_file_9rfbND
-<<<<<<< .merge_file_MukZty
-=======
-- **[AGENTS.md](../../agents.md)** - Project agents guide
->>>>>>> .merge_file_GfgktI
-=======
-- **[AGENTS.md](../../agents.md)** - Project agents guide
->>>>>>> .merge_file_hK4Fze
 
 ---
 

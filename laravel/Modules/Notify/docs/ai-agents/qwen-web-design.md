@@ -13,36 +13,8 @@ discussions: []
 
 Studio web design basato su 31 fonti italiane.
 
-<<<<<<< .merge_file_FXNkHD
 ## 📊 10 Priorità (70% Successo Sito)
 
-=======
----
-
-title: "qwen web design"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen web design"
-issues: []
-discussions: []
-## 📊 10 Priorità (70% Successo Sito)
-
-1. **Mobile First** — 70%+ traffico mobile
-2. **Velocità** — LCP < 2.5s
-3. **Usabilità** — Navigazione intuitiva
-4. **Immediatezza** — Cattura attenzione in 15 secondi
-5. **Leggibilità** — Contrasto ≥ 4.5:1
-6. **Sicurezza** — HTTPS/SSL
-7. **Accessibilità** — WCAG 2.2 AA
-8. **Coerenza** — Brand identity uniforme
-9. **Aggiornabilità** — CMS intuitivo
-10. **Responsive** — Priorità contenuti per device
-
----
-
->>>>>>> .merge_file_nGkjNv
 ## Core Web Vitals 2026
 
 | Metrica | Target |
@@ -137,13 +109,5 @@ discussions: []
 
 - [Indice QWEN](./qwen-split-index.md)
 - [website-checklist.md](./website-checklist.md) - Checklist completa
-<<<<<<< .merge_file_n8Q1Tx
-<<<<<<< .merge_file_FXNkHD
 - [QWEN.md originale](../../qwen.md)
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_nGkjNv
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_W4TVqi
 - [Index principale](./index.md)

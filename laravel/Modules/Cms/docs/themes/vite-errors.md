@@ -7,10 +7,15 @@ updated: 2026-11-23
 qmd: "vite errors"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Gestione Errori Vite nei Temi
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 ## Perché
 I temi sono una componente fondamentale del modulo CMS e la loro corretta compilazione attraverso Vite è essenziale per il funzionamento dell'interfaccia utente. Gli errori di compilazione Vite possono bloccare la visualizzazione del tema e devono essere gestiti in modo sistematico.
@@ -56,7 +61,7 @@ cd /var/www/html/_bases/base_predict_fila5_mono/laravel/Themes/[NomeTema]
 npm install
 
 # Compilazione tema
-# public_html/themes/<Tema> è un symlink a laravel/Themes/<Tema>/public: niente copia (Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md)
+# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 ```
 
 ### 3. Verifica Post-Compilazione
@@ -81,24 +86,8 @@ ls -la dist/
 - Verifica dell'integrità dei file compilati
 
 ## Collegamenti Correlati
-<<<<<<< .merge_file_v43Qao
-<<<<<<< .merge_file_zfIKhW
 - [Documentazione Generale Errori](/project_docs/errors/README.md)
 - [Gestione Temi CMS](../themes/README.md)
-=======
-=======
->>>>>>> .merge_file_YaRd3W
-<<<<<<< .merge_file_7vScen
-- [Documentazione Generale Errori](/project_docs/errors/readme.md)
-- [Gestione Temi CMS](../../../../Themes/README.md)
-=======
-- [Documentazione Generale Errori](/project_docs/errors/README.md)
-- [Gestione Temi CMS](../themes/README.md)
->>>>>>> .merge_file_QXiiK6
-<<<<<<< .merge_file_v43Qao
->>>>>>> .merge_file_8Q4d0l
-=======
->>>>>>> .merge_file_YaRd3W
 - [Processo di Deploy](../../project_docs/deployment/themes.md)
 
 ## Note Tecniche
@@ -136,6 +125,8 @@ npm cache clean --force
 
 # Ricompilazione forzata
 rm -rf dist/ node_modules/
+npm install
+
 npm install && npm run build
 ```
 

@@ -1,16 +1,4 @@
 ---
-<<<<<<< .merge_file_otQhAZ
-<<<<<<< .merge_file_IKiNLb
-=======
-<<<<<<< .merge_file_6LCBgu
-created: 2026-10-07
-=======
->>>>>>> .merge_file_n7pvpZ
-=======
-<<<<<<< .merge_file_6LCBgu
-created: 2026-10-07
-=======
->>>>>>> .merge_file_9A9nwU
 title: "Marker Popup and Location UX .story"
 type: note
 tags: [documentation]
@@ -20,14 +8,6 @@ qmd: "Marker Popup and Location UX .story"
 date_originale_nome_file: 2026-10-07
 issues: [122]
 discussions: []
-<<<<<<< .merge_file_otQhAZ
-<<<<<<< .merge_file_IKiNLb
-=======
->>>>>>> .merge_file_XD49sI
->>>>>>> .merge_file_n7pvpZ
-=======
->>>>>>> .merge_file_XD49sI
->>>>>>> .merge_file_9A9nwU
 ---
 
 # Popup marker e posizione: leggibilita e layout

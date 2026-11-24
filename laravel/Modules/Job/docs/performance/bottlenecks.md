@@ -200,21 +200,15 @@ Implementare:
 ### Versione HEAD
 
 ## Collegamenti tra versioni di bottlenecks.md
-* [bottlenecks.md](../../../Gdpr/docs/performance/bottlenecks.md)
+* [bottlenecks.md](../../../gdpr/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../xot/docs/roadmap/bottlenecks.md)
-* [bottlenecks.md](../../../User/docs/roadmap/bottlenecks.md)
+* [bottlenecks.md](../../../user/docs/roadmap/bottlenecks.md)
 * [bottlenecks.md](../../../ui/docs/roadmap/bottlenecks.md)
-<<<<<<< .merge_file_jMXWZL
-<<<<<<< .merge_file_Lpxzve
 * [bottlenecks.md](../../../lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../job/docs/performance/bottlenecks.md)
 * [bottlenecks.md](../../../media/docs/performance/bottlenecks.md)
-=======
->>>>>>> .merge_file_RaVGkW
-=======
->>>>>>> .merge_file_fu1JvW
 * [bottlenecks.md](../../../Lang/docs/performance/bottlenecks.md)
 * [bottlenecks.md](bottlenecks.md)
 * [bottlenecks.md](../../../Media/docs/performance/bottlenecks.md)

@@ -15,19 +15,6 @@ discussions: []
 > **Status**: ⚠️ **KNOWN LIMITATION**  
 > **Priority**: CRITICAL
 
-<<<<<<< .merge_file_8n8YP3
-=======
----
-
-title: "bashscripts gitignore workaround"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bashscripts gitignore workaround"
-issues: []
-discussions: []
->>>>>>> .merge_file_o48uJ5
 ## 🎯 Problem
 
 ## 🔧 Workaround Attuale

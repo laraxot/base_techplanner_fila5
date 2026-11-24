@@ -3,14 +3,7 @@ title: "Correzioni Phpstan Multiple Completate"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_9lGdvd
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_nI0uj5
->>>>>>> .merge_file_4CjwpV
-=======
->>>>>>> .merge_file_QGi9oC
 qmd: "Correzioni Phpstan Multiple Completate"
 issues: []
 discussions: []

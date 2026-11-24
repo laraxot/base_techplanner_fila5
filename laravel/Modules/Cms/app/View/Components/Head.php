@@ -21,7 +21,6 @@ use Modules\Cms\Actions\Head\ResolveRobotsPolicyAction;
 use Modules\Cms\Actions\Head\ResolveWrittenLocalesAction;
 use Modules\Cms\Actions\ResolvePageMetaAction;
 use Modules\Cms\Models\Page;
-use Modules\Tenant\Actions\Config\GetTenantConfigArrayAction;
 use Modules\Xot\Datas\MetatagData;
 
 use function Safe\filesize;
@@ -56,16 +55,9 @@ final class Head extends Component
         public readonly ?string $description = null,
         public readonly ?bool $homepage = null,
         public readonly ?string $themeColor = null,
-<<<<<<< .merge_file_O1Q5K6
-<<<<<<< .merge_file_AOES5s
         public readonly bool $panelAssets = true,
     ) {
     }
-=======
-=======
->>>>>>> .merge_file_MVn5hs
-    ) {}
->>>>>>> .merge_file_M6qUgt
 
     /**
      * @see Modules/Cms/docs/bmad/head-component-adoption-plan.md
@@ -131,6 +123,7 @@ final class Head extends Component
 
         return view('cms::components.head', [
             'pubTheme' => $meta->getPubTheme(),
+            'panelAssets' => $this->panelAssets,
         ]);
     }
 
@@ -313,19 +306,11 @@ final class Head extends Component
         }
     }
 
-<<<<<<< .merge_file_O1Q5K6
-<<<<<<< .merge_file_AOES5s
     /**
      * URL dell'asset del tema, solo se il file esiste davvero in `public/` e non e' vuoto.
      *
      * @see Modules/Cms/docs/bmad/head-component-adoption-plan.md
      */
-=======
-    /** URL dell'asset del tema, solo se il file esiste davvero in `public/` e non e' vuoto. */
->>>>>>> .merge_file_M6qUgt
-=======
-    /** URL dell'asset del tema, solo se il file esiste davvero in `public/` e non e' vuoto. */
->>>>>>> .merge_file_MVn5hs
     private function themeAssetUrl(MetatagData $meta, string $file): ?string
     {
         $url = $meta->getPubThemeAsset($file);
@@ -345,14 +330,8 @@ final class Head extends Component
     /**
      * Un file di 0 byte (il segnaposto `favicon.ico` dello scheletro Laravel) non e' un'icona: linkarlo lascia la scheda
      * del browser senza icona e fa credere che l'icona ci sia.
-<<<<<<< .merge_file_O1Q5K6
-<<<<<<< .merge_file_AOES5s
      *
      * @see Modules/Cms/docs/bmad/head-component-adoption-plan.md
-=======
->>>>>>> .merge_file_M6qUgt
-=======
->>>>>>> .merge_file_MVn5hs
      */
     private function isServableFile(string $absolutePath): bool
     {
@@ -383,23 +362,8 @@ final class Head extends Component
                 rootUrl: $this->siteRoot(),
                 homeLabel: Lang::has($homeLabelKey) ? trim((string) __($homeLabelKey)) : '',
                 languages: $siteLocales,
-<<<<<<< .merge_file_O1Q5K6
-<<<<<<< .merge_file_AOES5s
                 description: $isHome ? $description : null,
                 sameAs: $isHome ? $meta->getSameAs() : [],
-=======
-=======
->>>>>>> .merge_file_MVn5hs
-<<<<<<< .merge_file_JHPlWX
-                business: $isHome ? $this->businessData() : [],
-=======
-                description: $isHome ? $description : null,
-                sameAs: $isHome ? $meta->getSameAs() : [],
->>>>>>> .merge_file_CYPK3I
-<<<<<<< .merge_file_O1Q5K6
->>>>>>> .merge_file_M6qUgt
-=======
->>>>>>> .merge_file_MVn5hs
             );
 
             foreach ($schemas as $schema) {
@@ -409,26 +373,6 @@ final class Head extends Component
             // I dati strutturati sono un di più: un valore non valido (il validatore di laravel/head lancia fuori produzione) non deve togliere la pagina.
             report($exception);
         }
-    }
-
-    /**
-     * Dati dell'attività del tenant (`metatag.php`, chiave `business`): solo dati pubblici, come nel piè di pagina.
-     *
-     * @return array<string, mixed>
-     */
-    private function businessData(): array
-    {
-        $business = app(GetTenantConfigArrayAction::class)->execute('metatag')['business'] ?? [];
-        if (! \is_array($business)) {
-            return [];
-        }
-
-        $data = [];
-        foreach ($business as $key => $value) {
-            $data[(string) $key] = $value;
-        }
-
-        return $data;
     }
 
     /**

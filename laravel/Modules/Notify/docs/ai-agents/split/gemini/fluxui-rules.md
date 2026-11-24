@@ -17,26 +17,4 @@ discussions: []
 - Use `<flux:*>` components when available; they are the recommended way to build Livewire interfaces.
 - IMPORTANT: Activate `fluxui-development` when working with Flux UI components.
 
-<<<<<<< .merge_file_Xrz6n6
 ## Cross-References
-=======
-
----
-
-title: "fluxui rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "fluxui rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../laravel/gemini.md](../../../../laravel/../../../../laravel/gemini.md) — Original source
-
->>>>>>> .merge_file_niB826

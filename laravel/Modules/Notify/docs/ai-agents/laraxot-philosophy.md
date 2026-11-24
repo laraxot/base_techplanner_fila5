@@ -18,51 +18,6 @@ discussions: []
 
 In Laraxot architecture, every category of file (database files, test files, migrations) must exist in ONE location only. Never both.
 
-<<<<<<< .merge_file_LKcmSh
-=======
----
-<<<<<<< .merge_file_7iyb2Q
-=======
-
-title: "laraxot philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot philosophy"
-issues: []
-discussions: []
-## File structure philosophy
-
-Database-related files (migrations, seeders, factories) must be in the traditional Laravel structure, never duplicated in `app/`.
-
-```
-CORRECT
-Modules/{ModuleName}/
-├── database/                    # SINGLE SOURCE OF TRUTH
-│   ├── factories/
-│   ├── migrations/
-│   └── seeders/
-└── app/
-    ├── Models/
-    └── Filament/
-
-WRONG - mixed structure
-Modules/Cms/
-├── database/factories/          # has files
-└── app/Database/Factories/      # empty dirs causing autoloader confusion
-```
->>>>>>> .merge_file_OAUEhS
-
-title: "laraxot philosophy"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laraxot philosophy"
-issues: []
-discussions: []
->>>>>>> .merge_file_Xo8jK4
 ## File structure philosophy
 
 ## Test structure philosophy

@@ -34,26 +34,4 @@ discussions: []
 
 - Casts can and likely should be set in a `casts()` method on a model rather than the `$casts` property. Follow existing conventions from other models.
 
-<<<<<<< .merge_file_QxzGGs
 ## Cross-References
-=======
-
----
-
-title: "laravel v12 rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel v12 rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../laravel/gemini.md](../../../../laravel/../../../../laravel/gemini.md) — Original source
-
->>>>>>> .merge_file_EKLRT6

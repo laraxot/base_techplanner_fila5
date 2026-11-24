@@ -3,14 +3,7 @@ title: "03 Architecture Zen"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_O5w9DY
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_iMRUvv
->>>>>>> .merge_file_l5z9ir
-=======
->>>>>>> .merge_file_jzEXCu
 qmd: "03 Architecture Zen"
 issues: []
 discussions: []
@@ -18,41 +11,9 @@ discussions: []
 
 # 🏛️ Architecture Zen Philosophy
 
-<<<<<<< .merge_file_iMRUvv
-<<<<<<< .merge_file_O5w9DY
 **Part of**: [00-INDEX.md](00-index.md) — AI Agents Coordination  
 **Related**: [04-FILAMENT-PHILOSOPHY.md](04-filament-philosophy.md) — Filament Widgets
 
-=======
-=======
->>>>>>> .merge_file_jzEXCu
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [04-filament-philosophy.md](04-filament-philosophy.md) — Filament Widgets
-
----
-<<<<<<< .merge_file_iMRUvv
-=======
-
-title: "03 ARCHITECTURE ZEN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "03 ARCHITECTURE ZEN"
-issues: []
-discussions: []
-## 🔴 Fundamental Rules
->>>>>>> .merge_file_jzEXCu
-
-title: "03 ARCHITECTURE ZEN"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "03 ARCHITECTURE ZEN"
-issues: []
-discussions: []
->>>>>>> .merge_file_l5z9ir
 ## 🔴 Fundamental Rules
 ### 1. **NO Themes/*/Http/Livewire/**
 

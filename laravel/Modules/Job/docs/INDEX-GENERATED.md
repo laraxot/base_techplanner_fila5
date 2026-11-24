@@ -53,18 +53,12 @@
 
 ### Core Architecture & Planning
 - [project-structure.md](project-structure.md) - Module structure overview
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
 - [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
 - [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
 - [ON-DEMAND-PATTERN.md](ON-DEMAND-PATTERN.md) - On-demand knowledge pattern
 - [QMD-SETUP.md](QMD-SETUP.md) - QMD search configuration
 - [PROJECT-STRUCTURE.md](PROJECT-STRUCTURE.md) - Full project structure
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - [on-demand-pattern.md](on-demand-pattern.md) - On-demand knowledge pattern
 - [qmd-setup.md](qmd-setup.md) - QMD search configuration
 - [project-structure.md](project-structure.md) - Full project structure
@@ -72,18 +66,12 @@
 - [contracts-naming.md](contracts-naming.md) - Contract naming conventions
 
 ### Product & Strategy
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
 - [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
 - [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
 - [PRODUCT_STRATEGY.md](PRODUCT_STRATEGY.md) - Product strategy document
 - [PRODUCT_ROADMAP.md](PRODUCT_ROADMAP.md) - Development roadmap
 - [PRODUCT_LAUNCH_PLAN.md](PRODUCT_LAUNCH_PLAN.md) - Launch planning
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - [product_strategy.md](product_strategy.md) - Product strategy document
 - [product_roadmap.md](product_roadmap.md) - Development roadmap
 - [product_launch_plan.md](product_launch_plan.md) - Launch planning
@@ -113,7 +101,7 @@
 - [phpstan-errors-roadmap.md](phpstan-errors-roadmap.md) - Error roadmap (4.3KB)
 - [phpstan-syntax-fixes.md](phpstan-syntax-fixes.md) - Syntax fixes (5.7KB)
 - [code-quality-report.md](code-quality-report.md) - Quality report (6.4KB)
-- [code-quality-improvement-report.md](wiki/code-quality-improvement-report.md) - Improvements (4.9KB)
+- [code-quality-improvement-report.md](code-quality-improvement-report.md) - Improvements (4.9KB)
 - [cyclomatic-complexity-report.md](cyclomatic-complexity-report.md) - Complexity analysis (2.3KB)
 
 ### Filament Framework
@@ -159,18 +147,12 @@
 ### Audits & Analysis
 - [code-redundancy-audit.md](code-redundancy-audit.md) - Redundancy audit (2.9KB)
 - [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - Copilot audit (581 bytes)
-- [copilot-redundancy-audit.md](copilot-redundancy-audit.md) - 2026 audit (420 bytes)
+- [copilot-redundancy-audit-2026-05-25.md](copilot-redundancy-audit-2026-05-25.md) - 2026 audit (420 bytes)
 - [redundancy-audit.md](redundancy-audit.md) - General redundancy (1.2KB)
 - [redundancy-report.md](redundancy-report.md) - Redundancy report (1.6KB)
 - [duplicate-methods-analysis.md](duplicate-methods-analysis.md) - Method duplication (37KB - comprehensive)
 - [metodi-duplicati-analisi.md](metodi-duplicati-analisi.md) - Methods analysis (Italian, 249 bytes)
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - [METODI_DUPLICATI_ANALISI.md](METODI_DUPLICATI_ANALISI.md) - Duplicate methods (13.6KB)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - [metodi_duplicati_analisi.md](metodi_duplicati_analisi.md) - Duplicate methods (13.6KB)
 - [duplicate_methods.md](duplicate_methods.md) - Methods report (2KB)
 - [duplicate_methods_report.md](duplicate_methods_report.md) - Methods detail (3.9KB)
@@ -185,13 +167,7 @@
 - [job-reports.md](job-reports.md) - Job reports (30.3KB - large reference)
 
 ### Performance & Optimization
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - [PERFORMANCE-OPTIMIZATION.md](PERFORMANCE-OPTIMIZATION.md) - Performance guide (2.8KB)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - [performance-optimization.md](performance-optimization.md) - Performance guide (2.8KB)
 - [performance-optimization.md](performance-optimization.md) - Optimization details (2.8KB)
 - [optimization.md](optimization.md) - Optimization overview (250 bytes)
@@ -239,13 +215,7 @@
 
 **Owner files:**
 - `project-structure.md` (3.7KB)
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - `PROJECT-STRUCTURE.md` (3.7KB)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - `project-structure.md` (3.7KB)
 - `architecture-rules.md` (227 bytes - stub, see wiki/)
 
@@ -255,13 +225,7 @@
 - `dependency-intelligence.md` (1.6KB)
 
 **Assessment:**
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - [ ] Consolidate duplicates: `project-structure.md` vs `PROJECT-STRUCTURE.md` (identical)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - [ ] Consolidate duplicates: `project-structure.md` vs `project-structure.md` (identical)
 - [ ] Expand `architecture-rules.md` (currently stub)
 - [x] Implementation documentation adequate
@@ -297,41 +261,28 @@
 ### 3. Product & Business
 
 **Strategy tier:**
-- `product_strategy.md` (1.9KB)
-<<<<<<< .merge_file_ippbNO
+- `PRODUCT_STRATEGY.md` (1.9KB)
 - `product-strategy.md` (1.7KB)
-<<<<<<< .merge_file_mhRBQH
 - `PRODUCT_ROADMAP.md` (2.4KB)
 - `PRODUCT_STRATEGY.md` (1.9KB)
 - `product-strategy.md` (1.7KB)
 - `PRODUCT_ROADMAP.md` (2.4KB)
 - `product_strategy.md` (1.9KB)
 - `product-strategy.md` (1.7KB)
-=======
->>>>>>> .merge_file_GduodE
-=======
-- `product-strategy.md` (1.7KB)
->>>>>>> .merge_file_Md3vXU
 - `product_roadmap.md` (2.4KB)
 - `product-roadmap.md` (1.5KB)
 - `enterprise-job-system-roadmap.md` (15.9KB - comprehensive)
 
 **Planning tier:**
-- `product_launch_plan.md` (1.7KB)
+- `PRODUCT_LAUNCH_PLAN.md` (1.7KB)
 - `product-launch-plan.md` (2.2KB)
-- `sprint_planning.md` (1.3KB)
+- `SPRINT_PLANNING.md` (1.3KB)
 - `sprint-planning-meeting.md` (1.4KB)
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - `USER_RESEARCH.md` (1.9KB)
 - `product_launch_plan.md` (1.7KB)
 - `product-launch-plan.md` (2.2KB)
 - `sprint_planning.md` (1.3KB)
 - `sprint-planning-meeting.md` (1.4KB)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - `user_research.md` (1.9KB)
 - `user-research.md` (294 bytes)
 
@@ -416,9 +367,9 @@
 **Redundancy audits (6 variants):**
 - `code-redundancy-audit.md` (2.9KB)
 - `redundancy-audit.md` (1.2KB)
-- `redundancy-audit.md` (372 bytes)
+- `redundancy-audit-2026-05-21.md` (372 bytes)
 - `copilot-redundancy-audit.md` (581 bytes)
-- `copilot-redundancy-audit.md` (420 bytes)
+- `copilot-redundancy-audit-2026-05-25.md` (420 bytes)
 - `redundancy-report.md` (1.6KB)
 
 **Method/code duplication (5 variants):**
@@ -426,13 +377,7 @@
 - `duplicate_methods.md` (2KB)
 - `duplicate_methods_report.md` (3.9KB)
 - `metodi-duplicati-analisi.md` (249 bytes - IT stub)
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - `METODI_DUPLICATI_ANALISI.md` (13.6KB - IT detailed)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - `metodi_duplicati_analisi.md` (13.6KB - IT detailed)
 
 **Assessment:**
@@ -459,16 +404,10 @@
 | 7 | code-quality-report.md | Jul 28 08:34 | 6.4KB | Quality metrics |
 | 8 | MIGRATIONS.md | Jul 28 08:34 | 10.9KB | Migration tracking |
 | 9 | enterprise-job-system-roadmap.md | Jul 28 08:34 | 15.9KB | Enterprise plan |
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 | 10 | PRODUCT_STRATEGY.md | Jul 28 08:34 | 1.9KB | Strategy |
 | 11 | PRODUCT_ROADMAP.md | Jul 28 08:34 | 2.4KB | Roadmap |
 | 10 | PRODUCT_STRATEGY.md | Jul 28 08:34 | 1.9KB | Strategy |
 | 11 | PRODUCT_ROADMAP.md | Jul 28 08:34 | 2.4KB | Roadmap |
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 | 10 | product_strategy.md | Jul 28 08:34 | 1.9KB | Strategy |
 | 11 | product_roadmap.md | Jul 28 08:34 | 2.4KB | Roadmap |
 | 12 | coverage.md | Jul 28 08:34 | 3.9KB | Test coverage |
@@ -480,7 +419,7 @@
 
 **Jul 28, 2026 (08:34):** ~200+ files (batch update)  
 **Jul 28, 2026 (11:24):** README.md only  
-**Jul 21, 2026:** actions.md, on-demand-pattern.md, performance-optimization.md, project-structure.md, qmd-setup.md  
+**Jul 21, 2026:** ACTIONS.md, on-demand-pattern.md, performance-optimization.md, project-structure.md, qmd-setup.md  
 **Jul 15, 2026:** contracts-naming.md, queueable-actions.md, root-file-policy.md, root-files-hygiene.md, test.md  
 **Jul 8, 2026:** 50+ original files (initial import)  
 
@@ -603,18 +542,12 @@
 
 **Consolidation targets:**
 - UPPERCASE vs lowercase variants (both versions exist):
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
   - `PRODUCT_STRATEGY.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
   - `PRODUCT_ROADMAP.md` (2.4KB) → DELETE (consolidate into single roadmap file)
   - `PRODUCT_LAUNCH_PLAN.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
   - `PRODUCT_STRATEGY.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
   - `PRODUCT_ROADMAP.md` (2.4KB) → DELETE (consolidate into single roadmap file)
   - `PRODUCT_LAUNCH_PLAN.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
   - `product_strategy.md` (1.9KB) → DELETE (merge into `product-strategy.md` 1.7KB)
   - `product_roadmap.md` (2.4KB) → DELETE (consolidate into single roadmap file)
   - `product_launch_plan.md` (1.7KB) → DELETE (merge into `product-launch-plan.md` 2.2KB)
@@ -623,16 +556,10 @@
 1. `enterprise-job-system-roadmap.md` (15.9KB - comprehensive, canonical)
 2. `product-strategy.md` (1.7KB - merged with PRODUCT_STRATEGY)
 3. `product-launch-plan.md` (2.2KB - merged with PRODUCT_LAUNCH_PLAN)
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 4. `SPRINT_PLANNING.md` (1.3KB - sprint tracking)
 5. `USER_RESEARCH.md` (1.9KB - research findings)
 4. `SPRINT_PLANNING.md` (1.3KB - sprint tracking)
 5. `USER_RESEARCH.md` (1.9KB - research findings)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 4. `sprint_planning.md` (1.3KB - sprint tracking)
 5. `user_research.md` (1.9KB - research findings)
 
@@ -662,9 +589,9 @@
 
 **Archive:**
 - `redundancy-audit.md` (old)
-- `redundancy-audit.md` (dated)
+- `redundancy-audit-2026-05-21.md` (dated)
 - `copilot-redundancy-audit.md` (outdated)
-- `copilot-redundancy-audit.md` (dated)
+- `copilot-redundancy-audit-2026-05-25.md` (dated)
 
 **Keep:**
 1. `code-redundancy-audit.md` (2.9KB - general audit)
@@ -683,13 +610,7 @@
 - **Option B:** Bilingual with standard naming → `file.md` (EN) + `file-it.md` (IT)
 
 **Current Italian files to consolidate:**
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - `metodi-duplicati-analisi.md` → `METODI_DUPLICATI_ANALISI.md`
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - `metodi-duplicati-analisi.md` → `metodi_duplicati_analisi.md`
 - `migrazione-filament*.md` (2 variants)
 - `modelli-factory-seeder-analisi.md`
@@ -721,13 +642,7 @@
 **Current split:**
 - `configuration.md` (generic)
 - `mcp-configuration.md` (MCP specific)
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - `QMD-SETUP.md` vs `qmd-setup.md` (case variants)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - `qmd-setup.md` vs `qmd-setup.md` (case variants)
 - `artisan.md` + `artisan.txt`
 
@@ -783,16 +698,10 @@ archive/
 
 #### 4.1 Create Index Stubs for Subdirectories
 
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 Add `INDEX.md` to each subdirectory:
 - `wiki/INDEX.md` - Links to 54 reference files
 - `roadmap/INDEX.md` - Roadmap structure
 - `_integration/INDEX.md` - Integration guides
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 Add `index.md` to each subdirectory:
 - `wiki/index.md` - Links to 54 reference files
 - `roadmap/index.md` - Roadmap structure
@@ -846,7 +755,7 @@ updated: "2026-07-28"
 
 #### 5.2 Link Map to Wiki Pattern
 
-Ensure `qmd-setup.md` or updated `qmd-setup.md` points to:
+Ensure `QMD-SETUP.md` or updated `qmd-setup.md` points to:
 - `wiki/` (54 files of reference material)
 - `roadmap/` (planning documents)
 
@@ -855,13 +764,7 @@ Ensure `qmd-setup.md` or updated `qmd-setup.md` points to:
 #### 5.3 Create Navigation Breadcrumbs
 
 Add "Back to Index" links in all major docs pointing to:
-<<<<<<< .merge_file_ippbNO
-<<<<<<< .merge_file_mhRBQH
 - `INDEX.md` (official index)
-=======
->>>>>>> .merge_file_GduodE
-=======
->>>>>>> .merge_file_Md3vXU
 - `index.md` (official index)
 - `README.md` (entry point)
 - `INDEX_GENERATED.md` (this file)
@@ -882,7 +785,7 @@ Add "Back to Index" links in all major docs pointing to:
 | **P2** | Configuration | 8 | 4 | Merge related docs | 1h |
 | **P3** | Root files | 51 | 0 | Delete duplicate dirs | 15min |
 | **P3** | Archive org | 19 | Organized | Subdirectory structure | 30min |
-| **P4** | Index stubs | None | 5+ | Create index.md files | 1h |
+| **P4** | Index stubs | None | 5+ | Create INDEX.md files | 1h |
 | **P4** | Stub expansion | 20+ stubs | Full docs | Expand content | 3h+ |
 | **P5** | Front matter | None | All | Add YAML metadata | 2h |
 

@@ -1,6 +1,4 @@
 ---
-title: "Puntatore — conversione Livewire → widget"
-
 title: "Puntatore: conversione Livewire → widget"
 canonical: ./livewire-inventory.md
 superseded: true

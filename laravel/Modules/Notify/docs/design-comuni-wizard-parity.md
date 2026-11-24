@@ -18,19 +18,6 @@ discussions: []
 **Module**: Fixcity  
 **Theme**: Sixteen
 
-<<<<<<< .merge_file_LnE9Wd
-=======
----
-
-title: "design comuni wizard parity"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "design comuni wizard parity"
-issues: []
-discussions: []
->>>>>>> .merge_file_raYR7h
 ## Obiettivo
 
 ## Struttura Reference (Design Comuni)

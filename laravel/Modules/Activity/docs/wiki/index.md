@@ -33,15 +33,7 @@ related:
 ## Completamento
 
 - [overviews/completion-status.md](./overviews/completion-status.md) — stato modulo post gate chef
-<<<<<<< .merge_file_VtOBRY
-<<<<<<< .merge_file_pGgjWG
 - [PROJECT-ROADMAP.md](./PROJECT-ROADMAP.md) — milestone Activity
-=======
-- [PROJECT-ROADMAP.md](./project-roadmap.md) — milestone Activity
->>>>>>> .merge_file_vQkDR7
-=======
-- [PROJECT-ROADMAP.md](./project-roadmap.md) — milestone Activity
->>>>>>> .merge_file_DuujBx
 - [platform-completion-roadmap (Xot)](../../Xot/docs/wiki/overviews/platform-completion-roadmap.md)
 
 ## Concepts
@@ -62,13 +54,8 @@ _No entities tracked yet._
 
 ## On-Demand References
 
-<<<<<<< .merge_file_ct4Tfr
 - [rules-index](./rules/INDEX.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](skills/index.md) — skill on-demand, incluse skill condivise Xot
-=======
-- [rules-index](./rules/index.md) — entrypoint locale per regole ricorrenti del modulo
-- [skills-index](./skills/index.md) — skill on-demand, incluse skill condivise Xot
->>>>>>> .merge_file_wuMCaK
+- [skills-index](./skills/INDEX.md) — skill on-demand, incluse skill condivise Xot
 
 ## Comparisons
 

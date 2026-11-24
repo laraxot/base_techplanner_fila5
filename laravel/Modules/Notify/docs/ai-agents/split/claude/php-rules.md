@@ -40,27 +40,4 @@ protected function isAccessible(User $user, ?string $path = null): bool
 ## Enums
 - Typically, keys in an Enum should be TitleCase. For example: `FavoritePerson`, `BestLake`, `Monthly`.
 
-<<<<<<< .merge_file_Q28pw4
 ## Cross-References
-=======
-
-
----
-
-title: "php rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "php rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
-
->>>>>>> .merge_file_wld6UE

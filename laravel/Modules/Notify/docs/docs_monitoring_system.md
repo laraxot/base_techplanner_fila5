@@ -3,11 +3,7 @@ title: "DOCS MONITORING SYSTEM"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_Vyfke4
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_CD2Npe
 qmd: "DOCS MONITORING SYSTEM"
 issues: []
 discussions: []
@@ -20,19 +16,6 @@ discussions: []
 **Frequenza**: Continuo  
 **Scope**: Tutte le cartelle docs dei moduli e temi  
 
-<<<<<<< .merge_file_Vyfke4
-=======
----
-
-title: "DOCS MONITORING SYSTEM"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DOCS MONITORING SYSTEM"
-issues: []
-discussions: []
->>>>>>> .merge_file_CD2Npe
 ## 🎯 OBIETTIVO
 
 ## 📊 STATO ATTUALE DOCUMENTAZIONE

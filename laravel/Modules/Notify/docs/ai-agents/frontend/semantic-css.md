@@ -16,36 +16,6 @@ discussions: []
 **Status**: ✅ CANONICAL  
 **Version**: 1.0
 
-<<<<<<< .merge_file_4lOZOG
-=======
----
-<<<<<<< .merge_file_lMq9zO
-=======
-
-title: "semantic css"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "semantic css"
-issues: []
-discussions: []
-## 🎯 Core Principle
-
-> **"Name classes based on what an element *is*, not what it *looks like*."**
-
-**Source**: [MaintainableCSS Chapter 2 - Semantics](https://maintainablecss.com/chapters/semantics/)
->>>>>>> .merge_file_kY4rLf
-
-title: "semantic css"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "semantic css"
-issues: []
-discussions: []
->>>>>>> .merge_file_1LQeVp
 ## 🎯 Core Principle
 
 ## 📋 Quick Reference
@@ -131,14 +101,6 @@ class OutcomesTableWidget extends XotBaseTableWidget
 ### Rules & Enforcement
 
 - [Semantic CSS Rule](../../rules/frontend/semantic-css-rule.md) - **MANDATORY** rule
-<<<<<<< .merge_file_lMq9zO
-<<<<<<< .merge_file_4lOZOG
-=======
-- [Frontend Rules Index](../../rules/frontend/00-index.md) - All frontend rules
->>>>>>> .merge_file_1LQeVp
-=======
-- [Frontend Rules Index](../../rules/frontend/00-index.md) - All frontend rules
->>>>>>> .merge_file_kY4rLf
 - [Frontend Rules Index](../../rules/frontend/00-index.md) - All frontend rules
 
 ---

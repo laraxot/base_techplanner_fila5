@@ -7,7 +7,6 @@ updated: 2026-11-23
 qmd: "documentation improvement summary 2026 03"
 issues: []
 discussions: []
-<<<<<<< .merge_file_WsRAbu
 ---
 
 # Documentation Improvement Summary - 2026-03-13
@@ -360,24 +359,3 @@ ls laravel/.github/skills/documentation-management/SKILL.md
 **Priority**: High
 
 *This summary is maintained in git. For latest status, check repository.*
-=======
-title: "DOCUMENTATION_IMPROVEMENT_SUMMARY_2026-03-13"
-type: concept
-tags: [deprecated]
-created: 2026-07-14
-updated: 2026-07-14
-qmd: "documentation_improvement_summary_2026-03-13 deprecated"
-status: deprecated
-related:
-  - "./00-index-1.md"
-  - "./00-index-2.md"
-  - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions.md"
-  - "./acronym-naming-conventions-2.md"
-  - "./acronym-naming-conventions.md"
-  - "./action-plan-immediate.md"
----
-
-> Questo file è stato rinominato in [documentation-improvement-summary.md](documentation-improvement-summary.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.
->>>>>>> .merge_file_tasxt0

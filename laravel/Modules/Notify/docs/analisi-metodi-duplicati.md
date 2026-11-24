@@ -21,38 +21,6 @@ discussions: []
 7. [Svantaggi e Rischi dell'Unificazione](#svantaggi-e-rischi-dellunificazione)
 8. [Raccomandazioni](#raccomandazioni)
 
-<<<<<<< .merge_file_y6sYH4
-=======
----
-<<<<<<< .merge_file_G3W7x8
-=======
-
-title: "analisi metodi duplicati"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati"
-issues: []
-discussions: []
-## Panoramica
-
-Questo documento analizza i metodi duplicati trovati all'interno dei moduli Laraxot e dei temi, con l'obiettivo di identificare opportunità di refactoring per migliorare la manutenibilità e ridurre la duplicazione del codice.
-
-**Data Analisi:** 2025-10-15  
-**Moduli Analizzati:** 18 moduli  
-**Temi Analizzati:** 2 temi (Sixteen, TwentyOne)
->>>>>>> .merge_file_Rt0l1Z
-
-title: "analisi metodi duplicati"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati"
-issues: []
-discussions: []
->>>>>>> .merge_file_cVeyUb
 ## Panoramica
 
 ## Metodi Duplicati nei BaseModel

@@ -19,19 +19,11 @@ related:
 ---
 # Gemini AI Guidelines (../../../../laravel/gemini.md) Index
 
-<<<<<<< .merge_file_ENBxCp
-<<<<<<< .merge_file_sY5UpN
 **Source**: [`laravel/../../../../laravel/GEMINI.md`](../../../../../../laravel/../../../../laravel/gemini.md) (581 lines)  
 ---
 # Gemini AI Guidelines (../../../../laravel/gemini.md) Index
 
 **Source**: [`laravel/../../../../laravel/GEMINI.md`](../../../../../../laravel/../../../../laravel/gemini.md) (581 lines)  
-=======
-**Source**: [`laravel/../../../../laravel/gemini.md`](../../../../../../laravel/../../../../laravel/gemini.md) (581 lines)  
->>>>>>> .merge_file_iD7hHi
-=======
-**Source**: [`laravel/../../../../laravel/gemini.md`](../../../../../../laravel/../../../../laravel/gemini.md) (581 lines)  
->>>>>>> .merge_file_hVeWH6
 **Split Into**: 13 focused files  
 **Last Updated**: 2026-04-11  
 
@@ -99,15 +91,7 @@ related:
 
 ## Usage
 
-<<<<<<< .merge_file_ENBxCp
-<<<<<<< .merge_file_sY5UpN
 These guidelines are loaded by Gemini AI for Laravel development context. For manual reference, see the original [`laravel/../../../../laravel/GEMINI.md`](../../../../../../laravel/../../../../laravel/gemini.md).
-=======
-These guidelines are loaded by Gemini AI for Laravel development context. For manual reference, see the original [`laravel/../../../../laravel/gemini.md`](../../../../../../laravel/../../../../laravel/gemini.md).
->>>>>>> .merge_file_iD7hHi
-=======
-These guidelines are loaded by Gemini AI for Laravel development context. For manual reference, see the original [`laravel/../../../../laravel/gemini.md`](../../../../../../laravel/../../../../laravel/gemini.md).
->>>>>>> .merge_file_hVeWH6
 
 ---
 

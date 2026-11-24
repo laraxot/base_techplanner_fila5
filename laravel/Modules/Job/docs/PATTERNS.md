@@ -444,13 +444,7 @@ public function handle(Invoice $invoice): void
 
 - [Laravel Queues Documentation](https://laravel.com/docs/queues)
 - [Queue Best Practices](./best-practices.md)
-<<<<<<< .merge_file_5yxkQq
-<<<<<<< .merge_file_kTvAGB
 - [Troubleshooting Guide](./TROUBLESHOOTING.md)
-=======
->>>>>>> .merge_file_zbUIb2
-=======
->>>>>>> .merge_file_cL5ymy
 - [Troubleshooting Guide](./troubleshooting.md)
 - [Job Monitor Filament Resource](./COMPONENTS.md#filament-resources)
 

@@ -19,18 +19,8 @@ related:
 ---
 # BMad Agents Index
 
-<<<<<<< .merge_file_KKFthu
-<<<<<<< .merge_file_LleyBq
 **Source**: [`../../../../AGENTS.md`](../../../../../../../../../../agents.md) (lines 40-904)  
 **Source**: [`../../../../agents.md`](../../../../../../../../../../agents.md) (lines 40-904)  
-=======
-**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 40-904)  
-**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 40-904)  
->>>>>>> .merge_file_XdJOBH
-=======
-**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 40-904)  
-**Source**: [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md) (lines 40-904)  
->>>>>>> .merge_file_dzVoYf
 **Total Agents**: 10  
 **Last Updated**: 2026-04-11  
 
@@ -66,15 +56,7 @@ related:
 
 ### Bidirectional Links
 - ← Back to [Main AI Docs Index](../index.md)
-<<<<<<< .merge_file_KKFthu
-<<<<<<< .merge_file_LleyBq
 - ← Back to [../../../../AGENTS.md](../../../../../../../../../../agents.md) (original source)
-=======
-- ← Back to [../../../../AGENTS.md](../../../../../../../../../../AGENTS.md) (original source)
->>>>>>> .merge_file_XdJOBH
-=======
-- ← Back to [../../../../AGENTS.md](../../../../../../../../../../AGENTS.md) (original source)
->>>>>>> .merge_file_dzVoYf
 - ← Back to [Project Docs](../../../docs/README.md)
 
 ---
@@ -86,18 +68,8 @@ To activate an agent, mention their ID or name in your request:
 - "Use Product Manager to create a PRD..."
 - "As dev, implement the story..."
 
-<<<<<<< .merge_file_KKFthu
-<<<<<<< .merge_file_LleyBq
 For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../agents.md).
 For full agent definitions, see the original [`../../../../agents.md`](../../../../../../../../../../agents.md).
-=======
-For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
-For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
->>>>>>> .merge_file_XdJOBH
-=======
-For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
-For full agent definitions, see the original [`../../../../AGENTS.md`](../../../../../../../../../../AGENTS.md).
->>>>>>> .merge_file_dzVoYf
 
 ---
 

@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 use Livewire\Volt\Component;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
+use Modules\Cms\Http\Middleware\PageSlugMiddleware;
 use function Laravel\Folio\middleware;
 use function Laravel\Folio\name;
 
 name('area-personale.impostazioni');
-// PTVX: Cms assente — auth standard, nessun middleware del modulo Cms.
-middleware(['auth']);
+middleware(PageSlugMiddleware::class);
 
 new class extends Component {
     public function mount(): void

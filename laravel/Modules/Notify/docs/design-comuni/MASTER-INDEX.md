@@ -32,21 +32,6 @@ Replicazione delle 38 pagine statiche del progetto [Design Comuni Italia](https:
 ### 🎨 Tema Sixteen
 ### 🐙 GitHub Integration
 ### 📦 Modulo Cms
-<<<<<<< .merge_file_E4gSW7
-=======
-
-**Directory**: `laravel/Modules/Cms/docs/`
-
-| Documento | File | Descrizione |
-|-----------|------|-------------|
-| **Cms Design Comuni Index** | [design_comuni_index.md](../laravel/Modules/Cms/docs/design_comuni_index.md) | **INDEX COMPLETO** modulo Cms |
-| **FAQ Architecture** | [design-comuni-faq.md](../laravel/Modules/Cms/docs/design-comuni-faq.md) | Architettura pagina FAQ |
-| **Homepage Analysis** | [design-comuni-homepage.md](../laravel/Modules/Cms/docs/design-comuni-homepage.md) | Analisi homepage |
-| **Argomenti** | [design-comuni-argomenti.md](../laravel/Modules/Cms/docs/design-comuni-argomenti.md) | Pagina argomenti |
-| **Risultati Ricerca** | [design-comuni-risultati-ricerca.md](../laravel/Modules/Cms/docs/design-comuni-risultati-ricerca.md) | Pagina ricerca |
-| **Index Modulo** | [00-index.md](../laravel/Modules/Cms/docs/00-index.md) | Indice completo modulo Cms |
-
->>>>>>> .merge_file_VK1AAL
 ### 🧩 Modulo UI
 ### 🛠️ Scripts & Tools
 

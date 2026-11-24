@@ -54,27 +54,4 @@ discussions: []
 ### Vite Error
 - If you receive an "Illuminate\Foundation\ViteException: Unable to locate file in Vite manifest" error, you can run `npm run build` or ask the user to run `npm run dev` or `composer run dev`.
 
-<<<<<<< .merge_file_D5e5Zd
 ## Cross-References
-=======
-
-
----
-
-title: "laravel core rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "laravel core rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
-
->>>>>>> .merge_file_fSzTE6

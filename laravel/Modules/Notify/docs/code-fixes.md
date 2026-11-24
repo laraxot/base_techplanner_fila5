@@ -15,19 +15,6 @@ discussions: []
 > **PHPStan Level:** Target 10
 > **Status:** Major Syntax Fixes Completed
 
-<<<<<<< .merge_file_VtFO7Q
-=======
----
-
-title: "code fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "code fixes"
-issues: []
-discussions: []
->>>>>>> .merge_file_NIf437
 ## Executive Summary
 
 ## Problems Identified

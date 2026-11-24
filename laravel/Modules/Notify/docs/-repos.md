@@ -7,14 +7,7 @@ module: notify
 type: reference
 tags: [wiki, notify, link-dump]
 created: 2026-08-24
-<<<<<<< .merge_file_5bJQeg
 updated: 2026-11-23
-=======
-updated: 2026-08-24
-<<<<<<< .merge_file_Ig1GAe
->>>>>>> .merge_file_Jv20Qa
-=======
->>>>>>> .merge_file_Q2hw0U
 ---
 
 -------------------------------------------------------------

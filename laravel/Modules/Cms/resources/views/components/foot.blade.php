@@ -8,13 +8,7 @@
   3. @vite JS del tema
 
   @livewireScripts non serve: config('livewire.inject_assets') = true.
-<<<<<<< .merge_file_rmZnN0
-<<<<<<< .merge_file_re51FA
   @see Modules/Cms/docs/bmad/filament-layout-styles-scripts.md
-=======
->>>>>>> .merge_file_oVEMUL
-=======
->>>>>>> .merge_file_A6M4VV
 --}}
 @livewire('notifications')
 

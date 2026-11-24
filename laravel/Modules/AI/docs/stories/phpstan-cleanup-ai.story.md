@@ -54,16 +54,4 @@ costanti tipizzate con docblock `@var` (che per PHPStan non conta come tipo nati
 - Issue: TODO (gh non installato su questa macchina)
 - Discussion: TODO
 
-<<<<<<< .merge_file_G3tWfi
-<<<<<<< .merge_file_FqC25x
-<<<<<<< .merge_file_Y2N7UH
 Dev story: [2026-10-06-phpstan-cleanup-ai.dev.md](./phpstan-cleanup-ai.dev.md)
-=======
-Dev story: [phpstan-cleanup-ai.dev.md](./phpstan-cleanup-ai.dev.md)
->>>>>>> .merge_file_QRWmao
-=======
-Dev story: [phpstan-cleanup-ai.dev.md](./phpstan-cleanup-ai.dev.md)
->>>>>>> .merge_file_yR43kz
-=======
-Dev story: [phpstan-cleanup-ai.dev.md](./phpstan-cleanup-ai.dev.md)
->>>>>>> .merge_file_m1ZPVa

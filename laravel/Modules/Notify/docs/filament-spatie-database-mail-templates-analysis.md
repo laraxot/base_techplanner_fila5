@@ -16,19 +16,6 @@ discussions: []
 **Modulo**: Notify  
 **Status**: 📝 **ANALISI COMPLETATA**
 
-<<<<<<< .merge_file_eNkzv0
-=======
----
-
-title: "filament spatie database mail templates analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament spatie database mail templates analysis"
-issues: []
-discussions: []
->>>>>>> .merge_file_uFmzQ0
 ## 📊 Executive Summary
 
 ## 🔍 Caratteristiche del Repository Analizzato

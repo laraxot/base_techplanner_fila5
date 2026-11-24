@@ -9,14 +9,8 @@ phase: quality-gates
 priority: P1
 related:
   - cluster3-phpstan-swarm.story.md
-<<<<<<< .merge_file_NcgWPN
-<<<<<<< .merge_file_3Fsnx6
 
 - cluster3-phpstan-swarm-20261006.story.md
-=======
->>>>>>> .merge_file_xnwLL2
-=======
->>>>>>> .merge_file_kWHMIm
 ---
 
 # Lang — PHPStan Level 10 fixes (2026-10-06)

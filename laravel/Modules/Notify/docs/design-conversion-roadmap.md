@@ -3,11 +3,7 @@ title: "DESIGN CONVERSION ROADMAP"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_EqrAMy
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_RqK87m
 qmd: "DESIGN CONVERSION ROADMAP"
 issues: []
 discussions: []
@@ -25,19 +21,6 @@ discussions: []
 **Last Updated**: 2026-04-03
 **Target**: Make all 54 test pages visually identical to Design Comuni reference using Tailwind CSS + Alpine.js
 
-<<<<<<< .merge_file_EqrAMy
-=======
----
-
-title: "DESIGN CONVERSION ROADMAP"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DESIGN CONVERSION ROADMAP"
-issues: []
-discussions: []
->>>>>>> .merge_file_RqK87m
 ## 📊 Executive Summary
 ### Current State
 ### Key Metrics
@@ -137,11 +120,7 @@ laravel/Themes/Sixteen/docs/pages/<page-name>/
 ### Theme-Level
 ```
 laravel/Themes/Sixteen/docs/
-<<<<<<< .merge_file_EqrAMy
 ├── INDEX.md                                    # Main index
-=======
-├── index.md                                    # Main index
->>>>>>> .merge_file_RqK87m
 ├── COMPLETE-VISUAL-PARITY-REPORT.md          # All 54 pages
 ├── PRIORITY-MATRIX.json                       # Workload planning
 ├── visual-parity-data.json                    # Machine-readable data

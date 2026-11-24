@@ -16,35 +16,6 @@ discussions: []
 **Status**: ✅ CRITICAL RULE  
 **Priority**: BLOCKER
 
-<<<<<<< .merge_file_yC1Ugq
-=======
----
-<<<<<<< .merge_file_XYtD5w
-=======
-
-title: "translation structure 5 levels"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation structure 5 levels"
-issues: []
-discussions: []
-## 🎯 The Rule
-
-> **SEMPRE** usare traduzioni a **5 LIVELLI**:
-> `__('namespace::context.collection.element.type')`
->>>>>>> .merge_file_geTumP
-
-title: "translation structure 5 levels"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation structure 5 levels"
-issues: []
-discussions: []
->>>>>>> .merge_file_pJAZEX
 ## 🎯 The Rule
 
 ## 📚 Translation Structure
@@ -287,14 +258,6 @@ __('forecast::fields.outcome.title.label')  // aggiunto .label
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_XYtD5w
-<<<<<<< .merge_file_yC1Ugq
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_pJAZEX
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_geTumP
 - **[Rules Index](00-index.md)** - All rules
 - **[Multi-Outcome Universal](multi-outcome-universal.md)** - Core principle
 - **[Use Models Not DB::Table](use-models-not-db-table.md)** - Model usage

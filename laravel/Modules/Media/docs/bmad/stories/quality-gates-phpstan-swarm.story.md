@@ -1,17 +1,4 @@
 ---
-<<<<<<< .merge_file_Fcktlt
-<<<<<<< .merge_file_eA3PUA
-=======
-=======
->>>>>>> .merge_file_1MzWB8
-<<<<<<< .merge_file_4iFgAE
-qmd: "media bmad stories quality gates phpstan swarm story md"
-=======
->>>>>>> .merge_file_3PvcCd
-<<<<<<< .merge_file_Fcktlt
->>>>>>> .merge_file_0LMDc3
-=======
->>>>>>> .merge_file_1MzWB8
 id: quality-gates-phpstan-swarm-2026-09-23
 slug: media-phpstan-swarm-2026-09-23-verify-clean
 title: "PHPStan swarm 2026-09-23: verifica Modules/Media, 0 errori confermati"

@@ -3,15 +3,7 @@ title: "analisi completa 2025 10 01"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_3wJPdC
-<<<<<<< .merge_file_laYdrY
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_NI9xjB
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_FBYU0X
 qmd: "analisi completa 2025 10 01"
 issues: []
 discussions: []
@@ -20,38 +12,8 @@ discussions: []
 # 📊 ANALISI COMPLETA PROGETTO FIXCITY
 ## Data: 1 Ottobre 2025
 
-<<<<<<< .merge_file_3wJPdC
-<<<<<<< .merge_file_laYdrY
 ## 🎯 EXECUTIVE SUMMARY
 
-=======
-=======
->>>>>>> .merge_file_FBYU0X
----
-
-title: "analisi completa 2025 10 01"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi completa 2025 10 01"
-issues: []
-discussions: []
-## 🎯 EXECUTIVE SUMMARY
-
-**FixCity** è una piattaforma di segnalazione cittadina **enterprise-ready** con:
-- ✅ **83% moduli** certificati PHPStan Level 9
-- ✅ **Core funzionale** completo al 90%
-- ⚠️ **Performance** ottimizzabile (+50% possibile)
-- ⚠️ **Test coverage** da migliorare (30% → 80%)
-- 🚀 **Potenziale commerciale** altissimo (7900+ comuni IT)
-
----
-
-<<<<<<< .merge_file_3wJPdC
->>>>>>> .merge_file_NI9xjB
-=======
->>>>>>> .merge_file_FBYU0X
 ## 📦 COSA È FIXCITY
 
 ### Scopo Principale
@@ -509,15 +471,3 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 ---
 
 *"Un progetto solido con fondamenta eccellenti e potenziale straordinario"* 🏆
-<<<<<<< .merge_file_3wJPdC
-<<<<<<< .merge_file_laYdrY
-=======
-
-
-
->>>>>>> .merge_file_NI9xjB
-=======
-
-
-
->>>>>>> .merge_file_FBYU0X

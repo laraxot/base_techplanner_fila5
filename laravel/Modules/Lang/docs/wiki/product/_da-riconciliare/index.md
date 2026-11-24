@@ -2,14 +2,8 @@
 qmd: "Index"
 issues: []
 discussions: []
-<<<<<<< .merge_file_87TpEQ
-<<<<<<< .merge_file_u8ByBY
 title: "lang — product"
 
-=======
->>>>>>> .merge_file_2pPUIu
-=======
->>>>>>> .merge_file_1gqLOM
 title: "Index"
 module: lang
 type: product
@@ -24,14 +18,8 @@ Documentation for `lang` module categorized as **product**.
 
 ## Files
 
-<<<<<<< .merge_file_87TpEQ
-<<<<<<< .merge_file_u8ByBY
 - [`INDEX.md`](./index.md)
 
-=======
->>>>>>> .merge_file_2pPUIu
-=======
->>>>>>> .merge_file_1gqLOM
 - [`index.md`](./index.md)
 - [`product-strategy.md`](./product-strategy.md)
 - [`strategy.md`](./strategy.md)

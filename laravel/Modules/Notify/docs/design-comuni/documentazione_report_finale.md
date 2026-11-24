@@ -19,19 +19,6 @@ Aggiornamento completo della documentazione per la pagina FAQ del progetto Desig
 - **Responsabile**: AI Agent Team
 - **Stato**: ✅ COMPLETATO
 
-<<<<<<< .merge_file_IsOAVR
-=======
----
-
-title: "documentazione report finale"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "documentazione report finale"
-issues: []
-discussions: []
->>>>>>> .merge_file_rVvqEm
 ## 📚 Documenti Creati
 ### 1. Modulo Cms
 

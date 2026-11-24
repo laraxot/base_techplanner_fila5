@@ -1,20 +1,10 @@
 ---
-title: "Analisi Visiva"
+title: "analisi visiva"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_bRzCkn
-<<<<<<< .merge_file_vhsjEO
 updated: 2026-11-23
 qmd: "analisi visiva"
-=======
-updated: 2026-09-26
-qmd: "Analisi Visiva"
->>>>>>> .merge_file_EzEMvg
-=======
-updated: 2026-09-26
-qmd: "Analisi Visiva"
->>>>>>> .merge_file_PaxuK0
 issues: []
 discussions: []
 ---
@@ -29,12 +19,12 @@ discussions: []
 
 ---
 
-title: "ANALISI VISIVA"
+title: "analisi visiva"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "ANALISI VISIVA"
+qmd: "analisi visiva"
 issues: []
 discussions: []
 ## 1. Header Structure

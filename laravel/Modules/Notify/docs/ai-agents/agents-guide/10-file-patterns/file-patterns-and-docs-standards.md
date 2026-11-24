@@ -90,20 +90,3 @@ Indice centralizzato: `laravel/docs/roadmap/00-index.md`
 2. **After coding**: Verify and improve docs
 3. **No new docs directories** - always use existing ones
 4. **Consistent structure** - follow the same patterns across all modules
-<<<<<<< .merge_file_nc5H2N
-=======
-
----
-
-title: "file patterns and docs standards"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "file patterns and docs standards"
-issues: []
-discussions: []
-<<<<<<< .merge_file_m2mIlm
->>>>>>> .merge_file_OYfLPQ
-=======
->>>>>>> .merge_file_DIZkra

@@ -31,53 +31,6 @@ $userClass::query()->count()
 
 Questo permette al modulo di funzionare in qualsiasi progetto senza dipendere da moduli specifici.
 
-<<<<<<< .merge_file_Wa3xKc
-=======
----
-<<<<<<< .merge_file_ZWdxWq
-=======
-
-title: "agents module architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents module architecture"
-issues: []
-discussions: []
-## Module Directory Structure
-
-Ogni modulo segue questa struttura:
-
-```
-ModuleName/
-├── Config/
-├── Console/
-├── Database/
-│   ├── Migrations/
-│   └── Seeders/
-├── Http/
-│   ├── Controllers/
-│   ├── Middleware/
-│   └── Requests/
-├── Models/
-├── Resources/
-│   ├── js/
-│   └── views/
-├── Routes/
-└── Services/
-```
->>>>>>> .merge_file_P9bblv
-
-title: "agents module architecture"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents module architecture"
-issues: []
-discussions: []
->>>>>>> .merge_file_QuNu7s
 ## Module Directory Structure
 
 ## Composer Merge Plugin Configuration
@@ -167,16 +120,6 @@ git rm path/to/submodule
 - [Indice AGENTS](./agents-split-index.md)
 - [module-dependencies.md](./module-dependencies.md) - Più dettagliato
 - [git-submodules.md](./git-submodules.md) - Dettagli git
-<<<<<<< .merge_file_ZWdxWq
-<<<<<<< .merge_file_Wa3xKc
 - [AGENTS.md originale](../../agents.md)
 - [agents.md originale](../../agents.md)
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_QuNu7s
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_P9bblv
 - [Index principale](./index.md)

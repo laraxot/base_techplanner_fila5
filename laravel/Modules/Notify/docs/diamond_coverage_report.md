@@ -16,19 +16,6 @@ discussions: []
 **Obiettivo**: 100% Test Coverage  
 **Status**: 🚀 IN PROGRESS  
 
-<<<<<<< .merge_file_Pwz0av
-=======
----
-
-title: "diamond coverage report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "diamond coverage report"
-issues: []
-discussions: []
->>>>>>> .merge_file_uGvVDk
 ## 🎯 OBIETTIVO DIAMANTE
 
 ## 📊 TEST SUITES CREATE (8 totali)

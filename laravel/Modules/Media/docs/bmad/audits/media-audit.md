@@ -4,24 +4,10 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Media
-<<<<<<< .merge_file_4IeuLN
-<<<<<<< .merge_file_tNBkTI
 <<<<<<< .merge_file_qPJPYf
 qmd: "audit approfondito Media inventario PHPStan Pest policy Filament Actions"
 =======
 qmd: "audit approfondito Media inventario policy Filament Actions AwsTest S3Test senza guard TemporaryUpload prunable commentato Media id cast string bigint cancellazione fisica StreamVideoAction ConvertController codice morto PHPStan Pest"
-=======
-=======
->>>>>>> .merge_file_HeFvtL
-<<<<<<< .merge_file_cMA4DX
-qmd: "audit approfondito Media AwsTest S3Test senza guard TemporaryUpload prunable commentato Media id cast string bigint cancellazione fisica StreamVideoAction ConvertController codice morto PHPStan Pest"
-=======
-qmd: "audit approfondito Media inventario policy Filament Actions AwsTest S3Test senza guard TemporaryUpload prunable commentato Media id cast string bigint cancellazione fisica StreamVideoAction ConvertController codice morto PHPStan Pest"
->>>>>>> .merge_file_qFxrh1
-<<<<<<< .merge_file_4IeuLN
->>>>>>> .merge_file_L51kcQ
-=======
->>>>>>> .merge_file_HeFvtL
 related:
   - ../audit.md
   - ../piano-miglioramento.md
@@ -30,28 +16,14 @@ related:
   - ../epics.md
   - ../../ecc/media-ecc-audit.md
   - ../stories/module-bmad-audit.story.md
-<<<<<<< .merge_file_4IeuLN
-<<<<<<< .merge_file_tNBkTI
 >>>>>>> .merge_file_tMErbB
-=======
->>>>>>> .merge_file_L51kcQ
-=======
->>>>>>> .merge_file_HeFvtL
 ---
 
 # Audit approfondito — Media
 
 ## Metodo
 
-<<<<<<< .merge_file_4IeuLN
-<<<<<<< .merge_file_tNBkTI
 <<<<<<< .merge_file_qPJPYf
-=======
-<<<<<<< .merge_file_cMA4DX
->>>>>>> .merge_file_L51kcQ
-=======
-<<<<<<< .merge_file_cMA4DX
->>>>>>> .merge_file_HeFvtL
 Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
 lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
 inventata. Pest dichiarato solo se eseguito.
@@ -108,14 +80,6 @@ Vedi [piano-miglioramento.md](../piano-miglioramento.md).
 - [ECC](../../ecc/media-ecc-audit.md)
 - [Story](../stories/module-bmad-audit.story.md)
 =======
-<<<<<<< .merge_file_4IeuLN
-<<<<<<< .merge_file_tNBkTI
-=======
->>>>>>> .merge_file_qFxrh1
->>>>>>> .merge_file_L51kcQ
-=======
->>>>>>> .merge_file_qFxrh1
->>>>>>> .merge_file_HeFvtL
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura di policy, pagine del cluster `Test`, `TemporaryUpload`, `StreamVideoAction`, `ConvertController`, migration; `php artisan model:prune --pretend --model=…` (sola lettura); PHPStan sul modulo; Pest sullo scratch DB del repo. La documentazione è stata trattata come ipotesi: **dove codice e docs divergono vince il codice.** Nessuna UI o screenshot inventati; nessun comportamento a runtime del pannello è stato provato in un browser.
 
 ## Scopo (perché esiste)
@@ -244,10 +208,4 @@ cd laravel
 ## Riferimenti
 
 [Sintesi](../audit.md) · [ECC](../../ecc/media-ecc-audit.md) · [Story](../stories/module-bmad-audit.story.md) · [Brainstorming](../brainstorming.md)
-<<<<<<< .merge_file_4IeuLN
-<<<<<<< .merge_file_tNBkTI
 >>>>>>> .merge_file_tMErbB
-=======
->>>>>>> .merge_file_L51kcQ
-=======
->>>>>>> .merge_file_HeFvtL

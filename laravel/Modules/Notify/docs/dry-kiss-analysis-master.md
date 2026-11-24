@@ -3,11 +3,7 @@ title: "DRY KISS ANALYSIS MASTER"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_d9c0Lf
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_jqEoXQ
 qmd: "DRY KISS ANALYSIS MASTER"
 issues: []
 discussions: []
@@ -20,19 +16,6 @@ discussions: []
 **Scope:** 18 Moduli + 2 Temi = 20 Componenti  
 **Status:** ✅ **ANALISI DIVINA COMPLETATA**
 
-<<<<<<< .merge_file_d9c0Lf
-=======
----
-
-title: "DRY KISS ANALYSIS MASTER"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "DRY KISS ANALYSIS MASTER"
-issues: []
-discussions: []
->>>>>>> .merge_file_jqEoXQ
 ## 🎯 EXECUTIVE SUMMARY
 ### Dati Globali Progetto
 

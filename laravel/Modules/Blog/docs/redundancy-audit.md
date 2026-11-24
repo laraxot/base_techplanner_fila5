@@ -1,26 +1,8 @@
 ---
-<<<<<<< .merge_file_4MvL9I
-<<<<<<< .merge_file_EOynci
-=======
-<<<<<<< .merge_file_p7tqQM
-=======
->>>>>>> .merge_file_hsqPn6
-=======
-<<<<<<< .merge_file_p7tqQM
-=======
->>>>>>> .merge_file_mLZcK0
 updated: 2026-09-26
 qmd: "redundancy audit 2026 05 21"
 issues: []
 discussions: []
-<<<<<<< .merge_file_4MvL9I
-<<<<<<< .merge_file_EOynci
-=======
->>>>>>> .merge_file_exHJtH
->>>>>>> .merge_file_hsqPn6
-=======
->>>>>>> .merge_file_exHJtH
->>>>>>> .merge_file_mLZcK0
 title: "Blog redundancy audit 2026-05-21"
 type: audit
 module: Blog
@@ -28,20 +10,7 @@ tags: [redundancy, blade, theme-boundary]
 created: 2026-05-21
 related:
   - https://github.com/laraxot/base_fixcity_fila5/issues/89
-<<<<<<< .merge_file_4MvL9I
-<<<<<<< .merge_file_EOynci
 status: draft
-=======
-=======
->>>>>>> .merge_file_mLZcK0
-<<<<<<< .merge_file_p7tqQM
-=======
-status: draft
->>>>>>> .merge_file_exHJtH
-<<<<<<< .merge_file_4MvL9I
->>>>>>> .merge_file_hsqPn6
-=======
->>>>>>> .merge_file_mLZcK0
 ---
 
 # Blog redundancy audit 2026-05-21

@@ -16,37 +16,6 @@ discussions: []
 **Status**: ✅ CRITICAL RULE  
 **Priority**: BLOCKER
 
-<<<<<<< .merge_file_5EtT7l
-=======
----
-<<<<<<< .merge_file_nHKeVg
-=======
-
-title: "translation structure 5 levels mandatory"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation structure 5 levels mandatory"
-issues: []
-discussions: []
-## 🎯 The Rule
-
-> **SEMPRE** usare traduzioni a **5 LIVELLI** con `__()`:
-> `__('namespace::context.collection.element.type')`
-
-**MAI** usare `$tx()` o traduzioni con meno di 5 livelli!
->>>>>>> .merge_file_0IEzpB
-
-title: "translation structure 5 levels mandatory"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "translation structure 5 levels mandatory"
-issues: []
-discussions: []
->>>>>>> .merge_file_64qr4q
 ## 🎯 The Rule
 
 ## ❌ WRONG Examples (NEVER DO THIS)

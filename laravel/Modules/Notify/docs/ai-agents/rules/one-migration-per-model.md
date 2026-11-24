@@ -199,25 +199,8 @@ Tutto il resto è **RUMORE**.
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_gd4ija
-<<<<<<< .merge_file_sFsbKw
 - **[Rules Index](00-index.md)** - All rules
 - **[DRY Principle](../../dry-kiss.md)** - DRY + KISS
-=======
-=======
->>>>>>> .merge_file_fn8m2w
-- **[Rules Index](00-index.md)** - All rules
-<<<<<<< .merge_file_tC8GUu
-- **[DRY Principle](../guidelines/dry-kiss.md)** - DRY + KISS
-=======
-- **[Rules Index](00-index.md)** - All rules
-- **[DRY Principle](../../dry-kiss.md)** - DRY + KISS
-- **[DRY Principle](../../dry-kiss.md)** - DRY + KISS
->>>>>>> .merge_file_no9qeo
-<<<<<<< .merge_file_gd4ija
->>>>>>> .merge_file_no0MCV
-=======
->>>>>>> .merge_file_fn8m2w
 - **[Translation Structure](translation-structure-5-levels.md)** - 5 levels rule
 
 ### Module Docs

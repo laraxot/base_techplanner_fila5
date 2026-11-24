@@ -4,30 +4,15 @@ type: index
 status: active
 updated: 2026-11-16
 module: Activity
-<<<<<<< .merge_file_MCt0zR
-<<<<<<< .merge_file_dGvB9D
-<<<<<<< .merge_file_sSabUj
 <<<<<<< .merge_file_gxduvF
 qmd: "indice BMAD Activity audit purpose piano stories"
 =======
 qmd: "indice BMAD Activity purpose architecture decision-log epics brainstorming audit piano stories ECC"
 >>>>>>> .merge_file_qLUghT
-=======
-qmd: "indice BMAD Activity purpose architecture decision-log epics brainstorming audit piano stories ECC"
->>>>>>> .merge_file_dtc1To
-=======
-qmd: "indice BMAD Activity purpose architecture decision-log epics brainstorming audit piano stories ECC"
->>>>>>> .merge_file_LTx470
-=======
-qmd: "indice BMAD Activity purpose architecture decision-log epics brainstorming audit piano stories ECC"
->>>>>>> .merge_file_rNJdSG
 ---
 
 # Indice BMAD — Activity
 
-<<<<<<< .merge_file_MCt0zR
-<<<<<<< .merge_file_dGvB9D
-<<<<<<< .merge_file_sSabUj
 <<<<<<< .merge_file_gxduvF
 - [Purpose](./purpose.md)
 - [Audit](./audit.md)
@@ -37,12 +22,6 @@ qmd: "indice BMAD Activity purpose architecture decision-log epics brainstorming
 - [ECC](../ecc/00-index.md)
 - [Purpose root](../purpose.md)
 =======
-=======
->>>>>>> .merge_file_dtc1To
-=======
->>>>>>> .merge_file_LTx470
-=======
->>>>>>> .merge_file_rNJdSG
 Entry point del pack. Indice storico/legacy: [index.md](./index.md).
 
 | Documento | Ruolo |
@@ -57,24 +36,5 @@ Entry point del pack. Indice storico/legacy: [index.md](./index.md).
 | [piano-miglioramento.md](./piano-miglioramento.md) | piano P1/P2 |
 | [stories/module-bmad-audit.story.md](./stories/module-bmad-audit.story.md) | story dell'audit |
 | [ECC](../ecc/00-index.md) | checklist e stato controlli |
-<<<<<<< .merge_file_MCt0zR
-<<<<<<< .merge_file_dGvB9D
-<<<<<<< .merge_file_sSabUj
 | [purpose.md (root docs)](../purpose.md) | scopo del modulo nella documentazione generale |
 >>>>>>> .merge_file_qLUghT
-=======
-=======
->>>>>>> .merge_file_LTx470
-=======
->>>>>>> .merge_file_rNJdSG
-<<<<<<< .merge_file_ECz6fH
-=======
-| [purpose.md (root docs)](../purpose.md) | scopo del modulo nella documentazione generale |
->>>>>>> .merge_file_tknTpt
-<<<<<<< .merge_file_MCt0zR
-<<<<<<< .merge_file_dGvB9D
->>>>>>> .merge_file_dtc1To
-=======
->>>>>>> .merge_file_LTx470
-=======
->>>>>>> .merge_file_rNJdSG

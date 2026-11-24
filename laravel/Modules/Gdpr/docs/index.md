@@ -42,7 +42,7 @@ Indice organizzato per argomento di tutti i file `.md` sotto `Modules/Gdpr/docs/
 - [packages/permissions.md](packages/permissions.md)
 - [packages/privacy.md](packages/privacy.md)
 - [packages/privacy-policy.md](packages/privacy-policy.md)
-- [packages/SECURITY.md](packages/security.md)
+- [packages/security.md](packages/security.md)
 
 ## Generazione PDF (html2pdf/)
 
@@ -50,7 +50,7 @@ Indice organizzato per argomento di tutti i file `.md` sotto `Modules/Gdpr/docs/
 - [html2pdf/usage.md](html2pdf/usage.md)
 - [html2pdf/advanced.md](html2pdf/advanced.md)
 - [html2pdf/laravel.md](html2pdf/laravel.md)
-- [html2pdf/SECURITY.md](html2pdf/security.md)
+- [html2pdf/security.md](html2pdf/security.md)
 - [html2pdf/styling.md](html2pdf/styling.md)
 
 ## Qualità del codice e performance
@@ -119,7 +119,7 @@ Nota: `roadmap/` e `development/roadmap/` contengono coppie con lo stesso nome (
 - [wiki/schema.md](wiki/schema.md)
 - [wiki/log.md](wiki/log.md)
 - [wiki/bmad-method.md](wiki/bmad-method.md)
-- [wiki/AGENTS.md](wiki/AGENTS.md)
+- [wiki/agents.md](wiki/agents.md)
 - [wiki/commands/index.md](wiki/commands/index.md)
 - [wiki/rules/index.md](wiki/rules/index.md)
 - [wiki/skills/index.md](wiki/skills/index.md)
@@ -146,13 +146,13 @@ Nota: `roadmap/` e `development/roadmap/` contengono coppie con lo stesso nome (
 
 ### Agenti LLM (llm-wiki/)
 
-- [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md)
+- [llm-wiki/agents.md](llm-wiki/agents.md)
 
 ## Import grezzi (raw/)
 
 - [raw/README.md](raw/README.md)
 - [raw/index.md](raw/index.md)
-- [raw/root-import/CHANGELOG.md](raw/root-import/changelog.md)
+- [raw/root-import/changelog.md](raw/root-import/changelog.md)
 - [raw/root-import/cloudflare.md](raw/root-import/cloudflare.md)
 - [raw/root-import/consents.md](raw/root-import/consents.md)
 - [raw/root-import/cookie-consent.md](raw/root-import/cookie-consent.md)
@@ -161,32 +161,12 @@ Nota: `roadmap/` e `development/roadmap/` contengono coppie con lo stesso nome (
 - [raw/root-import/links.md](raw/root-import/links.md)
 - [raw/root-import/repo.md](raw/root-import/repo.md)
 
-<<<<<<< .merge_file_NZX8k0
-<<<<<<< .merge_file_srVoDr
 Le varianti `*-1.md` in `raw/root-import/` (`cloudflare.md`, `consents.md`, `cookie-consent.md`, `filament.md`, `google-analytics.md`, `links.md`, `repo.md`) sono duplicati byte-per-byte dei rispettivi file senza suffisso: vedi sezione "Storico / da consolidare".
-=======
-Le varianti `*-1.md` in `raw/root-import/` (`cloudflare-1.md`, `consents-1.md`, `cookie-consent.md`, `filament-1.md`, `google-analytics.md`, `links-1.md`, `repo-1.md`) sono duplicati byte-per-byte dei rispettivi file senza suffisso: vedi sezione "Storico / da consolidare".
->>>>>>> .merge_file_wXqDKS
-=======
-Le varianti `*-1.md` in `raw/root-import/` (`cloudflare-1.md`, `consents-1.md`, `cookie-consent.md`, `filament-1.md`, `google-analytics.md`, `links-1.md`, `repo-1.md`) sono duplicati byte-per-byte dei rispettivi file senza suffisso: vedi sezione "Storico / da consolidare".
->>>>>>> .merge_file_q6cSmp
 
 ## Storico / da consolidare (duplicati — non cancellati)
 
 I file seguenti sono duplicati o quasi-duplicati individuati durante l'audit. Non sono stati toccati: restano collegati qui per tracciabilità, in attesa di una consolidazione esplicita.
 
-<<<<<<< .merge_file_NZX8k0
-<<<<<<< .merge_file_srVoDr
-=======
-- **Indici concorrenti in root**: [00-index.md](00-index.md), [00-index.md](00-index.md), [index.md](index.md) contengono bozze di indice alternative a questo file (`index.md`), con contenuti diversi tra loro (una è uno stub auto-generato vuoto, un'altra un elenco "canoni/duplicati/deprecated", l'ultima un indice esteso con molti link a file oggi inesistenti nel modulo). Da valutare se unificare in questo `index.md`.
-- **README duplicato di contenuto**: [README.md](README.md) e [00-index.md](00-index.md) condividono lo stesso contenuto esteso (indice "Lettura essenziale" con link a file non presenti in `docs/`, es. `philosophy.md`, `consent-management.md`, `PRD.md`). Da verificare/pulire in futuro, non in questo task.
-- **`CHANGELOG.md` vs `CHANGELOG.md`**: contenuto identico. `CHANGELOG.md` è il nome canonico (maiuscolo, per standard `module-docs`).
->>>>>>> .merge_file_wXqDKS
-=======
-- **Indici concorrenti in root**: [00-index.md](00-index.md), [00-index.md](00-index.md), [index.md](index.md) contengono bozze di indice alternative a questo file (`index.md`), con contenuti diversi tra loro (una è uno stub auto-generato vuoto, un'altra un elenco "canoni/duplicati/deprecated", l'ultima un indice esteso con molti link a file oggi inesistenti nel modulo). Da valutare se unificare in questo `index.md`.
-- **README duplicato di contenuto**: [README.md](README.md) e [00-index.md](00-index.md) condividono lo stesso contenuto esteso (indice "Lettura essenziale" con link a file non presenti in `docs/`, es. `philosophy.md`, `consent-management.md`, `PRD.md`). Da verificare/pulire in futuro, non in questo task.
-- **`CHANGELOG.md` vs `CHANGELOG.md`**: contenuto identico. `CHANGELOG.md` è il nome canonico (maiuscolo, per standard `module-docs`).
->>>>>>> .merge_file_q6cSmp
 - **`cloudflare.md` / `cloudflare.txt` / `root-md-files/cloudflare.md` / `raw/root-import/cloudflare.md` / `raw/root-import/cloudflare-1.md`**: stesso argomento, versioni diverse (root `cloudflare.md` ha front-matter che rimanda al canonico in `Themes/docs/shared-components/cloudflare.md`; `root-md-files/cloudflare.md` contiene solo link grezzi).
 - **`consents.md` / `consents.txt` / `root-md-files/consents.md` / `raw/root-import/consents.md` / `raw/root-import/consents-1.md`**: stesso argomento in più formati/import.
 - **`cookie_consent.md` / `cookie_consent.txt` / `root-md-files/cookie-consent.md` / `raw/root-import/cookie-consent.md` / `raw/root-import/cookie-consent-1.md` / `_integration/cookie-consent.md` / `packages/cookie-consent.md` / `roadmap/cookie-consent.md` / `development/roadmap/cookie-consent.md`**: argomento "cookie consent" frammentato su 9 file in 6 directory diverse.
@@ -198,16 +178,6 @@ I file seguenti sono duplicati o quasi-duplicati individuati durante l'audit. No
 - **`phpstan-report.md` / `phpstan-report.txt`**: stesso report in due formati.
 - **`code-quality-report.md` vs `code-quality-improvement-report.md`**: possibile sovrapposizione di ambito, da verificare.
 - **Roadmap frammentata**: `roadmap/backup-dati.md` vs `development/roadmap/backup-dati.md`; `roadmap/cookie-consent.md` vs `development/roadmap/cookie-consent.md`; `roadmap/log-attivita.md` vs `development/roadmap/log-attivita.md`; inoltre `roadmap/roadmap.md`, `roadmap/roadmap-q4.md`, `roadmap/-q4-roadmap.md` e `roadmap/legacy-roadmap.md` sembrano variazioni/superseded dello stesso tema roadmap trimestrale.
-<<<<<<< .merge_file_NZX8k0
-<<<<<<< .merge_file_srVoDr
-=======
-- **Indici `index.md` / `index.md` duplicati per-cartella** (stesso contenuto, stessa dimensione, entrambi presenti sul filesystem case-sensitive): `wiki/commands/`, `wiki/concepts/`, `wiki/rules/`, `wiki/skills/`, `wiki/memories/`. Il nome canonico minuscolo è `index.md`.
-- **Agenti duplicati**: [wiki/AGENTS.md](wiki/AGENTS.md), [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md), [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md) trattano lo stesso argomento in tre file/varianti di maiuscole.
->>>>>>> .merge_file_wXqDKS
-=======
-- **Indici `index.md` / `index.md` duplicati per-cartella** (stesso contenuto, stessa dimensione, entrambi presenti sul filesystem case-sensitive): `wiki/commands/`, `wiki/concepts/`, `wiki/rules/`, `wiki/skills/`, `wiki/memories/`. Il nome canonico minuscolo è `index.md`.
-- **Agenti duplicati**: [wiki/AGENTS.md](wiki/AGENTS.md), [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md), [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md) trattano lo stesso argomento in tre file/varianti di maiuscole.
->>>>>>> .merge_file_q6cSmp
 - **`raw/root-import/*.md` vs le sue varianti `*-1.md`**: file duplicati byte-per-byte (stesso import eseguito due volte), elencati sopra.
 
 ## Fuori ambito indice (non `.md`)

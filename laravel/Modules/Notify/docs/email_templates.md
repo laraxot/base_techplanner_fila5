@@ -322,11 +322,7 @@ php artisan tinker
 
 ### **Documentazione Tecnica**
 - [Documentazione Spatie Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
-<<<<<<< .merge_file_DdAd8C
 - [Gestione Traduzioni](../Lang/docs/translation_keys_best_practices.md)
-=======
-- [Gestione Traduzioni](../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
->>>>>>> .merge_file_xz69I3
 - [Configurazione Email](../../../docs/email-configuration.md)
 - [SaluteOra: Missing Mail Template Error](../../SaluteOra/project_docs/errori/missing-mail-template-spatiemail.md) - **URGENT**
 - [Configurazione Email](../../../docs/email-configuration.md)- [SaluteOra: Missing Mail Template Error](../../SaluteOra/project_docs/errori/missing-mail-template-spatiemail.md) - **URGENT**
@@ -344,20 +340,3 @@ php artisan tinker
 - [Notification Channels Implementation](./notification_channels_implementation.md)
 - [SMS Implementation](./sms_implementation.md)
 - [Troubleshooting](./troubleshooting.md)
-<<<<<<< .merge_file_DdAd8C
-=======
-
----
-
-title: "email templates"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "email templates"
-issues: []
-discussions: []
-**Ultimo aggiornamento**: 26 Giugno 2025  
-**Status**: Aggiornato per errore critico MissingMailTemplate  
-**Priorità**: URGENT - Fix sistema registrazione
->>>>>>> .merge_file_xz69I3

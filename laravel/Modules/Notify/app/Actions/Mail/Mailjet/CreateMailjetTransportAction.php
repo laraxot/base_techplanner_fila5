@@ -24,15 +24,9 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  * - `sandbox`: Mailjet valida il messaggio e risponde come per un invio, ma non consegna nulla.
  *
  * @see Modules/Notify/docs/email/mailjet.md
-<<<<<<< .merge_file_78CzqO
-<<<<<<< .merge_file_s9kg90
  *
  * @see docs/contracts/create-mailjet-transport-action.md
  * @contract docs/contracts/create-mailjet-transport-action.md
-=======
->>>>>>> .merge_file_TEIbQb
-=======
->>>>>>> .merge_file_8sjGqc
  */
 final class CreateMailjetTransportAction
 {
@@ -53,8 +47,6 @@ final class CreateMailjetTransportAction
             throw new InvalidArgumentException(\sprintf('Mailjet: schema "%s" non valido, usare "api" o "smtp".', $scheme));
         }
 
-<<<<<<< .merge_file_78CzqO
-<<<<<<< .merge_file_s9kg90
         $options = $scheme === 'api' ? [
             'sandbox' => $sandbox ? 'true' : 'false',
         ] : [];
@@ -69,16 +61,5 @@ final class CreateMailjetTransportAction
             null,
             $options,
         ));
-=======
-=======
->>>>>>> .merge_file_8sjGqc
-        $options = $scheme === 'api' ? ['sandbox' => $sandbox ? 'true' : 'false'] : [];
-
-        return (new MailjetTransportFactory(null, $client ?? HttpClient::create()))
-            ->create(new Dsn('mailjet+'.$scheme, 'default', $key, $secret, null, $options));
-<<<<<<< .merge_file_78CzqO
->>>>>>> .merge_file_TEIbQb
-=======
->>>>>>> .merge_file_8sjGqc
     }
 }

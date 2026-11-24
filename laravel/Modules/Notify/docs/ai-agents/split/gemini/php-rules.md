@@ -46,26 +46,4 @@ protected function isAccessible(User $user, ?string $path = null): bool
 
 - Add useful array shape type definitions when appropriate.
 
-<<<<<<< .merge_file_Qr3gvu
 ## Cross-References
-=======
-
----
-
-title: "php rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "php rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../laravel/gemini.md](../../../../laravel/../../../../laravel/gemini.md) — Original source
-
->>>>>>> .merge_file_FDI7RW

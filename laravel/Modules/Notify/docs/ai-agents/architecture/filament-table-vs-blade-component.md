@@ -15,32 +15,6 @@ discussions: []
 **Status**: ✅ MANDATORY ARCHITECTURE RULE  
 **Priority**: 🔴 CRITICAL
 
-<<<<<<< .merge_file_zyJxSq
-=======
----
-<<<<<<< .merge_file_6LllJz
-=======
-
-title: "filament table vs blade component"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament table vs blade component"
-issues: []
-discussions: []
-## 🚨 REGOLA FONDAMENTALE
->>>>>>> .merge_file_2dKAzK
-
-title: "filament table vs blade component"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "filament table vs blade component"
-issues: []
-discussions: []
->>>>>>> .merge_file_E7EnhP
 ## 🚨 REGOLA FONDAMENTALE
 
 ## 📊 DECISION MATRIX

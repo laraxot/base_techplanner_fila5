@@ -41,37 +41,6 @@ class CreateEventAction
 }
 ```
 
-<<<<<<< .merge_file_nbAP5h
-=======
----
-<<<<<<< .merge_file_XZiAuD
-=======
-
-title: "claude patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "claude patterns"
-issues: []
-discussions: []
-## 2. Data Transfer Objects
-
-Use Spatie Laravel Data per DTOs:
-
-```php
-use Spatie\LaravelData\Data;
->>>>>>> .merge_file_Djp1zT
-
-title: "claude patterns"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "claude patterns"
-issues: []
-discussions: []
->>>>>>> .merge_file_f8Yuip
 ## 2. Data Transfer Objects
 
 ## 3. Strict Typing

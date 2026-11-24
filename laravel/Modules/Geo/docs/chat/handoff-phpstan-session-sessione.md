@@ -6,15 +6,7 @@ discussions: []
 title: handoff sessione PHPStan 2026-07-08
 type: chat
 tags: [phpstan, session, lang, job, marker-git, blade-component]
-<<<<<<< .merge_file_UYB7vn
-<<<<<<< .merge_file_JpVfTn
 updated: 2026-11-23
-=======
-updated: 2026-07-08
->>>>>>> .merge_file_AiVaBZ
-=======
-updated: 2026-07-08
->>>>>>> .merge_file_CINSUI
 ---
 
 # Handoff — Sessione PHPStan 2026-07-08
@@ -46,15 +38,7 @@ updated: 2026-07-08
 
 **Metodo**:
 ```bash
-<<<<<<< .merge_file_UYB7vn
-<<<<<<< .merge_file_JpVfTn
 sed -i '/CONFLICT_START\|-------\|CONFLICT_END/d' <file>
-=======
-sed -i '/<<<<<<<\|=======\|>>>>>>>/d' <file>
->>>>>>> .merge_file_AiVaBZ
-=======
-sed -i '/<<<<<<<\|=======\|>>>>>>>/d' <file>
->>>>>>> .merge_file_CINSUI
 ```
 
 **File toccati**:
@@ -63,15 +47,7 @@ sed -i '/<<<<<<<\|=======\|>>>>>>>/d' <file>
 - `laravel/Modules/Activity/docs/testing-guidelines.md`
 - Tutti i `.md` in Modules (batch cleanup)
 
-<<<<<<< .merge_file_UYB7vn
-<<<<<<< .merge_file_JpVfTn
 **Esito**: `git grep '^CONFLICT_START ' | wc -l` → 0 marker residui
-=======
-**Esito**: `git grep '^<<<<<<< ' | wc -l` → 0 marker residui
->>>>>>> .merge_file_AiVaBZ
-=======
-**Esito**: `git grep '^<<<<<<< ' | wc -l` → 0 marker residui
->>>>>>> .merge_file_CINSUI
 
 ## Aperto / Prossima Sessione
 

@@ -15,19 +15,6 @@ discussions: []
 **Last Updated**: 2026-03-31  
 **Server**: Apache 2.4.64 (Ubuntu)
 
-<<<<<<< .merge_file_EbEF7t
-=======
----
-
-title: "vhost fixcity"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "vhost fixcity"
-issues: []
-discussions: []
->>>>>>> .merge_file_0IpQ40
 ## Configuration Summary
 
 ## File Locations

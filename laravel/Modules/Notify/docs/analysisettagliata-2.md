@@ -3,15 +3,7 @@ title: "analysisettagliata 2"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_wDpd1f
-<<<<<<< .merge_file_yIOw7G
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_swSkE6
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_r5FzYv
 qmd: "analysisettagliata 2"
 issues: []
 discussions: []

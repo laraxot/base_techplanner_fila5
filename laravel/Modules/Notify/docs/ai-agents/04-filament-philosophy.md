@@ -3,14 +3,7 @@ title: "04 Filament Philosophy"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_WjOQQZ
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_txJAol
->>>>>>> .merge_file_WYVBqI
-=======
->>>>>>> .merge_file_0S6TkG
 qmd: "04 Filament Philosophy"
 issues: []
 discussions: []
@@ -18,48 +11,9 @@ discussions: []
 
 # 🎨 Filament Forms & Tables Philosophy
 
-<<<<<<< .merge_file_txJAol
-<<<<<<< .merge_file_WjOQQZ
 **Part of**: [00-INDEX.md](00-index.md) — AI Agents Coordination  
 **Related**: [03-ARCHITECTURE-ZEN.md](03-architecture-zen.md) — Architecture
 
-=======
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [03-architecture-zen.md](03-architecture-zen.md) — Architecture
-=======
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [03-architecture-zen.md](03-architecture-zen.md) — Architecture
-
----
-
-title: "04 FILAMENT PHILOSOPHY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "04 FILAMENT PHILOSOPHY"
-issues: []
-discussions: []
-## 🔴 Fundamental Rule
-
-**NEVER create custom forms or tables in blade.**
-
-**ALWAYS use Filament Widgets:**
-- ✅ Form → Filament Form Widget
-- ✅ Table/Grid → Filament Table Widget
->>>>>>> .merge_file_0S6TkG
-
----
-
-title: "04 FILAMENT PHILOSOPHY"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "04 FILAMENT PHILOSOPHY"
-issues: []
-discussions: []
->>>>>>> .merge_file_WYVBqI
 ## 🔴 Fundamental Rule
 
 ## 🧠 Philosophy (The WHY)

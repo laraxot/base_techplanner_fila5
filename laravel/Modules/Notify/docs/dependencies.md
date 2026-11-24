@@ -7,11 +7,7 @@ module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
-<<<<<<< .merge_file_lejBR1
 updated: 2026-11-23
-=======
-updated: 2026-08-24
->>>>>>> .merge_file_XBOZCB
 ---
 
 # Dependencies (Module Notify)

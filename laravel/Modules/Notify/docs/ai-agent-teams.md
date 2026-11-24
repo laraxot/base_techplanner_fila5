@@ -14,13 +14,6 @@ related:
   - "./absolute-completion-100.md"
   - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
-<<<<<<< .merge_file_xTjDI7
-<<<<<<< .merge_file_xsVjVT
-=======
-=======
->>>>>>> .merge_file_vQABDK
-  - "./acronym-naming-conventions.md"
->>>>>>> .merge_file_Os0I7U
   - "./action-plan-immediate.md"
 ---
 
@@ -91,14 +84,6 @@ Multiple AI agents (Qwen, Claude, Cursor, etc.) are working on the same FixCity 
 **Current Tasks**:
 - ✅ Update `bashscripts/docs/ai/` with sync rules
 - ✅ Update AGENTS.md with commit/push rules
-<<<<<<< .merge_file_xTjDI7
-<<<<<<< .merge_file_xsVjVT
-=======
-- ✅ Update AGENTS.md with commit/push rules
->>>>>>> .merge_file_Os0I7U
-=======
-- ✅ Update AGENTS.md with commit/push rules
->>>>>>> .merge_file_vQABDK
 - ✅ Update .windsurfrules
 - ⏳ Sync `.github/` with `bashscripts/ai/.github/`
 

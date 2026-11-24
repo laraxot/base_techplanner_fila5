@@ -39,34 +39,6 @@ $gsd-quick "task"
 - [GSD GitHub](https://github.com/gsd-build/get-shit-done)
 - [GSD Docs](https://gsd-build-get-shit-done.mintlify.app/)
 
-<<<<<<< .merge_file_1gG85N
-=======
----
-<<<<<<< .merge_file_5mAYbJ
-=======
-
-title: "agents gsd bmad"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents gsd bmad"
-issues: []
-discussions: []
-## BMAD (Breakthrough Method for Agile AI-Driven Development)
-
-**Path**: `_bmad/` (installato localmente)
->>>>>>> .merge_file_wtbkdb
-
-title: "agents gsd bmad"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents gsd bmad"
-issues: []
-discussions: []
->>>>>>> .merge_file_GXizKr
 ## BMAD (Breakthrough Method for Agile AI-Driven Development)
 ### Moduli BMAD
 ### Comandi
@@ -117,18 +89,8 @@ discussions: []
 
 - [Indice AGENTS](./agents-split-index.md)
 - [gsd-bmad-comprehensive-guide.md](./gsd-bmad-comprehensive-guide.md)
-<<<<<<< .merge_file_5mAYbJ
-<<<<<<< .merge_file_1gG85N
 - [AGENTS.md originale](../../agents.md)
 - [agents.md originale](../../agents.md)
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_GXizKr
-=======
-- [AGENTS.md originale](../../AGENTS.md)
-- [AGENTS.md originale](../../AGENTS.md)
->>>>>>> .merge_file_wtbkdb
 - [Index principale](./index.md)
 
 ## Differenze vs Originale

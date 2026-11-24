@@ -13,32 +13,6 @@ discussions: []
 
 **CRITICAL RULE**: GitHub Issues e Discussions si creano **ONLINE** su GitHub, NON come file locali!
 
-<<<<<<< .merge_file_hCWuTI
-=======
----
-<<<<<<< .merge_file_V0aOwb
-=======
-
-title: "github issues workflow"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "github issues workflow"
-issues: []
-discussions: []
-## Repository
->>>>>>> .merge_file_X3pBDA
-
-title: "github issues workflow"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "github issues workflow"
-issues: []
-discussions: []
->>>>>>> .merge_file_bG6CAh
 ## Repository
 
 ## ✅ CORRECT: Create Issues Online

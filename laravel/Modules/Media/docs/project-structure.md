@@ -35,19 +35,6 @@ tags: [structure, architecture, module]
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-<<<<<<< .merge_file_emuzsf
-<<<<<<< .merge_file_fNaLsQ
-=======
-=======
->>>>>>> .merge_file_tSpYcE
-├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
-├── qmd-setup.md                  # Configurazione QMD
-├── performance-optimization.md    # Metriche e best practice
-├── architecture.md               # (opzionale) Architettura modulo
-<<<<<<< .merge_file_emuzsf
->>>>>>> .merge_file_v1yQLe
-=======
->>>>>>> .merge_file_tSpYcE
 └── README.md                     # (opzionale) Overview modulo
 \`\`\`
 

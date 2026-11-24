@@ -16,40 +16,6 @@ discussions: []
 **Status**: ✅ PRODUCTION READY  
 **Priority**: HIGH
 
-<<<<<<< .merge_file_rXUzZZ
-=======
----
-<<<<<<< .merge_file_gbnUVl
-=======
-
-title: "semantic html css"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "semantic html css"
-issues: []
-discussions: []
-## 🎯 Philosophy
-
-> "Use elements for their **SEMANTIC MEANING**, not their default styling."
-
-**Principles**:
-- ✅ **Content-first**: Describe WHAT it is, not HOW it looks
-- ✅ **Accessibility**: Semantic HTML = Better a11y
-- ✅ **Maintainability**: Clear structure, easy to update
-- ✅ **SEO**: Search engines understand semantic structure
->>>>>>> .merge_file_5x8ho1
-
-title: "semantic html css"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "semantic html css"
-issues: []
-discussions: []
->>>>>>> .merge_file_pF0fpW
 ## 🎯 Philosophy
 
 ## 📚 What are Semantic Elements?

@@ -4,34 +4,20 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Job
-<<<<<<< .merge_file_Ngb1xk
-<<<<<<< .merge_file_IAzjaa
 <<<<<<< .merge_file_lSjoY2
 qmd: "purpose bmad Job"
 =======
-=======
->>>>>>> .merge_file_Zq0fV1
-=======
->>>>>>> .merge_file_pwbEQk
 qmd: "purpose bmad Job scopo code import export fallimenti scheduler perché esiste stato del codice"
 related:
   - ../purpose.md
   - ./audits/job-audit.md
   - ./architecture.md
   - ./epics.md
-<<<<<<< .merge_file_Ngb1xk
-<<<<<<< .merge_file_IAzjaa
 >>>>>>> .merge_file_UqeI9c
-=======
->>>>>>> .merge_file_Zq0fV1
-=======
->>>>>>> .merge_file_pwbEQk
 ---
 
 # Scopo BMAD — Job
 
-<<<<<<< .merge_file_Ngb1xk
-<<<<<<< .merge_file_IAzjaa
 <<<<<<< .merge_file_lSjoY2
 ## Lo scopo in una frase **Job rende visibile e governabile tutto cio' che accade fuori dalla richiesta HTTP: code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro
 
@@ -39,14 +25,6 @@ SSoT estesa: [../purpose.md](../purpose.md) se presente.
 =======
 ## Lo scopo in una frase
 
-=======
-## Lo scopo in una frase
-
->>>>>>> .merge_file_Zq0fV1
-=======
-## Lo scopo in una frase
-
->>>>>>> .merge_file_pwbEQk
 **Job rende visibile e governabile tutto ciò che accade fuori dalla richiesta HTTP — code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro fallimenti.**
 
 Il perché esteso (valore rispetto a Laravel nudo, cinque direzioni di miglioramento, confini) è nella SSoT del modulo: [../purpose.md](../purpose.md). Qui solo la sintesi BMAD e il confronto con il codice.
@@ -75,10 +53,4 @@ Un lavoro asincrono che fallisce in silenzio è peggio di uno mai partito: chi l
 ## Riferimenti
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
-<<<<<<< .merge_file_Ngb1xk
-<<<<<<< .merge_file_IAzjaa
 >>>>>>> .merge_file_UqeI9c
-=======
->>>>>>> .merge_file_Zq0fV1
-=======
->>>>>>> .merge_file_pwbEQk

@@ -3,14 +3,7 @@ title: "Commands"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_qsOLjU
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_BipTBB
->>>>>>> .merge_file_DcSAAo
-=======
->>>>>>> .merge_file_Mq5U45
 qmd: "Commands"
 issues: []
 discussions: []

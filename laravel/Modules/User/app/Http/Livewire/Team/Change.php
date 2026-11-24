@@ -42,7 +42,7 @@ class Change extends Component
         $this->user = $authUser;
         /** @var Collection<int, TeamContract> $allTeams */
         $allTeams = $this->user->allTeams();
-        $this->teams = array_values($allTeams->map(fn (TeamContract $team): array => $team->toArray())->all());
+        $this->teams = $allTeams->toArray();
     }
 
     /**

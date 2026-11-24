@@ -4,19 +4,11 @@ type: index
 status: in-progress
 updated: 2026-11-16
 module: Media
-<<<<<<< .merge_file_sVeZXG
-<<<<<<< .merge_file_4ylh5t
 <<<<<<< .merge_file_bx14W7
 qmd: "ECC indice Media verification gates"
 =======
 qmd: "ECC indice Media stato controlli verification gates PHPStan Pest security"
 >>>>>>> .merge_file_N9es8e
-=======
-qmd: "ECC indice Media stato controlli verification gates PHPStan Pest security"
->>>>>>> .merge_file_ijie5Q
-=======
-qmd: "ECC indice Media stato controlli verification gates PHPStan Pest security"
->>>>>>> .merge_file_DpTxjB
 ---
 
 # ECC — modulo Media
@@ -25,40 +17,18 @@ Collega le verifiche ECC al workflow PTVX (BMAD → lock → fix → PHPStan/Pes
 
 | Controllo | Stato | Evidenza |
 |---|---|---|
-<<<<<<< .merge_file_sVeZXG
-<<<<<<< .merge_file_4ylh5t
 <<<<<<< .merge_file_bx14W7
-=======
-<<<<<<< .merge_file_vakMWB
->>>>>>> .merge_file_ijie5Q
-=======
-<<<<<<< .merge_file_vakMWB
->>>>>>> .merge_file_DpTxjB
 | Inventario statico | verificato | ../bmad/audits/media-audit.md |
 | PHPStan | 0 su tree Modules (2026-11-16) | comando in audit |
 | Pest | pending | ambiente testing |
 | Security review | pending | story figlie P0/P1 |
 | Docs pack | aggiornato | questo indice + audit ECC |
 =======
-<<<<<<< .merge_file_sVeZXG
-<<<<<<< .merge_file_4ylh5t
-=======
->>>>>>> .merge_file_RPJfdR
->>>>>>> .merge_file_ijie5Q
-=======
->>>>>>> .merge_file_RPJfdR
->>>>>>> .merge_file_DpTxjB
 | Inventario statico | verificato (2026-11-16) | [audit profondo](../bmad/audits/media-audit.md) |
 | PHPStan `Modules/Media` | **0 errori** | comando in audit |
 | Pest | parziale: `tests/Unit/Models` 49 pass / 1 fail | [audit § Gate](../bmad/audits/media-audit.md#gate) |
 | Security review | **aperta** — 0 P0, 3 P1 di sicurezza (6 P1 in tutto) | [finding](../bmad/audits/media-audit.md#finding) |
 | Docs pack | aggiornato (gap-fill) | [audit](../bmad/audit.md), [epics](../bmad/epics.md), [architecture](../bmad/architecture.md) |
-<<<<<<< .merge_file_sVeZXG
-<<<<<<< .merge_file_4ylh5t
 >>>>>>> .merge_file_N9es8e
-=======
->>>>>>> .merge_file_ijie5Q
-=======
->>>>>>> .merge_file_DpTxjB
 
 Dettaglio: [media-ecc-audit.md](./media-ecc-audit.md)

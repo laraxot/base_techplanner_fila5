@@ -117,17 +117,8 @@ context-mode ctx-stats
 ## Riferimenti
 
 - [Global Performance Guide](../../docs/wiki/concepts/performance-optimization.md)
-<<<<<<< .merge_file_ZhOm4Z
-<<<<<<< .merge_file_m768ZA
-<<<<<<< .merge_file_kLJKJU
 - [On-Demand Pattern](./ON-DEMAND-PATTERN.md)
 - [QMD Setup](./QMD-SETUP.md)
-=======
->>>>>>> .merge_file_Ja0VXa
-=======
->>>>>>> .merge_file_d698WD
-=======
->>>>>>> .merge_file_iwMPfv
 - [On-Demand Pattern](./on-demand-pattern.md)
 - [QMD Setup](./qmd-setup.md)
 

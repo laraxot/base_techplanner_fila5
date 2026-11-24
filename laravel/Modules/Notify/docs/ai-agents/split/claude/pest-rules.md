@@ -62,27 +62,4 @@ it('has emails', function (string $email) {
 ]);
 </code-snippet>
 
-<<<<<<< .merge_file_GriQ94
 ## Cross-References
-=======
-
-
----
-
-title: "pest rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
-
->>>>>>> .merge_file_83mZhS

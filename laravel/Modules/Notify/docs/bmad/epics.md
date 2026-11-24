@@ -8,10 +8,7 @@ bmad_version: 1.0
 updated: 2026-11-23
 tags: [docs, notify, bmad]
 qmd: "Notify epics user stories canali template hardening"
-<<<<<<< .merge_file_coyEYF
 created: 2026-11-23
-=======
->>>>>>> .merge_file_9kDvjD
 ---
 
 # Epics e User Stories - Modulo Notify

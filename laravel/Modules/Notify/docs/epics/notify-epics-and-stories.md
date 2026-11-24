@@ -6,11 +6,7 @@ title: "Notify Epics and User Stories"
 type: user_stories
 tags: [user stories, epics, notify]
 created: 2026-08-04
-<<<<<<< .merge_file_9ocAP4
 updated: 2026-11-23
-=======
-updated: 2026-08-04
->>>>>>> .merge_file_BDhPsJ
 ---
 # Notify Epics and User Stories
 

@@ -32,41 +32,10 @@ discussions: []
 Vedi anche: [.agents/docs/critical-rules.md](../../../.agents/docs/critical-rules.md)
 
 ## Collegamenti Correlati
-<<<<<<< .merge_file_grQCv6
-<<<<<<< .merge_file_Sxt7G3
-=======
-=======
->>>>>>> .merge_file_HQKV5i
-- [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
-- [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
-- [Standard di Documentazione](../../../../../docs/documentation_standards.md)
-- [Modulo Xot](../../Xot/docs/README.md)
-- [Modulo Lang](../../Lang/docs/readme.md)
-- [Modulo UI](../../UI/docs/README.md)
-<<<<<<< .merge_file_grQCv6
->>>>>>> .merge_file_mt24Hj
-=======
->>>>>>> .merge_file_HQKV5i
 
 ## Categorie Principali
 
 ### Architettura e Struttura
-<<<<<<< .merge_file_grQCv6
-<<<<<<< .merge_file_Sxt7G3
-=======
-=======
->>>>>>> .merge_file_HQKV5i
-<<<<<<< .merge_file_m7XdVg
-- [README](README.md) - Panoramica generale del modulo
-- [Architettura](./architecture/readme.md) - Architettura generale del modulo
-=======
-- [README](./README.md) - Panoramica generale del modulo
-- [Architettura](./architecture/README.md) - Architettura generale del modulo
->>>>>>> .merge_file_hap6zq
-<<<<<<< .merge_file_grQCv6
->>>>>>> .merge_file_mt24Hj
-=======
->>>>>>> .merge_file_HQKV5i
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./data-models.md) - Documentazione dei modelli Eloquent
 - [Eventi](./events.md) - Eventi e listeners
@@ -187,7 +156,7 @@ Questa documentazione viene aggiornata regolarmente. Prima di apportare modifich
 - **Gennaio 2025**: Risoluzione sistematica di tutti i conflitti Git nei file di documentazione
 - Il file `lang/it/media_theme.php` è stato risolto manualmente mantenendo PSR-12, strict_types, array short syntax e solo chiavi effettive, come richiesto dagli standard PHPStan livello 10
 - **Filosofia di risoluzione**: Approccio olistico con analisi manuale approfondita, mantenimento integrità architetturale, documentazione bidirezionale aggiornata
-- Vedi anche: [../../../../../docs/README.md](../../../../../docs/README.md)
+- Vedi anche: [../../../../../docs/README.md](../../../../../docs/readme.md)
 - Per dettagli sulle scelte architetturali e funzionali, consultare la doc globale e la sezione "Standard e Traduzioni".
 
 ---
@@ -220,27 +189,12 @@ Questo documento serve come indice centrale per il modulo Media, fornendo una gu
 - **Watermark Automatico**: Applicazione automatica di watermark sui media
 
 ## Collegamenti Correlati
-<<<<<<< .merge_file_grQCv6
-<<<<<<< .merge_file_Sxt7G3
-=======
-=======
->>>>>>> .merge_file_HQKV5i
-- [Documentazione Generale <nome progetto>](../../../../../docs/README.md)
-- [Collegamenti Documentazione](../../../../../docs/collegamenti-documentazione.md)
-- [Standard di Documentazione](../../../../../docs/documentation_standards.md)
-- [Modulo Xot](../../Xot/docs/README.md)
-- [Modulo Lang](../../Lang/docs/readme.md)
-- [Modulo UI](../../UI/docs/README.md)
-<<<<<<< .merge_file_grQCv6
->>>>>>> .merge_file_mt24Hj
-=======
->>>>>>> .merge_file_HQKV5i
 
 ## Categorie Principali
 
 ### Architettura e Struttura
 - [README](README.md) - Panoramica generale del modulo
-- [Architettura](./architecture/README.md) - Architettura generale del modulo
+- [Architettura](./architecture/readme.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
 - [Modelli](./data-models.md) - Documentazione dei modelli Eloquent
 - [Eventi](./events.md) - Eventi e listeners
@@ -307,30 +261,3 @@ Doc verificati e presenti in `docs/` utili per approfondimenti puntuali (non un 
 - [testing.md](./testing.md)
 - [troubleshooting.md](./troubleshooting.md)
 - [wiki/index.md](./wiki/index.md)
-
-## Mappa delle cartelle
-
-Elenco generato dall'audit qualita' (issue #64): ogni cartella di `docs/` con il numero di file `.md`.
-Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escluse.
-
-| Cartella | File .md |
-|---|---|
-| [`actions/`](actions/) | 4 |
-| [`architecture/`](architecture/) | 1 |
-| [`bmad/`](bmad/index.md) | 57 |
-| [`concepts/`](concepts/) | 1 |
-| [`contracts/`](contracts/) | 2 |
-| [`development/`](development/) | 2 |
-| [`ecc/`](ecc/) | 2 |
-| [`epics/`](epics/) | 1 |
-| [`filament/`](filament/) | 3 |
-| [`investigation/`](investigation/) | 1 |
-| [`llm-wiki/`](llm-wiki/index.md) | 6 |
-| [`performance/`](performance/) | 3 |
-| [`prompts/`](prompts/) | 1 |
-| [`relation_managers/`](relation_managers/) | 2 |
-| [`resources/`](resources/) | 1 |
-| [`roadmap/`](roadmap/index.md) | 28 |
-| [`stories/`](stories/) | 28 |
-| [`support/`](support/) | 2 |
-| [`wiki/`](wiki/index.md) | 87 |

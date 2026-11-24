@@ -3,11 +3,8 @@ title: Notify — indice BMAD
 type: index
 tags: [docs, bmad, notify]
 qmd: "Notify indice BMAD documentazione"
-<<<<<<< .merge_file_6cNfrW
 created: 2026-11-23
 updated: 2026-11-23
-=======
->>>>>>> .merge_file_DiPNVy
 ---
 
 # Notify — indice BMAD

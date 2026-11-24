@@ -3,14 +3,7 @@ title: "02 BMAD Workflow"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_3cEvcC
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_yd8tg9
->>>>>>> .merge_file_LRvJg1
-=======
->>>>>>> .merge_file_astX4W
 qmd: "02 BMAD Workflow"
 issues: []
 discussions: []
@@ -18,49 +11,9 @@ discussions: []
 
 # 🎨 BMAD Workflow (Breakthrough Method for Agile AI-Driven Development)
 
-<<<<<<< .merge_file_yd8tg9
-<<<<<<< .merge_file_3cEvcC
 **Part of**: [00-INDEX.md](00-index.md) — AI Agents Coordination  
 **Related**: [01-GSD-WORKFLOW.md](01-gsd-workflow.md) — GSD Method
 
-=======
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [01-gsd-workflow.md](01-gsd-workflow.md) — GSD Method
-=======
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [01-gsd-workflow.md](01-gsd-workflow.md) — GSD Method
-
----
-
-title: "02 BMAD WORKFLOW"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "02 BMAD WORKFLOW"
-issues: []
-discussions: []
-## 📋 Overview
-
-BMAD is an AI-driven agile development framework with 12+ specialized agents.
-
-**Philosophy**:
-- AI agents as **expert collaborators**, not replacements
-- Structured process to bring out **your best thinking**
-- 100% free and open source
->>>>>>> .merge_file_astX4W
-
----
-
-title: "02 BMAD WORKFLOW"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "02 BMAD WORKFLOW"
-issues: []
-discussions: []
->>>>>>> .merge_file_LRvJg1
 ## 📋 Overview
 
 ## 🔧 Installation

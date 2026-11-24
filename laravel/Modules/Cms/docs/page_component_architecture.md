@@ -1,20 +1,10 @@
 ---
-title: "Page Component Architecture"
+title: "page component architecture"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_BGtd90
-<<<<<<< .merge_file_Id2tQ8
 updated: 2026-11-23
 qmd: "page component architecture"
-=======
-updated: 2026-09-26
-qmd: "Page Component Architecture"
->>>>>>> .merge_file_DQW1dm
-=======
-updated: 2026-09-26
-qmd: "Page Component Architecture"
->>>>>>> .merge_file_32hQU6
 issues: []
 discussions: []
 ---
@@ -28,12 +18,12 @@ discussions: []
 
 ---
 
-title: "PAGE COMPONENT ARCHITECTURE"
+title: "page component architecture"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "PAGE COMPONENT ARCHITECTURE"
+qmd: "page component architecture"
 issues: []
 discussions: []
 ## 🎯 Scopo

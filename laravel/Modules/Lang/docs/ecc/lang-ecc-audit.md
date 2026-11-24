@@ -4,42 +4,22 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Lang
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
 <<<<<<< .merge_file_cbQz4r
 qmd: "ECC audit Lang verification security testing laravel"
 =======
-=======
->>>>>>> .merge_file_EByKW9
-=======
->>>>>>> .merge_file_06d3fd
 qmd: "ECC audit Lang checklist security-review clean-code verification-loop inventario misurato finding tracker chiavi mancanti test coverage"
 related:
   - ./00-index.md
   - ../bmad/audits/lang-audit.md
   - ../bmad/audit.md
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
 >>>>>>> .merge_file_ULRINd
-=======
->>>>>>> .merge_file_EByKW9
-=======
->>>>>>> .merge_file_06d3fd
 ---
 
 # ECC audit operativo — Lang
 
 ## Contratto PTVX
 
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
 <<<<<<< .merge_file_cbQz4r
-=======
-<<<<<<< .merge_file_Csg2cc
->>>>>>> .merge_file_EByKW9
-=======
-<<<<<<< .merge_file_Csg2cc
->>>>>>> .merge_file_06d3fd
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -55,14 +35,6 @@ PHPStan + Pest, aggiornamento docs/QMD.
 
 ## Input misurato (2026-11-16)
 =======
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
-=======
->>>>>>> .merge_file_u0bqOk
->>>>>>> .merge_file_EByKW9
-=======
->>>>>>> .merge_file_u0bqOk
->>>>>>> .merge_file_06d3fd
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/lang-audit.md).
 
 ## Checklist (stato misurato 2026-11-16)
@@ -77,26 +49,12 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 | `documentation-sync` | **fatto in questo giro** | architecture riscritta, decision-log/epics/purpose gap-fill; 111/955 `.md` con nome non conforme |
 
 ## Inventario misurato
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
 >>>>>>> .merge_file_ULRINd
-=======
->>>>>>> .merge_file_EByKW9
-=======
->>>>>>> .merge_file_06d3fd
 
 | Voce | N |
 |---|---:|
 | app PHP | 72 |
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
 <<<<<<< .merge_file_cbQz4r
-=======
-<<<<<<< .merge_file_Csg2cc
->>>>>>> .merge_file_EByKW9
-=======
-<<<<<<< .merge_file_Csg2cc
->>>>>>> .merge_file_06d3fd
 | test | 51 |
 | resources | 2 |
 | actions | 17 |
@@ -132,34 +90,6 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 - docs con date nel nome file
 - comportamento o screenshot inventati
 =======
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
-=======
-=======
->>>>>>> .merge_file_06d3fd
->>>>>>> .merge_file_u0bqOk
-| test PHP / `*Test.php` | 51 / 29 |
-| Models / Policy / Resource | 7 / 4 / 2 |
-| Pagine Resource / Widget | 9 / 1 |
-| Actions / Services | 17 / 0 |
-| Migration | 11 |
-| Lang IT | 33 |
-| `return true` in Policy | 2 (`before()`) |
-| Marker conflitto | 0 |
-
-## Gate osservati
-
-- PHPStan `Modules/Lang` (`--no-progress`): **0 errori**.
-- Pest `Modules/Lang/tests/Feature` su scratch DB: **10 pass, 13 fail** (errore `user_id` UUID in colonna bigint, vedi [P1-3](../bmad/audits/lang-audit.md#p1-3--test-copertura-inseguita-e-suite-non-verde-su-scratch-db)).
-
-## Anti-pattern vietati
-
-- baseline/`@phpstan-ignore` senza motivazione
-- test svuotati per silenziare errori
-<<<<<<< .merge_file_SusDBu
->>>>>>> .merge_file_EByKW9
-=======
->>>>>>> .merge_file_06d3fd
 - `migrate:fresh` / `RefreshDatabase` / `--force`
 - docs con date nel nome file
 - comportamento o screenshot inventati
@@ -167,13 +97,7 @@ ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla c
 ### Stato misurato
 
 `migrate:fresh`: 0; `RefreshDatabase`: 0; `@phpstan-ignore`: 0; `dd()`: 0; `->label()` letterali: 2 (`LocaleSwitcherRefresh.php:34,45`).
-<<<<<<< .merge_file_SusDBu
-<<<<<<< .merge_file_zs67BW
 >>>>>>> .merge_file_ULRINd
-=======
->>>>>>> .merge_file_EByKW9
-=======
->>>>>>> .merge_file_06d3fd
 
 ## Riferimenti
 

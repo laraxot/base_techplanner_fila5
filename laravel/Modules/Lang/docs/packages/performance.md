@@ -107,16 +107,10 @@ Route::middleware([
 * [performance.md](../../../xot/docs/packages/performance.md)
 * [performance.md](../../../xot/docs/roadmap/architecture/performance.md)
 * [performance.md](../../../ui/docs/standards/performance.md)
-<<<<<<< .merge_file_7KKQ2j
-<<<<<<< .merge_file_APO677
 * [performance.md](../../../lang/docs/packages/performance.md)
 * [performance.md](../../../job/docs/packages/performance.md)
 * [performance.md](../../../cms/docs/frontoffice/performance.md)
 
-=======
->>>>>>> .merge_file_Kv2xqg
-=======
->>>>>>> .merge_file_ZoPpXK
 * [performance.md](performance.md)
 * [performance.md](../../../Job/docs/packages/performance.md)
 * [performance.md](../../../Cms/docs/frontoffice/performance.md)

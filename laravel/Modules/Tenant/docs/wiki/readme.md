@@ -1,5 +1,5 @@
 ---
-title: "README.md"
+title: "readme.md"
 type: concept
 status: active
 module: "Tenant"

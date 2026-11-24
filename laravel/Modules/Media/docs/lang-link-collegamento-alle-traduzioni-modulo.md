@@ -16,18 +16,8 @@ related:
 Questo modulo utilizza le traduzioni centralizzate nella cartella [Lang](../../Lang/docs/).
 
 Consulta la documentazione delle traduzioni:
-<<<<<<< .merge_file_G8sQCt
-<<<<<<< .merge_file_wCSQlH
 - [Introduzione alle Traduzioni](../../lang/docs/introduction.md)
 - [Struttura delle Traduzioni](../../lang/docs/structure.md)
-=======
-- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
->>>>>>> .merge_file_RzAihQ
-=======
-- [Introduzione alle Traduzioni](../../Lang/docs/introduction.md)
-- [Struttura delle Traduzioni](../../Lang/docs/structure.md)
->>>>>>> .merge_file_l1VneT
 - [Gestione dei File di Lingua](../../lang/docs/module_lang.md)
 
 ## Collegamento Bidirezionale

@@ -25,27 +25,15 @@ qmd search "Lang memories" --limit 5
 - [Root Wiki](../../../docs/wiki/)
 
 ---
-<<<<<<< .merge_file_8GcFIr
-<<<<<<< .merge_file_zVaNsg
 title: "index"
 
-=======
->>>>>>> .merge_file_wEoztO
-=======
->>>>>>> .merge_file_SWNUpf
 title: "INDEX"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-<<<<<<< .merge_file_8GcFIr
-<<<<<<< .merge_file_zVaNsg
 qmd: "index"
 
-=======
->>>>>>> .merge_file_wEoztO
-=======
->>>>>>> .merge_file_SWNUpf
 qmd: "INDEX"
 issues: []
 discussions: []

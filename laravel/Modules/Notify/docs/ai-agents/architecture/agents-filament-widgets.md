@@ -15,32 +15,6 @@ discussions: []
 **Ultimo Aggiornamento**: 2026-03-20  
 **Stato**: ✅ CRITICAL RULE
 
-<<<<<<< .merge_file_ej3UOB
-=======
----
-<<<<<<< .merge_file_1e03TB
-=======
-
-title: "agents filament widgets"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents filament widgets"
-issues: []
-discussions: []
-## 🔴 REGOLA FONDAMENTALE
->>>>>>> .merge_file_KCP5tq
-
-title: "agents filament widgets"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents filament widgets"
-issues: []
-discussions: []
->>>>>>> .merge_file_7I6i3O
 ## 🔴 REGOLA FONDAMENTALE
 
 ## ❌ SBAGLIATO (VIETATO!)

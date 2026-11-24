@@ -168,18 +168,3 @@ Prima di creare un nuovo DTO, verificare che:
 
 - [PHP 8.2 Readonly Properties](https://www.php.net/manual/en/language.oop5.properties.php#language.oop5.properties.readonly-properties)
 - [Laravel Data Transfer Objects Best Practices](https://laravel.com/docs/10.x/eloquent-serialization#data-transfer-objects)
-<<<<<<< .merge_file_LMDoBB
-=======
-
----
-
-title: "dto structure conventions"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "dto structure conventions"
-issues: []
-discussions: []
-*Ultimo aggiornamento: [DATE]*
->>>>>>> .merge_file_Z4XPk6

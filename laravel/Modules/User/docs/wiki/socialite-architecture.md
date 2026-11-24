@@ -8,14 +8,15 @@ qmd: "socialite-architecture socialite authentication architecture"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./AGENTS.md"
-  - "./architecture.md"
+  - "./agents.md"
+  - "./Architecture.md"
   - "./auth-patterns.md"
   - "./bmad-method.md"
   - "./context-compression.md"
   - "./index.md"
   - "./log.md"
   - "./overview.md"
+status: draft
 ---
 
 # Socialite Authentication Architecture

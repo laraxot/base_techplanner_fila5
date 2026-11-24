@@ -1,20 +1,10 @@
 ---
-title: "Script Placement Rules"
+title: "script placement rules"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_raeDno
-<<<<<<< .merge_file_4hKHYm
 updated: 2026-11-23
 qmd: "script placement rules"
-=======
-updated: 2026-09-26
-qmd: "Script Placement Rules"
->>>>>>> .merge_file_kJuZmx
-=======
-updated: 2026-09-26
-qmd: "Script Placement Rules"
->>>>>>> .merge_file_v5iuWR
 issues: []
 discussions: []
 ---

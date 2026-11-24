@@ -7,11 +7,7 @@ module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
-<<<<<<< .merge_file_2KwScM
 updated: 2026-11-23
-=======
-updated: 2026-08-24
->>>>>>> .merge_file_m8FjlQ
 ---
 
 # Cyclomatic Complexity Report - Module: Notify

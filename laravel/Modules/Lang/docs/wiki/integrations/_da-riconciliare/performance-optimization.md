@@ -2,14 +2,8 @@
 qmd: "Performance Optimization"
 issues: []
 discussions: []
-<<<<<<< .merge_file_fVpipM
-<<<<<<< .merge_file_CgdGSQ
 title: "Performance Optimization — Module Lang"
 
-=======
->>>>>>> .merge_file_4bSi8g
-=======
->>>>>>> .merge_file_0O0AOJ
 title: "Performance Optimization"
 type: documentation
 created: 2026-05-11
@@ -29,14 +23,8 @@ related:
 **Dopo**: Carico solo what's needed (~2K startup)
 
 \`\`\`diff
-<<<<<<< .merge_file_fVpipM
-<<<<<<< .merge_file_CgdGSQ
 - 150+ rules embeddate in agents.md
 
-=======
->>>>>>> .merge_file_4bSi8g
-=======
->>>>>>> .merge_file_0O0AOJ
 - 150+ rules embeddate in AGENTS.md
 + 0 rules embeddate — tutte on-demand
 \`\`\`

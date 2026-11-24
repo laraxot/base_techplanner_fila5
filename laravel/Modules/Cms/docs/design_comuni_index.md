@@ -1,20 +1,10 @@
 ---
-title: "Design Comuni Index"
+title: "design comuni index"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_voV57f
-<<<<<<< .merge_file_694Su6
 updated: 2026-11-23
 qmd: "design comuni index"
-=======
-updated: 2026-09-26
-qmd: "Design Comuni Index"
->>>>>>> .merge_file_IlmlNu
-=======
-updated: 2026-09-26
-qmd: "Design Comuni Index"
->>>>>>> .merge_file_2paAEC
 issues: []
 discussions: []
 ---
@@ -112,12 +102,12 @@ Documentazione del modulo Cms per il progetto Design Comuni Italia.
 
 ---
 
-title: "DESIGN COMUNI INDEX"
+title: "design comuni index"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "DESIGN COMUNI INDEX"
+qmd: "design comuni index"
 issues: []
 discussions: []
 **Data**: 2026-04-03  

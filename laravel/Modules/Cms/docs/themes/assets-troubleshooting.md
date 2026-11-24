@@ -7,10 +7,15 @@ updated: 2026-09-26
 qmd: "assets troubleshooting"
 issues: []
 discussions: []
-status: draft
 ---
 
 # Risoluzione Problemi con Assets dei Temi
+
+> **Obsoleto: `npm run copy` non esiste piu' (2026-11-11).** Gli asset dei temi
+> arrivano nella document root con un symlink, non con una copia. Per il
+> procedimento valido vedi
+> [Xot/docs/theme-assets-workflow.md](/laravel/Modules/Xot/docs/theme-assets-workflow.md).
+> Le istruzioni di copia qui sotto sono lasciate come documentazione storica.
 
 > [!NOTE]
 > Questo documento è collegato alla documentazione principale in `/docs/VITE_ASSETS_TROUBLESHOOTING.md`
@@ -33,22 +38,8 @@ Questo errore è uno dei più comuni nella gestione dei temi. Per la risoluzione
 
 ## Collegamenti Rilevanti
 
-<<<<<<< .merge_file_KEASMB
-<<<<<<< .merge_file_p3ZkT3
-=======
-=======
->>>>>>> .merge_file_uzFh2A
-<<<<<<< .merge_file_5gOiOu
-- [Processo di Build dei Temi](../theme-build-process.md)
-- [Compilazione dei Temi](../theme-compilation.md)
-=======
-<<<<<<< .merge_file_KEASMB
->>>>>>> .merge_file_PDB5bp
-=======
->>>>>>> .merge_file_uzFh2A
 - [Processo di Build dei Temi](theme-build-process.md)
 - [Compilazione dei Temi](theme_compilation.md)
->>>>>>> .merge_file_g28oZb
 - [Documentazione Principale Vite](/docs/vite_assets_troubleshooting.md)
 
 ## Comandi Utili
@@ -77,6 +68,8 @@ Per maggiori dettagli sul funzionamento interno, consultare:
 
 3. **Ambiente di Sviluppo**
    - In sviluppo: utilizzare `npm run dev`
-   - In produzione: `npm run build`; `public_html/themes/<Tema>` è un symlink, niente copia
+   - niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+
+   - In produzione: utilizzare `npm run copy` (dismesso: `public_html/themes/<Tema>` e' un symlink a `laravel/Themes/<Tema>/public`)
 
 Per una guida completa sulla risoluzione dei problemi, consultare la [documentazione principale](/docs/vite_assets_troubleshooting.md).

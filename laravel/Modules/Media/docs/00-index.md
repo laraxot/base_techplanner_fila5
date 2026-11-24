@@ -22,7 +22,7 @@ related:
 3. [philosophy.md](./philosophy.md) - "Il file come entità": la nostra visione del media.
 
 ## 🎞️ **Video & Image Processing**
-- 🎥 **[FFmpeg Integration](wiki/integrations/ffmpeg-integration.md)** - Guida alla gestione video e codec.
+- 🎥 **[FFmpeg Integration](./ffmpeg-integration.md)** - Guida alla gestione video e codec.
 - 🖼️ **[Image Optimization](./file-management-architecture.md)** - Architettura di trasformazione immagini.
 - 🔄 **[Auto Conversions](./conversione-media.md)** - Logic per preview e watermark.
 
@@ -47,18 +47,6 @@ related:
 - `intervention/image` ^4.4 - Elaborazione immagini (API v4 tipizzata; vedi [story](./stories/intervention-image-phpstan.md))
 
 ## 🔗 **Moduli Correlati**
-<<<<<<< .merge_file_KwL52G
-<<<<<<< .merge_file_eOMcZI
-=======
-- [Xot](../../Xot/docs/README.md) - Base framework e Trait `HasMedia`.
-- [CloudStorage](../../CloudStorage/docs/README.md) - Astrazione per provider cloud.
-- [Cms](../../Cms/docs/README.md) - Integrazione media nei blocchi di contenuto.
->>>>>>> .merge_file_RWnNhW
-=======
-- [Xot](../../Xot/docs/README.md) - Base framework e Trait `HasMedia`.
-- [CloudStorage](../../CloudStorage/docs/README.md) - Astrazione per provider cloud.
-- [Cms](../../Cms/docs/README.md) - Integrazione media nei blocchi di contenuto.
->>>>>>> .merge_file_CS0Qfu
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

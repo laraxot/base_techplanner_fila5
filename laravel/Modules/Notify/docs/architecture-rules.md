@@ -6,11 +6,7 @@ issues: []
 discussions: []
 title: architecture rules — puntatore
 type: reference
-<<<<<<< .merge_file_FgWn69
 updated: 2026-11-23
-=======
-updated: 2026-05-21
->>>>>>> .merge_file_iVybC2
 ---
 
 # Architecture rules (puntatore)

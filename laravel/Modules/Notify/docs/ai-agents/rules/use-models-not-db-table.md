@@ -16,43 +16,6 @@ discussions: []
 **Status**: ✅ CRITICAL RULE  
 **Priority**: BLOCKER
 
-<<<<<<< .merge_file_coh0iH
-=======
----
-<<<<<<< .merge_file_sJNJ2B
-=======
-
-title: "use models not db table"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "use models not db table"
-issues: []
-discussions: []
-## 🎯 The Rule
-
-> **MAI** usare `DB::table()` quando esiste un **MODELLO**.
-> **SEMPRE** usare i **MODelli Eloquent** per query database.
-
-**Example**:
-```php
-// ❌ SBAGLIATO - DB::table() quando esiste il modello
-$betHistories = DB::table('bet_histories')
-    ->where('predict_id', $predict->id)
-    ->where('forecast_id', $forecast->id)
-    ->get();
->>>>>>> .merge_file_Mgj87h
-
-title: "use models not db table"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "use models not db table"
-issues: []
-discussions: []
->>>>>>> .merge_file_K17l2R
 ## 🎯 The Rule
 
 ## 🧠 The WHY (5 Levels)
@@ -206,14 +169,6 @@ Rating::query()->...
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_sJNJ2B
-<<<<<<< .merge_file_coh0iH
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_K17l2R
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_Mgj87h
 - **[Rules Index](00-index.md)** - All rules
 - **[XotBase Extension Rule](xotbase-extension-rule.md)** - XotBase philosophy
 - **[Reusable Components](../guidelines/reusable-components-philosophy.md)** - DRY+KISS

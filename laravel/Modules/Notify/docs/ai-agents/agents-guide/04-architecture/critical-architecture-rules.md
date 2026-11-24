@@ -394,20 +394,3 @@ LaravelLocalization::getLocalizedURL($locale, null, [], true)
 // WRONG
 url('/en/path')
 ```
-<<<<<<< .merge_file_zaD8vC
-=======
-
----
-
-title: "critical architecture rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "critical architecture rules"
-issues: []
-discussions: []
-<<<<<<< .merge_file_xk73dF
->>>>>>> .merge_file_eVq9kZ
-=======
->>>>>>> .merge_file_QxMVgk

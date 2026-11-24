@@ -3,14 +3,7 @@ title: "code quality analysis"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_T8buia
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_7sdT4G
->>>>>>> .merge_file_9EaVoU
-=======
->>>>>>> .merge_file_77c9jq
 qmd: "code quality analysis cms 2025-11-24"
 issues: []
 discussions: []
@@ -29,7 +22,7 @@ discussions: []
 
 ---
 
-title: "code quality analysis"
+title: "code quality analysis "
 type: note
 tags: [documentation]
 created: 2026-09-26

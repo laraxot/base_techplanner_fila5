@@ -7,11 +7,7 @@ module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
-<<<<<<< .merge_file_8lhmNE
 updated: 2026-11-23
-=======
-updated: 2026-08-24
->>>>>>> .merge_file_VwdoIY
 ---
 
 # Composer Update Fixes - 24 Novembre 2025

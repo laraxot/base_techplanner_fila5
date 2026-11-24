@@ -42,19 +42,6 @@ $related_model = (new ReflectionClass($related))->getName();
 
 **File Modificato**: `Modules/Xot/helpers/Helper.php:727-728`
 
-<<<<<<< .merge_file_wv1g8A
-=======
----
-
-title: "composer update fixes"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "composer update fixes"
-issues: []
-discussions: []
->>>>>>> .merge_file_sz9dhk
 ### 2. Errore di Sintassi in SendSmsPage.php
 
 ### 3. Errore di Sintassi in SendSpatieEmailPage.php

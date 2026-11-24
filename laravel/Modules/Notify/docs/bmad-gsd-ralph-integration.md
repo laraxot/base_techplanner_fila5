@@ -471,20 +471,3 @@ vendor/bin/phpstan analyse --level=10
 4. ✅ Run quality gates
 5. ✅ Commit after each phase
 6. ✅ Link documentation with viking:// URIs
-<<<<<<< .merge_file_hGEV94
-=======
-
----
-
-title: "bmad gsd ralph integration"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "bmad gsd ralph integration"
-issues: []
-discussions: []
-**Version**: 1.0.0  
-**Last Updated**: 2026-03-30  
-**Status**: Initial Implementation
->>>>>>> .merge_file_oODd6G

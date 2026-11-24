@@ -49,7 +49,7 @@ superseded_by: performance-optimization.md
 
 ### 4. Wiki Indici Locali
 
-Ogni modulo ha i propri `rules/skills/commands/memories/index.md`:
+Ogni modulo ha i propri `rules/skills/commands/memories/INDEX.md`:
 - Ricerca più rapida (scope limitato)
 - Context rilevante per il modulo
 - Non mischia contenuti eterogenei

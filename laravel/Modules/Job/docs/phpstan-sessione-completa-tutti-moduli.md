@@ -175,13 +175,7 @@ $media = $record->getFirstMedia($attachment);
 
 ## 🔗 Collegamenti
 
-<<<<<<< .merge_file_ixZLOU
-<<<<<<< .merge_file_5AaKyh
 - [Correzioni Job Dettagliate](phpstan-correzioni-2025-11.md)
-=======
->>>>>>> .merge_file_LsJDwY
-=======
->>>>>>> .merge_file_HrCkw9
 - [Correzioni Job Dettagliate](phpstan-correzioni-.md)
 - [PHPStan Level 10 Fixes](phpstan-level10-fixes.md)
 - [Business Logic Overview](business-logic-overview.md)

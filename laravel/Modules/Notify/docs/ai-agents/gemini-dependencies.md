@@ -13,32 +13,6 @@ discussions: []
 
 Gestione dipendenze Composer e moduli.
 
-<<<<<<< .merge_file_OJo2Hz
-=======
----
-<<<<<<< .merge_file_9PuMz7
-=======
-
-title: "gemini dependencies"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gemini dependencies"
-issues: []
-discussions: []
-## Regola Critica
->>>>>>> .merge_file_e2MnET
-
-title: "gemini dependencies"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "gemini dependencies"
-issues: []
-discussions: []
->>>>>>> .merge_file_Y6Rse4
 ## Regola Critica
 
 ## Workflow Corretto
@@ -90,13 +64,5 @@ composer run go
 
 - [Indice GEMINI](./gemini-split-index.md)
 - [packages-spatie.md](./packages-spatie.md)
-<<<<<<< .merge_file_9PuMz7
-<<<<<<< .merge_file_OJo2Hz
 - [GEMINI.md originale](../../gemini.md)
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_Y6Rse4
-=======
-- [gemini.md originale](../../gemini.md)
->>>>>>> .merge_file_e2MnET
 - [Index principale](./index.md)

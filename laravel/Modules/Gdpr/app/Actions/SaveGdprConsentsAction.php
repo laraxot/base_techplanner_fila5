@@ -14,16 +14,8 @@ use Spatie\QueueableAction\QueueableAction;
 /**
  * Prova dei consensi dati alla registrazione (GDPR art. 7 par. 1: il titolare deve poter dimostrare il consenso).
  *
-<<<<<<< .merge_file_ouEhae
-<<<<<<< .merge_file_z5ugwI
  * @contract docs/contracts/save-gdpr-consents-action.md
  * Contratto di comportamento (sei sezioni: input, output, invarianti, effetti
-=======
- * Contratto di comportamento: docs/contracts/save-gdpr-consents-action.md (sei sezioni: input, output, invarianti, effetti
->>>>>>> .merge_file_DU1Sxq
-=======
- * Contratto di comportamento: docs/contracts/save-gdpr-consents-action.md (sei sezioni: input, output, invarianti, effetti
->>>>>>> .merge_file_Xi3eS3
  * collaterali, errori, non fa).
  */
 class SaveGdprConsentsAction

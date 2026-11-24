@@ -7,14 +7,7 @@ module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
-<<<<<<< .merge_file_40pK2J
 updated: 2026-11-23
-=======
-updated: 2026-08-24
-<<<<<<< .merge_file_7v5GaC
->>>>>>> .merge_file_xu8QXR
-=======
->>>>>>> .merge_file_qCVzas
 ---
 
 # Pattern: Actions che chiamano altre Actions

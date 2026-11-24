@@ -3,15 +3,7 @@ title: "analysis dettagliata 4"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_nFVxGe
-<<<<<<< .merge_file_R86Afe
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_qlvkLJ
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_OjzTZg
 qmd: "analysis dettagliata 4"
 issues: []
 discussions: []

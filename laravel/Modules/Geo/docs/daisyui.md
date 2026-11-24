@@ -3,14 +3,7 @@ title: "Daisyui"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_3NMWUW
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_pvaOc2
->>>>>>> .merge_file_d2YZBc
-=======
->>>>>>> .merge_file_6yD75g
 qmd: "Daisyui"
 issues: []
 discussions: []

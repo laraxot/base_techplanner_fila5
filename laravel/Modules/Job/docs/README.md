@@ -10,7 +10,7 @@ issues: []
 discussions: []
 related:
   - "../README.md"
-  - "./00-index.md"
+  - "./00-INDEX.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
 ---
 
@@ -18,11 +18,7 @@ related:
 
 Cartella `docs/` del modulo Job: documentazione a livello modulo. Per la panoramica
 del modulo vedi il [README del modulo](../README.md); per la navigazione vedi
-<<<<<<< .merge_file_OsEwtW
-l'[indice](00-index.md).
-=======
-l'[indice](./00-index.md).
->>>>>>> .merge_file_x37Z3p
+l'[indice](./00-INDEX.md).
 
 ## Panoramica
 
@@ -64,7 +60,7 @@ questo file, non esistono nel modulo.
 - [Architettura](./architecture.md)
 - [Inventario Livewire e widget Filament](./bmad/livewire-inventory.md)
 - [Xot base](../../Xot/docs/README.md)
-- [Notify](../../Notify/docs/readme.md) per le notifiche di fallimento job
+- [Notify](../../Notify/docs/README.md) per le notifiche di fallimento job
 - [Activity](../../Activity/docs/README.md) per il log di esecuzione
 
 ## Stories

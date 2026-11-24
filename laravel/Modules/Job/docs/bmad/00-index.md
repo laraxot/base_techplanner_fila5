@@ -12,8 +12,6 @@ qmd: "indice BMAD Job audit purpose piano stories"
 - [Purpose](./purpose.md)
 - [Audit](./audit.md)
 - [Audit dettagliato](./audits/job-audit.md)
-<<<<<<< .merge_file_l71MnD
-<<<<<<< .merge_file_Masxxt
 <<<<<<< .merge_file_XgqCiI
 - [Piano di miglioramento](./piano-miglioramento.md)
 =======
@@ -24,22 +22,6 @@ qmd: "indice BMAD Job audit purpose piano stories"
 - [Piano di miglioramento](./piano-miglioramento.md)
 - [ECC audit](../ecc/job-ecc-audit.md)
 >>>>>>> .merge_file_zVKqJP
-=======
-- [Architettura](./architecture.md)
-- [Decision log](./decision-log.md)
-- [Epics](./epics.md)
-- [Brainstorming](./brainstorming.md)
-- [Piano di miglioramento](./piano-miglioramento.md)
-- [ECC audit](../ecc/job-ecc-audit.md)
->>>>>>> .merge_file_teEmYe
-=======
-- [Architettura](./architecture.md)
-- [Decision log](./decision-log.md)
-- [Epics](./epics.md)
-- [Brainstorming](./brainstorming.md)
-- [Piano di miglioramento](./piano-miglioramento.md)
-- [ECC audit](../ecc/job-ecc-audit.md)
->>>>>>> .merge_file_uCMIxx
 - [Story audit modulo](./stories/module-bmad-audit.story.md)
 - [ECC](../ecc/00-index.md)
 - [Purpose root](../purpose.md)

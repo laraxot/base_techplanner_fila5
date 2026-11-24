@@ -4,15 +4,9 @@ type: decision-log
 status: active
 tags: [media, docs]
 created: 2026-10-06
-<<<<<<< .merge_file_X90WDa
-<<<<<<< .merge_file_COYJco
 <<<<<<< .merge_file_54EQPI
 updated: 2026-10-06
 =======
-=======
->>>>>>> .merge_file_qCmDvf
-=======
->>>>>>> .merge_file_1MlWIW
 updated: 2026-11-16
 bmad: true
 module: Media
@@ -21,26 +15,12 @@ related:
   - ./audits/media-audit.md
   - ./architecture.md
   - ./epics.md
-<<<<<<< .merge_file_X90WDa
-<<<<<<< .merge_file_COYJco
 >>>>>>> .merge_file_joK1eb
-=======
->>>>>>> .merge_file_qCmDvf
-=======
->>>>>>> .merge_file_1MlWIW
 ---
 
 # Decision log — Media
 
-<<<<<<< .merge_file_X90WDa
-<<<<<<< .merge_file_COYJco
 <<<<<<< .merge_file_54EQPI
-=======
-<<<<<<< .merge_file_Nvx0tX
->>>>>>> .merge_file_qCmDvf
-=======
-<<<<<<< .merge_file_Nvx0tX
->>>>>>> .merge_file_1MlWIW
 ## Formato
 
 - **Data:** YYYY-MM-DD
@@ -75,14 +55,6 @@ related:
 - Migliore leggibilità e gestione dei conflitti in git
 - Necessità di refactor esistente
 =======
-<<<<<<< .merge_file_X90WDa
-<<<<<<< .merge_file_COYJco
-=======
->>>>>>> .merge_file_qzJqb1
->>>>>>> .merge_file_qCmDvf
-=======
->>>>>>> .merge_file_qzJqb1
->>>>>>> .merge_file_1MlWIW
 Le voci di esempio del template precedente sono state rimosse: non descrivevano il modulo.
 Stati ammessi: PROPOSTA, APERTA, APPROVATA, RIFIUTATA, OBSOLETA; ogni voce dichiara il perché e l'evidenza nel codice.
 
@@ -103,10 +75,4 @@ Stati ammessi: PROPOSTA, APERTA, APPROVATA, RIFIUTATA, OBSOLETA; ogni voce dichi
 | B. Collection «documentale» protetta | protegge solo ciò che è prova | serve classificare le collection esistenti |
 
 Raccomandazione: B (più piccola, aderente allo scopo). Decide il committente.
-<<<<<<< .merge_file_X90WDa
-<<<<<<< .merge_file_COYJco
 >>>>>>> .merge_file_joK1eb
-=======
->>>>>>> .merge_file_qCmDvf
-=======
->>>>>>> .merge_file_1MlWIW

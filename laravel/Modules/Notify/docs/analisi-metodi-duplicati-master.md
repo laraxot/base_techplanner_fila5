@@ -18,32 +18,6 @@ discussions: []
 **Files Analizzati:** 753  
 **Linee di Codice Totali:** ~2,777 (solo Models)  
 
-<<<<<<< .merge_file_2cRRjK
-=======
----
-<<<<<<< .merge_file_NGoPzz
-=======
-
-title: "analisi metodi duplicati master"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati master"
-issues: []
-discussions: []
-## 🎯 Executive Summary Ultra-Preciso
->>>>>>> .merge_file_wgAKIJ
-
-title: "analisi metodi duplicati master"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati master"
-issues: []
-discussions: []
->>>>>>> .merge_file_KgrEmm
 ## 🎯 Executive Summary Ultra-Preciso
 ### Dati Reali dal Codebase
 ### Duplicazione QUANTIFICATA

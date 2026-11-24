@@ -4,14 +4,7 @@ type: index
 tags: [notify, docs, ai-agents, split, claude]
 module: Notify
 created: 2026-07-20
-<<<<<<< .merge_file_PP32Nz
 updated: 2026-11-23
-=======
-updated: 2026-07-20
-<<<<<<< .merge_file_9j21MX
->>>>>>> .merge_file_sWZ16W
-=======
->>>>>>> .merge_file_cbKk6J
 qmd: "notify documentazione ai agents split claude index laravel boost guidelines (../../../../docs/CLAUDE.md) index index readme frontmatter qmd search"
 issues:
   - "https://github.com/laraxot/module_notify_fila5/issues/56"
@@ -26,14 +19,7 @@ related:
 ---
 # Laravel Boost Guidelines (../../../../docs/CLAUDE.md) Index
 
-<<<<<<< .merge_file_PP32Nz
 **Source**: [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/claude.md) (833 lines)  
-=======
-**Source**: [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/CLAUDE.md) (833 lines)  
-<<<<<<< .merge_file_9j21MX
->>>>>>> .merge_file_sWZ16W
-=======
->>>>>>> .merge_file_cbKk6J
 **Split Into**: 20 focused files  
 **Last Updated**: 2026-04-11  
 
@@ -119,14 +105,7 @@ related:
 
 ## Usage
 
-<<<<<<< .merge_file_PP32Nz
 These guidelines are automatically loaded by Claude/Laravel Boost MCP. For manual reference, see the original [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/claude.md).
-=======
-These guidelines are automatically loaded by Claude/Laravel Boost MCP. For manual reference, see the original [`docs/../../../../docs/CLAUDE.md`](../../../../../../docs/../../../../docs/CLAUDE.md).
-<<<<<<< .merge_file_9j21MX
->>>>>>> .merge_file_sWZ16W
-=======
->>>>>>> .merge_file_cbKk6J
 
 ---
 

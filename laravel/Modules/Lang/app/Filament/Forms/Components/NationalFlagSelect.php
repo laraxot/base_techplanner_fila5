@@ -53,44 +53,7 @@ class NationalFlagSelect extends XotBaseSelect
      */
     protected function getCountryOptions(): array
     {
-<<<<<<< .merge_file_uRcAYG
         return $this->buildOptions($this->sortCountriesByName($this->resolveCountries()));
-=======
-        // countries() restituisce righe array; i test alimentano anche righe sporche (stringhe)
-        /** @var array<array-key, array<array-key, mixed>|string> $countries */
-        $countries = countries();
-        // PHPStan L10: Type narrowing for array offset access
-        $countries = Arr::sort($countries, function (array|string $c) {
-            return is_array($c) && isset($c['name']) ? $c['name'] : '';
-        });
-
-        /** @var array<string, string> $options */
-        $options = [];
-
-        foreach ($countries as $c) {
-            // PHPStan L10: Type narrowing for country array
-            if (! is_array($c) || ! isset($c['iso_3166_1_alpha2'])) {
-                continue;
-            }
-
-            $code = $c['iso_3166_1_alpha2'];
-            if (! is_string($code)) {
-                continue;
-            }
-
-            $flagName = strtolower($code);
-            $localizedLabel = __('lang::countries.'.$flagName);
-
-            $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
-            $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';
-
-            $html = '<span class="flex items-center gap-2">'.$flag.$localizedLabel.'</span>';
-
-            $options[$code] = $html;
-        }
-
-        return $options;
->>>>>>> .merge_file_u8nEEs
     }
 
     /**
@@ -168,14 +131,7 @@ class NationalFlagSelect extends XotBaseSelect
                 continue;
             }
 
-<<<<<<< .merge_file_uRcAYG
             $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.strtolower($code).'.svg');
-=======
-            $flagName = strtolower($code);
-            $localizedLabel = __('lang::countries.'.$flagName);
-
-            $flagSrc = app(AssetAction::class)->execute('lang::svg/flag/'.$flagName.'.svg');
->>>>>>> .merge_file_u8nEEs
             $flag = '<img src="'.$flagSrc.'" class="h-4 w-6 mr-2" inline-block />';
 
             $options[$code] = '<span class="flex items-center gap-2">'

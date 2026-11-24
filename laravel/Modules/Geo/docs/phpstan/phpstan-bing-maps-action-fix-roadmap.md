@@ -187,13 +187,5 @@ L'errore PHPStan è stato risolto con successo! Ecco le modifiche implementate:
 
 - [GetAddressFromBingMapsAction.php](../../app/Actions/Bing/GetAddressFromBingMapsAction.php)
 - [PHPStan Code Quality Guide](../../../xot/docs/phpstan-code-quality-guide.md)
-<<<<<<< .merge_file_HbFBGA
-<<<<<<< .merge_file_XfODiw
 - [Geo Module PHPStan Fixes](./phpstan-fixes-gennaio.md)
-=======
-- [Geo Module PHPStan Fixes](../phpstan-fixes-gennaio-2025.md)
->>>>>>> .merge_file_Px519Q
-=======
-- [Geo Module PHPStan Fixes](../phpstan-fixes-gennaio-2025.md)
->>>>>>> .merge_file_uhuwZf
 - [Pattern Type Safety](../../../xot/docs/phpstan-patterns.md)

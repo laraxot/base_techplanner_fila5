@@ -1,16 +1,4 @@
 ---
-<<<<<<< .merge_file_5hC92T
-<<<<<<< .merge_file_3EymgB
-=======
-<<<<<<< .merge_file_34N5jS
-created: 2026-05-25
-=======
->>>>>>> .merge_file_Qx7MPT
-=======
-<<<<<<< .merge_file_34N5jS
-created: 2026-05-25
-=======
->>>>>>> .merge_file_PofrQe
 title: "copilot redundancy audit 2026 05 25"
 type: note
 tags: [documentation]
@@ -20,14 +8,6 @@ qmd: "copilot redundancy audit 2026 05 25"
 issues: []
 discussions: []
 status: draft
-<<<<<<< .merge_file_5hC92T
-<<<<<<< .merge_file_3EymgB
-=======
->>>>>>> .merge_file_mZrgkz
->>>>>>> .merge_file_Qx7MPT
-=======
->>>>>>> .merge_file_mZrgkz
->>>>>>> .merge_file_PofrQe
 ---
 
 Copilot Redundancy Audit — 2026-05-25

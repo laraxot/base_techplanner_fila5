@@ -5,26 +5,14 @@ status: active
 updated: 2026-11-16
 bmad: true
 module: Lang
-<<<<<<< .merge_file_k5NpKw
-<<<<<<< .merge_file_GeYAHb
 <<<<<<< .merge_file_7tkDIm
 =======
-=======
->>>>>>> .merge_file_ZI6cP6
-=======
->>>>>>> .merge_file_Yyhid5
 qmd: "decision log Lang tracker chiavi mancanti DB registerTranslator Post fuori scope config lang.php morta SaveTransAction solo local test coverage"
 related:
   - ./audits/lang-audit.md
   - ./architecture.md
   - ./epics.md
-<<<<<<< .merge_file_k5NpKw
-<<<<<<< .merge_file_GeYAHb
 >>>>>>> .merge_file_MmwCBk
-=======
->>>>>>> .merge_file_ZI6cP6
-=======
->>>>>>> .merge_file_Yyhid5
 ---
 
 # Decision log — Lang

@@ -45,27 +45,4 @@ discussions: []
 4. Mixed Queries - query=middleware "rate limit" - "middleware" AND exact phrase "rate limit"
 5. Multiple Queries - queries=["authentication", "middleware"] - ANY of these terms
 
-<<<<<<< .merge_file_zb3eYV
 ## Cross-References
-=======
-
-
----
-
-title: "boost rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "boost rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [CLAUDE Index](index.md) — All Laravel Boost guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../docs/CLAUDE.md](../../../../docs/../../../../docs/CLAUDE.md) — Original source
-
->>>>>>> .merge_file_PHnCJz

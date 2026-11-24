@@ -240,11 +240,7 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 
 ### Root Docs
 1. ✅ [LEGGI-QUI-DOMANI.md](./leggi-qui-domani.md) - Piano giornaliero
-<<<<<<< .merge_file_8S4MSI
 2. ✅ [ANALISI-COMPLETA-2025-10-01.md](./analisi-completa-2025-10-01.md) - Executive summary
-=======
-2. ✅ [ANALISI-COMPLETA-2025-10-01.md](./ANALISI-COMPLETA-2025-10-01.md) - Executive summary
->>>>>>> .merge_file_OisdVA
 3. ✅ [roadmap-master-index.md](./roadmap-master-index.md) - Master index
 4. ✅ [project-analysis-and-roadmap.md](./project-analysis-and-roadmap.md) - Business view
 5. ✅ [phpstan/session-summary-2025-10-01.md](./phpstan/session-summary-2025-10-01.md)
@@ -544,11 +540,7 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 
 ### Start Here
 - [🌅 Piano Domani](./leggi-qui-domani.md) - Anche se già completato!
-<<<<<<< .merge_file_8S4MSI
 - [📊 Analisi Completa](./analisi-completa-2025-10-01.md) - Executive view
-=======
-- [📊 Analisi Completa](./ANALISI-COMPLETA-2025-10-01.md) - Executive view
->>>>>>> .merge_file_OisdVA
 - [🗺️ Master Roadmap](./roadmap-master-index.md) - Future planning
 
 ### Technical Docs

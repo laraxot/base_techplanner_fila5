@@ -16,44 +16,6 @@ discussions: []
 **Status**: ✅ ALWAYS ACTIVE  
 **Priority**: BLOCKER (violation = STOP immediately)
 
-<<<<<<< .merge_file_CZl3zG
-=======
----
-<<<<<<< .merge_file_XN81Ip
-=======
-
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
-## 🎯 Rule #1: Filament Tables for Lists
-
-> **MAI** creare blade personalizzati per liste di outcomes, predict, o dati tabellari.
-> **SEMPRE** usare Filament Table Widget che ha già:
-> - ✅ Search (debounce 400ms)
-> - ✅ Sorting (multi-column)
-> - ✅ Filters (status, category, date, hot)
-> - ✅ Pagination (12/24/48)
-> - ✅ CSS hooks (fi-ta-*)
-> - ✅ Livewire reactivity
-> - ✅ URL synchronization
-> - ✅ Export ready
-> - ✅ Accessibility built-in
->>>>>>> .merge_file_mwzNf4
-
-title: "00 index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 index"
-issues: []
-discussions: []
->>>>>>> .merge_file_wLl2na
 ## 🎯 Rule #1: Filament Tables for Lists
 ### ✅ CORRECT - Filament Table Widget
 ### ❌ WRONG - Custom Blade

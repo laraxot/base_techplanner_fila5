@@ -44,7 +44,7 @@ function breadcrumbItems(SchemaObject|array $schema): array
 }
 
 test('home identity does not depend on the language of the page that publishes it', function (string $locale, string $homeUrl): void {
-    $schemas = (new BuildHeadSchemaAction())->execute(
+    $schemas = (new BuildHeadSchemaAction)->execute(
         isHome: true,
         brand: 'Example',
         homeUrl: $homeUrl,
@@ -71,7 +71,7 @@ test('home identity does not depend on the language of the page that publishes i
 ]);
 
 test('a site written in one language declares that language as a single value', function (): void {
-    $schemas = (new BuildHeadSchemaAction())->execute(
+    $schemas = (new BuildHeadSchemaAction)->execute(
         isHome: true,
         brand: 'Example',
         homeUrl: 'https://example.test/it',
@@ -87,7 +87,7 @@ test('a site written in one language declares that language as a single value', 
 });
 
 test('inner pages link to the web site and use short breadcrumb names', function (): void {
-    $schemas = (new BuildHeadSchemaAction())->execute(
+    $schemas = (new BuildHeadSchemaAction)->execute(
         isHome: false,
         brand: 'Example',
         homeUrl: 'https://example.test/it',
@@ -109,7 +109,7 @@ test('inner pages link to the web site and use short breadcrumb names', function
 });
 
 test('the first breadcrumb falls back to the brand and an existing isPartOf is kept', function (): void {
-    $schemas = (new BuildHeadSchemaAction())->execute(
+    $schemas = (new BuildHeadSchemaAction)->execute(
         isHome: false,
         brand: 'Example',
         homeUrl: 'https://example.test/it',
@@ -124,57 +124,6 @@ test('the first breadcrumb falls back to the brand and an existing isPartOf is k
     Assert::assertSame(['@id' => 'https://other.test/#website'], schemaArray($schemas[0])['isPartOf']);
 });
 
-<<<<<<< .merge_file_uyJBMW
-<<<<<<< .merge_file_AaAraf
-=======
-=======
->>>>>>> .merge_file_XUXKMw
-<<<<<<< .merge_file_cxEKlQ
-test('business data turn the home organization into a local business', function (): void {
-    $schemas = (new BuildHeadSchemaAction())->execute(
-        isHome: true,
-        brand: 'Example',
-        homeUrl: 'https://example.test/it',
-        pageTitle: 'Example',
-        pageUrl: 'https://example.test/it',
-        locale: 'it',
-        logoUrl: 'https://example.test/logo.svg',
-        page: [],
-        rootUrl: 'https://example.test',
-        business: [
-            'type' => 'ProfessionalService',
-            'name' => 'Ignored',
-            'telephone' => '+39 041 000000',
-            'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Mogliano Veneto', 'postalCode' => '31021'],
-            'areaServed' => [['@type' => 'AdministrativeArea', 'name' => 'Veneto']],
-            'email' => '',
-            'sameAs' => [],
-        ],
-    );
-
-    $organization = schemaArray($schemas[0]);
-
-    Assert::assertSame('ProfessionalService', $organization['@type']);
-    // Nome, URL e identità restano quelli del sito, anche se i dati dell'attività provano a cambiarli.
-    Assert::assertSame('Example', $organization['name']);
-    Assert::assertSame('https://example.test/#organization', $organization['@id']);
-    Assert::assertSame('+39 041 000000', $organization['telephone']);
-    $address = $organization['address'] ?? null;
-    Assert::assertIsArray($address);
-    Assert::assertSame('Mogliano Veneto', $address['addressLocality'] ?? null);
-    Assert::assertSame('https://example.test/logo.svg', $organization['image']);
-    // I valori vuoti non entrano: il validatore di laravel/head li rifiuta.
-    Assert::assertArrayNotHasKey('email', $organization);
-    Assert::assertArrayNotHasKey('sameAs', $organization);
-});
-
-test('without business data the home organization stays a plain Organization', function (): void {
-    $schemas = (new BuildHeadSchemaAction())->execute(
-=======
-<<<<<<< .merge_file_uyJBMW
->>>>>>> .merge_file_8f46kT
-=======
->>>>>>> .merge_file_XUXKMw
 /**
  * @param  list<string>  $sameAs
  * @return array<string, mixed>
@@ -182,14 +131,6 @@ test('without business data the home organization stays a plain Organization', f
 function homeOrganization(?string $description, array $sameAs): array
 {
     return schemaArray((new BuildHeadSchemaAction)->execute(
-<<<<<<< .merge_file_uyJBMW
-<<<<<<< .merge_file_AaAraf
-=======
->>>>>>> .merge_file_0xGCQE
->>>>>>> .merge_file_8f46kT
-=======
->>>>>>> .merge_file_0xGCQE
->>>>>>> .merge_file_XUXKMw
         isHome: true,
         brand: 'Example',
         homeUrl: 'https://example.test/it',
@@ -199,23 +140,6 @@ function homeOrganization(?string $description, array $sameAs): array
         logoUrl: null,
         page: [],
         rootUrl: 'https://example.test',
-<<<<<<< .merge_file_uyJBMW
-<<<<<<< .merge_file_AaAraf
-=======
-=======
->>>>>>> .merge_file_XUXKMw
-<<<<<<< .merge_file_cxEKlQ
-    );
-
-    $organization = schemaArray($schemas[0]);
-
-    Assert::assertSame('Organization', $organization['@type']);
-    Assert::assertArrayNotHasKey('address', $organization);
-=======
-<<<<<<< .merge_file_uyJBMW
->>>>>>> .merge_file_8f46kT
-=======
->>>>>>> .merge_file_XUXKMw
         description: $description,
         sameAs: $sameAs,
     )[0]);
@@ -229,12 +153,4 @@ test('home organization carries description and official profiles only when the 
     $bare = homeOrganization(' ', []);
     Assert::assertArrayNotHasKey('description', $bare);
     Assert::assertArrayNotHasKey('sameAs', $bare);
-<<<<<<< .merge_file_uyJBMW
-<<<<<<< .merge_file_AaAraf
-=======
->>>>>>> .merge_file_0xGCQE
->>>>>>> .merge_file_8f46kT
-=======
->>>>>>> .merge_file_0xGCQE
->>>>>>> .merge_file_XUXKMw
 });

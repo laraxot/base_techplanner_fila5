@@ -3,11 +3,7 @@ title: "baseuser dry violation 2025 10 15"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_qvcaE7
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_qhwnXd
 qmd: "baseuser dry violation 2025 10 15"
 issues: []
 discussions: []

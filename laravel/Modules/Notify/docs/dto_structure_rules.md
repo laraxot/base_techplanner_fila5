@@ -3,11 +3,7 @@ title: "dto structure rules"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_TuU3ZG
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_ZONbi5
 qmd: "dto structure rules"
 issues: []
 discussions: []

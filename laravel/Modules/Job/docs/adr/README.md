@@ -1,6 +1,4 @@
 ---
-<<<<<<< .merge_file_RWE4GF
-<<<<<<< .merge_file_py2NR7
 title: "ADR del modulo Job"
 type: index
 module: Job
@@ -40,51 +38,3 @@ Chi cambia una decisione scrive un nuovo ADR e segna il precedente `superseded b
 - [job-operations-are-whitelisted](job-operations-are-whitelisted.md): stessa decisione del precedente in forma breve; overlap da consolidare (non marcato superseded da questa sessione).
 
 Elenco con stato: [INDEX.md](INDEX.md).
-=======
-=======
->>>>>>> .merge_file_z6T3EL
-title: "Architecture Decision Records"
-type: index
-tags: [adr, decisioni]
-created: 2026-11-18
-updated: 2026-11-18
----
-
-# Architecture Decision Records
-
-Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
-
-## Formato
-
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
-
-# ADR: <decisione>
-
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-```
-
-## Decisioni
-
-<<<<<<< .merge_file_RWE4GF
->>>>>>> .merge_file_dpCyuk
-=======
->>>>>>> .merge_file_z6T3EL

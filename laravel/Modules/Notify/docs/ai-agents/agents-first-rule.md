@@ -11,18 +11,8 @@ discussions: []
 
 # Agents first rule: Read → Reason → Study → Update → Improve
 
-<<<<<<< .merge_file_yuIiSm
-<<<<<<< .merge_file_kaCNJU
 > Source: [AGENTS.md](../../agents.md)
 > Source: [agents.md](../../agents.md)
-=======
-> Source: [AGENTS.md](../../AGENTS.md)
-> Source: [AGENTS.md](../../AGENTS.md)
->>>>>>> .merge_file_8wzu0R
-=======
-> Source: [AGENTS.md](../../AGENTS.md)
-> Source: [AGENTS.md](../../AGENTS.md)
->>>>>>> .merge_file_yjCDqo
 > Back: [index](index.md) | [workflow.md](workflow.md)
 
 ## The fundamental rule

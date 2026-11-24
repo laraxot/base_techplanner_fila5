@@ -2,14 +2,8 @@
 qmd: "Project Structure"
 issues: []
 discussions: []
-<<<<<<< .merge_file_OtG5VD
-<<<<<<< .merge_file_gHBjXD
 title: "Project Structure — Module Lang"
 
-=======
->>>>>>> .merge_file_0j8hWg
-=======
->>>>>>> .merge_file_qxRKrK
 title: "Project Structure"
 type: documentation
 created: 2026-05-11
@@ -43,17 +37,11 @@ tags: [structure, architecture, module]
 │   │   └── *.md
 │   ├── decisions/                # Architecture decision records
 │   └── troubleshooting/          # Bug fixes, error resolutions
-<<<<<<< .merge_file_OtG5VD
-<<<<<<< .merge_file_gHBjXD
 ├── ON-DEMAND-PATTERN.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── QMD-SETUP.md                  # Configurazione QMD
 ├── PERFORMANCE-OPTIMIZATION.md    # Metriche e best practice
 ├── ARCHITECTURE.md               # (opzionale) Architettura modulo
 
-=======
->>>>>>> .merge_file_0j8hWg
-=======
->>>>>>> .merge_file_qxRKrK
 ├── on-demand-pattern.md          # 🌟 QUESTO FILE — Pattern on-demand
 ├── qmd-setup.md                  # Configurazione QMD
 ├── performance-optimization.md    # Metriche e best practice
@@ -69,12 +57,9 @@ tags: [structure, architecture, module]
 | `wiki/log.md` | Storico attività (ingest/query/lint) |
 | `wiki/rules/` | Regole + trigger map locale |
 | `wiki/concepts/` | Concetti specifici del modulo |
-| `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
-<<<<<<< .merge_file_OtG5VD
+| `ON-DEMAND-PATTERN.md` | **Leggi prima** — pattern da seguire |
 
 | `on-demand-pattern.md` | **Leggi prima** — pattern da seguire |
-=======
->>>>>>> .merge_file_qxRKrK
 
 ## Convenzioni
 

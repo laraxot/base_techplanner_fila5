@@ -3,15 +3,7 @@ title: "analisi dettagliata 2"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_XLLAis
-<<<<<<< .merge_file_AL7cpW
 updated: 2026-11-23
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_ibarc4
-=======
-updated: 2026-09-26
->>>>>>> .merge_file_eY57Lt
 qmd: "analisi dettagliata 2"
 issues: []
 discussions: []

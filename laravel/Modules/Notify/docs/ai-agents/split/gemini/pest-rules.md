@@ -19,26 +19,4 @@ discussions: []
 - CRITICAL: ALWAYS use `search-docs` tool for version-specific Pest documentation and updated code examples.
 - IMPORTANT: Activate `pest-testing` every time you're working with a Pest or testing-related task.
 
-<<<<<<< .merge_file_JugWfJ
 ## Cross-References
-=======
-
----
-
-title: "pest rules"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "pest rules"
-issues: []
-discussions: []
-## Cross-References
-
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [GEMINI Index](index.md) — All Gemini guidelines
-- ← [Main AI Docs Index](../index.md) — Master index
-- ← [../../../../laravel/gemini.md](../../../../laravel/../../../../laravel/gemini.md) — Original source
-
->>>>>>> .merge_file_8BG8EB

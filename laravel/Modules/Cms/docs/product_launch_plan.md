@@ -1,20 +1,10 @@
 ---
-title: "Product Launch Plan"
+title: "product launch plan"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_e3mNCn
-<<<<<<< .merge_file_2fMmdm
 updated: 2026-11-23
 qmd: "product launch plan"
-=======
-updated: 2026-09-26
-qmd: "Product Launch Plan"
->>>>>>> .merge_file_kBSH31
-=======
-updated: 2026-09-26
-qmd: "Product Launch Plan"
->>>>>>> .merge_file_HrxpgO
 issues: []
 discussions: []
 ---
@@ -27,12 +17,12 @@ discussions: []
 
 ---
 
-title: "PRODUCT LAUNCH PLAN"
+title: "product launch plan"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "PRODUCT LAUNCH PLAN"
+qmd: "product launch plan"
 issues: []
 discussions: []
 ## Launch Objectives

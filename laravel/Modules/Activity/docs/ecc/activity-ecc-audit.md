@@ -25,19 +25,11 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio dei finding: [audit profondo](
 | `clean-code` | **parziale** | 0 Services, 0 label hardcoded; duplicati: 2× `ActivityRecorderContract`, 2× `ActivityLogger`, `ActivityBasePolicy` orfana |
 | `security-review` | **aperto** | P1-2 registro mutabile da UI; P1-3 segreti non redatti (latente); P1-1 login non loggato |
 | `laravel-verification` | **parziale** | migration: 5 `create_activity_table` + `fix_*` vs contratto "unica"; `_bak/` con `dropColumn`; `TestModel` in prod |
-<<<<<<< .merge_file_dPyNqy
-<<<<<<< .merge_file_S6Ex4y
 <<<<<<< .merge_file_YoEPGH
 | `verification-loop` | **PHPStan ok / Pest vedi sotto** | PHPStan 0; Pest: @@PEST_Activity_SHORT@@ |
 =======
 | `verification-loop` | **PHPStan ok / Pest vedi sotto** | PHPStan 0; Pest: parziale (25 pass in 2 probe; suite completa in timeout a 900 s) |
 >>>>>>> .merge_file_blWyeY
-=======
-| `verification-loop` | **PHPStan ok / Pest vedi sotto** | PHPStan 0; Pest: parziale (25 pass in 2 probe; suite completa in timeout a 900 s) |
->>>>>>> .merge_file_dnABqg
-=======
-| `verification-loop` | **PHPStan ok / Pest vedi sotto** | PHPStan 0; Pest: parziale (25 pass in 2 probe; suite completa in timeout a 900 s) |
->>>>>>> .merge_file_nvl75T
 | `tdd-workflow` | **aperto** | 8 test file vuoti, 19 skip, 0 `Livewire::test` |
 | `documentation-sync` | **parziale** | pack BMAD aggiornato; 331/782 `.md` senza frontmatter; 8 `.md` alla root del modulo |
 | `context-engineering` | ok | QMD/graphify prima, decision-log dopo |
@@ -60,19 +52,11 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio dei finding: [audit profondo](
 ## Gate osservati
 
 - PHPStan `Modules/Activity` (`--no-progress`): **0 errori**.
-<<<<<<< .merge_file_dPyNqy
-<<<<<<< .merge_file_S6Ex4y
 <<<<<<< .merge_file_YoEPGH
 - Pest `Modules/Activity/tests` su scratch DB (`bashscripts/tools/pest-scratch-db.sh`): @@PEST_Activity@@
 =======
 - Pest `Modules/Activity/tests` su scratch DB (`bashscripts/tools/pest-scratch-db.sh`): **parziale** — suite completa non terminata (timeout 900 s, macchina con load ≈ 50; 16 pass e 40 ⨯ al momento dello stop, **non riproducibili in isolamento**: `BaseModelBusinessLogicTest` 21 pass); probe `ActivityManagementTest` 4 pass. Causa dei ⨯ del run completo non determinata.
 >>>>>>> .merge_file_blWyeY
-=======
-- Pest `Modules/Activity/tests` su scratch DB (`bashscripts/tools/pest-scratch-db.sh`): **parziale** — suite completa non terminata (timeout 900 s, macchina con load ≈ 50; 16 pass e 40 ⨯ al momento dello stop, **non riproducibili in isolamento**: `BaseModelBusinessLogicTest` 21 pass); probe `ActivityManagementTest` 4 pass. Causa dei ⨯ del run completo non determinata.
->>>>>>> .merge_file_dnABqg
-=======
-- Pest `Modules/Activity/tests` su scratch DB (`bashscripts/tools/pest-scratch-db.sh`): **parziale** — suite completa non terminata (timeout 900 s, macchina con load ≈ 50; 16 pass e 40 ⨯ al momento dello stop, **non riproducibili in isolamento**: `BaseModelBusinessLogicTest` 21 pass); probe `ActivityManagementTest` 4 pass. Causa dei ⨯ del run completo non determinata.
->>>>>>> .merge_file_nvl75T
 
 ## Anti-pattern vietati (verificati assenti)
 
@@ -83,24 +67,12 @@ Test svuotati per silenziare: **8 file** (vedi P1-4).
 
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
-<<<<<<< .merge_file_dPyNqy
-<<<<<<< .merge_file_S6Ex4y
 <<<<<<< .merge_file_YoEPGH
 =======
-=======
->>>>>>> .merge_file_dnABqg
-=======
->>>>>>> .merge_file_nvl75T
 
 ## Confine Folio (ECC)
 
 Activity **non** chiama `Folio::path`. File `pages/` sì, mount no.
 Owner mount: `Cms/FolioVolt` (FO); progetti senza Cms → niente surrogato in Activity/App.
 Story: [folio-routing-centralization](../bmad/stories/folio-routing-centralization.story.md).
-<<<<<<< .merge_file_dPyNqy
-<<<<<<< .merge_file_S6Ex4y
 >>>>>>> .merge_file_blWyeY
-=======
->>>>>>> .merge_file_dnABqg
-=======
->>>>>>> .merge_file_nvl75T

@@ -7,14 +7,7 @@ module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
-<<<<<<< .merge_file_bc1hUH
 updated: 2026-11-23
-=======
-updated: 2026-08-24
-<<<<<<< .merge_file_gNaqXz
->>>>>>> .merge_file_kE0gOK
-=======
->>>>>>> .merge_file_AeeM8j
 ---
 
 # Convenzioni di Naming per Acronimi

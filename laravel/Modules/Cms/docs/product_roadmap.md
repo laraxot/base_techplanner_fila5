@@ -1,20 +1,10 @@
 ---
-title: "Product Roadmap"
+title: "product roadmap"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_mOP6W7
-<<<<<<< .merge_file_ZsG9qn
 updated: 2026-11-23
 qmd: "product roadmap"
-=======
-updated: 2026-09-26
-qmd: "Product Roadmap"
->>>>>>> .merge_file_9p27Wj
-=======
-updated: 2026-09-26
-qmd: "Product Roadmap"
->>>>>>> .merge_file_GJvLVK
 issues: []
 discussions: []
 ---
@@ -28,12 +18,12 @@ discussions: []
 
 ---
 
-title: "PRODUCT ROADMAP"
+title: "product roadmap"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "PRODUCT ROADMAP"
+qmd: "product roadmap"
 issues: []
 discussions: []
 ## Vision Statement

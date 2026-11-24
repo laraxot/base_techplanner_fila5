@@ -18,11 +18,6 @@ class GetCoordinatesByAddressAction
 
     public function execute(string $address): ?CoordinatesData
     {
-        // Indirizzo vuoto: nessun provider può rispondere, inutile spendere richieste (e quota) per scoprirlo.
-        if (trim($address) === '') {
-            return null;
-        }
-
         // Prova con Google Maps
         $coordinates = $this->getFromGoogle($address)
             ?? $this->getFromBing($address)
@@ -47,11 +42,11 @@ class GetCoordinatesByAddressAction
      *
      * @return array{results: array<int, array{geometry: array{location: array{lat: float, lng: float}}}>}
      */
-    private function getGoogleResponse(string $address, string $apiKey): array
+    private function getGoogleResponse(string $address): array
     {
         $response = $this->makeHttpRequest(GeoApiEndpoints::GOOGLE_GEOCODING, [
             'address' => $address,
-            'key' => $apiKey,
+            'key' => config('services.google.maps_api_key'),
         ]);
 
         if (! $response->successful()) {
@@ -70,13 +65,7 @@ class GetCoordinatesByAddressAction
 
     private function getFromGoogle(string $address): ?CoordinatesData
     {
-        // Come per Bing: senza chiave Google rifiuta la richiesta, quindi si passa subito al provider successivo.
-        $apiKey = config('services.google.maps_api_key');
-        if (! is_string($apiKey) || $apiKey === '') {
-            return null;
-        }
-
-        $data = $this->getGoogleResponse($address, $apiKey);
+        $data = $this->getGoogleResponse($address);
 
         if (empty($data['results'])) {
             return null;

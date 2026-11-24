@@ -14,32 +14,6 @@ discussions: []
 Analisi dei competitor di prediction market.
 Analisi dei competitor di forecast market.
 
-<<<<<<< .merge_file_2g93JB
-=======
----
-<<<<<<< .merge_file_wpcTdy
-=======
-
-title: "qwen competitors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen competitors"
-issues: []
-discussions: []
-## 🎯 Competitor Analysis
->>>>>>> .merge_file_ZZ3sUJ
-
-title: "qwen competitors"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen competitors"
-issues: []
-discussions: []
->>>>>>> .merge_file_EzyEaP
 ## 🎯 Competitor Analysis
 ### Polymarket (Leader)
 
@@ -100,13 +74,5 @@ discussions: []
 ## 🔗 Link
 
 - [Indice QWEN](./qwen-split-index.md)
-<<<<<<< .merge_file_wpcTdy
-<<<<<<< .merge_file_2g93JB
 - [QWEN.md originale](../../qwen.md)
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_EzyEaP
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_ZZ3sUJ
 - [Index principale](./index.md)

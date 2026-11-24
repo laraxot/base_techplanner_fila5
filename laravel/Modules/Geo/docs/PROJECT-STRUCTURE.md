@@ -98,47 +98,18 @@ graph TD
 ## Riferimenti Globali
 
 - [Project Wiki Root](../../docs/wiki/)
-<<<<<<< .merge_file_LHpOYQ
-<<<<<<< .merge_file_6S7bsz
 <<<<<<< .merge_file_WaoC4H
-=======
-<<<<<<< .merge_file_PzcY22
->>>>>>> .merge_file_2KTkdw
-=======
-<<<<<<< .merge_file_PzcY22
->>>>>>> .merge_file_fyp83a
 - [Global Rules](wiki/rules)
 - [Global Skills](wiki/skills)
 - [Global Commands](wiki/commands)
 - [Global Memories](wiki/memories)
-<<<<<<< .merge_file_LHpOYQ
-<<<<<<< .merge_file_6S7bsz
-=======
-=======
->>>>>>> .merge_file_fyp83a
-- [Global Rules](../../docs/wiki/rules/)
-- [Global Skills](../../docs/wiki/skills/)
-- [Global Commands](../../docs/wiki/commands/)
-- [Global Memories](../../docs/wiki/memories/)
-<<<<<<< .merge_file_LHpOYQ
->>>>>>> .merge_file_2KTkdw
-=======
->>>>>>> .merge_file_fyp83a
 =======
 - [Global Rules](../../../../docs/wiki/rules/)
 - [Global Skills](../../../../bashscripts/ai/wiki/skills/)
 - [Global Commands](../../../../bashscripts/ai/wiki/commands/)
 - [Global Memories](../../../../docs/wiki/memories/)
 - Indici locali del modulo: [rules](wiki/rules) · [skills](wiki/skills) · [commands](wiki/commands) · [memories](wiki/memories)
-<<<<<<< .merge_file_LHpOYQ
-<<<<<<< .merge_file_6S7bsz
 >>>>>>> .merge_file_Kk4Tle
-=======
->>>>>>> .merge_file_hfUKHm
->>>>>>> .merge_file_2KTkdw
-=======
->>>>>>> .merge_file_hfUKHm
->>>>>>> .merge_file_fyp83a
 
 ## Setup Iniziale (per nuovi moduli)
 

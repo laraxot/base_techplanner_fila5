@@ -30,37 +30,6 @@ Panoramica e stato attuale del progetto Base Forecast Fila5.
 | Filament Widgets | 2026-03-20 | ✅ DOCUMENTATO |
 | Incident Composer | 2026-03-19 | ✅ RISOLTO |
 
-<<<<<<< .merge_file_DXK1Pg
-=======
----
-<<<<<<< .merge_file_R9vaUL
-=======
-
-title: "qwen overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen overview"
-issues: []
-discussions: []
-## 🎯 Obiettivo Principale
-
-**Creare la MIGLIORE predict platform di TUTTI i competitors**
-**Creare la MIGLIORE forecast platform di TUTTI i competitors**
-
-Senza alcun se o ma. Deve essere perfetta in ogni aspetto.
->>>>>>> .merge_file_Dcq7sO
-
-title: "qwen overview"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "qwen overview"
-issues: []
-discussions: []
->>>>>>> .merge_file_wqs2jD
 ## 🎯 Obiettivo Principale
 ### Obiettivi Specifici
 
@@ -89,13 +58,5 @@ Never: git revert (only forward!)
 ## 🔗 Link
 
 - [Indice QWEN](./qwen-split-index.md)
-<<<<<<< .merge_file_R9vaUL
-<<<<<<< .merge_file_DXK1Pg
 - [QWEN.md originale](../../qwen.md)
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_wqs2jD
-=======
-- [qwen.md originale](../../qwen.md)
->>>>>>> .merge_file_Dcq7sO
 - [Index principale](./index.md)

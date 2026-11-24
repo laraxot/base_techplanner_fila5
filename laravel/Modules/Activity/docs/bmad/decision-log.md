@@ -4,31 +4,13 @@ type: decision-log
 status: active
 updated: 2026-11-16
 module: Activity
-<<<<<<< .merge_file_U31J3j
-<<<<<<< .merge_file_bIBVMD
-<<<<<<< .merge_file_UBbHn1
 <<<<<<< .merge_file_KgNQKP
 =======
-=======
->>>>>>> .merge_file_rjc7jq
-=======
->>>>>>> .merge_file_MeHPmi
-=======
->>>>>>> .merge_file_4VllI8
 qmd: "decision log Activity ADR registro append-only redazione login listener migrazioni"
 related:
   - ./audits/activity-audit.md
   - ./epics.md
-<<<<<<< .merge_file_U31J3j
-<<<<<<< .merge_file_bIBVMD
-<<<<<<< .merge_file_UBbHn1
 >>>>>>> .merge_file_ejoNu2
-=======
->>>>>>> .merge_file_rjc7jq
-=======
->>>>>>> .merge_file_MeHPmi
-=======
->>>>>>> .merge_file_4VllI8
 ---
 
 # Decision log — Activity
@@ -45,9 +27,6 @@ Append-only, più recente in alto. Le voci d'esempio del template precedente (Wi
 
 ## Regole di lettura
 
-<<<<<<< .merge_file_U31J3j
-<<<<<<< .merge_file_bIBVMD
-<<<<<<< .merge_file_UBbHn1
 <<<<<<< .merge_file_KgNQKP
 ### 2026-09-29
 **Decisione:** [Esempio: Utilizzare Filament Widget invece di Livewire per i componenti di UI]
@@ -75,15 +54,3 @@ Append-only, più recente in alto. Le voci d'esempio del template precedente (Wi
 - Una decisione `PROPOSTA` diventa `APPROVATA` solo con story BMAD e Pest verde.
 - Nuove decisioni: aggiungere una riga in alto; non riscrivere quelle passate, superarle con un riferimento.
 >>>>>>> .merge_file_ejoNu2
-=======
-- Una decisione `PROPOSTA` diventa `APPROVATA` solo con story BMAD e Pest verde.
-- Nuove decisioni: aggiungere una riga in alto; non riscrivere quelle passate, superarle con un riferimento.
->>>>>>> .merge_file_rjc7jq
-=======
-- Una decisione `PROPOSTA` diventa `APPROVATA` solo con story BMAD e Pest verde.
-- Nuove decisioni: aggiungere una riga in alto; non riscrivere quelle passate, superarle con un riferimento.
->>>>>>> .merge_file_MeHPmi
-=======
-- Una decisione `PROPOSTA` diventa `APPROVATA` solo con story BMAD e Pest verde.
-- Nuove decisioni: aggiungere una riga in alto; non riscrivere quelle passate, superarle con un riferimento.
->>>>>>> .merge_file_4VllI8

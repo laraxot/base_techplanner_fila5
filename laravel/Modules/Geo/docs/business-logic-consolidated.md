@@ -250,17 +250,9 @@ User (base)
 
 ### Documentazione Moduli
 - [<nome progetto>](../modules/<nome progetto>/docs/README.md)
-<<<<<<< .merge_file_mhFi7m
-<<<<<<< .merge_file_mb4YRv
-=======
-- [<nome progetto>](../modules/<nome progetto>/docs/README.md)
->>>>>>> .merge_file_1rfeMV
-=======
-- [<nome progetto>](../modules/<nome progetto>/docs/README.md)
->>>>>>> .merge_file_Vhmhja
 - [User](../../User/docs/README.md)
 - [Geo](README.md)
-- [Media](../../Media/docs/README.md)
+- [Media](../../Media/docs/readme.md)
 - [UI](../../UI/docs/README.md)
 - [Xot](../../Xot/docs/README.md)
 

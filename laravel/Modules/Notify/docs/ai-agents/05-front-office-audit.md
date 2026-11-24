@@ -3,14 +3,7 @@ title: "05 Front Office Audit"
 type: note
 tags: [documentation]
 created: 2026-09-26
-<<<<<<< .merge_file_MNEv3t
 updated: 2026-11-23
-=======
-updated: 2026-09-26
-<<<<<<< .merge_file_Br5QSk
->>>>>>> .merge_file_617Fdx
-=======
->>>>>>> .merge_file_uGGCKm
 qmd: "05 Front Office Audit"
 issues: []
 discussions: []
@@ -18,41 +11,9 @@ discussions: []
 
 # 📋 Front Office Pages Audit Checklist
 
-<<<<<<< .merge_file_Br5QSk
-<<<<<<< .merge_file_MNEv3t
 **Part of**: [00-INDEX.md](00-index.md) — AI Agents Coordination  
 **Related**: [03-ARCHITECTURE-ZEN.md](03-architecture-zen.md) — Architecture
 
-=======
-=======
->>>>>>> .merge_file_uGGCKm
-**Part of**: [00-index.md](00-index.md) — AI Agents Coordination  
-**Related**: [03-architecture-zen.md](03-architecture-zen.md) — Architecture
-
----
-<<<<<<< .merge_file_Br5QSk
-=======
-
-title: "05 FRONT OFFICE AUDIT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "05 FRONT OFFICE AUDIT"
-issues: []
-discussions: []
-## 🔍 Mandatory Checklist (Before Commit)
->>>>>>> .merge_file_uGGCKm
-
-title: "05 FRONT OFFICE AUDIT"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "05 FRONT OFFICE AUDIT"
-issues: []
-discussions: []
->>>>>>> .merge_file_617Fdx
 ## 🔍 Mandatory Checklist (Before Commit)
 ### 1. Routing Multilingual
 ### 2. Filament Forms & Tables

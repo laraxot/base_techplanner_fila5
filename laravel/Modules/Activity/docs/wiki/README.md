@@ -57,27 +57,9 @@ Pagine brevi e riusabili (concetti, regole, memorie) che completano le story. Mi
 |---|---|---|
 | `concepts/` | 37 | [concepts/index.md](./concepts/index.md) |
 | `testing/` | 11 | nessuno |
-<<<<<<< .merge_file_r0a81L
-<<<<<<< .merge_file_nknD8E
 | `rules/` | 4 | [rules/index.md](./rules/index.md) |
 | `memories/` | 4 | [memories/index.md](./memories/index.md) |
 | `skills/` | 2 | [skills/index.md](./skills/index.md) |
-=======
-=======
->>>>>>> .merge_file_lGMmGp
-<<<<<<< .merge_file_7d0skJ
-| `rules/` | 4 | [rules/INDEX.md](./rules/INDEX.md) |
-| `memories/` | 4 | [memories/INDEX.md](./memories/INDEX.md) |
-| `skills/` | 2 | [skills/INDEX.md](skills/index.md) |
-=======
-| `rules/` | 4 | [rules/index.md](./rules/index.md) |
-| `memories/` | 4 | [memories/index.md](./memories/index.md) |
-| `skills/` | 2 | [skills/index.md](./skills/index.md) |
->>>>>>> .merge_file_dyXPoM
-<<<<<<< .merge_file_r0a81L
->>>>>>> .merge_file_i89UGm
-=======
->>>>>>> .merge_file_lGMmGp
 | `howto/`, `_templates/` | 3 ciascuna | nessuno |
 | `troubleshooting/`, `integrations/`, `features/`, `commands/`, `analysis/` | 2 ciascuna | nessuno |
 | `sources/`, `product/`, `patterns/`, `overviews/`, `how-to/` | 1 ciascuna | nessuno |

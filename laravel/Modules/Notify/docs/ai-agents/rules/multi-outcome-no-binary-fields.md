@@ -16,49 +16,6 @@ discussions: []
 **Status**: ✅ CRITICAL RULE  
 **Priority**: BLOCKER
 
-<<<<<<< .merge_file_GmC55h
-=======
----
-<<<<<<< .merge_file_NnWLcF
-=======
-
-title: "multi outcome no binary fields"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "multi outcome no binary fields"
-issues: []
-discussions: []
-## 🎯 The Rule
-
-> **NON ESISTONO** predict di tipo SÌ/NO!
-> **NON ESISTONO** forecast di tipo SÌ/NO!
-> **TUTTO** è multi-risposta (2-30+ outcomes)!
-> **MAI** usare `sum_credit_yes`, `sum_credit_no`, `count_credit_yes`, `count_credit_no`!
-
-**Example**:
-```php
-// ❌ SBAGLIATO - Campi binary DEPRECATI
-$pivot->sum_credit_yes
-$pivot->sum_credit_no
-$pivot->count_credit_yes
-$pivot->count_credit_no
-
-// ✅ CORRETTO - Usare SOLO rating_morph
-$pivot->percentage  // Unico campo valido
-```
->>>>>>> .merge_file_EWGQsg
-
-title: "multi outcome no binary fields"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "multi outcome no binary fields"
-issues: []
-discussions: []
->>>>>>> .merge_file_0azVbm
 ## 🎯 The Rule
 
 ## 🧠 The WHY (Philosophy)
@@ -226,14 +183,6 @@ $pivot->percentage  // ✅ Unico campo valido
 ## 🔗 Related Documentation
 
 ### AI Agents Docs
-<<<<<<< .merge_file_NnWLcF
-<<<<<<< .merge_file_GmC55h
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_0azVbm
-=======
-- **[Rules Index](00-index.md)** - All rules
->>>>>>> .merge_file_EWGQsg
 - **[Rules Index](00-index.md)** - All rules
 - **[Multi-Outcome Universal](multi-outcome-universal.md)** - Core principle
 - **[Use Models Not DB::Table](use-models-not-db-table.md)** - Model usage

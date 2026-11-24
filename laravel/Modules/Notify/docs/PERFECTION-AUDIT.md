@@ -31,20 +31,14 @@ discussions: []
 
 ### P0.1 — 100% uppercase
 Tutti i file in `Notify/docs/` sono maiuscoli. Esempi:
-- `actions.md`
+- `ACTIONS.md`
 - `AGENTS.md`
 - `CHANGELOG.md`
-<<<<<<< .merge_file_QQPOeE
-<<<<<<< .merge_file_hCo6lz
 - `INDEX.md`
 - `PROJECT-STRUCTURE.md`
 - `actions.md`
 - `AGENTS.md`
 - `CHANGELOG.md`
-=======
->>>>>>> .merge_file_sIbI1Y
-=======
->>>>>>> .merge_file_SKI1fI
 - `index.md`
 - `project-structure.md`
 - `PRD.md`
@@ -53,14 +47,14 @@ Tutti i file in `Notify/docs/` sono maiuscoli. Esempi:
 Residui di iterazioni agenti, 0-100 byte ciascuno.
 
 ### P0.3 — Nessun indice consolidato
-Nessun `00-index.md` o `index.md` (a parte l'uppercase `index.md`). Impossibile trovare contenuti.
+Nessun `00-index.md` o `INDEX.md` (a parte l'uppercase `INDEX.md`). Impossibile trovare contenuti.
 
 ---
 
 ## Pattern di qualità esistenti (mantenere)
 
 - `docs/CHANGELOG.md` (contenuto reale)
-- `docs/actions.md` (regole Actions)
+- `docs/ACTIONS.md` (regole Actions)
 - `docs/AGENTS.md` (configurazione agenti)
 
 ---
@@ -85,23 +79,17 @@ find laravel/Modules/Notify/docs -type f -name "*.md" \
 ```
 
 ### Fase 3 — Consolidamento
-- Merge `index.md` → `00-index.md`
-- Merge `AGENTS.md` → `AGENTS.md`
-- Merge `actions.md` → `actions.md`
-- Merge `CHANGELOG.md` → `CHANGELOG.md`
+- Merge `INDEX.md` → `00-index.md`
+- Merge `AGENTS.md` → `agents.md`
+- Merge `ACTIONS.md` → `actions.md`
+- Merge `CHANGELOG.md` → `changelog.md`
 - Merge `PRD.md` → `prd.md`
-<<<<<<< .merge_file_QQPOeE
-<<<<<<< .merge_file_hCo6lz
 - Merge `PROJECT-STRUCTURE.md` → `project-structure.md`
 - Merge `index.md` → `00-index.md`
 - Merge `AGENTS.md` → `AGENTS.md`
 - Merge `actions.md` → `actions.md`
 - Merge `CHANGELOG.md` → `CHANGELOG.md`
 - Merge `PRD.md` → `prd.md`
-=======
->>>>>>> .merge_file_sIbI1Y
-=======
->>>>>>> .merge_file_SKI1fI
 - Merge `project-structure.md` → `project-structure.md`
 
 ---

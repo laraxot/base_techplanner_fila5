@@ -1,6 +1,4 @@
 ---
-title: "Product brief — SuperAdmin user-menu widget"
-
 title: "Product brief: SuperAdmin user-menu widget"
 type: product-brief
 module: User

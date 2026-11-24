@@ -4,34 +4,20 @@ type: concept
 status: active
 updated: 2026-11-16
 module: Lang
-<<<<<<< .merge_file_fB6b97
-<<<<<<< .merge_file_SygBc7
 <<<<<<< .merge_file_d4nsKt
 qmd: "purpose bmad Lang"
 =======
-=======
->>>>>>> .merge_file_SjSGIS
-=======
->>>>>>> .merge_file_MNKSu7
 qmd: "purpose bmad Lang scopo traduzioni etichette fuori dal codice file di lingua chiavi mancanti stato del codice"
 related:
   - ../purpose.md
   - ./audits/lang-audit.md
   - ./architecture.md
   - ./epics.md
-<<<<<<< .merge_file_fB6b97
-<<<<<<< .merge_file_SygBc7
 >>>>>>> .merge_file_IF7nzB
-=======
->>>>>>> .merge_file_SjSGIS
-=======
->>>>>>> .merge_file_MNKSu7
 ---
 
 # Scopo BMAD — Lang
 
-<<<<<<< .merge_file_fB6b97
-<<<<<<< .merge_file_SygBc7
 <<<<<<< .merge_file_d4nsKt
 ## Lo scopo in una frase **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
 
@@ -39,14 +25,6 @@ SSoT estesa: [../purpose.md](../purpose.md) se presente.
 =======
 ## Lo scopo in una frase
 
-=======
-## Lo scopo in una frase
-
->>>>>>> .merge_file_SjSGIS
-=======
-## Lo scopo in una frase
-
->>>>>>> .merge_file_MNKSu7
 **Lang tiene fuori dal codice ogni parola che un utente legge: nessuna etichetta si scrive dentro una classe, si dichiara in un file di lingua.**
 
 Il perché esteso (regola «niente `->label()`», chiave come ponte, direzioni di miglioramento) è nella SSoT del modulo: [../purpose.md](../purpose.md). Qui solo la sintesi BMAD e il confronto con il codice.
@@ -74,10 +52,4 @@ I testi di un'applicazione pubblica li rivede chi non programma. Se l'etichetta 
 ## Riferimenti
 
 [Audit](./audit.md) · [Architettura](./architecture.md) · [Decision log](./decision-log.md) · [Epics](./epics.md)
-<<<<<<< .merge_file_fB6b97
-<<<<<<< .merge_file_SygBc7
 >>>>>>> .merge_file_IF7nzB
-=======
->>>>>>> .merge_file_SjSGIS
-=======
->>>>>>> .merge_file_MNKSu7

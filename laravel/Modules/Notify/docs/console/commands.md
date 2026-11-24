@@ -300,19 +300,6 @@ dev:seed-test-data
 dev:reset-demo
 ```
 
-<<<<<<< .merge_file_ppPX9q
-=======
----
-
-title: "commands"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "commands"
-issues: []
-discussions: []
->>>>>>> .merge_file_qHUlOz
 ## 🚨 REGOLA CRITICA - Frontend
 # niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
 

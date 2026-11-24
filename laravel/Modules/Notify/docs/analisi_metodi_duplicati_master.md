@@ -16,34 +16,6 @@ discussions: []
 **Versione**: 2.0 ULTIMATE  
 **Confidenza**: 99.9% (Dati Reali dal Codice)
 
-<<<<<<< .merge_file_OlsbXS
-=======
----
-<<<<<<< .merge_file_QWrj8z
-=======
-
-title: "analisi metodi duplicati master"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati master"
-issues: []
-discussions: []
-## 🎯 Executive Summary
-
-Analisi **REALE e APPROFONDITA** di **18 moduli** + **2 temi** del framework Laraxot/Filament.
->>>>>>> .merge_file_BSwgaO
-
-title: "analisi metodi duplicati master"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "analisi metodi duplicati master"
-issues: []
-discussions: []
->>>>>>> .merge_file_fqCn5o
 ## 🎯 Executive Summary
 ### Dati Chiave (VERIFICATI)
 
