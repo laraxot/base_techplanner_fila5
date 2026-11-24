@@ -1,0 +1,131 @@
+{
+    "id": "radioprotezione",
+    "title": {
+        "it": "Radioprotezione Studi Dentistici e Veterinari (D.Lgs 101/2020)",
+        "en": "Radiation Protection for Dental and Veterinary Practices"
+    },
+    "slug": "radioprotezione",
+    "content_blocks": {
+        "it": [
+            {
+                "type": "hero",
+                "slug": "service-hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.internal",
+                    "title": "Radioprotezione e Sicurezza Radiologica",
+                    "subtitle": "Esperto di radioprotezione, controlli di qualità e formazione D.Lgs 101/2020 per studi dentistici e veterinari a Treviso, Venezia, Padova e in Veneto.",
+                    "image": "/images/hero-bg-2000.jpg"
+                }
+            },
+            {
+                "type": "content-section",
+                "slug": "service-overview",
+                "data": {
+                    "view": "pub_theme::components.blocks.content.split",
+                    "title": "Gestione Professionale della Radioprotezione",
+                    "content": "<p class='text-lg leading-relaxed text-gray-700'>La radioprotezione non è solo un obbligo normativo, ma una componente essenziale per la sicurezza di operatori e pazienti. La nostra consulenza ti supporta nella gestione dei parametri tecnici e degli obblighi previsti dal D.Lgs 101/2020.</p><p class='mt-4 text-gray-600'>Ci occupiamo di ogni aspetto: dalla nomina dell'Esperto di Radioprotezione alle verifiche periodiche di costanza sulle apparecchiature radiologiche (RX endorali, OPT, CBCT).</p>",
+                    "image": "/themes/Two/images/radiologia-veterinaria.jpg",
+                    "image_alt": "Sala medica d'epoca con una radiografia del torace su un negatoscopio e una scrivania con un telefono",
+                    "reverse": false
+                }
+            },
+            {
+                "type": "features",
+                "slug": "service-details",
+                "data": {
+                    "view": "pub_theme::components.blocks.services.grid",
+                    "title": "Cosa include il servizio",
+                    "subtitle": "Soluzioni chiare e complete per la tua attività",
+                    "services": [
+                        {
+                            "title": "Nomina Esperto di Radioprotezione",
+                            "description": "Assunzione dell'incarico obbligatorio e gestione dei rapporti con gli organi di vigilanza (INAIL, ARPA, ASL).",
+                            "icon": "heroicon-o-user-badge",
+                            "url": "{{ route('container0.view',['container0'=>'services','slug0'=>'radioprotezione']) }}"
+                        },
+                        {
+                            "title": "Verifiche di Costanza",
+                            "description": "Controlli periodici sulla qualità dei fasci radiogeni e sulla funzionalità dei dispositivi di sicurezza.",
+                            "icon": "heroicon-o-device-phone-mobile",
+                            "url": "{{ route('container0.view',['container0'=>'services','slug0'=>'radioprotezione']) }}"
+                        },
+                        {
+                            "title": "Relazioni Tecniche",
+                            "description": "Redazione della documentazione obbligatoria e dei registri di controllo per la piena conformità.",
+                            "icon": "heroicon-o-document-chart-bar",
+                            "url": "{{ route('container0.view',['container0'=>'services','slug0'=>'radioprotezione']) }}"
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "content",
+                "slug": "service-details-seo",
+                "data": {
+                    "view": "pub_theme::components.blocks.content.simple",
+                    "content": "<h2>Cosa prevede il D.Lgs 101/2020 per lo studio</h2>\n<p>Chi utilizza apparecchi radiologici – RX endorali, ortopantomografi (OPT), CBCT, apparecchi radiologici veterinari – rientra nel D.Lgs 101/2020, che recepisce la direttiva 2013/59/Euratom. Sottana Service segue studi dentistici e cliniche veterinarie a Mogliano Veneto, Treviso, Venezia, Padova e in tutto il Veneto.</p>\n<h3>Gli adempimenti principali</h3>\n<ul>\n<li><strong>Esperto di radioprotezione</strong>: sorveglianza fisica con verifiche almeno annuali (art. 130).</li>\n<li><strong>Controlli di qualità</strong> sulle apparecchiature radiologiche: prove di accettazione all'installazione e prove periodiche, di norma annuali dopo le modifiche del D.Lgs 203/2022.</li>\n<li><strong>Formazione</strong> in radioprotezione del personale, da ripetere almeno ogni cinque anni.</li>\n<li><strong>Documentazione</strong>: relazioni tecniche, registri dei controlli e comunicazioni agli enti di vigilanza.</li>\n</ul>\n<h3>Come lavoriamo</h3>\n<ol>\n<li>Sopralluogo nello studio e censimento delle apparecchiature.</li>\n<li>Piano delle verifiche e scadenzario condiviso.</li>\n<li>Verifiche con strumentazione tarata e relazione tecnica.</li>\n<li>Promemoria prima di ogni scadenza, così lo studio non resta mai scoperto.</li>\n</ol>\n<p>Le stesse visite possono comprendere le <a href=\"{{ route('container0.view',['container0'=>'services','slug0'=>'elettromedicali']) }}\">verifiche elettromedicali</a> degli altri apparecchi e la gestione delle <a href=\"{{ route('container0.view',['container0'=>'services','slug0'=>'documentazione']) }}\">autorizzazioni sanitarie e documentazione</a>. <a href=\"{{ route('container0.index',['container0'=>'contacts']) }}\">Contattaci</a> per un sopralluogo.</p>"
+                }
+            },
+            {
+                "type": "faq",
+                "slug": "service-faq",
+                "data": {
+                    "view": "pub_theme::components.blocks.faq.accordion",
+                    "title": "Domande frequenti",
+                    "subtitle": "",
+                    "categories": [
+                        {
+                            "name": "Radioprotezione Studi Dentistici e Veterinari",
+                            "questions": [
+                                {
+                                    "question": "Ogni quanto vanno fatte le verifiche di radioprotezione in uno studio dentistico?",
+                                    "answer": "La sorveglianza fisica dell'esperto di radioprotezione è almeno annuale (art. 130 del D.Lgs 101/2020). I controlli di qualità sulle apparecchiature radiologiche sono di norma annuali, salvo una periodicità diversa motivata da norme di buona tecnica."
+                                },
+                                {
+                                    "question": "Serve l'esperto di radioprotezione anche con un solo RX endorale?",
+                                    "answer": "In generale sì: anche un solo apparecchio RX endorale è una pratica con radiazioni ionizzanti soggetta al D.Lgs 101/2020. Durante il sopralluogo verifichiamo gli obblighi specifici del vostro studio."
+                                },
+                                {
+                                    "question": "Ogni quanto va ripetuta la formazione in radioprotezione?",
+                                    "answer": "Almeno ogni cinque anni, per chi utilizza le apparecchiature e per chi ha responsabilità nello studio. Per gli odontoiatri una quota dei crediti ECM del triennio riguarda la radioprotezione."
+                                },
+                                {
+                                    "question": "Seguite anche le cliniche veterinarie?",
+                                    "answer": "Sì. Seguiamo studi dentistici e cliniche veterinarie con le stesse modalità: sopralluogo, verifiche periodiche, relazioni tecniche e scadenzario."
+                                },
+                                {
+                                    "question": "In quali zone operate?",
+                                    "answer": "Lo studio ha sede a Mogliano Veneto (TV). Operiamo nelle province di Treviso, Venezia e Padova e in tutto il Veneto."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "cta",
+                "slug": "contact-cta",
+                "data": {
+                    "view": "pub_theme::components.blocks.cta.simple",
+                    "title": "Hai bisogno di una consulenza sulla radioprotezione?",
+                    "description": "Contattaci oggi stesso per un preventivo gratuito o per pianificare il tuo prossimo controllo.",
+                    "primary_cta_label": "Contattaci Ora",
+                    "primary_cta_url": "{{ route('container0.index',['container0'=>'contacts']) }}"
+                }
+            }
+        ],
+        "en": [
+            {
+                "type": "hero",
+                "slug": "service-hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.internal",
+                    "title": "Radiation Protection and Safety",
+                    "subtitle": "Regulatory compliance and safety for dental and veterinary clinics according to Legislative Decree 101/2020.",
+                    "image": "/images/hero-bg-2000.jpg"
+                }
+            }
+        ]
+    },
+    "updated_at": "2026-11-19T00:00:00.000000Z"
+}

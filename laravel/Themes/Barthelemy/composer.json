@@ -1,0 +1,10 @@
+{
+    "name": "laraxot/theme_barthelemy_fila5",
+    "description": "Stub del tema Barthelemy (nessun codice, solo documentazione)",
+    "type": "library",
+    "license": "MIT",
+    "scripts": {},
+    "config": {
+        "sort-packages": true
+    }
+}

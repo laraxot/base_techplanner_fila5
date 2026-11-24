@@ -1,0 +1,34 @@
+---
+module: theme
+topic: traits-hasteams-corrected
+canonical: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md
+related:
+<<<<<<< .merge_file_JqccYl
+  - "./00-index.md"
+=======
+>>>>>>> .merge_file_VQxBDV
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+<<<<<<< .merge_file_JqccYl
+=======
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+>>>>>>> .merge_file_VQxBDV
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+title: "traits hasteams corrected"
+type: note
+status: stub
+updated: 2026-10-08
+tags: [docs, user]
+qmd: "traits hasteams corrected user"
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/traits-hasteams-analysis-corrected.md

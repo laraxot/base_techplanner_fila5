@@ -1,0 +1,7 @@
+# Log, payload di prova e configurazione non devono essere scaricabili dal web (RC3, 2026-11-10).
+<FilesMatch "\.(txt|json|sample)$">
+    Require all denied
+</FilesMatch>
+<Files "config.php">
+    Require all denied
+</Files>

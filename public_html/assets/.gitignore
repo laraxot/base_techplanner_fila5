@@ -1,0 +1,55 @@
+# public_html/assets/<modulo minuscolo> = ln -s ../../laravel/Modules/<Modulo>/public (php artisan xot:module-link).
+# Due righe per nome, come le scrive EnsureGitignoreEntriesAction:
+#   <nome>/  cartella vera (copia da vendor:publish, npm run copy, vecchi rilasci): ignorata, mai nel repo;
+#   <nome>   il symlink: in questo repo i link esistenti sono comunque tracciati (git add -f), perché un clone
+#            funzioni senza comandi; .gitignore non tocca i file già tracciati. Avere già entrambe le righe evita
+#            che xot:module-link modifichi questo file sul server (bloccherebbe il git pull del rilascio).
+ai/
+ai
+activity/
+activity
+blog/
+blog
+cms/
+cms
+comment/
+comment
+dbforge/
+dbforge
+employee/
+employee
+gdpr/
+gdpr
+geo/
+geo
+index.md/
+index.md
+job/
+job
+lang/
+lang
+media/
+media
+notify/
+notify
+rating/
+rating
+seo/
+seo
+techplanner/
+techplanner
+tenant/
+tenant
+ui/
+ui
+user/
+user
+xot/
+xot
+agentdb.rvf/
+agentdb.rvf
+docs/
+docs
+# Cartelle generate dai test.
+XotAssetTest/
+xotstandintest

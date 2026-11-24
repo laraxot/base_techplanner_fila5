@@ -1,0 +1,11 @@
+{
+    "name": "Barthelemy",
+    "type": "pub",
+    "description": "Stub del tema Barthelemy: al momento contiene solo documentazione, nessun codice",
+    "keywords": [],
+    "active": false,
+    "order": 0,
+    "aliases": ["barthelemy"],
+    "files": [],
+    "requires": []
+}

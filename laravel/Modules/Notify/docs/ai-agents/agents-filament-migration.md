@@ -1,0 +1,102 @@
+---
+title: "agents filament migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-11-23
+qmd: "agents filament migration"
+issues: []
+discussions: []
+---
+
+# AGENTS Filament Migration
+
+Guida alla migrazione da Filament v3/v4 a v5.
+
+## Critical Breaking Changes for Filament v5
+
+| Requisito | Stato Attuale | Necessario |
+|-----------|---------------|------------|
+| PHP 8.2+ | ✅ Soddisfatto | ✅ |
+| Laravel 11.28+ | ✅ Soddisfatto (Laravel 12) | ✅ |
+| Livewire v4.0+ | ❌ v3 - DA AGGIORNARE | ✅ |
+| Tailwind CSS v4.0+ | ❌ v3 - DA AGGIORNARE | ✅ |
+
+<<<<<<< .merge_file_0i5s1n
+=======
+---
+<<<<<<< .merge_file_Jkftm3
+=======
+
+title: "agents filament migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents filament migration"
+issues: []
+discussions: []
+## Migration Process
+>>>>>>> .merge_file_ksJXpH
+
+title: "agents filament migration"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "agents filament migration"
+issues: []
+discussions: []
+>>>>>>> .merge_file_yszVqz
+## Migration Process
+# 1. Install upgrade tool
+# 2. Run automated upgrade script
+# 3. Follow script output commands
+# 4. Remove upgrade tool
+
+## Key Areas to Check After Migration
+
+1. **Livewire v4 syntax changes**
+2. **Tailwind CSS v4 configuration**
+3. **Module compatibility** (test each module)
+4. **Custom Filament resources and pages**
+5. **Asset compilation** (Vite configs)
+
+---
+
+## Migration Checklist
+
+### Prima della migrazione
+- [ ] Backup current working state
+- [ ] Check all custom Filament resources
+- [ ] Review Livewire components
+- [ ] Test current functionality
+
+### Dopo la migrazione
+- [ ] Run `php artisan filament:upgrade`
+- [ ] Update Livewire to v4
+- [ ] Update Tailwind to v4
+- [ ] Test all modules
+- [ ] Update custom components
+- [ ] Verify asset compilation
+- [ ] Run full test suite
+
+---
+
+## 🔗 Link
+
+- [Indice AGENTS](./agents-split-index.md)
+- [filament-patterns.md](./filament-patterns.md) - Pattern Filament
+<<<<<<< .merge_file_Jkftm3
+<<<<<<< .merge_file_0i5s1n
+- [AGENTS.md originale](../../agents.md)
+- [agents.md originale](../../agents.md)
+=======
+- [AGENTS.md originale](../../AGENTS.md)
+- [AGENTS.md originale](../../AGENTS.md)
+>>>>>>> .merge_file_yszVqz
+=======
+- [AGENTS.md originale](../../AGENTS.md)
+- [AGENTS.md originale](../../AGENTS.md)
+>>>>>>> .merge_file_ksJXpH
+- [Index principale](./index.md)

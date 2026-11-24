@@ -1,0 +1,60 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Seo\Tests;
+
+use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Support\Facades\DB;
+use Modules\User\Models\User;
+use Modules\Xot\Tests\XotBaseTestCase;
+
+/**
+ * Base test case for Seo module.
+ */
+abstract class TestCase extends XotBaseTestCase
+{
+    use DatabaseTransactions;
+
+    /** @var list<string> */
+    protected $connectionsToTransact = [
+        'sqlite',
+        'user',
+    ];
+
+    protected function setUp(): void
+    {
+        // Prima di parent::setUp(): DatabaseTransactions apre le transazioni subito; senza questo la
+        // connessione `user` (mysql) va in "Connection refused" dove non c'e' MariaDB (vedi XotBaseTestCase).
+        $this->prepareSharedSqliteForTesting();
+
+        parent::setUp();
+
+        $database = self::sharedSqlitePath();
+
+        /** @var array<string, array<string, mixed>> $connections */
+        $connections = config('database.connections', []);
+
+        foreach (array_keys($connections) as $connection) {
+            $driver = config("database.connections.{$connection}.driver");
+
+            if ($driver === 'sqlite') {
+                config()->set("database.connections.{$connection}.database", $database);
+                DB::purge($connection);
+
+                continue;
+            }
+
+            if ($driver === 'mysql') {
+                config()->set("database.connections.{$connection}.driver", 'sqlite');
+                config()->set("database.connections.{$connection}.database", $database);
+                config()->set("database.connections.{$connection}.prefix", '');
+                DB::purge($connection);
+            }
+        }
+
+        config(['auth.providers.users.model' => User::class]);
+        config(['xra.pub_theme' => 'Meetup']);
+        config(['xra.main_module' => 'Seo']);
+    }
+}

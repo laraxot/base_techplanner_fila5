@@ -1,0 +1,16 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\TechPlanner\Filament\Resources;
+
+use Modules\TechPlanner\Models\Client;
+use Modules\Xot\Filament\Resources\XotBaseResource;
+
+/**
+ * @property ClientResource $resource
+ */
+class ClientResource extends XotBaseResource
+{
+    protected static ?string $model = Client::class;
+}

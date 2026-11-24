@@ -1,0 +1,83 @@
+---
+title: "installazione strumenti"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-11-23
+qmd: "installazione strumenti"
+issues: []
+discussions: []
+---
+
+# 🚀 Installazione Strumenti di Sviluppo
+
+## Superpowers
+https://github.com/obra/superpowers
+
+```bash
+npm install --save-dev @obra/superpowers
+```
+
+## BMAD Method
+https://github.com/bmad-code-org/BMAD-METHOD
+
+```bash
+# Skill già installata in ~/.qwen/skills/bmad-*
+```
+
+## GSD (Get Shit Done)
+https://github.com/gsd-build/get-shit-done
+
+```bash
+# Skill già installata in ~/.qwen/skills/gsd-*
+```
+
+## Ralph Loop
+https://github.com/snarktank/ralph
+
+```bash
+# Skill già installata in ~/.qwen/skills/ralph-loop
+```
+
+## OpenViking
+https://github.com/volcengine/OpenViking
+
+```bash
+# Installato globalmente
+```
+
+## NotebookLM MCP
+
+```bash
+npm install -g @notebooklm/mcp
+```
+
+### Configurazione MCP
+
+Aggiungi a `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "notebooklm": {
+      "command": "npx",
+      "args": ["-y", "@notebooklm/mcp"],
+      "env": {
+        "NOTEBOOKLM_API_KEY": "your-key"
+      }
+    }
+  }
+}
+```
+
+## Documentazione Progetto
+### Struttura
+### Skill Installate
+
+## Prossimi Passi
+
+1. Configurare OpenViking context per FixCity
+2. Creare BMAD stories per allineamento HTML
+3. Eseguire GSD phase per fix componenti
+4. Usare Ralph Loop per iterazioni rapide
+5. Documentare su NotebookLM

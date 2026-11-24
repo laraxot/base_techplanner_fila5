@@ -1,0 +1,19 @@
+---
+module: theme
+topic: phpstan-fixes-gennaio-2
+canonical: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-Modules.md
+<<<<<<< .merge_file_0UYffB
+=======
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+>>>>>>> .merge_file_dnQLiQ
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan-fixes-gennaio-2025-Modules.md

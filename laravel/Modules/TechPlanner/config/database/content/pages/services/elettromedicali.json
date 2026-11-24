@@ -1,0 +1,86 @@
+{
+    "id": "elettromedicali",
+    "title": {
+        "it": "Verifiche Elettromedicali CEI EN 62353 per Studi Dentistici",
+        "en": "Electromedical Safety Testing (IEC 62353)"
+    },
+    "slug": "elettromedicali",
+    "content_blocks": {
+        "it": [
+            {
+                "type": "hero",
+                "slug": "service-hero",
+                "data": {
+                    "view": "pub_theme::components.blocks.hero.internal",
+                    "title": "Controllo Apparecchiature Elettromedicali",
+                    "subtitle": "Verifiche di sicurezza elettrica CEI EN 62353 degli elettromedicali di studi dentistici e veterinari a Treviso, Venezia, Padova e in Veneto, con verbale di prova.",
+                    "image": "/images/hero-bg-2000.jpg"
+                }
+            },
+            {
+                "type": "content-section",
+                "slug": "safety-importance",
+                "data": {
+                    "view": "pub_theme::components.blocks.content.split",
+                    "title": "Sicurezza al Primo Posto",
+                    "content": "<p class='text-lg leading-relaxed text-gray-700'>Le apparecchiature elettromedicali richiedono controlli rigorosi per prevenire rischi di folgorazione o malfunzionamenti critici. Il nostro servizio di verifica controlla la sicurezza dei dispositivi nel tuo studio, per il paziente e per l'operatore, secondo la norma IEC 62353.</p><p class='mt-4 text-gray-600'>Eseguiamo misurazioni di correnti di dispersione, resistenza di terra e verifiche funzionali complete, rilasciando il verbale di prova obbligatorio per ogni dispositivo controllato.</p>",
+                    "image": "/themes/Two/images/service-patient-safety.jpg",
+                    "image_alt": "Sala di uno studio odontoiatrico con poltrona del paziente, riunito e panca azzurra",
+                    "reverse": true
+                }
+            },
+            {
+                "type": "content",
+                "slug": "service-details-seo",
+                "data": {
+                    "view": "pub_theme::components.blocks.content.simple",
+                    "content": "<h2>Verifiche di sicurezza elettrica secondo la CEI EN 62353</h2>\n<p>Riuniti, ablatori, micromotori, lampade fotopolimerizzatrici, apparecchi radiologici e, nelle cliniche veterinarie, monitor e apparecchi di anestesia sono apparecchi elettromedicali: la loro sicurezza elettrica va verificata periodicamente e dopo ogni riparazione. Eseguiamo le verifiche a Mogliano Veneto, Treviso, Venezia, Padova e in tutto il Veneto.</p>\n<h3>Cosa comprende la verifica</h3>\n<ul>\n<li>Esame a vista di involucro, cavi, spine e parti applicate.</li>\n<li>Resistenza del conduttore di protezione.</li>\n<li>Correnti di dispersione dell'apparecchio e delle parti applicate.</li>\n<li>Prova funzionale.</li>\n<li>Verbale di prova per ogni apparecchio e scadenzario delle verifiche successive.</li>\n</ul>\n<h3>Ogni quanto</h3>\n<p>La periodicità la indica il fabbricante. In mancanza di indicazioni, la CEI EN 62353 prevede un intervallo tra 6 e 36 mesi; per i locali medici di gruppo 1, come lo studio dentistico, la prassi è una verifica almeno ogni due anni. La verifica va ripetuta anche dopo ogni riparazione.</p>\n<p>Le verifiche si possono programmare insieme ai controlli di <a href=\"{{ route('container0.view',['container0'=>'services','slug0'=>'radioprotezione']) }}\">radioprotezione</a> degli apparecchi radiologici. <a href=\"{{ route('container0.index',['container0'=>'contacts']) }}\">Contattaci</a> per pianificarle.</p>"
+                }
+            },
+            {
+                "type": "faq",
+                "slug": "service-faq",
+                "data": {
+                    "view": "pub_theme::components.blocks.faq.accordion",
+                    "title": "Domande frequenti",
+                    "subtitle": "",
+                    "categories": [
+                        {
+                            "name": "Verifiche Elettromedicali CEI EN 62353 per Studi Dentistici",
+                            "questions": [
+                                {
+                                    "question": "Ogni quanto vanno verificati gli elettromedicali dello studio dentistico?",
+                                    "answer": "Secondo le istruzioni del fabbricante. Se il fabbricante non indica nulla, la CEI EN 62353 prevede un intervallo tra 6 e 36 mesi; per lo studio dentistico (locale di gruppo 1) la prassi è almeno ogni due anni."
+                                },
+                                {
+                                    "question": "La verifica di sicurezza sostituisce la manutenzione?",
+                                    "answer": "No. La verifica controlla che l'apparecchio sia sicuro per paziente e operatore; la manutenzione prevista dal fabbricante resta a parte."
+                                },
+                                {
+                                    "question": "Serve una verifica dopo una riparazione?",
+                                    "answer": "Sì. La CEI EN 62353 riguarda sia le verifiche periodiche sia quelle dopo una riparazione, prima di rimettere l'apparecchio in uso."
+                                },
+                                {
+                                    "question": "Cosa ricevo al termine della verifica?",
+                                    "answer": "Un verbale di prova per ogni apparecchio controllato, con le misure eseguite, e lo scadenzario delle verifiche successive."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "cta",
+                "slug": "booking-cta",
+                "data": {
+                    "view": "pub_theme::components.blocks.cta.simple",
+                    "title": "Metti in sicurezza il tuo parco macchine",
+                    "description": "Pianifica oggi stesso le verifiche periodiche per i tuoi elettromedicali.",
+                    "primary_cta_label": "Richiedi Info",
+                    "primary_cta_url": "{{ route('container0.index',['container0'=>'contacts']) }}"
+                }
+            }
+        ]
+    },
+    "updated_at": "2026-11-19T00:00:00.000000Z"
+}

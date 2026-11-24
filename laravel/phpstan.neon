@@ -1,0 +1,29 @@
+includes:
+    - ./phpstan-baseline.neon
+    - ./vendor/phpstan/phpstan/conf/bleedingEdge.neon
+
+parameters:
+    level: max
+    paths:
+        - ./Modules/
+    phpVersion: 80400
+    ignoreErrors: []
+    excludePaths:
+        - ./*/vendor/*
+        - ./*/build/*
+        - ./*/docs/**/*
+        - ./*/docs-archive-*/**/*
+        - ./*/packages/*
+        - ./*/tests/AuditCoverage/*
+        - ./*/*.blade.php
+        - ./_ide_helper.php
+        - ./_ide_helper_models.php
+    bootstrapFiles:
+        - ./phpstan_bootstrap.php
+        - ./phpstan_constants.php
+    scanFiles:
+        - ./Modules/Xot/helpers/Helper.php
+    editorUrl: 'vscode://file/%%file%%:%%line%%'
+    tmpDir: /tmp/phpstan
+    treatPhpDocTypesAsCertain: false
+    reportUnmatchedIgnoredErrors: false

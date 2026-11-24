@@ -1,0 +1,26 @@
+---
+module: theme
+topic: milestones
+canonical: ../../../../Themes/docs/shared-components/04-milestones.md
+related:
+  - "./00-index.md"
+<<<<<<< .merge_file_72Zth6
+  - "./00-index-roadmap-user.md"
+=======
+>>>>>>> .merge_file_JLJHtj
+  - "./00-index.md"
+  - "./00-overview.md"
+  - "./01-current-state.md"
+  - "./01-now.md"
+  - "./02-goals.md"
+  - "./02-next.md"
+  - "./03-later.md"
+title: "milestones"
+type: note
+status: stub
+updated: 2026-10-07
+tags: [docs, user, roadmap]
+qmd: "milestones user"
+---
+
+See canonical documentation: ../../../../Themes/docs/shared-components/04-milestones.md

@@ -1,0 +1,20 @@
+---
+title: "Notify Module — Document"
+type: docs/bmad
+status: active
+module: Notify
+scope: documentation
+bmad_version: 1.0
+<<<<<<< .merge_file_93vwx6
+updated: 2026-11-23
+created: 2026-11-23
+=======
+updated: 2026-10-06
+>>>>>>> .merge_file_Rr8ED1
+---
+
+# Notify — BMAD Status
+- PHPStan: 0 errori
+- Inventario docs/: disordinato (duplicati maiuscole in wiki/, .gitkeep ridondanti, bmad/ molto esteso)
+- Wiki aggiornata: docs/wiki/module-purpose.md aggiunto
+- Non corretto codice; solo organizzazione docs

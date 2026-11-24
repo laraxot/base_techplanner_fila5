@@ -1,0 +1,102 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'title' => 'Создайте аккаунт',
+    'subtitle' => 'Заполните форму, чтобы создать личный аккаунт.',
+    'submit' => 'Создать аккаунт',
+    'submitting' => 'Создаём ваш аккаунт...',
+    'register' => [
+        'submit' => 'Создать аккаунт',
+        'submitting' => 'Создаём ваш аккаунт...',
+    ],
+    'form' => [
+        'cta_title' => 'Создайте аккаунт',
+        'cta_subtitle' => 'Введите свои данные и примите обязательные согласия.',
+        'terms_notice' => 'Регистрируясь, вы принимаете наши Условия и Политику конфиденциальности',
+    ],
+    'fields' => [
+        'first_name' => [
+            'label' => 'Имя',
+            'placeholder' => 'Марио',
+            'helper_text' => 'Введите ваше имя для завершения профиля',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Фамилия',
+            'placeholder' => 'Росси',
+            'helper_text' => 'Введите вашу фамилию для завершения профиля',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'Ваш лучший email',
+            'placeholder' => 'mario.rossi@primer.ru',
+            'helper_text' => 'Мы отправим подтверждение на этот адрес',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'password' => [
+            'label' => 'Безопасный пароль',
+            'placeholder' => '••••••••••••',
+            'helper_text' => 'Должен содержать минимум 8 символов, заглавную, строчную букву, цифру и символ',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Подтвердите пароль',
+            'placeholder' => '••••••••••••',
+            'helper_text' => 'Повторите пароль для подтверждения',
+            'tooltip' => '',
+            'description' => '',
+        ],
+    ],
+    'sections' => [
+        'user_info' => 'Личная Информация',
+        'user_info_description' => 'Введите ваши личные данные для создания учетной записи',
+        'required_consents' => 'Обязательное Согласие',
+        'required_consents_description' => 'Для продолжения регистрации вы должны принять следующие условия обработки ваших личных данных',
+        'optional_consents' => 'Необязательное Согласие',
+        'optional_consents_description' => 'Эти согласия необязательны и не влияют на вашу регистрацию. Вы можете изменить их в любое время в своем профиле.',
+        'registration_form' => 'Форма регистрации',
+    ],
+    'consents' => [
+        'title' => 'Согласия на конфиденциальность',
+        'privacy_policy_label' => 'Я прочитал и понял Политику конфиденциальности и принимаю обработку моих персональных данных, как описано в политике.',
+        'privacy_policy_hint' => 'Полное уведение о конфиденциальности согласно статьям 13 и 14 Регламента (ЕС) 2016/679 (GDPR)',
+        'privacy_policy_required' => 'Пожалуйста, примите политику конфиденциальности для продолжения.',
+        'privacy_checkbox_html' => 'Я прочитал <a href=":privacy_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">Политику конфиденциальности</a>',
+        'terms_label' => 'Я прочитал и принимаю Условия использования',
+        'terms_hint' => 'Договор услуги согласно статье 6(1)(b) Регламента (ЕС) 2016/679 (GDPR)',
+        'terms_required' => 'Пожалуйста, примите Условия использования для продолжения.',
+        'terms_checkbox_html' => 'Я принимаю <a href=":terms_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">Условия использования</a>',
+        'marketing_label' => 'Хочу получать новости и приглашения (необязательно)',
+        'marketing_hint' => 'Согласие необязательно и вы можете отозвать его в любое время без последствий.',
+        'required_consent_missing' => 'Вы должны принять все обязательные согласия для продолжения.',
+    ],
+    'actions' => [
+        'read_privacy_policy' => 'Читать политику конфиденциальности',
+        'read_terms' => 'Читать условия использования',
+    ],
+    'validation' => [
+        'password_complexity' => 'Пароль должен содержать минимум 12 символов, одну заглавную букву, одну строчную букву, одну цифру и один специальный символ.',
+    ],
+    'already_registered' => 'У вас уже есть аккаунт?',
+    'login' => 'Войти',
+    'required_consent_missing' => 'Вы должны принять все обязательные согласия для продолжения.',
+    'success' => 'Регистрация успешно завершена.',
+    'success_message' => 'Ваш аккаунт готов. Мы отправили вам письмо: откройте ссылку, чтобы подтвердить адрес.',
+    'error' => 'Ошибка регистрации',
+    'error_message' => 'Произошла ошибка при регистрации. Пожалуйста, попробуйте позже. Если проблема продолжается, обратитесь в нашу поддержку.',
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+];

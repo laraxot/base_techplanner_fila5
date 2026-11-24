@@ -1,0 +1,79 @@
+name: TechPlanner CI
+
+# OPS-05: test, analisi statica e stile del modulo TechPlanner a ogni push e pull request su `dev`.
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [dev]
+
+concurrency:
+  group: techplanner-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  quality:
+    name: Pest, PHPStan, Pint, migrazioni MariaDB
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: laravel
+
+    services:
+      mariadb:
+        image: mariadb:10.11
+        env:
+          MARIADB_DATABASE: techplanner_ci
+          MARIADB_USER: ci
+          MARIADB_PASSWORD: ci
+          MARIADB_ROOT_PASSWORD: ci
+        ports: ['3306:3306']
+        options: >-
+          --health-cmd="healthcheck.sh --connect --innodb_initialized"
+          --health-interval=5s --health-timeout=5s --health-retries=20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: mbstring, intl, bcmath, gd, zip, pdo_mysql, pdo_sqlite, sqlite3, exif
+          coverage: none
+          tools: composer:v2
+
+      - name: Cache Composer
+        uses: actions/cache@v4
+        with:
+          path: ~/.composer/cache/files
+          key: composer-${{ hashFiles('laravel/composer.lock') }}
+
+      - name: Dipendenze dal composer.lock
+        run: composer install --no-interaction --prefer-dist --no-progress
+
+      - name: Ambiente
+        run: |
+          cp .env.example .env
+          php artisan key:generate
+
+      - name: Migrazioni da zero su MariaDB (installazione pulita)
+        env:
+          DB_CONNECTION: mysql
+          DB_HOST: 127.0.0.1
+          DB_PORT: 3306
+          DB_DATABASE: techplanner_ci
+          DB_USERNAME: ci
+          DB_PASSWORD: ci
+          DB_DATABASE_USER: techplanner_ci
+          DB_USERNAME_USER: ci
+          DB_PASSWORD_USER: ci
+        run: php -d memory_limit=-1 artisan migrate:fresh --force --env=testing
+
+      - name: Test del modulo TechPlanner
+        run: vendor/bin/pest Modules/TechPlanner/tests
+
+      - name: PHPStan (Larastan) sul modulo TechPlanner
+        run: vendor/bin/phpstan analyse -c phpstan.techplanner.neon --memory-limit=-1 --no-progress
+
+      - name: Stile (Pint) sul modulo TechPlanner
+        run: vendor/bin/pint --test Modules/TechPlanner

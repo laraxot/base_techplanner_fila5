@@ -1,0 +1,15 @@
+# public_html/themes/<Tema> = ln -s ../../laravel/Themes/<Tema>/public (php artisan xot:theme-link).
+# `<Tema>/` = cartella vera (vecchia copia): ignorata. `<Tema>` = il symlink: qui è comunque tracciato (git add -f)
+# perché un clone funzioni subito; la riga c'è perché xot:theme-link non modifichi questo file sul server.
+Barthelemy/
+Barthelemy
+Meetup/
+Meetup
+Sixteen/
+Sixteen
+TwentyOne/
+TwentyOne
+Two/
+Two
+Zero/
+Zero

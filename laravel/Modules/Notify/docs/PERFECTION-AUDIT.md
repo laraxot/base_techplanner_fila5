@@ -1,0 +1,124 @@
+---
+title: "PERFECTION AUDIT"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-11-23
+qmd: "PERFECTION AUDIT"
+issues: []
+discussions: []
+---
+
+# Perfection Audit — Notify Module
+
+**Data**: 2026-09-01
+**Scope**: `laravel/Modules/Notify/docs/`
+**Metodo**: BMAD document-project + fix_docs_naming_convention.sh
+
+## TL;DR
+
+## Numeri
+
+| Metrica | Valore | Soglia salute |
+|---------|--------|---------------|
+| File .md totali | 1,516 | <150 |
+| Stub (<100 byte) | 44 | 0 |
+| Uppercase .md | 1,516 (100%) | 0 (eccetto README.md) |
+
+---
+
+## Problemi P0
+
+### P0.1 — 100% uppercase
+Tutti i file in `Notify/docs/` sono maiuscoli. Esempi:
+- `actions.md`
+- `AGENTS.md`
+- `CHANGELOG.md`
+<<<<<<< .merge_file_QQPOeE
+<<<<<<< .merge_file_hCo6lz
+- `INDEX.md`
+- `PROJECT-STRUCTURE.md`
+- `actions.md`
+- `AGENTS.md`
+- `CHANGELOG.md`
+=======
+>>>>>>> .merge_file_sIbI1Y
+=======
+>>>>>>> .merge_file_SKI1fI
+- `index.md`
+- `project-structure.md`
+- `PRD.md`
+
+### P0.2 — 44 stub vuoti
+Residui di iterazioni agenti, 0-100 byte ciascuno.
+
+### P0.3 — Nessun indice consolidato
+Nessun `00-index.md` o `index.md` (a parte l'uppercase `index.md`). Impossibile trovare contenuti.
+
+---
+
+## Pattern di qualità esistenti (mantenere)
+
+- `docs/CHANGELOG.md` (contenuto reale)
+- `docs/actions.md` (regole Actions)
+- `docs/AGENTS.md` (configurazione agenti)
+
+---
+
+## Piano bonifica
+
+### Fase 1 — Emergency
+```bash
+find laravel/Modules/Notify/docs -name "*.md" -size -100c -delete
+```
+
+### Fase 2 — Rename ricorsivo
+```bash
+find laravel/Modules/Notify/docs -type f -name "*.md" \
+  -not -name "README.md" \
+  | while read f; do
+      dir=$(dirname "$f")
+      base=$(basename "$f" .md)
+      lower=$(echo "$base" | tr '[:upper:]' '[:lower:]' | tr '_' '-')
+      mv "$f" "$dir/$lower.md"
+  done
+```
+
+### Fase 3 — Consolidamento
+- Merge `index.md` → `00-index.md`
+- Merge `AGENTS.md` → `AGENTS.md`
+- Merge `actions.md` → `actions.md`
+- Merge `CHANGELOG.md` → `CHANGELOG.md`
+- Merge `PRD.md` → `prd.md`
+<<<<<<< .merge_file_QQPOeE
+<<<<<<< .merge_file_hCo6lz
+- Merge `PROJECT-STRUCTURE.md` → `project-structure.md`
+- Merge `index.md` → `00-index.md`
+- Merge `AGENTS.md` → `AGENTS.md`
+- Merge `actions.md` → `actions.md`
+- Merge `CHANGELOG.md` → `CHANGELOG.md`
+- Merge `PRD.md` → `prd.md`
+=======
+>>>>>>> .merge_file_sIbI1Y
+=======
+>>>>>>> .merge_file_SKI1fI
+- Merge `project-structure.md` → `project-structure.md`
+
+---
+
+## Soglia di accettabilità
+
+| Metrica | Target |
+|---------|--------|
+| File .md totali in Notify/docs | <150 |
+| Stub vuoti | 0 |
+| File uppercase (no README) | 0 |
+| Indice consolidato | 1 (`00-index.md`) |
+
+---
+
+## Riferimenti
+
+- `laravel/Modules/docs/DOCUMENTATION_AUDIT.md`
+- `docs/super-mucca/SKILL.md`
+- `docs/wiki/rules/00-TRIGGER_MAP.md`

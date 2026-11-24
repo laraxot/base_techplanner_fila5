@@ -1,0 +1,26 @@
+# Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
+docs/archive/
+# Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
+*~HEAD
+*~BASE
+*~LOCAL
+*~REMOTE
+*.orig
+*.rej
+*~head
+
+# Strumenti locali/IDE (wiki module-theme-root-hygiene)
+.agents/
+.codex/
+.cursor/
+.opencode/
+.qwen/
+audit-coverage/
+rector.php
+phpinsights.php
+.php-cs-fixer.php
+.php-cs-fixer.dist.php
+*.lock
+.devcontainer/
+.vscode/
+.windsurf/

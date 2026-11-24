@@ -1,0 +1,23 @@
+
+# Activity Critical Fix 2026-09-06 — Mid-Session Discovery
+
+- date: 2026-09-06-post
+  discovery: "Unresolved merge conflict markers in Activity/tests (28 parse errors)"
+  action_taken: "Conflict resolution: 4 test files, 6+ conflict blocks"
+  result: "PHPStan parse phase unblocked; 14 type errors remain"
+  affected_files:
+    - Activity/tests/Feature/FilamentTest.php
+    - Activity/tests/Unit/LoginLogoutListenerBehaviorTest.php
+    - Activity/tests/Unit/EventServiceProviderTest.php
+    - Activity/tests/Unit/LoginListenerTest.php
+    - Activity/tests/Unit/LogoutListenerTest.php
+
+deferred_phase2_audit:
+  total_errors_remaining: "111+ type errors across Modules"
+  parse_errors_resolved: true
+  next_action: "Full scan + per-module story generation"
+  
+key_learning:
+  - "Conflict markers block PHPStan parse phase completely"
+  - "Global scan must be clean (no merge artifacts)"
+  - "XotBaseResourceTable pattern: use getTable* helpers, not table() override"

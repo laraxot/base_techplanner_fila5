@@ -1,0 +1,17 @@
+{
+    "name": "TechPlanner",
+    "alias": "techplanner",
+    "description": "Modulo per la gestione e pianificazione tecnica: clienti, appuntamenti, dispositivi, verifiche e controlli, referenti legali e direttori sanitari",
+    "keywords": [],
+    "priority": 0,
+    "active": 1,
+    "order": 50,
+    "providers": [
+        "Modules\\TechPlanner\\Providers\\TechPlannerServiceProvider",
+        "Modules\\TechPlanner\\Providers\\Filament\\AdminPanelProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": ["Xot", "UI", "User", "Geo", "Notify", "Media", "Lang"],
+    "phpVersion": "^8.3"
+}

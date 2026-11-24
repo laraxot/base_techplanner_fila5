@@ -1,0 +1,22 @@
+---
+title: "activity"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-11-23
+qmd: "activity"
+issues: []
+discussions: []
+---
+
+# Modulo Activity – Collegamento Bidirezionale
+
+- Documentazione PHPStan livello 1: [Modules/Activity/docs/phpstan/level_1.md](../../Modules/Activity/docs/phpstan/level_1.md)
+
+[← Torna all'indice PHPStan](../phpstan.md)
+
+## Descrizione modulo
+
+## Altri collegamenti
+- [Documentazione generale Activity](../../Modules/Activity/docs/README.md)
+- [Roadmap Activity](../../Modules/Activity/docs/roadmap.md)

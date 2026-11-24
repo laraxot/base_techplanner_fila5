@@ -1,0 +1,74 @@
+---
+title: "TechPlanner Module Wiki Index"
+type: index
+module: TechPlanner
+tags: [techplanner, wiki, index, client, device, appointment, planning]
+created: 2026-06-06
+updated: 2026-06-06
+qmd: "techplanner module wiki index business domain client device appointment filament"
+issues:
+  - "https://github.com/laraxot/base_techplanner_fila5/issues/7"
+discussions:
+  - "https://github.com/laraxot/base_techplanner_fila5/discussions/8"
+related:
+  - ../../../../../docs/wiki/concepts/agent-bootstrap-compact.md
+  - ../../../../../docs/wiki/skills/cursor-second-brain-max-workflow.md
+  - ./concepts/techplanner-business-domain.md
+  - ./concepts/ai-harness-techplanner-discipline.md
+---
+
+# TechPlanner Module LLM Wiki
+
+Modulo **dominio business** del progetto: gestione clienti, dispositivi, appuntamenti, conformità e pianificazione tecnica.
+
+## AI / second brain
+
+- [ai-harness-techplanner-discipline](./concepts/ai-harness-techplanner-discipline.md)
+- [techplanner-business-domain](./concepts/techplanner-business-domain.md) — **perché** del modulo
+- [client-coordinate-editing-ux](./concepts/client-coordinate-editing-ux.md) — UX e contratto di aggiornamento coordinate
+- [last-appointment-purpose](./concepts/last-appointment-purpose.md) — ultimo appuntamento + tipo via `controls.control_type`
+- [client-map](./concepts/client-map.md) — mappa clienti admin: cluster Leaflet, controlli UX, decisioni e trappole
+- [second-brain-local-discipline](./concepts/second-brain-local-discipline.md) — stub → canon Xot
+- [cursor-second-brain-max-workflow](../../../../bashscripts/ai/wiki/skills/cursor-second-brain-max-workflow.md)
+
+## QMD
+
+```bash
+bashscripts/docs/llm-wiki-qmd.sh search "TechPlanner client" -c tp-mod-techplanner-wiki -n 5 --files
+```
+
+## Struttura
+
+| Cartella | Contenuto |
+|----------|-----------|
+| [concepts/](./concepts/INDEX.md) | Business logic, pattern Filament, harness |
+| [entities/](./entities/INDEX.md) | Modelli core (Client, Device, Appointment) |
+| [audits/](../audits/) | Report audit e quality gate |
+| [../](../index.md) | Corpus sorgente legacy (`docs/` non-wiki) |
+
+## Scopo operativo
+
+1. **Client** come entità centrale — anagrafica, geo, contatti, uffici legali
+2. **Device / Machine** — verifiche, scadenze, relation manager su Client
+3. **Appointment** — pianificazione visite, partecipanti, worker
+4. **Control** — controlli STI unificati e date di ultima verifica
+5. **Filament admin** — risorse XotBase, widget mappa (Geo), enum in fillable
+
+## Audit del modulo
+
+- [techplanner-documentation-audit](../audits/techplanner-documentation-audit.md) — allineamento BMAD/ECC/second-brain e contratti del dominio.
+- [seo-head-deep-verification](./audits/seo-head-deep-verification.md) — verifica SEO specifica del sito TechPlanner e Theme Two.
+- [module-techplanner-audit](./audits/module-techplanner-audit.md) — audit del dominio e delle risorse Filament del modulo.
+- [site-reaudit](./audits/site-reaudit.md) — sintesi del re-audit del sito live su 12 aspetti, correzioni e piano per priorita'.
+- [gdpr-privacy-accessibility-audit](./audits/gdpr-privacy-accessibility-audit.md) — audit eseguito dal prompt GDPR, con sicurezza, form, lingue, cookie e WCAG.
+
+## Regole
+
+- [canonical-cms-url-contract](./rules/canonical-cms-url-contract.md) — URL CMS con `container0.index`/`container0.view`, mai path localizzati nei JSON.
+
+## Source layer (evidence)
+
+- [philosophy.md](../concepts/philosophy.md)
+- [models-and-relationships.md](../models-and-relationships.md)
+- [filament-resources.md](../filament-resources.md)
+- [using-geo-components.md](../using-geo-components.md)

@@ -1,0 +1,19 @@
+---
+module: theme
+topic: phpstan-report-initial
+canonical: ../../../Themes/docs/shared-components/phpstan_report.txt
+<<<<<<< .merge_file_SeC7YU
+=======
+related:
+  - "./00-index-indice-documentazione-modulo-user.md"
+  - "./00-index.md"
+  - "./2fa-guide.md"
+  - "./2fa.md"
+  - "./accessor-delegation-pattern.md"
+  - "./actions-path-convention.md"
+  - "./actions-path-convention-convenzione-percorsi.md"
+  - "./actions-path-convention.md"
+>>>>>>> .merge_file_qiKvbo
+---
+
+See canonical documentation: ../../../Themes/docs/shared-components/phpstan_report.txt

@@ -1,0 +1,101 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'title' => 'Créez votre compte',
+    'subtitle' => 'Remplissez le formulaire pour créer votre compte personnel.',
+    'submit' => 'Créer un compte',
+    'submitting' => 'Création de votre compte...',
+    'register' => [
+        'submit' => 'Créer un compte',
+        'submitting' => 'Création de votre compte...',
+    ],
+    'form' => [
+        'cta_title' => 'Créez votre compte',
+        'cta_subtitle' => 'Saisissez vos données et acceptez les consentements obligatoires.',
+        'terms_notice' => 'En vous inscrivant, vous acceptez nos Conditions et Politique de Confidentialité',
+    ],
+    'fields' => [
+        'first_name' => [
+            'label' => 'Prénom',
+            'placeholder' => 'Mario',
+            'helper_text' => 'Entrez votre prénom pour compléter votre profil',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'last_name' => [
+            'label' => 'Nom',
+            'placeholder' => 'Rossi',
+            'helper_text' => 'Entrez votre nom pour compléter votre profil',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'email' => [
+            'label' => 'Votre meilleure email',
+            'placeholder' => 'mario.rossi@exemple.com',
+            'helper_text' => 'Nous vous enverrons un email de confirmation à cette adresse',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'password' => [
+            'label' => 'Mot de passe sécurisé',
+            'placeholder' => '••••••••••••',
+            'helper_text' => 'Doit contenir au moins 8 caractères, majuscule, minuscule, chiffre et symbole',
+            'tooltip' => '',
+            'description' => '',
+        ],
+        'password_confirmation' => [
+            'label' => 'Confirmer le mot de passe',
+            'placeholder' => '••••••••••••',
+            'helper_text' => 'Répétez le mot de passe pour confirmer',
+            'tooltip' => '',
+            'description' => '',
+        ],
+    ],
+    'sections' => [
+        'user_info' => 'Informations Personnelles',
+        'user_info_description' => 'Entrez vos informations personnelles pour créer votre compte',
+        'required_consents' => 'Consentement Requis',
+        'required_consents_description' => 'Pour procéder à l\'inscription, vous devez accepter les conditions suivantes pour le traitement de vos données personnelles',
+        'optional_consents' => 'Consentement Optionnel',
+        'optional_consents_description' => 'Ces consentements sont optionnels et n\'affectent pas votre inscription. Vous pouvez les modifier à tout moment depuis votre profil.',
+        'registration_form' => 'Formulaire d\'inscription',
+    ],
+    'consents' => [
+        'title' => 'Consentements Confidentialité',
+        'privacy_policy_label' => 'J\'ai lu et compris la politique de confidentialité et j\'accepte le traitement de mes données personnelles comme décrit dans la politique.',
+        'privacy_policy_hint' => 'Avis complet conformément aux articles 13 et 14 du règlement (UE) 2016/679 (RGPD)',
+        'privacy_policy_required' => 'Veuillez accepter la politique de confidentialité pour procéder.',
+        'privacy_checkbox_html' => 'J\'ai lu la <a href=":privacy_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">politique de confidentialité</a>',
+        'terms_label' => 'J\'ai lu et accepté les conditions générales',
+        'terms_hint' => 'Contrat de service conformément à l\'article 6(1)(b) du règlement (UE) 2016/679 (RGPD)',
+        'terms_required' => 'Veuillez accepter les conditions générales pour procéder.',
+        'terms_checkbox_html' => 'J\'accepte les <a href=":terms_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">conditions générales</a>',
+        'marketing_label' => 'Je souhaite recevoir des nouvelles et des invitations (facultatif)',
+        'marketing_hint' => 'Le consentement est optionnel et vous pouvez le révoquer à tout moment sans conséquences.',
+    ],
+    'actions' => [
+        'read_privacy_policy' => 'Lire politique de confidentialité',
+        'read_terms' => 'Lire conditions générales',
+    ],
+    'validation' => [
+        'password_complexity' => 'Le mot de passe doit contenir au moins 12 caractères, une majuscule, une minuscule, un chiffre et un caractère spécial.',
+    ],
+    'already_registered' => 'Vous avez déjà un compte ?',
+    'login' => 'Se connecter',
+    'required_consent_missing' => 'Vous devez accepter tous les consentements requis pour procéder.',
+    'success' => 'Inscription réussie.',
+    'success_message' => 'Votre compte est prêt. Nous vous avons envoyé un e-mail : ouvrez le lien pour confirmer votre adresse.',
+    'error' => 'Erreur d\'inscription',
+    'error_message' => 'Une erreur s\'est produite lors de l\'inscription. Veuillez réessayer plus tard. Si le problème persiste, contactez notre support.',
+    'navigation' => [
+        'label' => 'Missing Navigation Label',
+        'plural_label' => 'Missing Navigation Plural Label',
+        'group' => 'Missing Group',
+        'icon' => 'heroicon-o-puzzle-piece',
+        'sort' => 100,
+    ],
+    'label' => 'Missing Label',
+    'plural_label' => 'Missing Plural label',
+];

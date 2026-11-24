@@ -1,0 +1,33 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Modules\Job\Actions;
+
+use Exception;
+use Spatie\QueueableAction\QueueableAction;
+
+/**
+ * @see docs/contracts/get-task-frequencies-action.md
+ * @contract docs/contracts/get-task-frequencies-action.md
+ */
+class GetTaskFrequenciesAction
+{
+    use QueueableAction;
+
+    /**
+     * @return array<int|string, mixed>
+     */
+    public function execute(): array
+    {
+        $res = config('totem.frequencies');
+        if (\is_array($res)) {
+            /** @var array<int|string, mixed> $frequencies */
+            $frequencies = $res;
+
+            return $frequencies;
+        }
+
+        throw new Exception('['.__LINE__.']['.class_basename($this).']');
+    }
+}
