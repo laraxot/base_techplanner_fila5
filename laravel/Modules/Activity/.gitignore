@@ -209,3 +209,5 @@ workbench/
 .windsurf~*
 tests/activity_coverage.xml
 Activity/
+tests/coverage-*.*
+docs/screenshots/

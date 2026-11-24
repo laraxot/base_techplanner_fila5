@@ -10,6 +10,8 @@ use Modules\TechPlanner\Models\ContactMessage;
  * Cancella i messaggi piu' vecchi di `techplanner.contact.retention_days`. INERTE finche' la chiave e' vuota o non
  * e' un intero positivo: il periodo di conservazione e' una decisione del titolare (DA CONFERMARE) e non ha default.
  * Non e' schedulato: si pianifica solo dopo la decisione.
+ *
+ * @contract docs/contracts/purge-expired-contact-messages-action.md
  */
 final class PurgeExpiredContactMessagesAction
 {

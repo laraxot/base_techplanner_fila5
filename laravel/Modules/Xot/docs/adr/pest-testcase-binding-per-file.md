@@ -53,7 +53,13 @@ nulla. Tolto il binding dal `Pest.php` e aggiunto ai file, 110 test che non part
 - **Binding nel `laravel/tests/Pest.php` per cartella** (`uses(...)->in('../Modules/Cms/tests')`):
   un file di root che conosce ogni modulo, e torna il doppio binding con `--test-directory`.
 
-## Guardia
+## Conseguenze
 
-`Modules/Xot/tests/Unit/ModulePestBootstrapDoesNotBindTestCaseTest.php` fallisce se un `Pest.php` di
-modulo o tema torna a legare un TestCase.
+- Buono: lo stesso file di test passa col runner di root e con `--test-directory`; il binding si vede nel file.
+- Cattivo: una riga `uses(...)` ripetuta in ogni file che usa l'applicazione; chi la dimentica lo scopre da PHPStan
+  (`Call to an undefined method PHPUnit\Framework\TestCase::<helper>()`) o dal test che fallisce.
+
+## Verifica
+
+`cd laravel && vendor/bin/pest Modules/Xot/tests/Unit/ModulePestBootstrapDoesNotBindTestCaseTest.php` fallisce se un
+`Pest.php` di modulo o tema torna a legare un TestCase.

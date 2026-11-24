@@ -29,6 +29,8 @@ use function Safe\preg_match;
  * - Mailgun form: sender, recipient, subject, body-plain, body-html, body-mime
  * - Raw MIME: request content-type message/rfc822 o body che inizia con "From:"
  *
+ * @contract docs/contracts/process-inbound-mail-action.md
+ *
  * @phpstan-type InboundMailData array{
  *     message_id: string|null,
  *     from_email: string|null,

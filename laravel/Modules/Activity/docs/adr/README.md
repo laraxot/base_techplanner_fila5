@@ -1,42 +1,23 @@
 ---
-title: "Architecture Decision Records"
+title: "ADR del modulo Activity"
 type: index
-tags: [adr, decisioni]
+tags: [adr, decisioni, activity]
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
 ---
 
-# Architecture Decision Records
+# ADR del modulo Activity
 
-Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
+Il **perché** di due forme di Activity che sembrano eccessive: i modelli su una connessione dedicata (`activity`) invece
+della default, e il visualizzatore dei log che fa passare ogni percorso scelto dall'utente da un solo risolutore.
 
-## Formato
+Leggili prima di: cambiare `$connection` di un modello del modulo o la configurazione `activitylog`, aggiungere un modo di
+leggere o scaricare file da `storage/logs`, o toccare i permessi del visualizzatore.
 
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
+Formato (cinque sezioni, `type: decision`, nome file senza date né numeri) e regole:
+[action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md).
 
-# ADR: <decisione>
+## Indice
 
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-```
-
-## Decisioni
-
+- [I modelli di Activity usano la connessione 'activity'](activity-models-on-dedicated-connection.md) — log separabile in un altro database e rollback dei test coerente; debito: Spatie scrive sulla default.
+- [Visualizzatore dei log: un solo risolutore di percorsi](log-viewer-single-path-resolver.md) — `realpath` e solo `.log` dentro `storage/logs`, una regola di accesso, download a blocchi.

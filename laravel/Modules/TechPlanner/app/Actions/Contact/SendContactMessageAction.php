@@ -11,8 +11,11 @@ use Modules\TechPlanner\Datas\ContactMessageData;
 
 /**
  * Inoltra il messaggio alla casella del titolare, in modo sincrono (l'esito deve essere vero, non in coda).
- * Nulla viene salvato sul server: il messaggio vive solo nella casella di destinazione. Lancia se il trasporto fallisce.
+ * Questa Action non scrive nulla: l'archivio e' di StoreContactMessageAction, chiamata prima da DeliverContactMessageAction.
+ * Lancia se il trasporto fallisce.
  * L'oggetto e' fisso: nessun testo dell'utente finisce nelle intestazioni.
+ *
+ * @contract docs/contracts/send-contact-message-action.md
  */
 class SendContactMessageAction
 {

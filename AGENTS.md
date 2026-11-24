@@ -17,6 +17,7 @@ Regole, skill e memorie vivono solo in `docs/wiki/`. Caricamento on-demand via Q
 
 ## Critical (always)
 
+- **Harness** ([guida](laravel/Modules/Xot/docs/concepts/agent-harness-guide.md)): prima di toccare un modulo/tema leggi il suo `docs/adr/README.md` (perché) e `docs/contracts/README.md` (cosa promette); un'Action con effetti collaterali ha `@contract` nel docblock: leggilo prima di cambiarla, aggiornalo nello stesso commit. Prima di dire «fatto»: `cd laravel && composer harness:check` + test del pacchetto. Se `.harness/bin/guard` blocca, fai ciò che dice o fermati con `[ATTESA-UMANO]: <domanda>`
 - Mai Controllers FO — Folio + Volt + Laraxot
 - Mai estendere Filament diretto — XotBase / LangBase
 - Mai `RefreshDatabase` — `.env.testing` SQLite

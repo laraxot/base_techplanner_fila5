@@ -143,3 +143,5 @@ test-results/
 cms.code-workspace
 ruvector.db
 .windsurfrules
+tests/coverage-*.*
+docs/screenshots/

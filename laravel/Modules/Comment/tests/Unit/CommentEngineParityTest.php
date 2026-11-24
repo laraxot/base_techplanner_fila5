@@ -97,7 +97,7 @@ test('ApproveCommentAction approves pending comment', function (): void {
     $approved = $comment->fresh();
     Assert::assertInstanceOf(Comment::class, $approved);
     Assert::assertTrue($approved->isApproved());
-});
+})->group('COMMENT-APPROVE-INV-1');
 
 test('CommentConfigData builds ApprovedCommentNotification for subscriber', function (): void {
     $comment = Comment::factory()->approved()->createOne([
@@ -124,7 +124,7 @@ test('SendNotificationsForPendingCommentAction notifies approving users', functi
     app(SendNotificationsForPendingCommentAction::class)->execute($comment);
 
     Notification::assertSentTo($approver, PendingCommentNotification::class);
-});
+})->group('COMMENT-PENDING-NOTIFY-INV-1');
 
 test('subscriber can opt out from comment notifications', function (): void {
     $subscriber = parityCommentator(30);

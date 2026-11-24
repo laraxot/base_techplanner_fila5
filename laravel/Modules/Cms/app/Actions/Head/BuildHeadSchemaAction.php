@@ -31,15 +31,12 @@ final class BuildHeadSchemaAction
      * @param  string|null  $rootUrl  URL della radice del sito, senza lingua: è l'identità dell'entità (`#organization`, `#website`); se manca si usa `$homeUrl`
      * @param  string  $homeLabel  nome della prima briciola («Home»); se vuoto si usa il brand
      * @param  list<string>|null  $languages  lingue in cui il sito è scritto; se manca si usa `$locale`
-<<<<<<< .merge_file_6Cezew
      * @param  array<string, mixed>  $business  dati dell'attività dal tenant (`metatag.business`): `type` (per esempio
      *                                          `ProfessionalService`, sottotipo di LocalBusiness) e proprietà schema.org
      *                                          (`telephone`, `email`, `address`, `areaServed`, `sameAs`, ...). Vuoto =
      *                                          Organization con solo nome, URL e logo.
-=======
      * @param  string|null  $description  descrizione dell'organizzazione (home); vuota = proprietà assente
      * @param  list<string>  $sameAs  profili ufficiali (URL https), già filtrati; [] = proprietà assente
->>>>>>> .merge_file_VLoxjN
      * @return list<SchemaObject|array<string, mixed>>
      */
     public function execute(
@@ -54,22 +51,15 @@ final class BuildHeadSchemaAction
         ?string $rootUrl = null,
         string $homeLabel = '',
         ?array $languages = null,
-<<<<<<< .merge_file_6Cezew
         array $business = [],
-=======
         ?string $description = null,
         array $sameAs = [],
->>>>>>> .merge_file_VLoxjN
     ): array {
         $root = rtrim($rootUrl ?? $homeUrl, '/').'/';
 
         if ($isHome) {
             return [
-<<<<<<< .merge_file_6Cezew
-                $this->organization($brand, $root, $logoUrl, $business),
-=======
-                $this->organization($brand, $root, $logoUrl, $description, $sameAs),
->>>>>>> .merge_file_VLoxjN
+                $this->organization($brand, $root, $logoUrl, $business, $description, $sameAs),
                 $this->webSite($brand, $root, [] !== ($languages ?? []) ? (array) $languages : [$locale]),
             ];
         }
@@ -81,13 +71,14 @@ final class BuildHeadSchemaAction
     }
 
     /**
-<<<<<<< .merge_file_6Cezew
      * Con i dati dell'attività l'organizzazione diventa un'attività locale (indirizzo, telefono, zona servita): è
      * il segnale che Google usa per le ricerche «servizio + città». Nome, URL, `@id` e logo restano quelli del sito.
+     * `description` e `sameAs` del sito entrano se l'attività non li dichiara già.
      *
      * @param  array<string, mixed>  $business
+     * @param  list<string>  $sameAs
      */
-    private function organization(string $brand, string $root, ?string $logoUrl, array $business = []): Organization
+    private function organization(string $brand, string $root, ?string $logoUrl, array $business = [], ?string $description = null, array $sameAs = []): Organization
     {
         $type = $business['type'] ?? null;
         $organization = (new Organization(is_string($type) && $type !== '' ? $type : null))
@@ -104,6 +95,13 @@ final class BuildHeadSchemaAction
             $organization = $organization->set($property, $value);
         }
 
+        if ($description !== null && trim($description) !== '' && $this->isEmpty($business['description'] ?? null)) {
+            $organization = $organization->set('description', trim($description));
+        }
+        if ($sameAs !== [] && $this->isEmpty($business['sameAs'] ?? null)) {
+            $organization = $organization->set('sameAs', array_values($sameAs));
+        }
+
         return $organization;
     }
 
@@ -115,21 +113,6 @@ final class BuildHeadSchemaAction
         }
 
         return $value === null || (\is_string($value) && trim($value) === '');
-=======
-     * @param  list<string>  $sameAs
-     */
-    private function organization(string $brand, string $root, ?string $logoUrl, ?string $description, array $sameAs): Organization
-    {
-        $organization = (new Organization)->name($brand)->url($root)->set('@id', $root.'#organization');
-        if ($logoUrl !== null) {
-            $organization = $organization->logo($logoUrl);
-        }
-        if ($description !== null && trim($description) !== '') {
-            $organization = $organization->set('description', trim($description));
-        }
-
-        return $sameAs !== [] ? $organization->set('sameAs', array_values($sameAs)) : $organization;
->>>>>>> .merge_file_VLoxjN
     }
 
     /**

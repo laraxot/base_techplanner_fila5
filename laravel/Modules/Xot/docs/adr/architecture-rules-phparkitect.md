@@ -84,3 +84,8 @@ Proposta (da confermare, aggiunge una dipendenza di sviluppo):
 - Rischio: la «mirror al root» riporta codice vecchio dai repository dei moduli; la baseline lo intercetta solo se il job CI
   gira. Il job CI del progetto ospite oggi non parte (limite di spesa di GitHub Actions dell'account): finche' non riparte,
   il pre-commit e' l'unico punto di controllo.
+
+## Verifica
+
+Superseded: la verifica è quella di [architecture-tests-pest-arch](architecture-tests-pest-arch.md). Nessun controllo
+PHPArkitect resta attivo.

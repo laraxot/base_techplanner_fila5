@@ -10,6 +10,11 @@ use Modules\Comment\Events\CommentApprovedEvent;
 use Modules\Comment\Models\Comment;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Approva un commento in attesa e mette in coda le notifiche agli iscritti.
+ *
+ * @contract docs/contracts/approve-comment-action.md
+ */
 class ApproveCommentAction
 {
     use QueueableAction;

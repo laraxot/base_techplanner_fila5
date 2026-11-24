@@ -132,3 +132,5 @@ resources/lang
 .github/agents/
 =======
 >>>>>>> .merge_file_8OfzL1
+tests/coverage-*.*
+docs/screenshots/

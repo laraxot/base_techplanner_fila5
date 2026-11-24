@@ -311,12 +311,9 @@ final class Head extends Component
                 rootUrl: $this->siteRoot(),
                 homeLabel: Lang::has($homeLabelKey) ? trim((string) __($homeLabelKey)) : '',
                 languages: $siteLocales,
-<<<<<<< .merge_file_JHPlWX
                 business: $isHome ? $this->businessData() : [],
-=======
                 description: $isHome ? $description : null,
                 sameAs: $isHome ? $meta->getSameAs() : [],
->>>>>>> .merge_file_CYPK3I
             );
 
             foreach ($schemas as $schema) {

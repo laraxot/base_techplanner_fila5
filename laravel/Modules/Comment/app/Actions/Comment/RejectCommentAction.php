@@ -8,6 +8,11 @@ use Modules\Comment\Events\CommentRejectedEvent;
 use Modules\Comment\Models\Comment;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Rifiuta un commento cancellandolo.
+ *
+ * @contract docs/contracts/reject-comment-action.md
+ */
 class RejectCommentAction
 {
     use QueueableAction;

@@ -1,49 +1,31 @@
 ---
-title: "Architecture Decision Records"
+title: "ADR — Xot"
 type: index
-tags: [adr, decisioni]
+tags: [adr, decisioni, harness]
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
+qmd: "xot adr indice decisioni actions services harness pest arch testcase"
 ---
 
-# Architecture Decision Records
+# ADR di Xot
 
-Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
+Il **perché** delle forme di codice che Xot impone a tutti i moduli: Actions invece di Services, regole di architettura
+eseguibili, binding del TestCase, harness degli agenti. Leggili **prima** di "semplificare" qualcosa che sembra strano o
+di scegliere tra due forme di codice. Formato (cinque sezioni, nome senza date né numeri) e quando scrivere un ADR:
+[regola](../rules/action-behavioral-contract.md); perché esiste: [guida all'harness](../concepts/agent-harness-guide.md).
 
-## Formato
+## Decisioni in vigore
 
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: proposed | accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
+- [actions-over-services](actions-over-services.md) — la logica applicativa è una Spatie QueueableAction; i Services di AI, Geo, Job sono debito
+- [agent-harness](agent-harness.md) — harness minimo: ADR e contratti in ogni pacchetto, test-sensore source-level, guard PreToolUse, lezioni
+- [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest `arch()`, ambito esplicito e debito dichiarato
+- [pest-testcase-binding-per-file](pest-testcase-binding-per-file.md) — il TestCase del modulo si lega in ogni file di test, mai con `uses()->in()`
 
-# ADR: <decisione>
+## Superate
 
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
+- [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded da architecture-tests-pest-arch)
 
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-```
-
-## Decisioni
-
-- [architecture-tests-pest-arch](architecture-tests-pest-arch.md) — regole di architettura con Pest arch(): ambito esplicito, debito dichiarato, cinque trappole chiuse
-- [architecture-rules-phparkitect](architecture-rules-phparkitect.md) — PHPArkitect con baseline (superseded dal precedente)
-
-## Decisioni precedenti (formato libero, non ancora ADR)
+## Decisioni precedenti (formato libero, da portare ad ADR quando si toccano)
 
 - [module-admin-role-policy-bypass](../wiki/decisions/module-admin-role-policy-bypass.md)
 - [security-middleware-csrf-order](../wiki/decisions/security-middleware-csrf-order.md)

@@ -25,6 +25,8 @@ beforeEach(function (): void {
             $table->string('status')->nullable();
             $table->text('notes')->nullable();
             $table->timestamps();
+            // Appointment usa SoftDeletes: ogni query filtra su deleted_at.
+            $table->softDeletes();
         });
     }
 

@@ -9,6 +9,11 @@ use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Notifica ai moderatori un commento in attesa di approvazione.
+ *
+ * @contract docs/contracts/send-notifications-for-pending-comment-action.md
+ */
 class SendNotificationsForPendingCommentAction
 {
     use QueueableAction;

@@ -31,11 +31,7 @@ related:
 <!--
 GateGuard facts:
 1. Supersedes previous related-only set — adds docs-organization + INDEX spine link; non cancella contenuto.
-<<<<<<< .merge_file_oahYgU
-2. Linked from Themes/Zero/docs/INDEX.md, bmad/00-index.md, inventory.
-=======
 2. Linked from Themes/Zero/docs/index.md, bmad/00-index.md, inventory.
->>>>>>> .merge_file_QqZoAp
 3. Edit existing README.md — not a new file.
 4. User verbatim: "aggiorna studia e migliora e organizza meglio le cartelle docs dentro i moduli e dentro i temi e migliora il tuo second brain"
 -->
@@ -59,37 +55,22 @@ Il tema non contiene logica di dominio. Survey, autorizzazione e dati Pulse appa
 
 **Confini:** Folio/Blade/asset qui; risoluzione pagina e blocchi JSON nel modulo Cms, non presente in questo repository; autolabel e locale switcher in [Lang — scopo](../../../Modules/Lang/docs/scopo.md); foundation Filament in [Xot](../../../Modules/Xot/docs/00-index.md) e [mai estendere Filament*](concepts/xotbase-never-extend-filament.md).
 
-<<<<<<< .merge_file_oahYgU
-**Indici:** questa pagina e' l'ingresso. BMAD usa [bmad/00-index.md](bmad/00-index.md) (minuscolo). Non creare `00-INDEX.md` gemello.
-=======
 **Indici:** questa pagina e' l'ingresso. BMAD usa [bmad/00-index.md](bmad/00-index.md) (minuscolo). Non creare `00-index.md` gemello.
->>>>>>> .merge_file_QqZoAp
 
 ## Mappa delle cartelle
 
 | Percorso | Ruolo | Ingresso |
 |---|---|---|
 | [`bmad/`](bmad/) | guide, architettura, report e pianificazione del tema (la parte piu' grande) | [`bmad/00-index.md`](bmad/00-index.md), [`bmad/README.md`](bmad/README.md), panoramica lunga [`bmad/theme-overview.md`](bmad/theme-overview.md) |
-<<<<<<< .merge_file_oahYgU
-| [`wiki/`](wiki/) | conoscenza curata per gli agenti: concetti, regole, how-to, memorie, fonti | [`wiki/index.md`](wiki/index.md), [`wiki/README.md`](wiki/README.md) |
-=======
 | [`wiki/`](wiki/) | conoscenza curata per gli agenti: concetti, regole, how-to, memorie, fonti | [`wiki/index.md`](wiki/index.md), [`wiki/README.md`](wiki/readme.md) |
->>>>>>> .merge_file_QqZoAp
 | [`stories/`](stories/) | story BMAD del tema | [`stories/README.md`](stories/README.md) |
 | [`bmad/stories/`](bmad/stories/) | altre story, nate prima della policy | vedi sotto |
 | [`architecture/`](architecture/) | solo ingresso verso l'architettura (il contenuto sta in `bmad/architecture.md` e `wiki/rules/`) | [`architecture/README.md`](architecture/README.md) |
 | [`concepts/`](concepts/) | vincoli e concetti specifici del tema | [`concepts/README.md`](concepts/README.md) |
-<<<<<<< .merge_file_oahYgU
-| [`skills/`](skills/) | note sulle skill del tema | [`readme.md`](skills/readme.md) |
-| [`_archive/`](_archive/) | copie storiche, non canoniche; ogni file ha `canonical:` verso il documento vivo | [`README.md`](_archive/README.md) (tabella copia e canonico) |
-
-File nella radice: [`changelog.md`](changelog.md) (cronologia), [`inventory.md`](inventory.md) (conteggi verificati), [`index.md`](index.md) (indice canonico) e [`index-pointer.md`](index.md) (alias storico).
-=======
 | [`skills/`](skills/) | note sulle skill del tema | [`README.md`](skills/README.md) |
 | [`_archive/`](_archive/) | copie storiche, non canoniche; ogni file ha `canonical:` verso il documento vivo | [`README.md`](_archive/README.md) (tabella copia e canonico) |
 
-File nella radice: [`CHANGELOG.md`](CHANGELOG.md) (cronologia), [`inventory.md`](inventory.md) (conteggi verificati), [`index.md`](index.md) (indice canonico) e [`index-pointer.md`](index-pointer.md) (alias storico).
->>>>>>> .merge_file_QqZoAp
+File nella radice: [`CHANGELOG.md`](CHANGELOG.md) (cronologia), [`inventory.md`](inventory.md) (conteggi verificati), [`index.md`](index.md) (indice canonico) e `index-pointer.md` (alias storico, non più presente).
 
 ## Documenti chiave
 
@@ -117,8 +98,4 @@ File nella radice: [`CHANGELOG.md`](CHANGELOG.md) (cronologia), [`inventory.md`]
 - Link relativi che non risolvono: conteggio e cause in [`inventory.md`](inventory.md). La maggior parte punta a moduli o pagine di altri progetti della famiglia Laraxot (Performance, Sigma, Ptv, Rating, docs di root) e non sono correggibili senza riscrivere il contenuto.
 - Dieci pagine di `bmad/` e `wiki/concepts/` citano moduli che non esistono in questo repository: ognuna ha in testa una "Nota di verifica 2026-10-20" e il contenuto non e' stato riscritto.
 - Le guide in `bmad/` citano Tailwind v4, Livewire 4 e Flux UI; il tema reale usa Tailwind 3.4, Alpine e Flowbite. Allineare quando si tocca la guida.
-<<<<<<< .merge_file_oahYgU
-- Nomi che differivano solo per la maiuscola (collidono su filesystem case-insensitive): `bmad/readme.md` e' stato assorbito in [`bmad/theme-overview.md`](bmad/theme-overview.md); `INDEX.md` e' stato assorbito in [`index.md`](index.md) e [`index-pointer.md`](index.md) resta un alias. Il controllo `find docs -type f | tr A-Z a-z | sort | uniq -d` non stampa nulla.
-=======
-- Nomi che differivano solo per la maiuscola (collidono su filesystem case-insensitive): `bmad/README.md` e' stato assorbito in [`bmad/theme-overview.md`](bmad/theme-overview.md); `index.md` e' stato assorbito in [`index.md`](index.md) e [`index-pointer.md`](index-pointer.md) resta un alias. Il controllo `find docs -type f | tr A-Z a-z | sort | uniq -d` non stampa nulla.
->>>>>>> .merge_file_QqZoAp
+- Nomi che differiscono solo per la maiuscola (collidono su filesystem case-insensitive): **13 coppie** il 2026-11-24, tra cui `readme.md`/`README.md` nella radice, in `bmad/`, `skills/`, `wiki/`, `changelog.md`/`CHANGELOG.md`, `00-index.md`/`00-INDEX.md` e gli `index.md`/`INDEX.md` delle sottocartelle di `wiki/`. Vanno unificati (uno canonico, l'altro assorbito). Elenco: `find docs -type f | tr A-Z a-z | sort | uniq -d`.

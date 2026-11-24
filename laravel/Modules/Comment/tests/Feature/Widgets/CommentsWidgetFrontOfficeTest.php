@@ -127,7 +127,7 @@ it('throttles a user who posts more than the allowed number of comments per wind
     $widget->set('data.text', 'Commento di troppo')->call('comment')->assertHasErrors(['data.text']);
 
     expect(Comment::query()->where('commentable_id', $article->getKey())->count())->toBe(EnsureCommentRateLimitAction::MAX_ATTEMPTS);
-});
+})->group('COMMENT-THROTTLE-INV-1');
 
 it('does not let the browser repoint the widget to another commentable', function (): void {
     $article = Article::factory()->create();

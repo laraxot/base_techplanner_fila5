@@ -9,6 +9,8 @@ use UnexpectedValueException;
 
 /**
  * Risolve dati block localizzati; delega al modulo Cms se presente.
+ *
+ * @contract docs/contracts/resolve-localized-block-data-action.md
  */
 final class ResolveLocalizedBlockDataAction
 {

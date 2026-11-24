@@ -37,3 +37,5 @@ vendor/
 .windsurf/
 test-results/
 comment.code-workspace
+tests/coverage-*.*
+docs/screenshots/

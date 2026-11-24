@@ -20,7 +20,7 @@ it('rejects a wrong or missing token', function (): void {
     $this->postJson('/api/notify/mailjet/events/mj-secret', ['event' => 'sent', 'email' => 'a@example.com'])->assertUnauthorized();
 
     Event::assertNotDispatched(MailDeliveryEventReceived::class);
-});
+})->group('NOTIFY-MAILJET-INV-1');
 
 it('accepts a single event and a grouped list, and marks permanent failures', function (): void {
     $this->postJson('/api/notify/mailjet/events/mj-secret', [
@@ -49,4 +49,4 @@ it('accepts a single event and a grouped list, and marks permanent failures', fu
         && $e->event->reason === '250 OK');
 
     Event::assertDispatchedTimes(MailDeliveryEventReceived::class, 3);
-});
+})->group('NOTIFY-MAILJET-INV-2', 'NOTIFY-MAILJET-INV-3', 'NOTIFY-MAILJET-INV-4');

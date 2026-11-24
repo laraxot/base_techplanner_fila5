@@ -1,49 +1,28 @@
 ---
-title: "Architecture Decision Records"
+title: "ADR — Comment"
 type: index
-tags: [adr, decisioni]
+tags: [adr, decisioni, comment]
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
 ---
 
-# Architecture Decision Records
+# ADR del modulo Comment
 
-Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
+Il **perche'** delle forme non ovvie del motore di commenti: da dove viene (fork Spatie internalizzato), dove stanno i
+contratti del commentatore, cosa si spegne per la privacy e come si frena lo spam.
 
-## Formato
+Leggili prima di: reintrodurre codice o namespace `Spatie\Comments`, spostare `CanComment`, aggiungere un avatar o un nuovo
+punto di invio di commenti dal front office.
 
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
-
-# ADR: <decisione>
-
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-```
+Formato (5 sezioni, frontmatter `type: decision`): [regola canonica](../../../Xot/docs/rules/action-behavioral-contract.md).
 
 ## Decisioni
 
-- [ADR — Gravatar si accende e si spegne da configurazione](gravatar-switch.md)
-- [ADR — Internalizzare Spatie comments nel modulo Comment](internalize-spatie-comments.md)
-- [ADR — Models/Contracts vs app/Contracts nel modulo](models-contracts-vs-app-contracts.md)
+- [Internalizzare Spatie comments nel modulo Comment](internalize-spatie-comments.md) — motore nativo in `Modules\Comment`, fork `packages/spatie/` eliminato (resta debito nel `composer.lock`).
+- [Models/Contracts vs app/Contracts](models-contracts-vs-app-contracts.md) — `CanComment` e le capacita' solo-Model stanno in `app/Models/Contracts/`.
+- [Gravatar si accende e si spegne da configurazione](gravatar-switch.md) — `comments.gravatar.enabled`: spento, avatar del profilo o iniziali, nessun dato a terzi.
+- [Il freno ai commenti conta ogni invio](comment-rate-limit-counts-every-attempt.md) — 5 invii al minuto per utente o IP, prima della validazione, in un'unica Action.
 
 ## Decisioni precedenti (formato libero, non ancora ADR)
 
-- [commentable-widget-naming](../decisions/commentable-widget-naming.md)
+- [commentable-widget-naming](../decisions/commentable-widget-naming.md) — perche' `Commentable/CommentsWidget` e non `Comment/CommentableWidget`.
