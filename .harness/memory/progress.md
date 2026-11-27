@@ -43,6 +43,9 @@ Stato corrente del lavoro sull'harness. Una sessione nuova riprende da qui.
 - Remote parallelo (altro agente, issue ptvx #15) ha risolto gli stessi
   merge marker `.merge_file_*` e aggiunto note di riconciliazione: in rebase
   la versione remota è un soprasieme dei nostri file contratto.
+- `laravel/Modules/Fixcity/` non appartiene a techplanner (è modulo di
+  `base_fixcity_fila5`): conteneva solo stub docs creati per errore da un
+  agente. Rimossi + `.gitignore` guard (commit `e009f27ddb`).
 
 ## Note
 
