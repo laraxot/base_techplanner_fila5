@@ -141,7 +141,7 @@ $messageId = isset($result['message_id']) && is_int($result['message_id']) ? $re
 
 Tutti i pattern di correzione sono documentati in:
 - [phpstan-level10-analysis.md](./phpstan-level10-analysis.md) - Analisi completa
-- [troubleshooting.md](./troubleshooting.md) - Pattern di risoluzione problemi
+- [troubleshooting.md](../../troubleshooting.md) - Pattern di risoluzione problemi
 
 ## Prossimi Passi
 
@@ -164,7 +164,7 @@ Tutti i pattern di correzione sono documentati in:
 ## Collegamenti
 
 - [PHPStan Level 10 Analysis](./phpstan-level10-analysis.md)
-- [Troubleshooting](./troubleshooting.md)
+- [Troubleshooting](../../troubleshooting.md)
 - [Migration Fixes Summary](./migration-fixes-summary.md)
 - [Index](./index.md)
 

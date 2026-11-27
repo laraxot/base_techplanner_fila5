@@ -128,6 +128,6 @@ function resolveEmailTemplate(string $mailableClass, string $locale, ?string $th
 ---
 
 ## 8. Collegamenti
-- [email-templates-spatie.md](email-templates-spatie.md)
-- [email-templates-laravel-mailables-notifications.md](email-templates-laravel-mailables-notifications.md)
-- [email-templates-editor-visuali.md](email-templates-editor-visuali.md)
+- [email-templates-spatie.md](../../email-templates-spatie.md)
+- [email-templates-laravel-mailables-notifications.md](../../email-templates-laravel-mailables-notifications.md)
+- [email-templates-editor-visuali.md](../../email-templates-editor-visuali.md)

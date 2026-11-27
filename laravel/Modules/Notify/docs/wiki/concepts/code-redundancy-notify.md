@@ -11,7 +11,7 @@ updated: "2026-05-26"
 related:
   - ../../../redundancy-audit-2026-05-21.md
   - ../../../../Xot/docs/wiki/concepts/code-redundancy-philosophy.md
-  - ../../../../Xot/docs/wiki/redundancy-audit-2026-05-26.md
+  - ../../../../Xot/docs/wiki/redundancy-audit.md
 ---
 
 # Ridondanza — Notify
@@ -56,4 +56,4 @@ Nove file `*.php.up` — backup pre-migrazione Filament 3/5, **duplicano** class
 ## Collegamenti
 
 - [Filosofia trasversale](../../../../Xot/docs/wiki/concepts/code-redundancy-philosophy.md)
-- [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit-2026-05-26.md)
+- [Audit 2026-05-26](../../../../Xot/docs/wiki/redundancy-audit.md)

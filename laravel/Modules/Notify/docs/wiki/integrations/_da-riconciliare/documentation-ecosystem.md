@@ -259,7 +259,7 @@ Xot (Core) ◄──────────────────────
 
 | I Need... | Start Here | Then Go To | Then Go To |
 |-----------|-----------|-----------|-----------|
-| Quick start | [Copilot Inst.](../../.github/copilot-instructions.md) | [Architecture](ARCHITECTURE-DIAGRAMS.md) | Your task |
+| Quick start | [Copilot Inst.](../../.github/copilot-instructions.md) | [Architecture](architecture-diagrams.md) | Your task |
 | Module overview | [Module Index](MODULE_DOCS_INDEX.md) | `Modules/{Name}/docs/00-index.md` | Details |
 | Theme overview | [Theme Index](THEMES_DOCUMENTATION_INDEX.md) | `Themes/{Name}/docs/00-index.md` | Details |
 | Create content | [Cms Docs](../laravel/Modules/Cms/docs/) | [Block Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md) | Examples |
@@ -269,7 +269,7 @@ Xot (Core) ◄──────────────────────
 | Send notifications | [Notify Docs](../laravel/Modules/Notify/docs/) | [Channels](../laravel/Modules/Notify/docs/guides/) | Examples |
 | Track changes | [Activity Docs](../laravel/Modules/Activity/docs/) | [Audit Trail](../laravel/Modules/Activity/docs/guides/) | Examples |
 | Code standards | [CLAUDE.md](../laravel/CLAUDE.md) | [Copilot Inst.](../../.github/copilot-instructions.md) | Review |
-| Architecture | [Architecture](ARCHITECTURE-DIAGRAMS.md) | [Design Comuni](../laravel/Themes/Sixteen/docs/design-comuni/) | Deep dive |
+| Architecture | [Architecture](architecture-diagrams.md) | [Design Comuni](../laravel/Themes/Sixteen/docs/design-comuni/) | Deep dive |
 
 ---
 
@@ -429,7 +429,7 @@ laravel/Themes/
 
 **I want to learn about:**
 
-- **System Architecture** → [ARCHITECTURE-DIAGRAMS.md](ARCHITECTURE-DIAGRAMS.md)
+- **System Architecture** → [ARCHITECTURE-DIAGRAMS.md](architecture-diagrams.md)
 - **Module Development** → [MODULE_DOCS_INDEX.md](MODULE_DOCS_INDEX.md)
 - **Theme Development** → [THEMES_DOCUMENTATION_INDEX.md](THEMES_DOCUMENTATION_INDEX.md)
 - **Code Quality** → [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
@@ -535,7 +535,7 @@ Connected Via:
 ### For Developers
 
 1. Start: [Copilot Instructions](../../.github/copilot-instructions.md)
-2. Understand: [Architecture Diagrams](ARCHITECTURE-DIAGRAMS.md)
+2. Understand: [Architecture Diagrams](architecture-diagrams.md)
 3. Explore: [Module Index](MODULE_DOCS_INDEX.md) or [Theme Index](THEMES_DOCUMENTATION_INDEX.md)
 4. Deep Dive: Relevant module/theme 00-index.md
 5. Implement: Using guides and examples
@@ -543,7 +543,7 @@ Connected Via:
 
 ### For Architects
 
-1. Start: [Architecture Diagrams](ARCHITECTURE-DIAGRAMS.md)
+1. Start: [Architecture Diagrams](architecture-diagrams.md)
 2. Understand: [Module Relationships](MODULE_DOCS_INDEX.md#cross-module-communication)
 3. Design: Using module/theme structure
 4. Review: [Code Quality Standards](CODE_QUALITY_STANDARDS.md)

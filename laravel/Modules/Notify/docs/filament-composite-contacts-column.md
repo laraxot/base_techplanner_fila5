@@ -217,7 +217,7 @@ Questo pattern può essere applicato a:
 
 ### Modulo Notify
 - [Filament Resources](filament_resources.md)
-- [Translation Standards](translation_standards.md)
+- [Translation Standards](archive/historical/translation-standards.md)
 - [Best Practices](best_practices.md)
 
 ### Root Documentation

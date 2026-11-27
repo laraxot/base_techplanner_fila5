@@ -13,7 +13,7 @@ related:
   - "./architecture.md"
   - "./complete-refactoring-analysis.md"
   - "./documentation-status.md"
-  - "./final-implementation-report-.md"
+  - "./final-implementation-report.md"
   - "./final-implementation-report-1.md"
   - "./final-implementation-report.md"
 ---

@@ -233,7 +233,7 @@ Xot/docs/
 ```
 Xot/docs/00-index-1.md
 Xot/docs/00-index.md
-Xot/docs/index.md
+Xot/docs/README.md
 Xot/docs/README.md
 ```
 

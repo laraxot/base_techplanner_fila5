@@ -50,7 +50,7 @@ This document serves as the central index for the Notify module, providing guida
 - [Notification Channels Implementation](./notification_channels_implementation.md)
 - [Email Templates](./email_templates.md)
 - [SMS Implementation](./sms_implementation.md)
-- [Troubleshooting](./troubleshooting.md)
+- [Troubleshooting](../../troubleshooting.md)
 # Indice della Documentazione - Modulo Notify
 
 ## Panoramica
@@ -88,11 +88,11 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 - [README](./readme.md) - Panoramica generale del modulo
 - [Architettura](./architecture.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
-- [Modelli](./models.md) - Documentazione dei modelli Eloquent
-- [Eventi](./events.md) - Eventi e listeners
+- [Modelli](../../models.md) - Documentazione dei modelli Eloquent
+- [Eventi](../../events.md) - Eventi e listeners
 
 ### Sistema Email
-- [Sistema Email Database](./database-mail-system.md) - Sistema di gestione delle email basato su database
+- [Sistema Email Database](../../database-mail-system.md) - Sistema di gestione delle email basato su database
 - [Code Email](./database_mail_queue.md) - Sistema di code per l'invio di email
 - [Template Email](./email_templates.md) - Struttura e utilizzo dei template email
 - [Best Practices Email](./email_best_practices.md) - Linee guida per le email
@@ -186,7 +186,7 @@ Implementare una gestione robusta degli errori per gestire i fallimenti nella co
 - [Implementazione Canali Notifica](./notification_channels_implementation.md)
 - [Template Email](./email_templates.md)
 - [Implementazione SMS](./sms_implementation.md)
-- [Troubleshooting](./troubleshooting.md)
+- [Troubleshooting](../../troubleshooting.md)
 
 ## Note sulla Manutenzione
 Questa documentazione viene aggiornata regolarmente. Prima di apportare modifiche al codice, consultare la documentazione pertinente e aggiornare i documenti correlati.

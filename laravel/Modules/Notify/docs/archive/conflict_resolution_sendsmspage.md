@@ -64,6 +64,6 @@ Verificare che:
 ## Collegamenti
 - [Notify Module Documentation](readme.md)
 - [SMS Testing Guide](sms/testing.md)
-- [MailTemplate Integration](mail_templates_structure.md)
+- [MailTemplate Integration](historical/mail-templates-structure.md)
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 

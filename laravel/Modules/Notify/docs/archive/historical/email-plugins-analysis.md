@@ -263,9 +263,9 @@ class MailAnalytics
    - [ ] Integrazioni
 
 ## Collegamenti
-- [Database Mail System](database-mail-system.md)
+- [Database Mail System](../../database-mail-system.md)
 - [Mail Queue](database-mail-queue.md)
-- [Testing](database-mail-system-tests.md)
+- [Testing](../../database-mail-system-tests.md)
 
 ## Vedi Anche
 - [Filament Documentation](https://filamentphp.com/docs)

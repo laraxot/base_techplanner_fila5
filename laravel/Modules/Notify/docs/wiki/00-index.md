@@ -14,7 +14,7 @@ updated: 2026-10-06
 **Module Version**: 2.1.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Multi-channel API e AI Templates.
 3. [philosophy.md](./philosophy.md) - "Essere Connessi": filosofia delle notifiche in tempo reale.
 

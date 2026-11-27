@@ -270,7 +270,7 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 
 ### Root Docs
 1. ✅ [LEGGI-QUI-DOMANI.md](./LEGGI-QUI-DOMANI.md) - Piano giornaliero
-2. ✅ [ANALISI-COMPLETA-2025-10-01.md](./ANALISI-COMPLETA.md) - Executive summary
+2. ✅ [ANALISI-COMPLETA-2025-10-01.md](./analisi-completa.md) - Executive summary
 2. ✅ [ANALISI-COMPLETA-2025-10-01.md](./analisi-completa-ottobre-data.md) - Executive summary
 3. ✅ [roadmap-master-index.md](./roadmap-master-index.md) - Master index
 4. ✅ [project-analysis-and-roadmap.md](./project-analysis-and-roadmap.md) - Business view
@@ -591,7 +591,7 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 
 ### Start Here
 - [🌅 Piano Domani](./LEGGI-QUI-DOMANI.md) - Anche se già completato!
-- [📊 Analisi Completa](./ANALISI-COMPLETA.md) - Executive view
+- [📊 Analisi Completa](./analisi-completa.md) - Executive view
 - [📊 Analisi Completa](./analisi-completa-ottobre-data.md) - Executive view
 - [🗺️ Master Roadmap](./roadmap-master-index.md) - Future planning
 

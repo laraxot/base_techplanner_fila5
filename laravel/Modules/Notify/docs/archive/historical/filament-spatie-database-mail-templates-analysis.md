@@ -458,9 +458,9 @@ public static function getHeaderActions(): array
 
 ## 🔗 Documentazione Correlata
 
-- [Database Mail System](./database-mail-system.md)
+- [Database Mail System](../../database-mail-system.md)
 - [Spatie Database Mail Templates](./mail-templates/spatie-database-mail-templates.md)
-- [Mail Template Improvements](./database-mail-templates-improvements.md)
+- [Mail Template Improvements](../../database-mail-templates-improvements.md)
 
 ---
 

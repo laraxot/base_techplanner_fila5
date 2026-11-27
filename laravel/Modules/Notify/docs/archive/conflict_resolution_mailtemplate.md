@@ -66,8 +66,8 @@ Verificare che:
 
 ## Collegamenti
 - [Notify Module Documentation](readme.md)
-- [SMS Implementation Guide](sms_implementation.md)
-- [Mail Templates Structure](mail_templates_structure.md)
-- [Translation Standards](translation_standards.md)
+- [SMS Implementation Guide](../sms_implementation.md)
+- [Mail Templates Structure](historical/mail-templates-structure.md)
+- [Translation Standards](historical/translation-standards.md)
 - [Root Conflict Resolution Guidelines](../../../project_docs/conflict-resolution-guidelines.md)
 

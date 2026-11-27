@@ -1,3 +1,7 @@
+---
+created: 2025-10-15
+---
+
 # 🐄✨ DRY & KISS Analysis - Modulo Notify
 
 **Data:** [DATE] | **Analista:** Super Mucca AI | **Status:** ✅ ANALISI COMPLETA
@@ -109,3 +113,8 @@ abstract class BaseModel extends XotBaseModel implements HasMedia
 ---
 [DRY/KISS Global](../../../docs/dry_kiss_analysis_2025-10-15.md)
 
+---
+
+## Contenuto unito da `dry-kiss-analysis-2025-10-15.md`
+
+[DRY/KISS Global](../../../docs/DRY_KISS_ANALYSIS_2025-10-15.md)

@@ -38,7 +38,7 @@ superseded_by: documentation-index.md
 
 ### Guide Rapide
 - [Quick Start](./QUICK_START.md) - Guida avvio rapido
-- [Contributing](./CONTRIBUTING.md) - Come contribuire
+- [Contributing](./contributing.md) - Come contribuire
 - [Troubleshooting](./troubleshooting/README.md) - Risoluzione problemi
 
 ---
@@ -295,7 +295,7 @@ superseded_by: documentation-index.md
 ## 🤝 Contributing
 
 ### Contribution Guidelines
-- [How to Contribute](./CONTRIBUTING.md) - Come contribuire
+- [How to Contribute](./contributing.md) - Come contribuire
 - [Code of Conduct](./CODE_OF_CONDUCT.md) - Codice condotta
 - [Pull Request Template](./.github/pull_request_template.md) - Template PR
 

@@ -36,7 +36,7 @@ updated: 2026-08-24
 
 ### Guide Rapide
 - [Quick Start](./QUICK_START.md) - Guida avvio rapido
-- [Contributing](./CONTRIBUTING.md) - Come contribuire
+- [Contributing](./contributing.md) - Come contribuire
 - [Troubleshooting](./troubleshooting/README.md) - Risoluzione problemi
 
 ---
@@ -282,7 +282,7 @@ updated: 2026-08-24
 ## 🤝 Contributing
 
 ### Contribution Guidelines
-- [How to Contribute](./CONTRIBUTING.md) - Come contribuire
+- [How to Contribute](./contributing.md) - Come contribuire
 - [Code of Conduct](./CODE_OF_CONDUCT.md) - Codice condotta
 - [Pull Request Template](./.github/pull_request_template.md) - Template PR
 

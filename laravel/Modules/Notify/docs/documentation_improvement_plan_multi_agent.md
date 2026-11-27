@@ -134,7 +134,7 @@ grep -r "Ultimo aggiornamento" docs/ --include="*.md"
 - [ ] `roadmap_project.md`
 - [ ] `ROADMAP_STATUS_SUMMARY.md`
 - [ ] `ROADMAP_UPDATE_PLAN.md`
-- [ ] `project_docs/ROADMAP.md`
+- [ ] `project_docs/roadmap.md`
 - [ ] `project_docs/roadmaps/roadmap-business.md`
 - [ ] `project_docs/roadmaps/roadmap-quality.md`
 - [ ] `project_docs/roadmaps/roadmap-technical.md`

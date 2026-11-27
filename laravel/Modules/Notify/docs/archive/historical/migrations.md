@@ -217,7 +217,7 @@ public function template(): BelongsTo
 - [Database Mail](database-mail.md)
 ### Versione HEAD
 
-- [Email Events](events.md)
+- [Email Events](../../events.md)
 
 ### Versione Incoming
 

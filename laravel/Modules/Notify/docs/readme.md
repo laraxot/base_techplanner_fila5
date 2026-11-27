@@ -265,10 +265,10 @@ Notification::route('mail', 'to@example.com')->notify($notify);
 
 #### Email System
 - [Email Layouts Best Practices](mail-templates/email_layouts_best_practices.md)
-- [Spatie Mail Templates Structure](mail-templates/spatie_mail_templates_structure.md)
+- [Spatie Mail Templates Structure](mail-templates/spatie-mail-templates-structure.md)
 - [Email Troubleshooting](email-sending/email_troubleshooting.md)
 - [Email Layouts Best Practices](mail-templates/email_layouts_best_practices.md)
-- [Spatie Mail Templates Structure](mail-templates/spatie_mail_templates_structure.md)
+- [Spatie Mail Templates Structure](mail-templates/spatie-mail-templates-structure.md)
 - [Email Troubleshooting](email-sending/email_troubleshooting.md)
 
 #### Notifications

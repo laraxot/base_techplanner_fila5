@@ -81,7 +81,7 @@ protected function setUp(): void
 
 ## 🔗 Collegamenti
 
-- [Testing Rules](testing-rules.md)
+- [Testing Rules](../../testing-rules.md)
 - [Activity TestCase Fix](../../activity/docs/testing-testcase-database-connection-fix.md)
 - [Geo TestCase Fix](../../geo/docs/testing-testcase-database-connection-fix.md)
 - [Media TestCase Fix](../../media/docs/testing-testcase-database-connection-fix.md)

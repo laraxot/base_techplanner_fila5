@@ -93,7 +93,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 
 ### Sistema Email
 - [Sistema Email Database](./database-mail-system.md) - Sistema di gestione delle email basato su database
-- [Code Email](./database_mail_queue.md) - Sistema di code per l'invio di email
+- [Code Email](./historical/database-mail-queue.md) - Sistema di code per l'invio di email
 - [Template Email](./EMAIL_TEMPLATES.md) - Struttura e utilizzo dei template email
 - [Best Practices Email](./EMAIL_BEST_PRACTICES.md) - Linee guida per le email
 - [Template Responsivi](./RESPONSIVE_EMAIL_TEMPLATES.md) - Implementazione di template email responsivi

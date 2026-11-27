@@ -15,7 +15,7 @@ related:
   - ../architecture/README.md
   - README.md
   - ../rules/README.md
-  - ../best-practices/naming-conventions.md
+  - ../naming-conventions.md
 ---
 # Database Directory Naming Convention
 

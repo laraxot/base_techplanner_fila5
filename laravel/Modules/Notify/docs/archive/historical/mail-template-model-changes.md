@@ -133,7 +133,7 @@ protected $casts = [
 - [Modifiche Migrazione](./migration_changes.md)
 - [Regole Migrazioni](./migration_rules.md)
 - [Documentazione Template](./email_templates.md)
-- [Best Practices](./best-practices.md)
+- [Best Practices](../../best-practices.md)
 
 ## Note Importanti
 

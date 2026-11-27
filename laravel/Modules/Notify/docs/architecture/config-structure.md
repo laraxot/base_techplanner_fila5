@@ -15,7 +15,7 @@ related:
   - README.md
   - ../conventions/README.md
   - ../rules/README.md
-  - ../best-practices/naming-conventions.md
+  - ../naming-conventions.md
 ---
 # Struttura di Configurazione nei Moduli
 # Struttura di Configurazione nei Moduli <nome progetto>

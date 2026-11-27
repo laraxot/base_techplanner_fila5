@@ -29,6 +29,6 @@
 - Mantenuta compatibilità con codice esistente
 
 ### Collegamenti Correlati
-- [Proposta Slug](./spatie_email_slug_proposal.md)
+- [Proposta Slug](./historical/spatie-email-slug-proposal.md)
 - [Sistema Template Email](./email_templates.md)
-- [Email Dottori](./doctor_emails.md) 
+- [Email Dottori](./historical/doctor-emails.md) 

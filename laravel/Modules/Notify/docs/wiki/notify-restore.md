@@ -13,10 +13,10 @@ related:
   - "./bmad-method.md"
   - "./index.md"
   - "./log.md"
-  - "./notify-conflict-check-.md"
+  - "./notify-conflict-check.md"
   - "./notify-conflict-check-1.md"
   - "./notify-conflict-check.md"
-  - "./notify-restore-.md"
+  - "./notify-restore.md"
 ---
 
 > Questo file è stato rinominato in [notify-restore.md](notify-restore.md). Non aggiungere date nel filename; usare `created/updated` nel front matter.

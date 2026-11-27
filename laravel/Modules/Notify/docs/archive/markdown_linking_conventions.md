@@ -18,8 +18,8 @@
 
 ```markdown
 [Convenzioni di Naming per le Interfacce](./interface_naming_convention.md)
-[Chiarimento sulla Struttura delle Interfacce](./interface_structure_clarification.md)
-[Architettura dei Contratti](./contracts_architecture.md)
+[Chiarimento sulla Struttura delle Interfacce](../interface_structure_clarification.md)
+[Architettura dei Contratti](../contracts_architecture.md)
 ```
 
 Per collegamenti a documenti in altre directory:
