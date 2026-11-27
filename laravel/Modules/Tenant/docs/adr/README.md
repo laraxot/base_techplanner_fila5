@@ -16,7 +16,7 @@ Scrivere un ADR solo per una scelta difficile da invertire, sorprendente o fonda
 Le decisioni vanno verificate contro codice e test correnti. Una modifica sostanziale crea un nuovo ADR e collega il precedente come superseded/deprecated.
 
 Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
+Il nome del file e' `NNNN-argomento-in-kebab-case.md`, senza date (la data sta nella frontmatter); eccezioni: `README.md`, `index.md`, `0000-template.md`.
 
 Leggili prima di toccare `GetTenantNameAction`, `GetTenantFilePathAction`, `TenantServiceProvider::registerDB()` o i
 trait Sushi. Formato e regole: `Modules/Xot/docs/rules/action-behavioral-contract.md`.

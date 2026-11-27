@@ -22,7 +22,6 @@ use Spatie\QueueableAction\QueueableAction;
  * 3. Fallback a una pagina CMS generica (container.view).
  *
  * @contract docs/contracts/page-resolution-action.md
- * @contract docs/contracts/resolve-page-action.md
  *
  * @see Modules/Cms/docs/contracts/page-resolution-action.md
  */

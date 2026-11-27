@@ -20,11 +20,11 @@ Meetup **non ha Action**: `app/` contiene solo `Providers/ThemeServiceProvider.p
 - dipende da `Modules\Meetup\Models\Event`, modulo non presente in ogni installazione.
 
 Il posto giusto per questa logica e' un'Action del modulo eventi con il suo contratto, chiamata da un widget o da Volt
-([ADR](../adr/public-pages-from-json-via-x-page.md)).
+([ADR](../adr/0003-public-pages-from-json-via-x-page.md)).
 
 **Dove stanno i contratti applicativi:** nei moduli, es. `Modules/User/docs/contracts/` (login),
 `Modules/Gdpr/docs/contracts/` (consensi in registrazione), `Modules/Cms/docs/contracts/` (pagine).
 
 ## Contratti
 
-Nessuno (il tema non ha Action).
+Nessuno (il tema non ha Action). Inventario machine-readable: [INDEX.md](INDEX.md); tabella di lavoro: [index.md](index.md); template per un futuro contratto: [_template.md](_template.md).

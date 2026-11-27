@@ -1,6 +1,6 @@
 # AGENTS.md — Laravel On-Demand Stub
 
-SSoT: [../docs/wiki/](../docs/wiki/) · bootstrap: [agent-bootstrap-compact.md](../bashscripts/ai/wiki/concepts/agent-bootstrap-compact.md)
+SSoT: [../docs/wiki/](../docs/wiki/) · bootstrap: [agent-bootstrap-compact.md](../bashscripts/ai/wiki/concepts/agents-harness-tooling.md#agent-bootstrap-compact)
 
 ## Read First
 

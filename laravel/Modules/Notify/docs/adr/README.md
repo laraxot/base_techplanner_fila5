@@ -90,7 +90,7 @@ ADR: 4. Con conferma automatica (test o comando eseguibile da `laravel/`): 3. AD
 - `laravel/config/notify-env.php:18` riporta `noreply@fixcity.eu` come default del mittente e sovrascrive il default neutro del modulo (ADR 0002).
 - Riscrivere i due test obsoleti di `SendNotificationActionTest.php` (righe 94 e 115) e aggiungere un test sull'isolamento dei canali (ADR 0003).
 - Un limite di frequenza sulle due rotte dei webhook (ADR 0004, debito dichiarato).
-- Le copie senza numero (`mail-delivery-outcomes-are-events.md`, `notify-config-is-centralized.md`, `notify-owns-delivery-contract.md`, `webhooks-authenticate-with-a-token-in-the-path.md`) risultano cancellate nell'albero di lavoro (`git status` del 2026-11-26): il numerato è l'unico ADR.
+- Le copie senza numero (`mail-delivery-outcomes-are-events.md`, `webhooks-authenticate-with-a-token-in-the-path.md`) erano duplicate dei canonici numerati e sono state eliminate; il file `NNNN-` è l'unico ADR per decisione.
 - `0000-template.md` è il modello, non una decisione.
 
 ## Decisioni precedenti (formato libero, non ancora ADR)

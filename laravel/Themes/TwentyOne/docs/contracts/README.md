@@ -29,4 +29,4 @@ qui nel formato del [canon](../../../../Modules/Xot/docs/rules/action-behavioral
 
 ## Contratti
 
-Nessuno (le Action del tema sono di sola lettura).
+Nessuno (le Action del tema sono di sola lettura). Inventario machine-readable: [INDEX.md](INDEX.md); tabella di lavoro: [index.md](index.md); template per un futuro contratto: [_template.md](_template.md).

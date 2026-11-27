@@ -10,7 +10,7 @@ updated: 2026-11-24
 # PurgeExpiredContactMessagesAction
 
 Sorgente: `app/Actions/Contact/PurgeExpiredContactMessagesAction.php`. Comando: `techplanner:contact-messages:purge {--dry-run}`.
-Perché: [ADR](../adr/contact-form-archive-then-forward.md).
+Perché: [ADR](../adr/0003-contact-form-archive-then-forward.md).
 
 ## Input
 

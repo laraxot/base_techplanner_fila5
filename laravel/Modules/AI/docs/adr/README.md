@@ -66,11 +66,12 @@ report verde; corregge invece le cause nel codice oppure lascia il lavoro aperto
 - [0001 — L'AI propone, una persona conferma, un handler del dominio esegue](0001-ai-proposes-human-confirms.md) — `accepted`: l'AI crea una `AiActionProposal`, la esegue solo `ConfirmAiActionProposalAction` tramite il registry di handler del dominio.
 - [0002 — L'assistente chiede la risposta a piu' fornitori in cascata, solo modelli gratuiti](0002-assistant-provider-cascade.md) — `accepted`: Groq, poi OpenRouter, poi OpenAI; l'ultimo tentativo ignora `free_models_only` (`## Stato attuale`).
 - [0003 — Gli id utente nelle tabelle AI sono stringhe da 36 caratteri](0003-user-ids-are-strings.md) — `accepted`: cinque colonne `string(36)` al posto di interi, per non troncare gli UUID a 0.
+- [0004 — PHPStan a zero errori: mai saltare le segnalazioni](0004-phpstan-zero-errori.md) — `accepted`: zero errori PHPStan, nessuna segnalazione saltata o zittita.
 - [0005 — Gate PHPStan immutabile e obbligatorio](0005-phpstan-gate-immutabile.md) — `accepted`: zero errori al livello configurato, nessuna soppressione o modifica della configurazione per eludere il gate.
 
 ## Stato di copertura (2026-11-26)
 
-- 3 decisioni, tutte con le sei sezioni in italiano, `decision-makers` e `Conferma`; 0001 e 0002 hanno anche `## Stato attuale`.
+- 5 decisioni (0001-0005), tutte con le sei sezioni; 0001 e 0002 hanno anche `## Stato attuale`.
 - Conferma con un test indicato: 0001 (group `AI-CONFIRM-INV-3`/`INV-4`, registry), 0002 (`RequestAssistantCompletionActionTest`, 4 test, solo
   per l'ordine e i passaggi di mano), 0003 (`UserIdColumnsAcceptUuidTest`, schema). Non rieseguiti in questa revisione.
 - Senza conferma automatica: lo stato di partenza `pending` (0001), `free_models_only` per modelli a pagamento (0002), `(int)` sugli

@@ -1,10 +1,10 @@
 # CLAUDE.md — On-Demand Stub
 
-Guida operativa completa: [docs/wiki/](docs/wiki/) · bootstrap: [agent-bootstrap-compact.md](bashscripts/ai/wiki/concepts/agent-bootstrap-compact.md)
+Guida operativa completa: [docs/wiki/](docs/wiki/) · bootstrap: [agent-bootstrap-compact.md](bashscripts/ai/wiki/concepts/agents-harness-tooling.md#agent-bootstrap-compact)
 
 ## Session start
 
-1. `bashscripts/ai/wiki/concepts/agent-bootstrap-compact.md`
+1. `bashscripts/ai/wiki/concepts/agents-harness-tooling.md#agent-bootstrap-compact`
 2. `bashscripts/ai/wiki/rules/00-TRIGGER_MAP.md` → riga task
 3. `bashscripts/docs/llm-wiki-qmd.sh search "<topic>" -n 5`
 

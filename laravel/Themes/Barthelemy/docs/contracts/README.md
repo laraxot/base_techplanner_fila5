@@ -17,4 +17,4 @@ che scrive dati o chiama l'esterno, il contratto va qui nel formato del
 
 ## Contratti
 
-Nessuno.
+Nessuno. Inventario machine-readable: [INDEX.md](INDEX.md); tabella di lavoro: [index.md](index.md); template per un futuro contratto: [_template.md](_template.md).

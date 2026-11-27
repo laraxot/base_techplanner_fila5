@@ -10,7 +10,7 @@ updated: 2026-11-24
 # SubmitContactFormAction
 
 Sorgente: `app/Actions/Contact/SubmitContactFormAction.php`, rotta `POST /{lang}/contact` (`routes/web.php`).
-Perché: [ADR](../adr/contact-form-archive-then-forward.md).
+Perché: [ADR](../adr/0003-contact-form-archive-then-forward.md).
 
 ## Input
 

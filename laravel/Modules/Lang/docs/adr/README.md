@@ -20,7 +20,7 @@ Frontmatter (`title`, `type: decision`, `status`, `created`, `updated`, `module`
 
 ## ADR presenti
 
-Elenco completo con stato: [INDEX.md](INDEX.md) (indice machine-readable: [index.md](index.md)).
+Elenco completo con stato: [index.md](index.md) (indice canonico; `INDEX.md` è uno stub superseded che punta qui).
 
 | ADR | Decisione | Conferma |
 |---|---|---|
@@ -34,6 +34,9 @@ Elenco completo con stato: [INDEX.md](INDEX.md) (indice machine-readable: [index
 
 I path kebab senza numero (`lang-owns-localization-data.md`, `language-switcher-standalone-view.md`) sono stub
 `status: superseded` (con `superseded_by`) che puntano ai canonici `0005`/`0006`; non si cancellano per non rompere i link storici.
+Anche `INDEX.md` è uno stub `status: superseded` che punta a `index.md` (erano due copie quasi identiche del medesimo
+indice). Le copie integrali senza numero `filament-labels-from-module-translation-files.md` e
+`missing-translations-written-only-in-local.md` erano duplicate di `0004`/`0007` ed sono state eliminate.
 
 Policy trasversale su dati sacri e test isolati: [0013-dati-sacri-migrazioni-e-test](../../../Xot/docs/adr/0013-dati-sacri-migrazioni-e-test.md).
 
@@ -49,4 +52,3 @@ Misura del 2026-11-26, su 7 ADR vivi e 2 stub.
 
 - `0002` ripete in forma locale Xot ADR [0037](../../../Xot/docs/adr/0037-translation-key-protocol.md) (stessa forma di chiave, `decision-makers: [Xot, Lang]`): tenerlo o marcarlo `superseded`?
 - `0003` e `0004` descrivono la stessa scelta (le etichette Filament si configurano con `configureUsing` dai file di lingua del modulo): fonderli?
-- `INDEX.md` e `index.md` in questa cartella sono due file quasi identici che differiscono solo per le maiuscole: su filesystem insensibili alle maiuscole collidono.

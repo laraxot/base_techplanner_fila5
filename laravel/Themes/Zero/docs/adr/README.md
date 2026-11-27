@@ -12,8 +12,8 @@ Un ADR del tema Zero registra una scelta difficile da invertire, sorprendente o 
 
 ## Formato MADR
 
-Frontmatter (`title`, `type: decision`, `status`, `created`, `updated`, `decision-makers`, `module`, `qmd`) e sezioni nell'ordine: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`, `## Conseguenze`, `## Conferma`. Nome file in kebab-case senza data né numero.
+Frontmatter (`title`, `type: decision`, `status`, `created`, `updated`, `decision-makers`, `module`, `qmd`) e sezioni nell'ordine: `## Contesto`, `## Driver della decisione`, `## Alternative scartate`, `## Decisione`, `## Conseguenze`, `## Conferma`. Nome file canonico `NNNN-slug.md` in kebab-case senza data; eccezioni: `README.md`, `INDEX.md` (stub superseded), `0000-template.md`, `index.md`.
 
 ## ADR presenti
 
-Elenco con stato: [INDEX.md](INDEX.md). Presente: [theme-assets-are-built-in-theme-and-served-by-symlink](0003-theme-assets-are-built-in-theme-and-served-by-symlink.md).
+Inventario canonico: [index.md](index.md). Presenti: [0001-auth-pages-render-module-widgets-with-panel-css](0001-auth-pages-render-module-widgets-with-panel-css.md), [0002-theme-as-dress-no-php](0002-theme-as-dress-no-php.md), [0003-theme-assets-are-built-in-theme-and-served-by-symlink](0003-theme-assets-are-built-in-theme-and-served-by-symlink.md).

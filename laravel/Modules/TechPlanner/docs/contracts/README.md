@@ -3,7 +3,7 @@ title: "Contratti — modulo TechPlanner"
 type: index
 tags: [contracts, actions, techplanner]
 created: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-27
 ---
 
 # Contratti del modulo TechPlanner
@@ -14,6 +14,23 @@ L'elenco dei contratti obbligatori del modulo è in `tests/Unit/Docs/ActionContr
 
 Leggili prima di chiamare, modificare o imitare un'Action del form di contatto o del geocoding. Formato:
 `Modules/Xot/docs/rules/action-behavioral-contract.md`.
+
+## Formato
+
+Un file per Action, nome in kebab-case della classe, frontmatter `type: contract` e `action: "Modules\\TechPlanner\\Actions\\..."`,
+e queste sei sezioni nell'ordine:
+
+```markdown
+## Input
+## Output
+## Invarianti
+## Effetti collaterali
+## Errori
+## Non fa
+```
+
+Il docblock dell'Action rimanda al file con `@contract docs/contracts/<file>.md`. Template: [_template.md](_template.md).
+Inventario machine-readable: [INDEX.md](INDEX.md); tabella di lavoro: [index.md](index.md).
 
 ## Contratti di Action
 

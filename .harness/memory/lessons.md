@@ -4,7 +4,7 @@ type: index
 created: 2026-11-19
 updated: 2026-11-24
 related:
-  - ../../laravel/Modules/Xot/docs/adr/agent-harness.md
+  - ../../laravel/Modules/Xot/docs/adr/0018-agent-harness.md
   - ../bin/guard
 ---
 

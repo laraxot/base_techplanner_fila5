@@ -88,5 +88,5 @@ ADR: 3. Con conferma automatica (test o comando eseguibile da `laravel/`): 2. AD
 
 - Riconciliare `tests/Unit/Bootstrap/PestExtendBootstrapTest.php` (riga 23) con `RedactModelAttributesActionTest.php` (riga 39) sulla connessione di `Snapshot` e `StoredEvent` in testing (ADR 0002, «Stato attuale»).
 - Test che scandisce `Modules/Activity/app` per `update/upsert/save` su `activity_log` con allowlist delle eccezioni note (ADR 0001, Conferma).
-- Le copie senza numero (`activity-audit-is-append-oriented.md`, `activity-models-on-dedicated-connection.md`, `log-viewer-single-path-resolver.md`) risultano cancellate nell'albero di lavoro (`git status` del 2026-11-26) e non sono più in `docs/adr`; il numerato è l'unico ADR.
+- Le copie senza numero (`activity-models-on-dedicated-connection.md`, `log-viewer-single-path-resolver.md`) erano duplicate dei canonici numerati e sono state eliminate; il file `NNNN-` è l'unico ADR per decisione.
 - `0000-template.md` è il modello, non una decisione.

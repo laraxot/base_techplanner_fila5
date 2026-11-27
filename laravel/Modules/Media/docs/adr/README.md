@@ -34,7 +34,6 @@ ADR e segna il vecchio `superseded`.
 | [0003](0003-effective-upload-limit-in-web-request.md) | accepted | Limite di upload annunciato = minimo tra PHP, Livewire e campo, letto nella richiesta web. | `GetEffectiveUploadLimitActionTest` (`GET-EFFECTIVE-UPLOAD-LIMIT-INV-1`, `-3`, `-4`); il default 12 MB non e' provato. |
 | [0004](0004-media-visibility-follows-owner.md) | accepted | La visibilita' dei media segue il record owner. Ha `Stato attuale`: il codice non la implementa, ogni punto di ingresso fissa la sua. | Nessuna conferma automatica; proposta nel file. |
 | [0005](0005-strip-image-metadata-server-side.md) | accepted | Metadati Exif/GPS tolti sul server ri-codificando con GD (`StripImageMetadataAction`). | `StripImageMetadataActionTest` (`MEDIA-STRIP-INV-1`..`5`). |
-| [media-visibility-follows-owner](media-visibility-follows-owner.md) | superseded da 0004 | Copia senza numero di 0004, tenuta per non rompere i link. | — |
 | [0000-template](0000-template.md) | — | Modello per un nuovo ADR. | — |
 
 ## Stato di copertura
@@ -45,6 +44,4 @@ ADR e segna il vecchio `superseded`.
 
 ## Da ripulire (richiede una decisione umana)
 
-- `media-visibility-follows-owner.md` duplica 0004: proposta, eliminarlo dopo aver aggiornato i link in `INDEX.md`.
-- `index.md` e `INDEX.md` sono due indici dello stesso elenco (su file system che non distinguono maiuscole collidono): proposta,
-  tenere questo README e togliere gli altri due; fino ad allora sono allineati a questa tabella.
+- `index.md` e `INDEX.md`: `INDEX.md` e' ora uno stub superseded che punta a `index.md` (inventario canonico).

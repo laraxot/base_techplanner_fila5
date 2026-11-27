@@ -9,7 +9,7 @@ updated: 2026-11-24
 
 # DeliverContactMessageAction
 
-Sorgente: `app/Actions/Contact/DeliverContactMessageAction.php`. Perché: [ADR](../adr/contact-form-archive-then-forward.md).
+Sorgente: `app/Actions/Contact/DeliverContactMessageAction.php`. Perché: [ADR](../adr/0003-contact-form-archive-then-forward.md).
 
 ## Input
 

@@ -19,7 +19,7 @@ Leggili prima di toccare `app/Actions/Auth/*`, i widget di login/registrazione o
 
 Un ADR solo per una scelta difficile da invertire, sorprendente o fondata su un trade-off reale. Non è un diario né una spiegazione retroattiva. Una modifica sostanziale crea un nuovo ADR e segna il vecchio `superseded` (con `superseded_by`).
 Il nome del file è `NNNN-argomento-in-kebab-case.md`, senza date (la data sta nella frontmatter): lo impone `Modules/Xot/tests/Unit/Docs/AdrFilenamesAreNumberedTest.php`. Intestazioni in italiano, imposte da `PackagesHaveContractsAndAdrTest.php`.
-Regola canonica: [action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md); standard condivisi: [Xot ADR](../../../Xot/docs/adr/README.md); template: [0000-template](0000-template.md).
+Regola canonica: [action-behavioral-contract](../../../Xot/docs/rules/action-behavioral-contract.md); standard condivisi: [Xot ADR](../../../Xot/docs/adr/README.md); il formato e' descritto nella sezione «Formato» qui sotto (il modulo non ha un `0000-template.md` locale).
 
 ## Formato
 

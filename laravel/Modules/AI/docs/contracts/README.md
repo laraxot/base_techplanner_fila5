@@ -51,6 +51,8 @@ Le Action che scrivono dati o chiamano fornitori esterni, in ordine di rischio.
 - [SaveKnowledgeEntryAction](save-knowledge-entry-action.md) — crea o aggiorna una voce della base di conoscenza di una collection; 4 invarianti.
 - [GeneratePredictionsAction](generate-predictions-action.md) — genera una previsione via OpenAI; legacy di un altro progetto, senza chiamanti; 4 invarianti.
 
+File non contratto nella cartella: [website-signals.md](website-signals.md) (`type` assente, nota sulle superfici di analisi dei segnali del sito; non segue il formato a sei sezioni e non e' un contratto di una Action).
+
 ## Stato di copertura (2026-11-26)
 
 | Misura | Valore |

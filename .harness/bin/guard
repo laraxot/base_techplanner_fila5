@@ -6,7 +6,7 @@
  * regole del progetto vietano, spiegando su stderr cosa fare invece. Tutto il resto passa (exit 0).
  *
  * PHP puro, niente bootstrap Laravel: deve funzionare anche quando l'app è rotta.
- * Decisione: laravel/Modules/Xot/docs/adr/agent-harness.md · Test: laravel/Modules/Xot/tests/Unit/Harness/GuardTest.php
+ * Decisione: laravel/Modules/Xot/docs/adr/0018-agent-harness.md · Test: laravel/Modules/Xot/tests/Unit/Harness/GuardTest.php
  * Ogni regola nasce da una lezione in .harness/memory/lessons.md (// lesson: L-NNN).
  *
  * È una rete, non un muro: un comando composto in modi strani può passare. Su input illeggibile lascia passare.

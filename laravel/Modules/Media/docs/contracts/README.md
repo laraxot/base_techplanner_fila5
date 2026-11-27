@@ -185,4 +185,3 @@ Difetti di test visti: `tests/Unit/Actions/GetAttachmentsSchemaActionTest.php` (
 ## Da ripulire (richiede una decisione umana)
 
 - `INDEX.md`, `index.md` e questo README descrivono lo stesso elenco: proposta, tenere solo il README.
-- `path-generator-1.md.old`: copia con suffisso numerico di `path-generator.md`; proposta, eliminarla.

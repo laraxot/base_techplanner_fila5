@@ -16,5 +16,8 @@ scrivere markup fisso in una sezione. Formato: [regola del canon](../../../../Mo
 
 ## Decisioni
 
-- [Pagine container0 agnostiche](agnostic-container0-pages.md) — `container0.index` / `container0.view`, payload neutro `item`/`record`, risoluzione in `Modules/Cms`.
-- [Header come blocchi per posizione](header-blocks-grouped-by-position.md) — l'header rende i blocchi JSON raggruppati per `data.position`, senza markup proprio.
+- [TwentyOne usa pagine agnostiche](0001-twentyone-uses-agnostic-pages.md) — entry point `container0` agnostici e payload neutri dal resolver CMS.
+- [Pagine container0 agnostiche](0002-agnostic-container0-pages.md) — `container0.index` / `container0.view`, payload neutro `item`/`record`, risoluzione in `Modules/Cms` (approfondimento dell'ADR 0001).
+- [Header come blocchi per posizione](0003-header-blocks-grouped-by-position.md) — l'header rende i blocchi JSON raggruppati per `data.position`, senza markup proprio.
+
+L'indice completo e' in [index.md](index.md).
