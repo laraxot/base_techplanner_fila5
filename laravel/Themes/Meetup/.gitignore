@@ -96,7 +96,12 @@ phpinsights.php
 .php-cs-fixer.dist.php
 *.lock
 .windsurf/
+<<<<<<< .merge_file_PglV13
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+docs/archive/
+docs/screenshots/
+>>>>>>> .merge_file_MMU2P6

@@ -6,68 +6,54 @@ type: decision
 module: Comment
 tags: [adr, contract, eloquent, models, architecture, dry]
 created: 2026-06-06
-updated: 2026-06-06
+updated: 2026-11-24
 status: accepted
 issues:
   - "https://github.com/laraxot/module_comment_fila5/issues/4"
-  - "https://github.com/laraxot/base_fixcity_fila5/issues/297"
 related:
   - ../wiki/concepts/can-comment-contract-php84.md
   - ../wiki/architecture/native-comments-engine.md
   - ../wiki/concepts/spatie-to-laraxot-namespace-map.md
-  - ../../../../../docs/wiki/memories/models-contracts-vs-app-contracts.md
+  - ../../app/Models/Contracts/CanComment.php
 ---
 
 # ADR: `Models/Contracts` vs `app/Contracts`
 
 ## Contesto
 
-`CanComment` descrive capacità di un **commentator Eloquent** (`MorphMany`, `getKey()`, `getMorphClass()`, notifiche). Inizialmente era in `app/Contracts/CanComment.php` — namespace generico, fuori dal dominio Model.
+`CanComment` descrive le capacita' di un **commentatore Eloquent** (`getKey()`, `getMorphClass()`, `notify()`,
+`commentatorProperties()`). Inizialmente era in `app/Contracts/CanComment.php`, namespace generico fuori dal dominio Model.
+Nello Spatie originale era `Models\Concerns\Interfaces\CanComment`.
 
-Spatie originale: `Models\Concerns\Interfaces\CanComment`.
+Domanda: dove sta un'interfaccia che solo un Model implementa?
 
 ## Decisione
 
 | Tipo contratto | Path modulo | Namespace | Esempio |
 |----------------|-------------|-----------|---------|
-| Capacità **solo Model** | `app/Models/Contracts/` | `Modules\{M}\Models\Contracts\*` | `CanComment`, `HasRatingContract` |
+| Capacita' **solo Model** | `app/Models/Contracts/` | `Modules\{M}\Models\Contracts\*` | `CanComment`, `Commentable` |
 | Trait comportamento Model | `app/Models/Concerns/` | `Modules\{M}\Models\Concerns\*` | `HasComments`, `InteractsWithComments` |
 | Boundary **cross-modulo** | `app/Contracts/` o `Modules\Xot\Contracts\` | servizi, policy esterne, DTO boundary | `UserContract` (Xot) |
 
-**`CanComment`** → `app/Models/Contracts/CanComment.php` (`Modules\Comment\Models\Contracts\CanComment`).
-
-## Perché
-
-1. **Semantica** — chi implementa `CanComment` è sempre un `Model`/`Authenticatable`, mai un Action o Provider.
-2. **Precedenti** — `Rating\Models\Contracts\HasRatingContract`, `Lang\Models\Contracts\HasTranslationsContract`.
-3. **DRY** — `app/Contracts/` resta vuoto nel modulo Comment finché non serve un vero boundary non-Model.
-4. **KISS** — allineamento diretto alla migrazione Spatie `Models\Concerns\Interfaces` → `Models\Contracts`.
+`CanComment` sta in `app/Models/Contracts/CanComment.php`. Firme native: `getKey(): mixed`, `getMorphClass(): string`;
+i modelli che la implementano le ridichiarano con lo stesso tipo (docblock dell'interfaccia).
 
 ## Alternative scartate
 
-- Lasciare `CanComment` in `app/Contracts/` (la posizione iniziale): namespace generico, fuori dal dominio Model, mentre chi
-  lo implementa e' sempre un Model.
-- Tenere il namespace di Spatie `Models\Concerns\Interfaces`: mescola contratti e trait; la migrazione da Spatie porta le
-  interfacce in `Models\Contracts`, come gia' Rating e Lang.
+- Lasciare `CanComment` in `app/Contracts/`: namespace generico, fuori dal dominio Model, mentre chi lo implementa e' sempre
+  un Model.
+- Tenere il namespace di Spatie `Models\Concerns\Interfaces`: mescola contratti e trait; la migrazione porta le interfacce
+  in `Models\Contracts`, come gia' Rating e Lang.
 
 ## Conseguenze
 
-- Import consumer: `use Modules\Comment\Models\Contracts\CanComment;`
-- **Vietato** ricreare `app/Contracts/CanComment.php` (duplicato namespace).
-- Nuove capability model-only nel modulo Comment → `Models/Contracts/` + trait in `Models/Concerns/` se serve.
-
-## PHP 8.4
-
-Firme **loose** su metodi Eloquent (`getKey();` senza `: mixed`). Vedi [can-comment-contract-php84.md](../wiki/concepts/can-comment-contract-php84.md).
+- Import consumer: `use Modules\Comment\Models\Contracts\CanComment;`.
+- **Vietato** ricreare `app/Contracts/CanComment.php` (doppio namespace per la stessa capacita').
+- `BaseUser` e `User` non implementano `CanComment`: il modulo Comment resta opzionale per User.
 
 ## Verifica
 
-```bash
-test ! -f laravel/Modules/Comment/app/Contracts/CanComment.php
-./vendor/bin/pest tests/Unit/Modules/Comment/CanCommentContractTest.php
-```
-
-## Collegamenti
-
-- [STORY-158](../../../../../docs/stories/STORY-158-native-comments-internalization.md)
-- Memory root: [models-contracts-vs-app-contracts.md](../../../../../docs/wiki/memories/models-contracts-vs-app-contracts.md)
+- `Modules/Comment/tests/Unit/CanCommentContractTest.php`: firme di `getKey`/`getMorphClass`, User e BaseUser non
+  dipendono da Comment, nessun `CanComment` rimasto nel modulo User.
+- Solo revisione: la cartella `app/Contracts/` del modulo non contiene `CanComment` (l'unico file e'
+  `Modules/Comment/app/Models/Contracts/CanComment.php`).

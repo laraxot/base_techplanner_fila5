@@ -132,7 +132,7 @@ Questo file contiene molteplici occorrenze problematiche:
 - Mantenere la struttura espansa (label, placeholder, helper_text, description)
 
 ## Collegamenti
-- [Regole Traduzioni](../Modules/Xot/docs/translation-rules.md)
+- [Regole Traduzioni](../../../../Xot/docs/translations/translation-rules.md)
 - [Standard Qualità Traduzioni](../Modules/<nome progetto>/docs/translation-quality-standards.md)
 
 *Audit creato il: 2025-08-07*

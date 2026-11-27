@@ -73,6 +73,8 @@ return [
     'consents' => [
         'title' => 'Consensi',
         'privacy_policy_label' => 'Ho letto e accetto l\'Informativa Privacy',
+        'privacy_checkbox_html' => 'Ho letto l\'<a href=":privacy_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">Informativa Privacy</a>',
+        'terms_checkbox_html' => 'Accetto i <a href=":terms_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">Termini e Condizioni</a>',
         'privacy_policy_hint' => 'Ai sensi degli artt. 13 e 14 GDPR',
         'privacy_policy_required' => 'Devi accettare la privacy policy',
         'terms_label' => 'Ho letto e accetto i Termini e Condizioni',
@@ -86,8 +88,6 @@ return [
         'privacy_policy' => 'Ho letto e accetto l\'informativa sulla privacy',
         'terms' => 'Accetto i termini e le condizioni d\'uso',
         'marketing' => 'Desidero ricevere comunicazioni di marketing (facoltativo)',
-        'privacy_checkbox_html' => 'Ho letto l\'<a href=":privacy_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">Informativa privacy</a>',
-        'terms_checkbox_html' => 'Accetto i <a href=":terms_url" target="_blank" class="text-primary-600 dark:text-primary-400 underline font-semibold hover:text-primary-700">Termini e condizioni</a>',
         'required_consent_missing' => 'Devi accettare tutti i consensi obbligatori per procedere.',
     ],
     'actions' => [

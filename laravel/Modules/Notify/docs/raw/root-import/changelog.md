@@ -15,7 +15,7 @@ related:
   - "./files-created-session-007-1.md"
   - "./files-created-session-007.md"
   - "./files-created-session-replikate.md"
-  - "./firebase-1.md"
+  - "../../firebase.md"
 ---
 
 # Changelog

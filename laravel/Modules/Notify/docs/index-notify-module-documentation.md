@@ -50,7 +50,7 @@ This document serves as the central index for the Notify module, providing guida
 - [Notification Channels Implementation](./notification_channels_implementation.md)
 - [Email Templates](./email_templates.md)
 - [SMS Implementation](./sms_implementation.md)
-- [Troubleshooting](./troubleshooting.md)
+- [Troubleshooting](../../troubleshooting.md)
 # Indice della Documentazione - Modulo Notify
 
 ## Panoramica
@@ -79,11 +79,11 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 - [README](./README.md) - Panoramica generale del modulo
 - [Architettura](./architecture.md) - Architettura generale del modulo
 - [Struttura](./structure.md) - Struttura delle directory e dei componenti
-- [Modelli](./models.md) - Documentazione dei modelli Eloquent
-- [Eventi](./events.md) - Eventi e listeners
+- [Modelli](../../models.md) - Documentazione dei modelli Eloquent
+- [Eventi](../../events.md) - Eventi e listeners
 
 ### Sistema Email
-- [Sistema Email Database](./database-mail-system.md) - Sistema di gestione delle email basato su database
+- [Sistema Email Database](../../database-mail-system.md) - Sistema di gestione delle email basato su database
 - [Code Email](./database_mail_queue.md) - Sistema di code per l'invio di email
 - [Template Email](./email_templates.md) - Struttura e utilizzo dei template email
 - [Best Practices Email](./email_best_practices.md) - Linee guida per le email
@@ -119,7 +119,7 @@ Questo documento serve come indice centrale per il modulo Notify, fornendo una g
 - [PHPStan Level 10](./phpstan-level10-analysis.md) - Analisi e correzioni per PHPStan Level 10
 - [Quality Improvements](./quality-improvements-2025-01-06.md) - Riepilogo miglioramenti qualità codice
 - [Migration Fixes Summary](./migration-fixes-summary.md) - Correzioni migrazioni e server
-- [Troubleshooting](./troubleshooting.md) - Risoluzione problemi comuni (ParseError, PHPStan, etc.)
+- [Troubleshooting](../../troubleshooting.md) - Risoluzione problemi comuni (ParseError, PHPStan, etc.)
 - [Testing](./testing.md) - Strategie e approcci per il testing
 
 ## Linee Guida per l'Implementazione

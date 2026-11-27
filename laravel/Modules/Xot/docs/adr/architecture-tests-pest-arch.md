@@ -85,3 +85,9 @@ progetto ha scelto Pest, gia' installato e nella stessa suite, senza dipendenze 
 - La suite `Arch` va nella matrice bloccante della CI. Al 2026-11-18 la CI del progetto ospite non partiva per il limite di spesa
   di GitHub Actions dell'account: finche' non riparte, si lancia a mano prima del push.
 - Chi aggiunge una regola la prova con una sonda che la viola; chi aggiunge una voce di debito lo spiega nella PR.
+
+## Verifica
+
+- `cd laravel && vendor/bin/pest Modules/Xot/tests/Arch/ArchitectureTest.php`: fallisce se una classe fuori da
+  `ARCH_DEBT` (`Modules/Xot/tests/Arch/debt.php`) viola una regola; l'ambito sta in `Modules/Xot/tests/Arch/scope.php`.
+- In revisione: una voce nuova in `debt.php` senza motivo nella PR si respinge.

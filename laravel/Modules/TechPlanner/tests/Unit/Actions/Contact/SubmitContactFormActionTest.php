@@ -65,7 +65,7 @@ it('is a named POST route in the web group with a throttle', function (): void {
         ->and($route?->methods())->toContain('POST')
         ->and($route?->gatherMiddleware())->toContain('web')
         ->and($route?->gatherMiddleware())->toContain('throttle:5,10');
-});
+})->group('TP-CONTACT-SUBMIT-INV-1');
 
 it('stores, forwards and flashes sent for a valid message', function (): void {
     $response = postContactForm($this, validContactPayload());
@@ -74,20 +74,20 @@ it('stores, forwards and flashes sent for a valid message', function (): void {
         ->assertSessionHas('contact_outcome', 'sent')
         ->assertSessionHasNoErrors();
     expect(app(TechPlannerContactStoreFake::class)->storedCount())->toBe(1);
-});
+})->group('TP-CONTACT-SUBMIT-INV-4');
 
 it('flashes received, not sent, when the recipient is not configured', function (): void {
     config(['techplanner.contact.recipient' => null]);
 
     postContactForm($this, validContactPayload())->assertSessionHas('contact_outcome', 'received');
-});
+})->group('TP-CONTACT-SUBMIT-INV-4');
 
 it('answers a filled honeypot like a success but stores and sends nothing', function (): void {
     $response = postContactForm($this, validContactPayload() + ['website' => 'https://spam.example.test']);
 
     $response->assertSessionHas('contact_outcome', 'sent');
     expect(app(TechPlannerContactStoreFake::class)->storedCount())->toBe(0);
-});
+})->group('TP-CONTACT-SUBMIT-INV-2');
 
 it('rejects missing or malformed fields with errors on the right fields and repopulates the rest', function (): void {
     $payload = ['nome' => 'Mario Rossi', 'email' => 'non-una-email', 'messaggio' => '', 'telefono' => 'abc'];
@@ -98,7 +98,7 @@ it('rejects missing or malformed fields with errors on the right fields and repo
         ->assertSessionHasInput('nome', 'Mario Rossi')
         ->assertSessionMissing('contact_outcome');
     expect(app(TechPlannerContactStoreFake::class)->storedCount())->toBe(0);
-});
+})->group('TP-CONTACT-SUBMIT-INV-3');
 
 it('shows readable Italian messages, never raw validation keys', function (): void {
     postContactForm($this, ['nome' => str_repeat('a', 121), 'email' => 'x', 'telefono' => 'abc']);
@@ -123,13 +123,13 @@ it('keeps the purge inert until the data controller sets a positive number of da
     'text' => ['presto'],
     'zero' => ['0'],
     'negative' => ['-5'],
-]);
+])->group('TP-CONTACT-PURGE-INV-1');
 
 it('reads the retention once the data controller sets it', function (): void {
     config(['techplanner.contact.retention_days' => '90']);
 
     expect(app(PurgeExpiredContactMessagesAction::class)->retentionDays())->toBe(90);
-});
+})->group('TP-CONTACT-PURGE-INV-2');
 
 it('casts the archived status to the enum', function (): void {
     expect((new ContactMessage(['status' => 'forward_failed']))->status)->toBe(ContactMessageStatusEnum::ForwardFailed);

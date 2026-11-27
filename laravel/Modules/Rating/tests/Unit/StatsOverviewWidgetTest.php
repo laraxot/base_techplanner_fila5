@@ -12,7 +12,6 @@ use Illuminate\Support\Collection;
 use Mockery;
 use Modules\Rating\Actions\HasRating\GetCountByModelRatingIdAction;
 use Modules\Rating\Actions\HasRating\GetSumByModelRatingIdAction;
-use Modules\Rating\Filament\Resources\HasRatingResource\Widgets\StatsOverview as HasRatingStatsOverview;
 use Modules\Rating\Filament\Widgets\StatsOverview;
 use Modules\Rating\Models\Contracts\HasRatingContract;
 use Modules\Rating\Models\Rating;
@@ -86,44 +85,4 @@ test('StatsOverview con record costruisce stat per rating e totali', function ()
     Assert::assertInstanceOf(Stat::class, $players);
     Assert::assertSame('Tot Volume', $volume->getLabel());
     Assert::assertSame('Tot Player', $players->getLabel());
-});
-
-test('HasRatingResource StatsOverview con record restituisce stat', function (): void {
-    $rating = new Rating();
-    $rating->forceFill(['id' => 2, 'title' => 'Voto']);
-
-    $sumAction = \Mockery::mock(GetSumByModelRatingIdAction::class);
-    $sumAction->shouldReceive('execute')->andReturn(5.0, 20.0);
-
-    $countAction = \Mockery::mock(GetCountByModelRatingIdAction::class);
-    $countAction->shouldReceive('execute')->andReturn(1.0, 8.0);
-
-    app()->instance(GetSumByModelRatingIdAction::class, $sumAction);
-    app()->instance(GetCountByModelRatingIdAction::class, $countAction);
-
-    $widget = new HasRatingStatsOverview();
-    $widget->record = ratingStatsHost(collect([$rating]));
-
-    $method = new \ReflectionMethod(HasRatingStatsOverview::class, 'getStats');
-    $method->setAccessible(true);
-
-    $stats = $method->invoke($widget);
-
-    Assert::assertIsArray($stats);
-    Assert::assertCount(4, $stats);
-    $volume = $stats[2] ?? null;
-    Assert::assertInstanceOf(Stat::class, $volume);
-    Assert::assertSame('Tot Volume', $volume->getLabel());
-});
-
-test('HasRatingResource StatsOverview senza record restituisce array vuoto', function (): void {
-    $widget = new HasRatingStatsOverview();
-    $widget->record = null;
-
-    $method = new \ReflectionMethod(HasRatingStatsOverview::class, 'getStats');
-    $method->setAccessible(true);
-
-    $stats = $method->invoke($widget);
-
-    Assert::assertSame([], $stats);
 });

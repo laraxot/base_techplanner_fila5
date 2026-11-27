@@ -13,6 +13,8 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Il limite e' per utente (o per IP se non c'e' un utente) e conta ogni invio, valido o no: chi prova cento volte un testo
  * rifiutato e' lo stesso che riempirebbe la pagina di commenti. Il messaggio dice quanto aspettare, come il login (G-07).
+ *
+ * @contract docs/contracts/ensure-comment-rate-limit-action.md
  */
 class EnsureCommentRateLimitAction
 {

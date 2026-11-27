@@ -143,7 +143,12 @@ test-results/
 cms.code-workspace
 ruvector.db
 .windsurfrules
+<<<<<<< .merge_file_kMZUsd
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_zTWqWN

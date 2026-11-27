@@ -163,7 +163,7 @@ Before committing documentation changes, verify:
 
 - [Documentation Standards](../../../docs/documentation_standards.md)
 - [Module Development Guidelines](./module-development.md)
-- [Naming Conventions](./naming-conventions.md)
+- [Naming Conventions](../../../bmad/architecture/naming-conventions.md)
 
 ## Examples
 

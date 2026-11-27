@@ -133,7 +133,13 @@ rector.php
 phpinsights.php
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
+<<<<<<< .merge_file_CKCvTt
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/archive/
+docs/screenshots/
+>>>>>>> .merge_file_FdPGNn

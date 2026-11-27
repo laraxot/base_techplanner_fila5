@@ -15,6 +15,11 @@ use Webmozart\Assert\Assert;
 
 use function Safe\realpath;
 
+/**
+ * Blocchi del page builder trovati in app/Filament/Blocks di ogni modulo.
+ *
+ * @contract docs/contracts/get-all-blocks-action.md
+ */
 final class GetAllBlocksAction
 {
     use QueueableAction;

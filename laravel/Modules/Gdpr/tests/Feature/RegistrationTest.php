@@ -52,8 +52,7 @@ it('completes full registration with privacy and terms accepted', function (): v
     $validatedData = app(ValidateUserDataAction::class)->execute($formData);
 
     Assert::assertSame('customer_user', $validatedData['type']);
-    $hashed = is_string($validatedData['password'] ?? null) ? $validatedData['password'] : '';
-    Assert::assertTrue(Hash::check('SecureP@ssw0rd!', $hashed));
+    Assert::assertTrue(Hash::check('SecureP@ssw0rd!', $validatedData['password']));
     // 3. Create user
     $user = app(CreateUserAction::class)->execute($validatedData);
     Assert::assertInstanceOf(User::class, $user);

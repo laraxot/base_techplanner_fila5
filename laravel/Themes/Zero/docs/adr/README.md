@@ -1,16 +1,20 @@
 ---
-title: "ADR — Theme Zero"
-status: canonical
-module: Theme Zero
-updated: 2026-11-19
+title: "ADR del tema Zero"
+type: index
+tags: [adr, decisioni, zero]
+created: 2026-11-19
+updated: 2026-11-24
 ---
 
-# ADR — Theme Zero (MADR)
+# ADR del tema Zero
 
-Decisioni su layout, asset e confini tema vs moduli.
+Zero e' il "vestito" pubblico: le sue decisioni dicono cosa resta **fuori** dal tema (classi PHP, modelli, logica) e come
+il tema ospita comunque i widget dei moduli, come il login. Le decisioni di business restano negli ADR dei moduli.
 
-| ADR | Titolo | Stato |
-|-----|--------|-------|
-| — | *(nessuna ancora: aggiungere quando si sceglie fra due forme)* | — |
+**Quando leggerli:** prima di aggiungere una classe PHP al tema, una query in una Blade, o un form che esiste gia' come
+widget di un modulo. Formato: [regola del canon](../../../../Modules/Xot/docs/rules/action-behavioral-contract.md).
 
-Le decisioni di business restano nelle ADR del modulo interessato.
+## Decisioni
+
+- [Nessuna classe PHP nel tema](theme-as-dress-no-php.md) — `app/` vuota; dati e interazioni arrivano da widget, Action e Cms dei moduli.
+- [Auth con widget del modulo User](auth-pages-render-module-widgets-with-panel-css.md) — `LoginWidget` dentro il layout del tema, con il CSS compilato del pannello Filament.

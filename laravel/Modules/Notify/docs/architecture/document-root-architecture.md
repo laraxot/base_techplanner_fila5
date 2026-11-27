@@ -10,7 +10,7 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./config-structure.md"
   - "./dto-structure-conventions.md"
-  - "./dto-structure-rules.md"
+  - "../dto-structure-rules.md"
   - "./interface-structure-clarification.md"
   - "./mail-templates-structure.md"
   - "./queueable-action-pattern.md"

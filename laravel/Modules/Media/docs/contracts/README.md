@@ -1,32 +1,27 @@
 ---
-title: "Contratti"
+title: "Contratti — Media"
 type: index
-tags: [contracts, actions, interfaces]
+tags: [contracts, actions, media]
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
 ---
 
-# Contratti
+# Contratti del modulo Media
 
-Cosa promette la superficie pubblica di questo pacchetto: le Action che scrivono dati, chiamano servizi esterni o hanno
-effetti collaterali, e le interfacce (`app/Contracts`). Regola: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
+Cosa promettono le Action di Media che riscrivono file o salvano allegati, e le interfacce di `app/Contracts`. Le Action
+`Diagnostic/*` (prove di connessione AWS) e i resolver di percorso non hanno contratto.
 
-## Contratto di comportamento di un'Action
+Leggili prima di chiamare o imitare il salvataggio degli allegati o il trattamento delle foto: «Non fa» dice cosa
+l'Action lascia ad altri (validazione, conversioni, transazioni).
 
-Un file per Action, nome in kebab-case della classe (`create-ticket-action.md`), frontmatter `type: contract` e
-`action: <FQCN>`, e queste sei sezioni nell'ordine:
+Formato (6 sezioni, invarianti con ID e group Pest): [regola canonica](../../../Xot/docs/rules/action-behavioral-contract.md).
+Lanciare le invarianti coperte: `vendor/bin/pest Modules/Media/tests --group=<ID>`.
 
-```markdown
-## Input
-## Output
-## Invarianti
-## Effetti collaterali
-## Errori
-## Non fa
-```
+## Contratti delle Action
 
-Il docblock dell'Action rimanda al file con la riga `Contratto di comportamento: docs/contracts/<file>.md`.
-Chi cambia il comportamento aggiorna il contratto nello stesso commit.
+- [StripImageMetadataAction](strip-image-metadata-action.md) — riscrive JPEG/PNG senza metadati, aggiorna `size`; 5 invarianti coperte.
+- [SaveAttachmentsAction](save-attachments-action.md) — copia gli allegati del form nelle collezioni del record e ne salva i percorsi.
 
-## Contratti
+## Interfacce
 
+- [PathGenerator e PathGeneratorContract](path-generator.md) — due interfacce identiche in `app/Contracts`, oggi non usate.

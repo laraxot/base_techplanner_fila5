@@ -15,7 +15,7 @@ related:
   - README.md
   - ../conventions/README.md
   - ../rules/README.md
-  - ../best-practices/naming-conventions.md
+  - ../naming-conventions.md
 ---
 # Standard di Struttura nel Modulo Notify
 

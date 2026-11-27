@@ -106,7 +106,7 @@ it('says sent and records Forwarded when the mail goes out', function (): void {
     expect($outcome)->toBe(ContactOutcomeEnum::Sent)
         ->and($statuses)->toBe([ContactMessageStatusEnum::Forwarded])
         ->and(contactMailsSent())->toHaveCount(1);
-});
+})->group('TP-CONTACT-DELIVER-INV-1', 'TP-CONTACT-DELIVER-INV-3');
 
 it('says received, never sent, when the recipient is not configured', function (): void {
     config(['techplanner.contact.recipient' => null]);
@@ -118,7 +118,7 @@ it('says received, never sent, when the recipient is not configured', function (
     expect($outcome)->toBe(ContactOutcomeEnum::Received)
         ->and($statuses)->toBe([])
         ->and(contactMailsSent())->toBe([]);
-});
+})->group('TP-CONTACT-DELIVER-INV-1', 'TP-CONTACT-DELIVER-INV-2');
 
 it('keeps the stored message and says received when the mail transport fails', function (): void {
     config(['techplanner.contact.recipient' => 'destinatario@example.test']);
@@ -129,7 +129,7 @@ it('keeps the stored message and says received when the mail transport fails', f
 
     expect($outcome)->toBe(ContactOutcomeEnum::Received)
         ->and($statuses)->toBe([ContactMessageStatusEnum::ForwardFailed]);
-});
+})->group('TP-CONTACT-DELIVER-INV-1', 'TP-CONTACT-DELIVER-INV-3', 'TP-CONTACT-DELIVER-INV-4');
 
 it('says sent when only the archive fails but the mail went out', function (): void {
     config(['techplanner.contact.recipient' => 'destinatario@example.test']);
@@ -138,7 +138,7 @@ it('says sent when only the archive fails but the mail went out', function (): v
 
     expect(app(DeliverContactMessageAction::class)->execute(contactMessageData(), 'it'))->toBe(ContactOutcomeEnum::Sent)
         ->and($statuses)->toBe([]);
-});
+})->group('TP-CONTACT-DELIVER-INV-4');
 
 it('fails when neither the archive nor the mail works', function (bool $recipientConfigured): void {
     config(['techplanner.contact.recipient' => $recipientConfigured ? 'destinatario@example.test' : null]);
@@ -149,7 +149,7 @@ it('fails when neither the archive nor the mail works', function (bool $recipien
 })->with([
     'recipient set' => [true],
     'recipient missing' => [false],
-]);
+])->group('TP-CONTACT-DELIVER-INV-5');
 
 it('logs only the exception class, never the sender data', function (): void {
     config(['techplanner.contact.recipient' => 'destinatario@example.test']);
@@ -167,7 +167,7 @@ it('logs only the exception class, never the sender data', function (): void {
         static fn (string $message, array $context): bool => $context === ['exception' => RuntimeException::class]
             && ! str_contains($message, 'mario'),
     );
-});
+})->group('TP-CONTACT-DELIVER-INV-6');
 
 it('sends a plain text mail with a fixed subject and the sender as reply-to', function (): void {
     $data = new ContactMessageData(name: "Mario\r\nBcc: x@example.test", email: 'mario@example.test', message: 'Vorrei un preventivo.', phone: '+39 041 455552');
@@ -185,4 +185,4 @@ it('sends a plain text mail with a fixed subject and the sender as reply-to', fu
         ->and($email->getSubject())->toBe('Nuovo messaggio dal modulo di contatto del sito')
         ->and($email->getBcc())->toBe([])
         ->and((string) $email->getTextBody())->toContain('Vorrei un preventivo.')->toContain('+39 041 455552');
-});
+})->group('TP-CONTACT-SEND-INV-1', 'TP-CONTACT-SEND-INV-2', 'TP-CONTACT-SEND-INV-3');

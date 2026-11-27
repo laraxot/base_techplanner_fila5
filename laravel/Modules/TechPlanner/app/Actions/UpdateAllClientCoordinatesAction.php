@@ -9,6 +9,11 @@ use Modules\Geo\Actions\GetCoordinatesAction;
 use Modules\TechPlanner\Models\Client;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Geocodifica i clienti senza coordinate (comando techplanner:clients-update-coordinates).
+ *
+ * @contract docs/contracts/update-all-client-coordinates-action.md
+ */
 class UpdateAllClientCoordinatesAction
 {
     use QueueableAction;

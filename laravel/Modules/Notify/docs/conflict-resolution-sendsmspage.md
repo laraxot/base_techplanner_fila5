@@ -75,7 +75,7 @@ Verificare che:
 ## Collegamenti
 - [Notify Module Documentation](README.md)
 - [SMS Testing Guide](sms/testing.md)
-- [MailTemplate Integration](mail_templates_structure.md)
+- [MailTemplate Integration](architecture/mail-templates-structure.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*
@@ -145,7 +145,7 @@ Verificare che:
 ## Collegamenti
 - [Notify Module Documentation](README.md)
 - [SMS Testing Guide](sms/testing.md)
-- [MailTemplate Integration](mail_templates_structure.md)
+- [MailTemplate Integration](architecture/mail-templates-structure.md)
 - [Root Conflict Resolution Guidelines](../../../../docs/project/conflict-resolution-guidelines.md)
 
 *Ultimo aggiornamento: giugno 2025*

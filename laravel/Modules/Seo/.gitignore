@@ -258,7 +258,12 @@ resources/lang
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
+<<<<<<< .merge_file_DaDQbz
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_J1GveQ

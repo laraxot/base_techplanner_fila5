@@ -16,7 +16,7 @@ class ValidateUserDataAction
 
     /**
      * @param  array<string, mixed>  $formData
-     * @return array<string, mixed>
+     * @return array{first_name: string, last_name: string, email: string, password: string, type: string, lang: string, email_verified_at: null}
      */
     public function execute(array $formData): array
     {

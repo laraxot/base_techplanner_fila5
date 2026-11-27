@@ -16,6 +16,8 @@ use Modules\TechPlanner\Enums\ContactOutcomeEnum;
  * Ordine: honeypot -> validazione -> archivio e inoltro (DeliverContactMessageAction). Ogni esito torna alla pagina di
  * provenienza con un solo dato di sessione (`contact_outcome`) oppure con gli errori di validazione. La risposta
  * all'honeypot e' identica a quella di un invio riuscito, cosi' un bot non impara nulla.
+ *
+ * @contract docs/contracts/submit-contact-form-action.md
  */
 final class SubmitContactFormAction
 {

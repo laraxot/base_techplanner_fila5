@@ -132,7 +132,12 @@ resources/lang
 .github/agents/
 =======
 >>>>>>> .merge_file_8OfzL1
+<<<<<<< .merge_file_GaO1NU
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_s0ByZx

@@ -12,10 +12,10 @@ related:
   - "./bmad-method.md"
   - "./index.md"
   - "./log.md"
-  - "./notify-conflict-check-.md"
+  - "./notify-conflict-check.md"
   - "./notify-conflict-check-1.md"
   - "./notify-conflict-check.md"
-  - "./notify-restore-.md"
+  - "./notify-restore.md"
 ---
 
 # LLM Wiki Integration - Session Summary

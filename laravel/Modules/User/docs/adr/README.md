@@ -1,51 +1,28 @@
 ---
-title: "Architecture Decision Records"
+title: "ADR — modulo User"
 type: index
-tags: [adr, decisioni]
+tags: [adr, decisioni, user, autenticazione]
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
 ---
 
-# Architecture Decision Records
+# ADR del modulo User
 
-Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
+Il **perché** delle scelte di autenticazione e identità: come si riconosce un utente che entra con SPID/CIE, dove si
+blocca un account cancellato, come si frenano i moduli aperti agli anonimi, perché l'audit degli accessi non può
+rompere il login.
 
-## Formato
-
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
-
-# ADR: <decisione>
-
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-```
+Leggili prima di toccare `app/Actions/Auth/*`, i widget di login/registrazione o il provider utenti, e prima di
+"semplificare" un controllo che sembra ridondante. Formato e regole: `Modules/Xot/docs/rules/action-behavioral-contract.md`.
 
 ## Decisioni
 
+- [L'utente SPID/CIE si riconosce dal codice fiscale](digital-identity-upsert-by-fiscal-code.md) — CF prima, email solo se verificata, segnaposto `@noemail.local`.
+- [L'account cancellato si blocca nel provider utenti](deleted-account-blocked-in-user-provider.md) — filtro `deleted_at` nel provider, niente `SoftDeletes`, token revocati.
+- [Freno per IP ed email prima di validare](auth-submission-throttle-before-validation.md) — registrazione e recupero password contano ogni invio, chiavi hashate.
+- [Il registro degli accessi non rompe mai il login](authentication-log-never-breaks-login.md) — connessione `user`, tabella assente = warning.
 
 ## Decisioni precedenti (formato libero, non ancora ADR)
 
-- [contracts-and-lang-backup-archival-.deprecated](../wiki/decisions/contracts-and-lang-backup-archival-.deprecated.md)
-- [contracts-and-lang-backup-archival-](../wiki/decisions/contracts-and-lang-backup-archival-.md)
-- [contracts-and-lang-backup-archival-30.deprecated](../wiki/decisions/contracts-and-lang-backup-archival-30.deprecated.md)
-- [contracts-and-lang-backup-archival-30](../wiki/decisions/contracts-and-lang-backup-archival-archiviazione-orfani-ponytail-audit.md)
-- [contracts-and-lang-backup-archival.deprecated](../wiki/decisions/contracts-and-lang-backup-archival.deprecated.md)
 - [contracts-and-lang-backup-archival](../wiki/decisions/contracts-and-lang-backup-archival.md)
+- [archiviazione orfani (ponytail audit)](../wiki/decisions/contracts-and-lang-backup-archival-archiviazione-orfani-ponytail-audit.md)

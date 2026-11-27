@@ -29,10 +29,10 @@ related:
 - [Collegamenti Documentazione](../../../../../../docs/collegamenti-documentazione.md)
 
 ## Struttura e Architettura
-- [Struttura Layout](./layout_structure.md) - Struttura dei layout email
+- [Struttura Layout](./layout-structure.md) - Struttura dei layout email
 - [Best Practices Layout](./email_layouts_best_practices.md) - Best practices per i layout email
 - [Struttura Migration](./migration_structure.md) - Struttura delle migrazioni per i template
-- [Struttura Spatie Mail Templates](./spatie_mail_templates_structure.md) - Struttura dei template con Spatie
+- [Struttura Spatie Mail Templates](./spatie-mail-templates-structure.md) - Struttura dei template con Spatie
 
 ## Implementazione Slug
 - [Implementazione Campo Slug](./slug_field_implementation.md) - Implementazione del campo slug nei template
@@ -48,7 +48,7 @@ related:
 - [Miglioramenti UI/UX](./ui_ux_enhancements.md) - Miglioramenti generali all'esperienza utente
 
 ## Migrazione e Manutenzione
-- [Conversione JSON Migration](./migration_json_conversion.md) - Conversione dati JSON nelle migrazioni
+- [Conversione JSON Migration](./migration-json-conversion.md) - Conversione dati JSON nelle migrazioni
 - [Conversione JSON Migration](./migration-json-conversion.md) - Conversione dati JSON nelle migrazioni
 - [Connessione JSON Migration](./json_migration_connection.md) - Connessione tra JSON e migrazioni
 - [Fix Migrazione JSON](./json_migration_fixes.md) - Correzioni per le migrazioni JSON
@@ -56,19 +56,19 @@ related:
 
 ## Best Practices
 - [Best Practices Email](./email_best_practices.md) - Best practices generali per le email
-- [Best Practices Template](./email_templates_best_practices.md) - Best practices specifiche per i template
+- [Best Practices Template](./email-templates-best-practices.md) - Best practices specifiche per i template
 - [Best Practices Email](./email-best-practices.md) - Best practices generali per le email
 - [Best Practices Template](./email-templates-best-practices.md) - Best practices specifiche per i template
 - [Compatibilità HTML Email](./html_email_compatibility.md) - Garantire la compatibilità HTML nelle email
 - [Guida Template Email](./email_templates_guide.md) - Guida completa ai template email
 
 ## Contenuti e Esempi
-- [Esempi di Template](./template_examples.md) - Esempi di template email
-- [Esempi di Contenuto](./template_content_examples.md) - Esempi di contenuto per i template
+- [Esempi di Template](./template-examples.md) - Esempi di template email
+- [Esempi di Contenuto](./template-content-examples.md) - Esempi di contenuto per i template
 - [Altri Esempi di Contenuto](./template_content_more_examples.md) - Ulteriori esempi di contenuto
 
 ## Integrazioni
-- [Analisi Template MailPace](./mailpace_templates_analysis.md) - Analisi dei template MailPace
+- [Analisi Template MailPace](./mailpace-templates-analysis.md) - Analisi dei template MailPace
 - [Integrazione MailPace](./mailpace_templates_integration.md) - Integrazione con MailPace
 - [Spatie Database Mail Templates](./spatie-database-mail-templates.md) - Documentazione Spatie Database Mail Templates
 

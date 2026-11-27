@@ -9,7 +9,7 @@ updated: 2026-07-14
 qmd: "sms-actions-consolidation-2026-06-30 deprecated"
 status: deprecated
 related:
-  - "./sms-actions-consolidation-.md"
+  - "./sms-actions-consolidation.md"
   - "./sms-actions-consolidation-1.md"
 ---
 

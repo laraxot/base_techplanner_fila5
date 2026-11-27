@@ -13,9 +13,9 @@ related:
   - "./bmad-method.md"
   - "./index.md"
   - "./log.md"
-  - "./notify-conflict-check-.md"
+  - "./notify-conflict-check.md"
   - "./notify-conflict-check-1.md"
-  - "./notify-restore-.md"
+  - "./notify-restore.md"
   - "./notify-restore-1.md"
 ---
 

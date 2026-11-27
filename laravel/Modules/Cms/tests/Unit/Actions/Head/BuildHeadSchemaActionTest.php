@@ -116,7 +116,6 @@ test('the first breadcrumb falls back to the brand and an existing isPartOf is k
     Assert::assertSame(['@id' => 'https://other.test/#website'], schemaArray($schemas[0])['isPartOf']);
 });
 
-<<<<<<< .merge_file_cxEKlQ
 test('business data turn the home organization into a local business', function (): void {
     $schemas = (new BuildHeadSchemaAction())->execute(
         isHome: true,
@@ -157,15 +156,6 @@ test('business data turn the home organization into a local business', function 
 
 test('without business data the home organization stays a plain Organization', function (): void {
     $schemas = (new BuildHeadSchemaAction())->execute(
-=======
-/**
- * @param  list<string>  $sameAs
- * @return array<string, mixed>
- */
-function homeOrganization(?string $description, array $sameAs): array
-{
-    return schemaArray((new BuildHeadSchemaAction)->execute(
->>>>>>> .merge_file_0xGCQE
         isHome: true,
         brand: 'Example',
         homeUrl: 'https://example.test/it',
@@ -175,14 +165,30 @@ function homeOrganization(?string $description, array $sameAs): array
         logoUrl: null,
         page: [],
         rootUrl: 'https://example.test',
-<<<<<<< .merge_file_cxEKlQ
     );
 
     $organization = schemaArray($schemas[0]);
 
     Assert::assertSame('Organization', $organization['@type']);
     Assert::assertArrayNotHasKey('address', $organization);
-=======
+});
+
+/**
+ * @param  list<string>  $sameAs
+ * @return array<string, mixed>
+ */
+function homeOrganization(?string $description, array $sameAs): array
+{
+    return schemaArray((new BuildHeadSchemaAction)->execute(
+        isHome: true,
+        brand: 'Example',
+        homeUrl: 'https://example.test/it',
+        pageTitle: 'Example',
+        pageUrl: 'https://example.test/it',
+        locale: 'it',
+        logoUrl: null,
+        page: [],
+        rootUrl: 'https://example.test',
         description: $description,
         sameAs: $sameAs,
     )[0]);
@@ -196,5 +202,25 @@ test('home organization carries description and official profiles only when the 
     $bare = homeOrganization(' ', []);
     Assert::assertArrayNotHasKey('description', $bare);
     Assert::assertArrayNotHasKey('sameAs', $bare);
->>>>>>> .merge_file_0xGCQE
+});
+
+test('business data and site description combine, and business wins on the same property', function (): void {
+    $organization = schemaArray((new BuildHeadSchemaAction)->execute(
+        isHome: true,
+        brand: 'Example',
+        homeUrl: 'https://example.test/it',
+        pageTitle: 'Example',
+        pageUrl: 'https://example.test/it',
+        locale: 'it',
+        logoUrl: null,
+        page: [],
+        rootUrl: 'https://example.test',
+        business: ['type' => 'ProfessionalService', 'sameAs' => ['https://business.example/profile']],
+        description: 'Descrizione del sito',
+        sameAs: ['https://www.linkedin.com/company/example'],
+    )[0]);
+
+    Assert::assertSame('ProfessionalService', $organization['@type']);
+    Assert::assertSame('Descrizione del sito', $organization['description']);
+    Assert::assertSame(['https://business.example/profile'], $organization['sameAs']);
 });

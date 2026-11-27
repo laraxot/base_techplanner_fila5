@@ -15,7 +15,7 @@ related:
   - ../architecture/README.md
   - ../conventions/README.md
   - README.md
-  - ../best-practices/naming-conventions.md
+  - ../naming-conventions.md
 ---
 # 🌐 VHost Governance Rules
 

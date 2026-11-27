@@ -72,7 +72,12 @@ graphify-out/
 .claude-audit/
 test-results/
 blog.code-workspace
+<<<<<<< .merge_file_66S0DU
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_NOQBxT

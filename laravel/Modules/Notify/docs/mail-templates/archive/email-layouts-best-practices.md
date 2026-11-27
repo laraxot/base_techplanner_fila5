@@ -204,5 +204,5 @@ Il supporto per la Dark Mode migliora l'esperienza utente e riduce l'affaticamen
 
 - [Documentazione Spatie Laravel Database Mail Templates](https://github.com/spatie/laravel-database-mail-templates)
 - [Email Templates Guide](../email_templates_guide.md)
-- [Spatie Mail Templates Structure](../spatie_mail_templates_structure.md)
-- [Template Content Examples](../template_content_examples.md)
+- [Spatie Mail Templates Structure](../spatie-mail-templates-structure.md)
+- [Template Content Examples](../template-content-examples.md)

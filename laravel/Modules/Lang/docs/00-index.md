@@ -11,6 +11,8 @@ qmd: "lang service helper text"
 related:
   - "./italian-text-refined-audit-report.md"
 ---
+> **Indice canonico del modulo: [index.md](./index.md).** Questo file e' un indice storico tenuto per i link esistenti; i nuovi documenti vanno registrati solo in `index.md` (audit qualita', issue #64).
+
 # 📚 **Indice Documentazione Modulo Lang**
 
 **Status**: ✅ PHPStan Level 10 Compliant

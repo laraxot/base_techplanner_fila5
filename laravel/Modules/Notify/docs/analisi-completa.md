@@ -7,21 +7,13 @@ updated: 2026-09-26
 qmd: "ANALISI COMPLETA 2025 10 01"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 📊 ANALISI COMPLETA PROGETTO FIXCITY
 ## Data: 1 Ottobre 2025
 
 ---
-
-title: "ANALISI COMPLETA 2025 10 01"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "ANALISI COMPLETA 2025 10 01"
-issues: []
-discussions: []
 ## 🎯 EXECUTIVE SUMMARY
 
 **FixCity** è una piattaforma di segnalazione cittadina **enterprise-ready** con:
@@ -179,7 +171,7 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 | **Xot** | 9 | Type safety, contracts | 2.5h |
 | **User** | 95 | Property access, types | 6h |
 
-**Dettagli**: [Session Summary](./phpstan/session-summary-2025-10-01.md)
+**Dettagli**: [Session Summary](./phpstan/session-summary.md)
 
 ---
 
@@ -418,9 +410,9 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 ### 📊 Reports & Analysis
 - **[Master Roadmap Index](./roadmap-master-index.md)** ⭐ START HERE
 - **[Project Analysis & Roadmap](./project-analysis-and-roadmap.md)** ⭐ BUSINESS VIEW
-- **[Session Summary 2025-10-01](./phpstan/session-summary-2025-10-01.md)** ⭐ TECHNICAL
-- **[Final Report 2025-10-01](./phpstan/final-report-session-2025-10-01.md)**
-- **[Questo Documento](./ANALISI-COMPLETA-2025-10-01.md)** ⭐ EXECUTIVE
+- **[Session Summary 2025-10-01](./phpstan/session-summary.md)** ⭐ TECHNICAL
+- **[Final Report 2025-10-01](./phpstan/final-report-session.md)**
+- **[Questo Documento](./analisi-completa.md)** ⭐ EXECUTIVE
 
 ### 🎯 Module Roadmaps (Dettagliate)
 - [Xot - Core Framework](../Modules/Xot/docs/roadmap-and-issues.md) - 9 errori, 2.5h fix
@@ -435,10 +427,25 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 
 ### 🎨 Theme Roadmaps
 - [Sixteen - Frontend Theme](../Themes/Sixteen/docs/roadmap-and-issues.md) - Performance
+- **[Questo Documento](./analisi-completa-ottobre-data.md)** ⭐ EXECUTIVE
+
+### 🎯 Module Roadmaps (Dettagliate)
+- [Xot - Core Framework](../Modules/Xot/docs/roadmap-and-issues.md) - 9 errori, 2.5h fix
+- [User - Auth & Profiles](../../User/docs/roadmap-and-issues.md) - 95 errori, 6h fix
+- [Fixcity - Business Logic](../Modules/Fixcity/docs/roadmap-and-issues.md) - N+1 queries, features
+- [AI - Artificial Intelligence](../../AI/docs/roadmap-and-issues.md) - Auto-categorization
+- [Notify - Notifications](roadmap-and-issues.md) - Real-time, push
+- [Geo - Geographic](../../Geo/docs/roadmap-and-issues.md) - Maps integration
+- [UI - Components](../Modules/UI/docs/roadmap-and-issues.md) - Accessibility
+- [Activity - Audit](../../Activity/docs/roadmap-and-issues.md) - Analytics
+- [Cms - Content](../../Cms/docs/roadmap-and-issues.md) - Page builder
+
+### 🎨 Theme Roadmaps
+- [Sixteen - Frontend Theme](../../../Themes/Sixteen/docs/roadmap-and-issues.md) - Performance
 
 ### 📖 Main Docs
 - [Index Principale](./index.md)
-- [PHPStan Analysis](./phpstan/phpstan.md)
+- [PHPStan Analysis](phpstan.md)
 
 ---
 
@@ -491,5 +498,13 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 
 *"Un progetto solido con fondamenta eccellenti e potenziale straordinario"* 🏆
 
+---
 
+## Contenuto unito da `analisi-completa-.md`
 
+**Dettagli**: [Session Summary](./phpstan/session-summary-2025-10-01.md)
+- **[Session Summary 2025-10-01](./phpstan/session-summary-2025-10-01.md)** ⭐ TECHNICAL
+- **[Final Report 2025-10-01](./phpstan/final-report-session-2025-10-01.md)**
+- **[Questo Documento](./ANALISI-COMPLETA-2025-10-01.md)** ⭐ EXECUTIVE
+- [PHPStan Analysis](./phpstan/phpstan.md)
+2. **Tech Stack Moderno** - Laravel 12, Filament 3, Livewire 3

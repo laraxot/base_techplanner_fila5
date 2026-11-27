@@ -17,6 +17,8 @@ issues: https://github.com/laraxot/module_cms_fila5/issues
 discussions: https://github.com/laraxot/module_cms_fila5/discussions
 ---
 
+> **Indice canonico del modulo: [index.md](./index.md).** Questo file e' un indice storico tenuto per i link esistenti; i nuovi documenti vanno registrati solo in `index.md` (audit qualita', issue #64).
+
 # Cms Module Documentation
 
 ## Overview

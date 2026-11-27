@@ -10,18 +10,16 @@ issues:
 
 # Tema Two — documentazione
 
-<<<<<<< .merge_file_QMZI2k
-Tema del sito pubblico **sottana.com** (Sottana Service, radioprotezione per studi dentistici e veterinari).
-Solo presentazione: pagine Folio in `resources/views/pages/`, componenti Blade in `resources/views/components/`,
-asset Tailwind v4 + Vite. Nessun controller: `app/` contiene solo `ThemeServiceProvider`. I contenuti delle pagine
-stanno nei JSON di `laravel/config/local/techplanner/database/content/` (non nel tema).
-=======
+Tema pubblico di sola presentazione per un sito istituzionale di servizi (scelto per tenant con
+`XotData::make()->pub_theme`). Pagine Folio in `resources/views/pages/`, componenti Blade in `resources/views/components/`,
+asset Tailwind v4 + Vite. Nessun controller: `app/` contiene solo `ThemeServiceProvider`. I contenuti delle pagine stanno
+nei JSON di configurazione del tenant (`laravel/config/local/<tenant>/database/content/`), non nel tema.
+
 - Ingresso e indice di tutta la docs (per argomento): [index.md](wiki/index.md). `00-index.md` / `00-INDEX.md` sono indici storici superati.
 - Note operative (stack, build): [theme.md](./theme.md).
 - Regole pagine Folio: [folio-page-file-rules.md](./folio-page-file-rules.md); mai estendere `Filament*`: [concepts/xotbase-never-extend-filament.md](./concepts/xotbase-never-extend-filament.md).
 - Wiki interna: [wiki/index.md](./wiki/index.md).
 - Audit mobile misurato sul sito servito (axe, reflow 320 px, correzioni verificate, build mancante): [mobile-live-audit.md](./mobile-live-audit.md).
->>>>>>> .merge_file_gjUOav
 
 Questo file è l'**unico indice** della docs del tema (i vecchi `00-index.md` / `00-INDEX.md` sono stati uniti qui).
 

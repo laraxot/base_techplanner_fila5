@@ -29,8 +29,7 @@ use function Safe\strtotime;
  *
  * Il chiamante valida z/x/y (OsmTileController); qui si assume un tile esistente.
  *
- * Contratto di comportamento: docs/contracts/fetch-osm-tile-action.md (sei sezioni: input, output, invarianti, effetti
- * collaterali, errori, non fa).
+ * @contract docs/contracts/fetch-osm-tile-action.md
  */
 final class FetchOsmTileAction
 {

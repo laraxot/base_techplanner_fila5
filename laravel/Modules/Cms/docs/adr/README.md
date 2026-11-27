@@ -1,42 +1,22 @@
 ---
-title: "Architecture Decision Records"
+title: "ADR — Cms"
 type: index
-tags: [adr, decisioni]
+tags: [adr, decisioni, cms]
 created: 2026-11-18
-updated: 2026-11-18
+updated: 2026-11-24
 ---
 
-# Architecture Decision Records
+# ADR del modulo Cms
 
-Il **perche'** delle scelte di questo pacchetto: una decisione per file, con le alternative scartate.
-Il nome del file e' l'argomento, senza date ne' numeri (la data sta nella frontmatter).
+Il **perche'** del routing delle pagine pubbliche: chi monta Folio, cosa puo' raggiungere un URL `/{container0}/{slug0}`,
+quali protezioni puo' chiedere il JSON di una pagina. Sono decisioni di sicurezza (DCP-283) che sembrano rigidita' inutili.
 
-## Formato
+Leggili prima di: aggiungere un provider o un percorso Folio, esporre un modello da URL, aggiungere un middleware a una pagina.
 
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
-issues: []
----
-
-# ADR: <decisione>
-
-## Contesto
-Fatti e vincoli che hanno reso necessaria la scelta (misure, norme, policy, incidenti).
-
-## Decisione
-Cosa si fa, in concreto, e dove sta nel codice.
-
-## Alternative scartate
-Ogni alternativa seria, con il motivo per cui non e' stata scelta.
-
-## Conseguenze
-Pro, contro, debito che resta, cosa misurare. Chi cambia la decisione scrive un nuovo ADR e segna questo `superseded`.
-```
+Formato (5 sezioni, frontmatter `type: decision`): [regola canonica](../../../Xot/docs/rules/action-behavioral-contract.md).
 
 ## Decisioni
 
+- [FolioVoltServiceProvider e' l'unico owner di Folio e Volt](folio-volt-sole-owner.md) — niente `App\Providers\FolioServiceProvider`, niente `Folio::path` nei moduli.
+- [Modelli da URL solo da un elenco esplicito e con la policy view](container0-model-allowlist.md) — `cms.config.container0_models`, nessuna euristica, nessun oracolo di esistenza.
+- [Middleware dei JSON di pagina da un'allowlist](page-middleware-allowlist.md) — solo nomi in `cms.config.page_middleware_allowlist`; protezione incerta = 503.

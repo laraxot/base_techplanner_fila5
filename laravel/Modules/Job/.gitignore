@@ -251,7 +251,12 @@ app/Application
 
 # module-root-hygiene (story module-root-hygiene)
 docs/graphify
+<<<<<<< .merge_file_hPX2kd
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_IoXysn

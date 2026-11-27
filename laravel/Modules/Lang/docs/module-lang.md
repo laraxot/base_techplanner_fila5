@@ -43,7 +43,7 @@ related:
 - [Modulo Tenant](../../Tenant/docs/translations.md) - Traduzioni per il multi-tenant
 
 ### Regole Generali
-- [Regole Traduzioni](../../Xot/docs/translations.md) - Documentazione base sulle traduzioni
+- [Regole Traduzioni](../../Xot/docs/translations/translations.md) - Documentazione base sulle traduzioni
 - [Composer merge plugin](composer-merge-plugin.md) - Integrazione pacchetti locali
 
 ### Versione Incoming
@@ -304,11 +304,11 @@ public function testTranslations()
 ## Collegamenti
 
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
-- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Regole Generali Traduzioni](../../Xot/docs/translations/translations.md)
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
-- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Regole Generali Traduzioni](../../Xot/docs/translations/translations.md)
 - [Modulo Patient](../../Patient/docs/translations.md) - Esempio di implementazione delle traduzioni
-- [Regole Generali Traduzioni](../../Xot/docs/translations.md)
+- [Regole Generali Traduzioni](../../Xot/docs/translations/translations.md)
 
 ## Esempi
 

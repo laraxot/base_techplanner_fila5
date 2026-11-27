@@ -223,7 +223,12 @@ docs/chat
 # Laraxot — app/Application forbidden (belongs to laravel/app/, not module app/)
 app/Application
 /.docs-archive/
+<<<<<<< .merge_file_Qmh3px
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_mvctc1

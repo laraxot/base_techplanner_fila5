@@ -15,7 +15,7 @@ updated: 2026-08-24
 Questo file veniva da `docs/wiki/integrations/modules/notify/AGENTS.md`, cancellato dal working tree senza migrazione. Il modulo ha gia' un file con lo stesso nome, ma con **corpo diverso**:
 
 - versione del modulo: `laravel/Modules/Notify/docs/AGENTS.md`
-- versione recuperata: `laravel/Modules/Notify/docs/wiki/integrations/_da-riconciliare/AGENTS.md`
+- versione recuperata: `laravel/Modules/Notify/docs/wiki/integrations/_da-riconciliare/agents.md`
 
 Vanno confrontate e fuse a mano. Quando la fusione e' fatta, questo file e la nota vanno rimossi.
 

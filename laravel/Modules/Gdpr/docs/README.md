@@ -1,55 +1,68 @@
 ---
 qmd: "README"
-issues: []
+issues: ["https://github.com/laraxot/base_techplanner_fila5/issues/64"]
 discussions: []
 title: "Gdpr Module Documentation"
 type: documentation
-tags: [module, documentation]
+tags: [module, documentation, index]
 created: 2026-06-05
-updated: 2026-06-05
+updated: 2026-11-19
 ---
 
 # Modulo Gdpr
 
-## Overview
-
-Il modulo **Gdpr** fa parte dell'ecosistema Laraxot PTVX.
+Punto di ingresso della documentazione del modulo. L'elenco completo, file per file,
+è in [index.md](./index.md); qui ci sono solo le aree principali.
 
 ## Scopo
 
-Gestisce le funzionalità specifiche del dominio Gdpr.
+Il modulo **Gdpr** gestisce la conformità privacy dell'ecosistema Laraxot:
 
-## Struttura
+- **Consensi** (`Models/Consent`, `Models/Treatment`, `Models/Event`): trattamenti, consensi
+  dati/revocati, storico eventi; salvataggio tramite `Actions/SaveGdprConsentsAction` e
+  `Actions/UpdateGdprConsentsAction` (listener `Listeners/SaveGdprConsents` sulla registrazione).
+- **Cookie** (`Actions/Cookie`, `Datas/CookieData`, `Datas/CookieInventoryData`,
+  `Enums/CookieCategory`): inventario cookie, banner e guardia sui cookie impostati.
+- **Account** (`Actions/Account`): cancellazione account ed esportazione dati dell'interessato.
+- **Pannello Filament** (`Filament/`): risorse per trattamenti, consensi ed eventi.
 
-```
-Gdpr/
-├── app/
-│   ├── Models/
-│   ├── Filament/
-│   └── ...
-├── docs/
-├── lang/
-└── resources/
-```
+## Mappa della documentazione
+
+| Area | Dove |
+|------|------|
+| Indice completo dei file | [index.md](./index.md) |
+| Panoramica e business logic | [gdpr-module-overview.md](./gdpr-module-overview.md), [business-logic-overview.md](./business-logic-overview.md) |
+| Architettura | [architecture.md](./architecture.md), [architecture-rules.md](./architecture-rules.md), [architecture/](./architecture/) |
+| Consensi e cookie | [consents.md](./consents.md), [cookie-consent.md](./cookie-consent.md), [consent/](./consent/), [_integration/](./_integration/) |
+| Pacchetti integrati | [packages/](./packages/) |
+| Generazione PDF | [html2pdf/README.md](./html2pdf/README.md), [gdpr-pdf-reports.md](./gdpr-pdf-reports.md) |
+| Modelli e migrazioni | [data-models.md](./data-models.md), [models/](./models/), [migrations.md](./migrations.md) |
+| Test | [testing.md](./testing.md), [testing/](./testing/) |
+| Qualità (PHPStan, DRY/KISS) | [phpstan-fixes.md](./phpstan-fixes.md), [analysis/](./analysis/), [code-quality-report.md](./code-quality-report.md) |
+| Roadmap | [roadmap/README.md](./roadmap/README.md), [development/](./development/) |
+| Story BMAD | [stories/](./stories/), [bmad/README.md](./bmad/README.md) — audit corrente: [stories/audit-qualita.story.md](./stories/audit-qualita.story.md) |
+| Task | [tasks/](./tasks/) |
+| Wiki / second brain | [wiki/README.md](./wiki/README.md), [llm-wiki/](./llm-wiki/) |
+| Materiale importato (non canonico) | [raw/README.md](./raw/README.md), [root-md-files/](./root-md-files/) |
+
+## Guide operative
+
+- [Getting Started](./getting-started.md) — installazione e configurazione
+- [Contributing](./contributing.md) — workflow di sviluppo e checklist
+- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — caricamento efficiente della documentazione
+- [QMD Setup](./QMD-SETUP.md) — ricerca locale
+- [Performance](./PERFORMANCE-OPTIMIZATION.md) — metriche e best practice
+- [Project Structure](./PROJECT-STRUCTURE.md) — layout delle cartelle
+- [AI Methodologies](./ai-methodologies.md)
+- Link di ricerca: [cloudflare](./cloudflare.md), [filament](./filament.md), [google-analytics](./google-analytics.md), [links](./links.md), [repo](./repo.md)
 
 ## Dipendenze
 
-- [Xot Base](../Xot/docs/)
-- [User Module](../User/docs/)
+- [Xot](../../Xot/docs/README.md) — classi base XotBase
+- [User](../../User/docs/README.md) — soggetti dei consensi
+- [Activity](../../Activity/docs/README.md) — log attività
 
-## Collegamenti
+## Convenzioni dei nomi
 
-
-## Backlinks
-
-- [Moduli correlati](../README.md)
-
-## AI Workflows
-- [AI Methodologies](./ai-methodologies.md)
-
-## Documentation
-
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+Niente date nei nomi di file e cartelle (la data va nel frontmatter `created:`),
+kebab-case minuscolo. Vedi [file-naming-rules.md](./file-naming-rules.md).

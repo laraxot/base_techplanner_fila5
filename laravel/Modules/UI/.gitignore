@@ -264,7 +264,12 @@ audit-coverage/
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
+<<<<<<< .merge_file_1e46eB
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
+=======
+tests/coverage-*.*
+docs/screenshots/
+>>>>>>> .merge_file_h3DCp2

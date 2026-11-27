@@ -42,14 +42,14 @@ status: draft
 ### SMS
 - [Implementazione SMS Dettagliata](./sms_implementation_details.md) - Dettagli implementativi per il canale SMS
 - [Configurazione Provider SMS](./sms_provider_configuration.md) - Configurazione dei provider SMS
-- [Implementazione Netfun SMS](./netfun_sms_implementation.md) - Implementazione specifica per il provider Netfun
+- [Implementazione Netfun SMS](./archive/netfun-sms-implementation.md) - Implementazione specifica per il provider Netfun
 
 ### Telegram
 - [Guida Notifiche Telegram](./telegram_notifications_guide.md) - Implementazione delle notifiche Telegram
 
 ## Architettura e Pattern
-- [Factory Pattern per Provider](../factory_pattern_analysis.md) - Analisi del pattern Factory per i provider
-- [Provider vs DTO](../channel_vs_dto_provider_selection.md) - Selezione tra provider e DTO
+- [Factory Pattern per Provider](../factory-pattern-analysis.md) - Analisi del pattern Factory per i provider
+- [Provider vs DTO](../channel-vs-dto-provider-selection.md) - Selezione tra provider e DTO
 - [Factory Pattern per Provider](../factory-pattern-analysis.md) - Analisi del pattern Factory per i provider
 - [Provider vs DTO](../channel-vs-dto-provider-selection.md) - Selezione tra provider e DTO
 - [Architettura Provider](../provider_actions_architecture.md) - Architettura delle azioni provider
@@ -57,7 +57,7 @@ status: draft
 ## Documentazione Correlata
 - [Implementazione SMS](../sms_implementation.md) - Panoramica dell'implementazione SMS
 - [Canale WhatsApp](../whatsapp_channel.md) - Documentazione del canale WhatsApp
-- [Canale Telegram](../telegram_channel.md) - Documentazione del canale Telegram
+- [Canale Telegram](../telegram-channel.md) - Documentazione del canale Telegram
 
 ## Note Importanti
 - <nome progetto> utilizza il pattern Factory per la creazione delle azioni di invio messaggi
