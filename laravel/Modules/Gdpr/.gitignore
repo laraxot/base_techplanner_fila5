@@ -130,3 +130,6 @@ docs/archive/
 *.orig
 *.rej
 *~head
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/

@@ -24,3 +24,7 @@ phpinsights.php
 .devcontainer/
 .vscode/
 .windsurf/
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/

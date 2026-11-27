@@ -167,7 +167,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/git_subtree_push_org.md` — Script Push Subtree per Organizzazioni
 - `bashscripts/docs/github-actions-subtrees.md` — GitHub Actions - Subtrees Sync
 - `bashscripts/docs/github-workflows-bashscripts-setup.md` — GitHub Workflows - Bashscripts Setup
-- `bashscripts/docs/gitignore-standardization.md` — Standardizzazione .gitignore per bashscripts
+- `bashscripts/docs/operations/gitignore-standardization.md` — Standardizzazione .gitignore per bashscripts
 - `bashscripts/docs/icons.md` — Sistema di Icone
 - `bashscripts/docs/installation.md` — Installazione {#installazione}
 - `bashscripts/docs/introduction.md` — Introducendo Lang {#introducendo-lang}
@@ -177,7 +177,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/laraxot.md` — Laravel XOT Architecture Documentation
 - `bashscripts/docs/laraxot_conventions.md` — Convenzioni per lo Sviluppo in Laraxot PTVX
 - `bashscripts/docs/layouts-and-themes.md` — Layouts e Temi UI
-- `bashscripts/docs/library-dependencies.md` — Library Dependencies Documentation
+- `bashscripts/docs/operations/library-dependencies.md` — Library Dependencies Documentation
 - `bashscripts/docs/links.md` — links
 - `bashscripts/docs/localization-guide.md` — Guida alla Localizzazione nel Framework Laraxot PTVX
 - `bashscripts/docs/login_test_implementation_summary.md` — Login Test Implementation Summary - SaluteOra Project
@@ -186,7 +186,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/markdown-conflicts-cleanup-summary.md` — Pulizia Marker Conflitti Git nei File Markdown
 - `bashscripts/docs/master-session-2025-01-04.md` — 🎯 MASTER SESSION REPORT - 4 Gennaio 2025
 - `bashscripts/docs/mcp-configuration.md` — Configurazione MCP Server per PTVX Fila4 Mono
-- `bashscripts/docs/mcp-optimization-workflow.md` — Workflow di Ottimizzazione Continua MCP per SimpleChartWidget
+- `bashscripts/docs/integrations/mcp-optimization-workflow.md` — Workflow di Ottimizzazione Continua MCP per SimpleChartWidget
 - `bashscripts/docs/mcp_errors_and_lessons.md` — Analisi Errori e Lezioni Apprese sull'Implementazione MCP
 - `bashscripts/docs/mcp_implementation_correction.md` — MCP Implementation Correction
 - `bashscripts/docs/mcp_implementation_guide.md` — Guida all'Implementazione del Model Context Protocol (MCP)
@@ -214,7 +214,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/no_duplicate_functions_in_sourced_scripts.md` — ERRORE GRAVE: Duplicazione di funzioni in presenza di 'source'
 - `bashscripts/docs/noconsole.md` — Cartella NoConsole
 - `bashscripts/docs/orbit_sushi_to_json.md` — Invece di usare Orbit {#invece-di-usare-orbit}
-- `bashscripts/docs/organization.md` — Organizzazione Script Bash
+- `bashscripts/docs/governance/organization.md` — Organizzazione Script Bash
 - `bashscripts/docs/organize-scripts-summary.md` — Organizzazione Script per Categoria
 - `bashscripts/docs/package.md` — Package utilizzati {#package-utilizzati}
 - `bashscripts/docs/password.md` — password
@@ -249,8 +249,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/project.md` — Project
 - `bashscripts/docs/project_notes.md` — Project Notes
 - `bashscripts/docs/project_roadmap.md` — Roadmap del Progetto
-- `bashscripts/docs/project_structure_rules.md` — Regole Struttura Progetto Laraxot
-- `bashscripts/docs/quality-assurance-scripts.md` — Quality Assurance Scripts
+- `bashscripts/docs/governance/project_structure_rules.md` — Regole Struttura Progetto Laraxot
+- `bashscripts/docs/operations/quality-assurance-scripts.md` — Quality Assurance Scripts
 - `bashscripts/docs/reactphp.md` — Gestione Processi ReactPHP
 - `bashscripts/docs/readme-template.md` — Modulo [Nome Modulo]
 - `bashscripts/docs/readme.es.md` — 🚀 Kit de Herramientas de Automatización Git
@@ -293,7 +293,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/schema_conventions.md` — Schema Conventions in Notify Module
 - `bashscripts/docs/schema-conventions.md` — Schema Conventions in Notify Module
 - `bashscripts/docs/scripts-conflict-resolution.md` — Risoluzione Conflitti negli Script Bash
-- `bashscripts/docs/scripts-index.md` — Bashscripts Scripts Index
+- `bashscripts/docs/operations/scripts-index.md` — Bashscripts Scripts Index
 - `bashscripts/docs/scripts.md` — 🚀 Script Bash di il progetto: La Tua Guida Definitiva
 - `bashscripts/docs/scripts_conflict_resolution.md` — Risoluzione Conflitti negli Script Bash
 - `bashscripts/docs/scripts_index.md` — Bash Scripts Index
@@ -10053,7 +10053,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/git_subtree_push_org.md`: Script Push Subtree per Organizzazioni
 - `bashscripts/docs/github-actions-subtrees.md`: GitHub Actions - Subtrees Sync
 - `bashscripts/docs/github-workflows-bashscripts-setup.md`: GitHub Workflows - Bashscripts Setup
-- `bashscripts/docs/gitignore-standardization.md`: Standardizzazione .gitignore per bashscripts
+- `bashscripts/docs/operations/gitignore-standardization.md`: Standardizzazione .gitignore per bashscripts
 - `bashscripts/docs/icons.md`: Sistema di Icone
 - `bashscripts/docs/installation.md`: Installazione {#installazione}
 - `bashscripts/docs/introduction.md`: Introducendo Lang {#introducendo-lang}
@@ -10063,7 +10063,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/laraxot.md`: Laravel XOT Architecture Documentation
 - `bashscripts/docs/laraxot_conventions.md`: Convenzioni per lo Sviluppo in Laraxot PTVX
 - `bashscripts/docs/layouts-and-themes.md`: Layouts e Temi UI
-- `bashscripts/docs/library-dependencies.md`: Library Dependencies Documentation
+- `bashscripts/docs/operations/library-dependencies.md`: Library Dependencies Documentation
 - `bashscripts/docs/links.md`: links
 - `bashscripts/docs/localization-guide.md`: Guida alla Localizzazione nel Framework Laraxot PTVX
 - `bashscripts/docs/login_test_implementation_summary.md`: Login Test Implementation Summary - SaluteOra Project
@@ -10072,7 +10072,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/markdown-conflicts-cleanup-summary.md`: Pulizia Marker Conflitti Git nei File Markdown
 - `bashscripts/docs/master-session.md`: 🎯 MASTER SESSION REPORT - 4 Gennaio 2025
 - `bashscripts/docs/mcp-configuration.md`: Configurazione MCP Server per PTVX Fila4 Mono
-- `bashscripts/docs/mcp-optimization-workflow.md`: Workflow di Ottimizzazione Continua MCP per SimpleChartWidget
+- `bashscripts/docs/integrations/mcp-optimization-workflow.md`: Workflow di Ottimizzazione Continua MCP per SimpleChartWidget
 - `bashscripts/docs/mcp_errors_and_lessons.md`: Analisi Errori e Lezioni Apprese sull'Implementazione MCP
 - `bashscripts/docs/mcp_implementation_correction.md`: MCP Implementation Correction
 - `bashscripts/docs/mcp_implementation_guide.md`: Guida all'Implementazione del Model Context Protocol (MCP)
@@ -10100,7 +10100,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/no_duplicate_functions_in_sourced_scripts.md`: ERRORE GRAVE: Duplicazione di funzioni in presenza di 'source'
 - `bashscripts/docs/noconsole.md`: Cartella NoConsole
 - `bashscripts/docs/orbit_sushi_to_json.md`: Invece di usare Orbit {#invece-di-usare-orbit}
-- `bashscripts/docs/organization.md`: Organizzazione Script Bash
+- `bashscripts/docs/governance/organization.md`: Organizzazione Script Bash
 - `bashscripts/docs/organize-scripts-summary.md`: Organizzazione Script per Categoria
 - `bashscripts/docs/package.md`: Package utilizzati {#package-utilizzati}
 - `bashscripts/docs/password.md`: password
@@ -10135,8 +10135,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/project.md`: Project
 - `bashscripts/docs/project_notes.md`: Project Notes
 - `bashscripts/docs/project_roadmap.md`: Roadmap del Progetto
-- `bashscripts/docs/project_structure_rules.md`: Regole Struttura Progetto Laraxot
-- `bashscripts/docs/quality-assurance-scripts.md`: Quality Assurance Scripts
+- `bashscripts/docs/governance/project_structure_rules.md`: Regole Struttura Progetto Laraxot
+- `bashscripts/docs/operations/quality-assurance-scripts.md`: Quality Assurance Scripts
 - `bashscripts/docs/reactphp.md`: Gestione Processi ReactPHP
 - `bashscripts/docs/readme-template.md`: Modulo [Nome Modulo]
 - `bashscripts/docs/readme.es.md`: 🚀 Kit de Herramientas de Automatización Git
@@ -10179,7 +10179,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/schema_conventions.md`: Schema Conventions in Notify Module
 - `bashscripts/docs/schema-conventions.md`: Schema Conventions in Notify Module
 - `bashscripts/docs/scripts-conflict-resolution.md`: Risoluzione Conflitti negli Script Bash
-- `bashscripts/docs/scripts-index.md`: Bashscripts Scripts Index
+- `bashscripts/docs/operations/scripts-index.md`: Bashscripts Scripts Index
 - `bashscripts/docs/scripts.md`: 🚀 Script Bash di il progetto: La Tua Guida Definitiva
 - `bashscripts/docs/scripts_conflict_resolution.md`: Risoluzione Conflitti negli Script Bash
 - `bashscripts/docs/scripts_index.md`: Bash Scripts Index

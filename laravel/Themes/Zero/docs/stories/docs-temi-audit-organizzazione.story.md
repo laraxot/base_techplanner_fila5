@@ -42,7 +42,7 @@ Regola permanente dell'utente: studiare, aggiornare, migliorare e organizzare di
 
 ## Perimetro e scelta del tema owner
 
-`ls laravel/Themes` mostra un solo tema, `Zero` (repository git proprio, remote `laraxot`). Quindi non c'era scelta: l'audit e la story stanno qui. La story va in `docs/stories/` perche' e' la posizione della policy `bashscripts/docs/modular-bmad-story-policy.md` e quella di 5 delle 7 story gia' presenti (le altre 2 sono in `docs/bmad/stories/`, vedi decisioni aperte). Nessuna nuova cartella docs e niente `bmad-output/`.
+`ls laravel/Themes` mostra un solo tema, `Zero` (repository git proprio, remote `laraxot`). Quindi non c'era scelta: l'audit e la story stanno qui. La story va in `docs/stories/` perche' e' la posizione della policy `bashscripts/docs/governance/modular-bmad-story-policy.md` e quella di 5 delle 7 story gia' presenti (le altre 2 sono in `docs/bmad/stories/`, vedi decisioni aperte). Nessuna nuova cartella docs e niente `bmad-output/`.
 
 ## Convenzione attesa
 

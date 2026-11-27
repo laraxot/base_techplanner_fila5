@@ -60,7 +60,7 @@ Before committing, ensure:
 
 Complete documentation is available in `bashscripts/docs/`:
 - [README.md](../bashscripts/docs/README.md) - Overview and quick reference
-- [Scripts Index](../bashscripts/docs/scripts-index.md) - Complete catalog of all scripts
+- [Scripts Index](../bashscripts/docs/operations/scripts-index.md) - Complete catalog of all scripts
 - [Best Practices](../bashscripts/docs/best-practices.md) - DRY+KISS+Clean Code guidelines
 - [Duplicates Consolidation Plan](../bashscripts/docs/duplicates-consolidation-plan.md) - Strategy for consolidating duplicates
 - [Work Summary](../bashscripts/docs/work-summary.md) - Summary of cleanup work

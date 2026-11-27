@@ -132,3 +132,7 @@ resources/lang
 .github/agents/
 =======
 >>>>>>> .merge_file_8OfzL1
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/

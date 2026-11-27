@@ -40,7 +40,7 @@ gh issue create --repo laraxot/base_techplanner_fila5 --title "Monitoraggio ogni
 
 ## Gestione del servizio locale
 
-- Script generico e contratto: `bashscripts/tools/monitoring/error-log-watch.cjs`, `bashscripts/docs/error-log-watch.md`.
+- Script generico e contratto: `bashscripts/tools/monitoring/error-log-watch.cjs`, `bashscripts/docs/operations/error-log-watch.md`.
 - Configurazione privata e stato: `/home/ploi/.local/state/sottana-log-watch/`.
 - Stato corrente: `status.json`; ultimo risultato strutturato: `last-report.json`; diagnostica: `last-worker.log` e `cron.log`.
 - Cron: `*/5 * * * *`, tag `sottana-error-log-watch`; i trigger durante una riparazione vengono saltati grazie al lock.

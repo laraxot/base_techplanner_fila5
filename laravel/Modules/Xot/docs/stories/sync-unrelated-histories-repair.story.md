@@ -11,7 +11,7 @@ tags: [sync, merge, marker-conflitto, regressioni, phpstan, pest, forward-only]
 qmd: "sync merge_remote_repo_2 allow-unrelated-histories marker regressioni file resuscitati blob antenato comune phpstan pest binding"
 related:
   - ./module-sync-stale-snapshot-and-phpstan-zero.story.md
-  - ../../../../../bashscripts/docs/sync-repair-tools.md
+  - ../../../../../bashscripts/docs/operations/sync-repair-tools.md
   - ../../../../../docs/wiki/rules/merge-conflict-marker-resolution.md
 ---
 
@@ -38,7 +38,7 @@ riportato a blob vecchi, e alle 12:00–12:02 la stessa sync ha pushato i marker
 
 ## Riparazione (commit `efeec2ebd3`, `137b8fbf25`)
 
-Metodo e strumenti: [sync-repair-tools](../../../../../bashscripts/docs/sync-repair-tools.md).
+Metodo e strumenti: [sync-repair-tools](../../../../../bashscripts/docs/operations/sync-repair-tools.md).
 - marker: fast-forward / merge a 3 vie sul blob antenato comune per ~2.300 file; casi meccanici;
   107 `.md` e 3 test fusi a mano per significato (4 subagenti, numeri verificati sul codice);
 - regressioni ripristinate alla versione pre-sync, file resuscitati tolti di nuovo;

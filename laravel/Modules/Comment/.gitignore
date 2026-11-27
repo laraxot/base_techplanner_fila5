@@ -37,3 +37,7 @@ vendor/
 .windsurf/
 test-results/
 comment.code-workspace
+
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/

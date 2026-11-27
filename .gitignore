@@ -161,3 +161,10 @@ laravel/composer.lock
 
 # Generato da `php artisan seo:robots` a ogni rilascio (deploy.sh).
 /public_html/robots.txt
+
+# screenshot di comparazione visiva
+docs/visual-comparison/
+docs/project/visual-comparison/
+laravel/Modules/*/docs/project/visual-comparison/
+laravel/Modules/*/docs/visual-comparison/
+laravel/Themes/*/docs/visual-comparison/
