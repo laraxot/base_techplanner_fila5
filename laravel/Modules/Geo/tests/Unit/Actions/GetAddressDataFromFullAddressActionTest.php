@@ -62,7 +62,7 @@ it('executes without throwing error for basic call', function (): void {
     Assert::assertNotEmpty($action->getErrors());
 })->group('GEO-GEOCODE-INV-2', 'GEO-GEOCODE-INV-3');
 
-/*
+/**
  * Contratto: docs/contracts/get-address-data-from-full-address-action.md. I provider si sostituiscono nel container con
  * oggetti che registrano le chiamate: nessuna rete, nessuna chiave.
  *
