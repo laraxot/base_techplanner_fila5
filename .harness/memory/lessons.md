@@ -73,3 +73,11 @@ impedisce, quando toglierlo. Un pezzo senza lezione è peso morto; una lezione s
   Risoluzione fatta unendo le due parti dove erano funzionalità complementari (schema `business` + `description/sameAs`;
   `lastmod` stringa + `DateTimeInterface`), con test.
 - **Rimuovere quando**: la sync rifiuta di committare file con marcatori (hook pre-commit che fallisce).
+
+## L-008 — Modulo Fixcity orfano senza package.json
+
+- **Perché deve essere rimosso**: `laravel/Modules/Fixcity/` è un folder vuoto (solo `docs/adr/README.md`, `docs/adr/index.md`, `docs/contracts/README.md`, `docs/contracts/index.md`) creato oggi 2026-11-27. Non è un package valido (nessun `module.json`, `composer.json`, `theme.json`), quindi escluso da tutti i controlli di documentazione e contratti (`packageDirectories()` e `PackagesHaveContractsAndAdrTest`). Violenta la regola project-agnostic: i documenti del modulo citano le issue/discussions del repo ospite `laraxot/base_techplanner_fila5` (hostProjectNames contiene `'fixcity'`), ma i moduli sono per `base_techplanner_fila5`. Le referenze nei temi a `Modules\Fixcity\Actions/*`, `Modules\Fixcity\Models/User` puntano a classi assenti qui (il codice Fixcity vive in un'altra workspace/app); le connessioni DB shared `fixcity` e il dominio ticket/categorie vivono in altri moduli. Un solo file PHP o autoload non dipende da Fixcity.
+
+- **Metodo**: BMAD decisione documentata (pagina hindsight `kp-e9387c5f3a7f4a59951f369a15ed87e8`), second brain QMD (lesson L-008 in `.harness/memory/lessons.md`).
+
+- **Rimuovere quando**: una sola volta, dopo aver verificato che nessun file PHP o autoload dipende da Fixcity.
