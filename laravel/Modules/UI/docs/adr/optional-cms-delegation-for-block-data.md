@@ -40,3 +40,9 @@ Il contenuto canonico è nel file numerato; questo file resta solo un puntatore 
 ## Conferma
 
 Nessuna conferma automatica oggi; proposta: lasciare il file finché esistono link al vecchio nome (`cd laravel && rg -n 'optional-cms-delegation-for-block-data.md' Modules | rg -v '0004-'`) e cancellarlo quando l'elenco è vuoto.
+
+## Riconciliazione documentale (2026-11-27)
+
+I marker del merge sono stati rimossi preservando la decisione e i riferimenti documentali: il file storico è un puntatore superseded verso il canon numerato. Questo non certifica esecuzione di test. [Tracciamento #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+- Il ramo storico citava `UI-BLOCKDATA-INV-1` e `UI-BLOCKDATA-INV-4`; la loro copertura va verificata nel file numerato e nella suite, non in questo puntatore superseded.

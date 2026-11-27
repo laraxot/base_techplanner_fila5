@@ -66,3 +66,7 @@ test migrato con le colonne `fiscal_code`, `auth_method`, `identity_provider`; I
   codice fiscale: un secondo cittadino che l'IdP dichiara con la stessa email verificata prende l'account del primo. Nessun test copre il caso.
   Difetto da decidere con un umano (rifiutare il collegamento se `fiscal_code` è già valorizzato e diverso).
 - Il legacy non è modello per codice nuovo (ADR 0012 di Xot).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Auth/UpsertUserFromDigitalIdentityAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

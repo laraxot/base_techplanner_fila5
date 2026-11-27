@@ -62,3 +62,7 @@ Il contratto del 2026-11-24 dava rossi `prende il primo ruolo, non tutti` ed `el
 
 - Limite noto: nessun chiamante in produzione; se verrà collegata a un'API o a una vista condivisa, il contratto va rivisto sul punto «Non filtra i dati per destinatario».
 - `avatar` può essere un percorso relativo (`profile_photo_path`) e non un URL: dipende da come lo riempie il modello.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/GetUserDataAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

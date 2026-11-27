@@ -1,7 +1,7 @@
 ---
 title: "Contratto — PathGenerator e PathGeneratorContract (interfacce)"
 type: contract
-action: "Modules\Media\Contracts\PathGenerator"
+interface: "Modules\\Media\\Contracts\\PathGenerator"
 module: Media
 status: accepted
 created: 2026-07-14
@@ -46,3 +46,7 @@ Interfacce in `app/Contracts/PathGenerator.php` e `app/Contracts/PathGeneratorCo
 ## Prove
 
 - `PATH-GENERATOR-INV-1`, `-2`: nessun test; verifica per lettura di `app/Contracts/*.php` e con il comando `rg` indicato.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Contracts/PathGenerator.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

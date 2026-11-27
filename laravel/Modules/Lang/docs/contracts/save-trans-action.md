@@ -81,3 +81,7 @@ In ordine, per `persist()` (a cui `execute()` arriva dopo il controllo dell'inte
   esiste solo se la imposta qualcuno. Il commento a `config/lang.php:205-206` cita ancora il vecchio default `! app()->runningUnitTests()`.
 - Rispetto alla versione precedente di questo contratto, INV-6 è la chiave senza nome file (come nel test `->group('LANG-SAVETRANS-INV-6')`); il caso «file illeggibile»,
   che prima portava lo stesso numero, è ora INV-7.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/SaveTransAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

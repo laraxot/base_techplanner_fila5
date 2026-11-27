@@ -47,3 +47,7 @@ Non duplica [GetSumByModelRatingIdAction](get-sum-by-model-rating-id-action.md) 
 
 - **Conta i valori, non le righe.** `COUNT(rating_morph.value)` ignora le righe con `value` nullo: un voto «altro» o senza scelta, che `HasRatingsTrait::syncRatingsFormData` scrive con `value = null` e una nota (righe 523-525), non entra nel conteggio. Letto dal codice, non misurato su dati.
 - Come per la somma, i test usano un mock della relazione (provano i filtri, non il risultato su database) e `ratings()` vede solo la forma alias di `model_type`.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/HasRating/GetCountByModelRatingIdAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

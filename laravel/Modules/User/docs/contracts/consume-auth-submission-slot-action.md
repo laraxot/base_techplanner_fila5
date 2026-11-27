@@ -61,3 +61,7 @@ Solo cache (store di default). Nessun database, nessuna coda, nessuna email, nes
 - Limite noto: l'ordine «prima il controllo, poi `getState()`» è un dovere dei chiamanti e non ha test. Oggi vale: `RegisterWidget.php:78` precede `getState()` (riga 86),
   `ForgotPasswordWidget.php:51` precede `getState()` (riga 59). Un widget nuovo che dimentica la chiamata resta aperto ai bot.
 - Dietro un proxy che non propaga l'IP reale, `request()->ip()` è quello del proxy e `MAX_PER_IP` colpisce tutti insieme.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Auth/ConsumeAuthSubmissionSlotAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

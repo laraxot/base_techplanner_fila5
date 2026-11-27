@@ -43,3 +43,7 @@ Unico chiamante in produzione: `app/Filament/Pages/JobStatus.php`. Sorgente: `ap
 - Non costruisce l'elenco: non aggiungere «comandi di default»; l'elenco viene dai pulsanti della pagina.
 - Non accetta argomenti separati né li valida.
 - Limite noto: non è usata da `JobStatusWidget` né da `ScheduleStatusWidget`, che hanno un controllo proprio (debito in ADR 0001).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Console/AssertAllowedArtisanCommandAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

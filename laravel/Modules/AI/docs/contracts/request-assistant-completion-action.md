@@ -71,3 +71,7 @@ Test: `tests/Unit/Assistant/RequestAssistantCompletionActionTest.php` (4 test, H
   solo per i fornitori in cascata, e anche INV-5 non ha test.
 - Il messaggio d'errore del fornitore (`$exception->getMessage()`) entra nel log e può citare parti del prompt.
 - Il testo del cittadino, con il contesto, parte verso fornitori terzi (Groq, OpenRouter, OpenAI) senza oscuramento dei dati personali.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Assistant/RequestAssistantCompletionAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

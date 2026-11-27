@@ -41,3 +41,7 @@ sarebbe un'iniezione di shell. Perché: [ADR 0003](../adr/0003-queue-worker-flag
 - Non esegue il comando e non verifica se un worker è già attivo.
 - Non controlla che `timeout_seconds` resti sotto `retry_after` della connessione di coda.
 - Limite noto: il percorso `/usr/local/bin/php` è scritto nell'Action; `base_path()` non è escapato per la shell, quindi un percorso con spazi o metacaratteri romperebbe la riga (non verificato a runtime).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/BuildQueueWorkerCommandAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

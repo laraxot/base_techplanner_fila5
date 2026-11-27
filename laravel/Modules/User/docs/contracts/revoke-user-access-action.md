@@ -60,3 +60,7 @@ Nessuna transazione propria (la apre il chiamante), nessuna coda, nessuna email,
 
 - Limite noto: il tipo del parametro è la classe interna `BaseUser`, non `UserContract`. Un modello utente di progetto che non estende `BaseUser` non può usarla.
 - Esiste [RevokeAllUserTokensAction](revoke-all-user-tokens-action.md) (solo access token, senza refresh né remember token): non è un sostituto di questa.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Auth/RevokeUserAccessAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

@@ -45,3 +45,7 @@ Registra l'evento `updated` di un modello Eloquent con valori precedenti, nuovi 
 
 - Non decide quando viene chiamata ne' quali modelli loggare: lo fa chi la invoca (observer, listener).
 - Non toglie altri dati personali oltre ai segreti elencati (email e nome restano); per aggiungerne si estende `RedactModelAttributesAction`.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/LogModelUpdatedAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

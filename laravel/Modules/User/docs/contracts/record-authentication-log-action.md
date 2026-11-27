@@ -59,3 +59,7 @@ Test: `tests/Unit/Actions/Auth/RecordAuthenticationLogActionTest.php`.
 
 - Limite noto: con la tabella mancante gli accessi **non sono registrati**, senza alcun segnale all'utente: serve monitorare i warning (`authentication_logs missing on user connection`).
 - I due group presenti sono test source-level: dimostrano che certe righe di codice esistono, non il comportamento a runtime. INV-2 e INV-4 sono nel backlog test.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Auth/RecordAuthenticationLogAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

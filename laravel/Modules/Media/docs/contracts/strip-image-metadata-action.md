@@ -60,3 +60,7 @@ Chiamante: `Modules\Fixcity\Listeners\StripTicketPhotoMetadataListener` (registr
 
 - `MEDIA-STRIP-INV-1`..`5`: `tests/Unit/Actions/Image/StripImageMetadataActionTest.php`; `vendor/bin/pest Modules/Media/tests --group=MEDIA-STRIP-INV-1`.
   Fixture con GPS e Orientation=6 costruite byte per byte, precondizione che il GPS ci fosse prima, PNG con `tEXt`/`iTXt`, PDF intatto, caso di controllo per INV-5.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Image/StripImageMetadataAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

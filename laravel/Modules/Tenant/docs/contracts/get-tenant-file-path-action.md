@@ -43,3 +43,7 @@ Sorgente: `app/Actions/Config/GetTenantFilePathAction.php`.
 
 - Non controlla che il file esista e non lo crea (fuori dalla copia di test).
 - Non normalizza i symlink e non valida il nome tenant: lo riceve da `GetTenantNameAction`.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Config/GetTenantFilePathAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

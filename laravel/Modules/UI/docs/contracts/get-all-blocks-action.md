@@ -50,3 +50,7 @@ Test: `tests/Unit/Actions/Block/GetAllBlocksActionTest.php` (blocchi reali dei m
 - Non filtra per modulo attivo, tenant o permessi: ritorna tutto ciò che è su disco.
 - Non ordina: l'ordine è quello di `glob`.
 - Non legge le cartelle dei temi (`Themes/*`).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Block/GetAllBlocksAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

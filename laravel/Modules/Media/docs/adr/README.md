@@ -34,6 +34,7 @@ ADR e segna il vecchio `superseded`.
 | [0003](0003-effective-upload-limit-in-web-request.md) | accepted | Limite di upload annunciato = minimo tra PHP, Livewire e campo, letto nella richiesta web. | `GetEffectiveUploadLimitActionTest` (`GET-EFFECTIVE-UPLOAD-LIMIT-INV-1`, `-3`, `-4`); il default 12 MB non e' provato. |
 | [0004](0004-media-visibility-follows-owner.md) | accepted | La visibilita' dei media segue il record owner. Ha `Stato attuale`: il codice non la implementa, ogni punto di ingresso fissa la sua. | Nessuna conferma automatica; proposta nel file. |
 | [0005](0005-strip-image-metadata-server-side.md) | accepted | Metadati Exif/GPS tolti sul server ri-codificando con GD (`StripImageMetadataAction`). | `StripImageMetadataActionTest` (`MEDIA-STRIP-INV-1`..`5`). |
+| [media-visibility-follows-owner](media-visibility-follows-owner.md) | superseded da 0004 | Copia senza numero di 0004, tenuta per non rompere i link. | — |
 | [0000-template](0000-template.md) | — | Modello per un nuovo ADR. | — |
 
 ## Stato di copertura
@@ -44,4 +45,15 @@ ADR e segna il vecchio `superseded`.
 
 ## Da ripulire (richiede una decisione umana)
 
-- `index.md` e `INDEX.md`: `INDEX.md` e' ora uno stub superseded che punta a `index.md` (inventario canonico).
+- `media-visibility-follows-owner.md` duplica 0004: proposta, eliminarlo dopo aver aggiornato i link in `INDEX.md`.
+- `index.md` e `INDEX.md` sono due indici dello stesso elenco (su file system che non distinguono maiuscole collidono): proposta,
+  tenere questo README e togliere gli altri due; fino ad allora sono allineati a questa tabella.
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+Questo indice appartiene a **module_media_fila5**: ogni decisione su codice, dominio o tema va nell'ADR del package owner; il root registra soltanto i vincoli di composizione. Un ADR richiede una scelta reale con alternative e conseguenze, più una **Conferma** ripetibile (oppure la dichiarazione esplicita che manca). Non creare ADR fittizi per riempire un indice.
+
+- [Confine LaravelDay/harness Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/adr/0042-laravel-day-harness-adoption-boundary.md); [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md).
+- **BMAD**: la story owner-local conserva `scope`, `must_not_change`, `evidence`, `approval_required` nei cambi rischiosi.
+- **ECC**: nessun marker di merge; distinguere la prova eseguita dal semplice riferimento a un test; se la conferma non è disponibile segnare `non eseguita`.
+- **Second Brain**: QMD/Graphify e `.harness/memory/{facts,lessons}.md` sono puntatori a evidenza datata, non copie degli ADR. [Runbook](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md) · [Rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

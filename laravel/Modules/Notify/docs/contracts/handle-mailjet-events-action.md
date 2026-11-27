@@ -54,3 +54,7 @@ lancia `MailDeliveryEventReceived`; non scrive nulla.
 - Non scrive tabelle: il modulo e' agnostico (vedi ADR 0001).
 - Non deduplica eventi ritrasmessi da Mailjet.
 - Non valida la firma del fornitore: l'autenticazione e' il token nel percorso (ADR 0004).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Mail/Mailjet/HandleMailjetEventsAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

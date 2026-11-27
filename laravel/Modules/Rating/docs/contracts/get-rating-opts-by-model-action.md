@@ -46,3 +46,7 @@ Sorgente: `app/Actions/HasRating/GetRatingOptsByModelAction.php`. Chiamante di p
 
 - Le versioni di questo contratto del 2026-11-26 avevano rinominato gli ID con il prefisso `RATING-OPTIONS-` al posto di `RATING-OPTS-`; il test e il contratto committato usano `RATING-OPTS-`, ripristinato qui: un ID non si rinomina.
 - Il test usa un mock della relazione: prova il filtro e che non si chiamano altri metodi, non il risultato su database; INV-3 non e' coperta perche' il mock restituisce gia' chiavi intere e titoli stringa.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/HasRating/GetRatingOptsByModelAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

@@ -46,3 +46,7 @@ e da `GetTenantModelClassAction`. Sorgente: `app/Actions/Config/SaveTenantConfig
 - Non cancella chiavi: un valore si toglie solo sovrascrivendolo.
 - Non valida i valori, non fa backup del file precedente e non gestisce scritture concorrenti: l'ultima vince.
 - Non ricarica né invalida la cache di configurazione.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Config/SaveTenantConfigAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

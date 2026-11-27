@@ -49,3 +49,7 @@ Scrive una riga in `activity_log` (modello `Modules\Activity\Models\Activity`, c
 - Non redige le `properties` (lo fanno le Action `LogModel*`).
 - Non verifica che la classe del subject esista.
 - Incoerenze note: `causer_id` puo' valorizzarsi da `Auth::id()` con `causer_type = null` (INV-3), e l'attivita' non compare in `GetUserActivitiesAction`; `log_name` vale il tipo qui mentre `Actions\ActivityLogger::log()` e `RecordSubjectActivityAction` usano `default`.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/LogActivityAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

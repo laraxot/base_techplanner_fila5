@@ -50,3 +50,7 @@ Aggrega i voti sul pivot `rating_morph.value`; non duplica [GetRatingOptsByModel
 
 - **I test usano un mock della relazione** (`Mockery::mock(MorphToMany::class)`, `tests/Unit/HasRatingActionsTest.php`): provano quali filtri l'Action applica e che non chiama altri metodi (un `attach` o `update` farebbe fallire il mock), non il risultato su un database. INV-4 vale per la relazione passata, non per un'eventuale `DB::` dentro l'Action.
 - `ratings()` vede solo la forma alias di `model_type`: dove la stessa entita' ha righe con alias e con FQCN, la somma esclude la seconda forma (story `rating-morph-model-type-doppio`; `HasRatingsTrait::ratingMorphs()` legge entrambe).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/HasRating/GetSumByModelRatingIdAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

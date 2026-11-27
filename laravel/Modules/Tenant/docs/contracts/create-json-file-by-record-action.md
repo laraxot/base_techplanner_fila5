@@ -39,3 +39,7 @@ Sorgente: `app/Actions/Json/CreateJsonFileByRecordAction.php`. Gemelle: `UpdateJ
 
 - Limite noto: non è chiamata dal trait `SushiToJson`, che ha i propri handler `creating`/`updating`/`deleting` in `bootSushiToJson()` con un calcolo dell'id simile ma non identico. Le tre Action Json non hanno chiamanti in produzione (`rg` su `Modules`/`Themes` fuori da tests e docs, 2026-11-26): prima di usarle o toglierle, allineare il trait.
 - Non gestisce scritture concorrenti né lock del file.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Json/CreateJsonFileByRecordAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

@@ -57,3 +57,7 @@ canali (`mail`, `database`, `sms`); `NotificationManager` e i consumer lo delega
 - Non risolve il destinatario: il chiamante passa il model.
 - Non supporta `whatsapp`, `telegram`, `push`: solo `mail`, `database`, `sms`.
 - Non e' idempotente: una seconda chiamata invia di nuovo.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/SendNotificationAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

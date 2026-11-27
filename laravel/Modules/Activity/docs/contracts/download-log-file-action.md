@@ -46,3 +46,7 @@ Risposta HTTP di download per un file di log scelto dall'utente. Il percorso pas
 - Non verifica l'autorizzazione: la verificano i chiamanti con `AuthorizeLogAccessAction` (la pagina la ripete anche dentro l'azione di download).
 - Non comprime e non taglia il file: il download e' sempre il file intero (la pagina ne mostra solo la coda).
 - Se il file sparisce tra la risoluzione e l'invio vale il comportamento di Symfony (non verificato).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Log/DownloadLogFileAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

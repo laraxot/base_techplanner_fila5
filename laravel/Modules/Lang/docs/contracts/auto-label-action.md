@@ -79,3 +79,7 @@ In ordine:
 - INV-4, INV-5 e INV-6 non hanno un test che le provi: i test esistenti che esercitano quei rami
   (`tests/Unit/LangFinalGapsTest.php:321`, `LangCoverageGapsTest.php:359`, `LangHundredPercentCoverageTest.php:438`) asseriscono solo
   che `execute()` restituisca lo stesso oggetto componente, cosa che vale in ogni ramo.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Filament/AutoLabelAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

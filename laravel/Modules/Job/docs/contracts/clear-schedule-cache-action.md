@@ -39,3 +39,9 @@ Invalida la chiave di cache che `Schedule\GetActiveSchedulesAction` riempie con 
 
 - Non verifica che il cache store esista e non ricostruisce la cache: al prossimo `GetActiveSchedulesAction` la ricalcola.
 - Non dipende da `job::cache.enabled`: svuota anche se la cache è spenta.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Schedule/ClearScheduleCacheAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
+
+- ID storici nella variante precedente: `JOB-SCHED-CACHE-INV-1` e `JOB-SCHED-CACHE-INV-2`. La nuova variante usa `JOB-SCHEDCACHE-INV-1/2`; verificare la migrazione degli eventuali group di test, non trattare i vecchi ID come prove attive.

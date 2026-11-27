@@ -61,3 +61,7 @@ produzione la chiama (`rg SaveKnowledgeEntryAction`: solo la classe e il suo tes
   passare la stessa domanda senza `$id` sovrascrive la risposta esistente.
 - I messaggi di `ValidationException` («Domanda e risposta sono obbligatorie.», «Voce non trovata in questa base di conoscenza.»)
   sono testi italiani scritti nel codice, fuori dai file di lingua.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Assistant/SaveKnowledgeEntryAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

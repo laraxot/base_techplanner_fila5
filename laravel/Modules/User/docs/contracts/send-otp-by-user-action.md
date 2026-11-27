@@ -60,3 +60,7 @@ In quest'ordine:
 
 - Limite noto: nessuna transazione tra `UPDATE` e invio mail (vedi Errori).
 - Limite noto: con email segnaposto `@noemail.local` (utenti SPID/CIE, [UpsertUserFromDigitalIdentityAction](upsert-user-from-digital-identity-action.md)) la password viene sostituita e la mail non arriva a nessuno.
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Otp/SendOtpByUserAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

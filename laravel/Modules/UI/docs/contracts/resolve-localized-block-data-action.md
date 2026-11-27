@@ -57,3 +57,7 @@ Test: `tests/Unit/Actions/Block/GetLocalizedBlockDataActionTest.php` (il resolve
 
 - Nome del file legacy: la classe è `GetLocalizedBlockDataAction`, il file resta `resolve-localized-block-data-action.md` perché il `@contract` del docblock, i commenti dei test e gli ADR lo citano. Rinominarlo richiede `git mv` e l'aggiornamento di quei riferimenti.
 - Il nome del resolver di Cms è una stringa nel codice (`GetLocalizedBlockDataAction.php`, variabile `$cmsAction`): una rinomina in Cms lo spegne senza errori. Lo segnala solo il test `names a Cms resolver class that really exists` (saltato se Cms non è installato).
+
+## Riconciliazione documentale (2026-11-27)
+
+Questo file aveva un conflitto Git irrisolto. La base è la variante più recente del contratto, con il riferimento a `app/Actions/Block/GetLocalizedBlockDataAction.php` **esistente su `dev`**; la sua semantica, i group Pest citati e gli eventuali effetti non sono stati rieseguiti in questa sessione. Il confronto con il codice e i test resta il gate ECC della story owner. [Tracciamento root #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).
