@@ -21,8 +21,8 @@ updated: 2026-08-24
 ## 🎯 Quick Navigation
 
 ### Per Nuovi Arrivati
-1. [Zen of Documentation](./ZEN_OF_DOCUMENTATION.md) - Filosofia e principi
-2. [Documentation Governance](./DOCUMENTATION_GOVERNANCE.md) - Regole e standard
+1. [Zen of Documentation](./zen_of_documentation.md) - Filosofia e principi
+2. [Documentation Governance](./documentation_governance.md) - Regole e standard
 3. [Multi-Agent Collaboration](./MULTI_AGENT_COLLABORATION.md) - Come lavorare con AI agents
 
 ### Per Sviluppatori
@@ -53,7 +53,7 @@ updated: 2026-08-24
 
 ### 📋 Standards
 - [Coding Conventions](./conventions/README.md)
-- [Documentation Standards](./DOCUMENTATION_GOVERNANCE.md)
+- [Documentation Standards](./documentation_governance.md)
 - [Git Workflow](./conventions/git-workflow.md)
 - [Naming Conventions](./conventions/naming.md)
 
@@ -140,7 +140,7 @@ find docs -name "*.md" | xargs grep -l "keyword"
 ### 1. Zen of Documentation
 - **Goal**: Ridurre duplicazione e migliorare qualità
 - **Status**: 🟡 In Progress
-- **Docs**: [ZEN_OF_DOCUMENTATION.md](./ZEN_OF_DOCUMENTATION.md)
+- **Docs**: [ZEN_OF_DOCUMENTATION.md](./zen_of_documentation.md)
 - **Owner**: Multi-Agent Team
 
 ### 2. Multi-Block JSON Conversion
@@ -192,8 +192,8 @@ openviking get-context --query="documentation"
 4. Coordina tramite BMAD threads
 
 ### Per Contribuire
-1. Leggi [Documentation Governance](./DOCUMENTATION_GOVERNANCE.md)
-2. Segui [Zen of Documentation](./ZEN_OF_DOCUMENTATION.md)
+1. Leggi [Documentation Governance](./documentation_governance.md)
+2. Segui [Zen of Documentation](./zen_of_documentation.md)
 3. Aggiorna questo indice
 4. Esegui quality checks
 

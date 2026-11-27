@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Modules\AI\Actions;
 
 use Illuminate\Support\Carbon;
+use Modules\AI\Adapters\AiActionHandlerRegistry;
 use Modules\AI\Enums\AiActionProposalStatusEnum;
 use Modules\AI\Models\AiActionProposal;
-use Modules\AI\Adapters\AiActionHandlerRegistry;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
@@ -16,6 +16,8 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * On success the proposal is marked `executed`, on failure `failed` with the
  * error message stored for audit/debugging.
+ *
+ * @contract docs/contracts/confirm-ai-action-proposal-action.md
  */
 class ConfirmAiActionProposalAction
 {

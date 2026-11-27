@@ -1,8 +1,8 @@
 ---
-qmd: "missing features analysis.divergenza"
+qmd: "Missing Features Analysis.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: missing-features-analysis.md"
+title: "Missing Features Analysis.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

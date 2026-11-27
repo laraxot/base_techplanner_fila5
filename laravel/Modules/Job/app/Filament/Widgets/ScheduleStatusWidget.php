@@ -14,6 +14,8 @@ class ScheduleStatusWidget extends XotBaseWidget
 {
     public string $out = '';
 
+    /** @var view-string */
+    protected string $view = 'job::filament.widgets.schedule-status';
 
     protected int|string|array $columnSpan = 'full';
 

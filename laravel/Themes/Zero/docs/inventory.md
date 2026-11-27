@@ -29,7 +29,7 @@ documenti storici.
   on-demand.
 - [BMAD index](./bmad/00-index.md): guide, decisioni e artefatti di
   pianificazione del tema.
-- [Changelog](./changelog.md): cronologia documentata.
+- [Changelog](./CHANGELOG.md): cronologia documentata.
 - [Stories](./stories/): attività e audit incrementali.
 
 ## Struttura reale
@@ -55,7 +55,11 @@ ancora pagine.
 Misurati il 2026-10-20 con `python3 -I`, `rg -P` e `find`, ogni zero confrontato con un caso positivo noto. Riconteggio 2026-10-21: totale **229** file Markdown, di cui **204 attivi** (archivi e `raw/` esclusi).
 
 - Front matter YAML leggibile, con `title` e `qmd`: **229/229**. Id duplicati: 0. Chiavi duplicate nel front matter: 0 (erano 3).
+<<<<<<< .merge_file_EWQeHO
 - Nomi: 0 con data o suffisso numerico (erano 5, tutte story); 0 coppie che differiscono solo per la maiuscola (erano 2: `bmad/readme.md`, `index.md`). Attenzione: `md-filenames.py check --paths` accetta solo file `.md`, con una cartella stampa `0` senza controllare niente.
+=======
+- Nomi: 0 con data o suffisso numerico (erano 5, tutte story); 0 coppie che differiscono solo per la maiuscola (erano 2: `bmad/README.md`, `index.md`). Attenzione: `md-filenames.py check --paths` accetta solo file `.md`, con una cartella stampa `0` senza controllare niente.
+>>>>>>> .merge_file_ziaUes
 - Marker di conflitto Git nei file committati: **0**. Nella copia di lavoro del 2026-10-20 ce ne sono in 4 file per un merge del repository del tema ancora aperto (vedi la story).
 - Link relativi fuori dai blocchi di codice: **988** controllati nei file attivi, **303** non risolti (dato 2026-10-21; il dato 2026-10-20 su tutti i file era 1.275/448). Cause: moduli assenti nel checkout, pagine del tema mai esistite o spostate, nomi ambigui e codice. Gli indici e i README hanno **0** link non risolti.
 - File `superseded`: 7. File in `_archive/` con `canonical:`: 19. Pagine con nota di verifica per codice inesistente: 11.

@@ -13,7 +13,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -56,7 +56,7 @@ FixCity Fila5 Documentation
 │   │   └── BMAD-WORKFLOW-COMPLETE.md
 │   │
 │   └── Design Comuni Italia Project:
-│       ├── DESIGN_COMUNI_INDEX.md - Index for all Design Comuni docs
+│       ├── design_comuni_index.md - Index for all Design Comuni docs
 │       ├── design-comuni-prd.md - Product Requirements Document
 │       ├── design-comuni-architecture.md - Architecture Design
 │       ├── design-comuni-ui-spec.md - UI Specification
@@ -259,7 +259,7 @@ FixCity Fila5 Documentation
 
 | Document | File | Lines | Purpose |
 |----------|------|-------|---------|
-| **Index** | `_bmad-output/DESIGN_COMUNI_INDEX.md` | 300+ | Central navigation for Design Comuni docs |
+| **Index** | `_bmad-output/design_comuni_index.md` | 300+ | Central navigation for Design Comuni docs |
 | **PRD** | `_bmad-output/design-comuni-prd.md` | 800+ | Product requirements (38 pages, WCAG 2.1 AA) |
 | **Architecture** | `_bmad-output/design-comuni-architecture.md` | 900+ | System architecture, data flow, security |
 | **UI Spec** | `_bmad-output/design-comuni-ui-spec.md` | 700+ | Component specs, design tokens, accessibility |
@@ -287,7 +287,7 @@ FixCity Fila5 Documentation
 | **Sprint 6** | Week 11-12 | QA & Documentation | 9 |
 
 **Cross-References:**
-- → [Design Comuni Index](_bmad-output/DESIGN_COMUNI_INDEX.md) - Central navigation
+- → [Design Comuni Index](_bmad-output/design_comuni_index.md) - Central navigation
 - → [PRD](_bmad-output/design-comuni-prd.md) - Requirements
 - → [Architecture](_bmad-output/design-comuni-architecture.md) - System design
 - → [UI Spec](_bmad-output/design-comuni-ui-spec.md) - Component specs

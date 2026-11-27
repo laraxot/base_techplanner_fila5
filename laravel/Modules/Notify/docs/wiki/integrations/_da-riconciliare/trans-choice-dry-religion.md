@@ -2,15 +2,16 @@
 qmd: "trans choice dry religion"
 issues: []
 discussions: []
-title: "TransChoice DRY — La Religione dell'Unica Fonte di Verita"
+title: "TransChoice DRY: La Religione dell'Unica Fonte di Verita"
 module: notify
 type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
-# TransChoice DRY — La Religione dell'Unica Fonte di Verita
+# TransChoice DRY: La Religione dell'Unica Fonte di Verita
 
 **Status**: Active  
 **Created**: 2026-04-14  
@@ -344,8 +345,15 @@ Amen.
 - [Laravel Localization - Pluralization](https://laravel.com/docs/localization#pluralization)
 - [ticket.php (corretto)](../../Modules/App/lang/it/ticket.php)
 - [ticket.php (corretto)](../../Modules/<nome progetto>/lang/it/ticket.php)
+<<<<<<< .merge_file_3zLLlh
 - [Translation Namespace Religion](../../docs/translation-namespace-religion.md)
 - [No Hardcoded Language Religion](../../docs/no-hardcoded-language-religion.md)
+=======
+- [Translation Namespace Religion](../../../translation-namespace-religion.md)
+- [No Hardcoded Language Religion](../../../no-hardcoded-language-religion.md)
+- [Translation Namespace Religion](../../../translation-namespace-religion.md)
+- [No Hardcoded Language Religion](../../../no-hardcoded-language-religion.md)
+>>>>>>> .merge_file_cISHru
 
 ---
 

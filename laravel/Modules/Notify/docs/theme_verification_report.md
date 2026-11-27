@@ -132,9 +132,9 @@ Tema attivo automaticamente
 - ✅ `THEME_VERIFICATION_REPORT.md` - Questo report
 
 ### Riferimenti
-- [THEME_ARCHITECTURE.md](THEME_ARCHITECTURE.md) - "Il Tema è un Vestito"
-- [COMPOSER_STRATEGY.md](COMPOSER_STRATEGY.md) - Strategia composer
-- [FILAMENT_5_OFFICIAL_POLICY.md](FILAMENT_5_OFFICIAL_POLICY.md) - Politica Filament
+- [THEME_ARCHITECTURE.md](theme_architecture.md) - "Il Tema è un Vestito"
+- [COMPOSER_STRATEGY.md](composer_strategy.md) - Strategia composer
+- [FILAMENT_5_OFFICIAL_POLICY.md](filament_5_official_policy.md) - Politica Filament
 
 ## 🎯 Conclusione
 

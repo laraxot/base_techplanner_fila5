@@ -277,7 +277,7 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 ## 📚 DOCUMENTAZIONE CREATA (20 documenti!)
 
 ### Root Docs
-1. ✅ [LEGGI-QUI-DOMANI.md](./LEGGI-QUI-DOMANI.md) - Piano giornaliero
+1. ✅ [LEGGI-QUI-DOMANI.md](./leggi-qui-domani.md) - Piano giornaliero
 2. ✅ [ANALISI-COMPLETA-2025-10-01.md](./ANALISI-COMPLETA-2025-10-01.md) - Executive summary
 3. ✅ [roadmap-master-index.md](./roadmap-master-index.md) - Master index
 4. ✅ [project-analysis-and-roadmap.md](./project-analysis-and-roadmap.md) - Business view
@@ -577,7 +577,7 @@ public function execute(string $prompt, int $cacheDurationMinutes = 60): string
 ## 🔗 LINK UTILI
 
 ### Start Here
-- [🌅 Piano Domani](./LEGGI-QUI-DOMANI.md) - Anche se già completato!
+- [🌅 Piano Domani](./leggi-qui-domani.md) - Anche se già completato!
 - [📊 Analisi Completa](./ANALISI-COMPLETA-2025-10-01.md) - Executive view
 - [🗺️ Master Roadmap](./roadmap-master-index.md) - Future planning
 

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "database naming verification report"
 issues: []
 discussions: []
+status: draft
 ---
 
 # ✅ Database Directory Naming - Verification Report
@@ -16,15 +17,6 @@ discussions: []
 > **Status**: ✅ All Clear
 
 ---
-
-title: "database naming verification report"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "database naming verification report"
-issues: []
-discussions: []
 ## 🎯 Executive Summary
 
 **Tutte le directory del database nei moduli Laravel seguono già la convenzione corretta (minuscolo).**
@@ -33,7 +25,7 @@ La verifica ha confermato che:
 - ✅ 18/18 moduli hanno directory corrette
 - ✅ Documentazione del modulo Blog corretta
 - ✅ AGENTS.md aggiornato con la rule
-- ✅ agents.md aggiornato con la rule
+- ✅ AGENTS.md aggiornato con la rule
 - ✅ GitHub Issue #5 creata per tracking
 - ✅ Documentazione di convenzione creata
 
@@ -99,7 +91,7 @@ Queste sono **corrette** perché:
 | File | Status | Changes |
 |------|--------|---------|
 | `laravel/Modules/Blog/docs/structure.md` | ✅ Fixed | Corretti 3 riferimenti |
-| `laravel/Modules/Blog/docs/CHANGELOG_2025-10.md` | ✅ Fixed | Rimossi riferimenti errati |
+| `laravel/Modules/Blog/docs/CHANGELOG-blog-module-ottobre.md` | ✅ Fixed | Rimossi riferimenti errati |
 | `laravel/Modules/Blog/docs/models/README.md` | ✅ Fixed | Aggiornata sezione struttura |
 | `laravel/Modules/Blog/docs/models/transaction-removal.md` | ✅ Fixed | Corretti riferimenti factory |
 
@@ -172,7 +164,7 @@ Questi sono **accettabili** perché:
 ### 3. ✅ Created Preventive Documentation
 - Guida completa alla convenzione
 - Rule in AGENTS.md
-- Rule in agents.md
+- Rule in AGENTS.md
 - Esempi e best practices
 
 ### 4. ✅ Established GitHub Workflow
@@ -192,7 +184,7 @@ Questi sono **accettabili** perché:
 ### Immediate (Done ✅)
 - ✅ Fix Blog module documentation
 - ✅ Update AGENTS.md
-- ✅ Update agents.md
+- ✅ Update AGENTS.md
 - ✅ Create convention documentation
 - ✅ Create GitHub Issue #5
 
@@ -224,7 +216,7 @@ grep -r "database/Factories\|database/Migrations\|database/Seeders" \
   docs/ laravel/Modules/*/docs/ | \
   grep -v "database-naming.md" | \
   grep -v "AGENTS.md" | \
-  grep -v "agents.md" | \
+  grep -v "AGENTS.md" | \
   grep -v "models/README.md"
 ```
 
@@ -244,7 +236,14 @@ find docs/ laravel/Modules/*/docs/ -type f -name "*.md" -exec sed -i \
 
 - [Database Naming Convention](../conventions/database-naming.md)
 - [AGENTS.md](../../AGENTS.md)
+<<<<<<< .merge_file_aLoQoh
 - [Fix Summary](fixes/database-naming-fix-summary.md)
+=======
+- [Fix Summary](database-naming-fix-summary.md)
+- [Database Naming Convention](../conventions/database-naming.md)
+- [AGENTS.md](../agents.md)
+- [Fix Summary](database-naming-fix-summary.md)
+>>>>>>> .merge_file_0CgbOB
 - [GitHub Issue #5](https://github.com/laraxot/base_fixcity_fila5/issues/5)
 - [Laravel Directory Structure](https://laravel.com/docs/structure)
 

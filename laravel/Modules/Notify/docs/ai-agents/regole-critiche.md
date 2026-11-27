@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "regole critiche"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Regole Critiche Laraxot

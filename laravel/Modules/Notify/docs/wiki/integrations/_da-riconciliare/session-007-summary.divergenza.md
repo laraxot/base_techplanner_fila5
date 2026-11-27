@@ -1,8 +1,8 @@
 ---
-qmd: "session 007 summary.divergenza"
+qmd: "Session 007 Summary.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: session-007-summary.md"
+title: "Session 007 Summary.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

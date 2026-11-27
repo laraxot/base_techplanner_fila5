@@ -8,6 +8,7 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+status: draft
 ---
 
 # NOTIFY ARCHITECTURE DEEP DIVE ANALYSIS
@@ -1662,7 +1663,7 @@ Tasks:
 
 ### Recommended New Documentation
 ```
-1. ARCHITECTURE.md
+1. architecture.md
    - System architecture diagrams
    - Module dependency graph
    - Database schema diagrams
@@ -1827,8 +1828,12 @@ Monitoring:
 
 Frontend:
 [ ] Theme built (npm run build)
+<<<<<<< .merge_file_yYgJnq
 [ ] Assets deployed (symlink public_html/themes (npm run copy obsoleto))
 [ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
+=======
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+>>>>>>> .merge_file_ZvkS6i
 [ ] Dark mode tested
 [ ] Responsive design tested
 [ ] Accessibility tested

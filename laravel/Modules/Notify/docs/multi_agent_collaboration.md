@@ -87,7 +87,7 @@ _bmad/threads/zen-documentation.md
 ```
 .planning/phases/
 ├── 01-doc-audit/
-│   ├── PLAN.md
+│   ├── plan.md
 │   ├── EXECUTION_LOG.md
 │   └── VERIFICATION.md
 ├── 02-deduplication/

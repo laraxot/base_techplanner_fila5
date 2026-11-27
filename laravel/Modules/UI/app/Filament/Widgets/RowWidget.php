@@ -20,16 +20,7 @@ abstract class RowWidget extends XotBaseSchemaWidget
     public array $widgets = [];
 
     /** @var view-string */
-    protected string $view;
-
-    public function __construct()
-    {
-        /** @var view-string $view */
-        $view = 'ui::filament.widgets.row';
-        $this->view = $view;
-
-        parent::__construct();
-    }
+    protected string $view = 'ui::filament.widgets.row';
 
     protected int|string|array $columnSpan = 'full';
 

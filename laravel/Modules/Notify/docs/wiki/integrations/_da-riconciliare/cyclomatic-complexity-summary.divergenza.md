@@ -1,8 +1,8 @@
 ---
-qmd: "cyclomatic complexity summary.divergenza"
+qmd: "Cyclomatic Complexity Summary.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: cyclomatic-complexity-summary.md"
+title: "Cyclomatic Complexity Summary.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

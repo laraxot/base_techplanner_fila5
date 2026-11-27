@@ -79,3 +79,5 @@ phpinsights.php
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
 *.lock
+docs/archive/
+docs/screenshots/

@@ -156,7 +156,7 @@ php artisan schedule:clear-cache
        }
    }
    ```
-3. Update `docs/ACTIONS.md` with new action documentation
+3. Update `docs/actions.md` with new action documentation
 
 ## Related Documentation
 

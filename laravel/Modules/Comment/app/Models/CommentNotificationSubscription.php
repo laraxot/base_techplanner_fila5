@@ -6,39 +6,65 @@ namespace Modules\Comment\Models;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\MorphTo;
 use Illuminate\Support\Carbon;
 use Modules\Comment\Database\Factories\CommentNotificationSubscriptionFactory;
-use Modules\Xot\Contracts\ProfileContract;
-use Spatie\Comments\Models\CommentNotificationSubscription as BaseCommentNotificationSubscription;
+use Modules\Comment\Enums\NotificationSubscriptionType;
 
 /**
  * @property int $id
  * @property string $commentable_type
- * @property int $commentable_id
+ * @property int|string $commentable_id
  * @property string $subscriber_type
- * @property int $subscriber_id
- * @property string $type
+ * @property int|string $subscriber_id
+ * @property NotificationSubscriptionType $type
  * @property Carbon|null $created_at
  * @property Carbon|null $updated_at
- * @property string|null $updated_by
- * @property string|null $created_by
- * @property string|null $deleted_at
- * @property string|null $deleted_by
- * @property ProfileContract|null $creator
- * @property ProfileContract|null $updater
- * @property-read Model|\Eloquent $commentable
- * @property-read Model|\Eloquent $subscriber
+ * @property-read BaseMorphPivot|null $commentable
+ * @property-read BaseMorphPivot|null $subscriber
  *
- * @method static CommentNotificationSubscriptionFactory factory($count = null, $state = [])
  * @method static Builder<static> newModelQuery()
  * @method static Builder<static> newQuery()
  * @method static Builder<static> query()
- * @method static CommentNotificationSubscription create(array<string, mixed> $attributes = [])
- * @method static CommentNotificationSubscription firstOrCreate(array<string, mixed> $attributes = [], array<string, mixed> $values = [])
- *
- * @mixin \Eloquent
  */
-class CommentNotificationSubscription extends BaseCommentNotificationSubscription
+class CommentNotificationSubscription extends BaseMorphPivot
 {
-    protected $connection = 'comment';
+    /** @var list<string> */
+    protected $fillable = [
+        'id',
+        'commentable_type',
+        'commentable_id',
+        'subscriber_type',
+        'subscriber_id',
+        'type',
+    ];
+
+    protected $casts = [
+        'type' => NotificationSubscriptionType::class,
+    ];
+
+    /**
+     * @return MorphTo<Model, $this>
+     *
+     * Polymorphic: can relate to any Eloquent model.
+     */
+    public function commentable(): MorphTo
+    {
+        return $this->morphTo();
+    }
+
+    /**
+     * @return MorphTo<Model, $this>
+     *
+     * Polymorphic: can relate to any Eloquent model.
+     */
+    public function subscriber(): MorphTo
+    {
+        return $this->morphTo();
+    }
+
+    protected static function newFactory(): CommentNotificationSubscriptionFactory
+    {
+        return CommentNotificationSubscriptionFactory::new();
+    }
 }

@@ -1,98 +1,49 @@
-# Comment Module
+---
+title: "Comment: indice della documentazione"
+type: index
+status: active
+module: Comment
+created: 2026-10-16
+updated: 2026-10-26
+tags: [docs, comment, indice]
+qmd: "comment indice documentazione commenti front office bmad stories fo-comments"
+issues: []
+discussions: []
+---
 
-Sistema completo per gestione commenti, moderazione e interazioni utente con supporto threading e notifiche.
+# Comment: indice
 
-## Overview
+Questo e' l'indice canonico. `00-index.md` rimandava qui e questa pagina rimandava a `00-INDEX.md`, che non esiste: il giro a vuoto e' chiuso il 2026-10-26.
+La descrizione del modulo (identita', cosa contiene, limiti) e' in [README.md](./README.md).
 
-Il modulo **Comment** fornisce funzionalità avanzate di commento per l'applicazione:
+## Stato (2026-10-26)
 
-- 💬 **Sistema Commenti** - Commenti strutturati con threading (risposte)
-- 👥 **Moderazione** - Strumenti di moderazione, approvazione e rifiuto
-- 🔔 **Notifiche** - Notifiche per risposte e menzioni
-- 🎨 **Interfaccia Filament** - Gestione admin moderna con Filament 4.x
-- 🌐 **Multi-lingua** - Traduzioni IT/EN complete
-- ✅ **PHPStan Level 9** - Compliance statica completa
+Il front office dei commenti (blog, eventi, segnalazioni) permette di pubblicare, rispondere al singolo commento, modificare ed eliminare, con il `MarkdownEditor` di Filament.
+Prove, difetti trovati e decisioni aperte: [CMT-022](./stories/cmt-022.fo-comments-write-reply-markdown-editor.story.md). Decisioni che aspettano l'utente: D-CMT-1..6 in fondo alla story.
 
-## Key Features
+## Dove si trova cosa
 
-### Comment Management
-- Creazione e modifica commenti su qualsiasi modello (polymorphic)
-- Sistema di threading con risposte nested
-- Gestione dello stato (draft, pending, approved, rejected)
-- Timestamp tracciamento creazione/modifica
+| Cosa | Dove |
+|---|---|
+| Dossier BMAD dei commenti del front office (brief, PRD, architettura con ADR-001..008, UX, epic, registro decisioni, stato sprint) | [bmad/fo-comments/README.md](./bmad/fo-comments/README.md) |
+| Story del modulo, `cmt-NNN.slug.story.md` (le `phpstan-*` sono storia dei lavori di qualita') | [stories/](./stories/) |
+| Regole stabili (config, policy, mount del widget, sottocartelle di Actions e widget) | [concepts/](./concepts/) |
+| Wiki del modulo (architettura, comandi, decisioni, entita') | [wiki/](./wiki/00-index.md) |
+| Notifiche e commenti dei ticket | [ticket-comments.md](./ticket-comments.md) |
+| Regola sul CSS di terzi nelle pagine Design Comuni (esenzione nel guard PostCSS) | [Sixteen: vendor-css-on-data-dc-pages-needs-guard-exemption](../../../Themes/Sixteen/docs/wiki/concepts/vendor-css-on-data-dc-pages-needs-guard-exemption.md) |
 
-### Moderation Tools
-- Approvazione/rifiuto commenti
-- Segnalazione spam e commenti problematici
-- Gestione moderatori e permessi granulari
-- Audit trail completo
+## Come si prova
 
-### Notifications
-- Notifiche per risposte ai commenti
-- Menzioni utente (@username)
-- Canali configurabili (mail, database)
-- Template localizati
-
-## Architecture
-
-Il modulo segue i principi Laraxot di modular monolith:
-
-```
-Comment/
-├── app/
-│   ├── Models/
-│   │   ├── Comment.php
-│   │   └── CommentStatus.php
-│   ├── Actions/
-│   ├── Filament/
-│   │   ├── Resources/
-│   │   └── Pages/
-│   └── Events/
-├── database/
-│   ├── migrations/
-│   ├── factories/
-│   └── seeders/
-├── lang/
-│   ├── it/
-│   └── en/
-└── docs/
-```
-
-**Base Classes**: Estende `XotBaseModel`, `XotBaseResource` per pattern coerenti.
-
-## Core Components
-
-### Models
-- **Comment** - Modello principale per i commenti
-- **CommentStatusEnum** - Stati possibili (draft, pending, approved, rejected, spam)
-- Relazioni polimorfiche su qualsiasi modello (`commentable`)
-- Relazione self-referencing per threading (`parent_id`)
-
-### Filament Resources
-- **CommentResource** - Gestione admin completa
-- Filtri per status, autore, data
-- Bulk actions per moderazione
-- Column personalizzate per preview
-
-### Events & Listeners
-- `CommentCreated` - Trigg notifiche
-- `CommentApproved` - Trigger notifiche approvazione
-- `CommentRejected` - Log rifiuti
-
-## Implementation Guide
-
-### Quick Start
 ```bash
-# Abilitare il modulo
-php artisan module:enable Comment
-
-# Eseguire le migrazioni
-php artisan migrate
-
-# Pubblicare configurazioni
-php artisan vendor:publish --tag=comment-config
+cd laravel
+bash ../bashscripts/tools/pest-scratch-db.sh Modules/Comment/tests          # mai sul DB di sviluppo
+./vendor/bin/phpstan analyse Modules/Comment                                # configurazione unica laravel/phpstan.neon
+# nel browser, su un'istanza con DB di prova (scrive commenti):
+ORIGIN=http://127.0.0.1:8091 FO_PATH=/it/blog/<slug> FO_COOKIES=<file privato> FO_OUT=<cartella> \
+  node ../bashscripts/tools/visual/fo-comment-flow-probe.mjs
 ```
 
+<<<<<<< .merge_file_prUN0c
 ### Configurazione
 File: `config/comment.php`
 - Moderation settings (auto-approve, whitelist)
@@ -190,3 +141,8 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 | [`llm-wiki/`](llm-wiki/) | 1 |
 | [`roadmap/`](roadmap/README.md) | 1 |
 | [`wiki/`](wiki/index.md) | 28 |
+=======
+## Cartelle superate
+
+`docs/bmad/architecture-comment-enhancements.md`, `docs/bmad/brainstorming/` e `docs/bmad/planning/` sono marcate `superseded` e rimandano al dossier `bmad/fo-comments/`; restano come cronologia.
+>>>>>>> .merge_file_a5GcSn

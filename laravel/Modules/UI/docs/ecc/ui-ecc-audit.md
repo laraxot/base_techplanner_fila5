@@ -4,13 +4,18 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: UI
+<<<<<<< .merge_file_y0J7no
 qmd: "ECC audit UI security-review clean-code laravel-verification verification-loop tdd-workflow"
+=======
+qmd: "ECC audit UI verification security testing laravel security-review clean-code laravel-verification verification-loop tdd-workflow"
+>>>>>>> .merge_file_pkov2C
 ---
 
 # ECC audit operativo — UI
 
 ## Contratto PTVX
 
+<<<<<<< .merge_file_y0J7no
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -23,6 +28,8 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `tdd-workflow`: regressione sui finding P0
 - [ ] `documentation-sync`: story + indici + qmd
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
+=======
+>>>>>>> .merge_file_pkov2C
 ECC non sostituisce `AGENTS.md`/BMAD: ogni finding diventa story in [epics.md](../bmad/epics.md), con lock,
 fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono scelte on-demand
 (`ecc-ptvx-workflow`); qui è registrato **l'esito**, non la checklist vuota.
@@ -31,18 +38,23 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 | Skill ECC | Stato | Evidenza |
 |---|---|---|
-| `clean-code` (DRY/KISS, Actions-over-Services) | parziale | `ComponentService` vuoto, `PersonForm` senza consumatori, 3 file `.disabled/.fila5` |
+| `clean-code` (DRY/KISS, Actions-over-Services) | parziale | `ComponentService` vuoto, `PersonForm` senza consumatori, 3 file `.disabled/.fila3` |
 | `security-review` (policy, accesso pannello, dati) | aperto | P2-UI4: `UiBasePolicy` senza abilità (nessuna Resource oggi → nessuna esposizione) |
 | `laravel-verification` (route, policy, migration additive) | ok | 3 migration additive (`2026_07_15_*`), nessun `migrate:fresh` |
 | `verification-loop` (PHPStan max + Pest) | PHPStan ok, Pest skip | PHPStan 0 errori; Pest: skip documentato: DB di test `10.100.200.53:3306` irraggiungibile (TCP chiuso) e `Xot/tests/Support/TestDatabaseGuard.php:63` rifiuta DB non `*_test`; i test con DB restano appesi al connect MySQL (timeout 150 s osservato). Nessun test contro il MySQL locale (dati sacri). |
 | `tdd-workflow` (regressione sui P0) | aperto | regressione da scrivere su `UiBasePolicy::before` (utente estraneo → null) |
 | `documentation-sync` | fatto | pack aggiornato: [audit](../bmad/audits/ui-audit.md), [epics](../bmad/epics.md), [decision-log](../bmad/decision-log.md) |
+<<<<<<< .merge_file_y0J7no
 | `context-engineering` | fatto | source-first; il perché in [purpose](../wiki/purpose.md) |
+=======
+| `context-engineering` | fatto | source-first; il perché in [purpose](../bmad/purpose.md) |
+>>>>>>> .merge_file_pkov2C
 
 ## Input misurato (2026-11-16)
 
 | Voce | N |
 |---|---:|
+<<<<<<< .merge_file_y0J7no
 | app PHP | 133 |
 | test | 87 |
 | resources | 0 |
@@ -67,13 +79,15 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
+=======
+>>>>>>> .merge_file_pkov2C
 | PHP `app/` | 133 |
 | Test PHP | 87 |
 | Models | 4 |
 | Policy | 1 |
 | Resource | 0 |
 | Widget | 12 |
-| Actions | 11 |
+| Actions | 6 in `app/Actions/*.php` (11 file PHP con `Action` nel percorso) |
 | Services | 5 |
 | Migration | 3 |
 | Lang IT | 123 |
@@ -92,6 +106,7 @@ fix alla causa, PHPStan + Pest, aggiornamento docs/QMD. Le abilità ECC sono sce
 - baseline o `@phpstan-ignore` senza motivazione; test svuotati per silenziare errori;
 - `migrate:fresh`, `RefreshDatabase`, `--force` su migrate; `laravel/public` al posto di `public_html`;
 - nascondere la navigazione al posto di un controllo di accesso (`canAccess`/policy);
+- docs con date nel nome file;
 - comportamento, schermate o numeri inventati.
 
 ## Riferimenti

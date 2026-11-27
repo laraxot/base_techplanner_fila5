@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -28,7 +28,7 @@ related:
 
 ## 📋 RISPOSTA ALLA DOMANDA
 
-> "percio' hai gia' eseguito tutto quello che avevi analizzato e scritto dentro i vari duplicate-methods-analysis.md e metodi-duplicati-analisi-1.md dentro le cartelle docs dentro i moduli e dentro i temi, e li hai aggiornati che ci sono meno metodi e parametri duplicati? e hai implementato quello che avevi documentato e aggiornato la documentazione?"
+> "percio' hai gia' eseguito tutto quello che avevi analizzato e scritto dentro i vari duplicate-methods-analysis.md e metodi-duplicati-analisi.md dentro le cartelle docs dentro i moduli e dentro i temi, e li hai aggiornati che ci sono meno metodi e parametri duplicati? e hai implementato quello che avevi documentato e aggiornato la documentazione?"
 
 ### ✅ **SÌ, TUTTO COMPLETATO!**
 
@@ -114,7 +114,7 @@ related:
 - [x] Creato `docs/implementazione-refactoring-basemodel.md`
 - [x] Creato `docs/refactoring-completato.md`
 - [x] Creato `docs/implementazione-completa-finale.md` (questo file)
-- [x] Aggiornati **18 file** `metodi-duplicati-analisi-1.md` con sezione implementazione
+- [x] Aggiornati **18 file** `metodi-duplicati-analisi.md` con sezione implementazione
 - [x] Aggiornati documenti per moduli specifici (Xot, User, Cms, Fixcity)
 - [x] Aggiornati documenti per temi (Sixteen, TwentyOne)
 
@@ -177,7 +177,7 @@ related:
 ║  ✅ Documentazione:                                 ║
 ║     - Files aggiornati: 25                          ║
 ║     - Files creati: 10                              ║
-║     - metodi-duplicati-analisi-1.md: 18 aggiornati   ║
+║     - metodi-duplicati-analisi.md: 18 aggiornati   ║
 ║                                                      ║
 ║  📊 TOTALE:                                         ║
 ║     - Files modificati/creati: 38                   ║
@@ -215,7 +215,7 @@ docs/
 └── implementazione-completa-finale.md      ✅ Questo file
 
 Modules/*/docs/
-├── metodi-duplicati-analisi-1.md (18 files)  ✅ Aggiornati
+├── metodi-duplicati-analisi.md (18 files)  ✅ Aggiornati
 ├── analisi-metodi-duplicati.md (4 files)   ✅ Creati
 └── duplicate-methods-analysis.md (vari)    ✅ Esistenti
 
@@ -403,9 +403,9 @@ ROI totale = (1,950 + 310 - 600) / 600 = +276%
 
 ## 🎯 COSA È STATO IMPLEMENTATO ESATTAMENTE
 
-### Da metodi-duplicati-analisi-1.md
+### Da metodi-duplicati-analisi.md
 
-I documenti `metodi-duplicati-analisi-1.md` contenevano 4 proposte principali:
+I documenti `metodi-duplicati-analisi.md` contenevano 4 proposte principali:
 
 #### ✅ Proposta 1: Estendere HasXotTable Trait
 **Status:** ✅ IMPLEMENTATO in modo migliore (BaseModel refactoring)  
@@ -450,7 +450,7 @@ I documenti `metodi-duplicati-analisi-1.md` contenevano 4 proposte principali:
 ✅ Modules/Seo/docs/metodi-duplicati-analisi-1.md
 ✅ Modules/Tenant/docs/metodi-duplicati-analisi-1.md
 ✅ Modules/UI/docs/metodi-duplicati-analisi-1.md
-✅ Modules/User/docs/metodi-duplicati-analisi-1.md
+✅ Modules/User/docs/metodi-duplicati-analisi.md
 ✅ Modules/Xot/docs/metodi-duplicati-analisi-1.md
 ```
 
@@ -632,7 +632,7 @@ TOTALE (Fase 1 + 2):
    - Riduzione 97% codice scopes
 
 5. ✅ **Documentazione Completa**
-   - 18 metodi-duplicati-analisi-1.md aggiornati
+   - 18 metodi-duplicati-analisi.md aggiornati
    - 10 nuovi documenti creati
    - 25 documenti totali aggiornati
    - Sezione implementazione in ogni file
@@ -655,7 +655,7 @@ TOTALE (Fase 1 + 2):
 ## 💬 RISPOSTA DIRETTA ALLA TUA DOMANDA
 
 ### Hai chiesto:
-> "hai gia' eseguito tutto quello che avevi analizzato e scritto dentro i vari duplicate-methods-analysis.md e metodi-duplicati-analisi-1.md?"
+> "hai gia' eseguito tutto quello che avevi analizzato e scritto dentro i vari duplicate-methods-analysis.md e metodi-duplicati-analisi.md?"
 
 ### ✅ RISPOSTA: **SÌ, AL 100%!**
 
@@ -666,7 +666,7 @@ TOTALE (Fase 1 + 2):
 4. ✅ **Creato** ActionPresets (Proposta 3)
 5. ✅ **Creato** ColumnBuilder (Proposta 2)
 6. ✅ **Creato** HasCommonScopes (Proposta 4)
-7. ✅ **Aggiornato** tutti i 18 metodi-duplicati-analisi-1.md
+7. ✅ **Aggiornato** tutti i 18 metodi-duplicati-analisi.md
 8. ✅ **Documentato** tutto con esempi concreti
 9. ✅ **Validato** con PHPStan (0 errori)
 10. ✅ **Formattato** con Pint
@@ -692,7 +692,7 @@ TOTALE (Fase 1 + 2):
 ║     ✅ HasCommonScopes: 160 LOC                           ║
 ║                                                            ║
 ║  📚 Documentazione:                                        ║
-║     ✅ 18 metodi-duplicati-analisi-1.md aggiornati          ║
+║     ✅ 18 metodi-duplicati-analisi.md aggiornati          ║
 ║     ✅ 10 nuovi documenti creati                          ║
 ║     ✅ 38 files totali modificati                         ║
 ║                                                            ║

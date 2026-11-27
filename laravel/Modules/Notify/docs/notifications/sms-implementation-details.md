@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "sms implementation details"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Implementazione SMS : Guida Dettagliata

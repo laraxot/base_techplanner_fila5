@@ -1,8 +1,8 @@
 ---
-qmd: "html structure comparison.divergenza"
+qmd: "HTML Structure Comparison.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: html-structure-comparison.md"
+title: "HTML Structure Comparison.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

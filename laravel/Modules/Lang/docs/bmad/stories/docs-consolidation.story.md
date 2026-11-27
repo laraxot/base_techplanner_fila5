@@ -1,5 +1,4 @@
 ---
-qmd: "lang bmad stories docs consolidation story md"
 title: "Docs Consolidation: Lang Module Organization"
 date: 2026-10-06
 status: completed

@@ -24,7 +24,7 @@ Il pattern originale di Karpathy usa tre cartelle distinte alla root del progett
 project/
 ├── raw/     # fonti immutabili
 ├── wiki/    # conoscenza compilata dall'LLM
-└── schema/  # CLAUDE.md / agents.md
+└── schema/  # CLAUDE.md / AGENTS.md
 ```
 
 Nel nostro caso, ogni modulo e tema ha già una cartella `docs/`. Il mapping naturale è:

@@ -14,7 +14,7 @@ discussions: []
 **Date:** 2026‑04‑15
 
 ## Goal
-Create a single source of truth for the large AI‑agent markdown files (`GEMINI.md`, `CLAUDE.md`, `QWEN.md`) and ensure every module and theme in the repository has a `docs/wiki/` (and accompanying `llm‑wiki` assets) while avoiding duplicated content.
+Create a single source of truth for the large AI‑agent markdown files (`gemini.md`, `CLAUDE.md`, `qwen.md`) and ensure every module and theme in the repository has a `docs/wiki/` (and accompanying `llm‑wiki` assets) while avoiding duplicated content.
 
 ## Architecture Overview
 ```
@@ -68,7 +68,7 @@ The bullet should be placed under the **“leggi prima”** section or a dedicat
 ## Migration Steps
 1. Create `./.agents/docs/ai-agents/shared/` and add the four SOLID markdown files.
 2. Add the three stub `README.md` files under `gemini/`, `claude/`, `qwen/`.
-3. Remove the now‑redundant large `GEMINI.md`, `CLAUDE.md`, `QWEN.md` files (or replace them with a one‑line redirect to the stub README).
+3. Remove the now‑redundant large `gemini.md`, `CLAUDE.md`, `qwen.md` files (or replace them with a one‑line redirect to the stub README).
 4. Update `CLAUDE.md` with the LLM‑Wiki reminder bullet.
 5. Run `qmd embed` to index the new markdown files for the local search engine.
 

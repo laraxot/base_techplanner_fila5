@@ -146,15 +146,15 @@ Tutti i campi devono seguire la struttura espansa:
 
 ## Documentazione Correlata
 
-- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation Audit](archive/traduzioni_navigation_2025.md)
-- [Best Practices Traduzioni](../../Xot/docs/translations/translation-rules.md)
+- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../Xot/docs/translations/translation-rules.md)
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../Xot/docs/translations/translation-rules.md)
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 # Errori comuni nei file di traduzione
@@ -292,14 +292,14 @@ Tutti i campi devono seguire la struttura espansa:
 
 ## Documentazione Correlata
 
-- [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
-- [Traduzioni Navigation Audit](archive/traduzioni_navigation_2025.md)
-- [Best Practices Traduzioni](../../Xot/docs/translations/translation-rules.md)
+- [Correzioni Errori Sintassi 2025](correzioni_errori_sintassi_2025.md)
+- [Traduzioni Navigation Audit](traduzioni_navigation_2025.md)
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../Xot/docs/translations/translation-rules.md)
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
-- [Best Practices Traduzioni](../../Xot/docs/translations/translation-rules.md)
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*

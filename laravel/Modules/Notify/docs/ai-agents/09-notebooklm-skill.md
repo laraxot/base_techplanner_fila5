@@ -1,10 +1,10 @@
 ---
-title: "09 notebooklm skill"
+title: "09 Notebooklm Skill"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "09 notebooklm skill"
+qmd: "09 Notebooklm Skill"
 issues: []
 discussions: []
 ---
@@ -18,12 +18,12 @@ discussions: []
 
 ---
 
-title: "09 notebooklm skill"
+title: "09 NOTEBOOKLM SKILL"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "09 notebooklm skill"
+qmd: "09 NOTEBOOKLM SKILL"
 issues: []
 discussions: []
 ## Cosa fa

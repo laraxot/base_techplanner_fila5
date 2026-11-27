@@ -33,7 +33,7 @@ Vedi [wiki/concepts/model-policy-laravel-contract.md](./wiki/concepts/model-poli
 
 ## Collegamenti
 
-- [00-INDEX.md](./00-INDEX.md)
+- [00-index.md](./00-index.md)
 - [Xot audit](../../Xot/docs/ponytail-audit-over-engineering.md)
 - [model-policy-laravel-contract.md](./wiki/concepts/model-policy-laravel-contract.md)
-- [policy-restoration-incident.md](wiki/concepts/policy-restoration-incident.md)
+- [policy-restoration-incident.md](./policy-restoration-incident.md)

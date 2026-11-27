@@ -178,9 +178,9 @@ find Modules -name "composer.json" \
 - [GitHub Releases](https://github.com/filamentphp/filament/releases)
 
 ### Project
-- [FILAMENT_VERSION_POLICY.md](FILAMENT_VERSION_POLICY.md)
-- [COMPOSER_STRATEGY.md](COMPOSER_STRATEGY.md)
-- [COMPOSER_UPDATE_REPORT.md](COMPOSER_UPDATE_REPORT.md)
+- [FILAMENT_VERSION_POLICY.md](filament_version_policy.md)
+- [COMPOSER_STRATEGY.md](composer_strategy.md)
+- [COMPOSER_UPDATE_REPORT.md](composer_update_report.md)
 
 ## ✅ Verification Checklist
 

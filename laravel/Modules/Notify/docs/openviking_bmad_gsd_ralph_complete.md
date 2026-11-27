@@ -360,8 +360,8 @@ ls -la .planning/
 
 # Review AGENTS.md
 cat AGENTS.md
-# Review agents.md
-cat agents.md
+# Review AGENTS.md
+cat AGENTS.md
 ```
 
 ## Resources
@@ -372,7 +372,7 @@ cat agents.md
 - [Unified Workflow](./unified-ai-workflow.md)
 - [BMAD Workflow](laravel/Modules/Xot/docs/bmad-workflow-guide.md)
 - [AGENTS.md](../AGENTS.md)
-- [agents.md](../agents.md)
+- [AGENTS.md](../AGENTS.md)
 
 ### Scripts
 - OpenViking Init: `bashscripts/ai/openviking-init.sh`

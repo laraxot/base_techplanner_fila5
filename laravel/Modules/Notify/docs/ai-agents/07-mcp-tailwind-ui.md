@@ -1,10 +1,10 @@
 ---
-title: "07 mcp tailwind ui"
+title: "07 MCP Tailwind UI"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "07 mcp tailwind ui"
+qmd: "07 MCP Tailwind UI"
 issues: []
 discussions: []
 ---
@@ -17,12 +17,12 @@ discussions: []
 
 ---
 
-title: "07 mcp tailwind ui"
+title: "07 MCP TAILWIND UI"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "07 mcp tailwind ui"
+qmd: "07 MCP TAILWIND UI"
 issues: []
 discussions: []
 ## 📋 Panoramica

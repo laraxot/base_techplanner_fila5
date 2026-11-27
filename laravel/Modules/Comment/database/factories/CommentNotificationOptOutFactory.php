@@ -13,13 +13,14 @@ use Modules\Comment\Models\CommentNotificationOptOut;
 class CommentNotificationOptOutFactory extends Factory
 {
     /**
-     * @var class-string<CommentNotificationOptOut>
+     * The name of the factory's corresponding model.
      */
     protected $model = CommentNotificationOptOut::class;
 
     /**
-     * @return array<string, mixed>
+     * Define the model's default state.
      */
+    /** @return array<string, mixed> */
     public function definition(): array
     {
         return [];

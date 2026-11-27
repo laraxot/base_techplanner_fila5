@@ -55,7 +55,7 @@ discussions: []
 - docs/notifications/telegram-notifications-guide.md
 - docs/phpstan-fixes-early-cycle.md
 - docs/provider-actions-architecture.md
-- docs/readme.md
+- docs/README.md
 - docs/reusabilitylines.md
 - docs/roadmap.md
 - docs/sms-provider-configuration-best-practices.md

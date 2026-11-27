@@ -57,12 +57,12 @@ discussions: []
 |----------|---------|-----------|
 | **PHASE-1-STRATEGY.md** | Complete research & strategy | 20 min |
 | **GSD-PHASE-1-EXECUTION.md** | Execution plan with all 6 subtasks | 15 min |
-| **00-INDEX.md** | Master documentation index | 10 min |
+| **00-index.md** | Master documentation index | 10 min |
 
 ### 🔧 TOOLS & SCRIPTS
 | Document | Purpose | Read Time |
 |----------|---------|-----------|
-| **bashscripts/docs/html/INDEX.md** | HTML comparison tools docs | 10 min |
+| **bashscripts/docs/html/index.md** | HTML comparison tools docs | 10 min |
 
 ### 👥 TASK-SPECIFIC WORKFLOWS
 | Document | For | Purpose | Read Time |
@@ -76,7 +76,7 @@ discussions: []
 laravel/Themes/Sixteen/docs/
 ├─ PHASE-1-STRATEGY.md                    (strategy)
 ├─ GSD-PHASE-1-EXECUTION.md               (execution plan)
-├─ 00-INDEX.md                            (master index)
+├─ 00-index.md                            (master index)
 ├─ PHASE-1-EXECUTION-STATUS.md            (progress tracking)
 ├─ body-structure-comparison/
 │  └─ segnalazioni-elenco/
@@ -129,7 +129,7 @@ laravel/Themes/Sixteen/docs/
 **Subtask 6** (LATER):
 - ⏳ Input: Final comparison results from Subtask 5
 - 📝 Create: PHASE-1-COMPLETION-REPORT.md
-- 🔄 Update: 00-INDEX.md with Phase 1 status
+- 🔄 Update: 00-index.md with Phase 1 status
 
 **Read First**:
 1. PHASE-1-EXECUTION-STATUS.md (overview)
@@ -291,7 +291,7 @@ Before starting your subtask:
 **For questions about**:
 - **Strategy**: PHASE-1-STRATEGY.md
 - **Execution**: GSD-PHASE-1-EXECUTION.md
-- **Tools**: bashscripts/docs/html/INDEX.md
+- **Tools**: bashscripts/docs/html/index.md
 - **Blade fixes**: EXECUTOR-2-SUBTASKS-3-4.md
 - **Analysis**: SUBTASK-2-ANALYSIS-WORKFLOW.md
 - **Status**: PHASE-1-EXECUTION-STATUS.md
@@ -366,8 +366,8 @@ Before starting your subtask:
 |------|------|----------|--------|
 | Strategy | PHASE-1-STRATEGY.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
 | Execution Plan | GSD-PHASE-1-EXECUTION.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
-| Master Index | 00-INDEX.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
-| Tool Docs | bashscripts/docs/html/INDEX.md | bashscripts/docs/html/ | ✅ DONE |
+| Master Index | 00-index.md | laravel/Themes/Sixteen/docs/ | ✅ DONE |
+| Tool Docs | bashscripts/docs/html/index.md | bashscripts/docs/html/ | ✅ DONE |
 | Comparison Script | html-structure-compare.sh | bashscripts/body/ | ✅ READY |
 | Blade Fixes | [slug].blade.php | laravel/Themes/Sixteen/resources/views/pages/tests/ | ⏳ PENDING |
 | JSON Verify | tests.segnalazioni-elenco.json | laravel/config/local/fixcity/database/content/pages/ | ⏳ PENDING |

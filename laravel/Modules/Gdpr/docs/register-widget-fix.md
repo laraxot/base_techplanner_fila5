@@ -1,15 +1,18 @@
 ---
-title: "register widget fix "
+title: "register widget fix"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "register widget fix "
+qmd: "register widget fix"
 issues: []
 discussions: []
 ---
 
 # RegisterWidget Fix - 13 Febbraio 2026
+
+> **Superato (2026-11-19).** I testi di registrazione descritti qui venivano da un altro progetto e sono stati tolti dal modulo, che e' condiviso e deve restare neutro. Cosa possiede il modulo e cosa il tema: [register-widget-copy-ownership.md](register-widget-copy-ownership.md). Storia: [stories/register-copy-project-agnostic.story.md](stories/register-copy-project-agnostic.story.md).
+
 
 ## Problema Risolto
 
@@ -178,7 +181,7 @@ Il layout della pagina ora è:
 Container: max-w-7xl (1280px wide)
 ├── Grid: lg:grid-cols-2 gap-16
 │   ├── Left Column: Branding & Benefits
-│   │   ├── Title: "Unisciti alla Pizza Revolution 🍕"
+│   │   ├── Title: (testo del tema ospite)
 │   │   ├── Subtitle: Community description
 │   │   └── Benefits list (icons + text)
 │   └── Right Column: Registration Form Card

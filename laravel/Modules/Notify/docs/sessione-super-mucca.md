@@ -68,7 +68,7 @@ discussions: []
    - ✅ Next steps e pattern correlati
    - ✅ FAQ per nuovi developer
 
-6. **[Executive Summary](./XotBasePivot-Executive-Summary.md)** (2.000+ parole)
+6. **[Executive Summary](./xotbasepivot-executive-summary.md)** (2.000+ parole)
    - ✅ TL;DR per management
    - ✅ Business case con ROI 58.500%
    - ✅ Risk assessment (basso)

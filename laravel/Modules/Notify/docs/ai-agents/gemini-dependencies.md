@@ -78,5 +78,5 @@ composer run go
 
 - [Indice GEMINI](./gemini-split-index.md)
 - [packages-spatie.md](./packages-spatie.md)
-- [GEMINI.md originale](../../GEMINI.md)
+- [gemini.md originale](../../gemini.md)
 - [Index principale](./index.md)

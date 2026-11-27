@@ -43,4 +43,4 @@ creare, per tre motivi:
 - Nota per il second brain: la citazione a una regola inesistente è un caso concreto
   del pattern "falsa certezza su qualcosa di non verificato" osservato più volte in
   questa sessione — vedi
-  `bashscripts/ai/wiki/memories/fork-hallucinated-user-turn-2026-09-01.md`.
+  `bashscripts/ai/wiki/memories/fork-hallucinated-user-turn.md`.

@@ -335,7 +335,7 @@ class Template extends Model
 
 ## analysis-detailed-1
 
-*Consolidated from: `analysis-detailed-1.md`*
+*Consolidated from: `analysis-detailed.md`*
 
 title: "Analysis Detailed 1"
 type: concept
@@ -350,7 +350,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -362,42 +362,42 @@ related:
 
 ## analysis-detailed-3
 
-*Consolidated from: `analysis-detailed-3.md`*
+*Consolidated from: `analysis-detailed.md`*
 
 
 ---
 
 ## analysis-detailed-4
 
-*Consolidated from: `analysis-detailed-4.md`*
+*Consolidated from: `analysis-detailed.md`*
 
 
 ---
 
 ## analysis-detailed-5
 
-*Consolidated from: `analysis-detailed-5.md`*
+*Consolidated from: `analysis-detailed.md`*
 
 
 ---
 
 ## analysis-detailed-6
 
-*Consolidated from: `analysis-detailed-6.md`*
+*Consolidated from: `analysis-detailed.md`*
 
 
 ---
 
 ## analysis-detailed-7
 
-*Consolidated from: `analysis-detailed-7.md`*
+*Consolidated from: `analysis-detailed.md`*
 
 
 ---
 
 ## analysis-detailed-8
 
-*Consolidated from: `analysis-detailed-8.md`*
+*Consolidated from: `analysis-detailed.md`*
 
 
 ---

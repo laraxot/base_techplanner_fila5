@@ -32,5 +32,5 @@ Theme docs should stay smaller than module docs.
 
 ## Cleanup Rule
 
-Keep only one active index. Merge duplicate `README.md`, `00-index.md`, and `INDEX.md` content into `docs/index.md`, then delete duplicates in the cleanup PR.
+Keep only one active index. Merge duplicate `README.md`, `00-index.md`, and `index.md` content into `docs/index.md`, then delete duplicates in the cleanup PR.
 

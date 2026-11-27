@@ -264,3 +264,5 @@ audit-coverage/
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
+tests/coverage-*.*
+docs/screenshots/

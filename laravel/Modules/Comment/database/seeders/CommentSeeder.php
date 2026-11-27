@@ -7,6 +7,7 @@ namespace Modules\Comment\Database\Seeders;
 use Illuminate\Database\Eloquent\Collection as EloquentCollection;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Database\Seeder;
+use Illuminate\Console\Command;
 use Modules\Comment\Database\Factories\CommentFactory;
 use Modules\Comment\Models\Comment;
 use Modules\User\Models\User;
@@ -38,7 +39,7 @@ class CommentSeeder extends Seeder
                     $user = $users->random();
                     $id = $user?->getKey();
 
-                    return SafeIntCastAction::cast($id ?? 1);
+                    return is_int($id) ? $id : SafeIntCastAction::cast($id ?? 1);
                 },
             ]);
 
@@ -58,7 +59,7 @@ class CommentSeeder extends Seeder
                         $user = $users->random();
                         $id = $user?->getKey();
 
-                        return SafeIntCastAction::cast($id ?? 1);
+                        return is_int($id) ? $id : SafeIntCastAction::cast($id ?? 1);
                     },
                 ]);
         }
@@ -75,11 +76,11 @@ class CommentSeeder extends Seeder
                     $user = $users->random();
                     $id = $user?->getKey();
 
-                    return SafeIntCastAction::cast($id ?? 1);
+                    return is_int($id) ? $id : SafeIntCastAction::cast($id ?? 1);
                 },
             ]);
 
-        if ($this->command !== null) {
+        if ($this->command instanceof Command) {
             $this->command->info('Commenti creati con successo!');
         }
     }

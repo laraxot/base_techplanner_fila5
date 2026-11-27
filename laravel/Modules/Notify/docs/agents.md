@@ -49,7 +49,7 @@ docs/
 │   ├── papers/    # Paper tecnici
 │   └── notes/     # Note e appunti
 ├── .schema/       # Schema per l'LLM
-│   └── WIKI_SCHEMA.md
+│   └── wiki_schema.md
 ├── wiki/index.md  # Indice principale
 └── log.md         # Log cronologico
 ```
@@ -62,7 +62,7 @@ docs/
 
 ### Riferimenti
 
-- [Schema Wiki](./docs/.schema/WIKI_SCHEMA.md) - Istruzioni per l'LLM
+- [Schema Wiki](./docs/.schema/wiki_schema.md) - Istruzioni per l'LLM
 - [Index Globale](./docs/wiki/index.md) - Catalogo di tutte le wiki
 - [Log](./docs/log.md) - Cronologia delle operazioni
 
@@ -95,9 +95,9 @@ discussions: []
 
 ---
 **See also:**
-- [CLAUDE.md](./CLAUDE.md)
-- [QWEN.md](./QWEN.md)
-- [GEMINI.md](./GEMINI.md)
+- [CLAUDE.md](./claude.md)
+- [qwen.md](./qwen.md)
+- [gemini.md](./gemini.md)
 
 *Ultimo aggiornamento: Aprile 2026*
 
@@ -113,7 +113,7 @@ No previous sessions found.
 
 ---
 
-<!-- Merged from agents.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from AGENTS.md, which collided with this file on case-insensitive filesystems. -->
 
 # Project Agents (Modular)
 
@@ -193,9 +193,9 @@ docs/
 
 ---
 **See also:**
-- [CLAUDE.md](./CLAUDE.md)
-- [QWEN.md](./QWEN.md)
-- [GEMINI.md](./GEMINI.md)
+- [CLAUDE.md](./claude.md)
+- [qwen.md](./qwen.md)
+- [gemini.md](./gemini.md)
 
 *Ultimo aggiornamento: Aprile 2026*
 

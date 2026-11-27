@@ -132,8 +132,8 @@ $result = $value['key']; // Now safe
 ## 📝 Documentation Status
 
 ### Current Documentation
-- ✅ `phpstan-sessione-completa-2025-11.md` - Comprehensive session documentation
-- ✅ `phpstan-correzioni-2025-11.md` - Detailed corrections
+- ✅ `phpstan-sessione-completa-.md` - Comprehensive session documentation
+- ✅ `phpstan-correzioni-.md` - Detailed corrections
 - ✅ `phpstan-level-10-fixes.md` - Level 10 fixes
 - ✅ `phpstan-analysis-job.md` - Current status (this file)
 

@@ -9,11 +9,11 @@ issues: []
 discussions: []
 ---
 
-# QWEN.md Split Index
+# qwen.md Split Index
 
-> Documentazione QWEN.md spezzata in file più piccoli.
+> Documentazione qwen.md spezzata in file più piccoli.
 
-## 📚 File da QWEN.md
+## 📚 File da qwen.md
 
 | File | Contenuto | Righe |
 |------|-----------|-------|
@@ -25,11 +25,11 @@ discussions: []
 
 ## 🔗 Collegamento
 
-- [QWEN.md originale](../../QWEN.md)
+- [qwen.md originale](../../qwen.md)
 - [Index principale](./index.md)
 
 ## Note
 
-- QWEN.md è il file più grande (890 righe)
+- qwen.md è il file più grande (890 righe)
 - È stato diviso per argomento
 - Contiene molte memorie importanti

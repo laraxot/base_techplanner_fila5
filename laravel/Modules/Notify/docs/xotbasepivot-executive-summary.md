@@ -154,7 +154,7 @@ discussions: []
 
 ### Per Decision Makers
 
-1. **[Questo documento](./XotBasePivot-Executive-Summary.md)** - Executive summary
+1. **[Questo documento](./xotbasepivot-executive-summary.md)** - Executive summary
 2. **[Architecture README](./architecture/README.md)** - Overview e quick links
 
 ### Per Developer

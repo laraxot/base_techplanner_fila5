@@ -583,7 +583,7 @@ test('user registration saves gdpr consents', function () {
 - [Testing Guidelines](./testing-guidelines.md)
 
 ### Documentazione Moduli Correlati
-- [User Module - GDPR Compliance](../../user/docs/gdpr-compliance-complete.md)
+- [User Module - GDPR Compliance](../../User/docs/gdpr-compliance-complete.md)
 - [User Module - Events](../../user/docs/events.md)
 - [Xot Module - Traits](../../xot/docs/traits.md)
 

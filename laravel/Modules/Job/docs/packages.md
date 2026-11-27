@@ -14,9 +14,9 @@ discussions: []
 ## Pacchetti Utilizzati
 
 ### Core
-- [laraxot/module_xot_fila5](packages.md) - Modulo base per funzionalità comuni
-- [laraxot/module_ui](packages.md) - Componenti UI e temi
-- [laraxot/module_tenant_fila5](packages.md) - Gestione multi-tenant
+- [laraxot/module_xot_fila5](../xot/docs/packages.md) - Modulo base per funzionalità comuni
+- [laraxot/module_ui](../ui/docs/packages.md) - Componenti UI e temi
+- [laraxot/module_tenant_fila5](../tenant/docs/packages.md) - Gestione multi-tenant
 
 ### Queue
 - [laravel/horizon](https://github.com/laravel/horizon)

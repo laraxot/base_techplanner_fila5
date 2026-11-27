@@ -47,25 +47,25 @@ Notify ha **1,516 file .md** (100% uppercase) con **44 stub vuoti**. Secondo mod
 
 ### P0.1 — 100% uppercase
 Tutti i file in `Notify/docs/` sono maiuscoli. Esempi:
-- `ACTIONS.md`
+- `actions.md`
 - `AGENTS.md`
 - `CHANGELOG.md`
-- `INDEX.md`
-- `PROJECT-STRUCTURE.md`
+- `index.md`
+- `project-structure.md`
 - `PRD.md`
 
 ### P0.2 — 44 stub vuoti
 Residui di iterazioni agenti, 0-100 byte ciascuno.
 
 ### P0.3 — Nessun indice consolidato
-Nessun `00-index.md` o `INDEX.md` (a parte l'uppercase `INDEX.md`). Impossibile trovare contenuti.
+Nessun `00-index.md` o `index.md` (a parte l'uppercase `index.md`). Impossibile trovare contenuti.
 
 ---
 
 ## Pattern di qualità esistenti (mantenere)
 
 - `docs/CHANGELOG.md` (contenuto reale)
-- `docs/ACTIONS.md` (regole Actions)
+- `docs/actions.md` (regole Actions)
 - `docs/AGENTS.md` (configurazione agenti)
 
 ---
@@ -90,12 +90,12 @@ find laravel/Modules/Notify/docs -type f -name "*.md" \
 ```
 
 ### Fase 3 — Consolidamento
-- Merge `INDEX.md` → `00-index.md`
-- Merge `AGENTS.md` → `agents.md`
-- Merge `ACTIONS.md` → `actions.md`
-- Merge `CHANGELOG.md` → `changelog.md`
+- Merge `index.md` → `00-index.md`
+- Merge `AGENTS.md` → `AGENTS.md`
+- Merge `actions.md` → `actions.md`
+- Merge `CHANGELOG.md` → `CHANGELOG.md`
 - Merge `PRD.md` → `prd.md`
-- Merge `PROJECT-STRUCTURE.md` → `project-structure.md`
+- Merge `project-structure.md` → `project-structure.md`
 
 ---
 

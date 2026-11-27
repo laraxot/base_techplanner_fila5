@@ -81,8 +81,7 @@ class MailTemplateVersion extends BaseModel
         'text_template',
         'version',
         'created_by',
-        'change_notes',
-    ];
+        'change_notes'];
 
     public function restoreTemplate(): MailTemplate
     {
@@ -95,8 +94,7 @@ class MailTemplateVersion extends BaseModel
         $template->update([
             'subject' => $this->subject,
             'html_template' => $this->html_template,
-            'text_template' => $this->text_template,
-        ]);
+            'text_template' => $this->text_template]);
 
         return $template;
     }
@@ -112,7 +110,6 @@ class MailTemplateVersion extends BaseModel
             'metadata' => 'array',
             'created_at' => 'datetime',
             'updated_at' => 'datetime',
-            'deleted_at' => 'datetime',
-        ];
+            'deleted_at' => 'datetime'];
     }
 }

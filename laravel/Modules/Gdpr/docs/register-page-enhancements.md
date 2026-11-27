@@ -11,6 +11,9 @@ discussions: []
 
 # Register Page Enhancements: Super Clickbait Strategy
 
+> **Superato (2026-11-19).** I testi di registrazione descritti qui venivano da un altro progetto e sono stati tolti dal modulo, che e' condiviso e deve restare neutro. Cosa possiede il modulo e cosa il tema: [register-widget-copy-ownership.md](register-widget-copy-ownership.md). Storia: [stories/register-copy-project-agnostic.story.md](stories/register-copy-project-agnostic.story.md).
+
+
 This document outlines the enhancements made to the registration page to improve user experience, increase conversion rates, and apply "super clickbait" strategies.
 
 ## Objective

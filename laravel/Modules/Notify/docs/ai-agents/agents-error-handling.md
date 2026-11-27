@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "agents error handling"
 issues: []
 discussions: []
+status: draft
 ---
 
 # AGENTS Error Handling
@@ -29,15 +30,6 @@ try {
 ```
 
 ---
-
-title: "agents error handling"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "agents error handling"
-issues: []
-discussions: []
 ## Validation
 
 - Use **Form Request classes** for validation (not inline)
@@ -101,5 +93,7 @@ discussions: []
 - [Indice AGENTS](./agents-split-index.md)
 - [phpstan.md](../phpstan.md) - Analisi statica
 - [AGENTS.md originale](../../AGENTS.md)
-- [agents.md originale](../../agents.md)
+- [AGENTS.md originale](../../AGENTS.md)
+- [AGENTS.md originale](../agents.md)
+- [AGENTS.md originale](../agents.md)
 - [Index principale](./index.md)

@@ -1,8 +1,8 @@
 ---
-qmd: "launch.divergenza"
+qmd: "Launch.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: launch.md"
+title: "Launch.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

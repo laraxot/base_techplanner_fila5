@@ -13,9 +13,9 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
-  - ../notifications/readme.md
-  - readme.md
-  - ../templates/readme.md
+  - ../notifications/README.md
+  - README.md
+  - ../templates/README.md
 ---
 # Integrazioni
 
@@ -142,7 +142,7 @@ Per contribuire alla documentazione, seguire le [Linee Guida](../../../../../doc
 Per una lista completa di tutti i collegamenti tra i README.md, consultare il file [README_links.md](../../../../../docs/readme_links.md). 
 ---
 
-<!-- Merged from readme.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from README.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "Readme"

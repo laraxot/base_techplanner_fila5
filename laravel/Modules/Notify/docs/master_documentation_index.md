@@ -1,12 +1,13 @@
 ---
-title: "MASTER DOCUMENTATION INDEX"
+title: "master documentation index"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "MASTER DOCUMENTATION INDEX"
+qmd: "master documentation index"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 📚 Master Documentation Index
@@ -16,21 +17,12 @@ discussions: []
 **Owner**: Multi-Agent Team
 
 ---
-
-title: "MASTER DOCUMENTATION INDEX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "MASTER DOCUMENTATION INDEX"
-issues: []
-discussions: []
 ## 🎯 Quick Navigation
 
 ### Per Nuovi Arrivati
-1. [Zen of Documentation](./ZEN_OF_DOCUMENTATION.md) - Filosofia e principi
-2. [Documentation Governance](./DOCUMENTATION_GOVERNANCE.md) - Regole e standard
-3. [Multi-Agent Collaboration](./MULTI_AGENT_COLLABORATION.md) - Come lavorare con AI agents
+1. [Zen of Documentation](./zen_of_documentation.md) - Filosofia e principi
+2. [Documentation Governance](./documentation_governance.md) - Regole e standard
+3. [Multi-Agent Collaboration](./multi_agent_collaboration.md) - Come lavorare con AI agents
 
 ### Per Sviluppatori
 - [Architecture Overview](./architecture/README.md)
@@ -38,8 +30,8 @@ discussions: []
 - [Coding Standards](./conventions/README.md)
 
 ### Per AI Agents
-- [Project Context](./project/project.md)
-- [Agent Coordination](./MULTI_AGENT_COLLABORATION.md)
+- [Project Context](./project/PROJECT.md)
+- [Agent Coordination](./multi_agent_collaboration.md)
 - [OpenViking Context](../bashscripts/ai/openviking.md)
 
 ---
@@ -60,12 +52,12 @@ discussions: []
 
 ### 📋 Standards
 - [Coding Conventions](./conventions/README.md)
-- [Documentation Standards](./DOCUMENTATION_GOVERNANCE.md)
+- [Documentation Standards](./documentation_governance.md)
 - [Git Workflow](./conventions/git-workflow.md)
 - [Naming Conventions](./conventions/naming.md)
 
 ### 🤖 AI Tools
-- [Multi-Agent Guide](./MULTI_AGENT_COLLABORATION.md)
+- [Multi-Agent Guide](./multi_agent_collaboration.md)
 - [BMAD Framework](./bmad/README.md)
 - [GSD Workflow](./gsd/README.md)
 - [NotebookLM](./notebooklm/README.md)
@@ -73,7 +65,12 @@ discussions: []
 
 ### 📊 Reports
 - [Status Reports](./reports/README.md)
+<<<<<<< .merge_file_ok6BMV
 - [Quality Reports](./reports/quality.md)
+=======
+- [Quality Reports](roadmap/quality.md)
+- [Quality Reports](./roadmap/quality.md)
+>>>>>>> .merge_file_44X0Lb
 - [Performance Reports](./reports/performance.md)
 
 ---
@@ -92,6 +89,16 @@ discussions: []
 | **Geo** | [Modules/Geo/docs/](../laravel/Modules/Geo/docs/) | ✅ Good |
 | **AI** | [Modules/AI/docs/](../laravel/Modules/AI/docs/) | ✅ Good |
 | **Fixcity** | [Modules/Fixcity/docs/](../laravel/Modules/Fixcity/docs/) | ✅ Good |
+| **Xot** | [Modules/Xot/docs/](../../Xot/docs) | ⚠️ Needs cleanup |
+| **Cms** | [Modules/Cms/docs/](../../Cms/docs) | ⚠️ Needs cleanup |
+| **UI** | [Modules/UI/docs/](../../UI/docs) | ⚠️ Needs cleanup |
+| **Media** | [Modules/Media/docs/](../../Media/docs) | ✅ Good |
+| **Notify** | [Modules/Notify/docs/](.) | ⚠️ Needs cleanup |
+| **Blog** | [Modules/Blog/docs/](../../Blog/docs) | ✅ Good |
+| **User** | [Modules/User/docs/](../../User/docs) | ⚠️ Needs cleanup |
+| **Geo** | [Modules/Geo/docs/](../../Geo/docs) | ✅ Good |
+| **AI** | [Modules/AI/docs/](../../AI/docs) | ✅ Good |
+| **Fixcity** | [Modules/Fixcity/docs/](../../Fixcity/docs) | ✅ Good |
 
 ---
 
@@ -101,6 +108,8 @@ discussions: []
 |-------|------|--------|
 | **Sixteen** | [Themes/Sixteen/docs/](../laravel/Themes/Sixteen/docs/) | ✅ AGID Compliant |
 | **TwentyOne** | [Themes/TwentyOne/docs/](../laravel/Themes/TwentyOne/docs/) | ✅ Filament 5 |
+| **Sixteen** | [Themes/Sixteen/docs/](../../../Themes/Sixteen/docs) | ✅ AGID Compliant |
+| **TwentyOne** | [Themes/TwentyOne/docs/](../../../Themes/TwentyOne/docs) | ✅ Filament 5 |
 | **One** | [Themes/One/docs/](../laravel/Themes/One/docs/) | ✅ Base Theme |
 
 ---
@@ -146,7 +155,7 @@ find docs -name "*.md" | xargs grep -l "keyword"
 ### 1. Zen of Documentation
 - **Goal**: Ridurre duplicazione e migliorare qualità
 - **Status**: 🟡 In Progress
-- **Docs**: [ZEN_OF_DOCUMENTATION.md](./ZEN_OF_DOCUMENTATION.md)
+- **Docs**: [ZEN_OF_DOCUMENTATION.md](./zen_of_documentation.md)
 - **Owner**: Multi-Agent Team
 
 ### 2. Multi-Block JSON Conversion
@@ -198,8 +207,8 @@ openviking get-context --query="documentation"
 4. Coordina tramite BMAD threads
 
 ### Per Contribuire
-1. Leggi [Documentation Governance](./DOCUMENTATION_GOVERNANCE.md)
-2. Segui [Zen of Documentation](./ZEN_OF_DOCUMENTATION.md)
+1. Leggi [Documentation Governance](./documentation_governance.md)
+2. Segui [Zen of Documentation](./zen_of_documentation.md)
 3. Aggiorna questo indice
 4. Esegui quality checks
 

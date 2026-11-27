@@ -55,6 +55,11 @@ discussions: []
 
 ## Errori Comuni da Evitare
 
+- **Cartelle annidate `config/Config/`, `config/config/`**: il loader (`XotBaseServiceProvider`) legge
+  solo `config/*.php`, non ricorsivo. Le copie annidate di `config.php` e `beautymail.php` erano
+  morte e più vecchie; tolte il 2026-11-19
+  ([story Xot](../../Xot/docs/stories/case-only-duplicate-directories.story.md)).
+
 1. **MAI duplicare configurazioni generiche nelle sezioni dei provider specifici**
    - ❌ ERRATO: Aggiungere `retry`, `rate_limit`, ecc. nella sezione del provider
    - ✅ CORRETTO: Usare le sezioni generiche per comportamenti comuni

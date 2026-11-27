@@ -1,17 +1,17 @@
 ---
 tags: [documentation]
-created: 2026-09-26
+created: 2026-09-11
 updated: 2026-09-26
 qmd: "continuation 2026 09 11.story"
 issues: []
 discussions: []
-id: story-continuation-lang-module
-title: "Lang Module — Table Audit and $model Property"
+id: story-continuation-gdpr-module
+title: "Gdpr Module — Table Audit and $model Property"
 type: continuation
-scope: module:Lang
+scope: module:Gdpr
 github: {issues: "https://github.com/laraxot/module_xot_fila5/issues/115", discussions: "https://github.com/laraxot/module_xot_fila5/discussions/117"}
 ---
-# Lang Module — Continuation Task
+# Gdpr Module — Continuation Task
 
 ## Stato
 Modulo con modifiche non ancora sincronizzate nel proprio .git.

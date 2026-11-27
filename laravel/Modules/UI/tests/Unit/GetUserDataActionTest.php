@@ -6,7 +6,7 @@ namespace Modules\UI\Tests\Unit;
 
 use Illuminate\Auth\GenericUser;
 use Illuminate\Contracts\Auth\Authenticatable;
-use Illuminate\Foundation\Auth\User;
+use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Modules\UI\Actions\GetUserDataAction;
 use Modules\UI\Tests\TestCase;
@@ -67,14 +67,14 @@ afterEach(function (): void {
 
 it('restituisce null quando nessuno è autenticato', function (): void {
     Assert::assertNull(app(GetUserDataAction::class)->execute());
-});
+})->group('UI-USERDATA-INV-1');
 
 it('restituisce null quando l autenticato non è un User del modulo', function (): void {
     // Un Authenticatable qualsiasi non basta: l'azione richiede il modello del dominio.
     Auth::setUser(new GenericUser(['id' => 1, 'name' => 'Estraneo']));
 
     Assert::assertNull(app(GetUserDataAction::class)->execute());
-});
+})->group('UI-USERDATA-INV-1');
 
 it('mappa identità, nome e email dell utente autenticato', function (): void {
     Auth::setUser(uiAuthUser());
@@ -85,7 +85,7 @@ it('mappa identità, nome e email dell utente autenticato', function (): void {
     Assert::assertSame(42, $data->id);
     Assert::assertSame('Mario Rossi', $data->name);
     Assert::assertSame('mario.rossi@example.test', $data->email);
-});
+})->group('UI-USERDATA-INV-2');
 
 it('usa profile_photo_path come avatar quando è presente', function (): void {
     Auth::setUser(uiAuthUser(attributes: ['profile_photo_path' => 'avatars/mario.jpg']));
@@ -140,4 +140,4 @@ it('restituisce impostazioni vuote quando il profilo non è caricato', function 
 
     Assert::assertNotNull($data);
     Assert::assertSame([], $data->settings);
-});
+})->group('UI-USERDATA-INV-3');

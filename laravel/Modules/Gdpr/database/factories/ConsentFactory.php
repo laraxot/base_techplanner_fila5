@@ -26,10 +26,12 @@ class ConsentFactory extends Factory
      */
     public function definition(): array
     {
+        // Colonne reali di `consents`, come le scrive SaveGdprConsentsAction (user_id + user_type, `type` = trattamento,
+        // `accepted_at`): le chiavi subject_type / consent_type / accepted non esistono e facevano fallire ogni insert.
         return [
-            // Solo colonne reali di `consents`: `subject_type`, `consent_type` e `accepted` non esistono
-            // (l'interessato e' `user_id` + `user_type`, l'accettazione e' `accepted_at`).
             'subject_id' => fake()->uuid(),
+            'user_id' => fake()->uuid(),
+            'user_type' => 'Modules\User\Models\User',
             'type' => 'privacy_policy',
             'accepted_at' => now(),
             'ip_address' => '127.0.0.1',

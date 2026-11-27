@@ -11,8 +11,8 @@ related:
   - "./00-index-1.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./absolute-completion-notify-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -350,7 +350,7 @@ All the information needed to fix the homepage is documented, prioritized, and e
 |----------|---------|--------|
 | `replikate.txt` | Execution protocol | ✅ Complete |
 | `homepage-structure-diff.md` | Detailed analysis + fixes | ✅ Complete |
-| `00-INDEX.md` | Navigation hub | ✅ Complete |
+| `00-index.md` | Navigation hub | ✅ Complete |
 
 #### Automation
 | Script | Purpose | Status |

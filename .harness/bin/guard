@@ -1,0 +1,89 @@
+#!/usr/bin/env php
+<?php
+
+/*
+ * Guard PreToolUse dell'harness (Claude Code / Codex): legge il payload JSON da stdin e blocca con exit 2 le azioni che le
+ * regole del progetto vietano, spiegando su stderr cosa fare invece. Tutto il resto passa (exit 0).
+ *
+ * PHP puro, niente bootstrap Laravel: deve funzionare anche quando l'app è rotta.
+ * Decisione: laravel/Modules/Xot/docs/adr/agent-harness.md · Test: laravel/Modules/Xot/tests/Unit/Harness/GuardTest.php
+ * Ogni regola nasce da una lezione in .harness/memory/lessons.md (// lesson: L-NNN).
+ *
+ * È una rete, non un muro: un comando composto in modi strani può passare. Su input illeggibile lascia passare.
+ */
+
+declare(strict_types=1);
+
+$raw = stream_get_contents(STDIN);
+$payload = is_string($raw) ? json_decode($raw, true) : null;
+if (! is_array($payload)) {
+    exit(0);
+}
+
+$tool = is_string($payload['tool_name'] ?? null) ? $payload['tool_name'] : '';
+$input = is_array($payload['tool_input'] ?? null) ? $payload['tool_input'] : [];
+$str = static fn (string $key): string => is_string($input[$key] ?? null) ? $input[$key] : '';
+
+$command = $tool === 'Bash' ? $str('command') : '';
+// Il corpo di un heredoc è testo (docs, messaggi), non un comando: `cat >> x.md <<'EOF' ... git switch ... EOF` passa.
+$command = preg_replace('/<<-?\s*([\'"]?)(\w+)\1[^\n]*\n.*?\n\s*\2\s*(?=\n|$)/s', '<<heredoc', $command) ?? $command;
+$path = $str('file_path');
+$content = $str('content').$str('new_string');
+foreach (is_array($input['edits'] ?? null) ? $input['edits'] : [] as $edit) {
+    $content .= is_array($edit) && is_string($edit['new_string'] ?? null) ? $edit['new_string'] : '';
+}
+
+/** .env, .env.production, ... ma non .env.example / .env.testing (template e DB di test, senza segreti) */
+$secretEnv = '/(^|[\s\/"\'=])\.env(\.(?!example\b|testing\b)[A-Za-z0-9_-]+)?(?=$|[\s"\';|&)])/';
+
+$rules = [
+    // lesson: L-001
+    'secrets.env' => [
+        static fn (): bool => ($path !== '' && preg_match($secretEnv, ' '.$path) === 1) || ($command !== '' && preg_match($secretEnv, $command) === 1),
+        'I segreti non si leggono né si scrivono. Leggi .env.example per i nomi delle variabili, '
+            .'`php artisan config:show <chiave>` per un valore non segreto, .env.testing per i test.',
+    ],
+    // lesson: L-002
+    'migration.destructive' => [
+        static fn (): bool => str_contains($path, '/database/migrations/')
+            && preg_match('/->(dropColumn|dropColumns|renameColumn|dropIndex|dropForeign|change)\(|Schema::(drop|dropIfExists|rename)\(|->drop\(/', $content) === 1,
+        'Le migrazioni evolvono lo schema solo in modo additivo e idempotente (XotBaseMigration::tableUpdate con '
+            .'hasColumn): niente drop, rename o change(). Se serve davvero, fermati e scrivi [ATTESA-UMANO]: <domanda>.',
+    ],
+    // lesson: L-003
+    'db.fresh' => [
+        static fn (): bool => preg_match('/\b(migrate:(fresh|reset|rollback|refresh)|db:wipe)\b|\bmigrate\b[^|;&]*--force/', $command) === 1
+            || (str_ends_with($path, '.php') && preg_match('/\bRefreshDatabase::class\b|\buse\s+Illuminate\\\\Foundation\\\\Testing\\\\RefreshDatabase\b/', $content) === 1),
+        'I dati sono sacri: mai migrate:fresh/reset/rollback/refresh, db:wipe, --force, né RefreshDatabase. '
+            .'I test usano .env.testing (SQLite) e DatabaseTransactions dove serve.',
+    ],
+    // lesson: L-004
+    'git.rewind' => [
+        static fn (): bool => preg_match('/\bgit\b[^|;&]*\s(reset\s+--hard|checkout(\s|$)|switch(\s|$)|clean\s+-[a-z]*f|stash\s+(drop|clear))/', $command) === 1
+            || (preg_match('/\bgit\b[^|;&]*\srestore(\s|$)/', $command) === 1 && preg_match('/\srestore\s+(--staged|-S)\b/', $command) !== 1)
+            || preg_match('/\bgit\b[^|;&]*\spush\b[^|;&]*(\s--force(-with-lease)?\b|\s-f\b|\s\+)/', $command) === 1,
+        'Git solo in avanti: niente reset --hard, checkout, switch, restore di file, clean -f, push --force. '
+            .'Per annullare una modifica scrivi un commit nuovo (anche git revert); per togliere dallo stage usa git restore --staged.',
+    ],
+];
+
+foreach ($rules as $id => [$matches, $instead]) {
+    if (! $matches()) {
+        continue;
+    }
+    $runs = getenv('HARNESS_RUNS_DIR') ?: dirname(__DIR__).'/runs';
+    if (is_dir($runs) || @mkdir($runs, 0775, true)) {
+        @file_put_contents($runs.'/trace.jsonl', json_encode([
+            'at' => date('c'),
+            'event' => 'guard.block',
+            'rule' => $id,
+            'tool' => $tool,
+            'session' => $payload['session_id'] ?? null,
+            'target' => $command !== '' ? mb_substr($command, 0, 200) : $path,
+        ], JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)."\n", FILE_APPEND);
+    }
+    fwrite(STDERR, "[harness:{$id}] {$instead}\n");
+    exit(2);
+}
+
+exit(0);

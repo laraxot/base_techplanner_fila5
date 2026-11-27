@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "missing features"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Analisi Funzionalità Mancanti - Modulo Notify
@@ -239,18 +240,9 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 
 ## Collegamenti
 
-- [Modulo <nome progetto>](../<nome progetto>/docs/readme.md)
-- [Modulo Limesurvey](../limesurvey/docs/readme.md)
-- [Notify README](./readme.md)
+- [Modulo <nome progetto>](../<nome progetto>/docs/README.md)
+- [Modulo Limesurvey](../limesurvey/docs/README.md)
+- [Notify README](./README.md)
 
 ---
-
-title: "missing features"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "missing features"
-issues: []
-discussions: []
 **Prossima Revisione**: [DATE]

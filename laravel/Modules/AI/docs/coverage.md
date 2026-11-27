@@ -19,7 +19,8 @@ discussions: []
 
 **Changed**: 6 occurrences across 6 files, all docblock-only (no native `mixed` type-hints were touched — see "left as mixed" below for why the native ones stay). Replaced `array<string, mixed>` / `array<int, array<string, mixed>>` with a concrete shape once the returned/consumed structure was evidently stable:
 
-- `Modules/AI/app/Actions/Sentiment/AnalyzeBasicSentimentAction.php` — `execute()` return: `array{label: string, score: int|float, warning: string}` (contratto `SentimentAnalyzer` e le due classi `*SentimentAnalyzer` duplicate rimossi nell'audit #64: zero chiamanti).
+- ~~`Contracts/SentimentAnalyzer`, `Actions/Sentiment/BasicSentimentAnalyzer`, `TransformersSentimentAnalyzer`~~ — eliminati il 2026-11-19: duplicati senza chiamanti delle Action sotto (vedi `sentiment-analysis.md`).
+- `Modules/AI/app/Actions/Sentiment/AnalyzeBasicSentimentAction.php` — same shape.
 - `Modules/AI/app/Actions/Sentiment/AnalyzeTransformersSentimentAction.php` — same shape.
 - `Modules/AI/app/Actions/Prediction/GetPredictionFallbackTemplatesAction.php` — `execute()` return tightened from `array<int, array<string, mixed>>` to `array<int, array{category: string, title: string, subtitle: string, description: string, analysis: string, tags: list<string>, options: list<string>}>` (hardcoded literal templates, shape evident and stable; this also benefits the one consumer, `GeneratePredictionDraftsAction::fallbackDrafts()`).
 
@@ -58,7 +59,7 @@ discussions: []
 **Pest**: `Modules/AI/phpunit.xml` non esiste — eseguito `./vendor/bin/pest Modules/AI/tests --no-coverage` (root `phpunit.xml`). Risultato: **64 test, 50 passati, 14 falliti, 252 assertion** (prima del mio intervento: 61 test, 47 passati, 14 falliti — stesso identico set di 14 fallimenti, verificato per nome). I 14 fallimenti sono **preesistenti e non correlati** ai file toccati in questa sessione (nessuno dei 14 e' in un file che ho modificato; verificato isolando singoli file e con grep incrociato classi-sotto-test):
   - `UserIdColumnsAcceptUuidTest` — `RuntimeException: A facade root has not been set.` (bootstrap Feature test).
   - `CompletionActionTest` (9 test) — `\OpenAI\Responses\Completions\CreateResponseChoice` e' `final`, Mockery non puo' crearne un mock parziale in questa versione del SDK/Mockery.
-  - `QueueableActionContractTest` — falliva per `Actions\Prompt\AIPromptTemplates` senza `QueueableAction`; risolto nell'audit #64 eliminando la classe (duplicava le due `BuildTicket*PromptAction`).
+  - `QueueableActionContractTest` — `Modules\AI\Actions\Prompt\AIPromptTemplates` non usa il trait `QueueableAction` (file mai toccato in questa sessione).
   - `SentimentActionTest` (2 su 25) — bug di logica preesistenti in `Modules\AI\Actions\SentimentAction` (score `0.0` vs `0` atteso, label `POSITIVE` vs `NEGATIVE` atteso su un caso di negazione), classe diversa da `Sentiment\AnalyzeTransformersSentimentAction` toccata in questa sessione.
   - `AiActionProposalTest` — `BindingResolutionException` su `Spatie\EventSourcing\StoredEvents\EventSubscriber` (config event sourcing nell'ambiente di test).
 

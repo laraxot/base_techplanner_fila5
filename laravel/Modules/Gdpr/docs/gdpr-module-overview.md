@@ -229,7 +229,7 @@ $consent->delete();
 ### Best Practices
 
 - [best-practices.md](./best-practices.md) - Best practices GDPR
-- [security.md](./security.md) - Sicurezza dati
+- [SECURITY.md](./security.md) - Sicurezza dati
 - [cookie-consent.md](./cookie-consent.md) - Cookie management
 
 ### Architettura
@@ -244,7 +244,7 @@ $consent->delete();
 
 **16 Dicembre 2025**:
 - ✅ Verificato PHPStan Level 10 (82 files, 0 errori)
-- ✅ Rimosso readme.md duplicato
+- ✅ Rimosso README.md duplicato
 - ✅ Fix nomenclatura file con date
 - ✅ Aggiornato README con overview business logic
 - ✅ Creato gdpr-module-overview.md

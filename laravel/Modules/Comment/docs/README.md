@@ -1,172 +1,72 @@
 ---
-title: "Comment Module Documentation"
+title: "Comment: ingresso del modulo"
 type: documentation
-tags: [module, documentation]
-created: 2026-06-05
-updated: 2026-06-05
+status: active
+module: Comment
+tags: [comment, module, docs]
+created: 2026-09-26
+updated: 2026-10-20
+qmd: "comment modulo commenti moderazione reazioni notifiche ticket fixcity spatie internalizzazione limiti"
+issues: []
+discussions: []
 ---
 
-# 💬 Comment Module - Sistema di Commenti
+# Comment
 
-[![Laravel 12.x](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com/)
-[![Filament 4.x](https://img.shields.io/badge/Filament-4.x-blue.svg)](https://filamentphp.com/)
-[![PHPStan Level 9](https://img.shields.io/badge/PHPStan-Level%209-brightgreen.svg)](https://phpstan.org/)
-[![Translation Ready](https://img.shields.io/badge/Translation-IT%20%7C%20EN-green.svg)](https://laravel.com/docs/localization)
+**Scopo:** abilitare commenti contestuali (thread, reazioni, moderazione, opt-in notifiche) su record dominio come Ticket e Article, cosi' Fixcity/Blog restano owner del contenuto e Comment resta owner di persistenza, policy e chrome Filament.
 
-> **🚀 Modulo Comment**: Sistema completo per gestione commenti, moderazione e interazioni utente con supporto threading e notifiche.
+Ingresso della documentazione del modulo. Ogni affermazione e' stata confrontata con il codice il 2026-10-14. Hub BMAD: [bmad/decision-log.md](./bmad/decision-log.md), [bmad/filament-blueprint.md](./bmad/filament-blueprint.md).
 
-## 📋 **Panoramica**
+## Identita' e ownership
 
-Il modulo **Comment** fornisce funzionalità di commento per l'applicazione, inclusi:
+- Namespace `Modules\Comment`, alias `comment`, repository git separato. Versione in `module.json`: 2.0.0.
+- Provider in `module.json`: `CommentServiceProvider`, `CommentEngineServiceProvider`, `Providers\Filament\AdminPanelProvider`. In `laravel/config/app.php` e' registrato solo `CommentServiceProvider`.
+- Stato: `module.json` dice `"enabled": false`, ma `laravel/modules_statuses.json` e `laravel/config/local/fixcity/modules_statuses.json` hanno `Comment: true` e il modulo e' usato da Fixcity e Blog. Vale lo stato dei file `modules_statuses.json`; la discrepanza non e' risolta.
+- `module.json` dichiara `requires: Xot, User, Notification`: il modulo `Notification` non esiste, esiste `Notify`.
+- Origine: motore commenti derivato da `spatie/laravel-comments` e `spatie/laravel-comments-livewire`, copiati in `packages/spatie/` e in corso di internalizzazione (hub: [native-comments-engine.md](./native-comments-engine.md)).
 
-- 💬 **Sistema Commenti** - Commenti strutturati e threading
-- 👥 **Moderazione** - Strumenti di moderazione e approvazione
-- 🔔 **Notifiche** - Notifiche per risposte e menzioni
-- 🎨 **Interfaccia Filament** - Gestione admin moderna
-- 🌐 **Multi-lingua** - Traduzioni IT/EN complete
+## Cosa contiene davvero
 
-## ⚡ **Funzionalità Core**
+| Area | Contenuto verificato | Percorso |
+|---|---|---|
+| Modelli | `Comment`, `Reaction`, `CommentNotificationSubscription`, `CommentNotificationOptOut`; contratti `Commentable`, `CanComment`, `SupportsCommentNotifications`; concern `HasComments`, `InteractsWithComments` | `app/Models/` |
+| Actions | 62 file: moderazione (`ApproveCommentAction`, `RejectCommentAction`, `ProcessCommentAction`), notifiche, reazioni, menzioni, sanificazione, risoluzione della configurazione | `app/Actions/` |
+| Notifiche | `PendingCommentNotification`, `ApprovedCommentNotification`; eventi `CommentApprovedEvent`, `CommentRejectedEvent` | `app/Notifications/`, `app/Events/` |
+| Interfaccia | `CommentResource` (Filament), widget `CommentsWidget`, `CommentWidget`, `MentionSearchWidget`; componenti Livewire `CommentComponent`, `CommentsComponent`, `MentionSearchComponent` | `app/Filament/`, `app/Http/Livewire/` |
+| Configurazione | `config/comments.php` (modelli, policy, Actions, notifiche, reazioni, tag HTML ammessi); `config/config.php` ha solo `name` | `config/` |
+| Dati | tre migrazioni: `comments`, `reactions`, `comment_notification_subscriptions` | `database/migrations/` |
+| Viste | `livewire/`, `filament/widgets/`, `mail/`, `signed/` (approvazione e sottoscrizione via URL firmato), `folio-moderation/` | `resources/views/` |
+| Test | 16 file, 44 chiamate `it()`/`test()` | `tests/` |
 
-### 💬 **Comment Management**
-```php
-// Creazione commento
-$comment = Comment::create([
-    'user_id' => $user->id,
-    'commentable_type' => Post::class,
-    'commentable_id' => $post->id,
-    'content' => 'Ottimo articolo!',
-    'status' => CommentStatusEnum::APPROVED,
-]);
+## Chi lo usa davvero in questo repository
 
-// Threading - risposta a commento
-$reply = Comment::create([
-    'user_id' => $user->id,
-    'parent_id' => $comment->id,
-    'content' => 'Grazie del feedback!',
-]);
-```
+- Fixcity: `Ticket` implementa `Commentable` con `HasComments`; il `User` di Fixcity implementa `CanComment` con `InteractsWithComments`. Il vecchio `TicketComment` resta come relazione di compatibilita'.
+- Blog: `Article` usa `HasComments`; il tema TwentyOne monta `CommentsWidget` nella pagina articolo.
 
-### 🔐 **Moderazione**
-```php
-// Approvazione commenti
-$comment->approve();
+## Limiti
 
-// Rifiuto commenti
-$comment->reject($reason);
-
-// Segnalazione spam
-$comment->markAsSpam();
-```
-
-## 🎯 **Stato Qualità**
-
-### ✅ **Compliance**
-- **PHPStan**: Targeting Level 9
-- **Filament**: Compatibile 4.x
-- **Traduzioni**: IT/EN complete
-- **Test Coverage**: In development
-
-## 📚 **Documentazione Completa**
-
-### 🏗️ **Architettura**
-- [Struttura](structure.md) - Architettura modulo
-- [Conflitti Risolti](struttura-e-conflitti.md) - Log risoluzioni
-
+<<<<<<< .merge_file_x4ceMG
 ### 🎨 **Filament Integration**
 - [MCP Server](mcp-server-recommended.md) - Server MCP consigliati
 - [Roadmap 2025](roadmap.md) - Piano sviluppo
+=======
+1. Rotte: `routes/web.php` e `routes/api.php` sono vuoti; `php artisan route:list --json` mostra 6 rotte, tutte del pannello Filament `comment/admin`. Le viste `folio-moderation/` non sono montate da nessun file di `app/` (grep); se siano raggiunte da Folio a livello di progetto non e' verificato.
+2. Dipendenza residua da Spatie: `app/Actions/SanitizeCommentTextAction.php` importa `Spatie\Comments\Support\CommentSanitizer`; `packages/spatie/` e' ancora presente e risolto dall'autoload del progetto. La fase 4 (rimozione) dell'internalizzazione non e' fatta.
+3. Documenti in ritardo sul codice: [ticket-comments.md](./ticket-comments.md) descrive il trait Spatie sul `Ticket` (oggi e' `Modules\Comment\Models\Concerns\HasComments`); lo stato di [native-comments-engine.md](./native-comments-engine.md) e' fermo al 2026-06-06.
+4. Suite Pest non affidabile oggi: su DB usa-e-getta il 2026-10-14 3 test passano e 41 falliscono con `SQLiteDatabaseDoesNotExistException`.
+>>>>>>> .merge_file_VQRzYQ
 
-### 🔧 **Development**
-- [PHPStan Fixes](phpstan-fixes.md) - Correzioni PHPStan
-- [File Naming](file-naming-rules.md) - Convenzioni naming
+## Quick start
 
-## 🔧 **Quick Start**
+Da `laravel/`:
 
-### 📦 **Installazione**
 ```bash
-# Abilitare il modulo
-php artisan module:enable Comment
-
-# Eseguire le migrazioni
-php artisan migrate
-
-# Pubblicare le configurazioni
-php artisan vendor:publish --tag=comment-config
+# rotte del modulo (verificato il 2026-10-14: 6, tutte del pannello Filament comment/admin)
+php artisan route:list --name=comment
+# test su database usa-e-getta (la variabile vuota evita `unbound variable` dello script)
+DB_DATABASE_LIMESURVEY= bash ../bashscripts/tools/pest-scratch-db.sh Modules/Comment/tests
 ```
 
-### ⚙️ **Configurazione**
-```php
-// config/comment.php
-return [
-    'moderation' => [
-        'enabled' => true,
-        'auto_approve_verified_users' => true,
-    ],
-    
-    'threading' => [
-        'enabled' => true,
-        'max_depth' => 5,
-    ],
-    
-    'notifications' => [
-        'enabled' => true,
-        'channels' => ['mail', 'database'],
-    ],
-];
-```
+## Mappa della documentazione
 
-## 🤝 **Contributing**
-
-### 📋 **Checklist Contribuzione**
-- [ ] Codice passa PHPStan Level 9
-- [ ] Test unitari aggiunti
-- [ ] Documentazione aggiornata
-- [ ] Traduzioni complete (IT/EN)
-
-## 📊 **Roadmap**
-
-### 🎯 **Q1 2025**
-- [ ] **PHPStan Level 9** - Compliance completa
-- [ ] **Advanced Moderation** - Tools avanzati moderazione
-- [ ] **Rich Text Support** - Supporto markdown/HTML
-
-### 🎯 **Q2 2025**
-- [ ] **AI Moderation** - Moderazione automatica AI
-- [ ] **Reactions** - Sistema reazioni (like, emoji)
-- [ ] **Media Attachments** - Allegati immagini/video
-
----
-
-## 📞 **Support**
-
-- **📧 Email**: comment@laraxot.com
-- **🐛 Issues**: [GitHub Issues](https://github.com/laraxot/comment-module/issues)
-- **📚 Docs**: [Documentazione Completa](https://docs.laraxot.com/comment)
-
----
-
-**🔄 Ultimo aggiornamento**: 14 Ottobre 2025  
-**📦 Versione**: 1.0.0  
-**🐛 PHPStan Level**: Target Level 9  
-**🌐 Translation**: IT/EN ✅  
-**🚀 Status**: Active Development
-
-
-
-
-
-- [Conflict Resolution](conflict-resolution.md)
-
-
-## Standard Rules & Workflow
-
-- [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
-- [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
-
-## Documentation
-
-- [On-Demand Pattern](./ON-DEMAND-PATTERN.md) — Pattern per caricamento efficiente
-- [QMD Setup](./QMD-SETUP.md) — Configurazione ricerca locale
-- [Performance](./PERFORMANCE-OPTIMIZATION.md) — Metriche e best practice
-- [Project Structure](./PROJECT-STRUCTURE.md) — Directory layout
+Indice operativo: [00-INDEX.md](./00-index.md). Indice per argomento: [index.md](./index.md). Hub del motore: [native-comments-engine.md](./native-comments-engine.md). Registro: [wiki/log.md](./wiki/log.md). Story: [stories/](./stories/).

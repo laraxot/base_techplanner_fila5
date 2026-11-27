@@ -4,9 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Comment\Actions;
 
+use Modules\Comment\Actions\Notification\NotifyApprovedCommentAction;
+use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Events\CommentApprovedEvent;
 use Modules\Comment\Models\Comment;
-use Modules\Comment\Support\CommentConfig;
 use Spatie\QueueableAction\QueueableAction;
 
 class ApproveCommentAction
@@ -29,6 +30,11 @@ class ApproveCommentAction
         ]);
 
         event(new CommentApprovedEvent($comment));
+
+        $config = CommentConfigData::make();
+        if ($config->notifications['enabled'] ?? true) {
+            app(NotifyApprovedCommentAction::class)->onQueue()->execute($comment);
+        }
 
         return $comment;
     }

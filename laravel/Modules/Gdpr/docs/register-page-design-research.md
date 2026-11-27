@@ -2,7 +2,7 @@
 title: "register page design research"
 type: note
 tags: [documentation]
-created: 2026-01-01
+created: 2026-09-26
 updated: 2026-09-26
 qmd: "register page design research"
 issues: []
@@ -10,6 +10,9 @@ discussions: []
 ---
 
 # Register Page Design Research 2026
+
+> **Superato (2026-11-19).** I testi di registrazione descritti qui venivano da un altro progetto e sono stati tolti dal modulo, che e' condiviso e deve restare neutro. Cosa possiede il modulo e cosa il tema: [register-widget-copy-ownership.md](register-widget-copy-ownership.md). Storia: [stories/register-copy-project-agnostic.story.md](stories/register-copy-project-agnostic.story.md).
+
 
 This document compiles the latest design patterns, UX best practices, and modern trends for registration/signup pages based on comprehensive research from top design resources.
 
@@ -265,12 +268,12 @@ This document compiles the latest design patterns, UX best practices, and modern
 - **Success States**: Redirect or show confirmation
 - **Progressive Fields**: Show/hide based on validation
 
-## LaravelPizza-Specific Considerations
+## <nome progetto>-Specific Considerations
 
 ### Brand Integration
 - **Primary Colors**: Slate-900 (#0f172a) + Red-600 (#dc2626)
 - **Typography**: Clean, professional fonts
-- **Imagery**: Pizza-themed illustrations (fun but professional)
+- **Imagery**: illustrazioni del dominio del progetto ospite (le sceglie il tema, non il modulo)
 - **Tone**: Welcoming, community-focused, professional
 
 ### GDPR Module Integration
@@ -315,16 +318,6 @@ This document compiles the latest design patterns, UX best practices, and modern
 4. **Conversion Funnels**: Track drop-off points
 5. **Competitive Analysis**: Regular design audits
 
----
-
-title: "register page design research"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "register page design research"
-issues: []
-discussions: []
 ## References
 
 - Dribbble Register Page Examples: https://dribbble.com/tags/register-page
@@ -335,5 +328,3 @@ discussions: []
 - Colorlib Registration: https://colorlib.com/wp/cat/registration-forms/
 - JavaScript Login Pages: https://javascript.plainenglish.io/13-super-beautiful-login-pages-with-source-code-0dd1402b3c21
 - UXPin Signup Examples: https://www.uxpin.com/studio/blog/best-signup-page-examples/
-
-> Copia condivisa (senza la sezione "Sources Studied"): `Themes/docs/shared-components/register-page-design-research-.md`.

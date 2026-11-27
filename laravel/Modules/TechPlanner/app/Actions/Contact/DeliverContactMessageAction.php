@@ -14,6 +14,8 @@ use Modules\TechPlanner\Models\ContactMessage;
  * Archivia e poi inoltra: l'archivio viene prima, cosi' un guasto del trasporto e-mail non perde il messaggio.
  * Esito: Sent se l'inoltro e' riuscito (anche se l'archivio e' fallito: la mail e' arrivata), Received se archiviato ma
  * non inoltrato, Failed se non e' riuscito nulla. Nei log solo la classe dell'eccezione: mai dati del mittente.
+ *
+ * @contract docs/contracts/deliver-contact-message-action.md
  */
 final class DeliverContactMessageAction
 {

@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "mailpace templates integration"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Integrazione MailPace Templates
@@ -106,5 +107,12 @@ $mailTemplate->send($user->email, [
 
 - [Documentazione Maizzle](https://maizzle.com/docs/)
 - [Repository MailPace Templates](https://github.com/mailpace/templates)
+<<<<<<< .merge_file_s2m3y0
 - [Guida Spatie Email](../SPATIE_EMAIL_USAGE_GUIDE.md)
 - [Implementazione Slug Field](./SLUG_FIELD_IMPLEMENTATION.md)
+=======
+- [Guida Spatie Email](../spatie_email_usage_guide.md)
+- [Implementazione Slug Field](slug_field_implementation.md)
+- [Guida Spatie Email](../spatie_email_usage_guide.md)
+- [Implementazione Slug Field](./slug_field_implementation.md)
+>>>>>>> .merge_file_MtHr7M

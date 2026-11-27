@@ -266,7 +266,7 @@ Rileggi il nuovo `report.md`, identifica ulteriori diff, correggi, ri-esegui.
 
 **Files:**
 - Modify: `laravel/Themes/Sixteen/docs/body-structure-comparison/segnalazioni-elenco/FASE1-FINAL-REPORT.md`
-- Modify: `laravel/Themes/Sixteen/docs/body-structure-comparison/INDEX.md`
+- Modify: `laravel/Themes/Sixteen/docs/body-structure-comparison/index.md`
 - Modify: `laravel/Themes/Sixteen/docs/body-structure-comparison/index.md`
 - Read: `laravel/Themes/Sixteen/docs/body-structure-comparison/segnalazioni-elenco/summary.json`
 
@@ -278,9 +278,9 @@ Apri `FASE1-FINAL-REPORT.md` e aggiorna:
 - Le correzioni applicate in questa sessione
 - Checklist completamento
 
-- [ ] **Step 5.2: Aggiorna INDEX.md**
+- [ ] **Step 5.2: Aggiorna index.md**
 
-In `laravel/Themes/Sixteen/docs/body-structure-comparison/INDEX.md`, aggiorna la riga di `segnalazioni-elenco` con il parity score reale e la data odierna.
+In `laravel/Themes/Sixteen/docs/body-structure-comparison/index.md`, aggiorna la riga di `segnalazioni-elenco` con il parity score reale e la data odierna.
 - [ ] **Step 5.2: Aggiorna index.md**
 
 In `laravel/Themes/Sixteen/docs/body-structure-comparison/index.md`, aggiorna la riga di `segnalazioni-elenco` con il parity score reale e la data odierna.

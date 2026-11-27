@@ -55,7 +55,7 @@ FixCity è la piattaforma enterprise leader per la gestione delle segnalazioni u
 ### 👥 Modulo User - ECCELLENZA (92%)
 - ✅ **2FA_GUIDE.md** - Implementazione 2FA completa (NEW)
 - ✅ **SSO_GUIDE.md** - SAML 2.0 + OIDC completo (NEW)
-- ✅ **ROADMAP.md** - Timeline Q4 2025-Q1 2026
+- ✅ **roadmap.md** - Timeline Q4 2025-Q1 2026
 - 📋 **API.md** - Authentication API (TODO)
 
 ### 🎨 Tema Sixteen - ECCELLENZA (78%)
@@ -417,9 +417,9 @@ FixCity è orgogliosamente open source:
 ## 📚 RISORSE
 
 ### Documentazione
-- **[DOCUMENTATION_INDEX.md](./DOCUMENTATION_INDEX.md)** - Indice completo
-- **[QUICK_START.md](./QUICK_START.md)** - Guida rapida
-- **[PROJECT_COMPLETION_STATUS.md](./PROJECT_COMPLETION_STATUS.md)** - Status
+- **[DOCUMENTATION_INDEX.md](./documentation_index.md)** - Indice completo
+- **[QUICK_START.md](./quick_start.md)** - Guida rapida
+- **[PROJECT_COMPLETION_STATUS.md](./project_completion_status.md)** - Status
 
 ### Moduli Principali
 - **[Fixcity Docs](./laravel/Modules/Fixcity/docs/)** - Core business

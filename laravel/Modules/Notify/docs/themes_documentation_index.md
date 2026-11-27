@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "themes documentation index"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Theme Documentation Master Index
@@ -16,15 +17,6 @@ discussions: []
 Connects all theme docs with bidirectional links and visual architecture.
 
 ---
-
-title: "themes documentation index"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "themes documentation index"
-issues: []
-discussions: []
 ## 🗺️ Active Themes
 
 ### Sixteen - PRIMARY THEME ⭐
@@ -35,17 +27,22 @@ discussions: []
 **Tech Stack:** Tailwind CSS + Alpine.js + Livewire Volt
 
 **Core Documentation:**
-- [00-INDEX.md](../laravel/Themes/Sixteen/docs/00-INDEX.md) - Start here
+- [00-index.md](../laravel/Themes/Sixteen/docs/00-index.md) - Start here
 - [00-index.md](../laravel/Themes/Sixteen/docs/00-index.md) - Start here
 - [Design Comuni Integration](../laravel/Themes/Sixteen/docs/design-comuni-integration.md)
 - [Component Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md)
 - [Layout Architecture](../laravel/Themes/Sixteen/docs/layout-hierarchy.md)
+- [00-index.md](../../../Themes/Sixteen/docs/00-index.md) - Start here
+- [00-index.md](../../../Themes/Sixteen/docs/00-index.md) - Start here
+- [Design Comuni Integration](../../../Themes/Sixteen/docs/design-comuni-integration.md)
+- [Component Catalog](../laravel/Themes/Sixteen/docs/COMPONENT_CATALOG.md)
+- [Layout Architecture](../../../Themes/Sixteen/docs/layout-hierarchy.md)
 
 **Directory Structure:**
 ```
 Sixteen/
 ├── docs/                          ← 200+ documentation files
-│   ├── 00-INDEX.md               ← MASTER INDEX
+│   ├── 00-index.md               ← MASTER INDEX
 │   ├── 00-index.md               ← MASTER INDEX
 │   ├── architecture/             ← Diagrams & architecture
 │   ├── design-comuni/            ← Design Comuni project
@@ -327,6 +324,7 @@ Typography:
 | File | Purpose | View |
 |------|---------|------|
 | `layout-hierarchy.md` | Layout component structure | [View](../laravel/Themes/Sixteen/docs/layout-hierarchy.md) |
+| `layout-hierarchy.md` | Layout component structure | [View](../../../Themes/Sixteen/docs/layout-hierarchy.md) |
 | `component-structure.md` | Component organization | [View](../laravel/Themes/Sixteen/docs/component-structure.md) |
 | `data-flow.md` | How data flows through views | [View](../laravel/Themes/Sixteen/docs/data-flow.md) |
 | `styling-system.md` | Tailwind + CSS strategy | [View](../laravel/Themes/Sixteen/docs/styling-system.md) |
@@ -355,7 +353,7 @@ Typography:
 
 | File | Purpose | View |
 |------|---------|------|
-| `guides/getting-started.md` | Theme setup | [View](getting-started.md) |
+| `guides/getting-started.md` | Theme setup | [View](GETTING-STARTED.md) |
 | `guides/adding-components.md` | Create new component | [View](../laravel/Themes/Sixteen/docs/guides/adding-components.md) |
 | `guides/styling-guide.md` | Styling best practices | [View](../laravel/Themes/Sixteen/docs/guides/styling-guide.md) |
 | `guides/responsive-design.md` | Mobile-first approach | [View](../laravel/Themes/Sixteen/docs/guides/responsive-design.md) |
@@ -466,11 +464,14 @@ public_html/assets/
 
 ## See Also
 
-- **Architecture Diagrams:** [ARCHITECTURE-DIAGRAMS.md](ARCHITECTURE-DIAGRAMS.md)
-- **Module Docs Index:** [MODULE_DOCS_INDEX.md](MODULE_DOCS_INDEX.md)
-- **Master Index:** [00-INDEX.md](../laravel/Themes/Sixteen/docs/00-INDEX.md)
+- **Architecture Diagrams:** [architecture-diagrams.md](architecture-diagrams.md)
+- **Module Docs Index:** [MODULE_DOCS_INDEX.md](module_docs_index.md)
+- **Master Index:** [00-index.md](../laravel/Themes/Sixteen/docs/00-index.md)
 - **Code Quality:** [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
 - **Framework Rules:** [../laravel/CLAUDE.md](../laravel/CLAUDE.md)
+- **Master Index:** [00-index.md](../../../Themes/Sixteen/docs/00-index.md)
+- **Code Quality:** [CODE_QUALITY_STANDARDS.md](CODE_QUALITY_STANDARDS.md)
+- **Framework Rules:** [../laravel/CLAUDE.md](../../../claude.md)
 
 ---
 

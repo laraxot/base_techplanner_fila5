@@ -1,8 +1,8 @@
 ---
-qmd: "sessione analisi homepage.divergenza"
+qmd: "Sessione Analisi Homepage.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: SESSIONE_ANALISI_HOMEPAGE.md"
+title: "Sessione Analisi Homepage.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

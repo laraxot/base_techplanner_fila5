@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -35,7 +35,7 @@ related:
 
 ```bash
 # Check coordination logs
-cat bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md
+cat bashscripts/docs/git/sync_remote_repo_coordination.md
 cat docs/documentation-improvement-plan-multi-agent.md
 
 # Check GitHub Issues
@@ -60,7 +60,7 @@ gh discussion list
 - ✅ Tests performed
 
 **Where**:
-- Task-specific coordination logs (e.g., `SYNC_REMOTE_REPO_COORDINATION.md`)
+- Task-specific coordination logs (e.g., `sync_remote_repo_coordination.md`)
 - GitHub Issues
 - GitHub Discussions
 - This document
@@ -434,7 +434,7 @@ labels: ['coordination', 'multi-agent']
 
 **When**: Ongoing work tracking
 
-**Location**: Task-specific files (e.g., `SYNC_REMOTE_REPO_COORDINATION.md`)
+**Location**: Task-specific files (e.g., `sync_remote_repo_coordination.md`)
 
 **Format**:
 ```markdown
@@ -588,7 +588,7 @@ title: [DECISION NEEDED] Approach for X
 
 - **Master Index**: `docs/MASTER_documentation-index.md`
 - **Governance**: `docs/documentation-governance.md`
-- **Coordination Logs**: `bashscripts/docs/git/SYNC_REMOTE_REPO_COORDINATION.md`
+- **Coordination Logs**: `bashscripts/docs/git/sync_remote_repo_coordination.md`
 - **Test Plans**: `docs/github/sync-remote-repo-test-plan.md`
 - **Troubleshooting**: `bashscripts/docs/git/TROUBLESHOOTING.md`
 

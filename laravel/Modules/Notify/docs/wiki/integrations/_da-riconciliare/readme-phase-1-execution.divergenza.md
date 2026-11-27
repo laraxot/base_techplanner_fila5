@@ -1,8 +1,8 @@
 ---
-qmd: "readme phase 1 execution.divergenza"
+qmd: "Readme Phase 1 Execution.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: readme-phase-1-execution.md"
+title: "Readme Phase 1 Execution.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

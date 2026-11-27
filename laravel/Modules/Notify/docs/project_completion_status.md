@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "project completion status"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 🎯 FIXCITY - STATO COMPLETAMENTO PROGETTO
@@ -16,15 +17,6 @@ discussions: []
 **Fase Corrente**: Q4 2025 - Feature Expansion
 
 ---
-
-title: "project completion status"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "project completion status"
-issues: []
-discussions: []
 ## ✅ LAVORO COMPLETATO OGGI
 
 ### 📚 Documentazione Strategica
@@ -41,7 +33,7 @@ discussions: []
 - ✅ **ADMIN_GUIDE.md** - Guida amministratori completa (NEW)
 
 ### 👥 Modulo User (90% → 92%)
-- ✅ **ROADMAP.md** - Aggiornato Q4 2025-Q1 2026
+- ✅ **roadmap.md** - Aggiornato Q4 2025-Q1 2026
 
 ### 🎨 Tema Sixteen (75% → 78%)
 - ✅ **ROADMAP_2025.md** - Aggiornato Q4 2025-Q2 2026
@@ -183,7 +175,7 @@ discussions: []
 ### Roadmap Aggiornate (3 documenti)
 1. **ROADMAP_STATUS_SUMMARY.md** - Master roadmap
 2. **Fixcity/ROADMAP_2025.md** - Roadmap modulo
-3. **User/ROADMAP.md** - Roadmap modulo
+3. **User/roadmap.md** - Roadmap modulo
 4. **Sixteen/ROADMAP_2025.md** - Roadmap tema
 
 **Totale**: 11 documenti creati/aggiornati
@@ -215,7 +207,7 @@ base_ptv_fila5/
     │   │
     │   ├── User/docs/
     │   │   ├── README.md           # ✅ Completo
-    │   │   ├── ROADMAP.md          # ✅ Aggiornato
+    │   │   ├── roadmap.md          # ✅ Aggiornato
     │   │   ├── 2FA_GUIDE.md        # 📋 TODO
     │   │   ├── SSO_GUIDE.md        # 📋 TODO
     │   │   └── API.md              # 📋 TODO

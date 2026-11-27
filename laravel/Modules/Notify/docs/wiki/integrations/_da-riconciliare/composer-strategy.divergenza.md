@@ -1,8 +1,8 @@
 ---
-qmd: "composer strategy.divergenza"
+qmd: "Composer Strategy.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: COMPOSER_STRATEGY.md"
+title: "Composer Strategy.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

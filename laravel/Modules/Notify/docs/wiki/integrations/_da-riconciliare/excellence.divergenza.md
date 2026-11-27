@@ -1,8 +1,8 @@
 ---
-qmd: "excellence.divergenza"
+qmd: "Excellence.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: excellence.md"
+title: "Excellence.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

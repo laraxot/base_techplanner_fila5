@@ -3,11 +3,7 @@
 declare(strict_types=1);
 
 /*
-|--------------------------------------------------------------------------
-| Comment Pest bootstrap
-|--------------------------------------------------------------------------
-|
-| Binding TestCase per-file: pest()->extend()/uses()->in() sono @internal
-| e PHPStan L10 bleedingEdge segnala method.internalClass.
-|
-*/
+ * Bootstrap Pest — modulo Comment.
+ * Ogni file test dichiara uses(\Modules\Comment\Tests\TestCase::class).
+ * Vietato pest()->extend() qui (PHPStan method.internalClass + conflitto uses per file).
+ */

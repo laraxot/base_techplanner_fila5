@@ -1,8 +1,8 @@
 ---
-qmd: "phase 1 research complete.divergenza"
+qmd: "Phase 1 Research Complete.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: phase-1-research-complete.md"
+title: "Phase 1 Research Complete.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

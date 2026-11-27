@@ -1,8 +1,8 @@
 ---
-qmd: "implementation summary"
+qmd: "Implementation Summary"
 issues: []
 discussions: []
-title: "Riepilogo Implementazione Design Comuni"
+title: "Implementation Summary"
 module: notify
 type: integration
 tags: [integrations, modules, notify]

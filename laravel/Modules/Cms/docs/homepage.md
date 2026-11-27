@@ -136,7 +136,7 @@ Per una documentazione più approfondita sull'architettura della homepage, consu
 
 ## Vedi Anche
 - [Modulo UI](../../UI/docs/README.md) - Componenti UI per la homepage
-- [Modulo Theme](../theme/docs/readme.md) - Personalizzazione tema
+- [Modulo Theme](../theme/docs/README.md) - Personalizzazione tema
 - [Modulo Lang](../../Lang/docs/README.md) - Gestione traduzioni
 - [Gestione Contenuti](content-management.md) - Sistema di gestione contenuti
 - [Sezioni](sections.md) - Gestione delle sezioni

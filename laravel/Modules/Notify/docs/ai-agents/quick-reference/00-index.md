@@ -49,13 +49,13 @@ discussions: []
 
 ## 🔗 Cross-References
 
-- [📋 Parent Directory](bashscripts/ai/.agents/docs/00-INDEX.md)
+- [📋 Parent Directory](bashscripts/ai/.agents/docs/00-index.md)
 - [📋 Master Index](bashscripts/ai/.agents/00-MASTER-INDEX.md)
-- [📋 Rules Index](../rules/00-INDEX.md)
+- [📋 Rules Index](../rules/00-index.md)
 - [📋 Skills Index](../skills/00-MASTER-INDEX.md)
-- [📋 Workflows Index](../workflows/00-INDEX.md)
-- [📋 Guidelines Index](../guidelines/00-INDEX.md)
-- [📋 Memories Index](../memories/00-INDEX.md)
+- [📋 Workflows Index](../workflows/00-index.md)
+- [📋 Guidelines Index](../guidelines/00-index.md)
+- [📋 Memories Index](../memories/00-index.md)
 
 ---
 

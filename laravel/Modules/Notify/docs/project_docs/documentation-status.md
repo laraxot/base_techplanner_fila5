@@ -8,7 +8,7 @@ qmd: "documentation-status 📚 documentation status - ottobre 2025"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./excellence-achievement.md"
+  - "./2025-excellence-achievement.md"
   - "./agid-implementation-guide.md"
   - "./architecture.md"
   - "./complete-refactoring-analysis.md"
@@ -16,6 +16,7 @@ related:
   - "./final-implementation-report-1.md"
   - "./final-implementation-report.md"
   - "./final-refactoring-report.md"
+status: draft
 ---
 
 # 📚 DOCUMENTATION STATUS - Ottobre 2025
@@ -411,7 +412,12 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 ## 🔗 COLLEGAMENTI UTILI
 
 ### Roadmap Principali
+<<<<<<< .merge_file_ACGHPs
 - [Master Roadmap](../laravel/master-roadmap.md)
+=======
+- [Master Roadmap](../master-roadmap.md)
+- [Master Roadmap](../master-roadmap.md)
+>>>>>>> .merge_file_dVrxuQ
 - [Roadmap Status Summary](../roadmap-status-summary.md)
 - [Roadmap Technical](./roadmaps/roadmap-technical.md)
 - [Roadmap Quality](./roadmaps/roadmap-quality.md)

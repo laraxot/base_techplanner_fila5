@@ -1,8 +1,8 @@
 ---
-qmd: "migration plan.divergenza"
+qmd: "Migration Plan.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: MIGRATION_PLAN.md"
+title: "Migration Plan.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -237,4 +237,4 @@ grep -rn 'extends \(Resource\|Page\|ListRecords\|CreateRecord\|EditRecord\|Widge
 - [migration-filename-from-model-name](../../../../docs/wiki/rules/migration-filename-from-model-name.md) — 1 modello = 1 migrazione
 - [Sigma — scopo](../../Sigma/docs/scopo.md) — lo stesso esercizio sul modulo adattatore
 - [coverage.md](coverage.md) — il contratto di qualità dei test di questo modulo
-- [ARCHITECTURE.md](ARCHITECTURE.md) — l'architettura già documentata
+- [architecture.md](architecture.md) — l'architettura già documentata

@@ -10,12 +10,13 @@ discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
   - "./2-1-1-plan.md"
   - "./2-1-context.md"
-  - "./agents.md"
+  - "./AGENTS.md"
   - "./ai-agent-lessons-learned.md"
   - "./ai-skills-and-plugins-complete.md"
   - "./commit-message.md"
   - "./configuration.md"
   - "./docs-governance.md"
+status: draft
 ---
 
 # Design Comuni Italia - BMad Master Plan
@@ -307,10 +308,10 @@ laravel/Modules/Cms/docs/
 ```
 laravel/Themes/Sixteen/docs/
 ├── README.md
-├── LAYOUT_ARCHITECTURE_AND_NAMESPACE.md  ← Layout hierarchy
+├── layout-architecture-and-namespace.md  ← Layout hierarchy
 ├── theme-detection-system.md             ← Theme detection
 ├── VITE_BUILD_SYSTEM.md                  ← Vite build process
-├── DESIGN_COMUNI_HTML_REPLICATION.md     ← HTML analysis
+├── design-comuni-html-replication.md     ← HTML analysis
 ├── DESIGN_COMUNI_AMMINISTRAZIONE_analysis.md
 └── prompts/
     └── replikate.txt                     ← Replication prompt
@@ -329,7 +330,7 @@ docs/project/
 
 ```
 _bmad-output/
-├── DESIGN_COMUNI_INDEX.md            ← BMad index
+├── design_comuni_index.md            ← BMad index
 ├── design-comuni-prd.md              ← PRD
 ├── design-comuni-architecture.md     ← Architecture
 ├── design-comuni-ui-spec.md          ← UI Spec
@@ -361,7 +362,7 @@ _bmad-output/
 
 - → [Master Index](../../../docs/project/module-docs-index.md)
 - → [Theme Detection](../../../docs/project/theme-detection-system.md)
-- → [Layout Architecture](LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
+- → [Layout Architecture](layout-architecture-and-namespace.md)
 ```
 
 ### Link Pattern 3: Master Index → Module/Theme
@@ -375,9 +376,15 @@ _bmad-output/
 - **Files:** 221
 - **Index:** [Sixteen Docs Index](Themes/Sixteen/docs/00-index.md)
 - **Key Topics:**
+<<<<<<< .merge_file_zeX0Gv
   - [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
   - [Theme Detection](docs/project/theme-detection-system.md)
   - [Design Comuni Replication](Themes/Sixteen/docs/DESIGN_COMUNI_HTML_REPLICATION.md)
+=======
+  - [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
+  - [Theme Detection](theme-detection-system.md)
+  - [Design Comuni Replication](Themes/Sixteen/docs/design-comuni-html-replication.md)
+>>>>>>> .merge_file_ezMR16
 ```
 
 ---
@@ -595,8 +602,14 @@ pages/tests/argomenti.blade.php     # NO
 ### Key Documents
 
 - [Master Index](docs/project/module-docs-index.md)
+<<<<<<< .merge_file_zeX0Gv
 - [Theme Detection](docs/project/theme-detection-system.md)
 - [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
+=======
+- [Theme Detection](theme-detection-system.md)
+- [Theme Detection](theme-detection-system.md)
+- [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
+>>>>>>> .merge_file_ezMR16
 - [Page Component](Modules/Cms/docs/PAGE_COMPONENT_architecture.md)
 
 ### External Resources

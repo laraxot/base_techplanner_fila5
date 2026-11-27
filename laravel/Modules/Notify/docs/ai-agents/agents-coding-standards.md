@@ -187,7 +187,7 @@ enum Status: string implements HasLabel, HasColor {
 - [code-style.md](./code-style.md) - Più dettagliato
 - [critical-rules.md](./critical-rules.md) - Regole critiche
 - [AGENTS.md originale](../../AGENTS.md)
-- [agents.md originale](../../agents.md)
+- [AGENTS.md originale](../../AGENTS.md)
 - [Index principale](./index.md)
 
 ## Miglioramenti vs Originale

@@ -81,6 +81,9 @@
             "@php artisan filament:optimize",
             "@php artisan optimize",
             "@php artisan route:clear"
+        ],
+        "harness:check": [
+            "vendor/bin/pest Modules/Xot/tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php Modules/Xot/tests/Unit/Harness"
         ]
     },
     "repositories": [
@@ -115,5 +118,8 @@
         }
     },
     "minimum-stability": "dev",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "scripts-descriptions": {
+        "harness:check": "Sensori dell'harness (ADR, contratti, guard): source-level, girano anche senza app. Prima di dire «fatto»."
+    }
 }

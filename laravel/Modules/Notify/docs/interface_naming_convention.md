@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "interface naming convention"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Convenzione di Naming per le Interfacce

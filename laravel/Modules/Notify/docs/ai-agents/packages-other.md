@@ -7,9 +7,10 @@ updated: 2026-09-26
 qmd: "packages other"
 issues: []
 discussions: []
+status: draft
 ---
 
-# Pacchetti Altri — Riferimento
+# Pacchetti Altri: Riferimento
 
 Riferimento per i pacchetti non-Spatie, non-Filament del progetto.
 
@@ -21,6 +22,7 @@ Struttura moduli del progetto:
 
 ```
 Modules/
+<<<<<<< .merge_file_YMysJM
   Activity/   — event sourcing, activity log
   Chart/      — chart rendering (Chart.js + JpGraph)
   Cms/        — content management
@@ -37,6 +39,24 @@ Modules/
   UI/         — componenti UI
   User/       — autenticazione, Passport, Socialite
   Xot/        — core module (XotBase, traits, utilities)
+=======
+  Activity/  : event sourcing, activity log
+  Chart/     : chart rendering (Chart.js + JpGraph)
+  Cms/       : content management
+  Gdpr/      : GDPR compliance
+  Geo/       : dati geografici (comuni)
+  Job/       : job queue management
+  Lang/      : traduzioni
+  Limesurvey/: integrazione LimeSurvey
+  Media/     : file e media
+  Notify/    : notifiche (email, SMS, Telegram, WhatsApp)
+  <nome progetto>/   : survey management
+  App/   : survey management
+  Tenant/    : multi-tenancy
+  UI/        : componenti UI
+  User/      : autenticazione, Passport, Socialite
+  Xot/       : core module (XotBase, traits, utilities)
+>>>>>>> .merge_file_GnLBPv
 ```
 
 **Regole namespace** (v12, già configurato):
@@ -54,15 +74,6 @@ php artisan module:make-action MyAction --module=Job
 ```
 
 ---
-
-title: "packages other"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "packages other"
-issues: []
-discussions: []
 ## File e media
 
 ### pbmedia/laravel-ffmpeg 8.8.0
@@ -87,7 +98,7 @@ FFMpeg::fromDisk('videos')
     ->save('output.mp4');
 ```
 
-**Modelli**: `MediaConvert` — traccia le conversion jobs.
+**Modelli**: `MediaConvert`: traccia le conversion jobs.
 **Actions**: `ConvertVideoAction`, `GetVideoDurationAction`, `GetVideoFrameContentAction`
 
 ### intervention/image 3.11.7
@@ -173,8 +184,8 @@ PASSPORT_PERSONAL_ACCESS_TOKEN_EXPIRATION_MONTHS=6
 ### laravel/socialite 5.24.3
 
 OAuth social login. Provider attivi:
-- `socialiteproviders/microsoft` — Entra ID / Office 365
-- `socialiteproviders/auth0` — Auth0
+- `socialiteproviders/microsoft`: Entra ID / Office 365
+- `socialiteproviders/auth0`: Auth0
 
 ```php
 return Socialite::driver('microsoft')->redirect();
@@ -359,7 +370,7 @@ Client Redis puro PHP per cache e session.
 
 ---
 
-## Architettura moduli — riferimento rapido
+## Architettura moduli: riferimento rapido
 
 ```
 Xot (Core)

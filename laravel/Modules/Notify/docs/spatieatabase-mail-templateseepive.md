@@ -935,7 +935,7 @@ test('welcome email is sent', function () {
 - [SpatieEmail Class](../app/Emails/SpatieEmail.php)
 - [MailTemplate Model](../app/Models/MailTemplate.php)
 - [MailTemplateResource](../app/Filament/Resources/MailTemplateResource.php)
-- [Mail Layouts README](../resources/mail-layouts/readme.md)
+- [Mail Layouts README](../resources/mail-layouts/README.md)
 - [Spatie Translatable Integration](./spatie-translatable-integration.md)
 
 ---

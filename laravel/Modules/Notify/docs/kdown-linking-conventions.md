@@ -43,9 +43,9 @@ updated: 2026-08-24
 Per collegamenti a documenti in altre directory:
 
 ```markdown
-[Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
+[Regole Generali per le Chiavi di Traduzione](../../Lang/docs/translation_keys_rules.md)
+[Best Practices per le Chiavi di Traduzione](../../Lang/docs/translation_keys_best_practices.md)
+[Best Practices per le Chiavi di Traduzione](../../Lang/docs/translation-keys-best-practices.md)
 ```
 
 ## Motivazione
@@ -102,9 +102,9 @@ grep -r "\[.*\](/var" --include="*.md" /percorso/al/progetto
 Per collegamenti a documenti in altre directory:
 
 ```markdown
-[Regole Generali per le Chiavi di Traduzione](../../lang/docs/translation_keys_rules.md)
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation_keys_best_practices.md)
-[Best Practices per le Chiavi di Traduzione](../../lang/docs/translation-keys-best-practices.md)
+[Regole Generali per le Chiavi di Traduzione](../../Lang/docs/translation_keys_rules.md)
+[Best Practices per le Chiavi di Traduzione](../../Lang/docs/translation_keys_best_practices.md)
+[Best Practices per le Chiavi di Traduzione](../../Lang/docs/translation-keys-best-practices.md)
 ```
 
 ## Motivazione

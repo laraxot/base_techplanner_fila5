@@ -1,12 +1,13 @@
 ---
-title: "00 INDEX"
+title: "00 index"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "00 INDEX"
+qmd: "00 index"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 📚 **Indice Documentazione Modulo Notify**
@@ -15,7 +16,7 @@ discussions: []
 **Module Version**: 2.1.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa e Quick Start.
+1. [README.md](./README.md) - Panoramica completa e Quick Start.
 2. [roadmap.md](./roadmap.md) - Evoluzione 2026: Multi-channel API e AI Templates.
 3. [philosophy.md](./philosophy.md) - "Essere Connessi": filosofia delle notifiche in tempo reale.
 
@@ -33,10 +34,11 @@ discussions: []
 - 🔄 **[Queue Management](./monitoring.md)** - Monitoraggio delle code e dei fallback.
 
 ## 🧪 **Qualità e Sviluppo**
-- ✅ **[PHPStan Analysis](./phpstan-fixes.md)** - Report di conformità Level 10.
-- 🚨 **[PHPStan Cluster 2026-03-10](./phpstan-cluster-2026-03-10.md)** - Modelli canonici mancanti per log/canali e impatto su factory/controller.
+- ✅ **[PHPStan Analysis](./PHPSTAN-FIXES.md)** - Report di conformità Level 10.
+- 🚨 **[PHPStan Cluster 2026-03-10](./phpstan-cluster.md)** - Modelli canonici mancanti per log/canali e impatto su factory/controller.
 - 🧭 **[No Orphan Http Controllers](./no-orphan-http-controllers.md)** - I controller web senza route o boundary chiaro non devono restare nel modulo.
 - 🚫 **[No NotificationTrackingController](./no-notification-tracking-controller.md)** - Il tracking notifiche non deve vivere in un controller HTTP legacy.
+- 🔐 **[Cluster Test riservato al super-admin](./stories/test-cluster-authorization.story.md)** - Le pagine di invio di prova sono accessibili solo al super-admin (story in review).
 - 🔬 **[Testing Guidelines](./testing.md)** - Mocking dei canali e verifica invio.
 - 📘 **[Docs-First Workflow](./docs-first-workflow.md)** - Sequenza obbligatoria docs -> codice -> tracking GitHub.
 - 🧪 **PSR-4 Test Helpers** - Nei file Pest usare helper anonimi o support file dedicati; evitare classi top-level extra che rompono `composer dump-autoload`.
@@ -51,30 +53,14 @@ discussions: []
 - 🛡️ **[Security Analysis](./security-analysis.md)** - Protezione dei webhook dei provider (es. WhatsApp).
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Dispatcher centrale.
-- [User](../../user/docs/readme.md) - Definizione dei destinatari e preferenze.
+- [Xot](../../Xot/docs/README.md) - Dispatcher centrale.
+- [User](../../User/docs/README.md) - Definizione dei destinatari e preferenze.
 
 ---
-title: "00 INDEX"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "00 INDEX"
-issues: []
-discussions: []
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*
 
-## Documentazione BMAD del modulo
+Scopo e confini del modulo: [scopo.md](./scopo.md).
 
-Aggiornata il 2026-10-07 dopo la risoluzione dei marker di merge nei docs (versioni composte, non scelte a un lato).
+## Cosa manca per completare
 
-- [Brainstorming](bmad/brainstorming.md): decisioni, questioni aperte, opzioni scartate.
-- [Architecture](bmad/architecture.md)
-- [Quick reference](bmad/quick-reference.md)
-- [Setup guide](bmad/setup-guide.md)
-- Story: cartella [bmad/stories/](bmad/stories/).
-
-## Dependency Intelligence
-
-- [Dependency intelligence](dependency-intelligence.md)
+[completion-status.md](./completion-status.md): indicatori misurati, problemi noti e story aperte (2026-10-28).

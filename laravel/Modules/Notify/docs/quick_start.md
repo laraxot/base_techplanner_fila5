@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "quick start"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 🚀 FIXCITY - GUIDA RAPIDA SVILUPPATORI
@@ -16,15 +17,6 @@ discussions: []
 **Target**: Sviluppatori che iniziano a lavorare su FixCity
 
 ---
-
-title: "quick start"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "quick start"
-issues: []
-discussions: []
 ## 📋 PREREQUISITI
 
 ### Software Richiesto
@@ -498,9 +490,9 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 ## 🔗 LINK UTILI
 
 ### Documentazione
-- **[Indice Documentazione](./DOCUMENTATION_INDEX.md)**
-- **[Roadmap Status](./ROADMAP_STATUS_SUMMARY.md)**
-- **[Documentation Status](./project_docs/DOCUMENTATION_STATUS.md)**
+- **[Indice Documentazione](./documentation_index.md)**
+- **[Roadmap Status](./roadmap_status_summary.md)**
+- **[Documentation Status](./project_docs/documentation_status.md)**
 
 ### Framework
 - **[Laravel Docs](https://laravel.com/docs/11.x)**
@@ -509,7 +501,12 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 
 ### Regole Progetto
 - **[Laraxot Rules](./.windsurf/rules/user_15338591596331277449.md)**
+<<<<<<< .merge_file_u4RDbD
 - **[Code Quality](./.windsurf/rules/code-quality.md)**
+=======
+- **[Code Quality](ai-agents/code-quality.md)**
+- **[Code Quality](./ai-agents/code-quality.md)**
+>>>>>>> .merge_file_be5yxr
 - **[Project Rules](./.windsurf/rules/project-rules.md)**
 
 ---

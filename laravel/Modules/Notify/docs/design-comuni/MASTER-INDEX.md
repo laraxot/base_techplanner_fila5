@@ -102,7 +102,7 @@ discussions: []
 
 | Documento | File | Descrizione |
 |-----------|------|-------------|
-| **Cms Design Comuni Index** | [DESIGN_COMUNI_INDEX.md](../laravel/Modules/Cms/docs/DESIGN_COMUNI_INDEX.md) | **INDEX COMPLETO** modulo Cms |
+| **Cms Design Comuni Index** | [design_comuni_index.md](../laravel/Modules/Cms/docs/design_comuni_index.md) | **INDEX COMPLETO** modulo Cms |
 | **FAQ Architecture** | [design-comuni-faq.md](../laravel/Modules/Cms/docs/design-comuni-faq.md) | Architettura pagina FAQ |
 | **Homepage Analysis** | [design-comuni-homepage.md](../laravel/Modules/Cms/docs/design-comuni-homepage.md) | Analisi homepage |
 | **Argomenti** | [design-comuni-argomenti.md](../laravel/Modules/Cms/docs/design-comuni-argomenti.md) | Pagina argomenti |

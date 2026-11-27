@@ -1,60 +1,45 @@
-# Comment Module Roadmap
-
-> "Comment and discussion system for the Laraxot ecosystem with threaded comments and moderation tools."
-
-## 🎯 Vision
-
-Provide a **flexible commenting** system that supports:
-
-- ✅ Threaded comments
-- ✅ Comment moderation
-- ✅ Comment reactions
-- ✅ Comment notifications
-- ✅ Comment analytics
-- ✅ Anti-spam measures
-
-## 📊 Current Status
-
-### Overall Progress: 70% Complete
-
-| Category | Status | Progress |
-|----------|--------|----------|
-| Threaded Comments | ✅ Complete | 100% |
-| Comment Moderation | 🔄 In Progress | 70% |
-| Comment Reactions | ✅ Complete | 100% |
-| Comment Notifications | 🔄 In Progress | 60% |
-| Comment Analytics | 🔄 In Progress | 40% |
-| Anti-spam | 🔄 In Progress | 50% |
-
-## 🏗️ Key Features
-
-### 1. Threaded Comments
-- Nested comments
-- Comment replies
-- Comment depth limits
-- Comment collapsing
-- Comment sorting
-
-### 2. Comment Moderation
-- Moderation queue
-- Auto-moderation
-- User flags
-- Spam detection
-- Content filtering
-
-### 3. Comment Reactions
-- Emoji reactions
-- Custom reactions
-- Reaction counts
-- Reaction aggregation
-- Reaction analytics
-
-### 4. Comment Notifications
-- Reply notifications
-- Mention notifications
-- Digest notifications
-- Notification preferences
-- Email notifications
-
+---
+title: "README"
+type: note
+tags: [documentation]
+created: 2026-09-26
+updated: 2026-09-26
+qmd: "README"
+issues: []
+discussions: []
+status: draft
 ---
 
+# Comment Module Roadmap
+
+[![Module](https://img.shields.io/badge/Module-Comment Module Roadmap-8B0000.svg)]()
+[![Laravel](https://img.shields.io/badge/Laravel-13-red?style=for-the-badge)](https://laravel.com/)](https://laravel.com/)
+[![Filament](https://img.shields.io/badge/Filament-5-ffab00?style=for-the-badge)](https://filamentphp.com/)](https://filamentphp.com/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://php.net/)
+[![PHP](https://img.shields.io/badge/PHP-8.4+-777BB4?style=for-the-badge)](https://php.net/)](https://phpstan.org/)
+[![PSR-12](https://img.shields.io/badge/Code-PSR--12-blue?style=for-the-badge)](https://www.php-fig.org/psr/psr-12/)](https://www.php-fig.org/psr/psr-12/)
+[![Architecture](https://img.shields.io/badge/Architecture-Modular-purple?style=for-the-badge)](https://martinfowler.com/articles/paradigm-shifts.html)]()
+]()
+
+> **"Comment and discussion system for the Laraxot ecosystem with threaded comments and moderation tools."**
+
+## Perché esiste
+
+"Comment and discussion system for the Laraxot ecosystem with threaded comments and moderation tools."
+
+## Superpoteri
+
+- Modular component with XotBase patterns
+- Professional-grade implementation
+- Integrated with FixCity Platform
+
+## Documentazione
+
+| Lingua | Link |
+|--------|------|
+| 🇮🇹 Presentazione | Questo file (`README.md`) |
+| 🇬🇧 Business card | [docs/readme-en.md](../readme-en.md) |
+| 📚 Wiki tecnica | [./docs/wiki/](..) |
+
+---
+**Modulo** `Comment` · **Laraxot** · **FixCity Platform** · PHPStan 10 · Filament 5

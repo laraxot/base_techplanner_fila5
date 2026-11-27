@@ -1,8 +1,8 @@
 ---
-qmd: "support to actions philosophy.divergenza"
+qmd: "Support to Actions Philosophy.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: support-to-actions-philosophy.md"
+title: "Support to Actions Philosophy.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -1,10 +1,10 @@
 ---
-title: "summary"
+title: "Summary"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "summary"
+qmd: "Summary"
 issues: []
 discussions: []
 ---
@@ -52,12 +52,12 @@ php artisan tinker --execute="
 
 ---
 
-title: "summary"
+title: "SUMMARY"
 type: note
 tags: [documentation]
 created: 2026-09-26
 updated: 2026-09-26
-qmd: "summary"
+qmd: "SUMMARY"
 issues: []
 discussions: []
 ## Prossimi Bug da Analizzare

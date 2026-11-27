@@ -19,6 +19,7 @@ related:
 
 ## Metodo
 
+<<<<<<< .merge_file_m1MW3r
 Source-first (2026-11-16): inventario filesystem, `rg` su policy/marker/label,
 lettura purpose esistente, PHPStan globale Modules già a 0 errori. Nessuna UI
 inventata. Pest dichiarato solo se eseguito.
@@ -75,6 +76,8 @@ Vedi [piano-miglioramento.md](../piano-miglioramento.md).
 - [audit.md](../audit.md)
 - [ECC](../../ecc/job-ecc-audit.md)
 - [Story](../stories/module-bmad-audit.story.md)
+=======
+>>>>>>> .merge_file_ex7bAW
 Source-first, 2026-11-16: inventario filesystem, `rg -n` con `path:line`, lettura dei file
 critici (policy, `JobServiceProvider`, widget, componenti Livewire legacy, `ExecuteTaskAction`),
 `git log` sulle storie "done", PHPStan sul modulo, Pest sullo scratch DB del repo. La
@@ -189,6 +192,8 @@ Criteri usati: (1) chi non è amministratore non deve poter inserire o far girar
 - **Junk.** `app/Models/BaseModel.php.backup-20251015-092511`, `app/Models/MonitoredScheduledTask*.aaa`, `app/Console/Commands/queue.pid`, `resources/views/livewire/job/status.blade.php.backup_20251210_092150`, `Untitled`, `config.php`, `webpack.mix.js`, `psalm.xml` alla root, `tests/feature` e `tests/unit` minuscoli accanto a `Feature`/`Unit`.
 - **i18n.** Titoli letterali: `FailedJobResource/Tables/FailedJobsTable.php:54,64`, `JobBatchResource/Tables/JobBatchesTable.php:48`, `JobBatchResource/Pages/ListJobBatches.php:34`, flash in `ScheduleCrudWidget.php:92`; placeholder cron `'* * * * *'` in `ScheduleResource.php:127`, `ScheduleForm.php:107` (esempio di formato, non testo da tradurre: tollerato).
 - **`DummyAction`** con `echo` (`Actions/DummyAction.php:19`), usata dal widget di stato per generare carico.
+- **Modello utente concreto.** `app/Models/TaskComment.php:11` e `app/Models/Traits/TaskCommentRelations.php:9` importano `Modules\User\Models\User`: il modulo deve passare da `XotData`/`UserContract`, non dalla classe concreta.
+- **`exec()` in `Console/Commands/WorkerCheck.php:62,123`**: il comando arriva da `BuildQueueWorkerCommandAction`, non da input utente; da tenere sotto osservazione.
 
 ## Verificato e non è un finding
 
@@ -204,7 +209,9 @@ Criteri usati: (1) chi non è amministratore non deve poter inserire o far girar
 | PHPStan `Modules/Job` (`php -d memory_limit=2G ./vendor/bin/phpstan analyse Modules/Job --no-progress`) | **0 errori** (exit 0) |
 | Pest `Modules/Job/tests` (scratch DB, host 127.0.0.1) | **parziale**: `tests/Unit/Filament/JobStatusAuthorizationTest.php` 17 pass (34 assert.); suite completa non eseguita per carico macchina (load ≈ 50) |
 
-Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit.
+Nessun `migrate:fresh`, nessun `--force`, nessun `RefreshDatabase` lanciati dall'audit. Pest si esegue solo fuori dalla produzione e con DB di test raggiungibile.
+
+Una revisione precedente di questo audit (inventario automatico) riportava 84 test, 32 policy e 114 file di lingua IT: conteggi approssimati, non confermati dal filesystem (ricontrollo 2026-11-19: 56 PHP in `tests/`, 16 policy, 57 file in `lang/it`).
 
 ## Piano
 

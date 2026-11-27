@@ -261,9 +261,9 @@ Per lo stato dell'analisi statica condivisa tra agenti si veda [phpstan-analysis
 ## Collegamenti Bidirezionali
 
 ### Collegamenti ad Altri Moduli
-- [Migrazioni User](migrations.md)
-- [Migrazioni Activity](migrations.md)
-- [Migrazioni Xot](migrations.md)
+- [Migrazioni User](../user/docs/migrations.md)
+- [Migrazioni Activity](../activity/docs/migrations.md)
+- [Migrazioni Xot](../xot/docs/migrations.md)
 
 ### Collegamenti Interni
 - [README Principale](./README.md)
@@ -271,5 +271,5 @@ Per lo stato dell'analisi statica condivisa tra agenti si veda [phpstan-analysis
 - [Configurazione](./configuration.md)
 - [Testing](./testing.md)
 ## Collegamenti tra versioni di migrations.md
-* [migrations.md](../../notify/docs/migrations.md)
-* [migrations.md](../../activity/docs/database/migrations.md)
+* [migrations.md](../../Notify/docs/migrations.md)
+* [migrations.md](../../Activity/docs/database/migrations.md)

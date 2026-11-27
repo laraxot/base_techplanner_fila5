@@ -1,8 +1,8 @@
 ---
-qmd: "readme en.divergenza"
+qmd: "Readme En.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: readme-en.md"
+title: "Readme En.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

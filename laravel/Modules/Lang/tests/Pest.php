@@ -7,24 +7,16 @@ use Modules\Lang\Actions\ReadTranslationFileAction;
 use Modules\Lang\Database\Factories\TranslationFactory;
 use Modules\Lang\Models\BaseModel;
 use Modules\Lang\Models\Translation;
-use Modules\Lang\Providers\LangServiceProvider;
-use Modules\Lang\Tests\Support\Ensure;
-use Modules\Lang\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\file_put_contents;
 use function Safe\unlink;
-
-// Percorsi assoluti: tests/Pest.php root fa require di questo file e Pest risolve i
-// percorsi relativi rispetto al file root (Backtrace::testFile), non a questo.
-uses(TestCase::class)->in(__DIR__.'/Feature', __DIR__.'/Unit');
 
 /** @param array<string, mixed> $attributes */
 function createTranslation(array $attributes = []): Translation
 {
     return TranslationFactory::new()->createOne($attributes);
 }
-
 /** @param array<string, mixed> $attributes */
 function makeTranslation(array $attributes = []): Translation
 {
@@ -63,15 +55,15 @@ function langAssertDatabaseHasRow(string $table, array $data, ?string $connectio
 
 function makeLangBaseModel(): BaseModel
 {
-    return new class() extends BaseModel
+    return new class extends BaseModel
     {
         protected $table = 'test_lang_table';
     };
 }
 
-function makeLangServiceProvider(): LangServiceProvider
+function makeLangServiceProvider(): Modules\Lang\Providers\LangServiceProvider
 {
-    return TestCase::makeLangServiceProvider();
+    return Modules\Lang\Tests\TestCase::makeLangServiceProvider();
 }
 
 /** @return array<string, mixed> */
@@ -96,10 +88,6 @@ function readTranslationTestFilePath(): string
 
 function makeReadTranslationFileAction(): ReadTranslationFileAction
 {
-    return new ReadTranslationFileAction();
+    return new ReadTranslationFileAction;
 }
 
-function ensure(mixed $value): Ensure
-{
-    return new Ensure($value);
-}

@@ -242,8 +242,8 @@ composer update "filament/*" -W
 - [GitHub Releases](https://github.com/filamentphp/filament/releases)
 
 ### Project Documentation
-- [COMPOSER_STRATEGY.md](COMPOSER_STRATEGY.md)
-- [COMPOSER_UPDATE_REPORT.md](COMPOSER_UPDATE_REPORT.md)
+- [COMPOSER_STRATEGY.md](composer_strategy.md)
+- [COMPOSER_UPDATE_REPORT.md](composer_update_report.md)
 
 ## ✅ Checklist
 

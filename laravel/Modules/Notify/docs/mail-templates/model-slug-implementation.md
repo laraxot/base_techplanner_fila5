@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "model slug implementation"
 issues: []
 discussions: []
+status: draft
 ---
 
 # Implementazione del Campo `slug` nel Modello MailTemplate

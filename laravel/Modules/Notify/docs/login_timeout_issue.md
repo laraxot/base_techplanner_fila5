@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "login timeout issue"
 issues: []
 discussions: []
+status: draft
 ---
 
 # 🚨 Problema Timeout Pagina Login - Diagnosi e Soluzione
@@ -16,15 +17,6 @@ discussions: []
 **URL Affetto**: http://127.0.0.1:8000/it/auth/login
 
 ---
-
-title: "login timeout issue"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "login timeout issue"
-issues: []
-discussions: []
 ## 📋 Sintomi
 
 ### Errore Rilevato

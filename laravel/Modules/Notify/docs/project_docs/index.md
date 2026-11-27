@@ -15,9 +15,9 @@ discussions:
 related:
   - ../README.md
   - ../wiki/index.md
-  - ../notifications/readme.md
-  - ../integrations/readme.md
-  - ../templates/readme.md
+  - ../notifications/README.md
+  - ../integrations/README.md
+  - ../templates/README.md
 ---
 # 📚 Documentation Index - FixCity Project
 # 📚 Documentation Index - Notify Project
@@ -32,18 +32,18 @@ related:
 ### 🏆 Main Documents
 
 1. [**README.md**](../README.md) - Project overview and quick start
-2. [**CONTRIBUTING.md**](../CONTRIBUTING.md) - How to contribute
-3. [**ARCHITECTURE.md**](./ARCHITECTURE.md) - System architecture
-3. [**ARCHITECTURE.md**](./architecture.md) - System architecture
-4. [**QUALITY_DASHBOARD.md**](./QUALITY_DASHBOARD.md) - Real-time metrics
+2. [**CONTRIBUTING.md**](../contributing.md) - How to contribute
+3. [**architecture.md**](./architecture.md) - System architecture
+3. [**architecture.md**](./architecture.md) - System architecture
+4. [**QUALITY_DASHBOARD.md**](./quality_dashboard.md) - Real-time metrics
 
 ### 📊 Reports & Analysis
 
-5. [**MISSION_ACCOMPLISHED.md**](./MISSION_ACCOMPLISHED.md) - ⭐ Mission completion
-6. [**PROJECT_COMPLETION_CERTIFICATE.md**](./PROJECT_COMPLETION_CERTIFICATE.md) - Official certificate
+5. [**MISSION_ACCOMPLISHED.md**](./mission_accomplished.md) - ⭐ Mission completion
+6. [**PROJECT_COMPLETION_CERTIFICATE.md**](./project_completion_certificate.md) - Official certificate
 7. [**excellence-achievement-caps.md**](./excellence-achievement-caps.md) - Achievement report
-8. [**FINAL_REFACTORING_REPORT.md**](./FINAL_REFACTORING_REPORT.md) - Refactoring summary
-9. [**COMPLETE_REFACTORING_ANALYSIS.md**](./COMPLETE_REFACTORING_ANALYSIS.md) - Detailed analysis
+8. [**FINAL_REFACTORING_REPORT.md**](./final_refactoring_report.md) - Refactoring summary
+9. [**COMPLETE_REFACTORING_ANALYSIS.md**](./complete_refactoring_analysis.md) - Detailed analysis
 
 ---
 
@@ -71,7 +71,7 @@ related:
 - Commit guidelines
 - PR process
 
-### 3. ARCHITECTURE.md
+### 3. architecture.md
 ### 3. architecture.md
 **Purpose:** System architecture documentation  
 **Audience:** Developers, architects  
@@ -231,7 +231,7 @@ Each module has a `docs/` directory containing:
 ### For Developers
 - README.md
 - CONTRIBUTING.md
-- ARCHITECTURE.md
+- architecture.md
 - architecture.md
 - Module documentation
 - Refactoring reports
@@ -280,7 +280,7 @@ Each module has a `docs/` directory containing:
 ### By Topic
 
 **Architecture & Design:**
-- ARCHITECTURE.md
+- architecture.md
 - architecture.md
 - Design patterns section
 - Module structure
@@ -414,7 +414,7 @@ All documents include:
 ## 📅 Recent Updates
 
 ### 2025-10-01
-- ✅ Created INDEX.md
+- ✅ Created index.md
 - ✅ Created index.md
 - ✅ Completed MISSION_ACCOMPLISHED.md
 - ✅ Finalized PROJECT_COMPLETION_CERTIFICATE.md
@@ -422,7 +422,7 @@ All documents include:
 - ✅ Enhanced README.md
 
 ### 2025-09-30
-- ✅ Created ARCHITECTURE.md
+- ✅ Created architecture.md
 - ✅ Created architecture.md
 - ✅ Created QUALITY_DASHBOARD.md
 - ✅ Created excellence-achievement-caps.md

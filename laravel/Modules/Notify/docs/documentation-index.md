@@ -8,14 +8,20 @@ qmd: "documentation-index 📚 indice generale documentazione - ptv"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
+status: draft
 ---
 
 # 📚 Indice Generale Documentazione - Fixcity
@@ -39,7 +45,7 @@ related:
 - [README Principale](./README.md) - Panoramica progetto completa
 - [Analisi Super Mucca](./super-mucca-docs-analysis.md) - Report qualità documentazione
 - [Architecture](./architecture-analysis.md) - Analisi architetturale
-- [Roadmap](./master-roadmap-historic.md) - Piano sviluppo 2025
+- [Roadmap](./master-roadmap-2025.md) - Piano sviluppo 2025
 
 ### Guide Rapide
 - [Quick Start](./quick-start.md) - Guida avvio rapido
@@ -52,7 +58,12 @@ related:
 
 ### Documentazione Architetturale
 - [Design Patterns](./architecture.md) - Pattern architetturali
+<<<<<<< .merge_file_xR6oT3
 - [Database Schema](./database/schema.md) - Schema database
+=======
+- [Database Schema](wiki/schema.md) - Schema database
+- [Database Schema](./wiki/schema.md) - Schema database
+>>>>>>> .merge_file_U7k6E3
 - [API Documentation](./api/README.md) - Documentazione API
 - [Security](./security/README.md) - Sicurezza e conformità
 
@@ -70,18 +81,21 @@ related:
 
 #### **Xot Module** - Base Framework
 - [README](../laravel/Modules/Xot/docs/README.md) - Panoramica modulo base
+- [README](../../Xot/docs/README.md) - Panoramica modulo base
 - File docs: 395 files
 - **Funzionalità**: Framework base, utilities, base classes
 - **Status**: ✅ Eccellente (PHPStan Level 9)
 
 #### **User Module** - Gestione Utenti
 - [README](../laravel/Modules/User/docs/README.md) - Sistema autenticazione
+- [README](../../User/docs/README.md) - Sistema autenticazione
 - File docs: 421 files
 - **Funzionalità**: Autenticazione, autorizzazione, profili
 - **Status**: ✅ Eccellente (Multi-tenancy)
 
 #### **Lang Module** - Internazionalizzazione
 - [README](../laravel/Modules/Lang/docs/README.md) - Sistema traduzioni
+- [README](../../Lang/docs/README.md) - Sistema traduzioni
 - File docs: 279 files
 - **Funzionalità**: Traduzioni, localizzazione, multi-lingua
 - **Status**: ✅ Eccellente (IT/EN/DE)
@@ -90,18 +104,21 @@ related:
 
 #### **Fixcity Module** - Ticketing System
 - [README](../laravel/Modules/Fixcity/docs/README.md) - Gestione ticket
+- [README](../../Fixcity/docs/README.md) - Gestione ticket
 - File docs: 38 files
 - **Funzionalità**: Ticket, segnalazioni, supporto
 - **Status**: ✅ Operativo (Filament 4.x)
 
 #### **Notify Module** - Notifiche
 - [README](../laravel/Modules/Notify/docs/README.md) - Sistema notifiche
+- [README](README.md) - Sistema notifiche
 - File docs: 605 files
 - **Funzionalità**: Email, SMS, push notifications
 - **Status**: ✅ Eccellente (Multi-channel)
 
 #### **Blog Module** - Content Management
 - [README](../laravel/Modules/Blog/docs/README.md) - Gestione contenuti
+- [README](../../Blog/docs/README.md) - Gestione contenuti
 - File docs: 34 files
 - **Funzionalità**: Articoli, categorie, commenti
 - **Status**: ✅ Operativo (Visual editor)
@@ -110,72 +127,84 @@ related:
 
 #### **Cms Module** - CMS System
 - [README](../laravel/Modules/Cms/docs/README.md) - Content Management
+- [README](../../Cms/docs/README.md) - Content Management
 - File docs: 247 files
 - **Funzionalità**: Pagine, blocchi, Folio integration
 - **Status**: ✅ Eccellente (Filament Blocks)
 
 #### **UI Module** - Componenti UI
 - [README](../laravel/Modules/UI/docs/README.md) - Libreria componenti
+- [README](../../UI/docs/README.md) - Libreria componenti
 - File docs: 273 files
 - **Funzionalità**: Blade components, widgets, themes
 - **Status**: ✅ Eccellente (Bootstrap Italia)
 
 #### **Media Module** - Gestione Media
 - [README](../laravel/Modules/Media/docs/README.md) - Storage e processing
+- [README](../../Media/docs/README.md) - Storage e processing
 - File docs: 128 files
 - **Funzionalità**: Upload, storage, image processing
 - **Status**: ✅ Operativo (AWS S3)
 
 #### **Geo Module** - Dati Geografici
 - [README](../laravel/Modules/Geo/docs/README.md) - Geolocalizzazione
+- [README](../../Geo/docs/README.md) - Geolocalizzazione
 - File docs: 223 files
 - **Funzionalità**: Indirizzi, geocoding, mappe
 - **Status**: ✅ Operativo (Google Maps, Mapbox)
 
 #### **Activity Module** - Audit Trail
 - [README](../laravel/Modules/Activity/docs/README.md) - Logging attività
+- [README](../../Activity/docs/README.md) - Logging attività
 - File docs: 86 files
 - **Funzionalità**: Audit log, event sourcing, analytics
 - **Status**: ✅ Eccellente (PHPStan Level 9)
 
 #### **Gdpr Module** - GDPR Compliance
 - [README](../laravel/Modules/Gdpr/docs/README.md) - Conformità GDPR
+- [README](../../Gdpr/docs/README.md) - Conformità GDPR
 - File docs: 79 files
 - **Funzionalità**: Consensi, trattamenti, privacy
 - **Status**: ✅ Operativo (EU compliant)
 
 #### **Tenant Module** - Multi-tenancy
 - [README](../laravel/Modules/Tenant/docs/README.md) - Multi-tenant
+- [README](../../Tenant/docs/README.md) - Multi-tenant
 - File docs: 57 files
 - **Funzionalità**: Tenant isolation, database separation
 - **Status**: ✅ Operativo
 
 #### **Job Module** - Queue Management
 - [README](../laravel/Modules/Job/docs/README.md) - Gestione code
+- [README](../../Job/docs/README.md) - Gestione code
 - File docs: 83 files
 - **Funzionalità**: Jobs, queues, scheduling
 - **Status**: ✅ Operativo
 
 #### **AI Module** - Integrazione AI
 - [README](../laravel/Modules/AI/docs/README.md) - MCP e AI
+- [README](../../AI/docs/README.md) - MCP e AI
 - File docs: 34 files
 - **Funzionalità**: MCP protocol, AI chat, fine tuning
 - **Status**: ✅ Operativo (MCP servers)
 
 #### **Seo Module** - SEO Optimization
 - [README](../laravel/Modules/Seo/docs/README.md) - Ottimizzazione SEO
+- [README](../../Seo/docs/README.md) - Ottimizzazione SEO
 - File docs: 21 files
 - **Funzionalità**: Meta tags, sitemap, structured data
 - **Status**: ✅ Operativo
 
 #### **Comment Module** - Sistema Commenti
 - [README](../laravel/Modules/Comment/docs/README.md) - Gestione commenti
+- [README](../../Comment/docs/README.md) - Gestione commenti
 - File docs: 9 files
 - **Funzionalità**: Commenti, threading, moderazione
 - **Status**: ✅ Operativo
 
 #### **Rating Module** - Sistema Valutazioni
 - [README](../laravel/Modules/Rating/docs/README.md) - Valutazioni e recensioni
+- [README](../../Rating/docs/README.md) - Valutazioni e recensioni
 - File docs: 13 files
 - **Funzionalità**: Rating, reviews, feedback
 - **Status**: ✅ Operativo
@@ -186,12 +215,14 @@ related:
 
 ### Theme Sixteen - Design Comuni Italia
 - [README](../laravel/Themes/Sixteen/docs/README.md) - Tema principale AGID
+- [README](../../../Themes/Sixteen/docs/README.md) - Tema principale AGID
 - **Funzionalità**: Bootstrap Italia, WCAG 2.1, Design Comuni
 - **Status**: ✅ Eccellente (AGID compliant)
 - **Componenti**: 100+ componenti certificati
 
 ### Theme TwentyOne - Modern Design
 - [README](../laravel/Themes/TwentyOne/docs/README.md) - Tema moderno
+- [README](../../../Themes/TwentyOne/docs/README.md) - Tema moderno
 - **Funzionalità**: Filament 4.x integration, Livewire
 - **Status**: ✅ Operativo
 - **Componenti**: 50+ componenti custom
@@ -213,13 +244,29 @@ related:
 
 ### Coding Guidelines
 - [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
+<<<<<<< .merge_file_xR6oT3
 - [Laravel Best Practices](./standards/laravel.md) - Best practices Laravel
+=======
+- [Laravel Best Practices](html2pdf/laravel.md) - Best practices Laravel
+- [Environment Setup](./ai-agents/setup.md) - Configurazione ambiente
+- [Docker Setup](./development/docker.md) - Configurazione Docker
+- [Database Setup](./ai-agents/setup.md) - Setup database
+
+### Coding Guidelines
+- [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
+- [Laravel Best Practices](./html2pdf/laravel.md) - Best practices Laravel
+>>>>>>> .merge_file_U7k6E3
 - [Filament Guidelines](./standards/filament.md) - Linee guida Filament
 - [Blade Components](./standards/blade.md) - Componenti Blade
 
 ### Quality Assurance
 - [PHPStan Configuration](./phpstan/README.md) - Analisi statica
+<<<<<<< .merge_file_xR6oT3
 - [Testing Strategy](./testing/strategy.md) - Strategia testing
+=======
+- [Testing Strategy](strategy.md) - Strategia testing
+- [Testing Strategy](./strategy.md) - Strategia testing
+>>>>>>> .merge_file_U7k6E3
 - [CI/CD Pipeline](./ci-cd/README.md) - Continuous integration
 
 ---
@@ -260,7 +307,12 @@ related:
 - [Error Tracking](./monitoring/errors.md) - Tracking errori
 
 ### Analytics
+<<<<<<< .merge_file_xR6oT3
 - [Usage Analytics](./analytics/usage.md) - Analisi utilizzo
+=======
+- [Usage Analytics](html2pdf/usage.md) - Analisi utilizzo
+- [Usage Analytics](./html2pdf/usage.md) - Analisi utilizzo
+>>>>>>> .merge_file_U7k6E3
 - [Business Metrics](./analytics/business.md) - Metriche business
 
 ---
@@ -268,7 +320,12 @@ related:
 ## 🔒 Security
 
 ### Security Documentation
+<<<<<<< .merge_file_xR6oT3
 - [Security Guidelines](./security/guidelines.md) - Linee guida sicurezza
+=======
+- [Security Guidelines](ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
+- [Security Guidelines](./ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
+>>>>>>> .merge_file_U7k6E3
 - [GDPR Compliance](./security/gdpr.md) - Conformità GDPR
 - [Authentication](./security/authentication.md) - Sistema autenticazione
 - [Authorization](./security/authorization.md) - Sistema autorizzazioni
@@ -278,7 +335,7 @@ related:
 ## 📝 Changelog & Versioning
 
 ### Version History
-- [Changelog](./CHANGELOG.md) - Storico modifiche
+- [Changelog](./CHANGELOG.MD) - Storico modifiche
 - [Versioning Strategy](./versioning.md) - Strategia versioning
 - [Migration Guides](./migrations/README.md) - Guide migrazione
 

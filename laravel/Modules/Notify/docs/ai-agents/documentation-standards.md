@@ -41,7 +41,7 @@ WRONG:   phpstan-fixes-january-2026.md
 `README.md` is the ONLY file allowed with uppercase:
 ```
 CORRECT: phpstan-fixes.md, README.md
-WRONG:   PHPSTAN_FIXES.md, PHPStan-Fixes.md
+WRONG:   phpstan_fixes.md, PHPStan-Fixes.md
 ```
 
 ### 4. No duplicates

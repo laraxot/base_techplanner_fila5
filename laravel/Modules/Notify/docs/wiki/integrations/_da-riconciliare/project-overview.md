@@ -561,7 +561,7 @@ php artisan serve
 - GitHub Discussions (features)
 
 ### Contributing
-See `contributing.md`
+See `CONTRIBUTING.md`
 
 ### License
 MIT (to be confirmed)

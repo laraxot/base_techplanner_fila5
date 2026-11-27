@@ -8,6 +8,8 @@ type: integration
 tags: [integrations, modules, notify]
 created: 2026-08-24
 updated: 2026-08-24
+status: superseded
+superseded_by: missing-features.md
 ---
 
 # Analisi Funzionalità Mancanti - Modulo Notify
@@ -241,10 +243,10 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 
 ## Collegamenti
 
-- [Modulo App](../App/docs/readme.md)
-- [Modulo <nome progetto>](../<nome progetto>/docs/readme.md)
-- [Modulo Limesurvey](../limesurvey/docs/readme.md)
-- [Notify README](./readme.md)
+- [Modulo App](../App/docs/README.md)
+- [Modulo <nome progetto>](../<nome progetto>/docs/README.md)
+- [Modulo Limesurvey](../limesurvey/docs/README.md)
+- [Notify README](./README.md)
 
 ---
 

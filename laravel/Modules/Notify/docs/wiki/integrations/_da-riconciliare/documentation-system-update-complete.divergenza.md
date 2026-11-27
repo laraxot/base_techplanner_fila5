@@ -1,8 +1,8 @@
 ---
-qmd: "documentation system update complete.divergenza"
+qmd: "Documentation System Update Complete.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: DOCUMENTATION_SYSTEM_UPDATE_COMPLETE.md"
+title: "Documentation System Update Complete.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

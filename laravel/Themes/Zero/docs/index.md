@@ -2,7 +2,11 @@
 id: zero-docs-index
 slug: index
 title: "Indice della documentazione — Tema Zero"
+<<<<<<< .merge_file_yTsXUL
 description: "Indice navigabile del tema Zero. Ingresso: README.md. Il vecchio INDEX.md e' stato assorbito qui per evitare la collisione di sola maiuscola."
+=======
+description: "Indice navigabile del tema Zero. Ingresso: README.md. Il vecchio index.md e' stato assorbito qui per evitare la collisione di sola maiuscola."
+>>>>>>> .merge_file_XW0NhK
 document_type: index
 type: index
 category: documentation
@@ -23,7 +27,11 @@ related:
 # Indice della documentazione — Tema Zero
 
 Ingresso attivo: [README.md](./README.md). Questo `index.md` e' l'unico indice
+<<<<<<< .merge_file_yTsXUL
 della radice: `INDEX.md` e' stato assorbito qui il 2026-10-21 per evitare la
+=======
+della radice: `index.md` e' stato assorbito qui il 2026-10-21 per evitare la
+>>>>>>> .merge_file_XW0NhK
 collisione di sola maiuscola su filesystem case-insensitive. Il contenuto
 storico e' in [`_archive/index-legacy.md`](./_archive/index-legacy.md).
 
@@ -31,7 +39,11 @@ storico e' in [`_archive/index-legacy.md`](./_archive/index-legacy.md).
 
 - [README](./README.md) — scopo, mappa e regole
 - [Inventory](./inventory.md) — conteggi verificati
+<<<<<<< .merge_file_yTsXUL
 - [Changelog](./changelog.md) — cronologia modifiche
+=======
+- [Changelog](./CHANGELOG.md) — cronologia modifiche
+>>>>>>> .merge_file_XW0NhK
 - [Architettura](./architecture/README.md)
 - [Scopo](./bmad/scopo.md) / [purpose](./bmad/purpose.md)
 
@@ -49,7 +61,11 @@ storico e' in [`_archive/index-legacy.md`](./_archive/index-legacy.md).
 ## Wiki
 
 - [Indice wiki](./wiki/index.md)
+<<<<<<< .merge_file_yTsXUL
 - [README wiki](./wiki/README.md)
+=======
+- [README wiki](./wiki/readme.md)
+>>>>>>> .merge_file_XW0NhK
 - [Log wiki](./wiki/log.md)
 - [Concetti](./wiki/concepts/)
 - [Regole](./wiki/rules/)
@@ -60,7 +76,11 @@ storico e' in [`_archive/index-legacy.md`](./_archive/index-legacy.md).
 
 - [Stories](./stories/README.md)
 - [Concepts](./concepts/README.md)
+<<<<<<< .merge_file_yTsXUL
 - [Skills](./skills/readme.md)
+=======
+- [Skills](./skills/README.md)
+>>>>>>> .merge_file_XW0NhK
 - [Archivio](./_archive/README.md)
 - [Epics](./bmad/epics/)
 

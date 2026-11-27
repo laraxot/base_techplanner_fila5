@@ -12,10 +12,13 @@ use Modules\Gdpr\Actions\Validation\ValidateGdprConsentAction;
 use Modules\Gdpr\Actions\Validation\ValidateUserDataAction;
 use Modules\Gdpr\Models\Consent;
 use Modules\Gdpr\Models\Treatment;
+use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Actions\User\CreateUserAction;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+
+uses(TestCase::class);
 
 /*
  * Registration Flow Integration Tests.
@@ -26,7 +29,7 @@ use PHPUnit\Framework\Assert;
  *
  * Flow tested:
  * 1. ValidateGdprConsentAction  — validates privacy + terms acceptance
- * 2. ValidateUserDataAction     — sanitizes & hashes password, sets type/state
+ * 2. ValidateUserDataAction     — sanitizes & hashes password, sets type (email non verificata)
  * 3. CreateUserAction           — persists user to DB
  * 4. CollectGdprConsentsAction  — collects consent booleans into array
  * 5. SaveGdprConsentsAction     — creates Consent records linked to Treatment records
@@ -49,7 +52,6 @@ it('completes full registration with privacy and terms accepted', function (): v
     $validatedData = app(ValidateUserDataAction::class)->execute($formData);
 
     Assert::assertSame('customer_user', $validatedData['type']);
-    // Lo stato iniziale non e' compito di ValidateUserDataAction (non restituisce `state`).
     Assert::assertTrue(Hash::check('SecureP@ssw0rd!', $validatedData['password']));
     // 3. Create user
     $user = app(CreateUserAction::class)->execute($validatedData);
@@ -84,7 +86,7 @@ it('completes full registration with privacy and terms accepted', function (): v
         'id' => $user->id,
         'email' => $formData['email'],
         'type' => 'customer_user',
-    ]);
+    ], 'user');
 
     // Verify consents saved
     $savedConsents = Consent::where('subject_id', $user->id)->get();
@@ -171,7 +173,8 @@ it('hashes password during validation', function (): void {
     $formData = [
         'first_name' => 'Test',
         'last_name' => 'User',
-        'email' => 'test@example.com',
+        // Indirizzo unico: un test@example.com lasciato da un altro test fa scattare la regola `unique`.
+        'email' => 'hash-'.uniqid().'@example.com',
         'password' => 'MyP@ssword123!',
     ];
 
@@ -261,7 +264,6 @@ it('prevents duplicate user registration with same email', function (): void {
         'email' => $email,
         'password' => 'SecureP@ss2!',
     ];
-    $validatedData2 = app(ValidateUserDataAction::class)->execute($formData2);
-
-    gdprAssertThrows(\Exception::class, static fn () => app(CreateUserAction::class)->execute($validatedData2));
+    // Il doppione si ferma gia' nella validazione, con un messaggio sul campo email (prima dell'errore del database).
+    gdprAssertThrows(ValidationException::class, static fn () => app(ValidateUserDataAction::class)->execute($formData2));
 });

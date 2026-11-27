@@ -10,7 +10,7 @@ issues: []
 discussions: []
 related:
   - "../README.md"
-  - "./00-INDEX.md"
+  - "./00-index.md"
   - "./stories/02.Job-merge-conflict-resolution.story.md"
 ---
 
@@ -18,7 +18,11 @@ related:
 
 Cartella `docs/` del modulo Job: documentazione a livello modulo. Per la panoramica
 del modulo vedi il [README del modulo](../README.md); per la navigazione vedi
+<<<<<<< .merge_file_OsEwtW
 l'[indice](00-index.md).
+=======
+l'[indice](./00-index.md).
+>>>>>>> .merge_file_x37Z3p
 
 ## Panoramica
 

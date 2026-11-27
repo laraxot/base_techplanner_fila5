@@ -7,6 +7,7 @@ updated: 2026-09-26
 qmd: "architecture analysis"
 issues: []
 discussions: []
+status: draft
 ---
 
 # FIXCITY ARCHITECTURE DEEP DIVE ANALYSIS
@@ -23,15 +24,6 @@ discussions: []
 **Status**: Production-Ready Foundation with Active Development
 
 ---
-
-title: "architecture analysis"
-type: note
-tags: [documentation]
-created: 2026-09-26
-updated: 2026-09-26
-qmd: "architecture analysis"
-issues: []
-discussions: []
 ## 📋 EXECUTIVE SUMMARY
 
 ### Project Overview
@@ -1647,7 +1639,7 @@ Tasks:
 
 ### Recommended New Documentation
 ```
-1. ARCHITECTURE.md
+1. architecture.md
 1. architecture.md
    - System architecture diagrams
    - Module dependency graph
@@ -1813,8 +1805,12 @@ Monitoring:
 
 Frontend:
 [ ] Theme built (npm run build)
+<<<<<<< .merge_file_GfMJI8
 [ ] Assets deployed (symlink public_html/themes (npm run copy obsoleto))
 [ ] Asset buildati (`npm run build`) e serviti via symlink in `public_html/themes` (`npm run copy` obsoleto)
+=======
+niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
+>>>>>>> .merge_file_HLa6bH
 [ ] Dark mode tested
 [ ] Responsive design tested
 [ ] Accessibility tested

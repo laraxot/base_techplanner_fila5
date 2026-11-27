@@ -8,6 +8,7 @@ use Spatie\QueueableAction\QueueableAction;
 
 use function Safe\preg_match_all;
 
+/** @see Modules/AI/docs/sentiment-analysis.md */
 final class AnalyzeBasicSentimentAction
 {
     use QueueableAction;
@@ -46,6 +47,8 @@ final class AnalyzeBasicSentimentAction
      * @param  list<string>  $positiveWords
      * @param  list<string>  $negativeWords
      * @return array{int, int}
+     *
+     * @see Modules/AI/docs/sentiment-analysis.md
      */
     private function countPolarity(string $text, array $positiveWords, array $negativeWords): array
     {

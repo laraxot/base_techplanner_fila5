@@ -4,7 +4,7 @@
 **Module Version**: 2.3.0
 
 ## 🎯 **Lettura Essenziale**
-1. [README.md](./readme.md) - Panoramica completa, Multi-Queue e Scheduling.
+1. [README.md](./README.md) - Panoramica completa, Multi-Queue e Scheduling.
 2. [roadmap.md](./roadmap.md) - Visione evolutiva e obiettivi 2026.
 3. [philosophy.md](./philosophy.md) - La gestione "Zen" dei flussi asincroni.
 
@@ -27,9 +27,9 @@
 - [Riferimento](../../../../docs/composer-packages-reference.md) | [Inventario 312 pacchetti](../../../../docs/architecture/composer-packages-full-inventory.md) - Nessuna dipendenza diretta; usa Xot, spipu/html2pdf (via Xot)
 
 ## 🔗 **Moduli Correlati**
-- [Xot](../../xot/docs/readme.md) - Base framework e Page classes.
-- [Activity](../../activity/docs/readme.md) - Tracciamento log esecuzione.
-- [Notify](../../notify/docs/readme.md) - Notifiche fallimento job.
+- [Xot](../../Xot/docs/README.md) - Base framework e Page classes.
+- [Activity](../../activity/docs/README.md) - Tracciamento log esecuzione.
+- [Notify](../../notify/docs/README.md) - Notifiche fallimento job.
 
 ---
 *Documentazione conforme agli standard Laraxot - DRY + KISS + SOLID*

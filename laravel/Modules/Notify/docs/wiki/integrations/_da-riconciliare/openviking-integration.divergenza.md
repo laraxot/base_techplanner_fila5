@@ -1,8 +1,8 @@
 ---
-qmd: "openviking integration.divergenza"
+qmd: "Openviking Integration.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: openviking-integration.md"
+title: "Openviking Integration.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

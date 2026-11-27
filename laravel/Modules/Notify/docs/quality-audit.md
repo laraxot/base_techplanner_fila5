@@ -50,7 +50,7 @@ da `ignoreErrors` e non vengono contate da nessun gate.
 ### 4543 file .md sotto docs/, con 80 collisioni di case fra loro
 
 E' la seconda superficie documentale del progetto dopo Xot, ed e' 6 volte il numero di
-file PHP del modulo. Le 80 collisioni sono coppie tipo `ARCHITECTURE-DIAGRAMS.md` /
+file PHP del modulo. Le 80 collisioni sono coppie tipo `architecture-diagrams.md` /
 `architecture-diagrams.md`: su un filesystem case-sensitive sono due documenti che
 divergono, su macOS o Windows sono un conflitto.
 

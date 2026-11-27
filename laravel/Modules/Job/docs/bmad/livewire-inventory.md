@@ -20,7 +20,7 @@ related:
 
 **Solo documentazione. Nessun PHP toccato in questo audit.**
 
-Questo file è la SSoT del modulo Job per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](livewire-inventory.md) e [Modules/Xot/docs/bmad/livewire-inventory.md](livewire-inventory.md).
+Questo file è la SSoT del modulo Job per la campagna di conversione Livewire → Filament widget. Formato e metodo sono ripresi da [Modules/Cms/docs/bmad/livewire-inventory.md](../../Cms/docs/bmad/livewire-inventory.md) e [Modules/Xot/docs/bmad/livewire-inventory.md](../../Xot/docs/bmad/livewire-inventory.md).
 
 Differenza rispetto a Cms/Xot: in Job **esistono mount reali** (`<livewire:...>` in viste Blade), quindi la classificazione non è "tutto orfano": un componente è montato dentro una pagina del panel `job::admin`, gli altri solo in viste legacy `adm_theme` prive di renderer.
 
@@ -87,7 +87,7 @@ File: `app/Http/Livewire/Schedule/Crud.php` (118 righe), vista `resources/views/
 - La vista contiene markup rotto: `wire:click="executeTask('{{ $task-> }}')"` (riga 55) — espressione Blade incompleta.
 - `executeTask()` (righe 112-117) via `ExecuteTaskAction`; `getCommands()` (righe 75-110) enumera tutti i comandi Artisan.
 
-Alias `schedule.crud`. Montato solo in `admin/home/acts/task.blade.php:8` — raggiungibile solo tramite la riscrittura `::panels.actions.*-action` → `::admin.home.acts.*` di `GetViewAction.php:67-71`, che richiede una classe `*Action` sotto `app/Filament/Panels/Actions/`: **in Job questa directory non esiste** (`find Modules/Job -type d -iname '*panel*'` = vuoto). Unico riferimento "panels" nel modulo è la stringa vista `filament-panels::resources.pages.list-records` in `ScheduleResource/Pages/ViewSchedule.php:33`, non correlata. Referenza documentale (non codice): `docs/components/schedule-crud-1.md:50`.
+Alias `schedule.crud`. Montato solo in `admin/home/acts/task.blade.php:8` — raggiungibile solo tramite la riscrittura `::panels.actions.*-action` → `::admin.home.acts.*` di `GetViewAction.php:67-71`, che richiede una classe `*Action` sotto `app/Filament/Panels/Actions/`: **in Job questa directory non esiste** (`find Modules/Job -type d -iname '*panel*'` = vuoto). Unico riferimento "panels" nel modulo è la stringa vista `filament-panels::resources.pages.list-records` in `ScheduleResource/Pages/ViewSchedule.php:33`, non correlata. Referenza documentale (non codice): `docs/components/schedule-crud.md:50`.
 
 ## Verifica del montaggio: tabella repo-wide
 
@@ -98,7 +98,7 @@ Alias `schedule.crud`. Montato solo in `admin/home/acts/task.blade.php:8` — ra
 | `<livewire:schedule.crud>` | idem | 1 hit: `admin/home/acts/task.blade.php:8` (legacy, rewrite-only, irraggiungibile — vedi sopra) |
 | `broad` (tag o `@livewire`) | idem + grep `broad` | **zero mount** in tutto il repo (solo falsi positivi vendor). Alias registrato ma mai montato |
 | `@livewire(...)` | `grep -rn "@livewire" Modules/Job` | zero hit nel modulo (i chiamanti usano solo tag `<livewire:...>`) |
-| FQCN | `grep "Modules\\Job\\Http\\Livewire"` | solo self-namespace, il test `JobExecuteCoverage50Test.php` (righe 35, 303, 400), la doc `docs/components/schedule-crud-1.md:50` e `coverage.xml` autogenerato |
+| FQCN | `grep "Modules\\Job\\Http\\Livewire"` | solo self-namespace, il test `JobExecuteCoverage50Test.php` (righe 35, 303, 400), la doc `docs/components/schedule-crud.md:50` e `coverage.xml` autogenerato |
 | Render hook nel chrome Filament | `grep registerRenderHook/->renderHook( Modules app` (vendor escluso) | Unico hook: `XotBasePanelProvider.php:110-122` — script JS anti-bfcache scoped alla pagina Login, non monta componenti. Nessun altro provider Filament di Job esiste: `app/Providers/Filament/AdminPanelProvider.php` è 12 righe (solo `$module = 'Job'`, riga 11) |
 | Rotta esplicita | `Modules/Job/routes/web.php`, `api.php` | `web.php` vuota (solo `declare(strict_types=1)`); `api.php` solo commenti. Nessuna rotta verso componenti Livewire |
 | Folio/Volt | `Modules/Job/resources/views/pages` | **directory inesistente**. `FolioVoltServiceProvider` (Cms, righe 141-169) registra `<module>/resources/views/pages` per ogni modulo che ce l'ha — Job non contribuisce rotte Folio |

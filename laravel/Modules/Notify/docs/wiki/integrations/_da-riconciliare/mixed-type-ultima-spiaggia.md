@@ -27,4 +27,4 @@ updated: 2026-08-24
 - [array-keys-mixed-property-exists.mdc](../.cursor/rules/array-keys-mixed-property-exists.mdc)
 - [filament-array-typing.mdc](../.cursor/rules/filament-array-typing.mdc)
 - [critical-rules-and-memories](../laravel/Modules/Xot/docs/critical-rules-and-memories.md)
-- [agents.md](../agents.md)
+- [AGENTS.md](../AGENTS.md)

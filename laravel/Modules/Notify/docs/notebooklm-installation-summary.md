@@ -12,7 +12,7 @@ related:
   - "./00-index-2.md"
   - "./00-index.md"
   - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions-2.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
@@ -47,7 +47,7 @@ ls -la ~/.claude/skills/notebooklm/
 # - data/ (authentication + library)
 # - requirements.txt
 # - README.md, CHANGELOG.md, LICENSE
-# - README.md, changelog.md, LICENSE
+# - README.md, CHANGELOG.md, LICENSE
 ```
 
 ## What is NotebookLM Skill?
@@ -243,7 +243,7 @@ Create these NotebookLM notebooks:
 
 ### 1. Laraxot Framework Docs
 - **Upload**: Laraxot documentation, AGENTS.md, .windsurfrules
-- **Upload**: Laraxot documentation, agents.md, .windsurfrules
+- **Upload**: Laraxot documentation, AGENTS.md, .windsurfrules
 - **Topics**: laravel, architecture, modules, filament, xot
 - **Use**: Technical research, implementation verification
 

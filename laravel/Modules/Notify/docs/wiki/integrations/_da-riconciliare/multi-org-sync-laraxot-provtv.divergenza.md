@@ -1,8 +1,8 @@
 ---
-qmd: "multi org sync laraxot provtv.divergenza"
+qmd: "Multi Org Sync Laraxot Provtv.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: multi-org-sync-laraxot-provtv.md"
+title: "Multi Org Sync Laraxot Provtv.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

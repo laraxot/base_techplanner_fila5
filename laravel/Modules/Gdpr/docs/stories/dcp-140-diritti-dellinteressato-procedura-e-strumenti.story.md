@@ -11,6 +11,7 @@ created: 2026-10-13
 updated: 2026-10-13
 qmd: "diritti interessato accesso rettifica cancellazione portabilita export dati account delete account area personale impostazioni privacy gdpr art 15 17 20"
 related: [dcp-112, dcp-111, dcp-106, dcp-141]
+date_originale_nome_file: 2026-10-13
 ---
 
 # DCP-140: il cittadino puo' esercitare i propri diritti

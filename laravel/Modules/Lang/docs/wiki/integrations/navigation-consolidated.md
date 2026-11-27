@@ -600,7 +600,7 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
-- [Regole Traduzioni Laraxot](../../../../Xot/docs/translations/translation-rules.md)
+- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
@@ -609,11 +609,11 @@ Il modulo Lang risulta **CONFORME** agli standard di traduzione:
 - [Documentazione Modulo Lang](README.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
-- [Regole Traduzioni Laraxot](../../../../Xot/docs/translations/translation-rules.md)
+- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 - [Audit Generale Traduzioni Navigation](../../../docs/navigation-translations-audit.md)
 - [Documentazione Modulo Lang](README.md)
 - [Sistema Localizzazione](comprehensive_guide.md)
-- [Regole Traduzioni Laraxot](../../../../Xot/docs/translations/translation-rules.md)
+- [Regole Traduzioni Laraxot](../Xot/docs/translation-rules.md)
 
 ## Note Tecniche
 
@@ -757,8 +757,8 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 
 ## Collegamenti Correlati
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
-- [Correzioni Errori Sintassi 2025](../../archive/correzioni_errori_sintassi_2025.md)
-- [Best Practices Traduzioni](../../../../Xot/docs/translations/translation-rules.md)
+- [Correzioni Errori Sintassi 2025](../correzioni_errori_sintassi_2025.md)
+- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*
 - [Best Practices Traduzioni](../../xot/docs/translation_rules.md)

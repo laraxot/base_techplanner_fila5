@@ -149,7 +149,7 @@ Tutte le traduzioni seguono la struttura espansa:
 
 - [Laraxot Translation Philosophy](../../xot/docs/translation-philosophy.md)
 - [Translation Standards](../../xot/docs/translation-standards.md)
-- [UI Module Documentation](../readme.md)
+- [UI Module Documentation](../README.md)
 
 *Intervento completato il: 2026-01-22*
 *Conforme alle regole DRY + KISS*

@@ -1,8 +1,8 @@
 ---
-qmd: "implementations completed.divergenza"
+qmd: "Implementations Completed.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: IMPLEMENTATIONS_COMPLETED.md"
+title: "Implementations Completed.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

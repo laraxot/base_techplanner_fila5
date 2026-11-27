@@ -1,8 +1,8 @@
 ---
-qmd: "appointment field namings.divergenza"
+qmd: "Appointment Field Namings.divergenza"
 issues: []
 discussions: []
-title: "Divergenza da riconciliare: appointment-field-namings.md"
+title: "Appointment Field Namings.divergenza"
 module: Notify
 type: note
 tags: [xot-5.39, riconciliazione, docs-ownership]

@@ -5,8 +5,8 @@ declare(strict_types=1);
 return [
     'register' => [
         'title' => 'Create your account',
-        'subtitle' => 'Join the most delicious Laravel developer community!',
-        'submit' => 'Create my free account',
+        'subtitle' => 'Fill in the form to create your personal account.',
+        'submit' => 'Create account',
         'submitting' => 'Creating account...',
         'already_have_account' => 'Already have an account?',
         'already_registered' => 'Already have an account?',
@@ -48,7 +48,7 @@ return [
             'terms_label' => 'Terms and Conditions',
             'terms_hint' => 'I have read and accept the Terms and Conditions',
             'marketing_label' => 'Marketing Consent',
-            'marketing_hint' => 'I want to receive pizza tips and meetup invitations',
+            'marketing_hint' => 'I want to receive news and updates',
             'privacy_complete' => 'Full information pursuant to Articles 13 and 14 of Regulation (EU) 2016/679 (GDPR)',
             'terms_complete' => 'Service contract pursuant to Article 6(1)(b) of Regulation (EU) 2016/679 (GDPR)',
         ],

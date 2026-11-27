@@ -13,9 +13,10 @@ discussions:
 related:
   - ../../README.md
   - ../../wiki/index.md
-  - ../../notifications/readme.md
-  - ../../integrations/readme.md
-  - ../../templates/readme.md
+  - ../../notifications/README.md
+  - ../../integrations/README.md
+  - ../../templates/README.md
+status: draft
 ---
 # AI Agents Documentation Index
 
@@ -31,10 +32,14 @@ related:
 This directory contains split documentation files for AI assistants used in the FixCity project. Each file is focused on a specific area to improve readability and maintainability.
 
 **Original Files** (kept for backward compatibility):
-- [`AGENTS.md`](../../../../AGENTS.md) — 5349 lines, comprehensive BMad agents + tasks
-- [`docs/CLAUDE.md`](../../../../docs/CLAUDE.md) — 833 lines, Laravel Boost guidelines
-- [`QWEN.md`](../../../../QWEN.md) — 47 lines, Qwen output language rules
-- [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md) — 581 lines, Gemini-specific rules
+- [`AGENTS.md`](../../../../AGENTS.md): 5349 lines, comprehensive BMad agents + tasks
+- [`docs/CLAUDE.md`](../../../../docs/CLAUDE.md): 833 lines, Laravel Boost guidelines
+- [`qwen.md`](../../../../qwen.md): 47 lines, Qwen output language rules
+- [`laravel/gemini.md`](../../../../laravel/gemini.md): 581 lines, Gemini-specific rules
+- [`AGENTS.md`](../../../../../AGENTS.md): 5349 lines, comprehensive BMad agents + tasks
+- [`docs/CLAUDE.md`](../../claude.md): 833 lines, Laravel Boost guidelines
+- [`qwen.md`](../../../../qwen.md): 47 lines, Qwen output language rules
+- [`laravel/gemini.md`](../../../../../gemini.md): 581 lines, Gemini-specific rules
 
 ---
 
@@ -92,6 +97,7 @@ This directory contains split documentation files for AI assistants used in the 
 ## Laravel Boost (CLAUDE.md)
 
 Split from [`docs/CLAUDE.md`](../../../../docs/CLAUDE.md):
+Split from [`docs/CLAUDE.md`](../../claude.md):
 
 | Section | File | Lines |
 |---------|----|----|
@@ -113,12 +119,14 @@ Split from [`docs/CLAUDE.md`](../../../../docs/CLAUDE.md):
 
 ## Gemini Rules
 
-Split from [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md):
+Split from [`laravel/gemini.md`](../../../../laravel/gemini.md):
+Split from [`laravel/gemini.md`](../../../../../gemini.md):
 
 | Section | File | Lines |
 |---------|----|----|
 | Gemini Core Rules | [gemini/core-rules.md](gemini/core-rules.md) | ~200 |
 | Gemini Project Context | [gemini/project-context.md](gemini/project-context.md) | ~200 |
+| Gemini Project Context | [gemini/project-context.md](../project-context.md) | ~200 |
 | Gemini Development Rules | [gemini/development-rules.md](gemini/development-rules.md) | ~180 |
 
 **See Also**: [GEMINI Directory](gemini/)
@@ -129,7 +137,7 @@ Split from [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md):
 
 | File | Lines | Notes |
 |----|----|----|
-| [QWEN.md](../../../../QWEN.md) | 47 | Too small to split — kept as single file |
+| [qwen.md](../../../../qwen.md) | 47 | Too small to split: kept as single file |
 
 ---
 
@@ -139,6 +147,9 @@ Split from [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md):
 - [BMad Method Setup](../../bmad/setup-guide.md)
 - [Project Configuration](../../docs/project/configuration.md)
 - [Module Docs Index](../../docs/modules/index.md)
+- [BMad Method Setup](../../bmad/setup-guide.md)
+- [Project Configuration](../../project/configuration.md)
+- [Module Docs Index](../../modules/index.md)
 - [Theme Docs Index](../../docs/themes/index.md)
 - [AI Workflow](../../docs/project/ai-workflow/)
 
@@ -146,10 +157,15 @@ Split from [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md):
 - ← Back to [Project Root](../../)
 - ← Back to [Docs Index](../../docs/README.md)
 - ← Back to [AGENTS.md](../../../../AGENTS.md) (original)
-- ← Back to [agents.md](../../../../agents.md) (original)
+- ← Back to [AGENTS.md](../../../../AGENTS.md) (original)
 - ← Back to [CLAUDE.md](../../../../docs/CLAUDE.md) (original)
-- ← Back to [GEMINI.md](../../../../laravel/GEMINI.md) (original)
-- ← Back to [QWEN.md](../../../../QWEN.md) (original)
+- ← Back to [gemini.md](../../../../laravel/gemini.md) (original)
+- ← Back to [Docs Index](../../README.md)
+- ← Back to [AGENTS.md](../../../../../AGENTS.md) (original)
+- ← Back to [AGENTS.md](../../../../../AGENTS.md) (original)
+- ← Back to [CLAUDE.md](../../claude.md) (original)
+- ← Back to [gemini.md](../../../../../gemini.md) (original)
+- ← Back to [qwen.md](../../../../qwen.md) (original)
 
 ---
 
@@ -157,20 +173,20 @@ Split from [`laravel/GEMINI.md`](../../../../laravel/GEMINI.md):
 
 ### Adding New Split Files
 1. Create file in appropriate subdirectory (`agents/`, `tasks/`, `claude/`, `gemini/`)
-2. Add entry to this INDEX.md table
-3. Add bidirectional link back to this INDEX.md
+2. Add entry to this index.md table
+3. Add bidirectional link back to this index.md
 2. Add entry to this index.md table
 3. Add bidirectional link back to this index.md
 4. Update original file to reference split version
 
 ### Updating Split Files
 1. Update the split file
-2. Update line count in this INDEX.md
+2. Update line count in this index.md
 2. Update line count in this index.md
 3. Add changelog entry below
 
 ### Changelog
 | Date | Change | Author |
 |------|--------|--------|
-| 2026-04-11 | Initial split of AGENTS.md, CLAUDE.md, GEMINI.md | Qwen |
-| 2026-04-11 | Initial split of agents.md, CLAUDE.md, GEMINI.md | Qwen |
+| 2026-04-11 | Initial split of AGENTS.md, CLAUDE.md, gemini.md | Qwen |
+| 2026-04-11 | Initial split of AGENTS.md, CLAUDE.md, gemini.md | Qwen |

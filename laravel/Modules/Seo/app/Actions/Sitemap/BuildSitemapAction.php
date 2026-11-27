@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Seo\Actions\Sitemap;
 
+use DateTimeInterface;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Http\Response;
@@ -11,6 +12,7 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 use Modules\Cms\Actions\Head\ResolveRobotsPolicyAction;
 use Modules\Cms\Actions\Head\ResolveWrittenLocalesAction;
 use Modules\Cms\Models\Page;
+use Modules\Seo\Contracts\SitemapLastModifiedContract;
 use Modules\Seo\Contracts\SitemapPathsContract;
 use Modules\Seo\Datas\SeoConfigData;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
@@ -59,9 +61,10 @@ final class BuildSitemapAction
             ));
             foreach ($pageLocales as $locale) {
                 $xml .= "  <url>\n    <loc>".$this->url($locale, $entry['path'])."</loc>\n";
-                // Data dell'ultima modifica della pagina CMS: Google la usa per decidere quando ripassare.
-                if (($entry['lastmod'] ?? null) !== null) {
-                    $xml .= '    <lastmod>'.$entry['lastmod']."</lastmod>\n";
+                // Data dell'ultima modifica (pagina CMS: stringa Y-m-d; fonte taggata: DateTimeInterface): Google la usa per decidere quando ripassare.
+                $lastmod = $entry['lastmod'];
+                if ($lastmod !== null) {
+                    $xml .= '    <lastmod>'.($lastmod instanceof DateTimeInterface ? $lastmod->format(DateTimeInterface::ATOM) : $lastmod)."</lastmod>\n";
                 }
                 if (count($pageLocales) > 1) {
                     foreach ($pageLocales as $alternate) {
@@ -82,7 +85,7 @@ final class BuildSitemapAction
      * `path`: percorso senza lingua ('' per la home, 'privacy', 'tickets/track', 'blog/{slug}', 'tickets/{id}').
      * `written`: lingue in cui la pagina CMS e' scritta (titolo e contenuto); `null` = nessuna restrizione (URL di dettaglio dei moduli).
      *
-     * @return list<array{path: string, written: list<string>|null, lastmod?: string|null}>
+     * @return list<array{path: string, written: list<string>|null, lastmod: DateTimeInterface|string|null}>
      */
     private function indexableEntries(): array
     {
@@ -109,10 +112,12 @@ final class BuildSitemapAction
 
         foreach (app()->tagged(SitemapPathsContract::TAG) as $source) {
             if ($source instanceof SitemapPathsContract) {
+                // Date vere di ultima modifica, se la fonte le ha (SitemapLastModifiedContract); mai inventate.
+                $lastModified = $source instanceof SitemapLastModifiedContract ? $source->lastModified() : [];
                 foreach ($source->execute() as $path) {
                     if (! str_starts_with(trim($path, '/'), 'tests/') && trim($path, '/') !== 'tests') {
                         // Una pagina CMS gia' vista conserva le sue lingue: il modulo che la elenca non ne sa nulla.
-                        $entries['/'.$path] ??= ['path' => $path, 'written' => null];
+                        $entries['/'.$path] ??= ['path' => $path, 'written' => null, 'lastmod' => $lastModified[$path] ?? null];
                     }
                 }
             }

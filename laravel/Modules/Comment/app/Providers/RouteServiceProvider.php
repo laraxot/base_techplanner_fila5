@@ -10,12 +10,10 @@ class RouteServiceProvider extends XotBaseRouteServiceProvider
 {
     public string $name = 'Comment';
 
-    /**
-     * The module namespace to assume when generating URLs to actions.
-     */
+    /** @deprecated Vietato Http\Controllers — Folio + Actions */
     protected string $moduleNamespace = 'Modules\Comment\Http\Controllers';
 
-    protected string $module_dir = __DIR__;
+    protected string $moduleDir = __DIR__;
 
-    protected string $module_ns = __NAMESPACE__;
+    protected string $moduleNs = __NAMESPACE__;
 }

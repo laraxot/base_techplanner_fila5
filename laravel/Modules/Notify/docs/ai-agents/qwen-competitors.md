@@ -98,5 +98,5 @@ discussions: []
 ## 🔗 Link
 
 - [Indice QWEN](./qwen-split-index.md)
-- [QWEN.md originale](../../QWEN.md)
+- [qwen.md originale](../../qwen.md)
 - [Index principale](./index.md)

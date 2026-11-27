@@ -8,14 +8,20 @@ qmd: "quick-start 🚀 ptv - guida rapida sviluppatori"
 issues: ["https://github.com/provtv/base_ptv_fila5/issues/124"]
 discussions: ["https://github.com/provtv/base_ptv_fila5/discussions/1"]
 related:
-  - "./00-index-1.md"
+  - "./00-index.md"
   - "./00-index-2.md"
   - "./00-index.md"
-  - "./absolute-completion-100.md"
-  - "./acronym-naming-conventions-1.md"
-  - "./acronym-naming-conventions-2.md"
+  - "./absolute-completion.md"
+  - "./acronym-naming-conventions.md"
+  - "./00-index-documentation.md"
+  - "./00-index-2.md"
+  - "./00-index.md"
+  - "./absolute-completion-completamento-assoluto.md"
+  - "./acronym-naming-conventions.md"
+  - "./acronym-naming-conventions.md"
   - "./acronym-naming-conventions.md"
   - "./action-plan-immediate.md"
+status: draft
 ---
 
 # 🚀 FIXCITY - GUIDA RAPIDA SVILUPPATORI
@@ -510,7 +516,12 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 
 ### Regole Progetto
 - **[Laraxot Rules](./.windsurf/rules/user_15338591596331277449.md)**
+<<<<<<< .merge_file_tAkpjv
 - **[Code Quality](./.windsurf/rules/code-quality.md)**
+=======
+- **[Code Quality](ai-agents/code-quality.md)**
+- **[Code Quality](./ai-agents/code-quality.md)**
+>>>>>>> .merge_file_c5OsDJ
 - **[Project Rules](./.windsurf/rules/project-rules.md)**
 
 ---
@@ -554,7 +565,7 @@ php artisan optimize:clear
 documentazione del modulo specifico o chiedi supporto al team.*
 ---
 
-<!-- Merged from QUICK-START.md, which collided with this file on case-insensitive filesystems. -->
+<!-- Merged from quick-start.md, which collided with this file on case-insensitive filesystems. -->
 
 ---
 title: "Notify Module Quick Start"
@@ -564,7 +575,7 @@ created: 2026-07-28
 updated: 2026-07-28
 ---
 
-# Notify Module — Quick Start
+# Notify Module: Quick Start
 
 ## Send Notification
 

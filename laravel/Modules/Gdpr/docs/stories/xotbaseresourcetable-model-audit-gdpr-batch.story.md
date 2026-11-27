@@ -88,7 +88,7 @@ ambiguita' in questo modulo).
 ## Task 2 — verifica `getTableColumns()` contro schema reale
 
 Verifica con `php artisan tinker` (sola lettura: `Schema::connection($conn)->getColumnListing($table)` +
-`SHOW TABLES`), connessione usata dai model Gdpr: `gdpr` → database fisico `<nome progetto>_data`.
+`SHOW TABLES`), connessione usata dai model Gdpr: `gdpr` → database fisico `quaeris_data`.
 
 ### Consent (entrambe le copie, contenuto identico) — tabella `consents`, connessione `gdpr`
 
@@ -102,7 +102,7 @@ revoked_ip_address`.
 
 ### Profile (entrambe le copie, contenuto identico) — tabella `profiles`, connessione `gdpr`
 
-Colonne reali nel DB `<nome progetto>_data` interrogato: `id, post_type, bio, created_at, updated_at, created_by,
+Colonne reali nel DB `quaeris_data` interrogato: `id, post_type, bio, created_at, updated_at, created_by,
 updated_by, deleted_by, first_name, surname, email, phone, address, user_id, last_name, tax_code,
 vat_number, deleted_at, uuid`.
 
@@ -114,10 +114,10 @@ vat_number, deleted_at, uuid`.
   `$table->string('type')->index()->nullable();` e `$table->boolean('is_active')->default(true);`), e
   presenti nel cast di `Modules\User\Models\BaseProfile::casts()` (`'is_active' => 'boolean'`) da cui
   `Modules\Gdpr\Models\Profile` eredita. Conclusione: **non e' un campo rinominato/rimosso**, e' il
-  database locale `<nome progetto>_data` (connessione `gdpr`) che non ha ancora applicato le migration piu'
+  database locale `quaeris_data` (connessione `gdpr`) che non ha ancora applicato le migration piu'
   recenti del modulo `User` per la tabella `profiles`. Non rimosso (nessuna certezza al 100% richiesta
   dalle istruzioni, anzi evidenza opposta: la colonna e' attesa). Nessuna azione sul codice; segnalazione
-  per chi gestisce l'ambiente/i seed di `<nome progetto>_data`. **Non e' stato eseguito alcun comando di
+  per chi gestisce l'ambiente/i seed di `quaeris_data`. **Non e' stato eseguito alcun comando di
   migrazione**, come da vincolo del task.
 
 ### Treatment — tabella `treatments`, connessione `gdpr`
@@ -131,7 +131,7 @@ updated_at, updated_by, created_by, deleted_at, deleted_by`.
 ### Event — tabella attesa `gdpr_events`, connessione `gdpr`
 
 `Schema::connection('gdpr')->hasTable('gdpr_events')` → `no`. La tabella non esiste nel DB locale
-`<nome progetto>_data`, nonostante la migration `database/migrations/2024_01_01_000001_create_gdpr_events_table.php`
+`quaeris_data`, nonostante la migration `database/migrations/2024_01_01_000001_create_gdpr_events_table.php`
 sia presente nel modulo (probabile ambiente locale non completamente migrato — non e' stato lanciato
 alcun comando di migrazione per verificarlo/risolverlo, come da vincolo). Verifica fatta contro le colonne
 **definite nella migration** invece che via `Schema::getColumnListing` (impossibile a tabella assente):
@@ -179,7 +179,7 @@ supporre semantica non verificata.
 ### Completion Notes List
 
 - 2026-09-11: audit Task 1 (verificato, gia' presente), Task 2 (verificato via tinker/migration, nessuna
-  colonna rimossa, 2 osservazioni documentate su ambiente `<nome progetto>_data` disallineato), Task 3 (4 edit
+  colonna rimossa, 2 osservazioni documentate su ambiente `quaeris_data` disallineato), Task 3 (4 edit
   additive in 2 file), PHPStan pulito, commit+push sul repo separato del modulo `Gdpr` (remote `laraxot`).
 
 ### File List
@@ -200,7 +200,7 @@ supporre semantica non verificata.
 ## Perche' niente `github_issue`/`epic`/`story_id`
 
 Batch di audit meccanico trasversale a piu' moduli, assegnato direttamente (non tramite epic/PRD di
-prodotto in `docs/planning-artifacts/epics.md`, che copre solo Epic 1-3 <nome progetto>). La story owner in
+prodotto in `docs/planning-artifacts/epics.md`, che copre solo Epic 1-3 Quaeris). La story owner in
 `Modules/Xot` (vedi sopra) ha anch'essa `github_issue: null`/`github_discussion: null` — stessa
 motivazione, non duplicata qui. Coerente anche con le altre story narrative gia' presenti in questo
 modulo senza frontmatter/riferimenti GitHub (`gdpr-mixed-type-reduction.story.md`,
