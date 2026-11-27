@@ -148,6 +148,6 @@ Tutti i campi devono seguire la struttura espansa:
 
 - [Correzioni Errori Sintassi 2025](archive/correzioni_errori_sintassi_2025.md)
 - [Traduzioni Navigation Audit](archive/traduzioni_navigation_2025.md)
-- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
+- [Best Practices Traduzioni](../../Xot/docs/translations/translation-rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*

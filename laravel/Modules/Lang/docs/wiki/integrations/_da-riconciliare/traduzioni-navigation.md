@@ -109,6 +109,6 @@ Molte traduzioni utilizzano ancora il pattern `.navigation` invece di traduzioni
 ## Collegamenti Correlati
 - [Errori Comuni Traduzione](../errori_comuni_traduzione.md)
 - [Correzioni Errori Sintassi 2025](../../../archive/correzioni_errori_sintassi_2025.md)
-- [Best Practices Traduzioni](../../Xot/docs/TRANSLATION_RULES.md)
+- [Best Practices Traduzioni](../../../../../Xot/docs/translations/translation-rules.md)
 
 *Ultimo aggiornamento: 6 Gennaio 2025*

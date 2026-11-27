@@ -3122,7 +3122,7 @@ return [
 
 ## Collegamenti
 
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
@@ -3252,7 +3252,7 @@ return [
 
 ## Collegamenti
 
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
@@ -3547,7 +3547,7 @@ return [
 
 ## Collegamenti
 
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 - [Translation Rules](../xot/docs/translation_rules.md)
@@ -3706,13 +3706,13 @@ return [
 
 ## Collegamenti
 
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
@@ -7576,7 +7576,7 @@ Ogni correzione terminologica deve essere documentata:
 
 ## translation-refactor-complete-summary-
 
-*Consolidated from: `translation-refactor-complete-summary-.md`*
+*Consolidated from: `translation-refactor-complete-summary.md`*
 
 title: "Refactor Completo File di Traduzione - Riepilogo Finale"
 module: "Lang"
@@ -7655,7 +7655,7 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 
 ### Documentazione Centrale
 - `/docs/translation-field-structure-complete.md` - Standard completi per tutti i campi
-- `/docs/translation-refactor-complete-summary-2025-08-08.md` - Questo documento
+- `/docs/translation-refactor-complete-summary.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-2025-08-08.md` - Dettagli refactor modulo User
@@ -7826,7 +7826,7 @@ Tutti i campi di traduzione ora includono la struttura completa a 7 elementi:
 
 ### Documentazione Centrale
 - `/docs/translation-field-structure-complete.md` - Standard completi per tutti i campi
-- `/docs/translation-refactor-complete-summary-2025-08-08.md` - Questo documento
+- `/docs/translation-refactor-complete-summary.md` - Questo documento
 
 ### Documentazione Moduli
 - `/Modules/User/docs/translation-city-field-refactor-2025-08-08.md` - Dettagli refactor modulo User
@@ -8283,7 +8283,7 @@ related:
 - [Modulo User - Traduzioni](laravel/Modules/User/docs/translations.md)
 - [Modulo Performance - Traduzioni](laravel/Modules/Performance/docs/translation_guidelines.md)
 - [Modulo UI - Componenti](laravel/Modules/UI/docs/components.md)
-- [Modulo Xot - Regole Base](laravel/Modules/Xot/docs/translation_rules.md)
+- [Modulo Xot - Regole Base](../../../../Xot/docs/translations/translation-rules.md)
 
 ## Esempi e Fix
 - [Fix Traduzioni Performance](laravel/Modules/Performance/docs/organizzativa-migration-errors.md)
@@ -11884,7 +11884,7 @@ return [
 
 ## Collegamenti
 
-- [Translation Rules](../Xot/docs/translation_rules.md)
+- [Translation Rules](../../../../Xot/docs/translations/translation-rules.md)
 - [Translation Standards](./translation-standards.md)
 - [Best Practices](../Xot/docs/translations-best-practices.md)
 
