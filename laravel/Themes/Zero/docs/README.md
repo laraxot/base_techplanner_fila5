@@ -1,65 +1,50 @@
 ---
-id: zero-docs-readme
-slug: readme
-title: "Documentazione del tema Zero"
-description: "Punto di ingresso della docs del tema Zero: scopo del tema, mappa delle cartelle, documenti chiave e regole di manutenzione."
-document_type: index
-type: index
-category: documentation
+title: "Theme Zero — scopo"
+type: readme
+theme: Zero
 status: active
-module: Zero
-tags: [zero, tema, docs, indice]
-created: "2026-09-24"
-updated: "2026-10-20"
-qmd: "tema zero docs indice mappa cartelle bmad wiki stories archivio frontmatter duplicati"
-issues: []
-discussions: []
-related:
-  - ./inventory.md
-  - ./wiki/index.md
-  - ./bmad/00-index.md
-  - ./bmad/scopo.md
-  - ./bmad/purpose.md
-  - ./stories/docs-temi-audit-organizzazione.story.md
-  - ../../../Modules/Cms/docs/scopo.md
-  - ../../../Modules/Lang/docs/scopo.md
-  - ../../../../docs/wiki/rules/phpstan-neon-user-only.md
-  - ../../../Modules/Xot/docs/conventions/docs-organization.md
-  - ./index.md
+updated: 2026-11-25
+qmd: "theme zero scopo tema pubblico attivo pub_theme adm_theme vestito blade tailwind alpine flowbite vite nessun php folio login widget mail layouts"
+merged_from:
+  - bmad/scopo.md
+  - bmad/purpose.md
+  - bmad/README.md
+  - bmad/readme-en.md
+  - bmad/theme-overview.md
+  - bmad/philosophy.md
+  - bmad/comprehensive-theme-analysis.md
+  - analisi-completa-tema.md
+  - bmad/theme-documentation.md
+  - bmad/themes-system-complete-guide.md
+  - wiki/concepts/theme-zero-operating-focus.md
+  - wiki/overview.md
+  - wiki/overviews/overview.md
+  - wiki/README.md
+  - glossary.md
+  - concepts/README.md
+  - architecture/README.md
 ---
 
-<!--
-GateGuard facts:
-1. Supersedes previous related-only set — adds docs-organization + INDEX spine link; non cancella contenuto.
-2. Linked from Themes/Zero/docs/index.md, bmad/00-index.md, inventory.
-3. Edit existing README.md — not a new file.
-4. User verbatim: "aggiorna studia e migliora e organizza meglio le cartelle docs dentro i moduli e dentro i temi e migliora il tuo second brain"
--->
+# Theme Zero — scopo
 
-# Documentazione del tema Zero
+## Perche' esiste
 
-## Scopo del tema
+**Zero e' il "vestito" del front office PTVX**: markup Blade, token di stile, pipeline Vite,
+layout email e testi di interfaccia. Non decide cosa e' una pagina ne' quale dato mostrare:
+dati e interazioni arrivano dai moduli (in primis il `LoginWidget` del modulo User).
+Filosofia in una riga: **tema = vestito, moduli = corpo, Xot = ossatura**.
 
-`laravel/Themes/Zero` e' l'unico tema frontend **attivo** del monorepo (tipo `pub`, vedi `theme.json`); One e Three esistono come skeleton. Contiene solo presentazione: viste Blade, asset e traduzioni. La cartella `app/` e' vuota.
+## Dove si usa
 
-**Perche' (pagine canoniche):** [bmad/scopo.md](bmad/scopo.md) (IT) · [bmad/purpose.md](bmad/purpose.md) (bridge EN) · [wiki/concepts/theme-zero-operating-focus.md](wiki/concepts/theme-zero-operating-focus.md).
+- `theme.json`: `name: Zero`, `type: pub`, `active: true`.
+- `config/local/ptvx/xra.php` e `config/local/ptvx-mono/xra.php`: `$adm_theme = 'Zero'`,
+  `$pub_theme = $adm_theme` → Zero e' sia tema pubblico sia tema admin degli host PTVX.
+- Theme One riusa la **build** di Zero: `@vite([...], 'themes/Zero')` nei suoi layout.
+- Theme Three e' un guscio senza codice (vedi `../../Three/docs/README.md`).
 
-| Parte | Cosa c'e' | Dove |
-|---|---|---|
-| Viste | layout `app`, pagine `home`, `index`, login, componenti `layouts`, `blocks`, `ui`, override Filament per il login | `resources/views/` |
-| Asset | Tailwind 3.4, Alpine 3, Flowbite 4, Vite 6 con `laravel-vite-plugin`; build in `public/` | `resources/css`, `resources/js`, `vite.config.js` |
-| Mail | layout HTML `base`, `clean`, `christmas-professional` | `resources/mail-layouts/` |
-| Lingue | `navigation` e `ui` in it, en, de | `lang/` |
+## Cosa contiene (verificato 2026-11-25)
 
-Il tema non contiene logica di dominio. Survey, autorizzazione e dati Pulse appartengono al modulo <nome progetto>, non presente in questo repository: il contratto resta esterno. Non copiare nel tema metriche o decisioni di dominio.
-
-**Confini:** Folio/Blade/asset qui; risoluzione pagina e blocchi JSON nel modulo Cms, non presente in questo repository; autolabel e locale switcher in [Lang — scopo](../../../Modules/Lang/docs/scopo.md); foundation Filament in [Xot](../../../Modules/Xot/docs/00-index.md) e [mai estendere Filament*](concepts/xotbase-never-extend-filament.md).
-
-**Indici:** questa pagina e' l'ingresso. BMAD usa [bmad/00-index.md](bmad/00-index.md) (minuscolo). Non creare `00-index.md` gemello.
-
-## Mappa delle cartelle
-
-| Percorso | Ruolo | Ingresso |
+| Parte | Contenuto | Dove |
 |---|---|---|
 | [`bmad/`](bmad/) | guide, architettura, report e pianificazione del tema (la parte piu' grande) | [`bmad/00-index.md`](bmad/00-index.md), [`bmad/README.md`](bmad/README.md), panoramica lunga [`bmad/theme-overview.md`](bmad/theme-overview.md) |
 | [`wiki/`](wiki/) | conoscenza curata per gli agenti: concetti, regole, how-to, memorie, fonti | [`wiki/index.md`](wiki/index.md), [`wiki/README.md`](wiki/readme.md) |
@@ -69,6 +54,15 @@ Il tema non contiene logica di dominio. Survey, autorizzazione e dati Pulse appa
 | [`concepts/`](concepts/) | vincoli e concetti specifici del tema | [`concepts/README.md`](concepts/README.md) |
 | [`skills/`](skills/) | note sulle skill del tema | [`README.md`](skills/README.md) |
 | [`_archive/`](_archive/) | copie storiche, non canoniche; ogni file ha `canonical:` verso il documento vivo | [`README.md`](_archive/README.md) (tabella copia e canonico) |
+| Layout | `layouts.main`, `layouts.guest`, `layouts.auth`, `layouts.app` + `layouts/app.blade.php` | `resources/views/components/layouts/`, `resources/views/layouts/` |
+| Pagine Folio | `index`, `home`, `auth/login` | `resources/views/pages/` |
+| Blocchi | hero, cta, features, stats, testimonials, links, navigation, sidebar | `resources/views/components/blocks/` |
+| Componenti | `navigation`, `nav-link`, `responsive-nav-link`, `ui/logo` | `resources/views/components/` |
+| Override Filament | vista del widget di login | `resources/views/filament/widgets/auth/login.blade.php` |
+| Asset | Tailwind 3.4, Alpine 3, Flowbite (`^1.8.1`), Vite 6; build in `public/` | `resources/css/app.css`, `resources/js/app.js`, `vite.config.js` |
+| Mail | `base.html`, `christmas-professional.html` | `resources/mail-layouts/` |
+| Lingue | it, en, de (completi), es (parziale) | `lang/` |
+| PHP | nessuno: `app/` contiene solo `.gitkeep` | test `tests/Unit/ThemeBoundariesTest.php` |
 
 File nella radice: [`CHANGELOG.md`](CHANGELOG.md) (cronologia), [`inventory.md`](inventory.md) (conteggi verificati), [`index.md`](index.md) (indice canonico) e `index-pointer.md` (alias storico, non più presente).
 
@@ -99,3 +93,16 @@ File nella radice: [`CHANGELOG.md`](CHANGELOG.md) (cronologia), [`inventory.md`]
 - Dieci pagine di `bmad/` e `wiki/concepts/` citano moduli che non esistono in questo repository: ognuna ha in testa una "Nota di verifica 2026-10-20" e il contenuto non e' stato riscritto.
 - Le guide in `bmad/` citano Tailwind v4, Livewire 4 e Flux UI; il tema reale usa Tailwind 3.4, Alpine e Flowbite. Allineare quando si tocca la guida.
 - Nomi che differiscono solo per la maiuscola (collidono su filesystem case-insensitive): **13 coppie** il 2026-11-24, tra cui `readme.md`/`README.md` nella radice, in `bmad/`, `skills/`, `wiki/`, `changelog.md`/`CHANGELOG.md`, `00-index.md`/`00-INDEX.md` e gli `index.md`/`INDEX.md` delle sottocartelle di `wiki/`. Vanno unificati (uno canonico, l'altro assorbito). Elenco: `find docs -type f | tr A-Z a-z | sort | uniq -d`.
+## Regole in breve
+
+1. Solo presentazione: Blade, CSS/JS, mail-layouts, traduzioni. Niente Action/modelli in `app/`.
+2. Comportamento Filament nuovo: prima il mirror `XotBase*` in Xot, poi l'override di vista qui.
+3. Niente testo hardcoded: `__('pub_theme::<file>.<chiave>')`.
+4. Lo stack reale e' Tailwind **3.4** + Alpine + Flowbite: non documentare Tailwind 4 / Flux.
+
+## Documentazione
+
+Mappa completa: [index.md](./index.md). Punti d'ingresso:
+[architecture](./architecture.md) · [frontend-build](./frontend-build.md) ·
+[authentication](./authentication.md) · [theme-boundaries](./theme-boundaries.md) ·
+[ADR](./adr/README.md).

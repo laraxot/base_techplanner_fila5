@@ -15,6 +15,10 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Logica spostata dal listener `SaveGdprConsents`: il listener resta un adattatore
  * sottile, il comportamento (7 trattamenti, created_by `system`) e' invariato.
+ *
+ * @see docs/contracts/save-registration-consents-action.md
+ *
+ * @contract docs/contracts/save-registration-consents-action.md
  */
 class SaveRegistrationConsentsAction
 {

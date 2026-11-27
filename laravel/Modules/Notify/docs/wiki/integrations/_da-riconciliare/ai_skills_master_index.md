@@ -129,12 +129,8 @@ Questa documentazione elenca tutte le skill AI installate e configurate per il p
 
 **Usage**: Skills auto-attivano quando l'agente rileva task rilevanti
 
-<<<<<<< .merge_file_XxtyYp
 **File**: [superpowers/installazione.md](./superpowers/installazione.md)
-=======
 **File**: [superpowers/installazione.md](../../../superpowers/installazione.md)
-**File**: [superpowers/installazione.md](../../../superpowers/installazione.md)
->>>>>>> .merge_file_58dQrv
 
 ---
 

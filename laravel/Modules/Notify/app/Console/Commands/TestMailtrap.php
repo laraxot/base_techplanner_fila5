@@ -49,18 +49,19 @@ class TestMailtrap extends Command
         Assert::string($fromAddress);
         Assert::string($fromName);
 
-        $email = (new MailtrapEmail)
-            ->from(new Address($fromAddress, $fromName))
-            ->to(new Address($recipient))
-            ->subject('You are awesome!')
-            ->category('Integration Test')
-            ->text('Congrats for sending test email with Mailtrap!');
+        $email = new MailtrapEmail;
+        $email->from(new Address($fromAddress, $fromName));
+        $email->to(new Address($recipient));
+        $email->subject('You are awesome!');
+        $email->category('Integration Test');
+        $email->text('Congrats for sending test email with Mailtrap!');
 
         try {
-            $response = MailtrapClient::initSendingEmails(
+            $client = MailtrapClient::initSendingEmails(
                 apiKey: $apiKey,
                 isBulk: false,
-            )->send($email);
+            );
+            $response = $client->send($email);
 
             $this->info('Test email sent successfully!');
             $this->line(print_r(ResponseHelper::toArray($response), true));

@@ -24,5 +24,5 @@ Core components and design decisions (migrato da `architecture.md` in root, 2026
 - `database/migrations/` — Database schema
 - `lang/` — Translations
 
-See the module [README](../README.md) for overview, [contributing](./CONTRIBUTING.md) for the
-development workflow, and [architecture/structure](./architecture/structure.md) for details.
+See the module [README](../README.md) for overview and the docs index
+([../index.md](../index.md)) for the full documentation map.

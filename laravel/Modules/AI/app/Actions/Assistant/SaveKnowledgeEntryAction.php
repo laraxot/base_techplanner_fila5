@@ -15,6 +15,8 @@ use Spatie\QueueableAction\QueueableAction;
  * modificare la base di conoscenza di un altro progetto o cliente passando un id qualsiasi).
  * Senza `$id`, una voce con la stessa domanda nella collection viene aggiornata invece di duplicata.
  *
+ * @see docs/contracts/save-knowledge-entry-action.md
+ *
  * @contract docs/contracts/save-knowledge-entry-action.md
  */
 final class SaveKnowledgeEntryAction
@@ -45,7 +47,7 @@ final class SaveKnowledgeEntryAction
             throw ValidationException::withMessages(['id' => 'Voce non trovata in questa base di conoscenza.']);
         }
 
-        $entry ??= new AiKnowledgeEntry;
+        $entry ??= new AiKnowledgeEntry();
         $entry->fill([
             'collection' => $collection,
             'question' => $question,

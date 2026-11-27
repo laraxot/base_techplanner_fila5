@@ -1,6 +1,5 @@
 ---
 title: "Module BMAD audit — Xot"
-<<<<<<< .merge_file_fE0IOP
 status: review
 updated: 2026-11-16
 module: Xot
@@ -27,8 +26,6 @@ qmd: "story BMAD audit modulo Xot inventario gate"
 ## Esito
 
 Baseline audit aggiornata. PHPStan tree `Modules` a 0. Pest e chiusura P0/P1 aperti.
-=======
->>>>>>> .merge_file_al7Bvk
 type: story
 status: review
 updated: 2026-11-16

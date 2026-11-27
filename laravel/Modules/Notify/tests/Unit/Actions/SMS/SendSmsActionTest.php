@@ -28,13 +28,13 @@ describe('NormalizePhoneNumberAction', function (): void {
         $result = $this->normalizeAction->execute('+39 300 123 4567');
 
         Assert::assertSame('+393001234567', $result);
-    });
+    })->group('NOTIFY-SMSNORM-INV-1');
 
     it('normalizes Italian number without country code', function (): void {
         $result = $this->normalizeAction->execute('300 123 4567');
 
         Assert::assertSame('+393001234567', $result);
-    });
+    })->group('NOTIFY-SMSNORM-INV-2');
 
     it('normalizes number with spaces and dashes', function (): void {
         $result = $this->normalizeAction->execute('+39-300-123-4567');
@@ -51,13 +51,13 @@ describe('NormalizePhoneNumberAction', function (): void {
     it('throws exception for invalid number', function (): void {
         expect(fn () => $this->normalizeAction->execute('invalid'))
             ->toThrow(\Exception::class);
-    });
+    })->group('NOTIFY-SMSNORM-INV-4');
 
     it('handles international numbers', function (): void {
         $result = $this->normalizeAction->execute('+1 555 123 4567');
 
         Assert::assertSame('+15551234567', $result);
-    });
+    })->group('NOTIFY-SMSNORM-INV-1');
 });
 
 describe('FormatSmsMessageAction', function (): void {
@@ -68,7 +68,7 @@ describe('FormatSmsMessageAction', function (): void {
         Assert::assertSame($message, $formattedMessage);
         Assert::assertSame(13, $characterCount);
         Assert::assertSame(1, $smsCount);
-    });
+    })->group('NOTIFY-FORMAT-INV-3');
 
     it('counts concatenated SMS for messages over 160 chars', function (): void {
         $longMessage = str_repeat('A', 200);
@@ -77,7 +77,7 @@ describe('FormatSmsMessageAction', function (): void {
         Assert::assertSame($longMessage, $formattedMessage);
         Assert::assertGreaterThan(160, $characterCount);
         Assert::assertGreaterThan(1, $smsCount);
-    });
+    })->group('NOTIFY-FORMAT-INV-3');
 
     it('handles Unicode characters by normalizing accents', function (): void {
         $message = 'Messaggio con accenti: àèéìòù';
@@ -86,7 +86,7 @@ describe('FormatSmsMessageAction', function (): void {
         Assert::assertStringContainsString("a'", $formattedMessage);
         Assert::assertGreaterThan(0, $characterCount);
         Assert::assertSame(1, $smsCount);
-    });
+    })->group('NOTIFY-FORMAT-INV-1');
 
     it('handles emojis (counts as multiple chars)', function (): void {
         $message = 'Test 🎉 emoji';

@@ -15,6 +15,93 @@ audit-coverage/
 *.cache
 cache/
 # --- Cache & temporary ---
+# Deduplicated .gitignore - generated from original
+
+._*
+agentdb.rvf
+.agents/
+archive/
+audit-coverage/
+# LARAXOT MODULE: NOTIFY — .gitignore
+# Unione bonificata dei due lati del merge (HEAD + laraxot/dev), dedup e gruppi.
+# Regole: una sezione per tema, nessun marker di conflitto.
+
+# --- File di sistema ---
+._*
+.DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+*:Zone.Identifier
+
+# --- Editor / IDE ---
+/.idea
+.vscode/
+.windsurf/
+*.swp
+*.swo
+*.stackdump
+
+# --- Agenti / tool locali ---
+.agents/
+.claude/
+.claude-audit/
+.codex/
+.cursor/
+.opencode/
+.qwen/
+.devcontainer/
+/.vagrant
+notify.code-workspace
+
+# --- Ambiente ---
+.env
+.env.*
+!.env.example
+Homestead.json
+Homestead.yaml
+config/development.php
+config/local.php
+
+# --- Dipendenze / build ---
+/build/
+/dist/
+/node_modules/
+/vendor/
+package-lock.json
+yarn.lock
+composer.lock
+*.phar
+
+# --- Cache / temporanei ---
+*.cache
+cache/
+*.tmp
+v8-compile-cache-*
+lerna-debug.log*
+npm-debug.log*
+yarn-error.log*
+error_log
+agentdb.rvf
+notify_test_data.json
+notification_test_data.json
+
+# --- Log ---
+*.log
+
+# --- Backup / file morti ---
+*.backup
+*.backup.*
+*.bak
+*.bakcup
+/build/
+*.cache
+cache/
+.claude/
+.claude-audit/
+.codex/
 composer.lock
 config/development.php
 config/local.php
@@ -60,18 +147,120 @@ lerna-debug.log*
 *.new
 /node_modules/
 notification_test_data.json
+.devcontainer/
+/dist/
+_docs/
+.docs-archive/
+docs/_archive/
+docs/**/_archive/
+docs/**/archive/
+docs/archive/
+docs/**/archived/
+docs/archived/
+docs/**/archivio/
+docs/archivio/
+docs/**/*backup*/
+docs/**/backup/
+docs/backup/
+docs/**/backups/
+docs/backups/
+docs/cache/
+docs/graphify
+docs/**/historical/
+docs/historical/
+docs/phpstan/
+!docs/**/phpstan*.md
+!docs/**/phpstan*.story.md
+docs/project/visual-comparison/
+docs/screenshots/
+docs/visual-comparison/
+docs/**/wiki-archive/
+.DS_Store
+.DS_Store?
+ehthumbs.db
+.env
+.env.*
+!.env.example
+error_log
+.git-blame-ignore-revs
+/.github/agents/
+/.github/issue_content/
+/.github/ISSUE_CONTENT/
+/.github/skills/
+.git.polluted*
+.git-rewrite/
+graphify-out/
+Homestead.json
+Homestead.yaml
+/.idea
+lang/lang/
+/laravel/
+legacy/
+lerna-debug.log*
+*.lock
+*.log
+*.new
+/node_modules/
+notification_test_data.json
+notify.code-workspace
+notify_test_data.json
 npm-debug.log*
 *.old
 *.old*
 *.old1
 *.old2
 # --- Old directories (legacy cleanup) ---
+.opencode/
 *.orig
 package-lock.json
 *.phar
 .php-cs-fixer.cache
+.php-cs-fixer.dist.php
+.php-cs-fixer.php
 phpinsights.php
 .phpintel
+*.orig
+*.rej
+*.new
+database/Factories_old/
+database/Migrations_old/
+database/Seeders_old/
+database_old/
+resources/views/Components_old/
+
+# --- Archivi / scratch locali ---
+archive/
+audit-coverage/
+legacy/
+_docs/
+docs/archive/
+docs/cache/
+docs/phpstan/
+docs/screenshots/
+docs/graphify
+docs/project/visual-comparison/
+docs/visual-comparison/
+
+# --- Coverage / risultati test ---
+tests/AuditCoverage/
+tests/coverage-*.*
+tests/graphify-out/
+test-results/
+test-results/
+test_notifications.sql
+
+# --- Storage runtime ---
+storage/notifications/
+storage/queue/
+
+# --- Qualita' / tooling (mai al root del modulo) ---
+.php-cs-fixer.cache
+.php-cs-fixer.php
+.php-cs-fixer.dist.php
+.phpintel
+.phpstorm.meta.php
+.phpunit.result.cache
+phpinsights.php
 phpmd*
 phpmd.ruleset.xml
 phpmd.ruleset.xml.bak
@@ -85,6 +274,11 @@ rector.php
 *.rej
 resources/views/Components_old/
 # --- Second brain: docs/archive never tracked ---
+.qwen/
+rector.php
+*.rej
+resources/lang
+resources/views/Components_old/
 .Spotlight-V100
 *.stackdump
 storage/notifications/
@@ -94,6 +288,14 @@ storage/queue/
 # --- System files ---
 test_notifications.sql
 tests/AuditCoverage/
+test_notifications.sql
+test-results/
+tests/AuditCoverage/
+/tests/coverage/
+tests/coverage-*.*
+/tests/*coverage*.xml
+/tests/coverage.xml/
+tests/graphify-out/
 Thumbs.db
 *.tmp
 .Trashes
@@ -119,6 +321,32 @@ notify.code-workspace
 docs/graphify
 resources/lang
 .github/issue_content/
+# ...ma le story/doc phpstan del modulo restano tracciabili
+!docs/**/phpstan*.md
+!docs/**/phpstan*.story.md
+phpunit.xml
+phpunit.xml.dist
+rector.php
+
+# --- Git ---
+.git-blame-ignore-revs
+.git-rewrite/
+.git.polluted*
+*.lock
+
+# --- GitHub ---
+/.github/agents/
+/.github/ISSUE_CONTENT/
+/.github/issue_content/
+/.github/skills/
+
+# --- Laraxot / guardia repo annidati ---
+/laravel/
+/tests/coverage/
+/tests/coverage.xml/
+/tests/*coverage*.xml
+lang/lang/
+resources/lang
 
 # Tooling/configurazione locale (module-theme-root-hygiene)
 .agents/
@@ -127,17 +355,36 @@ resources/lang
 .qwen/
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
-<<<<<<< .merge_file_3umjCt
 .github/ISSUE_CONTENT/
 .github/agents/
-=======
->>>>>>> .merge_file_8OfzL1
-<<<<<<< .merge_file_GaO1NU
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_s0ByZx
+
+# --- Output generati ---
+graphify-out/
+
+# Niente cartelle di backup/archivio in docs: lo storico e' git (ADR Xot 0041)
+docs/archivio/
+docs/**/archivio/
+docs/archive/
+docs/**/archive/
+docs/_archive/
+docs/**/_archive/
+docs/archived/
+docs/**/archived/
+docs/historical/
+docs/**/historical/
+docs/backup/
+docs/**/backup/
+docs/backups/
+docs/**/backups/
+docs/**/*backup*/
+docs/**/wiki-archive/
+.docs-archive/
+
+# Indice vettoriale locale (non versionare)
+ruvector.db

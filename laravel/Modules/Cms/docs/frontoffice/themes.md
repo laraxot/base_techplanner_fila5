@@ -14,7 +14,7 @@ status: draft
 
 ## Introduzione
 
-Questa sezione descrive come gestire, compilare e pubblicare i temi del CMS, con particolare attenzione al tema One.
+Questa sezione descrive come gestire, compilare e pubblicare i temi del CMS, con particolare attenzione al tema Two.
 
 ## Verifica Tema Attivo
 
@@ -22,13 +22,13 @@ Questa sezione descrive come gestire, compilare e pubblicare i temi del CMS, con
 ```php
 // config/localhost/xra.php
 return [
-    'pub_theme' => 'One', // Tema attualmente in uso
+    'pub_theme' => 'Two', // Tema attualmente in uso
 ];
 ```
 
-### Struttura del Tema One
+### Struttura del Tema Two
 ```
-laravel/Themes/One/
+laravel/Themes/Two/
 ├── assets/          # Assets del tema
 ├── resources/       # Risorse (views, components)
 ├── layouts/         # Layouts del tema
@@ -126,7 +126,7 @@ npm run build
 2. **Problemi di Pubblicazione**
    ```bash
    # Verifica permessi
-   ls -la public/themes/One
+   ls -la public/themes/Two
 
    # Forza copia
    # public_html/themes/<Tema> è un symlink a laravel/Themes/<Tema>/public: niente copia (Modules/Xot/docs/wiki/concepts/public-html-symlink-assets.md)
@@ -159,16 +159,12 @@ npm run build
 
 ## Risorse Utili
 
-- [Documentazione Tema One](laravel/Themes/One/docs)
+- [Documentazione Tema Two](../../../../Themes/Two/docs/README.md)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite](https://vitejs.dev/)
 - [Laravel Mix](https://laravel-mix.com/)
 
-## Collegamenti tra versioni di themes.md
-* [themes.md](docs/rules/themes.md)
-<<<<<<< .merge_file_Y3mFfB
-* [themes.md](../../../Xot/docs/themes.md)
-=======
-* [themes.md](laravel/modules/xot/docs/themes.md)
->>>>>>> .merge_file_hD5dBj
-* [themes.md](laravel/modules/cms/docs/frontoffice/themes.md)
+## Collegamenti tra documentazioni correlate
+
+* [Workflow degli asset del tema nel modulo Xot](../../../Xot/docs/theme-assets-workflow.md)
+* [Questa guida nel modulo Cms](themes.md)

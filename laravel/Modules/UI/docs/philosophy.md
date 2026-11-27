@@ -248,7 +248,7 @@ Modules/UI/
 └── CHANGELOG.md
 ```
 
-(`architecture.md`, `testing.md`, `GETTING_STARTED.md` and `PHILOSOPHY.md` were moved from the module root into `docs/root-md-files/` and `docs/` proper; they are inside the collapsed `docs/` entry above.)
+(`ARCHITECTURE.md`, `TESTING.md`, `GETTING_STARTED.md` and `PHILOSOPHY.md` were moved from the module root into `docs/root-md-files/` and `docs/` proper; they are inside the collapsed `docs/` entry above.)
 
 ├── architecture.md
 └── CHANGELOG.md
@@ -1277,11 +1277,7 @@ Core functionality tests pass:
 ### Core Documentation
 
 - [README.md](./README.md) — Module overview
-- [architecture.md](./architecture.md) — System architecture
-- [architecture.md](./architecture.md) — System architecture
-- [architecture.md](./architecture.md) — System architecture
-- [architecture.md](./architecture.md) — System architecture
-- [architecture.md](./architecture.md) — System architecture
+- [ARCHITECTURE.md](../ARCHITECTURE.md) — System architecture
 - [patterns.md](./patterns.md) — Design patterns and workflows
 - [icon-system.md](icons/icon-system.md) — Icon system details
 

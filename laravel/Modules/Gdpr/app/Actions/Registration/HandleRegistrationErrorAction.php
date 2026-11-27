@@ -10,6 +10,13 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget; // Use the base widget for type hinting
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Registrazione fallita: scrive l'errore nel log e mostra alla persona solo un avviso generico.
+ *
+ * @see docs/contracts/handle-registration-error-action.md
+ *
+ * @contract docs/contracts/handle-registration-error-action.md
+ */
 class HandleRegistrationErrorAction
 {
     use QueueableAction;

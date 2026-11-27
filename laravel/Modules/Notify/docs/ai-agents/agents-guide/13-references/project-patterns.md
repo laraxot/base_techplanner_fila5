@@ -29,15 +29,12 @@ app(MyAction::class)->createPersonalAccessClient();
 
 - **Short array syntax (CRITICAL)**: **ALWAYS** `[]`: **NEVER** `array()` in any PHP file.
 - **Packages**: Add to `Modules/{Module}/composer.json`, then run `composer go` from `laravel/`.
-<<<<<<< .merge_file_rO33t1
 - **Git Rules**: 
   - NEVER `git remote set-url` — only project owner does this.
   - Git goes forward only — never restore old versions.
-=======
 - **Git Rules**:
   - NEVER `git remote set-url`: only project owner does this.
   - Git goes forward only: never restore old versions.
->>>>>>> .merge_file_ZKezpx
   - Every error fix: git commit + GitHub issue + GitHub discussion.
 
 ## Session Best Practices

@@ -876,15 +876,10 @@ Manutenzione Stradale • Illuminazione • Rifiuti • Verde Pubblico • Fogna
 ## 📚 TUTTA LA DOCUMENTAZIONE
 
 ### 📊 Reports & Analysis
-<<<<<<< .merge_file_mOa6kG
 - **[Master Roadmap Index](./roadmap-master-index.md)** ⭐ START HERE
 - **[Project Analysis & Roadmap](./project-analysis-and-roadmap.md)** ⭐ BUSINESS VIEW
-=======
 - **[Master Roadmap Index](../../roadmap-master-index.md)** ⭐ START HERE
 - **[Project Analysis & Roadmap](../../project-analysis-and-roadmap.md)** ⭐ BUSINESS VIEW
-- **[Master Roadmap Index](../../roadmap-master-index.md)** ⭐ START HERE
-- **[Project Analysis & Roadmap](../../project-analysis-and-roadmap.md)** ⭐ BUSINESS VIEW
->>>>>>> .merge_file_28ve8b
 - **[Session Summary 2025-10-01](./phpstan/session-summary-.md.md)** ⭐ TECHNICAL
 - **[Final Report 2025-10-01](./phpstan/final-report-session-.md.md)**
 - **[Questo Documento](./analisi-completa.md)** ⭐ EXECUTIVE
@@ -13109,12 +13104,8 @@ class TemplatePreview extends Component
 ---
 
 ### 2. 📖 Documento Originale Completo
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [analisi-metodi-duplicati.md](./analisi-metodi-duplicati.md)
-=======
 📄 **File:** [analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)
-📄 **File:** [analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)
->>>>>>> .merge_file_28ve8b
 
 **Contenuto:**
 - Panoramica generale
@@ -13133,12 +13124,8 @@ class TemplatePreview extends Component
 ### Moduli Core
 
 #### Xot (Modulo Base)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Modules/Xot/docs/analisi-metodi-duplicati.md](../Modules/Xot/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Modules/Xot/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Modules/Xot/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 📊 **Dati:** 9 proprietà duplicate, 80 LOC, 87% riduzione possibile  
 🎯 **Priorità:** ALTA - Implementare XotBaseModel qui  
 📝 **Alternative:** [metodi_duplicati_analisi.md](../Modules/Xot/docs/metodi_duplicati_analisi.md) (dettagli Filament methods)
@@ -13148,23 +13135,15 @@ class TemplatePreview extends Component
 ### Moduli Business Logic
 
 #### User (Autenticazione & Autorizzazione)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../Modules/User/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 📊 **Dati:** 9 proprietà duplicate, 74 LOC, 87% riduzione  
 🎯 **Priorità:** ALTA - Modulo critico  
 ⚠️ **Note:** Testing intensivo necessario (auth)
 
 #### App (Gestione Segnalazioni)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Modules/App/docs/analisi-metodi-duplicati.md](../Modules/App/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Modules/App/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Modules/App/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 📊 **Dati:** 9 proprietà duplicate, 72 LOC, 79% riduzione  
 🎯 **Priorità:** ALTA - Business core  
 ⚠️ **Note:** Usa SoftDeletes (trait specifico da mantenere)  
@@ -13177,12 +13156,8 @@ class TemplatePreview extends Component
 📝 **Alternative:** [metodi_duplicati_analisi.md](../Modules/<nome progetto>/docs/metodi_duplicati_analisi.md)
 
 #### Cms (Content Management)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Modules/Cms/docs/analisi-metodi-duplicati.md](../Modules/Cms/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Modules/Cms/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Modules/Cms/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 📊 **Dati:** 8 proprietà duplicate, 70 LOC, 86% riduzione  
 🎯 **Priorità:** MEDIA - Gestisce temi  
 📝 **Alternative:** [metodi_duplicati_analisi.md](../Modules/Cms/docs/metodi_duplicati_analisi.md)
@@ -13240,23 +13215,15 @@ class TemplatePreview extends Component
 ## 🎨 Documenti per Tema
 
 ### Theme Sixteen (AGID Compliant)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../Themes/Sixteen/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 ⭐ **Valutazione:** ⭐⭐⭐⭐⭐ ECCELLENTE  
 🎯 **Priorità:** BASSA (già ottimizzato)  
 📝 **Focus:** Testing e documentazione, NO refactoring necessario
 
 ### Theme TwentyOne (Semplice)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../Themes/TwentyOne/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 ⭐ **Valutazione:** ⭐⭐⭐ BUONO  
 🎯 **Priorità:** MEDIA (opzionale ServiceProvider)  
 📝 **Focus:** Valutare se aggiungere ServiceProvider leggero
@@ -13267,14 +13234,10 @@ class TemplatePreview extends Component
 
 ### Per Developer che Inizia il Refactoring
 1. 📖 [MASTER EDITION](./analisi-metodi-duplicati-MASTER.md) - Leggere TUTTO (2-3 ore)
-<<<<<<< .merge_file_mOa6kG
 2. 📖 [Xot Module](../Modules/Xot/docs/analisi-metodi-duplicati.md) - Capire modulo base
 3. 📖 [Comment Module - METODI_DUPLICATI_ANALISI](../Modules/Comment/docs/METODI_DUPLICATI_ANALISI.md) - Primo test migration
-=======
-2. 📖 [Xot Module](../../analisi-metodi-duplicati.md) - Capire modulo base
 2. 📖 [Xot Module](../../analisi-metodi-duplicati.md) - Capire modulo base
 3. 📖 [Comment Module - METODI_DUPLICATI_ANALISI](../Modules/Comment/docs/metodi_duplicati_analisi.md) - Primo test migration
->>>>>>> .merge_file_28ve8b
 4. 🚀 Iniziare implementazione seguendo MASTER guide
 
 ### Per Project Manager / Stakeholder
@@ -13286,14 +13249,10 @@ class TemplatePreview extends Component
 ### Per Tech Lead / Architect
 1. 📖 [MASTER EDITION - Implementazioni Concrete](./analisi-metodi-duplicati-MASTER.md#implementazione-concreta-pronta-all-uso) (1 ora)
 2. 📖 [MASTER EDITION - Script Utili](./analisi-metodi-duplicati-MASTER.md#script-utili) (30 min)
-<<<<<<< .merge_file_mOa6kG
 3. 📖 [Xot Module - Dettagli](../Modules/Xot/docs/analisi-metodi-duplicati.md) (30 min)
 4. 📖 [METODI_DUPLICATI_ANALISI - Filament Details](../Modules/Xot/docs/METODI_DUPLICATI_ANALISI.md) (1 ora)
-=======
-3. 📖 [Xot Module - Dettagli](../../analisi-metodi-duplicati.md) (30 min)
 3. 📖 [Xot Module - Dettagli](../../analisi-metodi-duplicati.md) (30 min)
 4. 📖 [METODI_DUPLICATI_ANALISI - Filament Details](../Modules/Xot/docs/metodi_duplicati_analisi.md) (1 ora)
->>>>>>> .merge_file_28ve8b
 5. 🎯 Architecture review e planning
 
 ### Per QA / Tester
@@ -14631,12 +14590,8 @@ related:
 ---
 
 ### 2. 📖 Documento Originale Completo
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [analisi-metodi-duplicati.md](./analisi-metodi-duplicati.md)
-=======
 📄 **File:** [analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)
-📄 **File:** [analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)
->>>>>>> .merge_file_28ve8b
 
 **Contenuto:**
 - Panoramica generale
@@ -14669,12 +14624,8 @@ related:
 ### Moduli Business Logic
 
 #### User (Autenticazione & Autorizzazione)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../Modules/User/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Modules/User/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 📊 **Dati:** 9 proprietà duplicate, 74 LOC, 87% riduzione  
 🎯 **Priorità:** ALTA - Modulo critico  
 ⚠️ **Note:** Testing intensivo necessario (auth)
@@ -14752,23 +14703,15 @@ related:
 ## 🎨 Documenti per Tema
 
 ### Theme Sixteen (AGID Compliant)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../Themes/Sixteen/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Themes/Sixteen/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 ⭐ **Valutazione:** ⭐⭐⭐⭐⭐ ECCELLENTE  
 🎯 **Priorità:** BASSA (già ottimizzato)  
 📝 **Focus:** Testing e documentazione, NO refactoring necessario
 
 ### Theme TwentyOne (Semplice)
-<<<<<<< .merge_file_mOa6kG
 📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../Themes/TwentyOne/docs/analisi-metodi-duplicati.md)  
-=======
 📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
-📄 **File:** [../Themes/TwentyOne/docs/analisi-metodi-duplicati.md](../../analisi-metodi-duplicati.md)  
->>>>>>> .merge_file_28ve8b
 ⭐ **Valutazione:** ⭐⭐⭐ BUONO  
 🎯 **Priorità:** MEDIA (opzionale ServiceProvider)  
 📝 **Focus:** Valutare se aggiungere ServiceProvider leggero
@@ -14778,17 +14721,12 @@ related:
 ## 🚀 Percorso di Lettura Consigliato
 
 ### Per Developer che Inizia il Refactoring
-<<<<<<< .merge_file_mOa6kG
 1. 📖 [MASTER EDITION](./analisi-metodi-duplicati-master-1.md) - Leggere TUTTO (2-3 ore)
 2. 📖 [Xot Module](../Modules/Xot/docs/analisi-metodi-duplicati.md) - Capire modulo base
 3. 📖 [Comment Module - METODI_DUPLICATI_ANALISI](../Modules/Comment/docs/metodi-duplicati-analisi-1.md) - Primo test migration
-=======
 1. 📖 [MASTER EDITION](./analisi-metodi-duplicati-master.md) - Leggere TUTTO (2-3 ore)
 2. 📖 [Xot Module](../../analisi-metodi-duplicati.md) - Capire modulo base
 3. 📖 [Comment Module - METODI_DUPLICATI_ANALISI](../Modules/Comment/docs/metodi-duplicati-analisi.md) - Primo test migration
-2. 📖 [Xot Module](../../analisi-metodi-duplicati.md) - Capire modulo base
-3. 📖 [Comment Module - METODI_DUPLICATI_ANALISI](../Modules/Comment/docs/metodi-duplicati-analisi.md) - Primo test migration
->>>>>>> .merge_file_28ve8b
 4. 🚀 Iniziare implementazione seguendo MASTER guide
 
 ### Per Project Manager / Stakeholder
@@ -14798,19 +14736,14 @@ related:
 4. 🎯 Decisione GO/NO-GO
 
 ### Per Tech Lead / Architect
-<<<<<<< .merge_file_mOa6kG
 1. 📖 [MASTER EDITION - Implementazioni Concrete](./analisi-metodi-duplicati-master-1.md#implementazione-concreta-pronta-all-uso) (1 ora)
 2. 📖 [MASTER EDITION - Script Utili](./analisi-metodi-duplicati-master-1.md#script-utili) (30 min)
 3. 📖 [Xot Module - Dettagli](../Modules/Xot/docs/analisi-metodi-duplicati.md) (30 min)
 4. 📖 [METODI_DUPLICATI_ANALISI - Filament Details](../Modules/Xot/docs/metodi-duplicati-analisi-1.md) (1 ora)
-=======
 1. 📖 [MASTER EDITION - Implementazioni Concrete](./analisi-metodi-duplicati-master.md#implementazione-concreta-pronta-all-uso) (1 ora)
 2. 📖 [MASTER EDITION - Script Utili](./analisi-metodi-duplicati-master.md#script-utili) (30 min)
 3. 📖 [Xot Module - Dettagli](../../analisi-metodi-duplicati.md) (30 min)
 4. 📖 [METODI_DUPLICATI_ANALISI - Filament Details](../Modules/Xot/docs/metodi-duplicati-analisi.md) (1 ora)
-3. 📖 [Xot Module - Dettagli](../../analisi-metodi-duplicati.md) (30 min)
-4. 📖 [METODI_DUPLICATI_ANALISI - Filament Details](../Modules/Xot/docs/metodi-duplicati-analisi.md) (1 ora)
->>>>>>> .merge_file_28ve8b
 5. 🎯 Architecture review e planning
 
 ### Per QA / Tester

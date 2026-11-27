@@ -1,11 +1,8 @@
 ---
 title: "Architettura — Media"
 type: architecture
-<<<<<<< .merge_file_fG7tBd
 tags: [architecture, structure]
-=======
 tags: [architecture, structure, module, media, storage]
->>>>>>> .merge_file_YVd6a5
 created: 2026-07-14
 status: review
 updated: 2026-11-16
@@ -59,8 +56,6 @@ Logica in Spatie Queueable Action, nessun Service, estensione di `XotBaseResourc
 ## Decisioni collegate
 
 [decision-log.md](./decision-log.md): D-1 (prune), D-2 (cast `id`), D-3 (allegati-prova), D-4 (guard diagnostica), D-5 (codice morto).
-<<<<<<< .merge_file_fG7tBd
-=======
 
 ## Convenzioni (dalla versione precedente, ancora valide)
 
@@ -76,4 +71,39 @@ storage con isolamento per tenant, dipendenza da Tenant e User, uso da Activity,
 Nel codice: nessuna occorrenza di HLS/DASH; `Actions/Image/Merge.php` fa solo una sovrapposizione «tipo watermark»,
 non automatica; 0 `use Modules\Tenant` e 0 `use Modules\User` in `app/`; i consumatori reali sono quelli elencati in
 «Confini e dipendenze»; i file PHP in `app/` sono 127. Non vanno ripristinate senza una verifica sul codice.
->>>>>>> .merge_file_YVd6a5
+### Integrazione CDN
+- Supporto per Content Delivery Network
+- URL pubblico e privato
+
+## Convenzioni
+
+### Naming
+- Modelli: singolare (Media, MediaConvert, TemporaryUpload)
+- Actions: `{Verb}{Noun}Action` (es. `ConvertVideoAction`)
+- Namespaces: Modules\Media\{Domain}\{Component}
+
+### Testing
+- Pest framework (no PHPUnit diretto)
+- No `RefreshDatabase` - usare database dedicated `.env.testing`
+- Coverage target: 80%+
+
+## Dependency Injection
+
+Il modulo utilizza l'inversion of control tramite:
+- Constructor injection nelle Actions
+- Service Provider per binding
+- Interfacce nei Contracts per loose coupling
+
+## Stato Corrente
+
+- **Total file PHP**: 97
+- **Classi/Interfacce**: 64
+- **PHPStan Level**: 10 (strict typing)
+- **Test Coverage**: In progress
+
+## Vedere Anche
+
+- README.md - Documentazione di base
+- index.md - Bridge indice
+- /docs/ root - Standard di documentazione globali
+

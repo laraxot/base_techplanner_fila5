@@ -8,7 +8,7 @@ use Modules\Rating\Models\Contracts\HasRatingContract;
 use Spatie\QueueableAction\QueueableAction;
 
 /**
- * Numero dei voti (pivot con user_id) di un model, per criterio o totale.
+ * @see docs/contracts/get-count-by-model-rating-id-action.md
  *
  * @contract docs/contracts/get-count-by-model-rating-id-action.md
  */
@@ -23,7 +23,7 @@ class GetCountByModelRatingIdAction
     {
         $opts = $model->ratings()
             ->wherePivot('user_id', '!=', null);
-        if (null !== $rating_id) {
+        if ($rating_id !== null) {
             $opts = $opts->wherePivot('rating_id', $rating_id);
         }
 

@@ -60,7 +60,7 @@ test('send record notification routes valid mail channel', function () {
             return ($notifiable->routes['mail'] ?? null) === 'record@example.test';
         }
     );
-});
+})->group('NOTIFY-RECORD-INV-1');
 
 test('send record notification ignores non enum channels', function () {
     Notification::fake();
@@ -74,4 +74,4 @@ test('send record notification ignores non enum channels', function () {
     );
 
     Notification::assertNothingSent();
-});
+})->group('NOTIFY-RECORD-INV-3');

@@ -42,10 +42,6 @@ status: draft
 - Usability test sul nuovo pannello Filament 5.
 
 ## 6. References
-<<<<<<< .merge_file_UnrOuf
 - [strategy.md](strategy.md)
-=======
 - [strategy.md](../../../strategy.md)
-- [strategy.md](../../../strategy.md)
->>>>>>> .merge_file_FLVxPb
 - [prd.md](prd.md)

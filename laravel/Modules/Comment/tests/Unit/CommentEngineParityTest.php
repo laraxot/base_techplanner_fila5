@@ -78,7 +78,7 @@ test('react and deleteReaction update reactionCounts', function (): void {
     Assert::assertInstanceOf(Comment::class, $freshComment);
     Assert::assertCount(1, $freshComment->reactionCounts());
     Assert::assertNull($freshComment->findReaction('👍', $commentator));
-});
+})->group('COMMENT-REACT-INV-1', 'COMMENT-REACT-DELETE-INV-1', 'COMMENT-REACT-COUNTS-INV-1');
 
 test('ApproveCommentAction approves pending comment', function (): void {
     config(['comments.notifications.enabled' => false]);

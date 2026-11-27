@@ -1,12 +1,14 @@
 ---
 title: "Contratto — SubmitIndexNowAction"
 type: contract
-action: "Modules\Seo\Actions\IndexNow\SubmitIndexNowAction"
+action: "Modules\\Seo\\Actions\\IndexNow\\SubmitIndexNowAction"
+module: Seo
+status: active
 tags: [contract, action, indexnow, http]
 created: 2026-11-19
-updated: 2026-11-24
+updated: 2026-11-26
 related:
-  - ../adr/search-engine-presence.md
+  - ../adr/0002-search-engine-presence.md
   - ../../app/Actions/IndexNow/SubmitIndexNowAction.php
   - ../../app/Console/Commands/SubmitIndexNowCommand.php
   - ../../tests/Feature/IndexNow/IndexNowTest.php
@@ -15,7 +17,7 @@ related:
 # SubmitIndexNowAction
 
 Avvisa i motori IndexNow (Bing, Yandex, Seznam, Naver…) che delle URL del sito sono nuove o cambiate. Perché:
-[ADR presenza nei motori di ricerca](../adr/search-engine-presence.md). Sorgente:
+[ADR presenza nei motori di ricerca](../adr/0002-search-engine-presence.md). Sorgente:
 `app/Actions/IndexNow/SubmitIndexNowAction.php`; chiamante: il comando `seo:indexnow`
 (`app/Console/Commands/SubmitIndexNowCommand.php`).
 
@@ -47,7 +49,7 @@ Test: `cd laravel && vendor/bin/pest Modules/Seo/tests/Feature/IndexNow/IndexNow
 | SEO-INDEXNOW-INV-4 | Il corpo è `{host, key, keyLocation, urlList}` con `keyLocation = <schema delle URL>://<host>/<chiave>.txt`, mai l'host della richiesta corrente. | `SEO-INDEXNOW-INV-4` |
 | SEO-INDEXNOW-INV-5 | Blocchi di al massimo 10.000 URL (`MAX_URLS_PER_REQUEST`), una richiesta per blocco. | `SEO-INDEXNOW-INV-5` |
 | SEO-INDEXNOW-INV-6 | Un rifiuto (codice diverso da 200/202) non conta le URL del blocco in `submitted` e il codice compare in `statuses`. | `SEO-INDEXNOW-INV-6` |
-| SEO-INDEXNOW-INV-7 | Servizio irraggiungibile = `0` in `statuses`, nessuna eccezione. | — |
+| SEO-INDEXNOW-INV-7 | Servizio irraggiungibile = `0` in `statuses`, nessuna eccezione. | — (non dimostrato) |
 
 ## Effetti collaterali
 
@@ -69,3 +71,10 @@ Test: `cd laravel && vendor/bin/pest Modules/Seo/tests/Feature/IndexNow/IndexNow
 - Non ritenta né mette in coda dopo un 429: aggiungere un retry automatico va contro la richiesta del protocollo di
   inviare solo URL cambiate.
 - Non garantisce l'indicizzazione: 200 vuol dire solo «ricevute».
+
+## Limiti noti
+
+- **INV-7 non ha test.** Il ramo e' `SubmitIndexNowAction.php` righe 86-89 (`catch (ConnectionException)`); `IndexNowTest` simula solo risposte HTTP (200, 202, 403) con `Http::fake()`, mai `Http::fake(fn () => throw new ConnectionException(...))`. Nessun altro test del repository tocca questa Action (`rg SEO-INDEXNOW Modules Themes tests`).
+- **Solo `ConnectionException` e' intercettata**: ogni altra eccezione risale al chiamante; il comando `seo:indexnow` e' lanciato da `deploy.sh` (riga 229) con `|| echo`, quindi un fallimento non ferma il deploy.
+- **Un invio riuscito non prova l'indicizzazione**: 200/202 vuol dire «ricevute». Il sito non e' ancora indicizzato; la misura e' in Bing Webmaster Tools e Search Console, non qui.
+- La scelta di cosa inviare (URL nuove o con `<lastmod>` piu' recente) e lo stato su disco sono del comando e non hanno un invariante in questo contratto: il test «resends a sitemap url only when its lastmod is newer…» prova la lettura della sitemap (`SEO-SITEMAP-INV-4`), non il file di stato.

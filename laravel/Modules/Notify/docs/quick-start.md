@@ -516,12 +516,9 @@ Ogni modulo ha la sua documentazione in `Modules/ModuleName/docs/`:
 
 ### Regole Progetto
 - **[Laraxot Rules](./.windsurf/rules/user_15338591596331277449.md)**
-<<<<<<< .merge_file_tAkpjv
 - **[Code Quality](./.windsurf/rules/code-quality.md)**
-=======
 - **[Code Quality](ai-agents/code-quality.md)**
 - **[Code Quality](./ai-agents/code-quality.md)**
->>>>>>> .merge_file_c5OsDJ
 - **[Project Rules](./.windsurf/rules/project-rules.md)**
 
 ---

@@ -25,10 +25,10 @@ Prove, difetti trovati e decisioni aperte: [CMT-022](./stories/cmt-022.fo-commen
 
 | Cosa | Dove |
 |---|---|
-| Dossier BMAD dei commenti del front office (brief, PRD, architettura con ADR-001..008, UX, epic, registro decisioni, stato sprint) | [bmad/fo-comments/README.md](./bmad/fo-comments/README.md) |
+| Dossier BMAD dei commenti del front office (brief, PRD, architettura con ADR-001..008, UX, epic, registro decisioni, stato sprint) | [bmad/fo-comments/README.md](../archive/docs-legacy/bmad/fo-comments/README.md) |
 | Story del modulo, `cmt-NNN.slug.story.md` (le `phpstan-*` sono storia dei lavori di qualita') | [stories/](./stories/) |
 | Regole stabili (config, policy, mount del widget, sottocartelle di Actions e widget) | [concepts/](./concepts/) |
-| Wiki del modulo (architettura, comandi, decisioni, entita') | [wiki/](./wiki/00-index.md) |
+| Wiki del modulo (architettura, comandi, decisioni, entita') | [wiki/](../archive/docs-legacy/wiki/00-index.md) |
 | Notifiche e commenti dei ticket | [ticket-comments.md](./ticket-comments.md) |
 | Regola sul CSS di terzi nelle pagine Design Comuni (esenzione nel guard PostCSS) | [Sixteen: vendor-css-on-data-dc-pages-needs-guard-exemption](../../../Themes/Sixteen/docs/wiki/concepts/vendor-css-on-data-dc-pages-needs-guard-exemption.md) |
 
@@ -43,7 +43,6 @@ ORIGIN=http://127.0.0.1:8091 FO_PATH=/it/blog/<slug> FO_COOKIES=<file privato> F
   node ../bashscripts/tools/visual/fo-comment-flow-probe.mjs
 ```
 
-<<<<<<< .merge_file_prUN0c
 ### Configurazione
 File: `config/comment.php`
 - Moderation settings (auto-approve, whitelist)
@@ -141,8 +140,7 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 | [`llm-wiki/`](llm-wiki/) | 1 |
 | [`roadmap/`](roadmap/README.md) | 1 |
 | [`wiki/`](wiki/index.md) | 28 |
-=======
+
 ## Cartelle superate
 
 `docs/bmad/architecture-comment-enhancements.md`, `docs/bmad/brainstorming/` e `docs/bmad/planning/` sono marcate `superseded` e rimandano al dossier `bmad/fo-comments/`; restano come cronologia.
->>>>>>> .merge_file_a5GcSn

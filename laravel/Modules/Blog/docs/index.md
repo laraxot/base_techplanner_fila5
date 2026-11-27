@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_6vkAjo
 # 📚 BLOG Module - Documentation Index
 
 **Path**: `laravel/Modules/Blog/docs/`  
@@ -26,8 +25,6 @@
 - [Xot Module](../../Xot/docs/00-index.md) - Base classes
 - [AGENTS.md](../../../../AGENTS.md) - Project guidelines
 
-=======
->>>>>>> .merge_file_u0L7nf
 ---
 title: "redirect — index.md"
 type: redirect
@@ -40,7 +37,8 @@ qmd: "redirect blog"
 
 # Redirect
 
-<<<<<<< .merge_file_6vkAjo
+Indice operativo: [00-index.md](./00-index.md).
+
 **Ultimo Aggiornamento**: 2026-03-24
 
 ## Mappa delle cartelle
@@ -58,6 +56,3 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 | [`roadmap/`](roadmap/README.md) | 1 |
 | [`testing/`](testing/) | 1 |
 | [`wiki/`](wiki/index.md) | 19 |
-=======
-Indice operativo canonico: [00-INDEX.md](./00-INDEX.md).
->>>>>>> .merge_file_u0L7nf

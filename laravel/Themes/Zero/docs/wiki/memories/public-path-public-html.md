@@ -6,7 +6,7 @@ created: 2026-09-01
 updated: 2026-09-01
 qmd: "public_path public_html themes vite copy"
 related:
-  - ../../../../docs/wiki/memories/public-path-is-public-html.md
+  - ../../../../../../bashscripts/ai/wiki/memories/frontend-themes-css.md#public-path-is-public-html
   - ../rules/binary-assets.md
 id: zero-docs-wiki-memories-public-path-public-html
 slug: public-path-public-html
@@ -22,4 +22,4 @@ discussions: []
 
 Gli asset del tema dopo build/copy vanno in **`public_html/themes/{Theme}/`**. `public_path()` = `public_html/`, mai `laravel/public/`.
 
-SSoT: [public-path-is-public-html](../../../../docs/wiki/memories/public-path-is-public-html.md).
+SSoT: [public-path-is-public-html](../../../../../../bashscripts/ai/wiki/memories/frontend-themes-css.md#public-path-is-public-html).

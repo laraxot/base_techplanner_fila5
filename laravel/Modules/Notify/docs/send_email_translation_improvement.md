@@ -321,7 +321,6 @@ php -l Modules/Notify/lang/it/send_email.php
 4. **Deployment**: Deploy in ambiente di sviluppo per testing
 
 ---
-<<<<<<< .merge_file_G1FBly
 
 title: "send email translation improvement"
 type: note
@@ -333,7 +332,3 @@ issues: []
 discussions: []
 **Ultimo aggiornamento**: Gennaio 2025  
 **Autore**: Sistema di miglioramento automatico  
-=======
-**Ultimo aggiornamento**: Gennaio 2025
-**Autore**: Sistema di miglioramento automatico
->>>>>>> .merge_file_0SD7go

@@ -14,6 +14,13 @@ use Modules\Comment\Models\Contracts\CanComment;
 use RuntimeException;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Notifica agli iscritti, al padre e ai menzionati un commento approvato.
+ *
+ * @see docs/contracts/notify-approved-comment-action.md
+ *
+ * @contract docs/contracts/notify-approved-comment-action.md
+ */
 class NotifyApprovedCommentAction
 {
     use QueueableAction;

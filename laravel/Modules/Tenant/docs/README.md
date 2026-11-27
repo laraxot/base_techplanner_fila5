@@ -4,8 +4,10 @@ tags: [documentation]
 created: 2026-09-26
 updated: 2026-11-19
 qmd: "README"
-issues: []
-discussions: []
+issues:
+  - "https://github.com/laraxot/module_tenant_fila5/issues/1"
+discussions:
+  - "https://github.com/laraxot/platform/discussions/304"
 title: "Tenant — Multi-Tenancy"
 description: "Modulo per il multi-tenancy, isolamento dati per tenant"
 module: "Tenant"
@@ -79,7 +81,7 @@ Le applicazioni SaaS moderne hanno bisogno di multi-tenancy per servire più cli
 - **Risoluzione del tenant**: `Actions/GetTenantNameAction` legge `SERVER_NAME` (o l'header Host, o `app.url`),
   inverte il dominio (`foo.example.com` → `com/example/foo`) e cerca la cartella in `config/`;
   i symlink sono risolti al path reale. Fallback: `localhost`.
-- **Config del tenant**: `Actions/Config/ResolveTenantConfigValueAction` unisce la config base con quella del tenant;
+ - **Config del tenant**: `Actions/Config/GetTenantConfigValueAction` unisce la config base con quella del tenant;
   `Actions/Config/SaveTenantConfigAction` e' il punto unico di scrittura.
 - **Database**: `Providers/TenantServiceProvider::registerDB()` crea una connessione per ogni modulo copiando la default
   e la **alias sulla stessa istanza** della default (una sola sessione/transazione); le connessioni dichiarate
@@ -98,5 +100,10 @@ Questo README e' l'**unico indice** della cartella `docs/` (rimossi `index.md`, 
 - [Regole](./rules-index.md)
 - [Story](./stories/) · [Audit qualita' corrente](./stories/audit-qualita.story.md)
 - [Wiki](./wiki/)
+- [Standard config database](./database-config-standard.md) · [Dati dell'ente](./ente-data.md) · [Test del modulo](./testing.md)
+- [BMAD](./bmad/README.md) · [BMAD index](./bmad/index.md) · [CHANGELOG BMAD](./bmad/CHANGELOG.md)
+- [ADR](./adr/README.md) · [Contratti](./contracts/README.md) · [ECC](./ecc/00-index.md)
+- [Story](./stories/) · [Audit qualita' corrente](stories/0011-audit-qualita.story.md)
+- [Wiki](./wiki/) · [Roadmap](./roadmap/README.md) · [Manuale utente](./manuals/manuale-utente.md)
 
 Regole sui nomi: kebab-case, **nessuna data nel nome** di file o cartelle (la data va nel frontmatter).

@@ -20,8 +20,7 @@ uses(TestCase::class);
  * poi cammina il filesystem: mockarla toglierebbe di mezzo esattamente ciò che c'è da
  * verificare. Qui il set è reale, i file SVG sono reali, e si asserisce il risultato.
  *
- * @param array<int, string> $relativeFiles
- *
+ * @param  array<int, string>  $relativeFiles
  * @return array{dir: string, prefix: string, set: string}
  */
 function uiRegisterProbeIconSet(array $relativeFiles): array
@@ -66,7 +65,7 @@ it('elenca gli svg del set come icone, con il prefisso del set', function (): vo
     sort($icons);
 
     Assert::assertSame([$prefix.'-alpha', $prefix.'-beta'], $icons);
-});
+})->group('UI-ICONS-INV-1');
 
 it('ignora i file che non sono svg', function (): void {
     ['prefix' => $prefix, 'set' => $set] = uiRegisterProbeIconSet(['solo.svg', 'note.txt', 'immagine.png']);
@@ -75,7 +74,7 @@ it('ignora i file che non sono svg', function (): void {
 
     Assert::assertIsArray($icons);
     Assert::assertSame([$prefix.'-solo'], $icons);
-});
+})->group('UI-ICONS-INV-2');
 
 it('appiattisce le sottodirectory usando il punto come separatore', function (): void {
     ['prefix' => $prefix, 'set' => $set] = uiRegisterProbeIconSet(['radice.svg', 'gruppo/annidata.svg']);
@@ -86,7 +85,7 @@ it('appiattisce le sottodirectory usando il punto come separatore', function ():
     sort($icons);
 
     Assert::assertSame([$prefix.'-gruppo.annidata', $prefix.'-radice'], $icons);
-});
+})->group('UI-ICONS-INV-3');
 
 it('riporta nel set il proprio nome, oltre alle icone', function (): void {
     ['set' => $set] = uiRegisterProbeIconSet(['unica.svg']);
@@ -95,7 +94,7 @@ it('riporta nel set il proprio nome, oltre alle icone', function (): void {
 
     Assert::assertIsArray($entry);
     Assert::assertSame($set, $entry['name'] ?? null);
-});
+})->group('UI-ICONS-INV-4');
 
 it('restituisce un set per ogni set registrato, non solo per la sonda', function (): void {
     ['set' => $set] = uiRegisterProbeIconSet(['unica.svg']);
@@ -109,7 +108,7 @@ it('restituisce un set per ogni set registrato, non solo per la sonda', function
     foreach (array_keys($result) as $name) {
         Assert::assertIsString($name);
     }
-});
+})->group('UI-ICONS-INV-4');
 
 it('non cambia risultato al variare del contesto passato', function (): void {
     // `$_context` è dichiarato ma non usato: il test lo fissa, così se un giorno inizierà a
@@ -122,4 +121,4 @@ it('non cambia risultato al variare del contesto passato', function (): void {
         $action->execute('form')[$set]['icons'] ?? null,
         $action->execute('table')[$set]['icons'] ?? null,
     );
-});
+})->group('UI-ICONS-INV-5');

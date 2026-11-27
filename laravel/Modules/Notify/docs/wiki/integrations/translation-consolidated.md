@@ -3387,18 +3387,14 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
-<<<<<<< .merge_file_txTLIp
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation-keys-rules-1.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices-1.md) 
-=======
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation-keys-rules.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation_keys_best_practices.md)
-- [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation-keys-rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices.md)
->>>>>>> .merge_file_P3FLVm
 ---
 
 ## translation-keys-rules
@@ -3453,13 +3449,9 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
-<<<<<<< .merge_file_txTLIp
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
-=======
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation_keys_best_practices.md)
->>>>>>> .merge_file_P3FLVm
 ---
 
 ## translation-keys
@@ -3514,13 +3506,9 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../lang/docs/translation_keys_rules.md)
-<<<<<<< .merge_file_txTLIp
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices.md) 
-=======
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../lang/docs/translation-keys-best-practices.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation-keys-best-practices.md)
->>>>>>> .merge_file_P3FLVm
 ---
 
 ## translation-namespace-religion
@@ -3852,12 +3840,8 @@ Amen.
 - [ticket.php (dominio corretto)](../../Modules/App/lang/it/ticket.php)
 - [ticket.php (dominio corretto)](../../Modules/<nome progetto>/lang/it/ticket.php)
 - [Laravel Localization](https://laravel.com/docs/localization)
-<<<<<<< .merge_file_txTLIp
 - [No Hardcoded Language Religion](../../docs/no-hardcoded-language-religion.md)
-=======
 - [No Hardcoded Language Religion](../../no-hardcoded-language-religion.md)
-- [No Hardcoded Language Religion](../../no-hardcoded-language-religion.md)
->>>>>>> .merge_file_P3FLVm
 
 ---
 
@@ -5812,13 +5796,9 @@ return [
 
 ### Riferimenti
 - [TRANSLATION_KEYS_RULES.md](../../Lang/docs/TRANSLATION_KEYS_RULES.md)
-<<<<<<< .merge_file_txTLIp
-- [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md) 
-=======
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../Lang/docs/TRANSLATION_KEYS_BEST_PRACTICES.md)
 - [TRANSLATION_KEYS_RULES.md](../../../../Lang/docs/translation_keys_rules.md)
 - [TRANSLATION_KEYS_BEST_PRACTICES.md](../../../../Lang/docs/translation_keys_best_practices.md)
->>>>>>> .merge_file_P3FLVm
 
 ---
 

@@ -13,7 +13,7 @@ use DateTimeInterface;
  * percorso (di solito `updated_at`). Google e Bing usano `<lastmod>` solo se e' affidabile: un percorso senza data vera
  * resta senza `<lastmod>`, mai una data inventata. `seo:indexnow` usa le stesse date per reinviare le pagine cambiate.
  *
- * @see Modules/Seo/docs/adr/search-engine-presence.md
+ * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
  */
 interface SitemapLastModifiedContract
 {

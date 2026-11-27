@@ -63,13 +63,10 @@ Vedi [index](index.md) per navigazione completa.
 - Per chaining queued usare `new ActionJob(AnotherAction::class, $args)`.
 - Per test queued usare `Queue::fake()` + `Spatie\QueueableAction\Testing\QueueableActionFake`.
 
-<<<<<<< .merge_file_MreX5k
 ### Quaeris question-chart pipeline — prima lint, poi app boot
 ### App question-chart pipeline — prima lint, poi app boot
-=======
 ### <nome progetto> question-chart pipeline: prima lint, poi app boot
 ### App question-chart pipeline: prima lint, poi app boot
->>>>>>> .merge_file_udktB5
 - Nei flussi `ViewQuestionChart` il primo blocker puo` essere sintattico e non applicativo.
 - Prima di inseguire Livewire/Filament o query runtime, lintare l'intera catena caricata subito:
   - `QuestionChartChartData`
@@ -78,13 +75,10 @@ Vedi [index](index.md) per navigazione completa.
   - blade custom della pagina
 - Se lo stack trace dell'utente punta a una riga che sul disco non corrisponde piu`, trattarlo come possibile errore stale e verificare il file attuale con `php -l` + `nl -ba`.
 
-<<<<<<< .merge_file_MreX5k
 ### QuestionChart root ancestor — distinguere metodo assente da runtime stale
 - `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo Quaeris.
-=======
 ### QuestionChart root ancestor: distinguere metodo assente da runtime stale
 - `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo <nome progetto>.
->>>>>>> .merge_file_udktB5
 - `QuestionChart::getRootQuestionAncestorId()` e` parte del contratto del modulo App.
 - Se l'errore utente dice "undefined method" ma:
   - il metodo esiste sul file corrente

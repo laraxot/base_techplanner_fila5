@@ -12,6 +12,13 @@ use Modules\Comment\Models\Reaction;
 use Modules\Xot\Actions\Cast\SafeIntCastAction;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Conta le reazioni di un commento, una voce per reazione.
+ *
+ * @see docs/contracts/get-comment-reaction-counts-action.md
+ *
+ * @contract docs/contracts/get-comment-reaction-counts-action.md
+ */
 class GetCommentReactionCountsAction
 {
     use QueueableAction;

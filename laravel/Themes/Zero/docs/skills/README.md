@@ -1,3 +1,8 @@
+---
+title: "Skills per il Tema Zero"
+type: note
+qmd: "skills tema zero"
+---
 # Skills per il Tema Zero
 
 ## Panoramica

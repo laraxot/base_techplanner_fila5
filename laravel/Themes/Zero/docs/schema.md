@@ -2,6 +2,7 @@
 title: "Module Schema"
 module: "Zero"
 created: "2026-04-15T08:28:52Z"
+qmd: "schema"
 ---
 
 # Zero Module Schema

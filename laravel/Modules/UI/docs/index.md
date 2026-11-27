@@ -11,6 +11,7 @@ qmd: "ui documentazione indice naming debt kebab-case wiki bmad"
 
 Ingresso del modulo UI. Nomi: kebab-case, **senza date** nel filename
 ([55-md-conventions](../../../../bashscripts/docs/prompts/55-md-conventions.md)).
+`INDEX.md` (maiuscolo) e' stub superseded → questo file.
 `index.md` (maiuscolo) e' stub superseded → questo file.
 
 ## Orientamento
@@ -28,11 +29,7 @@ canonico senza data via [docs-clean.md](../../../../bashscripts/docs/prompts/doc
 
 - `audits/quality-gates.md`
 - `bugfix-*-2025-01-27.md` (+ copie in `archive/`)
-<<<<<<< .merge_file_Zt0T0k
-- `phpstan-fixes.md` / `phpstan-fixes.md` / `phpstan-fixes.md` (+ varianti)
-=======
-- `phpstan-fixes-january.md` / `phpstan-fixes-correzioni-gennaio.md` / `phpstan-fixes-november.md` (+ varianti)
->>>>>>> .merge_file_5sUf68
+- `phpstan-fixes.md` (canon; snapshot month → `*-historical.md` + stub)
 - `translations-update.md`
 - `wiki/troubleshooting/*-2026-*.md`
 - collisione case: `ARCHITECTURE_2025.md` / `architecture.md` / `architecture_2025.md`
@@ -72,3 +69,11 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 | [`tasks/`](tasks/) | 9 |
 | [`themes/`](themes/) | 2 |
 | [`wiki/`](wiki/index.md) | 119 |
+
+## Contenuto fuso (origine: INDEX)
+
+- [Purpose](./purpose.md)
+- [BMAD](./bmad/00-index.md)
+- [ECC](./ecc/00-index.md)
+- [Audit](./bmad/audit.md)
+- [Piano di miglioramento](./bmad/piano-miglioramento.md)

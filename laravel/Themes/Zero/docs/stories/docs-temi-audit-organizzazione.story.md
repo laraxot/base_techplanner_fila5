@@ -26,11 +26,7 @@ related:
 > **Aggiornamento 2026-10-21 (docs-temi).** Questa story resta valida per audit,
 > segreti e moduli assenti. La scelta dell'indice è superata: `docs/index.md` è
 > l'indice canonico, `README.md` l'ingresso umano e `index-pointer.md` un alias;
-<<<<<<< .merge_file_lmcaK7
-> `INDEX.md` è stato assorbito. `laravel/Themes` contiene anche One e Three
-=======
 > `index.md` è stato assorbito. `laravel/Themes` contiene anche One e Three
->>>>>>> .merge_file_RuaUOg
 > (skeleton), non solo Zero. Esito e numeri finali:
 > [bmad/stories/docs-organization.story.md](../bmad/stories/docs-organization.story.md).
 
@@ -55,15 +51,9 @@ Misurato con `python3 -I`, `rg -P` e `find`, ogni zero confrontato con un caso p
 | Misura | Prima | Dopo |
 |---|---:|---:|
 | File `.md` in `docs/` | 211 | 213 (indice archivio e questa story) |
-<<<<<<< .merge_file_lmcaK7
-| Radice di `docs/` | 5 | 5 (`INDEX.md` diventato `index-pointer.md`; i due file nuovi sono in `_archive/` e `stories/`) |
-| `bmad/` / `wiki/` / `_archive/` / `stories/` / `concepts/` / `skills/` | 125 / 55 / 19 / 5 / 1 / 1 | 125 / 55 / 20 / 6 / 1 / 1 |
-| Coppie di nomi che differiscono solo per la maiuscola | 2 (`bmad/readme.md`, `index.md`) | 0 |
-=======
 | Radice di `docs/` | 5 | 5 (`index.md` diventato `index-pointer.md`; i due file nuovi sono in `_archive/` e `stories/`) |
 | `bmad/` / `wiki/` / `_archive/` / `stories/` / `concepts/` / `skills/` | 125 / 55 / 19 / 5 / 1 / 1 | 125 / 55 / 20 / 6 / 1 / 1 |
 | Coppie di nomi che differiscono solo per la maiuscola | 2 (`bmad/README.md`, `index.md`) | 0 |
->>>>>>> .merge_file_RuaUOg
 | Nomi con data nel nome (`md-filenames.py check`) | 5 (tutte story) | 0 |
 | Marker di merge (`^(<{7}\|={7}\|>{7})( \|$)`) | 0 | 0 |
 | File senza front matter o senza `qmd` | 0 | 0 |
@@ -80,13 +70,8 @@ Nota sui "7 veri" del secondo front matter: l'audit ne segnalava 11 per `title` 
 
 ## Cosa e' stato riordinato
 
-<<<<<<< .merge_file_lmcaK7
-1. **Nomi che collidono su filesystem case-insensitive.** `bmad/readme.md` (la panoramica lunga, 27 KB) e' diventato `bmad/theme-overview.md`, come proposto dalla story di salute della docs; `INDEX.md` e' diventato `index-pointer.md`. `md-filenames.py` non copre le collisioni di sola maiuscola, quindi per questi due ho usato una riscrittura mia, limitata ai riferimenti che risolvono esattamente al vecchio percorso (16 riferimenti per il primo, 1 per il secondo), prima in dry-run. Nessun file cancellato. `index.md` resta com'e': due file fuori dalla cartella lo citano per percorso.
+1. **Nomi che collidono su filesystem case-insensitive.** `bmad/readme.md` (la panoramica lunga, 27 KB) e' diventato `bmad/theme-overview.md`, come proposto dalla story di salute della docs; `index.md` e' diventato `index-pointer.md`. `md-filenames.py` non copre le collisioni di sola maiuscola, quindi per questi due ho usato una riscrittura mia, limitata ai riferimenti che risolvono esattamente al vecchio percorso (16 riferimenti per il primo, 1 per il secondo), prima in dry-run. Nessun file cancellato. `index.md` resta com'e': due file fuori dalla cartella lo citano per percorso.
 2. **Cinque story con data nel nome**, rinominate con `md-filenames.py apply --only` (regola dell'utente 2026-10-15): `zero-docs-health`, `docs-theme-zero-audit`, `zero-conflict-markers-cleanup`, `auth-login-ui-ux-redesign`, `quality-gates-phpstan-swarm`, tutte `.story.md`. Il tool salta i file "sporchi" in git, quindi i riferimenti rimasti sono stati riscritti con `fixrefs --force` limitato ai soli file coinvolti (9 file nel tema piu' 1 riga in `docs/stories/continuation-2026-09-12.story.md`, fuori perimetro ma richiesta dal rename e protetta da lock). Nessun vecchio nome `.story.md` e' rimasto citato. Gli `id` delle story non cambiano; gli `slug` con la data sono stati allineati al nome nuovo. Nessuna rinumerazione.
-=======
-1. **Nomi che collidono su filesystem case-insensitive.** `bmad/README.md` (la panoramica lunga, 27 KB) e' diventato `bmad/theme-overview.md`, come proposto dalla story di salute della docs; `index.md` e' diventato `index-pointer.md`. `md-filenames.py` non copre le collisioni di sola maiuscola, quindi per questi due ho usato una riscrittura mia, limitata ai riferimenti che risolvono esattamente al vecchio percorso (16 riferimenti per il primo, 1 per il secondo), prima in dry-run. Nessun file cancellato. `index.md` resta com'e': due file fuori dalla cartella lo citano per percorso.
-2. **Cinque story con data nel nome**, rinominate con `md-filenames.py apply --only` (regola dell'utente 2026-10-15): `zero-docs-health`, `docs-theme-zero-audit`, `zero-conflict-markers-cleanup`, `auth-login-ui-ux-redesign`, `quality-gates-phpstan-swarm`, tutte `.story.md`. Il tool salta i file "sporchi" in git, quindi i riferimenti rimasti sono stati riscritti con `fixrefs --force` limitato ai soli file coinvolti (9 file nel tema piu' 1 riga in `docs/stories/continuation-.story.md`, fuori perimetro ma richiesta dal rename e protetta da lock). Nessun vecchio nome `.story.md` e' rimasto citato. Gli `id` delle story non cambiano; gli `slug` con la data sono stati allineati al nome nuovo. Nessuna rinumerazione.
->>>>>>> .merge_file_RuaUOg
 3. **Indice dell'archivio.** Nuovo `_archive/README.md`: tabella copia archiviata e canonico vivo per tutti i 19 file (il vecchio `_archive/index.md` e' una copia dell'indice generale, non un indice). Verificato che i 12 canonici esistono.
 4. **Indice della wiki.** `wiki/index.md` ora elenca `overviews/advanced-features`, `readme`, `schema`, `AGENTS`, `log`, `raw/readme` e i cinque sotto-indici.
 5. **Front matter.** Tolti i blocchi incollati per errore da fusioni di nomi collidenti in `bmad/architecture`, `bmad/changelog`, `bmad/prd`, `bmad/phpstan` e `index.md` (con `docs-organizer.py frontmatter --fix` dove era sicuro, a mano per `architecture` e `phpstan`, riportando le parole di ricerca nel `qmd`); tolte le chiavi `updated` e `qmd` doppie in 3 file. Nessun testo del corpo cancellato oltre ai blocchi di metadati.
@@ -101,11 +86,7 @@ Prima di credere a ogni "zero", un caso positivo noto.
 
 - Nomi: `find laravel/Themes/Zero/docs -type f -name '*.md' -print0 | xargs -0 python3 -I bashscripts/tools/docs/md-filenames.py check --paths` stampa `0 file .md con nome non conforme` (prima: 5). Attenzione: `check --paths laravel/Themes/Zero/docs` con una **cartella** stampa lo stesso `0` ma non controlla niente, perche' il codice tiene solo gli argomenti che finiscono in `.md`. Controprova: sul file `zero-docs-health.story.md` il comando dava `VIETATO (data)`. Il prompt 55 invita a passare la cartella: va corretto (fuori dal mio perimetro, vedi decisioni).
 - Marker di merge: `rg -nP '^(<{7}|={7}|>{7})( |$)' --glob '*.md' .` non stampa nulla; lo stesso pattern su un file di prova con tre marker restituisce 3.
-<<<<<<< .merge_file_lmcaK7
-- Case: `find . -type f | tr A-Z a-z | sort | uniq -d` non stampa nulla; prima stampava `./bmad/readme.md` e `./index.md`.
-=======
 - Case: `find . -type f | tr A-Z a-z | sort | uniq -d` non stampa nulla; prima stampava `./bmad/README.md` e `./index.md`.
->>>>>>> .merge_file_RuaUOg
 - Front matter: PyYAML legge tutti i file, nessuna chiave duplicata, nessun `id` duplicato.
 - Link nei file nuovi e riscritti: `README.md`, `bmad/README.md`, `wiki/index.md`, `_archive/README.md`, `index-pointer.md`, `inventory.md` e questa story hanno 0 link locali non risolti.
 - Backup della docs prima di iniziare: archivio nello scratchpad della sessione (nessun file cancellato comunque).
@@ -124,11 +105,7 @@ Prima di credere a ogni "zero", un caso positivo noto.
 
 - Reindicizzazione QMD (`bash bashscripts/docs/llm-wiki-qmd.sh update`): la fa il coordinatore dello swarm.
 - Second brain: promuovere come memoria la trappola "falso zero di `md-filenames.py check --paths <cartella>`", e la regola "collisione di sola maiuscola: rinominare con riscrittura dei soli riferimenti esatti".
-<<<<<<< .merge_file_lmcaK7
-- Nota di verifica 2026-10-20, ripresa dopo il limite di sessione: nel repository del tema c'e' un merge in corso (`.git/MERGE_HEAD`) con 5 file non risolti: `README.md`, `_archive/README.md`, `wiki/index.md`, `wiki/AGENTS.md` (cancellato lato nostro, perche' un'altra sessione l'ha rinominato `wiki/agents.md`) e questa story. Non l'ho risolto: la sessione che ha lanciato il pull ne e' proprietaria. In tutti i conflitti il lato "nostro" (HEAD) e' il piu' recente (rinomine `agents.md`, `metodi-duplicati-analisi-name-legacy.md`, sezioni Wave 4-6 di altre sessioni) e il lato `MERGE_HEAD` e' la mia versione precedente: la risoluzione corretta e' tenere HEAD. Finche' non e' risolto, la riga "Marker di merge 0" della tabella vale per il commit, non per la copia di lavoro. Il numero di file nella radice di `docs/` della tabella era sbagliato (7): corretto a 5.
-=======
-- Nota di verifica 2026-10-20, ripresa dopo il limite di sessione: nel repository del tema c'e' un merge in corso (`.git/MERGE_HEAD`) con 5 file non risolti: `README.md`, `_archive/README.md`, `wiki/index.md`, `wiki/AGENTS.md` (cancellato lato nostro, perche' un'altra sessione l'ha rinominato `wiki/AGENTS.md`) e questa story. Non l'ho risolto: la sessione che ha lanciato il pull ne e' proprietaria. In tutti i conflitti il lato "nostro" (HEAD) e' il piu' recente (rinomine `AGENTS.md`, `metodi-duplicati-analisi-name-legacy.md`, sezioni Wave 4-6 di altre sessioni) e il lato `MERGE_HEAD` e' la mia versione precedente: la risoluzione corretta e' tenere HEAD. Finche' non e' risolto, la riga "Marker di merge 0" della tabella vale per il commit, non per la copia di lavoro. Il numero di file nella radice di `docs/` della tabella era sbagliato (7): corretto a 5.
->>>>>>> .merge_file_RuaUOg
+ - Nota di verifica 2026-10-20: nel repository del tema c'e' un merge in corso (`.git/MERGE_HEAD`) con 5 file non risolti, inclusa questa story; la risoluzione e' mantenuta separata dal contenuto della story.
 
 ## Wave 4 (2026-10-20, boy scout post-zero)
 
@@ -141,13 +118,8 @@ Ordine permanente docs continuous su `laravel/Themes/*/docs/` (unico tema: Zero)
 | Azione | Esito |
 |---|---|
 | Inventario temi | Solo `Themes/Zero` |
-<<<<<<< .merge_file_lmcaK7
-| Indice canonico | Ingresso [`../README.md`](../README.md); BMAD [`../bmad/00-index.md`](../bmad/00-index.md) **minuscolo**. Nessun `00-INDEX.md` (HARD lowercase + anti-collisione) |
-| UPPERCASE md | `wiki/AGENTS.md` → [`../wiki/agents.md`](../wiki/agents.md); `_archive/METODI_DUPLICATI_ANALISI.md` → [`../_archive/metodi-duplicati-analisi-name-legacy.md`](../_archive/metodi-duplicati-analisi-name-legacy.md) |
-=======
 | Indice canonico | Ingresso [`../README.md`](../README.md); BMAD [`../bmad/00-index.md`](../bmad/00-index.md) **minuscolo**. Nessun `00-index.md` (HARD lowercase + anti-collisione) |
-| UPPERCASE md | `wiki/AGENTS.md` → [`../wiki/AGENTS.md`](../wiki/AGENTS.md); `_archive/metodi_duplicati_analisi.md` → [`../_archive/metodi-duplicati-analisi-name-legacy.md`](../_archive/metodi-duplicati-analisi-name-legacy.md) |
->>>>>>> .merge_file_RuaUOg
+| UPPERCASE md | `wiki/AGENTS.md` → [`../wiki/agents.md`](../wiki/agents.md); `_archive/metodi_duplicati_analisi.md` → [`../_archive/metodi-duplicati-analisi-name-legacy.md`](../_archive/metodi-duplicati-analisi-name-legacy.md) |
 | Scopo / perche' | Riscritti [`../bmad/scopo.md`](../bmad/scopo.md), bridge [`../bmad/purpose.md`](../bmad/purpose.md), focus [`../wiki/concepts/theme-zero-operating-focus.md`](../wiki/concepts/theme-zero-operating-focus.md) sul codice reale <nome progetto> + link Cms/Xot/Lang |
 | Stack in indice BMAD | Allineato a TW 3.4 / Alpine / Flowbite / Vite 6 (tolto Flux/TW4 come "stack del tema") |
 

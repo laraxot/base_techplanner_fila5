@@ -382,6 +382,8 @@ GSD directories:
 - **Framework Rules**: `laravel/CLAUDE.md` (comprehensive Laraxot guidelines, 38.7 KB)
 - **Code Quality**: `docs/CODE_QUALITY_STANDARDS.md` (standards & best practices)
 - **Issue Tracking**: `.github/README.md` (Design Comuni project tracking)
+- **Framework Rules**: `laravel/Modules/Geo/docs/root-md-files/claude.md` (comprehensive Laraxot guidelines, 38.7 KB)
+- **Issue Tracking**: `.github/design-comuni-issue-tracking.md` (Design Comuni project tracking)
 
 ### Module & Theme Documentation
 - **All Modules**: `laravel/Modules/{ModuleName}/docs/00-index.md`
@@ -429,6 +431,8 @@ This project supports **simultaneous work by multiple AI agents**. When working:
 
 1. Check `.github/README.md` for issue tracking guidelines
 2. Review `laravel/CLAUDE.md` for detailed framework rules
+1. Check `.github/design-comuni-issue-tracking.md` for issue tracking guidelines
+2. Review `laravel/Modules/Geo/docs/root-md-files/claude.md` for detailed framework rules
 3. Check module-specific docs in `Modules/*/docs/`
 4. Run `./vendor/bin/phpstan analyse` to catch type issues early
 5. Check GitHub discussions for architecture decisions (ADRs)

@@ -500,14 +500,10 @@ Themes/Sixteen/resources/views/
 ### Documentazione
 - [Analisi Visiva](../../screenshots/homepage/ANALISI-VISIVA.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
-<<<<<<< .merge_file_guls4i
 - [Fix Plan](docs/screenshots/homepage/fix-plan.md)
-=======
 - [Fix Plan](../../screenshots/homepage/FIX-PLAN.md)
 - [Analisi Visiva](../../screenshots/homepage/ANALISI-VISIVA.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
-- [Fix Plan](../../screenshots/homepage/FIX-PLAN.md)
->>>>>>> .merge_file_VI8aQQ
 - [OpenViking Context](.openvikings/homepage_alignment_context.md)
 
 ### Link Esterni
@@ -989,12 +985,8 @@ Analizzare e documentare la necessità di creare `XotBasePivot` seguendo princip
    - ✅ Filosofia Zen e principi SOLID
    - ✅ **Raccomandazione: IMPLEMENTARE ⭐⭐⭐⭐⭐**
 
-<<<<<<< .merge_file_guls4i
 2. **[XotBasePivot Strategy](./architecture/xotbasepivot-strategy.md)** (3.500+ parole)
-=======
 2. **[XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)** (3.500+ parole)
-2. **[XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)** (3.500+ parole)
->>>>>>> .merge_file_VI8aQQ
    - ✅ Piano step-by-step (3-4 ore totali)
    - ✅ 13 moduli impattati, 26 file da refactorare
    - ✅ Script di migration automatici
@@ -1303,12 +1295,8 @@ public function getConnectionName(): ?string
 
 **Passi:**
 1. Leggere [XotBasePivot Analysis](./architecture/xotbasepivot-analysis.md)
-<<<<<<< .merge_file_guls4i
 2. Seguire [XotBasePivot Strategy](./architecture/xotbasepivot-strategy.md)
-=======
 2. Seguire [XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)
-2. Seguire [XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)
->>>>>>> .merge_file_VI8aQQ
 3. Iniziare da User module (priorità alta)
 4. Testare continuamente con PHPStan Level 10
 
@@ -1465,12 +1453,8 @@ Analizzare e documentare la necessità di creare `XotBasePivot` seguendo princip
    - ✅ Filosofia Zen e principi SOLID
    - ✅ **Raccomandazione: IMPLEMENTARE ⭐⭐⭐⭐⭐**
 
-<<<<<<< .merge_file_guls4i
 2. **[XotBasePivot Strategy](./architecture/xotbasepivot-strategy.md)** (3.500+ parole)
-=======
 2. **[XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)** (3.500+ parole)
-2. **[XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)** (3.500+ parole)
->>>>>>> .merge_file_VI8aQQ
    - ✅ Piano step-by-step (3-4 ore totali)
    - ✅ 13 moduli impattati, 26 file da refactorare
    - ✅ Script di migration automatici
@@ -1779,12 +1763,8 @@ public function getConnectionName(): ?string
 
 **Passi:**
 1. Leggere [XotBasePivot Analysis](./architecture/xotbasepivot-analysis.md)
-<<<<<<< .merge_file_guls4i
 2. Seguire [XotBasePivot Strategy](./architecture/xotbasepivot-strategy.md)
-=======
 2. Seguire [XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)
-2. Seguire [XotBasePivot Strategy](../../architecture/xotbasepivot-strategy.md)
->>>>>>> .merge_file_VI8aQQ
 3. Iniziare da User module (priorità alta)
 4. Testare continuamente con PHPStan Level 10
 

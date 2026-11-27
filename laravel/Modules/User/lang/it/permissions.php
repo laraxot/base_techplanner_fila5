@@ -3,6 +3,31 @@
 declare(strict_types=1);
 
 return [
+    'actions' => [
+        'create' => [
+            'icon' => 'create',
+            'label' => 'create',
+        ],
+        'layout' => [
+            'icon' => 'layout',
+            'label' => 'layout',
+        ],
+        'delete' => [
+            'icon' => 'delete',
+            'label' => 'delete',
+        ],
+        'view' => [
+            'icon' => 'view',
+            'label' => 'view',
+        ],
+        'edit' => [
+            'icon' => 'edit',
+            'label' => 'edit',
+        ],
+        'Attach Role' => [
+            'label' => 'Attach Role',
+        ],
+    ],
     'fields' => [
         'id' => [
             'label' => 'ID',
@@ -25,22 +50,11 @@ return [
         'updated_at' => [
             'label' => 'Modificato il',
         ],
-    ],
-    'actions' => [
-        'create' => [
-            'icon' => 'create',
+        'active' => [
+            'label' => 'active',
         ],
-        'layout' => [
-            'icon' => 'layout',
-        ],
-        'delete' => [
-            'icon' => 'delete',
-        ],
-        'view' => [
-            'icon' => 'view',
-        ],
-        'edit' => [
-            'icon' => 'edit',
+        'role' => [
+            'label' => 'role',
         ],
     ],
 ];

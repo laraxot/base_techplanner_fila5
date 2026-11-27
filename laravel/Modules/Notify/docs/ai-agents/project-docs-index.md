@@ -14,7 +14,6 @@ status: draft
 
 Indice generato automaticamente da file markdown in cartelle docs (esclusi vendor/node_modules/archive).
 
-<<<<<<< .merge_file_TEccoT
 - `.agents/docs/build-and-dev-commands.md` — Build & development commands
 - `.agents/docs/chart-widgets.md` — Chart widgets (Chart.js + Filament v5)
 - `.agents/docs/code-quality-commands.md` — Code quality commands
@@ -168,6 +167,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/github-actions-subtrees.md` — GitHub Actions - Subtrees Sync
 - `bashscripts/docs/github-workflows-bashscripts-setup.md` — GitHub Workflows - Bashscripts Setup
 - `bashscripts/docs/operations/gitignore-standardization.md` — Standardizzazione .gitignore per bashscripts
+- `bashscripts/docs/gitignore-standardization.md` — Standardizzazione .gitignore per bashscripts
 - `bashscripts/docs/icons.md` — Sistema di Icone
 - `bashscripts/docs/installation.md` — Installazione {#installazione}
 - `bashscripts/docs/introduction.md` — Introducendo Lang {#introducendo-lang}
@@ -178,6 +178,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/laraxot_conventions.md` — Convenzioni per lo Sviluppo in Laraxot PTVX
 - `bashscripts/docs/layouts-and-themes.md` — Layouts e Temi UI
 - `bashscripts/docs/operations/library-dependencies.md` — Library Dependencies Documentation
+- `bashscripts/docs/library-dependencies.md` — Library Dependencies Documentation
 - `bashscripts/docs/links.md` — links
 - `bashscripts/docs/localization-guide.md` — Guida alla Localizzazione nel Framework Laraxot PTVX
 - `bashscripts/docs/login_test_implementation_summary.md` — Login Test Implementation Summary - SaluteOra Project
@@ -187,6 +188,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/master-session-2025-01-04.md` — 🎯 MASTER SESSION REPORT - 4 Gennaio 2025
 - `bashscripts/docs/mcp-configuration.md` — Configurazione MCP Server per PTVX Fila4 Mono
 - `bashscripts/docs/integrations/mcp-optimization-workflow.md` — Workflow di Ottimizzazione Continua MCP per SimpleChartWidget
+- `bashscripts/docs/mcp-optimization-workflow.md` — Workflow di Ottimizzazione Continua MCP per SimpleChartWidget
 - `bashscripts/docs/mcp_errors_and_lessons.md` — Analisi Errori e Lezioni Apprese sull'Implementazione MCP
 - `bashscripts/docs/mcp_implementation_correction.md` — MCP Implementation Correction
 - `bashscripts/docs/mcp_implementation_guide.md` — Guida all'Implementazione del Model Context Protocol (MCP)
@@ -215,6 +217,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/noconsole.md` — Cartella NoConsole
 - `bashscripts/docs/orbit_sushi_to_json.md` — Invece di usare Orbit {#invece-di-usare-orbit}
 - `bashscripts/docs/governance/organization.md` — Organizzazione Script Bash
+- `bashscripts/docs/organization.md` — Organizzazione Script Bash
 - `bashscripts/docs/organize-scripts-summary.md` — Organizzazione Script per Categoria
 - `bashscripts/docs/package.md` — Package utilizzati {#package-utilizzati}
 - `bashscripts/docs/password.md` — password
@@ -251,6 +254,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/project_roadmap.md` — Roadmap del Progetto
 - `bashscripts/docs/governance/project_structure_rules.md` — Regole Struttura Progetto Laraxot
 - `bashscripts/docs/operations/quality-assurance-scripts.md` — Quality Assurance Scripts
+- `bashscripts/docs/project_structure_rules.md` — Regole Struttura Progetto Laraxot
+- `bashscripts/docs/quality-assurance-scripts.md` — Quality Assurance Scripts
 - `bashscripts/docs/reactphp.md` — Gestione Processi ReactPHP
 - `bashscripts/docs/readme-template.md` — Modulo [Nome Modulo]
 - `bashscripts/docs/readme.es.md` — 🚀 Kit de Herramientas de Automatización Git
@@ -294,6 +299,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `bashscripts/docs/schema-conventions.md` — Schema Conventions in Notify Module
 - `bashscripts/docs/scripts-conflict-resolution.md` — Risoluzione Conflitti negli Script Bash
 - `bashscripts/docs/operations/scripts-index.md` — Bashscripts Scripts Index
+- `bashscripts/docs/scripts-index.md` — Bashscripts Scripts Index
 - `bashscripts/docs/scripts.md` — 🚀 Script Bash di il progetto: La Tua Guida Definitiva
 - `bashscripts/docs/scripts_conflict_resolution.md` — Risoluzione Conflitti negli Script Bash
 - `bashscripts/docs/scripts_index.md` — Bash Scripts Index
@@ -3826,6 +3832,16 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/-integration/test-smtp.md` — test_smtp
 - `laravel/Modules/Notify/docs/_integration/todo.md` — _todo
 - `laravel/Modules/Notify/docs/_integration/whatsapp.md` — whatsapp
+- `laravel/Modules/Notify/docs/-integration/-repos.md` — _repos
+- `laravel/Modules/Notify/docs/-integration/-todo.md` — _todo
+- `laravel/Modules/Notify/docs/-integration/firebase.md` — firebase
+- `laravel/Modules/Notify/docs/-integration/links.md` — links
+- `laravel/Modules/Notify/docs/-integration/login.md` — login
+- `laravel/Modules/Notify/docs/-integration/notifications.md` — notifications
+- `laravel/Modules/Notify/docs/-integration/repos.md` — _repos
+- `laravel/Modules/Notify/docs/-integration/telegram.md` — telegram
+- `laravel/Modules/Notify/docs/-integration/todo.md` — _todo
+- `laravel/Modules/Notify/docs/-integration/whatsapp.md` — whatsapp
 - `laravel/Modules/Notify/docs/-repos.md` — -repos
 - `laravel/Modules/Notify/docs/-todo.md` — -todo
 - `laravel/Modules/Notify/docs/00-index-1.md` — Documentation Index
@@ -3837,15 +3853,17 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/_integration/-todo.md` — _todo
 - `laravel/Modules/Notify/docs/_integration/-repos.md` — _repos
 - `laravel/Modules/Notify/docs/_integration/-todo.md` — _todo
+- `laravel/Modules/Notify/docs/_integration/_repos.md` — _repos
+- `laravel/Modules/Notify/docs/_integration/_todo.md` — _todo
 - `laravel/Modules/Notify/docs/_integration/firebase.md` — firebase
 - `laravel/Modules/Notify/docs/_integration/links.md` — links
 - `laravel/Modules/Notify/docs/_integration/login.md` — login
 - `laravel/Modules/Notify/docs/_integration/notifications.md` — notifications
 - `laravel/Modules/Notify/docs/_integration/repos.md` — _repos
 - `laravel/Modules/Notify/docs/_integration/telegram.md` — telegram
+- `laravel/Modules/Notify/docs/_integration/test-smtp-1.md` — test_smtp
 - `laravel/Modules/Notify/docs/_integration/test-smtp.md` — test_smtp
-- `laravel/Modules/Notify/docs/_integration/test-smtp.md` — test_smtp
-- `laravel/Modules/Notify/docs/_integration/test-smtp.md` — test_smtp
+- `laravel/Modules/Notify/docs/_integration/test_smtp.md` — test_smtp
 - `laravel/Modules/Notify/docs/_integration/todo.md` — _todo
 - `laravel/Modules/Notify/docs/_integration/whatsapp.md` — whatsapp
 - `laravel/Modules/Notify/docs/_repos.md` — _repos
@@ -3935,6 +3953,12 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/architecture/config-structure.md` — Struttura di Configurazione nei Moduli
 - `laravel/Modules/Notify/docs/architecture/dto-structure-conventions.md` — Convenzioni per la Struttura dei DTO nel Modulo Notify
 - `laravel/Modules/Notify/docs/dto-structure-rules.md` — Regole per la Struttura dei DTO
+- `laravel/Modules/Notify/docs/appointment-notifications-1.md` — Sistema di Notifica Appuntamenti - il progetto
+- `laravel/Modules/Notify/docs/appointment_field_naming_issues.md` — Appointment Field Naming Issues
+- `laravel/Modules/Notify/docs/appointment_notifications.md` — Sistema di Notifica Appuntamenti - il progetto
+- `laravel/Modules/Notify/docs/architectural-patterns-1.md` — Pattern Architetturali per le Notifiche
+- `laravel/Modules/Notify/docs/architectural_patterns.md` — Pattern Architetturali per le Notifiche
+- `laravel/Modules/Notify/docs/architecture/dto-structure-rules.md` — Regole per la Struttura dei DTO
 - `laravel/Modules/Notify/docs/architecture/interface-structure-clarification.md` — Chiarimento sulla Struttura delle Interfacce
 - `laravel/Modules/Notify/docs/architecture/mail-templates-structure.md` — Struttura Template Email
 - `laravel/Modules/Notify/docs/architecture/sms-config-structure.md` — Struttura della Configurazione SMS
@@ -3943,6 +3967,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/architecture/structure.md` — Modulo Notify
 - `laravel/Modules/Notify/docs/architecture/translation-file-structure-guide.md` — Guida alla Struttura dei File di Traduzione
 - `laravel/Modules/Notify/docs/translations-structure-template.md` — Template di Struttura per le Traduzioni
+- `laravel/Modules/Notify/docs/architecture/translations-structure-template.md` — Template di Struttura per le Traduzioni
 - `laravel/Modules/Notify/docs/architecture-rules.md` — Architectural Rules & Guidelines
 - `laravel/Modules/Notify/docs/architecture.md` — Notify Module Architecture
 - `laravel/Modules/Notify/docs/base-model.md` — BaseModel del Modulo Notify
@@ -3964,6 +3989,11 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/best-practices/schema-conventions.md` — Schema Conventions in Notify Module
 - `laravel/Modules/Notify/docs/best-practices/translation-conventions-clarification.md` — Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify
 - `laravel/Modules/Notify/docs/translation-conventions.md` — Convenzioni per le Traduzioni del Modulo Notify
+- `laravel/Modules/Notify/docs/base_templates.md` — Template Email di Base
+- `laravel/Modules/Notify/docs/best-practices/filament-naming-conventions.md` — Convenzioni di Naming per Filament
+- `laravel/Modules/Notify/docs/best-practices/inheritance-conventions.md` — Convenzioni di Ereditarietà
+- `laravel/Modules/Notify/docs/best-practices/naming-conventions.md` — Convenzioni di Naming
+- `laravel/Modules/Notify/docs/best-practices/translation-conventions.md` — Convenzioni per le Traduzioni del Modulo Notify
 - `laravel/Modules/Notify/docs/best-practices-1.md` — Best Practices Implementazione
 - `laravel/Modules/Notify/docs/best-practices.md` — Best Practices e Raccomandazioni
 - `laravel/Modules/Notify/docs/bulk-notification-action.md` — Bulk Notification Action
@@ -3997,6 +4027,13 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/composer-update-fixes.md` — Composer Update Fixes - 24 Novembre 2025
 - `laravel/Modules/Notify/docs/composer-updatees.md` — Composer Update Fixes - 24 Novembre 2025
 - `laravel/Modules/Notify/docs/bmad/architecture/config-structure.md` — Struttura di Configurazione nei Moduli <nome progetto>
+- `laravel/Modules/Notify/docs/channel_vs_dto_provider_selection.md` — Analisi Architetturale: Selezione Provider nei Canali vs Data Transfer Objects
+- `laravel/Modules/Notify/docs/class-inheritance-best-practices-1.md` — Best Practices per l'Ereditarietà delle Classi
+- `laravel/Modules/Notify/docs/class_inheritance_best_practices.md` — Best Practices per l'Ereditarietà delle Classi
+- `laravel/Modules/Notify/docs/code-fixes-.md` — Notify Module - Code Fixes & Improvements (2025)
+- `laravel/Modules/Notify/docs/codebrisk_tools_analysis.md` — Analisi Tool CodeBrisk per Email in Laravel
+- `laravel/Modules/Notify/docs/communication_systems_architecture.md` — Notify Module - Communication Systems Architecture
+- `laravel/Modules/Notify/docs/config-structure-1.md` — Struttura di Configurazione nei Moduli <nome progetto>
 - `laravel/Modules/Notify/docs/config-structure.md` — Struttura di Configurazione nei Moduli
 - `laravel/Modules/Notify/docs/config_structure.md` — Struttura di Configurazione nei Moduli <nome progetto>
 - `laravel/Modules/Notify/docs/configuration-architecture.md` — Architettura delle Configurazioni nei Moduli Laravel
@@ -4042,6 +4079,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/crud-template-email-filament.md` — Proposta Architetturale: CRUD Template Email in Notify (Filament)
 - `laravel/Modules/Notify/docs/crud_template_email_filament.md` — Proposta Architetturale: CRUD Template Email in Notify (Filament)
 - `laravel/Modules/Notify/docs/bmad/architecture/current-work-status.md` — Stato Attuale del Lavoro - 12 Maggio 2025
+- `laravel/Modules/Notify/docs/correzioni_phpstan_completate.md` — correzioni_phpstan_completate
+- `laravel/Modules/Notify/docs/current-work-status-1.md` — Stato Attuale del Lavoro - 12 Maggio 2025
 - `laravel/Modules/Notify/docs/current-work-status.md` — Stato Attuale del Lavoro - 12 Maggio 2025
 - `laravel/Modules/Notify/docs/current-work.md` — Stato Attuale del Lavoro - 12 Maggio 2025
 - `laravel/Modules/Notify/docs/current_work_status.md` — Stato Attuale del Lavoro - 12 Maggio 2025
@@ -4059,6 +4098,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/database-mail.md` — Database Mail System
 - `laravel/Modules/Notify/docs/database-mail.md` — Database Mail System
 - `laravel/Modules/Notify/docs/database-mail-enhancement.md` — Database Mail Enhancement (Open Source)
+- `laravel/Modules/Notify/docs/database_mail.md` — Database Mail System
+- `laravel/Modules/Notify/docs/database_mail_enhancement.md` — Database Mail Enhancement (Open Source)
 - `laravel/Modules/Notify/docs/database-mail-enhancement.md` — Database Mail Enhancement (Open Source)
 - `laravel/Modules/Notify/docs/database_mail_queue.md` — Sistema di Code per Email - il progetto
 - `laravel/Modules/Notify/docs/database_mail_system.md` — Sistema di Gestione Email Basato su Database - il progetto
@@ -4070,11 +4111,13 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/development/roadmap.md` — Notify Module Roadmap
 - `laravel/Modules/Notify/docs/doctor-emails.md` — Email per i Dottori
 - `laravel/Modules/Notify/docs/doctor-emails.md` — Email per i Dottori
+- `laravel/Modules/Notify/docs/doctor_emails.md` — Email per i Dottori
 - `laravel/Modules/Notify/docs/doctor-emails.md` — Email per i Dottori
 - `laravel/Modules/Notify/docs/dor-emails.md` — Email per i Dottori
 - `laravel/Modules/Notify/docs/dry-composition-pattern.md` — Pattern DRY: Composizione Actions Bulk → Single
 - `laravel/Modules/Notify/docs/dry-composition.md` — Pattern DRY: Composizione Actions Bulk → Single
 - `laravel/Modules/Notify/docs/dry-kiss-analysis.md` — DRY & KISS Analysis - Modulo Notify
+- `laravel/Modules/Notify/docs/dry-kiss-analysis-.md` — DRY & KISS Analysis - Modulo Notify
 - `laravel/Modules/Notify/docs/dry-kiss-analysis-conflict.md` — DRY & KISS Analysis - Modulo Notify
 - `laravel/Modules/Notify/docs/dry-kiss-analysis.md` — 🐄✨ DRY & KISS Analysis - Modulo Notify
 - `laravel/Modules/Notify/docs/dry-kiss-improvements.md` — Notify Module - DRY + KISS Improvements
@@ -4089,17 +4132,21 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/dto_structure_conventions.md` — Convenzioni per la Struttura dei DTO nel Modulo Notify
 - `laravel/Modules/Notify/docs/dto-structure-rules.md` — Regole per la Struttura dei DTO
 - `laravel/Modules/Notify/docs/dto-vs-factory-analysis.md` — Analisi: Logica di Selezione del Driver nel DTO vs Factory vs Canale
+- `laravel/Modules/Notify/docs/dto_structure_rules.md` — Regole per la Struttura dei DTO
+- `laravel/Modules/Notify/docs/dto_vs_factory_analysis.md` — Analisi: Logica di Selezione del Driver nel DTO vs Factory vs Canale
 - `laravel/Modules/Notify/docs/dto-structure-rules.md` — Regole per la Struttura dei DTO
 - `laravel/Modules/Notify/docs/dto-vs-factory-analysis.md` — Analisi: Logica di Selezione del Driver nel DTO vs Factory vs Canale
 - `laravel/Modules/Notify/docs/duplicate-files-to-remove.md` — File Duplicati da Eliminare - Modulo Notify
 - `laravel/Modules/Notify/docs/duplicate-methods-analysis.md` — Analisi Metodi Duplicati - Modulo Notify
 - `laravel/Modules/Notify/docs/duplicate-methods.md` — Analisi Metodi Duplicati - Modulo Notify
 - `laravel/Modules/Notify/docs/bmad/architecture/dynamic-class-resolution.md` — Risoluzione Dinamica delle Classi nei Factory Pattern
+- `laravel/Modules/Notify/docs/dynamic-class-resolution-1.md` — Risoluzione Dinamica delle Classi nei Factory Pattern
 - `laravel/Modules/Notify/docs/dynamic-class-resolution-pattern-1.md` — Pattern di Risoluzione Dinamica delle Classi vs Pattern Match
 - `laravel/Modules/Notify/docs/dynamic-class-resolution-pattern.md` — Pattern di Risoluzione Dinamica delle Classi vs Pattern Match
 - `laravel/Modules/Notify/docs/dynamic-class-resolution.md` — Risoluzione Dinamica delle Classi nei Factory Pattern
 - `laravel/Modules/Notify/docs/dynamic_class_resolution.md` — Risoluzione Dinamica delle Classi nei Factory Pattern
 - `laravel/Modules/Notify/docs/archive/historical/dynamic-class-resolution-pattern.md` — Pattern di Risoluzione Dinamica delle Classi vs Pattern Match
+- `laravel/Modules/Notify/docs/dynamic_class_resolution_pattern.md` — Pattern di Risoluzione Dinamica delle Classi vs Pattern Match
 - `laravel/Modules/Notify/docs/editor-visuale.md` — Editor Visuale Template
 - `laravel/Modules/Notify/docs/eloquent-properties-best-practices.md` — Best Practices per Proprietà Modelli Eloquent - Modulo Notify
 - `laravel/Modules/Notify/docs/email/firebase.md` — Firebase Push Notifications
@@ -4156,6 +4203,9 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/email-best-practices.md` — Best Practices per il Sistema Email
 - `laravel/Modules/Notify/docs/email_cache.md` — Sistema Cache Email
 - `laravel/Modules/Notify/docs/email-html-best-practices.md` — Best Practices HTML per Email
+- `laravel/Modules/Notify/docs/email_analytics.md` — Analytics Email - il progetto
+- `laravel/Modules/Notify/docs/email_best_practices.md` — Best Practices per il Sistema Email
+- `laravel/Modules/Notify/docs/email_html_best_practices.md` — Best Practices HTML per Email
 - `laravel/Modules/Notify/docs/email_logs.md` — Sistema Log Email
 - `laravel/Modules/Notify/docs/email_migrations.md` — Sistema Migrazione Email
 - `laravel/Modules/Notify/docs/email_monitoring.md` — Sistema Monitoraggio Email
@@ -4173,6 +4223,13 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/email-templates-laravel-mailables-notifications.md` — Approfondimento: Mailables & Notifications Laravel
 - `laravel/Modules/Notify/docs/email-templates-simplepleb.md` — Approfondimento: simplepleb/laravel-email-templates
 - `laravel/Modules/Notify/docs/email-templates-spatie.md` — Approfondimento: spatie/laravel-database-mail-templates
+- `laravel/Modules/Notify/docs/email_plugins_analysis.md` — Analisi Plugin Email per Filament - il progetto
+- `laravel/Modules/Notify/docs/email_template_slug_proposal.md` — Proposta: Aggiunta del Parametro Slug per Email Template
+- `laravel/Modules/Notify/docs/email_templates_editor_visuali.md` — Approfondimento: Editor Visuali ed Esterni (Mailgun, MJML, BeeFree, Stripo, ecc.)
+- `laravel/Modules/Notify/docs/email_templates_engagement.md` — Template Email per Alto Engagement
+- `laravel/Modules/Notify/docs/email_templates_laravel_mailables_notifications.md` — Approfondimento: Mailables & Notifications Laravel
+- `laravel/Modules/Notify/docs/email_templates_simplepleb.md` — Approfondimento: simplepleb/laravel-email-templates
+- `laravel/Modules/Notify/docs/email_templates_spatie.md` — Approfondimento: spatie/laravel-database-mail-templates
 - `laravel/Modules/Notify/docs/email_testing_analysis.md` — Analisi delle Pagine di Test Email
 - `laravel/Modules/Notify/docs/email_testing_rules.md` — Regole per il Testing delle Email
 - `laravel/Modules/Notify/docs/email_tests.md` — Test Sistema Email - il progetto
@@ -4182,6 +4239,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/email_wysiwyg_editor_tests.md` — Test Editor WYSIWYG Email - il progetto
 - `laravel/Modules/Notify/docs/emails/spatie-email.md` — SpatieEmail Documentation
 - `laravel/Modules/Notify/docs/bmad/architecture/enum-config-usage.md` — Utilizzo di Enum e Config
+- `laravel/Modules/Notify/docs/email_wysiwyg_editor.md` — Editor WYSIWYG per Email - il progetto
+- `laravel/Modules/Notify/docs/enum-config-usage-1.md` — Utilizzo di Enum e Config
 - `laravel/Modules/Notify/docs/enum-config-usage.md` — Utilizzo di Enum e Config
 - `laravel/Modules/Notify/docs/enum_config_usage.md` — Utilizzo di Enum e Config
 - `laravel/Modules/Notify/docs/enums/channel-enum.md` — `ChannelEnum`
@@ -4191,6 +4250,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/errori/plugin-spatie-translatable-not-registered.md` — Errore: Plugin spatie-translatable Not Registered
 - `laravel/Modules/Notify/docs/errori-azione-netfun.md` — Analisi degli Errori in SendNetfunSMSAction
 - `laravel/Modules/Notify/docs/errori-azione-netfun.md` — Analisi degli Errori in SendNetfunSMSAction
+- `laravel/Modules/Notify/docs/errori_azione_netfun.md` — Analisi degli Errori in SendNetfunSMSAction
 - `laravel/Modules/Notify/docs/errori-azione-netfun.md` — Analisi degli Errori in SendNetfunSMSAction
 - `laravel/Modules/Notify/docs/events.md` — Email Events
 - `laravel/Modules/Notify/docs/factory-advantages.md` — Analisi del Pattern Factory per la Selezione dei Provider SMS
@@ -4200,6 +4260,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/factory.md` — Analisi del Pattern Factory per le Notifiche
 - `laravel/Modules/Notify/docs/archive/historical/factory-pattern-advantages.md` — Analisi del Pattern Factory per la Selezione dei Provider SMS
 - `laravel/Modules/Notify/docs/factory-pattern-analysis.md` — Analisi del Pattern Factory per le Notifiche
+- `laravel/Modules/Notify/docs/factory_pattern_advantages.md` — Analisi del Pattern Factory per la Selezione dei Provider SMS
+- `laravel/Modules/Notify/docs/factory_pattern_analysis.md` — Analisi del Pattern Factory per le Notifiche
 - `laravel/Modules/Notify/docs/factory-pattern-analysis.md` — Analisi del Pattern Factory per le Notifiche
 - `laravel/Modules/Notify/docs/filament-4-migration-fixes.md` — Filament 3 to 4 Migration - Component Fixes
 - `laravel/Modules/Notify/docs/filament-4-migrationes.md` — Filament 3 to 4 Migration - Component Fixes
@@ -4210,6 +4272,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/filament-custom-pages.md` — Filament Custom Pages - Documentazione Modulo Notify
 - `laravel/Modules/Notify/docs/filament-extension-pattern-1.md` — Pattern di Estensione per Componenti Filament
 - `laravel/Modules/Notify/docs/bmad/architecture/filament-extension-pattern-analysis.md` — Analisi del Pattern di Estensione per Componenti Filament
+- `laravel/Modules/Notify/docs/filament-extension-pattern-analysis-1.md` — Analisi del Pattern di Estensione per Componenti Filament
 - `laravel/Modules/Notify/docs/filament-extension-pattern-analysis.md` — Analisi del Pattern di Estensione per Componenti Filament
 - `laravel/Modules/Notify/docs/filament-extension-pattern.md` — Pattern di Estensione per Componenti Filament
 - `laravel/Modules/Notify/docs/filament-extension-rules-1.md` — Regole di Estensione delle Classi Filament
@@ -4217,6 +4280,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/filament-extension.md` — Pattern di Estensione per Componenti Filament
 - `laravel/Modules/Notify/docs/filament-grapesjs.md` — Abilitare il plugin `gjs-blocks-basic` in GrapesJS
 - `laravel/Modules/Notify/docs/bmad/architecture/filament-naming-conventions.md` — Convenzioni di Naming per Filament
+- `laravel/Modules/Notify/docs/filament-naming-conventions-1.md` — Convenzioni di Naming per Filament
 - `laravel/Modules/Notify/docs/filament-naming-conventions.md` — Convenzioni di Naming per Filament
 - `laravel/Modules/Notify/docs/filament-page-naming-convention-1.md` — Convenzioni di Naming per Pagine Filament
 - `laravel/Modules/Notify/docs/filament-page-naming-convention.md` — Convenzioni di Naming per Pagine Filament
@@ -4246,6 +4310,11 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/filament_page_naming_convention.md` — Convenzioni di Naming per Pagine Filament
 - `laravel/Modules/Notify/docs/archive/historical/filament-pages.md` — Pagine Filament del Modulo Notify
 - `laravel/Modules/Notify/docs/filament-pages-convention.md` — Convenzioni per le Pagine Filament
+- `laravel/Modules/Notify/docs/filament_extension_pattern_analysis.md` — Analisi del Pattern di Estensione per Componenti Filament
+- `laravel/Modules/Notify/docs/filament_extension_rules.md` — Regole di Estensione delle Classi Filament
+- `laravel/Modules/Notify/docs/filament_grapesjs.md` — Abilitare il plugin `gjs-blocks-basic` in GrapesJS
+- `laravel/Modules/Notify/docs/filament_pages.md` — Pagine Filament del Modulo Notify
+- `laravel/Modules/Notify/docs/filament_pages_convention.md` — Convenzioni per le Pagine Filament
 - `laravel/Modules/Notify/docs/filament_resource_pages_architecture.md` — Architettura delle Pagine di Risorse Filament
 - `laravel/Modules/Notify/docs/filament_resources.md` — Risorse Filament del Modulo Notify
 - `laravel/Modules/Notify/docs/filament_template_conventions.md` — Convenzioni per Template Blade di Filament
@@ -4282,6 +4351,9 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/implementazione-pratica.md` — Implementazione Pratica del Modulo Notify
 - `laravel/Modules/Notify/docs/improved-email-templates.md` — Versione Migliorata: Filament Email Templates In-House
 - `laravel/Modules/Notify/docs/improved-email-templates.md` — Versione Migliorata: Filament Email Templates In-House
+- `laravel/Modules/Notify/docs/implementation_guide.md` — Guida all'Implementazione dei Template Email
+- `laravel/Modules/Notify/docs/implementazione_pratica.md` — Implementazione Pratica del Modulo Notify
+- `laravel/Modules/Notify/docs/improved_email_templates.md` — Versione Migliorata: Filament Email Templates In-House
 - `laravel/Modules/Notify/docs/improvements-roadmap.md` — Notify Module - Improvements Roadmap
 - `laravel/Modules/Notify/docs/improvements.md` — Notify Module - Improvements Roadmap
 - `laravel/Modules/Notify/docs/inbound-keting-strategy.md` — Strategia Inbound Marketing - TechPlanner
@@ -4289,6 +4361,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/implementazione-pratica.md` — Implementazione Pratica del Modulo Notify
 - `laravel/Modules/Notify/docs/improved-email-templates.md` — Versione Migliorata: Filament Email Templates In-House
 - `laravel/Modules/Notify/docs/improved-email-templates.md` — Versione Migliorata: Filament Email Templates In-House
+- `laravel/Modules/Notify/docs/implementazione_pratica.md` — Implementazione Pratica del Modulo Notify
+- `laravel/Modules/Notify/docs/improved_email_templates.md` — Versione Migliorata: Filament Email Templates In-House
 - `laravel/Modules/Notify/docs/improvements-roadmap.md` — Notify Module - Improvements Roadmap
 - `laravel/Modules/Notify/docs/improvements.md` — Notify Module - Improvements Roadmap
 - `laravel/Modules/Notify/docs/inbound-keting-strategy.md` — Strategia Inbound Marketing - TechPlanner
@@ -4297,6 +4371,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/index.md` — Notify Module Documentation
 - `laravel/Modules/Notify/docs/inheritance-conventions.md` — Convenzioni di Ereditarietà
 - `laravel/Modules/Notify/docs/inheritance-conventions.md` — Convenzioni di Ereditarietà
+- `laravel/Modules/Notify/docs/inheritance_conventions.md` — Convenzioni di Ereditarietà
 - `laravel/Modules/Notify/docs/inheritance-conventions.md` — Convenzioni di Ereditarietà
 - `laravel/Modules/Notify/docs/integrations/README.md` — Integrazioni
 - `laravel/Modules/Notify/docs/integrations/readme.md` — Integrazioni
@@ -4357,6 +4432,10 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/mail-templates/filament_slug_generation.md` — Generazione di Slug in Filament
 - `laravel/Modules/Notify/docs/mail-templates/filament-slug-generation.md` — Generazione di Slug in Filament
 - `laravel/Modules/Notify/docs/mail-templates/filament_ui_enhancements.md` — Miglioramenti UI/UX per MailTemplateResource
+- `laravel/Modules/Notify/docs/mail-templates/email_templates_best_practices.md` — Best Practices per Template Email
+- `laravel/Modules/Notify/docs/mail-templates/email_templates_update.md` — Email Templates Update Guide
+- `laravel/Modules/Notify/docs/mail-templates/filament-slug-generation-1.md` — Generazione di Slug in Filament
+- `laravel/Modules/Notify/docs/mail-templates/filament-ui-enhancements-1.md` — Miglioramenti UI/UX per MailTemplateResource
 - `laravel/Modules/Notify/docs/mail-templates/filament-ui-enhancements.md` — Miglioramenti UI/UX per MailTemplateResource
 - `laravel/Modules/Notify/docs/mail-templates/filament_slug_generation.md` — Generazione di Slug in Filament
 - `laravel/Modules/Notify/docs/mail-templates/filament_ui_enhancements.md` — Miglioramenti UI/UX per MailTemplateResource
@@ -4393,6 +4472,10 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/mail-templates/model-mail-template-changes.md` — Modifiche Tecniche al Modello MailTemplate
 - `laravel/Modules/Notify/docs/mail-templates/model-slug-implementation.md` — Implementazione del Campo `slug` nel Modello MailTemplate
 - `laravel/Modules/Notify/docs/mail-templates/model-mail-template-changes.md` — Modifiche Tecniche al Modello MailTemplate
+- `laravel/Modules/Notify/docs/mail-templates/layout_structure.md` — Struttura Layout Email
+- `laravel/Modules/Notify/docs/mail-templates/mailpace_templates_analysis.md` — Analisi Mailpace Templates
+- `laravel/Modules/Notify/docs/mail-templates/migration_json_conversion.md` — Gestione Conversioni JSON nelle Migrazioni
+- `laravel/Modules/Notify/docs/mail-templates/model_mail_template_changes.md` — Modifiche Tecniche al Modello MailTemplate
 - `laravel/Modules/Notify/docs/mail-templates/model_slug_implementation.md` — Implementazione del Campo `slug` nel Modello MailTemplate
 - `laravel/Modules/Notify/docs/mail-templates/params-badges-feature.md` — Visualizzazione Parametri come Badge - Mail Templates
 - `laravel/Modules/Notify/docs/mail-templates/resource-slug-implementation.md` — Implementazione del Campo `slug` in MailTemplateResource
@@ -4404,6 +4487,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/mail-templates/spatie-database-mail-templates.md` — Spatie Laravel Database Mail Templates
 - `laravel/Modules/Notify/docs/mail-templates/spatie-mail-templates-structure.md` — Spatie Mail Templates: Struttura Corretta
 - `laravel/Modules/Notify/docs/mail-templates/spatie-mail-templates-structure.md` — Spatie Mail Templates: Struttura Corretta
+- `laravel/Modules/Notify/docs/mail-templates/spatie_mail_templates_structure.md` — Spatie Mail Templates: Struttura Corretta
 - `laravel/Modules/Notify/docs/mail-templates/spatie-mail-templates-structure.md` — Spatie Mail Templates: Struttura Corretta
 - `laravel/Modules/Notify/docs/mail-templates/st-slug-generation.md` — Generazione Intelligente di Slug in Filament
 - `laravel/Modules/Notify/docs/mail-templates/template-content-examples.md` — Esempi di Contenuto per Template Email
@@ -4413,6 +4497,9 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/mail-templates/template_content_more_examples.md` — Esempi Aggiuntivi di Contenuto per Template Email
 - `laravel/Modules/Notify/docs/mail-templates/template-examples.md` — Esempi di Template Email
 - `laravel/Modules/Notify/docs/mail-templates/title_with_slug_analysis.md` — Analisi del Pacchetto Filament Title With Slug
+- `laravel/Modules/Notify/docs/mail-templates/template_content_examples.md` — Esempi di Contenuto per Template Email
+- `laravel/Modules/Notify/docs/mail-templates/template_examples.md` — Esempi di Template Email
+- `laravel/Modules/Notify/docs/mail-templates/title-with-slug-analysis-1.md` — Analisi del Pacchetto Filament Title With Slug
 - `laravel/Modules/Notify/docs/mail-templates/title-with-slug-analysis.md` — Analisi del Pacchetto Filament Title With Slug
 - `laravel/Modules/Notify/docs/mail-templates/title-with-slug-component.md` — Analisi del Componente TitleWithSlugInput per Filament
 - `laravel/Modules/Notify/docs/mail-templates/title_with_slug_analysis.md` — Analisi del Pacchetto Filament Title With Slug
@@ -4440,6 +4527,10 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/mail_template_ui_improvements.md` — Miglioramenti UI/UX per MailTemplateResource
 - `laravel/Modules/Notify/docs/mail-templates.md` — Mail Templates in Notify Module
 - `laravel/Modules/Notify/docs/architecture/mail-templates-structure.md` — Struttura Template Email
+- `laravel/Modules/Notify/docs/mail_layouts.md` — Layout delle Email
+- `laravel/Modules/Notify/docs/mail_template_model_changes.md` — Modifiche al Modello MailTemplate
+- `laravel/Modules/Notify/docs/mail_templates.md` — Mail Templates in Notify Module
+- `laravel/Modules/Notify/docs/mail_templates_structure.md` — Struttura Template Email
 - `laravel/Modules/Notify/docs/maintenance.md` — Manutenzione del Modulo Notify
 - `laravel/Modules/Notify/docs/markdown-linking-conventions-1.md` — Convenzioni per i Collegamenti nei File Markdown
 - `laravel/Modules/Notify/docs/markdown-linking-conventions.md` — Convenzioni per i Collegamenti nei File Markdown
@@ -4447,6 +4538,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/mcp-configuration.md` — MCP Server Configuration - Notify Module
 - `laravel/Modules/Notify/docs/mcp-server-recommended.md` — MCP Server Consigliati per il Modulo Notify
 - `laravel/Modules/Notify/docs/mcp-server-recommended.md` — MCP Server Consigliati per il Modulo Notify
+- `laravel/Modules/Notify/docs/mcp_server_recommended.md` — MCP Server Consigliati per il Modulo Notify
 - `laravel/Modules/Notify/docs/mcp-server-recommended.md` — MCP Server Consigliati per il Modulo Notify
 - `laravel/Modules/Notify/docs/messaging/sms.md` — SMS Integration
 - `laravel/Modules/Notify/docs/messaging/telegram.md` — Telegram Bot Integration
@@ -4460,11 +4552,13 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/migration.md` — Regole per le Migrazioni nel Modulo Notify
 - `laravel/Modules/Notify/docs/migration_changes.md` — Modifiche alla Migrazione Mail Templates
 - `laravel/Modules/Notify/docs/migration-rules.md` — Regole per le Migrazioni nel Modulo Notify
+- `laravel/Modules/Notify/docs/migration_rules.md` — Regole per le Migrazioni nel Modulo Notify
 - `laravel/Modules/Notify/docs/migration-rules.md` — Regole per le Migrazioni nel Modulo Notify
 - `laravel/Modules/Notify/docs/migrations-changelog.md` — Changelog Migrazioni Notify Module
 - `laravel/Modules/Notify/docs/migrations.md` — Database Migrations
 - `laravel/Modules/Notify/docs/migrations_changelog.md` — Changelog Migrazioni Notify Module
 - `laravel/Modules/Notify/docs/migrazione-filament.md` — Notify Module - Migrazione a Filament 5
+- `laravel/Modules/Notify/docs/migrazione-filament-4.md` — Notify Module - Migrazione a Filament 5
 - `laravel/Modules/Notify/docs/missing-features-analysis.md` — Analisi Funzionalità Mancanti - Modulo Notify
 - `laravel/Modules/Notify/docs/missing-features.md` — Analisi Funzionalità Mancanti - Modulo Notify
 - `laravel/Modules/Notify/docs/model-changes.md` — Modifiche al Modello MailTemplate
@@ -4493,6 +4587,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/namespace.md` — Regole Namespace PSR-4 per il Modulo Notify
 - `laravel/Modules/Notify/docs/namespace_rules.md` — Regole Namespace PSR-4 per il Modulo Notify
 - `laravel/Modules/Notify/docs/bmad/architecture/naming-conventions.md` — Convenzioni di Naming
+- `laravel/Modules/Notify/docs/naming-conventions-1.md` — Convenzioni di Naming
 - `laravel/Modules/Notify/docs/naming-conventions.md` — Convenzioni di Naming
 - `laravel/Modules/Notify/docs/naming_conventions.md` — Convenzioni di Naming
 - `laravel/Modules/Notify/docs/nested-resources.md` — Notify Module - Nested Resource Implementation Guide
@@ -4529,6 +4624,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/notification-behavior.md` — Notification System Behavior
 - `laravel/Modules/Notify/docs/notification_channels_implementation.md` — Implementazione dei Canali di Notifica
 - `laravel/Modules/Notify/docs/notification-errors.md` — Errori Comuni nelle Notifiche
+- `laravel/Modules/Notify/docs/notification_behavior.md` — Notification System Behavior
+- `laravel/Modules/Notify/docs/notification_errors.md` — Errori Comuni nelle Notifiche
 - `laravel/Modules/Notify/docs/notification_providers_guide.md` — Guida Completa ai Provider di Notifiche
 - `laravel/Modules/Notify/docs/notification_templates.md` — Template delle Notifiche
 - `laravel/Modules/Notify/docs/notifications/README.md` — Notifiche
@@ -4544,6 +4641,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/notifications/multi_channel_notifications.md` — Implementazione di Notifiche Multi-Canale
 - `laravel/Modules/Notify/docs/notifications/netfun-sms-implementation.md` — Implementazione Netfun SMS
 - `laravel/Modules/Notify/docs/notifications/archive/netfun-sms-implementation.md` — Implementazione Netfun SMS
+- `laravel/Modules/Notify/docs/notifications/netfun_sms_implementation.md` — Implementazione Netfun SMS
 - `laravel/Modules/Notify/docs/notifications/notifications-implementation-guide.md` — Guida all'Implementazione delle Notifiche
 - `laravel/Modules/Notify/docs/notifications/notifications_implementation_guide.md` — Guida all'Implementazione delle Notifiche
 - `laravel/Modules/Notify/docs/notifications/readme.md` — Notifiche
@@ -4568,6 +4666,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/optimization-recommendations.md` — Raccomandazioni di Ottimizzazione - Modulo Notify
 - `laravel/Modules/Notify/docs/optimization.md` — Analisi di Ottimizzazione - Modulo Notify
 - `laravel/Modules/Notify/docs/archive/historical/optimization-analysis.md` — notify module documentation optimization analysis
+- `laravel/Modules/Notify/docs/optimization_analysis.md` — notify module documentation optimization analysis
 - `laravel/Modules/Notify/docs/optimization_recommendations.md` — Raccomandazioni di Ottimizzazione - Modulo Notify
 - `laravel/Modules/Notify/docs/ottimizzazioni-correzioni.md` — Notify Module - Ottimizzazioni e Correzioni
 - `laravel/Modules/Notify/docs/packages.md` — Pacchetti del Modulo Notify
@@ -4584,6 +4683,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/path_conventions.md` — Convenzioni sui Percorsi
 - `laravel/Modules/Notify/docs/performance-optimization.md` — Analisi e Ottimizzazione delle Performance
 - `laravel/Modules/Notify/docs/archive/historical/performance-optimization.md` — Analisi e Ottimizzazione delle Performance
+- `laravel/Modules/Notify/docs/path_and_interface_rules.md` — Regole di Percorso e Interfacce nel Modulo Notify
+- `laravel/Modules/Notify/docs/performance_optimization.md` — Analisi e Ottimizzazione delle Performance
 - `laravel/Modules/Notify/docs/philosophy.md` — Filosofia del Modulo Notify
 - `laravel/Modules/Notify/docs/phpstan-compliance-status.md` — PHPStan Level 10 Compliance Status
 - `laravel/Modules/Notify/docs/phpstan-compliance.md` — PHPStan Compliance - Notify Module
@@ -4599,6 +4700,9 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/phpstan-fixes-critical.md` — Correzioni PHPStan Critiche - Modulo Notify
 - `laravel/Modules/Notify/docs/phpstan-fixes-gennaio.md` — 🔧 PHPStan Fixes - Modulo Notify - Gennaio 2025
 - `laravel/Modules/Notify/docs/phpstan-fixes-gennaio.md` — 🔧 PHPStan Fixes - Modulo Notify - Gennaio 2025
+- `laravel/Modules/Notify/docs/phpstan-fixes-.md` — PHPStan Errori Modulo Notify - 2025-01-22
+- `laravel/Modules/Notify/docs/phpstan-fixes-gennaio-.md` — 🔧 PHPStan Fixes - Modulo Notify - Gennaio 2025
+- `laravel/Modules/Notify/docs/phpstan-fixes-gennaio-2025.md` — 🔧 PHPStan Fixes - Modulo Notify - Gennaio 2025
 - `laravel/Modules/Notify/docs/phpstan-fixes-early-cycle.md` — 🔧 PHPStan Fixes - Modulo Notify - Gennaio 2025
 - `laravel/Modules/Notify/docs/phpstan-fixes-implementation-1.md` — Implementazione Correzioni PHPStan - Modulo Notify
 - `laravel/Modules/Notify/docs/phpstan-fixes-implementation.md` — Implementazione Correzioni PHPStan - Modulo Notify
@@ -4611,6 +4715,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/phpstan-level10es.md` — Correzioni PHPStan Livello 10 - Modulo Notify
 - `laravel/Modules/Notify/docs/phpstan-notify-session.md` — phpstan notify session
 - `laravel/Modules/Notify/docs/phpstan-remediation.md` — PHPStan Remediation Plan – Notify (23 Dic 2025)
+- `laravel/Modules/Notify/docs/phpstan-remediation-.md` — PHPStan Remediation Plan – Notify (23 Dic 2025)
 - `laravel/Modules/Notify/docs/phpstan-remediation.md` — PHPStan Remediation Plan – Notify (23 Dic 2025)
 - `laravel/Modules/Notify/docs/phpstan-resolution.md` — Risoluzione conflitto SmsService.php
 - `laravel/Modules/Notify/docs/phpstan-roadmap.md` — PHPStan Roadmap - Notify Module
@@ -4624,6 +4729,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/phpstan_fixes_critical.md` — Correzioni PHPStan Critiche - Modulo Notify
 - `laravel/Modules/Notify/docs/phpstan_fixes_implementation.md` — Implementazione Correzioni PHPStan - Modulo Notify
 - `laravel/Modules/Notify/docs/archive/historical/phpstan-level10-fixes.md` — PHPStan Level 10 Fixes - Notify Module
+- `laravel/Modules/Notify/docs/phpstan_fixes.md` — PHPStan Fixes - Modulo Notify
+- `laravel/Modules/Notify/docs/phpstan_level10_fixes.md` — PHPStan Level 10 Fixes - Notify Module
 - `laravel/Modules/Notify/docs/phpstan_usage.md` — Utilizzo di PHPStan nel Progetto <nome progetto>
 - `laravel/Modules/Notify/docs/phpstan_usage_root_symlink.md` — phpstan_usage_root_symlink
 - `laravel/Modules/Notify/docs/phpstanes-critical.md` — Correzioni PHPStan Critiche - Modulo Notify
@@ -4635,6 +4742,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/provider-actions-architecture-1.md` — Architettura delle Azioni dei Provider in Notify
 - `laravel/Modules/Notify/docs/provider-actions-architecture.md` — Architettura delle Azioni dei Provider in Notify
 - `laravel/Modules/Notify/docs/bmad/architecture/provider-contracts-naming.md` — Convenzioni di Naming per i Contracts
+- `laravel/Modules/Notify/docs/provider-contracts-naming-1.md` — Convenzioni di Naming per i Contracts
 - `laravel/Modules/Notify/docs/provider-contracts-naming.md` — Convenzioni di Naming per i Contracts
 - `laravel/Modules/Notify/docs/provider_actions_architecture.md` — Architettura delle Azioni dei Provider in Notify
 - `laravel/Modules/Notify/docs/provider_contracts_naming.md` — Convenzioni di Naming per i Contracts
@@ -4649,6 +4757,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/queueable-actions.md` — Queueable Actions con Spatie in Notify
 - `laravel/Modules/Notify/docs/queueable-action.md` — Spatie Laravel Queueable Action
 - `laravel/Modules/Notify/docs/queueable-actions.md` — Queueable Actions con Spatie in Notify
+- `laravel/Modules/Notify/docs/queueable_action.md` — Spatie Laravel Queueable Action
+- `laravel/Modules/Notify/docs/queueable_actions.md` — Queueable Actions con Spatie in Notify
 - `laravel/Modules/Notify/docs/queueable-action.md` — Spatie Laravel Queueable Action
 - `laravel/Modules/Notify/docs/queueable-actions.md` — Queueable Actions con Spatie in Notify
 - `laravel/Modules/Notify/docs/readme.md` — 🔔 **Notify Module** - Sistema Avanzato di Comunicazione
@@ -4686,6 +4796,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/reusabilitylines.md` — Linee Guida per la Riusabilità del Modulo Notify
 - `laravel/Modules/Notify/docs/reusable-form-components.md` — Reusable Form Components
 - `laravel/Modules/Notify/docs/roadmap.md` — Notify Module Roadmap 2026
+- `laravel/Modules/Notify/docs/roadmap-.md` — Notify Module Roadmap 2026
 - `laravel/Modules/Notify/docs/roadmap-1.md` — 🔔 NOTIFY MODULE - ROADMAP 2025
 - `laravel/Modules/Notify/docs/notify-module-roadmap.md` — 🔔 NOTIFY MODULE - ROADMAP 2025
 - `laravel/Modules/Notify/docs/roadmap-and-issues.md` — Notify Module - Roadmap, Issues & Optimization
@@ -4709,6 +4820,9 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/security-analysis.md` — Analisi della Sicurezza
 - `laravel/Modules/Notify/docs/security.md` — Analisi della Sicurezza
 - `laravel/Modules/Notify/docs/security-analysis.md` — Analisi della Sicurezza
+- `laravel/Modules/Notify/docs/seasonal_email_templates_report.md` — Seasonal Email Templates Implementation Report
+- `laravel/Modules/Notify/docs/seasonal_email_zen.md` — The Zen of Seasonal Emails
+- `laravel/Modules/Notify/docs/security_analysis.md` — Analisi della Sicurezza
 - `laravel/Modules/Notify/docs/send-email-fix.md` — Guida alla Correzione di SendEmail.php
 - `laravel/Modules/Notify/docs/send-email-translation-fix-1.md` — Fix Traduzioni File send_email.php - Modulo Notify
 - `laravel/Modules/Notify/docs/send-email-translation-fix.md` — Fix Traduzioni File send_email.php - Modulo Notify
@@ -4725,6 +4839,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/send_email_translation_improvement.md` — Miglioramento File Traduzione send_email.php
 - `laravel/Modules/Notify/docs/sendemail-troubleshooting.md` — Troubleshooting SendEmail
 - `laravel/Modules/Notify/docs/sendemail-troubleshooting.md` — Troubleshooting SendEmail
+- `laravel/Modules/Notify/docs/send_email_fix.md` — Guida alla Correzione di SendEmail.php
+- `laravel/Modules/Notify/docs/sendemail_troubleshooting.md` — Troubleshooting SendEmail
 - `laravel/Modules/Notify/docs/sendemail-troubleshooting.md` — Troubleshooting SendEmail
 - `laravel/Modules/Notify/docs/service-provider-xotbase.md` — XotBaseServiceProvider: Analisi, Regole e Best Practice
 - `laravel/Modules/Notify/docs/service-provider.md` — Service Provider del Modulo Notify
@@ -4735,6 +4851,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/slug-solutions-analysis.md` — Analisi Soluzioni per Slug in Filament
 - `laravel/Modules/Notify/docs/slug-solutions.md` — Analisi Soluzioni per Slug in Filament
 - `laravel/Modules/Notify/docs/slug-solutions-analysis.md` — Analisi Soluzioni per Slug in Filament
+- `laravel/Modules/Notify/docs/slug_solutions_analysis.md` — Analisi Soluzioni per Slug in Filament
 - `laravel/Modules/Notify/docs/slug-solutions-analysis.md` — Analisi Soluzioni per Slug in Filament
 - `laravel/Modules/Notify/docs/sms/drivers/smsfactor/data-class.md` — SmsFactorData Class Documentation
 - `laravel/Modules/Notify/docs/sms-action-factory-analysis.md` — Analisi: Sostituzione Match con Formula nel SmsActionFactory
@@ -4764,6 +4881,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/sms-provider-architecture.md` — Architettura dei Provider SMS
 - `laravel/Modules/Notify/docs/sms-provider-configuration-1.md` — Deprecated
 - `laravel/Modules/Notify/docs/sms-provider-configuration-best-practices.md` — Best Practices per la Configurazione dei Provider SMS
+- `laravel/Modules/Notify/docs/sms-provider-configuration-best-practices-1.md` — Best Practices per la Configurazione dei Provider SMS
 - `laravel/Modules/Notify/docs/sms-provider-configuration-best-practices.md` — Best Practices per la Configurazione dei Provider SMS
 - `laravel/Modules/Notify/docs/sms-provider-configuration.md` — Configurazione Corretta dei Provider SMS
 - `laravel/Modules/Notify/docs/sms-troubleshooting-1.md` — Troubleshooting SMS
@@ -4794,6 +4912,14 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/sms_implementation.md` — Implementazione SMS in Laravel
 - `laravel/Modules/Notify/docs/sms_netfun_channel.md` — Integrazione Netfun SMS Channel in Laravel
 - `laravel/Modules/Notify/docs/sms-provider-architecture.md` — Architettura dei Provider SMS
+- `laravel/Modules/Notify/docs/sms_action_factory_analysis.md` — Analisi: Sostituzione Match con Formula nel SmsActionFactory
+- `laravel/Modules/Notify/docs/sms_action_factory_resolution.md` — Risoluzione dinamica vs match esplicito in SmsActionFactory
+- `laravel/Modules/Notify/docs/sms_best_practices.md` — Best Practices per l'Invio SMS
+- `laravel/Modules/Notify/docs/sms_channel_action_resolution.md` — Dove posizionare la logica di risoluzione dell'action SMS?
+- `laravel/Modules/Notify/docs/sms_driver_selection_analysis.md` — Analisi: Spostamento Logica Selezione Driver in SmsData
+- `laravel/Modules/Notify/docs/sms_driver_selection_specific_analysis.md` — Analisi Specifica: Validazione e Selezione Driver in SmsData
+- `laravel/Modules/Notify/docs/sms_factor_data_implementation.md` — SmsFactorData Implementation Summary
+- `laravel/Modules/Notify/docs/sms_provider_architecture.md` — Architettura dei Provider SMS
 - `laravel/Modules/Notify/docs/sms-provider-architecture.md` — Architettura dei Provider SMS
 - `laravel/Modules/Notify/docs/sms_provider_configuration.md` — Configurazione Corretta dei Provider SMS
 - `laravel/Modules/Notify/docs/sms_provider_configuration_best_practices.md` — Best Practices per la Configurazione dei Provider SMS
@@ -4804,6 +4930,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/smtp-testing-analysis.md` — Analisi del Sistema di Test SMTP
 - `laravel/Modules/Notify/docs/smtp-testing.md` — Analisi del Sistema di Test SMTP
 - `laravel/Modules/Notify/docs/smtp-testing-analysis.md` — Analisi del Sistema di Test SMTP
+- `laravel/Modules/Notify/docs/smtp_testing_analysis.md` — Analisi del Sistema di Test SMTP
 - `laravel/Modules/Notify/docs/smtp-testing-analysis.md` — Analisi del Sistema di Test SMTP
 - `laravel/Modules/Notify/docs/spatie-database-mail-templates-deep-dive.md` — Spatie Laravel Database Mail Templates - Analisi Approfondita
 - `laravel/Modules/Notify/docs/spatie-database-mail-templates.md` — Integrazione con Spatie Laravel Database Mail Templates
@@ -4815,6 +4942,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/spatie-translatable-integration.md` — Integrazione Spatie Translatable nel Modulo Notify
 - `laravel/Modules/Notify/docs/spatie-database-mail-templates.md` — Integrazione con Spatie Laravel Database Mail Templates
 - `laravel/Modules/Notify/docs/spatie-email-slug-proposal.md` — Proposta: Aggiunta Slug a SpatieEmail e MailTemplate
+- `laravel/Modules/Notify/docs/spatie_database_mail_templates.md` — Integrazione con Spatie Laravel Database Mail Templates
+- `laravel/Modules/Notify/docs/spatie_email_slug_proposal.md` — Proposta: Aggiunta Slug a SpatieEmail e MailTemplate
 - `laravel/Modules/Notify/docs/spatie_email_usage_guide.md` — Guida all'utilizzo di SpatieEmail
 - `laravel/Modules/Notify/docs/spatie-database-mail-templates.md` — Integrazione con Spatie Laravel Database Mail Templates
 - `laravel/Modules/Notify/docs/spatie-email-slug-proposal.md` — Proposta: Aggiunta Slug a SpatieEmail e MailTemplate
@@ -4844,6 +4973,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/tailwind_best_practices.md` — Best Practices Implementazione Tailwind CSS nel Modulo Notify
 - `laravel/Modules/Notify/docs/tailwind_blade_components.md` — Esempi Pratici: Blade Components Tailwind per <nome progetto>
 - `laravel/Modules/Notify/docs/tailwind-css-webcrunch.md` — Tailwind CSS: Approfondimento Collezione Webcrunch
+- `laravel/Modules/Notify/docs/tailwind_css_webcrunch.md` — Tailwind CSS: Approfondimento Collezione Webcrunch
 - `laravel/Modules/Notify/docs/tailwind-css-webcrunch.md` — Tailwind CSS: Approfondimento Collezione Webcrunch
 - `laravel/Modules/Notify/docs/tailwind_css_webcrunch_approfondimento.md` — Approfondimento Completo: Tailwind CSS su Webcrunch
 - `laravel/Modules/Notify/docs/tailwind_implementation.md` — Implementazione Tailwind CSS nel Modulo Notify
@@ -4862,6 +4992,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/telegram-channel-1.md` — Implementazione Canale Telegram
 - `laravel/Modules/Notify/docs/telegram-channel.md` — Implementazione Canale Telegram
 - `laravel/Modules/Notify/docs/bmad/architecture/telegram-integration.md` — Integrazione Telegram
+- `laravel/Modules/Notify/docs/telegram-integration-1.md` — Integrazione Telegram
 - `laravel/Modules/Notify/docs/telegram-integration.md` — Integrazione Telegram
 - `laravel/Modules/Notify/docs/telegram-provider-architecture-1.md` — Architettura Telegram Provider per <nome progetto>
 - `laravel/Modules/Notify/docs/telegram-provider-architecture.md` — Architettura Telegram Provider per
@@ -4908,11 +5039,13 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/translation-keys-rules.md` — translation-keys-rules
 - `laravel/Modules/Notify/docs/translation-keys.md` — translation-keys
 - `laravel/Modules/Notify/docs/translation-standards.md` — Standard per le Traduzioni
+- `laravel/Modules/Notify/docs/translation-standards-1.md` — Standard per le Traduzioni
 - `laravel/Modules/Notify/docs/translation-standards-progress-1.md` — Progresso Standardizzazione Traduzioni
 - `laravel/Modules/Notify/docs/translation-standards-progress.md` — Progresso Standardizzazione Traduzioni
 - `laravel/Modules/Notify/docs/translation-standards.md` — Standard per le Traduzioni
 - `laravel/Modules/Notify/docs/translation_cleanup_plan.md` — Piano di Pulizia e Standardizzazione delle Traduzioni
 - `laravel/Modules/Notify/docs/archive/historical/translation-conventions.md` — Convenzioni per le Traduzioni del Modulo Notify
+- `laravel/Modules/Notify/docs/translation_conventions.md` — Convenzioni per le Traduzioni del Modulo Notify
 - `laravel/Modules/Notify/docs/translation_conventions_clarification.md` — Chiarimento sulle Convenzioni di Traduzione nel Modulo Notify
 - `laravel/Modules/Notify/docs/translation_file_correction_guide.md` — Guida alla Correzione dei File di Traduzione
 - `laravel/Modules/Notify/docs/translation-file-naming-rules.md` — Regole di Naming per i File di Traduzione
@@ -4921,6 +5054,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/translation-keys-best-practices.md` — Best Practices per le Chiavi di Traduzione
 - `laravel/Modules/Notify/docs/translation-keys-rules.md` — translation_keys_rules
 - `laravel/Modules/Notify/docs/archive/historical/translation-standards.md` — Standard per le Traduzioni
+- `laravel/Modules/Notify/docs/translation_keys_rules.md` — translation_keys_rules
+- `laravel/Modules/Notify/docs/translation_standards.md` — Standard per le Traduzioni
 - `laravel/Modules/Notify/docs/translation_standards_progress.md` — Progresso Standardizzazione Traduzioni
 - `laravel/Modules/Notify/docs/translations-implementation-status-1.md` — Stato dell'Implementazione delle Traduzioni nel Modulo Notify
 - `laravel/Modules/Notify/docs/translations-implementation-status.md` — Stato dell'Implementazione delle Traduzioni nel Modulo Notify
@@ -4929,6 +5064,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/translations.md` — Traduzioni del Modulo Notify
 - `laravel/Modules/Notify/docs/translations_implementation_status.md` — Stato dell'Implementazione delle Traduzioni nel Modulo Notify
 - `laravel/Modules/Notify/docs/translations-structure-template.md` — Template di Struttura per le Traduzioni
+- `laravel/Modules/Notify/docs/translations_structure_template.md` — Template di Struttura per le Traduzioni
 - `laravel/Modules/Notify/docs/translations-structure-template.md` — Template di Struttura per le Traduzioni
 - `laravel/Modules/Notify/docs/troubleshooting.md` — Troubleshooting Notification Issues in Laravel Modules
 - `laravel/Modules/Notify/docs/tutorials.md` — tutorials
@@ -4938,6 +5074,8 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Notify/docs/verification-report.md` — Verification Report - Compliance and XotBase Refactoring
 - `laravel/Modules/Notify/docs/webcrunch-tailwind-collection.md` — Analisi collezione Tailwind CSS (Webcrunch)
 - `laravel/Modules/Notify/docs/webcrunch-tailwind-collection.md` — Analisi collezione Tailwind CSS (Webcrunch)
+- `laravel/Modules/Notify/docs/verification_report.md` — Verification Report - Compliance and XotBase Refactoring
+- `laravel/Modules/Notify/docs/webcrunch_tailwind_collection.md` — Analisi collezione Tailwind CSS (Webcrunch)
 - `laravel/Modules/Notify/docs/whatsapp-channel-1.md` — Implementazione Canale WhatsApp
 - `laravel/Modules/Notify/docs/whatsapp-channel.md` — Implementazione Canale WhatsApp
 - `laravel/Modules/Notify/docs/whatsapp-integration-1.md` — Integrazione WhatsApp
@@ -8543,6 +8681,7 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/Modules/Xot/docs/improvements-sumy.md` — Riepilogo Miglioramenti e Analisi - [DATE]
 - `laravel/Modules/Xot/docs/improvements.md` — Riepilogo Miglioramenti e Analisi - [DATE]
 - `laravel/Modules/Xot/docs/README.md` — 📚 Index of Xot Module Documentation
+- `laravel/Modules/Xot/docs/index.md` — 📚 Index of Xot Module Documentation
 - `laravel/Modules/Xot/docs/infolist-schemalines.md` — Linee Guida per l'Implementazione di getInfolistSchema
 - `laravel/Modules/Xot/docs/inheritance.md` — inheritance
 - `laravel/Modules/Xot/docs/inodes.md` — _inodes
@@ -9900,7 +10039,6 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/docs/troubleshooting.md` — Troubleshooting Guide
 - `laravel/docs/type-contravariance-fixes.md` — Type Contravariance Fixes
 - `laravel/themes/zero/docs/anti-pattern-question-chart-answers-triple-widget.md` — Anti-Pattern: QuestionChartAnswersTripleChartWidget
-=======
 - `.agents/docs/build-and-dev-commands.md`: Build & development commands
 - `.agents/docs/chart-widgets.md`: Chart widgets (Chart.js + Filament v5)
 - `.agents/docs/code-quality-commands.md`: Code quality commands
@@ -19897,4 +20035,3 @@ Indice generato automaticamente da file markdown in cartelle docs (esclusi vendo
 - `laravel/docs/troubleshooting.md`: Troubleshooting Guide
 - `laravel/docs/type-contravariance-fixes.md`: Type Contravariance Fixes
 - `laravel/themes/zero/docs/anti-pattern-question-chart-answers-triple-widget.md`: Anti-Pattern: QuestionChartAnswersTripleChartWidget
->>>>>>> .merge_file_kczJqJ

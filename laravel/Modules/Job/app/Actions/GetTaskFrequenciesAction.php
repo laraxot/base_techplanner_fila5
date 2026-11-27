@@ -7,6 +7,11 @@ namespace Modules\Job\Actions;
 use Exception;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/get-task-frequencies-action.md
+ *
+ * @contract docs/contracts/get-task-frequencies-action.md
+ */
 class GetTaskFrequenciesAction
 {
     use QueueableAction;

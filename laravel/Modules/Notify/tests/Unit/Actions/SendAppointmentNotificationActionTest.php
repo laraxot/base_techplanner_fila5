@@ -33,4 +33,4 @@ test('send appointment notification returns false and logs debug when models are
     );
 
     Assert::assertFalse($result);
-});
+})->group('NOTIFY-APPT-INV-1');

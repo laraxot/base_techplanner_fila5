@@ -208,14 +208,10 @@ Themes/Sixteen/resources/views/
 ### Documentazione
 - [Analisi Visiva](screenshots/homepage/ANALISI-VISIVA.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
-<<<<<<< .merge_file_VTNllA
 - [Fix Plan](docs/screenshots/homepage/fix-plan.md)
-=======
 - [Fix Plan](screenshots/homepage/FIX-PLAN.md)
 - [Analisi Visiva](screenshots/homepage/ANALISI-VISIVA.md)
 - [Screenshot Analysis](docs/screenshots/homepage/SCREENSHOT_analysis.md)
-- [Fix Plan](screenshots/homepage/FIX-PLAN.md)
->>>>>>> .merge_file_Zixt3N
 - [OpenViking Context](.openvikings/homepage_alignment_context.md)
 
 ### Link Esterni

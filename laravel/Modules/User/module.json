@@ -18,8 +18,13 @@
         "Modules\\User\\Providers\\PassportServiceProvider",
         "Modules\\User\\Providers\\SocialiteServiceProvider"
     ],
-    "aliases": {},
+    "migration": {
+        "seeds": [
+            "Modules\\User\\Database\\Seeders\\RoleSeeder"
+        ]
+    },
     "files": [],
+    "aliases": {},
     "requires": [
         "Xot",
         "UI"

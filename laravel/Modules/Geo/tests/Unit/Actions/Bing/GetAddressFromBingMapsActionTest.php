@@ -27,12 +27,16 @@ it('throws exception for invalid latitude range', function (): void {
     config(['services.bing.maps_api_key' => 'test_key']);
 
     Http::fake();
-
     try {
         (new GetAddressFromBingMapsAction)->execute(91.0, 9.1900);
         Assert::fail('Expected InvalidLocationException was not thrown');
     } catch (InvalidLocationException $exception) {
-        Assert::assertStringStartsWith('Coordinate non valide', $exception->getMessage());
+        // Il `catch` era vuoto, quindi il test non registrava nessuna
+        // asserzione e PHPUnit lo segnalava come «risky»: passava per il solo
+        // fatto di non essere arrivato all'`Assert::fail`. Il messaggio
+        // dell'eccezione e' l'unica cosa che l'operatore legge, e deve dire
+        // **quale** coordinata e' sbagliata (base_quaeris_fila5#241).
+        Assert::assertStringContainsString('91', $exception->getMessage());
     }
     // Coordinate fuori range: nessuna chiamata a Bing.
     Http::assertNothingSent();
@@ -42,12 +46,13 @@ it('throws exception for invalid longitude range', function (): void {
     config(['services.bing.maps_api_key' => 'test_key']);
 
     Http::fake();
-
+    $action = new GetAddressFromBingMapsAction;
     try {
-        (new GetAddressFromBingMapsAction)->execute(45.0, 181.0);
+        $action->execute(45.0, 181.0);
         Assert::fail('Expected InvalidLocationException was not thrown');
     } catch (InvalidLocationException $exception) {
-        Assert::assertStringStartsWith('Coordinate non valide', $exception->getMessage());
+        // Vedi il test gemello: un `catch` vuoto non asserisce niente.
+        Assert::assertStringContainsString('181', $exception->getMessage());
     }
     // Coordinate fuori range: nessuna chiamata a Bing.
     Http::assertNothingSent();

@@ -3636,14 +3636,11 @@ Vedi: [Actions Calling Actions Pattern](./actions-calling-actions-pattern.md)
 - [RecordNotification Class](../../app/Notifications/RecordNotification.php)
 - [App Client Management](../App/docs/README.md#client-management)
 - [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
-<<<<<<< .merge_file_VnxtBj
 - [Geo Module Reusable Components Philosophy](../geo/docs/reusable-components-philosophy.md)
-=======
 - [Geo Module Reusable Components Philosophy](../../ai-agents/guidelines/reusable-components-philosophy.md)
 Vedi: [Actions Calling Actions Pattern](../../actions-calling-actions-pattern.md)
 
 ## Backlink e Collegamenti
-
 - [Actions Calling Actions Pattern](../../actions-calling-actions-pattern.md) - Pattern per Actions che chiamano altre Actions
 - [Notification System Architecture](../../notification-implementation.md)
 - [MailTemplate Model](./models.md#mailtemplate)
@@ -3651,7 +3648,6 @@ Vedi: [Actions Calling Actions Pattern](../../actions-calling-actions-pattern.md
 - [App Client Management](../App/docs/README.md#client-management)
 - [TechPlanner Client Management](../TechPlanner/docs/README.md#client-management)
 - [Geo Module Reusable Components Philosophy](../../../../Geo/docs/reusable-components-philosophy.md)
->>>>>>> .merge_file_7TnOTx
 - [Xot Filament Class Extension Rules](../xot/docs/filament-class-extension-rules.md)
 
 ---

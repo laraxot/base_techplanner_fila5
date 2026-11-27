@@ -9,6 +9,13 @@ use Spatie\QueueableAction\QueueableAction;
 use Symfony\Component\HtmlSanitizer\HtmlSanitizer;
 use Symfony\Component\HtmlSanitizer\HtmlSanitizerConfig;
 
+/**
+ * Sanifica l'HTML di un commento (difesa XSS).
+ *
+ * @see docs/contracts/sanitize-comment-html-action.md
+ *
+ * @contract docs/contracts/sanitize-comment-html-action.md
+ */
 class SanitizeCommentHtmlAction
 {
     use QueueableAction;

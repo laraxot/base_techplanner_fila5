@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\File;
 use ReflectionClass;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Icone SVG di tutti i set blade-icons registrati, lette dal filesystem.
+ *
+ * @see docs/contracts/get-all-icons-action.md
+ *
+ * @contract docs/contracts/get-all-icons-action.md
+ */
 class GetAllIconsAction
 {
     use QueueableAction;

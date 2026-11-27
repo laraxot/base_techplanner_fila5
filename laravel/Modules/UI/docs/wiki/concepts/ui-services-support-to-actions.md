@@ -4,13 +4,15 @@ type: concept
 module: UI
 tags: [ui, actions, adapters, queueable-action, migration]
 created: 2026-07-13
-updated: 2026-07-13
+updated: 2026-11-23
 qmd: "UI module services support converted to actions adapters queueable action"
 issues: []
 discussions: []
 related:
   - ../../Xot/docs/wiki/concepts/queueable-action-trait-mandatory.md
   - ../../Xot/docs/wiki/concepts/no-app-support-queueable-actions.md
+  - ../../stories/ui-services-to-actions.story.md
+  - ../../stories/services-to-actions-ui.story.md
 ---
 
 # UI Services/Support → Actions/Adapters mapping
@@ -18,6 +20,15 @@ related:
 ## Riepilogo conversione
 
 Tutti i file in `app/Services/` e `app/Support/` del modulo UI sono stati convertiti o rimossi.
+## Boy scout 2026-11-23
+
+I cinque `app/Services/*.php` sono riapparsi da merge: ridotti a stub `@deprecated`
+SUPERSEDED (no-delete senza auth). Zero caller, zero binding. Canonici invariati:
+`Xot\Actions\File\AssetAction`, `Adapters/Map/Null*ServiceAdapter`.
+
+## Riepilogo conversione
+
+Logica migrata ad Actions/Adapters; i file `app/Services/` possono restare stub SUPERSEDED.
 
 Revisione 2026-07-13 (reconciliation pass): gli stub `ComponentAction`, `ThemeAction` e
 `UIAction` creati dalla prima migrazione sono stati **eliminati**, non mantenuti. Motivo:

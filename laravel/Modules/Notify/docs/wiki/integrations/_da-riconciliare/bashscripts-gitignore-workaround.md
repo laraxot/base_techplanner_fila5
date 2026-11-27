@@ -171,12 +171,8 @@ gh run list --repo laraxot/<nome repitory>
 
 ## 📚 Related Documentation
 
-<<<<<<< .merge_file_yCqBXv
 - [Multi-Agent Collaboration Guide](multi-agent-collaboration-guide.md)
-=======
 - [Multi-Agent Collaboration Guide](../../../multi-agent-collaboration-guide.md)
-- [Multi-Agent Collaboration Guide](../../../multi-agent-collaboration-guide.md)
->>>>>>> .merge_file_rNKgQv
 - [GitHub Sync Rule](github-sync-rule.md)
 - [AI Rules](../.qwen/ai-rules-critical.md)
 

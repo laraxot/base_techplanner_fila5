@@ -31,7 +31,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
         Assert::assertSame('Every Minute', $result['everyMinute']);
         Assert::assertSame('Hourly', $result['hourly']);
         Assert::assertSame('Daily', $result['daily']);
-    });
+    })->group('JOB-FREQ-INV-1');
 
     it('throws exception when config is not array', function () {
         /** @var TestCase $this */
@@ -39,7 +39,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
         $this->expectApplicationException(Exception::class);
         $action = $this->getAction(GetTaskFrequenciesAction::class);
         $action->execute();
-    });
+    })->group('JOB-FREQ-INV-2');
 
     it('throws exception when config is null', function () {
         /** @var TestCase $this */
@@ -47,7 +47,7 @@ describe('GetTaskFrequenciesAction Integration', function () {
         $this->expectApplicationException(Exception::class);
         $action = $this->getAction(GetTaskFrequenciesAction::class);
         $action->execute();
-    });
+    })->group('JOB-FREQ-INV-2');
 
     it('handles empty array config', function () {
         /** @var TestCase $this */

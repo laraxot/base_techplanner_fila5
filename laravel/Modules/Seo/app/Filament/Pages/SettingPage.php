@@ -19,7 +19,7 @@ use Modules\Xot\Filament\Pages\BaseSettingPage;
 class SettingPage extends BaseSettingPage
 {
     /**
-     * @see Modules/Seo/docs/adr/search-engine-presence.md (indexnow_key)
+     * @see Modules/Seo/docs/adr/0002-search-engine-presence.md (indexnow_key)
      *
      * @return array<string, Repeater|TextInput>
      */

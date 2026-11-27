@@ -37,7 +37,7 @@ trait InteractsWithComments
         $profile = $this->getRelationValue('profile');
         $avatar = $profile instanceof ProfileContract ? $profile->getAvatarUrl() : ($this->{$avatarField} ?? null);
         $avatarUrl = is_string($avatar) && $avatar !== '' ? $avatar : '';
-        // comments.gravatar.enabled = false (es. un portale della PA, ADR docs/adr/gravatar-switch.md): niente terzi, le viste mostrano le iniziali.
+        // comments.gravatar.enabled = false (es. un portale della PA, ADR docs/adr/0002-gravatar-switch.md): niente terzi, le viste mostrano le iniziali.
         if ($avatarUrl === '' && $email !== '' && $config->gravatarEnabled()) {
             $avatarUrl = app(ResolveGravatarUrlAction::class)->execute($email);
         }

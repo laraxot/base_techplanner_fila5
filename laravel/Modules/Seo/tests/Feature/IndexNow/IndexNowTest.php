@@ -27,7 +27,7 @@ uses(TestCase::class);
 /*
  * IndexNow: file di verifica e invio delle URL. Contratto: Modules/Seo/docs/contracts/submit-index-now-action.md
  *
- * @see Modules/Seo/docs/adr/search-engine-presence.md
+ * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
  */
 
 const INDEXNOW_TEST_KEY = 'a1b2c3d4e5f60718293a4b5c6d7e8f90';
@@ -133,7 +133,7 @@ it('resends a sitemap url only when its lastmod is newer than its last submissio
     $before = $pending('2026-02-01T00:00:00+00:00');
     $after = $pending('2026-04-01T00:00:00+00:00');
     Assert::assertSame(4, $before - $after);
-});
+})->group('SEO-SITEMAP-INV-4');
 
 it('does nothing when IndexNow is off', function (): void {
     FakeTenantSeoConfig::bind([]);

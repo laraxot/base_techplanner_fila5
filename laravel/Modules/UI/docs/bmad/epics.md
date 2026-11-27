@@ -1,9 +1,6 @@
 ---
-<<<<<<< .merge_file_mOW5yd
 bmad_status: active
 scope: ui-docs
-=======
->>>>>>> .merge_file_4A5Cdk
 title: "Epic e story — UI"
 type: epics
 status: review

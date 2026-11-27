@@ -58,7 +58,7 @@ test('netfun sms response with http 200 and error 0 is treated as success, not l
     ]);
 
     Assert::assertTrue(invokeIsSuccessfulResponse(200, $statusTxt));
-});
+})->group('NOTIFY-NETFUNSMS-INV-4');
 
 test('netfun sms response with error field set is treated as a real failure', function (): void {
     $statusTxt = json_encode([
@@ -68,12 +68,12 @@ test('netfun sms response with error field set is treated as a real failure', fu
     ]);
 
     Assert::assertFalse(invokeIsSuccessfulResponse(200, $statusTxt));
-});
+})->group('NOTIFY-NETFUNSMS-INV-4');
 
 test('netfun sms response with non-2xx http status is treated as a real failure', function (): void {
     Assert::assertFalse(invokeIsSuccessfulResponse(500, '{"error":0}'));
-});
+})->group('NOTIFY-NETFUNSMS-INV-4');
 
 test('netfun sms response with malformed body is treated as a real failure', function (): void {
     Assert::assertFalse(invokeIsSuccessfulResponse(200, 'not json'));
-});
+})->group('NOTIFY-NETFUNSMS-INV-4');

@@ -39,6 +39,7 @@ ls -la ~/.claude/skills/notebooklm/
 # - data/ (authentication + library)
 # - requirements.txt
 # - README.md, CHANGELOG.md, LICENSE
+# - README.md, changelog.md, LICENSE
 ```
 
 ## What is NotebookLM Skill?

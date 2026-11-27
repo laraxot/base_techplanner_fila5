@@ -710,7 +710,7 @@ Discuss CI/CD pipeline improvements. Topics include:
 - `/var/www/_bases/base_fixcity_fila5/AGENTS.md` - Current architectural rules
 - `/var/www/_bases/base_fixcity_fila5/PHPSTAN_FINAL_REPORT.md` - PHPStan achievement
 - `/var/www/_bases/base_fixcity_fila5/laravel/Modules/Xot/docs/LOGGING_BEST_PRACTICES_2026-03-02.md` - Logging patterns
-- `/var/www/_bases/base_ptv_fila5/AGENTS.md` - Current architectural rules
+- `/var/www/_bases/base_ptv_fila5/agents.md` - Current architectural rules
 - `/var/www/_bases/base_ptv_fila5/PHPSTAN_FINAL_REPORT.md` - PHPStan achievement
 - `/var/www/_bases/base_ptv_fila5/laravel/Modules/Xot/docs/LOGGING_BEST_PRACTICES_2026-03-02.md` - Logging patterns
 

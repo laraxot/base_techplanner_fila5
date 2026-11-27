@@ -8,6 +8,13 @@ use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Cancella la reazione di un commentatore a un commento.
+ *
+ * @see docs/contracts/delete-comment-reaction-action.md
+ *
+ * @contract docs/contracts/delete-comment-reaction-action.md
+ */
 class DeleteCommentReactionAction
 {
     use QueueableAction;

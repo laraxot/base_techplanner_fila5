@@ -1,63 +1,45 @@
 ---
-qmd: "contratto di comportamento action behavioral contract input output invarianti effetti collaterali errori non fa adr verifica harness group pest INV"
-title: "Regola — ADR e contratti di comportamento in ogni modulo e tema (harness)"
+qmd: "contratto comportamento Action input output invarianti effetti collaterali errori ADR verifica harness Pest"
+title: "Regola — Contratti di comportamento delle Action"
 type: rule
 module: Xot
-tags: [rule, actions, contract, adr, harness, ai-readability, testing]
+tags: [rule, actions, contract, adr, harness, testing]
 created: 2026-11-18
-updated: 2026-11-24
+updated: 2026-11-26
 status: active
 related:
-  - ../adr/agent-harness.md
+  - ../adr/0012-behavioral-contract-governance.md
   - ../concepts/agent-harness-guide.md
   - ../../tests/Unit/Docs/ActionContractsAreCompleteTest.php
   - ../../tests/Unit/Docs/PackagesHaveContractsAndAdrTest.php
+  - ../../../../../docs/harness-porting.md
 ---
 
 # ADR e contratti di comportamento
 
-Perché esiste (in breve, il resto in [agent-harness-guide](../concepts/agent-harness-guide.md)): un agente AI, e una persona
-nuova, copiano **il codice più vicino**, difetti compresi. Quello che non è scritto non esiste per loro, e quello che è
-scritto ma non verificato invecchia in silenzio. Per questo ogni modulo e tema ha due cartelle, e un test le controlla:
+Un agente o uno sviluppatore nuovo copia il codice più vicino. Per rendere
+esplicito il comportamento, ogni modulo e tema mantiene due fonti distinte:
 
 | Cartella | Risponde a | Si legge quando |
 |---|---|---|
-| `docs/adr/` | **perché** il codice ha questa forma e non un'altra | devi scegliere tra due forme di codice, o vuoi "semplificare" qualcosa che sembra strano |
-| `docs/contracts/` | **cosa promette** un'Action o un'interfaccia (e cosa *non* fa) | prima di chiamare, modificare o imitare un'Action che scrive dati o parla con l'esterno |
+| `docs/adr/` | perché il codice ha questa forma | si valuta una decisione difficile da invertire o sorprendente |
+| `docs/contracts/` | cosa promette un'Action e cosa non fa | prima di chiamare, modificare o imitare un'Action con effetti esterni |
 
-Ciascuna ha un `README.md` che spiega il formato ed elenca **tutti** i file della cartella (il test lo verifica).
+Ciascuna cartella ha un `README.md` che elenca i propri file; i test del modulo
+Xot controllano la struttura.
 
 ## ADR
 
-Un ADR solo se la decisione è **difficile da invertire, sorprendente, o frutto di un trade-off reale**. Le convenzioni
-ovvie non sono ADR. Nome file = argomento in kebab-case, **mai date né numeri** (`osm-proxy-tile-nominatim.md`).
+Scrivere un ADR solo per una decisione difficile da invertire, sorprendente o
+frutto di un trade-off reale. Il nome è kebab-case, senza date o numeri.
+L'ADR contiene almeno Contesto, Decisione, Alternative scartate, Conseguenze e
+Verifica. Quando la decisione cambia, creare un nuovo ADR e segnare il vecchio
+come `superseded` con `superseded_by`.
 
-```markdown
----
-title: "ADR — <decisione in una riga>"
-type: decision
-status: proposed | accepted | superseded | deprecated
-created: AAAA-MM-GG
-updated: AAAA-MM-GG
----
+## Contratto di un'Action
 
-# ADR: <decisione>
-
-## Contesto        fatti, misure, vincoli, incidenti; chiude con la domanda a cui la decisione risponde
-## Decisione       cosa si fa in concreto e dove sta nel codice (path reali)
-## Alternative scartate   ogni alternativa seria e perché no
-## Conseguenze     buono / cattivo / debito che resta
-## Verifica        come una macchina (test, arch(), PHPStan) o una revisione controlla che il codice la rispetti
-```
-
-`## Verifica` è il pezzo che trasforma la decisione da prosa in sensore: nomina il test che fallisce se qualcuno la viola
-(o, se non c'è ancora, dichiara il debito: "solo revisione: …"). Chi cambia la decisione scrive un nuovo ADR e segna il
-vecchio `status: superseded` con `superseded_by:`.
-
-## Contratti di comportamento delle Action
-
-Un file per Action, nome in kebab-case della classe (`create-ticket-action.md`), frontmatter `type: contract` e
-`action: "<FQCN>"`, sei sezioni nell'ordine:
+Un file per Action, in `docs/contracts/`, usa nome kebab-case e frontmatter
+`type: contract` e `action: "<FQCN>"`. Le sezioni sono, nell'ordine:
 
 ```markdown
 ## Input
@@ -68,43 +50,30 @@ Un file per Action, nome in kebab-case della classe (`create-ticket-action.md`),
 ## Non fa
 ```
 
-Le **Invarianti** sono una tabella con ID stabile `<PREFISSO>-INV-<N>` (prefisso = modulo + operazione, es. `GEO-TILE-INV-1`):
+Le invarianti hanno ID stabile `<SCOPE>-INV-<N>` e una colonna `Group Pest`.
+Un group valorizzato deve esistere nei test; `— (non dimostrato)` espone il
+debito invece di dichiarare una garanzia non verificata. Gli ID non si riusano.
 
-```markdown
-| ID | Regola | Group Pest |
-|---|---|---|
-| GEO-TILE-INV-1 | Mai più di una richiesta a OSM per tile prima della scadenza. | `GEO-TILE-INV-1` |
-| GEO-TILE-INV-2 | User-Agent sempre identificabile. | — |
-```
-
-- Colonna `Group Pest` valorizzata → esiste nei `tests/` del pacchetto un test con `->group('<ID>')`; si lancia con
-  `vendor/bin/pest Modules/<M>/tests --group=<ID>`. Il test lo verifica.
-- `—` = invariante **non ancora coperta**: debito dichiarato, visibile, non nascosto.
-- Gli ID non si rinumerano: un'invariante abolita resta in tabella barrata o si toglie, il suo ID non si riusa.
-
-«Non fa» è la sezione che evita più errori: dice dove *non* cercare un comportamento e dove cercarlo, e soprattutto cosa
-un agente non deve aggiungere "per completezza".
-
-Il docblock dell'Action rimanda al file, così chi legge il codice lo trova (`@contract` è il marcatore cercato dagli strumenti):
+Il docblock dell'Action contiene entrambi i riferimenti:
 
 ```php
 /**
- * Unico punto di creazione di una segnalazione.
- *
+ * @see docs/contracts/create-ticket-action.md
  * @contract docs/contracts/create-ticket-action.md
  */
 ```
 
-Vale anche la forma storica `Contratto di comportamento: docs/contracts/<file>.md`.
-
-Un contratto di codice legacy descrive il comportamento **com'è**, difetti compresi, e lo dice in «Non fa» o in un ADR:
-documentare non autorizza a imitare.
+Un contratto legacy descrive il comportamento reale, compresi i limiti: la
+documentazione non autorizza a replicare un difetto.
 
 ## Quando
 
-- Ogni Action nuova o modificata che scrive dati, chiama un servizio esterno o ha effetti collaterali → contratto.
-- Le Action pure (formattano, calcolano) possono farne a meno.
-- Ogni scelta tra due forme di codice che un revisore potrebbe contestare → ADR.
+- Action nuova o modificata che scrive dati, chiama servizi esterni o produce
+  effetti collaterali: contratto obbligatorio.
+- Effetti collaterali includono notifiche, code, file, cache, denaro, permessi
+  e dati personali.
+- Action pure di formattazione/calcolo possono non avere contratto.
+- Una scelta architetturale contestabile richiede anche un ADR.
 
 ## Verifica
 
@@ -113,11 +82,6 @@ cd laravel && vendor/bin/pest Modules/Xot/tests/Unit/Docs/PackagesHaveContractsA
   Modules/Xot/tests/Unit/Docs/ActionContractsAreCompleteTest.php
 ```
 
-- `PackagesHaveContractsAndAdrTest`: ogni modulo e tema ha `docs/adr/README.md` e `docs/contracts/README.md`; ogni ADR ha
-  frontmatter `type: decision` e `status` valido, le cinque sezioni, nessuna data nel nome; ogni README elenca tutti i file.
-- `ActionContractsAreCompleteTest`: ogni `type: contract` ha le sei sezioni nell'ordine, la sua `action` esiste, il docblock
-  rimanda al file, ogni ID di invariante ha il formato giusto e, se dichiara un group, il group esiste nei test del pacchetto;
-  le Action dell'elenco `REQUIRED` hanno il contratto.
-
-Un contratto che non corrisponde più al codice è peggio di nessun contratto: chi cambia il comportamento aggiorna il
-contratto nello stesso commit, e il test dell'Action prova le righe del contratto.
+I test verificano cartelle, frontmatter, sezioni, Action esistente, marker
+`@contract`, invarianti e ADR completi. Un contratto non più allineato al codice
+va aggiornato nello stesso commit dell'Action.

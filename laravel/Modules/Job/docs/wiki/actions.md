@@ -4,6 +4,7 @@ type: guide
 tags: [actions, architecture, queueable]
 created: 2026-07-21
 updated: 2026-07-21
+qmd: "actions queueableactions architecture consolidated"
 ---
 
 # Job Module — QueueableActions Architecture
@@ -160,7 +161,7 @@ php artisan schedule:clear-cache
 
 ## Related Documentation
 
-- **Pattern docs:** `docs/wiki/patterns/services-support-to-actions-migration-pattern.md`
+- **Pattern docs:** `bashscripts/ai/wiki/patterns/patterns.md#services-support-to-actions-migration-pattern`
 - **Coordination hub:** `docs/chat/services-support-to-actions-refactoring-coordination.md`
 - **Spatie library:** https://github.com/spatie/laravel-queueable-action
 

@@ -70,4 +70,4 @@ test('inbound webhook is idempotent on message id', function (): void {
     $this->postJson('/api/inbound/postmark/test-secret-token', array_merge($payload, ['Subject' => 'Due']))->assertOk();
 
     expect(InboundEmail::query()->where('message_id', 'dup-1@postmarkapp.com')->count())->toBe(1);
-});
+})->group('NOTIFY-INBOUND-INV-2');

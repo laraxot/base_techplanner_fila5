@@ -20,6 +20,8 @@ use Webmozart\Assert\Assert;
  *   garantita (HasVerifiedIdentityAction), ma al cittadino non partono email verso un indirizzo inesistente.
  * - Si conservano solo i dati necessari (vedi la migrazione owner `create_users_table`).
  *
+ * @see docs/contracts/upsert-user-from-digital-identity-action.md
+ *
  * @contract docs/contracts/upsert-user-from-digital-identity-action.md
  */
 final class UpsertUserFromDigitalIdentityAction

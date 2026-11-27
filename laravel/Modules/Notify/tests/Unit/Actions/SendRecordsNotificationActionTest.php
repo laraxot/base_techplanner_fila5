@@ -45,7 +45,7 @@ test('send records notification action counts successful sends', function (): vo
     Assert::assertSame(0, $result->errorCount);
     Assert::assertCount(0, $result->errors);
     Assert::assertSame(4, $result->totalProcessed);
-});
+})->group('NOTIFY-BULK-INV-3');
 
 test('send records notification action accumulates errors per channel', function (): void {
     app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastStub);
@@ -66,7 +66,7 @@ test('send records notification action accumulates errors per channel', function
     Assert::assertCount(2, $result->errors);
     Assert::assertSame('Fail Record', $result->errors->first()['record'] ?? null);
     Assert::assertSame(4, $result->totalProcessed);
-});
+})->group('NOTIFY-BULK-INV-1', 'NOTIFY-BULK-INV-2');
 
 test('send records notification action falls back to record key when name is missing', function (): void {
     app()->instance(SafeEloquentCastAction::class, new SendRecordsSafeEloquentCastEmptyStub);
@@ -84,4 +84,4 @@ test('send records notification action falls back to record key when name is mis
     Assert::assertSame(0, $result->successCount);
     Assert::assertSame(1, $result->errorCount);
     Assert::assertSame('99', $result->errors->first()['record'] ?? null);
-});
+})->group('NOTIFY-BULK-INV-4');

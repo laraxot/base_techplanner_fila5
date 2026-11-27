@@ -28,12 +28,8 @@ status: draft
 
 ### Per Sviluppatori
 - [Architecture Overview](./architecture/README.md)
-<<<<<<< .merge_file_KLp0Mn
 - [Getting Started](./GETTING_STARTED.md)
-=======
 - [Getting Started](../../../GETTING_STARTED.md)
-- [Getting Started](../../../GETTING_STARTED.md)
->>>>>>> .merge_file_QE5d84
 - [Coding Standards](./conventions/README.md)
 
 ### Per AI Agents
@@ -72,12 +68,8 @@ status: draft
 
 ### 📊 Reports
 - [Status Reports](./reports/README.md)
-<<<<<<< .merge_file_KLp0Mn
 - [Quality Reports](./reports/quality.md)
-=======
 - [Quality Reports](../../../roadmap/quality.md)
-- [Quality Reports](../../../roadmap/quality.md)
->>>>>>> .merge_file_QE5d84
 - [Performance Reports](./reports/performance.md)
 
 ---

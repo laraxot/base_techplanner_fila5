@@ -19,7 +19,7 @@ it('copia original_text quando non ci sono transformer', function (): void {
     app(ProcessCommentAction::class)->handle($comment);
 
     Assert::assertSame('Testo semplice', $comment->text);
-});
+})->group('COMMENT-PROCESS-INV-1');
 
 it('trasforma markdown in html', function (): void {
     $comment = new Comment([
@@ -29,4 +29,4 @@ it('trasforma markdown in html', function (): void {
     app(ProcessCommentAction::class)->handle($comment);
 
     Assert::assertStringContainsString('<strong>grassetto</strong>', (string) $comment->text);
-});
+})->group('COMMENT-PROCESS-INV-2');

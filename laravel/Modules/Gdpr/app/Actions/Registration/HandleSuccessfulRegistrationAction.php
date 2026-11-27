@@ -13,6 +13,13 @@ use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget; // Use the base widget for type hinting
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Dopo una registrazione riuscita: login, mail di verifica (un errore non la annulla), notifica e redirect.
+ *
+ * @see docs/contracts/handle-successful-registration-action.md
+ *
+ * @contract docs/contracts/handle-successful-registration-action.md
+ */
 class HandleSuccessfulRegistrationAction
 {
     use QueueableAction;

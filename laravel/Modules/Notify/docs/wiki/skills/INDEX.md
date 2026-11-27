@@ -1,4 +1,3 @@
-<<<<<<< .merge_file_c4T9f5
 ---
 title: "Notify Module - skills Index"
 type: index
@@ -18,8 +17,6 @@ related:
   - ../../integrations/readme.md
   - ../../templates/readme.md
 ---
-=======
->>>>>>> .merge_file_cg8yIq
 # Notify Module - skills Index
 
 ## Purpose

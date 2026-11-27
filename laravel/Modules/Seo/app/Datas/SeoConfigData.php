@@ -65,7 +65,7 @@ class SeoConfigData extends Data
      * in `/{chiave}.txt`, da cui Bing, Yandex, Seznam e Naver verificano che le URL inviate siano nostre.
      * Vuota = IndexNow spento (nessun file servito, nessun invio).
      *
-     * @see Modules/Seo/docs/adr/search-engine-presence.md
+     * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
      */
     public ?string $indexnow_key = null;
 

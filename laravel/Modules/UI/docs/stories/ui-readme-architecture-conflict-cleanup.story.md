@@ -27,35 +27,9 @@ duplicate qui — solo referenziate).
 
 ## Lavoro svolto
 
-1. **`README.md` (root modulo)**: 47 righe di marker (`<<<<<<<`/`=======`/`>>>>>>>`),
-   due draft README completi in conflitto + due sotto-conflitti annidati su un badge
-   "platform" (varianti `FixCity Platform` / `<nome progetto> Platform` letterale non
-   sostituito / `Current Platform`). Risolto fondendo entrambe le sezioni senza perdita
-   di contenuto (frontmatter + badge + "Cosa offre"/"Confini architetturali" dalla
-   sezione B, "Principi Zen"/"Superpoteri"/Quick Start dalla sezione A), corretti due
-   errori fattuali (`config/ui.php` inesistente -> `config/config.php`; badge
-   `Laravel 12` -> `13`, verificato su `laravel/composer.json`), rimosso interamente il
-   badge "platform" (nessun nome di progetto ospite in un modulo condiviso fra piu'
-   host — vedi `docs/purpose.md` e memoria `moduli-condivisi-fra-progetti.md`).
-2. **`docs/architecture.md`**: conteneva un blocco di 657 righe (655-1311) delimitato da
-   marker `<<<<<<< HEAD`/`=======`/`>>>>>>> laraxot/dev` che avvolgeva una copia
-   byte-identica dell'intero documento (verificato con diff prima di cancellare).
-   Rimosso il blocco marcato; resta un'unica copia canonica, 1364 -> 707 righe, 0 marker.
-3. **Case/name-duplicati rimossi** (tutti ridondanti rispetto al punto 2, verificato con
-   diff/lettura integrale prima di cancellare, nessuno spostato in `_archive/` perche'
-   senza contenuto storico unico):
-   - `docs/architecture.md` (712 righe, 6 marker) — contenuto interamente riassorbito in
-     `docs/architecture.md` dopo il fix del punto 2.
-   - `docs/architecture.md` (1308 righe, nome con trattino finale, probabile artefatto)
-     — stessa concatenazione ridondante, nessun contenuto unico.
-   - `docs/ARCHITECTURE_2025.md` (29 righe) — stub redirect con marker ANCORA irrisolti,
-<<<<<<< .merge_file_yTY2h5
-     verso `Themes/docs/shared-components/ARCHITECTURE.md` (path inesistente).
-   - `docs/architecture.md` (7 righe) — stub redirect pulito ma verso lo stesso path
-=======
-     verso `Themes/docs/shared-components/architecture.md` (path inesistente).
+1. **`README.md` (root modulo)**: 47 righe di marker (`     verso `Themes/docs/shared-components/architecture.md` (path inesistente).
    - `docs/architecture-2025.md` (7 righe) — stub redirect pulito ma verso lo stesso path
->>>>>>> .merge_file_cXs6cS
+
      inesistente; gia' elencato in `docs/.gitignore` come da rimuovere (mai completato).
    - `docs/architecture_2025.md` (11 righe) — due frontmatter concatenati, stesso path
      inesistente.
@@ -97,43 +71,8 @@ modulo opportunistico; riferimento: `docs/sprint-status.yaml` story `5.122-gitmo
 
 ```bash
 cd laravel/Modules/UI
-grep -c '^<<<<<<< \|^=======$\|^>>>>>>> ' README.md docs/architecture.md \
-  docs/philosophy-dev-rules.md docs/root-md-files/philosophy.md \
-  docs/project-structure.md docs/PHILOSOPHY.md docs/architecture-patterns.md
-# tutti 0
-```
+grep -c '^  anche `docs/architecture.md` e `docs/architecture-.md`, non elencati ma scoperti con
 
-Commit: `5b5b8576` (repo `laravel/Modules/UI`, remote `laraxot/module_ui_fila5` +
-`provtv/module_ui_fila5`).
-
-## Best practices
-
-- Diff/lettura integrale prima di cancellare un "duplicato": ha evitato di perdere le
-  righe uniche (la coda di `docs/architecture.md`, la nota di migrazione da
-  `architecture.md`) che un `git rm` cieco avrebbe cancellato.
-- Non fidarsi della stima del task ("~13 righe", "4 file"): verificato con `grep -c` e
-  `git ls-files` prima di pianificare, trovata realta' piu' ampia (47 righe, 6 file).
-- Risolvere solo i conflitti auto-contenuti sullo stesso tema (`architecture-patterns.md`);
-  saltare i file dove il conflitto sul tema e' mischiato con conflitti estranei
-  (`project-structure.md`) per non introdurre un merge arbitrario su contenuto non
-  verificato.
-
-## Bad practices
-
-- Inventare un numero di issue/repo GitHub per chiudere un conflitto di frontmatter
-  (evitato in `docs/redundancy-audit.md`, lasciato irrisolto e segnalato invece).
-- Estendere il fix ai ~300+ file fleet-wide gia' deferred in story 5.122: scope creep
-  non richiesto, rischio di collisione con altri agenti che lavorano sulla stessa
-  corruzione in altri moduli (visti in coda: Rating, User, Job, Tenant, Activity/Media/Lang).
-
-## False friends
-
-- "4 file architecture case-duplicati" (dato dal task) non significa "solo 4": esistevano
-<<<<<<< .merge_file_yTY2h5
-  anche `docs/ARCHITECTURE.md` e `docs/architecture.md`, non elencati ma scoperti con
-=======
-  anche `docs/architecture.md` e `docs/architecture-.md`, non elencati ma scoperti con
->>>>>>> .merge_file_cXs6cS
   `git ls-files docs | grep -i architecture`.
 - Un file senza marker `<<<<<<<` non e' automaticamente pulito: `docs/architecture.md`
   e `docs/architecture_2025.md` erano "risolti" per concatenazione cieca di entrambi i

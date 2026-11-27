@@ -6,6 +6,7 @@ use Illuminate\Contracts\Console\Kernel;
 use Modules\Job\Filament\Widgets\ScheduleStatusWidget;
 use Modules\Job\Tests\TestCase;
 use PHPUnit\Framework\Assert;
+use Mockery;
 
 uses(TestCase::class);
 

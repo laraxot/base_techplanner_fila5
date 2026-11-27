@@ -29,10 +29,10 @@ Themes follow the same directory structure standards as Modules.
   - Root-level capitalized directories (e.g., `Actions/`, `Database/`) are forbidden.
   - `database/` must be lowercase.
 - **PHPStan Memory**: ALWAYS use `php -d memory_limit=-1 ./vendor/bin/phpstan` for heavy analyses to avoid parallel worker crashes.
-- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
-- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
-- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
-- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../../docs/wiki/concepts/no-lang-lang-and-no-underscore-docs-rule.md)
+- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-lang-lang-and-no-underscore-docs-rule)
+- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-lang-lang-and-no-underscore-docs-rule)
+- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-lang-lang-and-no-underscore-docs-rule)
+- **Documentation Rules**: [No lang/lang/ and No _docs/ Rule](../../../../../../bashscripts/ai/wiki/concepts/modules-structure-rules.md#no-lang-lang-and-no-underscore-docs-rule)
 
 ## Directory Structure
 

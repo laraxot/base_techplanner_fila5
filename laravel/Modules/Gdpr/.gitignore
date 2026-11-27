@@ -130,11 +130,23 @@ docs/archive/
 *.orig
 *.rej
 *~head
-<<<<<<< .merge_file_9EJwdH
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_mqjGpq
+# screenshot di comparazione visiva (artefatti locali)
+docs/project/visual-comparison/
+docs/visual-comparison/
+
+# --- entries uniti da laraxot/dev (sync merge) ---
+# Deduplicated .gitignore - generated from original
+docs/screenshots/
+tests/coverage-*.*
+tests/graphify-out/
+# da unione con laraxot/dev (pattern mancanti)
+docs/screenshots/
+tests/coverage-*.xml
+tests/graphify-out/
+# Indice vettoriale locale (non versionare)
+ruvector.db

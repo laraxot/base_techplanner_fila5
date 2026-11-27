@@ -12,6 +12,10 @@ use Spatie\QueueableAction\QueueableAction;
  *
  * Delegates to SaveGdprConsentsAction — adds a new Consent record for each
  * preference so the audit trail is preserved.
+ *
+ * @see docs/contracts/update-gdpr-consents-action.md
+ *
+ * @contract docs/contracts/update-gdpr-consents-action.md
  */
 class UpdateGdprConsentsAction
 {

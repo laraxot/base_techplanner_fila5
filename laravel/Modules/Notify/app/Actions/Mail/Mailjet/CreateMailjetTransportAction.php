@@ -24,6 +24,9 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
  * - `sandbox`: Mailjet valida il messaggio e risponde come per un invio, ma non consegna nulla.
  *
  * @see Modules/Notify/docs/email/mailjet.md
+ * @see docs/contracts/create-mailjet-transport-action.md
+ *
+ * @contract docs/contracts/create-mailjet-transport-action.md
  */
 final class CreateMailjetTransportAction
 {
@@ -44,9 +47,19 @@ final class CreateMailjetTransportAction
             throw new InvalidArgumentException(\sprintf('Mailjet: schema "%s" non valido, usare "api" o "smtp".', $scheme));
         }
 
-        $options = $scheme === 'api' ? ['sandbox' => $sandbox ? 'true' : 'false'] : [];
+        $options = $scheme === 'api' ? [
+            'sandbox' => $sandbox ? 'true' : 'false',
+        ] : [];
 
-        return (new MailjetTransportFactory(null, $client ?? HttpClient::create()))
-            ->create(new Dsn('mailjet+'.$scheme, 'default', $key, $secret, null, $options));
+        $factory = new MailjetTransportFactory(null, $client ?? HttpClient::create());
+
+        return $factory->create(new Dsn(
+            'mailjet+'.$scheme,
+            'default',
+            $key,
+            $secret,
+            null,
+            $options,
+        ));
     }
 }

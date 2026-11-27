@@ -1,21 +1,21 @@
 ---
-title: "Zero {{TYPE^}} LLM Wiki Agent Instructions"
+title: "Zero LLM Wiki Agent Instructions"
 type: reference
 tags: [wiki, no-frontmatter-fix]
 created: 2026-10-06
-updated: 2026-10-06
+updated: 2026-10-20
 id: zero-docs-wiki-agents
 slug: agents
-description: "You are the Zero Wiki Maintainer. Your job is to"
+description: "Istruzioni per il Wiki Maintainer del tema Zero (ex AGENTS.md)."
 document_type: reference
 category: documentation
 status: active
-qmd: "zero {{type^}} llm wiki agent instructions"
+qmd: "zero llm wiki agent instructions agents.md lowercase"
 issues: []
 discussions: []
 ---
 
-# Zero {{TYPE^}} LLM Wiki Agent Instructions
+# Zero LLM Wiki Agent Instructions
 
 > **Module/Theme:** Zero
 > **Scope:** Zero-specific knowledge only
@@ -155,6 +155,8 @@ Related:
 
 ## Related Documentation
 
-- [Project Wiki Integration](readme.md)
-- [Project Wiki Agent Instructions](../../docs/wiki/AGENTS.md)
+- [Project Wiki Integration](README.md)
+- [Project Wiki Agent Instructions](../../../../../AGENTS.md)
 - [Theme Documentation](../README.md)
+- [Scopo del tema](../bmad/scopo.md)
+- [Operating focus](./concepts/theme-zero-operating-focus.md)

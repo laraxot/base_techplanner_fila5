@@ -10,9 +10,10 @@ use Modules\Comment\Actions\Comment\EnsureCommentRateLimitAction;
 use Modules\Comment\Filament\Widgets\Commentable\CommentsWidget;
 use Modules\Comment\Models\Comment;
 use Modules\Comment\Tests\Support\CommentatorUser;
+use Modules\Comment\Tests\TestCase;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 
-uses(\Modules\Comment\Tests\TestCase::class);
+uses(TestCase::class);
 
 /*
  * Il widget dei commenti cosi' come lo monta il front office (CMT-022), con le risposte attive (noReplies = false) come in
@@ -105,7 +106,7 @@ it('keeps the Markdown as source and never lets scripts or javascript links reac
 
     Livewire::actingAs(CommentatorUser::createOne())
         ->test(CommentsWidget::class, commentsWidgetParams($article))
-        ->set('data.text', "**ciao** <script>alert(1)</script> <img src=x onerror=alert(2)> [clic](javascript:alert(3))")
+        ->set('data.text', '**ciao** <script>alert(1)</script> <img src=x onerror=alert(2)> [clic](javascript:alert(3))')
         ->call('comment')
         ->assertHasNoErrors();
 
@@ -114,7 +115,7 @@ it('keeps the Markdown as source and never lets scripts or javascript links reac
         ->not->toContain('<script')
         ->not->toContain('onerror')
         ->not->toContain('javascript:');
-});
+})->group('COMMENT-PROCESS-INV-3');
 
 it('throttles a user who posts more than the allowed number of comments per window', function (): void {
     $article = Article::factory()->create();

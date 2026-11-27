@@ -35,7 +35,7 @@ La panoramica lunga del tema (27 KB) si chiamava `readme.md` e differiva da ques
 | Filament e grafici | [filament-chart-integration](./filament-chart-integration.md), [filament-table-architecture](./filament-table-architecture.md), [jpgraph-integration-guide](./jpgraph-integration-guide.md), famiglia `chartjs-datalabels-*` |
 | Qualita' e PHPStan | [phpstan](./phpstan.md), [dry-kiss-best-practices](./dry-kiss-best-practices.md), [php-quality-gates-rule](./php-quality-gates-rule.md), [quality-audit](./quality-audit.md), [no-phpstan-probe-policy](./no-phpstan-probe-policy.md) |
 | Git e sync | [conflict-resolution](./conflict-resolution.md), [conflict-resolution-summary](./conflict-resolution-summary.md), [git-collision-audit-bashscripts](./git-collision-audit-bashscripts.md), [multi-org-sync-laraxot-provtv](./multi-org-sync-laraxot-provtv.md), [no-git-lfs](./no-git-lfs.md) |
-| Prodotto e pianificazione | [prd](./prd.md), [product-requirements](./product-requirements.md), [product-roadmap](./product-roadmap.md), [product-strategy](./product-strategy.md), [sprint-planning](./sprint-planning.md), [tech-spec](./tech-spec.md), [epics](./epics/zero-epics-and-stories.md) |
+| Prodotto e pianificazione | [prd](./prd.md), [product-requirements](./product-requirements.md), [tech-spec](./tech-spec.md), [epics](./epics/zero-epics-and-stories.md) |
 | Governance della docs | [docs-archive-policy](./docs-archive-policy.md), [docs-deduplication](./docs-deduplication.md), [model-docs-governance](./model-docs-governance.md), [naming-conventions](./naming-conventions.md), [theme-documentation-standard](./theme-documentation-standard.md) |
 | Story | [bmad/stories](./stories/) |
 
@@ -43,7 +43,7 @@ La panoramica lunga del tema (27 KB) si chiamava `readme.md` e differiva da ques
 
 | Argomento | Canonico | Copia (stato) |
 |---|---|---|
-| Changelog | [../changelog.md](../changelog.md) | [changelog.md](./changelog.md) superseded |
+| Changelog | [../changelog.md](../CHANGELOG.md) | [changelog.md](./changelog.md) superseded |
 | Guida JpGraph | [../wiki/concepts/jpgraph-guide.md](../wiki/concepts/jpgraph-guide.md) | [jpgraph-guide.md](./jpgraph-guide.md) superseded |
 | Risorse annidate Filament 5 | [../wiki/concepts/filament-nested-resources.md](../wiki/concepts/filament-nested-resources.md) | [filament-5-nested-resources.md](./filament-5-nested-resources.md) superseded |
 | Audit collisioni Git in bashscripts | [git-collision-audit-bashscripts.md](./git-collision-audit-bashscripts.md) | [git-collisions-bashscripts-audit.md](./git-collisions-bashscripts-audit.md), [git-conflict-resolution-audit.md](./git-conflict-resolution-audit.md) superseded |

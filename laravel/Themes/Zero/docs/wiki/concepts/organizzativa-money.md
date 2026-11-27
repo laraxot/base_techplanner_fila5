@@ -19,6 +19,6 @@ discussions: []
 
 # organizzativa money
 
-Stub **DRY** verso wiki modulo **Xot**. Policy: [docs-deduplication](../../../../../../docs/wiki/how-to/module-docs-deduplication.md).
+Stub **DRY** verso wiki modulo **Xot**. Policy: [docs-deduplication](../../../../../../bashscripts/ai/wiki/how-to/modules-ops.md#module-docs-deduplication).
 
 → [organizzativa-money.md](./organizzativa-money.md)

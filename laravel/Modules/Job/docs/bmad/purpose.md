@@ -14,6 +14,12 @@ related:
 
 # Scopo BMAD — Job
 
+## Lo scopo in una frase **Job rende visibile e governabile tutto cio' che accade fuori dalla richiesta HTTP: code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro
+
+SSoT estesa: [../purpose.md](../purpose.md) se presente.
+
+## Lo scopo in una frase
+
 ## Lo scopo in una frase
 
 **Job rende visibile e governabile tutto ciò che accade fuori dalla richiesta HTTP — code, importazioni, esportazioni, lavori pianificati — e soprattutto i loro fallimenti.**

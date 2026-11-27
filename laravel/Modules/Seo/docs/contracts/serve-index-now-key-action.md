@@ -1,12 +1,14 @@
 ---
 title: "Contratto — ServeIndexNowKeyAction"
 type: contract
-action: "Modules\Seo\Actions\IndexNow\ServeIndexNowKeyAction"
+action: "Modules\\Seo\\Actions\\IndexNow\\ServeIndexNowKeyAction"
+module: Seo
+status: active
 tags: [contract, action, indexnow, route]
 created: 2026-11-24
-updated: 2026-11-24
+updated: 2026-11-26
 related:
-  - ../adr/search-engine-presence.md
+  - ../adr/0002-search-engine-presence.md
   - ../../app/Actions/IndexNow/ServeIndexNowKeyAction.php
   - ../../routes/web.php
   - ../../tests/Feature/IndexNow/IndexNowTest.php
@@ -36,7 +38,7 @@ Test: `cd laravel && vendor/bin/pest Modules/Seo/tests/Feature/IndexNow/IndexNow
 |---|---|---|
 | SEO-INDEXNOW-KEY-INV-1 | Risponde 200 solo per la chiave configurata; qualunque altra `/{x}.txt` è 404. | `SEO-INDEXNOW-KEY-INV-1` |
 | SEO-INDEXNOW-KEY-INV-2 | Con IndexNow spento o chiave malformata (corta, caratteri non ammessi) non esiste nessun file: sempre 404. | `SEO-INDEXNOW-KEY-INV-2` |
-| SEO-INDEXNOW-KEY-INV-3 | Il confronto è a tempo costante (`hash_equals`): la rotta non aiuta a indovinare la chiave per tentativi. | — |
+| SEO-INDEXNOW-KEY-INV-3 | Il confronto è a tempo costante (`hash_equals`, `ServeIndexNowKeyAction.php` riga 25): la rotta non aiuta a indovinare la chiave per tentativi. | — (non dimostrato) |
 
 ## Effetti collaterali
 
@@ -51,3 +53,9 @@ Test: `cd laravel && vendor/bin/pest Modules/Seo/tests/Feature/IndexNow/IndexNow
 - Non serve altri file `.txt` (es. `robots.txt`, che ha la sua rotta registrata prima, o `llms.txt`, escluso dall'ADR).
 - Non invia nulla ai motori: lo fa [SubmitIndexNowAction](submit-index-now-action.md).
 - Non scrive un file su disco: la chiave vive nella configurazione del tenant e la risposta è dinamica.
+
+## Limiti noti
+
+- **`SEO-INDEXNOW-KEY-INV-3` non ha test.** Si verifica solo leggendo la riga 25; nessun test fuori da Seo la copre (`rg SEO-INDEXNOW Modules Themes tests` trova solo `IndexNowTest.php`). Nessuna regola automatica impedisce di sostituire `hash_equals` con `===`: proposta, un test che legge il sorgente e cerca `hash_equals` (un test di tempo sarebbe instabile).
+- La chiave non e' un segreto per protocollo (e' pubblica in `/{chiave}.txt`): il confronto a tempo costante limita l'enumerazione, non protegge un dato riservato.
+- Il test esercita l'Action chiamandola direttamente (`(new ServeIndexNowKeyAction)(...)`): la rotta `seo.indexnow.key` (vincolo `[A-Za-z0-9-]{8,128}`, registrata dopo `/robots.txt`) non ha un test HTTP.

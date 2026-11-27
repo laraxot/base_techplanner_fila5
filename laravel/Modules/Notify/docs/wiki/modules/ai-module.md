@@ -14,13 +14,10 @@ status: draft
 
 > Updated: 2026-04-15
 > Sources: [../../../laravel/Modules/AI/docs/README.md](../../../laravel/Modules/AI/docs/README.md), [../../../laravel/Modules/AI/docs/structure.md](../../../laravel/Modules/AI/docs/structure.md)
-<<<<<<< .merge_file_oIxCAO
 > Raw: [../../../laravel/Modules/AI/docs/mcp.md](../../../laravel/Modules/AI/docs/mcp.md), [../../../laravel/Modules/AI/docs/mcp/mcp-integration-overview.md](../../../laravel/Modules/AI/docs/mcp/mcp-integration-overview.md), [../../../laravel/Modules/AI/docs/ollama-strategy.md](../../../laravel/Modules/AI/docs/ollama-strategy.md)
-=======
 > Raw: [../../../laravel/Modules/AI/docs/mcp.md](../../ai-agents/mcp.md), [../../../laravel/Modules/AI/docs/mcp/mcp-integration-overview.md](../../../laravel/Modules/AI/docs/mcp/mcp-integration-overview.md), [../../../laravel/Modules/AI/docs/ollama-strategy.md](../../../laravel/Modules/AI/docs/ollama-strategy.md)
 > Sources: [../../../laravel/Modules/AI/docs/README.md](../../../../AI/docs/README.md), [../../../laravel/Modules/AI/docs/structure.md](../../../../AI/docs/structure.md)
 > Raw: [../../../laravel/Modules/AI/docs/mcp.md](../../../../AI/docs/mcp.md), [../../../laravel/Modules/AI/docs/mcp/mcp-integration-overview.md](../../../../AI/docs/mcp/mcp-integration-overview.md), [../../../laravel/Modules/AI/docs/ollama-strategy.md](../../../../AI/docs/ollama-strategy.md)
->>>>>>> .merge_file_lkqz87
 
 ## Summary
 

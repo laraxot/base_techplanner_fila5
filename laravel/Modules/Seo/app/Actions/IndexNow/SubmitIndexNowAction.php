@@ -21,7 +21,7 @@ use function Safe\parse_url;
  *
  * @contract docs/contracts/submit-index-now-action.md
  *
- * @see Modules/Seo/docs/adr/search-engine-presence.md
+ * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
  */
 final class SubmitIndexNowAction
 {

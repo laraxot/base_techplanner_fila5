@@ -218,17 +218,15 @@ $avgTime = $jobMonitor->getAverageProcessingTime();
 6. **Monitoring**: Monitor job performance and failure rates
 
 ## Related Modules
-<<<<<<< .merge_file_yewQ2K
 - [Xot Module](../../Xot/docs/README.md) - Core base classes
 - [Activity Module](../../Activity/docs/index.md) - Activity logging
 - [Notify Module](../../Notify/docs/index.md) - Notification system
 - [User Module](../../User/docs/readme.md) - User authentication and management
-=======
 - [Xot Module](../xot/docs/index.md) - Core base classes
 - [Activity Module](../activity/docs/index.md) - Activity logging
 - [Notify Module](../notify/docs/index.md) - Notification system
 - [User Module](../user/docs/README.md) - User authentication and management
->>>>>>> .merge_file_2Syf5q
+- [User Module](../../User/docs/README.md) - User authentication and management
 
 ## Troubleshooting
 Common issues and solutions:
@@ -261,3 +259,18 @@ Le cartelle di import grezzo (`raw/`, `root-*-files/`), immagini e log sono escl
 | [`stories/`](stories/) | 29 |
 | [`tasks/`](tasks/) | 4 |
 | [`wiki/`](wiki/index.md) | 54 |
+Elenco aggiornato al cleanup docs (issue #65): ogni cartella di `docs/` con il numero di file `.md` (2026-11-26: 99 file totali, tetto 100).
+
+| Cartella | File .md |
+|---|---|
+| radice | 2 |
+| [`adr/`](adr/) | 6 |
+| [`bmad/`](bmad/) | 2 (+3 in `stories/`) |
+| [`contracts/`](contracts/) | 20 |
+| [`digests/`](digests/) | 6 |
+| [`ecc/`](ecc/) | 2 |
+| [`graphify/`](graphify/), [`headroom/`](headroom/) | 1 + 1 |
+| [`manuals/`](manuals/) | 1 |
+| [`roadmap/`](roadmap/) | 2 |
+| [`stories/`](stories/) | 13 |
+| [`wiki/`](wiki/) | 12 (+28 nelle sotto-cartelle) |

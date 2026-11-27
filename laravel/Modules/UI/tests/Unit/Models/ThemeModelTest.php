@@ -28,7 +28,7 @@ uses(TestCase::class);
  */
 $themeModel = /** @return class-string<BaseModel> */ static function (string $class = 'Modules\UI\Models\Theme'): string {
     if (! is_a($class, BaseModel::class, true)) {
-        Assert::fail('Theme model must extend ' . BaseModel::class . '.');
+        Assert::fail('Theme model must extend '.BaseModel::class.'.');
     }
 
     return $class;

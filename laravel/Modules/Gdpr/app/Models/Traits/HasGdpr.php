@@ -22,7 +22,7 @@ use Stringable;
  * @property Collection<int, Consent> $consents
  * @property Collection<int, Consent> $activeConsents
  *
- * Test: tests/Unit/Traits/HasGdprTraitTest.php
+ * @see HasGdprTraitTest
  */
 trait HasGdpr
 {

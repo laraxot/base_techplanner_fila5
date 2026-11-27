@@ -13,6 +13,10 @@ use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
  * Il `Disallow` non toglie dall'indice una pagina gia' nota e non vale per le copie con la lingua in maiuscolo: l'esclusione vera
  * e' il `meta robots noindex` della pagina. Qui si evita solo di far scansionare aree che non hanno nulla da indicizzare.
  * Le stesse pagine restano fuori da `BuildSitemapAction` (`auth.*`, pagine dietro `auth`).
+ *
+ * @see docs/contracts/build-robots-txt-action.md
+ *
+ * @contract docs/contracts/build-robots-txt-action.md
  */
 final class BuildRobotsTxtAction
 {

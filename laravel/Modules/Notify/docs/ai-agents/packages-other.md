@@ -22,7 +22,6 @@ Struttura moduli del progetto:
 
 ```
 Modules/
-<<<<<<< .merge_file_YMysJM
   Activity/   — event sourcing, activity log
   Chart/      — chart rendering (Chart.js + JpGraph)
   Cms/        — content management
@@ -39,7 +38,6 @@ Modules/
   UI/         — componenti UI
   User/       — autenticazione, Passport, Socialite
   Xot/        — core module (XotBase, traits, utilities)
-=======
   Activity/  : event sourcing, activity log
   Chart/     : chart rendering (Chart.js + JpGraph)
   Cms/       : content management
@@ -56,7 +54,6 @@ Modules/
   UI/        : componenti UI
   User/      : autenticazione, Passport, Socialite
   Xot/       : core module (XotBase, traits, utilities)
->>>>>>> .merge_file_GnLBPv
 ```
 
 **Regole namespace** (v12, già configurato):

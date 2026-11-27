@@ -30,6 +30,10 @@ use function Safe\strtotime;
  *
  * Le pagine di dettaglio (un articolo, un evento, una segnalazione) non sono pagine del CMS: le elencano i moduli che le possiedono
  * tramite `SitemapPathsContract` (DCP-273), registrati sotto il tag `SitemapPathsContract::TAG`. Seo non conosce i loro modelli.
+ *
+ * @see docs/contracts/build-sitemap-action.md
+ *
+ * @contract docs/contracts/build-sitemap-action.md
  */
 final class BuildSitemapAction
 {
@@ -143,7 +147,7 @@ final class BuildSitemapAction
     private function lastModified(Page $page): ?string
     {
         $updatedAt = $page->getAttribute('updated_at');
-        if ($updatedAt instanceof \DateTimeInterface) {
+        if ($updatedAt instanceof DateTimeInterface) {
             return $updatedAt->format('Y-m-d');
         }
 

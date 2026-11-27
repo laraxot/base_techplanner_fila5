@@ -1,3 +1,8 @@
+---
+title: "PRD: Zero Theme"
+type: note
+qmd: "prd zero theme"
+---
 # PRD: Zero Theme
 
 ## 📋 Overview

@@ -8,6 +8,13 @@ use Modules\Comment\Datas\CommentConfigData;
 use Modules\Comment\Models\Comment;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Trasforma e sanifica il testo di un commento prima del salvataggio.
+ *
+ * @see docs/contracts/process-comment-action.md
+ *
+ * @contract docs/contracts/process-comment-action.md
+ */
 class ProcessCommentAction
 {
     use QueueableAction;

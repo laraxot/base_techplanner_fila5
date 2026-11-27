@@ -9,6 +9,13 @@ use Modules\Comment\Models\Comment;
 use Modules\Comment\Models\Contracts\CanComment;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Decide se un commento nuovo e' approvato senza moderazione.
+ *
+ * @see docs/contracts/should-automatically-approve-comment-action.md
+ *
+ * @contract docs/contracts/should-automatically-approve-comment-action.md
+ */
 class ShouldAutomaticallyApproveCommentAction
 {
     use QueueableAction;

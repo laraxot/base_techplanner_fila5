@@ -59,7 +59,6 @@ Replicazione delle 38 pagine statiche del progetto [Design Comuni Italia](https:
 | **Screenshots Ricerca** | [screenshots/risultati-ricerca/](../laravel/Themes/Sixteen/docs/design-comuni/screenshots/risultati-ricerca/) | Screenshots risultati ricerca |
 | **Screenshots Argomenti** | [screenshots/argomenti/](../laravel/Themes/Sixteen/docs/design-comuni/screenshots/argomenti/) | Screenshots argomenti |
 | **Screenshots All Pages** | [screenshots/all-pages/](../laravel/Themes/Sixteen/docs/design-comuni/screenshots/all-pages/) | Screenshots tutte 54 pagine |
-<<<<<<< .merge_file_qusjCE
 | **All Pages Analysis** | [ALL_PAGES_ANALYSIS.md](../laravel/Themes/Sixteen/docs/design-comuni/ALL_PAGES_ANALYSIS.md) | Analisi completa 54 pagine |
 | **Progress Report** | [PROGRESS_REPORT.md](../laravel/Themes/Sixteen/docs/design-comuni/PROGRESS_REPORT.md) | Report progresso aggiornato |
 | **Fail Pages Analysis** | [FAIL_PAGES_ANALYSIS.md](../laravel/Themes/Sixteen/docs/design-comuni/FAIL_PAGES_ANALYSIS.md) | Analisi pagine fail |
@@ -77,7 +76,6 @@ Replicazione delle 38 pagine statiche del progetto [Design Comuni Italia](https:
 | **Batch Progress Report** | [BATCH_PROGRESS_REPORT.md](../laravel/Themes/Sixteen/docs/design-comuni/BATCH_PROGRESS_REPORT.md) | Report progresso batch |
 | **Fail Pages Detail** | [FAIL_PAGES_DETAIL_REPORT.md](../laravel/Themes/Sixteen/docs/design-comuni/FAIL_PAGES_DETAIL_REPORT.md) | Analisi dettagliata 3 pagine fail |
 | **Fail Pages Fix Report** | [FAIL_PAGES_FIX_REPORT.md](../laravel/Themes/Sixteen/docs/design-comuni/FAIL_PAGES_FIX_REPORT.md) | Report fix pagine fail |
-=======
 | **All Pages Analysis** | [ALL_PAGES_ANALYSIS.md](../laravel/Themes/Sixteen/docs/design-comuni/all-pages-analysis.md) | Analisi completa 54 pagine |
 | **Progress Report** | [PROGRESS_REPORT.md](../progress-report.md) | Report progresso aggiornato |
 | **Fail Pages Analysis** | [FAIL_PAGES_ANALYSIS.md](../laravel/Themes/Sixteen/docs/design-comuni/fail-pages-analysis.md) | Analisi pagine fail |
@@ -95,7 +93,6 @@ Replicazione delle 38 pagine statiche del progetto [Design Comuni Italia](https:
 | **Batch Progress Report** | [BATCH_PROGRESS_REPORT.md](../laravel/Themes/Sixteen/docs/design-comuni/batch-progress-report.md) | Report progresso batch |
 | **Fail Pages Detail** | [FAIL_PAGES_DETAIL_REPORT.md](../laravel/Themes/Sixteen/docs/design-comuni/fail-pages-detail-report.md) | Analisi dettagliata 3 pagine fail |
 | **Fail Pages Fix Report** | [FAIL_PAGES_FIX_REPORT.md](../laravel/Themes/Sixteen/docs/design-comuni/fail-pages-fix-report.md) | Report fix pagine fail |
->>>>>>> .merge_file_zNxexk
 
 ### 🐙 GitHub Integration
 

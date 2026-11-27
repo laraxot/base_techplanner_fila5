@@ -3,7 +3,7 @@ title: "index"
 type: note
 tags: [documentation]
 created: 2026-09-26
-updated: 2026-09-26
+updated: 2026-11-26
 qmd: "index"
 issues: []
 discussions: []
@@ -11,183 +11,154 @@ discussions: []
 
 # Gdpr — Indice documentazione
 
-Indice organizzato per argomento di tutti i file `.md` sotto `Modules/Gdpr/docs/`. Nessun file esistente è stato rinominato o cancellato per generare questo indice.
+Indice dei file `.md` presenti sotto `Modules/Gdpr/docs/` dopo la consolidazione docs (unione dei due lati del merge: file mantenuti da entrambi i lati, link generati sui soli file esistenti).
 
-## Panoramica del modulo
 
-- [README.md](README.md) — panoramica, business logic dei consensi, link a documenti correlati
-- [CHANGELOG.md](CHANGELOG.md) — storico versioni
-- [architecture/structure.md](architecture/structure.md) — struttura architetturale del modulo
+## (root)
 
-## Conformità GDPR e consensi
+- [00-index.md](00-index.md)
+- [CHANGELOG.md](CHANGELOG.md)
+- [README.md](README.md)
+- [REDUNDANCY_ANALYSIS.md](REDUNDANCY_ANALYSIS.md)
+- [actions.md](actions.md)
+- [faq.md](faq.md)
+- [gdpr-module-overview.md](gdpr-module-overview.md)
+- [links.md](links.md)
+- [metodi_duplicati_analisi.md](metodi_duplicati_analisi.md)
+- [phpmd.md](phpmd.md)
+- [prd.md](prd.md)
+- [register-widget-copy-ownership.md](register-widget-copy-ownership.md)
+- [repo.md](repo.md)
+- [schema.md](schema.md)
 
-- [consents.md](consents.md) — gestione consensi
-- [cookie_consent.md](cookie_consent.md) — cookie consent (modulo)
-- [google_analytics.md](google_analytics.md) — integrazione Google Analytics
-- [cloudflare.md](cloudflare.md) — integrazione Cloudflare/Turnstile
-- [links.md](links.md) — collegamenti e riferimenti esterni
-- [repo.md](repo.md) — note sul repository
-- [filament.md](filament.md) — risorse Filament del modulo
-- [case-variant-collisions.md](case-variant-collisions.md) — collisioni di file per varianti di maiuscole/minuscole (rilevante per i duplicati elencati sotto)
-- [_integration/cookie-consent.md](_integration/cookie-consent.md) — integrazione cookie consent con altri moduli
-- [concepts/xotbase-never-extend-filament.md](concepts/xotbase-never-extend-filament.md) — regola XotBase applicata al modulo
-- [concepts/phpstan-probe-model-removal.md](concepts/phpstan-probe-model-removal.md) — nota tecnica su rimozione probe model
+## adr
 
-## Pacchetti integrati (packages/)
+- [README.md](adr/README.md)
+- [0001-account-deletion-deactivates-and-keeps-proof.md](adr/0001-account-deletion-deactivates-and-keeps-proof.md)
+- [0002-consent-proof-is-append-only.md](adr/0002-consent-proof-is-append-only.md)
+- [0003-cookie-banner-wired-by-the-module.md](adr/0003-cookie-banner-wired-by-the-module.md)
 
-- [packages/activity-log.md](packages/activity-log.md)
-- [packages/analytics.md](packages/analytics.md)
-- [packages/backup.md](packages/backup.md)
-- [packages/cookie-consent.md](packages/cookie-consent.md)
-- [packages/permissions.md](packages/permissions.md)
-- [packages/privacy.md](packages/privacy.md)
-- [packages/privacy-policy.md](packages/privacy-policy.md)
-- [packages/SECURITY.md](packages/security.md)
+## analysis
 
-## Generazione PDF (html2pdf/)
+- [dry-kiss-analysis.md](analysis/dry-kiss-analysis.md)
 
-- [html2pdf/README.md](html2pdf/README.md)
-- [html2pdf/usage.md](html2pdf/usage.md)
-- [html2pdf/advanced.md](html2pdf/advanced.md)
-- [html2pdf/laravel.md](html2pdf/laravel.md)
-- [html2pdf/SECURITY.md](html2pdf/security.md)
-- [html2pdf/styling.md](html2pdf/styling.md)
+## architecture
 
-## Qualità del codice e performance
+- [architecture.md](architecture/architecture.md)
 
-- [phpstan-report.md](phpstan-report.md) — report PHPStan
-- [phpmd-report.md](phpmd-report.md) — report PHPMD
-- [code-quality-report.md](code-quality-report.md)
-- [code-quality-improvement-report.md](code-quality-improvement-report.md)
-- [performance/bottlenecks.md](performance/bottlenecks.md)
+## bmad
 
-## Roadmap e pianificazione
+- [README.md](bmad/README.md)
 
-- [development/roadmap.md](development/roadmap.md)
-- [development/roadmap/backup-dati.md](development/roadmap/backup-dati.md)
-- [development/roadmap/cookie-consent.md](development/roadmap/cookie-consent.md)
-- [development/roadmap/log-attivita.md](development/roadmap/log-attivita.md)
-- [roadmap/README.md](roadmap/README.md)
-- [roadmap/index.md](roadmap/index.md)
-- [roadmap/overview.md](roadmap/overview.md)
-- [roadmap/vision.md](roadmap/vision.md)
-- [roadmap/goals.md](roadmap/goals.md)
-- [roadmap/current-state.md](roadmap/current-state.md)
-- [roadmap/now.md](roadmap/now.md)
-- [roadmap/next.md](roadmap/next.md)
-- [roadmap/later.md](roadmap/later.md)
-- [roadmap/milestones.md](roadmap/milestones.md)
-- [roadmap/phases.md](roadmap/phases.md)
-- [roadmap/workstreams.md](roadmap/workstreams.md)
-- [roadmap/risks.md](roadmap/risks.md)
-- [roadmap/quality.md](roadmap/quality.md)
-- [roadmap/quality-fixes-log.md](roadmap/quality-fixes-log.md)
-- [roadmap/backup-dati.md](roadmap/backup-dati.md)
-- [roadmap/cookie-consent.md](roadmap/cookie-consent.md)
-- [roadmap/log-attivita.md](roadmap/log-attivita.md)
-- [roadmap/roadmap.md](roadmap/roadmap.md)
-- [roadmap/roadmap-q4.md](roadmap/roadmap-q4.md)
-- [roadmap/-q4-roadmap.md](roadmap/-q4-roadmap.md)
-- [roadmap/legacy-roadmap.md](roadmap/legacy-roadmap.md)
+## charts
 
-Nota: `roadmap/` e `development/roadmap/` contengono coppie con lo stesso nome (`backup-dati.md`, `cookie-consent.md`, `log-attivita.md`) e più varianti di "roadmap" (`roadmap.md`, `roadmap-q4.md`, `-q4-roadmap.md`, `legacy-roadmap.md`, `overview.md`, `index.md`, `README.md`). Vedi sezione "Storico / da consolidare".
+- [README.md](charts/README.md)
 
-## Task e feature in corso
+## contracts
 
-- [tasks/tasks-index.md](tasks/tasks-index.md)
-- [tasks/cleanup-gdpr-docs.md](tasks/cleanup-gdpr-docs.md)
-- [tasks/gdpr-compliance-audit.md](tasks/gdpr-compliance-audit.md)
-- [tasks/gdpr-compliance-system.md](tasks/gdpr-compliance-system.md)
-- [tasks/gdpr-filament-v5.md](tasks/gdpr-filament-v5.md)
-- [tasks/features/data-modification-requests.md](tasks/features/data-modification-requests.md)
+- [README.md](contracts/README.md)
 
-## Prompt e automazioni
+## digests
 
-- [prompts/fix.md](prompts/fix.md)
+- [archive-raw.md](digests/archive-raw.md)
+- [archive-root-md-files.md](digests/archive-root-md-files.md)
+- [overflow-history.md](digests/overflow-history.md)
 
-## Output e materiale grafico
+## html2pdf
 
-- [charts/README.md](charts/README.md)
-- [outputs/README.md](outputs/README.md)
-- `screenshots/event-detail-page.png` — screenshot (non `.md`, referenziato per completezza)
+- [README.md](html2pdf/README.md)
 
-## Second brain / wiki interno (wiki/)
+## llm-wiki
 
-- [wiki/README.md](wiki/README.md)
-- [wiki/index.md](wiki/index.md)
-- [wiki/overview.md](wiki/overview.md)
-- [wiki/schema.md](wiki/schema.md)
-- [wiki/log.md](wiki/log.md)
-- [wiki/bmad-method.md](wiki/bmad-method.md)
-- [wiki/AGENTS.md](wiki/AGENTS.md)
-- [wiki/commands/index.md](wiki/commands/index.md)
-- [wiki/rules/index.md](wiki/rules/index.md)
-- [wiki/skills/index.md](wiki/skills/index.md)
-- [wiki/memories/index.md](wiki/memories/index.md)
-- [wiki/troubleshooting/git-merge-conflict-inventory.md](wiki/troubleshooting/git-merge-conflict-inventory.md)
-- [wiki/troubleshooting/git-merge-conflict-inventory-2026-04-28.md](wiki/troubleshooting/git-merge-conflict-inventory.md)
-- [wiki/_templates/concept.md](wiki/_templates/concept.md)
-- [wiki/_templates/entity.md](wiki/_templates/entity.md)
-- [wiki/_templates/source.md](wiki/_templates/source.md)
+- [agents.md](llm-wiki/agents.md)
 
-### Concetti wiki (wiki/concepts/)
+## manuals
 
-- [wiki/concepts/index.md](wiki/concepts/index.md)
-- [wiki/concepts/composer-root-minimal-nwidart.md](wiki/concepts/composer-root-minimal-nwidart.md)
-- [wiki/concepts/context-overflow-prevention.md](wiki/concepts/context-overflow-prevention.md)
-- [wiki/concepts/method-name-homonyms.md](wiki/concepts/method-name-homonyms.md)
-- [wiki/concepts/no-app-support-queueable-actions.md](wiki/concepts/no-app-support-queueable-actions.md)
-- [wiki/concepts/no-services-no-support-queueable-actions.md](wiki/concepts/no-services-no-support-queueable-actions.md)
-- [wiki/concepts/organizzativa-money.md](wiki/concepts/organizzativa-money.md)
-- [wiki/concepts/phpstan-compliance.md](wiki/concepts/phpstan-compliance.md)
-- [wiki/concepts/ponytail-audit.md](wiki/concepts/ponytail-audit.md)
-- [wiki/concepts/second-brain-local-discipline.md](wiki/concepts/second-brain-local-discipline.md)
-- [wiki/concepts/testing.md](wiki/concepts/testing.md)
+- [manuale-utente.md](manuals/manuale-utente.md)
 
-### Agenti LLM (llm-wiki/)
+## note-codice
 
-- [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md)
+- [README.md](note-codice/README.md)
 
-## Import grezzi (raw/)
+## outputs
 
-- [raw/README.md](raw/README.md)
-- [raw/index.md](raw/index.md)
-- [raw/root-import/CHANGELOG.md](raw/root-import/changelog.md)
-- [raw/root-import/cloudflare.md](raw/root-import/cloudflare.md)
-- [raw/root-import/consents.md](raw/root-import/consents.md)
-- [raw/root-import/cookie-consent.md](raw/root-import/cookie-consent.md)
-- [raw/root-import/filament.md](raw/root-import/filament.md)
-- [raw/root-import/google-analytics.md](raw/root-import/google-analytics.md)
-- [raw/root-import/links.md](raw/root-import/links.md)
-- [raw/root-import/repo.md](raw/root-import/repo.md)
+- [README.md](outputs/README.md)
 
-Le varianti `*-1.md` in `raw/root-import/` (`cloudflare-1.md`, `consents-1.md`, `cookie-consent.md`, `filament-1.md`, `google-analytics.md`, `links-1.md`, `repo-1.md`) sono duplicati byte-per-byte dei rispettivi file senza suffisso: vedi sezione "Storico / da consolidare".
+## roadmap
 
-## Storico / da consolidare (duplicati — non cancellati)
+- [README.md](roadmap/README.md)
+- [index.md](roadmap/index.md)
 
-I file seguenti sono duplicati o quasi-duplicati individuati durante l'audit. Non sono stati toccati: restano collegati qui per tracciabilità, in attesa di una consolidazione esplicita.
+## stories
 
-- **Indici concorrenti in root**: [00-index.md](00-index.md), [00-index.md](00-index.md), [index.md](index.md) contengono bozze di indice alternative a questo file (`index.md`), con contenuti diversi tra loro (una è uno stub auto-generato vuoto, un'altra un elenco "canoni/duplicati/deprecated", l'ultima un indice esteso con molti link a file oggi inesistenti nel modulo). Da valutare se unificare in questo `index.md`.
-- **README duplicato di contenuto**: [README.md](README.md) e [00-index.md](00-index.md) condividono lo stesso contenuto esteso (indice "Lettura essenziale" con link a file non presenti in `docs/`, es. `philosophy.md`, `consent-management.md`, `PRD.md`). Da verificare/pulire in futuro, non in questo task.
-- **`CHANGELOG.md` vs `CHANGELOG.md`**: contenuto identico. `CHANGELOG.md` è il nome canonico (maiuscolo, per standard `module-docs`).
-- **`cloudflare.md` / `cloudflare.txt` / `root-md-files/cloudflare.md` / `raw/root-import/cloudflare.md` / `raw/root-import/cloudflare-1.md`**: stesso argomento, versioni diverse (root `cloudflare.md` ha front-matter che rimanda al canonico in `Themes/docs/shared-components/cloudflare.md`; `root-md-files/cloudflare.md` contiene solo link grezzi).
-- **`consents.md` / `consents.txt` / `root-md-files/consents.md` / `raw/root-import/consents.md` / `raw/root-import/consents-1.md`**: stesso argomento in più formati/import.
-- **`cookie_consent.md` / `cookie_consent.txt` / `root-md-files/cookie-consent.md` / `raw/root-import/cookie-consent.md` / `raw/root-import/cookie-consent-1.md` / `_integration/cookie-consent.md` / `packages/cookie-consent.md` / `roadmap/cookie-consent.md` / `development/roadmap/cookie-consent.md`**: argomento "cookie consent" frammentato su 9 file in 6 directory diverse.
-- **`filament.md` / `filament.txt` / `root-md-files/filament.md` / `raw/root-import/filament.md` / `raw/root-import/filament-1.md`**: stesso argomento.
-- **`google_analytics.md` / `google_analytics.txt` / `root-md-files/google-analytics.md` / `raw/root-import/google-analytics.md` / `raw/root-import/google-analytics-1.md`**: stesso argomento.
-- **`links.md` / `links.txt` / `root-md-files/links.md` / `raw/root-import/links.md` / `raw/root-import/links-1.md`**: stesso argomento.
-- **`repo.md` / `repo.txt` / `root-md-files/repo.md` / `raw/root-import/repo.md` / `raw/root-import/repo-1.md`**: stesso argomento.
-- **`phpmd-report.md` / `phpmd-report.txt`**: stesso report in due formati.
-- **`phpstan-report.md` / `phpstan-report.txt`**: stesso report in due formati.
-- **`code-quality-report.md` vs `code-quality-improvement-report.md`**: possibile sovrapposizione di ambito, da verificare.
-- **Roadmap frammentata**: `roadmap/backup-dati.md` vs `development/roadmap/backup-dati.md`; `roadmap/cookie-consent.md` vs `development/roadmap/cookie-consent.md`; `roadmap/log-attivita.md` vs `development/roadmap/log-attivita.md`; inoltre `roadmap/roadmap.md`, `roadmap/roadmap-q4.md`, `roadmap/-q4-roadmap.md` e `roadmap/legacy-roadmap.md` sembrano variazioni/superseded dello stesso tema roadmap trimestrale.
-- **Indici `index.md` / `index.md` duplicati per-cartella** (stesso contenuto, stessa dimensione, entrambi presenti sul filesystem case-sensitive): `wiki/commands/`, `wiki/concepts/`, `wiki/rules/`, `wiki/skills/`, `wiki/memories/`. Il nome canonico minuscolo è `index.md`.
-- **Agenti duplicati**: [wiki/AGENTS.md](wiki/AGENTS.md), [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md), [llm-wiki/AGENTS.md](llm-wiki/AGENTS.md) trattano lo stesso argomento in tre file/varianti di maiuscole.
-- **`raw/root-import/*.md` vs le sue varianti `*-1.md`**: file duplicati byte-per-byte (stesso import eseguito due volte), elencati sopra.
+- [01.gdpr-phpstan-fix.story.md](stories/01.gdpr-phpstan-fix.story.md)
+- [02.gdpr-phpstan-attribute-regression-fix.story.md](stories/02.gdpr-phpstan-attribute-regression-fix.story.md)
+- [12.1.gdpr-owns-legal-pages.story.md](stories/12.1.gdpr-owns-legal-pages.story.md)
+- [continuation.story.md](stories/continuation.story.md)
+- [dcp-135-registrazione-documenti-accettati-termini-e-consensi-registrati.story.md](stories/dcp-135-registrazione-documenti-accettati-termini-e-consensi-registrati.story.md)
+- [dcp-136-cookie-inventario-informazione-e-guardia-sui-cookie-impostati.story.md](stories/dcp-136-cookie-inventario-informazione-e-guardia-sui-cookie-impostati.story.md)
+- [dcp-136a-cookie-banner-stato-reale-audit-visivo.story.md](stories/dcp-136a-cookie-banner-stato-reale-audit-visivo.story.md)
+- [dcp-140-diritti-dellinteressato-procedura-e-strumenti.story.md](stories/dcp-140-diritti-dellinteressato-procedura-e-strumenti.story.md)
+- [dcp-141-conservazione-log-e-minimizzazione-tecnica.story.md](stories/dcp-141-conservazione-log-e-minimizzazione-tecnica.story.md)
+- [dcp-142-accountability-registro-trattamenti-dpia-dpa-e-violazioni.story.md](stories/dcp-142-accountability-registro-trattamenti-dpia-dpa-e-violazioni.story.md)
+- [dcp-445-guardia-del-cablaggio-del-banner-cookie.story.md](stories/dcp-445-guardia-del-cablaggio-del-banner-cookie.story.md)
+- [dcp-454-terze-parti-prima-del-consenso-gravatar-e-openstreetmap.story.md](stories/dcp-454-terze-parti-prima-del-consenso-gravatar-e-openstreetmap.story.md)
+- [docs-index-audit.story.md](stories/docs-index-audit.story.md)
+- [gdpr-mixed-type-reduction.story.md](stories/gdpr-mixed-type-reduction.story.md)
+- [gdpr-module-bmad-setup.story.md](stories/gdpr-module-bmad-setup.story.md)
+- [gdpr-sync-phpstan-complete.story.md](stories/gdpr-sync-phpstan-complete.story.md)
+- [phpstan-cleanup-gdpr.story.md](stories/phpstan-cleanup-gdpr.story.md)
+- [placeholder-translations-cleanup.story.md](stories/placeholder-translations-cleanup.story.md)
+- [register-copy-project-agnostic.story.md](stories/register-copy-project-agnostic.story.md)
+- [xotbaseresourcetable-model-audit-gdpr-batch.story.md](stories/xotbaseresourcetable-model-audit-gdpr-batch.story.md)
 
-## Fuori ambito indice (non `.md`)
+## wiki
 
-- `prd.json` — dati strutturati PRD
-- `.gitignore` — regole di ignore locali a `docs/`
-- `root-code-workspace-files/_gdpr.code-workspace` — file di workspace VS Code
-- `screenshots/*.png`, cartelle `raw/*/.gitkeep`, `schema/.gitkeep` — placeholder/asset non testuali
+- [README.md](wiki/README.md)
+- [agents.md](wiki/agents.md)
+- [bmad-method.md](wiki/bmad-method.md)
+- [index.md](wiki/index.md)
+- [log.md](wiki/log.md)
+- [overview.md](wiki/overview.md)
+- [resource-table-columns.md](wiki/resource-table-columns.md)
+- [schema.md](wiki/schema.md)
+- [scopo.md](wiki/scopo.md)
+
+## wiki/_templates
+
+- [concept.md](wiki/_templates/concept.md)
+- [entity.md](wiki/_templates/entity.md)
+- [source.md](wiki/_templates/source.md)
+
+## wiki/commands
+
+- [index.md](wiki/commands/index.md)
+
+## wiki/concepts
+
+- [composer-root-minimal-nwidart.md](wiki/concepts/composer-root-minimal-nwidart.md)
+- [context-overflow-prevention.md](wiki/concepts/context-overflow-prevention.md)
+- [index.md](wiki/concepts/index.md)
+- [method-name-homonyms.md](wiki/concepts/method-name-homonyms.md)
+- [no-app-support-queueable-actions.md](wiki/concepts/no-app-support-queueable-actions.md)
+- [no-services-no-support-queueable-actions.md](wiki/concepts/no-services-no-support-queueable-actions.md)
+- [organizzativa-money.md](wiki/concepts/organizzativa-money.md)
+- [ponytail-audit.md](wiki/concepts/ponytail-audit.md)
+- [second-brain-local-discipline.md](wiki/concepts/second-brain-local-discipline.md)
+
+## wiki/memories
+
+- [index.md](wiki/memories/index.md)
+
+## wiki/rules
+
+- [index.md](wiki/rules/index.md)
+
+## wiki/skills
+
+- [index.md](wiki/skills/index.md)
+
+
+## wiki/troubleshooting
+
+- [git-merge-conflict-inventory.md](wiki/troubleshooting/git-merge-conflict-inventory.md)

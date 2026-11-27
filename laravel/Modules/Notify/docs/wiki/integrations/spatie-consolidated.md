@@ -1639,12 +1639,8 @@ Nel form di edit/create:
 ### Errore: Plugin Not Registered
 
 **Causa**: Plugin non registrato nel panel  
-<<<<<<< .merge_file_G9PqFk
 **Soluzione**: Vedere [plugin-spatie-translatable-not-registered.md](./errori/plugin-spatie-translatable-not-registered.md)
-=======
 **Soluzione**: Vedere [plugin-spatie-translatable-not-registered.md](../../errori/plugin-spatie-translatable-not-registered.md)
-**Soluzione**: Vedere [plugin-spatie-translatable-not-registered.md](../../errori/plugin-spatie-translatable-not-registered.md)
->>>>>>> .merge_file_TS0NDO
 
 ### Errore: Undefined Method `getTranslation()`
 

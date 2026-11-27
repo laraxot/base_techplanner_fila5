@@ -276,6 +276,48 @@ return [
         'delete' => [
             'label' => 'Elimina Schedule',
         ],
+        'profile' => [
+            'label' => 'profile',
+        ],
+        'logout' => [
+            'label' => 'logout',
+        ],
+        'createAnother' => [
+            'label' => 'createAnother',
+        ],
+        'cancel' => [
+            'label' => 'cancel',
+        ],
+        'add' => [
+            'label' => 'add',
+        ],
+        'addBetween' => [
+            'label' => 'addBetween',
+        ],
+        'clone' => [
+            'label' => 'clone',
+        ],
+        'collapse' => [
+            'label' => 'collapse',
+        ],
+        'collapseAll' => [
+            'label' => 'collapseAll',
+        ],
+        'expand' => [
+            'label' => 'expand',
+        ],
+        'expandAll' => [
+            'label' => 'expandAll',
+        ],
+        'moveDown' => [
+            'label' => 'moveDown',
+        ],
+        'moveUp' => [
+            'label' => 'moveUp',
+        ],
+        'reorder' => [
+            'label' => 'reorder',
+        ],
     ],
     'crud_widget' => [
         'heading' => 'Attività pianificate',
@@ -293,4 +335,7 @@ return [
     'status_widget' => [
         'heading' => 'Stato della schedulazione',
     ],
+    'title' => 'Nuova attività pianificata',
+    'heading' => 'Nuova attività pianificata',
+    'sub_heading' => 'Comando da eseguire a orari prestabiliti',
 ];

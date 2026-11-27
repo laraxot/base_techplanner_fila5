@@ -12,6 +12,10 @@ use Spatie\QueueableAction\QueueableAction;
  * Action per applicare il calendario al panel Filament.
  * NOTA: Temporaneamente disabilitato per migrazione a Filament v4.
  * Il pacchetto Saade\FilamentFullCalendar non è ancora compatibile con Filament v4.
+ *
+ * @see docs/contracts/apply-calendar-to-panel-action.md
+ *
+ * @contract docs/contracts/apply-calendar-to-panel-action.md
  */
 final class ApplyCalendarToPanelAction
 {

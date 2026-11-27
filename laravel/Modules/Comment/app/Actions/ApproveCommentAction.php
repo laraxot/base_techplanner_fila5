@@ -10,6 +10,13 @@ use Modules\Comment\Events\CommentApprovedEvent;
 use Modules\Comment\Models\Comment;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Doppione non usato di {@see \Modules\Comment\Actions\Comment\ApproveCommentAction}: config, modello, Filament e Folio
+ * chiamano quella. Non imitarlo e non aggiungerci logica.
+ *
+ * @see docs/contracts/approve-comment-action.md contratto dell'Action viva
+ * @deprecated usare Modules\Comment\Actions\Comment\ApproveCommentAction
+ */
 class ApproveCommentAction
 {
     use QueueableAction;

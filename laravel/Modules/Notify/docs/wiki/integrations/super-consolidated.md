@@ -471,14 +471,10 @@ Questa è la **terza implementazione** della giornata:
 ### Root Progetto
 - [View Cache Fix](./view-cache-components-fix.md)
 - [Transaction Fix](./transaction-removal-fix.md)
-<<<<<<< .merge_file_Cydbn8
 - [Setup Guide](./setup-guide.md)
-=======
 - [Setup Guide](../../bmad/setup-guide.md)
 - [View Cache Fix](../../view-cache-components-fix.md)
 - [Transaction Fix](../../transaction-removal-fix.md)
-- [Setup Guide](../../bmad/setup-guide.md)
->>>>>>> .merge_file_FBPZgT
 
 ### Package Documentation
 - [Spatie Laravel Permission](https://spatie.be/docs/laravel-permission)
@@ -2071,15 +2067,11 @@ supermemory add --tag <nome progetto> --content "<nome progetto> module: Ticket 
 ### 3. Theme Conventions
 Store theme development patterns:
 ```bash
-<<<<<<< .merge_file_Cydbn8
 supermemory add --tag laraxot --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', then symlink public_html/themes (npm run copy obsoleto) to public_html/themes/Sixteen/."
 supermemory add --tag <nome progetto> --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', then symlink public_html/themes (npm run copy obsoleto) to public_html/themes/Sixteen/."
 supermemory add --tag laraxot --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', served via symlink public_html/themes/Sixteen (no copy)."
 supermemory add --tag <nome progetto> --content "Sixteen theme: Bootstrap Italia classes replicated with Tailwind @apply. Vite outDir: './public', served via symlink public_html/themes/Sixteen (no copy)."
-=======
 niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
->>>>>>> .merge_file_FBPZgT
 ```
 
 ### 4. Development Workflows

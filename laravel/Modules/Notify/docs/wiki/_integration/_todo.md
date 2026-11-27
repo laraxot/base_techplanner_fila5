@@ -14,7 +14,4 @@ updated: 2026-10-06
 
 http://laradevsbd.com/story/laravel-notifications-with-database
 
-<<<<<<< .merge_file_kwH7xe
 Canonico: `laravel/Modules/Notify/docs/wiki/_integration/todo.md`. Qui non ci sono istruzioni: seguire il file collegato.
-=======
->>>>>>> .merge_file_R7ZLbm

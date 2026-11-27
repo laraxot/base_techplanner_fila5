@@ -6,9 +6,9 @@ created: 2026-07-14
 updated: 2026-11-17
 qmd: "f1 world champion theme zero integration analysis canonical"
 related:
-  - "./f1-world-champion-2026-theme-analysis.md"
-  - "../../screenshots/f1-world-champion-theme-analysis.md"
-  - "../../screenshots/f1-world-champion-2026-theme-analysis.md"
+  - "./f1-world-champion-theme-analysis.md"
+  - "f1-world-champion-theme-analysis.md"
+  - "f1-world-champion-theme-analysis.md"
 id: zero-docs-wiki-comparisons-f1-world-champion-theme-analysis
 slug: f1-world-champion-theme-analysis
 description: "Analisi integrazione Theme Zero per F1 World Champion (canonico senza data nel nome)"
@@ -16,9 +16,9 @@ document_type: guide
 category: documentation
 status: active
 aliases_superseded:
-  - "./f1-world-champion-2026-theme-analysis.md"
-  - "../../screenshots/f1-world-champion-theme-analysis.md"
-  - "../../screenshots/f1-world-champion-2026-theme-analysis.md"
+  - "./f1-world-champion-theme-analysis.md"
+  - "f1-world-champion-theme-analysis.md"
+  - "f1-world-champion-theme-analysis.md"
 issues: []
 discussions: []
 ---

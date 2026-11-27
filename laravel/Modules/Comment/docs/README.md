@@ -15,7 +15,7 @@ discussions: []
 
 **Scopo:** abilitare commenti contestuali (thread, reazioni, moderazione, opt-in notifiche) su record dominio come Ticket e Article, cosi' Fixcity/Blog restano owner del contenuto e Comment resta owner di persistenza, policy e chrome Filament.
 
-Ingresso della documentazione del modulo. Ogni affermazione e' stata confrontata con il codice il 2026-10-14. Hub BMAD: [bmad/decision-log.md](./bmad/decision-log.md), [bmad/filament-blueprint.md](./bmad/filament-blueprint.md).
+Ingresso della documentazione del modulo. Ogni affermazione e' stata confrontata con il codice il 2026-10-14. Hub BMAD: [bmad/decision-log.md](../archive/docs-legacy/bmad/decision-log.md), [bmad/filament-blueprint.md](../archive/docs-legacy/bmad/filament-blueprint.md).
 
 ## Identita' e ownership
 
@@ -45,16 +45,14 @@ Ingresso della documentazione del modulo. Ogni affermazione e' stata confrontata
 
 ## Limiti
 
-<<<<<<< .merge_file_x4ceMG
 ### 🎨 **Filament Integration**
 - [MCP Server](mcp-server-recommended.md) - Server MCP consigliati
 - [Roadmap 2025](roadmap.md) - Piano sviluppo
-=======
+
 1. Rotte: `routes/web.php` e `routes/api.php` sono vuoti; `php artisan route:list --json` mostra 6 rotte, tutte del pannello Filament `comment/admin`. Le viste `folio-moderation/` non sono montate da nessun file di `app/` (grep); se siano raggiunte da Folio a livello di progetto non e' verificato.
 2. Dipendenza residua da Spatie: `app/Actions/SanitizeCommentTextAction.php` importa `Spatie\Comments\Support\CommentSanitizer`; `packages/spatie/` e' ancora presente e risolto dall'autoload del progetto. La fase 4 (rimozione) dell'internalizzazione non e' fatta.
 3. Documenti in ritardo sul codice: [ticket-comments.md](./ticket-comments.md) descrive il trait Spatie sul `Ticket` (oggi e' `Modules\Comment\Models\Concerns\HasComments`); lo stato di [native-comments-engine.md](./native-comments-engine.md) e' fermo al 2026-06-06.
 4. Suite Pest non affidabile oggi: su DB usa-e-getta il 2026-10-14 3 test passano e 41 falliscono con `SQLiteDatabaseDoesNotExistException`.
->>>>>>> .merge_file_VQRzYQ
 
 ## Quick start
 
@@ -69,4 +67,4 @@ DB_DATABASE_LIMESURVEY= bash ../bashscripts/tools/pest-scratch-db.sh Modules/Com
 
 ## Mappa della documentazione
 
-Indice operativo: [00-INDEX.md](./00-index.md). Indice per argomento: [index.md](./index.md). Hub del motore: [native-comments-engine.md](./native-comments-engine.md). Registro: [wiki/log.md](./wiki/log.md). Story: [stories/](./stories/).
+Indice operativo: [00-INDEX.md](./00-index.md). Indice per argomento: [index.md](./index.md). Hub del motore: [native-comments-engine.md](./native-comments-engine.md). Registro: [wiki/log.md](../archive/docs-legacy/wiki/log.md). Story: [stories/](./stories/). Server MCP consigliati: [mcp-server-recommended.md](../archive/docs-legacy/mcp-server-recommended.md). Piano di sviluppo: [roadmap.md](./roadmap.md).

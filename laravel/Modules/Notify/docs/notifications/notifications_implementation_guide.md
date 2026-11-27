@@ -170,15 +170,9 @@ public function toMail(object $notifiable): \Illuminate\Mail\Mailable
 
 ## Collegamenti alla Documentazione Correlata
 
-<<<<<<< .merge_file_8srs3s
 - [ATTACHMENTS_USAGE.md](../email-sending/ATTACHMENTS_USAGE.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/EMAIL_LAYOUTS_BEST_PRACTICES.md)
 - [EMAIL_TROUBLESHOOTING.md](../email-sending/EMAIL_TROUBLESHOOTING.md)
-=======
 - [ATTACHMENTS_USAGE.md](../email-sending/attachments_usage.md)
 - [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
 - [EMAIL_TROUBLESHOOTING.md](../email-sending/email_troubleshooting.md)
-- [ATTACHMENTS_USAGE.md](../email-sending/attachments_usage.md)
-- [EMAIL_LAYOUTS_BEST_PRACTICES.md](../mail-templates/email_layouts_best_practices.md)
-- [EMAIL_TROUBLESHOOTING.md](../email-sending/email_troubleshooting.md)
->>>>>>> .merge_file_AaTkGF

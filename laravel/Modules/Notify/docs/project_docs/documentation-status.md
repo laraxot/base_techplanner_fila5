@@ -13,6 +13,8 @@ related:
   - "./architecture.md"
   - "./complete-refactoring-analysis.md"
   - "./final-implementation-report.md"
+  - "./excellence-achievement.md"
+  - "./final-implementation-report-.md"
   - "./final-implementation-report-1.md"
   - "./final-implementation-report.md"
   - "./final-refactoring-report.md"
@@ -412,12 +414,8 @@ consolidamento seguendo le roadmap definite. Focus attuale: completamento docume
 ## 🔗 COLLEGAMENTI UTILI
 
 ### Roadmap Principali
-<<<<<<< .merge_file_ACGHPs
 - [Master Roadmap](../laravel/master-roadmap.md)
-=======
 - [Master Roadmap](../master-roadmap.md)
-- [Master Roadmap](../master-roadmap.md)
->>>>>>> .merge_file_dVrxuQ
 - [Roadmap Status Summary](../roadmap-status-summary.md)
 - [Roadmap Technical](./roadmaps/roadmap-technical.md)
 - [Roadmap Quality](./roadmaps/roadmap-quality.md)

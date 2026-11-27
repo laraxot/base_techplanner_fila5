@@ -12,6 +12,13 @@ use Modules\Comment\Models\Contracts\CanComment;
 use Modules\Comment\Notifications\PendingCommentNotification;
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * Risolve chi sono i moderatori di un commento, dalla closure `PendingCommentNotification::sendTo`.
+ *
+ * @see docs/contracts/resolve-comment-approving-users-action.md
+ *
+ * @contract docs/contracts/resolve-comment-approving-users-action.md
+ */
 class ResolveCommentApprovingUsersAction
 {
     use QueueableAction;

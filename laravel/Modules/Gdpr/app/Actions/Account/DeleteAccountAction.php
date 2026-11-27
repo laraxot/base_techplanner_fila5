@@ -27,6 +27,8 @@ use Spatie\QueueableAction\QueueableAction;
  * dall'art. 30 (registro dei trattamenti). I consensi Gdpr vengono revocati e
  * registrati come tali; i log di activity vengono soft-deleted insieme all'utente.
  *
+ * @see docs/contracts/delete-account-action.md
+ *
  * @contract docs/contracts/delete-account-action.md
  */
 class DeleteAccountAction

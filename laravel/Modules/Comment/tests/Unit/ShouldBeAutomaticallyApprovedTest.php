@@ -27,7 +27,7 @@ test('shouldBeAutomaticallyApproved returns true when config approves all', func
     $comment = new Comment;
 
     Assert::assertTrue($comment->shouldBeAutomaticallyApproved());
-});
+})->group('COMMENT-AUTOAPPROVE-INV-1');
 
 test('shouldBeAutomaticallyApproved returns true when commentator is approving user', function (): void {
     $approver = new ParityCommentatorStub(42);
@@ -38,7 +38,7 @@ test('shouldBeAutomaticallyApproved returns true when commentator is approving u
     $comment->setRelation('commentator', $approver);
 
     Assert::assertTrue($comment->shouldBeAutomaticallyApproved());
-});
+})->group('COMMENT-AUTOAPPROVE-INV-2', 'COMMENT-APPROVERS-INV-1');
 
 test('shouldBeAutomaticallyApproved returns false for non-approving commentator', function (): void {
     $approver = new ParityCommentatorStub(1);
@@ -50,7 +50,7 @@ test('shouldBeAutomaticallyApproved returns false for non-approving commentator'
     $comment->setRelation('commentator', $commentator);
 
     Assert::assertFalse($comment->shouldBeAutomaticallyApproved());
-});
+})->group('COMMENT-AUTOAPPROVE-INV-3', 'COMMENT-APPROVERS-INV-1');
 
 test('automatically_approve_all_comments reads config', function (): void {
     config(['comments.automatically_approve_all_comments' => true]);

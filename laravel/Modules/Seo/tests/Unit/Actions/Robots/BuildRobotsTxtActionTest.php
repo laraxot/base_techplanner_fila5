@@ -20,7 +20,7 @@ it('closes every private area in every supported locale', function (): void {
         }
     }
     Assert::assertContains('Disallow: /*/admin', $lines);
-});
+})->group('SEO-ROBOTS-INV-1');
 
 it('declares the sitemap with an absolute url and ends with a newline', function (): void {
     $robots = app(BuildRobotsTxtAction::class)->execute();
@@ -28,11 +28,11 @@ it('declares the sitemap with an absolute url and ends with a newline', function
     Assert::assertStringStartsWith("User-agent: *\n", $robots);
     Assert::assertStringContainsString("\nSitemap: ".url('/sitemap.xml')."\n", $robots);
     Assert::assertStringEndsWith("\n", $robots);
-});
+})->group('SEO-ROBOTS-INV-2');
 
 it('serves plain text', function (): void {
     $response = app(BuildRobotsTxtAction::class)();
 
     Assert::assertSame(200, $response->getStatusCode());
     Assert::assertStringStartsWith('text/plain', (string) $response->headers->get('Content-Type'));
-});
+})->group('SEO-ROBOTS-INV-3');

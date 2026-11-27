@@ -204,7 +204,7 @@ MIT
 ## Standard Rules & Workflow
 
 - [[BMAD Method](../../../../docs/wiki/concepts/bmad-method.md)]
-- [[Context Engineering](../../../../docs/wiki/concepts/context-engineering.md)]
+- [[Context Engineering](../../../../../bashscripts/ai/wiki/concepts/context-token-optimization.md#context-engineering)]
 - [[LLM Wiki Governance](../../../../docs/wiki/concepts/llm-wiki-governance.md)]
 
 ## Documentation
@@ -305,7 +305,7 @@ php artisan ui:test-components
 ### 🏗️ **Architettura**
 - [Components Guide](components.md) - Guida completa componenti
 - [Design System](design-system.md) - Sistema design modulare
-- [Architecture Rules](../archive/architecture_rules.md) - Regole architetturali
+- [Architecture Rules](../archive/architecture-rules.md) - Regole architetturali
 - [Best Practices](best-practices.md) - Linee guida sviluppo
 
 ### 🔗 **Collegamenti Moduli**

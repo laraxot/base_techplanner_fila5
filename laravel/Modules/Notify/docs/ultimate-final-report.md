@@ -55,6 +55,7 @@ Trasformato FixCity da progetto con documentazione parziale a piattaforma enterp
 3. quick-start.md
 4. project-completion-status.md
 5. excellence-2025.md
+5. excellence-year-note-snake.md
 6. final-summary.md
 7. WORK-COMPLETED-.md.md
 8. gap-analysis-implementation.md

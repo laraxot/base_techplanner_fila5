@@ -6,6 +6,11 @@ namespace Modules\Job\Actions;
 
 use Spatie\QueueableAction\QueueableAction;
 
+/**
+ * @see docs/contracts/dummy-action.md
+ *
+ * @contract docs/contracts/dummy-action.md
+ */
 class DummyAction
 {
     use QueueableAction;

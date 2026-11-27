@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 return [
     'fields' => [
+        'user' => [
+            'name' => [
+                'label' => 'Utente',
+            ],
+        ],
         'id' => [
             'label' => 'ID',
         ],
@@ -12,11 +17,6 @@ return [
         ],
         'created_at' => [
             'label' => 'Creato il',
-        ],
-        'user' => [
-            'name' => [
-                'label' => 'Utente',
-            ],
         ],
         'first_name' => [
             'label' => 'Nome',

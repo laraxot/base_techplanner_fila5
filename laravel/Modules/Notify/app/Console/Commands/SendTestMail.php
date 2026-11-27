@@ -49,21 +49,22 @@ final class SendTestMail extends Command
             return self::FAILURE;
         }
 
-        $email = (new MailtrapEmail)
-            ->from(new Address(
-                $this->configString('mail.from.address', 'noreply@fixcity.eu'),
-                $this->configString('mail.from.name', 'FixCity'),
-            ))
-            ->to(new Address($recipient))
-            ->subject($this->textInput($this->option('subject')) ?: 'FixCity test email')
-            ->category('Integration Test')
-            ->text('Test email sent by FixCity (notify:test-mail).');
+        $email = new MailtrapEmail;
+        $email->from(new Address(
+            $this->configString('mail.from.address', 'noreply@fixcity.eu'),
+            $this->configString('mail.from.name', 'FixCity'),
+        ));
+        $email->to(new Address($recipient));
+        $email->subject($this->textInput($this->option('subject')) ?: 'FixCity test email');
+        $email->category('Integration Test');
+        $email->text('Test email sent by FixCity (notify:test-mail).');
 
         try {
-            $response = MailtrapClient::initSendingEmails(
+            $client = MailtrapClient::initSendingEmails(
                 apiKey: $apiKey,
                 isBulk: false,
-            )->send($email);
+            );
+            $response = $client->send($email);
 
             $this->info('Email sent successfully to '.$recipient.'.');
             $this->line(json_encode(ResponseHelper::toArray($response)));

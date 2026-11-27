@@ -10,6 +10,11 @@ use Modules\Job\Models\Schedule;
 use Spatie\QueueableAction\QueueableAction;
 use Webmozart\Assert\Assert;
 
+/**
+ * @see docs/contracts/get-active-schedules-action.md
+ *
+ * @contract docs/contracts/get-active-schedules-action.md
+ */
 class GetActiveSchedulesAction
 {
     use QueueableAction;

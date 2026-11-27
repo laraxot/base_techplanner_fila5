@@ -24,7 +24,7 @@ use function Safe\strtotime;
  * Gira a ogni deploy (deploy.sh): IndexNow vuole URL nuove o cambiate, non la sitemap intera ogni volta. Lo stato e'
  * `storage/app/seo/indexnow-submitted.json`: URL => data dell'ultimo invio riuscito. Senza chiave non fa nulla.
  *
- * @see Modules/Seo/docs/adr/search-engine-presence.md
+ * @see Modules/Seo/docs/adr/0002-search-engine-presence.md
  * @see Modules/Seo/docs/contracts/submit-index-now-action.md
  */
 final class SubmitIndexNowCommand extends Command

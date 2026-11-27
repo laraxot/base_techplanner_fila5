@@ -78,11 +78,7 @@ Consolidare la documentazione rimuovendo duplicati e file obsoleti, mantenendo u
 - ❌ `phpstan_corrections_summary.md` → Eliminare (duplicato)
 - ❌ `phpstan_radio_badge_fix.md` → Eliminare (duplicato)
 - ✅ `phpstan-compliance.md` → Mantenere (documento principale)
-<<<<<<< .merge_file_2yxYy5
 - ✅ `phpstan-fixes.md` → Mantenere (se contiene info aggiuntive)
-=======
-- ✅ `phpstan-fixes-.md` → Mantenere (se contiene info aggiuntive)
->>>>>>> .merge_file_0qkdhX
 - ✅ `phpstan-corrections-summary.md` → Mantenere
 - ✅ `phpstan-corrections.md` → Mantenere
 - ✅ `phpstan-fixes.md` → Mantenere
@@ -133,11 +129,7 @@ Consolidare la documentazione rimuovendo duplicati e file obsoleti, mantenendo u
 
 1. `dry-kiss-analysis-[DATE].md` → `archive/dry-kiss-analysis.md`
 2. `phpstan-level-10-cleanup-[DATE].md` → `archive/phpstan-level-10-cleanup.md`
-<<<<<<< .merge_file_2yxYy5
 3. `phpstan-fixes.md` → Consolidare in `phpstan-compliance.md`
-=======
-3. `phpstan-fixes-correzioni-gennaio.md` → Consolidare in `phpstan-compliance.md`
->>>>>>> .merge_file_0qkdhX
 
 ## File con Maiuscole (da Rinominare)
 

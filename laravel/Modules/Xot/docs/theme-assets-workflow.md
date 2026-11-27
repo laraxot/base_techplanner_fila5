@@ -1,198 +1,77 @@
 ---
-title: "Theme Assets Workflow - CSS/JS Frontend"
+title: "Theme assets workflow — CSS e JavaScript frontend"
 type: note
 status: active
-<<<<<<< .merge_file_AhS8xc
-updated: 2026-11-18
-tags: [docs, xot, themes, deploy]
-qmd: "theme assets workflow - css/js frontend xot symlink public_html themes"
-=======
-updated: 2026-11-11
+updated: 2026-11-26
 tags: [docs, xot, assets, themes, symlink, deploy]
-qmd: "theme assets workflow css js frontend build xot symlink public_html themes npm run copy obsoleto"
->>>>>>> .merge_file_A5tGLd
+qmd: "theme assets workflow css js frontend build symlink public_html vite"
 related:
   - ../app/Console/Commands/ThemeLinkCommand.php
   - ../app/Console/Commands/ModuleLinkCommand.php
 ---
-# Asset dei temi: build nel tema, servizio per symlink
 
-**Regola:** CSS e JS del front office si modificano nella cartella del tema (`laravel/Themes/<Tema>/resources`), si
-compilano lì, e il risultato va in `laravel/Themes/<Tema>/public`. Nessuna copia verso la document root:
-**`npm run copy` non esiste più e non va usato** — copiare i file in `public_html/` romperebbe il symlink e
-lascerebbe asset vecchi.
+# Asset dei temi: build nel tema, symlink verso la document root
+
+CSS e JavaScript del front office si modificano in
+`laravel/Themes/<Tema>/resources`, si compilano nella cartella del tema e
+producono asset in `laravel/Themes/<Tema>/public`. `public_html` è la document
+root e non va cancellata né usata come destinazione di copie.
 
 ## Struttura
 
-```
-base_<progetto>/
-├── laravel/Themes/<Tema>/
-│   ├── resources/      sorgenti CSS/JS
-│   └── public/         asset compilati da Vite (outDir)
-└── public_html/        DOCUMENT ROOT — non va mai cancellata
-    ├── themes/<Tema>  -> ../../laravel/Themes/<Tema>/public   (symlink relativo)
-    └── assets/xot     -> ../../laravel/Modules/Xot/public     (symlink relativo)
+```text
+laravel/Themes/<Tema>/resources  -> sorgenti
+laravel/Themes/<Tema>/public     -> output Vite versionato
+public_html/themes/<Tema>        -> ../../laravel/Themes/<Tema>/public
+public_html/assets/<modulo>      -> ../../laravel/Modules/<Modulo>/public
 ```
 
-<<<<<<< .merge_file_AhS8xc
-- `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
-- `public_html` è la document root: non si cancella né si svuota mai.
-- I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
-  installazione, in due modi equivalenti:
-  - `deploy.sh` (funzione `link_public`, prima di `composer install`), in modo idempotente. Se al posto del link
-    c'è una cartella vera (vecchia copia, ignorata da git), la sposta in `laravel/storage/backups/` senza
-    cancellarla e crea il link; un link con un percorso diverso viene corretto.
-  - i comandi artisan `php artisan xot:theme-link` e `php artisan xot:module-link` (con `--dry-run` per
-    provare). Dettagli: [console/commands/xot-asset-links.md](console/commands/xot-asset-links.md).
-    I comandi aggiungono anche il nome del link al `.gitignore` della cartella del docroot (`<nome>/` e
-    `<nome>`). In questo repository i link esistenti sono comunque tracciati (`git add -f`), così un clone
-    funziona senza comandi; le due righe sono già presenti, per cui i comandi non modificano il `.gitignore`
-    sul server. Motivi e verifica: [wiki/concepts/public-html-symlink-assets.md](wiki/concepts/public-html-symlink-assets.md).
-=======
-## Come arrivano al browser
+I link sono relativi e si creano con `deploy.sh`,
+`php artisan xot:theme-link` o `php artisan xot:module-link` (`--dry-run` per
+controllare prima). Una cartella vera al posto del link viene preservata e
+spostata nella directory di backup prevista dal deploy; non viene cancellata.
 
-```
-public_html/themes/<Tema>   ->   ../../laravel/Themes/<Tema>/public      (symlink relativo)
-public_html/assets/<modulo> ->   ../../laravel/Modules/<Modulo>/public   (symlink relativo)
-```
-
-- `@vite([...], 'themes/<Tema>')` legge `public_html/themes/<Tema>/manifest.json`, cioè il manifest del tema.
-- `public_html` è la document root: non si cancella né si svuota mai.
-- I symlink sono **relativi** (restano validi se il progetto cambia percorso) e si creano una volta per
-  installazione, in due modi:
-  - `deploy.sh` (funzione `link_public_asset`), in modo idempotente. Se al posto del link c'è una cartella
-    vera (vecchia copia o vecchia build), lo script la sposta fuori dalla document root in
-    `$DEPLOY_ASSETS_BACKUP_DIR` (non la cancella) e la sostituisce con il link.
-  - i comandi artisan `php artisan xot:theme-link` e `php artisan xot:module-link` (con `--dry-run` per
-    provare). Davanti a una cartella vera o a un link che punta altrove avvisano e la saltano: per
-    sostituirla serve `--force`, dopo averne controllato il contenuto. Sorgenti:
-    `app/Console/Commands/ThemeLinkCommand.php`, `app/Console/Commands/ModuleLinkCommand.php`.
-    I comandi aggiungono anche il nome del link al `.gitignore` della cartella del docroot: il link non si
-    committa, lo crea ogni installazione.
->>>>>>> .merge_file_A5tGLd
-
-**Perché un symlink e non `npm run copy`:**
-
-- **Una sola copia degli asset.** L'output della build è versionato nel repository del tema (`Themes/<Tema>/public`),
-  quindi ciò che si committa è ciò che si serve. Con la copia, `public_html` andava fuori sincronia appena qualcuno
-  dimenticava il comando.
-- **Niente passo manuale nel deploy.** Basta il `git pull` del tema.
-- **Il web server vede solo `public`.** I sorgenti del tema (`resources`, `node_modules`, script) restano fuori dalla
-  document root.
-
-## Lavorare su un tema
+## Processo
 
 ```bash
 cd laravel/Themes/<Tema>
-npm install      # prima volta
-npm run dev      # sviluppo con hot reload
-npm run build    # produzione: scrive in ./public (servito dal symlink)
+npm install             # solo la prima volta
+npm run dev             # sviluppo
+npm run build           # produzione: scrive in ./public
 ```
 
-<<<<<<< .merge_file_AhS8xc
-
-## Lavorare su un tema
-
-```bash
-cd Themes/One
-npm install          # Prima volta
-npm run build        # Compila Sass/JS
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-```
-
-### Tema Two
-```bash
-cd Themes/Two
-npm install
-npm run build
-# niente npm run copy: public_html/themes/<Tema> è un symlink a ../../laravel/Themes/<Tema>/public
-```
-=======
-Vale per ogni tema: si lavora sempre dalla cartella del tema, mai dalla root Laravel.
->>>>>>> .merge_file_A5tGLd
-
-## package.json e vite.config.js del tema
-
-```json
-{
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "watch": "vite build --watch"
-  }
-}
-```
-
-```javascript
-export default defineConfig({
-  build: {
-    outDir: 'public'
-  }
-});
-```
-
-<<<<<<< .merge_file_AhS8xc
-## 🐛 Troubleshooting
-
-### Modifiche Non Visibili?
-1. Verificare di aver eseguito `npm run build`
-2. niente `npm run copy`: `public_html/themes/<Tema>` è un symlink a `../../laravel/Themes/<Tema>/public`
-3. Svuotare cache browser (Ctrl+F5)
-4. Verificare path corretti in vite.config.js
-
-### Errori di Build?
-1. `npm install` nella cartella tema
-2. Verificare versioni Node/npm
-3. Controllare sintassi Sass/JS
-4. Verificare dipendenze in package.json
-
----
-
-**⚠️ RICORDA**: Il workflow dei temi è DIVERSO dal normale workflow Laravel. Sempre theme → build → copy → public!
-=======
->>>>>>> .merge_file_A5tGLd
-Lo script `copy` è stato tolto da `package.json` dei temi: non serve più.
+`@vite([...], 'themes/<Tema>')` legge il manifest sotto
+`public_html/themes/<Tema>/manifest.json`. Per i moduli, l'output pubblico vive
+sempre in `Modules/<Modulo>/public`; `AssetAction` restituisce l'URL sotto
+`/assets/<modulo>` e non copia file da `resources`.
 
 ## Non fare
 
-- Non modificare a mano i file compilati in `Themes/<Tema>/public` o in `public_html/`.
-- Non lanciare `npm run build` dalla root Laravel per gli asset di un tema.
-- Non sostituire i symlink di `public_html/` con copie dei file, e non cancellare `public_html/`.
-- Non aggiungere uno script `copy` al `package.json` del tema.
+- Non modificare a mano `public_html/`, `public/css/` o `public/js/`.
+- Non eseguire `npm run build` dalla root Laravel per gli asset di un tema.
+- Non sostituire i symlink con copie e non aggiungere un comando `copy` ai
+  `package.json` dei temi.
+- Non cancellare `public_html`: è la document root.
 
-## Asset dei moduli: stessa regola
+## Verifica
 
-Ogni modulo che espone file al browser li tiene in `Modules/<Modulo>/public`, versionata nel repository del modulo:
-ad esempio Geo (build Vite, `outDir: './public'`), Xot (css del pannello), un modulo di dominio con le sue icone
-(`public/svg` -> `../resources/svg`).
+```bash
+ls -la public_html/themes public_html/assets
+test -L public_html/themes/<Tema>
+test -f laravel/Themes/<Tema>/public/manifest.json
+```
 
-- `deploy.sh` e `xot:module-link` creano un link per ogni `Modules/*/public`. Il nome è in minuscolo perché gli URL
-  lo sono (`/assets/geo/...`), e così resta uguale al namespace usato da `AssetAction`
-  (`xot::css/x.css` -> `/assets/xot/css/x.css`).
-- `public_html/assets/.gitignore` elenca `<modulo>/` (e la stessa voce senza barra, perché git vede un symlink come un
-  file): il repository radice non versiona i link, che sono un prodotto del deploy, né il loro contenuto, che
-  appartiene al modulo. Il test `Modules/Xot/tests/Unit/Deploy/ModulePublicAssetsLinksTest.php` fallisce se un modulo
-  con `public/` manca dall'elenco.
-- `AssetAction` cerca prima in `Modules/<Modulo>/public` e restituisce l'URL sotto `/assets/<modulo>` senza copiare;
-  la copia da `resources/` resta solo come ripiego per i moduli non ancora migrati.
-- Una cartella vera trovata al posto del link (vecchia copia o vecchia build) viene spostata da `deploy.sh` fuori dalla
-  document root, in `$DEPLOY_ASSETS_BACKUP_DIR` (default sotto `$HOME`, vedi l'intestazione di `deploy.sh`), e
-  sostituita dal link. `public_html` non si tocca.
-
-Modulo nuovo con asset pubblici: crea `Modules/<Modulo>/public`, aggiungi `<modulo>/` e `<modulo>` a
-`public_html/assets/.gitignore`, esegui `deploy.sh` o `php artisan xot:module-link` (o il `ln -s` a mano in sviluppo).
+Per un modulo nuovo: creare `Modules/<Modulo>/public`, aggiungere il nome del
+link al `.gitignore` di `public_html/assets`, poi eseguire il comando di link.
 
 ## Problemi comuni
 
-| Sintomo | Causa | Cosa fare |
-| --- | --- | --- |
-| `ViteManifestNotFoundException` per `themes/<Tema>` | Manca il symlink o la build del tema | Controlla `ls -la public_html/themes/`; esegui `deploy.sh` o `php artisan xot:theme-link`; `npm run build` nel tema |
-| Modifiche non visibili dopo la build | `public_html/themes/<Tema>` è una cartella vera (copia vecchia) o il link è rotto | `ls -la public_html/themes`: se è una cartella normale, rinominala e ricrea il link con `xot:theme-link` (o `--force`); svuota la cache del browser (Ctrl+F5) |
-| CSS vecchio dopo una modifica | Build del tema non eseguita o non committata | `npm run build` nel tema e commit di `public/` |
-| Icone di un modulo mancanti (`/assets/<modulo>/svg/*.svg`) | Manca `public_html/assets/<modulo>` | Lo crea `deploy.sh` o `php artisan xot:module-link` (link a `Modules/<Modulo>/public`) |
-| Campo mappa assente nei pannelli (`assets/geo/manifest.json`) | Manca `public_html/assets/geo` o la build Geo non è committata | `deploy.sh` o `xot:module-link`; in sviluppo `cd Modules/Geo && ../../node_modules/.bin/vite build` e commit di `public/` |
-<<<<<<< .merge_file_AhS8xc
-| Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
-=======
-| Errori di build | Dipendenze o ambiente | `npm install` nella cartella del tema; verificare versioni di Node/npm; controllare la sintassi Sass/JS, `build.outDir` in `vite.config.js` (deve essere `public`) e le dipendenze in `package.json` |
->>>>>>> .merge_file_A5tGLd
+| Sintomo | Controllo |
+|---|---|
+| `ViteManifestNotFoundException` | symlink e `public/manifest.json`, poi `npm run build` nel tema |
+| modifiche non visibili | verificare che `public_html/themes/<Tema>` sia un symlink e svuotare la cache browser |
+| CSS vecchio | build del tema non eseguita o output non versionato |
+| asset modulo mancanti | `public_html/assets/<modulo>` e `Modules/<Modulo>/public` |
+
+Il test `Modules/Xot/tests/Unit/Deploy/ModulePublicAssetsLinksTest.php` controlla
+che i moduli con `public/` siano rappresentati nei link di deploy.

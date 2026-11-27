@@ -6,10 +6,10 @@ namespace Modules\UI\Tests\Unit;
 
 use Illuminate\Auth\GenericUser;
 use Illuminate\Contracts\Auth\Authenticatable;
-use Modules\User\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Modules\UI\Actions\GetUserDataAction;
 use Modules\UI\Tests\TestCase;
+use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
@@ -24,22 +24,28 @@ uses(TestCase::class);
  * connessione. Non è una scorciatoia — è il modo di provare la logica dell'azione invece
  * della disponibilità del database.
  *
- * @param array<int, string>   $roles
- * @param array<int, string>   $permissions
- * @param array<string, mixed> $attributes
+ * @see Modules/UI/docs/contracts/get-user-data-action.md
+ *
+ * @param  array<int, string>  $roles
+ * @param  array<int, string>  $permissions
+ * @param  array<string, mixed>  $attributes
  */
 function uiAuthUser(array $roles = [], array $permissions = [], array $attributes = []): Authenticatable
 {
-    $user = new class extends User {
+    $user = new class extends User
+    {
         public ?object $profile = null;
 
         public function relationLoaded(mixed $key): bool
         {
-            if (! is_string($key)) {
-                return false;
+            // Solo `profile` e' simulato. Le altre relazioni (roles, permissions) vanno al parent:
+            // Spatie le legge con `loadMissing()`/`getRelationValue()`, che consultano questo metodo,
+            // e rispondere sempre false le farebbe rileggere dal DB ignorando `setRelation()`.
+            if ($key === 'profile') {
+                return $this->profile !== null;
             }
 
-            return 'profile' === $key && null !== $this->profile;
+            return parent::relationLoaded($key);
         }
     };
     $user->forceFill(array_merge([
@@ -49,12 +55,12 @@ function uiAuthUser(array $roles = [], array $permissions = [], array $attribute
     ], $attributes));
 
     $user->setRelation('roles', collect(array_map(
-        static fn (string $name): Role => tap(new Role())->forceFill(['name' => $name]),
+        static fn (string $name): Role => tap(new Role)->forceFill(['name' => $name]),
         $roles,
     )));
 
     $user->setRelation('permissions', collect(array_map(
-        static fn (string $name): Permission => tap(new Permission())->forceFill(['name' => $name]),
+        static fn (string $name): Permission => tap(new Permission)->forceFill(['name' => $name]),
         $permissions,
     )));
 
@@ -94,7 +100,7 @@ it('usa profile_photo_path come avatar quando è presente', function (): void {
 
     Assert::assertNotNull($data);
     Assert::assertSame('avatars/mario.jpg', $data->avatar);
-});
+})->group('UI-USERDATA-INV-5');
 
 it('lascia l avatar nullo quando non c è né foto né profilo caricato', function (): void {
     Auth::setUser(uiAuthUser());
@@ -103,7 +109,7 @@ it('lascia l avatar nullo quando non c è né foto né profilo caricato', functi
 
     Assert::assertNotNull($data);
     Assert::assertNull($data->avatar);
-});
+})->group('UI-USERDATA-INV-5');
 
 it('prende il primo ruolo, non tutti', function (): void {
     Auth::setUser(uiAuthUser(roles: ['hr-manager', 'evaluator']));
@@ -112,7 +118,7 @@ it('prende il primo ruolo, non tutti', function (): void {
 
     Assert::assertNotNull($data);
     Assert::assertSame('hr-manager', $data->role);
-});
+})->group('UI-USERDATA-INV-4');
 
 it('lascia il ruolo nullo quando l utente non ne ha', function (): void {
     Auth::setUser(uiAuthUser());
@@ -121,7 +127,7 @@ it('lascia il ruolo nullo quando l utente non ne ha', function (): void {
 
     Assert::assertNotNull($data);
     Assert::assertNull($data->role);
-});
+})->group('UI-USERDATA-INV-4');
 
 it('elenca i permessi per nome', function (): void {
     Auth::setUser(uiAuthUser(permissions: ['schede.view', 'schede.update']));
@@ -131,7 +137,7 @@ it('elenca i permessi per nome', function (): void {
     Assert::assertNotNull($data);
     Assert::assertContains('schede.view', $data->permissions);
     Assert::assertContains('schede.update', $data->permissions);
-});
+})->group('UI-USERDATA-INV-4');
 
 it('restituisce impostazioni vuote quando il profilo non è caricato', function (): void {
     Auth::setUser(uiAuthUser());

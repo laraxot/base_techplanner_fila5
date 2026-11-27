@@ -1663,6 +1663,7 @@ Tasks:
 ### Recommended New Documentation
 ```
 1. architecture.md
+1. ARCHITECTURE.md
    - System architecture diagrams
    - Module dependency graph
    - Database schema diagrams

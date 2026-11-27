@@ -243,14 +243,9 @@ bashscripts/git/subtrees/
 
 ### Related Documentation
 
-- [Git Subtrees Guide](../../docs/git/subtrees.md)
-<<<<<<< .merge_file_wXePl4
+- [Git Subtrees Guide](../../../../bashscripts/git/subtrees/README.md)
 - GitHub Actions Guide
-- [AI Agent Coordination](../raw/history/ai-agent-coordination.md)
-=======
-- [GitHub Actions Guide](../../docs/github/actions.md)
-- [AI Agent Coordination](../../docs/ai-agent-coordination.md)
->>>>>>> .merge_file_KPrUrl
+- AI Agent Coordination
 
 ### External Resources
 

@@ -138,8 +138,4 @@ Grapesjs::make('grapesjs_data')
 ## Collegamenti
 - [Documentazione GrapesJS](docs/grapesjs.md)
 - [Template Management](docs/templates.md)
-<<<<<<< .merge_file_L6PXmF
-- Notification System 
-=======
 - [Notification System](docs/notifications.md) 
->>>>>>> .merge_file_uWWgp8

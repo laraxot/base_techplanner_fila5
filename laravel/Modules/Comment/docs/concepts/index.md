@@ -18,10 +18,10 @@ Epic per eliminare `packages/spatie/` e internalizzare il dominio commenti.
 
 | Doc | Scopo |
 |-----|--------|
-| [wiki/concepts/native-comments-architecture.md](../wiki/concepts/native-comments-architecture.md) | Architettura target |
-| [wiki/concepts/spatie-package-inventory.md](../wiki/concepts/spatie-package-inventory.md) | Mapping file Spatie → module |
-| [docs/adr/internalize-spatie-comments.md](../docs/adr/internalize-spatie-comments.md) | ADR |
-| [wiki/concepts/spatie-comments-fo-ticket-integration.md](../wiki/concepts/spatie-comments-fo-ticket-integration.md) | Stato FO ticket (pre-migrazione) |
+| [wiki/concepts/native-comments-architecture.md](../../archive/docs-legacy/wiki/concepts/native-comments-architecture.md) | Architettura target |
+| [wiki/concepts/spatie-package-inventory.md](../../archive/docs-legacy/wiki/concepts/spatie-package-inventory.md) | Mapping file Spatie → module |
+| [docs/adr/0003-internalize-spatie-comments.md](../adr/0003-internalize-spatie-comments.md) | ADR |
+| [wiki/concepts/spatie-comments-fo-ticket-integration.md](../../archive/docs-legacy/wiki/concepts/spatie-comments-fo-ticket-integration.md) | Stato FO ticket (pre-migrazione) |
 
 Workflow: `/internalize-spatie-comments` (`.claude/commands/bmad/`)
 

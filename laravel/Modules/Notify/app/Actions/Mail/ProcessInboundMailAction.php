@@ -12,6 +12,7 @@ use Illuminate\Support\Str;
 use Modules\Notify\Models\InboundEmail;
 use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Symfony\Component\Mime\Address;
+use ZBateson\MailMimeParser\Header\IHeader;
 use ZBateson\MailMimeParser\IMessage;
 use ZBateson\MailMimeParser\MailMimeParser;
 
@@ -29,6 +30,8 @@ use function Safe\preg_match;
  * - Mailgun form: sender, recipient, subject, body-plain, body-html, body-mime
  * - Raw MIME: request content-type message/rfc822 o body che inizia con "From:"
  *
+ * @see docs/contracts/process-inbound-mail-action.md
+ *
  * @contract docs/contracts/process-inbound-mail-action.md
  *
  * @phpstan-type InboundMailData array{
@@ -42,6 +45,10 @@ use function Safe\preg_match;
  *     headers: array<array-key, mixed>|null,
  *     payload: array<array-key, mixed>|null
  * }
+ *
+ * @see docs/contracts/process-inbound-mail-action.md
+ *
+ * @contract docs/contracts/process-inbound-mail-action.md
  */
 class ProcessInboundMailAction
 {
@@ -184,9 +191,18 @@ class ProcessInboundMailAction
         $subject = $message->getHeaderValue('subject');
         [$fromEmail, $fromName] = $this->splitAddress(is_string($from) ? $from : '');
 
+        /** @var array<string, string> $headers */
         $headers = [];
         foreach ($message->getAllHeaders() as $header) {
-            $headers[$header->getName()] = $header->getValue();
+            if (! $header instanceof IHeader) {
+                continue;
+            }
+            $name = $header->getName();
+            $value = $header->getValue();
+            if ($name === '' || ! is_string($value)) {
+                continue;
+            }
+            $headers[$name] = $value;
         }
 
         return [
@@ -198,7 +214,10 @@ class ProcessInboundMailAction
             'text_body' => $message->getTextContent(),
             'html_body' => $message->getHtmlContent(),
             'headers' => $headers !== [] ? $headers : null,
-            'payload' => ['provider' => $provider, 'mime_length' => strlen($raw)],
+            'payload' => [
+                'provider' => $provider,
+                'mime_length' => strlen($raw),
+            ],
         ];
     }
 

@@ -12,6 +12,7 @@ use Modules\Gdpr\Tests\TestCase;
 use Modules\User\Database\Factories\UserFactory;
 use Modules\User\Models\User;
 use PHPUnit\Framework\Assert;
+use PHPUnit\Framework\Attributes\Group;
 
 /**
  * DCP-285 (D-02): l'azione filtrava su `subject_type` e scriveva `revoked_user_agent`, colonne che non esistono nella tabella
@@ -22,6 +23,9 @@ use PHPUnit\Framework\Assert;
  */
 final class RevokeGdprConsentsActionTest extends TestCase
 {
+    #[Group('GDPR-REVOKE-INV-2')]
+    #[Group('GDPR-REVOKE-INV-3')]
+    #[Group('GDPR-REVOKE-INV-4')]
     public function test_revokes_every_active_consent_of_the_user_whichever_way_it_was_written(): void
     {
         $this->app?->instance('request', Request::create('/', 'POST', server: ['REMOTE_ADDR' => '203.0.113.7', 'HTTP_USER_AGENT' => 'Pest/DCP-285']));
@@ -56,6 +60,7 @@ final class RevokeGdprConsentsActionTest extends TestCase
         Assert::assertSame('198.51.100.9', $before->getAttribute('revoked_ip_address'));
     }
 
+    #[Group('GDPR-REVOKE-INV-1')]
     public function test_keeps_the_revoked_consents_as_audit_trail_instead_of_deleting_them(): void
     {
         $user = UserFactory::new()->createOne();
@@ -67,6 +72,7 @@ final class RevokeGdprConsentsActionTest extends TestCase
         Assert::assertNull(Consent::query()->whereKey($consent->getKey())->value('deleted_at'));
     }
 
+    #[Group('GDPR-REVOKE-INV-5')]
     public function test_does_nothing_and_does_not_fail_for_a_user_without_consents(): void
     {
         $user = UserFactory::new()->createOne();

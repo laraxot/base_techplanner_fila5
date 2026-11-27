@@ -30,7 +30,7 @@ $assetClass = 'Modules\UI\Models\Asset';
  */
 $assetModel = /** @return class-string<BaseModel> */ static function (string $class = 'Modules\UI\Models\Asset'): string {
     if (! is_a($class, BaseModel::class, true)) {
-        Assert::fail('Asset model must extend ' . BaseModel::class . '.');
+        Assert::fail('Asset model must extend '.BaseModel::class.'.');
     }
 
     return $class;
@@ -87,7 +87,7 @@ describe('Asset Model', function () use ($assetClass, $assetModel): void {
     test('uses strict types', function () use ($assetModel): void {
         $reflection = new \ReflectionClass($assetModel());
         $fileName = $reflection->getFileName();
-        if (false === $fileName) {
+        if ($fileName === false) {
             Assert::fail('Asset model has no source file.');
         }
         $content = file_get_contents($fileName);

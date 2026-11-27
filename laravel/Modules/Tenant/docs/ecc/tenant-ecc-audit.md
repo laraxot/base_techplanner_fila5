@@ -1,14 +1,16 @@
 ---
-title: "Audit ECC — Tenant"
+title: "ECC audit operativo — Tenant"
 type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Tenant
-<<<<<<< .merge_file_wPsvcd
-qmd: "ECC audit Tenant verification security testing laravel"
-=======
+tags: [tenant, ecc, audit, security]
+created: 2026-11-16
+issues:
+  - "https://github.com/laraxot/module_tenant_fila5/issues/1"
+discussions:
+  - "https://github.com/laraxot/platform/discussions/304"
 qmd: "ECC audit Tenant verification security testing laravel php-reviewer security-reviewer database-reviewer architect tenant isolation Host TrustHosts policy password"
->>>>>>> .merge_file_PtUj7g
 ---
 
 # Audit ECC — Tenant
@@ -73,7 +75,6 @@ Azioni al posto dei service, base Xot, nessuna label hardcoded, array PHP una ch
 
 - [00-index](./00-index.md)
 - [BMAD audit](../bmad/audit.md)
-<<<<<<< .merge_file_wPsvcd
 qmd: "ECC audit Tenant php-reviewer security-reviewer database-reviewer architect tenant isolation Host TrustHosts policy password"
 ---
 
@@ -98,5 +99,3 @@ Mappa finding → capability ECC. Dettaglio: [../bmad/audits/tenant-audit.md](..
 ## Regole PTVX applicate
 
 Azioni al posto dei service, base Xot, nessuna label hardcoded, array PHP una chiave per riga, dati sacri (solo migrate additivo).
-=======
->>>>>>> .merge_file_PtUj7g

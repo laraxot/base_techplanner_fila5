@@ -13,7 +13,7 @@ use Mockery\MockInterface;
 use Modules\User\Models\Tenant;
 use Modules\User\Tests\TestCase;
 
-use function Safe\json_encode;
+uses(TestCase::class);
 
 class TenantTest extends TestCase
 {

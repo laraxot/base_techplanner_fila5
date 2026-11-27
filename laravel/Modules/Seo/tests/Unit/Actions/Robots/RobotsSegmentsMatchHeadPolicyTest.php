@@ -14,4 +14,4 @@ test('every area that robots.txt closes is also noindex in the page head', funct
     $closedButIndexable = array_values(array_diff(BuildRobotsTxtAction::PRIVATE_SEGMENTS, ResolveRobotsPolicyAction::HIDDEN_SEGMENTS));
 
     Assert::assertSame([], $closedButIndexable);
-});
+})->group('SEO-ROBOTS-INV-4');

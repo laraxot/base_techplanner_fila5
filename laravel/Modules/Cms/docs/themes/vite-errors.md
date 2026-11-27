@@ -81,14 +81,9 @@ ls -la dist/
 - Verifica dell'integrità dei file compilati
 
 ## Collegamenti Correlati
-<<<<<<< .merge_file_7vScen
-- [Documentazione Generale Errori](/project_docs/errors/readme.md)
-- [Gestione Temi CMS](../../../../Themes/README.md)
-=======
-- [Documentazione Generale Errori](/project_docs/errors/README.md)
-- [Gestione Temi CMS](../themes/README.md)
->>>>>>> .merge_file_QXiiK6
-- [Processo di Deploy](../../project_docs/deployment/themes.md)
+- [Documentazione del modulo Cms](../README.md)
+- [Gestione dei temi](../../../../Themes/README.md)
+- [Workflow del manifest Vite](../theme-vite-manifest-workflow.md)
 
 ## Note Tecniche
 - La compilazione deve essere eseguita per ogni tema individualmente
@@ -131,4 +126,4 @@ npm install && npm run build
 ## Manutenzione
 - Aggiornare regolarmente le dipendenze npm
 - Verificare la compatibilità con le versioni Laravel
-- Mantenere backup dei file di configurazione 
+- Mantenere backup dei file di configurazione

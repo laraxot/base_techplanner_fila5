@@ -23,9 +23,9 @@ discussions: []
 ## Available Rules
 - [context-overflow-prevention](../concepts/context-overflow-prevention.md) — prevenzione 262K token overflow; file vietati; tool output compression
 
-- [filament-resource-property](../../../../../../bashscripts/ai/wiki/rules/filament-resource-property.md) — `$resource` nelle page Filament è `protected static string`, non `public static`
-- [xotbase-critical-rules](../../../../../../bashscripts/ai/wiki/rules/xotbase-critical-rules.md) — il tema riusa i guardrail XotBase/Laraxot, senza estensioni Filament dirette
-- [filament-rules-summary](../../../../../../bashscripts/ai/wiki/rules/filament-rules-summary.md) — riepilogo rapido su `->label()`, array key tipizzate e convenzioni schema
+- [filament-resource-property](../../../../../../bashscripts/ai/wiki/rules/filament-resources.md) — `$resource` nelle page Filament è `protected static string`, non `public static`
+- [xotbase-critical-rules](../../../../../../bashscripts/ai/wiki/rules/xotbase-inheritance.md) — il tema riusa i guardrail XotBase/Laraxot, senza estensioni Filament dirette
+- [filament-rules-summary](../../../../../../bashscripts/ai/wiki/rules/filament-general.md) — riepilogo rapido su `->label()`, array key tipizzate e convenzioni schema
 
 ## Usage
 

@@ -6,7 +6,7 @@ tags: [filament, schema, form, migration, correction]
 created: 2026-07-24
 updated: 2026-07-24
 related:
-  - ../../../../../../docs/wiki/concepts/filament-v5-form-in-blade.md
+  - ../../../../../../bashscripts/ai/wiki/concepts/filament-widgets.md#filament-v5-form-in-blade
   - ../../bmad/conflict-resolution-summary.md
 id: zero-docs-wiki-concepts-filament-v5-schema-not-form
 slug: filament-v5-schema-not-form
@@ -33,7 +33,7 @@ Documenti legacy Zero (`conflict-resolution-summary`, ecc.) descrivono una migra
 | Form = specializzazione con `fill`/`getState` | trattare Form e Schema come API alternative incompatibili |
 
 Fonti: [schema](https://filamentphp.com/docs/5.x/components/schema) · [form](https://filamentphp.com/docs/5.x/components/form).  
-Repo: [filament-v5-schema-in-blade](../../../../../../docs/wiki/concepts/filament-v5-schema-in-blade.md) (include tabella `composer show` / Blade grid+fieldset).
+Repo: [filament-v5-schema-in-blade](../../../../../../bashscripts/ai/wiki/concepts/filament-widgets.md#filament-v5-schema-in-blade) (include tabella `composer show` / Blade grid+fieldset).
 
 ## Laraxot
 

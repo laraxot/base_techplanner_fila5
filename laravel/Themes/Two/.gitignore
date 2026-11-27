@@ -79,12 +79,11 @@ phpinsights.php
 .php-cs-fixer.php
 .php-cs-fixer.dist.php
 *.lock
-<<<<<<< .merge_file_MKhwVX
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 docs/archive/
 docs/screenshots/
->>>>>>> .merge_file_yJ26Y3
+docs/archive/
+docs/screenshots/

@@ -273,7 +273,7 @@ updated: 2026-08-24
 ## 📝 Changelog & Versioning
 
 ### Version History
-- [Changelog](./CHANGELOG.md) - Storico modifiche
+- [Changelog](./changelog.md) - Storico modifiche
 - [Versioning Strategy](./versioning.md) - Strategia versioning
 - [Migration Guides](./migrations/README.md) - Guide migrazione
 

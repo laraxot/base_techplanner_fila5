@@ -41,26 +41,18 @@ status: draft
 
 ### Per Sviluppatori
 - [Architecture Overview](./architecture/README.md)
-<<<<<<< .merge_file_sgGvbU
 - [Getting Started](./GETTING_STARTED.md)
-=======
 - [Getting Started](../../../GETTING_STARTED.md)
 3. [Multi-Agent Collaboration](../../../multi-agent-collaboration.md) - Come lavorare con AI agents
 
 ### Per Sviluppatori
 - [Architecture Overview](./architecture/README.md)
-- [Getting Started](../../../GETTING_STARTED.md)
->>>>>>> .merge_file_rGUzFu
 - [Coding Standards](./conventions/README.md)
 
 ### Per AI Agents
 - [Project Context](./project/project.md)
-<<<<<<< .merge_file_sgGvbU
 - [Agent Coordination](./multi-agent-collaboration.md)
-=======
 - [Agent Coordination](../../../multi-agent-collaboration.md)
-- [Agent Coordination](../../../multi-agent-collaboration.md)
->>>>>>> .merge_file_rGUzFu
 - [OpenViking Context](../bashscripts/ai/openviking.md)
 
 ---
@@ -86,12 +78,8 @@ status: draft
 - [Naming Conventions](./conventions/naming.md)
 
 ### 🤖 AI Tools
-<<<<<<< .merge_file_sgGvbU
 - [Multi-Agent Guide](./multi-agent-collaboration.md)
-=======
 - [Multi-Agent Guide](../../../multi-agent-collaboration.md)
-- [Multi-Agent Guide](../../../multi-agent-collaboration.md)
->>>>>>> .merge_file_rGUzFu
 - [BMAD Framework](./bmad/README.md)
 - [GSD Workflow](./gsd/README.md)
 - [NotebookLM](./notebooklm/README.md)
@@ -99,12 +87,8 @@ status: draft
 
 ### 📊 Reports
 - [Status Reports](./reports/README.md)
-<<<<<<< .merge_file_sgGvbU
 - [Quality Reports](./reports/quality.md)
-=======
 - [Quality Reports](../../../roadmap/quality.md)
-- [Quality Reports](../../../roadmap/quality.md)
->>>>>>> .merge_file_rGUzFu
 - [Performance Reports](./reports/performance.md)
 
 ---

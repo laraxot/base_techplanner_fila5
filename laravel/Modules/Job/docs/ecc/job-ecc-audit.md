@@ -4,7 +4,7 @@ type: ecc-audit
 status: review
 updated: 2026-11-16
 module: Job
-qmd: "ECC audit Job checklist security-review clean-code verification-loop inventario misurato finding scheduler policy"
+qmd: "ECC audit Job verification security testing laravel checklist security-review clean-code verification-loop inventario misurato finding scheduler policy"
 related:
   - ./00-index.md
   - ../bmad/audits/job-audit.md
@@ -15,7 +15,6 @@ related:
 
 ## Contratto PTVX
 
-<<<<<<< .merge_file_9hXCLd
 ECC non sostituisce AGENTS.md/BMAD. Ogni finding: story BMAD, lock, fix causa,
 PHPStan + Pest, aggiornamento docs/QMD.
 
@@ -30,8 +29,6 @@ PHPStan + Pest, aggiornamento docs/QMD.
 - [ ] `context-engineering`: QMD/graphify prima; registrare il perché dopo
 
 ## Input misurato (2026-11-16)
-=======
->>>>>>> .merge_file_I3CCFd
 ECC non sostituisce `AGENTS.md`/BMAD. Ogni finding: story BMAD, lock, fix alla causa,
 PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audits/job-audit.md).
 
@@ -52,7 +49,6 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 | Voce | N |
 |---|---:|
 | app PHP | 176 |
-<<<<<<< .merge_file_9hXCLd
 | test | 84 |
 | resources | 9 |
 | actions | 16 |
@@ -71,8 +67,6 @@ PHPStan + Pest, aggiornamento docs/QMD. Dettaglio: [audit profondo](../bmad/audi
 - migrate:fresh / RefreshDatabase / --force
 - docs con date nel nome file
 - comportamento o screenshot inventati
-=======
->>>>>>> .merge_file_I3CCFd
 | test PHP / `*Test.php` / casi Pest | 55 / 49 / 369 |
 | Models / Policy / Resource | 17 / 16 / 9 |
 | Pagine standalone / pagine Resource / Widget | 4 / 26 / 8 |

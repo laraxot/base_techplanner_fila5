@@ -293,12 +293,8 @@ curl -I http://laraxot.local
 
 ### For DevOps
 
-<<<<<<< .merge_file_9HTp4i
 - [Governance Rules](docs/rules/vhost-governance.md)
-=======
 - [Governance Rules](../rules/vhost-governance.md)
-- [Governance Rules](../rules/vhost-governance.md)
->>>>>>> .merge_file_5Utlgr
 - [Management Skill](.github/skills/vhost-management/SKILL.md)
 - [Configuration File](laravel/config/vhost/laraxot.local.conf)
 

@@ -376,15 +376,12 @@ _bmad-output/
 - **Files:** 221
 - **Index:** [Sixteen Docs Index](Themes/Sixteen/docs/00-index.md)
 - **Key Topics:**
-<<<<<<< .merge_file_zeX0Gv
   - [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
   - [Theme Detection](docs/project/theme-detection-system.md)
   - [Design Comuni Replication](Themes/Sixteen/docs/DESIGN_COMUNI_HTML_REPLICATION.md)
-=======
   - [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
   - [Theme Detection](theme-detection-system.md)
   - [Design Comuni Replication](Themes/Sixteen/docs/design-comuni-html-replication.md)
->>>>>>> .merge_file_ezMR16
 ```
 
 ---
@@ -602,14 +599,10 @@ pages/tests/argomenti.blade.php     # NO
 ### Key Documents
 
 - [Master Index](docs/project/module-docs-index.md)
-<<<<<<< .merge_file_zeX0Gv
 - [Theme Detection](docs/project/theme-detection-system.md)
 - [Layout Architecture](Themes/Sixteen/docs/LAYOUT_ARCHITECTURE_AND_NAMESPACE.md)
-=======
-- [Theme Detection](theme-detection-system.md)
 - [Theme Detection](theme-detection-system.md)
 - [Layout Architecture](Themes/Sixteen/docs/layout-architecture-and-namespace.md)
->>>>>>> .merge_file_ezMR16
 - [Page Component](Modules/Cms/docs/PAGE_COMPONENT_architecture.md)
 
 ### External Resources

@@ -5,6 +5,7 @@ type: product
 tags: [product, modules, job]
 created: 2026-08-24
 updated: 2026-08-24
+qmd: "product"
 ---
 
 # job — product
@@ -13,6 +14,7 @@ Documentation for `job` module categorized as **product**.
 
 ## Files
 
+- [`INDEX.md`](./index.md)
 - [`index.md`](./index.md)
 - [`configuration.md`](./configuration.md)
 

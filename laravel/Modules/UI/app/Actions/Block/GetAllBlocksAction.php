@@ -18,6 +18,8 @@ use function Safe\realpath;
 /**
  * Blocchi del page builder trovati in app/Filament/Blocks di ogni modulo.
  *
+ * @see docs/contracts/get-all-blocks-action.md
+ *
  * @contract docs/contracts/get-all-blocks-action.md
  */
 final class GetAllBlocksAction
@@ -46,7 +48,7 @@ final class GetAllBlocksAction
                 $name = Str::before($name, '_block');
             }
 
-            $module = Str::of($class)->between('Modules\\', '\Filament\\')->toString();
+            $module = Str::of($class)->between('Modules\\', '\\Filament\\')->toString();
 
             return [
                 'name' => $name,

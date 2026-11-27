@@ -4,16 +4,11 @@ type: audit
 status: review
 updated: 2026-11-16
 module: Xot
-<<<<<<< .merge_file_LGJrAx
-qmd: "audit BMAD Xot sintesi finding P0 P1 PHPStan Pest"
-=======
 qmd: "audit BMAD Xot sintesi source-first qualità finding P0 P1 PHPStan Pest"
->>>>>>> .merge_file_vMOzWJ
 ---
 
 # Audit BMAD — Xot
 
-<<<<<<< .merge_file_LGJrAx
 SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md)
 
 ## Sintesi (2026-11-16)
@@ -35,8 +30,6 @@ SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md)
 - PHPStan modulo / `Modules`: 0 errori (verifica 2026-11-16).
 - Pest: da eseguire in ambiente testing non produttivo.
 - Security/runtime: story figlie su finding P0/P1 dell'audit dettagliato.
-=======
->>>>>>> .merge_file_vMOzWJ
 SSoT dettagliata: [audits/xot-audit.md](./audits/xot-audit.md) · scopo: [purpose.md](./purpose.md)
 
 **In una frase:** Xot è il fondamento architetturale (kernel Laraxot): classi base (`XotBaseModel`, `XotBaseResource`, `XotBasePage`), Actions riusabili, contratti per la type-safety, guardie di test e pattern che tutti gli altri moduli estendono. Nessun modulo estende Filament direttamente: si estendono `XotBaseResource`, `XotBaseListRecords`, `XotBaseWidget`, `XotBaseServiceProvider`, `XotBaseMigration`. Questa è **la** regola fondamentale, e Xot è il posto dove vive.

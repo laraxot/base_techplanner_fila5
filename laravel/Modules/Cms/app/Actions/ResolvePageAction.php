@@ -21,7 +21,10 @@ use Spatie\QueueableAction\QueueableAction;
  * 2. Verifica se esiste una pagina CMS con slug esatto (container.slug).
  * 3. Fallback a una pagina CMS generica (container.view).
  *
+ * @contract docs/contracts/page-resolution-action.md
  * @contract docs/contracts/resolve-page-action.md
+ *
+ * @see Modules/Cms/docs/contracts/page-resolution-action.md
  */
 final class ResolvePageAction
 {

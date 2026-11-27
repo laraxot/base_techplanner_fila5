@@ -231,12 +231,8 @@ docs/design-comuni/master-index.md
 
 ### Per Sviluppatori
 
-<<<<<<< .merge_file_Ihf4TF
 1. **Iniziare**: [Master Index](../master-index.md)
-=======
 1. **Iniziare**: [Master Index](master-index.md)
-1. **Iniziare**: [Master Index](master-index.md)
->>>>>>> .merge_file_OVPFCN
 2. **Architettura**: [Cms FAQ Architecture](../laravel/Modules/Cms/docs/design-comuni-faq.md)
 3. **Componenti**: [UI FAQ Components](../laravel/Modules/UI/docs/design-comuni-faq-components.md)
 4. **Analisi**: [Sixteen HTML Analysis](../laravel/Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_HTML_analysis.md)
@@ -251,12 +247,8 @@ docs/design-comuni/master-index.md
 
 ### Per Project Managers
 
-<<<<<<< .merge_file_Ihf4TF
 1. **Stato**: [Master Index](../master-index.md) (sezione Stato Globale)
-=======
 1. **Stato**: [Master Index](master-index.md) (sezione Stato Globale)
-1. **Stato**: [Master Index](master-index.md) (sezione Stato Globale)
->>>>>>> .merge_file_OVPFCN
 2. **Dettaglio**: [Report Finale FAQ](../laravel/Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_report-finale.md)
 3. **Visivo**: [Analisi Visiva](../laravel/Themes/Sixteen/docs/design-comuni/DOMANDE_FREQUENTI_analisi-visiva.md)
 
@@ -310,12 +302,8 @@ docs/design-comuni/master-index.md
 
 ## 📞 Riferimenti
 
-<<<<<<< .merge_file_Ihf4TF
 - **Master Index**: [docs/design-comuni/master-index.md](../master-index.md)
-=======
 - **Master Index**: [docs/design-comuni/master-index.md](master-index.md)
-- **Master Index**: [docs/design-comuni/master-index.md](master-index.md)
->>>>>>> .merge_file_OVPFCN
 - **Tema Sixteen**: [laravel/Themes/Sixteen/docs/design-comuni/](../laravel/Themes/Sixteen/docs/design-comuni/)
 - **Modulo Cms**: [laravel/Modules/Cms/docs/](../laravel/Modules/Cms/docs/)
 - **Modulo UI**: [laravel/Modules/UI/docs/](../laravel/Modules/UI/docs/)

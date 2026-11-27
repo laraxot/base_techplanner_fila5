@@ -16,7 +16,7 @@ test('CommentSanitizer strips script tags and keeps safe elements', function ():
     Assert::assertStringContainsString('<p>Hello</p>', $result);
     Assert::assertStringContainsString('<strong>world</strong>', $result);
     Assert::assertStringNotContainsString('<script>', $result);
-});
+})->group('COMMENT-SANITIZE-INV-1');
 
 test('CommentSanitizer allows anchor href attributes from config', function (): void {
     $sanitizer = app(SanitizeCommentHtmlAction::class);
@@ -24,4 +24,4 @@ test('CommentSanitizer allows anchor href attributes from config', function (): 
     $result = $sanitizer->execute('<a href="https://example.com" target="_blank" rel="noopener">link</a>');
 
     Assert::assertStringContainsString('href="https://example.com"', $result);
-});
+})->group('COMMENT-SANITIZE-INV-2');

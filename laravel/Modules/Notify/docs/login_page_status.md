@@ -17,7 +17,6 @@ Questo documento descriveva una pagina di login basata su
 `Themes/Sixteen/resources/views/pages/auth/login.blade.php` e URL
 `http://127.0.0.1:8000/it/auth/login`.
 
-<<<<<<< .merge_file_OKKY4Q
 ---
 
 title: "LOGIN PAGE STATUS"
@@ -346,8 +345,6 @@ Password: password
 **Confidence**: 💯 MASSIMA
 
 
-=======
->>>>>>> .merge_file_NMvlcU
 **Non e' pertinente a questo repository.** Questo progetto (`base_<nome progetto>_fila5`)
 usa il tema "Zero", non "Sixteen", e la pagina di login reale e' la classe
 nativa Filament `Filament\Auth\Pages\Login` servita dai panel Filament

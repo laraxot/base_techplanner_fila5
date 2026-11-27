@@ -240,6 +240,9 @@ Nessuna funzionalità critica mancante - il modulo Notify è ben implementato
 
 ## Collegamenti
 
+- [Modulo <nome progetto>](../<nome progetto>/docs/readme.md)
+- [Modulo Limesurvey](../limesurvey/docs/readme.md)
+- [Notify README](./readme.md)
 - [Modulo <nome progetto>](../<nome progetto>/docs/README.md)
 - [Modulo Limesurvey](../limesurvey/docs/README.md)
 - [Notify README](./README.md)

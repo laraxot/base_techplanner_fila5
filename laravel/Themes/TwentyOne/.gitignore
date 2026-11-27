@@ -92,12 +92,9 @@ phpinsights.php
 .php-cs-fixer.dist.php
 *.lock
 .windsurf/
-<<<<<<< .merge_file_EJ6FRy
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 docs/archive/
 docs/screenshots/
->>>>>>> .merge_file_trX4cF

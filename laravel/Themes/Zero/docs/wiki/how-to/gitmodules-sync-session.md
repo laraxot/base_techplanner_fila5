@@ -10,7 +10,7 @@ issues:
 discussions: []
 related:
   - "../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md"
-  - "../../../../../../docs/chat/gitmodules-sync.md"
+  - "../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#gitmodules-sync"
 id: zero-docs-wiki-how-to-gitmodules-sync-session
 slug: gitmodules-sync-session
 description: "Sessione orchestrata dal prompt bashscripts/tools/prompts/02-gitmodules-sync.md (v5.1) e da STORY-003."
@@ -32,5 +32,5 @@ Sessione orchestrata dal prompt `bashscripts/tools/prompts/02-gitmodules-sync.md
 ## Canon
 
 - Story: [../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md](../../../../../../docs/stories/STORY-003-gitmodules-sync-conflict-sweep.md)
-- Report: [../../../../../../docs/chat/gitmodules-sync.md](../../../../../../docs/chat/gitmodules-sync.md)
+- Report: [../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#gitmodules-sync](../../../../../../bashscripts/ai/wiki/memories/git-sync-fleet-remotes.md#gitmodules-sync)
 - Issue base: https://github.com/provtv/<repo progetto>/issues/201

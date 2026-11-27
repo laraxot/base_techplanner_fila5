@@ -37,12 +37,13 @@ vendor/
 .windsurf/
 test-results/
 comment.code-workspace
-<<<<<<< .merge_file_Lo0qYp
-
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_tAJIMa
+tests/coverage-*.\*
+docs/screenshots/
+
+# Indice vettoriale locale (non versionare)
+ruvector.db

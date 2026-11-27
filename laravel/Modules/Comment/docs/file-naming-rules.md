@@ -20,4 +20,4 @@ See canonical documentation: ../../../Themes/docs/shared-components/file-naming-
 - Root UPPERCASE → stub redirect al twin minuscolo.
 - Story `CMT-*` rinominate in `cmt-*` (kebab minuscolo).
 - Indice: `00-INDEX.md`; alias redirect.
-- FO track: [bmad/fo-comments/](./bmad/fo-comments/).
+- FO track: [bmad/fo-comments/](../archive/docs-legacy/bmad/fo-comments).

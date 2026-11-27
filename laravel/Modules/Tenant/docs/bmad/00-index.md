@@ -4,16 +4,21 @@ type: index
 status: active
 updated: 2026-11-16
 module: Tenant
-<<<<<<< .merge_file_Au0d5g
-qmd: "indice BMAD Tenant audit purpose architecture epics decision log brainstorming stories"
-=======
+tags: [tenant, bmad, index]
+created: 2026-11-16
+issues:
+  - "https://github.com/laraxot/module_tenant_fila5/issues/1"
+discussions:
+  - "https://github.com/laraxot/platform/discussions/304"
 qmd: "indice BMAD Tenant audit purpose architecture epics decision log brainstorming piano stories"
->>>>>>> .merge_file_SoqEhM
 ---
 
 # Indice BMAD — Tenant
 
 - [Purpose](./purpose.md)
+- [Audit](./audit.md)
+- [Audit dettagliato](./audits/tenant-audit.md)
+- [Piano di miglioramento](./piano-miglioramento.md)
 - [Architecture](./architecture.md)
 - [Epics](./epics.md)
 - [Decision log](./decision-log.md)

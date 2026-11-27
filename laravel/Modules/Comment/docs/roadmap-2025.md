@@ -1,11 +1,6 @@
 ---
-<<<<<<<< HEAD:laravel/Modules/Rating/docs/bmad/roadmap.md
-created: 2025-01-01
----
-
-# 🔔 NOTIFY MODULE - ROADMAP 2025
-========
 title: "COMMENT MODULE - ROADMAP 2025"
+created: 2025-01-01
 type: note
 status: draft
 updated: 2026-10-18
@@ -13,7 +8,6 @@ tags: [docs, comment]
 qmd: "comment module - roadmap 2025 comment"
 ---
 # 🎯 COMMENT MODULE - ROADMAP 2025
->>>>>>>> origin/dev:laravel/Modules/Comment/docs/roadmap-2025.md
 
 **Modulo**: Comment ([Description])  
 **Status**: 0% COMPLETATO  

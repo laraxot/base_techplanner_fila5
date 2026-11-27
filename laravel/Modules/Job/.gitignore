@@ -20,32 +20,24 @@ test-results
 tests/.claude-audit
 # ==============================================
 # LARAXOT MODULE JOB - .GITIGNORE
-# ==============================================
 # Modulo Job Laraxot - Template standardizzato
 # Ultimo aggiornamento: 2025-01-06
-# ==============================================
 
-# ==============================================
 # DEPENDENCIES & PACKAGES
-# ==============================================
 vendor/
 node_modules/
 package-lock.json
 yarn.lock
 composer.lock
 
-# ==============================================
 # BUILD & COMPILED FILES
-# ==============================================
 /build
 build/
 dist/
 docs/cache/
 cache/
 
-# ==============================================
 # CACHE & TEMPORARY FILES
-# ==============================================
 *.cache
 *.lock
 *.phar
@@ -59,18 +51,14 @@ v8-compile-cache-*
 .php-cs-fixer.cache
 .phpunit.result.cache
 
-# ==============================================
 # LOG FILES
-# ==============================================
 *.log
 error_log
 npm-debug.log*
 yarn-error.log*
 lerna-debug.log*
 
-# ==============================================
 # LARAVEL SPECIFIC
-# ==============================================
 bootstrap/compiled.php
 app/storage/
 public/storage
@@ -82,25 +70,19 @@ storage/*.key
 .env.*
 !.env.example
 
-# ==============================================
 # ENVIRONMENT & CONFIGURATION
-# ==============================================
 Homestead.yaml
 Homestead.json
 /.vagrant
 /.idea
 .phpintel
 
-# ==============================================
 # GIT SPECIFIC
-# ==============================================
 .git-rewrite/
 .git-rewrite
 .git-blame-ignore-revs
 
-# ==============================================
 # SYSTEM FILES
-# ==============================================
 .DS_Store
 .DS_Store?
 ._*
@@ -109,9 +91,7 @@ Homestead.json
 ehthumbs.db
 Thumbs.db
 
-# ==============================================
 # BACKUP FILES
-# ==============================================
 *.old
 *.old1
 *.old2
@@ -123,23 +103,17 @@ Thumbs.db
 *.bakcup
 *.new
 
-# ==============================================
 # DEVELOPMENT TOOLS
-# ==============================================
 .windsurf/
 .cursor/
 .phpstorm.meta.php
 
-# ==============================================
 # DOCUMENTATION CACHE
-# ==============================================
 docs/phpstan/
 /docs/cache
 docs/archive/**
 
-# ==============================================
 # OLD DIRECTORIES (LEGACY CLEANUP)
-# ==============================================
 resources/views/Components_old/
 resources/views/Components_old
 database/Migrations_old/
@@ -152,9 +126,7 @@ database/Factories_
 database_old/
 database_old
 
-# ==============================================
 # MODULE SPECIFIC - JOB
-# ==============================================
 # File di configurazione locale
 config/local.php
 config/development.php
@@ -167,10 +139,7 @@ storage/jobs/
 job_test_data.json
 test_jobs.sql
 
-# ==============================================
 # END OF JOB .GITIGNORE
-# ==============================================
-
 
 # 🚫 File specifici del progetto
 *.fila2
@@ -181,7 +150,6 @@ _docs/
 
 # -----------------------------------------------------------------------------
 # Copie residue da merge/rebase o editor (mai committare — es. `.agent~HEAD`, `*.md~head`)
-# -----------------------------------------------------------------------------
 *~HEAD
 *~BASE
 *~LOCAL
@@ -189,7 +157,6 @@ _docs/
 *.orig
 *.rej
 *~head
-
 
 # Second brain: no-docs-archive (wiki) — non tracciare albero legacy docs/archive/
 docs/archive/agentdb.rvf
@@ -251,12 +218,41 @@ app/Application
 
 # module-root-hygiene (story module-root-hygiene)
 docs/graphify
-<<<<<<< .merge_file_hPX2kd
+tests/coverage-*.*
+docs/screenshots/
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 tests/coverage-*.*
 docs/screenshots/
->>>>>>> .merge_file_IoXysn
+
+# fila5-guard: mai nel repo di un modulo/tema
+/node_modules/
+/laravel/
+/tests/coverage/
+/tests/coverage.xml/
+/tests/*coverage*.xml
+
+# Niente cartelle di backup/archivio in docs: lo storico e' git (ADR Xot 0041)
+docs/**/archivio/
+docs/**/archive/
+docs/**/_archive/
+docs/**/archived/
+docs/**/*backup*/
+docs/**/wiki-archive/
+docs/**/historical/
+
+# No docs archive folders — restore via Git only (Xot ADR 0041)
+docs/archivio/
+docs/_archive/
+docs/archived/
+docs/historical/
+docs/backup/
+docs/**/backup/
+docs/backups/
+docs/**/backups/
+.docs-archive/
+
+# Indice vettoriale locale (non versionare)
+ruvector.db

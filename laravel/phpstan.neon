@@ -13,6 +13,7 @@ parameters:
         - ./*/build/*
         - ./*/docs/**/*
         - ./*/docs-archive-*/**/*
+        - ./Modules/*/archive/**/*
         - ./*/packages/*
         - ./*/tests/AuditCoverage/*
         - ./*/*.blade.php

@@ -9,12 +9,11 @@ qmd: "Job indice BMAD documentazione"
 
 ## Canonico
 
-- [Entry point audit 2026-11-16](./00-index.md): [purpose](./purpose.md), [architecture](./architecture.md), [decision-log](./decision-log.md), [epics](./epics.md), [brainstorming](./brainstorming.md), [audit](./audit.md), [piano](./piano-miglioramento.md), [story](./stories/module-bmad-audit.story.md)
 - [README BMAD](./README.md)
-- [Architettura](./architecture/)
-- [Brainstorming](./brainstorming/)
-- [Epiche](./epics/)
-- [Stories](./stories/)
+- Story in `stories/`:
+  - [0005-e1-job-policy-create-deny.story.md](stories/0005-e1-job-policy-create-deny.story.md) — policy di creazione job negata (E1).
+  - [0006-module-bmad-audit.story.md](stories/0006-module-bmad-audit.story.md) — audit BMAD del modulo (quella senza prefisso era un duplicato ed e' stata rimossa).
+  - [0000-template.story.md](stories/0000-template.story.md) — template.
 - [Wiki del modulo](../wiki/)
 
 ## Legacy da consultare, non da estendere

@@ -27,11 +27,8 @@ Modulo dedicato alle azioni di intelligenza artificiale, sentiment analysis, int
 ---
 
 ## Altri collegamenti
-<<<<<<< .merge_file_9XVORe
 - [Documentazione generale AI](../../Modules/AI/docs/tutorials.md)
 - [Repository AI](../../Modules/AI/docs/repositories.md)
-=======
 - [Documentazione generale AI](../tutorials.md)
 - [Repository AI](../repositories.md)
 - [Repository AI](../../../AI/docs/repositories.md)
->>>>>>> .merge_file_ou3w8x

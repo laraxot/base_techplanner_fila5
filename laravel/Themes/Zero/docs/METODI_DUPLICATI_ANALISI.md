@@ -3,11 +3,7 @@ qmd: "zero metodi duplicati analisi md"
 theme: Zero
 topic: METODI_DUPLICATI_ANALISI
 tags: [metodi-duplicati, refactoring]
-<<<<<<< .merge_file_C161pk
-canonical: ../Zero/docs/shared-components/METODI_DUPLICATI_ANALISI.md
-=======
 canonical: ../Zero/docs/shared-components/metodi_duplicati_analisi.md
->>>>>>> .merge_file_oFCVLf
 ---
 
 # Metodi Duplicati — Analisi Tema Zero

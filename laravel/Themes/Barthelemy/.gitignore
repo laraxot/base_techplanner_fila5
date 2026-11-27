@@ -24,11 +24,9 @@ phpinsights.php
 .devcontainer/
 .vscode/
 .windsurf/
-<<<<<<< .merge_file_I4yXDX
 
 # screenshot di comparazione visiva (artefatti locali)
 docs/project/visual-comparison/
 docs/visual-comparison/
-=======
 docs/screenshots/
->>>>>>> .merge_file_GyfMON
+docs/screenshots/

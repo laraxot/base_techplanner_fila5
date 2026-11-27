@@ -115,7 +115,7 @@ it('throws exception when template not found', function (): void {
 
     expect(fn () => $notificationManager->send($recipient, $templateCode))
         ->toThrow(NotificationTemplateNotFoundException::class, 'Template invalid_template non trovato o non attivo');
-});
+})->group('NOTIFY-SEND-INV-1');
 
 // Il tipo e' nuovo, ma resta sotto Exception: chi aveva scritto
 // `catch (Exception $e)` attorno all'invio continua a prenderla, e ora riceve

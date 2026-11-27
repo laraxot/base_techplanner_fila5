@@ -67,6 +67,16 @@ rg '^<<<<<<< ' laravel --glob '*.{php,blade.php,json,neon}'
 cd laravel && php artisan test --filter=UserMigrationSyntax
 ```
 
+## Stato audit corrente
+
+La scansione del worktree del 27 novembre 2026 ha trovato inizialmente 321
+file tracciati con marker forti nei moduli e temi. Le lane BMAD parallele hanno
+risolto semanticamente i marker di `.gitignore`, Geo, Activity, Comment, Seo,
+Blog, Gdpr, Job, Lang, Media, Notify, Cms, Rating, Tenant, UI, User, Xot,
+Theme Zero, Two e Sixteen. La verifica finale con
+`bash bashscripts/tools/check-conflict-markers.sh` è verde: **0 marker nei file
+tracciati**.
+
 ## Collegamenti
 
 - [git-merge-marker-sweep](../wiki/how-to/git-merge-marker-sweep.md)

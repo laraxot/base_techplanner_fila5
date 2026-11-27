@@ -270,13 +270,10 @@ public static function getTableActions(): array
 - [Gestione Notifiche](../../../../../docs/architecture/notifications.md)
 
 ### Collegamenti ai Moduli
-<<<<<<< .merge_file_wrGwPC
 - [XotBaseResource](../../Xot/docs/XotBaseResource.md)
 - [Gestione Template](../template-management.md)
-=======
 - [XotBaseResource](../../Xot/docs/xotbaseresource.md)
 - [Gestione Template](template-management.md)
->>>>>>> .merge_file_nTt6D2
 
 ## Note Importanti
 

@@ -47,12 +47,8 @@ superseded_by: documentation-index.md
 
 ### Documentazione Architetturale
 - [Design Patterns](./architecture.md) - Pattern architetturali
-<<<<<<< .merge_file_AdMKct
 - [Database Schema](./database/schema.md) - Schema database
-=======
 - [Database Schema](../../schema.md) - Schema database
-- [Database Schema](../../schema.md) - Schema database
->>>>>>> .merge_file_AJXJiK
 - [API Documentation](./api/README.md) - Documentazione API
 - [Security](./security/README.md) - Sicurezza e conformità
 
@@ -215,9 +211,7 @@ superseded_by: documentation-index.md
 
 ### Coding Guidelines
 - [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
-<<<<<<< .merge_file_AdMKct
 - [Laravel Best Practices](./standards/laravel.md) - Best practices Laravel
-=======
 - [Laravel Best Practices](../../../html2pdf/laravel.md) - Best practices Laravel
 - [Environment Setup](../../../ai-agents/setup.md) - Configurazione ambiente
 - [Docker Setup](./development/docker.md) - Configurazione Docker
@@ -225,19 +219,13 @@ superseded_by: documentation-index.md
 
 ### Coding Guidelines
 - [PHP Standards](./standards/php.md) - Standard PHP (PSR-12)
-- [Laravel Best Practices](../../../html2pdf/laravel.md) - Best practices Laravel
->>>>>>> .merge_file_AJXJiK
 - [Filament Guidelines](./standards/filament.md) - Linee guida Filament
 - [Blade Components](./standards/blade.md) - Componenti Blade
 
 ### Quality Assurance
 - [PHPStan Configuration](./phpstan/README.md) - Analisi statica
-<<<<<<< .merge_file_AdMKct
 - [Testing Strategy](./testing/strategy.md) - Strategia testing
-=======
 - [Testing Strategy](../../../strategy.md) - Strategia testing
-- [Testing Strategy](../../../strategy.md) - Strategia testing
->>>>>>> .merge_file_AJXJiK
 - [CI/CD Pipeline](./ci-cd/README.md) - Continuous integration
 
 ---
@@ -278,12 +266,8 @@ superseded_by: documentation-index.md
 - [Error Tracking](./monitoring/errors.md) - Tracking errori
 
 ### Analytics
-<<<<<<< .merge_file_AdMKct
 - [Usage Analytics](./analytics/usage.md) - Analisi utilizzo
-=======
 - [Usage Analytics](../../../html2pdf/usage.md) - Analisi utilizzo
-- [Usage Analytics](../../../html2pdf/usage.md) - Analisi utilizzo
->>>>>>> .merge_file_AJXJiK
 - [Business Metrics](./analytics/business.md) - Metriche business
 
 ---
@@ -291,12 +275,8 @@ superseded_by: documentation-index.md
 ## 🔒 Security
 
 ### Security Documentation
-<<<<<<< .merge_file_AdMKct
 - [Security Guidelines](./security/guidelines.md) - Linee guida sicurezza
-=======
 - [Security Guidelines](../../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
-- [Security Guidelines](../../../ai-agents/agents-guide/01-project-overview/guidelines.md) - Linee guida sicurezza
->>>>>>> .merge_file_AJXJiK
 - [GDPR Compliance](./security/gdpr.md) - Conformità GDPR
 - [Authentication](./security/authentication.md) - Sistema autenticazione
 - [Authorization](./security/authorization.md) - Sistema autorizzazioni
