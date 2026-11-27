@@ -16,7 +16,6 @@ use Modules\Gdpr\Actions\Validation\ValidateGdprConsentAction;
 use Modules\Gdpr\Actions\Validation\ValidateUserDataAction;
 use Modules\User\Actions\Activity\LogRegistrationAction;
 use Modules\User\Actions\User\CreateUserAction;
-use Modules\Xot\Actions\Cast\SafeStringCastAction;
 use Modules\Xot\Filament\Widgets\XotBaseWidget;
 
 /**
@@ -56,7 +55,7 @@ class RegisterWidget extends XotBaseWidget
      * Regole in un solo punto. La password segue `Password::defaults()` (lunghezza, maiuscole, numeri, simboli: `PasswordData`);
      * le due caselle obbligatorie hanno il messaggio tradotto, non quello generico con il nome del campo.
      *
-     * @return array<string, array<int, mixed>|string>
+     * @return array<string, list<string|Password>|string>
      */
     protected function rules(): array
     {
@@ -108,15 +107,6 @@ class RegisterWidget extends XotBaseWidget
         return 'filament.widgets.auth.register';
     }
 
-    /**
-     * @return array<string, mixed>
-     */
-    public function getFormSchema(): array
-    {
-        // Not used - custom Blade view handles form rendering
-        return [];
-    }
-
     public function submit(): void
     {
         // Ogni invio conta, valido o no: serve a frenare chi riempie il modulo in serie
@@ -149,13 +139,14 @@ class RegisterWidget extends XotBaseWidget
         $validatedData = app(ValidateUserDataAction::class)->execute($formData);
         // `name` e' il nome mostrato in testata, nei commenti e nelle email: senza, la testata mostrava l'indirizzo email.
         $validatedData['name'] = trim($this->first_name.' '.$this->last_name);
-        $this->logRegistrationAttempt($formData);
+        $consents = app(CollectGdprConsentsAction::class)->execute($this->privacy_accepted, $this->terms_accepted, $this->marketing_consent);
+        $this->logRegistrationAttempt($this->email, $consents);
 
-        $user = DB::connection('user')->transaction(function () use ($validatedData) {
+        $user = DB::connection('user')->transaction(function () use ($validatedData, $consents) {
             $user = app(CreateUserAction::class)->execute($validatedData);
-            app(SaveGdprConsentsAction::class)->execute($user, app(CollectGdprConsentsAction::class)->execute($this->privacy_accepted, $this->terms_accepted, $this->marketing_consent));
+            app(SaveGdprConsentsAction::class)->execute($user, $consents);
             app(LogRegistrationAction::class)->execute($user, [
-                'gdpr_consents' => app(CollectGdprConsentsAction::class)->execute($this->privacy_accepted, $this->terms_accepted, $this->marketing_consent),
+                'gdpr_consents' => $consents,
             ]);
 
             return $user;
@@ -165,17 +156,17 @@ class RegisterWidget extends XotBaseWidget
     }
 
     /**
-     * @param  array<string, mixed>  $formData
+     * Traccia il tentativo senza dati personali in chiaro: l'email entra solo come hash.
+     *
+     * @param  array<string, bool>  $consents
      */
-    protected function logRegistrationAttempt(array $formData): void
+    protected function logRegistrationAttempt(string $email, array $consents): void
     {
-        $email = app(SafeStringCastAction::class)->execute($formData['email']);
-
         Log::debug('Registration attempt', [
             'email_hash' => hash('sha256', $email),
             'ip' => request()->ip(),
             'user_agent' => request()->userAgent(),
-            'gdpr_consents' => app(CollectGdprConsentsAction::class)->execute($this->privacy_accepted, $this->terms_accepted, $this->marketing_consent),
+            'gdpr_consents' => $consents,
         ]);
     }
 }

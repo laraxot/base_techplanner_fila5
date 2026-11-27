@@ -266,7 +266,7 @@ Per lo stato dell'analisi statica condivisa tra agenti si veda [phpstan-analysis
 - [Migrazioni Xot](migrations.md)
 
 ### Collegamenti Interni
-- [README Principale](./readme.md)
+- [README Principale](./README.md)
 - [Implementazione](./implementation.md)
 - [Configurazione](./configuration.md)
 - [Testing](./testing.md)

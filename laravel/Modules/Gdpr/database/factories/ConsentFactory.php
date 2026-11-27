@@ -27,10 +27,11 @@ class ConsentFactory extends Factory
     public function definition(): array
     {
         return [
+            // Solo colonne reali di `consents`: `subject_type`, `consent_type` e `accepted` non esistono
+            // (l'interessato e' `user_id` + `user_type`, l'accettazione e' `accepted_at`).
             'subject_id' => fake()->uuid(),
-            'subject_type' => 'Modules\User\Models\User',
-            'consent_type' => 'privacy_policy',
-            'accepted' => true,
+            'type' => 'privacy_policy',
+            'accepted_at' => now(),
             'ip_address' => '127.0.0.1',
             'user_agent' => fake()->userAgent(),
         ];

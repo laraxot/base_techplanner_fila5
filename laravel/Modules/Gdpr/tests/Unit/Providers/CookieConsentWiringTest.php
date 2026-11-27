@@ -7,14 +7,12 @@ namespace Modules\Gdpr\Tests\Unit\Providers;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\View;
 use Modules\Gdpr\Http\Middleware\InjectCookieBanner;
-use Modules\Gdpr\Tests\TestCase;
 use PHPUnit\Framework\Assert;
 
 use function Safe\json_encode;
 
-// Pest legge solo `laravel/tests/Pest.php`: il `pest()->extend()` di `Modules/Gdpr/tests/Pest.php` non viene mai eseguito, quindi
-// senza `uses()` il test gira su un container vuoto (nessun translator, nessun router) e fallisce per un motivo che non e' il cablaggio.
-uses(TestCase::class);
+// Il binding a TestCase arriva da `Modules/Gdpr/tests/Pest.php` (caricato da `laravel/tests/Pest.php`):
+// un `uses(TestCase::class)` qui provoca `Pest\Exceptions\TestCaseAlreadyInUse` e blocca l'intera suite del modulo.
 
 /**
  * Il 2026-11-11 un mirror (commit "." del repo Gdpr) ha riportato `GdprServiceProvider` a una versione vecchia: via `app->booted`

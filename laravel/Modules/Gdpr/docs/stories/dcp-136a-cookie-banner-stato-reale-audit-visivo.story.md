@@ -10,13 +10,13 @@ priority: P1
 owner: module:Gdpr
 module: Gdpr
 tags: [cookie, banner, gdpr, audit-visivo, bmad]
-created: "2026-10-14"
+created: 2026-10-14
 updated: "2026-10-14"
 qmd: "cookie banner stato reale middleware CookieConsentMiddleware cookie_banner_on audit visivo DCP-136 figlia"
 issues: []
 discussions: []
 related:
-  - ./2026-10-13-dcp-136-cookie-inventario-informazione-e-guardia-sui-cookie-impostati.story.md
+  - ./dcp-136-cookie-inventario-informazione-e-guardia-sui-cookie-impostati.story.md
 ---
 
 # DCP-136a: stato reale del banner cookie e audit visivo

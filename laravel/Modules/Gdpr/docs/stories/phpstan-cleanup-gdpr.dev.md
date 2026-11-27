@@ -2,7 +2,7 @@
 title: "[DEV] PHPStan cleanup — Gdpr"
 type: dev
 module: Gdpr
-story: "./2026-10-06-phpstan-cleanup-gdpr.story.md"
+story: "./phpstan-cleanup-gdpr.story.md"
 status: done
 created: 2026-10-06
 updated: 2026-10-06

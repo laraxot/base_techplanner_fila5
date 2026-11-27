@@ -577,7 +577,7 @@ test('user registration saves gdpr consents', function () {
 ## Collegamenti
 
 ### Documentazione Intera
-- [README Modulo Gdpr](./readme.md)
+- [README Modulo Gdpr](./README.md)
 - [Consent Management System](./consents.md)
 - [GDPR Compliance Guide](./gdpr-compliance.md)
 - [Testing Guidelines](./testing-guidelines.md)
