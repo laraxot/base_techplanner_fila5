@@ -9,6 +9,8 @@ issues: []
 discussions: []
 ---
 
+> **Indice canonico del modulo: [index.md](./index.md).** Questo file e' un indice storico tenuto per i link esistenti; i nuovi documenti vanno registrati solo in `index.md` (audit qualita', issue #64).
+
 # AI Module - Documentation Index
 
 **Path**: `laravel/Modules/AI/docs/`
@@ -40,7 +42,7 @@ discussions: []
 ### Stories
 | File | Scopo |
 |---|---|
-| [2026-10-08-services-to-actions-ai.story.md](./stories/2026-10-08-services-to-actions-ai.story.md) | Services eliminati, const a enum (2026-10-08) |
+| [services-to-actions-ai.story.md](./stories/services-to-actions-ai.story.md) | Services eliminati, const a enum (2026-10-08) |
 | [assistant-knowledge-base.story.md](./stories/assistant-knowledge-base.story.md) | Assistente clienti agnostico (2026-11-16) |
 | [assistant-anonymous-and-per-call-keywords.story.md](./stories/assistant-anonymous-and-per-call-keywords.story.md) | Visitatori anonimi e parole sensibili per chiamata (2026-11-17) |
 | [assistant-provider-cascade.story.md](./stories/assistant-provider-cascade.story.md) | Fornitori in cascata: Groq, OpenRouter, OpenAI (2026-11-17) |

@@ -33,16 +33,10 @@ final class BuildAIPromptAction
         Assert::string($description, 'Description must be a string');
         Assert::string($category, 'Category must be a string');
 
+        // I testi dei prompt vivono in una sola Action per tipo: qui si sceglie solo quale.
         return match ($type) {
-            'classification' => AIPromptTemplates::classification(
-                $title,
-                $description,
-            ),
-            'solutions' => AIPromptTemplates::solutions(
-                $title,
-                $description,
-                $category,
-            ),
+            'classification' => app(BuildTicketClassificationPromptAction::class)->execute($title, $description),
+            'solutions' => app(BuildTicketSolutionsPromptAction::class)->execute($title, $description, $category),
             default => throw new \InvalidArgumentException("Unsupported AI prompt type: {$type}"),
         };
     }
