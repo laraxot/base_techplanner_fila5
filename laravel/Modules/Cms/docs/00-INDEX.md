@@ -9,6 +9,8 @@ issues: []
 discussions: []
 ---
 
+> **Indice canonico del modulo: [index.md](./index.md).** Questo file e' un indice storico tenuto per i link esistenti; i nuovi documenti vanno registrati solo in `index.md` (audit qualita', issue #64).
+
 # Cms Module Documentation
 
 ## Overview
@@ -64,4 +66,4 @@ riferimenti con `rg`.
 - Mantenere collegamenti bidirezionali tra docs di modulo e docs di tema.
 
 ## Story URL -> JSON (2026-10-13)
-- [DCP-41 da URL a JSON: strumento e regola](stories/2026-10-13-dcp-41-url-to-json-resolver.story.md)
+- [DCP-41 da URL a JSON: strumento e regola](stories/dcp-41-url-to-json-resolver.story.md)

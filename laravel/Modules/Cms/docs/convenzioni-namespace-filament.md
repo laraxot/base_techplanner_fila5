@@ -95,7 +95,7 @@ Section::make('Anteprima')
 - [README.md](../../Xot/docs/README.md) - Indice principale della documentazione
 - [Struttura dei Moduli](../../xot/project_docs/module_structure.md) - Struttura standard dei moduli
 - [Case Sensitivity delle Directory](../../Xot/docs/directory-case-sensitivity.md) - Regole per la case sensitivity
-- [Regole per i Namespace](../../Xot/docs/namespace-rules.md) - Convenzioni per i namespace
+- [Regole per i Namespace](../../Xot/docs/standards/namespace-rules.md) - Convenzioni per i namespace
 
 ### Filament
 - [Widget Filament](../../xot/project_docs/filament/widgets/xot-base-widget.md) - Documentazione su XotBaseWidget
