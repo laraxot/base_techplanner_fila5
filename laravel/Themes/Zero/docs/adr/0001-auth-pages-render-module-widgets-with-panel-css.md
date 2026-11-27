@@ -22,6 +22,14 @@ qmd: "auth pages render widgets with panel"
   `resources/views/components/layouts/auth.blade.php`). Senza, il form appare senza stile.
 - Domanda: come si rende un form Filament dentro una pagina pubblica del tema?
 
+## Driver della decisione
+
+- Una sola implementazione del login (validazione, rate limit, autenticazione) nel modulo User: il tema non
+  duplica la logica.
+- Il form deve avere la grafica del tema ma le regole dei componenti Filament (`.fi-*`).
+- Fuori da un pannello, `@filamentStyles` non basta: servono le classi del bundle compilato del pannello.
+- Aggiornamenti di Filament devono essere ereditati senza ricopiare a mano le classi in Tailwind.
+
 ## Decisione
 
 - `resources/views/pages/auth/login.blade.php` usa `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`;

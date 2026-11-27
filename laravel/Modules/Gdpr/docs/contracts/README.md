@@ -68,3 +68,11 @@ Invarianti senza group Pest, in ordine di rischio per la privacy:
   `users.state`, assente nel DB di prova condiviso) e convertirlo in Pest.
 - `GDPR-REGOK-INV-1`…`4`, `GDPR-REGERR-INV-1`…`2`: i test esistenti controllano solo la firma per riflessione.
 - `GDPR-REGCONS-INV-1`…`3`, `GDPR-UPDATE-INV-1`: il test del listener usa un'Action finta.
+
+## Harness minimo: ownership, evidenza e recupero (2026-11-27)
+
+I contratti di **module_gdpr_fila5** restano accanto alle Action, interfacce o superfici di questo package; root e Xot definiscono lo standard, non copiano le promesse. Un contratto comportamentale esplicita **Input, Output, Invarianti, Effetti collaterali, Errori, Non fa**; ogni ID di invariante punta a un group Pest effettivo oppure segnala `non dimostrata`. Se esiste la classe, il docblock deve rimandare al file con `@contract` e `@see`; per temi senza classi PHP non inventare Action/contratti.
+
+- [Standard Xot](https://github.com/laraxot/module_xot_fila5/blob/dev/docs/contracts/contract-authoring-standard.md) · [ownership root](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/adr/0001-harness-minimo-e-ownership.md) · [runbook ECC/Second Brain](https://github.com/laraxot/base_ptvx_fila5/blob/dev/docs/harness/README.md).
+- **BMAD**: prima di cambiare una promessa, fissa nella story owner scope, esclusioni, evidenza e approvazioni richieste.
+- **ECC**: i marker di merge rendono invalido l'indice; citare una suite non significa averla eseguita. Distingui `pass`, `fail`, `non eseguito` e registra il debito in [rollout #15](https://github.com/laraxot/base_ptvx_fila5/issues/15).

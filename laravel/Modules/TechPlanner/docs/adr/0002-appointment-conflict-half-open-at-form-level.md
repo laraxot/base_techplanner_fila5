@@ -21,6 +21,13 @@ related:
 - I test girano su SQLite, la produzione su MySQL: `DATE_ADD` non è portabile.
 - Domanda: cosa conta come conflitto e dove si controlla?
 
+## Driver della decisione
+
+- Costo operativo: un tecnico da due clienti alla stessa ora è il difetto più costoso per chi lavora sul campo.
+- Semantica corretta degli intervalli: appuntamenti adiacenti non devono risultare in conflitto.
+- Portabilità: i test girano su SQLite e la produzione su MySQL, niente SQL non portabile.
+- Feedback immediato all'operatore senza bloccare import, seed o API.
+
 ## Decisione
 
 - `CheckAppointmentConflictAction::execute(workerId, start, duration, excludeId)`: intervallo `[inizio, fine)`, quindi

@@ -22,6 +22,13 @@ related:
 - Esiste già `DeviceVerification` (verifiche degli apparecchi, story `device-verifications-fix`) con dati reali.
 - Domanda: una tabella per tipo o una per tutti?
 
+## Driver della decisione
+
+- Unicità del dato di pianificazione: scadenze, storico e widget lavorano su una sola tabella.
+- Riuso dei campi: i tipi di controllo condividono quasi tutto e differiscono in pochi campi futuri.
+- Tutela dei dati esistenti: `DeviceVerification` ha dati reali e non si fonde senza una migrazione provata.
+- Estensibilità: un nuovo tipo di controllo deve essere una piccola aggiunta, non un CRUD nuovo.
+
 ## Decisione
 
 - Una tabella `controls` (`database/migrations/2026_11_06_000000_create_controls_table.php`), modello

@@ -22,6 +22,13 @@ related:
 - Ogni variante obbligava il JSON della pagina (`<container0>.view.json`) a seguire il nome scelto dal singolo file.
 - Domanda: come si chiamano rotte, slug CMS e payload delle due pagine generiche?
 
+## Driver della decisione
+
+- Le stesse due pagine Folio devono servire elenchi e dettagli di tipi diversi (mercati, articoli, eventi).
+- Il tema non deve legarsi ai moduli installati ne' ai loro nomi (variabili `$predict`, slug liberi).
+- JSON e link devono avere nomi di rotta/slug prevedibili e univoci (`container0.index`, `container0.view`).
+- Un tipo nuovo si aggiunge con due JSON, senza toccare il tema.
+
 ## Decisione
 
 - Elenco: `name('container0.index')`, `@volt('container0.index')`, `$this->pageSlug = $container0.'.index'`.

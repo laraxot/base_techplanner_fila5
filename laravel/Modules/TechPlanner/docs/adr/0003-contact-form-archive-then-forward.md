@@ -22,6 +22,13 @@ related:
 - Il trasporto e-mail può fallire; anche il database.
 - Domanda: in che ordine archiviare e inoltrare, e cosa dire all'utente in ogni caso?
 
+## Driver della decisione
+
+- Nessun messaggio perso: un guasto SMTP non deve cancellare una richiesta di preventivo.
+- Onestà verso l'utente: «inviato» solo quando la mail è davvero partita.
+- Privacy e GDPR: casella di destinazione e retention sono decisioni del titolare, non si inventano default.
+- Riservatezza nei log: solo la classe dell'eccezione, mai i dati del mittente.
+
 ## Decisione
 
 - `SubmitContactFormAction` (rotta `techplanner.contact.submit`, gruppo `web`, `throttle:5,10`): honeypot `website` →

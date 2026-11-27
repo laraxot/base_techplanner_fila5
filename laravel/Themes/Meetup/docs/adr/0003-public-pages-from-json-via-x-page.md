@@ -22,6 +22,13 @@ related:
   rendere per tipo di contenuto ([container0-use-x-page-not-content-resolver](../container0-use-x-page-not-content-resolver.md)).
 - Domanda: come si aggiunge o si cambia una pagina pubblica?
 
+## Driver della decisione
+
+- Una sola pipeline di rendering per tutte le pagine pubbliche: JSON del CMS -> blocchi via `<x-page>`.
+- Le pagine si cambiano dai JSON, con review e senza deploy del tema.
+- Il tema resta agnostico dai tipi di contenuto: un tipo nuovo non deve richiedere codice nel tema.
+- Vincolo architetturale gia' deciso nel dibattito interno: «public pages are json only», niente controller FO.
+
 ## Decisione
 
 - Le pagine Folio generiche (`pages/index.blade.php`, `pages/[slug].blade.php`, `pages/[container0]/index.blade.php`,

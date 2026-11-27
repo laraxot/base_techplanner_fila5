@@ -19,6 +19,13 @@ related:
 - La registrazione deve raccogliere i consensi privacy: il widget che lo fa e' del modulo Gdpr.
 - Domanda: il tema implementa i propri form di login e registrazione?
 
+## Driver della decisione
+
+- Una sola implementazione di validazione, rate limit e autenticazione, nel modulo che possiede il dominio (User).
+- I consensi privacy della registrazione devono seguire le regole del modulo Gdpr: un solo punto di verita'.
+- Regola critica del progetto: niente componenti Livewire/Volt puri per form complessi.
+- Il tema deve restare sostituibile: la logica dei form non deve dipendere dalla grafica del tema.
+
 ## Decisione
 
 - `pages/auth/login.blade.php` rende `@livewire(\Modules\User\Filament\Widgets\Auth\LoginWidget::class)`.

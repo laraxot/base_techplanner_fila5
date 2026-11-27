@@ -20,6 +20,14 @@ related:
   `left` | `center` | `right`.
 - Domanda: dove si decide cosa compare nell'header e dove?
 
+## Driver della decisione
+
+- Logo, menu, ricerca, selettore lingua e area utente cambiano tra installazioni e lingue: l'header deve essere
+  configurabile senza deploy del tema.
+- Ogni elemento dell'header e' gia' un blocco del JSON con `view` e `data`: riusarli evita markup duplicato.
+- Un blocco con datasource opzionale mancante non deve togliere la navigazione a tutto il sito.
+- Meno markup fisso = meno fork tra installazioni e meno divergenza tra temi.
+
 ## Decisione
 
 - `resources/views/components/sections/header.blade.php` fa solo `collect($blocks)->groupBy('data.position')` e rende i
